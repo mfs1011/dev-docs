@@ -1,0 +1,8 @@
+node_modules/
+dist/
+src/content/
+src/content.tmp/
+src/manifest.json
+content-repo/
+.DS_Store
+*.log
