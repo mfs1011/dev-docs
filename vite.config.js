@@ -5,7 +5,7 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
 const APP_ROOT = dirname(fileURLToPath(import.meta.url))
-const CONTENT_SOURCE = resolve(APP_ROOT, process.env.DOCS_SOURCE ?? '../laravel-api-book/docs')
+const CONTENT_SOURCE = resolve(APP_ROOT, process.env.DOCS_SOURCE ?? 'content')
 const SYNC_SCRIPT = fileURLToPath(new URL('./scripts/sync-content.mjs', import.meta.url))
 // Sinxronlash natijasi shu yerga yoziladi — uni kuzatish o'z-o'zini qayta ishga tushiradi
 const SYNC_OUTPUT = resolve(APP_ROOT, 'src', 'content')

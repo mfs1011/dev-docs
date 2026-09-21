@@ -204,8 +204,7 @@ function buildSections(book, pages) {
 }
 
 async function collectBook(book, staging) {
-  // `root` bergan kitob kontenti shu repo ichida; qolganlari tashqi manbadan (DOCS_SOURCE)
-  const sourceDir = book.root ? join(ROOT, book.root, book.dir) : join(SOURCE_ROOT, book.dir)
+  const sourceDir = join(SOURCE_ROOT, book.dir)
 
   if (!existsSync(sourceDir)) {
     console.warn(`⚠ "${book.id}" uchun manba topilmadi: ${sourceDir}`)
@@ -271,9 +270,26 @@ async function main() {
   // Har ishga tushish o'z staging papkasida: dev-server watcher bilan qo'lbola sync to'qnashmasin
   const staging = `${TARGET}.tmp-${process.pid}`
 
-  // Uzilib qolgan oldingi ishga tushishlardan qolgan papkalarni tozalash
+  // Uzilib qolgan oldingi ishga tushishlardan qolgan papkalarni tozalash.
+  // Ayni paytda ishlayotgan boshqa sync'ning papkasiga tegilmaydi.
   const parent = dirname(TARGET)
-  const leftovers = (await readdir(parent)).filter((name) => name.startsWith('content.tmp'))
+  const isRunning = (pid) => {
+    try {
+      process.kill(pid, 0)
+
+      return true
+    } catch {
+      return false
+    }
+  }
+
+  const leftovers = (await readdir(parent))
+    .filter((name) => name.startsWith('content.tmp-'))
+    .filter((name) => {
+      const pid = Number(name.slice('content.tmp-'.length))
+
+      return !Number.isInteger(pid) || pid === process.pid || !isRunning(pid)
+    })
 
   await Promise.all(leftovers.map((name) => rm(join(parent, name), { recursive: true, force: true })))
 

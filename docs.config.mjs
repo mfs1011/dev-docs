@@ -2,7 +2,7 @@
  * Kitoblar ro'yxati. Yangi qo'llanma qo'shish uchun shu massivga bitta blok qo'shiladi —
  * qolgan hamma narsa (sidebar, marshrutlar, qidiruv, versiya, sana) avtomatik quriladi.
  */
-export const contentRoot = process.env.DOCS_SOURCE ?? '../laravel-api-book/docs'
+export const contentRoot = process.env.DOCS_SOURCE ?? 'content'
 
 export const books = [
   {
@@ -52,8 +52,6 @@ export const books = [
     id: 'vue',
     title: 'Vue',
     subtitle: 'noldan senior darajasigacha',
-    // Bu qo'llanma kontenti shu reponing ichida (`content/vue/`), tashqi manbada emas
-    root: 'content',
     dir: 'vue',
     logo: 'vue',
     accent: '#35845f',

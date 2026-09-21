@@ -3,9 +3,6 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
-  # Kontent repo'si o'zgarganda tashqaridan ishga tushirish uchun
-  repository_dispatch:
-    types: [docs-updated]
   workflow_dispatch:
 
 permissions:
@@ -23,12 +20,7 @@ jobs:
     steps:
       - name: Ilova kodini olish
         uses: actions/checkout@v4
-
-      - name: Qo'llanma kontentini olish
-        uses: actions/checkout@v4
         with:
-          repository: mfs1011/laravel-api-book
-          path: content-repo
           # Har bir .md sahifasining "yangilangan" sanasi commit tarixidan olinadi
           fetch-depth: 0
 
@@ -41,7 +33,6 @@ jobs:
 
       - name: Build
         env:
-          DOCS_SOURCE: ./content-repo/docs
           BASE_PATH: /${{ github.event.repository.name }}/
         run: npm run build
 
