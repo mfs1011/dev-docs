@@ -41,7 +41,7 @@ jobs:
 
       - name: Build
         env:
-          DOCS_SOURCE: ../content-repo/docs
+          DOCS_SOURCE: ./content-repo/docs
           BASE_PATH: /${{ github.event.repository.name }}/
         run: npm run build
 
