@@ -48,4 +48,31 @@ export const books = [
     ],
     folders: [],
   },
+  {
+    id: 'vue',
+    title: 'Vue',
+    subtitle: 'noldan senior darajasigacha',
+    // Bu qo'llanma kontenti shu reponing ichida (`content/vue/`), tashqi manbada emas
+    root: 'content',
+    dir: 'vue',
+    logo: 'vue',
+    accent: '#35845f',
+    accentDark: '#42d392',
+    versionLabel: 'Vue',
+    versionRow: /^\|\s*Vue\s*\|\s*([^|]+)\|/m,
+    // Options / Composition API almashtirgichi shu kitobda ko'rinadi
+    apiSwitcher: true,
+    groups: [
+      { title: 'I — Poydevor', from: 1, to: 7 },
+      { title: 'II — Shablon va reaktivlik', from: 8, to: 17 },
+      { title: 'III — Komponentlar', from: 18, to: 28 },
+      { title: 'IV — Qayta ishlatish va ichki komponentlar', from: 29, to: 36 },
+      { title: 'V — Ilova miqyosi', from: 37, to: 47 },
+      { title: 'VI — TypeScript', from: 48, to: 50 },
+      { title: 'VII — Sifat va testlash', from: 51, to: 55 },
+      { title: 'VIII — SSR, Nuxt va SEO', from: 56, to: 61 },
+      { title: 'IX — Production darajasi', from: 62, to: 70 },
+    ],
+    folders: [],
+  },
 ]

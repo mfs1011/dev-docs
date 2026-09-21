@@ -15,6 +15,11 @@ import nginx from 'highlight.js/lib/languages/nginx'
 import dockerfile from 'highlight.js/lib/languages/dockerfile'
 import sql from 'highlight.js/lib/languages/sql'
 import plaintext from 'highlight.js/lib/languages/plaintext'
+import typescript from 'highlight.js/lib/languages/typescript'
+import css from 'highlight.js/lib/languages/css'
+import scss from 'highlight.js/lib/languages/scss'
+import diff from 'highlight.js/lib/languages/diff'
+import markdown from 'highlight.js/lib/languages/markdown'
 
 hljs.registerLanguage('php', php)
 hljs.registerLanguage('php-template', phpTemplate)
@@ -31,6 +36,15 @@ hljs.registerLanguage('nginx', nginx)
 hljs.registerLanguage('dockerfile', dockerfile)
 hljs.registerLanguage('sql', sql)
 hljs.registerLanguage('plaintext', plaintext)
+hljs.registerLanguage('typescript', typescript)
+hljs.registerLanguage('ts', typescript)
+hljs.registerLanguage('js', javascript)
+hljs.registerLanguage('css', css)
+hljs.registerLanguage('scss', scss)
+hljs.registerLanguage('diff', diff)
+hljs.registerLanguage('markdown', markdown)
+// Vue SFC — HTML grammatikasi eng yaqin natija beradi
+hljs.registerLanguage('vue', xml)
 
 const LANGUAGE_LABELS = {
   php: 'PHP',
@@ -46,6 +60,14 @@ const LANGUAGE_LABELS = {
   nginx: 'Nginx',
   dockerfile: 'Dockerfile',
   sql: 'SQL',
+  typescript: 'TypeScript',
+  ts: 'TypeScript',
+  js: 'JavaScript',
+  vue: 'Vue SFC',
+  css: 'CSS',
+  scss: 'SCSS',
+  diff: 'Diff',
+  markdown: 'Markdown',
 }
 
 export function slugify(text) {
@@ -82,6 +104,68 @@ const md = new MarkdownIt({
   },
 })
 
+/**
+ * `::: options` / `::: composition` bloklari — rasmiy hujjatdagi API almashtirgichi.
+ * Blok ichidagi markdown odatdagidek ishlanadi, tashqarisiga `data-api` atributli div o'raladi.
+ * Markdown fayl toza qoladi: GitHub'da ham o'qilaveradi.
+ */
+function apiVariants(mdInstance) {
+  const MARKER = ':'
+  const KINDS = new Set(['options', 'composition'])
+
+  mdInstance.block.ruler.before('fence', 'api_variant', (state, startLine, endLine, silent) => {
+    const start = state.bMarks[startLine] + state.tShift[startLine]
+    const max = state.eMarks[startLine]
+
+    if (state.sCount[startLine] - state.blkIndent >= 4) return false
+    if (state.src.slice(start, start + 3) !== MARKER.repeat(3)) return false
+
+    const kind = state.src.slice(start + 3, max).trim().toLowerCase()
+    if (!KINDS.has(kind)) return false
+    if (silent) return true
+
+    let nextLine = startLine
+    let closed = false
+
+    while (nextLine < endLine) {
+      nextLine += 1
+      if (nextLine >= endLine) break
+
+      const from = state.bMarks[nextLine] + state.tShift[nextLine]
+      const to = state.eMarks[nextLine]
+
+      if (state.src.slice(from, to).trim() === MARKER.repeat(3)) {
+        closed = true
+        break
+      }
+    }
+
+    const oldParent = state.parentType
+    const oldLineMax = state.lineMax
+
+    state.parentType = 'api_variant'
+    state.lineMax = nextLine
+
+    const open = state.push('api_variant_open', 'div', 1)
+    open.attrs = [['class', 'api-variant'], ['data-api', kind]]
+    open.map = [startLine, nextLine]
+    open.markup = MARKER.repeat(3)
+
+    state.md.block.tokenize(state, startLine + 1, nextLine)
+
+    const close = state.push('api_variant_close', 'div', -1)
+    close.markup = MARKER.repeat(3)
+
+    state.parentType = oldParent
+    state.lineMax = oldLineMax
+    state.line = closed ? nextLine + 1 : nextLine
+
+    return true
+  })
+}
+
+md.use(apiVariants)
+
 md.use(anchor, {
   slugify,
   permalink: anchor.permalink.linkInsideHeader({
@@ -91,6 +175,14 @@ md.use(anchor, {
     ariaHidden: true,
   }),
 })
+
+// `highlight` tayyor `<figure>` qaytaradi — markdown-it uni yana <pre><code> ichiga o'ramasin.
+md.renderer.rules.fence = (tokens, idx, options) => {
+  const token = tokens[idx]
+  const language = token.info.trim().split(/\s+/)[0]
+
+  return options.highlight(token.content, language)
+}
 
 export function renderMarkdown(source) {
   return md.render(source)

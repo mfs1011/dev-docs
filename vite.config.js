@@ -7,6 +7,8 @@ import vue from '@vitejs/plugin-vue'
 const APP_ROOT = dirname(fileURLToPath(import.meta.url))
 const CONTENT_SOURCE = resolve(APP_ROOT, process.env.DOCS_SOURCE ?? '../laravel-api-book/docs')
 const SYNC_SCRIPT = fileURLToPath(new URL('./scripts/sync-content.mjs', import.meta.url))
+// Sinxronlash natijasi shu yerga yoziladi — uni kuzatish o'z-o'zini qayta ishga tushiradi
+const SYNC_OUTPUT = resolve(APP_ROOT, 'src', 'content')
 
 /**
  * Manba papkadagi .md fayllarni kuzatadi: yangi fayl qo'shilsa yoki
@@ -19,6 +21,8 @@ function markdownWatcher() {
 
   const resync = (server, file) => {
     if (!file.endsWith('.md')) return
+    // Sinxronlash o'zi yozgan fayllarga javob bermasin (cheksiz sikl)
+    if (resolve(file).startsWith(SYNC_OUTPUT)) return
     if (running) return
     if (Date.now() - lastRun < 200) return
 
@@ -39,6 +43,7 @@ function markdownWatcher() {
     name: 'docs-markdown-watcher',
     configureServer(server) {
       server.watcher.add(CONTENT_SOURCE)
+      server.watcher.unwatch(`${SYNC_OUTPUT}**`)
       server.watcher.on('add', (file) => resync(server, file))
       server.watcher.on('change', (file) => resync(server, file))
       server.watcher.on('unlink', (file) => resync(server, file))

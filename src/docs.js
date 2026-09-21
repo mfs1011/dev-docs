@@ -92,6 +92,17 @@ export function formatDate(value) {
   return `${date.getDate()}-${UZ_MONTHS[date.getMonth()]}, ${date.getFullYear()}`
 }
 
+/** Tabdagi faviconni ochiq kitobga moslaydi (kitobsiz sahifada — umumiy belgi). */
+export function applyBookFavicon(book) {
+  const link = document.querySelector('link[rel="icon"]')
+  if (!link) return
+
+  const base = import.meta.env.BASE_URL
+  const name = book ? `favicon-${book.logo ?? book.id}.svg` : 'favicon.svg'
+
+  link.href = `${base}${base.endsWith('/') ? '' : '/'}${name}`
+}
+
 /** Kitobga xos urg'u rangini CSS o'zgaruvchilariga yozadi. */
 export function applyBookTheme(book) {
   const root = document.documentElement

@@ -1,11 +1,12 @@
 <script setup>
 import { computed, onMounted, onUnmounted, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
+import ApiToggle from '@/components/ApiToggle.vue'
 import AppSidebar from '@/components/AppSidebar.vue'
 import BookMark from '@/components/BookMark.vue'
 import SearchDialog from '@/components/SearchDialog.vue'
 import ThemeToggle from '@/components/ThemeToggle.vue'
-import { applyBookTheme, bookIdFromRoute, books, docsUpdatedAt, findBook, formatDate } from '@/docs'
+import { applyBookFavicon, applyBookTheme, bookIdFromRoute, docsUpdatedAt, findBook, formatDate } from '@/docs'
 
 const route = useRoute()
 const sidebarOpen = ref(false)
@@ -15,7 +16,14 @@ const activeBookId = computed(() => bookIdFromRoute(route.path))
 const activeBook = computed(() => findBook(activeBookId.value))
 const updatedLabel = computed(() => formatDate(activeBook.value?.updatedAt ?? docsUpdatedAt))
 
-watch(activeBook, (book) => applyBookTheme(book), { immediate: true })
+watch(
+  activeBook,
+  (book) => {
+    applyBookTheme(book)
+    applyBookFavicon(book)
+  },
+  { immediate: true },
+)
 
 const onKeydown = (event) => {
   if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === 'k') {
@@ -75,17 +83,7 @@ onUnmounted(() => window.removeEventListener('keydown', onKeydown))
             </button>
 
             <div class="topbar-actions">
-                <nav class="book-switch" aria-label="Qo'llanmalar">
-                    <RouterLink
-                        v-for="book in books"
-                        :key="book.id"
-                        :to="`/${book.id}`"
-                        class="book-switch-item"
-                        :class="{ 'is-active': book.id === activeBookId }"
-                    >
-                        {{ book.title }}
-                    </RouterLink>
-                </nav>
+                <ApiToggle v-if="activeBook?.apiSwitcher" />
 
                 <span v-if="updatedLabel" class="updated-badge">Yangilangan: {{ updatedLabel }}</span>
                 <ThemeToggle />

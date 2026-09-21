@@ -1,5 +1,6 @@
 import { readdir, readFile, writeFile, mkdir, rm, cp, rename, stat } from 'node:fs/promises'
 import { existsSync } from 'node:fs'
+import { execFileSync } from 'node:child_process'
 import { dirname, join, relative, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { books, contentRoot } from '../docs.config.mjs'
@@ -63,6 +64,57 @@ function extractMeta(markdown) {
   return { title, headings }
 }
 
+/** Sarlavha boshidagi "01 — " kabi raqam prefiksini olib tashlaydi (sidebar raqamni alohida chizadi). */
+function stripChapterPrefix(title) {
+  return String(title).replace(/^\d{1,3}\s*[—–-]\s*/, '').trim()
+}
+
+/**
+ * Har bir .md fayl uchun oxirgi commit sanasi. Fayl mtime'i ishonchsiz:
+ * CI klon qilganda hamma fayl bir xil vaqt oladi. Git tarixi bo'lmasa — bo'sh Map.
+ */
+function gitDates(sourceDir) {
+  const dates = new Map()
+  const run = (args) =>
+    execFileSync('git', args, { encoding: 'utf8', maxBuffer: 64 * 1024 * 1024, stdio: ['ignore', 'pipe', 'ignore'] })
+
+  let root
+  try {
+    root = run(['-C', sourceDir, 'rev-parse', '--show-toplevel']).trim()
+  } catch {
+    return dates
+  }
+
+  const prefix = relative(root, sourceDir).split('\\').join('/')
+  let log
+
+  try {
+    log = run(['-C', root, 'log', '--pretty=format:%cI', '--name-only', '--', sourceDir])
+  } catch {
+    return dates
+  }
+
+  let date = null
+
+  for (const line of log.split('\n')) {
+    const value = line.trim()
+    if (!value) continue
+
+    if (/^\d{4}-\d{2}-\d{2}T/.test(value)) {
+      date = value
+      continue
+    }
+
+    if (!date || !value.endsWith('.md')) continue
+    if (prefix && !value.startsWith(`${prefix}/`)) continue
+
+    const rel = prefix ? value.slice(prefix.length + 1) : value
+    if (!dates.has(rel)) dates.set(rel, new Date(date).toISOString())
+  }
+
+  return dates
+}
+
 function chapterNumber(relPath) {
   const match = /(^|\/)(\d{2})-/.exec(relPath)
 
@@ -113,7 +165,7 @@ function buildSections(book, pages) {
     const items = rootPages
       .filter((page) => !used.has(page.route) && page.chapter !== null && page.chapter >= group.from && page.chapter <= group.to)
       .sort((a, b) => a.chapter - b.chapter)
-      .map((page) => ({ ...page, label: page.title }))
+      .map((page) => ({ ...page, label: stripChapterPrefix(page.title) }))
 
     push(group.title, items)
   }
@@ -136,7 +188,7 @@ function buildSections(book, pages) {
     const items = pages
       .filter((page) => page.path.startsWith(`${name}/`) && !used.has(page.route))
       .sort((a, b) => (a.path.endsWith('README.md') ? -1 : b.path.endsWith('README.md') ? 1 : a.path.localeCompare(b.path)))
-      .map((page) => ({ ...page, label: page.title }))
+      .map((page) => ({ ...page, label: stripChapterPrefix(page.title) }))
 
     push(config?.title ?? name, items)
   }
@@ -144,7 +196,7 @@ function buildSections(book, pages) {
   const extras = pages
     .filter((page) => !used.has(page.route))
     .sort((a, b) => a.path.localeCompare(b.path))
-    .map((page) => ({ ...page, label: page.title }))
+    .map((page) => ({ ...page, label: stripChapterPrefix(page.title) }))
 
   push("Qo'shimcha", extras)
 
@@ -152,7 +204,8 @@ function buildSections(book, pages) {
 }
 
 async function collectBook(book, staging) {
-  const sourceDir = join(SOURCE_ROOT, book.dir)
+  // `root` bergan kitob kontenti shu repo ichida; qolganlari tashqi manbadan (DOCS_SOURCE)
+  const sourceDir = book.root ? join(ROOT, book.root, book.dir) : join(SOURCE_ROOT, book.dir)
 
   if (!existsSync(sourceDir)) {
     console.warn(`⚠ "${book.id}" uchun manba topilmadi: ${sourceDir}`)
@@ -164,6 +217,7 @@ async function collectBook(book, staging) {
   await cp(sourceDir, bookTarget, { recursive: true })
 
   const files = await walk(bookTarget)
+  const committed = gitDates(sourceDir)
   const pages = []
 
   for (const file of files) {
@@ -179,7 +233,7 @@ async function collectBook(book, staging) {
       route: routeFor(book, rel),
       title: title ?? rel,
       chapter: chapterNumber(rel),
-      updatedAt: info.mtime.toISOString(),
+      updatedAt: committed.get(rel) ?? info.mtime.toISOString(),
       headings,
     })
   }
@@ -194,6 +248,7 @@ async function collectBook(book, staging) {
     logo: book.logo ?? null,
     accent: book.accent ?? null,
     accentDark: book.accentDark ?? null,
+    apiSwitcher: book.apiSwitcher ?? false,
     versionLabel: book.versionLabel ?? book.title,
     version: await readVersion(book, sourceDir),
     chapterCount: pages.filter((page) => page.chapter !== null && !page.path.includes('/')).length,
@@ -213,7 +268,14 @@ async function collectBook(book, staging) {
 }
 
 async function main() {
-  const staging = `${TARGET}.tmp`
+  // Har ishga tushish o'z staging papkasida: dev-server watcher bilan qo'lbola sync to'qnashmasin
+  const staging = `${TARGET}.tmp-${process.pid}`
+
+  // Uzilib qolgan oldingi ishga tushishlardan qolgan papkalarni tozalash
+  const parent = dirname(TARGET)
+  const leftovers = (await readdir(parent)).filter((name) => name.startsWith('content.tmp'))
+
+  await Promise.all(leftovers.map((name) => rm(join(parent, name), { recursive: true, force: true })))
 
   await rm(staging, { recursive: true, force: true })
   await mkdir(staging, { recursive: true })
@@ -230,7 +292,12 @@ async function main() {
   }
 
   await rm(TARGET, { recursive: true, force: true })
-  await rename(staging, TARGET)
+
+  try {
+    await rename(staging, TARGET)
+  } finally {
+    await rm(staging, { recursive: true, force: true })
+  }
 
   const manifest = {
     generatedAt: new Date().toISOString(),

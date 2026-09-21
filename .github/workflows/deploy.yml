@@ -29,6 +29,8 @@ jobs:
         with:
           repository: mfs1011/laravel-api-book
           path: content-repo
+          # Har bir .md sahifasining "yangilangan" sanasi commit tarixidan olinadi
+          fetch-depth: 0
 
       - uses: actions/setup-node@v4
         with:
