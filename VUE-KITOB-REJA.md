@@ -3,37 +3,26 @@
 > Bu fayl kontent emas: `content/vue/` dan tashqarida turadi, shuning uchun saytga sahifa bo'lib chiqmaydi.
 > Maqsadi — ishni uzilgan joyidan davom ettirish.
 
-**Oxirgi yangilanish:** 2026-09-21
+**Oxirgi yangilanish:** 2026-09-28
 
 ## Holat
 
-- Yozilgan: **1–42-boblar** (`content/vue/01-kirish.md` … `42-pinia.md`) + `README.md` (mundarija)
-- Qolgan: **43–70-boblar**. `README.md` da ular `(tayyorlanmoqda)` belgisi bilan, havolasiz turibdi.
-- Infratuzilma to'liq tayyor, qo'shimcha ish talab qilmaydi.
+**Kitob to'liq yozib bo'lindi: 70 bob + mundarija (`README.md`).**
 
-## Davom ettirish
+Mundarijadagi barcha havolalar ishlaydi, `(tayyorlanmoqda)` belgisi qolmadi.
 
-Keyingi bob — **43-bob (Pinia: chuqur)**. Fayl nomlari `README.md` dagi mundarijadan olinadi.
+## Kitobni yangilash
 
-Har bob yozilgandan keyin:
+Bob tahrirlangandan yoki qo'shilgandan keyin:
 
 ```bash
 npm run sync        # manifest va sahifalar yangilanadi
 ```
 
-Bob qo'shilgach `README.md` dagi mos qatorda `Nom *(tayyorlanmoqda)*` ni `[Nom](fayl.md)` havolasiga qaytaring.
+Yangi bob qo'shilsa, `README.md` dagi mos qismga qator qo'shing va `docs.config.mjs` dagi
+`groups` chegaralarini tekshiring.
 
-## Qolgan boblar ro'yxati
-
-| Boblar | Mavzu | Taxminiy hajm |
-| --- | --- | --- |
-| 43–47 | Pinia chuqur, HTTP qatlami, formalar arxitekturasi, render mexanizmi, Vapor mode | ~1 200 qator |
-| 48–50 | TypeScript: sozlash, Composition API, Options API | ~700 qator |
-| 51–55 | Testlash: strategiya, Vitest, composable/store testi, Playwright, kod sifati | ~1 200 qator |
-| 56–61 | SSR mexanizmi, qo'lda SSR, SSG, Nuxt asoslari, Nuxt data/server, SEO | ~1 400 qator |
-| 62–70 | Unumdorlik, bundle, a11y, xavfsizlik, i18n, deploy, monitoring, amaliy loyiha, checklist | ~2 100 qator |
-
-## Bob formati (1–42 bilan bir xil bo'lishi shart)
+## Bob formati (barcha boblarda bir xil)
 
 1. `# NN — Sarlavha` + navigatsiya qatori: `[← Oldingi](...) · [Mundarija](README.md) · [Keyingi →](...)`
 2. Bo'limlar: **Tushuncha** → **Nega shunday** → **Kod** (bir nechta) → **Muhandislik nuqtai nazari** (1–2 ta) → **Tipik xatolar** (jadval) → **Amaliyot** (3–5 mashq) → **Rasmiy hujjat** (vuejs.org havolalari)

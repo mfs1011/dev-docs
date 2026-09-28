@@ -110,58 +110,56 @@ Qisqa tavsiya: **yangi loyihada — Composition API + `<script setup>`**. Sabab 
 | 40 | [Vue Router: chuqur](40-router-chuqur.md) | Ichma-ich marshrut, guard, lazy, scroll, meta |
 | 41 | [Holat boshqaruvi](41-holat-boshqaruvi.md) | Reaktiv obyektdan store'gacha, qachon kerak |
 | 42 | [Pinia](42-pinia.md) | Store yaratish, state/getters/actions |
-| 43 | Pinia: chuqur *(tayyorlanmoqda)* | Plugin, SSR, testlash, store'lar aloqasi |
-| 44 | HTTP qatlami *(tayyorlanmoqda)* | `fetch`, xato/yuklanish, abort, kesh, retry |
-| 45 | Formalar arxitekturasi *(tayyorlanmoqda)* | Validatsiya (zod), server xatolari, UX |
-| 46 | Render mexanizmi *(tayyorlanmoqda)* | Virtual DOM, patch flag, render funksiya, JSX |
-| 47 | Vapor mode va Vue 3.6 *(tayyorlanmoqda)* | VDOM'siz render, alien-signals, migratsiya |
+| 43 | [Pinia: chuqur](43-pinia-chuqur.md) | Plugin, SSR, testlash, store'lar aloqasi |
+| 44 | [HTTP qatlami](44-http-qatlami.md) | `fetch`, xato/yuklanish, abort, kesh, retry |
+| 45 | [Formalar arxitekturasi](45-formalar-arxitekturasi.md) | Validatsiya (zod), server xatolari, UX |
+| 46 | [Render mexanizmi](46-render-mexanizmi.md) | Virtual DOM, patch flag, render funksiya, JSX |
+| 47 | [Vapor mode va Vue 3.6](47-vapor-mode.md) | VDOM'siz render, alien-signals, migratsiya |
 
 ## VI qism — TypeScript (48–50)
 
 | № | Bob | Nima o'rganasiz |
 | --- | --- | --- |
-| 48 | TypeScript'ni sozlash *(tayyorlanmoqda)* | `vue-tsc`, `tsconfig`, IDE, `.vue` tiplari |
-| 49 | TS + Composition API *(tayyorlanmoqda)* | `defineProps<T>`, generic komponent, `ref<T>` |
-| 50 | TS + Options API *(tayyorlanmoqda)* | `defineComponent`, `PropType`, `this` tipi |
+| 48 | [TypeScript'ni sozlash](48-typescript-sozlash.md) | `vue-tsc`, `tsconfig`, IDE, `.vue` tiplari |
+| 49 | [TS + Composition API](49-ts-composition-api.md) | `defineProps<T>`, generic komponent, `ref<T>` |
+| 50 | [TS + Options API](50-ts-options-api.md) | `defineComponent`, `PropType`, `this` tipi |
 
 ## VII qism — Sifat va testlash (51–55)
 
 | № | Bob | Nima o'rganasiz |
 | --- | --- | --- |
-| 51 | Testlash strategiyasi *(tayyorlanmoqda)* | Nimani test qilish, piramida, TDD chegarasi |
-| 52 | Vitest va komponent testi *(tayyorlanmoqda)* | `mount`, Testing Library, so'rovni mock qilish |
-| 53 | Composable va store testi *(tayyorlanmoqda)* | Izolyatsiya, fake timer, Pinia testi |
-| 54 | E2E: Playwright *(tayyorlanmoqda)* | Ssenariy, selektorlar, CI'da ishga tushirish |
-| 55 | Kod sifati *(tayyorlanmoqda)* | ESLint flat config, Prettier, strict TS, CI gate |
+| 51 | [Testlash strategiyasi](51-testlash-strategiyasi.md) | Nimani test qilish, piramida, TDD chegarasi |
+| 52 | [Vitest va komponent testi](52-vitest-komponent-testi.md) | `mount`, Testing Library, so'rovni mock qilish |
+| 53 | [Composable va store testi](53-composable-va-store-testi.md) | Izolyatsiya, fake timer, Pinia testi |
+| 54 | [E2E: Playwright](54-e2e-playwright.md) | Ssenariy, selektorlar, CI'da ishga tushirish |
+| 55 | [Kod sifati](55-kod-sifati.md) | ESLint flat config, Prettier, strict TS, CI gate |
 
 ## VIII qism — SSR, Nuxt va SEO (56–61)
 
 | № | Bob | Nima o'rganasiz |
 | --- | --- | --- |
-| 56 | SSR mexanizmi *(tayyorlanmoqda)* | Server render, hydration, universal kod |
-| 57 | Qo'lda SSR qurish *(tayyorlanmoqda)* | Vite SSR, `renderToString`, holat uzatish |
-| 58 | SSG va prerender *(tayyorlanmoqda)* | Statik generatsiya, ISR, qachon qaysi |
-| 59 | Nuxt asoslari *(tayyorlanmoqda)* | Fayl-marshrut, layout, avto-import |
-| 60 | Nuxt: data va server *(tayyorlanmoqda)* | `useFetch`, server route, Nitro |
-| 61 | SEO va meta *(tayyorlanmoqda)* | `useHead`, Open Graph, sitemap, structured data |
+| 56 | [SSR mexanizmi](56-ssr-mexanizmi.md) | Server render, hydration, universal kod |
+| 57 | [Qo'lda SSR qurish](57-qolda-ssr.md) | Vite SSR, `renderToString`, holat uzatish |
+| 58 | [SSG va prerender](58-ssg-va-prerender.md) | Statik generatsiya, ISR, qachon qaysi |
+| 59 | [Nuxt asoslari](59-nuxt-asoslari.md) | Fayl-marshrut, layout, avto-import |
+| 60 | [Nuxt: data va server](60-nuxt-data-va-server.md) | `useFetch`, server route, Nitro |
+| 61 | [SEO va meta](61-seo-va-meta.md) | `useHead`, Open Graph, sitemap, structured data |
 
 ## IX qism — Production darajasi (62–70)
 
 | № | Bob | Nima o'rganasiz |
 | --- | --- | --- |
-| 62 | Unumdorlik *(tayyorlanmoqda)* | Render profiling, `shallowRef`, `v-memo`, virtual list |
-| 63 | Bundle va yuklanish *(tayyorlanmoqda)* | Code splitting, tree shaking, tahlil, prefetch |
-| 64 | Erishimlilik (a11y) *(tayyorlanmoqda)* | Semantik HTML, fokus, ARIA, klaviatura |
-| 65 | Xavfsizlik *(tayyorlanmoqda)* | XSS, `v-html`, CSP, token saqlash |
-| 66 | Ko'p tillilik (i18n) *(tayyorlanmoqda)* | `vue-i18n`, lazy locale, sana/son formati |
-| 67 | Deploy *(tayyorlanmoqda)* | Statik hosting, Docker, nginx, kesh sarlavhalari |
-| 68 | Monitoring va xatolar *(tayyorlanmoqda)* | `errorHandler`, Sentry, source map |
-| 69 | Amaliy loyiha *(tayyorlanmoqda)* | Hamma bo'lakni bitta ilovaga yig'ish |
-| 70 | Checklist va migratsiya *(tayyorlanmoqda)* | Vue 2 → 3, 3.5 → 3.6, reliz checklist |
+| 62 | [Unumdorlik](62-unumdorlik.md) | Render profiling, `shallowRef`, `v-memo`, virtual list |
+| 63 | [Bundle va yuklanish](63-bundle-va-yuklash.md) | Code splitting, tree shaking, tahlil, prefetch |
+| 64 | [Erishimlilik (a11y)](64-erishimlilik.md) | Semantik HTML, fokus, ARIA, klaviatura |
+| 65 | [Xavfsizlik](65-xavfsizlik.md) | XSS, `v-html`, CSP, token saqlash |
+| 66 | [Ko'p tillilik (i18n)](66-i18n.md) | `vue-i18n`, lazy locale, sana/son formati |
+| 67 | [Deploy](67-deploy.md) | Statik hosting, Docker, nginx, kesh sarlavhalari |
+| 68 | [Monitoring va xatolar](68-monitoring-va-xatolar.md) | `errorHandler`, Sentry, source map |
+| 69 | [Amaliy loyiha](69-amaliy-loyiha.md) | Hamma bo'lakni bitta ilovaga yig'ish |
+| 70 | [Checklist va migratsiya](70-checklist-va-migratsiya.md) | Vue 2 → 3, 3.5 → 3.6, reliz checklist |
 
 ---
-
-> **Holat (2026-yil sentabr).** 1–42-boblar yozib bo'lindi. Qolgan boblar (43–70) reja bo'yicha tayyorlanmoqda — ular mundarijada `(tayyorlanmoqda)` belgisi bilan turibdi.
 
 ## Qanday o'qish kerak
 
