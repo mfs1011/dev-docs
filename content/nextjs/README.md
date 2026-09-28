@@ -36,12 +36,12 @@ Kod misollar TypeScript va JavaScript ko'rinishida — yuqoridagi almashtirgich 
 
 | № | Bob | Nima o'rganasiz |
 | --- | --- | --- |
-| 01 | Next.js nima va nega shunday *(tayyorlanmoqda)* | Muammo, tarix, React'dan farqi |
-| 02 | O'rnatish va loyiha tuzilmasi *(tayyorlanmoqda)* | `create-next-app`, papkalar, konfiguratsiya |
-| 03 | Render strategiyalari *(tayyorlanmoqda)* | Static, dynamic, ISR, streaming, PPR |
-| 04 | Server va klient chegarasi *(tayyorlanmoqda)* | `"use client"`, bundle chegarasi, kompozitsiya |
-| 05 | TypeScript va konfiguratsiya *(tayyorlanmoqda)* | `next.config`, muhit o'zgaruvchilari, tiplar |
-| 06 | Turbopack va build *(tayyorlanmoqda)* | Dev tezligi, build chiqishi, tahlil |
+| 01 | [Next.js nima va nega shunday](01-kirish.md) | Muammo, tarix, React'dan farqi |
+| 02 | [O'rnatish va loyiha tuzilmasi](02-ornatish.md) | `create-next-app`, papkalar, konfiguratsiya |
+| 03 | [Render strategiyalari](03-render-strategiyalari.md) | Static, dynamic, ISR, streaming, PPR |
+| 04 | [Server va klient chegarasi](04-server-klient-chegarasi.md) | `"use client"`, bundle chegarasi, kompozitsiya |
+| 05 | [TypeScript va konfiguratsiya](05-typescript-konfiguratsiya.md) | `next.config`, muhit o'zgaruvchilari, tiplar |
+| 06 | [Turbopack va build](06-turbopack-va-build.md) | Dev tezligi, build chiqishi, tahlil |
 
 ## II qism — App Router (7–15)
 
