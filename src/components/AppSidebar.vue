@@ -1,6 +1,7 @@
 <script setup>
 import { computed, nextTick, onMounted, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
+import VariantToggle from '@/components/VariantToggle.vue'
 import { findBook } from '@/docs'
 
 const props = defineProps({
@@ -13,7 +14,8 @@ const emit = defineEmits(['navigate'])
 const route = useRoute()
 const filter = ref('')
 
-const sections = computed(() => findBook(props.bookId)?.sections ?? [])
+const book = computed(() => findBook(props.bookId))
+const sections = computed(() => book.value?.sections ?? [])
 
 const visibleSections = computed(() => {
   const term = filter.value.trim().toLowerCase()
@@ -44,6 +46,17 @@ watch(() => route.path, revealActive)
 <template>
     <aside class="sidebar" :class="{ 'is-open': open }">
         <div class="sidebar-inner">
+            <div v-if="book?.variants" class="sidebar-variants">
+                <p class="sidebar-variants-label">{{ book.variants.label }}</p>
+
+                <VariantToggle
+                    :key="book.id"
+                    :group="book.variants.group"
+                    :options="book.variants.options"
+                    :label="book.variants.label"
+                />
+            </div>
+
             <div class="sidebar-filter">
                 <input
                     v-model="filter"

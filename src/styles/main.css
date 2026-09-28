@@ -313,6 +313,21 @@ a:hover { text-decoration: underline; }
 
 .sidebar-inner { height: 100%; overflow-y: auto; padding: 20px 14px 48px; }
 
+.sidebar-variants { padding: 0 6px 14px; }
+
+.sidebar-variants-label {
+    margin: 0 0 6px;
+    color: var(--text-subtle);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+}
+
+/* Sidebar ichida almashtirgich butun kenglikni egallaydi */
+.sidebar-variants .api-switch { width: 100%; }
+.sidebar-variants .api-switch-item { flex: 1; text-align: center; padding: 5px 8px; }
+
 .sidebar-filter { padding: 0 6px 14px; }
 .sidebar-filter input {
     width: 100%;
@@ -808,6 +823,20 @@ a:hover { text-decoration: underline; }
 
 .react-mark { flex: none; display: block; fill: #0b7fa0; stroke: #0b7fa0; }
 :root[data-theme="dark"] .react-mark { fill: #58c4dc; stroke: #58c4dc; }
+
+.arch-mark { flex: none; display: block; }
+.arch-mark .arch-mark-top { fill: #5b4bd6; }
+.arch-mark .arch-mark-mid,
+.arch-mark .arch-mark-bottom {
+    fill: none;
+    stroke: #5b4bd6;
+    stroke-width: 2;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+}
+:root[data-theme="dark"] .arch-mark .arch-mark-top { fill: #a99bff; }
+:root[data-theme="dark"] .arch-mark .arch-mark-mid,
+:root[data-theme="dark"] .arch-mark .arch-mark-bottom { stroke: #a99bff; }
 
 .next-mark { flex: none; display: block; }
 .next-mark .next-mark-disc { fill: #111; }

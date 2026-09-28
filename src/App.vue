@@ -1,7 +1,6 @@
 <script setup>
 import { computed, onMounted, onUnmounted, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
-import VariantToggle from '@/components/VariantToggle.vue'
 import AppSidebar from '@/components/AppSidebar.vue'
 import BookMark from '@/components/BookMark.vue'
 import SearchDialog from '@/components/SearchDialog.vue'
@@ -83,14 +82,6 @@ onUnmounted(() => window.removeEventListener('keydown', onKeydown))
             </button>
 
             <div class="topbar-actions">
-                <VariantToggle
-                    v-if="activeBook?.variants"
-                    :key="activeBook.id"
-                    :group="activeBook.variants.group"
-                    :options="activeBook.variants.options"
-                    :label="activeBook.variants.label"
-                />
-
                 <span v-if="updatedLabel" class="updated-badge">Yangilangan: {{ updatedLabel }}</span>
                 <ThemeToggle />
             </div>
