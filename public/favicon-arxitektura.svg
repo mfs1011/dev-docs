@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <style>
+        .arch-solid { fill: #5b4bd6; }
+        .arch-line { fill: none; stroke: #5b4bd6; stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+        @media (prefers-color-scheme: dark) {
+            .arch-solid { fill: #a99bff; }
+            .arch-line { stroke: #a99bff; }
+        }
+    </style>
+    <path class="arch-solid" d="M12 2 22 7.2 12 12.4 2 7.2z"/>
+    <path class="arch-line" d="M2 12l10 5.2L22 12"/>
+    <path class="arch-line" d="M2 16.8 12 22l10-5.2"/>
+</svg>

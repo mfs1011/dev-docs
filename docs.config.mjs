@@ -137,4 +137,25 @@ export const books = [
     ],
     folders: [],
   },
+  {
+    id: 'arxitektura',
+    title: 'Arxitektura',
+    subtitle: 'frontend va backend: chegaralar va kesishmalar',
+    dir: 'arxitektura',
+    logo: 'arxitektura',
+    accent: '#5b4bd6',
+    accentDark: '#a99bff',
+    versionLabel: 'Arxitektura',
+    // Bu kitob texnologiyaga bog'liq emas — versiya qatori yo'q
+    groups: [
+      { title: 'I — Arxitektura nima', from: 1, to: 7 },
+      { title: 'II — Umumiy tamoyillar', from: 8, to: 16 },
+      { title: 'III — Backend arxitekturasi', from: 17, to: 30 },
+      { title: 'IV — Frontend arxitekturasi', from: 31, to: 43 },
+      { title: 'V — Kesishma: shartnoma va integratsiya', from: 44, to: 56 },
+      { title: 'VI — Ma\'lumot va integratsiya', from: 57, to: 62 },
+      { title: 'VII — Sifat, ish va rivojlanish', from: 63, to: 72 },
+    ],
+    folders: [],
+  },
 ]
