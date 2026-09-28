@@ -806,6 +806,15 @@ a:hover { text-decoration: underline; }
 
 .laravel-mark { flex: none; display: block; fill: #ff2d20; }
 
+.react-mark { flex: none; display: block; fill: #0b7fa0; stroke: #0b7fa0; }
+:root[data-theme="dark"] .react-mark { fill: #58c4dc; stroke: #58c4dc; }
+
+.next-mark { flex: none; display: block; }
+.next-mark .next-mark-disc { fill: #111; }
+.next-mark .next-mark-glyph { fill: #fff; }
+:root[data-theme="dark"] .next-mark .next-mark-disc { fill: #fff; }
+:root[data-theme="dark"] .next-mark .next-mark-glyph { fill: #111; }
+
 .vue-mark { flex: none; display: block; }
 .vue-mark .vue-mark-leaf { fill: #42b883; }
 .vue-mark .vue-mark-body { fill: #35495e; }
@@ -842,9 +851,11 @@ a:hover { text-decoration: underline; }
     box-shadow: var(--shadow-sm);
 }
 
-/* Faqat tanlangan API uslubidagi blok ko'rinadi */
-:root[data-api="composition"] .api-variant[data-api="options"],
-:root[data-api="options"] .api-variant[data-api="composition"] { display: none; }
+/* Faqat tanlangan variantdagi blok ko'rinadi */
+:root[data-api="composition"] .api-variant[data-variant="options"],
+:root[data-api="options"] .api-variant[data-variant="composition"],
+:root[data-lang="ts"] .api-variant[data-variant="js"],
+:root[data-lang="js"] .api-variant[data-variant="ts"] { display: none; }
 
 .api-variant > :first-child { margin-top: 0; }
 .api-variant > :last-child { margin-bottom: 0; }

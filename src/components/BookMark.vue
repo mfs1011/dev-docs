@@ -2,6 +2,8 @@
 import SymfonyMark from '@/components/SymfonyMark.vue'
 import LaravelMark from '@/components/LaravelMark.vue'
 import VueMark from '@/components/VueMark.vue'
+import ReactMark from '@/components/ReactMark.vue'
+import NextMark from '@/components/NextMark.vue'
 
 defineProps({
   book: { type: String, required: true },
@@ -13,6 +15,8 @@ defineProps({
     <SymfonyMark v-if="book === 'symfony'" :size="size" />
     <LaravelMark v-else-if="book === 'laravel'" :size="size" />
     <VueMark v-else-if="book === 'vue'" :size="size" />
+    <ReactMark v-else-if="book === 'react'" :size="size" />
+    <NextMark v-else-if="book === 'nextjs'" :size="size" />
     <span v-else class="book-mark-fallback" :style="{ width: `${size}px`, height: `${size}px` }">
         {{ book.slice(0, 2).toUpperCase() }}
     </span>

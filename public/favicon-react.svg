@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-13 -12 26 24">
+    <style>
+        .react-logo { fill: #0b7fa0; stroke: #0b7fa0; }
+        @media (prefers-color-scheme: dark) {
+            .react-logo { fill: #58c4dc; stroke: #58c4dc; }
+        }
+    </style>
+    <circle class="react-logo" cx="0" cy="0" r="2.05" stroke="none"/>
+    <g class="react-logo" fill="none" stroke-width="1">
+        <ellipse rx="11" ry="4.2"/>
+        <ellipse rx="11" ry="4.2" transform="rotate(60)"/>
+        <ellipse rx="11" ry="4.2" transform="rotate(120)"/>
+    </g>
+</svg>

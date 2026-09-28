@@ -105,13 +105,20 @@ const md = new MarkdownIt({
 })
 
 /**
- * `::: options` / `::: composition` bloklari — rasmiy hujjatdagi API almashtirgichi.
- * Blok ichidagi markdown odatdagidek ishlanadi, tashqarisiga `data-api` atributli div o'raladi.
- * Markdown fayl toza qoladi: GitHub'da ham o'qilaveradi.
+ * Variant bloklari: `::: options` / `::: composition` (Vue) va `::: js` / `::: ts` (React, Next).
+ * Blok ichidagi markdown odatdagidek ishlanadi, tashqarisiga guruh va variant atributlari
+ * bo'lgan div o'raladi. Markdown fayl toza qoladi: GitHub'da ham o'qilaveradi.
  */
+const VARIANT_GROUPS = {
+  options: 'api',
+  composition: 'api',
+  js: 'lang',
+  ts: 'lang',
+}
+
 function apiVariants(mdInstance) {
   const MARKER = ':'
-  const KINDS = new Set(['options', 'composition'])
+  const KINDS = new Set(Object.keys(VARIANT_GROUPS))
 
   mdInstance.block.ruler.before('fence', 'api_variant', (state, startLine, endLine, silent) => {
     const start = state.bMarks[startLine] + state.tShift[startLine]
@@ -147,7 +154,11 @@ function apiVariants(mdInstance) {
     state.lineMax = nextLine
 
     const open = state.push('api_variant_open', 'div', 1)
-    open.attrs = [['class', 'api-variant'], ['data-api', kind]]
+    open.attrs = [
+      ['class', 'api-variant'],
+      ['data-variant-group', VARIANT_GROUPS[kind]],
+      ['data-variant', kind],
+    ]
     open.map = [startLine, nextLine]
     open.markup = MARKER.repeat(3)
 
