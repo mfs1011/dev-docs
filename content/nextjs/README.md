@@ -47,47 +47,47 @@ Kod misollar TypeScript va JavaScript ko'rinishida — yuqoridagi almashtirgich 
 
 | № | Bob | Nima o'rganasiz |
 | --- | --- | --- |
-| 07 | Marshrutlash asoslari *(tayyorlanmoqda)* | `app/` konvensiyasi, `page`, `layout` |
-| 08 | Layout va shablon *(tayyorlanmoqda)* | Ichma-ich layout, holat saqlanishi |
-| 09 | Dinamik marshrutlar *(tayyorlanmoqda)* | `[id]`, `[...slug]`, `generateStaticParams` |
-| 10 | Yuklanish va xato holatlari *(tayyorlanmoqda)* | `loading.tsx`, `error.tsx`, `not-found` |
-| 11 | Navigatsiya *(tayyorlanmoqda)* | `Link`, `useRouter`, prefetch, scroll |
-| 12 | Marshrut guruhlari va parallel marshrutlar *(tayyorlanmoqda)* | `(group)`, `@slot`, intercepting |
-| 13 | Metadata va SEO *(tayyorlanmoqda)* | `generateMetadata`, OG, sitemap, robots |
-| 14 | Middleware *(tayyorlanmoqda)* | Edge, yo'naltirish, sarlavhalar, matcher |
-| 15 | Route Handlers *(tayyorlanmoqda)* | `route.ts`, REST, webhook, streaming |
+| 07 | [Marshrutlash asoslari](07-marshrutlash.md) | `app/` konvensiyasi, `page`, `layout` |
+| 08 | [Layout va shablon](08-layout-va-template.md) | Ichma-ich layout, holat saqlanishi |
+| 09 | [Dinamik marshrutlar](09-dinamik-marshrutlar.md) | `[id]`, `[...slug]`, `generateStaticParams` |
+| 10 | [Yuklanish va xato holatlari](10-loading-va-error.md) | `loading.tsx`, `error.tsx`, `not-found` |
+| 11 | [Navigatsiya](11-navigatsiya.md) | `Link`, `useRouter`, prefetch, scroll |
+| 12 | [Marshrut guruhlari va parallel marshrutlar](12-route-groups-parallel.md) | `(group)`, `@slot`, intercepting |
+| 13 | [Metadata va SEO](13-metadata-va-seo.md) | `generateMetadata`, OG, sitemap, robots |
+| 14 | [Middleware](14-middleware.md) | Edge, yo'naltirish, sarlavhalar, matcher |
+| 15 | [Route Handlers](15-route-handlers.md) | `route.ts`, REST, webhook, streaming |
 
 ## III qism — Server komponentlar va ma'lumot (16–24)
 
 | № | Bob | Nima o'rganasiz |
 | --- | --- | --- |
-| 16 | Server Components *(tayyorlanmoqda)* | RSC modeli, seriyalash, chegaralar |
-| 17 | Ma'lumot yuklash *(tayyorlanmoqda)* | `fetch`, ORM, parallel/ketma-ket, waterfall |
-| 18 | Kesh: to'liq manzara *(tayyorlanmoqda)* | Request memo, Data Cache, Full Route, Router Cache |
-| 19 | Qayta validatsiya *(tayyorlanmoqda)* | `revalidatePath/Tag`, ISR, on-demand |
-| 20 | Streaming va Suspense *(tayyorlanmoqda)* | Bo'lak-bo'lak render, skeletlar, PPR |
-| 21 | Server Actions *(tayyorlanmoqda)* | Mutatsiya, forma, xavfsizlik, validatsiya |
-| 22 | Formalar va validatsiya *(tayyorlanmoqda)* | `useActionState`, zod, progressive enhancement |
-| 23 | Optimistik yangilash *(tayyorlanmoqda)* | `useOptimistic`, xato holatida qaytarish |
-| 24 | Klient holati Next ichida *(tayyorlanmoqda)* | URL holati, TanStack Query, Zustand |
+| 16 | [Server Components](16-server-components.md) | RSC modeli, seriyalash, chegaralar |
+| 17 | [Ma'lumot yuklash](17-malumot-yuklash.md) | `fetch`, ORM, parallel/ketma-ket, waterfall |
+| 18 | [Kesh: to'liq manzara](18-kesh.md) | Request memo, Data Cache, Full Route, Router Cache |
+| 19 | [Qayta validatsiya](19-revalidatsiya.md) | `revalidatePath/Tag`, ISR, on-demand |
+| 20 | [Streaming va Suspense](20-streaming-suspense.md) | Bo'lak-bo'lak render, skeletlar, PPR |
+| 21 | [Server Actions](21-server-actions.md) | Mutatsiya, forma, xavfsizlik, validatsiya |
+| 22 | [Formalar va validatsiya](22-formalar.md) | `useActionState`, zod, progressive enhancement |
+| 23 | [Optimistik yangilash](23-optimistik.md) | `useOptimistic`, xato holatida qaytarish |
+| 24 | [Klient holati Next ichida](24-klient-holati.md) | URL holati, TanStack Query, Zustand |
 
 ## IV qism — Auth va tokenlar (25–31)
 
 | № | Bob | Nima o'rganasiz |
 | --- | --- | --- |
-| 25 | Kalit tushunchalar *(tayyorlanmoqda)* | Sessiya vs token, JWT ichi, access/refresh, muddat |
-| 26 | Token qayerda saqlanadi *(tayyorlanmoqda)* | `httpOnly` cookie vs `localStorage`, XSS/CSRF |
-| 27 | Tashqi backend bilan login oqimi *(tayyorlanmoqda)* | Laravel/Symfony API, Route Handler orqali proksi |
-| 28 | Refresh oqimi *(tayyorlanmoqda)* | Avtomatik yangilash, parallel so'rovlar, rotation |
-| 29 | Server komponentlardan so'rov *(tayyorlanmoqda)* | Cookie o'qish, `fetch` o'ramlari, xatolar |
-| 30 | Himoyalangan marshrutlar *(tayyorlanmoqda)* | Middleware, layout tekshiruvi, rollar |
-| 31 | Auth.js bilan *(tayyorlanmoqda)* | OAuth, credentials, sessiya, adapterlar |
+| 25 | [Kalit tushunchalar](25-auth-kalit-tushunchalar.md) | Sessiya vs token, JWT ichi, access/refresh, muddat |
+| 26 | [Token qayerda saqlanadi](26-token-saqlash.md) | `httpOnly` cookie vs `localStorage`, XSS/CSRF |
+| 27 | [Tashqi backend bilan login oqimi](27-tashqi-backend-login.md) | Laravel/Symfony API, Route Handler orqali proksi |
+| 28 | [Refresh oqimi](28-refresh-oqimi.md) | Avtomatik yangilash, parallel so'rovlar, rotation |
+| 29 | [Server komponentlardan so'rov](29-server-sorovlar.md) | Cookie o'qish, `fetch` o'ramlari, xatolar |
+| 30 | [Himoyalangan marshrutlar](30-himoyalangan-marshrutlar.md) | Middleware, layout tekshiruvi, rollar |
+| 31 | [Auth.js bilan](31-authjs.md) | OAuth, credentials, sessiya, adapterlar |
 
 ## V qism — Ma'lumotlar bazasi va integratsiyalar (32–37)
 
 | № | Bob | Nima o'rganasiz |
 | --- | --- | --- |
-| 32 | Ma'lumotlar bazasi: Prisma *(tayyorlanmoqda)* | Sxema, migratsiya, so'rovlar, connection pool |
+| 32 | [Ma'lumotlar bazasi: Prisma](32-prisma.md) | Sxema, migratsiya, so'rovlar, connection pool |
 | 33 | Drizzle va SQL yondashuvi *(tayyorlanmoqda)* | Tipli SQL, qachon afzal |
 | 34 | Fayl yuklash va saqlash *(tayyorlanmoqda)* | S3/R2, presigned URL, rasm optimizatsiyasi |
 | 35 | To'lov: Stripe *(tayyorlanmoqda)* | Checkout, webhook, idempotentlik |
