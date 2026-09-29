@@ -203,6 +203,28 @@ function buildSections(book, pages) {
   return sections
 }
 
+/**
+ * Staging papkasini TARGET o'rniga qo'yadi.
+ * macOS'da rm va rename orasida papkani boshqa protsess (Spotlight, muharrir, watcher)
+ * qayta yaratib qo'yishi mumkin — u holda rename ENOTEMPTY beradi. Shuning uchun qayta urinamiz.
+ */
+async function swapIntoPlace(staging, target, attempts = 5) {
+  for (let attempt = 1; attempt <= attempts; attempt += 1) {
+    try {
+      await rm(target, { recursive: true, force: true })
+      await rename(staging, target)
+
+      return
+    } catch (error) {
+      const recoverable = ['ENOTEMPTY', 'EEXIST', 'EPERM', 'ENOTDIR', 'EBUSY'].includes(error.code)
+
+      if (!recoverable || attempt === attempts) throw error
+
+      await new Promise((resolve) => setTimeout(resolve, 50 * attempt))
+    }
+  }
+}
+
 async function collectBook(book, staging) {
   const sourceDir = join(SOURCE_ROOT, book.dir)
 
@@ -307,10 +329,8 @@ async function main() {
     throw new Error(`Hech qanday kitob topilmadi. Manba papka: ${SOURCE_ROOT}`)
   }
 
-  await rm(TARGET, { recursive: true, force: true })
-
   try {
-    await rename(staging, TARGET)
+    await swapIntoPlace(staging, TARGET)
   } finally {
     await rm(staging, { recursive: true, force: true })
   }
