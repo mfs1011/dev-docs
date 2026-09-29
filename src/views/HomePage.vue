@@ -2,6 +2,7 @@
 import { computed, onMounted } from 'vue'
 import BookMark from '@/components/BookMark.vue'
 import { books, formatDate } from '@/docs'
+import { markFor } from '@/progress'
 
 const totals = computed(() =>
   books.reduce(
@@ -15,6 +16,9 @@ const totals = computed(() =>
 
 /** Boblari hali yozilmagan kitob — kartada "tayyorlanmoqda" deb ko'rsatiladi */
 const isDraft = (book) => !book.chapterCount
+
+/** Kitobda qoldirilgan o'qish belgisi */
+const bookMark = (book) => markFor(book.id)
 
 onMounted(() => {
   document.title = "Qo'llanmalar — backend va frontend"
@@ -67,13 +71,16 @@ onMounted(() => {
             <h2 class="home-section-title">Qo'llanmalar</h2>
 
             <div class="home-grid">
-                <RouterLink
+                <div
                     v-for="book in books"
                     :key="book.id"
+                    class="book-cell"
+                    :style="{ '--c-light': book.accent, '--c-dark': book.accentDark ?? book.accent }"
+                >
+                <RouterLink
                     :to="`/${book.id}`"
                     class="book-card"
-                    :class="{ 'is-draft': isDraft(book) }"
-                    :style="{ '--c-light': book.accent, '--c-dark': book.accentDark ?? book.accent }"
+                    :class="{ 'is-draft': isDraft(book), 'has-mark': Boolean(bookMark(book)) }"
                 >
                     <span class="book-card-head">
                         <span class="book-card-mark">
@@ -106,6 +113,28 @@ onMounted(() => {
                         </span>
                     </span>
                 </RouterLink>
+
+                <RouterLink
+                    v-if="bookMark(book)"
+                    :to="`${bookMark(book).route}#belgi`"
+                    class="book-resume"
+                >
+                    <svg viewBox="0 0 12 14" aria-hidden="true"><path d="M2 1h8v12l-4-3.2L2 13z" /></svg>
+
+                    <span class="book-resume-body">
+                        <span class="book-resume-title">
+                            <template v-if="bookMark(book).chapter">
+                                {{ String(bookMark(book).chapter).padStart(2, '0') }}-bob
+                            </template>
+                            <template v-else>{{ bookMark(book).title }}</template>
+                            — davom etish
+                        </span>
+                        <span v-if="bookMark(book).excerpt" class="book-resume-excerpt">
+                            {{ bookMark(book).excerpt }}
+                        </span>
+                    </span>
+                </RouterLink>
+                </div>
             </div>
         </div>
     </main>

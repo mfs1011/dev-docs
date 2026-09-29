@@ -3,6 +3,7 @@ import { computed, nextTick, onMounted, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import VariantToggle from '@/components/VariantToggle.vue'
 import { findBook } from '@/docs'
+import { markFor } from '@/progress'
 
 const props = defineProps({
   bookId: { type: String, default: null },
@@ -30,6 +31,10 @@ const visibleSections = computed(() => {
 })
 
 const isActive = (item) => route.path === item.route
+
+/** Shu bobda o'qish belgisi turibdimi */
+const mark = computed(() => markFor(props.bookId))
+const isMarked = (item) => mark.value?.route === item.route
 
 const nav = ref(null)
 
@@ -80,6 +85,16 @@ watch(() => route.path, revealActive)
                                     {{ String(item.chapter).padStart(2, '0') }}
                                 </span>
                                 <span class="sidebar-label">{{ item.label }}</span>
+
+                                <svg
+                                    v-if="isMarked(item)"
+                                    class="sidebar-mark"
+                                    viewBox="0 0 12 14"
+                                    aria-label="O'qish belgisi shu yerda"
+                                    role="img"
+                                >
+                                    <path d="M2 1h8v12l-4-3.2L2 13z" />
+                                </svg>
                             </RouterLink>
                         </li>
                     </ul>

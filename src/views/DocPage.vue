@@ -4,6 +4,7 @@ import { useRoute, useRouter } from 'vue-router'
 import PageToc from '@/components/PageToc.vue'
 import { renderMarkdown, sectionKindFor } from '@/markdown'
 import { findBook, findPage, formatDate, loadSource, neighbours, resolveDocLink } from '@/docs'
+import { clearMark, excerptOf, markFor, setMark } from '@/progress'
 
 const route = useRoute()
 const router = useRouter()
@@ -16,8 +17,13 @@ const error = ref('')
 const article = ref(null)
 const bookTitle = ref('')
 const bookVersion = ref('')
+const hasMarkHere = ref(false)
 
-let observer = null
+let flashTimer = null
+let headingNodes = []
+let scrollQueued = false
+let layoutObserver = null
+let insetQueued = false
 
 const PARAGRAPH_KINDS = [
   { prefix: 'muammo', kind: 'problem' },
@@ -140,27 +146,242 @@ function collectHeadings(container) {
   }))
 }
 
-function observeHeadings(container) {
-  observer?.disconnect()
+/*
+ * Aktiv sarlavhani scroll bo'yicha aniqlaymiz.
+ *
+ * Ilgari IntersectionObserver ishlatilardi: u faqat o'zgargan elementlar
+ * haqida xabar berardi va chegara yaqinida aktiv bo'lim ikki sarlavha
+ * orasida sakrab turardi. Endi qoida oddiy va barqaror: yuqori chegaradan
+ * o'tgan oxirgi sarlavha — aktiv.
+ */
+const ACTIVE_OFFSET = 100
 
-  const targets = container.querySelectorAll('h2[id], h3[id]')
-  if (!targets.length) return
+function trackHeadings(container) {
+  headingNodes = Array.from(container.querySelectorAll('h2[id], h3[id]'))
 
-  observer = new IntersectionObserver(
-    (entries) => {
-      const visible = entries
-        .filter((entry) => entry.isIntersecting)
-        .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)
+  if (!headingNodes.length) {
+    activeId.value = ''
 
-      if (visible.length) activeId.value = visible[0].target.id
-    },
-    { rootMargin: '-80px 0px -70% 0px', threshold: 0 },
-  )
+    return
+  }
 
-  for (const target of targets) observer.observe(target)
+  window.addEventListener('scroll', onScroll, { passive: true })
+  window.addEventListener('resize', onScroll, { passive: true })
+  updateActive()
+}
+
+function updateActive() {
+  scrollQueued = false
+
+  let current = ''
+
+  for (const node of headingNodes) {
+    if (node.getBoundingClientRect().top > ACTIVE_OFFSET) break
+
+    current = node.id
+  }
+
+  activeId.value = current || headingNodes[0]?.id || ''
+}
+
+function onScroll() {
+  if (scrollQueued) return
+
+  scrollQueued = true
+  requestAnimationFrame(updateActive)
+}
+
+function stopTracking() {
+  window.removeEventListener('scroll', onScroll)
+  window.removeEventListener('resize', onScroll)
+  headingNodes = []
+}
+
+/* ---------- o'qish belgisi ---------- */
+
+/** Belgi qo'yish mumkin bo'lgan bloklar — har biri manbadagi bitta qator */
+const MARKABLE = 'p[data-line], li[data-line], h2[data-line], h3[data-line], blockquote[data-line], figure.code-block[data-line], .table-wrap[data-line]'
+
+function setupMarkers(container, current) {
+  // Jadval o'ramiga ichkaridagi jadvalning qatorini ko'chiramiz
+  for (const wrap of container.querySelectorAll('.table-wrap')) {
+    const line = wrap.querySelector('table[data-line]')?.dataset.line
+
+    if (line) wrap.dataset.line = line
+  }
+
+  for (const block of container.querySelectorAll(MARKABLE)) {
+    // Navigatsiya qatoriga belgi qo'yishning ma'nosi yo'q
+    if (block.classList.contains('doc-nav')) continue
+
+    block.classList.add('markable')
+
+    const button = document.createElement('button')
+
+    button.type = 'button'
+    button.className = 'line-mark'
+    button.dataset.line = block.dataset.line
+    button.title = "Shu yerni belgilash"
+    button.setAttribute('aria-label', "Shu yerni belgilash")
+    button.innerHTML = '<svg viewBox="0 0 12 14" aria-hidden="true"><path d="M2 1h8v12l-4-3.2L2 13z"/></svg>'
+
+    button.addEventListener('click', () => {
+      const line = Number(block.dataset.line)
+
+      if (markFor(current.book)?.route === current.route && markFor(current.book)?.line === line) {
+        clearMark(current.book)
+      } else {
+        setMark(current.book, {
+          route: current.route,
+          line,
+          chapter: current.chapter ?? null,
+          title: current.title,
+          excerpt: excerptOf(block),
+        })
+      }
+
+      paintMark(container, current)
+    })
+
+    block.prepend(button)
+  }
+
+  updateMarkInsets(container)
+  observeLayout(container)
+  paintMark(container, current)
+}
+
+/*
+ * Belgi har doim sahifaning chap chetida tursin — blok qanchalik ichkarida
+ * bo'lishidan qat'i nazar (ro'yxat bandi, ajratilgan blok, ichma-ich ro'yxat).
+ * Har blok o'zining maqoladan qancha ichkarida ekanini `--mark-inset` da
+ * saqlaydi, CSS esa shu qiymatni qaytarib chiqaradi.
+ */
+function updateMarkInsets(container) {
+  const base = container.getBoundingClientRect().left
+
+  for (const block of container.querySelectorAll('.markable')) {
+    const inset = Math.max(0, Math.round(block.getBoundingClientRect().left - base))
+
+    block.style.setProperty('--mark-inset', `${inset}px`)
+  }
+}
+
+/** Oyna o'lchami yoki JS/TS almashtirgichi tartibni o'zgartirsa qayta hisoblaymiz */
+function observeLayout(container) {
+  layoutObserver?.disconnect()
+
+  layoutObserver = new ResizeObserver(() => {
+    if (insetQueued) return
+
+    insetQueued = true
+    requestAnimationFrame(() => {
+      insetQueued = false
+      updateMarkInsets(container)
+    })
+  })
+
+  layoutObserver.observe(container)
+}
+
+/** Belgilangan blokni ajratib ko'rsatadi */
+function paintMark(container, current) {
+  const mark = markFor(current.book)
+  const line = mark?.route === current.route ? mark.line : null
+
+  for (const block of container.querySelectorAll('.markable.is-marked')) {
+    block.classList.remove('is-marked')
+    block.querySelector('.line-mark')?.setAttribute('aria-label', "Shu yerni belgilash")
+  }
+
+  if (line == null) {
+    hasMarkHere.value = false
+
+    return
+  }
+
+  const target = container.querySelector(`.markable[data-line="${line}"]`)
+
+  if (!target) {
+    hasMarkHere.value = false
+
+    return
+  }
+
+  target.classList.add('is-marked')
+  target.querySelector('.line-mark')?.setAttribute('aria-label', 'Belgini olib tashlash')
+  hasMarkHere.value = true
+}
+
+/** Shu sahifadagi belgiga sakrash */
+function scrollToMark(behavior = 'smooth') {
+  const container = article.value
+  const mark = page.value ? markFor(page.value.book) : null
+
+  if (!container || !mark || mark.route !== page.value.route) return
+
+  const target = container.querySelector(`.markable[data-line="${mark.line}"]`)
+
+  if (!target) return
+
+  target.scrollIntoView({ behavior, block: 'center' })
+
+  // Scroll uzoq davom etishi mumkin (sahifada `scroll-behavior: smooth`) —
+  // pulsni yetib borgandan keyin boshlaymiz, aks holda u yo'lda tugab qoladi.
+  afterScrollSettles(() => flash(target))
+}
+
+function flash(target) {
+  // Ketma-ket bosilganda animatsiya qayta ishga tushsin
+  target.classList.remove('is-flash')
+  void target.offsetWidth
+  target.classList.add('is-flash')
+
+  clearTimeout(flashTimer)
+  flashTimer = setTimeout(() => target.classList.remove('is-flash'), 1700)
+}
+
+/**
+ * Scroll to'xtaganini kutadi. `scrollend` hodisasiga tayanmaydi: uning
+ * qo'llab-quvvatlanishi brauzerlarda turlicha. O'rniga pozitsiya bir necha
+ * kadr davomida o'zgarmasligini tekshiramiz.
+ */
+function afterScrollSettles(callback) {
+  let last = window.scrollY
+  let stable = 0
+  let frames = 0
+
+  const tick = () => {
+    const now = window.scrollY
+
+    stable = Math.abs(now - last) < 1 ? stable + 1 : 0
+    last = now
+    frames += 1
+
+    // Dastlabki kadrlarda scroll hali boshlanmagan bo'lishi mumkin —
+    // "to'xtadi" deb o'ylab qolmaslik uchun ularni o'tkazib yuboramiz.
+    if (frames < 6) {
+      requestAnimationFrame(tick)
+
+      return
+    }
+
+    // ~2 soniyadan oshsa baribir boshlaymiz
+    if (stable >= 3 || frames > 120) {
+      callback()
+
+      return
+    }
+
+    requestAnimationFrame(tick)
+  }
+
+  requestAnimationFrame(tick)
 }
 
 async function load() {
+  stopTracking()
+  layoutObserver?.disconnect()
   error.value = ''
   const current = findPage(route.path)
 
@@ -201,17 +422,26 @@ async function load() {
   enhanceLinks(container, current)
   enhanceCodeBlocks(container)
 
-  headings.value = collectHeadings(container)
-  observeHeadings(container)
+  setupMarkers(container, current)
 
-  if (route.hash) {
+  headings.value = collectHeadings(container)
+  trackHeadings(container)
+
+  // `#belgi` — bosh sahifadagi "davom etish" havolasi shu yerga olib keladi
+  if (route.hash === '#belgi') {
+    scrollToMark('instant')
+  } else if (route.hash) {
     document.querySelector(route.hash)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }
 }
 
 watch(() => route.path, load, { immediate: true })
 
-onBeforeUnmount(() => observer?.disconnect())
+onBeforeUnmount(() => {
+  stopTracking()
+  layoutObserver?.disconnect()
+  clearTimeout(flashTimer)
+})
 </script>
 
 <template>
@@ -220,6 +450,15 @@ onBeforeUnmount(() => observer?.disconnect())
             <div v-if="page" class="page-meta">
                 <p class="breadcrumb">{{ page.section }}</p>
                 <p class="page-meta-info">
+                    <button
+                        v-if="hasMarkHere"
+                        type="button"
+                        class="mark-jump"
+                        @click="scrollToMark()"
+                    >
+                        <svg viewBox="0 0 12 14" aria-hidden="true"><path d="M2 1h8v12l-4-3.2L2 13z" /></svg>
+                        belgiga o'tish
+                    </button>
                     <span v-if="bookVersion">{{ bookTitle }} {{ bookVersion }}</span>
                     <span v-if="page.updatedAt">Yangilangan: {{ formatDate(page.updatedAt) }}</span>
                 </p>

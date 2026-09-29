@@ -177,6 +177,24 @@ function apiVariants(mdInstance) {
 
 md.use(apiVariants)
 
+/**
+ * Har bir blok elementiga markdown manbasidagi qator raqamini yozadi.
+ * O'qish belgisi shu raqamga bog'lanadi: matn tahrirlanmaguncha barqaror,
+ * oyna kengligi yoki shrift o'zgarsa siljib ketmaydi.
+ */
+function sourceLines(mdInstance) {
+  mdInstance.core.ruler.push('source_lines', (state) => {
+    for (const token of state.tokens) {
+      if (token.map && token.nesting !== -1) {
+        token.attrSet('data-line', String(token.map[0]))
+      }
+    }
+  })
+}
+
+md.use(sourceLines)
+
+
 md.use(anchor, {
   slugify,
   permalink: anchor.permalink.linkInsideHeader({
@@ -191,8 +209,11 @@ md.use(anchor, {
 md.renderer.rules.fence = (tokens, idx, options) => {
   const token = tokens[idx]
   const language = token.info.trim().split(/\s+/)[0]
+  const html = options.highlight(token.content, language)
 
-  return options.highlight(token.content, language)
+  if (!token.map) return html
+
+  return html.replace('<figure class="code-block"', `<figure data-line="${token.map[0]}" class="code-block"`)
 }
 
 export function renderMarkdown(source) {

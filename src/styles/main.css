@@ -51,6 +51,9 @@
 
     --grid-dot: #d3d9e3;
 
+    /* O'qish belgisi pulsi */
+    --mark-tint: 26%;
+
     --shadow-sm: 0 1px 2px rgba(16, 24, 40, .06);
     --shadow-lg: 0 24px 48px -12px rgba(16, 24, 40, .18);
 }
@@ -70,6 +73,7 @@
     --border: #242a36;
     --border-strong: #313a49;
     --grid-dot: #222835;
+    --mark-tint: 40%;
 
     --accent: #4cc79a;
     --accent-soft: #10291f;
@@ -680,6 +684,8 @@ a:hover { text-decoration: underline; }
     align-self: start;
     max-height: calc(100vh - var(--topbar-height) - 60px);
     overflow-y: auto;
+    /* Scrollbar paydo bo'lganda kenglik sakramasin */
+    scrollbar-gutter: stable;
     padding-left: 18px;
     border-left: 1px solid var(--border);
 }
@@ -695,16 +701,51 @@ a:hover { text-decoration: underline; }
 
 .toc-list { margin: 0; padding: 0; list-style: none; }
 
+.toc-list li {
+    position: relative;
+    padding-left: 11px;
+    border-radius: 0 5px 5px 0;
+    transition: background .15s ease;
+}
+
+/* Aktiv bo'limning chap belgisi — matn kengligiga tegmaydi */
+.toc-list li::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    bottom: 6px;
+    left: 0;
+    width: 2px;
+    border-radius: 2px;
+    background: var(--accent);
+    opacity: 0;
+    transition: opacity .15s ease;
+}
+
 .toc-list a {
     display: block;
     padding: 3px 0;
     color: var(--text-muted);
     font-size: 13px;
     line-height: 1.45;
+    transition: color .15s ease;
 }
 .toc-list a:hover { color: var(--text); text-decoration: none; }
-.toc-level-3 { padding-left: 14px; }
-.toc-list li.is-active > a { color: var(--accent-text); font-weight: 600; }
+.toc-level-3 { padding-left: 25px; }
+
+/*
+ * Aktiv bo'lim rang, chap chiziq va yumshoq fon bilan ajratiladi —
+ * `font-weight` bilan emas: qalin matn kengroq bo'lgani uchun uzun
+ * sarlavhalar qayta qatorlanib, ro'yxat scroll paytida sakrab turardi.
+ * Ba'zi kitoblarda (masalan Next.js) urg'u rangi oddiy matn rangiga
+ * juda yaqin, shuning uchun fon ham kerak.
+ */
+.toc-list li.is-active {
+    background: color-mix(in srgb, var(--accent) 9%, transparent);
+}
+
+.toc-list li.is-active > a { color: var(--accent-text); }
+.toc-list li.is-active::before { opacity: 1; }
 .toc-empty { color: var(--text-subtle); font-size: 13px; }
 
 /* ---------- pager ---------- */
@@ -1069,10 +1110,18 @@ a:hover { text-decoration: underline; }
     gap: 16px;
 }
 
-.book-card {
+.book-cell {
     --card-accent: var(--c-light, var(--accent));
 
+    display: flex;
+    flex-direction: column;
+}
+
+:root[data-theme="dark"] .book-cell { --card-accent: var(--c-dark, var(--accent)); }
+
+.book-card {
     position: relative;
+    flex: 1;
     display: flex;
     flex-direction: column;
     gap: 9px;
@@ -1083,8 +1132,6 @@ a:hover { text-decoration: underline; }
     color: var(--text);
     transition: border-color .15s ease, background .15s ease;
 }
-
-:root[data-theme="dark"] .book-card { --card-accent: var(--c-dark, var(--accent)); }
 
 /* Chap tomondagi rangli marker — muharrir yorlig'iga o'xshash */
 .book-card::before {
@@ -1215,6 +1262,180 @@ a:hover { text-decoration: underline; }
 .book-card.is-draft .book-card-path { opacity: .55; }
 
 .layout.is-home .topbar { border-bottom-color: transparent; }
+
+/* ---- o'qish belgisi: bosh sahifadagi "davom etish" ---- */
+
+.book-card.has-mark { border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
+.book-card.has-mark .book-card-foot { border-radius: 0; }
+
+.book-resume {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    padding: 11px 14px;
+    border: 1px solid var(--border);
+    border-top: 0;
+    border-radius: 0 0 12px 12px;
+    background: color-mix(in srgb, var(--card-accent) 7%, var(--bg-elevated));
+    color: var(--text);
+    transition: background .15s ease, border-color .15s ease;
+}
+
+.book-resume:hover {
+    background: color-mix(in srgb, var(--card-accent) 13%, var(--bg-elevated));
+    border-color: color-mix(in srgb, var(--card-accent) 40%, var(--border));
+    text-decoration: none;
+}
+
+.book-resume svg {
+    flex: none;
+    width: 11px;
+    height: 13px;
+    margin-top: 2px;
+    fill: var(--card-accent);
+}
+
+.book-resume-body { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+
+.book-resume-title {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.book-resume-excerpt {
+    overflow: hidden;
+    color: var(--text-subtle);
+    font-size: 12px;
+    line-height: 1.4;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* ---- o'qish belgisi: bob ichidagi tugma ---- */
+
+.markable { position: relative; }
+
+.line-mark {
+    position: absolute;
+    top: 2px;
+    /* `--mark-inset` — blokning maqola chetidan ichkariligi (DocPage hisoblaydi) */
+    left: calc(-1 * var(--mark-inset, 0px) - 34px);
+    display: grid;
+    place-items: center;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    border: 0;
+    border-radius: 5px;
+    background: transparent;
+    color: var(--text-subtle);
+    opacity: 0;
+    cursor: pointer;
+    transition: opacity .12s ease, background .12s ease, color .12s ease;
+}
+
+.line-mark svg { width: 10px; height: 12px; fill: currentColor; }
+
+/* Ro'yxat bandi va sarlavhalarda blok kichikroq — tugma ham yuqoriroq turadi */
+li.markable > .line-mark { top: 0; }
+h2.markable > .line-mark,
+h3.markable > .line-mark { top: 6px; }
+
+.markable:hover > .line-mark,
+.line-mark:focus-visible { opacity: 1; }
+
+.line-mark:hover,
+.line-mark:focus-visible {
+    background: var(--surface-hover);
+    color: var(--accent-text);
+}
+
+/* Belgilangan blok */
+.markable.is-marked > .line-mark {
+    opacity: 1;
+    color: var(--accent-text);
+}
+
+.markable.is-marked::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: calc(-1 * var(--mark-inset, 0px) - 12px);
+    width: 2px;
+    border-radius: 2px;
+    background: var(--accent);
+}
+
+.markable.is-flash {
+    border-radius: 4px;
+    animation: mark-pulse 1.6s ease-out;
+}
+
+/* box-shadow tanlangan: yoritilgan maydon matndan kengroq, tartib siljimaydi */
+@keyframes mark-pulse {
+    0%, 45% {
+        background: color-mix(in srgb, var(--accent) var(--mark-tint), transparent);
+        box-shadow: 0 0 0 8px color-mix(in srgb, var(--accent) var(--mark-tint), transparent);
+    }
+    100% {
+        background: transparent;
+        box-shadow: 0 0 0 8px transparent;
+    }
+}
+
+/* Sahifa tepasidagi "belgiga o'tish" */
+.mark-jump {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 3px 9px;
+    border: 1px solid color-mix(in srgb, var(--accent) 35%, var(--border));
+    border-radius: 999px;
+    background: var(--accent-soft);
+    color: var(--accent-text);
+    font: inherit;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.mark-jump:hover { border-color: var(--accent); }
+.mark-jump svg { width: 9px; height: 11px; fill: currentColor; }
+
+/* Sidebardagi belgi */
+.sidebar-mark {
+    flex: none;
+    width: 9px;
+    height: 11px;
+    margin-left: auto;
+    fill: var(--accent);
+}
+
+@media (max-width: 900px) {
+    /* Tor ekranda ikkalasiga joy yetmaydi: chiziq o'rniga yumshoq fon */
+    .line-mark {
+        left: calc(-1 * var(--mark-inset, 0px) - 15px);
+        width: 18px;
+        height: 18px;
+    }
+    .markable.is-marked::before { display: none; }
+
+    .markable.is-marked {
+        border-radius: 4px;
+        background: color-mix(in srgb, var(--accent) 12%, transparent);
+        box-shadow: 0 0 0 5px color-mix(in srgb, var(--accent) 12%, transparent);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .markable.is-flash {
+        animation: none;
+        background: color-mix(in srgb, var(--accent) var(--mark-tint), transparent);
+        box-shadow: 0 0 0 8px color-mix(in srgb, var(--accent) var(--mark-tint), transparent);
+    }
+}
+
 
 @media (max-width: 900px) {
     .home-inner { padding: 48px 18px 72px; }
