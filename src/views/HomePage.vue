@@ -25,30 +25,40 @@ onMounted(() => {
     <main class="home">
         <div class="home-inner">
             <section class="home-hero">
-                <p class="home-eyebrow">O'zbek tilida</p>
+                <p class="home-prompt">
+                    <span aria-hidden="true">$</span>
+                    <code>qollanmalar --lang=uz --level=0..senior</code>
+                </p>
 
                 <h1 class="home-title">
-                    Dasturchi
-                    <span class="home-title-accent">qo'llanmalari</span>
+                    Dasturchi qo'llanmalari
                 </h1>
 
                 <p class="home-lead">
-                    Rasmiy hujjatlar asosida yozilgan to'liq qo'llanmalar. Har bobda:
-                    tushuncha → nega shunday → kod → muhandislik nuqtai nazari →
-                    tipik xatolar → amaliyot.
+                    Rasmiy hujjatlar asosida yozilgan to'liq qo'llanmalar.
+                    Har bob bir xil skeletda:
                 </p>
+
+                <ol class="home-skeleton">
+                    <li>Tushuncha</li>
+                    <li>Nega shunday</li>
+                    <li>Kod</li>
+                    <li>Muhandislik nuqtai nazari</li>
+                    <li>Tipik xatolar</li>
+                    <li>Amaliyot</li>
+                </ol>
 
                 <dl class="home-stats">
                     <div class="home-stat">
-                        <dt>Qo'llanma</dt>
+                        <dt>qo'llanma</dt>
                         <dd>{{ books.length }}</dd>
                     </div>
                     <div class="home-stat">
-                        <dt>Bob</dt>
+                        <dt>bob</dt>
                         <dd>{{ totals.chapters }}</dd>
                     </div>
                     <div class="home-stat">
-                        <dt>Sahifa</dt>
+                        <dt>sahifa</dt>
                         <dd>{{ totals.pages }}</dd>
                     </div>
                 </dl>
@@ -65,38 +75,32 @@ onMounted(() => {
                     :class="{ 'is-draft': isDraft(book) }"
                     :style="{ '--c-light': book.accent, '--c-dark': book.accentDark ?? book.accent }"
                 >
-                    <span class="book-card-sheen" aria-hidden="true" />
-
                     <span class="book-card-head">
                         <span class="book-card-mark">
                             <BookMark :book="book.id" :size="34" />
                         </span>
 
-                        <span v-if="book.version" class="book-card-version">v{{ book.version }}</span>
+                        <span v-if="book.version" class="book-card-version">{{ book.version }}</span>
                         <span v-else class="book-card-version is-soon">tayyorlanmoqda</span>
                     </span>
 
                     <h3 class="book-card-title">{{ book.title }}</h3>
                     <p class="book-card-subtitle">{{ book.subtitle }}</p>
 
-                    <span class="book-card-meta">
-                        <template v-if="isDraft(book)">
-                            <span>Mundarija tayyor</span>
-                        </template>
-                        <template v-else>
-                            <span>{{ book.chapterCount }} bob</span>
-                            <span>{{ book.pageCount }} sahifa</span>
-                        </template>
-                    </span>
+                    <span class="book-card-path">content/{{ book.id }}/</span>
 
                     <span class="book-card-foot">
+                        <span class="book-card-count">
+                            <template v-if="isDraft(book)">mundarija</template>
+                            <template v-else>{{ book.chapterCount }} bob</template>
+                        </span>
+
                         <span v-if="book.updatedAt" class="book-card-date">
                             {{ formatDate(book.updatedAt) }}
                         </span>
 
-                        <span class="book-card-cta">
-                            Ochish
-                            <svg class="book-card-arrow" viewBox="0 0 16 16" aria-hidden="true">
+                        <span class="book-card-cta" aria-hidden="true">
+                            <svg viewBox="0 0 16 16">
                                 <path d="M3 8h9M8.5 4l4 4-4 4" />
                             </svg>
                         </span>

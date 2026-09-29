@@ -49,6 +49,8 @@
     --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 
+    --grid-dot: #d3d9e3;
+
     --shadow-sm: 0 1px 2px rgba(16, 24, 40, .06);
     --shadow-lg: 0 24px 48px -12px rgba(16, 24, 40, .18);
 }
@@ -67,6 +69,7 @@
 
     --border: #242a36;
     --border-strong: #313a49;
+    --grid-dot: #222835;
 
     --accent: #4cc79a;
     --accent-soft: #10291f;
@@ -924,21 +927,18 @@ a:hover { text-decoration: underline; }
 
 .home {
     position: relative;
-    overflow: hidden;
 }
 
-/* Sahifa tepasidagi yumshoq nur — faol kitob rangiga bog'liq emas, neytral */
+/* Millimetrli qog'oz: nuqtali to'r, pastga qarab so'nadi */
 .home::before {
     content: '';
     position: absolute;
-    top: -260px;
-    left: 50%;
-    width: min(1100px, 130vw);
-    height: 520px;
-    transform: translateX(-50%);
-    background:
-        radial-gradient(closest-side, color-mix(in srgb, var(--accent) 18%, transparent), transparent 70%);
-    opacity: .5;
+    inset: 0 0 auto;
+    height: 460px;
+    background-image: radial-gradient(circle, var(--grid-dot) 1px, transparent 1px);
+    background-size: 24px 24px;
+    -webkit-mask-image: linear-gradient(to bottom, #000 0%, transparent 100%);
+    mask-image: linear-gradient(to bottom, #000 0%, transparent 100%);
     pointer-events: none;
 }
 
@@ -951,95 +951,122 @@ a:hover { text-decoration: underline; }
 
 /* ---- hero ---- */
 
-.home-eyebrow {
-    display: inline-block;
-    margin: 0 0 18px;
-    padding: 5px 12px;
-    border: 1px solid color-mix(in srgb, var(--accent) 30%, var(--border));
-    border-radius: 999px;
-    background: color-mix(in srgb, var(--accent) 8%, transparent);
-    color: var(--accent-text);
-    font-size: 12.5px;
-    font-weight: 600;
-    letter-spacing: .01em;
+.home-prompt {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    margin: 0 0 20px;
+    font-family: var(--font-mono);
+    font-size: 13px;
 }
 
+.home-prompt span { color: var(--accent-text); font-weight: 700; }
+.home-prompt code { color: var(--text-subtle); }
+
 .home-title {
-    margin: 0 0 18px;
-    max-width: 16ch;
-    font-size: clamp(34px, 6vw, 56px);
+    margin: 0 0 16px;
+    max-width: 18ch;
+    font-size: clamp(32px, 5vw, 48px);
     font-weight: 700;
-    line-height: 1.05;
+    line-height: 1.1;
     letter-spacing: -.03em;
 }
 
-.home-title-accent {
-    display: block;
-    background: linear-gradient(
-        100deg,
-        var(--accent) 0%,
-        color-mix(in srgb, var(--accent) 55%, var(--insight)) 100%
-    );
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-}
-
 .home-lead {
-    margin: 0 0 32px;
+    margin: 0 0 16px;
     max-width: 62ch;
     color: var(--text-muted);
-    font-size: clamp(15px, 1.4vw, 17px);
+    font-size: clamp(15px, 1.4vw, 16.5px);
     line-height: 1.65;
 }
 
-.home-stats {
+/* Bob skeleti — raqamlangan qadamlar */
+.home-skeleton {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 6px 10px;
+    margin: 0 0 36px;
+    padding: 0;
+    list-style: none;
+    counter-reset: step;
+}
+
+.home-skeleton li {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 5px 11px 5px 7px;
+    border: 1px solid var(--border);
+    border-radius: 7px;
+    background: var(--bg-elevated);
+    color: var(--text-muted);
+    font-size: 13px;
+}
+
+.home-skeleton li::before {
+    counter-increment: step;
+    content: counter(step, decimal-leading-zero);
+    padding: 1px 5px;
+    border-radius: 4px;
+    background: var(--bg-sunken);
+    color: var(--text-subtle);
+    font-family: var(--font-mono);
+    font-size: 11px;
+}
+
+.home-stats {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 0;
     margin: 0 0 64px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--bg-elevated);
+    overflow: hidden;
 }
 
 .home-stat {
     display: flex;
     align-items: baseline;
-    gap: 8px;
-    padding: 10px 16px;
-    border: 1px solid var(--border);
-    border-radius: 999px;
-    background: color-mix(in srgb, var(--bg-elevated) 70%, transparent);
+    gap: 7px;
+    padding: 11px 18px;
+    border-right: 1px solid var(--border);
 }
+
+.home-stat:last-child { border-right: 0; }
 
 .home-stat dt {
     order: 2;
     color: var(--text-subtle);
-    font-size: 13px;
+    font-family: var(--font-mono);
+    font-size: 12px;
 }
 
 .home-stat dd {
     order: 1;
     margin: 0;
     font-family: var(--font-mono);
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 650;
-    letter-spacing: -.02em;
 }
 
 .home-section-title {
-    margin: 0 0 20px;
+    margin: 0 0 16px;
     color: var(--text-subtle);
-    font-size: 12.5px;
-    font-weight: 650;
-    letter-spacing: .08em;
-    text-transform: uppercase;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .04em;
 }
+
+.home-section-title::before { content: '// '; opacity: .6; }
 
 /* ---- kartalar ---- */
 
 .home-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 18px;
+    gap: 16px;
 }
 
 .book-card {
@@ -1048,161 +1075,129 @@ a:hover { text-decoration: underline; }
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    padding: 24px;
-    overflow: hidden;
+    gap: 9px;
+    padding: 22px 22px 0;
     border: 1px solid var(--border);
-    border-radius: 16px;
+    border-radius: 12px;
     background: var(--bg-elevated);
     color: var(--text);
-    isolation: isolate;
-    transition:
-        border-color .18s ease,
-        transform .18s ease,
-        box-shadow .18s ease;
+    transition: border-color .15s ease, background .15s ease;
 }
 
 :root[data-theme="dark"] .book-card { --card-accent: var(--c-dark, var(--accent)); }
 
-/* Tepadagi rangli chiziq */
+/* Chap tomondagi rangli marker — muharrir yorlig'iga o'xshash */
 .book-card::before {
     content: '';
     position: absolute;
-    inset: 0 0 auto;
-    height: 3px;
-    background: linear-gradient(
-        90deg,
-        var(--card-accent),
-        color-mix(in srgb, var(--card-accent) 25%, transparent)
-    );
-    opacity: .7;
-    transition: opacity .18s ease;
-}
-
-/* Hoverda paydo bo'ladigan yumshoq yorug'lik */
-.book-card-sheen {
-    position: absolute;
-    top: -70px;
-    right: -70px;
-    z-index: -1;
-    width: 220px;
-    height: 220px;
-    border-radius: 50%;
-    background: radial-gradient(
-        closest-side,
-        color-mix(in srgb, var(--card-accent) 22%, transparent),
-        transparent 70%
-    );
+    top: 22px;
+    left: -1px;
+    width: 3px;
+    height: 56px;
+    border-radius: 0 3px 3px 0;
+    background: var(--card-accent);
     opacity: 0;
-    transition: opacity .25s ease;
-    pointer-events: none;
+    transition: opacity .15s ease;
 }
 
 .book-card:hover,
 .book-card:focus-visible {
-    transform: translateY(-3px);
-    border-color: color-mix(in srgb, var(--card-accent) 45%, var(--border));
-    box-shadow: var(--shadow-lg);
+    border-color: color-mix(in srgb, var(--card-accent) 40%, var(--border-strong));
     text-decoration: none;
 }
 
 .book-card:hover::before,
 .book-card:focus-visible::before { opacity: 1; }
 
-.book-card:hover .book-card-sheen,
-.book-card:focus-visible .book-card-sheen { opacity: 1; }
-
 .book-card-head {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 12px;
-    margin-bottom: 4px;
+    margin-bottom: 3px;
 }
 
 .book-card-mark {
     display: grid;
     place-items: center;
-    width: 56px;
-    height: 56px;
-    border: 1px solid color-mix(in srgb, var(--card-accent) 20%, transparent);
-    border-radius: 14px;
-    background: color-mix(in srgb, var(--card-accent) 11%, transparent);
+    width: 54px;
+    height: 54px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--bg-sunken);
 }
 
 .book-card-version {
-    padding: 3px 9px;
-    border-radius: 999px;
-    background: var(--bg-sunken);
-    color: var(--text-muted);
+    padding: 3px 8px;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    color: var(--text-subtle);
     font-family: var(--font-mono);
     font-size: 11.5px;
-    font-weight: 600;
     white-space: nowrap;
 }
 
+.book-card-version::before { content: 'v'; opacity: .6; }
+
 .book-card-version.is-soon {
-    background: color-mix(in srgb, var(--warning) 12%, transparent);
+    border-color: color-mix(in srgb, var(--warning) 35%, transparent);
     color: var(--warning);
     font-family: var(--font-sans);
+    font-size: 11px;
 }
+
+.book-card-version.is-soon::before { content: ''; }
 
 .book-card-title {
     margin: 0;
-    font-size: 21px;
+    font-size: 19px;
     font-weight: 650;
-    letter-spacing: -.02em;
+    letter-spacing: -.015em;
 }
 
 .book-card-subtitle {
     margin: 0;
     flex: 1;
     color: var(--text-muted);
-    font-size: 14px;
+    font-size: 13.5px;
     line-height: 1.5;
 }
 
-.book-card-meta {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-top: 4px;
-}
-
-.book-card-meta span {
-    padding: 3px 10px;
-    border-radius: 999px;
-    background: var(--bg-sunken);
+/* Kitob manbasi — repodagi haqiqiy yo'l */
+.book-card-path {
+    margin-top: 2px;
     color: var(--text-subtle);
+    font-family: var(--font-mono);
     font-size: 12px;
 }
 
 .book-card-foot {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
     align-items: center;
-    justify-content: space-between;
-    gap: 12px;
-    margin-top: 14px;
-    padding-top: 14px;
+    gap: 10px;
+    margin: 14px -22px 0;
+    padding: 11px 22px;
     border-top: 1px solid var(--border);
+    background: var(--bg-sunken);
+    border-radius: 0 0 11px 11px;
+    color: var(--text-subtle);
+    font-family: var(--font-mono);
+    font-size: 12px;
 }
 
-.book-card-date {
-    color: var(--text-subtle);
-    font-size: 12.5px;
-}
+.book-card-date { justify-self: end; }
 
 .book-card-cta {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
+    display: grid;
+    place-items: center;
+    width: 22px;
+    height: 22px;
+    border-radius: 5px;
     color: var(--card-accent);
-    font-size: 13.5px;
-    font-weight: 650;
-    white-space: nowrap;
 }
 
-.book-card-arrow {
+.book-card-cta svg {
     width: 15px;
     height: 15px;
     fill: none;
@@ -1210,32 +1205,41 @@ a:hover { text-decoration: underline; }
     stroke-width: 1.7;
     stroke-linecap: round;
     stroke-linejoin: round;
-    transition: transform .18s ease;
+    transition: transform .15s ease;
 }
 
-.book-card:hover .book-card-arrow,
-.book-card:focus-visible .book-card-arrow { transform: translateX(3px); }
+.book-card:hover .book-card-cta svg,
+.book-card:focus-visible .book-card-cta svg { transform: translateX(2px); }
 
-.book-card.is-draft { border-style: dashed; }
-.book-card.is-draft .book-card-mark { opacity: .8; }
+.book-card.is-draft .book-card-mark { opacity: .7; }
+.book-card.is-draft .book-card-path { opacity: .55; }
 
 .layout.is-home .topbar { border-bottom-color: transparent; }
 
 @media (max-width: 900px) {
     .home-inner { padding: 48px 18px 72px; }
+    .home-skeleton { margin-bottom: 28px; }
     .home-stats { margin-bottom: 44px; }
     .home-grid { grid-template-columns: 1fr; gap: 14px; }
-    .book-card { padding: 20px; }
+
+    .book-card { padding: 20px 20px 0; }
     .book-card-mark { width: 48px; height: 48px; }
+    .book-card::before { top: 20px; height: 48px; }
+    .book-card-foot { margin: 14px -20px 0; padding: 11px 20px; }
+}
+
+@media (max-width: 560px) {
+    /* Statistika: bitta qatorga sig'masa, ustunga tushadi */
+    .home-stats { display: flex; flex-direction: column; }
+    .home-stat { border-right: 0; border-bottom: 1px solid var(--border); }
+    .home-stat:last-child { border-bottom: 0; }
 }
 
 @media (prefers-reduced-motion: reduce) {
     .book-card,
-    .book-card-arrow,
-    .book-card-sheen { transition: none; }
+    .book-card::before,
+    .book-card-cta svg { transition: none; }
 
-    .book-card:hover,
-    .book-card:focus-visible { transform: none; }
-
-    .book-card:hover .book-card-arrow { transform: none; }
+    .book-card:hover .book-card-cta svg,
+    .book-card:focus-visible .book-card-cta svg { transform: none; }
 }
