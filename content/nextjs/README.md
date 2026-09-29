@@ -1,4 +1,4 @@
-# Next.js 16 — App Router, RSC va production
+# Next.js 16 — App Router, RSC, auth va deploy
 
 Bu qo'llanma **rasmiy hujjat** (<https://nextjs.org/docs>) tuzilmasiga tayanadi va ustiga real loyihada kerak bo'ladigan narsalarni qo'shadi: tashqi backend bilan autentifikatsiya va token boshqaruvi, ma'lumotlar bazasi, to'lov, deploy va monitoring. Versiyalar npm registry'dan tekshirilgan (2026-yil sentabr):
 

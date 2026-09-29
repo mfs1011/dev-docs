@@ -8,7 +8,7 @@ export const books = [
   {
     id: 'symfony',
     title: 'Symfony',
-    subtitle: 'noldan production darajasigacha',
+    subtitle: 'HTTP, Doctrine, API va deploy',
     dir: 'symfony',
     logo: 'symfony',
     accent: '#0b6e4f',
@@ -51,7 +51,7 @@ export const books = [
   {
     id: 'vue',
     title: 'Vue',
-    subtitle: 'noldan senior darajasigacha',
+    subtitle: 'reaktivlik, komponentlar, Pinia va Nuxt',
     dir: 'vue',
     logo: 'vue',
     accent: '#35845f',
@@ -83,7 +83,7 @@ export const books = [
   {
     id: 'react',
     title: 'React',
-    subtitle: 'noldan senior darajasigacha',
+    subtitle: 'hooklar, holat va ilova arxitekturasi',
     dir: 'react',
     logo: 'react',
     accent: '#0b7fa0',
@@ -111,7 +111,7 @@ export const books = [
   {
     id: 'nextjs',
     title: 'Next.js',
-    subtitle: 'App Router, RSC va production',
+    subtitle: 'App Router, RSC, auth va deploy',
     dir: 'nextjs',
     logo: 'nextjs',
     accent: '#1f2933',

@@ -1,4 +1,4 @@
-# React 19 — noldan senior darajasigacha
+# React 19 — hooklar, holat va ilova arxitekturasi
 
 Bu qo'llanma **rasmiy hujjat** (<https://react.dev>) tuzilmasiga tayanadi va ustiga real loyihada kerak bo'ladigan narsalarni qo'shadi: holat arxitekturasi, server ma'lumoti, router, formalar, testlash, unumdorlik, xavfsizlik. Versiyalar npm registry'dan tekshirilgan (2026-yil sentabr):
 

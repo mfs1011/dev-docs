@@ -1,4 +1,4 @@
-# Symfony 8.1 — noldan production darajasigacha
+# Symfony 8.1 — HTTP, Doctrine, API va deploy
 
 Bu qo'llanma **rasmiy hujjat** (<https://symfony.com/doc/current>) asosida yozilgan va haqiqiy loyihada tekshirilgan. Tekshiruv muhiti — `symfony new demo --webapp` buyrug'i bilan yaratilgan toza skeleton:
 

@@ -1,4 +1,4 @@
-# Vue 3 — noldan senior darajasigacha
+# Vue 3 — reaktivlik, komponentlar, Pinia va Nuxt
 
 Bu qo'llanma **rasmiy hujjat** (<https://vuejs.org>) tuzilmasini to'liq qamrab oladi va uning ustiga real loyihada kerak bo'ladigan narsalarni qo'shadi: router, Pinia, TypeScript, testlash, SSR/Nuxt, unumdorlik, xavfsizlik, deploy. Versiyalar npm registry'dan tekshirilgan (2026-yil sentabr):
 

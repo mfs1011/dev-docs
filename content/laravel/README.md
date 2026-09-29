@@ -1,4 +1,4 @@
-# Laravel 13 — noldan to'liq qo'llanma (Symfony dasturchilari uchun)
+# Laravel 13 — Symfony dasturchilari uchun
 
 Bu qo'llanma **Laravel 13.x** rasmiy hujjatlari asosida yozilgan va shu loyihadagi haqiqiy versiyalarga moslangan:
 
