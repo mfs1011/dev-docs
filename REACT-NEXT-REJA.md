@@ -3,60 +3,32 @@
 > Bu fayl kontent emas: `content/` dan tashqarida turadi, saytga sahifa bo'lib chiqmaydi.
 > Maqsadi — ishni uzilgan joyidan davom ettirish.
 
-**Oxirgi yangilanish:** 2026-09-28 (kechqurun — 32-bobda to'xtatildi)
+**Oxirgi yangilanish:** 2026-09-29
 
 ## Holat
 
 | Kitob | Boblar | Qatorlar | Holat |
 | --- | --- | --- | --- |
 | React 19 (`content/react/`) | **50/50** | ~15 900 | ✅ Tugallangan |
-| Next.js 16 (`content/nextjs/`) | **32/50** | ~14 600 | 🔄 I–IV qism + 32-bob tayyor |
+| Next.js 16 (`content/nextjs/`) | **50/50** | ~30 000 | ✅ Tugallangan |
 
-Yozilmagan boblar `README.md` da `(tayyorlanmoqda)` belgisi bilan, havolasiz turibdi — singan havola yo'q.
+## Holat: ikkala kitob ham tugallangan
 
-## Qayerda to'xtadik (2026-09-28)
-
-**Yozilgan:** 01–32 (32 bob + `README.md` = 33 fayl, ~14 600 qator).
-
-Qismlar bo'yicha:
+`content/nextjs/` — 50 bob + `README.md` (51 fayl, ~30 000 qator). Mundarijada
+`(tayyorlanmoqda)` qolmadi, barcha havolalar ishlaydi.
 
 | Qism | Boblar | Holat |
 | --- | --- | --- |
 | I — Poydevor | 01–06 | ✅ |
 | II — App Router | 07–15 | ✅ |
 | III — Server komponentlar va ma'lumot | 16–24 | ✅ |
-| **IV — Auth va tokenlar** | **25–31** | ✅ **To'liq** (kalit tushunchalar, token saqlash, login, refresh, server so'rovlar, himoyalangan marshrutlar, Auth.js) |
-| V — Baza va integratsiyalar | 32–37 | 🔄 32 (Prisma) yozildi, 33–37 qoldi |
-| VI — Pages Router | 38–41 | ⬜ |
-| VII — Sifat va production | 42–50 | ⬜ |
+| IV — Auth va tokenlar | 25–31 | ✅ |
+| V — Baza va integratsiyalar | 32–37 | ✅ |
+| VI — Pages Router va migratsiya | 38–41 | ✅ |
+| VII — Sifat va production | 42–50 | ✅ |
 
-**Keyingi bob: 33 — Drizzle va SQL yondashuvi** (`content/nextjs/33-drizzle.md`).
-
-Qolgan 18 bob va fayl nomlari (oldingi bobdagi "Keyingi →" havolalari shu nomlarni kutadi):
-
-| № | Fayl | Mavzu |
-| --- | --- | --- |
-| 33 | `33-drizzle.md` | Drizzle ORM, tipli SQL, Prisma bilan solishtirish |
-| 34 | `34-fayl-yuklash.md` | S3/R2, presigned URL, `next/image` |
-| 35 | `35-stripe.md` | Checkout, webhook, idempotentlik |
-| 36 | `36-fon-ishlari.md` | Email, navbat, cron, webhook qabul qilish |
-| 37 | `37-real-vaqt.md` | SSE, WebSocket, polling |
-| 38 | `38-pages-router.md` | `pages/`, `getServerSideProps`, `getStaticProps` |
-| 39 | `39-api-routes.md` | Eski API qatlami |
-| 40 | `40-migratsiya.md` | Pages → App, birga yashash |
-| 41 | `41-eski-loyiha.md` | `_app`, `_document`, HOC naqshlari |
-| 42 | `42-testlash.md` | Vitest, Testing Library, Playwright |
-| 43 | `43-unumdorlik.md` | Bundle, RSC payload, rasm, shrift, Web Vitals |
-| 44 | `44-erishimlilik.md` | Semantika, fokus, marshrut e'lonlari |
-| 45 | `45-xavfsizlik.md` | XSS, CSRF, Server Action himoyasi, CSP, sirlar |
-| 46 | `46-kop-tillilik.md` | Marshrut, kontent, `hreflang` |
-| 47 | `47-vercel.md` | Build, kesh, edge, preview |
-| 48 | `48-docker-selfhost.md` | Standalone, nginx, ISR saqlash |
-| 49 | `49-monitoring.md` | Sentry, loglar, alertlar, RUM |
-| 50 | `50-amaliy-loyiha.md` | To'liq ilova, reliz checklisti |
-
-IV qismda yozilgan boblar bir-biriga tayanadi — yangi boblar shu zanjirga havola qilishi mumkin:
-`lib/refresh.ts` (28), `lib/api.ts` (28–29), `lib/dal.ts` (30), `lib/prisma.ts` (32).
+Keyingi ish — **Arxitektura kitobi**: mundarija (`content/arxitektura/README.md`,
+72 bob) tayyor, boblar hali yozilmagan.
 
 ## Ish tartibi
 

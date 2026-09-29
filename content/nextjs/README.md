@@ -88,34 +88,34 @@ Kod misollar TypeScript va JavaScript ko'rinishida — yuqoridagi almashtirgich 
 | № | Bob | Nima o'rganasiz |
 | --- | --- | --- |
 | 32 | [Ma'lumotlar bazasi: Prisma](32-prisma.md) | Sxema, migratsiya, so'rovlar, connection pool |
-| 33 | Drizzle va SQL yondashuvi *(tayyorlanmoqda)* | Tipli SQL, qachon afzal |
-| 34 | Fayl yuklash va saqlash *(tayyorlanmoqda)* | S3/R2, presigned URL, rasm optimizatsiyasi |
-| 35 | To'lov: Stripe *(tayyorlanmoqda)* | Checkout, webhook, idempotentlik |
-| 36 | Xabarnomalar va fon ishlari *(tayyorlanmoqda)* | Email, navbat, cron, webhook qabul qilish |
-| 37 | Real vaqt *(tayyorlanmoqda)* | SSE, WebSocket, polling — qaysi biri qachon |
+| 33 | [Drizzle va SQL yondashuvi](33-drizzle.md) | Tipli SQL, qachon afzal |
+| 34 | [Fayl yuklash va saqlash](34-fayl-yuklash.md) | S3/R2, presigned URL, rasm optimizatsiyasi |
+| 35 | [To'lov: Stripe](35-stripe.md) | Checkout, webhook, idempotentlik |
+| 36 | [Xabarnomalar va fon ishlari](36-fon-ishlari.md) | Email, navbat, cron, webhook qabul qilish |
+| 37 | [Real vaqt](37-real-vaqt.md) | SSE, WebSocket, polling — qaysi biri qachon |
 
 ## VI qism — Pages Router va migratsiya (38–41)
 
 | № | Bob | Nima o'rganasiz |
 | --- | --- | --- |
-| 38 | Pages Router asoslari *(tayyorlanmoqda)* | `pages/`, `getServerSideProps`, `getStaticProps` |
-| 39 | API Routes *(tayyorlanmoqda)* | Eski API qatlami, farqlari |
-| 40 | Pages → App migratsiyasi *(tayyorlanmoqda)* | Bosqichma-bosqich reja, birga yashash |
-| 41 | Eski loyihani o'qish *(tayyorlanmoqda)* | `_app`, `_document`, HOC naqshlari |
+| 38 | [Pages Router asoslari](38-pages-router.md) | `pages/`, `getServerSideProps`, `getStaticProps` |
+| 39 | [API Routes](39-api-routes.md) | Eski API qatlami, farqlari |
+| 40 | [Pages → App migratsiyasi](40-migratsiya.md) | Bosqichma-bosqich reja, birga yashash |
+| 41 | [Eski loyihani o'qish](41-eski-loyiha.md) | `_app`, `_document`, HOC naqshlari |
 
 ## VII qism — Sifat va production (42–50)
 
 | № | Bob | Nima o'rganasiz |
 | --- | --- | --- |
-| 42 | Testlash *(tayyorlanmoqda)* | Vitest, Testing Library, Playwright, server testlari |
-| 43 | Unumdorlik *(tayyorlanmoqda)* | Bundle, RSC payload, rasm, shrift, Web Vitals |
-| 44 | Erishimlilik *(tayyorlanmoqda)* | Semantika, fokus, marshrut e'lonlari |
-| 45 | Xavfsizlik *(tayyorlanmoqda)* | XSS, CSRF, Server Action himoyasi, CSP, sirlar |
-| 46 | Ko'p tillilik *(tayyorlanmoqda)* | Marshrut, kontent, `hreflang` |
-| 47 | Deploy: Vercel *(tayyorlanmoqda)* | Build, kesh, edge, preview |
-| 48 | Deploy: Docker va self-host *(tayyorlanmoqda)* | Standalone, nginx, ISR saqlash, skalalash |
-| 49 | Monitoring va xatolar *(tayyorlanmoqda)* | Sentry, loglar, alertlar, RUM |
-| 50 | Amaliy loyiha va checklist *(tayyorlanmoqda)* | To'liq ilova, reliz ro'yxati |
+| 42 | [Testlash](42-testlash.md) | Vitest, Testing Library, Playwright, server testlari |
+| 43 | [Unumdorlik](43-unumdorlik.md) | Bundle, RSC payload, rasm, shrift, Web Vitals |
+| 44 | [Erishimlilik](44-erishimlilik.md) | Semantika, fokus, marshrut e'lonlari |
+| 45 | [Xavfsizlik](45-xavfsizlik.md) | XSS, CSRF, Server Action himoyasi, CSP, sirlar |
+| 46 | [Ko'p tillilik](46-kop-tillilik.md) | Marshrut, kontent, `hreflang` |
+| 47 | [Deploy: Vercel](47-vercel.md) | Build, kesh, edge, preview |
+| 48 | [Deploy: Docker va self-host](48-docker-selfhost.md) | Standalone, nginx, ISR saqlash, skalalash |
+| 49 | [Monitoring va xatolar](49-monitoring.md) | Sentry, loglar, alertlar, RUM |
+| 50 | [Amaliy loyiha va checklist](50-amaliy-loyiha.md) | To'liq ilova, reliz ro'yxati |
 
 ---
 
