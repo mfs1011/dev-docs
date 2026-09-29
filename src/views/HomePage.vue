@@ -1,45 +1,108 @@
 <script setup>
-import { onMounted } from 'vue'
+import { computed, onMounted } from 'vue'
 import BookMark from '@/components/BookMark.vue'
 import { books, formatDate } from '@/docs'
 
+const totals = computed(() =>
+  books.reduce(
+    (sum, book) => ({
+      chapters: sum.chapters + (book.chapterCount ?? 0),
+      pages: sum.pages + (book.pageCount ?? 0),
+    }),
+    { chapters: 0, pages: 0 },
+  ),
+)
+
+/** Boblari hali yozilmagan kitob — kartada "tayyorlanmoqda" deb ko'rsatiladi */
+const isDraft = (book) => !book.chapterCount
+
 onMounted(() => {
-  document.title = "Qo'llanmalar — Symfony va Laravel"
+  document.title = "Qo'llanmalar — backend va frontend"
 })
 </script>
 
 <template>
     <main class="home">
-        <section class="home-hero">
-            <h1>Qo'llanmalar</h1>
-            <p>
-                Rasmiy hujjatlar asosida yozilgan, o'zbek tilidagi to'liq qo'llanmalar.
-                Har bobda: tushuncha → nega shunday → kod → tipik xatolar → amaliyot.
-            </p>
-        </section>
+        <div class="home-inner">
+            <section class="home-hero">
+                <p class="home-eyebrow">O'zbek tilida</p>
 
-        <div class="home-grid">
-            <RouterLink v-for="book in books" :key="book.id" :to="`/${book.id}`" class="book-card">
-                <span class="book-card-mark" :style="{ '--card-accent': book.accent }">
-                    <BookMark :book="book.id" :size="40" />
-                </span>
+                <h1 class="home-title">
+                    Dasturchi
+                    <span class="home-title-accent">qo'llanmalari</span>
+                </h1>
 
-                <span class="book-card-body">
-                    <span class="book-card-title">
-                        {{ book.title }}
-                        <em v-if="book.version">v{{ book.version }}</em>
+                <p class="home-lead">
+                    Rasmiy hujjatlar asosida yozilgan to'liq qo'llanmalar. Har bobda:
+                    tushuncha → nega shunday → kod → muhandislik nuqtai nazari →
+                    tipik xatolar → amaliyot.
+                </p>
+
+                <dl class="home-stats">
+                    <div class="home-stat">
+                        <dt>Qo'llanma</dt>
+                        <dd>{{ books.length }}</dd>
+                    </div>
+                    <div class="home-stat">
+                        <dt>Bob</dt>
+                        <dd>{{ totals.chapters }}</dd>
+                    </div>
+                    <div class="home-stat">
+                        <dt>Sahifa</dt>
+                        <dd>{{ totals.pages }}</dd>
+                    </div>
+                </dl>
+            </section>
+
+            <h2 class="home-section-title">Qo'llanmalar</h2>
+
+            <div class="home-grid">
+                <RouterLink
+                    v-for="book in books"
+                    :key="book.id"
+                    :to="`/${book.id}`"
+                    class="book-card"
+                    :class="{ 'is-draft': isDraft(book) }"
+                    :style="{ '--c-light': book.accent, '--c-dark': book.accentDark ?? book.accent }"
+                >
+                    <span class="book-card-sheen" aria-hidden="true" />
+
+                    <span class="book-card-head">
+                        <span class="book-card-mark">
+                            <BookMark :book="book.id" :size="34" />
+                        </span>
+
+                        <span v-if="book.version" class="book-card-version">v{{ book.version }}</span>
+                        <span v-else class="book-card-version is-soon">tayyorlanmoqda</span>
                     </span>
-                    <span class="book-card-subtitle">{{ book.subtitle }}</span>
+
+                    <h3 class="book-card-title">{{ book.title }}</h3>
+                    <p class="book-card-subtitle">{{ book.subtitle }}</p>
 
                     <span class="book-card-meta">
-                        <span>{{ book.chapterCount }} bob</span>
-                        <span>{{ book.pageCount }} sahifa</span>
-                        <span v-if="book.updatedAt">{{ formatDate(book.updatedAt) }}</span>
+                        <template v-if="isDraft(book)">
+                            <span>Mundarija tayyor</span>
+                        </template>
+                        <template v-else>
+                            <span>{{ book.chapterCount }} bob</span>
+                            <span>{{ book.pageCount }} sahifa</span>
+                        </template>
                     </span>
-                </span>
 
-                <span class="book-card-cta">Ochish →</span>
-            </RouterLink>
+                    <span class="book-card-foot">
+                        <span v-if="book.updatedAt" class="book-card-date">
+                            {{ formatDate(book.updatedAt) }}
+                        </span>
+
+                        <span class="book-card-cta">
+                            Ochish
+                            <svg class="book-card-arrow" viewBox="0 0 16 16" aria-hidden="true">
+                                <path d="M3 8h9M8.5 4l4 4-4 4" />
+                            </svg>
+                        </span>
+                    </span>
+                </RouterLink>
+            </div>
         </div>
     </main>
 </template>

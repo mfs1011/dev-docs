@@ -42,48 +42,50 @@ onUnmounted(() => window.removeEventListener('keydown', onKeydown))
 <template>
     <div class="layout" :class="{ 'is-home': !activeBook }">
         <header class="topbar">
-            <div class="topbar-left">
-                <button
-                    v-if="activeBook"
-                    type="button"
-                    class="menu-button"
-                    aria-label="Menyu"
-                    @click="sidebarOpen = !sidebarOpen"
-                >
-                    ☰
+            <div class="topbar-inner">
+                <div class="topbar-left">
+                    <button
+                        v-if="activeBook"
+                        type="button"
+                        class="menu-button"
+                        aria-label="Menyu"
+                        @click="sidebarOpen = !sidebarOpen"
+                    >
+                        ☰
+                    </button>
+
+                    <RouterLink to="/" class="brand">
+                        <BookMark :book="activeBookId ?? 'symfony'" :size="30" />
+                        <span class="brand-text">
+                            <strong>{{ activeBook?.title ?? 'Qo\'llanmalar' }}</strong>
+                            <small>{{ activeBook?.subtitle ?? 'Backend va frontend' }}</small>
+                        </span>
+                    </RouterLink>
+
+                    <span
+                        v-if="activeBook?.version"
+                        class="version-badge"
+                        :title="`${activeBook.versionLabel} ${activeBook.version} bo'yicha yozilgan`"
+                    >
+                        v{{ activeBook.version }}
+                    </span>
+                </div>
+
+                <button type="button" class="search-trigger" @click="searchOpen = true">
+                    <svg class="search-trigger-icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="11" cy="11" r="6.4" />
+                        <line x1="15.8" y1="15.8" x2="20.5" y2="20.5" />
+                    </svg>
+                    <span class="search-trigger-text">
+                        {{ activeBook ? `${activeBook.title} ichida qidirish` : 'Qidirish' }}
+                    </span>
+                    <kbd>⌘K</kbd>
                 </button>
 
-                <RouterLink to="/" class="brand">
-                    <BookMark :book="activeBookId ?? 'symfony'" :size="30" />
-                    <span class="brand-text">
-                        <strong>{{ activeBook?.title ?? 'Qo\'llanmalar' }}</strong>
-                        <small>{{ activeBook?.subtitle ?? 'Symfony va Laravel' }}</small>
-                    </span>
-                </RouterLink>
-
-                <span
-                    v-if="activeBook?.version"
-                    class="version-badge"
-                    :title="`${activeBook.versionLabel} ${activeBook.version} bo'yicha yozilgan`"
-                >
-                    v{{ activeBook.version }}
-                </span>
-            </div>
-
-            <button type="button" class="search-trigger" @click="searchOpen = true">
-                <svg class="search-trigger-icon" viewBox="0 0 24 24" aria-hidden="true">
-                    <circle cx="11" cy="11" r="6.4" />
-                    <line x1="15.8" y1="15.8" x2="20.5" y2="20.5" />
-                </svg>
-                <span class="search-trigger-text">
-                    {{ activeBook ? `${activeBook.title} ichida qidirish` : 'Qidirish' }}
-                </span>
-                <kbd>⌘K</kbd>
-            </button>
-
-            <div class="topbar-actions">
-                <span v-if="updatedLabel" class="updated-badge">Yangilangan: {{ updatedLabel }}</span>
-                <ThemeToggle />
+                <div class="topbar-actions">
+                    <span v-if="updatedLabel" class="updated-badge">Yangilangan: {{ updatedLabel }}</span>
+                    <ThemeToggle />
+                </div>
             </div>
         </header>
 

@@ -43,6 +43,8 @@
     --sidebar-width: 292px;
     --toc-width: 236px;
     --topbar-height: 60px;
+    --container-max: 1360px;
+    --shell-max: 1560px;
 
     --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
@@ -113,15 +115,30 @@ a:hover { text-decoration: underline; }
     position: sticky;
     top: 0;
     z-index: 30;
+    height: var(--topbar-height);
+    background: color-mix(in srgb, var(--bg-elevated) 88%, transparent);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+}
+
+.topbar-inner {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 460px) minmax(0, 1fr);
     align-items: center;
     gap: 16px;
-    height: var(--topbar-height);
-    padding: 0 20px;
-    background: color-mix(in srgb, var(--bg-elevated) 88%, transparent);
-    backdrop-filter: blur(12px);
-    border-bottom: 1px solid var(--border);
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+
+    /* Hujjat sahifasida: .shell bilan bir xil, brend sidebar havolalari bilan tekislanadi */
+    max-width: var(--shell-max);
+    padding: 0 14px;
+}
+
+/* Bosh sahifada: .home-inner bilan bir xil */
+.layout.is-home .topbar-inner {
+    max-width: var(--container-max);
+    padding: 0 24px;
 }
 
 .topbar-left { display: flex; align-items: center; gap: 12px; min-width: 0; }
@@ -297,7 +314,7 @@ a:hover { text-decoration: underline; }
     display: grid;
     grid-template-columns: var(--sidebar-width) minmax(0, 1fr);
     align-items: start;
-    max-width: 1560px;
+    max-width: var(--shell-max);
     margin: 0 auto;
 }
 
@@ -813,7 +830,12 @@ a:hover { text-decoration: underline; }
     .updated-badge { display: none; }
     .search-trigger { padding: 8px 10px; }
     .search-trigger kbd { display: none; }
-    .topbar { grid-template-columns: auto minmax(0, 1fr) auto; gap: 10px; padding: 0 12px; }
+    .topbar-inner,
+    .layout.is-home .topbar-inner {
+        grid-template-columns: auto minmax(0, 1fr) auto;
+        gap: 10px;
+        padding: 0 12px;
+    }
     .brand-text { display: none; }
 }
 
@@ -901,79 +923,319 @@ a:hover { text-decoration: underline; }
 /* ---------- bosh sahifa ---------- */
 
 .home {
-    max-width: 880px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Sahifa tepasidagi yumshoq nur — faol kitob rangiga bog'liq emas, neytral */
+.home::before {
+    content: '';
+    position: absolute;
+    top: -260px;
+    left: 50%;
+    width: min(1100px, 130vw);
+    height: 520px;
+    transform: translateX(-50%);
+    background:
+        radial-gradient(closest-side, color-mix(in srgb, var(--accent) 18%, transparent), transparent 70%);
+    opacity: .5;
+    pointer-events: none;
+}
+
+.home-inner {
+    position: relative;
+    max-width: var(--container-max);
     margin: 0 auto;
     padding: 72px 24px 96px;
 }
 
-.home-hero h1 {
-    margin: 0 0 12px;
-    font-size: 40px;
-    letter-spacing: -.025em;
+/* ---- hero ---- */
+
+.home-eyebrow {
+    display: inline-block;
+    margin: 0 0 18px;
+    padding: 5px 12px;
+    border: 1px solid color-mix(in srgb, var(--accent) 30%, var(--border));
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--accent) 8%, transparent);
+    color: var(--accent-text);
+    font-size: 12.5px;
+    font-weight: 600;
+    letter-spacing: .01em;
 }
 
-.home-hero p {
-    margin: 0 0 40px;
-    max-width: 620px;
+.home-title {
+    margin: 0 0 18px;
+    max-width: 16ch;
+    font-size: clamp(34px, 6vw, 56px);
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -.03em;
+}
+
+.home-title-accent {
+    display: block;
+    background: linear-gradient(
+        100deg,
+        var(--accent) 0%,
+        color-mix(in srgb, var(--accent) 55%, var(--insight)) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.home-lead {
+    margin: 0 0 32px;
+    max-width: 62ch;
     color: var(--text-muted);
-    font-size: 16.5px;
+    font-size: clamp(15px, 1.4vw, 17px);
+    line-height: 1.65;
 }
 
-.home-grid { display: grid; gap: 16px; }
+.home-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 0 0 64px;
+}
+
+.home-stat {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    padding: 10px 16px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--bg-elevated) 70%, transparent);
+}
+
+.home-stat dt {
+    order: 2;
+    color: var(--text-subtle);
+    font-size: 13px;
+}
+
+.home-stat dd {
+    order: 1;
+    margin: 0;
+    font-family: var(--font-mono);
+    font-size: 17px;
+    font-weight: 650;
+    letter-spacing: -.02em;
+}
+
+.home-section-title {
+    margin: 0 0 20px;
+    color: var(--text-subtle);
+    font-size: 12.5px;
+    font-weight: 650;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+/* ---- kartalar ---- */
+
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 18px;
+}
 
 .book-card {
-    display: grid;
-    grid-template-columns: auto minmax(0, 1fr) auto;
-    align-items: center;
-    gap: 20px;
-    padding: 22px 24px;
+    --card-accent: var(--c-light, var(--accent));
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 24px;
+    overflow: hidden;
     border: 1px solid var(--border);
-    border-radius: 14px;
+    border-radius: 16px;
     background: var(--bg-elevated);
     color: var(--text);
-    transition: border-color .15s ease, transform .12s ease, box-shadow .15s ease;
+    isolation: isolate;
+    transition:
+        border-color .18s ease,
+        transform .18s ease,
+        box-shadow .18s ease;
 }
-.book-card:hover {
-    border-color: var(--border-strong);
-    transform: translateY(-2px);
+
+:root[data-theme="dark"] .book-card { --card-accent: var(--c-dark, var(--accent)); }
+
+/* Tepadagi rangli chiziq */
+.book-card::before {
+    content: '';
+    position: absolute;
+    inset: 0 0 auto;
+    height: 3px;
+    background: linear-gradient(
+        90deg,
+        var(--card-accent),
+        color-mix(in srgb, var(--card-accent) 25%, transparent)
+    );
+    opacity: .7;
+    transition: opacity .18s ease;
+}
+
+/* Hoverda paydo bo'ladigan yumshoq yorug'lik */
+.book-card-sheen {
+    position: absolute;
+    top: -70px;
+    right: -70px;
+    z-index: -1;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background: radial-gradient(
+        closest-side,
+        color-mix(in srgb, var(--card-accent) 22%, transparent),
+        transparent 70%
+    );
+    opacity: 0;
+    transition: opacity .25s ease;
+    pointer-events: none;
+}
+
+.book-card:hover,
+.book-card:focus-visible {
+    transform: translateY(-3px);
+    border-color: color-mix(in srgb, var(--card-accent) 45%, var(--border));
     box-shadow: var(--shadow-lg);
     text-decoration: none;
+}
+
+.book-card:hover::before,
+.book-card:focus-visible::before { opacity: 1; }
+
+.book-card:hover .book-card-sheen,
+.book-card:focus-visible .book-card-sheen { opacity: 1; }
+
+.book-card-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 4px;
 }
 
 .book-card-mark {
     display: grid;
     place-items: center;
-    width: 64px;
-    height: 64px;
+    width: 56px;
+    height: 56px;
+    border: 1px solid color-mix(in srgb, var(--card-accent) 20%, transparent);
     border-radius: 14px;
-    background: color-mix(in srgb, var(--card-accent, var(--accent)) 12%, transparent);
+    background: color-mix(in srgb, var(--card-accent) 11%, transparent);
 }
 
-.book-card-body { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
-
-.book-card-title { display: flex; align-items: baseline; gap: 9px; font-size: 20px; font-weight: 650; }
-.book-card-title em {
-    padding: 1px 7px;
+.book-card-version {
+    padding: 3px 9px;
     border-radius: 999px;
     background: var(--bg-sunken);
     color: var(--text-muted);
     font-family: var(--font-mono);
     font-size: 11.5px;
-    font-style: normal;
+    font-weight: 600;
+    white-space: nowrap;
 }
 
-.book-card-subtitle { color: var(--text-muted); font-size: 14px; }
+.book-card-version.is-soon {
+    background: color-mix(in srgb, var(--warning) 12%, transparent);
+    color: var(--warning);
+    font-family: var(--font-sans);
+}
 
-.book-card-meta { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 6px; color: var(--text-subtle); font-size: 12.5px; }
-.book-card-meta span + span::before { content: '·'; margin-right: 14px; }
+.book-card-title {
+    margin: 0;
+    font-size: 21px;
+    font-weight: 650;
+    letter-spacing: -.02em;
+}
 
-.book-card-cta { color: var(--accent-text); font-size: 14px; font-weight: 600; white-space: nowrap; }
+.book-card-subtitle {
+    margin: 0;
+    flex: 1;
+    color: var(--text-muted);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.book-card-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 4px;
+}
+
+.book-card-meta span {
+    padding: 3px 10px;
+    border-radius: 999px;
+    background: var(--bg-sunken);
+    color: var(--text-subtle);
+    font-size: 12px;
+}
+
+.book-card-foot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px solid var(--border);
+}
+
+.book-card-date {
+    color: var(--text-subtle);
+    font-size: 12.5px;
+}
+
+.book-card-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--card-accent);
+    font-size: 13.5px;
+    font-weight: 650;
+    white-space: nowrap;
+}
+
+.book-card-arrow {
+    width: 15px;
+    height: 15px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: transform .18s ease;
+}
+
+.book-card:hover .book-card-arrow,
+.book-card:focus-visible .book-card-arrow { transform: translateX(3px); }
+
+.book-card.is-draft { border-style: dashed; }
+.book-card.is-draft .book-card-mark { opacity: .8; }
 
 .layout.is-home .topbar { border-bottom-color: transparent; }
 
 @media (max-width: 900px) {
-    .home { padding: 48px 18px 72px; }
-    .home-hero h1 { font-size: 30px; }
-    .book-card { grid-template-columns: auto minmax(0, 1fr); gap: 14px; padding: 18px; }
-    .book-card-cta { display: none; }
+    .home-inner { padding: 48px 18px 72px; }
+    .home-stats { margin-bottom: 44px; }
+    .home-grid { grid-template-columns: 1fr; gap: 14px; }
+    .book-card { padding: 20px; }
+    .book-card-mark { width: 48px; height: 48px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .book-card,
+    .book-card-arrow,
+    .book-card-sheen { transition: none; }
+
+    .book-card:hover,
+    .book-card:focus-visible { transform: none; }
+
+    .book-card:hover .book-card-arrow { transform: none; }
 }
