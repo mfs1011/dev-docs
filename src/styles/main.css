@@ -890,6 +890,13 @@ a:hover { text-decoration: underline; }
 .react-mark { flex: none; display: block; fill: #0b7fa0; stroke: #0b7fa0; }
 :root[data-theme="dark"] .react-mark { fill: #58c4dc; stroke: #58c4dc; }
 
+.angular-mark { flex: none; display: block; }
+.angular-mark .angular-mark-shield { fill: #c3002f; }
+.angular-mark .angular-mark-letter { fill: #fff; }
+
+:root[data-theme="dark"] .angular-mark .angular-mark-shield { fill: #ff7a92; }
+:root[data-theme="dark"] .angular-mark .angular-mark-letter { fill: #17131a; }
+
 .arch-mark { flex: none; display: block; }
 .arch-mark .arch-mark-top { fill: #5b4bd6; }
 .arch-mark .arch-mark-mid,

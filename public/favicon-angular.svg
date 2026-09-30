@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <style>
+        .ng-shield { fill: #c3002f; }
+        .ng-letter { fill: #fff; }
+        @media (prefers-color-scheme: dark) {
+            .ng-shield { fill: #ff5c7a; }
+            .ng-letter { fill: #17131a; }
+        }
+    </style>
+    <!-- Angular qalqoni -->
+    <path class="ng-shield" d="M12 1.6 2.6 4.9l1.4 12.2L12 22.4l8-5.3 1.4-12.2z"/>
+    <!-- A harfi -->
+    <path class="ng-letter" d="M12 5.2 6.6 17.1h2l1.1-2.7h4.6l1.1 2.7h2zm0 3.1 1.7 4H10.3z"/>
+</svg>

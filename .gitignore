@@ -7,3 +7,6 @@ src/manifest.json
 content-repo/
 .DS_Store
 *.log
+
+# Ichki ish rejalari (lokal, saytga kerak emas)
+*-REJA.md

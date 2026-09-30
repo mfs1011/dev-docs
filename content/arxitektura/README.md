@@ -1,6 +1,6 @@
 # Arxitektura — frontend va backend: chegaralar va kesishmalar
 
-Bu qo'llanma texnologiyaga bog'liq emas: undagi qarorlar Symfony, Laravel, Go, Node, React, Vue yoki Next bilan ishlaganingizda ham bir xil ishlaydi. Misollar til-neytral psevdokod va diagrammalarda beriladi, kerak bo'lganda aniq framework'ga havola qilinadi.
+Bu qo'llanma texnologiyaga bog'liq emas: undagi qarorlar Symfony, Laravel, Go, Node, React, Vue, Next yoki Angular bilan ishlaganingizda ham bir xil ishlaydi. Misollar til-neytral psevdokod va diagrammalarda beriladi, kerak bo'lganda aniq framework'ga havola qilinadi.
 
 ## Nega ikkalasi bitta kitobda
 
