@@ -38,14 +38,40 @@ const isMarked = (item) => mark.value?.route === item.route
 
 const nav = ref(null)
 
-/** Aktiv bo'limni ko'rinadigan joyga suradi (uzun ro'yxatda muhim). */
-async function revealActive() {
+/** Chetdan shuncha joy qolsa, element "ko'rinadi" deb hisoblanadi */
+const REVEAL_MARGIN = 24
+
+/**
+ * Aktiv bo'limni ko'rinadigan joyga suradi (uzun ro'yxatda muhim).
+ *
+ * scrollIntoView ishlatilmaydi: u butun sahifani ham suradi va bosilgan
+ * element kursor ostidan qochib ketardi. Faqat sidebar konteyneri suriladi
+ * va faqat element ko'rinmay qolgan bo'lsa. Birinchi ochilishda — markazga,
+ * keyingi o'tishlarda (pager, qidiruv) — eng kam harakat bilan.
+ */
+async function revealActive({ center = false } = {}) {
   await nextTick()
-  nav.value?.querySelector('.is-active')?.scrollIntoView({ block: 'center' })
+
+  const item = nav.value?.querySelector('.is-active')
+  const box = item?.closest('.sidebar-inner')
+  if (!item || !box) return
+
+  const itemRect = item.getBoundingClientRect()
+  const boxRect = box.getBoundingClientRect()
+  const top = itemRect.top - boxRect.top
+  const bottom = itemRect.bottom - boxRect.top
+
+  if (center) {
+    box.scrollTop += top - (box.clientHeight - itemRect.height) / 2
+  } else if (top < REVEAL_MARGIN) {
+    box.scrollTop += top - REVEAL_MARGIN
+  } else if (bottom > box.clientHeight - REVEAL_MARGIN) {
+    box.scrollTop += bottom - box.clientHeight + REVEAL_MARGIN
+  }
 }
 
-onMounted(revealActive)
-watch(() => route.path, revealActive)
+onMounted(() => revealActive({ center: true }))
+watch(() => route.path, () => revealActive())
 </script>
 
 <template>

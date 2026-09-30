@@ -59,70 +59,70 @@ Qo'llanma quyidagi manbalarga tayanadi va ularga havola qiladi:
 
 | № | Bob | Nima o'rganasiz |
 | --- | --- | --- |
-| 01 | Arxitektura nima va nega kerak *(tayyorlanmoqda)* | Qaysi qarorlar arxitektura, qaysilari emas |
-| 02 | Sifat atributlari va trade-off *(tayyorlanmoqda)* | Tezlik, ishonchlilik, xavfsizlik, o'zgaruvchanlik — ular bir-biriga qarshi |
-| 03 | Talabdan qarorga *(tayyorlanmoqda)* | Funksional va nofunksional talablarni arxitekturaga aylantirish |
-| 04 | Chegaralar: modul, kontekst, servis *(tayyorlanmoqda)* | Chiziqni qayerga tortish kerak |
-| 05 | Bog'liqlik va bog'lanish *(tayyorlanmoqda)* | Coupling/cohesion amalda, o'lchash usullari |
-| 06 | Abstraksiya darajalari *(tayyorlanmoqda)* | Qachon abstraksiya foyda, qachon zarar; sizib chiquvchi abstraksiya |
-| 07 | Hujjatlashtirish: C4 va ADR *(tayyorlanmoqda)* | Diagramma darajalari, qarorlarni yozib qoldirish |
+| 01 | [Arxitektura nima va nega kerak](01-arxitektura-nima.md) | Qaysi qarorlar arxitektura, qaysilari emas |
+| 02 | [Sifat atributlari va trade-off](02-sifat-atributlari.md) | Tezlik, ishonchlilik, xavfsizlik, o'zgaruvchanlik — ular bir-biriga qarshi |
+| 03 | [Talabdan qarorga](03-talabdan-qarorga.md) | Funksional va nofunksional talablarni arxitekturaga aylantirish |
+| 04 | [Chegaralar: modul, kontekst, servis](04-chegaralar.md) | Chiziqni qayerga tortish kerak |
+| 05 | [Bog'liqlik va bog'lanish](05-bogliqlik.md) | Coupling/cohesion amalda, o'lchash usullari |
+| 06 | [Abstraksiya darajalari](06-abstraksiya.md) | Qachon abstraksiya foyda, qachon zarar; sizib chiquvchi abstraksiya |
+| 07 | [Hujjatlashtirish: C4 va ADR](07-c4-va-adr.md) | Diagramma darajalari, qarorlarni yozib qoldirish |
 
 ## II qism — Umumiy tamoyillar (8–18)
 
 | № | Bob | Nima o'rganasiz |
 | --- | --- | --- |
-| 08 | SOLID amalda *(tayyorlanmoqda)* | Har bir tamoyil qaysi og'riqni yechadi va qachon oshirib yuboriladi |
-| 09 | Kompozitsiya va meros *(tayyorlanmoqda)* | Nega meros kamdan-kam to'g'ri javob |
-| 10 | Bog'liqlikni teskari qilish va DI *(tayyorlanmoqda)* | Konteynerlar, qo'lda ulash, test uchun almashtirish |
-| 11 | Modulning ochiq API'si *(tayyorlanmoqda)* | Inkapsulyatsiya, ichki va tashqi kod, barqaror interfeys |
-| 12 | Tiplar orqali dizayn *(tayyorlanmoqda)* | Noto'g'ri holatni ifodalab bo'lmaydigan tiplar, branded tiplar, parse-don't-validate |
-| 13 | Domen modeli *(tayyorlanmoqda)* | Entity, value object, aggregate, invariantlar |
-| 14 | DDD: til va kontekst *(tayyorlanmoqda)* | Ubiquitous language, bounded context, kontekst xaritasi |
-| 15 | Qatlamli, olti burchakli, Clean *(tayyorlanmoqda)* | Uch yondashuvning farqi va umumiy g'oyasi |
-| 16 | Vertical slice va feature-based *(tayyorlanmoqda)* | Qatlam bo'yicha emas, xususiyat bo'yicha tashkil qilish |
-| 17 | Xatolar modeli *(tayyorlanmoqda)* | Exception vs result, xato chegaralari, qayta tiklanish |
-| 18 | Konfiguratsiya va muhitlar *(tayyorlanmoqda)* | 12-factor, sirlar, muhitlar orasidagi farq |
+| 08 | [SOLID amalda](08-solid.md) | Har bir tamoyil qaysi og'riqni yechadi va qachon oshirib yuboriladi |
+| 09 | [Kompozitsiya va meros](09-kompozitsiya.md) | Nega meros kamdan-kam to'g'ri javob |
+| 10 | [Bog'liqlikni teskari qilish va DI](10-di.md) | Konteynerlar, qo'lda ulash, test uchun almashtirish |
+| 11 | [Modulning ochiq API'si](11-ochiq-api.md) | Inkapsulyatsiya, ichki va tashqi kod, barqaror interfeys |
+| 12 | [Tiplar orqali dizayn](12-tiplar.md) | Noto'g'ri holatni ifodalab bo'lmaydigan tiplar, branded tiplar, parse-don't-validate |
+| 13 | [Domen modeli](13-domen-modeli.md) | Entity, value object, aggregate, invariantlar |
+| 14 | [DDD: til va kontekst](14-ddd.md) | Ubiquitous language, bounded context, kontekst xaritasi |
+| 15 | [Qatlamli, olti burchakli, Clean](15-qatlamli-arxitektura.md) | Uch yondashuvning farqi va umumiy g'oyasi |
+| 16 | [Vertical slice va feature-based](16-vertical-slice.md) | Qatlam bo'yicha emas, xususiyat bo'yicha tashkil qilish |
+| 17 | [Xatolar modeli](17-xatolar-modeli.md) | Exception vs result, xato chegaralari, qayta tiklanish |
+| 18 | [Konfiguratsiya va muhitlar](18-konfiguratsiya.md) | 12-factor, sirlar, muhitlar orasidagi farq |
 
 ## III qism — Backend arxitekturasi (19–35)
 
 | № | Bob | Nima o'rganasiz |
 | --- | --- | --- |
-| 19 | Monolit: to'g'ri qilingan *(tayyorlanmoqda)* | Nega ko'p loyiha uchun eng yaxshi boshlanish |
-| 20 | Modulli monolit *(tayyorlanmoqda)* | Ichki chegaralar, modul shartnomasi, keyingi bo'linishga tayyorgarlik |
-| 21 | Mikroservislar: narx va foyda *(tayyorlanmoqda)* | Qachon oqlanadi, qanday muammolarni olib keladi |
-| 22 | Servis chegarasini topish *(tayyorlanmoqda)* | Domen, ma'lumot egaligi, o'zgarish chastotasi bo'yicha |
-| 23 | Ma'lumotlar bazasi dizayni *(tayyorlanmoqda)* | Normalizatsiya, denormalizatsiya, indekslar, migratsiya siyosati |
-| 24 | Tranzaksiya va konkurentlik *(tayyorlanmoqda)* | Izolyatsiya darajalari, qulflar, optimistik boshqaruv |
-| 25 | Kesh strategiyalari *(tayyorlanmoqda)* | Cache-aside, write-through, invalidatsiya, TTL, "eng qiyin ikki masala" |
-| 26 | Navbat va fon ishlari *(tayyorlanmoqda)* | Idempotentlik, qayta urinish, dead letter, tartib |
-| 27 | Hodisaga asoslangan arxitektura *(tayyorlanmoqda)* | Event, outbox, saga, eventual consistency |
-| 28 | CQRS va o'qish modellari *(tayyorlanmoqda)* | Qachon ajratish kerak, hisobot va qidiruv |
-| 29 | Qidiruv arxitekturasi *(tayyorlanmoqda)* | Full-text, qidiruv indeksi, sinxronlash, relevantlik |
-| 30 | Rate limiting va kvotalar *(tayyorlanmoqda)* | Token bucket, sliding window, foydalanuvchi/ijarachi darajasi, adolatli taqsimot |
-| 31 | Audit va o'zgarishlar tarixi *(tayyorlanmoqda)* | Audit log, soft delete, event sourcing qachon kerak, GDPR bilan ziddiyat |
-| 32 | Fayl va media *(tayyorlanmoqda)* | Saqlash, CDN, presigned URL, ishlov berish navbati |
-| 33 | Ko'p ijarachilik *(tayyorlanmoqda)* | Bir baza, sxema yoki alohida — uch model va narxi |
-| 34 | Rejalashtirilgan ishlar *(tayyorlanmoqda)* | Cron, lider saylash, taqsimlangan lock |
-| 35 | Backend testlash strategiyasi *(tayyorlanmoqda)* | Birlik, integratsiya, kontrakt testlar |
+| 19 | [Monolit: to'g'ri qilingan](19-monolit.md) | Nega ko'p loyiha uchun eng yaxshi boshlanish |
+| 20 | [Modulli monolit](20-modulli-monolit.md) | Ichki chegaralar, modul shartnomasi, keyingi bo'linishga tayyorgarlik |
+| 21 | [Mikroservislar: narx va foyda](21-mikroservislar.md) | Qachon oqlanadi, qanday muammolarni olib keladi |
+| 22 | [Servis chegarasini topish](22-servis-chegarasi.md) | Domen, ma'lumot egaligi, o'zgarish chastotasi bo'yicha |
+| 23 | [Ma'lumotlar bazasi dizayni](23-malumotlar-bazasi.md) | Normalizatsiya, denormalizatsiya, indekslar, migratsiya siyosati |
+| 24 | [Tranzaksiya va konkurentlik](24-tranzaksiya.md) | Izolyatsiya darajalari, qulflar, optimistik boshqaruv |
+| 25 | [Kesh strategiyalari](25-kesh.md) | Cache-aside, write-through, invalidatsiya, TTL, "eng qiyin ikki masala" |
+| 26 | [Navbat va fon ishlari](26-navbat.md) | Idempotentlik, qayta urinish, dead letter, tartib |
+| 27 | [Hodisaga asoslangan arxitektura](27-hodisalar.md) | Event, outbox, saga, eventual consistency |
+| 28 | [CQRS va o'qish modellari](28-cqrs.md) | Qachon ajratish kerak, hisobot va qidiruv |
+| 29 | [Qidiruv arxitekturasi](29-qidiruv.md) | Full-text, qidiruv indeksi, sinxronlash, relevantlik |
+| 30 | [Rate limiting va kvotalar](30-rate-limiting.md) | Token bucket, sliding window, foydalanuvchi/ijarachi darajasi, adolatli taqsimot |
+| 31 | [Audit va o'zgarishlar tarixi](31-audit.md) | Audit log, soft delete, event sourcing qachon kerak, GDPR bilan ziddiyat |
+| 32 | [Fayl va media](32-fayl-va-media.md) | Saqlash, CDN, presigned URL, ishlov berish navbati |
+| 33 | [Ko'p ijarachilik](33-kop-ijarachilik.md) | Bir baza, sxema yoki alohida — uch model va narxi |
+| 34 | [Rejalashtirilgan ishlar](34-rejalashtirilgan-ishlar.md) | Cron, lider saylash, taqsimlangan lock |
+| 35 | [Backend testlash strategiyasi](35-backend-testlash.md) | Birlik, integratsiya, kontrakt testlar |
 
 ## IV qism — Frontend arxitekturasi (36–52)
 
 | № | Bob | Nima o'rganasiz |
 | --- | --- | --- |
-| 36 | Frontend arxitekturasi nimani hal qiladi *(tayyorlanmoqda)* | Chegaralar, holat, ma'lumot, ko'rinish |
-| 37 | Render strategiyasi *(tayyorlanmoqda)* | CSR/SSR/SSG/ISR/islands — qaror daraxti va narxi |
-| 38 | Modul tuzilmasi *(tayyorlanmoqda)* | Feature-based, qatlamlar, import yo'nalishi (batafsil — FSD qo'llanmasida) |
-| 39 | Komponent API dizayni *(tayyorlanmoqda)* | Input/output, kompozitsiya va konfiguratsiya, slot va render prop, headless |
-| 40 | Holat turlari *(tayyorlanmoqda)* | Server, klient, URL, forma holati — qaysi biri qayerda |
-| 41 | Reaktivlik modellari *(tayyorlanmoqda)* | Signal, virtual DOM, proxy, kompilyator — framework'lar qanday yangilaydi va nega muhim |
-| 42 | Ma'lumot qatlami *(tayyorlanmoqda)* | So'rov keshi, eskirish, optimistik yangilash |
-| 43 | Dizayn tizimi *(tayyorlanmoqda)* | Tokenlar, komponent shartnomasi, versiyalash |
-| 44 | Marshrutlash arxitekturasi *(tayyorlanmoqda)* | URL — holat manbai, guard, lazy yuklash |
-| 45 | Formalar arxitekturasi *(tayyorlanmoqda)* | Validatsiya manbai, server xatolari, murakkab oqimlar |
-| 46 | Erishimlilik va ko'p tillilik *(tayyorlanmoqda)* | Ularni keyinga qoldirishning narxi |
-| 47 | Unumdorlik byudjetlari *(tayyorlanmoqda)* | Core Web Vitals, bundle, o'lchash madaniyati |
-| 48 | Frontend xatolari va kuzatuvchanlik *(tayyorlanmoqda)* | Xato chegaralari, RUM, source map, foydalanuvchi sessiyasi |
-| 49 | Build va yetkazib berish *(tayyorlanmoqda)* | Bundler, chunk strategiyasi, kesh-busting, eski tablar va versiya nomuvofiqligi |
+| 36 | [Frontend arxitekturasi nimani hal qiladi](36-frontend-arxitekturasi.md) | Chegaralar, holat, ma'lumot, ko'rinish |
+| 37 | [Render strategiyasi](37-render-strategiyasi.md) | CSR/SSR/SSG/ISR/islands — qaror daraxti va narxi |
+| 38 | [Modul tuzilmasi](38-modul-tuzilmasi.md) | Feature-based, qatlamlar, import yo'nalishi (batafsil — FSD qo'llanmasida) |
+| 39 | [Komponent API dizayni](39-komponent-api.md) | Input/output, kompozitsiya va konfiguratsiya, slot va render prop, headless |
+| 40 | [Holat turlari](40-holat-turlari.md) | Server, klient, URL, forma holati — qaysi biri qayerda |
+| 41 | [Reaktivlik modellari](41-reaktivlik-modellari.md) | Signal, virtual DOM, proxy, kompilyator — framework'lar qanday yangilaydi va nega muhim |
+| 42 | [Ma'lumot qatlami](42-malumot-qatlami.md) | So'rov keshi, eskirish, optimistik yangilash |
+| 43 | [Dizayn tizimi](43-dizayn-tizimi.md) | Tokenlar, komponent shartnomasi, versiyalash |
+| 44 | [Marshrutlash arxitekturasi](44-marshrutlash.md) | URL — holat manbai, guard, lazy yuklash |
+| 45 | [Formalar arxitekturasi](45-formalar.md) | Validatsiya manbai, server xatolari, murakkab oqimlar |
+| 46 | [Erishimlilik va ko'p tillilik](46-a11y-va-i18n.md) | Ularni keyinga qoldirishning narxi |
+| 47 | [Unumdorlik byudjetlari](47-unumdorlik-byudjetlari.md) | Core Web Vitals, bundle, o'lchash madaniyati |
+| 48 | [Frontend xatolari va kuzatuvchanlik](48-frontend-xatolari.md) | Xato chegaralari, RUM, source map, foydalanuvchi sessiyasi |
+| 49 | [Build va yetkazib berish](49-build-va-yetkazish.md) | Bundler, chunk strategiyasi, kesh-busting, eski tablar va versiya nomuvofiqligi |
 | 50 | Mikro-frontendlar *(tayyorlanmoqda)* | Qachon kerak (kamdan-kam), qanday narx |
 | 51 | Offline va optimistik UI *(tayyorlanmoqda)* | PWA, navbat, konflikt hal qilish |
 | 52 | Frontend testlash strategiyasi *(tayyorlanmoqda)* | Nimani test qilish, E2E chegarasi |
