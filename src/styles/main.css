@@ -1066,12 +1066,39 @@ a:hover { text-decoration: underline; }
     display: inline-flex;
     flex-wrap: wrap;
     gap: 0;
-    margin: 0 0 64px;
+    margin: 0 0 48px;
     border: 1px solid var(--border);
     border-radius: 10px;
     background: var(--bg-elevated);
     overflow: hidden;
 }
+
+/* "Nega" — README'dagi izoh kabi */
+.home-why {
+    max-width: 68ch;
+    margin: 0 0 64px;
+    padding: 2px 0 2px 18px;
+    border-left: 2px solid var(--accent-text);
+}
+
+.home-why-title {
+    margin: 0 0 10px;
+    color: var(--text);
+    font-family: var(--font-mono);
+    font-size: 13px;
+    font-weight: 650;
+}
+
+.home-why-title span { color: var(--text-subtle); font-weight: 400; }
+
+.home-why p {
+    margin: 0 0 10px;
+    color: var(--text-muted);
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.home-why p:last-child { margin-bottom: 0; }
 
 .home-stat {
     display: flex;
@@ -1447,7 +1474,9 @@ h3.markable > .line-mark { top: 6px; }
 @media (max-width: 900px) {
     .home-inner { padding: 48px 18px 72px; }
     .home-skeleton { margin-bottom: 28px; }
-    .home-stats { margin-bottom: 44px; }
+    .home-stats { margin-bottom: 36px; }
+    .home-why { margin-bottom: 48px; padding-left: 14px; }
+    .home-why p { font-size: 14.5px; }
     .home-grid { grid-template-columns: 1fr; gap: 14px; }
 
     .book-card { padding: 20px 20px 0; }

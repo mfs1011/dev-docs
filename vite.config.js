@@ -31,6 +31,8 @@ function markdownWatcher() {
 
     try {
       execFileSync('node', [SYNC_SCRIPT], { stdio: 'inherit' })
+      // src/content kuzatilmaydi — Vite eski transform keshini bermasligi uchun tozalaymiz
+      server.moduleGraph.invalidateAll()
       server.ws.send({ type: 'full-reload' })
     } catch (error) {
       server.config.logger.error(`[docs] sinxronlash xatosi: ${error.message}`)

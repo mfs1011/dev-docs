@@ -31,7 +31,7 @@ onMounted(() => {
             <section class="home-hero">
                 <p class="home-prompt">
                     <span aria-hidden="true">$</span>
-                    <code>qollanmalar --lang=uz --level=0..senior</code>
+                    <code>qollanmalar --lang=uz --source=official-docs</code>
                 </p>
 
                 <h1 class="home-title">
@@ -66,6 +66,26 @@ onMounted(() => {
                         <dd>{{ totals.pages }}</dd>
                     </div>
                 </dl>
+            </section>
+
+            <section class="home-why" aria-labelledby="home-why-title">
+                <h2 id="home-why-title" class="home-why-title">
+                    <span aria-hidden="true">//</span> Nega bu qo'llanmalar
+                </h2>
+
+                <p>
+                    AI davrida asosiy ko'nikma kod yozish emas, kod yozdirish bo'lib qoldi.
+                    Lekin yaxshi yozdirish uchun nima qanday ishlashini tushunish kerak —
+                    aks holda AI bergan yechim to'g'rimi yoki yo'qmi, ajrata olmaysiz.
+                    AI istalgan narsani qura oladi, lekin uni ideal qurishiga hech kim
+                    kafolat bermaydi. Qarorni baribir muhandis qabul qiladi.
+                </p>
+
+                <p>
+                    Shuning uchun o'qish hali ham kerak: asoslardan boshlab, har bir qaror
+                    nega shunday ekanini tushunib. Bu qo'llanmalar avvalo o'zim uchun
+                    yozilgan. Kimgadir foydasi tegsa — xursandman.
+                </p>
             </section>
 
             <h2 class="home-section-title">Qo'llanmalar</h2>

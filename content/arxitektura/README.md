@@ -1,6 +1,6 @@
 # Arxitektura — frontend va backend: chegaralar va kesishmalar
 
-Bu qo'llanma texnologiyaga bog'liq emas: undagi qarorlar Symfony, Laravel, Go, Node, React, Vue, Next yoki Angular bilan ishlaganingizda ham bir xil ishlaydi. Misollar til-neytral psevdokod va diagrammalarda beriladi, kerak bo'lganda aniq framework'ga havola qilinadi.
+Bu qo'llanma texnologiyaga bog'liq emas: undagi qarorlar Symfony, Laravel, Go, Node, React, Vue, Next yoki Angular bilan ishlaganingizda ham bir xil ishlaydi. Asosiy misollar til-neytral psevdokod va diagrammalarda; har bobning "Framework'larda" bo'limida esa xuddi shu qaror aniq framework kodida va shu saytdagi qo'llanmalarga havola bilan ko'rsatiladi.
 
 ## Nega ikkalasi bitta kitobda
 
@@ -24,7 +24,8 @@ Talab: kamida bitta til va bitta framework bilan real loyihada ishlagan bo'lish.
 
 - **Tushuncha** — nima va qaysi muammoni yechadi.
 - **Nega shunday** — qaror qayerdan kelib chiqqan, muqobillari nima edi.
-- **Kod / diagramma** — psevdokod, sxema yoki konkret misol.
+- **Psevdokod / diagramma** — asosiy misol til-neytral: g'oya framework'dan qat'i nazar bir xil.
+- **Framework'larda** — xuddi shu qaror aniq kodda: kerakli joyda Symfony/Laravel, Angular/React/Vue/Next misollari va shu saytdagi tegishli boblarga havola.
 - **Trade-off** — nima yutiladi, nima yo'qotiladi (arxitekturada "bepul" yechim yo'q).
 - **Tipik xatolar** — jadval: noto'g'ri yondashuv → nega yomon → to'g'ri yechim.
 - **Amaliyot** — o'z loyihangizga qo'llanadigan mashq.
@@ -46,6 +47,11 @@ Qo'llanma quyidagi manbalarga tayanadi va ularga havola qiladi:
 | Google SRE Book | SLO, ishonchlilik, ekspluatatsiya |
 | RFC 9110 (HTTP), RFC 6749/9700 (OAuth 2), RFC 7519 (JWT) | Kesishmadagi standartlar |
 | Team Topologies (Skelton, Pais) | Jamoa tuzilmasi va Conway qonuni |
+| Fundamentals of Software Architecture (Richards, Ford) | Arxitektura uslublari, trade-off tahlili |
+| Building Evolutionary Architectures (Ford, Parsons, Kua) | Fitness function, evolyutsiya |
+| Release It! (Michael Nygard) | Barqarorlik naqshlari |
+| OpenAPI Specification | Shartnoma birinchi yondashuvi |
+| OWASP API Security Top 10, OWASP Top 10 for LLM Applications | API va AI xavfsizligi |
 
 ---
 
@@ -61,108 +67,138 @@ Qo'llanma quyidagi manbalarga tayanadi va ularga havola qiladi:
 | 06 | Abstraksiya darajalari *(tayyorlanmoqda)* | Qachon abstraksiya foyda, qachon zarar; sizib chiquvchi abstraksiya |
 | 07 | Hujjatlashtirish: C4 va ADR *(tayyorlanmoqda)* | Diagramma darajalari, qarorlarni yozib qoldirish |
 
-## II qism — Umumiy tamoyillar (8–16)
+## II qism — Umumiy tamoyillar (8–18)
 
 | № | Bob | Nima o'rganasiz |
 | --- | --- | --- |
 | 08 | SOLID amalda *(tayyorlanmoqda)* | Har bir tamoyil qaysi og'riqni yechadi va qachon oshirib yuboriladi |
 | 09 | Kompozitsiya va meros *(tayyorlanmoqda)* | Nega meros kamdan-kam to'g'ri javob |
 | 10 | Bog'liqlikni teskari qilish va DI *(tayyorlanmoqda)* | Konteynerlar, qo'lda ulash, test uchun almashtirish |
-| 11 | Domen modeli *(tayyorlanmoqda)* | Entity, value object, aggregate, invariantlar |
-| 12 | DDD: til va kontekst *(tayyorlanmoqda)* | Ubiquitous language, bounded context, kontekst xaritasi |
-| 13 | Qatlamli, olti burchakli, Clean *(tayyorlanmoqda)* | Uch yondashuvning farqi va umumiy g'oyasi |
-| 14 | Vertical slice va feature-based *(tayyorlanmoqda)* | Qatlam bo'yicha emas, xususiyat bo'yicha tashkil qilish |
-| 15 | Xatolar modeli *(tayyorlanmoqda)* | Exception vs result, xato chegaralari, qayta tiklanish |
-| 16 | Konfiguratsiya va muhitlar *(tayyorlanmoqda)* | 12-factor, sirlar, muhitlar orasidagi farq |
+| 11 | Modulning ochiq API'si *(tayyorlanmoqda)* | Inkapsulyatsiya, ichki va tashqi kod, barqaror interfeys |
+| 12 | Tiplar orqali dizayn *(tayyorlanmoqda)* | Noto'g'ri holatni ifodalab bo'lmaydigan tiplar, branded tiplar, parse-don't-validate |
+| 13 | Domen modeli *(tayyorlanmoqda)* | Entity, value object, aggregate, invariantlar |
+| 14 | DDD: til va kontekst *(tayyorlanmoqda)* | Ubiquitous language, bounded context, kontekst xaritasi |
+| 15 | Qatlamli, olti burchakli, Clean *(tayyorlanmoqda)* | Uch yondashuvning farqi va umumiy g'oyasi |
+| 16 | Vertical slice va feature-based *(tayyorlanmoqda)* | Qatlam bo'yicha emas, xususiyat bo'yicha tashkil qilish |
+| 17 | Xatolar modeli *(tayyorlanmoqda)* | Exception vs result, xato chegaralari, qayta tiklanish |
+| 18 | Konfiguratsiya va muhitlar *(tayyorlanmoqda)* | 12-factor, sirlar, muhitlar orasidagi farq |
 
-## III qism — Backend arxitekturasi (17–30)
-
-| № | Bob | Nima o'rganasiz |
-| --- | --- | --- |
-| 17 | Monolit: to'g'ri qilingan *(tayyorlanmoqda)* | Nega ko'p loyiha uchun eng yaxshi boshlanish |
-| 18 | Modulli monolit *(tayyorlanmoqda)* | Ichki chegaralar, modul shartnomasi, keyingi bo'linishga tayyorgarlik |
-| 19 | Mikroservislar: narx va foyda *(tayyorlanmoqda)* | Qachon oqlanadi, qanday muammolarni olib keladi |
-| 20 | Servis chegarasini topish *(tayyorlanmoqda)* | Domen, ma'lumot egaligi, o'zgarish chastotasi bo'yicha |
-| 21 | Ma'lumotlar bazasi dizayni *(tayyorlanmoqda)* | Normalizatsiya, denormalizatsiya, indekslar, migratsiya siyosati |
-| 22 | Tranzaksiya va konkurentlik *(tayyorlanmoqda)* | Izolyatsiya darajalari, qulflar, optimistik boshqaruv |
-| 23 | Kesh strategiyalari *(tayyorlanmoqda)* | Cache-aside, write-through, invalidatsiya, TTL, "eng qiyin ikki masala" |
-| 24 | Navbat va fon ishlari *(tayyorlanmoqda)* | Idempotentlik, qayta urinish, dead letter, tartib |
-| 25 | Hodisaga asoslangan arxitektura *(tayyorlanmoqda)* | Event, outbox, saga, eventual consistency |
-| 26 | CQRS va o'qish modellari *(tayyorlanmoqda)* | Qachon ajratish kerak, hisobot va qidiruv |
-| 27 | Fayl va media *(tayyorlanmoqda)* | Saqlash, CDN, presigned URL, ishlov berish navbati |
-| 28 | Ko'p ijarachilik *(tayyorlanmoqda)* | Bir baza, sxema yoki alohida — uch model va narxi |
-| 29 | Rejalashtirilgan ishlar *(tayyorlanmoqda)* | Cron, lider saylash, taqsimlangan lock |
-| 30 | Backend testlash strategiyasi *(tayyorlanmoqda)* | Birlik, integratsiya, kontrakt testlar |
-
-## IV qism — Frontend arxitekturasi (31–43)
+## III qism — Backend arxitekturasi (19–35)
 
 | № | Bob | Nima o'rganasiz |
 | --- | --- | --- |
-| 31 | Frontend arxitekturasi nimani hal qiladi *(tayyorlanmoqda)* | Chegaralar, holat, ma'lumot, ko'rinish |
-| 32 | Render strategiyasi *(tayyorlanmoqda)* | CSR/SSR/SSG/ISR/islands — qaror daraxti va narxi |
-| 33 | Modul tuzilmasi *(tayyorlanmoqda)* | Feature-based, qatlamlar, import yo'nalishi |
-| 34 | Holat turlari *(tayyorlanmoqda)* | Server, klient, URL, forma holati — qaysi biri qayerda |
-| 35 | Ma'lumot qatlami *(tayyorlanmoqda)* | So'rov keshi, eskirish, optimistik yangilash |
-| 36 | Dizayn tizimi *(tayyorlanmoqda)* | Tokenlar, komponent shartnomasi, versiyalash |
-| 37 | Marshrutlash arxitekturasi *(tayyorlanmoqda)* | URL — holat manbai, guard, lazy yuklash |
-| 38 | Formalar arxitekturasi *(tayyorlanmoqda)* | Validatsiya manbai, server xatolari, murakkab oqimlar |
-| 39 | Erishimlilik va ko'p tillilik *(tayyorlanmoqda)* | Ularni keyinga qoldirishning narxi |
-| 40 | Unumdorlik byudjetlari *(tayyorlanmoqda)* | Core Web Vitals, bundle, o'lchash madaniyati |
-| 41 | Mikro-frontendlar *(tayyorlanmoqda)* | Qachon kerak (kamdan-kam), qanday narx |
-| 42 | Offline va optimistik UI *(tayyorlanmoqda)* | PWA, navbat, konflikt hal qilish |
-| 43 | Frontend testlash strategiyasi *(tayyorlanmoqda)* | Nimani test qilish, E2E chegarasi |
+| 19 | Monolit: to'g'ri qilingan *(tayyorlanmoqda)* | Nega ko'p loyiha uchun eng yaxshi boshlanish |
+| 20 | Modulli monolit *(tayyorlanmoqda)* | Ichki chegaralar, modul shartnomasi, keyingi bo'linishga tayyorgarlik |
+| 21 | Mikroservislar: narx va foyda *(tayyorlanmoqda)* | Qachon oqlanadi, qanday muammolarni olib keladi |
+| 22 | Servis chegarasini topish *(tayyorlanmoqda)* | Domen, ma'lumot egaligi, o'zgarish chastotasi bo'yicha |
+| 23 | Ma'lumotlar bazasi dizayni *(tayyorlanmoqda)* | Normalizatsiya, denormalizatsiya, indekslar, migratsiya siyosati |
+| 24 | Tranzaksiya va konkurentlik *(tayyorlanmoqda)* | Izolyatsiya darajalari, qulflar, optimistik boshqaruv |
+| 25 | Kesh strategiyalari *(tayyorlanmoqda)* | Cache-aside, write-through, invalidatsiya, TTL, "eng qiyin ikki masala" |
+| 26 | Navbat va fon ishlari *(tayyorlanmoqda)* | Idempotentlik, qayta urinish, dead letter, tartib |
+| 27 | Hodisaga asoslangan arxitektura *(tayyorlanmoqda)* | Event, outbox, saga, eventual consistency |
+| 28 | CQRS va o'qish modellari *(tayyorlanmoqda)* | Qachon ajratish kerak, hisobot va qidiruv |
+| 29 | Qidiruv arxitekturasi *(tayyorlanmoqda)* | Full-text, qidiruv indeksi, sinxronlash, relevantlik |
+| 30 | Rate limiting va kvotalar *(tayyorlanmoqda)* | Token bucket, sliding window, foydalanuvchi/ijarachi darajasi, adolatli taqsimot |
+| 31 | Audit va o'zgarishlar tarixi *(tayyorlanmoqda)* | Audit log, soft delete, event sourcing qachon kerak, GDPR bilan ziddiyat |
+| 32 | Fayl va media *(tayyorlanmoqda)* | Saqlash, CDN, presigned URL, ishlov berish navbati |
+| 33 | Ko'p ijarachilik *(tayyorlanmoqda)* | Bir baza, sxema yoki alohida — uch model va narxi |
+| 34 | Rejalashtirilgan ishlar *(tayyorlanmoqda)* | Cron, lider saylash, taqsimlangan lock |
+| 35 | Backend testlash strategiyasi *(tayyorlanmoqda)* | Birlik, integratsiya, kontrakt testlar |
 
-## V qism — Kesishma: shartnoma va integratsiya (44–56)
-
-| № | Bob | Nima o'rganasiz |
-| --- | --- | --- |
-| 44 | API shartnomasi kimniki *(tayyorlanmoqda)* | Kim loyihalaydi, qanday kelishiladi, kim buzsa nima bo'ladi |
-| 45 | REST dizayni *(tayyorlanmoqda)* | Resurslar, status kodlar, xato formati (RFC 9457) |
-| 46 | GraphQL *(tayyorlanmoqda)* | Qachon foyda, qachon zarar; N+1, kesh, ruxsatlar |
-| 47 | gRPC va RPC uslubi *(tayyorlanmoqda)* | Ichki servislar orasida, brauzer cheklovlari |
-| 48 | Versiyalash va orqaga moslik *(tayyorlanmoqda)* | URL/header versiyalash, deprecation siyosati |
-| 49 | Xato modeli: serverdan UI gacha *(tayyorlanmoqda)* | Kod, xabar, maydon xatolari, foydalanuvchiga tarjima |
-| 50 | Autentifikatsiya oqimlari *(tayyorlanmoqda)* | Sessiya vs token, OAuth 2.1, OIDC, SSO |
-| 51 | Access va refresh tokenlar *(tayyorlanmoqda)* | Muddat, rotation, saqlash joyi, bekor qilish |
-| 52 | Avtorizatsiya *(tayyorlanmoqda)* | RBAC/ABAC, qaror qayerda qabul qilinadi, UI va server mas'uliyati |
-| 53 | Fayl yuklash oqimi *(tayyorlanmoqda)* | Presigned URL, progress, validatsiya, virus tekshiruvi |
-| 54 | Real vaqt *(tayyorlanmoqda)* | WebSocket, SSE, polling — tanlov mezonlari |
-| 55 | Kesh kelishuvi *(tayyorlanmoqda)* | HTTP kesh, ETag, CDN, klient keshi — kim nimani keshlaydi |
-| 56 | Ro'yxat shartnomasi *(tayyorlanmoqda)* | Pagination (offset/cursor), filtr, saralash, qidiruv |
-
-## VI qism — Ma'lumot va integratsiya (57–62)
+## IV qism — Frontend arxitekturasi (36–52)
 
 | № | Bob | Nima o'rganasiz |
 | --- | --- | --- |
-| 57 | Model mos kelmasligi *(tayyorlanmoqda)* | Domen modeli ≠ API modeli ≠ UI modeli |
-| 58 | BFF va API gateway *(tayyorlanmoqda)* | Qachon kerak, qayerda joylashadi, kim egalik qiladi |
-| 59 | Idempotentlik *(tayyorlanmoqda)* | Takroriy so'rov, to'lov, idempotency key |
-| 60 | Migratsiya va nol to'xtovli deploy *(tayyorlanmoqda)* | Expand/contract, ikki tomonlama moslik |
-| 61 | Uchinchi tomon integratsiyalari *(tayyorlanmoqda)* | Webhook, retry, imzo tekshiruvi, sandbox |
-| 62 | Ko'p platformalilik *(tayyorlanmoqda)* | Web, mobil, umumiy kontrakt va farqlar |
+| 36 | Frontend arxitekturasi nimani hal qiladi *(tayyorlanmoqda)* | Chegaralar, holat, ma'lumot, ko'rinish |
+| 37 | Render strategiyasi *(tayyorlanmoqda)* | CSR/SSR/SSG/ISR/islands — qaror daraxti va narxi |
+| 38 | Modul tuzilmasi *(tayyorlanmoqda)* | Feature-based, qatlamlar, import yo'nalishi (batafsil — FSD qo'llanmasida) |
+| 39 | Komponent API dizayni *(tayyorlanmoqda)* | Input/output, kompozitsiya va konfiguratsiya, slot va render prop, headless |
+| 40 | Holat turlari *(tayyorlanmoqda)* | Server, klient, URL, forma holati — qaysi biri qayerda |
+| 41 | Reaktivlik modellari *(tayyorlanmoqda)* | Signal, virtual DOM, proxy, kompilyator — framework'lar qanday yangilaydi va nega muhim |
+| 42 | Ma'lumot qatlami *(tayyorlanmoqda)* | So'rov keshi, eskirish, optimistik yangilash |
+| 43 | Dizayn tizimi *(tayyorlanmoqda)* | Tokenlar, komponent shartnomasi, versiyalash |
+| 44 | Marshrutlash arxitekturasi *(tayyorlanmoqda)* | URL — holat manbai, guard, lazy yuklash |
+| 45 | Formalar arxitekturasi *(tayyorlanmoqda)* | Validatsiya manbai, server xatolari, murakkab oqimlar |
+| 46 | Erishimlilik va ko'p tillilik *(tayyorlanmoqda)* | Ularni keyinga qoldirishning narxi |
+| 47 | Unumdorlik byudjetlari *(tayyorlanmoqda)* | Core Web Vitals, bundle, o'lchash madaniyati |
+| 48 | Frontend xatolari va kuzatuvchanlik *(tayyorlanmoqda)* | Xato chegaralari, RUM, source map, foydalanuvchi sessiyasi |
+| 49 | Build va yetkazib berish *(tayyorlanmoqda)* | Bundler, chunk strategiyasi, kesh-busting, eski tablar va versiya nomuvofiqligi |
+| 50 | Mikro-frontendlar *(tayyorlanmoqda)* | Qachon kerak (kamdan-kam), qanday narx |
+| 51 | Offline va optimistik UI *(tayyorlanmoqda)* | PWA, navbat, konflikt hal qilish |
+| 52 | Frontend testlash strategiyasi *(tayyorlanmoqda)* | Nimani test qilish, E2E chegarasi |
 
-## VII qism — Sifat, ish va rivojlanish (63–72)
+## V qism — Kesishma: shartnoma va integratsiya (53–67)
 
 | № | Bob | Nima o'rganasiz |
 | --- | --- | --- |
-| 63 | Kuzatuvchanlik *(tayyorlanmoqda)* | Log, metrika, trace — uchala qatlamda, correlation ID |
-| 64 | Xavfsizlik arxitekturasi *(tayyorlanmoqda)* | Tahdid modeli, ishonch chegaralari, sirlar boshqaruvi |
-| 65 | Unumdorlik arxitekturasi *(tayyorlanmoqda)* | O'lchash, byudjet, yuk testi, bottleneck tahlili |
-| 66 | Ishonchlilik *(tayyorlanmoqda)* | SLO, timeout, retry, circuit breaker, bulkhead |
-| 67 | Deploy arxitekturasi *(tayyorlanmoqda)* | Muhitlar, feature flag, canary, rollback |
-| 68 | Jamoa va Conway qonuni *(tayyorlanmoqda)* | Tuzilma arxitekturaga qanday ta'sir qiladi |
-| 69 | Legacy bilan ishlash *(tayyorlanmoqda)* | Strangler fig, bosqichma-bosqich ko'chirish, "katta qayta yozish" tuzog'i |
-| 70 | Qaror qabul qilish *(tayyorlanmoqda)* | Trade-off tahlili, ADR yozish, hech narsa qilmaslik ham qaror |
-| 71 | Amaliy keys: to'liq tizim *(tayyorlanmoqda)* | E-commerce misolida barcha qarorlar ketma-ketligi |
-| 72 | Checklist *(tayyorlanmoqda)* | Loyiha boshlanishi, ko'rik, reliz uchun ro'yxatlar |
+| 53 | API shartnomasi kimniki *(tayyorlanmoqda)* | Kim loyihalaydi, qanday kelishiladi, kim buzsa nima bo'ladi |
+| 54 | Shartnoma birinchi: OpenAPI va kod generatsiyasi *(tayyorlanmoqda)* | Sxemadan backend validatsiya va frontend tiplari, drift oldini olish |
+| 55 | REST dizayni *(tayyorlanmoqda)* | Resurslar, status kodlar, xato formati (RFC 9457) |
+| 56 | GraphQL *(tayyorlanmoqda)* | Qachon foyda, qachon zarar; N+1, kesh, ruxsatlar |
+| 57 | gRPC va RPC uslubi *(tayyorlanmoqda)* | Ichki servislar orasida, brauzer cheklovlari |
+| 58 | Versiyalash va orqaga moslik *(tayyorlanmoqda)* | URL/header versiyalash, deprecation siyosati |
+| 59 | Xato modeli: serverdan UI gacha *(tayyorlanmoqda)* | Kod, xabar, maydon xatolari, foydalanuvchiga tarjima |
+| 60 | Autentifikatsiya oqimlari *(tayyorlanmoqda)* | Sessiya vs token, OAuth 2.1, OIDC, SSO |
+| 61 | Access va refresh tokenlar *(tayyorlanmoqda)* | Muddat, rotation, saqlash joyi, bekor qilish |
+| 62 | Avtorizatsiya *(tayyorlanmoqda)* | RBAC/ABAC, qaror qayerda qabul qilinadi, UI va server mas'uliyati |
+| 63 | Fayl yuklash oqimi *(tayyorlanmoqda)* | Presigned URL, progress, validatsiya, virus tekshiruvi |
+| 64 | Real vaqt *(tayyorlanmoqda)* | WebSocket, SSE, polling — tanlov mezonlari |
+| 65 | Kesh kelishuvi *(tayyorlanmoqda)* | HTTP kesh, ETag, CDN, klient keshi — kim nimani keshlaydi |
+| 66 | Ro'yxat shartnomasi *(tayyorlanmoqda)* | Pagination (offset/cursor), filtr, saralash, qidiruv |
+| 67 | Cheklovlar shartnomasi *(tayyorlanmoqda)* | 429, Retry-After, kvota sarlavhalari, klientda backoff va UX |
+
+## VI qism — Ma'lumot va integratsiya (68–74)
+
+| № | Bob | Nima o'rganasiz |
+| --- | --- | --- |
+| 68 | Model mos kelmasligi *(tayyorlanmoqda)* | Domen modeli ≠ API modeli ≠ UI modeli |
+| 69 | BFF va API gateway *(tayyorlanmoqda)* | Qachon kerak, qayerda joylashadi, kim egalik qiladi |
+| 70 | Idempotentlik *(tayyorlanmoqda)* | Takroriy so'rov, to'lov, idempotency key |
+| 71 | Migratsiya va nol to'xtovli deploy *(tayyorlanmoqda)* | Expand/contract, ikki tomonlama moslik |
+| 72 | Uchinchi tomon integratsiyalari *(tayyorlanmoqda)* | Webhook, retry, imzo tekshiruvi, sandbox |
+| 73 | Ko'p platformalilik *(tayyorlanmoqda)* | Web, mobil, umumiy kontrakt va farqlar |
+| 74 | Monorepo va kod ulashish *(tayyorlanmoqda)* | Nx/Turborepo, umumiy paketlar, chegaralarni majburlash, qachon polirepo |
+
+## VII qism — Sifat, ish va rivojlanish (75–84)
+
+| № | Bob | Nima o'rganasiz |
+| --- | --- | --- |
+| 75 | Kuzatuvchanlik *(tayyorlanmoqda)* | Log, metrika, trace — uchala qatlamda, correlation ID |
+| 76 | Xavfsizlik arxitekturasi *(tayyorlanmoqda)* | Tahdid modeli, ishonch chegaralari, sirlar boshqaruvi |
+| 77 | API xavfsizligi *(tayyorlanmoqda)* | OWASP API Top 10: BOLA, ommaviy tayinlash, resurs iste'moli |
+| 78 | Unumdorlik arxitekturasi *(tayyorlanmoqda)* | O'lchash, byudjet, yuk testi, bottleneck tahlili |
+| 79 | Ishonchlilik *(tayyorlanmoqda)* | SLO, timeout, retry, circuit breaker, bulkhead |
+| 80 | Deploy arxitekturasi *(tayyorlanmoqda)* | Muhitlar, feature flag, canary, rollback |
+| 81 | Jamoa va Conway qonuni *(tayyorlanmoqda)* | Tuzilma arxitekturaga qanday ta'sir qiladi |
+| 82 | Legacy bilan ishlash *(tayyorlanmoqda)* | Strangler fig, bosqichma-bosqich ko'chirish, "katta qayta yozish" tuzog'i |
+| 83 | Evolyutsion arxitektura *(tayyorlanmoqda)* | Fitness function, arxitektura testlari, qarorlarni qayta ko'rib chiqish |
+| 84 | Qaror qabul qilish *(tayyorlanmoqda)* | Trade-off tahlili, ADR yozish, hech narsa qilmaslik ham qaror |
+
+## VIII qism — AI davrida arxitektura (85–89)
+
+| № | Bob | Nima o'rganasiz |
+| --- | --- | --- |
+| 85 | LLM integratsiyasi arxitekturasi *(tayyorlanmoqda)* | Model chaqiruvi qayerda, streaming, xarajat, timeout va fallback |
+| 86 | RAG va vektor qidiruv *(tayyorlanmoqda)* | Hujjatlarni bo'lish, embedding, indeks yangilanishi, sifatni o'lchash |
+| 87 | Agentlar va vositalar (tool calling) *(tayyorlanmoqda)* | Ruxsatlar chegarasi, tasdiqlash, idempotent vositalar |
+| 88 | AI xavfsizligi *(tayyorlanmoqda)* | Prompt injection, ma'lumot sizishi, OWASP LLM Top 10 |
+| 89 | AI bilan tizim loyihalash *(tayyorlanmoqda)* | Vazifani qanday berish, natijani tekshirish, muhandis mas'uliyati |
+
+## IX qism — Amaliyot (90–91)
+
+| № | Bob | Nima o'rganasiz |
+| --- | --- | --- |
+| 90 | Amaliy keys: to'liq tizim *(tayyorlanmoqda)* | E-commerce misolida barcha qarorlar ketma-ketligi |
+| 91 | Checklist *(tayyorlanmoqda)* | Loyiha boshlanishi, ko'rik, reliz uchun ro'yxatlar |
 
 ---
 
 ## Qanday o'qish kerak
 
-- **Ketma-ket:** I → II → (III yoki IV, o'z yo'nalishingiz) → **V** → VII.
+- **Ketma-ket:** I → II → (III yoki IV, o'z yo'nalishingiz) → **V** → VI → VII → VIII → IX.
 - **Full-stack:** to'liq ketma-ket, V qismga alohida vaqt ajrating.
 - **Backend mutaxassisi:** I, II, III, V, VII — IV qismni umumiy tanishish uchun.
+- **AI bilan ishlaydigan tizim quryapsizmi:** VIII qism — V va VII qismlarga tayanadi.
 - **Frontend mutaxassisi:** I, II, IV, V, VII — III qismni ma'lumot va kesh boblari uchun.
 - **Aniq muammo bilan kelgan bo'lsangiz:** V qism mustaqil o'qiladi (shartnoma, auth, kesh, real vaqt).
 
