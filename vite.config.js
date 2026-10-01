@@ -3,6 +3,7 @@ import { dirname, resolve } from 'node:path'
 import { execFileSync } from 'node:child_process'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
+import { VitePWA } from 'vite-plugin-pwa'
 
 const APP_ROOT = dirname(fileURLToPath(import.meta.url))
 const CONTENT_SOURCE = resolve(APP_ROOT, process.env.DOCS_SOURCE ?? 'content')
@@ -53,10 +54,69 @@ function markdownWatcher() {
   }
 }
 
+/**
+ * PWA: telefonga o'rnatiladi va offline ishlaydi.
+ *
+ * Ilova qobig'i (index.js/css, qidiruv indeksi, ikonkalar) — precache: birinchi kirishdanoq offline.
+ * Boblar (har biri alohida chunk, hammasi ~6 MB) — precache EMAS: ochilgan bob keshga tushadi va
+ * keyingi safar internetsiz ochiladi. Fayl nomida hash bor — kesh hech qachon eskirmaydi.
+ * Yangi versiya chiqsa — foydalanuvchiga taklif qilinadi (registerType: 'prompt'), o'qish o'rtasida
+ * sahifa o'zi qayta yuklanmaydi.
+ */
+function pwa() {
+  return VitePWA({
+    registerType: 'prompt',
+    injectRegister: false,
+    includeAssets: ['favicon*.svg', 'pwa/apple-touch-icon.png'],
+    manifest: {
+      name: "Dasturchi qo'llanmalari",
+      short_name: "Qo'llanmalar",
+      description: "Rasmiy hujjatlar asosida yozilgan o'zbekcha qo'llanmalar: Symfony, Laravel, Vue, React, Next.js, Angular, Arxitektura.",
+      lang: 'uz',
+      dir: 'ltr',
+      display: 'standalone',
+      orientation: 'any',
+      theme_color: '#0f1218',
+      background_color: '#0f1218',
+      categories: ['education', 'books', 'developer'],
+      icons: [
+        { src: 'pwa/icon-192.png', sizes: '192x192', type: 'image/png' },
+        { src: 'pwa/icon-512.png', sizes: '512x512', type: 'image/png' },
+        { src: 'pwa/icon-maskable-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' },
+      ],
+    },
+    workbox: {
+      globPatterns: [
+        'index.html',
+        'assets/index-*.{js,css}',
+        'assets/search-index-*.js',
+        'favicon*.svg',
+        'symfony-logo.svg',
+        'pwa/*.{png,svg}',
+      ],
+      navigateFallback: 'index.html',
+      cleanupOutdatedCaches: true,
+      runtimeCaching: [
+        {
+          // Boblar: nomida hash bor — o'zgarmaydi, keshdan darhol beriladi
+          urlPattern: ({ url, sameOrigin }) => sameOrigin && /\/assets\/.+\.js$/.test(url.pathname),
+          handler: 'CacheFirst',
+          options: {
+            cacheName: 'boblar',
+            expiration: { maxEntries: 600, maxAgeSeconds: 60 * 60 * 24 * 180 },
+            cacheableResponse: { statuses: [200] },
+          },
+        },
+      ],
+    },
+    devOptions: { enabled: false },
+  })
+}
+
 export default defineConfig({
   // GitHub Pages uchun: BASE_PATH=/docs-web/ npm run build
   base: process.env.BASE_PATH ?? '/',
-  plugins: [vue(), markdownWatcher()],
+  plugins: [vue(), markdownWatcher(), pwa()],
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),

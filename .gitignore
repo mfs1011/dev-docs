@@ -4,6 +4,7 @@ src/content/
 src/content.tmp/
 src/content.tmp-*/
 src/manifest.json
+src/search-index.json
 content-repo/
 .DS_Store
 *.log

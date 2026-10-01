@@ -14,12 +14,21 @@ const router = useRouter()
 const term = ref('')
 const input = ref(null)
 
+/** Qidiruv indeksi alohida chunk — faqat qidiruv birinchi ochilganda yuklanadi */
+const searchIndex = ref(null)
+
+async function loadIndex() {
+  if (searchIndex.value) return
+  searchIndex.value = (await import('@/search-index.json')).default
+}
+
 const index = computed(() => {
+  if (!searchIndex.value) return []
+
   const book = findBook(props.bookId)
+  if (book) return searchIndex.value[book.id] ?? []
 
-  if (book) return book.searchIndex
-
-  return books.flatMap((item) => item.searchIndex)
+  return books.flatMap((item) => searchIndex.value[item.id] ?? [])
 })
 
 const results = computed(() => {
@@ -35,6 +44,7 @@ watch(
   () => props.open,
   async (isOpen) => {
     if (!isOpen) return
+    loadIndex()
     term.value = ''
     await nextTick()
     input.value?.focus()

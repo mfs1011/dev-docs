@@ -5,6 +5,7 @@ import AppSidebar from '@/components/AppSidebar.vue'
 import BookMark from '@/components/BookMark.vue'
 import SearchDialog from '@/components/SearchDialog.vue'
 import ThemeToggle from '@/components/ThemeToggle.vue'
+import UpdatePrompt from '@/components/UpdatePrompt.vue'
 import { applyBookFavicon, applyBookTheme, bookIdFromRoute, docsUpdatedAt, findBook, formatDate } from '@/docs'
 
 const route = useRoute()
@@ -98,5 +99,6 @@ onUnmounted(() => window.removeEventListener('keydown', onKeydown))
         <RouterView v-else :key="route.path" />
 
         <SearchDialog :open="searchOpen" :book-id="activeBookId" @close="searchOpen = false" />
+        <UpdatePrompt />
     </div>
 </template>

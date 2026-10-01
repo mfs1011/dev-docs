@@ -14,6 +14,11 @@ const page = shallowRef(null)
 const headings = ref([])
 const activeId = ref('')
 const error = ref('')
+/** 'offline' | 'stale' | 'other' — xato turi, foydalanuvchiga tushunarli xabar uchun */
+const errorKind = ref('')
+
+// Brauzerlar dinamik import xatosini turlicha yozadi (Chrome, Firefox, Safari)
+const CHUNK_ERROR = /dynamically imported module|Importing a module script failed|error loading dynamically/i
 const article = ref(null)
 const bookTitle = ref('')
 const bookVersion = ref('')
@@ -383,6 +388,7 @@ async function load() {
   stopTracking()
   layoutObserver?.disconnect()
   error.value = ''
+  errorKind.value = ''
   const current = findPage(route.path)
 
   if (!current) {
@@ -404,6 +410,9 @@ async function load() {
     const source = await loadSource(current)
     html.value = renderMarkdown(source)
   } catch (cause) {
+    const isChunkError = CHUNK_ERROR.test(String(cause?.message))
+    // Offline va bob hali keshda yo'q / onlayn, lekin fayl serverda yo'q (yangi deploy) / boshqa
+    errorKind.value = isChunkError ? ((await isReachable()) ? 'stale' : 'offline') : 'other'
     error.value = cause.message
     html.value = ''
 
@@ -432,6 +441,26 @@ async function load() {
     scrollToMark('instant')
   } else if (route.hash) {
     document.querySelector(route.hash)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
+}
+
+const reloadPage = () => window.location.reload()
+
+/**
+ * Server haqiqatan javob beradimi. navigator.onLine ga ishonib bo'lmaydi:
+ * Wi-Fi bor, internet yo'q bo'lsa ham u `true`. So'rov parametri bilan —
+ * service worker keshidan emas, tarmoqdan.
+ */
+async function isReachable() {
+  if (!navigator.onLine) return false
+
+  try {
+    const url = `${import.meta.env.BASE_URL}index.html?ping=${Date.now()}`
+    const response = await fetch(url, { method: 'HEAD', cache: 'no-store' })
+
+    return response.ok
+  } catch {
+    return false
   }
 }
 
@@ -465,8 +494,20 @@ onBeforeUnmount(() => {
             </div>
 
             <div v-if="error" class="doc-error">
-                <h1>Xatolik</h1>
-                <p>{{ error }}</p>
+                <template v-if="errorKind === 'offline'">
+                    <h1>Bu bob hali offline saqlanmagan</h1>
+                    <p>Internet yo'q, bu bob esa avval ochilmagan. Internetga ulanganda bir marta oching — keyin u internetsiz ham ochiladi.</p>
+                    <button type="button" class="doc-error-retry" @click="load">Qayta urinish</button>
+                </template>
+                <template v-else-if="errorKind === 'stale'">
+                    <h1>Yangi versiya chiqqan</h1>
+                    <p>Qo'llanmalar yangilangan, ochiq sahifa esa eski versiyada. Sahifani yangilang.</p>
+                    <button type="button" class="doc-error-retry" @click="reloadPage">Sahifani yangilash</button>
+                </template>
+                <template v-else>
+                    <h1>Xatolik</h1>
+                    <p>{{ error }}</p>
+                </template>
                 <RouterLink to="/">Mundarijaga qaytish</RouterLink>
             </div>
 

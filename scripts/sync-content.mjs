@@ -259,7 +259,12 @@ async function collectBook(book, staging) {
     })
   }
 
-  const sections = buildSections(book, pages)
+  // Sidebar sarlavhalarni ishlatmaydi (o'ng mundarija ularni sahifaning o'zidan oladi) —
+  // asosiy bundle'ni yengil saqlash uchun ular faqat qidiruv indeksiga yoziladi
+  const sections = buildSections(book, pages).map((section) => ({
+    ...section,
+    items: section.items.map(({ headings, ...item }) => item),
+  }))
   const updatedAt = pages.map((page) => page.updatedAt).sort().at(-1) ?? null
 
   return {
@@ -341,7 +346,12 @@ async function main() {
     books: collected,
   }
 
+  // Qidiruv indeksi alohida fayl: asosiy bundle'ga kirmaydi, qidiruv birinchi ochilganda yuklanadi
+  const searchIndex = Object.fromEntries(collected.map((book) => [book.id, book.searchIndex]))
+  for (const book of collected) delete book.searchIndex
+
   await writeFile(join(ROOT, 'src', 'manifest.json'), JSON.stringify(manifest, null, 2), 'utf8')
+  await writeFile(join(ROOT, 'src', 'search-index.json'), JSON.stringify(searchIndex), 'utf8')
 
   for (const book of collected) {
     console.log(
