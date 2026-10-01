@@ -94,7 +94,7 @@ Kalitda **barcha** o'zgaruvchilar bo'lsin: `price:{productId}:{currency}:{custom
 | Qatlam | Backend | Frontend |
 | --- | --- | --- |
 | Ilova keshi | Symfony Cache (teglar, stampede himoyasi — probabilistik erta qayta hisoblash) — [Symfony 28-bob](../symfony/28-cache-lock-httpclient.md); Laravel `Cache::remember`, `Cache::flexible` (stale-while-revalidate), teglar — [Laravel 27-bob](../laravel/27-kesh-va-fayllar.md) | — |
-| HTTP kesh | Symfony HttpCache, `Cache-Control` — [Symfony 33-bob](../symfony/33-unumdorlik.md) | Brauzer, CDN (65-bob) |
+| HTTP kesh | Symfony HttpCache, `Cache-Control` sarlavhalari | Brauzer, CDN (65-bob) |
 | Server render keshi | — | Next.js kesh qatlamlari va revalidatsiya — [Next.js 18](../nextjs/18-kesh.md), [19-bob](../nextjs/19-revalidatsiya.md); Angular transfer cache — [Angular 62-bob](../angular/62-ssr-asoslari.md) |
 | Klient so'rov keshi | — | TanStack Query — [React 32-bob](../react/32-tanstack-query.md); Pinia'da qo'lda — [Vue 43-bob](../vue/43-pinia-chuqur.md) |
 

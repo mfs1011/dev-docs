@@ -131,21 +131,21 @@ Qo'llanma quyidagi manbalarga tayanadi va ularga havola qiladi:
 
 | № | Bob | Nima o'rganasiz |
 | --- | --- | --- |
-| 53 | API shartnomasi kimniki *(tayyorlanmoqda)* | Kim loyihalaydi, qanday kelishiladi, kim buzsa nima bo'ladi |
-| 54 | Shartnoma birinchi: OpenAPI va kod generatsiyasi *(tayyorlanmoqda)* | Sxemadan backend validatsiya va frontend tiplari, drift oldini olish |
-| 55 | REST dizayni *(tayyorlanmoqda)* | Resurslar, status kodlar, xato formati (RFC 9457) |
-| 56 | GraphQL *(tayyorlanmoqda)* | Qachon foyda, qachon zarar; N+1, kesh, ruxsatlar |
-| 57 | gRPC va RPC uslubi *(tayyorlanmoqda)* | Ichki servislar orasida, brauzer cheklovlari |
-| 58 | Versiyalash va orqaga moslik *(tayyorlanmoqda)* | URL/header versiyalash, deprecation siyosati |
-| 59 | Xato modeli: serverdan UI gacha *(tayyorlanmoqda)* | Kod, xabar, maydon xatolari, foydalanuvchiga tarjima |
-| 60 | Autentifikatsiya oqimlari *(tayyorlanmoqda)* | Sessiya vs token, OAuth 2.1, OIDC, SSO |
-| 61 | Access va refresh tokenlar *(tayyorlanmoqda)* | Muddat, rotation, saqlash joyi, bekor qilish |
-| 62 | Avtorizatsiya *(tayyorlanmoqda)* | RBAC/ABAC, qaror qayerda qabul qilinadi, UI va server mas'uliyati |
-| 63 | Fayl yuklash oqimi *(tayyorlanmoqda)* | Presigned URL, progress, validatsiya, virus tekshiruvi |
-| 64 | Real vaqt *(tayyorlanmoqda)* | WebSocket, SSE, polling — tanlov mezonlari |
-| 65 | Kesh kelishuvi *(tayyorlanmoqda)* | HTTP kesh, ETag, CDN, klient keshi — kim nimani keshlaydi |
-| 66 | Ro'yxat shartnomasi *(tayyorlanmoqda)* | Pagination (offset/cursor), filtr, saralash, qidiruv |
-| 67 | Cheklovlar shartnomasi *(tayyorlanmoqda)* | 429, Retry-After, kvota sarlavhalari, klientda backoff va UX |
+| 53 | [API shartnomasi kimniki](53-api-shartnoma.md) | Kim loyihalaydi, qanday kelishiladi, kim buzsa nima bo'ladi |
+| 54 | [Shartnoma birinchi: OpenAPI va kod generatsiyasi](54-openapi.md) | Sxemadan backend validatsiya va frontend tiplari, drift oldini olish |
+| 55 | [REST dizayni](55-rest.md) | Resurslar, status kodlar, xato formati (RFC 9457) |
+| 56 | [GraphQL](56-graphql.md) | Qachon foyda, qachon zarar; N+1, kesh, ruxsatlar |
+| 57 | [gRPC va RPC uslubi](57-grpc.md) | Ichki servislar orasida, brauzer cheklovlari |
+| 58 | [Versiyalash va orqaga moslik](58-versiyalash.md) | URL/header versiyalash, deprecation siyosati |
+| 59 | [Xato modeli: serverdan UI gacha](59-xato-modeli-ui.md) | Kod, xabar, maydon xatolari, foydalanuvchiga tarjima |
+| 60 | [Autentifikatsiya oqimlari](60-autentifikatsiya.md) | Sessiya vs token, OAuth 2.1, OIDC, SSO |
+| 61 | [Access va refresh tokenlar](61-tokenlar.md) | Muddat, rotation, saqlash joyi, bekor qilish |
+| 62 | [Avtorizatsiya](62-avtorizatsiya.md) | RBAC/ABAC, qaror qayerda qabul qilinadi, UI va server mas'uliyati |
+| 63 | [Fayl yuklash oqimi](63-fayl-yuklash.md) | Presigned URL, progress, validatsiya, virus tekshiruvi |
+| 64 | [Real vaqt](64-real-vaqt.md) | WebSocket, SSE, polling — tanlov mezonlari |
+| 65 | [Kesh kelishuvi](65-kesh-kelishuvi.md) | HTTP kesh, ETag, CDN, klient keshi — kim nimani keshlaydi |
+| 66 | [Ro'yxat shartnomasi](66-royxat-shartnomasi.md) | Pagination (offset/cursor), filtr, saralash, qidiruv |
+| 67 | [Cheklovlar shartnomasi](67-cheklovlar.md) | 429, Retry-After, kvota sarlavhalari, klientda backoff va UX |
 
 ## VI qism — Ma'lumot va integratsiya (68–74)
 
