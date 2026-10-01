@@ -163,16 +163,16 @@ Qo'llanma quyidagi manbalarga tayanadi va ularga havola qiladi:
 
 | № | Bob | Nima o'rganasiz |
 | --- | --- | --- |
-| 75 | Kuzatuvchanlik *(tayyorlanmoqda)* | Log, metrika, trace — uchala qatlamda, correlation ID |
-| 76 | Xavfsizlik arxitekturasi *(tayyorlanmoqda)* | Tahdid modeli, ishonch chegaralari, sirlar boshqaruvi |
-| 77 | API xavfsizligi *(tayyorlanmoqda)* | OWASP API Top 10: BOLA, ommaviy tayinlash, resurs iste'moli |
-| 78 | Unumdorlik arxitekturasi *(tayyorlanmoqda)* | O'lchash, byudjet, yuk testi, bottleneck tahlili |
-| 79 | Ishonchlilik *(tayyorlanmoqda)* | SLO, timeout, retry, circuit breaker, bulkhead |
-| 80 | Deploy arxitekturasi *(tayyorlanmoqda)* | Muhitlar, feature flag, canary, rollback |
-| 81 | Jamoa va Conway qonuni *(tayyorlanmoqda)* | Tuzilma arxitekturaga qanday ta'sir qiladi |
-| 82 | Legacy bilan ishlash *(tayyorlanmoqda)* | Strangler fig, bosqichma-bosqich ko'chirish, "katta qayta yozish" tuzog'i |
-| 83 | Evolyutsion arxitektura *(tayyorlanmoqda)* | Fitness function, arxitektura testlari, qarorlarni qayta ko'rib chiqish |
-| 84 | Qaror qabul qilish *(tayyorlanmoqda)* | Trade-off tahlili, ADR yozish, hech narsa qilmaslik ham qaror |
+| 75 | [Kuzatuvchanlik](75-kuzatuvchanlik.md) | Log, metrika, trace — uchala qatlamda, correlation ID |
+| 76 | [Xavfsizlik arxitekturasi](76-xavfsizlik-arxitekturasi.md) | Tahdid modeli, ishonch chegaralari, sirlar boshqaruvi |
+| 77 | [API xavfsizligi](77-api-xavfsizligi.md) | OWASP API Top 10: BOLA, ommaviy tayinlash, resurs iste'moli |
+| 78 | [Unumdorlik arxitekturasi](78-unumdorlik-arxitekturasi.md) | O'lchash, byudjet, yuk testi, bottleneck tahlili |
+| 79 | [Ishonchlilik](79-ishonchlilik.md) | SLO, timeout, retry, circuit breaker, bulkhead |
+| 80 | [Deploy arxitekturasi](80-deploy-arxitekturasi.md) | Muhitlar, feature flag, canary, rollback |
+| 81 | [Jamoa va Conway qonuni](81-conway.md) | Tuzilma arxitekturaga qanday ta'sir qiladi |
+| 82 | [Legacy bilan ishlash](82-legacy.md) | Strangler fig, bosqichma-bosqich ko'chirish, "katta qayta yozish" tuzog'i |
+| 83 | [Evolyutsion arxitektura](83-evolyutsion-arxitektura.md) | Fitness function, arxitektura testlari, qarorlarni qayta ko'rib chiqish |
+| 84 | [Qaror qabul qilish](84-qaror-qabul-qilish.md) | Trade-off tahlili, ADR yozish, hech narsa qilmaslik ham qaror |
 
 ## VIII qism — AI davrida arxitektura (85–89)
 
