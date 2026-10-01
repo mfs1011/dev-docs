@@ -117,10 +117,12 @@ export function applyBookTheme(book) {
 
   const dark = root.dataset.theme === 'dark'
   const accent = dark ? book.accentDark ?? book.accent : book.accent
+  // Brend rangi fonda o'qilmasa (kontrast < 4.5:1), havola matni uchun rasmiy palitradagi boshqa rang
+  const text = (dark ? book.accentTextDark : book.accentText) ?? accent
 
   if (accent) {
     root.style.setProperty('--accent', accent)
-    root.style.setProperty('--accent-text', accent)
+    root.style.setProperty('--accent-text', text)
     // Yumshoq fon (aktiv bob, nishon) ham kitob rangidan — aks holda hamma joyda sukut yashil
     root.style.setProperty('--accent-soft', `color-mix(in srgb, ${accent} ${dark ? 18 : 11}%, var(--bg))`)
   }

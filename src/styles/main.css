@@ -892,15 +892,10 @@ a:hover { text-decoration: underline; }
 
 .laravel-mark { flex: none; display: block; fill: #ff2d20; }
 
-.react-mark { flex: none; display: block; fill: #0b7fa0; stroke: #0b7fa0; }
+.react-mark { flex: none; display: block; fill: #087ea4; stroke: #087ea4; }
 :root[data-theme="dark"] .react-mark { fill: #58c4dc; stroke: #58c4dc; }
 
 .angular-mark { flex: none; display: block; }
-.angular-mark .angular-mark-shield { fill: #c3002f; }
-.angular-mark .angular-mark-letter { fill: #fff; }
-
-:root[data-theme="dark"] .angular-mark .angular-mark-shield { fill: #ff7a92; }
-:root[data-theme="dark"] .angular-mark .angular-mark-letter { fill: #17131a; }
 
 .arch-mark { flex: none; display: block; }
 .arch-mark .arch-mark-top { fill: #5b4bd6; }
@@ -917,20 +912,16 @@ a:hover { text-decoration: underline; }
 :root[data-theme="dark"] .arch-mark .arch-mark-bottom { stroke: #a99bff; }
 
 .fsd-mark { flex: none; display: block; }
-.fsd-mark .fsd-mark-layer { fill: #c2410c; }
-.fsd-mark .fsd-mark-layer.is-faint { opacity: .45; }
-:root[data-theme="dark"] .fsd-mark .fsd-mark-layer { fill: #fb923c; }
 
 .next-mark { flex: none; display: block; }
-.next-mark .next-mark-disc { fill: #111; }
+.next-mark .next-mark-disc { fill: #000; }
 .next-mark .next-mark-glyph { fill: #fff; }
 :root[data-theme="dark"] .next-mark .next-mark-disc { fill: #fff; }
-:root[data-theme="dark"] .next-mark .next-mark-glyph { fill: #111; }
+:root[data-theme="dark"] .next-mark .next-mark-glyph { fill: #000; }
 
 .vue-mark { flex: none; display: block; }
 .vue-mark .vue-mark-leaf { fill: #42b883; }
 .vue-mark .vue-mark-body { fill: #35495e; }
-:root[data-theme="dark"] .vue-mark .vue-mark-body { fill: #21685a; }
 
 /* ---------- Options / Composition API almashtirgichi ---------- */
 

@@ -1,26 +1,39 @@
 <script setup>
+import { useId } from 'vue'
+
 defineProps({
   size: { type: Number, default: 30 },
 })
+
+const id = useId()
 </script>
 
 <template>
+    <!-- Rasmiy FSD logosi: feature-sliced/documentation → static/img/favicon/adaptive.svg (primary: #29BEDC → #517AED) -->
     <svg
         class="fsd-mark"
         :width="size"
         :height="size"
-        viewBox="0 0 24 24"
+        viewBox="0 0 96 96"
+        fill="none"
         role="img"
         aria-label="Feature-Sliced Design"
     >
-        <!-- Qatlamlar: app → pages → widgets → features → entities → shared; shared — poydevor -->
-        <rect class="fsd-mark-layer is-faint" x="3" y="2" width="18" height="2.6" rx="1.3" />
-        <rect class="fsd-mark-layer is-faint" x="3" y="5.8" width="18" height="2.6" rx="1.3" />
-        <rect class="fsd-mark-layer" x="3" y="9.6" width="8.4" height="2.6" rx="1.3" />
-        <rect class="fsd-mark-layer" x="12.6" y="9.6" width="8.4" height="2.6" rx="1.3" />
-        <rect class="fsd-mark-layer" x="3" y="13.4" width="5.2" height="2.6" rx="1.3" />
-        <rect class="fsd-mark-layer" x="9.4" y="13.4" width="5.2" height="2.6" rx="1.3" />
-        <rect class="fsd-mark-layer" x="15.8" y="13.4" width="5.2" height="2.6" rx="1.3" />
-        <rect class="fsd-mark-layer" x="3" y="18.2" width="18" height="3.8" rx="1.3" />
+        <g :fill="`url(#${id}-g)`">
+            <path d="M14 2H82V10H14V2Z" />
+            <path d="M14 14H82V22H14V14Z" />
+            <path d="M14 26H46V34H14V26Z" />
+            <path d="M14 38H82V46H14V38Z" />
+            <path d="M14 50H82V58H14V50Z" />
+            <path d="M14 62H46V70H14V62Z" />
+            <path d="M14 74H46V82H14V74Z" />
+            <path d="M14 86H46V94H14V86Z" />
+        </g>
+        <defs>
+            <linearGradient :id="`${id}-g`" x1="14" y1="2" x2="101.951" y2="67.0073" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#29BEDC" />
+                <stop offset="1" stop-color="#517AED" />
+            </linearGradient>
+        </defs>
     </svg>
 </template>

@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="-13 -12 26 24">
     <style>
-        .react-dot { fill: #0b7fa0; }
-        .react-rings { fill: none; stroke: #0b7fa0; stroke-width: 1.1; }
+        .react-dot { fill: #087ea4; }
+        .react-rings { fill: none; stroke: #087ea4; stroke-width: 1.1; }
         @media (prefers-color-scheme: dark) {
             .react-dot { fill: #58c4dc; }
             .react-rings { stroke: #58c4dc; }

@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180">
     <style>
-        .next-disc { fill: #111; }
+        .next-disc { fill: #000; }
         .next-glyph { fill: #fff; }
         @media (prefers-color-scheme: dark) {
             .next-disc { fill: #fff; }
-            .next-glyph { fill: #111; }
+            .next-glyph { fill: #000; }
         }
     </style>
     <mask id="m" style="mask-type: alpha">

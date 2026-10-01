@@ -274,6 +274,8 @@ async function collectBook(book, staging) {
     logo: book.logo ?? null,
     accent: book.accent ?? null,
     accentDark: book.accentDark ?? null,
+    accentText: book.accentText ?? null,
+    accentTextDark: book.accentTextDark ?? null,
     variants: book.variants ?? null,
     versionLabel: book.versionLabel ?? book.title,
     version: await readVersion(book, sourceDir),

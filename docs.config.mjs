@@ -11,8 +11,11 @@ export const books = [
     subtitle: 'HTTP, Doctrine, API va deploy',
     dir: 'symfony',
     logo: 'symfony',
-    accent: '#0b6e4f',
-    accentDark: '#4cc79a',
+    // Symfony logosi qora/oq; havolalar — symfony.com --link-color (blue-600 / blue-300)
+    accent: '#000000',
+    accentDark: '#ffffff',
+    accentText: '#2563eb',
+    accentTextDark: '#93c5fd',
     versionLabel: 'Symfony',
     versionRow: /^\|\s*Symfony\s*\|\s*([^|]+)\|/m,
     groups: [
@@ -34,8 +37,10 @@ export const books = [
     subtitle: 'Symfony dasturchilari uchun',
     dir: 'laravel',
     logo: 'laravel',
-    accent: '#b5331f',
-    accentDark: '#ff7a5c',
+    // Laravel logomark #FF2D20; havolalar — laravel.com --color-laravel-red-darkened
+    accent: '#ff2d20',
+    accentDark: '#ff2d20',
+    accentText: '#c42602',
     versionLabel: 'Laravel',
     versionRow: /^\|\s*Laravel Framework\s*\|\s*([^|]+)\|/m,
     groups: [
@@ -54,8 +59,10 @@ export const books = [
     subtitle: 'reaktivlik, komponentlar, Pinia va Nuxt',
     dir: 'vue',
     logo: 'vue',
-    accent: '#35845f',
-    accentDark: '#42d392',
+    // Vue brend yashili #42B883; havolalar — vuejs.org --vt-c-green-darker (oq fonda o'qilishi uchun)
+    accent: '#42b883',
+    accentDark: '#42b883',
+    accentText: '#155f3e',
     versionLabel: 'Vue',
     versionRow: /^\|\s*Vue\s*\|\s*([^|]+)\|/m,
     // Options / Composition API almashtirgichi shu kitobda ko'rinadi
@@ -86,8 +93,10 @@ export const books = [
     subtitle: 'hooklar, holat va ilova arxitekturasi',
     dir: 'react',
     logo: 'react',
-    accent: '#0b7fa0',
+    // react.dev: logo #58C4DC, yorug' rejimdagi havola #087EA4
+    accent: '#58c4dc',
     accentDark: '#58c4dc',
+    accentText: '#087ea4',
     versionLabel: 'React',
     versionRow: /^\|\s*React\s*\|\s*([^|]+)\|/m,
     variants: {
@@ -114,8 +123,11 @@ export const books = [
     subtitle: 'App Router, RSC, auth va deploy',
     dir: 'nextjs',
     logo: 'nextjs',
-    accent: '#1f2933',
-    accentDark: '#e6e6e6',
+    // Next.js logosi qora/oq; havolalar — nextjs.org ko'k (ds-blue-900)
+    accent: '#000000',
+    accentDark: '#ffffff',
+    accentText: '#0068d6',
+    accentTextDark: '#52a8ff',
     versionLabel: 'Next.js',
     versionRow: /^\|\s*Next\.js\s*\|\s*([^|]+)\|/m,
     variants: {
@@ -143,8 +155,9 @@ export const books = [
     subtitle: 'signallar, DI va production',
     dir: 'angular',
     logo: 'angular',
-    accent: '#c3002f',
-    accentDark: '#ff7a92',
+    // Rasmiy Angular logosi gradientining ranglari (#E40035 … #FF31D9)
+    accent: '#e40035',
+    accentDark: '#ff31d9',
     versionLabel: 'Angular',
     versionRow: /^\|\s*@angular\/core\s*\|\s*([^|]+)\|/m,
     groups: [
@@ -191,8 +204,10 @@ export const books = [
     subtitle: 'Feature-Sliced Design: qoidalar va tayyor shablonlar',
     dir: 'fsd',
     logo: 'fsd',
-    accent: '#c2410c',
-    accentDark: '#fb923c',
+    // FSD flat logo #3193FF, primary gradient #29BEDC; oq fonda matn — #3193FF'ning 20% to'qroq varianti (palitrada o'qiladigan rang yo'q)
+    accent: '#3193ff',
+    accentDark: '#29bedc',
+    accentText: '#2776cc',
     versionLabel: 'FSD',
     versionRow: /^\|\s*Feature-Sliced Design\s*\|\s*([^|]+)\|/m,
     // Kod misollari bitta framework'da ko'rinadi — tanlov sidebar'da
