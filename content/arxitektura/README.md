@@ -123,9 +123,9 @@ Qo'llanma quyidagi manbalarga tayanadi va ularga havola qiladi:
 | 47 | [Unumdorlik byudjetlari](47-unumdorlik-byudjetlari.md) | Core Web Vitals, bundle, o'lchash madaniyati |
 | 48 | [Frontend xatolari va kuzatuvchanlik](48-frontend-xatolari.md) | Xato chegaralari, RUM, source map, foydalanuvchi sessiyasi |
 | 49 | [Build va yetkazib berish](49-build-va-yetkazish.md) | Bundler, chunk strategiyasi, kesh-busting, eski tablar va versiya nomuvofiqligi |
-| 50 | Mikro-frontendlar *(tayyorlanmoqda)* | Qachon kerak (kamdan-kam), qanday narx |
-| 51 | Offline va optimistik UI *(tayyorlanmoqda)* | PWA, navbat, konflikt hal qilish |
-| 52 | Frontend testlash strategiyasi *(tayyorlanmoqda)* | Nimani test qilish, E2E chegarasi |
+| 50 | [Mikro-frontendlar](50-mikro-frontendlar.md) | Qachon kerak (kamdan-kam), qanday narx |
+| 51 | [Offline va optimistik UI](51-offline-va-optimistik-ui.md) | PWA, navbat, konflikt hal qilish |
+| 52 | [Frontend testlash strategiyasi](52-frontend-testlash.md) | Nimani test qilish, E2E chegarasi |
 
 ## V qism — Kesishma: shartnoma va integratsiya (53–67)
 
