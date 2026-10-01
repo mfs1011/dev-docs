@@ -110,6 +110,7 @@ export function applyBookTheme(book) {
   if (!book) {
     root.style.removeProperty('--accent')
     root.style.removeProperty('--accent-text')
+    root.style.removeProperty('--accent-soft')
 
     return
   }
@@ -120,5 +121,7 @@ export function applyBookTheme(book) {
   if (accent) {
     root.style.setProperty('--accent', accent)
     root.style.setProperty('--accent-text', accent)
+    // Yumshoq fon (aktiv bob, nishon) ham kitob rangidan — aks holda hamma joyda sukut yashil
+    root.style.setProperty('--accent-soft', `color-mix(in srgb, ${accent} ${dark ? 18 : 11}%, var(--bg))`)
   }
 }

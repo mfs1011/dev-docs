@@ -185,4 +185,35 @@ export const books = [
     ],
     folders: [],
   },
+  {
+    id: 'fsd',
+    title: 'FSD',
+    subtitle: 'Feature-Sliced Design: qoidalar va tayyor shablonlar',
+    dir: 'fsd',
+    logo: 'fsd',
+    accent: '#c2410c',
+    accentDark: '#fb923c',
+    versionLabel: 'FSD',
+    versionRow: /^\|\s*Feature-Sliced Design\s*\|\s*([^|]+)\|/m,
+    // Kod misollari bitta framework'da ko'rinadi — tanlov sidebar'da
+    variants: {
+      group: 'fw',
+      label: 'Framework',
+      options: [
+        { value: 'react', label: 'React', title: 'React misollari' },
+        { value: 'vue', label: 'Vue', title: 'Vue misollari' },
+        { value: 'angular', label: 'Angular', title: 'Angular misollari' },
+      ],
+    },
+    groups: [
+      { title: 'I — Asoslar', from: 1, to: 6 },
+      { title: 'II — Qatlamlar chuqur', from: 7, to: 13 },
+      { title: 'III — Chegaralar va bog\'lanish', from: 14, to: 19 },
+      { title: 'IV — Tipik vazifalar', from: 20, to: 26 },
+      { title: 'V — Framework shablonlari', from: 27, to: 32 },
+      { title: 'VI — Asboblar va jamoa', from: 33, to: 36 },
+      { title: 'VII — Amaliyot', from: 37, to: 40 },
+    ],
+    folders: [],
+  },
 ]

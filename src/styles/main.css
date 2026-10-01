@@ -916,6 +916,11 @@ a:hover { text-decoration: underline; }
 :root[data-theme="dark"] .arch-mark .arch-mark-mid,
 :root[data-theme="dark"] .arch-mark .arch-mark-bottom { stroke: #a99bff; }
 
+.fsd-mark { flex: none; display: block; }
+.fsd-mark .fsd-mark-layer { fill: #c2410c; }
+.fsd-mark .fsd-mark-layer.is-faint { opacity: .45; }
+:root[data-theme="dark"] .fsd-mark .fsd-mark-layer { fill: #fb923c; }
+
 .next-mark { flex: none; display: block; }
 .next-mark .next-mark-disc { fill: #111; }
 .next-mark .next-mark-glyph { fill: #fff; }
@@ -962,7 +967,10 @@ a:hover { text-decoration: underline; }
 :root[data-api="composition"] .api-variant[data-variant="options"],
 :root[data-api="options"] .api-variant[data-variant="composition"],
 :root[data-lang="ts"] .api-variant[data-variant="js"],
-:root[data-lang="js"] .api-variant[data-variant="ts"] { display: none; }
+:root[data-lang="js"] .api-variant[data-variant="ts"],
+:root[data-fw="react"] .api-variant:is([data-variant="vue"], [data-variant="angular"]),
+:root[data-fw="vue"] .api-variant:is([data-variant="react"], [data-variant="angular"]),
+:root[data-fw="angular"] .api-variant:is([data-variant="react"], [data-variant="vue"]) { display: none; }
 
 .api-variant > :first-child { margin-top: 0; }
 .api-variant > :last-child { margin-bottom: 0; }

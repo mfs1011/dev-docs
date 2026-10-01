@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <style>
+        .l { fill: #c2410c; }
+        .f { opacity: .45; }
+        @media (prefers-color-scheme: dark) {
+            .l { fill: #fb923c; }
+        }
+    </style>
+    <rect class="l f" x="3" y="2" width="18" height="2.6" rx="1.3"/>
+    <rect class="l f" x="3" y="5.8" width="18" height="2.6" rx="1.3"/>
+    <rect class="l" x="3" y="9.6" width="8.4" height="2.6" rx="1.3"/>
+    <rect class="l" x="12.6" y="9.6" width="8.4" height="2.6" rx="1.3"/>
+    <rect class="l" x="3" y="13.4" width="5.2" height="2.6" rx="1.3"/>
+    <rect class="l" x="9.4" y="13.4" width="5.2" height="2.6" rx="1.3"/>
+    <rect class="l" x="15.8" y="13.4" width="5.2" height="2.6" rx="1.3"/>
+    <rect class="l" x="3" y="18.2" width="18" height="3.8" rx="1.3"/>
+</svg>

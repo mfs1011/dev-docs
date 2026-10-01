@@ -6,6 +6,7 @@ import ReactMark from '@/components/ReactMark.vue'
 import NextMark from '@/components/NextMark.vue'
 import ArchMark from '@/components/ArchMark.vue'
 import AngularMark from '@/components/AngularMark.vue'
+import FsdMark from '@/components/FsdMark.vue'
 
 defineProps({
   book: { type: String, required: true },
@@ -21,6 +22,7 @@ defineProps({
     <NextMark v-else-if="book === 'nextjs'" :size="size" />
     <AngularMark v-else-if="book === 'angular'" :size="size" />
     <ArchMark v-else-if="book === 'arxitektura'" :size="size" />
+    <FsdMark v-else-if="book === 'fsd'" :size="size" />
     <span v-else class="book-mark-fallback" :style="{ width: `${size}px`, height: `${size}px` }">
         {{ book.slice(0, 2).toUpperCase() }}
     </span>

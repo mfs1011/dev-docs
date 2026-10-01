@@ -105,7 +105,8 @@ const md = new MarkdownIt({
 })
 
 /**
- * Variant bloklari: `::: options` / `::: composition` (Vue) va `::: js` / `::: ts` (React, Next).
+ * Variant bloklari: `::: options` / `::: composition` (Vue), `::: js` / `::: ts` (React, Next)
+ * va `::: react` / `::: vue` / `::: angular` (FSD — framework tanlagich).
  * Blok ichidagi markdown odatdagidek ishlanadi, tashqarisiga guruh va variant atributlari
  * bo'lgan div o'raladi. Markdown fayl toza qoladi: GitHub'da ham o'qilaveradi.
  */
@@ -114,6 +115,9 @@ const VARIANT_GROUPS = {
   composition: 'api',
   js: 'lang',
   ts: 'lang',
+  react: 'fw',
+  vue: 'fw',
+  angular: 'fw',
 }
 
 function apiVariants(mdInstance) {

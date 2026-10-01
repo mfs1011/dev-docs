@@ -71,7 +71,7 @@ function pwa() {
     manifest: {
       name: "Dasturchi qo'llanmalari",
       short_name: "Qo'llanmalar",
-      description: "Rasmiy hujjatlar asosida yozilgan o'zbekcha qo'llanmalar: Symfony, Laravel, Vue, React, Next.js, Angular, Arxitektura.",
+      description: "Rasmiy hujjatlar asosida yozilgan o'zbekcha qo'llanmalar: Symfony, Laravel, Vue, React, Next.js, Angular, Arxitektura, FSD.",
       lang: 'uz',
       dir: 'ltr',
       display: 'standalone',
