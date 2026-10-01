@@ -188,8 +188,8 @@ Qo'llanma quyidagi manbalarga tayanadi va ularga havola qiladi:
 
 | № | Bob | Nima o'rganasiz |
 | --- | --- | --- |
-| 90 | Amaliy keys: to'liq tizim *(tayyorlanmoqda)* | E-commerce misolida barcha qarorlar ketma-ketligi |
-| 91 | Checklist *(tayyorlanmoqda)* | Loyiha boshlanishi, ko'rik, reliz uchun ro'yxatlar |
+| 90 | [Amaliy keys: to'liq tizim](90-amaliy-keys.md) | E-commerce misolida barcha qarorlar ketma-ketligi |
+| 91 | [Checklist](91-checklist.md) | Loyiha boshlanishi, ko'rik, reliz uchun ro'yxatlar |
 
 ---
 
