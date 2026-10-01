@@ -151,13 +151,13 @@ Qo'llanma quyidagi manbalarga tayanadi va ularga havola qiladi:
 
 | № | Bob | Nima o'rganasiz |
 | --- | --- | --- |
-| 68 | Model mos kelmasligi *(tayyorlanmoqda)* | Domen modeli ≠ API modeli ≠ UI modeli |
-| 69 | BFF va API gateway *(tayyorlanmoqda)* | Qachon kerak, qayerda joylashadi, kim egalik qiladi |
-| 70 | Idempotentlik *(tayyorlanmoqda)* | Takroriy so'rov, to'lov, idempotency key |
-| 71 | Migratsiya va nol to'xtovli deploy *(tayyorlanmoqda)* | Expand/contract, ikki tomonlama moslik |
-| 72 | Uchinchi tomon integratsiyalari *(tayyorlanmoqda)* | Webhook, retry, imzo tekshiruvi, sandbox |
-| 73 | Ko'p platformalilik *(tayyorlanmoqda)* | Web, mobil, umumiy kontrakt va farqlar |
-| 74 | Monorepo va kod ulashish *(tayyorlanmoqda)* | Nx/Turborepo, umumiy paketlar, chegaralarni majburlash, qachon polirepo |
+| 68 | [Model mos kelmasligi](68-model-mos-kelmasligi.md) | Domen modeli ≠ API modeli ≠ UI modeli |
+| 69 | [BFF va API gateway](69-bff.md) | Qachon kerak, qayerda joylashadi, kim egalik qiladi |
+| 70 | [Idempotentlik](70-idempotentlik.md) | Takroriy so'rov, to'lov, idempotency key |
+| 71 | [Migratsiya va nol to'xtovli deploy](71-nol-toxtovli-deploy.md) | Expand/contract, ikki tomonlama moslik |
+| 72 | [Uchinchi tomon integratsiyalari](72-integratsiyalar.md) | Webhook, retry, imzo tekshiruvi, sandbox |
+| 73 | [Ko'p platformalilik](73-kop-platformalilik.md) | Web, mobil, umumiy kontrakt va farqlar |
+| 74 | [Monorepo va kod ulashish](74-monorepo.md) | Nx/Turborepo, umumiy paketlar, chegaralarni majburlash, qachon polirepo |
 
 ## VII qism — Sifat, ish va rivojlanish (75–84)
 
