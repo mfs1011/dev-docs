@@ -23,6 +23,8 @@ Qo'shimcha qoidalar:
 - Slice'li qatlamlarda segment uchun alohida `index.ts` **shart emas** — slice'ning bitta `index.ts`'i yetarli.
 - Hamma segment majburiy emas: ko'p sahifada faqat `ui` va `api` bo'ladi.
 
+> **Steiger bu qoidani qat'iy tekshiradi.** `fsd/segments-by-purpose` qoidasi (tavsiya etilgan sozlamada yoqiq) quyidagi segment nomlarini xato deydi: `components`, `helpers`, `utils`, `constants`, `types`, `store`/`stores`, `modals`, `services`, `enums`, `interfaces`, `schemas`, `handlers`, `middlewares`, `validators`, `resolvers`, `mutations`, `assets`; React'dan `hooks`, `context`, `providers`; Vue'dan `composables`, `directives`; Redux'dan `actions`, `reducers`, `selectors`, `effects`, `thunks`; Angular'dan `pipes` (steiger-plugin 0.8.0, real loyihada tekshirilgan). Diqqat: rasmiy hujjat `app/store` va `app/providers`'ni odatiy deb ko'rsatadi — bu ziddiyat va yechimi 12-bobda.
+
 ## Shablon
 
 ```text

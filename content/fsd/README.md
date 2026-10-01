@@ -65,65 +65,65 @@ v2.1 tavsiyasi: avval PAGES'dan boshlang; qayta ishlatish paydo bo'lgandagina pa
 
 | # | Bob | Mazmun |
 | --- | --- | --- |
-| 07 | shared *(tayyorlanmoqda)* | UI kit, API klient, `lib` (helpers emas!), `config`, `routes`, `i18n` |
-| 08 | entities *(tayyorlanmoqda)* | Biznes obyektlari, qachon kerak emas, CRUD — `shared/api`'da |
-| 09 | features *(tayyorlanmoqda)* | "Hamma narsa feature emas", foydalanuvchi harakati, qayta ishlatish mezoni |
-| 10 | widgets *(tayyorlanmoqda)* | Katta mustaqil bloklar, ichma-ich marshrutlash, layout'lar |
-| 11 | pages *(tayyorlanmoqda)* | Sahifa slice'i, yuklanish va xato holatlari, o'xshash sahifalarni birlashtirish |
-| 12 | app *(tayyorlanmoqda)* | Entrypoint, provayderlar, marshrutlar, global stil |
-| 13 | Slice guruhlari *(tayyorlanmoqda)* | Bog'liq slice'larni papkada yig'ish — umumiy kodsiz |
+| 07 | [shared](07-shared.md) | UI kit, API klient, `lib` (helpers emas!), `config`, `routes`, `i18n` |
+| 08 | [entities](08-entities.md) | Biznes obyektlari, qachon kerak emas, CRUD — `shared/api`'da |
+| 09 | [features](09-features.md) | "Hamma narsa feature emas", foydalanuvchi harakati, qayta ishlatish mezoni |
+| 10 | [widgets](10-widgets.md) | Katta mustaqil bloklar, ichma-ich marshrutlash, layout'lar |
+| 11 | [pages](11-pages.md) | Sahifa slice'i, yuklanish va xato holatlari, o'xshash sahifalarni birlashtirish |
+| 12 | [app](12-app.md) | Entrypoint, provayderlar, marshrutlar, global stil |
+| 13 | [Slice guruhlari](13-slice-guruhlari.md) | Bog'liq slice'larni papkada yig'ish — umumiy kodsiz |
 
 ## III qism — Chegaralar va bog'lanish (14–19)
 
 | # | Bob | Mazmun |
 | --- | --- | --- |
-| 14 | Public API chuqur *(tayyorlanmoqda)* | Barrel fayllar muammolari: sikl, tree-shaking, `shared/ui` uchun alohida index |
-| 15 | Cross-import va `@x` *(tayyorlanmoqda)* | Nega code smell, entity'lar orasida `@x`, A–D strategiyalar |
-| 16 | Yuqori qatlamda kompozitsiya *(tayyorlanmoqda)* | Render props, slot'lar, content projection — slice'lar bir-birini bilmaydi |
-| 17 | Desegmentatsiya va nomlash *(tayyorlanmoqda)* | `components/`, `utils.ts`, `types.ts` — nega yomon, nima o'rniga |
-| 18 | Ortiqcha entity'lar *(tayyorlanmoqda)* | Yupqa va qalin klient, entity'siz loyiha, auth ma'lumoti — `shared`'da |
-| 19 | Qaror daraxti: kod qayerga? *(tayyorlanmoqda)* | Bitta diagramma va 30 ta tipik holat bo'yicha javob |
+| 14 | [Public API chuqur](14-public-api-chuqur.md) | Barrel fayllar muammolari: sikl, tree-shaking, `shared/ui` uchun alohida index |
+| 15 | [Cross-import va `@x`](15-cross-import.md) | Nega code smell, entity'lar orasida `@x`, A–D strategiyalar |
+| 16 | [Yuqori qatlamda kompozitsiya](16-kompozitsiya.md) | Render props, slot'lar, content projection — slice'lar bir-birini bilmaydi |
+| 17 | [Desegmentatsiya va nomlash](17-desegmentatsiya.md) | `components/`, `utils.ts`, `types.ts` — nega yomon, nima o'rniga |
+| 18 | [Ortiqcha entity'lar](18-ortiqcha-entitylar.md) | Yupqa va qalin klient, entity'siz loyiha, auth ma'lumoti — `shared`'da |
+| 19 | [Qaror daraxti: kod qayerga?](19-qaror-daraxti.md) | Bitta diagramma va 30 ta tipik holat bo'yicha javob |
 
 ## IV qism — Tipik vazifalar (20–26)
 
 | # | Bob | Mazmun |
 | --- | --- | --- |
-| 20 | API so'rovlari *(tayyorlanmoqda)* | `shared/api` klienti, endpoint'lar, slice'ga xos so'rovlar, OpenAPI generatsiya |
-| 21 | Server holati *(tayyorlanmoqda)* | TanStack Query, Pinia Colada, Angular `resource` — kalitlar va query factory |
-| 22 | Autentifikatsiya *(tayyorlanmoqda)* | Login sahifasi yoki dialog widget, token qayerda, chiqish |
-| 23 | Tiplar va validatsiya *(tayyorlanmoqda)* | DTO va domen tiplari, Zod/Valibot sxemalari, entity'lar orasidagi tiplar |
-| 24 | Layout'lar *(tayyorlanmoqda)* | Oddiy layout `shared/ui`'da, widget'li layout — `app`'da yoki slot bilan |
-| 25 | Assetlar, stillar va i18n *(tayyorlanmoqda)* | Rasm slice ichida, global stil `app`'da, tarjimalar qayerda |
-| 26 | Marshrutlash va lazy loading *(tayyorlanmoqda)* | Marshrut konstantalari, sahifalarni kech yuklash, guard'lar |
+| 20 | [API so'rovlari](20-api-sorovlari.md) | `shared/api` klienti, endpoint'lar, slice'ga xos so'rovlar, OpenAPI generatsiya |
+| 21 | [Server holati](21-server-holati.md) | TanStack Query, Pinia Colada, Angular `resource` — kalitlar va query factory |
+| 22 | [Autentifikatsiya](22-autentifikatsiya.md) | Login sahifasi yoki dialog widget, token qayerda, chiqish |
+| 23 | [Tiplar va validatsiya](23-tiplar.md) | DTO va domen tiplari, Zod/Valibot sxemalari, entity'lar orasidagi tiplar |
+| 24 | [Layout'lar](24-layoutlar.md) | Oddiy layout `shared/ui`'da, widget'li layout — `app`'da yoki slot bilan |
+| 25 | [Assetlar, stillar va i18n](25-assetlar-va-i18n.md) | Rasm slice ichida, global stil `app`'da, tarjimalar qayerda |
+| 26 | [Marshrutlash va lazy loading](26-marshrutlash.md) | Marshrut konstantalari, sahifalarni kech yuklash, guard'lar |
 
 ## V qism — Framework shablonlari (27–32)
 
 | # | Bob | Mazmun |
 | --- | --- | --- |
-| 27 | React + Vite shabloni *(tayyorlanmoqda)* | To'liq papka daraxti, alias, React Router, TanStack Query |
-| 28 | Next.js shabloni *(tayyorlanmoqda)* | `app/` va `_pages`, `index.server.ts`, Route Handlers, middleware |
-| 29 | Vue + Vite shabloni *(tayyorlanmoqda)* | Vue Router, Pinia, `@/` alias, slot'lar bilan kompozitsiya |
-| 30 | Nuxt shabloni *(tayyorlanmoqda)* | `dir.pages`, alias, layout'lar, auto-import bilan murosa |
-| 31 | Angular shabloni *(tayyorlanmoqda)* | Standalone komponentlar, `loadComponent`, DI va FSD, `tsconfig` yo'llari |
-| 32 | Monorepo va bir nechta FSD ildizi *(tayyorlanmoqda)* | Paketlar bo'yicha bo'lish, umumiy `shared` |
+| 27 | [React + Vite shabloni](27-react-shabloni.md) | To'liq papka daraxti, alias, React Router, TanStack Query |
+| 28 | [Next.js shabloni](28-nextjs-shabloni.md) | `app/` va `_pages`, `index.server.ts`, Route Handlers, middleware |
+| 29 | [Vue + Vite shabloni](29-vue-shabloni.md) | Vue Router, Pinia, `@/` alias, slot'lar bilan kompozitsiya |
+| 30 | [Nuxt shabloni](30-nuxt-shabloni.md) | `dir.pages`, alias, layout'lar, auto-import bilan murosa |
+| 31 | [Angular shabloni](31-angular-shabloni.md) | Standalone komponentlar, `loadComponent`, DI va FSD, `tsconfig` yo'llari |
+| 32 | [Monorepo va bir nechta FSD ildizi](32-monorepo.md) | Paketlar bo'yicha bo'lish, umumiy `shared` |
 
 ## VI qism — Asboblar va jamoa (33–36)
 
 | # | Bob | Mazmun |
 | --- | --- | --- |
-| 33 | Steiger *(tayyorlanmoqda)* | O'rnatish, qoidalar, `insignificant-slice`, `excessive-slicing`, CI |
-| 34 | ESLint, TypeScript va alias'lar *(tayyorlanmoqda)* | Import chegaralari linterda, `paths`, IDE auto-import tuzoqlari |
-| 35 | FSD'da testlash *(tayyorlanmoqda)* | Testlar qayerda yashaydi, slice'ni alohida test qilish |
-| 36 | Migratsiya *(tayyorlanmoqda)* | O'z arxitekturadan, v1 → v2, v2.0 → v2.1 |
+| 33 | [Steiger](33-steiger.md) | O'rnatish, qoidalar, `insignificant-slice`, `excessive-slicing`, CI |
+| 34 | [ESLint, TypeScript va alias'lar](34-eslint-va-alias.md) | Import chegaralari linterda, `paths`, IDE auto-import tuzoqlari |
+| 35 | [FSD'da testlash](35-testlash.md) | Testlar qayerda yashaydi, slice'ni alohida test qilish |
+| 36 | [Migratsiya](36-migratsiya.md) | O'z arxitekturadan, v1 → v2, v2.0 → v2.1 |
 
 ## VII qism — Amaliyot (37–40)
 
 | # | Bob | Mazmun |
 | --- | --- | --- |
-| 37 | Amaliy loyiha: do'kon frontendi *(tayyorlanmoqda)* | Pages-first boshlash → takrorlanish paydo bo'lganda refaktoring |
-| 38 | Code review checklist *(tayyorlanmoqda)* | PR'da nimani tekshirish |
-| 39 | Tez-tez beriladigan savollar *(tayyorlanmoqda)* | "Bu feature'mi yoki entity'mi?" va boshqalar |
-| 40 | Shpargalka *(tayyorlanmoqda)* | Bir sahifada hammasi |
+| 37 | [Amaliy loyiha: do'kon frontendi](37-amaliy-loyiha.md) | Pages-first boshlash → takrorlanish paydo bo'lganda refaktoring |
+| 38 | [Code review checklist](38-review-checklist.md) | PR'da nimani tekshirish |
+| 39 | [Tez-tez beriladigan savollar](39-faq.md) | "Bu feature'mi yoki entity'mi?" va boshqalar |
+| 40 | [Shpargalka](40-shpargalka.md) | Bir sahifada hammasi |
 
 ---
 

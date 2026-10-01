@@ -81,7 +81,7 @@ Tuzilma framework'dan deyarli mustaqil — faqat "app" va "pages" qatlamlari fra
 | Angular | `app/` — `app.config.ts`, marshrutlar; `pages/` — lazy `loadComponent`; har slice — standalone komponentlar va `@Service()`lar | [Angular 78-bob](../angular/78-amaliy-loyiha.md) (soddalashtirilgan variant) |
 | React | `app/` — providerlar, router; hook'lar `model/` segmentida | [React 34-bob](../react/34-arxitektura.md) |
 | Vue | `app/` — `createApp`, plugin'lar; composable'lar `model/` da, Pinia store'lar entity/feature ichida | [Vue 6-bob](../vue/06-loyiha-tuzilmasi-va-vite.md) |
-| Next.js | App Router `app/` va Pages Router `pages/` papkalari band — rasmiy tavsiya: FSD qatlamlarini `src/_app` va `src/_pages` deb nomlash, Next papkalaridan re-export qilish ([FSD qo'llanmasi](../fsd/README.md), V qism) | [Next.js 7-bob](../nextjs/07-marshrutlash.md) |
+| Next.js | App Router `app/` va Pages Router `pages/` papkalari band — rasmiy tavsiya: FSD qatlamlarini `src/_app` va `src/_pages` deb nomlash, Next papkalaridan re-export qilish ([FSD 28-bob](../fsd/28-nextjs-shabloni.md)) | [Next.js 7-bob](../nextjs/07-marshrutlash.md) |
 
 Next.js konflikti — FSD bilan eng ko'p uchraydigan amaliy muammo: framework `app/` va `pages/` nomlarini o'zi ishlatadi. FSD qo'llanmasida har framework uchun tayyor shablon bo'ladi.
 

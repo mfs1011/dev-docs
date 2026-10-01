@@ -108,7 +108,7 @@ onMounted(() => {
                         </span>
 
                         <span v-if="book.version" class="book-card-version">{{ book.version }}</span>
-                        <span v-else class="book-card-version is-soon">tayyorlanmoqda</span>
+                        <span v-else-if="isDraft(book)" class="book-card-version is-soon">tayyorlanmoqda</span>
                     </span>
 
                     <h3 class="book-card-title">{{ book.title }}</h3>

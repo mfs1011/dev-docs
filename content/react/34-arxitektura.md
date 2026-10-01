@@ -279,4 +279,4 @@ Monorepo narxi: build orkestratsiyasi, CI murakkabligi, IDE sekinlashuvi. 1–2 
 
 - React'da o'ylash: <https://react.dev/learn/thinking-in-react>
 - Fayl tuzilmasi (rasmiy pozitsiya): <https://react.dev/learn/thinking-in-react#step-1-break-the-ui-into-a-component-hierarchy>
-- Feature-Sliced Design (ekotizm konvensiyasi): <https://feature-sliced.design>
+- Feature-Sliced Design (ekotizm konvensiyasi): <https://feature-sliced.design>; shu saytda — [FSD qo'llanmasi](../fsd/README.md)

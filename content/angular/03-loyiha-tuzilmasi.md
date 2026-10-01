@@ -252,7 +252,7 @@ src/app/                        src/app/
 
 Sabab: bitta xususiyat ustida ishlaganda barcha kerakli fayllar bir joyda. "Buyurtmalar" bo'limini o'chirish — bitta papkani o'chirish.
 
-Katta ilovalar uchun qat'iyroq tuzilma — **Feature-Sliced Design** — alohida qo'llanmada ko'riladi.
+Katta ilovalar uchun qat'iyroq tuzilma — **Feature-Sliced Design** — alohida qo'llanmada ko'riladi: [FSD qo'llanmasi](../fsd/README.md), Angular shabloni — V qismda.
 
 ## Tipik xatolar
 
