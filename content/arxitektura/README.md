@@ -178,11 +178,11 @@ Qo'llanma quyidagi manbalarga tayanadi va ularga havola qiladi:
 
 | № | Bob | Nima o'rganasiz |
 | --- | --- | --- |
-| 85 | LLM integratsiyasi arxitekturasi *(tayyorlanmoqda)* | Model chaqiruvi qayerda, streaming, xarajat, timeout va fallback |
-| 86 | RAG va vektor qidiruv *(tayyorlanmoqda)* | Hujjatlarni bo'lish, embedding, indeks yangilanishi, sifatni o'lchash |
-| 87 | Agentlar va vositalar (tool calling) *(tayyorlanmoqda)* | Ruxsatlar chegarasi, tasdiqlash, idempotent vositalar |
-| 88 | AI xavfsizligi *(tayyorlanmoqda)* | Prompt injection, ma'lumot sizishi, OWASP LLM Top 10 |
-| 89 | AI bilan tizim loyihalash *(tayyorlanmoqda)* | Vazifani qanday berish, natijani tekshirish, muhandis mas'uliyati |
+| 85 | [LLM integratsiyasi arxitekturasi](85-llm-integratsiyasi.md) | Model chaqiruvi qayerda, streaming, xarajat, timeout va fallback |
+| 86 | [RAG va vektor qidiruv](86-rag-va-vektor-qidiruv.md) | Hujjatlarni bo'lish, embedding, indeks yangilanishi, sifatni o'lchash |
+| 87 | [Agentlar va vositalar (tool calling)](87-agentlar-va-vositalar.md) | Ruxsatlar chegarasi, tasdiqlash, idempotent vositalar |
+| 88 | [AI xavfsizligi](88-ai-xavfsizligi.md) | Prompt injection, ma'lumot sizishi, OWASP LLM Top 10 |
+| 89 | [AI bilan tizim loyihalash](89-ai-bilan-loyihalash.md) | Vazifani qanday berish, natijani tekshirish, muhandis mas'uliyati |
 
 ## IX qism — Amaliyot (90–91)
 
