@@ -12,6 +12,14 @@ defineProps({
   book: { type: String, required: true },
   size: { type: Number, default: 30 },
 })
+
+/** Rasmiy logolar fayl sifatida (ranglari mavzuga bog'liq emas): public/marks/<nom>.svg */
+const FILE_MARKS = {
+  sql: { file: 'postgresql.svg', alt: 'PostgreSQL' },
+  git: { file: 'git.svg', alt: 'Git' },
+  docker: { file: 'docker.svg', alt: 'Docker' },
+}
+const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`
 </script>
 
 <template>
@@ -23,6 +31,14 @@ defineProps({
     <AngularMark v-else-if="book === 'angular'" :size="size" />
     <ArchMark v-else-if="book === 'arxitektura'" :size="size" />
     <FsdMark v-else-if="book === 'fsd'" :size="size" />
+    <img
+        v-else-if="FILE_MARKS[book]"
+        class="file-mark"
+        :src="`${base}marks/${FILE_MARKS[book].file}`"
+        :alt="FILE_MARKS[book].alt"
+        :width="size"
+        :height="size"
+    >
     <span v-else class="book-mark-fallback" :style="{ width: `${size}px`, height: `${size}px` }">
         {{ book.slice(0, 2).toUpperCase() }}
     </span>
