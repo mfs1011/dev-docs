@@ -67,11 +67,11 @@ function pwa() {
   return VitePWA({
     registerType: 'prompt',
     injectRegister: false,
-    includeAssets: ['favicon*.svg', 'pwa/apple-touch-icon.png'],
+    includeAssets: ['favicon*.svg', 'marks/*.svg', 'pwa/apple-touch-icon.png'],
     manifest: {
       name: "Dasturchi qo'llanmalari",
       short_name: "Qo'llanmalar",
-      description: "Rasmiy hujjatlar asosida yozilgan o'zbekcha qo'llanmalar: Symfony, Laravel, Vue, React, Next.js, Angular, Arxitektura, FSD.",
+      description: "Rasmiy hujjatlar asosida yozilgan o'zbekcha qo'llanmalar: Symfony, Laravel, Vue, React, Next.js, Angular, Arxitektura, FSD, SQL, Git, Docker.",
       lang: 'uz',
       dir: 'ltr',
       display: 'standalone',
@@ -91,6 +91,7 @@ function pwa() {
         'assets/index-*.{js,css}',
         'assets/search-index-*.js',
         'favicon*.svg',
+        'marks/*.svg',
         'symfony-logo.svg',
         'pwa/*.{png,svg}',
       ],
