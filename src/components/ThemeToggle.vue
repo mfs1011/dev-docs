@@ -1,21 +1,23 @@
 <script setup>
-import { computed, onMounted, ref } from 'vue'
+import { computed, onMounted, onUnmounted, ref } from 'vue'
+import { chooseTheme } from '@/settings'
 
 const theme = ref('light')
 const isDark = computed(() => theme.value === 'dark')
 
-const apply = (value) => {
-  theme.value = value
-  document.documentElement.dataset.theme = value
-  localStorage.setItem('docs-theme', value)
-  window.dispatchEvent(new CustomEvent('docs-theme-change', { detail: value }))
+// Tema boshqa joydan ham o'zgarishi mumkin (boshqa qurilmadan sinxronlash)
+const sync = () => {
+  theme.value = document.documentElement.dataset.theme || 'light'
 }
 
 onMounted(() => {
-  theme.value = document.documentElement.dataset.theme || 'light'
+  sync()
+  window.addEventListener('docs-theme-change', sync)
 })
 
-const toggle = () => apply(isDark.value ? 'light' : 'dark')
+onUnmounted(() => window.removeEventListener('docs-theme-change', sync))
+
+const toggle = () => chooseTheme(isDark.value ? 'light' : 'dark')
 </script>
 
 <template>

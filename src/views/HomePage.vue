@@ -2,7 +2,8 @@
 import { computed, onMounted } from 'vue'
 import BookMark from '@/components/BookMark.vue'
 import { books, formatDate } from '@/docs'
-import { markFor } from '@/progress'
+import { bookProgress, markFor, overallProgress } from '@/progress'
+import { account, syncEnabled } from '@/sync'
 
 const totals = computed(() =>
   books.reduce(
@@ -16,6 +17,8 @@ const totals = computed(() =>
 
 /** Boblari hali yozilmagan kitob — kartada "tayyorlanmoqda" deb ko'rsatiladi */
 const isDraft = (book) => !book.chapterCount
+
+const overall = computed(() => overallProgress())
 
 /** Kitobda qoldirilgan o'qish belgisi */
 const bookMark = (book) => markFor(book.id)
@@ -88,6 +91,25 @@ onMounted(() => {
                 </p>
             </section>
 
+            <RouterLink v-if="account.user" to="/profil" class="home-account">
+                <img v-if="account.user.avatar" :src="account.user.avatar" alt="" class="home-account-avatar">
+                <span class="home-account-body">
+                    <strong>{{ account.user.name }}</strong>
+                    <span>{{ overall.read }}/{{ overall.total }} bob o'qildi</span>
+                </span>
+                <span class="home-account-cta">Profil →</span>
+            </RouterLink>
+
+            <div v-else-if="syncEnabled || overall.read" class="home-account">
+                <span class="home-account-body">
+                    <strong v-if="overall.read">{{ overall.read }}/{{ overall.total }} bob o'qildi</strong>
+                    <strong v-else>O'qish holatingiz saqlanadi</strong>
+                    <span v-if="syncEnabled">Kirsangiz — telefon va kompyuter o'rtasida sinxronlanadi.</span>
+                </span>
+                <RouterLink to="/profil" class="home-account-link">Statistika</RouterLink>
+                <RouterLink v-if="syncEnabled" to="/kirish" class="home-account-cta">Kirish →</RouterLink>
+            </div>
+
             <h2 class="home-section-title">Qo'llanmalar</h2>
 
             <div class="home-grid">
@@ -119,6 +141,9 @@ onMounted(() => {
                     <span class="book-card-foot">
                         <span class="book-card-count">
                             <template v-if="isDraft(book)">mundarija</template>
+                            <template v-else-if="bookProgress(book).read">
+                                {{ bookProgress(book).read }}/{{ bookProgress(book).total }} bob
+                            </template>
                             <template v-else>{{ book.chapterCount }} bob</template>
                         </span>
 
@@ -131,6 +156,18 @@ onMounted(() => {
                                 <path d="M3 8h9M8.5 4l4 4-4 4" />
                             </svg>
                         </span>
+                    </span>
+
+                    <span
+                        v-if="bookProgress(book).read"
+                        class="book-card-progress"
+                        role="progressbar"
+                        :aria-valuenow="bookProgress(book).percent"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        :aria-label="`${book.title}: ${bookProgress(book).percent}% o'qildi`"
+                    >
+                        <span :style="{ width: `${bookProgress(book).percent}%` }" />
                     </span>
                 </RouterLink>
 

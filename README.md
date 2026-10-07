@@ -69,6 +69,24 @@ Yangi turkum: `src/markdown.js` → `SECTION_KINDS`, `src/views/DocPage.vue` →
 Kontent o'zgarganda saytni yangilash: repo'da **Actions → Deploy to GitHub Pages → Run workflow**,
 yoki kontent repo'sidan `repository_dispatch` (`docs-updated`) yuborish.
 
+## Akkaunt va sinxronlash (Supabase, ixtiyoriy)
+
+Kalitlar berilmasa sayt avvalgidek ishlaydi — hammasi faqat brauzerda, "Kirish" tugmasi ko'rinmaydi.
+Kirish = ro'yxatdan o'tish: GitHub yoki Google bilan birinchi kirishda akkaunt o'zi ochiladi.
+Sinxronlanadi: o'qish belgilari, o'qilgan boblar, tema, kod varianti. Profil: `/profil`.
+
+1. `supabase login`, keyin `supabase link --project-ref <ref>` va `supabase db push` (jadval, RLS, triggerlar).
+2. OAuth ilovalari — ikkalasida ham callback: `https://<ref>.supabase.co/auth/v1/callback`
+   - GitHub: **Settings → Developer settings → OAuth Apps → New**.
+   - Google: **console.cloud.google.com → APIs & Services → Credentials → OAuth client ID (Web)**.
+3. `supabase/.env.example` → `supabase/.env` (client ID/secret'lar), keyin `supabase config push`
+   (redirect URL'lar, providerlar — `supabase/config.toml`).
+4. `.env.example` → `.env` (URL va `anon` kalit). Deploy uchun repo → **Settings → Secrets and variables →
+   Actions → Variables**: `VITE_SUPABASE_URL`, `VITE_SUPABASE_ANON_KEY`, ixtiyoriy `VITE_AUTH_PROVIDERS`.
+
+`anon` kalit ochiq bo'lishi normal — himoya RLS'da. Kod: `src/store.js`, `src/sync.js`, `src/settings.js`,
+`src/components/AccountButton.vue`, `src/views/ProfilePage.vue`.
+
 ## Tuzilma
 
 ```

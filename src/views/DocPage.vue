@@ -1,10 +1,10 @@
 <script setup>
-import { nextTick, onBeforeUnmount, ref, shallowRef, watch } from 'vue'
+import { computed, nextTick, onBeforeUnmount, ref, shallowRef, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import PageToc from '@/components/PageToc.vue'
 import { renderMarkdown, sectionKindFor } from '@/markdown'
 import { findBook, findPage, formatDate, loadSource, neighbours, resolveDocLink } from '@/docs'
-import { clearMark, excerptOf, markFor, setMark } from '@/progress'
+import { clearMark, excerptOf, isRead, markFor, setMark, setRead } from '@/progress'
 
 const route = useRoute()
 const router = useRouter()
@@ -23,6 +23,7 @@ const article = ref(null)
 const bookTitle = ref('')
 const bookVersion = ref('')
 const hasMarkHere = ref(false)
+const pageRead = computed(() => Boolean(page.value) && isRead(page.value.route))
 
 let flashTimer = null
 let headingNodes = []
@@ -512,6 +513,19 @@ onBeforeUnmount(() => {
             </div>
 
             <article v-else ref="article" class="markdown" v-html="html" />
+
+            <div v-if="page && !error" class="read-toggle-row">
+                <button
+                    type="button"
+                    class="read-toggle"
+                    :class="{ 'is-read': pageRead }"
+                    :aria-pressed="pageRead"
+                    @click="setRead(page.route, !pageRead)"
+                >
+                    <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.2 8.4l3 3 6.6-6.8" /></svg>
+                    {{ pageRead ? "O'qildi" : "O'qildi deb belgilash" }}
+                </button>
+            </div>
 
             <nav v-if="page" class="pager">
                 <RouterLink

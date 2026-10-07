@@ -1,5 +1,6 @@
 <script setup>
-import { computed, onMounted, ref, watch } from 'vue'
+import { computed, onMounted, onUnmounted, ref, watch } from 'vue'
+import { applyVariant, chooseVariant } from '@/settings'
 
 const props = defineProps({
   // Guruh nomi: `api` (Options/Composition) yoki `lang` (JS/TS)
@@ -13,19 +14,37 @@ const current = ref(props.options[0].value)
 const storageKey = computed(() => `docs-variant-${props.group}`)
 const allowed = computed(() => props.options.map((option) => option.value))
 
-const apply = (value) => {
+const choose = (value) => {
   current.value = value
-  document.documentElement.dataset[props.group] = value
-  localStorage.setItem(storageKey.value, value)
+  chooseVariant(props.group, value)
 }
 
 const restore = () => {
-  const saved = localStorage.getItem(storageKey.value)
+  let saved = null
 
-  apply(allowed.value.includes(saved) ? saved : props.options[0].value)
+  try {
+    saved = localStorage.getItem(storageKey.value)
+  } catch {
+    // Saqlash taqiqlangan — birinchi variant
+  }
+
+  current.value = allowed.value.includes(saved) ? saved : props.options[0].value
+  applyVariant(props.group, current.value)
 }
 
-onMounted(restore)
+// Boshqa qurilmadan sinxronlangan tanlov
+const onRemote = (event) => {
+  const { group, value } = event.detail
+
+  if (group === props.group && allowed.value.includes(value)) current.value = value
+}
+
+onMounted(() => {
+  restore()
+  window.addEventListener('docs-variant-change', onRemote)
+})
+
+onUnmounted(() => window.removeEventListener('docs-variant-change', onRemote))
 watch(() => props.group, restore)
 </script>
 
@@ -39,7 +58,7 @@ watch(() => props.group, restore)
             :class="{ 'is-active': current === option.value }"
             :aria-pressed="current === option.value"
             :title="option.title"
-            @click="apply(option.value)"
+            @click="choose(option.value)"
         >
             {{ option.label }}
         </button>

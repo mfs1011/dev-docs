@@ -1,6 +1,7 @@
 <script setup>
 import { computed, onMounted, onUnmounted, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
+import AccountButton from '@/components/AccountButton.vue'
 import AppSidebar from '@/components/AppSidebar.vue'
 import BookMark from '@/components/BookMark.vue'
 import SearchDialog from '@/components/SearchDialog.vue'
@@ -86,6 +87,7 @@ onUnmounted(() => window.removeEventListener('keydown', onKeydown))
                 <div class="topbar-actions">
                     <span v-if="updatedLabel" class="updated-badge">Yangilangan: {{ updatedLabel }}</span>
                     <ThemeToggle />
+                    <AccountButton />
                 </div>
             </div>
         </header>

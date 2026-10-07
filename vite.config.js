@@ -117,6 +117,14 @@ export default defineConfig({
   // GitHub Pages uchun: BASE_PATH=/docs-web/ npm run build
   base: process.env.BASE_PATH ?? '/',
   plugins: [vue(), markdownWatcher(), pwa()],
+  build: {
+    rollupOptions: {
+      output: {
+        // Supabase SDK faqat akkaunt kerak bo'lganda yuklanadi — `index-*` nomini olsa precache'ga tushib qolardi
+        manualChunks: (id) => (id.includes('/node_modules/@supabase/') ? 'supabase' : undefined),
+      },
+    },
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
