@@ -1221,6 +1221,7 @@ a.home-account:hover { border-color: var(--border-strong); text-decoration: none
 :root[data-theme="dark"] .arch-mark .arch-mark-bottom { stroke: #a99bff; }
 
 .fsd-mark { flex: none; display: block; }
+.file-mark { flex: none; display: block; object-fit: contain; }
 
 .next-mark { flex: none; display: block; }
 .next-mark .next-mark-disc { fill: #000; }
