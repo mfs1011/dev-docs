@@ -748,6 +748,8 @@ a.home-account:hover { border-color: var(--border-strong); text-decoration: none
 }
 
 .markdown p { margin: 0 0 15px; }
+/* Uzun URL (rasmiy hujjat havolalari) tor ekranda matndan chiqib ketmasin */
+.markdown a { overflow-wrap: anywhere; }
 .markdown ul, .markdown ol { margin: 0 0 16px; padding-left: 22px; }
 .markdown li { margin-bottom: 6px; }
 .markdown li::marker { color: var(--text-subtle); }
@@ -1459,6 +1461,7 @@ a.home-account:hover { border-color: var(--border-strong); text-decoration: none
 }
 
 .book-cell {
+    min-width: 0;
     --card-accent: var(--c-light, var(--accent));
 
     display: flex;
@@ -1771,6 +1774,13 @@ h3.markable > .line-mark { top: 6px; }
 .mark-jump:hover { border-color: var(--accent); }
 .mark-jump svg { width: 9px; height: 11px; fill: currentColor; }
 
+/* Telefonda "belgiga o'tish" — versiya va sanadan keyin, alohida qatorda */
+@media (max-width: 560px) {
+    .page-meta-info:has(.mark-jump) { flex-wrap: wrap; row-gap: 8px; }
+    .page-meta-info:has(.mark-jump)::after { content: ''; order: 1; flex-basis: 100%; }
+    .page-meta-info .mark-jump { order: 2; }
+}
+
 /* Sidebardagi belgi */
 .sidebar-mark {
     flex: none;
@@ -1826,7 +1836,8 @@ h3.markable > .line-mark { top: 6px; }
     .home-stats { margin-bottom: 36px; }
     .home-why { margin-bottom: 48px; padding-left: 14px; }
     .home-why p { font-size: 14.5px; }
-    .home-grid { grid-template-columns: 1fr; gap: 14px; }
+    /* minmax(0, …): uzun nowrap ko'chirma (`.book-resume-excerpt`) ustunni ekrandan kengaytirmasin */
+    .home-grid { grid-template-columns: minmax(0, 1fr); gap: 14px; }
 
     .book-card { padding: 20px 20px 0; }
     .book-card-mark { width: 48px; height: 48px; }
