@@ -11,3 +11,7 @@ content-repo/
 
 # Ichki ish rejalari (lokal, saytga kerak emas)
 *-REJA.md
+
+# Lokal muhit kalitlari
+.env
+.env.local

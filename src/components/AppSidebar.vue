@@ -3,7 +3,8 @@ import { computed, nextTick, onMounted, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import VariantToggle from '@/components/VariantToggle.vue'
 import { findBook } from '@/docs'
-import { markFor } from '@/progress'
+import { bookProgress, isRead, markFor } from '@/progress'
+import { account, syncEnabled } from '@/sync'
 
 const props = defineProps({
   bookId: { type: String, default: null },
@@ -31,6 +32,7 @@ const visibleSections = computed(() => {
 })
 
 const isActive = (item) => route.path === item.route
+const progress = computed(() => (book.value ? bookProgress(book.value) : null))
 
 /** Shu bobda o'qish belgisi turibdimi */
 const mark = computed(() => markFor(props.bookId))
@@ -113,6 +115,16 @@ watch(() => route.path, () => revealActive())
                                 <span class="sidebar-label">{{ item.label }}</span>
 
                                 <svg
+                                    v-if="isRead(item.route)"
+                                    class="sidebar-read"
+                                    viewBox="0 0 16 16"
+                                    aria-label="O'qilgan"
+                                    role="img"
+                                >
+                                    <path d="M3.2 8.4l3 3 6.6-6.8" />
+                                </svg>
+
+                                <svg
                                     v-if="isMarked(item)"
                                     class="sidebar-mark"
                                     viewBox="0 0 12 14"
@@ -128,6 +140,21 @@ watch(() => route.path, () => revealActive())
 
                 <p v-if="!visibleSections.length" class="sidebar-empty">Hech narsa topilmadi.</p>
             </nav>
+
+            <div class="sidebar-account">
+                <RouterLink to="/profil" class="sidebar-account-link" @click="emit('navigate')">
+                    <span>Profil va statistika</span>
+                    <span v-if="progress?.total" class="sidebar-account-count">{{ progress.read }}/{{ progress.total }}</span>
+                </RouterLink>
+                <RouterLink
+                    v-if="syncEnabled && !account.user"
+                    :to="{ path: '/kirish', query: { qaytish: route.path } }"
+                    class="sidebar-account-link"
+                    @click="emit('navigate')"
+                >
+                    Kirish — sinxronlash uchun
+                </RouterLink>
+            </div>
         </div>
     </aside>
 </template>
