@@ -182,7 +182,7 @@ $ echo "exit=$?"
 exit=0
 ```
 
-Nega bu kerak? Tasavvur qiling: skriptingiz ref'ni o'qidi, hisob-kitob qildi va yozmoqchi. Shu orada boshqa jarayon (masalan, IDE'dagi Git yoki parallel `fetch`) ref'ni o'zgartirdi. Shartsiz yozish o'sha o'zgarishni jimgina "yeb yuboradi". Shart bilan yozish esa xatoni ochiq ko'rsatadi. `git push --force-with-lease` ham xuddi shu g'oyaga asoslangan ([30-bob](30-push-chuqur.md)).
+Nega bu kerak? Tasavvur qiling: skriptingiz ref'ni o'qidi, hisob-kitob qildi va yozmoqchi. Shu orada boshqa jarayon (masalan, IDE'dagi Git yoki parallel `fetch`) ref'ni o'zgartirdi. Shartsiz yozish o'sha o'zgarishni jimgina "yeb yuboradi". Shart bilan yozish esa xatoni ochiq ko'rsatadi. `git push --force-with-lease` ham xuddi shu g'oyaga asoslangan ([29-bob](29-fetch-push-ichidan.md)).
 
 Bo'sh qator yoki 40 ta `0` eski qiymat sifatida — "bu ref **hali yo'q** bo'lsin" degani:
 
@@ -937,7 +937,7 @@ d568406 main@{0}: commit: Beshinchi commit
 
 `--dry-run` natijani alohida papkaga yozib, repo'ni o'zgartirmaydi — tekshirib ko'rish uchun. Haqiqiy ko'chirishdan keyin `logs/`, `packed-refs` va `ORIG_HEAD` fayli yo'qoldi — hammasi `reftable/` ichida, reflog ham saqlangan (`--no-reflog` bilan tashlab yuborish mumkin). `FETCH_HEAD` fayl bo'lib qoldi — pseudoref, ref ombori qismi emas. Dry-run papkasini o'zingiz o'chirasiz.
 
-Ma'lumotnomadagi cheklovlar: worktree'lari bor repo'ni ko'chirib bo'lmaydi ([49-bob](49-worktree.md)); ko'chirish paytida parallel yozishni Git to'xtatmaydi — rejali `maintenance` yoqilgan bo'lsa, avval uni o'chiring ([18-bob](18-packfile-va-gc.md)).
+Ma'lumotnomadagi cheklovlar: worktree'lari bor repo'ni ko'chirib bo'lmaydi ([49-bob](49-worktree-va-katta-repo.md)); ko'chirish paytida parallel yozishni Git to'xtatmaydi — rejali `maintenance` yoqilgan bo'lsa, avval uni o'chiring ([18-bob](18-packfile-va-gc.md)).
 
 **Git 3.0.** `BreakingChanges`ga ko'ra yangi repo'lar uchun standart `reftable` bo'ladi. Shart — ekotizim tayyor bo'lishi, avvalo JGit, libgit2 va Gitoxide kabi muqobil implementatsiyalar uni qo'llab-quvvatlashi. Hozir standartni o'zgartirish uchun `init.defaultRefFormat` sozlamasi bor ([3-bob](03-birinchi-sozlash.md)).
 

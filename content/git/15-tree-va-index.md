@@ -539,7 +539,7 @@ $ git ls-files -s | grep bosh
 $
 ```
 
-**`160000` — gitlink.** Submodule uchun: tree yozuvi blob'ni emas, **boshqa repo'dagi commit'ni** ko'rsatadi ([43-bob](43-submodule-va-boshqalar.md)). Uni qo'lda yasab ko'ramiz (hash — 16-bobda yasaladigan commit'niki, bu repo'da u yo'q):
+**`160000` — gitlink.** Submodule uchun: tree yozuvi blob'ni emas, **boshqa repo'dagi commit'ni** ko'rsatadi ([43-bob](43-submodule-bundle-replace.md)). Uni qo'lda yasab ko'ramiz (hash — 16-bobda yasaladigan commit'niki, bu repo'da u yo'q):
 
 ```bash
 $ git update-index --add --cacheinfo 160000,1a410efbd13591db07496601ebc7a059dd55cfe9,vendor/lib
