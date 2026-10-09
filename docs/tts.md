@@ -65,7 +65,7 @@ Bobni qaytadan yaratish (masalan, chegara yoki gallyutsinatsiya tuzalmasa) — e
 npm run tts -- --redo react/25-actions.md,react/26-custom-hooklar.md --single   # har bob alohida so'rov
 ```
 
-> **Holat (2026-10-09 kechqurun):** React — saytda (PR #6). **Next.js — 51 bob tayyor va tekshirilgan** (chegaralar, tezlik, so'z vaqtlari; 23–25 `--redo --single` bilan qayta yaratilgan), **lekin hali chiqarilmagan**: tinglab tekshirilgach `npm run tts:publish -- --books nextjs` → yangi branch → PR. Keyingi navbat — **Vue** (`npm run tts:navbat`).
+> **Holat (2026-10-09):** React (PR #6) va Next.js (PR #7) — saytda, 51 tadan bob. Keyingi navbat — **Vue** (`npm run tts:navbat`).
 
 Boshqa variantlar:
 
