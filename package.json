@@ -9,7 +9,11 @@
     "dev": "vite",
     "prebuild": "npm run sync",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "tts": "node scripts/tts.mjs",
+    "tts:navbat": "node scripts/tts.mjs --books react,nextjs,vue,angular,git,arxitektura,symfony,laravel",
+    "tts:align": ".venv-align/bin/python scripts/align.py",
+    "tts:publish": "node scripts/tts-publish.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.117.2",

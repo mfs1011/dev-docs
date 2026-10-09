@@ -4,11 +4,14 @@ import { execFileSync } from 'node:child_process'
 import { dirname, join, relative, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { books, contentRoot } from '../docs.config.mjs'
+import { segmentsHash, segmentsToText, toSegments } from './segments.mjs'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const ROOT = join(__dirname, '..')
 const SOURCE_ROOT = resolve(ROOT, contentRoot)
 const TARGET = join(ROOT, 'src', 'content')
+// Ovozli o'qish uchun segmentlar (generatsiya qilinadi, git'ga tushmaydi)
+const SEGMENTS = join(ROOT, 'segments')
 
 async function walk(dir) {
   const out = []
@@ -246,6 +249,7 @@ async function collectBook(book, staging) {
     const raw = await readFile(file, 'utf8')
     const { title, headings } = extractMeta(raw)
     const info = await stat(join(sourceDir, rel))
+    const segments = toSegments(raw)
 
     pages.push({
       book: book.id,
@@ -256,6 +260,7 @@ async function collectBook(book, staging) {
       chapter: chapterNumber(rel),
       updatedAt: committed.get(rel) ?? info.mtime.toISOString(),
       headings,
+      segments,
     })
   }
 
@@ -263,7 +268,7 @@ async function collectBook(book, staging) {
   // asosiy bundle'ni yengil saqlash uchun ular faqat qidiruv indeksiga yoziladi
   const sections = buildSections(book, pages).map((section) => ({
     ...section,
-    items: section.items.map(({ headings, ...item }) => item),
+    items: section.items.map(({ headings, segments, ...item }) => item),
   }))
   const updatedAt = pages.map((page) => page.updatedAt).sort().at(-1) ?? null
 
@@ -283,6 +288,7 @@ async function collectBook(book, staging) {
     pageCount: pages.length,
     updatedAt,
     sections,
+    segments: pages.map(({ route, file, title, segments }) => ({ route, file, title, segments })),
     searchIndex: pages.flatMap((page) => [
       { route: page.route, title: page.title, text: page.title, anchor: null },
       ...page.headings.map((heading) => ({
@@ -293,6 +299,44 @@ async function collectBook(book, staging) {
       })),
     ]),
   }
+}
+
+/**
+ * Har sahifa uchun `segments/<kitob>/<fayl>.txt` (namuna formati) va `.json` (qator raqamlari bilan),
+ * hamda `segments/index.json` — hash bo'yicha qaysi bob o'zgarganini bilish uchun (ovozni qayta yaratish).
+ */
+async function writeSegments(pages) {
+  // Avval alohida papkaga yozamiz, keyin almashtiramiz: parallel sync (dev watcher) yoki
+  // `npm run tts` yarim yozilgan papkani ko'rib qolmasin
+  const staging = `${SEGMENTS}.tmp-${process.pid}`
+
+  await rm(staging, { recursive: true, force: true })
+
+  const index = []
+
+  for (const page of pages) {
+    const base = join(staging, page.file.replace(/\.md$/, ''))
+    const text = segmentsToText(page.segments)
+    const words = text.replace(/\[[a-z]+\]/g, ' ').split(/\s+/).filter(Boolean).length
+
+    await mkdir(dirname(base), { recursive: true })
+    await writeFile(`${base}.txt`, text, 'utf8')
+    await writeFile(`${base}.json`, JSON.stringify(page.segments), 'utf8')
+
+    index.push({ route: page.route, file: page.file, title: page.title, hash: segmentsHash(page.segments), segments: page.segments.length, words })
+  }
+
+  await writeFile(join(staging, 'index.json'), JSON.stringify(index, null, 2), 'utf8')
+
+  try {
+    await swapIntoPlace(staging, SEGMENTS)
+  } finally {
+    await rm(staging, { recursive: true, force: true })
+  }
+
+  const words = index.reduce((sum, page) => sum + page.words, 0)
+  // ~130 so'z/daqiqa — o'zbekcha nutqning taxminiy tezligi
+  console.log(`✔ Ovoz segmentlari · ${index.length} sahifa · ${words} so'z (~${Math.round(words / 130 / 60)} soat)`)
 }
 
 async function main() {
@@ -351,6 +395,10 @@ async function main() {
   // Qidiruv indeksi alohida fayl: asosiy bundle'ga kirmaydi, qidiruv birinchi ochilganda yuklanadi
   const searchIndex = Object.fromEntries(collected.map((book) => [book.id, book.searchIndex]))
   for (const book of collected) delete book.searchIndex
+
+  const segmentPages = collected.flatMap((book) => book.segments)
+  for (const book of collected) delete book.segments
+  await writeSegments(segmentPages)
 
   await writeFile(join(ROOT, 'src', 'manifest.json'), JSON.stringify(manifest, null, 2), 'utf8')
   await writeFile(join(ROOT, 'src', 'search-index.json'), JSON.stringify(searchIndex), 'utf8')

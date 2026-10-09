@@ -1925,3 +1925,102 @@ h3.markable > .line-mark { top: 6px; }
     font-weight: 600;
     cursor: pointer;
 }
+
+/* --- bobni tinglash: tugma, pastki pleyer, o'qilayotgan paragraf --- */
+
+.listen-start {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 3px 10px;
+    border: 1px solid color-mix(in srgb, var(--accent) 35%, var(--border));
+    border-radius: 999px;
+    background: var(--bg-elevated);
+    color: var(--accent-text);
+    font: inherit;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.listen-start:hover { border-color: var(--accent); background: var(--accent-soft); }
+.listen-start svg { width: 10px; height: 10px; fill: currentColor; }
+
+.listen-bar {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 70;
+    padding: 10px 16px calc(10px + env(safe-area-inset-bottom));
+    border-top: 1px solid var(--border);
+    background: color-mix(in srgb, var(--bg-elevated) 94%, transparent);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 -8px 24px -12px rgba(16, 24, 40, .25);
+}
+
+.listen-inner {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 920px;
+    margin: 0 auto;
+}
+
+.listen-btn {
+    flex: none;
+    min-width: 36px;
+    height: 34px;
+    padding: 0 8px;
+    border: 1px solid var(--border);
+    border-radius: 9px;
+    background: var(--bg-sunken);
+    color: var(--text);
+    font: inherit;
+    font-size: 12.5px;
+    cursor: pointer;
+}
+
+.listen-btn:hover { border-color: var(--border-strong); background: var(--surface-hover); }
+.listen-btn svg { width: 14px; height: 14px; fill: currentColor; vertical-align: middle; }
+.listen-play { border-color: var(--accent); background: var(--accent); color: var(--bg-elevated); }
+.listen-play:hover { background: var(--accent); opacity: .9; }
+
+.listen-track {
+    position: relative;
+    flex: 1;
+    min-width: 60px;
+    height: 6px;
+    overflow: hidden;
+    border-radius: 999px;
+    background: var(--bg-sunken);
+    cursor: pointer;
+}
+
+.listen-track > span { position: absolute; inset: 0 auto 0 0; background: var(--accent); }
+
+.listen-time { flex: none; color: var(--text-muted); font-family: var(--font-mono); font-size: 12px; }
+.listen-speed { min-width: 48px; font-family: var(--font-mono); }
+
+.listen-follow { display: inline-flex; align-items: center; gap: 5px; color: var(--text-muted); font-size: 12px; cursor: pointer; }
+
+.markdown .is-reading {
+    border-radius: 6px;
+    background: color-mix(in srgb, var(--accent) 14%, transparent);
+    box-shadow: 0 0 0 6px color-mix(in srgb, var(--accent) 14%, transparent);
+    transition: background .25s ease, box-shadow .25s ease;
+}
+
+/* Pleyer ochiq bo'lsa, sahifa oxiri panel ostida qolmasin */
+body:has(.listen-bar) .content { padding-bottom: 80px; }
+
+@media (max-width: 560px) {
+    .listen-inner { flex-wrap: wrap; gap: 8px; }
+    .listen-track { order: 10; flex-basis: 100%; }
+    .listen-follow span { display: none; }
+}
+
+/* O'qilayotgan so'z (CSS Custom Highlight API — DOM o'zgarmaydi) */
+::highlight(tinglash-soz) {
+    background-color: color-mix(in srgb, var(--accent) 55%, transparent);
+    color: var(--text);
+}
