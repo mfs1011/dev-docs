@@ -1,6 +1,7 @@
 import { fileURLToPath, URL } from 'node:url'
 import { dirname, resolve } from 'node:path'
 import { execFileSync } from 'node:child_process'
+import { createReadStream, existsSync, statSync } from 'node:fs'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import { VitePWA } from 'vite-plugin-pwa'
@@ -50,6 +51,59 @@ function markdownWatcher() {
       server.watcher.on('add', (file) => resync(server, file))
       server.watcher.on('change', (file) => resync(server, file))
       server.watcher.on('unlink', (file) => resync(server, file))
+    },
+  }
+}
+
+/**
+ * Dev'da `npm run tts` yaratgan `audio/` ni `/tinglash/` manzilida beradi (pleyer sinovi uchun).
+ * Production'da audio tashqi omborda bo'ladi (`VITE_AUDIO_BASE_URL`, docs/tts.md).
+ */
+function audioDevServer() {
+  const AUDIO_DIR = resolve(APP_ROOT, 'audio')
+  const TYPES = { '.ogg': 'audio/ogg', '.json': 'application/json' }
+
+  return {
+    name: 'docs-audio-dev',
+    apply: 'serve',
+    configureServer(server) {
+      server.middlewares.use('/tinglash', (req, res, next) => {
+        const path = decodeURIComponent((req.url ?? '').split('?')[0])
+        // Eski (teglar o'qilgan) variant faqat BUTUN bob uchun: yangi .ogg bo'lsa — faqat yangi fayllar.
+        // Aks holda yangi audio'ga eski words.json aralashib, highlight sinxronlashmaydi.
+        const page = path.replace(/\.(ogg|timings\.json|words\.json)$/, '')
+        const hasNew = existsSync(resolve(AUDIO_DIR, `.${page}.ogg`))
+        const root = hasNew ? path : path.replace(/^\/([^/]+)\//, '/_eski/$1-teglar/')
+        const file = resolve(AUDIO_DIR, `.${root}`)
+        const type = TYPES[file.slice(file.lastIndexOf('.'))]
+
+        if (!file.startsWith(AUDIO_DIR) || !type || !existsSync(file)) return next()
+
+        // Fayllar qayta yoziladi (chegaralar tuzatilganda) — brauzer eski nusxani ishlatmasin
+        res.setHeader('Cache-Control', 'no-store')
+
+        // Brauzer audio'ni bo'laklab (Range) so'raydi — busiz metadata yuklanmaydi
+        const size = statSync(file).size
+        const range = /^bytes=(\d*)-(\d*)$/.exec(req.headers.range ?? '')
+
+        res.setHeader('Content-Type', type)
+        res.setHeader('Accept-Ranges', 'bytes')
+
+        if (!range) {
+          res.setHeader('Content-Length', size)
+          createReadStream(file).pipe(res)
+
+          return
+        }
+
+        const start = range[1] ? Number(range[1]) : Math.max(0, size - Number(range[2]))
+        const end = range[1] && range[2] ? Math.min(Number(range[2]), size - 1) : size - 1
+
+        res.statusCode = 206
+        res.setHeader('Content-Range', `bytes ${start}-${end}/${size}`)
+        res.setHeader('Content-Length', end - start + 1)
+        createReadStream(file, { start, end }).pipe(res)
+      })
     },
   }
 }
@@ -117,7 +171,7 @@ function pwa() {
 export default defineConfig({
   // GitHub Pages uchun: BASE_PATH=/docs-web/ npm run build
   base: process.env.BASE_PATH ?? '/',
-  plugins: [vue(), markdownWatcher(), pwa()],
+  plugins: [vue(), markdownWatcher(), audioDevServer(), pwa()],
   build: {
     rollupOptions: {
       output: {

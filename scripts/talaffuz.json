@@ -1,0 +1,5 @@
+{
+  "_izoh": "TTS uchun talaffuz: chap — sahifadagi so'z (katta-kichik harf muhim), o'ng — modelga yuboriladigan o'zbekcha yozilish. Faqat rasmiy talaffuzi aniq atamalar. Sahifa matni o'zgarmaydi; scripts/tts.mjs va scripts/align.py ikkalasi ham shu faylni o'qiydi.",
+  "Vite": "Vit",
+  "Vue": "Vyu"
+}

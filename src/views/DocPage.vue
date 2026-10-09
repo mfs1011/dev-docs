@@ -1,6 +1,7 @@
 <script setup>
 import { computed, nextTick, onBeforeUnmount, ref, shallowRef, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
+import ListenPlayer from '@/components/ListenPlayer.vue'
 import PageToc from '@/components/PageToc.vue'
 import { renderMarkdown, sectionKindFor } from '@/markdown'
 import { findBook, findPage, formatDate, loadSource, neighbours, resolveDocLink } from '@/docs'
@@ -480,6 +481,7 @@ onBeforeUnmount(() => {
             <div v-if="page" class="page-meta">
                 <p class="breadcrumb">{{ page.section }}</p>
                 <p class="page-meta-info">
+                    <ListenPlayer :page="page" :container="article" />
                     <button
                         v-if="hasMarkHere"
                         type="button"
