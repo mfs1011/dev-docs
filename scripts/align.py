@@ -136,11 +136,14 @@ def transcript(page_file: str, legacy: bool, audio_path: Path):
         # qo'shni so'zlarni cho'zib yubormasin
         words.append({"line": None, "w": None, "word": "*"})
         index = 0
-        for row in segment["text"].split("\n"):
+        for row_index, row in enumerate(segment["text"].split("\n")):
             if index:
                 words.append({"line": None, "w": None, "word": "*"})
             for word in row.split():
-                words.append({"line": segment["line"], "w": index, "word": word})
+                item = {"line": segment["line"], "w": index, "word": word}
+                if segment["type"] == "table":
+                    item["r"] = row_index  # 0 — izoh, 1… — jadval qatorlari (pleyer qatorni taxmin qilmasin)
+                words.append(item)
                 index += 1
 
         if legacy and segment["type"] == "heading":
@@ -209,7 +212,10 @@ def align(model, tokenizer, aligner, audio_path: Path, words):
 
         # Raqam/belgidan iborat so'z — oldingi so'z oxiridan keyingi so'z boshigacha
         start, end = times.get(position, (last_end, last_end))
-        result.append({"line": item["line"], "w": item["w"], "word": item["word"], "s": round(start, 2), "e": round(end, 2)})
+        entry = {"line": item["line"], "w": item["w"], "word": item["word"], "s": round(start, 2), "e": round(end, 2)}
+        if "r" in item:
+            entry["r"] = item["r"]
+        result.append(entry)
         last_end = end
 
     return result, extras
@@ -397,6 +403,53 @@ def refine_boundaries(model, tokenizer, aligner, pages):
     return changed
 
 
+TAIL_SPILL = 10.0  # bob oxirida so'zga mos kelmagan audio shundan uzun bo'lsa — keyingi bobning boshi
+
+
+def move_tail_spill(pages):
+    """
+    Bob oxirida (oxirgi so'zdan keyin) uzun "begona" audio bo'lsa — bu keyingi bobning boshi
+    (bir nechta bob bitta so'rovda yaratilib, noto'g'ri kesilgan; ±75 s chegara tekshiruvi
+    bundan kattasini ko'rmaydi). U keyingi bob boshiga ko'chiriladi — hech narsa o'chirilmaydi.
+    words.json kerak (oxirgi so'z vaqti uchun). Qaytaradi: o'zgargan boblar.
+    """
+    changed = set()
+
+    with __import__("tempfile").TemporaryDirectory() as temp:
+        temp = Path(temp)
+
+        for (left_file, left_path), (right_file, right_path) in zip(pages, pages[1:]):
+            words_path = left_path.with_name(left_path.name.replace(".ogg", ".words.json"))
+            if not words_path.exists():
+                continue
+
+            words = json.loads(words_path.read_text())
+            if not words:
+                continue
+
+            cut = words[-1]["e"] + 0.25
+            spill = duration_of(left_path) - cut
+            if spill < TAIL_SPILL:
+                continue
+
+            head, rest = temp / "head.wav", temp / "rest.wav"
+            joined, encoded = temp / "joined.wav", temp / "out.ogg"
+            subprocess.run(["ffmpeg", "-y", "-v", "error", "-ss", str(cut), "-i", str(left_path), str(head)], check=True)
+            subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(left_path), "-t", str(cut), str(rest)], check=True)
+            subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(head), "-i", str(right_path),
+                            "-filter_complex", "[0:a][1:a]concat=n=2:v=0:a=1", str(joined)], check=True)
+
+            for source, target in ((rest, left_path), (joined, right_path)):
+                subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(source), "-c:a", "libopus", "-b:a", "24k", "-ac", "1", str(encoded)], check=True)
+                encoded.replace(target)
+                target.with_name(target.name.replace(".ogg", ".words.json")).unlink(missing_ok=True)
+
+            changed.update({left_file, right_file})
+            print(f"  ⇢ {left_file} oxiridagi {spill:.0f} s → {right_file} boshiga")
+
+    return changed
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--voice", default="Charon")
@@ -466,9 +519,6 @@ def main():
                 jobs.append((page_file, audio_path, output, False))
 
     print(f"Hisoblanadigan: {len(jobs)} bob")
-    if not jobs:
-        return
-
     load_model()
 
     for page_file, audio_path, output, legacy in jobs:
@@ -494,6 +544,19 @@ def main():
             print(f"  ✓ {page_file}{note} · {len(result)} so'z")
         except Exception as error:  # bitta bob xatosi boshqalarini to'xtatmasin
             print(f"  ✗ {page_file}: {error}", file=sys.stderr)
+
+    # Bob oxirida qolib ketgan keyingi bob boshi — ko'chirib, ikkala bobni qayta moslash
+    for book, pages in by_book.items():
+        moved = move_tail_spill(pages)
+        for page_file, audio_path in pages:
+            if page_file not in moved:
+                continue
+            output = audio_path.with_name(audio_path.name.replace(".ogg", ".words.json"))
+            words = transcript(page_file, False, audio_path)
+            result, extras = align(model, tokenizer, aligner, audio_path, words)
+            output.write_text(json.dumps(result, ensure_ascii=False))
+            write_timings(audio_path, result)
+            print(f"  ✓ {page_file} (ko'chirilgandan keyin) · {len(result)} so'z")
 
 
 if __name__ == "__main__":

@@ -1,5 +1,6 @@
 <script setup>
 import { computed, onBeforeUnmount, ref, watch } from 'vue'
+import { mapWords } from '@/listen-map'
 
 /**
  * Bobni tinglash: `npm run tts` yaratgan `<bob>.ogg` va `<bob>.timings.json` (docs/tts.md).
@@ -31,6 +32,7 @@ let words = []
 let highlighted = null
 let frame = 0
 let activeWord = -1
+let activeLine = null
 // Audio va so'z vaqtlari bir xil versiyadan bo'lsin: fayl qayta yozilsa, brauzer keshidagi eskisi ishlatilmaydi
 let version = ''
 // Sahifadagi so'zlar: qator → [{ token, range }] (birinchi kerak bo'lganda hisoblanadi)
@@ -125,53 +127,15 @@ function clearHighlight() {
   highlighted?.classList.remove('is-reading')
   highlighted = null
   activeWord = -1
+  activeLine = null
   if (supportsWordHighlight) CSS.highlights.delete(WORD_HIGHLIGHT)
 }
 
-/** Taqqoslash uchun so'z: kichik harf, apostroflar bir xil, belgilar olib tashlangan */
-const normalize = (word) => String(word).toLowerCase().replace(/[ʻʼ’‘`´]/g, "'").replace(/[^\p{L}\p{N}']/gu, '')
-
-/** Element ichidagi so'zlar va ularning DOM Range'lari (kod bloklari tashlab ketiladi) */
+/** Segment so'zlari → sahifadagi Range'lar (src/listen-map.js; jadval, kod uchun zaxira bilan) */
 function wordsOf(line) {
   if (domWords.has(line)) return domWords.get(line)
 
-  const element = elementFor(line)
-  const list = []
-
-  if (element) {
-    const walker = document.createTreeWalker(element, NodeFilter.SHOW_TEXT, {
-      acceptNode: (node) => (node.parentElement?.closest('pre, .line-mark, .code-copy') ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT),
-    })
-
-    for (let node = walker.nextNode(); node; node = walker.nextNode()) {
-      for (const match of node.data.matchAll(/\S+/g)) {
-        const token = normalize(match[0])
-        if (!token) continue
-
-        const range = document.createRange()
-        range.setStart(node, match.index)
-        range.setEnd(node, match.index + match[0].length)
-        list.push({ token, range })
-      }
-    }
-  }
-
-  // Segment so'zlarini sahifadagi so'zlarga ketma-ket moslash (URL o'rniga "havola" kabi farqlar o'tkazib yuboriladi)
-  const mapped = new Map()
-  let cursor = 0
-
-  for (const item of words.filter((word) => word.line === line)) {
-    const token = normalize(item.word)
-    if (!token) continue
-
-    for (let index = cursor; index < Math.min(list.length, cursor + 8); index += 1) {
-      if (list[index].token === token) {
-        mapped.set(item.w, list[index].range)
-        cursor = index + 1
-        break
-      }
-    }
-  }
+  const mapped = mapWords(elementFor(line), words.filter((word) => word.line === line), document)
 
   domWords.set(line, mapped)
 
@@ -181,19 +145,26 @@ function wordsOf(line) {
 function highlightWord(time) {
   if (!supportsWordHighlight || !words.length) return
 
-  let found = wordAt(time)
+  const index = wordAt(time)
+  const word = words[index]
 
-  // So'z vaqti g'ayritabiiy uzun bo'lsa (ovoz va matn mos kelmagan joy) — highlight 1 s dan ortiq turmasin
-  if (found >= 0 && time > Math.min(words[found].e, words[found].s + 1) + 0.15) found = -1
+  if (index === activeWord) return
+  activeWord = index
 
-  if (found === activeWord) return
-  activeWord = found
-
-  const word = words[found]
   const range = word ? wordsOf(word.line).get(word.w) : null
 
-  if (range) CSS.highlights.set(WORD_HIGHLIGHT, new Highlight(range))
-  else CSS.highlights.delete(WORD_HIGHLIGHT)
+  // Mos joyi yo'q so'z (model o'qimagan raqam, kod) — oldingi belgi o'z segmenti ichida turadi,
+  // keyingi so'zgacha; boshqa joyga sakramaydi va o'chib-yonmaydi
+  if (!range) {
+    if (!word || word.line !== activeLine) {
+      CSS.highlights.delete(WORD_HIGHLIGHT)
+      activeLine = null
+    }
+    return
+  }
+
+  activeLine = word.line
+  CSS.highlights.set(WORD_HIGHLIGHT, new Highlight(range))
 }
 
 /** timeupdate soniyasiga ~4 marta keladi — so'z uchun kam, shuning uchun har kadrda */
