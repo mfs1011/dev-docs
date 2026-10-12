@@ -13,6 +13,7 @@ Qisqacha:
 - `npm run tts:align` → `<bob>.words.json` (so'z vaqtlari, MMS forced aligner, lokal; `scripts/align.py`).
 - Hozirgi ovoz: **Charon** (erkak); keyin **Kore** (ayol).
 - **Keyingi ovoz yaratishdan oldin:** docs/tts.md dagi "Jadvallarni o'qish qoidalari"ni `scripts/segments.mjs` da amalga oshirish (har qator ustun nomlari bilan, ✅/❌ o'qilmaydi), so'ng ro'yxatdagi boblarni `--redo`.
+- **Kod bloklarini tinglash** (reja, docs/tts.md "Kod bloklarini tinglash"): SQL kitobi tugagach boshlanadi; avval React/Next'da pleyerda "Kodda to'xtash" + `<!-- tinglash: … -->` og'zaki tavsif sinab tasdiqlanadi, keyin qolgan kitoblarga.
 - `GEMINI_API_KEY` faqat `.env` da. `segments/` va `audio/` git'da yo'q — boshqa kompyuterga `audio/` ni qo'lda ko'chirish kerak (docs/tts.md).
 
 ## Qo'llanma yozish qoidasi (majburiy)
