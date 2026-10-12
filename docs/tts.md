@@ -201,6 +201,19 @@ Kalit: <https://aistudio.google.com/apikey> (Gemini Pro obunasi API limitini osh
 3. **`audio/` papkasini ko'chirib oling** (u git'da yo'q): busiz skript tayyor sahifalarni bilmaydi va ularni qaytadan ovozlaydi — kunlik limit behuda ketadi. Kamida `audio/<ovoz>/state.json` va `.ogg` fayllar kerak.
 4. `npm run sync && npm run tts -- --plan`, keyin `npm run tts`.
 
+## Kod bloklarini tinglash — reja (2026-10-12, foydalanuvchi tasdiqlagan)
+
+Muammo: tinglaganda kod o'rnida faqat "Kod misoli." deyiladi va keyingi gapga o'tib ketadi — tinglovchi kodni ko'rib ulgurmaydi, kod nima qilgani noma'lum qoladi (kitoblarda ~7 000 kod bloki).
+
+**Tartib:** avval SQL kitobi tugatiladi, keyin shu reja boshlanadi. Hammasi avval **React va Next.js** da (ovozi bor ikki kitob) sinab, "ma'qul" holatga keltiriladi; shundan keyingina qolgan kitoblarga yoyiladi — hammasiga yozib, kamchilik chiqsa qayta yozib chiqmaslik uchun.
+
+1. **Pleyer: "Kodda to'xtash"** (`ListenPlayer.vue`). Yoqilganda ovoz `[code]` segmentiga yetganda pauza qiladi, kod blokini belgilab ekranga suradi; "Davom" bosilganda davom etadi. Yangi audio kerak emas — `timings.json` dagi `line`/`at` yetarli. Birinchi qadam.
+2. **Og'zaki tavsif** (`scripts/segments.mjs`). Kod blokidan oldin markdown'da yashirin izoh: `<!-- tinglash: Bu yerda talabalar jadvali yaratiladi: … -->`. Izoh bo'lsa `[code]` segmenti shu matnni o'qiydi, bo'lmasa — avvalgidek "Kod misoli.". Highlight paytida tavsif o'qilayotganda kod bloki belgilanadi.
+   - Tavsif 1–2 gap: kod **nima qiladi** va asosiy qismlari; kodni so'zma-so'z o'qimaydi (inglizcha kalit so'zlar o'zbek ovozida yomon chiqadi).
+   - Kod chiqishi (` ```text ` natijalar) — tavsif kerakmi yoki "Natija ekranda" yetadimi — React/Next sinovida hal qilinadi. Diagrammalar uchun tavsif kerak (pastdagi `speechDescription` g'oyasi shu mexanizm bilan amalga oshadi).
+   - Tavsifni yozganda bob matni o'zgaradi → hash o'zgaradi → audio qayta yaratiladi (kunlik limit). Shuning uchun React/Next'da avval 2–3 bob namuna, foydalanuvchi tinglab tasdiqlagach — qolganlari.
+3. **Yoyish:** React/Next ma'qul bo'lgach — ovoz navbatidagi kitoblarga (Vue → …) ovoz yaratishdan **oldin** tavsiflar yoziladi; hozir yozilayotgan SQL boblariga ham tavsiflar shu bosqichda (React/Next formati tasdiqlangandan keyin) qo'shiladi; undan keyin yoziladigan yangi boblarga — bob bilan birga.
+
 ## Ochiq savollar (keyingi qadamlar)
 
 - **Foydalanuvchining ChatGPT suhbatidagi takliflar** (prompt, diagrammalar uchun `speechDescription`, o'qilayotgan matnni highlight qilish) — hali to'liq ko'rilmagan; olingach shu reja ularga moslanadi.
