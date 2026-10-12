@@ -1,75 +1,176 @@
-# SQL va PostgreSQL — so'rovlar, sxema va unumdorlik
+# SQL — standart, PostgreSQL, MySQL va SQLite
 
-ORM ortida nima bo'layotganini tushunish, sekin so'rovni topib tuzatish va sxemani production'da xavfsiz o'zgartirish. Misollar PostgreSQL'da, Docker konteynerida real ishga tushirib tekshiriladi.
+Bu qo'llanma SQL tilini **standart asosida** o'rgatadi. Asosiy ishchi baza — PostgreSQL. Har bobda alohida **"Dialektlar"** bo'limi bor: shu mavzu MySQL va SQLite'da qanday ishlashi va qayerda farq qilishi.
 
-Rasmiy manba: <https://www.postgresql.org/docs/current/>. Versiyalar har bobni yozishdan oldin tekshiriladi va shu yerda jadval sifatida beriladi.
+Maqsad — ORM ortida nima bo'layotganini tushunish, sekin so'rovni topib tuzatish va sxemani production'da xavfsiz o'zgartirish.
 
-> **Holat.** Qo'llanma tayyorlanmoqda — quyida rejalashtirilgan mundarija.
+Mundarija rasmiy hujjatlar tuzilmasiga solishtirib tuzilgan. Har bob yonida u tayanadigan rasmiy sahifalar ko'rsatilgan. Har bobni yozishdan oldin shu sahifalar qayta o'qiladi. Kod misollari real bazada ishga tushirib tekshiriladi.
+
+Manbalar va versiyalar (2026-10-10 da tekshirilgan):
+
+| Narsa | Versiya | Qayerdan olindi |
+| --- | --- | --- |
+| PostgreSQL | 18.6 | <https://www.postgresql.org/docs/18/> — joriy barqaror versiya (18.6, 2026-08-13); 19 hali beta |
+| MySQL | 9.7 LTS | <https://dev.mysql.com/doc/refman/9.7/en/> — eng yangi LTS ("8.4.x LTS to 9.7.x LTS", MySQL Releases sahifasi) |
+| SQLite | 3.54.0 | <https://www.sqlite.org/docs.html> — 2026-10-09 relizi |
+| Sinov muhiti | PG 18.6, MySQL 9.7.2, SQLite 3.54.0 | macOS. PG va MySQL — Homebrew (`postgresql@18`, `mysql@9.7`); SQLite — rasmiy manba kodidan (`sqlite-autoconf-3540000`, SHA3-256 tekshirilgan) `./configure && make` bilan yig'ilgan |
+| SQL standarti | SQL:2023 | PostgreSQL hujjatining D ilovasi (<https://www.postgresql.org/docs/18/features.html>) va SQL buyruqlari sahifalaridagi "Compatibility" bo'limlari |
+
+Versiya tanlovi haqida:
+
+- **MySQL.** Rasmiy hujjat LTS seriyani "barqaror funksiyalar va uzoq qo'llab-quvvatlash kerak bo'lsa" tavsiya qiladi. Hozirgi eng yangi LTS — 9.7. Undan keyingi relizlar yil va oyga asoslangan raqamlashga o'tgan (26.7).
+- **PostgreSQL.** 19-versiya beta bosqichida. U faqat izohlarda eslatiladi.
+
+Qisqartmalar:
+
+- **PG** — PostgreSQL 18 hujjati.
+- **MY** — MySQL 9.7 qo'llanmasi.
+- **SL** — SQLite hujjati.
+
+> **Holat.** Qo'llanma yozilmoqda: 5/70 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
-## I qism — Poydevor (1–6)
+## Har bobning skeleti
 
-| # | Bob | Mazmun |
-| --- | --- | --- |
-| 01 | Ma'lumotlar bazasi nima va nega PostgreSQL *(tayyorlanmoqda)* | Relyatsion model, SQL vs NoSQL, PostgreSQL'ning o'rni |
-| 02 | O'rnatish va ulanish *(tayyorlanmoqda)* | Docker'da PostgreSQL, `psql`, GUI (DBeaver/pgAdmin), ulanish satri |
-| 03 | Jadvallar va tiplar *(tayyorlanmoqda)* | `CREATE TABLE`, raqam, matn, sana/vaqt (`timestamptz`!), `boolean`, `uuid`, `numeric` (pul) |
-| 04 | CRUD *(tayyorlanmoqda)* | `INSERT`, `SELECT`, `UPDATE`, `DELETE`, `RETURNING` |
-| 05 | Filtrlash va saralash *(tayyorlanmoqda)* | `WHERE`, `AND/OR`, `IN`, `LIKE/ILIKE`, `NULL` mantiqi, `ORDER BY`, `LIMIT/OFFSET` |
-| 06 | Cheklovlar *(tayyorlanmoqda)* | `PRIMARY KEY`, `NOT NULL`, `UNIQUE`, `CHECK`, `DEFAULT`, `FOREIGN KEY` va `ON DELETE` |
+- **Tushuncha** — mavzu nima, oddiy so'zlar bilan.
+- **Standart** — SQL standartida qanday; PostgreSQL qayerda undan chetga chiqadi (hujjatdagi "Compatibility" bo'limi).
+- **Kod** — PostgreSQL'da ishga tushirilgan so'rovlar va ularning **haqiqiy** natijasi.
+- **Dialektlar** — MySQL va SQLite'da farqi, rasmiy sahifaga havola bilan.
+- **Tipik xatolar** — xato → nega yomon → to'g'ri yo'l.
+- **Amaliyot** — mashqlar.
+- **Rasmiy hujjat** — bob tayangan sahifalar.
 
-## II qism — So'rovlar (7–14)
+---
 
-| # | Bob | Mazmun |
-| --- | --- | --- |
-| 07 | JOIN'lar *(tayyorlanmoqda)* | `INNER`, `LEFT`, `RIGHT`, `FULL`, `CROSS`, self-join — diagrammalar bilan |
-| 08 | Agregatsiya *(tayyorlanmoqda)* | `COUNT`, `SUM`, `AVG`, `GROUP BY`, `HAVING`, `FILTER` |
-| 09 | Subquery va `EXISTS` *(tayyorlanmoqda)* | Skalyar, `IN`, korrelyatsiyalangan so'rovlar |
-| 10 | CTE *(tayyorlanmoqda)* | `WITH`, rekursiv CTE (daraxtlar, kategoriyalar) |
-| 11 | Window funksiyalar *(tayyorlanmoqda)* | `ROW_NUMBER`, `RANK`, `LAG/LEAD`, yig'ma summa, `PARTITION BY` |
-| 12 | Set amallari *(tayyorlanmoqda)* | `UNION`, `INTERSECT`, `EXCEPT` |
-| 13 | Funksiyalar *(tayyorlanmoqda)* | Matn, sana, `COALESCE`, `CASE`, `generate_series` |
-| 14 | `UPSERT` va ommaviy amallar *(tayyorlanmoqda)* | `ON CONFLICT`, `INSERT … SELECT`, `COPY` |
+## I qism — Kirish va muhit (1–5)
 
-## III qism — Sxema dizayni (15–20)
+| # | Bob | Mazmun | Rasmiy manba |
+| --- | --- | --- | --- |
+| 01 | [Relyatsion model va SQL standarti](01-relyatsion-model.md) | Relyatsiya, qator, ustun, kalit; SQL-92 dan SQL:2023 gacha; standartga moslik va dialektlar; MySQL `sql_mode` | [PG tutorial-concepts](https://www.postgresql.org/docs/18/tutorial-concepts.html) · [PG features](https://www.postgresql.org/docs/18/features.html) · [MY compatibility](https://dev.mysql.com/doc/refman/9.7/en/compatibility.html) · [MY sql-mode](https://dev.mysql.com/doc/refman/9.7/en/sql-mode.html) · [SL quirks](https://www.sqlite.org/quirks.html) |
+| 02 | [PostgreSQL, MySQL va SQLite](02-uch-tizim.md) | Client/server va o'rnatilgan (embedded) arxitektura; SQLite qachon mos; MySQL storage engine'lari; LTS va Innovation relizlari | [PG tutorial-arch](https://www.postgresql.org/docs/18/tutorial-arch.html) · [SL whentouse](https://www.sqlite.org/whentouse.html) · [SL serverless](https://www.sqlite.org/serverless.html) · [MY storage engines](https://dev.mysql.com/doc/refman/9.7/en/pluggable-storage-overview.html) · [MY releases](https://dev.mysql.com/doc/refman/9.7/en/mysql-releases.html) |
+| 03 | [O'rnatish va ulanish](03-ornatish-va-ulanish.md) | PostgreSQL paketlari; MySQL Docker image'i (Oracle Container Registry); `psql`, `mysql`, `sqlite3`; PG ulanish URI'si, MySQL ulanish parametrlari | [PG install-binaries](https://www.postgresql.org/docs/18/install-binaries.html) · [PG app-psql](https://www.postgresql.org/docs/18/app-psql.html) · [PG libpq-connect](https://www.postgresql.org/docs/18/libpq-connect.html) · [MY docker](https://dev.mysql.com/doc/refman/9.7/en/linux-installation-docker.html) · [MY connecting](https://dev.mysql.com/doc/refman/9.7/en/connecting.html) · [SL cli](https://www.sqlite.org/cli.html) |
+| 04 | [SQL sintaksisi](04-sql-sintaksisi.md) | Leksik tuzilma, kalit so'zlar, identifikatorlar (`"x"`, `` `x` ``, `[x]`), katta-kichik harfga keltirish, literallar, dollar quoting, izohlar (MySQL'da `-- ` dan keyin probel), operator ustuvorligi | [PG sql-syntax-lexical](https://www.postgresql.org/docs/18/sql-syntax-lexical.html) · [MY identifiers](https://dev.mysql.com/doc/refman/9.7/en/identifiers.html) · [MY identifier-case](https://dev.mysql.com/doc/refman/9.7/en/identifier-case-sensitivity.html) · [MY comments](https://dev.mysql.com/doc/refman/9.7/en/comments.html) · [SL lang_keywords](https://www.sqlite.org/lang_keywords.html) |
+| 05 | [Baza, sxema va jadval](05-baza-sxema-jadval.md) | `CREATE DATABASE`, shablon bazalar; PG schema va `search_path` (xavfsizlik eslatmasi bilan); MySQL'da `SCHEMA` = `DATABASE`; SQLite `ATTACH` | [PG sql-createdatabase](https://www.postgresql.org/docs/18/sql-createdatabase.html) · [PG ddl-schemas](https://www.postgresql.org/docs/18/ddl-schemas.html) · [PG templatedbs](https://www.postgresql.org/docs/18/manage-ag-templatedbs.html) · [MY create-database](https://dev.mysql.com/doc/refman/9.7/en/create-database.html) · [SL lang_attach](https://www.sqlite.org/lang_attach.html) |
 
-| # | Bob | Mazmun |
-| --- | --- | --- |
-| 15 | Modellash *(tayyorlanmoqda)* | Biznesdan jadvallarga, ER diagramma |
-| 16 | Normalizatsiya *(tayyorlanmoqda)* | 1NF–3NF, qachon denormalizatsiya |
-| 17 | Aloqalar *(tayyorlanmoqda)* | 1:1, 1:N, M:N, oraliq jadvallar |
-| 18 | ID tanlash *(tayyorlanmoqda)* | `serial`/`identity`, UUID v4 vs v7, tabiiy kalitlar |
-| 19 | JSONB *(tayyorlanmoqda)* | Qachon kerak, operatorlar, indeks, xavflari |
-| 20 | Enum, massiv va maxsus tiplar *(tayyorlanmoqda)* | `enum` vs lookup jadval, massivlar, domenlar |
+## II qism — Ma'lumot tiplari (6–11)
 
-## IV qism — Unumdorlik (21–26)
+| # | Bob | Mazmun | Rasmiy manba |
+| --- | --- | --- | --- |
+| 06 | Raqamlar *(tayyorlanmoqda)* | Butun sonlar, `numeric`/`decimal` (aniq), `real`/`double` (taqribiy), PG `money`; MySQL `UNSIGNED` (FLOAT/DOUBLE/DECIMAL uchun eskirgan), `ZEROFILL` va display width eskirgan, `SERIAL` | [PG datatype-numeric](https://www.postgresql.org/docs/18/datatype-numeric.html) · [MY numeric-types](https://dev.mysql.com/doc/refman/9.7/en/numeric-types.html) · [MY numeric-type-attributes](https://dev.mysql.com/doc/refman/9.7/en/numeric-type-attributes.html) · [MY problems-with-float](https://dev.mysql.com/doc/refman/9.7/en/problems-with-float.html) · [SL datatype3](https://www.sqlite.org/datatype3.html) |
+| 07 | Matn va binary *(tayyorlanmoqda)* | `char`/`varchar`/`text` (PG'da tezlik farqi yo'q), MySQL `TEXT` o'lchamlari va 65 535 baytlik qator chegarasi; `bytea` va `BLOB` | [PG datatype-character](https://www.postgresql.org/docs/18/datatype-character.html) · [PG datatype-binary](https://www.postgresql.org/docs/18/datatype-binary.html) · [MY char](https://dev.mysql.com/doc/refman/9.7/en/char.html) · [MY blob](https://dev.mysql.com/doc/refman/9.7/en/blob.html) · [MY storage-requirements](https://dev.mysql.com/doc/refman/9.7/en/storage-requirements.html) |
+| 08 | Sana va vaqt *(tayyorlanmoqda)* | `timestamp` va `timestamptz`, `interval`, vaqt zonalari, `AT TIME ZONE`; MySQL `TIMESTAMP` (2038-yil chegarasi, UTC'ga o'giriladi) va `DATETIME`, kasr sekundlar; MySQL'da `INTERVAL` tip emas; SQLite'da sana tipi yo'q | [PG datatype-datetime](https://www.postgresql.org/docs/18/datatype-datetime.html) · [MY datetime](https://dev.mysql.com/doc/refman/9.7/en/datetime.html) · [MY time-zone-support](https://dev.mysql.com/doc/refman/9.7/en/time-zone-support.html) · [SL lang_datefunc](https://www.sqlite.org/lang_datefunc.html) |
+| 09 | Boolean, UUID va enum *(tayyorlanmoqda)* | PG `boolean`; MySQL `BOOL` = `TINYINT(1)`; SQLite 0/1; PG `uuid`, `uuidv4()`, `uuidv7()` (PG 18); MySQL `UUID()` (1-versiya), `UUID_TO_BIN`; PG va MySQL `ENUM` | [PG datatype-boolean](https://www.postgresql.org/docs/18/datatype-boolean.html) · [PG functions-uuid](https://www.postgresql.org/docs/18/functions-uuid.html) · [PG datatype-enum](https://www.postgresql.org/docs/18/datatype-enum.html) · [MY numeric-type-syntax](https://dev.mysql.com/doc/refman/9.7/en/numeric-type-syntax.html) · [MY miscellaneous-functions](https://dev.mysql.com/doc/refman/9.7/en/miscellaneous-functions.html) · [MY enum](https://dev.mysql.com/doc/refman/9.7/en/enum.html) |
+| 10 | NULL va tip konversiyasi *(tayyorlanmoqda)* | Uch qiymatli mantiq, `IS [NOT] DISTINCT FROM`, MySQL `<=>`; `CAST` va PG `::`; yashirin konversiya; SQLite type affinity va `STRICT` jadvallar | [PG functions-logical](https://www.postgresql.org/docs/18/functions-logical.html) · [PG typeconv](https://www.postgresql.org/docs/18/typeconv.html) · [MY type-conversion](https://dev.mysql.com/doc/refman/9.7/en/type-conversion.html) · [MY working-with-null](https://dev.mysql.com/doc/refman/9.7/en/working-with-null.html) · [SL nulls](https://www.sqlite.org/nulls.html) · [SL stricttables](https://www.sqlite.org/stricttables.html) |
+| 11 | Kodlash va collation *(tayyorlanmoqda)* | PG kodlashlari va locale provider'lari, ICU va nondeterministic collation; MySQL `utf8mb4` va eskirgan `utf8mb3`, `utf8mb4_0900_ai_ci`, ulanish kodlashi; SQLite `NOCASE` (faqat ASCII) | [PG collation](https://www.postgresql.org/docs/18/collation.html) · [PG locale](https://www.postgresql.org/docs/18/locale.html) · [PG multibyte](https://www.postgresql.org/docs/18/multibyte.html) · [MY charset-unicode-utf8mb4](https://dev.mysql.com/doc/refman/9.7/en/charset-unicode-utf8mb4.html) · [MY charset-server](https://dev.mysql.com/doc/refman/9.7/en/charset-server.html) · [MY charset-connection](https://dev.mysql.com/doc/refman/9.7/en/charset-connection.html) |
 
-| # | Bob | Mazmun |
-| --- | --- | --- |
-| 21 | Indekslar asoslari *(tayyorlanmoqda)* | B-tree qanday ishlaydi, qachon yordam beradi/bermaydi |
-| 22 | `EXPLAIN` va `EXPLAIN ANALYZE` *(tayyorlanmoqda)* | Rejani o'qish: Seq Scan, Index Scan, Nested Loop, Hash Join |
-| 23 | Indeks turlari *(tayyorlanmoqda)* | Kompozit, partial, expression, covering (`INCLUDE`), GIN, GiST |
-| 24 | Tipik sekin so'rovlar *(tayyorlanmoqda)* | N+1, `OFFSET` sahifalash, funksiya ichidagi ustun, `OR` |
-| 25 | Sahifalash *(tayyorlanmoqda)* | Offset vs keyset (cursor) |
-| 26 | To'liq matnli qidiruv *(tayyorlanmoqda)* | `tsvector`, `tsquery`, `pg_trgm` |
+## III qism — Jadvallar va cheklovlar, DDL (12–17)
 
-## V qism — Tranzaksiyalar va parallellik (27–30)
+| # | Bob | Mazmun | Rasmiy manba |
+| --- | --- | --- | --- |
+| 12 | `CREATE TABLE` va `DEFAULT` *(tayyorlanmoqda)* | Jadval yaratish, `DEFAULT` (MySQL'da ifoda qavsda), `CREATE TABLE AS` / `LIKE`, PG `TEMP` va `UNLOGGED`, tizim ustunlari (PG `ctid`, `xmin`; SQLite `rowid`) | [PG sql-createtable](https://www.postgresql.org/docs/18/sql-createtable.html) · [PG ddl-default](https://www.postgresql.org/docs/18/ddl-default.html) · [PG ddl-system-columns](https://www.postgresql.org/docs/18/ddl-system-columns.html) · [MY create-table](https://dev.mysql.com/doc/refman/9.7/en/create-table.html) · [MY data-type-defaults](https://dev.mysql.com/doc/refman/9.7/en/data-type-defaults.html) · [SL lang_createtable](https://www.sqlite.org/lang_createtable.html) |
+| 13 | Identity va sequence *(tayyorlanmoqda)* | `GENERATED ALWAYS / BY DEFAULT AS IDENTITY`, `serial` ("haqiqiy tip emas"), `CREATE SEQUENCE`, `nextval` va bo'shliqlar; MySQL `AUTO_INCREMENT`; SQLite `INTEGER PRIMARY KEY` va `AUTOINCREMENT` | [PG ddl-identity-columns](https://www.postgresql.org/docs/18/ddl-identity-columns.html) · [PG sql-createsequence](https://www.postgresql.org/docs/18/sql-createsequence.html) · [MY innodb-auto-increment-handling](https://dev.mysql.com/doc/refman/9.7/en/innodb-auto-increment-handling.html) · [SL autoinc](https://www.sqlite.org/autoinc.html) · [SL rowidtable](https://www.sqlite.org/rowidtable.html) |
+| 14 | Cheklovlar *(tayyorlanmoqda)* | `PRIMARY KEY`, `NOT NULL`, `UNIQUE` (`NULLS NOT DISTINCT`, PG 15), `CHECK`, `FOREIGN KEY` va `ON DELETE`, `DEFERRABLE`; `NOT ENFORCED` (PG 18 — CHECK va FK; MySQL — faqat CHECK); exclusion constraint; SQLite'da FK sukut bo'yicha o'chiq | [PG ddl-constraints](https://www.postgresql.org/docs/18/ddl-constraints.html) · [MY create-table-check-constraints](https://dev.mysql.com/doc/refman/9.7/en/create-table-check-constraints.html) · [MY create-table-foreign-keys](https://dev.mysql.com/doc/refman/9.7/en/create-table-foreign-keys.html) · [MY ansi-diff-foreign-keys](https://dev.mysql.com/doc/refman/9.7/en/ansi-diff-foreign-keys.html) · [SL foreignkeys](https://www.sqlite.org/foreignkeys.html) |
+| 15 | Generated ustunlar *(tayyorlanmoqda)* | `STORED` va `VIRTUAL` — PG 18, MySQL va SQLite'da sukut bo'yicha virtual | [PG ddl-generated-columns](https://www.postgresql.org/docs/18/ddl-generated-columns.html) · [MY create-table-generated-columns](https://dev.mysql.com/doc/refman/9.7/en/create-table-generated-columns.html) · [SL gencol](https://www.sqlite.org/gencol.html) |
+| 16 | Jadvalni o'zgartirish *(tayyorlanmoqda)* | `ALTER TABLE`, `DROP`, `TRUNCATE` (PG'da rollback qilinadi, `RESTART IDENTITY`); MySQL atomic DDL ("transactional DDL emas") va yashirin commit; SQLite `ALTER TABLE` cheklovlari va 12 qadamli usul, `TRUNCATE` yo'qligi | [PG sql-altertable](https://www.postgresql.org/docs/18/sql-altertable.html) · [PG sql-truncate](https://www.postgresql.org/docs/18/sql-truncate.html) · [MY atomic-ddl](https://dev.mysql.com/doc/refman/9.7/en/atomic-ddl.html) · [MY implicit-commit](https://dev.mysql.com/doc/refman/9.7/en/implicit-commit.html) · [SL lang_altertable](https://www.sqlite.org/lang_altertable.html) |
+| 17 | View va materialized view *(tayyorlanmoqda)* | Yangilanadigan view, `WITH CHECK OPTION`; PG `MATERIALIZED VIEW` va `REFRESH … CONCURRENTLY`; MySQL'da materialized view faqat HeatWave'da; SQLite view faqat o'qish uchun, `INSTEAD OF` trigger | [PG sql-createview](https://www.postgresql.org/docs/18/sql-createview.html) · [PG rules-materializedviews](https://www.postgresql.org/docs/18/rules-materializedviews.html) · [MY view-updatability](https://dev.mysql.com/doc/refman/9.7/en/view-updatability.html) · [MY create-view](https://dev.mysql.com/doc/refman/9.7/en/create-view.html) · [SL lang_createview](https://www.sqlite.org/lang_createview.html) |
 
-| # | Bob | Mazmun |
-| --- | --- | --- |
-| 27 | Tranzaksiyalar *(tayyorlanmoqda)* | `BEGIN/COMMIT/ROLLBACK`, ACID, savepoint |
-| 28 | Izolyatsiya darajalari *(tayyorlanmoqda)* | Read Committed, Repeatable Read, Serializable, anomaliyalar |
-| 29 | Qulflar *(tayyorlanmoqda)* | Qator qulflari, `SELECT … FOR UPDATE`, `SKIP LOCKED` (navbat), deadlock |
-| 30 | MVCC va VACUUM *(tayyorlanmoqda)* | Nega yangilash yangi qator yaratadi, autovacuum |
+## IV qism — Ma'lumotni o'zgartirish, DML (18–21)
 
-## VI qism — Ishlab chiqarish (31–36)
+| # | Bob | Mazmun | Rasmiy manba |
+| --- | --- | --- | --- |
+| 18 | `INSERT`, `UPDATE`, `DELETE` *(tayyorlanmoqda)* | Ko'p qatorli `INSERT`, `INSERT … SELECT`, `VALUES` alohida buyruq sifatida; PG `UPDATE … FROM` va `DELETE … USING`; MySQL ko'p jadvalli `UPDATE`/`DELETE`; SQLite `UPDATE FROM` | [PG dml](https://www.postgresql.org/docs/18/dml.html) · [PG sql-update](https://www.postgresql.org/docs/18/sql-update.html) · [MY update](https://dev.mysql.com/doc/refman/9.7/en/update.html) · [MY values](https://dev.mysql.com/doc/refman/9.7/en/values.html) · [SL lang_update](https://www.sqlite.org/lang_update.html) |
+| 19 | `RETURNING` va yangi ID *(tayyorlanmoqda)* | PG `RETURNING` (PG 18 da `OLD`/`NEW`); SQLite `RETURNING` va cheklovlari; MySQL'da `RETURNING` yo'q — `LAST_INSERT_ID()` | [PG dml-returning](https://www.postgresql.org/docs/18/dml-returning.html) · [MY information-functions](https://dev.mysql.com/doc/refman/9.7/en/information-functions.html) · [SL lang_returning](https://www.sqlite.org/lang_returning.html) |
+| 20 | UPSERT va `MERGE` *(tayyorlanmoqda)* | PG va SQLite `ON CONFLICT`; MySQL `ON DUPLICATE KEY UPDATE … AS new` (`VALUES()` eskirgan); standart `MERGE` (PG 15, `RETURNING` va `BY SOURCE` — PG 17; MySQL'da yo'q); `REPLACE` = o'chirib qayta yozish | [PG sql-insert](https://www.postgresql.org/docs/18/sql-insert.html) · [PG sql-merge](https://www.postgresql.org/docs/18/sql-merge.html) · [MY insert-on-duplicate](https://dev.mysql.com/doc/refman/9.7/en/insert-on-duplicate.html) · [MY replace](https://dev.mysql.com/doc/refman/9.7/en/replace.html) · [SL lang_upsert](https://www.sqlite.org/lang_upsert.html) |
+| 21 | Ommaviy yuklash *(tayyorlanmoqda)* | `COPY` (`ON_ERROR` — PG 17, `REJECT_LIMIT` — PG 18, `FREEZE`), `\copy`; bazani tez to'ldirish; MySQL `LOAD DATA`, `mysqlimport`; SQLite `.import` | [PG sql-copy](https://www.postgresql.org/docs/18/sql-copy.html) · [PG populate](https://www.postgresql.org/docs/18/populate.html) · [MY load-data](https://dev.mysql.com/doc/refman/9.7/en/load-data.html) · [MY optimizing-innodb-bulk-data-loading](https://dev.mysql.com/doc/refman/9.7/en/optimizing-innodb-bulk-data-loading.html) · [SL cli](https://www.sqlite.org/cli.html) |
 
-| # | Bob | Mazmun |
-| --- | --- | --- |
-| 31 | Migratsiyalar *(tayyorlanmoqda)* | Xavfsiz o'zgarishlar, `CREATE INDEX CONCURRENTLY`, katta jadvallar |
-| 32 | Foydalanuvchilar va huquqlar *(tayyorlanmoqda)* | Rollar, `GRANT`, eng kam huquq, Row Level Security |
-| 33 | Zaxira va tiklash *(tayyorlanmoqda)* | `pg_dump`, `pg_restore`, PITR haqida tushuncha |
-| 34 | Ulanishlar *(tayyorlanmoqda)* | Pool, PgBouncer, `max_connections` |
-| 35 | ORM bilan ishlash *(tayyorlanmoqda)* | Doctrine/Eloquent/Prisma generatsiya qilgan SQL'ni o'qish, xom SQL qachon |
-| 36 | Amaliy loyiha va checklist *(tayyorlanmoqda)* | Do'kon sxemasi noldan, so'rovlar, indekslar, migratsiya |
+## V qism — So'rovlar (22–31)
+
+| # | Bob | Mazmun | Rasmiy manba |
+| --- | --- | --- | --- |
+| 22 | `SELECT` anatomiyasi *(tayyorlanmoqda)* | Bajarilish tartibi (`WITH` → `FROM` → `WHERE` → `GROUP BY` → … → `LIMIT`); alias qayerda ishlaydi; `DISTINCT` va PG `DISTINCT ON`; `VALUES` ro'yxatlari | [PG sql-select](https://www.postgresql.org/docs/18/sql-select.html) · [PG queries-select-lists](https://www.postgresql.org/docs/18/queries-select-lists.html) · [MY select](https://dev.mysql.com/doc/refman/9.7/en/select.html) · [SL lang_select](https://www.sqlite.org/lang_select.html) |
+| 23 | Filtrlash *(tayyorlanmoqda)* | `BETWEEN`, `IN`, `LIKE`, PG `ILIKE`, `SIMILAR TO`, POSIX regex; MySQL `REGEXP`; SQLite `REGEXP` sukut bo'yicha yo'q; `IS DISTINCT FROM` | [PG functions-comparison](https://www.postgresql.org/docs/18/functions-comparison.html) · [PG functions-matching](https://www.postgresql.org/docs/18/functions-matching.html) · [MY comparison-operators](https://dev.mysql.com/doc/refman/9.7/en/comparison-operators.html) · [MY regexp](https://dev.mysql.com/doc/refman/9.7/en/regexp.html) · [SL lang_expr](https://www.sqlite.org/lang_expr.html) |
+| 24 | Saralash va cheklash *(tayyorlanmoqda)* | `ORDER BY`, `NULLS FIRST/LAST` (MySQL'da yo'q), `LIMIT`/`OFFSET`, PG `FETCH FIRST … WITH TIES` | [PG queries-order](https://www.postgresql.org/docs/18/queries-order.html) · [PG queries-limit](https://www.postgresql.org/docs/18/queries-limit.html) · [MY working-with-null](https://dev.mysql.com/doc/refman/9.7/en/working-with-null.html) · [SL lang_select](https://www.sqlite.org/lang_select.html) |
+| 25 | JOIN'lar *(tayyorlanmoqda)* | `INNER`, `LEFT`, `RIGHT`, `FULL` (MySQL'da yo'q), `CROSS`, `NATURAL`, `USING`; `LATERAL` (PG, MySQL; SQLite'da yo'q) | [PG queries-table-expressions](https://www.postgresql.org/docs/18/queries-table-expressions.html) · [MY join](https://dev.mysql.com/doc/refman/9.7/en/join.html) · [MY lateral-derived-tables](https://dev.mysql.com/doc/refman/9.7/en/lateral-derived-tables.html) · [SL lang_select](https://www.sqlite.org/lang_select.html) |
+| 26 | Agregatsiya *(tayyorlanmoqda)* | `GROUP BY`, `HAVING`, funksional bog'liqlik, MySQL `ONLY_FULL_GROUP_BY`, `ANY_VALUE`; `FILTER` (PG, SQLite); `string_agg`/`GROUP_CONCAT`; `ORDER BY` agregat ichida, `WITHIN GROUP`; PG `GROUPING SETS`/`ROLLUP`/`CUBE`, MySQL `WITH ROLLUP`; SQLite "bare" ustunlar | [PG functions-aggregate](https://www.postgresql.org/docs/18/functions-aggregate.html) · [PG queries-table-expressions](https://www.postgresql.org/docs/18/queries-table-expressions.html) · [MY group-by-handling](https://dev.mysql.com/doc/refman/9.7/en/group-by-handling.html) · [MY group-by-modifiers](https://dev.mysql.com/doc/refman/9.7/en/group-by-modifiers.html) · [SL lang_aggfunc](https://www.sqlite.org/lang_aggfunc.html) |
+| 27 | Subquery'lar *(tayyorlanmoqda)* | Skalyar, `EXISTS`, `IN`, `ANY`/`ALL`, korrelyatsiyalangan, derived table; `NOT IN` va NULL tuzog'i; MySQL cheklovlari | [PG functions-subquery](https://www.postgresql.org/docs/18/functions-subquery.html) · [MY subqueries](https://dev.mysql.com/doc/refman/9.7/en/subqueries.html) · [MY subquery-restrictions](https://dev.mysql.com/doc/refman/9.7/en/subquery-restrictions.html) · [SL lang_expr](https://www.sqlite.org/lang_expr.html) |
+| 28 | Set amallari *(tayyorlanmoqda)* | `UNION [ALL]`, `INTERSECT`, `EXCEPT`, ustuvorlik; SQLite'da `INTERSECT ALL`/`EXCEPT ALL` yo'q | [PG queries-union](https://www.postgresql.org/docs/18/queries-union.html) · [MY union](https://dev.mysql.com/doc/refman/9.7/en/union.html) · [MY intersect](https://dev.mysql.com/doc/refman/9.7/en/intersect.html) · [SL lang_select](https://www.sqlite.org/lang_select.html) |
+| 29 | CTE *(tayyorlanmoqda)* | `WITH`, `[NOT] MATERIALIZED`; PG'da ma'lumotni o'zgartiruvchi CTE; MySQL va SQLite cheklovlari | [PG queries-with](https://www.postgresql.org/docs/18/queries-with.html) · [MY with](https://dev.mysql.com/doc/refman/9.7/en/with.html) · [SL lang_with](https://www.sqlite.org/lang_with.html) |
+| 30 | Rekursiv CTE *(tayyorlanmoqda)* | Daraxtlar va graflar, PG `SEARCH`/`CYCLE`, MySQL `cte_max_recursion_depth` | [PG queries-with](https://www.postgresql.org/docs/18/queries-with.html) · [MY with](https://dev.mysql.com/doc/refman/9.7/en/with.html) · [SL lang_with](https://www.sqlite.org/lang_with.html) |
+| 31 | Window funksiyalar *(tayyorlanmoqda)* | `OVER`, `PARTITION BY`, frame'lar `ROWS`/`RANGE`/`GROUPS`, `EXCLUDE`, `WINDOW` bandi; `ROW_NUMBER`, `RANK`, `LAG`/`LEAD`; MySQL'da `GROUPS` va `EXCLUDE` yo'q | [PG tutorial-window](https://www.postgresql.org/docs/18/tutorial-window.html) · [PG functions-window](https://www.postgresql.org/docs/18/functions-window.html) · [MY window-function-restrictions](https://dev.mysql.com/doc/refman/9.7/en/window-function-restrictions.html) · [SL windowfunctions](https://www.sqlite.org/windowfunctions.html) |
+
+## VI qism — Funksiyalar va murakkab tiplar (32–36)
+
+| # | Bob | Mazmun | Rasmiy manba |
+| --- | --- | --- | --- |
+| 32 | Shartli ifodalar *(tayyorlanmoqda)* | `CASE`, `COALESCE`, `NULLIF`, `GREATEST`/`LEAST` (NULL bilan PG va MySQL turlicha); MySQL `IF`/`IFNULL`, SQLite `iif` | [PG functions-conditional](https://www.postgresql.org/docs/18/functions-conditional.html) · [MY flow-control-functions](https://dev.mysql.com/doc/refman/9.7/en/flow-control-functions.html) · [SL lang_corefunc](https://www.sqlite.org/lang_corefunc.html) |
+| 33 | Matn funksiyalari *(tayyorlanmoqda)* | `\|\|` va `concat()` (NULL bilan farqi); MySQL'da `\|\|` = OR; regex funksiyalari | [PG functions-string](https://www.postgresql.org/docs/18/functions-string.html) · [MY string-functions](https://dev.mysql.com/doc/refman/9.7/en/string-functions.html) · [MY logical-operators](https://dev.mysql.com/doc/refman/9.7/en/logical-operators.html) · [SL lang_corefunc](https://www.sqlite.org/lang_corefunc.html) |
+| 34 | Sana funksiyalari *(tayyorlanmoqda)* | `date_trunc`, `date_bin`, `extract`, interval arifmetikasi, `generate_series`; MySQL `DATE_ADD`, `TIMESTAMPDIFF`; SQLite sana funksiyalari | [PG functions-datetime](https://www.postgresql.org/docs/18/functions-datetime.html) · [PG functions-srf](https://www.postgresql.org/docs/18/functions-srf.html) · [MY date-and-time-functions](https://dev.mysql.com/doc/refman/9.7/en/date-and-time-functions.html) · [SL lang_datefunc](https://www.sqlite.org/lang_datefunc.html) |
+| 35 | JSON *(tayyorlanmoqda)* | `json` va `jsonb`, operatorlar, jsonpath, SQL/JSON funksiyalari, `JSON_TABLE` (PG 17), GIN indeks, JSON hujjatni loyihalash; MySQL JSON va multi-valued indeks; SQLite JSON/JSONB | [PG datatype-json](https://www.postgresql.org/docs/18/datatype-json.html) · [PG functions-json](https://www.postgresql.org/docs/18/functions-json.html) · [MY json](https://dev.mysql.com/doc/refman/9.7/en/json.html) · [MY json-table-functions](https://dev.mysql.com/doc/refman/9.7/en/json-table-functions.html) · [SL json1](https://www.sqlite.org/json1.html) |
+| 36 | Massiv, range, domain va composite (PG) *(tayyorlanmoqda)* | PostgreSQL'ga xos tiplar; "massiv to'plam emas — alohida jadval" maslahati; range cheklovlari | [PG arrays](https://www.postgresql.org/docs/18/arrays.html) · [PG rangetypes](https://www.postgresql.org/docs/18/rangetypes.html) · [PG domains](https://www.postgresql.org/docs/18/domains.html) · [PG rowtypes](https://www.postgresql.org/docs/18/rowtypes.html) |
+
+## VII qism — Sxema dizayni (37–40)
+
+Bu qismga ma'lumotlar bazasi hujjatlarida yozilgan narsalargina kiritildi.
+
+| # | Bob | Mazmun | Rasmiy manba |
+| --- | --- | --- | --- |
+| 37 | Aloqalar va tashqi kalitlar *(tayyorlanmoqda)* | 1:N va M:N (oraliq jadval, `order_items` misoli), FK amallari | [PG ddl-constraints](https://www.postgresql.org/docs/18/ddl-constraints.html) · [PG tutorial-fk](https://www.postgresql.org/docs/18/tutorial-fk.html) · [MY create-table-foreign-keys](https://dev.mysql.com/doc/refman/9.7/en/create-table-foreign-keys.html) · [SL foreignkeys](https://www.sqlite.org/foreignkeys.html) |
+| 38 | Normalizatsiya va tuzilma *(tayyorlanmoqda)* | MySQL qo'llanmasidagi normalizatsiya (uchinchi normal shakl, tezlik uchun denormalizatsiya); massiv va JSON o'rniga jadval qachon kerak | [MY data-size](https://dev.mysql.com/doc/refman/9.7/en/data-size.html) · [PG arrays](https://www.postgresql.org/docs/18/arrays.html) · [PG datatype-json §8.14.2](https://www.postgresql.org/docs/18/datatype-json.html) |
+| 39 | Birlamchi kalitni tanlash *(tayyorlanmoqda)* | Identity, `uuidv4()`/`uuidv7()`; InnoDB'da qisqa PK nega muhim (clustered indeks), `UUID_TO_BIN`; SQLite `rowid` va `WITHOUT ROWID` | [PG functions-uuid](https://www.postgresql.org/docs/18/functions-uuid.html) · [MY innodb-index-types](https://dev.mysql.com/doc/refman/9.7/en/innodb-index-types.html) · [MY miscellaneous-functions](https://dev.mysql.com/doc/refman/9.7/en/miscellaneous-functions.html) · [SL withoutrowid](https://www.sqlite.org/withoutrowid.html) |
+| 40 | Vaqt, tarix va audit *(tayyorlanmoqda)* | Temporal kalitlar `WITHOUT OVERLAPS` va `PERIOD` FK (PG 18), exclusion constraint; audit ustunlari (PG trigger misoli, MySQL `ON UPDATE CURRENT_TIMESTAMP`); audit jadvali trigger bilan; partial unique indeks | [PG sql-createtable](https://www.postgresql.org/docs/18/sql-createtable.html) · [PG plpgsql-trigger](https://www.postgresql.org/docs/18/plpgsql-trigger.html) · [PG indexes-partial](https://www.postgresql.org/docs/18/indexes-partial.html) · [MY timestamp-initialization](https://dev.mysql.com/doc/refman/9.7/en/timestamp-initialization.html) |
+
+## VIII qism — Indekslar va unumdorlik (41–49)
+
+| # | Bob | Mazmun | Rasmiy manba |
+| --- | --- | --- | --- |
+| 41 | Indeks qanday ishlaydi *(tayyorlanmoqda)* | B-tree, indeks qachon yordam bermaydi (qatorlarning ko'pi o'qilsa), InnoDB clustered va secondary indeks, indeks ishlatilishini tekshirish | [PG indexes-intro](https://www.postgresql.org/docs/18/indexes-intro.html) · [PG indexes-examine](https://www.postgresql.org/docs/18/indexes-examine.html) · [MY mysql-indexes](https://dev.mysql.com/doc/refman/9.7/en/mysql-indexes.html) · [MY innodb-index-types](https://dev.mysql.com/doc/refman/9.7/en/innodb-index-types.html) · [SL queryplanner](https://www.sqlite.org/queryplanner.html) |
+| 42 | Ko'p ustunli indeks *(tayyorlanmoqda)* | Chap ustunlar qoidasi, `ORDER BY` va indeks, skip scan (PG 18, MySQL, SQLite), descending indeks, indekslarni birlashtirish (bitmap scan) | [PG indexes-multicolumn](https://www.postgresql.org/docs/18/indexes-multicolumn.html) · [PG indexes-ordering](https://www.postgresql.org/docs/18/indexes-ordering.html) · [PG indexes-bitmap-scans](https://www.postgresql.org/docs/18/indexes-bitmap-scans.html) · [MY multiple-column-indexes](https://dev.mysql.com/doc/refman/9.7/en/multiple-column-indexes.html) · [MY range-optimization](https://dev.mysql.com/doc/refman/9.7/en/range-optimization.html) · [SL optoverview](https://www.sqlite.org/optoverview.html) |
+| 43 | Maxsus indekslar *(tayyorlanmoqda)* | Unique, partial (MySQL'da yo'q), ifoda indeksi / functional key parts, `INCLUDE` va index-only scan, operator class va collation | [PG indexes-partial](https://www.postgresql.org/docs/18/indexes-partial.html) · [PG indexes-expressional](https://www.postgresql.org/docs/18/indexes-expressional.html) · [PG indexes-index-only-scans](https://www.postgresql.org/docs/18/indexes-index-only-scans.html) · [PG indexes-opclass](https://www.postgresql.org/docs/18/indexes-opclass.html) · [MY create-index](https://dev.mysql.com/doc/refman/9.7/en/create-index.html) · [SL partialindex](https://www.sqlite.org/partialindex.html) · [SL expridx](https://www.sqlite.org/expridx.html) |
+| 44 | Indeks turlari *(tayyorlanmoqda)* | B-tree, Hash, GiST, SP-GiST, GIN, BRIN, bloom; MySQL B-tree va Hash, FULLTEXT, spatial, invisible indeks | [PG indexes-types](https://www.postgresql.org/docs/18/indexes-types.html) · [MY index-btree-hash](https://dev.mysql.com/doc/refman/9.7/en/index-btree-hash.html) · [MY invisible-indexes](https://dev.mysql.com/doc/refman/9.7/en/invisible-indexes.html) · [MY creating-spatial-indexes](https://dev.mysql.com/doc/refman/9.7/en/creating-spatial-indexes.html) |
+| 45 | `EXPLAIN` *(tayyorlanmoqda)* | Rejani o'qish; PG `EXPLAIN ANALYZE` (PG 18 da BUFFERS avtomatik); MySQL `EXPLAIN ANALYZE`, `FORMAT=TREE/JSON`; SQLite `EXPLAIN QUERY PLAN` | [PG using-explain](https://www.postgresql.org/docs/18/using-explain.html) · [PG sql-explain](https://www.postgresql.org/docs/18/sql-explain.html) · [MY explain](https://dev.mysql.com/doc/refman/9.7/en/explain.html) · [MY explain-output](https://dev.mysql.com/doc/refman/9.7/en/explain-output.html) · [SL eqp](https://www.sqlite.org/eqp.html) |
+| 46 | Planner va statistika *(tayyorlanmoqda)* | `ANALYZE`, `pg_stats`, kengaytirilgan statistika; PG'da hint yo'q, `enable_*` sozlamalari; MySQL histogrammalari va optimizer hint'lari; SQLite `sqlite_stat1`, `PRAGMA optimize` | [PG planner-stats](https://www.postgresql.org/docs/18/planner-stats.html) · [PG sql-createstatistics](https://www.postgresql.org/docs/18/sql-createstatistics.html) · [MY optimizer-statistics](https://dev.mysql.com/doc/refman/9.7/en/optimizer-statistics.html) · [MY optimizer-hints](https://dev.mysql.com/doc/refman/9.7/en/optimizer-hints.html) · [SL lang_analyze](https://www.sqlite.org/lang_analyze.html) |
+| 47 | Sekin so'rovlar *(tayyorlanmoqda)* | Ustun funksiya ichida bo'lsa indeks ishlamaydi; yashirin konversiya (`str_col = 1`); `OR` va index merge; `COUNT(*)` jadval hajmiga proporsional | [PG indexes-expressional](https://www.postgresql.org/docs/18/indexes-expressional.html) · [PG indexes-bitmap-scans](https://www.postgresql.org/docs/18/indexes-bitmap-scans.html) · [MY type-conversion](https://dev.mysql.com/doc/refman/9.7/en/type-conversion.html) · [MY index-merge-optimization](https://dev.mysql.com/doc/refman/9.7/en/index-merge-optimization.html) · [SL optoverview](https://www.sqlite.org/optoverview.html) |
+| 48 | Sahifalash *(tayyorlanmoqda)* | Katta `OFFSET` nega sekin; keyset sahifalash va qator konstruktori bilan taqqoslash `(a, b) > (?, ?)` | [PG queries-limit](https://www.postgresql.org/docs/18/queries-limit.html) · [PG functions-comparisons](https://www.postgresql.org/docs/18/functions-comparisons.html) · [SL rowvalue §3.1](https://www.sqlite.org/rowvalue.html) |
+| 49 | To'liq matnli qidiruv *(tayyorlanmoqda)* | `tsvector`, `tsquery`, `pg_trgm`; MySQL FULLTEXT va ngram; SQLite FTS5 | [PG textsearch-intro](https://www.postgresql.org/docs/18/textsearch-intro.html) · [PG pgtrgm](https://www.postgresql.org/docs/18/pgtrgm.html) · [MY fulltext-search](https://dev.mysql.com/doc/refman/9.7/en/fulltext-search.html) · [SL fts5](https://www.sqlite.org/fts5.html) |
+
+## IX qism — Tranzaksiyalar va parallellik (50–55)
+
+| # | Bob | Mazmun | Rasmiy manba |
+| --- | --- | --- | --- |
+| 50 | Tranzaksiya *(tayyorlanmoqda)* | `BEGIN`/`COMMIT`/`ROLLBACK`, savepoint; MySQL autocommit, yashirin commit va rollback qilinmaydigan buyruqlar; SQLite `DEFERRED`/`IMMEDIATE`/`EXCLUSIVE` | [PG tutorial-transactions](https://www.postgresql.org/docs/18/tutorial-transactions.html) · [MY commit](https://dev.mysql.com/doc/refman/9.7/en/commit.html) · [MY cannot-roll-back](https://dev.mysql.com/doc/refman/9.7/en/cannot-roll-back.html) · [SL lang_transaction](https://www.sqlite.org/lang_transaction.html) |
+| 51 | Izolyatsiya darajalari *(tayyorlanmoqda)* | Dirty read, phantom, serialization anomaly; sukut bo'yicha: PG — Read Committed, InnoDB — Repeatable Read, SQLite — serializable | [PG transaction-iso](https://www.postgresql.org/docs/18/transaction-iso.html) · [MY innodb-transaction-isolation-levels](https://dev.mysql.com/doc/refman/9.7/en/innodb-transaction-isolation-levels.html) · [SL isolation](https://www.sqlite.org/isolation.html) |
+| 52 | MVCC *(tayyorlanmoqda)* | PG'da qator versiyalari (`xmin`/`xmax`); InnoDB undo log; SQLite WAL snapshot'lari | [PG mvcc-intro](https://www.postgresql.org/docs/18/mvcc-intro.html) · [PG storage-page-layout](https://www.postgresql.org/docs/18/storage-page-layout.html) · [MY innodb-multi-versioning](https://dev.mysql.com/doc/refman/9.7/en/innodb-multi-versioning.html) · [SL wal](https://www.sqlite.org/wal.html) |
+| 53 | Qulflar *(tayyorlanmoqda)* | Jadval va qator qulflari, `FOR UPDATE`/`NO KEY UPDATE`/`SHARE`/`KEY SHARE`, `NOWAIT`, `SKIP LOCKED`; InnoDB record, gap va next-key qulflari; SQLite fayl qulflari | [PG explicit-locking](https://www.postgresql.org/docs/18/explicit-locking.html) · [MY innodb-locking](https://dev.mysql.com/doc/refman/9.7/en/innodb-locking.html) · [MY innodb-locking-reads](https://dev.mysql.com/doc/refman/9.7/en/innodb-locking-reads.html) · [SL lockingv3](https://www.sqlite.org/lockingv3.html) |
+| 54 | Deadlock va qayta urinish *(tayyorlanmoqda)* | Serialization failure (40001, 40P01) va retry; advisory qulflar, MySQL `GET_LOCK`; InnoDB deadlock aniqlash | [PG mvcc-serialization-failure-handling](https://www.postgresql.org/docs/18/mvcc-serialization-failure-handling.html) · [PG explicit-locking](https://www.postgresql.org/docs/18/explicit-locking.html) · [MY innodb-deadlocks-handling](https://dev.mysql.com/doc/refman/9.7/en/innodb-deadlocks-handling.html) · [MY locking-functions](https://dev.mysql.com/doc/refman/9.7/en/locking-functions.html) |
+| 55 | Ilova darajasida izchillik *(tayyorlanmoqda)* | Serializable tranzaksiyalar va aniq qulflar bilan izchillikni ta'minlash | [PG applevel-consistency](https://www.postgresql.org/docs/18/applevel-consistency.html) |
+
+## X qism — Server tomonida dasturlash (56–59)
+
+| # | Bob | Mazmun | Rasmiy manba |
+| --- | --- | --- | --- |
+| 56 | Funksiya va protseduralar *(tayyorlanmoqda)* | SQL funksiyalar, PL/pgSQL, `CREATE PROCEDURE`; MySQL stored routine'lar va JavaScript stored program'lar | [PG xfunc](https://www.postgresql.org/docs/18/xfunc.html) · [PG plpgsql](https://www.postgresql.org/docs/18/plpgsql.html) · [MY stored-routines](https://dev.mysql.com/doc/refman/9.7/en/stored-routines.html) · [MY stored-routines-js](https://dev.mysql.com/doc/refman/9.7/en/stored-routines-js.html) |
+| 57 | Triggerlar *(tayyorlanmoqda)* | PG: BEFORE/AFTER/INSTEAD OF, qator va statement darajasi, transition jadvallari; MySQL: faqat BEFORE/AFTER va `FOR EACH ROW`; SQLite: view'da INSTEAD OF, faqat `FOR EACH ROW` | [PG trigger-definition](https://www.postgresql.org/docs/18/trigger-definition.html) · [PG sql-createtrigger](https://www.postgresql.org/docs/18/sql-createtrigger.html) · [MY create-trigger](https://dev.mysql.com/doc/refman/9.7/en/create-trigger.html) · [SL lang_createtrigger](https://www.sqlite.org/lang_createtrigger.html) |
+| 58 | Partitioning *(tayyorlanmoqda)* | range/list/hash, partition pruning; unique kalit partition kalitini o'z ichiga olishi shart (PG va MySQL) | [PG ddl-partitioning](https://www.postgresql.org/docs/18/ddl-partitioning.html) · [MY partitioning-types](https://dev.mysql.com/doc/refman/9.7/en/partitioning-types.html) · [MY partitioning-pruning](https://dev.mysql.com/doc/refman/9.7/en/partitioning-pruning.html) · [MY partitioning-limitations-partitioning-keys-unique-keys](https://dev.mysql.com/doc/refman/9.7/en/partitioning-limitations-partitioning-keys-unique-keys.html) |
+| 59 | Katalog va metadata *(tayyorlanmoqda)* | `information_schema`, `pg_catalog`; SQLite `sqlite_schema` va `PRAGMA table_info` | [PG information-schema](https://www.postgresql.org/docs/18/information-schema.html) · [PG catalogs](https://www.postgresql.org/docs/18/catalogs.html) · [MY information-schema](https://dev.mysql.com/doc/refman/9.7/en/information-schema.html) · [SL schematab](https://www.sqlite.org/schematab.html) |
+
+## XI qism — Production (60–67)
+
+| # | Bob | Mazmun | Rasmiy manba |
+| --- | --- | --- | --- |
+| 60 | Rollar va huquqlar *(tayyorlanmoqda)* | `GRANT`/`REVOKE`, tayyor rollar (`pg_read_all_data`, `pg_maintain`…); MySQL hisoblari va rollari; SQLite'da `GRANT` yo'q | [PG user-manag](https://www.postgresql.org/docs/18/user-manag.html) · [PG predefined-roles](https://www.postgresql.org/docs/18/predefined-roles.html) · [MY roles](https://dev.mysql.com/doc/refman/9.7/en/roles.html) · [SL omitted](https://www.sqlite.org/omitted.html) |
+| 61 | Row Level Security (PG) *(tayyorlanmoqda)* | Policy'lar, `ENABLE`/`FORCE`, `BYPASSRLS` | [PG ddl-rowsecurity](https://www.postgresql.org/docs/18/ddl-rowsecurity.html) · [PG sql-createpolicy](https://www.postgresql.org/docs/18/sql-createpolicy.html) |
+| 62 | SQL injection va parametrlar *(tayyorlanmoqda)* | Parametrli so'rov, prepared statement, escape funksiyalari, dinamik SQL (`EXECUTE … USING`) | [PG libpq-exec](https://www.postgresql.org/docs/18/libpq-exec.html) · [PG sql-prepare](https://www.postgresql.org/docs/18/sql-prepare.html) · [PG plpgsql-statements](https://www.postgresql.org/docs/18/plpgsql-statements.html) · [MY secure-client-programming](https://dev.mysql.com/doc/refman/9.7/en/secure-client-programming.html) · [MY sql-prepared-statements](https://dev.mysql.com/doc/refman/9.7/en/sql-prepared-statements.html) |
+| 63 | Sxemani xavfsiz o'zgartirish *(tayyorlanmoqda)* | `ALTER TABLE` qulf darajalari, `NOT VALID` cheklovlar, `CREATE INDEX CONCURRENTLY`; MySQL online DDL (`INSTANT`/`INPLACE`/`COPY`); SQLite 12 qadamli usul | [PG sql-altertable](https://www.postgresql.org/docs/18/sql-altertable.html) · [PG sql-createindex](https://www.postgresql.org/docs/18/sql-createindex.html) · [MY innodb-online-ddl-operations](https://dev.mysql.com/doc/refman/9.7/en/innodb-online-ddl-operations.html) · [SL lang_altertable](https://www.sqlite.org/lang_altertable.html) |
+| 64 | Ulanishlar *(tayyorlanmoqda)* | `max_connections`, tashqi connection pool (PG hujjati tavsiyasi), PgBouncer rejimlari; MySQL "Too many connections" | [PG runtime-config-connection](https://www.postgresql.org/docs/18/runtime-config-connection.html) · [PG kernel-resources](https://www.postgresql.org/docs/18/kernel-resources.html) · [PgBouncer usage](https://www.pgbouncer.org/usage.html) · [MY too-many-connections](https://dev.mysql.com/doc/refman/9.7/en/too-many-connections.html) |
+| 65 | Texnik xizmat *(tayyorlanmoqda)* | `VACUUM`, autovacuum, bloat, `REINDEX`; MySQL `OPTIMIZE TABLE`; SQLite `VACUUM`; PG 19 `REPACK` (beta, izoh sifatida) | [PG routine-vacuuming](https://www.postgresql.org/docs/18/routine-vacuuming.html) · [PG routine-reindex](https://www.postgresql.org/docs/18/routine-reindex.html) · [MY optimize-table](https://dev.mysql.com/doc/refman/9.7/en/optimize-table.html) · [SL lang_vacuum](https://www.sqlite.org/lang_vacuum.html) |
+| 66 | Zaxira va tiklash *(tayyorlanmoqda)* | `pg_dump`/`pg_restore`, WAL arxivlash va PITR; `mysqldump` va MySQL Shell dump utilitlari; SQLite backup API, `VACUUM INTO`, `.backup` | [PG backup](https://www.postgresql.org/docs/18/backup.html) · [PG continuous-archiving](https://www.postgresql.org/docs/18/continuous-archiving.html) · [MY backup-methods](https://dev.mysql.com/doc/refman/9.7/en/backup-methods.html) · [MY mysqldump](https://dev.mysql.com/doc/refman/9.7/en/mysqldump.html) · [SL backup](https://www.sqlite.org/backup.html) |
+| 67 | Replikatsiya va monitoring *(tayyorlanmoqda)* | Streaming va logical replikatsiya, `pg_stat_statements`, statistika view'lari; MySQL binlog va GTID, slow query log, Performance Schema, sys schema | [PG warm-standby](https://www.postgresql.org/docs/18/warm-standby.html) · [PG logical-replication](https://www.postgresql.org/docs/18/logical-replication.html) · [PG pgstatstatements](https://www.postgresql.org/docs/18/pgstatstatements.html) · [MY replication](https://dev.mysql.com/doc/refman/9.7/en/replication.html) · [MY slow-query-log](https://dev.mysql.com/doc/refman/9.7/en/slow-query-log.html) · [MY performance-schema](https://dev.mysql.com/doc/refman/9.7/en/performance-schema.html) |
+
+## XII qism — Amaliyot (68–70)
+
+| # | Bob | Mazmun | Rasmiy manba |
+| --- | --- | --- | --- |
+| 68 | ORM ortidagi SQL *(tayyorlanmoqda)* | ORM yuborgan SQL'ni ko'rish: Laravel (`dumpRawSql`, `DB::listen`), Doctrine DBAL logging, Prisma `log`; N+1 muammosi (Laravel va Prisma hujjatlaridan) | [Laravel queries](https://laravel.com/framework/docs/13.x/queries) · [Laravel database](https://laravel.com/framework/docs/13.x/database) · [Laravel eloquent-relationships](https://laravel.com/framework/docs/13.x/eloquent-relationships) · [Doctrine DBAL architecture](https://www.doctrine-project.org/projects/doctrine-dbal/en/latest/reference/architecture.html) · [Prisma logging](https://www.prisma.io/docs/orm/prisma-client/observability-and-logging/logging) |
+| 69 | Dialektlar xaritasi *(tayyorlanmoqda)* | Oldingi boblardagi "Dialektlar" bo'limlarining yig'ma jadvali: PG ↔ MySQL ↔ SQLite | Oldingi boblarning manbalari · [SL quirks](https://www.sqlite.org/quirks.html) · [MY differences-from-ansi](https://dev.mysql.com/doc/refman/9.7/en/differences-from-ansi.html) |
+| 70 | Amaliy loyiha *(tayyorlanmoqda)* | Do'kon bazasi noldan: sxema, so'rovlar, indekslar, migratsiya — faqat oldingi boblarda o'rganilgan narsalar bilan | Oldingi boblarning manbalari |
