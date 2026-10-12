@@ -1,6 +1,6 @@
 # 05 — Baza, sxema va jadval
 
-[← Oldingi: SQL sintaksisi](04-sql-sintaksisi.md) · [Mundarija](README.md)
+[← Oldingi: SQL sintaksisi](04-sql-sintaksisi.md) · [Mundarija](README.md) · [Keyingi: Raqamlar →](06-raqamlar.md)
 
 ## Tushuncha
 
