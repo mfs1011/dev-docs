@@ -4,6 +4,7 @@ import { useRoute, useRouter } from 'vue-router'
 import ListenPlayer from '@/components/ListenPlayer.vue'
 import PageToc from '@/components/PageToc.vue'
 import { renderMarkdown, sectionKindFor } from '@/markdown'
+import { enhanceVideos } from '@/video-player'
 import { findBook, findPage, formatDate, loadSource, neighbours, resolveDocLink } from '@/docs'
 import { clearMark, excerptOf, isRead, markFor, setMark, setRead } from '@/progress'
 
@@ -432,6 +433,7 @@ async function load() {
   enhanceNavLines(container)
   enhanceLinks(container, current)
   enhanceCodeBlocks(container)
+  enhanceVideos(container)
 
   setupMarkers(container, current)
 
