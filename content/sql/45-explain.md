@@ -1,6 +1,6 @@
 # 45 — `EXPLAIN`
 
-[← Oldingi: Indeks turlari](44-indeks-turlari.md) · [Mundarija](README.md)
+[← Oldingi: Indeks turlari](44-indeks-turlari.md) · [Mundarija](README.md) · [Keyingi: Planner va statistika →](46-planner-va-statistika.md)
 
 ## Tushuncha
 
