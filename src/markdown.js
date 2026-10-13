@@ -220,6 +220,18 @@ md.renderer.rules.fence = (tokens, idx, options) => {
   return html.replace('<figure class="code-block"', `<figure data-line="${token.map[0]}" class="code-block"`)
 }
 
+/**
+ * Xom HTML'dagi `public/` fayllari (masalan, `<video src="/video/...">`) markdown'da `/` bilan
+ * yoziladi; GitHub Pages'da sayt `/dev-docs/` ostida turadi — yo'lga BASE_URL qo'shiladi.
+ */
+const BASE = (import.meta.env?.BASE_URL ?? '/').replace(/\/?$/, '/')
+const withBase = (html) => html.replace(/\b(src|poster)="\/(?!\/)/g, `$1="${BASE}`)
+
+for (const rule of ['html_block', 'html_inline']) {
+  const original = md.renderer.rules[rule]
+  md.renderer.rules[rule] = (tokens, idx, options, env, self) => withBase(original(tokens, idx, options, env, self))
+}
+
 export function renderMarkdown(source) {
   return md.render(source)
 }

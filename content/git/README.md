@@ -4,6 +4,17 @@ Bu qo'llanma Git'ni **noldan oxirigacha** o'rgatadi: birinchi commit'dan `.git/o
 
 Boshlovchi uchun ham yozilgan: har yangi atama birinchi uchraganda tushuntiriladi. Lekin hech narsa "soddalashtirish uchun" tashlab ketilmagan — rasmiy hujjatdagi hamma muhim tafsilot o'z joyida.
 
+Boshlashdan oldin — Git'ning umumiy manzarasi 2,5 daqiqada:
+
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/git/git-qanday-ishlaydi.jpg" src="/video/git/git-qanday-ishlaydi.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/git/git-qanday-ishlaydi.chapters.vtt" default>
+</video>
+<figcaption>Git qanday ishlaydi: uch hudud, commit, branch, merge va remote.</figcaption>
+</figure>
+
+Videodagi har mavzu keyin alohida bobda chuqur ochiladi: [uch hudud](05-uch-holat.md), [commit ichida nima bor](16-commit-obyekti.md), [branch — bu ref](20-branch-bu-ref.md), [merge](21-branch-va-merge.md), [konfliktlar](22-konfliktlar.md), [remote](27-remote.md).
+
 Manbalar va versiyalar (2026-yil oktabr):
 
 | Narsa | Versiya | Qayerdan olindi |

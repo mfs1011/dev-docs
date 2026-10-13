@@ -25,3 +25,13 @@ audio/
 
 # So'z vaqtlari uchun Python muhiti (npm run tts:align)
 .venv-align/
+
+# Video manbalari: oraliq fayllar (video/README.md)
+video/*/segs/
+video/*/stills/
+video/*/node_modules/
+video/*/*.wav
+video/*/*.mp4
+video/*/*.png
+video/*/*.jpg
+video/*/package*.json
