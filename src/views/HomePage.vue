@@ -1,5 +1,5 @@
 <script setup>
-import { computed, onMounted } from 'vue'
+import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
 import BookMark from '@/components/BookMark.vue'
 import { books, formatDate } from '@/docs'
 import { bookProgress, markFor, overallProgress } from '@/progress'
@@ -23,9 +23,41 @@ const overall = computed(() => overallProgress())
 /** Kitobda qoldirilgan o'qish belgisi */
 const bookMark = (book) => markFor(book.id)
 
+/** Hero'dagi buyruq: sahifa ochilganda harfma-harf yoziladi, keyin kursor lippillaydi */
+const PROMPT = 'qollanmalar --lang=uz --source=official-docs'
+const typed = ref('')
+const typing = ref(true)
+let typeTimer = 0
+
+function typePrompt() {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    typed.value = PROMPT
+    typing.value = false
+
+    return
+  }
+
+  let index = 0
+  const step = () => {
+    index += 1
+    typed.value = PROMPT.slice(0, index)
+    if (index >= PROMPT.length) {
+      typing.value = false
+
+      return
+    }
+    // Probeldan keyin qisqa to'xtash, harflar orasida biroz notekis — qo'lda yozilgandek
+    typeTimer = setTimeout(step, PROMPT[index - 1] === ' ' ? 140 : 40 + ((index * 7) % 30))
+  }
+  typeTimer = setTimeout(step, 400)
+}
+
 onMounted(() => {
   document.title = "Qo'llanmalar — backend va frontend"
+  typePrompt()
 })
+
+onBeforeUnmount(() => clearTimeout(typeTimer))
 </script>
 
 <template>
@@ -34,7 +66,10 @@ onMounted(() => {
             <section class="home-hero">
                 <p class="home-prompt">
                     <span aria-hidden="true">$</span>
-                    <code>qollanmalar --lang=uz --source=official-docs</code>
+                    <code>
+                        <span class="home-prompt-sr">{{ PROMPT }}</span>
+                        <span aria-hidden="true">{{ typed }}</span><i class="home-cursor" :class="{ 'is-typing': typing }" aria-hidden="true" />
+                    </code>
                 </p>
 
                 <h1 class="home-title">
