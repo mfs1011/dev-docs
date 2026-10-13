@@ -1609,8 +1609,38 @@ a.home-account:hover { border-color: var(--border-strong); text-decoration: none
     font-size: 13px;
 }
 
-.home-prompt span { color: var(--accent-text); font-weight: 700; }
-.home-prompt code { color: var(--text-subtle); }
+.home-prompt > span { color: var(--accent-text); font-weight: 700; }
+.home-prompt code { color: var(--text-subtle); white-space: pre; }
+
+/* Ekran o'quvchi uchun to'liq buyruq; ko'rinadigani — yozilayotgan nusxa */
+.home-prompt-sr {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+.home-cursor {
+    display: inline-block;
+    width: .6em;
+    height: 1.2em;
+    margin-left: 2px;
+    vertical-align: -.25em;
+    border-radius: 1px;
+    background: var(--accent-text);
+    animation: home-cursor-blink 1.06s steps(1) infinite;
+}
+.home-cursor.is-typing { animation: none; }
+
+@keyframes home-cursor-blink {
+    50% { opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .home-cursor { animation: none; }
+}
 
 .home-title {
     margin: 0 0 16px;
