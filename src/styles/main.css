@@ -854,8 +854,7 @@ a.home-account:hover { border-color: var(--border-strong); text-decoration: none
     transform: translate(-50%, -50%);
     transition: transform .2s, opacity .25s, box-shadow .2s;
 }
-.vp-big svg { width: 36px; height: 36px; margin-left: 4px; }
-.vp-stage.is-ended .vp-big svg { margin-left: 0; }
+.vp-big svg { width: 36px; height: 36px; } /* uchburchak yo'lining og'irlik markazi viewBox markazida — qo'shimcha surish kerak emas */
 .vp-big:hover { transform: translate(-50%, -50%) scale(1.07); box-shadow: 0 0 0 14px color-mix(in srgb, var(--accent) 28%, transparent), 0 14px 40px rgba(0, 0, 0, .5); }
 .vp-big:focus-visible { outline: 3px solid #fff; outline-offset: 4px; }
 .vp-big-time {
