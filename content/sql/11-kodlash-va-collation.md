@@ -1,6 +1,6 @@
 # 11 — Kodlash va collation
 
-[← Oldingi: NULL va tip konversiyasi](10-null-va-tip-konversiyasi.md) · [Mundarija](README.md)
+[← Oldingi: NULL va tip konversiyasi](10-null-va-tip-konversiyasi.md) · [Mundarija](README.md) · [Keyingi: CREATE TABLE va DEFAULT →](12-create-table-va-default.md)
 
 ## Tushuncha
 
