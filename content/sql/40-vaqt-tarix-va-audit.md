@@ -1,6 +1,6 @@
 # 40 — Vaqt, tarix va audit
 
-[← Oldingi: Birlamchi kalitni tanlash](39-birlamchi-kalitni-tanlash.md) · [Mundarija](README.md)
+[← Oldingi: Birlamchi kalitni tanlash](39-birlamchi-kalitni-tanlash.md) · [Mundarija](README.md) · [Keyingi: Indeks qanday ishlaydi →](41-indeks-qanday-ishlaydi.md)
 
 ## Tushuncha
 
