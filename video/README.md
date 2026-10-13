@@ -30,3 +30,16 @@ node poster.mjs && ffmpeg -i poster.png -vf scale=1280:-2 -q:v 3 poster.jpg
 ```
 
 `render.mjs` dagi `DUR` `timeline.js` dagi `S.end` bilan bir xil bo'lishi kerak.
+
+## Asl nusxalar — Google Drive
+
+Repo'ga faqat saytga siqilgan nusxa (`public/video/`) tushadi. Asl 1080p `video/<nom>/full.mp4` (git'da yo'q) Google Drive'ga arxivlanadi:
+
+```bash
+rclone config create gdrive drive scope=drive.file   # bir marta: brauzerda Google akkauntga ruxsat
+video/arxiv.sh git-umumiy                             # yoki argumentsiz — hamma videolar
+```
+
+`scope=drive.file` — rclone faqat o'zi yuklagan fayllarni ko'radi, Drive'dagi boshqa fayllarga kirmaydi. Fayllar Drive'da `dev-docs/video/<nom>/full.mp4` da turadi.
+
+Ulanish o'z OAuth client'imiz orqali (Google Cloud: Drive API yoqilgan, Desktop client, foydalanuvchi — test user). rclone'ning umumiy client_id'si 2026-yilda yopiladi, shuning uchun u ishlatilmaydi. Ilova Testing rejimida — ruxsat 7 kunda eskiradi; skript buni aniqlab `rclone config reconnect gdrive:` ni so'raydi. Client ID/secret faqat `~/.config/rclone/rclone.conf` da, repo'da yo'q.
