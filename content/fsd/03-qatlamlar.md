@@ -4,6 +4,14 @@
 
 ## Qisqacha
 
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/fsd/03-qatlamlar.jpg" src="/video/fsd/03-qatlamlar.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/fsd/03-qatlamlar.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/fsd/03-qatlamlar.uz.vtt">
+</video>
+<figcaption>Bob videoda: yettita qatlam yuqoridan pastga, import qoidasi, app va shared istisnosi, qaysi qatlamlar kerak. Linter natijalari — haqiqiy Steiger 0.7.0 dan.</figcaption>
+</figure>
+
 Qatlam (layer) — FSD'dagi birinchi daraja: `src/` ichidagi standart nomli papka. Qatlamlar kodni **mas'uliyati va bog'liqligi** bo'yicha ajratadi: yuqoridagi qatlam ko'p narsani biladi va ko'p narsaga bog'liq, pastdagisi kam narsani biladi va ko'p joyda ishlatiladi. Jami 7 qatlam bor, ulardan biri (`processes`) eskirgan.
 
 ## Qoida
