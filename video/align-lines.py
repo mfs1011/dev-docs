@@ -33,7 +33,10 @@ result, _ = A.align(model, A.MMS_FA.get_tokenizer(), A.MMS_FA.get_aligner(), fol
 for index, line in enumerate(lines):
     spoken = [w for w in result if w["line"] == index]
     line["a0"], line["a1"] = min(w["s"] for w in spoken), max(w["e"] for w in spoken)
+    # So'zma-so'z vaqt (raw.wav da): animatsiyani so'zga bog'lash uchun (sql-umumiy)
+    line["words"] = [{"w": w["word"], "s": w["s"], "e": w["e"]} for w in spoken]
 
 (folder / "voice" / "lines.json").write_text(json.dumps(lines, ensure_ascii=False, indent=2))
 for index, line in enumerate(lines):
-    print(f'{index + 1:2} {line["a0"]:6.2f}–{line["a1"]:6.2f}  ({line["a1"] - line["a0"]:4.1f}s / oyna {line["e"] - line["s"]:4.1f}s)  {line["show"][:60]}')
+    window = f' / oyna {line["e"] - line["s"]:4.1f}s' if "e" in line else ''
+    print(f'{index + 1:2} {line["a0"]:6.2f}–{line["a1"]:6.2f}  ({line["a1"] - line["a0"]:4.1f}s{window})  {line["show"][:60]}')

@@ -1,0 +1,76 @@
+SET search_path = video_dokon;
+SET
+== select
+SELECT nomi, narxi FROM mahsulotlar WHERE narxi < 10000 ORDER BY narxi;
+  nomi  | narxi 
+--------+-------
+ Qalam  |  3000
+ Ruchka |  5000
+ Daftar |  8000
+(3 rows)
+
+== join
+SELECT b.id, p.nomi, b.soni FROM buyurtmalar b JOIN mahsulotlar p ON p.id = b.mahsulot_id ORDER BY b.id;
+ id |  nomi  | soni 
+----+--------+------
+  1 | Daftar |    3
+  2 | Kitob  |    1
+  3 | Qalam  |    5
+  4 | Sumka  |    1
+  5 | Daftar |    2
+  6 | Ruchka |    4
+(6 rows)
+
+== group
+SELECT shahar, count(*) FROM mijozlar GROUP BY shahar ORDER BY shahar;
+  shahar   | count 
+-----------+-------
+ Buxoro    |     1
+ Samarqand |     1
+ Toshkent  |     2
+(3 rows)
+
+== fk
+INSERT INTO buyurtmalar VALUES (7, 9, 1, 1);
+psql:sorovlar.sql:9: ERROR:  insert or update on table "buyurtmalar" violates foreign key constraint "buyurtmalar_mijoz_id_fkey"
+DETAIL:  Key (mijoz_id)=(9) is not present in table "mijozlar".
+== dml
+INSERT INTO mahsulotlar VALUES (6, 'Chizg‘ich', 4000);
+INSERT 0 1
+UPDATE mahsulotlar SET narxi = 7000 WHERE nomi = 'Daftar';
+UPDATE 1
+DELETE FROM mahsulotlar WHERE id = 6;
+DELETE 1
+== index
+CREATE INDEX ON mahsulotlar (nomi);
+CREATE INDEX
+== tx-rollback
+BEGIN;
+BEGIN
+UPDATE hisoblar SET balans = balans - 50000 WHERE egasi = 'Ali';
+UPDATE 1
+ROLLBACK;
+ROLLBACK
+SELECT egasi, balans FROM hisoblar ORDER BY egasi;
+ egasi  | balans 
+--------+--------
+ Ali    | 100000
+ Malika |  20000
+(2 rows)
+
+== tx-commit
+BEGIN;
+BEGIN
+UPDATE hisoblar SET balans = balans - 50000 WHERE egasi = 'Ali';
+UPDATE 1
+UPDATE hisoblar SET balans = balans + 50000 WHERE egasi = 'Malika';
+UPDATE 1
+COMMIT;
+COMMIT
+SELECT egasi, balans FROM hisoblar ORDER BY egasi;
+ egasi  | balans 
+--------+--------
+ Ali    |  50000
+ Malika |  70000
+(2 rows)
+

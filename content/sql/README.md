@@ -4,6 +4,18 @@ Bu qo'llanma SQL tilini **standart asosida** o'rgatadi. Asosiy ishchi baza — P
 
 Maqsad — ORM ortida nima bo'layotganini tushunish, sekin so'rovni topib tuzatish va sxemani production'da xavfsiz o'zgartirish.
 
+Boshlashdan oldin — SQL'ning umumiy manzarasi 5 daqiqada:
+
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/sql/sql-qanday-ishlaydi.jpg" src="/video/sql/sql-qanday-ishlaydi.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/sql/sql-qanday-ishlaydi.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/sql/sql-qanday-ishlaydi.uz.vtt">
+</video>
+<figcaption>SQL qanday ishlaydi: jadval va kalitlar, SELECT, JOIN, GROUP BY, indeks va tranzaksiya. Natijalar — haqiqiy PostgreSQL 18 bazasidan.</figcaption>
+</figure>
+
+Videodagi har mavzu keyin alohida bobda chuqur ochiladi: [jadval va relyatsion model](01-relyatsion-model.md), [kalitlar va cheklovlar](14-cheklovlar.md), [tashqi kalit](37-aloqalar-va-tashqi-kalitlar.md), [`SELECT` bajarilish tartibi](22-select-anatomiyasi.md), [JOIN](25-joinlar.md), [GROUP BY](26-agregatsiya.md), [INSERT, UPDATE, DELETE](18-insert-update-delete.md), [indeks](41-indeks-qanday-ishlaydi.md), [uch tizim](02-uch-tizim.md).
+
 Mundarija rasmiy hujjatlar tuzilmasiga solishtirib tuzilgan. Har bob yonida u tayanadigan rasmiy sahifalar ko'rsatilgan. Har bobni yozishdan oldin shu sahifalar qayta o'qiladi. Kod misollari real bazada ishga tushirib tekshiriladi.
 
 Manbalar va versiyalar (2026-10-10 da tekshirilgan):
