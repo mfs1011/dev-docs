@@ -1,0 +1,194 @@
+WEBVTT
+
+1
+00:01.420 --> 00:08.250
+Salom! Bugun SQL bilan tanishamiz. Bu
+ma’lumotlar bazasi bilan gaplashish tili.
+
+2
+00:10.610 --> 00:19.440
+Tasavvur qiling, sizda kichik do‘kon bor. Mahsulotlar, mijozlar,
+buyurtmalar — hammasini qayerdadir yozib borish kerak.
+
+3
+00:20.070 --> 00:28.290
+Daftarga yozsangiz, tez orada chalkashib ketadi. Qaysi mahsulot
+qancha turadi? Kim nima sotib oldi? Javob topish qiyin.
+
+4
+00:29.020 --> 00:36.150
+Ma’lumotlar bazasi aynan shu ish uchun kerak. SQL
+esa bazaga savol beradigan va buyruq beradigan til.
+
+5
+00:39.260 --> 00:43.980
+Bazada ma’lumot jadvallarda
+saqlanadi. Mana, mahsulotlar jadvali.
+
+6
+00:44.590 --> 00:50.700
+Har bir ustunning nomi va turi bor.
+Nomi ustuni matn, narxi ustuni esa son.
+
+7
+00:51.270 --> 00:56.740
+Har bir qator bitta mahsulot.
+Daftar, qalam, kitob va boshqalar.
+
+8
+00:57.640 --> 01:05.410
+Id ustuni birlamchi kalit. U har bir qatorni boshqalaridan
+ajratib turadi, shuning uchun hech qachon takrorlanmaydi.
+
+9
+01:08.480 --> 01:14.850
+Endi buyurtmalar jadvaliga qaraymiz. Unda
+mijozning ismi yozilmagan, faqat uning raqami bor.
+
+10
+01:15.570 --> 01:21.560
+Bu raqam mijozlar jadvalidagi id ustuniga
+ishora qiladi. Buni tashqi kalit deyiladi.
+
+11
+01:22.390 --> 01:28.520
+Agar mavjud bo‘lmagan mijozga buyurtma yozmoqchi
+bo‘lsak, baza bunga yo‘l qo‘ymaydi va xato beradi.
+
+12
+01:32.390 --> 01:39.810
+Endi bazaga savol beramiz. Narxi o‘n mingdan arzon
+mahsulotlarni, eng arzonidan boshlab ko‘rmoqchimiz.
+
+13
+01:40.280 --> 01:46.330
+So‘rov shunday yoziladi. Lekin baza uni
+yozilgan tartibda emas, o‘z tartibida bajaradi.
+
+14
+01:47.980 --> 01:50.960
+Avval FROM qaysi jadvaldan olishni aniqlaydi.
+
+15
+01:51.870 --> 01:55.720
+Keyin WHERE shartga mos kelmagan
+qatorlarni chiqarib tashlaydi.
+
+16
+01:57.090 --> 02:00.200
+So‘ng SELECT faqat kerakli ustunlarni qoldiradi.
+
+17
+02:01.590 --> 02:09.590
+Oxirida ORDER BY ularni narxi bo‘yicha tartiblaydi.
+Natija tayyor: qalam, ruchka va daftar.
+
+18
+02:13.780 --> 02:21.610
+Ba’zan javob ikki jadvalda bo‘ladi. Buyurtmada faqat
+mahsulot raqami bor, nomi esa mahsulotlar jadvalida.
+
+19
+02:22.400 --> 02:28.440
+JOIN ikki jadvalni bog‘laydi. Raqamlari mos kelgan
+qatorlarni juftlab, bitta qatorga birlashtiradi.
+
+20
+02:30.030 --> 02:33.400
+Endi har bir buyurtma yonida mahsulot nomi ko‘rinadi.
+
+21
+02:36.930 --> 02:41.980
+Har bir shaharda nechta mijozimiz bor?
+Buni bilish uchun qatorlarni guruhlaymiz.
+
+22
+02:42.330 --> 02:49.670
+GROUP BY bir xil shahardagi qatorlarni bitta guruhga yig‘adi.
+Count esa har bir guruhda nechta qator borligini sanaydi.
+
+23
+02:50.940 --> 02:54.390
+Toshkentda ikki mijoz, Samarqand va Buxoroda esa bittadan.
+
+24
+02:57.960 --> 03:01.010
+SQL faqat o‘qimaydi, ma’lumotni o‘zgartiradi ham.
+
+25
+03:01.220 --> 03:03.040
+INSERT yangi qator qo‘shadi.
+
+26
+03:03.790 --> 03:07.560
+UPDATE mavjud qatorni o‘zgartiradi.
+Masalan, daftarning narxini.
+
+27
+03:08.630 --> 03:10.640
+DELETE esa keraksiz qatorni o‘chiradi.
+
+28
+03:11.610 --> 03:16.620
+WHERE shartini unutmang. Usiz UPDATE va DELETE
+jadvaldagi hamma qatorlarga ta’sir qiladi.
+
+29
+03:19.650 --> 03:27.170
+Jadval millionlab qatorga yetsa, kerakli qatorni topish sekinlashadi.
+Indekssiz baza jadvalni boshidan oxirigacha qatorma-qator ko‘rib chiqadi.
+
+30
+03:28.660 --> 03:34.810
+Indeks kitob oxiridagi alifbo ko‘rsatkichiga o‘xshaydi.
+Butun kitobni o‘qimasdan, kerakli sahifaga darhol o‘tasiz.
+
+31
+03:35.280 --> 03:40.100
+CREATE INDEX buyrug‘i shunday ko‘rsatkich
+yaratadi, baza esa uni o‘zi yangilab boradi.
+
+32
+03:43.010 --> 03:51.780
+Endi pul o‘tkazmasini ko‘raylik. Ali Malikaga ellik ming so‘m o‘tkazmoqda. Buning
+uchun ikki amal kerak: Alining hisobidan ayirish va Malikaning hisobiga qo‘shish.
+
+33
+03:52.090 --> 03:56.610
+Agar o‘rtada xato bo‘lsa-chi? Pul Alidan
+yechilib, Malikaga yetib bormasligi mumkin.
+
+34
+03:57.780 --> 04:03.170
+Tranzaksiya bir nechta amalni bitta butunga
+aylantiradi. Yo hammasi bajariladi, yo hech biri.
+
+35
+04:03.560 --> 04:08.090
+ROLLBACK boshlangan ishni bekor qiladi.
+COMMIT esa hammasini birdaniga saqlaydi.
+
+36
+04:12.020 --> 04:17.280
+SQL standart til. PostgreSQL, MySQL va
+SQLite uni deyarli bir xil tushunadi.
+
+37
+04:17.710 --> 04:23.100
+PostgreSQL va MySQL alohida server bo‘lib
+ishlaydi. SQLite esa dastur ichidagi bitta fayl.
+
+38
+04:24.050 --> 04:27.760
+Har birining o‘z farqlari bor. Qo‘llanmada
+ularni yonma-yon ko‘rib chiqamiz.
+
+39
+04:30.050 --> 04:37.570
+Xulosa qilsak: ma’lumot jadvallarda saqlanadi, kalitlar ularni bog‘laydi,
+SELECT savol beradi, tranzaksiya esa ma’lumotni butun saqlaydi.
+
+40
+04:38.560 --> 04:42.390
+E’tiboringiz uchun rahmat! Batafsil
+ma’lumot saytdagi SQL qo‘llanmasida.

@@ -14,8 +14,9 @@ const lines = JSON.parse(fs.readFileSync('voice/lines.json', 'utf8'));
 // --- raw.wav (PCM s16 mono) ---
 const wav = fs.readFileSync('voice/raw.wav');
 const rate = wav.readUInt32LE(24);
-const dataAt = wav.indexOf('data') + 8;
-const pcm = new Int16Array(wav.buffer.slice(wav.byteOffset + dataAt, wav.byteOffset + wav.length - ((wav.length - dataAt) % 2)));
+// Faqat 'data' bo'lagi: Gemini WAV oxiriga C2PA (AI kelib chiqish belgisi) qo'shadi — uni audio deb o'qisak, oxirida shovqin chiqadi
+const dataAt = wav.indexOf('data') + 8, dataSize = wav.readUInt32LE(dataAt - 4);
+const pcm = new Int16Array(wav.buffer.slice(wav.byteOffset + dataAt, wav.byteOffset + dataAt + dataSize - (dataSize % 2)));
 const rawDur = pcm.length / rate;
 
 // --- gaplar chegarasi: aligner chegarasiga eng yaqin haqiqiy jimlikning o'rtasi ---

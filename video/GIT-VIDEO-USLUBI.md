@@ -53,7 +53,10 @@ jumla boshi katta harf.
 | Vaqt | Gapdan oldin 0,3 s, keyin 0,6 s nafas (`build-voice.mjs`: `PRE`, `POST`); oyna hech qachon qisqarmaydi |
 | Musiqa | Sintez (`music.mjs`), 92 BPM, Fmaj7–G–Em7–Am7; intro — faqat pad, keyin arpedjio va bas, 22 s dan yengil baraban, xulosada baraban tushadi |
 | Effektlar | commit paydo bo'lishi — pentatonik "pop", ko'chish — whoosh, terminal — klaviatura chiqillashi, merge — qo'ng'iroq + past zarba; hammasi `timeline.js` dagi `cues` dan, vaqt cho'zilganda ham joyida |
+| Xotima | Faqat qo'ng'iroq, shovqinli effekt yo'q (oxirida "bijillash" bo'lib eshitiladi) |
 | Miks (`mix.sh`) | Musiqa ×0,5, gap paytida sidechain (ratio 3) — ovozdan ~16 dB past; ikki bosqichli loudnorm **-16 LUFS**, cho'qqi ≤ -1,5 dB |
+
+**Ma'lum muammo (tuzatilgan):** Gemini WAV oxiriga 6070 baytlik C2PA bo'lagini qo'shadi — WAV faqat `data` bo'lagi hajmi bo'yicha o'qiladi (`build-voice.mjs`), aks holda oxirida shovqin chiqadi.
 
 ## 5. Saytga qo'yish
 

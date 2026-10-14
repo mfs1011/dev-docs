@@ -1,6 +1,8 @@
 # Qo'llanma videolari — manba
 
-**Git videolari uslubi va tekshiruv ro'yxati — [GIT-VIDEO-USLUBI.md](GIT-VIDEO-USLUBI.md)** (faqat Git uchun).
+Har kitobning video uslubi alohida:
+- **Git** — [GIT-VIDEO-USLUBI.md](GIT-VIDEO-USLUBI.md) (to'q neon, animatsiya ovozga cho'ziladi), namuna `git-umumiy/`
+- **SQL** — [SQL-VIDEO-USLUBI.md](SQL-VIDEO-USLUBI.md) ("daftar" uslubi, ovoz birinchi, haqiqiy PostgreSQL ma'lumoti), namuna `sql-umumiy/`
 
 Har papka — bitta video. Tayyor fayl `public/video/<kitob>/` ga qo'yiladi va bobga `<figure class="video">` bilan qo'shiladi (namuna: `content/git/README.md`).
 

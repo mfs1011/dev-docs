@@ -216,6 +216,8 @@ const FX = {
     });
   },
   swell(t0) {
+    // Xotimada faqat qo'ng'iroq: shovqinli ko'tarilish oxirida "bijillash" bo'lib eshitiladi
+    if (t0 > END - 12) { [72, 79, 84].forEach((m, i) => bell(t0 + i * 0.05, m, 0.035, 1.6, -0.3 + i * 0.3)); return; }
     const d = 1.4, i0 = Math.floor((t0 - d) * SR); let a = 0;
     for (let j = 0; j < (d + 1.2) * SR; j++) {
       const t = j / SR, k = Math.min(1, t / d), x = noise();
