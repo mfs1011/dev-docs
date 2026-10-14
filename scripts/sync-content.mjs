@@ -119,7 +119,7 @@ function gitDates(sourceDir) {
 }
 
 function chapterNumber(relPath) {
-  const match = /(^|\/)(\d{2})-/.exec(relPath)
+  const match = /(^|\/)(\d{2,3})-/.exec(relPath)
 
   return match ? Number(match[2]) : null
 }

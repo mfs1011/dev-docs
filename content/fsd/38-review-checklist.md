@@ -85,4 +85,4 @@ Testlar
 
 ## Manbalar
 
-- Arxitektura qo'llanmasi: [91-bob — Checklist](../arxitektura/91-checklist.md), [84-bob — Qaror qabul qilish](../arxitektura/84-qaror-qabul-qilish.md)
+- Arxitektura qo'llanmasi: [104-bob — Checklist](../arxitektura/104-checklist.md), [84-bob — Qaror qabul qilish](../arxitektura/84-qaror-qabul-qilish.md)

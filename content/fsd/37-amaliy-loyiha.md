@@ -4,7 +4,7 @@
 
 ## Qisqacha
 
-Bu bob — butun qo'llanmani bitta loyihada qo'llash: **"Bozor"** onlayn do'konining frontendi (Arxitektura qo'llanmasining 90-bobidagi keys bilan bir xil mahsulot). Maqsad — tayyor kod emas, **qarorlar ketma-ketligi**: v2.1 tamoyiliga ko'ra sahifalardan boshlaymiz va qatlamlarni faqat haqiqiy qayta ishlatish paydo bo'lganda qo'shamiz. Har bosqichda Steiger nima deyishi — 27–31-bob shablonlarida olingan haqiqiy xabarlar.
+Bu bob — butun qo'llanmani bitta loyihada qo'llash: **"Bozor"** onlayn do'konining frontendi (Arxitektura qo'llanmasining 103-bobidagi keys bilan bir xil mahsulot). Maqsad — tayyor kod emas, **qarorlar ketma-ketligi**: v2.1 tamoyiliga ko'ra sahifalardan boshlaymiz va qatlamlarni faqat haqiqiy qayta ishlatish paydo bo'lganda qo'shamiz. Har bosqichda Steiger nima deyishi — 27–31-bob shablonlarida olingan haqiqiy xabarlar.
 
 ## Qoida: bosqichlar
 
@@ -189,4 +189,4 @@ Qatlamda 20 tadan ko'p guruhlanmagan slice bo'lsa, Steiger `excessive-slicing` b
 ## Manbalar
 
 - Rasmiy: *Tutorial* (Conduit misoli) <https://feature-sliced.design/docs/get-started/tutorial>
-- Saytda: [Arxitektura 90-bob — Amaliy keys: to'liq tizim](../arxitektura/90-amaliy-keys.md)
+- Saytda: [Arxitektura 103-bob — Amaliy keys: to'liq tizim](../arxitektura/103-amaliy-keys.md)
