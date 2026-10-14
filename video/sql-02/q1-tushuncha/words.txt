@@ -1,0 +1,21 @@
+L1 Salom! Bu es-kyu-el qo‘llanmasining ikkinchi bobi. Postgres, May es-kyu-el va Es-kyu-layt qanday tuzilganini va ulardan qaysi birini qachon tanlashni ko‘rib chiqamiz.
+L2 Uchala tizim ham es-kyu-el tilini tushunadi, lekin ularning ichki arxitekturasi turlicha. Asosan ikki xil tuzilish bor: mijoz-server va o‘rnatiladigan, ya’ni embeddid.
+L3 Postgres va May es-kyu-el — mijoz-server tizimlari. Baza alohida server dasturi sifatida doim ishlab turadi, ilovalar esa unga mijoz sifatida tarmoq orqali ulanadi.
+L4 Es-kyu-layt esa o‘rnatiladigan tizim. Unda alohida server yo‘q: u ilovaning ichida, oddiy kutubxona sifatida ishlaydi.
+L5 Postgres har bir ulanish uchun alohida jarayonga tayanadi. Bosh postgres jarayoni yangi ulanishlarni kutadi.
+L6 Har bir yangi mijoz ulanganda yangi jarayon ochiladi. Mijoz to‘g‘ridan-to‘g‘ri shu jarayon bilan ishlaydi, bosh jarayon esa aralashmaydi.
+L7 Mijoz va server boshqa kompyuterlarda bo‘lishi mumkin. Shuning uchun mijozdagi fayllar serverda avtomatik mavjud bo‘lmaydi.
+L8 May es-kyu-el serveri may-es-kyu-el-di esa bitta ko‘p oqimli dastur. U har ulanishga yangi jarayon ochmaydi.
+L9 Ulanishlar tredlar, ya’ni bitta jarayon ichidagi alohida oqimlar orqali boshqariladi. Har mijozga alohida tred biriktiriladi.
+L10 May es-kyu-elning yana bir o‘ziga xosligi — almashtiriladigan storidj endjinlar. Es-kyu-el tahlilini server bajaradi, diskda saqlashni esa engine qiladi.
+L11 Sukut bo‘yicha engine — Inno-di-bi. U tranzaksiyalar, qator darajasidagi qulflar va tashqi kalitlarni ta’minlaydi.
+L12 Es-kyu-layt ilova jarayoni ichida ishlaydigan kutubxona. U mustaqil, serversiz va sozlashni talab qilmaydi.
+L13 Butun baza diskdagi bitta faylda saqlanadi. Jadvallar, indekslar va ma’lumotlar hammasi bitta fayl ichida turadi.
+L14 Fayl formati platformadan mustaqil. Ammo bir vaqtda faqat bitta yozuvchi yoza oladi, qolganlari navbat kutadi.
+L15 Es-kyu-layt hujjati ajoyib taqqoslash keltiradi: uni Orakl o‘rnini bosuvchi emas, balki fayl ochish funksiyasi o‘rnini bosuvchi deb tushuning.
+L16 Xo‘sh, qaysi birini qachon tanlash kerak? Es-kyu-layt hujjati aniq uchta nazorat savolini beradi.
+L17 Birinchi savol: ma’lumot ilovadan tarmoq orqali ajratilganmi? Ha bo‘lsa — mijoz-server baza tanlang.
+L18 Ikkinchi savol: ko‘p yozuvchi bir vaqtda yozishi kerakmi va ular navbat kuta olmaydimi? Ha bo‘lsa — mijoz-server tanlang.
+L19 Uchinchi savol: ma’lumot bitta faylga sig‘maydimi? Ha bo‘lsa — yana mijoz-server tanlang.
+L20 Qolgan barcha holatlarda esa — Es-kyu-layt tanlang! Telefon, desktop ilovalar, lokal kesh yoki o‘rta trafikli saytlar uchun u eng yaxshi yechim.
+L21 Bizning qo‘llanma veb-ilovalarga qaratilgani sababli asosiy e’tibor Postgresga beriladi. Keyingi videoda bu uch tizimni haqiqiy terminalda ko‘ramiz.

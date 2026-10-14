@@ -1,0 +1,22 @@
+WEBVTT
+
+00:00.000 --> 00:11.762
+Kirish
+
+00:11.762 --> 00:43.935
+Ikki xil arxitektura
+
+00:43.935 --> 01:08.096
+PostgreSQL: jarayonlar
+
+01:08.096 --> 01:41.145
+MySQL: bitta jarayon, ko‘p thread
+
+01:41.145 --> 02:12.872
+SQLite: kutubxona va bitta fayl
+
+02:12.872 --> 02:53.417
+Qaysi biri qachon?
+
+02:53.417 --> 03:07.020
+Xulosa

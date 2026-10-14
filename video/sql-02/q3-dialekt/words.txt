@@ -1,0 +1,16 @@
+L1 Bob yakunida uch tizimni asosiy mezonlar bo‘yicha taqqoslaymiz, ularning reliz siyosatini ko‘rib chiqamiz va eng ko‘p uchraydigan tipik xatolardan ogohlantiramiz.
+L2 Arxitektura bo‘yicha: Postgres va May es-kyu-el — mijoz-server bazalar, Es-kyu-layt esa ilova ichidagi kutubxona.
+L3 Server dasturi: Postgresda postgres, May es-kyu-elda may-es-kyu-el-di, Es-kyu-laytda esa serverning o‘zi yo‘q.
+L4 Ulanishga resurs: Postgres alohida jarayon ochadi, May es-kyu-el bitta jarayon ichida alohida tred ajratadi, Es-kyu-layt esa oddiy funksiya chaqiruvidir.
+L5 Diskdagi ko‘rinishi: dastlabki ikkisi server boshqaradigan ma’lumot papkasi, Es-kyu-layt esa bitta disk fayli.
+L6 Bir vaqtda yozish: mijoz-server tizimlarda bir vaqtda ko‘p yozuvchi yoza oladi, Es-kyu-laytda esa bir paytda faqat bitta yozuvchi.
+L7 Endi reliz siyosatlari. Ishlab chiqarishda qaysi versiyani tanlash shunga bog‘liq.
+L8 Postgres har yili bitta asosiy versiya chiqaradi va har bir versiya besh yil davomida qo‘llab-quvvatlanadi. Kichik relizlar har uch oyda chiqadi.
+L9 May es-kyu-el ikkita yo‘nalishga ega: besh yil asosiy va uch yil kengaytirilgan muddatga ega El-te-es relizlar, hamda eng yangi imkoniyatlar uchun Innovashn relizlar.
+L10 Es-kyu-layt esa ishlab chiquvchilar tomonidan ikki ming ellikinchi yilgacha qo‘llab-quvvatlanishi rejalashtirilgan. Uning fayl formati o‘nlab yillar davomida barqaror qoladi.
+L11 Endi tipik xatolardan saqlaning. Birinchi xato: Es-kyu-laytni o‘yinchoq baza deb bilish. Hujjatga ko‘ra u qurilmalar va o‘rta trafikli saytlarda a’lo darajada ishlaydi.
+L12 Ikkinchi xato: Es-kyu-layt faylini tarmoq papkasiga qo‘yib, ko‘p kompyuterdan bir vaqtda yozish. Tarmoq fayl tizimidagi qulflash xatolari bazani buzishi mumkin.
+L13 Uchinchi xato: Postgres ulanishini arzon deb o‘ylash. Har ulanish alohida jarayon bo‘lgani sababli, amaliyotda konnekshn pul ishlatish shart.
+L14 To‘rtinchi xato: May es-kyu-elda jadval qaysi endjinda ekaniga qaramaslik. Tranzaksiyalarni faqat Inno-di-bi to‘liq qo‘llab-quvvatlaydi.
+L15 Beshinchi xato: ishlab turgan Es-kyu-layt bazasidan oddiy se-pe bilan nusxa olish. Baza yozish paytida olingan fayl buzilishi mumkin, buning uchun maxsus bekap usullari bor.
+L16 Tizimning tuzilishini tushunish to‘g‘ri texnologiya tanlashning asosi. Keyingi bobda Postgres, May es-kyu-el va Es-kyu-laytni o‘rnatish va ulanishni amalda ko‘ramiz. Rahmat!

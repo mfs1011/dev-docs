@@ -1,0 +1,81 @@
+WEBVTT
+
+1
+00:01.420 --> 00:10.740
+Bob yakunida uch tizimni asosiy mezonlar bo‘yicha taqqoslaymiz, ularning reliz
+siyosatini ko‘rib chiqamiz va eng ko‘p uchraydigan tipik xatolardan ogohlantiramiz.
+
+2
+00:12.950 --> 00:19.200
+Arxitektura bo‘yicha: PostgreSQL va MySQL — mijoz-server
+bazalar, SQLite esa ilova ichidagi kutubxona.
+
+3
+00:20.770 --> 00:27.490
+Server dasturi: PostgreSQL’da postgres, MySQL’da
+mysqld, SQLite’da esa serverning o‘zi yo‘q.
+
+4
+00:29.080 --> 00:37.690
+Ulanishga resurs: PostgreSQL alohida jarayon ochadi, MySQL bitta jarayon
+ichida alohida thread ajratadi, SQLite esa oddiy funksiya chaqiruvidir.
+
+5
+00:39.280 --> 00:45.580
+Diskdagi ko‘rinishi: dastlabki ikkisi server boshqaradigan
+ma’lumot papkasi, SQLite esa bitta disk fayli.
+
+6
+00:47.350 --> 00:54.720
+Bir vaqtda yozish: mijoz-server tizimlarda bir vaqtda ko‘p yozuvchi
+yoza oladi, SQLite’da esa bir paytda faqat bitta yozuvchi.
+
+7
+00:58.330 --> 01:02.910
+Endi reliz siyosatlari. Ishlab chiqarishda
+qaysi versiyani tanlash shunga bog‘liq.
+
+8
+01:03.240 --> 01:11.010
+PostgreSQL har yili bitta asosiy versiya chiqaradi va har bir versiya besh
+yil davomida qo‘llab-quvvatlanadi. Kichik relizlar har uch oyda chiqadi.
+
+9
+01:12.720 --> 01:21.540
+MySQL ikkita yo‘nalishga ega: besh yil asosiy va uch yil kengaytirilgan muddatga
+ega LTS relizlar, hamda eng yangi imkoniyatlar uchun Innovation relizlar.
+
+10
+01:23.370 --> 01:31.840
+SQLite esa ishlab chiquvchilar tomonidan ikki ming ellikinchi yilgacha qo‘llab-quvvatlanishi
+rejalashtirilgan. Uning fayl formati o‘nlab yillar davomida barqaror qoladi.
+
+11
+01:35.710 --> 01:45.330
+Endi tipik xatolardan saqlaning. Birinchi xato: SQLite’ni o‘yinchoq baza deb bilish.
+Hujjatga ko‘ra u qurilmalar va o‘rta trafikli saytlarda a’lo darajada ishlaydi.
+
+12
+01:47.360 --> 01:55.940
+Ikkinchi xato: SQLite faylini tarmoq papkasiga qo‘yib, ko‘p kompyuterdan bir
+vaqtda yozish. Tarmoq fayl tizimidagi qulflash xatolari bazani buzishi mumkin.
+
+13
+01:57.910 --> 02:05.860
+Uchinchi xato: PostgreSQL ulanishini arzon deb o‘ylash. Har ulanish alohida
+jarayon bo‘lgani sababli, amaliyotda connection pool ishlatish shart.
+
+14
+02:07.830 --> 02:15.730
+To‘rtinchi xato: MySQL’da jadval qaysi engine’da ekaniga qaramaslik.
+Tranzaksiyalarni faqat InnoDB to‘liq qo‘llab-quvvatlaydi.
+
+15
+02:17.660 --> 02:28.120
+Beshinchi xato: ishlab turgan SQLite bazasidan oddiy cp bilan nusxa olish. Baza yozish
+paytida olingan fayl buzilishi mumkin, buning uchun maxsus backup usullari bor.
+
+16
+02:31.510 --> 02:42.710
+Tizimning tuzilishini tushunish to‘g‘ri texnologiya tanlashning asosi. Keyingi bobda
+PostgreSQL, MySQL va SQLite’ni o‘rnatish va ulanishni amalda ko‘ramiz. Rahmat!

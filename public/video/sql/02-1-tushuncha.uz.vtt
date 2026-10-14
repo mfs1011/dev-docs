@@ -1,0 +1,106 @@
+WEBVTT
+
+1
+00:01.420 --> 00:11.060
+Salom! Bu SQL qo‘llanmasining ikkinchi bobi. PostgreSQL, MySQL va SQLite
+qanday tuzilganini va ulardan qaysi birini qachon tanlashni ko‘rib chiqamiz.
+
+2
+00:13.170 --> 00:23.920
+Uchala tizim ham SQL tilini tushunadi, lekin ularning ichki arxitekturasi turlicha.
+Asosan ikki xil tuzilish bor: mijoz-server va o‘rnatiladigan, ya’ni embedded.
+
+3
+00:25.110 --> 00:34.790
+PostgreSQL va MySQL — mijoz-server tizimlari. Baza alohida server dasturi sifatida
+doim ishlab turadi, ilovalar esa unga mijoz sifatida tarmoq orqali ulanadi.
+
+4
+00:35.120 --> 00:42.120
+SQLite esa o‘rnatiladigan tizim. Unda alohida server yo‘q:
+u ilovaning ichida, oddiy kutubxona sifatida ishlaydi.
+
+5
+00:44.990 --> 00:51.180
+PostgreSQL har bir ulanish uchun alohida jarayonga
+tayanadi. Bosh postgres jarayoni yangi ulanishlarni kutadi.
+
+6
+00:51.170 --> 00:58.540
+Har bir yangi mijoz ulanganda yangi jarayon ochiladi. Mijoz
+to‘g‘ridan-to‘g‘ri shu jarayon bilan ishlaydi, bosh jarayon esa aralashmaydi.
+
+7
+00:59.570 --> 01:06.570
+Mijoz va server boshqa kompyuterlarda bo‘lishi mumkin. Shuning
+uchun mijozdagi fayllar serverda avtomatik mavjud bo‘lmaydi.
+
+8
+01:09.120 --> 01:15.530
+MySQL serveri mysqld esa bitta ko‘p oqimli
+dastur. U har ulanishga yangi jarayon ochmaydi.
+
+9
+01:15.620 --> 01:23.040
+Ulanishlar threadlar, ya’ni bitta jarayon ichidagi alohida oqimlar
+orqali boshqariladi. Har mijozga alohida thread biriktiriladi.
+
+10
+01:24.030 --> 01:32.580
+MySQL’ning yana bir o‘ziga xosligi — almashtiriladigan storage engine’lar.
+SQL tahlilini server bajaradi, diskda saqlashni esa engine qiladi.
+
+11
+01:32.710 --> 01:39.370
+Sukut bo‘yicha engine — InnoDB. U tranzaksiyalar, qator
+darajasidagi qulflar va tashqi kalitlarni ta’minlaydi.
+
+12
+01:42.220 --> 01:48.350
+SQLite ilova jarayoni ichida ishlaydigan kutubxona.
+U mustaqil, serversiz va sozlashni talab qilmaydi.
+
+13
+01:48.480 --> 01:55.620
+Butun baza diskdagi bitta faylda saqlanadi. Jadvallar,
+indekslar va ma’lumotlar hammasi bitta fayl ichida turadi.
+
+14
+01:56.510 --> 02:03.080
+Fayl formati platformadan mustaqil. Ammo bir vaqtda faqat
+bitta yozuvchi yoza oladi, qolganlari navbat kutadi.
+
+15
+02:02.990 --> 02:10.990
+SQLite hujjati ajoyib taqqoslash keltiradi: uni Oracle o‘rnini bosuvchi
+emas, balki fayl ochish funksiyasi o‘rnini bosuvchi deb tushuning.
+
+16
+02:13.920 --> 02:19.750
+Xo‘sh, qaysi birini qachon tanlash kerak? SQLite
+hujjati aniq uchta nazorat savolini beradi.
+
+17
+02:19.880 --> 02:26.360
+Birinchi savol: ma’lumot ilovadan tarmoq orqali
+ajratilganmi? Ha bo‘lsa — mijoz-server baza tanlang.
+
+18
+02:27.390 --> 02:34.460
+Ikkinchi savol: ko‘p yozuvchi bir vaqtda yozishi kerakmi va
+ular navbat kuta olmaydimi? Ha bo‘lsa — mijoz-server tanlang.
+
+19
+02:35.590 --> 02:41.390
+Uchinchi savol: ma’lumot bitta faylga sig‘maydimi?
+Ha bo‘lsa — yana mijoz-server tanlang.
+
+20
+02:42.560 --> 02:51.590
+Qolgan barcha holatlarda esa — SQLite tanlang! Telefon, desktop ilovalar,
+lokal kesh yoki o‘rta trafikli saytlar uchun u eng yaxshi yechim.
+
+21
+02:54.650 --> 03:03.270
+Bizning qo‘llanma veb-ilovalarga qaratilgani sababli asosiy e’tibor PostgreSQL’ga
+beriladi. Keyingi videoda bu uch tizimni haqiqiy terminalda ko‘ramiz.
