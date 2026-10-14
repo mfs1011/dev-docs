@@ -1,0 +1,20 @@
+
+┌ src/widgets/header/ui/header.ts:3:26
+✘ Forbidden cross-import from slice "sidebar".
+│
+└ fsd/forbidden-imports: https://github.com/feature-sliced/steiger/tree/master/packages/steiger-plugin-fsd/src/forbidden-imports
+
+┌ src/widgets/header/ui/header.ts:4:27
+⚠ Forbidden import from higher layer "pages".
+│
+└ fsd/forbidden-imports: https://github.com/feature-sliced/steiger/tree/master/packages/steiger-plugin-fsd/src/forbidden-imports
+
+┌ src/processes
+✘ Layer "processes" is deprecated, avoid using it
+│
+└ fsd/no-processes: https://github.com/feature-sliced/steiger/tree/master/packages/steiger-plugin-fsd/src/no-processes
+
+──────────────────────────────────────────────────────────────
+ Found 2 errors and 1 warning (none can be fixed automatically)
+
+exit=1

@@ -1,0 +1,124 @@
+WEBVTT
+
+1
+00:01.420 --> 00:09.900
+Salom! Bu FSD qo‘llanmasining uchinchi bobi — qatlamlar. Har bir qatlam
+nima uchun kerakligini va kim kimni import qila olishini ko‘ramiz.
+
+2
+00:11.790 --> 00:19.440
+Qatlam — src papkasi ichidagi standart nomli papka. Jami yettita
+qatlam bor, ular mas’uliyat va bog‘liqlik bo‘yicha tartiblangan.
+
+3
+00:20.350 --> 00:27.130
+Eng yuqoridagisi ko‘p narsani biladi va ko‘p narsaga bog‘liq.
+Pastga tushgan sari qatlam kamroq narsaga bog‘liq bo‘ladi.
+
+4
+00:30.100 --> 00:36.270
+Eng tepada app: provayderlar, marshrutlar va
+analitika kabi butun ilovaga tegishli narsalar.
+
+5
+00:37.060 --> 00:42.870
+Processes qatlami eskirgan. Uning tarkibini features
+va app qatlamlariga ko‘chirish tavsiya qilinadi.
+
+6
+00:43.940 --> 00:51.300
+Pages — ilova ekranlari. Odatda har sahifa bitta slice:
+yuklanish holati, xatolar va ma’lumot so‘rovlari bilan birga.
+
+7
+00:52.390 --> 00:58.760
+Widgets — katta mustaqil interfeys bloklari. Ular
+bir nechta sahifada qayta ishlatilganda eng foydali.
+
+8
+00:59.650 --> 01:05.710
+Features — ilovadagi asosiy foydalanuvchi harakatlari.
+Ular ko‘pincha biznes obyektlari bilan ishlaydi.
+
+9
+01:06.640 --> 01:12.470
+Entities — loyiha ishlaydigan real biznes
+tushunchalari: masalan, foydalanuvchi yoki maqola.
+
+10
+01:13.400 --> 01:20.520
+Eng pastda shared — ilova poydevori. Unda biznes
+yo‘q: interfeys to‘plami, API klient va sozlamalar.
+
+11
+01:23.490 --> 01:29.160
+Asosiy qoida: slice faqat o‘zidan qat’iy pastdagi
+qatlamlardagi slice’larni import qila oladi.
+
+12
+01:30.250 --> 01:36.170
+Masalan, header widgeti features, entities va
+shared qatlamlaridan import qiladi. Bu to‘g‘ri.
+
+13
+01:37.500 --> 01:42.690
+Lekin u boshqa widgetdan yoki yuqoridagi pages
+qatlamidan import qilsa, qoida buziladi.
+
+14
+01:46.040 --> 01:51.410
+Ikki istisno bor: app va shared. Ular bir
+vaqtning o‘zida ham qatlam, ham slice.
+
+15
+01:52.340 --> 02:01.440
+Ularning ichida slice yo‘q, to‘g‘ridan-to‘g‘ri segmentlar bor. Shuning uchun
+segmentlar bir-birini erkin import qiladi: masalan, shared ichida ui lib’dan.
+
+16
+02:04.770 --> 02:10.540
+Hamma qatlamni ishlatish shart emas. Ko‘pchilik
+loyihalarda kamida shared, pages va app bo‘ladi.
+
+17
+02:11.870 --> 02:14.640
+Qolganlari haqiqatan kerak bo‘lganda qo‘shiladi.
+
+18
+02:15.620 --> 02:20.330
+Yangi qatlam qo‘shish esa tavsiya etilmaydi,
+chunki qatlamlarning ma’nosi standart.
+
+19
+02:23.860 --> 02:28.470
+Steiger bilan tekshiramiz. Mana,
+xatolar ataylab kiritilgan loyiha.
+
+20
+02:29.380 --> 02:36.940
+Header boshqa widgetdan import qildi — bu xato. Pages
+qatlamidan importni Steiger ogohlantirish sifatida belgiladi.
+
+21
+02:38.390 --> 02:41.320
+Eskirgan processes qatlami ham xato beradi.
+
+22
+02:42.770 --> 02:49.440
+Lekin e’tibor bering: o‘zimiz qo‘shgan core papkasini
+Steiger ushlamadi. Bunday xatoni o‘zingiz kuzatasiz.
+
+23
+02:51.070 --> 02:56.810
+Tuzatilgan loyihada muammo yo‘q. Shared ichida
+ui lib’dan import qilgani ham xato emas.
+
+24
+03:00.300 --> 03:07.880
+Xulosa qilsak: yettita qatlam yuqoridan pastga tartiblangan,
+import faqat pastga, app va shared esa istisno.
+
+25
+03:08.930 --> 03:12.590
+Keyingi bobda slice’larni ko‘ramiz.
+E’tiboringiz uchun rahmat!
