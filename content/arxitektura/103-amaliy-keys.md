@@ -1,6 +1,6 @@
-# 90 — Amaliy keys: to'liq tizim
+# 103 — Amaliy keys: to'liq tizim
 
-[← Oldingi: AI bilan tizim loyihalash](89-ai-bilan-loyihalash.md) · [Mundarija](README.md) · [Keyingi: Checklist →](91-checklist.md)
+[← Oldingi: Keys: Uber — haydovchi topish](102-keys-uber.md) · [Mundarija](README.md) · [Keyingi: Checklist →](104-checklist.md)
 
 ## Tushuncha
 

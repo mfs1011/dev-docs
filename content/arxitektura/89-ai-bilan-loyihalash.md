@@ -1,6 +1,6 @@
 # 89 — AI bilan tizim loyihalash
 
-[← Oldingi: AI xavfsizligi](88-ai-xavfsizligi.md) · [Mundarija](README.md) · [Keyingi: Amaliy keys: to'liq tizim →](90-amaliy-keys.md)
+[← Oldingi: AI xavfsizligi](88-ai-xavfsizligi.md) · [Mundarija](README.md) · [Keyingi: Tizim dizayni jarayoni va taxminiy hisob →](90-tizim-dizayni-jarayoni.md)
 
 ## Tushuncha
 

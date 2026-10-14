@@ -1,6 +1,6 @@
-# 91 — Checklist
+# 104 — Checklist
 
-[← Oldingi: Amaliy keys: to'liq tizim](90-amaliy-keys.md) · [Mundarija](README.md)
+[← Oldingi: Amaliy keys: to'liq tizim](103-amaliy-keys.md) · [Mundarija](README.md)
 
 ## Tushuncha
 

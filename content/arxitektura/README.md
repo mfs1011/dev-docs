@@ -184,21 +184,42 @@ Qo'llanma quyidagi manbalarga tayanadi va ularga havola qiladi:
 | 88 | [AI xavfsizligi](88-ai-xavfsizligi.md) | Prompt injection, ma'lumot sizishi, OWASP LLM Top 10 |
 | 89 | [AI bilan tizim loyihalash](89-ai-bilan-loyihalash.md) | Vazifani qanday berish, natijani tekshirish, muhandis mas'uliyati |
 
-## IX qism — Amaliyot (90–91)
+## IX qism — Tizim dizayni va masshtab (90–102)
+
+Millionlab foydalanuvchiga chidaydigan tizim: yuklamani taqsimlash, ma'lumotni ko'paytirish va bo'lish, izchillik bilan murosa, mashhur tizimlarning real arxitekturasi. Keys boblari kompaniyalarning muhandislik bloglari va konferensiya chiqishlariga tayanadi.
 
 | № | Bob | Nima o'rganasiz |
 | --- | --- | --- |
-| 90 | [Amaliy keys: to'liq tizim](90-amaliy-keys.md) | E-commerce misolida barcha qarorlar ketma-ketligi |
-| 91 | [Checklist](91-checklist.md) | Loyiha boshlanishi, ko'rik, reliz uchun ro'yxatlar |
+| 90 | [Tizim dizayni jarayoni va taxminiy hisob](90-tizim-dizayni-jarayoni.md) | Talab → hajm hisobi (QPS, saqlash, tarmoq) → yuqori darajadagi sxema → chuqurlashish; kechikish raqamlari |
+| 91 | [Gorizontal masshtab va stateless servislar](91-gorizontal-masshtab.md) | Vertikal va gorizontal kengayish, holatni servisdan tashqariga chiqarish |
+| 92 | [Load balancing](92-load-balancing.md) | L4/L7, taqsimlash algoritmlari, health check, sticky session |
+| 93 | [CDN va chekka keshlash](93-cdn.md) | `Cache-Control`, `s-maxage`, revalidatsiya, invalidatsiya |
+| 94 | [Replikatsiya](94-replikatsiya.md) | Leader–follower, sinxron va asinxron, replikatsiya kechikishi, failover |
+| 95 | [Sharding va consistent hashing](95-sharding.md) | Kalit tanlash, qayta taqsimlash, "issiq" shard |
+| 96 | [Ma'lumotlar bazasi oilasini tanlash](96-baza-oilasi.md) | Relyatsion, hujjat, kalit-qiymat, wide-column, graf |
+| 97 | [CAP, PACELC va izchillik modellari](97-cap-va-pacelc.md) | Bo'linishdagi tanlov, kechikish va izchillik murosasi |
+| 98 | [Taqsimlangan ID generatsiyasi](98-taqsimlangan-id.md) | UUIDv7, Snowflake |
+| 99 | [Fan-out va lenta dizayni](99-fan-out-va-lenta.md) | Pub/sub, yozishda va o'qishda tarqatish, mashhurlik muammosi |
+| 100 | [Keys: Twitter lentasi](100-keys-twitter.md) | Fan-out real tizimda |
+| 101 | [Keys: WhatsApp — millionlab ulanish](101-keys-whatsapp.md) | Bir serverda millionlab ulanish |
+| 102 | [Keys: Uber — haydovchi topish](102-keys-uber.md) | Geo indekslash (H3), real vaqt bozori |
+
+## X qism — Amaliyot (103–104)
+
+| № | Bob | Nima o'rganasiz |
+| --- | --- | --- |
+| 103 | [Amaliy keys: to'liq tizim](103-amaliy-keys.md) | E-commerce misolida barcha qarorlar ketma-ketligi |
+| 104 | [Checklist](104-checklist.md) | Loyiha boshlanishi, ko'rik, reliz uchun ro'yxatlar |
 
 ---
 
 ## Qanday o'qish kerak
 
-- **Ketma-ket:** I → II → (III yoki IV, o'z yo'nalishingiz) → **V** → VI → VII → VIII → IX.
+- **Ketma-ket:** I → II → (III yoki IV, o'z yo'nalishingiz) → **V** → VI → VII → VIII → IX → X.
 - **Full-stack:** to'liq ketma-ket, V qismga alohida vaqt ajrating.
 - **Backend mutaxassisi:** I, II, III, V, VII — IV qismni umumiy tanishish uchun.
 - **AI bilan ishlaydigan tizim quryapsizmi:** VIII qism — V va VII qismlarga tayanadi.
+- **Katta yuklamali tizim yoki tizim dizayni intervyusi:** IX qism — III qism (ma'lumot, kesh, navbat) va VII qismga (unumdorlik, ishonchlilik) tayanadi.
 - **Frontend mutaxassisi:** I, II, IV, V, VII — III qismni ma'lumot va kesh boblari uchun.
 - **Aniq muammo bilan kelgan bo'lsangiz:** V qism mustaqil o'qiladi (shartnoma, auth, kesh, real vaqt).
 
