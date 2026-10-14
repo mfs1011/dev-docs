@@ -15,6 +15,18 @@ Bu qo'llanma — **spravochnik**: kod qayerga borishini tez topish uchun. U rasm
 
 > **Talab.** Kamida bitta frontend framework'da real loyiha qilgan bo'lish. Arxitektura tamoyillari (chegaralar, bog'liqlik, modul tuzilmasi) — [Arxitektura qo'llanmasi](../arxitektura/38-modul-tuzilmasi.md)da; bu yerda — faqat FSD.
 
+Boshlashdan oldin — FSD'ning umumiy manzarasi 3,5 daqiqada:
+
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/fsd/fsd-qanday-ishlaydi.jpg" src="/video/fsd/fsd-qanday-ishlaydi.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/fsd/fsd-qanday-ishlaydi.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/fsd/fsd-qanday-ishlaydi.uz.vtt">
+</video>
+<figcaption>FSD bino misolida: qatlam — qavat, slice — xona, segment — quti, public API — eshik, import — faqat pastga yuradigan lift. Linter natijalari — haqiqiy Steiger 0.7.0 dan.</figcaption>
+</figure>
+
+Videodagi har mavzu keyin alohida bobda chuqur ochiladi: [FSD nima](01-kirish.md), [pages-first](02-pages-first.md), [qatlamlar](03-qatlamlar.md), [slice'lar](04-slicelar.md), [segmentlar](05-segmentlar.md), [import qoidasi va public API](06-import-va-public-api.md), [Steiger](33-steiger.md).
+
 ---
 
 ## Framework tanlagich
