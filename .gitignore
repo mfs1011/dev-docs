@@ -38,3 +38,12 @@ video/*/*.jpg
 video/*/package*.json
 video/*/linter/node_modules/
 video/*/namuna*/node_modules
+# Ichma-ich video papkalari (video/<bob>/<qism>/)
+video/*/*/segs/
+video/*/*/stills/
+video/*/*/node_modules
+video/*/*/*.wav
+video/*/*/voice/*.wav
+video/*/*/*.mp4
+video/*/*/*.png
+video/*/*/*.jpg

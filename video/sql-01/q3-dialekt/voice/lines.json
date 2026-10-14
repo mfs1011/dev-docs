@@ -1,0 +1,1598 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Bitta so‘rov uch tizimda uch xil natija berishi mumkin. Uchta misolni PostgreSQL, MySQL va SQLite’da ko‘ramiz.",
+    "show": "Bitta so‘rov uch tizimda uch xil natija berishi mumkin. Uchta misolni PostgreSQL, MySQL va SQLite’da ko‘ramiz.",
+    "say": "Bitta so‘rov uch tizimda uch xil natija berishi mumkin. Uchta misolni Postgres, May es-kyu-el va Es-kyu-laytda ko‘ramiz.",
+    "a0": 0.3,
+    "a1": 7.36,
+    "words": [
+      {
+        "w": "Bitta",
+        "s": 0.3,
+        "e": 0.54
+      },
+      {
+        "w": "so‘rov",
+        "s": 0.6,
+        "e": 0.88
+      },
+      {
+        "w": "uch",
+        "s": 1.08,
+        "e": 1.24
+      },
+      {
+        "w": "tizimda",
+        "s": 1.3,
+        "e": 1.64
+      },
+      {
+        "w": "uch",
+        "s": 1.82,
+        "e": 1.98
+      },
+      {
+        "w": "xil",
+        "s": 2.04,
+        "e": 2.16
+      },
+      {
+        "w": "natija",
+        "s": 2.22,
+        "e": 2.54
+      },
+      {
+        "w": "berishi",
+        "s": 2.58,
+        "e": 2.88
+      },
+      {
+        "w": "mumkin.",
+        "s": 2.9,
+        "e": 3.2
+      },
+      {
+        "w": "Uchta",
+        "s": 3.76,
+        "e": 3.98
+      },
+      {
+        "w": "misolni",
+        "s": 4.02,
+        "e": 4.34
+      },
+      {
+        "w": "Postgres,",
+        "s": 4.48,
+        "e": 5.0
+      },
+      {
+        "w": "May",
+        "s": 5.3,
+        "e": 5.46
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 5.56,
+        "e": 6.0
+      },
+      {
+        "w": "va",
+        "s": 6.08,
+        "e": 6.16
+      },
+      {
+        "w": "Es-kyu-laytda",
+        "s": 6.4,
+        "e": 6.98
+      },
+      {
+        "w": "ko‘ramiz.",
+        "s": 7.02,
+        "e": 7.36
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "concat",
+    "text": "Standartda ikkita vertikal chiziq — ikki satrni bir-biriga ulash amali.",
+    "show": "Standartda ikkita vertikal chiziq — ikki satrni bir-biriga ulash amali.",
+    "say": "Standartda ikkita vertikal chiziq — ikki satrni bir-biriga ulash amali.",
+    "a0": 8.05,
+    "a1": 11.69,
+    "words": [
+      {
+        "w": "Standartda",
+        "s": 8.05,
+        "e": 8.59
+      },
+      {
+        "w": "ikkita",
+        "s": 8.71,
+        "e": 8.93
+      },
+      {
+        "w": "vertikal",
+        "s": 8.97,
+        "e": 9.39
+      },
+      {
+        "w": "chiziq",
+        "s": 9.43,
+        "e": 9.71
+      },
+      {
+        "w": "—",
+        "s": 9.71,
+        "e": 9.71
+      },
+      {
+        "w": "ikki",
+        "s": 9.95,
+        "e": 10.15
+      },
+      {
+        "w": "satrni",
+        "s": 10.21,
+        "e": 10.59
+      },
+      {
+        "w": "bir-biriga",
+        "s": 10.65,
+        "e": 11.05
+      },
+      {
+        "w": "ulash",
+        "s": 11.17,
+        "e": 11.43
+      },
+      {
+        "w": "amali.",
+        "s": 11.45,
+        "e": 11.69
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "concat",
+    "text": "PostgreSQL kutilgandek javob beradi: Salom, dunyo. SQLite ham xuddi shunday.",
+    "show": "PostgreSQL kutilgandek javob beradi: Salom, dunyo. SQLite ham xuddi shunday.",
+    "say": "Postgres kutilgandek javob beradi: Salom, dunyo. Es-kyu-layt ham xuddi shunday.",
+    "a0": 12.21,
+    "a1": 16.61,
+    "words": [
+      {
+        "w": "Postgres",
+        "s": 12.21,
+        "e": 12.65
+      },
+      {
+        "w": "kutilgandek",
+        "s": 12.69,
+        "e": 13.19
+      },
+      {
+        "w": "javob",
+        "s": 13.21,
+        "e": 13.43
+      },
+      {
+        "w": "beradi:",
+        "s": 13.47,
+        "e": 13.71
+      },
+      {
+        "w": "Salom,",
+        "s": 14.03,
+        "e": 14.33
+      },
+      {
+        "w": "dunyo.",
+        "s": 14.39,
+        "e": 14.63
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 15.23,
+        "e": 15.69
+      },
+      {
+        "w": "ham",
+        "s": 15.73,
+        "e": 15.89
+      },
+      {
+        "w": "xuddi",
+        "s": 15.99,
+        "e": 16.27
+      },
+      {
+        "w": "shunday.",
+        "s": 16.31,
+        "e": 16.61
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "concat",
+    "text": "MySQL esa nol qaytaradi va uchta ogohlantirish beradi.",
+    "show": "MySQL esa nol qaytaradi va uchta ogohlantirish beradi.",
+    "say": "May es-kyu-el esa nol qaytaradi va uchta ogohlantirish beradi.",
+    "a0": 17.33,
+    "a1": 20.29,
+    "words": [
+      {
+        "w": "May",
+        "s": 17.33,
+        "e": 17.49
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 17.59,
+        "e": 17.95
+      },
+      {
+        "w": "esa",
+        "s": 18.01,
+        "e": 18.17
+      },
+      {
+        "w": "nol",
+        "s": 18.33,
+        "e": 18.53
+      },
+      {
+        "w": "qaytaradi",
+        "s": 18.57,
+        "e": 18.97
+      },
+      {
+        "w": "va",
+        "s": 19.01,
+        "e": 19.07
+      },
+      {
+        "w": "uchta",
+        "s": 19.21,
+        "e": 19.45
+      },
+      {
+        "w": "ogohlantirish",
+        "s": 19.51,
+        "e": 20.03
+      },
+      {
+        "w": "beradi.",
+        "s": 20.03,
+        "e": 20.29
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "concat",
+    "text": "Ogohlantirishlarni ko‘ramiz. MySQL’da bu belgi sukut bo‘yicha mantiqiy YOKI degani. Ikkala satr songa aylanib, nol bo‘ldi. Xato emas, faqat ogohlantirish. MySQL’da satrlar CONCAT funksiyasi bilan ulanadi.",
+    "show": "Ogohlantirishlarni ko‘ramiz. MySQL’da bu belgi sukut bo‘yicha mantiqiy YOKI degani. Ikkala satr songa aylanib, nol bo‘ldi. Xato emas, faqat ogohlantirish. MySQL’da satrlar CONCAT funksiyasi bilan ulanadi.",
+    "say": "Ogohlantirishlarni ko‘ramiz. May es-kyu-elda bu belgi sukut bo‘yicha mantiqiy YOKI degani. Ikkala satr songa aylanib, nol bo‘ldi. Xato emas, faqat ogohlantirish. May es-kyu-elda satrlar konkat funksiyasi bilan ulanadi.",
+    "a0": 21.39,
+    "a1": 34.34,
+    "words": [
+      {
+        "w": "Ogohlantirishlarni",
+        "s": 21.39,
+        "e": 22.07
+      },
+      {
+        "w": "ko‘ramiz.",
+        "s": 22.09,
+        "e": 22.41
+      },
+      {
+        "w": "May",
+        "s": 22.96,
+        "e": 23.1
+      },
+      {
+        "w": "es-kyu-elda",
+        "s": 23.2,
+        "e": 23.66
+      },
+      {
+        "w": "bu",
+        "s": 23.82,
+        "e": 23.9
+      },
+      {
+        "w": "belgi",
+        "s": 24.02,
+        "e": 24.34
+      },
+      {
+        "w": "sukut",
+        "s": 24.46,
+        "e": 24.72
+      },
+      {
+        "w": "bo‘yicha",
+        "s": 24.76,
+        "e": 25.04
+      },
+      {
+        "w": "mantiqiy",
+        "s": 25.14,
+        "e": 25.62
+      },
+      {
+        "w": "YOKI",
+        "s": 25.64,
+        "e": 26.1
+      },
+      {
+        "w": "degani.",
+        "s": 26.18,
+        "e": 26.5
+      },
+      {
+        "w": "Ikkala",
+        "s": 26.98,
+        "e": 27.24
+      },
+      {
+        "w": "satr",
+        "s": 27.28,
+        "e": 27.52
+      },
+      {
+        "w": "songa",
+        "s": 27.58,
+        "e": 27.84
+      },
+      {
+        "w": "aylanib,",
+        "s": 27.88,
+        "e": 28.18
+      },
+      {
+        "w": "nol",
+        "s": 28.32,
+        "e": 28.52
+      },
+      {
+        "w": "bo‘ldi.",
+        "s": 28.56,
+        "e": 28.8
+      },
+      {
+        "w": "Xato",
+        "s": 29.22,
+        "e": 29.46
+      },
+      {
+        "w": "emas,",
+        "s": 29.56,
+        "e": 29.78
+      },
+      {
+        "w": "faqat",
+        "s": 30.04,
+        "e": 30.32
+      },
+      {
+        "w": "ogohlantirish.",
+        "s": 30.46,
+        "e": 31.08
+      },
+      {
+        "w": "May",
+        "s": 31.62,
+        "e": 31.76
+      },
+      {
+        "w": "es-kyu-elda",
+        "s": 31.86,
+        "e": 32.32
+      },
+      {
+        "w": "satrlar",
+        "s": 32.38,
+        "e": 32.8
+      },
+      {
+        "w": "konkat",
+        "s": 32.96,
+        "e": 33.36
+      },
+      {
+        "w": "funksiyasi",
+        "s": 33.42,
+        "e": 33.82
+      },
+      {
+        "w": "bilan",
+        "s": 33.84,
+        "e": 33.98
+      },
+      {
+        "w": "ulanadi.",
+        "s": 34.02,
+        "e": 34.34
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "tirnoq",
+    "text": "Standartda bitta tirnoq — satr, qo‘shtirnoq esa jadval yoki ustun nomi.",
+    "show": "Standartda bitta tirnoq — satr, qo‘shtirnoq esa jadval yoki ustun nomi.",
+    "say": "Standartda bitta tirnoq — satr, qo‘shtirnoq esa jadval yoki ustun nomi.",
+    "a0": 34.92,
+    "a1": 39.05,
+    "words": [
+      {
+        "w": "Standartda",
+        "s": 34.92,
+        "e": 35.44
+      },
+      {
+        "w": "bitta",
+        "s": 35.52,
+        "e": 35.74
+      },
+      {
+        "w": "tirnoq",
+        "s": 35.78,
+        "e": 36.1
+      },
+      {
+        "w": "—",
+        "s": 36.1,
+        "e": 36.1
+      },
+      {
+        "w": "satr,",
+        "s": 36.18,
+        "e": 36.5
+      },
+      {
+        "w": "qo‘shtirnoq",
+        "s": 36.84,
+        "e": 37.32
+      },
+      {
+        "w": "esa",
+        "s": 37.38,
+        "e": 37.53
+      },
+      {
+        "w": "jadval",
+        "s": 37.65,
+        "e": 38.05
+      },
+      {
+        "w": "yoki",
+        "s": 38.05,
+        "e": 38.33
+      },
+      {
+        "w": "ustun",
+        "s": 38.49,
+        "e": 38.77
+      },
+      {
+        "w": "nomi.",
+        "s": 38.81,
+        "e": 39.05
+      }
+    ]
+  },
+  {
+    "id": "L7",
+    "scene": "tirnoq",
+    "text": "PostgreSQL standartga amal qiladi: salom degan ustun yo‘q, shuning uchun xato.",
+    "show": "PostgreSQL standartga amal qiladi: salom degan ustun yo‘q, shuning uchun xato.",
+    "say": "Postgres standartga amal qiladi: salom degan ustun yo‘q, shuning uchun xato.",
+    "a0": 39.63,
+    "a1": 43.43,
+    "words": [
+      {
+        "w": "Postgres",
+        "s": 39.63,
+        "e": 40.11
+      },
+      {
+        "w": "standartga",
+        "s": 40.15,
+        "e": 40.63
+      },
+      {
+        "w": "amal",
+        "s": 40.65,
+        "e": 40.81
+      },
+      {
+        "w": "qiladi:",
+        "s": 40.85,
+        "e": 41.09
+      },
+      {
+        "w": "salom",
+        "s": 41.43,
+        "e": 41.71
+      },
+      {
+        "w": "degan",
+        "s": 41.75,
+        "e": 41.97
+      },
+      {
+        "w": "ustun",
+        "s": 42.05,
+        "e": 42.31
+      },
+      {
+        "w": "yo‘q,",
+        "s": 42.37,
+        "e": 42.53
+      },
+      {
+        "w": "shuning",
+        "s": 42.73,
+        "e": 42.95
+      },
+      {
+        "w": "uchun",
+        "s": 42.97,
+        "e": 43.15
+      },
+      {
+        "w": "xato.",
+        "s": 43.21,
+        "e": 43.43
+      }
+    ]
+  },
+  {
+    "id": "L8",
+    "scene": "tirnoq",
+    "text": "MySQL qo‘shtirnoqni satr deb tushunadi va salom so‘zini qaytaradi.",
+    "show": "MySQL qo‘shtirnoqni satr deb tushunadi va salom so‘zini qaytaradi.",
+    "say": "May es-kyu-el qo‘shtirnoqni satr deb tushunadi va salom so‘zini qaytaradi.",
+    "a0": 44.09,
+    "a1": 47.49,
+    "words": [
+      {
+        "w": "May",
+        "s": 44.09,
+        "e": 44.23
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 44.33,
+        "e": 44.69
+      },
+      {
+        "w": "qo‘shtirnoqni",
+        "s": 44.75,
+        "e": 45.35
+      },
+      {
+        "w": "satr",
+        "s": 45.45,
+        "e": 45.75
+      },
+      {
+        "w": "deb",
+        "s": 45.79,
+        "e": 45.91
+      },
+      {
+        "w": "tushunadi",
+        "s": 45.93,
+        "e": 46.25
+      },
+      {
+        "w": "va",
+        "s": 46.29,
+        "e": 46.35
+      },
+      {
+        "w": "salom",
+        "s": 46.43,
+        "e": 46.71
+      },
+      {
+        "w": "so‘zini",
+        "s": 46.77,
+        "e": 47.05
+      },
+      {
+        "w": "qaytaradi.",
+        "s": 47.09,
+        "e": 47.49
+      }
+    ]
+  },
+  {
+    "id": "L9",
+    "scene": "tirnoq",
+    "text": "SQLite’da bu qanday yig‘ilganiga bog‘liq. Rasmiy manbadan yig‘ilgan bizning versiyamizda DQS nolga teng, shuning uchun xato beradi.",
+    "show": "SQLite’da bu qanday yig‘ilganiga bog‘liq. Rasmiy manbadan yig‘ilgan bizning versiyamizda DQS nolga teng, shuning uchun xato beradi.",
+    "say": "Es-kyu-laytda bu qanday yig‘ilganiga bog‘liq. Rasmiy manbadan yig‘ilgan bizning versiyamizda Di-kyu-es nolga teng, shuning uchun xato beradi.",
+    "a0": 48.25,
+    "a1": 55.56,
+    "words": [
+      {
+        "w": "Es-kyu-laytda",
+        "s": 48.25,
+        "e": 48.83
+      },
+      {
+        "w": "bu",
+        "s": 48.89,
+        "e": 48.97
+      },
+      {
+        "w": "qanday",
+        "s": 49.13,
+        "e": 49.49
+      },
+      {
+        "w": "yig‘ilganiga",
+        "s": 49.53,
+        "e": 50.05
+      },
+      {
+        "w": "bog‘liq.",
+        "s": 50.09,
+        "e": 50.33
+      },
+      {
+        "w": "Rasmiy",
+        "s": 50.73,
+        "e": 51.01
+      },
+      {
+        "w": "manbadan",
+        "s": 51.07,
+        "e": 51.51
+      },
+      {
+        "w": "yig‘ilgan",
+        "s": 51.55,
+        "e": 51.93
+      },
+      {
+        "w": "bizning",
+        "s": 52.01,
+        "e": 52.25
+      },
+      {
+        "w": "versiyamizda",
+        "s": 52.29,
+        "e": 52.82
+      },
+      {
+        "w": "Di-kyu-es",
+        "s": 53.16,
+        "e": 53.7
+      },
+      {
+        "w": "nolga",
+        "s": 53.82,
+        "e": 54.12
+      },
+      {
+        "w": "teng,",
+        "s": 54.18,
+        "e": 54.36
+      },
+      {
+        "w": "shuning",
+        "s": 54.54,
+        "e": 54.74
+      },
+      {
+        "w": "uchun",
+        "s": 54.74,
+        "e": 54.92
+      },
+      {
+        "w": "xato",
+        "s": 54.98,
+        "e": 55.2
+      },
+      {
+        "w": "beradi.",
+        "s": 55.28,
+        "e": 55.56
+      }
+    ]
+  },
+  {
+    "id": "L10",
+    "scene": "tirnoq",
+    "text": "Lekin dbconfig bilan yoqilsa, xuddi shu so‘rov satr qaytaradi. SQLite hujjati bu imkoniyatni xato imkoniyat deb ataydi.",
+    "show": "Lekin dbconfig bilan yoqilsa, xuddi shu so‘rov satr qaytaradi. SQLite hujjati bu imkoniyatni xato imkoniyat deb ataydi.",
+    "say": "Lekin di-bi-konfig bilan yoqilsa, xuddi shu so‘rov satr qaytaradi. Es-kyu-layt hujjati bu imkoniyatni xato imkoniyat deb ataydi.",
+    "a0": 56.24,
+    "a1": 63.58,
+    "words": [
+      {
+        "w": "Lekin",
+        "s": 56.24,
+        "e": 56.5
+      },
+      {
+        "w": "di-bi-konfig",
+        "s": 56.6,
+        "e": 57.26
+      },
+      {
+        "w": "bilan",
+        "s": 57.3,
+        "e": 57.46
+      },
+      {
+        "w": "yoqilsa,",
+        "s": 57.48,
+        "e": 57.84
+      },
+      {
+        "w": "xuddi",
+        "s": 58.14,
+        "e": 58.42
+      },
+      {
+        "w": "shu",
+        "s": 58.46,
+        "e": 58.56
+      },
+      {
+        "w": "so‘rov",
+        "s": 58.62,
+        "e": 58.88
+      },
+      {
+        "w": "satr",
+        "s": 58.98,
+        "e": 59.26
+      },
+      {
+        "w": "qaytaradi.",
+        "s": 59.3,
+        "e": 59.7
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 60.54,
+        "e": 60.96
+      },
+      {
+        "w": "hujjati",
+        "s": 60.98,
+        "e": 61.34
+      },
+      {
+        "w": "bu",
+        "s": 61.44,
+        "e": 61.5
+      },
+      {
+        "w": "imkoniyatni",
+        "s": 61.58,
+        "e": 62.12
+      },
+      {
+        "w": "xato",
+        "s": 62.3,
+        "e": 62.58
+      },
+      {
+        "w": "imkoniyat",
+        "s": 62.68,
+        "e": 63.14
+      },
+      {
+        "w": "deb",
+        "s": 63.18,
+        "e": 63.3
+      },
+      {
+        "w": "ataydi.",
+        "s": 63.34,
+        "e": 63.58
+      }
+    ]
+  },
+  {
+    "id": "L11",
+    "scene": "tirnoq",
+    "text": "Qoida: satrni doim bitta tirnoq bilan yozing. Shunda kod uchala tizimda bir xil ishlaydi.",
+    "show": "Qoida: satrni doim bitta tirnoq bilan yozing. Shunda kod uchala tizimda bir xil ishlaydi.",
+    "say": "Qoida: satrni doim bitta tirnoq bilan yozing. Shunda kod uchala tizimda bir xil ishlaydi.",
+    "a0": 64.12,
+    "a1": 69.37,
+    "words": [
+      {
+        "w": "Qoida:",
+        "s": 64.12,
+        "e": 64.46
+      },
+      {
+        "w": "satrni",
+        "s": 64.86,
+        "e": 65.26
+      },
+      {
+        "w": "doim",
+        "s": 65.42,
+        "e": 65.78
+      },
+      {
+        "w": "bitta",
+        "s": 65.92,
+        "e": 66.2
+      },
+      {
+        "w": "tirnoq",
+        "s": 66.24,
+        "e": 66.52
+      },
+      {
+        "w": "bilan",
+        "s": 66.56,
+        "e": 66.72
+      },
+      {
+        "w": "yozing.",
+        "s": 66.78,
+        "e": 67.04
+      },
+      {
+        "w": "Shunda",
+        "s": 67.28,
+        "e": 67.51
+      },
+      {
+        "w": "kod",
+        "s": 67.61,
+        "e": 67.79
+      },
+      {
+        "w": "uchala",
+        "s": 67.95,
+        "e": 68.25
+      },
+      {
+        "w": "tizimda",
+        "s": 68.31,
+        "e": 68.61
+      },
+      {
+        "w": "bir",
+        "s": 68.73,
+        "e": 68.85
+      },
+      {
+        "w": "xil",
+        "s": 68.91,
+        "e": 69.03
+      },
+      {
+        "w": "ishlaydi.",
+        "s": 69.05,
+        "e": 69.37
+      }
+    ]
+  },
+  {
+    "id": "L12",
+    "scene": "tip",
+    "text": "Endi butun son ustuniga abc matnini yozib ko‘ramiz.",
+    "show": "Endi butun son ustuniga abc matnini yozib ko‘ramiz.",
+    "say": "Endi butun son ustuniga a-be-se matnini yozib ko‘ramiz.",
+    "a0": 70.11,
+    "a1": 73.09,
+    "words": [
+      {
+        "w": "Endi",
+        "s": 70.11,
+        "e": 70.35
+      },
+      {
+        "w": "butun",
+        "s": 70.51,
+        "e": 70.79
+      },
+      {
+        "w": "son",
+        "s": 70.85,
+        "e": 71.01
+      },
+      {
+        "w": "ustuniga",
+        "s": 71.09,
+        "e": 71.49
+      },
+      {
+        "w": "a-be-se",
+        "s": 71.69,
+        "e": 72.11
+      },
+      {
+        "w": "matnini",
+        "s": 72.19,
+        "e": 72.53
+      },
+      {
+        "w": "yozib",
+        "s": 72.57,
+        "e": 72.77
+      },
+      {
+        "w": "ko‘ramiz.",
+        "s": 72.79,
+        "e": 73.09
+      }
+    ]
+  },
+  {
+    "id": "L13",
+    "scene": "tip",
+    "text": "PostgreSQL xato beradi.",
+    "show": "PostgreSQL xato beradi.",
+    "say": "Postgres xato beradi.",
+    "a0": 73.63,
+    "a1": 74.73,
+    "words": [
+      {
+        "w": "Postgres",
+        "s": 73.63,
+        "e": 74.09
+      },
+      {
+        "w": "xato",
+        "s": 74.15,
+        "e": 74.37
+      },
+      {
+        "w": "beradi.",
+        "s": 74.43,
+        "e": 74.73
+      }
+    ]
+  },
+  {
+    "id": "L14",
+    "scene": "tip",
+    "text": "MySQL ham xato beradi.",
+    "show": "MySQL ham xato beradi.",
+    "say": "May es-kyu-el ham xato beradi.",
+    "a0": 75.23,
+    "a1": 76.67,
+    "words": [
+      {
+        "w": "May",
+        "s": 75.23,
+        "e": 75.39
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 75.49,
+        "e": 75.83
+      },
+      {
+        "w": "ham",
+        "s": 75.87,
+        "e": 76.01
+      },
+      {
+        "w": "xato",
+        "s": 76.07,
+        "e": 76.31
+      },
+      {
+        "w": "beradi.",
+        "s": 76.37,
+        "e": 76.67
+      }
+    ]
+  },
+  {
+    "id": "L15",
+    "scene": "tip",
+    "text": "SQLite esa qiymatni qabul qiladi va matn sifatida saqlaydi. Uning hujjati buni moslashuvchan tiplash deb ataydi.",
+    "show": "SQLite esa qiymatni qabul qiladi va matn sifatida saqlaydi. Uning hujjati buni moslashuvchan tiplash deb ataydi.",
+    "say": "Es-kyu-layt esa qiymatni qabul qiladi va matn sifatida saqlaydi. Uning hujjati buni moslashuvchan tiplash deb ataydi.",
+    "a0": 77.21,
+    "a1": 82.88,
+    "words": [
+      {
+        "w": "Es-kyu-layt",
+        "s": 77.21,
+        "e": 77.65
+      },
+      {
+        "w": "esa",
+        "s": 77.69,
+        "e": 77.81
+      },
+      {
+        "w": "qiymatni",
+        "s": 77.87,
+        "e": 78.25
+      },
+      {
+        "w": "qabul",
+        "s": 78.31,
+        "e": 78.55
+      },
+      {
+        "w": "qiladi",
+        "s": 78.57,
+        "e": 78.81
+      },
+      {
+        "w": "va",
+        "s": 78.83,
+        "e": 78.89
+      },
+      {
+        "w": "matn",
+        "s": 78.99,
+        "e": 79.27
+      },
+      {
+        "w": "sifatida",
+        "s": 79.31,
+        "e": 79.61
+      },
+      {
+        "w": "saqlaydi.",
+        "s": 79.65,
+        "e": 80.01
+      },
+      {
+        "w": "Uning",
+        "s": 80.43,
+        "e": 80.61
+      },
+      {
+        "w": "hujjati",
+        "s": 80.61,
+        "e": 80.95
+      },
+      {
+        "w": "buni",
+        "s": 80.97,
+        "e": 81.15
+      },
+      {
+        "w": "moslashuvchan",
+        "s": 81.31,
+        "e": 81.95
+      },
+      {
+        "w": "tiplash",
+        "s": 82.03,
+        "e": 82.41
+      },
+      {
+        "w": "deb",
+        "s": 82.43,
+        "e": 82.58
+      },
+      {
+        "w": "ataydi.",
+        "s": 82.62,
+        "e": 82.88
+      }
+    ]
+  },
+  {
+    "id": "L16",
+    "scene": "sqlmode",
+    "text": "MySQL’ning ko‘p xatti-harakatini SQL rejimlari boshqaradi. Sukut bo‘yicha qat’iy rejim yoqilgan, shuning uchun abc xato berdi.",
+    "show": "MySQL’ning ko‘p xatti-harakatini SQL rejimlari boshqaradi. Sukut bo‘yicha qat’iy rejim yoqilgan, shuning uchun abc xato berdi.",
+    "say": "May es-kyu-elning ko‘p xatti-harakatini es-kyu-el rejimlari boshqaradi. Sukut bo‘yicha qat’iy rejim yoqilgan, shuning uchun a-be-se xato berdi.",
+    "a0": 83.66,
+    "a1": 90.62,
+    "words": [
+      {
+        "w": "May",
+        "s": 83.66,
+        "e": 83.8
+      },
+      {
+        "w": "es-kyu-elning",
+        "s": 83.9,
+        "e": 84.42
+      },
+      {
+        "w": "ko‘p",
+        "s": 84.46,
+        "e": 84.62
+      },
+      {
+        "w": "xatti-harakatini",
+        "s": 84.66,
+        "e": 85.36
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 85.52,
+        "e": 85.88
+      },
+      {
+        "w": "rejimlari",
+        "s": 85.94,
+        "e": 86.38
+      },
+      {
+        "w": "boshqaradi.",
+        "s": 86.4,
+        "e": 86.82
+      },
+      {
+        "w": "Sukut",
+        "s": 87.24,
+        "e": 87.44
+      },
+      {
+        "w": "bo‘yicha",
+        "s": 87.48,
+        "e": 87.74
+      },
+      {
+        "w": "qat’iy",
+        "s": 87.82,
+        "e": 88.14
+      },
+      {
+        "w": "rejim",
+        "s": 88.24,
+        "e": 88.48
+      },
+      {
+        "w": "yoqilgan,",
+        "s": 88.48,
+        "e": 88.92
+      },
+      {
+        "w": "shuning",
+        "s": 89.08,
+        "e": 89.3
+      },
+      {
+        "w": "uchun",
+        "s": 89.3,
+        "e": 89.48
+      },
+      {
+        "w": "a-be-se",
+        "s": 89.62,
+        "e": 89.96
+      },
+      {
+        "w": "xato",
+        "s": 90.06,
+        "e": 90.28
+      },
+      {
+        "w": "berdi.",
+        "s": 90.36,
+        "e": 90.62
+      }
+    ]
+  },
+  {
+    "id": "L17",
+    "scene": "sqlmode",
+    "text": "ANSI rejimini yoqsak, MySQL standartga yaqinlashadi: ikki chiziq satrlarni ulaydi, qo‘shtirnoq esa nom bo‘ladi.",
+    "show": "ANSI rejimini yoqsak, MySQL standartga yaqinlashadi: ikki chiziq satrlarni ulaydi, qo‘shtirnoq esa nom bo‘ladi.",
+    "say": "Ensi rejimini yoqsak, May es-kyu-el standartga yaqinlashadi: ikki chiziq satrlarni ulaydi, qo‘shtirnoq esa nom bo‘ladi.",
+    "a0": 91.4,
+    "a1": 97.63,
+    "words": [
+      {
+        "w": "Ensi",
+        "s": 91.4,
+        "e": 91.64
+      },
+      {
+        "w": "rejimini",
+        "s": 91.74,
+        "e": 92.1
+      },
+      {
+        "w": "yoqsak,",
+        "s": 92.14,
+        "e": 92.48
+      },
+      {
+        "w": "May",
+        "s": 92.6,
+        "e": 92.76
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 92.84,
+        "e": 93.2
+      },
+      {
+        "w": "standartga",
+        "s": 93.26,
+        "e": 93.68
+      },
+      {
+        "w": "yaqinlashadi:",
+        "s": 93.72,
+        "e": 94.18
+      },
+      {
+        "w": "ikki",
+        "s": 94.56,
+        "e": 94.72
+      },
+      {
+        "w": "chiziq",
+        "s": 94.76,
+        "e": 95.02
+      },
+      {
+        "w": "satrlarni",
+        "s": 95.08,
+        "e": 95.58
+      },
+      {
+        "w": "ulaydi,",
+        "s": 95.66,
+        "e": 95.96
+      },
+      {
+        "w": "qo‘shtirnoq",
+        "s": 96.28,
+        "e": 96.76
+      },
+      {
+        "w": "esa",
+        "s": 96.8,
+        "e": 96.96
+      },
+      {
+        "w": "nom",
+        "s": 97.1,
+        "e": 97.3
+      },
+      {
+        "w": "bo‘ladi.",
+        "s": 97.34,
+        "e": 97.63
+      }
+    ]
+  },
+  {
+    "id": "L18",
+    "scene": "sqlmode",
+    "text": "Ehtiyot bo‘ling: bitta so‘rov rejimga qarab boshqa natija beradi. Hujjat partitsiyalangan jadvallar yaratilgandan keyin rejimni o‘zgartirmaslikni qat’iy tavsiya qiladi.",
+    "show": "Ehtiyot bo‘ling: bitta so‘rov rejimga qarab boshqa natija beradi. Hujjat partitsiyalangan jadvallar yaratilgandan keyin rejimni o‘zgartirmaslikni qat’iy tavsiya qiladi.",
+    "say": "Ehtiyot bo‘ling: bitta so‘rov rejimga qarab boshqa natija beradi. Hujjat partitsiyalangan jadvallar yaratilgandan keyin rejimni o‘zgartirmaslikni qat’iy tavsiya qiladi.",
+    "a0": 98.35,
+    "a1": 107.03,
+    "words": [
+      {
+        "w": "Ehtiyot",
+        "s": 98.35,
+        "e": 98.71
+      },
+      {
+        "w": "bo‘ling:",
+        "s": 98.75,
+        "e": 98.99
+      },
+      {
+        "w": "bitta",
+        "s": 99.31,
+        "e": 99.59
+      },
+      {
+        "w": "so‘rov",
+        "s": 99.65,
+        "e": 99.91
+      },
+      {
+        "w": "rejimga",
+        "s": 99.99,
+        "e": 100.41
+      },
+      {
+        "w": "qarab",
+        "s": 100.45,
+        "e": 100.69
+      },
+      {
+        "w": "boshqa",
+        "s": 100.75,
+        "e": 101.03
+      },
+      {
+        "w": "natija",
+        "s": 101.07,
+        "e": 101.37
+      },
+      {
+        "w": "beradi.",
+        "s": 101.41,
+        "e": 101.69
+      },
+      {
+        "w": "Hujjat",
+        "s": 102.13,
+        "e": 102.51
+      },
+      {
+        "w": "partitsiyalangan",
+        "s": 102.59,
+        "e": 103.37
+      },
+      {
+        "w": "jadvallar",
+        "s": 103.41,
+        "e": 103.83
+      },
+      {
+        "w": "yaratilgandan",
+        "s": 103.87,
+        "e": 104.51
+      },
+      {
+        "w": "keyin",
+        "s": 104.57,
+        "e": 104.81
+      },
+      {
+        "w": "rejimni",
+        "s": 104.89,
+        "e": 105.23
+      },
+      {
+        "w": "o‘zgartirmaslikni",
+        "s": 105.27,
+        "e": 105.99
+      },
+      {
+        "w": "qat’iy",
+        "s": 106.09,
+        "e": 106.43
+      },
+      {
+        "w": "tavsiya",
+        "s": 106.47,
+        "e": 106.75
+      },
+      {
+        "w": "qiladi.",
+        "s": 106.79,
+        "e": 107.03
+      }
+    ]
+  },
+  {
+    "id": "L19",
+    "scene": "xulosa",
+    "text": "Tipik xatolardan saqlaning. Natija tartibiga ORDER BY siz tayanmang. Satrni qo‘shtirnoq bilan yozmang.",
+    "show": "Tipik xatolardan saqlaning. Natija tartibiga ORDER BY siz tayanmang. Satrni qo‘shtirnoq bilan yozmang.",
+    "say": "Tipik xatolardan saqlaning. Natija tartibiga order bay siz tayanmang. Satrni qo‘shtirnoq bilan yozmang.",
+    "a0": 107.67,
+    "a1": 113.64,
+    "words": [
+      {
+        "w": "Tipik",
+        "s": 107.67,
+        "e": 107.95
+      },
+      {
+        "w": "xatolardan",
+        "s": 107.99,
+        "e": 108.55
+      },
+      {
+        "w": "saqlaning.",
+        "s": 108.57,
+        "e": 108.97
+      },
+      {
+        "w": "Natija",
+        "s": 109.47,
+        "e": 109.81
+      },
+      {
+        "w": "tartibiga",
+        "s": 109.87,
+        "e": 110.35
+      },
+      {
+        "w": "order",
+        "s": 110.51,
+        "e": 110.79
+      },
+      {
+        "w": "bay",
+        "s": 110.83,
+        "e": 110.95
+      },
+      {
+        "w": "siz",
+        "s": 110.99,
+        "e": 111.13
+      },
+      {
+        "w": "tayanmang.",
+        "s": 111.17,
+        "e": 111.59
+      },
+      {
+        "w": "Satrni",
+        "s": 112.03,
+        "e": 112.41
+      },
+      {
+        "w": "qo‘shtirnoq",
+        "s": 112.54,
+        "e": 113.04
+      },
+      {
+        "w": "bilan",
+        "s": 113.08,
+        "e": 113.26
+      },
+      {
+        "w": "yozmang.",
+        "s": 113.3,
+        "e": 113.64
+      }
+    ]
+  },
+  {
+    "id": "L20",
+    "scene": "xulosa",
+    "text": "MySQL ogohlantirishlariga e’tibor bering. SQLite noto‘g‘ri tipni ham qabul qilishini unutmang.",
+    "show": "MySQL ogohlantirishlariga e’tibor bering. SQLite noto‘g‘ri tipni ham qabul qilishini unutmang.",
+    "say": "May es-kyu-el ogohlantirishlariga e’tibor bering. Es-kyu-layt noto‘g‘ri tipni ham qabul qilishini unutmang.",
+    "a0": 114.28,
+    "a1": 120.36,
+    "words": [
+      {
+        "w": "May",
+        "s": 114.28,
+        "e": 114.48
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 114.56,
+        "e": 115.02
+      },
+      {
+        "w": "ogohlantirishlariga",
+        "s": 115.14,
+        "e": 116.08
+      },
+      {
+        "w": "e’tibor",
+        "s": 116.22,
+        "e": 116.58
+      },
+      {
+        "w": "bering.",
+        "s": 116.62,
+        "e": 116.88
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 117.52,
+        "e": 118.14
+      },
+      {
+        "w": "noto‘g‘ri",
+        "s": 118.34,
+        "e": 118.76
+      },
+      {
+        "w": "tipni",
+        "s": 118.8,
+        "e": 119.04
+      },
+      {
+        "w": "ham",
+        "s": 119.08,
+        "e": 119.22
+      },
+      {
+        "w": "qabul",
+        "s": 119.3,
+        "e": 119.54
+      },
+      {
+        "w": "qilishini",
+        "s": 119.56,
+        "e": 119.88
+      },
+      {
+        "w": "unutmang.",
+        "s": 119.94,
+        "e": 120.36
+      }
+    ]
+  },
+  {
+    "id": "L21",
+    "scene": "xulosa",
+    "text": "Va har bir tizimning dialektini uning hujjatidan tekshiring. E’tiboringiz uchun rahmat!",
+    "show": "Va har bir tizimning dialektini uning hujjatidan tekshiring. E’tiboringiz uchun rahmat!",
+    "say": "Va har bir tizimning dialektini uning hujjatidan tekshiring. E’tiboringiz uchun rahmat!",
+    "a0": 120.94,
+    "a1": 126.28,
+    "words": [
+      {
+        "w": "Va",
+        "s": 120.94,
+        "e": 121.02
+      },
+      {
+        "w": "har",
+        "s": 121.36,
+        "e": 121.58
+      },
+      {
+        "w": "bir",
+        "s": 121.65,
+        "e": 121.75
+      },
+      {
+        "w": "tizimning",
+        "s": 121.83,
+        "e": 122.23
+      },
+      {
+        "w": "dialektini",
+        "s": 122.27,
+        "e": 122.83
+      },
+      {
+        "w": "uning",
+        "s": 123.09,
+        "e": 123.29
+      },
+      {
+        "w": "hujjatidan",
+        "s": 123.35,
+        "e": 123.95
+      },
+      {
+        "w": "tekshiring.",
+        "s": 124.03,
+        "e": 124.47
+      },
+      {
+        "w": "E’tiboringiz",
+        "s": 124.92,
+        "e": 125.46
+      },
+      {
+        "w": "uchun",
+        "s": 125.5,
+        "e": 125.72
+      },
+      {
+        "w": "rahmat!",
+        "s": 125.96,
+        "e": 126.28
+      }
+    ]
+  }
+]

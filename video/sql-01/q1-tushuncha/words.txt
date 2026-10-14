@@ -1,0 +1,22 @@
+L1 Salom! Bu es-kyu-el qo‘llanmasining birinchi bobi. Relyatsion model nima va es-kyu-el standarti qanday ishlashini ko‘rib chiqamiz.
+L2 Ma’lumotlar bazasi — ma’lumotni tartibli saqlaydigan tizim. Uni boshqaradigan dastur Em-Be-Be-Te, ya’ni ma’lumotlar bazasini boshqarish tizimi deyiladi. Postgres, May es-kyu-el va Es-kyu-layt — shunday tizimlar.
+L3 Uchalasi ham relyatsion. Relyatsiya — jadvalning matematik nomi. Ma’lumot saqlashning boshqa usullari ham bor: masalan, kompyuterdagi papka va fayllar — ierarxik baza.
+L4 Relyatsion baza ma’lumotni bitta katta omborga emas, alohida jadvallarga joylaydi. Jadvallar orasidagi qoidalarni esa ilova emas, bazaning o‘zi kuzatib boradi.
+L5 Mana, talabalar jadvali. Har bir qator — bitta yozuv. Nazariyada uni kortej deyiladi.
+L6 Har bir ustun — nomlangan maydon, uning aniq ma’lumot tipi bor. Nazariyada bu atribut.
+L7 Ay-di ustuni — birlamchi kalit. U har bir qatorni yagona aniqlaydi, takrorlanmaydi va nal bo‘lmaydi.
+L8 Nal — qiymat yo‘q degani. U nol ham, bo‘sh satr ham emas.
+L9 Cheklov — jadvalga yoziladigan qiymatlarga qo‘yilgan qoida. Tashqi kalit esa boshqa jadvaldagi bitta qatorga ishora qiladi.
+L10 Bitta Postgres serveri boshqaradigan bazalar to‘plami klaster deyiladi. Klaster ichida baza, baza ichida jadval.
+L11 Endi eng muhim qoida. Qatordagi ustunlar tartibi qat’iy, lekin jadvaldagi qatorlar tartibini es-kyu-el kafolatlamaydi.
+L12 Sababi oddiy: matematikada relyatsiya — to‘plam, to‘plamda esa tartib yo‘q. Tartib kerak bo‘lsa, uni so‘rovda aniq so‘rash kerak.
+L13 Es-kyu-el — Strakchrd Kveri Lengvij, ya’ni tuzilmaviy so‘rovlar tili. Uni to‘g‘ridan-to‘g‘ri yozish, boshqa tildagi kod ichiga joylash yoki O-er-em kabi kutubxona orqali ishlatish mumkin.
+L14 Standartning rasmiy nomi — I-es-o, I-i-si to‘qqiz ming yetmish besh. Es-kyu-el to‘qson ikki versiyasida moslikning uchta darajasi bor edi. Es-kyu-el bir ming to‘qqiz yuz to‘qson to‘qqiz versiyasidan boshlab darajalar o‘rniga xususiyatlar ro‘yxati keldi.
+L15 Eng so‘nggi versiya — es-kyu-el ikki ming yigirma uch. Har yangi versiya oldingisini almashtiradi.
+L16 Xususiyatlarning bir qismi Kor, ya’ni majburiy. Postgres o‘n sakkiz es-kyu-el ikki ming yigirma uch versiyasidagi bir yuz yetmish yetti ta Kor xususiyatdan kamida bir yuz yetmish tasini bajaradi. Hujjatga ko‘ra, hech bir tizim Korga to‘liq moslikni da’vo qilmaydi.
+L17 Standart bir nechta qismdan iborat. Bu qo‘llanma deyarli butunlay ikkinchi qism — Faundeyshn haqida: jadvallar, so‘rovlar va tiplar.
+L18 Standart bor, lekin ikkita es-kyu-el tizimi aynan bir xil ishlamaydi. Standartdan farq qiladigan qism dialekt deyiladi.
+L19 Dialekt ikki xil bo‘ladi. Kengaytma — standartda yo‘q, lekin tizim qo‘shgan imkoniyat. Farq — standartdagi narsa tizimda boshqacha ishlaydi.
+L20 Postgres o‘zini obyekt-relyatsion tizim deb ataydi va standartga moslikka intiladi. May es-kyu-el ham intiladi, lekin tezlik va ishonchlilikni qurbon qilmasdan; uning kengaytmalari ko‘p.
+L21 Es-kyu-layt esa serversiz: u ilova ichida kutubxona sifatida ishlaydi. Uning farqlari alohida Kvirks sahifasida yozilgan.
+L22 Shuning uchun har bobda ikki savolga javob beramiz: standart nima deydi va har bir tizim aslida nima qiladi. Keyingi videoda bularni terminalda ko‘ramiz.

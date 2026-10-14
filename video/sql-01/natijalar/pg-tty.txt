@@ -1,0 +1,71 @@
+psql (18.6 (Homebrew))
+Type "help" for help.
+
+qollanma=# SET search_path = video_bob01;
+SET
+qollanma=# DROP TABLE IF EXISTS talabalar, sinov;
+DROP TABLE
+qollanma=# CREATE TABLE talabalar (id integer PRIMARY KEY, ism text NOT NULL, kurs integer);
+CREATE TABLE
+qollanma=# INSERT INTO talabalar VALUES (1, 'Ali', 1), (2, 'Vali', 2), (3, 'Dilnoza', 1);
+INSERT 0 3
+qollanma=# SELECT * FROM talabalar;
+ id |   ism   | kurs 
+----+---------+------
+  1 | Ali     |    1
+  2 | Vali    |    2
+  3 | Dilnoza |    1
+(3 rows)
+
+qollanma=# UPDATE talabalar SET kurs = 2 WHERE id = 1;
+UPDATE 1
+qollanma=# SELECT * FROM talabalar;
+ id |   ism   | kurs 
+----+---------+------
+  2 | Vali    |    2
+  3 | Dilnoza |    1
+  1 | Ali     |    2
+(3 rows)
+
+qollanma=# SELECT * FROM talabalar ORDER BY id;
+ id |   ism   | kurs 
+----+---------+------
+  1 | Ali     |    2
+  2 | Vali    |    2
+  3 | Dilnoza |    1
+(3 rows)
+
+qollanma=# SELECT is_supported, count(*) FROM information_schema.sql_features WHERE sub_feature_id = '' GROUP BY is_supported ORDER BY is_supported;
+ is_supported | count 
+--------------+-------
+ NO           |   295
+ YES          |   320
+(2 rows)
+
+qollanma=# SELECT feature_id, feature_name, is_supported FROM information_schema.sql_features WHERE feature_id IN ('E011', 'F302', 'T611', 'T626') AND sub_feature_id = '' ORDER BY feature_id;
+ feature_id |        feature_name        | is_supported 
+------------+----------------------------+--------------
+ E011       | Numeric data types         | YES
+ F302       | INTERSECT table operator   | YES
+ T611       | Elementary OLAP operations | YES
+ T626       | ANY_VALUE                  | YES
+(4 rows)
+
+qollanma=# SELECT 'Salom, ' || 'dunyo' AS natija;
+    natija    
+--------------
+ Salom, dunyo
+(1 row)
+
+qollanma=# SELECT "salom";
+ERROR:  column "salom" does not exist
+LINE 1: SELECT "salom";
+               ^
+qollanma=# CREATE TABLE sinov (n integer);
+CREATE TABLE
+qollanma=# INSERT INTO sinov VALUES ('abc');
+ERROR:  invalid input syntax for type integer: "abc"
+LINE 1: INSERT INTO sinov VALUES ('abc');
+                                  ^
+qollanma=# \q
+

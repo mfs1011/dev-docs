@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/sql/01-1-tushuncha.jpg" src="/video/sql/01-1-tushuncha.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/sql/01-1-tushuncha.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/sql/01-1-tushuncha.uz.vtt">
+</video>
+<figcaption>Video: relyatsion model, asosiy atamalar, SQL standarti, dialekt va uch tizim — shu bob "Tushuncha" va "Standart" bo'limlarining qisqa ko'rinishi.</figcaption>
+</figure>
+
 **Ma'lumotlar bazasi** — ma'lumotni tartibli saqlaydigan va undan foydalanishga imkon beradigan tizim. Uni boshqaradigan dastur **MBBT** (ma'lumotlar bazasini boshqarish tizimi) deyiladi. Inglizchasi *DBMS*, ya'ni *Database Management System*. PostgreSQL, MySQL va SQLite — shunday tizimlar.
 
 Bu qo'llanmadagi uchala tizim ham **relyatsion** (inglizcha *relational*). PostgreSQL hujjati buni bunday tushuntiradi: relyatsion MBBT ma'lumotni **relyatsiyalarda** saqlaydi, "relyatsiya" esa aslida **jadval**ning matematik nomi. Ma'lumotni saqlashning boshqa usullari ham bor. Masalan, kompyuterdagi papka va fayllar — **ierarxik** baza. Undan yangiroq yo'nalish — obyektga yo'naltirilgan bazalar.
@@ -102,6 +110,14 @@ Shuning uchun bu qo'llanmaning har bobida ikki savolga javob beriladi: **standar
 Ularning arxitekturasi va qaysi biri qachon mos kelishi 2-bobda batafsil ko'riladi.
 
 ## Kod
+
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/sql/01-2-kod.jpg" src="/video/sql/01-2-kod.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/sql/01-2-kod.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/sql/01-2-kod.uz.vtt">
+</video>
+<figcaption>Video: quyidagi buyruqlar haqiqiy psql terminalida (PostgreSQL 18.6) — qatorlar tartibi va <code>sql_features</code>.</figcaption>
+</figure>
 
 Misollar PostgreSQL 18.6, MySQL 9.7.2 va SQLite 3.54.0 da ishga tushirilgan. SQLite rasmiy manba kodidan (`sqlite-autoconf-3540000`) hujjatdagi `./configure && make` usuli bilan yig'ilgan. Natijalar haqiqiy. O'rnatish va ulanish 3-bobda, hozircha natijalarni o'qish yetarli.
 
@@ -208,6 +224,14 @@ Har xususiyatning kodi bor. `E011` — raqamli tiplar, `F302` — `INTERSECT` am
 Hujjat shuni ham ogohlantiradi: bu ro'yxatlar **taqribiy**. Aniq ma'lumot hujjatning asosiy qismida beriladi.
 
 ## Dialektlar
+
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/sql/01-3-dialektlar.jpg" src="/video/sql/01-3-dialektlar.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/sql/01-3-dialektlar.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/sql/01-3-dialektlar.uz.vtt">
+</video>
+<figcaption>Video: uchala misol PostgreSQL 18.6, MySQL 9.7.2 va SQLite 3.54.0 terminallarida yonma-yon, natijalar haqiqiy.</figcaption>
+</figure>
 
 Bitta so'rov uch tizimda turlicha ishlashi mumkin. Uchta misol bilan ko'ramiz.
 

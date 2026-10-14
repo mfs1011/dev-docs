@@ -1,0 +1,21 @@
+L1 Bitta so‘rov uch tizimda uch xil natija berishi mumkin. Uchta misolni Postgres, May es-kyu-el va Es-kyu-laytda ko‘ramiz.
+L2 Standartda ikkita vertikal chiziq — ikki satrni bir-biriga ulash amali.
+L3 Postgres kutilgandek javob beradi: Salom, dunyo. Es-kyu-layt ham xuddi shunday.
+L4 May es-kyu-el esa nol qaytaradi va uchta ogohlantirish beradi.
+L5 Ogohlantirishlarni ko‘ramiz. May es-kyu-elda bu belgi sukut bo‘yicha mantiqiy YOKI degani. Ikkala satr songa aylanib, nol bo‘ldi. Xato emas, faqat ogohlantirish. May es-kyu-elda satrlar konkat funksiyasi bilan ulanadi.
+L6 Standartda bitta tirnoq — satr, qo‘shtirnoq esa jadval yoki ustun nomi.
+L7 Postgres standartga amal qiladi: salom degan ustun yo‘q, shuning uchun xato.
+L8 May es-kyu-el qo‘shtirnoqni satr deb tushunadi va salom so‘zini qaytaradi.
+L9 Es-kyu-laytda bu qanday yig‘ilganiga bog‘liq. Rasmiy manbadan yig‘ilgan bizning versiyamizda Di-kyu-es nolga teng, shuning uchun xato beradi.
+L10 Lekin di-bi-konfig bilan yoqilsa, xuddi shu so‘rov satr qaytaradi. Es-kyu-layt hujjati bu imkoniyatni xato imkoniyat deb ataydi.
+L11 Qoida: satrni doim bitta tirnoq bilan yozing. Shunda kod uchala tizimda bir xil ishlaydi.
+L12 Endi butun son ustuniga a-be-se matnini yozib ko‘ramiz.
+L13 Postgres xato beradi.
+L14 May es-kyu-el ham xato beradi.
+L15 Es-kyu-layt esa qiymatni qabul qiladi va matn sifatida saqlaydi. Uning hujjati buni moslashuvchan tiplash deb ataydi.
+L16 May es-kyu-elning ko‘p xatti-harakatini es-kyu-el rejimlari boshqaradi. Sukut bo‘yicha qat’iy rejim yoqilgan, shuning uchun a-be-se xato berdi.
+L17 Ensi rejimini yoqsak, May es-kyu-el standartga yaqinlashadi: ikki chiziq satrlarni ulaydi, qo‘shtirnoq esa nom bo‘ladi.
+L18 Ehtiyot bo‘ling: bitta so‘rov rejimga qarab boshqa natija beradi. Hujjat partitsiyalangan jadvallar yaratilgandan keyin rejimni o‘zgartirmaslikni qat’iy tavsiya qiladi.
+L19 Tipik xatolardan saqlaning. Natija tartibiga order bay siz tayanmang. Satrni qo‘shtirnoq bilan yozmang.
+L20 May es-kyu-el ogohlantirishlariga e’tibor bering. Es-kyu-layt noto‘g‘ri tipni ham qabul qilishini unutmang.
+L21 Va har bir tizimning dialektini uning hujjatidan tekshiring. E’tiboringiz uchun rahmat!

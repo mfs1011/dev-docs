@@ -1,0 +1,14 @@
+L1 Birinchi bobdagi qoidalarni endi haqiqiy Postgresda tekshiramiz. Hamma natija — haqiqiy.
+L2 Talabalar jadvalini yaratamiz va unga uchta qator qo‘shamiz.
+L3 Selekt barcha qatorlarni qaytaradi. Natija qo‘shilgan tartibda chiqdi: Ali, Vali, Dilnoza.
+L4 Endi Alining kursini o‘zgartiramiz va xuddi shu so‘rovni qaytaramiz.
+L5 So‘rov o‘zgarmadi, lekin Ali endi oxirida chiqdi!
+L6 Order bay bo‘lmasa, baza qatorlarni o‘ziga qulay tartibda qaytaradi. Postgres apdeyt paytida qatorning yangi versiyasini yozadi. Bu mexanizm Em-vi-si-si deyiladi, uni keyingi boblarda ko‘ramiz.
+L7 Tartib kerak bo‘lsa, uni aniq so‘raymiz: order bay ay-di. Endi natija har doim ay-di bo‘yicha chiqadi.
+L8 Standartning o‘n birinchi qismi — informeyshn skima. Postgres unda es-kyu-el fichers jadvalini saqlaydi: standart xususiyatlari va har biri bajarilgan yoki bajarilmagani.
+L9 Ularni guruhlab sanaymiz.
+L10 Uch yuz yigirmatasi bajarilgan, ikki yuz to‘qson beshtasi yo‘q. Bu yerda Kor va ixtiyoriy xususiyatlar birga sanalgan, shuning uchun son katta.
+L11 Har bir xususiyatning kodi bor. To‘rttasini nomi bilan ko‘ramiz.
+L12 E nol o‘n bir — raqamli tiplar, F uch yuz ikki — intersekt, T olti yuz o‘n bir — vindou funksiyalar, T olti yuz yigirma olti — eni velyu. Qo‘llanmada imkoniyatning standartdagi o‘rnini shu kodlar bilan ko‘rsatamiz.
+L13 Hujjat ogohlantiradi: bu ro‘yxat taqribiy. Aniq ma’lumot hujjatning asosiy qismida beriladi.
+L14 Xulosa: natija tartibiga hech qachon tayanmang. Tartib kerak bo‘lsa, doim order bay yozing.

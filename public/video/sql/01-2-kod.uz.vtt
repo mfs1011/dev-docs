@@ -1,0 +1,68 @@
+WEBVTT
+
+1
+00:01.420 --> 00:07.350
+Birinchi bobdagi qoidalarni endi haqiqiy
+PostgreSQL’da tekshiramiz. Hamma natija — haqiqiy.
+
+2
+00:09.780 --> 00:13.120
+Talabalar jadvalini yaratamiz va unga uchta qator qo‘shamiz.
+
+3
+00:15.210 --> 00:21.580
+SELECT barcha qatorlarni qaytaradi. Natija
+qo‘shilgan tartibda chiqdi: Ali, Vali, Dilnoza.
+
+4
+00:26.470 --> 00:30.500
+Endi Alining kursini o‘zgartiramiz
+va xuddi shu so‘rovni qaytaramiz.
+
+5
+00:33.600 --> 00:37.210
+So‘rov o‘zgarmadi, lekin Ali endi oxirida chiqdi!
+
+6
+00:39.460 --> 00:51.020
+ORDER BY bo‘lmasa, baza qatorlarni o‘ziga qulay tartibda qaytaradi. PostgreSQL UPDATE paytida
+qatorning yangi versiyasini yozadi. Bu mexanizm MVCC deyiladi, uni keyingi boblarda ko‘ramiz.
+
+7
+00:54.550 --> 01:01.280
+Tartib kerak bo‘lsa, uni aniq so‘raymiz: ORDER
+BY id. Endi natija har doim id bo‘yicha chiqadi.
+
+8
+01:06.470 --> 01:16.810
+Standartning o‘n birinchi qismi — information_schema. PostgreSQL unda sql_features
+jadvalini saqlaydi: standart xususiyatlari va har biri bajarilgan yoki bajarilmagani.
+
+9
+01:18.240 --> 01:19.770
+Ularni guruhlab sanaymiz.
+
+10
+01:21.320 --> 01:28.970
+Uch yuz yigirmatasi bajarilgan, ikki yuz to‘qson beshtasi yo‘q. Bu yerda
+Core va ixtiyoriy xususiyatlar birga sanalgan, shuning uchun son katta.
+
+11
+01:32.290 --> 01:35.980
+Har bir xususiyatning kodi bor.
+To‘rttasini nomi bilan ko‘ramiz.
+
+12
+01:37.650 --> 01:51.210
+E011 — raqamli tiplar, F302 — INTERSECT, T611 — window funksiyalar, T626 — ANY_VALUE.
+Qo‘llanmada imkoniyatning standartdagi o‘rnini shu kodlar bilan ko‘rsatamiz.
+
+13
+01:54.420 --> 02:00.410
+Hujjat ogohlantiradi: bu ro‘yxat taqribiy. Aniq
+ma’lumot hujjatning asosiy qismida beriladi.
+
+14
+02:03.590 --> 02:09.750
+Xulosa: natija tartibiga hech qachon tayanmang.
+Tartib kerak bo‘lsa, doim ORDER BY yozing.

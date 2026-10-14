@@ -1,0 +1,32 @@
+SQLite version 3.54.0 2026-10-09 15:46:58
+Enter ".help" for usage hints.
+SQLite-3.54 memory-> SELECT "salom";
+Parse error near line 1: no such column: "salom" - should this be a string literal in single-quotes?
+  SELECT "salom";
+         ^--- error here
+SQLite-3.54 memory-> .dbconfig dqs_dml on
+            dqs_dml on
+SQLite-3.54 memory-> SELECT "salom";
+╭─────────╮
+│ "salom" │
+╞═════════╡
+│ salom   │
+╰─────────╯
+SQLite-3.54 memory-> .dbconfig dqs_dml off
+            dqs_dml off
+SQLite-3.54 memory-> CREATE TABLE sinov (n integer);
+SQLite-3.54 memory-> INSERT INTO sinov VALUES ('abc');
+SQLite-3.54 memory-> SELECT n, typeof(n) FROM sinov;
+╭─────┬───────────╮
+│  n  │ typeof(n) │
+╞═════╪═══════════╡
+│ abc │ text      │
+╰─────┴───────────╯
+SQLite-3.54 memory-> SELECT 'Salom, ' || 'dunyo' AS natija;
+╭──────────────╮
+│    natija    │
+╞══════════════╡
+│ Salom, dunyo │
+╰──────────────╯
+SQLite-3.54 memory-> .quit
+
