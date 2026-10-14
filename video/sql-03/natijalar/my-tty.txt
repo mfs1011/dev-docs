@@ -1,0 +1,43 @@
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Server version: 9.7.2 Homebrew
+
+mysql> SELECT ID, USER, COMMAND, INFO FROM information_schema.PROCESSLIST WHERE USER = 'root' ORDER BY ID;
++-----+------+---------+----------------------------------------------------------------------------------------------------+
+| ID  | USER | COMMAND | INFO                                                                                               |
++-----+------+---------+----------------------------------------------------------------------------------------------------+
+| 157 | root | Query   | SELECT SLEEP(5)                                                                                    |
+| 158 | root | Query   | SELECT SLEEP(5)                                                                                    |
+| 159 | root | Query   | SELECT ID, USER, COMMAND, INFO FROM information_schema.PROCESSLIST WHERE USER = 'root' ORDER BY ID |
++-----+------+---------+----------------------------------------------------------------------------------------------------+
+3 rows in set (0.001 sec)
+
+mysql> SELECT THREAD_ID, PROCESSLIST_ID, NAME FROM performance_schema.threads WHERE PROCESSLIST_ID IS NOT NULL AND TYPE = 'FOREGROUND' AND PROCESSLIST_USER = 'root' ORDER BY THREAD_ID;
++-----------+----------------+---------------------------+
+| THREAD_ID | PROCESSLIST_ID | NAME                      |
++-----------+----------------+---------------------------+
+|       298 |            157 | thread/sql/one_connection |
+|       299 |            158 | thread/sql/one_connection |
+|       301 |            160 | thread/sql/one_connection |
++-----------+----------------+---------------------------+
+3 rows in set (0.001 sec)
+
+mysql> SELECT ENGINE, SUPPORT, TRANSACTIONS, COMMENT FROM information_schema.ENGINES ORDER BY ENGINE;
++--------------------+---------+--------------+----------------------------------------------------------------+
+| ENGINE             | SUPPORT | TRANSACTIONS | COMMENT                                                        |
++--------------------+---------+--------------+----------------------------------------------------------------+
+| ARCHIVE            | YES     | NO           | Archive storage engine                                         |
+| BLACKHOLE          | YES     | NO           | /dev/null storage engine (anything you write to it disappears) |
+| CSV                | YES     | NO           | CSV storage engine                                             |
+| FEDERATED          | NO      | NULL         | Federated MySQL storage engine                                 |
+| InnoDB             | DEFAULT | YES          | Supports transactions, row-level locking, and foreign keys     |
+| MEMORY             | YES     | NO           | Hash based, stored in memory, useful for temporary tables      |
+| MRG_MYISAM         | YES     | NO           | Collection of identical MyISAM tables                          |
+| MyISAM             | YES     | NO           | MyISAM storage engine                                          |
+| ndbcluster         | NO      | NULL         | Clustered, fault-tolerant tables                               |
+| ndbinfo            | NO      | NULL         | MySQL Cluster system information storage engine                |
+| PERFORMANCE_SCHEMA | YES     | NO           | Performance Schema                                             |
++--------------------+---------+--------------+----------------------------------------------------------------+
+11 rows in set (0.001 sec)
+
+mysql> quit
+Bye

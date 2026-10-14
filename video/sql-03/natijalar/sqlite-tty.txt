@@ -1,0 +1,15 @@
+$ sqlite3 dokon.db "CREATE TABLE mahsulotlar (id integer PRIMARY KEY, nom text NOT NULL, narx numeric);"
+$ sqlite3 dokon.db "INSERT INTO mahsulotlar (nom, narx) VALUES ('Non', 4000), ('Sut', 12000);"
+$ sqlite3 dokon.db "SELECT * FROM mahsulotlar;"
+1|Non|4000
+2|Sut|12000
+
+$ ls -l dokon.db
+-rw-r--r--@ 1 mfsv wheel 8192 Oct 14 11:30 dokon.db
+
+$ head -c 16 dokon.db | od -c
+0000000    S   Q   L   i   t   e       f   o   r   m   a   t       3  \0
+
+$ cp dokon.db nusxa.db
+$ sqlite3 nusxa.db "SELECT count(*) FROM mahsulotlar;"
+2

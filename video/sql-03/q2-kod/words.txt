@@ -1,0 +1,33 @@
+Salom! Bu uchinchi bobning ikkinchi videosi. Pi-es-kyu-el, May es-kyu-el va es-kyu-layt uch si-el-ay mijozlari orqali haqiqiy ulanishlar, ulanish satrlari, parollarni xavfsiz saqlash va eng muhim meta-buyruqlarni amalda ko‘ramiz.
+
+Postgres mijozi pi-es-kyu-el parametrlar orqali ulanishi mumkin: minus eych host, minus pe port, minus yu foydalanuvchi, minus de esa baza nomi. Minus se parametri bitta buyruqni bajarib chiqib ketadi.
+
+Ilovalarda esa ko‘pincha yu-ar-ay formati ishlatiladi: postgresql:// foydalanuvchi va host, so‘ng baza nomi. Yu-ar-ay ichida applikeyshn neym parametrini bersak, u serverdagi pe-ge stat aktiviti jadvalida ko‘rinadi.
+
+Parolni pe-ge pasvord muhit o‘zgaruvchisida saqlash tavsiya etilmaydi, chunki boshqalar ps orqali ko‘rishi mumkin. Buning o‘rniga uy papkasidagi nuqta pe-ge-pas faylidan foydalaniladi va unga qat’iy ch-mod olti yuz berilishi shart.
+
+Pi-es-kyu-el ichida teskari chiziq bilan boshlanadigan barcha buyruqlar meta-buyruq deb ataladi va ularni pi-es-kyu-el ning o‘zi bajaradi.
+
+Masalan: de-te barcha jadvallar ro‘yxatini, de talabalar esa jadval ustunlari va indekslarini ko‘rsatadi. Iks buyrug‘i natijani qulay vertikal ko‘rinishga o‘tkazadi.
+
+Taklif belgisining oxiriga e’tibor bering: tenglik va panjara superuser ekaningizni, tenglik va katta belgisi esa oddiy foydalanuvchi ekaningizni bildiradi.
+
+Endi May es-kyu-el mijozini ko‘ramiz. Bu yerda port uchun katta minus pe, parol uchun kichik minus pe ishlatiladi.
+
+Parolni buyruq satriga yozish xavfli bo‘lgani sababli, May es-kyu-el ogohlantirish beradi. To‘g‘ri yo‘l — parolni alohida option faylida saqlash va ch-mod olti yuz bilan himoyalashdir.
+
+Ulanish turini status buyrug‘i ko‘rsatadi: bir yuz yigirma yetti, nol, nol, bir da ti-si-pi ay-pi, lokal-xost da esa yuniks soket deb chiqadi.
+
+May es-kyu-el to‘qqiz butun yetti da nozik jihat: skriptlarda katta je yoki status buyruqlari ishlashi uchun minus-minus kommandz parametri berilishi kerak, aks holda noma’lum buyruq xatosi chiqadi.
+
+Es-kyu-laytda esa es-kyu-layt uch dasturi shunchaki qulay qobiq interfeysidir. Unga fayl nomi berilmasa, xotiradagi vaqtinchalik baza ochiladi va dastur yopilganda barcha ma’lumot o‘chib ketadi.
+
+Nuqta bilan boshlanadigan nuqta buyruqlari: nuqta teyblz jadvallarni, nuqta skima jadval tuzilmasini, nuqta mod boks yoki se-es-ve esa natija formatini o‘zgartiradi.
+
+Es-kyu-el buyrug‘i oxirida nuqtali vergul unutilsa, dastur nuqtali vergul va strelka taklifi bilan davomini kutadi. Uch butun ellik to‘rt versiyasida yangi prompt versiya va fayl nomini ko‘rsatadi.
+
+Uchala tizim mijozlarining ulanish, xavfsizlik va boshqaruv buyruqlarini amalda sinab ko‘rdik.
+
+Keyingi videoda bu uch tizimning ulanish dialektlarini taqqoslaymiz va amaliyotda eng ko‘p uchraydigan oltita ulanish xatosini tahlil qilamiz.
+
+16 gap, 362 so'z

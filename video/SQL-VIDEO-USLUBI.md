@@ -158,15 +158,16 @@ node poster.mjs && ffmpeg -i poster.png -vf scale=1280:-2 -q:v 3 poster.jpg
 # 6) sayt: public/video/sql/<nom>.{mp4,jpg,chapters.vtt,uz.vtt}; asl full.mp4 — Google Drive (rclone, gdrive:dev-docs/video/<nom>)
 ```
 
-Saytga qo'yish (umumiy video — README boshiga, mavzu videosi — bobning "Tushuncha" bo'limiga):
+Saytga qo'yish (umumiy video — README boshiga, mavzu videosi — bobning mos bo'limiga):
 
 ```html
+<!-- 3-bob: 03-1-tushuncha (2:37), 03-2-kod (3:18), 03-3-dialektlar (3:02) -->
 <figure class="video">
 <video controls preload="metadata" playsinline poster="/video/sql/<nom>.jpg" src="/video/sql/<nom>.mp4">
 <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/sql/<nom>.chapters.vtt" default>
 <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/sql/<nom>.uz.vtt">
 </video>
-<figcaption>… Natijalar — haqiqiy PostgreSQL 18 bazasidan.</figcaption>
+<figcaption>… Natijalar — haqiqiy sinov bazalaridan (PostgreSQL 18.6, MySQL 9.7.2, SQLite 3.54.0).</figcaption>
 </figure>
 ```
 

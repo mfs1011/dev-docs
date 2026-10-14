@@ -1,0 +1,81 @@
+WEBVTT
+
+1
+00:01.420 --> 00:17.480
+Salom! Bu uchinchi bobning ikkinchi videosi. psql, mysql va sqlite3 CLI mijozlari orqali haqiqiy
+ulanishlar, ulanish satrlari, parollarni xavfsiz saqlash va eng muhim meta-buyruqlarni amalda ko‘ramiz.
+
+2
+00:20.250 --> 00:33.650
+PostgreSQL mijozi psql parametrlar orqali ulanishi mumkin: -h host, -p port, -U
+foydalanuvchi, -d esa baza nomi. -c parametri bitta buyruqni bajarib chiqib ketadi.
+
+3
+00:33.940 --> 00:48.500
+Ilovalarda esa ko‘pincha URI formati ishlatiladi: postgresql:// foydalanuvchi va host, so‘ng baza nomi.
+URI ichida application_name parametrini bersak, u serverdagi pg_stat_activity jadvalida ko‘rinadi.
+
+4
+00:48.770 --> 01:02.570
+Parolni PGPASSWORD muhit o‘zgaruvchisida saqlash tavsiya etilmaydi, chunki boshqalar ps orqali ko‘rishi
+mumkin. Buning o‘rniga uy papkasidagi .pgpass faylidan foydalaniladi va unga qat’iy chmod 600 berilishi shart.
+
+5
+01:05.560 --> 01:12.750
+psql ichida teskari chiziq bilan boshlanadigan barcha buyruqlar
+meta-buyruq deb ataladi va ularni psql ning o‘zi bajaradi.
+
+6
+01:12.840 --> 01:24.860
+Masalan: \dt barcha jadvallar ro‘yxatini, \d talabalar esa jadval ustunlari va
+indekslarini ko‘rsatadi. \x buyrug‘i natijani qulay vertikal ko‘rinishga o‘tkazadi.
+
+7
+01:25.090 --> 01:34.110
+Taklif belgisining oxiriga e’tibor bering: tenglik va panjara superuser ekaningizni,
+tenglik va katta belgisi esa oddiy foydalanuvchi ekaningizni bildiradi.
+
+8
+01:36.940 --> 01:44.150
+Endi MySQL mijozini ko‘ramiz. Bu yerda port uchun
+katta -P, parol uchun kichik -p ishlatiladi.
+
+9
+01:44.420 --> 01:54.880
+Parolni buyruq satriga yozish xavfli bo‘lgani sababli, MySQL ogohlantirish beradi.
+To‘g‘ri yo‘l — parolni alohida option faylida saqlash va chmod 600 bilan himoyalashdir.
+
+10
+01:55.330 --> 02:03.970
+Ulanish turini status buyrug‘i ko‘rsatadi: 127.0.0.1
+da TCP/IP, localhost da esa UNIX socket deb chiqadi.
+
+11
+02:04.380 --> 02:17.120
+MySQL 9.7 da nozik jihat: skriptlarda \G yoki status buyruqlari ishlashi uchun
+--commands parametri berilishi kerak, aks holda noma’lum buyruq xatosi chiqadi.
+
+12
+02:20.270 --> 02:32.660
+SQLite’da esa sqlite3 dasturi shunchaki qulay qobiq interfeysidir. Unga fayl nomi berilmasa,
+xotiradagi vaqtinchalik baza ochiladi va dastur yopilganda barcha ma’lumot o‘chib ketadi.
+
+13
+02:33.190 --> 02:44.590
+Nuqta bilan boshlanadigan dot-commands: .tables jadvallarni, .schema
+jadval tuzilmasini, .mode box yoki csv esa natija formatini o‘zgartiradi.
+
+14
+02:45.100 --> 02:57.340
+SQL buyrug‘i oxirida nuqtali vergul unutilsa, dastur nuqtali vergul va strelka taklifi
+bilan davomini kutadi. 3.54 versiyasida yangi prompt versiya va fayl nomini ko‘rsatadi.
+
+15
+03:00.470 --> 03:05.800
+Uchala tizim mijozlarining ulanish, xavfsizlik
+va boshqaruv buyruqlarini amalda sinab ko‘rdik.
+
+16
+03:06.110 --> 03:14.210
+Keyingi videoda bu uch tizimning ulanish dialektlarini taqqoslaymiz va
+amaliyotda eng ko‘p uchraydigan 6 ta ulanish xatosini tahlil qilamiz.

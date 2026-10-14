@@ -1,0 +1,14 @@
+SET search_path = video_bob01;
+DROP TABLE IF EXISTS talabalar, sinov;
+CREATE TABLE talabalar (id integer PRIMARY KEY, ism text NOT NULL, kurs integer);
+INSERT INTO talabalar VALUES (1, 'Ali', 1), (2, 'Vali', 2), (3, 'Dilnoza', 1);
+SELECT * FROM talabalar;
+UPDATE talabalar SET kurs = 2 WHERE id = 1;
+SELECT * FROM talabalar;
+SELECT * FROM talabalar ORDER BY id;
+SELECT is_supported, count(*) FROM information_schema.sql_features WHERE sub_feature_id = '' GROUP BY is_supported ORDER BY is_supported;
+SELECT feature_id, feature_name, is_supported FROM information_schema.sql_features WHERE feature_id IN ('E011', 'F302', 'T611', 'T626') AND sub_feature_id = '' ORDER BY feature_id;
+SELECT 'Salom, ' || 'dunyo' AS natija;
+SELECT "salom";
+CREATE TABLE sinov (n integer);
+INSERT INTO sinov VALUES ('abc');

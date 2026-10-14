@@ -1,0 +1,76 @@
+WEBVTT
+
+1
+00:01.420 --> 00:13.380
+Salom! Bu uchinchi bobning uchinchi videosi. PostgreSQL, MySQL va SQLite tizimlarining ulanish dialektlarini
+taqqoslaymiz va yangi o‘rganuvchilar eng ko‘p yo‘l qo‘yadigan oltita tipik xatoni ko‘rib chiqamiz.
+
+2
+00:16.210 --> 00:27.970
+Uchala tizim ham ma’lumotlar bazasi, lekin ulanish mexanizmlarida muhim farqlar
+bor. Mijoz dasturlari: PostgreSQL’da psql, MySQL’da mysql, SQLite’da esa sqlite3.
+
+3
+00:28.520 --> 00:41.130
+Parametrlarda: PostgreSQL va MySQL host uchun -h, user uchun -U yoki -u ishlatadi.
+Ammo port uchun PostgreSQL kichik -p, MySQL esa katta -P harfidan foydalanadi.
+
+4
+00:41.290 --> 00:53.520
+Parol masalasida: PostgreSQL .pgpass fayliga tayanadi, MySQL esa option fayli yoki interaktiv
+so‘rovni tavsiya qiladi. SQLite’da esa parol yo‘q — hamma narsa fayl ruxsatlari bilan boshqariladi.
+
+5
+00:56.710 --> 01:12.770
+Birinchi tipik xato: PostgreSQL’da initdb ni -A siz ishlatib, shunday qoldirish. Natijada server trust rejimida ochiladi
+va kompyuterdagi har qanday lokal foydalanuvchi parolsiz superuser bo‘lib kira oladi! Har doim -A scram-sha-256 ishlating.
+
+6
+01:13.380 --> 01:24.500
+Ikkinchi xato: Parolni to‘g‘ridan-to‘g‘ri buyruq satriga yozish, masalan -pParol yoki
+PGPASSWORD. Buni kompyuterdagi boshqa foydalanuvchilar ps buyrug‘i orqali ko‘rib olishi mumkin.
+
+7
+01:24.670 --> 01:29.140
+To‘g‘ri yo‘l — parollarni .pgpass
+yoki option fayllarida saqlashdir.
+
+8
+01:32.420 --> 01:44.650
+Uchinchi xato: .pgpass yoki option fayliga chmod 600 qilmaslik. Agar fayl boshqalar uchun ochiq
+bo‘lsa, PostgreSQL xavfsizlik yuzasidan uni e’tiborsiz qoldiradi va parolsiz ulanish xatosini beradi!
+
+9
+01:45.000 --> 01:57.320
+To‘rtinchi xato: MySQL’da localhost deb yozib, TCP orqali ulandim deb o‘ylash. Unix
+tizimlarida localhost har doim soket fayliga ulanadi. TCP uchun 127.0.0.1 deb yozish kerak.
+
+10
+01:57.650 --> 02:03.390
+Shuningdek, MySQL’da port uchun kichik -p yozib
+adashmang — u port emas, parol deb qabul qilinadi.
+
+11
+02:06.240 --> 02:19.980
+Beshinchi xato: MySQL 9.7 da skript ichida teskari slesh je ishlatganda noma’lum buyruq xatosi
+chiqishi. Skriptlarda bu meta-buyruqlar ishlashi uchun --commands parametri qo‘shilishi shart.
+
+12
+02:20.410 --> 02:32.220
+Oltinchi xato: SQLite’da fayl nomida adashish yoki faylsiz ochish. SQLite hech qanday
+xato bermaydi, shunchaki yangi bo‘sh fayl yoki xotirada vaqtinchalik baza yaratadi.
+
+13
+02:32.410 --> 02:41.910
+Natijada dasturdan chiqqanda kiritilgan barcha ma’lumotlar yo‘qoladi! Doim
+fayl yo‘lini tekshiring, .tables buyrug‘i bo‘sh chiqsa, darhol shubhalaning.
+
+14
+02:44.980 --> 02:51.360
+Shunday qilib, uchinchi bobda bazaga ulanishning barcha
+nozik jihatlari va xavfsizlik qoidalari bilan tanishdik.
+
+15
+02:51.570 --> 02:57.770
+Keyingi to‘rtinchi bobda SQL tilining asosiy
+sintaksisi va amaliy so‘rovlar yozishni boshlaymiz!

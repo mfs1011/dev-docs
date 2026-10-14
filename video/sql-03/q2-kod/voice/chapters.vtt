@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:19.178
+Kirish
+
+00:19.178 --> 01:04.452
+psql: parametrlar, URI va .pgpass
+
+01:04.452 --> 01:35.866
+psql meta-buyruqlari
+
+01:35.866 --> 02:18.812
+mysql: option fayli va --commands
+
+02:18.812 --> 02:59.054
+sqlite3: fayl, xotira va dot-commands
+
+02:59.054 --> 03:17.900
+Xulosa

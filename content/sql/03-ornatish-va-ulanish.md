@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/sql/03-1-tushuncha.jpg" src="/video/sql/03-1-tushuncha.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/sql/03-1-tushuncha.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/sql/03-1-tushuncha.uz.vtt">
+</video>
+<figcaption>Video: ulanish parametrlari (Host, Port, User, DB), Unix socket vs TCP/IP va xavfsiz boshlang'ich sozlamalar (initdb va mysqld --initialize).</figcaption>
+</figure>
+
 Client/server bazaga ulanish uchun mijoz to'rtta narsani bilishi kerak. PostgreSQL hujjati ularni shunday sanaydi:
 
 | Parametr | Ma'nosi | PostgreSQL'da sukut bo'yicha | MySQL'da sukut bo'yicha |
@@ -164,6 +172,14 @@ ALTER USER 'root'@'localhost' IDENTIFIED BY 'Yangi-Parol-2026';
 ```
 
 ## Kod: ulanish
+
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/sql/03-2-kod.jpg" src="/video/sql/03-2-kod.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/sql/03-2-kod.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/sql/03-2-kod.uz.vtt">
+</video>
+<figcaption>Video: haqiqiy CLI mijozlar — psql (URI, .pgpass, \dt, \x), mysql (option fayli, status, --commands) va sqlite3 (.tables, .schema, .mode).</figcaption>
+</figure>
 
 Misollar PostgreSQL 18.6, MySQL 9.7.2 va SQLite 3.54.0 da ishga tushirilgan. Sinov serverlari: PostgreSQL — 5432-port, MySQL — 3307-port.
 
@@ -502,6 +518,14 @@ Bu yerda nimalar ko'rinadi:
 - **3.54 dagi yangi taklif belgisi.** U versiya va fayl nomini ko'rsatadi: `SQLite-3.54 dokon.db->`. Eski versiyalarda oddiy `sqlite>` chiqadi.
 
 ## Dialektlar
+
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/sql/03-3-dialektlar.jpg" src="/video/sql/03-3-dialektlar.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/sql/03-3-dialektlar.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/sql/03-3-dialektlar.uz.vtt">
+</video>
+<figcaption>Video: uch tizimning ulanish dialektlari taqqoslashi va amaliyotda eng ko'p uchraydigan 6 ta tipik xato tahlili.</figcaption>
+</figure>
 
 | | PostgreSQL | MySQL | SQLite |
 | --- | --- | --- | --- |

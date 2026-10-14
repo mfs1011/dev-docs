@@ -1,0 +1,86 @@
+WEBVTT
+
+1
+00:01.420 --> 00:13.100
+Salom! Bu SQL qo‘llanmasining uchinchi bobi. Bazaga ulanishning to‘rtta asosiy parametri,
+Unix socket va TCP farqi, hamda serverni xavfsiz ishga tushirishni ko‘rib chiqamiz.
+
+2
+00:15.930 --> 00:23.800
+Klient-server bazaga ulanish uchun mijoz to‘rtta asosiy
+narsani bilishi kerak: Host, Port, Foydalanuvchi va Baza nomi.
+
+3
+00:24.110 --> 00:36.310
+Host — server qaysi kompyuterda ekanini, Port esa server tinglayotgan eshikni
+bildiradi. Masalan, PostgreSQL odatda 5432, MySQL esa 3306-portda tinglaydi.
+
+4
+00:36.700 --> 00:46.160
+Foydalanuvchi — kim ulanayotganini, Baza esa aynan qaysi ma’lumotlar bazasi
+bilan ishlashni bildiradi. Ko‘pincha ularga maxfiy parol ham qo‘shiladi.
+
+5
+00:48.830 --> 00:55.680
+Mijoz va server bitta kompyuterda bo‘lsa, ular tarmoqsiz,
+maxsus Unix socket fayli orqali tezkor gaplashishi mumkin.
+
+6
+00:56.090 --> 01:00.470
+Boshqa kompyuterdagi serverga esa
+TCP/IP tarmog‘i orqali ulaniladi.
+
+7
+01:00.640 --> 01:13.130
+MySQL’ning nozik jihati: Unix tizimlarida localhost deb yozsangiz, u tarmoqqa
+emas, socket fayliga ulanadi. TCP orqali ulanish uchun 127.0.0.1 deb yozish kerak.
+
+8
+01:13.420 --> 01:18.900
+SQLite’da esa bu parametrlarning hech biri yo‘q:
+ulanish — bu shunchaki diskdagi faylni ochishdir.
+
+9
+01:21.770 --> 01:27.160
+PostgreSQL’da ma’lumot papkasi klaster deb
+ataladi va u initdb dasturi bilan yaratiladi.
+
+10
+01:27.330 --> 01:36.790
+Diqqat: sukut bo‘yicha initdb lokal foydalanuvchilar uchun trust usulini
+yoqadi. Ya’ni kompyuterdagi har kim parolsiz superuser bo‘lib ulana oladi!
+
+11
+01:37.160 --> 01:43.930
+Xavfsiz bo‘lishi uchun har doim -A scram-sha-256
+parametri va parol ko‘rsatilishi shart.
+
+12
+01:44.320 --> 01:49.300
+Klaster tayyor bo‘lgach, server pg_ctl start
+buyrug‘i bilan fonda ishga tushiriladi.
+
+13
+01:52.250 --> 01:56.740
+MySQL’da ma’lumot papkasini tayyorlash
+mysqld ning o‘ziga yuklangan.
+
+14
+01:56.810 --> 02:06.670
+Buning uchun mysqld --initialize buyrug‘i beriladi. U root foydalanuvchisi uchun
+tasodifiy vaqtinchalik parol yaratadi va uni muddati o‘tgan deb belgilaydi.
+
+15
+02:06.920 --> 02:14.890
+Vaqtinchalik parol bilan oddiy so‘rov yuborib bo‘lmaydi. Server darhol
+ALTER USER buyrug‘i bilan yangi parol o‘rnatishni talab qiladi.
+
+16
+02:18.020 --> 02:23.420
+Demak, ulanishning to‘rtta tayanch parametri va
+xavfsiz boshlang‘ich sozlamalarni ko‘rib chiqdik.
+
+17
+02:23.610 --> 02:33.430
+Keyingi videoda psql, mysql va sqlite3 dasturlari orqali haqiqiy
+ulanishlarni va ularning o‘ziga xos buyruqlarini amalda sinaymiz.
