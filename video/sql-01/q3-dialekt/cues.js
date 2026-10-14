@@ -1,0 +1,36 @@
+// Ovoz effektlari: har terminal buyrug'i yozilishi, natija turi (✓ ding, ✗ error, ⚠ blip)
+(function (g) {
+  const { L, W } = g.SY, TM = g.TM, NR = g.NR;
+  const cues = [], add = (t, type) => cues.push({ t, type });
+  const type = (cmd, t0) => { const d = Math.min(2.4, 0.4 + cmd.length * 0.03); for (let t = 0; t < d; t += 0.07) add(t0 + t, 'tick'); return t0 + d + 0.15; };
+  const C = "SELECT 'Salom, ' || 'dunyo' AS natija;";
+  add(0.3, 'swell');
+  NR.scenes.slice(1).forEach((s) => add(TM.scenes[s].s + 0.4, 'scribble'));
+  ['postgres', 'may', 'es-kyu-laytda'].forEach((w) => add(W('L1', w), 'pop'));
+  add(type('qollanma=# ' + C, W('L3', 'postgres') - 0.2), 'ding');
+  add(type('SQLite-3.54 memory-> ' + C, W('L3', 'es-kyu-layt')), 'ding');
+  add(type('mysql> ' + C, W('L4', 'may') - 0.1), 'blip');
+  add(type('mysql> SHOW WARNINGS;', W('L5', 'ogohlantirishlarni')), 'pop');
+  add(W('L5', 'yoki'), 'error');
+  add(type('qollanma=# SELECT "salom";', W('L7', 'postgres') - 0.2), 'error');
+  add(type('mysql> SELECT "salom";', W('L8', 'may') - 0.1), 'blip');
+  add(type('SQLite-3.54 memory-> SELECT "salom";', W('L9', 'es-kyu-laytda')), 'error');
+  type('SQLite-3.54 memory-> .dbconfig dqs_dml on', W('L10', 'di-bi-konfig') - 0.2);
+  add(type('SQLite-3.54 memory-> SELECT "salom";', W('L10', 'xuddi')), 'blip');
+  add(W('L11', 'qoida'), 'ding');
+  type('qollanma=# CREATE TABLE sinov (n integer);', W('L13', 'postgres') - 0.6);
+  add(type("qollanma=# INSERT INTO sinov VALUES ('abc');", W('L13', 'postgres') + 0.6), 'error');
+  type('mysql> CREATE TABLE sinov (n integer);', W('L14', 'may') - 0.6);
+  add(type("mysql> INSERT INTO sinov VALUES ('abc');", W('L14', 'may') + 0.4), 'error');
+  type('SQLite-3.54 memory-> CREATE TABLE sinov (n integer);', W('L15', 'es-kyu-layt') - 0.6);
+  type("SQLite-3.54 memory-> INSERT INTO sinov VALUES ('abc');", W('L15', 'es-kyu-layt') + 0.4);
+  add(type('SQLite-3.54 memory-> SELECT n, typeof(n) FROM sinov;', W('L15', 'qabul')), 'blip');
+  add(type('mysql> SELECT @@sql_mode AS sql_mode;', W('L16', 'may')), 'pop');
+  type("mysql> SET SESSION sql_mode = 'ANSI';", W('L17', 'ensi') - 0.3);
+  add(type('mysql> ' + C, W('L17', 'ikki') - 0.4), 'ding');
+  add(type('mysql> SELECT "salom";', W('L17', 'qoshtirnoq') - 0.3), 'error');
+  add(W('L18', 'ehtiyot'), 'error');
+  [['L19', 'order'], ['L19', 'satrni'], ['L20', 'may'], ['L20', 'es-kyu-layt'], ['L21', 'har']].forEach(([l, w]) => add(W(l, w), 'strike'));
+  add(W('L21', 'rahmat'), 'swell');
+  cues.sort((a, b) => a.t - b.t); g.CUES = cues;
+})(typeof window !== 'undefined' ? window : globalThis);

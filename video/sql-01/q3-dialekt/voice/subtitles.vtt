@@ -1,0 +1,102 @@
+WEBVTT
+
+1
+00:01.420 --> 00:08.930
+Bitta so‘rov uch tizimda uch xil natija berishi mumkin.
+Uchta misolni PostgreSQL, MySQL va SQLite’da ko‘ramiz.
+
+2
+00:10.770 --> 00:14.860
+Standartda ikkita vertikal chiziq —
+ikki satrni bir-biriga ulash amali.
+
+3
+00:15.330 --> 00:20.180
+PostgreSQL kutilgandek javob beradi:
+Salom, dunyo. SQLite ham xuddi shunday.
+
+4
+00:22.850 --> 00:26.260
+MySQL esa nol qaytaradi va uchta ogohlantirish beradi.
+
+5
+00:29.510 --> 00:42.910
+Ogohlantirishlarni ko‘ramiz. MySQL’da bu belgi sukut bo‘yicha mantiqiy YOKI degani. Ikkala satr songa
+aylanib, nol bo‘ldi. Xato emas, faqat ogohlantirish. MySQL’da satrlar CONCAT funksiyasi bilan ulanadi.
+
+6
+00:46.040 --> 00:50.620
+Standartda bitta tirnoq — satr,
+qo‘shtirnoq esa jadval yoki ustun nomi.
+
+7
+00:50.750 --> 00:55.000
+PostgreSQL standartga amal qiladi: salom
+degan ustun yo‘q, shuning uchun xato.
+
+8
+00:57.410 --> 01:01.260
+MySQL qo‘shtirnoqni satr deb
+tushunadi va salom so‘zini qaytaradi.
+
+9
+01:03.770 --> 01:11.530
+SQLite’da bu qanday yig‘ilganiga bog‘liq. Rasmiy manbadan yig‘ilgan
+bizning versiyamizda DQS nolga teng, shuning uchun xato beradi.
+
+10
+01:14.360 --> 01:22.150
+Lekin dbconfig bilan yoqilsa, xuddi shu so‘rov satr qaytaradi.
+SQLite hujjati bu imkoniyatni xato imkoniyat deb ataydi.
+
+11
+01:24.640 --> 01:30.340
+Qoida: satrni doim bitta tirnoq bilan yozing.
+Shunda kod uchala tizimda bir xil ishlaydi.
+
+12
+01:32.230 --> 01:35.660
+Endi butun son ustuniga abc matnini yozib ko‘ramiz.
+
+13
+01:35.750 --> 01:37.300
+PostgreSQL xato beradi.
+
+14
+01:39.750 --> 01:41.640
+MySQL ham xato beradi.
+
+15
+01:43.730 --> 01:49.850
+SQLite esa qiymatni qabul qiladi va matn sifatida saqlaydi.
+Uning hujjati buni moslashuvchan tiplash deb ataydi.
+
+16
+01:53.780 --> 02:01.190
+MySQL’ning ko‘p xatti-harakatini SQL rejimlari boshqaradi. Sukut
+bo‘yicha qat’iy rejim yoqilgan, shuning uchun abc xato berdi.
+
+17
+02:02.720 --> 02:09.400
+ANSI rejimini yoqsak, MySQL standartga yaqinlashadi: ikki
+chiziq satrlarni ulaydi, qo‘shtirnoq esa nom bo‘ladi.
+
+18
+02:12.070 --> 02:21.200
+Ehtiyot bo‘ling: bitta so‘rov rejimga qarab boshqa natija beradi. Hujjat partitsiyalangan
+jadvallar yaratilgandan keyin rejimni o‘zgartirmaslikni qat’iy tavsiya qiladi.
+
+19
+02:25.590 --> 02:32.010
+Tipik xatolardan saqlaning. Natija tartibiga ORDER
+BY siz tayanmang. Satrni qo‘shtirnoq bilan yozmang.
+
+20
+02:33.200 --> 02:39.730
+MySQL ogohlantirishlariga e’tibor bering. SQLite
+noto‘g‘ri tipni ham qabul qilishini unutmang.
+
+21
+02:40.860 --> 02:46.650
+Va har bir tizimning dialektini uning hujjatidan
+tekshiring. E’tiboringiz uchun rahmat!

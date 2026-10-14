@@ -1,0 +1,73 @@
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 149
+Server version: 9.7.2 Homebrew
+
+Copyright (c) 2000, 2026, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> DROP TABLE IF EXISTS sinov;
+Query OK, 0 rows affected (0.011 sec)
+
+mysql> SELECT 'Salom, ' || 'dunyo' AS natija;
++--------+
+| natija |
++--------+
+|      0 |
++--------+
+1 row in set, 3 warnings (0.000 sec)
+
+mysql> SHOW WARNINGS;
++---------+------+-------------------------------------------------------------------------------------------------------+
+| Level   | Code | Message                                                                                               |
++---------+------+-------------------------------------------------------------------------------------------------------+
+| Warning | 1287 | '|| as a synonym for OR' is deprecated and will be removed in a future release. Please use OR instead |
+| Warning | 1292 | Truncated incorrect DOUBLE value: 'Salom, '                                                           |
+| Warning | 1292 | Truncated incorrect DOUBLE value: 'dunyo'                                                             |
++---------+------+-------------------------------------------------------------------------------------------------------+
+3 rows in set (0.000 sec)
+
+mysql> SELECT "salom";
++-------+
+| salom |
++-------+
+| salom |
++-------+
+1 row in set (0.000 sec)
+
+mysql> CREATE TABLE sinov (n integer);
+Query OK, 0 rows affected (0.006 sec)
+
+mysql> INSERT INTO sinov VALUES ('abc');
+ERROR 1366 (HY000): Incorrect integer value: 'abc' for column 'n' at row 1
+mysql> SELECT @@sql_mode AS sql_mode;
++-----------------------------------------------------------------------------------------------------------------------+
+| sql_mode                                                                                                              |
++-----------------------------------------------------------------------------------------------------------------------+
+| ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION |
++-----------------------------------------------------------------------------------------------------------------------+
+1 row in set (0.000 sec)
+
+mysql> SET SESSION sql_mode = 'ANSI';
+Query OK, 0 rows affected (0.000 sec)
+
+mysql> SELECT 'Salom, ' || 'dunyo' AS natija;
++--------------+
+| natija       |
++--------------+
+| Salom, dunyo |
++--------------+
+1 row in set (0.000 sec)
+
+mysql> SELECT "salom";
+ERROR 1054 (42S22): Unknown column 'salom' in 'field list'
+mysql> quit
+Bye
+

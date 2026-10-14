@@ -1,0 +1,110 @@
+WEBVTT
+
+1
+00:01.420 --> 00:09.380
+Salom! Bu SQL qo‘llanmasining birinchi bobi. Relyatsion model
+nima va SQL standarti qanday ishlashini ko‘rib chiqamiz.
+
+2
+00:11.530 --> 00:25.460
+Ma’lumotlar bazasi — ma’lumotni tartibli saqlaydigan tizim. Uni boshqaradigan dastur MBBT, ya’ni
+ma’lumotlar bazasini boshqarish tizimi deyiladi. PostgreSQL, MySQL va SQLite — shunday tizimlar.
+
+3
+00:25.680 --> 00:36.390
+Uchalasi ham relyatsion. Relyatsiya — jadvalning matematik nomi. Ma’lumot saqlashning
+boshqa usullari ham bor: masalan, kompyuterdagi papka va fayllar — ierarxik baza.
+
+4
+00:36.540 --> 00:46.540
+Relyatsion baza ma’lumotni bitta katta omborga emas, alohida jadvallarga joylaydi.
+Jadvallar orasidagi qoidalarni esa ilova emas, bazaning o‘zi kuzatib boradi.
+
+5
+00:49.150 --> 00:55.180
+Mana, talabalar jadvali. Har bir qator —
+bitta yozuv. Nazariyada uni kortej deyiladi.
+
+6
+00:55.450 --> 01:01.010
+Har bir ustun — nomlangan maydon, uning aniq
+ma’lumot tipi bor. Nazariyada bu atribut.
+
+7
+01:01.420 --> 01:08.010
+Id ustuni — birlamchi kalit. U har bir qatorni
+yagona aniqlaydi, takrorlanmaydi va NULL bo‘lmaydi.
+
+8
+01:08.920 --> 01:12.930
+NULL — qiymat yo‘q degani. U nol ham, bo‘sh satr ham emas.
+
+9
+01:13.910 --> 01:21.200
+Cheklov — jadvalga yoziladigan qiymatlarga qo‘yilgan qoida.
+Tashqi kalit esa boshqa jadvaldagi bitta qatorga ishora qiladi.
+
+10
+01:22.310 --> 01:29.580
+Bitta PostgreSQL serveri boshqaradigan bazalar to‘plami
+klaster deyiladi. Klaster ichida baza, baza ichida jadval.
+
+11
+01:31.400 --> 01:39.070
+Endi eng muhim qoida. Qatordagi ustunlar tartibi qat’iy,
+lekin jadvaldagi qatorlar tartibini SQL kafolatlamaydi.
+
+12
+01:40.080 --> 01:48.540
+Sababi oddiy: matematikada relyatsiya — to‘plam, to‘plamda esa
+tartib yo‘q. Tartib kerak bo‘lsa, uni so‘rovda aniq so‘rash kerak.
+
+13
+01:51.330 --> 02:02.120
+SQL — Structured Query Language, ya’ni tuzilmaviy so‘rovlar tili. Uni to‘g‘ridan-to‘g‘ri
+yozish, boshqa tildagi kod ichiga joylash yoki ORM kabi kutubxona orqali ishlatish mumkin.
+
+14
+02:03.430 --> 02:17.730
+Standartning rasmiy nomi — ISO/IEC 9075. SQL-92 versiyasida moslikning uchta darajasi
+bor edi. SQL 1999 versiyasidan boshlab darajalar o‘rniga xususiyatlar ro‘yxati keldi.
+
+15
+02:18.200 --> 02:23.260
+Eng so‘nggi versiya — SQL 2023. Har
+yangi versiya oldingisini almashtiradi.
+
+16
+02:24.270 --> 02:38.470
+Xususiyatlarning bir qismi Core, ya’ni majburiy. PostgreSQL 18 SQL 2023 versiyasidagi 177 ta Core xususiyatdan
+kamida 170 tasini bajaradi. Hujjatga ko‘ra, hech bir tizim Core’ga to‘liq moslikni da’vo qilmaydi.
+
+17
+02:39.800 --> 02:47.250
+Standart bir nechta qismdan iborat. Bu qo‘llanma deyarli butunlay
+ikkinchi qism — Foundation haqida: jadvallar, so‘rovlar va tiplar.
+
+18
+02:50.280 --> 02:56.800
+Standart bor, lekin ikkita SQL tizimi aynan bir xil
+ishlamaydi. Standartdan farq qiladigan qism dialekt deyiladi.
+
+19
+02:57.210 --> 03:05.980
+Dialekt ikki xil bo‘ladi. Kengaytma — standartda yo‘q, lekin tizim
+qo‘shgan imkoniyat. Farq — standartdagi narsa tizimda boshqacha ishlaydi.
+
+20
+03:09.030 --> 03:18.650
+PostgreSQL o‘zini obyekt-relyatsion tizim deb ataydi va standartga moslikka intiladi. MySQL
+ham intiladi, lekin tezlik va ishonchlilikni qurbon qilmasdan; uning kengaytmalari ko‘p.
+
+21
+03:20.260 --> 03:26.980
+SQLite esa serversiz: u ilova ichida kutubxona sifatida
+ishlaydi. Uning farqlari alohida Quirks sahifasida yozilgan.
+
+22
+03:30.130 --> 03:38.550
+Shuning uchun har bobda ikki savolga javob beramiz: standart nima deydi va har
+bir tizim aslida nima qiladi. Keyingi videoda bularni terminalda ko‘ramiz.

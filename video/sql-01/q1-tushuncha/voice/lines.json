@@ -1,0 +1,2354 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Salom! Bu SQL qo‘llanmasining birinchi bobi. Relyatsion model nima va SQL standarti qanday ishlashini ko‘rib chiqamiz.",
+    "show": "Salom! Bu SQL qo‘llanmasining birinchi bobi. Relyatsion model nima va SQL standarti qanday ishlashini ko‘rib chiqamiz.",
+    "say": "Salom! Bu es-kyu-el qo‘llanmasining birinchi bobi. Relyatsion model nima va es-kyu-el standarti qanday ishlashini ko‘rib chiqamiz.",
+    "a0": 0.28,
+    "a1": 7.79,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.28,
+        "e": 0.56
+      },
+      {
+        "w": "Bu",
+        "s": 1.14,
+        "e": 1.2
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 1.46,
+        "e": 1.9
+      },
+      {
+        "w": "qo‘llanmasining",
+        "s": 1.94,
+        "e": 2.64
+      },
+      {
+        "w": "birinchi",
+        "s": 2.68,
+        "e": 3.0
+      },
+      {
+        "w": "bobi.",
+        "s": 3.06,
+        "e": 3.3
+      },
+      {
+        "w": "Relyatsion",
+        "s": 3.92,
+        "e": 4.36
+      },
+      {
+        "w": "model",
+        "s": 4.42,
+        "e": 4.7
+      },
+      {
+        "w": "nima",
+        "s": 4.74,
+        "e": 4.96
+      },
+      {
+        "w": "va",
+        "s": 5.28,
+        "e": 5.36
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 5.56,
+        "e": 5.94
+      },
+      {
+        "w": "standarti",
+        "s": 5.98,
+        "e": 6.42
+      },
+      {
+        "w": "qanday",
+        "s": 6.48,
+        "e": 6.78
+      },
+      {
+        "w": "ishlashini",
+        "s": 6.8,
+        "e": 7.18
+      },
+      {
+        "w": "ko‘rib",
+        "s": 7.22,
+        "e": 7.42
+      },
+      {
+        "w": "chiqamiz.",
+        "s": 7.46,
+        "e": 7.79
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "baza",
+    "text": "Ma’lumotlar bazasi — ma’lumotni tartibli saqlaydigan tizim. Uni boshqaradigan dastur MBBT, ya’ni ma’lumotlar bazasini boshqarish tizimi deyiladi. PostgreSQL, MySQL va SQLite — shunday tizimlar.",
+    "show": "Ma’lumotlar bazasi — ma’lumotni tartibli saqlaydigan tizim. Uni boshqaradigan dastur MBBT, ya’ni ma’lumotlar bazasini boshqarish tizimi deyiladi. PostgreSQL, MySQL va SQLite — shunday tizimlar.",
+    "say": "Ma’lumotlar bazasi — ma’lumotni tartibli saqlaydigan tizim. Uni boshqaradigan dastur Em-Be-Be-Te, ya’ni ma’lumotlar bazasini boshqarish tizimi deyiladi. Postgres, May es-kyu-el va Es-kyu-layt — shunday tizimlar.",
+    "a0": 8.79,
+    "a1": 22.27,
+    "words": [
+      {
+        "w": "Ma’lumotlar",
+        "s": 8.79,
+        "e": 9.27
+      },
+      {
+        "w": "bazasi",
+        "s": 9.33,
+        "e": 9.77
+      },
+      {
+        "w": "—",
+        "s": 9.77,
+        "e": 9.77
+      },
+      {
+        "w": "ma’lumotni",
+        "s": 10.03,
+        "e": 10.55
+      },
+      {
+        "w": "tartibli",
+        "s": 10.61,
+        "e": 11.05
+      },
+      {
+        "w": "saqlaydigan",
+        "s": 11.11,
+        "e": 11.65
+      },
+      {
+        "w": "tizim.",
+        "s": 11.73,
+        "e": 11.99
+      },
+      {
+        "w": "Uni",
+        "s": 12.61,
+        "e": 12.71
+      },
+      {
+        "w": "boshqaradigan",
+        "s": 12.73,
+        "e": 13.25
+      },
+      {
+        "w": "dastur",
+        "s": 13.31,
+        "e": 13.71
+      },
+      {
+        "w": "Em-Be-Be-Te,",
+        "s": 14.15,
+        "e": 15.01
+      },
+      {
+        "w": "ya’ni",
+        "s": 15.37,
+        "e": 15.59
+      },
+      {
+        "w": "ma’lumotlar",
+        "s": 15.91,
+        "e": 16.43
+      },
+      {
+        "w": "bazasini",
+        "s": 16.49,
+        "e": 16.91
+      },
+      {
+        "w": "boshqarish",
+        "s": 16.95,
+        "e": 17.37
+      },
+      {
+        "w": "tizimi",
+        "s": 17.41,
+        "e": 17.69
+      },
+      {
+        "w": "deyiladi.",
+        "s": 17.71,
+        "e": 18.05
+      },
+      {
+        "w": "Postgres,",
+        "s": 18.73,
+        "e": 19.33
+      },
+      {
+        "w": "May",
+        "s": 19.69,
+        "e": 19.87
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 19.91,
+        "e": 20.33
+      },
+      {
+        "w": "va",
+        "s": 20.63,
+        "e": 20.69
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 20.83,
+        "e": 21.39
+      },
+      {
+        "w": "—",
+        "s": 21.39,
+        "e": 21.39
+      },
+      {
+        "w": "shunday",
+        "s": 21.53,
+        "e": 21.83
+      },
+      {
+        "w": "tizimlar.",
+        "s": 21.87,
+        "e": 22.27
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "baza",
+    "text": "Uchalasi ham relyatsion. Relyatsiya — jadvalning matematik nomi. Ma’lumot saqlashning boshqa usullari ham bor: masalan, kompyuterdagi papka va fayllar — ierarxik baza.",
+    "show": "Uchalasi ham relyatsion. Relyatsiya — jadvalning matematik nomi. Ma’lumot saqlashning boshqa usullari ham bor: masalan, kompyuterdagi papka va fayllar — ierarxik baza.",
+    "say": "Uchalasi ham relyatsion. Relyatsiya — jadvalning matematik nomi. Ma’lumot saqlashning boshqa usullari ham bor: masalan, kompyuterdagi papka va fayllar — ierarxik baza.",
+    "a0": 22.94,
+    "a1": 33.2,
+    "words": [
+      {
+        "w": "Uchalasi",
+        "s": 22.94,
+        "e": 23.3
+      },
+      {
+        "w": "ham",
+        "s": 23.34,
+        "e": 23.54
+      },
+      {
+        "w": "relyatsion.",
+        "s": 23.7,
+        "e": 24.2
+      },
+      {
+        "w": "Relyatsiya",
+        "s": 24.68,
+        "e": 25.14
+      },
+      {
+        "w": "—",
+        "s": 25.14,
+        "e": 25.14
+      },
+      {
+        "w": "jadvalning",
+        "s": 25.34,
+        "e": 25.88
+      },
+      {
+        "w": "matematik",
+        "s": 25.92,
+        "e": 26.42
+      },
+      {
+        "w": "nomi.",
+        "s": 26.5,
+        "e": 26.76
+      },
+      {
+        "w": "Ma’lumot",
+        "s": 27.34,
+        "e": 27.68
+      },
+      {
+        "w": "saqlashning",
+        "s": 27.72,
+        "e": 28.22
+      },
+      {
+        "w": "boshqa",
+        "s": 28.28,
+        "e": 28.52
+      },
+      {
+        "w": "usullari",
+        "s": 28.56,
+        "e": 28.94
+      },
+      {
+        "w": "ham",
+        "s": 28.96,
+        "e": 29.1
+      },
+      {
+        "w": "bor:",
+        "s": 29.16,
+        "e": 29.3
+      },
+      {
+        "w": "masalan,",
+        "s": 29.6,
+        "e": 29.94
+      },
+      {
+        "w": "kompyuterdagi",
+        "s": 30.26,
+        "e": 30.92
+      },
+      {
+        "w": "papka",
+        "s": 31.0,
+        "e": 31.34
+      },
+      {
+        "w": "va",
+        "s": 31.42,
+        "e": 31.48
+      },
+      {
+        "w": "fayllar",
+        "s": 31.56,
+        "e": 32.0
+      },
+      {
+        "w": "—",
+        "s": 32.0,
+        "e": 32.0
+      },
+      {
+        "w": "ierarxik",
+        "s": 32.4,
+        "e": 32.88
+      },
+      {
+        "w": "baza.",
+        "s": 32.94,
+        "e": 33.2
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "baza",
+    "text": "Relyatsion baza ma’lumotni bitta katta omborga emas, alohida jadvallarga joylaydi. Jadvallar orasidagi qoidalarni esa ilova emas, bazaning o‘zi kuzatib boradi.",
+    "show": "Relyatsion baza ma’lumotni bitta katta omborga emas, alohida jadvallarga joylaydi. Jadvallar orasidagi qoidalarni esa ilova emas, bazaning o‘zi kuzatib boradi.",
+    "say": "Relyatsion baza ma’lumotni bitta katta omborga emas, alohida jadvallarga joylaydi. Jadvallar orasidagi qoidalarni esa ilova emas, bazaning o‘zi kuzatib boradi.",
+    "a0": 33.8,
+    "a1": 43.35,
+    "words": [
+      {
+        "w": "Relyatsion",
+        "s": 33.8,
+        "e": 34.24
+      },
+      {
+        "w": "baza",
+        "s": 34.3,
+        "e": 34.56
+      },
+      {
+        "w": "ma’lumotni",
+        "s": 34.74,
+        "e": 35.22
+      },
+      {
+        "w": "bitta",
+        "s": 35.3,
+        "e": 35.58
+      },
+      {
+        "w": "katta",
+        "s": 35.64,
+        "e": 35.92
+      },
+      {
+        "w": "omborga",
+        "s": 35.98,
+        "e": 36.32
+      },
+      {
+        "w": "emas,",
+        "s": 36.38,
+        "e": 36.62
+      },
+      {
+        "w": "alohida",
+        "s": 37.0,
+        "e": 37.34
+      },
+      {
+        "w": "jadvallarga",
+        "s": 37.4,
+        "e": 37.95
+      },
+      {
+        "w": "joylaydi.",
+        "s": 37.99,
+        "e": 38.35
+      },
+      {
+        "w": "Jadvallar",
+        "s": 38.99,
+        "e": 39.47
+      },
+      {
+        "w": "orasidagi",
+        "s": 39.55,
+        "e": 39.95
+      },
+      {
+        "w": "qoidalarni",
+        "s": 40.01,
+        "e": 40.53
+      },
+      {
+        "w": "esa",
+        "s": 40.59,
+        "e": 40.77
+      },
+      {
+        "w": "ilova",
+        "s": 40.93,
+        "e": 41.27
+      },
+      {
+        "w": "emas,",
+        "s": 41.35,
+        "e": 41.61
+      },
+      {
+        "w": "bazaning",
+        "s": 41.93,
+        "e": 42.37
+      },
+      {
+        "w": "o‘zi",
+        "s": 42.49,
+        "e": 42.67
+      },
+      {
+        "w": "kuzatib",
+        "s": 42.71,
+        "e": 43.05
+      },
+      {
+        "w": "boradi.",
+        "s": 43.07,
+        "e": 43.35
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "atamalar",
+    "text": "Mana, talabalar jadvali. Har bir qator — bitta yozuv. Nazariyada uni kortej deyiladi.",
+    "show": "Mana, talabalar jadvali. Har bir qator — bitta yozuv. Nazariyada uni kortej deyiladi.",
+    "say": "Mana, talabalar jadvali. Har bir qator — bitta yozuv. Nazariyada uni kortej deyiladi.",
+    "a0": 44.01,
+    "a1": 49.59,
+    "words": [
+      {
+        "w": "Mana,",
+        "s": 44.01,
+        "e": 44.21
+      },
+      {
+        "w": "talabalar",
+        "s": 44.45,
+        "e": 44.87
+      },
+      {
+        "w": "jadvali.",
+        "s": 44.93,
+        "e": 45.29
+      },
+      {
+        "w": "Har",
+        "s": 45.87,
+        "e": 46.01
+      },
+      {
+        "w": "bir",
+        "s": 46.07,
+        "e": 46.15
+      },
+      {
+        "w": "qator",
+        "s": 46.21,
+        "e": 46.53
+      },
+      {
+        "w": "—",
+        "s": 46.53,
+        "e": 46.53
+      },
+      {
+        "w": "bitta",
+        "s": 46.79,
+        "e": 47.09
+      },
+      {
+        "w": "yozuv.",
+        "s": 47.09,
+        "e": 47.43
+      },
+      {
+        "w": "Nazariyada",
+        "s": 47.95,
+        "e": 48.41
+      },
+      {
+        "w": "uni",
+        "s": 48.47,
+        "e": 48.59
+      },
+      {
+        "w": "kortej",
+        "s": 48.81,
+        "e": 49.21
+      },
+      {
+        "w": "deyiladi.",
+        "s": 49.25,
+        "e": 49.59
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "atamalar",
+    "text": "Har bir ustun — nomlangan maydon, uning aniq ma’lumot tipi bor. Nazariyada bu atribut.",
+    "show": "Har bir ustun — nomlangan maydon, uning aniq ma’lumot tipi bor. Nazariyada bu atribut.",
+    "say": "Har bir ustun — nomlangan maydon, uning aniq ma’lumot tipi bor. Nazariyada bu atribut.",
+    "a0": 50.31,
+    "a1": 55.42,
+    "words": [
+      {
+        "w": "Har",
+        "s": 50.31,
+        "e": 50.45
+      },
+      {
+        "w": "bir",
+        "s": 50.49,
+        "e": 50.61
+      },
+      {
+        "w": "ustun",
+        "s": 50.65,
+        "e": 50.95
+      },
+      {
+        "w": "—",
+        "s": 50.95,
+        "e": 50.95
+      },
+      {
+        "w": "nomlangan",
+        "s": 51.15,
+        "e": 51.67
+      },
+      {
+        "w": "maydon,",
+        "s": 51.71,
+        "e": 52.05
+      },
+      {
+        "w": "uning",
+        "s": 52.37,
+        "e": 52.58
+      },
+      {
+        "w": "aniq",
+        "s": 52.74,
+        "e": 52.96
+      },
+      {
+        "w": "ma’lumot",
+        "s": 53.02,
+        "e": 53.36
+      },
+      {
+        "w": "tipi",
+        "s": 53.4,
+        "e": 53.58
+      },
+      {
+        "w": "bor.",
+        "s": 53.64,
+        "e": 53.78
+      },
+      {
+        "w": "Nazariyada",
+        "s": 54.24,
+        "e": 54.7
+      },
+      {
+        "w": "bu",
+        "s": 54.74,
+        "e": 54.82
+      },
+      {
+        "w": "atribut.",
+        "s": 55.02,
+        "e": 55.42
+      }
+    ]
+  },
+  {
+    "id": "L7",
+    "scene": "atamalar",
+    "text": "Id ustuni — birlamchi kalit. U har bir qatorni yagona aniqlaydi, takrorlanmaydi va NULL bo‘lmaydi.",
+    "show": "Id ustuni — birlamchi kalit. U har bir qatorni yagona aniqlaydi, takrorlanmaydi va NULL bo‘lmaydi.",
+    "say": "Ay-di ustuni — birlamchi kalit. U har bir qatorni yagona aniqlaydi, takrorlanmaydi va nal bo‘lmaydi.",
+    "a0": 56.28,
+    "a1": 62.42,
+    "words": [
+      {
+        "w": "Ay-di",
+        "s": 56.28,
+        "e": 56.52
+      },
+      {
+        "w": "ustuni",
+        "s": 56.64,
+        "e": 57.0
+      },
+      {
+        "w": "—",
+        "s": 57.0,
+        "e": 57.0
+      },
+      {
+        "w": "birlamchi",
+        "s": 57.2,
+        "e": 57.62
+      },
+      {
+        "w": "kalit.",
+        "s": 57.66,
+        "e": 57.92
+      },
+      {
+        "w": "U",
+        "s": 58.56,
+        "e": 58.58
+      },
+      {
+        "w": "har",
+        "s": 58.72,
+        "e": 58.88
+      },
+      {
+        "w": "bir",
+        "s": 58.92,
+        "e": 59.0
+      },
+      {
+        "w": "qatorni",
+        "s": 59.04,
+        "e": 59.44
+      },
+      {
+        "w": "yagona",
+        "s": 59.52,
+        "e": 59.86
+      },
+      {
+        "w": "aniqlaydi,",
+        "s": 59.88,
+        "e": 60.3
+      },
+      {
+        "w": "takrorlanmaydi",
+        "s": 60.58,
+        "e": 61.34
+      },
+      {
+        "w": "va",
+        "s": 61.54,
+        "e": 61.6
+      },
+      {
+        "w": "nal",
+        "s": 61.78,
+        "e": 61.96
+      },
+      {
+        "w": "bo‘lmaydi.",
+        "s": 62.02,
+        "e": 62.42
+      }
+    ]
+  },
+  {
+    "id": "L8",
+    "scene": "atamalar",
+    "text": "NULL — qiymat yo‘q degani. U nol ham, bo‘sh satr ham emas.",
+    "show": "NULL — qiymat yo‘q degani. U nol ham, bo‘sh satr ham emas.",
+    "say": "Nal — qiymat yo‘q degani. U nol ham, bo‘sh satr ham emas.",
+    "a0": 63.18,
+    "a1": 66.74,
+    "words": [
+      {
+        "w": "Nal",
+        "s": 63.18,
+        "e": 63.38
+      },
+      {
+        "w": "—",
+        "s": 63.38,
+        "e": 63.38
+      },
+      {
+        "w": "qiymat",
+        "s": 63.7,
+        "e": 64.04
+      },
+      {
+        "w": "yo‘q",
+        "s": 64.1,
+        "e": 64.26
+      },
+      {
+        "w": "degani.",
+        "s": 64.3,
+        "e": 64.6
+      },
+      {
+        "w": "U",
+        "s": 64.94,
+        "e": 64.96
+      },
+      {
+        "w": "nol",
+        "s": 65.08,
+        "e": 65.28
+      },
+      {
+        "w": "ham,",
+        "s": 65.34,
+        "e": 65.52
+      },
+      {
+        "w": "bo‘sh",
+        "s": 65.78,
+        "e": 65.98
+      },
+      {
+        "w": "satr",
+        "s": 66.04,
+        "e": 66.28
+      },
+      {
+        "w": "ham",
+        "s": 66.34,
+        "e": 66.46
+      },
+      {
+        "w": "emas.",
+        "s": 66.5,
+        "e": 66.74
+      }
+    ]
+  },
+  {
+    "id": "L9",
+    "scene": "atamalar",
+    "text": "Cheklov — jadvalga yoziladigan qiymatlarga qo‘yilgan qoida. Tashqi kalit esa boshqa jadvaldagi bitta qatorga ishora qiladi.",
+    "show": "Cheklov — jadvalga yoziladigan qiymatlarga qo‘yilgan qoida. Tashqi kalit esa boshqa jadvaldagi bitta qatorga ishora qiladi.",
+    "say": "Cheklov — jadvalga yoziladigan qiymatlarga qo‘yilgan qoida. Tashqi kalit esa boshqa jadvaldagi bitta qatorga ishora qiladi.",
+    "a0": 67.57,
+    "a1": 74.41,
+    "words": [
+      {
+        "w": "Cheklov",
+        "s": 67.57,
+        "e": 67.97
+      },
+      {
+        "w": "—",
+        "s": 67.97,
+        "e": 67.97
+      },
+      {
+        "w": "jadvalga",
+        "s": 68.19,
+        "e": 68.61
+      },
+      {
+        "w": "yoziladigan",
+        "s": 68.63,
+        "e": 69.13
+      },
+      {
+        "w": "qiymatlarga",
+        "s": 69.21,
+        "e": 69.71
+      },
+      {
+        "w": "qo‘yilgan",
+        "s": 69.77,
+        "e": 70.13
+      },
+      {
+        "w": "qoida.",
+        "s": 70.19,
+        "e": 70.55
+      },
+      {
+        "w": "Tashqi",
+        "s": 71.07,
+        "e": 71.35
+      },
+      {
+        "w": "kalit",
+        "s": 71.39,
+        "e": 71.63
+      },
+      {
+        "w": "esa",
+        "s": 71.67,
+        "e": 71.83
+      },
+      {
+        "w": "boshqa",
+        "s": 72.17,
+        "e": 72.43
+      },
+      {
+        "w": "jadvaldagi",
+        "s": 72.47,
+        "e": 73.01
+      },
+      {
+        "w": "bitta",
+        "s": 73.13,
+        "e": 73.41
+      },
+      {
+        "w": "qatorga",
+        "s": 73.45,
+        "e": 73.83
+      },
+      {
+        "w": "ishora",
+        "s": 73.87,
+        "e": 74.13
+      },
+      {
+        "w": "qiladi.",
+        "s": 74.17,
+        "e": 74.41
+      }
+    ]
+  },
+  {
+    "id": "L10",
+    "scene": "atamalar",
+    "text": "Bitta PostgreSQL serveri boshqaradigan bazalar to‘plami klaster deyiladi. Klaster ichida baza, baza ichida jadval.",
+    "show": "Bitta PostgreSQL serveri boshqaradigan bazalar to‘plami klaster deyiladi. Klaster ichida baza, baza ichida jadval.",
+    "say": "Bitta Postgres serveri boshqaradigan bazalar to‘plami klaster deyiladi. Klaster ichida baza, baza ichida jadval.",
+    "a0": 75.17,
+    "a1": 81.99,
+    "words": [
+      {
+        "w": "Bitta",
+        "s": 75.17,
+        "e": 75.47
+      },
+      {
+        "w": "Postgres",
+        "s": 75.63,
+        "e": 76.07
+      },
+      {
+        "w": "serveri",
+        "s": 76.11,
+        "e": 76.47
+      },
+      {
+        "w": "boshqaradigan",
+        "s": 76.53,
+        "e": 77.11
+      },
+      {
+        "w": "bazalar",
+        "s": 77.19,
+        "e": 77.57
+      },
+      {
+        "w": "to‘plami",
+        "s": 77.59,
+        "e": 77.97
+      },
+      {
+        "w": "klaster",
+        "s": 78.15,
+        "e": 78.55
+      },
+      {
+        "w": "deyiladi.",
+        "s": 78.59,
+        "e": 78.91
+      },
+      {
+        "w": "Klaster",
+        "s": 79.37,
+        "e": 79.73
+      },
+      {
+        "w": "ichida",
+        "s": 79.77,
+        "e": 79.99
+      },
+      {
+        "w": "baza,",
+        "s": 80.09,
+        "e": 80.41
+      },
+      {
+        "w": "baza",
+        "s": 80.81,
+        "e": 81.07
+      },
+      {
+        "w": "ichida",
+        "s": 81.13,
+        "e": 81.37
+      },
+      {
+        "w": "jadval.",
+        "s": 81.61,
+        "e": 81.99
+      }
+    ]
+  },
+  {
+    "id": "L11",
+    "scene": "tartib",
+    "text": "Endi eng muhim qoida. Qatordagi ustunlar tartibi qat’iy, lekin jadvaldagi qatorlar tartibini SQL kafolatlamaydi.",
+    "show": "Endi eng muhim qoida. Qatordagi ustunlar tartibi qat’iy, lekin jadvaldagi qatorlar tartibini SQL kafolatlamaydi.",
+    "say": "Endi eng muhim qoida. Qatordagi ustunlar tartibi qat’iy, lekin jadvaldagi qatorlar tartibini es-kyu-el kafolatlamaydi.",
+    "a0": 82.66,
+    "a1": 89.88,
+    "words": [
+      {
+        "w": "Endi",
+        "s": 82.66,
+        "e": 82.88
+      },
+      {
+        "w": "eng",
+        "s": 83.14,
+        "e": 83.28
+      },
+      {
+        "w": "muhim",
+        "s": 83.3,
+        "e": 83.54
+      },
+      {
+        "w": "qoida.",
+        "s": 83.62,
+        "e": 83.94
+      },
+      {
+        "w": "Qatordagi",
+        "s": 84.46,
+        "e": 84.92
+      },
+      {
+        "w": "ustunlar",
+        "s": 84.98,
+        "e": 85.36
+      },
+      {
+        "w": "tartibi",
+        "s": 85.4,
+        "e": 85.76
+      },
+      {
+        "w": "qat’iy,",
+        "s": 85.88,
+        "e": 86.22
+      },
+      {
+        "w": "lekin",
+        "s": 86.64,
+        "e": 86.92
+      },
+      {
+        "w": "jadvaldagi",
+        "s": 87.08,
+        "e": 87.58
+      },
+      {
+        "w": "qatorlar",
+        "s": 87.64,
+        "e": 88.06
+      },
+      {
+        "w": "tartibini",
+        "s": 88.1,
+        "e": 88.52
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 88.74,
+        "e": 89.1
+      },
+      {
+        "w": "kafolatlamaydi.",
+        "s": 89.16,
+        "e": 89.88
+      }
+    ]
+  },
+  {
+    "id": "L12",
+    "scene": "tartib",
+    "text": "Sababi oddiy: matematikada relyatsiya — to‘plam, to‘plamda esa tartib yo‘q. Tartib kerak bo‘lsa, uni so‘rovda aniq so‘rash kerak.",
+    "show": "Sababi oddiy: matematikada relyatsiya — to‘plam, to‘plamda esa tartib yo‘q. Tartib kerak bo‘lsa, uni so‘rovda aniq so‘rash kerak.",
+    "say": "Sababi oddiy: matematikada relyatsiya — to‘plam, to‘plamda esa tartib yo‘q. Tartib kerak bo‘lsa, uni so‘rovda aniq so‘rash kerak.",
+    "a0": 90.54,
+    "a1": 98.55,
+    "words": [
+      {
+        "w": "Sababi",
+        "s": 90.54,
+        "e": 90.88
+      },
+      {
+        "w": "oddiy:",
+        "s": 91.06,
+        "e": 91.34
+      },
+      {
+        "w": "matematikada",
+        "s": 91.82,
+        "e": 92.42
+      },
+      {
+        "w": "relyatsiya",
+        "s": 92.62,
+        "e": 93.08
+      },
+      {
+        "w": "—",
+        "s": 93.08,
+        "e": 93.08
+      },
+      {
+        "w": "to‘plam,",
+        "s": 93.26,
+        "e": 93.64
+      },
+      {
+        "w": "to‘plamda",
+        "s": 94.04,
+        "e": 94.46
+      },
+      {
+        "w": "esa",
+        "s": 94.5,
+        "e": 94.68
+      },
+      {
+        "w": "tartib",
+        "s": 94.8,
+        "e": 95.14
+      },
+      {
+        "w": "yo‘q.",
+        "s": 95.2,
+        "e": 95.36
+      },
+      {
+        "w": "Tartib",
+        "s": 95.9,
+        "e": 96.2
+      },
+      {
+        "w": "kerak",
+        "s": 96.26,
+        "e": 96.54
+      },
+      {
+        "w": "bo‘lsa,",
+        "s": 96.58,
+        "e": 96.88
+      },
+      {
+        "w": "uni",
+        "s": 97.06,
+        "e": 97.18
+      },
+      {
+        "w": "so‘rovda",
+        "s": 97.34,
+        "e": 97.71
+      },
+      {
+        "w": "aniq",
+        "s": 97.81,
+        "e": 97.99
+      },
+      {
+        "w": "so‘rash",
+        "s": 98.05,
+        "e": 98.29
+      },
+      {
+        "w": "kerak.",
+        "s": 98.31,
+        "e": 98.55
+      }
+    ]
+  },
+  {
+    "id": "L13",
+    "scene": "standart",
+    "text": "SQL — Structured Query Language, ya’ni tuzilmaviy so‘rovlar tili. Uni to‘g‘ridan-to‘g‘ri yozish, boshqa tildagi kod ichiga joylash yoki ORM kabi kutubxona orqali ishlatish mumkin.",
+    "show": "SQL — Structured Query Language, ya’ni tuzilmaviy so‘rovlar tili. Uni to‘g‘ridan-to‘g‘ri yozish, boshqa tildagi kod ichiga joylash yoki ORM kabi kutubxona orqali ishlatish mumkin.",
+    "say": "Es-kyu-el — Strakchrd Kveri Lengvij, ya’ni tuzilmaviy so‘rovlar tili. Uni to‘g‘ridan-to‘g‘ri yozish, boshqa tildagi kod ichiga joylash yoki O-er-em kabi kutubxona orqali ishlatish mumkin.",
+    "a0": 99.19,
+    "a1": 109.53,
+    "words": [
+      {
+        "w": "Es-kyu-el",
+        "s": 99.19,
+        "e": 99.61
+      },
+      {
+        "w": "—",
+        "s": 99.61,
+        "e": 99.61
+      },
+      {
+        "w": "Strakchrd",
+        "s": 99.91,
+        "e": 100.43
+      },
+      {
+        "w": "Kveri",
+        "s": 100.51,
+        "e": 100.79
+      },
+      {
+        "w": "Lengvij,",
+        "s": 100.89,
+        "e": 101.25
+      },
+      {
+        "w": "ya’ni",
+        "s": 101.51,
+        "e": 101.73
+      },
+      {
+        "w": "tuzilmaviy",
+        "s": 101.95,
+        "e": 102.45
+      },
+      {
+        "w": "so‘rovlar",
+        "s": 102.53,
+        "e": 102.95
+      },
+      {
+        "w": "tili.",
+        "s": 102.99,
+        "e": 103.15
+      },
+      {
+        "w": "Uni",
+        "s": 103.73,
+        "e": 103.85
+      },
+      {
+        "w": "to‘g‘ridan-to‘g‘ri",
+        "s": 103.89,
+        "e": 104.51
+      },
+      {
+        "w": "yozish,",
+        "s": 104.53,
+        "e": 104.97
+      },
+      {
+        "w": "boshqa",
+        "s": 105.17,
+        "e": 105.43
+      },
+      {
+        "w": "tildagi",
+        "s": 105.47,
+        "e": 105.79
+      },
+      {
+        "w": "kod",
+        "s": 105.87,
+        "e": 106.05
+      },
+      {
+        "w": "ichiga",
+        "s": 106.09,
+        "e": 106.31
+      },
+      {
+        "w": "joylash",
+        "s": 106.37,
+        "e": 106.77
+      },
+      {
+        "w": "yoki",
+        "s": 106.87,
+        "e": 107.09
+      },
+      {
+        "w": "O-er-em",
+        "s": 107.49,
+        "e": 107.81
+      },
+      {
+        "w": "kabi",
+        "s": 107.87,
+        "e": 108.07
+      },
+      {
+        "w": "kutubxona",
+        "s": 108.11,
+        "e": 108.47
+      },
+      {
+        "w": "orqali",
+        "s": 108.53,
+        "e": 108.81
+      },
+      {
+        "w": "ishlatish",
+        "s": 108.85,
+        "e": 109.17
+      },
+      {
+        "w": "mumkin.",
+        "s": 109.23,
+        "e": 109.53
+      }
+    ]
+  },
+  {
+    "id": "L14",
+    "scene": "standart",
+    "text": "Standartning rasmiy nomi — ISO/IEC 9075. SQL-92 versiyasida moslikning uchta darajasi bor edi. SQL 1999 versiyasidan boshlab darajalar o‘rniga xususiyatlar ro‘yxati keldi.",
+    "show": "Standartning rasmiy nomi — ISO/IEC 9075. SQL-92 versiyasida moslikning uchta darajasi bor edi. SQL 1999 versiyasidan boshlab darajalar o‘rniga xususiyatlar ro‘yxati keldi.",
+    "say": "Standartning rasmiy nomi — I-es-o, I-i-si to‘qqiz ming yetmish besh. Es-kyu-el to‘qson ikki versiyasida moslikning uchta darajasi bor edi. Es-kyu-el bir ming to‘qqiz yuz to‘qson to‘qqiz versiyasidan boshlab darajalar o‘rniga xususiyatlar ro‘yxati keldi.",
+    "a0": 110.09,
+    "a1": 123.94,
+    "words": [
+      {
+        "w": "Standartning",
+        "s": 110.09,
+        "e": 110.65
+      },
+      {
+        "w": "rasmiy",
+        "s": 110.69,
+        "e": 110.97
+      },
+      {
+        "w": "nomi",
+        "s": 111.01,
+        "e": 111.27
+      },
+      {
+        "w": "—",
+        "s": 111.27,
+        "e": 111.27
+      },
+      {
+        "w": "I-es-o,",
+        "s": 111.79,
+        "e": 112.17
+      },
+      {
+        "w": "I-i-si",
+        "s": 112.7,
+        "e": 113.1
+      },
+      {
+        "w": "to‘qqiz",
+        "s": 113.34,
+        "e": 113.7
+      },
+      {
+        "w": "ming",
+        "s": 113.74,
+        "e": 113.88
+      },
+      {
+        "w": "yetmish",
+        "s": 113.92,
+        "e": 114.22
+      },
+      {
+        "w": "besh.",
+        "s": 114.28,
+        "e": 114.46
+      },
+      {
+        "w": "Es-kyu-el",
+        "s": 115.22,
+        "e": 115.58
+      },
+      {
+        "w": "to‘qson",
+        "s": 115.62,
+        "e": 115.9
+      },
+      {
+        "w": "ikki",
+        "s": 115.94,
+        "e": 116.1
+      },
+      {
+        "w": "versiyasida",
+        "s": 116.14,
+        "e": 116.66
+      },
+      {
+        "w": "moslikning",
+        "s": 116.78,
+        "e": 117.28
+      },
+      {
+        "w": "uchta",
+        "s": 117.36,
+        "e": 117.56
+      },
+      {
+        "w": "darajasi",
+        "s": 117.62,
+        "e": 118.0
+      },
+      {
+        "w": "bor",
+        "s": 118.04,
+        "e": 118.18
+      },
+      {
+        "w": "edi.",
+        "s": 118.22,
+        "e": 118.36
+      },
+      {
+        "w": "Es-kyu-el",
+        "s": 118.86,
+        "e": 119.28
+      },
+      {
+        "w": "bir",
+        "s": 119.34,
+        "e": 119.42
+      },
+      {
+        "w": "ming",
+        "s": 119.46,
+        "e": 119.58
+      },
+      {
+        "w": "to‘qqiz",
+        "s": 119.6,
+        "e": 119.82
+      },
+      {
+        "w": "yuz",
+        "s": 119.82,
+        "e": 119.88
+      },
+      {
+        "w": "to‘qson",
+        "s": 119.88,
+        "e": 120.12
+      },
+      {
+        "w": "to‘qqiz",
+        "s": 120.14,
+        "e": 120.36
+      },
+      {
+        "w": "versiyasidan",
+        "s": 120.58,
+        "e": 121.1
+      },
+      {
+        "w": "boshlab",
+        "s": 121.16,
+        "e": 121.56
+      },
+      {
+        "w": "darajalar",
+        "s": 121.82,
+        "e": 122.26
+      },
+      {
+        "w": "o‘rniga",
+        "s": 122.3,
+        "e": 122.6
+      },
+      {
+        "w": "xususiyatlar",
+        "s": 122.76,
+        "e": 123.34
+      },
+      {
+        "w": "ro‘yxati",
+        "s": 123.36,
+        "e": 123.68
+      },
+      {
+        "w": "keldi.",
+        "s": 123.7,
+        "e": 123.94
+      }
+    ]
+  },
+  {
+    "id": "L15",
+    "scene": "standart",
+    "text": "Eng so‘nggi versiya — SQL 2023. Har yangi versiya oldingisini almashtiradi.",
+    "show": "Eng so‘nggi versiya — SQL 2023. Har yangi versiya oldingisini almashtiradi.",
+    "say": "Eng so‘nggi versiya — es-kyu-el ikki ming yigirma uch. Har yangi versiya oldingisini almashtiradi.",
+    "a0": 124.86,
+    "a1": 129.47,
+    "words": [
+      {
+        "w": "Eng",
+        "s": 124.86,
+        "e": 124.96
+      },
+      {
+        "w": "so‘nggi",
+        "s": 125.0,
+        "e": 125.26
+      },
+      {
+        "w": "versiya",
+        "s": 125.3,
+        "e": 125.62
+      },
+      {
+        "w": "—",
+        "s": 125.62,
+        "e": 125.62
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 125.8,
+        "e": 126.2
+      },
+      {
+        "w": "ikki",
+        "s": 126.3,
+        "e": 126.46
+      },
+      {
+        "w": "ming",
+        "s": 126.5,
+        "e": 126.6
+      },
+      {
+        "w": "yigirma",
+        "s": 126.6,
+        "e": 126.86
+      },
+      {
+        "w": "uch.",
+        "s": 126.92,
+        "e": 127.04
+      },
+      {
+        "w": "Har",
+        "s": 127.65,
+        "e": 127.81
+      },
+      {
+        "w": "yangi",
+        "s": 127.85,
+        "e": 128.09
+      },
+      {
+        "w": "versiya",
+        "s": 128.11,
+        "e": 128.41
+      },
+      {
+        "w": "oldingisini",
+        "s": 128.55,
+        "e": 128.95
+      },
+      {
+        "w": "almashtiradi.",
+        "s": 128.97,
+        "e": 129.47
+      }
+    ]
+  },
+  {
+    "id": "L16",
+    "scene": "standart",
+    "text": "Xususiyatlarning bir qismi Core, ya’ni majburiy. PostgreSQL 18 SQL 2023 versiyasidagi 177 ta Core xususiyatdan kamida 170 tasini bajaradi. Hujjatga ko‘ra, hech bir tizim Core’ga to‘liq moslikni da’vo qilmaydi.",
+    "show": "Xususiyatlarning bir qismi Core, ya’ni majburiy. PostgreSQL 18 SQL 2023 versiyasidagi 177 ta Core xususiyatdan kamida 170 tasini bajaradi. Hujjatga ko‘ra, hech bir tizim Core’ga to‘liq moslikni da’vo qilmaydi.",
+    "say": "Xususiyatlarning bir qismi Kor, ya’ni majburiy. Postgres o‘n sakkiz es-kyu-el ikki ming yigirma uch versiyasidagi bir yuz yetmish yetti ta Kor xususiyatdan kamida bir yuz yetmish tasini bajaradi. Hujjatga ko‘ra, hech bir tizim Korga to‘liq moslikni da’vo qilmaydi.",
+    "a0": 130.13,
+    "a1": 143.88,
+    "words": [
+      {
+        "w": "Xususiyatlarning",
+        "s": 130.13,
+        "e": 130.77
+      },
+      {
+        "w": "bir",
+        "s": 130.79,
+        "e": 130.87
+      },
+      {
+        "w": "qismi",
+        "s": 130.91,
+        "e": 131.13
+      },
+      {
+        "w": "Kor,",
+        "s": 131.21,
+        "e": 131.49
+      },
+      {
+        "w": "ya’ni",
+        "s": 131.65,
+        "e": 131.87
+      },
+      {
+        "w": "majburiy.",
+        "s": 132.03,
+        "e": 132.47
+      },
+      {
+        "w": "Postgres",
+        "s": 133.21,
+        "e": 133.59
+      },
+      {
+        "w": "o‘n",
+        "s": 133.65,
+        "e": 133.71
+      },
+      {
+        "w": "sakkiz",
+        "s": 133.75,
+        "e": 134.13
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 134.35,
+        "e": 134.69
+      },
+      {
+        "w": "ikki",
+        "s": 134.77,
+        "e": 134.91
+      },
+      {
+        "w": "ming",
+        "s": 134.95,
+        "e": 135.05
+      },
+      {
+        "w": "yigirma",
+        "s": 135.05,
+        "e": 135.27
+      },
+      {
+        "w": "uch",
+        "s": 135.31,
+        "e": 135.41
+      },
+      {
+        "w": "versiyasidagi",
+        "s": 135.45,
+        "e": 136.07
+      },
+      {
+        "w": "bir",
+        "s": 136.13,
+        "e": 136.21
+      },
+      {
+        "w": "yuz",
+        "s": 136.27,
+        "e": 136.37
+      },
+      {
+        "w": "yetmish",
+        "s": 136.43,
+        "e": 136.75
+      },
+      {
+        "w": "yetti",
+        "s": 136.81,
+        "e": 136.99
+      },
+      {
+        "w": "ta",
+        "s": 137.03,
+        "e": 137.11
+      },
+      {
+        "w": "Kor",
+        "s": 137.19,
+        "e": 137.35
+      },
+      {
+        "w": "xususiyatdan",
+        "s": 137.39,
+        "e": 137.97
+      },
+      {
+        "w": "kamida",
+        "s": 138.05,
+        "e": 138.37
+      },
+      {
+        "w": "bir",
+        "s": 138.43,
+        "e": 138.51
+      },
+      {
+        "w": "yuz",
+        "s": 138.53,
+        "e": 138.63
+      },
+      {
+        "w": "yetmish",
+        "s": 138.67,
+        "e": 138.93
+      },
+      {
+        "w": "tasini",
+        "s": 138.95,
+        "e": 139.21
+      },
+      {
+        "w": "bajaradi.",
+        "s": 139.25,
+        "e": 139.63
+      },
+      {
+        "w": "Hujjatga",
+        "s": 140.63,
+        "e": 140.97
+      },
+      {
+        "w": "ko‘ra,",
+        "s": 141.03,
+        "e": 141.25
+      },
+      {
+        "w": "hech",
+        "s": 141.41,
+        "e": 141.61
+      },
+      {
+        "w": "bir",
+        "s": 141.65,
+        "e": 141.77
+      },
+      {
+        "w": "tizim",
+        "s": 141.83,
+        "e": 142.05
+      },
+      {
+        "w": "Korga",
+        "s": 142.13,
+        "e": 142.37
+      },
+      {
+        "w": "to‘liq",
+        "s": 142.43,
+        "e": 142.68
+      },
+      {
+        "w": "moslikni",
+        "s": 142.72,
+        "e": 143.1
+      },
+      {
+        "w": "da’vo",
+        "s": 143.14,
+        "e": 143.36
+      },
+      {
+        "w": "qilmaydi.",
+        "s": 143.46,
+        "e": 143.88
+      }
+    ]
+  },
+  {
+    "id": "L17",
+    "scene": "standart",
+    "text": "Standart bir nechta qismdan iborat. Bu qo‘llanma deyarli butunlay ikkinchi qism — Foundation haqida: jadvallar, so‘rovlar va tiplar.",
+    "show": "Standart bir nechta qismdan iborat. Bu qo‘llanma deyarli butunlay ikkinchi qism — Foundation haqida: jadvallar, so‘rovlar va tiplar.",
+    "say": "Standart bir nechta qismdan iborat. Bu qo‘llanma deyarli butunlay ikkinchi qism — Faundeyshn haqida: jadvallar, so‘rovlar va tiplar.",
+    "a0": 144.66,
+    "a1": 151.66,
+    "words": [
+      {
+        "w": "Standart",
+        "s": 144.66,
+        "e": 145.02
+      },
+      {
+        "w": "bir",
+        "s": 145.06,
+        "e": 145.14
+      },
+      {
+        "w": "nechta",
+        "s": 145.18,
+        "e": 145.38
+      },
+      {
+        "w": "qismdan",
+        "s": 145.42,
+        "e": 145.8
+      },
+      {
+        "w": "iborat.",
+        "s": 145.82,
+        "e": 146.16
+      },
+      {
+        "w": "Bu",
+        "s": 146.46,
+        "e": 146.54
+      },
+      {
+        "w": "qo‘llanma",
+        "s": 146.6,
+        "e": 147.0
+      },
+      {
+        "w": "deyarli",
+        "s": 147.08,
+        "e": 147.4
+      },
+      {
+        "w": "butunlay",
+        "s": 147.46,
+        "e": 147.88
+      },
+      {
+        "w": "ikkinchi",
+        "s": 148.0,
+        "e": 148.36
+      },
+      {
+        "w": "qism",
+        "s": 148.38,
+        "e": 148.6
+      },
+      {
+        "w": "—",
+        "s": 148.6,
+        "e": 148.6
+      },
+      {
+        "w": "Faundeyshn",
+        "s": 148.84,
+        "e": 149.38
+      },
+      {
+        "w": "haqida:",
+        "s": 149.42,
+        "e": 149.66
+      },
+      {
+        "w": "jadvallar,",
+        "s": 150.04,
+        "e": 150.56
+      },
+      {
+        "w": "so‘rovlar",
+        "s": 150.7,
+        "e": 151.16
+      },
+      {
+        "w": "va",
+        "s": 151.22,
+        "e": 151.28
+      },
+      {
+        "w": "tiplar.",
+        "s": 151.34,
+        "e": 151.66
+      }
+    ]
+  },
+  {
+    "id": "L18",
+    "scene": "dialekt",
+    "text": "Standart bor, lekin ikkita SQL tizimi aynan bir xil ishlamaydi. Standartdan farq qiladigan qism dialekt deyiladi.",
+    "show": "Standart bor, lekin ikkita SQL tizimi aynan bir xil ishlamaydi. Standartdan farq qiladigan qism dialekt deyiladi.",
+    "say": "Standart bor, lekin ikkita es-kyu-el tizimi aynan bir xil ishlamaydi. Standartdan farq qiladigan qism dialekt deyiladi.",
+    "a0": 152.54,
+    "a1": 158.61,
+    "words": [
+      {
+        "w": "Standart",
+        "s": 152.54,
+        "e": 152.92
+      },
+      {
+        "w": "bor,",
+        "s": 152.98,
+        "e": 153.16
+      },
+      {
+        "w": "lekin",
+        "s": 153.48,
+        "e": 153.72
+      },
+      {
+        "w": "ikkita",
+        "s": 153.8,
+        "e": 154.0
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 154.06,
+        "e": 154.38
+      },
+      {
+        "w": "tizimi",
+        "s": 154.4,
+        "e": 154.68
+      },
+      {
+        "w": "aynan",
+        "s": 154.8,
+        "e": 155.04
+      },
+      {
+        "w": "bir",
+        "s": 155.12,
+        "e": 155.24
+      },
+      {
+        "w": "xil",
+        "s": 155.28,
+        "e": 155.4
+      },
+      {
+        "w": "ishlamaydi.",
+        "s": 155.44,
+        "e": 155.86
+      },
+      {
+        "w": "Standartdan",
+        "s": 156.5,
+        "e": 157.0
+      },
+      {
+        "w": "farq",
+        "s": 157.02,
+        "e": 157.2
+      },
+      {
+        "w": "qiladigan",
+        "s": 157.22,
+        "e": 157.61
+      },
+      {
+        "w": "qism",
+        "s": 157.63,
+        "e": 157.81
+      },
+      {
+        "w": "dialekt",
+        "s": 157.87,
+        "e": 158.23
+      },
+      {
+        "w": "deyiladi.",
+        "s": 158.25,
+        "e": 158.61
+      }
+    ]
+  },
+  {
+    "id": "L19",
+    "scene": "dialekt",
+    "text": "Dialekt ikki xil bo‘ladi. Kengaytma — standartda yo‘q, lekin tizim qo‘shgan imkoniyat. Farq — standartdagi narsa tizimda boshqacha ishlaydi.",
+    "show": "Dialekt ikki xil bo‘ladi. Kengaytma — standartda yo‘q, lekin tizim qo‘shgan imkoniyat. Farq — standartdagi narsa tizimda boshqacha ishlaydi.",
+    "say": "Dialekt ikki xil bo‘ladi. Kengaytma — standartda yo‘q, lekin tizim qo‘shgan imkoniyat. Farq — standartdagi narsa tizimda boshqacha ishlaydi.",
+    "a0": 159.47,
+    "a1": 167.79,
+    "words": [
+      {
+        "w": "Dialekt",
+        "s": 159.47,
+        "e": 159.83
+      },
+      {
+        "w": "ikki",
+        "s": 159.89,
+        "e": 160.05
+      },
+      {
+        "w": "xil",
+        "s": 160.07,
+        "e": 160.19
+      },
+      {
+        "w": "bo‘ladi.",
+        "s": 160.23,
+        "e": 160.49
+      },
+      {
+        "w": "Kengaytma",
+        "s": 161.39,
+        "e": 161.85
+      },
+      {
+        "w": "—",
+        "s": 161.85,
+        "e": 161.85
+      },
+      {
+        "w": "standartda",
+        "s": 162.29,
+        "e": 162.75
+      },
+      {
+        "w": "yo‘q,",
+        "s": 162.83,
+        "e": 162.99
+      },
+      {
+        "w": "lekin",
+        "s": 163.03,
+        "e": 163.25
+      },
+      {
+        "w": "tizim",
+        "s": 163.31,
+        "e": 163.53
+      },
+      {
+        "w": "qo‘shgan",
+        "s": 163.59,
+        "e": 163.87
+      },
+      {
+        "w": "imkoniyat.",
+        "s": 163.91,
+        "e": 164.37
+      },
+      {
+        "w": "Farq",
+        "s": 165.11,
+        "e": 165.37
+      },
+      {
+        "w": "—",
+        "s": 165.37,
+        "e": 165.37
+      },
+      {
+        "w": "standartdagi",
+        "s": 165.87,
+        "e": 166.37
+      },
+      {
+        "w": "narsa",
+        "s": 166.39,
+        "e": 166.61
+      },
+      {
+        "w": "tizimda",
+        "s": 166.67,
+        "e": 166.99
+      },
+      {
+        "w": "boshqacha",
+        "s": 167.05,
+        "e": 167.41
+      },
+      {
+        "w": "ishlaydi.",
+        "s": 167.45,
+        "e": 167.79
+      }
+    ]
+  },
+  {
+    "id": "L20",
+    "scene": "tizimlar",
+    "text": "PostgreSQL o‘zini obyekt-relyatsion tizim deb ataydi va standartga moslikka intiladi. MySQL ham intiladi, lekin tezlik va ishonchlilikni qurbon qilmasdan; uning kengaytmalari ko‘p.",
+    "show": "PostgreSQL o‘zini obyekt-relyatsion tizim deb ataydi va standartga moslikka intiladi. MySQL ham intiladi, lekin tezlik va ishonchlilikni qurbon qilmasdan; uning kengaytmalari ko‘p.",
+    "say": "Postgres o‘zini obyekt-relyatsion tizim deb ataydi va standartga moslikka intiladi. May es-kyu-el ham intiladi, lekin tezlik va ishonchlilikni qurbon qilmasdan; uning kengaytmalari ko‘p.",
+    "a0": 168.89,
+    "a1": 178.06,
+    "words": [
+      {
+        "w": "Postgres",
+        "s": 168.89,
+        "e": 169.29
+      },
+      {
+        "w": "o‘zini",
+        "s": 169.37,
+        "e": 169.61
+      },
+      {
+        "w": "obyekt-relyatsion",
+        "s": 169.73,
+        "e": 170.55
+      },
+      {
+        "w": "tizim",
+        "s": 170.59,
+        "e": 170.81
+      },
+      {
+        "w": "deb",
+        "s": 170.83,
+        "e": 170.95
+      },
+      {
+        "w": "ataydi",
+        "s": 170.97,
+        "e": 171.25
+      },
+      {
+        "w": "va",
+        "s": 171.29,
+        "e": 171.35
+      },
+      {
+        "w": "standartga",
+        "s": 171.47,
+        "e": 171.93
+      },
+      {
+        "w": "moslikka",
+        "s": 171.97,
+        "e": 172.37
+      },
+      {
+        "w": "intiladi.",
+        "s": 172.43,
+        "e": 172.82
+      },
+      {
+        "w": "May",
+        "s": 173.56,
+        "e": 173.72
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 173.78,
+        "e": 174.08
+      },
+      {
+        "w": "ham",
+        "s": 174.1,
+        "e": 174.22
+      },
+      {
+        "w": "intiladi,",
+        "s": 174.26,
+        "e": 174.6
+      },
+      {
+        "w": "lekin",
+        "s": 174.66,
+        "e": 174.92
+      },
+      {
+        "w": "tezlik",
+        "s": 175.02,
+        "e": 175.4
+      },
+      {
+        "w": "va",
+        "s": 175.46,
+        "e": 175.5
+      },
+      {
+        "w": "ishonchlilikni",
+        "s": 175.56,
+        "e": 176.1
+      },
+      {
+        "w": "qurbon",
+        "s": 176.14,
+        "e": 176.4
+      },
+      {
+        "w": "qilmasdan;",
+        "s": 176.4,
+        "e": 177.08
+      },
+      {
+        "w": "uning",
+        "s": 177.08,
+        "e": 177.28
+      },
+      {
+        "w": "kengaytmalari",
+        "s": 177.32,
+        "e": 177.9
+      },
+      {
+        "w": "ko‘p.",
+        "s": 177.92,
+        "e": 178.06
+      }
+    ]
+  },
+  {
+    "id": "L21",
+    "scene": "tizimlar",
+    "text": "SQLite esa serversiz: u ilova ichida kutubxona sifatida ishlaydi. Uning farqlari alohida Quirks sahifasida yozilgan.",
+    "show": "SQLite esa serversiz: u ilova ichida kutubxona sifatida ishlaydi. Uning farqlari alohida Quirks sahifasida yozilgan.",
+    "say": "Es-kyu-layt esa serversiz: u ilova ichida kutubxona sifatida ishlaydi. Uning farqlari alohida Kvirks sahifasida yozilgan.",
+    "a0": 179.12,
+    "a1": 185.39,
+    "words": [
+      {
+        "w": "Es-kyu-layt",
+        "s": 179.12,
+        "e": 179.6
+      },
+      {
+        "w": "esa",
+        "s": 179.64,
+        "e": 179.82
+      },
+      {
+        "w": "serversiz:",
+        "s": 180.02,
+        "e": 180.56
+      },
+      {
+        "w": "u",
+        "s": 180.88,
+        "e": 180.9
+      },
+      {
+        "w": "ilova",
+        "s": 181.04,
+        "e": 181.3
+      },
+      {
+        "w": "ichida",
+        "s": 181.32,
+        "e": 181.54
+      },
+      {
+        "w": "kutubxona",
+        "s": 181.58,
+        "e": 181.94
+      },
+      {
+        "w": "sifatida",
+        "s": 182.0,
+        "e": 182.3
+      },
+      {
+        "w": "ishlaydi.",
+        "s": 182.34,
+        "e": 182.66
+      },
+      {
+        "w": "Uning",
+        "s": 183.04,
+        "e": 183.22
+      },
+      {
+        "w": "farqlari",
+        "s": 183.24,
+        "e": 183.62
+      },
+      {
+        "w": "alohida",
+        "s": 183.69,
+        "e": 184.03
+      },
+      {
+        "w": "Kvirks",
+        "s": 184.15,
+        "e": 184.47
+      },
+      {
+        "w": "sahifasida",
+        "s": 184.49,
+        "e": 184.99
+      },
+      {
+        "w": "yozilgan.",
+        "s": 185.03,
+        "e": 185.39
+      }
+    ]
+  },
+  {
+    "id": "L22",
+    "scene": "xulosa",
+    "text": "Shuning uchun har bobda ikki savolga javob beramiz: standart nima deydi va har bir tizim aslida nima qiladi. Keyingi videoda bularni terminalda ko‘ramiz.",
+    "show": "Shuning uchun har bobda ikki savolga javob beramiz: standart nima deydi va har bir tizim aslida nima qiladi. Keyingi videoda bularni terminalda ko‘ramiz.",
+    "say": "Shuning uchun har bobda ikki savolga javob beramiz: standart nima deydi va har bir tizim aslida nima qiladi. Keyingi videoda bularni terminalda ko‘ramiz.",
+    "a0": 186.39,
+    "a1": 194.36,
+    "words": [
+      {
+        "w": "Shuning",
+        "s": 186.39,
+        "e": 186.59
+      },
+      {
+        "w": "uchun",
+        "s": 186.61,
+        "e": 186.81
+      },
+      {
+        "w": "har",
+        "s": 186.91,
+        "e": 187.07
+      },
+      {
+        "w": "bobda",
+        "s": 187.11,
+        "e": 187.35
+      },
+      {
+        "w": "ikki",
+        "s": 187.43,
+        "e": 187.57
+      },
+      {
+        "w": "savolga",
+        "s": 187.57,
+        "e": 187.89
+      },
+      {
+        "w": "javob",
+        "s": 187.93,
+        "e": 188.13
+      },
+      {
+        "w": "beramiz:",
+        "s": 188.15,
+        "e": 188.49
+      },
+      {
+        "w": "standart",
+        "s": 188.87,
+        "e": 189.29
+      },
+      {
+        "w": "nima",
+        "s": 189.33,
+        "e": 189.49
+      },
+      {
+        "w": "deydi",
+        "s": 189.53,
+        "e": 189.77
+      },
+      {
+        "w": "va",
+        "s": 189.99,
+        "e": 190.07
+      },
+      {
+        "w": "har",
+        "s": 190.17,
+        "e": 190.35
+      },
+      {
+        "w": "bir",
+        "s": 190.41,
+        "e": 190.51
+      },
+      {
+        "w": "tizim",
+        "s": 190.55,
+        "e": 190.79
+      },
+      {
+        "w": "aslida",
+        "s": 190.89,
+        "e": 191.24
+      },
+      {
+        "w": "nima",
+        "s": 191.3,
+        "e": 191.46
+      },
+      {
+        "w": "qiladi.",
+        "s": 191.54,
+        "e": 191.8
+      },
+      {
+        "w": "Keyingi",
+        "s": 192.48,
+        "e": 192.74
+      },
+      {
+        "w": "videoda",
+        "s": 192.78,
+        "e": 193.1
+      },
+      {
+        "w": "bularni",
+        "s": 193.14,
+        "e": 193.46
+      },
+      {
+        "w": "terminalda",
+        "s": 193.52,
+        "e": 193.98
+      },
+      {
+        "w": "ko‘ramiz.",
+        "s": 194.02,
+        "e": 194.36
+      }
+    ]
+  }
+]
