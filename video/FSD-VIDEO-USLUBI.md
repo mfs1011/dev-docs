@@ -6,6 +6,12 @@ Git va SQL uslublari boshqa ([GIT-VIDEO-USLUBI.md](GIT-VIDEO-USLUBI.md), [SQL-VI
 Yangi FSD videosi: `cp -R fsd-umumiy fsd-<mavzu>`, keyin `narration.js`, `anim.js` dagi sahnalar va `cues.js` ni almashtiring.
 `sync.js`, `voice.mjs`, `build-timing.mjs`, `music.mjs`, `mix.sh`, `render.mjs`, `stills.mjs`, `poster.mjs` o'zgarmasdan ishlaydi.
 
+**Bob videosi** (bitta bob — bitta video, bobning "Qisqacha" bo'limi boshida): namuna `fsd-01/` ("FSD nima va qachon kerak", 3:54), shu papkadan nusxa oling.
+Unda `narration.js` sahna nomlari (`sceneNames`) va gapdan keyingi pauzani (`hold`) ham beradi — `build-timing.mjs` shulardan o'qiydi;
+`music.mjs` dagi `tStart`/`tPerc`/`tOutro` gap id'lari yangi matnga moslanadi. Bob jadvallari (kimga mos, afzalliklar, tipik xatolar) o'ng panelda
+kartalar bo'lib chiqadi, bino chapda qoladi (`SIDE` kamerasi). Qavat ichidagi xona yoki eshik ko'rsatilsa, yuqori qavatlar portlatilgan ko'rinishda ko'tariladi,
+aks holda ular xonani yopib qo'yadi. Ishlatilmaydigan qavat — punktir (`ghost`).
+
 ## 1. Asosiy g'oya
 
 | Tamoyil | Nimani anglatadi |

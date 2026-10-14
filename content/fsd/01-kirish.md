@@ -4,6 +4,14 @@
 
 ## Qisqacha
 
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/fsd/01-fsd-nima.jpg" src="/video/fsd/01-fsd-nima.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/fsd/01-fsd-nima.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/fsd/01-fsd-nima.uz.vtt">
+</video>
+<figcaption>Bob videoda: FSD javob beradigan uch savol, uch daraja (qavat, xona, kub), kimga mos, nima beradi, qachon kerak va tipik xatolar. Linter natijasi — haqiqiy Steiger 0.7.0 dan.</figcaption>
+</figure>
+
 **Feature-Sliced Design (FSD)** — frontend ilovada kodni tartiblash uchun qoidalar va kelishuvlar to'plami. U uchta savolga qat'iy javob beradi: **fayl qaysi papkaga boradi**, **kim kimni import qila oladi** va **modulning tashqi interfeysi qayerda**. Natija — har bir FSD loyiha bir-biriga o'xshaydi: yangi dasturchi tuzilmani birinchi kundan taniydi.
 
 FSD framework'ga bog'liq emas: React, Vue, Angular, Svelte, Next.js, Nuxt — qoidalar bir xil. U faqat **ilova** uchun (kutubxona uchun emas) va faqat **frontend** uchun mo'ljallangan.

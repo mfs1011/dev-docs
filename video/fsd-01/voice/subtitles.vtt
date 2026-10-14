@@ -1,0 +1,123 @@
+WEBVTT
+
+1
+00:01.420 --> 00:10.080
+Salom! Bu FSD qo‘llanmasining birinchi bobi. FSD nima,
+u nima beradi va qachon kerakligini ko‘rib chiqamiz.
+
+2
+00:12.550 --> 00:23.340
+Feature-Sliced Design, qisqasi FSD — frontend ilovalar uchun arxitektura metodologiyasi.
+Oddiy qilib aytganda, kodni tartiblash qoidalari va kelishuvlari to‘plami.
+
+3
+00:23.990 --> 00:29.310
+U uchta savolga aniq javob beradi.
+Birinchisi: fayl qaysi papkaga boradi?
+
+4
+00:30.240 --> 00:33.750
+Ikkinchisi: qaysi kod qaysi kodni import qila oladi?
+
+5
+00:34.720 --> 00:38.090
+Uchinchisi: modulning tashqi interfeysi qayerda?
+
+6
+00:39.500 --> 00:45.840
+Shuning uchun FSD loyihalari bir-biriga o‘xshaydi.
+Yangi dasturchi tuzilmani birinchi kundanoq taniydi.
+
+7
+00:49.190 --> 00:57.420
+Kod uch darajaga bo‘linadi. Birinchisi — qatlam. U bino
+qavatiga o‘xshaydi va kod qanchalik umumiyligini bildiradi.
+
+8
+00:58.790 --> 01:07.330
+Qavat ichida xonalar bor. Ularni slice deyiladi va biznes
+sohasi bo‘yicha ajratiladi: masalan, product yoki cart.
+
+9
+01:08.640 --> 01:16.250
+Xona ichida esa segmentlar: ui, api, model
+kabi. Ular kodning texnik vazifasini bildiradi.
+
+10
+01:19.850 --> 01:29.540
+FSD kimga mos? U frontend uchun: veb, mobil yoki desktop
+interfeysi. Va kutubxona uchun emas, aynan ilova uchun.
+
+11
+01:29.910 --> 01:38.810
+Dasturlash tili, framework yoki holat menejeri bo‘yicha
+cheklov yo‘q. React, Vue, Angular — qoidalar bir xil.
+
+12
+01:40.300 --> 01:45.550
+Rasmiy hujjatga ko‘ra, FSD istalgan hajmdagi
+loyiha va jamoada ishlatilishi mumkin.
+
+13
+01:48.600 --> 01:56.540
+FSD nima beradi? Birinchisi — bir xillik. Tuzilma
+standart, shuning uchun yangi odam jamoaga tez moslashadi.
+
+14
+01:57.690 --> 02:09.550
+Ikkinchisi — o‘zgarishlarga barqarorlik. Modul o‘z qatlamidagi yoki yuqoridagi modullarni
+ishlata olmaydi. Shuning uchun bir joyni o‘zgartirsangiz, kutilmagan joy buzilmaydi.
+
+15
+02:11.240 --> 02:18.610
+Uchinchisi — boshqariladigan qayta ishlatish. Qatlamga
+qarab kod juda umumiy yoki juda lokal bo‘ladi.
+
+16
+02:20.040 --> 02:27.540
+Bundan tashqari, FSD’ning arxitekturani tekshiradigan
+linteri, papka generatorlari va ko‘plab misollari bor.
+
+17
+02:30.510 --> 02:39.460
+Lekin FSD har doim ham shart emas. Rasmiy hujjat aytadi: hozirgi
+arxitektura ishlayotgan bo‘lsa, uni o‘zgartirishga arzimasligi mumkin.
+
+18
+02:40.650 --> 02:48.210
+Hamma qatlamlarni ishlatish ham shart emas. Ko‘pchilik
+loyihalarda kamida uchtasi bo‘ladi: shared, pages va app.
+
+19
+02:49.540 --> 02:53.610
+FSD’ni bosqichma-bosqich, qismlab joriy qilish ham mumkin.
+
+20
+02:56.000 --> 03:04.440
+Endi tipik xatolar. Birinchisi: birinchi kunning o‘zida hamma
+qatlamlarni va bo‘sh papkalarni yaratish. Uchta qatlamdan boshlang.
+
+21
+03:05.550 --> 03:15.140
+Ikkinchisi: modules yoki core kabi o‘z qatlamingizni qo‘shish. Qatlamlarning
+ma’nosi standart, shuning uchun yangi qatlam qo‘shish tavsiya etilmaydi.
+
+22
+03:16.510 --> 03:25.050
+Uchinchisi: FSD’ni faqat papka nomlari deb tushunish. Asosiysi
+— import qoidalari, ularni Steiger linteri tekshiradi.
+
+23
+03:25.680 --> 03:30.950
+Mana, haqiqiy natija: papkalar to‘g‘ri,
+lekin Steiger uchta xato topdi.
+
+24
+03:34.340 --> 03:45.340
+Xulosa qilsak: FSD kodni qavat, xona va segmentga ajratadi, importni esa faqat
+pastga yo‘naltiradi. Uni kerak bo‘lganda va bosqichma-bosqich joriy qiling.
+
+25
+03:46.320 --> 03:51.450
+Keyingi bobda sahifadan boshlash g‘oyasini
+ko‘ramiz. E’tiboringiz uchun rahmat!

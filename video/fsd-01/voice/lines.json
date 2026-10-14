@@ -1,0 +1,2037 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Salom! Bu FSD qo‘llanmasining birinchi bobi. FSD nima, u nima beradi va qachon kerakligini ko‘rib chiqamiz.",
+    "show": "Salom! Bu FSD qo‘llanmasining birinchi bobi. FSD nima, u nima beradi va qachon kerakligini ko‘rib chiqamiz.",
+    "say": "Salom! Bu Ef-es-di qo‘llanmasining birinchi bobi. Ef-es-di nima, u nima beradi va qachon kerakligini ko‘rib chiqamiz.",
+    "a0": 0.32,
+    "a1": 8.53,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.32,
+        "e": 0.64
+      },
+      {
+        "w": "Bu",
+        "s": 1.24,
+        "e": 1.32
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 1.7,
+        "e": 2.16
+      },
+      {
+        "w": "qo‘llanmasining",
+        "s": 2.3,
+        "e": 3.06
+      },
+      {
+        "w": "birinchi",
+        "s": 3.12,
+        "e": 3.48
+      },
+      {
+        "w": "bobi.",
+        "s": 3.52,
+        "e": 3.76
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 4.6,
+        "e": 4.96
+      },
+      {
+        "w": "nima,",
+        "s": 5.04,
+        "e": 5.28
+      },
+      {
+        "w": "u",
+        "s": 5.8,
+        "e": 5.82
+      },
+      {
+        "w": "nima",
+        "s": 5.94,
+        "e": 6.14
+      },
+      {
+        "w": "beradi",
+        "s": 6.2,
+        "e": 6.56
+      },
+      {
+        "w": "va",
+        "s": 6.68,
+        "e": 6.76
+      },
+      {
+        "w": "qachon",
+        "s": 6.92,
+        "e": 7.24
+      },
+      {
+        "w": "kerakligini",
+        "s": 7.3,
+        "e": 7.85
+      },
+      {
+        "w": "ko‘rib",
+        "s": 7.89,
+        "e": 8.11
+      },
+      {
+        "w": "chiqamiz.",
+        "s": 8.13,
+        "e": 8.53
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "savollar",
+    "text": "Feature-Sliced Design, qisqasi FSD — frontend ilovalar uchun arxitektura metodologiyasi. Oddiy qilib aytganda, kodni tartiblash qoidalari va kelishuvlari to‘plami.",
+    "show": "Feature-Sliced Design, qisqasi FSD — frontend ilovalar uchun arxitektura metodologiyasi. Oddiy qilib aytganda, kodni tartiblash qoidalari va kelishuvlari to‘plami.",
+    "say": "Ficher-Slayst Dizayn, qisqasi Ef-es-di — frontend ilovalar uchun arxitektura metodologiyasi. Oddiy qilib aytganda, kodni tartiblash qoidalari va kelishuvlari to‘plami.",
+    "a0": 9.85,
+    "a1": 20.19,
+    "words": [
+      {
+        "w": "Ficher-Slayst",
+        "s": 9.85,
+        "e": 10.49
+      },
+      {
+        "w": "Dizayn,",
+        "s": 10.51,
+        "e": 10.97
+      },
+      {
+        "w": "qisqasi",
+        "s": 11.11,
+        "e": 11.59
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 11.75,
+        "e": 12.21
+      },
+      {
+        "w": "—",
+        "s": 12.21,
+        "e": 12.21
+      },
+      {
+        "w": "frontend",
+        "s": 12.53,
+        "e": 13.03
+      },
+      {
+        "w": "ilovalar",
+        "s": 13.11,
+        "e": 13.53
+      },
+      {
+        "w": "uchun",
+        "s": 13.59,
+        "e": 13.77
+      },
+      {
+        "w": "arxitektura",
+        "s": 13.89,
+        "e": 14.57
+      },
+      {
+        "w": "metodologiyasi.",
+        "s": 14.61,
+        "e": 15.45
+      },
+      {
+        "w": "Oddiy",
+        "s": 16.15,
+        "e": 16.37
+      },
+      {
+        "w": "qilib",
+        "s": 16.43,
+        "e": 16.61
+      },
+      {
+        "w": "aytganda,",
+        "s": 16.65,
+        "e": 17.07
+      },
+      {
+        "w": "kodni",
+        "s": 17.43,
+        "e": 17.77
+      },
+      {
+        "w": "tartiblash",
+        "s": 17.83,
+        "e": 18.37
+      },
+      {
+        "w": "qoidalari",
+        "s": 18.43,
+        "e": 18.95
+      },
+      {
+        "w": "va",
+        "s": 19.03,
+        "e": 19.09
+      },
+      {
+        "w": "kelishuvlari",
+        "s": 19.19,
+        "e": 19.77
+      },
+      {
+        "w": "to‘plami.",
+        "s": 19.81,
+        "e": 20.19
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "savollar",
+    "text": "U uchta savolga aniq javob beradi. Birinchisi: fayl qaysi papkaga boradi?",
+    "show": "U uchta savolga aniq javob beradi. Birinchisi: fayl qaysi papkaga boradi?",
+    "say": "U uchta savolga aniq javob beradi. Birinchisi: fayl qaysi papkaga boradi?",
+    "a0": 21.29,
+    "a1": 26.16,
+    "words": [
+      {
+        "w": "U",
+        "s": 21.29,
+        "e": 21.31
+      },
+      {
+        "w": "uchta",
+        "s": 21.47,
+        "e": 21.75
+      },
+      {
+        "w": "savolga",
+        "s": 21.81,
+        "e": 22.19
+      },
+      {
+        "w": "aniq",
+        "s": 22.33,
+        "e": 22.54
+      },
+      {
+        "w": "javob",
+        "s": 22.62,
+        "e": 22.88
+      },
+      {
+        "w": "beradi.",
+        "s": 22.92,
+        "e": 23.24
+      },
+      {
+        "w": "Birinchisi:",
+        "s": 23.8,
+        "e": 24.26
+      },
+      {
+        "w": "fayl",
+        "s": 24.66,
+        "e": 24.94
+      },
+      {
+        "w": "qaysi",
+        "s": 25.04,
+        "e": 25.36
+      },
+      {
+        "w": "papkaga",
+        "s": 25.4,
+        "e": 25.8
+      },
+      {
+        "w": "boradi?",
+        "s": 25.84,
+        "e": 26.16
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "savollar",
+    "text": "Ikkinchisi: qaysi kod qaysi kodni import qila oladi?",
+    "show": "Ikkinchisi: qaysi kod qaysi kodni import qila oladi?",
+    "say": "Ikkinchisi: qaysi kod qaysi kodni import qila oladi?",
+    "a0": 26.94,
+    "a1": 30.0,
+    "words": [
+      {
+        "w": "Ikkinchisi:",
+        "s": 26.94,
+        "e": 27.38
+      },
+      {
+        "w": "qaysi",
+        "s": 27.72,
+        "e": 28.06
+      },
+      {
+        "w": "kod",
+        "s": 28.16,
+        "e": 28.38
+      },
+      {
+        "w": "qaysi",
+        "s": 28.5,
+        "e": 28.8
+      },
+      {
+        "w": "kodni",
+        "s": 28.86,
+        "e": 29.16
+      },
+      {
+        "w": "import",
+        "s": 29.24,
+        "e": 29.52
+      },
+      {
+        "w": "qila",
+        "s": 29.56,
+        "e": 29.72
+      },
+      {
+        "w": "oladi?",
+        "s": 29.82,
+        "e": 30.0
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "savollar",
+    "text": "Uchinchisi: modulning tashqi interfeysi qayerda?",
+    "show": "Uchinchisi: modulning tashqi interfeysi qayerda?",
+    "say": "Uchinchisi: modulning tashqi interfeysi qayerda?",
+    "a0": 30.82,
+    "a1": 33.74,
+    "words": [
+      {
+        "w": "Uchinchisi:",
+        "s": 30.82,
+        "e": 31.28
+      },
+      {
+        "w": "modulning",
+        "s": 31.66,
+        "e": 32.26
+      },
+      {
+        "w": "tashqi",
+        "s": 32.32,
+        "e": 32.68
+      },
+      {
+        "w": "interfeysi",
+        "s": 32.72,
+        "e": 33.24
+      },
+      {
+        "w": "qayerda?",
+        "s": 33.3,
+        "e": 33.74
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "savollar",
+    "text": "Shuning uchun FSD loyihalari bir-biriga o‘xshaydi. Yangi dasturchi tuzilmani birinchi kundanoq taniydi.",
+    "show": "Shuning uchun FSD loyihalari bir-biriga o‘xshaydi. Yangi dasturchi tuzilmani birinchi kundanoq taniydi.",
+    "say": "Shuning uchun Ef-es-di loyihalari bir-biriga o‘xshaydi. Yangi dasturchi tuzilmani birinchi kundanoq taniydi.",
+    "a0": 34.8,
+    "a1": 40.69,
+    "words": [
+      {
+        "w": "Shuning",
+        "s": 34.8,
+        "e": 35.04
+      },
+      {
+        "w": "uchun",
+        "s": 35.06,
+        "e": 35.24
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 35.36,
+        "e": 35.74
+      },
+      {
+        "w": "loyihalari",
+        "s": 35.86,
+        "e": 36.38
+      },
+      {
+        "w": "bir-biriga",
+        "s": 36.46,
+        "e": 36.88
+      },
+      {
+        "w": "o‘xshaydi.",
+        "s": 36.92,
+        "e": 37.34
+      },
+      {
+        "w": "Yangi",
+        "s": 37.99,
+        "e": 38.39
+      },
+      {
+        "w": "dasturchi",
+        "s": 38.49,
+        "e": 38.95
+      },
+      {
+        "w": "tuzilmani",
+        "s": 38.99,
+        "e": 39.47
+      },
+      {
+        "w": "birinchi",
+        "s": 39.51,
+        "e": 39.81
+      },
+      {
+        "w": "kundanoq",
+        "s": 39.85,
+        "e": 40.23
+      },
+      {
+        "w": "taniydi.",
+        "s": 40.31,
+        "e": 40.69
+      }
+    ]
+  },
+  {
+    "id": "L7",
+    "scene": "daraja",
+    "text": "Kod uch darajaga bo‘linadi. Birinchisi — qatlam. U bino qavatiga o‘xshaydi va kod qanchalik umumiyligini bildiradi.",
+    "show": "Kod uch darajaga bo‘linadi. Birinchisi — qatlam. U bino qavatiga o‘xshaydi va kod qanchalik umumiyligini bildiradi.",
+    "say": "Kod uch darajaga bo‘linadi. Birinchisi — qatlam. U bino qavatiga o‘xshaydi va kod qanchalik umumiyligini bildiradi.",
+    "a0": 42.09,
+    "a1": 49.87,
+    "words": [
+      {
+        "w": "Kod",
+        "s": 42.09,
+        "e": 42.37
+      },
+      {
+        "w": "uch",
+        "s": 42.51,
+        "e": 42.67
+      },
+      {
+        "w": "darajaga",
+        "s": 42.73,
+        "e": 43.13
+      },
+      {
+        "w": "bo‘linadi.",
+        "s": 43.19,
+        "e": 43.63
+      },
+      {
+        "w": "Birinchisi",
+        "s": 44.21,
+        "e": 44.67
+      },
+      {
+        "w": "—",
+        "s": 44.67,
+        "e": 44.67
+      },
+      {
+        "w": "qatlam.",
+        "s": 44.89,
+        "e": 45.31
+      },
+      {
+        "w": "U",
+        "s": 45.99,
+        "e": 46.01
+      },
+      {
+        "w": "bino",
+        "s": 46.13,
+        "e": 46.43
+      },
+      {
+        "w": "qavatiga",
+        "s": 46.53,
+        "e": 46.93
+      },
+      {
+        "w": "o‘xshaydi",
+        "s": 46.97,
+        "e": 47.33
+      },
+      {
+        "w": "va",
+        "s": 47.39,
+        "e": 47.47
+      },
+      {
+        "w": "kod",
+        "s": 47.69,
+        "e": 47.93
+      },
+      {
+        "w": "qanchalik",
+        "s": 48.05,
+        "e": 48.63
+      },
+      {
+        "w": "umumiyligini",
+        "s": 48.75,
+        "e": 49.39
+      },
+      {
+        "w": "bildiradi.",
+        "s": 49.43,
+        "e": 49.87
+      }
+    ]
+  },
+  {
+    "id": "L8",
+    "scene": "daraja",
+    "text": "Qavat ichida xonalar bor. Ularni slice deyiladi va biznes sohasi bo‘yicha ajratiladi: masalan, product yoki cart.",
+    "show": "Qavat ichida xonalar bor. Ularni slice deyiladi va biznes sohasi bo‘yicha ajratiladi: masalan, product yoki cart.",
+    "say": "Qavat ichida xonalar bor. Ularni slays deyiladi va biznes sohasi bo‘yicha ajratiladi: masalan, prodakt yoki kart.",
+    "a0": 50.89,
+    "a1": 58.98,
+    "words": [
+      {
+        "w": "Qavat",
+        "s": 50.89,
+        "e": 51.17
+      },
+      {
+        "w": "ichida",
+        "s": 51.27,
+        "e": 51.53
+      },
+      {
+        "w": "xonalar",
+        "s": 51.61,
+        "e": 52.07
+      },
+      {
+        "w": "bor.",
+        "s": 52.13,
+        "e": 52.29
+      },
+      {
+        "w": "Ularni",
+        "s": 52.8,
+        "e": 53.14
+      },
+      {
+        "w": "slays",
+        "s": 53.22,
+        "e": 53.56
+      },
+      {
+        "w": "deyiladi",
+        "s": 53.6,
+        "e": 54.02
+      },
+      {
+        "w": "va",
+        "s": 54.38,
+        "e": 54.46
+      },
+      {
+        "w": "biznes",
+        "s": 54.62,
+        "e": 54.96
+      },
+      {
+        "w": "sohasi",
+        "s": 55.0,
+        "e": 55.4
+      },
+      {
+        "w": "bo‘yicha",
+        "s": 55.44,
+        "e": 55.68
+      },
+      {
+        "w": "ajratiladi:",
+        "s": 55.74,
+        "e": 56.3
+      },
+      {
+        "w": "masalan,",
+        "s": 57.0,
+        "e": 57.4
+      },
+      {
+        "w": "prodakt",
+        "s": 57.7,
+        "e": 58.16
+      },
+      {
+        "w": "yoki",
+        "s": 58.2,
+        "e": 58.52
+      },
+      {
+        "w": "kart.",
+        "s": 58.68,
+        "e": 58.98
+      }
+    ]
+  },
+  {
+    "id": "L9",
+    "scene": "daraja",
+    "text": "Xona ichida esa segmentlar: ui, api, model kabi. Ular kodning texnik vazifasini bildiradi.",
+    "show": "Xona ichida esa segmentlar: ui, api, model kabi. Ular kodning texnik vazifasini bildiradi.",
+    "say": "Xona ichida esa segmentlar: Yu-ay, ey-pi-ay, model kabi. Ular kodning texnik vazifasini bildiradi.",
+    "a0": 59.94,
+    "a1": 67.1,
+    "words": [
+      {
+        "w": "Xona",
+        "s": 59.94,
+        "e": 60.16
+      },
+      {
+        "w": "ichida",
+        "s": 60.22,
+        "e": 60.48
+      },
+      {
+        "w": "esa",
+        "s": 60.54,
+        "e": 60.72
+      },
+      {
+        "w": "segmentlar:",
+        "s": 60.82,
+        "e": 61.38
+      },
+      {
+        "w": "Yu-ay,",
+        "s": 62.1,
+        "e": 62.6
+      },
+      {
+        "w": "ey-pi-ay,",
+        "s": 62.82,
+        "e": 63.36
+      },
+      {
+        "w": "model",
+        "s": 63.56,
+        "e": 63.9
+      },
+      {
+        "w": "kabi.",
+        "s": 63.96,
+        "e": 64.18
+      },
+      {
+        "w": "Ular",
+        "s": 64.82,
+        "e": 65.04
+      },
+      {
+        "w": "kodning",
+        "s": 65.12,
+        "e": 65.56
+      },
+      {
+        "w": "texnik",
+        "s": 65.62,
+        "e": 66.02
+      },
+      {
+        "w": "vazifasini",
+        "s": 66.06,
+        "e": 66.64
+      },
+      {
+        "w": "bildiradi.",
+        "s": 66.68,
+        "e": 67.1
+      }
+    ]
+  },
+  {
+    "id": "L10",
+    "scene": "kimga",
+    "text": "FSD kimga mos? U frontend uchun: veb, mobil yoki desktop interfeysi. Va kutubxona uchun emas, aynan ilova uchun.",
+    "show": "FSD kimga mos? U frontend uchun: veb, mobil yoki desktop interfeysi. Va kutubxona uchun emas, aynan ilova uchun.",
+    "say": "Ef-es-di kimga mos? U frontend uchun: veb, mobil yoki desktop interfeysi. Va kutubxona uchun emas, aynan ilova uchun.",
+    "a0": 68.35,
+    "a1": 77.59,
+    "words": [
+      {
+        "w": "Ef-es-di",
+        "s": 68.35,
+        "e": 68.73
+      },
+      {
+        "w": "kimga",
+        "s": 68.81,
+        "e": 69.05
+      },
+      {
+        "w": "mos?",
+        "s": 69.11,
+        "e": 69.33
+      },
+      {
+        "w": "U",
+        "s": 70.05,
+        "e": 70.07
+      },
+      {
+        "w": "frontend",
+        "s": 70.19,
+        "e": 70.69
+      },
+      {
+        "w": "uchun:",
+        "s": 70.75,
+        "e": 70.99
+      },
+      {
+        "w": "veb,",
+        "s": 71.59,
+        "e": 71.83
+      },
+      {
+        "w": "mobil",
+        "s": 71.95,
+        "e": 72.33
+      },
+      {
+        "w": "yoki",
+        "s": 72.33,
+        "e": 72.67
+      },
+      {
+        "w": "desktop",
+        "s": 72.83,
+        "e": 73.25
+      },
+      {
+        "w": "interfeysi.",
+        "s": 73.31,
+        "e": 73.85
+      },
+      {
+        "w": "Va",
+        "s": 74.69,
+        "e": 74.79
+      },
+      {
+        "w": "kutubxona",
+        "s": 74.99,
+        "e": 75.47
+      },
+      {
+        "w": "uchun",
+        "s": 75.53,
+        "e": 75.71
+      },
+      {
+        "w": "emas,",
+        "s": 75.77,
+        "e": 76.03
+      },
+      {
+        "w": "aynan",
+        "s": 76.45,
+        "e": 76.79
+      },
+      {
+        "w": "ilova",
+        "s": 76.95,
+        "e": 77.29
+      },
+      {
+        "w": "uchun.",
+        "s": 77.35,
+        "e": 77.59
+      }
+    ]
+  },
+  {
+    "id": "L11",
+    "scene": "kimga",
+    "text": "Dasturlash tili, framework yoki holat menejeri bo‘yicha cheklov yo‘q. React, Vue, Angular — qoidalar bir xil.",
+    "show": "Dasturlash tili, framework yoki holat menejeri bo‘yicha cheklov yo‘q. React, Vue, Angular — qoidalar bir xil.",
+    "say": "Dasturlash tili, freymvork yoki holat menejeri bo‘yicha cheklov yo‘q. React, Vyu, Angular — qoidalar bir xil.",
+    "a0": 78.41,
+    "a1": 86.86,
+    "words": [
+      {
+        "w": "Dasturlash",
+        "s": 78.41,
+        "e": 78.97
+      },
+      {
+        "w": "tili,",
+        "s": 79.01,
+        "e": 79.25
+      },
+      {
+        "w": "freymvork",
+        "s": 79.49,
+        "e": 80.09
+      },
+      {
+        "w": "yoki",
+        "s": 80.13,
+        "e": 80.43
+      },
+      {
+        "w": "holat",
+        "s": 80.77,
+        "e": 81.17
+      },
+      {
+        "w": "menejeri",
+        "s": 81.25,
+        "e": 81.71
+      },
+      {
+        "w": "bo‘yicha",
+        "s": 81.73,
+        "e": 82.01
+      },
+      {
+        "w": "cheklov",
+        "s": 82.07,
+        "e": 82.45
+      },
+      {
+        "w": "yo‘q.",
+        "s": 82.49,
+        "e": 82.7
+      },
+      {
+        "w": "React,",
+        "s": 83.64,
+        "e": 84.14
+      },
+      {
+        "w": "Vyu,",
+        "s": 84.4,
+        "e": 84.62
+      },
+      {
+        "w": "Angular",
+        "s": 85.2,
+        "e": 85.7
+      },
+      {
+        "w": "—",
+        "s": 85.7,
+        "e": 85.7
+      },
+      {
+        "w": "qoidalar",
+        "s": 86.02,
+        "e": 86.46
+      },
+      {
+        "w": "bir",
+        "s": 86.54,
+        "e": 86.64
+      },
+      {
+        "w": "xil.",
+        "s": 86.72,
+        "e": 86.86
+      }
+    ]
+  },
+  {
+    "id": "L12",
+    "scene": "kimga",
+    "text": "Rasmiy hujjatga ko‘ra, FSD istalgan hajmdagi loyiha va jamoada ishlatilishi mumkin.",
+    "show": "Rasmiy hujjatga ko‘ra, FSD istalgan hajmdagi loyiha va jamoada ishlatilishi mumkin.",
+    "say": "Rasmiy hujjatga ko‘ra, Ef-es-di istalgan hajmdagi loyiha va jamoada ishlatilishi mumkin.",
+    "a0": 88.2,
+    "a1": 93.0,
+    "words": [
+      {
+        "w": "Rasmiy",
+        "s": 88.2,
+        "e": 88.5
+      },
+      {
+        "w": "hujjatga",
+        "s": 88.56,
+        "e": 88.98
+      },
+      {
+        "w": "ko‘ra,",
+        "s": 89.04,
+        "e": 89.28
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 89.5,
+        "e": 89.9
+      },
+      {
+        "w": "istalgan",
+        "s": 90.02,
+        "e": 90.5
+      },
+      {
+        "w": "hajmdagi",
+        "s": 90.56,
+        "e": 91.04
+      },
+      {
+        "w": "loyiha",
+        "s": 91.12,
+        "e": 91.42
+      },
+      {
+        "w": "va",
+        "s": 91.5,
+        "e": 91.58
+      },
+      {
+        "w": "jamoada",
+        "s": 91.74,
+        "e": 92.12
+      },
+      {
+        "w": "ishlatilishi",
+        "s": 92.18,
+        "e": 92.64
+      },
+      {
+        "w": "mumkin.",
+        "s": 92.68,
+        "e": 93.0
+      }
+    ]
+  },
+  {
+    "id": "L13",
+    "scene": "foyda",
+    "text": "FSD nima beradi? Birinchisi — bir xillik. Tuzilma standart, shuning uchun yangi odam jamoaga tez moslashadi.",
+    "show": "FSD nima beradi? Birinchisi — bir xillik. Tuzilma standart, shuning uchun yangi odam jamoaga tez moslashadi.",
+    "say": "Ef-es-di nima beradi? Birinchisi — bir xillik. Tuzilma standart, shuning uchun yangi odam jamoaga tez moslashadi.",
+    "a0": 94.1,
+    "a1": 101.59,
+    "words": [
+      {
+        "w": "Ef-es-di",
+        "s": 94.1,
+        "e": 94.5
+      },
+      {
+        "w": "nima",
+        "s": 94.6,
+        "e": 94.8
+      },
+      {
+        "w": "beradi?",
+        "s": 94.84,
+        "e": 95.18
+      },
+      {
+        "w": "Birinchisi",
+        "s": 96.0,
+        "e": 96.4
+      },
+      {
+        "w": "—",
+        "s": 96.4,
+        "e": 96.4
+      },
+      {
+        "w": "bir",
+        "s": 96.64,
+        "e": 96.76
+      },
+      {
+        "w": "xillik.",
+        "s": 96.8,
+        "e": 97.14
+      },
+      {
+        "w": "Tuzilma",
+        "s": 97.71,
+        "e": 98.09
+      },
+      {
+        "w": "standart,",
+        "s": 98.15,
+        "e": 98.69
+      },
+      {
+        "w": "shuning",
+        "s": 99.01,
+        "e": 99.25
+      },
+      {
+        "w": "uchun",
+        "s": 99.27,
+        "e": 99.45
+      },
+      {
+        "w": "yangi",
+        "s": 99.55,
+        "e": 99.85
+      },
+      {
+        "w": "odam",
+        "s": 99.91,
+        "e": 100.13
+      },
+      {
+        "w": "jamoaga",
+        "s": 100.19,
+        "e": 100.65
+      },
+      {
+        "w": "tez",
+        "s": 100.77,
+        "e": 100.99
+      },
+      {
+        "w": "moslashadi.",
+        "s": 101.03,
+        "e": 101.59
+      }
+    ]
+  },
+  {
+    "id": "L14",
+    "scene": "foyda",
+    "text": "Ikkinchisi — o‘zgarishlarga barqarorlik. Modul o‘z qatlamidagi yoki yuqoridagi modullarni ishlata olmaydi. Shuning uchun bir joyni o‘zgartirsangiz, kutilmagan joy buzilmaydi.",
+    "show": "Ikkinchisi — o‘zgarishlarga barqarorlik. Modul o‘z qatlamidagi yoki yuqoridagi modullarni ishlata olmaydi. Shuning uchun bir joyni o‘zgartirsangiz, kutilmagan joy buzilmaydi.",
+    "say": "Ikkinchisi — o‘zgarishlarga barqarorlik. Modul o‘z qatlamidagi yoki yuqoridagi modullarni ishlata olmaydi. Shuning uchun bir joyni o‘zgartirsangiz, kutilmagan joy buzilmaydi.",
+    "a0": 102.39,
+    "a1": 113.8,
+    "words": [
+      {
+        "w": "Ikkinchisi",
+        "s": 102.39,
+        "e": 102.81
+      },
+      {
+        "w": "—",
+        "s": 102.81,
+        "e": 102.81
+      },
+      {
+        "w": "o‘zgarishlarga",
+        "s": 103.21,
+        "e": 103.85
+      },
+      {
+        "w": "barqarorlik.",
+        "s": 103.91,
+        "e": 104.59
+      },
+      {
+        "w": "Modul",
+        "s": 105.27,
+        "e": 105.59
+      },
+      {
+        "w": "o‘z",
+        "s": 105.75,
+        "e": 105.87
+      },
+      {
+        "w": "qatlamidagi",
+        "s": 105.95,
+        "e": 106.61
+      },
+      {
+        "w": "yoki",
+        "s": 106.61,
+        "e": 107.01
+      },
+      {
+        "w": "yuqoridagi",
+        "s": 107.33,
+        "e": 107.95
+      },
+      {
+        "w": "modullarni",
+        "s": 108.01,
+        "e": 108.55
+      },
+      {
+        "w": "ishlata",
+        "s": 108.59,
+        "e": 108.87
+      },
+      {
+        "w": "olmaydi.",
+        "s": 108.95,
+        "e": 109.33
+      },
+      {
+        "w": "Shuning",
+        "s": 109.95,
+        "e": 110.19
+      },
+      {
+        "w": "uchun",
+        "s": 110.19,
+        "e": 110.39
+      },
+      {
+        "w": "bir",
+        "s": 110.77,
+        "e": 110.93
+      },
+      {
+        "w": "joyni",
+        "s": 110.99,
+        "e": 111.29
+      },
+      {
+        "w": "o‘zgartirsangiz,",
+        "s": 111.35,
+        "e": 112.09
+      },
+      {
+        "w": "kutilmagan",
+        "s": 112.37,
+        "e": 112.96
+      },
+      {
+        "w": "joy",
+        "s": 113.02,
+        "e": 113.2
+      },
+      {
+        "w": "buzilmaydi.",
+        "s": 113.28,
+        "e": 113.8
+      }
+    ]
+  },
+  {
+    "id": "L15",
+    "scene": "foyda",
+    "text": "Uchinchisi — boshqariladigan qayta ishlatish. Qatlamga qarab kod juda umumiy yoki juda lokal bo‘ladi.",
+    "show": "Uchinchisi — boshqariladigan qayta ishlatish. Qatlamga qarab kod juda umumiy yoki juda lokal bo‘ladi.",
+    "say": "Uchinchisi — boshqariladigan qayta ishlatish. Qatlamga qarab kod juda umumiy yoki juda lokal bo‘ladi.",
+    "a0": 114.74,
+    "a1": 121.66,
+    "words": [
+      {
+        "w": "Uchinchisi",
+        "s": 114.74,
+        "e": 115.16
+      },
+      {
+        "w": "—",
+        "s": 115.16,
+        "e": 115.16
+      },
+      {
+        "w": "boshqariladigan",
+        "s": 115.52,
+        "e": 116.3
+      },
+      {
+        "w": "qayta",
+        "s": 116.38,
+        "e": 116.68
+      },
+      {
+        "w": "ishlatish.",
+        "s": 116.72,
+        "e": 117.18
+      },
+      {
+        "w": "Qatlamga",
+        "s": 117.84,
+        "e": 118.3
+      },
+      {
+        "w": "qarab",
+        "s": 118.36,
+        "e": 118.64
+      },
+      {
+        "w": "kod",
+        "s": 118.92,
+        "e": 119.12
+      },
+      {
+        "w": "juda",
+        "s": 119.28,
+        "e": 119.5
+      },
+      {
+        "w": "umumiy",
+        "s": 119.62,
+        "e": 119.96
+      },
+      {
+        "w": "yoki",
+        "s": 120.02,
+        "e": 120.4
+      },
+      {
+        "w": "juda",
+        "s": 120.6,
+        "e": 120.82
+      },
+      {
+        "w": "lokal",
+        "s": 120.92,
+        "e": 121.28
+      },
+      {
+        "w": "bo‘ladi.",
+        "s": 121.32,
+        "e": 121.66
+      }
+    ]
+  },
+  {
+    "id": "L16",
+    "scene": "foyda",
+    "text": "Bundan tashqari, FSD’ning arxitekturani tekshiradigan linteri, papka generatorlari va ko‘plab misollari bor.",
+    "show": "Bundan tashqari, FSD’ning arxitekturani tekshiradigan linteri, papka generatorlari va ko‘plab misollari bor.",
+    "say": "Bundan tashqari, Ef-es-dining arxitekturani tekshiradigan linteri, papka generatorlari va ko‘plab misollari bor.",
+    "a0": 122.54,
+    "a1": 129.59,
+    "words": [
+      {
+        "w": "Bundan",
+        "s": 122.54,
+        "e": 122.8
+      },
+      {
+        "w": "tashqari,",
+        "s": 122.84,
+        "e": 123.26
+      },
+      {
+        "w": "Ef-es-dining",
+        "s": 123.62,
+        "e": 124.26
+      },
+      {
+        "w": "arxitekturani",
+        "s": 124.34,
+        "e": 125.14
+      },
+      {
+        "w": "tekshiradigan",
+        "s": 125.18,
+        "e": 125.8
+      },
+      {
+        "w": "linteri,",
+        "s": 125.9,
+        "e": 126.34
+      },
+      {
+        "w": "papka",
+        "s": 126.76,
+        "e": 127.04
+      },
+      {
+        "w": "generatorlari",
+        "s": 127.1,
+        "e": 127.93
+      },
+      {
+        "w": "va",
+        "s": 128.25,
+        "e": 128.33
+      },
+      {
+        "w": "ko‘plab",
+        "s": 128.47,
+        "e": 128.85
+      },
+      {
+        "w": "misollari",
+        "s": 128.91,
+        "e": 129.41
+      },
+      {
+        "w": "bor.",
+        "s": 129.45,
+        "e": 129.59
+      }
+    ]
+  },
+  {
+    "id": "L17",
+    "scene": "qachon",
+    "text": "Lekin FSD har doim ham shart emas. Rasmiy hujjat aytadi: hozirgi arxitektura ishlayotgan bo‘lsa, uni o‘zgartirishga arzimasligi mumkin.",
+    "show": "Lekin FSD har doim ham shart emas. Rasmiy hujjat aytadi: hozirgi arxitektura ishlayotgan bo‘lsa, uni o‘zgartirishga arzimasligi mumkin.",
+    "say": "Lekin Ef-es-di har doim ham shart emas. Rasmiy hujjat aytadi: hozirgi arxitektura ishlayotgan bo‘lsa, uni o‘zgartirishga arzimasligi mumkin.",
+    "a0": 130.81,
+    "a1": 139.31,
+    "words": [
+      {
+        "w": "Lekin",
+        "s": 130.81,
+        "e": 131.07
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 131.15,
+        "e": 131.53
+      },
+      {
+        "w": "har",
+        "s": 131.63,
+        "e": 131.85
+      },
+      {
+        "w": "doim",
+        "s": 131.89,
+        "e": 132.13
+      },
+      {
+        "w": "ham",
+        "s": 132.19,
+        "e": 132.33
+      },
+      {
+        "w": "shart",
+        "s": 132.39,
+        "e": 132.63
+      },
+      {
+        "w": "emas.",
+        "s": 132.69,
+        "e": 132.93
+      },
+      {
+        "w": "Rasmiy",
+        "s": 133.65,
+        "e": 133.95
+      },
+      {
+        "w": "hujjat",
+        "s": 134.01,
+        "e": 134.31
+      },
+      {
+        "w": "aytadi:",
+        "s": 134.37,
+        "e": 134.67
+      },
+      {
+        "w": "hozirgi",
+        "s": 135.01,
+        "e": 135.47
+      },
+      {
+        "w": "arxitektura",
+        "s": 135.55,
+        "e": 136.15
+      },
+      {
+        "w": "ishlayotgan",
+        "s": 136.21,
+        "e": 136.73
+      },
+      {
+        "w": "bo‘lsa,",
+        "s": 136.79,
+        "e": 137.09
+      },
+      {
+        "w": "uni",
+        "s": 137.45,
+        "e": 137.59
+      },
+      {
+        "w": "o‘zgartirishga",
+        "s": 137.67,
+        "e": 138.25
+      },
+      {
+        "w": "arzimasligi",
+        "s": 138.37,
+        "e": 138.97
+      },
+      {
+        "w": "mumkin.",
+        "s": 139.01,
+        "e": 139.31
+      }
+    ]
+  },
+  {
+    "id": "L18",
+    "scene": "qachon",
+    "text": "Hamma qatlamlarni ishlatish ham shart emas. Ko‘pchilik loyihalarda kamida uchtasi bo‘ladi: shared, pages va app.",
+    "show": "Hamma qatlamlarni ishlatish ham shart emas. Ko‘pchilik loyihalarda kamida uchtasi bo‘ladi: shared, pages va app.",
+    "say": "Hamma qatlamlarni ishlatish ham shart emas. Ko‘pchilik loyihalarda kamida uchtasi bo‘ladi: sherd, peyjiz va ep.",
+    "a0": 140.15,
+    "a1": 147.26,
+    "words": [
+      {
+        "w": "Hamma",
+        "s": 140.15,
+        "e": 140.43
+      },
+      {
+        "w": "qatlamlarni",
+        "s": 140.51,
+        "e": 141.09
+      },
+      {
+        "w": "ishlatish",
+        "s": 141.13,
+        "e": 141.47
+      },
+      {
+        "w": "ham",
+        "s": 141.49,
+        "e": 141.63
+      },
+      {
+        "w": "shart",
+        "s": 141.67,
+        "e": 141.89
+      },
+      {
+        "w": "emas.",
+        "s": 141.95,
+        "e": 142.17
+      },
+      {
+        "w": "Ko‘pchilik",
+        "s": 142.92,
+        "e": 143.34
+      },
+      {
+        "w": "loyihalarda",
+        "s": 143.38,
+        "e": 143.9
+      },
+      {
+        "w": "kamida",
+        "s": 144.02,
+        "e": 144.42
+      },
+      {
+        "w": "uchtasi",
+        "s": 144.48,
+        "e": 144.86
+      },
+      {
+        "w": "bo‘ladi:",
+        "s": 144.9,
+        "e": 145.24
+      },
+      {
+        "w": "sherd,",
+        "s": 145.7,
+        "e": 146.1
+      },
+      {
+        "w": "peyjiz",
+        "s": 146.4,
+        "e": 146.82
+      },
+      {
+        "w": "va",
+        "s": 146.9,
+        "e": 146.96
+      },
+      {
+        "w": "ep.",
+        "s": 147.12,
+        "e": 147.26
+      }
+    ]
+  },
+  {
+    "id": "L19",
+    "scene": "qachon",
+    "text": "FSD’ni bosqichma-bosqich, qismlab joriy qilish ham mumkin.",
+    "show": "FSD’ni bosqichma-bosqich, qismlab joriy qilish ham mumkin.",
+    "say": "Ef-es-dini bosqichma-bosqich, qismlab joriy qilish ham mumkin.",
+    "a0": 147.84,
+    "a1": 151.46,
+    "words": [
+      {
+        "w": "Ef-es-dini",
+        "s": 147.84,
+        "e": 148.4
+      },
+      {
+        "w": "bosqichma-bosqich,",
+        "s": 148.56,
+        "e": 149.68
+      },
+      {
+        "w": "qismlab",
+        "s": 149.86,
+        "e": 150.34
+      },
+      {
+        "w": "joriy",
+        "s": 150.4,
+        "e": 150.64
+      },
+      {
+        "w": "qilish",
+        "s": 150.72,
+        "e": 150.96
+      },
+      {
+        "w": "ham",
+        "s": 150.98,
+        "e": 151.1
+      },
+      {
+        "w": "mumkin.",
+        "s": 151.14,
+        "e": 151.46
+      }
+    ]
+  },
+  {
+    "id": "L20",
+    "scene": "xatolar",
+    "text": "Endi tipik xatolar. Birinchisi: birinchi kunning o‘zida hamma qatlamlarni va bo‘sh papkalarni yaratish. Uchta qatlamdan boshlang.",
+    "show": "Endi tipik xatolar. Birinchisi: birinchi kunning o‘zida hamma qatlamlarni va bo‘sh papkalarni yaratish. Uchta qatlamdan boshlang.",
+    "say": "Endi tipik xatolar. Birinchisi: birinchi kunning o‘zida hamma qatlamlarni va bo‘sh papkalarni yaratish. Uchta qatlamdan boshlang.",
+    "a0": 152.1,
+    "a1": 160.09,
+    "words": [
+      {
+        "w": "Endi",
+        "s": 152.1,
+        "e": 152.3
+      },
+      {
+        "w": "tipik",
+        "s": 152.38,
+        "e": 152.72
+      },
+      {
+        "w": "xatolar.",
+        "s": 152.76,
+        "e": 153.22
+      },
+      {
+        "w": "Birinchisi:",
+        "s": 153.74,
+        "e": 154.16
+      },
+      {
+        "w": "birinchi",
+        "s": 154.52,
+        "e": 154.82
+      },
+      {
+        "w": "kunning",
+        "s": 154.86,
+        "e": 155.14
+      },
+      {
+        "w": "o‘zida",
+        "s": 155.22,
+        "e": 155.52
+      },
+      {
+        "w": "hamma",
+        "s": 155.6,
+        "e": 155.9
+      },
+      {
+        "w": "qatlamlarni",
+        "s": 155.98,
+        "e": 156.58
+      },
+      {
+        "w": "va",
+        "s": 156.64,
+        "e": 156.7
+      },
+      {
+        "w": "bo‘sh",
+        "s": 156.84,
+        "e": 157.04
+      },
+      {
+        "w": "papkalarni",
+        "s": 157.08,
+        "e": 157.69
+      },
+      {
+        "w": "yaratish.",
+        "s": 157.75,
+        "e": 158.17
+      },
+      {
+        "w": "Uchta",
+        "s": 158.71,
+        "e": 159.01
+      },
+      {
+        "w": "qatlamdan",
+        "s": 159.07,
+        "e": 159.61
+      },
+      {
+        "w": "boshlang.",
+        "s": 159.67,
+        "e": 160.09
+      }
+    ]
+  },
+  {
+    "id": "L21",
+    "scene": "xatolar",
+    "text": "Ikkinchisi: modules yoki core kabi o‘z qatlamingizni qo‘shish. Qatlamlarning ma’nosi standart, shuning uchun yangi qatlam qo‘shish tavsiya etilmaydi.",
+    "show": "Ikkinchisi: modules yoki core kabi o‘z qatlamingizni qo‘shish. Qatlamlarning ma’nosi standart, shuning uchun yangi qatlam qo‘shish tavsiya etilmaydi.",
+    "say": "Ikkinchisi: modyuls yoki kor kabi o‘z qatlamingizni qo‘shish. Qatlamlarning ma’nosi standart, shuning uchun yangi qatlam qo‘shish tavsiya etilmaydi.",
+    "a0": 160.65,
+    "a1": 169.79,
+    "words": [
+      {
+        "w": "Ikkinchisi:",
+        "s": 160.65,
+        "e": 161.11
+      },
+      {
+        "w": "modyuls",
+        "s": 161.55,
+        "e": 161.99
+      },
+      {
+        "w": "yoki",
+        "s": 162.05,
+        "e": 162.29
+      },
+      {
+        "w": "kor",
+        "s": 162.39,
+        "e": 162.61
+      },
+      {
+        "w": "kabi",
+        "s": 162.67,
+        "e": 162.89
+      },
+      {
+        "w": "o‘z",
+        "s": 163.07,
+        "e": 163.21
+      },
+      {
+        "w": "qatlamingizni",
+        "s": 163.27,
+        "e": 163.97
+      },
+      {
+        "w": "qo‘shish.",
+        "s": 164.03,
+        "e": 164.37
+      },
+      {
+        "w": "Qatlamlarning",
+        "s": 164.93,
+        "e": 165.61
+      },
+      {
+        "w": "ma’nosi",
+        "s": 165.63,
+        "e": 166.09
+      },
+      {
+        "w": "standart,",
+        "s": 166.17,
+        "e": 166.73
+      },
+      {
+        "w": "shuning",
+        "s": 166.89,
+        "e": 167.11
+      },
+      {
+        "w": "uchun",
+        "s": 167.13,
+        "e": 167.33
+      },
+      {
+        "w": "yangi",
+        "s": 167.67,
+        "e": 167.99
+      },
+      {
+        "w": "qatlam",
+        "s": 168.05,
+        "e": 168.37
+      },
+      {
+        "w": "qo‘shish",
+        "s": 168.45,
+        "e": 168.75
+      },
+      {
+        "w": "tavsiya",
+        "s": 168.79,
+        "e": 169.15
+      },
+      {
+        "w": "etilmaydi.",
+        "s": 169.27,
+        "e": 169.79
+      }
+    ]
+  },
+  {
+    "id": "L22",
+    "scene": "xatolar",
+    "text": "Uchinchisi: FSD’ni faqat papka nomlari deb tushunish. Asosiysi — import qoidalari, ularni Steiger linteri tekshiradi.",
+    "show": "Uchinchisi: FSD’ni faqat papka nomlari deb tushunish. Asosiysi — import qoidalari, ularni Steiger linteri tekshiradi.",
+    "say": "Uchinchisi: Ef-es-dini faqat papka nomlari deb tushunish. Asosiysi — import qoidalari, ularni Stayger linteri tekshiradi.",
+    "a0": 170.41,
+    "a1": 178.5,
+    "words": [
+      {
+        "w": "Uchinchisi:",
+        "s": 170.41,
+        "e": 170.91
+      },
+      {
+        "w": "Ef-es-dini",
+        "s": 171.31,
+        "e": 171.89
+      },
+      {
+        "w": "faqat",
+        "s": 171.99,
+        "e": 172.33
+      },
+      {
+        "w": "papka",
+        "s": 172.41,
+        "e": 172.72
+      },
+      {
+        "w": "nomlari",
+        "s": 172.78,
+        "e": 173.18
+      },
+      {
+        "w": "deb",
+        "s": 173.2,
+        "e": 173.34
+      },
+      {
+        "w": "tushunish.",
+        "s": 173.36,
+        "e": 173.68
+      },
+      {
+        "w": "Asosiysi",
+        "s": 174.12,
+        "e": 174.68
+      },
+      {
+        "w": "—",
+        "s": 174.68,
+        "e": 174.68
+      },
+      {
+        "w": "import",
+        "s": 175.08,
+        "e": 175.4
+      },
+      {
+        "w": "qoidalari,",
+        "s": 175.48,
+        "e": 176.0
+      },
+      {
+        "w": "ularni",
+        "s": 176.28,
+        "e": 176.64
+      },
+      {
+        "w": "Stayger",
+        "s": 176.9,
+        "e": 177.36
+      },
+      {
+        "w": "linteri",
+        "s": 177.54,
+        "e": 177.94
+      },
+      {
+        "w": "tekshiradi.",
+        "s": 177.98,
+        "e": 178.5
+      }
+    ]
+  },
+  {
+    "id": "L23",
+    "scene": "xatolar",
+    "text": "Mana, haqiqiy natija: papkalar to‘g‘ri, lekin Steiger uchta xato topdi.",
+    "show": "Mana, haqiqiy natija: papkalar to‘g‘ri, lekin Steiger uchta xato topdi.",
+    "say": "Mana, haqiqiy natija: papkalar to‘g‘ri, lekin Stayger uchta xato topdi.",
+    "a0": 179.18,
+    "a1": 184.0,
+    "words": [
+      {
+        "w": "Mana,",
+        "s": 179.18,
+        "e": 179.36
+      },
+      {
+        "w": "haqiqiy",
+        "s": 179.7,
+        "e": 180.12
+      },
+      {
+        "w": "natija:",
+        "s": 180.2,
+        "e": 180.6
+      },
+      {
+        "w": "papkalar",
+        "s": 181.0,
+        "e": 181.44
+      },
+      {
+        "w": "to‘g‘ri,",
+        "s": 181.5,
+        "e": 181.84
+      },
+      {
+        "w": "lekin",
+        "s": 182.04,
+        "e": 182.32
+      },
+      {
+        "w": "Stayger",
+        "s": 182.42,
+        "e": 182.86
+      },
+      {
+        "w": "uchta",
+        "s": 183.02,
+        "e": 183.3
+      },
+      {
+        "w": "xato",
+        "s": 183.34,
+        "e": 183.6
+      },
+      {
+        "w": "topdi.",
+        "s": 183.7,
+        "e": 184.0
+      }
+    ]
+  },
+  {
+    "id": "L24",
+    "scene": "xulosa",
+    "text": "Xulosa qilsak: FSD kodni qavat, xona va segmentga ajratadi, importni esa faqat pastga yo‘naltiradi. Uni kerak bo‘lganda va bosqichma-bosqich joriy qiling.",
+    "show": "Xulosa qilsak: FSD kodni qavat, xona va segmentga ajratadi, importni esa faqat pastga yo‘naltiradi. Uni kerak bo‘lganda va bosqichma-bosqich joriy qiling.",
+    "say": "Xulosa qilsak: Ef-es-di kodni qavat, xona va segmentga ajratadi, importni esa faqat pastga yo‘naltiradi. Uni kerak bo‘lganda va bosqichma-bosqich joriy qiling.",
+    "a0": 184.64,
+    "a1": 195.19,
+    "words": [
+      {
+        "w": "Xulosa",
+        "s": 184.64,
+        "e": 185.0
+      },
+      {
+        "w": "qilsak:",
+        "s": 185.04,
+        "e": 185.39
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 185.75,
+        "e": 186.15
+      },
+      {
+        "w": "kodni",
+        "s": 186.23,
+        "e": 186.53
+      },
+      {
+        "w": "qavat,",
+        "s": 186.63,
+        "e": 187.05
+      },
+      {
+        "w": "xona",
+        "s": 187.33,
+        "e": 187.61
+      },
+      {
+        "w": "va",
+        "s": 187.73,
+        "e": 187.81
+      },
+      {
+        "w": "segmentga",
+        "s": 187.93,
+        "e": 188.41
+      },
+      {
+        "w": "ajratadi,",
+        "s": 188.47,
+        "e": 188.99
+      },
+      {
+        "w": "importni",
+        "s": 189.39,
+        "e": 189.77
+      },
+      {
+        "w": "esa",
+        "s": 189.79,
+        "e": 189.99
+      },
+      {
+        "w": "faqat",
+        "s": 190.27,
+        "e": 190.57
+      },
+      {
+        "w": "pastga",
+        "s": 190.63,
+        "e": 190.97
+      },
+      {
+        "w": "yo‘naltiradi.",
+        "s": 191.03,
+        "e": 191.61
+      },
+      {
+        "w": "Uni",
+        "s": 192.17,
+        "e": 192.31
+      },
+      {
+        "w": "kerak",
+        "s": 192.37,
+        "e": 192.67
+      },
+      {
+        "w": "bo‘lganda",
+        "s": 192.75,
+        "e": 193.23
+      },
+      {
+        "w": "va",
+        "s": 193.31,
+        "e": 193.37
+      },
+      {
+        "w": "bosqichma-bosqich",
+        "s": 193.71,
+        "e": 194.69
+      },
+      {
+        "w": "joriy",
+        "s": 194.71,
+        "e": 194.91
+      },
+      {
+        "w": "qiling.",
+        "s": 194.97,
+        "e": 195.19
+      }
+    ]
+  },
+  {
+    "id": "L25",
+    "scene": "xulosa",
+    "text": "Keyingi bobda sahifadan boshlash g‘oyasini ko‘ramiz. E’tiboringiz uchun rahmat!",
+    "show": "Keyingi bobda sahifadan boshlash g‘oyasini ko‘ramiz. E’tiboringiz uchun rahmat!",
+    "say": "Keyingi bobda sahifadan boshlash g‘oyasini ko‘ramiz. E’tiboringiz uchun rahmat!",
+    "a0": 195.82,
+    "a1": 200.5,
+    "words": [
+      {
+        "w": "Keyingi",
+        "s": 195.82,
+        "e": 196.12
+      },
+      {
+        "w": "bobda",
+        "s": 196.16,
+        "e": 196.44
+      },
+      {
+        "w": "sahifadan",
+        "s": 196.64,
+        "e": 197.2
+      },
+      {
+        "w": "boshlash",
+        "s": 197.26,
+        "e": 197.64
+      },
+      {
+        "w": "g‘oyasini",
+        "s": 197.68,
+        "e": 198.16
+      },
+      {
+        "w": "ko‘ramiz.",
+        "s": 198.2,
+        "e": 198.6
+      },
+      {
+        "w": "E’tiboringiz",
+        "s": 199.2,
+        "e": 199.8
+      },
+      {
+        "w": "uchun",
+        "s": 199.84,
+        "e": 200.06
+      },
+      {
+        "w": "rahmat!",
+        "s": 200.14,
+        "e": 200.5
+      }
+    ]
+  }
+]
