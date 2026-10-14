@@ -1,0 +1,129 @@
+WEBVTT
+
+1
+00:01.200 --> 00:08.450
+Salom! Bu videoda Git qanday ishlashini oddiy misollar bilan ko‘rib chiqamiz.
+
+2
+00:09.500 --> 00:17.083
+Ko‘pchilikka tanish holat: bitta faylning nusxalari ko‘payib ketaveradi. Yangisi, yakuniysi, yana bitta yakuniysi…
+
+3
+00:17.433 --> 00:22.978
+Endi qaysi biri oxirgisi? Nima o‘zgardi, kim o‘zgartirdi? Buni bilish qiyin.
+
+4
+00:23.328 --> 00:29.733
+Git aynan shu muammoni hal qiladi. U loyihaning har bir holatini tartib bilan tarixga yozib boradi.
+
+5
+00:30.783 --> 00:33.733
+Git’da har bir o‘zgarish uch bosqichdan o‘tadi.
+
+6
+00:34.083 --> 00:38.052
+Birinchisi — ishchi papka. Siz fayllarni shu yerda tahrirlaysiz.
+
+7
+00:38.402 --> 00:45.955
+Keyin git add buyrug‘i bilan o‘zgarishni staging degan joyga qo‘yasiz. Bu bilan Git’ga aytasiz: keyingi commit’ga mana shular kirsin.
+
+8
+00:46.305 --> 00:51.726
+git commit buyrug‘i esa staging’dagi holatni suratga oladi va uni tarixga saqlab qo‘yadi.
+
+9
+00:52.076 --> 01:00.126
+Yana bitta faylni o‘zgartiramiz, add qilamiz va commit qilamiz. Yangi commit avvalgisiga ulanadi.
+
+10
+01:00.476 --> 01:05.771
+Tahrirlash, add, commit. Git bilan ishlash asosan shu uch qadamdan iborat.
+
+11
+01:06.821 --> 01:12.102
+Xo‘sh, commit’ning o‘zi nima? Bu loyihaning ma’lum bir paytdagi to‘liq surati.
+
+12
+01:12.452 --> 01:20.372
+Unda kim, qachon va nima uchun o‘zgartirgani yoziladi. Har bir commit’ning o‘z noyob raqami bor, uni hash deyiladi.
+
+13
+01:20.722 --> 01:27.048
+Har bir commit o‘zidan oldingisiga, ya’ni ota commit’ga ishora qiladi. Shu tarzda tarix zanjiri hosil bo‘ladi.
+
+14
+01:27.398 --> 01:32.344
+Shu zanjir tufayli istalgan paytda avvalgi holatga qarash yoki unga qaytish mumkin.
+
+15
+01:33.394 --> 01:35.744
+Mana, main branch’dagi commit’lar.
+
+16
+01:36.094 --> 01:43.334
+Branch — bu bitta commit’ni ko‘rsatib turadigan yengil belgi, xolos. HEAD esa siz hozir qaysi branch’da turganingizni bildiradi.
+
+17
+01:43.684 --> 01:50.099
+git branch feature buyrug‘i yangi branch yaratadi. Bunda fayllar nusxalanmaydi, faqat yangi belgi paydo bo‘ladi.
+
+18
+01:50.449 --> 01:54.429
+git switch bilan feature’ga o‘tamiz. Endi HEAD feature’ni ko‘rsatadi.
+
+19
+01:54.779 --> 02:00.929
+Yangi commit’lar feature’ni oldinga suradi. HEAD ham u bilan birga yuradi.
+
+20
+02:01.279 --> 02:07.439
+main esa joyida qoldi. Demak, yangi ishni asosiy kodga tegmasdan, xavfsiz sinab ko‘rishingiz mumkin.
+
+21
+02:08.189 --> 02:12.706
+Ish tayyor bo‘lgach, uni main’ga qo‘shamiz. Buning uchun avval main’ga qaytamiz.
+
+22
+02:13.056 --> 02:17.206
+Bu orada main’da ham yangi commit paydo bo‘ldi.
+
+23
+02:17.556 --> 02:24.937
+git merge feature buyrug‘i ikki tarixni birlashtiradi. Hosil bo‘lgan merge commit’ning ikkita ota commit’i bo‘ladi.
+
+24
+02:25.287 --> 02:33.716
+Agar ikkala branch bitta qatorni har xil o‘zgartirgan bo‘lsa, konflikt yuz beradi. Shunda Git to‘xtaydi va qaysi variant qolishini sizdan so‘raydi.
+
+25
+02:34.766 --> 02:40.210
+Git — taqsimlangan tizim. Har bir kompyuterda loyiha tarixining to‘liq nusxasi saqlanadi.
+
+26
+02:40.560 --> 02:46.257
+git push buyrug‘i sizning commit’laringizni masofaviy repozitoriyga, masalan GitHub’ga yuboradi.
+
+27
+02:46.607 --> 02:50.857
+Bu orada jamoadoshingiz ham o‘z commit’ini yubordi.
+
+28
+02:51.207 --> 02:56.842
+git pull esa masofaviy repozitoriydagi yangi commit’larni olib keladi va sizning branch’ingizga qo‘shadi.
+
+29
+02:57.192 --> 03:03.417
+Aslida pull ikki ishni bajaradi. Avval fetch bilan yangiliklarni yuklab oladi, keyin merge bilan birlashtiradi.
+
+30
+03:04.567 --> 03:11.281
+Xulosa qilsak, kundalik ish shunday: tahrirlaysiz, add qilasiz, commit qilasiz va push qilasiz.
+
+31
+03:11.631 --> 03:17.054
+Jamoadan yangiliklarni olish uchun pull qilasiz. Yangi ishni esa alohida branch’da boshlaysiz.
+
+32
+03:18.604 --> 03:23.699
+E’tiboringiz uchun rahmat! Batafsil ma’lumotni saytdagi Git qo‘llanmasidan topasiz.

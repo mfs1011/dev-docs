@@ -317,11 +317,7 @@
     });
     const kh = eo(P(u, T.head, 0.8));
     withA(kh, () => text('Bitta loyiha — bitta tartibli tarix', 960, 350 + (1 - kh) * 20, { size: 54, weight: 700 }));
-    caption([
-      [0.3, 5.0, 'Tanish holat: bitta faylning o‘nlab nusxalari…'],
-      [5.0, 7.8, 'Qaysi biri oxirgisi? Nima o‘zgardi? Kim o‘zgartirdi?'],
-      [7.8, 12.6, 'Git har bir holatni tartibli tarixga yozadi — nusxa ko‘paytirish shart emas.'],
-    ], u);
+    if (TL.burnCaptions) caption(TL.captions.muammo, u);
   }
 
   // ---------- 2. Uch hudud ----------
@@ -388,14 +384,7 @@
       }
     });
     terminal(510, 780, 900, 140, T.cmds, u);
-    caption([
-      [0.3, 3.6, 'Git’da o‘zgarish uch joydan o‘tadi.'],
-      [3.6, 7.0, 'Ishchi papka — fayllarni tahrirlaydigan joyingiz.'],
-      [7.0, 12.0, '`git add` o‘zgarishni staging’ga qo‘yadi: «keyingi commit’ga shu kirsin».'],
-      [12.0, 17.6, '`git commit` staging’dagi holatni surat (snapshot) qilib, tarixga yozadi.'],
-      [17.6, 26.0, 'Yana tahrirlash → `git add` → `git commit`. Yangi commit oldingisiga bog‘lanadi.'],
-      [26.0, 29.6, 'Tahrirlash → add → commit: Git bilan ishlashning asosiy sikli.'],
-    ], u);
+    if (TL.burnCaptions) caption(TL.captions.hudud, u);
   }
 
   // ---------- 3. Commit ichida ----------
@@ -463,12 +452,7 @@
       glow(tx, 470, 110, 'rgba(255,209,102,0.18)');
       pill('ko‘rib turgan holat', tx, 360, C.yellow, { size: 20, mono: false, dir: 1 });
     });
-    caption([
-      [0.3, 4.4, 'Commit — loyihaning ma’lum paytdagi to‘liq surati (snapshot).'],
-      [4.4, 9.4, 'Unda muallif, sana, xabar va ota-commit saqlanadi; nomi — noyob hash.'],
-      [9.4, 15.0, 'Har commit o‘z ota-commit’ini ko‘rsatadi — shu tariqa tarix zanjiri hosil bo‘ladi.'],
-      [15.0, 19.6, 'Shu zanjir tufayli istalgan avvalgi holatni ko‘rish yoki unga qaytish mumkin.'],
-    ], u);
+    if (TL.burnCaptions) caption(TL.captions.commit, u);
   }
 
   // ---------- 4–5. Branch va merge ----------
@@ -515,18 +499,7 @@
         .forEach(([s, c], i) => text(s, x + 32, y + 82 + i * 34, { size: 22, weight: 600, fam: MONO, color: c, align: 'left' }));
     });
     terminal(510, 790, 900, 140, T.cmds, u);
-    caption([
-      [0.3, 3.0, 'Bu — main branch’dagi commit’lar.'],
-      [3.0, 6.0, 'Branch — commit’ni ko‘rsatib turuvchi yengil ko‘rsatkich.\nHEAD — hozir qaysi branch’da turganingiz.'],
-      [6.0, 9.5, '`git branch feature` — yangi ko‘rsatkich yaratadi. Fayllar nusxalanmaydi.'],
-      [9.5, 12.5, '`git switch feature` — HEAD endi feature’ni ko‘rsatadi.'],
-      [12.5, 19.0, 'Yangi commit’lar feature’ni oldinga suradi, HEAD unga ergashadi.'],
-      [19.0, 24.6, 'main esa joyida qoldi: yangi ishni asosiy koddan alohida, xavfsiz qilasiz.'],
-      [25.0, 29.0, 'Ish tayyor. Uni main’ga qo‘shamiz: avval `git switch main`.'],
-      [29.0, 33.5, 'Bu orada main’da ham yangi commit paydo bo‘ldi.'],
-      [33.5, 38.5, '`git merge feature` — ikki tarixni birlashtiradi.\nMerge commit’ning ikkita ota-commit’i bor.'],
-      [38.5, 42.6, 'Ikki branch bir qatorni turlicha o‘zgartirgan bo‘lsa — konflikt.\nGit to‘xtaydi va qaysi variant qolishini sizga qoldiradi.'],
-    ], u);
+    if (TL.burnCaptions) caption(TL.captions.branch, u);
   }
 
   // ---------- 6. Remote ----------
@@ -604,13 +577,7 @@
       text(s, 980, y + 1, { size: 26, weight: 700, fam: MONO, color: '#ffc2dc' });
     });
     terminal(120, 790, 640, 140, T.cmds, u);
-    caption([
-      [0.3, 3.0, 'Git taqsimlangan: har kompyuterda tarixning to‘liq nusxasi bor.'],
-      [3.0, 8.4, '`git push` — commit’laringizni remote’ga (masalan, GitHub’ga) yuboradi.'],
-      [8.4, 13.0, 'Jamoadoshingiz ham o‘z commit’ini push qildi…'],
-      [13.0, 18.2, '`git pull` — remote’dagi yangi commit’larni olib, branch’ingizga qo‘shadi.'],
-      [18.2, 24.6, 'Aslida pull ikki qadam: `git fetch` (yuklab olish) + `git merge` (birlashtirish).'],
-    ], u);
+    if (TL.burnCaptions) caption(TL.captions.remote, u);
   }
 
   // ---------- 7. Xulosa ----------
@@ -634,10 +601,7 @@
         const a = -Math.PI / 2 + (i * 2 * Math.PI) / 5, x = cx + Math.cos(a) * R, y = cy + Math.sin(a) * R;
         pill(l, x, y, c, { size: 30, mono, s: eback(P(u, T.stations[i], 0.5)) });
       });
-      caption([
-        [0.4, 5.0, 'Har kungi sikl: tahrirlash → `git add` → `git commit` → `git push`.'],
-        [5.0, 9.4, 'Jamoadan yangilik olish — `git pull`. Alohida ish uchun — branch.'],
-      ], u);
+      if (TL.burnCaptions) caption(TL.captions.xulosa, u);
     });
     const kt = eo(P(u, T.thanks, 1.0));
     withA(kt, () => {
@@ -655,25 +619,29 @@
     [S.intro, S.muammo, sceneIntro], [S.muammo, S.hudud, sceneMuammo], [S.hudud, S.commit, sceneHudud],
     [S.commit, S.branch, sceneCommit], [S.branch, S.remote, sceneBranch], [S.remote, S.xulosa, sceneRemote], [S.xulosa, S.end, sceneXulosa],
   ];
+  // t — video vaqti (ovozga moslab cho'zilgan); sahnalar eski vaqtda yozilgan, TL.toOld o'tkazadi
   function render(t) {
+    const T = TL.toOld(t), END = TL.toNew(S.end);
     ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.globalAlpha = 1;
     bg(t);
     for (const [a, b, fn] of SCENES) {
-      if (t >= a && t < b) {
-        const u = t - a, al = Math.min(P(u, 0, 0.6), 1 - P(u, b - a - 0.6, 0.6));
+      if (T >= a && T < b) {
+        const u = T - a, al = Math.min(P(u, 0, 0.6), 1 - P(u, b - a - 0.6, 0.6));
         withA(al, () => fn(u));
       }
     }
-    const fin = Math.max(1 - P(t, 0, 1.0), P(t, S.end - 1.6, 1.5));
+    const fin = Math.max(1 - P(t, 0, 1.0), P(t, END - 1.6, 1.5));
     if (fin > 0) { ctx.globalAlpha = fin; ctx.fillStyle = '#000'; ctx.fillRect(0, 0, W, H); ctx.globalAlpha = 1; }
   }
   window.render = render;
   window.renderPoster = () => { render(0.0001); ctx.globalAlpha = 1; bg(4); sceneIntro(6, { gy: -150, ty: 190, foot: false }); };
-  window.DURATION = S.end;
+  window.DURATION = TL.toNew(S.end);
+  // Ovozli versiyada subtitr videoga yozilmaydi — pleyerda CC bilan yoqiladi (voice/subtitles.vtt)
+  TL.burnCaptions = !TL.warp;
 
   if (location.hash === '#play') {
     const t0 = performance.now();
-    const loop = () => { render(((performance.now() - t0) / 1000) % S.end); requestAnimationFrame(loop); };
+    const loop = () => { render(((performance.now() - t0) / 1000) % window.DURATION); requestAnimationFrame(loop); };
     document.fonts.ready.then(loop);
   } else render(0);
 })();

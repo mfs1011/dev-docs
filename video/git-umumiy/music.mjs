@@ -1,9 +1,12 @@
 // Fon musiqasi + ovoz effektlari sintezi -> music.wav (44.1 kHz, stereo, 16-bit)
 import './timeline.js';
+import './voice/warp.js'; // ovozli versiya: vaqt cho'zilgan (yo'q bo'lsa — build-voice.mjs ni ishga tushiring)
 import fs from 'node:fs';
 
 const TL = globalThis.TL, S = TL.S;
-const SR = 44100, DUR = S.end + 0.5, N = Math.ceil(DUR * SR);
+// Video vaqti (cho'zilgan): oxiri va xulosa boshi
+const END = TL.toNew(S.end), XULOSA = TL.toNew(S.xulosa);
+const SR = 44100, DUR = END + 0.5, N = Math.ceil(DUR * SR);
 const TAU = Math.PI * 2;
 const bus = () => [new Float32Array(N), new Float32Array(N)];
 const pad = bus(), arp = bus(), drums = bus(), sfx = bus(), bass = new Float32Array(N), send = bus();
@@ -28,7 +31,7 @@ const chordAt = (t) => CHORDS[Math.floor(t / BAR) % 4];
 // bo'limlar dinamikasi
 const arpGain = (t) => ramp(t, 8.5, 10.5);
 const bassGain = (t) => ramp(t, 8.5, 9.5);
-const drumGain = (t) => ramp(t, 21.4, 22.4) * (1 - ramp(t, S.xulosa - 1.5, S.xulosa + 0.5));
+const drumGain = (t) => ramp(t, 21.4, 22.4) * (1 - ramp(t, XULOSA - 1.5, XULOSA + 0.5));
 
 // ---- pad (yumshoq arra to'lqini, jadval orqali) ----
 const TS = 4096, tab = new Float32Array(TS);
@@ -61,7 +64,7 @@ for (const ch of pad) {
 const PAT = [[0, 1, 2, 3, 4, 3, 2, 1], [0, 2, 4, 2, 1, 3, 4, 3]];
 const STEP = BEAT / 2;
 for (let k = 0; k * STEP < DUR; k++) {
-  const t0 = k * STEP, g = arpGain(t0) * (1 - ramp(t0, S.end - 3, S.end));
+  const t0 = k * STEP, g = arpGain(t0) * (1 - ramp(t0, END - 3, END));
   if (g <= 0) continue;
   const ch = chordAt(t0 + 0.001), bar = Math.floor(t0 / BAR), idx = PAT[Math.floor(bar / 4) % 2][k % 8];
   const m = idx === 4 ? ch.notes[0] + 24 : ch.notes[idx] + 12, f = mtof(m);
@@ -87,7 +90,7 @@ const BASS_PAT = [[0, 1.5], [2, 1.0], [3, 0.5], [3.5, 0.5]];
 for (let b = 0; b * BAR < DUR; b++) {
   const ch = CHORDS[b % 4];
   BASS_PAT.forEach(([at, len]) => {
-    const t0 = b * BAR + at * BEAT, g = bassGain(t0) * (1 - ramp(t0, S.end - 4, S.end - 1));
+    const t0 = b * BAR + at * BEAT, g = bassGain(t0) * (1 - ramp(t0, END - 4, END - 1));
     if (g <= 0) return;
     const f = mtof(ch.root + (at === 3.5 ? 12 : 0)), dur = len * BEAT, i0 = Math.floor(t0 * SR);
     for (let j = 0; j < (dur + 0.08) * SR; j++) {
@@ -223,7 +226,7 @@ const FX = {
     [72, 79, 84].forEach((m, i) => bell(t0 + i * 0.05, m, 0.035, 1.6, -0.3 + i * 0.3));
   },
 };
-TL.cues.forEach((c) => FX[c.type](c.t));
+TL.cues.forEach((c) => FX[c.type](TL.toNew(c.t)));
 
 // ---- reverb (Freeverb soddalashtirilgan) ----
 for (let i = 0; i < N; i++) {
@@ -250,7 +253,7 @@ const revL = freeverb(send[0], 0), revR = freeverb(send[1], 23);
 const out = [new Float32Array(N), new Float32Array(N)];
 let peak = 0;
 for (let i = 0; i < N; i++) {
-  const t = i / SR, fade = Math.min(1, t / 0.4) * (1 - ramp(t, S.end - 3, S.end + 0.2));
+  const t = i / SR, fade = Math.min(1, t / 0.4) * (1 - ramp(t, END - 3, END + 0.2));
   for (let c = 0; c < 2; c++) {
     const x = pad[c][i] + arp[c][i] + drums[c][i] + sfx[c][i] + bass[i] + (c ? revR[i] : revL[i]) * 2.2;
     const y = Math.tanh(x * 1.1) * fade;

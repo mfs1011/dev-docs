@@ -1,5 +1,7 @@
 # Qo'llanma videolari — manba
 
+**Git videolari uslubi va tekshiruv ro'yxati — [GIT-VIDEO-USLUBI.md](GIT-VIDEO-USLUBI.md)** (faqat Git uchun).
+
 Har papka — bitta video. Tayyor fayl `public/video/<kitob>/` ga qo'yiladi va bobga `<figure class="video">` bilan qo'shiladi (namuna: `content/git/README.md`).
 
 Tuzilishi (`git-umumiy/`):
@@ -14,6 +16,24 @@ Tuzilishi (`git-umumiy/`):
 | `stills.mjs` | Tanlangan soniyalarni `stills/*.jpg` ga chiqaradi (tez tekshirish) |
 | `render.mjs` | Barcha kadrlar → `segs/*.mp4` (4 parallel brauzer) |
 
+Ovozli hikoya (Gemini TTS, Charon) — subtitrlar `timeline.js` dagi `captions` dan:
+
+| Fayl | Vazifasi |
+| --- | --- |
+| `voice.mjs` | Subtitrlar → talaffuz shakli ("kommit", "brench"…) → **bitta** Gemini so'rovi → `voice/raw.wav` |
+| `../align-lines.py` | MMS aligner (`scripts/align.py`) bilan har gapning audio'dagi chegarasi → `voice/lines.json` |
+| `build-voice.mjs` | Gaplarni kesadi, animatsiya vaqtini ovozga moslab cho'zadi (`voice/warp.js`), `voice/voice.wav`, `voice/subtitles.vtt`, `voice/chapters.vtt` |
+| `mix.sh` | Musiqa gap paytida cho'kadi (sidechain), ikki bosqichli loudnorm → `mix.wav` |
+
+```bash
+node voice.mjs --plan                                   # modelga ketadigan matn, so'rovsiz
+set -a; . ../../.env; set +a; node voice.mjs            # kunlik bepul limitdan 1 so'rov
+../../.venv-align/bin/python ../align-lines.py .        # (papka ichidan; .venv-align — asosiy repo'da)
+node build-voice.mjs && node music.mjs && ./mix.sh
+```
+
+`voice/warp.js` bo'lsa, `index.html` va `music.mjs` cho'zilgan vaqtda ishlaydi va subtitr kadrga chizilmaydi (pleyerda CC).
+
 Yig'ish (papka ichida):
 
 ```bash
@@ -21,15 +41,15 @@ npm i --no-save playwright-core@1.57.0   # Chromium ~/Library/Caches/ms-playwrig
 node stills.mjs 4 33 90 131              # kadrlarni ko'rib chiqish
 node music.mjs
 node render.mjs
-ffmpeg -f concat -safe 0 -i segs/list.txt -i music.wav -map 0:v -map 1:a -c:v copy \
-  -af "loudnorm=I=-16:TP=-1.5:LRA=11" -c:a aac -b:a 192k -ar 48000 -shortest -movflags +faststart full.mp4
+ffmpeg -f concat -safe 0 -i segs/list.txt -i mix.wav -map 0:v -map 1:a -c:v copy \
+  -c:a aac -b:a 192k -shortest -movflags +faststart full.mp4   # ovozsiz versiyada mix.wav o'rniga music.wav
 # sayt uchun siqish va muqova
 ffmpeg -i full.mp4 -c:v libx264 -preset slow -crf 23 -tune animation -pix_fmt yuv420p \
   -c:a aac -b:a 128k -movflags +faststart web.mp4
 node poster.mjs && ffmpeg -i poster.png -vf scale=1280:-2 -q:v 3 poster.jpg
 ```
 
-`render.mjs` dagi `DUR` `timeline.js` dagi `S.end` bilan bir xil bo'lishi kerak.
+`render.mjs` davomiylikni sahifadan (`window.DURATION`) oladi.
 
 ## Asl nusxalar — Google Drive
 

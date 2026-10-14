@@ -4,11 +4,12 @@ Bu qo'llanma Git'ni **noldan oxirigacha** o'rgatadi: birinchi commit'dan `.git/o
 
 Boshlovchi uchun ham yozilgan: har yangi atama birinchi uchraganda tushuntiriladi. Lekin hech narsa "soddalashtirish uchun" tashlab ketilmagan — rasmiy hujjatdagi hamma muhim tafsilot o'z joyida.
 
-Boshlashdan oldin — Git'ning umumiy manzarasi 2,5 daqiqada:
+Boshlashdan oldin — Git'ning umumiy manzarasi 3,5 daqiqada:
 
 <figure class="video">
 <video controls preload="metadata" playsinline poster="/video/git/git-qanday-ishlaydi.jpg" src="/video/git/git-qanday-ishlaydi.mp4">
 <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/git/git-qanday-ishlaydi.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/git/git-qanday-ishlaydi.uz.vtt">
 </video>
 <figcaption>Git qanday ishlaydi: uch hudud, commit, branch, merge va remote.</figcaption>
 </figure>

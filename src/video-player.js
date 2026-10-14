@@ -16,10 +16,15 @@ const ICONS = {
   volume: '<path d="M4 9.5v5h3.4L12 18.6V5.4L7.4 9.5Z"/><path d="M15.4 8.8a4.5 4.5 0 0 1 0 6.4M17.9 6.3a8 8 0 0 1 0 11.4" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/>',
   muted: '<path d="M4 9.5v5h3.4L12 18.6V5.4L7.4 9.5Z"/><path d="m15.5 9.5 5 5m0-5-5 5" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/>',
   full: '<path d="M4 9V5.5A1.5 1.5 0 0 1 5.5 4H9m6 0h3.5A1.5 1.5 0 0 1 20 5.5V9m0 6v3.5a1.5 1.5 0 0 1-1.5 1.5H15m-6 0H5.5A1.5 1.5 0 0 1 4 18.5V15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>',
+  cc: '<rect x="2.5" y="5" width="19" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><text x="12" y="15.4" text-anchor="middle" font-size="7.4" font-weight="800" font-family="system-ui, sans-serif">CC</text>',
   exit: '<path d="M9 4v3.5A1.5 1.5 0 0 1 7.5 9H4m11-5v3.5A1.5 1.5 0 0 0 16.5 9H20m0 6h-3.5a1.5 1.5 0 0 0-1.5 1.5V20M4 15h3.5A1.5 1.5 0 0 1 9 16.5V20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>',
 }
 const icon = (name) => `<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">${ICONS[name]}</svg>`
 const SPEEDS = [1, 1.25, 1.5, 2, 0.75]
+// Subtitr tanlovi brauzerda eslab qolinadi (sahifa va videolar o'rtasida umumiy)
+const CC_KEY = 'video-subtitrlar'
+const readCc = () => { try { return localStorage.getItem(CC_KEY) === '1' } catch { return false } }
+const writeCc = (on) => { try { localStorage.setItem(CC_KEY, on ? '1' : '0') } catch { /* xususiy rejim */ } }
 const IDLE_MS = 2500
 
 const format = (seconds) => {
@@ -46,7 +51,7 @@ function setup(figure, video) {
   stage.className = 'vp-stage is-fresh'
   stage.tabIndex = 0
   stage.setAttribute('role', 'region')
-  stage.setAttribute('aria-label', 'Video pleyer. Probel — ijro/pauza, strelkalar — oldinga/orqaga, F — to‘liq ekran')
+  stage.setAttribute('aria-label', 'Video pleyer. Probel — ijro/pauza, strelkalar — oldinga/orqaga, F — to‘liq ekran, C — subtitrlar')
   // Panel videoning ostida: kadrdagi subtitrlarni hech qachon yopmaydi
   const screen = document.createElement('div')
   screen.className = 'vp-screen'
@@ -71,6 +76,7 @@ function setup(figure, video) {
         </div>
         <span class="vp-time"><span class="vp-cur">0:00</span><span class="vp-sep">/</span><span class="vp-dur">0:00</span></span>
         <span class="vp-chapter"></span>
+        <button type="button" class="vp-btn vp-cc" aria-label="Subtitrlar" aria-pressed="false" hidden>${icon('cc')}</button>
         <button type="button" class="vp-btn vp-speed" aria-label="Ijro tezligi">1×</button>
         <button type="button" class="vp-btn vp-full" aria-label="To‘liq ekran">${icon('full')}</button>
       </div>
@@ -80,7 +86,7 @@ function setup(figure, video) {
   const big = $('.vp-big'), playBtn = $('.vp-play'), progress = $('.vp-progress'), played = $('.vp-played')
   const buffered = $('.vp-buffered'), thumb = $('.vp-thumb'), marks = $('.vp-marks'), tip = $('.vp-tip')
   const cur = $('.vp-cur'), dur = $('.vp-dur'), chapterLabel = $('.vp-chapter'), speedBtn = $('.vp-speed')
-  const muteBtn = $('.vp-mute'), volume = $('.vp-volume'), fullBtn = $('.vp-full')
+  const muteBtn = $('.vp-mute'), volume = $('.vp-volume'), fullBtn = $('.vp-full'), ccBtn = $('.vp-cc')
 
   let chapters = []
   let list = null
@@ -142,6 +148,22 @@ function setup(figure, video) {
       mark.style.left = `${(chapter.start / total) * 100}%`
       marks.appendChild(mark)
     }
+  }
+
+  // ---- subtitrlar: <track kind="subtitles">, brauzerning o'zi chizadi (::cue uslubi CSS'da) ----
+  const subtitles = video.querySelector('track[kind="subtitles"], track[kind="captions"]')?.track ?? null
+  function setCc(on, remember = true) {
+    if (!subtitles) return
+    subtitles.mode = on ? 'showing' : 'hidden'
+    ccBtn.classList.toggle('is-on', on)
+    ccBtn.setAttribute('aria-pressed', String(on))
+    ccBtn.setAttribute('aria-label', on ? 'Subtitrlarni o‘chirish' : 'Subtitrlarni yoqish')
+    if (remember) writeCc(on)
+  }
+  if (subtitles) {
+    ccBtn.hidden = false
+    setCc(readCc(), false)
+    ccBtn.addEventListener('click', () => setCc(subtitles.mode !== 'showing'))
   }
 
   // ---- holat → ekran ----
@@ -291,7 +313,7 @@ function setup(figure, video) {
     if (event.target === volume || event.metaKey || event.ctrlKey || event.altKey) return
     const keys = {
       ' ': toggle, k: toggle, ArrowLeft: () => seekBy(-5), ArrowRight: () => seekBy(5),
-      j: () => seekBy(-10), l: () => seekBy(10), f: fullscreen, m: () => muteBtn.click(),
+      j: () => seekBy(-10), l: () => seekBy(10), f: fullscreen, m: () => muteBtn.click(), c: () => subtitles && ccBtn.click(),
       Home: () => seekBy(-duration()), End: () => seekBy(duration()),
     }
     const action = keys[event.key.length === 1 ? event.key.toLowerCase() : event.key]

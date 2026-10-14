@@ -58,6 +58,104 @@
 
   const xulosa = { stations: [0.4, 0.75, 1.1, 1.45, 1.8], outro: 9.5, thanks: 10.5 };
 
+  // Subtitrlar (sahna ichidagi vaqt, soniya): [boshlanish, tugash, matn]. `...` — buyruq/kod.
+  // Ovoz (voice.mjs), VTT va vaqtni cho'zish (warp) shu ro'yxatdan o'qiydi.
+  const captions = {
+    muammo: [
+      [0.3, 5.0, 'Tanish holat: bitta faylning o‘nlab nusxalari…'],
+      [5.0, 7.8, 'Qaysi biri oxirgisi? Nima o‘zgardi? Kim o‘zgartirdi?'],
+      [7.8, 12.6, 'Git har bir holatni tartibli tarixga yozadi — nusxa ko‘paytirish shart emas.'],
+    ],
+    hudud: [
+      [0.3, 3.6, 'Git’da o‘zgarish uch joydan o‘tadi.'],
+      [3.6, 7.0, 'Ishchi papka — fayllarni tahrirlaydigan joyingiz.'],
+      [7.0, 12.0, '`git add` o‘zgarishni staging’ga qo‘yadi: «keyingi commit’ga shu kirsin».'],
+      [12.0, 17.6, '`git commit` staging’dagi holatni surat (snapshot) qilib, tarixga yozadi.'],
+      [17.6, 26.0, 'Yana tahrirlash → `git add` → `git commit`. Yangi commit oldingisiga bog‘lanadi.'],
+      [26.0, 29.6, 'Tahrirlash → add → commit: Git bilan ishlashning asosiy sikli.'],
+    ],
+    commit: [
+      [0.3, 4.4, 'Commit — loyihaning ma’lum paytdagi to‘liq surati (snapshot).'],
+      [4.4, 9.4, 'Unda muallif, sana, xabar va ota-commit saqlanadi; nomi — noyob hash.'],
+      [9.4, 15.0, 'Har commit o‘z ota-commit’ini ko‘rsatadi — shu tariqa tarix zanjiri hosil bo‘ladi.'],
+      [15.0, 19.6, 'Shu zanjir tufayli istalgan avvalgi holatni ko‘rish yoki unga qaytish mumkin.'],
+    ],
+    branch: [
+      [0.3, 3.0, 'Bu — main branch’dagi commit’lar.'],
+      [3.0, 6.0, 'Branch — commit’ni ko‘rsatib turuvchi yengil ko‘rsatkich.\nHEAD — hozir qaysi branch’da turganingiz.'],
+      [6.0, 9.5, '`git branch feature` — yangi ko‘rsatkich yaratadi. Fayllar nusxalanmaydi.'],
+      [9.5, 12.5, '`git switch feature` — HEAD endi feature’ni ko‘rsatadi.'],
+      [12.5, 19.0, 'Yangi commit’lar feature’ni oldinga suradi, HEAD unga ergashadi.'],
+      [19.0, 24.6, 'main esa joyida qoldi: yangi ishni asosiy koddan alohida, xavfsiz qilasiz.'],
+      [25.0, 29.0, 'Ish tayyor. Uni main’ga qo‘shamiz: avval `git switch main`.'],
+      [29.0, 33.5, 'Bu orada main’da ham yangi commit paydo bo‘ldi.'],
+      [33.5, 38.5, '`git merge feature` — ikki tarixni birlashtiradi.\nMerge commit’ning ikkita ota-commit’i bor.'],
+      [38.5, 42.6, 'Ikki branch bir qatorni turlicha o‘zgartirgan bo‘lsa — konflikt.\nGit to‘xtaydi va qaysi variant qolishini sizga qoldiradi.'],
+    ],
+    remote: [
+      [0.3, 3.0, 'Git taqsimlangan: har kompyuterda tarixning to‘liq nusxasi bor.'],
+      [3.0, 8.4, '`git push` — commit’laringizni remote’ga (masalan, GitHub’ga) yuboradi.'],
+      [8.4, 13.0, 'Jamoadoshingiz ham o‘z commit’ini push qildi…'],
+      [13.0, 18.2, '`git pull` — remote’dagi yangi commit’larni olib, branch’ingizga qo‘shadi.'],
+      [18.2, 24.6, 'Aslida pull ikki qadam: `git fetch` (yuklab olish) + `git merge` (birlashtirish).'],
+    ],
+    xulosa: [
+      [0.4, 5.0, 'Har kungi sikl: tahrirlash → `git add` → `git commit` → `git push`.'],
+      [5.0, 9.4, 'Jamoadan yangilik olish — `git pull`. Alohida ish uchun — branch.'],
+    ],
+  };
+
+  // Ovozli hikoya matni — eshitish uchun yozilgan (subtitr ko'z uchun, bu quloq uchun): to'liq jumlalar,
+  // belgilarsiz. Oynalar captions bilan bir xil + kirish va xotima. CC subtitri ham shu matnni ko'rsatadi.
+  const narration = {
+    intro: [
+      [1.0, 8.6, 'Salom! Bu videoda Git qanday ishlashini oddiy misollar bilan ko‘rib chiqamiz.'],
+    ],
+    muammo: [
+      [0.3, 5.0, 'Ko‘pchilikka tanish holat: bitta faylning nusxalari ko‘payib ketaveradi. Yangisi, yakuniysi, yana bitta yakuniysi…'],
+      [5.0, 7.8, 'Endi qaysi biri oxirgisi? Nima o‘zgardi, kim o‘zgartirdi? Buni bilish qiyin.'],
+      [7.8, 12.6, 'Git aynan shu muammoni hal qiladi. U loyihaning har bir holatini tartib bilan tarixga yozib boradi.'],
+    ],
+    hudud: [
+      [0.3, 3.6, 'Git’da har bir o‘zgarish uch bosqichdan o‘tadi.'],
+      [3.6, 7.0, 'Birinchisi — ishchi papka. Siz fayllarni shu yerda tahrirlaysiz.'],
+      [7.0, 12.0, 'Keyin git add buyrug‘i bilan o‘zgarishni staging degan joyga qo‘yasiz. Bu bilan Git’ga aytasiz: keyingi commit’ga mana shular kirsin.'],
+      [12.0, 17.6, 'git commit buyrug‘i esa staging’dagi holatni suratga oladi va uni tarixga saqlab qo‘yadi.'],
+      [17.6, 26.0, 'Yana bitta faylni o‘zgartiramiz, add qilamiz va commit qilamiz. Yangi commit avvalgisiga ulanadi.'],
+      [26.0, 29.6, 'Tahrirlash, add, commit. Git bilan ishlash asosan shu uch qadamdan iborat.'],
+    ],
+    commit: [
+      [0.3, 4.4, 'Xo‘sh, commit’ning o‘zi nima? Bu loyihaning ma’lum bir paytdagi to‘liq surati.'],
+      [4.4, 9.4, 'Unda kim, qachon va nima uchun o‘zgartirgani yoziladi. Har bir commit’ning o‘z noyob raqami bor, uni hash deyiladi.'],
+      [9.4, 15.0, 'Har bir commit o‘zidan oldingisiga, ya’ni ota commit’ga ishora qiladi. Shu tarzda tarix zanjiri hosil bo‘ladi.'],
+      [15.0, 19.6, 'Shu zanjir tufayli istalgan paytda avvalgi holatga qarash yoki unga qaytish mumkin.'],
+    ],
+    branch: [
+      [0.3, 3.0, 'Mana, main branch’dagi commit’lar.'],
+      [3.0, 6.0, 'Branch — bu bitta commit’ni ko‘rsatib turadigan yengil belgi, xolos. HEAD esa siz hozir qaysi branch’da turganingizni bildiradi.'],
+      [6.0, 9.5, 'git branch feature buyrug‘i yangi branch yaratadi. Bunda fayllar nusxalanmaydi, faqat yangi belgi paydo bo‘ladi.'],
+      [9.5, 12.5, 'git switch bilan feature’ga o‘tamiz. Endi HEAD feature’ni ko‘rsatadi.'],
+      [12.5, 19.0, 'Yangi commit’lar feature’ni oldinga suradi. HEAD ham u bilan birga yuradi.'],
+      [19.0, 24.6, 'main esa joyida qoldi. Demak, yangi ishni asosiy kodga tegmasdan, xavfsiz sinab ko‘rishingiz mumkin.'],
+      [25.0, 29.0, 'Ish tayyor bo‘lgach, uni main’ga qo‘shamiz. Buning uchun avval main’ga qaytamiz.'],
+      [29.0, 33.5, 'Bu orada main’da ham yangi commit paydo bo‘ldi.'],
+      [33.5, 38.5, 'git merge feature buyrug‘i ikki tarixni birlashtiradi. Hosil bo‘lgan merge commit’ning ikkita ota commit’i bo‘ladi.'],
+      [38.5, 42.6, 'Agar ikkala branch bitta qatorni har xil o‘zgartirgan bo‘lsa, konflikt yuz beradi. Shunda Git to‘xtaydi va qaysi variant qolishini sizdan so‘raydi.'],
+    ],
+    remote: [
+      [0.3, 3.0, 'Git — taqsimlangan tizim. Har bir kompyuterda loyiha tarixining to‘liq nusxasi saqlanadi.'],
+      [3.0, 8.4, 'git push buyrug‘i sizning commit’laringizni masofaviy repozitoriyga, masalan GitHub’ga yuboradi.'],
+      [8.4, 13.0, 'Bu orada jamoadoshingiz ham o‘z commit’ini yubordi.'],
+      [13.0, 18.2, 'git pull esa masofaviy repozitoriydagi yangi commit’larni olib keladi va sizning branch’ingizga qo‘shadi.'],
+      [18.2, 24.6, 'Aslida pull ikki ishni bajaradi. Avval fetch bilan yangiliklarni yuklab oladi, keyin merge bilan birlashtiradi.'],
+    ],
+    xulosa: [
+      [0.4, 5.0, 'Xulosa qilsak, kundalik ish shunday: tahrirlaysiz, add qilasiz, commit qilasiz va push qilasiz.'],
+      [5.0, 9.4, 'Jamoadan yangiliklarni olish uchun pull qilasiz. Yangi ishni esa alohida branch’da boshlaysiz.'],
+      [10.6, 15.4, 'E’tiboringiz uchun rahmat! Batafsil ma’lumotni saytdagi Git qo‘llanmasidan topasiz.'],
+    ],
+  };
+
   // Ovoz effektlari uchun belgilar (global vaqtda)
   const cues = [];
   const add = (t, type) => cues.push({ t, type });
@@ -91,5 +189,18 @@
   add(S.xulosa + xulosa.thanks - 0.05, 'swell');
   cues.sort((a, b) => a.t - b.t);
 
-  g.TL = { CPS, S, intro, muammo, hudud, commit, branch, remote, xulosa, cues };
+  // Vaqtni cho'zish: build-voice.mjs ovozga moslab yaratgan voice/warp.js — [[yangi, eski], ...] tugunlar.
+  // Animatsiya va effektlar eski vaqtda yozilgan; video yangi vaqtda. warp bo'lmasa — o'zgarishsiz.
+  const lerpKnots = (knots, x, from, to) => {
+    if (!knots) return x;
+    for (let i = 1; i < knots.length; i++) {
+      const a = knots[i - 1], b = knots[i];
+      if (x <= b[from] || i === knots.length - 1) return a[to] + ((x - a[from]) / (b[from] - a[from] || 1)) * (b[to] - a[to]);
+    }
+    return x;
+  };
+  const toOld = (t) => lerpKnots(g.TL.warp, t, 0, 1);
+  const toNew = (t) => lerpKnots(g.TL.warp, t, 1, 0);
+
+  g.TL = { CPS, S, intro, muammo, hudud, commit, branch, remote, xulosa, captions, narration, cues, burnCaptions: true, warp: g.TL?.warp ?? null, toOld, toNew };
 })(typeof window !== 'undefined' ? window : globalThis);
