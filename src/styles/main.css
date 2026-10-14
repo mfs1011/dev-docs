@@ -974,6 +974,27 @@ a.home-account:hover { border-color: var(--border-strong); text-decoration: none
 .vp-btn:active { transform: scale(.92); }
 .vp-btn:focus-visible { outline: 2px solid #fff; outline-offset: -2px; }
 .vp-speed { width: auto; min-width: 44px; padding: 0 8px; font: 650 13px/1 var(--font-mono); }
+.vp-cc { position: relative; }
+.vp-cc[hidden] { display: none; }
+.vp-cc.is-on::after {
+    content: "";
+    position: absolute;
+    left: 9px;
+    right: 9px;
+    bottom: 4px;
+    height: 2px;
+    border-radius: 2px;
+    background: var(--accent);
+}
+
+/* brauzer chizadigan subtitr (track mode = showing) */
+.vp-stage video::cue {
+    background: rgba(6, 10, 24, .82);
+    color: #fff;
+    font-family: var(--font-sans);
+    font-size: clamp(14px, 2.4vw, 22px);
+    line-height: 1.4;
+}
 
 .vp-vol { display: flex; align-items: center; }
 .vp-volume {

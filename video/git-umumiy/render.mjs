@@ -1,9 +1,14 @@
 import { chromium } from 'playwright-core';
 import { spawn } from 'node:child_process';
 import fs from 'node:fs';
-const FPS = 30, DUR = 156, TOTAL = DUR * FPS, WORKERS = 4;
+const FPS = 30, WORKERS = 4;
 fs.mkdirSync('segs', { recursive: true });
 const browser = await chromium.launch();
+// Davomiylik sahifadan (window.DURATION) — ovozli versiyada cho'zilgan vaqt
+const probe = await browser.newPage();
+await probe.goto('file://' + process.cwd() + '/index.html');
+const TOTAL = Math.ceil((await probe.evaluate(() => window.DURATION)) * FPS);
+await probe.close();
 const per = Math.ceil(TOTAL / WORKERS);
 let done = 0;
 async function worker(w) {
