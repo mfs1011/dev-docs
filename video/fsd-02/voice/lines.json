@@ -1,0 +1,1860 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Salom! Bu FSD qo‘llanmasining ikkinchi bobi. FSD 2.1 versiyasining asosiy g‘oyasi — sahifadan boshlashni ko‘rib chiqamiz.",
+    "show": "Salom! Bu FSD qo‘llanmasining ikkinchi bobi. FSD 2.1 versiyasining asosiy g‘oyasi — sahifadan boshlashni ko‘rib chiqamiz.",
+    "say": "Salom! Bu Ef-es-di qo‘llanmasining ikkinchi bobi. Ef-es-di ikki nuqta bir versiyasining asosiy g‘oyasi — sahifadan boshlashni ko‘rib chiqamiz.",
+    "a0": 0.26,
+    "a1": 9.41,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.26,
+        "e": 0.58
+      },
+      {
+        "w": "Bu",
+        "s": 1.02,
+        "e": 1.1
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 1.32,
+        "e": 1.68
+      },
+      {
+        "w": "qo‘llanmasining",
+        "s": 1.76,
+        "e": 2.48
+      },
+      {
+        "w": "ikkinchi",
+        "s": 2.56,
+        "e": 2.94
+      },
+      {
+        "w": "bobi.",
+        "s": 3.0,
+        "e": 3.26
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 3.96,
+        "e": 4.36
+      },
+      {
+        "w": "ikki",
+        "s": 4.46,
+        "e": 4.66
+      },
+      {
+        "w": "nuqta",
+        "s": 4.72,
+        "e": 4.96
+      },
+      {
+        "w": "bir",
+        "s": 5.02,
+        "e": 5.14
+      },
+      {
+        "w": "versiyasining",
+        "s": 5.2,
+        "e": 5.82
+      },
+      {
+        "w": "asosiy",
+        "s": 5.92,
+        "e": 6.38
+      },
+      {
+        "w": "g‘oyasi",
+        "s": 6.48,
+        "e": 7.02
+      },
+      {
+        "w": "—",
+        "s": 7.02,
+        "e": 7.02
+      },
+      {
+        "w": "sahifadan",
+        "s": 7.44,
+        "e": 8.09
+      },
+      {
+        "w": "boshlashni",
+        "s": 8.15,
+        "e": 8.71
+      },
+      {
+        "w": "ko‘rib",
+        "s": 8.77,
+        "e": 8.99
+      },
+      {
+        "w": "chiqamiz.",
+        "s": 9.03,
+        "e": 9.41
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "v20",
+    "text": "Avvalgi, 2.0 versiyada FSD interfeysdagi entity va feature’larni topishdan boshlashni tavsiya qilardi.",
+    "show": "Avvalgi, 2.0 versiyada FSD interfeysdagi entity va feature’larni topishdan boshlashni tavsiya qilardi.",
+    "say": "Avvalgi, ikki nuqta nol versiyada Ef-es-di interfeysdagi entiti va ficher’larni topishdan boshlashni tavsiya qilardi.",
+    "a0": 10.57,
+    "a1": 17.27,
+    "words": [
+      {
+        "w": "Avvalgi,",
+        "s": 10.57,
+        "e": 11.01
+      },
+      {
+        "w": "ikki",
+        "s": 11.13,
+        "e": 11.33
+      },
+      {
+        "w": "nuqta",
+        "s": 11.39,
+        "e": 11.63
+      },
+      {
+        "w": "nol",
+        "s": 11.67,
+        "e": 11.85
+      },
+      {
+        "w": "versiyada",
+        "s": 11.91,
+        "e": 12.33
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 12.51,
+        "e": 12.95
+      },
+      {
+        "w": "interfeysdagi",
+        "s": 13.13,
+        "e": 13.87
+      },
+      {
+        "w": "entiti",
+        "s": 14.07,
+        "e": 14.53
+      },
+      {
+        "w": "va",
+        "s": 14.65,
+        "e": 14.73
+      },
+      {
+        "w": "ficher’larni",
+        "s": 14.85,
+        "e": 15.53
+      },
+      {
+        "w": "topishdan",
+        "s": 15.57,
+        "e": 16.01
+      },
+      {
+        "w": "boshlashni",
+        "s": 16.05,
+        "e": 16.53
+      },
+      {
+        "w": "tavsiya",
+        "s": 16.57,
+        "e": 16.85
+      },
+      {
+        "w": "qilardi.",
+        "s": 16.89,
+        "e": 17.27
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "v20",
+    "text": "Keyin ulardan widget’lar, widget’lardan esa sahifalar yig‘ilardi. Ya’ni bino pastdan yuqoriga qurilardi.",
+    "show": "Keyin ulardan widget’lar, widget’lardan esa sahifalar yig‘ilardi. Ya’ni bino pastdan yuqoriga qurilardi.",
+    "say": "Keyin ulardan vijet’lar, vijet’lardan esa sahifalar yig‘ilardi. Ya’ni bino pastdan yuqoriga qurilardi.",
+    "a0": 17.95,
+    "a1": 24.96,
+    "words": [
+      {
+        "w": "Keyin",
+        "s": 17.95,
+        "e": 18.25
+      },
+      {
+        "w": "ulardan",
+        "s": 18.31,
+        "e": 18.73
+      },
+      {
+        "w": "vijet’lar,",
+        "s": 18.85,
+        "e": 19.47
+      },
+      {
+        "w": "vijet’lardan",
+        "s": 19.85,
+        "e": 20.51
+      },
+      {
+        "w": "esa",
+        "s": 20.57,
+        "e": 20.73
+      },
+      {
+        "w": "sahifalar",
+        "s": 20.81,
+        "e": 21.37
+      },
+      {
+        "w": "yig‘ilardi.",
+        "s": 21.43,
+        "e": 21.91
+      },
+      {
+        "w": "Ya’ni",
+        "s": 22.41,
+        "e": 22.7
+      },
+      {
+        "w": "bino",
+        "s": 22.94,
+        "e": 23.24
+      },
+      {
+        "w": "pastdan",
+        "s": 23.42,
+        "e": 23.86
+      },
+      {
+        "w": "yuqoriga",
+        "s": 23.94,
+        "e": 24.42
+      },
+      {
+        "w": "qurilardi.",
+        "s": 24.46,
+        "e": 24.96
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "v21",
+    "text": "2.1 versiyadagi asosiy o‘zgarish — yangi fikrlash modeli: avval sahifalar.",
+    "show": "2.1 versiyadagi asosiy o‘zgarish — yangi fikrlash modeli: avval sahifalar.",
+    "say": "Ikki nuqta bir versiyadagi asosiy o‘zgarish — yangi fikrlash modeli: avval sahifalar.",
+    "a0": 25.74,
+    "a1": 31.28,
+    "words": [
+      {
+        "w": "Ikki",
+        "s": 25.74,
+        "e": 25.94
+      },
+      {
+        "w": "nuqta",
+        "s": 26.0,
+        "e": 26.24
+      },
+      {
+        "w": "bir",
+        "s": 26.28,
+        "e": 26.4
+      },
+      {
+        "w": "versiyadagi",
+        "s": 26.46,
+        "e": 26.96
+      },
+      {
+        "w": "asosiy",
+        "s": 27.04,
+        "e": 27.42
+      },
+      {
+        "w": "o‘zgarish",
+        "s": 27.54,
+        "e": 28.02
+      },
+      {
+        "w": "—",
+        "s": 28.02,
+        "e": 28.02
+      },
+      {
+        "w": "yangi",
+        "s": 28.2,
+        "e": 28.52
+      },
+      {
+        "w": "fikrlash",
+        "s": 28.58,
+        "e": 29.02
+      },
+      {
+        "w": "modeli:",
+        "s": 29.08,
+        "e": 29.42
+      },
+      {
+        "w": "avval",
+        "s": 30.08,
+        "e": 30.48
+      },
+      {
+        "w": "sahifalar.",
+        "s": 30.68,
+        "e": 31.28
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "v21",
+    "text": "Ilovani avval sahifalarga bo‘lasiz. Har bir sahifa o‘z interfeysi, so‘rovlari va holatini o‘z ichida saqlaydi. Umumiy poydevor esa shared qatlamida.",
+    "show": "Ilovani avval sahifalarga bo‘lasiz. Har bir sahifa o‘z interfeysi, so‘rovlari va holatini o‘z ichida saqlaydi. Umumiy poydevor esa shared qatlamida.",
+    "say": "Ilovani avval sahifalarga bo‘lasiz. Har bir sahifa o‘z interfeysi, so‘rovlari va holatini o‘z ichida saqlaydi. Umumiy poydevor esa sherd qatlamida.",
+    "a0": 31.98,
+    "a1": 42.35,
+    "words": [
+      {
+        "w": "Ilovani",
+        "s": 31.98,
+        "e": 32.4
+      },
+      {
+        "w": "avval",
+        "s": 32.48,
+        "e": 32.72
+      },
+      {
+        "w": "sahifalarga",
+        "s": 32.76,
+        "e": 33.38
+      },
+      {
+        "w": "bo‘lasiz.",
+        "s": 33.44,
+        "e": 33.94
+      },
+      {
+        "w": "Har",
+        "s": 34.58,
+        "e": 34.74
+      },
+      {
+        "w": "bir",
+        "s": 34.78,
+        "e": 34.88
+      },
+      {
+        "w": "sahifa",
+        "s": 34.94,
+        "e": 35.34
+      },
+      {
+        "w": "o‘z",
+        "s": 35.48,
+        "e": 35.62
+      },
+      {
+        "w": "interfeysi,",
+        "s": 35.72,
+        "e": 36.4
+      },
+      {
+        "w": "so‘rovlari",
+        "s": 36.8,
+        "e": 37.36
+      },
+      {
+        "w": "va",
+        "s": 37.46,
+        "e": 37.55
+      },
+      {
+        "w": "holatini",
+        "s": 37.63,
+        "e": 38.17
+      },
+      {
+        "w": "o‘z",
+        "s": 38.33,
+        "e": 38.45
+      },
+      {
+        "w": "ichida",
+        "s": 38.49,
+        "e": 38.75
+      },
+      {
+        "w": "saqlaydi.",
+        "s": 38.81,
+        "e": 39.25
+      },
+      {
+        "w": "Umumiy",
+        "s": 39.91,
+        "e": 40.27
+      },
+      {
+        "w": "poydevor",
+        "s": 40.37,
+        "e": 40.89
+      },
+      {
+        "w": "esa",
+        "s": 40.97,
+        "e": 41.15
+      },
+      {
+        "w": "sherd",
+        "s": 41.47,
+        "e": 41.81
+      },
+      {
+        "w": "qatlamida.",
+        "s": 41.85,
+        "e": 42.35
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "v21",
+    "text": "Bu buzuvchi o‘zgarish emas: 2.0 versiyada yozilgan loyiha 2.1 da ham to‘g‘ri hisoblanadi.",
+    "show": "Bu buzuvchi o‘zgarish emas: 2.0 versiyada yozilgan loyiha 2.1 da ham to‘g‘ri hisoblanadi.",
+    "say": "Bu buzuvchi o‘zgarish emas: ikki nuqta nol versiyada yozilgan loyiha ikki nuqta bir da ham to‘g‘ri hisoblanadi.",
+    "a0": 43.09,
+    "a1": 49.57,
+    "words": [
+      {
+        "w": "Bu",
+        "s": 43.09,
+        "e": 43.19
+      },
+      {
+        "w": "buzuvchi",
+        "s": 43.43,
+        "e": 43.83
+      },
+      {
+        "w": "o‘zgarish",
+        "s": 43.87,
+        "e": 44.29
+      },
+      {
+        "w": "emas:",
+        "s": 44.35,
+        "e": 44.63
+      },
+      {
+        "w": "ikki",
+        "s": 45.29,
+        "e": 45.49
+      },
+      {
+        "w": "nuqta",
+        "s": 45.55,
+        "e": 45.81
+      },
+      {
+        "w": "nol",
+        "s": 45.85,
+        "e": 46.03
+      },
+      {
+        "w": "versiyada",
+        "s": 46.07,
+        "e": 46.45
+      },
+      {
+        "w": "yozilgan",
+        "s": 46.47,
+        "e": 46.93
+      },
+      {
+        "w": "loyiha",
+        "s": 46.97,
+        "e": 47.37
+      },
+      {
+        "w": "ikki",
+        "s": 47.59,
+        "e": 47.83
+      },
+      {
+        "w": "nuqta",
+        "s": 47.87,
+        "e": 48.13
+      },
+      {
+        "w": "bir",
+        "s": 48.19,
+        "e": 48.31
+      },
+      {
+        "w": "da",
+        "s": 48.37,
+        "e": 48.45
+      },
+      {
+        "w": "ham",
+        "s": 48.51,
+        "e": 48.65
+      },
+      {
+        "w": "to‘g‘ri",
+        "s": 48.71,
+        "e": 48.97
+      },
+      {
+        "w": "hisoblanadi.",
+        "s": 49.01,
+        "e": 49.57
+      }
+    ]
+  },
+  {
+    "id": "L7",
+    "scene": "conduit",
+    "text": "Rasmiy qo‘llanmadagi misol — Conduit, ya’ni Medium blog platformasining oddiy nusxasi.",
+    "show": "Rasmiy qo‘llanmadagi misol — Conduit, ya’ni Medium blog platformasining oddiy nusxasi.",
+    "say": "Rasmiy qo‘llanmadagi misol — Kondyuit, ya’ni Midium blog platformasining oddiy nusxasi.",
+    "a0": 50.33,
+    "a1": 56.06,
+    "words": [
+      {
+        "w": "Rasmiy",
+        "s": 50.33,
+        "e": 50.61
+      },
+      {
+        "w": "qo‘llanmadagi",
+        "s": 50.71,
+        "e": 51.33
+      },
+      {
+        "w": "misol",
+        "s": 51.37,
+        "e": 51.69
+      },
+      {
+        "w": "—",
+        "s": 51.69,
+        "e": 51.69
+      },
+      {
+        "w": "Kondyuit,",
+        "s": 51.89,
+        "e": 52.45
+      },
+      {
+        "w": "ya’ni",
+        "s": 52.96,
+        "e": 53.24
+      },
+      {
+        "w": "Midium",
+        "s": 53.46,
+        "e": 53.9
+      },
+      {
+        "w": "blog",
+        "s": 53.94,
+        "e": 54.16
+      },
+      {
+        "w": "platformasining",
+        "s": 54.2,
+        "e": 55.0
+      },
+      {
+        "w": "oddiy",
+        "s": 55.2,
+        "e": 55.5
+      },
+      {
+        "w": "nusxasi.",
+        "s": 55.56,
+        "e": 56.06
+      }
+    ]
+  },
+  {
+    "id": "L8",
+    "scene": "conduit",
+    "text": "Unda oltita sahifa bor: maqolalar lentasi, kirish, maqolani o‘qish, tahrirlash, profil va sozlamalar.",
+    "show": "Unda oltita sahifa bor: maqolalar lentasi, kirish, maqolani o‘qish, tahrirlash, profil va sozlamalar.",
+    "say": "Unda oltita sahifa bor: maqolalar lentasi, kirish, maqolani o‘qish, tahrirlash, profil va sozlamalar.",
+    "a0": 56.76,
+    "a1": 65.48,
+    "words": [
+      {
+        "w": "Unda",
+        "s": 56.76,
+        "e": 56.98
+      },
+      {
+        "w": "oltita",
+        "s": 57.1,
+        "e": 57.38
+      },
+      {
+        "w": "sahifa",
+        "s": 57.44,
+        "e": 57.78
+      },
+      {
+        "w": "bor:",
+        "s": 57.84,
+        "e": 58.0
+      },
+      {
+        "w": "maqolalar",
+        "s": 58.58,
+        "e": 59.18
+      },
+      {
+        "w": "lentasi,",
+        "s": 59.24,
+        "e": 59.74
+      },
+      {
+        "w": "kirish,",
+        "s": 60.32,
+        "e": 60.72
+      },
+      {
+        "w": "maqolani",
+        "s": 61.26,
+        "e": 61.78
+      },
+      {
+        "w": "o‘qish,",
+        "s": 61.92,
+        "e": 62.34
+      },
+      {
+        "w": "tahrirlash,",
+        "s": 62.82,
+        "e": 63.58
+      },
+      {
+        "w": "profil",
+        "s": 64.04,
+        "e": 64.52
+      },
+      {
+        "w": "va",
+        "s": 64.74,
+        "e": 64.82
+      },
+      {
+        "w": "sozlamalar.",
+        "s": 64.9,
+        "e": 65.48
+      }
+    ]
+  },
+  {
+    "id": "L9",
+    "scene": "conduit",
+    "text": "Kirish va ro‘yxatdan o‘tish deyarli bir xil, shuning uchun ular bitta slice’da turadi.",
+    "show": "Kirish va ro‘yxatdan o‘tish deyarli bir xil, shuning uchun ular bitta slice’da turadi.",
+    "say": "Kirish va ro‘yxatdan o‘tish deyarli bir xil, shuning uchun ular bitta slaysda turadi.",
+    "a0": 66.16,
+    "a1": 70.55,
+    "words": [
+      {
+        "w": "Kirish",
+        "s": 66.16,
+        "e": 66.44
+      },
+      {
+        "w": "va",
+        "s": 66.5,
+        "e": 66.56
+      },
+      {
+        "w": "ro‘yxatdan",
+        "s": 66.62,
+        "e": 67.1
+      },
+      {
+        "w": "o‘tish",
+        "s": 67.14,
+        "e": 67.42
+      },
+      {
+        "w": "deyarli",
+        "s": 67.46,
+        "e": 67.85
+      },
+      {
+        "w": "bir",
+        "s": 67.91,
+        "e": 68.01
+      },
+      {
+        "w": "xil,",
+        "s": 68.07,
+        "e": 68.23
+      },
+      {
+        "w": "shuning",
+        "s": 68.67,
+        "e": 68.93
+      },
+      {
+        "w": "uchun",
+        "s": 68.95,
+        "e": 69.15
+      },
+      {
+        "w": "ular",
+        "s": 69.19,
+        "e": 69.39
+      },
+      {
+        "w": "bitta",
+        "s": 69.47,
+        "e": 69.75
+      },
+      {
+        "w": "slaysda",
+        "s": 69.81,
+        "e": 70.21
+      },
+      {
+        "w": "turadi.",
+        "s": 70.25,
+        "e": 70.55
+      }
+    ]
+  },
+  {
+    "id": "L10",
+    "scene": "conduit",
+    "text": "Qo‘llanma aytadi: butun ilova katta ehtimol bilan uchta qatlamga sig‘adi — app, pages va shared.",
+    "show": "Qo‘llanma aytadi: butun ilova katta ehtimol bilan uchta qatlamga sig‘adi — app, pages va shared.",
+    "say": "Qo‘llanma aytadi: butun ilova katta ehtimol bilan uchta qatlamga sig‘adi — ep, peyjiz va sherd.",
+    "a0": 71.25,
+    "a1": 78.29,
+    "words": [
+      {
+        "w": "Qo‘llanma",
+        "s": 71.25,
+        "e": 71.67
+      },
+      {
+        "w": "aytadi:",
+        "s": 71.73,
+        "e": 72.05
+      },
+      {
+        "w": "butun",
+        "s": 72.51,
+        "e": 72.87
+      },
+      {
+        "w": "ilova",
+        "s": 72.97,
+        "e": 73.35
+      },
+      {
+        "w": "katta",
+        "s": 73.53,
+        "e": 73.85
+      },
+      {
+        "w": "ehtimol",
+        "s": 73.91,
+        "e": 74.27
+      },
+      {
+        "w": "bilan",
+        "s": 74.31,
+        "e": 74.53
+      },
+      {
+        "w": "uchta",
+        "s": 74.65,
+        "e": 74.89
+      },
+      {
+        "w": "qatlamga",
+        "s": 74.93,
+        "e": 75.37
+      },
+      {
+        "w": "sig‘adi",
+        "s": 75.43,
+        "e": 75.77
+      },
+      {
+        "w": "—",
+        "s": 75.77,
+        "e": 75.77
+      },
+      {
+        "w": "ep,",
+        "s": 76.39,
+        "e": 76.59
+      },
+      {
+        "w": "peyjiz",
+        "s": 77.05,
+        "e": 77.51
+      },
+      {
+        "w": "va",
+        "s": 77.71,
+        "e": 77.79
+      },
+      {
+        "w": "sherd.",
+        "s": 77.91,
+        "e": 78.29
+      }
+    ]
+  },
+  {
+    "id": "L11",
+    "scene": "nomlar",
+    "text": "Nega bunday? Rasmiy hujjat eslatadi: qatlam o‘zidagi slice’lar uchun global nomlar maydoniga o‘xshaydi.",
+    "show": "Nega bunday? Rasmiy hujjat eslatadi: qatlam o‘zidagi slice’lar uchun global nomlar maydoniga o‘xshaydi.",
+    "say": "Nega bunday? Rasmiy hujjat eslatadi: qatlam o‘zidagi slayslar uchun global nomlar maydoniga o‘xshaydi.",
+    "a0": 78.97,
+    "a1": 85.4,
+    "words": [
+      {
+        "w": "Nega",
+        "s": 78.97,
+        "e": 79.21
+      },
+      {
+        "w": "bunday?",
+        "s": 79.25,
+        "e": 79.57
+      },
+      {
+        "w": "Rasmiy",
+        "s": 80.23,
+        "e": 80.53
+      },
+      {
+        "w": "hujjat",
+        "s": 80.59,
+        "e": 80.93
+      },
+      {
+        "w": "eslatadi:",
+        "s": 80.99,
+        "e": 81.43
+      },
+      {
+        "w": "qatlam",
+        "s": 81.89,
+        "e": 82.27
+      },
+      {
+        "w": "o‘zidagi",
+        "s": 82.37,
+        "e": 82.78
+      },
+      {
+        "w": "slayslar",
+        "s": 82.84,
+        "e": 83.34
+      },
+      {
+        "w": "uchun",
+        "s": 83.4,
+        "e": 83.6
+      },
+      {
+        "w": "global",
+        "s": 83.68,
+        "e": 84.1
+      },
+      {
+        "w": "nomlar",
+        "s": 84.18,
+        "e": 84.52
+      },
+      {
+        "w": "maydoniga",
+        "s": 84.56,
+        "e": 84.98
+      },
+      {
+        "w": "o‘xshaydi.",
+        "s": 85.0,
+        "e": 85.4
+      }
+    ]
+  },
+  {
+    "id": "L12",
+    "scene": "nomlar",
+    "text": "Bir joyda ishlatiladigan o‘zgaruvchini global qilmaysiz. Xuddi shunday, bitta sahifaga kerak kodni features yoki entities qatlamiga chiqarmang.",
+    "show": "Bir joyda ishlatiladigan o‘zgaruvchini global qilmaysiz. Xuddi shunday, bitta sahifaga kerak kodni features yoki entities qatlamiga chiqarmang.",
+    "say": "Bir joyda ishlatiladigan o‘zgaruvchini global qilmaysiz. Xuddi shunday, bitta sahifaga kerak kodni fichers yoki entitiz qatlamiga chiqarmang.",
+    "a0": 86.14,
+    "a1": 94.64,
+    "words": [
+      {
+        "w": "Bir",
+        "s": 86.14,
+        "e": 86.26
+      },
+      {
+        "w": "joyda",
+        "s": 86.32,
+        "e": 86.56
+      },
+      {
+        "w": "ishlatiladigan",
+        "s": 86.6,
+        "e": 87.24
+      },
+      {
+        "w": "o‘zgaruvchini",
+        "s": 87.32,
+        "e": 87.92
+      },
+      {
+        "w": "global",
+        "s": 88.1,
+        "e": 88.42
+      },
+      {
+        "w": "qilmaysiz.",
+        "s": 88.48,
+        "e": 89.0
+      },
+      {
+        "w": "Xuddi",
+        "s": 89.5,
+        "e": 89.76
+      },
+      {
+        "w": "shunday,",
+        "s": 89.82,
+        "e": 90.16
+      },
+      {
+        "w": "bitta",
+        "s": 90.36,
+        "e": 90.64
+      },
+      {
+        "w": "sahifaga",
+        "s": 90.72,
+        "e": 91.24
+      },
+      {
+        "w": "kerak",
+        "s": 91.3,
+        "e": 91.56
+      },
+      {
+        "w": "kodni",
+        "s": 91.62,
+        "e": 91.92
+      },
+      {
+        "w": "fichers",
+        "s": 92.16,
+        "e": 92.66
+      },
+      {
+        "w": "yoki",
+        "s": 92.66,
+        "e": 93.0
+      },
+      {
+        "w": "entitiz",
+        "s": 93.18,
+        "e": 93.6
+      },
+      {
+        "w": "qatlamiga",
+        "s": 93.66,
+        "e": 94.1
+      },
+      {
+        "w": "chiqarmang.",
+        "s": 94.16,
+        "e": 94.64
+      }
+    ]
+  },
+  {
+    "id": "L13",
+    "scene": "kochirish",
+    "text": "Unda kod qachon pastga tushadi? Maqola kartasi avval faqat lenta sahifasida yashaydi.",
+    "show": "Unda kod qachon pastga tushadi? Maqola kartasi avval faqat lenta sahifasida yashaydi.",
+    "say": "Unda kod qachon pastga tushadi? Maqola kartasi avval faqat lenta sahifasida yashaydi.",
+    "a0": 95.3,
+    "a1": 101.01,
+    "words": [
+      {
+        "w": "Unda",
+        "s": 95.3,
+        "e": 95.48
+      },
+      {
+        "w": "kod",
+        "s": 95.58,
+        "e": 95.78
+      },
+      {
+        "w": "qachon",
+        "s": 95.9,
+        "e": 96.24
+      },
+      {
+        "w": "pastga",
+        "s": 96.3,
+        "e": 96.56
+      },
+      {
+        "w": "tushadi?",
+        "s": 96.6,
+        "e": 96.94
+      },
+      {
+        "w": "Maqola",
+        "s": 97.65,
+        "e": 98.03
+      },
+      {
+        "w": "kartasi",
+        "s": 98.09,
+        "e": 98.59
+      },
+      {
+        "w": "avval",
+        "s": 98.85,
+        "e": 99.15
+      },
+      {
+        "w": "faqat",
+        "s": 99.21,
+        "e": 99.53
+      },
+      {
+        "w": "lenta",
+        "s": 99.63,
+        "e": 99.91
+      },
+      {
+        "w": "sahifasida",
+        "s": 99.97,
+        "e": 100.57
+      },
+      {
+        "w": "yashaydi.",
+        "s": 100.61,
+        "e": 101.01
+      }
+    ]
+  },
+  {
+    "id": "L14",
+    "scene": "kochirish",
+    "text": "Keyin profil sahifasiga ham xuddi shu karta kerak bo‘ldi. Endi, va faqat endi, uni pastga tushirasiz.",
+    "show": "Keyin profil sahifasiga ham xuddi shu karta kerak bo‘ldi. Endi, va faqat endi, uni pastga tushirasiz.",
+    "say": "Keyin profil sahifasiga ham xuddi shu karta kerak bo‘ldi. Endi, va faqat endi, uni pastga tushirasiz.",
+    "a0": 101.69,
+    "a1": 108.59,
+    "words": [
+      {
+        "w": "Keyin",
+        "s": 101.69,
+        "e": 101.93
+      },
+      {
+        "w": "profil",
+        "s": 101.99,
+        "e": 102.37
+      },
+      {
+        "w": "sahifasiga",
+        "s": 102.41,
+        "e": 103.01
+      },
+      {
+        "w": "ham",
+        "s": 103.07,
+        "e": 103.21
+      },
+      {
+        "w": "xuddi",
+        "s": 103.29,
+        "e": 103.59
+      },
+      {
+        "w": "shu",
+        "s": 103.65,
+        "e": 103.75
+      },
+      {
+        "w": "karta",
+        "s": 103.83,
+        "e": 104.11
+      },
+      {
+        "w": "kerak",
+        "s": 104.15,
+        "e": 104.41
+      },
+      {
+        "w": "bo‘ldi.",
+        "s": 104.47,
+        "e": 104.75
+      },
+      {
+        "w": "Endi,",
+        "s": 105.41,
+        "e": 105.75
+      },
+      {
+        "w": "va",
+        "s": 106.25,
+        "e": 106.33
+      },
+      {
+        "w": "faqat",
+        "s": 106.43,
+        "e": 106.75
+      },
+      {
+        "w": "endi,",
+        "s": 106.97,
+        "e": 107.31
+      },
+      {
+        "w": "uni",
+        "s": 107.53,
+        "e": 107.67
+      },
+      {
+        "w": "pastga",
+        "s": 107.75,
+        "e": 108.05
+      },
+      {
+        "w": "tushirasiz.",
+        "s": 108.11,
+        "e": 108.59
+      }
+    ]
+  },
+  {
+    "id": "L15",
+    "scene": "kochirish",
+    "text": "Karta entities qatlamidagi article slice’iga ko‘chadi. Ikkala sahifa uni public API orqali import qiladi.",
+    "show": "Karta entities qatlamidagi article slice’iga ko‘chadi. Ikkala sahifa uni public API orqali import qiladi.",
+    "say": "Karta entitiz qatlamidagi artikl slaysiga ko‘chadi. Ikkala sahifa uni pablik ey-pi-ay orqali import qiladi.",
+    "a0": 109.29,
+    "a1": 116.12,
+    "words": [
+      {
+        "w": "Karta",
+        "s": 109.29,
+        "e": 109.59
+      },
+      {
+        "w": "entitiz",
+        "s": 109.73,
+        "e": 110.13
+      },
+      {
+        "w": "qatlamidagi",
+        "s": 110.17,
+        "e": 110.79
+      },
+      {
+        "w": "artikl",
+        "s": 111.03,
+        "e": 111.45
+      },
+      {
+        "w": "slaysiga",
+        "s": 111.51,
+        "e": 111.93
+      },
+      {
+        "w": "ko‘chadi.",
+        "s": 111.99,
+        "e": 112.39
+      },
+      {
+        "w": "Ikkala",
+        "s": 113.04,
+        "e": 113.36
+      },
+      {
+        "w": "sahifa",
+        "s": 113.42,
+        "e": 113.82
+      },
+      {
+        "w": "uni",
+        "s": 113.98,
+        "e": 114.14
+      },
+      {
+        "w": "pablik",
+        "s": 114.24,
+        "e": 114.6
+      },
+      {
+        "w": "ey-pi-ay",
+        "s": 114.72,
+        "e": 115.12
+      },
+      {
+        "w": "orqali",
+        "s": 115.2,
+        "e": 115.48
+      },
+      {
+        "w": "import",
+        "s": 115.54,
+        "e": 115.76
+      },
+      {
+        "w": "qiladi.",
+        "s": 115.8,
+        "e": 116.12
+      }
+    ]
+  },
+  {
+    "id": "L16",
+    "scene": "kochirish",
+    "text": "Rasmiy qoida shunday: biznes mantig‘i bir nechta sahifada kerak bo‘lsa, uni pastki qatlamga ko‘chirish mumkin.",
+    "show": "Rasmiy qoida shunday: biznes mantig‘i bir nechta sahifada kerak bo‘lsa, uni pastki qatlamga ko‘chirish mumkin.",
+    "say": "Rasmiy qoida shunday: biznes mantig‘i bir nechta sahifada kerak bo‘lsa, uni pastki qatlamga ko‘chirish mumkin.",
+    "a0": 116.88,
+    "a1": 123.06,
+    "words": [
+      {
+        "w": "Rasmiy",
+        "s": 116.88,
+        "e": 117.16
+      },
+      {
+        "w": "qoida",
+        "s": 117.24,
+        "e": 117.52
+      },
+      {
+        "w": "shunday:",
+        "s": 117.58,
+        "e": 117.9
+      },
+      {
+        "w": "biznes",
+        "s": 118.4,
+        "e": 118.74
+      },
+      {
+        "w": "mantig‘i",
+        "s": 118.8,
+        "e": 119.2
+      },
+      {
+        "w": "bir",
+        "s": 119.3,
+        "e": 119.44
+      },
+      {
+        "w": "nechta",
+        "s": 119.48,
+        "e": 119.72
+      },
+      {
+        "w": "sahifada",
+        "s": 119.78,
+        "e": 120.22
+      },
+      {
+        "w": "kerak",
+        "s": 120.28,
+        "e": 120.56
+      },
+      {
+        "w": "bo‘lsa,",
+        "s": 120.62,
+        "e": 120.92
+      },
+      {
+        "w": "uni",
+        "s": 121.2,
+        "e": 121.36
+      },
+      {
+        "w": "pastki",
+        "s": 121.44,
+        "e": 121.76
+      },
+      {
+        "w": "qatlamga",
+        "s": 121.82,
+        "e": 122.22
+      },
+      {
+        "w": "ko‘chirish",
+        "s": 122.28,
+        "e": 122.66
+      },
+      {
+        "w": "mumkin.",
+        "s": 122.7,
+        "e": 123.06
+      }
+    ]
+  },
+  {
+    "id": "L17",
+    "scene": "kochirish",
+    "text": "Faqat bitta sahifa ishlatsa, kod sahifada qoladi.",
+    "show": "Faqat bitta sahifa ishlatsa, kod sahifada qoladi.",
+    "say": "Faqat bitta sahifa ishlatsa, kod sahifada qoladi.",
+    "a0": 123.7,
+    "a1": 126.84,
+    "words": [
+      {
+        "w": "Faqat",
+        "s": 123.7,
+        "e": 124.0
+      },
+      {
+        "w": "bitta",
+        "s": 124.1,
+        "e": 124.36
+      },
+      {
+        "w": "sahifa",
+        "s": 124.42,
+        "e": 124.78
+      },
+      {
+        "w": "ishlatsa,",
+        "s": 124.84,
+        "e": 125.26
+      },
+      {
+        "w": "kod",
+        "s": 125.56,
+        "e": 125.8
+      },
+      {
+        "w": "sahifada",
+        "s": 125.98,
+        "e": 126.46
+      },
+      {
+        "w": "qoladi.",
+        "s": 126.52,
+        "e": 126.84
+      }
+    ]
+  },
+  {
+    "id": "L18",
+    "scene": "steiger",
+    "text": "Bu xatolarni Steiger linteri ham ushlaydi. Mana, 2.0 uslubida yozilgan Conduit bo‘lagi.",
+    "show": "Bu xatolarni Steiger linteri ham ushlaydi. Mana, 2.0 uslubida yozilgan Conduit bo‘lagi.",
+    "say": "Bu xatolarni Stayger linteri ham ushlaydi. Mana, ikki nuqta nol uslubida yozilgan Kondyuit bo‘lagi.",
+    "a0": 127.59,
+    "a1": 133.57,
+    "words": [
+      {
+        "w": "Bu",
+        "s": 127.59,
+        "e": 127.65
+      },
+      {
+        "w": "xatolarni",
+        "s": 127.73,
+        "e": 128.31
+      },
+      {
+        "w": "Stayger",
+        "s": 128.39,
+        "e": 128.81
+      },
+      {
+        "w": "linteri",
+        "s": 128.87,
+        "e": 129.21
+      },
+      {
+        "w": "ham",
+        "s": 129.23,
+        "e": 129.37
+      },
+      {
+        "w": "ushlaydi.",
+        "s": 129.43,
+        "e": 129.85
+      },
+      {
+        "w": "Mana,",
+        "s": 130.53,
+        "e": 130.75
+      },
+      {
+        "w": "ikki",
+        "s": 130.91,
+        "e": 131.13
+      },
+      {
+        "w": "nuqta",
+        "s": 131.17,
+        "e": 131.41
+      },
+      {
+        "w": "nol",
+        "s": 131.45,
+        "e": 131.63
+      },
+      {
+        "w": "uslubida",
+        "s": 131.67,
+        "e": 132.05
+      },
+      {
+        "w": "yozilgan",
+        "s": 132.05,
+        "e": 132.57
+      },
+      {
+        "w": "Kondyuit",
+        "s": 132.69,
+        "e": 133.19
+      },
+      {
+        "w": "bo‘lagi.",
+        "s": 133.23,
+        "e": 133.57
+      }
+    ]
+  },
+  {
+    "id": "L19",
+    "scene": "steiger",
+    "text": "Profil sahifasi kartani lenta sahifasidan import qilgan. Bir qatlamdagi slice’lar orasida import taqiqlangan.",
+    "show": "Profil sahifasi kartani lenta sahifasidan import qilgan. Bir qatlamdagi slice’lar orasida import taqiqlangan.",
+    "say": "Profil sahifasi kartani lenta sahifasidan import qilgan. Bir qatlamdagi slayslar orasida import taqiqlangan.",
+    "a0": 134.25,
+    "a1": 141.15,
+    "words": [
+      {
+        "w": "Profil",
+        "s": 134.25,
+        "e": 134.63
+      },
+      {
+        "w": "sahifasi",
+        "s": 134.67,
+        "e": 135.25
+      },
+      {
+        "w": "kartani",
+        "s": 135.35,
+        "e": 135.79
+      },
+      {
+        "w": "lenta",
+        "s": 135.85,
+        "e": 136.13
+      },
+      {
+        "w": "sahifasidan",
+        "s": 136.19,
+        "e": 136.93
+      },
+      {
+        "w": "import",
+        "s": 137.11,
+        "e": 137.43
+      },
+      {
+        "w": "qilgan.",
+        "s": 137.49,
+        "e": 137.81
+      },
+      {
+        "w": "Bir",
+        "s": 138.23,
+        "e": 138.35
+      },
+      {
+        "w": "qatlamdagi",
+        "s": 138.41,
+        "e": 138.97
+      },
+      {
+        "w": "slayslar",
+        "s": 139.05,
+        "e": 139.53
+      },
+      {
+        "w": "orasida",
+        "s": 139.63,
+        "e": 140.01
+      },
+      {
+        "w": "import",
+        "s": 140.17,
+        "e": 140.47
+      },
+      {
+        "w": "taqiqlangan.",
+        "s": 140.51,
+        "e": 141.15
+      }
+    ]
+  },
+  {
+    "id": "L20",
+    "scene": "steiger",
+    "text": "Article entity va like-article feature esa faqat bitta joyda, lenta sahifasida ishlatilgan. Steiger ularni sahifa bilan birlashtirishni maslahat beradi.",
+    "show": "Article entity va like-article feature esa faqat bitta joyda, lenta sahifasida ishlatilgan. Steiger ularni sahifa bilan birlashtirishni maslahat beradi.",
+    "say": "Artikl entiti va layk-artikl ficher esa faqat bitta joyda, lenta sahifasida ishlatilgan. Stayger ularni sahifa bilan birlashtirishni maslahat beradi.",
+    "a0": 141.93,
+    "a1": 151.1,
+    "words": [
+      {
+        "w": "Artikl",
+        "s": 141.93,
+        "e": 142.33
+      },
+      {
+        "w": "entiti",
+        "s": 142.49,
+        "e": 142.9
+      },
+      {
+        "w": "va",
+        "s": 143.06,
+        "e": 143.14
+      },
+      {
+        "w": "layk-artikl",
+        "s": 143.42,
+        "e": 144.24
+      },
+      {
+        "w": "ficher",
+        "s": 144.3,
+        "e": 144.58
+      },
+      {
+        "w": "esa",
+        "s": 144.66,
+        "e": 144.8
+      },
+      {
+        "w": "faqat",
+        "s": 144.86,
+        "e": 145.16
+      },
+      {
+        "w": "bitta",
+        "s": 145.22,
+        "e": 145.46
+      },
+      {
+        "w": "joyda,",
+        "s": 145.5,
+        "e": 145.78
+      },
+      {
+        "w": "lenta",
+        "s": 146.2,
+        "e": 146.48
+      },
+      {
+        "w": "sahifasida",
+        "s": 146.56,
+        "e": 147.1
+      },
+      {
+        "w": "ishlatilgan.",
+        "s": 147.16,
+        "e": 147.72
+      },
+      {
+        "w": "Stayger",
+        "s": 148.16,
+        "e": 148.58
+      },
+      {
+        "w": "ularni",
+        "s": 148.66,
+        "e": 148.98
+      },
+      {
+        "w": "sahifa",
+        "s": 149.02,
+        "e": 149.4
+      },
+      {
+        "w": "bilan",
+        "s": 149.46,
+        "e": 149.66
+      },
+      {
+        "w": "birlashtirishni",
+        "s": 149.7,
+        "e": 150.26
+      },
+      {
+        "w": "maslahat",
+        "s": 150.32,
+        "e": 150.74
+      },
+      {
+        "w": "beradi.",
+        "s": 150.78,
+        "e": 151.1
+      }
+    ]
+  },
+  {
+    "id": "L21",
+    "scene": "steiger",
+    "text": "Karta entities qatlamiga ko‘chirilib, bir martalik kod sahifaga qaytgach, Steiger hech qanday muammo topmaydi.",
+    "show": "Karta entities qatlamiga ko‘chirilib, bir martalik kod sahifaga qaytgach, Steiger hech qanday muammo topmaydi.",
+    "say": "Karta entitiz qatlamiga ko‘chirilib, bir martalik kod sahifaga qaytgach, Stayger hech qanday muammo topmaydi.",
+    "a0": 152.08,
+    "a1": 158.79,
+    "words": [
+      {
+        "w": "Karta",
+        "s": 152.08,
+        "e": 152.44
+      },
+      {
+        "w": "entitiz",
+        "s": 152.7,
+        "e": 153.06
+      },
+      {
+        "w": "qatlamiga",
+        "s": 153.12,
+        "e": 153.58
+      },
+      {
+        "w": "ko‘chirilib,",
+        "s": 153.64,
+        "e": 154.1
+      },
+      {
+        "w": "bir",
+        "s": 154.48,
+        "e": 154.62
+      },
+      {
+        "w": "martalik",
+        "s": 154.66,
+        "e": 155.1
+      },
+      {
+        "w": "kod",
+        "s": 155.16,
+        "e": 155.32
+      },
+      {
+        "w": "sahifaga",
+        "s": 155.36,
+        "e": 155.87
+      },
+      {
+        "w": "qaytgach,",
+        "s": 155.95,
+        "e": 156.39
+      },
+      {
+        "w": "Stayger",
+        "s": 156.73,
+        "e": 157.13
+      },
+      {
+        "w": "hech",
+        "s": 157.21,
+        "e": 157.43
+      },
+      {
+        "w": "qanday",
+        "s": 157.49,
+        "e": 157.79
+      },
+      {
+        "w": "muammo",
+        "s": 157.85,
+        "e": 158.17
+      },
+      {
+        "w": "topmaydi.",
+        "s": 158.29,
+        "e": 158.79
+      }
+    ]
+  },
+  {
+    "id": "L22",
+    "scene": "xulosa",
+    "text": "Xulosa qilsak: avval sahifalar, poydevor shared qatlamida, qayta ishlatish paydo bo‘lganda esa pastga tushirish.",
+    "show": "Xulosa qilsak: avval sahifalar, poydevor shared qatlamida, qayta ishlatish paydo bo‘lganda esa pastga tushirish.",
+    "say": "Xulosa qilsak: avval sahifalar, poydevor sherd qatlamida, qayta ishlatish paydo bo‘lganda esa pastga tushirish.",
+    "a0": 159.69,
+    "a1": 166.76,
+    "words": [
+      {
+        "w": "Xulosa",
+        "s": 159.69,
+        "e": 160.03
+      },
+      {
+        "w": "qilsak:",
+        "s": 160.09,
+        "e": 160.43
+      },
+      {
+        "w": "avval",
+        "s": 160.93,
+        "e": 161.23
+      },
+      {
+        "w": "sahifalar,",
+        "s": 161.27,
+        "e": 161.95
+      },
+      {
+        "w": "poydevor",
+        "s": 162.23,
+        "e": 162.79
+      },
+      {
+        "w": "sherd",
+        "s": 163.01,
+        "e": 163.27
+      },
+      {
+        "w": "qatlamida,",
+        "s": 163.31,
+        "e": 163.83
+      },
+      {
+        "w": "qayta",
+        "s": 164.21,
+        "e": 164.47
+      },
+      {
+        "w": "ishlatish",
+        "s": 164.53,
+        "e": 164.95
+      },
+      {
+        "w": "paydo",
+        "s": 164.97,
+        "e": 165.21
+      },
+      {
+        "w": "bo‘lganda",
+        "s": 165.27,
+        "e": 165.69
+      },
+      {
+        "w": "esa",
+        "s": 165.75,
+        "e": 165.89
+      },
+      {
+        "w": "pastga",
+        "s": 165.97,
+        "e": 166.31
+      },
+      {
+        "w": "tushirish.",
+        "s": 166.36,
+        "e": 166.76
+      }
+    ]
+  },
+  {
+    "id": "L23",
+    "scene": "xulosa",
+    "text": "Keyingi bobda qatlamlarni batafsil ko‘ramiz. E’tiboringiz uchun rahmat!",
+    "show": "Keyingi bobda qatlamlarni batafsil ko‘ramiz. E’tiboringiz uchun rahmat!",
+    "say": "Keyingi bobda qatlamlarni batafsil ko‘ramiz. E’tiboringiz uchun rahmat!",
+    "a0": 167.42,
+    "a1": 171.46,
+    "words": [
+      {
+        "w": "Keyingi",
+        "s": 167.42,
+        "e": 167.76
+      },
+      {
+        "w": "bobda",
+        "s": 167.78,
+        "e": 168.06
+      },
+      {
+        "w": "qatlamlarni",
+        "s": 168.12,
+        "e": 168.72
+      },
+      {
+        "w": "batafsil",
+        "s": 168.78,
+        "e": 169.28
+      },
+      {
+        "w": "ko‘ramiz.",
+        "s": 169.34,
+        "e": 169.74
+      },
+      {
+        "w": "E’tiboringiz",
+        "s": 170.16,
+        "e": 170.74
+      },
+      {
+        "w": "uchun",
+        "s": 170.78,
+        "e": 171.0
+      },
+      {
+        "w": "rahmat!",
+        "s": 171.06,
+        "e": 171.46
+      }
+    ]
+  }
+]
