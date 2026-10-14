@@ -1,0 +1,20 @@
+
+┌ src/entities/cart/model/cart.ts:1:31
+✘ Forbidden cross-import from slice "product".
+│
+└ fsd/forbidden-imports: https://github.com/feature-sliced/steiger/tree/master/packages/steiger-plugin-fsd/src/forbidden-imports
+
+┌ src/entities/product/ui/product-card.ts:2:34
+✘ Forbidden import from higher layer "features".
+│
+└ fsd/forbidden-imports: https://github.com/feature-sliced/steiger/tree/master/packages/steiger-plugin-fsd/src/forbidden-imports
+
+┌ src/widgets/header/ui/header.ts:1:29
+✘ Forbidden sidestep of public API when importing from "@/entities/cart/model/cart".
+│
+└ fsd/no-public-api-sidestep: https://github.com/feature-sliced/steiger/tree/master/packages/steiger-plugin-fsd/src/no-public-api-sidestep
+
+────────────────────────────────────────────────
+ Found 3 errors (none can be fixed automatically)
+
+exit=1

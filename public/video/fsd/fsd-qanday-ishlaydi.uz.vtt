@@ -1,0 +1,133 @@
+WEBVTT
+
+1
+00:01.420 --> 00:09.980
+Salom! Bu videoda Feature-Sliced Design, qisqasi FSD bilan
+tanishamiz. Bu frontend loyihani tartibli qurish usuli.
+
+2
+00:12.010 --> 00:20.120
+Loyiha kichik paytida hamma narsa joyida bo‘ladi. Lekin u
+o‘sgan sari components, utils, helpers papkalari to‘lib ketadi.
+
+3
+00:20.350 --> 00:26.990
+Har bir fayl istalgan boshqa faylni import qiladi.
+Bitta joyni o‘zgartirsangiz, boshqa joy buziladi.
+
+4
+00:27.120 --> 00:33.950
+FSD kodni ma’nosiga qarab joylaydi va qaysi kod qaysi
+koddan foydalanishi mumkinligini aniq belgilaydi.
+
+5
+00:36.800 --> 00:40.910
+FSD loyihani qavatlarga bo‘ladi. Ularni qatlamlar deyiladi.
+
+6
+00:41.220 --> 00:46.760
+Eng pastda shared: tugma yoki API klient
+kabi hammaga kerak bo‘lgan narsalar.
+
+7
+00:47.330 --> 00:52.020
+Undan yuqorida entities: mahsulot
+va savat kabi biznes obyektlari.
+
+8
+00:52.710 --> 00:56.920
+Keyin features: foydalanuvchi
+harakatlari, masalan, savatga qo‘shish.
+
+9
+00:57.570 --> 01:03.470
+Widgets: sahifadagi katta mustaqil bloklar,
+masalan, sarlavha yoki mahsulotlar ro‘yxati.
+
+10
+01:04.120 --> 01:09.550
+Pages — sahifalar. Eng tepada esa
+app: ilovani ishga tushiradigan qism.
+
+11
+01:10.420 --> 01:16.600
+Hammasi bo‘lib yettita qatlam bor, lekin processes
+qatlami eskirgan. Hammasidan foydalanish shart ham emas.
+
+12
+01:19.530 --> 01:24.980
+Eng muhim qoida: har bir qatlam faqat o‘zidan
+pastdagi qatlamlardan import qila oladi.
+
+13
+01:25.230 --> 01:32.620
+Bu faqat pastga yuradigan liftga o‘xshaydi. Sahifa widgetni
+ishlata oladi, lekin entity featureni ishlata olmaydi.
+
+14
+01:34.300 --> 01:39.510
+Shu tufayli pastdagi kod yuqoridagisiga bog‘lanib
+qolmaydi va uni xavfsiz o‘zgartirish mumkin.
+
+15
+01:42.340 --> 01:50.130
+Har bir qavat xonalarga bo‘linadi. Ularni slice deyiladi. Slice
+biznes sohasi bo‘yicha ajratiladi: masalan, product va cart.
+
+16
+01:51.260 --> 01:56.880
+Bir qavatdagi xonalar orasida eshik yo‘q. Slice
+o‘z qatlamidagi boshqa slice’ni import qilmaydi.
+
+17
+02:00.030 --> 02:03.380
+Xona ichida kod vazifasiga qarab segmentlarga bo‘linadi.
+
+18
+02:03.330 --> 02:11.490
+ui — ko‘rinish, api — server bilan aloqa, model —
+ma’lumotlar, lib — yordamchi kod, config esa sozlamalar.
+
+19
+02:14.800 --> 02:20.830
+Har bir slice’ning bitta kirish eshigi bor:
+index.ts fayli. Bu uning public API’si.
+
+20
+02:21.560 --> 02:27.630
+Boshqa kod slice ichiga faqat shu eshik orqali kiradi va
+ichki fayllarga to‘g‘ridan-to‘g‘ri murojaat qilmaydi.
+
+21
+02:30.540 --> 02:36.800
+Bu qoidalarni qo‘lda kuzatish shart emas. Steiger
+degan rasmiy linter ularni o‘zi tekshiradi.
+
+22
+02:36.930 --> 02:46.300
+Mana, uchta xato: yuqori qatlamdan import, bir qatlamdagi
+slice’lar orasida import va public API’ni chetlab o‘tish.
+
+23
+02:48.200 --> 02:51.890
+Xatolar tuzatilgach, Steiger hech qanday muammo topmaydi.
+
+24
+02:55.660 --> 03:01.750
+Qayerdan boshlash kerak? FSD’ning yangi
+versiyasi sahifadan boshlashni tavsiya qiladi.
+
+25
+03:01.960 --> 03:09.080
+Kodni avval sahifaning o‘zida saqlang. U bir nechta
+sahifada kerak bo‘lib qolganda, pastki qatlamga ko‘chiring.
+
+26
+03:12.530 --> 03:22.850
+Xulosa qilsak: qatlamlar tartib beradi, lift faqat pastga
+yuradi, xonalar bir-biridan mustaqil, kirish esa faqat eshikdan.
+
+27
+03:24.140 --> 03:29.090
+E’tiboringiz uchun rahmat! Batafsil
+ma’lumot saytdagi FSD qo‘llanmasida.

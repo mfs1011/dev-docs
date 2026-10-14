@@ -36,3 +36,5 @@ video/*/*.mp4
 video/*/*.png
 video/*/*.jpg
 video/*/package*.json
+video/*/linter/node_modules/
+video/*/namuna*/node_modules

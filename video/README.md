@@ -3,6 +3,7 @@
 Har kitobning video uslubi alohida:
 - **Git** — [GIT-VIDEO-USLUBI.md](GIT-VIDEO-USLUBI.md) (to'q neon, animatsiya ovozga cho'ziladi), namuna `git-umumiy/`
 - **SQL** — [SQL-VIDEO-USLUBI.md](SQL-VIDEO-USLUBI.md) ("daftar" uslubi, ovoz birinchi, haqiqiy PostgreSQL ma'lumoti), namuna `sql-umumiy/`
+- **FSD** — [FSD-VIDEO-USLUBI.md](FSD-VIDEO-USLUBI.md) (izometrik 3D bino, uzluksiz kamera, haqiqiy Steiger chiqishi, Kore ovozi), namuna `fsd-umumiy/`
 
 Har papka — bitta video. Tayyor fayl `public/video/<kitob>/` ga qo'yiladi va bobga `<figure class="video">` bilan qo'shiladi (namuna: `content/git/README.md`).
 
