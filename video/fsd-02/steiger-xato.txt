@@ -1,0 +1,20 @@
+
+┌ src/pages/profile/ui/profile-page.ts:2:33
+✘ Forbidden cross-import from slice "feed".
+│
+└ fsd/forbidden-imports: https://github.com/feature-sliced/steiger/tree/master/packages/steiger-plugin-fsd/src/forbidden-imports
+
+┌ src/entities/article
+✘ This slice has only one reference in slice "pages/feed". Consider merging them.
+│
+└ fsd/insignificant-slice: https://github.com/feature-sliced/steiger/tree/master/packages/steiger-plugin-fsd/src/insignificant-slice
+
+┌ src/features/like-article
+✘ This slice has only one reference in slice "pages/feed". Consider merging them.
+│
+└ fsd/insignificant-slice: https://github.com/feature-sliced/steiger/tree/master/packages/steiger-plugin-fsd/src/insignificant-slice
+
+────────────────────────────────────────────────
+ Found 3 errors (none can be fixed automatically)
+
+exit=1

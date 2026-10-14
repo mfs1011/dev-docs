@@ -4,6 +4,14 @@
 
 ## Qisqacha
 
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/fsd/02-pages-first.jpg" src="/video/fsd/02-pages-first.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/fsd/02-pages-first.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/fsd/02-pages-first.uz.vtt">
+</video>
+<figcaption>Bob videoda: v2.0 (pastdan yuqoriga) va v2.1 (avval sahifalar), Conduit misoli, qatlam — global nomlar maydoni, kodni pastga tushirish. Linter natijalari — haqiqiy Steiger 0.7.0 dan.</figcaption>
+</figure>
+
 FSD 2.1 ning asosiy o'zgarishi — **sahifalardan boshlash**. Avval ilovani sahifalarga bo'lasiz, har sahifa o'z UI'si, so'rovlari va holatini **o'z ichida** saqlaydi. Umumiy poydevor — `shared`'da. Biror kod **haqiqatan** bir nechta sahifada kerak bo'lgandagina u pastroq qatlamga (`widgets`, `features`, `entities`) tushiriladi.
 
 Ko'p ilova uchun shu yetarli: `app` + `pages` + `shared`. Rasmiy qo'llanmadagi Medium kloni (Conduit) ham shu uch qatlamga sig'adi.
