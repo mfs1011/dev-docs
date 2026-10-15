@@ -1,0 +1,75 @@
+WEBVTT
+
+1
+00:01.420 --> 00:10.760
+Ikkinchi bobdagi arxitektura farqlarini endi haqiqiy tizimlarda tekshiramiz.
+PostgreSQL, MySQL va SQLite terminallaridagi barcha natijalar — haqiqiy.
+
+2
+00:12.710 --> 00:19.740
+Avval PostgreSQL. Ikki mijoz ulanib, besh soniya kutadigan so‘rov
+yuborganda, operatsion tizimda alohida jarayonlar paydo bo‘ladi.
+
+3
+00:21.010 --> 00:25.120
+Buni PostgreSQL’ning o‘zidan
+pg_stat_activity view’i orqali ko‘ramiz.
+
+4
+00:26.390 --> 00:33.130
+Har bir ulanish uchun alohida jarayon raqami, ya’ni PID ko‘rinib
+turibdi. Uchinchi qator esa so‘rovni yuborgan mijozning o‘zi.
+
+5
+00:37.360 --> 00:43.310
+Endi xuddi shu holatni MySQL’da ko‘ramiz. Operatsion
+tizimda faqat bitta mysqld server jarayoni ishlaydi.
+
+6
+00:44.500 --> 00:49.760
+Ulanishlar esa jarayon ichidagi threadlar orqali
+boshqariladi. Buni PROCESSLIST jadvalidan ko‘ramiz.
+
+7
+00:50.890 --> 00:57.120
+Har bir ulanishga alohida thread biriktirilgan. performance_schema’dagi
+thread nomi ham buni tasdiqlaydi: one_connection.
+
+8
+00:59.770 --> 01:02.320
+MySQL’da storage engine’lar ro‘yxatini so‘raymiz.
+
+9
+01:03.570 --> 01:10.270
+Sukut bo‘yicha InnoDB tanlangan. Va e’tibor bering: ro‘yxatda
+faqat InnoDB tranzaksiyalarni to‘liq qo‘llab-quvvatlaydi.
+
+10
+01:14.900 --> 01:20.590
+Nihoyat, SQLite. Unda server yo‘q: sqlite3
+buyrug‘iga fayl nomini berish yetarli.
+
+11
+01:22.020 --> 01:26.170
+Mahsulotlar jadvalini yaratib, ikkita
+qator qo‘shamiz va SELECT bilan o‘qiymiz.
+
+12
+01:28.360 --> 01:33.080
+Katalogda dokon.db fayli paydo bo‘ldi.
+Faylning birinchi o‘n olti baytini ko‘ramiz.
+
+13
+01:34.450 --> 01:40.940
+Har bir to‘g‘ri SQLite fayli aynan shu o‘n olti bayt
+bilan boshlanadi: SQLite format uch va oxirida nol bayt.
+
+14
+01:43.530 --> 01:50.770
+Bazani ko‘chirish uchun esa oddiy fayl nusxasini olish yetarli: cp
+buyrug‘i bilan nusxa.db yaratamiz va undan ham ma’lumotni o‘qiymiz.
+
+15
+01:54.820 --> 02:02.650
+Xulosa: PostgreSQL har ulanishga alohida jarayon ochadi, MySQL
+thread ishlatadi, SQLite esa butun bazani bitta faylda saqlaydi.

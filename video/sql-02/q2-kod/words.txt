@@ -1,0 +1,15 @@
+L1 Ikkinchi bobdagi arxitektura farqlarini endi haqiqiy tizimlarda tekshiramiz. Postgres, May es-kyu-el va Es-kyu-layt terminallaridagi barcha natijalar — haqiqiy.
+L2 Avval Postgres. Ikki mijoz ulanib, besh soniya kutadigan so‘rov yuborganda, operatsion tizimda alohida jarayonlar paydo bo‘ladi.
+L3 Buni Postgresning o‘zidan pe-ge stat aktiviti view’i orqali ko‘ramiz.
+L4 Har bir ulanish uchun alohida jarayon raqami, ya’ni Pi-ay-di ko‘rinib turibdi. Uchinchi qator esa so‘rovni yuborgan mijozning o‘zi.
+L5 Endi xuddi shu holatni May es-kyu-elda ko‘ramiz. Operatsion tizimda faqat bitta may-es-kyu-el-di server jarayoni ishlaydi.
+L6 Ulanishlar esa jarayon ichidagi tredlar orqali boshqariladi. Buni proses-list jadvalidan ko‘ramiz.
+L7 Har bir ulanishga alohida tred biriktirilgan. Performans skima’dagi tred nomi ham buni tasdiqlaydi: van konnekshn.
+L8 May es-kyu-elda storidj endjinlar ro‘yxatini so‘raymiz.
+L9 Sukut bo‘yicha Inno-di-bi tanlangan. Va e’tibor bering: ro‘yxatda faqat Inno-di-bi tranzaksiyalarni to‘liq qo‘llab-quvvatlaydi.
+L10 Nihoyat, Es-kyu-layt. Unda server yo‘q: es-kyu-layt uch buyrug‘iga fayl nomini berish yetarli.
+L11 Mahsulotlar jadvalini yaratib, ikkita qator qo‘shamiz va selekt bilan o‘qiymiz.
+L12 Katalogda dokon nuqta de-be fayli paydo bo‘ldi. Faylning birinchi o‘n olti baytini ko‘ramiz.
+L13 Har bir to‘g‘ri Es-kyu-layt fayli aynan shu o‘n olti bayt bilan boshlanadi: Es-kyu-layt format uch va oxirida nol bayt.
+L14 Bazani ko‘chirish uchun esa oddiy fayl nusxasini olish yetarli: se-pe buyrug‘i bilan nusxa nuqta de-be yaratamiz va undan ham ma’lumotni o‘qiymiz.
+L15 Xulosa: Postgres har ulanishga alohida jarayon ochadi, May es-kyu-el tred ishlatadi, Es-kyu-layt esa butun bazani bitta faylda saqlaydi.

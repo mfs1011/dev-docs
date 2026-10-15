@@ -1,0 +1,35 @@
+Salom! Bu es-kyu-el qo‘llanmasining uchinchi bobi. Bazaga ulanishning to‘rtta asosiy parametri, yuniks soket va ti-si-pi farqi, hamda serverni xavfsiz ishga tushirishni ko‘rib chiqamiz.
+
+Klient-server bazaga ulanish uchun mijoz to‘rtta asosiy narsani bilishi kerak: Host, Port, Foydalanuvchi va Baza nomi.
+
+Host — server qaysi kompyuterda ekanini, Port esa server tinglayotgan eshikni bildiradi. Masalan, Postgres odatda ellik to‘rt o‘ttiz ikki, May es-kyu-el esa o‘ttiz uch nol olti-portda tinglaydi.
+
+Foydalanuvchi — kim ulanayotganini, Baza esa aynan qaysi ma’lumotlar bazasi bilan ishlashni bildiradi. Ko‘pincha ularga maxfiy parol ham qo‘shiladi.
+
+Mijoz va server bitta kompyuterda bo‘lsa, ular tarmoqsiz, maxsus yuniks soket fayli orqali tezkor gaplashishi mumkin.
+
+Boshqa kompyuterdagi serverga esa ti-si-pi ay-pi tarmog‘i orqali ulaniladi.
+
+May es-kyu-elning nozik jihati: Unix tizimlarida lokal-xost deb yozsangiz, u tarmoqqa emas, socket fayliga ulanadi. Ti-si-pi orqali ulanish uchun bir yuz yigirma yetti, nol, nol, bir deb yozish kerak.
+
+Es-kyu-laytda esa bu parametrlarning hech biri yo‘q: ulanish — bu shunchaki diskdagi faylni ochishdir.
+
+Postgresda ma’lumot papkasi klaster deb ataladi va u init-di-bi dasturi bilan yaratiladi.
+
+Diqqat: sukut bo‘yicha init-di-bi lokal foydalanuvchilar uchun trust usulini yoqadi. Ya’ni kompyuterdagi har kim parolsiz superuser bo‘lib ulana oladi!
+
+Xavfsiz bo‘lishi uchun har doim minus ey skram sha ikki yuz ellik olti parametri va parol ko‘rsatilishi shart.
+
+Klaster tayyor bo‘lgach, server pi-ji-si-ti-el start buyrug‘i bilan fonda ishga tushiriladi.
+
+May es-kyu-elda ma’lumot papkasini tayyorlash may-es-kyu-el-di ning o‘ziga yuklangan.
+
+Buning uchun may-es-kyu-el-di minus-minus inishilayz buyrug‘i beriladi. U root foydalanuvchisi uchun tasodifiy vaqtinchalik parol yaratadi va uni muddati o‘tgan deb belgilaydi.
+
+Vaqtinchalik parol bilan oddiy so‘rov yuborib bo‘lmaydi. Server darhol alter yuzer buyrug‘i bilan yangi parol o‘rnatishni talab qiladi.
+
+Demak, ulanishning to‘rtta tayanch parametri va xavfsiz boshlang‘ich sozlamalarni ko‘rib chiqdik.
+
+Keyingi videoda pi-es-kyu-el, May es-kyu-el va es-kyu-layt uch dasturlari orqali haqiqiy ulanishlarni va ularning o‘ziga xos buyruqlarini amalda sinaymiz.
+
+17 gap, 291 so'z

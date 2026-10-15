@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/sql/02-1-tushuncha.jpg" src="/video/sql/02-1-tushuncha.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/sql/02-1-tushuncha.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/sql/02-1-tushuncha.uz.vtt">
+</video>
+<figcaption>Video: uch tizim arxitekturasi (jarayonlar, threadlar, bitta fayl) va tanlash mezonlari — "Tushuncha" va "Nega shunday" bo'limlarining qisqa ko'rinishi.</figcaption>
+</figure>
+
 Uchala tizim ham SQL tilini tushunadi, lekin **tuzilishi** turlicha. Ikki xil arxitektura bor:
 
 - **Client/server** (mijoz/server). Baza alohida **server** dasturi sifatida doim ishlab turadi. Ilovalar unga **mijoz** (*client*) sifatida ulanadi va so'rov yuboradi. PostgreSQL va MySQL shunday ishlaydi.
@@ -93,6 +101,14 @@ Client/server bazalar hujjatda "korxona ma'lumotlarining **umumiy** ombori" deb 
 Bu qo'llanma veb-ilovalar ortidagi bazaga qaratilgan, ya'ni ko'p mijoz bitta bazaga ulanadi. Shuning uchun asosiy tizim — client/server PostgreSQL. MySQL ham shu sinfdan. SQLite esa dialektdagi farqlar va o'z o'rni bor joylarda ko'riladi.
 
 ## Kod
+
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/sql/02-2-kod.jpg" src="/video/sql/02-2-kod.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/sql/02-2-kod.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/sql/02-2-kod.uz.vtt">
+</video>
+<figcaption>Video: quyidagi buyruqlar haqiqiy psql, mysql va sqlite3 terminallarida — jarayonlar (PID), threadlar va bitta fayl formati.</figcaption>
+</figure>
 
 Misollar PostgreSQL 18.6, MySQL 9.7.2 va SQLite 3.54.0 da ishga tushirilgan. Natijalar haqiqiy. Ortiqcha qatorlar `…` bilan qisqartirilgan.
 
@@ -301,6 +317,14 @@ Hujjatga ko'ra ikkala tur ham "production uchun yaroqli sifatda". Boshqa qoidala
 **SQLite.** Hujjatga ko'ra ishlab chiquvchilar SQLite'ni **2050-yilgacha** qo'llab-quvvatlashni rejalashtirgan. Bugun yaratilgan fayllar o'nlab yillardan keyingi versiyalarda ham o'qiladi. Fayl formati barqaror va hujjatlashtirilgan.
 
 ## Dialektlar
+
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/sql/02-3-dialektlar.jpg" src="/video/sql/02-3-dialektlar.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/sql/02-3-dialektlar.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/sql/02-3-dialektlar.uz.vtt">
+</video>
+<figcaption>Video: uch tizimning taqqoslash taxtasi, reliz siyosati (PG 5 yil, MySQL LTS, SQLite 2050) va eng muhim tipik xatolar.</figcaption>
+</figure>
 
 Bu bobda dialekt farqi tizim tuzilishining o'zida. Qisqacha:
 

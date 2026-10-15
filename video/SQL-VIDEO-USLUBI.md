@@ -1,9 +1,20 @@
 # SQL videolari — uslub va tayyorlash tartibi
 
-Faqat **SQL qo'llanmasi** videolari uchun. Namuna: `sql-umumiy/` ("SQL qanday ishlaydi", 4:45) — foydalanuvchi ma'qullagan
-("usuli menga juda yoqdi", 2026-10-14). Git videolari uslubi boshqa — [GIT-VIDEO-USLUBI.md](GIT-VIDEO-USLUBI.md); ikkisini aralashtirmang.
+Faqat **SQL qo'llanmasi** videolari uchun.
+Namunalar:
+- `sql-umumiy/` ("SQL qanday ishlaydi", 4:45, kirish videosi)
+- `sql-01/` (1-bob uchun 3 ta video: `q1-tushuncha`, `q2-kod`, `q3-dialekt` + `natijalar/` + `sql-kit.js`)
+- `sql-02/` (2-bob uchun 3 ta video: `q1-tushuncha`, `q2-kod`, `q3-dialekt` + `natijalar/` + `sql-kit.js`)
+- `sql-03/` (3-bob uchun 3 ta video: `q1-tushuncha`, `q2-kod`, `q3-dialekt` + `natijalar/` + `sql-kit.js`)
+- `sql-04/` (4-bob uchun 3 ta video: `q1-tushuncha`, `q2-kod`, `q3-dialekt` + `natijalar/` + `sql-kit.js`)
+- `sql-05/` (5-bob uchun 3 ta video: `q1-tushuncha`, `q2-kod`, `q3-dialekt` + `natijalar/` + `sql-kit.js`)
 
-Yangi SQL videosi: `cp -R sql-umumiy sql-<mavzu>`, keyin `narration.js`, `anim.js` dagi sahnalar va `cues.js` ni almashtiring.
+Har bob uchun odatda uchta video tayyorlanadi:
+1. `q1-tushuncha` — "Tushuncha" bo'limi: nazariya va arxitektura "daftar" animatsiyasi
+2. `q2-kod` — "Kod" bo'limi: chapda haqiqiy psql/mysql/sqlite terminali, o'ngda daftar tushuntirishi
+3. `q3-dialekt` — "Dialektlar" / "Taqqoslash" bo'limi: uch tizim terminallari va taqqoslash taxtasi
+
+Yangi bob videosi: `cp -R sql-01 sql-<bob>`, so'ng `natijalar/` da yangi buyruqlarni yozib oling, har qismning `narration.js`, `anim.js`, `cues.js` va `words.txt` ini moslang.
 Qolgan fayllar (`sync.js`, `voice.mjs`, `build-timing.mjs`, `music.mjs`, `mix.sh`, `render.mjs`, `stills.mjs`, `poster.mjs`) o'zgarmasdan ishlaydi.
 
 ## 1. Asosiy g'oya
@@ -150,15 +161,16 @@ node poster.mjs && ffmpeg -i poster.png -vf scale=1280:-2 -q:v 3 poster.jpg
 # 6) sayt: public/video/sql/<nom>.{mp4,jpg,chapters.vtt,uz.vtt}; asl full.mp4 — Google Drive (rclone, gdrive:dev-docs/video/<nom>)
 ```
 
-Saytga qo'yish (umumiy video — README boshiga, mavzu videosi — bobning "Tushuncha" bo'limiga):
+Saytga qo'yish (umumiy video — README boshiga, mavzu videosi — bobning mos bo'limiga):
 
 ```html
+<!-- 3-bob: 03-1-tushuncha (2:37), 03-2-kod (3:18), 03-3-dialektlar (3:02) -->
 <figure class="video">
 <video controls preload="metadata" playsinline poster="/video/sql/<nom>.jpg" src="/video/sql/<nom>.mp4">
 <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/sql/<nom>.chapters.vtt" default>
 <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/sql/<nom>.uz.vtt">
 </video>
-<figcaption>… Natijalar — haqiqiy PostgreSQL 18 bazasidan.</figcaption>
+<figcaption>… Natijalar — haqiqiy sinov bazalaridan (PostgreSQL 18.6, MySQL 9.7.2, SQLite 3.54.0).</figcaption>
 </figure>
 ```
 

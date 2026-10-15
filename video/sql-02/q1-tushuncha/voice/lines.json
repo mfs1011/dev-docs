@@ -1,0 +1,1958 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Salom! Bu SQL qo‘llanmasining ikkinchi bobi. PostgreSQL, MySQL va SQLite qanday tuzilganini va ulardan qaysi birini qachon tanlashni ko‘rib chiqamiz.",
+    "show": "Salom! Bu SQL qo‘llanmasining ikkinchi bobi. PostgreSQL, MySQL va SQLite qanday tuzilganini va ulardan qaysi birini qachon tanlashni ko‘rib chiqamiz.",
+    "say": "Salom! Bu es-kyu-el qo‘llanmasining ikkinchi bobi. Postgres, May es-kyu-el va Es-kyu-layt qanday tuzilganini va ulardan qaysi birini qachon tanlashni ko‘rib chiqamiz.",
+    "a0": 0.22,
+    "a1": 9.41,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.22,
+        "e": 0.5
+      },
+      {
+        "w": "Bu",
+        "s": 0.96,
+        "e": 1.02
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 1.22,
+        "e": 1.58
+      },
+      {
+        "w": "qo‘llanmasining",
+        "s": 1.62,
+        "e": 2.3
+      },
+      {
+        "w": "ikkinchi",
+        "s": 2.4,
+        "e": 2.78
+      },
+      {
+        "w": "bobi.",
+        "s": 2.8,
+        "e": 3.02
+      },
+      {
+        "w": "Postgres,",
+        "s": 3.66,
+        "e": 4.14
+      },
+      {
+        "w": "May",
+        "s": 4.26,
+        "e": 4.4
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 4.42,
+        "e": 4.8
+      },
+      {
+        "w": "va",
+        "s": 4.88,
+        "e": 4.94
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 5.08,
+        "e": 5.62
+      },
+      {
+        "w": "qanday",
+        "s": 5.7,
+        "e": 6.0
+      },
+      {
+        "w": "tuzilganini",
+        "s": 6.04,
+        "e": 6.6
+      },
+      {
+        "w": "va",
+        "s": 6.7,
+        "e": 6.78
+      },
+      {
+        "w": "ulardan",
+        "s": 6.92,
+        "e": 7.26
+      },
+      {
+        "w": "qaysi",
+        "s": 7.34,
+        "e": 7.65
+      },
+      {
+        "w": "birini",
+        "s": 7.69,
+        "e": 7.91
+      },
+      {
+        "w": "qachon",
+        "s": 7.99,
+        "e": 8.27
+      },
+      {
+        "w": "tanlashni",
+        "s": 8.31,
+        "e": 8.79
+      },
+      {
+        "w": "ko‘rib",
+        "s": 8.83,
+        "e": 9.05
+      },
+      {
+        "w": "chiqamiz.",
+        "s": 9.09,
+        "e": 9.41
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "arxitektura",
+    "text": "Uchala tizim ham SQL tilini tushunadi, lekin ularning ichki arxitekturasi turlicha. Asosan ikki xil tuzilish bor: mijoz-server va o‘rnatiladigan, ya’ni embedded.",
+    "show": "Uchala tizim ham SQL tilini tushunadi, lekin ularning ichki arxitekturasi turlicha. Asosan ikki xil tuzilish bor: mijoz-server va o‘rnatiladigan, ya’ni embedded.",
+    "say": "Uchala tizim ham es-kyu-el tilini tushunadi, lekin ularning ichki arxitekturasi turlicha. Asosan ikki xil tuzilish bor: mijoz-server va o‘rnatiladigan, ya’ni embeddid.",
+    "a0": 10.37,
+    "a1": 20.67,
+    "words": [
+      {
+        "w": "Uchala",
+        "s": 10.37,
+        "e": 10.63
+      },
+      {
+        "w": "tizim",
+        "s": 10.67,
+        "e": 10.87
+      },
+      {
+        "w": "ham",
+        "s": 10.93,
+        "e": 11.07
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 11.21,
+        "e": 11.61
+      },
+      {
+        "w": "tilini",
+        "s": 11.65,
+        "e": 11.95
+      },
+      {
+        "w": "tushunadi,",
+        "s": 11.99,
+        "e": 12.43
+      },
+      {
+        "w": "lekin",
+        "s": 12.69,
+        "e": 12.93
+      },
+      {
+        "w": "ularning",
+        "s": 12.99,
+        "e": 13.39
+      },
+      {
+        "w": "ichki",
+        "s": 13.49,
+        "e": 13.71
+      },
+      {
+        "w": "arxitekturasi",
+        "s": 13.77,
+        "e": 14.57
+      },
+      {
+        "w": "turlicha.",
+        "s": 14.63,
+        "e": 15.07
+      },
+      {
+        "w": "Asosan",
+        "s": 15.61,
+        "e": 16.03
+      },
+      {
+        "w": "ikki",
+        "s": 16.19,
+        "e": 16.37
+      },
+      {
+        "w": "xil",
+        "s": 16.39,
+        "e": 16.51
+      },
+      {
+        "w": "tuzilish",
+        "s": 16.55,
+        "e": 16.87
+      },
+      {
+        "w": "bor:",
+        "s": 16.89,
+        "e": 17.03
+      },
+      {
+        "w": "mijoz-server",
+        "s": 17.47,
+        "e": 18.25
+      },
+      {
+        "w": "va",
+        "s": 18.57,
+        "e": 18.65
+      },
+      {
+        "w": "o‘rnatiladigan,",
+        "s": 18.87,
+        "e": 19.59
+      },
+      {
+        "w": "ya’ni",
+        "s": 19.81,
+        "e": 20.01
+      },
+      {
+        "w": "embeddid.",
+        "s": 20.21,
+        "e": 20.67
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "arxitektura",
+    "text": "PostgreSQL va MySQL — mijoz-server tizimlari. Baza alohida server dasturi sifatida doim ishlab turadi, ilovalar esa unga mijoz sifatida tarmoq orqali ulanadi.",
+    "show": "PostgreSQL va MySQL — mijoz-server tizimlari. Baza alohida server dasturi sifatida doim ishlab turadi, ilovalar esa unga mijoz sifatida tarmoq orqali ulanadi.",
+    "say": "Postgres va May es-kyu-el — mijoz-server tizimlari. Baza alohida server dasturi sifatida doim ishlab turadi, ilovalar esa unga mijoz sifatida tarmoq orqali ulanadi.",
+    "a0": 21.51,
+    "a1": 30.74,
+    "words": [
+      {
+        "w": "Postgres",
+        "s": 21.51,
+        "e": 21.99
+      },
+      {
+        "w": "va",
+        "s": 22.07,
+        "e": 22.13
+      },
+      {
+        "w": "May",
+        "s": 22.27,
+        "e": 22.43
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 22.45,
+        "e": 22.84
+      },
+      {
+        "w": "—",
+        "s": 22.84,
+        "e": 22.84
+      },
+      {
+        "w": "mijoz-server",
+        "s": 23.0,
+        "e": 23.7
+      },
+      {
+        "w": "tizimlari.",
+        "s": 23.74,
+        "e": 24.18
+      },
+      {
+        "w": "Baza",
+        "s": 24.56,
+        "e": 24.82
+      },
+      {
+        "w": "alohida",
+        "s": 24.92,
+        "e": 25.28
+      },
+      {
+        "w": "server",
+        "s": 25.38,
+        "e": 25.72
+      },
+      {
+        "w": "dasturi",
+        "s": 25.74,
+        "e": 26.12
+      },
+      {
+        "w": "sifatida",
+        "s": 26.16,
+        "e": 26.54
+      },
+      {
+        "w": "doim",
+        "s": 26.64,
+        "e": 26.92
+      },
+      {
+        "w": "ishlab",
+        "s": 26.98,
+        "e": 27.24
+      },
+      {
+        "w": "turadi,",
+        "s": 27.26,
+        "e": 27.5
+      },
+      {
+        "w": "ilovalar",
+        "s": 27.78,
+        "e": 28.18
+      },
+      {
+        "w": "esa",
+        "s": 28.22,
+        "e": 28.36
+      },
+      {
+        "w": "unga",
+        "s": 28.42,
+        "e": 28.58
+      },
+      {
+        "w": "mijoz",
+        "s": 28.64,
+        "e": 28.92
+      },
+      {
+        "w": "sifatida",
+        "s": 28.96,
+        "e": 29.36
+      },
+      {
+        "w": "tarmoq",
+        "s": 29.7,
+        "e": 30.06
+      },
+      {
+        "w": "orqali",
+        "s": 30.08,
+        "e": 30.36
+      },
+      {
+        "w": "ulanadi.",
+        "s": 30.42,
+        "e": 30.74
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "arxitektura",
+    "text": "SQLite esa o‘rnatiladigan tizim. Unda alohida server yo‘q: u ilovaning ichida, oddiy kutubxona sifatida ishlaydi.",
+    "show": "SQLite esa o‘rnatiladigan tizim. Unda alohida server yo‘q: u ilovaning ichida, oddiy kutubxona sifatida ishlaydi.",
+    "say": "Es-kyu-layt esa o‘rnatiladigan tizim. Unda alohida server yo‘q: u ilovaning ichida, oddiy kutubxona sifatida ishlaydi.",
+    "a0": 31.52,
+    "a1": 38.07,
+    "words": [
+      {
+        "w": "Es-kyu-layt",
+        "s": 31.52,
+        "e": 32.06
+      },
+      {
+        "w": "esa",
+        "s": 32.12,
+        "e": 32.28
+      },
+      {
+        "w": "o‘rnatiladigan",
+        "s": 32.48,
+        "e": 33.18
+      },
+      {
+        "w": "tizim.",
+        "s": 33.22,
+        "e": 33.44
+      },
+      {
+        "w": "Unda",
+        "s": 33.78,
+        "e": 33.94
+      },
+      {
+        "w": "alohida",
+        "s": 34.04,
+        "e": 34.4
+      },
+      {
+        "w": "server",
+        "s": 34.48,
+        "e": 34.82
+      },
+      {
+        "w": "yo‘q:",
+        "s": 34.88,
+        "e": 35.06
+      },
+      {
+        "w": "u",
+        "s": 35.4,
+        "e": 35.42
+      },
+      {
+        "w": "ilovaning",
+        "s": 35.54,
+        "e": 35.98
+      },
+      {
+        "w": "ichida,",
+        "s": 36.06,
+        "e": 36.34
+      },
+      {
+        "w": "oddiy",
+        "s": 36.62,
+        "e": 36.86
+      },
+      {
+        "w": "kutubxona",
+        "s": 36.92,
+        "e": 37.3
+      },
+      {
+        "w": "sifatida",
+        "s": 37.36,
+        "e": 37.73
+      },
+      {
+        "w": "ishlaydi.",
+        "s": 37.77,
+        "e": 38.07
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "postgres",
+    "text": "PostgreSQL har bir ulanish uchun alohida jarayonga tayanadi. Bosh postgres jarayoni yangi ulanishlarni kutadi.",
+    "show": "PostgreSQL har bir ulanish uchun alohida jarayonga tayanadi. Bosh postgres jarayoni yangi ulanishlarni kutadi.",
+    "say": "Postgres har bir ulanish uchun alohida jarayonga tayanadi. Bosh postgres jarayoni yangi ulanishlarni kutadi.",
+    "a0": 38.79,
+    "a1": 44.53,
+    "words": [
+      {
+        "w": "Postgres",
+        "s": 38.79,
+        "e": 39.27
+      },
+      {
+        "w": "har",
+        "s": 39.39,
+        "e": 39.53
+      },
+      {
+        "w": "bir",
+        "s": 39.57,
+        "e": 39.67
+      },
+      {
+        "w": "ulanish",
+        "s": 39.73,
+        "e": 40.03
+      },
+      {
+        "w": "uchun",
+        "s": 40.05,
+        "e": 40.23
+      },
+      {
+        "w": "alohida",
+        "s": 40.35,
+        "e": 40.75
+      },
+      {
+        "w": "jarayonga",
+        "s": 40.81,
+        "e": 41.27
+      },
+      {
+        "w": "tayanadi.",
+        "s": 41.31,
+        "e": 41.67
+      },
+      {
+        "w": "Bosh",
+        "s": 42.11,
+        "e": 42.33
+      },
+      {
+        "w": "postgres",
+        "s": 42.37,
+        "e": 42.77
+      },
+      {
+        "w": "jarayoni",
+        "s": 42.79,
+        "e": 43.21
+      },
+      {
+        "w": "yangi",
+        "s": 43.31,
+        "e": 43.59
+      },
+      {
+        "w": "ulanishlarni",
+        "s": 43.65,
+        "e": 44.19
+      },
+      {
+        "w": "kutadi.",
+        "s": 44.23,
+        "e": 44.53
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "postgres",
+    "text": "Har bir yangi mijoz ulanganda yangi jarayon ochiladi. Mijoz to‘g‘ridan-to‘g‘ri shu jarayon bilan ishlaydi, bosh jarayon esa aralashmaydi.",
+    "show": "Har bir yangi mijoz ulanganda yangi jarayon ochiladi. Mijoz to‘g‘ridan-to‘g‘ri shu jarayon bilan ishlaydi, bosh jarayon esa aralashmaydi.",
+    "say": "Har bir yangi mijoz ulanganda yangi jarayon ochiladi. Mijoz to‘g‘ridan-to‘g‘ri shu jarayon bilan ishlaydi, bosh jarayon esa aralashmaydi.",
+    "a0": 44.97,
+    "a1": 51.89,
+    "words": [
+      {
+        "w": "Har",
+        "s": 44.97,
+        "e": 45.11
+      },
+      {
+        "w": "bir",
+        "s": 45.15,
+        "e": 45.25
+      },
+      {
+        "w": "yangi",
+        "s": 45.29,
+        "e": 45.51
+      },
+      {
+        "w": "mijoz",
+        "s": 45.55,
+        "e": 45.79
+      },
+      {
+        "w": "ulanganda",
+        "s": 45.83,
+        "e": 46.25
+      },
+      {
+        "w": "yangi",
+        "s": 46.59,
+        "e": 46.87
+      },
+      {
+        "w": "jarayon",
+        "s": 46.93,
+        "e": 47.29
+      },
+      {
+        "w": "ochiladi.",
+        "s": 47.33,
+        "e": 47.67
+      },
+      {
+        "w": "Mijoz",
+        "s": 48.07,
+        "e": 48.33
+      },
+      {
+        "w": "to‘g‘ridan-to‘g‘ri",
+        "s": 48.39,
+        "e": 48.99
+      },
+      {
+        "w": "shu",
+        "s": 49.03,
+        "e": 49.13
+      },
+      {
+        "w": "jarayon",
+        "s": 49.21,
+        "e": 49.53
+      },
+      {
+        "w": "bilan",
+        "s": 49.55,
+        "e": 49.71
+      },
+      {
+        "w": "ishlaydi,",
+        "s": 49.73,
+        "e": 50.03
+      },
+      {
+        "w": "bosh",
+        "s": 50.41,
+        "e": 50.59
+      },
+      {
+        "w": "jarayon",
+        "s": 50.63,
+        "e": 50.93
+      },
+      {
+        "w": "esa",
+        "s": 50.99,
+        "e": 51.13
+      },
+      {
+        "w": "aralashmaydi.",
+        "s": 51.33,
+        "e": 51.89
+      }
+    ]
+  },
+  {
+    "id": "L7",
+    "scene": "postgres",
+    "text": "Mijoz va server boshqa kompyuterlarda bo‘lishi mumkin. Shuning uchun mijozdagi fayllar serverda avtomatik mavjud bo‘lmaydi.",
+    "show": "Mijoz va server boshqa kompyuterlarda bo‘lishi mumkin. Shuning uchun mijozdagi fayllar serverda avtomatik mavjud bo‘lmaydi.",
+    "say": "Mijoz va server boshqa kompyuterlarda bo‘lishi mumkin. Shuning uchun mijozdagi fayllar serverda avtomatik mavjud bo‘lmaydi.",
+    "a0": 52.37,
+    "a1": 58.92,
+    "words": [
+      {
+        "w": "Mijoz",
+        "s": 52.37,
+        "e": 52.66
+      },
+      {
+        "w": "va",
+        "s": 52.7,
+        "e": 52.76
+      },
+      {
+        "w": "server",
+        "s": 52.82,
+        "e": 53.16
+      },
+      {
+        "w": "boshqa",
+        "s": 53.24,
+        "e": 53.54
+      },
+      {
+        "w": "kompyuterlarda",
+        "s": 53.58,
+        "e": 54.24
+      },
+      {
+        "w": "bo‘lishi",
+        "s": 54.28,
+        "e": 54.52
+      },
+      {
+        "w": "mumkin.",
+        "s": 54.54,
+        "e": 54.8
+      },
+      {
+        "w": "Shuning",
+        "s": 55.16,
+        "e": 55.34
+      },
+      {
+        "w": "uchun",
+        "s": 55.36,
+        "e": 55.52
+      },
+      {
+        "w": "mijozdagi",
+        "s": 55.78,
+        "e": 56.24
+      },
+      {
+        "w": "fayllar",
+        "s": 56.28,
+        "e": 56.7
+      },
+      {
+        "w": "serverda",
+        "s": 56.76,
+        "e": 57.22
+      },
+      {
+        "w": "avtomatik",
+        "s": 57.54,
+        "e": 58.16
+      },
+      {
+        "w": "mavjud",
+        "s": 58.22,
+        "e": 58.52
+      },
+      {
+        "w": "bo‘lmaydi.",
+        "s": 58.56,
+        "e": 58.92
+      }
+    ]
+  },
+  {
+    "id": "L8",
+    "scene": "mysql",
+    "text": "MySQL serveri mysqld esa bitta ko‘p oqimli dastur. U har ulanishga yangi jarayon ochmaydi.",
+    "show": "MySQL serveri mysqld esa bitta ko‘p oqimli dastur. U har ulanishga yangi jarayon ochmaydi.",
+    "say": "May es-kyu-el serveri may-es-kyu-el-di esa bitta ko‘p oqimli dastur. U har ulanishga yangi jarayon ochmaydi.",
+    "a0": 59.52,
+    "a1": 65.48,
+    "words": [
+      {
+        "w": "May",
+        "s": 59.52,
+        "e": 59.68
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 59.7,
+        "e": 60.08
+      },
+      {
+        "w": "serveri",
+        "s": 60.1,
+        "e": 60.46
+      },
+      {
+        "w": "may-es-kyu-el-di",
+        "s": 60.6,
+        "e": 61.36
+      },
+      {
+        "w": "esa",
+        "s": 61.48,
+        "e": 61.66
+      },
+      {
+        "w": "bitta",
+        "s": 61.86,
+        "e": 62.16
+      },
+      {
+        "w": "ko‘p",
+        "s": 62.26,
+        "e": 62.46
+      },
+      {
+        "w": "oqimli",
+        "s": 62.56,
+        "e": 62.9
+      },
+      {
+        "w": "dastur.",
+        "s": 62.96,
+        "e": 63.28
+      },
+      {
+        "w": "U",
+        "s": 63.62,
+        "e": 63.64
+      },
+      {
+        "w": "har",
+        "s": 63.74,
+        "e": 63.9
+      },
+      {
+        "w": "ulanishga",
+        "s": 63.98,
+        "e": 64.34
+      },
+      {
+        "w": "yangi",
+        "s": 64.42,
+        "e": 64.66
+      },
+      {
+        "w": "jarayon",
+        "s": 64.7,
+        "e": 65.0
+      },
+      {
+        "w": "ochmaydi.",
+        "s": 65.1,
+        "e": 65.48
+      }
+    ]
+  },
+  {
+    "id": "L9",
+    "scene": "mysql",
+    "text": "Ulanishlar threadlar, ya’ni bitta jarayon ichidagi alohida oqimlar orqali boshqariladi. Har mijozga alohida thread biriktiriladi.",
+    "show": "Ulanishlar threadlar, ya’ni bitta jarayon ichidagi alohida oqimlar orqali boshqariladi. Har mijozga alohida thread biriktiriladi.",
+    "say": "Ulanishlar tredlar, ya’ni bitta jarayon ichidagi alohida oqimlar orqali boshqariladi. Har mijozga alohida tred biriktiriladi.",
+    "a0": 66.02,
+    "a1": 72.99,
+    "words": [
+      {
+        "w": "Ulanishlar",
+        "s": 66.02,
+        "e": 66.52
+      },
+      {
+        "w": "tredlar,",
+        "s": 66.62,
+        "e": 67.04
+      },
+      {
+        "w": "ya’ni",
+        "s": 67.26,
+        "e": 67.44
+      },
+      {
+        "w": "bitta",
+        "s": 67.55,
+        "e": 67.79
+      },
+      {
+        "w": "jarayon",
+        "s": 67.83,
+        "e": 68.15
+      },
+      {
+        "w": "ichidagi",
+        "s": 68.19,
+        "e": 68.51
+      },
+      {
+        "w": "alohida",
+        "s": 68.65,
+        "e": 69.07
+      },
+      {
+        "w": "oqimlar",
+        "s": 69.17,
+        "e": 69.53
+      },
+      {
+        "w": "orqali",
+        "s": 69.59,
+        "e": 69.87
+      },
+      {
+        "w": "boshqariladi.",
+        "s": 69.91,
+        "e": 70.43
+      },
+      {
+        "w": "Har",
+        "s": 70.81,
+        "e": 70.93
+      },
+      {
+        "w": "mijozga",
+        "s": 70.97,
+        "e": 71.33
+      },
+      {
+        "w": "alohida",
+        "s": 71.67,
+        "e": 72.07
+      },
+      {
+        "w": "tred",
+        "s": 72.17,
+        "e": 72.43
+      },
+      {
+        "w": "biriktiriladi.",
+        "s": 72.47,
+        "e": 72.99
+      }
+    ]
+  },
+  {
+    "id": "L10",
+    "scene": "mysql",
+    "text": "MySQL’ning yana bir o‘ziga xosligi — almashtiriladigan storage engine’lar. SQL tahlilini server bajaradi, diskda saqlashni esa engine qiladi.",
+    "show": "MySQL’ning yana bir o‘ziga xosligi — almashtiriladigan storage engine’lar. SQL tahlilini server bajaradi, diskda saqlashni esa engine qiladi.",
+    "say": "May es-kyu-elning yana bir o‘ziga xosligi — almashtiriladigan storidj endjinlar. Es-kyu-el tahlilini server bajaradi, diskda saqlashni esa engine qiladi.",
+    "a0": 73.63,
+    "a1": 81.73,
+    "words": [
+      {
+        "w": "May",
+        "s": 73.63,
+        "e": 73.77
+      },
+      {
+        "w": "es-kyu-elning",
+        "s": 73.79,
+        "e": 74.35
+      },
+      {
+        "w": "yana",
+        "s": 74.47,
+        "e": 74.63
+      },
+      {
+        "w": "bir",
+        "s": 74.67,
+        "e": 74.75
+      },
+      {
+        "w": "o‘ziga",
+        "s": 74.79,
+        "e": 75.03
+      },
+      {
+        "w": "xosligi",
+        "s": 75.07,
+        "e": 75.43
+      },
+      {
+        "w": "—",
+        "s": 75.43,
+        "e": 75.43
+      },
+      {
+        "w": "almashtiriladigan",
+        "s": 75.61,
+        "e": 76.41
+      },
+      {
+        "w": "storidj",
+        "s": 76.51,
+        "e": 76.89
+      },
+      {
+        "w": "endjinlar.",
+        "s": 77.01,
+        "e": 77.43
+      },
+      {
+        "w": "Es-kyu-el",
+        "s": 77.91,
+        "e": 78.27
+      },
+      {
+        "w": "tahlilini",
+        "s": 78.31,
+        "e": 78.79
+      },
+      {
+        "w": "server",
+        "s": 78.89,
+        "e": 79.23
+      },
+      {
+        "w": "bajaradi,",
+        "s": 79.27,
+        "e": 79.61
+      },
+      {
+        "w": "diskda",
+        "s": 79.93,
+        "e": 80.31
+      },
+      {
+        "w": "saqlashni",
+        "s": 80.37,
+        "e": 80.79
+      },
+      {
+        "w": "esa",
+        "s": 80.83,
+        "e": 80.97
+      },
+      {
+        "w": "engine",
+        "s": 81.17,
+        "e": 81.47
+      },
+      {
+        "w": "qiladi.",
+        "s": 81.47,
+        "e": 81.73
+      }
+    ]
+  },
+  {
+    "id": "L11",
+    "scene": "mysql",
+    "text": "Sukut bo‘yicha engine — InnoDB. U tranzaksiyalar, qator darajasidagi qulflar va tashqi kalitlarni ta’minlaydi.",
+    "show": "Sukut bo‘yicha engine — InnoDB. U tranzaksiyalar, qator darajasidagi qulflar va tashqi kalitlarni ta’minlaydi.",
+    "say": "Sukut bo‘yicha engine — Inno-di-bi. U tranzaksiyalar, qator darajasidagi qulflar va tashqi kalitlarni ta’minlaydi.",
+    "a0": 82.31,
+    "a1": 88.52,
+    "words": [
+      {
+        "w": "Sukut",
+        "s": 82.31,
+        "e": 82.54
+      },
+      {
+        "w": "bo‘yicha",
+        "s": 82.58,
+        "e": 82.84
+      },
+      {
+        "w": "engine",
+        "s": 82.96,
+        "e": 83.42
+      },
+      {
+        "w": "—",
+        "s": 83.42,
+        "e": 83.42
+      },
+      {
+        "w": "Inno-di-bi.",
+        "s": 83.46,
+        "e": 83.98
+      },
+      {
+        "w": "U",
+        "s": 84.42,
+        "e": 84.44
+      },
+      {
+        "w": "tranzaksiyalar,",
+        "s": 84.58,
+        "e": 85.32
+      },
+      {
+        "w": "qator",
+        "s": 85.58,
+        "e": 85.84
+      },
+      {
+        "w": "darajasidagi",
+        "s": 85.9,
+        "e": 86.46
+      },
+      {
+        "w": "qulflar",
+        "s": 86.52,
+        "e": 86.94
+      },
+      {
+        "w": "va",
+        "s": 87.0,
+        "e": 87.06
+      },
+      {
+        "w": "tashqi",
+        "s": 87.14,
+        "e": 87.42
+      },
+      {
+        "w": "kalitlarni",
+        "s": 87.46,
+        "e": 87.98
+      },
+      {
+        "w": "ta’minlaydi.",
+        "s": 88.02,
+        "e": 88.52
+      }
+    ]
+  },
+  {
+    "id": "L12",
+    "scene": "sqlite",
+    "text": "SQLite ilova jarayoni ichida ishlaydigan kutubxona. U mustaqil, serversiz va sozlashni talab qilmaydi.",
+    "show": "SQLite ilova jarayoni ichida ishlaydigan kutubxona. U mustaqil, serversiz va sozlashni talab qilmaydi.",
+    "say": "Es-kyu-layt ilova jarayoni ichida ishlaydigan kutubxona. U mustaqil, serversiz va sozlashni talab qilmaydi.",
+    "a0": 89.22,
+    "a1": 94.9,
+    "words": [
+      {
+        "w": "Es-kyu-layt",
+        "s": 89.22,
+        "e": 90.02
+      },
+      {
+        "w": "ilova",
+        "s": 90.02,
+        "e": 90.22
+      },
+      {
+        "w": "jarayoni",
+        "s": 90.26,
+        "e": 90.62
+      },
+      {
+        "w": "ichida",
+        "s": 90.64,
+        "e": 90.82
+      },
+      {
+        "w": "ishlaydigan",
+        "s": 90.88,
+        "e": 91.32
+      },
+      {
+        "w": "kutubxona.",
+        "s": 91.36,
+        "e": 91.84
+      },
+      {
+        "w": "U",
+        "s": 92.22,
+        "e": 92.24
+      },
+      {
+        "w": "mustaqil,",
+        "s": 92.38,
+        "e": 92.94
+      },
+      {
+        "w": "serversiz",
+        "s": 93.04,
+        "e": 93.6
+      },
+      {
+        "w": "va",
+        "s": 93.66,
+        "e": 93.72
+      },
+      {
+        "w": "sozlashni",
+        "s": 93.8,
+        "e": 94.26
+      },
+      {
+        "w": "talab",
+        "s": 94.28,
+        "e": 94.5
+      },
+      {
+        "w": "qilmaydi.",
+        "s": 94.54,
+        "e": 94.9
+      }
+    ]
+  },
+  {
+    "id": "L13",
+    "scene": "sqlite",
+    "text": "Butun baza diskdagi bitta faylda saqlanadi. Jadvallar, indekslar va ma’lumotlar hammasi bitta fayl ichida turadi.",
+    "show": "Butun baza diskdagi bitta faylda saqlanadi. Jadvallar, indekslar va ma’lumotlar hammasi bitta fayl ichida turadi.",
+    "say": "Butun baza diskdagi bitta faylda saqlanadi. Jadvallar, indekslar va ma’lumotlar hammasi bitta fayl ichida turadi.",
+    "a0": 95.48,
+    "a1": 102.17,
+    "words": [
+      {
+        "w": "Butun",
+        "s": 95.48,
+        "e": 95.74
+      },
+      {
+        "w": "baza",
+        "s": 95.84,
+        "e": 96.12
+      },
+      {
+        "w": "diskdagi",
+        "s": 96.38,
+        "e": 96.82
+      },
+      {
+        "w": "bitta",
+        "s": 96.9,
+        "e": 97.18
+      },
+      {
+        "w": "faylda",
+        "s": 97.24,
+        "e": 97.59
+      },
+      {
+        "w": "saqlanadi.",
+        "s": 97.63,
+        "e": 98.05
+      },
+      {
+        "w": "Jadvallar,",
+        "s": 98.45,
+        "e": 98.99
+      },
+      {
+        "w": "indekslar",
+        "s": 99.11,
+        "e": 99.59
+      },
+      {
+        "w": "va",
+        "s": 99.65,
+        "e": 99.71
+      },
+      {
+        "w": "ma’lumotlar",
+        "s": 99.77,
+        "e": 100.31
+      },
+      {
+        "w": "hammasi",
+        "s": 100.37,
+        "e": 100.73
+      },
+      {
+        "w": "bitta",
+        "s": 101.05,
+        "e": 101.33
+      },
+      {
+        "w": "fayl",
+        "s": 101.39,
+        "e": 101.61
+      },
+      {
+        "w": "ichida",
+        "s": 101.67,
+        "e": 101.89
+      },
+      {
+        "w": "turadi.",
+        "s": 101.93,
+        "e": 102.17
+      }
+    ]
+  },
+  {
+    "id": "L14",
+    "scene": "sqlite",
+    "text": "Fayl formati platformadan mustaqil. Ammo bir vaqtda faqat bitta yozuvchi yoza oladi, qolganlari navbat kutadi.",
+    "show": "Fayl formati platformadan mustaqil. Ammo bir vaqtda faqat bitta yozuvchi yoza oladi, qolganlari navbat kutadi.",
+    "say": "Fayl formati platformadan mustaqil. Ammo bir vaqtda faqat bitta yozuvchi yoza oladi, qolganlari navbat kutadi.",
+    "a0": 102.71,
+    "a1": 108.83,
+    "words": [
+      {
+        "w": "Fayl",
+        "s": 102.71,
+        "e": 102.93
+      },
+      {
+        "w": "formati",
+        "s": 102.97,
+        "e": 103.31
+      },
+      {
+        "w": "platformadan",
+        "s": 103.35,
+        "e": 103.97
+      },
+      {
+        "w": "mustaqil.",
+        "s": 104.03,
+        "e": 104.45
+      },
+      {
+        "w": "Ammo",
+        "s": 104.87,
+        "e": 105.03
+      },
+      {
+        "w": "bir",
+        "s": 105.37,
+        "e": 105.47
+      },
+      {
+        "w": "vaqtda",
+        "s": 105.51,
+        "e": 105.79
+      },
+      {
+        "w": "faqat",
+        "s": 105.87,
+        "e": 106.15
+      },
+      {
+        "w": "bitta",
+        "s": 106.27,
+        "e": 106.55
+      },
+      {
+        "w": "yozuvchi",
+        "s": 106.55,
+        "e": 107.01
+      },
+      {
+        "w": "yoza",
+        "s": 107.05,
+        "e": 107.23
+      },
+      {
+        "w": "oladi,",
+        "s": 107.29,
+        "e": 107.51
+      },
+      {
+        "w": "qolganlari",
+        "s": 107.73,
+        "e": 108.17
+      },
+      {
+        "w": "navbat",
+        "s": 108.23,
+        "e": 108.53
+      },
+      {
+        "w": "kutadi.",
+        "s": 108.57,
+        "e": 108.83
+      }
+    ]
+  },
+  {
+    "id": "L15",
+    "scene": "sqlite",
+    "text": "SQLite hujjati ajoyib taqqoslash keltiradi: uni Oracle o‘rnini bosuvchi emas, balki fayl ochish funksiyasi o‘rnini bosuvchi deb tushuning.",
+    "show": "SQLite hujjati ajoyib taqqoslash keltiradi: uni Oracle o‘rnini bosuvchi emas, balki fayl ochish funksiyasi o‘rnini bosuvchi deb tushuning.",
+    "say": "Es-kyu-layt hujjati ajoyib taqqoslash keltiradi: uni Orakl o‘rnini bosuvchi emas, balki fayl ochish funksiyasi o‘rnini bosuvchi deb tushuning.",
+    "a0": 109.19,
+    "a1": 116.74,
+    "words": [
+      {
+        "w": "Es-kyu-layt",
+        "s": 109.19,
+        "e": 109.71
+      },
+      {
+        "w": "hujjati",
+        "s": 109.73,
+        "e": 110.09
+      },
+      {
+        "w": "ajoyib",
+        "s": 110.27,
+        "e": 110.69
+      },
+      {
+        "w": "taqqoslash",
+        "s": 110.75,
+        "e": 111.21
+      },
+      {
+        "w": "keltiradi:",
+        "s": 111.23,
+        "e": 111.63
+      },
+      {
+        "w": "uni",
+        "s": 112.03,
+        "e": 112.17
+      },
+      {
+        "w": "Orakl",
+        "s": 112.43,
+        "e": 112.8
+      },
+      {
+        "w": "o‘rnini",
+        "s": 112.88,
+        "e": 113.16
+      },
+      {
+        "w": "bosuvchi",
+        "s": 113.2,
+        "e": 113.52
+      },
+      {
+        "w": "emas,",
+        "s": 113.56,
+        "e": 113.78
+      },
+      {
+        "w": "balki",
+        "s": 114.06,
+        "e": 114.3
+      },
+      {
+        "w": "fayl",
+        "s": 114.5,
+        "e": 114.82
+      },
+      {
+        "w": "ochish",
+        "s": 114.94,
+        "e": 115.18
+      },
+      {
+        "w": "funksiyasi",
+        "s": 115.24,
+        "e": 115.64
+      },
+      {
+        "w": "o‘rnini",
+        "s": 115.7,
+        "e": 115.94
+      },
+      {
+        "w": "bosuvchi",
+        "s": 115.98,
+        "e": 116.3
+      },
+      {
+        "w": "deb",
+        "s": 116.32,
+        "e": 116.44
+      },
+      {
+        "w": "tushuning.",
+        "s": 116.46,
+        "e": 116.74
+      }
+    ]
+  },
+  {
+    "id": "L16",
+    "scene": "tanlov",
+    "text": "Xo‘sh, qaysi birini qachon tanlash kerak? SQLite hujjati aniq uchta nazorat savolini beradi.",
+    "show": "Xo‘sh, qaysi birini qachon tanlash kerak? SQLite hujjati aniq uchta nazorat savolini beradi.",
+    "say": "Xo‘sh, qaysi birini qachon tanlash kerak? Es-kyu-layt hujjati aniq uchta nazorat savolini beradi.",
+    "a0": 117.32,
+    "a1": 122.7,
+    "words": [
+      {
+        "w": "Xo‘sh,",
+        "s": 117.32,
+        "e": 117.52
+      },
+      {
+        "w": "qaysi",
+        "s": 117.88,
+        "e": 118.2
+      },
+      {
+        "w": "birini",
+        "s": 118.26,
+        "e": 118.46
+      },
+      {
+        "w": "qachon",
+        "s": 118.54,
+        "e": 118.82
+      },
+      {
+        "w": "tanlash",
+        "s": 118.86,
+        "e": 119.16
+      },
+      {
+        "w": "kerak?",
+        "s": 119.18,
+        "e": 119.4
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 120.02,
+        "e": 120.5
+      },
+      {
+        "w": "hujjati",
+        "s": 120.52,
+        "e": 120.86
+      },
+      {
+        "w": "aniq",
+        "s": 120.98,
+        "e": 121.2
+      },
+      {
+        "w": "uchta",
+        "s": 121.38,
+        "e": 121.6
+      },
+      {
+        "w": "nazorat",
+        "s": 121.66,
+        "e": 122.02
+      },
+      {
+        "w": "savolini",
+        "s": 122.04,
+        "e": 122.4
+      },
+      {
+        "w": "beradi.",
+        "s": 122.42,
+        "e": 122.7
+      }
+    ]
+  },
+  {
+    "id": "L17",
+    "scene": "tanlov",
+    "text": "Birinchi savol: ma’lumot ilovadan tarmoq orqali ajratilganmi? Ha bo‘lsa — mijoz-server baza tanlang.",
+    "show": "Birinchi savol: ma’lumot ilovadan tarmoq orqali ajratilganmi? Ha bo‘lsa — mijoz-server baza tanlang.",
+    "say": "Birinchi savol: ma’lumot ilovadan tarmoq orqali ajratilganmi? Ha bo‘lsa — mijoz-server baza tanlang.",
+    "a0": 123.28,
+    "a1": 129.31,
+    "words": [
+      {
+        "w": "Birinchi",
+        "s": 123.28,
+        "e": 123.52
+      },
+      {
+        "w": "savol:",
+        "s": 123.52,
+        "e": 123.76
+      },
+      {
+        "w": "ma’lumot",
+        "s": 124.22,
+        "e": 124.64
+      },
+      {
+        "w": "ilovadan",
+        "s": 124.7,
+        "e": 125.1
+      },
+      {
+        "w": "tarmoq",
+        "s": 125.14,
+        "e": 125.44
+      },
+      {
+        "w": "orqali",
+        "s": 125.48,
+        "e": 125.74
+      },
+      {
+        "w": "ajratilganmi?",
+        "s": 125.84,
+        "e": 126.46
+      },
+      {
+        "w": "Ha",
+        "s": 127.0,
+        "e": 127.12
+      },
+      {
+        "w": "bo‘lsa",
+        "s": 127.22,
+        "e": 127.51
+      },
+      {
+        "w": "—",
+        "s": 127.51,
+        "e": 127.51
+      },
+      {
+        "w": "mijoz-server",
+        "s": 127.85,
+        "e": 128.63
+      },
+      {
+        "w": "baza",
+        "s": 128.71,
+        "e": 128.95
+      },
+      {
+        "w": "tanlang.",
+        "s": 128.99,
+        "e": 129.31
+      }
+    ]
+  },
+  {
+    "id": "L18",
+    "scene": "tanlov",
+    "text": "Ikkinchi savol: ko‘p yozuvchi bir vaqtda yozishi kerakmi va ular navbat kuta olmaydimi? Ha bo‘lsa — mijoz-server tanlang.",
+    "show": "Ikkinchi savol: ko‘p yozuvchi bir vaqtda yozishi kerakmi va ular navbat kuta olmaydimi? Ha bo‘lsa — mijoz-server tanlang.",
+    "say": "Ikkinchi savol: ko‘p yozuvchi bir vaqtda yozishi kerakmi va ular navbat kuta olmaydimi? Ha bo‘lsa — mijoz-server tanlang.",
+    "a0": 129.99,
+    "a1": 136.61,
+    "words": [
+      {
+        "w": "Ikkinchi",
+        "s": 129.99,
+        "e": 130.27
+      },
+      {
+        "w": "savol:",
+        "s": 130.29,
+        "e": 130.51
+      },
+      {
+        "w": "ko‘p",
+        "s": 130.91,
+        "e": 131.09
+      },
+      {
+        "w": "yozuvchi",
+        "s": 131.15,
+        "e": 131.53
+      },
+      {
+        "w": "bir",
+        "s": 131.63,
+        "e": 131.73
+      },
+      {
+        "w": "vaqtda",
+        "s": 131.79,
+        "e": 132.05
+      },
+      {
+        "w": "yozishi",
+        "s": 132.05,
+        "e": 132.37
+      },
+      {
+        "w": "kerakmi",
+        "s": 132.41,
+        "e": 132.77
+      },
+      {
+        "w": "va",
+        "s": 133.07,
+        "e": 133.13
+      },
+      {
+        "w": "ular",
+        "s": 133.25,
+        "e": 133.45
+      },
+      {
+        "w": "navbat",
+        "s": 133.51,
+        "e": 133.79
+      },
+      {
+        "w": "kuta",
+        "s": 133.81,
+        "e": 133.93
+      },
+      {
+        "w": "olmaydimi?",
+        "s": 133.97,
+        "e": 134.35
+      },
+      {
+        "w": "Ha",
+        "s": 134.89,
+        "e": 135.01
+      },
+      {
+        "w": "bo‘lsa",
+        "s": 135.11,
+        "e": 135.39
+      },
+      {
+        "w": "—",
+        "s": 135.39,
+        "e": 135.39
+      },
+      {
+        "w": "mijoz-server",
+        "s": 135.61,
+        "e": 136.27
+      },
+      {
+        "w": "tanlang.",
+        "s": 136.31,
+        "e": 136.61
+      }
+    ]
+  },
+  {
+    "id": "L19",
+    "scene": "tanlov",
+    "text": "Uchinchi savol: ma’lumot bitta faylga sig‘maydimi? Ha bo‘lsa — yana mijoz-server tanlang.",
+    "show": "Uchinchi savol: ma’lumot bitta faylga sig‘maydimi? Ha bo‘lsa — yana mijoz-server tanlang.",
+    "say": "Uchinchi savol: ma’lumot bitta faylga sig‘maydimi? Ha bo‘lsa — yana mijoz-server tanlang.",
+    "a0": 137.39,
+    "a1": 142.74,
+    "words": [
+      {
+        "w": "Uchinchi",
+        "s": 137.39,
+        "e": 137.67
+      },
+      {
+        "w": "savol:",
+        "s": 137.67,
+        "e": 137.91
+      },
+      {
+        "w": "ma’lumot",
+        "s": 138.43,
+        "e": 138.83
+      },
+      {
+        "w": "bitta",
+        "s": 138.89,
+        "e": 139.11
+      },
+      {
+        "w": "faylga",
+        "s": 139.15,
+        "e": 139.49
+      },
+      {
+        "w": "sig‘maydimi?",
+        "s": 139.53,
+        "e": 140.01
+      },
+      {
+        "w": "Ha",
+        "s": 140.65,
+        "e": 140.75
+      },
+      {
+        "w": "bo‘lsa",
+        "s": 140.85,
+        "e": 141.11
+      },
+      {
+        "w": "—",
+        "s": 141.11,
+        "e": 141.11
+      },
+      {
+        "w": "yana",
+        "s": 141.45,
+        "e": 141.65
+      },
+      {
+        "w": "mijoz-server",
+        "s": 141.73,
+        "e": 142.37
+      },
+      {
+        "w": "tanlang.",
+        "s": 142.41,
+        "e": 142.74
+      }
+    ]
+  },
+  {
+    "id": "L20",
+    "scene": "tanlov",
+    "text": "Qolgan barcha holatlarda esa — SQLite tanlang! Telefon, desktop ilovalar, lokal kesh yoki o‘rta trafikli saytlar uchun u eng yaxshi yechim.",
+    "show": "Qolgan barcha holatlarda esa — SQLite tanlang! Telefon, desktop ilovalar, lokal kesh yoki o‘rta trafikli saytlar uchun u eng yaxshi yechim.",
+    "say": "Qolgan barcha holatlarda esa — Es-kyu-layt tanlang! Telefon, desktop ilovalar, lokal kesh yoki o‘rta trafikli saytlar uchun u eng yaxshi yechim.",
+    "a0": 143.56,
+    "a1": 152.14,
+    "words": [
+      {
+        "w": "Qolgan",
+        "s": 143.56,
+        "e": 143.86
+      },
+      {
+        "w": "barcha",
+        "s": 143.9,
+        "e": 144.14
+      },
+      {
+        "w": "holatlarda",
+        "s": 144.18,
+        "e": 144.62
+      },
+      {
+        "w": "esa",
+        "s": 144.66,
+        "e": 144.8
+      },
+      {
+        "w": "—",
+        "s": 144.8,
+        "e": 144.8
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 144.96,
+        "e": 145.54
+      },
+      {
+        "w": "tanlang!",
+        "s": 145.58,
+        "e": 145.92
+      },
+      {
+        "w": "Telefon,",
+        "s": 146.44,
+        "e": 146.9
+      },
+      {
+        "w": "desktop",
+        "s": 147.1,
+        "e": 147.46
+      },
+      {
+        "w": "ilovalar,",
+        "s": 147.52,
+        "e": 147.98
+      },
+      {
+        "w": "lokal",
+        "s": 148.18,
+        "e": 148.5
+      },
+      {
+        "w": "kesh",
+        "s": 148.58,
+        "e": 148.86
+      },
+      {
+        "w": "yoki",
+        "s": 149.0,
+        "e": 149.22
+      },
+      {
+        "w": "o‘rta",
+        "s": 149.38,
+        "e": 149.6
+      },
+      {
+        "w": "trafikli",
+        "s": 149.64,
+        "e": 150.08
+      },
+      {
+        "w": "saytlar",
+        "s": 150.12,
+        "e": 150.46
+      },
+      {
+        "w": "uchun",
+        "s": 150.5,
+        "e": 150.68
+      },
+      {
+        "w": "u",
+        "s": 150.92,
+        "e": 150.94
+      },
+      {
+        "w": "eng",
+        "s": 151.26,
+        "e": 151.46
+      },
+      {
+        "w": "yaxshi",
+        "s": 151.54,
+        "e": 151.84
+      },
+      {
+        "w": "yechim.",
+        "s": 151.84,
+        "e": 152.14
+      }
+    ]
+  },
+  {
+    "id": "L21",
+    "scene": "xulosa",
+    "text": "Bizning qo‘llanma veb-ilovalarga qaratilgani sababli asosiy e’tibor PostgreSQL’ga beriladi. Keyingi videoda bu uch tizimni haqiqiy terminalda ko‘ramiz.",
+    "show": "Bizning qo‘llanma veb-ilovalarga qaratilgani sababli asosiy e’tibor PostgreSQL’ga beriladi. Keyingi videoda bu uch tizimni haqiqiy terminalda ko‘ramiz.",
+    "say": "Bizning qo‘llanma veb-ilovalarga qaratilgani sababli asosiy e’tibor Postgresga beriladi. Keyingi videoda bu uch tizimni haqiqiy terminalda ko‘ramiz.",
+    "a0": 152.85,
+    "a1": 161.02,
+    "words": [
+      {
+        "w": "Bizning",
+        "s": 152.85,
+        "e": 153.07
+      },
+      {
+        "w": "qo‘llanma",
+        "s": 153.07,
+        "e": 153.47
+      },
+      {
+        "w": "veb-ilovalarga",
+        "s": 153.65,
+        "e": 154.33
+      },
+      {
+        "w": "qaratilgani",
+        "s": 154.37,
+        "e": 154.85
+      },
+      {
+        "w": "sababli",
+        "s": 154.87,
+        "e": 155.21
+      },
+      {
+        "w": "asosiy",
+        "s": 155.53,
+        "e": 155.87
+      },
+      {
+        "w": "e’tibor",
+        "s": 156.01,
+        "e": 156.33
+      },
+      {
+        "w": "Postgresga",
+        "s": 156.43,
+        "e": 156.95
+      },
+      {
+        "w": "beriladi.",
+        "s": 156.99,
+        "e": 157.33
+      },
+      {
+        "w": "Keyingi",
+        "s": 157.85,
+        "e": 158.11
+      },
+      {
+        "w": "videoda",
+        "s": 158.15,
+        "e": 158.45
+      },
+      {
+        "w": "bu",
+        "s": 158.76,
+        "e": 158.82
+      },
+      {
+        "w": "uch",
+        "s": 159.04,
+        "e": 159.18
+      },
+      {
+        "w": "tizimni",
+        "s": 159.24,
+        "e": 159.58
+      },
+      {
+        "w": "haqiqiy",
+        "s": 159.64,
+        "e": 160.06
+      },
+      {
+        "w": "terminalda",
+        "s": 160.12,
+        "e": 160.64
+      },
+      {
+        "w": "ko‘ramiz.",
+        "s": 160.68,
+        "e": 161.02
+      }
+    ]
+  }
+]

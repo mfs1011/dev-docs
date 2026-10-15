@@ -1,0 +1,101 @@
+WEBVTT
+
+1
+00:01.420 --> 00:11.900
+Salom! To‘rtinchi bobning uchinchi qismida PostgreSQL, MySQL va SQLite tizimlari
+o‘rtasidagi muhim sintaksis farqlarini va oltita xavfli tuzoqni ko‘rib chiqamiz.
+
+2
+00:14.770 --> 00:22.860
+Identifikatorlarni o‘rashda katta farq bor: PostgreSQL standart
+qo‘shtirnoq ishlatadi, MySQL da esa bektik belgisi qabul qilingan.
+
+3
+00:22.970 --> 00:27.350
+SQLite esa har ikkala usulni, hamda
+kvadrat qavslarni ham tushunadi.
+
+4
+00:27.600 --> 00:35.850
+Katta-kichik harf masalasida MySQL juda xavfli tuzoqqa ega: uning
+lower_case_table_names parametri operatsion tizimga bog‘liq.
+
+5
+00:35.860 --> 00:45.580
+macOS va Windows da harflar farq qilmasligi mumkin, ammo Linux serveriga o‘tganda
+katta harfli va kichik harfli jadvallar ikki xil jadvalga aylanadi va kod xato beradi!
+
+6
+00:48.530 --> 00:58.820
+Nom uzunligida: PostgreSQL 63 baytdan oshgan nomni jimgina qisqartiradi.
+MySQL esa 64 belgidan oshsa, darhol 1059 xatosini qaytaradi.
+
+7
+00:59.060 --> 01:06.590
+Satrlarda esa teskari chiziq qoidasi farq qiladi: oddiy a teskari
+chiziq en satri PostgreSQL da to‘rtta belgi bo‘lib qoladi.
+
+8
+01:06.760 --> 01:11.030
+MySQL da esa u oddiy satr ichida
+ham darhol yangi qatorga aylanadi.
+
+9
+01:13.780 --> 01:22.940
+Sonlar borasida: nol iks ef-ef PostgreSQL da 255 soni bo‘lsa, MySQL
+da u binar satr hisoblanadi va son qilish uchun nol qo‘shish kerak.
+
+10
+01:23.070 --> 01:29.900
+Tagchiziqli bir ming ifodasi PostgreSQL va SQLite da son
+bo‘lsa, MySQL uni ustun nomi deb o‘ylab xato beradi.
+
+11
+01:30.110 --> 01:38.730
+Izohlarda esa besh minus minus bir ifodasi MySQL da olti natijasini
+beradi, chunki MySQL da minus-minusdan keyin probel bo‘lishi shart!
+
+12
+01:38.760 --> 01:46.630
+Shuningdek, MySQL da daraja belgisi darajaga ko‘tarish emas,
+balki bitli XOR amali hisoblanadi va bir natijasini beradi.
+
+13
+01:49.630 --> 01:53.680
+Endi amaliyotdagi eng ko‘p uchraydigan
+oltita tipik xatoni ko‘rib chiqamiz.
+
+14
+01:53.810 --> 02:00.580
+Birinchi xato: jadvalni qo‘shtirnoq bilan Mahsulot deb yaratib,
+keyin qo‘shtirnoqsiz chaqirish. PostgreSQL uni topa olmaydi.
+
+15
+02:00.690 --> 02:07.110
+Ikkinchi xato: ORM larda aralash harfli nomlar qo‘llash.
+Doim pastki chiziqli kichik harflardan foydalaning.
+
+16
+02:07.100 --> 02:14.810
+Uchinchi xato: ORDER yoki USER kabi kalit so‘zlarni nom
+qilish. Ular boshqa tizimga ko‘chirishda muammo tug‘diradi.
+
+17
+02:15.180 --> 02:22.540
+To‘rtinchi xato: satr ichidagi tirnoqni teskari chiziq bilan
+qochirish. Standart usul — ikkita bitta tirnoq yozishdir.
+
+18
+02:22.870 --> 02:32.660
+Beshinchi xato: a minus minus b ifodasini bo‘sh joysiz yozish. Va
+oltinchi xato: daraja belgisi hamma tizimda daraja deb o‘ylash.
+
+19
+02:35.510 --> 02:42.550
+Shu bilan SQL sintaksisi bobini yakunladik. Qoidalarni
+to‘g‘ri qo‘llash sizni yuzlab yashirin xatolardan asraydi.
+
+20
+02:42.740 --> 02:48.350
+Keyingi beshinchi bobda baza, sxema va
+jadvallar tuzilishini batafsil o‘rganamiz.

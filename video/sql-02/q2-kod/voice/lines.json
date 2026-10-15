@@ -1,0 +1,1237 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Ikkinchi bobdagi arxitektura farqlarini endi haqiqiy tizimlarda tekshiramiz. PostgreSQL, MySQL va SQLite terminallaridagi barcha natijalar — haqiqiy.",
+    "show": "Ikkinchi bobdagi arxitektura farqlarini endi haqiqiy tizimlarda tekshiramiz. PostgreSQL, MySQL va SQLite terminallaridagi barcha natijalar — haqiqiy.",
+    "say": "Ikkinchi bobdagi arxitektura farqlarini endi haqiqiy tizimlarda tekshiramiz. Postgres, May es-kyu-el va Es-kyu-layt terminallaridagi barcha natijalar — haqiqiy.",
+    "a0": 0.22,
+    "a1": 9.11,
+    "words": [
+      {
+        "w": "Ikkinchi",
+        "s": 0.22,
+        "e": 0.54
+      },
+      {
+        "w": "bobdagi",
+        "s": 0.56,
+        "e": 0.9
+      },
+      {
+        "w": "arxitektura",
+        "s": 0.96,
+        "e": 1.52
+      },
+      {
+        "w": "farqlarini",
+        "s": 1.56,
+        "e": 2.08
+      },
+      {
+        "w": "endi",
+        "s": 2.18,
+        "e": 2.36
+      },
+      {
+        "w": "haqiqiy",
+        "s": 2.46,
+        "e": 2.9
+      },
+      {
+        "w": "tizimlarda",
+        "s": 2.94,
+        "e": 3.38
+      },
+      {
+        "w": "tekshiramiz.",
+        "s": 3.42,
+        "e": 3.92
+      },
+      {
+        "w": "Postgres,",
+        "s": 4.62,
+        "e": 5.14
+      },
+      {
+        "w": "May",
+        "s": 5.46,
+        "e": 5.62
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 5.68,
+        "e": 6.02
+      },
+      {
+        "w": "va",
+        "s": 6.06,
+        "e": 6.1
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 6.16,
+        "e": 6.6
+      },
+      {
+        "w": "terminallaridagi",
+        "s": 6.62,
+        "e": 7.36
+      },
+      {
+        "w": "barcha",
+        "s": 7.51,
+        "e": 7.83
+      },
+      {
+        "w": "natijalar",
+        "s": 7.87,
+        "e": 8.37
+      },
+      {
+        "w": "—",
+        "s": 8.37,
+        "e": 8.37
+      },
+      {
+        "w": "haqiqiy.",
+        "s": 8.69,
+        "e": 9.11
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "postgres",
+    "text": "Avval PostgreSQL. Ikki mijoz ulanib, besh soniya kutadigan so‘rov yuborganda, operatsion tizimda alohida jarayonlar paydo bo‘ladi.",
+    "show": "Avval PostgreSQL. Ikki mijoz ulanib, besh soniya kutadigan so‘rov yuborganda, operatsion tizimda alohida jarayonlar paydo bo‘ladi.",
+    "say": "Avval Postgres. Ikki mijoz ulanib, besh soniya kutadigan so‘rov yuborganda, operatsion tizimda alohida jarayonlar paydo bo‘ladi.",
+    "a0": 9.91,
+    "a1": 16.49,
+    "words": [
+      {
+        "w": "Avval",
+        "s": 9.91,
+        "e": 10.15
+      },
+      {
+        "w": "Postgres.",
+        "s": 10.21,
+        "e": 10.61
+      },
+      {
+        "w": "Ikki",
+        "s": 11.29,
+        "e": 11.49
+      },
+      {
+        "w": "mijoz",
+        "s": 11.51,
+        "e": 11.79
+      },
+      {
+        "w": "ulanib,",
+        "s": 11.85,
+        "e": 12.15
+      },
+      {
+        "w": "besh",
+        "s": 12.27,
+        "e": 12.47
+      },
+      {
+        "w": "soniya",
+        "s": 12.51,
+        "e": 12.75
+      },
+      {
+        "w": "kutadigan",
+        "s": 12.77,
+        "e": 13.11
+      },
+      {
+        "w": "so‘rov",
+        "s": 13.15,
+        "e": 13.35
+      },
+      {
+        "w": "yuborganda,",
+        "s": 13.39,
+        "e": 13.91
+      },
+      {
+        "w": "operatsion",
+        "s": 14.03,
+        "e": 14.57
+      },
+      {
+        "w": "tizimda",
+        "s": 14.61,
+        "e": 14.93
+      },
+      {
+        "w": "alohida",
+        "s": 15.05,
+        "e": 15.45
+      },
+      {
+        "w": "jarayonlar",
+        "s": 15.51,
+        "e": 15.97
+      },
+      {
+        "w": "paydo",
+        "s": 16.01,
+        "e": 16.19
+      },
+      {
+        "w": "bo‘ladi.",
+        "s": 16.25,
+        "e": 16.49
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "postgres",
+    "text": "Buni PostgreSQL’ning o‘zidan pg_stat_activity view’i orqali ko‘ramiz.",
+    "show": "Buni PostgreSQL’ning o‘zidan pg_stat_activity view’i orqali ko‘ramiz.",
+    "say": "Buni Postgresning o‘zidan pe-ge stat aktiviti view’i orqali ko‘ramiz.",
+    "a0": 17.01,
+    "a1": 20.67,
+    "words": [
+      {
+        "w": "Buni",
+        "s": 17.01,
+        "e": 17.17
+      },
+      {
+        "w": "Postgresning",
+        "s": 17.23,
+        "e": 17.77
+      },
+      {
+        "w": "o‘zidan",
+        "s": 17.85,
+        "e": 18.21
+      },
+      {
+        "w": "pe-ge",
+        "s": 18.51,
+        "e": 18.81
+      },
+      {
+        "w": "stat",
+        "s": 18.87,
+        "e": 19.09
+      },
+      {
+        "w": "aktiviti",
+        "s": 19.15,
+        "e": 19.59
+      },
+      {
+        "w": "view’i",
+        "s": 19.65,
+        "e": 19.95
+      },
+      {
+        "w": "orqali",
+        "s": 20.03,
+        "e": 20.29
+      },
+      {
+        "w": "ko‘ramiz.",
+        "s": 20.33,
+        "e": 20.67
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "postgres",
+    "text": "Har bir ulanish uchun alohida jarayon raqami, ya’ni PID ko‘rinib turibdi. Uchinchi qator esa so‘rovni yuborgan mijozning o‘zi.",
+    "show": "Har bir ulanish uchun alohida jarayon raqami, ya’ni PID ko‘rinib turibdi. Uchinchi qator esa so‘rovni yuborgan mijozning o‘zi.",
+    "say": "Har bir ulanish uchun alohida jarayon raqami, ya’ni Pi-ay-di ko‘rinib turibdi. Uchinchi qator esa so‘rovni yuborgan mijozning o‘zi.",
+    "a0": 21.39,
+    "a1": 27.68,
+    "words": [
+      {
+        "w": "Har",
+        "s": 21.39,
+        "e": 21.51
+      },
+      {
+        "w": "bir",
+        "s": 21.55,
+        "e": 21.65
+      },
+      {
+        "w": "ulanish",
+        "s": 21.71,
+        "e": 21.99
+      },
+      {
+        "w": "uchun",
+        "s": 21.99,
+        "e": 22.13
+      },
+      {
+        "w": "alohida",
+        "s": 22.23,
+        "e": 22.6
+      },
+      {
+        "w": "jarayon",
+        "s": 22.64,
+        "e": 22.96
+      },
+      {
+        "w": "raqami,",
+        "s": 23.0,
+        "e": 23.28
+      },
+      {
+        "w": "ya’ni",
+        "s": 23.54,
+        "e": 23.7
+      },
+      {
+        "w": "Pi-ay-di",
+        "s": 23.8,
+        "e": 24.26
+      },
+      {
+        "w": "ko‘rinib",
+        "s": 24.32,
+        "e": 24.58
+      },
+      {
+        "w": "turibdi.",
+        "s": 24.6,
+        "e": 24.86
+      },
+      {
+        "w": "Uchinchi",
+        "s": 25.5,
+        "e": 25.74
+      },
+      {
+        "w": "qator",
+        "s": 25.76,
+        "e": 26.0
+      },
+      {
+        "w": "esa",
+        "s": 26.04,
+        "e": 26.18
+      },
+      {
+        "w": "so‘rovni",
+        "s": 26.28,
+        "e": 26.62
+      },
+      {
+        "w": "yuborgan",
+        "s": 26.66,
+        "e": 27.0
+      },
+      {
+        "w": "mijozning",
+        "s": 27.04,
+        "e": 27.46
+      },
+      {
+        "w": "o‘zi.",
+        "s": 27.5,
+        "e": 27.68
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "mysql",
+    "text": "Endi xuddi shu holatni MySQL’da ko‘ramiz. Operatsion tizimda faqat bitta mysqld server jarayoni ishlaydi.",
+    "show": "Endi xuddi shu holatni MySQL’da ko‘ramiz. Operatsion tizimda faqat bitta mysqld server jarayoni ishlaydi.",
+    "say": "Endi xuddi shu holatni May es-kyu-elda ko‘ramiz. Operatsion tizimda faqat bitta may-es-kyu-el-di server jarayoni ishlaydi.",
+    "a0": 28.36,
+    "a1": 33.86,
+    "words": [
+      {
+        "w": "Endi",
+        "s": 28.36,
+        "e": 28.54
+      },
+      {
+        "w": "xuddi",
+        "s": 28.6,
+        "e": 28.8
+      },
+      {
+        "w": "shu",
+        "s": 28.84,
+        "e": 28.92
+      },
+      {
+        "w": "holatni",
+        "s": 28.98,
+        "e": 29.28
+      },
+      {
+        "w": "May",
+        "s": 29.32,
+        "e": 29.44
+      },
+      {
+        "w": "es-kyu-elda",
+        "s": 29.5,
+        "e": 29.86
+      },
+      {
+        "w": "ko‘ramiz.",
+        "s": 29.9,
+        "e": 30.22
+      },
+      {
+        "w": "Operatsion",
+        "s": 30.7,
+        "e": 31.1
+      },
+      {
+        "w": "tizimda",
+        "s": 31.14,
+        "e": 31.38
+      },
+      {
+        "w": "faqat",
+        "s": 31.42,
+        "e": 31.68
+      },
+      {
+        "w": "bitta",
+        "s": 31.72,
+        "e": 31.96
+      },
+      {
+        "w": "may-es-kyu-el-di",
+        "s": 32.06,
+        "e": 32.8
+      },
+      {
+        "w": "server",
+        "s": 32.9,
+        "e": 33.18
+      },
+      {
+        "w": "jarayoni",
+        "s": 33.22,
+        "e": 33.54
+      },
+      {
+        "w": "ishlaydi.",
+        "s": 33.56,
+        "e": 33.86
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "mysql",
+    "text": "Ulanishlar esa jarayon ichidagi threadlar orqali boshqariladi. Buni PROCESSLIST jadvalidan ko‘ramiz.",
+    "show": "Ulanishlar esa jarayon ichidagi threadlar orqali boshqariladi. Buni PROCESSLIST jadvalidan ko‘ramiz.",
+    "say": "Ulanishlar esa jarayon ichidagi tredlar orqali boshqariladi. Buni proses-list jadvalidan ko‘ramiz.",
+    "a0": 34.3,
+    "a1": 39.11,
+    "words": [
+      {
+        "w": "Ulanishlar",
+        "s": 34.3,
+        "e": 34.74
+      },
+      {
+        "w": "esa",
+        "s": 34.76,
+        "e": 34.9
+      },
+      {
+        "w": "jarayon",
+        "s": 35.0,
+        "e": 35.32
+      },
+      {
+        "w": "ichidagi",
+        "s": 35.38,
+        "e": 35.7
+      },
+      {
+        "w": "tredlar",
+        "s": 35.76,
+        "e": 36.12
+      },
+      {
+        "w": "orqali",
+        "s": 36.18,
+        "e": 36.42
+      },
+      {
+        "w": "boshqariladi.",
+        "s": 36.48,
+        "e": 36.96
+      },
+      {
+        "w": "Buni",
+        "s": 37.42,
+        "e": 37.61
+      },
+      {
+        "w": "proses-list",
+        "s": 37.69,
+        "e": 38.27
+      },
+      {
+        "w": "jadvalidan",
+        "s": 38.31,
+        "e": 38.75
+      },
+      {
+        "w": "ko‘ramiz.",
+        "s": 38.79,
+        "e": 39.11
+      }
+    ]
+  },
+  {
+    "id": "L7",
+    "scene": "mysql",
+    "text": "Har bir ulanishga alohida thread biriktirilgan. performance_schema’dagi thread nomi ham buni tasdiqlaydi: one_connection.",
+    "show": "Har bir ulanishga alohida thread biriktirilgan. performance_schema’dagi thread nomi ham buni tasdiqlaydi: one_connection.",
+    "say": "Har bir ulanishga alohida tred biriktirilgan. Performans skima’dagi tred nomi ham buni tasdiqlaydi: van konnekshn.",
+    "a0": 39.69,
+    "a1": 45.47,
+    "words": [
+      {
+        "w": "Har",
+        "s": 39.69,
+        "e": 39.81
+      },
+      {
+        "w": "bir",
+        "s": 39.85,
+        "e": 39.95
+      },
+      {
+        "w": "ulanishga",
+        "s": 40.01,
+        "e": 40.39
+      },
+      {
+        "w": "alohida",
+        "s": 40.49,
+        "e": 40.87
+      },
+      {
+        "w": "tred",
+        "s": 40.93,
+        "e": 41.13
+      },
+      {
+        "w": "biriktirilgan.",
+        "s": 41.15,
+        "e": 41.65
+      },
+      {
+        "w": "Performans",
+        "s": 42.17,
+        "e": 42.63
+      },
+      {
+        "w": "skima’dagi",
+        "s": 42.65,
+        "e": 43.07
+      },
+      {
+        "w": "tred",
+        "s": 43.11,
+        "e": 43.33
+      },
+      {
+        "w": "nomi",
+        "s": 43.37,
+        "e": 43.55
+      },
+      {
+        "w": "ham",
+        "s": 43.59,
+        "e": 43.73
+      },
+      {
+        "w": "buni",
+        "s": 43.77,
+        "e": 43.91
+      },
+      {
+        "w": "tasdiqlaydi:",
+        "s": 43.93,
+        "e": 44.43
+      },
+      {
+        "w": "van",
+        "s": 44.77,
+        "e": 44.93
+      },
+      {
+        "w": "konnekshn.",
+        "s": 45.01,
+        "e": 45.47
+      }
+    ]
+  },
+  {
+    "id": "L8",
+    "scene": "mysql",
+    "text": "MySQL’da storage engine’lar ro‘yxatini so‘raymiz.",
+    "show": "MySQL’da storage engine’lar ro‘yxatini so‘raymiz.",
+    "say": "May es-kyu-elda storidj endjinlar ro‘yxatini so‘raymiz.",
+    "a0": 46.37,
+    "a1": 48.47,
+    "words": [
+      {
+        "w": "May",
+        "s": 46.37,
+        "e": 46.51
+      },
+      {
+        "w": "es-kyu-elda",
+        "s": 46.57,
+        "e": 46.93
+      },
+      {
+        "w": "storidj",
+        "s": 46.99,
+        "e": 47.27
+      },
+      {
+        "w": "endjinlar",
+        "s": 47.31,
+        "e": 47.67
+      },
+      {
+        "w": "ro‘yxatini",
+        "s": 47.71,
+        "e": 48.07
+      },
+      {
+        "w": "so‘raymiz.",
+        "s": 48.09,
+        "e": 48.47
+      }
+    ]
+  },
+  {
+    "id": "L9",
+    "scene": "mysql",
+    "text": "Sukut bo‘yicha InnoDB tanlangan. Va e’tibor bering: ro‘yxatda faqat InnoDB tranzaksiyalarni to‘liq qo‘llab-quvvatlaydi.",
+    "show": "Sukut bo‘yicha InnoDB tanlangan. Va e’tibor bering: ro‘yxatda faqat InnoDB tranzaksiyalarni to‘liq qo‘llab-quvvatlaydi.",
+    "say": "Sukut bo‘yicha Inno-di-bi tanlangan. Va e’tibor bering: ro‘yxatda faqat Inno-di-bi tranzaksiyalarni to‘liq qo‘llab-quvvatlaydi.",
+    "a0": 49.17,
+    "a1": 55.42,
+    "words": [
+      {
+        "w": "Sukut",
+        "s": 49.17,
+        "e": 49.41
+      },
+      {
+        "w": "bo‘yicha",
+        "s": 49.47,
+        "e": 49.75
+      },
+      {
+        "w": "Inno-di-bi",
+        "s": 49.91,
+        "e": 50.39
+      },
+      {
+        "w": "tanlangan.",
+        "s": 50.45,
+        "e": 50.89
+      },
+      {
+        "w": "Va",
+        "s": 51.31,
+        "e": 51.37
+      },
+      {
+        "w": "e’tibor",
+        "s": 51.47,
+        "e": 51.75
+      },
+      {
+        "w": "bering:",
+        "s": 51.77,
+        "e": 51.99
+      },
+      {
+        "w": "ro‘yxatda",
+        "s": 52.21,
+        "e": 52.58
+      },
+      {
+        "w": "faqat",
+        "s": 52.62,
+        "e": 52.88
+      },
+      {
+        "w": "Inno-di-bi",
+        "s": 53.04,
+        "e": 53.62
+      },
+      {
+        "w": "tranzaksiyalarni",
+        "s": 53.7,
+        "e": 54.48
+      },
+      {
+        "w": "to‘liq",
+        "s": 54.52,
+        "e": 54.72
+      },
+      {
+        "w": "qo‘llab-quvvatlaydi.",
+        "s": 54.74,
+        "e": 55.42
+      }
+    ]
+  },
+  {
+    "id": "L10",
+    "scene": "sqlite",
+    "text": "Nihoyat, SQLite. Unda server yo‘q: sqlite3 buyrug‘iga fayl nomini berish yetarli.",
+    "show": "Nihoyat, SQLite. Unda server yo‘q: sqlite3 buyrug‘iga fayl nomini berish yetarli.",
+    "say": "Nihoyat, Es-kyu-layt. Unda server yo‘q: es-kyu-layt uch buyrug‘iga fayl nomini berish yetarli.",
+    "a0": 56.3,
+    "a1": 61.54,
+    "words": [
+      {
+        "w": "Nihoyat,",
+        "s": 56.3,
+        "e": 56.68
+      },
+      {
+        "w": "Es-kyu-layt.",
+        "s": 56.74,
+        "e": 57.28
+      },
+      {
+        "w": "Unda",
+        "s": 57.88,
+        "e": 58.02
+      },
+      {
+        "w": "server",
+        "s": 58.08,
+        "e": 58.38
+      },
+      {
+        "w": "yo‘q:",
+        "s": 58.42,
+        "e": 58.58
+      },
+      {
+        "w": "es-kyu-layt",
+        "s": 59.06,
+        "e": 59.58
+      },
+      {
+        "w": "uch",
+        "s": 59.68,
+        "e": 59.8
+      },
+      {
+        "w": "buyrug‘iga",
+        "s": 59.86,
+        "e": 60.28
+      },
+      {
+        "w": "fayl",
+        "s": 60.38,
+        "e": 60.64
+      },
+      {
+        "w": "nomini",
+        "s": 60.68,
+        "e": 60.94
+      },
+      {
+        "w": "berish",
+        "s": 60.96,
+        "e": 61.18
+      },
+      {
+        "w": "yetarli.",
+        "s": 61.2,
+        "e": 61.54
+      }
+    ]
+  },
+  {
+    "id": "L11",
+    "scene": "sqlite",
+    "text": "Mahsulotlar jadvalini yaratib, ikkita qator qo‘shamiz va SELECT bilan o‘qiymiz.",
+    "show": "Mahsulotlar jadvalini yaratib, ikkita qator qo‘shamiz va SELECT bilan o‘qiymiz.",
+    "say": "Mahsulotlar jadvalini yaratib, ikkita qator qo‘shamiz va selekt bilan o‘qiymiz.",
+    "a0": 62.22,
+    "a1": 65.92,
+    "words": [
+      {
+        "w": "Mahsulotlar",
+        "s": 62.22,
+        "e": 62.74
+      },
+      {
+        "w": "jadvalini",
+        "s": 62.78,
+        "e": 63.18
+      },
+      {
+        "w": "yaratib,",
+        "s": 63.22,
+        "e": 63.52
+      },
+      {
+        "w": "ikkita",
+        "s": 63.64,
+        "e": 63.88
+      },
+      {
+        "w": "qator",
+        "s": 63.92,
+        "e": 64.16
+      },
+      {
+        "w": "qo‘shamiz",
+        "s": 64.18,
+        "e": 64.54
+      },
+      {
+        "w": "va",
+        "s": 64.82,
+        "e": 64.88
+      },
+      {
+        "w": "selekt",
+        "s": 64.98,
+        "e": 65.3
+      },
+      {
+        "w": "bilan",
+        "s": 65.32,
+        "e": 65.5
+      },
+      {
+        "w": "o‘qiymiz.",
+        "s": 65.54,
+        "e": 65.92
+      }
+    ]
+  },
+  {
+    "id": "L12",
+    "scene": "sqlite",
+    "text": "Katalogda dokon.db fayli paydo bo‘ldi. Faylning birinchi o‘n olti baytini ko‘ramiz.",
+    "show": "Katalogda dokon.db fayli paydo bo‘ldi. Faylning birinchi o‘n olti baytini ko‘ramiz.",
+    "say": "Katalogda dokon nuqta de-be fayli paydo bo‘ldi. Faylning birinchi o‘n olti baytini ko‘ramiz.",
+    "a0": 66.56,
+    "a1": 70.83,
+    "words": [
+      {
+        "w": "Katalogda",
+        "s": 66.56,
+        "e": 67.02
+      },
+      {
+        "w": "dokon",
+        "s": 67.14,
+        "e": 67.42
+      },
+      {
+        "w": "nuqta",
+        "s": 67.48,
+        "e": 67.71
+      },
+      {
+        "w": "de-be",
+        "s": 67.77,
+        "e": 67.97
+      },
+      {
+        "w": "fayli",
+        "s": 68.03,
+        "e": 68.27
+      },
+      {
+        "w": "paydo",
+        "s": 68.29,
+        "e": 68.51
+      },
+      {
+        "w": "bo‘ldi.",
+        "s": 68.55,
+        "e": 68.75
+      },
+      {
+        "w": "Faylning",
+        "s": 69.23,
+        "e": 69.63
+      },
+      {
+        "w": "birinchi",
+        "s": 69.67,
+        "e": 69.91
+      },
+      {
+        "w": "o‘n",
+        "s": 69.95,
+        "e": 70.01
+      },
+      {
+        "w": "olti",
+        "s": 70.05,
+        "e": 70.19
+      },
+      {
+        "w": "baytini",
+        "s": 70.21,
+        "e": 70.47
+      },
+      {
+        "w": "ko‘ramiz.",
+        "s": 70.51,
+        "e": 70.83
+      }
+    ]
+  },
+  {
+    "id": "L13",
+    "scene": "sqlite",
+    "text": "Har bir to‘g‘ri SQLite fayli aynan shu o‘n olti bayt bilan boshlanadi: SQLite format uch va oxirida nol bayt.",
+    "show": "Har bir to‘g‘ri SQLite fayli aynan shu o‘n olti bayt bilan boshlanadi: SQLite format uch va oxirida nol bayt.",
+    "say": "Har bir to‘g‘ri Es-kyu-layt fayli aynan shu o‘n olti bayt bilan boshlanadi: Es-kyu-layt format uch va oxirida nol bayt.",
+    "a0": 71.45,
+    "a1": 77.49,
+    "words": [
+      {
+        "w": "Har",
+        "s": 71.45,
+        "e": 71.61
+      },
+      {
+        "w": "bir",
+        "s": 71.67,
+        "e": 71.77
+      },
+      {
+        "w": "to‘g‘ri",
+        "s": 71.81,
+        "e": 72.03
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 72.09,
+        "e": 72.51
+      },
+      {
+        "w": "fayli",
+        "s": 72.55,
+        "e": 72.81
+      },
+      {
+        "w": "aynan",
+        "s": 72.97,
+        "e": 73.23
+      },
+      {
+        "w": "shu",
+        "s": 73.29,
+        "e": 73.37
+      },
+      {
+        "w": "o‘n",
+        "s": 73.49,
+        "e": 73.59
+      },
+      {
+        "w": "olti",
+        "s": 73.63,
+        "e": 73.79
+      },
+      {
+        "w": "bayt",
+        "s": 73.81,
+        "e": 73.97
+      },
+      {
+        "w": "bilan",
+        "s": 74.01,
+        "e": 74.15
+      },
+      {
+        "w": "boshlanadi:",
+        "s": 74.17,
+        "e": 74.57
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 74.97,
+        "e": 75.47
+      },
+      {
+        "w": "format",
+        "s": 75.53,
+        "e": 75.89
+      },
+      {
+        "w": "uch",
+        "s": 76.01,
+        "e": 76.13
+      },
+      {
+        "w": "va",
+        "s": 76.43,
+        "e": 76.49
+      },
+      {
+        "w": "oxirida",
+        "s": 76.61,
+        "e": 76.97
+      },
+      {
+        "w": "nol",
+        "s": 77.07,
+        "e": 77.25
+      },
+      {
+        "w": "bayt.",
+        "s": 77.31,
+        "e": 77.49
+      }
+    ]
+  },
+  {
+    "id": "L14",
+    "scene": "sqlite",
+    "text": "Bazani ko‘chirish uchun esa oddiy fayl nusxasini olish yetarli: cp buyrug‘i bilan nusxa.db yaratamiz va undan ham ma’lumotni o‘qiymiz.",
+    "show": "Bazani ko‘chirish uchun esa oddiy fayl nusxasini olish yetarli: cp buyrug‘i bilan nusxa.db yaratamiz va undan ham ma’lumotni o‘qiymiz.",
+    "say": "Bazani ko‘chirish uchun esa oddiy fayl nusxasini olish yetarli: se-pe buyrug‘i bilan nusxa nuqta de-be yaratamiz va undan ham ma’lumotni o‘qiymiz.",
+    "a0": 78.33,
+    "a1": 85.12,
+    "words": [
+      {
+        "w": "Bazani",
+        "s": 78.33,
+        "e": 78.63
+      },
+      {
+        "w": "ko‘chirish",
+        "s": 78.65,
+        "e": 78.97
+      },
+      {
+        "w": "uchun",
+        "s": 78.97,
+        "e": 79.11
+      },
+      {
+        "w": "esa",
+        "s": 79.15,
+        "e": 79.29
+      },
+      {
+        "w": "oddiy",
+        "s": 79.47,
+        "e": 79.73
+      },
+      {
+        "w": "fayl",
+        "s": 79.81,
+        "e": 80.05
+      },
+      {
+        "w": "nusxasini",
+        "s": 80.07,
+        "e": 80.43
+      },
+      {
+        "w": "olish",
+        "s": 80.45,
+        "e": 80.63
+      },
+      {
+        "w": "yetarli:",
+        "s": 80.65,
+        "e": 80.97
+      },
+      {
+        "w": "se-pe",
+        "s": 81.39,
+        "e": 81.65
+      },
+      {
+        "w": "buyrug‘i",
+        "s": 81.71,
+        "e": 82.03
+      },
+      {
+        "w": "bilan",
+        "s": 82.03,
+        "e": 82.17
+      },
+      {
+        "w": "nusxa",
+        "s": 82.23,
+        "e": 82.47
+      },
+      {
+        "w": "nuqta",
+        "s": 82.52,
+        "e": 82.7
+      },
+      {
+        "w": "de-be",
+        "s": 82.76,
+        "e": 82.94
+      },
+      {
+        "w": "yaratamiz",
+        "s": 83.02,
+        "e": 83.44
+      },
+      {
+        "w": "va",
+        "s": 83.68,
+        "e": 83.74
+      },
+      {
+        "w": "undan",
+        "s": 83.86,
+        "e": 84.12
+      },
+      {
+        "w": "ham",
+        "s": 84.18,
+        "e": 84.3
+      },
+      {
+        "w": "ma’lumotni",
+        "s": 84.34,
+        "e": 84.76
+      },
+      {
+        "w": "o‘qiymiz.",
+        "s": 84.8,
+        "e": 85.12
+      }
+    ]
+  },
+  {
+    "id": "L15",
+    "scene": "xulosa",
+    "text": "Xulosa: PostgreSQL har ulanishga alohida jarayon ochadi, MySQL thread ishlatadi, SQLite esa butun bazani bitta faylda saqlaydi.",
+    "show": "Xulosa: PostgreSQL har ulanishga alohida jarayon ochadi, MySQL thread ishlatadi, SQLite esa butun bazani bitta faylda saqlaydi.",
+    "say": "Xulosa: Postgres har ulanishga alohida jarayon ochadi, May es-kyu-el tred ishlatadi, Es-kyu-layt esa butun bazani bitta faylda saqlaydi.",
+    "a0": 85.82,
+    "a1": 93.2,
+    "words": [
+      {
+        "w": "Xulosa:",
+        "s": 85.82,
+        "e": 86.18
+      },
+      {
+        "w": "Postgres",
+        "s": 86.54,
+        "e": 86.98
+      },
+      {
+        "w": "har",
+        "s": 87.02,
+        "e": 87.22
+      },
+      {
+        "w": "ulanishga",
+        "s": 87.28,
+        "e": 87.64
+      },
+      {
+        "w": "alohida",
+        "s": 87.68,
+        "e": 87.96
+      },
+      {
+        "w": "jarayon",
+        "s": 88.02,
+        "e": 88.32
+      },
+      {
+        "w": "ochadi,",
+        "s": 88.34,
+        "e": 88.62
+      },
+      {
+        "w": "May",
+        "s": 88.94,
+        "e": 89.08
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 89.14,
+        "e": 89.48
+      },
+      {
+        "w": "tred",
+        "s": 89.56,
+        "e": 89.78
+      },
+      {
+        "w": "ishlatadi,",
+        "s": 89.8,
+        "e": 90.22
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 90.54,
+        "e": 91.07
+      },
+      {
+        "w": "esa",
+        "s": 91.09,
+        "e": 91.25
+      },
+      {
+        "w": "butun",
+        "s": 91.35,
+        "e": 91.65
+      },
+      {
+        "w": "bazani",
+        "s": 91.71,
+        "e": 92.07
+      },
+      {
+        "w": "bitta",
+        "s": 92.15,
+        "e": 92.39
+      },
+      {
+        "w": "faylda",
+        "s": 92.43,
+        "e": 92.78
+      },
+      {
+        "w": "saqlaydi.",
+        "s": 92.82,
+        "e": 93.2
+      }
+    ]
+  }
+]

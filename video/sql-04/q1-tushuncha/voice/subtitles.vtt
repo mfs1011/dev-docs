@@ -1,0 +1,106 @@
+WEBVTT
+
+1
+00:01.420 --> 00:12.500
+Salom! Bu SQL qo‘llanmasining to‘rtinchi bobi. Ushbu videoda SQL sintaksisi,
+tokenlar, identifikatorlar va literallarning qat’iy qoidalarini ko‘rib chiqamiz.
+
+2
+00:15.330 --> 00:21.500
+SQL matni buyruqlar ketma-ketligidan iborat bo‘lib,
+har bir buyruq nuqtali vergul bilan tugaydi.
+
+3
+00:21.830 --> 00:32.030
+Har bir buyruq tokenlardan tuziladi: kalit so‘zlar, identifikatorlar, literallar
+va maxsus belgilar. Ular bo‘sh joy yoki yangi qator bilan ajratiladi.
+
+4
+00:32.480 --> 00:38.410
+Muhim qoida: izohlar token hisoblanmaydi, ular
+SQL tahlilchisi uchun oddiy bo‘sh joyga teng.
+
+5
+00:41.520 --> 00:48.220
+Kalit so‘z — bu tilda maxsus qat’iy ma’noga ega
+bo‘lgan so‘z, masalan SELECT, UPDATE yoki VALUES.
+
+6
+00:48.650 --> 00:55.340
+Identifikator esa jadval, ustun yoki boshqa
+obyektning nomidir, masalan mahsulot yoki narx.
+
+7
+00:55.830 --> 01:03.630
+SQL standartida qo‘shtirnoqsiz nomlar katta harfga o‘giriladi. Ammo
+PostgreSQL bu qoidani buzib, barcha nomlarni kichik harfga aylantiradi.
+
+8
+01:03.740 --> 01:08.710
+Shuning uchun PostgreSQL da katta harfda
+yozilgan jadval baribir kichik harfda saqlanadi.
+
+9
+01:11.820 --> 01:18.400
+Agar nom qo‘shtirnoq ichiga olinsa, u har doim identifikator
+bo‘ladi va hech qachon kalit so‘z deb tushunilmaydi.
+
+10
+01:18.550 --> 01:25.120
+Shu sababli, ORDER yoki SELECT kabi kalit so‘zlarni
+qo‘shtirnoqqa olib, bemalol jadval nomi qilib ishlatish mumkin.
+
+11
+01:25.550 --> 01:34.670
+Eng muhimi: qo‘shtirnoq nomni katta-kichik harfga qat’iy sezgir qiladi.
+Mahsulot va qo‘shtirnoqdagi Mahsulot PostgreSQL da ikki xil jadval bo‘ladi.
+
+12
+01:35.060 --> 01:42.670
+Bundan tashqari, PostgreSQL da identifikator uzunligi 63 bayt bilan
+cheklangan. Ortig‘i ogohlantirish bilan qisqartirib tashlanadi.
+
+13
+01:45.700 --> 01:51.820
+Satr literallari bitta tirnoq ichiga olinadi. Satr ichidagi
+tirnoqni yozish uchun ikki marta tirnoq qo‘yiladi.
+
+14
+01:52.150 --> 02:00.420
+PostgreSQL da E harfi bilan boshlanadigan escape satrlari mavjud bo‘lib,
+ularda teskari chiziq orqali yangi qator va tab belgilarini yozish mumkin.
+
+15
+02:00.790 --> 02:08.090
+Shuningdek, funksiyalar va uzun matnlar uchun dollar satrlar
+ishlatiladi. Dollar satr ichida maxsus belgilar o‘z kuchini yo‘qotadi.
+
+16
+02:08.320 --> 02:16.250
+Sonlarda esa o‘qishni osonlashtirish uchun pastki chiziq qo‘yish,
+hamda o‘n oltilik, sakkizlik va ikkilik ko‘rinishlar ruxsat etiladi.
+
+17
+02:19.240 --> 02:28.780
+Amallarni bajarishda operatorlarning ustuvorlik tartibi qat’iy belgilangan:
+avval nuqta va tip o‘zgartirish, so‘ng daraja, ko‘paytirish va qo‘shish.
+
+18
+02:28.790 --> 02:34.820
+Undan keyin taqqoslash amallari, oxirida
+esa mantiqiy NOT, AND va OR tekshiriladi.
+
+19
+02:35.130 --> 02:45.590
+Diqqat qiling: PostgreSQL da darajaga ko‘tarish amali chapdan o‘ngga qarab
+bog‘lanadi. Masalan, 2 darajasi 3, darajasi 2 ifodasi 64 natijasini beradi.
+
+20
+02:48.620 --> 02:58.760
+Xulosa qilib aytganda: nomlarni doim kichik harfda va pastki chiziq bilan yozing,
+kalit so‘zlardan nom sifatida qoching va noaniq holatlarda qavslardan foydalaning.
+
+21
+02:58.910 --> 03:03.750
+Keyingi videoda bu qoidalarni PostgreSQL
+18 terminalida jonli sinovdan o‘tkazamiz.

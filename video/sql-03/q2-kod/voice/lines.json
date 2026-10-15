@@ -1,0 +1,114 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Salom! Bu uchinchi bobning ikkinchi videosi. psql, mysql va sqlite3 CLI mijozlari orqali haqiqiy ulanishlar, ulanish satrlari, parollarni xavfsiz saqlash va eng muhim meta-buyruqlarni amalda ko‘ramiz.",
+    "show": "Salom! Bu uchinchi bobning ikkinchi videosi. psql, mysql va sqlite3 CLI mijozlari orqali haqiqiy ulanishlar, ulanish satrlari, parollarni xavfsiz saqlash va eng muhim meta-buyruqlarni amalda ko‘ramiz.",
+    "say": "Salom! Bu uchinchi bobning ikkinchi videosi. Pi-es-kyu-el, May es-kyu-el va es-kyu-layt uch si-el-ay mijozlari orqali haqiqiy ulanishlar, ulanish satrlari, parollarni xavfsiz saqlash va eng muhim meta-buyruqlarni amalda ko‘ramiz."
+  },
+  {
+    "id": "L2",
+    "scene": "psql_conn",
+    "text": "PostgreSQL mijozi psql parametrlar orqali ulanishi mumkin: -h host, -p port, -U foydalanuvchi, -d esa baza nomi. -c parametri bitta buyruqni bajarib chiqib ketadi.",
+    "show": "PostgreSQL mijozi psql parametrlar orqali ulanishi mumkin: -h host, -p port, -U foydalanuvchi, -d esa baza nomi. -c parametri bitta buyruqni bajarib chiqib ketadi.",
+    "say": "Postgres mijozi pi-es-kyu-el parametrlar orqali ulanishi mumkin: minus eych host, minus pe port, minus yu foydalanuvchi, minus de esa baza nomi. Minus se parametri bitta buyruqni bajarib chiqib ketadi."
+  },
+  {
+    "id": "L3",
+    "scene": "psql_conn",
+    "text": "Ilovalarda esa ko‘pincha URI formati ishlatiladi: postgresql:// foydalanuvchi va host, so‘ng baza nomi. URI ichida application_name parametrini bersak, u serverdagi pg_stat_activity jadvalida ko‘rinadi.",
+    "show": "Ilovalarda esa ko‘pincha URI formati ishlatiladi: postgresql:// foydalanuvchi va host, so‘ng baza nomi. URI ichida application_name parametrini bersak, u serverdagi pg_stat_activity jadvalida ko‘rinadi.",
+    "say": "Ilovalarda esa ko‘pincha yu-ar-ay formati ishlatiladi: postgresql:// foydalanuvchi va host, so‘ng baza nomi. Yu-ar-ay ichida applikeyshn neym parametrini bersak, u serverdagi pe-ge stat aktiviti jadvalida ko‘rinadi."
+  },
+  {
+    "id": "L4",
+    "scene": "psql_conn",
+    "text": "Parolni PGPASSWORD muhit o‘zgaruvchisida saqlash tavsiya etilmaydi, chunki boshqalar ps orqali ko‘rishi mumkin. Buning o‘rniga uy papkasidagi .pgpass faylidan foydalaniladi va unga qat’iy chmod 600 berilishi shart.",
+    "show": "Parolni PGPASSWORD muhit o‘zgaruvchisida saqlash tavsiya etilmaydi, chunki boshqalar ps orqali ko‘rishi mumkin. Buning o‘rniga uy papkasidagi .pgpass faylidan foydalaniladi va unga qat’iy chmod 600 berilishi shart.",
+    "say": "Parolni pe-ge pasvord muhit o‘zgaruvchisida saqlash tavsiya etilmaydi, chunki boshqalar ps orqali ko‘rishi mumkin. Buning o‘rniga uy papkasidagi nuqta pe-ge-pas faylidan foydalaniladi va unga qat’iy ch-mod olti yuz berilishi shart."
+  },
+  {
+    "id": "L5",
+    "scene": "psql_meta",
+    "text": "psql ichida teskari chiziq bilan boshlanadigan barcha buyruqlar meta-buyruq deb ataladi va ularni psql ning o‘zi bajaradi.",
+    "show": "psql ichida teskari chiziq bilan boshlanadigan barcha buyruqlar meta-buyruq deb ataladi va ularni psql ning o‘zi bajaradi.",
+    "say": "Pi-es-kyu-el ichida teskari chiziq bilan boshlanadigan barcha buyruqlar meta-buyruq deb ataladi va ularni pi-es-kyu-el ning o‘zi bajaradi."
+  },
+  {
+    "id": "L6",
+    "scene": "psql_meta",
+    "text": "Masalan: \\dt barcha jadvallar ro‘yxatini, \\d talabalar esa jadval ustunlari va indekslarini ko‘rsatadi. \\x buyrug‘i natijani qulay vertikal ko‘rinishga o‘tkazadi.",
+    "show": "Masalan: \\dt barcha jadvallar ro‘yxatini, \\d talabalar esa jadval ustunlari va indekslarini ko‘rsatadi. \\x buyrug‘i natijani qulay vertikal ko‘rinishga o‘tkazadi.",
+    "say": "Masalan: de-te barcha jadvallar ro‘yxatini, de talabalar esa jadval ustunlari va indekslarini ko‘rsatadi. Iks buyrug‘i natijani qulay vertikal ko‘rinishga o‘tkazadi."
+  },
+  {
+    "id": "L7",
+    "scene": "psql_meta",
+    "text": "Taklif belgisining oxiriga e’tibor bering: tenglik va panjara superuser ekaningizni, tenglik va katta belgisi esa oddiy foydalanuvchi ekaningizni bildiradi.",
+    "show": "Taklif belgisining oxiriga e’tibor bering: tenglik va panjara superuser ekaningizni, tenglik va katta belgisi esa oddiy foydalanuvchi ekaningizni bildiradi.",
+    "say": "Taklif belgisining oxiriga e’tibor bering: tenglik va panjara superuser ekaningizni, tenglik va katta belgisi esa oddiy foydalanuvchi ekaningizni bildiradi."
+  },
+  {
+    "id": "L8",
+    "scene": "mysql_cli",
+    "text": "Endi MySQL mijozini ko‘ramiz. Bu yerda port uchun katta -P, parol uchun kichik -p ishlatiladi.",
+    "show": "Endi MySQL mijozini ko‘ramiz. Bu yerda port uchun katta -P, parol uchun kichik -p ishlatiladi.",
+    "say": "Endi May es-kyu-el mijozini ko‘ramiz. Bu yerda port uchun katta minus pe, parol uchun kichik minus pe ishlatiladi."
+  },
+  {
+    "id": "L9",
+    "scene": "mysql_cli",
+    "text": "Parolni buyruq satriga yozish xavfli bo‘lgani sababli, MySQL ogohlantirish beradi. To‘g‘ri yo‘l — parolni alohida option faylida saqlash va chmod 600 bilan himoyalashdir.",
+    "show": "Parolni buyruq satriga yozish xavfli bo‘lgani sababli, MySQL ogohlantirish beradi. To‘g‘ri yo‘l — parolni alohida option faylida saqlash va chmod 600 bilan himoyalashdir.",
+    "say": "Parolni buyruq satriga yozish xavfli bo‘lgani sababli, May es-kyu-el ogohlantirish beradi. To‘g‘ri yo‘l — parolni alohida option faylida saqlash va ch-mod olti yuz bilan himoyalashdir."
+  },
+  {
+    "id": "L10",
+    "scene": "mysql_cli",
+    "text": "Ulanish turini status buyrug‘i ko‘rsatadi: 127.0.0.1 da TCP/IP, localhost da esa UNIX socket deb chiqadi.",
+    "show": "Ulanish turini status buyrug‘i ko‘rsatadi: 127.0.0.1 da TCP/IP, localhost da esa UNIX socket deb chiqadi.",
+    "say": "Ulanish turini status buyrug‘i ko‘rsatadi: bir yuz yigirma yetti, nol, nol, bir da ti-si-pi ay-pi, lokal-xost da esa yuniks soket deb chiqadi."
+  },
+  {
+    "id": "L11",
+    "scene": "mysql_cli",
+    "text": "MySQL 9.7 da nozik jihat: skriptlarda \\G yoki status buyruqlari ishlashi uchun --commands parametri berilishi kerak, aks holda noma’lum buyruq xatosi chiqadi.",
+    "show": "MySQL 9.7 da nozik jihat: skriptlarda \\G yoki status buyruqlari ishlashi uchun --commands parametri berilishi kerak, aks holda noma’lum buyruq xatosi chiqadi.",
+    "say": "May es-kyu-el to‘qqiz butun yetti da nozik jihat: skriptlarda katta je yoki status buyruqlari ishlashi uchun minus-minus kommandz parametri berilishi kerak, aks holda noma’lum buyruq xatosi chiqadi."
+  },
+  {
+    "id": "L12",
+    "scene": "sqlite_cli",
+    "text": "SQLite’da esa sqlite3 dasturi shunchaki qulay qobiq interfeysidir. Unga fayl nomi berilmasa, xotiradagi vaqtinchalik baza ochiladi va dastur yopilganda barcha ma’lumot o‘chib ketadi.",
+    "show": "SQLite’da esa sqlite3 dasturi shunchaki qulay qobiq interfeysidir. Unga fayl nomi berilmasa, xotiradagi vaqtinchalik baza ochiladi va dastur yopilganda barcha ma’lumot o‘chib ketadi.",
+    "say": "Es-kyu-laytda esa es-kyu-layt uch dasturi shunchaki qulay qobiq interfeysidir. Unga fayl nomi berilmasa, xotiradagi vaqtinchalik baza ochiladi va dastur yopilganda barcha ma’lumot o‘chib ketadi."
+  },
+  {
+    "id": "L13",
+    "scene": "sqlite_cli",
+    "text": "Nuqta bilan boshlanadigan dot-commands: .tables jadvallarni, .schema jadval tuzilmasini, .mode box yoki csv esa natija formatini o‘zgartiradi.",
+    "show": "Nuqta bilan boshlanadigan dot-commands: .tables jadvallarni, .schema jadval tuzilmasini, .mode box yoki csv esa natija formatini o‘zgartiradi.",
+    "say": "Nuqta bilan boshlanadigan nuqta buyruqlari: nuqta teyblz jadvallarni, nuqta skima jadval tuzilmasini, nuqta mod boks yoki se-es-ve esa natija formatini o‘zgartiradi."
+  },
+  {
+    "id": "L14",
+    "scene": "sqlite_cli",
+    "text": "SQL buyrug‘i oxirida nuqtali vergul unutilsa, dastur nuqtali vergul va strelka taklifi bilan davomini kutadi. 3.54 versiyasida yangi prompt versiya va fayl nomini ko‘rsatadi.",
+    "show": "SQL buyrug‘i oxirida nuqtali vergul unutilsa, dastur nuqtali vergul va strelka taklifi bilan davomini kutadi. 3.54 versiyasida yangi prompt versiya va fayl nomini ko‘rsatadi.",
+    "say": "Es-kyu-el buyrug‘i oxirida nuqtali vergul unutilsa, dastur nuqtali vergul va strelka taklifi bilan davomini kutadi. Uch butun ellik to‘rt versiyasida yangi prompt versiya va fayl nomini ko‘rsatadi."
+  },
+  {
+    "id": "L15",
+    "scene": "xulosa",
+    "text": "Uchala tizim mijozlarining ulanish, xavfsizlik va boshqaruv buyruqlarini amalda sinab ko‘rdik.",
+    "show": "Uchala tizim mijozlarining ulanish, xavfsizlik va boshqaruv buyruqlarini amalda sinab ko‘rdik.",
+    "say": "Uchala tizim mijozlarining ulanish, xavfsizlik va boshqaruv buyruqlarini amalda sinab ko‘rdik."
+  },
+  {
+    "id": "L16",
+    "scene": "xulosa",
+    "text": "Keyingi videoda bu uch tizimning ulanish dialektlarini taqqoslaymiz va amaliyotda eng ko‘p uchraydigan 6 ta ulanish xatosini tahlil qilamiz.",
+    "show": "Keyingi videoda bu uch tizimning ulanish dialektlarini taqqoslaymiz va amaliyotda eng ko‘p uchraydigan 6 ta ulanish xatosini tahlil qilamiz.",
+    "say": "Keyingi videoda bu uch tizimning ulanish dialektlarini taqqoslaymiz va amaliyotda eng ko‘p uchraydigan oltita ulanish xatosini tahlil qilamiz."
+  }
+]

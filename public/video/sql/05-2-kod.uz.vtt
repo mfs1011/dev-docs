@@ -1,0 +1,95 @@
+WEBVTT
+
+1
+00:01.420 --> 00:09.880
+Salom! Ushbu videoda baza va sxemalar bilan ishlashni PostgreSQL
+18 va psql terminalida jonli buyruqlar orqali sinab ko‘ramiz.
+
+2
+00:12.490 --> 00:19.980
+Avval klasterdagi barcha bazalarni ko‘ramiz: pg_database jadvali
+orqali shablon bazalar va ulanish ruxsatlarini tekshiramiz.
+
+3
+00:20.230 --> 00:26.460
+Ko‘rib turganingizdek, template0 ga ulanish taqiqlangan,
+yangi bazalar esa template1 dan nusxalanadi.
+
+4
+00:26.760 --> 00:34.570
+Yangi dokon bazasini yaratamiz. E’tibor bering: CREATE DATABASE buyrug‘ini
+tranzaksiya ichida bajarib bo‘lmaydi, server darhol xato beradi.
+
+5
+00:37.360 --> 00:40.190
+Endi yangi yaratilgan dokon bazasiga ulanamiz.
+
+6
+00:40.440 --> 00:45.420
+Ushbu ulanish ichidan turib qollanma bazasidagi
+talabalar jadvalini o‘qishga urinib ko‘ramiz.
+
+7
+00:45.650 --> 00:53.000
+Natijada xato: PostgreSQL bazalararo to‘g‘ridan-to‘g‘ri murojaatni
+qo‘llab-quvvatlamaydi. Bitta ulanish faqat bitta bazaga tegishli!
+
+8
+00:55.830 --> 01:02.030
+Endi sxemalarga o‘tamiz: SHOW search_path va
+pg_namespace orqali mavjud sxemalarni ko‘ramiz.
+
+9
+01:02.280 --> 01:09.490
+Ikkita alohida sxema yaratamiz: ombor va savdo. Har ikkala sxemada
+bir xil mahsulot jadvalini ochib, ularga ma’lumot kiritamiz.
+
+10
+01:09.740 --> 01:16.860
+Prefikssiz SELECT mahsulot desak, baza bunday jadval yo‘q deb
+xato beradi, chunki bu sxemalar qidiruv yo‘lida hali yo‘q.
+
+11
+01:19.770 --> 01:26.440
+Endi qidiruv yo‘lini savdo, ombor tartibida sozlaymiz.
+So‘rovimiz savdo sxemasidagi narx ustunini o‘qib beradi.
+
+12
+01:26.670 --> 01:30.580
+Endi xuddi shu yo‘lni teskarisiga,
+ombor, savdo qilib o‘zgartiramiz.
+
+13
+01:30.910 --> 01:34.830
+Aynan bir xil so‘rov endi ombor
+sxemasidagi nom ustunini qaytaradi!
+
+14
+01:35.000 --> 01:40.390
+Ko‘rib turganingizdek, qidiruv yo‘li bitta so‘rovning
+butunlay boshqa ma’lumotni o‘qishiga sabab bo‘lishi mumkin.
+
+15
+01:43.260 --> 01:49.150
+Agar sxema ko‘rsatmasdan yangi jadval yaratsak, u qidiruv
+yo‘lidagi birinchi sxemaga, ya’ni omborga tushadi.
+
+16
+01:49.320 --> 01:55.000
+Sxemani o‘chirishda esa DROP SCHEMA nom CASCADE buyrug‘i
+ichidagi barcha jadvallar bilan birga tozalab tashlaydi.
+
+17
+01:55.110 --> 01:58.460
+CASCADE parametrisiz faqat bo‘sh
+sxemalarnigina o‘chirish mumkin.
+
+18
+02:01.290 --> 02:06.460
+Ushbu jonli sinovlar orqali PostgreSQL da bazalar
+va sxemalarning qanday ishlashini to‘liq ko‘rdik.
+
+19
+02:06.570 --> 02:13.490
+Keyingi videoda xuddi shu tushunchalar MySQL va SQLite
+da qanchalik keskin farq qilishini taqqoslaymiz.

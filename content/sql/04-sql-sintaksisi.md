@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/sql/04-1-tushuncha.jpg" src="/video/sql/04-1-tushuncha.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/sql/04-1-tushuncha.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/sql/04-1-tushuncha.uz.vtt">
+</video>
+<figcaption>Video: SQL sintaksisi asoslari — buyruqlar, nuqtali vergul, tokenlar, katta-kichik harf qoidalari, qo'shtirnoq siri, literallar va operatorlar ustuvorligi.</figcaption>
+</figure>
+
 SQL matni **buyruqlar** ketma-ketligidan iborat. PostgreSQL hujjatidagi ta'rif:
 
 - har buyruq **tokenlardan** tuziladi va nuqtali vergul `;` bilan tugaydi;
@@ -121,6 +129,14 @@ PostgreSQL'da `/* */` izohlar **ichma-ich** joylashishi mumkin. Hujjatga ko'ra s
 Hujjatning maslahati: boshqacha tartib kerak bo'lsa, **qavs** qo'ying.
 
 ## Kod
+
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/sql/04-2-kod.jpg" src="/video/sql/04-2-kod.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/sql/04-2-kod.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/sql/04-2-kod.uz.vtt">
+</video>
+<figcaption>Video: PostgreSQL 18 psql da jonli sinovlar — "Mahsulot" va mahsulot ikkita jadval bo'lishi, ORDER kalit so'zi, 63 bayt chegara, escape va dollar satrlar, 5--1 tuzog'i va ustuvorlik.</figcaption>
+</figure>
 
 Misollar PostgreSQL 18.6, MySQL 9.7.2 va SQLite 3.54.0 da ishga tushirilgan.
 
@@ -371,6 +387,14 @@ SELECT 2 + 3 * 4 AS a, (2 + 3) * 4 AS b, 2 ^ 3 ^ 2 AS daraja;
 PostgreSQL ustuvorlik jadvalida `^` **chapdan** bog'lanadi. Shuning uchun `2 ^ 3 ^ 2` = `(2 ^ 3) ^ 2` = 64, `2 ^ 9` = 512 emas.
 
 ## Dialektlar
+
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/sql/04-3-dialektlar.jpg" src="/video/sql/04-3-dialektlar.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/sql/04-3-dialektlar.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/sql/04-3-dialektlar.uz.vtt">
+</video>
+<figcaption>Video: dialektlar taqqoslash doskasi (PostgreSQL vs MySQL 9.7 vs SQLite 3.54), lower_case_table_names va Linux xavfi, 64 belgilik chegara, binar 0xFF, shartli izohlar va 6 ta tipik xato.</figcaption>
+</figure>
 
 ### MySQL
 

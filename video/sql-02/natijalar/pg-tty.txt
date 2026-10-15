@@ -1,0 +1,11 @@
+psql (18.6 (Homebrew))
+Type "help" for help.
+
+qollanma=# SELECT pid, backend_type, state, query FROM pg_stat_activity WHERE backend_type = 'client backend' ORDER BY pid;
+pid  |  backend_type  | state  |                                                      query                                                       
+-------+----------------+--------+------------------------------------------------------------------------------------------------------------------
+ 51798 | client backend | active | SELECT pg_sleep(5);
+ 51799 | client backend | active | SELECT pg_sleep(5);
+ 51879 | client backend | active | SELECT pid, backend_type, state, query FROM pg_stat_activity WHERE backend_type = 'client backend' ORDER BY pid;
+(3 rows)
+qollanma=# \q

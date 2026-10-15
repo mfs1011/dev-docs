@@ -1,0 +1,31 @@
+Salom! Bu uchinchi bobning uchinchi videosi. Postgres, May es-kyu-el va Es-kyu-layt tizimlarining ulanish dialektlarini taqqoslaymiz va yangi o‘rganuvchilar eng ko‘p yo‘l qo‘yadigan oltita tipik xatoni ko‘rib chiqamiz.
+
+Uchala tizim ham ma’lumotlar bazasi, lekin ulanish mexanizmlarida muhim farqlar bor. Mijoz dasturlari: Postgresda pi-es-kyu-el, May es-kyu-elda May es-kyu-el, Es-kyu-laytda esa es-kyu-layt uch.
+
+Parametrlarda: Postgres va May es-kyu-el host uchun minus eych, user uchun minus yu yoki minus u ishlatadi. Ammo port uchun Postgres kichik minus pe, May es-kyu-el esa katta minus pe harfidan foydalanadi.
+
+Parol masalasida: Postgres nuqta pe-ge-pas fayliga tayanadi, May es-kyu-el esa option fayli yoki interaktiv so‘rovni tavsiya qiladi. Es-kyu-laytda esa parol yo‘q — hamma narsa fayl ruxsatlari bilan boshqariladi.
+
+Birinchi tipik xato: Postgresda init-di-bi ni minus ey siz ishlatib, shunday qoldirish. Natijada server trust rejimida ochiladi va kompyuterdagi har qanday lokal foydalanuvchi parolsiz superuser bo‘lib kira oladi! Har doim minus ey skram sha ikki yuz ellik olti ishlating.
+
+Ikkinchi xato: Parolni to‘g‘ridan-to‘g‘ri buyruq satriga yozish, masalan -pParol yoki pe-ge pasvord. Buni kompyuterdagi boshqa foydalanuvchilar pe-es buyrug‘i orqali ko‘rib olishi mumkin.
+
+To‘g‘ri yo‘l — parollarni nuqta pe-ge-pas yoki option fayllarida saqlashdir.
+
+Uchinchi xato: nuqta pe-ge-pas yoki option fayliga ch-mod olti yuz qilmaslik. Agar fayl boshqalar uchun ochiq bo‘lsa, Postgres xavfsizlik yuzasidan uni e’tiborsiz qoldiradi va parolsiz ulanish xatosini beradi!
+
+To‘rtinchi xato: May es-kyu-elda lokal-xost deb yozib, ti-si-pi orqali ulandim deb o‘ylash. Yuniks tizimlarida lokal-xost har doim soket fayliga ulanadi. Ti-si-pi uchun bir yuz yigirma yetti, nol, nol, bir deb yozish kerak.
+
+Shuningdek, May es-kyu-elda port uchun kichik minus pe yozib adashmang — u port emas, parol deb qabul qilinadi.
+
+Beshinchi xato: May es-kyu-el to‘qqiz butun yetti da skript ichida teskari slesh je ishlatganda noma’lum buyruq xatosi chiqishi. Skriptlarda bu meta-buyruqlar ishlashi uchun minus-minus kommandz parametri qo‘shilishi shart.
+
+Oltinchi xato: Es-kyu-laytda fayl nomida adashish yoki faylsiz ochish. Es-kyu-layt hech qanday xato bermaydi, shunchaki yangi bo‘sh fayl yoki xotirada vaqtinchalik baza yaratadi.
+
+Natijada dasturdan chiqqanda kiritilgan barcha ma’lumotlar yo‘qoladi! Doim fayl yo‘lini tekshiring, nuqta teyblz buyrug‘i bo‘sh chiqsa, darhol shubhalaning.
+
+Shunday qilib, uchinchi bobda bazaga ulanishning barcha nozik jihatlari va xavfsizlik qoidalari bilan tanishdik.
+
+Keyingi to‘rtinchi bobda es-kyu-el tilining asosiy sintaksisi va amaliy so‘rovlar yozishni boshlaymiz!
+
+15 gap, 354 so'z

@@ -1,0 +1,10 @@
+DROP TABLE IF EXISTS sinov;
+SELECT 'Salom, ' || 'dunyo' AS natija;
+SHOW WARNINGS;
+SELECT "salom";
+CREATE TABLE sinov (n integer);
+INSERT INTO sinov VALUES ('abc');
+SELECT @@sql_mode AS sql_mode;
+SET SESSION sql_mode = 'ANSI';
+SELECT 'Salom, ' || 'dunyo' AS natija;
+SELECT "salom";
