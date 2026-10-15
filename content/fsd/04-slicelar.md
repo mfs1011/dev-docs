@@ -4,6 +4,14 @@
 
 ## Qisqacha
 
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/fsd/04-slicelar.jpg" src="/video/fsd/04-slicelar.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/fsd/04-slicelar.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/fsd/04-slicelar.uz.vtt">
+</video>
+<figcaption>Bob videoda: slice — biznes ma'nosi bo'yicha xona, ideal slice (nol bog'lanish, yuqori bog'liqlik), public API, slice guruhlari. Linter natijalari — haqiqiy Steiger 0.7.0 dan.</figcaption>
+</figure>
+
 Slice — qatlam ichidagi papka, kodni **biznes ma'nosi** bo'yicha guruhlaydi: `pages/catalog`, `entities/product`, `features/add-to-cart`. Slice nomlari standart emas — ular sizning domeningizdan keladi. Ideal slice o'z qatlamidagi boshqa slice'lardan **mustaqil** (nol bog'lanish) va o'z maqsadiga oid kodning **ko'p qismini** o'zida saqlaydi (yuqori bog'liqlik).
 
 ## Qoida

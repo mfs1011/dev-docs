@@ -1,0 +1,37 @@
+
+┌ src/features/add-to-cart/ui/add-to-cart-button.ts:2:33
+✘ Forbidden cross-import from slice "wishlist".
+│
+└ fsd/forbidden-imports: https://github.com/feature-sliced/steiger/tree/master/packages/steiger-plugin-fsd/src/forbidden-imports
+
+┌ src/entities
+✘ Inconsistent pluralization of slice names. Prefer all plural names
+✔ Auto-fixable
+│
+└ fsd/inconsistent-naming: https://github.com/feature-sliced/steiger/tree/master/packages/steiger-plugin-fsd/src/inconsistent-naming
+
+┌ src/features/add-to-cart/ui/add-to-cart-button.ts:2:33
+✘ Forbidden sidestep of public API when importing from "@/features/wishlist/ui/wishlist-button".
+│
+└ fsd/no-public-api-sidestep: https://github.com/feature-sliced/steiger/tree/master/packages/steiger-plugin-fsd/src/no-public-api-sidestep
+
+┌ src/pages/cart/ui/page.ts:4:33
+✘ Forbidden sidestep of public API when importing from "@/features/wishlist/ui/wishlist-button".
+│
+└ fsd/no-public-api-sidestep: https://github.com/feature-sliced/steiger/tree/master/packages/steiger-plugin-fsd/src/no-public-api-sidestep
+
+┌ src/pages/catalog/ui/page.ts:4:33
+✘ Forbidden sidestep of public API when importing from "@/features/wishlist/ui/wishlist-button".
+│
+└ fsd/no-public-api-sidestep: https://github.com/feature-sliced/steiger/tree/master/packages/steiger-plugin-fsd/src/no-public-api-sidestep
+
+┌ src/features/wishlist
+✘ This slice is missing a public API.
+✔ Auto-fixable
+│
+└ fsd/public-api: https://github.com/feature-sliced/steiger/tree/master/packages/steiger-plugin-fsd/src/public-api
+
+────────────────────────────────────────────────────────
+ Found 6 errors (2 can be fixed automatically with --fix)
+
+exit=1
