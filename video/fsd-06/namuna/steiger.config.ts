@@ -1,0 +1,8 @@
+import { defineConfig } from 'steiger'
+import fsd from '@feature-sliced/steiger-plugin'
+
+export default defineConfig([
+  ...fsd.configs.recommended,
+  // recommended'da o'chiq — yoqamiz
+  { rules: { 'fsd/import-locality': 'error', 'fsd/no-wildcard-exports': 'error' } },
+])
