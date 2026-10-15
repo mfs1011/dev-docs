@@ -18,6 +18,7 @@ const FILE_MARKS = {
   sql: { file: 'postgresql.svg', alt: 'PostgreSQL' },
   git: { file: 'git.svg', alt: 'Git' },
   docker: { file: 'docker.svg', alt: 'Docker' },
+  javascript: { file: 'javascript.svg', alt: 'JavaScript' },
 }
 const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`
 </script>
