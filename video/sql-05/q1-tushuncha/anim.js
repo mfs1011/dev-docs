@@ -236,6 +236,7 @@
   }
 
   function render(t) {
+    window.CURRENT_T = t;
     bg();
     if (t < TM.scenes.ierarxiya.s) sIntro(t);
     else if (t < TM.scenes.shablonlar.s) sIerarxiya(t);

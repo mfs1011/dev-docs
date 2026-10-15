@@ -77,9 +77,11 @@ jumla boshi katta harf.
 ## 6. Tekshiruv ro'yxati
 
 - [ ] `node stills.mjs …` — har sahnadan kadr ko'rildi, matn ustma-ust tushmaydi
+- [ ] Matn toshmasligi: panellar, chiplar va terminal ichidagi matnlar ramkadan chiqib ketmasligi tekshirilgan ([README.md](README.md) umumiy aniqlik qoidalari)
 - [ ] Terminal chiqishlari haqiqiy Git'da tekshirilgan
 - [ ] `node voice.mjs --plan` — matn ovoz uchun yozilgan (3-bo'lim qoidalari)
 - [ ] `align-lines.py` natijasi: gaplar ketma-ket, nol pauzali joylar jimlik bilan tekshirilgan
 - [ ] Miks: -16 LUFS, cho'qqi ≤ -1,5 dB
 - [ ] Saytda: video, bo'limlar, CC, telefon kengligi, konsolda xato yo'q
 - [ ] Foydalanuvchi eshitib ma'qulladi (talaffuz va tabiiylikni faqat u tekshira oladi)
+

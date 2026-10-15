@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Videoning asl (1080p) nusxasini Google Drive'ga arxivlaydi: video/<nom>/full.mp4 -> gdrive:dev-docs/video/<nom>/
 # Bir martalik sozlash: rclone config create gdrive drive scope=drive.file
-# Ishlatish: video/arxiv.sh git-umumiy   (nomsiz — hamma papkalar)
+# Ishlatish: video/arxiv.sh [papka...]  (argumentsiz — mavjud barcha full.mp4 larni yuklaydi)
 set -euo pipefail
 cd "$(dirname "$0")"
 REMOTE="${VIDEO_ARXIV_REMOTE:-gdrive:dev-docs/video}"
@@ -17,12 +17,30 @@ if ! err=$(rclone lsf "${REMOTE%%:*}:" --max-depth 1 2>&1 >/dev/null); then
 fi
 
 names=("$@")
-[ ${#names[@]} -eq 0 ] && names=($(ls -d */ | tr -d /))
-
-for name in "${names[@]}"; do
-  src="$name/full.mp4"
-  if [ ! -f "$src" ]; then echo "o'tkazildi: $src yo'q"; continue; fi
-  rclone copy "$src" "$REMOTE/$name" --progress
-  # Hajm va hash bo'yicha solishtirish: Drive'dagi nusxa to'liq yetib bordimi
-  rclone check "$name" "$REMOTE/$name" --one-way --include full.mp4 && echo "✓ $name — Drive'dagi nusxa mos"
-done
+if [ ${#names[@]} -eq 0 ]; then
+  # Barcha full.mp4 fayllarini topish (1, 2 yoki 3-darajali papkalar)
+  files=($(find . -mindepth 2 -maxdepth 3 -name "full.mp4" | sed 's|^\./||'))
+  for src in "${files[@]}"; do
+    dir="$(dirname "$src")"
+    echo "Yuklanmoqda: $src -> $REMOTE/$dir/"
+    rclone copy "$src" "$REMOTE/$dir" --progress
+    rclone check "$dir" "$REMOTE/$dir" --one-way --include full.mp4 && echo "✓ $dir — Drive'dagi nusxa mos"
+  done
+else
+  for name in "${names[@]}"; do
+    if [ -f "$name/full.mp4" ]; then
+      src="$name/full.mp4"
+      dir="$name"
+      echo "Yuklanmoqda: $src -> $REMOTE/$dir/"
+      rclone copy "$src" "$REMOTE/$dir" --progress
+      rclone check "$dir" "$REMOTE/$dir" --one-way --include full.mp4 && echo "✓ $dir — Drive'dagi nusxa mos"
+    else
+      for src in $(find "$name" -name "full.mp4" 2>/dev/null); do
+        dir="$(dirname "$src")"
+        echo "Yuklanmoqda: $src -> $REMOTE/$dir/"
+        rclone copy "$src" "$REMOTE/$dir" --progress
+        rclone check "$dir" "$REMOTE/$dir" --one-way --include full.mp4 && echo "✓ $dir — Drive'dagi nusxa mos"
+      done
+    fi
+  done
+fi

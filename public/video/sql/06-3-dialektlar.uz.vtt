@@ -1,0 +1,95 @@
+WEBVTT
+
+1
+00:01.420 --> 00:12.520
+Salom! Oltinchi bobning uchinchi qismida MySQL va SQLite tizimlarining raqamlar bilan
+ishlashdagi keskin farqlarini, hamda amaliyotdagi oltita xavfli xatoni tahlil qilamiz.
+
+2
+00:15.730 --> 00:22.780
+MySQL da butun sonlar uchun tayni-int va mediyum-int
+kabi qo‘shimcha turlar, hamda ansaynd atributi mavjud.
+
+3
+00:23.290 --> 00:36.230
+Eng xavfli jihat: agar MySQL da qat‘iy rejim o‘chirilsa, oraliqdan oshgan son xato bermaydi, balki jimgina
+oraliq chegarasigacha kesib qo‘yiladi, masalan bir yuz yigirma sakkiz bir yuz yigirma yettiga aylanib qoladi.
+
+4
+00:36.620 --> 00:48.960
+Shuningdek, MySQL da oddiy bo‘lish amali har doim kasr natija beradi: o‘nni to‘rtga bo‘lsak, ikki
+emas, balki ikki butun ellik chiqadi. Butun bo‘lish uchun esa alohida div operatori ishlatiladi.
+
+5
+00:49.370 --> 00:56.520
+Qolaversa, desimal uchun ansaynd, int to‘rt kabi ko‘rsatish
+kengligi va zerofil atributlari butunlay eskirgan.
+
+6
+00:59.520 --> 01:04.830
+SQLite da esa ma’lumot tipi ustunga emas,
+balki har bir qiymatning o‘ziga tegishlidir.
+
+7
+01:05.280 --> 01:13.290
+SQLite da desimal tipi yo‘q: qavs ichidagi aniqliklar e’tiborsiz
+qoldirilib, barcha kasr sonlar taqribiy real sifatida saqlanadi.
+
+8
+01:13.740 --> 01:24.920
+Eng qizig‘i: butun son chegarasidan oshib ketsa, SQLite xato bermasdan jimgina taqribiy kasr
+songa o‘tib ketadi. Aniq hisob uchun esa maxsus desimal add funksiyasidan foydalanish shart.
+
+9
+01:27.810 --> 01:39.290
+Uchala tizimni solishtirsak: PostgreSQL da qat‘iy matematik aniqlik, MySQL da oraliq atributlari
+va sukut bo‘yicha kasr bo‘linma, SQLite da esa erkin tiplash va taqribiy hisob qo‘llangan.
+
+10
+01:39.820 --> 01:46.570
+Nol butun o‘ndan bir literali PostgreSQL va MySQL da aniq
+desimal bo‘lsa, SQLite da taqribiy real hisoblanadi.
+
+11
+01:46.990 --> 01:55.060
+Ustunga sig‘maydigan qiymat yozilganda, PostgreSQL har doim xato beradi,
+MySQL rejimga qarab kesishi mumkin, SQLite esa qabul qilaveradi.
+
+12
+01:58.050 --> 02:02.380
+Endi raqamlar bilan ishlashdagi oltita eng
+ko‘p uchraydigan xatoni ko‘rib chiqamiz.
+
+13
+02:02.810 --> 02:09.850
+Birinchi xato: pul va moliyaviy hisoblarni float yoki real
+da saqlash. Bu tiyinlarning yo‘qolishiga olib keladi.
+
+14
+02:10.080 --> 02:14.810
+Ikkinchi xato: taqribiy kasr sonlarni
+tenglik belgisi bilan solishtirish.
+
+15
+02:15.220 --> 02:22.860
+Uchinchi xato: yirik jadvallarda birlamchi kalit uchun intijer
+tanlab, keyinchalik ikki milliardlik chegara to‘lib qolishi.
+
+16
+02:23.550 --> 02:30.640
+To‘rtinchi xato: o‘nni to‘rtga bo‘lish hamma joyda ikki
+yarim chiqadi deb o‘ylash. PostgreSQL da bu ikki bo‘ladi.
+
+17
+02:31.250 --> 02:35.090
+Beshinchi xato: MySQL da qat‘iy rejimni o‘chirib qo‘yish.
+
+18
+02:36.580 --> 02:42.270
+Oltinchi xato: SQLite da desimal besh
+ikki pulni aniq saqlaydi deb hisoblash.
+
+19
+02:44.360 --> 02:52.550
+Shu bilan barcha raqamli ma’lumot turlarini to‘liq o‘rganib chiqdik.
+Keyingi yettinchi bobda matn va binar ma’lumot turlarini tahlil qilamiz.

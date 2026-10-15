@@ -1,0 +1,86 @@
+WEBVTT
+
+1
+00:01.420 --> 00:11.140
+Salom! Oltinchi bobda SQL dagi barcha raqamli ma’lumot turlarini, ularning ichki
+xotiradagi farqlarini va hisob-kitobdagi xavfli jihatlarini ko‘rib chiqamiz.
+
+2
+00:12.850 --> 00:19.360
+Raqamli turlar uchta asosiy guruhga bo‘linadi: butun
+sonlar, aniq kasr sonlar va taqribiy kasr sonlar.
+
+3
+00:21.430 --> 00:30.730
+Birinchi guruh — butun sonlar. PostgreSQL da ular uch xil hajmda bo‘ladi:
+ikki baytli smol-int, to‘rt baytli intijer, va sakkiz baytli big-int.
+
+4
+00:31.640 --> 00:44.060
+Odatdagi hisob-kitob va miqdorlar uchun intijer eng yaxshi tanlovdir. Lekin yirik jadvallardagi identifikatorlar
+uchun boshidanoq big-int tanlash tavsiya etiladi, aks holda ikki milliarddan keyin oraliq to‘lib qoladi.
+
+5
+00:47.170 --> 00:54.160
+Ikkinchi guruh — nyumerik yoki desimal deb ataluvchi aniq kasr
+sonlar. Ular pul va moliyaviy hisoblar uchun maxsus yaratilgan.
+
+6
+00:54.450 --> 01:01.530
+Nyumerikda ikkita ko‘rsatkich bor: prezishn — barcha
+raqamlar soni, va skeyl — verguldan keyingi xonalar soni.
+
+7
+01:01.980 --> 01:09.550
+Qiymat yozilganda, agar kasr qismi skeyldan ko‘p bo‘lsa, u
+avtomatik yaxlitlanadi. Agar butun qismi sig‘masa, xato beriladi.
+
+8
+01:10.040 --> 01:16.440
+Eng muhimi: nyumerik qo‘shish va ayirishda bir tiyin
+ham yo‘qolmaydi, natija har doim mutlaq aniq chiqadi.
+
+9
+01:19.630 --> 01:26.980
+Uchinchi guruh — real va dabl prezishn deb ataluvchi taqribiy kasr
+sonlar. Ular kompyuter xotirasida ikkilik kasr shaklida saqlanadi.
+
+10
+01:27.270 --> 01:33.670
+Shu sababli, inson uchun oddiy ko‘ringan nol butun o‘ndan
+bir sonini ikkilik formatda aniq ifodalab bo‘lmaydi.
+
+11
+01:34.020 --> 01:42.930
+Natijada nol butun o‘ndan birga nol butun o‘ndan ikkini qo‘shganda, nol butun
+o‘ndan uch emas, balki oxirida to‘rt bilan tugaydigan taqribiy son hosil bo‘ladi.
+
+12
+01:43.440 --> 01:50.540
+Shuning uchun taqribiy kasr sonlarni tenglikka solishtirish xavfli
+va ularni pul hisob-kitoblarida mutlaqo ishlatmaslik kerak!
+
+13
+01:53.590 --> 01:59.520
+PostgreSQL da pul uchun alohida mani tipi ham mavjud.
+U qiymatni mintaqa valyutasi bilan birga ko‘rsatadi.
+
+14
+01:59.910 --> 02:05.810
+Biroq bu tip bazaning lokaliga qattiq bog‘langan bo‘lib,
+boshqa serverga ko‘chirilganda format buzilishi mumkin.
+
+15
+02:05.840 --> 02:14.310
+Bundan tashqari, mani tipini bo‘lishda kasr qismi yaxlitlanmasdan
+kesib tashlanadi. Shu sababli moliya uchun har doim nyumerik ma’qul.
+
+16
+02:17.620 --> 02:28.180
+Xulosa qilib aytganda: butun miqdorlarga intijer va big-int, pul va aniq
+hisobga nyumerik, faqat ilmiy hisob-kitoblargagina dabl prezishn ishlatiladi.
+
+17
+02:28.630 --> 02:34.450
+Keyingi qismda ushbu qoidalarni PostgreSQL
+terminalida jonli sinovlar orqali isbotlaymiz.

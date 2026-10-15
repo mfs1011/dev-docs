@@ -153,6 +153,7 @@ Saytga qo'yish (umumiy video — README boshiga, mavzu videosi — bobning "Tush
 - [ ] Har da'vo rasmiy FSD hujjatida bor; Steiger xabarlari `steiger-*.txt` dan so'zma-so'z
 - [ ] `node voice.mjs --plan` — quloq uchun, talaffuz jadvali bo'yicha
 - [ ] `node stills.mjs` — har sahna: sarlavha olam ustida, panel binoni yopmaydi, portlatilgan ko'rinishda ortiqcha qavat qolmagan, `missing: []`
+- [ ] Matn toshmasligi: panellar, kartalar va matn bloklari chegaradan chiqib ketmasligi tekshirilgan ([README.md](README.md) umumiy aniqlik qoidalari)
 - [ ] Miks: -16 LUFS, cho'qqi ≤ -1,5 dB; oxirgi 25 s spektrogrammasi toza
 - [ ] Muqova: bino chapda, yozuv o'ngda, markaz bo'sh
 - [ ] Saytda: video, bo'limlar, CC, konsolda xato yo'q; asl nusxa Drive'da (`rclone check` — 0 differences)

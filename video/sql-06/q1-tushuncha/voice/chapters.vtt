@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:20.257
+Kirish
+
+00:20.257 --> 00:45.986
+Butun sonlar: smallint, integer, bigint
+
+00:45.986 --> 01:18.394
+Aniq kasr sonlar: numeric(p, s)
+
+01:18.394 --> 01:52.450
+Taqribiy kasr sonlar: real va double precision
+
+01:52.450 --> 02:16.342
+money tipi va mintaqa xavfi
+
+02:16.342 --> 02:38.160
+Xulosa

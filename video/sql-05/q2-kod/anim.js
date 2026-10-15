@@ -80,7 +80,8 @@
     heading("Bitta ulanish — Bitta baza!", t, L('L5').s - 0.4);
 
     const kCross = P(t, W('L6', 'talabalar'), 0.5);
-    term(140, 230, 1640, 420, "dokon bazasiga ulanib, qollanma dagi jadvalni chaqirish", [{
+    // Chap: terminal
+    term(140, 230, 820, 420, "psql: dokon bazasidan qollanmaga so'rov", [{
       b: {
         cmd: "\\c dokon\nSELECT current_database();\nSELECT * FROM qollanma.public.talabalar;",
         out: (TTY.cross_err ? ("current_database: dokon\n\n" + TTY.cross_err).split("\n") : [
@@ -92,7 +93,24 @@
       },
       t: kCross,
       typeDur: 1.2
-    }], { font: 17 });
+    }], { font: 16 });
+
+    // O'ng: Vizual arxitektura diagrammasi
+    withA(kCross, () => {
+      card(990, 230, 790, 420, { fill: '#fff5f5', col: C.red, p: kCross });
+      hand("Bitta ulanish — Bitta baza!", 1020, 280, { size: 28, color: C.red, p: kCross });
+      text("Bitta ulanish ichidan boshqa bazaga to'g'ridan-to'g'ri kirish taqiqlangan.", 1020, 325, { size: 20, color: C.ink, wrap: 720 });
+
+      dbCylinder(1080, 360, 140, 80, { col: C.blue, p: kCross });
+      text("dokon", 1150, 465, { size: 20, fam: MONO, align: 'center', weight: 700, color: C.blue });
+
+      dbCylinder(1520, 360, 140, 80, { col: C.purple, p: kCross });
+      text("qollanma", 1590, 465, { size: 20, fam: MONO, align: 'center', weight: 700, color: C.purple });
+
+      arrow(1240, 400, 1490, 400, { col: C.red, w: 3 });
+      cross(1365, 400, 24, C.red);
+      pill("TAQIQLANGAN: cross-database yo'q", 1365, 520, C.red, kCross, 18);
+    });
 
     const kExplain = P(t, W('L7', 'bitta'), 0.6);
     withA(kExplain, () => {
@@ -267,6 +285,7 @@
   }
 
   function render(t) {
+    window.CURRENT_T = t;
     bg();
     if (t < TM.scenes.dbs_template.s) sIntro(t);
     else if (t < TM.scenes.cross_db.s) sDbsTemplate(t);

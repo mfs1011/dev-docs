@@ -1,0 +1,49 @@
+// SQL 6-bob, 2-video: "Kod" — PostgreSQL 18 psql da jonli amaliyot
+(function (g) {
+  const scenes = ['intro', 'point1', 'overflow', 'numeric_exp', 'division', 'round_diff', 'xulosa'];
+  const sceneNames = {
+    intro: 'Kirish',
+    point1: '0.1 + 0.2 va tenglik sinovi',
+    overflow: 'Oraliqdan chiqish va bigint',
+    numeric_exp: 'numeric(5,2) yaxlitlash va xato',
+    division: 'Bo‘lish qoidasi: 10 / 4',
+    round_diff: 'round() yaxlitlash farqlari',
+    xulosa: 'Xulosa'
+  };
+  const hold = {
+    L1: 0.8,
+    L4: 1.0,
+    L7: 1.0,
+    L10: 1.0,
+    L13: 1.0,
+    L16: 1.0,
+    L18: 0.8
+  };
+  const lines = [
+    ['L1', 'intro', 'Salom! Oltinchi bobning ikkinchi qismida PostgreSQL 18 psql terminalida raqamli ma’lumot turlarini jonli sinovdan o‘tkazamiz.'],
+
+    ['L2', 'point1', 'Avvalo mashhur nol butun o‘ndan bir va nol butun o‘ndan ikki yig‘indisini tekshiramiz.'],
+    ['L3', 'point1', 'PostgreSQL da oddiy son literallari sukut bo‘yicha nyumerik deb qabul qilingani uchun, birinchi yig‘indi mutlaq aniq nol butun o‘ndan uch chiqadi.'],
+    ['L4', 'point1', 'Lekin xuddi shu sonlarni float sakkizga o‘girsak, oxirida to‘rt paydo bo‘ladi. Natijada float tenglik yolg‘on, nyumerik tenglik esa rost qaytaradi.'],
+
+    ['L5', 'overflow', 'Endi oraliqdan chiqish holatini ko‘ramiz. Smol-int ning eng katta qiymati o‘ttiz ikki ming yetti yuz oltmish yettiga birni qo‘shsak, oraliqdan chiqish xatosi beriladi.'],
+    ['L6', 'overflow', 'Xuddi shunday, intijer ning chegarasi ikki milliard yuz qirq yetti millionga bir qo‘shilganda ham xato chiqadi. PostgreSQL jimgina keyingi tipga o‘tib ketmaydi.'],
+    ['L7', 'overflow', 'Natija to‘g‘ri chiqishi uchun sonlardan birini oldindan big-int deb e’lon qilishimiz shart.'],
+
+    ['L8', 'numeric_exp', 'Endi nyumerik besh ikki ustunini sinaymiz. Unga bir yuz yigirma uch butun to‘rt yuz ellik olti yozilganda, u avtomatik bir yuz yigirma uch butun qirq oltiga yaxlitlanadi.'],
+    ['L9', 'numeric_exp', 'To‘qqiz yuz to‘qson to‘qqiz butun mingdan to‘qqiz yuz to‘qson to‘rt ham sig‘adi va to‘qqiz yuz to‘qson to‘qqiz butun yuzdan to‘qson to‘qqiz bo‘lib yoziladi.'],
+    ['L10', 'numeric_exp', 'Ammo to‘qqiz yuz to‘qson to‘qqiz butun mingdan to‘qqiz yuz to‘qson besh kiritilsa, yaxlitlash natijasida ming hosil bo‘ladi va bu belgilangan beshta raqamdan oshib ketgani uchun xato beradi.'],
+
+    ['L11', 'division', 'Navbatdagi muhim qoida — sonlarni bo‘lishdir. O‘nni to‘rtga bo‘lsak, PostgreSQL butun qismini olib, ikki qaytaradi.'],
+    ['L12', 'division', 'Chunki ikkita butun sonning bo‘linmasi ham butun son bo‘lishi shart. Kasr natija olish uchun to‘rt emas, balki to‘rt butun nol deb yozish kerak.'],
+    ['L13', 'division', 'Shunda natija ikki butun o‘ndan besh bo‘ladi. Foiz belgisi esa butun bo‘lishdagi qoldiqni topib beradi.'],
+
+    ['L14', 'round_diff', 'Yaxlitlashda ham kutilmagan farq bor. Bir xil raund funksiyasi nyumerik va dabl prezishn uchun har xil ishlaydi.'],
+    ['L15', 'round_diff', 'Nyumerik har doim noldan uzoqqa yaxlitlaydi: masalan ikki yarim uch bo‘ladi. Dabl esa eng yaqin juft songa qarab yaxlitlaydi: ikki yarim ikki bo‘lib qoladi.'],
+    ['L16', 'round_diff', 'Shuningdek, nyumerikda cheksizlik va raqam emas kabi maxsus qiymatlar, hamda manfiy skeyl ham qo‘llab-quvvatlanadi.'],
+
+    ['L17', 'xulosa', 'Ko‘rib turganingizdek, to‘g‘ri tip tanlash nafaqat xotirani tejaydi, balki dasturiy xatolarning oldini oladi.'],
+    ['L18', 'xulosa', 'Keyingi uchinchi qismda ushbu mavzuni MySQL va SQLite tizimlari bilan qiyoslaymiz.']
+  ].map(([id, scene, text]) => ({ id, scene, text }));
+  g.NR = { scenes, sceneNames, hold, lines };
+})(typeof window !== 'undefined' ? window : globalThis);
