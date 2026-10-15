@@ -62,15 +62,21 @@
       lines = [str];
     }
 
+    if (ctx.globalAlpha <= 0.002) return;
     if (typeof window !== 'undefined') {
       window.OVERFLOWS = window.OVERFLOWS || [];
+      const m = ctx.getTransform ? ctx.getTransform() : { a: 1, c: 0, e: 0 };
       lines.forEach((line) => {
         const w = ctx.measureText(line).width;
         let left = x, right = x + w;
         if (ctx.textAlign === 'center') { left = x - w / 2; right = x + w / 2; }
         else if (ctx.textAlign === 'right') { left = x - w; right = x; }
-        if (left < 10 || right > 1910 || (maxW && w > maxW + 5)) {
-          window.OVERFLOWS.push({ text: line, left, right, maxW });
+        const p1x = m.a * left + m.c * y + m.e;
+        const p2x = m.a * right + m.c * y + m.e;
+        const screenLeft = Math.min(p1x, p2x);
+        const screenRight = Math.max(p1x, p2x);
+        if (screenLeft < 5 || screenRight > 1915 || (maxW && w > maxW + 5)) {
+          window.OVERFLOWS.push({ text: line, screenLeft, screenRight, maxW, w });
         }
       });
     }

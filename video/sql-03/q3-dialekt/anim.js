@@ -221,7 +221,7 @@
         ["Socket vs TCP", "Lokalda Unix socket tezkor, tarmoqda TCP/IP. MySQL localhost farqi.", C.green],
         ["Xavfsiz ishga tushirish", "initdb -A scram-sha-256 va mysqld --initialize (vaqtinchalik parol).", C.purple],
         ["CLI mijozlar", "psql (URI, .pgpass, \\dt), mysql (option fayl, status), sqlite3 (.tables).", C.orange],
-        ["6 ta tipik xato", "trust tuzog'i, ps dagi ochiq parol, chmod 600, port harfi, --commands, bo'sh fayl.", C.red]
+        ["6 ta tipik xato", "trust tuzog'i, ochiq parol, chmod 600, port harfi, --commands, bo'sh fayl.", C.red]
       ];
 
       points.forEach(([tit, desc, col], idx) => {
@@ -229,7 +229,7 @@
         withA(kPt, () => {
           const y = 370 + idx * 68;
           pill(tit, 450, y, col, kPt, 22);
-          text(`— ${desc}`, 590, y, { size: 23, color: C.ink });
+          text(`— ${desc}`, 590, y, { size: 23, color: C.ink, wrap: 1020 });
         });
       });
     });

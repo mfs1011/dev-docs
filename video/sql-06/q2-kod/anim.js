@@ -42,25 +42,29 @@
 
     // Terminal 1: Yig'indi
     const k1 = P(t, W('L2', 'nol'), 0.5);
-    term(140, 230, 800, 420, "1. SELECT 0.1 + 0.2 va float8 yig'indisi", [{
-      b: {
-        cmd: "SELECT 0.1 + 0.2 AS numeric_yigindi, 0.1::float8 + 0.2::float8 AS float_yigindi;",
-        out: (TTY.point1 || " numeric_yigindi |    float_yigindi    \n-----------------+---------------------\n             0.3 | 0.30000000000000004\n(1 row)").split("\n")
-      },
-      t: k1,
-      typeDur: 1.0
-    }], { font: 16 });
+    withA(k1, () => {
+      term(140, 230, 800, 420, "1. SELECT 0.1 + 0.2 va float8 yig'indisi", [{
+        b: {
+          cmd: "SELECT 0.1 + 0.2 AS numeric_yigindi, 0.1::float8 + 0.2::float8 AS float_yigindi;",
+          out: (TTY.point1 || " numeric_yigindi |    float_yigindi    \n-----------------+---------------------\n             0.3 | 0.30000000000000004\n(1 row)").split("\n")
+        },
+        t: k1,
+        typeDur: 1.0
+      }], { font: 16 });
+    });
 
     // Terminal 2: Tenglik
     const k2 = P(t, W('L4', 'flout'), 0.5);
-    term(980, 230, 800, 420, "2. Kasr sonlarni tenglikka solishtirish", [{
-      b: {
-        cmd: "SELECT 0.1::float8 + 0.2::float8 = 0.3::float8 AS teng_mi,\n       0.1 + 0.2 = 0.3 AS numeric_teng_mi;",
-        out: (TTY.compare || " teng_mi | numeric_teng_mi \n---------+-----------------\n f       | t\n(1 row)").split("\n")
-      },
-      t: k2,
-      typeDur: 1.0
-    }], { font: 16 });
+    withA(k2, () => {
+      term(980, 230, 800, 420, "2. Kasr sonlarni tenglikka solishtirish", [{
+        b: {
+          cmd: "SELECT 0.1::float8 + 0.2::float8 = 0.3::float8 AS teng_mi,\n       0.1 + 0.2 = 0.3 AS numeric_teng_mi;",
+          out: (TTY.compare || " teng_mi | numeric_teng_mi \n---------+-----------------\n f       | t\n(1 row)").split("\n")
+        },
+        t: k2,
+        typeDur: 1.0
+      }], { font: 16 });
+    });
 
     // Pastda tushuntirish
     const kDesc = P(t, W('L3', 'mutlaq'), 0.5);
@@ -79,28 +83,32 @@
 
     // Terminal 1: smallint va integer xatosi
     const k1 = P(t, W('L5', 'smol-int'), 0.5);
-    term(140, 230, 800, 420, "1. smallint va integer to'lib qolishi", [{
-      b: {
-        cmd: "SELECT 32767::smallint + 1::smallint;\nSELECT 2147483647 + 1;",
-        out: [
-          (TTY.smallint_err || "ERROR:  smallint out of range"),
-          (TTY.int_err || "ERROR:  integer out of range")
-        ]
-      },
-      t: k1,
-      typeDur: 1.0
-    }], { font: 16 });
+    withA(k1, () => {
+      term(140, 230, 800, 420, "1. smallint va integer to'lib qolishi", [{
+        b: {
+          cmd: "SELECT 32767::smallint + 1::smallint;\nSELECT 2147483647 + 1;",
+          out: [
+            (TTY.smallint_err || "ERROR:  smallint out of range"),
+            (TTY.int_err || "ERROR:  integer out of range")
+          ]
+        },
+        t: k1,
+        typeDur: 1.0
+      }], { font: 16 });
+    });
 
     // Terminal 2: bigint ga o'tkazish
     const k2 = P(t, W('L7', 'big-int'), 0.5);
-    term(980, 230, 800, 420, "2. bigint orqali xavfsiz hisob", [{
-      b: {
-        cmd: "SELECT 2147483647::bigint + 1 AS bigint_bilan;",
-        out: (TTY.bigint || " bigint_bilan \n--------------\n   2147483648\n(1 row)").split("\n")
-      },
-      t: k2,
-      typeDur: 1.0
-    }], { font: 16 });
+    withA(k2, () => {
+      term(980, 230, 800, 420, "2. bigint orqali xavfsiz hisob", [{
+        b: {
+          cmd: "SELECT 2147483647::bigint + 1 AS bigint_bilan;",
+          out: (TTY.bigint || " bigint_bilan \n--------------\n   2147483648\n(1 row)").split("\n")
+        },
+        t: k2,
+        typeDur: 1.0
+      }], { font: 16 });
+    });
 
     // Pastda tushuntirish
     const kDesc = P(t, W('L6', 'intijer'), 0.5);
@@ -119,25 +127,29 @@
 
     // Terminal 1: Yaxlitlanish
     const k1 = P(t, W('L8', 'besh'), 0.5);
-    term(140, 230, 780, 430, "1. CREATE TABLE narxlar (n numeric(5,2));", [{
-      b: {
-        cmd: "CREATE TABLE narxlar (n numeric(5,2));\nINSERT INTO narxlar VALUES (123.456), (999.994);\nSELECT * FROM narxlar;",
-        out: (TTY.narxlar || "   n    \n--------\n 123.46\n 999.99\n(2 rows)").split("\n")
-      },
-      t: k1,
-      typeDur: 1.0
-    }], { font: 16 });
+    withA(k1, () => {
+      term(140, 230, 780, 430, "1. CREATE TABLE narxlar (n numeric(5,2));", [{
+        b: {
+          cmd: "CREATE TABLE narxlar (n numeric(5,2));\nINSERT INTO narxlar VALUES (123.456), (999.994);\nSELECT * FROM narxlar;",
+          out: (TTY.narxlar || "   n    \n--------\n 123.46\n 999.99\n(2 rows)").split("\n")
+        },
+        t: k1,
+        typeDur: 1.0
+      }], { font: 16 });
+    });
 
     // Terminal 2: 999.995 to'lib ketishi
     const k2 = P(t, W('L10', 'xato'), 0.5);
-    term(960, 230, 820, 430, "2. 999.995 kiritilsa: XATO!", [{
-      b: {
-        cmd: "INSERT INTO narxlar VALUES (999.995);",
-        out: (TTY.num_overflow || "ERROR:  numeric field overflow\nDETAIL:  A field with precision 5, scale 2 must round to an absolute value less than 10^3.").split("\n")
-      },
-      t: k2,
-      typeDur: 1.0
-    }], { font: 15 });
+    withA(k2, () => {
+      term(960, 230, 820, 430, "2. 999.995 kiritilsa: XATO!", [{
+        b: {
+          cmd: "INSERT INTO narxlar VALUES (999.995);",
+          out: (TTY.num_overflow || "ERROR:  numeric field overflow\nDETAIL:  A field with precision 5, scale 2 must round to an absolute value less than 10^3.").split("\n")
+        },
+        t: k2,
+        typeDur: 1.0
+      }], { font: 15 });
+    });
 
     // Pastda tushuntirish
     const kDesc = P(t, W('L9', 'sig‘adi'), 0.5);
@@ -221,35 +233,39 @@
 
     // Terminal 1: round() farqi
     const k1 = P(t, W('L14', 'raund'), 0.5);
-    term(140, 230, 800, 440, "1. round(x::numeric) vs round(x::double)", [{
-      b: {
-        cmd: "SELECT x, round(x::numeric) AS num_round, round(x::double precision) AS dbl_round\nFROM generate_series(-2.5, 2.5, 1) AS x;",
-        out: (TTY.round || "  x   | num_round | dbl_round \n------+-----------+-----------\n -2.5 |        -3 |        -2\n -1.5 |        -2 |        -2\n -0.5 |        -1 |        -0\n  0.5 |         1 |         0\n  1.5 |         2 |         2\n  2.5 |         3 |         2\n(6 rows)").split("\n")
-      },
-      t: k1,
-      typeDur: 1.0
-    }], { font: 15 });
+    withA(k1, () => {
+      term(140, 230, 800, 440, "1. round(x::numeric) vs round(x::double)", [{
+        b: {
+          cmd: "SELECT x, round(x::numeric) AS num_round, round(x::double precision) AS dbl_round\nFROM generate_series(-2.5, 2.5, 1) AS x;",
+          out: (TTY.round || "  x   | num_round | dbl_round \n------+-----------+-----------\n -2.5 |        -3 |        -2\n -1.5 |        -2 |        -2\n -0.5 |        -1 |        -0\n  0.5 |         1 |         0\n  1.5 |         2 |         2\n  2.5 |         3 |         2\n(6 rows)").split("\n")
+        },
+        t: k1,
+        typeDur: 1.0
+      }], { font: 15 });
+    });
 
     // Terminal 2: Maxsus qiymatlar va manfiy scale
     const k2 = P(t, W('L16', 'cheksizlik'), 0.5);
-    term(980, 230, 800, 440, "2. NaN, Infinity va manfiy scale (15+)", [{
-      b: {
-        cmd: "SELECT 'NaN'::numeric = 'NaN'::numeric AS nan_teng,\n       'Infinity'::numeric + 1 AS cheksiz;\nSELECT 1234.5::numeric(2,-3) AS minglik;",
-        out: (TTY.special ? TTY.special.split("\n") : [
-          " nan_teng | cheksiz  ",
-          "----------+----------",
-          " t        | Infinity",
-          "(1 row)",
-          "",
-          " minglik ",
-          "---------",
-          "    1000",
-          "(1 row)"
-        ])
-      },
-      t: k2,
-      typeDur: 1.0
-    }], { font: 15 });
+    withA(k2, () => {
+      term(980, 230, 800, 440, "2. NaN, Infinity va manfiy scale (15+)", [{
+        b: {
+          cmd: "SELECT 'NaN'::numeric = 'NaN'::numeric AS nan_teng,\n       'Infinity'::numeric + 1 AS cheksiz;\nSELECT 1234.5::numeric(2,-3) AS minglik;",
+          out: (TTY.special ? TTY.special.split("\n") : [
+            " nan_teng | cheksiz  ",
+            "----------+----------",
+            " t        | Infinity",
+            "(1 row)",
+            "",
+            " minglik ",
+            "---------",
+            "    1000",
+            "(1 row)"
+          ])
+        },
+        t: k2,
+        typeDur: 1.0
+      }], { font: 15 });
+    });
 
     // Pastda tushuntirish
     const kDesc = P(t, W('L15', 'uch'), 0.5);
@@ -287,7 +303,7 @@
     withA(kNext, () => {
       card(140, 720, 1640, 180, { fill: '#eff6ff', col: C.blue, p: kNext });
       hand("Keyingi 3-qismda: MySQL va SQLite Dialektlari", 180, 780, { size: 36, color: C.blue, p: kNext });
-      text("MySQL da UNSIGNED, qat'iy rejim o'chganda son kesilishi, 10 DIV 4, SQLite Type Affinity va 6 ta tipik xatoni ko'rib chiqamiz.", 180, 845, { size: 26, color: C.ink });
+      text("MySQL da UNSIGNED, qat'iy rejim o'chganda son kesilishi, 10 DIV 4, SQLite Type Affinity va 6 ta tipik xatoni ko'rib chiqamiz.", 180, 845, { size: 24, color: C.ink, wrap: 1560 });
       pill("06-3 DIALEKTLAR", 1580, 780, C.blue, kNext, 22);
     });
   }
