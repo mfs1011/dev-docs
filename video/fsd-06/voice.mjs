@@ -18,7 +18,7 @@ const SAY = [
   [/Feature-Sliced Design/g, 'Ficher-Slayst Dizayn'], [/\bFSD/g, 'Ef-es-di'], [/\bcomponents\b/g, 'komponents'], [/\butils\b/g, 'yutils'],
   [/\bhelpers\b/g, 'xelpers'], [/\bshared\b/g, 'sherd'], [/\bentities\b/g, 'entitiz'], [/\bentity\b/g, 'entiti'],
   [/\bfeatures\b/g, 'fichers'], [/\bfeature/g, 'ficher'], [/\bWidgets\b/g, 'Vijets'], [/\bwidget/g, 'vijet'], [/\bPages\b/g, 'Peyjiz'], [/\bpages\b/g, 'peyjiz'], [/\bVue\b/g, 'Vyu'], [/\bframework\b/g, 'freymvork'], [/\bmodules\b/g, 'modyuls'], [/\bcore\b/g, 'kor'],
-  [/\bapp\b/g, 'ep'], [/\bprocesses\b/g, 'proseses'], [/\bslice’?/g, 'slays'], [/\bSlice’?/g, 'Slays'], [/(Ef-es-di)’/g, '$1'], [/\bproduct\b/g, 'prodakt'], [/\bcart\b/g, 'kart'],
+  [/\bapp\b/g, 'ep'], [/\bprocesses\b/g, 'proseses'], [/\bslice’?/g, 'slays'], [/\bSlice’?/g, 'Slays'], [/(Ef-es-di)’/g, '$1-'], [/\bproduct\b/g, 'prodakt'], [/\bcart\b/g, 'kart'],
   [/\bui\b/g, 'Yu-ay'], [/\bapi\b/g, 'ey-pi-ay'], [/\bAPI’?/g, 'ey-pi-ay'], [/\blib\b/g, 'lib'], [/\bconfig\b/g, 'konfig'],
   [/index\.ts/g, 'indeks ti-es'], [/\bpublic\b/g, 'pablik'], [/\bSteiger\b/g, 'Stayger'], [/\bfrontend\b/g, 'frontend'],
 ];
@@ -27,8 +27,10 @@ const toSay = (text) => SAY.reduce((s, [re, to]) => s.replace(re, to), text)
 
 const lines = NR.lines.map((l) => ({ ...l, show: l.text, say: toSay(l.text) }));
 fs.mkdirSync('voice', { recursive: true });
-fs.writeFileSync('voice/lines.json', JSON.stringify(lines, null, 2));
-const transcript = lines.map((l) => l.say).join('\n\n');
+if (!process.env.ONLY && !process.argv.includes('--plan')) fs.writeFileSync('voice/lines.json', JSON.stringify(lines, null, 2));
+// ONLY=L1 node voice.mjs — faqat shu gap(lar)ni qayta yozdirish (voice/only.wav), keyin raw.wav ga ulanadi
+const only = process.env.ONLY?.split(',');
+const transcript = lines.filter((l) => !only || only.includes(l.id)).map((l) => l.say).join('\n\n');
 
 if (process.argv.includes('--plan')) {
   console.log(transcript);
@@ -49,5 +51,5 @@ if (!response.ok) throw new Error(`HTTP ${response.status}: ${(await response.te
 const data = await response.json();
 const audio = (data.steps ?? []).filter((s) => s.type === 'model_output').flatMap((s) => s.content ?? []).filter((c) => c.type === 'audio').at(-1);
 if (!audio) throw new Error(`Audio yo'q, status: ${data.status}`);
-fs.writeFileSync('voice/raw.wav', Buffer.from(audio.data, 'base64'));
-console.log('voice/raw.wav', 'status:', data.status, 'tokens:', data.usage?.total_input_tokens, '->', data.usage?.total_output_tokens);
+fs.writeFileSync(only ? 'voice/only.wav' : 'voice/raw.wav', Buffer.from(audio.data, 'base64'));
+console.log(only ? 'voice/only.wav' : 'voice/raw.wav', 'status:', data.status, 'tokens:', data.usage?.total_input_tokens, '->', data.usage?.total_output_tokens);
