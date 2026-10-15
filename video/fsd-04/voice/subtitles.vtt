@@ -1,0 +1,90 @@
+WEBVTT
+
+1
+00:01.420 --> 00:10.820
+Salom! Bu FSD qo‘llanmasining to‘rtinchi bobi — slice’lar. Ular nima,
+qanday bo‘lishi kerak va qaysi xatolar uchrashini ko‘rib chiqamiz.
+
+2
+00:12.790 --> 00:19.720
+Slice — FSD tuzilmasidagi ikkinchi daraja. U kodni
+mahsulot yoki biznes uchun ma’nosiga qarab guruhlaydi.
+
+3
+00:20.630 --> 00:28.630
+Binoda bu qavat ustidagi xonalar: masalan, entities qatlamida
+product va order, features qatlamida add-to-cart va wishlist.
+
+4
+00:30.120 --> 00:35.370
+Slice nomlari standart emas. Ular to‘g‘ridan-to‘g‘ri
+ilovangizning biznes sohasidan kelib chiqadi.
+
+5
+00:36.600 --> 00:43.880
+Slice’lar faqat pages, widgets, features va entities
+qatlamlarida bo‘ladi. Shared va app qatlamlarida slice yo‘q.
+
+6
+00:47.050 --> 00:51.380
+Ideal slice qanday bo‘ladi? Rasmiy
+hujjat ikki xususiyatni aytadi.
+
+7
+00:52.110 --> 00:59.300
+Birinchisi — nol bog‘lanish. Slice o‘z qatlamidagi boshqa
+slice’larga bog‘liq emas: add-to-cart wishlist’ni bilmaydi.
+
+8
+01:00.650 --> 01:10.070
+Ikkinchisi — yuqori bog‘liqlik. Slice o‘z vazifasiga oid kodning ko‘p qismini
+o‘zida saqlaydi: savatga qo‘shish tugmasi, so‘rovi va holati bitta xonada.
+
+9
+01:13.400 --> 01:19.890
+Har bir slice’da public API bo‘lishi shart. Odatda
+bu index.ts fayli — xonaning kirish eshigi.
+
+10
+01:21.100 --> 01:26.960
+Tashqaridagi kod faqat shu eshik orqali kiradi va
+slice ichidagi fayllar tuzilishiga murojaat qilmaydi.
+
+11
+01:30.350 --> 01:38.700
+Bir-biriga yaqin slice’larni bitta papkaga guruhlash mumkin. Lekin ular ham
+boshqa slice’lar kabi alohida turadi, papkada esa umumiy kod bo‘lmaydi.
+
+12
+01:42.050 --> 01:46.490
+Steiger bilan tekshiramiz. Mana,
+xatolar kiritilgan do‘kon loyihasi.
+
+13
+01:47.320 --> 01:53.830
+Birinchi xato: add-to-cart wishlist’dan import qildi.
+Bir qatlamdagi slice’lar orasida import taqiqlangan.
+
+14
+01:55.320 --> 02:02.580
+Ikkinchi xato: entities ichida product birlikda, orders
+esa ko‘plikda. Steiger nomlarni bir xil qilishni so‘raydi.
+
+15
+02:04.110 --> 02:11.100
+Uchinchi xato: wishlist’da public API yo‘q. Steiger unga
+ichki fayl orqali kirilgan uchta joyni ham ko‘rsatadi.
+
+16
+02:12.850 --> 02:16.220
+Xatolar tuzatilgach, Steiger hech qanday muammo topmaydi.
+
+17
+02:19.750 --> 02:29.420
+Xulosa qilsak: slice — biznes ma’nosi bo‘yicha xona. U qo‘shnilaridan
+mustaqil, o‘z vazifasini o‘zida saqlaydi, kirish esa faqat public API orqali.
+
+18
+02:30.370 --> 02:34.390
+Keyingi bobda segmentlarni ko‘ramiz.
+E’tiboringiz uchun rahmat!
