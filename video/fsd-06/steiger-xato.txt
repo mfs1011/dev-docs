@@ -1,0 +1,30 @@
+
+┌ src/entities/order/model/order.ts:1:39
+✘ Forbidden import from higher layer "features".
+│
+└ fsd/forbidden-imports: https://github.com/feature-sliced/steiger/tree/master/packages/steiger-plugin-fsd/src/forbidden-imports
+
+┌ src/pages/catalog/ui/page.ts:1:30
+✘ Forbidden sidestep of public API when importing from "@/entities/product/ui/product-card".
+│
+└ fsd/no-public-api-sidestep: https://github.com/feature-sliced/steiger/tree/master/packages/steiger-plugin-fsd/src/no-public-api-sidestep
+
+┌ src/features/add-to-cart/ui/add-to-cart-button.ts:2:28
+✘ Import from "@/features/add-to-cart" should be relative.
+│
+└ fsd/import-locality: https://github.com/feature-sliced/steiger/tree/master/packages/steiger-plugin-fsd/src/import-locality
+
+┌ src/features/add-to-cart/index.ts:1:1
+✘ Wildcard re-export from "./ui/add-to-cart-button" does not define an explicit public API. Prefer explicit named exports.
+│
+└ fsd/no-wildcard-exports: https://github.com/feature-sliced/steiger/tree/master/packages/steiger-plugin-fsd/src/no-wildcard-exports
+
+┌ src/features/add-to-cart/index.ts:2:1
+⚠ Wildcard re-export from "./api/add-to-cart" does not define an explicit public API. Prefer explicit named exports.
+│
+└ fsd/no-wildcard-exports: https://github.com/feature-sliced/steiger/tree/master/packages/steiger-plugin-fsd/src/no-wildcard-exports
+
+──────────────────────────────────────────────────────────────
+ Found 4 errors and 1 warning (none can be fixed automatically)
+
+exit=1

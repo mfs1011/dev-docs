@@ -4,6 +4,14 @@
 
 ## Qisqacha
 
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/fsd/06-import-va-public-api.jpg" src="/video/fsd/06-import-va-public-api.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/fsd/06-import-va-public-api.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/fsd/06-import-va-public-api.uz.vtt">
+</video>
+<figcaption>Bob videoda: import qoidasi, public API'ning uch maqsadi, import yo'llari va uchta xavf. Linter natijalari — haqiqiy Steiger 0.7.0 dan (recommended + import-locality, no-wildcard-exports).</figcaption>
+</figure>
+
 FSD'ning butun foydasi ikki qoidaga tayanadi. **Import qoidasi**: slice faqat o'zidan qat'iy pastdagi qatlamlarni ko'radi. **Public API qoidasi**: slice'ga tashqaridan faqat uning `index.ts` fayli orqali kiriladi. Birinchisi o'zgarish ta'sirini bashorat qilinadigan qiladi, ikkinchisi slice ichini erkin refaktoring qilishga imkon beradi. Ikkalasi ham linter bilan tekshiriladi (33, 34-boblar) — aks holda bir oyda buziladi.
 
 ## Qoida
