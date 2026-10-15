@@ -64,10 +64,10 @@ Har bob batafsil yoziladi: tushuncha, ichki mexanizm (spetsifikatsiya darajasida
 | --- | --- | --- | --- | --- |
 | 16 | [Obyektlar](16-obyektlar.md) | Literal, xossa nomlari, `in`, `for...in`, kalitlar tartibi | MDN *Working with objects* | `/object` |
 | 17 | [Havola va nusxa](17-havola-va-nusxa.md) | Havola bo'yicha saqlash, yuzaki va chuqur nusxa, `structuredClone()` | MDN *Working with objects*, `structuredClone()` | `/object-copy` |
-| 18 | Garbage collection | Erishib bo'ladiganlik (reachability), mark-and-sweep, nima xotirada qoladi | MDN *Memory management* | `/garbage-collection` |
-| 19 | Metodlar va `this` | `this` qoidalari, chaqiruv vaqtida aniqlanishi, arrow'da `this` yo'qligi | MDN `this` | `/object-methods` |
-| 20 | Konstruktor va `new` | `new` bosqichlari, `new.target`, konstruktordan qaytarish | MDN `new`, `new.target` | `/constructor-new` |
-| 21 | Optional chaining | `?.`, `?.()`, `?.[]`, qachon ishlatmaslik | MDN *Optional chaining* | `/optional-chaining` |
+| 18 | [Garbage collection](18-garbage-collection.md) | Erishib bo'ladiganlik (reachability), mark-and-sweep, nima xotirada qoladi | MDN *Memory management* | `/garbage-collection` |
+| 19 | [Metodlar va `this`](19-metodlar-va-this.md) | `this` qoidalari, chaqiruv vaqtida aniqlanishi, arrow'da `this` yo'qligi | MDN `this` | `/object-methods` |
+| 20 | [Konstruktor va `new`](20-konstruktor-va-new.md) | `new` bosqichlari, `new.target`, konstruktordan qaytarish | MDN `new`, `new.target` | `/constructor-new` |
+| 21 | [Optional chaining](21-optional-chaining.md) | `?.`, `?.()`, `?.[]`, qachon ishlatmaslik | MDN *Optional chaining* | `/optional-chaining` |
 | 22 | Symbol | Noyob kalit, yashirin xossa, `Symbol.for`, well-known symbol'lar | MDN `Symbol` | `/symbol` |
 | 23 | Obyektdan primitivga | `ToPrimitive` algoritmi, hint'lar, `Symbol.toPrimitive`, `valueOf`/`toString` | ECMA-262 *ToPrimitive*; MDN `Symbol.toPrimitive` | `/object-toprimitive` |
 | 24 | Reference Type | `obj.method()` va `(obj.method)()` farqi, nega `this` "yo'qoladi" — spetsifikatsiyadagi Reference Record | ECMA-262 *The Reference Record Specification Type* | `/reference-type` |
