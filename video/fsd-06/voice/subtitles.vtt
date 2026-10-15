@@ -1,112 +1,112 @@
 WEBVTT
 
 1
-00:01.420 --> 00:11.520
+00:01.420 --> 00:13.160
 Salom! Bu FSD qo‘llanmasining oltinchi bobi — import qoidasi va
 public API. FSD’ning butun foydasi shu ikki qoidaga tayanadi.
 
 2
-00:13.510 --> 00:21.280
+00:15.110 --> 00:22.880
 Import qoidasi: slice ichidagi fayl boshqa slice’larni faqat
 ular qat’iy pastdagi qatlamlarda bo‘lsa import qila oladi.
 
 3
-00:22.390 --> 00:30.150
+00:23.990 --> 00:31.730
 Pages widgets’dan, widgets features’dan, features esa
 entities’dan oladi. Teskari yo‘nalishda import taqiqlangan.
 
 4
-00:31.880 --> 00:39.270
+00:33.460 --> 00:40.850
 Shuning uchun o‘zgarish ta’siri oldindan ma’lum: pastdagi slice
 o‘zgarsa, faqat undan yuqoridagilar ta’sirlanishi mumkin.
 
 5
-00:42.320 --> 00:51.780
+00:43.900 --> 00:53.360
 Public API — slice va uni ishlatadigan kod orasidagi shartnoma. U
 darvozadek ishlaydi: faqat ruxsat etilgan narsalar va faqat shu yo‘l bilan.
 
 6
-00:53.170 --> 00:55.800
+00:54.750 --> 00:57.400
 Yaxshi public API’ning uchta maqsadi bor.
 
 7
-00:56.370 --> 01:01.140
+00:57.950 --> 01:02.750
 Birinchi: slice ichidagi qayta tuzish
 ilovaning qolgan qismini buzmasin.
 
 8
-01:02.190 --> 01:07.810
+01:03.780 --> 01:09.390
 Ikkinchi: slice xatti-harakatidagi jiddiy
 o‘zgarish public API o‘zgarishida ko‘rinsin.
 
 9
-01:08.820 --> 01:12.410
+01:10.400 --> 01:14.010
 Uchinchi: faqat kerakli qismlar tashqariga chiqarilsin.
 
 10
-01:15.360 --> 01:21.400
+01:16.960 --> 01:22.980
 Import yo‘llari qanday yoziladi? Bitta slice
 ichida — doim nisbiy va to‘liq yo‘l bilan.
 
 11
-01:22.590 --> 01:26.940
+01:24.170 --> 01:28.520
 Slice’lar orasida — alias bilan va faqat public API orqali.
 
 12
-01:28.090 --> 01:34.920
+01:29.690 --> 01:36.520
 Shared ichidagi ui va lib uchun esa har bir komponent
 yoki kutubxonaga alohida index fayl tavsiya qilinadi.
 
 13
-01:38.270 --> 01:46.170
+01:39.870 --> 01:47.750
 Uchta xavf bor. Birinchisi: hamma narsani export yulduzcha bilan
 chiqarish oson, lekin slice’ning interfeysi noaniq bo‘lib qoladi.
 
 14
-01:47.600 --> 01:55.310
+01:49.200 --> 01:56.910
 Ikkinchisi: IDE avtomatik import qilganda ba’zan ichki faylga
 to‘g‘ridan-to‘g‘ri yo‘l tanlaydi va public API chetlab o‘tiladi.
 
 15
-01:56.760 --> 02:03.620
+01:58.350 --> 02:05.200
 Uchinchisi: index fayl borligi chuqur importni o‘zi
 taqiqlamaydi. Shuning uchun qoidalarni linter tekshirishi kerak.
 
 16
-02:06.670 --> 02:14.640
+02:08.270 --> 02:16.240
 Steiger bilan tekshiramiz. Bu safar sukut bo‘yicha o‘chiq ikki
 qoidani ham yoqdik: import-locality va no-wildcard-exports.
 
 17
-02:15.770 --> 02:21.410
+02:17.380 --> 02:22.990
 Entities qatlamidagi order features’dan tip
 import qildi. Tip ham bog‘liqlik — bu xato.
 
 18
-02:22.620 --> 02:27.950
+02:24.200 --> 02:29.530
 Katalog sahifasi ProductCard’ni ichki
 fayldan oldi — public API chetlab o‘tildi.
 
 19
-02:29.100 --> 02:36.000
+02:30.700 --> 02:37.580
 Add-to-cart slice ichida o‘z public API’sidan import
 qildi. Steiger bu importni nisbiy qilishni talab qiladi.
 
 20
-02:37.630 --> 02:42.860
+02:39.210 --> 02:44.460
 Ikkala export yulduzcha uchun ham xabar
 chiqdi: aniq nomlangan eksport afzal.
 
 21
-02:44.710 --> 02:48.920
+02:46.290 --> 02:50.520
 Tuzatilgan loyihada esa Steiger hech qanday muammo topmaydi.
 
 22
-02:52.570 --> 03:02.670
+02:54.180 --> 03:04.250
 Xulosa qilsak: import faqat pastga, slice’ga kirish faqat public API
 orqali, slice ichida esa nisbiy yo‘l. Bularni linter tekshiradi.
 
 23
-03:03.820 --> 03:08.070
+03:05.400 --> 03:09.640
 Keyingi bobda shared qatlamini
 ko‘ramiz. E’tiboringiz uchun rahmat!

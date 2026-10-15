@@ -4,104 +4,104 @@
     "scene": "intro",
     "text": "Salom! Bu FSD qo‘llanmasining oltinchi bobi — import qoidasi va public API. FSD’ning butun foydasi shu ikki qoidaga tayanadi.",
     "show": "Salom! Bu FSD qo‘llanmasining oltinchi bobi — import qoidasi va public API. FSD’ning butun foydasi shu ikki qoidaga tayanadi.",
-    "say": "Salom! Bu Ef-es-di qo‘llanmasining oltinchi bobi — import qoidasi va pablik ey-pi-ay. Ef-es-dining butun foydasi shu ikki qoidaga tayanadi.",
-    "a0": 0.26,
-    "a1": 9.91,
+    "say": "Salom! Bu Ef-es-di qo‘llanmasining oltinchi bobi — import qoidasi va pablik ey-pi-ay. Ef-es-di-ning butun foydasi shu ikki qoidaga tayanadi.",
+    "a0": 0.36,
+    "a1": 11.65,
     "words": [
       {
         "w": "Salom!",
-        "s": 0.26,
-        "e": 0.6
+        "s": 0.36,
+        "e": 0.7
       },
       {
         "w": "Bu",
-        "s": 0.98,
-        "e": 1.06
+        "s": 1.56,
+        "e": 1.64
       },
       {
         "w": "Ef-es-di",
-        "s": 1.32,
-        "e": 1.66
+        "s": 1.94,
+        "e": 2.36
       },
       {
         "w": "qo‘llanmasining",
-        "s": 1.8,
-        "e": 2.6
+        "s": 2.46,
+        "e": 3.2
       },
       {
         "w": "oltinchi",
-        "s": 2.8,
-        "e": 3.26
+        "s": 3.48,
+        "e": 3.94
       },
       {
         "w": "bobi",
-        "s": 3.3,
-        "e": 3.54
+        "s": 4.0,
+        "e": 4.26
       },
       {
         "w": "—",
-        "s": 3.54,
-        "e": 3.54
+        "s": 4.26,
+        "e": 4.26
       },
       {
         "w": "import",
-        "s": 4.14,
-        "e": 4.46
+        "s": 4.96,
+        "e": 5.26
       },
       {
         "w": "qoidasi",
-        "s": 4.52,
-        "e": 5.02
+        "s": 5.3,
+        "e": 5.8
       },
       {
         "w": "va",
-        "s": 5.28,
-        "e": 5.34
+        "s": 5.96,
+        "e": 6.04
       },
       {
         "w": "pablik",
-        "s": 5.46,
-        "e": 5.84
+        "s": 6.36,
+        "e": 6.76
       },
       {
         "w": "ey-pi-ay.",
-        "s": 5.96,
-        "e": 6.3
+        "s": 7.0,
+        "e": 7.38
       },
       {
-        "w": "Ef-es-dining",
-        "s": 6.84,
-        "e": 7.42
+        "w": "Ef-es-di-ning",
+        "s": 8.33,
+        "e": 8.97
       },
       {
         "w": "butun",
-        "s": 7.51,
-        "e": 7.91
+        "s": 9.07,
+        "e": 9.45
       },
       {
         "w": "foydasi",
-        "s": 7.99,
-        "e": 8.43
+        "s": 9.53,
+        "e": 10.05
       },
       {
         "w": "shu",
-        "s": 8.51,
-        "e": 8.63
+        "s": 10.17,
+        "e": 10.29
       },
       {
         "w": "ikki",
-        "s": 8.81,
-        "e": 8.99
+        "s": 10.51,
+        "e": 10.73
       },
       {
         "w": "qoidaga",
-        "s": 9.05,
-        "e": 9.43
+        "s": 10.81,
+        "e": 11.19
       },
       {
         "w": "tayanadi.",
-        "s": 9.47,
-        "e": 9.91
+        "s": 11.23,
+        "e": 11.65
       }
     ]
   },
@@ -111,88 +111,88 @@
     "text": "Import qoidasi: slice ichidagi fayl boshqa slice’larni faqat ular qat’iy pastdagi qatlamlarda bo‘lsa import qila oladi.",
     "show": "Import qoidasi: slice ichidagi fayl boshqa slice’larni faqat ular qat’iy pastdagi qatlamlarda bo‘lsa import qila oladi.",
     "say": "Import qoidasi: slays ichidagi fayl boshqa slayslarni faqat ular qat’iy pastdagi qatlamlarda bo‘lsa import qila oladi.",
-    "a0": 10.75,
-    "a1": 18.07,
+    "a0": 12.45,
+    "a1": 19.77,
     "words": [
       {
         "w": "Import",
-        "s": 10.75,
-        "e": 11.05
+        "s": 12.45,
+        "e": 12.73
       },
       {
         "w": "qoidasi:",
-        "s": 11.09,
-        "e": 11.53
-      },
-      {
-        "w": "slays",
-        "s": 12.03,
-        "e": 12.33
-      },
-      {
-        "w": "ichidagi",
-        "s": 12.43,
-        "e": 12.81
-      },
-      {
-        "w": "fayl",
-        "s": 12.87,
+        "s": 12.79,
         "e": 13.21
       },
       {
+        "w": "slays",
+        "s": 13.73,
+        "e": 14.03
+      },
+      {
+        "w": "ichidagi",
+        "s": 14.11,
+        "e": 14.49
+      },
+      {
+        "w": "fayl",
+        "s": 14.57,
+        "e": 14.89
+      },
+      {
         "w": "boshqa",
-        "s": 13.45,
-        "e": 13.73
+        "s": 15.15,
+        "e": 15.43
       },
       {
         "w": "slayslarni",
-        "s": 13.79,
-        "e": 14.33
+        "s": 15.47,
+        "e": 16.03
       },
       {
         "w": "faqat",
-        "s": 14.39,
-        "e": 14.73
+        "s": 16.09,
+        "e": 16.41
       },
       {
         "w": "ular",
-        "s": 14.87,
-        "e": 15.09
+        "s": 16.57,
+        "e": 16.79
       },
       {
         "w": "qat’iy",
-        "s": 15.23,
-        "e": 15.65
+        "s": 16.91,
+        "e": 17.35
       },
       {
         "w": "pastdagi",
-        "s": 15.73,
-        "e": 16.13
+        "s": 17.43,
+        "e": 17.83
       },
       {
         "w": "qatlamlarda",
-        "s": 16.19,
-        "e": 16.75
+        "s": 17.87,
+        "e": 18.45
       },
       {
         "w": "bo‘lsa",
-        "s": 16.79,
-        "e": 17.07
+        "s": 18.49,
+        "e": 18.75
       },
       {
         "w": "import",
-        "s": 17.21,
-        "e": 17.51
+        "s": 18.91,
+        "e": 19.19
       },
       {
         "w": "qila",
-        "s": 17.55,
-        "e": 17.71
+        "s": 19.25,
+        "e": 19.41
       },
       {
         "w": "oladi.",
-        "s": 17.79,
-        "e": 18.07
+        "s": 19.49,
+        "e": 19.77
       }
     ]
   },
@@ -202,68 +202,68 @@
     "text": "Pages widgets’dan, widgets features’dan, features esa entities’dan oladi. Teskari yo‘nalishda import taqiqlangan.",
     "show": "Pages widgets’dan, widgets features’dan, features esa entities’dan oladi. Teskari yo‘nalishda import taqiqlangan.",
     "say": "Peyjiz vijets’dan, vijets fichers’dan, fichers esa entitiz’dan oladi. Teskari yo‘nalishda import taqiqlangan.",
-    "a0": 18.83,
-    "a1": 26.14,
+    "a0": 20.53,
+    "a1": 27.82,
     "words": [
       {
         "w": "Peyjiz",
-        "s": 18.83,
-        "e": 19.23
+        "s": 20.53,
+        "e": 20.91
       },
       {
         "w": "vijets’dan,",
-        "s": 19.31,
-        "e": 19.91
+        "s": 20.99,
+        "e": 21.61
       },
       {
         "w": "vijets",
-        "s": 20.27,
-        "e": 20.69
+        "s": 21.95,
+        "e": 22.39
       },
       {
         "w": "fichers’dan,",
-        "s": 20.87,
-        "e": 21.45
+        "s": 22.56,
+        "e": 23.14
       },
       {
         "w": "fichers",
-        "s": 21.85,
-        "e": 22.23
+        "s": 23.54,
+        "e": 23.94
       },
       {
         "w": "esa",
-        "s": 22.29,
-        "e": 22.47
+        "s": 23.98,
+        "e": 24.16
       },
       {
         "w": "entitiz’dan",
-        "s": 22.68,
-        "e": 23.26
+        "s": 24.38,
+        "e": 24.94
       },
       {
         "w": "oladi.",
-        "s": 23.32,
-        "e": 23.6
+        "s": 25.0,
+        "e": 25.28
       },
       {
         "w": "Teskari",
-        "s": 24.12,
-        "e": 24.6
+        "s": 25.82,
+        "e": 26.28
       },
       {
         "w": "yo‘nalishda",
-        "s": 24.64,
-        "e": 25.08
+        "s": 26.32,
+        "e": 26.78
       },
       {
         "w": "import",
-        "s": 25.18,
-        "e": 25.48
+        "s": 26.88,
+        "e": 27.16
       },
       {
         "w": "taqiqlangan.",
-        "s": 25.5,
-        "e": 26.14
+        "s": 27.18,
+        "e": 27.82
       }
     ]
   },
@@ -273,78 +273,78 @@
     "text": "Shuning uchun o‘zgarish ta’siri oldindan ma’lum: pastdagi slice o‘zgarsa, faqat undan yuqoridagilar ta’sirlanishi mumkin.",
     "show": "Shuning uchun o‘zgarish ta’siri oldindan ma’lum: pastdagi slice o‘zgarsa, faqat undan yuqoridagilar ta’sirlanishi mumkin.",
     "say": "Shuning uchun o‘zgarish ta’siri oldindan ma’lum: pastdagi slays o‘zgarsa, faqat undan yuqoridagilar ta’sirlanishi mumkin.",
-    "a0": 26.92,
-    "a1": 33.86,
+    "a0": 28.6,
+    "a1": 35.54,
     "words": [
       {
         "w": "Shuning",
-        "s": 26.92,
-        "e": 27.16
+        "s": 28.6,
+        "e": 28.86
       },
       {
         "w": "uchun",
-        "s": 27.2,
-        "e": 27.46
+        "s": 28.88,
+        "e": 29.14
       },
       {
         "w": "o‘zgarish",
-        "s": 27.6,
-        "e": 28.02
+        "s": 29.3,
+        "e": 29.72
       },
       {
         "w": "ta’siri",
-        "s": 28.04,
-        "e": 28.38
+        "s": 29.74,
+        "e": 30.08
       },
       {
         "w": "oldindan",
-        "s": 28.52,
-        "e": 28.96
+        "s": 30.2,
+        "e": 30.64
       },
       {
         "w": "ma’lum:",
-        "s": 29.0,
-        "e": 29.3
+        "s": 30.68,
+        "e": 30.98
       },
       {
         "w": "pastdagi",
-        "s": 29.72,
-        "e": 30.14
+        "s": 31.38,
+        "e": 31.84
       },
       {
         "w": "slays",
-        "s": 30.2,
-        "e": 30.5
+        "s": 31.9,
+        "e": 32.18
       },
       {
         "w": "o‘zgarsa,",
-        "s": 30.58,
-        "e": 31.02
+        "s": 32.28,
+        "e": 32.7
       },
       {
         "w": "faqat",
-        "s": 31.38,
-        "e": 31.68
+        "s": 33.06,
+        "e": 33.38
       },
       {
         "w": "undan",
-        "s": 31.84,
-        "e": 32.14
+        "s": 33.52,
+        "e": 33.84
       },
       {
         "w": "yuqoridagilar",
-        "s": 32.2,
-        "e": 32.88
+        "s": 33.88,
+        "e": 34.56
       },
       {
         "w": "ta’sirlanishi",
-        "s": 32.92,
-        "e": 33.52
+        "s": 34.62,
+        "e": 35.2
       },
       {
         "w": "mumkin.",
-        "s": 33.54,
-        "e": 33.86
+        "s": 35.24,
+        "e": 35.54
       }
     ]
   },
@@ -354,118 +354,118 @@
     "text": "Public API — slice va uni ishlatadigan kod orasidagi shartnoma. U darvozadek ishlaydi: faqat ruxsat etilgan narsalar va faqat shu yo‘l bilan.",
     "show": "Public API — slice va uni ishlatadigan kod orasidagi shartnoma. U darvozadek ishlaydi: faqat ruxsat etilgan narsalar va faqat shu yo‘l bilan.",
     "say": "Public ey-pi-ay — slays va uni ishlatadigan kod orasidagi shartnoma. U darvozadek ishlaydi: faqat ruxsat etilgan narsalar va faqat shu yo‘l bilan.",
-    "a0": 34.56,
-    "a1": 43.57,
+    "a0": 36.24,
+    "a1": 45.25,
     "words": [
       {
         "w": "Public",
-        "s": 34.56,
-        "e": 34.9
+        "s": 36.24,
+        "e": 36.6
       },
       {
         "w": "ey-pi-ay",
-        "s": 35.02,
-        "e": 35.38
+        "s": 36.7,
+        "e": 37.08
       },
       {
         "w": "—",
-        "s": 35.38,
-        "e": 35.38
+        "s": 37.08,
+        "e": 37.08
       },
       {
         "w": "slays",
-        "s": 35.76,
-        "e": 36.06
+        "s": 37.46,
+        "e": 37.77
       },
       {
         "w": "va",
-        "s": 36.14,
-        "e": 36.18
+        "s": 37.83,
+        "e": 37.89
       },
       {
         "w": "uni",
-        "s": 36.26,
-        "e": 36.36
+        "s": 37.95,
+        "e": 38.07
       },
       {
         "w": "ishlatadigan",
-        "s": 36.42,
-        "e": 37.02
+        "s": 38.13,
+        "e": 38.71
       },
       {
         "w": "kod",
-        "s": 37.08,
-        "e": 37.28
+        "s": 38.79,
+        "e": 38.99
       },
       {
         "w": "orasidagi",
-        "s": 37.34,
-        "e": 37.85
+        "s": 39.03,
+        "e": 39.55
       },
       {
         "w": "shartnoma.",
-        "s": 37.93,
-        "e": 38.41
+        "s": 39.61,
+        "e": 40.11
       },
       {
         "w": "U",
-        "s": 38.89,
-        "e": 38.91
+        "s": 40.59,
+        "e": 40.61
       },
       {
         "w": "darvozadek",
-        "s": 39.07,
-        "e": 39.71
+        "s": 40.77,
+        "e": 41.41
       },
       {
         "w": "ishlaydi:",
-        "s": 39.75,
-        "e": 40.09
+        "s": 41.47,
+        "e": 41.77
       },
       {
         "w": "faqat",
-        "s": 40.49,
-        "e": 40.77
+        "s": 42.17,
+        "e": 42.45
       },
       {
         "w": "ruxsat",
-        "s": 40.85,
-        "e": 41.17
-      },
-      {
-        "w": "etilgan",
-        "s": 41.23,
-        "e": 41.59
-      },
-      {
-        "w": "narsalar",
-        "s": 41.63,
-        "e": 42.07
-      },
-      {
-        "w": "va",
-        "s": 42.39,
-        "e": 42.47
-      },
-      {
-        "w": "faqat",
         "s": 42.53,
         "e": 42.85
       },
       {
+        "w": "etilgan",
+        "s": 42.93,
+        "e": 43.27
+      },
+      {
+        "w": "narsalar",
+        "s": 43.31,
+        "e": 43.75
+      },
+      {
+        "w": "va",
+        "s": 44.09,
+        "e": 44.15
+      },
+      {
+        "w": "faqat",
+        "s": 44.23,
+        "e": 44.53
+      },
+      {
         "w": "shu",
-        "s": 42.97,
-        "e": 43.07
+        "s": 44.65,
+        "e": 44.75
       },
       {
         "w": "yo‘l",
-        "s": 43.15,
-        "e": 43.31
+        "s": 44.85,
+        "e": 45.01
       },
       {
         "w": "bilan.",
-        "s": 43.35,
-        "e": 43.57
+        "s": 45.03,
+        "e": 45.25
       }
     ]
   },
@@ -475,38 +475,38 @@
     "text": "Yaxshi public API’ning uchta maqsadi bor.",
     "show": "Yaxshi public API’ning uchta maqsadi bor.",
     "say": "Yaxshi pablik ey-pi-ayning uchta maqsadi bor.",
-    "a0": 44.41,
-    "a1": 46.59,
+    "a0": 46.09,
+    "a1": 48.29,
     "words": [
       {
         "w": "Yaxshi",
-        "s": 44.41,
-        "e": 44.69
+        "s": 46.09,
+        "e": 46.39
       },
       {
         "w": "pablik",
-        "s": 44.75,
-        "e": 45.09
+        "s": 46.45,
+        "e": 46.77
       },
       {
         "w": "ey-pi-ayning",
-        "s": 45.17,
-        "e": 45.65
+        "s": 46.85,
+        "e": 47.35
       },
       {
         "w": "uchta",
-        "s": 45.77,
-        "e": 46.01
+        "s": 47.47,
+        "e": 47.71
       },
       {
         "w": "maqsadi",
-        "s": 46.05,
-        "e": 46.43
+        "s": 47.75,
+        "e": 48.11
       },
       {
         "w": "bor.",
-        "s": 46.45,
-        "e": 46.59
+        "s": 48.15,
+        "e": 48.29
       }
     ]
   },
@@ -516,53 +516,53 @@
     "text": "Birinchi: slice ichidagi qayta tuzish ilovaning qolgan qismini buzmasin.",
     "show": "Birinchi: slice ichidagi qayta tuzish ilovaning qolgan qismini buzmasin.",
     "say": "Birinchi: slays ichidagi qayta tuzish ilovaning qolgan qismini buzmasin.",
-    "a0": 47.21,
-    "a1": 51.53,
+    "a0": 48.89,
+    "a1": 53.24,
     "words": [
       {
         "w": "Birinchi:",
-        "s": 47.21,
-        "e": 47.55
+        "s": 48.89,
+        "e": 49.23
       },
       {
         "w": "slays",
-        "s": 48.03,
-        "e": 48.33
+        "s": 49.73,
+        "e": 50.01
       },
       {
         "w": "ichidagi",
-        "s": 48.39,
-        "e": 48.79
+        "s": 50.09,
+        "e": 50.49
       },
       {
         "w": "qayta",
-        "s": 48.87,
-        "e": 49.17
+        "s": 50.57,
+        "e": 50.87
       },
       {
         "w": "tuzish",
-        "s": 49.25,
-        "e": 49.61
+        "s": 50.93,
+        "e": 51.31
       },
       {
         "w": "ilovaning",
-        "s": 49.79,
-        "e": 50.31
+        "s": 51.49,
+        "e": 52.01
       },
       {
         "w": "qolgan",
-        "s": 50.37,
-        "e": 50.69
+        "s": 52.05,
+        "e": 52.37
       },
       {
         "w": "qismini",
-        "s": 50.73,
-        "e": 51.05
+        "s": 52.43,
+        "e": 52.76
       },
       {
         "w": "buzmasin.",
-        "s": 51.09,
-        "e": 51.53
+        "s": 52.78,
+        "e": 53.24
       }
     ]
   },
@@ -572,53 +572,53 @@
     "text": "Ikkinchi: slice xatti-harakatidagi jiddiy o‘zgarish public API o‘zgarishida ko‘rinsin.",
     "show": "Ikkinchi: slice xatti-harakatidagi jiddiy o‘zgarish public API o‘zgarishida ko‘rinsin.",
     "say": "Ikkinchi: slays xatti-harakatidagi jiddiy o‘zgarish pablik ey-pi-ay o‘zgarishida ko‘rinsin.",
-    "a0": 52.23,
-    "a1": 57.4,
+    "a0": 53.92,
+    "a1": 59.08,
     "words": [
       {
         "w": "Ikkinchi:",
-        "s": 52.23,
-        "e": 52.62
+        "s": 53.92,
+        "e": 54.3
       },
       {
         "w": "slays",
-        "s": 53.12,
-        "e": 53.42
+        "s": 54.82,
+        "e": 55.1
       },
       {
         "w": "xatti-harakatidagi",
-        "s": 53.46,
-        "e": 54.4
+        "s": 55.14,
+        "e": 56.08
       },
       {
         "w": "jiddiy",
-        "s": 54.48,
-        "e": 54.8
+        "s": 56.18,
+        "e": 56.5
       },
       {
         "w": "o‘zgarish",
-        "s": 54.94,
-        "e": 55.42
+        "s": 56.62,
+        "e": 57.12
       },
       {
         "w": "pablik",
-        "s": 55.62,
-        "e": 55.94
+        "s": 57.3,
+        "e": 57.62
       },
       {
         "w": "ey-pi-ay",
-        "s": 56.02,
-        "e": 56.32
+        "s": 57.72,
+        "e": 58.0
       },
       {
         "w": "o‘zgarishida",
-        "s": 56.38,
-        "e": 56.9
+        "s": 58.06,
+        "e": 58.58
       },
       {
         "w": "ko‘rinsin.",
-        "s": 56.94,
-        "e": 57.4
+        "s": 58.64,
+        "e": 59.08
       }
     ]
   },
@@ -628,38 +628,38 @@
     "text": "Uchinchi: faqat kerakli qismlar tashqariga chiqarilsin.",
     "show": "Uchinchi: faqat kerakli qismlar tashqariga chiqarilsin.",
     "say": "Uchinchi: faqat kerakli qismlar tashqariga chiqarilsin.",
-    "a0": 58.06,
-    "a1": 61.2,
+    "a0": 59.74,
+    "a1": 62.9,
     "words": [
       {
         "w": "Uchinchi:",
-        "s": 58.06,
-        "e": 58.44
+        "s": 59.74,
+        "e": 60.12
       },
       {
         "w": "faqat",
-        "s": 58.86,
-        "e": 59.2
+        "s": 60.54,
+        "e": 60.88
       },
       {
         "w": "kerakli",
-        "s": 59.3,
-        "e": 59.72
+        "s": 60.96,
+        "e": 61.4
       },
       {
         "w": "qismlar",
-        "s": 59.8,
-        "e": 60.16
+        "s": 61.48,
+        "e": 61.86
       },
       {
         "w": "tashqariga",
-        "s": 60.22,
-        "e": 60.66
+        "s": 61.9,
+        "e": 62.34
       },
       {
         "w": "chiqarilsin.",
-        "s": 60.7,
-        "e": 61.2
+        "s": 62.38,
+        "e": 62.9
       }
     ]
   },
@@ -669,78 +669,78 @@
     "text": "Import yo‘llari qanday yoziladi? Bitta slice ichida — doim nisbiy va to‘liq yo‘l bilan.",
     "show": "Import yo‘llari qanday yoziladi? Bitta slice ichida — doim nisbiy va to‘liq yo‘l bilan.",
     "say": "Import yo‘llari qanday yoziladi? Bitta slays ichida — doim nisbiy va to‘liq yo‘l bilan.",
-    "a0": 62.0,
-    "a1": 67.59,
+    "a0": 63.7,
+    "a1": 69.27,
     "words": [
       {
         "w": "Import",
-        "s": 62.0,
-        "e": 62.32
+        "s": 63.7,
+        "e": 64.0
       },
       {
         "w": "yo‘llari",
-        "s": 62.36,
-        "e": 62.68
+        "s": 64.04,
+        "e": 64.38
       },
       {
         "w": "qanday",
-        "s": 62.76,
-        "e": 63.08
+        "s": 64.44,
+        "e": 64.78
       },
       {
         "w": "yoziladi?",
-        "s": 63.1,
-        "e": 63.56
+        "s": 64.8,
+        "e": 65.26
       },
       {
         "w": "Bitta",
-        "s": 64.26,
-        "e": 64.52
+        "s": 65.94,
+        "e": 66.2
       },
       {
         "w": "slays",
-        "s": 64.58,
-        "e": 64.84
+        "s": 66.26,
+        "e": 66.54
       },
       {
         "w": "ichida",
-        "s": 64.9,
-        "e": 65.16
+        "s": 66.58,
+        "e": 66.84
       },
       {
         "w": "—",
-        "s": 65.16,
-        "e": 65.16
+        "s": 66.84,
+        "e": 66.84
       },
       {
         "w": "doim",
-        "s": 65.6,
-        "e": 65.92
+        "s": 67.3,
+        "e": 67.63
       },
       {
         "w": "nisbiy",
-        "s": 65.98,
-        "e": 66.34
+        "s": 67.69,
+        "e": 68.05
       },
       {
         "w": "va",
-        "s": 66.5,
-        "e": 66.58
+        "s": 68.21,
+        "e": 68.29
       },
       {
         "w": "to‘liq",
-        "s": 66.74,
-        "e": 67.08
+        "s": 68.43,
+        "e": 68.77
       },
       {
         "w": "yo‘l",
-        "s": 67.16,
-        "e": 67.32
+        "s": 68.85,
+        "e": 69.01
       },
       {
         "w": "bilan.",
-        "s": 67.36,
-        "e": 67.59
+        "s": 69.05,
+        "e": 69.27
       }
     ]
   },
@@ -750,58 +750,58 @@
     "text": "Slice’lar orasida — alias bilan va faqat public API orqali.",
     "show": "Slice’lar orasida — alias bilan va faqat public API orqali.",
     "say": "Slayslar orasida — eylias bilan va faqat pablik ey-pi-ay orqali.",
-    "a0": 68.23,
-    "a1": 72.13,
+    "a0": 69.91,
+    "a1": 73.81,
     "words": [
       {
         "w": "Slayslar",
-        "s": 68.23,
-        "e": 68.67
+        "s": 69.91,
+        "e": 70.35
       },
       {
         "w": "orasida",
-        "s": 68.73,
-        "e": 69.13
+        "s": 70.41,
+        "e": 70.83
       },
       {
         "w": "—",
-        "s": 69.13,
-        "e": 69.13
+        "s": 70.83,
+        "e": 70.83
       },
       {
         "w": "eylias",
-        "s": 69.59,
-        "e": 69.95
+        "s": 71.29,
+        "e": 71.63
       },
       {
         "w": "bilan",
-        "s": 70.01,
-        "e": 70.23
+        "s": 71.69,
+        "e": 71.93
       },
       {
         "w": "va",
-        "s": 70.49,
-        "e": 70.55
+        "s": 72.17,
+        "e": 72.23
       },
       {
         "w": "faqat",
-        "s": 70.61,
-        "e": 70.93
+        "s": 72.31,
+        "e": 72.63
       },
       {
         "w": "pablik",
-        "s": 71.01,
-        "e": 71.35
+        "s": 72.69,
+        "e": 73.03
       },
       {
         "w": "ey-pi-ay",
-        "s": 71.43,
-        "e": 71.75
+        "s": 73.13,
+        "e": 73.43
       },
       {
         "w": "orqali.",
-        "s": 71.79,
-        "e": 72.13
+        "s": 73.47,
+        "e": 73.81
       }
     ]
   },
@@ -811,93 +811,93 @@
     "text": "Shared ichidagi ui va lib uchun esa har bir komponent yoki kutubxonaga alohida index fayl tavsiya qilinadi.",
     "show": "Shared ichidagi ui va lib uchun esa har bir komponent yoki kutubxonaga alohida index fayl tavsiya qilinadi.",
     "say": "Sherd ichidagi Yu-ay va lib uchun esa har bir komponent yoki kutubxonaga alohida indeks fayl tavsiya qilinadi.",
-    "a0": 72.73,
-    "a1": 79.11,
+    "a0": 74.43,
+    "a1": 80.81,
     "words": [
       {
         "w": "Sherd",
-        "s": 72.73,
-        "e": 73.09
+        "s": 74.43,
+        "e": 74.77
       },
       {
         "w": "ichidagi",
-        "s": 73.15,
-        "e": 73.55
+        "s": 74.85,
+        "e": 75.25
       },
       {
         "w": "Yu-ay",
-        "s": 73.63,
-        "e": 73.95
+        "s": 75.33,
+        "e": 75.63
       },
       {
         "w": "va",
-        "s": 74.01,
-        "e": 74.09
+        "s": 75.71,
+        "e": 75.79
       },
       {
         "w": "lib",
-        "s": 74.19,
-        "e": 74.37
+        "s": 75.89,
+        "e": 76.07
       },
       {
         "w": "uchun",
-        "s": 74.41,
-        "e": 74.63
+        "s": 76.09,
+        "e": 76.33
       },
       {
         "w": "esa",
-        "s": 74.69,
-        "e": 74.87
+        "s": 76.39,
+        "e": 76.55
       },
       {
         "w": "har",
-        "s": 75.21,
-        "e": 75.39
+        "s": 76.91,
+        "e": 77.09
       },
       {
         "w": "bir",
-        "s": 75.45,
-        "e": 75.55
+        "s": 77.13,
+        "e": 77.25
       },
       {
         "w": "komponent",
-        "s": 75.61,
-        "e": 76.11
+        "s": 77.29,
+        "e": 77.81
       },
       {
         "w": "yoki",
-        "s": 76.13,
-        "e": 76.39
+        "s": 77.83,
+        "e": 78.07
       },
       {
         "w": "kutubxonaga",
-        "s": 76.45,
-        "e": 76.99
+        "s": 78.13,
+        "e": 78.69
       },
       {
         "w": "alohida",
-        "s": 77.11,
-        "e": 77.55
+        "s": 78.81,
+        "e": 79.23
       },
       {
         "w": "indeks",
-        "s": 77.71,
-        "e": 78.05
+        "s": 79.41,
+        "e": 79.73
       },
       {
         "w": "fayl",
-        "s": 78.09,
-        "e": 78.31
+        "s": 79.79,
+        "e": 80.01
       },
       {
         "w": "tavsiya",
-        "s": 78.35,
-        "e": 78.67
+        "s": 80.05,
+        "e": 80.35
       },
       {
         "w": "qilinadi.",
-        "s": 78.73,
-        "e": 79.11
+        "s": 80.41,
+        "e": 80.81
       }
     ]
   },
@@ -907,93 +907,93 @@
     "text": "Uchta xavf bor. Birinchisi: hamma narsani export yulduzcha bilan chiqarish oson, lekin slice’ning interfeysi noaniq bo‘lib qoladi.",
     "show": "Uchta xavf bor. Birinchisi: hamma narsani export yulduzcha bilan chiqarish oson, lekin slice’ning interfeysi noaniq bo‘lib qoladi.",
     "say": "Uchta xavf bor. Birinchisi: hamma narsani eksport yulduzcha bilan chiqarish oson, lekin slaysning interfeysi noaniq bo‘lib qoladi.",
-    "a0": 79.91,
-    "a1": 87.36,
+    "a0": 81.61,
+    "a1": 89.04,
     "words": [
       {
         "w": "Uchta",
-        "s": 79.91,
-        "e": 80.17
+        "s": 81.61,
+        "e": 81.87
       },
       {
         "w": "xavf",
-        "s": 80.23,
-        "e": 80.41
+        "s": 81.91,
+        "e": 82.09
       },
       {
         "w": "bor.",
-        "s": 80.47,
-        "e": 80.63
+        "s": 82.17,
+        "e": 82.31
       },
       {
         "w": "Birinchisi:",
-        "s": 81.21,
-        "e": 81.63
+        "s": 82.92,
+        "e": 83.34
       },
       {
         "w": "hamma",
-        "s": 81.97,
-        "e": 82.23
+        "s": 83.66,
+        "e": 83.92
       },
       {
         "w": "narsani",
-        "s": 82.29,
-        "e": 82.68
+        "s": 83.98,
+        "e": 84.38
       },
       {
         "w": "eksport",
-        "s": 82.82,
-        "e": 83.18
+        "s": 84.5,
+        "e": 84.88
       },
       {
         "w": "yulduzcha",
-        "s": 83.24,
-        "e": 83.66
+        "s": 84.92,
+        "e": 85.34
       },
       {
         "w": "bilan",
-        "s": 83.7,
-        "e": 83.88
+        "s": 85.38,
+        "e": 85.56
       },
       {
         "w": "chiqarish",
-        "s": 83.92,
-        "e": 84.3
+        "s": 85.6,
+        "e": 85.98
       },
       {
         "w": "oson,",
-        "s": 84.4,
-        "e": 84.7
+        "s": 86.1,
+        "e": 86.38
       },
       {
         "w": "lekin",
-        "s": 85.0,
-        "e": 85.24
+        "s": 86.68,
+        "e": 86.94
       },
       {
         "w": "slaysning",
-        "s": 85.28,
-        "e": 85.74
+        "s": 86.98,
+        "e": 87.42
       },
       {
         "w": "interfeysi",
-        "s": 85.82,
-        "e": 86.32
+        "s": 87.5,
+        "e": 88.02
       },
       {
         "w": "noaniq",
-        "s": 86.42,
-        "e": 86.76
+        "s": 88.1,
+        "e": 88.46
       },
       {
         "w": "bo‘lib",
-        "s": 86.82,
-        "e": 87.02
+        "s": 88.52,
+        "e": 88.72
       },
       {
         "w": "qoladi.",
-        "s": 87.04,
-        "e": 87.36
+        "s": 88.74,
+        "e": 89.04
       }
     ]
   },
@@ -1003,88 +1003,88 @@
     "text": "Ikkinchisi: IDE avtomatik import qilganda ba’zan ichki faylga to‘g‘ridan-to‘g‘ri yo‘l tanlaydi va public API chetlab o‘tiladi.",
     "show": "Ikkinchisi: IDE avtomatik import qilganda ba’zan ichki faylga to‘g‘ridan-to‘g‘ri yo‘l tanlaydi va public API chetlab o‘tiladi.",
     "say": "Ikkinchisi: ay-di-i avtomatik import qilganda ba’zan ichki faylga to‘g‘ridan-to‘g‘ri yo‘l tanlaydi va pablik ey-pi-ay chetlab o‘tiladi.",
-    "a0": 88.04,
-    "a1": 95.3,
+    "a0": 89.74,
+    "a1": 97.0,
     "words": [
       {
         "w": "Ikkinchisi:",
-        "s": 88.04,
-        "e": 88.52
+        "s": 89.74,
+        "e": 90.18
       },
       {
         "w": "ay-di-i",
-        "s": 88.98,
-        "e": 89.32
+        "s": 90.64,
+        "e": 90.98
       },
       {
         "w": "avtomatik",
-        "s": 89.44,
-        "e": 89.94
+        "s": 91.12,
+        "e": 91.64
       },
       {
         "w": "import",
-        "s": 90.04,
-        "e": 90.3
+        "s": 91.72,
+        "e": 91.98
       },
       {
         "w": "qilganda",
-        "s": 90.34,
-        "e": 90.74
+        "s": 92.02,
+        "e": 92.42
       },
       {
         "w": "ba’zan",
-        "s": 90.82,
-        "e": 91.12
+        "s": 92.5,
+        "e": 92.8
       },
       {
         "w": "ichki",
-        "s": 91.24,
-        "e": 91.48
+        "s": 92.92,
+        "e": 93.16
       },
       {
         "w": "faylga",
-        "s": 91.54,
-        "e": 91.86
+        "s": 93.22,
+        "e": 93.54
       },
       {
         "w": "to‘g‘ridan-to‘g‘ri",
-        "s": 91.94,
-        "e": 92.64
+        "s": 93.62,
+        "e": 94.34
       },
       {
         "w": "yo‘l",
-        "s": 92.68,
-        "e": 92.86
+        "s": 94.38,
+        "e": 94.54
       },
       {
         "w": "tanlaydi",
-        "s": 92.9,
-        "e": 93.3
+        "s": 94.58,
+        "e": 94.98
       },
       {
         "w": "va",
-        "s": 93.56,
-        "e": 93.64
+        "s": 95.26,
+        "e": 95.32
       },
       {
         "w": "pablik",
-        "s": 93.76,
-        "e": 94.08
+        "s": 95.44,
+        "e": 95.78
       },
       {
         "w": "ey-pi-ay",
-        "s": 94.16,
-        "e": 94.48
+        "s": 95.86,
+        "e": 96.16
       },
       {
         "w": "chetlab",
-        "s": 94.56,
-        "e": 94.9
+        "s": 96.24,
+        "e": 96.6
       },
       {
         "w": "o‘tiladi.",
-        "s": 94.94,
-        "e": 95.3
+        "s": 96.64,
+        "e": 97.0
       }
     ]
   },
@@ -1094,78 +1094,78 @@
     "text": "Uchinchisi: index fayl borligi chuqur importni o‘zi taqiqlamaydi. Shuning uchun qoidalarni linter tekshirishi kerak.",
     "show": "Uchinchisi: index fayl borligi chuqur importni o‘zi taqiqlamaydi. Shuning uchun qoidalarni linter tekshirishi kerak.",
     "say": "Uchinchisi: indeks fayl borligi chuqur importni o‘zi taqiqlamaydi. Shuning uchun qoidalarni linter tekshirishi kerak.",
-    "a0": 96.0,
-    "a1": 102.41,
+    "a0": 97.69,
+    "a1": 104.09,
     "words": [
       {
         "w": "Uchinchisi:",
-        "s": 96.0,
-        "e": 96.44
+        "s": 97.69,
+        "e": 98.13
       },
       {
         "w": "indeks",
-        "s": 96.9,
-        "e": 97.2
+        "s": 98.59,
+        "e": 98.91
       },
       {
         "w": "fayl",
-        "s": 97.24,
-        "e": 97.46
+        "s": 98.93,
+        "e": 99.15
       },
       {
         "w": "borligi",
-        "s": 97.51,
-        "e": 97.89
+        "s": 99.19,
+        "e": 99.57
       },
       {
         "w": "chuqur",
-        "s": 97.97,
-        "e": 98.25
+        "s": 99.67,
+        "e": 99.93
       },
       {
         "w": "importni",
-        "s": 98.35,
-        "e": 98.71
+        "s": 100.03,
+        "e": 100.41
       },
       {
         "w": "o‘zi",
-        "s": 98.83,
-        "e": 99.01
+        "s": 100.53,
+        "e": 100.71
       },
       {
         "w": "taqiqlamaydi.",
-        "s": 99.07,
-        "e": 99.77
+        "s": 100.75,
+        "e": 101.45
       },
       {
         "w": "Shuning",
-        "s": 100.07,
-        "e": 100.33
+        "s": 101.75,
+        "e": 102.01
       },
       {
         "w": "uchun",
-        "s": 100.35,
-        "e": 100.55
+        "s": 102.03,
+        "e": 102.25
       },
       {
         "w": "qoidalarni",
-        "s": 100.63,
-        "e": 101.17
+        "s": 102.33,
+        "e": 102.87
       },
       {
         "w": "linter",
-        "s": 101.27,
-        "e": 101.59
+        "s": 102.95,
+        "e": 103.29
       },
       {
         "w": "tekshirishi",
-        "s": 101.65,
-        "e": 102.11
+        "s": 103.35,
+        "e": 103.81
       },
       {
         "w": "kerak.",
-        "s": 102.15,
-        "e": 102.41
+        "s": 103.83,
+        "e": 104.09
       }
     ]
   },
@@ -1175,83 +1175,83 @@
     "text": "Steiger bilan tekshiramiz. Bu safar sukut bo‘yicha o‘chiq ikki qoidani ham yoqdik: import-locality va no-wildcard-exports.",
     "show": "Steiger bilan tekshiramiz. Bu safar sukut bo‘yicha o‘chiq ikki qoidani ham yoqdik: import-locality va no-wildcard-exports.",
     "say": "Stayger bilan tekshiramiz. Bu safar sukut bo‘yicha o‘chiq ikki qoidani ham yoqdik: import-lokaliti va nou-vaildkard-eksports.",
-    "a0": 103.11,
-    "a1": 110.63,
+    "a0": 104.81,
+    "a1": 112.33,
     "words": [
       {
         "w": "Stayger",
-        "s": 103.11,
-        "e": 103.49
+        "s": 104.81,
+        "e": 105.17
       },
       {
         "w": "bilan",
-        "s": 103.53,
-        "e": 103.71
+        "s": 105.21,
+        "e": 105.41
       },
       {
         "w": "tekshiramiz.",
-        "s": 103.75,
-        "e": 104.27
+        "s": 105.45,
+        "e": 105.95
       },
       {
         "w": "Bu",
-        "s": 104.73,
-        "e": 104.79
+        "s": 106.41,
+        "e": 106.47
       },
       {
         "w": "safar",
-        "s": 104.85,
-        "e": 105.13
+        "s": 106.53,
+        "e": 106.83
       },
       {
         "w": "sukut",
-        "s": 105.23,
-        "e": 105.53
+        "s": 106.93,
+        "e": 107.21
       },
       {
         "w": "bo‘yicha",
-        "s": 105.59,
-        "e": 105.87
+        "s": 107.29,
+        "e": 107.55
       },
       {
         "w": "o‘chiq",
-        "s": 105.95,
-        "e": 106.17
+        "s": 107.63,
+        "e": 107.87
       },
       {
         "w": "ikki",
-        "s": 106.33,
-        "e": 106.51
+        "s": 108.01,
+        "e": 108.19
       },
       {
         "w": "qoidani",
-        "s": 106.57,
-        "e": 106.93
+        "s": 108.27,
+        "e": 108.63
       },
       {
         "w": "ham",
-        "s": 106.97,
-        "e": 107.11
+        "s": 108.67,
+        "e": 108.81
       },
       {
         "w": "yoqdik:",
-        "s": 107.17,
-        "e": 107.49
+        "s": 108.85,
+        "e": 109.19
       },
       {
         "w": "import-lokaliti",
-        "s": 107.93,
-        "e": 108.79
+        "s": 109.61,
+        "e": 110.49
       },
       {
         "w": "va",
-        "s": 109.15,
-        "e": 109.23
+        "s": 110.85,
+        "e": 110.91
       },
       {
         "w": "nou-vaildkard-eksports.",
-        "s": 109.35,
-        "e": 110.63
+        "s": 111.03,
+        "e": 112.33
       }
     ]
   },
@@ -1261,73 +1261,73 @@
     "text": "Entities qatlamidagi order features’dan tip import qildi. Tip ham bog‘liqlik — bu xato.",
     "show": "Entities qatlamidagi order features’dan tip import qildi. Tip ham bog‘liqlik — bu xato.",
     "say": "Entitiz qatlamidagi order fichers’dan tip import qildi. Tip ham bog‘liqlik — bu xato.",
-    "a0": 111.41,
-    "a1": 116.6,
+    "a0": 113.12,
+    "a1": 118.28,
     "words": [
       {
         "w": "Entitiz",
-        "s": 111.41,
-        "e": 111.81
+        "s": 113.12,
+        "e": 113.5
       },
       {
         "w": "qatlamidagi",
-        "s": 111.85,
-        "e": 112.41
+        "s": 113.54,
+        "e": 114.12
       },
       {
         "w": "order",
-        "s": 112.58,
-        "e": 112.88
+        "s": 114.28,
+        "e": 114.56
       },
       {
         "w": "fichers’dan",
-        "s": 112.92,
-        "e": 113.44
+        "s": 114.62,
+        "e": 115.14
       },
       {
         "w": "tip",
-        "s": 113.62,
-        "e": 113.8
+        "s": 115.3,
+        "e": 115.5
       },
       {
         "w": "import",
-        "s": 113.92,
-        "e": 114.2
+        "s": 115.62,
+        "e": 115.88
       },
       {
         "w": "qildi.",
-        "s": 114.24,
-        "e": 114.48
+        "s": 115.94,
+        "e": 116.16
       },
       {
         "w": "Tip",
-        "s": 114.9,
-        "e": 115.08
+        "s": 116.6,
+        "e": 116.78
       },
       {
         "w": "ham",
-        "s": 115.12,
-        "e": 115.26
+        "s": 116.82,
+        "e": 116.96
       },
       {
         "w": "bog‘liqlik",
-        "s": 115.32,
-        "e": 115.8
+        "s": 117.0,
+        "e": 117.48
       },
       {
         "w": "—",
-        "s": 115.8,
-        "e": 115.8
+        "s": 117.48,
+        "e": 117.48
       },
       {
         "w": "bu",
-        "s": 116.18,
-        "e": 116.24
+        "s": 117.86,
+        "e": 117.94
       },
       {
         "w": "xato.",
-        "s": 116.34,
-        "e": 116.6
+        "s": 118.02,
+        "e": 118.28
       }
     ]
   },
@@ -1337,63 +1337,63 @@
     "text": "Katalog sahifasi ProductCard’ni ichki fayldan oldi — public API chetlab o‘tildi.",
     "show": "Katalog sahifasi ProductCard’ni ichki fayldan oldi — public API chetlab o‘tildi.",
     "say": "Katalog sahifasi Prodakt-kard’ni ichki fayldan oldi — pablik ey-pi-ay chetlab o‘tildi.",
-    "a0": 117.26,
-    "a1": 122.14,
+    "a0": 118.94,
+    "a1": 123.82,
     "words": [
       {
         "w": "Katalog",
-        "s": 117.26,
-        "e": 117.66
+        "s": 118.94,
+        "e": 119.36
       },
       {
         "w": "sahifasi",
-        "s": 117.7,
-        "e": 118.24
+        "s": 119.4,
+        "e": 119.92
       },
       {
         "w": "Prodakt-kard’ni",
-        "s": 118.32,
-        "e": 119.16
+        "s": 120.02,
+        "e": 120.84
       },
       {
         "w": "ichki",
-        "s": 119.34,
-        "e": 119.6
+        "s": 121.02,
+        "e": 121.26
       },
       {
         "w": "fayldan",
-        "s": 119.64,
-        "e": 120.0
+        "s": 121.3,
+        "e": 121.68
       },
       {
         "w": "oldi",
-        "s": 120.08,
-        "e": 120.26
+        "s": 121.76,
+        "e": 121.94
       },
       {
         "w": "—",
-        "s": 120.26,
-        "e": 120.26
+        "s": 121.94,
+        "e": 121.94
       },
       {
         "w": "pablik",
-        "s": 120.64,
-        "e": 120.98
+        "s": 122.32,
+        "e": 122.68
       },
       {
         "w": "ey-pi-ay",
-        "s": 121.08,
-        "e": 121.4
+        "s": 122.78,
+        "e": 123.1
       },
       {
         "w": "chetlab",
-        "s": 121.46,
-        "e": 121.8
+        "s": 123.14,
+        "e": 123.48
       },
       {
         "w": "o‘tildi.",
-        "s": 121.84,
-        "e": 122.14
+        "s": 123.52,
+        "e": 123.82
       }
     ]
   },
@@ -1403,83 +1403,83 @@
     "text": "Add-to-cart slice ichida o‘z public API’sidan import qildi. Steiger bu importni nisbiy qilishni talab qiladi.",
     "show": "Add-to-cart slice ichida o‘z public API’sidan import qildi. Steiger bu importni nisbiy qilishni talab qiladi.",
     "say": "Ed-tu-kart slays ichida o‘z pablik ey-pi-aysidan import qildi. Stayger bu importni nisbiy qilishni talab qiladi.",
-    "a0": 122.74,
-    "a1": 129.19,
+    "a0": 124.44,
+    "a1": 130.87,
     "words": [
       {
         "w": "Ed-tu-kart",
-        "s": 122.74,
-        "e": 123.3
+        "s": 124.44,
+        "e": 125.0
       },
       {
         "w": "slays",
-        "s": 123.32,
-        "e": 123.66
+        "s": 125.02,
+        "e": 125.36
       },
       {
         "w": "ichida",
-        "s": 123.72,
-        "e": 124.04
+        "s": 125.42,
+        "e": 125.72
       },
       {
         "w": "o‘z",
-        "s": 124.26,
-        "e": 124.4
-      },
-      {
-        "w": "pablik",
-        "s": 124.5,
-        "e": 124.86
-      },
-      {
-        "w": "ey-pi-aysidan",
-        "s": 124.92,
-        "e": 125.5
-      },
-      {
-        "w": "import",
-        "s": 125.56,
-        "e": 125.82
-      },
-      {
-        "w": "qildi.",
-        "s": 125.86,
+        "s": 125.96,
         "e": 126.1
       },
       {
+        "w": "pablik",
+        "s": 126.18,
+        "e": 126.54
+      },
+      {
+        "w": "ey-pi-aysidan",
+        "s": 126.62,
+        "e": 127.2
+      },
+      {
+        "w": "import",
+        "s": 127.26,
+        "e": 127.51
+      },
+      {
+        "w": "qildi.",
+        "s": 127.57,
+        "e": 127.81
+      },
+      {
         "w": "Stayger",
-        "s": 126.76,
-        "e": 127.18
-      },
-      {
-        "w": "bu",
-        "s": 127.24,
-        "e": 127.32
-      },
-      {
-        "w": "importni",
-        "s": 127.44,
-        "e": 127.87
-      },
-      {
-        "w": "nisbiy",
-        "s": 127.93,
-        "e": 128.23
-      },
-      {
-        "w": "qilishni",
-        "s": 128.31,
-        "e": 128.61
-      },
-      {
-        "w": "talab",
-        "s": 128.65,
+        "s": 128.47,
         "e": 128.87
       },
       {
+        "w": "bu",
+        "s": 128.95,
+        "e": 129.01
+      },
+      {
+        "w": "importni",
+        "s": 129.15,
+        "e": 129.55
+      },
+      {
+        "w": "nisbiy",
+        "s": 129.61,
+        "e": 129.93
+      },
+      {
+        "w": "qilishni",
+        "s": 130.01,
+        "e": 130.31
+      },
+      {
+        "w": "talab",
+        "s": 130.33,
+        "e": 130.57
+      },
+      {
         "w": "qiladi.",
-        "s": 128.91,
-        "e": 129.19
+        "s": 130.59,
+        "e": 130.87
       }
     ]
   },
@@ -1489,63 +1489,63 @@
     "text": "Ikkala export yulduzcha uchun ham xabar chiqdi: aniq nomlangan eksport afzal.",
     "show": "Ikkala export yulduzcha uchun ham xabar chiqdi: aniq nomlangan eksport afzal.",
     "say": "Ikkala eksport yulduzcha uchun ham xabar chiqdi: aniq nomlangan eksport afzal.",
-    "a0": 130.27,
-    "a1": 135.05,
+    "a0": 131.95,
+    "a1": 136.75,
     "words": [
       {
         "w": "Ikkala",
-        "s": 130.27,
-        "e": 130.55
-      },
-      {
-        "w": "eksport",
-        "s": 130.63,
-        "e": 130.99
-      },
-      {
-        "w": "yulduzcha",
-        "s": 131.05,
-        "e": 131.47
-      },
-      {
-        "w": "uchun",
-        "s": 131.53,
-        "e": 131.71
-      },
-      {
-        "w": "ham",
-        "s": 131.77,
-        "e": 131.89
-      },
-      {
-        "w": "xabar",
         "s": 131.95,
         "e": 132.23
       },
       {
+        "w": "eksport",
+        "s": 132.33,
+        "e": 132.69
+      },
+      {
+        "w": "yulduzcha",
+        "s": 132.75,
+        "e": 133.17
+      },
+      {
+        "w": "uchun",
+        "s": 133.23,
+        "e": 133.41
+      },
+      {
+        "w": "ham",
+        "s": 133.45,
+        "e": 133.59
+      },
+      {
+        "w": "xabar",
+        "s": 133.65,
+        "e": 133.91
+      },
+      {
         "w": "chiqdi:",
-        "s": 132.27,
-        "e": 132.51
+        "s": 133.97,
+        "e": 134.19
       },
       {
         "w": "aniq",
-        "s": 133.13,
-        "e": 133.47
+        "s": 134.81,
+        "e": 135.15
       },
       {
         "w": "nomlangan",
-        "s": 133.55,
-        "e": 134.11
+        "s": 135.23,
+        "e": 135.81
       },
       {
         "w": "eksport",
-        "s": 134.25,
-        "e": 134.65
+        "s": 135.93,
+        "e": 136.33
       },
       {
         "w": "afzal.",
-        "s": 134.71,
-        "e": 135.05
+        "s": 136.39,
+        "e": 136.75
       }
     ]
   },
@@ -1555,48 +1555,48 @@
     "text": "Tuzatilgan loyihada esa Steiger hech qanday muammo topmaydi.",
     "show": "Tuzatilgan loyihada esa Steiger hech qanday muammo topmaydi.",
     "say": "Tuzatilgan loyihada esa Stayger hech qanday muammo topmaydi.",
-    "a0": 136.15,
-    "a1": 139.91,
+    "a0": 137.83,
+    "a1": 141.61,
     "words": [
       {
         "w": "Tuzatilgan",
-        "s": 136.15,
-        "e": 136.71
+        "s": 137.83,
+        "e": 138.39
       },
       {
         "w": "loyihada",
-        "s": 136.75,
-        "e": 137.17
+        "s": 138.45,
+        "e": 138.87
       },
       {
         "w": "esa",
-        "s": 137.27,
-        "e": 137.43
+        "s": 138.95,
+        "e": 139.13
       },
       {
         "w": "Stayger",
-        "s": 137.79,
-        "e": 138.17
+        "s": 139.47,
+        "e": 139.85
       },
       {
         "w": "hech",
-        "s": 138.27,
-        "e": 138.57
+        "s": 139.97,
+        "e": 140.27
       },
       {
         "w": "qanday",
-        "s": 138.63,
-        "e": 138.95
+        "s": 140.33,
+        "e": 140.65
       },
       {
         "w": "muammo",
-        "s": 139.01,
-        "e": 139.33
+        "s": 140.69,
+        "e": 141.01
       },
       {
         "w": "topmaydi.",
-        "s": 139.45,
-        "e": 139.91
+        "s": 141.13,
+        "e": 141.61
       }
     ]
   },
@@ -1606,103 +1606,103 @@
     "text": "Xulosa qilsak: import faqat pastga, slice’ga kirish faqat public API orqali, slice ichida esa nisbiy yo‘l. Bularni linter tekshiradi.",
     "show": "Xulosa qilsak: import faqat pastga, slice’ga kirish faqat public API orqali, slice ichida esa nisbiy yo‘l. Bularni linter tekshiradi.",
     "say": "Xulosa qilsak: import faqat pastga, slaysga kirish faqat pablik ey-pi-ay orqali, slays ichida esa nisbiy yo‘l. Bularni linter tekshiradi.",
-    "a0": 140.81,
-    "a1": 150.46,
+    "a0": 142.52,
+    "a1": 152.14,
     "words": [
       {
         "w": "Xulosa",
-        "s": 140.81,
-        "e": 141.15
+        "s": 142.52,
+        "e": 142.84
       },
       {
         "w": "qilsak:",
-        "s": 141.19,
-        "e": 141.61
+        "s": 142.88,
+        "e": 143.3
       },
       {
         "w": "import",
-        "s": 142.15,
-        "e": 142.49
+        "s": 143.84,
+        "e": 144.18
       },
       {
         "w": "faqat",
-        "s": 142.56,
-        "e": 142.9
+        "s": 144.26,
+        "e": 144.6
       },
       {
         "w": "pastga,",
-        "s": 142.98,
-        "e": 143.42
+        "s": 144.68,
+        "e": 145.12
       },
       {
         "w": "slaysga",
-        "s": 143.98,
-        "e": 144.4
+        "s": 145.66,
+        "e": 146.1
       },
       {
         "w": "kirish",
-        "s": 144.46,
-        "e": 144.7
+        "s": 146.16,
+        "e": 146.38
       },
       {
         "w": "faqat",
-        "s": 144.72,
-        "e": 145.0
+        "s": 146.42,
+        "e": 146.7
       },
       {
         "w": "pablik",
-        "s": 145.08,
-        "e": 145.46
+        "s": 146.78,
+        "e": 147.16
       },
       {
         "w": "ey-pi-ay",
-        "s": 145.56,
-        "e": 146.0
+        "s": 147.26,
+        "e": 147.7
       },
       {
         "w": "orqali,",
-        "s": 146.08,
-        "e": 146.44
+        "s": 147.76,
+        "e": 148.12
       },
       {
         "w": "slays",
-        "s": 146.8,
-        "e": 147.12
+        "s": 148.5,
+        "e": 148.8
       },
       {
         "w": "ichida",
-        "s": 147.22,
-        "e": 147.5
+        "s": 148.92,
+        "e": 149.2
       },
       {
         "w": "esa",
-        "s": 147.58,
-        "e": 147.74
+        "s": 149.26,
+        "e": 149.44
       },
       {
         "w": "nisbiy",
-        "s": 147.84,
-        "e": 148.18
+        "s": 149.52,
+        "e": 149.86
       },
       {
         "w": "yo‘l.",
-        "s": 148.26,
-        "e": 148.42
+        "s": 149.92,
+        "e": 150.12
       },
       {
         "w": "Bularni",
-        "s": 149.02,
-        "e": 149.42
+        "s": 150.7,
+        "e": 151.08
       },
       {
         "w": "linter",
-        "s": 149.62,
-        "e": 149.94
+        "s": 151.28,
+        "e": 151.62
       },
       {
         "w": "tekshiradi.",
-        "s": 149.96,
-        "e": 150.46
+        "s": 151.66,
+        "e": 152.14
       }
     ]
   },
@@ -1712,48 +1712,48 @@
     "text": "Keyingi bobda shared qatlamini ko‘ramiz. E’tiboringiz uchun rahmat!",
     "show": "Keyingi bobda shared qatlamini ko‘ramiz. E’tiboringiz uchun rahmat!",
     "say": "Keyingi bobda sherd qatlamini ko‘ramiz. E’tiboringiz uchun rahmat!",
-    "a0": 151.26,
-    "a1": 155.06,
+    "a0": 152.94,
+    "a1": 156.73,
     "words": [
       {
         "w": "Keyingi",
-        "s": 151.26,
-        "e": 151.55
+        "s": 152.94,
+        "e": 153.22
       },
       {
         "w": "bobda",
-        "s": 151.59,
-        "e": 151.87
+        "s": 153.26,
+        "e": 153.55
       },
       {
         "w": "sherd",
-        "s": 152.15,
-        "e": 152.43
+        "s": 153.85,
+        "e": 154.11
       },
       {
         "w": "qatlamini",
-        "s": 152.47,
-        "e": 152.93
+        "s": 154.15,
+        "e": 154.61
       },
       {
         "w": "ko‘ramiz.",
-        "s": 152.97,
-        "e": 153.33
+        "s": 154.65,
+        "e": 155.03
       },
       {
         "w": "E’tiboringiz",
-        "s": 153.93,
-        "e": 154.46
+        "s": 155.63,
+        "e": 156.15
       },
       {
         "w": "uchun",
-        "s": 154.52,
-        "e": 154.68
+        "s": 156.19,
+        "e": 156.37
       },
       {
         "w": "rahmat!",
-        "s": 154.74,
-        "e": 155.06
+        "s": 156.41,
+        "e": 156.73
       }
     ]
   }
