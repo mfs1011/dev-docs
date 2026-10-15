@@ -1,0 +1,1865 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Salom! Bu SQL qo‘llanmasining beshinchi bobi. Ushbu videoda ma’lumotlar bazasi ierarxiyasi: klaster, baza, sxema va jadvallarning o‘zaro bog‘liqligini o‘rganamiz.",
+    "show": "Salom! Bu SQL qo‘llanmasining beshinchi bobi. Ushbu videoda ma’lumotlar bazasi ierarxiyasi: klaster, baza, sxema va jadvallarning o‘zaro bog‘liqligini o‘rganamiz.",
+    "say": "Salom! Bu es-kyu-el qo‘llanmasining beshinchi bobi. Ushbu videoda ma’lumotlar bazasi ierarxiyasi: klaster, baza, sxema va jadvallarning o‘zaro bog‘liqligini o‘rganamiz.",
+    "a0": 0.22,
+    "a1": 10.51,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.22,
+        "e": 0.5
+      },
+      {
+        "w": "Bu",
+        "s": 0.86,
+        "e": 0.92
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 1.26,
+        "e": 1.72
+      },
+      {
+        "w": "qo‘llanmasining",
+        "s": 1.78,
+        "e": 2.4
+      },
+      {
+        "w": "beshinchi",
+        "s": 2.44,
+        "e": 2.84
+      },
+      {
+        "w": "bobi.",
+        "s": 2.86,
+        "e": 3.12
+      },
+      {
+        "w": "Ushbu",
+        "s": 3.78,
+        "e": 3.98
+      },
+      {
+        "w": "videoda",
+        "s": 4.04,
+        "e": 4.4
+      },
+      {
+        "w": "ma’lumotlar",
+        "s": 4.46,
+        "e": 4.92
+      },
+      {
+        "w": "bazasi",
+        "s": 4.96,
+        "e": 5.32
+      },
+      {
+        "w": "ierarxiyasi:",
+        "s": 5.4,
+        "e": 6.02
+      },
+      {
+        "w": "klaster,",
+        "s": 6.46,
+        "e": 6.94
+      },
+      {
+        "w": "baza,",
+        "s": 7.18,
+        "e": 7.51
+      },
+      {
+        "w": "sxema",
+        "s": 7.79,
+        "e": 8.11
+      },
+      {
+        "w": "va",
+        "s": 8.21,
+        "e": 8.27
+      },
+      {
+        "w": "jadvallarning",
+        "s": 8.35,
+        "e": 8.93
+      },
+      {
+        "w": "o‘zaro",
+        "s": 9.05,
+        "e": 9.39
+      },
+      {
+        "w": "bog‘liqligini",
+        "s": 9.49,
+        "e": 10.05
+      },
+      {
+        "w": "o‘rganamiz.",
+        "s": 10.09,
+        "e": 10.51
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "ierarxiya",
+    "text": "Jadval bazada alohida shunchaki turmaydi. PostgreSQL da qat’iy ierarxiya mavjud: bitta klaster serveri ichida bir nechta alohida bazalar joylashadi.",
+    "show": "Jadval bazada alohida shunchaki turmaydi. PostgreSQL da qat’iy ierarxiya mavjud: bitta klaster serveri ichida bir nechta alohida bazalar joylashadi.",
+    "say": "Jadval bazada alohida shunchaki turmaydi. Postgres da qat’iy ierarxiya mavjud: bitta klaster serveri ichida bir nechta alohida bazalar joylashadi.",
+    "a0": 11.37,
+    "a1": 19.75,
+    "words": [
+      {
+        "w": "Jadval",
+        "s": 11.37,
+        "e": 11.69
+      },
+      {
+        "w": "bazada",
+        "s": 11.73,
+        "e": 12.09
+      },
+      {
+        "w": "alohida",
+        "s": 12.21,
+        "e": 12.57
+      },
+      {
+        "w": "shunchaki",
+        "s": 12.67,
+        "e": 13.05
+      },
+      {
+        "w": "turmaydi.",
+        "s": 13.09,
+        "e": 13.45
+      },
+      {
+        "w": "Postgres",
+        "s": 13.99,
+        "e": 14.41
+      },
+      {
+        "w": "da",
+        "s": 14.43,
+        "e": 14.49
+      },
+      {
+        "w": "qat’iy",
+        "s": 14.55,
+        "e": 14.87
+      },
+      {
+        "w": "ierarxiya",
+        "s": 15.07,
+        "e": 15.51
+      },
+      {
+        "w": "mavjud:",
+        "s": 15.55,
+        "e": 15.85
+      },
+      {
+        "w": "bitta",
+        "s": 16.35,
+        "e": 16.61
+      },
+      {
+        "w": "klaster",
+        "s": 16.65,
+        "e": 17.05
+      },
+      {
+        "w": "serveri",
+        "s": 17.07,
+        "e": 17.41
+      },
+      {
+        "w": "ichida",
+        "s": 17.45,
+        "e": 17.63
+      },
+      {
+        "w": "bir",
+        "s": 17.99,
+        "e": 18.09
+      },
+      {
+        "w": "nechta",
+        "s": 18.15,
+        "e": 18.39
+      },
+      {
+        "w": "alohida",
+        "s": 18.47,
+        "e": 18.83
+      },
+      {
+        "w": "bazalar",
+        "s": 18.91,
+        "e": 19.31
+      },
+      {
+        "w": "joylashadi.",
+        "s": 19.35,
+        "e": 19.75
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "ierarxiya",
+    "text": "PostgreSQL ning eng muhim qoidasi: bitta ulanish faqat bitta bazaga kira oladi. Bitta ulanishda boshqa bazadagi jadvallarni to‘g‘ridan-to‘g‘ri o‘qib bo‘lmaydi.",
+    "show": "PostgreSQL ning eng muhim qoidasi: bitta ulanish faqat bitta bazaga kira oladi. Bitta ulanishda boshqa bazadagi jadvallarni to‘g‘ridan-to‘g‘ri o‘qib bo‘lmaydi.",
+    "say": "Postgres ning eng muhim qoidasi: bitta ulanish faqat bitta bazaga kira oladi. Bitta ulanishda boshqa bazadagi jadvallarni to‘g‘ridan-to‘g‘ri o‘qib bo‘lmaydi.",
+    "a0": 20.37,
+    "a1": 29.36,
+    "words": [
+      {
+        "w": "Postgres",
+        "s": 20.37,
+        "e": 20.79
+      },
+      {
+        "w": "ning",
+        "s": 20.83,
+        "e": 20.97
+      },
+      {
+        "w": "eng",
+        "s": 21.13,
+        "e": 21.29
+      },
+      {
+        "w": "muhim",
+        "s": 21.35,
+        "e": 21.59
+      },
+      {
+        "w": "qoidasi:",
+        "s": 21.65,
+        "e": 22.07
+      },
+      {
+        "w": "bitta",
+        "s": 22.58,
+        "e": 22.82
+      },
+      {
+        "w": "ulanish",
+        "s": 22.9,
+        "e": 23.24
+      },
+      {
+        "w": "faqat",
+        "s": 23.44,
+        "e": 23.72
+      },
+      {
+        "w": "bitta",
+        "s": 23.9,
+        "e": 24.2
+      },
+      {
+        "w": "bazaga",
+        "s": 24.24,
+        "e": 24.54
+      },
+      {
+        "w": "kira",
+        "s": 24.58,
+        "e": 24.72
+      },
+      {
+        "w": "oladi.",
+        "s": 24.76,
+        "e": 24.98
+      },
+      {
+        "w": "Bitta",
+        "s": 25.54,
+        "e": 25.76
+      },
+      {
+        "w": "ulanishda",
+        "s": 25.8,
+        "e": 26.14
+      },
+      {
+        "w": "boshqa",
+        "s": 26.24,
+        "e": 26.52
+      },
+      {
+        "w": "bazadagi",
+        "s": 26.6,
+        "e": 27.02
+      },
+      {
+        "w": "jadvallarni",
+        "s": 27.06,
+        "e": 27.58
+      },
+      {
+        "w": "to‘g‘ridan-to‘g‘ri",
+        "s": 27.86,
+        "e": 28.68
+      },
+      {
+        "w": "o‘qib",
+        "s": 28.72,
+        "e": 28.9
+      },
+      {
+        "w": "bo‘lmaydi.",
+        "s": 28.94,
+        "e": 29.36
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "ierarxiya",
+    "text": "Shuning uchun, bir-biriga aloqasi bo‘lmagan loyihalar alohida bazalarga, bir-biri bilan ma’lumot almashadigan tizimlar esa bitta bazadagi alohida sxemalarga ajratiladi.",
+    "show": "Shuning uchun, bir-biriga aloqasi bo‘lmagan loyihalar alohida bazalarga, bir-biri bilan ma’lumot almashadigan tizimlar esa bitta bazadagi alohida sxemalarga ajratiladi.",
+    "say": "Shuning uchun, bir-biriga aloqasi bo‘lmagan loyihalar alohida bazalarga, bir-biri bilan ma’lumot almashadigan tizimlar esa bitta bazadagi alohida sxemalarga ajratiladi.",
+    "a0": 30.26,
+    "a1": 39.21,
+    "words": [
+      {
+        "w": "Shuning",
+        "s": 30.26,
+        "e": 30.46
+      },
+      {
+        "w": "uchun,",
+        "s": 30.48,
+        "e": 30.66
+      },
+      {
+        "w": "bir-biriga",
+        "s": 31.08,
+        "e": 31.42
+      },
+      {
+        "w": "aloqasi",
+        "s": 31.48,
+        "e": 31.82
+      },
+      {
+        "w": "bo‘lmagan",
+        "s": 31.86,
+        "e": 32.26
+      },
+      {
+        "w": "loyihalar",
+        "s": 32.3,
+        "e": 32.74
+      },
+      {
+        "w": "alohida",
+        "s": 32.86,
+        "e": 33.2
+      },
+      {
+        "w": "bazalarga,",
+        "s": 33.28,
+        "e": 33.76
+      },
+      {
+        "w": "bir-biri",
+        "s": 34.2,
+        "e": 34.48
+      },
+      {
+        "w": "bilan",
+        "s": 34.5,
+        "e": 34.68
+      },
+      {
+        "w": "ma’lumot",
+        "s": 34.74,
+        "e": 35.08
+      },
+      {
+        "w": "almashadigan",
+        "s": 35.12,
+        "e": 35.6
+      },
+      {
+        "w": "tizimlar",
+        "s": 35.62,
+        "e": 35.96
+      },
+      {
+        "w": "esa",
+        "s": 36.0,
+        "e": 36.14
+      },
+      {
+        "w": "bitta",
+        "s": 36.54,
+        "e": 36.8
+      },
+      {
+        "w": "bazadagi",
+        "s": 36.86,
+        "e": 37.28
+      },
+      {
+        "w": "alohida",
+        "s": 37.42,
+        "e": 37.83
+      },
+      {
+        "w": "sxemalarga",
+        "s": 37.91,
+        "e": 38.49
+      },
+      {
+        "w": "ajratiladi.",
+        "s": 38.73,
+        "e": 39.21
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "shablonlar",
+    "text": "Yangi baza yaratilganda, PostgreSQL uni noldan qurmaydi, balki shablon bazadan nusxa oladi. Sukut bo‘yicha nusxa template1 dan olinadi.",
+    "show": "Yangi baza yaratilganda, PostgreSQL uni noldan qurmaydi, balki shablon bazadan nusxa oladi. Sukut bo‘yicha nusxa template1 dan olinadi.",
+    "say": "Yangi baza yaratilganda, Postgres uni noldan qurmaydi, balki shablon bazadan nusxa oladi. Sukut bo‘yicha nusxa templeyt bir dan olinadi.",
+    "a0": 40.23,
+    "a1": 48.23,
+    "words": [
+      {
+        "w": "Yangi",
+        "s": 40.23,
+        "e": 40.51
+      },
+      {
+        "w": "baza",
+        "s": 40.57,
+        "e": 40.83
+      },
+      {
+        "w": "yaratilganda,",
+        "s": 40.87,
+        "e": 41.41
+      },
+      {
+        "w": "Postgres",
+        "s": 41.49,
+        "e": 41.91
+      },
+      {
+        "w": "uni",
+        "s": 41.97,
+        "e": 42.11
+      },
+      {
+        "w": "noldan",
+        "s": 42.21,
+        "e": 42.59
+      },
+      {
+        "w": "qurmaydi,",
+        "s": 42.65,
+        "e": 43.05
+      },
+      {
+        "w": "balki",
+        "s": 43.41,
+        "e": 43.67
+      },
+      {
+        "w": "shablon",
+        "s": 43.93,
+        "e": 44.35
+      },
+      {
+        "w": "bazadan",
+        "s": 44.45,
+        "e": 44.85
+      },
+      {
+        "w": "nusxa",
+        "s": 44.87,
+        "e": 45.09
+      },
+      {
+        "w": "oladi.",
+        "s": 45.13,
+        "e": 45.35
+      },
+      {
+        "w": "Sukut",
+        "s": 45.95,
+        "e": 46.19
+      },
+      {
+        "w": "bo‘yicha",
+        "s": 46.23,
+        "e": 46.47
+      },
+      {
+        "w": "nusxa",
+        "s": 46.53,
+        "e": 46.81
+      },
+      {
+        "w": "templeyt",
+        "s": 47.01,
+        "e": 47.43
+      },
+      {
+        "w": "bir",
+        "s": 47.51,
+        "e": 47.63
+      },
+      {
+        "w": "dan",
+        "s": 47.69,
+        "e": 47.83
+      },
+      {
+        "w": "olinadi.",
+        "s": 47.91,
+        "e": 48.23
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "shablonlar",
+    "text": "Agar template1 ga biror jadval qo‘shib qo‘ysangiz, u keyin yaratiladigan har bir yangi bazada avtomatik paydo bo‘ladi!",
+    "show": "Agar template1 ga biror jadval qo‘shib qo‘ysangiz, u keyin yaratiladigan har bir yangi bazada avtomatik paydo bo‘ladi!",
+    "say": "Agar templeyt bir ga biror jadval qo‘shib qo‘ysangiz, u keyin yaratiladigan har bir yangi bazada avtomatik paydo bo‘ladi!",
+    "a0": 48.95,
+    "a1": 55.56,
+    "words": [
+      {
+        "w": "Agar",
+        "s": 48.95,
+        "e": 49.17
+      },
+      {
+        "w": "templeyt",
+        "s": 49.43,
+        "e": 49.81
+      },
+      {
+        "w": "bir",
+        "s": 49.85,
+        "e": 49.95
+      },
+      {
+        "w": "ga",
+        "s": 50.01,
+        "e": 50.09
+      },
+      {
+        "w": "biror",
+        "s": 50.17,
+        "e": 50.39
+      },
+      {
+        "w": "jadval",
+        "s": 50.45,
+        "e": 50.77
+      },
+      {
+        "w": "qo‘shib",
+        "s": 50.81,
+        "e": 51.03
+      },
+      {
+        "w": "qo‘ysangiz,",
+        "s": 51.05,
+        "e": 51.51
+      },
+      {
+        "w": "u",
+        "s": 51.87,
+        "e": 51.89
+      },
+      {
+        "w": "keyin",
+        "s": 52.05,
+        "e": 52.35
+      },
+      {
+        "w": "yaratiladigan",
+        "s": 52.41,
+        "e": 52.96
+      },
+      {
+        "w": "har",
+        "s": 53.06,
+        "e": 53.26
+      },
+      {
+        "w": "bir",
+        "s": 53.32,
+        "e": 53.44
+      },
+      {
+        "w": "yangi",
+        "s": 53.5,
+        "e": 53.76
+      },
+      {
+        "w": "bazada",
+        "s": 53.8,
+        "e": 54.14
+      },
+      {
+        "w": "avtomatik",
+        "s": 54.44,
+        "e": 54.98
+      },
+      {
+        "w": "paydo",
+        "s": 55.02,
+        "e": 55.24
+      },
+      {
+        "w": "bo‘ladi!",
+        "s": 55.3,
+        "e": 55.56
+      }
+    ]
+  },
+  {
+    "id": "L7",
+    "scene": "shablonlar",
+    "text": "template0 esa PostgreSQL ning mutlaqo toza boshlang‘ich holati bo‘lib, unga yangi ulanishlar taqiqlangan va u hech qachon o‘zgartirilmasligi kerak.",
+    "show": "template0 esa PostgreSQL ning mutlaqo toza boshlang‘ich holati bo‘lib, unga yangi ulanishlar taqiqlangan va u hech qachon o‘zgartirilmasligi kerak.",
+    "say": "Templeyt nol esa Postgres ning mutlaqo toza boshlang‘ich holati bo‘lib, unga yangi ulanishlar taqiqlangan va u hech qachon o‘zgartirilmasligi kerak.",
+    "a0": 56.5,
+    "a1": 65.16,
+    "words": [
+      {
+        "w": "Templeyt",
+        "s": 56.5,
+        "e": 56.92
+      },
+      {
+        "w": "nol",
+        "s": 57.0,
+        "e": 57.18
+      },
+      {
+        "w": "esa",
+        "s": 57.24,
+        "e": 57.4
+      },
+      {
+        "w": "Postgres",
+        "s": 57.78,
+        "e": 58.2
+      },
+      {
+        "w": "ning",
+        "s": 58.24,
+        "e": 58.36
+      },
+      {
+        "w": "mutlaqo",
+        "s": 58.42,
+        "e": 58.82
+      },
+      {
+        "w": "toza",
+        "s": 58.98,
+        "e": 59.3
+      },
+      {
+        "w": "boshlang‘ich",
+        "s": 59.42,
+        "e": 59.96
+      },
+      {
+        "w": "holati",
+        "s": 60.02,
+        "e": 60.36
+      },
+      {
+        "w": "bo‘lib,",
+        "s": 60.38,
+        "e": 60.58
+      },
+      {
+        "w": "unga",
+        "s": 60.9,
+        "e": 61.1
+      },
+      {
+        "w": "yangi",
+        "s": 61.22,
+        "e": 61.52
+      },
+      {
+        "w": "ulanishlar",
+        "s": 61.58,
+        "e": 62.02
+      },
+      {
+        "w": "taqiqlangan",
+        "s": 62.06,
+        "e": 62.72
+      },
+      {
+        "w": "va",
+        "s": 62.8,
+        "e": 62.88
+      },
+      {
+        "w": "u",
+        "s": 63.04,
+        "e": 63.06
+      },
+      {
+        "w": "hech",
+        "s": 63.38,
+        "e": 63.6
+      },
+      {
+        "w": "qachon",
+        "s": 63.62,
+        "e": 63.9
+      },
+      {
+        "w": "o‘zgartirilmasligi",
+        "s": 64.06,
+        "e": 64.88
+      },
+      {
+        "w": "kerak.",
+        "s": 64.92,
+        "e": 65.16
+      }
+    ]
+  },
+  {
+    "id": "L8",
+    "scene": "shablonlar",
+    "text": "Diqqat: bazadan nusxa olinayotgan paytda, unga boshqa hech kim ulanmagan bo‘lishi shart.",
+    "show": "Diqqat: bazadan nusxa olinayotgan paytda, unga boshqa hech kim ulanmagan bo‘lishi shart.",
+    "say": "Diqqat: bazadan nusxa olinayotgan paytda, unga boshqa hech kim ulanmagan bo‘lishi shart.",
+    "a0": 66.14,
+    "a1": 70.93,
+    "words": [
+      {
+        "w": "Diqqat:",
+        "s": 66.14,
+        "e": 66.44
+      },
+      {
+        "w": "bazadan",
+        "s": 66.8,
+        "e": 67.16
+      },
+      {
+        "w": "nusxa",
+        "s": 67.2,
+        "e": 67.42
+      },
+      {
+        "w": "olinayotgan",
+        "s": 67.48,
+        "e": 67.91
+      },
+      {
+        "w": "paytda,",
+        "s": 67.93,
+        "e": 68.21
+      },
+      {
+        "w": "unga",
+        "s": 68.55,
+        "e": 68.73
+      },
+      {
+        "w": "boshqa",
+        "s": 68.85,
+        "e": 69.17
+      },
+      {
+        "w": "hech",
+        "s": 69.25,
+        "e": 69.49
+      },
+      {
+        "w": "kim",
+        "s": 69.55,
+        "e": 69.69
+      },
+      {
+        "w": "ulanmagan",
+        "s": 69.79,
+        "e": 70.31
+      },
+      {
+        "w": "bo‘lishi",
+        "s": 70.37,
+        "e": 70.65
+      },
+      {
+        "w": "shart.",
+        "s": 70.69,
+        "e": 70.93
+      }
+    ]
+  },
+  {
+    "id": "L9",
+    "scene": "sxemalar",
+    "text": "Sxema — bu ma’lumotlar bazasi ichidagi nomlar fazosi, ya’ni operatsion tizimdagi papkaga o‘xshash mantiqiy guruhdir.",
+    "show": "Sxema — bu ma’lumotlar bazasi ichidagi nomlar fazosi, ya’ni operatsion tizimdagi papkaga o‘xshash mantiqiy guruhdir.",
+    "say": "Sxema — bu ma’lumotlar bazasi ichidagi nomlar fazosi, ya’ni operatsion tizimdagi papkaga o‘xshash mantiqiy guruhdir.",
+    "a0": 72.09,
+    "a1": 78.85,
+    "words": [
+      {
+        "w": "Sxema",
+        "s": 72.09,
+        "e": 72.45
+      },
+      {
+        "w": "—",
+        "s": 72.45,
+        "e": 72.45
+      },
+      {
+        "w": "bu",
+        "s": 72.61,
+        "e": 72.69
+      },
+      {
+        "w": "ma’lumotlar",
+        "s": 73.05,
+        "e": 73.51
+      },
+      {
+        "w": "bazasi",
+        "s": 73.57,
+        "e": 73.89
+      },
+      {
+        "w": "ichidagi",
+        "s": 73.91,
+        "e": 74.23
+      },
+      {
+        "w": "nomlar",
+        "s": 74.31,
+        "e": 74.63
+      },
+      {
+        "w": "fazosi,",
+        "s": 74.69,
+        "e": 75.15
+      },
+      {
+        "w": "ya’ni",
+        "s": 75.51,
+        "e": 75.71
+      },
+      {
+        "w": "operatsion",
+        "s": 76.03,
+        "e": 76.49
+      },
+      {
+        "w": "tizimdagi",
+        "s": 76.51,
+        "e": 76.91
+      },
+      {
+        "w": "papkaga",
+        "s": 77.01,
+        "e": 77.39
+      },
+      {
+        "w": "o‘xshash",
+        "s": 77.43,
+        "e": 77.75
+      },
+      {
+        "w": "mantiqiy",
+        "s": 77.91,
+        "e": 78.39
+      },
+      {
+        "w": "guruhdir.",
+        "s": 78.47,
+        "e": 78.85
+      }
+    ]
+  },
+  {
+    "id": "L10",
+    "scene": "sxemalar",
+    "text": "Faqat bitta farqi: sxema ichida ichki sxema ochib bo‘lmaydi.",
+    "show": "Faqat bitta farqi: sxema ichida ichki sxema ochib bo‘lmaydi.",
+    "say": "Faqat bitta farqi: sxema ichida ichki sxema ochib bo‘lmaydi.",
+    "a0": 79.45,
+    "a1": 82.86,
+    "words": [
+      {
+        "w": "Faqat",
+        "s": 79.45,
+        "e": 79.73
+      },
+      {
+        "w": "bitta",
+        "s": 79.91,
+        "e": 80.13
+      },
+      {
+        "w": "farqi:",
+        "s": 80.17,
+        "e": 80.43
+      },
+      {
+        "w": "sxema",
+        "s": 80.83,
+        "e": 81.11
+      },
+      {
+        "w": "ichida",
+        "s": 81.15,
+        "e": 81.37
+      },
+      {
+        "w": "ichki",
+        "s": 81.69,
+        "e": 81.91
+      },
+      {
+        "w": "sxema",
+        "s": 81.95,
+        "e": 82.21
+      },
+      {
+        "w": "ochib",
+        "s": 82.27,
+        "e": 82.47
+      },
+      {
+        "w": "bo‘lmaydi.",
+        "s": 82.49,
+        "e": 82.86
+      }
+    ]
+  },
+  {
+    "id": "L11",
+    "scene": "sxemalar",
+    "text": "Bitta sxemada jadval va indeks bir xil nomga ega bo‘lolmaydi. Ammo turli sxemalarda bir xil nomlarni bemalol ishlatish mumkin: masalan, ombor nuqta mahsulot va savdo nuqta mahsulot.",
+    "show": "Bitta sxemada jadval va indeks bir xil nomga ega bo‘lolmaydi. Ammo turli sxemalarda bir xil nomlarni bemalol ishlatish mumkin: masalan, ombor nuqta mahsulot va savdo nuqta mahsulot.",
+    "say": "Bitta sxemada jadval va indeks bir xil nomga ega bo‘lolmaydi. Ammo turli sxemalarda bir xil nomlarni bemalol ishlatish mumkin: masalan, ombor nuqta mahsulot va savdo nuqta mahsulot.",
+    "a0": 83.66,
+    "a1": 94.28,
+    "words": [
+      {
+        "w": "Bitta",
+        "s": 83.66,
+        "e": 83.92
+      },
+      {
+        "w": "sxemada",
+        "s": 83.98,
+        "e": 84.36
+      },
+      {
+        "w": "jadval",
+        "s": 84.46,
+        "e": 84.86
+      },
+      {
+        "w": "va",
+        "s": 84.92,
+        "e": 84.98
+      },
+      {
+        "w": "indeks",
+        "s": 85.14,
+        "e": 85.48
+      },
+      {
+        "w": "bir",
+        "s": 85.78,
+        "e": 85.9
+      },
+      {
+        "w": "xil",
+        "s": 85.94,
+        "e": 86.08
+      },
+      {
+        "w": "nomga",
+        "s": 86.14,
+        "e": 86.4
+      },
+      {
+        "w": "ega",
+        "s": 86.46,
+        "e": 86.6
+      },
+      {
+        "w": "bo‘lolmaydi.",
+        "s": 86.66,
+        "e": 87.18
+      },
+      {
+        "w": "Ammo",
+        "s": 87.52,
+        "e": 87.7
+      },
+      {
+        "w": "turli",
+        "s": 87.88,
+        "e": 88.14
+      },
+      {
+        "w": "sxemalarda",
+        "s": 88.22,
+        "e": 88.72
+      },
+      {
+        "w": "bir",
+        "s": 88.78,
+        "e": 88.86
+      },
+      {
+        "w": "xil",
+        "s": 88.9,
+        "e": 89.02
+      },
+      {
+        "w": "nomlarni",
+        "s": 89.06,
+        "e": 89.44
+      },
+      {
+        "w": "bemalol",
+        "s": 89.56,
+        "e": 89.98
+      },
+      {
+        "w": "ishlatish",
+        "s": 90.1,
+        "e": 90.4
+      },
+      {
+        "w": "mumkin:",
+        "s": 90.44,
+        "e": 90.68
+      },
+      {
+        "w": "masalan,",
+        "s": 91.02,
+        "e": 91.32
+      },
+      {
+        "w": "ombor",
+        "s": 91.68,
+        "e": 92.0
+      },
+      {
+        "w": "nuqta",
+        "s": 92.04,
+        "e": 92.24
+      },
+      {
+        "w": "mahsulot",
+        "s": 92.28,
+        "e": 92.7
+      },
+      {
+        "w": "va",
+        "s": 92.76,
+        "e": 92.82
+      },
+      {
+        "w": "savdo",
+        "s": 93.2,
+        "e": 93.52
+      },
+      {
+        "w": "nuqta",
+        "s": 93.6,
+        "e": 93.82
+      },
+      {
+        "w": "mahsulot.",
+        "s": 93.86,
+        "e": 94.28
+      }
+    ]
+  },
+  {
+    "id": "L12",
+    "scene": "sxemalar",
+    "text": "Sxemalar qat’iy ajratilmagan: foydalanuvchi huquqi bo‘lsa, bitta so‘rovda turli sxemalardagi jadvallarni birlashtirib o‘qiy oladi.",
+    "show": "Sxemalar qat’iy ajratilmagan: foydalanuvchi huquqi bo‘lsa, bitta so‘rovda turli sxemalardagi jadvallarni birlashtirib o‘qiy oladi.",
+    "say": "Sxemalar qat’iy ajratilmagan: foydalanuvchi huquqi bo‘lsa, bitta so‘rovda turli sxemalardagi jadvallarni birlashtirib o‘qiy oladi.",
+    "a0": 95.16,
+    "a1": 101.65,
+    "words": [
+      {
+        "w": "Sxemalar",
+        "s": 95.16,
+        "e": 95.6
+      },
+      {
+        "w": "qat’iy",
+        "s": 95.66,
+        "e": 95.98
+      },
+      {
+        "w": "ajratilmagan:",
+        "s": 96.1,
+        "e": 96.76
+      },
+      {
+        "w": "foydalanuvchi",
+        "s": 97.1,
+        "e": 97.61
+      },
+      {
+        "w": "huquqi",
+        "s": 97.65,
+        "e": 97.91
+      },
+      {
+        "w": "bo‘lsa,",
+        "s": 97.95,
+        "e": 98.19
+      },
+      {
+        "w": "bitta",
+        "s": 98.31,
+        "e": 98.55
+      },
+      {
+        "w": "so‘rovda",
+        "s": 98.59,
+        "e": 98.93
+      },
+      {
+        "w": "turli",
+        "s": 99.21,
+        "e": 99.49
+      },
+      {
+        "w": "sxemalardagi",
+        "s": 99.57,
+        "e": 100.09
+      },
+      {
+        "w": "jadvallarni",
+        "s": 100.11,
+        "e": 100.59
+      },
+      {
+        "w": "birlashtirib",
+        "s": 100.65,
+        "e": 101.13
+      },
+      {
+        "w": "o‘qiy",
+        "s": 101.19,
+        "e": 101.37
+      },
+      {
+        "w": "oladi.",
+        "s": 101.43,
+        "e": 101.65
+      }
+    ]
+  },
+  {
+    "id": "L13",
+    "scene": "search_path",
+    "text": "Har safar sxema nomini to‘liq yozmaslik uchun PostgreSQL da qidiruv yo‘li, ya’ni search_path parametri mavjud.",
+    "show": "Har safar sxema nomini to‘liq yozmaslik uchun PostgreSQL da qidiruv yo‘li, ya’ni search_path parametri mavjud.",
+    "say": "Har safar sxema nomini to‘liq yozmaslik uchun Postgres da qidiruv yo‘li, ya’ni sörch pas parametri mavjud.",
+    "a0": 102.77,
+    "a1": 108.77,
+    "words": [
+      {
+        "w": "Har",
+        "s": 102.77,
+        "e": 102.89
+      },
+      {
+        "w": "safar",
+        "s": 102.93,
+        "e": 103.19
+      },
+      {
+        "w": "sxema",
+        "s": 103.27,
+        "e": 103.57
+      },
+      {
+        "w": "nomini",
+        "s": 103.61,
+        "e": 103.87
+      },
+      {
+        "w": "to‘liq",
+        "s": 103.95,
+        "e": 104.25
+      },
+      {
+        "w": "yozmaslik",
+        "s": 104.27,
+        "e": 104.75
+      },
+      {
+        "w": "uchun",
+        "s": 104.77,
+        "e": 104.95
+      },
+      {
+        "w": "Postgres",
+        "s": 105.25,
+        "e": 105.65
+      },
+      {
+        "w": "da",
+        "s": 105.69,
+        "e": 105.75
+      },
+      {
+        "w": "qidiruv",
+        "s": 105.85,
+        "e": 106.17
+      },
+      {
+        "w": "yo‘li,",
+        "s": 106.23,
+        "e": 106.45
+      },
+      {
+        "w": "ya’ni",
+        "s": 106.65,
+        "e": 106.87
+      },
+      {
+        "w": "sörch",
+        "s": 107.25,
+        "e": 107.53
+      },
+      {
+        "w": "pas",
+        "s": 107.63,
+        "e": 107.85
+      },
+      {
+        "w": "parametri",
+        "s": 107.97,
+        "e": 108.47
+      },
+      {
+        "w": "mavjud.",
+        "s": 108.49,
+        "e": 108.77
+      }
+    ]
+  },
+  {
+    "id": "L14",
+    "scene": "search_path",
+    "text": "Agar jadval nomi prefikssiz yozilsa, tizim uni search_path da ko‘rsatilgan sxemalar bo‘yicha ketma-ket qidiradi va birinchi topilganini oladi.",
+    "show": "Agar jadval nomi prefikssiz yozilsa, tizim uni search_path da ko‘rsatilgan sxemalar bo‘yicha ketma-ket qidiradi va birinchi topilganini oladi.",
+    "say": "Agar jadval nomi prefikssiz yozilsa, tizim uni sörch pas da ko‘rsatilgan sxemalar bo‘yicha ketma-ket qidiradi va birinchi topilganini oladi.",
+    "a0": 109.45,
+    "a1": 116.9,
+    "words": [
+      {
+        "w": "Agar",
+        "s": 109.45,
+        "e": 109.69
+      },
+      {
+        "w": "jadval",
+        "s": 109.83,
+        "e": 110.15
+      },
+      {
+        "w": "nomi",
+        "s": 110.17,
+        "e": 110.35
+      },
+      {
+        "w": "prefikssiz",
+        "s": 110.41,
+        "e": 110.91
+      },
+      {
+        "w": "yozilsa,",
+        "s": 110.93,
+        "e": 111.29
+      },
+      {
+        "w": "tizim",
+        "s": 111.59,
+        "e": 111.83
+      },
+      {
+        "w": "uni",
+        "s": 111.91,
+        "e": 112.05
+      },
+      {
+        "w": "sörch",
+        "s": 112.27,
+        "e": 112.49
+      },
+      {
+        "w": "pas",
+        "s": 112.58,
+        "e": 112.76
+      },
+      {
+        "w": "da",
+        "s": 112.78,
+        "e": 112.86
+      },
+      {
+        "w": "ko‘rsatilgan",
+        "s": 112.9,
+        "e": 113.4
+      },
+      {
+        "w": "sxemalar",
+        "s": 113.46,
+        "e": 113.84
+      },
+      {
+        "w": "bo‘yicha",
+        "s": 113.88,
+        "e": 114.14
+      },
+      {
+        "w": "ketma-ket",
+        "s": 114.2,
+        "e": 114.68
+      },
+      {
+        "w": "qidiradi",
+        "s": 114.74,
+        "e": 115.1
+      },
+      {
+        "w": "va",
+        "s": 115.42,
+        "e": 115.5
+      },
+      {
+        "w": "birinchi",
+        "s": 115.82,
+        "e": 116.12
+      },
+      {
+        "w": "topilganini",
+        "s": 116.14,
+        "e": 116.62
+      },
+      {
+        "w": "oladi.",
+        "s": 116.68,
+        "e": 116.9
+      }
+    ]
+  },
+  {
+    "id": "L15",
+    "scene": "search_path",
+    "text": "Har bir yangi bazada public degan umumiy sxema mavjud bo‘ladi. Ammo bu yerda jiddiy xavfsizlik masalasi bor!",
+    "show": "Har bir yangi bazada public degan umumiy sxema mavjud bo‘ladi. Ammo bu yerda jiddiy xavfsizlik masalasi bor!",
+    "say": "Har bir yangi bazada pablik degan umumiy sxema mavjud bo‘ladi. Ammo bu yerda jiddiy xavfsizlik masalasi bor!",
+    "a0": 117.52,
+    "a1": 123.94,
+    "words": [
+      {
+        "w": "Har",
+        "s": 117.52,
+        "e": 117.7
+      },
+      {
+        "w": "bir",
+        "s": 117.74,
+        "e": 117.86
+      },
+      {
+        "w": "yangi",
+        "s": 117.9,
+        "e": 118.16
+      },
+      {
+        "w": "bazada",
+        "s": 118.22,
+        "e": 118.66
+      },
+      {
+        "w": "pablik",
+        "s": 118.88,
+        "e": 119.24
+      },
+      {
+        "w": "degan",
+        "s": 119.3,
+        "e": 119.6
+      },
+      {
+        "w": "umumiy",
+        "s": 119.74,
+        "e": 120.12
+      },
+      {
+        "w": "sxema",
+        "s": 120.16,
+        "e": 120.48
+      },
+      {
+        "w": "mavjud",
+        "s": 120.54,
+        "e": 120.82
+      },
+      {
+        "w": "bo‘ladi.",
+        "s": 120.84,
+        "e": 121.16
+      },
+      {
+        "w": "Ammo",
+        "s": 121.68,
+        "e": 121.88
+      },
+      {
+        "w": "bu",
+        "s": 121.96,
+        "e": 122.04
+      },
+      {
+        "w": "yerda",
+        "s": 122.12,
+        "e": 122.36
+      },
+      {
+        "w": "jiddiy",
+        "s": 122.46,
+        "e": 122.8
+      },
+      {
+        "w": "xavfsizlik",
+        "s": 122.9,
+        "e": 123.34
+      },
+      {
+        "w": "masalasi",
+        "s": 123.38,
+        "e": 123.78
+      },
+      {
+        "w": "bor!",
+        "s": 123.8,
+        "e": 123.94
+      }
+    ]
+  },
+  {
+    "id": "L16",
+    "scene": "search_path",
+    "text": "Agar yovuz niyatli foydalanuvchi qidiruv yo‘lidagi sxemada siz ishlatadigan nom bilan zararli funksiya yaratsa, sizning so‘rovingiz uning kodini bajarib yuborishi mumkin. Shu sababli PostgreSQL 15 dan boshlab public sxemasida hamma uchun yaratish huquqi bekor qilingan.",
+    "show": "Agar yovuz niyatli foydalanuvchi qidiruv yo‘lidagi sxemada siz ishlatadigan nom bilan zararli funksiya yaratsa, sizning so‘rovingiz uning kodini bajarib yuborishi mumkin. Shu sababli PostgreSQL 15 dan boshlab public sxemasida hamma uchun yaratish huquqi bekor qilingan.",
+    "say": "Agar yovuz niyatli foydalanuvchi qidiruv yo‘lidagi sxemada siz ishlatadigan nom bilan zararli funksiya yaratsa, sizning so‘rovingiz uning kodini bajarib yuborishi mumkin. Shu sababli Postgres o‘n besh dan boshlab pablik sxemasida hamma uchun yaratish huquqi bekor qilingan.",
+    "a0": 124.78,
+    "a1": 140.01,
+    "words": [
+      {
+        "w": "Agar",
+        "s": 124.78,
+        "e": 125.02
+      },
+      {
+        "w": "yovuz",
+        "s": 125.18,
+        "e": 125.4
+      },
+      {
+        "w": "niyatli",
+        "s": 125.46,
+        "e": 125.78
+      },
+      {
+        "w": "foydalanuvchi",
+        "s": 125.84,
+        "e": 126.46
+      },
+      {
+        "w": "qidiruv",
+        "s": 126.54,
+        "e": 126.86
+      },
+      {
+        "w": "yo‘lidagi",
+        "s": 126.9,
+        "e": 127.3
+      },
+      {
+        "w": "sxemada",
+        "s": 127.36,
+        "e": 127.81
+      },
+      {
+        "w": "siz",
+        "s": 128.13,
+        "e": 128.27
+      },
+      {
+        "w": "ishlatadigan",
+        "s": 128.33,
+        "e": 128.95
+      },
+      {
+        "w": "nom",
+        "s": 129.03,
+        "e": 129.21
+      },
+      {
+        "w": "bilan",
+        "s": 129.27,
+        "e": 129.47
+      },
+      {
+        "w": "zararli",
+        "s": 129.57,
+        "e": 129.99
+      },
+      {
+        "w": "funksiya",
+        "s": 130.07,
+        "e": 130.37
+      },
+      {
+        "w": "yaratsa,",
+        "s": 130.41,
+        "e": 130.75
+      },
+      {
+        "w": "sizning",
+        "s": 131.15,
+        "e": 131.49
+      },
+      {
+        "w": "so‘rovingiz",
+        "s": 131.53,
+        "e": 132.09
+      },
+      {
+        "w": "uning",
+        "s": 132.25,
+        "e": 132.47
+      },
+      {
+        "w": "kodini",
+        "s": 132.51,
+        "e": 132.83
+      },
+      {
+        "w": "bajarib",
+        "s": 132.95,
+        "e": 133.29
+      },
+      {
+        "w": "yuborishi",
+        "s": 133.33,
+        "e": 133.69
+      },
+      {
+        "w": "mumkin.",
+        "s": 133.71,
+        "e": 133.99
+      },
+      {
+        "w": "Shu",
+        "s": 134.49,
+        "e": 134.59
+      },
+      {
+        "w": "sababli",
+        "s": 134.65,
+        "e": 135.05
+      },
+      {
+        "w": "Postgres",
+        "s": 135.17,
+        "e": 135.61
+      },
+      {
+        "w": "o‘n",
+        "s": 135.73,
+        "e": 135.81
+      },
+      {
+        "w": "besh",
+        "s": 135.87,
+        "e": 136.03
+      },
+      {
+        "w": "dan",
+        "s": 136.05,
+        "e": 136.17
+      },
+      {
+        "w": "boshlab",
+        "s": 136.21,
+        "e": 136.55
+      },
+      {
+        "w": "pablik",
+        "s": 136.85,
+        "e": 137.19
+      },
+      {
+        "w": "sxemasida",
+        "s": 137.23,
+        "e": 137.75
+      },
+      {
+        "w": "hamma",
+        "s": 137.83,
+        "e": 138.11
+      },
+      {
+        "w": "uchun",
+        "s": 138.19,
+        "e": 138.39
+      },
+      {
+        "w": "yaratish",
+        "s": 138.53,
+        "e": 138.99
+      },
+      {
+        "w": "huquqi",
+        "s": 139.03,
+        "e": 139.29
+      },
+      {
+        "w": "bekor",
+        "s": 139.35,
+        "e": 139.61
+      },
+      {
+        "w": "qilingan.",
+        "s": 139.65,
+        "e": 140.01
+      }
+    ]
+  },
+  {
+    "id": "L17",
+    "scene": "xulosa",
+    "text": "Demak, bir-biri bilan bog‘liq bo‘limlarni alohida bazalarga emas, balki bitta bazadagi alohida sxemalarga ajrating va qidiruv yo‘li xavfsizligiga e’tibor bering.",
+    "show": "Demak, bir-biri bilan bog‘liq bo‘limlarni alohida bazalarga emas, balki bitta bazadagi alohida sxemalarga ajrating va qidiruv yo‘li xavfsizligiga e’tibor bering.",
+    "say": "Demak, bir-biri bilan bog‘liq bo‘limlarni alohida bazalarga emas, balki bitta bazadagi alohida sxemalarga ajrating va qidiruv yo‘li xavfsizligiga e’tibor bering.",
+    "a0": 141.11,
+    "a1": 150.62,
+    "words": [
+      {
+        "w": "Demak,",
+        "s": 141.11,
+        "e": 141.45
+      },
+      {
+        "w": "bir-biri",
+        "s": 141.85,
+        "e": 142.17
+      },
+      {
+        "w": "bilan",
+        "s": 142.19,
+        "e": 142.39
+      },
+      {
+        "w": "bog‘liq",
+        "s": 142.45,
+        "e": 142.76
+      },
+      {
+        "w": "bo‘limlarni",
+        "s": 142.82,
+        "e": 143.36
+      },
+      {
+        "w": "alohida",
+        "s": 143.52,
+        "e": 143.94
+      },
+      {
+        "w": "bazalarga",
+        "s": 143.98,
+        "e": 144.44
+      },
+      {
+        "w": "emas,",
+        "s": 144.5,
+        "e": 144.72
+      },
+      {
+        "w": "balki",
+        "s": 145.02,
+        "e": 145.28
+      },
+      {
+        "w": "bitta",
+        "s": 145.44,
+        "e": 145.76
+      },
+      {
+        "w": "bazadagi",
+        "s": 145.84,
+        "e": 146.32
+      },
+      {
+        "w": "alohida",
+        "s": 146.48,
+        "e": 146.88
+      },
+      {
+        "w": "sxemalarga",
+        "s": 146.98,
+        "e": 147.56
+      },
+      {
+        "w": "ajrating",
+        "s": 147.6,
+        "e": 147.98
+      },
+      {
+        "w": "va",
+        "s": 148.24,
+        "e": 148.32
+      },
+      {
+        "w": "qidiruv",
+        "s": 148.48,
+        "e": 148.82
+      },
+      {
+        "w": "yo‘li",
+        "s": 148.86,
+        "e": 149.06
+      },
+      {
+        "w": "xavfsizligiga",
+        "s": 149.1,
+        "e": 149.74
+      },
+      {
+        "w": "e’tibor",
+        "s": 150.02,
+        "e": 150.34
+      },
+      {
+        "w": "bering.",
+        "s": 150.38,
+        "e": 150.62
+      }
+    ]
+  },
+  {
+    "id": "L18",
+    "scene": "xulosa",
+    "text": "Keyingi videoda bu ierarxiya va buyruqlarni PostgreSQL 18 psql terminalida jonli sinab ko‘ramiz.",
+    "show": "Keyingi videoda bu ierarxiya va buyruqlarni PostgreSQL 18 psql terminalida jonli sinab ko‘ramiz.",
+    "say": "Keyingi videoda bu ierarxiya va buyruqlarni Postgres o‘n sakkiz psql terminalida jonli sinab ko‘ramiz.",
+    "a0": 151.22,
+    "a1": 157.58,
+    "words": [
+      {
+        "w": "Keyingi",
+        "s": 151.22,
+        "e": 151.5
+      },
+      {
+        "w": "videoda",
+        "s": 151.54,
+        "e": 151.92
+      },
+      {
+        "w": "bu",
+        "s": 152.03,
+        "e": 152.11
+      },
+      {
+        "w": "ierarxiya",
+        "s": 152.27,
+        "e": 152.83
+      },
+      {
+        "w": "va",
+        "s": 152.91,
+        "e": 152.99
+      },
+      {
+        "w": "buyruqlarni",
+        "s": 153.11,
+        "e": 153.71
+      },
+      {
+        "w": "Postgres",
+        "s": 154.01,
+        "e": 154.45
+      },
+      {
+        "w": "o‘n",
+        "s": 154.55,
+        "e": 154.63
+      },
+      {
+        "w": "sakkiz",
+        "s": 154.67,
+        "e": 155.07
+      },
+      {
+        "w": "psql",
+        "s": 155.23,
+        "e": 155.69
+      },
+      {
+        "w": "terminalida",
+        "s": 155.75,
+        "e": 156.34
+      },
+      {
+        "w": "jonli",
+        "s": 156.58,
+        "e": 156.92
+      },
+      {
+        "w": "sinab",
+        "s": 156.98,
+        "e": 157.2
+      },
+      {
+        "w": "ko‘ramiz.",
+        "s": 157.22,
+        "e": 157.58
+      }
+    ]
+  }
+]

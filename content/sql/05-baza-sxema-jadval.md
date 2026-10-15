@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/sql/05-1-tushuncha.jpg" src="/video/sql/05-1-tushuncha.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/sql/05-1-tushuncha.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/sql/05-1-tushuncha.uz.vtt">
+</video>
+<figcaption>Video: Baza, sxema va jadval ierarxiyasi — klaster tuzilmasi, bitta ulanish bitta baza qoidasi, template1 va template0 shablonlari, search_path va xavfsizlik.</figcaption>
+</figure>
+
 Jadval bazada "shunchaki" turmaydi. U obyektlar ierarxiyasining bir qismi. PostgreSQL hujjati to'liq ierarxiyani shunday beradi:
 
 ```text
@@ -115,6 +123,14 @@ Hujjat standart bilan farqlarni ham aytadi:
 Hujjatning xulosasi: maksimal ko'chiriluvchanlik uchun sxemalarni umuman ishlatmaslik kerak. Bu MySQL va SQLite'ga to'g'ridan-to'g'ri tegishli, quyida ko'ramiz.
 
 ## Kod
+
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/sql/05-2-kod.jpg" src="/video/sql/05-2-kod.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/sql/05-2-kod.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/sql/05-2-kod.uz.vtt">
+</video>
+<figcaption>Video: PostgreSQL 18 psql da jonli sinovlar — pg_database, CREATE DATABASE va tranzaksiya taqiqi, cross-database xatosi, ombor va savdo sxemalari, search_path o'zgarishi va CASCADE tozalash.</figcaption>
+</figure>
 
 Misollar PostgreSQL 18.6, MySQL 9.7.2 va SQLite 3.54.0 da ishga tushirilgan.
 
@@ -313,6 +329,14 @@ DROP SCHEMA ombor CASCADE;    -- ichidagi hamma obyekt bilan birga
 `CASCADE` ning qanday ishlashi (bog'liqliklarni kuzatish) 16-bobda ko'riladi.
 
 ## Dialektlar
+
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/sql/05-3-dialektlar.jpg" src="/video/sql/05-3-dialektlar.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/sql/05-3-dialektlar.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/sql/05-3-dialektlar.uz.vtt">
+</video>
+<figcaption>Video: Dialektlar taqqoslash doskasi (PostgreSQL vs MySQL 9 vs SQLite 3), MySQL da baza=sxema va erkin JOIN, SQLite ATTACH va fayllar, hamda 6 ta tipik xato.</figcaption>
+</figure>
 
 ### MySQL: baza = sxema
 

@@ -7,6 +7,7 @@ Namunalar:
 - `sql-02/` (2-bob uchun 3 ta video: `q1-tushuncha`, `q2-kod`, `q3-dialekt` + `natijalar/` + `sql-kit.js`)
 - `sql-03/` (3-bob uchun 3 ta video: `q1-tushuncha`, `q2-kod`, `q3-dialekt` + `natijalar/` + `sql-kit.js`)
 - `sql-04/` (4-bob uchun 3 ta video: `q1-tushuncha`, `q2-kod`, `q3-dialekt` + `natijalar/` + `sql-kit.js`)
+- `sql-05/` (5-bob uchun 3 ta video: `q1-tushuncha`, `q2-kod`, `q3-dialekt` + `natijalar/` + `sql-kit.js`)
 
 Har bob uchun odatda uchta video tayyorlanadi:
 1. `q1-tushuncha` — "Tushuncha" bo'limi: nazariya va arxitektura "daftar" animatsiyasi

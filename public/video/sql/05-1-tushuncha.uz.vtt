@@ -1,0 +1,90 @@
+WEBVTT
+
+1
+00:01.420 --> 00:12.160
+Salom! Bu SQL qo‘llanmasining beshinchi bobi. Ushbu videoda ma’lumotlar bazasi
+ierarxiyasi: klaster, baza, sxema va jadvallarning o‘zaro bog‘liqligini o‘rganamiz.
+
+2
+00:14.970 --> 00:23.800
+Jadval bazada alohida shunchaki turmaydi. PostgreSQL da qat’iy ierarxiya
+mavjud: bitta klaster serveri ichida bir nechta alohida bazalar joylashadi.
+
+3
+00:23.970 --> 00:33.410
+PostgreSQL ning eng muhim qoidasi: bitta ulanish faqat bitta bazaga kira oladi.
+Bitta ulanishda boshqa bazadagi jadvallarni to‘g‘ridan-to‘g‘ri o‘qib bo‘lmaydi.
+
+4
+00:33.860 --> 00:43.260
+Shuning uchun, bir-biriga aloqasi bo‘lmagan loyihalar alohida bazalarga, bir-biri
+bilan ma’lumot almashadigan tizimlar esa bitta bazadagi alohida sxemalarga ajratiladi.
+
+5
+00:46.430 --> 00:54.880
+Yangi baza yaratilganda, PostgreSQL uni noldan qurmaydi, balki shablon
+bazadan nusxa oladi. Sukut bo‘yicha nusxa template1 dan olinadi.
+
+6
+00:55.150 --> 01:02.210
+Agar template1 ga biror jadval qo‘shib qo‘ysangiz, u keyin
+yaratiladigan har bir yangi bazada avtomatik paydo bo‘ladi!
+
+7
+01:02.700 --> 01:11.810
+template0 esa PostgreSQL ning mutlaqo toza boshlang‘ich holati bo‘lib, unga
+yangi ulanishlar taqiqlangan va u hech qachon o‘zgartirilmasligi kerak.
+
+8
+01:12.340 --> 01:17.580
+Diqqat: bazadan nusxa olinayotgan paytda, unga
+boshqa hech kim ulanmagan bo‘lishi shart.
+
+9
+01:20.890 --> 01:28.100
+Sxema — bu ma’lumotlar bazasi ichidagi nomlar fazosi, ya’ni
+operatsion tizimdagi papkaga o‘xshash mantiqiy guruhdir.
+
+10
+01:28.250 --> 01:32.110
+Faqat bitta farqi: sxema ichida ichki sxema ochib bo‘lmaydi.
+
+11
+01:32.460 --> 01:43.530
+Bitta sxemada jadval va indeks bir xil nomga ega bo‘lolmaydi. Ammo turli sxemalarda bir xil
+nomlarni bemalol ishlatish mumkin: masalan, ombor nuqta mahsulot va savdo nuqta mahsulot.
+
+12
+01:43.960 --> 01:50.900
+Sxemalar qat’iy ajratilmagan: foydalanuvchi huquqi bo‘lsa, bitta
+so‘rovda turli sxemalardagi jadvallarni birlashtirib o‘qiy oladi.
+
+13
+01:54.170 --> 02:00.620
+Har safar sxema nomini to‘liq yozmaslik uchun PostgreSQL
+da qidiruv yo‘li, ya’ni search_path parametri mavjud.
+
+14
+02:00.850 --> 02:08.750
+Agar jadval nomi prefikssiz yozilsa, tizim uni search_path da ko‘rsatilgan
+sxemalar bo‘yicha ketma-ket qidiradi va birinchi topilganini oladi.
+
+15
+02:08.920 --> 02:15.790
+Har bir yangi bazada public degan umumiy sxema mavjud
+bo‘ladi. Ammo bu yerda jiddiy xavfsizlik masalasi bor!
+
+16
+02:16.180 --> 02:31.860
+Agar yovuz niyatli foydalanuvchi qidiruv yo‘lidagi sxemada siz ishlatadigan nom bilan zararli funksiya yaratsa, sizning so‘rovingiz uning
+kodini bajarib yuborishi mumkin. Shu sababli PostgreSQL 15 dan boshlab public sxemasida hamma uchun yaratish huquqi bekor qilingan.
+
+17
+02:35.110 --> 02:45.070
+Demak, bir-biri bilan bog‘liq bo‘limlarni alohida bazalarga emas, balki bitta
+bazadagi alohida sxemalarga ajrating va qidiruv yo‘li xavfsizligiga e’tibor bering.
+
+18
+02:45.220 --> 02:52.030
+Keyingi videoda bu ierarxiya va buyruqlarni
+PostgreSQL 18 psql terminalida jonli sinab ko‘ramiz.

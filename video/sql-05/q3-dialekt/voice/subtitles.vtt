@@ -1,0 +1,100 @@
+WEBVTT
+
+1
+00:01.420 --> 00:11.720
+Salom! Beshinchi bobning uchinchi qismida PostgreSQL, MySQL va SQLite tizimlarida baza va
+sxema tushunchalarining keskin farqlarini, hamda oltita xavfli xatoni ko‘rib chiqamiz.
+
+2
+00:14.850 --> 00:22.820
+MySQL da sxema va baza bu aynan bir narsadir. Tizimda CREATE
+SCHEMA buyrug‘i CREATE DATABASE ning oddiy sinonimi hisoblanadi.
+
+3
+00:23.050 --> 00:30.930
+MySQL ierarxiyasida PostgreSQL dagi alohida baza qatlami yo‘q: server
+ichida bazalar, ularning ichida esa bevosita jadvallar joylashadi.
+
+4
+00:31.380 --> 00:38.110
+Eng muhim qulaylik: MySQL da bitta ulanish orqali istalgan
+bazadagi jadvallarni bir-biri bilan bemalol JOIN qilish mumkin!
+
+5
+00:38.320 --> 00:48.020
+Shuningdek, MySQL da search_path yo‘q: qisqa nomlar bilan ishlash uchun USE baza buyrug‘i
+bilan joriy baza tanlanishi shart, aks holda No database selected xatosi chiqadi.
+
+6
+00:51.150 --> 00:59.730
+SQLite da esa ma’lumotlar bazasi diskdagi alohida bitta fayldir. Bu yerda
+sxema tushunchasi faylni ulash, ya’ni ATTACH orqali amalga oshiriladi.
+
+7
+01:00.060 --> 01:06.410
+Bitta ulanishga bir nechta faylni ATTACH qilib, ularni alohida
+sxemalar sifatida ishlatish va bitta so‘rovda birlashtirish mumkin.
+
+8
+01:06.620 --> 01:11.770
+SQLite da har doim main nomli asosiy fayl va
+temp nomli vaqtinchalik xotira mavjud bo‘ladi.
+
+9
+01:14.740 --> 01:24.220
+Uchala tizimni solishtirsak: PostgreSQL da to‘liq to‘rt bosqichli ierarxiya, MySQL
+da baza va sxema tengligi, SQLite da esa fayllarni ulash arxitekturasi qo‘llangan.
+
+10
+01:24.550 --> 01:31.260
+PostgreSQL da bitta ulanish bitta bazaga cheklangan bo‘lsa, MySQL
+va SQLite da ulanish ichida boshqa bazalarga murojaat qilish ochiq.
+
+11
+01:31.660 --> 01:40.110
+Yangi baza yaratishda ham farq katta: PostgreSQL template1 dan nusxa
+oladi, MySQL diskda yangi papka ochadi, SQLite esa yangi fayl yaratadi.
+
+12
+01:42.180 --> 01:45.890
+Endi amaliyotdagi eng ko‘p uchraydigan
+oltita tipik xatoni ko‘rib chiqamiz.
+
+13
+01:47.180 --> 01:55.940
+Birinchi xato: PostgreSQL da har modul uchun alohida baza ochib, keyin ular orasida
+JOIN qilmoqchi bo‘lish. Bog‘liq qismlarni bitta bazada, alohida sxemalarga ajrating.
+
+14
+01:56.050 --> 02:03.100
+Ikkinchi xato: template1 shabloniga sinov jadvalini qo‘shib
+qo‘yish. Bu jadval keyingi barcha yangi bazalarga o‘tib ketadi.
+
+15
+02:03.450 --> 02:10.930
+Uchinchi xato: zaxira nusxani template1 dan yaratilgan bazaga
+tiklash. Toza tiklash uchun template0 dan foydalaning.
+
+16
+02:11.380 --> 02:18.370
+To‘rtinchi xato: search_path ga boshqalar yoza oladigan
+sxemalarni qo‘shish. Bu xavfli kod ijrosiga olib kelishi mumkin.
+
+17
+02:18.800 --> 02:25.560
+Beshinchi xato: o‘z jadvallaringizni pi-ji prefiksi bilan
+nomlash. Tizim jadvallari bilan to‘qnashuv kelib chiqadi.
+
+18
+02:26.070 --> 02:30.540
+Oltinchi xato: MySQL da USE qilmasdan qisqa nom ishlatish.
+
+19
+02:33.450 --> 02:38.230
+Shu bilan baza, sxema va jadval
+ierarxiyasini to‘liq o‘rganib chiqdik.
+
+20
+02:38.220 --> 02:43.930
+Keyingi oltinchi bobda SQL dagi barcha raqamli
+ma’lumot turlarini batafsil tahlil qilamiz.
