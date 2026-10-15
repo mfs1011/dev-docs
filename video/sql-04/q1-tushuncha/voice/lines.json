@@ -1,0 +1,1948 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Salom! Bu SQL qo‘llanmasining to‘rtinchi bobi. Ushbu videoda SQL sintaksisi, tokenlar, identifikatorlar va literallarning qat’iy qoidalarini ko‘rib chiqamiz.",
+    "show": "Salom! Bu SQL qo‘llanmasining to‘rtinchi bobi. Ushbu videoda SQL sintaksisi, tokenlar, identifikatorlar va literallarning qat’iy qoidalarini ko‘rib chiqamiz.",
+    "say": "Salom! Bu es-kyu-el qo‘llanmasining to‘rtinchi bobi. Ushbu videoda es-kyu-el sintaksisi, tokenlar, identifikatorlar va literallarning qat’iy qoidalarini ko‘rib chiqamiz.",
+    "a0": 0.2,
+    "a1": 10.83,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.2,
+        "e": 0.5
+      },
+      {
+        "w": "Bu",
+        "s": 0.94,
+        "e": 1.02
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 1.24,
+        "e": 1.64
+      },
+      {
+        "w": "qo‘llanmasining",
+        "s": 1.7,
+        "e": 2.38
+      },
+      {
+        "w": "to‘rtinchi",
+        "s": 2.44,
+        "e": 2.88
+      },
+      {
+        "w": "bobi.",
+        "s": 2.9,
+        "e": 3.12
+      },
+      {
+        "w": "Ushbu",
+        "s": 3.72,
+        "e": 3.94
+      },
+      {
+        "w": "videoda",
+        "s": 4.02,
+        "e": 4.42
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 4.84,
+        "e": 5.24
+      },
+      {
+        "w": "sintaksisi,",
+        "s": 5.34,
+        "e": 5.92
+      },
+      {
+        "w": "tokenlar,",
+        "s": 6.28,
+        "e": 6.86
+      },
+      {
+        "w": "identifikatorlar",
+        "s": 7.14,
+        "e": 8.07
+      },
+      {
+        "w": "va",
+        "s": 8.35,
+        "e": 8.41
+      },
+      {
+        "w": "literallarning",
+        "s": 8.51,
+        "e": 9.25
+      },
+      {
+        "w": "qat’iy",
+        "s": 9.31,
+        "e": 9.61
+      },
+      {
+        "w": "qoidalarini",
+        "s": 9.69,
+        "e": 10.21
+      },
+      {
+        "w": "ko‘rib",
+        "s": 10.25,
+        "e": 10.47
+      },
+      {
+        "w": "chiqamiz.",
+        "s": 10.49,
+        "e": 10.83
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "tokenlar",
+    "text": "SQL matni buyruqlar ketma-ketligidan iborat bo‘lib, har bir buyruq nuqtali vergul bilan tugaydi.",
+    "show": "SQL matni buyruqlar ketma-ketligidan iborat bo‘lib, har bir buyruq nuqtali vergul bilan tugaydi.",
+    "say": "Es-kyu-el matni buyruqlar ketma-ketligidan iborat bo‘lib, har bir buyruq nuqtali vergul bilan tugaydi.",
+    "a0": 11.71,
+    "a1": 17.43,
+    "words": [
+      {
+        "w": "Es-kyu-el",
+        "s": 11.71,
+        "e": 12.11
+      },
+      {
+        "w": "matni",
+        "s": 12.17,
+        "e": 12.47
+      },
+      {
+        "w": "buyruqlar",
+        "s": 12.81,
+        "e": 13.25
+      },
+      {
+        "w": "ketma-ketligidan",
+        "s": 13.29,
+        "e": 14.03
+      },
+      {
+        "w": "iborat",
+        "s": 14.13,
+        "e": 14.45
+      },
+      {
+        "w": "bo‘lib,",
+        "s": 14.51,
+        "e": 14.75
+      },
+      {
+        "w": "har",
+        "s": 15.07,
+        "e": 15.27
+      },
+      {
+        "w": "bir",
+        "s": 15.31,
+        "e": 15.43
+      },
+      {
+        "w": "buyruq",
+        "s": 15.47,
+        "e": 15.81
+      },
+      {
+        "w": "nuqtali",
+        "s": 16.07,
+        "e": 16.47
+      },
+      {
+        "w": "vergul",
+        "s": 16.55,
+        "e": 16.85
+      },
+      {
+        "w": "bilan",
+        "s": 16.89,
+        "e": 17.07
+      },
+      {
+        "w": "tugaydi.",
+        "s": 17.11,
+        "e": 17.43
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "tokenlar",
+    "text": "Har bir buyruq tokenlardan tuziladi: kalit so‘zlar, identifikatorlar, literallar va maxsus belgilar. Ular bo‘sh joy yoki yangi qator bilan ajratiladi.",
+    "show": "Har bir buyruq tokenlardan tuziladi: kalit so‘zlar, identifikatorlar, literallar va maxsus belgilar. Ular bo‘sh joy yoki yangi qator bilan ajratiladi.",
+    "say": "Har bir buyruq tokenlardan tuziladi: kalit so‘zlar, identifikatorlar, literallar va maxsus belgilar. Ular bo‘sh joy yoki yangi qator bilan ajratiladi.",
+    "a0": 18.21,
+    "a1": 27.96,
+    "words": [
+      {
+        "w": "Har",
+        "s": 18.21,
+        "e": 18.35
+      },
+      {
+        "w": "bir",
+        "s": 18.41,
+        "e": 18.51
+      },
+      {
+        "w": "buyruq",
+        "s": 18.55,
+        "e": 18.85
+      },
+      {
+        "w": "tokenlardan",
+        "s": 18.93,
+        "e": 19.53
+      },
+      {
+        "w": "tuziladi:",
+        "s": 19.57,
+        "e": 19.97
+      },
+      {
+        "w": "kalit",
+        "s": 20.33,
+        "e": 20.59
+      },
+      {
+        "w": "so‘zlar,",
+        "s": 20.63,
+        "e": 21.03
+      },
+      {
+        "w": "identifikatorlar,",
+        "s": 21.27,
+        "e": 22.19
+      },
+      {
+        "w": "literallar",
+        "s": 22.47,
+        "e": 23.04
+      },
+      {
+        "w": "va",
+        "s": 23.1,
+        "e": 23.16
+      },
+      {
+        "w": "maxsus",
+        "s": 23.28,
+        "e": 23.66
+      },
+      {
+        "w": "belgilar.",
+        "s": 23.72,
+        "e": 24.12
+      },
+      {
+        "w": "Ular",
+        "s": 24.96,
+        "e": 25.2
+      },
+      {
+        "w": "bo‘sh",
+        "s": 25.3,
+        "e": 25.54
+      },
+      {
+        "w": "joy",
+        "s": 25.58,
+        "e": 25.82
+      },
+      {
+        "w": "yoki",
+        "s": 26.12,
+        "e": 26.36
+      },
+      {
+        "w": "yangi",
+        "s": 26.46,
+        "e": 26.74
+      },
+      {
+        "w": "qator",
+        "s": 26.8,
+        "e": 27.1
+      },
+      {
+        "w": "bilan",
+        "s": 27.14,
+        "e": 27.34
+      },
+      {
+        "w": "ajratiladi.",
+        "s": 27.44,
+        "e": 27.96
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "tokenlar",
+    "text": "Muhim qoida: izohlar token hisoblanmaydi, ular SQL tahlilchisi uchun oddiy bo‘sh joyga teng.",
+    "show": "Muhim qoida: izohlar token hisoblanmaydi, ular SQL tahlilchisi uchun oddiy bo‘sh joyga teng.",
+    "say": "Muhim qoida: izohlar token hisoblanmaydi, ular es-kyu-el tahlilchisi uchun oddiy bo‘sh joyga teng.",
+    "a0": 28.86,
+    "a1": 34.34,
+    "words": [
+      {
+        "w": "Muhim",
+        "s": 28.86,
+        "e": 29.08
+      },
+      {
+        "w": "qoida:",
+        "s": 29.14,
+        "e": 29.42
+      },
+      {
+        "w": "izohlar",
+        "s": 29.84,
+        "e": 30.24
+      },
+      {
+        "w": "token",
+        "s": 30.3,
+        "e": 30.58
+      },
+      {
+        "w": "hisoblanmaydi,",
+        "s": 30.62,
+        "e": 31.26
+      },
+      {
+        "w": "ular",
+        "s": 31.64,
+        "e": 31.82
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 31.96,
+        "e": 32.32
+      },
+      {
+        "w": "tahlilchisi",
+        "s": 32.36,
+        "e": 32.88
+      },
+      {
+        "w": "uchun",
+        "s": 32.96,
+        "e": 33.14
+      },
+      {
+        "w": "oddiy",
+        "s": 33.32,
+        "e": 33.54
+      },
+      {
+        "w": "bo‘sh",
+        "s": 33.66,
+        "e": 33.86
+      },
+      {
+        "w": "joyga",
+        "s": 33.88,
+        "e": 34.14
+      },
+      {
+        "w": "teng.",
+        "s": 34.18,
+        "e": 34.34
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "identifikator",
+    "text": "Kalit so‘z — bu tilda maxsus qat’iy ma’noga ega bo‘lgan so‘z, masalan SELECT, UPDATE yoki VALUES.",
+    "show": "Kalit so‘z — bu tilda maxsus qat’iy ma’noga ega bo‘lgan so‘z, masalan SELECT, UPDATE yoki VALUES.",
+    "say": "Kalit so‘z — bu tilda maxsus qat’iy ma’noga ega bo‘lgan so‘z, masalan se-lekt, ap-deyt yoki valyus.",
+    "a0": 35.3,
+    "a1": 41.55,
+    "words": [
+      {
+        "w": "Kalit",
+        "s": 35.3,
+        "e": 35.56
+      },
+      {
+        "w": "so‘z",
+        "s": 35.6,
+        "e": 35.82
+      },
+      {
+        "w": "—",
+        "s": 35.82,
+        "e": 35.82
+      },
+      {
+        "w": "bu",
+        "s": 36.0,
+        "e": 36.08
+      },
+      {
+        "w": "tilda",
+        "s": 36.18,
+        "e": 36.42
+      },
+      {
+        "w": "maxsus",
+        "s": 36.5,
+        "e": 36.84
+      },
+      {
+        "w": "qat’iy",
+        "s": 36.92,
+        "e": 37.22
+      },
+      {
+        "w": "ma’noga",
+        "s": 37.3,
+        "e": 37.67
+      },
+      {
+        "w": "ega",
+        "s": 37.73,
+        "e": 37.89
+      },
+      {
+        "w": "bo‘lgan",
+        "s": 37.93,
+        "e": 38.23
+      },
+      {
+        "w": "so‘z,",
+        "s": 38.27,
+        "e": 38.47
+      },
+      {
+        "w": "masalan",
+        "s": 38.81,
+        "e": 39.19
+      },
+      {
+        "w": "se-lekt,",
+        "s": 39.43,
+        "e": 39.91
+      },
+      {
+        "w": "ap-deyt",
+        "s": 40.25,
+        "e": 40.67
+      },
+      {
+        "w": "yoki",
+        "s": 40.69,
+        "e": 41.07
+      },
+      {
+        "w": "valyus.",
+        "s": 41.17,
+        "e": 41.55
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "identifikator",
+    "text": "Identifikator esa jadval, ustun yoki boshqa obyektning nomidir, masalan mahsulot yoki narx.",
+    "show": "Identifikator esa jadval, ustun yoki boshqa obyektning nomidir, masalan mahsulot yoki narx.",
+    "say": "Identifikator esa jadval, ustun yoki boshqa obyektning nomidir, masalan mahsulot yoki narx.",
+    "a0": 42.43,
+    "a1": 48.67,
+    "words": [
+      {
+        "w": "Identifikator",
+        "s": 42.43,
+        "e": 43.11
+      },
+      {
+        "w": "esa",
+        "s": 43.15,
+        "e": 43.31
+      },
+      {
+        "w": "jadval,",
+        "s": 43.67,
+        "e": 44.15
+      },
+      {
+        "w": "ustun",
+        "s": 44.39,
+        "e": 44.77
+      },
+      {
+        "w": "yoki",
+        "s": 44.77,
+        "e": 45.03
+      },
+      {
+        "w": "boshqa",
+        "s": 45.11,
+        "e": 45.41
+      },
+      {
+        "w": "obyektning",
+        "s": 45.47,
+        "e": 45.93
+      },
+      {
+        "w": "nomidir,",
+        "s": 46.01,
+        "e": 46.39
+      },
+      {
+        "w": "masalan",
+        "s": 46.77,
+        "e": 47.13
+      },
+      {
+        "w": "mahsulot",
+        "s": 47.27,
+        "e": 47.87
+      },
+      {
+        "w": "yoki",
+        "s": 47.91,
+        "e": 48.21
+      },
+      {
+        "w": "narx.",
+        "s": 48.43,
+        "e": 48.67
+      }
+    ]
+  },
+  {
+    "id": "L7",
+    "scene": "identifikator",
+    "text": "SQL standartida qo‘shtirnoqsiz nomlar katta harfga o‘giriladi. Ammo PostgreSQL bu qoidani buzib, barcha nomlarni kichik harfga aylantiradi.",
+    "show": "SQL standartida qo‘shtirnoqsiz nomlar katta harfga o‘giriladi. Ammo PostgreSQL bu qoidani buzib, barcha nomlarni kichik harfga aylantiradi.",
+    "say": "Es-kyu-el standartida qo‘shtirnoqsiz nomlar katta harfga o‘giriladi. Ammo Postgres bu qoidani buzib, barcha nomlarni kichik harfga aylantiradi.",
+    "a0": 49.61,
+    "a1": 56.96,
+    "words": [
+      {
+        "w": "Es-kyu-el",
+        "s": 49.61,
+        "e": 49.99
+      },
+      {
+        "w": "standartida",
+        "s": 50.03,
+        "e": 50.61
+      },
+      {
+        "w": "qo‘shtirnoqsiz",
+        "s": 50.69,
+        "e": 51.31
+      },
+      {
+        "w": "nomlar",
+        "s": 51.35,
+        "e": 51.65
+      },
+      {
+        "w": "katta",
+        "s": 51.73,
+        "e": 52.01
+      },
+      {
+        "w": "harfga",
+        "s": 52.05,
+        "e": 52.33
+      },
+      {
+        "w": "o‘giriladi.",
+        "s": 52.37,
+        "e": 52.8
+      },
+      {
+        "w": "Ammo",
+        "s": 53.24,
+        "e": 53.44
+      },
+      {
+        "w": "Postgres",
+        "s": 53.56,
+        "e": 54.0
+      },
+      {
+        "w": "bu",
+        "s": 54.24,
+        "e": 54.3
+      },
+      {
+        "w": "qoidani",
+        "s": 54.36,
+        "e": 54.7
+      },
+      {
+        "w": "buzib,",
+        "s": 54.74,
+        "e": 54.96
+      },
+      {
+        "w": "barcha",
+        "s": 55.06,
+        "e": 55.36
+      },
+      {
+        "w": "nomlarni",
+        "s": 55.42,
+        "e": 55.84
+      },
+      {
+        "w": "kichik",
+        "s": 55.9,
+        "e": 56.14
+      },
+      {
+        "w": "harfga",
+        "s": 56.18,
+        "e": 56.46
+      },
+      {
+        "w": "aylantiradi.",
+        "s": 56.5,
+        "e": 56.96
+      }
+    ]
+  },
+  {
+    "id": "L8",
+    "scene": "identifikator",
+    "text": "Shuning uchun PostgreSQL da katta harfda yozilgan jadval baribir kichik harfda saqlanadi.",
+    "show": "Shuning uchun PostgreSQL da katta harfda yozilgan jadval baribir kichik harfda saqlanadi.",
+    "say": "Shuning uchun Postgres da katta harfda yozilgan jadval baribir kichik harfda saqlanadi.",
+    "a0": 57.52,
+    "a1": 62.04,
+    "words": [
+      {
+        "w": "Shuning",
+        "s": 57.52,
+        "e": 57.76
+      },
+      {
+        "w": "uchun",
+        "s": 57.78,
+        "e": 57.98
+      },
+      {
+        "w": "Postgres",
+        "s": 58.24,
+        "e": 58.62
+      },
+      {
+        "w": "da",
+        "s": 58.66,
+        "e": 58.72
+      },
+      {
+        "w": "katta",
+        "s": 58.82,
+        "e": 59.08
+      },
+      {
+        "w": "harfda",
+        "s": 59.12,
+        "e": 59.42
+      },
+      {
+        "w": "yozilgan",
+        "s": 59.42,
+        "e": 59.86
+      },
+      {
+        "w": "jadval",
+        "s": 59.9,
+        "e": 60.22
+      },
+      {
+        "w": "baribir",
+        "s": 60.5,
+        "e": 60.84
+      },
+      {
+        "w": "kichik",
+        "s": 60.94,
+        "e": 61.2
+      },
+      {
+        "w": "harfda",
+        "s": 61.24,
+        "e": 61.54
+      },
+      {
+        "w": "saqlanadi.",
+        "s": 61.6,
+        "e": 62.04
+      }
+    ]
+  },
+  {
+    "id": "L9",
+    "scene": "qoshtirnoq",
+    "text": "Agar nom qo‘shtirnoq ichiga olinsa, u har doim identifikator bo‘ladi va hech qachon kalit so‘z deb tushunilmaydi.",
+    "show": "Agar nom qo‘shtirnoq ichiga olinsa, u har doim identifikator bo‘ladi va hech qachon kalit so‘z deb tushunilmaydi.",
+    "say": "Agar nom qo‘shtirnoq ichiga olinsa, u har doim identifikator bo‘ladi va hech qachon kalit so‘z deb tushunilmaydi.",
+    "a0": 63.0,
+    "a1": 69.13,
+    "words": [
+      {
+        "w": "Agar",
+        "s": 63.0,
+        "e": 63.24
+      },
+      {
+        "w": "nom",
+        "s": 63.32,
+        "e": 63.48
+      },
+      {
+        "w": "qo‘shtirnoq",
+        "s": 63.54,
+        "e": 64.0
+      },
+      {
+        "w": "ichiga",
+        "s": 64.06,
+        "e": 64.28
+      },
+      {
+        "w": "olinsa,",
+        "s": 64.36,
+        "e": 64.66
+      },
+      {
+        "w": "u",
+        "s": 64.9,
+        "e": 64.92
+      },
+      {
+        "w": "har",
+        "s": 65.12,
+        "e": 65.32
+      },
+      {
+        "w": "doim",
+        "s": 65.38,
+        "e": 65.62
+      },
+      {
+        "w": "identifikator",
+        "s": 65.7,
+        "e": 66.36
+      },
+      {
+        "w": "bo‘ladi",
+        "s": 66.38,
+        "e": 66.66
+      },
+      {
+        "w": "va",
+        "s": 66.98,
+        "e": 67.04
+      },
+      {
+        "w": "hech",
+        "s": 67.16,
+        "e": 67.38
+      },
+      {
+        "w": "qachon",
+        "s": 67.44,
+        "e": 67.73
+      },
+      {
+        "w": "kalit",
+        "s": 67.81,
+        "e": 68.11
+      },
+      {
+        "w": "so‘z",
+        "s": 68.19,
+        "e": 68.37
+      },
+      {
+        "w": "deb",
+        "s": 68.41,
+        "e": 68.55
+      },
+      {
+        "w": "tushunilmaydi.",
+        "s": 68.57,
+        "e": 69.13
+      }
+    ]
+  },
+  {
+    "id": "L10",
+    "scene": "qoshtirnoq",
+    "text": "Shu sababli, ORDER yoki SELECT kabi kalit so‘zlarni qo‘shtirnoqqa olib, bemalol jadval nomi qilib ishlatish mumkin.",
+    "show": "Shu sababli, ORDER yoki SELECT kabi kalit so‘zlarni qo‘shtirnoqqa olib, bemalol jadval nomi qilib ishlatish mumkin.",
+    "say": "Shu sababli, order yoki se-lekt kabi kalit so‘zlarni qo‘shtirnoqqa olib, bemalol jadval nomi qilib ishlatish mumkin.",
+    "a0": 69.73,
+    "a1": 75.85,
+    "words": [
+      {
+        "w": "Shu",
+        "s": 69.73,
+        "e": 69.79
+      },
+      {
+        "w": "sababli,",
+        "s": 69.85,
+        "e": 70.21
+      },
+      {
+        "w": "order",
+        "s": 70.59,
+        "e": 70.99
+      },
+      {
+        "w": "yoki",
+        "s": 71.03,
+        "e": 71.35
+      },
+      {
+        "w": "se-lekt",
+        "s": 71.47,
+        "e": 71.83
+      },
+      {
+        "w": "kabi",
+        "s": 71.85,
+        "e": 72.03
+      },
+      {
+        "w": "kalit",
+        "s": 72.09,
+        "e": 72.31
+      },
+      {
+        "w": "so‘zlarni",
+        "s": 72.33,
+        "e": 72.75
+      },
+      {
+        "w": "qo‘shtirnoqqa",
+        "s": 72.81,
+        "e": 73.33
+      },
+      {
+        "w": "olib,",
+        "s": 73.41,
+        "e": 73.57
+      },
+      {
+        "w": "bemalol",
+        "s": 73.85,
+        "e": 74.31
+      },
+      {
+        "w": "jadval",
+        "s": 74.39,
+        "e": 74.73
+      },
+      {
+        "w": "nomi",
+        "s": 74.79,
+        "e": 74.99
+      },
+      {
+        "w": "qilib",
+        "s": 75.03,
+        "e": 75.21
+      },
+      {
+        "w": "ishlatish",
+        "s": 75.23,
+        "e": 75.57
+      },
+      {
+        "w": "mumkin.",
+        "s": 75.59,
+        "e": 75.85
+      }
+    ]
+  },
+  {
+    "id": "L11",
+    "scene": "qoshtirnoq",
+    "text": "Eng muhimi: qo‘shtirnoq nomni katta-kichik harfga qat’iy sezgir qiladi. Mahsulot va qo‘shtirnoqdagi Mahsulot PostgreSQL da ikki xil jadval bo‘ladi.",
+    "show": "Eng muhimi: qo‘shtirnoq nomni katta-kichik harfga qat’iy sezgir qiladi. Mahsulot va qo‘shtirnoqdagi Mahsulot PostgreSQL da ikki xil jadval bo‘ladi.",
+    "say": "Eng muhimi: qo‘shtirnoq nomni katta-kichik harfga qat’iy sezgir qiladi. Mahsulot va qo‘shtirnoqdagi Mahsulot Postgres da ikki xil jadval bo‘ladi.",
+    "a0": 76.73,
+    "a1": 85.4,
+    "words": [
+      {
+        "w": "Eng",
+        "s": 76.73,
+        "e": 76.85
+      },
+      {
+        "w": "muhimi:",
+        "s": 76.87,
+        "e": 77.15
+      },
+      {
+        "w": "qo‘shtirnoq",
+        "s": 77.47,
+        "e": 77.97
+      },
+      {
+        "w": "nomni",
+        "s": 78.03,
+        "e": 78.27
+      },
+      {
+        "w": "katta-kichik",
+        "s": 78.39,
+        "e": 78.95
+      },
+      {
+        "w": "harfga",
+        "s": 78.99,
+        "e": 79.35
+      },
+      {
+        "w": "qat’iy",
+        "s": 79.45,
+        "e": 79.81
+      },
+      {
+        "w": "sezgir",
+        "s": 79.89,
+        "e": 80.21
+      },
+      {
+        "w": "qiladi.",
+        "s": 80.25,
+        "e": 80.49
+      },
+      {
+        "w": "Mahsulot",
+        "s": 81.09,
+        "e": 81.65
+      },
+      {
+        "w": "va",
+        "s": 81.73,
+        "e": 81.81
+      },
+      {
+        "w": "qo‘shtirnoqdagi",
+        "s": 82.11,
+        "e": 82.8
+      },
+      {
+        "w": "Mahsulot",
+        "s": 82.9,
+        "e": 83.44
+      },
+      {
+        "w": "Postgres",
+        "s": 83.78,
+        "e": 84.18
+      },
+      {
+        "w": "da",
+        "s": 84.22,
+        "e": 84.3
+      },
+      {
+        "w": "ikki",
+        "s": 84.42,
+        "e": 84.6
+      },
+      {
+        "w": "xil",
+        "s": 84.62,
+        "e": 84.74
+      },
+      {
+        "w": "jadval",
+        "s": 84.78,
+        "e": 85.08
+      },
+      {
+        "w": "bo‘ladi.",
+        "s": 85.12,
+        "e": 85.4
+      }
+    ]
+  },
+  {
+    "id": "L12",
+    "scene": "qoshtirnoq",
+    "text": "Bundan tashqari, PostgreSQL da identifikator uzunligi 63 bayt bilan cheklangan. Ortig‘i ogohlantirish bilan qisqartirib tashlanadi.",
+    "show": "Bundan tashqari, PostgreSQL da identifikator uzunligi 63 bayt bilan cheklangan. Ortig‘i ogohlantirish bilan qisqartirib tashlanadi.",
+    "say": "Bundan tashqari, Postgres da identifikator uzunligi oltmish uch bayt bilan cheklangan. Ortig‘i ogohlantirish bilan qisqartirib tashlanadi.",
+    "a0": 86.24,
+    "a1": 93.4,
+    "words": [
+      {
+        "w": "Bundan",
+        "s": 86.24,
+        "e": 86.48
+      },
+      {
+        "w": "tashqari,",
+        "s": 86.5,
+        "e": 86.9
+      },
+      {
+        "w": "Postgres",
+        "s": 87.08,
+        "e": 87.52
+      },
+      {
+        "w": "da",
+        "s": 87.56,
+        "e": 87.64
+      },
+      {
+        "w": "identifikator",
+        "s": 87.76,
+        "e": 88.4
+      },
+      {
+        "w": "uzunligi",
+        "s": 88.48,
+        "e": 88.88
+      },
+      {
+        "w": "oltmish",
+        "s": 89.08,
+        "e": 89.4
+      },
+      {
+        "w": "uch",
+        "s": 89.48,
+        "e": 89.58
+      },
+      {
+        "w": "bayt",
+        "s": 89.66,
+        "e": 89.86
+      },
+      {
+        "w": "bilan",
+        "s": 89.88,
+        "e": 90.0
+      },
+      {
+        "w": "cheklangan.",
+        "s": 90.08,
+        "e": 90.56
+      },
+      {
+        "w": "Ortig‘i",
+        "s": 91.06,
+        "e": 91.36
+      },
+      {
+        "w": "ogohlantirish",
+        "s": 91.64,
+        "e": 92.22
+      },
+      {
+        "w": "bilan",
+        "s": 92.24,
+        "e": 92.42
+      },
+      {
+        "w": "qisqartirib",
+        "s": 92.46,
+        "e": 92.96
+      },
+      {
+        "w": "tashlanadi.",
+        "s": 92.98,
+        "e": 93.4
+      }
+    ]
+  },
+  {
+    "id": "L13",
+    "scene": "literallar",
+    "text": "Satr literallari bitta tirnoq ichiga olinadi. Satr ichidagi tirnoqni yozish uchun ikki marta tirnoq qo‘yiladi.",
+    "show": "Satr literallari bitta tirnoq ichiga olinadi. Satr ichidagi tirnoqni yozish uchun ikki marta tirnoq qo‘yiladi.",
+    "say": "Satr literallari bitta tirnoq ichiga olinadi. Satr ichidagi tirnoqni yozish uchun ikki marta tirnoq qo‘yiladi.",
+    "a0": 94.28,
+    "a1": 99.95,
+    "words": [
+      {
+        "w": "Satr",
+        "s": 94.28,
+        "e": 94.56
+      },
+      {
+        "w": "literallari",
+        "s": 94.62,
+        "e": 95.18
+      },
+      {
+        "w": "bitta",
+        "s": 95.36,
+        "e": 95.6
+      },
+      {
+        "w": "tirnoq",
+        "s": 95.64,
+        "e": 95.9
+      },
+      {
+        "w": "ichiga",
+        "s": 95.94,
+        "e": 96.16
+      },
+      {
+        "w": "olinadi.",
+        "s": 96.22,
+        "e": 96.5
+      },
+      {
+        "w": "Satr",
+        "s": 97.02,
+        "e": 97.3
+      },
+      {
+        "w": "ichidagi",
+        "s": 97.34,
+        "e": 97.67
+      },
+      {
+        "w": "tirnoqni",
+        "s": 97.71,
+        "e": 98.07
+      },
+      {
+        "w": "yozish",
+        "s": 98.11,
+        "e": 98.35
+      },
+      {
+        "w": "uchun",
+        "s": 98.39,
+        "e": 98.59
+      },
+      {
+        "w": "ikki",
+        "s": 98.77,
+        "e": 98.97
+      },
+      {
+        "w": "marta",
+        "s": 99.01,
+        "e": 99.23
+      },
+      {
+        "w": "tirnoq",
+        "s": 99.27,
+        "e": 99.55
+      },
+      {
+        "w": "qo‘yiladi.",
+        "s": 99.57,
+        "e": 99.95
+      }
+    ]
+  },
+  {
+    "id": "L14",
+    "scene": "literallar",
+    "text": "PostgreSQL da E harfi bilan boshlanadigan escape satrlari mavjud bo‘lib, ularda teskari chiziq orqali yangi qator va tab belgilarini yozish mumkin.",
+    "show": "PostgreSQL da E harfi bilan boshlanadigan escape satrlari mavjud bo‘lib, ularda teskari chiziq orqali yangi qator va tab belgilarini yozish mumkin.",
+    "say": "Postgres da i harfi bilan boshlanadigan escape satrlari mavjud bo‘lib, ularda teskari chiziq orqali yangi qator va tab belgilarini yozish mumkin.",
+    "a0": 100.73,
+    "a1": 108.55,
+    "words": [
+      {
+        "w": "Postgres",
+        "s": 100.73,
+        "e": 101.15
+      },
+      {
+        "w": "da",
+        "s": 101.19,
+        "e": 101.29
+      },
+      {
+        "w": "i",
+        "s": 101.49,
+        "e": 101.51
+      },
+      {
+        "w": "harfi",
+        "s": 101.67,
+        "e": 101.93
+      },
+      {
+        "w": "bilan",
+        "s": 101.97,
+        "e": 102.13
+      },
+      {
+        "w": "boshlanadigan",
+        "s": 102.17,
+        "e": 102.73
+      },
+      {
+        "w": "escape",
+        "s": 102.93,
+        "e": 103.27
+      },
+      {
+        "w": "satrlari",
+        "s": 103.27,
+        "e": 103.71
+      },
+      {
+        "w": "mavjud",
+        "s": 103.73,
+        "e": 104.01
+      },
+      {
+        "w": "bo‘lib,",
+        "s": 104.03,
+        "e": 104.25
+      },
+      {
+        "w": "ularda",
+        "s": 104.57,
+        "e": 104.87
+      },
+      {
+        "w": "teskari",
+        "s": 104.97,
+        "e": 105.35
+      },
+      {
+        "w": "chiziq",
+        "s": 105.39,
+        "e": 105.63
+      },
+      {
+        "w": "orqali",
+        "s": 105.69,
+        "e": 105.99
+      },
+      {
+        "w": "yangi",
+        "s": 106.09,
+        "e": 106.35
+      },
+      {
+        "w": "qator",
+        "s": 106.43,
+        "e": 106.81
+      },
+      {
+        "w": "va",
+        "s": 107.05,
+        "e": 107.13
+      },
+      {
+        "w": "tab",
+        "s": 107.23,
+        "e": 107.41
+      },
+      {
+        "w": "belgilarini",
+        "s": 107.45,
+        "e": 107.93
+      },
+      {
+        "w": "yozish",
+        "s": 107.99,
+        "e": 108.25
+      },
+      {
+        "w": "mumkin.",
+        "s": 108.29,
+        "e": 108.55
+      }
+    ]
+  },
+  {
+    "id": "L15",
+    "scene": "literallar",
+    "text": "Shuningdek, funksiyalar va uzun matnlar uchun dollar satrlar ishlatiladi. Dollar satr ichida maxsus belgilar o‘z kuchini yo‘qotadi.",
+    "show": "Shuningdek, funksiyalar va uzun matnlar uchun dollar satrlar ishlatiladi. Dollar satr ichida maxsus belgilar o‘z kuchini yo‘qotadi.",
+    "say": "Shuningdek, funksiyalar va uzun matnlar uchun dollar satrlar ishlatiladi. Dollar satr ichida maxsus belgilar o‘z kuchini yo‘qotadi.",
+    "a0": 109.37,
+    "a1": 116.22,
+    "words": [
+      {
+        "w": "Shuningdek,",
+        "s": 109.37,
+        "e": 109.79
+      },
+      {
+        "w": "funksiyalar",
+        "s": 109.95,
+        "e": 110.47
+      },
+      {
+        "w": "va",
+        "s": 110.51,
+        "e": 110.57
+      },
+      {
+        "w": "uzun",
+        "s": 110.69,
+        "e": 110.93
+      },
+      {
+        "w": "matnlar",
+        "s": 110.97,
+        "e": 111.35
+      },
+      {
+        "w": "uchun",
+        "s": 111.37,
+        "e": 111.55
+      },
+      {
+        "w": "dollar",
+        "s": 111.87,
+        "e": 112.17
+      },
+      {
+        "w": "satrlar",
+        "s": 112.21,
+        "e": 112.66
+      },
+      {
+        "w": "ishlatiladi.",
+        "s": 112.7,
+        "e": 113.16
+      },
+      {
+        "w": "Dollar",
+        "s": 113.64,
+        "e": 113.9
+      },
+      {
+        "w": "satr",
+        "s": 113.96,
+        "e": 114.2
+      },
+      {
+        "w": "ichida",
+        "s": 114.24,
+        "e": 114.46
+      },
+      {
+        "w": "maxsus",
+        "s": 114.56,
+        "e": 114.92
+      },
+      {
+        "w": "belgilar",
+        "s": 114.96,
+        "e": 115.32
+      },
+      {
+        "w": "o‘z",
+        "s": 115.42,
+        "e": 115.52
+      },
+      {
+        "w": "kuchini",
+        "s": 115.56,
+        "e": 115.82
+      },
+      {
+        "w": "yo‘qotadi.",
+        "s": 115.86,
+        "e": 116.22
+      }
+    ]
+  },
+  {
+    "id": "L16",
+    "scene": "literallar",
+    "text": "Sonlarda esa o‘qishni osonlashtirish uchun pastki chiziq qo‘yish, hamda o‘n oltilik, sakkizlik va ikkilik ko‘rinishlar ruxsat etiladi.",
+    "show": "Sonlarda esa o‘qishni osonlashtirish uchun pastki chiziq qo‘yish, hamda o‘n oltilik, sakkizlik va ikkilik ko‘rinishlar ruxsat etiladi.",
+    "say": "Sonlarda esa o‘qishni osonlashtirish uchun pastki chiziq qo‘yish, hamda o‘n oltilik, sakkizlik va ikkilik ko‘rinishlar ruxsat etiladi.",
+    "a0": 116.9,
+    "a1": 124.38,
+    "words": [
+      {
+        "w": "Sonlarda",
+        "s": 116.9,
+        "e": 117.32
+      },
+      {
+        "w": "esa",
+        "s": 117.38,
+        "e": 117.54
+      },
+      {
+        "w": "o‘qishni",
+        "s": 117.84,
+        "e": 118.18
+      },
+      {
+        "w": "osonlashtirish",
+        "s": 118.28,
+        "e": 118.9
+      },
+      {
+        "w": "uchun",
+        "s": 118.94,
+        "e": 119.14
+      },
+      {
+        "w": "pastki",
+        "s": 119.46,
+        "e": 119.74
+      },
+      {
+        "w": "chiziq",
+        "s": 119.8,
+        "e": 119.98
+      },
+      {
+        "w": "qo‘yish,",
+        "s": 120.06,
+        "e": 120.36
+      },
+      {
+        "w": "hamda",
+        "s": 120.68,
+        "e": 120.94
+      },
+      {
+        "w": "o‘n",
+        "s": 121.18,
+        "e": 121.3
+      },
+      {
+        "w": "oltilik,",
+        "s": 121.36,
+        "e": 121.8
+      },
+      {
+        "w": "sakkizlik",
+        "s": 122.02,
+        "e": 122.56
+      },
+      {
+        "w": "va",
+        "s": 122.64,
+        "e": 122.72
+      },
+      {
+        "w": "ikkilik",
+        "s": 122.92,
+        "e": 123.22
+      },
+      {
+        "w": "ko‘rinishlar",
+        "s": 123.26,
+        "e": 123.72
+      },
+      {
+        "w": "ruxsat",
+        "s": 123.76,
+        "e": 124.04
+      },
+      {
+        "w": "etiladi.",
+        "s": 124.08,
+        "e": 124.38
+      }
+    ]
+  },
+  {
+    "id": "L17",
+    "scene": "ustuvorlik",
+    "text": "Amallarni bajarishda operatorlarning ustuvorlik tartibi qat’iy belgilangan: avval nuqta va tip o‘zgartirish, so‘ng daraja, ko‘paytirish va qo‘shish.",
+    "show": "Amallarni bajarishda operatorlarning ustuvorlik tartibi qat’iy belgilangan: avval nuqta va tip o‘zgartirish, so‘ng daraja, ko‘paytirish va qo‘shish.",
+    "say": "Amallarni bajarishda operatorlarning ustuvorlik tartibi qat’iy belgilangan: avval nuqta va tip o‘zgartirish, so‘ng daraja, ko‘paytirish va qo‘shish.",
+    "a0": 125.22,
+    "a1": 134.31,
+    "words": [
+      {
+        "w": "Amallarni",
+        "s": 125.22,
+        "e": 125.7
+      },
+      {
+        "w": "bajarishda",
+        "s": 125.74,
+        "e": 126.22
+      },
+      {
+        "w": "operatorlarning",
+        "s": 126.32,
+        "e": 127.06
+      },
+      {
+        "w": "ustuvorlik",
+        "s": 127.12,
+        "e": 127.61
+      },
+      {
+        "w": "tartibi",
+        "s": 127.65,
+        "e": 127.99
+      },
+      {
+        "w": "qat’iy",
+        "s": 128.07,
+        "e": 128.39
+      },
+      {
+        "w": "belgilangan:",
+        "s": 128.45,
+        "e": 129.01
+      },
+      {
+        "w": "avval",
+        "s": 129.59,
+        "e": 129.93
+      },
+      {
+        "w": "nuqta",
+        "s": 130.09,
+        "e": 130.39
+      },
+      {
+        "w": "va",
+        "s": 130.47,
+        "e": 130.55
+      },
+      {
+        "w": "tip",
+        "s": 130.79,
+        "e": 130.99
+      },
+      {
+        "w": "o‘zgartirish,",
+        "s": 131.07,
+        "e": 131.61
+      },
+      {
+        "w": "so‘ng",
+        "s": 131.89,
+        "e": 132.11
+      },
+      {
+        "w": "daraja,",
+        "s": 132.25,
+        "e": 132.63
+      },
+      {
+        "w": "ko‘paytirish",
+        "s": 133.03,
+        "e": 133.65
+      },
+      {
+        "w": "va",
+        "s": 133.75,
+        "e": 133.81
+      },
+      {
+        "w": "qo‘shish.",
+        "s": 133.95,
+        "e": 134.31
+      }
+    ]
+  },
+  {
+    "id": "L18",
+    "scene": "ustuvorlik",
+    "text": "Undan keyin taqqoslash amallari, oxirida esa mantiqiy NOT, AND va OR tekshiriladi.",
+    "show": "Undan keyin taqqoslash amallari, oxirida esa mantiqiy NOT, AND va OR tekshiriladi.",
+    "say": "Undan keyin taqqoslash amallari, oxirida esa mantiqiy not, end va or tekshiriladi.",
+    "a0": 134.77,
+    "a1": 140.35,
+    "words": [
+      {
+        "w": "Undan",
+        "s": 134.77,
+        "e": 135.01
+      },
+      {
+        "w": "keyin",
+        "s": 135.05,
+        "e": 135.27
+      },
+      {
+        "w": "taqqoslash",
+        "s": 135.33,
+        "e": 135.85
+      },
+      {
+        "w": "amallari,",
+        "s": 135.91,
+        "e": 136.29
+      },
+      {
+        "w": "oxirida",
+        "s": 136.75,
+        "e": 137.07
+      },
+      {
+        "w": "esa",
+        "s": 137.13,
+        "e": 137.31
+      },
+      {
+        "w": "mantiqiy",
+        "s": 137.43,
+        "e": 137.91
+      },
+      {
+        "w": "not,",
+        "s": 138.15,
+        "e": 138.45
+      },
+      {
+        "w": "end",
+        "s": 138.85,
+        "e": 139.07
+      },
+      {
+        "w": "va",
+        "s": 139.19,
+        "e": 139.27
+      },
+      {
+        "w": "or",
+        "s": 139.63,
+        "e": 139.77
+      },
+      {
+        "w": "tekshiriladi.",
+        "s": 139.85,
+        "e": 140.35
+      }
+    ]
+  },
+  {
+    "id": "L19",
+    "scene": "ustuvorlik",
+    "text": "Diqqat qiling: PostgreSQL da darajaga ko‘tarish amali chapdan o‘ngga qarab bog‘lanadi. Masalan, 2 darajasi 3, darajasi 2 ifodasi 64 natijasini beradi.",
+    "show": "Diqqat qiling: PostgreSQL da darajaga ko‘tarish amali chapdan o‘ngga qarab bog‘lanadi. Masalan, 2 darajasi 3, darajasi 2 ifodasi 64 natijasini beradi.",
+    "say": "Diqqat qiling: Postgres da darajaga ko‘tarish amali chapdan o‘ngga qarab bog‘lanadi. Masalan, 2 darajasi 3, darajasi 2 ifodasi oltmish to‘rt natijasini beradi.",
+    "a0": 141.11,
+    "a1": 151.12,
+    "words": [
+      {
+        "w": "Diqqat",
+        "s": 141.11,
+        "e": 141.35
+      },
+      {
+        "w": "qiling:",
+        "s": 141.39,
+        "e": 141.59
+      },
+      {
+        "w": "Postgres",
+        "s": 141.93,
+        "e": 142.39
+      },
+      {
+        "w": "da",
+        "s": 142.43,
+        "e": 142.52
+      },
+      {
+        "w": "darajaga",
+        "s": 142.62,
+        "e": 143.0
+      },
+      {
+        "w": "ko‘tarish",
+        "s": 143.06,
+        "e": 143.42
+      },
+      {
+        "w": "amali",
+        "s": 143.5,
+        "e": 143.76
+      },
+      {
+        "w": "chapdan",
+        "s": 143.84,
+        "e": 144.26
+      },
+      {
+        "w": "o‘ngga",
+        "s": 144.5,
+        "e": 144.74
+      },
+      {
+        "w": "qarab",
+        "s": 144.78,
+        "e": 145.0
+      },
+      {
+        "w": "bog‘lanadi.",
+        "s": 145.04,
+        "e": 145.48
+      },
+      {
+        "w": "Masalan,",
+        "s": 145.96,
+        "e": 146.32
+      },
+      {
+        "w": "2",
+        "s": 146.32,
+        "e": 146.32
+      },
+      {
+        "w": "darajasi",
+        "s": 147.18,
+        "e": 147.6
+      },
+      {
+        "w": "3,",
+        "s": 147.6,
+        "e": 147.6
+      },
+      {
+        "w": "darajasi",
+        "s": 148.14,
+        "e": 148.54
+      },
+      {
+        "w": "2",
+        "s": 148.54,
+        "e": 148.54
+      },
+      {
+        "w": "ifodasi",
+        "s": 149.02,
+        "e": 149.46
+      },
+      {
+        "w": "oltmish",
+        "s": 149.86,
+        "e": 150.14
+      },
+      {
+        "w": "to‘rt",
+        "s": 150.18,
+        "e": 150.34
+      },
+      {
+        "w": "natijasini",
+        "s": 150.38,
+        "e": 150.84
+      },
+      {
+        "w": "beradi.",
+        "s": 150.86,
+        "e": 151.12
+      }
+    ]
+  },
+  {
+    "id": "L20",
+    "scene": "xulosa",
+    "text": "Xulosa qilib aytganda: nomlarni doim kichik harfda va pastki chiziq bilan yozing, kalit so‘zlardan nom sifatida qoching va noaniq holatlarda qavslardan foydalaning.",
+    "show": "Xulosa qilib aytganda: nomlarni doim kichik harfda va pastki chiziq bilan yozing, kalit so‘zlardan nom sifatida qoching va noaniq holatlarda qavslardan foydalaning.",
+    "say": "Xulosa qilib aytganda: nomlarni doim kichik harfda va pastki chiziq bilan yozing, kalit so‘zlardan nom sifatida qoching va noaniq holatlarda qavslardan foydalaning.",
+    "a0": 152.0,
+    "a1": 161.69,
+    "words": [
+      {
+        "w": "Xulosa",
+        "s": 152.0,
+        "e": 152.32
+      },
+      {
+        "w": "qilib",
+        "s": 152.36,
+        "e": 152.54
+      },
+      {
+        "w": "aytganda:",
+        "s": 152.58,
+        "e": 152.94
+      },
+      {
+        "w": "nomlarni",
+        "s": 153.2,
+        "e": 153.7
+      },
+      {
+        "w": "doim",
+        "s": 153.82,
+        "e": 154.14
+      },
+      {
+        "w": "kichik",
+        "s": 154.2,
+        "e": 154.47
+      },
+      {
+        "w": "harfda",
+        "s": 154.53,
+        "e": 154.91
+      },
+      {
+        "w": "va",
+        "s": 155.23,
+        "e": 155.29
+      },
+      {
+        "w": "pastki",
+        "s": 155.39,
+        "e": 155.69
+      },
+      {
+        "w": "chiziq",
+        "s": 155.75,
+        "e": 155.97
+      },
+      {
+        "w": "bilan",
+        "s": 156.01,
+        "e": 156.19
+      },
+      {
+        "w": "yozing,",
+        "s": 156.19,
+        "e": 156.53
+      },
+      {
+        "w": "kalit",
+        "s": 157.09,
+        "e": 157.37
+      },
+      {
+        "w": "so‘zlardan",
+        "s": 157.39,
+        "e": 157.85
+      },
+      {
+        "w": "nom",
+        "s": 157.99,
+        "e": 158.15
+      },
+      {
+        "w": "sifatida",
+        "s": 158.21,
+        "e": 158.61
+      },
+      {
+        "w": "qoching",
+        "s": 158.71,
+        "e": 159.03
+      },
+      {
+        "w": "va",
+        "s": 159.41,
+        "e": 159.47
+      },
+      {
+        "w": "noaniq",
+        "s": 159.63,
+        "e": 159.97
+      },
+      {
+        "w": "holatlarda",
+        "s": 160.01,
+        "e": 160.55
+      },
+      {
+        "w": "qavslardan",
+        "s": 160.65,
+        "e": 161.21
+      },
+      {
+        "w": "foydalaning.",
+        "s": 161.23,
+        "e": 161.69
+      }
+    ]
+  },
+  {
+    "id": "L21",
+    "scene": "xulosa",
+    "text": "Keyingi videoda bu qoidalarni PostgreSQL 18 terminalida jonli sinovdan o‘tkazamiz.",
+    "show": "Keyingi videoda bu qoidalarni PostgreSQL 18 terminalida jonli sinovdan o‘tkazamiz.",
+    "say": "Keyingi videoda bu qoidalarni Postgres o‘n sakkiz terminalida jonli sinovdan o‘tkazamiz.",
+    "a0": 162.29,
+    "a1": 166.68,
+    "words": [
+      {
+        "w": "Keyingi",
+        "s": 162.29,
+        "e": 162.55
+      },
+      {
+        "w": "videoda",
+        "s": 162.61,
+        "e": 162.96
+      },
+      {
+        "w": "bu",
+        "s": 163.06,
+        "e": 163.14
+      },
+      {
+        "w": "qoidalarni",
+        "s": 163.2,
+        "e": 163.7
+      },
+      {
+        "w": "Postgres",
+        "s": 163.88,
+        "e": 164.32
+      },
+      {
+        "w": "o‘n",
+        "s": 164.44,
+        "e": 164.54
+      },
+      {
+        "w": "sakkiz",
+        "s": 164.58,
+        "e": 164.88
+      },
+      {
+        "w": "terminalida",
+        "s": 164.92,
+        "e": 165.4
+      },
+      {
+        "w": "jonli",
+        "s": 165.52,
+        "e": 165.8
+      },
+      {
+        "w": "sinovdan",
+        "s": 165.88,
+        "e": 166.22
+      },
+      {
+        "w": "o‘tkazamiz.",
+        "s": 166.24,
+        "e": 166.68
+      }
+    ]
+  }
+]
