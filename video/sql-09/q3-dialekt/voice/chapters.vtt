@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:21.541
+Kirish: Har bir bazaning o‘ziga xosligi
+
+00:21.541 --> 00:50.529
+MySQL: Boolean yo‘q, TINYINT(1) tuzog‘i
+
+00:50.529 --> 01:22.414
+MySQL: UUID va indekslangan ENUM
+
+01:22.414 --> 01:44.441
+SQLite: Hech qanday maxsus tip yo‘q
+
+01:44.441 --> 02:11.837
+Amaliyotdagi eng xavfli 6 ta tuzoq
+
+02:11.837 --> 02:31.120
+Taqqoslash jadvali va yakun

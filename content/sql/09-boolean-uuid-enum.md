@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/sql/09-1-tushuncha.jpg" src="/video/sql/09-1-tushuncha.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/sql/09-1-tushuncha.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/sql/09-1-tushuncha.uz.vtt">
+</video>
+<figcaption>Video: Boolean, UUID va Enum — Uch qiymatli mantiq (TRUE, FALSE, NULL), UUIDv4 va UUIDv7 vaqt tartibi, hamda Enum tartiblangan turlari.</figcaption>
+</figure>
+
 Bu bobda uchta kichik, lekin har kuni ishlatiladigan tip ko'riladi:
 
 - **boolean** — ha yoki yo'q: "to'langanmi", "faolmi";
@@ -70,6 +78,14 @@ PostgreSQL hujjatidagi qoidalar:
 - **Hajm.** Bitta qiymat diskda 4 bayt oladi. Yorliq 63 baytgacha.
 
 ## Kod
+
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/sql/09-2-kod.jpg" src="/video/sql/09-2-kod.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/sql/09-2-kod.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/sql/09-2-kod.uz.vtt">
+</video>
+<figcaption>Video: PostgreSQL 18 psql da jonli sinovlar — Boolean literallari va butun son rad etilishi, WHERE filtri va IS NOT TRUE, UUIDv7 vaqti, Enum ORDER BY va ALTER TYPE.</figcaption>
+</figure>
 
 Misollar PostgreSQL 18.6, MySQL 9.7.2 va SQLite 3.54.0 da ishga tushirilgan.
 
@@ -255,6 +271,14 @@ SELECT enum_range(NULL::holat);
 ```
 
 ## Dialektlar
+
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/sql/09-3-dialektlar.jpg" src="/video/sql/09-3-dialektlar.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/sql/09-3-dialektlar.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/sql/09-3-dialektlar.uz.vtt">
+</video>
+<figcaption>Video: Dialektlar taqqoslash doskasi (PostgreSQL vs MySQL vs SQLite), MySQL TINYINT(1) va = TRUE tuzog'i, SQLite da tiplarning yo'qligi va 6 ta xavfli tuzoq.</figcaption>
+</figure>
 
 ### MySQL
 

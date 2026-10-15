@@ -1,0 +1,81 @@
+WEBVTT
+
+1
+00:01.420 --> 00:11.020
+Uchinchi qismda MySQL va SQLite da boolean, UUID va enum tushunchalariga
+qanday yondashilgani, hamda oltita xavfli tuzoqni tahlil qilamiz.
+
+2
+00:11.250 --> 00:19.940
+Ko‘p dasturchilar bu turlarni barcha bazalarda bir xil ishlaydi deb o‘ylashadi.
+Biroq MySQL va SQLite dagi farqlar kutilmagan xatolarga sabab bo‘lishi mumkin.
+
+3
+00:22.630 --> 00:30.070
+MySQL da aslida boolean turi yo‘q! Baza boolean deb
+yozilgan ustunlarni oddiy tayni-int bir turiga aylantiradi.
+
+4
+00:29.920 --> 00:38.830
+Shu bois boolean ustuniga ikki yoki manfiy besh kabi sonlar ham bemalol
+yoziladi. Shart tekshiruvida noldan farqli barcha sonlar rost hisoblanadi.
+
+5
+00:39.020 --> 00:48.740
+Ammo ulkan tuzoq shuki: agar WHERE ustun teng TRUE deb yozsangiz, baza faqat
+birga teng qatorlarni topadi va ikki yoki manfiy besh qatorlari tushib qoladi!
+
+6
+00:51.610 --> 01:00.790
+MySQL da alohida UUID tipi ham mavjud emas. O‘rnatilgan UUID funksiyasi
+birinchi versiyadagi vaqt va tarmoq manziliga asoslangan qiymat beradi.
+
+7
+01:00.760 --> 01:10.010
+Ushbu qiymatlar oldindan taxmin qilinishi mumkin, shuning uchun ularni maxfiy token
+sifatida ishlatish xavflidir. Ixcham saqlash uchun UUID TO BIN funksiyasi ishlatiladi.
+
+8
+01:10.220 --> 01:20.660
+MySQL da enum ustun ichida e’lon qilinadi va ichkarida birdan boshlanuvchi raqamlar bilan
+saqlanadi. Noto‘g‘ri qiymat kiritilsa, eski rejimlarda nol indeksli bo‘sh satrga aylanadi.
+
+9
+01:23.450 --> 01:29.360
+Endi SQLite ga kelsak: unda boolean ham,
+UUID ham, enum ham mutlaqo mavjud emas!
+
+10
+01:29.490 --> 01:35.130
+Boolean o‘rniga nol va bir butun sonlari saqlanadi,
+ammo ustunga matn yozsangiz ham baza xato bermaydi.
+
+11
+01:35.260 --> 01:42.690
+UUID funksiyasi esa bazada umuman yo‘q, uni ilovaning o‘zida
+yaratish kerak. Enum o‘rniga esa CHECK cheklovidan foydalaniladi.
+
+12
+01:45.440 --> 01:51.980
+Birinchi tuzoq: WHERE NOT faol deb yozsangiz, NULL
+qiymatli qatorlar yo‘qoladi. Doimo IS NOT TRUE ishlating.
+
+13
+01:52.130 --> 02:00.840
+Ikkinchi tuzoq: MySQL da teng TRUE yozishdan saqlaning. Uchinchi tuzoq: UUID
+ni matn qilib saqlasangiz, ikki yarim baravar ko‘p disk joyi isrof bo‘ladi.
+
+14
+02:00.910 --> 02:09.830
+To‘rtinchi tuzoq: PostgreSQL enum dan qiymatni o‘chirib bo‘lmaydi. Agar
+ro‘yxat tez o‘zgaruvchan bo‘lsa, alohida jadval va tashqi kalit ishlating.
+
+15
+02:13.100 --> 02:19.800
+Xulosa: PostgreSQL barcha standartlarga to‘liq
+javob beruvchi eng mukammal va xavfsiz tizimdir.
+
+16
+02:20.070 --> 02:27.370
+Shu bilan to‘qqizinchi bob yakunlandi. Keyingi bobda NULL qiymati
+va ma’lumot turlarini o‘girish qoidalari bilan tanishamiz!

@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:18.054
+Kirish: psql terminalida jonli sinovlar
+
+00:18.054 --> 00:37.990
+Boolean: Kiritish shakllari va butun son xatosi
+
+00:37.990 --> 01:01.823
+Boolean va NULL: WHERE filtri tuzog‘i
+
+01:01.823 --> 01:25.413
+UUIDv4 va UUIDv7: Hajm va vaqt tamg‘asi
+
+01:25.413 --> 01:49.400
+Enum amalda: Tartib va ALTER TYPE
+
+01:49.400 --> 02:07.340
+Xulosa

@@ -1,0 +1,1718 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Uchinchi qismda MySQL va SQLite da boolean, UUID va enum tushunchalariga qanday yondashilgani, hamda oltita xavfli tuzoqni tahlil qilamiz.",
+    "show": "Uchinchi qismda MySQL va SQLite da boolean, UUID va enum tushunchalariga qanday yondashilgani, hamda oltita xavfli tuzoqni tahlil qilamiz.",
+    "say": "Uchinchi qismda May es-kyu-el va Es-kyu-layt da boolean, UUID va enum tushunchalariga qanday yondashilgani, hamda oltita xavfli tuzoqni tahlil qilamiz.",
+    "a0": 0.28,
+    "a1": 9.43,
+    "words": [
+      {
+        "w": "Uchinchi",
+        "s": 0.28,
+        "e": 0.58
+      },
+      {
+        "w": "qismda",
+        "s": 0.62,
+        "e": 0.98
+      },
+      {
+        "w": "May",
+        "s": 1.22,
+        "e": 1.4
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 1.42,
+        "e": 1.86
+      },
+      {
+        "w": "va",
+        "s": 1.96,
+        "e": 2.04
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 2.14,
+        "e": 2.66
+      },
+      {
+        "w": "da",
+        "s": 2.7,
+        "e": 2.8
+      },
+      {
+        "w": "boolean,",
+        "s": 2.98,
+        "e": 3.4
+      },
+      {
+        "w": "UUID",
+        "s": 3.7,
+        "e": 4.14
+      },
+      {
+        "w": "va",
+        "s": 4.44,
+        "e": 4.52
+      },
+      {
+        "w": "enum",
+        "s": 4.78,
+        "e": 5.06
+      },
+      {
+        "w": "tushunchalariga",
+        "s": 5.16,
+        "e": 5.76
+      },
+      {
+        "w": "qanday",
+        "s": 5.84,
+        "e": 6.14
+      },
+      {
+        "w": "yondashilgani,",
+        "s": 6.18,
+        "e": 6.8
+      },
+      {
+        "w": "hamda",
+        "s": 7.1,
+        "e": 7.36
+      },
+      {
+        "w": "oltita",
+        "s": 7.59,
+        "e": 7.91
+      },
+      {
+        "w": "xavfli",
+        "s": 7.97,
+        "e": 8.27
+      },
+      {
+        "w": "tuzoqni",
+        "s": 8.31,
+        "e": 8.69
+      },
+      {
+        "w": "tahlil",
+        "s": 8.75,
+        "e": 9.07
+      },
+      {
+        "w": "qilamiz.",
+        "s": 9.11,
+        "e": 9.43
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "intro",
+    "text": "Ko‘p dasturchilar bu turlarni barcha bazalarda bir xil ishlaydi deb o‘ylashadi. Biroq MySQL va SQLite dagi farqlar kutilmagan xatolarga sabab bo‘lishi mumkin.",
+    "show": "Ko‘p dasturchilar bu turlarni barcha bazalarda bir xil ishlaydi deb o‘ylashadi. Biroq MySQL va SQLite dagi farqlar kutilmagan xatolarga sabab bo‘lishi mumkin.",
+    "say": "Ko‘p dasturchilar bu turlarni barcha bazalarda bir xil ishlaydi deb o‘ylashadi. Biroq May es-kyu-el va Es-kyu-layt dagi farqlar kutilmagan xatolarga sabab bo‘lishi mumkin.",
+    "a0": 10.11,
+    "a1": 18.35,
+    "words": [
+      {
+        "w": "Ko‘p",
+        "s": 10.11,
+        "e": 10.27
+      },
+      {
+        "w": "dasturchilar",
+        "s": 10.31,
+        "e": 10.91
+      },
+      {
+        "w": "bu",
+        "s": 11.03,
+        "e": 11.09
+      },
+      {
+        "w": "turlarni",
+        "s": 11.17,
+        "e": 11.61
+      },
+      {
+        "w": "barcha",
+        "s": 11.71,
+        "e": 12.01
+      },
+      {
+        "w": "bazalarda",
+        "s": 12.07,
+        "e": 12.57
+      },
+      {
+        "w": "bir",
+        "s": 12.63,
+        "e": 12.75
+      },
+      {
+        "w": "xil",
+        "s": 12.79,
+        "e": 12.91
+      },
+      {
+        "w": "ishlaydi",
+        "s": 12.93,
+        "e": 13.29
+      },
+      {
+        "w": "deb",
+        "s": 13.31,
+        "e": 13.45
+      },
+      {
+        "w": "o‘ylashadi.",
+        "s": 13.47,
+        "e": 13.87
+      },
+      {
+        "w": "Biroq",
+        "s": 14.17,
+        "e": 14.41
+      },
+      {
+        "w": "May",
+        "s": 14.49,
+        "e": 14.63
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 14.65,
+        "e": 15.05
+      },
+      {
+        "w": "va",
+        "s": 15.11,
+        "e": 15.17
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 15.29,
+        "e": 15.77
+      },
+      {
+        "w": "dagi",
+        "s": 15.79,
+        "e": 15.99
+      },
+      {
+        "w": "farqlar",
+        "s": 16.03,
+        "e": 16.41
+      },
+      {
+        "w": "kutilmagan",
+        "s": 16.47,
+        "e": 16.93
+      },
+      {
+        "w": "xatolarga",
+        "s": 16.97,
+        "e": 17.45
+      },
+      {
+        "w": "sabab",
+        "s": 17.51,
+        "e": 17.75
+      },
+      {
+        "w": "bo‘lishi",
+        "s": 17.79,
+        "e": 18.05
+      },
+      {
+        "w": "mumkin.",
+        "s": 18.07,
+        "e": 18.35
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "mysql_bool",
+    "text": "MySQL da aslida boolean turi yo‘q! Baza boolean deb yozilgan ustunlarni oddiy tayni-int bir turiga aylantiradi.",
+    "show": "MySQL da aslida boolean turi yo‘q! Baza boolean deb yozilgan ustunlarni oddiy tayni-int bir turiga aylantiradi.",
+    "say": "May es-kyu-el da aslida boolean turi yo‘q! Baza boolean deb yozilgan ustunlarni oddiy tayni-int bir turiga aylantiradi.",
+    "a0": 19.09,
+    "a1": 26.08,
+    "words": [
+      {
+        "w": "May",
+        "s": 19.09,
+        "e": 19.25
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 19.27,
+        "e": 19.61
+      },
+      {
+        "w": "da",
+        "s": 19.63,
+        "e": 19.69
+      },
+      {
+        "w": "aslida",
+        "s": 19.73,
+        "e": 20.05
+      },
+      {
+        "w": "boolean",
+        "s": 20.21,
+        "e": 20.53
+      },
+      {
+        "w": "turi",
+        "s": 20.61,
+        "e": 20.81
+      },
+      {
+        "w": "yo‘q!",
+        "s": 20.85,
+        "e": 21.15
+      },
+      {
+        "w": "Baza",
+        "s": 21.55,
+        "e": 21.81
+      },
+      {
+        "w": "boolean",
+        "s": 21.93,
+        "e": 22.25
+      },
+      {
+        "w": "deb",
+        "s": 22.29,
+        "e": 22.41
+      },
+      {
+        "w": "yozilgan",
+        "s": 22.45,
+        "e": 22.84
+      },
+      {
+        "w": "ustunlarni",
+        "s": 22.9,
+        "e": 23.4
+      },
+      {
+        "w": "oddiy",
+        "s": 23.8,
+        "e": 24.06
+      },
+      {
+        "w": "tayni-int",
+        "s": 24.24,
+        "e": 24.96
+      },
+      {
+        "w": "bir",
+        "s": 25.08,
+        "e": 25.24
+      },
+      {
+        "w": "turiga",
+        "s": 25.32,
+        "e": 25.56
+      },
+      {
+        "w": "aylantiradi.",
+        "s": 25.6,
+        "e": 26.08
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "mysql_bool",
+    "text": "Shu bois boolean ustuniga ikki yoki manfiy besh kabi sonlar ham bemalol yoziladi. Shart tekshiruvida noldan farqli barcha sonlar rost hisoblanadi.",
+    "show": "Shu bois boolean ustuniga ikki yoki manfiy besh kabi sonlar ham bemalol yoziladi. Shart tekshiruvida noldan farqli barcha sonlar rost hisoblanadi.",
+    "say": "Shu bois boolean ustuniga ikki yoki manfiy besh kabi sonlar ham bemalol yoziladi. Shart tekshiruvida noldan farqli barcha sonlar rost hisoblanadi.",
+    "a0": 26.38,
+    "a1": 34.84,
+    "words": [
+      {
+        "w": "Shu",
+        "s": 26.38,
+        "e": 26.46
+      },
+      {
+        "w": "bois",
+        "s": 26.5,
+        "e": 26.76
+      },
+      {
+        "w": "boolean",
+        "s": 26.86,
+        "e": 27.18
+      },
+      {
+        "w": "ustuniga",
+        "s": 27.22,
+        "e": 27.62
+      },
+      {
+        "w": "ikki",
+        "s": 27.86,
+        "e": 28.18
+      },
+      {
+        "w": "yoki",
+        "s": 28.18,
+        "e": 28.6
+      },
+      {
+        "w": "manfiy",
+        "s": 28.7,
+        "e": 29.02
+      },
+      {
+        "w": "besh",
+        "s": 29.1,
+        "e": 29.3
+      },
+      {
+        "w": "kabi",
+        "s": 29.32,
+        "e": 29.52
+      },
+      {
+        "w": "sonlar",
+        "s": 29.56,
+        "e": 29.88
+      },
+      {
+        "w": "ham",
+        "s": 29.9,
+        "e": 30.0
+      },
+      {
+        "w": "bemalol",
+        "s": 30.08,
+        "e": 30.46
+      },
+      {
+        "w": "yoziladi.",
+        "s": 30.52,
+        "e": 30.9
+      },
+      {
+        "w": "Shart",
+        "s": 31.32,
+        "e": 31.54
+      },
+      {
+        "w": "tekshiruvida",
+        "s": 31.56,
+        "e": 32.06
+      },
+      {
+        "w": "noldan",
+        "s": 32.38,
+        "e": 32.72
+      },
+      {
+        "w": "farqli",
+        "s": 32.74,
+        "e": 33.06
+      },
+      {
+        "w": "barcha",
+        "s": 33.14,
+        "e": 33.4
+      },
+      {
+        "w": "sonlar",
+        "s": 33.44,
+        "e": 33.76
+      },
+      {
+        "w": "rost",
+        "s": 34.06,
+        "e": 34.28
+      },
+      {
+        "w": "hisoblanadi.",
+        "s": 34.32,
+        "e": 34.84
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "mysql_bool",
+    "text": "Ammo ulkan tuzoq shuki: agar WHERE ustun teng TRUE deb yozsangiz, baza faqat birga teng qatorlarni topadi va ikki yoki manfiy besh qatorlari tushib qoladi!",
+    "show": "Ammo ulkan tuzoq shuki: agar WHERE ustun teng TRUE deb yozsangiz, baza faqat birga teng qatorlarni topadi va ikki yoki manfiy besh qatorlari tushib qoladi!",
+    "say": "Ammo ulkan tuzoq shuki: agar WHERE ustun teng TRUE deb yozsangiz, baza faqat birga teng qatorlarni topadi va ikki yoki manfiy besh qatorlari tushib qoladi!",
+    "a0": 35.48,
+    "a1": 44.75,
+    "words": [
+      {
+        "w": "Ammo",
+        "s": 35.48,
+        "e": 35.66
+      },
+      {
+        "w": "ulkan",
+        "s": 35.76,
+        "e": 36.02
+      },
+      {
+        "w": "tuzoq",
+        "s": 36.06,
+        "e": 36.28
+      },
+      {
+        "w": "shuki:",
+        "s": 36.32,
+        "e": 36.6
+      },
+      {
+        "w": "agar",
+        "s": 36.8,
+        "e": 37.08
+      },
+      {
+        "w": "WHERE",
+        "s": 37.42,
+        "e": 37.81
+      },
+      {
+        "w": "ustun",
+        "s": 37.85,
+        "e": 38.17
+      },
+      {
+        "w": "teng",
+        "s": 38.27,
+        "e": 38.49
+      },
+      {
+        "w": "TRUE",
+        "s": 38.57,
+        "e": 38.83
+      },
+      {
+        "w": "deb",
+        "s": 38.87,
+        "e": 39.03
+      },
+      {
+        "w": "yozsangiz,",
+        "s": 39.09,
+        "e": 39.57
+      },
+      {
+        "w": "baza",
+        "s": 39.89,
+        "e": 40.11
+      },
+      {
+        "w": "faqat",
+        "s": 40.17,
+        "e": 40.43
+      },
+      {
+        "w": "birga",
+        "s": 40.51,
+        "e": 40.75
+      },
+      {
+        "w": "teng",
+        "s": 40.81,
+        "e": 40.97
+      },
+      {
+        "w": "qatorlarni",
+        "s": 40.99,
+        "e": 41.53
+      },
+      {
+        "w": "topadi",
+        "s": 41.57,
+        "e": 41.89
+      },
+      {
+        "w": "va",
+        "s": 42.15,
+        "e": 42.21
+      },
+      {
+        "w": "ikki",
+        "s": 42.37,
+        "e": 42.65
+      },
+      {
+        "w": "yoki",
+        "s": 42.65,
+        "e": 42.95
+      },
+      {
+        "w": "manfiy",
+        "s": 43.03,
+        "e": 43.33
+      },
+      {
+        "w": "besh",
+        "s": 43.41,
+        "e": 43.61
+      },
+      {
+        "w": "qatorlari",
+        "s": 43.65,
+        "e": 44.15
+      },
+      {
+        "w": "tushib",
+        "s": 44.19,
+        "e": 44.41
+      },
+      {
+        "w": "qoladi!",
+        "s": 44.43,
+        "e": 44.75
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "mysql_uuid_enum",
+    "text": "MySQL da alohida UUID tipi ham mavjud emas. O‘rnatilgan UUID funksiyasi birinchi versiyadagi vaqt va tarmoq manziliga asoslangan qiymat beradi.",
+    "show": "MySQL da alohida UUID tipi ham mavjud emas. O‘rnatilgan UUID funksiyasi birinchi versiyadagi vaqt va tarmoq manziliga asoslangan qiymat beradi.",
+    "say": "May es-kyu-el da alohida UUID tipi ham mavjud emas. O‘rnatilgan UUID funksiyasi birinchi versiyadagi vaqt va tarmoq manziliga asoslangan qiymat beradi.",
+    "a0": 45.47,
+    "a1": 54.2,
+    "words": [
+      {
+        "w": "May",
+        "s": 45.47,
+        "e": 45.63
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 45.65,
+        "e": 46.01
+      },
+      {
+        "w": "da",
+        "s": 46.05,
+        "e": 46.11
+      },
+      {
+        "w": "alohida",
+        "s": 46.15,
+        "e": 46.59
+      },
+      {
+        "w": "UUID",
+        "s": 46.93,
+        "e": 47.37
+      },
+      {
+        "w": "tipi",
+        "s": 47.53,
+        "e": 47.75
+      },
+      {
+        "w": "ham",
+        "s": 47.79,
+        "e": 47.93
+      },
+      {
+        "w": "mavjud",
+        "s": 47.97,
+        "e": 48.25
+      },
+      {
+        "w": "emas.",
+        "s": 48.31,
+        "e": 48.51
+      },
+      {
+        "w": "O‘rnatilgan",
+        "s": 48.97,
+        "e": 49.53
+      },
+      {
+        "w": "UUID",
+        "s": 49.77,
+        "e": 50.19
+      },
+      {
+        "w": "funksiyasi",
+        "s": 50.35,
+        "e": 50.87
+      },
+      {
+        "w": "birinchi",
+        "s": 50.97,
+        "e": 51.27
+      },
+      {
+        "w": "versiyadagi",
+        "s": 51.31,
+        "e": 51.79
+      },
+      {
+        "w": "vaqt",
+        "s": 51.87,
+        "e": 52.09
+      },
+      {
+        "w": "va",
+        "s": 52.13,
+        "e": 52.19
+      },
+      {
+        "w": "tarmoq",
+        "s": 52.25,
+        "e": 52.6
+      },
+      {
+        "w": "manziliga",
+        "s": 52.64,
+        "e": 53.0
+      },
+      {
+        "w": "asoslangan",
+        "s": 53.04,
+        "e": 53.56
+      },
+      {
+        "w": "qiymat",
+        "s": 53.6,
+        "e": 53.9
+      },
+      {
+        "w": "beradi.",
+        "s": 53.92,
+        "e": 54.2
+      }
+    ]
+  },
+  {
+    "id": "L7",
+    "scene": "mysql_uuid_enum",
+    "text": "Ushbu qiymatlar oldindan taxmin qilinishi mumkin, shuning uchun ularni maxfiy token sifatida ishlatish xavflidir. Ixcham saqlash uchun UUID TO BIN funksiyasi ishlatiladi.",
+    "show": "Ushbu qiymatlar oldindan taxmin qilinishi mumkin, shuning uchun ularni maxfiy token sifatida ishlatish xavflidir. Ixcham saqlash uchun UUID TO BIN funksiyasi ishlatiladi.",
+    "say": "Ushbu qiymatlar oldindan taxmin qilinishi mumkin, shuning uchun ularni maxfiy token sifatida ishlatish xavflidir. Ixcham saqlash uchun UUID TO BIN funksiyasi ishlatiladi.",
+    "a0": 54.62,
+    "a1": 63.42,
+    "words": [
+      {
+        "w": "Ushbu",
+        "s": 54.62,
+        "e": 54.82
+      },
+      {
+        "w": "qiymatlar",
+        "s": 54.88,
+        "e": 55.32
+      },
+      {
+        "w": "oldindan",
+        "s": 55.38,
+        "e": 55.68
+      },
+      {
+        "w": "taxmin",
+        "s": 55.72,
+        "e": 56.0
+      },
+      {
+        "w": "qilinishi",
+        "s": 56.04,
+        "e": 56.42
+      },
+      {
+        "w": "mumkin,",
+        "s": 56.44,
+        "e": 56.76
+      },
+      {
+        "w": "shuning",
+        "s": 56.84,
+        "e": 57.06
+      },
+      {
+        "w": "uchun",
+        "s": 57.08,
+        "e": 57.28
+      },
+      {
+        "w": "ularni",
+        "s": 57.32,
+        "e": 57.64
+      },
+      {
+        "w": "maxfiy",
+        "s": 57.92,
+        "e": 58.22
+      },
+      {
+        "w": "token",
+        "s": 58.3,
+        "e": 58.62
+      },
+      {
+        "w": "sifatida",
+        "s": 58.66,
+        "e": 59.0
+      },
+      {
+        "w": "ishlatish",
+        "s": 59.04,
+        "e": 59.42
+      },
+      {
+        "w": "xavflidir.",
+        "s": 59.46,
+        "e": 59.92
+      },
+      {
+        "w": "Ixcham",
+        "s": 60.38,
+        "e": 60.66
+      },
+      {
+        "w": "saqlash",
+        "s": 60.7,
+        "e": 61.02
+      },
+      {
+        "w": "uchun",
+        "s": 61.02,
+        "e": 61.2
+      },
+      {
+        "w": "UUID",
+        "s": 61.44,
+        "e": 61.84
+      },
+      {
+        "w": "TO",
+        "s": 62.02,
+        "e": 62.1
+      },
+      {
+        "w": "BIN",
+        "s": 62.24,
+        "e": 62.42
+      },
+      {
+        "w": "funksiyasi",
+        "s": 62.5,
+        "e": 62.92
+      },
+      {
+        "w": "ishlatiladi.",
+        "s": 62.96,
+        "e": 63.42
+      }
+    ]
+  },
+  {
+    "id": "L8",
+    "scene": "mysql_uuid_enum",
+    "text": "MySQL da enum ustun ichida e’lon qilinadi va ichkarida birdan boshlanuvchi raqamlar bilan saqlanadi. Noto‘g‘ri qiymat kiritilsa, eski rejimlarda nol indeksli bo‘sh satrga aylanadi.",
+    "show": "MySQL da enum ustun ichida e’lon qilinadi va ichkarida birdan boshlanuvchi raqamlar bilan saqlanadi. Noto‘g‘ri qiymat kiritilsa, eski rejimlarda nol indeksli bo‘sh satrga aylanadi.",
+    "say": "May es-kyu-el da enum ustun ichida e’lon qilinadi va ichkarida birdan boshlanuvchi raqamlar bilan saqlanadi. Noto‘g‘ri qiymat kiritilsa, eski rejimlarda nol indeksli bo‘sh satrga aylanadi.",
+    "a0": 64.08,
+    "a1": 74.07,
+    "words": [
+      {
+        "w": "May",
+        "s": 64.08,
+        "e": 64.22
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 64.28,
+        "e": 64.6
+      },
+      {
+        "w": "da",
+        "s": 64.64,
+        "e": 64.72
+      },
+      {
+        "w": "enum",
+        "s": 64.9,
+        "e": 65.14
+      },
+      {
+        "w": "ustun",
+        "s": 65.26,
+        "e": 65.56
+      },
+      {
+        "w": "ichida",
+        "s": 65.64,
+        "e": 65.88
+      },
+      {
+        "w": "e’lon",
+        "s": 65.98,
+        "e": 66.24
+      },
+      {
+        "w": "qilinadi",
+        "s": 66.28,
+        "e": 66.64
+      },
+      {
+        "w": "va",
+        "s": 66.76,
+        "e": 66.82
+      },
+      {
+        "w": "ichkarida",
+        "s": 66.94,
+        "e": 67.38
+      },
+      {
+        "w": "birdan",
+        "s": 67.53,
+        "e": 67.81
+      },
+      {
+        "w": "boshlanuvchi",
+        "s": 67.85,
+        "e": 68.35
+      },
+      {
+        "w": "raqamlar",
+        "s": 68.37,
+        "e": 68.77
+      },
+      {
+        "w": "bilan",
+        "s": 68.81,
+        "e": 68.97
+      },
+      {
+        "w": "saqlanadi.",
+        "s": 69.01,
+        "e": 69.47
+      },
+      {
+        "w": "Noto‘g‘ri",
+        "s": 69.87,
+        "e": 70.25
+      },
+      {
+        "w": "qiymat",
+        "s": 70.29,
+        "e": 70.55
+      },
+      {
+        "w": "kiritilsa,",
+        "s": 70.61,
+        "e": 71.03
+      },
+      {
+        "w": "eski",
+        "s": 71.21,
+        "e": 71.41
+      },
+      {
+        "w": "rejimlarda",
+        "s": 71.45,
+        "e": 71.99
+      },
+      {
+        "w": "nol",
+        "s": 72.29,
+        "e": 72.47
+      },
+      {
+        "w": "indeksli",
+        "s": 72.57,
+        "e": 73.01
+      },
+      {
+        "w": "bo‘sh",
+        "s": 73.11,
+        "e": 73.31
+      },
+      {
+        "w": "satrga",
+        "s": 73.35,
+        "e": 73.67
+      },
+      {
+        "w": "aylanadi.",
+        "s": 73.71,
+        "e": 74.07
+      }
+    ]
+  },
+  {
+    "id": "L9",
+    "scene": "sqlite_tiplar",
+    "text": "Endi SQLite ga kelsak: unda boolean ham, UUID ham, enum ham mutlaqo mavjud emas!",
+    "show": "Endi SQLite ga kelsak: unda boolean ham, UUID ham, enum ham mutlaqo mavjud emas!",
+    "say": "Endi Es-kyu-layt ga kelsak: unda boolean ham, UUID ham, enum ham mutlaqo mavjud emas!",
+    "a0": 74.71,
+    "a1": 80.17,
+    "words": [
+      {
+        "w": "Endi",
+        "s": 74.71,
+        "e": 74.89
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 75.09,
+        "e": 75.63
+      },
+      {
+        "w": "ga",
+        "s": 75.65,
+        "e": 75.73
+      },
+      {
+        "w": "kelsak:",
+        "s": 75.77,
+        "e": 76.11
+      },
+      {
+        "w": "unda",
+        "s": 76.35,
+        "e": 76.55
+      },
+      {
+        "w": "boolean",
+        "s": 76.69,
+        "e": 77.07
+      },
+      {
+        "w": "ham,",
+        "s": 77.13,
+        "e": 77.35
+      },
+      {
+        "w": "UUID",
+        "s": 77.61,
+        "e": 78.01
+      },
+      {
+        "w": "ham,",
+        "s": 78.17,
+        "e": 78.35
+      },
+      {
+        "w": "enum",
+        "s": 78.51,
+        "e": 78.75
+      },
+      {
+        "w": "ham",
+        "s": 78.81,
+        "e": 78.97
+      },
+      {
+        "w": "mutlaqo",
+        "s": 79.07,
+        "e": 79.51
+      },
+      {
+        "w": "mavjud",
+        "s": 79.59,
+        "e": 79.91
+      },
+      {
+        "w": "emas!",
+        "s": 79.95,
+        "e": 80.17
+      }
+    ]
+  },
+  {
+    "id": "L10",
+    "scene": "sqlite_tiplar",
+    "text": "Boolean o‘rniga nol va bir butun sonlari saqlanadi, ammo ustunga matn yozsangiz ham baza xato bermaydi.",
+    "show": "Boolean o‘rniga nol va bir butun sonlari saqlanadi, ammo ustunga matn yozsangiz ham baza xato bermaydi.",
+    "say": "Boolean o‘rniga nol va bir butun sonlari saqlanadi, ammo ustunga matn yozsangiz ham baza xato bermaydi.",
+    "a0": 80.75,
+    "a1": 85.94,
+    "words": [
+      {
+        "w": "Boolean",
+        "s": 80.75,
+        "e": 81.05
+      },
+      {
+        "w": "o‘rniga",
+        "s": 81.09,
+        "e": 81.39
+      },
+      {
+        "w": "nol",
+        "s": 81.47,
+        "e": 81.65
+      },
+      {
+        "w": "va",
+        "s": 81.69,
+        "e": 81.77
+      },
+      {
+        "w": "bir",
+        "s": 81.89,
+        "e": 82.03
+      },
+      {
+        "w": "butun",
+        "s": 82.09,
+        "e": 82.33
+      },
+      {
+        "w": "sonlari",
+        "s": 82.37,
+        "e": 82.74
+      },
+      {
+        "w": "saqlanadi,",
+        "s": 82.78,
+        "e": 83.24
+      },
+      {
+        "w": "ammo",
+        "s": 83.36,
+        "e": 83.54
+      },
+      {
+        "w": "ustunga",
+        "s": 83.66,
+        "e": 84.02
+      },
+      {
+        "w": "matn",
+        "s": 84.08,
+        "e": 84.34
+      },
+      {
+        "w": "yozsangiz",
+        "s": 84.4,
+        "e": 84.82
+      },
+      {
+        "w": "ham",
+        "s": 84.84,
+        "e": 84.96
+      },
+      {
+        "w": "baza",
+        "s": 85.02,
+        "e": 85.22
+      },
+      {
+        "w": "xato",
+        "s": 85.26,
+        "e": 85.48
+      },
+      {
+        "w": "bermaydi.",
+        "s": 85.56,
+        "e": 85.94
+      }
+    ]
+  },
+  {
+    "id": "L11",
+    "scene": "sqlite_tiplar",
+    "text": "UUID funksiyasi esa bazada umuman yo‘q, uni ilovaning o‘zida yaratish kerak. Enum o‘rniga esa CHECK cheklovidan foydalaniladi.",
+    "show": "UUID funksiyasi esa bazada umuman yo‘q, uni ilovaning o‘zida yaratish kerak. Enum o‘rniga esa CHECK cheklovidan foydalaniladi.",
+    "say": "UUID funksiyasi esa bazada umuman yo‘q, uni ilovaning o‘zida yaratish kerak. Enum o‘rniga esa chek cheklovidan foydalaniladi.",
+    "a0": 86.52,
+    "a1": 93.5,
+    "words": [
+      {
+        "w": "UUID",
+        "s": 86.52,
+        "e": 86.9
+      },
+      {
+        "w": "funksiyasi",
+        "s": 87.02,
+        "e": 87.42
+      },
+      {
+        "w": "esa",
+        "s": 87.46,
+        "e": 87.6
+      },
+      {
+        "w": "bazada",
+        "s": 87.68,
+        "e": 88.0
+      },
+      {
+        "w": "umuman",
+        "s": 88.12,
+        "e": 88.5
+      },
+      {
+        "w": "yo‘q,",
+        "s": 88.54,
+        "e": 88.7
+      },
+      {
+        "w": "uni",
+        "s": 88.86,
+        "e": 89.0
+      },
+      {
+        "w": "ilovaning",
+        "s": 89.06,
+        "e": 89.5
+      },
+      {
+        "w": "o‘zida",
+        "s": 89.62,
+        "e": 89.88
+      },
+      {
+        "w": "yaratish",
+        "s": 89.92,
+        "e": 90.24
+      },
+      {
+        "w": "kerak.",
+        "s": 90.26,
+        "e": 90.48
+      },
+      {
+        "w": "Enum",
+        "s": 90.98,
+        "e": 91.22
+      },
+      {
+        "w": "o‘rniga",
+        "s": 91.26,
+        "e": 91.5
+      },
+      {
+        "w": "esa",
+        "s": 91.56,
+        "e": 91.7
+      },
+      {
+        "w": "chek",
+        "s": 92.02,
+        "e": 92.24
+      },
+      {
+        "w": "cheklovidan",
+        "s": 92.28,
+        "e": 92.78
+      },
+      {
+        "w": "foydalaniladi.",
+        "s": 92.82,
+        "e": 93.5
+      }
+    ]
+  },
+  {
+    "id": "L12",
+    "scene": "tuzoqlar",
+    "text": "Birinchi tuzoq: WHERE NOT faol deb yozsangiz, NULL qiymatli qatorlar yo‘qoladi. Doimo IS NOT TRUE ishlating.",
+    "show": "Birinchi tuzoq: WHERE NOT faol deb yozsangiz, NULL qiymatli qatorlar yo‘qoladi. Doimo IS NOT TRUE ishlating.",
+    "say": "Birinchi tuzoq: WHERE NOT faol deb yozsangiz, NULL qiymatli qatorlar yo‘qoladi. Doimo IS NOT TRUE ishlating.",
+    "a0": 94.1,
+    "a1": 100.19,
+    "words": [
+      {
+        "w": "Birinchi",
+        "s": 94.1,
+        "e": 94.38
+      },
+      {
+        "w": "tuzoq:",
+        "s": 94.42,
+        "e": 94.7
+      },
+      {
+        "w": "WHERE",
+        "s": 94.92,
+        "e": 95.18
+      },
+      {
+        "w": "NOT",
+        "s": 95.28,
+        "e": 95.48
+      },
+      {
+        "w": "faol",
+        "s": 95.58,
+        "e": 95.9
+      },
+      {
+        "w": "deb",
+        "s": 95.94,
+        "e": 96.08
+      },
+      {
+        "w": "yozsangiz,",
+        "s": 96.1,
+        "e": 96.56
+      },
+      {
+        "w": "NULL",
+        "s": 96.8,
+        "e": 96.98
+      },
+      {
+        "w": "qiymatli",
+        "s": 97.04,
+        "e": 97.44
+      },
+      {
+        "w": "qatorlar",
+        "s": 97.51,
+        "e": 97.95
+      },
+      {
+        "w": "yo‘qoladi.",
+        "s": 97.99,
+        "e": 98.41
+      },
+      {
+        "w": "Doimo",
+        "s": 98.67,
+        "e": 99.01
+      },
+      {
+        "w": "IS",
+        "s": 99.21,
+        "e": 99.31
+      },
+      {
+        "w": "NOT",
+        "s": 99.37,
+        "e": 99.53
+      },
+      {
+        "w": "TRUE",
+        "s": 99.57,
+        "e": 99.77
+      },
+      {
+        "w": "ishlating.",
+        "s": 99.81,
+        "e": 100.19
+      }
+    ]
+  },
+  {
+    "id": "L13",
+    "scene": "tuzoqlar",
+    "text": "Ikkinchi tuzoq: MySQL da teng TRUE yozishdan saqlaning. Uchinchi tuzoq: UUID ni matn qilib saqlasangiz, ikki yarim baravar ko‘p disk joyi isrof bo‘ladi.",
+    "show": "Ikkinchi tuzoq: MySQL da teng TRUE yozishdan saqlaning. Uchinchi tuzoq: UUID ni matn qilib saqlasangiz, ikki yarim baravar ko‘p disk joyi isrof bo‘ladi.",
+    "say": "Ikkinchi tuzoq: May es-kyu-el da teng TRUE yozishdan saqlaning. Uchinchi tuzoq: UUID ni matn qilib saqlasangiz, ikki yarim baravar ko‘p disk joyi isrof bo‘ladi.",
+    "a0": 100.79,
+    "a1": 109.05,
+    "words": [
+      {
+        "w": "Ikkinchi",
+        "s": 100.79,
+        "e": 101.13
+      },
+      {
+        "w": "tuzoq:",
+        "s": 101.17,
+        "e": 101.45
+      },
+      {
+        "w": "May",
+        "s": 101.55,
+        "e": 101.69
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 101.73,
+        "e": 102.07
+      },
+      {
+        "w": "da",
+        "s": 102.09,
+        "e": 102.17
+      },
+      {
+        "w": "teng",
+        "s": 102.31,
+        "e": 102.55
+      },
+      {
+        "w": "TRUE",
+        "s": 102.63,
+        "e": 102.85
+      },
+      {
+        "w": "yozishdan",
+        "s": 102.85,
+        "e": 103.31
+      },
+      {
+        "w": "saqlaning.",
+        "s": 103.37,
+        "e": 103.79
+      },
+      {
+        "w": "Uchinchi",
+        "s": 104.15,
+        "e": 104.45
+      },
+      {
+        "w": "tuzoq:",
+        "s": 104.49,
+        "e": 104.77
+      },
+      {
+        "w": "UUID",
+        "s": 105.07,
+        "e": 105.45
+      },
+      {
+        "w": "ni",
+        "s": 105.55,
+        "e": 105.61
+      },
+      {
+        "w": "matn",
+        "s": 105.69,
+        "e": 105.93
+      },
+      {
+        "w": "qilib",
+        "s": 105.97,
+        "e": 106.13
+      },
+      {
+        "w": "saqlasangiz,",
+        "s": 106.15,
+        "e": 106.71
+      },
+      {
+        "w": "ikki",
+        "s": 106.83,
+        "e": 107.05
+      },
+      {
+        "w": "yarim",
+        "s": 107.09,
+        "e": 107.31
+      },
+      {
+        "w": "baravar",
+        "s": 107.35,
+        "e": 107.65
+      },
+      {
+        "w": "ko‘p",
+        "s": 107.71,
+        "e": 107.85
+      },
+      {
+        "w": "disk",
+        "s": 107.89,
+        "e": 108.09
+      },
+      {
+        "w": "joyi",
+        "s": 108.15,
+        "e": 108.35
+      },
+      {
+        "w": "isrof",
+        "s": 108.41,
+        "e": 108.71
+      },
+      {
+        "w": "bo‘ladi.",
+        "s": 108.77,
+        "e": 109.05
+      }
+    ]
+  },
+  {
+    "id": "L14",
+    "scene": "tuzoqlar",
+    "text": "To‘rtinchi tuzoq: PostgreSQL enum dan qiymatni o‘chirib bo‘lmaydi. Agar ro‘yxat tez o‘zgaruvchan bo‘lsa, alohida jadval va tashqi kalit ishlating.",
+    "show": "To‘rtinchi tuzoq: PostgreSQL enum dan qiymatni o‘chirib bo‘lmaydi. Agar ro‘yxat tez o‘zgaruvchan bo‘lsa, alohida jadval va tashqi kalit ishlating.",
+    "say": "To‘rtinchi tuzoq: Postgres enum dan qiymatni o‘chirib bo‘lmaydi. Agar ro‘yxat tez o‘zgaruvchan bo‘lsa, alohida jadval va tashqi kalit ishlating.",
+    "a0": 109.57,
+    "a1": 118.04,
+    "words": [
+      {
+        "w": "To‘rtinchi",
+        "s": 109.57,
+        "e": 109.97
+      },
+      {
+        "w": "tuzoq:",
+        "s": 109.99,
+        "e": 110.29
+      },
+      {
+        "w": "Postgres",
+        "s": 110.43,
+        "e": 110.87
+      },
+      {
+        "w": "enum",
+        "s": 110.95,
+        "e": 111.17
+      },
+      {
+        "w": "dan",
+        "s": 111.21,
+        "e": 111.35
+      },
+      {
+        "w": "qiymatni",
+        "s": 111.41,
+        "e": 111.81
+      },
+      {
+        "w": "o‘chirib",
+        "s": 111.89,
+        "e": 112.21
+      },
+      {
+        "w": "bo‘lmaydi.",
+        "s": 112.27,
+        "e": 112.7
+      },
+      {
+        "w": "Agar",
+        "s": 113.4,
+        "e": 113.68
+      },
+      {
+        "w": "ro‘yxat",
+        "s": 113.74,
+        "e": 114.1
+      },
+      {
+        "w": "tez",
+        "s": 114.2,
+        "e": 114.42
+      },
+      {
+        "w": "o‘zgaruvchan",
+        "s": 114.52,
+        "e": 115.06
+      },
+      {
+        "w": "bo‘lsa,",
+        "s": 115.12,
+        "e": 115.38
+      },
+      {
+        "w": "alohida",
+        "s": 115.76,
+        "e": 116.18
+      },
+      {
+        "w": "jadval",
+        "s": 116.26,
+        "e": 116.66
+      },
+      {
+        "w": "va",
+        "s": 116.74,
+        "e": 116.8
+      },
+      {
+        "w": "tashqi",
+        "s": 117.0,
+        "e": 117.32
+      },
+      {
+        "w": "kalit",
+        "s": 117.36,
+        "e": 117.62
+      },
+      {
+        "w": "ishlating.",
+        "s": 117.64,
+        "e": 118.04
+      }
+    ]
+  },
+  {
+    "id": "L15",
+    "scene": "xulosa",
+    "text": "Xulosa: PostgreSQL barcha standartlarga to‘liq javob beruvchi eng mukammal va xavfsiz tizimdir.",
+    "show": "Xulosa: PostgreSQL barcha standartlarga to‘liq javob beruvchi eng mukammal va xavfsiz tizimdir.",
+    "say": "Xulosa: Postgres barcha standartlarga to‘liq javob beruvchi eng mukammal va xavfsiz tizimdir.",
+    "a0": 119.16,
+    "a1": 125.41,
+    "words": [
+      {
+        "w": "Xulosa:",
+        "s": 119.16,
+        "e": 119.58
+      },
+      {
+        "w": "Postgres",
+        "s": 120.1,
+        "e": 120.6
+      },
+      {
+        "w": "barcha",
+        "s": 120.74,
+        "e": 121.04
+      },
+      {
+        "w": "standartlarga",
+        "s": 121.1,
+        "e": 121.78
+      },
+      {
+        "w": "to‘liq",
+        "s": 121.9,
+        "e": 122.22
+      },
+      {
+        "w": "javob",
+        "s": 122.3,
+        "e": 122.58
+      },
+      {
+        "w": "beruvchi",
+        "s": 122.64,
+        "e": 123.02
+      },
+      {
+        "w": "eng",
+        "s": 123.39,
+        "e": 123.55
+      },
+      {
+        "w": "mukammal",
+        "s": 123.63,
+        "e": 124.19
+      },
+      {
+        "w": "va",
+        "s": 124.25,
+        "e": 124.33
+      },
+      {
+        "w": "xavfsiz",
+        "s": 124.57,
+        "e": 124.97
+      },
+      {
+        "w": "tizimdir.",
+        "s": 125.01,
+        "e": 125.41
+      }
+    ]
+  },
+  {
+    "id": "L16",
+    "scene": "xulosa",
+    "text": "Shu bilan to‘qqizinchi bob yakunlandi. Keyingi bobda NULL qiymati va ma’lumot turlarini o‘girish qoidalari bilan tanishamiz!",
+    "show": "Shu bilan to‘qqizinchi bob yakunlandi. Keyingi bobda NULL qiymati va ma’lumot turlarini o‘girish qoidalari bilan tanishamiz!",
+    "say": "Shu bilan to‘qqizinchi bob yakunlandi. Keyingi bobda NULL qiymati va ma’lumot turlarini o‘girish qoidalari bilan tanishamiz!",
+    "a0": 126.13,
+    "a1": 132.98,
+    "words": [
+      {
+        "w": "Shu",
+        "s": 126.13,
+        "e": 126.21
+      },
+      {
+        "w": "bilan",
+        "s": 126.27,
+        "e": 126.49
+      },
+      {
+        "w": "to‘qqizinchi",
+        "s": 126.53,
+        "e": 127.01
+      },
+      {
+        "w": "bob",
+        "s": 127.05,
+        "e": 127.19
+      },
+      {
+        "w": "yakunlandi.",
+        "s": 127.25,
+        "e": 127.77
+      },
+      {
+        "w": "Keyingi",
+        "s": 128.27,
+        "e": 128.59
+      },
+      {
+        "w": "bobda",
+        "s": 128.63,
+        "e": 128.93
+      },
+      {
+        "w": "NULL",
+        "s": 129.29,
+        "e": 129.47
+      },
+      {
+        "w": "qiymati",
+        "s": 129.53,
+        "e": 129.93
+      },
+      {
+        "w": "va",
+        "s": 130.06,
+        "e": 130.14
+      },
+      {
+        "w": "ma’lumot",
+        "s": 130.38,
+        "e": 130.84
+      },
+      {
+        "w": "turlarini",
+        "s": 130.88,
+        "e": 131.34
+      },
+      {
+        "w": "o‘girish",
+        "s": 131.44,
+        "e": 131.76
+      },
+      {
+        "w": "qoidalari",
+        "s": 131.82,
+        "e": 132.28
+      },
+      {
+        "w": "bilan",
+        "s": 132.3,
+        "e": 132.48
+      },
+      {
+        "w": "tanishamiz!",
+        "s": 132.5,
+        "e": 132.98
+      }
+    ]
+  }
+]
