@@ -8,6 +8,7 @@ Namunalar:
 - `sql-03/` (3-bob uchun 3 ta video: `q1-tushuncha`, `q2-kod`, `q3-dialekt` + `natijalar/` + `sql-kit.js`)
 - `sql-04/` (4-bob uchun 3 ta video: `q1-tushuncha`, `q2-kod`, `q3-dialekt` + `natijalar/` + `sql-kit.js`)
 - `sql-05/` (5-bob uchun 3 ta video: `q1-tushuncha`, `q2-kod`, `q3-dialekt` + `natijalar/` + `sql-kit.js`)
+- `sql-06/` (6-bob uchun 3 ta video: `q1-tushuncha`, `q2-kod`, `q3-dialekt` + `natijalar/` + `sql-kit.js`)
 
 Har bob uchun odatda uchta video tayyorlanadi:
 1. `q1-tushuncha` — "Tushuncha" bo'limi: nazariya va arxitektura "daftar" animatsiyasi
@@ -100,6 +101,20 @@ Komponentlar (`anim.js`):
 Harakat qoidalari: paydo bo'lish — chizilib/yozilib; ko'chish — `eio` (0,6–0,9 s); filtrlangan qator — qizil chiziq bilan
 o'chiriladi, keyin yo'qoladi; qolgan qatorlar yuqoriga suriladi; natija — yashil marker yoki "(3 rows) ✓".
 
+### 4.1 Matn sig'imi va toshishini oldini olish (Text Overflow)
+
+Videolarda kartalar, sticky yoki doska bloklaridagi matnlar blokdan chiqib ketishi (overflow) qat'iyan man etiladi.
+1. **Avtomatik o'rash (`wrap`)**: `sql-kit.js` dagi `text()` funksiyasi `wrap: kenglik` parametrini qabul qiladi va uzun gaplarni so'z chegaralari bo'yicha ko'p qatorga (`\n`) bo'ladi.
+2. **Karta kengligi bilan bog'lash**: `card(x, y, w, h)` ichida yoziladigan matnlarga `wrap: w - 40` (kamida 20-30 px padding) berilishi shart.
+3. **Avtomatik tekshiruv (`window.OVERFLOWS`)**: Har bir kadrda matn ekran yoki `wrap` chegarasidan toshsa, `window.OVERFLOWS` massiviga yoziladi. `stills.mjs` yoki avtomatik tekshiruv barcha sahnalarda `OVERFLOWS: 0` ekanligini tasdiqlashi shart.
+
+### 4.2 Terminal (`term()`) ishlatish chegarasi — keraksiz terminal chizmaslik
+
+Har qanday joyga OS terminal oynasini (`🔴 🟡 🟢` tugmali qora quti) joylayverish "daftar" uslubini buzadi va ekranni bo'sh qora qutiga aylantiradi:
+1. **`q1-tushuncha` da terminal taqiqlanadi**: Nazariya, arxitektura va tushunchalar faqat "daftar" komponentlari (`card`, `table`, `codeCard`, `outCard`, `sticky`, doodle'lar) bilan tushuntiriladi.
+2. **Oddiy qoidalar va arifmetikada terminal kerak emas**: Masalan, `10 / 4` bo'lish siri, tiplar mosligi yoki 1 qatorli ifodalarda terminal emas, chiroyli rangli formula kartalari (`card`), matematik taqqoslar va xulosa bannerlari ishlatiladi.
+3. **`q2-kod` da terminal o'lchami**: Terminal faqat psql/mysql/sqlite jonli buyruqlari uchun chap tomonda ixcham (`w: 800–880 px`) chiziladi, o'ng tomonda esa doim "daftar" tushuntirishi va doodlelari bo'ladi. Hech qachon 1-2 qatorli oddiy so'rov uchun butun ekranni egallagan 1640 px kenglikdagi bahaybat qora quti chizilmaydi.
+
 ## 5. Sinxron: so'zga bog'lash (`sync.js`)
 
 ```js
@@ -180,7 +195,9 @@ Saytga qo'yish (umumiy video — README boshiga, mavzu videosi — bobning mos b
 - [ ] `node voice.mjs --plan` — matn quloq uchun, talaffuz jadvali bo'yicha
 - [ ] `align-lines.py` — gaplar ketma-ket, so'z vaqtlari bor
 - [ ] `node stills.mjs` — har sahnadan kadr, `missing: []`, matn ustma-ust tushmaydi, pastki 150 px bo'sh
+- [ ] **Matn toshib ketmasligi (Text Overflow Check)**: `sql-kit.js` dagi `text()` funksiyasi `o.wrap` va `window.OVERFLOWS` bilan chegaralanadi. Har bir sahna va kadr tekshirilganda `window.OVERFLOWS.length === 0` bo'lishi shart! Karta yoki chegara chetidan chiqib ketgan yozuvlar renderga kiritilmaydi.
 - [ ] Miks: -16 LUFS, cho'qqi ≤ -1,5 dB; oxirgi 25 s spektrogrammasida keng chastotali chiziq yo'q
 - [ ] Saytda: video, bo'limlar, CC, telefon kengligi, konsolda xato yo'q
 - [ ] Asl nusxa Drive'da (`rclone check` — 0 differences)
 - [ ] Foydalanuvchi eshitib ma'qulladi
+

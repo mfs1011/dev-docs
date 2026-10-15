@@ -299,6 +299,7 @@
   }
 
   function render(t) {
+    window.CURRENT_T = t;
     bg();
     if (t < TM.scenes.mysql.s) sIntro(t);
     else if (t < TM.scenes.sqlite.s) sMysql(t);

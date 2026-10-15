@@ -1,0 +1,1699 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Salom! Oltinchi bobda SQL dagi barcha raqamli ma’lumot turlarini, ularning ichki xotiradagi farqlarini va hisob-kitobdagi xavfli jihatlarini ko‘rib chiqamiz.",
+    "show": "Salom! Oltinchi bobda SQL dagi barcha raqamli ma’lumot turlarini, ularning ichki xotiradagi farqlarini va hisob-kitobdagi xavfli jihatlarini ko‘rib chiqamiz.",
+    "say": "Salom! Oltinchi bobda es-kyu-el dagi barcha raqamli ma’lumot turlarini, ularning ichki xotiradagi farqlarini va hisob-kitobdagi xavfli jihatlarini ko‘rib chiqamiz.",
+    "a0": 0.24,
+    "a1": 9.51,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.24,
+        "e": 0.52
+      },
+      {
+        "w": "Oltinchi",
+        "s": 1.2,
+        "e": 1.54
+      },
+      {
+        "w": "bobda",
+        "s": 1.58,
+        "e": 1.88
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 2.0,
+        "e": 2.36
+      },
+      {
+        "w": "dagi",
+        "s": 2.4,
+        "e": 2.6
+      },
+      {
+        "w": "barcha",
+        "s": 2.72,
+        "e": 3.0
+      },
+      {
+        "w": "raqamli",
+        "s": 3.06,
+        "e": 3.42
+      },
+      {
+        "w": "ma’lumot",
+        "s": 3.5,
+        "e": 3.88
+      },
+      {
+        "w": "turlarini,",
+        "s": 3.92,
+        "e": 4.4
+      },
+      {
+        "w": "ularning",
+        "s": 4.92,
+        "e": 5.26
+      },
+      {
+        "w": "ichki",
+        "s": 5.36,
+        "e": 5.58
+      },
+      {
+        "w": "xotiradagi",
+        "s": 5.64,
+        "e": 6.16
+      },
+      {
+        "w": "farqlarini",
+        "s": 6.22,
+        "e": 6.78
+      },
+      {
+        "w": "va",
+        "s": 6.9,
+        "e": 6.98
+      },
+      {
+        "w": "hisob-kitobdagi",
+        "s": 7.1,
+        "e": 7.83
+      },
+      {
+        "w": "xavfli",
+        "s": 7.91,
+        "e": 8.23
+      },
+      {
+        "w": "jihatlarini",
+        "s": 8.29,
+        "e": 8.85
+      },
+      {
+        "w": "ko‘rib",
+        "s": 8.91,
+        "e": 9.13
+      },
+      {
+        "w": "chiqamiz.",
+        "s": 9.17,
+        "e": 9.51
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "intro",
+    "text": "Raqamli turlar uchta asosiy guruhga bo‘linadi: butun sonlar, aniq kasr sonlar va taqribiy kasr sonlar.",
+    "show": "Raqamli turlar uchta asosiy guruhga bo‘linadi: butun sonlar, aniq kasr sonlar va taqribiy kasr sonlar.",
+    "say": "Raqamli turlar uchta asosiy guruhga bo‘linadi: butun sonlar, aniq kasr sonlar va taqribiy kasr sonlar.",
+    "a0": 10.87,
+    "a1": 16.93,
+    "words": [
+      {
+        "w": "Raqamli",
+        "s": 10.87,
+        "e": 11.21
+      },
+      {
+        "w": "turlar",
+        "s": 11.27,
+        "e": 11.55
+      },
+      {
+        "w": "uchta",
+        "s": 11.61,
+        "e": 11.85
+      },
+      {
+        "w": "asosiy",
+        "s": 11.93,
+        "e": 12.27
+      },
+      {
+        "w": "guruhga",
+        "s": 12.31,
+        "e": 12.63
+      },
+      {
+        "w": "bo‘linadi:",
+        "s": 12.67,
+        "e": 13.03
+      },
+      {
+        "w": "butun",
+        "s": 13.63,
+        "e": 13.89
+      },
+      {
+        "w": "sonlar,",
+        "s": 13.91,
+        "e": 14.23
+      },
+      {
+        "w": "aniq",
+        "s": 14.71,
+        "e": 14.89
+      },
+      {
+        "w": "kasr",
+        "s": 14.97,
+        "e": 15.25
+      },
+      {
+        "w": "sonlar",
+        "s": 15.29,
+        "e": 15.61
+      },
+      {
+        "w": "va",
+        "s": 15.67,
+        "e": 15.75
+      },
+      {
+        "w": "taqribiy",
+        "s": 15.85,
+        "e": 16.27
+      },
+      {
+        "w": "kasr",
+        "s": 16.35,
+        "e": 16.63
+      },
+      {
+        "w": "sonlar.",
+        "s": 16.65,
+        "e": 16.93
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "integers",
+    "text": "Birinchi guruh — butun sonlar. PostgreSQL da ular uch xil hajmda bo‘ladi: ikki baytli smol-int, to‘rt baytli intijer, va sakkiz baytli big-int.",
+    "show": "Birinchi guruh — butun sonlar. PostgreSQL da ular uch xil hajmda bo‘ladi: ikki baytli smol-int, to‘rt baytli intijer, va sakkiz baytli big-int.",
+    "say": "Birinchi guruh — butun sonlar. Postgres da ular uch xil hajmda bo‘ladi: ikki baytli smol-int, to‘rt baytli intijer, va sakkiz baytli big-int.",
+    "a0": 17.85,
+    "a1": 26.7,
+    "words": [
+      {
+        "w": "Birinchi",
+        "s": 17.85,
+        "e": 18.13
+      },
+      {
+        "w": "guruh",
+        "s": 18.17,
+        "e": 18.39
+      },
+      {
+        "w": "—",
+        "s": 18.39,
+        "e": 18.39
+      },
+      {
+        "w": "butun",
+        "s": 18.53,
+        "e": 18.77
+      },
+      {
+        "w": "sonlar.",
+        "s": 18.81,
+        "e": 19.11
+      },
+      {
+        "w": "Postgres",
+        "s": 19.81,
+        "e": 20.19
+      },
+      {
+        "w": "da",
+        "s": 20.23,
+        "e": 20.31
+      },
+      {
+        "w": "ular",
+        "s": 20.37,
+        "e": 20.53
+      },
+      {
+        "w": "uch",
+        "s": 20.63,
+        "e": 20.75
+      },
+      {
+        "w": "xil",
+        "s": 20.79,
+        "e": 20.91
+      },
+      {
+        "w": "hajmda",
+        "s": 20.95,
+        "e": 21.27
+      },
+      {
+        "w": "bo‘ladi:",
+        "s": 21.31,
+        "e": 21.57
+      },
+      {
+        "w": "ikki",
+        "s": 22.15,
+        "e": 22.33
+      },
+      {
+        "w": "baytli",
+        "s": 22.37,
+        "e": 22.68
+      },
+      {
+        "w": "smol-int,",
+        "s": 22.84,
+        "e": 23.38
+      },
+      {
+        "w": "to‘rt",
+        "s": 23.86,
+        "e": 24.06
+      },
+      {
+        "w": "baytli",
+        "s": 24.12,
+        "e": 24.4
+      },
+      {
+        "w": "intijer,",
+        "s": 24.56,
+        "e": 24.96
+      },
+      {
+        "w": "va",
+        "s": 25.42,
+        "e": 25.48
+      },
+      {
+        "w": "sakkiz",
+        "s": 25.58,
+        "e": 25.9
+      },
+      {
+        "w": "baytli",
+        "s": 25.94,
+        "e": 26.22
+      },
+      {
+        "w": "big-int.",
+        "s": 26.36,
+        "e": 26.7
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "integers",
+    "text": "Odatdagi hisob-kitob va miqdorlar uchun intijer eng yaxshi tanlovdir. Lekin yirik jadvallardagi identifikatorlar uchun boshidanoq big-int tanlash tavsiya etiladi, aks holda ikki milliarddan keyin oraliq to‘lib qoladi.",
+    "show": "Odatdagi hisob-kitob va miqdorlar uchun intijer eng yaxshi tanlovdir. Lekin yirik jadvallardagi identifikatorlar uchun boshidanoq big-int tanlash tavsiya etiladi, aks holda ikki milliarddan keyin oraliq to‘lib qoladi.",
+    "say": "Odatdagi hisob-kitob va miqdorlar uchun intijer eng yaxshi tanlovdir. Lekin yirik jadvallardagi identifikatorlar uchun boshidanoq big-int tanlash tavsiya etiladi, aks holda ikki milliarddan keyin oraliq to‘lib qoladi.",
+    "a0": 28.06,
+    "a1": 40.03,
+    "words": [
+      {
+        "w": "Odatdagi",
+        "s": 28.06,
+        "e": 28.46
+      },
+      {
+        "w": "hisob-kitob",
+        "s": 28.52,
+        "e": 28.98
+      },
+      {
+        "w": "va",
+        "s": 29.04,
+        "e": 29.1
+      },
+      {
+        "w": "miqdorlar",
+        "s": 29.18,
+        "e": 29.62
+      },
+      {
+        "w": "uchun",
+        "s": 29.68,
+        "e": 29.86
+      },
+      {
+        "w": "intijer",
+        "s": 30.02,
+        "e": 30.36
+      },
+      {
+        "w": "eng",
+        "s": 30.5,
+        "e": 30.64
+      },
+      {
+        "w": "yaxshi",
+        "s": 30.7,
+        "e": 30.92
+      },
+      {
+        "w": "tanlovdir.",
+        "s": 30.96,
+        "e": 31.4
+      },
+      {
+        "w": "Lekin",
+        "s": 32.02,
+        "e": 32.28
+      },
+      {
+        "w": "yirik",
+        "s": 32.38,
+        "e": 32.62
+      },
+      {
+        "w": "jadvallardagi",
+        "s": 32.66,
+        "e": 33.3
+      },
+      {
+        "w": "identifikatorlar",
+        "s": 33.38,
+        "e": 34.1
+      },
+      {
+        "w": "uchun",
+        "s": 34.12,
+        "e": 34.3
+      },
+      {
+        "w": "boshidanoq",
+        "s": 34.72,
+        "e": 35.22
+      },
+      {
+        "w": "big-int",
+        "s": 35.32,
+        "e": 35.66
+      },
+      {
+        "w": "tanlash",
+        "s": 35.7,
+        "e": 36.02
+      },
+      {
+        "w": "tavsiya",
+        "s": 36.04,
+        "e": 36.34
+      },
+      {
+        "w": "etiladi,",
+        "s": 36.36,
+        "e": 36.66
+      },
+      {
+        "w": "aks",
+        "s": 37.3,
+        "e": 37.44
+      },
+      {
+        "w": "holda",
+        "s": 37.46,
+        "e": 37.71
+      },
+      {
+        "w": "ikki",
+        "s": 38.11,
+        "e": 38.33
+      },
+      {
+        "w": "milliarddan",
+        "s": 38.35,
+        "e": 38.79
+      },
+      {
+        "w": "keyin",
+        "s": 38.83,
+        "e": 39.07
+      },
+      {
+        "w": "oraliq",
+        "s": 39.19,
+        "e": 39.47
+      },
+      {
+        "w": "to‘lib",
+        "s": 39.51,
+        "e": 39.73
+      },
+      {
+        "w": "qoladi.",
+        "s": 39.75,
+        "e": 40.03
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "numeric",
+    "text": "Ikkinchi guruh — nyumerik yoki desimal deb ataluvchi aniq kasr sonlar. Ular pul va moliyaviy hisoblar uchun maxsus yaratilgan.",
+    "show": "Ikkinchi guruh — nyumerik yoki desimal deb ataluvchi aniq kasr sonlar. Ular pul va moliyaviy hisoblar uchun maxsus yaratilgan.",
+    "say": "Ikkinchi guruh — nyumerik yoki desimal deb ataluvchi aniq kasr sonlar. Ular pul va moliyaviy hisoblar uchun maxsus yaratilgan.",
+    "a0": 40.99,
+    "a1": 47.53,
+    "words": [
+      {
+        "w": "Ikkinchi",
+        "s": 40.99,
+        "e": 41.27
+      },
+      {
+        "w": "guruh",
+        "s": 41.29,
+        "e": 41.51
+      },
+      {
+        "w": "—",
+        "s": 41.51,
+        "e": 41.51
+      },
+      {
+        "w": "nyumerik",
+        "s": 41.61,
+        "e": 42.05
+      },
+      {
+        "w": "yoki",
+        "s": 42.11,
+        "e": 42.33
+      },
+      {
+        "w": "desimal",
+        "s": 42.47,
+        "e": 42.81
+      },
+      {
+        "w": "deb",
+        "s": 42.85,
+        "e": 42.97
+      },
+      {
+        "w": "ataluvchi",
+        "s": 43.01,
+        "e": 43.39
+      },
+      {
+        "w": "aniq",
+        "s": 43.49,
+        "e": 43.69
+      },
+      {
+        "w": "kasr",
+        "s": 43.75,
+        "e": 44.01
+      },
+      {
+        "w": "sonlar.",
+        "s": 44.05,
+        "e": 44.37
+      },
+      {
+        "w": "Ular",
+        "s": 44.99,
+        "e": 45.19
+      },
+      {
+        "w": "pul",
+        "s": 45.27,
+        "e": 45.45
+      },
+      {
+        "w": "va",
+        "s": 45.51,
+        "e": 45.57
+      },
+      {
+        "w": "moliyaviy",
+        "s": 45.65,
+        "e": 46.03
+      },
+      {
+        "w": "hisoblar",
+        "s": 46.09,
+        "e": 46.43
+      },
+      {
+        "w": "uchun",
+        "s": 46.45,
+        "e": 46.63
+      },
+      {
+        "w": "maxsus",
+        "s": 46.71,
+        "e": 47.05
+      },
+      {
+        "w": "yaratilgan.",
+        "s": 47.09,
+        "e": 47.53
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "numeric",
+    "text": "Nyumerikda ikkita ko‘rsatkich bor: prezishn — barcha raqamlar soni, va skeyl — verguldan keyingi xonalar soni.",
+    "show": "Nyumerikda ikkita ko‘rsatkich bor: prezishn — barcha raqamlar soni, va skeyl — verguldan keyingi xonalar soni.",
+    "say": "Nyumerikda ikkita ko‘rsatkich bor: prezishn — barcha raqamlar soni, va skeyl — verguldan keyingi xonalar soni.",
+    "a0": 48.27,
+    "a1": 54.9,
+    "words": [
+      {
+        "w": "Nyumerikda",
+        "s": 48.27,
+        "e": 48.77
+      },
+      {
+        "w": "ikkita",
+        "s": 48.81,
+        "e": 48.99
+      },
+      {
+        "w": "ko‘rsatkich",
+        "s": 49.03,
+        "e": 49.47
+      },
+      {
+        "w": "bor:",
+        "s": 49.49,
+        "e": 49.63
+      },
+      {
+        "w": "prezishn",
+        "s": 50.17,
+        "e": 50.63
+      },
+      {
+        "w": "—",
+        "s": 50.63,
+        "e": 50.63
+      },
+      {
+        "w": "barcha",
+        "s": 51.09,
+        "e": 51.33
+      },
+      {
+        "w": "raqamlar",
+        "s": 51.35,
+        "e": 51.73
+      },
+      {
+        "w": "soni,",
+        "s": 51.77,
+        "e": 52.05
+      },
+      {
+        "w": "va",
+        "s": 52.56,
+        "e": 52.62
+      },
+      {
+        "w": "skeyl",
+        "s": 52.76,
+        "e": 53.08
+      },
+      {
+        "w": "—",
+        "s": 53.08,
+        "e": 53.08
+      },
+      {
+        "w": "verguldan",
+        "s": 53.5,
+        "e": 53.88
+      },
+      {
+        "w": "keyingi",
+        "s": 53.92,
+        "e": 54.22
+      },
+      {
+        "w": "xonalar",
+        "s": 54.26,
+        "e": 54.62
+      },
+      {
+        "w": "soni.",
+        "s": 54.68,
+        "e": 54.9
+      }
+    ]
+  },
+  {
+    "id": "L7",
+    "scene": "numeric",
+    "text": "Qiymat yozilganda, agar kasr qismi skeyldan ko‘p bo‘lsa, u avtomatik yaxlitlanadi. Agar butun qismi sig‘masa, xato beriladi.",
+    "show": "Qiymat yozilganda, agar kasr qismi skeyldan ko‘p bo‘lsa, u avtomatik yaxlitlanadi. Agar butun qismi sig‘masa, xato beriladi.",
+    "say": "Qiymat yozilganda, agar kasr qismi skeyldan ko‘p bo‘lsa, u avtomatik yaxlitlanadi. Agar butun qismi sig‘masa, xato beriladi.",
+    "a0": 55.8,
+    "a1": 62.92,
+    "words": [
+      {
+        "w": "Qiymat",
+        "s": 55.8,
+        "e": 56.08
+      },
+      {
+        "w": "yozilganda,",
+        "s": 56.12,
+        "e": 56.62
+      },
+      {
+        "w": "agar",
+        "s": 56.76,
+        "e": 56.96
+      },
+      {
+        "w": "kasr",
+        "s": 57.02,
+        "e": 57.3
+      },
+      {
+        "w": "qismi",
+        "s": 57.36,
+        "e": 57.62
+      },
+      {
+        "w": "skeyldan",
+        "s": 57.7,
+        "e": 58.18
+      },
+      {
+        "w": "ko‘p",
+        "s": 58.26,
+        "e": 58.44
+      },
+      {
+        "w": "bo‘lsa,",
+        "s": 58.48,
+        "e": 58.78
+      },
+      {
+        "w": "u",
+        "s": 58.92,
+        "e": 58.94
+      },
+      {
+        "w": "avtomatik",
+        "s": 59.14,
+        "e": 59.66
+      },
+      {
+        "w": "yaxlitlanadi.",
+        "s": 59.72,
+        "e": 60.28
+      },
+      {
+        "w": "Agar",
+        "s": 60.92,
+        "e": 61.1
+      },
+      {
+        "w": "butun",
+        "s": 61.16,
+        "e": 61.4
+      },
+      {
+        "w": "qismi",
+        "s": 61.44,
+        "e": 61.66
+      },
+      {
+        "w": "sig‘masa,",
+        "s": 61.74,
+        "e": 62.12
+      },
+      {
+        "w": "xato",
+        "s": 62.26,
+        "e": 62.46
+      },
+      {
+        "w": "beriladi.",
+        "s": 62.54,
+        "e": 62.92
+      }
+    ]
+  },
+  {
+    "id": "L8",
+    "scene": "numeric",
+    "text": "Eng muhimi: nyumerik qo‘shish va ayirishda bir tiyin ham yo‘qolmaydi, natija har doim mutlaq aniq chiqadi.",
+    "show": "Eng muhimi: nyumerik qo‘shish va ayirishda bir tiyin ham yo‘qolmaydi, natija har doim mutlaq aniq chiqadi.",
+    "say": "Eng muhimi: nyumerik qo‘shish va ayirishda bir tiyin ham yo‘qolmaydi, natija har doim mutlaq aniq chiqadi.",
+    "a0": 63.86,
+    "a1": 69.81,
+    "words": [
+      {
+        "w": "Eng",
+        "s": 63.86,
+        "e": 63.96
+      },
+      {
+        "w": "muhimi:",
+        "s": 63.98,
+        "e": 64.26
+      },
+      {
+        "w": "nyumerik",
+        "s": 64.7,
+        "e": 65.1
+      },
+      {
+        "w": "qo‘shish",
+        "s": 65.18,
+        "e": 65.52
+      },
+      {
+        "w": "va",
+        "s": 65.56,
+        "e": 65.62
+      },
+      {
+        "w": "ayirishda",
+        "s": 65.74,
+        "e": 66.14
+      },
+      {
+        "w": "bir",
+        "s": 66.28,
+        "e": 66.4
+      },
+      {
+        "w": "tiyin",
+        "s": 66.46,
+        "e": 66.68
+      },
+      {
+        "w": "ham",
+        "s": 66.72,
+        "e": 66.86
+      },
+      {
+        "w": "yo‘qolmaydi,",
+        "s": 66.9,
+        "e": 67.38
+      },
+      {
+        "w": "natija",
+        "s": 67.79,
+        "e": 68.11
+      },
+      {
+        "w": "har",
+        "s": 68.21,
+        "e": 68.41
+      },
+      {
+        "w": "doim",
+        "s": 68.45,
+        "e": 68.73
+      },
+      {
+        "w": "mutlaq",
+        "s": 68.83,
+        "e": 69.21
+      },
+      {
+        "w": "aniq",
+        "s": 69.31,
+        "e": 69.51
+      },
+      {
+        "w": "chiqadi.",
+        "s": 69.55,
+        "e": 69.81
+      }
+    ]
+  },
+  {
+    "id": "L9",
+    "scene": "floats",
+    "text": "Uchinchi guruh — real va dabl prezishn deb ataluvchi taqribiy kasr sonlar. Ular kompyuter xotirasida ikkilik kasr shaklida saqlanadi.",
+    "show": "Uchinchi guruh — real va dabl prezishn deb ataluvchi taqribiy kasr sonlar. Ular kompyuter xotirasida ikkilik kasr shaklida saqlanadi.",
+    "say": "Uchinchi guruh — rial va dabl prezishn deb ataluvchi taqribiy kasr sonlar. Ular kompyuter xotirasida ikkilik kasr shaklida saqlanadi.",
+    "a0": 70.85,
+    "a1": 77.75,
+    "words": [
+      {
+        "w": "Uchinchi",
+        "s": 70.85,
+        "e": 71.11
+      },
+      {
+        "w": "guruh",
+        "s": 71.13,
+        "e": 71.37
+      },
+      {
+        "w": "—",
+        "s": 71.37,
+        "e": 71.37
+      },
+      {
+        "w": "rial",
+        "s": 71.51,
+        "e": 71.75
+      },
+      {
+        "w": "va",
+        "s": 71.83,
+        "e": 71.89
+      },
+      {
+        "w": "dabl",
+        "s": 72.01,
+        "e": 72.25
+      },
+      {
+        "w": "prezishn",
+        "s": 72.29,
+        "e": 72.73
+      },
+      {
+        "w": "deb",
+        "s": 72.77,
+        "e": 72.87
+      },
+      {
+        "w": "ataluvchi",
+        "s": 72.91,
+        "e": 73.29
+      },
+      {
+        "w": "taqribiy",
+        "s": 73.35,
+        "e": 73.75
+      },
+      {
+        "w": "kasr",
+        "s": 73.81,
+        "e": 74.07
+      },
+      {
+        "w": "sonlar.",
+        "s": 74.11,
+        "e": 74.41
+      },
+      {
+        "w": "Ular",
+        "s": 75.01,
+        "e": 75.19
+      },
+      {
+        "w": "kompyuter",
+        "s": 75.23,
+        "e": 75.59
+      },
+      {
+        "w": "xotirasida",
+        "s": 75.63,
+        "e": 76.11
+      },
+      {
+        "w": "ikkilik",
+        "s": 76.29,
+        "e": 76.63
+      },
+      {
+        "w": "kasr",
+        "s": 76.67,
+        "e": 76.91
+      },
+      {
+        "w": "shaklida",
+        "s": 76.95,
+        "e": 77.27
+      },
+      {
+        "w": "saqlanadi.",
+        "s": 77.31,
+        "e": 77.75
+      }
+    ]
+  },
+  {
+    "id": "L10",
+    "scene": "floats",
+    "text": "Shu sababli, inson uchun oddiy ko‘ringan nol butun o‘ndan bir sonini ikkilik formatda aniq ifodalab bo‘lmaydi.",
+    "show": "Shu sababli, inson uchun oddiy ko‘ringan nol butun o‘ndan bir sonini ikkilik formatda aniq ifodalab bo‘lmaydi.",
+    "say": "Shu sababli, inson uchun oddiy ko‘ringan nol butun o‘ndan bir sonini ikkilik formatda aniq ifodalab bo‘lmaydi.",
+    "a0": 78.49,
+    "a1": 84.44,
+    "words": [
+      {
+        "w": "Shu",
+        "s": 78.49,
+        "e": 78.57
+      },
+      {
+        "w": "sababli,",
+        "s": 78.61,
+        "e": 78.95
+      },
+      {
+        "w": "inson",
+        "s": 79.33,
+        "e": 79.57
+      },
+      {
+        "w": "uchun",
+        "s": 79.61,
+        "e": 79.79
+      },
+      {
+        "w": "oddiy",
+        "s": 79.93,
+        "e": 80.13
+      },
+      {
+        "w": "ko‘ringan",
+        "s": 80.19,
+        "e": 80.61
+      },
+      {
+        "w": "nol",
+        "s": 80.79,
+        "e": 80.95
+      },
+      {
+        "w": "butun",
+        "s": 80.99,
+        "e": 81.23
+      },
+      {
+        "w": "o‘ndan",
+        "s": 81.31,
+        "e": 81.57
+      },
+      {
+        "w": "bir",
+        "s": 81.63,
+        "e": 81.73
+      },
+      {
+        "w": "sonini",
+        "s": 81.79,
+        "e": 82.13
+      },
+      {
+        "w": "ikkilik",
+        "s": 82.52,
+        "e": 82.82
+      },
+      {
+        "w": "formatda",
+        "s": 82.86,
+        "e": 83.24
+      },
+      {
+        "w": "aniq",
+        "s": 83.34,
+        "e": 83.54
+      },
+      {
+        "w": "ifodalab",
+        "s": 83.58,
+        "e": 84.0
+      },
+      {
+        "w": "bo‘lmaydi.",
+        "s": 84.02,
+        "e": 84.44
+      }
+    ]
+  },
+  {
+    "id": "L11",
+    "scene": "floats",
+    "text": "Natijada nol butun o‘ndan birga nol butun o‘ndan ikkini qo‘shganda, nol butun o‘ndan uch emas, balki oxirida to‘rt bilan tugaydigan taqribiy son hosil bo‘ladi.",
+    "show": "Natijada nol butun o‘ndan birga nol butun o‘ndan ikkini qo‘shganda, nol butun o‘ndan uch emas, balki oxirida to‘rt bilan tugaydigan taqribiy son hosil bo‘ladi.",
+    "say": "Natijada nol butun o‘ndan birga nol butun o‘ndan ikkini qo‘shganda, nol butun o‘ndan uch emas, balki oxirida to‘rt bilan tugaydigan taqribiy son hosil bo‘ladi.",
+    "a0": 85.24,
+    "a1": 93.7,
+    "words": [
+      {
+        "w": "Natijada",
+        "s": 85.24,
+        "e": 85.64
+      },
+      {
+        "w": "nol",
+        "s": 86.0,
+        "e": 86.16
+      },
+      {
+        "w": "butun",
+        "s": 86.18,
+        "e": 86.38
+      },
+      {
+        "w": "o‘ndan",
+        "s": 86.46,
+        "e": 86.72
+      },
+      {
+        "w": "birga",
+        "s": 86.74,
+        "e": 86.98
+      },
+      {
+        "w": "nol",
+        "s": 87.08,
+        "e": 87.24
+      },
+      {
+        "w": "butun",
+        "s": 87.26,
+        "e": 87.48
+      },
+      {
+        "w": "o‘ndan",
+        "s": 87.56,
+        "e": 87.8
+      },
+      {
+        "w": "ikkini",
+        "s": 87.84,
+        "e": 88.08
+      },
+      {
+        "w": "qo‘shganda,",
+        "s": 88.12,
+        "e": 88.56
+      },
+      {
+        "w": "nol",
+        "s": 88.68,
+        "e": 88.86
+      },
+      {
+        "w": "butun",
+        "s": 88.9,
+        "e": 89.12
+      },
+      {
+        "w": "o‘ndan",
+        "s": 89.2,
+        "e": 89.46
+      },
+      {
+        "w": "uch",
+        "s": 89.54,
+        "e": 89.68
+      },
+      {
+        "w": "emas,",
+        "s": 89.74,
+        "e": 89.96
+      },
+      {
+        "w": "balki",
+        "s": 90.4,
+        "e": 90.64
+      },
+      {
+        "w": "oxirida",
+        "s": 90.88,
+        "e": 91.26
+      },
+      {
+        "w": "to‘rt",
+        "s": 91.36,
+        "e": 91.6
+      },
+      {
+        "w": "bilan",
+        "s": 91.64,
+        "e": 91.82
+      },
+      {
+        "w": "tugaydigan",
+        "s": 91.84,
+        "e": 92.3
+      },
+      {
+        "w": "taqribiy",
+        "s": 92.36,
+        "e": 92.82
+      },
+      {
+        "w": "son",
+        "s": 92.9,
+        "e": 93.08
+      },
+      {
+        "w": "hosil",
+        "s": 93.12,
+        "e": 93.42
+      },
+      {
+        "w": "bo‘ladi.",
+        "s": 93.44,
+        "e": 93.7
+      }
+    ]
+  },
+  {
+    "id": "L12",
+    "scene": "floats",
+    "text": "Shuning uchun taqribiy kasr sonlarni tenglikka solishtirish xavfli va ularni pul hisob-kitoblarida mutlaqo ishlatmaslik kerak!",
+    "show": "Shuning uchun taqribiy kasr sonlarni tenglikka solishtirish xavfli va ularni pul hisob-kitoblarida mutlaqo ishlatmaslik kerak!",
+    "say": "Shuning uchun taqribiy kasr sonlarni tenglikka solishtirish xavfli va ularni pul hisob-kitoblarida mutlaqo ishlatmaslik kerak!",
+    "a0": 94.66,
+    "a1": 101.31,
+    "words": [
+      {
+        "w": "Shuning",
+        "s": 94.66,
+        "e": 94.86
+      },
+      {
+        "w": "uchun",
+        "s": 94.88,
+        "e": 95.06
+      },
+      {
+        "w": "taqribiy",
+        "s": 95.36,
+        "e": 95.74
+      },
+      {
+        "w": "kasr",
+        "s": 95.8,
+        "e": 96.06
+      },
+      {
+        "w": "sonlarni",
+        "s": 96.1,
+        "e": 96.54
+      },
+      {
+        "w": "tenglikka",
+        "s": 96.64,
+        "e": 97.06
+      },
+      {
+        "w": "solishtirish",
+        "s": 97.12,
+        "e": 97.55
+      },
+      {
+        "w": "xavfli",
+        "s": 97.61,
+        "e": 97.95
+      },
+      {
+        "w": "va",
+        "s": 98.39,
+        "e": 98.45
+      },
+      {
+        "w": "ularni",
+        "s": 98.53,
+        "e": 98.85
+      },
+      {
+        "w": "pul",
+        "s": 98.95,
+        "e": 99.11
+      },
+      {
+        "w": "hisob-kitoblarida",
+        "s": 99.15,
+        "e": 99.87
+      },
+      {
+        "w": "mutlaqo",
+        "s": 99.99,
+        "e": 100.47
+      },
+      {
+        "w": "ishlatmaslik",
+        "s": 100.55,
+        "e": 101.05
+      },
+      {
+        "w": "kerak!",
+        "s": 101.09,
+        "e": 101.31
+      }
+    ]
+  },
+  {
+    "id": "L13",
+    "scene": "money",
+    "text": "PostgreSQL da pul uchun alohida mani tipi ham mavjud. U qiymatni mintaqa valyutasi bilan birga ko‘rsatadi.",
+    "show": "PostgreSQL da pul uchun alohida mani tipi ham mavjud. U qiymatni mintaqa valyutasi bilan birga ko‘rsatadi.",
+    "say": "Postgres da pul uchun alohida mani tipi ham mavjud. U qiymatni mintaqa valyutasi bilan birga ko‘rsatadi.",
+    "a0": 102.21,
+    "a1": 107.69,
+    "words": [
+      {
+        "w": "Postgres",
+        "s": 102.21,
+        "e": 102.61
+      },
+      {
+        "w": "da",
+        "s": 102.63,
+        "e": 102.71
+      },
+      {
+        "w": "pul",
+        "s": 102.83,
+        "e": 102.97
+      },
+      {
+        "w": "uchun",
+        "s": 103.03,
+        "e": 103.23
+      },
+      {
+        "w": "alohida",
+        "s": 103.29,
+        "e": 103.65
+      },
+      {
+        "w": "mani",
+        "s": 103.79,
+        "e": 104.03
+      },
+      {
+        "w": "tipi",
+        "s": 104.09,
+        "e": 104.27
+      },
+      {
+        "w": "ham",
+        "s": 104.31,
+        "e": 104.45
+      },
+      {
+        "w": "mavjud.",
+        "s": 104.51,
+        "e": 104.81
+      },
+      {
+        "w": "U",
+        "s": 105.41,
+        "e": 105.43
+      },
+      {
+        "w": "qiymatni",
+        "s": 105.53,
+        "e": 105.95
+      },
+      {
+        "w": "mintaqa",
+        "s": 106.05,
+        "e": 106.39
+      },
+      {
+        "w": "valyutasi",
+        "s": 106.43,
+        "e": 106.81
+      },
+      {
+        "w": "bilan",
+        "s": 106.83,
+        "e": 106.99
+      },
+      {
+        "w": "birga",
+        "s": 107.03,
+        "e": 107.23
+      },
+      {
+        "w": "ko‘rsatadi.",
+        "s": 107.29,
+        "e": 107.69
+      }
+    ]
+  },
+  {
+    "id": "L14",
+    "scene": "money",
+    "text": "Biroq bu tip bazaning lokaliga qattiq bog‘langan bo‘lib, boshqa serverga ko‘chirilganda format buzilishi mumkin.",
+    "show": "Biroq bu tip bazaning lokaliga qattiq bog‘langan bo‘lib, boshqa serverga ko‘chirilganda format buzilishi mumkin.",
+    "say": "Biroq bu tip bazaning lokaliga qattiq bog‘langan bo‘lib, boshqa serverga ko‘chirilganda format buzilishi mumkin.",
+    "a0": 108.53,
+    "a1": 113.98,
+    "words": [
+      {
+        "w": "Biroq",
+        "s": 108.53,
+        "e": 108.77
+      },
+      {
+        "w": "bu",
+        "s": 108.87,
+        "e": 108.95
+      },
+      {
+        "w": "tip",
+        "s": 109.01,
+        "e": 109.19
+      },
+      {
+        "w": "bazaning",
+        "s": 109.27,
+        "e": 109.69
+      },
+      {
+        "w": "lokaliga",
+        "s": 109.75,
+        "e": 110.15
+      },
+      {
+        "w": "qattiq",
+        "s": 110.23,
+        "e": 110.51
+      },
+      {
+        "w": "bog‘langan",
+        "s": 110.59,
+        "e": 110.99
+      },
+      {
+        "w": "bo‘lib,",
+        "s": 111.03,
+        "e": 111.21
+      },
+      {
+        "w": "boshqa",
+        "s": 111.59,
+        "e": 111.83
+      },
+      {
+        "w": "serverga",
+        "s": 111.89,
+        "e": 112.25
+      },
+      {
+        "w": "ko‘chirilganda",
+        "s": 112.29,
+        "e": 112.84
+      },
+      {
+        "w": "format",
+        "s": 112.94,
+        "e": 113.28
+      },
+      {
+        "w": "buzilishi",
+        "s": 113.34,
+        "e": 113.68
+      },
+      {
+        "w": "mumkin.",
+        "s": 113.7,
+        "e": 113.98
+      }
+    ]
+  },
+  {
+    "id": "L15",
+    "scene": "money",
+    "text": "Bundan tashqari, mani tipini bo‘lishda kasr qismi yaxlitlanmasdan kesib tashlanadi. Shu sababli moliya uchun har doim nyumerik ma’qul.",
+    "show": "Bundan tashqari, mani tipini bo‘lishda kasr qismi yaxlitlanmasdan kesib tashlanadi. Shu sababli moliya uchun har doim nyumerik ma’qul.",
+    "say": "Bundan tashqari, mani tipini bo‘lishda kasr qismi yaxlitlanmasdan kesib tashlanadi. Shu sababli moliya uchun har doim nyumerik ma’qul.",
+    "a0": 114.46,
+    "a1": 122.48,
+    "words": [
+      {
+        "w": "Bundan",
+        "s": 114.46,
+        "e": 114.7
+      },
+      {
+        "w": "tashqari,",
+        "s": 114.74,
+        "e": 115.1
+      },
+      {
+        "w": "mani",
+        "s": 115.44,
+        "e": 115.72
+      },
+      {
+        "w": "tipini",
+        "s": 115.8,
+        "e": 116.1
+      },
+      {
+        "w": "bo‘lishda",
+        "s": 116.14,
+        "e": 116.56
+      },
+      {
+        "w": "kasr",
+        "s": 116.72,
+        "e": 117.08
+      },
+      {
+        "w": "qismi",
+        "s": 117.14,
+        "e": 117.4
+      },
+      {
+        "w": "yaxlitlanmasdan",
+        "s": 117.48,
+        "e": 118.28
+      },
+      {
+        "w": "kesib",
+        "s": 118.34,
+        "e": 118.56
+      },
+      {
+        "w": "tashlanadi.",
+        "s": 118.6,
+        "e": 119.02
+      },
+      {
+        "w": "Shu",
+        "s": 119.46,
+        "e": 119.54
+      },
+      {
+        "w": "sababli",
+        "s": 119.6,
+        "e": 119.96
+      },
+      {
+        "w": "moliya",
+        "s": 120.12,
+        "e": 120.5
+      },
+      {
+        "w": "uchun",
+        "s": 120.58,
+        "e": 120.8
+      },
+      {
+        "w": "har",
+        "s": 121.2,
+        "e": 121.4
+      },
+      {
+        "w": "doim",
+        "s": 121.48,
+        "e": 121.76
+      },
+      {
+        "w": "nyumerik",
+        "s": 121.84,
+        "e": 122.18
+      },
+      {
+        "w": "ma’qul.",
+        "s": 122.22,
+        "e": 122.48
+      }
+    ]
+  },
+  {
+    "id": "L16",
+    "scene": "xulosa",
+    "text": "Xulosa qilib aytganda: butun miqdorlarga intijer va big-int, pul va aniq hisobga nyumerik, faqat ilmiy hisob-kitoblargagina dabl prezishn ishlatiladi.",
+    "show": "Xulosa qilib aytganda: butun miqdorlarga intijer va big-int, pul va aniq hisobga nyumerik, faqat ilmiy hisob-kitoblargagina dabl prezishn ishlatiladi.",
+    "say": "Xulosa qilib aytganda: butun miqdorlarga intijer va big-int, pul va aniq hisobga nyumerik, faqat ilmiy hisob-kitoblargagina dabl prezishn ishlatiladi.",
+    "a0": 123.64,
+    "a1": 133.75,
+    "words": [
+      {
+        "w": "Xulosa",
+        "s": 123.64,
+        "e": 123.94
+      },
+      {
+        "w": "qilib",
+        "s": 123.98,
+        "e": 124.16
+      },
+      {
+        "w": "aytganda:",
+        "s": 124.18,
+        "e": 124.54
+      },
+      {
+        "w": "butun",
+        "s": 124.92,
+        "e": 125.19
+      },
+      {
+        "w": "miqdorlarga",
+        "s": 125.23,
+        "e": 125.87
+      },
+      {
+        "w": "intijer",
+        "s": 126.17,
+        "e": 126.57
+      },
+      {
+        "w": "va",
+        "s": 126.65,
+        "e": 126.73
+      },
+      {
+        "w": "big-int,",
+        "s": 126.83,
+        "e": 127.25
+      },
+      {
+        "w": "pul",
+        "s": 127.91,
+        "e": 128.11
+      },
+      {
+        "w": "va",
+        "s": 128.19,
+        "e": 128.27
+      },
+      {
+        "w": "aniq",
+        "s": 128.45,
+        "e": 128.61
+      },
+      {
+        "w": "hisobga",
+        "s": 128.65,
+        "e": 129.09
+      },
+      {
+        "w": "nyumerik,",
+        "s": 129.45,
+        "e": 129.89
+      },
+      {
+        "w": "faqat",
+        "s": 130.35,
+        "e": 130.61
+      },
+      {
+        "w": "ilmiy",
+        "s": 130.73,
+        "e": 130.97
+      },
+      {
+        "w": "hisob-kitoblargagina",
+        "s": 131.05,
+        "e": 132.05
+      },
+      {
+        "w": "dabl",
+        "s": 132.41,
+        "e": 132.71
+      },
+      {
+        "w": "prezishn",
+        "s": 132.79,
+        "e": 133.29
+      },
+      {
+        "w": "ishlatiladi.",
+        "s": 133.33,
+        "e": 133.75
+      }
+    ]
+  },
+  {
+    "id": "L17",
+    "scene": "xulosa",
+    "text": "Keyingi qismda ushbu qoidalarni PostgreSQL terminalida jonli sinovlar orqali isbotlaymiz.",
+    "show": "Keyingi qismda ushbu qoidalarni PostgreSQL terminalida jonli sinovlar orqali isbotlaymiz.",
+    "say": "Keyingi qismda ushbu qoidalarni Postgres terminalida jonli sinovlar orqali isbotlaymiz.",
+    "a0": 134.65,
+    "a1": 140.02,
+    "words": [
+      {
+        "w": "Keyingi",
+        "s": 134.65,
+        "e": 134.91
+      },
+      {
+        "w": "qismda",
+        "s": 134.95,
+        "e": 135.26
+      },
+      {
+        "w": "ushbu",
+        "s": 135.6,
+        "e": 135.84
+      },
+      {
+        "w": "qoidalarni",
+        "s": 135.92,
+        "e": 136.44
+      },
+      {
+        "w": "Postgres",
+        "s": 136.54,
+        "e": 137.06
+      },
+      {
+        "w": "terminalida",
+        "s": 137.1,
+        "e": 137.62
+      },
+      {
+        "w": "jonli",
+        "s": 138.02,
+        "e": 138.36
+      },
+      {
+        "w": "sinovlar",
+        "s": 138.46,
+        "e": 138.82
+      },
+      {
+        "w": "orqali",
+        "s": 138.86,
+        "e": 139.16
+      },
+      {
+        "w": "isbotlaymiz.",
+        "s": 139.46,
+        "e": 140.02
+      }
+    ]
+  }
+]

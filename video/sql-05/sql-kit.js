@@ -25,9 +25,70 @@
   function withA(a, fn) { if (a <= 0.002) return; ctx.save(); ctx.globalAlpha *= Math.min(1, a); fn(); ctx.restore(); }
   function tw(s, size, weight = 500, fam = UI) { ctx.font = font(size, weight, fam); return ctx.measureText(s).width; }
   function text(s, x, y, o = {}) {
-    ctx.font = font(o.size || 30, o.weight || 500, o.fam || UI);
-    ctx.fillStyle = o.color || C.ink; ctx.textAlign = o.align || 'left'; ctx.textBaseline = 'middle';
-    ctx.fillText(s, x, y);
+    if (s == null || s === '') return;
+    const str = String(s);
+    const size = o.size || 30, fam = o.fam || UI, weight = o.weight || 500;
+    const lh = o.lh || Math.round(size * 1.35);
+    ctx.font = font(size, weight, fam);
+    ctx.fillStyle = o.color || C.ink;
+    ctx.textAlign = o.align || 'left';
+    ctx.textBaseline = o.baseline || 'middle';
+
+    const maxW = o.wrap;
+    let lines = [];
+    if (maxW && maxW > 0) {
+      const rawLines = str.split('\n');
+      for (const raw of rawLines) {
+        if (ctx.measureText(raw).width <= maxW) {
+          lines.push(raw);
+          continue;
+        }
+        const words = raw.split(' ');
+        let cur = '';
+        for (const w of words) {
+          const test = cur ? cur + ' ' + w : w;
+          if (ctx.measureText(test).width <= maxW) {
+            cur = test;
+          } else {
+            if (cur) lines.push(cur);
+            cur = w;
+          }
+        }
+        if (cur) lines.push(cur);
+      }
+    } else if (str.includes('\n')) {
+      lines = str.split('\n');
+    } else {
+      lines = [str];
+    }
+
+    if (typeof window !== 'undefined') {
+      window.OVERFLOWS = window.OVERFLOWS || [];
+      lines.forEach((line) => {
+        const w = ctx.measureText(line).width;
+        let left = x, right = x + w;
+        if (ctx.textAlign === 'center') { left = x - w / 2; right = x + w / 2; }
+        else if (ctx.textAlign === 'right') { left = x - w; right = x; }
+        if (left < 10 || right > 1910 || (maxW && w > maxW + 5)) {
+          window.OVERFLOWS.push({ text: line, left, right, maxW });
+        }
+      });
+    }
+
+    if (lines.length === 1) {
+      ctx.fillText(lines[0], x, y);
+    } else {
+      const totalH = (lines.length - 1) * lh;
+      let startY = y;
+      if (ctx.textBaseline === 'middle') {
+        startY = y - totalH / 2;
+      } else if (ctx.textBaseline === 'bottom') {
+        startY = y - totalH;
+      }
+      lines.forEach((line, idx) => {
+        ctx.fillText(line, x, startY + idx * lh);
+      });
+    }
   }
   // Qo'lda yozilgandek: chapdan o'ngga ochiladi (p)
   function hand(s, x, y, o = {}) {
@@ -302,33 +363,66 @@
       res.forEach((b) => { while (b.out.length && !b.out[b.out.length - 1].trim()) b.out.pop(); });
       return res;
     }
-    // term: o.items = [{ b: blok, t: buyruq yozila boshlagan vaqt, typeDur, outDur }], o.t — joriy vaqt
+    // term: o.items = [{ b: blok, t: buyruq yozila boshlagan vaqt yoki progress, typeDur, outDur }], o.t — joriy vaqt
     // o.hl = [{ match: 'Ali', col, from, to }] — chiqishdagi qatorni ajratish
-    function term(x, y, w, h, o) {
-      const size = o.size || 24, lh = size * 1.42, cw = size * 0.602, maxCh = Math.floor((w - 48) / cw);
+    function term(x, y, w, h, titleOrOpts, maybeItems, maybeOpts) {
+      let o;
+      if (typeof titleOrOpts === 'string') {
+        o = {
+          title: titleOrOpts,
+          items: maybeItems || [],
+          ...(maybeOpts || {})
+        };
+      } else {
+        o = titleOrOpts || {};
+      }
+      if (o.t == null && typeof window !== 'undefined' && window.CURRENT_T != null) {
+        o.t = window.CURRENT_T;
+      }
+      const size = o.size || o.font || 24, lh = size * 1.42, cw = size * 0.602, maxCh = Math.floor((w - 48) / cw);
       ctx.save();
       ctx.shadowColor = 'rgba(40,30,10,0.28)'; ctx.shadowBlur = 28; ctx.shadowOffsetY = 10;
       ctx.fillStyle = '#1e1f29'; ctx.beginPath(); ctx.roundRect(x, y, w, h, 16); ctx.fill(); ctx.restore();
       ctx.fillStyle = '#2a2c3a'; ctx.beginPath(); ctx.roundRect(x, y, w, 40, [16, 16, 0, 0]); ctx.fill();
       ['#ff5f57', '#febc2e', '#28c840'].forEach((c, i) => { ctx.fillStyle = c; ctx.beginPath(); ctx.arc(x + 24 + i * 20, y + 20, 6, 0, 7); ctx.fill(); });
-      text(o.title, x + w / 2, y + 21, { size: 18, weight: 600, fam: MONO, color: '#a9adc1', align: 'center' });
+      text(o.title || '', x + w / 2, y + 21, { size: 18, weight: 600, fam: MONO, color: '#a9adc1', align: 'center' });
       // ko'rinadigan qatorlar
       const rows = [];
-      const wrap = (s) => { const r = []; for (let i = 0; i < Math.max(1, s.length); i += maxCh) r.push(s.slice(i, i + maxCh)); return r; };
-      (o.items || []).forEach((it) => {
-        if (o.t < it.t) return;
-        const typeDur = it.typeDur ?? Math.min(2.4, 0.4 + it.b.cmd.length * 0.03);
-        const m = it.b.cmd.match(o.prompt);
-        const pr = m ? m[0] : '', cmd = it.b.cmd.slice(pr.length);
-        const typed = cmd.slice(0, Math.floor(cmd.length * clamp((o.t - it.t) / typeDur)));
-        wrap(pr + typed).forEach((s, i) => rows.push({ s, k: 'cmd', pr: i === 0 ? pr.length : 0, a: 1 }));
-        const t0 = it.t + typeDur + 0.15, outDur = it.outDur ?? Math.min(1.2, 0.08 * it.b.out.length + 0.2);
-        it.b.out.forEach((ln, j) => {
-          const ta = t0 + (j / Math.max(1, it.b.out.length)) * outDur;
-          if (o.t < ta) return;
-          wrap(ln).forEach((s) => rows.push({ s, k: /ERROR|Parse error|Warning \|/.test(ln) ? 'err' : 'out', a: clamp((o.t - ta) / 0.15), src: ln }));
+      const wrap = (s) => {
+        const r = [];
+        String(s).split('\n').forEach((line) => {
+          if (!line) { r.push(''); return; }
+          for (let i = 0; i < line.length; i += maxCh) r.push(line.slice(i, i + maxCh));
         });
-        if (o.t >= it.t + typeDur && o.t < t0 + outDur + 0.05) rows.push({ s: '', k: 'cursor', a: 1 });
+        return r;
+      };
+      (o.items || []).forEach((it) => {
+        const isProgress = (typeof it.t === 'number' && it.t >= 0 && it.t <= 1.0);
+        const cmdProgress = isProgress ? clamp(it.t * 2, 0, 1) : (o.t == null || o.t < it.t ? 0 : clamp((o.t - it.t) / (it.typeDur ?? Math.min(2.4, 0.4 + it.b.cmd.length * 0.03)), 0, 1));
+        if (cmdProgress <= 0) return;
+
+        const m = o.prompt ? it.b.cmd.match(o.prompt) : null;
+        const pr = m ? m[0] : '';
+        const cmd = it.b.cmd.slice(pr.length);
+        const typed = cmd.slice(0, Math.floor(cmd.length * cmdProgress));
+        wrap(pr + typed).forEach((s, i) => rows.push({ s, k: 'cmd', pr: i === 0 ? pr.length : 0, a: 1 }));
+
+        const outProgress = isProgress ? clamp((it.t - 0.5) * 2, 0, 1) : (() => {
+          if (o.t == null) return 0;
+          const typeDur = it.typeDur ?? Math.min(2.4, 0.4 + it.b.cmd.length * 0.03);
+          const t0 = it.t + typeDur + 0.15;
+          const outDur = it.outDur ?? Math.min(1.2, 0.08 * (it.b.out ? it.b.out.length : 1) + 0.2);
+          return clamp((o.t - t0) / outDur, 0, 1);
+        })();
+
+        if (outProgress > 0 && it.b.out) {
+          const outLines = Array.isArray(it.b.out) ? it.b.out : String(it.b.out).split('\n');
+          const count = Math.ceil(outLines.length * outProgress);
+          outLines.slice(0, count).forEach((ln) => {
+            wrap(ln).forEach((s) => rows.push({ s, k: /ERROR|Parse error|Warning \|/.test(ln) ? 'err' : 'out', a: clamp(outProgress * 2, 0, 1), src: ln }));
+          });
+        }
+        if (cmdProgress > 0 && cmdProgress < 1) rows.push({ s: '', k: 'cursor', a: 1 });
       });
       const vis = Math.floor((h - 60) / lh);
       const shown = rows.slice(Math.max(0, rows.length - vis));
@@ -354,7 +448,7 @@
       });
       // so'nggi buyruq yozilayotganda kursor
       const last = rows[rows.length - 1];
-      if (last && last.k === 'cmd' && Math.floor(o.t * 2.5) % 2 === 0) {
+      if (last && last.k === 'cmd' && Math.floor((o.t || 0) * 2.5) % 2 === 0) {
         const ly = y + 56 + lh / 2 + (shown.length - 1) * lh;
         ctx.fillStyle = '#f0f2f8'; ctx.fillRect(x + 24 + last.s.length * cw + 2, ly - size / 2, cw * 0.9, size);
       }

@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/sql/06-1-tushuncha.jpg" src="/video/sql/06-1-tushuncha.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/sql/06-1-tushuncha.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/sql/06-1-tushuncha.uz.vtt">
+</video>
+<figcaption>Video: Raqamli ma'lumot turlari — butun sonlar (INT, BIGINT), aniq kasrlar (NUMERIC), taqribiy kasrlar (FLOAT, DOUBLE) va pul hisoblari.</figcaption>
+</figure>
+
 Har bir ustunning **ma'lumot tipi** bo'ladi. Tip ikki narsani belgilaydi:
 
 - ustunga qanday qiymat yozish mumkin;
@@ -109,6 +117,14 @@ Hujjat bu tipning ikki xavfini aytadi:
 Hujjat pul uchun **kasr sonlardan** (`real`, `double`) foydalanmaslikni aytadi, chunki yaxlitlash xatolari chiqadi. `numeric` esa mintaqaga bog'liq emas va hujjatda pul uchun alohida tavsiya qilingan.
 
 ## Kod
+
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/sql/06-2-kod.jpg" src="/video/sql/06-2-kod.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/sql/06-2-kod.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/sql/06-2-kod.uz.vtt">
+</video>
+<figcaption>Video: PostgreSQL 18 psql da jonli sinovlar — 0.1 + 0.2, oraliqdan chiqish (overflow), numeric yaxlitlash, 10 / 4 butun bo'lish va round() farqlari.</figcaption>
+</figure>
 
 Misollar PostgreSQL 18.6, MySQL 9.7.2 va SQLite 3.54.0 da ishga tushirilgan.
 
@@ -263,6 +279,14 @@ SELECT 12.345::money AS pul, '1000'::money / 3 AS bolingan;
 Valyuta belgisi va format bazaning mintaqa sozlamasidan keldi. Ma'lumot emas, uning ko'rinishi.
 
 ## Dialektlar
+
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/sql/06-3-dialektlar.jpg" src="/video/sql/06-3-dialektlar.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/sql/06-3-dialektlar.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/sql/06-3-dialektlar.uz.vtt">
+</video>
+<figcaption>Video: Dialektlar taqqoslash doskasi (PostgreSQL vs MySQL vs SQLite), MySQL da UNSIGNED va DIV, SQLite Type Affinity va 6 ta tipik xato.</figcaption>
+</figure>
 
 ### MySQL
 

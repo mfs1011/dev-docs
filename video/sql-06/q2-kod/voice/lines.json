@@ -1,0 +1,1885 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Salom! Oltinchi bobning ikkinchi qismida PostgreSQL 18 psql terminalida raqamli ma’lumot turlarini jonli sinovdan o‘tkazamiz.",
+    "show": "Salom! Oltinchi bobning ikkinchi qismida PostgreSQL 18 psql terminalida raqamli ma’lumot turlarini jonli sinovdan o‘tkazamiz.",
+    "say": "Salom! Oltinchi bobning ikkinchi qismida Postgres o‘n sakkiz psql terminalida raqamli ma’lumot turlarini jonli sinovdan o‘tkazamiz.",
+    "a0": 0.24,
+    "a1": 8.21,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.24,
+        "e": 0.5
+      },
+      {
+        "w": "Oltinchi",
+        "s": 1.1,
+        "e": 1.42
+      },
+      {
+        "w": "bobning",
+        "s": 1.46,
+        "e": 1.76
+      },
+      {
+        "w": "ikkinchi",
+        "s": 1.84,
+        "e": 2.18
+      },
+      {
+        "w": "qismida",
+        "s": 2.22,
+        "e": 2.56
+      },
+      {
+        "w": "Postgres",
+        "s": 2.76,
+        "e": 3.24
+      },
+      {
+        "w": "o‘n",
+        "s": 3.34,
+        "e": 3.42
+      },
+      {
+        "w": "sakkiz",
+        "s": 3.46,
+        "e": 3.82
+      },
+      {
+        "w": "psql",
+        "s": 4.02,
+        "e": 4.6
+      },
+      {
+        "w": "terminalida",
+        "s": 4.64,
+        "e": 5.22
+      },
+      {
+        "w": "raqamli",
+        "s": 5.52,
+        "e": 5.92
+      },
+      {
+        "w": "ma’lumot",
+        "s": 6.0,
+        "e": 6.38
+      },
+      {
+        "w": "turlarini",
+        "s": 6.42,
+        "e": 6.82
+      },
+      {
+        "w": "jonli",
+        "s": 7.02,
+        "e": 7.32
+      },
+      {
+        "w": "sinovdan",
+        "s": 7.4,
+        "e": 7.75
+      },
+      {
+        "w": "o‘tkazamiz.",
+        "s": 7.79,
+        "e": 8.21
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "point1",
+    "text": "Avvalo mashhur nol butun o‘ndan bir va nol butun o‘ndan ikki yig‘indisini tekshiramiz.",
+    "show": "Avvalo mashhur nol butun o‘ndan bir va nol butun o‘ndan ikki yig‘indisini tekshiramiz.",
+    "say": "Avvalo mashhur nol butun o‘ndan bir va nol butun o‘ndan ikki yig‘indisini tekshiramiz.",
+    "a0": 9.17,
+    "a1": 13.27,
+    "words": [
+      {
+        "w": "Avvalo",
+        "s": 9.17,
+        "e": 9.49
+      },
+      {
+        "w": "mashhur",
+        "s": 9.55,
+        "e": 9.87
+      },
+      {
+        "w": "nol",
+        "s": 10.01,
+        "e": 10.17
+      },
+      {
+        "w": "butun",
+        "s": 10.21,
+        "e": 10.41
+      },
+      {
+        "w": "o‘ndan",
+        "s": 10.49,
+        "e": 10.79
+      },
+      {
+        "w": "bir",
+        "s": 10.85,
+        "e": 10.97
+      },
+      {
+        "w": "va",
+        "s": 11.03,
+        "e": 11.09
+      },
+      {
+        "w": "nol",
+        "s": 11.25,
+        "e": 11.41
+      },
+      {
+        "w": "butun",
+        "s": 11.45,
+        "e": 11.65
+      },
+      {
+        "w": "o‘ndan",
+        "s": 11.73,
+        "e": 11.99
+      },
+      {
+        "w": "ikki",
+        "s": 12.09,
+        "e": 12.29
+      },
+      {
+        "w": "yig‘indisini",
+        "s": 12.33,
+        "e": 12.79
+      },
+      {
+        "w": "tekshiramiz.",
+        "s": 12.83,
+        "e": 13.27
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "point1",
+    "text": "PostgreSQL da oddiy son literallari sukut bo‘yicha nyumerik deb qabul qilingani uchun, birinchi yig‘indi mutlaq aniq nol butun o‘ndan uch chiqadi.",
+    "show": "PostgreSQL da oddiy son literallari sukut bo‘yicha nyumerik deb qabul qilingani uchun, birinchi yig‘indi mutlaq aniq nol butun o‘ndan uch chiqadi.",
+    "say": "Postgres da oddiy son literallari sukut bo‘yicha nyumerik deb qabul qilingani uchun, birinchi yig‘indi mutlaq aniq nol butun o‘ndan uch chiqadi.",
+    "a0": 14.05,
+    "a1": 21.45,
+    "words": [
+      {
+        "w": "Postgres",
+        "s": 14.05,
+        "e": 14.47
+      },
+      {
+        "w": "da",
+        "s": 14.51,
+        "e": 14.57
+      },
+      {
+        "w": "oddiy",
+        "s": 14.75,
+        "e": 14.97
+      },
+      {
+        "w": "son",
+        "s": 15.03,
+        "e": 15.19
+      },
+      {
+        "w": "literallari",
+        "s": 15.25,
+        "e": 15.75
+      },
+      {
+        "w": "sukut",
+        "s": 16.09,
+        "e": 16.33
+      },
+      {
+        "w": "bo‘yicha",
+        "s": 16.39,
+        "e": 16.69
+      },
+      {
+        "w": "nyumerik",
+        "s": 16.87,
+        "e": 17.27
+      },
+      {
+        "w": "deb",
+        "s": 17.31,
+        "e": 17.43
+      },
+      {
+        "w": "qabul",
+        "s": 17.47,
+        "e": 17.67
+      },
+      {
+        "w": "qilingani",
+        "s": 17.69,
+        "e": 18.05
+      },
+      {
+        "w": "uchun,",
+        "s": 18.09,
+        "e": 18.29
+      },
+      {
+        "w": "birinchi",
+        "s": 18.61,
+        "e": 18.91
+      },
+      {
+        "w": "yig‘indi",
+        "s": 18.93,
+        "e": 19.25
+      },
+      {
+        "w": "mutlaq",
+        "s": 19.33,
+        "e": 19.67
+      },
+      {
+        "w": "aniq",
+        "s": 19.77,
+        "e": 19.97
+      },
+      {
+        "w": "nol",
+        "s": 20.15,
+        "e": 20.29
+      },
+      {
+        "w": "butun",
+        "s": 20.35,
+        "e": 20.55
+      },
+      {
+        "w": "o‘ndan",
+        "s": 20.67,
+        "e": 20.93
+      },
+      {
+        "w": "uch",
+        "s": 21.03,
+        "e": 21.13
+      },
+      {
+        "w": "chiqadi.",
+        "s": 21.17,
+        "e": 21.45
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "point1",
+    "text": "Lekin xuddi shu sonlarni float sakkizga o‘girsak, oxirida to‘rt paydo bo‘ladi. Natijada float tenglik yolg‘on, nyumerik tenglik esa rost qaytaradi.",
+    "show": "Lekin xuddi shu sonlarni float sakkizga o‘girsak, oxirida to‘rt paydo bo‘ladi. Natijada float tenglik yolg‘on, nyumerik tenglik esa rost qaytaradi.",
+    "say": "Lekin xuddi shu sonlarni flout sakkizga o‘girsak, oxirida to‘rt paydo bo‘ladi. Natijada flout tenglik yolg‘on, nyumerik tenglik esa rost qaytaradi.",
+    "a0": 22.13,
+    "a1": 30.82,
+    "words": [
+      {
+        "w": "Lekin",
+        "s": 22.13,
+        "e": 22.39
+      },
+      {
+        "w": "xuddi",
+        "s": 22.7,
+        "e": 23.0
+      },
+      {
+        "w": "shu",
+        "s": 23.02,
+        "e": 23.16
+      },
+      {
+        "w": "sonlarni",
+        "s": 23.2,
+        "e": 23.6
+      },
+      {
+        "w": "flout",
+        "s": 23.64,
+        "e": 23.9
+      },
+      {
+        "w": "sakkizga",
+        "s": 23.94,
+        "e": 24.34
+      },
+      {
+        "w": "o‘girsak,",
+        "s": 24.38,
+        "e": 24.74
+      },
+      {
+        "w": "oxirida",
+        "s": 25.12,
+        "e": 25.46
+      },
+      {
+        "w": "to‘rt",
+        "s": 25.54,
+        "e": 25.78
+      },
+      {
+        "w": "paydo",
+        "s": 25.8,
+        "e": 26.02
+      },
+      {
+        "w": "bo‘ladi.",
+        "s": 26.08,
+        "e": 26.34
+      },
+      {
+        "w": "Natijada",
+        "s": 26.84,
+        "e": 27.26
+      },
+      {
+        "w": "flout",
+        "s": 27.6,
+        "e": 27.9
+      },
+      {
+        "w": "tenglik",
+        "s": 27.94,
+        "e": 28.26
+      },
+      {
+        "w": "yolg‘on,",
+        "s": 28.3,
+        "e": 28.68
+      },
+      {
+        "w": "nyumerik",
+        "s": 29.02,
+        "e": 29.38
+      },
+      {
+        "w": "tenglik",
+        "s": 29.42,
+        "e": 29.68
+      },
+      {
+        "w": "esa",
+        "s": 29.72,
+        "e": 29.88
+      },
+      {
+        "w": "rost",
+        "s": 30.16,
+        "e": 30.4
+      },
+      {
+        "w": "qaytaradi.",
+        "s": 30.44,
+        "e": 30.82
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "overflow",
+    "text": "Endi oraliqdan chiqish holatini ko‘ramiz. Smol-int ning eng katta qiymati o‘ttiz ikki ming yetti yuz oltmish yettiga birni qo‘shsak, oraliqdan chiqish xatosi beriladi.",
+    "show": "Endi oraliqdan chiqish holatini ko‘ramiz. Smol-int ning eng katta qiymati o‘ttiz ikki ming yetti yuz oltmish yettiga birni qo‘shsak, oraliqdan chiqish xatosi beriladi.",
+    "say": "Endi oraliqdan chiqish holatini ko‘ramiz. Smol-int ning eng katta qiymati o‘ttiz ikki ming yetti yuz oltmish yettiga birni qo‘shsak, oraliqdan chiqish xatosi beriladi.",
+    "a0": 31.78,
+    "a1": 40.95,
+    "words": [
+      {
+        "w": "Endi",
+        "s": 31.78,
+        "e": 31.98
+      },
+      {
+        "w": "oraliqdan",
+        "s": 32.36,
+        "e": 32.82
+      },
+      {
+        "w": "chiqish",
+        "s": 32.88,
+        "e": 33.14
+      },
+      {
+        "w": "holatini",
+        "s": 33.16,
+        "e": 33.56
+      },
+      {
+        "w": "ko‘ramiz.",
+        "s": 33.6,
+        "e": 33.92
+      },
+      {
+        "w": "Smol-int",
+        "s": 34.58,
+        "e": 35.06
+      },
+      {
+        "w": "ning",
+        "s": 35.12,
+        "e": 35.26
+      },
+      {
+        "w": "eng",
+        "s": 35.44,
+        "e": 35.6
+      },
+      {
+        "w": "katta",
+        "s": 35.64,
+        "e": 35.88
+      },
+      {
+        "w": "qiymati",
+        "s": 35.96,
+        "e": 36.32
+      },
+      {
+        "w": "o‘ttiz",
+        "s": 36.5,
+        "e": 36.74
+      },
+      {
+        "w": "ikki",
+        "s": 36.78,
+        "e": 36.96
+      },
+      {
+        "w": "ming",
+        "s": 37.0,
+        "e": 37.12
+      },
+      {
+        "w": "yetti",
+        "s": 37.14,
+        "e": 37.36
+      },
+      {
+        "w": "yuz",
+        "s": 37.38,
+        "e": 37.48
+      },
+      {
+        "w": "oltmish",
+        "s": 37.55,
+        "e": 37.83
+      },
+      {
+        "w": "yettiga",
+        "s": 37.89,
+        "e": 38.23
+      },
+      {
+        "w": "birni",
+        "s": 38.33,
+        "e": 38.57
+      },
+      {
+        "w": "qo‘shsak,",
+        "s": 38.61,
+        "e": 38.95
+      },
+      {
+        "w": "oraliqdan",
+        "s": 39.35,
+        "e": 39.83
+      },
+      {
+        "w": "chiqish",
+        "s": 39.91,
+        "e": 40.21
+      },
+      {
+        "w": "xatosi",
+        "s": 40.23,
+        "e": 40.55
+      },
+      {
+        "w": "beriladi.",
+        "s": 40.59,
+        "e": 40.95
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "overflow",
+    "text": "Xuddi shunday, intijer ning chegarasi ikki milliard yuz qirq yetti millionga bir qo‘shilganda ham xato chiqadi. PostgreSQL jimgina keyingi tipga o‘tib ketmaydi.",
+    "show": "Xuddi shunday, intijer ning chegarasi ikki milliard yuz qirq yetti millionga bir qo‘shilganda ham xato chiqadi. PostgreSQL jimgina keyingi tipga o‘tib ketmaydi.",
+    "say": "Xuddi shunday, intijer ning chegarasi ikki milliard yuz qirq yetti millionga bir qo‘shilganda ham xato chiqadi. Postgres jimgina keyingi tipga o‘tib ketmaydi.",
+    "a0": 41.79,
+    "a1": 50.63,
+    "words": [
+      {
+        "w": "Xuddi",
+        "s": 41.79,
+        "e": 41.99
+      },
+      {
+        "w": "shunday,",
+        "s": 42.01,
+        "e": 42.29
+      },
+      {
+        "w": "intijer",
+        "s": 42.67,
+        "e": 43.07
+      },
+      {
+        "w": "ning",
+        "s": 43.11,
+        "e": 43.23
+      },
+      {
+        "w": "chegarasi",
+        "s": 43.25,
+        "e": 43.71
+      },
+      {
+        "w": "ikki",
+        "s": 44.07,
+        "e": 44.29
+      },
+      {
+        "w": "milliard",
+        "s": 44.33,
+        "e": 44.67
+      },
+      {
+        "w": "yuz",
+        "s": 44.73,
+        "e": 44.87
+      },
+      {
+        "w": "qirq",
+        "s": 44.93,
+        "e": 45.11
+      },
+      {
+        "w": "yetti",
+        "s": 45.17,
+        "e": 45.43
+      },
+      {
+        "w": "millionga",
+        "s": 45.47,
+        "e": 45.91
+      },
+      {
+        "w": "bir",
+        "s": 46.03,
+        "e": 46.13
+      },
+      {
+        "w": "qo‘shilganda",
+        "s": 46.19,
+        "e": 46.67
+      },
+      {
+        "w": "ham",
+        "s": 46.71,
+        "e": 46.81
+      },
+      {
+        "w": "xato",
+        "s": 46.85,
+        "e": 47.03
+      },
+      {
+        "w": "chiqadi.",
+        "s": 47.07,
+        "e": 47.35
+      },
+      {
+        "w": "Postgres",
+        "s": 48.13,
+        "e": 48.57
+      },
+      {
+        "w": "jimgina",
+        "s": 48.93,
+        "e": 49.33
+      },
+      {
+        "w": "keyingi",
+        "s": 49.41,
+        "e": 49.75
+      },
+      {
+        "w": "tipga",
+        "s": 49.81,
+        "e": 50.05
+      },
+      {
+        "w": "o‘tib",
+        "s": 50.09,
+        "e": 50.23
+      },
+      {
+        "w": "ketmaydi.",
+        "s": 50.25,
+        "e": 50.63
+      }
+    ]
+  },
+  {
+    "id": "L7",
+    "scene": "overflow",
+    "text": "Natija to‘g‘ri chiqishi uchun sonlardan birini oldindan big-int deb e’lon qilishimiz shart.",
+    "show": "Natija to‘g‘ri chiqishi uchun sonlardan birini oldindan big-int deb e’lon qilishimiz shart.",
+    "say": "Natija to‘g‘ri chiqishi uchun sonlardan birini oldindan big-int deb e’lon qilishimiz shart.",
+    "a0": 51.45,
+    "a1": 55.94,
+    "words": [
+      {
+        "w": "Natija",
+        "s": 51.45,
+        "e": 51.73
+      },
+      {
+        "w": "to‘g‘ri",
+        "s": 51.81,
+        "e": 52.07
+      },
+      {
+        "w": "chiqishi",
+        "s": 52.09,
+        "e": 52.31
+      },
+      {
+        "w": "uchun",
+        "s": 52.37,
+        "e": 52.56
+      },
+      {
+        "w": "sonlardan",
+        "s": 52.88,
+        "e": 53.34
+      },
+      {
+        "w": "birini",
+        "s": 53.4,
+        "e": 53.64
+      },
+      {
+        "w": "oldindan",
+        "s": 53.82,
+        "e": 54.28
+      },
+      {
+        "w": "big-int",
+        "s": 54.36,
+        "e": 54.78
+      },
+      {
+        "w": "deb",
+        "s": 54.82,
+        "e": 54.98
+      },
+      {
+        "w": "e’lon",
+        "s": 55.08,
+        "e": 55.32
+      },
+      {
+        "w": "qilishimiz",
+        "s": 55.36,
+        "e": 55.72
+      },
+      {
+        "w": "shart.",
+        "s": 55.74,
+        "e": 55.94
+      }
+    ]
+  },
+  {
+    "id": "L8",
+    "scene": "numeric_exp",
+    "text": "Endi nyumerik besh ikki ustunini sinaymiz. Unga bir yuz yigirma uch butun to‘rt yuz ellik olti yozilganda, u avtomatik bir yuz yigirma uch butun qirq oltiga yaxlitlanadi.",
+    "show": "Endi nyumerik besh ikki ustunini sinaymiz. Unga bir yuz yigirma uch butun to‘rt yuz ellik olti yozilganda, u avtomatik bir yuz yigirma uch butun qirq oltiga yaxlitlanadi.",
+    "say": "Endi nyumerik besh ikki ustunini sinaymiz. Unga bir yuz yigirma uch butun to‘rt yuz ellik olti yozilganda, u avtomatik bir yuz yigirma uch butun qirq oltiga yaxlitlanadi.",
+    "a0": 57.08,
+    "a1": 66.44,
+    "words": [
+      {
+        "w": "Endi",
+        "s": 57.08,
+        "e": 57.28
+      },
+      {
+        "w": "nyumerik",
+        "s": 57.48,
+        "e": 57.88
+      },
+      {
+        "w": "besh",
+        "s": 58.02,
+        "e": 58.24
+      },
+      {
+        "w": "ikki",
+        "s": 58.34,
+        "e": 58.56
+      },
+      {
+        "w": "ustunini",
+        "s": 58.62,
+        "e": 59.0
+      },
+      {
+        "w": "sinaymiz.",
+        "s": 59.04,
+        "e": 59.38
+      },
+      {
+        "w": "Unga",
+        "s": 60.02,
+        "e": 60.2
+      },
+      {
+        "w": "bir",
+        "s": 60.62,
+        "e": 60.72
+      },
+      {
+        "w": "yuz",
+        "s": 60.76,
+        "e": 60.88
+      },
+      {
+        "w": "yigirma",
+        "s": 60.88,
+        "e": 61.14
+      },
+      {
+        "w": "uch",
+        "s": 61.22,
+        "e": 61.32
+      },
+      {
+        "w": "butun",
+        "s": 61.36,
+        "e": 61.62
+      },
+      {
+        "w": "to‘rt",
+        "s": 61.68,
+        "e": 61.86
+      },
+      {
+        "w": "yuz",
+        "s": 61.86,
+        "e": 61.94
+      },
+      {
+        "w": "ellik",
+        "s": 61.98,
+        "e": 62.2
+      },
+      {
+        "w": "olti",
+        "s": 62.28,
+        "e": 62.44
+      },
+      {
+        "w": "yozilganda,",
+        "s": 62.48,
+        "e": 62.98
+      },
+      {
+        "w": "u",
+        "s": 63.34,
+        "e": 63.36
+      },
+      {
+        "w": "avtomatik",
+        "s": 63.58,
+        "e": 64.12
+      },
+      {
+        "w": "bir",
+        "s": 64.32,
+        "e": 64.4
+      },
+      {
+        "w": "yuz",
+        "s": 64.44,
+        "e": 64.54
+      },
+      {
+        "w": "yigirma",
+        "s": 64.54,
+        "e": 64.8
+      },
+      {
+        "w": "uch",
+        "s": 64.88,
+        "e": 64.98
+      },
+      {
+        "w": "butun",
+        "s": 65.04,
+        "e": 65.26
+      },
+      {
+        "w": "qirq",
+        "s": 65.34,
+        "e": 65.5
+      },
+      {
+        "w": "oltiga",
+        "s": 65.6,
+        "e": 65.86
+      },
+      {
+        "w": "yaxlitlanadi.",
+        "s": 65.9,
+        "e": 66.44
+      }
+    ]
+  },
+  {
+    "id": "L9",
+    "scene": "numeric_exp",
+    "text": "To‘qqiz yuz to‘qson to‘qqiz butun mingdan to‘qqiz yuz to‘qson to‘rt ham sig‘adi va to‘qqiz yuz to‘qson to‘qqiz butun yuzdan to‘qson to‘qqiz bo‘lib yoziladi.",
+    "show": "To‘qqiz yuz to‘qson to‘qqiz butun mingdan to‘qqiz yuz to‘qson to‘rt ham sig‘adi va to‘qqiz yuz to‘qson to‘qqiz butun yuzdan to‘qson to‘qqiz bo‘lib yoziladi.",
+    "say": "To‘qqiz yuz to‘qson to‘qqiz butun mingdan to‘qqiz yuz to‘qson to‘rt ham sig‘adi va to‘qqiz yuz to‘qson to‘qqiz butun yuzdan to‘qson to‘qqiz bo‘lib yoziladi.",
+    "a0": 67.38,
+    "a1": 74.03,
+    "words": [
+      {
+        "w": "To‘qqiz",
+        "s": 67.38,
+        "e": 67.65
+      },
+      {
+        "w": "yuz",
+        "s": 67.65,
+        "e": 67.71
+      },
+      {
+        "w": "to‘qson",
+        "s": 67.79,
+        "e": 68.07
+      },
+      {
+        "w": "to‘qqiz",
+        "s": 68.09,
+        "e": 68.35
+      },
+      {
+        "w": "butun",
+        "s": 68.39,
+        "e": 68.63
+      },
+      {
+        "w": "mingdan",
+        "s": 68.95,
+        "e": 69.31
+      },
+      {
+        "w": "to‘qqiz",
+        "s": 69.37,
+        "e": 69.63
+      },
+      {
+        "w": "yuz",
+        "s": 69.63,
+        "e": 69.71
+      },
+      {
+        "w": "to‘qson",
+        "s": 69.73,
+        "e": 70.01
+      },
+      {
+        "w": "to‘rt",
+        "s": 70.07,
+        "e": 70.25
+      },
+      {
+        "w": "ham",
+        "s": 70.27,
+        "e": 70.41
+      },
+      {
+        "w": "sig‘adi",
+        "s": 70.45,
+        "e": 70.71
+      },
+      {
+        "w": "va",
+        "s": 70.75,
+        "e": 70.83
+      },
+      {
+        "w": "to‘qqiz",
+        "s": 71.15,
+        "e": 71.43
+      },
+      {
+        "w": "yuz",
+        "s": 71.43,
+        "e": 71.51
+      },
+      {
+        "w": "to‘qson",
+        "s": 71.55,
+        "e": 71.81
+      },
+      {
+        "w": "to‘qqiz",
+        "s": 71.85,
+        "e": 72.13
+      },
+      {
+        "w": "butun",
+        "s": 72.17,
+        "e": 72.39
+      },
+      {
+        "w": "yuzdan",
+        "s": 72.45,
+        "e": 72.73
+      },
+      {
+        "w": "to‘qson",
+        "s": 72.79,
+        "e": 73.07
+      },
+      {
+        "w": "to‘qqiz",
+        "s": 73.13,
+        "e": 73.41
+      },
+      {
+        "w": "bo‘lib",
+        "s": 73.45,
+        "e": 73.65
+      },
+      {
+        "w": "yoziladi.",
+        "s": 73.67,
+        "e": 74.03
+      }
+    ]
+  },
+  {
+    "id": "L10",
+    "scene": "numeric_exp",
+    "text": "Ammo to‘qqiz yuz to‘qson to‘qqiz butun mingdan to‘qqiz yuz to‘qson besh kiritilsa, yaxlitlash natijasida ming hosil bo‘ladi va bu belgilangan beshta raqamdan oshib ketgani uchun xato beradi.",
+    "show": "Ammo to‘qqiz yuz to‘qson to‘qqiz butun mingdan to‘qqiz yuz to‘qson besh kiritilsa, yaxlitlash natijasida ming hosil bo‘ladi va bu belgilangan beshta raqamdan oshib ketgani uchun xato beradi.",
+    "say": "Ammo to‘qqiz yuz to‘qson to‘qqiz butun mingdan to‘qqiz yuz to‘qson besh kiritilsa, yaxlitlash natijasida ming hosil bo‘ladi va bu belgilangan beshta raqamdan oshib ketgani uchun xato beradi.",
+    "a0": 74.87,
+    "a1": 84.78,
+    "words": [
+      {
+        "w": "Ammo",
+        "s": 74.87,
+        "e": 75.05
+      },
+      {
+        "w": "to‘qqiz",
+        "s": 75.43,
+        "e": 75.69
+      },
+      {
+        "w": "yuz",
+        "s": 75.69,
+        "e": 75.75
+      },
+      {
+        "w": "to‘qson",
+        "s": 75.83,
+        "e": 76.09
+      },
+      {
+        "w": "to‘qqiz",
+        "s": 76.13,
+        "e": 76.39
+      },
+      {
+        "w": "butun",
+        "s": 76.43,
+        "e": 76.65
+      },
+      {
+        "w": "mingdan",
+        "s": 76.69,
+        "e": 77.01
+      },
+      {
+        "w": "to‘qqiz",
+        "s": 77.05,
+        "e": 77.29
+      },
+      {
+        "w": "yuz",
+        "s": 77.29,
+        "e": 77.35
+      },
+      {
+        "w": "to‘qson",
+        "s": 77.37,
+        "e": 77.69
+      },
+      {
+        "w": "besh",
+        "s": 77.73,
+        "e": 77.91
+      },
+      {
+        "w": "kiritilsa,",
+        "s": 77.95,
+        "e": 78.37
+      },
+      {
+        "w": "yaxlitlash",
+        "s": 78.75,
+        "e": 79.23
+      },
+      {
+        "w": "natijasida",
+        "s": 79.25,
+        "e": 79.77
+      },
+      {
+        "w": "ming",
+        "s": 79.97,
+        "e": 80.15
+      },
+      {
+        "w": "hosil",
+        "s": 80.19,
+        "e": 80.43
+      },
+      {
+        "w": "bo‘ladi",
+        "s": 80.47,
+        "e": 80.71
+      },
+      {
+        "w": "va",
+        "s": 81.31,
+        "e": 81.39
+      },
+      {
+        "w": "bu",
+        "s": 81.61,
+        "e": 81.67
+      },
+      {
+        "w": "belgilangan",
+        "s": 81.87,
+        "e": 82.41
+      },
+      {
+        "w": "beshta",
+        "s": 82.54,
+        "e": 82.8
+      },
+      {
+        "w": "raqamdan",
+        "s": 82.84,
+        "e": 83.2
+      },
+      {
+        "w": "oshib",
+        "s": 83.28,
+        "e": 83.46
+      },
+      {
+        "w": "ketgani",
+        "s": 83.48,
+        "e": 83.76
+      },
+      {
+        "w": "uchun",
+        "s": 83.82,
+        "e": 83.98
+      },
+      {
+        "w": "xato",
+        "s": 84.22,
+        "e": 84.44
+      },
+      {
+        "w": "beradi.",
+        "s": 84.48,
+        "e": 84.78
+      }
+    ]
+  },
+  {
+    "id": "L11",
+    "scene": "division",
+    "text": "Navbatdagi muhim qoida — sonlarni bo‘lishdir. O‘nni to‘rtga bo‘lsak, PostgreSQL butun qismini olib, ikki qaytaradi.",
+    "show": "Navbatdagi muhim qoida — sonlarni bo‘lishdir. O‘nni to‘rtga bo‘lsak, PostgreSQL butun qismini olib, ikki qaytaradi.",
+    "say": "Navbatdagi muhim qoida — sonlarni bo‘lishdir. O‘nni to‘rtga bo‘lsak, Postgres butun qismini olib, ikki qaytaradi.",
+    "a0": 85.56,
+    "a1": 92.26,
+    "words": [
+      {
+        "w": "Navbatdagi",
+        "s": 85.56,
+        "e": 86.06
+      },
+      {
+        "w": "muhim",
+        "s": 86.12,
+        "e": 86.4
+      },
+      {
+        "w": "qoida",
+        "s": 86.48,
+        "e": 86.8
+      },
+      {
+        "w": "—",
+        "s": 86.8,
+        "e": 86.8
+      },
+      {
+        "w": "sonlarni",
+        "s": 87.04,
+        "e": 87.48
+      },
+      {
+        "w": "bo‘lishdir.",
+        "s": 87.52,
+        "e": 87.88
+      },
+      {
+        "w": "O‘nni",
+        "s": 88.84,
+        "e": 89.1
+      },
+      {
+        "w": "to‘rtga",
+        "s": 89.14,
+        "e": 89.42
+      },
+      {
+        "w": "bo‘lsak,",
+        "s": 89.48,
+        "e": 89.76
+      },
+      {
+        "w": "Postgres",
+        "s": 90.06,
+        "e": 90.48
+      },
+      {
+        "w": "butun",
+        "s": 90.54,
+        "e": 90.74
+      },
+      {
+        "w": "qismini",
+        "s": 90.8,
+        "e": 91.08
+      },
+      {
+        "w": "olib,",
+        "s": 91.16,
+        "e": 91.34
+      },
+      {
+        "w": "ikki",
+        "s": 91.6,
+        "e": 91.8
+      },
+      {
+        "w": "qaytaradi.",
+        "s": 91.84,
+        "e": 92.26
+      }
+    ]
+  },
+  {
+    "id": "L12",
+    "scene": "division",
+    "text": "Chunki ikkita butun sonning bo‘linmasi ham butun son bo‘lishi shart. Kasr natija olish uchun to‘rt emas, balki to‘rt butun nol deb yozish kerak.",
+    "show": "Chunki ikkita butun sonning bo‘linmasi ham butun son bo‘lishi shart. Kasr natija olish uchun to‘rt emas, balki to‘rt butun nol deb yozish kerak.",
+    "say": "Chunki ikkita butun sonning bo‘linmasi ham butun son bo‘lishi shart. Kasr natija olish uchun to‘rt emas, balki to‘rt butun nol deb yozish kerak.",
+    "a0": 92.98,
+    "a1": 100.27,
+    "words": [
+      {
+        "w": "Chunki",
+        "s": 92.98,
+        "e": 93.2
+      },
+      {
+        "w": "ikkita",
+        "s": 93.6,
+        "e": 93.82
+      },
+      {
+        "w": "butun",
+        "s": 93.88,
+        "e": 94.12
+      },
+      {
+        "w": "sonning",
+        "s": 94.18,
+        "e": 94.48
+      },
+      {
+        "w": "bo‘linmasi",
+        "s": 94.52,
+        "e": 94.96
+      },
+      {
+        "w": "ham",
+        "s": 94.98,
+        "e": 95.12
+      },
+      {
+        "w": "butun",
+        "s": 95.16,
+        "e": 95.38
+      },
+      {
+        "w": "son",
+        "s": 95.42,
+        "e": 95.54
+      },
+      {
+        "w": "bo‘lishi",
+        "s": 95.58,
+        "e": 95.84
+      },
+      {
+        "w": "shart.",
+        "s": 95.84,
+        "e": 96.04
+      },
+      {
+        "w": "Kasr",
+        "s": 96.76,
+        "e": 97.04
+      },
+      {
+        "w": "natija",
+        "s": 97.1,
+        "e": 97.36
+      },
+      {
+        "w": "olish",
+        "s": 97.42,
+        "e": 97.61
+      },
+      {
+        "w": "uchun",
+        "s": 97.61,
+        "e": 97.77
+      },
+      {
+        "w": "to‘rt",
+        "s": 97.89,
+        "e": 98.11
+      },
+      {
+        "w": "emas,",
+        "s": 98.17,
+        "e": 98.37
+      },
+      {
+        "w": "balki",
+        "s": 98.41,
+        "e": 98.63
+      },
+      {
+        "w": "to‘rt",
+        "s": 98.95,
+        "e": 99.15
+      },
+      {
+        "w": "butun",
+        "s": 99.19,
+        "e": 99.41
+      },
+      {
+        "w": "nol",
+        "s": 99.49,
+        "e": 99.65
+      },
+      {
+        "w": "deb",
+        "s": 99.69,
+        "e": 99.81
+      },
+      {
+        "w": "yozish",
+        "s": 99.85,
+        "e": 100.05
+      },
+      {
+        "w": "kerak.",
+        "s": 100.07,
+        "e": 100.27
+      }
+    ]
+  },
+  {
+    "id": "L13",
+    "scene": "division",
+    "text": "Shunda natija ikki butun o‘ndan besh bo‘ladi. Foiz belgisi esa butun bo‘lishdagi qoldiqni topib beradi.",
+    "show": "Shunda natija ikki butun o‘ndan besh bo‘ladi. Foiz belgisi esa butun bo‘lishdagi qoldiqni topib beradi.",
+    "say": "Shunda natija ikki butun o‘ndan besh bo‘ladi. Foiz belgisi esa butun bo‘lishdagi qoldiqni topib beradi.",
+    "a0": 100.91,
+    "a1": 106.55,
+    "words": [
+      {
+        "w": "Shunda",
+        "s": 100.91,
+        "e": 101.11
+      },
+      {
+        "w": "natija",
+        "s": 101.15,
+        "e": 101.47
+      },
+      {
+        "w": "ikki",
+        "s": 101.83,
+        "e": 102.03
+      },
+      {
+        "w": "butun",
+        "s": 102.05,
+        "e": 102.27
+      },
+      {
+        "w": "o‘ndan",
+        "s": 102.37,
+        "e": 102.63
+      },
+      {
+        "w": "besh",
+        "s": 102.69,
+        "e": 102.83
+      },
+      {
+        "w": "bo‘ladi.",
+        "s": 102.87,
+        "e": 103.15
+      },
+      {
+        "w": "Foiz",
+        "s": 103.77,
+        "e": 104.05
+      },
+      {
+        "w": "belgisi",
+        "s": 104.09,
+        "e": 104.37
+      },
+      {
+        "w": "esa",
+        "s": 104.39,
+        "e": 104.53
+      },
+      {
+        "w": "butun",
+        "s": 104.87,
+        "e": 105.09
+      },
+      {
+        "w": "bo‘lishdagi",
+        "s": 105.13,
+        "e": 105.55
+      },
+      {
+        "w": "qoldiqni",
+        "s": 105.65,
+        "e": 106.05
+      },
+      {
+        "w": "topib",
+        "s": 106.07,
+        "e": 106.29
+      },
+      {
+        "w": "beradi.",
+        "s": 106.31,
+        "e": 106.55
+      }
+    ]
+  },
+  {
+    "id": "L14",
+    "scene": "round_diff",
+    "text": "Yaxlitlashda ham kutilmagan farq bor. Bir xil raund funksiyasi nyumerik va dabl prezishn uchun har xil ishlaydi.",
+    "show": "Yaxlitlashda ham kutilmagan farq bor. Bir xil raund funksiyasi nyumerik va dabl prezishn uchun har xil ishlaydi.",
+    "say": "Yaxlitlashda ham kutilmagan farq bor. Bir xil raund funksiyasi nyumerik va dabl prezishn uchun har xil ishlaydi.",
+    "a0": 107.31,
+    "a1": 113.48,
+    "words": [
+      {
+        "w": "Yaxlitlashda",
+        "s": 107.31,
+        "e": 107.83
+      },
+      {
+        "w": "ham",
+        "s": 107.87,
+        "e": 107.99
+      },
+      {
+        "w": "kutilmagan",
+        "s": 108.05,
+        "e": 108.51
+      },
+      {
+        "w": "farq",
+        "s": 108.55,
+        "e": 108.71
+      },
+      {
+        "w": "bor.",
+        "s": 108.77,
+        "e": 108.89
+      },
+      {
+        "w": "Bir",
+        "s": 109.55,
+        "e": 109.67
+      },
+      {
+        "w": "xil",
+        "s": 109.71,
+        "e": 109.89
+      },
+      {
+        "w": "raund",
+        "s": 109.97,
+        "e": 110.23
+      },
+      {
+        "w": "funksiyasi",
+        "s": 110.27,
+        "e": 110.81
+      },
+      {
+        "w": "nyumerik",
+        "s": 111.09,
+        "e": 111.55
+      },
+      {
+        "w": "va",
+        "s": 111.61,
+        "e": 111.67
+      },
+      {
+        "w": "dabl",
+        "s": 111.79,
+        "e": 112.03
+      },
+      {
+        "w": "prezishn",
+        "s": 112.09,
+        "e": 112.54
+      },
+      {
+        "w": "uchun",
+        "s": 112.6,
+        "e": 112.78
+      },
+      {
+        "w": "har",
+        "s": 112.84,
+        "e": 113.0
+      },
+      {
+        "w": "xil",
+        "s": 113.02,
+        "e": 113.14
+      },
+      {
+        "w": "ishlaydi.",
+        "s": 113.16,
+        "e": 113.48
+      }
+    ]
+  },
+  {
+    "id": "L15",
+    "scene": "round_diff",
+    "text": "Nyumerik har doim noldan uzoqqa yaxlitlaydi: masalan ikki yarim uch bo‘ladi. Dabl esa eng yaqin juft songa qarab yaxlitlaydi: ikki yarim ikki bo‘lib qoladi.",
+    "show": "Nyumerik har doim noldan uzoqqa yaxlitlaydi: masalan ikki yarim uch bo‘ladi. Dabl esa eng yaqin juft songa qarab yaxlitlaydi: ikki yarim ikki bo‘lib qoladi.",
+    "say": "Nyumerik har doim noldan uzoqqa yaxlitlaydi: masalan ikki yarim uch bo‘ladi. Dabl esa eng yaqin juft songa qarab yaxlitlaydi: ikki yarim ikki bo‘lib qoladi.",
+    "a0": 114.38,
+    "a1": 123.96,
+    "words": [
+      {
+        "w": "Nyumerik",
+        "s": 114.38,
+        "e": 114.84
+      },
+      {
+        "w": "har",
+        "s": 114.92,
+        "e": 115.08
+      },
+      {
+        "w": "doim",
+        "s": 115.14,
+        "e": 115.36
+      },
+      {
+        "w": "noldan",
+        "s": 115.42,
+        "e": 115.74
+      },
+      {
+        "w": "uzoqqa",
+        "s": 115.78,
+        "e": 116.1
+      },
+      {
+        "w": "yaxlitlaydi:",
+        "s": 116.14,
+        "e": 116.64
+      },
+      {
+        "w": "masalan",
+        "s": 117.1,
+        "e": 117.4
+      },
+      {
+        "w": "ikki",
+        "s": 117.7,
+        "e": 117.88
+      },
+      {
+        "w": "yarim",
+        "s": 117.92,
+        "e": 118.16
+      },
+      {
+        "w": "uch",
+        "s": 118.34,
+        "e": 118.46
+      },
+      {
+        "w": "bo‘ladi.",
+        "s": 118.5,
+        "e": 118.78
+      },
+      {
+        "w": "Dabl",
+        "s": 119.5,
+        "e": 119.74
+      },
+      {
+        "w": "esa",
+        "s": 119.8,
+        "e": 119.96
+      },
+      {
+        "w": "eng",
+        "s": 120.38,
+        "e": 120.52
+      },
+      {
+        "w": "yaqin",
+        "s": 120.56,
+        "e": 120.84
+      },
+      {
+        "w": "juft",
+        "s": 120.94,
+        "e": 121.14
+      },
+      {
+        "w": "songa",
+        "s": 121.18,
+        "e": 121.42
+      },
+      {
+        "w": "qarab",
+        "s": 121.46,
+        "e": 121.66
+      },
+      {
+        "w": "yaxlitlaydi:",
+        "s": 121.68,
+        "e": 122.16
+      },
+      {
+        "w": "ikki",
+        "s": 122.64,
+        "e": 122.8
+      },
+      {
+        "w": "yarim",
+        "s": 122.84,
+        "e": 123.06
+      },
+      {
+        "w": "ikki",
+        "s": 123.3,
+        "e": 123.48
+      },
+      {
+        "w": "bo‘lib",
+        "s": 123.5,
+        "e": 123.68
+      },
+      {
+        "w": "qoladi.",
+        "s": 123.72,
+        "e": 123.96
+      }
+    ]
+  },
+  {
+    "id": "L16",
+    "scene": "round_diff",
+    "text": "Shuningdek, nyumerikda cheksizlik va raqam emas kabi maxsus qiymatlar, hamda manfiy skeyl ham qo‘llab-quvvatlanadi.",
+    "show": "Shuningdek, nyumerikda cheksizlik va raqam emas kabi maxsus qiymatlar, hamda manfiy skeyl ham qo‘llab-quvvatlanadi.",
+    "say": "Shuningdek, nyumerikda cheksizlik va raqam emas kabi maxsus qiymatlar, hamda manfiy skeyl ham qo‘llab-quvvatlanadi.",
+    "a0": 124.94,
+    "a1": 131.41,
+    "words": [
+      {
+        "w": "Shuningdek,",
+        "s": 124.94,
+        "e": 125.3
+      },
+      {
+        "w": "nyumerikda",
+        "s": 125.6,
+        "e": 126.13
+      },
+      {
+        "w": "cheksizlik",
+        "s": 126.37,
+        "e": 126.97
+      },
+      {
+        "w": "va",
+        "s": 127.05,
+        "e": 127.13
+      },
+      {
+        "w": "raqam",
+        "s": 127.27,
+        "e": 127.55
+      },
+      {
+        "w": "emas",
+        "s": 127.67,
+        "e": 127.89
+      },
+      {
+        "w": "kabi",
+        "s": 127.93,
+        "e": 128.13
+      },
+      {
+        "w": "maxsus",
+        "s": 128.21,
+        "e": 128.53
+      },
+      {
+        "w": "qiymatlar,",
+        "s": 128.57,
+        "e": 129.03
+      },
+      {
+        "w": "hamda",
+        "s": 129.35,
+        "e": 129.57
+      },
+      {
+        "w": "manfiy",
+        "s": 129.77,
+        "e": 130.09
+      },
+      {
+        "w": "skeyl",
+        "s": 130.17,
+        "e": 130.45
+      },
+      {
+        "w": "ham",
+        "s": 130.47,
+        "e": 130.61
+      },
+      {
+        "w": "qo‘llab-quvvatlanadi.",
+        "s": 130.67,
+        "e": 131.41
+      }
+    ]
+  },
+  {
+    "id": "L17",
+    "scene": "xulosa",
+    "text": "Ko‘rib turganingizdek, to‘g‘ri tip tanlash nafaqat xotirani tejaydi, balki dasturiy xatolarning oldini oladi.",
+    "show": "Ko‘rib turganingizdek, to‘g‘ri tip tanlash nafaqat xotirani tejaydi, balki dasturiy xatolarning oldini oladi.",
+    "say": "Ko‘rib turganingizdek, to‘g‘ri tip tanlash nafaqat xotirani tejaydi, balki dasturiy xatolarning oldini oladi.",
+    "a0": 132.29,
+    "a1": 137.86,
+    "words": [
+      {
+        "w": "Ko‘rib",
+        "s": 132.29,
+        "e": 132.47
+      },
+      {
+        "w": "turganingizdek,",
+        "s": 132.49,
+        "e": 133.05
+      },
+      {
+        "w": "to‘g‘ri",
+        "s": 133.39,
+        "e": 133.69
+      },
+      {
+        "w": "tip",
+        "s": 133.75,
+        "e": 133.89
+      },
+      {
+        "w": "tanlash",
+        "s": 133.97,
+        "e": 134.33
+      },
+      {
+        "w": "nafaqat",
+        "s": 134.37,
+        "e": 134.75
+      },
+      {
+        "w": "xotirani",
+        "s": 134.79,
+        "e": 135.17
+      },
+      {
+        "w": "tejaydi,",
+        "s": 135.21,
+        "e": 135.57
+      },
+      {
+        "w": "balki",
+        "s": 135.91,
+        "e": 136.13
+      },
+      {
+        "w": "dasturiy",
+        "s": 136.31,
+        "e": 136.71
+      },
+      {
+        "w": "xatolarning",
+        "s": 136.75,
+        "e": 137.29
+      },
+      {
+        "w": "oldini",
+        "s": 137.35,
+        "e": 137.59
+      },
+      {
+        "w": "oladi.",
+        "s": 137.63,
+        "e": 137.86
+      }
+    ]
+  },
+  {
+    "id": "L18",
+    "scene": "xulosa",
+    "text": "Keyingi uchinchi qismda ushbu mavzuni MySQL va SQLite tizimlari bilan qiyoslaymiz.",
+    "show": "Keyingi uchinchi qismda ushbu mavzuni MySQL va SQLite tizimlari bilan qiyoslaymiz.",
+    "say": "Keyingi uchinchi qismda ushbu mavzuni May es-kyu-el va Es-kyu-layt tizimlari bilan qiyoslaymiz.",
+    "a0": 138.52,
+    "a1": 143.48,
+    "words": [
+      {
+        "w": "Keyingi",
+        "s": 138.52,
+        "e": 138.86
+      },
+      {
+        "w": "uchinchi",
+        "s": 138.98,
+        "e": 139.3
+      },
+      {
+        "w": "qismda",
+        "s": 139.32,
+        "e": 139.6
+      },
+      {
+        "w": "ushbu",
+        "s": 139.98,
+        "e": 140.18
+      },
+      {
+        "w": "mavzuni",
+        "s": 140.24,
+        "e": 140.64
+      },
+      {
+        "w": "May",
+        "s": 140.86,
+        "e": 141.02
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 141.1,
+        "e": 141.46
+      },
+      {
+        "w": "va",
+        "s": 141.52,
+        "e": 141.6
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 141.88,
+        "e": 142.34
+      },
+      {
+        "w": "tizimlari",
+        "s": 142.36,
+        "e": 142.74
+      },
+      {
+        "w": "bilan",
+        "s": 142.74,
+        "e": 142.92
+      },
+      {
+        "w": "qiyoslaymiz.",
+        "s": 142.96,
+        "e": 143.48
+      }
+    ]
+  }
+]

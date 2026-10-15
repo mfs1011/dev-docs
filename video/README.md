@@ -1,9 +1,32 @@
 # Qo'llanma videolari — manba
 
-Har kitobning video uslubi alohida:
+Har kitobning video uslubi va stilistikasi mutlaqo alohida va betakror bo'lib qoladi (ularni aslo bir xillashtirilmaydi!):
 - **Git** — [GIT-VIDEO-USLUBI.md](GIT-VIDEO-USLUBI.md) (to'q neon, animatsiya ovozga cho'ziladi), namuna `git-umumiy/`
 - **SQL** — [SQL-VIDEO-USLUBI.md](SQL-VIDEO-USLUBI.md) ("daftar" uslubi, ovoz birinchi, haqiqiy PostgreSQL ma'lumoti), namuna `sql-umumiy/`
 - **FSD** — [FSD-VIDEO-USLUBI.md](FSD-VIDEO-USLUBI.md) (izometrik 3D bino, uzluksiz kamera, haqiqiy Steiger chiqishi, Kore ovozi), namuna `fsd-umumiy/`
+
+## Barcha darsliklar uchun umumiy aniqlik va sifat qoidalari (Universal Visual Accuracy)
+
+Stilistika har xil bo'lsa-da, quyidagi texnik va vizual aniqlik talablari **barcha videolarda 100% majburiydir**:
+
+1. **Qat'iy toshmaslik (Zero Text Overflow)**:
+   - Har qanday karta (`card`), yopishqoq qog'oz (`sticky`), doska yoki quti ichidagi matn konteyner chegarasidan chiqib ketmasligi shart.
+   - Hech bir matn qatori karta ramkasini kesib o'tmasligi, qo'shni kartalar ustiga chiqmasligi yoki ekran chetidan toshib ketmasligi shart.
+   - Bir qatorga sig'maydigan barcha matnlarga majburiy `wrap: boxWidth - padding` (odatda `w - 40` yoki `w - 60`) beriladi va u so'z chegaralari bo'yicha ko'p qatorga bo'linadi.
+   - Har bir kadrda matn toshishi `window.OVERFLOWS` da avtomatik kuzatiladi.
+
+2. **Terminal va komponentlar butunligi (Component Integrity)**:
+   - Terminallar sarlavhasida hech qachon `undefined` yoki bo'sh joy chiqmasligi shart (`term` imzosi ham obyekt, ham pozitsion argumentlarni xatosiz qabul qilishi ta'minlangan).
+   - Terminal ichida kiritilgan buyruqlar va natijalar aniq, to'liq va o'z vaqtida render bo'lishi shart (qora bo'sh oyna qolishi taqiqlanadi).
+
+3. **Keraksiz terminallardan qochish (No Unnecessary Terminals)**:
+   - Terminal oynasi faqat haqiqiy interaktiv CLI seansini (psql/mysql/sqlite yoki bash buyruqlari oqimi) ko'rsatish shart bo'lgandagina ishlatiladi.
+   - Nazariy, arxitektura yoki qoidalar bayonida (masalan, `q1-tushuncha` yoki matematik hisob-kitoblar) terminal chizilmaydi; ular o'rniga vizual kartalar, kod bloklari (`codeCard`), natijalar (`outCard`) va chizmalar ishlatiladi.
+   - Terminal hech qachon 1-2 qatorli oddiy so'rov uchun butun ekranni egallab (1640 px) qora bo'sh quti bo'lib turmasligi shart (`q2-kod` da terminal doim chapda ixcham `w: 800–880 px` bo'ladi).
+
+4. **Renderdan oldingi avtomatik tekshiruv (Automated Pre-render Scan)**:
+   - Hech bir video to'liq kadrli skaner tekshiruvidan (`check-video.mjs`) o'tmasdan render qilinmaydi.
+   - Butun video davomiyligi bo'yicha `window.OVERFLOWS.length === 0` va `missing: []` bo'lishi renderga ruxsat etilishining asosiy shartidir.
 
 Har papka — bitta video. Tayyor fayl `public/video/<kitob>/` ga qo'yiladi va bobga `<figure class="video">` bilan qo'shiladi (namuna: `content/git/README.md`).
 
