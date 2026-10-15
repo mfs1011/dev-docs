@@ -3,7 +3,7 @@
   const { L, W } = window.SY, TM = window.TM;
   const ctx = document.getElementById('c').getContext('2d');
   const K = window.SQLKIT(ctx);
-  const { C, P, eo, eio, eback, lerp, clamp, withA, text, hand, sline, srect, arrow, marker, card, heading, table, RH, HH, rowCenter, kf, sticky, check, cross, bg, tw, MONO, blocks, term } = K;
+  const { C, P, eo, eio, eback, lerp, clamp, withA, text, hand, sline, srect, arrow, marker, card, heading, table, RH, HH, rowCenter, kf, sticky, check, cross, bg, tw, MONO, UI, blocks, term } = K;
 
   const PG = blocks(window.TTY.pg, /^qollanma=# /);
   const MY = blocks(window.TTY.my, /^mysql> /);
@@ -186,8 +186,8 @@
         card(x + i * 520, y, 480, 380, { seed: 401 + i });
         text(name, x + 240 + i * 520, y + 60, { size: 38, weight: 700, fam: MONO, align: 'center', color: col });
         hand(mode, x + 240 + i * 520, y + 130, { size: 32, align: 'center', color: col });
-        text(desc.split(' · ')[0], x + 240 + i * 520, y + 210, { size: 22, fam: MONO, align: 'center' });
-        text(desc.split(' · ')[1], x + 240 + i * 520, y + 260, { size: 22, fam: MONO, align: 'center', color: C.soft });
+        text(desc.split(' · ')[0], x + 240 + i * 520, y + 210, { size: 22, fam: UI, align: 'center', wrap: 420 });
+        text(desc.split(' · ')[1], x + 240 + i * 520, y + 260, { size: 22, fam: UI, align: 'center', color: C.soft, wrap: 420 });
       });
     });
   }

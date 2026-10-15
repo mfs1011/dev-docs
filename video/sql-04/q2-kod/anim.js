@@ -41,36 +41,42 @@
 
     // Terminal: yaratish va kichik harf
     const k1 = P(t, W('L2', 'mahsulot'), 0.5);
-    term(140, 230, 780, 420, "1. Qo'shtirnoqsiz yaratish", [{
-      b: {
-        cmd: "CREATE TABLE Mahsulot (Nom text);\nINSERT INTO MAHSULOT VALUES ('Non');\nSELECT nom FROM mahsulot;",
-        out: (TTY.case1 || "CREATE TABLE\nINSERT 0 1\n nom \n-----\n Non\n(1 row)").split("\n")
-      },
-      t: k1,
-      typeDur: 1.2
-    }], { font: 16 });
+    withA(k1, () => {
+      term(140, 230, 780, 420, "1. Qo'shtirnoqsiz yaratish", [{
+        b: {
+          cmd: "CREATE TABLE Mahsulot (Nom text);\nINSERT INTO MAHSULOT VALUES ('Non');\nSELECT nom FROM mahsulot;",
+          out: (TTY.case1 || "CREATE TABLE\nINSERT 0 1\n nom \n-----\n Non\n(1 row)").split("\n")
+        },
+        t: k1,
+        typeDur: 1.2
+      }], { font: 16 });
+    });
 
     // Terminal: "Mahsulot" xatosi
     const k2 = P(t, W('L3', 'qo‘shtirnoq'), 0.5);
-    term(960, 230, 820, 420, "2. Qo'shtirnoqli qidirish (XATO)", [{
-      b: {
-        cmd: 'SELECT * FROM "Mahsulot";',
-        out: (TTY.not_exist || 'ERROR: relation "Mahsulot" does not exist\nLINE 1: SELECT * FROM "Mahsulot";\n                      ^').split("\n")
-      },
-      t: k2,
-      typeDur: 1.0
-    }], { font: 16 });
+    withA(k2, () => {
+      term(960, 230, 820, 420, "2. Qo'shtirnoqli qidirish (XATO)", [{
+        b: {
+          cmd: 'SELECT * FROM "Mahsulot";',
+          out: (TTY.not_exist || 'ERROR: relation "Mahsulot" does not exist\nLINE 1: SELECT * FROM "Mahsulot";\n                      ^').split("\n")
+        },
+        t: k2,
+        typeDur: 1.0
+      }], { font: 16 });
+    });
 
     // Terminal: Qo'shtirnoq bilan ikkinchi jadval va \dt
     const k3 = P(t, W('L4', 'ikkita'), 0.5);
-    term(140, 680, 1640, 280, "3. Qo'shtirnoq bilan ikkinchi jadval: CREATE TABLE \"Mahsulot\" va \\dt", [{
-      b: {
-        cmd: 'CREATE TABLE "Mahsulot" ("Nom" text); \\dt',
-        out: (TTY.case2 || 'CREATE TABLE\n\n            List of tables\n Schema |   Name    | Type  |  Owner   \n--------+-----------+-------+----------\n public | Mahsulot  | table | postgres\n public | mahsulot  | table | postgres\n(2 rows)').split("\n")
-      },
-      t: k3,
-      typeDur: 1.2
-    }], { font: 15 });
+    withA(k3, () => {
+      term(140, 680, 1640, 280, "3. Qo'shtirnoq bilan ikkinchi jadval: CREATE TABLE \"Mahsulot\" va \\dt", [{
+        b: {
+          cmd: 'CREATE TABLE "Mahsulot" ("Nom" text); \\dt',
+          out: (TTY.case2 || 'CREATE TABLE\n\n            List of tables\n Schema |   Name    | Type  |  Owner   \n--------+-----------+-------+----------\n public | Mahsulot  | table | postgres\n public | mahsulot  | table | postgres\n(2 rows)').split("\n")
+        },
+        t: k3,
+        typeDur: 1.2
+      }], { font: 15 });
+    });
   }
 
   // 3. KEYWORDS & LENGTH
@@ -79,36 +85,42 @@
 
     // Terminal: ORDER xatosi va yechimi
     const k1 = P(t, W('L6', 'order'), 0.5);
-    term(140, 230, 800, 440, "Kalit so'zni nom qilish (ORDER)", [{
-      b: {
-        cmd: "CREATE TABLE order (id integer);",
-        out: (TTY.order_err || 'ERROR: syntax error at or near "order"\nLINE 1: CREATE TABLE order (id integer);\n                     ^').split("\n")
-      },
-      t: k1,
-      typeDur: 1.0
-    }], { font: 16 });
+    withA(k1, () => {
+      term(140, 230, 800, 440, "Kalit so'zni nom qilish (ORDER)", [{
+        b: {
+          cmd: "CREATE TABLE order (id integer);",
+          out: (TTY.order_err || 'ERROR: syntax error at or near "order"\nLINE 1: CREATE TABLE order (id integer);\n                     ^').split("\n")
+        },
+        t: k1,
+        typeDur: 1.0
+      }], { font: 16 });
+    });
 
     // Qo'shtirnoqli muvaffaqiyat
     const k2 = P(t, W('L7', 'muvaffaqiyatli'), 0.5);
-    term(980, 230, 800, 440, "Qo'shtirnoq bilan to'g'ri yechim", [{
-      b: {
-        cmd: 'CREATE TABLE "order" (id integer);',
-        out: [(TTY.order_ok || "CREATE TABLE")]
-      },
-      t: k2,
-      typeDur: 0.8
-    }], { font: 16 });
+    withA(k2, () => {
+      term(980, 230, 800, 440, "Qo'shtirnoq bilan to'g'ri yechim", [{
+        b: {
+          cmd: 'CREATE TABLE "order" (id integer);',
+          out: [(TTY.order_ok || "CREATE TABLE")]
+        },
+        t: k2,
+        typeDur: 0.8
+      }], { font: 16 });
+    });
 
     // 70 harfli nom qisqarishi
     const k3 = P(t, W('L8', 'oltmish'), 0.5);
-    term(140, 700, 1640, 260, "70 harfli nom: 63 baytgacha qisqarish (NOTICE)", [{
-      b: {
-        cmd: "CREATE TABLE aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa (id int);",
-        out: (TTY.trunc || 'NOTICE: identifier "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" will be truncated to "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"').split("\n")
-      },
-      t: k3,
-      typeDur: 1.0
-    }], { font: 15 });
+    withA(k3, () => {
+      term(140, 700, 1640, 260, "70 harfli nom: 63 baytgacha qisqarish (NOTICE)", [{
+        b: {
+          cmd: "CREATE TABLE aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa (id int);",
+          out: (TTY.trunc || 'NOTICE: identifier "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" will be truncated to "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"').split("\n")
+        },
+        t: k3,
+        typeDur: 1.0
+      }], { font: 15 });
+    });
   }
 
   // 4. STRINGS
@@ -117,47 +129,55 @@
 
     // Tutuq belgisi
     const k1 = P(t, W('L9', 'tutuq'), 0.5);
-    term(140, 230, 780, 320, "1. O'zbekcha tutuq belgisi: ''", [{
-      b: {
-        cmd: "SELECT 'Ma''ruf' AS ism;",
-        out: (TTY.str || "  ism   \n--------\n Ma'ruf\n(1 row)").split("\n")
-      },
-      t: k1,
-      typeDur: 0.8
-    }], { font: 16 });
+    withA(k1, () => {
+      term(140, 230, 780, 320, "1. O'zbekcha tutuq belgisi: ''", [{
+        b: {
+          cmd: "SELECT 'Ma''ruf' AS ism;",
+          out: (TTY.str || "  ism   \n--------\n Ma'ruf\n(1 row)").split("\n")
+        },
+        t: k1,
+        typeDur: 0.8
+      }], { font: 16 });
+    });
 
     // Escape satr
     const k2 = P(t, W('L10', 'escape'), 0.5);
-    term(960, 230, 820, 320, "2. Oddiy vs Escape satr: E'a\\nb'", [{
-      b: {
-        cmd: "SELECT 'a\\nb' AS oddiy, E'a\\nb' AS escape;",
-        out: (TTY.esc || " oddiy | escape \n-------+--------\n a\\nb  | a     +\n       | b\n(1 row)").split("\n")
-      },
-      t: k2,
-      typeDur: 1.0
-    }], { font: 16 });
+    withA(k2, () => {
+      term(960, 230, 820, 320, "2. Oddiy vs Escape satr: E'a\\nb'", [{
+        b: {
+          cmd: "SELECT 'a\\nb' AS oddiy, E'a\\nb' AS escape;",
+          out: (TTY.esc || " oddiy | escape \n-------+--------\n a\\nb  | a     +\n       | b\n(1 row)").split("\n")
+        },
+        t: k2,
+        typeDur: 1.0
+      }], { font: 16 });
+    });
 
     // Dollar satr
     const k3 = P(t, W('L11', 'dollar'), 0.5);
-    term(140, 580, 780, 370, "3. Dollar satr: $$...$$", [{
-      b: {
-        cmd: "SELECT $$Ma'ruf \"aka\" \\n$$ AS dollar;",
-        out: (TTY.dollar || "    dollar     \n---------------\n Ma'ruf \"aka\" \\n\n(1 row)").split("\n")
-      },
-      t: k3,
-      typeDur: 0.8
-    }], { font: 16 });
+    withA(k3, () => {
+      term(140, 580, 780, 370, "3. Dollar satr: $$...$$", [{
+        b: {
+          cmd: "SELECT $$Ma'ruf \"aka\" \\n$$ AS dollar;",
+          out: (TTY.dollar || "    dollar     \n---------------\n Ma'ruf \"aka\" \\n\n(1 row)").split("\n")
+        },
+        t: k3,
+        typeDur: 0.8
+      }], { font: 16 });
+    });
 
     // Ikki qator birlashishi
     const k4 = P(t, W('L12', 'birlashtiradi'), 0.5);
-    term(960, 580, 820, 370, "4. Ikki qatorli satrlarning birlashishi", [{
-      b: {
-        cmd: "SELECT 'Salom, '\n'dunyo' AS ikki_qator;",
-        out: (TTY.lines || "  ikki_qator  \n--------------\n Salom, dunyo\n(1 row)").split("\n")
-      },
-      t: k4,
-      typeDur: 0.8
-    }], { font: 16 });
+    withA(k4, () => {
+      term(960, 580, 820, 370, "4. Ikki qatorli satrlarning birlashishi", [{
+        b: {
+          cmd: "SELECT 'Salom, '\n'dunyo' AS ikki_qator;",
+          out: (TTY.lines || "  ikki_qator  \n--------------\n Salom, dunyo\n(1 row)").split("\n")
+        },
+        t: k4,
+        typeDur: 0.8
+      }], { font: 16 });
+    });
   }
 
   // 5. NUMBERS
@@ -166,25 +186,29 @@
 
     // Sonlar formatlari
     const k1 = P(t, W('L13', 'millionni'), 0.5);
-    term(140, 240, 1640, 320, "1. Tagchiziq va Sanoq sistemalari: 1_000_000, 0xFF, 0b1010, 0o755", [{
-      b: {
-        cmd: "SELECT 1_000_000 AS million, 0xFF AS hex, 0b1010 AS bin, 0o755 AS oct;",
-        out: (TTY.nums || " million | hex | bin | oct \n---------+-----+-----+-----\n 1000000 | 255 |  10 | 493\n(1 row)").split("\n")
-      },
-      t: k1,
-      typeDur: 1.0
-    }], { font: 17 });
+    withA(k1, () => {
+      term(140, 240, 1640, 320, "1. Tagchiziq va Sanoq sistemalari: 1_000_000, 0xFF, 0b1010, 0o755", [{
+        b: {
+          cmd: "SELECT 1_000_000 AS million, 0xFF AS hex, 0b1010 AS bin, 0o755 AS oct;",
+          out: (TTY.nums || " million | hex | bin | oct \n---------+-----+-----+-----\n 1000000 | 255 |  10 | 493\n(1 row)").split("\n")
+        },
+        t: k1,
+        typeDur: 1.0
+      }], { font: 17 });
+    });
 
     // Boshlang'ich tiplar: pg_typeof
     const k2 = P(t, W('L14', 'pi-ji'), 0.5);
-    term(140, 600, 1640, 350, "2. Boshlang'ich tiplar: pg_typeof()", [{
-      b: {
-        cmd: "SELECT pg_typeof(42) AS a, pg_typeof(3000000000) AS b, pg_typeof(3.5) AS c;",
-        out: (TTY.types || "    a    |   b    |    c    \n---------+--------+---------\n integer | bigint | numeric\n(1 row)").split("\n")
-      },
-      t: k2,
-      typeDur: 1.0
-    }], { font: 17 });
+    withA(k2, () => {
+      term(140, 600, 1640, 350, "2. Boshlang'ich tiplar: pg_typeof()", [{
+        b: {
+          cmd: "SELECT pg_typeof(42) AS a, pg_typeof(3000000000) AS b, pg_typeof(3.5) AS c;",
+          out: (TTY.types || "    a    |   b    |    c    \n---------+--------+---------\n integer | bigint | numeric\n(1 row)").split("\n")
+        },
+        t: k2,
+        typeDur: 1.0
+      }], { font: 17 });
+    });
   }
 
   // 6. COMMENTS & PRECEDENCE
@@ -193,47 +217,55 @@
 
     // 5--1 tuzog'i
     const k1 = P(t, W('L16', 'besh'), 0.5);
-    term(140, 230, 780, 340, "1. Tuzoq: SELECT 5--1;", [{
-      b: {
-        cmd: "SELECT 5--1\n;",
-        out: (TTY.comm5 || " ?column? \n----------\n        5\n(1 row)").split("\n")
-      },
-      t: k1,
-      typeDur: 0.8
-    }], { font: 16 });
+    withA(k1, () => {
+      term(140, 230, 780, 340, "1. Tuzoq: SELECT 5--1;", [{
+        b: {
+          cmd: "SELECT 5--1\n;",
+          out: (TTY.comm5 || " ?column? \n----------\n        5\n(1 row)").split("\n")
+        },
+        t: k1,
+        typeDur: 0.8
+      }], { font: 16 });
+    });
 
     // 5 - -1 yechimi
     const k2 = P(t, W('L17', 'olti'), 0.5);
-    term(960, 230, 820, 340, "2. To'g'ri yechim: Probel qo'yish", [{
-      b: {
-        cmd: "SELECT 5 - -1 AS natija;",
-        out: (TTY.comm6 || " natija \n--------\n      6\n(1 row)").split("\n")
-      },
-      t: k2,
-      typeDur: 0.8
-    }], { font: 16 });
+    withA(k2, () => {
+      term(960, 230, 820, 340, "2. To'g'ri yechim: Probel qo'yish", [{
+        b: {
+          cmd: "SELECT 5 - -1 AS natija;",
+          out: (TTY.comm6 || " natija \n--------\n      6\n(1 row)").split("\n")
+        },
+        t: k2,
+        typeDur: 0.8
+      }], { font: 16 });
+    });
 
     // Ichma-ich izoh
     const k3 = P(t, W('L18', 'ichma-ich'), 0.5);
-    term(140, 600, 780, 350, "3. Ichma-ich ko'p qatorli izoh", [{
-      b: {
-        cmd: "SELECT 1 /* tashqi /* ichki */ hali izoh */ + 1 AS natija;",
-        out: (TTY.nested || " natija \n--------\n      2\n(1 row)").split("\n")
-      },
-      t: k3,
-      typeDur: 0.8
-    }], { font: 16 });
+    withA(k3, () => {
+      term(140, 600, 780, 350, "3. Ichma-ich ko'p qatorli izoh", [{
+        b: {
+          cmd: "SELECT 1 /* tashqi /* ichki */ hali izoh */ + 1 AS natija;",
+          out: (TTY.nested || " natija \n--------\n      2\n(1 row)").split("\n")
+        },
+        t: k3,
+        typeDur: 0.8
+      }], { font: 16 });
+    });
 
     // Ustuvorlik: 2 ^ 3 ^ 2
     const k4 = P(t, W('L19', 'oltmish'), 0.5);
-    term(960, 600, 820, 350, "4. Chapdan bog'lanish: 2 ^ 3 ^ 2", [{
-      b: {
-        cmd: "SELECT 2 + 3 * 4 AS a, (2 + 3) * 4 AS b, 2 ^ 3 ^ 2 AS daraja;",
-        out: (TTY.precedence || " a  | b  | daraja \n----+----+--------\n 14 | 20 |     64\n(1 row)").split("\n")
-      },
-      t: k4,
-      typeDur: 1.0
-    }], { font: 16 });
+    withA(k4, () => {
+      term(960, 600, 820, 350, "4. Chapdan bog'lanish: 2 ^ 3 ^ 2", [{
+        b: {
+          cmd: "SELECT 2 + 3 * 4 AS a, (2 + 3) * 4 AS b, 2 ^ 3 ^ 2 AS daraja;",
+          out: (TTY.precedence || " a  | b  | daraja \n----+----+--------\n 14 | 20 |     64\n(1 row)").split("\n")
+        },
+        t: k4,
+        typeDur: 1.0
+      }], { font: 16 });
+    });
   }
 
   // 7. XULOSA

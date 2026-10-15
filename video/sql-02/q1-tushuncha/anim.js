@@ -240,9 +240,9 @@
         card(x + i * 520, y, 480, 420, { seed: 601 + i });
         pill(name, x + 240 + i * 520, y + 60, col, 1, 32);
         hand(type, x + 240 + i * 520, y + 140, { size: 34, align: 'center', color: col });
-        text(desc.split(' · ')[0], x + 240 + i * 520, y + 210, { size: 24, fam: MONO, align: 'center' });
-        text(desc.split(' · ')[1], x + 240 + i * 520, y + 260, { size: 24, fam: MONO, align: 'center', color: C.soft });
-        text(desc.split(' · ')[2], x + 240 + i * 520, y + 310, { size: 24, fam: MONO, align: 'center', color: C.pencil });
+        text(desc.split(' · ')[0], x + 240 + i * 520, y + 210, { size: 22, fam: UI, align: 'center', wrap: 420 });
+        text(desc.split(' · ')[1], x + 240 + i * 520, y + 260, { size: 22, fam: UI, align: 'center', color: C.soft, wrap: 420 });
+        text(desc.split(' · ')[2], x + 240 + i * 520, y + 310, { size: 22, fam: UI, align: 'center', color: C.pencil, wrap: 420 });
       });
     });
   }

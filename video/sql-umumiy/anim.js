@@ -27,9 +27,77 @@
   function withA(a, fn) { if (a <= 0.002) return; ctx.save(); ctx.globalAlpha *= Math.min(1, a); fn(); ctx.restore(); }
   function tw(s, size, weight = 500, fam = UI) { ctx.font = font(size, weight, fam); return ctx.measureText(s).width; }
   function text(s, x, y, o = {}) {
-    ctx.font = font(o.size || 30, o.weight || 500, o.fam || UI);
-    ctx.fillStyle = o.color || C.ink; ctx.textAlign = o.align || 'left'; ctx.textBaseline = 'middle';
-    ctx.fillText(s, x, y);
+    if (s == null || s === '') return;
+    if (ctx.globalAlpha <= 0.002) return;
+    const str = String(s);
+    const size = o.size || 30, fam = o.fam || UI, weight = o.weight || 500;
+    const lh = o.lh || Math.round(size * 1.35);
+    ctx.font = font(size, weight, fam);
+    ctx.fillStyle = o.color || C.ink;
+    ctx.textAlign = o.align || 'left';
+    ctx.textBaseline = o.baseline || 'middle';
+
+    const maxW = o.wrap;
+    let lines = [];
+    if (maxW && maxW > 0) {
+      const rawLines = str.split('\n');
+      for (const raw of rawLines) {
+        if (ctx.measureText(raw).width <= maxW) {
+          lines.push(raw);
+          continue;
+        }
+        const words = raw.split(' ');
+        let cur = '';
+        for (const w of words) {
+          const test = cur ? cur + ' ' + w : w;
+          if (ctx.measureText(test).width <= maxW) {
+            cur = test;
+          } else {
+            if (cur) lines.push(cur);
+            cur = w;
+          }
+        }
+        if (cur) lines.push(cur);
+      }
+    } else if (str.includes('\n')) {
+      lines = str.split('\n');
+    } else {
+      lines = [str];
+    }
+
+    if (typeof window !== 'undefined') {
+      window.OVERFLOWS = window.OVERFLOWS || [];
+      const m = ctx.getTransform ? ctx.getTransform() : { a: 1, c: 0, e: 0 };
+      lines.forEach((line) => {
+        const w = ctx.measureText(line).width;
+        let left = x, right = x + w;
+        if (ctx.textAlign === 'center') { left = x - w / 2; right = x + w / 2; }
+        else if (ctx.textAlign === 'right') { left = x - w; right = x; }
+        const p1x = m.a * left + m.c * y + m.e;
+        const p2x = m.a * right + m.c * y + m.e;
+        const screenLeft = Math.min(p1x, p2x);
+        const screenRight = Math.max(p1x, p2x);
+        if (screenLeft < 5 || screenRight > 1915 || (maxW && w > maxW + 5)) {
+          window.OVERFLOWS.push({ text: line, screenLeft, screenRight, maxW, w });
+        }
+      });
+    }
+
+    if (lines.length === 1) {
+      ctx.fillText(lines[0], x, y);
+    } else {
+      let startY = y;
+      if (o.valign === 'center' || o.valign === 'middle') {
+        const totalH = (lines.length - 1) * lh;
+        startY = y - totalH / 2;
+      } else if (o.valign === 'bottom') {
+        const totalH = (lines.length - 1) * lh;
+        startY = y - totalH;
+      }
+      lines.forEach((line, idx) => {
+        ctx.fillText(line, x, startY + idx * lh);
+      });
+    }
   }
   // Qo'lda yozilgandek: chapdan o'ngga ochiladi (p)
   function hand(s, x, y, o = {}) {

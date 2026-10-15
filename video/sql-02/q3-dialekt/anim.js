@@ -66,10 +66,10 @@
       card(x, y, 480, 580, { seed: 101, fill: '#f6f9fe' });
       pill('PostgreSQL', x + 240, y + 60, C.blue, 1, 32);
       hand('5 yillik tsikl', x + 240, y + 140, { size: 36, align: 'center', color: C.blue });
-      text('• Yiliga bitta asosiy reliz (18)', x + 40, y + 220, { size: 24, fam: MONO });
-      text('• Har reliz 5 yil qo‘llab-quvvatlanadi', x + 40, y + 270, { size: 24, fam: MONO });
-      text('• Kichik relizlar har 3 oyda (18.6)', x + 40, y + 320, { size: 24, fam: MONO, color: C.soft });
-      text('• Kichik relizda dump/restore shart emas', x + 40, y + 370, { size: 22, color: C.pencil });
+      text('• Yiliga bitta asosiy reliz (18)', x + 40, y + 215, { size: 22, fam: UI, wrap: 400 });
+      text('• Har reliz 5 yil qo‘llab-quvvatlanadi', x + 40, y + 265, { size: 22, fam: UI, wrap: 400 });
+      text('• Kichik relizlar har 3 oyda (18.6)', x + 40, y + 315, { size: 22, fam: UI, color: C.soft, wrap: 400 });
+      text('• Kichik relizda dump/restore shart emas', x + 40, y + 365, { size: 20, fam: UI, color: C.pencil, wrap: 400 });
       sticky(x + 40, y + 460, 400, 70, 'Barqaror 5 yillik hayot davri', '#dceefb', 1);
     });
 
@@ -79,10 +79,10 @@
       card(x + 520, y, 480, 580, { seed: 102, fill: '#fffbf5' });
       pill('MySQL', x + 760, y + 60, C.orange, 1, 32);
       hand('LTS va Innovation', x + 760, y + 140, { size: 36, align: 'center', color: C.orange });
-      text('• LTS: 5 yil asosiy + 3 yil kengaytma', x + 560, y + 220, { size: 23, weight: 700, fam: MONO, color: C.green });
-      text('  (jami 8 yil uzoq qo‘llab-quvvatlash)', x + 560, y + 260, { size: 21, color: C.soft });
-      text('• Innovation: yangi funksiyalar', x + 560, y + 320, { size: 23, fam: MONO, color: C.blue });
-      text('  (keyingi Innovationgacha)', x + 560, y + 360, { size: 21, color: C.soft });
+      text('• LTS: 5 yil asosiy + 3 yil kengaytma', x + 560, y + 215, { size: 22, weight: 700, fam: UI, color: C.green, wrap: 400 });
+      text('  (jami 8 yil uzoq qo‘llab-quvvatlash)', x + 560, y + 260, { size: 20, fam: UI, color: C.soft, wrap: 400 });
+      text('• Innovation: yangi funksiyalar', x + 560, y + 315, { size: 22, fam: UI, color: C.blue, wrap: 400 });
+      text('  (keyingi Innovationgacha)', x + 560, y + 360, { size: 20, fam: UI, color: C.soft, wrap: 400 });
       sticky(x + 560, y + 460, 400, 70, 'LTS — ishlab chiqarish uchun', '#feefd0', 1);
     });
 
@@ -92,10 +92,9 @@
       card(x + 1040, y, 480, 580, { seed: 103, fill: '#f2faf8' });
       pill('SQLite', x + 1280, y + 60, C.teal, 1, 32);
       hand('2050-yilgacha reja!', x + 1280, y + 140, { size: 36, align: 'center', color: C.teal });
-      text('• Rasmiy reja: 2050-yilgacha!', x + 1080, y + 220, { size: 24, weight: 700, fam: MONO, color: C.teal });
-      text('• Fayl formati hech qachon buzilmaydi', x + 1080, y + 270, { size: 23, fam: MONO });
-      text('• Bugun yozilgan fayl 20 yil keyin ham', x + 1080, y + 320, { size: 23, fam: MONO, color: C.soft });
-      text('  o‘zgarishsiz o‘qiladi', x + 1080, y + 360, { size: 23, fam: MONO, color: C.soft });
+      text('• Rasmiy reja: 2050-yilgacha!', x + 1080, y + 215, { size: 22, weight: 700, fam: UI, color: C.teal, wrap: 400 });
+      text('• Fayl formati hech qachon buzilmaydi', x + 1080, y + 265, { size: 22, fam: UI, wrap: 400 });
+      text('• Bugun yozilgan fayl 20 yil keyin ham o‘zgarishsiz o‘qiladi', x + 1080, y + 320, { size: 21, fam: UI, color: C.soft, wrap: 400 });
       sticky(x + 1080, y + 460, 400, 70, 'Ultra-barqaror fayl arxivi', '#cbf3eb', 1);
     });
   }

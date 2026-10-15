@@ -22,9 +22,9 @@
 
     const kBadges = P(t, W('L1', 'pi-es-kyu-el'), 0.8);
     withA(kBadges, () => {
-      pill("psql 18.6", 640, 680, C.blue, kBadges, 28);
-      pill("dokon bazasi", 960, 680, C.purple, kBadges, 28);
-      pill("ombor & savdo sxemalari", 1280, 680, C.green, kBadges, 28);
+      pill("psql 18.6", 580, 680, C.blue, kBadges, 26);
+      pill("dokon bazasi", 940, 680, C.purple, kBadges, 26);
+      pill("ombor va savdo", 1320, 680, C.green, kBadges, 26);
     });
 
     const kDesc = P(t, W('L1', 'terminalida'), 0.8);
@@ -41,28 +41,32 @@
 
     // Terminal: pg_database
     const k1 = P(t, W('L2', 'pi-ji'), 0.5);
-    term(140, 230, 800, 420, "1. Klasterdagi bazalar (pg_database)", [{
-      b: {
-        cmd: "SELECT datname, datistemplate, datallowconn FROM pg_database WHERE datname IN ('postgres', 'qollanma', 'template0', 'template1') ORDER BY datname;",
-        out: (TTY.dbs || "  datname  | datistemplate | datallowconn \n-----------+---------------+--------------\n postgres  | f             | t\n qollanma  | f             | t\n template0 | t             | f\n template1 | t             | t\n(4 rows)").split("\n")
-      },
-      t: k1,
-      typeDur: 1.0
-    }], { font: 15 });
+    withA(k1, () => {
+      term(140, 230, 800, 420, "1. Klasterdagi bazalar (pg_database)", [{
+        b: {
+          cmd: "SELECT datname, datistemplate, datallowconn FROM pg_database WHERE datname IN ('postgres', 'qollanma', 'template0', 'template1') ORDER BY datname;",
+          out: (TTY.dbs || "  datname  | datistemplate | datallowconn \n-----------+---------------+--------------\n postgres  | f             | t\n qollanma  | f             | t\n template0 | t             | f\n template1 | t             | t\n(4 rows)").split("\n")
+        },
+        t: k1,
+        typeDur: 1.0
+      }], { font: 15 });
+    });
 
     // Terminal: CREATE DATABASE va tranzaksiya taqiqi
     const k2 = P(t, W('L4', 'dokon'), 0.5);
-    term(980, 230, 800, 420, "2. CREATE DATABASE va Tranzaksiya taqiqi", [{
-      b: {
-        cmd: "CREATE DATABASE dokon;\nBEGIN; CREATE DATABASE dokon2; COMMIT;",
-        out: [
-          (TTY.createdb || "CREATE DATABASE"),
-          (TTY.tx_err || "ERROR: CREATE DATABASE cannot run inside a transaction block")
-        ]
-      },
-      t: k2,
-      typeDur: 1.0
-    }], { font: 16 });
+    withA(k2, () => {
+      term(980, 230, 800, 420, "2. CREATE DATABASE va Tranzaksiya taqiqi", [{
+        b: {
+          cmd: "CREATE DATABASE dokon;\nBEGIN; CREATE DATABASE dokon2; COMMIT;",
+          out: [
+            (TTY.createdb || "CREATE DATABASE"),
+            (TTY.tx_err || "ERROR: CREATE DATABASE cannot run inside a transaction block")
+          ]
+        },
+        t: k2,
+        typeDur: 1.0
+      }], { font: 16 });
+    });
 
     // Tushuntirish kartasi
     const kDesc = P(t, W('L3', 'templeyt'), 0.5);
@@ -81,19 +85,21 @@
 
     const kCross = P(t, W('L6', 'talabalar'), 0.5);
     // Chap: terminal
-    term(140, 230, 820, 420, "psql: dokon bazasidan qollanmaga so'rov", [{
-      b: {
-        cmd: "\\c dokon\nSELECT current_database();\nSELECT * FROM qollanma.public.talabalar;",
-        out: (TTY.cross_err ? ("current_database: dokon\n\n" + TTY.cross_err).split("\n") : [
-          "current_database: dokon",
-          "ERROR: cross-database references are not implemented: \"qollanma.public.talabalar\"",
-          "LINE 1: SELECT * FROM qollanma.public.talabalar;",
-          "                      ^"
-        ])
-      },
-      t: kCross,
-      typeDur: 1.2
-    }], { font: 16 });
+    withA(kCross, () => {
+      term(140, 230, 820, 420, "psql: dokon bazasidan qollanmaga so'rov", [{
+        b: {
+          cmd: "\\c dokon\nSELECT current_database();\nSELECT * FROM qollanma.public.talabalar;",
+          out: (TTY.cross_err ? ("current_database: dokon\n\n" + TTY.cross_err).split("\n") : [
+            "current_database: dokon",
+            "ERROR: cross-database references are not implemented: \"qollanma.public.talabalar\"",
+            "LINE 1: SELECT * FROM qollanma.public.talabalar;",
+            "                      ^"
+          ])
+        },
+        t: kCross,
+        typeDur: 1.2
+      }], { font: 16 });
+    });
 
     // O'ng: Vizual arxitektura diagrammasi
     withA(kCross, () => {
@@ -130,32 +136,36 @@
 
     // Terminal 1: Sxemalar yaratish va mahsulot jadvallari
     const k1 = P(t, W('L9', 'ombor'), 0.5);
-    term(140, 230, 800, 440, "1. Ikki sxemada bir xil jadval yaratish", [{
-      b: {
-        cmd: "CREATE SCHEMA ombor; CREATE SCHEMA savdo;\nCREATE TABLE ombor.mahsulot (id int, nom text);\nCREATE TABLE savdo.mahsulot (id int, narx numeric);\nINSERT INTO ombor.mahsulot VALUES (1, 'Non');\nINSERT INTO savdo.mahsulot VALUES (1, 4000);",
-        out: [
-          "CREATE SCHEMA",
-          "CREATE SCHEMA",
-          "CREATE TABLE",
-          "CREATE TABLE",
-          "INSERT 0 1",
-          "INSERT 0 1"
-        ]
-      },
-      t: k1,
-      typeDur: 1.0
-    }], { font: 16 });
+    withA(k1, () => {
+      term(140, 230, 800, 440, "1. Ikki sxemada bir xil jadval yaratish", [{
+        b: {
+          cmd: "CREATE SCHEMA ombor; CREATE SCHEMA savdo;\nCREATE TABLE ombor.mahsulot (id int, nom text);\nCREATE TABLE savdo.mahsulot (id int, narx numeric);\nINSERT INTO ombor.mahsulot VALUES (1, 'Non');\nINSERT INTO savdo.mahsulot VALUES (1, 4000);",
+          out: [
+            "CREATE SCHEMA",
+            "CREATE SCHEMA",
+            "CREATE TABLE",
+            "CREATE TABLE",
+            "INSERT 0 1",
+            "INSERT 0 1"
+          ]
+        },
+        t: k1,
+        typeDur: 1.0
+      }], { font: 16 });
+    });
 
     // Terminal 2: Prefikssiz chaqirish xatosi
     const k2 = P(t, W('L10', 'prefikssiz'), 0.5);
-    term(980, 230, 800, 440, "2. Prefikssiz SELECT: XATO", [{
-      b: {
-        cmd: "SELECT * FROM mahsulot;",
-        out: (TTY.no_rel_err || "ERROR: relation \"mahsulot\" does not exist\nLINE 1: SELECT * FROM mahsulot;\n                      ^").split("\n")
-      },
-      t: k2,
-      typeDur: 0.8
-    }], { font: 16 });
+    withA(k2, () => {
+      term(980, 230, 800, 440, "2. Prefikssiz SELECT: XATO", [{
+        b: {
+          cmd: "SELECT * FROM mahsulot;",
+          out: (TTY.no_rel_err || "ERROR: relation \"mahsulot\" does not exist\nLINE 1: SELECT * FROM mahsulot;\n                      ^").split("\n")
+        },
+        t: k2,
+        typeDur: 0.8
+      }], { font: 16 });
+    });
 
     // Pastda tushuntirish
     const kDesc = P(t, W('L8', 'sörch'), 0.5);
@@ -173,25 +183,29 @@
 
     // Terminal 1: savdo, ombor
     const k1 = P(t, W('L11', 'savdo'), 0.5);
-    term(140, 230, 780, 440, "1. SET search_path TO savdo, ombor;", [{
-      b: {
-        cmd: "SET search_path TO savdo, ombor;\nSELECT * FROM mahsulot;",
-        out: (TTY.path_savdo || "SET\n id | narx \n----+------\n  1 | 4000\n(1 row)").split("\n")
-      },
-      t: k1,
-      typeDur: 1.0
-    }], { font: 17 });
+    withA(k1, () => {
+      term(140, 230, 780, 440, "1. SET search_path TO savdo, ombor;", [{
+        b: {
+          cmd: "SET search_path TO savdo, ombor;\nSELECT * FROM mahsulot;",
+          out: (TTY.path_savdo || "SET\n id | narx \n----+------\n  1 | 4000\n(1 row)").split("\n")
+        },
+        t: k1,
+        typeDur: 1.0
+      }], { font: 17 });
+    });
 
     // Terminal 2: ombor, savdo
     const k2 = P(t, W('L12', 'ombor'), 0.5);
-    term(960, 230, 820, 440, "2. SET search_path TO ombor, savdo;", [{
-      b: {
-        cmd: "SET search_path TO ombor, savdo;\nSELECT * FROM mahsulot;",
-        out: (TTY.path_ombor || "SET\n id | nom \n----+-----\n  1 | Non\n(1 row)").split("\n")
-      },
-      t: k2,
-      typeDur: 1.0
-    }], { font: 17 });
+    withA(k2, () => {
+      term(960, 230, 820, 440, "2. SET search_path TO ombor, savdo;", [{
+        b: {
+          cmd: "SET search_path TO ombor, savdo;\nSELECT * FROM mahsulot;",
+          out: (TTY.path_ombor || "SET\n id | nom \n----+-----\n  1 | Non\n(1 row)").split("\n")
+        },
+        t: k2,
+        typeDur: 1.0
+      }], { font: 17 });
+    });
 
     // Pastda tushuntirish
     const kWarn = P(t, W('L14', 'ko‘rib'), 0.5);
@@ -209,39 +223,43 @@
 
     // Terminal: joriy sxemaga yangi jadval tushishi
     const k1 = P(t, W('L15', 'yangi'), 0.5);
-    term(140, 230, 800, 440, "1. Prefikssiz CREATE TABLE birinchi sxemaga tushadi", [{
-      b: {
-        cmd: "CREATE TABLE yangi (x int);\nSELECT schemaname, tablename FROM pg_tables WHERE tablename IN ('mahsulot', 'yangi') ORDER BY 1, 2;",
-        out: (TTY.tables ? TTY.tables.split("\n") : [
-          "CREATE TABLE",
-          " schemaname | tablename ",
-          "------------+-----------",
-          " ombor      | mahsulot",
-          " ombor      | yangi",
-          " savdo      | mahsulot",
-          "(3 rows)"
-        ])
-      },
-      t: k1,
-      typeDur: 1.0
-    }], { font: 15 });
+    withA(k1, () => {
+      term(140, 230, 800, 440, "1. Prefikssiz CREATE TABLE birinchi sxemaga tushadi", [{
+        b: {
+          cmd: "CREATE TABLE yangi (x int);\nSELECT schemaname, tablename FROM pg_tables WHERE tablename IN ('mahsulot', 'yangi') ORDER BY 1, 2;",
+          out: (TTY.tables ? TTY.tables.split("\n") : [
+            "CREATE TABLE",
+            " schemaname | tablename ",
+            "------------+-----------",
+            " ombor      | mahsulot",
+            " ombor      | yangi",
+            " savdo      | mahsulot",
+            "(3 rows)"
+          ])
+        },
+        t: k1,
+        typeDur: 1.0
+      }], { font: 15 });
+    });
 
     // Terminal: DROP SCHEMA CASCADE
     const k2 = P(t, W('L16', 'kaskad'), 0.5);
-    term(980, 230, 800, 440, "2. Sxemani o'chirish: CASCADE", [{
-      b: {
-        cmd: "DROP SCHEMA ombor;          -- xato (bo'sh emas)\nDROP SCHEMA ombor CASCADE;  -- muvaffaqiyat",
-        out: [
-          "ERROR: cannot drop schema ombor because other objects depend on it",
-          "DETAIL: table ombor.mahsulot depends on schema ombor",
-          "table ombor.yangi depends on schema ombor",
-          "HINT: Use DROP ... CASCADE to drop the dependent objects too.",
-          "DROP SCHEMA"
-        ]
-      },
-      t: k2,
-      typeDur: 1.0
-    }], { font: 15 });
+    withA(k2, () => {
+      term(980, 230, 800, 440, "2. Sxemani o'chirish: CASCADE", [{
+        b: {
+          cmd: "DROP SCHEMA ombor;          -- xato (bo'sh emas)\nDROP SCHEMA ombor CASCADE;  -- muvaffaqiyat",
+          out: [
+            "ERROR: cannot drop schema ombor because other objects depend on it",
+            "DETAIL: table ombor.mahsulot depends on schema ombor",
+            "table ombor.yangi depends on schema ombor",
+            "HINT: Use DROP ... CASCADE to drop the dependent objects too.",
+            "DROP SCHEMA"
+          ]
+        },
+        t: k2,
+        typeDur: 1.0
+      }], { font: 15 });
+    });
 
     // Pastda tushuntirish
     const kDesc = P(t, W('L17', 'kaskad'), 0.5);
