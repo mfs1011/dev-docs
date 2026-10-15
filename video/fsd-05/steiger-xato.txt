@@ -1,0 +1,30 @@
+
+┌ src/features/apply-promo-code/components
+✘ This segment's name should describe the purpose of its contents, not what the contents are.
+│
+└ fsd/segments-by-purpose: https://github.com/feature-sliced/steiger/tree/master/packages/steiger-plugin-fsd/src/segments-by-purpose
+
+┌ src/features/apply-promo-code/constants
+✘ This segment's name should describe the purpose of its contents, not what the contents are.
+│
+└ fsd/segments-by-purpose: https://github.com/feature-sliced/steiger/tree/master/packages/steiger-plugin-fsd/src/segments-by-purpose
+
+┌ src/features/apply-promo-code/hooks
+✘ This segment's name should describe the purpose of its contents, not what the contents are.
+│
+└ fsd/segments-by-purpose: https://github.com/feature-sliced/steiger/tree/master/packages/steiger-plugin-fsd/src/segments-by-purpose
+
+┌ src/features/apply-promo-code/types
+✘ This segment's name should describe the purpose of its contents, not what the contents are.
+│
+└ fsd/segments-by-purpose: https://github.com/feature-sliced/steiger/tree/master/packages/steiger-plugin-fsd/src/segments-by-purpose
+
+┌ src/features/apply-promo-code/utils
+✘ This segment's name should describe the purpose of its contents, not what the contents are.
+│
+└ fsd/segments-by-purpose: https://github.com/feature-sliced/steiger/tree/master/packages/steiger-plugin-fsd/src/segments-by-purpose
+
+────────────────────────────────────────────────
+ Found 5 errors (none can be fixed automatically)
+
+exit=1

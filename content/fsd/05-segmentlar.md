@@ -4,6 +4,14 @@
 
 ## Qisqacha
 
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/fsd/05-segmentlar.jpg" src="/video/fsd/05-segmentlar.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/fsd/05-segmentlar.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/fsd/05-segmentlar.uz.vtt">
+</video>
+<figcaption>Bob videoda: segment — xona ichidagi kub, beshta odatiy segment, o'z segmentlaringiz, nom maqsadni bildiradi. Linter natijalari — haqiqiy Steiger 0.7.0 dan.</figcaption>
+</figure>
+
 Segment — uchinchi va oxirgi daraja: slice ichidagi (yoki `app`/`shared` ichidagi) papka, kodni **texnik vazifasi** bo'yicha guruhlaydi. Beshta odatiy nom bor: `ui`, `api`, `model`, `lib`, `config`. Asosiy qoida: segment nomi **maqsadni** bildirsin, mohiyatni emas — `components/`, `hooks/`, `types/` yomon nomlar.
 
 ## Qoida
