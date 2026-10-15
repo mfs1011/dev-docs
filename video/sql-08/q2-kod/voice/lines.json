@@ -1,0 +1,1784 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Ushbu qismda PostgreSQL o‘n sakkiz nuqta olti terminalida sana va vaqt bilan ishlashni jonli buyruqlar orqali sinab ko‘ramiz.",
+    "show": "Ushbu qismda PostgreSQL o‘n sakkiz nuqta olti terminalida sana va vaqt bilan ishlashni jonli buyruqlar orqali sinab ko‘ramiz.",
+    "say": "Ushbu qismda Postgres o‘n sakkiz nuqta olti terminalida sana va vaqt bilan ishlashni jonli buyruqlar orqali sinab ko‘ramiz.",
+    "a0": 0.3,
+    "a1": 7.0,
+    "words": [
+      {
+        "w": "Ushbu",
+        "s": 0.3,
+        "e": 0.5
+      },
+      {
+        "w": "qismda",
+        "s": 0.56,
+        "e": 0.94
+      },
+      {
+        "w": "Postgres",
+        "s": 1.14,
+        "e": 1.72
+      },
+      {
+        "w": "o‘n",
+        "s": 1.9,
+        "e": 1.98
+      },
+      {
+        "w": "sakkiz",
+        "s": 2.02,
+        "e": 2.36
+      },
+      {
+        "w": "nuqta",
+        "s": 2.42,
+        "e": 2.68
+      },
+      {
+        "w": "olti",
+        "s": 2.88,
+        "e": 3.18
+      },
+      {
+        "w": "terminalida",
+        "s": 3.28,
+        "e": 3.84
+      },
+      {
+        "w": "sana",
+        "s": 3.94,
+        "e": 4.18
+      },
+      {
+        "w": "va",
+        "s": 4.26,
+        "e": 4.32
+      },
+      {
+        "w": "vaqt",
+        "s": 4.38,
+        "e": 4.6
+      },
+      {
+        "w": "bilan",
+        "s": 4.64,
+        "e": 4.8
+      },
+      {
+        "w": "ishlashni",
+        "s": 4.84,
+        "e": 5.22
+      },
+      {
+        "w": "jonli",
+        "s": 5.32,
+        "e": 5.62
+      },
+      {
+        "w": "buyruqlar",
+        "s": 5.68,
+        "e": 6.06
+      },
+      {
+        "w": "orqali",
+        "s": 6.12,
+        "e": 6.38
+      },
+      {
+        "w": "sinab",
+        "s": 6.42,
+        "e": 6.62
+      },
+      {
+        "w": "ko‘ramiz.",
+        "s": 6.66,
+        "e": 7.0
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "intro",
+    "text": "Avvalo p-es-kyu-el da SHOW TimeZone buyrug‘ini bajaramiz. Baza bizning seansimiz uchun Asia qiya chiziq Tashkent mintaqasini ko‘rsatmoqda.",
+    "show": "Avvalo p-es-kyu-el da SHOW TimeZone buyrug‘ini bajaramiz. Baza bizning seansimiz uchun Asia qiya chiziq Tashkent mintaqasini ko‘rsatmoqda.",
+    "say": "Avvalo p-es-kyu-el da SHOW TimeZone buyrug‘ini bajaramiz. Baza bizning seansimiz uchun Asia qiya chiziq Tashkent mintaqasini ko‘rsatmoqda.",
+    "a0": 8.01,
+    "a1": 15.75,
+    "words": [
+      {
+        "w": "Avvalo",
+        "s": 8.01,
+        "e": 8.29
+      },
+      {
+        "w": "p-es-kyu-el",
+        "s": 8.49,
+        "e": 9.01
+      },
+      {
+        "w": "da",
+        "s": 9.05,
+        "e": 9.13
+      },
+      {
+        "w": "SHOW",
+        "s": 9.45,
+        "e": 9.65
+      },
+      {
+        "w": "TimeZone",
+        "s": 9.75,
+        "e": 10.25
+      },
+      {
+        "w": "buyrug‘ini",
+        "s": 10.31,
+        "e": 10.65
+      },
+      {
+        "w": "bajaramiz.",
+        "s": 10.69,
+        "e": 11.09
+      },
+      {
+        "w": "Baza",
+        "s": 11.55,
+        "e": 11.81
+      },
+      {
+        "w": "bizning",
+        "s": 11.87,
+        "e": 12.15
+      },
+      {
+        "w": "seansimiz",
+        "s": 12.17,
+        "e": 12.63
+      },
+      {
+        "w": "uchun",
+        "s": 12.69,
+        "e": 12.93
+      },
+      {
+        "w": "Asia",
+        "s": 13.21,
+        "e": 13.47
+      },
+      {
+        "w": "qiya",
+        "s": 13.57,
+        "e": 13.73
+      },
+      {
+        "w": "chiziq",
+        "s": 13.79,
+        "e": 14.03
+      },
+      {
+        "w": "Tashkent",
+        "s": 14.11,
+        "e": 14.59
+      },
+      {
+        "w": "mintaqasini",
+        "s": 14.67,
+        "e": 15.19
+      },
+      {
+        "w": "ko‘rsatmoqda.",
+        "s": 15.23,
+        "e": 15.75
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "tz_sinov",
+    "text": "Endi bitta oddiy timestamp va bitta timestamptz ustunli voqealar jadvalini yaratamiz va unga ikkita qator kiritamiz.",
+    "show": "Endi bitta oddiy timestamp va bitta timestamptz ustunli voqealar jadvalini yaratamiz va unga ikkita qator kiritamiz.",
+    "say": "Endi bitta oddiy timestamp va bitta timestamptz ustunli voqealar jadvalini yaratamiz va unga ikkita qator kiritamiz.",
+    "a0": 16.57,
+    "a1": 23.32,
+    "words": [
+      {
+        "w": "Endi",
+        "s": 16.57,
+        "e": 16.73
+      },
+      {
+        "w": "bitta",
+        "s": 16.77,
+        "e": 16.97
+      },
+      {
+        "w": "oddiy",
+        "s": 17.09,
+        "e": 17.33
+      },
+      {
+        "w": "timestamp",
+        "s": 17.43,
+        "e": 17.97
+      },
+      {
+        "w": "va",
+        "s": 18.05,
+        "e": 18.13
+      },
+      {
+        "w": "bitta",
+        "s": 18.21,
+        "e": 18.47
+      },
+      {
+        "w": "timestamptz",
+        "s": 18.59,
+        "e": 19.39
+      },
+      {
+        "w": "ustunli",
+        "s": 19.57,
+        "e": 19.99
+      },
+      {
+        "w": "voqealar",
+        "s": 20.11,
+        "e": 20.57
+      },
+      {
+        "w": "jadvalini",
+        "s": 20.61,
+        "e": 20.99
+      },
+      {
+        "w": "yaratamiz",
+        "s": 21.03,
+        "e": 21.45
+      },
+      {
+        "w": "va",
+        "s": 21.73,
+        "e": 21.79
+      },
+      {
+        "w": "unga",
+        "s": 21.85,
+        "e": 22.07
+      },
+      {
+        "w": "ikkita",
+        "s": 22.25,
+        "e": 22.49
+      },
+      {
+        "w": "qator",
+        "s": 22.58,
+        "e": 22.84
+      },
+      {
+        "w": "kiritamiz.",
+        "s": 22.88,
+        "e": 23.32
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "tz_sinov",
+    "text": "Ikkinchi qatordagi qo‘ng‘iroq voqeasiga plyus uch Moskva vaqti bilan kiritdik. Natijaga qarang: timestamp mintaqani shunchaki tashlab yubordi, timestamptz esa uni Toshkent vaqtiga o‘girib o‘n bir nol nol qilib ko‘rsatdi.",
+    "show": "Ikkinchi qatordagi qo‘ng‘iroq voqeasiga plyus uch Moskva vaqti bilan kiritdik. Natijaga qarang: timestamp mintaqani shunchaki tashlab yubordi, timestamptz esa uni Toshkent vaqtiga o‘girib o‘n bir nol nol qilib ko‘rsatdi.",
+    "say": "Ikkinchi qatordagi qo‘ng‘iroq voqeasiga plyus uch Moskva vaqti bilan kiritdik. Natijaga qarang: timestamp mintaqani shunchaki tashlab yubordi, timestamptz esa uni Toshkent vaqtiga o‘girib o‘n bir nol nol qilib ko‘rsatdi.",
+    "a0": 24.26,
+    "a1": 36.7,
+    "words": [
+      {
+        "w": "Ikkinchi",
+        "s": 24.26,
+        "e": 24.56
+      },
+      {
+        "w": "qatordagi",
+        "s": 24.58,
+        "e": 25.02
+      },
+      {
+        "w": "qo‘ng‘iroq",
+        "s": 25.1,
+        "e": 25.52
+      },
+      {
+        "w": "voqeasiga",
+        "s": 25.58,
+        "e": 26.14
+      },
+      {
+        "w": "plyus",
+        "s": 26.32,
+        "e": 26.56
+      },
+      {
+        "w": "uch",
+        "s": 26.7,
+        "e": 26.84
+      },
+      {
+        "w": "Moskva",
+        "s": 27.02,
+        "e": 27.32
+      },
+      {
+        "w": "vaqti",
+        "s": 27.38,
+        "e": 27.62
+      },
+      {
+        "w": "bilan",
+        "s": 27.66,
+        "e": 27.82
+      },
+      {
+        "w": "kiritdik.",
+        "s": 27.86,
+        "e": 28.22
+      },
+      {
+        "w": "Natijaga",
+        "s": 28.66,
+        "e": 29.06
+      },
+      {
+        "w": "qarang:",
+        "s": 29.08,
+        "e": 29.34
+      },
+      {
+        "w": "timestamp",
+        "s": 30.0,
+        "e": 30.34
+      },
+      {
+        "w": "mintaqani",
+        "s": 30.46,
+        "e": 30.9
+      },
+      {
+        "w": "shunchaki",
+        "s": 31.0,
+        "e": 31.36
+      },
+      {
+        "w": "tashlab",
+        "s": 31.44,
+        "e": 31.74
+      },
+      {
+        "w": "yubordi,",
+        "s": 31.76,
+        "e": 32.1
+      },
+      {
+        "w": "timestamptz",
+        "s": 32.46,
+        "e": 33.2
+      },
+      {
+        "w": "esa",
+        "s": 33.36,
+        "e": 33.54
+      },
+      {
+        "w": "uni",
+        "s": 33.66,
+        "e": 33.82
+      },
+      {
+        "w": "Toshkent",
+        "s": 33.96,
+        "e": 34.38
+      },
+      {
+        "w": "vaqtiga",
+        "s": 34.44,
+        "e": 34.76
+      },
+      {
+        "w": "o‘girib",
+        "s": 34.84,
+        "e": 35.1
+      },
+      {
+        "w": "o‘n",
+        "s": 35.34,
+        "e": 35.44
+      },
+      {
+        "w": "bir",
+        "s": 35.5,
+        "e": 35.62
+      },
+      {
+        "w": "nol",
+        "s": 35.72,
+        "e": 35.88
+      },
+      {
+        "w": "nol",
+        "s": 35.92,
+        "e": 36.04
+      },
+      {
+        "w": "qilib",
+        "s": 36.08,
+        "e": 36.26
+      },
+      {
+        "w": "ko‘rsatdi.",
+        "s": 36.26,
+        "e": 36.7
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "utc_sinov",
+    "text": "Endi seansimizning mintaqasini u-te-se ga o‘zgartirib jadvalni qaytadan o‘qiymiz: SET TimeZone teng UTC.",
+    "show": "Endi seansimizning mintaqasini u-te-se ga o‘zgartirib jadvalni qaytadan o‘qiymiz: SET TimeZone teng UTC.",
+    "say": "Endi seansimizning mintaqasini u-te-se ga o‘zgartirib jadvalni qaytadan o‘qiymiz: SET TimeZone teng UTC.",
+    "a0": 37.79,
+    "a1": 44.27,
+    "words": [
+      {
+        "w": "Endi",
+        "s": 37.79,
+        "e": 37.95
+      },
+      {
+        "w": "seansimizning",
+        "s": 38.05,
+        "e": 38.63
+      },
+      {
+        "w": "mintaqasini",
+        "s": 38.67,
+        "e": 39.29
+      },
+      {
+        "w": "u-te-se",
+        "s": 39.55,
+        "e": 39.91
+      },
+      {
+        "w": "ga",
+        "s": 39.99,
+        "e": 40.07
+      },
+      {
+        "w": "o‘zgartirib",
+        "s": 40.15,
+        "e": 40.61
+      },
+      {
+        "w": "jadvalni",
+        "s": 40.63,
+        "e": 41.09
+      },
+      {
+        "w": "qaytadan",
+        "s": 41.17,
+        "e": 41.59
+      },
+      {
+        "w": "o‘qiymiz:",
+        "s": 41.65,
+        "e": 41.99
+      },
+      {
+        "w": "SET",
+        "s": 42.51,
+        "e": 42.71
+      },
+      {
+        "w": "TimeZone",
+        "s": 42.77,
+        "e": 43.35
+      },
+      {
+        "w": "teng",
+        "s": 43.47,
+        "e": 43.71
+      },
+      {
+        "w": "UTC.",
+        "s": 43.95,
+        "e": 44.27
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "utc_sinov",
+    "text": "Ko‘rib turganingizdek, timestamptz qiymatlari u-te-se ga mos ravishda to‘rt nol nol va olti nol nolga o‘zgardi, oddiy timestamp esa devor soatidek qotib turibdi.",
+    "show": "Ko‘rib turganingizdek, timestamptz qiymatlari u-te-se ga mos ravishda to‘rt nol nol va olti nol nolga o‘zgardi, oddiy timestamp esa devor soatidek qotib turibdi.",
+    "say": "Ko‘rib turganingizdek, timestamptz qiymatlari u-te-se ga mos ravishda to‘rt nol nol va olti nol nolga o‘zgardi, oddiy timestamp esa devor soatidek qotib turibdi.",
+    "a0": 45.05,
+    "a1": 54.06,
+    "words": [
+      {
+        "w": "Ko‘rib",
+        "s": 45.05,
+        "e": 45.25
+      },
+      {
+        "w": "turganingizdek,",
+        "s": 45.27,
+        "e": 45.85
+      },
+      {
+        "w": "timestamptz",
+        "s": 45.95,
+        "e": 46.63
+      },
+      {
+        "w": "qiymatlari",
+        "s": 46.77,
+        "e": 47.27
+      },
+      {
+        "w": "u-te-se",
+        "s": 47.45,
+        "e": 47.77
+      },
+      {
+        "w": "ga",
+        "s": 47.85,
+        "e": 47.91
+      },
+      {
+        "w": "mos",
+        "s": 48.01,
+        "e": 48.19
+      },
+      {
+        "w": "ravishda",
+        "s": 48.23,
+        "e": 48.59
+      },
+      {
+        "w": "to‘rt",
+        "s": 48.89,
+        "e": 49.13
+      },
+      {
+        "w": "nol",
+        "s": 49.21,
+        "e": 49.35
+      },
+      {
+        "w": "nol",
+        "s": 49.41,
+        "e": 49.57
+      },
+      {
+        "w": "va",
+        "s": 49.65,
+        "e": 49.73
+      },
+      {
+        "w": "olti",
+        "s": 49.99,
+        "e": 50.21
+      },
+      {
+        "w": "nol",
+        "s": 50.37,
+        "e": 50.49
+      },
+      {
+        "w": "nolga",
+        "s": 50.55,
+        "e": 50.77
+      },
+      {
+        "w": "o‘zgardi,",
+        "s": 50.81,
+        "e": 51.15
+      },
+      {
+        "w": "oddiy",
+        "s": 51.51,
+        "e": 51.73
+      },
+      {
+        "w": "timestamp",
+        "s": 51.79,
+        "e": 52.29
+      },
+      {
+        "w": "esa",
+        "s": 52.35,
+        "e": 52.52
+      },
+      {
+        "w": "devor",
+        "s": 52.66,
+        "e": 52.94
+      },
+      {
+        "w": "soatidek",
+        "s": 52.96,
+        "e": 53.38
+      },
+      {
+        "w": "qotib",
+        "s": 53.5,
+        "e": 53.74
+      },
+      {
+        "w": "turibdi.",
+        "s": 53.76,
+        "e": 54.06
+      }
+    ]
+  },
+  {
+    "id": "L7",
+    "scene": "at_time_zone",
+    "text": "Endi AT TIME ZONE operatorini sinaymiz. Bu operator ikki xil yo‘nalishda ishlaydi.",
+    "show": "Endi AT TIME ZONE operatorini sinaymiz. Bu operator ikki xil yo‘nalishda ishlaydi.",
+    "say": "Endi AT TIME ZONE operatorini sinaymiz. Bu operator ikki xil yo‘nalishda ishlaydi.",
+    "a0": 55.14,
+    "a1": 59.24,
+    "words": [
+      {
+        "w": "Endi",
+        "s": 55.14,
+        "e": 55.34
+      },
+      {
+        "w": "AT",
+        "s": 55.56,
+        "e": 55.68
+      },
+      {
+        "w": "TIME",
+        "s": 55.74,
+        "e": 55.98
+      },
+      {
+        "w": "ZONE",
+        "s": 56.02,
+        "e": 56.26
+      },
+      {
+        "w": "operatorini",
+        "s": 56.32,
+        "e": 56.76
+      },
+      {
+        "w": "sinaymiz.",
+        "s": 56.8,
+        "e": 57.12
+      },
+      {
+        "w": "Bu",
+        "s": 57.46,
+        "e": 57.52
+      },
+      {
+        "w": "operator",
+        "s": 57.58,
+        "e": 57.98
+      },
+      {
+        "w": "ikki",
+        "s": 58.12,
+        "e": 58.3
+      },
+      {
+        "w": "xil",
+        "s": 58.32,
+        "e": 58.44
+      },
+      {
+        "w": "yo‘nalishda",
+        "s": 58.48,
+        "e": 58.9
+      },
+      {
+        "w": "ishlaydi.",
+        "s": 58.94,
+        "e": 59.24
+      }
+    ]
+  },
+  {
+    "id": "L8",
+    "scene": "at_time_zone",
+    "text": "Timestamptz ga nisbatan qo‘llaganda lahzaning Moskvadagi soatini, oddiy timestamp ga nisbatan esa Moskvadagi mahalliy soat Toshkentda necha bo‘lishini hisoblab beradi.",
+    "show": "Timestamptz ga nisbatan qo‘llaganda lahzaning Moskvadagi soatini, oddiy timestamp ga nisbatan esa Moskvadagi mahalliy soat Toshkentda necha bo‘lishini hisoblab beradi.",
+    "say": "Timestamptz ga nisbatan qo‘llaganda lahzaning Moskvadagi soatini, oddiy timestamp ga nisbatan esa Moskvadagi mahalliy soat Toshkentda necha bo‘lishini hisoblab beradi.",
+    "a0": 59.62,
+    "a1": 68.53,
+    "words": [
+      {
+        "w": "Timestamptz",
+        "s": 59.62,
+        "e": 60.26
+      },
+      {
+        "w": "ga",
+        "s": 60.4,
+        "e": 60.48
+      },
+      {
+        "w": "nisbatan",
+        "s": 60.5,
+        "e": 60.86
+      },
+      {
+        "w": "qo‘llaganda",
+        "s": 60.9,
+        "e": 61.42
+      },
+      {
+        "w": "lahzaning",
+        "s": 61.6,
+        "e": 62.04
+      },
+      {
+        "w": "Moskvadagi",
+        "s": 62.08,
+        "e": 62.66
+      },
+      {
+        "w": "soatini,",
+        "s": 62.74,
+        "e": 63.16
+      },
+      {
+        "w": "oddiy",
+        "s": 63.54,
+        "e": 63.76
+      },
+      {
+        "w": "timestamp",
+        "s": 63.86,
+        "e": 64.34
+      },
+      {
+        "w": "ga",
+        "s": 64.36,
+        "e": 64.42
+      },
+      {
+        "w": "nisbatan",
+        "s": 64.46,
+        "e": 64.8
+      },
+      {
+        "w": "esa",
+        "s": 64.84,
+        "e": 64.96
+      },
+      {
+        "w": "Moskvadagi",
+        "s": 65.26,
+        "e": 65.78
+      },
+      {
+        "w": "mahalliy",
+        "s": 65.88,
+        "e": 66.3
+      },
+      {
+        "w": "soat",
+        "s": 66.38,
+        "e": 66.62
+      },
+      {
+        "w": "Toshkentda",
+        "s": 66.68,
+        "e": 67.14
+      },
+      {
+        "w": "necha",
+        "s": 67.24,
+        "e": 67.48
+      },
+      {
+        "w": "bo‘lishini",
+        "s": 67.53,
+        "e": 67.87
+      },
+      {
+        "w": "hisoblab",
+        "s": 67.89,
+        "e": 68.23
+      },
+      {
+        "w": "beradi.",
+        "s": 68.25,
+        "e": 68.53
+      }
+    ]
+  },
+  {
+    "id": "L9",
+    "scene": "interval_math",
+    "text": "Keyingi muhim mavzu — interval arifmetikasi. O‘ttiz birinchi yanvarga bir oy qo‘shsak nima bo‘ladi?",
+    "show": "Keyingi muhim mavzu — interval arifmetikasi. O‘ttiz birinchi yanvarga bir oy qo‘shsak nima bo‘ladi?",
+    "say": "Keyingi muhim mavzu — interval arifmetikasi. O‘ttiz birinchi yanvarga bir oy qo‘shsak nima bo‘ladi?",
+    "a0": 69.23,
+    "a1": 75.07,
+    "words": [
+      {
+        "w": "Keyingi",
+        "s": 69.23,
+        "e": 69.61
+      },
+      {
+        "w": "muhim",
+        "s": 69.65,
+        "e": 69.87
+      },
+      {
+        "w": "mavzu",
+        "s": 69.91,
+        "e": 70.23
+      },
+      {
+        "w": "—",
+        "s": 70.23,
+        "e": 70.23
+      },
+      {
+        "w": "interval",
+        "s": 70.55,
+        "e": 71.01
+      },
+      {
+        "w": "arifmetikasi.",
+        "s": 71.07,
+        "e": 71.67
+      },
+      {
+        "w": "O‘ttiz",
+        "s": 72.57,
+        "e": 72.81
+      },
+      {
+        "w": "birinchi",
+        "s": 72.83,
+        "e": 73.11
+      },
+      {
+        "w": "yanvarga",
+        "s": 73.13,
+        "e": 73.57
+      },
+      {
+        "w": "bir",
+        "s": 73.83,
+        "e": 73.95
+      },
+      {
+        "w": "oy",
+        "s": 74.07,
+        "e": 74.15
+      },
+      {
+        "w": "qo‘shsak",
+        "s": 74.21,
+        "e": 74.57
+      },
+      {
+        "w": "nima",
+        "s": 74.63,
+        "e": 74.77
+      },
+      {
+        "w": "bo‘ladi?",
+        "s": 74.79,
+        "e": 75.07
+      }
+    ]
+  },
+  {
+    "id": "L10",
+    "scene": "interval_math",
+    "text": "Fevralda o‘ttiz birinchi kun yo‘q, shuning uchun baza oyning eng oxirgi kuni — yigirma sakkizinchi fevralni beradi.",
+    "show": "Fevralda o‘ttiz birinchi kun yo‘q, shuning uchun baza oyning eng oxirgi kuni — yigirma sakkizinchi fevralni beradi.",
+    "say": "Fevralda o‘ttiz birinchi kun yo‘q, shuning uchun baza oyning eng oxirgi kuni — yigirma sakkizinchi fevralni beradi.",
+    "a0": 75.69,
+    "a1": 81.21,
+    "words": [
+      {
+        "w": "Fevralda",
+        "s": 75.69,
+        "e": 76.07
+      },
+      {
+        "w": "o‘ttiz",
+        "s": 76.21,
+        "e": 76.41
+      },
+      {
+        "w": "birinchi",
+        "s": 76.45,
+        "e": 76.71
+      },
+      {
+        "w": "kun",
+        "s": 76.73,
+        "e": 76.87
+      },
+      {
+        "w": "yo‘q,",
+        "s": 76.93,
+        "e": 77.09
+      },
+      {
+        "w": "shuning",
+        "s": 77.21,
+        "e": 77.41
+      },
+      {
+        "w": "uchun",
+        "s": 77.43,
+        "e": 77.59
+      },
+      {
+        "w": "baza",
+        "s": 77.89,
+        "e": 78.17
+      },
+      {
+        "w": "oyning",
+        "s": 78.31,
+        "e": 78.55
+      },
+      {
+        "w": "eng",
+        "s": 78.71,
+        "e": 78.85
+      },
+      {
+        "w": "oxirgi",
+        "s": 78.97,
+        "e": 79.31
+      },
+      {
+        "w": "kuni",
+        "s": 79.35,
+        "e": 79.53
+      },
+      {
+        "w": "—",
+        "s": 79.53,
+        "e": 79.53
+      },
+      {
+        "w": "yigirma",
+        "s": 79.73,
+        "e": 79.99
+      },
+      {
+        "w": "sakkizinchi",
+        "s": 80.03,
+        "e": 80.51
+      },
+      {
+        "w": "fevralni",
+        "s": 80.53,
+        "e": 80.93
+      },
+      {
+        "w": "beradi.",
+        "s": 80.95,
+        "e": 81.21
+      }
+    ]
+  },
+  {
+    "id": "L11",
+    "scene": "interval_math",
+    "text": "Shuningdek, yuz hafta intervali yetti yuz kunga aylanadi, lekin oylarga o‘girilmaydi. Ikki timestamp ayirmasi esa chiroyli interval hosil qiladi.",
+    "show": "Shuningdek, yuz hafta intervali yetti yuz kunga aylanadi, lekin oylarga o‘girilmaydi. Ikki timestamp ayirmasi esa chiroyli interval hosil qiladi.",
+    "say": "Shuningdek, yuz hafta intervali yetti yuz kunga aylanadi, lekin oylarga o‘girilmaydi. Ikki timestamp ayirmasi esa chiroyli interval hosil qiladi.",
+    "a0": 81.79,
+    "a1": 89.86,
+    "words": [
+      {
+        "w": "Shuningdek,",
+        "s": 81.79,
+        "e": 82.15
+      },
+      {
+        "w": "yuz",
+        "s": 82.47,
+        "e": 82.64
+      },
+      {
+        "w": "hafta",
+        "s": 82.68,
+        "e": 82.98
+      },
+      {
+        "w": "intervali",
+        "s": 83.04,
+        "e": 83.52
+      },
+      {
+        "w": "yetti",
+        "s": 83.72,
+        "e": 84.0
+      },
+      {
+        "w": "yuz",
+        "s": 84.04,
+        "e": 84.16
+      },
+      {
+        "w": "kunga",
+        "s": 84.2,
+        "e": 84.42
+      },
+      {
+        "w": "aylanadi,",
+        "s": 84.46,
+        "e": 84.84
+      },
+      {
+        "w": "lekin",
+        "s": 85.0,
+        "e": 85.22
+      },
+      {
+        "w": "oylarga",
+        "s": 85.36,
+        "e": 85.72
+      },
+      {
+        "w": "o‘girilmaydi.",
+        "s": 85.78,
+        "e": 86.26
+      },
+      {
+        "w": "Ikki",
+        "s": 86.66,
+        "e": 86.82
+      },
+      {
+        "w": "timestamp",
+        "s": 86.88,
+        "e": 87.4
+      },
+      {
+        "w": "ayirmasi",
+        "s": 87.46,
+        "e": 87.8
+      },
+      {
+        "w": "esa",
+        "s": 87.86,
+        "e": 88.02
+      },
+      {
+        "w": "chiroyli",
+        "s": 88.3,
+        "e": 88.72
+      },
+      {
+        "w": "interval",
+        "s": 88.84,
+        "e": 89.26
+      },
+      {
+        "w": "hosil",
+        "s": 89.32,
+        "e": 89.58
+      },
+      {
+        "w": "qiladi.",
+        "s": 89.6,
+        "e": 89.86
+      }
+    ]
+  },
+  {
+    "id": "L12",
+    "scene": "dst_ny",
+    "text": "Endi eng qiziqarli sinov: Nyu-York mintaqasida yigirma oltinchi yil sakkizinchi martda yozgi vaqtga o‘tiladi va bir sutka yigirma uch soat bo‘lib qoladi.",
+    "show": "Endi eng qiziqarli sinov: Nyu-York mintaqasida yigirma oltinchi yil sakkizinchi martda yozgi vaqtga o‘tiladi va bir sutka yigirma uch soat bo‘lib qoladi.",
+    "say": "Endi eng qiziqarli sinov: Nyu-York mintaqasida yigirma oltinchi yil sakkizinchi martda yozgi vaqtga o‘tiladi va bir sutka yigirma uch soat bo‘lib qoladi.",
+    "a0": 90.82,
+    "a1": 98.71,
+    "words": [
+      {
+        "w": "Endi",
+        "s": 90.82,
+        "e": 91.02
+      },
+      {
+        "w": "eng",
+        "s": 91.22,
+        "e": 91.36
+      },
+      {
+        "w": "qiziqarli",
+        "s": 91.42,
+        "e": 91.92
+      },
+      {
+        "w": "sinov:",
+        "s": 91.98,
+        "e": 92.2
+      },
+      {
+        "w": "Nyu-York",
+        "s": 92.6,
+        "e": 92.94
+      },
+      {
+        "w": "mintaqasida",
+        "s": 92.96,
+        "e": 93.5
+      },
+      {
+        "w": "yigirma",
+        "s": 93.66,
+        "e": 93.94
+      },
+      {
+        "w": "oltinchi",
+        "s": 93.98,
+        "e": 94.34
+      },
+      {
+        "w": "yil",
+        "s": 94.38,
+        "e": 94.54
+      },
+      {
+        "w": "sakkizinchi",
+        "s": 94.68,
+        "e": 95.18
+      },
+      {
+        "w": "martda",
+        "s": 95.22,
+        "e": 95.5
+      },
+      {
+        "w": "yozgi",
+        "s": 95.5,
+        "e": 95.8
+      },
+      {
+        "w": "vaqtga",
+        "s": 95.84,
+        "e": 96.1
+      },
+      {
+        "w": "o‘tiladi",
+        "s": 96.14,
+        "e": 96.46
+      },
+      {
+        "w": "va",
+        "s": 96.76,
+        "e": 96.82
+      },
+      {
+        "w": "bir",
+        "s": 96.88,
+        "e": 96.98
+      },
+      {
+        "w": "sutka",
+        "s": 97.02,
+        "e": 97.28
+      },
+      {
+        "w": "yigirma",
+        "s": 97.44,
+        "e": 97.77
+      },
+      {
+        "w": "uch",
+        "s": 97.85,
+        "e": 97.95
+      },
+      {
+        "w": "soat",
+        "s": 97.97,
+        "e": 98.19
+      },
+      {
+        "w": "bo‘lib",
+        "s": 98.23,
+        "e": 98.41
+      },
+      {
+        "w": "qoladi.",
+        "s": 98.43,
+        "e": 98.71
+      }
+    ]
+  },
+  {
+    "id": "L13",
+    "scene": "dst_ny",
+    "text": "Natijada interval bir kun qo‘shish ertangi kunduzgi o‘n ikkiga olib borsa, interval yigirma to‘rt soat qo‘shish aniq yigirma to‘rt soat o‘tib soat o‘n uch nol nolni beradi!",
+    "show": "Natijada interval bir kun qo‘shish ertangi kunduzgi o‘n ikkiga olib borsa, interval yigirma to‘rt soat qo‘shish aniq yigirma to‘rt soat o‘tib soat o‘n uch nol nolni beradi!",
+    "say": "Natijada interval bir kun qo‘shish ertangi kunduzgi o‘n ikkiga olib borsa, interval yigirma to‘rt soat qo‘shish aniq yigirma to‘rt soat o‘tib soat o‘n uch nol nolni beradi!",
+    "a0": 99.27,
+    "a1": 108.27,
+    "words": [
+      {
+        "w": "Natijada",
+        "s": 99.27,
+        "e": 99.67
+      },
+      {
+        "w": "interval",
+        "s": 99.85,
+        "e": 100.27
+      },
+      {
+        "w": "bir",
+        "s": 100.39,
+        "e": 100.51
+      },
+      {
+        "w": "kun",
+        "s": 100.59,
+        "e": 100.75
+      },
+      {
+        "w": "qo‘shish",
+        "s": 100.87,
+        "e": 101.17
+      },
+      {
+        "w": "ertangi",
+        "s": 101.31,
+        "e": 101.67
+      },
+      {
+        "w": "kunduzgi",
+        "s": 101.71,
+        "e": 102.05
+      },
+      {
+        "w": "o‘n",
+        "s": 102.19,
+        "e": 102.27
+      },
+      {
+        "w": "ikkiga",
+        "s": 102.31,
+        "e": 102.53
+      },
+      {
+        "w": "olib",
+        "s": 102.57,
+        "e": 102.75
+      },
+      {
+        "w": "borsa,",
+        "s": 102.79,
+        "e": 103.05
+      },
+      {
+        "w": "interval",
+        "s": 103.39,
+        "e": 103.81
+      },
+      {
+        "w": "yigirma",
+        "s": 103.97,
+        "e": 104.27
+      },
+      {
+        "w": "to‘rt",
+        "s": 104.33,
+        "e": 104.53
+      },
+      {
+        "w": "soat",
+        "s": 104.55,
+        "e": 104.75
+      },
+      {
+        "w": "qo‘shish",
+        "s": 104.79,
+        "e": 105.09
+      },
+      {
+        "w": "aniq",
+        "s": 105.25,
+        "e": 105.43
+      },
+      {
+        "w": "yigirma",
+        "s": 105.51,
+        "e": 105.79
+      },
+      {
+        "w": "to‘rt",
+        "s": 105.85,
+        "e": 106.03
+      },
+      {
+        "w": "soat",
+        "s": 106.05,
+        "e": 106.25
+      },
+      {
+        "w": "o‘tib",
+        "s": 106.31,
+        "e": 106.49
+      },
+      {
+        "w": "soat",
+        "s": 106.75,
+        "e": 106.99
+      },
+      {
+        "w": "o‘n",
+        "s": 107.13,
+        "e": 107.23
+      },
+      {
+        "w": "uch",
+        "s": 107.33,
+        "e": 107.43
+      },
+      {
+        "w": "nol",
+        "s": 107.53,
+        "e": 107.69
+      },
+      {
+        "w": "nolni",
+        "s": 107.73,
+        "e": 107.97
+      },
+      {
+        "w": "beradi!",
+        "s": 107.99,
+        "e": 108.27
+      }
+    ]
+  },
+  {
+    "id": "L14",
+    "scene": "datestyle_xato",
+    "text": "Kiritish formatlariga e’tibor bering: sukut bo‘yicha oy-kun tartibi ishlaydi, shuning uchun o‘n uch nolinchi bir xato beradi.",
+    "show": "Kiritish formatlariga e’tibor bering: sukut bo‘yicha oy-kun tartibi ishlaydi, shuning uchun o‘n uch nolinchi bir xato beradi.",
+    "say": "Kiritish formatlariga e’tibor bering: sukut bo‘yicha oy-kun tartibi ishlaydi, shuning uchun o‘n uch nolinchi bir xato beradi.",
+    "a0": 108.91,
+    "a1": 116.06,
+    "words": [
+      {
+        "w": "Kiritish",
+        "s": 108.91,
+        "e": 109.25
+      },
+      {
+        "w": "formatlariga",
+        "s": 109.27,
+        "e": 109.83
+      },
+      {
+        "w": "e’tibor",
+        "s": 109.89,
+        "e": 110.23
+      },
+      {
+        "w": "bering:",
+        "s": 110.27,
+        "e": 110.51
+      },
+      {
+        "w": "sukut",
+        "s": 110.97,
+        "e": 111.19
+      },
+      {
+        "w": "bo‘yicha",
+        "s": 111.25,
+        "e": 111.57
+      },
+      {
+        "w": "oy-kun",
+        "s": 111.81,
+        "e": 112.33
+      },
+      {
+        "w": "tartibi",
+        "s": 112.39,
+        "e": 112.82
+      },
+      {
+        "w": "ishlaydi,",
+        "s": 112.9,
+        "e": 113.26
+      },
+      {
+        "w": "shuning",
+        "s": 113.6,
+        "e": 113.82
+      },
+      {
+        "w": "uchun",
+        "s": 113.84,
+        "e": 114.04
+      },
+      {
+        "w": "o‘n",
+        "s": 114.38,
+        "e": 114.48
+      },
+      {
+        "w": "uch",
+        "s": 114.6,
+        "e": 114.74
+      },
+      {
+        "w": "nolinchi",
+        "s": 114.84,
+        "e": 115.24
+      },
+      {
+        "w": "bir",
+        "s": 115.3,
+        "e": 115.4
+      },
+      {
+        "w": "xato",
+        "s": 115.48,
+        "e": 115.72
+      },
+      {
+        "w": "beradi.",
+        "s": 115.78,
+        "e": 116.06
+      }
+    ]
+  },
+  {
+    "id": "L15",
+    "scene": "datestyle_xato",
+    "text": "DateStyle ni de-em-i ga o‘zgartirsak to‘g‘ri o‘qiydi. Lekin mavjud bo‘lmagan yigirma oltinchi yil o‘ttizinchi fevral kabi sanalarga baza mutlaqo yo‘l qo‘ymaydi.",
+    "show": "DateStyle ni de-em-i ga o‘zgartirsak to‘g‘ri o‘qiydi. Lekin mavjud bo‘lmagan yigirma oltinchi yil o‘ttizinchi fevral kabi sanalarga baza mutlaqo yo‘l qo‘ymaydi.",
+    "say": "DateStyle ni de-em-i ga o‘zgartirsak to‘g‘ri o‘qiydi. Lekin mavjud bo‘lmagan yigirma oltinchi yil o‘ttizinchi fevral kabi sanalarga baza mutlaqo yo‘l qo‘ymaydi.",
+    "a0": 116.72,
+    "a1": 126.27,
+    "words": [
+      {
+        "w": "DateStyle",
+        "s": 116.72,
+        "e": 117.32
+      },
+      {
+        "w": "ni",
+        "s": 117.36,
+        "e": 117.44
+      },
+      {
+        "w": "de-em-i",
+        "s": 117.64,
+        "e": 118.1
+      },
+      {
+        "w": "ga",
+        "s": 118.2,
+        "e": 118.26
+      },
+      {
+        "w": "o‘zgartirsak",
+        "s": 118.36,
+        "e": 119.0
+      },
+      {
+        "w": "to‘g‘ri",
+        "s": 119.24,
+        "e": 119.5
+      },
+      {
+        "w": "o‘qiydi.",
+        "s": 119.56,
+        "e": 119.84
+      },
+      {
+        "w": "Lekin",
+        "s": 120.36,
+        "e": 120.62
+      },
+      {
+        "w": "mavjud",
+        "s": 120.78,
+        "e": 121.08
+      },
+      {
+        "w": "bo‘lmagan",
+        "s": 121.12,
+        "e": 121.52
+      },
+      {
+        "w": "yigirma",
+        "s": 121.82,
+        "e": 122.14
+      },
+      {
+        "w": "oltinchi",
+        "s": 122.22,
+        "e": 122.6
+      },
+      {
+        "w": "yil",
+        "s": 122.6,
+        "e": 122.7
+      },
+      {
+        "w": "o‘ttizinchi",
+        "s": 122.84,
+        "e": 123.28
+      },
+      {
+        "w": "fevral",
+        "s": 123.32,
+        "e": 123.64
+      },
+      {
+        "w": "kabi",
+        "s": 123.7,
+        "e": 123.88
+      },
+      {
+        "w": "sanalarga",
+        "s": 123.92,
+        "e": 124.38
+      },
+      {
+        "w": "baza",
+        "s": 124.78,
+        "e": 125.08
+      },
+      {
+        "w": "mutlaqo",
+        "s": 125.26,
+        "e": 125.61
+      },
+      {
+        "w": "yo‘l",
+        "s": 125.69,
+        "e": 125.81
+      },
+      {
+        "w": "qo‘ymaydi.",
+        "s": 125.85,
+        "e": 126.27
+      }
+    ]
+  },
+  {
+    "id": "L16",
+    "scene": "xulosa",
+    "text": "Xulosa: p-es-kyu-el da doimo TimeZone sozlamasini yodda tuting va kutilmagan xatolarning oldini olish uchun ISO formatida yozing.",
+    "show": "Xulosa: p-es-kyu-el da doimo TimeZone sozlamasini yodda tuting va kutilmagan xatolarning oldini olish uchun ISO formatida yozing.",
+    "say": "Xulosa: p-es-kyu-el da doimo TimeZone sozlamasini yodda tuting va kutilmagan xatolarning oldini olish uchun ISO formatida yozing.",
+    "a0": 127.01,
+    "a1": 134.83,
+    "words": [
+      {
+        "w": "Xulosa:",
+        "s": 127.01,
+        "e": 127.39
+      },
+      {
+        "w": "p-es-kyu-el",
+        "s": 127.89,
+        "e": 128.57
+      },
+      {
+        "w": "da",
+        "s": 128.61,
+        "e": 128.69
+      },
+      {
+        "w": "doimo",
+        "s": 128.89,
+        "e": 129.25
+      },
+      {
+        "w": "TimeZone",
+        "s": 129.43,
+        "e": 129.91
+      },
+      {
+        "w": "sozlamasini",
+        "s": 129.95,
+        "e": 130.49
+      },
+      {
+        "w": "yodda",
+        "s": 130.53,
+        "e": 130.77
+      },
+      {
+        "w": "tuting",
+        "s": 130.81,
+        "e": 131.05
+      },
+      {
+        "w": "va",
+        "s": 131.37,
+        "e": 131.45
+      },
+      {
+        "w": "kutilmagan",
+        "s": 131.55,
+        "e": 131.99
+      },
+      {
+        "w": "xatolarning",
+        "s": 132.03,
+        "e": 132.59
+      },
+      {
+        "w": "oldini",
+        "s": 132.67,
+        "e": 132.93
+      },
+      {
+        "w": "olish",
+        "s": 132.97,
+        "e": 133.17
+      },
+      {
+        "w": "uchun",
+        "s": 133.19,
+        "e": 133.37
+      },
+      {
+        "w": "ISO",
+        "s": 133.83,
+        "e": 133.99
+      },
+      {
+        "w": "formatida",
+        "s": 134.07,
+        "e": 134.51
+      },
+      {
+        "w": "yozing.",
+        "s": 134.51,
+        "e": 134.83
+      }
+    ]
+  },
+  {
+    "id": "L17",
+    "scene": "xulosa",
+    "text": "Keyingi qismda MySQL va SQLite dagi o‘ziga xos farqlar va eng xavfli oltita tuzoqni tahlil qilamiz.",
+    "show": "Keyingi qismda MySQL va SQLite dagi o‘ziga xos farqlar va eng xavfli oltita tuzoqni tahlil qilamiz.",
+    "say": "Keyingi qismda May es-kyu-el va Es-kyu-layt dagi o‘ziga xos farqlar va eng xavfli oltita tuzoqni tahlil qilamiz.",
+    "a0": 135.39,
+    "a1": 141.72,
+    "words": [
+      {
+        "w": "Keyingi",
+        "s": 135.39,
+        "e": 135.65
+      },
+      {
+        "w": "qismda",
+        "s": 135.69,
+        "e": 135.99
+      },
+      {
+        "w": "May",
+        "s": 136.17,
+        "e": 136.35
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 136.37,
+        "e": 136.76
+      },
+      {
+        "w": "va",
+        "s": 136.82,
+        "e": 136.88
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 137.04,
+        "e": 137.6
+      },
+      {
+        "w": "dagi",
+        "s": 137.66,
+        "e": 137.86
+      },
+      {
+        "w": "o‘ziga",
+        "s": 138.18,
+        "e": 138.46
+      },
+      {
+        "w": "xos",
+        "s": 138.5,
+        "e": 138.68
+      },
+      {
+        "w": "farqlar",
+        "s": 138.74,
+        "e": 139.16
+      },
+      {
+        "w": "va",
+        "s": 139.26,
+        "e": 139.32
+      },
+      {
+        "w": "eng",
+        "s": 139.58,
+        "e": 139.74
+      },
+      {
+        "w": "xavfli",
+        "s": 139.84,
+        "e": 140.14
+      },
+      {
+        "w": "oltita",
+        "s": 140.36,
+        "e": 140.64
+      },
+      {
+        "w": "tuzoqni",
+        "s": 140.68,
+        "e": 141.04
+      },
+      {
+        "w": "tahlil",
+        "s": 141.08,
+        "e": 141.36
+      },
+      {
+        "w": "qilamiz.",
+        "s": 141.38,
+        "e": 141.72
+      }
+    ]
+  }
+]

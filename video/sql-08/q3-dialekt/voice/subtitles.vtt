@@ -1,0 +1,81 @@
+WEBVTT
+
+1
+00:01.420 --> 00:11.420
+Uchinchi qismda MySQL va SQLite da sana va vaqt qanday saqlanishi, hamda
+amaliyotda eng ko‘p uchraydigan oltita jiddiy tuzoqni ko‘rib chiqamiz.
+
+2
+00:11.990 --> 00:22.800
+Har bir baza vaqtga turlicha yondashadi: PostgreSQL boy va qat’iy standartlarga
+ega bo‘lsa, MySQL va SQLite o‘ziga xos qoidalar va kutilmagan fe’l-atvorga ega.
+
+3
+00:25.630 --> 00:33.610
+MySQL da ikkita asosiy tur bor: DATETIME va TIMESTAMP.
+DATETIME mahalliy vaqtni mintaqasiz saqlaydi.
+
+4
+00:33.700 --> 00:44.600
+TIMESTAMP esa xuddi timestamptz kabi kiritishda u-te-se ga o‘girilib saqlanadi
+va o‘qishda seans mintaqasiga qaytariladi. Ammo uning ulkan muammosi bor!
+
+5
+00:47.430 --> 00:58.060
+Birinchi tuzoq: TIMESTAMP o‘ttiz ikki bitli son bo‘lgani uchun ikki ming o‘ttiz sakkizinchi
+yil o‘n to‘qqizinchi yanvardan keyingi vaqtni mutlaqo saqlay olmaydi va xato beradi!
+
+6
+00:58.330 --> 01:06.710
+Ikkinchi tuzoq: MySQL da INTERVAL ma’lumot turi emas. Uni jadval
+ustuni sifatida yaratib bo‘lmaydi — sintaktik xato chiqadi.
+
+7
+01:07.000 --> 01:18.460
+Uchinchi tuzoq: MySQL da sekund kasrlari sukut bo‘yicha nolga teng. Agar DATETIME
+ustuniga millisekundlar yuborsangiz, ular xabarsiz keyingi sekundga yaxlitlab yuboriladi!
+
+8
+01:21.350 --> 01:27.020
+Endi SQLite ga qarasak: unda sana va vaqt
+uchun umuman alohida ma’lumot turi yo‘q!
+
+9
+01:27.250 --> 01:36.250
+Sana uch xil saqlanadi: ISO matni TEXT sifatida, Julian kuni
+REAL sifatida, yoki u-te-se soniyalari INTEGER sifatida.
+
+10
+01:36.620 --> 01:45.530
+Baza ularni date, time, datetime va unixepoch kabi o‘rnatilgan
+maxsus funksiyalar orqali bir-biriga o‘girib beradi.
+
+11
+01:48.360 --> 02:01.040
+To‘rtinchi tuzoq: SQLite da o‘ttiz birinchi yanvarga bir oy qo‘shsangiz, sukut bo‘yicha siling rejimi
+ishlab uchinchi mart chiqadi! Fevralning oxirgi kuni kerak bo‘lsa floor modifikatorini berish shart.
+
+12
+02:01.330 --> 02:10.430
+Beshinchi tuzoq: SQLite mavjud bo‘lmagan sanalarda xato bermaydi: yigirma
+oltinchi yil o‘ttizinchi fevral jimgina ikkinchi martga aylanib ketadi!
+
+13
+02:10.660 --> 02:21.380
+Oltinchi va eng xavfli tuzoq: matn sifatida solishtirish. Agar sanani nolsiz
+yozsangiz, matn tartibi buzilib o‘ninchi oy to‘qqizinchi oydan kichik bo‘lib qoladi!
+
+14
+02:24.070 --> 02:33.960
+Xulosa qilib aytganda: PostgreSQL eng xavfsiz va aniq baza. MySQL da
+TIMESTAMP ning yigirma o‘ttiz sakkiz yil chegarasidan ehtiyot bo‘ling.
+
+15
+02:34.190 --> 02:41.010
+SQLite da esa sanalarni doimo qat’iy ISO formatida
+saqlang va solishtirishlarda ehtiyotkor bo‘ling.
+
+16
+02:41.380 --> 02:50.130
+Shu bilan sana va vaqt mavzusi yakunlandi. Keyingi bobda
+mantiqiy boolean, UUID va enum turlari bilan tanishamiz!

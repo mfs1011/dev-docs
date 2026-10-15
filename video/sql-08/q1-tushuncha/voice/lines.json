@@ -1,0 +1,1814 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Salom! Sakkizinchi bobda ma’lumotlar bazasidagi eng muhim va nozik mavzulardan biri — sana va vaqt bilan ishlashni o‘rganamiz.",
+    "show": "Salom! Sakkizinchi bobda ma’lumotlar bazasidagi eng muhim va nozik mavzulardan biri — sana va vaqt bilan ishlashni o‘rganamiz.",
+    "say": "Salom! Sakkizinchi bobda ma’lumotlar bazasidagi eng muhim va nozik mavzulardan biri — sana va vaqt bilan ishlashni o‘rganamiz.",
+    "a0": 0.24,
+    "a1": 8.11,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.24,
+        "e": 0.52
+      },
+      {
+        "w": "Sakkizinchi",
+        "s": 1.18,
+        "e": 1.66
+      },
+      {
+        "w": "bobda",
+        "s": 1.68,
+        "e": 1.94
+      },
+      {
+        "w": "ma’lumotlar",
+        "s": 2.02,
+        "e": 2.56
+      },
+      {
+        "w": "bazasidagi",
+        "s": 2.62,
+        "e": 3.2
+      },
+      {
+        "w": "eng",
+        "s": 3.44,
+        "e": 3.64
+      },
+      {
+        "w": "muhim",
+        "s": 3.72,
+        "e": 4.04
+      },
+      {
+        "w": "va",
+        "s": 4.12,
+        "e": 4.2
+      },
+      {
+        "w": "nozik",
+        "s": 4.38,
+        "e": 4.72
+      },
+      {
+        "w": "mavzulardan",
+        "s": 4.78,
+        "e": 5.4
+      },
+      {
+        "w": "biri",
+        "s": 5.44,
+        "e": 5.62
+      },
+      {
+        "w": "—",
+        "s": 5.62,
+        "e": 5.62
+      },
+      {
+        "w": "sana",
+        "s": 6.08,
+        "e": 6.36
+      },
+      {
+        "w": "va",
+        "s": 6.54,
+        "e": 6.62
+      },
+      {
+        "w": "vaqt",
+        "s": 6.78,
+        "e": 7.04
+      },
+      {
+        "w": "bilan",
+        "s": 7.08,
+        "e": 7.28
+      },
+      {
+        "w": "ishlashni",
+        "s": 7.34,
+        "e": 7.69
+      },
+      {
+        "w": "o‘rganamiz.",
+        "s": 7.71,
+        "e": 8.11
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "intro",
+    "text": "Sana va vaqtni saqlashda asosiy savol shuki: soat to‘qqiz nol nol deganda qaysi joy nazarda tutilgan? Toshkentdagi to‘qqiz va Londondagi to‘qqiz — vaqtning butunlay ikki xil lahzasidir.",
+    "show": "Sana va vaqtni saqlashda asosiy savol shuki: soat to‘qqiz nol nol deganda qaysi joy nazarda tutilgan? Toshkentdagi to‘qqiz va Londondagi to‘qqiz — vaqtning butunlay ikki xil lahzasidir.",
+    "say": "Sana va vaqtni saqlashda asosiy savol shuki: soat to‘qqiz nol nol deganda qaysi joy nazarda tutilgan? Toshkentdagi to‘qqiz va Londondagi to‘qqiz — vaqtning butunlay ikki xil lahzasidir.",
+    "a0": 9.05,
+    "a1": 20.45,
+    "words": [
+      {
+        "w": "Sana",
+        "s": 9.05,
+        "e": 9.27
+      },
+      {
+        "w": "va",
+        "s": 9.35,
+        "e": 9.43
+      },
+      {
+        "w": "vaqtni",
+        "s": 9.53,
+        "e": 9.83
+      },
+      {
+        "w": "saqlashda",
+        "s": 9.87,
+        "e": 10.37
+      },
+      {
+        "w": "asosiy",
+        "s": 10.53,
+        "e": 10.93
+      },
+      {
+        "w": "savol",
+        "s": 11.01,
+        "e": 11.29
+      },
+      {
+        "w": "shuki:",
+        "s": 11.37,
+        "e": 11.65
+      },
+      {
+        "w": "soat",
+        "s": 12.13,
+        "e": 12.41
+      },
+      {
+        "w": "to‘qqiz",
+        "s": 12.53,
+        "e": 12.97
+      },
+      {
+        "w": "nol",
+        "s": 13.05,
+        "e": 13.25
+      },
+      {
+        "w": "nol",
+        "s": 13.29,
+        "e": 13.47
+      },
+      {
+        "w": "deganda",
+        "s": 13.49,
+        "e": 13.85
+      },
+      {
+        "w": "qaysi",
+        "s": 14.03,
+        "e": 14.43
+      },
+      {
+        "w": "joy",
+        "s": 14.49,
+        "e": 14.67
+      },
+      {
+        "w": "nazarda",
+        "s": 14.73,
+        "e": 15.09
+      },
+      {
+        "w": "tutilgan?",
+        "s": 15.13,
+        "e": 15.51
+      },
+      {
+        "w": "Toshkentdagi",
+        "s": 16.23,
+        "e": 16.83
+      },
+      {
+        "w": "to‘qqiz",
+        "s": 16.87,
+        "e": 17.23
+      },
+      {
+        "w": "va",
+        "s": 17.29,
+        "e": 17.35
+      },
+      {
+        "w": "Londondagi",
+        "s": 17.53,
+        "e": 18.03
+      },
+      {
+        "w": "to‘qqiz",
+        "s": 18.07,
+        "e": 18.39
+      },
+      {
+        "w": "—",
+        "s": 18.39,
+        "e": 18.39
+      },
+      {
+        "w": "vaqtning",
+        "s": 18.47,
+        "e": 18.81
+      },
+      {
+        "w": "butunlay",
+        "s": 18.87,
+        "e": 19.29
+      },
+      {
+        "w": "ikki",
+        "s": 19.47,
+        "e": 19.69
+      },
+      {
+        "w": "xil",
+        "s": 19.73,
+        "e": 19.85
+      },
+      {
+        "w": "lahzasidir.",
+        "s": 19.89,
+        "e": 20.45
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "intro",
+    "text": "Shuning uchun vaqt ikki xil bo‘ladi: birinchisi kalendar va devor soatidagi mahalliy vaqt, ikkinchisi esa butun yer yuzida yagona bo‘lgan aniq lahza, ya’ni instant.",
+    "show": "Shuning uchun vaqt ikki xil bo‘ladi: birinchisi kalendar va devor soatidagi mahalliy vaqt, ikkinchisi esa butun yer yuzida yagona bo‘lgan aniq lahza, ya’ni instant.",
+    "say": "Shuning uchun vaqt ikki xil bo‘ladi: birinchisi kalendar va devor soatidagi mahalliy vaqt, ikkinchisi esa butun yer yuzida yagona bo‘lgan aniq lahza, ya’ni instant.",
+    "a0": 21.43,
+    "a1": 30.98,
+    "words": [
+      {
+        "w": "Shuning",
+        "s": 21.43,
+        "e": 21.67
+      },
+      {
+        "w": "uchun",
+        "s": 21.69,
+        "e": 21.91
+      },
+      {
+        "w": "vaqt",
+        "s": 22.03,
+        "e": 22.29
+      },
+      {
+        "w": "ikki",
+        "s": 22.43,
+        "e": 22.6
+      },
+      {
+        "w": "xil",
+        "s": 22.64,
+        "e": 22.76
+      },
+      {
+        "w": "bo‘ladi:",
+        "s": 22.8,
+        "e": 23.08
+      },
+      {
+        "w": "birinchisi",
+        "s": 23.46,
+        "e": 23.86
+      },
+      {
+        "w": "kalendar",
+        "s": 23.98,
+        "e": 24.46
+      },
+      {
+        "w": "va",
+        "s": 24.52,
+        "e": 24.58
+      },
+      {
+        "w": "devor",
+        "s": 24.7,
+        "e": 25.02
+      },
+      {
+        "w": "soatidagi",
+        "s": 25.06,
+        "e": 25.54
+      },
+      {
+        "w": "mahalliy",
+        "s": 25.62,
+        "e": 26.04
+      },
+      {
+        "w": "vaqt,",
+        "s": 26.12,
+        "e": 26.36
+      },
+      {
+        "w": "ikkinchisi",
+        "s": 26.74,
+        "e": 27.14
+      },
+      {
+        "w": "esa",
+        "s": 27.18,
+        "e": 27.34
+      },
+      {
+        "w": "butun",
+        "s": 27.46,
+        "e": 27.72
+      },
+      {
+        "w": "yer",
+        "s": 27.86,
+        "e": 28.02
+      },
+      {
+        "w": "yuzida",
+        "s": 28.08,
+        "e": 28.3
+      },
+      {
+        "w": "yagona",
+        "s": 28.38,
+        "e": 28.78
+      },
+      {
+        "w": "bo‘lgan",
+        "s": 28.82,
+        "e": 29.14
+      },
+      {
+        "w": "aniq",
+        "s": 29.32,
+        "e": 29.56
+      },
+      {
+        "w": "lahza,",
+        "s": 29.66,
+        "e": 29.96
+      },
+      {
+        "w": "ya’ni",
+        "s": 30.2,
+        "e": 30.38
+      },
+      {
+        "w": "instant.",
+        "s": 30.58,
+        "e": 30.98
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "intro",
+    "text": "Barcha mintaqalar xalqaro u-te-se vaqtidan farq bilan o‘lchanadi: masalan Toshkent u-te-se plyus besh, Moskva esa u-te-se plyus uch hisoblanadi.",
+    "show": "Barcha mintaqalar xalqaro u-te-se vaqtidan farq bilan o‘lchanadi: masalan Toshkent u-te-se plyus besh, Moskva esa u-te-se plyus uch hisoblanadi.",
+    "say": "Barcha mintaqalar xalqaro u-te-se vaqtidan farq bilan o‘lchanadi: masalan Toshkent u-te-se plyus besh, Moskva esa u-te-se plyus uch hisoblanadi.",
+    "a0": 32.02,
+    "a1": 40.15,
+    "words": [
+      {
+        "w": "Barcha",
+        "s": 32.02,
+        "e": 32.3
+      },
+      {
+        "w": "mintaqalar",
+        "s": 32.32,
+        "e": 32.78
+      },
+      {
+        "w": "xalqaro",
+        "s": 32.86,
+        "e": 33.24
+      },
+      {
+        "w": "u-te-se",
+        "s": 33.46,
+        "e": 33.84
+      },
+      {
+        "w": "vaqtidan",
+        "s": 33.92,
+        "e": 34.32
+      },
+      {
+        "w": "farq",
+        "s": 34.38,
+        "e": 34.58
+      },
+      {
+        "w": "bilan",
+        "s": 34.62,
+        "e": 34.82
+      },
+      {
+        "w": "o‘lchanadi:",
+        "s": 34.86,
+        "e": 35.24
+      },
+      {
+        "w": "masalan",
+        "s": 35.68,
+        "e": 36.0
+      },
+      {
+        "w": "Toshkent",
+        "s": 36.04,
+        "e": 36.44
+      },
+      {
+        "w": "u-te-se",
+        "s": 36.58,
+        "e": 36.94
+      },
+      {
+        "w": "plyus",
+        "s": 37.06,
+        "e": 37.3
+      },
+      {
+        "w": "besh,",
+        "s": 37.42,
+        "e": 37.67
+      },
+      {
+        "w": "Moskva",
+        "s": 37.95,
+        "e": 38.25
+      },
+      {
+        "w": "esa",
+        "s": 38.31,
+        "e": 38.47
+      },
+      {
+        "w": "u-te-se",
+        "s": 38.63,
+        "e": 38.99
+      },
+      {
+        "w": "plyus",
+        "s": 39.07,
+        "e": 39.29
+      },
+      {
+        "w": "uch",
+        "s": 39.47,
+        "e": 39.59
+      },
+      {
+        "w": "hisoblanadi.",
+        "s": 39.65,
+        "e": 40.15
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "turlar",
+    "text": "PostgreSQL da sana va vaqt uchun oltita asosiy tur mavjud: to‘rt baytli date, sakkiz baytli time, timestamp va timestamptz, hamda o‘n olti baytli interval.",
+    "show": "PostgreSQL da sana va vaqt uchun oltita asosiy tur mavjud: to‘rt baytli date, sakkiz baytli time, timestamp va timestamptz, hamda o‘n olti baytli interval.",
+    "say": "Postgres da sana va vaqt uchun oltita asosiy tur mavjud: to‘rt baytli date, sakkiz baytli time, timestamp va timestamptz, hamda o‘n olti baytli interval.",
+    "a0": 40.65,
+    "a1": 50.35,
+    "words": [
+      {
+        "w": "Postgres",
+        "s": 40.65,
+        "e": 41.09
+      },
+      {
+        "w": "da",
+        "s": 41.13,
+        "e": 41.21
+      },
+      {
+        "w": "sana",
+        "s": 41.33,
+        "e": 41.57
+      },
+      {
+        "w": "va",
+        "s": 41.67,
+        "e": 41.73
+      },
+      {
+        "w": "vaqt",
+        "s": 41.83,
+        "e": 42.05
+      },
+      {
+        "w": "uchun",
+        "s": 42.11,
+        "e": 42.29
+      },
+      {
+        "w": "oltita",
+        "s": 42.43,
+        "e": 42.71
+      },
+      {
+        "w": "asosiy",
+        "s": 42.75,
+        "e": 43.09
+      },
+      {
+        "w": "tur",
+        "s": 43.17,
+        "e": 43.27
+      },
+      {
+        "w": "mavjud:",
+        "s": 43.33,
+        "e": 43.61
+      },
+      {
+        "w": "to‘rt",
+        "s": 44.03,
+        "e": 44.25
+      },
+      {
+        "w": "baytli",
+        "s": 44.29,
+        "e": 44.59
+      },
+      {
+        "w": "date,",
+        "s": 44.73,
+        "e": 45.03
+      },
+      {
+        "w": "sakkiz",
+        "s": 45.37,
+        "e": 45.71
+      },
+      {
+        "w": "baytli",
+        "s": 45.75,
+        "e": 46.05
+      },
+      {
+        "w": "time,",
+        "s": 46.19,
+        "e": 46.51
+      },
+      {
+        "w": "timestamp",
+        "s": 46.77,
+        "e": 47.33
+      },
+      {
+        "w": "va",
+        "s": 47.37,
+        "e": 47.43
+      },
+      {
+        "w": "timestamptz,",
+        "s": 47.53,
+        "e": 48.31
+      },
+      {
+        "w": "hamda",
+        "s": 48.75,
+        "e": 48.99
+      },
+      {
+        "w": "o‘n",
+        "s": 49.13,
+        "e": 49.23
+      },
+      {
+        "w": "olti",
+        "s": 49.29,
+        "e": 49.47
+      },
+      {
+        "w": "baytli",
+        "s": 49.49,
+        "e": 49.79
+      },
+      {
+        "w": "interval.",
+        "s": 49.95,
+        "e": 50.35
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "turlar",
+    "text": "Date faqat kalendar sanasini, time esa kun vaqtini saqlaydi. Standart bo‘yicha shunchaki timestamp deb yozilsa, bu mintaqasiz oddiy vaqtni anglatadi.",
+    "show": "Date faqat kalendar sanasini, time esa kun vaqtini saqlaydi. Standart bo‘yicha shunchaki timestamp deb yozilsa, bu mintaqasiz oddiy vaqtni anglatadi.",
+    "say": "Date faqat kalendar sanasini, time esa kun vaqtini saqlaydi. Standart bo‘yicha shunchaki timestamp deb yozilsa, bu mintaqasiz oddiy vaqtni anglatadi.",
+    "a0": 51.35,
+    "a1": 60.18,
+    "words": [
+      {
+        "w": "Date",
+        "s": 51.35,
+        "e": 51.59
+      },
+      {
+        "w": "faqat",
+        "s": 51.65,
+        "e": 51.95
+      },
+      {
+        "w": "kalendar",
+        "s": 52.01,
+        "e": 52.43
+      },
+      {
+        "w": "sanasini,",
+        "s": 52.47,
+        "e": 52.9
+      },
+      {
+        "w": "time",
+        "s": 53.24,
+        "e": 53.54
+      },
+      {
+        "w": "esa",
+        "s": 53.56,
+        "e": 53.74
+      },
+      {
+        "w": "kun",
+        "s": 53.86,
+        "e": 54.04
+      },
+      {
+        "w": "vaqtini",
+        "s": 54.1,
+        "e": 54.46
+      },
+      {
+        "w": "saqlaydi.",
+        "s": 54.5,
+        "e": 54.88
+      },
+      {
+        "w": "Standart",
+        "s": 55.58,
+        "e": 55.96
+      },
+      {
+        "w": "bo‘yicha",
+        "s": 56.0,
+        "e": 56.22
+      },
+      {
+        "w": "shunchaki",
+        "s": 56.34,
+        "e": 56.76
+      },
+      {
+        "w": "timestamp",
+        "s": 56.9,
+        "e": 57.46
+      },
+      {
+        "w": "deb",
+        "s": 57.5,
+        "e": 57.62
+      },
+      {
+        "w": "yozilsa,",
+        "s": 57.64,
+        "e": 58.06
+      },
+      {
+        "w": "bu",
+        "s": 58.14,
+        "e": 58.22
+      },
+      {
+        "w": "mintaqasiz",
+        "s": 58.4,
+        "e": 58.96
+      },
+      {
+        "w": "oddiy",
+        "s": 59.12,
+        "e": 59.36
+      },
+      {
+        "w": "vaqtni",
+        "s": 59.44,
+        "e": 59.76
+      },
+      {
+        "w": "anglatadi.",
+        "s": 59.78,
+        "e": 60.18
+      }
+    ]
+  },
+  {
+    "id": "L7",
+    "scene": "turlar",
+    "text": "Shuningdek time with time zone turi ham bor, biroq rasmiy hujjat uni tavsiya qilmaydi. Chunki sanasiz yozgi vaqt o‘zgarishlarini to‘g‘ri aniqlab bo‘lmaydi.",
+    "show": "Shuningdek time with time zone turi ham bor, biroq rasmiy hujjat uni tavsiya qilmaydi. Chunki sanasiz yozgi vaqt o‘zgarishlarini to‘g‘ri aniqlab bo‘lmaydi.",
+    "say": "Shuningdek time with time zone turi ham bor, biroq rasmiy hujjat uni tavsiya qilmaydi. Chunki sanasiz yozgi vaqt o‘zgarishlarini to‘g‘ri aniqlab bo‘lmaydi.",
+    "a0": 60.68,
+    "a1": 68.73,
+    "words": [
+      {
+        "w": "Shuningdek",
+        "s": 60.68,
+        "e": 61.08
+      },
+      {
+        "w": "time",
+        "s": 61.3,
+        "e": 61.6
+      },
+      {
+        "w": "with",
+        "s": 61.64,
+        "e": 61.8
+      },
+      {
+        "w": "time",
+        "s": 61.88,
+        "e": 62.1
+      },
+      {
+        "w": "zone",
+        "s": 62.16,
+        "e": 62.32
+      },
+      {
+        "w": "turi",
+        "s": 62.36,
+        "e": 62.5
+      },
+      {
+        "w": "ham",
+        "s": 62.52,
+        "e": 62.68
+      },
+      {
+        "w": "bor,",
+        "s": 62.72,
+        "e": 62.88
+      },
+      {
+        "w": "biroq",
+        "s": 63.08,
+        "e": 63.3
+      },
+      {
+        "w": "rasmiy",
+        "s": 63.48,
+        "e": 63.78
+      },
+      {
+        "w": "hujjat",
+        "s": 63.82,
+        "e": 64.12
+      },
+      {
+        "w": "uni",
+        "s": 64.18,
+        "e": 64.3
+      },
+      {
+        "w": "tavsiya",
+        "s": 64.34,
+        "e": 64.66
+      },
+      {
+        "w": "qilmaydi.",
+        "s": 64.7,
+        "e": 65.06
+      },
+      {
+        "w": "Chunki",
+        "s": 65.32,
+        "e": 65.58
+      },
+      {
+        "w": "sanasiz",
+        "s": 65.82,
+        "e": 66.28
+      },
+      {
+        "w": "yozgi",
+        "s": 66.42,
+        "e": 66.7
+      },
+      {
+        "w": "vaqt",
+        "s": 66.76,
+        "e": 66.96
+      },
+      {
+        "w": "o‘zgarishlarini",
+        "s": 67.04,
+        "e": 67.69
+      },
+      {
+        "w": "to‘g‘ri",
+        "s": 67.73,
+        "e": 67.95
+      },
+      {
+        "w": "aniqlab",
+        "s": 68.01,
+        "e": 68.29
+      },
+      {
+        "w": "bo‘lmaydi.",
+        "s": 68.31,
+        "e": 68.73
+      }
+    ]
+  },
+  {
+    "id": "L8",
+    "scene": "tz_farqi",
+    "text": "Eng muhim sir: timestamptz turi nomiga qaramay mintaqani o‘zida aslo saqlamaydi!",
+    "show": "Eng muhim sir: timestamptz turi nomiga qaramay mintaqani o‘zida aslo saqlamaydi!",
+    "say": "Eng muhim sir: timestamptz turi nomiga qaramay mintaqani o‘zida aslo saqlamaydi!",
+    "a0": 69.77,
+    "a1": 74.79,
+    "words": [
+      {
+        "w": "Eng",
+        "s": 69.77,
+        "e": 69.91
+      },
+      {
+        "w": "muhim",
+        "s": 69.95,
+        "e": 70.21
+      },
+      {
+        "w": "sir:",
+        "s": 70.33,
+        "e": 70.49
+      },
+      {
+        "w": "timestamptz",
+        "s": 70.95,
+        "e": 71.77
+      },
+      {
+        "w": "turi",
+        "s": 71.93,
+        "e": 72.13
+      },
+      {
+        "w": "nomiga",
+        "s": 72.31,
+        "e": 72.67
+      },
+      {
+        "w": "qaramay",
+        "s": 72.73,
+        "e": 73.07
+      },
+      {
+        "w": "mintaqani",
+        "s": 73.13,
+        "e": 73.55
+      },
+      {
+        "w": "o‘zida",
+        "s": 73.61,
+        "e": 73.83
+      },
+      {
+        "w": "aslo",
+        "s": 73.93,
+        "e": 74.17
+      },
+      {
+        "w": "saqlamaydi!",
+        "s": 74.27,
+        "e": 74.79
+      }
+    ]
+  },
+  {
+    "id": "L9",
+    "scene": "tz_farqi",
+    "text": "Qiymat yozilayotganda baza uni darhol u-te-se ga aylantiradi va faqat u-te-se lahzasini saqlaydi, qaysi zonadan kelgani esa eslab qolinmaydi.",
+    "show": "Qiymat yozilayotganda baza uni darhol u-te-se ga aylantiradi va faqat u-te-se lahzasini saqlaydi, qaysi zonadan kelgani esa eslab qolinmaydi.",
+    "say": "Qiymat yozilayotganda baza uni darhol u-te-se ga aylantiradi va faqat u-te-se lahzasini saqlaydi, qaysi zonadan kelgani esa eslab qolinmaydi.",
+    "a0": 75.55,
+    "a1": 82.96,
+    "words": [
+      {
+        "w": "Qiymat",
+        "s": 75.55,
+        "e": 75.85
+      },
+      {
+        "w": "yozilayotganda",
+        "s": 75.91,
+        "e": 76.53
+      },
+      {
+        "w": "baza",
+        "s": 76.61,
+        "e": 76.83
+      },
+      {
+        "w": "uni",
+        "s": 76.87,
+        "e": 77.01
+      },
+      {
+        "w": "darhol",
+        "s": 77.07,
+        "e": 77.43
+      },
+      {
+        "w": "u-te-se",
+        "s": 77.57,
+        "e": 77.93
+      },
+      {
+        "w": "ga",
+        "s": 77.99,
+        "e": 78.05
+      },
+      {
+        "w": "aylantiradi",
+        "s": 78.07,
+        "e": 78.57
+      },
+      {
+        "w": "va",
+        "s": 78.63,
+        "e": 78.69
+      },
+      {
+        "w": "faqat",
+        "s": 78.77,
+        "e": 79.05
+      },
+      {
+        "w": "u-te-se",
+        "s": 79.21,
+        "e": 79.57
+      },
+      {
+        "w": "lahzasini",
+        "s": 79.65,
+        "e": 80.13
+      },
+      {
+        "w": "saqlaydi,",
+        "s": 80.17,
+        "e": 80.55
+      },
+      {
+        "w": "qaysi",
+        "s": 80.81,
+        "e": 81.09
+      },
+      {
+        "w": "zonadan",
+        "s": 81.17,
+        "e": 81.53
+      },
+      {
+        "w": "kelgani",
+        "s": 81.57,
+        "e": 81.91
+      },
+      {
+        "w": "esa",
+        "s": 81.95,
+        "e": 82.09
+      },
+      {
+        "w": "eslab",
+        "s": 82.19,
+        "e": 82.45
+      },
+      {
+        "w": "qolinmaydi.",
+        "s": 82.47,
+        "e": 82.96
+      }
+    ]
+  },
+  {
+    "id": "L10",
+    "scene": "tz_farqi",
+    "text": "O‘qiyotganda esa baza ushbu lahzani sizning joriy TimeZone sozlamangizga moslab ko‘rsatadi. Oddiy timestamp esa mintaqa ko‘rsatkichlarini shunchaki tashlab yuboradi.",
+    "show": "O‘qiyotganda esa baza ushbu lahzani sizning joriy TimeZone sozlamangizga moslab ko‘rsatadi. Oddiy timestamp esa mintaqa ko‘rsatkichlarini shunchaki tashlab yuboradi.",
+    "say": "O‘qiyotganda esa baza ushbu lahzani sizning joriy TimeZone sozlamangizga moslab ko‘rsatadi. Oddiy timestamp esa mintaqa ko‘rsatkichlarini shunchaki tashlab yuboradi.",
+    "a0": 83.8,
+    "a1": 92.38,
+    "words": [
+      {
+        "w": "O‘qiyotganda",
+        "s": 83.8,
+        "e": 84.32
+      },
+      {
+        "w": "esa",
+        "s": 84.38,
+        "e": 84.54
+      },
+      {
+        "w": "baza",
+        "s": 84.64,
+        "e": 84.9
+      },
+      {
+        "w": "ushbu",
+        "s": 85.0,
+        "e": 85.2
+      },
+      {
+        "w": "lahzani",
+        "s": 85.3,
+        "e": 85.68
+      },
+      {
+        "w": "sizning",
+        "s": 85.72,
+        "e": 86.0
+      },
+      {
+        "w": "joriy",
+        "s": 86.06,
+        "e": 86.38
+      },
+      {
+        "w": "TimeZone",
+        "s": 86.5,
+        "e": 87.0
+      },
+      {
+        "w": "sozlamangizga",
+        "s": 87.02,
+        "e": 87.68
+      },
+      {
+        "w": "moslab",
+        "s": 87.72,
+        "e": 88.0
+      },
+      {
+        "w": "ko‘rsatadi.",
+        "s": 88.04,
+        "e": 88.5
+      },
+      {
+        "w": "Oddiy",
+        "s": 89.0,
+        "e": 89.24
+      },
+      {
+        "w": "timestamp",
+        "s": 89.32,
+        "e": 89.8
+      },
+      {
+        "w": "esa",
+        "s": 89.84,
+        "e": 89.98
+      },
+      {
+        "w": "mintaqa",
+        "s": 90.06,
+        "e": 90.34
+      },
+      {
+        "w": "ko‘rsatkichlarini",
+        "s": 90.38,
+        "e": 91.1
+      },
+      {
+        "w": "shunchaki",
+        "s": 91.18,
+        "e": 91.56
+      },
+      {
+        "w": "tashlab",
+        "s": 91.66,
+        "e": 92.0
+      },
+      {
+        "w": "yuboradi.",
+        "s": 92.04,
+        "e": 92.38
+      }
+    ]
+  },
+  {
+    "id": "L11",
+    "scene": "mintaqalar",
+    "text": "Vaqt mintaqalari faqat geografiya emas, davlatlarning siyosiy qarorlari bilan o‘zgarib turadi. PostgreSQL ularni IANA xalqaro bazasidan oladi.",
+    "show": "Vaqt mintaqalari faqat geografiya emas, davlatlarning siyosiy qarorlari bilan o‘zgarib turadi. PostgreSQL ularni IANA xalqaro bazasidan oladi.",
+    "say": "Vaqt mintaqalari faqat geografiya emas, davlatlarning siyosiy qarorlari bilan o‘zgarib turadi. Postgres ularni IANA xalqaro bazasidan oladi.",
+    "a0": 93.48,
+    "a1": 101.75,
+    "words": [
+      {
+        "w": "Vaqt",
+        "s": 93.48,
+        "e": 93.66
+      },
+      {
+        "w": "mintaqalari",
+        "s": 93.7,
+        "e": 94.22
+      },
+      {
+        "w": "faqat",
+        "s": 94.38,
+        "e": 94.64
+      },
+      {
+        "w": "geografiya",
+        "s": 94.72,
+        "e": 95.2
+      },
+      {
+        "w": "emas,",
+        "s": 95.22,
+        "e": 95.44
+      },
+      {
+        "w": "davlatlarning",
+        "s": 95.64,
+        "e": 96.24
+      },
+      {
+        "w": "siyosiy",
+        "s": 96.3,
+        "e": 96.66
+      },
+      {
+        "w": "qarorlari",
+        "s": 96.74,
+        "e": 97.18
+      },
+      {
+        "w": "bilan",
+        "s": 97.2,
+        "e": 97.4
+      },
+      {
+        "w": "o‘zgarib",
+        "s": 97.46,
+        "e": 97.79
+      },
+      {
+        "w": "turadi.",
+        "s": 97.83,
+        "e": 98.07
+      },
+      {
+        "w": "Postgres",
+        "s": 98.61,
+        "e": 99.05
+      },
+      {
+        "w": "ularni",
+        "s": 99.13,
+        "e": 99.45
+      },
+      {
+        "w": "IANA",
+        "s": 99.77,
+        "e": 100.41
+      },
+      {
+        "w": "xalqaro",
+        "s": 100.57,
+        "e": 100.91
+      },
+      {
+        "w": "bazasidan",
+        "s": 100.99,
+        "e": 101.47
+      },
+      {
+        "w": "oladi.",
+        "s": 101.53,
+        "e": 101.75
+      }
+    ]
+  },
+  {
+    "id": "L12",
+    "scene": "mintaqalar",
+    "text": "Mintaqani to‘liq nom bilan, masalan Asia qiya chiziq Tashkent deb yozish eng to‘g‘ri yo‘ldir. Shunda yozgi va qishki vaqt qoidalari to‘liq hisobga olinadi.",
+    "show": "Mintaqani to‘liq nom bilan, masalan Asia qiya chiziq Tashkent deb yozish eng to‘g‘ri yo‘ldir. Shunda yozgi va qishki vaqt qoidalari to‘liq hisobga olinadi.",
+    "say": "Mintaqani to‘liq nom bilan, masalan Asia qiya chiziq Tashkent deb yozish eng to‘g‘ri yo‘ldir. Shunda yozgi va qishki vaqt qoidalari to‘liq hisobga olinadi.",
+    "a0": 102.17,
+    "a1": 110.57,
+    "words": [
+      {
+        "w": "Mintaqani",
+        "s": 102.17,
+        "e": 102.59
+      },
+      {
+        "w": "to‘liq",
+        "s": 102.75,
+        "e": 103.05
+      },
+      {
+        "w": "nom",
+        "s": 103.11,
+        "e": 103.27
+      },
+      {
+        "w": "bilan,",
+        "s": 103.31,
+        "e": 103.55
+      },
+      {
+        "w": "masalan",
+        "s": 103.83,
+        "e": 104.19
+      },
+      {
+        "w": "Asia",
+        "s": 104.47,
+        "e": 104.79
+      },
+      {
+        "w": "qiya",
+        "s": 104.89,
+        "e": 105.05
+      },
+      {
+        "w": "chiziq",
+        "s": 105.11,
+        "e": 105.33
+      },
+      {
+        "w": "Tashkent",
+        "s": 105.41,
+        "e": 105.85
+      },
+      {
+        "w": "deb",
+        "s": 105.87,
+        "e": 106.01
+      },
+      {
+        "w": "yozish",
+        "s": 106.03,
+        "e": 106.33
+      },
+      {
+        "w": "eng",
+        "s": 106.49,
+        "e": 106.63
+      },
+      {
+        "w": "to‘g‘ri",
+        "s": 106.67,
+        "e": 106.93
+      },
+      {
+        "w": "yo‘ldir.",
+        "s": 106.95,
+        "e": 107.23
+      },
+      {
+        "w": "Shunda",
+        "s": 107.55,
+        "e": 107.79
+      },
+      {
+        "w": "yozgi",
+        "s": 107.83,
+        "e": 108.31
+      },
+      {
+        "w": "va",
+        "s": 108.35,
+        "e": 108.41
+      },
+      {
+        "w": "qishki",
+        "s": 108.51,
+        "e": 108.77
+      },
+      {
+        "w": "vaqt",
+        "s": 108.81,
+        "e": 109.01
+      },
+      {
+        "w": "qoidalari",
+        "s": 109.05,
+        "e": 109.53
+      },
+      {
+        "w": "to‘liq",
+        "s": 109.61,
+        "e": 109.87
+      },
+      {
+        "w": "hisobga",
+        "s": 109.91,
+        "e": 110.23
+      },
+      {
+        "w": "olinadi.",
+        "s": 110.25,
+        "e": 110.57
+      }
+    ]
+  },
+  {
+    "id": "L13",
+    "scene": "interval",
+    "text": "Interval turi vaqt oraliqlarini saqlaydi. Uning ichida uchta mustaqil maydon bor: oylar, kunlar va mikrosekundlar.",
+    "show": "Interval turi vaqt oraliqlarini saqlaydi. Uning ichida uchta mustaqil maydon bor: oylar, kunlar va mikrosekundlar.",
+    "say": "Interval turi vaqt oraliqlarini saqlaydi. Uning ichida uchta mustaqil maydon bor: oylar, kunlar va mikrosekundlar.",
+    "a0": 111.45,
+    "a1": 118.08,
+    "words": [
+      {
+        "w": "Interval",
+        "s": 111.45,
+        "e": 111.87
+      },
+      {
+        "w": "turi",
+        "s": 111.91,
+        "e": 112.09
+      },
+      {
+        "w": "vaqt",
+        "s": 112.27,
+        "e": 112.49
+      },
+      {
+        "w": "oraliqlarini",
+        "s": 112.58,
+        "e": 113.14
+      },
+      {
+        "w": "saqlaydi.",
+        "s": 113.18,
+        "e": 113.56
+      },
+      {
+        "w": "Uning",
+        "s": 113.86,
+        "e": 114.06
+      },
+      {
+        "w": "ichida",
+        "s": 114.06,
+        "e": 114.3
+      },
+      {
+        "w": "uchta",
+        "s": 114.44,
+        "e": 114.68
+      },
+      {
+        "w": "mustaqil",
+        "s": 114.74,
+        "e": 115.14
+      },
+      {
+        "w": "maydon",
+        "s": 115.2,
+        "e": 115.52
+      },
+      {
+        "w": "bor:",
+        "s": 115.56,
+        "e": 115.7
+      },
+      {
+        "w": "oylar,",
+        "s": 116.08,
+        "e": 116.44
+      },
+      {
+        "w": "kunlar",
+        "s": 116.66,
+        "e": 117.04
+      },
+      {
+        "w": "va",
+        "s": 117.1,
+        "e": 117.16
+      },
+      {
+        "w": "mikrosekundlar.",
+        "s": 117.32,
+        "e": 118.08
+      }
+    ]
+  },
+  {
+    "id": "L14",
+    "scene": "interval",
+    "text": "Ular alohida saqlanadi, chunki har oyda kunlar soni har xil, yozgi vaqtga o‘tish kunida esa bir sutka yigirma uch yoki yigirma besh soat bo‘lishi mumkin.",
+    "show": "Ular alohida saqlanadi, chunki har oyda kunlar soni har xil, yozgi vaqtga o‘tish kunida esa bir sutka yigirma uch yoki yigirma besh soat bo‘lishi mumkin.",
+    "say": "Ular alohida saqlanadi, chunki har oyda kunlar soni har xil, yozgi vaqtga o‘tish kunida esa bir sutka yigirma uch yoki yigirma besh soat bo‘lishi mumkin.",
+    "a0": 118.48,
+    "a1": 126.85,
+    "words": [
+      {
+        "w": "Ular",
+        "s": 118.48,
+        "e": 118.68
+      },
+      {
+        "w": "alohida",
+        "s": 118.8,
+        "e": 119.18
+      },
+      {
+        "w": "saqlanadi,",
+        "s": 119.22,
+        "e": 119.7
+      },
+      {
+        "w": "chunki",
+        "s": 119.8,
+        "e": 120.0
+      },
+      {
+        "w": "har",
+        "s": 120.48,
+        "e": 120.68
+      },
+      {
+        "w": "oyda",
+        "s": 120.8,
+        "e": 121.0
+      },
+      {
+        "w": "kunlar",
+        "s": 121.12,
+        "e": 121.4
+      },
+      {
+        "w": "soni",
+        "s": 121.44,
+        "e": 121.66
+      },
+      {
+        "w": "har",
+        "s": 121.74,
+        "e": 121.92
+      },
+      {
+        "w": "xil,",
+        "s": 121.98,
+        "e": 122.12
+      },
+      {
+        "w": "yozgi",
+        "s": 122.6,
+        "e": 122.84
+      },
+      {
+        "w": "vaqtga",
+        "s": 122.88,
+        "e": 123.12
+      },
+      {
+        "w": "o‘tish",
+        "s": 123.2,
+        "e": 123.44
+      },
+      {
+        "w": "kunida",
+        "s": 123.46,
+        "e": 123.7
+      },
+      {
+        "w": "esa",
+        "s": 123.76,
+        "e": 123.92
+      },
+      {
+        "w": "bir",
+        "s": 124.04,
+        "e": 124.16
+      },
+      {
+        "w": "sutka",
+        "s": 124.2,
+        "e": 124.5
+      },
+      {
+        "w": "yigirma",
+        "s": 124.62,
+        "e": 124.96
+      },
+      {
+        "w": "uch",
+        "s": 125.06,
+        "e": 125.2
+      },
+      {
+        "w": "yoki",
+        "s": 125.26,
+        "e": 125.48
+      },
+      {
+        "w": "yigirma",
+        "s": 125.56,
+        "e": 125.82
+      },
+      {
+        "w": "besh",
+        "s": 125.88,
+        "e": 126.04
+      },
+      {
+        "w": "soat",
+        "s": 126.08,
+        "e": 126.28
+      },
+      {
+        "w": "bo‘lishi",
+        "s": 126.32,
+        "e": 126.57
+      },
+      {
+        "w": "mumkin.",
+        "s": 126.59,
+        "e": 126.85
+      }
+    ]
+  },
+  {
+    "id": "L15",
+    "scene": "interval",
+    "text": "Shu bois bir kun qo‘shish va yigirma to‘rt soat qo‘shish ba’zan turli xil natija beradi.",
+    "show": "Shu bois bir kun qo‘shish va yigirma to‘rt soat qo‘shish ba’zan turli xil natija beradi.",
+    "say": "Shu bois bir kun qo‘shish va yigirma to‘rt soat qo‘shish ba’zan turli xil natija beradi.",
+    "a0": 127.35,
+    "a1": 131.99,
+    "words": [
+      {
+        "w": "Shu",
+        "s": 127.35,
+        "e": 127.43
+      },
+      {
+        "w": "bois",
+        "s": 127.47,
+        "e": 127.71
+      },
+      {
+        "w": "bir",
+        "s": 128.07,
+        "e": 128.19
+      },
+      {
+        "w": "kun",
+        "s": 128.23,
+        "e": 128.35
+      },
+      {
+        "w": "qo‘shish",
+        "s": 128.43,
+        "e": 128.81
+      },
+      {
+        "w": "va",
+        "s": 128.87,
+        "e": 128.95
+      },
+      {
+        "w": "yigirma",
+        "s": 129.03,
+        "e": 129.33
+      },
+      {
+        "w": "to‘rt",
+        "s": 129.39,
+        "e": 129.59
+      },
+      {
+        "w": "soat",
+        "s": 129.61,
+        "e": 129.83
+      },
+      {
+        "w": "qo‘shish",
+        "s": 129.87,
+        "e": 130.17
+      },
+      {
+        "w": "ba’zan",
+        "s": 130.49,
+        "e": 130.77
+      },
+      {
+        "w": "turli",
+        "s": 130.87,
+        "e": 131.15
+      },
+      {
+        "w": "xil",
+        "s": 131.23,
+        "e": 131.35
+      },
+      {
+        "w": "natija",
+        "s": 131.41,
+        "e": 131.69
+      },
+      {
+        "w": "beradi.",
+        "s": 131.73,
+        "e": 131.99
+      }
+    ]
+  },
+  {
+    "id": "L16",
+    "scene": "xulosa",
+    "text": "Xulosa qilib aytganda: aniq voqealar uchun timestamptz, oraliqlar uchun interval va kiritishda doimo ay-es-o formatidan foydalaning.",
+    "show": "Xulosa qilib aytganda: aniq voqealar uchun timestamptz, oraliqlar uchun interval va kiritishda doimo ay-es-o formatidan foydalaning.",
+    "say": "Xulosa qilib aytganda: aniq voqealar uchun timestamptz, oraliqlar uchun interval va kiritishda doimo ay-es-o formatidan foydalaning.",
+    "a0": 132.83,
+    "a1": 140.9,
+    "words": [
+      {
+        "w": "Xulosa",
+        "s": 132.83,
+        "e": 133.11
+      },
+      {
+        "w": "qilib",
+        "s": 133.15,
+        "e": 133.31
+      },
+      {
+        "w": "aytganda:",
+        "s": 133.33,
+        "e": 133.73
+      },
+      {
+        "w": "aniq",
+        "s": 133.95,
+        "e": 134.15
+      },
+      {
+        "w": "voqealar",
+        "s": 134.23,
+        "e": 134.67
+      },
+      {
+        "w": "uchun",
+        "s": 134.71,
+        "e": 134.89
+      },
+      {
+        "w": "timestamptz,",
+        "s": 135.03,
+        "e": 135.79
+      },
+      {
+        "w": "oraliqlar",
+        "s": 136.37,
+        "e": 136.77
+      },
+      {
+        "w": "uchun",
+        "s": 136.81,
+        "e": 136.99
+      },
+      {
+        "w": "interval",
+        "s": 137.17,
+        "e": 137.63
+      },
+      {
+        "w": "va",
+        "s": 137.71,
+        "e": 137.79
+      },
+      {
+        "w": "kiritishda",
+        "s": 138.17,
+        "e": 138.61
+      },
+      {
+        "w": "doimo",
+        "s": 138.75,
+        "e": 139.11
+      },
+      {
+        "w": "ay-es-o",
+        "s": 139.35,
+        "e": 139.8
+      },
+      {
+        "w": "formatidan",
+        "s": 139.88,
+        "e": 140.38
+      },
+      {
+        "w": "foydalaning.",
+        "s": 140.44,
+        "e": 140.9
+      }
+    ]
+  },
+  {
+    "id": "L17",
+    "scene": "xulosa",
+    "text": "Keyingi qismda ushbu qoidalarni PostgreSQL terminalida jonli buyruqlar orqali sinab ko‘ramiz.",
+    "show": "Keyingi qismda ushbu qoidalarni PostgreSQL terminalida jonli buyruqlar orqali sinab ko‘ramiz.",
+    "say": "Keyingi qismda ushbu qoidalarni Postgres terminalida jonli buyruqlar orqali sinab ko‘ramiz.",
+    "a0": 141.38,
+    "a1": 145.92,
+    "words": [
+      {
+        "w": "Keyingi",
+        "s": 141.38,
+        "e": 141.66
+      },
+      {
+        "w": "qismda",
+        "s": 141.7,
+        "e": 142.0
+      },
+      {
+        "w": "ushbu",
+        "s": 142.1,
+        "e": 142.32
+      },
+      {
+        "w": "qoidalarni",
+        "s": 142.36,
+        "e": 142.86
+      },
+      {
+        "w": "Postgres",
+        "s": 143.2,
+        "e": 143.64
+      },
+      {
+        "w": "terminalida",
+        "s": 143.68,
+        "e": 144.16
+      },
+      {
+        "w": "jonli",
+        "s": 144.24,
+        "e": 144.52
+      },
+      {
+        "w": "buyruqlar",
+        "s": 144.6,
+        "e": 144.96
+      },
+      {
+        "w": "orqali",
+        "s": 145.02,
+        "e": 145.3
+      },
+      {
+        "w": "sinab",
+        "s": 145.38,
+        "e": 145.58
+      },
+      {
+        "w": "ko‘ramiz.",
+        "s": 145.62,
+        "e": 145.92
+      }
+    ]
+  }
+]

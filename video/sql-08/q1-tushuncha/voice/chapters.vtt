@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:43.287
+Kirish: Mahalliy vaqt va lahza
+
+00:43.287 --> 01:14.435
+PostgreSQL da sana va vaqt turlari
+
+01:14.435 --> 01:40.730
+timestamp va timestamptz farqi
+
+01:40.730 --> 02:01.679
+Vaqt mintaqalari va IANA bazasi
+
+02:01.679 --> 02:25.903
+Interval va uning uch maydoni
+
+02:25.903 --> 02:44.100
+Xulosa
