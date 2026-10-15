@@ -68,29 +68,29 @@ Har bob batafsil yoziladi: tushuncha, ichki mexanizm (spetsifikatsiya darajasida
 | 19 | [Metodlar va `this`](19-metodlar-va-this.md) | `this` qoidalari, chaqiruv vaqtida aniqlanishi, arrow'da `this` yo'qligi | MDN `this` | `/object-methods` |
 | 20 | [Konstruktor va `new`](20-konstruktor-va-new.md) | `new` bosqichlari, `new.target`, konstruktordan qaytarish | MDN `new`, `new.target` | `/constructor-new` |
 | 21 | [Optional chaining](21-optional-chaining.md) | `?.`, `?.()`, `?.[]`, qachon ishlatmaslik | MDN *Optional chaining* | `/optional-chaining` |
-| 22 | Symbol | Noyob kalit, yashirin xossa, `Symbol.for`, well-known symbol'lar | MDN `Symbol` | `/symbol` |
-| 23 | Obyektdan primitivga | `ToPrimitive` algoritmi, hint'lar, `Symbol.toPrimitive`, `valueOf`/`toString` | ECMA-262 *ToPrimitive*; MDN `Symbol.toPrimitive` | `/object-toprimitive` |
-| 24 | Reference Type | `obj.method()` va `(obj.method)()` farqi, nega `this` "yo'qoladi" — spetsifikatsiyadagi Reference Record | ECMA-262 *The Reference Record Specification Type* | `/reference-type` |
+| 22 | [Symbol](22-symbol.md) | Noyob kalit, yashirin xossa, `Symbol.for`, well-known symbol'lar | MDN `Symbol` | `/symbol` |
+| 23 | [Obyektdan primitivga](23-obyektdan-primitivga.md) | `ToPrimitive` algoritmi, hint'lar, `Symbol.toPrimitive`, `valueOf`/`toString` | ECMA-262 *ToPrimitive*; MDN `Symbol.toPrimitive` | `/object-toprimitive` |
+| 24 | [Reference Type](24-reference-type.md) | `obj.method()` va `(obj.method)()` farqi, nega `this` "yo'qoladi" — spetsifikatsiyadagi Reference Record | ECMA-262 *The Reference Record Specification Type* | `/reference-type` |
 
 ## IV qism — Ma'lumot turlari (25–39)
 
 | # | Bob | Mazmun | Rasmiy asos | javascript.info |
 | --- | --- | --- | --- | --- |
-| 25 | Primitivlarning metodlari | Primitiv qanday qilib metodga ega: vaqtinchalik o'rov obyekt | MDN *Primitive* (glossary); ECMA-262 6.1 | `/primitives-methods` |
-| 26 | Number | IEEE 754, `0.1 + 0.2`, `NaN`, `-0`, `Number.EPSILON`, xavfsiz butun son, `Math`, `Math.sumPrecise` (ES2026) | MDN *Numbers and strings*, `Number`, `Math` | `/number` |
-| 27 | BigInt | Katta butun sonlar, `Number` bilan aralashtirish, JSON'da | MDN `BigInt` | `/bigint` |
-| 28 | Satrlar | O'zgarmaslik, qidirish, kesish, taqqoslash, `localeCompare`, template literal, tagged template | MDN `String`, *Template literals* | `/string` |
-| 29 | Unicode va satr ichki tuzilishi | UTF-16, code unit va code point, surrogate juftlar, emoji, normalizatsiya | ECMA-262 *The String Type*; MDN `String` ("UTF-16 characters...") | `/unicode` |
-| 30 | Massivlar | Ichki tuzilishi, `length`, siyrak massiv, unumdorlik | MDN *Indexed collections*, `Array` | `/array` |
-| 31 | Massiv metodlari | `map`/`filter`/`reduce`, `sort` tuzoqlari, o'zgartirmaydigan metodlar (`toSorted`, `with`), `findLast`, `Array.fromAsync` (ES2026) | MDN `Array` | `/array-methods` |
-| 32 | Iterable obyektlar | Iteration protocol, `Symbol.iterator`, array-like va iterable farqi | MDN *Iteration protocols* | `/iterable` |
-| 33 | `Map` va `Set` | `Map` vs obyekt, `Set` metodlari (ES2025), upsert (ES2026) | MDN *Keyed collections* | `/map-set` |
-| 34 | `WeakMap` va `WeakSet` | Kuchsiz havola, kesh va metama'lumot uchun | MDN `WeakMap`, `WeakSet` | `/weakmap-weakset` |
-| 35 | `Object.keys`, `values`, `entries` | Obyektni aylantirish, `Object.fromEntries`, `Object.groupBy` | MDN `Object` | `/keys-values-entries` |
-| 36 | Destructuring | Massiv va obyekt, default qiymatlar, ichma-ich, funksiya parametrlarida | MDN *Destructuring* | `/destructuring-assignment` |
-| 37 | Sana va vaqt | `Date` muammolari (oylar 0 dan, vaqt zonasi), Temporal (ES2027) | MDN *Representing dates & times*, `Date`, `Temporal` | `/date` |
-| 38 | JSON | `parse`/`stringify`, replacer va reviver, `toJSON`, katta sonlar, manba matni (ES2026) | MDN `JSON` | `/json` |
-| 39 | Intl | Raqam, valyuta, sana, ro'yxat formatlash, `Intl.Segmenter`, o'zbek tili (`uz`) | MDN *Internationalization* | — |
+| 25 | [Primitivlarning metodlari](25-primitivlarning-metodlari.md) | Primitiv qanday qilib metodga ega: vaqtinchalik o'rov obyekt | MDN *Primitive* (glossary); ECMA-262 6.1 | `/primitives-methods` |
+| 26 | [Number](26-number.md) | IEEE 754, `0.1 + 0.2`, `NaN`, `-0`, `Number.EPSILON`, xavfsiz butun son, `Math`, `Math.sumPrecise` (ES2026) | MDN *Numbers and strings*, `Number`, `Math` | `/number` |
+| 27 | [BigInt](27-bigint.md) | Katta butun sonlar, `Number` bilan aralashtirish, JSON'da | MDN `BigInt` | `/bigint` |
+| 28 | [Satrlar](28-satrlar.md) | O'zgarmaslik, qidirish, kesish, taqqoslash, `localeCompare`, template literal, tagged template | MDN `String`, *Template literals* | `/string` |
+| 29 | [Unicode va satr ichki tuzilishi](29-unicode.md) | UTF-16, code unit va code point, surrogate juftlar, emoji, normalizatsiya | ECMA-262 *The String Type*; MDN `String` ("UTF-16 characters...") | `/unicode` |
+| 30 | [Massivlar](30-massivlar.md) | Ichki tuzilishi, `length`, siyrak massiv, unumdorlik | MDN *Indexed collections*, `Array` | `/array` |
+| 31 | [Massiv metodlari](31-massiv-metodlari.md) | `map`/`filter`/`reduce`, `sort` tuzoqlari, o'zgartirmaydigan metodlar (`toSorted`, `with`), `findLast`, `Array.fromAsync` (ES2026) | MDN `Array` | `/array-methods` |
+| 32 | [Iterable obyektlar](32-iterable-obyektlar.md) | Iteration protocol, `Symbol.iterator`, array-like va iterable farqi | MDN *Iteration protocols* | `/iterable` |
+| 33 | [`Map` va `Set`](33-map-va-set.md) | `Map` vs obyekt, `Set` metodlari (ES2025), upsert (ES2026) | MDN *Keyed collections* | `/map-set` |
+| 34 | [`WeakMap` va `WeakSet`](34-weakmap-va-weakset.md) | Kuchsiz havola, kesh va metama'lumot uchun | MDN `WeakMap`, `WeakSet` | `/weakmap-weakset` |
+| 35 | [`Object.keys`, `values`, `entries`](35-object-keys-values-entries.md) | Obyektni aylantirish, `Object.fromEntries`, `Object.groupBy` | MDN `Object` | `/keys-values-entries` |
+| 36 | [Destructuring](36-destructuring.md) | Massiv va obyekt, default qiymatlar, ichma-ich, funksiya parametrlarida | MDN *Destructuring* | `/destructuring-assignment` |
+| 37 | [Sana va vaqt](37-sana-va-vaqt.md) | `Date` muammolari (oylar 0 dan, vaqt zonasi), Temporal (ES2027) | MDN *Representing dates & times*, `Date`, `Temporal` | `/date` |
+| 38 | [JSON](38-json.md) | `parse`/`stringify`, replacer va reviver, `toJSON`, katta sonlar, manba matni (ES2026) | MDN `JSON` | `/json` |
+| 39 | [Intl](39-intl.md) | Raqam, valyuta, sana, ro'yxat formatlash, `Intl.Segmenter`, o'zbek tili (`uz`) | MDN *Internationalization* | — |
 
 ## V qism — Funksiyalar chuqur (40–51)
 
