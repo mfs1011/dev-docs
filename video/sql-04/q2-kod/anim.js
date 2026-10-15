@@ -326,7 +326,7 @@
 
     card(1280, 420, 500, 460, { fill: C.card, col: C.orange });
     hand("Izohlar va Ustuvorlik", 1320, 480, { size: 34, color: C.orange });
-    text("• SELECT 5--1;  -->  5 (izoh!)\n• SELECT 5 - -1; -->  6 (probel!)\n• 1 /* /* */ */ + 1 = 2 (ichma-ich)\n• 2 ^ 3 ^ 2 = 64 (chapdan)", 1320, 550, { size: 22, fam: MONO, color: C.ink });
+    text("• SELECT 5--1;  -->  5 (izoh!)\n• SELECT 5 - -1; -->  6 (probel!)\n• 1 /* /* */ */ + 1 = 2 (ichma-ich)\n• 2 ^ 3 ^ 2 = 64 (chapdan)", 1320, 550, { size: 20, fam: MONO, color: C.ink });
     pill("5--1 = 5  |  5 - -1 = 6", 1530, 810, C.orange, 1, 20);
 
     pill("PostgreSQL 18.6 psql", 960, 970, C.blue, 1, 24);

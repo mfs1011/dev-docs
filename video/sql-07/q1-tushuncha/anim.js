@@ -117,10 +117,10 @@
       pill("QISQA VA O'RTACHA MATNLAR", 340, 300, C.blue, kShort, 22);
 
       text("• 126 baytgacha bo'lgan qisqa satrlar:", 180, 370, { size: 23, weight: 700, color: C.blue });
-      text("  1 bayt header  +  matnning o'zi (satr ichida saqlanadi)", 180, 415, { size: 22, fam: MONO, color: C.ink });
+      text("  1 bayt header + matn (satr ichida inline saqlanadi)", 180, 415, { size: 21, fam: MONO, color: C.ink, wrap: 720 });
 
       text("• 126 baytdan 2 KB gacha bo'lgan satrlar:", 180, 480, { size: 23, weight: 700, color: C.blue });
-      text("  4 bayt header  +  matnning o'zi (satr ichida inline)", 180, 525, { size: 22, fam: MONO, color: C.ink });
+      text("  4 bayt header + matn (satr ichida inline saqlanadi)", 180, 525, { size: 21, fam: MONO, color: C.ink, wrap: 720 });
 
       text("• O'ta ixcham saqlanadi, qo'shimcha jadvalga murojaat qilinmaydi.", 180, 595, { size: 22, color: C.soft, wrap: 720 });
     });
@@ -132,7 +132,7 @@
       text("• Hajm ~2 KB dan oshganda TOAST avtomatik yoqiladi:", 1020, 370, { size: 23, weight: 700, color: C.green });
       text("  1. Matn avtomatik siqiladi (lz4 yoki pglz algoritmi).", 1020, 420, { size: 22, color: C.ink, wrap: 720 });
       text("  2. Agar yana sig'masa, bo'laklanib alohida TOAST jadvaliga ko'chiriladi.", 1020, 470, { size: 22, color: C.ink, wrap: 720 });
-      text("  3. Asosiy jadval qatorida faqat 18 baytlik ko'rsatkich (pointer) qoladi!", 1020, 530, { size: 22, fam: MONO, weight: 700, color: C.purple, wrap: 720 });
+      text("  3. Asosiy jadval qatorida faqat 18 baytlik ko'rsatkich (pointer) qoladi!", 1020, 530, { size: 21, fam: MONO, weight: 700, color: C.purple, wrap: 720 });
 
       text("• Natija: Katta maqolalar boshqa ustunlar qidiruvini aslo sekinlashtirmaydi!", 1020, 595, { size: 21, weight: 600, color: C.green, wrap: 720 });
     });
@@ -141,8 +141,8 @@
     withA(kCap, () => {
       card(140, 715, 1640, 220, { fill: C.card, col: C.purple, p: kCap });
       hand("TOAST ning Mo''jizasi", 180, 765, { size: 32, color: C.purple, p: kCap });
-      text("• Boshqa ma'lumotlar bazalarida katta matnlar butun qatorni shishirib, xotirani to'ldiradi.", 180, 820, { size: 24, color: C.ink });
-      text("• PostgreSQL da esa 1 GB lik matn saqlansa ham, oddiy SELECT so'rovlari chaqmoqdek tez ishlayveradi!", 180, 875, { size: 24, weight: 700, color: C.purple });
+      text("• Boshqa ma'lumotlar bazalarida katta matnlar butun qatorni shishirib, xotirani to'ldiradi.", 180, 820, { size: 24, color: C.ink, wrap: 1560 });
+      text("• PostgreSQL da esa 1 GB lik matn saqlansa ham, oddiy SELECT so'rovlari chaqmoqdek tez ishlayveradi!", 180, 875, { size: 24, weight: 700, color: C.purple, wrap: 1560 });
     });
   }
 
@@ -154,25 +154,28 @@
     const kNul = P(t, W('L13', 'xatosini'), 0.5);
 
     withA(kBytea, () => {
-      card(140, 240, 800, 440, { fill: C.card, col: C.green, p: kBytea });
+      card(140, 240, 800, 450, { fill: C.card, col: C.green, p: kBytea });
       pill("BYTEA: IKKILIK (BINARY) SATR", 340, 300, C.green, kBytea, 22);
 
-      text("• Rasm, PDF, kalitlar va shifrlangan baytlar uchun mo'ljallangan.", 180, 370, { size: 23, color: C.ink, wrap: 720 });
-      text("• Sukut bo'yicha ekranga o'n oltilik (hex) formatda chiqadi: \\x53616c6f6d", 180, 425, { size: 22, fam: MONO, color: C.green, weight: 700 });
-      text("• Unda harflarni katta-kichik qilish funksiyalari (upper, lower) mavjud emas!", 180, 490, { size: 22, color: C.ink, wrap: 720 });
-      text("• Solishtirish baytma-bayt bo'ladi: 'Salom'::bytea ≠ 'salom'::bytea", 180, 550, { size: 22, fam: MONO, color: C.purple, weight: 700 });
-      text("• SQL standartida va MySQL/SQLite da bu tur BLOB deb nomlanadi.", 180, 615, { size: 21, color: C.soft, wrap: 720 });
+      text("• Rasm, PDF, kalitlar va shifrlangan baytlar uchun mo'ljallangan.", 180, 365, { size: 22, color: C.ink, wrap: 720 });
+      text("• Sukut bo'yicha ekranga o'n oltilik (hex) formatda chiqadi:", 180, 415, { size: 22, color: C.green, weight: 600, wrap: 720 });
+      text("  \\x53616c6f6d  ('Salom' so'zi hex ko'rinishida)", 180, 450, { size: 21, fam: MONO, color: C.green, weight: 700, wrap: 720 });
+      text("• Unda harflarni katta-kichik qilish funksiyalari (upper, lower) yo'q!", 180, 505, { size: 22, color: C.ink, wrap: 720 });
+      text("• Solishtirish baytma-bayt bo'ladi:", 180, 555, { size: 22, color: C.purple, weight: 600, wrap: 720 });
+      text("  'Salom'::bytea ≠ 'salom'::bytea  (teng emas)", 180, 590, { size: 21, fam: MONO, color: C.purple, weight: 700, wrap: 720 });
+      text("• SQL standartida va boshqa bazalarda bu tur BLOB deb ataladi.", 180, 640, { size: 21, color: C.soft, wrap: 720 });
     });
 
     withA(kNul, () => {
-      card(980, 240, 800, 440, { fill: '#fff2f0', col: C.red, p: kNul });
+      card(980, 240, 800, 450, { fill: '#fff2f0', col: C.red, p: kNul });
       pill("XAVFLI TUZOQ: NOL BAYT (0x00)", 1200, 300, C.red, kNul, 22);
 
-      text("• Matn ustunlariga (char, varchar, text) nol bayt (NUL / \\0) kiritib bo'lmaydi!", 1020, 370, { size: 23, weight: 700, color: C.red, wrap: 720 });
-      text("• Agar kiritilsa: ERROR: invalid byte sequence for encoding 'UTF8': 0x00", 1020, 430, { size: 20, fam: MONO, weight: 700, color: C.red, wrap: 720 });
-      text("• C tilida va ko'p tizimlarda nol bayt matn oxiri (string terminator) sanaladi.", 1020, 500, { size: 22, color: C.ink, wrap: 720 });
-      text("• Fayllarni yoki siqilgan ma'lumotlarni hech qachon text da saqlamang!", 1020, 560, { size: 22, weight: 700, color: C.orange, wrap: 720 });
-      text("• Har doim xom baytlar uchun BYTEA yoki BLOB ishlatilishi shart.", 1020, 615, { size: 21, color: C.green, weight: 600, wrap: 720 });
+      text("• Matn ustunlariga (char, varchar, text) nol bayt (NUL / \\0) kiritib bo'lmaydi!", 1020, 365, { size: 22, weight: 700, color: C.red, wrap: 720 });
+      text("• Agar kiritilsa qat'iy xatolik beradi:", 1020, 420, { size: 21, color: C.red, weight: 600, wrap: 720 });
+      text("  ERROR: invalid byte sequence for encoding 'UTF8': 0x00", 1020, 455, { size: 18, fam: MONO, weight: 700, color: C.red, wrap: 720 });
+      text("• C tili va ko'p tizimlarda nol bayt matn oxiri (string terminator) sanaladi.", 1020, 515, { size: 21, color: C.ink, wrap: 720 });
+      text("• Fayllarni yoki siqilgan ma'lumotlarni hech qachon text da saqlamang!", 1020, 570, { size: 21, weight: 700, color: C.orange, wrap: 720 });
+      text("• Har doim xom baytlar uchun BYTEA yoki BLOB ishlatilishi shart.", 1020, 625, { size: 21, color: C.green, weight: 600, wrap: 720 });
     });
 
     const kSum = P(t, W('L14', 'heks'), 0.5);

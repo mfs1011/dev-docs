@@ -195,11 +195,11 @@
 
     const kMem = P(t, W('L12', 'xotiradagi'), 0.5);
     withA(kMem, () => {
-      card(140, 240, 680, 320, { fill: '#fff2f0', col: C.red, p: kMem });
+      card(140, 240, 700, 320, { fill: '#fff2f0', col: C.red, p: kMem });
       pill("XAVFLI TUZOQ", 260, 290, C.red, kMem, 22);
       text("Faylsiz ishga tushirish: $ sqlite3", 180, 350, { size: 24, fam: MONO, weight: 700, color: C.red });
-      text("• Xotiradagi (in-memory) vaqtinchalik baza ochiladi", 180, 400, { size: 22, color: C.ink });
-      text("• Dastur yopilgach, barcha kiritilgan ma'lumotlar yo'qoladi!", 180, 445, { size: 22, weight: 700, color: C.red });
+      text("• Xotiradagi (in-memory) vaqtinchalik baza ochiladi", 180, 400, { size: 21, color: C.ink });
+      text("• Dastur yopilgach, barcha kiritilgan ma'lumotlar yo'qoladi!", 180, 445, { size: 21, weight: 700, color: C.red });
       pill("To'g'ri yo'l: sqlite3 dokon.db", 380, 505, C.green, kMem, 22);
     });
 

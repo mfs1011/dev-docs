@@ -61,8 +61,8 @@
       const kF = P(t, W('L4', 'kutubxona') + 0.5, 0.6);
       arrow(1390, 710, 1390, 770, { col: C.teal, w: 3, p: kF });
       withA(kF, () => {
-        card(1220, 780, 340, 80, { seed: 105 });
-        text('📁 dokon.db (bitta fayl)', 1390, 820, { size: 26, weight: 700, fam: MONO, color: C.teal, align: 'center' });
+        card(1200, 780, 380, 80, { seed: 105 });
+        text('📁 dokon.db (bitta fayl)', 1390, 820, { size: 24, weight: 700, fam: MONO, color: C.teal, align: 'center' });
       });
     });
   }

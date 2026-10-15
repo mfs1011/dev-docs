@@ -107,8 +107,8 @@
       card(x, y + 430, 650, 220, { seed: 203, fill: '#f1f8f3' });
       hand('InnoDB — TRANSACTIONS = YES', x + 30, y + 475, { size: 32, color: C.green });
       check(x + 580, y + 475, 1);
-      text('Faqat InnoDB tranzaksiyalarni (ACID) qo‘llaydi!', x + 30, y + 530, { size: 23, weight: 700, fam: MONO });
-      text('MyISAM, MEMORY, CSV — tranzaksiyasiz.', x + 30, y + 575, { size: 23, fam: MONO, color: C.red });
+      text('Faqat InnoDB tranzaksiyalarni (ACID) qo‘llaydi!', x + 30, y + 530, { size: 21, weight: 700 });
+      text('MyISAM, MEMORY, CSV — tranzaksiyasiz.', x + 30, y + 575, { size: 21, fam: MONO, color: C.red });
     });
   }
 

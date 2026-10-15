@@ -261,9 +261,9 @@
     heading("Xulosa va Asosiy Qoidalar", t, L('L20').s - 0.4);
 
     const rules = [
-      { num: "1", tit: "Nomlarni kichik harfda yozing", desc: "PostgreSQL hamma nomlarni kichik harfga o'tkazadi: mahsulot, order_item. Aralash harflardan saqlaning.", col: C.blue },
+      { num: "1", tit: "Kichik harfda yozing", desc: "PostgreSQL hamma nomlarni kichik harfga o'tkazadi: mahsulot, order_item. Aralash harflardan saqlaning.", col: C.blue },
       { num: "2", tit: "Kalit so'zlarni nom qilmang", desc: "order, user, select kabi so'zlarni nom qilmang. Qo'shtirnoq talab qilib, kod ko'chirishni qiyinlashtiradi.", col: C.orange },
-      { num: "3", tit: "Tirnoqlarni standart yozing", desc: "Satr ichida tirnoq uchun ikkita bitta tirnoq ('Ma''ruf') ishlating. \\' boshqa tizimlarda ishlamaydi.", col: C.green },
+      { num: "3", tit: "Standart tirnoqlar", desc: "Satr ichida tirnoq uchun ikkita bitta tirnoq ('Ma''ruf') ishlating. \\' boshqa tizimlarda ishlamaydi.", col: C.green },
       { num: "4", tit: "Shubha bo'lsa qavs qo'ying", desc: "Operatorlar ustuvorligi va bog'lanishida adashmaslik uchun ifodalarni qavsga oling: (2 ^ 3) ^ 2.", col: C.purple }
     ];
 
