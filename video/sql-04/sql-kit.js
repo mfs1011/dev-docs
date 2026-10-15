@@ -84,11 +84,12 @@
     if (lines.length === 1) {
       ctx.fillText(lines[0], x, y);
     } else {
-      const totalH = (lines.length - 1) * lh;
       let startY = y;
-      if (ctx.textBaseline === 'middle') {
+      if (o.valign === 'center' || o.valign === 'middle') {
+        const totalH = (lines.length - 1) * lh;
         startY = y - totalH / 2;
-      } else if (ctx.textBaseline === 'bottom') {
+      } else if (o.valign === 'bottom') {
+        const totalH = (lines.length - 1) * lh;
         startY = y - totalH;
       }
       lines.forEach((line, idx) => {

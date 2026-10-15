@@ -107,6 +107,31 @@ for (const dir of dirsToAudit) {
       }
     }
 
+    // Audit renderPoster if exists
+    const hasPoster = await page.evaluate(() => typeof window.renderPoster === 'function' || typeof renderPoster === 'function');
+    if (hasPoster) {
+      const posterRes = await page.evaluate(() => {
+        window.CURRENT_T = 0;
+        window.OVERFLOWS = [];
+        window.GLOBAL_OVERFLOWS = [];
+        window.UNDEFINED_TEXTS = [];
+        const fn = typeof renderPoster === 'function' ? renderPoster : window.renderPoster;
+        fn();
+        return {
+          kitOfs: window.OVERFLOWS || [],
+          globOfs: window.GLOBAL_OVERFLOWS || [],
+          undefs: window.UNDEFINED_TEXTS || []
+        };
+      });
+      const posterOfs = [...posterRes.kitOfs, ...posterRes.globOfs];
+      if (posterOfs.length > 0) {
+        overflows.push({ t: 'poster', ofs: posterOfs });
+      }
+      if (posterRes.undefs.length > 0) {
+        undefinedTexts.push({ t: 'poster', undefs: posterRes.undefs });
+      }
+    }
+
     const report = {
       dir: relDir,
       dur,
