@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:26.408
+Kirish: Matn va xom baytlar
+
+00:26.408 --> 00:59.354
+SQL standarti: char(n) va varchar(n)
+
+00:59.354 --> 01:32.043
+PostgreSQL da text: eng yaxshi tanlov
+
+01:32.043 --> 02:01.372
+Ichki saqlash va TOAST mexanizmi
+
+02:01.372 --> 02:35.291
+Binary satrlar: bytea va BLOB
+
+02:35.291 --> 02:53.980
+Xulosa

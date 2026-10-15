@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:18.905
+Kirish: psql da jonli sinovlar
+
+00:18.905 --> 00:48.098
+char(4), varchar(5), text va uzunlik xatosi
+
+00:48.098 --> 01:07.112
+Probellar bilan solishtirish: char vs varchar
+
+01:07.112 --> 01:27.176
+Belgi va bayt: UTF-8 va tutuq belgisi
+
+01:27.176 --> 01:50.622
+Nol bayt xatosi va bytea imkoniyatlari
+
+01:50.622 --> 02:09.820
+Xulosa

@@ -1,0 +1,1392 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Salom! Ushbu qismda PostgreSQL 18 psql terminalida matn va ikkilik turlarni amalda sinab ko‘ramiz.",
+    "show": "Salom! Ushbu qismda PostgreSQL 18 psql terminalida matn va ikkilik turlarni amalda sinab ko‘ramiz.",
+    "say": "Salom! Ushbu qismda Postgres o‘n sakkiz psql terminalida matn va ikkilik turlarni amalda sinab ko‘ramiz.",
+    "a0": 0.18,
+    "a1": 7.55,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.18,
+        "e": 0.46
+      },
+      {
+        "w": "Ushbu",
+        "s": 1.26,
+        "e": 1.48
+      },
+      {
+        "w": "qismda",
+        "s": 1.54,
+        "e": 1.92
+      },
+      {
+        "w": "Postgres",
+        "s": 2.14,
+        "e": 2.6
+      },
+      {
+        "w": "o‘n",
+        "s": 2.72,
+        "e": 2.82
+      },
+      {
+        "w": "sakkiz",
+        "s": 2.86,
+        "e": 3.24
+      },
+      {
+        "w": "psql",
+        "s": 3.34,
+        "e": 3.88
+      },
+      {
+        "w": "terminalida",
+        "s": 3.94,
+        "e": 4.56
+      },
+      {
+        "w": "matn",
+        "s": 4.92,
+        "e": 5.26
+      },
+      {
+        "w": "va",
+        "s": 5.34,
+        "e": 5.42
+      },
+      {
+        "w": "ikkilik",
+        "s": 5.6,
+        "e": 5.92
+      },
+      {
+        "w": "turlarni",
+        "s": 5.94,
+        "e": 6.38
+      },
+      {
+        "w": "amalda",
+        "s": 6.56,
+        "e": 6.9
+      },
+      {
+        "w": "sinab",
+        "s": 6.96,
+        "e": 7.16
+      },
+      {
+        "w": "ko‘ramiz.",
+        "s": 7.2,
+        "e": 7.55
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "intro",
+    "text": "char, varcha, cheksiz tekst, uzunlik xatolari, o‘zbekcha tutuq belgisi va baytea ni jonli buyruqlarda ko‘ramiz.",
+    "show": "char, varcha, cheksiz tekst, uzunlik xatolari, o‘zbekcha tutuq belgisi va baytea ni jonli buyruqlarda ko‘ramiz.",
+    "say": "Char, varcha, cheksiz tekst, uzunlik xatolari, o‘zbekcha tutuq belgisi va baytea ni jonli buyruqlarda ko‘ramiz.",
+    "a0": 8.25,
+    "a1": 15.55,
+    "words": [
+      {
+        "w": "Char,",
+        "s": 8.25,
+        "e": 8.55
+      },
+      {
+        "w": "varcha,",
+        "s": 8.79,
+        "e": 9.15
+      },
+      {
+        "w": "cheksiz",
+        "s": 9.57,
+        "e": 9.93
+      },
+      {
+        "w": "tekst,",
+        "s": 10.01,
+        "e": 10.37
+      },
+      {
+        "w": "uzunlik",
+        "s": 10.73,
+        "e": 11.07
+      },
+      {
+        "w": "xatolari,",
+        "s": 11.11,
+        "e": 11.59
+      },
+      {
+        "w": "o‘zbekcha",
+        "s": 12.05,
+        "e": 12.39
+      },
+      {
+        "w": "tutuq",
+        "s": 12.43,
+        "e": 12.65
+      },
+      {
+        "w": "belgisi",
+        "s": 12.71,
+        "e": 13.09
+      },
+      {
+        "w": "va",
+        "s": 13.21,
+        "e": 13.29
+      },
+      {
+        "w": "baytea",
+        "s": 13.47,
+        "e": 13.83
+      },
+      {
+        "w": "ni",
+        "s": 13.89,
+        "e": 13.99
+      },
+      {
+        "w": "jonli",
+        "s": 14.25,
+        "e": 14.55
+      },
+      {
+        "w": "buyruqlarda",
+        "s": 14.63,
+        "e": 15.15
+      },
+      {
+        "w": "ko‘ramiz.",
+        "s": 15.21,
+        "e": 15.55
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "char_varchar",
+    "text": "Avval char to‘rt, varcha besh va tekst ustunlaridan iborat matnlar jadvalini yaratamiz.",
+    "show": "Avval char to‘rt, varcha besh va tekst ustunlaridan iborat matnlar jadvalini yaratamiz.",
+    "say": "Avval char to‘rt, varcha besh va tekst ustunlaridan iborat matnlar jadvalini yaratamiz.",
+    "a0": 16.37,
+    "a1": 21.31,
+    "words": [
+      {
+        "w": "Avval",
+        "s": 16.37,
+        "e": 16.67
+      },
+      {
+        "w": "char",
+        "s": 16.79,
+        "e": 16.97
+      },
+      {
+        "w": "to‘rt,",
+        "s": 17.05,
+        "e": 17.29
+      },
+      {
+        "w": "varcha",
+        "s": 17.55,
+        "e": 17.81
+      },
+      {
+        "w": "besh",
+        "s": 17.91,
+        "e": 18.09
+      },
+      {
+        "w": "va",
+        "s": 18.15,
+        "e": 18.21
+      },
+      {
+        "w": "tekst",
+        "s": 18.35,
+        "e": 18.61
+      },
+      {
+        "w": "ustunlaridan",
+        "s": 18.65,
+        "e": 19.19
+      },
+      {
+        "w": "iborat",
+        "s": 19.23,
+        "e": 19.55
+      },
+      {
+        "w": "matnlar",
+        "s": 19.85,
+        "e": 20.29
+      },
+      {
+        "w": "jadvalini",
+        "s": 20.33,
+        "e": 20.81
+      },
+      {
+        "w": "yaratamiz.",
+        "s": 20.85,
+        "e": 21.31
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "char_varchar",
+    "text": "Endi varcha ustuniga to‘qqiz belgilik juda uzun so‘zini yozamiz. Baza darhol qat’iy xato beradi va yozishni to‘xtatadi.",
+    "show": "Endi varcha ustuniga to‘qqiz belgilik juda uzun so‘zini yozamiz. Baza darhol qat’iy xato beradi va yozishni to‘xtatadi.",
+    "say": "Endi varcha ustuniga to‘qqiz belgilik juda uzun so‘zini yozamiz. Baza darhol qat’iy xato beradi va yozishni to‘xtatadi.",
+    "a0": 21.95,
+    "a1": 29.0,
+    "words": [
+      {
+        "w": "Endi",
+        "s": 21.95,
+        "e": 22.15
+      },
+      {
+        "w": "varcha",
+        "s": 22.27,
+        "e": 22.54
+      },
+      {
+        "w": "ustuniga",
+        "s": 22.64,
+        "e": 23.06
+      },
+      {
+        "w": "to‘qqiz",
+        "s": 23.24,
+        "e": 23.56
+      },
+      {
+        "w": "belgilik",
+        "s": 23.62,
+        "e": 24.02
+      },
+      {
+        "w": "juda",
+        "s": 24.24,
+        "e": 24.46
+      },
+      {
+        "w": "uzun",
+        "s": 24.56,
+        "e": 24.78
+      },
+      {
+        "w": "so‘zini",
+        "s": 24.84,
+        "e": 25.12
+      },
+      {
+        "w": "yozamiz.",
+        "s": 25.12,
+        "e": 25.52
+      },
+      {
+        "w": "Baza",
+        "s": 26.08,
+        "e": 26.32
+      },
+      {
+        "w": "darhol",
+        "s": 26.44,
+        "e": 26.8
+      },
+      {
+        "w": "qat’iy",
+        "s": 26.88,
+        "e": 27.18
+      },
+      {
+        "w": "xato",
+        "s": 27.26,
+        "e": 27.46
+      },
+      {
+        "w": "beradi",
+        "s": 27.52,
+        "e": 27.8
+      },
+      {
+        "w": "va",
+        "s": 27.88,
+        "e": 27.94
+      },
+      {
+        "w": "yozishni",
+        "s": 27.94,
+        "e": 28.5
+      },
+      {
+        "w": "to‘xtatadi.",
+        "s": 28.56,
+        "e": 29.0
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "char_varchar",
+    "text": "Biroq ortiqcha qismi faqat probellardan iborat bo‘lgan salom so‘zi yozilsa, probellar jimgina kesilib xatosiz saqlanadi.",
+    "show": "Biroq ortiqcha qismi faqat probellardan iborat bo‘lgan salom so‘zi yozilsa, probellar jimgina kesilib xatosiz saqlanadi.",
+    "say": "Biroq ortiqcha qismi faqat probellardan iborat bo‘lgan salom so‘zi yozilsa, probellar jimgina kesilib xatosiz saqlanadi.",
+    "a0": 29.64,
+    "a1": 35.98,
+    "words": [
+      {
+        "w": "Biroq",
+        "s": 29.64,
+        "e": 29.86
+      },
+      {
+        "w": "ortiqcha",
+        "s": 30.02,
+        "e": 30.3
+      },
+      {
+        "w": "qismi",
+        "s": 30.36,
+        "e": 30.56
+      },
+      {
+        "w": "faqat",
+        "s": 30.6,
+        "e": 30.88
+      },
+      {
+        "w": "probellardan",
+        "s": 30.92,
+        "e": 31.54
+      },
+      {
+        "w": "iborat",
+        "s": 31.62,
+        "e": 31.92
+      },
+      {
+        "w": "bo‘lgan",
+        "s": 31.96,
+        "e": 32.24
+      },
+      {
+        "w": "salom",
+        "s": 32.38,
+        "e": 32.68
+      },
+      {
+        "w": "so‘zi",
+        "s": 32.74,
+        "e": 32.94
+      },
+      {
+        "w": "yozilsa,",
+        "s": 32.94,
+        "e": 33.4
+      },
+      {
+        "w": "probellar",
+        "s": 33.72,
+        "e": 34.18
+      },
+      {
+        "w": "jimgina",
+        "s": 34.24,
+        "e": 34.6
+      },
+      {
+        "w": "kesilib",
+        "s": 34.66,
+        "e": 35.0
+      },
+      {
+        "w": "xatosiz",
+        "s": 35.06,
+        "e": 35.48
+      },
+      {
+        "w": "saqlanadi.",
+        "s": 35.5,
+        "e": 35.98
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "char_varchar",
+    "text": "Agar qiymatni aniq kast orqali varcha beshga o‘girsak, ortiqcha qism xatosiz kesiladi va juda yoziladi.",
+    "show": "Agar qiymatni aniq kast orqali varcha beshga o‘girsak, ortiqcha qism xatosiz kesiladi va juda yoziladi.",
+    "say": "Agar qiymatni aniq kast orqali varcha beshga o‘girsak, ortiqcha qism xatosiz kesiladi va juda yoziladi.",
+    "a0": 36.6,
+    "a1": 42.23,
+    "words": [
+      {
+        "w": "Agar",
+        "s": 36.6,
+        "e": 36.8
+      },
+      {
+        "w": "qiymatni",
+        "s": 36.84,
+        "e": 37.24
+      },
+      {
+        "w": "aniq",
+        "s": 37.32,
+        "e": 37.53
+      },
+      {
+        "w": "kast",
+        "s": 37.61,
+        "e": 37.83
+      },
+      {
+        "w": "orqali",
+        "s": 37.87,
+        "e": 38.17
+      },
+      {
+        "w": "varcha",
+        "s": 38.25,
+        "e": 38.51
+      },
+      {
+        "w": "beshga",
+        "s": 38.63,
+        "e": 38.87
+      },
+      {
+        "w": "o‘girsak,",
+        "s": 38.93,
+        "e": 39.33
+      },
+      {
+        "w": "ortiqcha",
+        "s": 39.57,
+        "e": 39.91
+      },
+      {
+        "w": "qism",
+        "s": 39.95,
+        "e": 40.15
+      },
+      {
+        "w": "xatosiz",
+        "s": 40.21,
+        "e": 40.65
+      },
+      {
+        "w": "kesiladi",
+        "s": 40.69,
+        "e": 41.11
+      },
+      {
+        "w": "va",
+        "s": 41.21,
+        "e": 41.29
+      },
+      {
+        "w": "juda",
+        "s": 41.51,
+        "e": 41.73
+      },
+      {
+        "w": "yoziladi.",
+        "s": 41.77,
+        "e": 42.23
+      }
+    ]
+  },
+  {
+    "id": "L7",
+    "scene": "probel_cmp",
+    "text": "Endi qiziq tajriba: char da probellar diskda saqlansada, tenglik bilan solishtirganda hisobga olinmaydi va natija rost chiqadi.",
+    "show": "Endi qiziq tajriba: char da probellar diskda saqlansada, tenglik bilan solishtirganda hisobga olinmaydi va natija rost chiqadi.",
+    "say": "Endi qiziq tajriba: char da probellar diskda saqlansada, tenglik bilan solishtirganda hisobga olinmaydi va natija rost chiqadi.",
+    "a0": 42.91,
+    "a1": 50.21,
+    "words": [
+      {
+        "w": "Endi",
+        "s": 42.91,
+        "e": 43.11
+      },
+      {
+        "w": "qiziq",
+        "s": 43.21,
+        "e": 43.43
+      },
+      {
+        "w": "tajriba:",
+        "s": 43.47,
+        "e": 43.85
+      },
+      {
+        "w": "char",
+        "s": 44.47,
+        "e": 44.67
+      },
+      {
+        "w": "da",
+        "s": 44.71,
+        "e": 44.79
+      },
+      {
+        "w": "probellar",
+        "s": 44.91,
+        "e": 45.37
+      },
+      {
+        "w": "diskda",
+        "s": 45.45,
+        "e": 45.75
+      },
+      {
+        "w": "saqlansada,",
+        "s": 45.81,
+        "e": 46.35
+      },
+      {
+        "w": "tenglik",
+        "s": 46.55,
+        "e": 46.87
+      },
+      {
+        "w": "bilan",
+        "s": 46.91,
+        "e": 47.09
+      },
+      {
+        "w": "solishtirganda",
+        "s": 47.11,
+        "e": 47.73
+      },
+      {
+        "w": "hisobga",
+        "s": 47.79,
+        "e": 48.15
+      },
+      {
+        "w": "olinmaydi",
+        "s": 48.31,
+        "e": 48.79
+      },
+      {
+        "w": "va",
+        "s": 48.95,
+        "e": 49.03
+      },
+      {
+        "w": "natija",
+        "s": 49.13,
+        "e": 49.49
+      },
+      {
+        "w": "rost",
+        "s": 49.67,
+        "e": 49.87
+      },
+      {
+        "w": "chiqadi.",
+        "s": 49.91,
+        "e": 50.21
+      }
+    ]
+  },
+  {
+    "id": "L8",
+    "scene": "probel_cmp",
+    "text": "Varchada esa oxiridagi probellar alohida belgi hisoblangani sababli, a be va a be probel teng emas, natija yolg‘on bo‘ladi.",
+    "show": "Varchada esa oxiridagi probellar alohida belgi hisoblangani sababli, a be va a be probel teng emas, natija yolg‘on bo‘ladi.",
+    "say": "Varchada esa oxiridagi probellar alohida belgi hisoblangani sababli, a-be va a-be probel teng emas, natija yolg‘on bo‘ladi.",
+    "a0": 50.87,
+    "a1": 58.62,
+    "words": [
+      {
+        "w": "Varchada",
+        "s": 50.87,
+        "e": 51.23
+      },
+      {
+        "w": "esa",
+        "s": 51.29,
+        "e": 51.47
+      },
+      {
+        "w": "oxiridagi",
+        "s": 51.63,
+        "e": 52.05
+      },
+      {
+        "w": "probellar",
+        "s": 52.11,
+        "e": 52.56
+      },
+      {
+        "w": "alohida",
+        "s": 52.68,
+        "e": 53.06
+      },
+      {
+        "w": "belgi",
+        "s": 53.14,
+        "e": 53.4
+      },
+      {
+        "w": "hisoblangani",
+        "s": 53.44,
+        "e": 54.0
+      },
+      {
+        "w": "sababli,",
+        "s": 54.04,
+        "e": 54.4
+      },
+      {
+        "w": "a-be",
+        "s": 54.84,
+        "e": 55.1
+      },
+      {
+        "w": "va",
+        "s": 55.26,
+        "e": 55.34
+      },
+      {
+        "w": "a-be",
+        "s": 55.66,
+        "e": 55.88
+      },
+      {
+        "w": "probel",
+        "s": 55.98,
+        "e": 56.34
+      },
+      {
+        "w": "teng",
+        "s": 56.48,
+        "e": 56.68
+      },
+      {
+        "w": "emas,",
+        "s": 56.82,
+        "e": 57.12
+      },
+      {
+        "w": "natija",
+        "s": 57.42,
+        "e": 57.8
+      },
+      {
+        "w": "yolg‘on",
+        "s": 57.98,
+        "e": 58.32
+      },
+      {
+        "w": "bo‘ladi.",
+        "s": 58.36,
+        "e": 58.62
+      }
+    ]
+  },
+  {
+    "id": "L9",
+    "scene": "belgi_bayt",
+    "text": "Keyingi sinov — belgi va bayt farqi. O‘zbekcha O‘zbekiston so‘zida o‘n bitta belgi bor, lekin oktet lengs o‘n ikki bayt ko‘rsatadi.",
+    "show": "Keyingi sinov — belgi va bayt farqi. O‘zbekcha O‘zbekiston so‘zida o‘n bitta belgi bor, lekin oktet lengs o‘n ikki bayt ko‘rsatadi.",
+    "say": "Keyingi sinov — belgi va bayt farqi. O‘zbekcha O‘zbekiston so‘zida o‘n bitta belgi bor, lekin oktet lengs o‘n ikki bayt ko‘rsatadi.",
+    "a0": 59.3,
+    "a1": 67.2,
+    "words": [
+      {
+        "w": "Keyingi",
+        "s": 59.3,
+        "e": 59.62
+      },
+      {
+        "w": "sinov",
+        "s": 59.68,
+        "e": 59.92
+      },
+      {
+        "w": "—",
+        "s": 59.92,
+        "e": 59.92
+      },
+      {
+        "w": "belgi",
+        "s": 60.14,
+        "e": 60.46
+      },
+      {
+        "w": "va",
+        "s": 60.52,
+        "e": 60.6
+      },
+      {
+        "w": "bayt",
+        "s": 60.74,
+        "e": 60.96
+      },
+      {
+        "w": "farqi.",
+        "s": 61.0,
+        "e": 61.28
+      },
+      {
+        "w": "O‘zbekcha",
+        "s": 61.92,
+        "e": 62.3
+      },
+      {
+        "w": "O‘zbekiston",
+        "s": 62.56,
+        "e": 63.14
+      },
+      {
+        "w": "so‘zida",
+        "s": 63.18,
+        "e": 63.5
+      },
+      {
+        "w": "o‘n",
+        "s": 63.76,
+        "e": 63.88
+      },
+      {
+        "w": "bitta",
+        "s": 63.94,
+        "e": 64.14
+      },
+      {
+        "w": "belgi",
+        "s": 64.18,
+        "e": 64.4
+      },
+      {
+        "w": "bor,",
+        "s": 64.44,
+        "e": 64.58
+      },
+      {
+        "w": "lekin",
+        "s": 64.94,
+        "e": 65.2
+      },
+      {
+        "w": "oktet",
+        "s": 65.4,
+        "e": 65.7
+      },
+      {
+        "w": "lengs",
+        "s": 65.74,
+        "e": 66.0
+      },
+      {
+        "w": "o‘n",
+        "s": 66.18,
+        "e": 66.28
+      },
+      {
+        "w": "ikki",
+        "s": 66.34,
+        "e": 66.52
+      },
+      {
+        "w": "bayt",
+        "s": 66.56,
+        "e": 66.72
+      },
+      {
+        "w": "ko‘rsatadi.",
+        "s": 66.76,
+        "e": 67.2
+      }
+    ]
+  },
+  {
+    "id": "L10",
+    "scene": "belgi_bayt",
+    "text": "Chunki lotin alifbomizdagi tutuq belgisi UTF-8 da ikki bayt joy oladi. U oddiy bitta baytli tirnoqqa o‘xshasa ham, mutlaqo boshqa belgi sanaladi.",
+    "show": "Chunki lotin alifbomizdagi tutuq belgisi UTF-8 da ikki bayt joy oladi. U oddiy bitta baytli tirnoqqa o‘xshasa ham, mutlaqo boshqa belgi sanaladi.",
+    "say": "Chunki lotin alifbomizdagi tutuq belgisi u-te-ef sakkiz da ikki bayt joy oladi. U oddiy bitta baytli tirnoqqa o‘xshasa ham, mutlaqo boshqa belgi sanaladi.",
+    "a0": 67.71,
+    "a1": 76.09,
+    "words": [
+      {
+        "w": "Chunki",
+        "s": 67.71,
+        "e": 67.97
+      },
+      {
+        "w": "lotin",
+        "s": 68.07,
+        "e": 68.33
+      },
+      {
+        "w": "alifbomizdagi",
+        "s": 68.37,
+        "e": 69.05
+      },
+      {
+        "w": "tutuq",
+        "s": 69.09,
+        "e": 69.33
+      },
+      {
+        "w": "belgisi",
+        "s": 69.37,
+        "e": 69.77
+      },
+      {
+        "w": "u-te-ef",
+        "s": 69.95,
+        "e": 70.21
+      },
+      {
+        "w": "sakkiz",
+        "s": 70.25,
+        "e": 70.57
+      },
+      {
+        "w": "da",
+        "s": 70.61,
+        "e": 70.71
+      },
+      {
+        "w": "ikki",
+        "s": 70.93,
+        "e": 71.17
+      },
+      {
+        "w": "bayt",
+        "s": 71.19,
+        "e": 71.39
+      },
+      {
+        "w": "joy",
+        "s": 71.43,
+        "e": 71.61
+      },
+      {
+        "w": "oladi.",
+        "s": 71.67,
+        "e": 71.89
+      },
+      {
+        "w": "U",
+        "s": 72.47,
+        "e": 72.49
+      },
+      {
+        "w": "oddiy",
+        "s": 72.67,
+        "e": 72.91
+      },
+      {
+        "w": "bitta",
+        "s": 73.01,
+        "e": 73.27
+      },
+      {
+        "w": "baytli",
+        "s": 73.31,
+        "e": 73.55
+      },
+      {
+        "w": "tirnoqqa",
+        "s": 73.59,
+        "e": 73.95
+      },
+      {
+        "w": "o‘xshasa",
+        "s": 73.99,
+        "e": 74.31
+      },
+      {
+        "w": "ham,",
+        "s": 74.35,
+        "e": 74.49
+      },
+      {
+        "w": "mutlaqo",
+        "s": 74.63,
+        "e": 75.01
+      },
+      {
+        "w": "boshqa",
+        "s": 75.13,
+        "e": 75.41
+      },
+      {
+        "w": "belgi",
+        "s": 75.45,
+        "e": 75.67
+      },
+      {
+        "w": "sanaladi.",
+        "s": 75.71,
+        "e": 76.09
+      }
+    ]
+  },
+  {
+    "id": "L11",
+    "scene": "nul_bytea",
+    "text": "Matn ustuniga kodi nol bo‘lgan belgini kiritishga urinsak, baza kutilganidek qat’iy UTF-8 xatosini chiqaradi.",
+    "show": "Matn ustuniga kodi nol bo‘lgan belgini kiritishga urinsak, baza kutilganidek qat’iy UTF-8 xatosini chiqaradi.",
+    "say": "Matn ustuniga kodi nol bo‘lgan belgini kiritishga urinsak, baza kutilganidek qat’iy u-te-ef sakkiz xatosini chiqaradi.",
+    "a0": 76.79,
+    "a1": 83.0,
+    "words": [
+      {
+        "w": "Matn",
+        "s": 76.79,
+        "e": 77.09
+      },
+      {
+        "w": "ustuniga",
+        "s": 77.11,
+        "e": 77.51
+      },
+      {
+        "w": "kodi",
+        "s": 77.67,
+        "e": 77.91
+      },
+      {
+        "w": "nol",
+        "s": 78.01,
+        "e": 78.19
+      },
+      {
+        "w": "bo‘lgan",
+        "s": 78.25,
+        "e": 78.55
+      },
+      {
+        "w": "belgini",
+        "s": 78.59,
+        "e": 78.89
+      },
+      {
+        "w": "kiritishga",
+        "s": 78.95,
+        "e": 79.31
+      },
+      {
+        "w": "urinsak,",
+        "s": 79.37,
+        "e": 79.79
+      },
+      {
+        "w": "baza",
+        "s": 79.99,
+        "e": 80.23
+      },
+      {
+        "w": "kutilganidek",
+        "s": 80.29,
+        "e": 80.87
+      },
+      {
+        "w": "qat’iy",
+        "s": 80.99,
+        "e": 81.35
+      },
+      {
+        "w": "u-te-ef",
+        "s": 81.47,
+        "e": 81.73
+      },
+      {
+        "w": "sakkiz",
+        "s": 81.79,
+        "e": 82.11
+      },
+      {
+        "w": "xatosini",
+        "s": 82.17,
+        "e": 82.6
+      },
+      {
+        "w": "chiqaradi.",
+        "s": 82.64,
+        "e": 83.0
+      }
+    ]
+  },
+  {
+    "id": "L12",
+    "scene": "nul_bytea",
+    "text": "Xom baytlar uchun baytea jadvalini ochamiz. Unga Salom so‘zi yozilsa, diskdagi baytlari heks formatida aks etadi.",
+    "show": "Xom baytlar uchun baytea jadvalini ochamiz. Unga Salom so‘zi yozilsa, diskdagi baytlari heks formatida aks etadi.",
+    "say": "Xom baytlar uchun baytea jadvalini ochamiz. Unga Salom so‘zi yozilsa, diskdagi baytlari heks formatida aks etadi.",
+    "a0": 83.58,
+    "a1": 90.16,
+    "words": [
+      {
+        "w": "Xom",
+        "s": 83.58,
+        "e": 83.76
+      },
+      {
+        "w": "baytlar",
+        "s": 83.82,
+        "e": 84.14
+      },
+      {
+        "w": "uchun",
+        "s": 84.2,
+        "e": 84.4
+      },
+      {
+        "w": "baytea",
+        "s": 84.56,
+        "e": 84.92
+      },
+      {
+        "w": "jadvalini",
+        "s": 84.98,
+        "e": 85.4
+      },
+      {
+        "w": "ochamiz.",
+        "s": 85.46,
+        "e": 85.78
+      },
+      {
+        "w": "Unga",
+        "s": 86.26,
+        "e": 86.48
+      },
+      {
+        "w": "Salom",
+        "s": 86.66,
+        "e": 86.98
+      },
+      {
+        "w": "so‘zi",
+        "s": 87.04,
+        "e": 87.24
+      },
+      {
+        "w": "yozilsa,",
+        "s": 87.26,
+        "e": 87.68
+      },
+      {
+        "w": "diskdagi",
+        "s": 87.9,
+        "e": 88.34
+      },
+      {
+        "w": "baytlari",
+        "s": 88.4,
+        "e": 88.8
+      },
+      {
+        "w": "heks",
+        "s": 88.92,
+        "e": 89.18
+      },
+      {
+        "w": "formatida",
+        "s": 89.22,
+        "e": 89.64
+      },
+      {
+        "w": "aks",
+        "s": 89.74,
+        "e": 89.9
+      },
+      {
+        "w": "etadi.",
+        "s": 89.92,
+        "e": 90.16
+      }
+    ]
+  },
+  {
+    "id": "L13",
+    "scene": "nul_bytea",
+    "text": "Baytea da nol baytlar ham bemalol saqlanadi. Biroq apper kabi matn funksiyalari baytea uchun mavjud emas.",
+    "show": "Baytea da nol baytlar ham bemalol saqlanadi. Biroq apper kabi matn funksiyalari baytea uchun mavjud emas.",
+    "say": "Baytea da nol baytlar ham bemalol saqlanadi. Biroq apper kabi matn funksiyalari baytea uchun mavjud emas.",
+    "a0": 90.78,
+    "a1": 97.09,
+    "words": [
+      {
+        "w": "Baytea",
+        "s": 90.78,
+        "e": 91.1
+      },
+      {
+        "w": "da",
+        "s": 91.16,
+        "e": 91.22
+      },
+      {
+        "w": "nol",
+        "s": 91.4,
+        "e": 91.62
+      },
+      {
+        "w": "baytlar",
+        "s": 91.66,
+        "e": 91.96
+      },
+      {
+        "w": "ham",
+        "s": 92.0,
+        "e": 92.14
+      },
+      {
+        "w": "bemalol",
+        "s": 92.22,
+        "e": 92.64
+      },
+      {
+        "w": "saqlanadi.",
+        "s": 92.66,
+        "e": 93.12
+      },
+      {
+        "w": "Biroq",
+        "s": 93.68,
+        "e": 93.94
+      },
+      {
+        "w": "apper",
+        "s": 94.16,
+        "e": 94.46
+      },
+      {
+        "w": "kabi",
+        "s": 94.5,
+        "e": 94.7
+      },
+      {
+        "w": "matn",
+        "s": 94.8,
+        "e": 95.06
+      },
+      {
+        "w": "funksiyalari",
+        "s": 95.12,
+        "e": 95.63
+      },
+      {
+        "w": "baytea",
+        "s": 95.81,
+        "e": 96.15
+      },
+      {
+        "w": "uchun",
+        "s": 96.25,
+        "e": 96.43
+      },
+      {
+        "w": "mavjud",
+        "s": 96.47,
+        "e": 96.79
+      },
+      {
+        "w": "emas.",
+        "s": 96.85,
+        "e": 97.09
+      }
+    ]
+  },
+  {
+    "id": "L14",
+    "scene": "xulosa",
+    "text": "Ko‘rib turganingizdek: varcha chegarani qat’iy tekshiradi, char probellarni yutadi, baytea esa xom baytlar ustida ishlaydi.",
+    "show": "Ko‘rib turganingizdek: varcha chegarani qat’iy tekshiradi, char probellarni yutadi, baytea esa xom baytlar ustida ishlaydi.",
+    "say": "Ko‘rib turganingizdek: varcha chegarani qat’iy tekshiradi, char probellarni yutadi, baytea esa xom baytlar ustida ishlaydi.",
+    "a0": 97.71,
+    "a1": 104.45,
+    "words": [
+      {
+        "w": "Ko‘rib",
+        "s": 97.71,
+        "e": 97.93
+      },
+      {
+        "w": "turganingizdek:",
+        "s": 97.95,
+        "e": 98.59
+      },
+      {
+        "w": "varcha",
+        "s": 98.77,
+        "e": 99.07
+      },
+      {
+        "w": "chegarani",
+        "s": 99.21,
+        "e": 99.63
+      },
+      {
+        "w": "qat’iy",
+        "s": 99.69,
+        "e": 99.97
+      },
+      {
+        "w": "tekshiradi,",
+        "s": 100.03,
+        "e": 100.47
+      },
+      {
+        "w": "char",
+        "s": 100.87,
+        "e": 101.05
+      },
+      {
+        "w": "probellarni",
+        "s": 101.13,
+        "e": 101.71
+      },
+      {
+        "w": "yutadi,",
+        "s": 101.79,
+        "e": 102.11
+      },
+      {
+        "w": "baytea",
+        "s": 102.55,
+        "e": 102.85
+      },
+      {
+        "w": "esa",
+        "s": 102.91,
+        "e": 103.07
+      },
+      {
+        "w": "xom",
+        "s": 103.23,
+        "e": 103.41
+      },
+      {
+        "w": "baytlar",
+        "s": 103.47,
+        "e": 103.77
+      },
+      {
+        "w": "ustida",
+        "s": 103.81,
+        "e": 104.05
+      },
+      {
+        "w": "ishlaydi.",
+        "s": 104.11,
+        "e": 104.45
+      }
+    ]
+  },
+  {
+    "id": "L15",
+    "scene": "xulosa",
+    "text": "Keyingi 3-qismda MySQL va SQLite dialektlaridagi o‘ziga xosliklar hamda 6 ta tipik tuzoqni ko‘rib chiqamiz.",
+    "show": "Keyingi 3-qismda MySQL va SQLite dialektlaridagi o‘ziga xosliklar hamda 6 ta tipik tuzoqni ko‘rib chiqamiz.",
+    "say": "Keyingi 3-qismda May es-kyu-el va Es-kyu-layt dialektlaridagi o‘ziga xosliklar hamda 6 ta tipik tuzoqni ko‘rib chiqamiz.",
+    "a0": 105.05,
+    "a1": 111.76,
+    "words": [
+      {
+        "w": "Keyingi",
+        "s": 105.05,
+        "e": 105.35
+      },
+      {
+        "w": "3-qismda",
+        "s": 105.61,
+        "e": 106.05
+      },
+      {
+        "w": "May",
+        "s": 106.27,
+        "e": 106.44
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 106.46,
+        "e": 106.82
+      },
+      {
+        "w": "va",
+        "s": 106.88,
+        "e": 106.94
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 107.08,
+        "e": 107.58
+      },
+      {
+        "w": "dialektlaridagi",
+        "s": 107.6,
+        "e": 108.34
+      },
+      {
+        "w": "o‘ziga",
+        "s": 108.48,
+        "e": 108.7
+      },
+      {
+        "w": "xosliklar",
+        "s": 108.76,
+        "e": 109.24
+      },
+      {
+        "w": "hamda",
+        "s": 109.5,
+        "e": 109.76
+      },
+      {
+        "w": "6",
+        "s": 109.76,
+        "e": 109.76
+      },
+      {
+        "w": "ta",
+        "s": 110.08,
+        "e": 110.26
+      },
+      {
+        "w": "tipik",
+        "s": 110.32,
+        "e": 110.58
+      },
+      {
+        "w": "tuzoqni",
+        "s": 110.6,
+        "e": 110.98
+      },
+      {
+        "w": "ko‘rib",
+        "s": 111.18,
+        "e": 111.38
+      },
+      {
+        "w": "chiqamiz.",
+        "s": 111.4,
+        "e": 111.76
+      }
+    ]
+  }
+]

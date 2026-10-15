@@ -1,0 +1,1708 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Salom! Yettinchi bobda ma’lumotlar bazasidagi eng ko‘p ishlatiladigan turlar — matnli va ikkilik, ya’ni binary satrlar bilan tanishamiz.",
+    "show": "Salom! Yettinchi bobda ma’lumotlar bazasidagi eng ko‘p ishlatiladigan turlar — matnli va ikkilik, ya’ni binary satrlar bilan tanishamiz.",
+    "say": "Salom! Yettinchi bobda ma’lumotlar bazasidagi eng ko‘p ishlatiladigan turlar — matnli va ikkilik, ya’ni binary satrlar bilan tanishamiz.",
+    "a0": 0.32,
+    "a1": 10.03,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.32,
+        "e": 0.6
+      },
+      {
+        "w": "Yettinchi",
+        "s": 1.3,
+        "e": 1.72
+      },
+      {
+        "w": "bobda",
+        "s": 1.76,
+        "e": 2.1
+      },
+      {
+        "w": "ma’lumotlar",
+        "s": 2.4,
+        "e": 3.04
+      },
+      {
+        "w": "bazasidagi",
+        "s": 3.14,
+        "e": 3.8
+      },
+      {
+        "w": "eng",
+        "s": 4.04,
+        "e": 4.22
+      },
+      {
+        "w": "ko‘p",
+        "s": 4.28,
+        "e": 4.44
+      },
+      {
+        "w": "ishlatiladigan",
+        "s": 4.52,
+        "e": 5.16
+      },
+      {
+        "w": "turlar",
+        "s": 5.2,
+        "e": 5.54
+      },
+      {
+        "w": "—",
+        "s": 5.54,
+        "e": 5.54
+      },
+      {
+        "w": "matnli",
+        "s": 6.12,
+        "e": 6.56
+      },
+      {
+        "w": "va",
+        "s": 6.74,
+        "e": 6.82
+      },
+      {
+        "w": "ikkilik,",
+        "s": 7.08,
+        "e": 7.53
+      },
+      {
+        "w": "ya’ni",
+        "s": 7.79,
+        "e": 8.01
+      },
+      {
+        "w": "binary",
+        "s": 8.37,
+        "e": 8.75
+      },
+      {
+        "w": "satrlar",
+        "s": 8.85,
+        "e": 9.27
+      },
+      {
+        "w": "bilan",
+        "s": 9.33,
+        "e": 9.49
+      },
+      {
+        "w": "tanishamiz.",
+        "s": 9.55,
+        "e": 10.03
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "intro",
+    "text": "Matnli satr bu belgilar ketma-ketligi bo‘lib, bazaning kodlashiga qat’iy bo‘ysunadi. Binary satr esa istalgan xom baytlar, masalan rasm yoki shifrlangan fayllar uchun xizmat qiladi.",
+    "show": "Matnli satr bu belgilar ketma-ketligi bo‘lib, bazaning kodlashiga qat’iy bo‘ysunadi. Binary satr esa istalgan xom baytlar, masalan rasm yoki shifrlangan fayllar uchun xizmat qiladi.",
+    "say": "Matnli satr bu belgilar ketma-ketligi bo‘lib, bazaning kodlashiga qat’iy bo‘ysunadi. Binary satr esa istalgan xom baytlar, masalan rasm yoki shifrlangan fayllar uchun xizmat qiladi.",
+    "a0": 10.89,
+    "a1": 23.28,
+    "words": [
+      {
+        "w": "Matnli",
+        "s": 10.89,
+        "e": 11.23
+      },
+      {
+        "w": "satr",
+        "s": 11.31,
+        "e": 11.61
+      },
+      {
+        "w": "bu",
+        "s": 11.75,
+        "e": 11.83
+      },
+      {
+        "w": "belgilar",
+        "s": 11.99,
+        "e": 12.41
+      },
+      {
+        "w": "ketma-ketligi",
+        "s": 12.47,
+        "e": 13.11
+      },
+      {
+        "w": "bo‘lib,",
+        "s": 13.15,
+        "e": 13.39
+      },
+      {
+        "w": "bazaning",
+        "s": 13.81,
+        "e": 14.31
+      },
+      {
+        "w": "kodlashiga",
+        "s": 14.33,
+        "e": 14.87
+      },
+      {
+        "w": "qat’iy",
+        "s": 14.99,
+        "e": 15.33
+      },
+      {
+        "w": "bo‘ysunadi.",
+        "s": 15.39,
+        "e": 15.85
+      },
+      {
+        "w": "Binary",
+        "s": 16.69,
+        "e": 17.03
+      },
+      {
+        "w": "satr",
+        "s": 17.09,
+        "e": 17.33
+      },
+      {
+        "w": "esa",
+        "s": 17.37,
+        "e": 17.55
+      },
+      {
+        "w": "istalgan",
+        "s": 17.95,
+        "e": 18.49
+      },
+      {
+        "w": "xom",
+        "s": 18.61,
+        "e": 18.85
+      },
+      {
+        "w": "baytlar,",
+        "s": 18.91,
+        "e": 19.33
+      },
+      {
+        "w": "masalan",
+        "s": 19.57,
+        "e": 19.91
+      },
+      {
+        "w": "rasm",
+        "s": 20.25,
+        "e": 20.67
+      },
+      {
+        "w": "yoki",
+        "s": 20.69,
+        "e": 21.01
+      },
+      {
+        "w": "shifrlangan",
+        "s": 21.35,
+        "e": 22.03
+      },
+      {
+        "w": "fayllar",
+        "s": 22.11,
+        "e": 22.49
+      },
+      {
+        "w": "uchun",
+        "s": 22.54,
+        "e": 22.68
+      },
+      {
+        "w": "xizmat",
+        "s": 22.74,
+        "e": 23.0
+      },
+      {
+        "w": "qiladi.",
+        "s": 23.02,
+        "e": 23.28
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "standart",
+    "text": "SQL standartida ikkita asosiy matn turi bor: o‘zgarmas uzunlikdagi char va o‘zgaruvchan uzunlikdagi varcha.",
+    "show": "SQL standartida ikkita asosiy matn turi bor: o‘zgarmas uzunlikdagi char va o‘zgaruvchan uzunlikdagi varcha.",
+    "say": "Es-kyu-el standartida ikkita asosiy matn turi bor: o‘zgarmas uzunlikdagi char va o‘zgaruvchan uzunlikdagi varcha.",
+    "a0": 24.26,
+    "a1": 31.82,
+    "words": [
+      {
+        "w": "Es-kyu-el",
+        "s": 24.26,
+        "e": 24.62
+      },
+      {
+        "w": "standartida",
+        "s": 24.68,
+        "e": 25.2
+      },
+      {
+        "w": "ikkita",
+        "s": 25.36,
+        "e": 25.64
+      },
+      {
+        "w": "asosiy",
+        "s": 25.72,
+        "e": 26.1
+      },
+      {
+        "w": "matn",
+        "s": 26.18,
+        "e": 26.44
+      },
+      {
+        "w": "turi",
+        "s": 26.46,
+        "e": 26.64
+      },
+      {
+        "w": "bor:",
+        "s": 26.68,
+        "e": 26.84
+      },
+      {
+        "w": "o‘zgarmas",
+        "s": 27.68,
+        "e": 28.1
+      },
+      {
+        "w": "uzunlikdagi",
+        "s": 28.18,
+        "e": 28.76
+      },
+      {
+        "w": "char",
+        "s": 29.0,
+        "e": 29.3
+      },
+      {
+        "w": "va",
+        "s": 29.74,
+        "e": 29.82
+      },
+      {
+        "w": "o‘zgaruvchan",
+        "s": 30.02,
+        "e": 30.54
+      },
+      {
+        "w": "uzunlikdagi",
+        "s": 30.6,
+        "e": 31.18
+      },
+      {
+        "w": "varcha.",
+        "s": 31.46,
+        "e": 31.82
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "standart",
+    "text": "Ikkalasida ham qavs ichidagi en soni bayt emas, aynan belgilar sonini bildiradi. Agar char ustuniga qisqa so‘z yozilsa, qolgan joy probellar bilan to‘ldirilib saqlanadi.",
+    "show": "Ikkalasida ham qavs ichidagi en soni bayt emas, aynan belgilar sonini bildiradi. Agar char ustuniga qisqa so‘z yozilsa, qolgan joy probellar bilan to‘ldirilib saqlanadi.",
+    "say": "Ikkalasida ham qavs ichidagi en soni bayt emas, aynan belgilar sonini bildiradi. Agar char ustuniga qisqa so‘z yozilsa, qolgan joy probellar bilan to‘ldirilib saqlanadi.",
+    "a0": 32.78,
+    "a1": 44.19,
+    "words": [
+      {
+        "w": "Ikkalasida",
+        "s": 32.78,
+        "e": 33.24
+      },
+      {
+        "w": "ham",
+        "s": 33.28,
+        "e": 33.44
+      },
+      {
+        "w": "qavs",
+        "s": 33.58,
+        "e": 33.84
+      },
+      {
+        "w": "ichidagi",
+        "s": 33.92,
+        "e": 34.32
+      },
+      {
+        "w": "en",
+        "s": 34.62,
+        "e": 34.76
+      },
+      {
+        "w": "soni",
+        "s": 34.86,
+        "e": 35.16
+      },
+      {
+        "w": "bayt",
+        "s": 35.58,
+        "e": 35.82
+      },
+      {
+        "w": "emas,",
+        "s": 35.9,
+        "e": 36.18
+      },
+      {
+        "w": "aynan",
+        "s": 36.52,
+        "e": 36.78
+      },
+      {
+        "w": "belgilar",
+        "s": 37.08,
+        "e": 37.57
+      },
+      {
+        "w": "sonini",
+        "s": 37.61,
+        "e": 37.93
+      },
+      {
+        "w": "bildiradi.",
+        "s": 37.95,
+        "e": 38.31
+      },
+      {
+        "w": "Agar",
+        "s": 39.11,
+        "e": 39.33
+      },
+      {
+        "w": "char",
+        "s": 39.61,
+        "e": 39.81
+      },
+      {
+        "w": "ustuniga",
+        "s": 39.91,
+        "e": 40.37
+      },
+      {
+        "w": "qisqa",
+        "s": 40.51,
+        "e": 40.77
+      },
+      {
+        "w": "so‘z",
+        "s": 40.85,
+        "e": 41.03
+      },
+      {
+        "w": "yozilsa,",
+        "s": 41.05,
+        "e": 41.49
+      },
+      {
+        "w": "qolgan",
+        "s": 41.91,
+        "e": 42.27
+      },
+      {
+        "w": "joy",
+        "s": 42.33,
+        "e": 42.49
+      },
+      {
+        "w": "probellar",
+        "s": 42.57,
+        "e": 43.09
+      },
+      {
+        "w": "bilan",
+        "s": 43.11,
+        "e": 43.29
+      },
+      {
+        "w": "to‘ldirilib",
+        "s": 43.33,
+        "e": 43.71
+      },
+      {
+        "w": "saqlanadi.",
+        "s": 43.73,
+        "e": 44.19
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "standart",
+    "text": "Varchada esa ortiqcha probel qo‘shilmaydi. Agar satr belgilangan uzunlikdan oshsa, baza xato beradi va uni yozishga yo‘l qo‘ymaydi.",
+    "show": "Varchada esa ortiqcha probel qo‘shilmaydi. Agar satr belgilangan uzunlikdan oshsa, baza xato beradi va uni yozishga yo‘l qo‘ymaydi.",
+    "say": "Varchada esa ortiqcha probel qo‘shilmaydi. Agar satr belgilangan uzunlikdan oshsa, baza xato beradi va uni yozishga yo‘l qo‘ymaydi.",
+    "a0": 45.03,
+    "a1": 53.54,
+    "words": [
+      {
+        "w": "Varchada",
+        "s": 45.03,
+        "e": 45.43
+      },
+      {
+        "w": "esa",
+        "s": 45.49,
+        "e": 45.65
+      },
+      {
+        "w": "ortiqcha",
+        "s": 46.05,
+        "e": 46.39
+      },
+      {
+        "w": "probel",
+        "s": 46.43,
+        "e": 46.77
+      },
+      {
+        "w": "qo‘shilmaydi.",
+        "s": 46.83,
+        "e": 47.37
+      },
+      {
+        "w": "Agar",
+        "s": 48.07,
+        "e": 48.31
+      },
+      {
+        "w": "satr",
+        "s": 48.35,
+        "e": 48.65
+      },
+      {
+        "w": "belgilangan",
+        "s": 48.87,
+        "e": 49.41
+      },
+      {
+        "w": "uzunlikdan",
+        "s": 49.51,
+        "e": 50.01
+      },
+      {
+        "w": "oshsa,",
+        "s": 50.15,
+        "e": 50.45
+      },
+      {
+        "w": "baza",
+        "s": 50.89,
+        "e": 51.17
+      },
+      {
+        "w": "xato",
+        "s": 51.25,
+        "e": 51.49
+      },
+      {
+        "w": "beradi",
+        "s": 51.57,
+        "e": 51.87
+      },
+      {
+        "w": "va",
+        "s": 52.07,
+        "e": 52.13
+      },
+      {
+        "w": "uni",
+        "s": 52.23,
+        "e": 52.35
+      },
+      {
+        "w": "yozishga",
+        "s": 52.35,
+        "e": 52.82
+      },
+      {
+        "w": "yo‘l",
+        "s": 52.9,
+        "e": 53.04
+      },
+      {
+        "w": "qo‘ymaydi.",
+        "s": 53.12,
+        "e": 53.54
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "postgres_text",
+    "text": "PostgreSQL da standart turlardan tashqari yana bir ajoyib tur bor — bu cheksiz uzunlikdagi tekst turidir.",
+    "show": "PostgreSQL da standart turlardan tashqari yana bir ajoyib tur bor — bu cheksiz uzunlikdagi tekst turidir.",
+    "say": "Postgres da standart turlardan tashqari yana bir ajoyib tur bor — bu cheksiz uzunlikdagi tekst turidir.",
+    "a0": 54.78,
+    "a1": 61.04,
+    "words": [
+      {
+        "w": "Postgres",
+        "s": 54.78,
+        "e": 55.2
+      },
+      {
+        "w": "da",
+        "s": 55.26,
+        "e": 55.34
+      },
+      {
+        "w": "standart",
+        "s": 55.6,
+        "e": 55.98
+      },
+      {
+        "w": "turlardan",
+        "s": 56.0,
+        "e": 56.4
+      },
+      {
+        "w": "tashqari",
+        "s": 56.44,
+        "e": 56.8
+      },
+      {
+        "w": "yana",
+        "s": 56.86,
+        "e": 57.02
+      },
+      {
+        "w": "bir",
+        "s": 57.08,
+        "e": 57.18
+      },
+      {
+        "w": "ajoyib",
+        "s": 57.36,
+        "e": 57.78
+      },
+      {
+        "w": "tur",
+        "s": 57.86,
+        "e": 58.0
+      },
+      {
+        "w": "bor",
+        "s": 58.06,
+        "e": 58.22
+      },
+      {
+        "w": "—",
+        "s": 58.22,
+        "e": 58.22
+      },
+      {
+        "w": "bu",
+        "s": 58.5,
+        "e": 58.58
+      },
+      {
+        "w": "cheksiz",
+        "s": 58.98,
+        "e": 59.42
+      },
+      {
+        "w": "uzunlikdagi",
+        "s": 59.52,
+        "e": 60.14
+      },
+      {
+        "w": "tekst",
+        "s": 60.4,
+        "e": 60.7
+      },
+      {
+        "w": "turidir.",
+        "s": 60.72,
+        "e": 61.04
+      }
+    ]
+  },
+  {
+    "id": "L7",
+    "scene": "postgres_text",
+    "text": "Ko‘pchilik dasturchilar char yoki varchani tezroq ishlaydi deb o‘ylashadi. Biroq PostgreSQL da bu uchala tur o‘rtasida tezlik farqi mutlaqo yo‘q!",
+    "show": "Ko‘pchilik dasturchilar char yoki varchani tezroq ishlaydi deb o‘ylashadi. Biroq PostgreSQL da bu uchala tur o‘rtasida tezlik farqi mutlaqo yo‘q!",
+    "say": "Ko‘pchilik dasturchilar char yoki varchani tezroq ishlaydi deb o‘ylashadi. Biroq Postgres da bu uchala tur o‘rtasida tezlik farqi mutlaqo yo‘q!",
+    "a0": 62.0,
+    "a1": 70.43,
+    "words": [
+      {
+        "w": "Ko‘pchilik",
+        "s": 62.0,
+        "e": 62.38
+      },
+      {
+        "w": "dasturchilar",
+        "s": 62.42,
+        "e": 62.96
+      },
+      {
+        "w": "char",
+        "s": 63.2,
+        "e": 63.46
+      },
+      {
+        "w": "yoki",
+        "s": 63.46,
+        "e": 63.88
+      },
+      {
+        "w": "varchani",
+        "s": 64.0,
+        "e": 64.5
+      },
+      {
+        "w": "tezroq",
+        "s": 64.62,
+        "e": 65.0
+      },
+      {
+        "w": "ishlaydi",
+        "s": 65.06,
+        "e": 65.36
+      },
+      {
+        "w": "deb",
+        "s": 65.4,
+        "e": 65.52
+      },
+      {
+        "w": "o‘ylashadi.",
+        "s": 65.58,
+        "e": 65.98
+      },
+      {
+        "w": "Biroq",
+        "s": 66.36,
+        "e": 66.58
+      },
+      {
+        "w": "Postgres",
+        "s": 66.88,
+        "e": 67.3
+      },
+      {
+        "w": "da",
+        "s": 67.36,
+        "e": 67.44
+      },
+      {
+        "w": "bu",
+        "s": 67.51,
+        "e": 67.61
+      },
+      {
+        "w": "uchala",
+        "s": 67.81,
+        "e": 68.17
+      },
+      {
+        "w": "tur",
+        "s": 68.21,
+        "e": 68.33
+      },
+      {
+        "w": "o‘rtasida",
+        "s": 68.41,
+        "e": 68.85
+      },
+      {
+        "w": "tezlik",
+        "s": 69.05,
+        "e": 69.39
+      },
+      {
+        "w": "farqi",
+        "s": 69.43,
+        "e": 69.69
+      },
+      {
+        "w": "mutlaqo",
+        "s": 69.77,
+        "e": 70.17
+      },
+      {
+        "w": "yo‘q!",
+        "s": 70.25,
+        "e": 70.43
+      }
+    ]
+  },
+  {
+    "id": "L8",
+    "scene": "postgres_text",
+    "text": "Aksincha, char probellarni to‘ldirish va tozalash uchun qo‘shimcha resurs talab qilib, eng sekin tur hisoblanadi. Shuning uchun aniq biznes cheklovi bo‘lmasa, tekst yoki cheksiz varcha ishlatish tavsiya etiladi.",
+    "show": "Aksincha, char probellarni to‘ldirish va tozalash uchun qo‘shimcha resurs talab qilib, eng sekin tur hisoblanadi. Shuning uchun aniq biznes cheklovi bo‘lmasa, tekst yoki cheksiz varcha ishlatish tavsiya etiladi.",
+    "say": "Aksincha, char probellarni to‘ldirish va tozalash uchun qo‘shimcha resurs talab qilib, eng sekin tur hisoblanadi. Shuning uchun aniq biznes cheklovi bo‘lmasa, tekst yoki cheksiz varcha ishlatish tavsiya etiladi.",
+    "a0": 71.21,
+    "a1": 83.62,
+    "words": [
+      {
+        "w": "Aksincha,",
+        "s": 71.21,
+        "e": 71.61
+      },
+      {
+        "w": "char",
+        "s": 72.03,
+        "e": 72.27
+      },
+      {
+        "w": "probellarni",
+        "s": 72.41,
+        "e": 73.03
+      },
+      {
+        "w": "to‘ldirish",
+        "s": 73.11,
+        "e": 73.63
+      },
+      {
+        "w": "va",
+        "s": 73.69,
+        "e": 73.75
+      },
+      {
+        "w": "tozalash",
+        "s": 73.85,
+        "e": 74.29
+      },
+      {
+        "w": "uchun",
+        "s": 74.35,
+        "e": 74.53
+      },
+      {
+        "w": "qo‘shimcha",
+        "s": 74.67,
+        "e": 75.09
+      },
+      {
+        "w": "resurs",
+        "s": 75.17,
+        "e": 75.51
+      },
+      {
+        "w": "talab",
+        "s": 75.55,
+        "e": 75.77
+      },
+      {
+        "w": "qilib,",
+        "s": 75.81,
+        "e": 75.99
+      },
+      {
+        "w": "eng",
+        "s": 76.39,
+        "e": 76.53
+      },
+      {
+        "w": "sekin",
+        "s": 76.61,
+        "e": 76.89
+      },
+      {
+        "w": "tur",
+        "s": 76.93,
+        "e": 77.05
+      },
+      {
+        "w": "hisoblanadi.",
+        "s": 77.09,
+        "e": 77.63
+      },
+      {
+        "w": "Shuning",
+        "s": 78.25,
+        "e": 78.47
+      },
+      {
+        "w": "uchun",
+        "s": 78.49,
+        "e": 78.65
+      },
+      {
+        "w": "aniq",
+        "s": 79.01,
+        "e": 79.21
+      },
+      {
+        "w": "biznes",
+        "s": 79.31,
+        "e": 79.61
+      },
+      {
+        "w": "cheklovi",
+        "s": 79.65,
+        "e": 80.01
+      },
+      {
+        "w": "bo‘lmasa,",
+        "s": 80.05,
+        "e": 80.41
+      },
+      {
+        "w": "tekst",
+        "s": 80.77,
+        "e": 81.13
+      },
+      {
+        "w": "yoki",
+        "s": 81.17,
+        "e": 81.45
+      },
+      {
+        "w": "cheksiz",
+        "s": 81.67,
+        "e": 82.11
+      },
+      {
+        "w": "varcha",
+        "s": 82.19,
+        "e": 82.45
+      },
+      {
+        "w": "ishlatish",
+        "s": 82.56,
+        "e": 82.92
+      },
+      {
+        "w": "tavsiya",
+        "s": 82.98,
+        "e": 83.28
+      },
+      {
+        "w": "etiladi.",
+        "s": 83.3,
+        "e": 83.62
+      }
+    ]
+  },
+  {
+    "id": "L9",
+    "scene": "toast",
+    "text": "PostgreSQL matnlarni qanday saqlaydi? Bir yuz yigirma olti baytgacha bo‘lgan qisqa satrlarga atigi bir baytlik sarlavha qo‘shiladi.",
+    "show": "PostgreSQL matnlarni qanday saqlaydi? Bir yuz yigirma olti baytgacha bo‘lgan qisqa satrlarga atigi bir baytlik sarlavha qo‘shiladi.",
+    "say": "Postgres matnlarni qanday saqlaydi? Bir yuz yigirma olti baytgacha bo‘lgan qisqa satrlarga atigi bir baytlik sarlavha qo‘shiladi.",
+    "a0": 85.04,
+    "a1": 92.3,
+    "words": [
+      {
+        "w": "Postgres",
+        "s": 85.04,
+        "e": 85.42
+      },
+      {
+        "w": "matnlarni",
+        "s": 85.52,
+        "e": 86.0
+      },
+      {
+        "w": "qanday",
+        "s": 86.08,
+        "e": 86.4
+      },
+      {
+        "w": "saqlaydi?",
+        "s": 86.44,
+        "e": 86.82
+      },
+      {
+        "w": "Bir",
+        "s": 87.76,
+        "e": 87.86
+      },
+      {
+        "w": "yuz",
+        "s": 87.92,
+        "e": 88.04
+      },
+      {
+        "w": "yigirma",
+        "s": 88.06,
+        "e": 88.34
+      },
+      {
+        "w": "olti",
+        "s": 88.38,
+        "e": 88.58
+      },
+      {
+        "w": "baytgacha",
+        "s": 88.64,
+        "e": 89.06
+      },
+      {
+        "w": "bo‘lgan",
+        "s": 89.1,
+        "e": 89.38
+      },
+      {
+        "w": "qisqa",
+        "s": 89.44,
+        "e": 89.68
+      },
+      {
+        "w": "satrlarga",
+        "s": 89.72,
+        "e": 90.26
+      },
+      {
+        "w": "atigi",
+        "s": 90.38,
+        "e": 90.66
+      },
+      {
+        "w": "bir",
+        "s": 90.84,
+        "e": 90.98
+      },
+      {
+        "w": "baytlik",
+        "s": 91.06,
+        "e": 91.4
+      },
+      {
+        "w": "sarlavha",
+        "s": 91.44,
+        "e": 91.82
+      },
+      {
+        "w": "qo‘shiladi.",
+        "s": 91.88,
+        "e": 92.3
+      }
+    ]
+  },
+  {
+    "id": "L10",
+    "scene": "toast",
+    "text": "Juda katta matnlar paydo bo‘lganda esa TOAST nomli maxsus mexanizm ishga tushadi: matn avtomatik siqiladi va alohida fon jadvaliga chiqariladi.",
+    "show": "Juda katta matnlar paydo bo‘lganda esa TOAST nomli maxsus mexanizm ishga tushadi: matn avtomatik siqiladi va alohida fon jadvaliga chiqariladi.",
+    "say": "Juda katta matnlar paydo bo‘lganda esa toust nomli maxsus mexanizm ishga tushadi: matn avtomatik siqiladi va alohida fon jadvaliga chiqariladi.",
+    "a0": 93.28,
+    "a1": 102.49,
+    "words": [
+      {
+        "w": "Juda",
+        "s": 93.28,
+        "e": 93.44
+      },
+      {
+        "w": "katta",
+        "s": 93.56,
+        "e": 93.9
+      },
+      {
+        "w": "matnlar",
+        "s": 93.96,
+        "e": 94.38
+      },
+      {
+        "w": "paydo",
+        "s": 94.42,
+        "e": 94.66
+      },
+      {
+        "w": "bo‘lganda",
+        "s": 94.72,
+        "e": 95.1
+      },
+      {
+        "w": "esa",
+        "s": 95.16,
+        "e": 95.32
+      },
+      {
+        "w": "toust",
+        "s": 95.7,
+        "e": 96.0
+      },
+      {
+        "w": "nomli",
+        "s": 96.06,
+        "e": 96.34
+      },
+      {
+        "w": "maxsus",
+        "s": 96.46,
+        "e": 96.84
+      },
+      {
+        "w": "mexanizm",
+        "s": 96.9,
+        "e": 97.38
+      },
+      {
+        "w": "ishga",
+        "s": 97.38,
+        "e": 97.57
+      },
+      {
+        "w": "tushadi:",
+        "s": 97.61,
+        "e": 97.91
+      },
+      {
+        "w": "matn",
+        "s": 98.71,
+        "e": 98.99
+      },
+      {
+        "w": "avtomatik",
+        "s": 99.29,
+        "e": 99.77
+      },
+      {
+        "w": "siqiladi",
+        "s": 99.83,
+        "e": 100.25
+      },
+      {
+        "w": "va",
+        "s": 100.33,
+        "e": 100.41
+      },
+      {
+        "w": "alohida",
+        "s": 100.83,
+        "e": 101.29
+      },
+      {
+        "w": "fon",
+        "s": 101.37,
+        "e": 101.55
+      },
+      {
+        "w": "jadvaliga",
+        "s": 101.59,
+        "e": 102.01
+      },
+      {
+        "w": "chiqariladi.",
+        "s": 102.03,
+        "e": 102.49
+      }
+    ]
+  },
+  {
+    "id": "L11",
+    "scene": "toast",
+    "text": "Shu sababli millionlab belgidan iborat ulkan maqolalar ham oddiy ustunlarning o‘qilish tezligiga hech qanday xalal bermaydi.",
+    "show": "Shu sababli millionlab belgidan iborat ulkan maqolalar ham oddiy ustunlarning o‘qilish tezligiga hech qanday xalal bermaydi.",
+    "say": "Shu sababli millionlab belgidan iborat ulkan maqolalar ham oddiy ustunlarning o‘qilish tezligiga hech qanday xalal bermaydi.",
+    "a0": 103.21,
+    "a1": 110.41,
+    "words": [
+      {
+        "w": "Shu",
+        "s": 103.21,
+        "e": 103.31
+      },
+      {
+        "w": "sababli",
+        "s": 103.37,
+        "e": 103.71
+      },
+      {
+        "w": "millionlab",
+        "s": 104.07,
+        "e": 104.59
+      },
+      {
+        "w": "belgidan",
+        "s": 104.65,
+        "e": 105.05
+      },
+      {
+        "w": "iborat",
+        "s": 105.13,
+        "e": 105.51
+      },
+      {
+        "w": "ulkan",
+        "s": 105.71,
+        "e": 106.03
+      },
+      {
+        "w": "maqolalar",
+        "s": 106.11,
+        "e": 106.63
+      },
+      {
+        "w": "ham",
+        "s": 106.67,
+        "e": 106.81
+      },
+      {
+        "w": "oddiy",
+        "s": 107.25,
+        "e": 107.49
+      },
+      {
+        "w": "ustunlarning",
+        "s": 107.55,
+        "e": 108.15
+      },
+      {
+        "w": "o‘qilish",
+        "s": 108.23,
+        "e": 108.55
+      },
+      {
+        "w": "tezligiga",
+        "s": 108.57,
+        "e": 109.03
+      },
+      {
+        "w": "hech",
+        "s": 109.15,
+        "e": 109.37
+      },
+      {
+        "w": "qanday",
+        "s": 109.41,
+        "e": 109.67
+      },
+      {
+        "w": "xalal",
+        "s": 109.71,
+        "e": 109.97
+      },
+      {
+        "w": "bermaydi.",
+        "s": 110.01,
+        "e": 110.41
+      }
+    ]
+  },
+  {
+    "id": "L12",
+    "scene": "bytea_blob",
+    "text": "Endi ikkilik ma’lumotlarga kelsak: PostgreSQL da ular baytea deb ataladi, standartda esa bu tur blob deyiladi.",
+    "show": "Endi ikkilik ma’lumotlarga kelsak: PostgreSQL da ular baytea deb ataladi, standartda esa bu tur blob deyiladi.",
+    "say": "Endi ikkilik ma’lumotlarga kelsak: Postgres da ular baytea deb ataladi, standartda esa bu tur blob deyiladi.",
+    "a0": 111.49,
+    "a1": 118.9,
+    "words": [
+      {
+        "w": "Endi",
+        "s": 111.49,
+        "e": 111.69
+      },
+      {
+        "w": "ikkilik",
+        "s": 111.81,
+        "e": 112.21
+      },
+      {
+        "w": "ma’lumotlarga",
+        "s": 112.29,
+        "e": 112.88
+      },
+      {
+        "w": "kelsak:",
+        "s": 112.92,
+        "e": 113.22
+      },
+      {
+        "w": "Postgres",
+        "s": 114.0,
+        "e": 114.4
+      },
+      {
+        "w": "da",
+        "s": 114.44,
+        "e": 114.52
+      },
+      {
+        "w": "ular",
+        "s": 114.64,
+        "e": 114.86
+      },
+      {
+        "w": "baytea",
+        "s": 115.2,
+        "e": 115.76
+      },
+      {
+        "w": "deb",
+        "s": 115.84,
+        "e": 115.98
+      },
+      {
+        "w": "ataladi,",
+        "s": 116.02,
+        "e": 116.36
+      },
+      {
+        "w": "standartda",
+        "s": 116.84,
+        "e": 117.26
+      },
+      {
+        "w": "esa",
+        "s": 117.32,
+        "e": 117.48
+      },
+      {
+        "w": "bu",
+        "s": 117.56,
+        "e": 117.62
+      },
+      {
+        "w": "tur",
+        "s": 117.7,
+        "e": 117.84
+      },
+      {
+        "w": "blob",
+        "s": 118.18,
+        "e": 118.46
+      },
+      {
+        "w": "deyiladi.",
+        "s": 118.54,
+        "e": 118.9
+      }
+    ]
+  },
+  {
+    "id": "L13",
+    "scene": "bytea_blob",
+    "text": "Matn ustuniga kodi nol bo‘lgan belgini, ya’ni bayt nolni mutlaqo kiritib bo‘lmaydi — baza UTF-8 xatosini beradi. Baytea da esa istalgan bayt xatosiz saqlanadi.",
+    "show": "Matn ustuniga kodi nol bo‘lgan belgini, ya’ni bayt nolni mutlaqo kiritib bo‘lmaydi — baza UTF-8 xatosini beradi. Baytea da esa istalgan bayt xatosiz saqlanadi.",
+    "say": "Matn ustuniga kodi nol bo‘lgan belgini, ya’ni bayt nolni mutlaqo kiritib bo‘lmaydi — baza u-te-ef sakkiz xatosini beradi. Baytea da esa istalgan bayt xatosiz saqlanadi.",
+    "a0": 120.02,
+    "a1": 131.39,
+    "words": [
+      {
+        "w": "Matn",
+        "s": 120.02,
+        "e": 120.3
+      },
+      {
+        "w": "ustuniga",
+        "s": 120.34,
+        "e": 120.76
+      },
+      {
+        "w": "kodi",
+        "s": 120.94,
+        "e": 121.22
+      },
+      {
+        "w": "nol",
+        "s": 121.36,
+        "e": 121.58
+      },
+      {
+        "w": "bo‘lgan",
+        "s": 121.62,
+        "e": 121.94
+      },
+      {
+        "w": "belgini,",
+        "s": 121.98,
+        "e": 122.34
+      },
+      {
+        "w": "ya’ni",
+        "s": 122.6,
+        "e": 122.78
+      },
+      {
+        "w": "bayt",
+        "s": 123.12,
+        "e": 123.36
+      },
+      {
+        "w": "nolni",
+        "s": 123.46,
+        "e": 123.76
+      },
+      {
+        "w": "mutlaqo",
+        "s": 123.86,
+        "e": 124.26
+      },
+      {
+        "w": "kiritib",
+        "s": 124.32,
+        "e": 124.6
+      },
+      {
+        "w": "bo‘lmaydi",
+        "s": 124.64,
+        "e": 125.06
+      },
+      {
+        "w": "—",
+        "s": 125.06,
+        "e": 125.06
+      },
+      {
+        "w": "baza",
+        "s": 125.5,
+        "e": 125.74
+      },
+      {
+        "w": "u-te-ef",
+        "s": 126.18,
+        "e": 126.54
+      },
+      {
+        "w": "sakkiz",
+        "s": 126.64,
+        "e": 127.0
+      },
+      {
+        "w": "xatosini",
+        "s": 127.02,
+        "e": 127.44
+      },
+      {
+        "w": "beradi.",
+        "s": 127.48,
+        "e": 127.75
+      },
+      {
+        "w": "Baytea",
+        "s": 128.61,
+        "e": 128.99
+      },
+      {
+        "w": "da",
+        "s": 129.03,
+        "e": 129.11
+      },
+      {
+        "w": "esa",
+        "s": 129.17,
+        "e": 129.33
+      },
+      {
+        "w": "istalgan",
+        "s": 129.65,
+        "e": 130.11
+      },
+      {
+        "w": "bayt",
+        "s": 130.17,
+        "e": 130.35
+      },
+      {
+        "w": "xatosiz",
+        "s": 130.45,
+        "e": 130.87
+      },
+      {
+        "w": "saqlanadi.",
+        "s": 130.89,
+        "e": 131.39
+      }
+    ]
+  },
+  {
+    "id": "L14",
+    "scene": "bytea_blob",
+    "text": "Baytea ma’lumotlar bilan ishlaganda ular ekranda o‘n oltilik, ya’ni heks ko‘rinishida aks etadi va harflarni katta-kichik qilish funksiyalari ularga ta’sir qilmaydi.",
+    "show": "Baytea ma’lumotlar bilan ishlaganda ular ekranda o‘n oltilik, ya’ni heks ko‘rinishida aks etadi va harflarni katta-kichik qilish funksiyalari ularga ta’sir qilmaydi.",
+    "say": "Baytea ma’lumotlar bilan ishlaganda ular ekranda o‘n oltilik, ya’ni heks ko‘rinishida aks etadi va harflarni katta-kichik qilish funksiyalari ularga ta’sir qilmaydi.",
+    "a0": 132.11,
+    "a1": 141.47,
+    "words": [
+      {
+        "w": "Baytea",
+        "s": 132.11,
+        "e": 132.49
+      },
+      {
+        "w": "ma’lumotlar",
+        "s": 132.55,
+        "e": 133.05
+      },
+      {
+        "w": "bilan",
+        "s": 133.09,
+        "e": 133.25
+      },
+      {
+        "w": "ishlaganda",
+        "s": 133.27,
+        "e": 133.73
+      },
+      {
+        "w": "ular",
+        "s": 134.13,
+        "e": 134.35
+      },
+      {
+        "w": "ekranda",
+        "s": 134.51,
+        "e": 134.93
+      },
+      {
+        "w": "o‘n",
+        "s": 135.11,
+        "e": 135.23
+      },
+      {
+        "w": "oltilik,",
+        "s": 135.37,
+        "e": 135.79
+      },
+      {
+        "w": "ya’ni",
+        "s": 135.97,
+        "e": 136.17
+      },
+      {
+        "w": "heks",
+        "s": 136.45,
+        "e": 136.75
+      },
+      {
+        "w": "ko‘rinishida",
+        "s": 136.81,
+        "e": 137.27
+      },
+      {
+        "w": "aks",
+        "s": 137.33,
+        "e": 137.49
+      },
+      {
+        "w": "etadi",
+        "s": 137.55,
+        "e": 137.81
+      },
+      {
+        "w": "va",
+        "s": 138.13,
+        "e": 138.19
+      },
+      {
+        "w": "harflarni",
+        "s": 138.27,
+        "e": 138.81
+      },
+      {
+        "w": "katta-kichik",
+        "s": 138.85,
+        "e": 139.43
+      },
+      {
+        "w": "qilish",
+        "s": 139.47,
+        "e": 139.69
+      },
+      {
+        "w": "funksiyalari",
+        "s": 139.73,
+        "e": 140.27
+      },
+      {
+        "w": "ularga",
+        "s": 140.39,
+        "e": 140.69
+      },
+      {
+        "w": "ta’sir",
+        "s": 140.75,
+        "e": 141.05
+      },
+      {
+        "w": "qilmaydi.",
+        "s": 141.09,
+        "e": 141.47
+      }
+    ]
+  },
+  {
+    "id": "L15",
+    "scene": "xulosa",
+    "text": "Xulosa qilib aytganda: qisqa va uzun matnlarga bemalol tekst yoki varcha, xom fayllar va baytlarga esa baytea ishlatiladi.",
+    "show": "Xulosa qilib aytganda: qisqa va uzun matnlarga bemalol tekst yoki varcha, xom fayllar va baytlarga esa baytea ishlatiladi.",
+    "say": "Xulosa qilib aytganda: qisqa va uzun matnlarga bemalol tekst yoki varcha, xom fayllar va baytlarga esa baytea ishlatiladi.",
+    "a0": 142.37,
+    "a1": 150.14,
+    "words": [
+      {
+        "w": "Xulosa",
+        "s": 142.37,
+        "e": 142.68
+      },
+      {
+        "w": "qilib",
+        "s": 142.7,
+        "e": 142.86
+      },
+      {
+        "w": "aytganda:",
+        "s": 142.88,
+        "e": 143.26
+      },
+      {
+        "w": "qisqa",
+        "s": 143.68,
+        "e": 143.98
+      },
+      {
+        "w": "va",
+        "s": 144.04,
+        "e": 144.12
+      },
+      {
+        "w": "uzun",
+        "s": 144.28,
+        "e": 144.52
+      },
+      {
+        "w": "matnlarga",
+        "s": 144.56,
+        "e": 145.08
+      },
+      {
+        "w": "bemalol",
+        "s": 145.2,
+        "e": 145.68
+      },
+      {
+        "w": "tekst",
+        "s": 145.82,
+        "e": 146.14
+      },
+      {
+        "w": "yoki",
+        "s": 146.16,
+        "e": 146.44
+      },
+      {
+        "w": "varcha,",
+        "s": 146.54,
+        "e": 146.88
+      },
+      {
+        "w": "xom",
+        "s": 147.5,
+        "e": 147.7
+      },
+      {
+        "w": "fayllar",
+        "s": 147.76,
+        "e": 148.18
+      },
+      {
+        "w": "va",
+        "s": 148.22,
+        "e": 148.28
+      },
+      {
+        "w": "baytlarga",
+        "s": 148.34,
+        "e": 148.76
+      },
+      {
+        "w": "esa",
+        "s": 148.82,
+        "e": 148.96
+      },
+      {
+        "w": "baytea",
+        "s": 149.24,
+        "e": 149.64
+      },
+      {
+        "w": "ishlatiladi.",
+        "s": 149.7,
+        "e": 150.14
+      }
+    ]
+  },
+  {
+    "id": "L16",
+    "scene": "xulosa",
+    "text": "Keyingi qismda ushbu qoidalarni PostgreSQL terminalida jonli buyruqlar orqali sinab ko‘ramiz.",
+    "show": "Keyingi qismda ushbu qoidalarni PostgreSQL terminalida jonli buyruqlar orqali sinab ko‘ramiz.",
+    "say": "Keyingi qismda ushbu qoidalarni Postgres terminalida jonli buyruqlar orqali sinab ko‘ramiz.",
+    "a0": 150.86,
+    "a1": 155.88,
+    "words": [
+      {
+        "w": "Keyingi",
+        "s": 150.86,
+        "e": 151.2
+      },
+      {
+        "w": "qismda",
+        "s": 151.24,
+        "e": 151.56
+      },
+      {
+        "w": "ushbu",
+        "s": 151.65,
+        "e": 151.85
+      },
+      {
+        "w": "qoidalarni",
+        "s": 151.89,
+        "e": 152.43
+      },
+      {
+        "w": "Postgres",
+        "s": 152.75,
+        "e": 153.17
+      },
+      {
+        "w": "terminalida",
+        "s": 153.21,
+        "e": 153.79
+      },
+      {
+        "w": "jonli",
+        "s": 154.01,
+        "e": 154.35
+      },
+      {
+        "w": "buyruqlar",
+        "s": 154.43,
+        "e": 154.86
+      },
+      {
+        "w": "orqali",
+        "s": 154.9,
+        "e": 155.18
+      },
+      {
+        "w": "sinab",
+        "s": 155.26,
+        "e": 155.5
+      },
+      {
+        "w": "ko‘ramiz.",
+        "s": 155.54,
+        "e": 155.88
+      }
+    ]
+  }
+]
