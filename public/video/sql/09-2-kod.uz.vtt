@@ -1,0 +1,76 @@
+WEBVTT
+
+1
+00:01.420 --> 00:09.500
+Ushbu qismda PostgreSQL o‘n sakkiz nuqta olti terminalida
+boolean, UUID va enum turlarini jonli misollar bilan sinaymiz.
+
+2
+00:09.670 --> 00:16.520
+Har bir turning o‘ziga xos imkoniyatlari, diskdagi hajmi va
+dasturlashda adashtirib qo‘yiladigan joylarini amalda ko‘rib chiqamiz.
+
+3
+00:19.290 --> 00:27.050
+Dastlab vazifalar jadvalini yaratib, boolean ustuniga turli
+ko‘rinishdagi qiymatlarni kiritamiz: TRUE, no, on va NULL.
+
+4
+00:27.360 --> 00:36.250
+Baza ularni avtomatik t va f harflariga aylantirdi. Ammo unga ikki raqamini
+yozmoqchi bo‘lsak, PostgreSQL butun sonni qabul qilmasdan qat’iy xato beradi!
+
+5
+00:39.260 --> 00:47.200
+Endi eng muhim sinov: WHERE bajarildi desak, faqat rost qatorlar
+chiqadi. WHERE NOT bajarildi desak, yolg‘on qator chiqadi.
+
+6
+00:47.210 --> 00:54.120
+E’tibor bering: NULL qiymatli sinov vazifasi hech biriga
+tushmadi! Chunki NOT NULL ham noma’lum bo‘lib qoladi.
+
+7
+00:54.290 --> 00:59.970
+Bajarilmagan yoki noma’lum barcha qatorlarni olish
+uchun esa IS NOT TRUE shartidan foydalanish shart.
+
+8
+01:02.960 --> 01:10.290
+Navbatdagi sinov — UUID. PostgreSQL o‘n sakkizda gen
+random uuid bilan birga yangi uuidv7 funksiyasi qo‘shildi.
+
+9
+01:10.600 --> 01:16.790
+Uuid extract timestamp orqali v7 identifikatorining
+ichidan yaratilgan aniq vaqtni ajratib olishimiz mumkin.
+
+10
+01:17.030 --> 01:23.620
+Hajmni tekshirsak: uuid tipi diskda o‘n olti bayt, xuddi
+shu qiymatning matn ko‘rinishi esa qirq bayt joy egallaydi!
+
+11
+01:26.470 --> 01:33.280
+Endi enum tipini sinaymiz: yangi, jarayonda va yopildi
+holatlarini yaratib, jadvalga teskari tartibda kiritamiz.
+
+12
+01:33.490 --> 01:42.090
+ORDER BY bilan saralaganimizda ular alifbo bo‘yicha emas, aynan biz belgilagan
+tartib bo‘yicha tartiblandi. Ro‘yxatda yo‘q bekor qiymati esa rad etildi.
+
+13
+01:42.320 --> 01:47.640
+So‘ngra ALTER TYPE yordamida bekor qiymatini
+yopildi dan oldin qo‘shdik va ro‘yxat kengaydi.
+
+14
+01:50.410 --> 01:57.700
+Xulosa: boolean da NULL ga hushyor bo‘ling, kalitlar uchun
+uuidv7 dan foydalaning va enum tartibini to‘g‘ri rejalashtiring.
+
+15
+01:57.970 --> 02:03.590
+Keyingi qismda MySQL va SQLite dagi o‘ziga xos
+farqlar va eng xavfli tuzoqlarni ko‘rib chiqamiz.

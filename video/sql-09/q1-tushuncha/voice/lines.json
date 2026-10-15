@@ -1,0 +1,1335 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Salom! To‘qqizinchi bobda dasturlashda har kuni ishlatiladigan uchta ajoyib tip — boolean, UUID va enum bilan tanishamiz.",
+    "show": "Salom! To‘qqizinchi bobda dasturlashda har kuni ishlatiladigan uchta ajoyib tip — boolean, UUID va enum bilan tanishamiz.",
+    "say": "Salom! To‘qqizinchi bobda dasturlashda har kuni ishlatiladigan uchta ajoyib tip — boolean, UUID va enum bilan tanishamiz.",
+    "a0": 0.26,
+    "a1": 8.13,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.26,
+        "e": 0.56
+      },
+      {
+        "w": "To‘qqizinchi",
+        "s": 1.24,
+        "e": 1.74
+      },
+      {
+        "w": "bobda",
+        "s": 1.76,
+        "e": 2.06
+      },
+      {
+        "w": "dasturlashda",
+        "s": 2.2,
+        "e": 2.82
+      },
+      {
+        "w": "har",
+        "s": 2.9,
+        "e": 3.06
+      },
+      {
+        "w": "kuni",
+        "s": 3.1,
+        "e": 3.24
+      },
+      {
+        "w": "ishlatiladigan",
+        "s": 3.26,
+        "e": 3.88
+      },
+      {
+        "w": "uchta",
+        "s": 4.0,
+        "e": 4.28
+      },
+      {
+        "w": "ajoyib",
+        "s": 4.38,
+        "e": 4.74
+      },
+      {
+        "w": "tip",
+        "s": 4.78,
+        "e": 4.96
+      },
+      {
+        "w": "—",
+        "s": 4.96,
+        "e": 4.96
+      },
+      {
+        "w": "boolean,",
+        "s": 5.44,
+        "e": 5.84
+      },
+      {
+        "w": "UUID",
+        "s": 6.28,
+        "e": 6.62
+      },
+      {
+        "w": "va",
+        "s": 6.92,
+        "e": 7.0
+      },
+      {
+        "w": "enum",
+        "s": 7.18,
+        "e": 7.38
+      },
+      {
+        "w": "bilan",
+        "s": 7.42,
+        "e": 7.63
+      },
+      {
+        "w": "tanishamiz.",
+        "s": 7.67,
+        "e": 8.13
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "intro",
+    "text": "Boolean ha yoki yo‘q degan savolga javob beradi. UUID taqsimlangan tizimlarda takrorlanmas identifikator yaratadi. Enum esa oldindan belgilangan maxsus ro‘yxatdir.",
+    "show": "Boolean ha yoki yo‘q degan savolga javob beradi. UUID taqsimlangan tizimlarda takrorlanmas identifikator yaratadi. Enum esa oldindan belgilangan maxsus ro‘yxatdir.",
+    "say": "Boolean ha yoki yo‘q degan savolga javob beradi. UUID taqsimlangan tizimlarda takrorlanmas identifikator yaratadi. Enum esa oldindan belgilangan maxsus ro‘yxatdir.",
+    "a0": 9.01,
+    "a1": 19.27,
+    "words": [
+      {
+        "w": "Boolean",
+        "s": 9.01,
+        "e": 9.37
+      },
+      {
+        "w": "ha",
+        "s": 9.51,
+        "e": 9.63
+      },
+      {
+        "w": "yoki",
+        "s": 9.79,
+        "e": 10.05
+      },
+      {
+        "w": "yo‘q",
+        "s": 10.05,
+        "e": 10.29
+      },
+      {
+        "w": "degan",
+        "s": 10.33,
+        "e": 10.55
+      },
+      {
+        "w": "savolga",
+        "s": 10.59,
+        "e": 10.91
+      },
+      {
+        "w": "javob",
+        "s": 10.95,
+        "e": 11.21
+      },
+      {
+        "w": "beradi.",
+        "s": 11.23,
+        "e": 11.51
+      },
+      {
+        "w": "UUID",
+        "s": 12.17,
+        "e": 12.51
+      },
+      {
+        "w": "taqsimlangan",
+        "s": 12.89,
+        "e": 13.45
+      },
+      {
+        "w": "tizimlarda",
+        "s": 13.49,
+        "e": 14.03
+      },
+      {
+        "w": "takrorlanmas",
+        "s": 14.11,
+        "e": 14.77
+      },
+      {
+        "w": "identifikator",
+        "s": 14.87,
+        "e": 15.51
+      },
+      {
+        "w": "yaratadi.",
+        "s": 15.55,
+        "e": 15.91
+      },
+      {
+        "w": "Enum",
+        "s": 16.57,
+        "e": 16.79
+      },
+      {
+        "w": "esa",
+        "s": 16.83,
+        "e": 16.99
+      },
+      {
+        "w": "oldindan",
+        "s": 17.37,
+        "e": 17.79
+      },
+      {
+        "w": "belgilangan",
+        "s": 17.83,
+        "e": 18.39
+      },
+      {
+        "w": "maxsus",
+        "s": 18.47,
+        "e": 18.79
+      },
+      {
+        "w": "ro‘yxatdir.",
+        "s": 18.85,
+        "e": 19.27
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "boolean",
+    "text": "SQL standartida boolean tipi mavjud bo‘lib, PostgreSQL da atigi bir bayt joy egallaydi.",
+    "show": "SQL standartida boolean tipi mavjud bo‘lib, PostgreSQL da atigi bir bayt joy egallaydi.",
+    "say": "Es-kyu-el standartida boolean tipi mavjud bo‘lib, Postgres da atigi bir bayt joy egallaydi.",
+    "a0": 20.29,
+    "a1": 25.02,
+    "words": [
+      {
+        "w": "Es-kyu-el",
+        "s": 20.29,
+        "e": 20.65
+      },
+      {
+        "w": "standartida",
+        "s": 20.69,
+        "e": 21.25
+      },
+      {
+        "w": "boolean",
+        "s": 21.37,
+        "e": 21.73
+      },
+      {
+        "w": "tipi",
+        "s": 21.75,
+        "e": 21.97
+      },
+      {
+        "w": "mavjud",
+        "s": 22.01,
+        "e": 22.33
+      },
+      {
+        "w": "bo‘lib,",
+        "s": 22.37,
+        "e": 22.58
+      },
+      {
+        "w": "Postgres",
+        "s": 22.88,
+        "e": 23.28
+      },
+      {
+        "w": "da",
+        "s": 23.32,
+        "e": 23.4
+      },
+      {
+        "w": "atigi",
+        "s": 23.5,
+        "e": 23.78
+      },
+      {
+        "w": "bir",
+        "s": 23.92,
+        "e": 24.06
+      },
+      {
+        "w": "bayt",
+        "s": 24.12,
+        "e": 24.32
+      },
+      {
+        "w": "joy",
+        "s": 24.38,
+        "e": 24.54
+      },
+      {
+        "w": "egallaydi.",
+        "s": 24.6,
+        "e": 25.02
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "boolean",
+    "text": "Eng muhim xususiyati: uning uchta holati bor: rost, ya’ni TRUE; yolg‘on, ya’ni FALSE; hamda noma’lum, ya’ni NULL qiymati.",
+    "show": "Eng muhim xususiyati: uning uchta holati bor: rost, ya’ni TRUE; yolg‘on, ya’ni FALSE; hamda noma’lum, ya’ni NULL qiymati.",
+    "say": "Eng muhim xususiyati: uning uchta holati bor: rost, ya’ni TRUE; yolg‘on, ya’ni FALSE; hamda noma’lum, ya’ni NULL qiymati.",
+    "a0": 25.72,
+    "a1": 33.52,
+    "words": [
+      {
+        "w": "Eng",
+        "s": 25.72,
+        "e": 25.86
+      },
+      {
+        "w": "muhim",
+        "s": 25.88,
+        "e": 26.12
+      },
+      {
+        "w": "xususiyati:",
+        "s": 26.16,
+        "e": 26.62
+      },
+      {
+        "w": "uning",
+        "s": 26.92,
+        "e": 27.12
+      },
+      {
+        "w": "uchta",
+        "s": 27.22,
+        "e": 27.44
+      },
+      {
+        "w": "holati",
+        "s": 27.48,
+        "e": 27.82
+      },
+      {
+        "w": "bor:",
+        "s": 27.86,
+        "e": 27.98
+      },
+      {
+        "w": "rost,",
+        "s": 28.52,
+        "e": 28.8
+      },
+      {
+        "w": "ya’ni",
+        "s": 29.0,
+        "e": 29.22
+      },
+      {
+        "w": "TRUE;",
+        "s": 29.22,
+        "e": 29.92
+      },
+      {
+        "w": "yolg‘on,",
+        "s": 29.92,
+        "e": 30.3
+      },
+      {
+        "w": "ya’ni",
+        "s": 30.62,
+        "e": 30.84
+      },
+      {
+        "w": "FALSE;",
+        "s": 30.84,
+        "e": 31.52
+      },
+      {
+        "w": "hamda",
+        "s": 31.52,
+        "e": 31.76
+      },
+      {
+        "w": "noma’lum,",
+        "s": 31.84,
+        "e": 32.34
+      },
+      {
+        "w": "ya’ni",
+        "s": 32.52,
+        "e": 32.76
+      },
+      {
+        "w": "NULL",
+        "s": 32.9,
+        "e": 33.1
+      },
+      {
+        "w": "qiymati.",
+        "s": 33.16,
+        "e": 33.52
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "boolean",
+    "text": "Kiritishda baza yes yoki no, on yoki off, bir yoki nol kabi yozuvlarni qabul qiladi. Ammo standartga muvofiq doimo TRUE va FALSE kalit so‘zlarini yozish tavsiya etiladi.",
+    "show": "Kiritishda baza yes yoki no, on yoki off, bir yoki nol kabi yozuvlarni qabul qiladi. Ammo standartga muvofiq doimo TRUE va FALSE kalit so‘zlarini yozish tavsiya etiladi.",
+    "say": "Kiritishda baza yes yoki no, on yoki off, bir yoki nol kabi yozuvlarni qabul qiladi. Ammo standartga muvofiq doimo TRUE va FALSE kalit so‘zlarini yozish tavsiya etiladi.",
+    "a0": 34.48,
+    "a1": 44.85,
+    "words": [
+      {
+        "w": "Kiritishda",
+        "s": 34.48,
+        "e": 34.9
+      },
+      {
+        "w": "baza",
+        "s": 35.02,
+        "e": 35.32
+      },
+      {
+        "w": "yes",
+        "s": 35.5,
+        "e": 35.76
+      },
+      {
+        "w": "yoki",
+        "s": 35.84,
+        "e": 36.08
+      },
+      {
+        "w": "no,",
+        "s": 36.14,
+        "e": 36.24
+      },
+      {
+        "w": "on",
+        "s": 36.92,
+        "e": 37.06
+      },
+      {
+        "w": "yoki",
+        "s": 37.22,
+        "e": 37.48
+      },
+      {
+        "w": "off,",
+        "s": 37.65,
+        "e": 37.79
+      },
+      {
+        "w": "bir",
+        "s": 38.33,
+        "e": 38.49
+      },
+      {
+        "w": "yoki",
+        "s": 38.61,
+        "e": 38.87
+      },
+      {
+        "w": "nol",
+        "s": 38.97,
+        "e": 39.13
+      },
+      {
+        "w": "kabi",
+        "s": 39.17,
+        "e": 39.37
+      },
+      {
+        "w": "yozuvlarni",
+        "s": 39.41,
+        "e": 39.85
+      },
+      {
+        "w": "qabul",
+        "s": 39.91,
+        "e": 40.13
+      },
+      {
+        "w": "qiladi.",
+        "s": 40.15,
+        "e": 40.41
+      },
+      {
+        "w": "Ammo",
+        "s": 40.95,
+        "e": 41.13
+      },
+      {
+        "w": "standartga",
+        "s": 41.19,
+        "e": 41.63
+      },
+      {
+        "w": "muvofiq",
+        "s": 41.67,
+        "e": 41.97
+      },
+      {
+        "w": "doimo",
+        "s": 42.03,
+        "e": 42.33
+      },
+      {
+        "w": "TRUE",
+        "s": 42.47,
+        "e": 42.71
+      },
+      {
+        "w": "va",
+        "s": 42.73,
+        "e": 42.79
+      },
+      {
+        "w": "FALSE",
+        "s": 42.91,
+        "e": 43.17
+      },
+      {
+        "w": "kalit",
+        "s": 43.21,
+        "e": 43.47
+      },
+      {
+        "w": "so‘zlarini",
+        "s": 43.49,
+        "e": 43.89
+      },
+      {
+        "w": "yozish",
+        "s": 43.93,
+        "e": 44.19
+      },
+      {
+        "w": "tavsiya",
+        "s": 44.21,
+        "e": 44.51
+      },
+      {
+        "w": "etiladi.",
+        "s": 44.55,
+        "e": 44.85
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "uuid",
+    "text": "UUID — yuz yigirma sakkiz bitlik universal identifikator. U butun dunyo bo‘yicha takrorlanmaslik ehtimoli eng yuqori bo‘lgan kalit hisoblanadi.",
+    "show": "UUID — yuz yigirma sakkiz bitlik universal identifikator. U butun dunyo bo‘yicha takrorlanmaslik ehtimoli eng yuqori bo‘lgan kalit hisoblanadi.",
+    "say": "UUID — yuz yigirma sakkiz bitlik universal identifikator. U butun dunyo bo‘yicha takrorlanmaslik ehtimoli eng yuqori bo‘lgan kalit hisoblanadi.",
+    "a0": 45.83,
+    "a1": 53.48,
+    "words": [
+      {
+        "w": "UUID",
+        "s": 45.83,
+        "e": 46.13
+      },
+      {
+        "w": "—",
+        "s": 46.13,
+        "e": 46.13
+      },
+      {
+        "w": "yuz",
+        "s": 46.19,
+        "e": 46.67
+      },
+      {
+        "w": "yigirma",
+        "s": 46.69,
+        "e": 46.95
+      },
+      {
+        "w": "sakkiz",
+        "s": 46.99,
+        "e": 47.29
+      },
+      {
+        "w": "bitlik",
+        "s": 47.33,
+        "e": 47.63
+      },
+      {
+        "w": "universal",
+        "s": 47.69,
+        "e": 48.13
+      },
+      {
+        "w": "identifikator.",
+        "s": 48.19,
+        "e": 48.79
+      },
+      {
+        "w": "U",
+        "s": 49.37,
+        "e": 49.39
+      },
+      {
+        "w": "butun",
+        "s": 49.57,
+        "e": 49.81
+      },
+      {
+        "w": "dunyo",
+        "s": 49.85,
+        "e": 50.07
+      },
+      {
+        "w": "bo‘yicha",
+        "s": 50.15,
+        "e": 50.41
+      },
+      {
+        "w": "takrorlanmaslik",
+        "s": 50.47,
+        "e": 51.23
+      },
+      {
+        "w": "ehtimoli",
+        "s": 51.29,
+        "e": 51.73
+      },
+      {
+        "w": "eng",
+        "s": 51.89,
+        "e": 52.03
+      },
+      {
+        "w": "yuqori",
+        "s": 52.07,
+        "e": 52.39
+      },
+      {
+        "w": "bo‘lgan",
+        "s": 52.43,
+        "e": 52.7
+      },
+      {
+        "w": "kalit",
+        "s": 52.74,
+        "e": 52.98
+      },
+      {
+        "w": "hisoblanadi.",
+        "s": 53.0,
+        "e": 53.48
+      }
+    ]
+  },
+  {
+    "id": "L7",
+    "scene": "uuid",
+    "text": "PostgreSQL da asosan ikkita versiya ishlatiladi: to‘rtinchi versiya butunlay tasodifiy sonlardan, yangi yettinchi versiya esa vaqt bo‘yicha tartiblangan o‘suvchi sonlardan iborat.",
+    "show": "PostgreSQL da asosan ikkita versiya ishlatiladi: to‘rtinchi versiya butunlay tasodifiy sonlardan, yangi yettinchi versiya esa vaqt bo‘yicha tartiblangan o‘suvchi sonlardan iborat.",
+    "say": "Postgres da asosan ikkita versiya ishlatiladi: to‘rtinchi versiya butunlay tasodifiy sonlardan, yangi yettinchi versiya esa vaqt bo‘yicha tartiblangan o‘suvchi sonlardan iborat.",
+    "a0": 54.3,
+    "a1": 62.98,
+    "words": [
+      {
+        "w": "Postgres",
+        "s": 54.3,
+        "e": 54.7
+      },
+      {
+        "w": "da",
+        "s": 54.72,
+        "e": 54.8
+      },
+      {
+        "w": "asosan",
+        "s": 54.86,
+        "e": 55.22
+      },
+      {
+        "w": "ikkita",
+        "s": 55.32,
+        "e": 55.54
+      },
+      {
+        "w": "versiya",
+        "s": 55.58,
+        "e": 55.82
+      },
+      {
+        "w": "ishlatiladi:",
+        "s": 55.88,
+        "e": 56.32
+      },
+      {
+        "w": "to‘rtinchi",
+        "s": 56.88,
+        "e": 57.26
+      },
+      {
+        "w": "versiya",
+        "s": 57.3,
+        "e": 57.6
+      },
+      {
+        "w": "butunlay",
+        "s": 57.7,
+        "e": 58.08
+      },
+      {
+        "w": "tasodifiy",
+        "s": 58.1,
+        "e": 58.56
+      },
+      {
+        "w": "sonlardan,",
+        "s": 58.6,
+        "e": 59.06
+      },
+      {
+        "w": "yangi",
+        "s": 59.44,
+        "e": 59.68
+      },
+      {
+        "w": "yettinchi",
+        "s": 59.74,
+        "e": 60.1
+      },
+      {
+        "w": "versiya",
+        "s": 60.12,
+        "e": 60.4
+      },
+      {
+        "w": "esa",
+        "s": 60.4,
+        "e": 60.56
+      },
+      {
+        "w": "vaqt",
+        "s": 60.68,
+        "e": 60.88
+      },
+      {
+        "w": "bo‘yicha",
+        "s": 60.92,
+        "e": 61.16
+      },
+      {
+        "w": "tartiblangan",
+        "s": 61.18,
+        "e": 61.76
+      },
+      {
+        "w": "o‘suvchi",
+        "s": 61.88,
+        "e": 62.18
+      },
+      {
+        "w": "sonlardan",
+        "s": 62.22,
+        "e": 62.64
+      },
+      {
+        "w": "iborat.",
+        "s": 62.68,
+        "e": 62.98
+      }
+    ]
+  },
+  {
+    "id": "L8",
+    "scene": "uuid",
+    "text": "UUID ni matn sifatida saqlash qirq bayt joy olsa, maxsus uuid tipida saqlash atigi o‘n olti bayt oladi va qidiruvni ancha tezlashtiradi.",
+    "show": "UUID ni matn sifatida saqlash qirq bayt joy olsa, maxsus uuid tipida saqlash atigi o‘n olti bayt oladi va qidiruvni ancha tezlashtiradi.",
+    "say": "UUID ni matn sifatida saqlash qirq bayt joy olsa, maxsus uuid tipida saqlash atigi o‘n olti bayt oladi va qidiruvni ancha tezlashtiradi.",
+    "a0": 63.9,
+    "a1": 70.87,
+    "words": [
+      {
+        "w": "UUID",
+        "s": 63.9,
+        "e": 64.16
+      },
+      {
+        "w": "ni",
+        "s": 64.28,
+        "e": 64.36
+      },
+      {
+        "w": "matn",
+        "s": 64.42,
+        "e": 64.66
+      },
+      {
+        "w": "sifatida",
+        "s": 64.7,
+        "e": 65.04
+      },
+      {
+        "w": "saqlash",
+        "s": 65.08,
+        "e": 65.42
+      },
+      {
+        "w": "qirq",
+        "s": 65.54,
+        "e": 65.72
+      },
+      {
+        "w": "bayt",
+        "s": 65.78,
+        "e": 65.94
+      },
+      {
+        "w": "joy",
+        "s": 65.98,
+        "e": 66.14
+      },
+      {
+        "w": "olsa,",
+        "s": 66.18,
+        "e": 66.4
+      },
+      {
+        "w": "maxsus",
+        "s": 66.58,
+        "e": 66.94
+      },
+      {
+        "w": "uuid",
+        "s": 67.02,
+        "e": 67.36
+      },
+      {
+        "w": "tipida",
+        "s": 67.48,
+        "e": 67.77
+      },
+      {
+        "w": "saqlash",
+        "s": 67.83,
+        "e": 68.13
+      },
+      {
+        "w": "atigi",
+        "s": 68.19,
+        "e": 68.43
+      },
+      {
+        "w": "o‘n",
+        "s": 68.57,
+        "e": 68.67
+      },
+      {
+        "w": "olti",
+        "s": 68.71,
+        "e": 68.89
+      },
+      {
+        "w": "bayt",
+        "s": 68.91,
+        "e": 69.07
+      },
+      {
+        "w": "oladi",
+        "s": 69.15,
+        "e": 69.39
+      },
+      {
+        "w": "va",
+        "s": 69.43,
+        "e": 69.49
+      },
+      {
+        "w": "qidiruvni",
+        "s": 69.57,
+        "e": 69.93
+      },
+      {
+        "w": "ancha",
+        "s": 70.03,
+        "e": 70.27
+      },
+      {
+        "w": "tezlashtiradi.",
+        "s": 70.31,
+        "e": 70.87
+      }
+    ]
+  },
+  {
+    "id": "L9",
+    "scene": "enum",
+    "text": "Enum — cheklangan va o‘zgarmas qiymatlar ro‘yxatidan iborat maxsus ma’lumot turi.",
+    "show": "Enum — cheklangan va o‘zgarmas qiymatlar ro‘yxatidan iborat maxsus ma’lumot turi.",
+    "say": "Enum — cheklangan va o‘zgarmas qiymatlar ro‘yxatidan iborat maxsus ma’lumot turi.",
+    "a0": 71.75,
+    "a1": 75.75,
+    "words": [
+      {
+        "w": "Enum",
+        "s": 71.75,
+        "e": 71.99
+      },
+      {
+        "w": "—",
+        "s": 71.99,
+        "e": 71.99
+      },
+      {
+        "w": "cheklangan",
+        "s": 72.21,
+        "e": 72.75
+      },
+      {
+        "w": "va",
+        "s": 72.81,
+        "e": 72.87
+      },
+      {
+        "w": "o‘zgarmas",
+        "s": 73.01,
+        "e": 73.47
+      },
+      {
+        "w": "qiymatlar",
+        "s": 73.49,
+        "e": 73.89
+      },
+      {
+        "w": "ro‘yxatidan",
+        "s": 73.93,
+        "e": 74.41
+      },
+      {
+        "w": "iborat",
+        "s": 74.45,
+        "e": 74.73
+      },
+      {
+        "w": "maxsus",
+        "s": 74.77,
+        "e": 75.11
+      },
+      {
+        "w": "ma’lumot",
+        "s": 75.17,
+        "e": 75.55
+      },
+      {
+        "w": "turi.",
+        "s": 75.59,
+        "e": 75.75
+      }
+    ]
+  },
+  {
+    "id": "L10",
+    "scene": "enum",
+    "text": "PostgreSQL da enum avval mustaqil tip sifatida yaratiladi. Uning ichidagi qiymatlar alifbo bo‘yicha emas, aynan e’lon qilingan tartib bo‘yicha saralanadi va taqqoslanadi.",
+    "show": "PostgreSQL da enum avval mustaqil tip sifatida yaratiladi. Uning ichidagi qiymatlar alifbo bo‘yicha emas, aynan e’lon qilingan tartib bo‘yicha saralanadi va taqqoslanadi.",
+    "say": "Postgres da enum avval mustaqil tip sifatida yaratiladi. Uning ichidagi qiymatlar alifbo bo‘yicha emas, aynan e’lon qilingan tartib bo‘yicha saralanadi va taqqoslanadi.",
+    "a0": 76.39,
+    "a1": 84.88,
+    "words": [
+      {
+        "w": "Postgres",
+        "s": 76.39,
+        "e": 76.81
+      },
+      {
+        "w": "da",
+        "s": 76.85,
+        "e": 76.93
+      },
+      {
+        "w": "enum",
+        "s": 77.09,
+        "e": 77.31
+      },
+      {
+        "w": "avval",
+        "s": 77.41,
+        "e": 77.65
+      },
+      {
+        "w": "mustaqil",
+        "s": 77.71,
+        "e": 78.09
+      },
+      {
+        "w": "tip",
+        "s": 78.13,
+        "e": 78.27
+      },
+      {
+        "w": "sifatida",
+        "s": 78.31,
+        "e": 78.65
+      },
+      {
+        "w": "yaratiladi.",
+        "s": 78.69,
+        "e": 79.13
+      },
+      {
+        "w": "Uning",
+        "s": 79.79,
+        "e": 79.95
+      },
+      {
+        "w": "ichidagi",
+        "s": 79.97,
+        "e": 80.29
+      },
+      {
+        "w": "qiymatlar",
+        "s": 80.33,
+        "e": 80.75
+      },
+      {
+        "w": "alifbo",
+        "s": 80.85,
+        "e": 81.15
+      },
+      {
+        "w": "bo‘yicha",
+        "s": 81.21,
+        "e": 81.45
+      },
+      {
+        "w": "emas,",
+        "s": 81.49,
+        "e": 81.69
+      },
+      {
+        "w": "aynan",
+        "s": 82.01,
+        "e": 82.29
+      },
+      {
+        "w": "e’lon",
+        "s": 82.41,
+        "e": 82.66
+      },
+      {
+        "w": "qilingan",
+        "s": 82.7,
+        "e": 83.04
+      },
+      {
+        "w": "tartib",
+        "s": 83.08,
+        "e": 83.36
+      },
+      {
+        "w": "bo‘yicha",
+        "s": 83.4,
+        "e": 83.62
+      },
+      {
+        "w": "saralanadi",
+        "s": 83.68,
+        "e": 84.14
+      },
+      {
+        "w": "va",
+        "s": 84.18,
+        "e": 84.24
+      },
+      {
+        "w": "taqqoslanadi.",
+        "s": 84.3,
+        "e": 84.88
+      }
+    ]
+  },
+  {
+    "id": "L11",
+    "scene": "enum",
+    "text": "Har bir enum qiymati diskda atigi to‘rt bayt joy oladi. Ammo unutmang: enum ga yangi qiymat qo‘shish mumkin, biroq kiritilgan qiymatni o‘chirib bo‘lmaydi!",
+    "show": "Har bir enum qiymati diskda atigi to‘rt bayt joy oladi. Ammo unutmang: enum ga yangi qiymat qo‘shish mumkin, biroq kiritilgan qiymatni o‘chirib bo‘lmaydi!",
+    "say": "Har bir enum qiymati diskda atigi to‘rt bayt joy oladi. Ammo unutmang: enum ga yangi qiymat qo‘shish mumkin, biroq kiritilgan qiymatni o‘chirib bo‘lmaydi!",
+    "a0": 85.72,
+    "a1": 93.42,
+    "words": [
+      {
+        "w": "Har",
+        "s": 85.72,
+        "e": 85.88
+      },
+      {
+        "w": "bir",
+        "s": 85.92,
+        "e": 86.02
+      },
+      {
+        "w": "enum",
+        "s": 86.1,
+        "e": 86.3
+      },
+      {
+        "w": "qiymati",
+        "s": 86.34,
+        "e": 86.68
+      },
+      {
+        "w": "diskda",
+        "s": 86.76,
+        "e": 87.06
+      },
+      {
+        "w": "atigi",
+        "s": 87.08,
+        "e": 87.34
+      },
+      {
+        "w": "to‘rt",
+        "s": 87.38,
+        "e": 87.6
+      },
+      {
+        "w": "bayt",
+        "s": 87.62,
+        "e": 87.78
+      },
+      {
+        "w": "joy",
+        "s": 87.8,
+        "e": 87.96
+      },
+      {
+        "w": "oladi.",
+        "s": 88.0,
+        "e": 88.26
+      },
+      {
+        "w": "Ammo",
+        "s": 88.74,
+        "e": 88.9
+      },
+      {
+        "w": "unutmang:",
+        "s": 88.98,
+        "e": 89.34
+      },
+      {
+        "w": "enum",
+        "s": 89.74,
+        "e": 89.92
+      },
+      {
+        "w": "ga",
+        "s": 90.04,
+        "e": 90.08
+      },
+      {
+        "w": "yangi",
+        "s": 90.14,
+        "e": 90.38
+      },
+      {
+        "w": "qiymat",
+        "s": 90.42,
+        "e": 90.68
+      },
+      {
+        "w": "qo‘shish",
+        "s": 90.72,
+        "e": 91.02
+      },
+      {
+        "w": "mumkin,",
+        "s": 91.04,
+        "e": 91.32
+      },
+      {
+        "w": "biroq",
+        "s": 91.56,
+        "e": 91.8
+      },
+      {
+        "w": "kiritilgan",
+        "s": 91.9,
+        "e": 92.36
+      },
+      {
+        "w": "qiymatni",
+        "s": 92.38,
+        "e": 92.72
+      },
+      {
+        "w": "o‘chirib",
+        "s": 92.76,
+        "e": 93.0
+      },
+      {
+        "w": "bo‘lmaydi!",
+        "s": 93.04,
+        "e": 93.42
+      }
+    ]
+  },
+  {
+    "id": "L12",
+    "scene": "xulosa",
+    "text": "Xulosa: mantiqiy holatlarga boolean, global kalitlarga uuid, o‘zgarmas holatlarga esa enum eng to‘g‘ri tanlovdir.",
+    "show": "Xulosa: mantiqiy holatlarga boolean, global kalitlarga uuid, o‘zgarmas holatlarga esa enum eng to‘g‘ri tanlovdir.",
+    "say": "Xulosa: mantiqiy holatlarga boolean, global kalitlarga uuid, o‘zgarmas holatlarga esa enum eng to‘g‘ri tanlovdir.",
+    "a0": 94.24,
+    "a1": 101.91,
+    "words": [
+      {
+        "w": "Xulosa:",
+        "s": 94.24,
+        "e": 94.61
+      },
+      {
+        "w": "mantiqiy",
+        "s": 95.17,
+        "e": 95.59
+      },
+      {
+        "w": "holatlarga",
+        "s": 95.67,
+        "e": 96.21
+      },
+      {
+        "w": "boolean,",
+        "s": 96.37,
+        "e": 96.73
+      },
+      {
+        "w": "global",
+        "s": 97.23,
+        "e": 97.57
+      },
+      {
+        "w": "kalitlarga",
+        "s": 97.61,
+        "e": 98.13
+      },
+      {
+        "w": "uuid,",
+        "s": 98.31,
+        "e": 98.63
+      },
+      {
+        "w": "o‘zgarmas",
+        "s": 99.27,
+        "e": 99.69
+      },
+      {
+        "w": "holatlarga",
+        "s": 99.73,
+        "e": 100.17
+      },
+      {
+        "w": "esa",
+        "s": 100.21,
+        "e": 100.37
+      },
+      {
+        "w": "enum",
+        "s": 100.65,
+        "e": 100.89
+      },
+      {
+        "w": "eng",
+        "s": 101.05,
+        "e": 101.17
+      },
+      {
+        "w": "to‘g‘ri",
+        "s": 101.19,
+        "e": 101.45
+      },
+      {
+        "w": "tanlovdir.",
+        "s": 101.49,
+        "e": 101.91
+      }
+    ]
+  },
+  {
+    "id": "L13",
+    "scene": "xulosa",
+    "text": "Keyingi qismda ushbu turlarni PostgreSQL terminalida jonli buyruqlar yordamida sinab ko‘ramiz.",
+    "show": "Keyingi qismda ushbu turlarni PostgreSQL terminalida jonli buyruqlar yordamida sinab ko‘ramiz.",
+    "say": "Keyingi qismda ushbu turlarni Postgres terminalida jonli buyruqlar yordamida sinab ko‘ramiz.",
+    "a0": 102.73,
+    "a1": 106.94,
+    "words": [
+      {
+        "w": "Keyingi",
+        "s": 102.73,
+        "e": 103.0
+      },
+      {
+        "w": "qismda",
+        "s": 103.04,
+        "e": 103.34
+      },
+      {
+        "w": "ushbu",
+        "s": 103.44,
+        "e": 103.64
+      },
+      {
+        "w": "turlarni",
+        "s": 103.68,
+        "e": 104.1
+      },
+      {
+        "w": "Postgres",
+        "s": 104.18,
+        "e": 104.56
+      },
+      {
+        "w": "terminalida",
+        "s": 104.6,
+        "e": 105.08
+      },
+      {
+        "w": "jonli",
+        "s": 105.16,
+        "e": 105.46
+      },
+      {
+        "w": "buyruqlar",
+        "s": 105.52,
+        "e": 105.92
+      },
+      {
+        "w": "yordamida",
+        "s": 105.96,
+        "e": 106.32
+      },
+      {
+        "w": "sinab",
+        "s": 106.38,
+        "e": 106.58
+      },
+      {
+        "w": "ko‘ramiz.",
+        "s": 106.62,
+        "e": 106.94
+      }
+    ]
+  }
+]
