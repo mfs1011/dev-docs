@@ -1,0 +1,96 @@
+WEBVTT
+
+1
+00:01.420 --> 00:14.560
+Salom! Yettinchi bobning uchinchi qismida MySQL va SQLite tizimlarining matn hamda binar ma’lumotlar
+bilan ishlashdagi o‘ziga xosliklarini, va amaliyotdagi oltita xavfli xatoni ko‘rib chiqamiz.
+
+2
+00:18.010 --> 00:28.770
+MySQL da char va varchar turlari mavjud. Char saqlashda bo‘shliqlar bilan to‘ldirilib,
+o‘qishda oxiridagi bo‘shliqlar olib tashlanadi. Varchar esa oxiridagi probellarni saqlaydi.
+
+3
+00:29.260 --> 00:40.430
+Eng muhim cheklov — MySQL da qatorning umumiy hajmi oltmish besh ming besh yuz o‘ttiz besh baytdan
+oshmasligi kerak. Shu sababli bir nechta yirik varchar ustun yaratilsa, xatolik yuz beradi.
+
+4
+00:41.020 --> 00:53.200
+Katta matnlar uchun MySQL da tayni-tekst, tekst, mediyum-tekst va long-tekst oilasi ishlatiladi.
+Biroq ularga difolt qiymat berib bo‘lmaydi va indeks uchun prefiks uzunligi ko‘rsatilishi shart.
+
+5
+00:53.770 --> 01:03.010
+Bundan tashqari, MySQL dagi sukut bo‘yicha collation katta-kichik harflarni
+farqlamaydi, ya’ni katta harfli Salom kichik harfli salomga teng hisoblanadi.
+
+6
+01:06.280 --> 01:13.310
+SQLite da esa qat’iy turlar yo‘q: qavs ichida yozilgan
+uzunlik, masalan varchar besh butunlay e’tiborsiz qoldiriladi.
+
+7
+01:13.320 --> 01:22.540
+Siz varchar besh ustuniga o‘n sakkiz belgili matn yozsangiz ham, SQLite uni
+xatosiz qabul qiladi. Cheklov faqat umumiy bir milliard baytlik limitga bog‘liq.
+
+8
+01:23.390 --> 01:29.750
+Shuningdek, SQLite matn ichida nol baytlarni saqlashga
+ruxsat beradi, PostgreSQL da esa bu qat’iy taqiqlangan.
+
+9
+01:32.980 --> 01:38.810
+Uchala tizimni taqqoslasak: PostgreSQL da har doim
+qat’iy uzunlik va aniq matn tekshiruvi amal qiladi.
+
+10
+01:39.480 --> 01:45.750
+MySQL da qat’iy rejim yoqilgan bo‘lishi zarur, aks holda
+uzun matnlar xatosiz jimgina kesib qo‘yilishi mumkin.
+
+11
+01:46.470 --> 01:51.160
+SQLite da esa uzunlikni cheklash uchun
+albatta chek cheklovini yozish kerak bo‘ladi.
+
+12
+01:54.570 --> 02:00.060
+Endi matn va binar ma’lumotlar bilan ishlashdagi
+oltita eng ko‘p uchraydigan xatoni tahlil qilamiz.
+
+13
+02:00.750 --> 02:08.630
+Birinchi xato: PostgreSQL da har bir matn ustuniga o‘ylab topilgan varchar
+ikki yuz ellik besh yozish. Bu yerda oddiy tekst ishlatish tavsiya etiladi.
+
+14
+02:08.940 --> 02:18.810
+Ikkinchi xato: MySQL dagi tekst turiga oltmish besh mingta belgi sig‘adi deb
+o‘ylash. Limit baytlarda bo‘lgani uchun, ko‘p baytli belgilar ancha kam sig‘adi.
+
+15
+02:19.270 --> 02:26.720
+Uchinchi xato: MySQL da bir nechta katta varchar ochib,
+umumiy oltmish besh ming baytlik qator chegarasiga urilish.
+
+16
+02:27.050 --> 02:32.720
+To‘rtinchi xato: SQLite dagi varchar ustuni
+matn uzunligini o‘zi tekshiradi deb ishonish.
+
+17
+02:33.290 --> 02:39.470
+Beshinchi xato: MySQL dan PostgreSQL ga o‘tganda
+katta-kichik harf farqini inobatga olmaslik.
+
+18
+02:41.040 --> 02:48.660
+Oltinchi xato: binar fayllarni oddiy matn ustunida saqlashga
+urinish. Bu nol baytlar tufayli xatoliklarga olib keladi.
+
+19
+02:50.590 --> 02:57.630
+Shu bilan matn va binar ma’lumotlar turlarini to‘liq tahlil qilib
+chiqdik. Keyingi bobda sana va vaqt turlari bilan tanishamiz.

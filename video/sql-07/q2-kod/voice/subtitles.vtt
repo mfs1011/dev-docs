@@ -1,0 +1,76 @@
+WEBVTT
+
+1
+00:01.420 --> 00:09.240
+Salom! Ushbu qismda PostgreSQL 18 psql terminalida
+matn va ikkilik turlarni amalda sinab ko‘ramiz.
+
+2
+00:09.490 --> 00:17.240
+char, varcha, cheksiz tekst, uzunlik xatolari, o‘zbekcha
+tutuq belgisi va baytea ni jonli buyruqlarda ko‘ramiz.
+
+3
+00:20.010 --> 00:25.400
+Avval char to‘rt, varcha besh va tekst
+ustunlaridan iborat matnlar jadvalini yaratamiz.
+
+4
+00:25.590 --> 00:33.090
+Endi varcha ustuniga to‘qqiz belgilik juda uzun so‘zini
+yozamiz. Baza darhol qat’iy xato beradi va yozishni to‘xtatadi.
+
+5
+00:33.280 --> 00:40.070
+Biroq ortiqcha qismi faqat probellardan iborat bo‘lgan salom
+so‘zi yozilsa, probellar jimgina kesilib xatosiz saqlanadi.
+
+6
+00:40.240 --> 00:46.320
+Agar qiymatni aniq kast orqali varcha beshga o‘girsak,
+ortiqcha qism xatosiz kesiladi va juda yoziladi.
+
+7
+00:49.150 --> 00:56.900
+Endi qiziq tajriba: char da probellar diskda saqlansada, tenglik
+bilan solishtirganda hisobga olinmaydi va natija rost chiqadi.
+
+8
+00:57.110 --> 01:05.310
+Varchada esa oxiridagi probellar alohida belgi hisoblangani
+sababli, a be va a be probel teng emas, natija yolg‘on bo‘ladi.
+
+9
+01:08.140 --> 01:16.490
+Keyingi sinov — belgi va bayt farqi. O‘zbekcha O‘zbekiston so‘zida
+o‘n bitta belgi bor, lekin oktet lengs o‘n ikki bayt ko‘rsatadi.
+
+10
+01:16.550 --> 01:25.380
+Chunki lotin alifbomizdagi tutuq belgisi UTF-8 da ikki bayt joy oladi. U
+oddiy bitta baytli tirnoqqa o‘xshasa ham, mutlaqo boshqa belgi sanaladi.
+
+11
+01:28.230 --> 01:34.890
+Matn ustuniga kodi nol bo‘lgan belgini kiritishga urinsak,
+baza kutilganidek qat’iy UTF-8 xatosini chiqaradi.
+
+12
+01:35.020 --> 01:42.050
+Xom baytlar uchun baytea jadvalini ochamiz. Unga Salom
+so‘zi yozilsa, diskdagi baytlari heks formatida aks etadi.
+
+13
+01:42.220 --> 01:48.980
+Baytea da nol baytlar ham bemalol saqlanadi. Biroq
+apper kabi matn funksiyalari baytea uchun mavjud emas.
+
+14
+01:51.750 --> 01:58.940
+Ko‘rib turganingizdek: varcha chegarani qat’iy tekshiradi, char
+probellarni yutadi, baytea esa xom baytlar ustida ishlaydi.
+
+15
+01:59.090 --> 02:06.250
+Keyingi 3-qismda MySQL va SQLite dialektlaridagi o‘ziga
+xosliklar hamda 6 ta tipik tuzoqni ko‘rib chiqamiz.

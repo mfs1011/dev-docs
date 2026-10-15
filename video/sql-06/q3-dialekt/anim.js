@@ -103,8 +103,8 @@
       text("Qavslar e'tiborsiz, qiymat REAL bo'lib qoladi!", 430, 405, { size: 19, color: C.ink });
 
       card(180, 460, 700, 70, { fill: '#fff', col: C.green, p: kAff });
-      pill("'3.0e+5' matni", 290, 495, C.green, kAff, 18);
-      text("NUMERIC ustunga tushsa butun 300000 ga aylanadi", 420, 495, { size: 19, color: C.ink });
+      pill("'3.0e+5' matni", 285, 495, C.green, kAff, 18);
+      text("NUMERIC da butun 300000 ga aylanadi", 395, 495, { size: 19, color: C.ink });
 
       card(180, 550, 700, 85, { fill: '#fef2f2', col: C.red, p: kAff });
       pill("To'lib ketish", 270, 590, C.red, kAff, 18);

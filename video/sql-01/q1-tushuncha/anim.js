@@ -75,7 +75,7 @@
         card(cx, 720, 220, 140, { seed: 940 + i });
         text(v, cx + 110, 775, { size: 46, weight: 800, fam: MONO, color: col, align: 'center' });
         text(s, cx + 110, 830, { size: 24, color: C.soft, align: 'center' });
-        if (i < 2) hand('≠', cx + 245, 790, { size: 56, align: 'center', color: C.red, p: P(t, W('L8', i ? 'bosh' : 'nol'), 0.4) });
+        if (i < 2) hand('≠', cx + 245, 790, { size: 56, align: 'center', color: C.red, p: P(t, W('L8', i ? 'bosh' : 'nol'), 0.4), ignoreCardCheck: true });
       });
     });
     // cheklov va tashqi kalit

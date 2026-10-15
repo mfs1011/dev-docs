@@ -124,9 +124,9 @@
       pill("QAT'IY CHEKLOV", 260, 735, C.red, kExplain, 22);
       text("PostgreSQL'da bazalararo to'g'ridan-to'g'ri so'rov yuborish imkoni YO'Q!", 390, 740, { size: 26, weight: 700, color: C.red });
 
-      text("• MySQL kabi baza.jadval orqali boshqa bazani JOIN qilib bo'lmaydi.", 180, 805, { size: 23, color: C.ink });
-      text("• Agar modullar orasida jadvallarni bog'lash kerak bo'lsa, ularni ALOHIDA BAZALARGA emas, bitta bazadagi ALOHIDA SXEMALARGA ajratish shart!", 180, 855, { size: 23, weight: 700, color: C.green });
-      text("• Bazalararo aloqa faqat maxsus postgres_fdw yoki dblink kengaytmalari orqali mumkin.", 180, 905, { size: 20, color: C.soft });
+      text("• MySQL kabi baza.jadval orqali boshqa bazani JOIN qilib bo'lmaydi.", 180, 805, { size: 23, color: C.ink, wrap: 1560 });
+      text("• Agar modullar orasida jadvallarni bog'lash kerak bo'lsa, ularni ALOHIDA BAZALARGA emas, bitta bazadagi ALOHIDA SXEMALARGA ajratish shart!", 180, 855, { size: 22, weight: 700, color: C.green, wrap: 1560 });
+      text("• Bazalararo aloqa faqat maxsus postgres_fdw yoki dblink kengaytmalari orqali mumkin.", 180, 905, { size: 20, color: C.soft, wrap: 1560 });
     });
   }
 

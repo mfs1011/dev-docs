@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/sql/07-1-tushuncha.jpg" src="/video/sql/07-1-tushuncha.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/sql/07-1-tushuncha.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/sql/07-1-tushuncha.uz.vtt">
+</video>
+<figcaption>Video: Matn va binar ma'lumot turlari — CHAR, VARCHAR, TEXT, TOAST xotira arxitekturasi va BYTEA binar turlari.</figcaption>
+</figure>
+
 Satrlar ikki xil bo'ladi:
 
 - **Matnli satr** (*character string*) — belgilar ketma-ketligi: ism, manzil, izoh. Uning baytlari bazaning **kodlashiga** (masalan, UTF-8) mos bo'lishi shart. Solishtirish va tartiblash tilga bog'liq qoidalar bilan bajariladi (11-bob).
@@ -61,6 +69,14 @@ PostgreSQL'da binary tip `bytea` deyiladi. Standartda uning o'rnida `BLOB` (*BIN
 `bytea` sukut bo'yicha **hex** formatida chiqariladi. Har bayt ikki o'n oltilik raqam bilan yoziladi, boshida `\x` turadi: `\x53616c6f6d`.
 
 ## Kod
+
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/sql/07-2-kod.jpg" src="/video/sql/07-2-kod.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/sql/07-2-kod.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/sql/07-2-kod.uz.vtt">
+</video>
+<figcaption>Video: PostgreSQL 18 psql da jonli sinovlar — char padding, char_length va octet_length, Oʻzbekiston UTF-8, NUL taqiqi va bytea amallari.</figcaption>
+</figure>
 
 Misollar PostgreSQL 18.6, MySQL 9.7.2 va SQLite 3.54.0 da ishga tushirilgan.
 
@@ -193,6 +209,14 @@ ERROR:  function upper(bytea) does not exist
 ```
 
 ## Dialektlar
+
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/sql/07-3-dialektlar.jpg" src="/video/sql/07-3-dialektlar.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/sql/07-3-dialektlar.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/sql/07-3-dialektlar.uz.vtt">
+</video>
+<figcaption>Video: Dialektlar taqqoslash doskasi (PostgreSQL vs MySQL vs SQLite), MySQL da 65 535 bayt qator limiti va TEXT oilasi, SQLite Type Affinity va 6 ta tipik xato.</figcaption>
+</figure>
 
 ### MySQL
 

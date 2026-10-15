@@ -72,11 +72,11 @@
       card(940, 230, 840, 720, { fill: C.card, col: C.purple, p: kRules });
       hand("Bitta ulanish — Bitta baza!", 980, 285, { size: 36, color: C.purple, p: kRules });
 
-      card(980, 340, 760, 180, { fill: '#fef2f2', col: C.red, p: kRules });
-      pill("TAQIQLANGAN", 1080, 385, C.red, kRules, 22);
-      text("Bitta ulanish ichidan boshqa bazadagi jadvalni o'qib bo'lmaydi!", 1210, 390, { size: 22, weight: 700, color: C.red });
-      text("SELECT * FROM qollanma.public.talabalar;  -->  ERROR!", 1000, 445, { size: 21, fam: MONO, weight: 700, color: C.ink });
-      text("ERROR: cross-database references are not implemented", 1000, 485, { size: 19, fam: MONO, color: C.red });
+      card(980, 340, 760, 185, { fill: '#fef2f2', col: C.red, p: kRules });
+      pill("TAQIQLANGAN", 1080, 380, C.red, kRules, 22);
+      text("Boshqa bazadagi jadvalni to'g'ridan-to'g'ri o'qib bo'lmaydi!", 1180, 380, { size: 19, weight: 700, color: C.red, wrap: 540 });
+      text("SELECT * FROM qollanma.public.talabalar;  -->  ERROR!", 1000, 440, { size: 20, fam: MONO, weight: 700, color: C.ink });
+      text("ERROR: cross-database references are not implemented", 1000, 480, { size: 18, fam: MONO, color: C.red });
 
       card(980, 545, 760, 365, { fill: '#f0fdf4', col: C.green, p: kRules });
       hand("Qachon Bazalarga, qachon Sxemalarga?", 1010, 590, { size: 28, color: C.green, p: kRules });
@@ -99,12 +99,12 @@
       // template1
       card(180, 390, 760, 160, { fill: '#eff6ff', col: C.blue, p: kCopy });
       hand("template1 (Sukut bo'yicha shablon)", 210, 435, { size: 26, color: C.blue, p: kCopy });
-      text("• Yangi baza yaratilganda shu bazadan nusxa olinadi\n• Unga jadval yoki extension qo'shsangiz, keyingi HAR BIR yangi bazada paydo bo'ladi!\n• Maslahat: template1 ni toza saqlang!", 210, 480, { size: 19, color: C.ink });
+      text("• Yangi baza yaratilganda shu bazadan nusxa olinadi\n• Unga jadval qo'shsangiz, keyingi HAR BIR yangi bazada chiqadi\n• Maslahat: template1 ni toza saqlang!", 210, 480, { size: 19, color: C.ink, wrap: 700 });
 
       // template0
       card(980, 390, 760, 160, { fill: '#f0fdf4', col: C.green, p: kCopy });
       hand("template0 (Mutlaqo toza etalon)", 1010, 435, { size: 26, color: C.green, p: kCopy });
-      text("• PostgreSQL versiyasining toza boshlang'ich holati\n• Unga yangi ulanishlar QAT'IY TAQIQLANGAN (datallowconn = false)\n• Dump tiklashda va boshqa locale bilan yaratishda ishlatiladi", 1010, 480, { size: 19, color: C.ink });
+      text("• PostgreSQL versiyasining toza boshlang'ich holati\n• Yangi ulanishlar QAT'IY TAQIQLANGAN (datallowconn = false)\n• Dump tiklashda va boshqa locale bilan yaratishda ishlatiladi", 1010, 480, { size: 19, color: C.ink, wrap: 700 });
     });
 
     // Nusxalash paytidagi qoida
@@ -230,7 +230,7 @@
     withA(kNext, () => {
       card(140, 710, 1640, 190, { fill: '#eff6ff', col: C.blue, p: kNext });
       hand("Keyingi qismda: Jonli kod va psql terminali", 180, 775, { size: 38, color: C.blue, p: kNext });
-      text("PostgreSQL 18 psql terminalida dokon bazasi, ombor va savdo sxemalari, search_path o'zgarishi va DROP SCHEMA CASCADE ni sinaymiz.", 180, 840, { size: 26, color: C.ink });
+      text("PostgreSQL 18 psql terminalida dokon bazasi, ombor va savdo sxemalari, search_path o'zgarishi va DROP SCHEMA CASCADE ni sinaymiz.", 180, 840, { size: 24, color: C.ink, wrap: 1560 });
       pill("05-2 KOD", 1600, 775, C.blue, kNext, 24);
     });
   }

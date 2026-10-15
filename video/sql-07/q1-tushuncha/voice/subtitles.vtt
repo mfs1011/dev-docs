@@ -1,0 +1,81 @@
+WEBVTT
+
+1
+00:01.420 --> 00:11.580
+Salom! Yettinchi bobda ma’lumotlar bazasidagi eng ko‘p ishlatiladigan
+turlar — matnli va ikkilik, ya’ni binary satrlar bilan tanishamiz.
+
+2
+00:11.990 --> 00:24.830
+Matnli satr bu belgilar ketma-ketligi bo‘lib, bazaning kodlashiga qat’iy bo‘ysunadi. Binary
+satr esa istalgan xom baytlar, masalan rasm yoki shifrlangan fayllar uchun xizmat qiladi.
+
+3
+00:27.760 --> 00:35.770
+SQL standartida ikkita asosiy matn turi bor: o‘zgarmas
+uzunlikdagi char va o‘zgaruvchan uzunlikdagi varcha.
+
+4
+00:36.280 --> 00:48.140
+Ikkalasida ham qavs ichidagi en soni bayt emas, aynan belgilar sonini bildiradi. Agar
+char ustuniga qisqa so‘z yozilsa, qolgan joy probellar bilan to‘ldirilib saqlanadi.
+
+5
+00:48.530 --> 00:57.490
+Varchada esa ortiqcha probel qo‘shilmaydi. Agar satr belgilangan
+uzunlikdan oshsa, baza xato beradi va uni yozishga yo‘l qo‘ymaydi.
+
+6
+01:00.880 --> 01:07.590
+PostgreSQL da standart turlardan tashqari yana bir
+ajoyib tur bor — bu cheksiz uzunlikdagi tekst turidir.
+
+7
+01:08.100 --> 01:16.980
+Ko‘pchilik dasturchilar char yoki varchani tezroq ishlaydi deb o‘ylashadi.
+Biroq PostgreSQL da bu uchala tur o‘rtasida tezlik farqi mutlaqo yo‘q!
+
+8
+01:17.310 --> 01:30.170
+Aksincha, char probellarni to‘ldirish va tozalash uchun qo‘shimcha resurs talab qilib, eng sekin tur
+hisoblanadi. Shuning uchun aniq biznes cheklovi bo‘lmasa, tekst yoki cheksiz varcha ishlatish tavsiya etiladi.
+
+9
+01:33.740 --> 01:41.450
+PostgreSQL matnlarni qanday saqlaydi? Bir yuz yigirma olti baytgacha
+bo‘lgan qisqa satrlarga atigi bir baytlik sarlavha qo‘shiladi.
+
+10
+01:41.980 --> 01:51.640
+Juda katta matnlar paydo bo‘lganda esa TOAST nomli maxsus mexanizm ishga
+tushadi: matn avtomatik siqiladi va alohida fon jadvaliga chiqariladi.
+
+11
+01:51.910 --> 01:59.560
+Shu sababli millionlab belgidan iborat ulkan maqolalar ham oddiy
+ustunlarning o‘qilish tezligiga hech qanday xalal bermaydi.
+
+12
+02:02.790 --> 02:10.650
+Endi ikkilik ma’lumotlarga kelsak: PostgreSQL da ular
+baytea deb ataladi, standartda esa bu tur blob deyiladi.
+
+13
+02:11.320 --> 02:23.140
+Matn ustuniga kodi nol bo‘lgan belgini, ya’ni bayt nolni mutlaqo kiritib bo‘lmaydi
+— baza UTF-8 xatosini beradi. Baytea da esa istalgan bayt xatosiz saqlanadi.
+
+14
+02:23.410 --> 02:33.220
+Baytea ma’lumotlar bilan ishlaganda ular ekranda o‘n oltilik, ya’ni heks ko‘rinishida
+aks etadi va harflarni katta-kichik qilish funksiyalari ularga ta’sir qilmaydi.
+
+15
+02:36.270 --> 02:44.490
+Xulosa qilib aytganda: qisqa va uzun matnlarga bemalol tekst
+yoki varcha, xom fayllar va baytlarga esa baytea ishlatiladi.
+
+16
+02:44.760 --> 02:50.230
+Keyingi qismda ushbu qoidalarni PostgreSQL
+terminalida jonli buyruqlar orqali sinab ko‘ramiz.

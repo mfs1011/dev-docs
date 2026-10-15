@@ -22,6 +22,7 @@
   const eback = (k) => { const c1 = 1.7, c3 = c1 + 1; return k <= 0 ? 0 : 1 + c3 * Math.pow(k - 1, 3) + c1 * Math.pow(k - 1, 2); };
   const rnd = (i) => { const x = Math.sin(i * 12.9898 + 78.233) * 43758.5453; return x - Math.floor(x); };
   const font = (s, w = 500, f = UI) => `${w} ${s}px ${f}`;
+  const activeCards = [];
   function withA(a, fn) { if (a <= 0.002) return; ctx.save(); ctx.globalAlpha *= Math.min(1, a); fn(); ctx.restore(); }
   function tw(s, size, weight = 500, fam = UI) { ctx.font = font(size, weight, fam); return ctx.measureText(s).width; }
   function text(s, x, y, o = {}) {
@@ -78,6 +79,25 @@
         if (screenLeft < 5 || screenRight > 1915 || (maxW && w > maxW + 5)) {
           window.OVERFLOWS.push({ text: line, screenLeft, screenRight, maxW, w });
         }
+        if (!o.ignoreCardCheck) {
+          for (let ci = activeCards.length - 1; ci >= 0; ci--) {
+            const c = activeCards[ci];
+            if (left >= c.x - 5 && left <= c.right - 20 && y >= c.y - 10 && y <= c.bottom + 10) {
+              if (right > c.right - 8) {
+                window.OVERFLOWS.push({
+                  type: 'card_overflow_right',
+                  text: line,
+                  x,
+                  right: Math.round(right),
+                  cardRight: Math.round(c.right),
+                  excess: Math.round(right - (c.right - 8)),
+                  t: window.CURRENT_T
+                });
+              }
+              break;
+            }
+          }
+        }
       });
     }
 
@@ -105,7 +125,7 @@
     const x0 = o.align === 'center' ? x - w / 2 : o.align === 'right' ? x - w : x;
     ctx.save();
     ctx.beginPath(); ctx.rect(x0 - 10, y - size, (w + 20) * eio(p), size * 2); ctx.clip();
-    text(s, x0, y, { size, weight: o.weight || 700, fam: HAND, color: o.color || C.ink });
+    text(s, x0, y, { size, weight: o.weight || 700, fam: HAND, color: o.color || C.ink, ignoreCardCheck: o.ignoreCardCheck });
     ctx.restore();
   }
 
@@ -165,6 +185,9 @@
     ctx.fill(); ctx.restore();
   }
   function card(x, y, w, h, o = {}) {
+    if ((o.a == null || o.a > 0.05) && (o.p == null || o.p > 0.05)) {
+      activeCards.push({ x, y, w, h, right: x + w, bottom: y + h });
+    }
     withA(o.a == null ? 1 : o.a, () => {
       ctx.save();
       ctx.shadowColor = 'rgba(60, 50, 30, 0.16)'; ctx.shadowBlur = 24; ctx.shadowOffsetY = 8;
@@ -348,6 +371,7 @@
   // ---------- fon ----------
   const DOTS = Array.from({ length: 900 }, (_, i) => [rnd(i) * W0, rnd(i + 999) * H0, rnd(i + 77) * 0.06]);
   function bg() {
+    activeCards.length = 0;
     ctx.fillStyle = C.paper; ctx.fillRect(0, 0, W0, H0);
     ctx.lineWidth = 1;
     for (let x = 40, k = 0; x < W0; x += 40, k++) { ctx.strokeStyle = k % 5 === 4 ? C.grid5 : C.grid; ctx.beginPath(); ctx.moveTo(x + 0.5, 0); ctx.lineTo(x + 0.5, H0); ctx.stroke(); }

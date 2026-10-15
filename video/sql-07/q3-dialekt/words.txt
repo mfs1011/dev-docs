@@ -1,0 +1,19 @@
+L1: Salom! Yettinchi bobning uchinchi qismida May es-kyu-el va Es-kyu-layt tizimlarining matn hamda binar ma’lumotlar bilan ishlashdagi o‘ziga xosliklarini, va amaliyotdagi oltita xavfli xatoni ko‘rib chiqamiz.
+L2: May es-kyu-el da char va varchar turlari mavjud. Char saqlashda bo‘shliqlar bilan to‘ldirilib, o‘qishda oxiridagi bo‘shliqlar olib tashlanadi. Varchar esa oxiridagi probellarni saqlaydi.
+L3: Eng muhim cheklov — May es-kyu-el da qatorning umumiy hajmi oltmish besh ming besh yuz o‘ttiz besh baytdan oshmasligi kerak. Shu sababli bir nechta yirik varchar ustun yaratilsa, xatolik yuz beradi.
+L4: Katta matnlar uchun May es-kyu-el da tayni-tekst, tekst, mediyum-tekst va long-tekst oilasi ishlatiladi. Biroq ularga difolt qiymat berib bo‘lmaydi va indeks uchun prefiks uzunligi ko‘rsatilishi shart.
+L5: Bundan tashqari, May es-kyu-el dagi sukut bo‘yicha kollation katta-kichik harflarni farqlamaydi, ya’ni katta harfli Salom kichik harfli salomga teng hisoblanadi.
+L6: Es-kyu-layt da esa qat’iy turlar yo‘q: qavs ichida yozilgan uzunlik, masalan varchar besh butunlay e’tiborsiz qoldiriladi.
+L7: Siz varchar besh ustuniga o‘n sakkiz belgili matn yozsangiz ham, Es-kyu-layt uni xatosiz qabul qiladi. Cheklov faqat umumiy bir milliard baytlik limitga bog‘liq.
+L8: Shuningdek, Es-kyu-layt matn ichida nol baytlarni saqlashga ruxsat beradi, Postgres da esa bu qat’iy taqiqlangan.
+L9: Uchala tizimni taqqoslasak: Postgres da har doim qat’iy uzunlik va aniq matn tekshiruvi amal qiladi.
+L10: May es-kyu-el da qat’iy rejim yoqilgan bo‘lishi zarur, aks holda uzun matnlar xatosiz jimgina kesib qo‘yilishi mumkin.
+L11: Es-kyu-layt da esa uzunlikni cheklash uchun albatta chek cheklovini yozish kerak bo‘ladi.
+L12: Endi matn va binar ma’lumotlar bilan ishlashdagi oltita eng ko‘p uchraydigan xatoni tahlil qilamiz.
+L13: Birinchi xato: Postgres da har bir matn ustuniga o‘ylab topilgan varchar ikki yuz ellik besh yozish. Bu yerda oddiy tekst ishlatish tavsiya etiladi.
+L14: Ikkinchi xato: May es-kyu-el dagi tekst turiga oltmish besh mingta belgi sig‘adi deb o‘ylash. Limit baytlarda bo‘lgani uchun, ko‘p baytli belgilar ancha kam sig‘adi.
+L15: Uchinchi xato: May es-kyu-el da bir nechta katta varchar ochib, umumiy oltmish besh ming baytlik qator chegarasiga urilish.
+L16: To‘rtinchi xato: Es-kyu-layt dagi varchar ustuni matn uzunligini o‘zi tekshiradi deb ishonish.
+L17: Beshinchi xato: May es-kyu-el dan Postgres ga o‘tganda katta-kichik harf farqini inobatga olmaslik.
+L18: Oltinchi xato: binar fayllarni oddiy matn ustunida saqlashga urinish. Bu nol baytlar tufayli xatoliklarga olib keladi.
+L19: Shu bilan matn va binar ma’lumotlar turlarini to‘liq tahlil qilib chiqdik. Keyingi bobda sana va vaqt turlari bilan tanishamiz.
