@@ -1,0 +1,86 @@
+WEBVTT
+
+1
+00:01.420 --> 00:09.740
+Salom! Sakkizinchi bobda ma’lumotlar bazasidagi eng muhim va
+nozik mavzulardan biri — sana va vaqt bilan ishlashni o‘rganamiz.
+
+2
+00:10.230 --> 00:22.080
+Sana va vaqtni saqlashda asosiy savol shuki: soat to‘qqiz nol nol deganda qaysi joy nazarda
+tutilgan? Toshkentdagi to‘qqiz va Londondagi to‘qqiz — vaqtning butunlay ikki xil lahzasidir.
+
+3
+00:23.410 --> 00:33.410
+Shuning uchun vaqt ikki xil bo‘ladi: birinchisi kalendar va devor soatidagi mahalliy
+vaqt, ikkinchisi esa butun yer yuzida yagona bo‘lgan aniq lahza, ya’ni instant.
+
+4
+00:34.000 --> 00:42.580
+Barcha mintaqalar xalqaro u-te-se vaqtidan farq bilan o‘lchanadi: masalan
+Toshkent u-te-se plyus besh, Moskva esa u-te-se plyus uch hisoblanadi.
+
+5
+00:44.230 --> 00:54.380
+PostgreSQL da sana va vaqt uchun oltita asosiy tur mavjud: to‘rt baytli date,
+sakkiz baytli time, timestamp va timestamptz, hamda o‘n olti baytli interval.
+
+6
+00:55.930 --> 01:05.210
+Date faqat kalendar sanasini, time esa kun vaqtini saqlaydi. Standart bo‘yicha
+shunchaki timestamp deb yozilsa, bu mintaqasiz oddiy vaqtni anglatadi.
+
+7
+01:05.260 --> 01:13.760
+Shuningdek time with time zone turi ham bor, biroq rasmiy hujjat uni tavsiya
+qilmaydi. Chunki sanasiz yozgi vaqt o‘zgarishlarini to‘g‘ri aniqlab bo‘lmaydi.
+
+8
+01:15.950 --> 01:21.420
+Eng muhim sir: timestamptz turi nomiga
+qaramay mintaqani o‘zida aslo saqlamaydi!
+
+9
+01:22.730 --> 01:30.590
+Qiymat yozilayotganda baza uni darhol u-te-se ga aylantiradi va faqat
+u-te-se lahzasini saqlaydi, qaysi zonadan kelgani esa eslab qolinmaydi.
+
+10
+01:30.980 --> 01:40.010
+O‘qiyotganda esa baza ushbu lahzani sizning joriy TimeZone sozlamangizga moslab
+ko‘rsatadi. Oddiy timestamp esa mintaqa ko‘rsatkichlarini shunchaki tashlab yuboradi.
+
+11
+01:42.260 --> 01:50.980
+Vaqt mintaqalari faqat geografiya emas, davlatlarning siyosiy qarorlari
+bilan o‘zgarib turadi. PostgreSQL ularni IANA xalqaro bazasidan oladi.
+
+12
+01:51.950 --> 02:00.800
+Mintaqani to‘liq nom bilan, masalan Asia qiya chiziq Tashkent deb yozish eng
+to‘g‘ri yo‘ldir. Shunda yozgi va qishki vaqt qoidalari to‘liq hisobga olinadi.
+
+13
+02:02.830 --> 02:09.910
+Interval turi vaqt oraliqlarini saqlaydi. Uning ichida
+uchta mustaqil maydon bor: oylar, kunlar va mikrosekundlar.
+
+14
+02:09.860 --> 02:18.680
+Ular alohida saqlanadi, chunki har oyda kunlar soni har xil, yozgi vaqtga
+o‘tish kunida esa bir sutka yigirma uch yoki yigirma besh soat bo‘lishi mumkin.
+
+15
+02:19.730 --> 02:24.820
+Shu bois bir kun qo‘shish va yigirma to‘rt
+soat qo‘shish ba’zan turli xil natija beradi.
+
+16
+02:26.810 --> 02:35.330
+Xulosa qilib aytganda: aniq voqealar uchun timestamptz, oraliqlar
+uchun interval va kiritishda doimo ay-es-o formatidan foydalaning.
+
+17
+02:36.160 --> 02:41.150
+Keyingi qismda ushbu qoidalarni PostgreSQL
+terminalida jonli buyruqlar orqali sinab ko‘ramiz.

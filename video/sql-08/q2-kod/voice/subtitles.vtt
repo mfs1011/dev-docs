@@ -1,0 +1,86 @@
+WEBVTT
+
+1
+00:01.420 --> 00:08.570
+Ushbu qismda PostgreSQL o‘n sakkiz nuqta olti terminalida sana
+va vaqt bilan ishlashni jonli buyruqlar orqali sinab ko‘ramiz.
+
+2
+00:09.130 --> 00:17.320
+Avvalo p-es-kyu-el da SHOW TimeZone buyrug‘ini bajaramiz. Baza bizning
+seansimiz uchun Asia qiya chiziq Tashkent mintaqasini ko‘rsatmoqda.
+
+3
+00:20.090 --> 00:27.290
+Endi bitta oddiy timestamp va bitta timestamptz ustunli
+voqealar jadvalini yaratamiz va unga ikkita qator kiritamiz.
+
+4
+00:27.780 --> 00:40.670
+Ikkinchi qatordagi qo‘ng‘iroq voqeasiga plyus uch Moskva vaqti bilan kiritdik. Natijaga qarang: timestamp
+mintaqani shunchaki tashlab yubordi, timestamptz esa uni Toshkent vaqtiga o‘girib o‘n bir nol nol qilib ko‘rsatdi.
+
+5
+00:43.910 --> 00:50.840
+Endi seansimizning mintaqasini u-te-se ga o‘zgartirib
+jadvalni qaytadan o‘qiymiz: SET TimeZone teng UTC.
+
+6
+00:51.170 --> 01:00.630
+Ko‘rib turganingizdek, timestamptz qiymatlari u-te-se ga mos ravishda to‘rt nol
+nol va olti nol nolga o‘zgardi, oddiy timestamp esa devor soatidek qotib turibdi.
+
+7
+01:03.860 --> 01:08.410
+Endi AT TIME ZONE operatorini sinaymiz. Bu
+operator ikki xil yo‘nalishda ishlaydi.
+
+8
+01:08.340 --> 01:17.700
+Timestamptz ga nisbatan qo‘llaganda lahzaning Moskvadagi soatini, oddiy timestamp ga
+nisbatan esa Moskvadagi mahalliy soat Toshkentda necha bo‘lishini hisoblab beradi.
+
+9
+01:20.550 --> 01:26.840
+Keyingi muhim mavzu — interval arifmetikasi. O‘ttiz
+birinchi yanvarga bir oy qo‘shsak nima bo‘ladi?
+
+10
+01:27.010 --> 01:32.980
+Fevralda o‘ttiz birinchi kun yo‘q, shuning uchun baza oyning
+eng oxirgi kuni — yigirma sakkizinchi fevralni beradi.
+
+11
+01:33.110 --> 01:41.630
+Shuningdek, yuz hafta intervali yetti yuz kunga aylanadi, lekin oylarga
+o‘girilmaydi. Ikki timestamp ayirmasi esa chiroyli interval hosil qiladi.
+
+12
+01:44.740 --> 01:53.080
+Endi eng qiziqarli sinov: Nyu-York mintaqasida yigirma oltinchi yil sakkizinchi
+martda yozgi vaqtga o‘tiladi va bir sutka yigirma uch soat bo‘lib qoladi.
+
+13
+01:53.190 --> 02:02.640
+Natijada interval bir kun qo‘shish ertangi kunduzgi o‘n ikkiga olib borsa, interval
+yigirma to‘rt soat qo‘shish aniq yigirma to‘rt soat o‘tib soat o‘n uch nol nolni beradi!
+
+14
+02:05.430 --> 02:13.030
+Kiritish formatlariga e’tibor bering: sukut bo‘yicha oy-kun
+tartibi ishlaydi, shuning uchun o‘n uch nolinchi bir xato beradi.
+
+15
+02:13.240 --> 02:23.240
+DateStyle ni de-em-i ga o‘zgartirsak to‘g‘ri o‘qiydi. Lekin mavjud bo‘lmagan
+yigirma oltinchi yil o‘ttizinchi fevral kabi sanalarga baza mutlaqo yo‘l qo‘ymaydi.
+
+16
+02:26.130 --> 02:34.400
+Xulosa: p-es-kyu-el da doimo TimeZone sozlamasini yodda tuting va
+kutilmagan xatolarning oldini olish uchun ISO formatida yozing.
+
+17
+02:34.510 --> 02:41.290
+Keyingi qismda MySQL va SQLite dagi o‘ziga xos
+farqlar va eng xavfli oltita tuzoqni tahlil qilamiz.

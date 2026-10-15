@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/sql/08-1-tushuncha.jpg" src="/video/sql/08-1-tushuncha.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/sql/08-1-tushuncha.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/sql/08-1-tushuncha.uz.vtt">
+</video>
+<figcaption>Video: Sana va vaqt — Mahalliy vaqt (Local Time) va Lahza (Instant), timestamptz UTC saqlanishi, IANA mintaqalari va interval arxitekturasi.</figcaption>
+</figure>
+
 Sana va vaqtni saqlash oddiy ko'rinadi, lekin bir savol hamma narsani o'zgartiradi: **"Soat 09:00" — qaysi joyda?** Toshkentdagi 09:00 va Moskvadagi 09:00 — vaqtning ikki xil **lahzasi**.
 
 Shuning uchun vaqt qiymatlari ikki xil bo'ladi:
@@ -74,6 +82,14 @@ Natijada yozgi vaqtga o'tish kunida `interval '1 day'` va `interval '24 hours'` 
 PostgreSQL deyarli har qanday mantiqli formatni qabul qiladi. Lekin `01/02/03` kabi yozuv `DateStyle` sozlamasiga qarab 2-yanvar, 1-fevral yoki boshqa sana bo'lishi mumkin. Hujjat **ISO 8601** formatini (`2026-10-12`) tavsiya qiladi. U har qanday rejimda bir xil tushuniladi.
 
 ## Kod
+
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/sql/08-2-kod.jpg" src="/video/sql/08-2-kod.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/sql/08-2-kod.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/sql/08-2-kod.uz.vtt">
+</video>
+<figcaption>Video: PostgreSQL 18 psql da jonli sinovlar — TimeZone sozlamasi, timestamptz va timestamp farqi, AT TIME ZONE, interval arifmetikasi va Nyu-York yozgi vaqti.</figcaption>
+</figure>
 
 Misollar PostgreSQL 18.6, MySQL 9.7.2 va SQLite 3.54.0 da ishga tushirilgan. PostgreSQL seansining mintaqasi — `Asia/Tashkent` (UTC+5).
 
@@ -266,6 +282,14 @@ SELECT 'infinity'::timestamptz > now() AS cheksiz;
 ```
 
 ## Dialektlar
+
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/sql/08-3-dialektlar.jpg" src="/video/sql/08-3-dialektlar.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/sql/08-3-dialektlar.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/sql/08-3-dialektlar.uz.vtt">
+</video>
+<figcaption>Video: Dialektlar taqqoslash doskasi (PostgreSQL vs MySQL vs SQLite), MySQL DATETIME va 2038 yili chegarasi, SQLite 3 saqlash klassi va 6 ta xavfli tuzoq.</figcaption>
+</figure>
 
 ### MySQL
 
