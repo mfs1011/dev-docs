@@ -1,0 +1,16 @@
+WEBVTT
+
+00:00.000 --> 00:08.612
+Dialektlar: MySQL va SQLite
+
+00:08.612 --> 00:26.216
+MySQL: ONLY_FULL_GROUP_BY va GROUP_CONCAT
+
+00:26.216 --> 00:41.436
+MySQL da FILTER va ROLLUP farqi
+
+00:41.436 --> 00:58.179
+SQLite: Yalang'och ustunlar va TOTAL
+
+00:58.179 --> 01:10.080
+Xulosa va qiyosiy xulosa

@@ -1,0 +1,49 @@
+WEBVTT
+
+1
+00:01.420 --> 00:06.090
+Agregat funksiyalar ko'plab qatorlar qiymatini
+bitta yakuniy qiymatga qisqartiradi.
+
+2
+00:06.280 --> 00:11.200
+COUNT, SUM, AVG, MIN va MAX eng asosiy agregatlardir.
+
+3
+00:14.030 --> 00:20.240
+COUNT yulduzcha barcha qatorlarni sanaydi, qolgan barcha
+agregatlar esa NULL qiymatlarni tashlab yuboradi.
+
+4
+00:20.630 --> 00:27.670
+Qatorlar topilmasa, COUNT nol qaytaradi, SUM va boshqa
+funksiyalar esa nol emas, aynan NULL qaytaradi.
+
+5
+00:31.180 --> 00:36.970
+GROUP BY bir xil qiymatli qatorlarni guruhlaydi va
+agregatlar har bir guruh uchun alohida hisoblanadi.
+
+6
+00:37.060 --> 00:41.470
+Guruhlangan natijani filtrlash uchun
+WHERE emas, balki HAVING ishlatiladi.
+
+7
+00:44.860 --> 00:49.340
+Guruhlashda qatnashmagan ustunlarni SELECT
+da to'g'ridan-to'g'ri ko'rsatib bo'lmaydi.
+
+8
+00:49.250 --> 00:55.240
+Faqat guruhlangan ustun birlamchi kalit bo'lsa,
+unga funksional bog'liq ustunlarga ruxsat beriladi.
+
+9
+00:58.490 --> 01:04.590
+Shuningdek, FILTER sharti, agregat ichidagi ORDER
+BY va ROLLUP kabi ko'p darajali jamilar mavjud.
+
+10
+01:04.720 --> 01:08.390
+Endi bu qoidalarni PostgreSQL 18 da amalda tekshiramiz.
