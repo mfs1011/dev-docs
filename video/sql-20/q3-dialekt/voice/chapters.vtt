@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:13.659
+MySQL va SQLite da UPSERT farqlari
+
+00:13.659 --> 00:28.517
+MySQL: ON DUPLICATE KEY UPDATE
+
+00:28.517 --> 00:41.573
+MySQL tuzoqlari: REPLACE va AUTO_INCREMENT
+
+00:41.573 --> 00:53.209
+SQLite: ON CONFLICT va bir nechta maqsad
+
+00:53.209 --> 01:06.088
+DML xatolari: REPLACE va WHERE true zarurati
+
+01:06.088 --> 01:19.700
+Xulosa

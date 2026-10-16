@@ -1,0 +1,31 @@
+WEBVTT
+
+1
+00:01.420 --> 00:12.100
+UPSERT buyrug‘i har bir ma’lumotlar bazasida turlicha amalga oshirilgan:
+MySQL o‘z sintaksisiga ega, SQLite esa PostgreSQL andozasiga amal qiladi.
+
+2
+00:14.730 --> 00:26.770
+MySQL da MERGE yo‘q, uning o‘rniga INSERT ON DUPLICATE KEY UPDATE ishlatiladi. Yangi
+qiymatlarga VALUES qavsi o‘rnida yangi AS new taxallusi orqali murojaat qilinadi.
+
+3
+00:29.560 --> 00:39.750
+MySQL dagi REPLACE buyrug‘i mavjud qatorni o‘chirib qayta yozadi. Bu esa
+avtomatik ID ni o‘zgartiradi va tashqi kalit bog‘lanishlarini buzib yuboradi.
+
+4
+00:42.700 --> 00:51.400
+SQLite da esa PostgreSQL kabi ON CONFLICT ishlaydi, qo‘shimcha ravishda
+bir nechta konflikt maqsadlarini ketma-ket tekshirish imkoniyati ham bor.
+
+5
+00:54.290 --> 01:04.320
+REPLACE ni oddiy yangilash deb o‘ylash yoki SQLite da INSERT SELECT ortidan
+WHERE true qo‘ymaslik ko‘p uchraydigan sintaktik va mantiqiy xatolardir.
+
+6
+01:07.160 --> 01:15.950
+Har bir tizimning konfliktlarni hal qilish va ID hisoblagichlarini boshqarish
+qoidalarini bilish barqaror ma’lumotlar bazasini yaratishning kalitidir.

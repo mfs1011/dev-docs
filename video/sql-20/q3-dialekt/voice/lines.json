@@ -4,41 +4,680 @@
     "scene": "intro",
     "text": "UPSERT buyrug‘i har bir ma’lumotlar bazasida turlicha amalga oshirilgan: MySQL o‘z sintaksisiga ega, SQLite esa PostgreSQL andozasiga amal qiladi.",
     "show": "UPSERT buyrug‘i har bir ma’lumotlar bazasida turlicha amalga oshirilgan: MySQL o‘z sintaksisiga ega, SQLite esa PostgreSQL andozasiga amal qiladi.",
-    "say": "Apsert buyrug‘i har bir ma’lumotlar bazasida turlicha amalga oshirilgan: May es-kyu-el o‘z sintaksisiga ega, Es-kyu-layt esa Postgres andozasiga amal qiladi."
+    "say": "Apsert buyrug‘i har bir ma’lumotlar bazasida turlicha amalga oshirilgan: May es-kyu-el o‘z sintaksisiga ega, Es-kyu-layt esa Postgres andozasiga amal qiladi.",
+    "a0": 0.24,
+    "a1": 10.47,
+    "words": [
+      {
+        "w": "Apsert",
+        "s": 0.24,
+        "e": 0.6
+      },
+      {
+        "w": "buyrug‘i",
+        "s": 0.64,
+        "e": 1.0
+      },
+      {
+        "w": "har",
+        "s": 1.18,
+        "e": 1.42
+      },
+      {
+        "w": "bir",
+        "s": 1.56,
+        "e": 1.68
+      },
+      {
+        "w": "ma’lumotlar",
+        "s": 1.76,
+        "e": 2.32
+      },
+      {
+        "w": "bazasida",
+        "s": 2.4,
+        "e": 2.92
+      },
+      {
+        "w": "turlicha",
+        "s": 3.06,
+        "e": 3.52
+      },
+      {
+        "w": "amalga",
+        "s": 3.54,
+        "e": 3.78
+      },
+      {
+        "w": "oshirilgan:",
+        "s": 3.84,
+        "e": 4.28
+      },
+      {
+        "w": "May",
+        "s": 4.84,
+        "e": 5.0
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 5.08,
+        "e": 5.5
+      },
+      {
+        "w": "o‘z",
+        "s": 5.92,
+        "e": 6.06
+      },
+      {
+        "w": "sintaksisiga",
+        "s": 6.12,
+        "e": 6.8
+      },
+      {
+        "w": "ega,",
+        "s": 6.9,
+        "e": 7.1
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 7.69,
+        "e": 8.23
+      },
+      {
+        "w": "esa",
+        "s": 8.27,
+        "e": 8.43
+      },
+      {
+        "w": "Postgres",
+        "s": 8.81,
+        "e": 9.31
+      },
+      {
+        "w": "andozasiga",
+        "s": 9.39,
+        "e": 9.93
+      },
+      {
+        "w": "amal",
+        "s": 9.97,
+        "e": 10.17
+      },
+      {
+        "w": "qiladi.",
+        "s": 10.21,
+        "e": 10.47
+      }
+    ]
   },
   {
     "id": "L2",
     "scene": "mysql_duplicate_key",
     "text": "MySQL da MERGE yo‘q, uning o‘rniga INSERT ON DUPLICATE KEY UPDATE ishlatiladi. Yangi qiymatlarga VALUES qavsi o‘rnida yangi AS new taxallusi orqali murojaat qilinadi.",
     "show": "MySQL da MERGE yo‘q, uning o‘rniga INSERT ON DUPLICATE KEY UPDATE ishlatiladi. Yangi qiymatlarga VALUES qavsi o‘rnida yangi AS new taxallusi orqali murojaat qilinadi.",
-    "say": "May es-kyu-el da myorj yo‘q, uning o‘rniga insert on dyuplikate key apdeyt ishlatiladi. Yangi qiymatlarga velyus qavsi o‘rnida yangi ez nyu taxallusi orqali murojaat qilinadi."
+    "say": "May es-kyu-el da myorj yo‘q, uning o‘rniga insert on dyuplikate key apdeyt ishlatiladi. Yangi qiymatlarga velyus qavsi o‘rnida yangi ez nyu taxallusi orqali murojaat qilinadi.",
+    "a0": 11.15,
+    "a1": 22.74,
+    "words": [
+      {
+        "w": "May",
+        "s": 11.15,
+        "e": 11.29
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 11.37,
+        "e": 11.71
+      },
+      {
+        "w": "da",
+        "s": 11.75,
+        "e": 11.83
+      },
+      {
+        "w": "myorj",
+        "s": 12.23,
+        "e": 12.53
+      },
+      {
+        "w": "yo‘q,",
+        "s": 12.65,
+        "e": 12.87
+      },
+      {
+        "w": "uning",
+        "s": 13.17,
+        "e": 13.39
+      },
+      {
+        "w": "o‘rniga",
+        "s": 13.49,
+        "e": 13.83
+      },
+      {
+        "w": "insert",
+        "s": 14.21,
+        "e": 14.65
+      },
+      {
+        "w": "on",
+        "s": 14.77,
+        "e": 14.91
+      },
+      {
+        "w": "dyuplikate",
+        "s": 14.99,
+        "e": 15.59
+      },
+      {
+        "w": "key",
+        "s": 15.65,
+        "e": 15.85
+      },
+      {
+        "w": "apdeyt",
+        "s": 15.99,
+        "e": 16.37
+      },
+      {
+        "w": "ishlatiladi.",
+        "s": 16.41,
+        "e": 16.93
+      },
+      {
+        "w": "Yangi",
+        "s": 17.45,
+        "e": 17.69
+      },
+      {
+        "w": "qiymatlarga",
+        "s": 17.73,
+        "e": 18.25
+      },
+      {
+        "w": "velyus",
+        "s": 18.65,
+        "e": 19.11
+      },
+      {
+        "w": "qavsi",
+        "s": 19.19,
+        "e": 19.51
+      },
+      {
+        "w": "o‘rnida",
+        "s": 19.55,
+        "e": 19.89
+      },
+      {
+        "w": "yangi",
+        "s": 20.13,
+        "e": 20.45
+      },
+      {
+        "w": "ez",
+        "s": 20.65,
+        "e": 20.79
+      },
+      {
+        "w": "nyu",
+        "s": 20.85,
+        "e": 21.05
+      },
+      {
+        "w": "taxallusi",
+        "s": 21.15,
+        "e": 21.61
+      },
+      {
+        "w": "orqali",
+        "s": 21.65,
+        "e": 21.95
+      },
+      {
+        "w": "murojaat",
+        "s": 21.99,
+        "e": 22.35
+      },
+      {
+        "w": "qilinadi.",
+        "s": 22.39,
+        "e": 22.74
+      }
+    ]
   },
   {
     "id": "L3",
     "scene": "mysql_replace_trap",
     "text": "MySQL dagi REPLACE buyrug‘i mavjud qatorni o‘chirib qayta yozadi. Bu esa avtomatik ID ni o‘zgartiradi va tashqi kalit bog‘lanishlarini buzib yuboradi.",
     "show": "MySQL dagi REPLACE buyrug‘i mavjud qatorni o‘chirib qayta yozadi. Bu esa avtomatik ID ni o‘zgartiradi va tashqi kalit bog‘lanishlarini buzib yuboradi.",
-    "say": "May es-kyu-el dagi ripleys buyrug‘i mavjud qatorni o‘chirib qayta yozadi. Bu esa avtomatik ay-di-ni o‘zgartiradi va tashqi kalit bog‘lanishlarini buzib yuboradi."
+    "say": "May es-kyu-el dagi ripleys buyrug‘i mavjud qatorni o‘chirib qayta yozadi. Bu esa avtomatik ay-di-ni o‘zgartiradi va tashqi kalit bog‘lanishlarini buzib yuboradi.",
+    "a0": 23.38,
+    "a1": 33.12,
+    "words": [
+      {
+        "w": "May",
+        "s": 23.38,
+        "e": 23.54
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 23.6,
+        "e": 23.94
+      },
+      {
+        "w": "dagi",
+        "s": 23.98,
+        "e": 24.2
+      },
+      {
+        "w": "ripleys",
+        "s": 24.58,
+        "e": 25.02
+      },
+      {
+        "w": "buyrug‘i",
+        "s": 25.12,
+        "e": 25.5
+      },
+      {
+        "w": "mavjud",
+        "s": 25.86,
+        "e": 26.2
+      },
+      {
+        "w": "qatorni",
+        "s": 26.24,
+        "e": 26.58
+      },
+      {
+        "w": "o‘chirib",
+        "s": 26.64,
+        "e": 26.94
+      },
+      {
+        "w": "qayta",
+        "s": 27.02,
+        "e": 27.28
+      },
+      {
+        "w": "yozadi.",
+        "s": 27.32,
+        "e": 27.64
+      },
+      {
+        "w": "Bu",
+        "s": 28.04,
+        "e": 28.1
+      },
+      {
+        "w": "esa",
+        "s": 28.16,
+        "e": 28.34
+      },
+      {
+        "w": "avtomatik",
+        "s": 28.72,
+        "e": 29.26
+      },
+      {
+        "w": "ay-di-ni",
+        "s": 29.5,
+        "e": 29.92
+      },
+      {
+        "w": "o‘zgartiradi",
+        "s": 30.04,
+        "e": 30.6
+      },
+      {
+        "w": "va",
+        "s": 30.76,
+        "e": 30.84
+      },
+      {
+        "w": "tashqi",
+        "s": 30.98,
+        "e": 31.28
+      },
+      {
+        "w": "kalit",
+        "s": 31.38,
+        "e": 31.68
+      },
+      {
+        "w": "bog‘lanishlarini",
+        "s": 31.76,
+        "e": 32.42
+      },
+      {
+        "w": "buzib",
+        "s": 32.48,
+        "e": 32.72
+      },
+      {
+        "w": "yuboradi.",
+        "s": 32.76,
+        "e": 33.12
+      }
+    ]
   },
   {
     "id": "L4",
     "scene": "sqlite_upsert",
     "text": "SQLite da esa PostgreSQL kabi ON CONFLICT ishlaydi, qo‘shimcha ravishda bir nechta konflikt maqsadlarini ketma-ket tekshirish imkoniyati ham bor.",
     "show": "SQLite da esa PostgreSQL kabi ON CONFLICT ishlaydi, qo‘shimcha ravishda bir nechta konflikt maqsadlarini ketma-ket tekshirish imkoniyati ham bor.",
-    "say": "Es-kyu-layt da esa Postgres kabi on konflikt ishlaydi, qo‘shimcha ravishda bir nechta konflikt maqsadlarini ketma-ket tekshirish imkoniyati ham bor."
+    "say": "Es-kyu-layt da esa Postgres kabi on konflikt ishlaydi, qo‘shimcha ravishda bir nechta konflikt maqsadlarini ketma-ket tekshirish imkoniyati ham bor.",
+    "a0": 33.92,
+    "a1": 42.17,
+    "words": [
+      {
+        "w": "Es-kyu-layt",
+        "s": 33.92,
+        "e": 34.42
+      },
+      {
+        "w": "da",
+        "s": 34.44,
+        "e": 34.5
+      },
+      {
+        "w": "esa",
+        "s": 34.56,
+        "e": 34.7
+      },
+      {
+        "w": "Postgres",
+        "s": 35.08,
+        "e": 35.56
+      },
+      {
+        "w": "kabi",
+        "s": 35.58,
+        "e": 35.82
+      },
+      {
+        "w": "on",
+        "s": 36.04,
+        "e": 36.14
+      },
+      {
+        "w": "konflikt",
+        "s": 36.22,
+        "e": 36.72
+      },
+      {
+        "w": "ishlaydi,",
+        "s": 36.76,
+        "e": 37.1
+      },
+      {
+        "w": "qo‘shimcha",
+        "s": 37.57,
+        "e": 37.95
+      },
+      {
+        "w": "ravishda",
+        "s": 37.99,
+        "e": 38.31
+      },
+      {
+        "w": "bir",
+        "s": 38.69,
+        "e": 38.79
+      },
+      {
+        "w": "nechta",
+        "s": 38.85,
+        "e": 39.11
+      },
+      {
+        "w": "konflikt",
+        "s": 39.17,
+        "e": 39.63
+      },
+      {
+        "w": "maqsadlarini",
+        "s": 39.67,
+        "e": 40.23
+      },
+      {
+        "w": "ketma-ket",
+        "s": 40.31,
+        "e": 40.81
+      },
+      {
+        "w": "tekshirish",
+        "s": 40.87,
+        "e": 41.31
+      },
+      {
+        "w": "imkoniyati",
+        "s": 41.37,
+        "e": 41.83
+      },
+      {
+        "w": "ham",
+        "s": 41.83,
+        "e": 41.99
+      },
+      {
+        "w": "bor.",
+        "s": 42.03,
+        "e": 42.17
+      }
+    ]
   },
   {
     "id": "L5",
     "scene": "dml_pitfalls",
     "text": "REPLACE ni oddiy yangilash deb o‘ylash yoki SQLite da INSERT SELECT ortidan WHERE true qo‘ymaslik ko‘p uchraydigan sintaktik va mantiqiy xatolardir.",
     "show": "REPLACE ni oddiy yangilash deb o‘ylash yoki SQLite da INSERT SELECT ortidan WHERE true qo‘ymaslik ko‘p uchraydigan sintaktik va mantiqiy xatolardir.",
-    "say": "Ripleys ni oddiy yangilash deb o‘ylash yoki Es-kyu-layt da insert selekt ortidan ver tru qo‘ymaslik ko‘p uchraydigan sintaktik va mantiqiy xatolardir."
+    "say": "Ripleys ni oddiy yangilash deb o‘ylash yoki Es-kyu-layt da insert selekt ortidan ver tru qo‘ymaslik ko‘p uchraydigan sintaktik va mantiqiy xatolardir.",
+    "a0": 42.91,
+    "a1": 52.49,
+    "words": [
+      {
+        "w": "Ripleys",
+        "s": 42.91,
+        "e": 43.29
+      },
+      {
+        "w": "ni",
+        "s": 43.33,
+        "e": 43.41
+      },
+      {
+        "w": "oddiy",
+        "s": 43.77,
+        "e": 44.01
+      },
+      {
+        "w": "yangilash",
+        "s": 44.11,
+        "e": 44.63
+      },
+      {
+        "w": "deb",
+        "s": 44.67,
+        "e": 44.81
+      },
+      {
+        "w": "o‘ylash",
+        "s": 44.85,
+        "e": 45.19
+      },
+      {
+        "w": "yoki",
+        "s": 45.27,
+        "e": 45.49
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 45.85,
+        "e": 46.41
+      },
+      {
+        "w": "da",
+        "s": 46.47,
+        "e": 46.57
+      },
+      {
+        "w": "insert",
+        "s": 46.79,
+        "e": 47.17
+      },
+      {
+        "w": "selekt",
+        "s": 47.23,
+        "e": 47.57
+      },
+      {
+        "w": "ortidan",
+        "s": 47.65,
+        "e": 48.01
+      },
+      {
+        "w": "ver",
+        "s": 48.37,
+        "e": 48.57
+      },
+      {
+        "w": "tru",
+        "s": 48.63,
+        "e": 48.81
+      },
+      {
+        "w": "qo‘ymaslik",
+        "s": 48.93,
+        "e": 49.49
+      },
+      {
+        "w": "ko‘p",
+        "s": 49.67,
+        "e": 49.87
+      },
+      {
+        "w": "uchraydigan",
+        "s": 49.93,
+        "e": 50.45
+      },
+      {
+        "w": "sintaktik",
+        "s": 50.59,
+        "e": 51.15
+      },
+      {
+        "w": "va",
+        "s": 51.23,
+        "e": 51.29
+      },
+      {
+        "w": "mantiqiy",
+        "s": 51.41,
+        "e": 51.87
+      },
+      {
+        "w": "xatolardir.",
+        "s": 51.93,
+        "e": 52.49
+      }
+    ]
   },
   {
     "id": "L6",
     "scene": "xulosa",
     "text": "Har bir tizimning konfliktlarni hal qilish va ID hisoblagichlarini boshqarish qoidalarini bilish barqaror ma’lumotlar bazasini yaratishning kalitidir.",
     "show": "Har bir tizimning konfliktlarni hal qilish va ID hisoblagichlarini boshqarish qoidalarini bilish barqaror ma’lumotlar bazasini yaratishning kalitidir.",
-    "say": "Har bir tizimning konfliktlarni hal qilish va ay-di hisoblagichlarini boshqarish qoidalarini bilish barqaror ma’lumotlar bazasini yaratishning kalitidir."
+    "say": "Har bir tizimning konfliktlarni hal qilish va ay-di hisoblagichlarini boshqarish qoidalarini bilish barqaror ma’lumotlar bazasini yaratishning kalitidir.",
+    "a0": 53.18,
+    "a1": 61.52,
+    "words": [
+      {
+        "w": "Har",
+        "s": 53.18,
+        "e": 53.3
+      },
+      {
+        "w": "bir",
+        "s": 53.34,
+        "e": 53.44
+      },
+      {
+        "w": "tizimning",
+        "s": 53.46,
+        "e": 53.84
+      },
+      {
+        "w": "konfliktlarni",
+        "s": 54.1,
+        "e": 54.8
+      },
+      {
+        "w": "hal",
+        "s": 54.86,
+        "e": 55.06
+      },
+      {
+        "w": "qilish",
+        "s": 55.1,
+        "e": 55.46
+      },
+      {
+        "w": "va",
+        "s": 55.56,
+        "e": 55.62
+      },
+      {
+        "w": "ay-di",
+        "s": 56.04,
+        "e": 56.26
+      },
+      {
+        "w": "hisoblagichlarini",
+        "s": 56.36,
+        "e": 57.08
+      },
+      {
+        "w": "boshqarish",
+        "s": 57.12,
+        "e": 57.54
+      },
+      {
+        "w": "qoidalarini",
+        "s": 57.58,
+        "e": 58.08
+      },
+      {
+        "w": "bilish",
+        "s": 58.12,
+        "e": 58.36
+      },
+      {
+        "w": "barqaror",
+        "s": 58.72,
+        "e": 59.2
+      },
+      {
+        "w": "ma’lumotlar",
+        "s": 59.24,
+        "e": 59.76
+      },
+      {
+        "w": "bazasini",
+        "s": 59.84,
+        "e": 60.28
+      },
+      {
+        "w": "yaratishning",
+        "s": 60.3,
+        "e": 60.83
+      },
+      {
+        "w": "kalitidir.",
+        "s": 61.01,
+        "e": 61.52
+      }
+    ]
   }
 ]

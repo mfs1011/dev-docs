@@ -217,6 +217,15 @@ HINT:  Ensure that not more than one source row matches any one target row.
 
 ## Dialektlar
 
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/20-3-dialektlar.jpg">
+    <source src="/video/sql/20-3-dialektlar.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/20-3-dialektlar.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/20-3-dialektlar.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>20.3-video. MySQL va SQLite: ON DUPLICATE KEY, REPLACE xavfi va ON CONFLICT</figcaption>
+</figure>
+
 ### MySQL: `ON DUPLICATE KEY UPDATE`
 
 MySQL'da `MERGE` yo'q:
