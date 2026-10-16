@@ -1,0 +1,588 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Amaliyot uchun sotuvlar jadvalini yaratamiz; unda sotuvchilar, shaharlar va savdo summalari yozilgan oltita qator mavjud.",
+    "show": "Amaliyot uchun sotuvlar jadvalini yaratamiz; unda sotuvchilar, shaharlar va savdo summalari yozilgan oltita qator mavjud.",
+    "say": "Amaliyot uchun sotuvlar jadvalini yaratamiz; unda sotuvchilar, shaharlar va savdo summalari yozilgan oltita qator mavjud.",
+    "a0": 0.2,
+    "a1": 7.57,
+    "words": [
+      {
+        "w": "Amaliyot",
+        "s": 0.2,
+        "e": 0.64
+      },
+      {
+        "w": "uchun",
+        "s": 0.68,
+        "e": 0.9
+      },
+      {
+        "w": "sotuvlar",
+        "s": 1.0,
+        "e": 1.44
+      },
+      {
+        "w": "jadvalini",
+        "s": 1.48,
+        "e": 1.94
+      },
+      {
+        "w": "yaratamiz;",
+        "s": 1.94,
+        "e": 3.14
+      },
+      {
+        "w": "unda",
+        "s": 3.14,
+        "e": 3.38
+      },
+      {
+        "w": "sotuvchilar,",
+        "s": 3.58,
+        "e": 4.22
+      },
+      {
+        "w": "shaharlar",
+        "s": 4.34,
+        "e": 4.94
+      },
+      {
+        "w": "va",
+        "s": 5.0,
+        "e": 5.08
+      },
+      {
+        "w": "savdo",
+        "s": 5.26,
+        "e": 5.54
+      },
+      {
+        "w": "summalari",
+        "s": 5.62,
+        "e": 6.06
+      },
+      {
+        "w": "yozilgan",
+        "s": 6.08,
+        "e": 6.5
+      },
+      {
+        "w": "oltita",
+        "s": 6.64,
+        "e": 6.92
+      },
+      {
+        "w": "qator",
+        "s": 6.96,
+        "e": 7.22
+      },
+      {
+        "w": "mavjud.",
+        "s": 7.26,
+        "e": 7.57
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "alias_where_err",
+    "text": "Qo‘shilgan qiymat solig‘i bilan hisoblangan ustun aliasini WHERE da ishlatish xato beradi, chunki bu bosqichda alias hali hisoblanmagan bo‘ladi.",
+    "show": "Qo‘shilgan qiymat solig‘i bilan hisoblangan ustun aliasini WHERE da ishlatish xato beradi, chunki bu bosqichda alias hali hisoblanmagan bo‘ladi.",
+    "say": "Qo‘shilgan qiymat solig‘i bilan hisoblangan ustun aliasini ver da ishlatish xato beradi, chunki bu bosqichda alias hali hisoblanmagan bo‘ladi.",
+    "a0": 8.77,
+    "a1": 16.91,
+    "words": [
+      {
+        "w": "Qo‘shilgan",
+        "s": 8.77,
+        "e": 9.25
+      },
+      {
+        "w": "qiymat",
+        "s": 9.33,
+        "e": 9.61
+      },
+      {
+        "w": "solig‘i",
+        "s": 9.65,
+        "e": 9.99
+      },
+      {
+        "w": "bilan",
+        "s": 10.01,
+        "e": 10.19
+      },
+      {
+        "w": "hisoblangan",
+        "s": 10.23,
+        "e": 10.79
+      },
+      {
+        "w": "ustun",
+        "s": 10.91,
+        "e": 11.17
+      },
+      {
+        "w": "aliasini",
+        "s": 11.29,
+        "e": 11.77
+      },
+      {
+        "w": "ver",
+        "s": 12.15,
+        "e": 12.37
+      },
+      {
+        "w": "da",
+        "s": 12.43,
+        "e": 12.49
+      },
+      {
+        "w": "ishlatish",
+        "s": 12.55,
+        "e": 12.95
+      },
+      {
+        "w": "xato",
+        "s": 13.05,
+        "e": 13.31
+      },
+      {
+        "w": "beradi,",
+        "s": 13.39,
+        "e": 13.69
+      },
+      {
+        "w": "chunki",
+        "s": 14.19,
+        "e": 14.43
+      },
+      {
+        "w": "bu",
+        "s": 14.57,
+        "e": 14.65
+      },
+      {
+        "w": "bosqichda",
+        "s": 14.79,
+        "e": 15.27
+      },
+      {
+        "w": "alias",
+        "s": 15.45,
+        "e": 15.77
+      },
+      {
+        "w": "hali",
+        "s": 15.83,
+        "e": 15.99
+      },
+      {
+        "w": "hisoblanmagan",
+        "s": 16.03,
+        "e": 16.61
+      },
+      {
+        "w": "bo‘ladi.",
+        "s": 16.65,
+        "e": 16.91
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "alias_order_ok",
+    "text": "To‘g‘ri yo‘l shartda ifodani to‘liq yozishdir; saralash bosqichida esa qqs bilan aliasi bemalol taniydi va ishlaydi.",
+    "show": "To‘g‘ri yo‘l shartda ifodani to‘liq yozishdir; saralash bosqichida esa qqs bilan aliasi bemalol taniydi va ishlaydi.",
+    "say": "To‘g‘ri yo‘l shartda ifodani to‘liq yozishdir; saralash bosqichida esa ku-ku-es bilan aliasi bemalol taniydi va ishlaydi.",
+    "a0": 17.97,
+    "a1": 25.44,
+    "words": [
+      {
+        "w": "To‘g‘ri",
+        "s": 17.97,
+        "e": 18.25
+      },
+      {
+        "w": "yo‘l",
+        "s": 18.29,
+        "e": 18.49
+      },
+      {
+        "w": "shartda",
+        "s": 18.65,
+        "e": 19.01
+      },
+      {
+        "w": "ifodani",
+        "s": 19.15,
+        "e": 19.59
+      },
+      {
+        "w": "to‘liq",
+        "s": 19.71,
+        "e": 19.99
+      },
+      {
+        "w": "yozishdir;",
+        "s": 19.99,
+        "e": 20.97
+      },
+      {
+        "w": "saralash",
+        "s": 20.97,
+        "e": 21.33
+      },
+      {
+        "w": "bosqichida",
+        "s": 21.37,
+        "e": 21.75
+      },
+      {
+        "w": "esa",
+        "s": 21.79,
+        "e": 21.97
+      },
+      {
+        "w": "ku-ku-es",
+        "s": 22.17,
+        "e": 22.84
+      },
+      {
+        "w": "bilan",
+        "s": 22.9,
+        "e": 23.1
+      },
+      {
+        "w": "aliasi",
+        "s": 23.3,
+        "e": 23.7
+      },
+      {
+        "w": "bemalol",
+        "s": 23.82,
+        "e": 24.28
+      },
+      {
+        "w": "taniydi",
+        "s": 24.36,
+        "e": 24.76
+      },
+      {
+        "w": "va",
+        "s": 24.86,
+        "e": 24.94
+      },
+      {
+        "w": "ishlaydi.",
+        "s": 25.08,
+        "e": 25.44
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "distinct_on_demo",
+    "text": "Har bir sotuvchining eng yirik savdosini ajratib olish uchun distinkt on dan foydalanamiz va uni kamayish tartibidagi saralash bilan mustahkamlaymiz.",
+    "show": "Har bir sotuvchining eng yirik savdosini ajratib olish uchun distinkt on dan foydalanamiz va uni kamayish tartibidagi saralash bilan mustahkamlaymiz.",
+    "say": "Har bir sotuvchining eng yirik savdosini ajratib olish uchun distinkt on dan foydalanamiz va uni kamayish tartibidagi saralash bilan mustahkamlaymiz.",
+    "a0": 26.64,
+    "a1": 34.74,
+    "words": [
+      {
+        "w": "Har",
+        "s": 26.64,
+        "e": 26.82
+      },
+      {
+        "w": "bir",
+        "s": 26.86,
+        "e": 26.96
+      },
+      {
+        "w": "sotuvchining",
+        "s": 27.0,
+        "e": 27.56
+      },
+      {
+        "w": "eng",
+        "s": 27.82,
+        "e": 28.02
+      },
+      {
+        "w": "yirik",
+        "s": 28.08,
+        "e": 28.32
+      },
+      {
+        "w": "savdosini",
+        "s": 28.38,
+        "e": 28.86
+      },
+      {
+        "w": "ajratib",
+        "s": 28.92,
+        "e": 29.26
+      },
+      {
+        "w": "olish",
+        "s": 29.3,
+        "e": 29.5
+      },
+      {
+        "w": "uchun",
+        "s": 29.52,
+        "e": 29.72
+      },
+      {
+        "w": "distinkt",
+        "s": 30.12,
+        "e": 30.54
+      },
+      {
+        "w": "on",
+        "s": 30.74,
+        "e": 30.86
+      },
+      {
+        "w": "dan",
+        "s": 30.92,
+        "e": 31.06
+      },
+      {
+        "w": "foydalanamiz",
+        "s": 31.12,
+        "e": 31.74
+      },
+      {
+        "w": "va",
+        "s": 31.86,
+        "e": 31.96
+      },
+      {
+        "w": "uni",
+        "s": 32.1,
+        "e": 32.22
+      },
+      {
+        "w": "kamayish",
+        "s": 32.32,
+        "e": 32.74
+      },
+      {
+        "w": "tartibidagi",
+        "s": 32.78,
+        "e": 33.3
+      },
+      {
+        "w": "saralash",
+        "s": 33.36,
+        "e": 33.72
+      },
+      {
+        "w": "bilan",
+        "s": 33.74,
+        "e": 33.92
+      },
+      {
+        "w": "mustahkamlaymiz.",
+        "s": 33.98,
+        "e": 34.74
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "comma_trap_demo",
+    "text": "Vergul tushib qolganda ikkinchi ustun birinchisiga nom bo‘lib qoladi; shuningdek jadvalsiz hisob-kitoblar uchun oddiy selekt buyrug‘i kifoyadir.",
+    "show": "Vergul tushib qolganda ikkinchi ustun birinchisiga nom bo‘lib qoladi; shuningdek jadvalsiz hisob-kitoblar uchun oddiy selekt buyrug‘i kifoyadir.",
+    "say": "Vergul tushib qolganda ikkinchi ustun birinchisiga nom bo‘lib qoladi; shuningdek jadvalsiz hisob-kitoblar uchun oddiy selekt buyrug‘i kifoyadir.",
+    "a0": 35.87,
+    "a1": 44.11,
+    "words": [
+      {
+        "w": "Vergul",
+        "s": 35.87,
+        "e": 36.21
+      },
+      {
+        "w": "tushib",
+        "s": 36.23,
+        "e": 36.45
+      },
+      {
+        "w": "qolganda",
+        "s": 36.47,
+        "e": 36.93
+      },
+      {
+        "w": "ikkinchi",
+        "s": 37.09,
+        "e": 37.41
+      },
+      {
+        "w": "ustun",
+        "s": 37.47,
+        "e": 37.75
+      },
+      {
+        "w": "birinchisiga",
+        "s": 37.85,
+        "e": 38.39
+      },
+      {
+        "w": "nom",
+        "s": 38.53,
+        "e": 38.71
+      },
+      {
+        "w": "bo‘lib",
+        "s": 38.77,
+        "e": 38.97
+      },
+      {
+        "w": "qoladi;",
+        "s": 38.97,
+        "e": 39.99
+      },
+      {
+        "w": "shuningdek",
+        "s": 39.99,
+        "e": 40.37
+      },
+      {
+        "w": "jadvalsiz",
+        "s": 40.69,
+        "e": 41.23
+      },
+      {
+        "w": "hisob-kitoblar",
+        "s": 41.27,
+        "e": 41.91
+      },
+      {
+        "w": "uchun",
+        "s": 41.95,
+        "e": 42.15
+      },
+      {
+        "w": "oddiy",
+        "s": 42.35,
+        "e": 42.65
+      },
+      {
+        "w": "selekt",
+        "s": 42.83,
+        "e": 43.17
+      },
+      {
+        "w": "buyrug‘i",
+        "s": 43.23,
+        "e": 43.55
+      },
+      {
+        "w": "kifoyadir.",
+        "s": 43.59,
+        "e": 44.11
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "xulosa",
+    "text": "SELECT ning mantiqiy bosqichlarini to‘g‘ri tushunish kutilmagan sintaktik xatolarning oldini oladi va so‘rovlarni aniq tuzishga yordam beradi.",
+    "show": "SELECT ning mantiqiy bosqichlarini to‘g‘ri tushunish kutilmagan sintaktik xatolarning oldini oladi va so‘rovlarni aniq tuzishga yordam beradi.",
+    "say": "Selekt ning mantiqiy bosqichlarini to‘g‘ri tushunish kutilmagan sintaktik xatolarning oldini oladi va so‘rovlarni aniq tuzishga yordam beradi.",
+    "a0": 45.15,
+    "a1": 53.08,
+    "words": [
+      {
+        "w": "Selekt",
+        "s": 45.15,
+        "e": 45.51
+      },
+      {
+        "w": "ning",
+        "s": 45.55,
+        "e": 45.71
+      },
+      {
+        "w": "mantiqiy",
+        "s": 45.75,
+        "e": 46.23
+      },
+      {
+        "w": "bosqichlarini",
+        "s": 46.27,
+        "e": 46.79
+      },
+      {
+        "w": "to‘g‘ri",
+        "s": 46.85,
+        "e": 47.15
+      },
+      {
+        "w": "tushunish",
+        "s": 47.17,
+        "e": 47.56
+      },
+      {
+        "w": "kutilmagan",
+        "s": 47.92,
+        "e": 48.48
+      },
+      {
+        "w": "sintaktik",
+        "s": 48.62,
+        "e": 49.18
+      },
+      {
+        "w": "xatolarning",
+        "s": 49.24,
+        "e": 49.82
+      },
+      {
+        "w": "oldini",
+        "s": 49.96,
+        "e": 50.2
+      },
+      {
+        "w": "oladi",
+        "s": 50.26,
+        "e": 50.52
+      },
+      {
+        "w": "va",
+        "s": 50.62,
+        "e": 50.7
+      },
+      {
+        "w": "so‘rovlarni",
+        "s": 50.86,
+        "e": 51.44
+      },
+      {
+        "w": "aniq",
+        "s": 51.6,
+        "e": 51.82
+      },
+      {
+        "w": "tuzishga",
+        "s": 51.88,
+        "e": 52.26
+      },
+      {
+        "w": "yordam",
+        "s": 52.26,
+        "e": 52.78
+      },
+      {
+        "w": "beradi.",
+        "s": 52.8,
+        "e": 53.08
+      }
+    ]
+  }
+]

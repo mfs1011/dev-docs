@@ -4,6 +4,15 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/22-1-tushuncha.jpg">
+    <source src="/video/sql/22-1-tushuncha.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/22-1-tushuncha.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/22-1-tushuncha.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>22.1-video. SELECT buyrug'ining mantiqiy bajarilish bosqichlari</figcaption>
+</figure>
+
 `SELECT` — SQL'ning eng ko'p ishlatiladigan buyrug'i. U bir nechta **banddan** iborat:
 
 ```sql
@@ -77,7 +86,16 @@ Ustunga `AS` bilan nom (**alias**) berish mumkin: `SELECT summa * 1.12 AS qqs_bi
 
 ## Kod
 
-Misollar PostgreSQL 18.6, MySQL 9.7.2 va SQLite 3.54.0 da ishga tushirilgan.
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/22-2-kod.jpg">
+    <source src="/video/sql/22-2-kod.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/22-2-kod.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/22-2-kod.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>22.2-video. PostgreSQL 18: Aliaslar, WHERE xatosi va DISTINCT ON</figcaption>
+</figure>
+
+Misollar PostgreSQL 18.6, MySQL 9.7.2 va SQLite 3.54.0 da ishga tushirilgan:
 
 ```sql
 CREATE TABLE sotuvlar (id int PRIMARY KEY, sotuvchi text, shahar text, summa numeric);
@@ -223,6 +241,15 @@ SELECT 1 + 1 AS ikki, now() IS NOT NULL AS vaqt_bor;
 ```
 
 ## Dialektlar
+
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/22-3-dialektlar.jpg">
+    <source src="/video/sql/22-3-dialektlar.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/22-3-dialektlar.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/22-3-dialektlar.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>22.3-video. MySQL va SQLite da SELECT o'ziga xosliklari</figcaption>
+</figure>
 
 ### MySQL
 

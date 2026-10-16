@@ -1,0 +1,31 @@
+WEBVTT
+
+1
+00:01.420 --> 00:10.940
+SELECT ning mantiqiy bajarilish tartibi har bir ma’lumotlar bazasida o‘ziga
+xos farqlarga ega: ayniqsa aliaslarni qo‘llash va xatolarni boshqarishda.
+
+2
+00:13.810 --> 00:23.500
+MySQL da alias WHERE da ishlamasa ham, HAVING, GROUP BY va ORDER BY
+bandlarida bemalol qo‘llanilishi mumkin; lekin unda DISTINCT ON mavjud emas.
+
+3
+00:26.410 --> 00:35.650
+Shuningdek, MySQL jadvalsiz hisob-kitoblar uchun an’anaviy DUAL soxta jadvalini
+qo‘llab-quvvatlaydi, garchi zamonaviy talqinlarda u majburiy bo‘lmasa ham.
+
+4
+00:38.920 --> 00:48.440
+Qizig‘i shundaki, SQLite aliaslarni ham WHERE, ham HAVING shartlarida
+to‘g‘ridan-to‘g‘ri qabul qiladi; ammo bu standart emas va boshqa bazalarda ishlamaydi.
+
+5
+00:51.370 --> 01:00.140
+SQLite da hisoblashlar taqribiy reallikda bajarilishi mumkin, va SQLite ga xos
+qoidalarga tayanish loyihani PostgreSQL ga ko‘chirishda jiddiy qiyinchilik tug‘diradi.
+
+6
+01:03.170 --> 01:12.630
+Doimo SQL standartiga mos yozish, har bir ustunga aniq AS bilan nom berish va
+tizimlararo farqlarni bilish barqaror dasturiy ta’minot yaratish garovidir.

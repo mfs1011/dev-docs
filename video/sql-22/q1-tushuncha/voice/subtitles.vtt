@@ -1,0 +1,31 @@
+WEBVTT
+
+1
+00:01.420 --> 00:12.800
+SELECT so‘rovi ma’lumotlar bazasining eng asosiy buyrug‘i bo‘lib, u vit, from, ver,
+grup bay, having, order bay va limit kabi bir nechta bandlardan tashkil topadi.
+
+2
+00:15.550 --> 00:25.920
+Lekin bandlarning yozilish tartibi ularning bajarilish tartibiga mos kelmaydi: avval
+FROM va WHERE, so‘ngra guruhlash va faqat shundan keyin SELECT ro‘yxati hisoblanadi.
+
+3
+00:29.100 --> 00:37.190
+Natija ustuniga berilgan nom, ya’ni alias oltinchi bosqichda yaratiladi;
+shuning uchun u uchinchi bosqichdagi WHERE shartida hali mavjud bo‘lmaydi.
+
+4
+00:40.200 --> 00:48.120
+Saralash va qatorlar sonini cheklash eng oxirgi bosqichlarda bajariladi;
+shuning uchun ORDER BY bandi ustun aliaslarini bemalol taniydi.
+
+5
+00:51.130 --> 01:00.240
+Ustunlar orasida vergul unutilganda xato chiqmaydi, ikkinchi ustun birinchisining
+aliasiga aylanib qoladi; shuning uchun har doim AS so‘zini yozish tavsiya etiladi.
+
+6
+01:03.190 --> 01:11.590
+PostgreSQL da har bir guruhdan faqat birinchi qatorni tanlab olish uchun DISTINCT
+ON ishlatiladi va u albatta aniq ORDER BY bilan birga qo‘llanishi shart.
