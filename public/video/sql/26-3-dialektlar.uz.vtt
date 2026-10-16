@@ -1,0 +1,46 @@
+WEBVTT
+
+1
+00:01.420 --> 00:06.970
+MySQL va SQLite tizimlarida agregatsiya va
+guruhlashda muhim o'ziga xosliklar mavjud.
+
+2
+00:09.800 --> 00:17.740
+MySQL da ONLY_FULL_GROUP_BY rejimi sukut bo'yicha yoqilgan,
+guruhlanmagan ustun uchun esa ANY_VALUE funksiyasi tavsiya qilinadi.
+
+3
+00:17.970 --> 00:24.360
+Satrlarni birlashtirishda string_agg o'rniga GROUP_CONCAT
+ishlatiladi, ammo uning maksimal uzunligi cheklangan.
+
+4
+00:27.470 --> 00:34.450
+MySQL da FILTER sintaksisi mavjud emas, uning o'rniga
+CASE WHEN ifodasi yoki shartlar yig'indisi olinadi.
+
+5
+00:34.720 --> 00:39.470
+ROLLUP va GROUPING qo'llab-quvvatlansa-da,
+CUBE va GROUPING SETS sintaksisda yo'q.
+
+6
+00:42.700 --> 00:46.840
+SQLite da esa guruhlanmagan yalang'och
+ustunlarga ruxsat beriladi.
+
+7
+00:47.030 --> 00:52.320
+Agar so'rovda bitta MAX yoki MIN bo'lsa,
+ustun qiymati aynan o'sha qatordan olinadi.
+
+8
+00:52.310 --> 00:56.300
+Shuningdek, bo'sh to'plamda nol
+qaytaruvchi TOTAL funksiyasi ham bor.
+
+9
+00:59.410 --> 01:06.030
+Uchala tizim farqlarini to'g'ri tushunish yozilgan
+so'rovlarning har doim aniq va xatosiz ishlashini kafolatlaydi.

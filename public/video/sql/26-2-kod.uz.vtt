@@ -1,0 +1,41 @@
+WEBVTT
+
+1
+00:01.420 --> 00:07.990
+PostgreSQL 18 da baholar va guruhlar jadvallarini
+tuzib, asosiy agregat funksiyalarni amalda ko'ramiz.
+
+2
+00:11.080 --> 00:17.960
+Barcha oltita qatordan COUNT yulduzcha 6, bali
+borlar soni 5, o'rtacha ball esa aynan 85 chiqdi.
+
+3
+00:19.050 --> 00:24.540
+Mos qatorlar topilmaganda COUNT nol,
+SUM esa nol emas, balki NULL qaytardi.
+
+4
+00:27.910 --> 00:33.610
+GROUP BY guruh_id bo'yicha har bir guruh talabalari
+soni va eng yuqori ballini hisoblab berdi.
+
+5
+00:34.020 --> 00:39.730
+HAVING count yulduzcha birdan katta sharti bilan
+faqat ko'p talabali guruhlar ajratib olindi.
+
+6
+00:42.920 --> 00:49.360
+Birlamchi kalit guruh_id bo'yicha guruhlaganimizda nom
+ustuni funksional bog'liq bo'lgani uchun xatosiz ishladi.
+
+7
+00:49.810 --> 00:54.400
+FILTER esa bitta so'rov ichida a'lochilarni
+oddiy qatorlardan ajratib sanadi.
+
+8
+00:57.590 --> 01:04.170
+ROLLUP esa har bir guruhning oraliq summasi
+va umumiy jami 355 ballni mukammal hisobladi.

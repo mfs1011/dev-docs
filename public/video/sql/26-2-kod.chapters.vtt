@@ -1,0 +1,16 @@
+WEBVTT
+
+00:00.000 --> 00:09.919
+PostgreSQL 18: baholar va guruhlar
+
+00:09.919 --> 00:26.679
+Asosiy agregatlar va bo'sh to'plam
+
+00:26.679 --> 00:41.836
+GROUP BY va HAVING amaliyoti
+
+00:41.836 --> 00:56.431
+Funksional bog'liqlik va FILTER
+
+00:56.431 --> 01:08.280
+ROLLUP va GROUPING jamilar

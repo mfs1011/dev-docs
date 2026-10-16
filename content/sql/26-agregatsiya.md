@@ -4,6 +4,15 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/26-1-tushuncha.jpg">
+    <source src="/video/sql/26-1-tushuncha.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/26-1-tushuncha.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/26-1-tushuncha.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>26.1-video. Agregatsiya va GROUP BY asoslari</figcaption>
+</figure>
+
 **Agregat funksiya** (aggregate function) ko'p qatordan bitta qiymat hisoblaydi: yig'indi, o'rtacha, eng katta, soni. PostgreSQL hujjati shunday ta'riflaydi: agregat funksiya ko'p kirish qiymatini bitta chiqish qiymatiga "qisqartiradi".
 
 | Funksiya | Natija |
@@ -61,6 +70,15 @@ Bir so'rovda bir nechta darajada guruhlash. PostgreSQL hujjatiga ko'ra:
 Jami qatorlarda guruhlanmagan ustun o'rnida `NULL` turadi. Hujjat ogohlantiradi: agar ustunning o'zida `NULL` bo'lsa, uni jami `NULL` idan ajratib bo'lmaydi. Buning uchun **`GROUPING(…)`** funksiyasi bor: argument joriy guruhlash to'plamida qatnashmasa bit 1, qatnashsa 0 (eng o'ngdagi argument — eng kichik bit).
 
 ## Kod
+
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/26-2-kod.jpg">
+    <source src="/video/sql/26-2-kod.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/26-2-kod.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/26-2-kod.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>26.2-video. PostgreSQL 18: Amaliy agregatsiya va GROUP BY</figcaption>
+</figure>
 
 Misollar PostgreSQL 18.6, MySQL 9.7.2 va SQLite 3.54.0 da ishga tushirilgan.
 
@@ -277,6 +295,15 @@ ORDER BY g.nom, b.ism;
 `Malika` ning `sum` i `NULL` (bahosi yo'q) — bu ma'lumotdagi `NULL`, jami emas; `gr` buni ajratib beradi.
 
 ## Dialektlar
+
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/26-3-dialektlar.jpg">
+    <source src="/video/sql/26-3-dialektlar.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/26-3-dialektlar.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/26-3-dialektlar.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>26.3-video. MySQL va SQLite da agregatsiya farqlari</figcaption>
+</figure>
 
 ### MySQL
 

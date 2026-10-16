@@ -1,0 +1,672 @@
+[
+  {
+    "id": "g1",
+    "scene": "kirish",
+    "text": "Agregat funksiyalar ko'plab qatorlar qiymatini bitta yakuniy qiymatga qisqartiradi.",
+    "show": "Agregat funksiyalar ko'plab qatorlar qiymatini bitta yakuniy qiymatga qisqartiradi.",
+    "say": "Agregat funksiyalar ko'plab qatorlar qiymatini bitta yakuniy qiymatga qisqartiradi.",
+    "a0": 0.28,
+    "a1": 4.5,
+    "words": [
+      {
+        "w": "Agregat",
+        "s": 0.28,
+        "e": 0.64
+      },
+      {
+        "w": "funksiyalar",
+        "s": 0.68,
+        "e": 1.16
+      },
+      {
+        "w": "ko'plab",
+        "s": 1.32,
+        "e": 1.64
+      },
+      {
+        "w": "qatorlar",
+        "s": 1.72,
+        "e": 2.12
+      },
+      {
+        "w": "qiymatini",
+        "s": 2.16,
+        "e": 2.6
+      },
+      {
+        "w": "bitta",
+        "s": 2.68,
+        "e": 3.0
+      },
+      {
+        "w": "yakuniy",
+        "s": 3.06,
+        "e": 3.44
+      },
+      {
+        "w": "qiymatga",
+        "s": 3.5,
+        "e": 3.9
+      },
+      {
+        "w": "qisqartiradi.",
+        "s": 3.94,
+        "e": 4.5
+      }
+    ]
+  },
+  {
+    "id": "g2",
+    "scene": "kirish",
+    "text": "COUNT, SUM, AVG, MIN va MAX eng asosiy agregatlardir.",
+    "show": "COUNT, SUM, AVG, MIN va MAX eng asosiy agregatlardir.",
+    "say": "Kaunt, sam, averij, min va maks eng asosiy agregatlardir.",
+    "a0": 5.14,
+    "a1": 9.61,
+    "words": [
+      {
+        "w": "Kaunt,",
+        "s": 5.14,
+        "e": 5.58
+      },
+      {
+        "w": "sam,",
+        "s": 5.82,
+        "e": 6.08
+      },
+      {
+        "w": "averij,",
+        "s": 6.38,
+        "e": 6.8
+      },
+      {
+        "w": "min",
+        "s": 7.12,
+        "e": 7.34
+      },
+      {
+        "w": "va",
+        "s": 7.51,
+        "e": 7.59
+      },
+      {
+        "w": "maks",
+        "s": 7.71,
+        "e": 7.99
+      },
+      {
+        "w": "eng",
+        "s": 8.23,
+        "e": 8.39
+      },
+      {
+        "w": "asosiy",
+        "s": 8.51,
+        "e": 8.91
+      },
+      {
+        "w": "agregatlardir.",
+        "s": 9.01,
+        "e": 9.61
+      }
+    ]
+  },
+  {
+    "id": "g3",
+    "scene": "null_va_bosh_toplam",
+    "text": "COUNT yulduzcha barcha qatorlarni sanaydi, qolgan barcha agregatlar esa NULL qiymatlarni tashlab yuboradi.",
+    "show": "COUNT yulduzcha barcha qatorlarni sanaydi, qolgan barcha agregatlar esa NULL qiymatlarni tashlab yuboradi.",
+    "say": "Kaunt yulduzcha barcha qatorlarni sanaydi, qolgan barcha agregatlar esa null qiymatlarni tashlab yuboradi.",
+    "a0": 10.29,
+    "a1": 16.05,
+    "words": [
+      {
+        "w": "Kaunt",
+        "s": 10.29,
+        "e": 10.55
+      },
+      {
+        "w": "yulduzcha",
+        "s": 10.61,
+        "e": 10.99
+      },
+      {
+        "w": "barcha",
+        "s": 11.17,
+        "e": 11.49
+      },
+      {
+        "w": "qatorlarni",
+        "s": 11.53,
+        "e": 12.03
+      },
+      {
+        "w": "sanaydi,",
+        "s": 12.07,
+        "e": 12.43
+      },
+      {
+        "w": "qolgan",
+        "s": 12.85,
+        "e": 13.17
+      },
+      {
+        "w": "barcha",
+        "s": 13.25,
+        "e": 13.51
+      },
+      {
+        "w": "agregatlar",
+        "s": 13.57,
+        "e": 14.05
+      },
+      {
+        "w": "esa",
+        "s": 14.09,
+        "e": 14.25
+      },
+      {
+        "w": "null",
+        "s": 14.59,
+        "e": 14.81
+      },
+      {
+        "w": "qiymatlarni",
+        "s": 14.85,
+        "e": 15.37
+      },
+      {
+        "w": "tashlab",
+        "s": 15.41,
+        "e": 15.69
+      },
+      {
+        "w": "yuboradi.",
+        "s": 15.71,
+        "e": 16.05
+      }
+    ]
+  },
+  {
+    "id": "g4",
+    "scene": "null_va_bosh_toplam",
+    "text": "Qatorlar topilmasa, COUNT nol qaytaradi, SUM va boshqa funksiyalar esa nol emas, aynan NULL qaytaradi.",
+    "show": "Qatorlar topilmasa, COUNT nol qaytaradi, SUM va boshqa funksiyalar esa nol emas, aynan NULL qaytaradi.",
+    "say": "Qatorlar topilmasa, kaunt nol qaytaradi, sam va boshqa funksiyalar esa nol emas, aynan null qaytaradi.",
+    "a0": 16.89,
+    "a1": 23.48,
+    "words": [
+      {
+        "w": "Qatorlar",
+        "s": 16.89,
+        "e": 17.31
+      },
+      {
+        "w": "topilmasa,",
+        "s": 17.37,
+        "e": 17.87
+      },
+      {
+        "w": "kaunt",
+        "s": 18.11,
+        "e": 18.49
+      },
+      {
+        "w": "nol",
+        "s": 18.81,
+        "e": 19.01
+      },
+      {
+        "w": "qaytaradi,",
+        "s": 19.07,
+        "e": 19.47
+      },
+      {
+        "w": "sam",
+        "s": 19.91,
+        "e": 20.07
+      },
+      {
+        "w": "va",
+        "s": 20.15,
+        "e": 20.21
+      },
+      {
+        "w": "boshqa",
+        "s": 20.27,
+        "e": 20.51
+      },
+      {
+        "w": "funksiyalar",
+        "s": 20.55,
+        "e": 20.97
+      },
+      {
+        "w": "esa",
+        "s": 21.01,
+        "e": 21.15
+      },
+      {
+        "w": "nol",
+        "s": 21.53,
+        "e": 21.69
+      },
+      {
+        "w": "emas,",
+        "s": 21.75,
+        "e": 22.03
+      },
+      {
+        "w": "aynan",
+        "s": 22.25,
+        "e": 22.58
+      },
+      {
+        "w": "null",
+        "s": 22.86,
+        "e": 23.04
+      },
+      {
+        "w": "qaytaradi.",
+        "s": 23.08,
+        "e": 23.48
+      }
+    ]
+  },
+  {
+    "id": "g5",
+    "scene": "group_by_va_having",
+    "text": "GROUP BY bir xil qiymatli qatorlarni guruhlaydi va agregatlar har bir guruh uchun alohida hisoblanadi.",
+    "show": "GROUP BY bir xil qiymatli qatorlarni guruhlaydi va agregatlar har bir guruh uchun alohida hisoblanadi.",
+    "say": "Grup bay bir xil qiymatli qatorlarni guruhlaydi va agregatlar har bir guruh uchun alohida hisoblanadi.",
+    "a0": 24.64,
+    "a1": 29.98,
+    "words": [
+      {
+        "w": "Grup",
+        "s": 24.64,
+        "e": 24.84
+      },
+      {
+        "w": "bay",
+        "s": 24.88,
+        "e": 25.02
+      },
+      {
+        "w": "bir",
+        "s": 25.08,
+        "e": 25.2
+      },
+      {
+        "w": "xil",
+        "s": 25.24,
+        "e": 25.36
+      },
+      {
+        "w": "qiymatli",
+        "s": 25.4,
+        "e": 25.78
+      },
+      {
+        "w": "qatorlarni",
+        "s": 25.84,
+        "e": 26.4
+      },
+      {
+        "w": "guruhlaydi",
+        "s": 26.44,
+        "e": 26.88
+      },
+      {
+        "w": "va",
+        "s": 27.14,
+        "e": 27.2
+      },
+      {
+        "w": "agregatlar",
+        "s": 27.38,
+        "e": 27.9
+      },
+      {
+        "w": "har",
+        "s": 28.0,
+        "e": 28.16
+      },
+      {
+        "w": "bir",
+        "s": 28.22,
+        "e": 28.32
+      },
+      {
+        "w": "guruh",
+        "s": 28.38,
+        "e": 28.6
+      },
+      {
+        "w": "uchun",
+        "s": 28.64,
+        "e": 28.84
+      },
+      {
+        "w": "alohida",
+        "s": 29.04,
+        "e": 29.44
+      },
+      {
+        "w": "hisoblanadi.",
+        "s": 29.5,
+        "e": 29.98
+      }
+    ]
+  },
+  {
+    "id": "g6",
+    "scene": "group_by_va_having",
+    "text": "Guruhlangan natijani filtrlash uchun WHERE emas, balki HAVING ishlatiladi.",
+    "show": "Guruhlangan natijani filtrlash uchun WHERE emas, balki HAVING ishlatiladi.",
+    "say": "Guruhlangan natijani filtrlash uchun veer emas, balki heving ishlatiladi.",
+    "a0": 30.52,
+    "a1": 34.48,
+    "words": [
+      {
+        "w": "Guruhlangan",
+        "s": 30.52,
+        "e": 31.04
+      },
+      {
+        "w": "natijani",
+        "s": 31.08,
+        "e": 31.5
+      },
+      {
+        "w": "filtrlash",
+        "s": 31.54,
+        "e": 31.98
+      },
+      {
+        "w": "uchun",
+        "s": 32.0,
+        "e": 32.2
+      },
+      {
+        "w": "veer",
+        "s": 32.36,
+        "e": 32.6
+      },
+      {
+        "w": "emas,",
+        "s": 32.68,
+        "e": 32.96
+      },
+      {
+        "w": "balki",
+        "s": 33.04,
+        "e": 33.3
+      },
+      {
+        "w": "heving",
+        "s": 33.66,
+        "e": 34.0
+      },
+      {
+        "w": "ishlatiladi.",
+        "s": 34.02,
+        "e": 34.48
+      }
+    ]
+  },
+  {
+    "id": "g7",
+    "scene": "funksional_bogliqlik",
+    "text": "Guruhlashda qatnashmagan ustunlarni SELECT da to'g'ridan-to'g'ri ko'rsatib bo'lmaydi.",
+    "show": "Guruhlashda qatnashmagan ustunlarni SELECT da to'g'ridan-to'g'ri ko'rsatib bo'lmaydi.",
+    "say": "Guruhlashda qatnashmagan ustunlarni selekt da to'g'ridan-to'g'ri ko'rsatib bo'lmaydi.",
+    "a0": 35.52,
+    "a1": 39.55,
+    "words": [
+      {
+        "w": "Guruhlashda",
+        "s": 35.52,
+        "e": 35.94
+      },
+      {
+        "w": "qatnashmagan",
+        "s": 36.0,
+        "e": 36.55
+      },
+      {
+        "w": "ustunlarni",
+        "s": 36.61,
+        "e": 37.13
+      },
+      {
+        "w": "selekt",
+        "s": 37.29,
+        "e": 37.63
+      },
+      {
+        "w": "da",
+        "s": 37.69,
+        "e": 37.77
+      },
+      {
+        "w": "to'g'ridan-to'g'ri",
+        "s": 37.91,
+        "e": 38.65
+      },
+      {
+        "w": "ko'rsatib",
+        "s": 38.69,
+        "e": 39.09
+      },
+      {
+        "w": "bo'lmaydi.",
+        "s": 39.13,
+        "e": 39.55
+      }
+    ]
+  },
+  {
+    "id": "g8",
+    "scene": "funksional_bogliqlik",
+    "text": "Faqat guruhlangan ustun birlamchi kalit bo'lsa, unga funksional bog'liq ustunlarga ruxsat beriladi.",
+    "show": "Faqat guruhlangan ustun birlamchi kalit bo'lsa, unga funksional bog'liq ustunlarga ruxsat beriladi.",
+    "say": "Faqat guruhlangan ustun birlamchi kalit bo'lsa, unga funksional bog'liq ustunlarga ruxsat beriladi.",
+    "a0": 39.91,
+    "a1": 45.45,
+    "words": [
+      {
+        "w": "Faqat",
+        "s": 39.91,
+        "e": 40.19
+      },
+      {
+        "w": "guruhlangan",
+        "s": 40.35,
+        "e": 40.95
+      },
+      {
+        "w": "ustun",
+        "s": 41.05,
+        "e": 41.35
+      },
+      {
+        "w": "birlamchi",
+        "s": 41.49,
+        "e": 41.93
+      },
+      {
+        "w": "kalit",
+        "s": 41.99,
+        "e": 42.25
+      },
+      {
+        "w": "bo'lsa,",
+        "s": 42.29,
+        "e": 42.57
+      },
+      {
+        "w": "unga",
+        "s": 42.95,
+        "e": 43.15
+      },
+      {
+        "w": "funksional",
+        "s": 43.33,
+        "e": 43.89
+      },
+      {
+        "w": "bog'liq",
+        "s": 43.93,
+        "e": 44.23
+      },
+      {
+        "w": "ustunlarga",
+        "s": 44.29,
+        "e": 44.73
+      },
+      {
+        "w": "ruxsat",
+        "s": 44.79,
+        "e": 45.05
+      },
+      {
+        "w": "beriladi.",
+        "s": 45.09,
+        "e": 45.45
+      }
+    ]
+  },
+  {
+    "id": "g9",
+    "scene": "qoshimchalar_va_xulosa",
+    "text": "Shuningdek, FILTER sharti, agregat ichidagi ORDER BY va ROLLUP kabi ko'p darajali jamilar mavjud.",
+    "show": "Shuningdek, FILTER sharti, agregat ichidagi ORDER BY va ROLLUP kabi ko'p darajali jamilar mavjud.",
+    "say": "Shuningdek, filtr sharti, agregat ichidagi order bay va rollap kabi ko'p darajali jamilar mavjud.",
+    "a0": 46.35,
+    "a1": 52.0,
+    "words": [
+      {
+        "w": "Shuningdek,",
+        "s": 46.35,
+        "e": 46.75
+      },
+      {
+        "w": "filtr",
+        "s": 46.95,
+        "e": 47.21
+      },
+      {
+        "w": "sharti,",
+        "s": 47.27,
+        "e": 47.61
+      },
+      {
+        "w": "agregat",
+        "s": 47.93,
+        "e": 48.27
+      },
+      {
+        "w": "ichidagi",
+        "s": 48.33,
+        "e": 48.67
+      },
+      {
+        "w": "order",
+        "s": 48.85,
+        "e": 49.15
+      },
+      {
+        "w": "bay",
+        "s": 49.23,
+        "e": 49.43
+      },
+      {
+        "w": "va",
+        "s": 49.76,
+        "e": 49.82
+      },
+      {
+        "w": "rollap",
+        "s": 50.02,
+        "e": 50.32
+      },
+      {
+        "w": "kabi",
+        "s": 50.38,
+        "e": 50.56
+      },
+      {
+        "w": "ko'p",
+        "s": 50.64,
+        "e": 50.8
+      },
+      {
+        "w": "darajali",
+        "s": 50.86,
+        "e": 51.24
+      },
+      {
+        "w": "jamilar",
+        "s": 51.32,
+        "e": 51.68
+      },
+      {
+        "w": "mavjud.",
+        "s": 51.72,
+        "e": 52.0
+      }
+    ]
+  },
+  {
+    "id": "g10",
+    "scene": "qoshimchalar_va_xulosa",
+    "text": "Endi bu qoidalarni PostgreSQL 18 da amalda tekshiramiz.",
+    "show": "Endi bu qoidalarni PostgreSQL 18 da amalda tekshiramiz.",
+    "say": "Endi bu qoidalarni Postgres 18 da amalda tekshiramiz.",
+    "a0": 52.58,
+    "a1": 55.8,
+    "words": [
+      {
+        "w": "Endi",
+        "s": 52.58,
+        "e": 52.78
+      },
+      {
+        "w": "bu",
+        "s": 52.94,
+        "e": 53.02
+      },
+      {
+        "w": "qoidalarni",
+        "s": 53.1,
+        "e": 53.6
+      },
+      {
+        "w": "Postgres",
+        "s": 53.78,
+        "e": 54.24
+      },
+      {
+        "w": "18",
+        "s": 54.24,
+        "e": 54.24
+      },
+      {
+        "w": "da",
+        "s": 54.78,
+        "e": 54.84
+      },
+      {
+        "w": "amalda",
+        "s": 54.96,
+        "e": 55.28
+      },
+      {
+        "w": "tekshiramiz.",
+        "s": 55.32,
+        "e": 55.8
+      }
+    ]
+  }
+]
