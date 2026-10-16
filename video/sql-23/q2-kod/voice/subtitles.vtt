@@ -1,0 +1,31 @@
+WEBVTT
+
+1
+00:01.420 --> 00:09.200
+Ushbu amaliy qismda PostgreSQL 18 da mijozlar jadvali asosida
+turli filtrlash operatorlarini real terminalda sinab ko‘ramiz.
+
+2
+00:12.030 --> 00:19.600
+Oraliqni tekshirishda BETWEEN SYMMETRIC argumentlar teskari kelsa
+ham chegaralarni avtomatik tartiblab, natijani to‘g‘ri chiqaradi.
+
+3
+00:22.410 --> 00:30.670
+Biroq NOT IN ro‘yxatiga NULL aralashsa, PostgreSQL kutilmaganda nolta
+qator qaytaradi, chunki noaniqlik butun ifodani NULL ga aylantiradi.
+
+4
+00:33.660 --> 00:41.210
+Shahri noma’lum mijozlarni yo‘qotmaslik uchun esa IS DISTINCT FROM
+operatori qo‘llanilib, NULL qiymatlar ham xavfsiz filtrlanadi.
+
+5
+00:43.960 --> 00:52.280
+Shuningdek, ILIKE katta-kichik harfni ajratmasdan qidiradi, POSIX
+tilda belgisi esa telefon formatlarini aniq regex bilan tekshiradi.
+
+6
+00:55.210 --> 01:02.670
+Har bir operatorning NULL bilan ishlash tabiatini bilish SQL so‘rovlarida
+kutilmagan xatolar va ma’lumotlar yo‘qolishining oldini oladi.

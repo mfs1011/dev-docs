@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:13.761
+MySQL va SQLite da filtrlash farqlari
+
+00:13.761 --> 00:25.744
+MySQL: LIKE registri va <=> tenglik
+
+00:25.744 --> 00:39.229
+SQLite: LIKE va ASCII vs Unicode tuzog‘i
+
+00:39.229 --> 00:51.014
+SQLite: GLOB va ESCAPE o‘ziga xosligi
+
+00:51.014 --> 01:02.547
+SQLite: IS NOT va REGEXP funksiyasi
+
+01:02.547 --> 01:16.720
+Uch tizim qiyosiy xulosasi

@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:10.616
+PostgreSQL 18: Sinov jadvali va vazifalar
+
+00:10.616 --> 00:21.183
+BETWEEN va BETWEEN SYMMETRIC amaliyoti
+
+00:21.183 --> 00:32.612
+NOT IN dagi NULL: 0 qator amaliyoti
+
+00:32.612 --> 00:42.963
+IS DISTINCT FROM bilan to‘liq tanlash
+
+00:42.963 --> 00:54.099
+ILIKE va POSIX Regex bilan qidiruv
+
+00:54.099 --> 01:06.420
+Amaliy xulosalar va tavsiyalar

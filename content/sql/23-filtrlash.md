@@ -4,7 +4,16 @@
 
 ## Tushuncha
 
-`WHERE` qatorlarni **shart** bo'yicha tanlaydi. 10-bobdan ma'lumki, `WHERE` faqat shart **rost** bo'lgan qatorlarni oladi. Shart yolg'on yoki `NULL` bo'lsa, qator tashlanadi. Bu bobda shartning asosiy "qurilish bloklari" ko'riladi.
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/23-1-tushuncha.jpg">
+    <source src="/video/sql/23-1-tushuncha.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/23-1-tushuncha.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/23-1-tushuncha.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>23.1-video. WHERE bandi va uch qiymatli mantiq asoslari</figcaption>
+</figure>
+
+`WHERE` qatorlarni **shart** bo'yicha tanlaydi. 10-bobdan ma'lumki, `WHERE` faqat shart **rost** bo'lgan qatorlarni oladi. Shart yolg'on yoki `NULL` bo'lsa, qator tashlanadi. Bu bobda shartning asosiy "qurilish bloklari" ko'riladi:
 
 ### Taqqoslash va `BETWEEN`
 
@@ -53,7 +62,16 @@ PostgreSQL'da uch xil usul bor:
 
 ## Kod
 
-Misollar PostgreSQL 18.6, MySQL 9.7.2 va SQLite 3.54.0 da ishga tushirilgan.
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/23-2-kod.jpg">
+    <source src="/video/sql/23-2-kod.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/23-2-kod.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/23-2-kod.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>23.2-video. PostgreSQL 18: BETWEEN SYMMETRIC, NOT IN va IS DISTINCT FROM</figcaption>
+</figure>
+
+Misollar PostgreSQL 18.6, MySQL 9.7.2 va SQLite 3.54.0 da ishga tushirilgan:
 
 ```sql
 CREATE TABLE mijozlar (id int PRIMARY KEY, ism text, telefon text, shahar text, yosh int);
@@ -207,6 +225,15 @@ SELECT id, shahar FROM mijozlar WHERE shahar <> 'Toshkent';
 Shahri noma'lum 4-mijoz faqat `IS DISTINCT FROM` bilan chiqdi.
 
 ## Dialektlar
+
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/23-3-dialektlar.jpg">
+    <source src="/video/sql/23-3-dialektlar.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/23-3-dialektlar.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/23-3-dialektlar.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>23.3-video. MySQL va SQLite da filtrlash o'ziga xosliklari</figcaption>
+</figure>
 
 ### MySQL
 

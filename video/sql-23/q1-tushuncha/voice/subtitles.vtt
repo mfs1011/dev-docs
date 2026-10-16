@@ -1,0 +1,31 @@
+WEBVTT
+
+1
+00:01.420 --> 00:13.180
+SQL da WHERE bandi ma’lumotlarni filtrlash uchun xizmat qiladi: u faqat shart rost bo‘lgan
+qatorlarni tanlab oladi, yolg‘on yoki noaniq NULL natijalarni esa butunlay chiqarib tashlaydi.
+
+2
+00:16.470 --> 00:27.510
+BETWEEN operatori belgilangan ikki chegara oralig‘idagi qiymatlarni tekshiradi va ikkala chekka
+qiymatni ham kiritadi; chegaralar teskari bo‘lsa esa faqat BETWEEN SYMMETRIC yordamga keladi.
+
+3
+00:30.900 --> 00:40.470
+IN ro‘yxatdagi tengliklarni tekshiradi, ammo NOT IN ro‘yxatida bitta bo‘lsa ham NULL
+uchrasa, butun ifoda noaniq bo‘lib qoladi va natijada birorta ham qator qaytmaydi.
+
+4
+00:44.240 --> 00:54.200
+Oddiy tengsizlik operatori NULL qiymatlarni yo‘qotib yuboradi; barcha noma’lum qatorlarni
+ham xavfsiz hisobga olish uchun esa IS DISTINCT FROM konstruksiyasidan foydalaniladi.
+
+5
+00:57.750 --> 01:07.550
+Matnlarni namuna bo‘yicha qidirishda an’anaviy LIKE, registrga sezgir bo‘lmagan
+ILIKE hamda murakkab qoidalar uchun kuchli POSIX muntazam ifodalari qo‘llaniladi.
+
+6
+01:10.900 --> 01:21.490
+Shartlarni yozishda doimo uch qiymatli mantiqni, ro‘yxatlardagi NULL xavfini va qidiruv
+namunalarining unumdorlikka ta’sirini hisobga olish yuqori tezlik va aniqlik kafolatidir.

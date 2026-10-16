@@ -1,0 +1,31 @@
+WEBVTT
+
+1
+00:01.420 --> 00:12.080
+Filtrlash operatorlari MySQL va SQLite tizimlarida o‘ziga xos farqlarga ega:
+ayniqsa registr sezgirligi, NULL bilan ishlash va qidiruv namunalarida.
+
+2
+00:14.890 --> 00:23.920
+MySQL da LIKE odatda registrga sezgir emas, ammo unda IS DISTINCT
+FROM mavjud bo‘lmagani sababli maxsus <=> operatori qo‘llaniladi.
+
+3
+00:26.830 --> 00:37.450
+SQLite esa LIKE da faqat ASCII harflarining kattaligiga e’tibor bermaydi; o‘zbekcha
+yoki xalqaro unli harflarda esa u kutilmaganda registrga sezgir bo‘lib qoladi.
+
+4
+00:40.280 --> 00:49.240
+Shuningdek, SQLite da teskari chiziq sukut bo‘yicha escape belgisi hisoblanmaydi,
+fayl nomlari uslubida qidirish uchun esa GLOB operatori xizmat qiladi.
+
+5
+00:52.050 --> 01:00.760
+SQLite da IS NOT operatori to‘liq NULL-xavfsiz ishlaydi; REGEXP esa
+faqat dastur kodida maxsus funksiya ulangandagina natija beradi.
+
+6
+01:03.670 --> 01:12.990
+Doimo tizimlararo tafovutlarni inobatga olish, escape belgilarini aniq
+ko‘rsatish va portabel SQL yozish loyihaning barqaror ishlash garovidir.
