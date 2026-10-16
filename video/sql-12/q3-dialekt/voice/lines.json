@@ -1,0 +1,976 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "O‘n ikkinchi bobning uchinchi qismida MySQL va SQLite dagi CREATE TABLE hamda DEFAULT farqlari va amaliy tuzoqlarini tahlil qilamiz.",
+    "show": "O‘n ikkinchi bobning uchinchi qismida MySQL va SQLite dagi CREATE TABLE hamda DEFAULT farqlari va amaliy tuzoqlarini tahlil qilamiz.",
+    "say": "O‘n ikkinchi bobning uchinchi qismida May es-kyu-el va Es-kyu-layt dagi kriyet teybl hamda difolt farqlari va amaliy tuzoqlarini tahlil qilamiz.",
+    "a0": 0.32,
+    "a1": 9.47,
+    "words": [
+      {
+        "w": "O‘n",
+        "s": 0.32,
+        "e": 0.4
+      },
+      {
+        "w": "ikkinchi",
+        "s": 0.44,
+        "e": 0.78
+      },
+      {
+        "w": "bobning",
+        "s": 0.82,
+        "e": 1.14
+      },
+      {
+        "w": "uchinchi",
+        "s": 1.24,
+        "e": 1.58
+      },
+      {
+        "w": "qismida",
+        "s": 1.62,
+        "e": 2.0
+      },
+      {
+        "w": "May",
+        "s": 2.44,
+        "e": 2.6
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 2.68,
+        "e": 3.14
+      },
+      {
+        "w": "va",
+        "s": 3.28,
+        "e": 3.36
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 3.8,
+        "e": 4.42
+      },
+      {
+        "w": "dagi",
+        "s": 4.5,
+        "e": 4.72
+      },
+      {
+        "w": "kriyet",
+        "s": 4.92,
+        "e": 5.36
+      },
+      {
+        "w": "teybl",
+        "s": 5.46,
+        "e": 5.8
+      },
+      {
+        "w": "hamda",
+        "s": 5.96,
+        "e": 6.22
+      },
+      {
+        "w": "difolt",
+        "s": 6.6,
+        "e": 7.0
+      },
+      {
+        "w": "farqlari",
+        "s": 7.06,
+        "e": 7.48
+      },
+      {
+        "w": "va",
+        "s": 7.59,
+        "e": 7.67
+      },
+      {
+        "w": "amaliy",
+        "s": 7.87,
+        "e": 8.17
+      },
+      {
+        "w": "tuzoqlarini",
+        "s": 8.21,
+        "e": 8.79
+      },
+      {
+        "w": "tahlil",
+        "s": 8.83,
+        "e": 9.13
+      },
+      {
+        "w": "qilamiz.",
+        "s": 9.15,
+        "e": 9.47
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "mysql_expr",
+    "text": "MySQL da juda qat'iy sintaksis mavjud: DEFAULT ga hisoblanuvchi ifoda yozilganda, uni albatta qavs ichiga olish shart, aks holda sintaksis xatosi beradi.",
+    "show": "MySQL da juda qat'iy sintaksis mavjud: DEFAULT ga hisoblanuvchi ifoda yozilganda, uni albatta qavs ichiga olish shart, aks holda sintaksis xatosi beradi.",
+    "say": "May es-kyu-el da juda qat'iy sintaksis mavjud: difolt ga hisoblanuvchi ifoda yozilganda, uni albatta qavs ichiga olish shart, aks holda sintaksis xatosi beradi.",
+    "a0": 10.33,
+    "a1": 20.17,
+    "words": [
+      {
+        "w": "May",
+        "s": 10.33,
+        "e": 10.49
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 10.53,
+        "e": 10.85
+      },
+      {
+        "w": "da",
+        "s": 10.89,
+        "e": 10.97
+      },
+      {
+        "w": "juda",
+        "s": 11.19,
+        "e": 11.39
+      },
+      {
+        "w": "qat'iy",
+        "s": 11.49,
+        "e": 11.89
+      },
+      {
+        "w": "sintaksis",
+        "s": 11.97,
+        "e": 12.45
+      },
+      {
+        "w": "mavjud:",
+        "s": 12.49,
+        "e": 12.79
+      },
+      {
+        "w": "difolt",
+        "s": 13.31,
+        "e": 13.71
+      },
+      {
+        "w": "ga",
+        "s": 13.75,
+        "e": 13.85
+      },
+      {
+        "w": "hisoblanuvchi",
+        "s": 13.99,
+        "e": 14.57
+      },
+      {
+        "w": "ifoda",
+        "s": 14.63,
+        "e": 14.91
+      },
+      {
+        "w": "yozilganda,",
+        "s": 14.91,
+        "e": 15.49
+      },
+      {
+        "w": "uni",
+        "s": 15.85,
+        "e": 15.97
+      },
+      {
+        "w": "albatta",
+        "s": 16.09,
+        "e": 16.61
+      },
+      {
+        "w": "qavs",
+        "s": 16.77,
+        "e": 17.09
+      },
+      {
+        "w": "ichiga",
+        "s": 17.17,
+        "e": 17.43
+      },
+      {
+        "w": "olish",
+        "s": 17.51,
+        "e": 17.71
+      },
+      {
+        "w": "shart,",
+        "s": 17.71,
+        "e": 17.97
+      },
+      {
+        "w": "aks",
+        "s": 18.39,
+        "e": 18.55
+      },
+      {
+        "w": "holda",
+        "s": 18.57,
+        "e": 18.79
+      },
+      {
+        "w": "sintaksis",
+        "s": 19.03,
+        "e": 19.49
+      },
+      {
+        "w": "xatosi",
+        "s": 19.51,
+        "e": 19.85
+      },
+      {
+        "w": "beradi.",
+        "s": 19.87,
+        "e": 20.17
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "mysql_expr",
+    "text": "Shuningdek, TEXT, BLOB va JSON ustunlariga hatto oddiy matnli sukut qiymati berilganda ham u doimo ifoda sifatida qavs ichida yozilishi shart.",
+    "show": "Shuningdek, TEXT, BLOB va JSON ustunlariga hatto oddiy matnli sukut qiymati berilganda ham u doimo ifoda sifatida qavs ichida yozilishi shart.",
+    "say": "Shuningdek, tekst, blob va jeyson ustunlariga hatto oddiy matnli sukut qiymati berilganda ham u doimo ifoda sifatida qavs ichida yozilishi shart.",
+    "a0": 21.09,
+    "a1": 30.42,
+    "words": [
+      {
+        "w": "Shuningdek,",
+        "s": 21.09,
+        "e": 21.47
+      },
+      {
+        "w": "tekst,",
+        "s": 21.67,
+        "e": 22.07
+      },
+      {
+        "w": "blob",
+        "s": 22.29,
+        "e": 22.62
+      },
+      {
+        "w": "va",
+        "s": 22.72,
+        "e": 22.8
+      },
+      {
+        "w": "jeyson",
+        "s": 23.06,
+        "e": 23.46
+      },
+      {
+        "w": "ustunlariga",
+        "s": 23.52,
+        "e": 24.02
+      },
+      {
+        "w": "hatto",
+        "s": 24.1,
+        "e": 24.4
+      },
+      {
+        "w": "oddiy",
+        "s": 24.62,
+        "e": 24.92
+      },
+      {
+        "w": "matnli",
+        "s": 25.08,
+        "e": 25.5
+      },
+      {
+        "w": "sukut",
+        "s": 25.62,
+        "e": 25.9
+      },
+      {
+        "w": "qiymati",
+        "s": 25.96,
+        "e": 26.32
+      },
+      {
+        "w": "berilganda",
+        "s": 26.36,
+        "e": 26.84
+      },
+      {
+        "w": "ham",
+        "s": 26.86,
+        "e": 27.0
+      },
+      {
+        "w": "u",
+        "s": 27.36,
+        "e": 27.38
+      },
+      {
+        "w": "doimo",
+        "s": 27.58,
+        "e": 27.98
+      },
+      {
+        "w": "ifoda",
+        "s": 28.16,
+        "e": 28.48
+      },
+      {
+        "w": "sifatida",
+        "s": 28.56,
+        "e": 28.92
+      },
+      {
+        "w": "qavs",
+        "s": 29.02,
+        "e": 29.32
+      },
+      {
+        "w": "ichida",
+        "s": 29.38,
+        "e": 29.6
+      },
+      {
+        "w": "yozilishi",
+        "s": 29.6,
+        "e": 30.08
+      },
+      {
+        "w": "shart.",
+        "s": 30.16,
+        "e": 30.42
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "mysql_features",
+    "text": "Yana bir qulaylik: MySQL da ustunlarni INVISIBLE qilib yashirish mumkin, bu esa yulduzcha so‘rovlarida eski ilovalarni buzilmasdan saqlaydi.",
+    "show": "Yana bir qulaylik: MySQL da ustunlarni INVISIBLE qilib yashirish mumkin, bu esa yulduzcha so‘rovlarida eski ilovalarni buzilmasdan saqlaydi.",
+    "say": "Yana bir qulaylik: May es-kyu-el da ustunlarni invizibl qilib yashirish mumkin, bu esa yulduzcha so‘rovlarida eski ilovalarni buzilmasdan saqlaydi.",
+    "a0": 31.48,
+    "a1": 39.93,
+    "words": [
+      {
+        "w": "Yana",
+        "s": 31.48,
+        "e": 31.66
+      },
+      {
+        "w": "bir",
+        "s": 31.68,
+        "e": 31.78
+      },
+      {
+        "w": "qulaylik:",
+        "s": 31.82,
+        "e": 32.2
+      },
+      {
+        "w": "May",
+        "s": 32.66,
+        "e": 32.8
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 32.86,
+        "e": 33.18
+      },
+      {
+        "w": "da",
+        "s": 33.22,
+        "e": 33.28
+      },
+      {
+        "w": "ustunlarni",
+        "s": 33.4,
+        "e": 33.92
+      },
+      {
+        "w": "invizibl",
+        "s": 34.26,
+        "e": 34.8
+      },
+      {
+        "w": "qilib",
+        "s": 34.86,
+        "e": 35.06
+      },
+      {
+        "w": "yashirish",
+        "s": 35.12,
+        "e": 35.5
+      },
+      {
+        "w": "mumkin,",
+        "s": 35.54,
+        "e": 35.8
+      },
+      {
+        "w": "bu",
+        "s": 36.04,
+        "e": 36.1
+      },
+      {
+        "w": "esa",
+        "s": 36.14,
+        "e": 36.3
+      },
+      {
+        "w": "yulduzcha",
+        "s": 36.62,
+        "e": 37.08
+      },
+      {
+        "w": "so‘rovlarida",
+        "s": 37.14,
+        "e": 37.71
+      },
+      {
+        "w": "eski",
+        "s": 37.93,
+        "e": 38.17
+      },
+      {
+        "w": "ilovalarni",
+        "s": 38.23,
+        "e": 38.81
+      },
+      {
+        "w": "buzilmasdan",
+        "s": 38.91,
+        "e": 39.51
+      },
+      {
+        "w": "saqlaydi.",
+        "s": 39.53,
+        "e": 39.93
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "mysql_features",
+    "text": "Muhim farq: MySQL ning LIKE buyrug‘i PostgreSQL dan farqli o‘laroq indekslarni qo‘shimcha kalitlarsiz avtomatik nusxalaydi.",
+    "show": "Muhim farq: MySQL ning LIKE buyrug‘i PostgreSQL dan farqli o‘laroq indekslarni qo‘shimcha kalitlarsiz avtomatik nusxalaydi.",
+    "say": "Muhim farq: May es-kyu-el ning layk buyrug‘i Postgres dan farqli o‘laroq indekslarni qo‘shimcha kalitlarsiz avtomatik nusxalaydi.",
+    "a0": 40.95,
+    "a1": 48.41,
+    "words": [
+      {
+        "w": "Muhim",
+        "s": 40.95,
+        "e": 41.21
+      },
+      {
+        "w": "farq:",
+        "s": 41.29,
+        "e": 41.51
+      },
+      {
+        "w": "May",
+        "s": 42.13,
+        "e": 42.27
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 42.35,
+        "e": 42.67
+      },
+      {
+        "w": "ning",
+        "s": 42.71,
+        "e": 42.83
+      },
+      {
+        "w": "layk",
+        "s": 43.07,
+        "e": 43.31
+      },
+      {
+        "w": "buyrug‘i",
+        "s": 43.37,
+        "e": 43.71
+      },
+      {
+        "w": "Postgres",
+        "s": 43.89,
+        "e": 44.29
+      },
+      {
+        "w": "dan",
+        "s": 44.33,
+        "e": 44.43
+      },
+      {
+        "w": "farqli",
+        "s": 44.49,
+        "e": 44.75
+      },
+      {
+        "w": "o‘laroq",
+        "s": 44.83,
+        "e": 45.09
+      },
+      {
+        "w": "indekslarni",
+        "s": 45.41,
+        "e": 46.01
+      },
+      {
+        "w": "qo‘shimcha",
+        "s": 46.11,
+        "e": 46.59
+      },
+      {
+        "w": "kalitlarsiz",
+        "s": 46.67,
+        "e": 47.29
+      },
+      {
+        "w": "avtomatik",
+        "s": 47.43,
+        "e": 47.91
+      },
+      {
+        "w": "nusxalaydi.",
+        "s": 47.95,
+        "e": 48.41
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "sqlite_defaults",
+    "text": "SQLite da esa har bir jadvalda yashirin rowid ustuni mavjud bo‘lib, DEFAULT ifodalarida randomblob va joriy UTC vaqtidan foydalanish mumkin.",
+    "show": "SQLite da esa har bir jadvalda yashirin rowid ustuni mavjud bo‘lib, DEFAULT ifodalarida randomblob va joriy UTC vaqtidan foydalanish mumkin.",
+    "say": "Es-kyu-layt da esa har bir jadvalda yashirin rou-ay-di ustuni mavjud bo‘lib, difolt ifodalarida random-blob va joriy yu-ti-si vaqtidan foydalanish mumkin.",
+    "a0": 49.21,
+    "a1": 58.34,
+    "words": [
+      {
+        "w": "Es-kyu-layt",
+        "s": 49.21,
+        "e": 49.77
+      },
+      {
+        "w": "da",
+        "s": 49.81,
+        "e": 49.87
+      },
+      {
+        "w": "esa",
+        "s": 49.91,
+        "e": 50.09
+      },
+      {
+        "w": "har",
+        "s": 50.31,
+        "e": 50.49
+      },
+      {
+        "w": "bir",
+        "s": 50.53,
+        "e": 50.63
+      },
+      {
+        "w": "jadvalda",
+        "s": 50.67,
+        "e": 51.09
+      },
+      {
+        "w": "yashirin",
+        "s": 51.29,
+        "e": 51.71
+      },
+      {
+        "w": "rou-ay-di",
+        "s": 51.93,
+        "e": 52.39
+      },
+      {
+        "w": "ustuni",
+        "s": 52.52,
+        "e": 52.84
+      },
+      {
+        "w": "mavjud",
+        "s": 52.88,
+        "e": 53.16
+      },
+      {
+        "w": "bo‘lib,",
+        "s": 53.2,
+        "e": 53.4
+      },
+      {
+        "w": "difolt",
+        "s": 53.76,
+        "e": 54.16
+      },
+      {
+        "w": "ifodalarida",
+        "s": 54.22,
+        "e": 54.78
+      },
+      {
+        "w": "random-blob",
+        "s": 55.04,
+        "e": 55.7
+      },
+      {
+        "w": "va",
+        "s": 55.78,
+        "e": 55.86
+      },
+      {
+        "w": "joriy",
+        "s": 56.22,
+        "e": 56.56
+      },
+      {
+        "w": "yu-ti-si",
+        "s": 56.7,
+        "e": 57.08
+      },
+      {
+        "w": "vaqtidan",
+        "s": 57.16,
+        "e": 57.54
+      },
+      {
+        "w": "foydalanish",
+        "s": 57.6,
+        "e": 58.06
+      },
+      {
+        "w": "mumkin.",
+        "s": 58.1,
+        "e": 58.34
+      }
+    ]
+  },
+  {
+    "id": "L7",
+    "scene": "pitfalls",
+    "text": "Diqqat qiling: jadvallar orasida migratsiya qilishda MySQL dagi qavslar, SQLite ning rowid xususiyati va birlamchi kalitsiz qatorlar dublikati eng ko‘p uchraydigan xatolardir.",
+    "show": "Diqqat qiling: jadvallar orasida migratsiya qilishda MySQL dagi qavslar, SQLite ning rowid xususiyati va birlamchi kalitsiz qatorlar dublikati eng ko‘p uchraydigan xatolardir.",
+    "say": "Diqqat qiling: jadvallar orasida migratsiya qilishda May es-kyu-el dagi qavslar, Es-kyu-layt ning rou-ay-di xususiyati va birlamchi kalitsiz qatorlar dublikati eng ko‘p uchraydigan xatolardir.",
+    "a0": 59.46,
+    "a1": 70.19,
+    "words": [
+      {
+        "w": "Diqqat",
+        "s": 59.46,
+        "e": 59.74
+      },
+      {
+        "w": "qiling:",
+        "s": 59.78,
+        "e": 59.96
+      },
+      {
+        "w": "jadvallar",
+        "s": 60.38,
+        "e": 60.76
+      },
+      {
+        "w": "orasida",
+        "s": 60.8,
+        "e": 61.14
+      },
+      {
+        "w": "migratsiya",
+        "s": 61.22,
+        "e": 61.64
+      },
+      {
+        "w": "qilishda",
+        "s": 61.66,
+        "e": 61.96
+      },
+      {
+        "w": "May",
+        "s": 62.18,
+        "e": 62.34
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 62.38,
+        "e": 62.72
+      },
+      {
+        "w": "dagi",
+        "s": 62.74,
+        "e": 62.94
+      },
+      {
+        "w": "qavslar,",
+        "s": 63.08,
+        "e": 63.64
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 64.04,
+        "e": 64.54
+      },
+      {
+        "w": "ning",
+        "s": 64.58,
+        "e": 64.74
+      },
+      {
+        "w": "rou-ay-di",
+        "s": 64.96,
+        "e": 65.32
+      },
+      {
+        "w": "xususiyati",
+        "s": 65.42,
+        "e": 65.94
+      },
+      {
+        "w": "va",
+        "s": 66.06,
+        "e": 66.12
+      },
+      {
+        "w": "birlamchi",
+        "s": 66.5,
+        "e": 66.94
+      },
+      {
+        "w": "kalitsiz",
+        "s": 67.0,
+        "e": 67.47
+      },
+      {
+        "w": "qatorlar",
+        "s": 67.51,
+        "e": 67.95
+      },
+      {
+        "w": "dublikati",
+        "s": 68.01,
+        "e": 68.47
+      },
+      {
+        "w": "eng",
+        "s": 68.73,
+        "e": 68.89
+      },
+      {
+        "w": "ko‘p",
+        "s": 68.95,
+        "e": 69.11
+      },
+      {
+        "w": "uchraydigan",
+        "s": 69.19,
+        "e": 69.63
+      },
+      {
+        "w": "xatolardir.",
+        "s": 69.67,
+        "e": 70.19
+      }
+    ]
+  },
+  {
+    "id": "L8",
+    "scene": "pitfalls",
+    "text": "Xulosa qilib aytganda: jadval yaratishda doimo birlamchi kalit qo‘ying, DEFAULT ifodalarini qavsga oling, va kesh jadvallarida UNLOGGED imkoniyatidan unumli foydalaning.",
+    "show": "Xulosa qilib aytganda: jadval yaratishda doimo birlamchi kalit qo‘ying, DEFAULT ifodalarini qavsga oling, va kesh jadvallarida UNLOGGED imkoniyatidan unumli foydalaning.",
+    "say": "Xulosa qilib aytganda: jadval yaratishda doimo birlamchi kalit qo‘ying, difolt ifodalarini qavsga oling, va kesh jadvallarida anlogd imkoniyatidan unumli foydalaning.",
+    "a0": 71.33,
+    "a1": 81.42,
+    "words": [
+      {
+        "w": "Xulosa",
+        "s": 71.33,
+        "e": 71.65
+      },
+      {
+        "w": "qilib",
+        "s": 71.71,
+        "e": 71.87
+      },
+      {
+        "w": "aytganda:",
+        "s": 71.91,
+        "e": 72.25
+      },
+      {
+        "w": "jadval",
+        "s": 72.65,
+        "e": 72.97
+      },
+      {
+        "w": "yaratishda",
+        "s": 73.03,
+        "e": 73.43
+      },
+      {
+        "w": "doimo",
+        "s": 73.55,
+        "e": 73.91
+      },
+      {
+        "w": "birlamchi",
+        "s": 74.03,
+        "e": 74.45
+      },
+      {
+        "w": "kalit",
+        "s": 74.51,
+        "e": 74.79
+      },
+      {
+        "w": "qo‘ying,",
+        "s": 74.83,
+        "e": 75.13
+      },
+      {
+        "w": "difolt",
+        "s": 75.57,
+        "e": 75.93
+      },
+      {
+        "w": "ifodalarini",
+        "s": 75.99,
+        "e": 76.59
+      },
+      {
+        "w": "qavsga",
+        "s": 76.67,
+        "e": 77.05
+      },
+      {
+        "w": "oling,",
+        "s": 77.13,
+        "e": 77.37
+      },
+      {
+        "w": "va",
+        "s": 77.63,
+        "e": 77.69
+      },
+      {
+        "w": "kesh",
+        "s": 77.97,
+        "e": 78.23
+      },
+      {
+        "w": "jadvallarida",
+        "s": 78.29,
+        "e": 78.87
+      },
+      {
+        "w": "anlogd",
+        "s": 79.21,
+        "e": 79.67
+      },
+      {
+        "w": "imkoniyatidan",
+        "s": 79.77,
+        "e": 80.39
+      },
+      {
+        "w": "unumli",
+        "s": 80.55,
+        "e": 80.85
+      },
+      {
+        "w": "foydalaning.",
+        "s": 80.93,
+        "e": 81.42
+      }
+    ]
+  },
+  {
+    "id": "L9",
+    "scene": "xulosa",
+    "text": "Har uchala tizimning o‘ziga xos xususiyatlarini bilish ishonchli va ko‘chma arxitektura qurish poydevoridir.",
+    "show": "Har uchala tizimning o‘ziga xos xususiyatlarini bilish ishonchli va ko‘chma arxitektura qurish poydevoridir.",
+    "say": "Har uchala tizimning o‘ziga xos xususiyatlarini bilish ishonchli va ko‘chma arxitektura qurish poydevoridir.",
+    "a0": 82.12,
+    "a1": 87.76,
+    "words": [
+      {
+        "w": "Har",
+        "s": 82.12,
+        "e": 82.28
+      },
+      {
+        "w": "uchala",
+        "s": 82.36,
+        "e": 82.64
+      },
+      {
+        "w": "tizimning",
+        "s": 82.68,
+        "e": 83.06
+      },
+      {
+        "w": "o‘ziga",
+        "s": 83.18,
+        "e": 83.42
+      },
+      {
+        "w": "xos",
+        "s": 83.5,
+        "e": 83.68
+      },
+      {
+        "w": "xususiyatlarini",
+        "s": 83.72,
+        "e": 84.4
+      },
+      {
+        "w": "bilish",
+        "s": 84.42,
+        "e": 84.66
+      },
+      {
+        "w": "ishonchli",
+        "s": 84.96,
+        "e": 85.42
+      },
+      {
+        "w": "va",
+        "s": 85.5,
+        "e": 85.58
+      },
+      {
+        "w": "ko‘chma",
+        "s": 85.72,
+        "e": 86.06
+      },
+      {
+        "w": "arxitektura",
+        "s": 86.14,
+        "e": 86.7
+      },
+      {
+        "w": "qurish",
+        "s": 86.76,
+        "e": 87.02
+      },
+      {
+        "w": "poydevoridir.",
+        "s": 87.12,
+        "e": 87.76
+      }
+    ]
+  }
+]

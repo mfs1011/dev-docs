@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:12.536
+Uch tizim: Jadvallar va DEFAULT solishtiruvi
+
+00:12.536 --> 00:36.114
+MySQL: Qavsli ifodalar va TEXT/BLOB DEFAULT qoidasi
+
+00:36.114 --> 00:56.621
+MySQL: INVISIBLE ustunlar va indekslarni nusxalash
+
+00:56.621 --> 01:09.418
+SQLite: rowid va randomblob DEFAULT amaliyoti
+
+01:09.418 --> 01:35.921
+Oltita xavfli amaliy tuzoq
+
+01:35.921 --> 01:46.860
+Xulosa va tavsiyalar

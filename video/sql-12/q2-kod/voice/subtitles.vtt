@@ -1,0 +1,46 @@
+WEBVTT
+
+1
+00:01.420 --> 00:08.910
+Ushbu qismda PostgreSQL o‘n sakkiz terminalida jadvallar yaratish,
+DEFAULT qiymatlar va tizim ustunlarini amalda tekshiramiz.
+
+2
+00:12.190 --> 00:19.480
+Mahsulotlar jadvalini yaratib, narxga nol, soniga bir
+va vaqtga now funksiyasini DEFAULT qilib biriktiramiz.
+
+3
+00:19.910 --> 00:28.450
+Bir nechta qator kiritganimizda DEFAULT qiymatlar avtomatik to‘ldiriladi,
+birlamchi kalit bo‘lmagani uchun bir xil Non mahsuloti ikki marta yoziladi.
+
+4
+00:31.280 --> 00:39.570
+SELECT orqali yashirin ctid, xmin va tableoid ustunlarini
+o‘qiymiz. Har bir qator diskda o‘z jismoniy joyiga ega.
+
+5
+00:39.840 --> 00:47.100
+Bitta qatorni yangilaganimizda, ctid koordinatasi o‘zgaradi
+— sababi PostgreSQL yangi versiyani yangi joyga yozadi.
+
+6
+00:50.070 --> 00:56.360
+Agar o‘z ustunimizga ctid deb nom berishga urinsak,
+baza tizim ustuni bilan to‘qnashuv xatosini qaytaradi.
+
+7
+00:59.010 --> 01:06.770
+Boshqa jadvaldan nusxa olishda oddiy LIKE sukut qiymatlarni tashlab
+ketadi, INCLUDING DEFAULTS esa ularni to‘liq saqlab qoladi.
+
+8
+01:09.880 --> 01:19.220
+Vaqtinchalik jadval pg_temp sxemasida yaratiladi, UNLOGGED jadval esa WAL
+jurnalidan xoli bo‘lib relpersistence ustunida u harfi bilan belgilanadi.
+
+9
+01:22.150 --> 01:28.930
+Ushbu amaliy bilimlar PostgreSQL da ma'lumotlar jismoniy
+saqlanishi va jadvallarni to‘g‘ri boshqarishda juda qo‘l keladi.

@@ -4,6 +4,11 @@
 
 ## Tushuncha
 
+<video controls preload="metadata" playsinline poster="/video/sql/12-1-tushuncha.jpg" src="/video/sql/12-1-tushuncha.mp4">
+  <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/sql/12-1-tushuncha.chapters.vtt" default>
+  <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/sql/12-1-tushuncha.uz.vtt">
+</video>
+
 PostgreSQL hujjati jadvalni qog'ozdagi jadvalga o'xshatadi. U qatorlar va ustunlardan iborat:
 
 - **ustunlar** soni va tartibi qat'iy, har birining nomi va ma'lumot tipi bor;
@@ -78,6 +83,11 @@ Hujjat muhim ogohlantirish beradi: `ctid` qator **yangilanganda** yoki `VACUUM F
 - **`IF NOT EXISTS`** — jadval mavjud bo'lsa, xato o'rniga ogohlantirish beriladi. Hujjat ogohlantiradi: mavjud jadval yaratilmoqchi bo'lgan jadvalga umuman o'xshamasligi mumkin.
 
 ## Kod
+
+<video controls preload="metadata" playsinline poster="/video/sql/12-2-kod.jpg" src="/video/sql/12-2-kod.mp4">
+  <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/sql/12-2-kod.chapters.vtt" default>
+  <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/sql/12-2-kod.uz.vtt">
+</video>
 
 Misollar PostgreSQL 18.6, MySQL 9.7.2 va SQLite 3.54.0 da ishga tushirilgan.
 
@@ -239,6 +249,11 @@ WHERE relname IN ('mahsulotlar', 'vaqtinchalik', 'kesh');
 - `relpersistence` ustunida: `p` — doimiy, `t` — vaqtinchalik, `u` — WAL'siz.
 
 ## Dialektlar
+
+<video controls preload="metadata" playsinline poster="/video/sql/12-3-dialektlar.jpg" src="/video/sql/12-3-dialektlar.mp4">
+  <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/sql/12-3-dialektlar.chapters.vtt" default>
+  <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/sql/12-3-dialektlar.uz.vtt">
+</video>
 
 ### MySQL
 
