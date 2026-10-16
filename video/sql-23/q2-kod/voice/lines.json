@@ -1,0 +1,553 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Ushbu amaliy qismda PostgreSQL 18 da mijozlar jadvali asosida turli filtrlash operatorlarini real terminalda sinab ko‘ramiz.",
+    "show": "Ushbu amaliy qismda PostgreSQL 18 da mijozlar jadvali asosida turli filtrlash operatorlarini real terminalda sinab ko‘ramiz.",
+    "say": "Ushbu amaliy qismda Postgres 18 da mijozlar jadvali asosida turli filtrlash operatorlarini real terminalda sinab ko‘ramiz.",
+    "a0": 0.32,
+    "a1": 7.65,
+    "words": [
+      {
+        "w": "Ushbu",
+        "s": 0.32,
+        "e": 0.54
+      },
+      {
+        "w": "amaliy",
+        "s": 0.64,
+        "e": 0.92
+      },
+      {
+        "w": "qismda",
+        "s": 0.98,
+        "e": 1.36
+      },
+      {
+        "w": "Postgres",
+        "s": 1.5,
+        "e": 1.98
+      },
+      {
+        "w": "18",
+        "s": 1.98,
+        "e": 1.98
+      },
+      {
+        "w": "da",
+        "s": 2.6,
+        "e": 2.7
+      },
+      {
+        "w": "mijozlar",
+        "s": 2.86,
+        "e": 3.34
+      },
+      {
+        "w": "jadvali",
+        "s": 3.4,
+        "e": 3.74
+      },
+      {
+        "w": "asosida",
+        "s": 3.76,
+        "e": 4.2
+      },
+      {
+        "w": "turli",
+        "s": 4.28,
+        "e": 4.56
+      },
+      {
+        "w": "filtrlash",
+        "s": 4.64,
+        "e": 5.14
+      },
+      {
+        "w": "operatorlarini",
+        "s": 5.18,
+        "e": 5.86
+      },
+      {
+        "w": "real",
+        "s": 6.2,
+        "e": 6.44
+      },
+      {
+        "w": "terminalda",
+        "s": 6.48,
+        "e": 7.02
+      },
+      {
+        "w": "sinab",
+        "s": 7.06,
+        "e": 7.28
+      },
+      {
+        "w": "ko‘ramiz.",
+        "s": 7.3,
+        "e": 7.65
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "between_demo",
+    "text": "Oraliqni tekshirishda BETWEEN SYMMETRIC argumentlar teskari kelsa ham chegaralarni avtomatik tartiblab, natijani to‘g‘ri chiqaradi.",
+    "show": "Oraliqni tekshirishda BETWEEN SYMMETRIC argumentlar teskari kelsa ham chegaralarni avtomatik tartiblab, natijani to‘g‘ri chiqaradi.",
+    "say": "Oraliqni tekshirishda bitvin simmetrik argumentlar teskari kelsa ham chegaralarni avtomatik tartiblab, natijani to‘g‘ri chiqaradi.",
+    "a0": 8.53,
+    "a1": 15.65,
+    "words": [
+      {
+        "w": "Oraliqni",
+        "s": 8.53,
+        "e": 8.91
+      },
+      {
+        "w": "tekshirishda",
+        "s": 8.95,
+        "e": 9.49
+      },
+      {
+        "w": "bitvin",
+        "s": 9.73,
+        "e": 10.09
+      },
+      {
+        "w": "simmetrik",
+        "s": 10.17,
+        "e": 10.63
+      },
+      {
+        "w": "argumentlar",
+        "s": 10.71,
+        "e": 11.23
+      },
+      {
+        "w": "teskari",
+        "s": 11.29,
+        "e": 11.67
+      },
+      {
+        "w": "kelsa",
+        "s": 11.71,
+        "e": 11.97
+      },
+      {
+        "w": "ham",
+        "s": 12.01,
+        "e": 12.17
+      },
+      {
+        "w": "chegaralarni",
+        "s": 12.49,
+        "e": 13.07
+      },
+      {
+        "w": "avtomatik",
+        "s": 13.21,
+        "e": 13.71
+      },
+      {
+        "w": "tartiblab,",
+        "s": 13.73,
+        "e": 14.23
+      },
+      {
+        "w": "natijani",
+        "s": 14.45,
+        "e": 14.91
+      },
+      {
+        "w": "to‘g‘ri",
+        "s": 14.97,
+        "e": 15.27
+      },
+      {
+        "w": "chiqaradi.",
+        "s": 15.31,
+        "e": 15.65
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "null_in_demo",
+    "text": "Biroq NOT IN ro‘yxatiga NULL aralashsa, PostgreSQL kutilmaganda nolta qator qaytaradi, chunki noaniqlik butun ifodani NULL ga aylantiradi.",
+    "show": "Biroq NOT IN ro‘yxatiga NULL aralashsa, PostgreSQL kutilmaganda nolta qator qaytaradi, chunki noaniqlik butun ifodani NULL ga aylantiradi.",
+    "say": "Biroq not in ro‘yxatiga null aralashsa, Postgres kutilmaganda nolta qator qaytaradi, chunki noaniqlik butun ifodani null ga aylantiradi.",
+    "a0": 16.31,
+    "a1": 24.12,
+    "words": [
+      {
+        "w": "Biroq",
+        "s": 16.31,
+        "e": 16.55
+      },
+      {
+        "w": "not",
+        "s": 16.85,
+        "e": 17.03
+      },
+      {
+        "w": "in",
+        "s": 17.13,
+        "e": 17.21
+      },
+      {
+        "w": "ro‘yxatiga",
+        "s": 17.27,
+        "e": 17.75
+      },
+      {
+        "w": "null",
+        "s": 17.89,
+        "e": 18.07
+      },
+      {
+        "w": "aralashsa,",
+        "s": 18.15,
+        "e": 18.57
+      },
+      {
+        "w": "Postgres",
+        "s": 18.93,
+        "e": 19.37
+      },
+      {
+        "w": "kutilmaganda",
+        "s": 19.43,
+        "e": 20.01
+      },
+      {
+        "w": "nolta",
+        "s": 20.13,
+        "e": 20.41
+      },
+      {
+        "w": "qator",
+        "s": 20.45,
+        "e": 20.71
+      },
+      {
+        "w": "qaytaradi,",
+        "s": 20.75,
+        "e": 21.13
+      },
+      {
+        "w": "chunki",
+        "s": 21.49,
+        "e": 21.73
+      },
+      {
+        "w": "noaniqlik",
+        "s": 21.81,
+        "e": 22.35
+      },
+      {
+        "w": "butun",
+        "s": 22.47,
+        "e": 22.74
+      },
+      {
+        "w": "ifodani",
+        "s": 22.82,
+        "e": 23.22
+      },
+      {
+        "w": "null",
+        "s": 23.3,
+        "e": 23.48
+      },
+      {
+        "w": "ga",
+        "s": 23.52,
+        "e": 23.58
+      },
+      {
+        "w": "aylantiradi.",
+        "s": 23.62,
+        "e": 24.12
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "distinct_demo",
+    "text": "Shahri noma’lum mijozlarni yo‘qotmaslik uchun esa IS DISTINCT FROM operatori qo‘llanilib, NULL qiymatlar ham xavfsiz filtrlanadi.",
+    "show": "Shahri noma’lum mijozlarni yo‘qotmaslik uchun esa IS DISTINCT FROM operatori qo‘llanilib, NULL qiymatlar ham xavfsiz filtrlanadi.",
+    "say": "Shahri noma’lum mijozlarni yo‘qotmaslik uchun esa iz distinkt from operatori qo‘llanilib, null qiymatlar ham xavfsiz filtrlanadi.",
+    "a0": 24.76,
+    "a1": 31.86,
+    "words": [
+      {
+        "w": "Shahri",
+        "s": 24.76,
+        "e": 25.08
+      },
+      {
+        "w": "noma’lum",
+        "s": 25.14,
+        "e": 25.54
+      },
+      {
+        "w": "mijozlarni",
+        "s": 25.56,
+        "e": 26.04
+      },
+      {
+        "w": "yo‘qotmaslik",
+        "s": 26.08,
+        "e": 26.58
+      },
+      {
+        "w": "uchun",
+        "s": 26.64,
+        "e": 26.78
+      },
+      {
+        "w": "esa",
+        "s": 26.84,
+        "e": 27.0
+      },
+      {
+        "w": "iz",
+        "s": 27.4,
+        "e": 27.54
+      },
+      {
+        "w": "distinkt",
+        "s": 27.66,
+        "e": 28.12
+      },
+      {
+        "w": "from",
+        "s": 28.18,
+        "e": 28.42
+      },
+      {
+        "w": "operatori",
+        "s": 28.52,
+        "e": 28.96
+      },
+      {
+        "w": "qo‘llanilib,",
+        "s": 29.02,
+        "e": 29.52
+      },
+      {
+        "w": "null",
+        "s": 29.8,
+        "e": 29.94
+      },
+      {
+        "w": "qiymatlar",
+        "s": 30.02,
+        "e": 30.48
+      },
+      {
+        "w": "ham",
+        "s": 30.52,
+        "e": 30.7
+      },
+      {
+        "w": "xavfsiz",
+        "s": 30.8,
+        "e": 31.22
+      },
+      {
+        "w": "filtrlanadi.",
+        "s": 31.28,
+        "e": 31.86
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "like_regex_demo",
+    "text": "Shuningdek, ILIKE katta-kichik harfni ajratmasdan qidiradi, POSIX tilda belgisi esa telefon formatlarini aniq regex bilan tekshiradi.",
+    "show": "Shuningdek, ILIKE katta-kichik harfni ajratmasdan qidiradi, POSIX tilda belgisi esa telefon formatlarini aniq regex bilan tekshiradi.",
+    "say": "Shuningdek, ay-layk katta-kichik harfni ajratmasdan qidiradi, pozikz tilda belgisi esa telefon formatlarini aniq reg-eks bilan tekshiradi.",
+    "a0": 32.46,
+    "a1": 40.33,
+    "words": [
+      {
+        "w": "Shuningdek,",
+        "s": 32.46,
+        "e": 32.9
+      },
+      {
+        "w": "ay-layk",
+        "s": 33.08,
+        "e": 33.48
+      },
+      {
+        "w": "katta-kichik",
+        "s": 33.64,
+        "e": 34.16
+      },
+      {
+        "w": "harfni",
+        "s": 34.22,
+        "e": 34.56
+      },
+      {
+        "w": "ajratmasdan",
+        "s": 34.65,
+        "e": 35.25
+      },
+      {
+        "w": "qidiradi,",
+        "s": 35.29,
+        "e": 35.65
+      },
+      {
+        "w": "pozikz",
+        "s": 35.99,
+        "e": 36.41
+      },
+      {
+        "w": "tilda",
+        "s": 36.55,
+        "e": 36.85
+      },
+      {
+        "w": "belgisi",
+        "s": 36.91,
+        "e": 37.25
+      },
+      {
+        "w": "esa",
+        "s": 37.29,
+        "e": 37.47
+      },
+      {
+        "w": "telefon",
+        "s": 37.77,
+        "e": 38.15
+      },
+      {
+        "w": "formatlarini",
+        "s": 38.17,
+        "e": 38.79
+      },
+      {
+        "w": "aniq",
+        "s": 38.95,
+        "e": 39.17
+      },
+      {
+        "w": "reg-eks",
+        "s": 39.27,
+        "e": 39.61
+      },
+      {
+        "w": "bilan",
+        "s": 39.67,
+        "e": 39.85
+      },
+      {
+        "w": "tekshiradi.",
+        "s": 39.91,
+        "e": 40.33
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "xulosa",
+    "text": "Har bir operatorning NULL bilan ishlash tabiatini bilish SQL so‘rovlarida kutilmagan xatolar va ma’lumotlar yo‘qolishining oldini oladi.",
+    "show": "Har bir operatorning NULL bilan ishlash tabiatini bilish SQL so‘rovlarida kutilmagan xatolar va ma’lumotlar yo‘qolishining oldini oladi.",
+    "say": "Har bir operatorning null bilan ishlash tabiatini bilish es-kyu-el so‘rovlarida kutilmagan xatolar va ma’lumotlar yo‘qolishining oldini oladi.",
+    "a0": 41.11,
+    "a1": 48.12,
+    "words": [
+      {
+        "w": "Har",
+        "s": 41.11,
+        "e": 41.25
+      },
+      {
+        "w": "bir",
+        "s": 41.29,
+        "e": 41.39
+      },
+      {
+        "w": "operatorning",
+        "s": 41.45,
+        "e": 42.03
+      },
+      {
+        "w": "null",
+        "s": 42.11,
+        "e": 42.31
+      },
+      {
+        "w": "bilan",
+        "s": 42.37,
+        "e": 42.55
+      },
+      {
+        "w": "ishlash",
+        "s": 42.61,
+        "e": 42.87
+      },
+      {
+        "w": "tabiatini",
+        "s": 42.89,
+        "e": 43.35
+      },
+      {
+        "w": "bilish",
+        "s": 43.41,
+        "e": 43.67
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 43.94,
+        "e": 44.34
+      },
+      {
+        "w": "so‘rovlarida",
+        "s": 44.38,
+        "e": 44.94
+      },
+      {
+        "w": "kutilmagan",
+        "s": 45.0,
+        "e": 45.5
+      },
+      {
+        "w": "xatolar",
+        "s": 45.56,
+        "e": 46.08
+      },
+      {
+        "w": "va",
+        "s": 46.14,
+        "e": 46.2
+      },
+      {
+        "w": "ma’lumotlar",
+        "s": 46.28,
+        "e": 46.82
+      },
+      {
+        "w": "yo‘qolishining",
+        "s": 46.84,
+        "e": 47.36
+      },
+      {
+        "w": "oldini",
+        "s": 47.52,
+        "e": 47.8
+      },
+      {
+        "w": "oladi.",
+        "s": 47.86,
+        "e": 48.12
+      }
+    ]
+  }
+]
