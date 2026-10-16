@@ -1,0 +1,44 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "UPSERT buyrug‘i har bir ma’lumotlar bazasida turlicha amalga oshirilgan: MySQL o‘z sintaksisiga ega, SQLite esa PostgreSQL andozasiga amal qiladi.",
+    "show": "UPSERT buyrug‘i har bir ma’lumotlar bazasida turlicha amalga oshirilgan: MySQL o‘z sintaksisiga ega, SQLite esa PostgreSQL andozasiga amal qiladi.",
+    "say": "Apsert buyrug‘i har bir ma’lumotlar bazasida turlicha amalga oshirilgan: May es-kyu-el o‘z sintaksisiga ega, Es-kyu-layt esa Postgres andozasiga amal qiladi."
+  },
+  {
+    "id": "L2",
+    "scene": "mysql_duplicate_key",
+    "text": "MySQL da MERGE yo‘q, uning o‘rniga INSERT ON DUPLICATE KEY UPDATE ishlatiladi. Yangi qiymatlarga VALUES qavsi o‘rnida yangi AS new taxallusi orqali murojaat qilinadi.",
+    "show": "MySQL da MERGE yo‘q, uning o‘rniga INSERT ON DUPLICATE KEY UPDATE ishlatiladi. Yangi qiymatlarga VALUES qavsi o‘rnida yangi AS new taxallusi orqali murojaat qilinadi.",
+    "say": "May es-kyu-el da myorj yo‘q, uning o‘rniga insert on dyuplikate key apdeyt ishlatiladi. Yangi qiymatlarga velyus qavsi o‘rnida yangi ez nyu taxallusi orqali murojaat qilinadi."
+  },
+  {
+    "id": "L3",
+    "scene": "mysql_replace_trap",
+    "text": "MySQL dagi REPLACE buyrug‘i mavjud qatorni o‘chirib qayta yozadi. Bu esa avtomatik ID ni o‘zgartiradi va tashqi kalit bog‘lanishlarini buzib yuboradi.",
+    "show": "MySQL dagi REPLACE buyrug‘i mavjud qatorni o‘chirib qayta yozadi. Bu esa avtomatik ID ni o‘zgartiradi va tashqi kalit bog‘lanishlarini buzib yuboradi.",
+    "say": "May es-kyu-el dagi ripleys buyrug‘i mavjud qatorni o‘chirib qayta yozadi. Bu esa avtomatik ay-di-ni o‘zgartiradi va tashqi kalit bog‘lanishlarini buzib yuboradi."
+  },
+  {
+    "id": "L4",
+    "scene": "sqlite_upsert",
+    "text": "SQLite da esa PostgreSQL kabi ON CONFLICT ishlaydi, qo‘shimcha ravishda bir nechta konflikt maqsadlarini ketma-ket tekshirish imkoniyati ham bor.",
+    "show": "SQLite da esa PostgreSQL kabi ON CONFLICT ishlaydi, qo‘shimcha ravishda bir nechta konflikt maqsadlarini ketma-ket tekshirish imkoniyati ham bor.",
+    "say": "Es-kyu-layt da esa Postgres kabi on konflikt ishlaydi, qo‘shimcha ravishda bir nechta konflikt maqsadlarini ketma-ket tekshirish imkoniyati ham bor."
+  },
+  {
+    "id": "L5",
+    "scene": "dml_pitfalls",
+    "text": "REPLACE ni oddiy yangilash deb o‘ylash yoki SQLite da INSERT SELECT ortidan WHERE true qo‘ymaslik ko‘p uchraydigan sintaktik va mantiqiy xatolardir.",
+    "show": "REPLACE ni oddiy yangilash deb o‘ylash yoki SQLite da INSERT SELECT ortidan WHERE true qo‘ymaslik ko‘p uchraydigan sintaktik va mantiqiy xatolardir.",
+    "say": "Ripleys ni oddiy yangilash deb o‘ylash yoki Es-kyu-layt da insert selekt ortidan ver tru qo‘ymaslik ko‘p uchraydigan sintaktik va mantiqiy xatolardir."
+  },
+  {
+    "id": "L6",
+    "scene": "xulosa",
+    "text": "Har bir tizimning konfliktlarni hal qilish va ID hisoblagichlarini boshqarish qoidalarini bilish barqaror ma’lumotlar bazasini yaratishning kalitidir.",
+    "show": "Har bir tizimning konfliktlarni hal qilish va ID hisoblagichlarini boshqarish qoidalarini bilish barqaror ma’lumotlar bazasini yaratishning kalitidir.",
+    "say": "Har bir tizimning konfliktlarni hal qilish va ay-di hisoblagichlarini boshqarish qoidalarini bilish barqaror ma’lumotlar bazasini yaratishning kalitidir."
+  }
+]

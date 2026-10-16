@@ -1,0 +1,31 @@
+WEBVTT
+
+1
+00:01.420 --> 00:08.990
+Amaliyotda eng ko‘p uchraydigan vazifalardan biri — qator mavjud
+bo‘lmasa uni qo‘shish, agar allaqachon mavjud bo‘lsa yangilashdir.
+
+2
+00:11.810 --> 00:20.000
+Avval SELECT qilib, so‘ng INSERT yoki UPDATE yozish parallel so‘rovlar
+oqimida kalit to‘qnashuvi yoki ma’lumotlar yo‘qolishiga sabab bo‘ladi.
+
+3
+00:23.050 --> 00:32.210
+UPSERT yondashuvi bitta atomar buyruqda ishlaydi: PostgreSQL da INSERT ON
+CONFLICT takrorlanmas cheklov buzilganda muqobil yangilashni kafolatlaydi.
+
+4
+00:35.140 --> 00:43.210
+EXCLUDED so‘zi chetlatilgan, ya’ni qo‘shilmoqchi bo‘lgan yangi qiymatlarni
+ifodalaydi va mavjud jadval ustunlari bilan qo‘shish imkonini beradi.
+
+5
+00:46.240 --> 00:54.960
+Standart MERGE buyrug‘i esa manba va maqsad jadvallarini solishtirib,
+bitta so‘rovda INSERT, UPDATE hamda DELETE amallarini birgalikda bajaradi.
+
+6
+00:57.890 --> 01:05.450
+UPSERT va MERGE buyruqlaridan foydalanish ma’lumotlar bazasida poyga
+holatlarining oldini oluvchi eng asosiy xavfsizlik chorasidir.

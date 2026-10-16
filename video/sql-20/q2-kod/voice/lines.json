@@ -1,0 +1,618 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Ushbu amaliy darsda PostgreSQL 18.6 terminalida INSERT ON CONFLICT, EXCLUDED jadvali hamda standart MERGE buyrug‘ini sinab ko‘ramiz.",
+    "show": "Ushbu amaliy darsda PostgreSQL 18.6 terminalida INSERT ON CONFLICT, EXCLUDED jadvali hamda standart MERGE buyrug‘ini sinab ko‘ramiz.",
+    "say": "Ushbu amaliy darsda Postgres o‘n sakkiz.6 terminalida insert on konflikt, eksklyuded jadvali hamda standart myorj buyrug‘ini sinab ko‘ramiz.",
+    "a0": 0.24,
+    "a1": 9.33,
+    "words": [
+      {
+        "w": "Ushbu",
+        "s": 0.24,
+        "e": 0.46
+      },
+      {
+        "w": "amaliy",
+        "s": 0.54,
+        "e": 0.84
+      },
+      {
+        "w": "darsda",
+        "s": 0.88,
+        "e": 1.22
+      },
+      {
+        "w": "Postgres",
+        "s": 1.38,
+        "e": 1.88
+      },
+      {
+        "w": "o‘n",
+        "s": 1.96,
+        "e": 2.04
+      },
+      {
+        "w": "sakkiz.6",
+        "s": 2.04,
+        "e": 3.14
+      },
+      {
+        "w": "terminalida",
+        "s": 3.14,
+        "e": 3.72
+      },
+      {
+        "w": "insert",
+        "s": 4.16,
+        "e": 4.56
+      },
+      {
+        "w": "on",
+        "s": 4.68,
+        "e": 4.78
+      },
+      {
+        "w": "konflikt,",
+        "s": 4.9,
+        "e": 5.42
+      },
+      {
+        "w": "eksklyuded",
+        "s": 5.76,
+        "e": 6.28
+      },
+      {
+        "w": "jadvali",
+        "s": 6.32,
+        "e": 6.72
+      },
+      {
+        "w": "hamda",
+        "s": 6.88,
+        "e": 7.14
+      },
+      {
+        "w": "standart",
+        "s": 7.46,
+        "e": 7.93
+      },
+      {
+        "w": "myorj",
+        "s": 7.99,
+        "e": 8.23
+      },
+      {
+        "w": "buyrug‘ini",
+        "s": 8.31,
+        "e": 8.69
+      },
+      {
+        "w": "sinab",
+        "s": 8.75,
+        "e": 8.95
+      },
+      {
+        "w": "ko‘ramiz.",
+        "s": 8.99,
+        "e": 9.33
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "on_conflict_demo",
+    "text": "Lug‘at jadvaliga so‘z kiritilganda ON CONFLICT DO UPDATE buyrug‘i mavjud hisoblagichni oshiradi, RETURNING esa yangi yoki eski holatni qaytaradi.",
+    "show": "Lug‘at jadvaliga so‘z kiritilganda ON CONFLICT DO UPDATE buyrug‘i mavjud hisoblagichni oshiradi, RETURNING esa yangi yoki eski holatni qaytaradi.",
+    "say": "Lug‘at jadvaliga so‘z kiritilganda on konflikt du apdeyt buyrug‘i mavjud hisoblagichni oshiradi, retyorning esa yangi yoki eski holatni qaytaradi.",
+    "a0": 10.01,
+    "a1": 18.47,
+    "words": [
+      {
+        "w": "Lug‘at",
+        "s": 10.01,
+        "e": 10.29
+      },
+      {
+        "w": "jadvaliga",
+        "s": 10.33,
+        "e": 10.79
+      },
+      {
+        "w": "so‘z",
+        "s": 10.85,
+        "e": 11.01
+      },
+      {
+        "w": "kiritilganda",
+        "s": 11.07,
+        "e": 11.69
+      },
+      {
+        "w": "on",
+        "s": 11.97,
+        "e": 12.09
+      },
+      {
+        "w": "konflikt",
+        "s": 12.19,
+        "e": 12.67
+      },
+      {
+        "w": "du",
+        "s": 12.71,
+        "e": 12.79
+      },
+      {
+        "w": "apdeyt",
+        "s": 12.93,
+        "e": 13.25
+      },
+      {
+        "w": "buyrug‘i",
+        "s": 13.31,
+        "e": 13.65
+      },
+      {
+        "w": "mavjud",
+        "s": 13.97,
+        "e": 14.31
+      },
+      {
+        "w": "hisoblagichni",
+        "s": 14.35,
+        "e": 14.93
+      },
+      {
+        "w": "oshiradi,",
+        "s": 14.99,
+        "e": 15.37
+      },
+      {
+        "w": "retyorning",
+        "s": 15.83,
+        "e": 16.27
+      },
+      {
+        "w": "esa",
+        "s": 16.29,
+        "e": 16.47
+      },
+      {
+        "w": "yangi",
+        "s": 16.61,
+        "e": 16.93
+      },
+      {
+        "w": "yoki",
+        "s": 16.99,
+        "e": 17.23
+      },
+      {
+        "w": "eski",
+        "s": 17.37,
+        "e": 17.61
+      },
+      {
+        "w": "holatni",
+        "s": 17.65,
+        "e": 17.99
+      },
+      {
+        "w": "qaytaradi.",
+        "s": 18.03,
+        "e": 18.47
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "excluded_usage",
+    "text": "Bir nechta qator qo‘shilganda EXCLUDED nuqta soni iborasi chetlatilgan yangi qiymatni olib, uni jadvaldagi mavjud soniga qo‘shib yangilaydi.",
+    "show": "Bir nechta qator qo‘shilganda EXCLUDED nuqta soni iborasi chetlatilgan yangi qiymatni olib, uni jadvaldagi mavjud soniga qo‘shib yangilaydi.",
+    "say": "Bir nechta qator qo‘shilganda eksklyuded nuqta soni iborasi chetlatilgan yangi qiymatni olib, uni jadvaldagi mavjud soniga qo‘shib yangilaydi.",
+    "a0": 19.31,
+    "a1": 27.54,
+    "words": [
+      {
+        "w": "Bir",
+        "s": 19.31,
+        "e": 19.41
+      },
+      {
+        "w": "nechta",
+        "s": 19.45,
+        "e": 19.69
+      },
+      {
+        "w": "qator",
+        "s": 19.73,
+        "e": 19.97
+      },
+      {
+        "w": "qo‘shilganda",
+        "s": 20.01,
+        "e": 20.55
+      },
+      {
+        "w": "eksklyuded",
+        "s": 20.91,
+        "e": 21.47
+      },
+      {
+        "w": "nuqta",
+        "s": 21.53,
+        "e": 21.79
+      },
+      {
+        "w": "soni",
+        "s": 21.87,
+        "e": 22.11
+      },
+      {
+        "w": "iborasi",
+        "s": 22.19,
+        "e": 22.62
+      },
+      {
+        "w": "chetlatilgan",
+        "s": 22.94,
+        "e": 23.58
+      },
+      {
+        "w": "yangi",
+        "s": 23.74,
+        "e": 24.02
+      },
+      {
+        "w": "qiymatni",
+        "s": 24.08,
+        "e": 24.48
+      },
+      {
+        "w": "olib,",
+        "s": 24.54,
+        "e": 24.72
+      },
+      {
+        "w": "uni",
+        "s": 25.0,
+        "e": 25.14
+      },
+      {
+        "w": "jadvaldagi",
+        "s": 25.3,
+        "e": 25.82
+      },
+      {
+        "w": "mavjud",
+        "s": 25.9,
+        "e": 26.22
+      },
+      {
+        "w": "soniga",
+        "s": 26.28,
+        "e": 26.62
+      },
+      {
+        "w": "qo‘shib",
+        "s": 26.68,
+        "e": 27.0
+      },
+      {
+        "w": "yangilaydi.",
+        "s": 27.08,
+        "e": 27.54
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "conflict_rules",
+    "text": "Konflikt maqsadi faqat UNIQUE yoki birlamchi kalit ustunida ishlaydi, shuningdek bitta buyruqda bir xil kalit ikki marta kelsa xatolik beradi.",
+    "show": "Konflikt maqsadi faqat UNIQUE yoki birlamchi kalit ustunida ishlaydi, shuningdek bitta buyruqda bir xil kalit ikki marta kelsa xatolik beradi.",
+    "say": "Konflikt maqsadi faqat yunik yoki birlamchi kalit ustunida ishlaydi, shuningdek bitta buyruqda bir xil kalit ikki marta kelsa xatolik beradi.",
+    "a0": 28.16,
+    "a1": 35.82,
+    "words": [
+      {
+        "w": "Konflikt",
+        "s": 28.16,
+        "e": 28.58
+      },
+      {
+        "w": "maqsadi",
+        "s": 28.64,
+        "e": 28.98
+      },
+      {
+        "w": "faqat",
+        "s": 29.02,
+        "e": 29.3
+      },
+      {
+        "w": "yunik",
+        "s": 29.42,
+        "e": 29.7
+      },
+      {
+        "w": "yoki",
+        "s": 29.76,
+        "e": 29.96
+      },
+      {
+        "w": "birlamchi",
+        "s": 30.06,
+        "e": 30.52
+      },
+      {
+        "w": "kalit",
+        "s": 30.56,
+        "e": 30.8
+      },
+      {
+        "w": "ustunida",
+        "s": 30.86,
+        "e": 31.22
+      },
+      {
+        "w": "ishlaydi,",
+        "s": 31.26,
+        "e": 31.56
+      },
+      {
+        "w": "shuningdek",
+        "s": 32.0,
+        "e": 32.38
+      },
+      {
+        "w": "bitta",
+        "s": 32.68,
+        "e": 32.96
+      },
+      {
+        "w": "buyruqda",
+        "s": 33.02,
+        "e": 33.42
+      },
+      {
+        "w": "bir",
+        "s": 33.52,
+        "e": 33.64
+      },
+      {
+        "w": "xil",
+        "s": 33.68,
+        "e": 33.82
+      },
+      {
+        "w": "kalit",
+        "s": 33.88,
+        "e": 34.14
+      },
+      {
+        "w": "ikki",
+        "s": 34.22,
+        "e": 34.42
+      },
+      {
+        "w": "marta",
+        "s": 34.46,
+        "e": 34.68
+      },
+      {
+        "w": "kelsa",
+        "s": 34.72,
+        "e": 35.0
+      },
+      {
+        "w": "xatolik",
+        "s": 35.12,
+        "e": 35.5
+      },
+      {
+        "w": "beradi.",
+        "s": 35.54,
+        "e": 35.82
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "merge_demo",
+    "text": "Standart MERGE buyrug‘i yangi kelgan tovarlarni ombor bilan solishtirib, bitta harakatda borlarini yangiladi, yangilarini qo‘shdi va eskisini o‘chirdi.",
+    "show": "Standart MERGE buyrug‘i yangi kelgan tovarlarni ombor bilan solishtirib, bitta harakatda borlarini yangiladi, yangilarini qo‘shdi va eskisini o‘chirdi.",
+    "say": "Standart myorj buyrug‘i yangi kelgan tovarlarni ombor bilan solishtirib, bitta harakatda borlarini yangiladi, yangilarini qo‘shdi va eskisini o‘chirdi.",
+    "a0": 36.67,
+    "a1": 44.75,
+    "words": [
+      {
+        "w": "Standart",
+        "s": 36.67,
+        "e": 37.09
+      },
+      {
+        "w": "myorj",
+        "s": 37.15,
+        "e": 37.39
+      },
+      {
+        "w": "buyrug‘i",
+        "s": 37.47,
+        "e": 37.81
+      },
+      {
+        "w": "yangi",
+        "s": 37.93,
+        "e": 38.17
+      },
+      {
+        "w": "kelgan",
+        "s": 38.21,
+        "e": 38.51
+      },
+      {
+        "w": "tovarlarni",
+        "s": 38.55,
+        "e": 39.11
+      },
+      {
+        "w": "ombor",
+        "s": 39.25,
+        "e": 39.55
+      },
+      {
+        "w": "bilan",
+        "s": 39.59,
+        "e": 39.77
+      },
+      {
+        "w": "solishtirib,",
+        "s": 39.83,
+        "e": 40.29
+      },
+      {
+        "w": "bitta",
+        "s": 40.63,
+        "e": 40.89
+      },
+      {
+        "w": "harakatda",
+        "s": 40.91,
+        "e": 41.41
+      },
+      {
+        "w": "borlarini",
+        "s": 41.49,
+        "e": 41.95
+      },
+      {
+        "w": "yangiladi,",
+        "s": 42.01,
+        "e": 42.45
+      },
+      {
+        "w": "yangilarini",
+        "s": 42.77,
+        "e": 43.33
+      },
+      {
+        "w": "qo‘shdi",
+        "s": 43.39,
+        "e": 43.67
+      },
+      {
+        "w": "va",
+        "s": 43.71,
+        "e": 43.77
+      },
+      {
+        "w": "eskisini",
+        "s": 43.93,
+        "e": 44.35
+      },
+      {
+        "w": "o‘chirdi.",
+        "s": 44.41,
+        "e": 44.75
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "xulosa",
+    "text": "PostgreSQL dagi ON CONFLICT yuqori parallellik uchun, MERGE esa murakkab manba jadvallarini sinxronlash uchun eng mukammal vositadir.",
+    "show": "PostgreSQL dagi ON CONFLICT yuqori parallellik uchun, MERGE esa murakkab manba jadvallarini sinxronlash uchun eng mukammal vositadir.",
+    "say": "Postgres dagi on konflikt yuqori parallellik uchun, myorj esa murakkab manba jadvallarini sinxronlash uchun eng mukammal vositadir.",
+    "a0": 45.53,
+    "a1": 53.4,
+    "words": [
+      {
+        "w": "Postgres",
+        "s": 45.53,
+        "e": 45.97
+      },
+      {
+        "w": "dagi",
+        "s": 46.03,
+        "e": 46.23
+      },
+      {
+        "w": "on",
+        "s": 46.35,
+        "e": 46.45
+      },
+      {
+        "w": "konflikt",
+        "s": 46.53,
+        "e": 47.01
+      },
+      {
+        "w": "yuqori",
+        "s": 47.29,
+        "e": 47.73
+      },
+      {
+        "w": "parallellik",
+        "s": 47.84,
+        "e": 48.38
+      },
+      {
+        "w": "uchun,",
+        "s": 48.42,
+        "e": 48.6
+      },
+      {
+        "w": "myorj",
+        "s": 48.88,
+        "e": 49.16
+      },
+      {
+        "w": "esa",
+        "s": 49.2,
+        "e": 49.38
+      },
+      {
+        "w": "murakkab",
+        "s": 49.68,
+        "e": 50.14
+      },
+      {
+        "w": "manba",
+        "s": 50.24,
+        "e": 50.52
+      },
+      {
+        "w": "jadvallarini",
+        "s": 50.56,
+        "e": 51.14
+      },
+      {
+        "w": "sinxronlash",
+        "s": 51.22,
+        "e": 51.76
+      },
+      {
+        "w": "uchun",
+        "s": 51.78,
+        "e": 51.98
+      },
+      {
+        "w": "eng",
+        "s": 52.16,
+        "e": 52.32
+      },
+      {
+        "w": "mukammal",
+        "s": 52.36,
+        "e": 52.84
+      },
+      {
+        "w": "vositadir.",
+        "s": 52.9,
+        "e": 53.4
+      }
+    ]
+  }
+]

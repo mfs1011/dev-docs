@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:10.510
+Qator bo‘lmasa qo‘sh, bo‘lsa yangila
+
+00:10.510 --> 00:21.896
+SELECT va INSERT tuzog‘i
+
+00:21.896 --> 00:34.020
+UPSERT va ON CONFLICT mohiyati
+
+00:34.020 --> 00:45.048
+EXCLUDED maxsus virtual jadvali
+
+00:45.048 --> 00:56.778
+Standart SQL: MERGE buyrug‘i
+
+00:56.778 --> 01:09.180
+Xulosa
