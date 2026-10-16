@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:13.805
+PostgreSQL 18: RETURNING amaliyoti
+
+00:13.805 --> 00:25.679
+INSERT RETURNING: Yangi ID va ko‘p qatorlar
+
+00:25.679 --> 00:37.945
+UPDATE: old va new bilan solishtirish
+
+00:37.945 --> 00:48.948
+DELETE RETURNING va bo‘sh natija
+
+00:48.948 --> 01:01.263
+WITH CTE orqali o‘chirish va arxivlash
+
+01:01.263 --> 01:13.660
+Xulosa
