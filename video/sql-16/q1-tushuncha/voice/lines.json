@@ -1,0 +1,607 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Jadval yaratilgandan keyin talablar o‘zgaradi: yangi ustun, boshqa ma'lumot tipi yoki cheklovlar kerak bo‘ladi. Buning uchun ma'lumotni o‘chirmasdan tuzilmani o‘zgartiruvchi ALTER TABLE buyrug‘i xizmat qiladi.",
+    "show": "Jadval yaratilgandan keyin talablar o‘zgaradi: yangi ustun, boshqa ma'lumot tipi yoki cheklovlar kerak bo‘ladi. Buning uchun ma'lumotni o‘chirmasdan tuzilmani o‘zgartiruvchi ALTER TABLE buyrug‘i xizmat qiladi.",
+    "say": "Jadval yaratilgandan keyin talablar o‘zgaradi: yangi ustun, boshqa ma'lumot tipi yoki cheklovlar kerak bo‘ladi. Buning uchun ma'lumotni o‘chirmasdan tuzilmani o‘zgartiruvchi alter teybl buyrug‘i xizmat qiladi.",
+    "a0": 0.38,
+    "a1": 12.43,
+    "words": [
+      {
+        "w": "Jadval",
+        "s": 0.38,
+        "e": 0.64
+      },
+      {
+        "w": "yaratilgandan",
+        "s": 0.7,
+        "e": 1.38
+      },
+      {
+        "w": "keyin",
+        "s": 1.44,
+        "e": 1.76
+      },
+      {
+        "w": "talablar",
+        "s": 1.88,
+        "e": 2.34
+      },
+      {
+        "w": "o‘zgaradi:",
+        "s": 2.46,
+        "e": 2.88
+      },
+      {
+        "w": "yangi",
+        "s": 3.38,
+        "e": 3.64
+      },
+      {
+        "w": "ustun,",
+        "s": 3.72,
+        "e": 4.18
+      },
+      {
+        "w": "boshqa",
+        "s": 4.36,
+        "e": 4.62
+      },
+      {
+        "w": "ma'lumot",
+        "s": 4.66,
+        "e": 5.04
+      },
+      {
+        "w": "tipi",
+        "s": 5.1,
+        "e": 5.38
+      },
+      {
+        "w": "yoki",
+        "s": 5.6,
+        "e": 5.8
+      },
+      {
+        "w": "cheklovlar",
+        "s": 5.9,
+        "e": 6.38
+      },
+      {
+        "w": "kerak",
+        "s": 6.42,
+        "e": 6.66
+      },
+      {
+        "w": "bo‘ladi.",
+        "s": 6.68,
+        "e": 6.94
+      },
+      {
+        "w": "Buning",
+        "s": 7.4,
+        "e": 7.61
+      },
+      {
+        "w": "uchun",
+        "s": 7.63,
+        "e": 7.83
+      },
+      {
+        "w": "ma'lumotni",
+        "s": 7.91,
+        "e": 8.39
+      },
+      {
+        "w": "o‘chirmasdan",
+        "s": 8.47,
+        "e": 9.05
+      },
+      {
+        "w": "tuzilmani",
+        "s": 9.15,
+        "e": 9.59
+      },
+      {
+        "w": "o‘zgartiruvchi",
+        "s": 9.67,
+        "e": 10.29
+      },
+      {
+        "w": "alter",
+        "s": 10.77,
+        "e": 11.05
+      },
+      {
+        "w": "teybl",
+        "s": 11.15,
+        "e": 11.45
+      },
+      {
+        "w": "buyrug‘i",
+        "s": 11.53,
+        "e": 11.87
+      },
+      {
+        "w": "xizmat",
+        "s": 11.89,
+        "e": 12.17
+      },
+      {
+        "w": "qiladi.",
+        "s": 12.19,
+        "e": 12.43
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "asosiy_amallar",
+    "text": "ALTER TABLE orqali ustun qo‘shish va o‘chirish, ma'lumot tipini o‘zgartirish, NOT NULL va CHECK cheklovlarini boshqarish hamda ustun yoki jadval nomini o‘zgartirish mumkin.",
+    "show": "ALTER TABLE orqali ustun qo‘shish va o‘chirish, ma'lumot tipini o‘zgartirish, NOT NULL va CHECK cheklovlarini boshqarish hamda ustun yoki jadval nomini o‘zgartirish mumkin.",
+    "say": "Alter teybl orqali ustun qo‘shish va o‘chirish, ma'lumot tipini o‘zgartirish, not nal va chek cheklovlarini boshqarish hamda ustun yoki jadval nomini o‘zgartirish mumkin.",
+    "a0": 13.23,
+    "a1": 23.18,
+    "words": [
+      {
+        "w": "Alter",
+        "s": 13.23,
+        "e": 13.47
+      },
+      {
+        "w": "teybl",
+        "s": 13.53,
+        "e": 13.79
+      },
+      {
+        "w": "orqali",
+        "s": 13.87,
+        "e": 14.23
+      },
+      {
+        "w": "ustun",
+        "s": 14.39,
+        "e": 14.65
+      },
+      {
+        "w": "qo‘shish",
+        "s": 14.71,
+        "e": 15.09
+      },
+      {
+        "w": "va",
+        "s": 15.15,
+        "e": 15.23
+      },
+      {
+        "w": "o‘chirish,",
+        "s": 15.43,
+        "e": 15.95
+      },
+      {
+        "w": "ma'lumot",
+        "s": 16.27,
+        "e": 16.61
+      },
+      {
+        "w": "tipini",
+        "s": 16.65,
+        "e": 16.93
+      },
+      {
+        "w": "o‘zgartirish,",
+        "s": 17.05,
+        "e": 17.69
+      },
+      {
+        "w": "not",
+        "s": 18.11,
+        "e": 18.29
+      },
+      {
+        "w": "nal",
+        "s": 18.37,
+        "e": 18.59
+      },
+      {
+        "w": "va",
+        "s": 18.65,
+        "e": 18.73
+      },
+      {
+        "w": "chek",
+        "s": 18.87,
+        "e": 19.05
+      },
+      {
+        "w": "cheklovlarini",
+        "s": 19.09,
+        "e": 19.63
+      },
+      {
+        "w": "boshqarish",
+        "s": 19.71,
+        "e": 20.25
+      },
+      {
+        "w": "hamda",
+        "s": 20.29,
+        "e": 20.53
+      },
+      {
+        "w": "ustun",
+        "s": 20.91,
+        "e": 21.25
+      },
+      {
+        "w": "yoki",
+        "s": 21.25,
+        "e": 21.55
+      },
+      {
+        "w": "jadval",
+        "s": 21.65,
+        "e": 21.99
+      },
+      {
+        "w": "nomini",
+        "s": 22.03,
+        "e": 22.31
+      },
+      {
+        "w": "o‘zgartirish",
+        "s": 22.45,
+        "e": 22.94
+      },
+      {
+        "w": "mumkin.",
+        "s": 22.96,
+        "e": 23.18
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "default_tezligi",
+    "text": "Eng muhim qoidasi: o‘zgarmas DEFAULT qiymatli yangi ustun qo‘shish jadval qatorlarini qayta yozishni talab qilmaydi va millionlab qatorli jadvallarda ham bir zumda bajariladi.",
+    "show": "Eng muhim qoidasi: o‘zgarmas DEFAULT qiymatli yangi ustun qo‘shish jadval qatorlarini qayta yozishni talab qilmaydi va millionlab qatorli jadvallarda ham bir zumda bajariladi.",
+    "say": "Eng muhim qoidasi: o‘zgarmas difolt qiymatli yangi ustun qo‘shish jadval qatorlarini qayta yozishni talab qilmaydi va millionlab qatorli jadvallarda ham bir zumda bajariladi.",
+    "a0": 23.96,
+    "a1": 34.04,
+    "words": [
+      {
+        "w": "Eng",
+        "s": 23.96,
+        "e": 24.1
+      },
+      {
+        "w": "muhim",
+        "s": 24.14,
+        "e": 24.44
+      },
+      {
+        "w": "qoidasi:",
+        "s": 24.52,
+        "e": 24.92
+      },
+      {
+        "w": "o‘zgarmas",
+        "s": 25.34,
+        "e": 25.82
+      },
+      {
+        "w": "difolt",
+        "s": 25.9,
+        "e": 26.24
+      },
+      {
+        "w": "qiymatli",
+        "s": 26.28,
+        "e": 26.7
+      },
+      {
+        "w": "yangi",
+        "s": 26.8,
+        "e": 27.1
+      },
+      {
+        "w": "ustun",
+        "s": 27.18,
+        "e": 27.42
+      },
+      {
+        "w": "qo‘shish",
+        "s": 27.48,
+        "e": 27.8
+      },
+      {
+        "w": "jadval",
+        "s": 28.12,
+        "e": 28.46
+      },
+      {
+        "w": "qatorlarini",
+        "s": 28.5,
+        "e": 29.04
+      },
+      {
+        "w": "qayta",
+        "s": 29.1,
+        "e": 29.36
+      },
+      {
+        "w": "yozishni",
+        "s": 29.36,
+        "e": 29.78
+      },
+      {
+        "w": "talab",
+        "s": 29.82,
+        "e": 30.0
+      },
+      {
+        "w": "qilmaydi",
+        "s": 30.08,
+        "e": 30.44
+      },
+      {
+        "w": "va",
+        "s": 30.48,
+        "e": 30.56
+      },
+      {
+        "w": "millionlab",
+        "s": 30.96,
+        "e": 31.52
+      },
+      {
+        "w": "qatorli",
+        "s": 31.58,
+        "e": 31.96
+      },
+      {
+        "w": "jadvallarda",
+        "s": 32.02,
+        "e": 32.58
+      },
+      {
+        "w": "ham",
+        "s": 32.62,
+        "e": 32.78
+      },
+      {
+        "w": "bir",
+        "s": 33.12,
+        "e": 33.26
+      },
+      {
+        "w": "zumda",
+        "s": 33.3,
+        "e": 33.52
+      },
+      {
+        "w": "bajariladi.",
+        "s": 33.54,
+        "e": 34.04
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "cascade_va_truncate",
+    "text": "Jadvallar orasidagi bog‘liqliklarda DROP CASCADE barcha tashqi kalit va ko‘rinishlarni rekursiv o‘chiradi. TRUNCATE esa barcha qatorlarni darhol tozalab, disk joyini bo‘shatadi.",
+    "show": "Jadvallar orasidagi bog‘liqliklarda DROP CASCADE barcha tashqi kalit va ko‘rinishlarni rekursiv o‘chiradi. TRUNCATE esa barcha qatorlarni darhol tozalab, disk joyini bo‘shatadi.",
+    "say": "Jadvallar orasidagi bog‘liqliklarda drop kaskad barcha tashqi kalit va ko‘rinishlarni rekursiv o‘chiradi. Trankeyt esa barcha qatorlarni darhol tozalab, disk joyini bo‘shatadi.",
+    "a0": 34.82,
+    "a1": 44.99,
+    "words": [
+      {
+        "w": "Jadvallar",
+        "s": 34.82,
+        "e": 35.22
+      },
+      {
+        "w": "orasidagi",
+        "s": 35.3,
+        "e": 35.7
+      },
+      {
+        "w": "bog‘liqliklarda",
+        "s": 35.76,
+        "e": 36.49
+      },
+      {
+        "w": "drop",
+        "s": 36.71,
+        "e": 36.91
+      },
+      {
+        "w": "kaskad",
+        "s": 36.99,
+        "e": 37.39
+      },
+      {
+        "w": "barcha",
+        "s": 37.59,
+        "e": 37.87
+      },
+      {
+        "w": "tashqi",
+        "s": 37.95,
+        "e": 38.23
+      },
+      {
+        "w": "kalit",
+        "s": 38.31,
+        "e": 38.59
+      },
+      {
+        "w": "va",
+        "s": 38.63,
+        "e": 38.69
+      },
+      {
+        "w": "ko‘rinishlarni",
+        "s": 38.75,
+        "e": 39.35
+      },
+      {
+        "w": "rekursiv",
+        "s": 39.65,
+        "e": 40.13
+      },
+      {
+        "w": "o‘chiradi.",
+        "s": 40.21,
+        "e": 40.57
+      },
+      {
+        "w": "Trankeyt",
+        "s": 41.03,
+        "e": 41.47
+      },
+      {
+        "w": "esa",
+        "s": 41.53,
+        "e": 41.69
+      },
+      {
+        "w": "barcha",
+        "s": 41.83,
+        "e": 42.09
+      },
+      {
+        "w": "qatorlarni",
+        "s": 42.13,
+        "e": 42.67
+      },
+      {
+        "w": "darhol",
+        "s": 42.79,
+        "e": 43.21
+      },
+      {
+        "w": "tozalab,",
+        "s": 43.25,
+        "e": 43.61
+      },
+      {
+        "w": "disk",
+        "s": 43.91,
+        "e": 44.15
+      },
+      {
+        "w": "joyini",
+        "s": 44.21,
+        "e": 44.53
+      },
+      {
+        "w": "bo‘shatadi.",
+        "s": 44.57,
+        "e": 44.99
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "xulosa",
+    "text": "Sxemani xavfsiz va to‘g‘ri o‘zgartirish — ishlab turgan tizimlarda ma'lumotlar yo‘qolishi va qotib qolishlarning oldini oluvchi muhim mahoratdir.",
+    "show": "Sxemani xavfsiz va to‘g‘ri o‘zgartirish — ishlab turgan tizimlarda ma'lumotlar yo‘qolishi va qotib qolishlarning oldini oluvchi muhim mahoratdir.",
+    "say": "Sxemani xavfsiz va to‘g‘ri o‘zgartirish — ishlab turgan tizimlarda ma'lumotlar yo‘qolishi va qotib qolishlarning oldini oluvchi muhim mahoratdir.",
+    "a0": 45.61,
+    "a1": 53.62,
+    "words": [
+      {
+        "w": "Sxemani",
+        "s": 45.61,
+        "e": 46.05
+      },
+      {
+        "w": "xavfsiz",
+        "s": 46.15,
+        "e": 46.61
+      },
+      {
+        "w": "va",
+        "s": 46.69,
+        "e": 46.77
+      },
+      {
+        "w": "to‘g‘ri",
+        "s": 46.93,
+        "e": 47.21
+      },
+      {
+        "w": "o‘zgartirish",
+        "s": 47.25,
+        "e": 47.77
+      },
+      {
+        "w": "—",
+        "s": 47.77,
+        "e": 47.77
+      },
+      {
+        "w": "ishlab",
+        "s": 48.06,
+        "e": 48.36
+      },
+      {
+        "w": "turgan",
+        "s": 48.38,
+        "e": 48.66
+      },
+      {
+        "w": "tizimlarda",
+        "s": 48.7,
+        "e": 49.2
+      },
+      {
+        "w": "ma'lumotlar",
+        "s": 49.3,
+        "e": 49.86
+      },
+      {
+        "w": "yo‘qolishi",
+        "s": 49.92,
+        "e": 50.44
+      },
+      {
+        "w": "va",
+        "s": 50.56,
+        "e": 50.64
+      },
+      {
+        "w": "qotib",
+        "s": 50.8,
+        "e": 51.08
+      },
+      {
+        "w": "qolishlarning",
+        "s": 51.1,
+        "e": 51.66
+      },
+      {
+        "w": "oldini",
+        "s": 51.76,
+        "e": 52.02
+      },
+      {
+        "w": "oluvchi",
+        "s": 52.04,
+        "e": 52.38
+      },
+      {
+        "w": "muhim",
+        "s": 52.74,
+        "e": 53.02
+      },
+      {
+        "w": "mahoratdir.",
+        "s": 53.06,
+        "e": 53.62
+      }
+    ]
+  }
+]

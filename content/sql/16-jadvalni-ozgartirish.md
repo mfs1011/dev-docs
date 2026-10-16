@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/sql/16-1-tushuncha.jpg" src="/video/sql/16-1-tushuncha.mp4">
+  <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/sql/16-1-tushuncha.chapters.vtt" default>
+  <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/sql/16-1-tushuncha.uz.vtt">
+</video>
+<figcaption>Video: Jadvalni o'zgartirish — ALTER TABLE amallari, tezkor DEFAULT, CASCADE xavflari va TRUNCATE xususiyatlari</figcaption>
+</figure>
+
 Jadval yaratilgandan keyin talablar o'zgaradi: yangi ustun kerak bo'ladi, tip noto'g'ri tanlangan bo'ladi, cheklov qo'shish kerak bo'ladi. PostgreSQL hujjati aytganidek, jadvalni o'chirib, qayta yaratish mumkin. Lekin jadvalda ma'lumot bo'lsa yoki unga boshqa obyektlar (masalan, tashqi kalit) murojaat qilsa, bu qulay emas.
 
 Shuning uchun **`ALTER TABLE`** bor. U ma'lumotni emas, jadvalning **tuzilmasini** o'zgartiradi:
@@ -66,6 +74,14 @@ Standartga ko'ra `DROP` buyrug'ida `RESTRICT` yoki `CASCADE` ni yozish **majburi
 - lekin MVCC nuqtai nazaridan **xavfsiz emas**: `TRUNCATE` dan oldin olingan "suratdan" foydalanayotgan parallel tranzaksiya jadvalni bo'sh ko'radi (52-bob).
 
 ## Kod
+
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/sql/16-2-kod.jpg" src="/video/sql/16-2-kod.mp4">
+  <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/sql/16-2-kod.chapters.vtt" default>
+  <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/sql/16-2-kod.uz.vtt">
+</video>
+<figcaption>Video: PostgreSQL 18 da ALTER TABLE amaliyoti — ADD COLUMN, tip o'zgartirishda USING, DROP CASCADE va TRUNCATE ROLLBACK</figcaption>
+</figure>
 
 Misollar PostgreSQL 18.6, MySQL 9.7.2 va SQLite 3.54.0 da ishga tushirilgan.
 
@@ -227,6 +243,14 @@ SELECT column_name FROM information_schema.columns WHERE table_name = 'qatorlar'
 Bu buyruqlar PostgreSQL'da tranzaksiya ichida bajarildi va orqaga qaytarildi. Lekin hamma DDL buyrug'i ham shunday emas. Masalan, `CREATE DATABASE` va `CREATE INDEX CONCURRENTLY` ni tranzaksiya ichida bajarib bo'lmaydi (5-bob, 63-bob).
 
 ## Dialektlar
+
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/sql/16-3-dialektlar.jpg" src="/video/sql/16-3-dialektlar.mp4">
+  <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/sql/16-3-dialektlar.chapters.vtt" default>
+  <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/sql/16-3-dialektlar.uz.vtt">
+</video>
+<figcaption>Video: Dialektlar — MySQL da INSTANT DDL va yashirin commit, SQLite da cheklangan ALTER va 12 qadamli jadval qayta qurish</figcaption>
+</figure>
 
 ### MySQL
 

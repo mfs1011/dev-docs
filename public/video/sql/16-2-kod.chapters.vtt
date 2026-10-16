@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:14.262
+PostgreSQL 18: Amaliyotga kirish
+
+00:14.262 --> 00:27.907
+ADD COLUMN: CHECK va NOT NULL DEFAULT
+
+00:27.907 --> 00:41.854
+Tipni o‘zgartirish va USING kaliti
+
+00:41.854 --> 00:54.758
+Bog‘liqliklar va DROP CASCADE
+
+00:54.758 --> 01:06.855
+TRUNCATE va ROLLBACK xavfsizligi
+
+01:06.855 --> 01:19.740
+Xulosa
