@@ -1,0 +1,61 @@
+WEBVTT
+
+1
+00:01.420 --> 00:07.210
+PostgreSQL o‘n sakkiz terminalida NULL qiymati va tip
+konversiyasi qanday ishlashini amalda tekshiramiz.
+
+2
+00:09.940 --> 00:17.180
+Birinchi so‘rovda yetti barobar NULL hamda NULL barobar NULL
+ni tekshiramiz. Natijada bo‘sh joy, ya’ni NULL chiqadi.
+
+3
+00:17.210 --> 00:23.980
+Ammo IS NULL hamda IS DISTINCT FROM predikatlari
+aniq rost, ya’ni TRUE natijasini beradi.
+
+4
+00:26.650 --> 00:32.050
+Keyingi navbatda telefonlar jadvalini yaratib,
+Ali, Vali va Sobir ma’lumotlarini kiritamiz.
+
+5
+00:32.280 --> 00:42.350
+Kutilmagan holat: telefoni Alinikidan farq qiladiganlarni qidirganda, Sobir ro‘yxatga
+kirmay qoladi! Chunki uning raqami NULL bo‘lib, teng emaslik amali ham noma’lum bo‘ldi.
+
+6
+00:42.840 --> 00:49.160
+Sobirni ham olish uchun IS DISTINCT FROM predikatini
+ishlatish zarur, shunda ikkita qator to‘g‘ri topiladi.
+
+7
+00:51.870 --> 01:00.780
+Endi agregatsiyaga qarasak: count yulduzcha uchta qatorni sanasa, count
+telefon atigi ikkita qatorni ko‘rsatadi, chunki NULL hisobga kirmaydi.
+
+8
+01:00.910 --> 01:09.330
+Arifmetikada bir qo‘shuv NULL natijasi NULL bo‘ladi. Ammo concat
+funksiyasi NULL qiymatni e’tiborsiz qoldirib, matnni to‘g‘ri ulaydi.
+
+9
+01:12.320 --> 01:20.040
+Tip konversiyasida qirq ikki satrini int ga o‘girib birni qo‘shish
+mumkin. Noma’lum satr bir ham son bilan muammosiz qo‘shiladi.
+
+10
+01:20.150 --> 01:26.640
+Biroq bir qo‘shuv bir butun o‘ndan besh satri xato
+beradi, chunki kontekstda faqat butun son kutilgan edi.
+
+11
+01:27.130 --> 01:33.950
+Jadvaldagi sonlar bilan matnli ustunni solishtirganda ham
+Postgres qat’iy operator mavjud emas degan xatoni chiqaradi.
+
+12
+01:36.800 --> 01:43.650
+Ko‘rib turganingizdek, xatolarning oldini olish uchun NULL
+predikatlarini to‘g‘ri qo‘llash va tiplarni aniq kast qilish shart.

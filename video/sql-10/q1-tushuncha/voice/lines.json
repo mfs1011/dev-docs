@@ -1,0 +1,1269 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Salom! O‘ninchi bobda relyatsion bazalarning eng nozik mavzulari — NULL qiymati va ma’lumot turlari konversiyasi bilan tanishamiz.",
+    "show": "Salom! O‘ninchi bobda relyatsion bazalarning eng nozik mavzulari — NULL qiymati va ma’lumot turlari konversiyasi bilan tanishamiz.",
+    "say": "Salom! O‘ninchi bobda relyatsion bazalarning eng nozik mavzulari — nul qiymati va ma’lumot turlari konversiyasi bilan tanishamiz.",
+    "a0": 0.26,
+    "a1": 8.07,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.26,
+        "e": 0.54
+      },
+      {
+        "w": "O‘ninchi",
+        "s": 1.28,
+        "e": 1.62
+      },
+      {
+        "w": "bobda",
+        "s": 1.66,
+        "e": 1.98
+      },
+      {
+        "w": "relyatsion",
+        "s": 2.12,
+        "e": 2.64
+      },
+      {
+        "w": "bazalarning",
+        "s": 2.7,
+        "e": 3.28
+      },
+      {
+        "w": "eng",
+        "s": 3.5,
+        "e": 3.66
+      },
+      {
+        "w": "nozik",
+        "s": 3.74,
+        "e": 4.06
+      },
+      {
+        "w": "mavzulari",
+        "s": 4.12,
+        "e": 4.62
+      },
+      {
+        "w": "—",
+        "s": 4.62,
+        "e": 4.62
+      },
+      {
+        "w": "nul",
+        "s": 5.1,
+        "e": 5.3
+      },
+      {
+        "w": "qiymati",
+        "s": 5.36,
+        "e": 5.76
+      },
+      {
+        "w": "va",
+        "s": 5.84,
+        "e": 5.92
+      },
+      {
+        "w": "ma’lumot",
+        "s": 6.02,
+        "e": 6.44
+      },
+      {
+        "w": "turlari",
+        "s": 6.48,
+        "e": 6.78
+      },
+      {
+        "w": "konversiyasi",
+        "s": 6.82,
+        "e": 7.4
+      },
+      {
+        "w": "bilan",
+        "s": 7.4,
+        "e": 7.59
+      },
+      {
+        "w": "tanishamiz.",
+        "s": 7.61,
+        "e": 8.07
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "null_nature",
+    "text": "NULL — nol ham emas, bo‘sh satr ham emas. U qiymatning yo‘qligini yoki hozircha noma’lum ekanini bildiradi.",
+    "show": "NULL — nol ham emas, bo‘sh satr ham emas. U qiymatning yo‘qligini yoki hozircha noma’lum ekanini bildiradi.",
+    "say": "Nul — nol ham emas, bo‘sh satr ham emas. U qiymatning yo‘qligini yoki hozircha noma’lum ekanini bildiradi.",
+    "a0": 9.27,
+    "a1": 15.67,
+    "words": [
+      {
+        "w": "Nul",
+        "s": 9.27,
+        "e": 9.47
+      },
+      {
+        "w": "—",
+        "s": 9.47,
+        "e": 9.47
+      },
+      {
+        "w": "nol",
+        "s": 9.77,
+        "e": 9.95
+      },
+      {
+        "w": "ham",
+        "s": 10.01,
+        "e": 10.17
+      },
+      {
+        "w": "emas,",
+        "s": 10.21,
+        "e": 10.53
+      },
+      {
+        "w": "bo‘sh",
+        "s": 10.75,
+        "e": 10.93
+      },
+      {
+        "w": "satr",
+        "s": 10.97,
+        "e": 11.21
+      },
+      {
+        "w": "ham",
+        "s": 11.25,
+        "e": 11.37
+      },
+      {
+        "w": "emas.",
+        "s": 11.39,
+        "e": 11.61
+      },
+      {
+        "w": "U",
+        "s": 12.07,
+        "e": 12.09
+      },
+      {
+        "w": "qiymatning",
+        "s": 12.23,
+        "e": 12.79
+      },
+      {
+        "w": "yo‘qligini",
+        "s": 12.89,
+        "e": 13.43
+      },
+      {
+        "w": "yoki",
+        "s": 13.43,
+        "e": 13.79
+      },
+      {
+        "w": "hozircha",
+        "s": 13.89,
+        "e": 14.27
+      },
+      {
+        "w": "noma’lum",
+        "s": 14.39,
+        "e": 14.87
+      },
+      {
+        "w": "ekanini",
+        "s": 14.95,
+        "e": 15.29
+      },
+      {
+        "w": "bildiradi.",
+        "s": 15.31,
+        "e": 15.67
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "null_nature",
+    "text": "Masalan, telefon ustuniga NULL yozilsa — raqam noma’lum. Bo‘sh satr yozilsa — uning telefoni yo‘qligi aniq ma’lum degan ma’noni anglatadi.",
+    "show": "Masalan, telefon ustuniga NULL yozilsa — raqam noma’lum. Bo‘sh satr yozilsa — uning telefoni yo‘qligi aniq ma’lum degan ma’noni anglatadi.",
+    "say": "Masalan, telefon ustuniga nul yozilsa — raqam noma’lum. Bo‘sh satr yozilsa — uning telefoni yo‘qligi aniq ma’lum degan ma’noni anglatadi.",
+    "a0": 16.39,
+    "a1": 24.04,
+    "words": [
+      {
+        "w": "Masalan,",
+        "s": 16.39,
+        "e": 16.71
+      },
+      {
+        "w": "telefon",
+        "s": 16.75,
+        "e": 17.09
+      },
+      {
+        "w": "ustuniga",
+        "s": 17.13,
+        "e": 17.51
+      },
+      {
+        "w": "nul",
+        "s": 17.75,
+        "e": 17.91
+      },
+      {
+        "w": "yozilsa",
+        "s": 17.91,
+        "e": 18.37
+      },
+      {
+        "w": "—",
+        "s": 18.37,
+        "e": 18.37
+      },
+      {
+        "w": "raqam",
+        "s": 18.77,
+        "e": 19.03
+      },
+      {
+        "w": "noma’lum.",
+        "s": 19.07,
+        "e": 19.51
+      },
+      {
+        "w": "Bo‘sh",
+        "s": 19.97,
+        "e": 20.15
+      },
+      {
+        "w": "satr",
+        "s": 20.19,
+        "e": 20.41
+      },
+      {
+        "w": "yozilsa",
+        "s": 20.41,
+        "e": 20.83
+      },
+      {
+        "w": "—",
+        "s": 20.83,
+        "e": 20.83
+      },
+      {
+        "w": "uning",
+        "s": 21.07,
+        "e": 21.29
+      },
+      {
+        "w": "telefoni",
+        "s": 21.31,
+        "e": 21.73
+      },
+      {
+        "w": "yo‘qligi",
+        "s": 21.81,
+        "e": 22.19
+      },
+      {
+        "w": "aniq",
+        "s": 22.39,
+        "e": 22.64
+      },
+      {
+        "w": "ma’lum",
+        "s": 22.72,
+        "e": 23.0
+      },
+      {
+        "w": "degan",
+        "s": 23.04,
+        "e": 23.26
+      },
+      {
+        "w": "ma’noni",
+        "s": 23.3,
+        "e": 23.6
+      },
+      {
+        "w": "anglatadi.",
+        "s": 23.64,
+        "e": 24.04
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "three_logic",
+    "text": "SQL da mantiqiy ifodalar uchta qiymat qaytaradi: rost, yolg‘on va noma’lum, ya’ni NULL.",
+    "show": "SQL da mantiqiy ifodalar uchta qiymat qaytaradi: rost, yolg‘on va noma’lum, ya’ni NULL.",
+    "say": "Es-kyu-el da mantiqiy ifodalar uchta qiymat qaytaradi: rost, yolg‘on va noma’lum, ya’ni nul.",
+    "a0": 25.46,
+    "a1": 30.62,
+    "words": [
+      {
+        "w": "Es-kyu-el",
+        "s": 25.46,
+        "e": 25.82
+      },
+      {
+        "w": "da",
+        "s": 25.86,
+        "e": 25.94
+      },
+      {
+        "w": "mantiqiy",
+        "s": 26.04,
+        "e": 26.46
+      },
+      {
+        "w": "ifodalar",
+        "s": 26.5,
+        "e": 26.9
+      },
+      {
+        "w": "uchta",
+        "s": 27.0,
+        "e": 27.22
+      },
+      {
+        "w": "qiymat",
+        "s": 27.28,
+        "e": 27.54
+      },
+      {
+        "w": "qaytaradi:",
+        "s": 27.58,
+        "e": 27.96
+      },
+      {
+        "w": "rost,",
+        "s": 28.34,
+        "e": 28.64
+      },
+      {
+        "w": "yolg‘on",
+        "s": 28.84,
+        "e": 29.2
+      },
+      {
+        "w": "va",
+        "s": 29.26,
+        "e": 29.32
+      },
+      {
+        "w": "noma’lum,",
+        "s": 29.42,
+        "e": 29.88
+      },
+      {
+        "w": "ya’ni",
+        "s": 30.04,
+        "e": 30.24
+      },
+      {
+        "w": "nul.",
+        "s": 30.44,
+        "e": 30.62
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "three_logic",
+    "text": "Mantiqiy amallarda FALSE bilan noma’lum har doim FALSE beradi, chunki yolg‘on har qanday noma’lumni yengadi. Ammo TRUE bilan noma’lum esa yana noma’lum bo‘lib qoladi.",
+    "show": "Mantiqiy amallarda FALSE bilan noma’lum har doim FALSE beradi, chunki yolg‘on har qanday noma’lumni yengadi. Ammo TRUE bilan noma’lum esa yana noma’lum bo‘lib qoladi.",
+    "say": "Mantiqiy amallarda fols bilan noma’lum har doim fols beradi, chunki yolg‘on har qanday noma’lumni yengadi. Ammo tru bilan noma’lum esa yana noma’lum bo‘lib qoladi.",
+    "a0": 31.42,
+    "a1": 40.51,
+    "words": [
+      {
+        "w": "Mantiqiy",
+        "s": 31.42,
+        "e": 31.8
+      },
+      {
+        "w": "amallarda",
+        "s": 31.86,
+        "e": 32.34
+      },
+      {
+        "w": "fols",
+        "s": 32.48,
+        "e": 32.72
+      },
+      {
+        "w": "bilan",
+        "s": 32.78,
+        "e": 32.98
+      },
+      {
+        "w": "noma’lum",
+        "s": 33.04,
+        "e": 33.5
+      },
+      {
+        "w": "har",
+        "s": 33.58,
+        "e": 33.76
+      },
+      {
+        "w": "doim",
+        "s": 33.8,
+        "e": 34.04
+      },
+      {
+        "w": "fols",
+        "s": 34.1,
+        "e": 34.34
+      },
+      {
+        "w": "beradi,",
+        "s": 34.38,
+        "e": 34.66
+      },
+      {
+        "w": "chunki",
+        "s": 34.9,
+        "e": 35.12
+      },
+      {
+        "w": "yolg‘on",
+        "s": 35.12,
+        "e": 35.46
+      },
+      {
+        "w": "har",
+        "s": 35.54,
+        "e": 35.72
+      },
+      {
+        "w": "qanday",
+        "s": 35.76,
+        "e": 36.02
+      },
+      {
+        "w": "noma’lumni",
+        "s": 36.06,
+        "e": 36.54
+      },
+      {
+        "w": "yengadi.",
+        "s": 36.58,
+        "e": 36.96
+      },
+      {
+        "w": "Ammo",
+        "s": 37.61,
+        "e": 37.79
+      },
+      {
+        "w": "tru",
+        "s": 38.15,
+        "e": 38.31
+      },
+      {
+        "w": "bilan",
+        "s": 38.39,
+        "e": 38.59
+      },
+      {
+        "w": "noma’lum",
+        "s": 38.63,
+        "e": 39.01
+      },
+      {
+        "w": "esa",
+        "s": 39.05,
+        "e": 39.23
+      },
+      {
+        "w": "yana",
+        "s": 39.37,
+        "e": 39.57
+      },
+      {
+        "w": "noma’lum",
+        "s": 39.65,
+        "e": 40.05
+      },
+      {
+        "w": "bo‘lib",
+        "s": 40.07,
+        "e": 40.23
+      },
+      {
+        "w": "qoladi.",
+        "s": 40.25,
+        "e": 40.51
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "cmp_predicates",
+    "text": "Eng muhim qoida: oddiy tenglik operatori bilan NULL ni solishtirib bo‘lmaydi. Yetti barobar NULL ham, NULL barobar NULL ham natijada noma’lum beradi.",
+    "show": "Eng muhim qoida: oddiy tenglik operatori bilan NULL ni solishtirib bo‘lmaydi. Yetti barobar NULL ham, NULL barobar NULL ham natijada noma’lum beradi.",
+    "say": "Eng muhim qoida: oddiy tenglik operatori bilan nul ni solishtirib bo‘lmaydi. Yetti barobar nul ham, nul barobar nul ham natijada noma’lum beradi.",
+    "a0": 41.71,
+    "a1": 50.15,
+    "words": [
+      {
+        "w": "Eng",
+        "s": 41.71,
+        "e": 41.85
+      },
+      {
+        "w": "muhim",
+        "s": 41.89,
+        "e": 42.11
+      },
+      {
+        "w": "qoida:",
+        "s": 42.19,
+        "e": 42.43
+      },
+      {
+        "w": "oddiy",
+        "s": 43.03,
+        "e": 43.29
+      },
+      {
+        "w": "tenglik",
+        "s": 43.37,
+        "e": 43.71
+      },
+      {
+        "w": "operatori",
+        "s": 43.77,
+        "e": 44.19
+      },
+      {
+        "w": "bilan",
+        "s": 44.21,
+        "e": 44.41
+      },
+      {
+        "w": "nul",
+        "s": 44.55,
+        "e": 44.73
+      },
+      {
+        "w": "ni",
+        "s": 44.79,
+        "e": 44.87
+      },
+      {
+        "w": "solishtirib",
+        "s": 44.93,
+        "e": 45.37
+      },
+      {
+        "w": "bo‘lmaydi.",
+        "s": 45.39,
+        "e": 45.75
+      },
+      {
+        "w": "Yetti",
+        "s": 46.29,
+        "e": 46.57
+      },
+      {
+        "w": "barobar",
+        "s": 46.61,
+        "e": 46.97
+      },
+      {
+        "w": "nul",
+        "s": 47.07,
+        "e": 47.25
+      },
+      {
+        "w": "ham,",
+        "s": 47.31,
+        "e": 47.51
+      },
+      {
+        "w": "nul",
+        "s": 47.83,
+        "e": 48.01
+      },
+      {
+        "w": "barobar",
+        "s": 48.05,
+        "e": 48.43
+      },
+      {
+        "w": "nul",
+        "s": 48.49,
+        "e": 48.63
+      },
+      {
+        "w": "ham",
+        "s": 48.67,
+        "e": 48.83
+      },
+      {
+        "w": "natijada",
+        "s": 48.89,
+        "e": 49.31
+      },
+      {
+        "w": "noma’lum",
+        "s": 49.41,
+        "e": 49.85
+      },
+      {
+        "w": "beradi.",
+        "s": 49.87,
+        "e": 50.15
+      }
+    ]
+  },
+  {
+    "id": "L7",
+    "scene": "cmp_predicates",
+    "text": "Shuning uchun WHERE ustun barobar NULL deb yozsangiz, baza birorta ham qator qaytarmaydi! Chunki WHERE faqat rost shartlarni qabul qiladi.",
+    "show": "Shuning uchun WHERE ustun barobar NULL deb yozsangiz, baza birorta ham qator qaytarmaydi! Chunki WHERE faqat rost shartlarni qabul qiladi.",
+    "say": "Shuning uchun ver ustun barobar nul deb yozsangiz, baza birorta ham qator qaytarmaydi! Chunki ver faqat rost shartlarni qabul qiladi.",
+    "a0": 51.07,
+    "a1": 58.8,
+    "words": [
+      {
+        "w": "Shuning",
+        "s": 51.07,
+        "e": 51.29
+      },
+      {
+        "w": "uchun",
+        "s": 51.31,
+        "e": 51.51
+      },
+      {
+        "w": "ver",
+        "s": 51.77,
+        "e": 52.03
+      },
+      {
+        "w": "ustun",
+        "s": 52.13,
+        "e": 52.41
+      },
+      {
+        "w": "barobar",
+        "s": 52.45,
+        "e": 52.82
+      },
+      {
+        "w": "nul",
+        "s": 52.92,
+        "e": 53.1
+      },
+      {
+        "w": "deb",
+        "s": 53.14,
+        "e": 53.26
+      },
+      {
+        "w": "yozsangiz,",
+        "s": 53.3,
+        "e": 53.78
+      },
+      {
+        "w": "baza",
+        "s": 54.14,
+        "e": 54.42
+      },
+      {
+        "w": "birorta",
+        "s": 54.54,
+        "e": 54.92
+      },
+      {
+        "w": "ham",
+        "s": 54.96,
+        "e": 55.1
+      },
+      {
+        "w": "qator",
+        "s": 55.12,
+        "e": 55.36
+      },
+      {
+        "w": "qaytarmaydi!",
+        "s": 55.4,
+        "e": 55.9
+      },
+      {
+        "w": "Chunki",
+        "s": 56.28,
+        "e": 56.52
+      },
+      {
+        "w": "ver",
+        "s": 56.66,
+        "e": 56.88
+      },
+      {
+        "w": "faqat",
+        "s": 57.14,
+        "e": 57.4
+      },
+      {
+        "w": "rost",
+        "s": 57.52,
+        "e": 57.78
+      },
+      {
+        "w": "shartlarni",
+        "s": 57.82,
+        "e": 58.26
+      },
+      {
+        "w": "qabul",
+        "s": 58.3,
+        "e": 58.52
+      },
+      {
+        "w": "qiladi.",
+        "s": 58.56,
+        "e": 58.8
+      }
+    ]
+  },
+  {
+    "id": "L8",
+    "scene": "cmp_predicates",
+    "text": "NULL ni to‘g‘ri tekshirish uchun IS NULL, IS NOT NULL hamda IS DISTINCT FROM kabi maxsus predikatlar ishlatiladi.",
+    "show": "NULL ni to‘g‘ri tekshirish uchun IS NULL, IS NOT NULL hamda IS DISTINCT FROM kabi maxsus predikatlar ishlatiladi.",
+    "say": "Nul ni to‘g‘ri tekshirish uchun iz nul, iz not nul hamda iz distinkt from kabi maxsus predikatlar ishlatiladi.",
+    "a0": 60.1,
+    "a1": 66.44,
+    "words": [
+      {
+        "w": "Nul",
+        "s": 60.1,
+        "e": 60.26
+      },
+      {
+        "w": "ni",
+        "s": 60.32,
+        "e": 60.4
+      },
+      {
+        "w": "to‘g‘ri",
+        "s": 60.46,
+        "e": 60.68
+      },
+      {
+        "w": "tekshirish",
+        "s": 60.72,
+        "e": 61.08
+      },
+      {
+        "w": "uchun",
+        "s": 61.1,
+        "e": 61.3
+      },
+      {
+        "w": "iz",
+        "s": 61.6,
+        "e": 61.74
+      },
+      {
+        "w": "nul,",
+        "s": 61.82,
+        "e": 62.04
+      },
+      {
+        "w": "iz",
+        "s": 62.4,
+        "e": 62.5
+      },
+      {
+        "w": "not",
+        "s": 62.6,
+        "e": 62.8
+      },
+      {
+        "w": "nul",
+        "s": 62.9,
+        "e": 63.08
+      },
+      {
+        "w": "hamda",
+        "s": 63.14,
+        "e": 63.42
+      },
+      {
+        "w": "iz",
+        "s": 63.78,
+        "e": 63.9
+      },
+      {
+        "w": "distinkt",
+        "s": 64.0,
+        "e": 64.4
+      },
+      {
+        "w": "from",
+        "s": 64.46,
+        "e": 64.68
+      },
+      {
+        "w": "kabi",
+        "s": 64.76,
+        "e": 64.94
+      },
+      {
+        "w": "maxsus",
+        "s": 65.02,
+        "e": 65.36
+      },
+      {
+        "w": "predikatlar",
+        "s": 65.4,
+        "e": 65.96
+      },
+      {
+        "w": "ishlatiladi.",
+        "s": 66.0,
+        "e": 66.44
+      }
+    ]
+  },
+  {
+    "id": "L9",
+    "scene": "type_conv",
+    "text": "Tip konversiyasiga kelsak, SQL qat’iy tiplangan til hisoblanadi. Qiymatni boshqa tipga o‘tkazish uchun CAST ifodasi yoki ikkita ikki nuqta belgisi yoziladi.",
+    "show": "Tip konversiyasiga kelsak, SQL qat’iy tiplangan til hisoblanadi. Qiymatni boshqa tipga o‘tkazish uchun CAST ifodasi yoki ikkita ikki nuqta belgisi yoziladi.",
+    "say": "Tip konversiyasiga kelsak, es-kyu-el qat’iy tiplangan til hisoblanadi. Qiymatni boshqa tipga o‘tkazish uchun kast ifodasi yoki ikkita ikki nuqta belgisi yoziladi.",
+    "a0": 67.44,
+    "a1": 76.19,
+    "words": [
+      {
+        "w": "Tip",
+        "s": 67.44,
+        "e": 67.61
+      },
+      {
+        "w": "konversiyasiga",
+        "s": 67.65,
+        "e": 68.29
+      },
+      {
+        "w": "kelsak,",
+        "s": 68.33,
+        "e": 68.73
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 68.97,
+        "e": 69.35
+      },
+      {
+        "w": "qat’iy",
+        "s": 69.45,
+        "e": 69.79
+      },
+      {
+        "w": "tiplangan",
+        "s": 69.85,
+        "e": 70.27
+      },
+      {
+        "w": "til",
+        "s": 70.31,
+        "e": 70.41
+      },
+      {
+        "w": "hisoblanadi.",
+        "s": 70.47,
+        "e": 70.93
+      },
+      {
+        "w": "Qiymatni",
+        "s": 71.49,
+        "e": 71.87
+      },
+      {
+        "w": "boshqa",
+        "s": 71.91,
+        "e": 72.13
+      },
+      {
+        "w": "tipga",
+        "s": 72.17,
+        "e": 72.37
+      },
+      {
+        "w": "o‘tkazish",
+        "s": 72.41,
+        "e": 72.79
+      },
+      {
+        "w": "uchun",
+        "s": 72.81,
+        "e": 73.01
+      },
+      {
+        "w": "kast",
+        "s": 73.17,
+        "e": 73.43
+      },
+      {
+        "w": "ifodasi",
+        "s": 73.49,
+        "e": 73.93
+      },
+      {
+        "w": "yoki",
+        "s": 73.93,
+        "e": 74.21
+      },
+      {
+        "w": "ikkita",
+        "s": 74.57,
+        "e": 74.85
+      },
+      {
+        "w": "ikki",
+        "s": 74.95,
+        "e": 75.15
+      },
+      {
+        "w": "nuqta",
+        "s": 75.19,
+        "e": 75.47
+      },
+      {
+        "w": "belgisi",
+        "s": 75.49,
+        "e": 75.81
+      },
+      {
+        "w": "yoziladi.",
+        "s": 75.87,
+        "e": 76.19
+      }
+    ]
+  },
+  {
+    "id": "L10",
+    "scene": "type_conv",
+    "text": "Noma’lum literal o‘z tipini kontekstdan oladi. Masalan, bir qo‘shuv satrdagi bir ifodasi ishlaydi, chunki satr butun son sifatida tushuniladi.",
+    "show": "Noma’lum literal o‘z tipini kontekstdan oladi. Masalan, bir qo‘shuv satrdagi bir ifodasi ishlaydi, chunki satr butun son sifatida tushuniladi.",
+    "say": "Noma’lum literal o‘z tipini kontekstdan oladi. Masalan, bir qo‘shuv satrdagi bir ifodasi ishlaydi, chunki satr butun son sifatida tushuniladi.",
+    "a0": 77.23,
+    "a1": 85.12,
+    "words": [
+      {
+        "w": "Noma’lum",
+        "s": 77.23,
+        "e": 77.61
+      },
+      {
+        "w": "literal",
+        "s": 77.67,
+        "e": 78.03
+      },
+      {
+        "w": "o‘z",
+        "s": 78.17,
+        "e": 78.29
+      },
+      {
+        "w": "tipini",
+        "s": 78.33,
+        "e": 78.63
+      },
+      {
+        "w": "kontekstdan",
+        "s": 78.71,
+        "e": 79.25
+      },
+      {
+        "w": "oladi.",
+        "s": 79.31,
+        "e": 79.51
+      },
+      {
+        "w": "Masalan,",
+        "s": 79.87,
+        "e": 80.23
+      },
+      {
+        "w": "bir",
+        "s": 80.63,
+        "e": 80.75
+      },
+      {
+        "w": "qo‘shuv",
+        "s": 80.81,
+        "e": 81.09
+      },
+      {
+        "w": "satrdagi",
+        "s": 81.21,
+        "e": 81.69
+      },
+      {
+        "w": "bir",
+        "s": 81.79,
+        "e": 81.91
+      },
+      {
+        "w": "ifodasi",
+        "s": 81.99,
+        "e": 82.41
+      },
+      {
+        "w": "ishlaydi,",
+        "s": 82.47,
+        "e": 82.86
+      },
+      {
+        "w": "chunki",
+        "s": 83.12,
+        "e": 83.36
+      },
+      {
+        "w": "satr",
+        "s": 83.46,
+        "e": 83.74
+      },
+      {
+        "w": "butun",
+        "s": 83.82,
+        "e": 84.06
+      },
+      {
+        "w": "son",
+        "s": 84.12,
+        "e": 84.28
+      },
+      {
+        "w": "sifatida",
+        "s": 84.32,
+        "e": 84.66
+      },
+      {
+        "w": "tushuniladi.",
+        "s": 84.7,
+        "e": 85.12
+      }
+    ]
+  },
+  {
+    "id": "L11",
+    "scene": "type_conv",
+    "text": "Ammo jadval ustunidagi matn son bilan solishtirilsa, PostgreSQL yashirin o‘girishga yo‘l qo‘ymaydi va qat’iy xato beradi.",
+    "show": "Ammo jadval ustunidagi matn son bilan solishtirilsa, PostgreSQL yashirin o‘girishga yo‘l qo‘ymaydi va qat’iy xato beradi.",
+    "say": "Ammo jadval ustunidagi matn son bilan solishtirilsa, Postgres yashirin o‘girishga yo‘l qo‘ymaydi va qat’iy xato beradi.",
+    "a0": 85.84,
+    "a1": 92.22,
+    "words": [
+      {
+        "w": "Ammo",
+        "s": 85.84,
+        "e": 86.02
+      },
+      {
+        "w": "jadval",
+        "s": 86.18,
+        "e": 86.52
+      },
+      {
+        "w": "ustunidagi",
+        "s": 86.56,
+        "e": 87.02
+      },
+      {
+        "w": "matn",
+        "s": 87.08,
+        "e": 87.38
+      },
+      {
+        "w": "son",
+        "s": 87.46,
+        "e": 87.62
+      },
+      {
+        "w": "bilan",
+        "s": 87.68,
+        "e": 87.86
+      },
+      {
+        "w": "solishtirilsa,",
+        "s": 87.9,
+        "e": 88.44
+      },
+      {
+        "w": "Postgres",
+        "s": 88.84,
+        "e": 89.3
+      },
+      {
+        "w": "yashirin",
+        "s": 89.4,
+        "e": 89.78
+      },
+      {
+        "w": "o‘girishga",
+        "s": 89.86,
+        "e": 90.2
+      },
+      {
+        "w": "yo‘l",
+        "s": 90.28,
+        "e": 90.44
+      },
+      {
+        "w": "qo‘ymaydi",
+        "s": 90.5,
+        "e": 90.98
+      },
+      {
+        "w": "va",
+        "s": 91.02,
+        "e": 91.1
+      },
+      {
+        "w": "qat’iy",
+        "s": 91.22,
+        "e": 91.56
+      },
+      {
+        "w": "xato",
+        "s": 91.66,
+        "e": 91.88
+      },
+      {
+        "w": "beradi.",
+        "s": 91.94,
+        "e": 92.22
+      }
+    ]
+  },
+  {
+    "id": "L12",
+    "scene": "xulosa",
+    "text": "Xulosa: NULL bilan ishlashda doimo uch qiymatli mantiqni yodda tuting va tiplarni aniq boshqaring. Keyingi qismda ushbu qoidalarni amalda sinaymiz.",
+    "show": "Xulosa: NULL bilan ishlashda doimo uch qiymatli mantiqni yodda tuting va tiplarni aniq boshqaring. Keyingi qismda ushbu qoidalarni amalda sinaymiz.",
+    "say": "Xulosa: nul bilan ishlashda doimo uch qiymatli mantiqni yodda tuting va tiplarni aniq boshqaring. Keyingi qismda ushbu qoidalarni amalda sinaymiz.",
+    "a0": 93.19,
+    "a1": 101.8,
+    "words": [
+      {
+        "w": "Xulosa:",
+        "s": 93.19,
+        "e": 93.51
+      },
+      {
+        "w": "nul",
+        "s": 94.11,
+        "e": 94.27
+      },
+      {
+        "w": "bilan",
+        "s": 94.31,
+        "e": 94.51
+      },
+      {
+        "w": "ishlashda",
+        "s": 94.55,
+        "e": 94.91
+      },
+      {
+        "w": "doimo",
+        "s": 94.99,
+        "e": 95.35
+      },
+      {
+        "w": "uch",
+        "s": 95.53,
+        "e": 95.67
+      },
+      {
+        "w": "qiymatli",
+        "s": 95.75,
+        "e": 96.17
+      },
+      {
+        "w": "mantiqni",
+        "s": 96.23,
+        "e": 96.63
+      },
+      {
+        "w": "yodda",
+        "s": 96.63,
+        "e": 96.99
+      },
+      {
+        "w": "tuting",
+        "s": 97.03,
+        "e": 97.27
+      },
+      {
+        "w": "va",
+        "s": 97.51,
+        "e": 97.57
+      },
+      {
+        "w": "tiplarni",
+        "s": 97.63,
+        "e": 98.05
+      },
+      {
+        "w": "aniq",
+        "s": 98.21,
+        "e": 98.41
+      },
+      {
+        "w": "boshqaring.",
+        "s": 98.47,
+        "e": 98.89
+      },
+      {
+        "w": "Keyingi",
+        "s": 99.42,
+        "e": 99.7
+      },
+      {
+        "w": "qismda",
+        "s": 99.74,
+        "e": 100.06
+      },
+      {
+        "w": "ushbu",
+        "s": 100.18,
+        "e": 100.4
+      },
+      {
+        "w": "qoidalarni",
+        "s": 100.46,
+        "e": 100.92
+      },
+      {
+        "w": "amalda",
+        "s": 101.06,
+        "e": 101.38
+      },
+      {
+        "w": "sinaymiz.",
+        "s": 101.42,
+        "e": 101.8
+      }
+    ]
+  }
+]

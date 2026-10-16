@@ -1,0 +1,1104 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "PostgreSQL o‘n sakkiz terminalida NULL qiymati va tip konversiyasi qanday ishlashini amalda tekshiramiz.",
+    "show": "PostgreSQL o‘n sakkiz terminalida NULL qiymati va tip konversiyasi qanday ishlashini amalda tekshiramiz.",
+    "say": "Postgres o‘n sakkiz terminalida nul qiymati va tip konversiyasi qanday ishlashini amalda tekshiramiz.",
+    "a0": 0.28,
+    "a1": 5.62,
+    "words": [
+      {
+        "w": "Postgres",
+        "s": 0.28,
+        "e": 0.72
+      },
+      {
+        "w": "o‘n",
+        "s": 0.82,
+        "e": 0.9
+      },
+      {
+        "w": "sakkiz",
+        "s": 0.94,
+        "e": 1.26
+      },
+      {
+        "w": "terminalida",
+        "s": 1.3,
+        "e": 1.88
+      },
+      {
+        "w": "nul",
+        "s": 2.24,
+        "e": 2.44
+      },
+      {
+        "w": "qiymati",
+        "s": 2.5,
+        "e": 2.86
+      },
+      {
+        "w": "va",
+        "s": 2.92,
+        "e": 3.0
+      },
+      {
+        "w": "tip",
+        "s": 3.16,
+        "e": 3.34
+      },
+      {
+        "w": "konversiyasi",
+        "s": 3.4,
+        "e": 3.98
+      },
+      {
+        "w": "qanday",
+        "s": 4.08,
+        "e": 4.4
+      },
+      {
+        "w": "ishlashini",
+        "s": 4.42,
+        "e": 4.8
+      },
+      {
+        "w": "amalda",
+        "s": 4.86,
+        "e": 5.12
+      },
+      {
+        "w": "tekshiramiz.",
+        "s": 5.16,
+        "e": 5.62
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "null_cmp",
+    "text": "Birinchi so‘rovda yetti barobar NULL hamda NULL barobar NULL ni tekshiramiz. Natijada bo‘sh joy, ya’ni NULL chiqadi.",
+    "show": "Birinchi so‘rovda yetti barobar NULL hamda NULL barobar NULL ni tekshiramiz. Natijada bo‘sh joy, ya’ni NULL chiqadi.",
+    "say": "Birinchi so‘rovda yetti barobar nul hamda nul barobar nul ni tekshiramiz. Natijada bo‘sh joy, ya’ni nul chiqadi.",
+    "a0": 6.4,
+    "a1": 13.19,
+    "words": [
+      {
+        "w": "Birinchi",
+        "s": 6.4,
+        "e": 6.66
+      },
+      {
+        "w": "so‘rovda",
+        "s": 6.68,
+        "e": 7.06
+      },
+      {
+        "w": "yetti",
+        "s": 7.38,
+        "e": 7.71
+      },
+      {
+        "w": "barobar",
+        "s": 7.75,
+        "e": 8.21
+      },
+      {
+        "w": "nul",
+        "s": 8.35,
+        "e": 8.59
+      },
+      {
+        "w": "hamda",
+        "s": 8.67,
+        "e": 8.97
+      },
+      {
+        "w": "nul",
+        "s": 9.23,
+        "e": 9.39
+      },
+      {
+        "w": "barobar",
+        "s": 9.45,
+        "e": 9.83
+      },
+      {
+        "w": "nul",
+        "s": 9.91,
+        "e": 10.07
+      },
+      {
+        "w": "ni",
+        "s": 10.11,
+        "e": 10.17
+      },
+      {
+        "w": "tekshiramiz.",
+        "s": 10.21,
+        "e": 10.67
+      },
+      {
+        "w": "Natijada",
+        "s": 11.11,
+        "e": 11.55
+      },
+      {
+        "w": "bo‘sh",
+        "s": 11.63,
+        "e": 11.81
+      },
+      {
+        "w": "joy,",
+        "s": 11.85,
+        "e": 12.05
+      },
+      {
+        "w": "ya’ni",
+        "s": 12.19,
+        "e": 12.41
+      },
+      {
+        "w": "nul",
+        "s": 12.69,
+        "e": 12.87
+      },
+      {
+        "w": "chiqadi.",
+        "s": 12.93,
+        "e": 13.19
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "null_cmp",
+    "text": "Ammo IS NULL hamda IS DISTINCT FROM predikatlari aniq rost, ya’ni TRUE natijasini beradi.",
+    "show": "Ammo IS NULL hamda IS DISTINCT FROM predikatlari aniq rost, ya’ni TRUE natijasini beradi.",
+    "say": "Ammo iz nul hamda iz distinkt from predikatlari aniq rost, ya’ni tru natijasini beradi.",
+    "a0": 13.67,
+    "a1": 19.99,
+    "words": [
+      {
+        "w": "Ammo",
+        "s": 13.67,
+        "e": 13.87
+      },
+      {
+        "w": "iz",
+        "s": 14.39,
+        "e": 14.53
+      },
+      {
+        "w": "nul",
+        "s": 14.67,
+        "e": 14.87
+      },
+      {
+        "w": "hamda",
+        "s": 14.95,
+        "e": 15.25
+      },
+      {
+        "w": "iz",
+        "s": 15.67,
+        "e": 15.77
+      },
+      {
+        "w": "distinkt",
+        "s": 15.85,
+        "e": 16.27
+      },
+      {
+        "w": "from",
+        "s": 16.33,
+        "e": 16.57
+      },
+      {
+        "w": "predikatlari",
+        "s": 16.65,
+        "e": 17.25
+      },
+      {
+        "w": "aniq",
+        "s": 17.47,
+        "e": 17.73
+      },
+      {
+        "w": "rost,",
+        "s": 17.85,
+        "e": 18.11
+      },
+      {
+        "w": "ya’ni",
+        "s": 18.35,
+        "e": 18.57
+      },
+      {
+        "w": "tru",
+        "s": 18.97,
+        "e": 19.15
+      },
+      {
+        "w": "natijasini",
+        "s": 19.23,
+        "e": 19.69
+      },
+      {
+        "w": "beradi.",
+        "s": 19.73,
+        "e": 19.99
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "jadval_null",
+    "text": "Keyingi navbatda telefonlar jadvalini yaratib, Ali, Vali va Sobir ma’lumotlarini kiritamiz.",
+    "show": "Keyingi navbatda telefonlar jadvalini yaratib, Ali, Vali va Sobir ma’lumotlarini kiritamiz.",
+    "say": "Keyingi navbatda telefonlar jadvalini yaratib, Ali, Vali va Sobir ma’lumotlarini kiritamiz.",
+    "a0": 20.51,
+    "a1": 25.46,
+    "words": [
+      {
+        "w": "Keyingi",
+        "s": 20.51,
+        "e": 20.77
+      },
+      {
+        "w": "navbatda",
+        "s": 20.81,
+        "e": 21.23
+      },
+      {
+        "w": "telefonlar",
+        "s": 21.47,
+        "e": 22.05
+      },
+      {
+        "w": "jadvalini",
+        "s": 22.09,
+        "e": 22.52
+      },
+      {
+        "w": "yaratib,",
+        "s": 22.56,
+        "e": 22.88
+      },
+      {
+        "w": "Ali,",
+        "s": 23.14,
+        "e": 23.4
+      },
+      {
+        "w": "Vali",
+        "s": 23.66,
+        "e": 23.88
+      },
+      {
+        "w": "va",
+        "s": 23.94,
+        "e": 24.02
+      },
+      {
+        "w": "Sobir",
+        "s": 24.16,
+        "e": 24.48
+      },
+      {
+        "w": "ma’lumotlarini",
+        "s": 24.52,
+        "e": 25.04
+      },
+      {
+        "w": "kiritamiz.",
+        "s": 25.08,
+        "e": 25.46
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "jadval_null",
+    "text": "Kutilmagan holat: telefoni Alinikidan farq qiladiganlarni qidirganda, Sobir ro‘yxatga kirmay qoladi! Chunki uning raqami NULL bo‘lib, teng emaslik amali ham noma’lum bo‘ldi.",
+    "show": "Kutilmagan holat: telefoni Alinikidan farq qiladiganlarni qidirganda, Sobir ro‘yxatga kirmay qoladi! Chunki uning raqami NULL bo‘lib, teng emaslik amali ham noma’lum bo‘ldi.",
+    "say": "Kutilmagan holat: telefoni Alinikidan farq qiladiganlarni qidirganda, Sobir ro‘yxatga kirmay qoladi! Chunki uning raqami nul bo‘lib, teng emaslik amali ham noma’lum bo‘ldi.",
+    "a0": 26.14,
+    "a1": 35.76,
+    "words": [
+      {
+        "w": "Kutilmagan",
+        "s": 26.14,
+        "e": 26.6
+      },
+      {
+        "w": "holat:",
+        "s": 26.62,
+        "e": 26.92
+      },
+      {
+        "w": "telefoni",
+        "s": 27.24,
+        "e": 27.66
+      },
+      {
+        "w": "Alinikidan",
+        "s": 27.84,
+        "e": 28.38
+      },
+      {
+        "w": "farq",
+        "s": 28.44,
+        "e": 28.64
+      },
+      {
+        "w": "qiladiganlarni",
+        "s": 28.68,
+        "e": 29.34
+      },
+      {
+        "w": "qidirganda,",
+        "s": 29.4,
+        "e": 29.88
+      },
+      {
+        "w": "Sobir",
+        "s": 30.02,
+        "e": 30.32
+      },
+      {
+        "w": "ro‘yxatga",
+        "s": 30.36,
+        "e": 30.78
+      },
+      {
+        "w": "kirmay",
+        "s": 30.84,
+        "e": 31.04
+      },
+      {
+        "w": "qoladi!",
+        "s": 31.1,
+        "e": 31.36
+      },
+      {
+        "w": "Chunki",
+        "s": 31.84,
+        "e": 32.1
+      },
+      {
+        "w": "uning",
+        "s": 32.28,
+        "e": 32.46
+      },
+      {
+        "w": "raqami",
+        "s": 32.48,
+        "e": 32.82
+      },
+      {
+        "w": "nul",
+        "s": 32.96,
+        "e": 33.16
+      },
+      {
+        "w": "bo‘lib,",
+        "s": 33.22,
+        "e": 33.46
+      },
+      {
+        "w": "teng",
+        "s": 33.84,
+        "e": 34.06
+      },
+      {
+        "w": "emaslik",
+        "s": 34.14,
+        "e": 34.52
+      },
+      {
+        "w": "amali",
+        "s": 34.6,
+        "e": 34.84
+      },
+      {
+        "w": "ham",
+        "s": 34.88,
+        "e": 35.02
+      },
+      {
+        "w": "noma’lum",
+        "s": 35.1,
+        "e": 35.52
+      },
+      {
+        "w": "bo‘ldi.",
+        "s": 35.54,
+        "e": 35.76
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "jadval_null",
+    "text": "Sobirni ham olish uchun IS DISTINCT FROM predikatini ishlatish zarur, shunda ikkita qator to‘g‘ri topiladi.",
+    "show": "Sobirni ham olish uchun IS DISTINCT FROM predikatini ishlatish zarur, shunda ikkita qator to‘g‘ri topiladi.",
+    "say": "Sobirni ham olish uchun iz distinkt from predikatini ishlatish zarur, shunda ikkita qator to‘g‘ri topiladi.",
+    "a0": 36.7,
+    "a1": 42.57,
+    "words": [
+      {
+        "w": "Sobirni",
+        "s": 36.7,
+        "e": 37.08
+      },
+      {
+        "w": "ham",
+        "s": 37.12,
+        "e": 37.26
+      },
+      {
+        "w": "olish",
+        "s": 37.3,
+        "e": 37.53
+      },
+      {
+        "w": "uchun",
+        "s": 37.55,
+        "e": 37.79
+      },
+      {
+        "w": "iz",
+        "s": 38.09,
+        "e": 38.21
+      },
+      {
+        "w": "distinkt",
+        "s": 38.29,
+        "e": 38.69
+      },
+      {
+        "w": "from",
+        "s": 38.75,
+        "e": 38.97
+      },
+      {
+        "w": "predikatini",
+        "s": 39.01,
+        "e": 39.47
+      },
+      {
+        "w": "ishlatish",
+        "s": 39.51,
+        "e": 39.85
+      },
+      {
+        "w": "zarur,",
+        "s": 39.95,
+        "e": 40.25
+      },
+      {
+        "w": "shunda",
+        "s": 40.53,
+        "e": 40.79
+      },
+      {
+        "w": "ikkita",
+        "s": 41.23,
+        "e": 41.49
+      },
+      {
+        "w": "qator",
+        "s": 41.53,
+        "e": 41.81
+      },
+      {
+        "w": "to‘g‘ri",
+        "s": 41.91,
+        "e": 42.17
+      },
+      {
+        "w": "topiladi.",
+        "s": 42.19,
+        "e": 42.57
+      }
+    ]
+  },
+  {
+    "id": "L7",
+    "scene": "null_expr",
+    "text": "Endi agregatsiyaga qarasak: count yulduzcha uchta qatorni sanasa, count telefon atigi ikkita qatorni ko‘rsatadi, chunki NULL hisobga kirmaydi.",
+    "show": "Endi agregatsiyaga qarasak: count yulduzcha uchta qatorni sanasa, count telefon atigi ikkita qatorni ko‘rsatadi, chunki NULL hisobga kirmaydi.",
+    "say": "Endi agregatsiyaga qarasak: kaunt yulduzcha uchta qatorni sanasa, kaunt telefon atigi ikkita qatorni ko‘rsatadi, chunki nul hisobga kirmaydi.",
+    "a0": 43.13,
+    "a1": 51.59,
+    "words": [
+      {
+        "w": "Endi",
+        "s": 43.13,
+        "e": 43.35
+      },
+      {
+        "w": "agregatsiyaga",
+        "s": 43.55,
+        "e": 44.09
+      },
+      {
+        "w": "qarasak:",
+        "s": 44.13,
+        "e": 44.45
+      },
+      {
+        "w": "kaunt",
+        "s": 44.97,
+        "e": 45.29
+      },
+      {
+        "w": "yulduzcha",
+        "s": 45.35,
+        "e": 45.75
+      },
+      {
+        "w": "uchta",
+        "s": 46.01,
+        "e": 46.25
+      },
+      {
+        "w": "qatorni",
+        "s": 46.31,
+        "e": 46.67
+      },
+      {
+        "w": "sanasa,",
+        "s": 46.71,
+        "e": 47.05
+      },
+      {
+        "w": "kaunt",
+        "s": 47.47,
+        "e": 47.79
+      },
+      {
+        "w": "telefon",
+        "s": 47.81,
+        "e": 48.19
+      },
+      {
+        "w": "atigi",
+        "s": 48.29,
+        "e": 48.55
+      },
+      {
+        "w": "ikkita",
+        "s": 48.67,
+        "e": 48.89
+      },
+      {
+        "w": "qatorni",
+        "s": 48.93,
+        "e": 49.25
+      },
+      {
+        "w": "ko‘rsatadi,",
+        "s": 49.27,
+        "e": 49.69
+      },
+      {
+        "w": "chunki",
+        "s": 49.97,
+        "e": 50.25
+      },
+      {
+        "w": "nul",
+        "s": 50.57,
+        "e": 50.79
+      },
+      {
+        "w": "hisobga",
+        "s": 50.87,
+        "e": 51.19
+      },
+      {
+        "w": "kirmaydi.",
+        "s": 51.25,
+        "e": 51.59
+      }
+    ]
+  },
+  {
+    "id": "L8",
+    "scene": "null_expr",
+    "text": "Arifmetikada bir qo‘shuv NULL natijasi NULL bo‘ladi. Ammo concat funksiyasi NULL qiymatni e’tiborsiz qoldirib, matnni to‘g‘ri ulaydi.",
+    "show": "Arifmetikada bir qo‘shuv NULL natijasi NULL bo‘ladi. Ammo concat funksiyasi NULL qiymatni e’tiborsiz qoldirib, matnni to‘g‘ri ulaydi.",
+    "say": "Arifmetikada bir qo‘shuv nul natijasi nul bo‘ladi. Ammo konkat funksiyasi nul qiymatni e’tiborsiz qoldirib, matnni to‘g‘ri ulaydi.",
+    "a0": 52.17,
+    "a1": 60.14,
+    "words": [
+      {
+        "w": "Arifmetikada",
+        "s": 52.17,
+        "e": 52.82
+      },
+      {
+        "w": "bir",
+        "s": 53.16,
+        "e": 53.3
+      },
+      {
+        "w": "qo‘shuv",
+        "s": 53.38,
+        "e": 53.66
+      },
+      {
+        "w": "nul",
+        "s": 53.78,
+        "e": 53.98
+      },
+      {
+        "w": "natijasi",
+        "s": 54.04,
+        "e": 54.56
+      },
+      {
+        "w": "nul",
+        "s": 54.74,
+        "e": 54.92
+      },
+      {
+        "w": "bo‘ladi.",
+        "s": 54.96,
+        "e": 55.24
+      },
+      {
+        "w": "Ammo",
+        "s": 55.7,
+        "e": 55.88
+      },
+      {
+        "w": "konkat",
+        "s": 56.18,
+        "e": 56.58
+      },
+      {
+        "w": "funksiyasi",
+        "s": 56.64,
+        "e": 57.12
+      },
+      {
+        "w": "nul",
+        "s": 57.34,
+        "e": 57.52
+      },
+      {
+        "w": "qiymatni",
+        "s": 57.56,
+        "e": 57.96
+      },
+      {
+        "w": "e’tiborsiz",
+        "s": 58.0,
+        "e": 58.42
+      },
+      {
+        "w": "qoldirib,",
+        "s": 58.46,
+        "e": 58.78
+      },
+      {
+        "w": "matnni",
+        "s": 59.1,
+        "e": 59.5
+      },
+      {
+        "w": "to‘g‘ri",
+        "s": 59.58,
+        "e": 59.86
+      },
+      {
+        "w": "ulaydi.",
+        "s": 59.88,
+        "e": 60.14
+      }
+    ]
+  },
+  {
+    "id": "L9",
+    "scene": "type_conv",
+    "text": "Tip konversiyasida qirq ikki satrini int ga o‘girib birni qo‘shish mumkin. Noma’lum satr bir ham son bilan muammosiz qo‘shiladi.",
+    "show": "Tip konversiyasida qirq ikki satrini int ga o‘girib birni qo‘shish mumkin. Noma’lum satr bir ham son bilan muammosiz qo‘shiladi.",
+    "say": "Tip konversiyasida qirq ikki satrini int ga o‘girib birni qo‘shish mumkin. Noma’lum satr bir ham son bilan muammosiz qo‘shiladi.",
+    "a0": 60.98,
+    "a1": 68.25,
+    "words": [
+      {
+        "w": "Tip",
+        "s": 60.98,
+        "e": 61.14
+      },
+      {
+        "w": "konversiyasida",
+        "s": 61.2,
+        "e": 61.88
+      },
+      {
+        "w": "qirq",
+        "s": 62.12,
+        "e": 62.3
+      },
+      {
+        "w": "ikki",
+        "s": 62.34,
+        "e": 62.54
+      },
+      {
+        "w": "satrini",
+        "s": 62.6,
+        "e": 63.0
+      },
+      {
+        "w": "int",
+        "s": 63.16,
+        "e": 63.28
+      },
+      {
+        "w": "ga",
+        "s": 63.34,
+        "e": 63.4
+      },
+      {
+        "w": "o‘girib",
+        "s": 63.46,
+        "e": 63.72
+      },
+      {
+        "w": "birni",
+        "s": 63.82,
+        "e": 64.04
+      },
+      {
+        "w": "qo‘shish",
+        "s": 64.1,
+        "e": 64.36
+      },
+      {
+        "w": "mumkin.",
+        "s": 64.4,
+        "e": 64.68
+      },
+      {
+        "w": "Noma’lum",
+        "s": 65.38,
+        "e": 65.8
+      },
+      {
+        "w": "satr",
+        "s": 65.84,
+        "e": 66.1
+      },
+      {
+        "w": "bir",
+        "s": 66.32,
+        "e": 66.46
+      },
+      {
+        "w": "ham",
+        "s": 66.54,
+        "e": 66.72
+      },
+      {
+        "w": "son",
+        "s": 66.82,
+        "e": 67.0
+      },
+      {
+        "w": "bilan",
+        "s": 67.06,
+        "e": 67.24
+      },
+      {
+        "w": "muammosiz",
+        "s": 67.34,
+        "e": 67.85
+      },
+      {
+        "w": "qo‘shiladi.",
+        "s": 67.87,
+        "e": 68.25
+      }
+    ]
+  },
+  {
+    "id": "L10",
+    "scene": "type_conv",
+    "text": "Biroq bir qo‘shuv bir butun o‘ndan besh satri xato beradi, chunki kontekstda faqat butun son kutilgan edi.",
+    "show": "Biroq bir qo‘shuv bir butun o‘ndan besh satri xato beradi, chunki kontekstda faqat butun son kutilgan edi.",
+    "say": "Biroq bir qo‘shuv bir butun o‘ndan besh satri xato beradi, chunki kontekstda faqat butun son kutilgan edi.",
+    "a0": 68.81,
+    "a1": 74.85,
+    "words": [
+      {
+        "w": "Biroq",
+        "s": 68.81,
+        "e": 69.07
+      },
+      {
+        "w": "bir",
+        "s": 69.35,
+        "e": 69.49
+      },
+      {
+        "w": "qo‘shuv",
+        "s": 69.57,
+        "e": 69.87
+      },
+      {
+        "w": "bir",
+        "s": 70.03,
+        "e": 70.13
+      },
+      {
+        "w": "butun",
+        "s": 70.19,
+        "e": 70.41
+      },
+      {
+        "w": "o‘ndan",
+        "s": 70.53,
+        "e": 70.83
+      },
+      {
+        "w": "besh",
+        "s": 70.91,
+        "e": 71.13
+      },
+      {
+        "w": "satri",
+        "s": 71.15,
+        "e": 71.47
+      },
+      {
+        "w": "xato",
+        "s": 71.57,
+        "e": 71.81
+      },
+      {
+        "w": "beradi,",
+        "s": 71.89,
+        "e": 72.17
+      },
+      {
+        "w": "chunki",
+        "s": 72.45,
+        "e": 72.69
+      },
+      {
+        "w": "kontekstda",
+        "s": 72.87,
+        "e": 73.35
+      },
+      {
+        "w": "faqat",
+        "s": 73.47,
+        "e": 73.79
+      },
+      {
+        "w": "butun",
+        "s": 73.89,
+        "e": 74.13
+      },
+      {
+        "w": "son",
+        "s": 74.19,
+        "e": 74.33
+      },
+      {
+        "w": "kutilgan",
+        "s": 74.37,
+        "e": 74.71
+      },
+      {
+        "w": "edi.",
+        "s": 74.73,
+        "e": 74.85
+      }
+    ]
+  },
+  {
+    "id": "L11",
+    "scene": "type_conv",
+    "text": "Jadvaldagi sonlar bilan matnli ustunni solishtirganda ham Postgres qat’iy operator mavjud emas degan xatoni chiqaradi.",
+    "show": "Jadvaldagi sonlar bilan matnli ustunni solishtirganda ham Postgres qat’iy operator mavjud emas degan xatoni chiqaradi.",
+    "say": "Jadvaldagi sonlar bilan matnli ustunni solishtirganda ham Postgres qat’iy operator mavjud emas degan xatoni chiqaradi.",
+    "a0": 75.79,
+    "a1": 82.16,
+    "words": [
+      {
+        "w": "Jadvaldagi",
+        "s": 75.79,
+        "e": 76.27
+      },
+      {
+        "w": "sonlar",
+        "s": 76.33,
+        "e": 76.65
+      },
+      {
+        "w": "bilan",
+        "s": 76.71,
+        "e": 76.91
+      },
+      {
+        "w": "matnli",
+        "s": 76.99,
+        "e": 77.35
+      },
+      {
+        "w": "ustunni",
+        "s": 77.43,
+        "e": 77.73
+      },
+      {
+        "w": "solishtirganda",
+        "s": 77.75,
+        "e": 78.33
+      },
+      {
+        "w": "ham",
+        "s": 78.35,
+        "e": 78.49
+      },
+      {
+        "w": "Postgres",
+        "s": 78.55,
+        "e": 78.93
+      },
+      {
+        "w": "qat’iy",
+        "s": 79.25,
+        "e": 79.59
+      },
+      {
+        "w": "operator",
+        "s": 79.99,
+        "e": 80.47
+      },
+      {
+        "w": "mavjud",
+        "s": 80.51,
+        "e": 80.81
+      },
+      {
+        "w": "emas",
+        "s": 80.93,
+        "e": 81.17
+      },
+      {
+        "w": "degan",
+        "s": 81.21,
+        "e": 81.45
+      },
+      {
+        "w": "xatoni",
+        "s": 81.49,
+        "e": 81.81
+      },
+      {
+        "w": "chiqaradi.",
+        "s": 81.83,
+        "e": 82.16
+      }
+    ]
+  },
+  {
+    "id": "L12",
+    "scene": "xulosa",
+    "text": "Ko‘rib turganingizdek, xatolarning oldini olish uchun NULL predikatlarini to‘g‘ri qo‘llash va tiplarni aniq kast qilish shart.",
+    "show": "Ko‘rib turganingizdek, xatolarning oldini olish uchun NULL predikatlarini to‘g‘ri qo‘llash va tiplarni aniq kast qilish shart.",
+    "say": "Ko‘rib turganingizdek, xatolarning oldini olish uchun nul predikatlarini to‘g‘ri qo‘llash va tiplarni aniq kast qilish shart.",
+    "a0": 82.86,
+    "a1": 89.26,
+    "words": [
+      {
+        "w": "Ko‘rib",
+        "s": 82.86,
+        "e": 83.08
+      },
+      {
+        "w": "turganingizdek,",
+        "s": 83.1,
+        "e": 83.7
+      },
+      {
+        "w": "xatolarning",
+        "s": 83.98,
+        "e": 84.54
+      },
+      {
+        "w": "oldini",
+        "s": 84.58,
+        "e": 84.82
+      },
+      {
+        "w": "olish",
+        "s": 84.86,
+        "e": 85.06
+      },
+      {
+        "w": "uchun",
+        "s": 85.08,
+        "e": 85.26
+      },
+      {
+        "w": "nul",
+        "s": 85.4,
+        "e": 85.56
+      },
+      {
+        "w": "predikatlarini",
+        "s": 85.6,
+        "e": 86.26
+      },
+      {
+        "w": "to‘g‘ri",
+        "s": 86.34,
+        "e": 86.6
+      },
+      {
+        "w": "qo‘llash",
+        "s": 86.66,
+        "e": 87.02
+      },
+      {
+        "w": "va",
+        "s": 87.06,
+        "e": 87.14
+      },
+      {
+        "w": "tiplarni",
+        "s": 87.46,
+        "e": 87.94
+      },
+      {
+        "w": "aniq",
+        "s": 88.08,
+        "e": 88.32
+      },
+      {
+        "w": "kast",
+        "s": 88.46,
+        "e": 88.7
+      },
+      {
+        "w": "qilish",
+        "s": 88.74,
+        "e": 88.98
+      },
+      {
+        "w": "shart.",
+        "s": 89.0,
+        "e": 89.26
+      }
+    ]
+  }
+]
