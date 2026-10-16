@@ -1,0 +1,633 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "SQL jadvallardagi qatorlar tartibini kafolatlamaydi: kerakli natija ketma-ketligini olishning yagona yo‘li — bu ORDER BY bandidan aniq foydalanishdir.",
+    "show": "SQL jadvallardagi qatorlar tartibini kafolatlamaydi: kerakli natija ketma-ketligini olishning yagona yo‘li — bu ORDER BY bandidan aniq foydalanishdir.",
+    "say": "Es-kyu-el jadvallardagi qatorlar tartibini kafolatlamaydi: kerakli natija ketma-ketligini olishning yagona yo‘li — bu order bay bandidan aniq foydalanishdir.",
+    "a0": 0.28,
+    "a1": 8.53,
+    "words": [
+      {
+        "w": "Es-kyu-el",
+        "s": 0.28,
+        "e": 0.7
+      },
+      {
+        "w": "jadvallardagi",
+        "s": 0.78,
+        "e": 1.46
+      },
+      {
+        "w": "qatorlar",
+        "s": 1.54,
+        "e": 1.98
+      },
+      {
+        "w": "tartibini",
+        "s": 2.02,
+        "e": 2.4
+      },
+      {
+        "w": "kafolatlamaydi:",
+        "s": 2.44,
+        "e": 3.16
+      },
+      {
+        "w": "kerakli",
+        "s": 3.5,
+        "e": 3.86
+      },
+      {
+        "w": "natija",
+        "s": 3.94,
+        "e": 4.28
+      },
+      {
+        "w": "ketma-ketligini",
+        "s": 4.32,
+        "e": 4.94
+      },
+      {
+        "w": "olishning",
+        "s": 5.0,
+        "e": 5.32
+      },
+      {
+        "w": "yagona",
+        "s": 5.38,
+        "e": 5.78
+      },
+      {
+        "w": "yo‘li",
+        "s": 5.84,
+        "e": 6.04
+      },
+      {
+        "w": "—",
+        "s": 6.04,
+        "e": 6.04
+      },
+      {
+        "w": "bu",
+        "s": 6.16,
+        "e": 6.24
+      },
+      {
+        "w": "order",
+        "s": 6.5,
+        "e": 6.82
+      },
+      {
+        "w": "bay",
+        "s": 6.9,
+        "e": 7.08
+      },
+      {
+        "w": "bandidan",
+        "s": 7.16,
+        "e": 7.55
+      },
+      {
+        "w": "aniq",
+        "s": 7.69,
+        "e": 7.87
+      },
+      {
+        "w": "foydalanishdir.",
+        "s": 7.91,
+        "e": 8.53
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "asc_desc_rules",
+    "text": "ASC o‘sish, DESC esa kamayish tartibini belgilaydi; bir nechta ustun ko‘rsatilganda DESC faqat o‘zi biriktirilgan ustungagina ta’sir qiladi.",
+    "show": "ASC o‘sish, DESC esa kamayish tartibini belgilaydi; bir nechta ustun ko‘rsatilganda DESC faqat o‘zi biriktirilgan ustungagina ta’sir qiladi.",
+    "say": "Ask o‘sish, desk esa kamayish tartibini belgilaydi; bir nechta ustun ko‘rsatilganda desk faqat o‘zi biriktirilgan ustungagina ta’sir qiladi.",
+    "a0": 9.27,
+    "a1": 17.11,
+    "words": [
+      {
+        "w": "Ask",
+        "s": 9.27,
+        "e": 9.53
+      },
+      {
+        "w": "o‘sish,",
+        "s": 9.75,
+        "e": 10.13
+      },
+      {
+        "w": "desk",
+        "s": 10.47,
+        "e": 10.71
+      },
+      {
+        "w": "esa",
+        "s": 10.75,
+        "e": 10.91
+      },
+      {
+        "w": "kamayish",
+        "s": 11.01,
+        "e": 11.39
+      },
+      {
+        "w": "tartibini",
+        "s": 11.41,
+        "e": 11.79
+      },
+      {
+        "w": "belgilaydi;",
+        "s": 11.79,
+        "e": 12.85
+      },
+      {
+        "w": "bir",
+        "s": 12.85,
+        "e": 12.95
+      },
+      {
+        "w": "nechta",
+        "s": 12.99,
+        "e": 13.21
+      },
+      {
+        "w": "ustun",
+        "s": 13.25,
+        "e": 13.45
+      },
+      {
+        "w": "ko‘rsatilganda",
+        "s": 13.49,
+        "e": 14.13
+      },
+      {
+        "w": "desk",
+        "s": 14.49,
+        "e": 14.75
+      },
+      {
+        "w": "faqat",
+        "s": 14.83,
+        "e": 15.09
+      },
+      {
+        "w": "o‘zi",
+        "s": 15.21,
+        "e": 15.39
+      },
+      {
+        "w": "biriktirilgan",
+        "s": 15.43,
+        "e": 15.95
+      },
+      {
+        "w": "ustungagina",
+        "s": 16.05,
+        "e": 16.57
+      },
+      {
+        "w": "ta’sir",
+        "s": 16.59,
+        "e": 16.83
+      },
+      {
+        "w": "qiladi.",
+        "s": 16.87,
+        "e": 17.11
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "nulls_position",
+    "text": "PostgreSQL da NULL har doim eng katta qiymat sanaladi, shuning uchun kamayish tartibida noma’lum qiymatlar ro‘yxat boshiga chiqib qolmasligi uchun NULLS LAST yoziladi.",
+    "show": "PostgreSQL da NULL har doim eng katta qiymat sanaladi, shuning uchun kamayish tartibida noma’lum qiymatlar ro‘yxat boshiga chiqib qolmasligi uchun NULLS LAST yoziladi.",
+    "say": "Postgres da null har doim eng katta qiymat sanaladi, shuning uchun kamayish tartibida noma’lum qiymatlar ro‘yxat boshiga chiqib qolmasligi uchun nulls last yoziladi.",
+    "a0": 17.79,
+    "a1": 26.74,
+    "words": [
+      {
+        "w": "Postgres",
+        "s": 17.79,
+        "e": 18.21
+      },
+      {
+        "w": "da",
+        "s": 18.27,
+        "e": 18.37
+      },
+      {
+        "w": "null",
+        "s": 18.65,
+        "e": 18.85
+      },
+      {
+        "w": "har",
+        "s": 18.95,
+        "e": 19.15
+      },
+      {
+        "w": "doim",
+        "s": 19.19,
+        "e": 19.43
+      },
+      {
+        "w": "eng",
+        "s": 19.59,
+        "e": 19.75
+      },
+      {
+        "w": "katta",
+        "s": 19.79,
+        "e": 20.03
+      },
+      {
+        "w": "qiymat",
+        "s": 20.07,
+        "e": 20.33
+      },
+      {
+        "w": "sanaladi,",
+        "s": 20.37,
+        "e": 20.77
+      },
+      {
+        "w": "shuning",
+        "s": 20.99,
+        "e": 21.23
+      },
+      {
+        "w": "uchun",
+        "s": 21.25,
+        "e": 21.43
+      },
+      {
+        "w": "kamayish",
+        "s": 21.53,
+        "e": 21.91
+      },
+      {
+        "w": "tartibida",
+        "s": 21.95,
+        "e": 22.37
+      },
+      {
+        "w": "noma’lum",
+        "s": 22.7,
+        "e": 23.18
+      },
+      {
+        "w": "qiymatlar",
+        "s": 23.22,
+        "e": 23.64
+      },
+      {
+        "w": "ro‘yxat",
+        "s": 23.68,
+        "e": 24.0
+      },
+      {
+        "w": "boshiga",
+        "s": 24.04,
+        "e": 24.3
+      },
+      {
+        "w": "chiqib",
+        "s": 24.34,
+        "e": 24.52
+      },
+      {
+        "w": "qolmasligi",
+        "s": 24.54,
+        "e": 24.98
+      },
+      {
+        "w": "uchun",
+        "s": 25.04,
+        "e": 25.24
+      },
+      {
+        "w": "nulls",
+        "s": 25.58,
+        "e": 25.92
+      },
+      {
+        "w": "last",
+        "s": 26.06,
+        "e": 26.3
+      },
+      {
+        "w": "yoziladi.",
+        "s": 26.36,
+        "e": 26.74
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "limit_offset",
+    "text": "LIMIT va OFFSET natijani sahifalash uchun ishlatiladi, ammo saralashsiz LIMIT qo‘llash mutlaqo noaniq va tasodifiy qatorlarni qaytaradi.",
+    "show": "LIMIT va OFFSET natijani sahifalash uchun ishlatiladi, ammo saralashsiz LIMIT qo‘llash mutlaqo noaniq va tasodifiy qatorlarni qaytaradi.",
+    "say": "Limit va offset natijani sahifalash uchun ishlatiladi, ammo saralashsiz limit qo‘llash mutlaqo noaniq va tasodifiy qatorlarni qaytaradi.",
+    "a0": 27.4,
+    "a1": 35.1,
+    "words": [
+      {
+        "w": "Limit",
+        "s": 27.4,
+        "e": 27.66
+      },
+      {
+        "w": "va",
+        "s": 27.74,
+        "e": 27.82
+      },
+      {
+        "w": "offset",
+        "s": 27.96,
+        "e": 28.3
+      },
+      {
+        "w": "natijani",
+        "s": 28.34,
+        "e": 28.74
+      },
+      {
+        "w": "sahifalash",
+        "s": 28.8,
+        "e": 29.32
+      },
+      {
+        "w": "uchun",
+        "s": 29.38,
+        "e": 29.54
+      },
+      {
+        "w": "ishlatiladi,",
+        "s": 29.58,
+        "e": 30.0
+      },
+      {
+        "w": "ammo",
+        "s": 30.32,
+        "e": 30.52
+      },
+      {
+        "w": "saralashsiz",
+        "s": 30.7,
+        "e": 31.34
+      },
+      {
+        "w": "limit",
+        "s": 31.42,
+        "e": 31.66
+      },
+      {
+        "w": "qo‘llash",
+        "s": 31.7,
+        "e": 32.02
+      },
+      {
+        "w": "mutlaqo",
+        "s": 32.32,
+        "e": 32.76
+      },
+      {
+        "w": "noaniq",
+        "s": 32.9,
+        "e": 33.34
+      },
+      {
+        "w": "va",
+        "s": 33.4,
+        "e": 33.46
+      },
+      {
+        "w": "tasodifiy",
+        "s": 33.56,
+        "e": 34.08
+      },
+      {
+        "w": "qatorlarni",
+        "s": 34.16,
+        "e": 34.66
+      },
+      {
+        "w": "qaytaradi.",
+        "s": 34.7,
+        "e": 35.1
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "with_ties_standart",
+    "text": "SQL standarti bo‘lgan FETCH FIRST va WITH TIES konstruksiyasi esa oxirgi o‘rinni teng egallagan barcha qatorlarni adolatli kiritish imkonini beradi.",
+    "show": "SQL standarti bo‘lgan FETCH FIRST va WITH TIES konstruksiyasi esa oxirgi o‘rinni teng egallagan barcha qatorlarni adolatli kiritish imkonini beradi.",
+    "say": "Es-kyu-el standarti bo‘lgan fech ferst va vit tayz konstruksiyasi esa oxirgi o‘rinni teng egallagan barcha qatorlarni adolatli kiritish imkonini beradi.",
+    "a0": 35.8,
+    "a1": 44.63,
+    "words": [
+      {
+        "w": "Es-kyu-el",
+        "s": 35.8,
+        "e": 36.15
+      },
+      {
+        "w": "standarti",
+        "s": 36.21,
+        "e": 36.61
+      },
+      {
+        "w": "bo‘lgan",
+        "s": 36.65,
+        "e": 36.95
+      },
+      {
+        "w": "fech",
+        "s": 37.11,
+        "e": 37.35
+      },
+      {
+        "w": "ferst",
+        "s": 37.45,
+        "e": 37.79
+      },
+      {
+        "w": "va",
+        "s": 37.89,
+        "e": 37.97
+      },
+      {
+        "w": "vit",
+        "s": 38.31,
+        "e": 38.55
+      },
+      {
+        "w": "tayz",
+        "s": 38.59,
+        "e": 38.85
+      },
+      {
+        "w": "konstruksiyasi",
+        "s": 38.91,
+        "e": 39.53
+      },
+      {
+        "w": "esa",
+        "s": 39.57,
+        "e": 39.73
+      },
+      {
+        "w": "oxirgi",
+        "s": 40.15,
+        "e": 40.53
+      },
+      {
+        "w": "o‘rinni",
+        "s": 40.69,
+        "e": 40.99
+      },
+      {
+        "w": "teng",
+        "s": 41.11,
+        "e": 41.33
+      },
+      {
+        "w": "egallagan",
+        "s": 41.41,
+        "e": 41.87
+      },
+      {
+        "w": "barcha",
+        "s": 42.01,
+        "e": 42.31
+      },
+      {
+        "w": "qatorlarni",
+        "s": 42.35,
+        "e": 42.89
+      },
+      {
+        "w": "adolatli",
+        "s": 43.03,
+        "e": 43.47
+      },
+      {
+        "w": "kiritish",
+        "s": 43.53,
+        "e": 43.87
+      },
+      {
+        "w": "imkonini",
+        "s": 43.91,
+        "e": 44.33
+      },
+      {
+        "w": "beradi.",
+        "s": 44.37,
+        "e": 44.63
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "xulosa",
+    "text": "Sahifalashda doimo barqaror tartibni ta’minlash, NULL o‘rnini to‘g‘ri belgilash va katta ofsetlar unumdorlikni tushirishini bilish muvaffaqiyat garovidir.",
+    "show": "Sahifalashda doimo barqaror tartibni ta’minlash, NULL o‘rnini to‘g‘ri belgilash va katta ofsetlar unumdorlikni tushirishini bilish muvaffaqiyat garovidir.",
+    "say": "Sahifalashda doimo barqaror tartibni ta’minlash, null o‘rnini to‘g‘ri belgilash va katta ofsetlar unumdorlikni tushirishini bilish muvaffaqiyat garovidir.",
+    "a0": 45.33,
+    "a1": 53.7,
+    "words": [
+      {
+        "w": "Sahifalashda",
+        "s": 45.33,
+        "e": 45.95
+      },
+      {
+        "w": "doimo",
+        "s": 46.03,
+        "e": 46.39
+      },
+      {
+        "w": "barqaror",
+        "s": 46.51,
+        "e": 46.95
+      },
+      {
+        "w": "tartibni",
+        "s": 46.99,
+        "e": 47.35
+      },
+      {
+        "w": "ta’minlash,",
+        "s": 47.41,
+        "e": 47.96
+      },
+      {
+        "w": "null",
+        "s": 48.28,
+        "e": 48.46
+      },
+      {
+        "w": "o‘rnini",
+        "s": 48.54,
+        "e": 48.88
+      },
+      {
+        "w": "to‘g‘ri",
+        "s": 48.94,
+        "e": 49.2
+      },
+      {
+        "w": "belgilash",
+        "s": 49.22,
+        "e": 49.66
+      },
+      {
+        "w": "va",
+        "s": 49.7,
+        "e": 49.78
+      },
+      {
+        "w": "katta",
+        "s": 50.08,
+        "e": 50.42
+      },
+      {
+        "w": "ofsetlar",
+        "s": 50.52,
+        "e": 51.0
+      },
+      {
+        "w": "unumdorlikni",
+        "s": 51.08,
+        "e": 51.7
+      },
+      {
+        "w": "tushirishini",
+        "s": 51.74,
+        "e": 52.18
+      },
+      {
+        "w": "bilish",
+        "s": 52.22,
+        "e": 52.48
+      },
+      {
+        "w": "muvaffaqiyat",
+        "s": 52.66,
+        "e": 53.24
+      },
+      {
+        "w": "garovidir.",
+        "s": 53.28,
+        "e": 53.7
+      }
+    ]
+  }
+]

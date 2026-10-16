@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:12.378
+MySQL va SQLite da saralash farqlari
+
+00:12.378 --> 00:24.127
+MySQL: NULL eng kichik va IS NULL usuli
+
+00:24.127 --> 00:36.347
+MySQL: LIMIT m, n va FETCH yo‘qligi
+
+00:36.347 --> 00:46.900
+SQLite: NULLS LAST va manfiy LIMIT
+
+00:46.900 --> 00:57.478
+Uch tizimning saralash solishtiruvi
+
+00:57.478 --> 01:11.320
+Uch tizim qiyosiy xulosasi

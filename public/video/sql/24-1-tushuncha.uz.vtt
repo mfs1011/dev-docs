@@ -1,0 +1,31 @@
+WEBVTT
+
+1
+00:01.420 --> 00:10.120
+SQL jadvallardagi qatorlar tartibini kafolatlamaydi: kerakli natija
+ketma-ketligini olishning yagona yo‘li — bu ORDER BY bandidan aniq foydalanishdir.
+
+2
+00:12.810 --> 00:21.100
+ASC o‘sish, DESC esa kamayish tartibini belgilaydi; bir nechta ustun
+ko‘rsatilganda DESC faqat o‘zi biriktirilgan ustungagina ta’sir qiladi.
+
+3
+00:23.930 --> 00:33.330
+PostgreSQL da NULL har doim eng katta qiymat sanaladi, shuning uchun kamayish tartibida
+noma’lum qiymatlar ro‘yxat boshiga chiqib qolmasligi uchun NULLS LAST yoziladi.
+
+4
+00:36.340 --> 00:44.490
+LIMIT va OFFSET natijani sahifalash uchun ishlatiladi, ammo saralashsiz
+LIMIT qo‘llash mutlaqo noaniq va tasodifiy qatorlarni qaytaradi.
+
+5
+00:47.340 --> 00:56.620
+SQL standarti bo‘lgan FETCH FIRST va WITH TIES konstruksiyasi esa oxirgi
+o‘rinni teng egallagan barcha qatorlarni adolatli kiritish imkonini beradi.
+
+6
+00:59.470 --> 01:08.290
+Sahifalashda doimo barqaror tartibni ta’minlash, NULL o‘rnini to‘g‘ri belgilash
+va katta ofsetlar unumdorlikni tushirishini bilish muvaffaqiyat garovidir.

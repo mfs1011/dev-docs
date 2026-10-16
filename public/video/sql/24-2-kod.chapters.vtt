@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:12.332
+PostgreSQL 18: Sinov jadvali va vazifalar
+
+00:12.332 --> 00:23.135
+ORDER BY va NULLS LAST amaliyoti
+
+00:23.135 --> 00:36.148
+LIMIT va OFFSET bilan barqaror sahifalash
+
+00:36.148 --> 00:47.469
+FETCH FIRST va WITH TIES amaliyoti
+
+00:47.469 --> 00:57.634
+Bir nechta ustun bo‘yicha saralash
+
+00:57.634 --> 01:10.140
+Amaliy xulosalar va tavsiyalar

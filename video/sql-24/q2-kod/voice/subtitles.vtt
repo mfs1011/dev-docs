@@ -1,0 +1,31 @@
+WEBVTT
+
+1
+00:01.420 --> 00:10.560
+Ushbu amaliy qismda PostgreSQL 18 da talabalar jadvali misolida
+ORDER BY, NULLS LAST va sahifalash imkoniyatlarini sinab ko‘ramiz.
+
+2
+00:13.470 --> 00:21.240
+Kamayish tartibida saralanganda bali bo‘lmagan Sobir boshiga chiqib
+qoladi; uni oxiriga tushirish uchun NULLS LAST bandi qo‘shiladi.
+
+3
+00:24.590 --> 00:34.030
+LIMIT va OFFSET yordamida har bir sahifada ikkitadan talaba olinadi; tartib
+doim barqaror bo‘lishi uchun esa ikkinchi ustun sifatida id beriladi.
+
+4
+00:37.360 --> 00:45.560
+Standartdagi FETCH FIRST va WITH TIES sintaksisi esa eng yuqori
+ballni teng olgan Vali va Dilnozani birgalikda tanlab oladi.
+
+5
+00:48.670 --> 00:55.780
+Bir nechta ustun bo‘yicha saralashda guruh o‘sish, ball esa
+kamayish tartibida alohida yo‘nalish bilan xatosiz boshqariladi.
+
+6
+00:58.790 --> 01:06.470
+Baza bilan ishlashda doimo deterministik tartibni ta’minlash va
+NULLS LAST dan foydalanish to‘g‘ri ma’lumot berish garovidir.

@@ -4,6 +4,15 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/24-1-tushuncha.jpg">
+    <source src="/video/sql/24-1-tushuncha.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/24-1-tushuncha.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/24-1-tushuncha.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>24.1-video. ORDER BY, LIMIT va sahifalash asoslari</figcaption>
+</figure>
+
 ### `ORDER BY`
 
 1-bobda ko'rganimizdek, SQL qatorlar tartibini kafolatlamaydi. PostgreSQL hujjati buni yana ta'kidlaydi: saralash tanlanmasa, qatorlar "noma'lum tartibda" qaytadi. Haqiqiy tartib qanday skanerlash, qanday birlashtirish rejasi tanlangani va qatorlar diskda qanday joylashganiga bog'liq. Lekin unga **tayanib bo'lmaydi**. Muayyan tartib faqat saralash aniq so'ralganda kafolatlanadi.
@@ -49,6 +58,15 @@ Hujjatdagi ikki muhim ogohlantirish:
 > **Katta `OFFSET` samarasiz bo'lishi mumkin.** O'tkazib yuborilgan qatorlar ham serverda baribir hisoblanadi (48-bob).
 
 ## Kod
+
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/24-2-kod.jpg">
+    <source src="/video/sql/24-2-kod.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/24-2-kod.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/24-2-kod.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>24.2-video. PostgreSQL 18: ORDER BY, NULLS LAST va WITH TIES</figcaption>
+</figure>
 
 Misollar PostgreSQL 18.6, MySQL 9.7.2 va SQLite 3.54.0 da ishga tushirilgan.
 
@@ -194,6 +212,15 @@ ERROR:  column "ikki" does not exist
 Hujjatdagi qoida: natija ustunining nomi `ORDER BY` da faqat **yolg'iz** ishlatiladi.
 
 ## Dialektlar
+
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/24-3-dialektlar.jpg">
+    <source src="/video/sql/24-3-dialektlar.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/24-3-dialektlar.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/24-3-dialektlar.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>24.3-video. MySQL va SQLite da saralash o'ziga xosliklari</figcaption>
+</figure>
 
 ### MySQL
 
