@@ -1,0 +1,26 @@
+WEBVTT
+
+1
+00:01.420 --> 00:11.320
+Ushbu darsda SQL da view tushunchasi, yangilanadigan viewlar, WITH CHECK
+OPTION hamda ma’lumotni saqlovchi materialized viewlar bilan tanishamiz.
+
+2
+00:14.470 --> 00:25.740
+View — bu diskda ma’lumot saqlamaydigan nomlangan so‘rovdir. U murakkab jadvallar
+tuzilmasini o‘zgarmas qulay interfeys ortiga yashirib, har chaqirilganda qayta bajariladi.
+
+3
+00:29.000 --> 00:40.050
+Oddiy bitta jadvalga tayangan viewlar orqali asosiy jadvalga yozish mumkin. WITH CHECK OPTION
+esa view chegarasidan chiqib ketadigan yangi yoki o‘zgartirilgan qatorlarni rad etadi.
+
+4
+00:43.300 --> 00:54.700
+Materialized view esa so‘rov natijasini alohida jadval qilib diskda saqlaydi. U juda tez
+o‘qiladi, ma’lumot esa REFRESH buyrug‘i bilan, hatto CONCURRENTLY rejimida yangilab boriladi.
+
+5
+00:57.950 --> 01:06.070
+Tezkor virtual interfeys uchun oddiy view, og‘ir tahliliy hisobotlar
+uchun esa materialized view eng to‘g‘ri arxitektura yechimidir.

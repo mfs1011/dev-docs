@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:11.161
+Dialektlar: View va Materialized View farqlari
+
+00:11.161 --> 00:24.362
+MySQL: CASCADED CHECK OPTION va yangilanish
+
+00:24.362 --> 00:36.398
+MySQL: Bog‘liqlik tekshiruvi yo‘qligi
+
+00:36.398 --> 00:47.851
+MySQL Community: Materialized view yo‘qligi
+
+00:47.851 --> 01:00.254
+SQLite: Faqat o‘qish va INSTEAD OF trigger
+
+01:00.254 --> 01:14.880
+Xulosa

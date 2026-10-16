@@ -1,0 +1,31 @@
+WEBVTT
+
+1
+00:01.420 --> 00:09.680
+View va Materialized View tushunchalari MySQL hamda SQLite
+tizimlarida o‘ziga xos cheklovlar va qiziq farqlarga ega.
+
+2
+00:12.530 --> 00:22.740
+MySQL da viewlar faqat asosiy jadval bilan birga-bir mos kelgandagina yangilanadi.
+WITH CHECK OPTION esa sukut bo‘yicha CASCADED bo‘lib, barcha qavatlarga tarqaladi.
+
+3
+00:25.710 --> 00:34.650
+Xavfli farq: MySQL da view ishlatayotgan ustunni o‘chirib yuborish mumkin!
+Natijada baza xato bermaydi, lekin view chaqirilganda buzilib qoladi.
+
+4
+00:37.460 --> 00:46.120
+MySQL Community da CREATE MATERIALIZED VIEW buyrug‘i qabul qilinsa
+ham, u oddiy viewdek ishlaydi, REFRESH esa sintaktik xato beradi.
+
+5
+00:49.430 --> 00:58.440
+SQLite da viewlar qat’iy ravishda faqat o‘qish uchun. Lekin INSTEAD OF triggerlar
+yordamida view orqali jadvalga yozish imkoniyatini hosil qilish mumkin.
+
+6
+01:01.290 --> 01:11.130
+PostgreSQL dagi qat’iy bog‘liqlik va to‘liq Materialized View, MySQL dagi CASCADED
+tekshiruv hamda SQLite dagi INSTEAD OF triggerlarni to‘g‘ri farqlash zarur.

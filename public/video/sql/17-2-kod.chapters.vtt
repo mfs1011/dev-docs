@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:13.936
+PostgreSQL 18: Amaliyotga kirish
+
+00:13.936 --> 00:26.457
+Yangilanadigan view orqali yozish
+
+00:26.457 --> 00:38.054
+WITH CHECK OPTION xavfsizligi
+
+00:38.054 --> 00:48.860
+GROUP BY va yangilanmaydigan viewlar
+
+00:48.860 --> 01:03.187
+Materialized view va REFRESH CONCURRENTLY
+
+01:03.187 --> 01:15.800
+Xulosa

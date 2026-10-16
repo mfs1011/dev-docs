@@ -1,0 +1,693 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Ushbu amaliy darsda PostgreSQL 18.6 da view orqali INSERT va UPDATE qilish, WITH CHECK OPTION, GROUP BY cheklovi hamda Materialized View REFRESH amallarini sinaymiz.",
+    "show": "Ushbu amaliy darsda PostgreSQL 18.6 da view orqali INSERT va UPDATE qilish, WITH CHECK OPTION, GROUP BY cheklovi hamda Materialized View REFRESH amallarini sinaymiz.",
+    "say": "Ushbu amaliy darsda Postgres o‘n sakkiz butun olti da vyu orqali insert va apdeyt qilish, viz chek opshn, grup bay cheklovi hamda Materialayzd Vyu refresh amallarini sinaymiz.",
+    "a0": 0.08,
+    "a1": 10.39,
+    "words": [
+      {
+        "w": "Ushbu",
+        "s": 0.08,
+        "e": 0.3
+      },
+      {
+        "w": "amaliy",
+        "s": 0.38,
+        "e": 0.66
+      },
+      {
+        "w": "darsda",
+        "s": 0.72,
+        "e": 1.04
+      },
+      {
+        "w": "Postgres",
+        "s": 1.2,
+        "e": 1.66
+      },
+      {
+        "w": "o‘n",
+        "s": 1.74,
+        "e": 1.8
+      },
+      {
+        "w": "sakkiz",
+        "s": 1.84,
+        "e": 2.14
+      },
+      {
+        "w": "butun",
+        "s": 2.18,
+        "e": 2.42
+      },
+      {
+        "w": "olti",
+        "s": 2.52,
+        "e": 2.7
+      },
+      {
+        "w": "da",
+        "s": 2.74,
+        "e": 2.82
+      },
+      {
+        "w": "vyu",
+        "s": 3.16,
+        "e": 3.34
+      },
+      {
+        "w": "orqali",
+        "s": 3.44,
+        "e": 3.78
+      },
+      {
+        "w": "insert",
+        "s": 3.9,
+        "e": 4.26
+      },
+      {
+        "w": "va",
+        "s": 4.32,
+        "e": 4.38
+      },
+      {
+        "w": "apdeyt",
+        "s": 4.46,
+        "e": 4.78
+      },
+      {
+        "w": "qilish,",
+        "s": 4.82,
+        "e": 5.1
+      },
+      {
+        "w": "viz",
+        "s": 5.46,
+        "e": 5.66
+      },
+      {
+        "w": "chek",
+        "s": 5.72,
+        "e": 5.9
+      },
+      {
+        "w": "opshn,",
+        "s": 6.02,
+        "e": 6.34
+      },
+      {
+        "w": "grup",
+        "s": 6.72,
+        "e": 6.92
+      },
+      {
+        "w": "bay",
+        "s": 6.96,
+        "e": 7.1
+      },
+      {
+        "w": "cheklovi",
+        "s": 7.16,
+        "e": 7.57
+      },
+      {
+        "w": "hamda",
+        "s": 7.61,
+        "e": 7.89
+      },
+      {
+        "w": "Materialayzd",
+        "s": 8.07,
+        "e": 8.73
+      },
+      {
+        "w": "Vyu",
+        "s": 8.81,
+        "e": 9.01
+      },
+      {
+        "w": "refresh",
+        "s": 9.11,
+        "e": 9.49
+      },
+      {
+        "w": "amallarini",
+        "s": 9.55,
+        "e": 9.97
+      },
+      {
+        "w": "sinaymiz.",
+        "s": 10.01,
+        "e": 10.39
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "updatable_view",
+    "text": "faol_mahsulotlar viewiga yozilgan UPDATE va INSERT so‘rovlari to‘g‘ridan-to‘g‘ri asosiy mahsulotlar jadvaliga o‘tadi, ko‘rsatilmagan ustunlar esa sukut bo‘yicha qiymat oladi.",
+    "show": "faol_mahsulotlar viewiga yozilgan UPDATE va INSERT so‘rovlari to‘g‘ridan-to‘g‘ri asosiy mahsulotlar jadvaliga o‘tadi, ko‘rsatilmagan ustunlar esa sukut bo‘yicha qiymat oladi.",
+    "say": "Faol_mahsulotlar vyusiga yozilgan apdeyt va insert so‘rovlari to‘g‘ridan-to‘g‘ri asosiy mahsulotlar jadvaliga o‘tadi, ko‘rsatilmagan ustunlar esa sukut bo‘yicha qiymat oladi.",
+    "a0": 11.43,
+    "a1": 20.37,
+    "words": [
+      {
+        "w": "Faol_mahsulotlar",
+        "s": 11.43,
+        "e": 12.35
+      },
+      {
+        "w": "vyusiga",
+        "s": 12.39,
+        "e": 12.73
+      },
+      {
+        "w": "yozilgan",
+        "s": 12.77,
+        "e": 13.19
+      },
+      {
+        "w": "apdeyt",
+        "s": 13.31,
+        "e": 13.69
+      },
+      {
+        "w": "va",
+        "s": 13.75,
+        "e": 13.83
+      },
+      {
+        "w": "insert",
+        "s": 13.95,
+        "e": 14.29
+      },
+      {
+        "w": "so‘rovlari",
+        "s": 14.31,
+        "e": 14.77
+      },
+      {
+        "w": "to‘g‘ridan-to‘g‘ri",
+        "s": 15.09,
+        "e": 15.71
+      },
+      {
+        "w": "asosiy",
+        "s": 15.77,
+        "e": 16.13
+      },
+      {
+        "w": "mahsulotlar",
+        "s": 16.19,
+        "e": 16.73
+      },
+      {
+        "w": "jadvaliga",
+        "s": 16.79,
+        "e": 17.19
+      },
+      {
+        "w": "o‘tadi,",
+        "s": 17.25,
+        "e": 17.51
+      },
+      {
+        "w": "ko‘rsatilmagan",
+        "s": 17.79,
+        "e": 18.47
+      },
+      {
+        "w": "ustunlar",
+        "s": 18.55,
+        "e": 18.91
+      },
+      {
+        "w": "esa",
+        "s": 18.95,
+        "e": 19.09
+      },
+      {
+        "w": "sukut",
+        "s": 19.21,
+        "e": 19.43
+      },
+      {
+        "w": "bo‘yicha",
+        "s": 19.49,
+        "e": 19.75
+      },
+      {
+        "w": "qiymat",
+        "s": 19.79,
+        "e": 20.09
+      },
+      {
+        "w": "oladi.",
+        "s": 20.13,
+        "e": 20.37
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "check_option",
+    "text": "arzonlar viewida narxi 5000 dan kichik mahsulotlar filtrlangan. WITH CHECK OPTION tufayli view orqali qimmat go‘sht mahsulotini kiritish rad etiladi.",
+    "show": "arzonlar viewida narxi 5000 dan kichik mahsulotlar filtrlangan. WITH CHECK OPTION tufayli view orqali qimmat go‘sht mahsulotini kiritish rad etiladi.",
+    "say": "Arzonlar vyusida narxi besh ming dan kichik mahsulotlar filtrlangan. Viz chek opshn tufayli vyu orqali qimmat go‘sht mahsulotini kiritish rad etiladi.",
+    "a0": 21.37,
+    "a1": 29.46,
+    "words": [
+      {
+        "w": "Arzonlar",
+        "s": 21.37,
+        "e": 21.83
+      },
+      {
+        "w": "vyusida",
+        "s": 21.89,
+        "e": 22.27
+      },
+      {
+        "w": "narxi",
+        "s": 22.47,
+        "e": 22.78
+      },
+      {
+        "w": "besh",
+        "s": 22.9,
+        "e": 23.1
+      },
+      {
+        "w": "ming",
+        "s": 23.14,
+        "e": 23.26
+      },
+      {
+        "w": "dan",
+        "s": 23.28,
+        "e": 23.38
+      },
+      {
+        "w": "kichik",
+        "s": 23.42,
+        "e": 23.62
+      },
+      {
+        "w": "mahsulotlar",
+        "s": 23.66,
+        "e": 24.2
+      },
+      {
+        "w": "filtrlangan.",
+        "s": 24.24,
+        "e": 24.86
+      },
+      {
+        "w": "Viz",
+        "s": 25.24,
+        "e": 25.42
+      },
+      {
+        "w": "chek",
+        "s": 25.46,
+        "e": 25.62
+      },
+      {
+        "w": "opshn",
+        "s": 25.72,
+        "e": 26.0
+      },
+      {
+        "w": "tufayli",
+        "s": 26.04,
+        "e": 26.38
+      },
+      {
+        "w": "vyu",
+        "s": 26.58,
+        "e": 26.76
+      },
+      {
+        "w": "orqali",
+        "s": 26.84,
+        "e": 27.14
+      },
+      {
+        "w": "qimmat",
+        "s": 27.26,
+        "e": 27.58
+      },
+      {
+        "w": "go‘sht",
+        "s": 27.7,
+        "e": 27.92
+      },
+      {
+        "w": "mahsulotini",
+        "s": 27.94,
+        "e": 28.44
+      },
+      {
+        "w": "kiritish",
+        "s": 28.48,
+        "e": 28.82
+      },
+      {
+        "w": "rad",
+        "s": 28.94,
+        "e": 29.1
+      },
+      {
+        "w": "etiladi.",
+        "s": 29.14,
+        "e": 29.46
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "not_updatable",
+    "text": "statistika viewida GROUP BY agregatsiyasi bo‘lgani sababli u avtomatik yangilanmaydi va har qanday UPDATE buyrug‘ida xatolik qaytaradi.",
+    "show": "statistika viewida GROUP BY agregatsiyasi bo‘lgani sababli u avtomatik yangilanmaydi va har qanday UPDATE buyrug‘ida xatolik qaytaradi.",
+    "say": "Statistika vyusida grup bay agregatsiyasi bo‘lgani sababli u avtomatik yangilanmaydi va har qanday apdeyt buyrug‘ida xatolik qaytaradi.",
+    "a0": 30.32,
+    "a1": 37.59,
+    "words": [
+      {
+        "w": "Statistika",
+        "s": 30.32,
+        "e": 30.84
+      },
+      {
+        "w": "vyusida",
+        "s": 30.9,
+        "e": 31.26
+      },
+      {
+        "w": "grup",
+        "s": 31.38,
+        "e": 31.58
+      },
+      {
+        "w": "bay",
+        "s": 31.64,
+        "e": 31.78
+      },
+      {
+        "w": "agregatsiyasi",
+        "s": 31.86,
+        "e": 32.48
+      },
+      {
+        "w": "bo‘lgani",
+        "s": 32.52,
+        "e": 32.8
+      },
+      {
+        "w": "sababli",
+        "s": 32.86,
+        "e": 33.22
+      },
+      {
+        "w": "u",
+        "s": 33.34,
+        "e": 33.36
+      },
+      {
+        "w": "avtomatik",
+        "s": 33.74,
+        "e": 34.18
+      },
+      {
+        "w": "yangilanmaydi",
+        "s": 34.28,
+        "e": 34.94
+      },
+      {
+        "w": "va",
+        "s": 34.98,
+        "e": 35.04
+      },
+      {
+        "w": "har",
+        "s": 35.18,
+        "e": 35.36
+      },
+      {
+        "w": "qanday",
+        "s": 35.42,
+        "e": 35.72
+      },
+      {
+        "w": "apdeyt",
+        "s": 35.82,
+        "e": 36.14
+      },
+      {
+        "w": "buyrug‘ida",
+        "s": 36.2,
+        "e": 36.56
+      },
+      {
+        "w": "xatolik",
+        "s": 36.74,
+        "e": 37.19
+      },
+      {
+        "w": "qaytaradi.",
+        "s": 37.19,
+        "e": 37.59
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "materialized_refresh",
+    "text": "narx_hisoboti materialized viewida esa yangi qator kiritilsa ham natija avtomatik o‘zgarmaydi. Yangilash uchun REFRESH, o‘qishni to‘xtatmaslik uchun esa UNIQUE indeks va CONCURRENTLY ishlatiladi.",
+    "show": "narx_hisoboti materialized viewida esa yangi qator kiritilsa ham natija avtomatik o‘zgarmaydi. Yangilash uchun REFRESH, o‘qishni to‘xtatmaslik uchun esa UNIQUE indeks va CONCURRENTLY ishlatiladi.",
+    "say": "Narx_hisoboti materialayzd vyusida esa yangi qator kiritilsa ham natija avtomatik o‘zgarmaydi. Yangilash uchun refresh, o‘qishni to‘xtatmaslik uchun esa yunik indeks va konkurentli ishlatiladi.",
+    "a0": 38.57,
+    "a1": 49.41,
+    "words": [
+      {
+        "w": "Narx_hisoboti",
+        "s": 38.57,
+        "e": 39.37
+      },
+      {
+        "w": "materialayzd",
+        "s": 39.49,
+        "e": 40.09
+      },
+      {
+        "w": "vyusida",
+        "s": 40.15,
+        "e": 40.47
+      },
+      {
+        "w": "esa",
+        "s": 40.53,
+        "e": 40.67
+      },
+      {
+        "w": "yangi",
+        "s": 41.01,
+        "e": 41.23
+      },
+      {
+        "w": "qator",
+        "s": 41.29,
+        "e": 41.53
+      },
+      {
+        "w": "kiritilsa",
+        "s": 41.57,
+        "e": 41.93
+      },
+      {
+        "w": "ham",
+        "s": 41.99,
+        "e": 42.13
+      },
+      {
+        "w": "natija",
+        "s": 42.21,
+        "e": 42.57
+      },
+      {
+        "w": "avtomatik",
+        "s": 42.67,
+        "e": 43.13
+      },
+      {
+        "w": "o‘zgarmaydi.",
+        "s": 43.25,
+        "e": 43.81
+      },
+      {
+        "w": "Yangilash",
+        "s": 44.21,
+        "e": 44.59
+      },
+      {
+        "w": "uchun",
+        "s": 44.61,
+        "e": 44.83
+      },
+      {
+        "w": "refresh,",
+        "s": 45.03,
+        "e": 45.43
+      },
+      {
+        "w": "o‘qishni",
+        "s": 45.73,
+        "e": 46.01
+      },
+      {
+        "w": "to‘xtatmaslik",
+        "s": 46.05,
+        "e": 46.63
+      },
+      {
+        "w": "uchun",
+        "s": 46.65,
+        "e": 46.81
+      },
+      {
+        "w": "esa",
+        "s": 46.87,
+        "e": 47.01
+      },
+      {
+        "w": "yunik",
+        "s": 47.21,
+        "e": 47.49
+      },
+      {
+        "w": "indeks",
+        "s": 47.57,
+        "e": 47.91
+      },
+      {
+        "w": "va",
+        "s": 47.97,
+        "e": 48.05
+      },
+      {
+        "w": "konkurentli",
+        "s": 48.21,
+        "e": 48.83
+      },
+      {
+        "w": "ishlatiladi.",
+        "s": 48.91,
+        "e": 49.41
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "xulosa",
+    "text": "Oddiy view orqali xavfsiz yozishda CHECK OPTION, og‘ir keshlar uchun esa UNIQUE indeksli REFRESH CONCURRENTLY eng ishonchli yondashuvdir.",
+    "show": "Oddiy view orqali xavfsiz yozishda CHECK OPTION, og‘ir keshlar uchun esa UNIQUE indeksli REFRESH CONCURRENTLY eng ishonchli yondashuvdir.",
+    "say": "Oddiy vyu orqali xavfsiz yozishda chek opshn, og‘ir keshlar uchun esa yunik indeksli refresh konkurentli eng ishonchli yondashuvdir.",
+    "a0": 50.21,
+    "a1": 57.52,
+    "words": [
+      {
+        "w": "Oddiy",
+        "s": 50.21,
+        "e": 50.47
+      },
+      {
+        "w": "vyu",
+        "s": 50.53,
+        "e": 50.69
+      },
+      {
+        "w": "orqali",
+        "s": 50.75,
+        "e": 51.06
+      },
+      {
+        "w": "xavfsiz",
+        "s": 51.14,
+        "e": 51.46
+      },
+      {
+        "w": "yozishda",
+        "s": 51.46,
+        "e": 51.88
+      },
+      {
+        "w": "chek",
+        "s": 52.04,
+        "e": 52.24
+      },
+      {
+        "w": "opshn,",
+        "s": 52.34,
+        "e": 52.66
+      },
+      {
+        "w": "og‘ir",
+        "s": 53.1,
+        "e": 53.3
+      },
+      {
+        "w": "keshlar",
+        "s": 53.34,
+        "e": 53.64
+      },
+      {
+        "w": "uchun",
+        "s": 53.68,
+        "e": 53.82
+      },
+      {
+        "w": "esa",
+        "s": 53.86,
+        "e": 54.02
+      },
+      {
+        "w": "yunik",
+        "s": 54.14,
+        "e": 54.42
+      },
+      {
+        "w": "indeksli",
+        "s": 54.48,
+        "e": 54.94
+      },
+      {
+        "w": "refresh",
+        "s": 55.1,
+        "e": 55.48
+      },
+      {
+        "w": "konkurentli",
+        "s": 55.54,
+        "e": 56.1
+      },
+      {
+        "w": "eng",
+        "s": 56.32,
+        "e": 56.48
+      },
+      {
+        "w": "ishonchli",
+        "s": 56.56,
+        "e": 56.94
+      },
+      {
+        "w": "yondashuvdir.",
+        "s": 56.96,
+        "e": 57.52
+      }
+    ]
+  }
+]
