@@ -1,0 +1,693 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Ushbu amaliy darsda PostgreSQL 18.6 da INSERT ko‘rinishlari, UPDATE, UPDATE FROM, noaniq qator tanlanishi tuzog‘i hamda DELETE USING ni sinab ko‘ramiz.",
+    "show": "Ushbu amaliy darsda PostgreSQL 18.6 da INSERT ko‘rinishlari, UPDATE, UPDATE FROM, noaniq qator tanlanishi tuzog‘i hamda DELETE USING ni sinab ko‘ramiz.",
+    "say": "Ushbu amaliy darsda Postgres o‘n sakkiz butun olti da insert ko‘rinishlari, apdeyt, apdeyt from, noaniq qator tanlanishi tuzog‘i hamda dilit yuzing ni sinab ko‘ramiz.",
+    "a0": 0.14,
+    "a1": 10.71,
+    "words": [
+      {
+        "w": "Ushbu",
+        "s": 0.14,
+        "e": 0.32
+      },
+      {
+        "w": "amaliy",
+        "s": 0.4,
+        "e": 0.68
+      },
+      {
+        "w": "darsda",
+        "s": 0.72,
+        "e": 1.1
+      },
+      {
+        "w": "Postgres",
+        "s": 1.42,
+        "e": 1.94
+      },
+      {
+        "w": "o‘n",
+        "s": 2.06,
+        "e": 2.14
+      },
+      {
+        "w": "sakkiz",
+        "s": 2.18,
+        "e": 2.48
+      },
+      {
+        "w": "butun",
+        "s": 2.52,
+        "e": 2.76
+      },
+      {
+        "w": "olti",
+        "s": 2.88,
+        "e": 3.1
+      },
+      {
+        "w": "da",
+        "s": 3.12,
+        "e": 3.22
+      },
+      {
+        "w": "insert",
+        "s": 3.66,
+        "e": 3.98
+      },
+      {
+        "w": "ko‘rinishlari,",
+        "s": 4.04,
+        "e": 4.62
+      },
+      {
+        "w": "apdeyt,",
+        "s": 5.08,
+        "e": 5.54
+      },
+      {
+        "w": "apdeyt",
+        "s": 5.88,
+        "e": 6.22
+      },
+      {
+        "w": "from,",
+        "s": 6.3,
+        "e": 6.58
+      },
+      {
+        "w": "noaniq",
+        "s": 7.02,
+        "e": 7.36
+      },
+      {
+        "w": "qator",
+        "s": 7.4,
+        "e": 7.67
+      },
+      {
+        "w": "tanlanishi",
+        "s": 7.73,
+        "e": 8.19
+      },
+      {
+        "w": "tuzog‘i",
+        "s": 8.23,
+        "e": 8.57
+      },
+      {
+        "w": "hamda",
+        "s": 8.65,
+        "e": 8.93
+      },
+      {
+        "w": "dilit",
+        "s": 9.27,
+        "e": 9.57
+      },
+      {
+        "w": "yuzing",
+        "s": 9.67,
+        "e": 9.99
+      },
+      {
+        "w": "ni",
+        "s": 10.01,
+        "e": 10.07
+      },
+      {
+        "w": "sinab",
+        "s": 10.13,
+        "e": 10.35
+      },
+      {
+        "w": "ko‘ramiz.",
+        "s": 10.39,
+        "e": 10.71
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "insert_demo",
+    "text": "ombor jadvaliga ustunlarni sanab hamda chapdan to‘ldirish bilan qatorlar kiritamiz. Ko‘rsatilmagan ustunlar sukut bo‘yicha nol qiymatini oladi.",
+    "show": "ombor jadvaliga ustunlarni sanab hamda chapdan to‘ldirish bilan qatorlar kiritamiz. Ko‘rsatilmagan ustunlar sukut bo‘yicha nol qiymatini oladi.",
+    "say": "Ombor jadvaliga ustunlarni sanab hamda chapdan to‘ldirish bilan qatorlar kiritamiz. Ko‘rsatilmagan ustunlar sukut bo‘yicha nol qiymatini oladi.",
+    "a0": 11.97,
+    "a1": 20.17,
+    "words": [
+      {
+        "w": "Ombor",
+        "s": 11.97,
+        "e": 12.25
+      },
+      {
+        "w": "jadvaliga",
+        "s": 12.31,
+        "e": 12.73
+      },
+      {
+        "w": "ustunlarni",
+        "s": 12.79,
+        "e": 13.31
+      },
+      {
+        "w": "sanab",
+        "s": 13.41,
+        "e": 13.73
+      },
+      {
+        "w": "hamda",
+        "s": 13.83,
+        "e": 14.09
+      },
+      {
+        "w": "chapdan",
+        "s": 14.39,
+        "e": 14.79
+      },
+      {
+        "w": "to‘ldirish",
+        "s": 14.85,
+        "e": 15.25
+      },
+      {
+        "w": "bilan",
+        "s": 15.27,
+        "e": 15.45
+      },
+      {
+        "w": "qatorlar",
+        "s": 15.53,
+        "e": 15.97
+      },
+      {
+        "w": "kiritamiz.",
+        "s": 16.03,
+        "e": 16.45
+      },
+      {
+        "w": "Ko‘rsatilmagan",
+        "s": 17.17,
+        "e": 17.79
+      },
+      {
+        "w": "ustunlar",
+        "s": 17.85,
+        "e": 18.27
+      },
+      {
+        "w": "sukut",
+        "s": 18.35,
+        "e": 18.55
+      },
+      {
+        "w": "bo‘yicha",
+        "s": 18.61,
+        "e": 18.91
+      },
+      {
+        "w": "nol",
+        "s": 19.23,
+        "e": 19.43
+      },
+      {
+        "w": "qiymatini",
+        "s": 19.49,
+        "e": 19.87
+      },
+      {
+        "w": "oladi.",
+        "s": 19.93,
+        "e": 20.17
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "update_simple",
+    "text": "Narxlarni 10 foizga oshirishda WHERE narx > 0 shartini beramiz. Mavjud bo‘lmagan 42-mahsulotni yangilashda UPDATE 0 qaytadi va bu xato hisoblanmaydi.",
+    "show": "Narxlarni 10 foizga oshirishda WHERE narx > 0 shartini beramiz. Mavjud bo‘lmagan 42-mahsulotni yangilashda UPDATE 0 qaytadi va bu xato hisoblanmaydi.",
+    "say": "Narxlarni o‘n foizga oshirishda ver narx > 0 shartini beramiz. Mavjud bo‘lmagan qirq ikkinchi mahsulotni yangilashda apdeyt nol qaytadi va bu xato hisoblanmaydi.",
+    "a0": 21.25,
+    "a1": 31.28,
+    "words": [
+      {
+        "w": "Narxlarni",
+        "s": 21.25,
+        "e": 21.73
+      },
+      {
+        "w": "o‘n",
+        "s": 21.87,
+        "e": 21.97
+      },
+      {
+        "w": "foizga",
+        "s": 22.05,
+        "e": 22.39
+      },
+      {
+        "w": "oshirishda",
+        "s": 22.45,
+        "e": 22.88
+      },
+      {
+        "w": "ver",
+        "s": 23.2,
+        "e": 23.4
+      },
+      {
+        "w": "narx",
+        "s": 23.5,
+        "e": 23.74
+      },
+      {
+        "w": ">",
+        "s": 23.74,
+        "e": 24.5
+      },
+      {
+        "w": "0",
+        "s": 24.5,
+        "e": 24.5
+      },
+      {
+        "w": "shartini",
+        "s": 24.5,
+        "e": 24.84
+      },
+      {
+        "w": "beramiz.",
+        "s": 24.86,
+        "e": 25.18
+      },
+      {
+        "w": "Mavjud",
+        "s": 25.92,
+        "e": 26.26
+      },
+      {
+        "w": "bo‘lmagan",
+        "s": 26.3,
+        "e": 26.66
+      },
+      {
+        "w": "qirq",
+        "s": 26.72,
+        "e": 26.88
+      },
+      {
+        "w": "ikkinchi",
+        "s": 26.96,
+        "e": 27.28
+      },
+      {
+        "w": "mahsulotni",
+        "s": 27.32,
+        "e": 27.8
+      },
+      {
+        "w": "yangilashda",
+        "s": 27.86,
+        "e": 28.36
+      },
+      {
+        "w": "apdeyt",
+        "s": 28.68,
+        "e": 29.04
+      },
+      {
+        "w": "nol",
+        "s": 29.16,
+        "e": 29.36
+      },
+      {
+        "w": "qaytadi",
+        "s": 29.42,
+        "e": 29.78
+      },
+      {
+        "w": "va",
+        "s": 29.92,
+        "e": 29.96
+      },
+      {
+        "w": "bu",
+        "s": 30.06,
+        "e": 30.12
+      },
+      {
+        "w": "xato",
+        "s": 30.42,
+        "e": 30.62
+      },
+      {
+        "w": "hisoblanmaydi.",
+        "s": 30.7,
+        "e": 31.28
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "update_from",
+    "text": "Sotuvlar asosida ombor qoldig‘ini kamaytirish uchun UPDATE FROM va GROUP BY bilan jamlangan subquery ishlatamiz. Natijada Non va Tuz soni to‘g‘ri ayriladi.",
+    "show": "Sotuvlar asosida ombor qoldig‘ini kamaytirish uchun UPDATE FROM va GROUP BY bilan jamlangan subquery ishlatamiz. Natijada Non va Tuz soni to‘g‘ri ayriladi.",
+    "say": "Sotuvlar asosida ombor qoldig‘ini kamaytirish uchun apdeyt from va grup bay bilan jamlangan subquery ishlatamiz. Natijada Non va Tuz soni to‘g‘ri ayriladi.",
+    "a0": 32.24,
+    "a1": 41.23,
+    "words": [
+      {
+        "w": "Sotuvlar",
+        "s": 32.24,
+        "e": 32.66
+      },
+      {
+        "w": "asosida",
+        "s": 32.7,
+        "e": 33.1
+      },
+      {
+        "w": "ombor",
+        "s": 33.22,
+        "e": 33.48
+      },
+      {
+        "w": "qoldig‘ini",
+        "s": 33.54,
+        "e": 33.9
+      },
+      {
+        "w": "kamaytirish",
+        "s": 33.92,
+        "e": 34.36
+      },
+      {
+        "w": "uchun",
+        "s": 34.42,
+        "e": 34.62
+      },
+      {
+        "w": "apdeyt",
+        "s": 34.94,
+        "e": 35.3
+      },
+      {
+        "w": "from",
+        "s": 35.38,
+        "e": 35.64
+      },
+      {
+        "w": "va",
+        "s": 35.7,
+        "e": 35.76
+      },
+      {
+        "w": "grup",
+        "s": 35.86,
+        "e": 36.08
+      },
+      {
+        "w": "bay",
+        "s": 36.14,
+        "e": 36.3
+      },
+      {
+        "w": "bilan",
+        "s": 36.34,
+        "e": 36.52
+      },
+      {
+        "w": "jamlangan",
+        "s": 36.56,
+        "e": 37.06
+      },
+      {
+        "w": "subquery",
+        "s": 37.14,
+        "e": 37.69
+      },
+      {
+        "w": "ishlatamiz.",
+        "s": 37.75,
+        "e": 38.19
+      },
+      {
+        "w": "Natijada",
+        "s": 38.75,
+        "e": 39.21
+      },
+      {
+        "w": "Non",
+        "s": 39.47,
+        "e": 39.69
+      },
+      {
+        "w": "va",
+        "s": 39.77,
+        "e": 39.85
+      },
+      {
+        "w": "Tuz",
+        "s": 39.95,
+        "e": 40.15
+      },
+      {
+        "w": "soni",
+        "s": 40.21,
+        "e": 40.45
+      },
+      {
+        "w": "to‘g‘ri",
+        "s": 40.53,
+        "e": 40.79
+      },
+      {
+        "w": "ayriladi.",
+        "s": 40.83,
+        "e": 41.23
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "update_pitfall",
+    "text": "Agar jamlamasdan to‘g‘ridan-to‘g‘ri sotuvlar jadvalini ulasak, bitta mahsulotga ikkita qator mos kelib, ulardan ixtiyoriy biri jimgina tanlanadi.",
+    "show": "Agar jamlamasdan to‘g‘ridan-to‘g‘ri sotuvlar jadvalini ulasak, bitta mahsulotga ikkita qator mos kelib, ulardan ixtiyoriy biri jimgina tanlanadi.",
+    "say": "Agar jamlamasdan to‘g‘ridan-to‘g‘ri sotuvlar jadvalini ulasak, bitta mahsulotga ikkita qator mos kelib, ulardan ixtiyoriy biri jimgina tanlanadi.",
+    "a0": 41.97,
+    "a1": 49.49,
+    "words": [
+      {
+        "w": "Agar",
+        "s": 41.97,
+        "e": 42.17
+      },
+      {
+        "w": "jamlamasdan",
+        "s": 42.23,
+        "e": 42.79
+      },
+      {
+        "w": "to‘g‘ridan-to‘g‘ri",
+        "s": 42.87,
+        "e": 43.55
+      },
+      {
+        "w": "sotuvlar",
+        "s": 43.61,
+        "e": 44.01
+      },
+      {
+        "w": "jadvalini",
+        "s": 44.03,
+        "e": 44.43
+      },
+      {
+        "w": "ulasak,",
+        "s": 44.47,
+        "e": 44.83
+      },
+      {
+        "w": "bitta",
+        "s": 45.13,
+        "e": 45.37
+      },
+      {
+        "w": "mahsulotga",
+        "s": 45.43,
+        "e": 45.97
+      },
+      {
+        "w": "ikkita",
+        "s": 46.09,
+        "e": 46.31
+      },
+      {
+        "w": "qator",
+        "s": 46.37,
+        "e": 46.61
+      },
+      {
+        "w": "mos",
+        "s": 46.71,
+        "e": 46.89
+      },
+      {
+        "w": "kelib,",
+        "s": 46.93,
+        "e": 47.15
+      },
+      {
+        "w": "ulardan",
+        "s": 47.45,
+        "e": 47.77
+      },
+      {
+        "w": "ixtiyoriy",
+        "s": 47.89,
+        "e": 48.37
+      },
+      {
+        "w": "biri",
+        "s": 48.41,
+        "e": 48.57
+      },
+      {
+        "w": "jimgina",
+        "s": 48.65,
+        "e": 48.99
+      },
+      {
+        "w": "tanlanadi.",
+        "s": 49.05,
+        "e": 49.49
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "delete_using_xulosa",
+    "text": "DELETE USING bilan esa boshqa jadval shartiga qarab sotuvlar qatorlari tozalandi. Relyatsion bazada DML amallarini doimo kalit va aniq subquery bilan bajaring.",
+    "show": "DELETE USING bilan esa boshqa jadval shartiga qarab sotuvlar qatorlari tozalandi. Relyatsion bazada DML amallarini doimo kalit va aniq subquery bilan bajaring.",
+    "say": "Dilit yuzing bilan esa boshqa jadval shartiga qarab sotuvlar qatorlari tozalandi. Relyatsion bazada di-em-el amallarini doimo kalit va aniq subquery bilan bajaring.",
+    "a0": 50.33,
+    "a1": 60.17,
+    "words": [
+      {
+        "w": "Dilit",
+        "s": 50.33,
+        "e": 50.61
+      },
+      {
+        "w": "yuzing",
+        "s": 50.71,
+        "e": 51.03
+      },
+      {
+        "w": "bilan",
+        "s": 51.05,
+        "e": 51.23
+      },
+      {
+        "w": "esa",
+        "s": 51.27,
+        "e": 51.43
+      },
+      {
+        "w": "boshqa",
+        "s": 51.73,
+        "e": 52.03
+      },
+      {
+        "w": "jadval",
+        "s": 52.07,
+        "e": 52.37
+      },
+      {
+        "w": "shartiga",
+        "s": 52.43,
+        "e": 52.78
+      },
+      {
+        "w": "qarab",
+        "s": 52.84,
+        "e": 53.08
+      },
+      {
+        "w": "sotuvlar",
+        "s": 53.14,
+        "e": 53.56
+      },
+      {
+        "w": "qatorlari",
+        "s": 53.6,
+        "e": 54.06
+      },
+      {
+        "w": "tozalandi.",
+        "s": 54.1,
+        "e": 54.56
+      },
+      {
+        "w": "Relyatsion",
+        "s": 55.36,
+        "e": 55.84
+      },
+      {
+        "w": "bazada",
+        "s": 55.9,
+        "e": 56.26
+      },
+      {
+        "w": "di-em-el",
+        "s": 56.38,
+        "e": 56.8
+      },
+      {
+        "w": "amallarini",
+        "s": 56.86,
+        "e": 57.38
+      },
+      {
+        "w": "doimo",
+        "s": 57.68,
+        "e": 58.02
+      },
+      {
+        "w": "kalit",
+        "s": 58.14,
+        "e": 58.46
+      },
+      {
+        "w": "va",
+        "s": 58.52,
+        "e": 58.6
+      },
+      {
+        "w": "aniq",
+        "s": 58.78,
+        "e": 59.0
+      },
+      {
+        "w": "subquery",
+        "s": 59.08,
+        "e": 59.62
+      },
+      {
+        "w": "bilan",
+        "s": 59.64,
+        "e": 59.82
+      },
+      {
+        "w": "bajaring.",
+        "s": 59.84,
+        "e": 60.17
+      }
+    ]
+  }
+]

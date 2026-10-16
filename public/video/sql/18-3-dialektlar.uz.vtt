@@ -1,0 +1,31 @@
+WEBVTT
+
+1
+00:01.420 --> 00:10.760
+DML buyruqlari standart bo‘lsa-da, ko‘p jadvalli yangilash, qiymatlar
+sintaksisi va cheklovlar MySQL hamda SQLite da jiddiy farq qiladi.
+
+2
+00:13.590 --> 00:23.340
+MySQL da INSERT da to‘liq bo‘lmagan qiymatlar xato beradi. Ko‘p jadvalli
+yangilashda esa FROM o‘rniga to‘g‘ridan-to‘g‘ri UPDATE JOIN sintaksisi ishlatiladi.
+
+3
+00:26.250 --> 00:37.110
+MySQL ning o‘ziga xos afzalligi — bitta jadvalli UPDATE va DELETE da ORDER BY hamda
+LIMIT qo‘yish mumkin. VALUES buyrug‘ida esa har qatorga ROW so‘zi talab etiladi.
+
+4
+00:40.160 --> 00:48.520
+SQLite da UPDATE FROM PostgreSQL kabi qo‘llab-quvvatlanadi, lekin
+DELETE USING umuman yo‘q va uning o‘rniga subquery yozish lozim.
+
+5
+00:51.530 --> 01:00.380
+Barcha tizimlarda WHERE siz UPDATE jadvaldagi hamma qatorni o‘zgartiradi,
+qat’iy rejimda esa NOT NULL ustunga NULL yozish xatolik beradi.
+
+6
+01:03.370 --> 01:14.210
+PostgreSQL dagi moslashuvchan FROM va USING, MySQL dagi UPDATE JOIN hamda SQLite
+dagi subquery usullarini bilish ko‘p platformali SQL ustasining belgisidir.

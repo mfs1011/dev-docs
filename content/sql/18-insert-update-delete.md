@@ -4,6 +4,15 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/18-1-tushuncha.jpg">
+    <source src="/video/sql/18-1-tushuncha.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/18-1-tushuncha.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/18-1-tushuncha.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>18.1-video. DML: INSERT, UPDATE va DELETE tushunchasi</figcaption>
+</figure>
+
 Jadval yaratilganda bo'sh bo'ladi. Ma'lumot bilan ishlashning uchta asosiy buyrug'i bor. Ular **DML** (*Data Manipulation Language*) deyiladi:
 
 | Buyruq | Vazifasi |
@@ -87,6 +96,15 @@ Hujjatda yana bir ogohlantirish bor: boshqa tizimlarda `FROM` da maqsad jadval *
 `VALUES` faqat `INSERT` ning qismi emas. Hujjatga ko'ra u qiymatlardan "doimiy jadval" yasaydi va `SELECT` bo'lishi mumkin bo'lgan har joyda ishlatiladi. Unga `ORDER BY`, `LIMIT` va `OFFSET` ham qo'llanadi.
 
 ## Kod
+
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/18-2-kod.jpg">
+    <source src="/video/sql/18-2-kod.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/18-2-kod.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/18-2-kod.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>18.2-video. PostgreSQL 18: DML amaliyoti, UPDATE FROM va DELETE USING</figcaption>
+</figure>
 
 Misollar PostgreSQL 18.6, MySQL 9.7.2 va SQLite 3.54.0 da ishga tushirilgan.
 
@@ -256,6 +274,15 @@ UPDATE 5
 Buyruq xatosiz bajarilib, **hamma** narxni nolga aylantirdi. SQL "rostdan ham hammasinimi?" deb so'ramaydi.
 
 ## Dialektlar
+
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/18-3-dialektlar.jpg">
+    <source src="/video/sql/18-3-dialektlar.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/18-3-dialektlar.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/18-3-dialektlar.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>18.3-video. MySQL va SQLite: UPDATE JOIN, ORDER BY LIMIT va subquery</figcaption>
+</figure>
 
 ### MySQL
 

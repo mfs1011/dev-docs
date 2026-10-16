@@ -1,0 +1,703 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "DML buyruqlari standart bo‘lsa-da, ko‘p jadvalli yangilash, qiymatlar sintaksisi va cheklovlar MySQL hamda SQLite da jiddiy farq qiladi.",
+    "show": "DML buyruqlari standart bo‘lsa-da, ko‘p jadvalli yangilash, qiymatlar sintaksisi va cheklovlar MySQL hamda SQLite da jiddiy farq qiladi.",
+    "say": "Di-em-el buyruqlari standart bo‘lsa-da, ko‘p jadvalli yangilash, qiymatlar sintaksisi va cheklovlar May es-kyu-el hamda Es-kyu-layt da jiddiy farq qiladi.",
+    "a0": 0.42,
+    "a1": 9.31,
+    "words": [
+      {
+        "w": "Di-em-el",
+        "s": 0.42,
+        "e": 0.84
+      },
+      {
+        "w": "buyruqlari",
+        "s": 0.9,
+        "e": 1.4
+      },
+      {
+        "w": "standart",
+        "s": 1.54,
+        "e": 1.92
+      },
+      {
+        "w": "bo‘lsa-da,",
+        "s": 1.98,
+        "e": 2.4
+      },
+      {
+        "w": "ko‘p",
+        "s": 2.7,
+        "e": 2.92
+      },
+      {
+        "w": "jadvalli",
+        "s": 2.98,
+        "e": 3.48
+      },
+      {
+        "w": "yangilash,",
+        "s": 3.58,
+        "e": 4.18
+      },
+      {
+        "w": "qiymatlar",
+        "s": 4.38,
+        "e": 4.88
+      },
+      {
+        "w": "sintaksisi",
+        "s": 4.96,
+        "e": 5.6
+      },
+      {
+        "w": "va",
+        "s": 5.68,
+        "e": 5.74
+      },
+      {
+        "w": "cheklovlar",
+        "s": 5.84,
+        "e": 6.38
+      },
+      {
+        "w": "May",
+        "s": 6.72,
+        "e": 6.9
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 6.98,
+        "e": 7.32
+      },
+      {
+        "w": "hamda",
+        "s": 7.36,
+        "e": 7.59
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 7.65,
+        "e": 8.15
+      },
+      {
+        "w": "da",
+        "s": 8.19,
+        "e": 8.27
+      },
+      {
+        "w": "jiddiy",
+        "s": 8.39,
+        "e": 8.71
+      },
+      {
+        "w": "farq",
+        "s": 8.81,
+        "e": 8.99
+      },
+      {
+        "w": "qiladi.",
+        "s": 9.03,
+        "e": 9.31
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "mysql_join_update",
+    "text": "MySQL da INSERT da to‘liq bo‘lmagan qiymatlar xato beradi. Ko‘p jadvalli yangilashda esa FROM o‘rniga to‘g‘ridan-to‘g‘ri UPDATE JOIN sintaksisi ishlatiladi.",
+    "show": "MySQL da INSERT da to‘liq bo‘lmagan qiymatlar xato beradi. Ko‘p jadvalli yangilashda esa FROM o‘rniga to‘g‘ridan-to‘g‘ri UPDATE JOIN sintaksisi ishlatiladi.",
+    "say": "May es-kyu-el da insert da to‘liq bo‘lmagan qiymatlar xato beradi. Ko‘p jadvalli yangilashda esa from o‘rniga to‘g‘ridan-to‘g‘ri apdeyt joyn sintaksisi ishlatiladi.",
+    "a0": 10.19,
+    "a1": 19.49,
+    "words": [
+      {
+        "w": "May",
+        "s": 10.19,
+        "e": 10.37
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 10.41,
+        "e": 10.75
+      },
+      {
+        "w": "da",
+        "s": 10.79,
+        "e": 10.87
+      },
+      {
+        "w": "insert",
+        "s": 11.03,
+        "e": 11.41
+      },
+      {
+        "w": "da",
+        "s": 11.45,
+        "e": 11.53
+      },
+      {
+        "w": "to‘liq",
+        "s": 11.63,
+        "e": 11.89
+      },
+      {
+        "w": "bo‘lmagan",
+        "s": 11.95,
+        "e": 12.37
+      },
+      {
+        "w": "qiymatlar",
+        "s": 12.43,
+        "e": 12.91
+      },
+      {
+        "w": "xato",
+        "s": 12.97,
+        "e": 13.19
+      },
+      {
+        "w": "beradi.",
+        "s": 13.27,
+        "e": 13.59
+      },
+      {
+        "w": "Ko‘p",
+        "s": 14.15,
+        "e": 14.31
+      },
+      {
+        "w": "jadvalli",
+        "s": 14.35,
+        "e": 14.77
+      },
+      {
+        "w": "yangilashda",
+        "s": 14.85,
+        "e": 15.37
+      },
+      {
+        "w": "esa",
+        "s": 15.43,
+        "e": 15.61
+      },
+      {
+        "w": "from",
+        "s": 15.71,
+        "e": 15.93
+      },
+      {
+        "w": "o‘rniga",
+        "s": 16.01,
+        "e": 16.31
+      },
+      {
+        "w": "to‘g‘ridan-to‘g‘ri",
+        "s": 16.47,
+        "e": 17.27
+      },
+      {
+        "w": "apdeyt",
+        "s": 17.47,
+        "e": 17.91
+      },
+      {
+        "w": "joyn",
+        "s": 18.05,
+        "e": 18.33
+      },
+      {
+        "w": "sintaksisi",
+        "s": 18.41,
+        "e": 18.95
+      },
+      {
+        "w": "ishlatiladi.",
+        "s": 18.97,
+        "e": 19.49
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "mysql_order_limit",
+    "text": "MySQL ning o‘ziga xos afzalligi — bitta jadvalli UPDATE va DELETE da ORDER BY hamda LIMIT qo‘yish mumkin. VALUES buyrug‘ida esa har qatorga ROW so‘zi talab etiladi.",
+    "show": "MySQL ning o‘ziga xos afzalligi — bitta jadvalli UPDATE va DELETE da ORDER BY hamda LIMIT qo‘yish mumkin. VALUES buyrug‘ida esa har qatorga ROW so‘zi talab etiladi.",
+    "say": "May es-kyu-el ning o‘ziga xos afzalligi — bitta jadvalli apdeyt va dilit da order bay hamda limit qo‘yish mumkin. Velyus buyrug‘ida esa har qatorga rou so‘zi talab etiladi.",
+    "a0": 20.25,
+    "a1": 30.66,
+    "words": [
+      {
+        "w": "May",
+        "s": 20.25,
+        "e": 20.45
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 20.49,
+        "e": 20.81
+      },
+      {
+        "w": "ning",
+        "s": 20.85,
+        "e": 20.97
+      },
+      {
+        "w": "o‘ziga",
+        "s": 21.05,
+        "e": 21.29
+      },
+      {
+        "w": "xos",
+        "s": 21.35,
+        "e": 21.53
+      },
+      {
+        "w": "afzalligi",
+        "s": 21.59,
+        "e": 22.09
+      },
+      {
+        "w": "—",
+        "s": 22.09,
+        "e": 22.09
+      },
+      {
+        "w": "bitta",
+        "s": 22.47,
+        "e": 22.76
+      },
+      {
+        "w": "jadvalli",
+        "s": 22.82,
+        "e": 23.26
+      },
+      {
+        "w": "apdeyt",
+        "s": 23.42,
+        "e": 23.84
+      },
+      {
+        "w": "va",
+        "s": 23.88,
+        "e": 23.94
+      },
+      {
+        "w": "dilit",
+        "s": 24.02,
+        "e": 24.32
+      },
+      {
+        "w": "da",
+        "s": 24.36,
+        "e": 24.46
+      },
+      {
+        "w": "order",
+        "s": 24.68,
+        "e": 24.98
+      },
+      {
+        "w": "bay",
+        "s": 25.1,
+        "e": 25.28
+      },
+      {
+        "w": "hamda",
+        "s": 25.34,
+        "e": 25.58
+      },
+      {
+        "w": "limit",
+        "s": 25.66,
+        "e": 25.92
+      },
+      {
+        "w": "qo‘yish",
+        "s": 25.98,
+        "e": 26.22
+      },
+      {
+        "w": "mumkin.",
+        "s": 26.28,
+        "e": 26.58
+      },
+      {
+        "w": "Velyus",
+        "s": 27.5,
+        "e": 27.82
+      },
+      {
+        "w": "buyrug‘ida",
+        "s": 27.88,
+        "e": 28.24
+      },
+      {
+        "w": "esa",
+        "s": 28.28,
+        "e": 28.42
+      },
+      {
+        "w": "har",
+        "s": 28.54,
+        "e": 28.68
+      },
+      {
+        "w": "qatorga",
+        "s": 28.74,
+        "e": 29.14
+      },
+      {
+        "w": "rou",
+        "s": 29.48,
+        "e": 29.66
+      },
+      {
+        "w": "so‘zi",
+        "s": 29.74,
+        "e": 29.96
+      },
+      {
+        "w": "talab",
+        "s": 30.02,
+        "e": 30.26
+      },
+      {
+        "w": "etiladi.",
+        "s": 30.32,
+        "e": 30.66
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "sqlite_update_from",
+    "text": "SQLite da UPDATE FROM PostgreSQL kabi qo‘llab-quvvatlanadi, lekin DELETE USING umuman yo‘q va uning o‘rniga subquery yozish lozim.",
+    "show": "SQLite da UPDATE FROM PostgreSQL kabi qo‘llab-quvvatlanadi, lekin DELETE USING umuman yo‘q va uning o‘rniga subquery yozish lozim.",
+    "say": "Es-kyu-layt da apdeyt from Postgres kabi qo‘llab-quvvatlanadi, lekin dilit yuzing umuman yo‘q va uning o‘rniga subquery yozish lozim.",
+    "a0": 31.56,
+    "a1": 39.47,
+    "words": [
+      {
+        "w": "Es-kyu-layt",
+        "s": 31.56,
+        "e": 32.1
+      },
+      {
+        "w": "da",
+        "s": 32.14,
+        "e": 32.22
+      },
+      {
+        "w": "apdeyt",
+        "s": 32.36,
+        "e": 32.7
+      },
+      {
+        "w": "from",
+        "s": 32.74,
+        "e": 32.96
+      },
+      {
+        "w": "Postgres",
+        "s": 33.08,
+        "e": 33.54
+      },
+      {
+        "w": "kabi",
+        "s": 33.58,
+        "e": 33.76
+      },
+      {
+        "w": "qo‘llab-quvvatlanadi,",
+        "s": 33.86,
+        "e": 34.86
+      },
+      {
+        "w": "lekin",
+        "s": 34.92,
+        "e": 35.16
+      },
+      {
+        "w": "dilit",
+        "s": 35.5,
+        "e": 35.82
+      },
+      {
+        "w": "yuzing",
+        "s": 35.92,
+        "e": 36.24
+      },
+      {
+        "w": "umuman",
+        "s": 36.36,
+        "e": 36.76
+      },
+      {
+        "w": "yo‘q",
+        "s": 36.86,
+        "e": 37.06
+      },
+      {
+        "w": "va",
+        "s": 37.3,
+        "e": 37.36
+      },
+      {
+        "w": "uning",
+        "s": 37.48,
+        "e": 37.69
+      },
+      {
+        "w": "o‘rniga",
+        "s": 37.75,
+        "e": 38.07
+      },
+      {
+        "w": "subquery",
+        "s": 38.27,
+        "e": 38.85
+      },
+      {
+        "w": "yozish",
+        "s": 38.87,
+        "e": 39.17
+      },
+      {
+        "w": "lozim.",
+        "s": 39.21,
+        "e": 39.47
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "dml_pitfalls",
+    "text": "Barcha tizimlarda WHERE siz UPDATE jadvaldagi hamma qatorni o‘zgartiradi, qat’iy rejimda esa NOT NULL ustunga NULL yozish xatolik beradi.",
+    "show": "Barcha tizimlarda WHERE siz UPDATE jadvaldagi hamma qatorni o‘zgartiradi, qat’iy rejimda esa NOT NULL ustunga NULL yozish xatolik beradi.",
+    "say": "Barcha tizimlarda ver siz apdeyt jadvaldagi hamma qatorni o‘zgartiradi, qat’iy rejimda esa not nal ustunga nal yozish xatolik beradi.",
+    "a0": 40.33,
+    "a1": 48.73,
+    "words": [
+      {
+        "w": "Barcha",
+        "s": 40.33,
+        "e": 40.63
+      },
+      {
+        "w": "tizimlarda",
+        "s": 40.67,
+        "e": 41.23
+      },
+      {
+        "w": "ver",
+        "s": 41.51,
+        "e": 41.73
+      },
+      {
+        "w": "siz",
+        "s": 41.79,
+        "e": 41.95
+      },
+      {
+        "w": "apdeyt",
+        "s": 42.09,
+        "e": 42.49
+      },
+      {
+        "w": "jadvaldagi",
+        "s": 42.59,
+        "e": 43.15
+      },
+      {
+        "w": "hamma",
+        "s": 43.23,
+        "e": 43.57
+      },
+      {
+        "w": "qatorni",
+        "s": 43.63,
+        "e": 44.01
+      },
+      {
+        "w": "o‘zgartiradi,",
+        "s": 44.05,
+        "e": 44.61
+      },
+      {
+        "w": "qat’iy",
+        "s": 45.09,
+        "e": 45.37
+      },
+      {
+        "w": "rejimda",
+        "s": 45.43,
+        "e": 45.79
+      },
+      {
+        "w": "esa",
+        "s": 45.85,
+        "e": 46.07
+      },
+      {
+        "w": "not",
+        "s": 46.31,
+        "e": 46.51
+      },
+      {
+        "w": "nal",
+        "s": 46.59,
+        "e": 46.79
+      },
+      {
+        "w": "ustunga",
+        "s": 46.85,
+        "e": 47.25
+      },
+      {
+        "w": "nal",
+        "s": 47.39,
+        "e": 47.57
+      },
+      {
+        "w": "yozish",
+        "s": 47.59,
+        "e": 47.91
+      },
+      {
+        "w": "xatolik",
+        "s": 47.97,
+        "e": 48.39
+      },
+      {
+        "w": "beradi.",
+        "s": 48.43,
+        "e": 48.73
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "xulosa",
+    "text": "PostgreSQL dagi moslashuvchan FROM va USING, MySQL dagi UPDATE JOIN hamda SQLite dagi subquery usullarini bilish ko‘p platformali SQL ustasining belgisidir.",
+    "show": "PostgreSQL dagi moslashuvchan FROM va USING, MySQL dagi UPDATE JOIN hamda SQLite dagi subquery usullarini bilish ko‘p platformali SQL ustasining belgisidir.",
+    "say": "Postgres dagi moslashuvchan from va USING, May es-kyu-el dagi apdeyt joyn hamda Es-kyu-layt dagi subquery usullarini bilish ko‘p platformali SQL ustasining belgisidir.",
+    "a0": 49.57,
+    "a1": 59.96,
+    "words": [
+      {
+        "w": "Postgres",
+        "s": 49.57,
+        "e": 50.05
+      },
+      {
+        "w": "dagi",
+        "s": 50.09,
+        "e": 50.27
+      },
+      {
+        "w": "moslashuvchan",
+        "s": 50.33,
+        "e": 50.99
+      },
+      {
+        "w": "from",
+        "s": 51.07,
+        "e": 51.35
+      },
+      {
+        "w": "va",
+        "s": 51.41,
+        "e": 51.49
+      },
+      {
+        "w": "USING,",
+        "s": 51.73,
+        "e": 52.03
+      },
+      {
+        "w": "May",
+        "s": 52.35,
+        "e": 52.52
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 52.6,
+        "e": 52.96
+      },
+      {
+        "w": "dagi",
+        "s": 53.0,
+        "e": 53.2
+      },
+      {
+        "w": "apdeyt",
+        "s": 53.38,
+        "e": 53.82
+      },
+      {
+        "w": "joyn",
+        "s": 53.92,
+        "e": 54.22
+      },
+      {
+        "w": "hamda",
+        "s": 54.28,
+        "e": 54.52
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 54.82,
+        "e": 55.34
+      },
+      {
+        "w": "dagi",
+        "s": 55.36,
+        "e": 55.56
+      },
+      {
+        "w": "subquery",
+        "s": 55.66,
+        "e": 56.3
+      },
+      {
+        "w": "usullarini",
+        "s": 56.38,
+        "e": 56.88
+      },
+      {
+        "w": "bilish",
+        "s": 56.92,
+        "e": 57.14
+      },
+      {
+        "w": "ko‘p",
+        "s": 57.46,
+        "e": 57.66
+      },
+      {
+        "w": "platformali",
+        "s": 57.72,
+        "e": 58.34
+      },
+      {
+        "w": "SQL",
+        "s": 58.58,
+        "e": 58.88
+      },
+      {
+        "w": "ustasining",
+        "s": 58.92,
+        "e": 59.4
+      },
+      {
+        "w": "belgisidir.",
+        "s": 59.44,
+        "e": 59.96
+      }
+    ]
+  }
+]

@@ -1,0 +1,31 @@
+WEBVTT
+
+1
+00:01.420 --> 00:12.440
+Ushbu amaliy darsda PostgreSQL 18.6 da INSERT ko‘rinishlari, UPDATE, UPDATE
+FROM, noaniq qator tanlanishi tuzog‘i hamda DELETE USING ni sinab ko‘ramiz.
+
+2
+00:15.650 --> 00:24.300
+ombor jadvaliga ustunlarni sanab hamda chapdan to‘ldirish bilan qatorlar
+kiritamiz. Ko‘rsatilmagan ustunlar sukut bo‘yicha nol qiymatini oladi.
+
+3
+00:27.530 --> 00:38.010
+Narxlarni 10 foizga oshirishda WHERE narx > 0 shartini beramiz. Mavjud
+bo‘lmagan 42-mahsulotni yangilashda UPDATE 0 qaytadi va bu xato hisoblanmaydi.
+
+4
+00:41.120 --> 00:50.560
+Sotuvlar asosida ombor qoldig‘ini kamaytirish uchun UPDATE FROM va GROUP BY
+bilan jamlangan subquery ishlatamiz. Natijada Non va Tuz soni to‘g‘ri ayriladi.
+
+5
+00:53.450 --> 01:01.420
+Agar jamlamasdan to‘g‘ridan-to‘g‘ri sotuvlar jadvalini ulasak, bitta
+mahsulotga ikkita qator mos kelib, ulardan ixtiyoriy biri jimgina tanlanadi.
+
+6
+01:04.410 --> 01:14.700
+DELETE USING bilan esa boshqa jadval shartiga qarab sotuvlar qatorlari tozalandi.
+Relyatsion bazada DML amallarini doimo kalit va aniq subquery bilan bajaring.
