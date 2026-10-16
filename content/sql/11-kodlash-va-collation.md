@@ -4,10 +4,13 @@
 
 ## Tushuncha
 
+<figure class="video">
 <video controls preload="metadata" playsinline poster="/video/sql/11-1-tushuncha.jpg" src="/video/sql/11-1-tushuncha.mp4">
   <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/sql/11-1-tushuncha.chapters.vtt" default>
   <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/sql/11-1-tushuncha.uz.vtt">
 </video>
+<figcaption>Video: Kodlash va collation — Belgilar to'plami, binary va case-insensitive solishtirish, LC_* toifalari hamda libc/icu/builtin provayderlari.</figcaption>
+</figure>
 
 MySQL hujjati ikki atamani oddiy misol bilan tushuntiradi. Faraz qilaylik, alifboda to'rt harf bor: `A`, `B`, `a`, `b`. Har biriga raqam beramiz: A = 0, B = 1, a = 2, b = 3.
 
@@ -83,10 +86,13 @@ Shuning uchun ularni faqat aniq kerak bo'lganda ishlatish tavsiya qilinadi.
 
 ## Kod
 
+<figure class="video">
 <video controls preload="metadata" playsinline poster="/video/sql/11-2-kod.jpg" src="/video/sql/11-2-kod.mp4">
   <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/sql/11-2-kod.chapters.vtt" default>
   <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/sql/11-2-kod.uz.vtt">
 </video>
+<figcaption>Video: PostgreSQL 18 psql da jonli sinovlar — SHOW lc_*, deterministic vs nondeterministic collation, upper() va LIKE farqlari.</figcaption>
+</figure>
 
 Misollar PostgreSQL 18.6, MySQL 9.7.2 va SQLite 3.54.0 da ishga tushirilgan. PostgreSQL bazasi `en_US.UTF-8` mintaqasi va `libc` provayderi bilan yaratilgan.
 
@@ -249,10 +255,13 @@ PostgreSQL 18 relizi nondeterministik collation'lar bilan `LIKE` ni ham qo'llay 
 
 ## Dialektlar
 
+<figure class="video">
 <video controls preload="metadata" playsinline poster="/video/sql/11-3-dialektlar.jpg" src="/video/sql/11-3-dialektlar.mp4">
   <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/sql/11-3-dialektlar.chapters.vtt" default>
   <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/sql/11-3-dialektlar.uz.vtt">
 </video>
+<figcaption>Video: Dialektlar (PostgreSQL vs MySQL vs SQLite) — MySQL 4 darajali collation va utf8mb4_0900_ai_ci, SQLite NOCASE va 6 ta tipik xato.</figcaption>
+</figure>
 
 ### MySQL
 

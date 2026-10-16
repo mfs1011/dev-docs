@@ -791,9 +791,11 @@ a.home-account:hover { border-color: var(--border-strong); text-decoration: none
 /* ---------- video pleyer (src/video-player.js) ---------- */
 
 .markdown figure.video { margin: 22px 0 26px; }
-.markdown figure.video > video {
+.markdown figure.video > video,
+.markdown video {
     display: block;
     width: 100%;
+    max-width: 100%;
     aspect-ratio: 16 / 9;
     border-radius: 14px;
     background: #080d1c;
