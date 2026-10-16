@@ -1,0 +1,31 @@
+WEBVTT
+
+1
+00:01.420 --> 00:10.660
+Saralash va cheklash qoidalari MySQL va SQLite tizimlarida jiddiy
+farqlanadi: eng katta farq NULL qiymatlarning tartibidagi teskarilikdir.
+
+2
+00:13.570 --> 00:22.180
+MySQL da NULL har doim eng kichik qiymat hisoblanadi va unda NULLS LAST
+yo‘qligi sababli ifoda orqali IS NULL bilan saralashga to‘g‘ri keladi.
+
+3
+00:25.370 --> 00:34.470
+Shuningdek, MySQL da LIMIT ikki son bilan yozilganda birinchi son ofset
+ekanini unutmaslik kerak; standartdagi FETCH FIRST esa unda mavjud emas.
+
+4
+00:37.480 --> 00:44.990
+SQLite ham NULL ni eng kichik deb biladi, ammo u zamonaviy NULLS
+LAST sintaksisini hamda manfiy cheklovlarni to‘liq qabul qiladi.
+
+5
+00:48.090 --> 00:55.580
+Barcha tizimlarda sahifalash doimo noldan boshlanuvchi ofsetga
+asoslanadi va ikkinchi aniqlovchi ustun bilan mustahkamlanishi shart.
+
+6
+00:58.650 --> 01:07.570
+Doimo tizimning NULL ga munosabatini tekshirish, standart LIMIT OFFSET dan
+foydalanish va qat’iy tartib loyihaning xatosiz ishlashini ta’minlaydi.

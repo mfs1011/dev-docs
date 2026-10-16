@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:11.552
+Nega tartib kafolatlanmaydi?
+
+00:11.552 --> 00:22.902
+ASC va DESC qoidalari
+
+00:22.902 --> 00:35.123
+PostgreSQL da NULL ning o‘rni
+
+00:35.123 --> 00:46.093
+LIMIT va OFFSET qoidalari
+
+00:46.093 --> 00:58.244
+FETCH FIRST va WITH TIES standarti
+
+00:58.244 --> 01:11.960
+Saralashning oltin qoidalari

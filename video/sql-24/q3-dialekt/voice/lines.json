@@ -1,0 +1,653 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Saralash va cheklash qoidalari MySQL va SQLite tizimlarida jiddiy farqlanadi: eng katta farq NULL qiymatlarning tartibidagi teskarilikdir.",
+    "show": "Saralash va cheklash qoidalari MySQL va SQLite tizimlarida jiddiy farqlanadi: eng katta farq NULL qiymatlarning tartibidagi teskarilikdir.",
+    "say": "Saralash va cheklash qoidalari May es-kyu-el va Es-kyu-layt tizimlarida jiddiy farqlanadi: eng katta farq null qiymatlarning tartibidagi teskarilikdir.",
+    "a0": 0.24,
+    "a1": 9.03,
+    "words": [
+      {
+        "w": "Saralash",
+        "s": 0.24,
+        "e": 0.7
+      },
+      {
+        "w": "va",
+        "s": 0.76,
+        "e": 0.82
+      },
+      {
+        "w": "cheklash",
+        "s": 0.9,
+        "e": 1.28
+      },
+      {
+        "w": "qoidalari",
+        "s": 1.3,
+        "e": 1.76
+      },
+      {
+        "w": "May",
+        "s": 2.12,
+        "e": 2.28
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 2.3,
+        "e": 2.72
+      },
+      {
+        "w": "va",
+        "s": 2.8,
+        "e": 2.88
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 3.1,
+        "e": 3.76
+      },
+      {
+        "w": "tizimlarida",
+        "s": 3.78,
+        "e": 4.24
+      },
+      {
+        "w": "jiddiy",
+        "s": 4.32,
+        "e": 4.56
+      },
+      {
+        "w": "farqlanadi:",
+        "s": 4.6,
+        "e": 5.08
+      },
+      {
+        "w": "eng",
+        "s": 5.84,
+        "e": 5.94
+      },
+      {
+        "w": "katta",
+        "s": 5.96,
+        "e": 6.18
+      },
+      {
+        "w": "farq",
+        "s": 6.22,
+        "e": 6.44
+      },
+      {
+        "w": "null",
+        "s": 6.88,
+        "e": 7.04
+      },
+      {
+        "w": "qiymatlarning",
+        "s": 7.1,
+        "e": 7.73
+      },
+      {
+        "w": "tartibidagi",
+        "s": 7.77,
+        "e": 8.31
+      },
+      {
+        "w": "teskarilikdir.",
+        "s": 8.37,
+        "e": 9.03
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "mysql_nulls_order",
+    "text": "MySQL da NULL har doim eng kichik qiymat hisoblanadi va unda NULLS LAST yo‘qligi sababli ifoda orqali IS NULL bilan saralashga to‘g‘ri keladi.",
+    "show": "MySQL da NULL har doim eng kichik qiymat hisoblanadi va unda NULLS LAST yo‘qligi sababli ifoda orqali IS NULL bilan saralashga to‘g‘ri keladi.",
+    "say": "May es-kyu-el da null har doim eng kichik qiymat hisoblanadi va unda nulls last yo‘qligi sababli ifoda orqali iz null bilan saralashga to‘g‘ri keladi.",
+    "a0": 9.99,
+    "a1": 18.15,
+    "words": [
+      {
+        "w": "May",
+        "s": 9.99,
+        "e": 10.15
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 10.17,
+        "e": 10.51
+      },
+      {
+        "w": "da",
+        "s": 10.55,
+        "e": 10.63
+      },
+      {
+        "w": "null",
+        "s": 10.97,
+        "e": 11.13
+      },
+      {
+        "w": "har",
+        "s": 11.21,
+        "e": 11.39
+      },
+      {
+        "w": "doim",
+        "s": 11.43,
+        "e": 11.69
+      },
+      {
+        "w": "eng",
+        "s": 11.91,
+        "e": 12.05
+      },
+      {
+        "w": "kichik",
+        "s": 12.11,
+        "e": 12.35
+      },
+      {
+        "w": "qiymat",
+        "s": 12.41,
+        "e": 12.71
+      },
+      {
+        "w": "hisoblanadi",
+        "s": 12.75,
+        "e": 13.25
+      },
+      {
+        "w": "va",
+        "s": 13.29,
+        "e": 13.35
+      },
+      {
+        "w": "unda",
+        "s": 13.43,
+        "e": 13.59
+      },
+      {
+        "w": "nulls",
+        "s": 13.99,
+        "e": 14.25
+      },
+      {
+        "w": "last",
+        "s": 14.35,
+        "e": 14.57
+      },
+      {
+        "w": "yo‘qligi",
+        "s": 14.61,
+        "e": 14.91
+      },
+      {
+        "w": "sababli",
+        "s": 14.95,
+        "e": 15.29
+      },
+      {
+        "w": "ifoda",
+        "s": 15.67,
+        "e": 15.99
+      },
+      {
+        "w": "orqali",
+        "s": 16.05,
+        "e": 16.35
+      },
+      {
+        "w": "iz",
+        "s": 16.51,
+        "e": 16.61
+      },
+      {
+        "w": "null",
+        "s": 16.69,
+        "e": 16.85
+      },
+      {
+        "w": "bilan",
+        "s": 16.87,
+        "e": 17.07
+      },
+      {
+        "w": "saralashga",
+        "s": 17.11,
+        "e": 17.57
+      },
+      {
+        "w": "to‘g‘ri",
+        "s": 17.61,
+        "e": 17.85
+      },
+      {
+        "w": "keladi.",
+        "s": 17.87,
+        "e": 18.15
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "mysql_limit_syntax",
+    "text": "Shuningdek, MySQL da LIMIT ikki son bilan yozilganda birinchi son ofset ekanini unutmaslik kerak; standartdagi FETCH FIRST esa unda mavjud emas.",
+    "show": "Shuningdek, MySQL da LIMIT ikki son bilan yozilganda birinchi son ofset ekanini unutmaslik kerak; standartdagi FETCH FIRST esa unda mavjud emas.",
+    "say": "Shuningdek, May es-kyu-el da limit ikki son bilan yozilganda birinchi son ofset ekanini unutmaslik kerak; standartdagi fech ferst esa unda mavjud emas.",
+    "a0": 19.19,
+    "a1": 27.84,
+    "words": [
+      {
+        "w": "Shuningdek,",
+        "s": 19.19,
+        "e": 19.55
+      },
+      {
+        "w": "May",
+        "s": 19.83,
+        "e": 19.99
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 20.01,
+        "e": 20.31
+      },
+      {
+        "w": "da",
+        "s": 20.35,
+        "e": 20.43
+      },
+      {
+        "w": "limit",
+        "s": 20.63,
+        "e": 20.91
+      },
+      {
+        "w": "ikki",
+        "s": 21.13,
+        "e": 21.33
+      },
+      {
+        "w": "son",
+        "s": 21.37,
+        "e": 21.51
+      },
+      {
+        "w": "bilan",
+        "s": 21.55,
+        "e": 21.73
+      },
+      {
+        "w": "yozilganda",
+        "s": 21.79,
+        "e": 22.25
+      },
+      {
+        "w": "birinchi",
+        "s": 22.56,
+        "e": 22.86
+      },
+      {
+        "w": "son",
+        "s": 22.88,
+        "e": 23.04
+      },
+      {
+        "w": "ofset",
+        "s": 23.16,
+        "e": 23.46
+      },
+      {
+        "w": "ekanini",
+        "s": 23.5,
+        "e": 23.8
+      },
+      {
+        "w": "unutmaslik",
+        "s": 23.86,
+        "e": 24.32
+      },
+      {
+        "w": "kerak;",
+        "s": 24.32,
+        "e": 25.26
+      },
+      {
+        "w": "standartdagi",
+        "s": 25.26,
+        "e": 25.9
+      },
+      {
+        "w": "fech",
+        "s": 26.14,
+        "e": 26.38
+      },
+      {
+        "w": "ferst",
+        "s": 26.44,
+        "e": 26.74
+      },
+      {
+        "w": "esa",
+        "s": 26.78,
+        "e": 26.94
+      },
+      {
+        "w": "unda",
+        "s": 27.04,
+        "e": 27.22
+      },
+      {
+        "w": "mavjud",
+        "s": 27.3,
+        "e": 27.58
+      },
+      {
+        "w": "emas.",
+        "s": 27.62,
+        "e": 27.84
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "sqlite_nulls_limit",
+    "text": "SQLite ham NULL ni eng kichik deb biladi, ammo u zamonaviy NULLS LAST sintaksisini hamda manfiy cheklovlarni to‘liq qabul qiladi.",
+    "show": "SQLite ham NULL ni eng kichik deb biladi, ammo u zamonaviy NULLS LAST sintaksisini hamda manfiy cheklovlarni to‘liq qabul qiladi.",
+    "say": "Es-kyu-layt ham null ni eng kichik deb biladi, ammo u zamonaviy nulls last sintaksisini hamda manfiy cheklovlarni to‘liq qabul qiladi.",
+    "a0": 28.7,
+    "a1": 35.76,
+    "words": [
+      {
+        "w": "Es-kyu-layt",
+        "s": 28.7,
+        "e": 29.24
+      },
+      {
+        "w": "ham",
+        "s": 29.3,
+        "e": 29.44
+      },
+      {
+        "w": "null",
+        "s": 29.52,
+        "e": 29.7
+      },
+      {
+        "w": "ni",
+        "s": 29.76,
+        "e": 30.02
+      },
+      {
+        "w": "eng",
+        "s": 30.02,
+        "e": 30.1
+      },
+      {
+        "w": "kichik",
+        "s": 30.12,
+        "e": 30.32
+      },
+      {
+        "w": "deb",
+        "s": 30.36,
+        "e": 30.48
+      },
+      {
+        "w": "biladi,",
+        "s": 30.52,
+        "e": 30.74
+      },
+      {
+        "w": "ammo",
+        "s": 30.78,
+        "e": 30.94
+      },
+      {
+        "w": "u",
+        "s": 31.06,
+        "e": 31.08
+      },
+      {
+        "w": "zamonaviy",
+        "s": 31.2,
+        "e": 31.66
+      },
+      {
+        "w": "nulls",
+        "s": 31.96,
+        "e": 32.2
+      },
+      {
+        "w": "last",
+        "s": 32.3,
+        "e": 32.54
+      },
+      {
+        "w": "sintaksisini",
+        "s": 32.6,
+        "e": 33.24
+      },
+      {
+        "w": "hamda",
+        "s": 33.28,
+        "e": 33.52
+      },
+      {
+        "w": "manfiy",
+        "s": 33.84,
+        "e": 34.18
+      },
+      {
+        "w": "cheklovlarni",
+        "s": 34.22,
+        "e": 34.82
+      },
+      {
+        "w": "to‘liq",
+        "s": 34.92,
+        "e": 35.2
+      },
+      {
+        "w": "qabul",
+        "s": 35.24,
+        "e": 35.46
+      },
+      {
+        "w": "qiladi.",
+        "s": 35.5,
+        "e": 35.76
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "comparison_matrix",
+    "text": "Barcha tizimlarda sahifalash doimo noldan boshlanuvchi ofsetga asoslanadi va ikkinchi aniqlovchi ustun bilan mustahkamlanishi shart.",
+    "show": "Barcha tizimlarda sahifalash doimo noldan boshlanuvchi ofsetga asoslanadi va ikkinchi aniqlovchi ustun bilan mustahkamlanishi shart.",
+    "say": "Barcha tizimlarda sahifalash doimo noldan boshlanuvchi ofsetga asoslanadi va ikkinchi aniqlovchi ustun bilan mustahkamlanishi shart.",
+    "a0": 36.71,
+    "a1": 43.75,
+    "words": [
+      {
+        "w": "Barcha",
+        "s": 36.71,
+        "e": 36.97
+      },
+      {
+        "w": "tizimlarda",
+        "s": 37.03,
+        "e": 37.51
+      },
+      {
+        "w": "sahifalash",
+        "s": 37.67,
+        "e": 38.29
+      },
+      {
+        "w": "doimo",
+        "s": 38.37,
+        "e": 38.71
+      },
+      {
+        "w": "noldan",
+        "s": 38.91,
+        "e": 39.29
+      },
+      {
+        "w": "boshlanuvchi",
+        "s": 39.33,
+        "e": 39.81
+      },
+      {
+        "w": "ofsetga",
+        "s": 39.93,
+        "e": 40.29
+      },
+      {
+        "w": "asoslanadi",
+        "s": 40.35,
+        "e": 40.87
+      },
+      {
+        "w": "va",
+        "s": 40.91,
+        "e": 40.99
+      },
+      {
+        "w": "ikkinchi",
+        "s": 41.35,
+        "e": 41.69
+      },
+      {
+        "w": "aniqlovchi",
+        "s": 41.75,
+        "e": 42.17
+      },
+      {
+        "w": "ustun",
+        "s": 42.25,
+        "e": 42.51
+      },
+      {
+        "w": "bilan",
+        "s": 42.55,
+        "e": 42.73
+      },
+      {
+        "w": "mustahkamlanishi",
+        "s": 42.77,
+        "e": 43.49
+      },
+      {
+        "w": "shart.",
+        "s": 43.53,
+        "e": 43.75
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "xulosa",
+    "text": "Doimo tizimning NULL ga munosabatini tekshirish, standart LIMIT OFFSET dan foydalanish va qat’iy tartib loyihaning xatosiz ishlashini ta’minlaydi.",
+    "show": "Doimo tizimning NULL ga munosabatini tekshirish, standart LIMIT OFFSET dan foydalanish va qat’iy tartib loyihaning xatosiz ishlashini ta’minlaydi.",
+    "say": "Doimo tizimning null ga munosabatini tekshirish, standart limit offset dan foydalanish va qat’iy tartib loyihaning xatosiz ishlashini ta’minlaydi.",
+    "a0": 44.67,
+    "a1": 53.14,
+    "words": [
+      {
+        "w": "Doimo",
+        "s": 44.67,
+        "e": 44.99
+      },
+      {
+        "w": "tizimning",
+        "s": 45.07,
+        "e": 45.55
+      },
+      {
+        "w": "null",
+        "s": 45.65,
+        "e": 45.83
+      },
+      {
+        "w": "ga",
+        "s": 45.89,
+        "e": 45.97
+      },
+      {
+        "w": "munosabatini",
+        "s": 46.01,
+        "e": 46.57
+      },
+      {
+        "w": "tekshirish,",
+        "s": 46.61,
+        "e": 47.05
+      },
+      {
+        "w": "standart",
+        "s": 47.39,
+        "e": 47.84
+      },
+      {
+        "w": "limit",
+        "s": 48.06,
+        "e": 48.32
+      },
+      {
+        "w": "offset",
+        "s": 48.48,
+        "e": 48.82
+      },
+      {
+        "w": "dan",
+        "s": 48.86,
+        "e": 49.0
+      },
+      {
+        "w": "foydalanish",
+        "s": 49.04,
+        "e": 49.58
+      },
+      {
+        "w": "va",
+        "s": 49.64,
+        "e": 49.7
+      },
+      {
+        "w": "qat’iy",
+        "s": 50.06,
+        "e": 50.44
+      },
+      {
+        "w": "tartib",
+        "s": 50.54,
+        "e": 50.9
+      },
+      {
+        "w": "loyihaning",
+        "s": 51.22,
+        "e": 51.68
+      },
+      {
+        "w": "xatosiz",
+        "s": 51.78,
+        "e": 52.2
+      },
+      {
+        "w": "ishlashini",
+        "s": 52.24,
+        "e": 52.6
+      },
+      {
+        "w": "ta’minlaydi.",
+        "s": 52.64,
+        "e": 53.14
+      }
+    ]
+  }
+]
