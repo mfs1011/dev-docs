@@ -1,0 +1,41 @@
+WEBVTT
+
+1
+00:01.420 --> 00:08.590
+PostgreSQL 18 da amaliy subquery so'rovlarini o'rganamiz.
+Bazamizda guruhlar va baholar jadvallari yaratilgan.
+
+2
+00:11.080 --> 00:17.980
+Skalyar subquery orqali o'rtacha balldan yuqori natija
+ko'rsatganlarni topamiz: Vali, Sobir va Dilnoza chiqdi.
+
+3
+00:19.230 --> 00:27.020
+Agar skalyar o'rnida bir nechta qator yoki ustun qaytsa, PostgreSQL
+darhol xato beradi; qator topilmasa esa jimgina NULL beradi.
+
+4
+00:30.420 --> 00:38.930
+Korrelyatsiyalangan subquery har bir qator uchun alohida ishlaydi: har guruhning
+eng yuqori bali va o'z guruhida yetakchi bo'lganlar shu usulda topiladi.
+
+5
+00:41.860 --> 00:49.000
+Talabasi bor guruhlarni EXISTS yoki IN bilan topamiz.
+Birlashmadan farqli ravishda, guruhlar faqat bir marta chiqadi.
+
+6
+00:52.010 --> 01:02.220
+Katta xato: talabasi yo'q guruhni NOT IN bilan qidirganda nolta qator chiqdi,
+chunki jadvalda bitta NULL bor edi. NOT EXISTS esa to'g'ri C guruhini qaytardi.
+
+7
+01:04.130 --> 01:12.130
+ALL barcha qiymatlardan, ANY esa kamida bittasidan kattalikni
+tekshiradi. ALL da ham NULL ehtiyotkorlik bilan filtrlanishi kerak.
+
+8
+01:15.360 --> 01:23.510
+Hosila jadval yordamida guruhlar bo'yicha talabalarning o'rtacha sonini
+hisoblaymiz, hamda UPDATE orqali eng yuqori ballni boshqasiga o'zlashtiramiz.
