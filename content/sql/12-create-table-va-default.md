@@ -4,10 +4,13 @@
 
 ## Tushuncha
 
+<figure class="video">
 <video controls preload="metadata" playsinline poster="/video/sql/12-1-tushuncha.jpg" src="/video/sql/12-1-tushuncha.mp4">
   <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/sql/12-1-tushuncha.chapters.vtt" default>
   <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/sql/12-1-tushuncha.uz.vtt">
 </video>
+<figcaption>Video: CREATE TABLE va DEFAULT — Relyatsion jadvallar, ustun tiplari, DEFAULT ifodalari va TEMPORARY/UNLOGGED jadvallar.</figcaption>
+</figure>
 
 PostgreSQL hujjati jadvalni qog'ozdagi jadvalga o'xshatadi. U qatorlar va ustunlardan iborat:
 
@@ -84,10 +87,13 @@ Hujjat muhim ogohlantirish beradi: `ctid` qator **yangilanganda** yoki `VACUUM F
 
 ## Kod
 
+<figure class="video">
 <video controls preload="metadata" playsinline poster="/video/sql/12-2-kod.jpg" src="/video/sql/12-2-kod.mp4">
   <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/sql/12-2-kod.chapters.vtt" default>
   <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/sql/12-2-kod.uz.vtt">
 </video>
+<figcaption>Video: PostgreSQL 18 psql da jonli sinovlar — DEFAULT INSERT, ctid tahlili va TEMPORARY/UNLOGGED relpersistence tekshiruvi.</figcaption>
+</figure>
 
 Misollar PostgreSQL 18.6, MySQL 9.7.2 va SQLite 3.54.0 da ishga tushirilgan.
 
@@ -250,10 +256,13 @@ WHERE relname IN ('mahsulotlar', 'vaqtinchalik', 'kesh');
 
 ## Dialektlar
 
+<figure class="video">
 <video controls preload="metadata" playsinline poster="/video/sql/12-3-dialektlar.jpg" src="/video/sql/12-3-dialektlar.mp4">
   <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/sql/12-3-dialektlar.chapters.vtt" default>
   <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/sql/12-3-dialektlar.uz.vtt">
 </video>
+<figcaption>Video: Dialektlar (PostgreSQL vs MySQL vs SQLite) — MySQL ifodali DEFAULT qavslari, SQLite WITHOUT ROWID va 6 ta tipik tuzoq.</figcaption>
+</figure>
 
 ### MySQL
 
