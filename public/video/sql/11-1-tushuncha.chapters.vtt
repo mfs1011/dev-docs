@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:11.256
+Kirish: Kodlash va collation
+
+00:11.256 --> 00:32.379
+Kodlash vs Collation mohiyati
+
+00:32.379 --> 00:53.483
+Collation nimalarga ta’sir qiladi
+
+00:53.483 --> 01:15.834
+Mintaqalar va provayderlar (libc, ICU)
+
+01:15.834 --> 01:34.655
+Deterministik va nondeterministik collation
+
+01:34.655 --> 01:52.020
+Xulosa

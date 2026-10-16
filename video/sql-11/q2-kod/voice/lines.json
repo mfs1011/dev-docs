@@ -1,0 +1,740 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "PostgreSQL o‘n sakkiz terminalida kodlash, collation va o‘zbekcha matnlarni saralashni amalda sinab ko‘ramiz.",
+    "show": "PostgreSQL o‘n sakkiz terminalida kodlash, collation va o‘zbekcha matnlarni saralashni amalda sinab ko‘ramiz.",
+    "say": "Postgres o‘n sakkiz terminalida kodlash, kollatsiya va o‘zbekcha matnlarni saralashni amalda sinab ko‘ramiz.",
+    "a0": 0.3,
+    "a1": 6.26,
+    "words": [
+      {
+        "w": "Postgres",
+        "s": 0.3,
+        "e": 0.74
+      },
+      {
+        "w": "o‘n",
+        "s": 0.82,
+        "e": 0.9
+      },
+      {
+        "w": "sakkiz",
+        "s": 0.96,
+        "e": 1.26
+      },
+      {
+        "w": "terminalida",
+        "s": 1.28,
+        "e": 1.86
+      },
+      {
+        "w": "kodlash,",
+        "s": 2.0,
+        "e": 2.54
+      },
+      {
+        "w": "kollatsiya",
+        "s": 2.74,
+        "e": 3.24
+      },
+      {
+        "w": "va",
+        "s": 3.32,
+        "e": 3.4
+      },
+      {
+        "w": "o‘zbekcha",
+        "s": 3.58,
+        "e": 3.96
+      },
+      {
+        "w": "matnlarni",
+        "s": 4.02,
+        "e": 4.52
+      },
+      {
+        "w": "saralashni",
+        "s": 4.58,
+        "e": 5.16
+      },
+      {
+        "w": "amalda",
+        "s": 5.3,
+        "e": 5.62
+      },
+      {
+        "w": "sinab",
+        "s": 5.66,
+        "e": 5.88
+      },
+      {
+        "w": "ko‘ramiz.",
+        "s": 5.92,
+        "e": 6.26
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "intro",
+    "text": "Birinchi navbatda sozlamalarni tekshiramiz: server va mijoz kodlashi UTF-8, mintaqa esa libc provayderi bilan sozlangani ko‘rinadi.",
+    "show": "Birinchi navbatda sozlamalarni tekshiramiz: server va mijoz kodlashi UTF-8, mintaqa esa libc provayderi bilan sozlangani ko‘rinadi.",
+    "say": "Birinchi navbatda sozlamalarni tekshiramiz: server va mijoz kodlashi u-te-ef sakkiz, mintaqa esa lib-si provayderi bilan sozlangani ko‘rinadi.",
+    "a0": 7.26,
+    "a1": 14.97,
+    "words": [
+      {
+        "w": "Birinchi",
+        "s": 7.26,
+        "e": 7.53
+      },
+      {
+        "w": "navbatda",
+        "s": 7.55,
+        "e": 7.91
+      },
+      {
+        "w": "sozlamalarni",
+        "s": 7.95,
+        "e": 8.51
+      },
+      {
+        "w": "tekshiramiz:",
+        "s": 8.55,
+        "e": 9.03
+      },
+      {
+        "w": "server",
+        "s": 9.49,
+        "e": 9.83
+      },
+      {
+        "w": "va",
+        "s": 9.89,
+        "e": 9.95
+      },
+      {
+        "w": "mijoz",
+        "s": 10.05,
+        "e": 10.33
+      },
+      {
+        "w": "kodlashi",
+        "s": 10.37,
+        "e": 10.77
+      },
+      {
+        "w": "u-te-ef",
+        "s": 10.95,
+        "e": 11.23
+      },
+      {
+        "w": "sakkiz,",
+        "s": 11.27,
+        "e": 11.73
+      },
+      {
+        "w": "mintaqa",
+        "s": 12.11,
+        "e": 12.43
+      },
+      {
+        "w": "esa",
+        "s": 12.49,
+        "e": 12.65
+      },
+      {
+        "w": "lib-si",
+        "s": 12.87,
+        "e": 13.23
+      },
+      {
+        "w": "provayderi",
+        "s": 13.31,
+        "e": 13.79
+      },
+      {
+        "w": "bilan",
+        "s": 13.81,
+        "e": 13.99
+      },
+      {
+        "w": "sozlangani",
+        "s": 14.01,
+        "e": 14.55
+      },
+      {
+        "w": "ko‘rinadi.",
+        "s": 14.59,
+        "e": 14.97
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "uz_sort",
+    "text": "Endi o‘nta o‘zbekcha so‘zni jadvalga kiritib, uch xil collation bo‘yicha saralaymiz.",
+    "show": "Endi o‘nta o‘zbekcha so‘zni jadvalga kiritib, uch xil collation bo‘yicha saralaymiz.",
+    "say": "Endi o‘nta o‘zbekcha so‘zni jadvalga kiritib, uch xil kollatsiya bo‘yicha saralaymiz.",
+    "a0": 16.03,
+    "a1": 19.95,
+    "words": [
+      {
+        "w": "Endi",
+        "s": 16.03,
+        "e": 16.23
+      },
+      {
+        "w": "o‘nta",
+        "s": 16.35,
+        "e": 16.55
+      },
+      {
+        "w": "o‘zbekcha",
+        "s": 16.61,
+        "e": 16.95
+      },
+      {
+        "w": "so‘zni",
+        "s": 16.99,
+        "e": 17.27
+      },
+      {
+        "w": "jadvalga",
+        "s": 17.33,
+        "e": 17.75
+      },
+      {
+        "w": "kiritib,",
+        "s": 17.79,
+        "e": 18.11
+      },
+      {
+        "w": "uch",
+        "s": 18.33,
+        "e": 18.45
+      },
+      {
+        "w": "xil",
+        "s": 18.53,
+        "e": 18.65
+      },
+      {
+        "w": "kollatsiya",
+        "s": 18.69,
+        "e": 19.13
+      },
+      {
+        "w": "bo‘yicha",
+        "s": 19.17,
+        "e": 19.41
+      },
+      {
+        "w": "saralaymiz.",
+        "s": 19.45,
+        "e": 19.95
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "uz_sort",
+    "text": "C kollatsiyasi baytlar bo‘yicha saralasa, en_US ingliz alifbosiga tayanadi. Faqat uz-Latn ICU kollatsiyasida o‘rik, g‘oz, shaftoli va choy o‘zbek alifbosi qoidasi bo‘yicha eng oxiriga to‘g‘ri joylashadi!",
+    "show": "C kollatsiyasi baytlar bo‘yicha saralasa, en_US ingliz alifbosiga tayanadi. Faqat uz-Latn ICU kollatsiyasida o‘rik, g‘oz, shaftoli va choy o‘zbek alifbosi qoidasi bo‘yicha eng oxiriga to‘g‘ri joylashadi!",
+    "say": "C kollatsiyasi baytlar bo‘yicha saralasa, en-yu-es ingliz alifbosiga tayanadi. Faqat o‘zbekcha lotin ay-si-yu kollatsiyasida o‘rik, g‘oz, shaftoli va choy o‘zbek alifbosi qoidasi bo‘yicha eng oxiriga to‘g‘ri joylashadi!",
+    "a0": 20.87,
+    "a1": 34.78,
+    "words": [
+      {
+        "w": "C",
+        "s": 20.87,
+        "e": 20.89
+      },
+      {
+        "w": "kollatsiyasi",
+        "s": 21.07,
+        "e": 21.65
+      },
+      {
+        "w": "baytlar",
+        "s": 21.77,
+        "e": 22.15
+      },
+      {
+        "w": "bo‘yicha",
+        "s": 22.19,
+        "e": 22.41
+      },
+      {
+        "w": "saralasa,",
+        "s": 22.47,
+        "e": 22.92
+      },
+      {
+        "w": "en-yu-es",
+        "s": 23.28,
+        "e": 23.96
+      },
+      {
+        "w": "ingliz",
+        "s": 24.14,
+        "e": 24.44
+      },
+      {
+        "w": "alifbosiga",
+        "s": 24.5,
+        "e": 25.0
+      },
+      {
+        "w": "tayanadi.",
+        "s": 25.02,
+        "e": 25.4
+      },
+      {
+        "w": "Faqat",
+        "s": 26.06,
+        "e": 26.32
+      },
+      {
+        "w": "o‘zbekcha",
+        "s": 26.42,
+        "e": 26.82
+      },
+      {
+        "w": "lotin",
+        "s": 26.92,
+        "e": 27.24
+      },
+      {
+        "w": "ay-si-yu",
+        "s": 27.42,
+        "e": 27.78
+      },
+      {
+        "w": "kollatsiyasida",
+        "s": 27.86,
+        "e": 28.48
+      },
+      {
+        "w": "o‘rik,",
+        "s": 28.94,
+        "e": 29.28
+      },
+      {
+        "w": "g‘oz,",
+        "s": 29.56,
+        "e": 29.86
+      },
+      {
+        "w": "shaftoli",
+        "s": 30.02,
+        "e": 30.48
+      },
+      {
+        "w": "va",
+        "s": 30.56,
+        "e": 30.62
+      },
+      {
+        "w": "choy",
+        "s": 30.74,
+        "e": 30.98
+      },
+      {
+        "w": "o‘zbek",
+        "s": 31.36,
+        "e": 31.68
+      },
+      {
+        "w": "alifbosi",
+        "s": 31.74,
+        "e": 32.16
+      },
+      {
+        "w": "qoidasi",
+        "s": 32.2,
+        "e": 32.56
+      },
+      {
+        "w": "bo‘yicha",
+        "s": 32.6,
+        "e": 32.88
+      },
+      {
+        "w": "eng",
+        "s": 33.08,
+        "e": 33.24
+      },
+      {
+        "w": "oxiriga",
+        "s": 33.4,
+        "e": 33.82
+      },
+      {
+        "w": "to‘g‘ri",
+        "s": 33.98,
+        "e": 34.28
+      },
+      {
+        "w": "joylashadi!",
+        "s": 34.32,
+        "e": 34.78
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "case_turk",
+    "text": "Katta-kichik harf amallarida turk tili kollatsiyasini ko‘rsatsak, katta I harfi to‘g‘ri nuqtasiz ı ga aylanadi.",
+    "show": "Katta-kichik harf amallarida turk tili kollatsiyasini ko‘rsatsak, katta I harfi to‘g‘ri nuqtasiz ı ga aylanadi.",
+    "say": "Katta-kichik harf amallarida turk tili kollatsiyasini ko‘rsatsak, katta I harfi to‘g‘ri nuqtasiz ı ga aylanadi.",
+    "a0": 36.0,
+    "a1": 42.51,
+    "words": [
+      {
+        "w": "Katta-kichik",
+        "s": 36.0,
+        "e": 36.5
+      },
+      {
+        "w": "harf",
+        "s": 36.54,
+        "e": 36.74
+      },
+      {
+        "w": "amallarida",
+        "s": 36.8,
+        "e": 37.3
+      },
+      {
+        "w": "turk",
+        "s": 37.46,
+        "e": 37.67
+      },
+      {
+        "w": "tili",
+        "s": 37.71,
+        "e": 37.87
+      },
+      {
+        "w": "kollatsiyasini",
+        "s": 37.91,
+        "e": 38.49
+      },
+      {
+        "w": "ko‘rsatsak,",
+        "s": 38.53,
+        "e": 39.05
+      },
+      {
+        "w": "katta",
+        "s": 39.39,
+        "e": 39.71
+      },
+      {
+        "w": "I",
+        "s": 39.99,
+        "e": 40.01
+      },
+      {
+        "w": "harfi",
+        "s": 40.17,
+        "e": 40.51
+      },
+      {
+        "w": "to‘g‘ri",
+        "s": 40.67,
+        "e": 41.05
+      },
+      {
+        "w": "nuqtasiz",
+        "s": 41.15,
+        "e": 41.63
+      },
+      {
+        "w": "ı",
+        "s": 41.63,
+        "e": 41.63
+      },
+      {
+        "w": "ga",
+        "s": 41.99,
+        "e": 42.05
+      },
+      {
+        "w": "aylanadi.",
+        "s": 42.11,
+        "e": 42.51
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "ci_unique",
+    "text": "Nondeterministik ci kollatsiyasi yordamida esa katta-kichik harfga sezgir bo‘lmagan elektron pochta ustunini yaratish mumkin.",
+    "show": "Nondeterministik ci kollatsiyasi yordamida esa katta-kichik harfga sezgir bo‘lmagan elektron pochta ustunini yaratish mumkin.",
+    "say": "Nondeterministik si-ay kollatsiyasi yordamida esa katta-kichik harfga sezgir bo‘lmagan elektron pochta ustunini yaratish mumkin.",
+    "a0": 43.61,
+    "a1": 50.25,
+    "words": [
+      {
+        "w": "Nondeterministik",
+        "s": 43.61,
+        "e": 44.49
+      },
+      {
+        "w": "si-ay",
+        "s": 44.57,
+        "e": 44.91
+      },
+      {
+        "w": "kollatsiyasi",
+        "s": 44.97,
+        "e": 45.49
+      },
+      {
+        "w": "yordamida",
+        "s": 45.51,
+        "e": 45.91
+      },
+      {
+        "w": "esa",
+        "s": 45.97,
+        "e": 46.13
+      },
+      {
+        "w": "katta-kichik",
+        "s": 46.49,
+        "e": 46.99
+      },
+      {
+        "w": "harfga",
+        "s": 47.03,
+        "e": 47.31
+      },
+      {
+        "w": "sezgir",
+        "s": 47.37,
+        "e": 47.67
+      },
+      {
+        "w": "bo‘lmagan",
+        "s": 47.73,
+        "e": 48.17
+      },
+      {
+        "w": "elektron",
+        "s": 48.35,
+        "e": 48.79
+      },
+      {
+        "w": "pochta",
+        "s": 48.89,
+        "e": 49.17
+      },
+      {
+        "w": "ustunini",
+        "s": 49.21,
+        "e": 49.59
+      },
+      {
+        "w": "yaratish",
+        "s": 49.63,
+        "e": 49.93
+      },
+      {
+        "w": "mumkin.",
+        "s": 49.97,
+        "e": 50.25
+      }
+    ]
+  },
+  {
+    "id": "L7",
+    "scene": "ci_unique",
+    "text": "Katta harf bilan kiritilgan pochtadan so‘ng kichik harf bilan xuddi shu manzil yozilsa, baza xavfsiz tarzda takroriy kalit xatosini beradi.",
+    "show": "Katta harf bilan kiritilgan pochtadan so‘ng kichik harf bilan xuddi shu manzil yozilsa, baza xavfsiz tarzda takroriy kalit xatosini beradi.",
+    "say": "Katta harf bilan kiritilgan pochtadan so‘ng kichik harf bilan xuddi shu manzil yozilsa, baza xavfsiz tarzda takroriy kalit xatosini beradi.",
+    "a0": 51.05,
+    "a1": 58.22,
+    "words": [
+      {
+        "w": "Katta",
+        "s": 51.05,
+        "e": 51.29
+      },
+      {
+        "w": "harf",
+        "s": 51.35,
+        "e": 51.55
+      },
+      {
+        "w": "bilan",
+        "s": 51.59,
+        "e": 51.75
+      },
+      {
+        "w": "kiritilgan",
+        "s": 51.77,
+        "e": 52.17
+      },
+      {
+        "w": "pochtadan",
+        "s": 52.19,
+        "e": 52.58
+      },
+      {
+        "w": "so‘ng",
+        "s": 52.64,
+        "e": 52.84
+      },
+      {
+        "w": "kichik",
+        "s": 52.98,
+        "e": 53.22
+      },
+      {
+        "w": "harf",
+        "s": 53.28,
+        "e": 53.48
+      },
+      {
+        "w": "bilan",
+        "s": 53.52,
+        "e": 53.72
+      },
+      {
+        "w": "xuddi",
+        "s": 53.8,
+        "e": 54.1
+      },
+      {
+        "w": "shu",
+        "s": 54.16,
+        "e": 54.26
+      },
+      {
+        "w": "manzil",
+        "s": 54.34,
+        "e": 54.62
+      },
+      {
+        "w": "yozilsa,",
+        "s": 54.62,
+        "e": 55.06
+      },
+      {
+        "w": "baza",
+        "s": 55.54,
+        "e": 55.82
+      },
+      {
+        "w": "xavfsiz",
+        "s": 55.94,
+        "e": 56.28
+      },
+      {
+        "w": "tarzda",
+        "s": 56.32,
+        "e": 56.64
+      },
+      {
+        "w": "takroriy",
+        "s": 56.72,
+        "e": 57.16
+      },
+      {
+        "w": "kalit",
+        "s": 57.26,
+        "e": 57.5
+      },
+      {
+        "w": "xatosini",
+        "s": 57.54,
+        "e": 57.94
+      },
+      {
+        "w": "beradi.",
+        "s": 57.96,
+        "e": 58.22
+      }
+    ]
+  },
+  {
+    "id": "L8",
+    "scene": "xulosa",
+    "text": "Ko‘rib turganingizdek, ICU kollatsiyalari milliy alifbolarni to‘g‘ri saralash va biznes mantiqni himoyalashda tengsizdir.",
+    "show": "Ko‘rib turganingizdek, ICU kollatsiyalari milliy alifbolarni to‘g‘ri saralash va biznes mantiqni himoyalashda tengsizdir.",
+    "say": "Ko‘rib turganingizdek, ay-si-yu kollatsiyalari milliy alifbolarni to‘g‘ri saralash va biznes mantiqni himoyalashda tengsizdir.",
+    "a0": 59.22,
+    "a1": 65.88,
+    "words": [
+      {
+        "w": "Ko‘rib",
+        "s": 59.22,
+        "e": 59.44
+      },
+      {
+        "w": "turganingizdek,",
+        "s": 59.46,
+        "e": 60.16
+      },
+      {
+        "w": "ay-si-yu",
+        "s": 60.38,
+        "e": 60.7
+      },
+      {
+        "w": "kollatsiyalari",
+        "s": 60.78,
+        "e": 61.42
+      },
+      {
+        "w": "milliy",
+        "s": 61.57,
+        "e": 61.83
+      },
+      {
+        "w": "alifbolarni",
+        "s": 61.91,
+        "e": 62.47
+      },
+      {
+        "w": "to‘g‘ri",
+        "s": 62.51,
+        "e": 62.75
+      },
+      {
+        "w": "saralash",
+        "s": 62.79,
+        "e": 63.29
+      },
+      {
+        "w": "va",
+        "s": 63.37,
+        "e": 63.45
+      },
+      {
+        "w": "biznes",
+        "s": 63.63,
+        "e": 63.93
+      },
+      {
+        "w": "mantiqni",
+        "s": 63.97,
+        "e": 64.37
+      },
+      {
+        "w": "himoyalashda",
+        "s": 64.43,
+        "e": 65.08
+      },
+      {
+        "w": "tengsizdir.",
+        "s": 65.38,
+        "e": 65.88
+      }
+    ]
+  }
+]
