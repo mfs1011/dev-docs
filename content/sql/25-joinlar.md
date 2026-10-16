@@ -4,6 +4,15 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/25-1-tushuncha.jpg">
+    <source src="/video/sql/25-1-tushuncha.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/25-1-tushuncha.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/25-1-tushuncha.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>25.1-video. JOIN turlari va bog'lanish mantig'i</figcaption>
+</figure>
+
 **JOIN** (birlashtirish) ikki jadvalning qatorlarini bitta natijaga qo'shadi. PostgreSQL hujjati buni "birlashgan jadval" (joined table) deb ataydi: ikki jadval (haqiqiy yoki hosila) tanlangan birlashtirish turi qoidalariga ko'ra bitta jadvalga aylanadi. Natija oddiy jadval kabi `FROM` ichida turadi, unga yana `JOIN` qo'shish mumkin.
 
 Barcha turlarning asosida bitta tushuncha bor: **dekart ko'paytma** (cartesian product). Bu birinchi jadvalning har qatori ikkinchi jadvalning har qatori bilan juftlangan to'plam: N × M qator. Qolgan turlar shu ko'paytmadan qatorlarni tanlaydi yoki unga qator qo'shadi.
@@ -51,6 +60,15 @@ Hujjatga ko'ra bajarilish tartibi: chap tomonning **har bir qatori** uchun `LATE
 Tipik ishlatilishi — "har guruh uchun eng yaxshi N ta". `LEFT JOIN LATERAL … ON true` ayniqsa qulay: ichki so'rov hech narsa qaytarmasa ham chap qator natijada qoladi.
 
 ## Kod
+
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/25-2-kod.jpg">
+    <source src="/video/sql/25-2-kod.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/25-2-kod.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/25-2-kod.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>25.2-video. PostgreSQL 18: Real jadvallar va JOIN amallari</figcaption>
+</figure>
 
 Misollar PostgreSQL 18.6, MySQL 9.7.2 va SQLite 3.54.0 da ishga tushirilgan. Jadvallar PostgreSQL hujjatidagi misoldan olingan:
 
@@ -275,6 +293,15 @@ DETAIL:  There is an entry for table "t1", but it cannot be referenced from this
 `JOIN` vergulga qaraganda qattiqroq bog'lanadi: avval `t2 JOIN t3 ON …` hisoblanadi, uning ichida `t1` hali ko'rinmaydi.
 
 ## Dialektlar
+
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/25-3-dialektlar.jpg">
+    <source src="/video/sql/25-3-dialektlar.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/25-3-dialektlar.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/25-3-dialektlar.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>25.3-video. MySQL va SQLite da JOIN o'ziga xosliklari</figcaption>
+</figure>
 
 ### MySQL
 

@@ -1,0 +1,45 @@
+WEBVTT
+
+1
+00:01.420 --> 00:08.870
+Relyatsion modelda ma'lumotlar turli jadvallarga bo'lib saqlanadi,
+JOIN amali esa ularni bitta yaxlit natijaga birlashtiradi.
+
+2
+00:10.610 --> 00:14.040
+Barcha birlashtirishlarning
+negizida Dekart ko'paytmasi yotadi.
+
+3
+00:14.030 --> 00:21.720
+CROSS JOIN birinchi jadvalning har bir qatorini ikkinchi jadvalning har
+bir qatori bilan juftlab, N ko'paytirilgan M ta qator hosil qiladi.
+
+4
+00:24.690 --> 00:29.750
+INNER JOIN ana shu ko'paytmadan faqat ON
+shartiga to'g'ri kelgan qatorlarni tanlab oladi.
+
+5
+00:29.880 --> 00:38.510
+Tashqi birlashtirishlar, ya'ni LEFT, RIGHT va FULL JOIN esa juftsiz qolgan
+qatorlarni yo'qotmasdan, yetishmagan ustunlarni NULL bilan to'ldiradi.
+
+6
+00:41.840 --> 00:46.420
+Tashqi birlashtirishda ON va WHERE
+orasidagi farq prinsipial ahamiyatga ega.
+
+7
+00:46.690 --> 00:53.300
+ON sharti birlashtirish paytida juftlikni aniqlaydi, WHERE
+filtri esa butun natijaga birlashtirishdan keyin qo'llanadi.
+
+8
+00:56.350 --> 01:01.670
+LATERAL kalit so'zi esa ichki so'rovga o'zidan
+oldingi jadval ustunlarini ko'rish imkonini beradi.
+
+9
+01:01.840 --> 01:04.950
+Endi bu amallarni PostgreSQL 18 da sinab ko'ramiz.

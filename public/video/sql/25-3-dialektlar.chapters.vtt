@@ -1,0 +1,16 @@
+WEBVTT
+
+00:00.000 --> 00:09.275
+Dialektlar: MySQL va SQLite
+
+00:09.275 --> 00:29.762
+MySQL: FULL JOIN yo'qligi va UNION
+
+00:29.762 --> 00:42.912
+SQLite: FULL va CROSS JOIN
+
+00:42.912 --> 00:58.588
+Vergul ustuvorligi va LATERAL
+
+00:58.588 --> 01:09.380
+Xulosa va amaliy tavsiyalar

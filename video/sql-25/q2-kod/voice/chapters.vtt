@@ -1,0 +1,16 @@
+WEBVTT
+
+00:00.000 --> 00:10.905
+PostgreSQL 18: t1 va t2 jadvallari
+
+00:10.905 --> 00:25.743
+INNER JOIN, USING va NATURAL
+
+00:25.743 --> 00:40.641
+LEFT, RIGHT va FULL JOIN
+
+00:40.641 --> 00:56.118
+ON vs WHERE va juftsiz qatorlar
+
+00:56.118 --> 01:07.560
+LATERAL: Guruhlardan TOP-2

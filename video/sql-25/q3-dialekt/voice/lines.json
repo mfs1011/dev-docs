@@ -1,0 +1,701 @@
+[
+  {
+    "id": "g1",
+    "scene": "kirish",
+    "text": "MySQL va SQLite tizimlarida JOIN sintaksisining o'ziga xos va xavfli jihatlari mavjud.",
+    "show": "MySQL va SQLite tizimlarida JOIN sintaksisining o'ziga xos va xavfli jihatlari mavjud.",
+    "say": "May es-kyu-el va Es-kyu-layt tizimlarida joyn sintaksisining o'ziga xos va xavfli jihatlari mavjud.",
+    "a0": 0.3,
+    "a1": 5.86,
+    "words": [
+      {
+        "w": "May",
+        "s": 0.3,
+        "e": 0.48
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 0.52,
+        "e": 0.94
+      },
+      {
+        "w": "va",
+        "s": 1.0,
+        "e": 1.08
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 1.28,
+        "e": 1.84
+      },
+      {
+        "w": "tizimlarida",
+        "s": 1.86,
+        "e": 2.44
+      },
+      {
+        "w": "joyn",
+        "s": 2.6,
+        "e": 2.92
+      },
+      {
+        "w": "sintaksisining",
+        "s": 2.98,
+        "e": 3.68
+      },
+      {
+        "w": "o'ziga",
+        "s": 3.78,
+        "e": 4.04
+      },
+      {
+        "w": "xos",
+        "s": 4.12,
+        "e": 4.34
+      },
+      {
+        "w": "va",
+        "s": 4.44,
+        "e": 4.52
+      },
+      {
+        "w": "xavfli",
+        "s": 4.7,
+        "e": 5.02
+      },
+      {
+        "w": "jihatlari",
+        "s": 5.08,
+        "e": 5.52
+      },
+      {
+        "w": "mavjud.",
+        "s": 5.56,
+        "e": 5.86
+      }
+    ]
+  },
+  {
+    "id": "g2",
+    "scene": "mysql_xususiyatlari",
+    "text": "MySQL da JOIN, CROSS JOIN va INNER JOIN bir xil, shuning uchun ON siz ham qabul qilinib Dekart ko'paytma beradi.",
+    "show": "MySQL da JOIN, CROSS JOIN va INNER JOIN bir xil, shuning uchun ON siz ham qabul qilinib Dekart ko'paytma beradi.",
+    "say": "May es-kyu-el da joyn, kross joyn va inner joyn bir xil, shuning uchun on siz ham qabul qilinib Dekart ko'paytma beradi.",
+    "a0": 6.6,
+    "a1": 13.39,
+    "words": [
+      {
+        "w": "May",
+        "s": 6.6,
+        "e": 6.76
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 6.84,
+        "e": 7.16
+      },
+      {
+        "w": "da",
+        "s": 7.2,
+        "e": 7.28
+      },
+      {
+        "w": "joyn,",
+        "s": 7.44,
+        "e": 7.83
+      },
+      {
+        "w": "kross",
+        "s": 8.13,
+        "e": 8.39
+      },
+      {
+        "w": "joyn",
+        "s": 8.45,
+        "e": 8.71
+      },
+      {
+        "w": "va",
+        "s": 8.77,
+        "e": 8.85
+      },
+      {
+        "w": "inner",
+        "s": 9.03,
+        "e": 9.25
+      },
+      {
+        "w": "joyn",
+        "s": 9.29,
+        "e": 9.53
+      },
+      {
+        "w": "bir",
+        "s": 9.59,
+        "e": 9.69
+      },
+      {
+        "w": "xil,",
+        "s": 9.75,
+        "e": 9.89
+      },
+      {
+        "w": "shuning",
+        "s": 10.17,
+        "e": 10.39
+      },
+      {
+        "w": "uchun",
+        "s": 10.41,
+        "e": 10.59
+      },
+      {
+        "w": "on",
+        "s": 10.99,
+        "e": 11.13
+      },
+      {
+        "w": "siz",
+        "s": 11.23,
+        "e": 11.37
+      },
+      {
+        "w": "ham",
+        "s": 11.43,
+        "e": 11.55
+      },
+      {
+        "w": "qabul",
+        "s": 11.61,
+        "e": 11.85
+      },
+      {
+        "w": "qilinib",
+        "s": 11.89,
+        "e": 12.19
+      },
+      {
+        "w": "Dekart",
+        "s": 12.29,
+        "e": 12.63
+      },
+      {
+        "w": "ko'paytma",
+        "s": 12.67,
+        "e": 13.05
+      },
+      {
+        "w": "beradi.",
+        "s": 13.09,
+        "e": 13.39
+      }
+    ]
+  },
+  {
+    "id": "g3",
+    "scene": "mysql_xususiyatlari",
+    "text": "Eng muhimi, MySQL da FULL JOIN umuman yo'q, FULL so'zi jadval tahlusiga aylanib qoladi.",
+    "show": "Eng muhimi, MySQL da FULL JOIN umuman yo'q, FULL so'zi jadval tahlusiga aylanib qoladi.",
+    "say": "Eng muhimi, May es-kyu-el da full joyn umuman yo'q, full so'zi jadval tahlusiga aylanib qoladi.",
+    "a0": 14.19,
+    "a1": 19.51,
+    "words": [
+      {
+        "w": "Eng",
+        "s": 14.19,
+        "e": 14.31
+      },
+      {
+        "w": "muhimi,",
+        "s": 14.33,
+        "e": 14.59
+      },
+      {
+        "w": "May",
+        "s": 14.93,
+        "e": 15.09
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 15.15,
+        "e": 15.47
+      },
+      {
+        "w": "da",
+        "s": 15.51,
+        "e": 15.59
+      },
+      {
+        "w": "full",
+        "s": 15.79,
+        "e": 15.99
+      },
+      {
+        "w": "joyn",
+        "s": 16.05,
+        "e": 16.29
+      },
+      {
+        "w": "umuman",
+        "s": 16.41,
+        "e": 16.77
+      },
+      {
+        "w": "yo'q,",
+        "s": 16.81,
+        "e": 16.97
+      },
+      {
+        "w": "full",
+        "s": 17.35,
+        "e": 17.53
+      },
+      {
+        "w": "so'zi",
+        "s": 17.59,
+        "e": 17.85
+      },
+      {
+        "w": "jadval",
+        "s": 17.95,
+        "e": 18.31
+      },
+      {
+        "w": "tahlusiga",
+        "s": 18.35,
+        "e": 18.89
+      },
+      {
+        "w": "aylanib",
+        "s": 18.93,
+        "e": 19.21
+      },
+      {
+        "w": "qoladi.",
+        "s": 19.23,
+        "e": 19.51
+      }
+    ]
+  },
+  {
+    "id": "g4",
+    "scene": "mysql_xususiyatlari",
+    "text": "Yechim — LEFT va RIGHT natijalarini UNION bilan birlashtirishdir.",
+    "show": "Yechim — LEFT va RIGHT natijalarini UNION bilan birlashtirishdir.",
+    "say": "Yechim — left va rayt natijalarini yunion bilan birlashtirishdir.",
+    "a0": 20.03,
+    "a1": 23.5,
+    "words": [
+      {
+        "w": "Yechim",
+        "s": 20.03,
+        "e": 20.31
+      },
+      {
+        "w": "—",
+        "s": 20.31,
+        "e": 20.31
+      },
+      {
+        "w": "left",
+        "s": 20.69,
+        "e": 20.93
+      },
+      {
+        "w": "va",
+        "s": 21.01,
+        "e": 21.09
+      },
+      {
+        "w": "rayt",
+        "s": 21.29,
+        "e": 21.49
+      },
+      {
+        "w": "natijalarini",
+        "s": 21.53,
+        "e": 22.15
+      },
+      {
+        "w": "yunion",
+        "s": 22.27,
+        "e": 22.58
+      },
+      {
+        "w": "bilan",
+        "s": 22.64,
+        "e": 22.84
+      },
+      {
+        "w": "birlashtirishdir.",
+        "s": 22.86,
+        "e": 23.5
+      }
+    ]
+  },
+  {
+    "id": "g5",
+    "scene": "sqlite_xususiyatlari",
+    "text": "SQLite esa RIGHT va FULL JOIN ni to'liq qo'llab-quvvatlaydi.",
+    "show": "SQLite esa RIGHT va FULL JOIN ni to'liq qo'llab-quvvatlaydi.",
+    "say": "Es-kyu-layt esa rayt va full joyn ni to'liq qo'llab-quvvatlaydi.",
+    "a0": 24.4,
+    "a1": 27.84,
+    "words": [
+      {
+        "w": "Es-kyu-layt",
+        "s": 24.4,
+        "e": 24.9
+      },
+      {
+        "w": "esa",
+        "s": 25.0,
+        "e": 25.18
+      },
+      {
+        "w": "rayt",
+        "s": 25.56,
+        "e": 25.8
+      },
+      {
+        "w": "va",
+        "s": 25.86,
+        "e": 25.94
+      },
+      {
+        "w": "full",
+        "s": 26.08,
+        "e": 26.26
+      },
+      {
+        "w": "joyn",
+        "s": 26.32,
+        "e": 26.58
+      },
+      {
+        "w": "ni",
+        "s": 26.62,
+        "e": 26.68
+      },
+      {
+        "w": "to'liq",
+        "s": 26.78,
+        "e": 27.06
+      },
+      {
+        "w": "qo'llab-quvvatlaydi.",
+        "s": 27.08,
+        "e": 27.84
+      }
+    ]
+  },
+  {
+    "id": "g6",
+    "scene": "sqlite_xususiyatlari",
+    "text": "Biroq bu yerda CROSS JOIN optimizatorga jadvallar ketma-ketligini o'zgartirishni taqiqlash uchun xizmat qiladi.",
+    "show": "Biroq bu yerda CROSS JOIN optimizatorga jadvallar ketma-ketligini o'zgartirishni taqiqlash uchun xizmat qiladi.",
+    "say": "Biroq bu yerda kross joyn optimizatorga jadvallar ketma-ketligini o'zgartirishni taqiqlash uchun xizmat qiladi.",
+    "a0": 28.3,
+    "a1": 33.9,
+    "words": [
+      {
+        "w": "Biroq",
+        "s": 28.3,
+        "e": 28.5
+      },
+      {
+        "w": "bu",
+        "s": 28.54,
+        "e": 28.6
+      },
+      {
+        "w": "yerda",
+        "s": 28.66,
+        "e": 28.88
+      },
+      {
+        "w": "kross",
+        "s": 29.22,
+        "e": 29.48
+      },
+      {
+        "w": "joyn",
+        "s": 29.54,
+        "e": 29.8
+      },
+      {
+        "w": "optimizatorga",
+        "s": 30.0,
+        "e": 30.6
+      },
+      {
+        "w": "jadvallar",
+        "s": 30.7,
+        "e": 31.16
+      },
+      {
+        "w": "ketma-ketligini",
+        "s": 31.22,
+        "e": 31.92
+      },
+      {
+        "w": "o'zgartirishni",
+        "s": 32.06,
+        "e": 32.64
+      },
+      {
+        "w": "taqiqlash",
+        "s": 32.7,
+        "e": 33.16
+      },
+      {
+        "w": "uchun",
+        "s": 33.18,
+        "e": 33.34
+      },
+      {
+        "w": "xizmat",
+        "s": 33.38,
+        "e": 33.62
+      },
+      {
+        "w": "qiladi.",
+        "s": 33.66,
+        "e": 33.9
+      }
+    ]
+  },
+  {
+    "id": "g7",
+    "scene": "vergul_va_lateral",
+    "text": "Standartda JOIN verguldan oldin bajariladi, SQLite da esa barcha amallar chapdan o'ngga teng ustuvorlikda ishlaydi.",
+    "show": "Standartda JOIN verguldan oldin bajariladi, SQLite da esa barcha amallar chapdan o'ngga teng ustuvorlikda ishlaydi.",
+    "say": "Standartda joyn verguldan oldin bajariladi, Es-kyu-layt da esa barcha amallar chapdan o'ngga teng ustuvorlikda ishlaydi.",
+    "a0": 34.68,
+    "a1": 41.65,
+    "words": [
+      {
+        "w": "Standartda",
+        "s": 34.68,
+        "e": 35.22
+      },
+      {
+        "w": "joyn",
+        "s": 35.36,
+        "e": 35.68
+      },
+      {
+        "w": "verguldan",
+        "s": 35.81,
+        "e": 36.31
+      },
+      {
+        "w": "oldin",
+        "s": 36.43,
+        "e": 36.67
+      },
+      {
+        "w": "bajariladi,",
+        "s": 36.71,
+        "e": 37.19
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 37.75,
+        "e": 38.21
+      },
+      {
+        "w": "da",
+        "s": 38.23,
+        "e": 38.29
+      },
+      {
+        "w": "esa",
+        "s": 38.33,
+        "e": 38.49
+      },
+      {
+        "w": "barcha",
+        "s": 38.91,
+        "e": 39.15
+      },
+      {
+        "w": "amallar",
+        "s": 39.19,
+        "e": 39.55
+      },
+      {
+        "w": "chapdan",
+        "s": 39.61,
+        "e": 40.01
+      },
+      {
+        "w": "o'ngga",
+        "s": 40.15,
+        "e": 40.41
+      },
+      {
+        "w": "teng",
+        "s": 40.51,
+        "e": 40.75
+      },
+      {
+        "w": "ustuvorlikda",
+        "s": 40.79,
+        "e": 41.31
+      },
+      {
+        "w": "ishlaydi.",
+        "s": 41.35,
+        "e": 41.65
+      }
+    ]
+  },
+  {
+    "id": "g8",
+    "scene": "vergul_va_lateral",
+    "text": "Shuningdek, LATERAL MySQL da mavjud bo'lsa-da, SQLite da bu imkoniyat yo'q.",
+    "show": "Shuningdek, LATERAL MySQL da mavjud bo'lsa-da, SQLite da bu imkoniyat yo'q.",
+    "say": "Shuningdek, lateral May es-kyu-el da mavjud bo'lsa-da, Es-kyu-layt da bu imkoniyat yo'q.",
+    "a0": 42.47,
+    "a1": 46.77,
+    "words": [
+      {
+        "w": "Shuningdek,",
+        "s": 42.47,
+        "e": 42.85
+      },
+      {
+        "w": "lateral",
+        "s": 43.21,
+        "e": 43.63
+      },
+      {
+        "w": "May",
+        "s": 43.83,
+        "e": 43.99
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 44.03,
+        "e": 44.31
+      },
+      {
+        "w": "da",
+        "s": 44.33,
+        "e": 44.39
+      },
+      {
+        "w": "mavjud",
+        "s": 44.43,
+        "e": 44.71
+      },
+      {
+        "w": "bo'lsa-da,",
+        "s": 44.73,
+        "e": 45.07
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 45.41,
+        "e": 45.87
+      },
+      {
+        "w": "da",
+        "s": 45.91,
+        "e": 45.97
+      },
+      {
+        "w": "bu",
+        "s": 46.05,
+        "e": 46.11
+      },
+      {
+        "w": "imkoniyat",
+        "s": 46.19,
+        "e": 46.57
+      },
+      {
+        "w": "yo'q.",
+        "s": 46.61,
+        "e": 46.77
+      }
+    ]
+  },
+  {
+    "id": "g9",
+    "scene": "xulosa",
+    "text": "Har bir tizimning nozik jihatlarini hisobga olish so'rovlarning to'g'ri va xavfsiz ishlashini ta'minlaydi.",
+    "show": "Har bir tizimning nozik jihatlarini hisobga olish so'rovlarning to'g'ri va xavfsiz ishlashini ta'minlaydi.",
+    "say": "Har bir tizimning nozik jihatlarini hisobga olish so'rovlarning to'g'ri va xavfsiz ishlashini ta'minlaydi.",
+    "a0": 47.6,
+    "a1": 52.68,
+    "words": [
+      {
+        "w": "Har",
+        "s": 47.6,
+        "e": 47.74
+      },
+      {
+        "w": "bir",
+        "s": 47.78,
+        "e": 47.86
+      },
+      {
+        "w": "tizimning",
+        "s": 47.9,
+        "e": 48.26
+      },
+      {
+        "w": "nozik",
+        "s": 48.3,
+        "e": 48.56
+      },
+      {
+        "w": "jihatlarini",
+        "s": 48.6,
+        "e": 49.1
+      },
+      {
+        "w": "hisobga",
+        "s": 49.14,
+        "e": 49.46
+      },
+      {
+        "w": "olish",
+        "s": 49.52,
+        "e": 49.74
+      },
+      {
+        "w": "so'rovlarning",
+        "s": 50.04,
+        "e": 50.64
+      },
+      {
+        "w": "to'g'ri",
+        "s": 50.7,
+        "e": 51.06
+      },
+      {
+        "w": "va",
+        "s": 51.14,
+        "e": 51.2
+      },
+      {
+        "w": "xavfsiz",
+        "s": 51.32,
+        "e": 51.68
+      },
+      {
+        "w": "ishlashini",
+        "s": 51.74,
+        "e": 52.12
+      },
+      {
+        "w": "ta'minlaydi.",
+        "s": 52.16,
+        "e": 52.68
+      }
+    ]
+  }
+]

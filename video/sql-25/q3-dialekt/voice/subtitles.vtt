@@ -1,0 +1,45 @@
+WEBVTT
+
+1
+00:01.420 --> 00:07.430
+MySQL va SQLite tizimlarida JOIN sintaksisining
+o'ziga xos va xavfli jihatlari mavjud.
+
+2
+00:10.320 --> 00:17.560
+MySQL da JOIN, CROSS JOIN va INNER JOIN bir xil, shuning
+uchun ON siz ham qabul qilinib Dekart ko'paytma beradi.
+
+3
+00:17.910 --> 00:23.680
+Eng muhimi, MySQL da FULL JOIN umuman yo'q,
+FULL so'zi jadval tahlusiga aylanib qoladi.
+
+4
+00:23.750 --> 00:27.670
+Yechim — LEFT va RIGHT natijalarini
+UNION bilan birlashtirishdir.
+
+5
+00:30.920 --> 00:34.810
+SQLite esa RIGHT va FULL JOIN ni to'liq qo'llab-quvvatlaydi.
+
+6
+00:34.820 --> 00:40.870
+Biroq bu yerda CROSS JOIN optimizatorga jadvallar
+ketma-ketligini o'zgartirishni taqiqlash uchun xizmat qiladi.
+
+7
+00:44.000 --> 00:51.420
+Standartda JOIN verguldan oldin bajariladi, SQLite da esa
+barcha amallar chapdan o'ngga teng ustuvorlikda ishlaydi.
+
+8
+00:51.790 --> 00:56.540
+Shuningdek, LATERAL MySQL da mavjud
+bo'lsa-da, SQLite da bu imkoniyat yo'q.
+
+9
+00:59.720 --> 01:05.250
+Har bir tizimning nozik jihatlarini hisobga olish
+so'rovlarning to'g'ri va xavfsiz ishlashini ta'minlaydi.

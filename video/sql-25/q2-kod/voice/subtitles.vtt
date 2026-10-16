@@ -1,0 +1,41 @@
+WEBVTT
+
+1
+00:01.420 --> 00:08.930
+PostgreSQL 18 da t1 va t2 jadvallarini yaratib, turli
+birlashtirish amallarini real natijalar bilan ko'ramiz.
+
+2
+00:11.910 --> 00:16.060
+INNER JOIN faqat bir xil raqamli
+1 va 3 qatorlarni qaytaradi.
+
+3
+00:16.570 --> 00:23.700
+USING yordamida takrorlanuvchi ustun qisqartiriladi,
+NATURAL esa umumiy nomli ustunlarni avtomatik topadi.
+
+4
+00:26.870 --> 00:34.230
+LEFT JOIN t1 dagi juftsiz 2 qatorini, RIGHT JOIN
+esa t2 dagi 5 qatorini NULL bilan saqlaydi.
+
+5
+00:34.920 --> 00:38.470
+FULL JOIN ikkala tomonning barcha
+qatorlarini to'liq birlashtiradi.
+
+6
+00:41.840 --> 00:49.140
+Tashqi birlashtirishda shartni ON ga yozsak juftsiz qatorlar
+saqlanadi, WHERE ga yozsak elakdan o'tmay yo'qoladi.
+
+7
+00:49.650 --> 00:54.000
+Juftsiz qatorlarni topish uchun esa
+o'ng kalitga IS NULL sharti beriladi.
+
+8
+00:57.350 --> 01:03.430
+LATERAL yordamida esa har bir guruhdan eng yuqori 2
+ta ball to'plagan talabalarni alohida ajratib oldik.

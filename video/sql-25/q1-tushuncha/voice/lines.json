@@ -1,0 +1,691 @@
+[
+  {
+    "id": "g1",
+    "scene": "kirish",
+    "text": "Relyatsion modelda ma'lumotlar turli jadvallarga bo'lib saqlanadi, JOIN amali esa ularni bitta yaxlit natijaga birlashtiradi.",
+    "show": "Relyatsion modelda ma'lumotlar turli jadvallarga bo'lib saqlanadi, JOIN amali esa ularni bitta yaxlit natijaga birlashtiradi.",
+    "say": "Relyatsion modelda ma'lumotlar turli jadvallarga bo'lib saqlanadi, joyn amali esa ularni bitta yaxlit natijaga birlashtiradi.",
+    "a0": 0.18,
+    "a1": 7.18,
+    "words": [
+      {
+        "w": "Relyatsion",
+        "s": 0.18,
+        "e": 0.66
+      },
+      {
+        "w": "modelda",
+        "s": 0.72,
+        "e": 1.12
+      },
+      {
+        "w": "ma'lumotlar",
+        "s": 1.3,
+        "e": 1.82
+      },
+      {
+        "w": "turli",
+        "s": 1.88,
+        "e": 2.14
+      },
+      {
+        "w": "jadvallarga",
+        "s": 2.2,
+        "e": 2.76
+      },
+      {
+        "w": "bo'lib",
+        "s": 2.82,
+        "e": 3.04
+      },
+      {
+        "w": "saqlanadi,",
+        "s": 3.06,
+        "e": 3.54
+      },
+      {
+        "w": "joyn",
+        "s": 4.04,
+        "e": 4.3
+      },
+      {
+        "w": "amali",
+        "s": 4.36,
+        "e": 4.62
+      },
+      {
+        "w": "esa",
+        "s": 4.68,
+        "e": 4.84
+      },
+      {
+        "w": "ularni",
+        "s": 4.94,
+        "e": 5.24
+      },
+      {
+        "w": "bitta",
+        "s": 5.4,
+        "e": 5.7
+      },
+      {
+        "w": "yaxlit",
+        "s": 5.76,
+        "e": 6.1
+      },
+      {
+        "w": "natijaga",
+        "s": 6.14,
+        "e": 6.6
+      },
+      {
+        "w": "birlashtiradi.",
+        "s": 6.64,
+        "e": 7.18
+      }
+    ]
+  },
+  {
+    "id": "g2",
+    "scene": "dekart",
+    "text": "Barcha birlashtirishlarning negizida Dekart ko'paytmasi yotadi.",
+    "show": "Barcha birlashtirishlarning negizida Dekart ko'paytmasi yotadi.",
+    "say": "Barcha birlashtirishlarning negizida Dekart ko'paytmasi yotadi.",
+    "a0": 7.77,
+    "a1": 10.75,
+    "words": [
+      {
+        "w": "Barcha",
+        "s": 7.77,
+        "e": 8.03
+      },
+      {
+        "w": "birlashtirishlarning",
+        "s": 8.07,
+        "e": 8.83
+      },
+      {
+        "w": "negizida",
+        "s": 8.85,
+        "e": 9.29
+      },
+      {
+        "w": "Dekart",
+        "s": 9.53,
+        "e": 9.87
+      },
+      {
+        "w": "ko'paytmasi",
+        "s": 9.91,
+        "e": 10.41
+      },
+      {
+        "w": "yotadi.",
+        "s": 10.41,
+        "e": 10.75
+      }
+    ]
+  },
+  {
+    "id": "g3",
+    "scene": "dekart",
+    "text": "CROSS JOIN birinchi jadvalning har bir qatorini ikkinchi jadvalning har bir qatori bilan juftlab, N ko'paytirilgan M ta qator hosil qiladi.",
+    "show": "CROSS JOIN birinchi jadvalning har bir qatorini ikkinchi jadvalning har bir qatori bilan juftlab, N ko'paytirilgan M ta qator hosil qiladi.",
+    "say": "Kross joyn birinchi jadvalning har bir qatorini ikkinchi jadvalning har bir qatori bilan juftlab, N ko'paytirilgan M ta qator hosil qiladi.",
+    "a0": 11.19,
+    "a1": 18.43,
+    "words": [
+      {
+        "w": "Kross",
+        "s": 11.19,
+        "e": 11.41
+      },
+      {
+        "w": "joyn",
+        "s": 11.47,
+        "e": 11.73
+      },
+      {
+        "w": "birinchi",
+        "s": 11.85,
+        "e": 12.13
+      },
+      {
+        "w": "jadvalning",
+        "s": 12.17,
+        "e": 12.65
+      },
+      {
+        "w": "har",
+        "s": 12.71,
+        "e": 12.87
+      },
+      {
+        "w": "bir",
+        "s": 12.91,
+        "e": 13.01
+      },
+      {
+        "w": "qatorini",
+        "s": 13.07,
+        "e": 13.53
+      },
+      {
+        "w": "ikkinchi",
+        "s": 13.83,
+        "e": 14.15
+      },
+      {
+        "w": "jadvalning",
+        "s": 14.19,
+        "e": 14.67
+      },
+      {
+        "w": "har",
+        "s": 14.71,
+        "e": 14.87
+      },
+      {
+        "w": "bir",
+        "s": 14.93,
+        "e": 15.03
+      },
+      {
+        "w": "qatori",
+        "s": 15.09,
+        "e": 15.45
+      },
+      {
+        "w": "bilan",
+        "s": 15.47,
+        "e": 15.65
+      },
+      {
+        "w": "juftlab,",
+        "s": 15.71,
+        "e": 16.07
+      },
+      {
+        "w": "N",
+        "s": 16.47,
+        "e": 16.51
+      },
+      {
+        "w": "ko'paytirilgan",
+        "s": 16.55,
+        "e": 17.17
+      },
+      {
+        "w": "M",
+        "s": 17.41,
+        "e": 17.43
+      },
+      {
+        "w": "ta",
+        "s": 17.49,
+        "e": 17.55
+      },
+      {
+        "w": "qator",
+        "s": 17.59,
+        "e": 17.83
+      },
+      {
+        "w": "hosil",
+        "s": 17.87,
+        "e": 18.13
+      },
+      {
+        "w": "qiladi.",
+        "s": 18.17,
+        "e": 18.43
+      }
+    ]
+  },
+  {
+    "id": "g4",
+    "scene": "ichki_va_tashqi",
+    "text": "INNER JOIN ana shu ko'paytmadan faqat ON shartiga to'g'ri kelgan qatorlarni tanlab oladi.",
+    "show": "INNER JOIN ana shu ko'paytmadan faqat ON shartiga to'g'ri kelgan qatorlarni tanlab oladi.",
+    "say": "Inner joyn ana shu ko'paytmadan faqat on shartiga to'g'ri kelgan qatorlarni tanlab oladi.",
+    "a0": 19.05,
+    "a1": 23.66,
+    "words": [
+      {
+        "w": "Inner",
+        "s": 19.05,
+        "e": 19.31
+      },
+      {
+        "w": "joyn",
+        "s": 19.35,
+        "e": 19.61
+      },
+      {
+        "w": "ana",
+        "s": 19.73,
+        "e": 19.87
+      },
+      {
+        "w": "shu",
+        "s": 19.91,
+        "e": 19.99
+      },
+      {
+        "w": "ko'paytmadan",
+        "s": 20.03,
+        "e": 20.55
+      },
+      {
+        "w": "faqat",
+        "s": 20.61,
+        "e": 20.87
+      },
+      {
+        "w": "on",
+        "s": 21.21,
+        "e": 21.33
+      },
+      {
+        "w": "shartiga",
+        "s": 21.39,
+        "e": 21.77
+      },
+      {
+        "w": "to'g'ri",
+        "s": 21.83,
+        "e": 22.05
+      },
+      {
+        "w": "kelgan",
+        "s": 22.09,
+        "e": 22.37
+      },
+      {
+        "w": "qatorlarni",
+        "s": 22.41,
+        "e": 22.98
+      },
+      {
+        "w": "tanlab",
+        "s": 23.06,
+        "e": 23.38
+      },
+      {
+        "w": "oladi.",
+        "s": 23.42,
+        "e": 23.66
+      }
+    ]
+  },
+  {
+    "id": "g5",
+    "scene": "ichki_va_tashqi",
+    "text": "Tashqi birlashtirishlar, ya'ni LEFT, RIGHT va FULL JOIN esa juftsiz qolgan qatorlarni yo'qotmasdan, yetishmagan ustunlarni NULL bilan to'ldiradi.",
+    "show": "Tashqi birlashtirishlar, ya'ni LEFT, RIGHT va FULL JOIN esa juftsiz qolgan qatorlarni yo'qotmasdan, yetishmagan ustunlarni NULL bilan to'ldiradi.",
+    "say": "Tashqi birlashtirishlar, ya'ni left, rayt va full joyn esa juftsiz qolgan qatorlarni yo'qotmasdan, yetishmagan ustunlarni null bilan to'ldiradi.",
+    "a0": 24.24,
+    "a1": 32.42,
+    "words": [
+      {
+        "w": "Tashqi",
+        "s": 24.24,
+        "e": 24.52
+      },
+      {
+        "w": "birlashtirishlar,",
+        "s": 24.56,
+        "e": 25.18
+      },
+      {
+        "w": "ya'ni",
+        "s": 25.4,
+        "e": 25.6
+      },
+      {
+        "w": "left,",
+        "s": 25.94,
+        "e": 26.24
+      },
+      {
+        "w": "rayt",
+        "s": 26.44,
+        "e": 26.68
+      },
+      {
+        "w": "va",
+        "s": 26.76,
+        "e": 26.82
+      },
+      {
+        "w": "full",
+        "s": 26.98,
+        "e": 27.16
+      },
+      {
+        "w": "joyn",
+        "s": 27.2,
+        "e": 27.46
+      },
+      {
+        "w": "esa",
+        "s": 27.5,
+        "e": 27.64
+      },
+      {
+        "w": "juftsiz",
+        "s": 27.96,
+        "e": 28.28
+      },
+      {
+        "w": "qolgan",
+        "s": 28.34,
+        "e": 28.62
+      },
+      {
+        "w": "qatorlarni",
+        "s": 28.66,
+        "e": 29.2
+      },
+      {
+        "w": "yo'qotmasdan,",
+        "s": 29.26,
+        "e": 29.92
+      },
+      {
+        "w": "yetishmagan",
+        "s": 30.16,
+        "e": 30.66
+      },
+      {
+        "w": "ustunlarni",
+        "s": 30.72,
+        "e": 31.28
+      },
+      {
+        "w": "null",
+        "s": 31.56,
+        "e": 31.74
+      },
+      {
+        "w": "bilan",
+        "s": 31.78,
+        "e": 31.98
+      },
+      {
+        "w": "to'ldiradi.",
+        "s": 32.02,
+        "e": 32.42
+      }
+    ]
+  },
+  {
+    "id": "g6",
+    "scene": "on_va_where",
+    "text": "Tashqi birlashtirishda ON va WHERE orasidagi farq prinsipial ahamiyatga ega.",
+    "show": "Tashqi birlashtirishda ON va WHERE orasidagi farq prinsipial ahamiyatga ega.",
+    "say": "Tashqi birlashtirishda on va veer orasidagi farq prinsipial ahamiyatga ega.",
+    "a0": 33.1,
+    "a1": 37.23,
+    "words": [
+      {
+        "w": "Tashqi",
+        "s": 33.1,
+        "e": 33.36
+      },
+      {
+        "w": "birlashtirishda",
+        "s": 33.42,
+        "e": 33.94
+      },
+      {
+        "w": "on",
+        "s": 34.34,
+        "e": 34.46
+      },
+      {
+        "w": "va",
+        "s": 34.56,
+        "e": 34.64
+      },
+      {
+        "w": "veer",
+        "s": 34.76,
+        "e": 35.02
+      },
+      {
+        "w": "orasidagi",
+        "s": 35.08,
+        "e": 35.48
+      },
+      {
+        "w": "farq",
+        "s": 35.52,
+        "e": 35.76
+      },
+      {
+        "w": "prinsipial",
+        "s": 35.93,
+        "e": 36.45
+      },
+      {
+        "w": "ahamiyatga",
+        "s": 36.53,
+        "e": 37.03
+      },
+      {
+        "w": "ega.",
+        "s": 37.07,
+        "e": 37.23
+      }
+    ]
+  },
+  {
+    "id": "g7",
+    "scene": "on_va_where",
+    "text": "ON sharti birlashtirish paytida juftlikni aniqlaydi, WHERE filtri esa butun natijaga birlashtirishdan keyin qo'llanadi.",
+    "show": "ON sharti birlashtirish paytida juftlikni aniqlaydi, WHERE filtri esa butun natijaga birlashtirishdan keyin qo'llanadi.",
+    "say": "On sharti birlashtirish paytida juftlikni aniqlaydi, veer filtri esa butun natijaga birlashtirishdan keyin qo'llanadi.",
+    "a0": 37.95,
+    "a1": 44.11,
+    "words": [
+      {
+        "w": "On",
+        "s": 37.95,
+        "e": 37.99
+      },
+      {
+        "w": "sharti",
+        "s": 38.07,
+        "e": 38.39
+      },
+      {
+        "w": "birlashtirish",
+        "s": 38.49,
+        "e": 38.99
+      },
+      {
+        "w": "paytida",
+        "s": 39.03,
+        "e": 39.33
+      },
+      {
+        "w": "juftlikni",
+        "s": 39.41,
+        "e": 39.81
+      },
+      {
+        "w": "aniqlaydi,",
+        "s": 39.85,
+        "e": 40.25
+      },
+      {
+        "w": "veer",
+        "s": 40.81,
+        "e": 41.07
+      },
+      {
+        "w": "filtri",
+        "s": 41.09,
+        "e": 41.39
+      },
+      {
+        "w": "esa",
+        "s": 41.43,
+        "e": 41.61
+      },
+      {
+        "w": "butun",
+        "s": 41.75,
+        "e": 41.99
+      },
+      {
+        "w": "natijaga",
+        "s": 42.05,
+        "e": 42.53
+      },
+      {
+        "w": "birlashtirishdan",
+        "s": 42.65,
+        "e": 43.29
+      },
+      {
+        "w": "keyin",
+        "s": 43.35,
+        "e": 43.63
+      },
+      {
+        "w": "qo'llanadi.",
+        "s": 43.67,
+        "e": 44.11
+      }
+    ]
+  },
+  {
+    "id": "g8",
+    "scene": "lateral_va_xulosa",
+    "text": "LATERAL kalit so'zi esa ichki so'rovga o'zidan oldingi jadval ustunlarini ko'rish imkonini beradi.",
+    "show": "LATERAL kalit so'zi esa ichki so'rovga o'zidan oldingi jadval ustunlarini ko'rish imkonini beradi.",
+    "say": "Lateral kalit so'zi esa ichki so'rovga o'zidan oldingi jadval ustunlarini ko'rish imkonini beradi.",
+    "a0": 44.81,
+    "a1": 49.68,
+    "words": [
+      {
+        "w": "Lateral",
+        "s": 44.81,
+        "e": 45.17
+      },
+      {
+        "w": "kalit",
+        "s": 45.21,
+        "e": 45.47
+      },
+      {
+        "w": "so'zi",
+        "s": 45.49,
+        "e": 45.69
+      },
+      {
+        "w": "esa",
+        "s": 45.73,
+        "e": 45.91
+      },
+      {
+        "w": "ichki",
+        "s": 46.07,
+        "e": 46.29
+      },
+      {
+        "w": "so'rovga",
+        "s": 46.33,
+        "e": 46.69
+      },
+      {
+        "w": "o'zidan",
+        "s": 46.81,
+        "e": 47.15
+      },
+      {
+        "w": "oldingi",
+        "s": 47.29,
+        "e": 47.64
+      },
+      {
+        "w": "jadval",
+        "s": 47.7,
+        "e": 48.04
+      },
+      {
+        "w": "ustunlarini",
+        "s": 48.12,
+        "e": 48.62
+      },
+      {
+        "w": "ko'rish",
+        "s": 48.68,
+        "e": 48.98
+      },
+      {
+        "w": "imkonini",
+        "s": 49.02,
+        "e": 49.4
+      },
+      {
+        "w": "beradi.",
+        "s": 49.42,
+        "e": 49.68
+      }
+    ]
+  },
+  {
+    "id": "g9",
+    "scene": "lateral_va_xulosa",
+    "text": "Endi bu amallarni PostgreSQL 18 da sinab ko'ramiz.",
+    "show": "Endi bu amallarni PostgreSQL 18 da sinab ko'ramiz.",
+    "say": "Endi bu amallarni Postgres 18 da sinab ko'ramiz.",
+    "a0": 50.3,
+    "a1": 52.96,
+    "words": [
+      {
+        "w": "Endi",
+        "s": 50.3,
+        "e": 50.48
+      },
+      {
+        "w": "bu",
+        "s": 50.64,
+        "e": 50.7
+      },
+      {
+        "w": "amallarni",
+        "s": 50.78,
+        "e": 51.28
+      },
+      {
+        "w": "Postgres",
+        "s": 51.34,
+        "e": 52.0
+      },
+      {
+        "w": "18",
+        "s": 52.0,
+        "e": 52.0
+      },
+      {
+        "w": "da",
+        "s": 52.28,
+        "e": 52.34
+      },
+      {
+        "w": "sinab",
+        "s": 52.4,
+        "e": 52.6
+      },
+      {
+        "w": "ko'ramiz.",
+        "s": 52.64,
+        "e": 52.96
+      }
+    ]
+  }
+]

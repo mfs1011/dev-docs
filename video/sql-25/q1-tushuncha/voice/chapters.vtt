@@ -1,0 +1,16 @@
+WEBVTT
+
+00:00.000 --> 00:09.506
+Relyatsion model va JOIN
+
+00:09.506 --> 00:23.574
+Dekart ko'paytmasi va CROSS JOIN
+
+00:23.574 --> 00:40.791
+INNER va Tashqi JOIN turlari
+
+00:40.791 --> 00:55.151
+ON va WHERE farqi
+
+00:55.151 --> 01:08.880
+LATERAL subquery va xulosa
