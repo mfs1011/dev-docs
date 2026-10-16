@@ -1,0 +1,26 @@
+WEBVTT
+
+1
+00:01.420 --> 00:13.780
+Generated ustun — qiymati doim shu qatordagi boshqa ustunlar asosida avtomatik hisoblab chiqariladigan
+maxsus ustundir. Masalan, mahsulot narxi va sonidan umumiy summani baza o‘zi hisoblaydi.
+
+2
+00:16.770 --> 00:30.890
+Uning ikki turi mavjud: Stored ustun diskda joy egallaydi va qator yozilganda hisoblanadi. Virtual ustun esa
+joy egallamaydi va qator o‘qilganda hisoblanadi. PostgreSQL 18 dan boshlab sukut bo‘yicha Virtual qo‘llanadi.
+
+3
+00:34.400 --> 00:45.980
+DEFAULT faqat qator yaratilganda bir marta ishlaydi va unga qo‘lda qiymat yozish mumkin. Generated
+ustunga esa qo‘lda qiymat yozib bo‘lmaydi va u asosiy ustunlar o‘zgarganda doimiy yangilanib turadi.
+
+4
+00:49.310 --> 01:01.100
+Muhim cheklov shuki, ifoda faqat o‘zgarmas funksiyalardan iborat bo‘lishi shart, ya'ni now() kabi
+o‘zgaruvchan funksiyalar taqiqlanadi. Shuningdek boshqa generated ustunga murojaat qilish ham mumkin emas.
+
+5
+01:04.360 --> 01:12.140
+Hisoblanadigan ustunlardan to‘g‘ri foydalanish ma'lumotlar yaxlitligini
+ta'minlaydi va ilova kodidagi ortiqcha mantiqni qisqartiradi.

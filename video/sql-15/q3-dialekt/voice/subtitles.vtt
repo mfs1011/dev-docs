@@ -1,0 +1,31 @@
+WEBVTT
+
+1
+00:01.420 --> 00:11.740
+Dialektlar qismida MySQL va SQLite ning hisoblanadigan ustunlar bilan ishlashdagi
+o‘ziga xos imkoniyatlari, solishtirish doskasi hamda asosiy tuzoqlarni ko‘rib chiqamiz.
+
+2
+00:14.790 --> 00:25.020
+MySQL da virtual ustunlarga InnoDB ikkilamchi indeks qo‘yish mumkin va PostgreSQL dan farqli
+ravishda generated ustun o‘zidan oldin e'lon qilingan boshqa generated ustunga tayana oladi.
+
+3
+00:28.490 --> 00:40.650
+SQLite da sintaksis juda sodda: GENERATED ALWAYS ixtiyoriy bo‘lib, faqat AS ifodasi yetarli.
+Biroq eng katta cheklov — ALTER TABLE orqali ma'lumotli jadvalga STORED ustun qo‘shib bo‘lmaydi.
+
+4
+00:44.100 --> 00:54.880
+Uch tizimni qiyoslasak: barchasi sukut bo‘yicha virtual ustun yaratadi, lekin zanjir
+murojaatlari, indekslash mexanizmlari va jadvalni o‘zgartirish qoidalarida muhim farqlar mavjud.
+
+5
+00:58.330 --> 01:08.450
+Eng keng tarqalgan xato — now() bilan vaqtni hisoblamoqchi bo‘lish, ko‘p o‘qiladigan og‘ir
+virtual ustunni indekssiz qoldirish hamda SQLite da STORED ustun qo‘shishda xatoga yo‘liqishdir.
+
+6
+01:11.860 --> 01:18.970
+Har bir tizimning o‘ziga xos nozikliklarini bilish orqali hisob-kitoblari
+tez va arxitekturasi mustahkam ma'lumotlar bazalarini qurasiz.

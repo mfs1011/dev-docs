@@ -1,0 +1,667 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Generated ustun — qiymati doim shu qatordagi boshqa ustunlar asosida avtomatik hisoblab chiqariladigan maxsus ustundir. Masalan, mahsulot narxi va sonidan umumiy summani baza o‘zi hisoblaydi.",
+    "show": "Generated ustun — qiymati doim shu qatordagi boshqa ustunlar asosida avtomatik hisoblab chiqariladigan maxsus ustundir. Masalan, mahsulot narxi va sonidan umumiy summani baza o‘zi hisoblaydi.",
+    "say": "Jenerated ustun — qiymati doim shu qatordagi boshqa ustunlar asosida avtomatik hisoblab chiqariladigan maxsus ustundir. Masalan, mahsulot narxi va sonidan umumiy summani baza o‘zi hisoblaydi.",
+    "a0": 0.2,
+    "a1": 12.11,
+    "words": [
+      {
+        "w": "Jenerated",
+        "s": 0.2,
+        "e": 0.76
+      },
+      {
+        "w": "ustun",
+        "s": 0.82,
+        "e": 1.1
+      },
+      {
+        "w": "—",
+        "s": 1.1,
+        "e": 1.1
+      },
+      {
+        "w": "qiymati",
+        "s": 1.48,
+        "e": 1.84
+      },
+      {
+        "w": "doim",
+        "s": 1.98,
+        "e": 2.34
+      },
+      {
+        "w": "shu",
+        "s": 2.4,
+        "e": 2.5
+      },
+      {
+        "w": "qatordagi",
+        "s": 2.58,
+        "e": 3.06
+      },
+      {
+        "w": "boshqa",
+        "s": 3.16,
+        "e": 3.48
+      },
+      {
+        "w": "ustunlar",
+        "s": 3.54,
+        "e": 3.96
+      },
+      {
+        "w": "asosida",
+        "s": 4.0,
+        "e": 4.38
+      },
+      {
+        "w": "avtomatik",
+        "s": 4.48,
+        "e": 5.04
+      },
+      {
+        "w": "hisoblab",
+        "s": 5.1,
+        "e": 5.46
+      },
+      {
+        "w": "chiqariladigan",
+        "s": 5.48,
+        "e": 6.08
+      },
+      {
+        "w": "maxsus",
+        "s": 6.38,
+        "e": 6.76
+      },
+      {
+        "w": "ustundir.",
+        "s": 6.84,
+        "e": 7.26
+      },
+      {
+        "w": "Masalan,",
+        "s": 8.01,
+        "e": 8.37
+      },
+      {
+        "w": "mahsulot",
+        "s": 8.67,
+        "e": 9.09
+      },
+      {
+        "w": "narxi",
+        "s": 9.15,
+        "e": 9.39
+      },
+      {
+        "w": "va",
+        "s": 9.41,
+        "e": 9.47
+      },
+      {
+        "w": "sonidan",
+        "s": 9.53,
+        "e": 9.91
+      },
+      {
+        "w": "umumiy",
+        "s": 10.05,
+        "e": 10.37
+      },
+      {
+        "w": "summani",
+        "s": 10.47,
+        "e": 10.85
+      },
+      {
+        "w": "baza",
+        "s": 10.91,
+        "e": 11.17
+      },
+      {
+        "w": "o‘zi",
+        "s": 11.49,
+        "e": 11.65
+      },
+      {
+        "w": "hisoblaydi.",
+        "s": 11.69,
+        "e": 12.11
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "turlar",
+    "text": "Uning ikki turi mavjud: Stored ustun diskda joy egallaydi va qator yozilganda hisoblanadi. Virtual ustun esa joy egallamaydi va qator o‘qilganda hisoblanadi. PostgreSQL 18 dan boshlab sukut bo‘yicha Virtual qo‘llanadi.",
+    "show": "Uning ikki turi mavjud: Stored ustun diskda joy egallaydi va qator yozilganda hisoblanadi. Virtual ustun esa joy egallamaydi va qator o‘qilganda hisoblanadi. PostgreSQL 18 dan boshlab sukut bo‘yicha Virtual qo‘llanadi.",
+    "say": "Uning ikki turi mavjud: stord ustun diskda joy egallaydi va qator yozilganda hisoblanadi. Virtual ustun esa joy egallamaydi va qator o‘qilganda hisoblanadi. Postgres o‘n sakkiz dan boshlab sukut bo‘yicha virtual qo‘llanadi.",
+    "a0": 13.15,
+    "a1": 26.82,
+    "words": [
+      {
+        "w": "Uning",
+        "s": 13.15,
+        "e": 13.35
+      },
+      {
+        "w": "ikki",
+        "s": 13.47,
+        "e": 13.65
+      },
+      {
+        "w": "turi",
+        "s": 13.69,
+        "e": 13.85
+      },
+      {
+        "w": "mavjud:",
+        "s": 13.89,
+        "e": 14.21
+      },
+      {
+        "w": "stord",
+        "s": 14.69,
+        "e": 14.99
+      },
+      {
+        "w": "ustun",
+        "s": 15.07,
+        "e": 15.33
+      },
+      {
+        "w": "diskda",
+        "s": 15.63,
+        "e": 15.97
+      },
+      {
+        "w": "joy",
+        "s": 16.03,
+        "e": 16.21
+      },
+      {
+        "w": "egallaydi",
+        "s": 16.29,
+        "e": 16.71
+      },
+      {
+        "w": "va",
+        "s": 16.75,
+        "e": 16.81
+      },
+      {
+        "w": "qator",
+        "s": 16.89,
+        "e": 17.19
+      },
+      {
+        "w": "yozilganda",
+        "s": 17.25,
+        "e": 17.71
+      },
+      {
+        "w": "hisoblanadi.",
+        "s": 17.75,
+        "e": 18.23
+      },
+      {
+        "w": "Virtual",
+        "s": 18.93,
+        "e": 19.33
+      },
+      {
+        "w": "ustun",
+        "s": 19.37,
+        "e": 19.61
+      },
+      {
+        "w": "esa",
+        "s": 19.65,
+        "e": 19.79
+      },
+      {
+        "w": "joy",
+        "s": 20.15,
+        "e": 20.35
+      },
+      {
+        "w": "egallamaydi",
+        "s": 20.45,
+        "e": 21.01
+      },
+      {
+        "w": "va",
+        "s": 21.05,
+        "e": 21.11
+      },
+      {
+        "w": "qator",
+        "s": 21.19,
+        "e": 21.45
+      },
+      {
+        "w": "o‘qilganda",
+        "s": 21.59,
+        "e": 22.11
+      },
+      {
+        "w": "hisoblanadi.",
+        "s": 22.15,
+        "e": 22.66
+      },
+      {
+        "w": "Postgres",
+        "s": 23.36,
+        "e": 23.74
+      },
+      {
+        "w": "o‘n",
+        "s": 23.82,
+        "e": 23.9
+      },
+      {
+        "w": "sakkiz",
+        "s": 23.92,
+        "e": 24.18
+      },
+      {
+        "w": "dan",
+        "s": 24.2,
+        "e": 24.3
+      },
+      {
+        "w": "boshlab",
+        "s": 24.34,
+        "e": 24.64
+      },
+      {
+        "w": "sukut",
+        "s": 24.98,
+        "e": 25.26
+      },
+      {
+        "w": "bo‘yicha",
+        "s": 25.3,
+        "e": 25.6
+      },
+      {
+        "w": "virtual",
+        "s": 25.94,
+        "e": 26.34
+      },
+      {
+        "w": "qo‘llanadi.",
+        "s": 26.38,
+        "e": 26.82
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "default_solishtirish",
+    "text": "DEFAULT faqat qator yaratilganda bir marta ishlaydi va unga qo‘lda qiymat yozish mumkin. Generated ustunga esa qo‘lda qiymat yozib bo‘lmaydi va u asosiy ustunlar o‘zgarganda doimiy yangilanib turadi.",
+    "show": "DEFAULT faqat qator yaratilganda bir marta ishlaydi va unga qo‘lda qiymat yozish mumkin. Generated ustunga esa qo‘lda qiymat yozib bo‘lmaydi va u asosiy ustunlar o‘zgarganda doimiy yangilanib turadi.",
+    "say": "Difolt faqat qator yaratilganda bir marta ishlaydi va unga qo‘lda qiymat yozish mumkin. Jenerated ustunga esa qo‘lda qiymat yozib bo‘lmaydi va u asosiy ustunlar o‘zgarganda doimiy yangilanib turadi.",
+    "a0": 28.18,
+    "a1": 39.31,
+    "words": [
+      {
+        "w": "Difolt",
+        "s": 28.18,
+        "e": 28.52
+      },
+      {
+        "w": "faqat",
+        "s": 28.78,
+        "e": 29.06
+      },
+      {
+        "w": "qator",
+        "s": 29.16,
+        "e": 29.44
+      },
+      {
+        "w": "yaratilganda",
+        "s": 29.48,
+        "e": 30.1
+      },
+      {
+        "w": "bir",
+        "s": 30.14,
+        "e": 30.22
+      },
+      {
+        "w": "marta",
+        "s": 30.26,
+        "e": 30.48
+      },
+      {
+        "w": "ishlaydi",
+        "s": 30.52,
+        "e": 30.8
+      },
+      {
+        "w": "va",
+        "s": 31.06,
+        "e": 31.14
+      },
+      {
+        "w": "unga",
+        "s": 31.26,
+        "e": 31.46
+      },
+      {
+        "w": "qo‘lda",
+        "s": 31.56,
+        "e": 31.84
+      },
+      {
+        "w": "qiymat",
+        "s": 31.92,
+        "e": 32.22
+      },
+      {
+        "w": "yozish",
+        "s": 32.24,
+        "e": 32.52
+      },
+      {
+        "w": "mumkin.",
+        "s": 32.54,
+        "e": 32.8
+      },
+      {
+        "w": "Jenerated",
+        "s": 33.38,
+        "e": 33.86
+      },
+      {
+        "w": "ustunga",
+        "s": 33.9,
+        "e": 34.2
+      },
+      {
+        "w": "esa",
+        "s": 34.24,
+        "e": 34.36
+      },
+      {
+        "w": "qo‘lda",
+        "s": 34.44,
+        "e": 34.7
+      },
+      {
+        "w": "qiymat",
+        "s": 34.76,
+        "e": 35.02
+      },
+      {
+        "w": "yozib",
+        "s": 35.04,
+        "e": 35.3
+      },
+      {
+        "w": "bo‘lmaydi",
+        "s": 35.34,
+        "e": 35.74
+      },
+      {
+        "w": "va",
+        "s": 35.76,
+        "e": 35.84
+      },
+      {
+        "w": "u",
+        "s": 35.94,
+        "e": 35.96
+      },
+      {
+        "w": "asosiy",
+        "s": 36.32,
+        "e": 36.74
+      },
+      {
+        "w": "ustunlar",
+        "s": 36.8,
+        "e": 37.18
+      },
+      {
+        "w": "o‘zgarganda",
+        "s": 37.24,
+        "e": 37.79
+      },
+      {
+        "w": "doimiy",
+        "s": 38.15,
+        "e": 38.53
+      },
+      {
+        "w": "yangilanib",
+        "s": 38.59,
+        "e": 39.05
+      },
+      {
+        "w": "turadi.",
+        "s": 39.07,
+        "e": 39.31
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "cheklovlar",
+    "text": "Muhim cheklov shuki, ifoda faqat o‘zgarmas funksiyalardan iborat bo‘lishi shart, ya'ni now() kabi o‘zgaruvchan funksiyalar taqiqlanadi. Shuningdek boshqa generated ustunga murojaat qilish ham mumkin emas.",
+    "show": "Muhim cheklov shuki, ifoda faqat o‘zgarmas funksiyalardan iborat bo‘lishi shart, ya'ni now() kabi o‘zgaruvchan funksiyalar taqiqlanadi. Shuningdek boshqa generated ustunga murojaat qilish ham mumkin emas.",
+    "say": "Muhim cheklov shuki, ifoda faqat o‘zgarmas funksiyalardan iborat bo‘lishi shart, ya'ni nau kabi o‘zgaruvchan funksiyalar taqiqlanadi. Shuningdek boshqa generated ustunga murojaat qilish ham mumkin emas.",
+    "a0": 40.49,
+    "a1": 51.83,
+    "words": [
+      {
+        "w": "Muhim",
+        "s": 40.49,
+        "e": 40.73
+      },
+      {
+        "w": "cheklov",
+        "s": 40.77,
+        "e": 41.09
+      },
+      {
+        "w": "shuki,",
+        "s": 41.13,
+        "e": 41.39
+      },
+      {
+        "w": "ifoda",
+        "s": 41.71,
+        "e": 42.03
+      },
+      {
+        "w": "faqat",
+        "s": 42.09,
+        "e": 42.33
+      },
+      {
+        "w": "o‘zgarmas",
+        "s": 42.45,
+        "e": 42.95
+      },
+      {
+        "w": "funksiyalardan",
+        "s": 43.01,
+        "e": 43.57
+      },
+      {
+        "w": "iborat",
+        "s": 43.65,
+        "e": 43.97
+      },
+      {
+        "w": "bo‘lishi",
+        "s": 43.99,
+        "e": 44.25
+      },
+      {
+        "w": "shart,",
+        "s": 44.27,
+        "e": 44.47
+      },
+      {
+        "w": "ya'ni",
+        "s": 44.79,
+        "e": 44.99
+      },
+      {
+        "w": "nau",
+        "s": 45.35,
+        "e": 45.55
+      },
+      {
+        "w": "kabi",
+        "s": 45.61,
+        "e": 45.83
+      },
+      {
+        "w": "o‘zgaruvchan",
+        "s": 45.91,
+        "e": 46.45
+      },
+      {
+        "w": "funksiyalar",
+        "s": 46.51,
+        "e": 46.95
+      },
+      {
+        "w": "taqiqlanadi.",
+        "s": 47.19,
+        "e": 47.85
+      },
+      {
+        "w": "Shuningdek",
+        "s": 48.81,
+        "e": 49.19
+      },
+      {
+        "w": "boshqa",
+        "s": 49.49,
+        "e": 49.75
+      },
+      {
+        "w": "generated",
+        "s": 49.81,
+        "e": 50.27
+      },
+      {
+        "w": "ustunga",
+        "s": 50.33,
+        "e": 50.61
+      },
+      {
+        "w": "murojaat",
+        "s": 50.65,
+        "e": 50.99
+      },
+      {
+        "w": "qilish",
+        "s": 51.01,
+        "e": 51.19
+      },
+      {
+        "w": "ham",
+        "s": 51.21,
+        "e": 51.33
+      },
+      {
+        "w": "mumkin",
+        "s": 51.35,
+        "e": 51.59
+      },
+      {
+        "w": "emas.",
+        "s": 51.63,
+        "e": 51.83
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "xulosa",
+    "text": "Hisoblanadigan ustunlardan to‘g‘ri foydalanish ma'lumotlar yaxlitligini ta'minlaydi va ilova kodidagi ortiqcha mantiqni qisqartiradi.",
+    "show": "Hisoblanadigan ustunlardan to‘g‘ri foydalanish ma'lumotlar yaxlitligini ta'minlaydi va ilova kodidagi ortiqcha mantiqni qisqartiradi.",
+    "say": "Hisoblanadigan ustunlardan to‘g‘ri foydalanish ma'lumotlar yaxlitligini ta'minlaydi va ilova kodidagi ortiqcha mantiqni qisqartiradi.",
+    "a0": 52.94,
+    "a1": 60.27,
+    "words": [
+      {
+        "w": "Hisoblanadigan",
+        "s": 52.94,
+        "e": 53.56
+      },
+      {
+        "w": "ustunlardan",
+        "s": 53.6,
+        "e": 54.1
+      },
+      {
+        "w": "to‘g‘ri",
+        "s": 54.16,
+        "e": 54.42
+      },
+      {
+        "w": "foydalanish",
+        "s": 54.46,
+        "e": 55.02
+      },
+      {
+        "w": "ma'lumotlar",
+        "s": 55.32,
+        "e": 55.88
+      },
+      {
+        "w": "yaxlitligini",
+        "s": 55.92,
+        "e": 56.56
+      },
+      {
+        "w": "ta'minlaydi",
+        "s": 56.6,
+        "e": 57.14
+      },
+      {
+        "w": "va",
+        "s": 57.18,
+        "e": 57.24
+      },
+      {
+        "w": "ilova",
+        "s": 57.64,
+        "e": 57.98
+      },
+      {
+        "w": "kodidagi",
+        "s": 58.04,
+        "e": 58.48
+      },
+      {
+        "w": "ortiqcha",
+        "s": 58.58,
+        "e": 58.96
+      },
+      {
+        "w": "mantiqni",
+        "s": 59.0,
+        "e": 59.38
+      },
+      {
+        "w": "qisqartiradi.",
+        "s": 59.7,
+        "e": 60.27
+      }
+    ]
+  }
+]
