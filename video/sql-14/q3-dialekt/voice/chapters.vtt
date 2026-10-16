@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:12.386
+Dialektlar: Cheklovlar xususiyatlari
+
+00:12.386 --> 00:27.060
+MySQL: CHECK va avtomatik indekslash
+
+00:27.060 --> 00:42.370
+SQLite: PRAGMA foreign_keys = ON
+
+00:42.370 --> 00:56.987
+Taqqoslash: PostgreSQL vs MySQL vs SQLite
+
+00:56.987 --> 01:10.943
+Tipik xatolar va tavsiyalar
+
+01:10.943 --> 01:22.860
+Xulosa

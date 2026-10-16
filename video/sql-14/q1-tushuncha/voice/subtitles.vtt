@@ -1,0 +1,41 @@
+WEBVTT
+
+1
+00:01.420 --> 00:11.260
+Ushbu darsda ma'lumotlar yaxlitligini ta'minlovchi beshta asosiy cheklov — CHECK,
+NOT NULL, UNIQUE, PRIMARY KEY va FOREIGN KEY mexanizmlarini ko‘rib chiqamiz.
+
+2
+00:14.590 --> 00:24.000
+CHECK cheklovi ustun yoki butun jadval darajasida mantiqiy ifodani talab qiladi,
+masalan narx noldan katta bo‘lishi yoki narx chegirmadan baland bo‘lishi shart.
+
+3
+00:24.350 --> 00:35.330
+Juda muhim qoida: CHECK faqat ifoda FALSE bo‘lgandagina xato beradi, agar qiymat NULL bo‘lsa, ifoda
+tekshiruvdan jimgina o‘tib ketadi. Shuning uchun NOT NULL cheklovi alohida ko‘rsatilishi zarur.
+
+4
+00:38.720 --> 00:50.320
+UNIQUE cheklovi barcha qatorlar bo‘yicha qiymatlar takrorlanmasligini kafolatlaydi va avtomatik
+B-tree indeks yaratadi. PRIMARY KEY esa UNIQUE ga qo‘shimcha tarzda ustunni qat'iy NOT NULL qiladi.
+
+5
+00:53.970 --> 01:01.160
+FOREIGN KEY cheklovi bola jadvaldagi qiymat ota jadvalda mavjud bo‘lishini
+talab qiladi va ikki jadval o‘rtasidagi bog‘liqlikni himoyalaydi.
+
+6
+01:01.780 --> 01:10.530
+Ota qator o‘chirilganda ON DELETE CASCADE bog‘liq bolalarni ham o‘chiradi,
+RESTRICT esa darhol taqiqlaydi. SET NULL esa bola ustunni bo‘shatib qo‘yadi.
+
+7
+01:14.000 --> 01:23.860
+DEFERRABLE cheklovlar tekshiruvni tranzaksiya yakuni bo‘lgan COMMIT gacha kechiktirishga imkon
+beradi. PostgreSQL o‘n sakkizda esa faqat hujjatlashtirish uchun NOT ENFORCED holati qo‘shildi.
+
+8
+01:27.170 --> 01:34.310
+Jadvallarda to‘g‘ri cheklovlar tizimini o‘rnatish orqali xato ma'lumotlar
+yozilishining oldini oling va bazangiz mustahkamligini kafolatlang.

@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/sql/14-1-tushuncha.jpg" src="/video/sql/14-1-tushuncha.mp4">
+  <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/sql/14-1-tushuncha.chapters.vtt" default>
+  <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/sql/14-1-tushuncha.uz.vtt">
+</video>
+<figcaption>Video: Cheklovlar (Constraints) — CHECK, NOT NULL, UNIQUE, PRIMARY KEY, FOREIGN KEY va DEFERRABLE tushunchalari</figcaption>
+</figure>
+
 Ma'lumot tipi ustunga qanday qiymat yozish mumkinligini cheklaydi. Lekin PostgreSQL hujjati aytganidek, ko'p ilovalar uchun bu "juda qo'pol" cheklov:
 
 - mahsulot narxi faqat **musbat** bo'lishi kerak, lekin "faqat musbat son" degan standart tip yo'q;
@@ -123,6 +131,14 @@ Hujjatga ko'ra faqat `UNIQUE`, `PRIMARY KEY`, `EXCLUDE` va `REFERENCES` kechikti
 Exclusion (istisno) cheklovi har ikki qator ko'rsatilgan operatorlar bilan solishtirilganda kamida bitta solishtirish yolg'on yoki `NULL` bo'lishini ta'minlaydi. Masalan, "ikki bron vaqti **ustma-ust tushmasin**". U 40-bobda vaqt oraliqlari bilan ko'riladi.
 
 ## Kod
+
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/sql/14-2-kod.jpg" src="/video/sql/14-2-kod.mp4">
+  <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/sql/14-2-kod.chapters.vtt" default>
+  <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/sql/14-2-kod.uz.vtt">
+</video>
+<figcaption>Video: PostgreSQL 18 da Cheklovlar amaliyoti — musbat_narx xatolari, NULL o'tishi, CASCADE va DEFERRABLE sinovlari</figcaption>
+</figure>
 
 Misollar PostgreSQL 18.6, MySQL 9.7.2 va SQLite 3.54.0 da ishga tushirilgan.
 
@@ -327,6 +343,14 @@ INSERT 0 1
 Ikkala cheklov ham bor, lekin tekshirilmadi.
 
 ## Dialektlar
+
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/sql/14-3-dialektlar.jpg" src="/video/sql/14-3-dialektlar.mp4">
+  <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/sql/14-3-dialektlar.chapters.vtt" default>
+  <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/sql/14-3-dialektlar.uz.vtt">
+</video>
+<figcaption>Video: Dialektlar — MySQL da avtomatik indekslash, SQLite da PRAGMA foreign_keys = ON sharti va 6 ta tipik tuzoq</figcaption>
+</figure>
 
 ### MySQL
 

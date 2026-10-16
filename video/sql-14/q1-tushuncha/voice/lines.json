@@ -1,0 +1,945 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Ushbu darsda ma'lumotlar yaxlitligini ta'minlovchi beshta asosiy cheklov — CHECK, NOT NULL, UNIQUE, PRIMARY KEY va FOREIGN KEY mexanizmlarini ko‘rib chiqamiz.",
+    "show": "Ushbu darsda ma'lumotlar yaxlitligini ta'minlovchi beshta asosiy cheklov — CHECK, NOT NULL, UNIQUE, PRIMARY KEY va FOREIGN KEY mexanizmlarini ko‘rib chiqamiz.",
+    "say": "Ushbu darsda ma'lumotlar yaxlitligini ta'minlovchi beshta asosiy cheklov — chek, not nal, yunik, praymari ki va forin ki mexanizmlarini ko‘rib chiqamiz.",
+    "a0": 0.2,
+    "a1": 9.59,
+    "words": [
+      {
+        "w": "Ushbu",
+        "s": 0.2,
+        "e": 0.4
+      },
+      {
+        "w": "darsda",
+        "s": 0.5,
+        "e": 0.82
+      },
+      {
+        "w": "ma'lumotlar",
+        "s": 0.94,
+        "e": 1.46
+      },
+      {
+        "w": "yaxlitligini",
+        "s": 1.52,
+        "e": 2.1
+      },
+      {
+        "w": "ta'minlovchi",
+        "s": 2.16,
+        "e": 2.76
+      },
+      {
+        "w": "beshta",
+        "s": 2.94,
+        "e": 3.26
+      },
+      {
+        "w": "asosiy",
+        "s": 3.28,
+        "e": 3.64
+      },
+      {
+        "w": "cheklov",
+        "s": 3.7,
+        "e": 4.08
+      },
+      {
+        "w": "—",
+        "s": 4.08,
+        "e": 4.08
+      },
+      {
+        "w": "chek,",
+        "s": 4.48,
+        "e": 4.74
+      },
+      {
+        "w": "not",
+        "s": 5.1,
+        "e": 5.28
+      },
+      {
+        "w": "nal,",
+        "s": 5.34,
+        "e": 5.52
+      },
+      {
+        "w": "yunik,",
+        "s": 5.96,
+        "e": 6.28
+      },
+      {
+        "w": "praymari",
+        "s": 6.56,
+        "e": 7.0
+      },
+      {
+        "w": "ki",
+        "s": 7.08,
+        "e": 7.18
+      },
+      {
+        "w": "va",
+        "s": 7.57,
+        "e": 7.65
+      },
+      {
+        "w": "forin",
+        "s": 7.87,
+        "e": 8.17
+      },
+      {
+        "w": "ki",
+        "s": 8.23,
+        "e": 8.31
+      },
+      {
+        "w": "mexanizmlarini",
+        "s": 8.37,
+        "e": 9.05
+      },
+      {
+        "w": "ko‘rib",
+        "s": 9.09,
+        "e": 9.27
+      },
+      {
+        "w": "chiqamiz.",
+        "s": 9.29,
+        "e": 9.59
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "check_not_null",
+    "text": "CHECK cheklovi ustun yoki butun jadval darajasida mantiqiy ifodani talab qiladi, masalan narx noldan katta bo‘lishi yoki narx chegirmadan baland bo‘lishi shart.",
+    "show": "CHECK cheklovi ustun yoki butun jadval darajasida mantiqiy ifodani talab qiladi, masalan narx noldan katta bo‘lishi yoki narx chegirmadan baland bo‘lishi shart.",
+    "say": "Chek cheklovi ustun yoki butun jadval darajasida mantiqiy ifodani talab qiladi, masalan narx noldan katta bo‘lishi yoki narx chegirmadan baland bo‘lishi shart.",
+    "a0": 10.97,
+    "a1": 19.93,
+    "words": [
+      {
+        "w": "Chek",
+        "s": 10.97,
+        "e": 11.15
+      },
+      {
+        "w": "cheklovi",
+        "s": 11.19,
+        "e": 11.63
+      },
+      {
+        "w": "ustun",
+        "s": 11.79,
+        "e": 12.07
+      },
+      {
+        "w": "yoki",
+        "s": 12.07,
+        "e": 12.33
+      },
+      {
+        "w": "butun",
+        "s": 12.41,
+        "e": 12.63
+      },
+      {
+        "w": "jadval",
+        "s": 12.69,
+        "e": 13.03
+      },
+      {
+        "w": "darajasida",
+        "s": 13.07,
+        "e": 13.57
+      },
+      {
+        "w": "mantiqiy",
+        "s": 13.77,
+        "e": 14.27
+      },
+      {
+        "w": "ifodani",
+        "s": 14.35,
+        "e": 14.75
+      },
+      {
+        "w": "talab",
+        "s": 14.77,
+        "e": 14.97
+      },
+      {
+        "w": "qiladi,",
+        "s": 14.99,
+        "e": 15.23
+      },
+      {
+        "w": "masalan",
+        "s": 15.47,
+        "e": 15.79
+      },
+      {
+        "w": "narx",
+        "s": 16.29,
+        "e": 16.49
+      },
+      {
+        "w": "noldan",
+        "s": 16.57,
+        "e": 16.85
+      },
+      {
+        "w": "katta",
+        "s": 16.89,
+        "e": 17.13
+      },
+      {
+        "w": "bo‘lishi",
+        "s": 17.17,
+        "e": 17.49
+      },
+      {
+        "w": "yoki",
+        "s": 17.49,
+        "e": 17.89
+      },
+      {
+        "w": "narx",
+        "s": 18.25,
+        "e": 18.45
+      },
+      {
+        "w": "chegirmadan",
+        "s": 18.51,
+        "e": 19.01
+      },
+      {
+        "w": "baland",
+        "s": 19.09,
+        "e": 19.35
+      },
+      {
+        "w": "bo‘lishi",
+        "s": 19.39,
+        "e": 19.65
+      },
+      {
+        "w": "shart.",
+        "s": 19.71,
+        "e": 19.93
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "check_not_null",
+    "text": "Juda muhim qoida: CHECK faqat ifoda FALSE bo‘lgandagina xato beradi, agar qiymat NULL bo‘lsa, ifoda tekshiruvdan jimgina o‘tib ketadi. Shuning uchun NOT NULL cheklovi alohida ko‘rsatilishi zarur.",
+    "show": "Juda muhim qoida: CHECK faqat ifoda FALSE bo‘lgandagina xato beradi, agar qiymat NULL bo‘lsa, ifoda tekshiruvdan jimgina o‘tib ketadi. Shuning uchun NOT NULL cheklovi alohida ko‘rsatilishi zarur.",
+    "say": "Juda muhim qoida: chek faqat ifoda fols bo‘lgandagina xato beradi, agar qiymat nul bo‘lsa, ifoda tekshiruvdan jimgina o‘tib ketadi. Shuning uchun not nal cheklovi alohida ko‘rsatilishi zarur.",
+    "a0": 20.73,
+    "a1": 31.26,
+    "words": [
+      {
+        "w": "Juda",
+        "s": 20.73,
+        "e": 20.89
+      },
+      {
+        "w": "muhim",
+        "s": 20.95,
+        "e": 21.15
+      },
+      {
+        "w": "qoida:",
+        "s": 21.21,
+        "e": 21.45
+      },
+      {
+        "w": "chek",
+        "s": 22.03,
+        "e": 22.21
+      },
+      {
+        "w": "faqat",
+        "s": 22.27,
+        "e": 22.56
+      },
+      {
+        "w": "ifoda",
+        "s": 22.66,
+        "e": 23.02
+      },
+      {
+        "w": "fols",
+        "s": 23.22,
+        "e": 23.48
+      },
+      {
+        "w": "bo‘lgandagina",
+        "s": 23.54,
+        "e": 24.12
+      },
+      {
+        "w": "xato",
+        "s": 24.18,
+        "e": 24.4
+      },
+      {
+        "w": "beradi,",
+        "s": 24.44,
+        "e": 24.72
+      },
+      {
+        "w": "agar",
+        "s": 25.0,
+        "e": 25.22
+      },
+      {
+        "w": "qiymat",
+        "s": 25.28,
+        "e": 25.58
+      },
+      {
+        "w": "nul",
+        "s": 25.7,
+        "e": 25.88
+      },
+      {
+        "w": "bo‘lsa,",
+        "s": 25.92,
+        "e": 26.2
+      },
+      {
+        "w": "ifoda",
+        "s": 26.54,
+        "e": 26.84
+      },
+      {
+        "w": "tekshiruvdan",
+        "s": 26.94,
+        "e": 27.46
+      },
+      {
+        "w": "jimgina",
+        "s": 27.54,
+        "e": 27.84
+      },
+      {
+        "w": "o‘tib",
+        "s": 27.86,
+        "e": 28.0
+      },
+      {
+        "w": "ketadi.",
+        "s": 28.02,
+        "e": 28.28
+      },
+      {
+        "w": "Shuning",
+        "s": 28.52,
+        "e": 28.74
+      },
+      {
+        "w": "uchun",
+        "s": 28.74,
+        "e": 28.88
+      },
+      {
+        "w": "not",
+        "s": 29.18,
+        "e": 29.32
+      },
+      {
+        "w": "nal",
+        "s": 29.36,
+        "e": 29.5
+      },
+      {
+        "w": "cheklovi",
+        "s": 29.56,
+        "e": 29.94
+      },
+      {
+        "w": "alohida",
+        "s": 30.06,
+        "e": 30.4
+      },
+      {
+        "w": "ko‘rsatilishi",
+        "s": 30.46,
+        "e": 30.96
+      },
+      {
+        "w": "zarur.",
+        "s": 31.0,
+        "e": 31.26
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "unique_primary",
+    "text": "UNIQUE cheklovi barcha qatorlar bo‘yicha qiymatlar takrorlanmasligini kafolatlaydi va avtomatik B-tree indeks yaratadi. PRIMARY KEY esa UNIQUE ga qo‘shimcha tarzda ustunni qat'iy NOT NULL qiladi.",
+    "show": "UNIQUE cheklovi barcha qatorlar bo‘yicha qiymatlar takrorlanmasligini kafolatlaydi va avtomatik B-tree indeks yaratadi. PRIMARY KEY esa UNIQUE ga qo‘shimcha tarzda ustunni qat'iy NOT NULL qiladi.",
+    "say": "Yunik cheklovi barcha qatorlar bo‘yicha qiymatlar takrorlanmasligini kafolatlaydi va avtomatik bi-tri indeks yaratadi. Praymari ki esa yunik ga qo‘shimcha tarzda ustunni qat'iy not nal qiladi.",
+    "a0": 32.5,
+    "a1": 43.65,
+    "words": [
+      {
+        "w": "Yunik",
+        "s": 32.5,
+        "e": 32.74
+      },
+      {
+        "w": "cheklovi",
+        "s": 32.76,
+        "e": 33.2
+      },
+      {
+        "w": "barcha",
+        "s": 33.34,
+        "e": 33.6
+      },
+      {
+        "w": "qatorlar",
+        "s": 33.64,
+        "e": 34.08
+      },
+      {
+        "w": "bo‘yicha",
+        "s": 34.12,
+        "e": 34.36
+      },
+      {
+        "w": "qiymatlar",
+        "s": 34.46,
+        "e": 34.92
+      },
+      {
+        "w": "takrorlanmasligini",
+        "s": 34.96,
+        "e": 35.78
+      },
+      {
+        "w": "kafolatlaydi",
+        "s": 35.82,
+        "e": 36.4
+      },
+      {
+        "w": "va",
+        "s": 36.66,
+        "e": 36.72
+      },
+      {
+        "w": "avtomatik",
+        "s": 37.04,
+        "e": 37.57
+      },
+      {
+        "w": "bi-tri",
+        "s": 37.63,
+        "e": 37.93
+      },
+      {
+        "w": "indeks",
+        "s": 38.05,
+        "e": 38.31
+      },
+      {
+        "w": "yaratadi.",
+        "s": 38.35,
+        "e": 38.69
+      },
+      {
+        "w": "Praymari",
+        "s": 39.47,
+        "e": 39.87
+      },
+      {
+        "w": "ki",
+        "s": 39.93,
+        "e": 40.03
+      },
+      {
+        "w": "esa",
+        "s": 40.15,
+        "e": 40.33
+      },
+      {
+        "w": "yunik",
+        "s": 40.51,
+        "e": 40.75
+      },
+      {
+        "w": "ga",
+        "s": 40.77,
+        "e": 40.85
+      },
+      {
+        "w": "qo‘shimcha",
+        "s": 40.91,
+        "e": 41.29
+      },
+      {
+        "w": "tarzda",
+        "s": 41.33,
+        "e": 41.65
+      },
+      {
+        "w": "ustunni",
+        "s": 41.77,
+        "e": 42.17
+      },
+      {
+        "w": "qat'iy",
+        "s": 42.39,
+        "e": 42.75
+      },
+      {
+        "w": "not",
+        "s": 42.91,
+        "e": 43.09
+      },
+      {
+        "w": "nal",
+        "s": 43.17,
+        "e": 43.33
+      },
+      {
+        "w": "qiladi.",
+        "s": 43.37,
+        "e": 43.65
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "foreign_key",
+    "text": "FOREIGN KEY cheklovi bola jadvaldagi qiymat ota jadvalda mavjud bo‘lishini talab qiladi va ikki jadval o‘rtasidagi bog‘liqlikni himoyalaydi.",
+    "show": "FOREIGN KEY cheklovi bola jadvaldagi qiymat ota jadvalda mavjud bo‘lishini talab qiladi va ikki jadval o‘rtasidagi bog‘liqlikni himoyalaydi.",
+    "say": "Forin ki cheklovi bola jadvaldagi qiymat ota jadvalda mavjud bo‘lishini talab qiladi va ikki jadval o‘rtasidagi bog‘liqlikni himoyalaydi.",
+    "a0": 45.15,
+    "a1": 51.89,
+    "words": [
+      {
+        "w": "Forin",
+        "s": 45.15,
+        "e": 45.43
+      },
+      {
+        "w": "ki",
+        "s": 45.47,
+        "e": 45.53
+      },
+      {
+        "w": "cheklovi",
+        "s": 45.61,
+        "e": 46.03
+      },
+      {
+        "w": "bola",
+        "s": 46.21,
+        "e": 46.39
+      },
+      {
+        "w": "jadvaldagi",
+        "s": 46.45,
+        "e": 46.95
+      },
+      {
+        "w": "qiymat",
+        "s": 47.01,
+        "e": 47.31
+      },
+      {
+        "w": "ota",
+        "s": 47.51,
+        "e": 47.67
+      },
+      {
+        "w": "jadvalda",
+        "s": 47.73,
+        "e": 48.13
+      },
+      {
+        "w": "mavjud",
+        "s": 48.19,
+        "e": 48.47
+      },
+      {
+        "w": "bo‘lishini",
+        "s": 48.51,
+        "e": 48.85
+      },
+      {
+        "w": "talab",
+        "s": 48.89,
+        "e": 49.09
+      },
+      {
+        "w": "qiladi",
+        "s": 49.13,
+        "e": 49.39
+      },
+      {
+        "w": "va",
+        "s": 49.57,
+        "e": 49.65
+      },
+      {
+        "w": "ikki",
+        "s": 49.79,
+        "e": 49.99
+      },
+      {
+        "w": "jadval",
+        "s": 50.03,
+        "e": 50.33
+      },
+      {
+        "w": "o‘rtasidagi",
+        "s": 50.37,
+        "e": 50.81
+      },
+      {
+        "w": "bog‘liqlikni",
+        "s": 50.85,
+        "e": 51.35
+      },
+      {
+        "w": "himoyalaydi.",
+        "s": 51.37,
+        "e": 51.89
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "foreign_key",
+    "text": "Ota qator o‘chirilganda ON DELETE CASCADE bog‘liq bolalarni ham o‘chiradi, RESTRICT esa darhol taqiqlaydi. SET NULL esa bola ustunni bo‘shatib qo‘yadi.",
+    "show": "Ota qator o‘chirilganda ON DELETE CASCADE bog‘liq bolalarni ham o‘chiradi, RESTRICT esa darhol taqiqlaydi. SET NULL esa bola ustunni bo‘shatib qo‘yadi.",
+    "say": "Ota qator o‘chirilganda ON DELETE kaskad bog‘liq bolalarni ham o‘chiradi, restrikt esa darhol taqiqlaydi. Set nal esa bola ustunni bo‘shatib qo‘yadi.",
+    "a0": 52.96,
+    "a1": 61.26,
+    "words": [
+      {
+        "w": "Ota",
+        "s": 52.96,
+        "e": 53.1
+      },
+      {
+        "w": "qator",
+        "s": 53.14,
+        "e": 53.4
+      },
+      {
+        "w": "o‘chirilganda",
+        "s": 53.44,
+        "e": 54.0
+      },
+      {
+        "w": "ON",
+        "s": 54.34,
+        "e": 54.44
+      },
+      {
+        "w": "DELETE",
+        "s": 54.52,
+        "e": 54.84
+      },
+      {
+        "w": "kaskad",
+        "s": 54.86,
+        "e": 55.22
+      },
+      {
+        "w": "bog‘liq",
+        "s": 55.54,
+        "e": 55.8
+      },
+      {
+        "w": "bolalarni",
+        "s": 55.84,
+        "e": 56.24
+      },
+      {
+        "w": "ham",
+        "s": 56.28,
+        "e": 56.42
+      },
+      {
+        "w": "o‘chiradi,",
+        "s": 56.44,
+        "e": 56.78
+      },
+      {
+        "w": "restrikt",
+        "s": 57.16,
+        "e": 57.54
+      },
+      {
+        "w": "esa",
+        "s": 57.6,
+        "e": 57.74
+      },
+      {
+        "w": "darhol",
+        "s": 57.86,
+        "e": 58.18
+      },
+      {
+        "w": "taqiqlaydi.",
+        "s": 58.22,
+        "e": 58.76
+      },
+      {
+        "w": "Set",
+        "s": 59.32,
+        "e": 59.48
+      },
+      {
+        "w": "nal",
+        "s": 59.52,
+        "e": 59.68
+      },
+      {
+        "w": "esa",
+        "s": 59.72,
+        "e": 59.88
+      },
+      {
+        "w": "bola",
+        "s": 60.02,
+        "e": 60.18
+      },
+      {
+        "w": "ustunni",
+        "s": 60.24,
+        "e": 60.54
+      },
+      {
+        "w": "bo‘shatib",
+        "s": 60.6,
+        "e": 60.94
+      },
+      {
+        "w": "qo‘yadi.",
+        "s": 60.96,
+        "e": 61.26
+      }
+    ]
+  },
+  {
+    "id": "L7",
+    "scene": "deferrable_enforced",
+    "text": "DEFERRABLE cheklovlar tekshiruvni tranzaksiya yakuni bo‘lgan COMMIT gacha kechiktirishga imkon beradi. PostgreSQL o‘n sakkizda esa faqat hujjatlashtirish uchun NOT ENFORCED holati qo‘shildi.",
+    "show": "DEFERRABLE cheklovlar tekshiruvni tranzaksiya yakuni bo‘lgan COMMIT gacha kechiktirishga imkon beradi. PostgreSQL o‘n sakkizda esa faqat hujjatlashtirish uchun NOT ENFORCED holati qo‘shildi.",
+    "say": "Deferabl cheklovlar tekshiruvni tranzaksiya yakuni bo‘lgan kommit gacha kechiktirishga imkon beradi. Postgres o‘n sakkizda esa faqat hujjatlashtirish uchun not enforsd holati qo‘shildi.",
+    "a0": 62.58,
+    "a1": 71.99,
+    "words": [
+      {
+        "w": "Deferabl",
+        "s": 62.58,
+        "e": 63.0
+      },
+      {
+        "w": "cheklovlar",
+        "s": 63.04,
+        "e": 63.52
+      },
+      {
+        "w": "tekshiruvni",
+        "s": 63.58,
+        "e": 64.02
+      },
+      {
+        "w": "tranzaksiya",
+        "s": 64.1,
+        "e": 64.62
+      },
+      {
+        "w": "yakuni",
+        "s": 64.66,
+        "e": 64.96
+      },
+      {
+        "w": "bo‘lgan",
+        "s": 64.98,
+        "e": 65.29
+      },
+      {
+        "w": "kommit",
+        "s": 65.45,
+        "e": 65.75
+      },
+      {
+        "w": "gacha",
+        "s": 65.77,
+        "e": 65.95
+      },
+      {
+        "w": "kechiktirishga",
+        "s": 65.99,
+        "e": 66.51
+      },
+      {
+        "w": "imkon",
+        "s": 66.55,
+        "e": 66.83
+      },
+      {
+        "w": "beradi.",
+        "s": 66.85,
+        "e": 67.11
+      },
+      {
+        "w": "Postgres",
+        "s": 67.55,
+        "e": 67.95
+      },
+      {
+        "w": "o‘n",
+        "s": 68.01,
+        "e": 68.09
+      },
+      {
+        "w": "sakkizda",
+        "s": 68.11,
+        "e": 68.47
+      },
+      {
+        "w": "esa",
+        "s": 68.51,
+        "e": 68.67
+      },
+      {
+        "w": "faqat",
+        "s": 68.79,
+        "e": 69.07
+      },
+      {
+        "w": "hujjatlashtirish",
+        "s": 69.33,
+        "e": 70.01
+      },
+      {
+        "w": "uchun",
+        "s": 70.05,
+        "e": 70.25
+      },
+      {
+        "w": "not",
+        "s": 70.63,
+        "e": 70.79
+      },
+      {
+        "w": "enforsd",
+        "s": 70.87,
+        "e": 71.31
+      },
+      {
+        "w": "holati",
+        "s": 71.35,
+        "e": 71.61
+      },
+      {
+        "w": "qo‘shildi.",
+        "s": 71.65,
+        "e": 71.99
+      }
+    ]
+  },
+  {
+    "id": "L8",
+    "scene": "xulosa",
+    "text": "Jadvallarda to‘g‘ri cheklovlar tizimini o‘rnatish orqali xato ma'lumotlar yozilishining oldini oling va bazangiz mustahkamligini kafolatlang.",
+    "show": "Jadvallarda to‘g‘ri cheklovlar tizimini o‘rnatish orqali xato ma'lumotlar yozilishining oldini oling va bazangiz mustahkamligini kafolatlang.",
+    "say": "Jadvallarda to‘g‘ri cheklovlar tizimini o‘rnatish orqali xato ma'lumotlar yozilishining oldini oling va bazangiz mustahkamligini kafolatlang.",
+    "a0": 73.15,
+    "a1": 79.84,
+    "words": [
+      {
+        "w": "Jadvallarda",
+        "s": 73.15,
+        "e": 73.69
+      },
+      {
+        "w": "to‘g‘ri",
+        "s": 73.83,
+        "e": 74.07
+      },
+      {
+        "w": "cheklovlar",
+        "s": 74.11,
+        "e": 74.55
+      },
+      {
+        "w": "tizimini",
+        "s": 74.59,
+        "e": 74.89
+      },
+      {
+        "w": "o‘rnatish",
+        "s": 74.91,
+        "e": 75.28
+      },
+      {
+        "w": "orqali",
+        "s": 75.3,
+        "e": 75.62
+      },
+      {
+        "w": "xato",
+        "s": 75.8,
+        "e": 76.06
+      },
+      {
+        "w": "ma'lumotlar",
+        "s": 76.14,
+        "e": 76.66
+      },
+      {
+        "w": "yozilishining",
+        "s": 76.68,
+        "e": 77.18
+      },
+      {
+        "w": "oldini",
+        "s": 77.28,
+        "e": 77.52
+      },
+      {
+        "w": "oling",
+        "s": 77.56,
+        "e": 77.8
+      },
+      {
+        "w": "va",
+        "s": 77.92,
+        "e": 78.0
+      },
+      {
+        "w": "bazangiz",
+        "s": 78.12,
+        "e": 78.58
+      },
+      {
+        "w": "mustahkamligini",
+        "s": 78.62,
+        "e": 79.26
+      },
+      {
+        "w": "kafolatlang.",
+        "s": 79.3,
+        "e": 79.84
+      }
+    ]
+  }
+]
