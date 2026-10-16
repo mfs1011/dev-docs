@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:09.041
+Uch tizim: Kodlash va collation solishtiruvi
+
+00:09.041 --> 00:28.306
+MySQL: utf8mb4 va eskirgan utf8mb3 xatosi
+
+00:28.306 --> 00:47.606
+MySQL: Sukut bo‘yicha katta-kichik harfsiz mantiq
+
+00:47.606 --> 01:05.383
+SQLite: NOCASE va faqat ASCII upper()
+
+01:05.383 --> 01:19.691
+Oltita xavfli amaliy tuzoq
+
+01:19.691 --> 01:29.920
+Xulosa va tavsiyalar

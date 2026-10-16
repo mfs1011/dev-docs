@@ -1,0 +1,41 @@
+WEBVTT
+
+1
+00:01.420 --> 00:07.830
+PostgreSQL o‘n sakkiz terminalida kodlash, collation va
+o‘zbekcha matnlarni saralashni amalda sinab ko‘ramiz.
+
+2
+00:09.180 --> 00:17.340
+Birinchi navbatda sozlamalarni tekshiramiz: server va mijoz kodlashi
+UTF-8, mintaqa esa libc provayderi bilan sozlangani ko‘rinadi.
+
+3
+00:20.550 --> 00:24.920
+Endi o‘nta o‘zbekcha so‘zni jadvalga kiritib,
+uch xil collation bo‘yicha saralaymiz.
+
+4
+00:25.390 --> 00:39.750
+C kollatsiyasi baytlar bo‘yicha saralasa, en_US ingliz alifbosiga tayanadi. Faqat uz-Latn ICU kollatsiyasida
+o‘rik, g‘oz, shaftoli va choy o‘zbek alifbosi qoidasi bo‘yicha eng oxiriga to‘g‘ri joylashadi!
+
+5
+00:43.120 --> 00:50.080
+Katta-kichik harf amallarida turk tili kollatsiyasini
+ko‘rsatsak, katta I harfi to‘g‘ri nuqtasiz ı ga aylanadi.
+
+6
+00:53.330 --> 01:00.420
+Nondeterministik ci kollatsiyasi yordamida esa katta-kichik
+harfga sezgir bo‘lmagan elektron pochta ustunini yaratish mumkin.
+
+7
+01:00.770 --> 01:08.390
+Katta harf bilan kiritilgan pochtadan so‘ng kichik harf bilan xuddi shu
+manzil yozilsa, baza xavfsiz tarzda takroriy kalit xatosini beradi.
+
+8
+01:11.540 --> 01:18.650
+Ko‘rib turganingizdek, ICU kollatsiyalari milliy alifbolarni
+to‘g‘ri saralash va biznes mantiqni himoyalashda tengsizdir.

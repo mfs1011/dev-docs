@@ -1,0 +1,46 @@
+WEBVTT
+
+1
+00:01.420 --> 00:07.530
+Ushbu qismda kodlash va kollatsiyaning uchala tizimdagi
+tub farqlari va amaliy tuzoqlarini tahlil qilamiz.
+
+2
+00:10.280 --> 00:20.080
+MySQL da juda ehtiyot bo‘lish kerak: oddiy utf8 nomi eskirgan
+utf8mb3 ni bildiradi va emojilarni saqlay olmay xato beradi.
+
+3
+00:20.530 --> 00:26.440
+Zamonaviy loyihalarda doimo to‘liq to‘rt
+baytli utf8mb4 kodlashini ishlatish shart.
+
+4
+00:29.460 --> 00:38.810
+Eng katta farq: MySQL sukut bo‘yicha katta-kichik harfga ham, urg‘uga ham
+sezgir emas! Katta Salom bilan kichik salom darhol teng deb topiladi.
+
+5
+00:38.940 --> 00:45.840
+Shuning uchun MySQL da elektron pochtaga UNIQUE qo‘yilsa,
+katta va kichik harfli manzillarni bir xil deb rad etadi.
+
+6
+00:48.690 --> 00:54.700
+SQLite da esa faqat uchta ichki kollatsiya
+mavjud: BINARY, NOCASE va RTRIM.
+
+7
+00:54.870 --> 01:03.710
+Diqqat qiling: SQLite ning NOCASE va upper funksiyalari faqat ASCII harflarini
+taniydi, o‘zbekcha va boshqa Unicode harflarini o‘zgartira olmaydi.
+
+8
+01:06.620 --> 01:18.080
+Xulosa qilib aytganda: MySQL da utf8mb4 ni tanlang, o‘zbekcha saralashda PostgreSQL ning
+ICU kollatsiyasidan foydalaning, va SQLite da Unicode amallarini ilova darajasida bajaring.
+
+9
+01:20.770 --> 01:26.230
+To‘g‘ri sozlangan kodlash va kollatsiya matnlaringiz
+butunligi va qidiruv aniqligining asosidir.

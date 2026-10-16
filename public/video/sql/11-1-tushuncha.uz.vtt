@@ -1,0 +1,56 @@
+WEBVTT
+
+1
+00:01.420 --> 00:09.680
+Salom! O‘n birinchi bobda ma’lumotlar bazasida matnlar qanday saqlanishi va
+saralanishini belgilovchi kodlash hamda collation tushunchalari bilan tanishamiz.
+
+2
+00:12.550 --> 00:20.880
+Kodlash, ya’ni character set — harflar va ularning raqamli kodlari
+to‘plamidir. Masalan, A harfiga nol, B harfiga bir raqami to‘g‘ri keladi.
+
+3
+00:21.430 --> 00:30.610
+Collation esa ushbu belgilarni o‘zaro solishtirish va saralash qoidalaridir. Nol
+birdan kichik bo‘lgani uchun A B dan oldin kelishi collation orqali aniqlanadi.
+
+4
+00:33.800 --> 00:43.190
+Collation bazadagi eng muhim amallarni boshqaradi: ORDER BY tartibi,
+tenglik va taqqoslashlar, upper va lower funksiyalari, hamda LIKE qidiruvi.
+
+5
+00:43.710 --> 00:51.640
+Shuni unutmang: murakkab milliy mintaqalar saralashni sekinlashtirishi
+mumkin, oddiy C mintaqasi esa faqat baytlar bo‘yicha eng tez ishlaydi.
+
+6
+00:54.830 --> 01:03.870
+PostgreSQL da mintaqa provayderlari uch xil bo‘ladi: operatsion tizimning
+libc kutubxonasi, platformadan mustaqil ICU, hamda ichki builtin provayderi.
+
+7
+01:04.400 --> 01:13.830
+Eng muhim cheklov: bazaning LC_COLLATE va LC_CTYPE sozlamalari yaratilishda
+belgilanadi va keyin o‘zgartirib bo‘lmaydi! Chunki indekslar buzilib ketishi mumkin.
+
+8
+01:17.360 --> 01:24.900
+Collationlar deterministik va nondeterministik turlarga bo‘linadi. Deterministik
+collation faqat baytlari bir xil bo‘lgan satrlarnigina teng deb hisoblaydi.
+
+9
+01:25.250 --> 01:32.800
+Nondeterministik collation esa katta-kichik harflardan qat’i nazar,
+masalan katta Salom bilan kichik salomni teng deb ko‘rish imkonini beradi.
+
+10
+01:35.970 --> 01:43.050
+Xulosa: o‘zbek tili kabi maxsus alifbolarni to‘g‘ri saralash va
+harflar registrini boshqarishda mos collation tanlash juda muhimdir.
+
+11
+01:43.360 --> 01:48.310
+Keyingi qismda ushbu qoidalarni PostgreSQL terminalida
+o‘zbekcha so‘zlar bilan amalda sinab ko‘ramiz.

@@ -1,0 +1,1128 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Salom! O‘n birinchi bobda ma’lumotlar bazasida matnlar qanday saqlanishi va saralanishini belgilovchi kodlash hamda collation tushunchalari bilan tanishamiz.",
+    "show": "Salom! O‘n birinchi bobda ma’lumotlar bazasida matnlar qanday saqlanishi va saralanishini belgilovchi kodlash hamda collation tushunchalari bilan tanishamiz.",
+    "say": "Salom! O‘n birinchi bobda ma’lumotlar bazasida matnlar qanday saqlanishi va saralanishini belgilovchi kodlash hamda kollatsiya tushunchalari bilan tanishamiz.",
+    "a0": 0.26,
+    "a1": 8.07,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.26,
+        "e": 0.52
+      },
+      {
+        "w": "O‘n",
+        "s": 0.96,
+        "e": 1.04
+      },
+      {
+        "w": "birinchi",
+        "s": 1.08,
+        "e": 1.34
+      },
+      {
+        "w": "bobda",
+        "s": 1.38,
+        "e": 1.62
+      },
+      {
+        "w": "ma’lumotlar",
+        "s": 1.7,
+        "e": 2.16
+      },
+      {
+        "w": "bazasida",
+        "s": 2.2,
+        "e": 2.58
+      },
+      {
+        "w": "matnlar",
+        "s": 2.66,
+        "e": 3.08
+      },
+      {
+        "w": "qanday",
+        "s": 3.16,
+        "e": 3.46
+      },
+      {
+        "w": "saqlanishi",
+        "s": 3.54,
+        "e": 4.08
+      },
+      {
+        "w": "va",
+        "s": 4.28,
+        "e": 4.34
+      },
+      {
+        "w": "saralanishini",
+        "s": 4.46,
+        "e": 5.12
+      },
+      {
+        "w": "belgilovchi",
+        "s": 5.14,
+        "e": 5.6
+      },
+      {
+        "w": "kodlash",
+        "s": 5.68,
+        "e": 6.12
+      },
+      {
+        "w": "hamda",
+        "s": 6.18,
+        "e": 6.42
+      },
+      {
+        "w": "kollatsiya",
+        "s": 6.52,
+        "e": 6.96
+      },
+      {
+        "w": "tushunchalari",
+        "s": 6.98,
+        "e": 7.46
+      },
+      {
+        "w": "bilan",
+        "s": 7.46,
+        "e": 7.65
+      },
+      {
+        "w": "tanishamiz.",
+        "s": 7.67,
+        "e": 8.07
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "concepts",
+    "text": "Kodlash, ya’ni character set — harflar va ularning raqamli kodlari to‘plamidir. Masalan, A harfiga nol, B harfiga bir raqami to‘g‘ri keladi.",
+    "show": "Kodlash, ya’ni character set — harflar va ularning raqamli kodlari to‘plamidir. Masalan, A harfiga nol, B harfiga bir raqami to‘g‘ri keladi.",
+    "say": "Kodlash, ya’ni karakter set — harflar va ularning raqamli kodlari to‘plamidir. Masalan, A harfiga nol, B harfiga bir raqami to‘g‘ri keladi.",
+    "a0": 8.99,
+    "a1": 16.87,
+    "words": [
+      {
+        "w": "Kodlash,",
+        "s": 8.99,
+        "e": 9.37
+      },
+      {
+        "w": "ya’ni",
+        "s": 9.43,
+        "e": 9.61
+      },
+      {
+        "w": "karakter",
+        "s": 9.71,
+        "e": 10.13
+      },
+      {
+        "w": "set",
+        "s": 10.19,
+        "e": 10.35
+      },
+      {
+        "w": "—",
+        "s": 10.35,
+        "e": 10.35
+      },
+      {
+        "w": "harflar",
+        "s": 10.73,
+        "e": 11.15
+      },
+      {
+        "w": "va",
+        "s": 11.19,
+        "e": 11.25
+      },
+      {
+        "w": "ularning",
+        "s": 11.33,
+        "e": 11.69
+      },
+      {
+        "w": "raqamli",
+        "s": 11.75,
+        "e": 12.13
+      },
+      {
+        "w": "kodlari",
+        "s": 12.17,
+        "e": 12.51
+      },
+      {
+        "w": "to‘plamidir.",
+        "s": 12.53,
+        "e": 12.95
+      },
+      {
+        "w": "Masalan,",
+        "s": 13.35,
+        "e": 13.71
+      },
+      {
+        "w": "A",
+        "s": 13.87,
+        "e": 13.89
+      },
+      {
+        "w": "harfiga",
+        "s": 14.01,
+        "e": 14.43
+      },
+      {
+        "w": "nol,",
+        "s": 14.57,
+        "e": 14.77
+      },
+      {
+        "w": "B",
+        "s": 15.19,
+        "e": 15.21
+      },
+      {
+        "w": "harfiga",
+        "s": 15.35,
+        "e": 15.77
+      },
+      {
+        "w": "bir",
+        "s": 15.93,
+        "e": 16.05
+      },
+      {
+        "w": "raqami",
+        "s": 16.09,
+        "e": 16.35
+      },
+      {
+        "w": "to‘g‘ri",
+        "s": 16.39,
+        "e": 16.57
+      },
+      {
+        "w": "keladi.",
+        "s": 16.59,
+        "e": 16.87
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "concepts",
+    "text": "Collation esa ushbu belgilarni o‘zaro solishtirish va saralash qoidalaridir. Nol birdan kichik bo‘lgani uchun A B dan oldin kelishi collation orqali aniqlanadi.",
+    "show": "Collation esa ushbu belgilarni o‘zaro solishtirish va saralash qoidalaridir. Nol birdan kichik bo‘lgani uchun A B dan oldin kelishi collation orqali aniqlanadi.",
+    "say": "Kollatsiya esa ushbu belgilarni o‘zaro solishtirish va saralash qoidalaridir. Nol birdan kichik bo‘lgani uchun A B dan oldin kelishi kollatsiya orqali aniqlanadi.",
+    "a0": 17.87,
+    "a1": 26.6,
+    "words": [
+      {
+        "w": "Kollatsiya",
+        "s": 17.87,
+        "e": 18.27
+      },
+      {
+        "w": "esa",
+        "s": 18.33,
+        "e": 18.47
+      },
+      {
+        "w": "ushbu",
+        "s": 18.81,
+        "e": 18.99
+      },
+      {
+        "w": "belgilarni",
+        "s": 19.05,
+        "e": 19.51
+      },
+      {
+        "w": "o‘zaro",
+        "s": 19.63,
+        "e": 19.91
+      },
+      {
+        "w": "solishtirish",
+        "s": 19.99,
+        "e": 20.59
+      },
+      {
+        "w": "va",
+        "s": 20.67,
+        "e": 20.73
+      },
+      {
+        "w": "saralash",
+        "s": 20.85,
+        "e": 21.25
+      },
+      {
+        "w": "qoidalaridir.",
+        "s": 21.29,
+        "e": 21.85
+      },
+      {
+        "w": "Nol",
+        "s": 22.45,
+        "e": 22.64
+      },
+      {
+        "w": "birdan",
+        "s": 22.68,
+        "e": 22.92
+      },
+      {
+        "w": "kichik",
+        "s": 22.98,
+        "e": 23.22
+      },
+      {
+        "w": "bo‘lgani",
+        "s": 23.26,
+        "e": 23.58
+      },
+      {
+        "w": "uchun",
+        "s": 23.62,
+        "e": 23.82
+      },
+      {
+        "w": "A",
+        "s": 24.04,
+        "e": 24.06
+      },
+      {
+        "w": "B",
+        "s": 24.28,
+        "e": 24.3
+      },
+      {
+        "w": "dan",
+        "s": 24.44,
+        "e": 24.58
+      },
+      {
+        "w": "oldin",
+        "s": 24.76,
+        "e": 25.0
+      },
+      {
+        "w": "kelishi",
+        "s": 25.04,
+        "e": 25.36
+      },
+      {
+        "w": "kollatsiya",
+        "s": 25.42,
+        "e": 25.82
+      },
+      {
+        "w": "orqali",
+        "s": 25.84,
+        "e": 26.1
+      },
+      {
+        "w": "aniqlanadi.",
+        "s": 26.16,
+        "e": 26.6
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "effects",
+    "text": "Collation bazadagi eng muhim amallarni boshqaradi: ORDER BY tartibi, tenglik va taqqoslashlar, upper va lower funksiyalari, hamda LIKE qidiruvi.",
+    "show": "Collation bazadagi eng muhim amallarni boshqaradi: ORDER BY tartibi, tenglik va taqqoslashlar, upper va lower funksiyalari, hamda LIKE qidiruvi.",
+    "say": "Kollatsiya bazadagi eng muhim amallarni boshqaradi: order bay tartibi, tenglik va taqqoslashlar, apper va lover funksiyalari, hamda layk qidiruvi.",
+    "a0": 27.64,
+    "a1": 36.58,
+    "words": [
+      {
+        "w": "Kollatsiya",
+        "s": 27.64,
+        "e": 28.04
+      },
+      {
+        "w": "bazadagi",
+        "s": 28.14,
+        "e": 28.58
+      },
+      {
+        "w": "eng",
+        "s": 28.78,
+        "e": 28.94
+      },
+      {
+        "w": "muhim",
+        "s": 29.0,
+        "e": 29.18
+      },
+      {
+        "w": "amallarni",
+        "s": 29.22,
+        "e": 29.62
+      },
+      {
+        "w": "boshqaradi:",
+        "s": 29.64,
+        "e": 30.0
+      },
+      {
+        "w": "order",
+        "s": 30.66,
+        "e": 30.88
+      },
+      {
+        "w": "bay",
+        "s": 30.92,
+        "e": 31.08
+      },
+      {
+        "w": "tartibi,",
+        "s": 31.12,
+        "e": 31.52
+      },
+      {
+        "w": "tenglik",
+        "s": 32.08,
+        "e": 32.44
+      },
+      {
+        "w": "va",
+        "s": 32.48,
+        "e": 32.54
+      },
+      {
+        "w": "taqqoslashlar,",
+        "s": 32.58,
+        "e": 33.28
+      },
+      {
+        "w": "apper",
+        "s": 33.9,
+        "e": 34.2
+      },
+      {
+        "w": "va",
+        "s": 34.24,
+        "e": 34.3
+      },
+      {
+        "w": "lover",
+        "s": 34.4,
+        "e": 34.64
+      },
+      {
+        "w": "funksiyalari,",
+        "s": 34.66,
+        "e": 35.14
+      },
+      {
+        "w": "hamda",
+        "s": 35.46,
+        "e": 35.72
+      },
+      {
+        "w": "layk",
+        "s": 35.98,
+        "e": 36.2
+      },
+      {
+        "w": "qidiruvi.",
+        "s": 36.24,
+        "e": 36.58
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "effects",
+    "text": "Shuni unutmang: murakkab milliy mintaqalar saralashni sekinlashtirishi mumkin, oddiy C mintaqasi esa faqat baytlar bo‘yicha eng tez ishlaydi.",
+    "show": "Shuni unutmang: murakkab milliy mintaqalar saralashni sekinlashtirishi mumkin, oddiy C mintaqasi esa faqat baytlar bo‘yicha eng tez ishlaydi.",
+    "say": "Shuni unutmang: murakkab milliy mintaqalar saralashni sekinlashtirishi mumkin, oddiy C mintaqasi esa faqat baytlar bo‘yicha eng tez ishlaydi.",
+    "a0": 37.55,
+    "a1": 45.03,
+    "words": [
+      {
+        "w": "Shuni",
+        "s": 37.55,
+        "e": 37.71
+      },
+      {
+        "w": "unutmang:",
+        "s": 37.77,
+        "e": 38.09
+      },
+      {
+        "w": "murakkab",
+        "s": 38.39,
+        "e": 38.85
+      },
+      {
+        "w": "milliy",
+        "s": 38.91,
+        "e": 39.19
+      },
+      {
+        "w": "mintaqalar",
+        "s": 39.23,
+        "e": 39.71
+      },
+      {
+        "w": "saralashni",
+        "s": 39.77,
+        "e": 40.23
+      },
+      {
+        "w": "sekinlashtirishi",
+        "s": 40.29,
+        "e": 40.91
+      },
+      {
+        "w": "mumkin,",
+        "s": 40.95,
+        "e": 41.19
+      },
+      {
+        "w": "oddiy",
+        "s": 41.61,
+        "e": 41.87
+      },
+      {
+        "w": "C",
+        "s": 42.11,
+        "e": 42.13
+      },
+      {
+        "w": "mintaqasi",
+        "s": 42.29,
+        "e": 42.73
+      },
+      {
+        "w": "esa",
+        "s": 42.79,
+        "e": 42.95
+      },
+      {
+        "w": "faqat",
+        "s": 43.15,
+        "e": 43.43
+      },
+      {
+        "w": "baytlar",
+        "s": 43.53,
+        "e": 43.89
+      },
+      {
+        "w": "bo‘yicha",
+        "s": 43.93,
+        "e": 44.17
+      },
+      {
+        "w": "eng",
+        "s": 44.33,
+        "e": 44.45
+      },
+      {
+        "w": "tez",
+        "s": 44.51,
+        "e": 44.67
+      },
+      {
+        "w": "ishlaydi.",
+        "s": 44.69,
+        "e": 45.03
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "providers",
+    "text": "PostgreSQL da mintaqa provayderlari uch xil bo‘ladi: operatsion tizimning libc kutubxonasi, platformadan mustaqil ICU, hamda ichki builtin provayderi.",
+    "show": "PostgreSQL da mintaqa provayderlari uch xil bo‘ladi: operatsion tizimning libc kutubxonasi, platformadan mustaqil ICU, hamda ichki builtin provayderi.",
+    "say": "Postgres da mintaqa provayderlari uch xil bo‘ladi: operatsion tizimning lib-si kutubxonasi, platformadan mustaqil ay-si-yu, hamda ichki bilt-in provayderi.",
+    "a0": 46.07,
+    "a1": 54.66,
+    "words": [
+      {
+        "w": "Postgres",
+        "s": 46.07,
+        "e": 46.47
+      },
+      {
+        "w": "da",
+        "s": 46.51,
+        "e": 46.57
+      },
+      {
+        "w": "mintaqa",
+        "s": 46.65,
+        "e": 46.97
+      },
+      {
+        "w": "provayderlari",
+        "s": 47.01,
+        "e": 47.59
+      },
+      {
+        "w": "uch",
+        "s": 47.67,
+        "e": 47.79
+      },
+      {
+        "w": "xil",
+        "s": 47.81,
+        "e": 47.93
+      },
+      {
+        "w": "bo‘ladi:",
+        "s": 47.95,
+        "e": 48.23
+      },
+      {
+        "w": "operatsion",
+        "s": 48.77,
+        "e": 49.21
+      },
+      {
+        "w": "tizimning",
+        "s": 49.25,
+        "e": 49.63
+      },
+      {
+        "w": "lib-si",
+        "s": 49.77,
+        "e": 50.09
+      },
+      {
+        "w": "kutubxonasi,",
+        "s": 50.19,
+        "e": 50.69
+      },
+      {
+        "w": "platformadan",
+        "s": 51.13,
+        "e": 51.67
+      },
+      {
+        "w": "mustaqil",
+        "s": 51.69,
+        "e": 52.05
+      },
+      {
+        "w": "ay-si-yu,",
+        "s": 52.21,
+        "e": 52.66
+      },
+      {
+        "w": "hamda",
+        "s": 52.96,
+        "e": 53.18
+      },
+      {
+        "w": "ichki",
+        "s": 53.26,
+        "e": 53.5
+      },
+      {
+        "w": "bilt-in",
+        "s": 53.74,
+        "e": 54.14
+      },
+      {
+        "w": "provayderi.",
+        "s": 54.2,
+        "e": 54.66
+      }
+    ]
+  },
+  {
+    "id": "L7",
+    "scene": "providers",
+    "text": "Eng muhim cheklov: bazaning LC_COLLATE va LC_CTYPE sozlamalari yaratilishda belgilanadi va keyin o‘zgartirib bo‘lmaydi! Chunki indekslar buzilib ketishi mumkin.",
+    "show": "Eng muhim cheklov: bazaning LC_COLLATE va LC_CTYPE sozlamalari yaratilishda belgilanadi va keyin o‘zgartirib bo‘lmaydi! Chunki indekslar buzilib ketishi mumkin.",
+    "say": "Eng muhim cheklov: bazaning el-si kolleyt va el-si si-tayp sozlamalari yaratilishda belgilanadi va keyin o‘zgartirib bo‘lmaydi! Chunki indekslar buzilib ketishi mumkin.",
+    "a0": 55.64,
+    "a1": 64.62,
+    "words": [
+      {
+        "w": "Eng",
+        "s": 55.64,
+        "e": 55.76
+      },
+      {
+        "w": "muhim",
+        "s": 55.78,
+        "e": 55.94
+      },
+      {
+        "w": "cheklov:",
+        "s": 55.96,
+        "e": 56.26
+      },
+      {
+        "w": "bazaning",
+        "s": 56.6,
+        "e": 57.0
+      },
+      {
+        "w": "el-si",
+        "s": 57.34,
+        "e": 57.64
+      },
+      {
+        "w": "kolleyt",
+        "s": 57.76,
+        "e": 58.2
+      },
+      {
+        "w": "va",
+        "s": 58.24,
+        "e": 58.3
+      },
+      {
+        "w": "el-si",
+        "s": 58.44,
+        "e": 58.68
+      },
+      {
+        "w": "si-tayp",
+        "s": 58.82,
+        "e": 59.22
+      },
+      {
+        "w": "sozlamalari",
+        "s": 59.28,
+        "e": 59.78
+      },
+      {
+        "w": "yaratilishda",
+        "s": 59.84,
+        "e": 60.34
+      },
+      {
+        "w": "belgilanadi",
+        "s": 60.38,
+        "e": 60.94
+      },
+      {
+        "w": "va",
+        "s": 61.04,
+        "e": 61.1
+      },
+      {
+        "w": "keyin",
+        "s": 61.22,
+        "e": 61.5
+      },
+      {
+        "w": "o‘zgartirib",
+        "s": 61.6,
+        "e": 62.08
+      },
+      {
+        "w": "bo‘lmaydi!",
+        "s": 62.12,
+        "e": 62.5
+      },
+      {
+        "w": "Chunki",
+        "s": 62.84,
+        "e": 63.08
+      },
+      {
+        "w": "indekslar",
+        "s": 63.42,
+        "e": 63.84
+      },
+      {
+        "w": "buzilib",
+        "s": 63.88,
+        "e": 64.14
+      },
+      {
+        "w": "ketishi",
+        "s": 64.14,
+        "e": 64.38
+      },
+      {
+        "w": "mumkin.",
+        "s": 64.4,
+        "e": 64.62
+      }
+    ]
+  },
+  {
+    "id": "L8",
+    "scene": "deterministic",
+    "text": "Collationlar deterministik va nondeterministik turlarga bo‘linadi. Deterministik collation faqat baytlari bir xil bo‘lgan satrlarnigina teng deb hisoblaydi.",
+    "show": "Collationlar deterministik va nondeterministik turlarga bo‘linadi. Deterministik collation faqat baytlari bir xil bo‘lgan satrlarnigina teng deb hisoblaydi.",
+    "say": "Kollatsiyalar deterministik va nondeterministik turlarga bo‘linadi. Deterministik kollatsiya faqat baytlari bir xil bo‘lgan satrlarnigina teng deb hisoblaydi.",
+    "a0": 66.0,
+    "a1": 73.09,
+    "words": [
+      {
+        "w": "Kollatsiyalar",
+        "s": 66.0,
+        "e": 66.54
+      },
+      {
+        "w": "deterministik",
+        "s": 66.6,
+        "e": 67.24
+      },
+      {
+        "w": "va",
+        "s": 67.26,
+        "e": 67.32
+      },
+      {
+        "w": "nondeterministik",
+        "s": 67.38,
+        "e": 68.15
+      },
+      {
+        "w": "turlarga",
+        "s": 68.17,
+        "e": 68.51
+      },
+      {
+        "w": "bo‘linadi.",
+        "s": 68.53,
+        "e": 68.85
+      },
+      {
+        "w": "Deterministik",
+        "s": 69.47,
+        "e": 70.03
+      },
+      {
+        "w": "kollatsiya",
+        "s": 70.05,
+        "e": 70.41
+      },
+      {
+        "w": "faqat",
+        "s": 70.43,
+        "e": 70.69
+      },
+      {
+        "w": "baytlari",
+        "s": 70.77,
+        "e": 71.13
+      },
+      {
+        "w": "bir",
+        "s": 71.17,
+        "e": 71.29
+      },
+      {
+        "w": "xil",
+        "s": 71.31,
+        "e": 71.43
+      },
+      {
+        "w": "bo‘lgan",
+        "s": 71.45,
+        "e": 71.71
+      },
+      {
+        "w": "satrlarnigina",
+        "s": 71.77,
+        "e": 72.35
+      },
+      {
+        "w": "teng",
+        "s": 72.39,
+        "e": 72.55
+      },
+      {
+        "w": "deb",
+        "s": 72.57,
+        "e": 72.67
+      },
+      {
+        "w": "hisoblaydi.",
+        "s": 72.69,
+        "e": 73.09
+      }
+    ]
+  },
+  {
+    "id": "L9",
+    "scene": "deterministic",
+    "text": "Nondeterministik collation esa katta-kichik harflardan qat’i nazar, masalan katta Salom bilan kichik salomni teng deb ko‘rish imkonini beradi.",
+    "show": "Nondeterministik collation esa katta-kichik harflardan qat’i nazar, masalan katta Salom bilan kichik salomni teng deb ko‘rish imkonini beradi.",
+    "say": "Nondeterministik kollatsiya esa katta-kichik harflardan qat’i nazar, masalan katta Salom bilan kichik salomni teng deb ko‘rish imkonini beradi.",
+    "a0": 73.89,
+    "a1": 80.99,
+    "words": [
+      {
+        "w": "Nondeterministik",
+        "s": 73.89,
+        "e": 74.59
+      },
+      {
+        "w": "kollatsiya",
+        "s": 74.61,
+        "e": 74.99
+      },
+      {
+        "w": "esa",
+        "s": 75.03,
+        "e": 75.13
+      },
+      {
+        "w": "katta-kichik",
+        "s": 75.47,
+        "e": 75.95
+      },
+      {
+        "w": "harflardan",
+        "s": 75.99,
+        "e": 76.43
+      },
+      {
+        "w": "qat’i",
+        "s": 76.49,
+        "e": 76.75
+      },
+      {
+        "w": "nazar,",
+        "s": 76.83,
+        "e": 77.07
+      },
+      {
+        "w": "masalan",
+        "s": 77.29,
+        "e": 77.59
+      },
+      {
+        "w": "katta",
+        "s": 77.83,
+        "e": 78.15
+      },
+      {
+        "w": "Salom",
+        "s": 78.27,
+        "e": 78.55
+      },
+      {
+        "w": "bilan",
+        "s": 78.61,
+        "e": 78.81
+      },
+      {
+        "w": "kichik",
+        "s": 78.89,
+        "e": 79.13
+      },
+      {
+        "w": "salomni",
+        "s": 79.21,
+        "e": 79.63
+      },
+      {
+        "w": "teng",
+        "s": 79.71,
+        "e": 79.93
+      },
+      {
+        "w": "deb",
+        "s": 79.95,
+        "e": 80.09
+      },
+      {
+        "w": "ko‘rish",
+        "s": 80.11,
+        "e": 80.35
+      },
+      {
+        "w": "imkonini",
+        "s": 80.37,
+        "e": 80.73
+      },
+      {
+        "w": "beradi.",
+        "s": 80.75,
+        "e": 80.99
+      }
+    ]
+  },
+  {
+    "id": "L10",
+    "scene": "xulosa",
+    "text": "Xulosa: o‘zbek tili kabi maxsus alifbolarni to‘g‘ri saralash va harflar registrini boshqarishda mos collation tanlash juda muhimdir.",
+    "show": "Xulosa: o‘zbek tili kabi maxsus alifbolarni to‘g‘ri saralash va harflar registrini boshqarishda mos collation tanlash juda muhimdir.",
+    "say": "Xulosa: o‘zbek tili kabi maxsus alifbolarni to‘g‘ri saralash va harflar registrini boshqarishda mos kollatsiya tanlash juda muhimdir.",
+    "a0": 82.01,
+    "a1": 88.64,
+    "words": [
+      {
+        "w": "Xulosa:",
+        "s": 82.01,
+        "e": 82.33
+      },
+      {
+        "w": "o‘zbek",
+        "s": 82.6,
+        "e": 82.9
+      },
+      {
+        "w": "tili",
+        "s": 82.94,
+        "e": 83.08
+      },
+      {
+        "w": "kabi",
+        "s": 83.12,
+        "e": 83.3
+      },
+      {
+        "w": "maxsus",
+        "s": 83.38,
+        "e": 83.72
+      },
+      {
+        "w": "alifbolarni",
+        "s": 83.78,
+        "e": 84.36
+      },
+      {
+        "w": "to‘g‘ri",
+        "s": 84.46,
+        "e": 84.72
+      },
+      {
+        "w": "saralash",
+        "s": 84.76,
+        "e": 85.12
+      },
+      {
+        "w": "va",
+        "s": 85.16,
+        "e": 85.22
+      },
+      {
+        "w": "harflar",
+        "s": 85.3,
+        "e": 85.68
+      },
+      {
+        "w": "registrini",
+        "s": 85.74,
+        "e": 86.2
+      },
+      {
+        "w": "boshqarishda",
+        "s": 86.22,
+        "e": 86.68
+      },
+      {
+        "w": "mos",
+        "s": 87.0,
+        "e": 87.22
+      },
+      {
+        "w": "kollatsiya",
+        "s": 87.28,
+        "e": 87.7
+      },
+      {
+        "w": "tanlash",
+        "s": 87.72,
+        "e": 88.02
+      },
+      {
+        "w": "juda",
+        "s": 88.04,
+        "e": 88.2
+      },
+      {
+        "w": "muhimdir.",
+        "s": 88.26,
+        "e": 88.64
+      }
+    ]
+  },
+  {
+    "id": "L11",
+    "scene": "xulosa",
+    "text": "Keyingi qismda ushbu qoidalarni PostgreSQL terminalida o‘zbekcha so‘zlar bilan amalda sinab ko‘ramiz.",
+    "show": "Keyingi qismda ushbu qoidalarni PostgreSQL terminalida o‘zbekcha so‘zlar bilan amalda sinab ko‘ramiz.",
+    "say": "Keyingi qismda ushbu qoidalarni Postgres terminalida o‘zbekcha so‘zlar bilan amalda sinab ko‘ramiz.",
+    "a0": 89.4,
+    "a1": 93.9,
+    "words": [
+      {
+        "w": "Keyingi",
+        "s": 89.4,
+        "e": 89.64
+      },
+      {
+        "w": "qismda",
+        "s": 89.68,
+        "e": 89.94
+      },
+      {
+        "w": "ushbu",
+        "s": 90.22,
+        "e": 90.42
+      },
+      {
+        "w": "qoidalarni",
+        "s": 90.46,
+        "e": 90.92
+      },
+      {
+        "w": "Postgres",
+        "s": 91.0,
+        "e": 91.41
+      },
+      {
+        "w": "terminalida",
+        "s": 91.41,
+        "e": 91.89
+      },
+      {
+        "w": "o‘zbekcha",
+        "s": 92.07,
+        "e": 92.43
+      },
+      {
+        "w": "so‘zlar",
+        "s": 92.47,
+        "e": 92.75
+      },
+      {
+        "w": "bilan",
+        "s": 92.79,
+        "e": 92.95
+      },
+      {
+        "w": "amalda",
+        "s": 93.07,
+        "e": 93.36
+      },
+      {
+        "w": "sinab",
+        "s": 93.38,
+        "e": 93.58
+      },
+      {
+        "w": "ko‘ramiz.",
+        "s": 93.6,
+        "e": 93.9
+      }
+    ]
+  }
+]
