@@ -1,0 +1,615 @@
+[
+  {
+    "id": "g1",
+    "scene": "kirish",
+    "text": "PostgreSQL 18 da t1 va t2 jadvallarini yaratib, turli birlashtirish amallarini real natijalar bilan ko'ramiz.",
+    "show": "PostgreSQL 18 da t1 va t2 jadvallarini yaratib, turli birlashtirish amallarini real natijalar bilan ko'ramiz.",
+    "say": "Postgres 18 da t1 va t2 jadvallarini yaratib, turli birlashtirish amallarini real natijalar bilan ko'ramiz.",
+    "a0": 0.24,
+    "a1": 7.3,
+    "words": [
+      {
+        "w": "Postgres",
+        "s": 0.24,
+        "e": 0.74
+      },
+      {
+        "w": "18",
+        "s": 0.74,
+        "e": 0.74
+      },
+      {
+        "w": "da",
+        "s": 1.34,
+        "e": 1.44
+      },
+      {
+        "w": "t1",
+        "s": 1.74,
+        "e": 1.76
+      },
+      {
+        "w": "va",
+        "s": 2.22,
+        "e": 2.3
+      },
+      {
+        "w": "t2",
+        "s": 2.52,
+        "e": 2.54
+      },
+      {
+        "w": "jadvallarini",
+        "s": 2.96,
+        "e": 3.56
+      },
+      {
+        "w": "yaratib,",
+        "s": 3.62,
+        "e": 3.98
+      },
+      {
+        "w": "turli",
+        "s": 4.24,
+        "e": 4.54
+      },
+      {
+        "w": "birlashtirish",
+        "s": 4.62,
+        "e": 5.14
+      },
+      {
+        "w": "amallarini",
+        "s": 5.22,
+        "e": 5.7
+      },
+      {
+        "w": "real",
+        "s": 5.94,
+        "e": 6.2
+      },
+      {
+        "w": "natijalar",
+        "s": 6.26,
+        "e": 6.7
+      },
+      {
+        "w": "bilan",
+        "s": 6.74,
+        "e": 6.92
+      },
+      {
+        "w": "ko'ramiz.",
+        "s": 6.96,
+        "e": 7.3
+      }
+    ]
+  },
+  {
+    "id": "g2",
+    "scene": "inner_va_natural",
+    "text": "INNER JOIN faqat bir xil raqamli 1 va 3 qatorlarni qaytaradi.",
+    "show": "INNER JOIN faqat bir xil raqamli 1 va 3 qatorlarni qaytaradi.",
+    "say": "Inner joyn faqat bir xil raqamli 1 va 3 qatorlarni qaytaradi.",
+    "a0": 8.13,
+    "a1": 11.83,
+    "words": [
+      {
+        "w": "Inner",
+        "s": 8.13,
+        "e": 8.41
+      },
+      {
+        "w": "joyn",
+        "s": 8.47,
+        "e": 8.79
+      },
+      {
+        "w": "faqat",
+        "s": 8.95,
+        "e": 9.25
+      },
+      {
+        "w": "bir",
+        "s": 9.35,
+        "e": 9.47
+      },
+      {
+        "w": "xil",
+        "s": 9.53,
+        "e": 9.65
+      },
+      {
+        "w": "raqamli",
+        "s": 9.71,
+        "e": 10.09
+      },
+      {
+        "w": "1",
+        "s": 10.09,
+        "e": 10.09
+      },
+      {
+        "w": "va",
+        "s": 10.45,
+        "e": 10.53
+      },
+      {
+        "w": "3",
+        "s": 10.53,
+        "e": 10.53
+      },
+      {
+        "w": "qatorlarni",
+        "s": 10.89,
+        "e": 11.39
+      },
+      {
+        "w": "qaytaradi.",
+        "s": 11.43,
+        "e": 11.83
+      }
+    ]
+  },
+  {
+    "id": "g3",
+    "scene": "inner_va_natural",
+    "text": "USING yordamida takrorlanuvchi ustun qisqartiriladi, NATURAL esa umumiy nomli ustunlarni avtomatik topadi.",
+    "show": "USING yordamida takrorlanuvchi ustun qisqartiriladi, NATURAL esa umumiy nomli ustunlarni avtomatik topadi.",
+    "say": "Yuzing yordamida takrorlanuvchi ustun qisqartiriladi, natural esa umumiy nomli ustunlarni avtomatik topadi.",
+    "a0": 12.79,
+    "a1": 19.47,
+    "words": [
+      {
+        "w": "Yuzing",
+        "s": 12.79,
+        "e": 13.13
+      },
+      {
+        "w": "yordamida",
+        "s": 13.17,
+        "e": 13.63
+      },
+      {
+        "w": "takrorlanuvchi",
+        "s": 13.79,
+        "e": 14.41
+      },
+      {
+        "w": "ustun",
+        "s": 14.47,
+        "e": 14.69
+      },
+      {
+        "w": "qisqartiriladi,",
+        "s": 14.75,
+        "e": 15.47
+      },
+      {
+        "w": "natural",
+        "s": 16.07,
+        "e": 16.51
+      },
+      {
+        "w": "esa",
+        "s": 16.57,
+        "e": 16.75
+      },
+      {
+        "w": "umumiy",
+        "s": 17.11,
+        "e": 17.45
+      },
+      {
+        "w": "nomli",
+        "s": 17.53,
+        "e": 17.83
+      },
+      {
+        "w": "ustunlarni",
+        "s": 17.91,
+        "e": 18.45
+      },
+      {
+        "w": "avtomatik",
+        "s": 18.63,
+        "e": 19.13
+      },
+      {
+        "w": "topadi.",
+        "s": 19.17,
+        "e": 19.47
+      }
+    ]
+  },
+  {
+    "id": "g4",
+    "scene": "tashqi_birlashtirishlar",
+    "text": "LEFT JOIN t1 dagi juftsiz 2 qatorini, RIGHT JOIN esa t2 dagi 5 qatorini NULL bilan saqlaydi.",
+    "show": "LEFT JOIN t1 dagi juftsiz 2 qatorini, RIGHT JOIN esa t2 dagi 5 qatorini NULL bilan saqlaydi.",
+    "say": "Left joyn t1 dagi juftsiz 2 qatorini, rayt joyn esa t2 dagi 5 qatorini null bilan saqlaydi.",
+    "a0": 20.29,
+    "a1": 27.2,
+    "words": [
+      {
+        "w": "Left",
+        "s": 20.29,
+        "e": 20.57
+      },
+      {
+        "w": "joyn",
+        "s": 20.63,
+        "e": 20.95
+      },
+      {
+        "w": "t1",
+        "s": 21.25,
+        "e": 21.27
+      },
+      {
+        "w": "dagi",
+        "s": 21.63,
+        "e": 21.83
+      },
+      {
+        "w": "juftsiz",
+        "s": 21.89,
+        "e": 22.31
+      },
+      {
+        "w": "2",
+        "s": 22.31,
+        "e": 22.31
+      },
+      {
+        "w": "qatorini,",
+        "s": 22.84,
+        "e": 23.26
+      },
+      {
+        "w": "rayt",
+        "s": 23.74,
+        "e": 23.98
+      },
+      {
+        "w": "joyn",
+        "s": 24.04,
+        "e": 24.3
+      },
+      {
+        "w": "esa",
+        "s": 24.34,
+        "e": 24.5
+      },
+      {
+        "w": "t2",
+        "s": 24.74,
+        "e": 24.76
+      },
+      {
+        "w": "dagi",
+        "s": 25.1,
+        "e": 25.28
+      },
+      {
+        "w": "5",
+        "s": 25.28,
+        "e": 25.28
+      },
+      {
+        "w": "qatorini",
+        "s": 25.62,
+        "e": 26.06
+      },
+      {
+        "w": "null",
+        "s": 26.3,
+        "e": 26.5
+      },
+      {
+        "w": "bilan",
+        "s": 26.54,
+        "e": 26.76
+      },
+      {
+        "w": "saqlaydi.",
+        "s": 26.8,
+        "e": 27.2
+      }
+    ]
+  },
+  {
+    "id": "g5",
+    "scene": "tashqi_birlashtirishlar",
+    "text": "FULL JOIN ikkala tomonning barcha qatorlarini to'liq birlashtiradi.",
+    "show": "FULL JOIN ikkala tomonning barcha qatorlarini to'liq birlashtiradi.",
+    "say": "Full joyn ikkala tomonning barcha qatorlarini to'liq birlashtiradi.",
+    "a0": 28.34,
+    "a1": 31.44,
+    "words": [
+      {
+        "w": "Full",
+        "s": 28.34,
+        "e": 28.54
+      },
+      {
+        "w": "joyn",
+        "s": 28.62,
+        "e": 28.88
+      },
+      {
+        "w": "ikkala",
+        "s": 28.98,
+        "e": 29.24
+      },
+      {
+        "w": "tomonning",
+        "s": 29.28,
+        "e": 29.68
+      },
+      {
+        "w": "barcha",
+        "s": 29.74,
+        "e": 29.96
+      },
+      {
+        "w": "qatorlarini",
+        "s": 30.02,
+        "e": 30.54
+      },
+      {
+        "w": "to'liq",
+        "s": 30.62,
+        "e": 30.86
+      },
+      {
+        "w": "birlashtiradi.",
+        "s": 30.92,
+        "e": 31.44
+      }
+    ]
+  },
+  {
+    "id": "g6",
+    "scene": "on_vs_where_va_filtrlash",
+    "text": "Tashqi birlashtirishda shartni ON ga yozsak juftsiz qatorlar saqlanadi, WHERE ga yozsak elakdan o'tmay yo'qoladi.",
+    "show": "Tashqi birlashtirishda shartni ON ga yozsak juftsiz qatorlar saqlanadi, WHERE ga yozsak elakdan o'tmay yo'qoladi.",
+    "say": "Tashqi birlashtirishda shartni on ga yozsak juftsiz qatorlar saqlanadi, veer ga yozsak elakdan o'tmay yo'qoladi.",
+    "a0": 32.46,
+    "a1": 39.31,
+    "words": [
+      {
+        "w": "Tashqi",
+        "s": 32.46,
+        "e": 32.74
+      },
+      {
+        "w": "birlashtirishda",
+        "s": 32.78,
+        "e": 33.38
+      },
+      {
+        "w": "shartni",
+        "s": 33.58,
+        "e": 33.96
+      },
+      {
+        "w": "on",
+        "s": 34.22,
+        "e": 34.34
+      },
+      {
+        "w": "ga",
+        "s": 34.44,
+        "e": 34.5
+      },
+      {
+        "w": "yozsak",
+        "s": 34.5,
+        "e": 34.92
+      },
+      {
+        "w": "juftsiz",
+        "s": 35.12,
+        "e": 35.47
+      },
+      {
+        "w": "qatorlar",
+        "s": 35.51,
+        "e": 35.89
+      },
+      {
+        "w": "saqlanadi,",
+        "s": 35.93,
+        "e": 36.39
+      },
+      {
+        "w": "veer",
+        "s": 36.95,
+        "e": 37.19
+      },
+      {
+        "w": "ga",
+        "s": 37.25,
+        "e": 37.31
+      },
+      {
+        "w": "yozsak",
+        "s": 37.31,
+        "e": 37.67
+      },
+      {
+        "w": "elakdan",
+        "s": 37.95,
+        "e": 38.37
+      },
+      {
+        "w": "o'tmay",
+        "s": 38.51,
+        "e": 38.83
+      },
+      {
+        "w": "yo'qoladi.",
+        "s": 38.89,
+        "e": 39.31
+      }
+    ]
+  },
+  {
+    "id": "g7",
+    "scene": "on_vs_where_va_filtrlash",
+    "text": "Juftsiz qatorlarni topish uchun esa o'ng kalitga IS NULL sharti beriladi.",
+    "show": "Juftsiz qatorlarni topish uchun esa o'ng kalitga IS NULL sharti beriladi.",
+    "say": "Juftsiz qatorlarni topish uchun esa o'ng kalitga iz null sharti beriladi.",
+    "a0": 40.27,
+    "a1": 44.17,
+    "words": [
+      {
+        "w": "Juftsiz",
+        "s": 40.27,
+        "e": 40.61
+      },
+      {
+        "w": "qatorlarni",
+        "s": 40.65,
+        "e": 41.13
+      },
+      {
+        "w": "topish",
+        "s": 41.17,
+        "e": 41.37
+      },
+      {
+        "w": "uchun",
+        "s": 41.41,
+        "e": 41.57
+      },
+      {
+        "w": "esa",
+        "s": 41.61,
+        "e": 41.75
+      },
+      {
+        "w": "o'ng",
+        "s": 42.11,
+        "e": 42.25
+      },
+      {
+        "w": "kalitga",
+        "s": 42.29,
+        "e": 42.69
+      },
+      {
+        "w": "iz",
+        "s": 43.05,
+        "e": 43.19
+      },
+      {
+        "w": "null",
+        "s": 43.27,
+        "e": 43.45
+      },
+      {
+        "w": "sharti",
+        "s": 43.51,
+        "e": 43.77
+      },
+      {
+        "w": "beriladi.",
+        "s": 43.79,
+        "e": 44.17
+      }
+    ]
+  },
+  {
+    "id": "g8",
+    "scene": "lateral_demo",
+    "text": "LATERAL yordamida esa har bir guruhdan eng yuqori 2 ta ball to'plagan talabalarni alohida ajratib oldik.",
+    "show": "LATERAL yordamida esa har bir guruhdan eng yuqori 2 ta ball to'plagan talabalarni alohida ajratib oldik.",
+    "say": "Lateral yordamida esa har bir guruhdan eng yuqori 2 ta ball to'plagan talabalarni alohida ajratib oldik.",
+    "a0": 45.17,
+    "a1": 50.8,
+    "words": [
+      {
+        "w": "Lateral",
+        "s": 45.17,
+        "e": 45.53
+      },
+      {
+        "w": "yordamida",
+        "s": 45.59,
+        "e": 45.98
+      },
+      {
+        "w": "esa",
+        "s": 46.02,
+        "e": 46.18
+      },
+      {
+        "w": "har",
+        "s": 46.48,
+        "e": 46.68
+      },
+      {
+        "w": "bir",
+        "s": 46.72,
+        "e": 46.84
+      },
+      {
+        "w": "guruhdan",
+        "s": 46.88,
+        "e": 47.26
+      },
+      {
+        "w": "eng",
+        "s": 47.42,
+        "e": 47.56
+      },
+      {
+        "w": "yuqori",
+        "s": 47.62,
+        "e": 48.0
+      },
+      {
+        "w": "2",
+        "s": 48.0,
+        "e": 48.0
+      },
+      {
+        "w": "ta",
+        "s": 48.28,
+        "e": 48.36
+      },
+      {
+        "w": "ball",
+        "s": 48.4,
+        "e": 48.56
+      },
+      {
+        "w": "to'plagan",
+        "s": 48.6,
+        "e": 49.0
+      },
+      {
+        "w": "talabalarni",
+        "s": 49.04,
+        "e": 49.56
+      },
+      {
+        "w": "alohida",
+        "s": 49.76,
+        "e": 50.16
+      },
+      {
+        "w": "ajratib",
+        "s": 50.22,
+        "e": 50.56
+      },
+      {
+        "w": "oldik.",
+        "s": 50.6,
+        "e": 50.8
+      }
+    ]
+  }
+]
