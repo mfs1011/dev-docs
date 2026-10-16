@@ -1,0 +1,31 @@
+WEBVTT
+
+1
+00:01.420 --> 00:12.340
+Bazaga minglab yoki millionlab qatorlarni bittalab INSERT qilish juda sekin, chunki har
+bir qatorda ulanish, so‘rovni tahlil qilish va diskka yozish xarajatlari takrorlanadi.
+
+2
+00:15.270 --> 00:25.480
+MySQL tahliliga ko‘ra, qatorning o‘zini yozish umumiy vaqtning kichik bir qismidir; shuning
+uchun avtokommitni o‘chirib, barcha yozuvlarni bitta tranzaksiyaga birlashtirish kerak.
+
+3
+00:28.660 --> 00:38.410
+PostgreSQL da ommaviy yuklashning eng tez yo‘li bu COPY buyrug‘idir; u ma’lumotlarni
+to‘g‘ridan-to‘g‘ri jadval va fayl o‘rtasida minimal qo‘shimcha xarajat bilan ko‘chiradi.
+
+4
+00:41.300 --> 00:52.060
+COPY serverdagi fayllarni maxsus huquq bilan o‘qiydi, oddiy foydalanuvchilar esa mijoz
+kompyuteridagi fayllarni yuklash uchun psql ning teskari sleshli copy buyrug‘idan foydalanadilar.
+
+5
+00:55.070 --> 01:05.610
+Maksimal tezlik uchun avval bo‘sh jadvalga yuklash, so‘ngra indekslar va tashqi kalitlarni
+yaratish, shuningdek xotira hajmini oshirib, oxirida albatta tahlil o‘tkazish tavsiya etiladi.
+
+6
+01:08.480 --> 01:16.830
+PostgreSQL o‘n sakkizda birinchi xatoda to‘xtash o‘rniga, xato qatorlarni e’tiborsiz
+qoldirish va ruxsat etilgan xatolar chegarasini belgilash imkoniyati mavjud.

@@ -1,0 +1,588 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Amaliyot uchun mahsulotlar nuqta si-es-vi faylidan foydalanamiz, unda beshta qator bo‘lib, ikkitasida narx o‘rnida matnli xato qiymatlar yozilgan.",
+    "show": "Amaliyot uchun mahsulotlar nuqta si-es-vi faylidan foydalanamiz, unda beshta qator bo‘lib, ikkitasida narx o‘rnida matnli xato qiymatlar yozilgan.",
+    "say": "Amaliyot uchun mahsulotlar nuqta si-es-vi faylidan foydalanamiz, unda beshta qator bo‘lib, ikkitasida narx o‘rnida matnli xato qiymatlar yozilgan.",
+    "a0": 0.26,
+    "a1": 9.47,
+    "words": [
+      {
+        "w": "Amaliyot",
+        "s": 0.26,
+        "e": 0.64
+      },
+      {
+        "w": "uchun",
+        "s": 0.68,
+        "e": 0.92
+      },
+      {
+        "w": "mahsulotlar",
+        "s": 1.2,
+        "e": 1.9
+      },
+      {
+        "w": "nuqta",
+        "s": 1.96,
+        "e": 2.26
+      },
+      {
+        "w": "si-es-vi",
+        "s": 2.48,
+        "e": 2.9
+      },
+      {
+        "w": "faylidan",
+        "s": 2.98,
+        "e": 3.42
+      },
+      {
+        "w": "foydalanamiz,",
+        "s": 3.44,
+        "e": 4.02
+      },
+      {
+        "w": "unda",
+        "s": 4.7,
+        "e": 4.9
+      },
+      {
+        "w": "beshta",
+        "s": 5.3,
+        "e": 5.58
+      },
+      {
+        "w": "qator",
+        "s": 5.64,
+        "e": 5.92
+      },
+      {
+        "w": "bo‘lib,",
+        "s": 5.96,
+        "e": 6.2
+      },
+      {
+        "w": "ikkitasida",
+        "s": 6.54,
+        "e": 6.96
+      },
+      {
+        "w": "narx",
+        "s": 7.1,
+        "e": 7.36
+      },
+      {
+        "w": "o‘rnida",
+        "s": 7.42,
+        "e": 7.73
+      },
+      {
+        "w": "matnli",
+        "s": 7.83,
+        "e": 8.19
+      },
+      {
+        "w": "xato",
+        "s": 8.31,
+        "e": 8.57
+      },
+      {
+        "w": "qiymatlar",
+        "s": 8.67,
+        "e": 9.07
+      },
+      {
+        "w": "yozilgan.",
+        "s": 9.09,
+        "e": 9.47
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "default_error",
+    "text": "Sukut bo‘yicha COPY birinchi xatodayoq to‘xtaydi va xatodan oldingi to‘g‘ri qatorlarni ham bekor qilib, jadvalni bo‘sh qoldiradi.",
+    "show": "Sukut bo‘yicha COPY birinchi xatodayoq to‘xtaydi va xatodan oldingi to‘g‘ri qatorlarni ham bekor qilib, jadvalni bo‘sh qoldiradi.",
+    "say": "Sukut bo‘yicha kopi birinchi xatodayoq to‘xtaydi va xatodan oldingi to‘g‘ri qatorlarni ham bekor qilib, jadvalni bo‘sh qoldiradi.",
+    "a0": 10.85,
+    "a1": 17.93,
+    "words": [
+      {
+        "w": "Sukut",
+        "s": 10.85,
+        "e": 11.11
+      },
+      {
+        "w": "bo‘yicha",
+        "s": 11.17,
+        "e": 11.51
+      },
+      {
+        "w": "kopi",
+        "s": 11.75,
+        "e": 12.03
+      },
+      {
+        "w": "birinchi",
+        "s": 12.15,
+        "e": 12.51
+      },
+      {
+        "w": "xatodayoq",
+        "s": 12.55,
+        "e": 13.07
+      },
+      {
+        "w": "to‘xtaydi",
+        "s": 13.13,
+        "e": 13.63
+      },
+      {
+        "w": "va",
+        "s": 13.73,
+        "e": 13.81
+      },
+      {
+        "w": "xatodan",
+        "s": 14.15,
+        "e": 14.55
+      },
+      {
+        "w": "oldingi",
+        "s": 14.65,
+        "e": 14.97
+      },
+      {
+        "w": "to‘g‘ri",
+        "s": 15.05,
+        "e": 15.33
+      },
+      {
+        "w": "qatorlarni",
+        "s": 15.37,
+        "e": 15.85
+      },
+      {
+        "w": "ham",
+        "s": 15.87,
+        "e": 16.01
+      },
+      {
+        "w": "bekor",
+        "s": 16.07,
+        "e": 16.37
+      },
+      {
+        "w": "qilib,",
+        "s": 16.39,
+        "e": 16.59
+      },
+      {
+        "w": "jadvalni",
+        "s": 16.87,
+        "e": 17.27
+      },
+      {
+        "w": "bo‘sh",
+        "s": 17.33,
+        "e": 17.53
+      },
+      {
+        "w": "qoldiradi.",
+        "s": 17.57,
+        "e": 17.93
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "on_error_ignore",
+    "text": "On error ignor va log verbositi sozlamalari bilan xato qatorlar tashlab ketiladi, to‘g‘ri uchta qator esa jadvalga muvaffaqiyatli yuklanadi.",
+    "show": "On error ignor va log verbositi sozlamalari bilan xato qatorlar tashlab ketiladi, to‘g‘ri uchta qator esa jadvalga muvaffaqiyatli yuklanadi.",
+    "say": "On error ignor va log verbositi sozlamalari bilan xato qatorlar tashlab ketiladi, to‘g‘ri uchta qator esa jadvalga muvaffaqiyatli yuklanadi.",
+    "a0": 19.53,
+    "a1": 27.68,
+    "words": [
+      {
+        "w": "On",
+        "s": 19.53,
+        "e": 19.67
+      },
+      {
+        "w": "error",
+        "s": 19.87,
+        "e": 20.15
+      },
+      {
+        "w": "ignor",
+        "s": 20.25,
+        "e": 20.63
+      },
+      {
+        "w": "va",
+        "s": 20.89,
+        "e": 20.97
+      },
+      {
+        "w": "log",
+        "s": 21.27,
+        "e": 21.45
+      },
+      {
+        "w": "verbositi",
+        "s": 21.49,
+        "e": 21.99
+      },
+      {
+        "w": "sozlamalari",
+        "s": 22.05,
+        "e": 22.56
+      },
+      {
+        "w": "bilan",
+        "s": 22.58,
+        "e": 22.76
+      },
+      {
+        "w": "xato",
+        "s": 23.1,
+        "e": 23.32
+      },
+      {
+        "w": "qatorlar",
+        "s": 23.38,
+        "e": 23.78
+      },
+      {
+        "w": "tashlab",
+        "s": 23.84,
+        "e": 24.14
+      },
+      {
+        "w": "ketiladi,",
+        "s": 24.16,
+        "e": 24.52
+      },
+      {
+        "w": "to‘g‘ri",
+        "s": 24.94,
+        "e": 25.22
+      },
+      {
+        "w": "uchta",
+        "s": 25.28,
+        "e": 25.5
+      },
+      {
+        "w": "qator",
+        "s": 25.54,
+        "e": 25.78
+      },
+      {
+        "w": "esa",
+        "s": 25.84,
+        "e": 26.0
+      },
+      {
+        "w": "jadvalga",
+        "s": 26.16,
+        "e": 26.56
+      },
+      {
+        "w": "muvaffaqiyatli",
+        "s": 26.62,
+        "e": 27.22
+      },
+      {
+        "w": "yuklanadi.",
+        "s": 27.26,
+        "e": 27.68
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "reject_limit",
+    "text": "PostgreSQL o‘n sakkizdagi ridjekt limit parametri yordamida ruxsat etilgan xatolar soni bittadan oshganda yuklashni to‘xtatish mumkin.",
+    "show": "PostgreSQL o‘n sakkizdagi ridjekt limit parametri yordamida ruxsat etilgan xatolar soni bittadan oshganda yuklashni to‘xtatish mumkin.",
+    "say": "Postgres o‘n sakkizdagi ridjekt limit parametri yordamida ruxsat etilgan xatolar soni bittadan oshganda yuklashni to‘xtatish mumkin.",
+    "a0": 29.1,
+    "a1": 36.04,
+    "words": [
+      {
+        "w": "Postgres",
+        "s": 29.1,
+        "e": 30.1
+      },
+      {
+        "w": "o‘n",
+        "s": 30.1,
+        "e": 30.16
+      },
+      {
+        "w": "sakkizdagi",
+        "s": 30.16,
+        "e": 30.42
+      },
+      {
+        "w": "ridjekt",
+        "s": 30.42,
+        "e": 30.78
+      },
+      {
+        "w": "limit",
+        "s": 30.84,
+        "e": 31.06
+      },
+      {
+        "w": "parametri",
+        "s": 31.1,
+        "e": 31.5
+      },
+      {
+        "w": "yordamida",
+        "s": 31.54,
+        "e": 31.96
+      },
+      {
+        "w": "ruxsat",
+        "s": 32.34,
+        "e": 32.58
+      },
+      {
+        "w": "etilgan",
+        "s": 32.64,
+        "e": 32.94
+      },
+      {
+        "w": "xatolar",
+        "s": 32.96,
+        "e": 33.34
+      },
+      {
+        "w": "soni",
+        "s": 33.38,
+        "e": 33.64
+      },
+      {
+        "w": "bittadan",
+        "s": 33.84,
+        "e": 34.26
+      },
+      {
+        "w": "oshganda",
+        "s": 34.38,
+        "e": 34.78
+      },
+      {
+        "w": "yuklashni",
+        "s": 34.9,
+        "e": 35.32
+      },
+      {
+        "w": "to‘xtatish",
+        "s": 35.36,
+        "e": 35.74
+      },
+      {
+        "w": "mumkin.",
+        "s": 35.78,
+        "e": 36.04
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "server_perm_psql",
+    "text": "Oddiy foydalanuvchi server faylini o‘qiy olmaganda xato chiqadi; yechim sifatida psql ning bek-slesh kopi buyrug‘i mijoz faylini osongina yuklaydi.",
+    "show": "Oddiy foydalanuvchi server faylini o‘qiy olmaganda xato chiqadi; yechim sifatida psql ning bek-slesh kopi buyrug‘i mijoz faylini osongina yuklaydi.",
+    "say": "Oddiy foydalanuvchi server faylini o‘qiy olmaganda xato chiqadi; yechim sifatida pi-es-kyu-el ning bek-slesh kopi buyrug‘i mijoz faylini osongina yuklaydi.",
+    "a0": 38.09,
+    "a1": 47.29,
+    "words": [
+      {
+        "w": "Oddiy",
+        "s": 38.09,
+        "e": 38.31
+      },
+      {
+        "w": "foydalanuvchi",
+        "s": 38.35,
+        "e": 38.93
+      },
+      {
+        "w": "server",
+        "s": 39.35,
+        "e": 39.69
+      },
+      {
+        "w": "faylini",
+        "s": 39.73,
+        "e": 40.11
+      },
+      {
+        "w": "o‘qiy",
+        "s": 40.21,
+        "e": 40.39
+      },
+      {
+        "w": "olmaganda",
+        "s": 40.45,
+        "e": 40.89
+      },
+      {
+        "w": "xato",
+        "s": 40.97,
+        "e": 41.17
+      },
+      {
+        "w": "chiqadi;",
+        "s": 41.17,
+        "e": 42.13
+      },
+      {
+        "w": "yechim",
+        "s": 42.13,
+        "e": 42.39
+      },
+      {
+        "w": "sifatida",
+        "s": 42.43,
+        "e": 42.79
+      },
+      {
+        "w": "pi-es-kyu-el",
+        "s": 43.19,
+        "e": 43.81
+      },
+      {
+        "w": "ning",
+        "s": 43.85,
+        "e": 43.99
+      },
+      {
+        "w": "bek-slesh",
+        "s": 44.19,
+        "e": 44.63
+      },
+      {
+        "w": "kopi",
+        "s": 44.69,
+        "e": 44.93
+      },
+      {
+        "w": "buyrug‘i",
+        "s": 45.01,
+        "e": 45.35
+      },
+      {
+        "w": "mijoz",
+        "s": 45.65,
+        "e": 45.93
+      },
+      {
+        "w": "faylini",
+        "s": 45.99,
+        "e": 46.33
+      },
+      {
+        "w": "osongina",
+        "s": 46.47,
+        "e": 46.89
+      },
+      {
+        "w": "yuklaydi.",
+        "s": 46.93,
+        "e": 47.29
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "xulosa",
+    "text": "Shuningdek, ixtiyoriy selekt so‘rovi natijasini standart autga si-es-vi formatida chiqarib, hisobotlarni qulay eksport qilish mumkin.",
+    "show": "Shuningdek, ixtiyoriy selekt so‘rovi natijasini standart autga si-es-vi formatida chiqarib, hisobotlarni qulay eksport qilish mumkin.",
+    "say": "Shuningdek, ixtiyoriy selekt so‘rovi natijasini standart autga si-es-vi formatida chiqarib, hisobotlarni qulay eksport qilish mumkin.",
+    "a0": 48.43,
+    "a1": 55.72,
+    "words": [
+      {
+        "w": "Shuningdek,",
+        "s": 48.43,
+        "e": 48.85
+      },
+      {
+        "w": "ixtiyoriy",
+        "s": 49.19,
+        "e": 49.64
+      },
+      {
+        "w": "selekt",
+        "s": 49.9,
+        "e": 50.24
+      },
+      {
+        "w": "so‘rovi",
+        "s": 50.28,
+        "e": 50.58
+      },
+      {
+        "w": "natijasini",
+        "s": 50.64,
+        "e": 51.2
+      },
+      {
+        "w": "standart",
+        "s": 51.4,
+        "e": 51.82
+      },
+      {
+        "w": "autga",
+        "s": 51.9,
+        "e": 52.22
+      },
+      {
+        "w": "si-es-vi",
+        "s": 52.44,
+        "e": 52.84
+      },
+      {
+        "w": "formatida",
+        "s": 52.92,
+        "e": 53.32
+      },
+      {
+        "w": "chiqarib,",
+        "s": 53.36,
+        "e": 53.66
+      },
+      {
+        "w": "hisobotlarni",
+        "s": 53.92,
+        "e": 54.48
+      },
+      {
+        "w": "qulay",
+        "s": 54.56,
+        "e": 54.8
+      },
+      {
+        "w": "eksport",
+        "s": 54.96,
+        "e": 55.24
+      },
+      {
+        "w": "qilish",
+        "s": 55.26,
+        "e": 55.46
+      },
+      {
+        "w": "mumkin.",
+        "s": 55.48,
+        "e": 55.72
+      }
+    ]
+  }
+]

@@ -1,0 +1,723 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "MySQL va SQLite tizimlarida ham ommaviy yuklash uchun maxsus mexanizmlar mavjud: MySQL da bu LOAD DATA buyrug‘i, SQLite da esa nuqta import vositasidir.",
+    "show": "MySQL va SQLite tizimlarida ham ommaviy yuklash uchun maxsus mexanizmlar mavjud: MySQL da bu LOAD DATA buyrug‘i, SQLite da esa nuqta import vositasidir.",
+    "say": "May es-kyu-el va Es-kyu-layt tizimlarida ham ommaviy yuklash uchun maxsus mexanizmlar mavjud: May es-kyu-el da bu loud deyta buyrug‘i, Es-kyu-layt da esa nuqta import vositasidir.",
+    "a0": 0.26,
+    "a1": 10.95,
+    "words": [
+      {
+        "w": "May",
+        "s": 0.26,
+        "e": 0.42
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 0.46,
+        "e": 0.82
+      },
+      {
+        "w": "va",
+        "s": 0.88,
+        "e": 0.92
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 0.98,
+        "e": 1.42
+      },
+      {
+        "w": "tizimlarida",
+        "s": 1.44,
+        "e": 1.94
+      },
+      {
+        "w": "ham",
+        "s": 1.98,
+        "e": 2.14
+      },
+      {
+        "w": "ommaviy",
+        "s": 2.34,
+        "e": 2.68
+      },
+      {
+        "w": "yuklash",
+        "s": 2.74,
+        "e": 3.06
+      },
+      {
+        "w": "uchun",
+        "s": 3.08,
+        "e": 3.28
+      },
+      {
+        "w": "maxsus",
+        "s": 3.48,
+        "e": 3.8
+      },
+      {
+        "w": "mexanizmlar",
+        "s": 3.84,
+        "e": 4.46
+      },
+      {
+        "w": "mavjud:",
+        "s": 4.5,
+        "e": 4.82
+      },
+      {
+        "w": "May",
+        "s": 5.66,
+        "e": 5.8
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 5.82,
+        "e": 6.16
+      },
+      {
+        "w": "da",
+        "s": 6.2,
+        "e": 6.28
+      },
+      {
+        "w": "bu",
+        "s": 6.34,
+        "e": 6.42
+      },
+      {
+        "w": "loud",
+        "s": 6.78,
+        "e": 7.04
+      },
+      {
+        "w": "deyta",
+        "s": 7.12,
+        "e": 7.38
+      },
+      {
+        "w": "buyrug‘i,",
+        "s": 7.42,
+        "e": 7.77
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 8.43,
+        "e": 8.91
+      },
+      {
+        "w": "da",
+        "s": 8.93,
+        "e": 9.01
+      },
+      {
+        "w": "esa",
+        "s": 9.05,
+        "e": 9.23
+      },
+      {
+        "w": "nuqta",
+        "s": 9.59,
+        "e": 9.85
+      },
+      {
+        "w": "import",
+        "s": 10.01,
+        "e": 10.29
+      },
+      {
+        "w": "vositasidir.",
+        "s": 10.33,
+        "e": 10.95
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "mysql_load_data",
+    "text": "MySQL dagi LOAD DATA buyrug‘i oddiy INSERT lardan yigirma baravargacha tez ishlaydi, lekin serverda xavfsizlik uchun maxsus sekyur fayl priv va lokal infayl sozlamalari talab qilinadi.",
+    "show": "MySQL dagi LOAD DATA buyrug‘i oddiy INSERT lardan yigirma baravargacha tez ishlaydi, lekin serverda xavfsizlik uchun maxsus sekyur fayl priv va lokal infayl sozlamalari talab qilinadi.",
+    "say": "May es-kyu-el dagi loud deyta buyrug‘i oddiy insert lardan yigirma baravargacha tez ishlaydi, lekin serverda xavfsizlik uchun maxsus sekyur fayl priv va lokal infayl sozlamalari talab qilinadi.",
+    "a0": 11.91,
+    "a1": 22.29,
+    "words": [
+      {
+        "w": "May",
+        "s": 11.91,
+        "e": 12.05
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 12.07,
+        "e": 12.35
+      },
+      {
+        "w": "dagi",
+        "s": 12.39,
+        "e": 12.57
+      },
+      {
+        "w": "loud",
+        "s": 12.67,
+        "e": 12.91
+      },
+      {
+        "w": "deyta",
+        "s": 12.95,
+        "e": 13.21
+      },
+      {
+        "w": "buyrug‘i",
+        "s": 13.25,
+        "e": 13.59
+      },
+      {
+        "w": "oddiy",
+        "s": 13.83,
+        "e": 14.07
+      },
+      {
+        "w": "insert",
+        "s": 14.15,
+        "e": 14.43
+      },
+      {
+        "w": "lardan",
+        "s": 14.47,
+        "e": 14.75
+      },
+      {
+        "w": "yigirma",
+        "s": 14.85,
+        "e": 15.15
+      },
+      {
+        "w": "baravargacha",
+        "s": 15.19,
+        "e": 15.67
+      },
+      {
+        "w": "tez",
+        "s": 15.71,
+        "e": 15.87
+      },
+      {
+        "w": "ishlaydi,",
+        "s": 15.89,
+        "e": 16.23
+      },
+      {
+        "w": "lekin",
+        "s": 16.61,
+        "e": 16.83
+      },
+      {
+        "w": "serverda",
+        "s": 16.87,
+        "e": 17.27
+      },
+      {
+        "w": "xavfsizlik",
+        "s": 17.31,
+        "e": 17.69
+      },
+      {
+        "w": "uchun",
+        "s": 17.73,
+        "e": 17.91
+      },
+      {
+        "w": "maxsus",
+        "s": 17.97,
+        "e": 18.33
+      },
+      {
+        "w": "sekyur",
+        "s": 18.65,
+        "e": 19.03
+      },
+      {
+        "w": "fayl",
+        "s": 19.11,
+        "e": 19.37
+      },
+      {
+        "w": "priv",
+        "s": 19.43,
+        "e": 19.67
+      },
+      {
+        "w": "va",
+        "s": 19.99,
+        "e": 20.07
+      },
+      {
+        "w": "lokal",
+        "s": 20.31,
+        "e": 20.61
+      },
+      {
+        "w": "infayl",
+        "s": 20.71,
+        "e": 21.11
+      },
+      {
+        "w": "sozlamalari",
+        "s": 21.15,
+        "e": 21.67
+      },
+      {
+        "w": "talab",
+        "s": 21.69,
+        "e": 21.91
+      },
+      {
+        "w": "qilinadi.",
+        "s": 21.95,
+        "e": 22.29
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "mysql_local_trap",
+    "text": "Lokal infayl ishlatilganda xatolar jimgina e’tiborsiz qoldiriladi: matnli narx nolga aylanadi, takror kalitlar esa tashlab yuborilib, ma’lumotlar buzilib yuklanishi mumkin.",
+    "show": "Lokal infayl ishlatilganda xatolar jimgina e’tiborsiz qoldiriladi: matnli narx nolga aylanadi, takror kalitlar esa tashlab yuborilib, ma’lumotlar buzilib yuklanishi mumkin.",
+    "say": "Lokal infayl ishlatilganda xatolar jimgina e’tiborsiz qoldiriladi: matnli narx nolga aylanadi, takror kalitlar esa tashlab yuborilib, ma’lumotlar buzilib yuklanishi mumkin.",
+    "a0": 23.08,
+    "a1": 32.96,
+    "words": [
+      {
+        "w": "Lokal",
+        "s": 23.08,
+        "e": 23.38
+      },
+      {
+        "w": "infayl",
+        "s": 23.44,
+        "e": 23.86
+      },
+      {
+        "w": "ishlatilganda",
+        "s": 23.92,
+        "e": 24.6
+      },
+      {
+        "w": "xatolar",
+        "s": 24.74,
+        "e": 25.16
+      },
+      {
+        "w": "jimgina",
+        "s": 25.22,
+        "e": 25.54
+      },
+      {
+        "w": "e’tiborsiz",
+        "s": 25.6,
+        "e": 26.02
+      },
+      {
+        "w": "qoldiriladi:",
+        "s": 26.04,
+        "e": 26.52
+      },
+      {
+        "w": "matnli",
+        "s": 27.28,
+        "e": 27.66
+      },
+      {
+        "w": "narx",
+        "s": 27.76,
+        "e": 27.98
+      },
+      {
+        "w": "nolga",
+        "s": 28.1,
+        "e": 28.34
+      },
+      {
+        "w": "aylanadi,",
+        "s": 28.38,
+        "e": 28.74
+      },
+      {
+        "w": "takror",
+        "s": 29.2,
+        "e": 29.5
+      },
+      {
+        "w": "kalitlar",
+        "s": 29.52,
+        "e": 29.88
+      },
+      {
+        "w": "esa",
+        "s": 29.9,
+        "e": 30.0
+      },
+      {
+        "w": "tashlab",
+        "s": 30.36,
+        "e": 30.68
+      },
+      {
+        "w": "yuborilib,",
+        "s": 30.72,
+        "e": 31.14
+      },
+      {
+        "w": "ma’lumotlar",
+        "s": 31.24,
+        "e": 31.74
+      },
+      {
+        "w": "buzilib",
+        "s": 31.84,
+        "e": 32.16
+      },
+      {
+        "w": "yuklanishi",
+        "s": 32.22,
+        "e": 32.64
+      },
+      {
+        "w": "mumkin.",
+        "s": 32.68,
+        "e": 32.96
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "sqlite_import",
+    "text": "SQLite da nuqta import orqali CSV faylni yuklashda jadval avvaldan yaratilgan bo‘lishi muhim, aks holda barcha ustunlar tipsiz bo‘lib qoladi.",
+    "show": "SQLite da nuqta import orqali CSV faylni yuklashda jadval avvaldan yaratilgan bo‘lishi muhim, aks holda barcha ustunlar tipsiz bo‘lib qoladi.",
+    "say": "Es-kyu-layt da nuqta import orqali si-es-vi faylni yuklashda jadval avvaldan yaratilgan bo‘lishi muhim, aks holda barcha ustunlar tipsiz bo‘lib qoladi.",
+    "a0": 33.9,
+    "a1": 42.25,
+    "words": [
+      {
+        "w": "Es-kyu-layt",
+        "s": 33.9,
+        "e": 34.38
+      },
+      {
+        "w": "da",
+        "s": 34.44,
+        "e": 34.52
+      },
+      {
+        "w": "nuqta",
+        "s": 34.64,
+        "e": 34.9
+      },
+      {
+        "w": "import",
+        "s": 35.0,
+        "e": 35.26
+      },
+      {
+        "w": "orqali",
+        "s": 35.3,
+        "e": 35.62
+      },
+      {
+        "w": "si-es-vi",
+        "s": 35.9,
+        "e": 36.28
+      },
+      {
+        "w": "faylni",
+        "s": 36.36,
+        "e": 36.7
+      },
+      {
+        "w": "yuklashda",
+        "s": 36.72,
+        "e": 37.16
+      },
+      {
+        "w": "jadval",
+        "s": 37.28,
+        "e": 37.65
+      },
+      {
+        "w": "avvaldan",
+        "s": 37.77,
+        "e": 38.13
+      },
+      {
+        "w": "yaratilgan",
+        "s": 38.19,
+        "e": 38.65
+      },
+      {
+        "w": "bo‘lishi",
+        "s": 38.69,
+        "e": 38.95
+      },
+      {
+        "w": "muhim,",
+        "s": 39.01,
+        "e": 39.23
+      },
+      {
+        "w": "aks",
+        "s": 39.81,
+        "e": 39.95
+      },
+      {
+        "w": "holda",
+        "s": 39.99,
+        "e": 40.23
+      },
+      {
+        "w": "barcha",
+        "s": 40.57,
+        "e": 40.83
+      },
+      {
+        "w": "ustunlar",
+        "s": 40.87,
+        "e": 41.25
+      },
+      {
+        "w": "tipsiz",
+        "s": 41.39,
+        "e": 41.73
+      },
+      {
+        "w": "bo‘lib",
+        "s": 41.77,
+        "e": 41.95
+      },
+      {
+        "w": "qoladi.",
+        "s": 41.97,
+        "e": 42.25
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "strict_and_checks",
+    "text": "SQLite da sukut bo‘yicha har qanday xato qiymat matn sifatida yuklanib ketaveradi, shuning uchun strikt jadvallar va cheklovlardan foydalanish shart.",
+    "show": "SQLite da sukut bo‘yicha har qanday xato qiymat matn sifatida yuklanib ketaveradi, shuning uchun strikt jadvallar va cheklovlardan foydalanish shart.",
+    "say": "Es-kyu-layt da sukut bo‘yicha har qanday xato qiymat matn sifatida yuklanib ketaveradi, shuning uchun strikt jadvallar va cheklovlardan foydalanish shart.",
+    "a0": 43.05,
+    "a1": 50.55,
+    "words": [
+      {
+        "w": "Es-kyu-layt",
+        "s": 43.05,
+        "e": 43.49
+      },
+      {
+        "w": "da",
+        "s": 43.55,
+        "e": 43.61
+      },
+      {
+        "w": "sukut",
+        "s": 43.69,
+        "e": 43.93
+      },
+      {
+        "w": "bo‘yicha",
+        "s": 43.99,
+        "e": 44.29
+      },
+      {
+        "w": "har",
+        "s": 44.41,
+        "e": 44.55
+      },
+      {
+        "w": "qanday",
+        "s": 44.59,
+        "e": 44.87
+      },
+      {
+        "w": "xato",
+        "s": 44.91,
+        "e": 45.15
+      },
+      {
+        "w": "qiymat",
+        "s": 45.21,
+        "e": 45.51
+      },
+      {
+        "w": "matn",
+        "s": 45.63,
+        "e": 45.89
+      },
+      {
+        "w": "sifatida",
+        "s": 45.91,
+        "e": 46.25
+      },
+      {
+        "w": "yuklanib",
+        "s": 46.27,
+        "e": 46.57
+      },
+      {
+        "w": "ketaveradi,",
+        "s": 46.59,
+        "e": 47.01
+      },
+      {
+        "w": "shuning",
+        "s": 47.35,
+        "e": 47.57
+      },
+      {
+        "w": "uchun",
+        "s": 47.59,
+        "e": 47.77
+      },
+      {
+        "w": "strikt",
+        "s": 48.07,
+        "e": 48.39
+      },
+      {
+        "w": "jadvallar",
+        "s": 48.43,
+        "e": 48.89
+      },
+      {
+        "w": "va",
+        "s": 48.97,
+        "e": 49.03
+      },
+      {
+        "w": "cheklovlardan",
+        "s": 49.15,
+        "e": 49.75
+      },
+      {
+        "w": "foydalanish",
+        "s": 49.81,
+        "e": 50.29
+      },
+      {
+        "w": "shart.",
+        "s": 50.31,
+        "e": 50.55
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "xulosa",
+    "text": "Xulosa qilib aytganda, yuklash tezligi muhim bo‘lsa-da, ogohlantirishlarni tekshirish va yuklashdan so‘ng ma’lumotlar butunligini nazorat qilish barqaror tizim asosidir.",
+    "show": "Xulosa qilib aytganda, yuklash tezligi muhim bo‘lsa-da, ogohlantirishlarni tekshirish va yuklashdan so‘ng ma’lumotlar butunligini nazorat qilish barqaror tizim asosidir.",
+    "say": "Xulosa qilib aytganda, yuklash tezligi muhim bo‘lsa-da, ogohlantirishlarni tekshirish va yuklashdan so‘ng ma’lumotlar butunligini nazorat qilish barqaror tizim asosidir.",
+    "a0": 51.35,
+    "a1": 60.06,
+    "words": [
+      {
+        "w": "Xulosa",
+        "s": 51.35,
+        "e": 51.63
+      },
+      {
+        "w": "qilib",
+        "s": 51.67,
+        "e": 51.81
+      },
+      {
+        "w": "aytganda,",
+        "s": 51.83,
+        "e": 52.19
+      },
+      {
+        "w": "yuklash",
+        "s": 52.37,
+        "e": 52.74
+      },
+      {
+        "w": "tezligi",
+        "s": 52.76,
+        "e": 53.12
+      },
+      {
+        "w": "muhim",
+        "s": 53.2,
+        "e": 53.44
+      },
+      {
+        "w": "bo‘lsa-da,",
+        "s": 53.5,
+        "e": 53.86
+      },
+      {
+        "w": "ogohlantirishlarni",
+        "s": 54.26,
+        "e": 55.06
+      },
+      {
+        "w": "tekshirish",
+        "s": 55.12,
+        "e": 55.54
+      },
+      {
+        "w": "va",
+        "s": 55.58,
+        "e": 55.66
+      },
+      {
+        "w": "yuklashdan",
+        "s": 55.96,
+        "e": 56.42
+      },
+      {
+        "w": "so‘ng",
+        "s": 56.48,
+        "e": 56.66
+      },
+      {
+        "w": "ma’lumotlar",
+        "s": 56.72,
+        "e": 57.2
+      },
+      {
+        "w": "butunligini",
+        "s": 57.24,
+        "e": 57.72
+      },
+      {
+        "w": "nazorat",
+        "s": 57.78,
+        "e": 58.16
+      },
+      {
+        "w": "qilish",
+        "s": 58.2,
+        "e": 58.44
+      },
+      {
+        "w": "barqaror",
+        "s": 58.68,
+        "e": 59.12
+      },
+      {
+        "w": "tizim",
+        "s": 59.18,
+        "e": 59.4
+      },
+      {
+        "w": "asosidir.",
+        "s": 59.6,
+        "e": 60.06
+      }
+    ]
+  }
+]

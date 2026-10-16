@@ -1,0 +1,31 @@
+WEBVTT
+
+1
+00:01.420 --> 00:11.080
+Amaliyot uchun mahsulotlar nuqta si-es-vi faylidan foydalanamiz, unda beshta
+qator bo‘lib, ikkitasida narx o‘rnida matnli xato qiymatlar yozilgan.
+
+2
+00:14.410 --> 00:21.940
+Sukut bo‘yicha COPY birinchi xatodayoq to‘xtaydi va xatodan oldingi
+to‘g‘ri qatorlarni ham bekor qilib, jadvalni bo‘sh qoldiradi.
+
+3
+00:25.690 --> 00:34.290
+On error ignor va log verbositi sozlamalari bilan xato qatorlar tashlab
+ketiladi, to‘g‘ri uchta qator esa jadvalga muvaffaqiyatli yuklanadi.
+
+4
+00:37.860 --> 00:45.250
+PostgreSQL o‘n sakkizdagi ridjekt limit parametri yordamida ruxsat
+etilgan xatolar soni bittadan oshganda yuklashni to‘xtatish mumkin.
+
+5
+00:49.450 --> 00:59.100
+Oddiy foydalanuvchi server faylini o‘qiy olmaganda xato chiqadi; yechim
+sifatida psql ning bek-slesh kopi buyrug‘i mijoz faylini osongina yuklaydi.
+
+6
+01:02.390 --> 01:10.130
+Shuningdek, ixtiyoriy selekt so‘rovi natijasini standart autga
+si-es-vi formatida chiqarib, hisobotlarni qulay eksport qilish mumkin.

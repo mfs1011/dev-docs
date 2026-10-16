@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:14.271
+MySQL va SQLite da ommaviy yuklash
+
+00:14.271 --> 00:28.153
+MySQL LOAD DATA INFILE va xavfsizlik sozlamalari
+
+00:28.153 --> 00:41.493
+MySQL LOCAL tuzog‘i va ma’lumotlarning buzilishi
+
+00:41.493 --> 00:53.277
+SQLite nuqta import buyrug‘i va turlar
+
+00:53.277 --> 01:04.236
+SQLite da ma’lumotlar sifatini tekshirish
+
+01:04.236 --> 01:18.220
+Uch tizim qiyosiy xulosasi va tavsiyalar
