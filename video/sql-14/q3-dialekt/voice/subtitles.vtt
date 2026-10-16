@@ -1,0 +1,31 @@
+WEBVTT
+
+1
+00:01.420 --> 00:10.780
+Dialektlar qismida MySQL va SQLite ning cheklovlar bilan ishlashdagi o‘ziga
+xos jihatlari, taqqoslash doskasi hamda asosiy tuzoqlarni ko‘rib chiqamiz.
+
+2
+00:13.890 --> 00:25.320
+MySQL da CHECK cheklovi faqat yangi versiyalarda to‘liq ishlay boshladi, shuningdek MySQL tashqi
+kalit yaratilganda bola ustunga avtomatik indeks qo‘yishi bilan PostgreSQL dan farq qiladi.
+
+3
+00:28.370 --> 00:40.490
+SQLite dagi eng xavfli jihat: PRAGMA foreign_keys sukut bo‘yicha o‘chiq bo‘ladi va mavjud bo‘lmagan
+otaga ham qator qo‘shishga ruxsat beradi. U faqat ON buyrug‘i bilan yoqilgandagina himoya ishlaydi.
+
+4
+00:43.900 --> 00:55.200
+Uch tizimni qiyoslasak: PostgreSQL da qat'iy standart va boy imkoniyatlar, MySQL da avtomatik
+indekslash, SQLite da esa qat'iy yoqilishi shart bo‘lgan tashqi kalitlar mexanizmi mavjud.
+
+5
+00:58.550 --> 01:09.050
+Eng keng tarqalgan xato — CHECK chekloviga tayanib, NOT NULL ni unutishdir. Shuningdek tashqi
+kalit ustunlarini indekslamaslik ota qator o‘chirilganda butun jadvalni qotirib qo‘yishi mumkin.
+
+6
+01:12.180 --> 01:19.110
+Har bir ma'lumotlar bazasining cheklov qoidalarini chuqur bilish
+orqali ishonchli va xatolarga chidamli arxitektura qurasiz.

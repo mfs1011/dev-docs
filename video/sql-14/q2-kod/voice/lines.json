@@ -1,0 +1,784 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Ushbu qismda PostgreSQL o‘n sakkiz terminalida CHECK xatolari, NULL holatlari, ON DELETE kaskadlari va kechiktiriladigan cheklovlarni jonli sinovdan o‘tkazamiz.",
+    "show": "Ushbu qismda PostgreSQL o‘n sakkiz terminalida CHECK xatolari, NULL holatlari, ON DELETE kaskadlari va kechiktiriladigan cheklovlarni jonli sinovdan o‘tkazamiz.",
+    "say": "Ushbu qismda Postgres o‘n sakkiz terminalida chek xatolari, nul holatlari, ON DELETE kaskadlari va kechiktiriladigan cheklovlarni jonli sinovdan o‘tkazamiz.",
+    "a0": 0.2,
+    "a1": 10.09,
+    "words": [
+      {
+        "w": "Ushbu",
+        "s": 0.2,
+        "e": 0.4
+      },
+      {
+        "w": "qismda",
+        "s": 0.48,
+        "e": 0.84
+      },
+      {
+        "w": "Postgres",
+        "s": 1.14,
+        "e": 1.6
+      },
+      {
+        "w": "o‘n",
+        "s": 1.74,
+        "e": 1.82
+      },
+      {
+        "w": "sakkiz",
+        "s": 1.88,
+        "e": 2.16
+      },
+      {
+        "w": "terminalida",
+        "s": 2.22,
+        "e": 2.8
+      },
+      {
+        "w": "chek",
+        "s": 3.24,
+        "e": 3.44
+      },
+      {
+        "w": "xatolari,",
+        "s": 3.48,
+        "e": 4.0
+      },
+      {
+        "w": "nul",
+        "s": 4.38,
+        "e": 4.56
+      },
+      {
+        "w": "holatlari,",
+        "s": 4.62,
+        "e": 5.18
+      },
+      {
+        "w": "ON",
+        "s": 5.64,
+        "e": 5.74
+      },
+      {
+        "w": "DELETE",
+        "s": 5.78,
+        "e": 6.08
+      },
+      {
+        "w": "kaskadlari",
+        "s": 6.1,
+        "e": 6.7
+      },
+      {
+        "w": "va",
+        "s": 6.88,
+        "e": 6.96
+      },
+      {
+        "w": "kechiktiriladigan",
+        "s": 7.14,
+        "e": 7.93
+      },
+      {
+        "w": "cheklovlarni",
+        "s": 7.99,
+        "e": 8.57
+      },
+      {
+        "w": "jonli",
+        "s": 8.87,
+        "e": 9.19
+      },
+      {
+        "w": "sinovdan",
+        "s": 9.27,
+        "e": 9.61
+      },
+      {
+        "w": "o‘tkazamiz.",
+        "s": 9.65,
+        "e": 10.09
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "check_demo",
+    "text": "Mahsulotlar jadvaliga manfiy narx yozganimizda musbat_narx cheklovi ishga tushadi, narx chegirmadan kichik bo‘lib qolsa esa jadval darajasidagi cheklov qat'iy to‘xtatadi.",
+    "show": "Mahsulotlar jadvaliga manfiy narx yozganimizda musbat_narx cheklovi ishga tushadi, narx chegirmadan kichik bo‘lib qolsa esa jadval darajasidagi cheklov qat'iy to‘xtatadi.",
+    "say": "Mahsulotlar jadvaliga manfiy narx yozganimizda musbat_narx cheklovi ishga tushadi, narx chegirmadan kichik bo‘lib qolsa esa jadval darajasidagi cheklov qat'iy to‘xtatadi.",
+    "a0": 11.57,
+    "a1": 21.19,
+    "words": [
+      {
+        "w": "Mahsulotlar",
+        "s": 11.57,
+        "e": 12.15
+      },
+      {
+        "w": "jadvaliga",
+        "s": 12.19,
+        "e": 12.67
+      },
+      {
+        "w": "manfiy",
+        "s": 12.87,
+        "e": 13.19
+      },
+      {
+        "w": "narx",
+        "s": 13.27,
+        "e": 13.47
+      },
+      {
+        "w": "yozganimizda",
+        "s": 13.53,
+        "e": 14.09
+      },
+      {
+        "w": "musbat_narx",
+        "s": 14.53,
+        "e": 15.25
+      },
+      {
+        "w": "cheklovi",
+        "s": 15.31,
+        "e": 15.69
+      },
+      {
+        "w": "ishga",
+        "s": 15.73,
+        "e": 15.91
+      },
+      {
+        "w": "tushadi,",
+        "s": 15.95,
+        "e": 16.25
+      },
+      {
+        "w": "narx",
+        "s": 16.85,
+        "e": 17.07
+      },
+      {
+        "w": "chegirmadan",
+        "s": 17.13,
+        "e": 17.63
+      },
+      {
+        "w": "kichik",
+        "s": 17.67,
+        "e": 17.85
+      },
+      {
+        "w": "bo‘lib",
+        "s": 17.89,
+        "e": 18.11
+      },
+      {
+        "w": "qolsa",
+        "s": 18.11,
+        "e": 18.35
+      },
+      {
+        "w": "esa",
+        "s": 18.41,
+        "e": 18.57
+      },
+      {
+        "w": "jadval",
+        "s": 19.01,
+        "e": 19.31
+      },
+      {
+        "w": "darajasidagi",
+        "s": 19.35,
+        "e": 19.85
+      },
+      {
+        "w": "cheklov",
+        "s": 19.89,
+        "e": 20.21
+      },
+      {
+        "w": "qat'iy",
+        "s": 20.29,
+        "e": 20.67
+      },
+      {
+        "w": "to‘xtatadi.",
+        "s": 20.73,
+        "e": 21.19
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "check_demo",
+    "text": "E'tibor bering: narx o‘rniga NULL kiritganimizda CHECK hech qanday xato bermaydi va qator jimgina qabul qilinadi, bu esa NOT NULL cheklovi nima uchun shart ekanini yaqqol ko‘rsatadi.",
+    "show": "E'tibor bering: narx o‘rniga NULL kiritganimizda CHECK hech qanday xato bermaydi va qator jimgina qabul qilinadi, bu esa NOT NULL cheklovi nima uchun shart ekanini yaqqol ko‘rsatadi.",
+    "say": "E'tibor bering: narx o‘rniga nul kiritganimizda chek hech qanday xato bermaydi va qator jimgina qabul qilinadi, bu esa not nal cheklovi nima uchun shart ekanini yaqqol ko‘rsatadi.",
+    "a0": 22.23,
+    "a1": 32.92,
+    "words": [
+      {
+        "w": "E'tibor",
+        "s": 22.23,
+        "e": 22.49
+      },
+      {
+        "w": "bering:",
+        "s": 22.52,
+        "e": 22.76
+      },
+      {
+        "w": "narx",
+        "s": 23.1,
+        "e": 23.32
+      },
+      {
+        "w": "o‘rniga",
+        "s": 23.42,
+        "e": 23.74
+      },
+      {
+        "w": "nul",
+        "s": 23.92,
+        "e": 24.1
+      },
+      {
+        "w": "kiritganimizda",
+        "s": 24.14,
+        "e": 24.76
+      },
+      {
+        "w": "chek",
+        "s": 25.16,
+        "e": 25.36
+      },
+      {
+        "w": "hech",
+        "s": 25.5,
+        "e": 25.68
+      },
+      {
+        "w": "qanday",
+        "s": 25.7,
+        "e": 25.94
+      },
+      {
+        "w": "xato",
+        "s": 25.96,
+        "e": 26.16
+      },
+      {
+        "w": "bermaydi",
+        "s": 26.22,
+        "e": 26.64
+      },
+      {
+        "w": "va",
+        "s": 26.98,
+        "e": 27.04
+      },
+      {
+        "w": "qator",
+        "s": 27.16,
+        "e": 27.44
+      },
+      {
+        "w": "jimgina",
+        "s": 27.52,
+        "e": 27.84
+      },
+      {
+        "w": "qabul",
+        "s": 27.92,
+        "e": 28.14
+      },
+      {
+        "w": "qilinadi,",
+        "s": 28.18,
+        "e": 28.52
+      },
+      {
+        "w": "bu",
+        "s": 29.12,
+        "e": 29.18
+      },
+      {
+        "w": "esa",
+        "s": 29.26,
+        "e": 29.46
+      },
+      {
+        "w": "not",
+        "s": 29.84,
+        "e": 30.04
+      },
+      {
+        "w": "nal",
+        "s": 30.1,
+        "e": 30.26
+      },
+      {
+        "w": "cheklovi",
+        "s": 30.32,
+        "e": 30.72
+      },
+      {
+        "w": "nima",
+        "s": 30.82,
+        "e": 31.0
+      },
+      {
+        "w": "uchun",
+        "s": 31.06,
+        "e": 31.26
+      },
+      {
+        "w": "shart",
+        "s": 31.34,
+        "e": 31.58
+      },
+      {
+        "w": "ekanini",
+        "s": 31.64,
+        "e": 32.0
+      },
+      {
+        "w": "yaqqol",
+        "s": 32.08,
+        "e": 32.44
+      },
+      {
+        "w": "ko‘rsatadi.",
+        "s": 32.48,
+        "e": 32.92
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "unique_demo",
+    "text": "UNIQUE ustunga bir nechta NULL yozish mumkin, ammo PostgreSQL o‘n beshdan boshlab NULLS NOT DISTINCT qo‘shilsa, ikkinchi NULL ham takror sifatida rad etiladi.",
+    "show": "UNIQUE ustunga bir nechta NULL yozish mumkin, ammo PostgreSQL o‘n beshdan boshlab NULLS NOT DISTINCT qo‘shilsa, ikkinchi NULL ham takror sifatida rad etiladi.",
+    "say": "Yunik ustunga bir nechta nul yozish mumkin, ammo Postgres o‘n beshdan boshlab nals not distinkt qo‘shilsa, ikkinchi nul ham takror sifatida rad etiladi.",
+    "a0": 34.0,
+    "a1": 42.41,
+    "words": [
+      {
+        "w": "Yunik",
+        "s": 34.0,
+        "e": 34.24
+      },
+      {
+        "w": "ustunga",
+        "s": 34.28,
+        "e": 34.64
+      },
+      {
+        "w": "bir",
+        "s": 34.76,
+        "e": 34.86
+      },
+      {
+        "w": "nechta",
+        "s": 34.92,
+        "e": 35.18
+      },
+      {
+        "w": "nul",
+        "s": 35.28,
+        "e": 35.42
+      },
+      {
+        "w": "yozish",
+        "s": 35.42,
+        "e": 35.72
+      },
+      {
+        "w": "mumkin,",
+        "s": 35.74,
+        "e": 36.02
+      },
+      {
+        "w": "ammo",
+        "s": 36.36,
+        "e": 36.54
+      },
+      {
+        "w": "Postgres",
+        "s": 36.8,
+        "e": 37.24
+      },
+      {
+        "w": "o‘n",
+        "s": 37.34,
+        "e": 37.42
+      },
+      {
+        "w": "beshdan",
+        "s": 37.46,
+        "e": 37.73
+      },
+      {
+        "w": "boshlab",
+        "s": 37.77,
+        "e": 38.07
+      },
+      {
+        "w": "nals",
+        "s": 38.31,
+        "e": 38.59
+      },
+      {
+        "w": "not",
+        "s": 38.71,
+        "e": 38.89
+      },
+      {
+        "w": "distinkt",
+        "s": 38.99,
+        "e": 39.41
+      },
+      {
+        "w": "qo‘shilsa,",
+        "s": 39.43,
+        "e": 39.85
+      },
+      {
+        "w": "ikkinchi",
+        "s": 40.29,
+        "e": 40.65
+      },
+      {
+        "w": "nul",
+        "s": 40.69,
+        "e": 40.83
+      },
+      {
+        "w": "ham",
+        "s": 40.87,
+        "e": 40.99
+      },
+      {
+        "w": "takror",
+        "s": 41.09,
+        "e": 41.41
+      },
+      {
+        "w": "sifatida",
+        "s": 41.45,
+        "e": 41.79
+      },
+      {
+        "w": "rad",
+        "s": 41.85,
+        "e": 42.01
+      },
+      {
+        "w": "etiladi.",
+        "s": 42.07,
+        "e": 42.41
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "fk_demo",
+    "text": "Tashqi kalit sinovida ota qator o‘chirilganda, ON DELETE CASCADE bola jadvaldagi bog‘liq qatorni avtomatik o‘chiradi, RESTRICT esa xatolik berib o‘chirishni taqiqlaydi.",
+    "show": "Tashqi kalit sinovida ota qator o‘chirilganda, ON DELETE CASCADE bola jadvaldagi bog‘liq qatorni avtomatik o‘chiradi, RESTRICT esa xatolik berib o‘chirishni taqiqlaydi.",
+    "say": "Tashqi kalit sinovida ota qator o‘chirilganda, on dilit kaskad bola jadvaldagi bog‘liq qatorni avtomatik o‘chiradi, restrikt esa xatolik berib o‘chirishni taqiqlaydi.",
+    "a0": 43.49,
+    "a1": 52.45,
+    "words": [
+      {
+        "w": "Tashqi",
+        "s": 43.49,
+        "e": 43.75
+      },
+      {
+        "w": "kalit",
+        "s": 43.79,
+        "e": 44.01
+      },
+      {
+        "w": "sinovida",
+        "s": 44.01,
+        "e": 44.43
+      },
+      {
+        "w": "ota",
+        "s": 44.83,
+        "e": 44.97
+      },
+      {
+        "w": "qator",
+        "s": 45.03,
+        "e": 45.27
+      },
+      {
+        "w": "o‘chirilganda,",
+        "s": 45.33,
+        "e": 45.93
+      },
+      {
+        "w": "on",
+        "s": 46.27,
+        "e": 46.35
+      },
+      {
+        "w": "dilit",
+        "s": 46.43,
+        "e": 46.69
+      },
+      {
+        "w": "kaskad",
+        "s": 46.73,
+        "e": 47.11
+      },
+      {
+        "w": "bola",
+        "s": 47.19,
+        "e": 47.37
+      },
+      {
+        "w": "jadvaldagi",
+        "s": 47.43,
+        "e": 47.89
+      },
+      {
+        "w": "bog‘liq",
+        "s": 47.93,
+        "e": 48.19
+      },
+      {
+        "w": "qatorni",
+        "s": 48.21,
+        "e": 48.57
+      },
+      {
+        "w": "avtomatik",
+        "s": 48.67,
+        "e": 49.11
+      },
+      {
+        "w": "o‘chiradi,",
+        "s": 49.15,
+        "e": 49.53
+      },
+      {
+        "w": "restrikt",
+        "s": 50.03,
+        "e": 50.43
+      },
+      {
+        "w": "esa",
+        "s": 50.47,
+        "e": 50.65
+      },
+      {
+        "w": "xatolik",
+        "s": 50.75,
+        "e": 51.17
+      },
+      {
+        "w": "berib",
+        "s": 51.21,
+        "e": 51.41
+      },
+      {
+        "w": "o‘chirishni",
+        "s": 51.51,
+        "e": 51.89
+      },
+      {
+        "w": "taqiqlaydi.",
+        "s": 51.91,
+        "e": 52.45
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "deferrable_demo",
+    "text": "Aylana bog‘liqlikda esa DEFERRABLE INITIALLY DEFERRED orqali tekshiruv COMMIT paytigacha kechiktiriladi va ikkala bog‘liq qator ham tranzaksiyada muvaffaqiyatli saqlanadi.",
+    "show": "Aylana bog‘liqlikda esa DEFERRABLE INITIALLY DEFERRED orqali tekshiruv COMMIT paytigacha kechiktiriladi va ikkala bog‘liq qator ham tranzaksiyada muvaffaqiyatli saqlanadi.",
+    "say": "Aylana bog‘liqlikda esa deferabl inishali deferd orqali tekshiruv kommit paytigacha kechiktiriladi va ikkala bog‘liq qator ham tranzaksiyada muvaffaqiyatli saqlanadi.",
+    "a0": 53.42,
+    "a1": 62.45,
+    "words": [
+      {
+        "w": "Aylana",
+        "s": 53.42,
+        "e": 53.72
+      },
+      {
+        "w": "bog‘liqlikda",
+        "s": 53.76,
+        "e": 54.22
+      },
+      {
+        "w": "esa",
+        "s": 54.26,
+        "e": 54.42
+      },
+      {
+        "w": "deferabl",
+        "s": 54.84,
+        "e": 55.36
+      },
+      {
+        "w": "inishali",
+        "s": 55.46,
+        "e": 55.9
+      },
+      {
+        "w": "deferd",
+        "s": 55.98,
+        "e": 56.34
+      },
+      {
+        "w": "orqali",
+        "s": 56.42,
+        "e": 56.74
+      },
+      {
+        "w": "tekshiruv",
+        "s": 56.84,
+        "e": 57.22
+      },
+      {
+        "w": "kommit",
+        "s": 57.28,
+        "e": 57.6
+      },
+      {
+        "w": "paytigacha",
+        "s": 57.64,
+        "e": 58.04
+      },
+      {
+        "w": "kechiktiriladi",
+        "s": 58.1,
+        "e": 58.72
+      },
+      {
+        "w": "va",
+        "s": 59.08,
+        "e": 59.16
+      },
+      {
+        "w": "ikkala",
+        "s": 59.4,
+        "e": 59.72
+      },
+      {
+        "w": "bog‘liq",
+        "s": 59.8,
+        "e": 60.02
+      },
+      {
+        "w": "qator",
+        "s": 60.08,
+        "e": 60.34
+      },
+      {
+        "w": "ham",
+        "s": 60.38,
+        "e": 60.52
+      },
+      {
+        "w": "tranzaksiyada",
+        "s": 60.64,
+        "e": 61.24
+      },
+      {
+        "w": "muvaffaqiyatli",
+        "s": 61.3,
+        "e": 61.92
+      },
+      {
+        "w": "saqlanadi.",
+        "s": 61.98,
+        "e": 62.45
+      }
+    ]
+  },
+  {
+    "id": "L7",
+    "scene": "xulosa",
+    "text": "Ushbu amaliy bilimlar orqali relyatsion bazangizda ma'lumotlar sifatini yuqori darajada kafolatlay olasiz.",
+    "show": "Ushbu amaliy bilimlar orqali relyatsion bazangizda ma'lumotlar sifatini yuqori darajada kafolatlay olasiz.",
+    "say": "Ushbu amaliy bilimlar orqali relyatsion bazangizda ma'lumotlar sifatini yuqori darajada kafolatlay olasiz.",
+    "a0": 63.23,
+    "a1": 69.08,
+    "words": [
+      {
+        "w": "Ushbu",
+        "s": 63.23,
+        "e": 63.45
+      },
+      {
+        "w": "amaliy",
+        "s": 63.59,
+        "e": 63.87
+      },
+      {
+        "w": "bilimlar",
+        "s": 63.93,
+        "e": 64.29
+      },
+      {
+        "w": "orqali",
+        "s": 64.35,
+        "e": 64.65
+      },
+      {
+        "w": "relyatsion",
+        "s": 65.05,
+        "e": 65.49
+      },
+      {
+        "w": "bazangizda",
+        "s": 65.53,
+        "e": 66.03
+      },
+      {
+        "w": "ma'lumotlar",
+        "s": 66.11,
+        "e": 66.65
+      },
+      {
+        "w": "sifatini",
+        "s": 66.71,
+        "e": 67.08
+      },
+      {
+        "w": "yuqori",
+        "s": 67.4,
+        "e": 67.78
+      },
+      {
+        "w": "darajada",
+        "s": 67.84,
+        "e": 68.16
+      },
+      {
+        "w": "kafolatlay",
+        "s": 68.22,
+        "e": 68.7
+      },
+      {
+        "w": "olasiz.",
+        "s": 68.74,
+        "e": 69.08
+      }
+    ]
+  }
+]

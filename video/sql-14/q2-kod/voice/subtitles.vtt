@@ -1,0 +1,36 @@
+WEBVTT
+
+1
+00:01.420 --> 00:11.760
+Ushbu qismda PostgreSQL o‘n sakkiz terminalida CHECK xatolari, NULL holatlari, ON
+DELETE kaskadlari va kechiktiriladigan cheklovlarni jonli sinovdan o‘tkazamiz.
+
+2
+00:15.190 --> 00:25.260
+Mahsulotlar jadvaliga manfiy narx yozganimizda musbat_narx cheklovi ishga tushadi, narx
+chegirmadan kichik bo‘lib qolsa esa jadval darajasidagi cheklov qat'iy to‘xtatadi.
+
+3
+00:25.850 --> 00:36.990
+E'tibor bering: narx o‘rniga NULL kiritganimizda CHECK hech qanday xato bermaydi va qator
+jimgina qabul qilinadi, bu esa NOT NULL cheklovi nima uchun shart ekanini yaqqol ko‘rsatadi.
+
+4
+00:40.220 --> 00:49.080
+UNIQUE ustunga bir nechta NULL yozish mumkin, ammo PostgreSQL o‘n beshdan boshlab
+NULLS NOT DISTINCT qo‘shilsa, ikkinchi NULL ham takror sifatida rad etiladi.
+
+5
+00:52.310 --> 01:01.720
+Tashqi kalit sinovida ota qator o‘chirilganda, ON DELETE CASCADE bola jadvaldagi
+bog‘liq qatorni avtomatik o‘chiradi, RESTRICT esa xatolik berib o‘chirishni taqiqlaydi.
+
+6
+01:04.840 --> 01:14.320
+Aylana bog‘liqlikda esa DEFERRABLE INITIALLY DEFERRED orqali tekshiruv COMMIT paytigacha
+kechiktiriladi va ikkala bog‘liq qator ham tranzaksiyada muvaffaqiyatli saqlanadi.
+
+7
+01:17.250 --> 01:23.550
+Ushbu amaliy bilimlar orqali relyatsion bazangizda
+ma'lumotlar sifatini yuqori darajada kafolatlay olasiz.

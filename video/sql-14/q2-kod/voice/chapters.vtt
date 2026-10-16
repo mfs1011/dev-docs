@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:13.777
+PostgreSQL 18: Cheklovlar amaliyoti
+
+00:13.777 --> 00:38.966
+CHECK xatolari va NULL qabul qilinishi
+
+00:38.966 --> 00:51.073
+UNIQUE va NULLS NOT DISTINCT
+
+00:51.073 --> 01:03.598
+FOREIGN KEY: CASCADE va RESTRICT sinovi
+
+01:03.598 --> 01:16.159
+DEFERRABLE bilan aylana bog‘lanish
+
+01:16.159 --> 01:27.280
+Xulosa va tavsiyalar

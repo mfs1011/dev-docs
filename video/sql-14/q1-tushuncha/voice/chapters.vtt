@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:12.886
+Cheklovlar: Ma'lumot yaxlitligi asoslari
+
+00:12.886 --> 00:37.684
+CHECK va NOT NULL: Mantiqiy shartlar va NULL tuzog'i
+
+00:37.684 --> 00:52.865
+UNIQUE va PRIMARY KEY: Yagonalik va B-tree indeks
+
+00:52.865 --> 01:12.375
+FOREIGN KEY va ON DELETE amallari
+
+01:12.375 --> 01:25.620
+DEFERRABLE va PostgreSQL 18 da NOT ENFORCED
+
+01:25.620 --> 01:38.040
+Xulosa va tavsiyalar
