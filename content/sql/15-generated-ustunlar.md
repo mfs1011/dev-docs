@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/sql/15-1-tushuncha.jpg" src="/video/sql/15-1-tushuncha.mp4">
+  <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/sql/15-1-tushuncha.chapters.vtt" default>
+  <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/sql/15-1-tushuncha.uz.vtt">
+</video>
+<figcaption>Video: Generated ustunlar — VIRTUAL vs STORED, DEFAULT bilan taqqoslash va o'zgarmaslik (immutable) qoidalari</figcaption>
+</figure>
+
 **Generated ustun** (hisoblanadigan ustun) — qiymati doim **shu qatordagi boshqa ustunlardan** hisoblanadigan ustun. Masalan, `summa = narx × soni`. Bu qiymatni ilova hisoblab yozmaydi, baza o'zi hisoblaydi.
 
 PostgreSQL hujjatidagi o'xshatish: generated ustun ustunlar uchun xuddi view jadvallar uchun bo'lgandek narsa (view — 17-bob).
@@ -50,6 +58,14 @@ Hujjatdagi asosiy qoidalar:
 Hujjatga ko'ra generated ustunlar `BEFORE` triggerlar ishlagandan **keyin** yangilanadi (57-bob).
 
 ## Kod
+
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/sql/15-2-kod.jpg" src="/video/sql/15-2-kod.mp4">
+  <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/sql/15-2-kod.chapters.vtt" default>
+  <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/sql/15-2-kod.uz.vtt">
+</video>
+<figcaption>Video: PostgreSQL 18 da Generated ustunlar — virtual va stored yaratish, UPDATE qayta hisoblash va pg_attribute</figcaption>
+</figure>
 
 Misollar PostgreSQL 18.6, MySQL 9.7.2 va SQLite 3.54.0 da ishga tushirilgan.
 
@@ -135,6 +151,14 @@ DETAIL:  A generated column cannot reference another generated column.
 `now()` har chaqiruvda boshqa qiymat beradi, ya'ni o'zgarmas emas. "Qator yaratilgan vaqt" kerak bo'lsa, bu `DEFAULT now()` ning ishi (12-bob).
 
 ## Dialektlar
+
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/sql/15-3-dialektlar.jpg" src="/video/sql/15-3-dialektlar.mp4">
+  <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/sql/15-3-dialektlar.chapters.vtt" default>
+  <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/sql/15-3-dialektlar.uz.vtt">
+</video>
+<figcaption>Video: Dialektlar — MySQL da virtual indeks va zanjir murojaati, SQLite da STORED cheklovi va 6 ta tuzoq</figcaption>
+</figure>
 
 ### MySQL
 

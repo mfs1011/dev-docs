@@ -1,0 +1,31 @@
+WEBVTT
+
+1
+00:01.420 --> 00:13.420
+Ushbu amaliy darsda PostgreSQL 18.6 terminalida GENERATED ALWAYS AS sintaksisi yordamida
+virtual va stored ustunlar yaratish hamda tizim katalogini tekshirishni ko‘ramiz.
+
+2
+00:16.310 --> 00:28.650
+buyurtma_qatorlari jadvalida narx va sonidan hisoblanadigan virtual summa hamda saqlanadigan
+summa_s ustunlarini yaratamiz. Qator kiritilganda ikkalasi ham avtomatik hisoblanadi.
+
+3
+00:31.340 --> 00:39.770
+Asosiy ustun, masalan soni qiymati UPDATE qilinganda ikkala generated
+ustun ham avtomatik tarzda yangi qiymatga qayta hisoblanadi.
+
+4
+00:42.360 --> 00:55.900
+pg_attribute tizim katalogida ustun turi ko‘rinadi: v harfi virtual, s esa stored degani. Shuningdek
+generated ustunga qo‘lda qiymat kiritish qat'iyan taqiqlanadi, faqat DEFAULT so‘zi qabul qilinadi.
+
+5
+00:58.730 --> 01:08.130
+now() kabi har safar boshqa natija beruvchi o‘zgaruvchan funksiyalar va bitta
+generated ustundan ikkinchisida foydalanish PostgreSQL da xatolik beradi.
+
+6
+01:10.860 --> 01:18.770
+PostgreSQL 18 da virtual ustunlar sukut bo‘yicha disk xotirasini
+tejaydi va hisob-kitoblarning doimiy aniqligini ta'minlaydi.

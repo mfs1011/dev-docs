@@ -1,0 +1,748 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Dialektlar qismida MySQL va SQLite ning hisoblanadigan ustunlar bilan ishlashdagi o‘ziga xos imkoniyatlari, solishtirish doskasi hamda asosiy tuzoqlarni ko‘rib chiqamiz.",
+    "show": "Dialektlar qismida MySQL va SQLite ning hisoblanadigan ustunlar bilan ishlashdagi o‘ziga xos imkoniyatlari, solishtirish doskasi hamda asosiy tuzoqlarni ko‘rib chiqamiz.",
+    "say": "Dialektlar qismida May es-kyu-el va Es-kyu-layt ning hisoblanadigan ustunlar bilan ishlashdagi o‘ziga xos imkoniyatlari, solishtirish doskasi hamda asosiy tuzoqlarni ko‘rib chiqamiz.",
+    "a0": 0.16,
+    "a1": 10.03,
+    "words": [
+      {
+        "w": "Dialektlar",
+        "s": 0.16,
+        "e": 0.64
+      },
+      {
+        "w": "qismida",
+        "s": 0.68,
+        "e": 1.04
+      },
+      {
+        "w": "May",
+        "s": 1.2,
+        "e": 1.36
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 1.4,
+        "e": 1.8
+      },
+      {
+        "w": "va",
+        "s": 1.84,
+        "e": 1.92
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 2.12,
+        "e": 2.72
+      },
+      {
+        "w": "ning",
+        "s": 2.76,
+        "e": 2.9
+      },
+      {
+        "w": "hisoblanadigan",
+        "s": 2.94,
+        "e": 3.58
+      },
+      {
+        "w": "ustunlar",
+        "s": 3.62,
+        "e": 4.0
+      },
+      {
+        "w": "bilan",
+        "s": 4.02,
+        "e": 4.22
+      },
+      {
+        "w": "ishlashdagi",
+        "s": 4.28,
+        "e": 4.78
+      },
+      {
+        "w": "o‘ziga",
+        "s": 5.22,
+        "e": 5.52
+      },
+      {
+        "w": "xos",
+        "s": 5.6,
+        "e": 5.78
+      },
+      {
+        "w": "imkoniyatlari,",
+        "s": 5.82,
+        "e": 6.46
+      },
+      {
+        "w": "solishtirish",
+        "s": 6.84,
+        "e": 7.34
+      },
+      {
+        "w": "doskasi",
+        "s": 7.38,
+        "e": 7.79
+      },
+      {
+        "w": "hamda",
+        "s": 7.83,
+        "e": 8.07
+      },
+      {
+        "w": "asosiy",
+        "s": 8.47,
+        "e": 8.87
+      },
+      {
+        "w": "tuzoqlarni",
+        "s": 8.97,
+        "e": 9.47
+      },
+      {
+        "w": "ko‘rib",
+        "s": 9.53,
+        "e": 9.73
+      },
+      {
+        "w": "chiqamiz.",
+        "s": 9.75,
+        "e": 10.03
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "mysql_demo",
+    "text": "MySQL da virtual ustunlarga InnoDB ikkilamchi indeks qo‘yish mumkin va PostgreSQL dan farqli ravishda generated ustun o‘zidan oldin e'lon qilingan boshqa generated ustunga tayana oladi.",
+    "show": "MySQL da virtual ustunlarga InnoDB ikkilamchi indeks qo‘yish mumkin va PostgreSQL dan farqli ravishda generated ustun o‘zidan oldin e'lon qilingan boshqa generated ustunga tayana oladi.",
+    "say": "May es-kyu-el da virtual ustunlarga Inno-de-be ikkilamchi indeks qo‘yish mumkin va Postgres dan farqli ravishda jenerated ustun o‘zidan oldin e'lon qilingan boshqa jenerated ustunga tayana oladi.",
+    "a0": 11.13,
+    "a1": 20.91,
+    "words": [
+      {
+        "w": "May",
+        "s": 11.13,
+        "e": 11.27
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 11.29,
+        "e": 11.61
+      },
+      {
+        "w": "da",
+        "s": 11.65,
+        "e": 11.73
+      },
+      {
+        "w": "virtual",
+        "s": 11.85,
+        "e": 12.19
+      },
+      {
+        "w": "ustunlarga",
+        "s": 12.23,
+        "e": 12.69
+      },
+      {
+        "w": "Inno-de-be",
+        "s": 13.13,
+        "e": 13.61
+      },
+      {
+        "w": "ikkilamchi",
+        "s": 13.75,
+        "e": 14.23
+      },
+      {
+        "w": "indeks",
+        "s": 14.29,
+        "e": 14.61
+      },
+      {
+        "w": "qo‘yish",
+        "s": 14.67,
+        "e": 14.89
+      },
+      {
+        "w": "mumkin",
+        "s": 14.91,
+        "e": 15.13
+      },
+      {
+        "w": "va",
+        "s": 15.19,
+        "e": 15.25
+      },
+      {
+        "w": "Postgres",
+        "s": 15.63,
+        "e": 16.05
+      },
+      {
+        "w": "dan",
+        "s": 16.09,
+        "e": 16.19
+      },
+      {
+        "w": "farqli",
+        "s": 16.21,
+        "e": 16.47
+      },
+      {
+        "w": "ravishda",
+        "s": 16.55,
+        "e": 16.87
+      },
+      {
+        "w": "jenerated",
+        "s": 16.99,
+        "e": 17.47
+      },
+      {
+        "w": "ustun",
+        "s": 17.53,
+        "e": 17.79
+      },
+      {
+        "w": "o‘zidan",
+        "s": 17.91,
+        "e": 18.21
+      },
+      {
+        "w": "oldin",
+        "s": 18.31,
+        "e": 18.51
+      },
+      {
+        "w": "e'lon",
+        "s": 18.57,
+        "e": 18.75
+      },
+      {
+        "w": "qilingan",
+        "s": 18.77,
+        "e": 19.07
+      },
+      {
+        "w": "boshqa",
+        "s": 19.13,
+        "e": 19.39
+      },
+      {
+        "w": "jenerated",
+        "s": 19.47,
+        "e": 19.89
+      },
+      {
+        "w": "ustunga",
+        "s": 19.93,
+        "e": 20.25
+      },
+      {
+        "w": "tayana",
+        "s": 20.31,
+        "e": 20.61
+      },
+      {
+        "w": "oladi.",
+        "s": 20.65,
+        "e": 20.91
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "sqlite_demo",
+    "text": "SQLite da sintaksis juda sodda: GENERATED ALWAYS ixtiyoriy bo‘lib, faqat AS ifodasi yetarli. Biroq eng katta cheklov — ALTER TABLE orqali ma'lumotli jadvalga STORED ustun qo‘shib bo‘lmaydi.",
+    "show": "SQLite da sintaksis juda sodda: GENERATED ALWAYS ixtiyoriy bo‘lib, faqat AS ifodasi yetarli. Biroq eng katta cheklov — ALTER TABLE orqali ma'lumotli jadvalga STORED ustun qo‘shib bo‘lmaydi.",
+    "say": "Es-kyu-layt da sintaksis juda sodda: jenerated olveys ixtiyoriy bo‘lib, faqat ez ifodasi yetarli. Biroq eng katta cheklov — alter teybl orqali ma'lumotli jadvalga stord ustun qo‘shib bo‘lmaydi.",
+    "a0": 22.23,
+    "a1": 33.94,
+    "words": [
+      {
+        "w": "Es-kyu-layt",
+        "s": 22.23,
+        "e": 22.76
+      },
+      {
+        "w": "da",
+        "s": 22.82,
+        "e": 22.9
+      },
+      {
+        "w": "sintaksis",
+        "s": 23.28,
+        "e": 23.84
+      },
+      {
+        "w": "juda",
+        "s": 24.0,
+        "e": 24.2
+      },
+      {
+        "w": "sodda:",
+        "s": 24.28,
+        "e": 24.52
+      },
+      {
+        "w": "jenerated",
+        "s": 25.0,
+        "e": 25.46
+      },
+      {
+        "w": "olveys",
+        "s": 25.52,
+        "e": 25.84
+      },
+      {
+        "w": "ixtiyoriy",
+        "s": 25.92,
+        "e": 26.32
+      },
+      {
+        "w": "bo‘lib,",
+        "s": 26.36,
+        "e": 26.54
+      },
+      {
+        "w": "faqat",
+        "s": 26.58,
+        "e": 26.82
+      },
+      {
+        "w": "ez",
+        "s": 27.2,
+        "e": 27.38
+      },
+      {
+        "w": "ifodasi",
+        "s": 27.46,
+        "e": 27.88
+      },
+      {
+        "w": "yetarli.",
+        "s": 27.92,
+        "e": 28.28
+      },
+      {
+        "w": "Biroq",
+        "s": 28.7,
+        "e": 28.88
+      },
+      {
+        "w": "eng",
+        "s": 29.24,
+        "e": 29.36
+      },
+      {
+        "w": "katta",
+        "s": 29.38,
+        "e": 29.6
+      },
+      {
+        "w": "cheklov",
+        "s": 29.66,
+        "e": 29.96
+      },
+      {
+        "w": "—",
+        "s": 29.96,
+        "e": 29.96
+      },
+      {
+        "w": "alter",
+        "s": 30.34,
+        "e": 30.54
+      },
+      {
+        "w": "teybl",
+        "s": 30.58,
+        "e": 30.84
+      },
+      {
+        "w": "orqali",
+        "s": 30.88,
+        "e": 31.18
+      },
+      {
+        "w": "ma'lumotli",
+        "s": 31.24,
+        "e": 31.7
+      },
+      {
+        "w": "jadvalga",
+        "s": 31.74,
+        "e": 32.14
+      },
+      {
+        "w": "stord",
+        "s": 32.42,
+        "e": 32.82
+      },
+      {
+        "w": "ustun",
+        "s": 32.9,
+        "e": 33.14
+      },
+      {
+        "w": "qo‘shib",
+        "s": 33.24,
+        "e": 33.52
+      },
+      {
+        "w": "bo‘lmaydi.",
+        "s": 33.56,
+        "e": 33.94
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "taqqoslash",
+    "text": "Uch tizimni qiyoslasak: barchasi sukut bo‘yicha virtual ustun yaratadi, lekin zanjir murojaatlari, indekslash mexanizmlari va jadvalni o‘zgartirish qoidalarida muhim farqlar mavjud.",
+    "show": "Uch tizimni qiyoslasak: barchasi sukut bo‘yicha virtual ustun yaratadi, lekin zanjir murojaatlari, indekslash mexanizmlari va jadvalni o‘zgartirish qoidalarida muhim farqlar mavjud.",
+    "say": "Uch tizimni qiyoslasak: barchasi sukut bo‘yicha virtual ustun yaratadi, lekin zanjir murojaatlari, indekslash mexanizmlari va jadvalni o‘zgartirish qoidalarida muhim farqlar mavjud.",
+    "a0": 35.24,
+    "a1": 45.57,
+    "words": [
+      {
+        "w": "Uch",
+        "s": 35.24,
+        "e": 35.36
+      },
+      {
+        "w": "tizimni",
+        "s": 35.44,
+        "e": 35.76
+      },
+      {
+        "w": "qiyoslasak:",
+        "s": 35.82,
+        "e": 36.4
+      },
+      {
+        "w": "barchasi",
+        "s": 36.74,
+        "e": 37.14
+      },
+      {
+        "w": "sukut",
+        "s": 37.22,
+        "e": 37.44
+      },
+      {
+        "w": "bo‘yicha",
+        "s": 37.51,
+        "e": 37.79
+      },
+      {
+        "w": "virtual",
+        "s": 37.89,
+        "e": 38.25
+      },
+      {
+        "w": "ustun",
+        "s": 38.29,
+        "e": 38.53
+      },
+      {
+        "w": "yaratadi,",
+        "s": 38.57,
+        "e": 38.95
+      },
+      {
+        "w": "lekin",
+        "s": 39.39,
+        "e": 39.63
+      },
+      {
+        "w": "zanjir",
+        "s": 39.95,
+        "e": 40.29
+      },
+      {
+        "w": "murojaatlari,",
+        "s": 40.35,
+        "e": 40.95
+      },
+      {
+        "w": "indekslash",
+        "s": 41.37,
+        "e": 41.91
+      },
+      {
+        "w": "mexanizmlari",
+        "s": 41.95,
+        "e": 42.57
+      },
+      {
+        "w": "va",
+        "s": 42.61,
+        "e": 42.67
+      },
+      {
+        "w": "jadvalni",
+        "s": 42.77,
+        "e": 43.17
+      },
+      {
+        "w": "o‘zgartirish",
+        "s": 43.23,
+        "e": 43.69
+      },
+      {
+        "w": "qoidalarida",
+        "s": 43.73,
+        "e": 44.25
+      },
+      {
+        "w": "muhim",
+        "s": 44.59,
+        "e": 44.87
+      },
+      {
+        "w": "farqlar",
+        "s": 44.93,
+        "e": 45.27
+      },
+      {
+        "w": "mavjud.",
+        "s": 45.31,
+        "e": 45.57
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "tuzoqlar",
+    "text": "Eng keng tarqalgan xato — now() bilan vaqtni hisoblamoqchi bo‘lish, ko‘p o‘qiladigan og‘ir virtual ustunni indekssiz qoldirish hamda SQLite da STORED ustun qo‘shishda xatoga yo‘liqishdir.",
+    "show": "Eng keng tarqalgan xato — now() bilan vaqtni hisoblamoqchi bo‘lish, ko‘p o‘qiladigan og‘ir virtual ustunni indekssiz qoldirish hamda SQLite da STORED ustun qo‘shishda xatoga yo‘liqishdir.",
+    "say": "Eng keng tarqalgan xato — nau bilan vaqtni hisoblamoqchi bo‘lish, ko‘p o‘qiladigan og‘ir virtual ustunni indekssiz qoldirish hamda Es-kyu-layt da stord ustun qo‘shishda xatoga yo‘liqishdir.",
+    "a0": 46.87,
+    "a1": 56.54,
+    "words": [
+      {
+        "w": "Eng",
+        "s": 46.87,
+        "e": 46.99
+      },
+      {
+        "w": "keng",
+        "s": 47.03,
+        "e": 47.21
+      },
+      {
+        "w": "tarqalgan",
+        "s": 47.23,
+        "e": 47.61
+      },
+      {
+        "w": "xato",
+        "s": 47.65,
+        "e": 47.87
+      },
+      {
+        "w": "—",
+        "s": 47.87,
+        "e": 47.87
+      },
+      {
+        "w": "nau",
+        "s": 48.27,
+        "e": 48.47
+      },
+      {
+        "w": "bilan",
+        "s": 48.53,
+        "e": 48.75
+      },
+      {
+        "w": "vaqtni",
+        "s": 48.83,
+        "e": 49.09
+      },
+      {
+        "w": "hisoblamoqchi",
+        "s": 49.13,
+        "e": 49.69
+      },
+      {
+        "w": "bo‘lish,",
+        "s": 49.71,
+        "e": 50.01
+      },
+      {
+        "w": "ko‘p",
+        "s": 50.35,
+        "e": 50.51
+      },
+      {
+        "w": "o‘qiladigan",
+        "s": 50.57,
+        "e": 51.01
+      },
+      {
+        "w": "og‘ir",
+        "s": 51.21,
+        "e": 51.43
+      },
+      {
+        "w": "virtual",
+        "s": 51.47,
+        "e": 51.83
+      },
+      {
+        "w": "ustunni",
+        "s": 51.87,
+        "e": 52.21
+      },
+      {
+        "w": "indekssiz",
+        "s": 52.33,
+        "e": 52.82
+      },
+      {
+        "w": "qoldirish",
+        "s": 52.88,
+        "e": 53.2
+      },
+      {
+        "w": "hamda",
+        "s": 53.22,
+        "e": 53.44
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 53.8,
+        "e": 54.34
+      },
+      {
+        "w": "da",
+        "s": 54.4,
+        "e": 54.48
+      },
+      {
+        "w": "stord",
+        "s": 54.6,
+        "e": 54.96
+      },
+      {
+        "w": "ustun",
+        "s": 55.02,
+        "e": 55.22
+      },
+      {
+        "w": "qo‘shishda",
+        "s": 55.28,
+        "e": 55.62
+      },
+      {
+        "w": "xatoga",
+        "s": 55.68,
+        "e": 56.04
+      },
+      {
+        "w": "yo‘liqishdir.",
+        "s": 56.08,
+        "e": 56.54
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "xulosa",
+    "text": "Har bir tizimning o‘ziga xos nozikliklarini bilish orqali hisob-kitoblari tez va arxitekturasi mustahkam ma'lumotlar bazalarini qurasiz.",
+    "show": "Har bir tizimning o‘ziga xos nozikliklarini bilish orqali hisob-kitoblari tez va arxitekturasi mustahkam ma'lumotlar bazalarini qurasiz.",
+    "say": "Har bir tizimning o‘ziga xos nozikliklarini bilish orqali hisob-kitoblari tez va arxitekturasi mustahkam ma'lumotlar bazalarini qurasiz.",
+    "a0": 57.8,
+    "a1": 64.46,
+    "words": [
+      {
+        "w": "Har",
+        "s": 57.8,
+        "e": 57.92
+      },
+      {
+        "w": "bir",
+        "s": 57.96,
+        "e": 58.04
+      },
+      {
+        "w": "tizimning",
+        "s": 58.08,
+        "e": 58.46
+      },
+      {
+        "w": "o‘ziga",
+        "s": 58.54,
+        "e": 58.78
+      },
+      {
+        "w": "xos",
+        "s": 58.84,
+        "e": 59.0
+      },
+      {
+        "w": "nozikliklarini",
+        "s": 59.04,
+        "e": 59.68
+      },
+      {
+        "w": "bilish",
+        "s": 59.7,
+        "e": 59.88
+      },
+      {
+        "w": "orqali",
+        "s": 59.92,
+        "e": 60.18
+      },
+      {
+        "w": "hisob-kitoblari",
+        "s": 60.54,
+        "e": 61.25
+      },
+      {
+        "w": "tez",
+        "s": 61.31,
+        "e": 61.55
+      },
+      {
+        "w": "va",
+        "s": 61.61,
+        "e": 61.67
+      },
+      {
+        "w": "arxitekturasi",
+        "s": 61.77,
+        "e": 62.43
+      },
+      {
+        "w": "mustahkam",
+        "s": 62.51,
+        "e": 63.01
+      },
+      {
+        "w": "ma'lumotlar",
+        "s": 63.05,
+        "e": 63.53
+      },
+      {
+        "w": "bazalarini",
+        "s": 63.58,
+        "e": 64.06
+      },
+      {
+        "w": "qurasiz.",
+        "s": 64.12,
+        "e": 64.46
+      }
+    ]
+  }
+]
