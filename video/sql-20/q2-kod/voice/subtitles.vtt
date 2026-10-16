@@ -1,0 +1,31 @@
+WEBVTT
+
+1
+00:01.420 --> 00:10.960
+Ushbu amaliy darsda PostgreSQL 18.6 terminalida INSERT ON CONFLICT,
+EXCLUDED jadvali hamda standart MERGE buyrug‘ini sinab ko‘ramiz.
+
+2
+00:13.590 --> 00:22.500
+Lug‘at jadvaliga so‘z kiritilganda ON CONFLICT DO UPDATE buyrug‘i mavjud
+hisoblagichni oshiradi, RETURNING esa yangi yoki eski holatni qaytaradi.
+
+3
+00:25.490 --> 00:34.170
+Bir nechta qator qo‘shilganda EXCLUDED nuqta soni iborasi chetlatilgan
+yangi qiymatni olib, uni jadvaldagi mavjud soniga qo‘shib yangilaydi.
+
+4
+00:36.940 --> 00:45.050
+Konflikt maqsadi faqat UNIQUE yoki birlamchi kalit ustunida ishlaydi,
+shuningdek bitta buyruqda bir xil kalit ikki marta kelsa xatolik beradi.
+
+5
+00:48.050 --> 00:56.580
+Standart MERGE buyrug‘i yangi kelgan tovarlarni ombor bilan solishtirib, bitta
+harakatda borlarini yangiladi, yangilarini qo‘shdi va eskisini o‘chirdi.
+
+6
+00:59.510 --> 01:07.830
+PostgreSQL dagi ON CONFLICT yuqori parallellik uchun, MERGE esa
+murakkab manba jadvallarini sinxronlash uchun eng mukammal vositadir.

@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:12.493
+PostgreSQL 18: UPSERT va MERGE amaliyoti
+
+00:12.493 --> 00:24.350
+INSERT ON CONFLICT va hisoblagich
+
+00:24.350 --> 00:35.832
+EXCLUDED bilan ko‘p qatorli yangilash
+
+00:35.832 --> 00:46.901
+Konflikt maqsadi va qat’iy qoidalar
+
+00:46.901 --> 00:58.437
+MERGE INTO: Uchta amal bitta so‘rovda
+
+00:58.437 --> 01:11.580
+Xulosa

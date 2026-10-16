@@ -4,6 +4,15 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/20-1-tushuncha.jpg">
+    <source src="/video/sql/20-1-tushuncha.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/20-1-tushuncha.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/20-1-tushuncha.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>20.1-video. UPSERT va MERGE tushunchasi</figcaption>
+</figure>
+
 Ko'p uchraydigan vazifa: "qator bo'lmasa — qo'sh, bo'lsa — yangila". Masalan:
 
 - savatchada mahsulot yo'q bo'lsa, qo'shiladi, bor bo'lsa, soni oshiriladi;
@@ -62,6 +71,15 @@ Hujjatdagi muhim qoidalar:
 **Standart.** `MERGE` standartga mos. `WITH`, `BY SOURCE`/`BY TARGET`, `DO NOTHING` va `RETURNING` esa standartdan tashqari kengaytmalar.
 
 ## Kod
+
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/20-2-kod.jpg">
+    <source src="/video/sql/20-2-kod.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/20-2-kod.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/20-2-kod.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>20.2-video. PostgreSQL 18: ON CONFLICT va MERGE amaliyoti</figcaption>
+</figure>
 
 Misollar PostgreSQL 18.6, MySQL 9.7.2 va SQLite 3.54.0 da ishga tushirilgan.
 

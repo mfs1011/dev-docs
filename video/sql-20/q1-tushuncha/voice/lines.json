@@ -1,0 +1,578 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Amaliyotda eng ko‘p uchraydigan vazifalardan biri — qator mavjud bo‘lmasa uni qo‘shish, agar allaqachon mavjud bo‘lsa yangilashdir.",
+    "show": "Amaliyotda eng ko‘p uchraydigan vazifalardan biri — qator mavjud bo‘lmasa uni qo‘shish, agar allaqachon mavjud bo‘lsa yangilashdir.",
+    "say": "Amaliyotda eng ko‘p uchraydigan vazifalardan biri — qator mavjud bo‘lmasa uni qo‘shish, agar allaqachon mavjud bo‘lsa yangilashdir.",
+    "a0": 0.3,
+    "a1": 7.42,
+    "words": [
+      {
+        "w": "Amaliyotda",
+        "s": 0.3,
+        "e": 0.74
+      },
+      {
+        "w": "eng",
+        "s": 0.86,
+        "e": 1.0
+      },
+      {
+        "w": "ko‘p",
+        "s": 1.04,
+        "e": 1.22
+      },
+      {
+        "w": "uchraydigan",
+        "s": 1.28,
+        "e": 1.74
+      },
+      {
+        "w": "vazifalardan",
+        "s": 1.78,
+        "e": 2.44
+      },
+      {
+        "w": "biri",
+        "s": 2.5,
+        "e": 2.66
+      },
+      {
+        "w": "—",
+        "s": 2.66,
+        "e": 2.66
+      },
+      {
+        "w": "qator",
+        "s": 3.04,
+        "e": 3.32
+      },
+      {
+        "w": "mavjud",
+        "s": 3.4,
+        "e": 3.7
+      },
+      {
+        "w": "bo‘lmasa",
+        "s": 3.74,
+        "e": 4.12
+      },
+      {
+        "w": "uni",
+        "s": 4.18,
+        "e": 4.3
+      },
+      {
+        "w": "qo‘shish,",
+        "s": 4.38,
+        "e": 4.82
+      },
+      {
+        "w": "agar",
+        "s": 5.24,
+        "e": 5.46
+      },
+      {
+        "w": "allaqachon",
+        "s": 5.64,
+        "e": 6.1
+      },
+      {
+        "w": "mavjud",
+        "s": 6.14,
+        "e": 6.38
+      },
+      {
+        "w": "bo‘lsa",
+        "s": 6.42,
+        "e": 6.7
+      },
+      {
+        "w": "yangilashdir.",
+        "s": 6.88,
+        "e": 7.42
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "select_insert_trap",
+    "text": "Avval SELECT qilib, so‘ng INSERT yoki UPDATE yozish parallel so‘rovlar oqimida kalit to‘qnashuvi yoki ma’lumotlar yo‘qolishiga sabab bo‘ladi.",
+    "show": "Avval SELECT qilib, so‘ng INSERT yoki UPDATE yozish parallel so‘rovlar oqimida kalit to‘qnashuvi yoki ma’lumotlar yo‘qolishiga sabab bo‘ladi.",
+    "say": "Avval selekt qilib, so‘ng insert yoki apdeyt yozish parallel so‘rovlar oqimida kalit to‘qnashuvi yoki ma’lumotlar yo‘qolishiga sabab bo‘ladi.",
+    "a0": 8.29,
+    "a1": 16.03,
+    "words": [
+      {
+        "w": "Avval",
+        "s": 8.29,
+        "e": 8.53
+      },
+      {
+        "w": "selekt",
+        "s": 8.63,
+        "e": 8.95
+      },
+      {
+        "w": "qilib,",
+        "s": 8.99,
+        "e": 9.19
+      },
+      {
+        "w": "so‘ng",
+        "s": 9.41,
+        "e": 9.61
+      },
+      {
+        "w": "insert",
+        "s": 9.77,
+        "e": 10.17
+      },
+      {
+        "w": "yoki",
+        "s": 10.21,
+        "e": 10.41
+      },
+      {
+        "w": "apdeyt",
+        "s": 10.53,
+        "e": 10.91
+      },
+      {
+        "w": "yozish",
+        "s": 10.97,
+        "e": 11.23
+      },
+      {
+        "w": "parallel",
+        "s": 11.51,
+        "e": 11.89
+      },
+      {
+        "w": "so‘rovlar",
+        "s": 11.93,
+        "e": 12.27
+      },
+      {
+        "w": "oqimida",
+        "s": 12.33,
+        "e": 12.65
+      },
+      {
+        "w": "kalit",
+        "s": 12.97,
+        "e": 13.25
+      },
+      {
+        "w": "to‘qnashuvi",
+        "s": 13.29,
+        "e": 13.85
+      },
+      {
+        "w": "yoki",
+        "s": 13.85,
+        "e": 14.15
+      },
+      {
+        "w": "ma’lumotlar",
+        "s": 14.43,
+        "e": 14.95
+      },
+      {
+        "w": "yo‘qolishiga",
+        "s": 14.99,
+        "e": 15.47
+      },
+      {
+        "w": "sabab",
+        "s": 15.51,
+        "e": 15.75
+      },
+      {
+        "w": "bo‘ladi.",
+        "s": 15.77,
+        "e": 16.03
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "upsert_on_conflict",
+    "text": "UPSERT yondashuvi bitta atomar buyruqda ishlaydi: PostgreSQL da INSERT ON CONFLICT takrorlanmas cheklov buzilganda muqobil yangilashni kafolatlaydi.",
+    "show": "UPSERT yondashuvi bitta atomar buyruqda ishlaydi: PostgreSQL da INSERT ON CONFLICT takrorlanmas cheklov buzilganda muqobil yangilashni kafolatlaydi.",
+    "say": "Apsert yondashuvi bitta atomar buyruqda ishlaydi: Postgres da insert on konflikt takrorlanmas cheklov buzilganda muqobil yangilashni kafolatlaydi.",
+    "a0": 16.93,
+    "a1": 25.64,
+    "words": [
+      {
+        "w": "Apsert",
+        "s": 16.93,
+        "e": 17.33
+      },
+      {
+        "w": "yondashuvi",
+        "s": 17.37,
+        "e": 17.83
+      },
+      {
+        "w": "bitta",
+        "s": 17.93,
+        "e": 18.25
+      },
+      {
+        "w": "atomar",
+        "s": 18.39,
+        "e": 18.73
+      },
+      {
+        "w": "buyruqda",
+        "s": 18.79,
+        "e": 19.15
+      },
+      {
+        "w": "ishlaydi:",
+        "s": 19.21,
+        "e": 19.49
+      },
+      {
+        "w": "Postgres",
+        "s": 20.13,
+        "e": 20.59
+      },
+      {
+        "w": "da",
+        "s": 20.63,
+        "e": 20.73
+      },
+      {
+        "w": "insert",
+        "s": 21.21,
+        "e": 21.55
+      },
+      {
+        "w": "on",
+        "s": 21.65,
+        "e": 21.75
+      },
+      {
+        "w": "konflikt",
+        "s": 21.81,
+        "e": 22.27
+      },
+      {
+        "w": "takrorlanmas",
+        "s": 22.56,
+        "e": 23.22
+      },
+      {
+        "w": "cheklov",
+        "s": 23.24,
+        "e": 23.54
+      },
+      {
+        "w": "buzilganda",
+        "s": 23.56,
+        "e": 24.06
+      },
+      {
+        "w": "muqobil",
+        "s": 24.12,
+        "e": 24.52
+      },
+      {
+        "w": "yangilashni",
+        "s": 24.58,
+        "e": 25.04
+      },
+      {
+        "w": "kafolatlaydi.",
+        "s": 25.06,
+        "e": 25.64
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "excluded_table",
+    "text": "EXCLUDED so‘zi chetlatilgan, ya’ni qo‘shilmoqchi bo‘lgan yangi qiymatlarni ifodalaydi va mavjud jadval ustunlari bilan qo‘shish imkonini beradi.",
+    "show": "EXCLUDED so‘zi chetlatilgan, ya’ni qo‘shilmoqchi bo‘lgan yangi qiymatlarni ifodalaydi va mavjud jadval ustunlari bilan qo‘shish imkonini beradi.",
+    "say": "Eksklyuded so‘zi chetlatilgan, ya’ni qo‘shilmoqchi bo‘lgan yangi qiymatlarni ifodalaydi va mavjud jadval ustunlari bilan qo‘shish imkonini beradi.",
+    "a0": 26.42,
+    "a1": 34.04,
+    "words": [
+      {
+        "w": "Eksklyuded",
+        "s": 26.42,
+        "e": 26.96
+      },
+      {
+        "w": "so‘zi",
+        "s": 27.0,
+        "e": 27.26
+      },
+      {
+        "w": "chetlatilgan,",
+        "s": 27.34,
+        "e": 28.02
+      },
+      {
+        "w": "ya’ni",
+        "s": 28.32,
+        "e": 28.52
+      },
+      {
+        "w": "qo‘shilmoqchi",
+        "s": 28.62,
+        "e": 29.16
+      },
+      {
+        "w": "bo‘lgan",
+        "s": 29.2,
+        "e": 29.5
+      },
+      {
+        "w": "yangi",
+        "s": 29.56,
+        "e": 29.8
+      },
+      {
+        "w": "qiymatlarni",
+        "s": 29.86,
+        "e": 30.38
+      },
+      {
+        "w": "ifodalaydi",
+        "s": 30.44,
+        "e": 30.96
+      },
+      {
+        "w": "va",
+        "s": 31.28,
+        "e": 31.34
+      },
+      {
+        "w": "mavjud",
+        "s": 31.46,
+        "e": 31.8
+      },
+      {
+        "w": "jadval",
+        "s": 31.84,
+        "e": 32.18
+      },
+      {
+        "w": "ustunlari",
+        "s": 32.24,
+        "e": 32.66
+      },
+      {
+        "w": "bilan",
+        "s": 32.7,
+        "e": 32.88
+      },
+      {
+        "w": "qo‘shish",
+        "s": 32.96,
+        "e": 33.3
+      },
+      {
+        "w": "imkonini",
+        "s": 33.34,
+        "e": 33.76
+      },
+      {
+        "w": "beradi.",
+        "s": 33.78,
+        "e": 34.04
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "merge_standard",
+    "text": "Standart MERGE buyrug‘i esa manba va maqsad jadvallarini solishtirib, bitta so‘rovda INSERT, UPDATE hamda DELETE amallarini birgalikda bajaradi.",
+    "show": "Standart MERGE buyrug‘i esa manba va maqsad jadvallarini solishtirib, bitta so‘rovda INSERT, UPDATE hamda DELETE amallarini birgalikda bajaradi.",
+    "say": "Standart myorj buyrug‘i esa manba va maqsad jadvallarini solishtirib, bitta so‘rovda insert, apdeyt hamda dilit amallarini birgalikda bajaradi.",
+    "a0": 34.92,
+    "a1": 43.19,
+    "words": [
+      {
+        "w": "Standart",
+        "s": 34.92,
+        "e": 35.35
+      },
+      {
+        "w": "myorj",
+        "s": 35.45,
+        "e": 35.71
+      },
+      {
+        "w": "buyrug‘i",
+        "s": 35.77,
+        "e": 36.11
+      },
+      {
+        "w": "esa",
+        "s": 36.15,
+        "e": 36.33
+      },
+      {
+        "w": "manba",
+        "s": 36.67,
+        "e": 36.97
+      },
+      {
+        "w": "va",
+        "s": 37.05,
+        "e": 37.11
+      },
+      {
+        "w": "maqsad",
+        "s": 37.21,
+        "e": 37.53
+      },
+      {
+        "w": "jadvallarini",
+        "s": 37.55,
+        "e": 38.13
+      },
+      {
+        "w": "solishtirib,",
+        "s": 38.21,
+        "e": 38.75
+      },
+      {
+        "w": "bitta",
+        "s": 39.11,
+        "e": 39.39
+      },
+      {
+        "w": "so‘rovda",
+        "s": 39.45,
+        "e": 39.79
+      },
+      {
+        "w": "insert,",
+        "s": 40.01,
+        "e": 40.43
+      },
+      {
+        "w": "apdeyt",
+        "s": 40.63,
+        "e": 41.03
+      },
+      {
+        "w": "hamda",
+        "s": 41.07,
+        "e": 41.31
+      },
+      {
+        "w": "dilit",
+        "s": 41.63,
+        "e": 41.93
+      },
+      {
+        "w": "amallarini",
+        "s": 41.97,
+        "e": 42.37
+      },
+      {
+        "w": "birgalikda",
+        "s": 42.41,
+        "e": 42.81
+      },
+      {
+        "w": "bajaradi.",
+        "s": 42.83,
+        "e": 43.19
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "xulosa",
+    "text": "UPSERT va MERGE buyruqlaridan foydalanish ma’lumotlar bazasida poyga holatlarining oldini oluvchi eng asosiy xavfsizlik chorasidir.",
+    "show": "UPSERT va MERGE buyruqlaridan foydalanish ma’lumotlar bazasida poyga holatlarining oldini oluvchi eng asosiy xavfsizlik chorasidir.",
+    "say": "Apsert va myorj buyruqlaridan foydalanish ma’lumotlar bazasida poyga holatlarining oldini oluvchi eng asosiy xavfsizlik chorasidir.",
+    "a0": 43.97,
+    "a1": 51.08,
+    "words": [
+      {
+        "w": "Apsert",
+        "s": 43.97,
+        "e": 44.31
+      },
+      {
+        "w": "va",
+        "s": 44.37,
+        "e": 44.43
+      },
+      {
+        "w": "myorj",
+        "s": 44.63,
+        "e": 44.93
+      },
+      {
+        "w": "buyruqlaridan",
+        "s": 44.99,
+        "e": 45.51
+      },
+      {
+        "w": "foydalanish",
+        "s": 45.53,
+        "e": 46.01
+      },
+      {
+        "w": "ma’lumotlar",
+        "s": 46.34,
+        "e": 46.82
+      },
+      {
+        "w": "bazasida",
+        "s": 46.86,
+        "e": 47.3
+      },
+      {
+        "w": "poyga",
+        "s": 47.4,
+        "e": 47.72
+      },
+      {
+        "w": "holatlarining",
+        "s": 47.76,
+        "e": 48.34
+      },
+      {
+        "w": "oldini",
+        "s": 48.48,
+        "e": 48.76
+      },
+      {
+        "w": "oluvchi",
+        "s": 48.82,
+        "e": 49.1
+      },
+      {
+        "w": "eng",
+        "s": 49.48,
+        "e": 49.62
+      },
+      {
+        "w": "asosiy",
+        "s": 49.72,
+        "e": 50.08
+      },
+      {
+        "w": "xavfsizlik",
+        "s": 50.16,
+        "e": 50.58
+      },
+      {
+        "w": "chorasidir.",
+        "s": 50.62,
+        "e": 51.08
+      }
+    ]
+  }
+]
