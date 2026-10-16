@@ -4,6 +4,15 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/19-1-tushuncha.jpg">
+    <source src="/video/sql/19-1-tushuncha.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/19-1-tushuncha.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/19-1-tushuncha.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>19.1-video. RETURNING va yangi ID tushunchasi</figcaption>
+</figure>
+
 Yangi mijoz qo'shildi. Ilova endi uning **ID** sini bilishi kerak, masalan unga buyurtma bog'lash uchun. Lekin ID'ni baza o'zi berdi (13-bob). Uni qanday olish mumkin?
 
 Yo'llardan biri — keyin alohida `SELECT` qilish. Lekin parallel yozuvlar bo'lganda qaysi qator "sizniki" ekanini aniqlash qiyin. PostgreSQL hujjati aytganidek, `RETURNING` aynan shu muammoni hal qiladi:
@@ -49,6 +58,15 @@ Jadvalda triggerlar bo'lsa, `RETURNING` qatorni **triggerlar o'zgartirgan** hola
 `RETURNING` standartda yo'q. PostgreSQL hujjatida `INSERT`, `UPDATE` va `DELETE` ning "Compatibility" bo'limlari uni PostgreSQL kengaytmasi deb ko'rsatadi. SQLite hujjatiga ko'ra SQLite'dagi `RETURNING` sintaksisi PostgreSQL'dan olingan.
 
 ## Kod
+
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/19-2-kod.jpg">
+    <source src="/video/sql/19-2-kod.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/19-2-kod.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/19-2-kod.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>19.2-video. PostgreSQL 18: RETURNING amaliyoti, OLD/NEW va CTE arxivlash</figcaption>
+</figure>
 
 Misollar PostgreSQL 18.6, MySQL 9.7.2 va SQLite 3.54.0 da ishga tushirilgan.
 
@@ -174,6 +192,15 @@ INSERT 0 1
 ```
 
 ## Dialektlar
+
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/19-3-dialektlar.jpg">
+    <source src="/video/sql/19-3-dialektlar.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/19-3-dialektlar.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/19-3-dialektlar.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>19.3-video. MySQL va SQLite: LAST_INSERT_ID, ROW_COUNT va cheklovlar</figcaption>
+</figure>
 
 ### MySQL: `RETURNING` yo'q
 

@@ -1,0 +1,31 @@
+WEBVTT
+
+1
+00:01.420 --> 00:10.820
+Yangi mijoz qo‘shilganda uning avtomatik yaratilgan identifikatorini olish yoki
+o‘zgargan qatorlarning yangi holatini bilish eng ko‘p uchraydigan vazifalardan biridir.
+
+2
+00:14.370 --> 00:22.760
+ID ni bilish uchun alohida SELECT max ID qilish parallel so‘rovlar oqimida
+boshqa birovning ID sini olib qo‘yish yoki poyga holatiga sabab bo‘ladi.
+
+3
+00:26.030 --> 00:34.810
+RETURNING klauzasi bitta DML buyrug‘ining o‘zida o‘zgargan qatorlarni qaytaradi.
+Bu ortiqcha tarmoq so‘rovlarini tejaydi va to‘liq xavfsizlikni kafolatlaydi.
+
+4
+00:37.880 --> 00:46.800
+INSERT da u yangi ID va sukut qiymatlarni, UPDATE da qatorning yangi
+holatini, DELETE da esa o‘chirilgan qator nusxasini ilovaga taqdim etadi.
+
+5
+00:49.890 --> 00:58.560
+PostgreSQL 18 versiyasida endi UPDATE da old va new kalit so‘zlari orqali eski
+va yangi qiymatlarni bir vaqtda solishtirib olish imkoniyati paydo bo‘ldi.
+
+6
+01:01.550 --> 01:08.970
+Ma’lumotlar bazasi hisoblagan har qanday qiymatni RETURNING orqali
+olish zamonaviy dasturlashda eng ishonchli va toza yondashuvdir.

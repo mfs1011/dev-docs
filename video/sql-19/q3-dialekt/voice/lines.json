@@ -1,0 +1,663 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "RETURNING standarti hamma ma’lumotlar bazasida bir xil emas: PostgreSQL va SQLite uni qo‘llab-quvvatlasa-da, MySQL da u umuman mavjud emas.",
+    "show": "RETURNING standarti hamma ma’lumotlar bazasida bir xil emas: PostgreSQL va SQLite uni qo‘llab-quvvatlasa-da, MySQL da u umuman mavjud emas.",
+    "say": "Retyorning standarti hamma ma’lumotlar bazasida bir xil emas: Postgres va Es-kyu-layt uni qo‘llab-quvvatlasa-da, May es-kyu-el da u umuman mavjud emas.",
+    "a0": 0.22,
+    "a1": 9.19,
+    "words": [
+      {
+        "w": "Retyorning",
+        "s": 0.22,
+        "e": 0.7
+      },
+      {
+        "w": "standarti",
+        "s": 0.74,
+        "e": 1.28
+      },
+      {
+        "w": "hamma",
+        "s": 1.64,
+        "e": 1.86
+      },
+      {
+        "w": "ma’lumotlar",
+        "s": 1.9,
+        "e": 2.4
+      },
+      {
+        "w": "bazasida",
+        "s": 2.46,
+        "e": 2.9
+      },
+      {
+        "w": "bir",
+        "s": 2.96,
+        "e": 3.06
+      },
+      {
+        "w": "xil",
+        "s": 3.12,
+        "e": 3.24
+      },
+      {
+        "w": "emas:",
+        "s": 3.3,
+        "e": 3.54
+      },
+      {
+        "w": "Postgres",
+        "s": 4.16,
+        "e": 4.66
+      },
+      {
+        "w": "va",
+        "s": 4.74,
+        "e": 4.82
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 5.0,
+        "e": 5.54
+      },
+      {
+        "w": "uni",
+        "s": 5.62,
+        "e": 5.74
+      },
+      {
+        "w": "qo‘llab-quvvatlasa-da,",
+        "s": 5.76,
+        "e": 6.62
+      },
+      {
+        "w": "May",
+        "s": 7.04,
+        "e": 7.2
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 7.28,
+        "e": 7.59
+      },
+      {
+        "w": "da",
+        "s": 7.81,
+        "e": 7.89
+      },
+      {
+        "w": "u",
+        "s": 7.99,
+        "e": 8.01
+      },
+      {
+        "w": "umuman",
+        "s": 8.19,
+        "e": 8.55
+      },
+      {
+        "w": "mavjud",
+        "s": 8.59,
+        "e": 8.89
+      },
+      {
+        "w": "emas.",
+        "s": 8.95,
+        "e": 9.19
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "mysql_no_returning",
+    "text": "MySQL da RETURNING yozish sintaktik xato beradi. Uning o‘rniga LAST_INSERT_ID funksiyasi orqali yangi yaratilgan ID olinadi.",
+    "show": "MySQL da RETURNING yozish sintaktik xato beradi. Uning o‘rniga LAST_INSERT_ID funksiyasi orqali yangi yaratilgan ID olinadi.",
+    "say": "May es-kyu-el da retyorning yozish sintaktik xato beradi. Uning o‘rniga last insert ay-di funksiyasi orqali yangi yaratilgan ay-di olinadi.",
+    "a0": 10.05,
+    "a1": 18.23,
+    "words": [
+      {
+        "w": "May",
+        "s": 10.05,
+        "e": 10.19
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 10.25,
+        "e": 10.55
+      },
+      {
+        "w": "da",
+        "s": 10.79,
+        "e": 10.85
+      },
+      {
+        "w": "retyorning",
+        "s": 10.93,
+        "e": 11.33
+      },
+      {
+        "w": "yozish",
+        "s": 11.33,
+        "e": 11.69
+      },
+      {
+        "w": "sintaktik",
+        "s": 11.83,
+        "e": 12.35
+      },
+      {
+        "w": "xato",
+        "s": 12.35,
+        "e": 12.55
+      },
+      {
+        "w": "beradi.",
+        "s": 12.63,
+        "e": 12.93
+      },
+      {
+        "w": "Uning",
+        "s": 13.41,
+        "e": 13.61
+      },
+      {
+        "w": "o‘rniga",
+        "s": 13.65,
+        "e": 13.97
+      },
+      {
+        "w": "last",
+        "s": 14.35,
+        "e": 14.59
+      },
+      {
+        "w": "insert",
+        "s": 14.69,
+        "e": 15.09
+      },
+      {
+        "w": "ay-di",
+        "s": 15.27,
+        "e": 15.51
+      },
+      {
+        "w": "funksiyasi",
+        "s": 15.61,
+        "e": 16.05
+      },
+      {
+        "w": "orqali",
+        "s": 16.09,
+        "e": 16.41
+      },
+      {
+        "w": "yangi",
+        "s": 16.53,
+        "e": 16.81
+      },
+      {
+        "w": "yaratilgan",
+        "s": 16.83,
+        "e": 17.33
+      },
+      {
+        "w": "ay-di",
+        "s": 17.49,
+        "e": 17.73
+      },
+      {
+        "w": "olinadi.",
+        "s": 17.87,
+        "e": 18.23
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "mysql_pitfalls",
+    "text": "Biroq MySQL da ko‘p qatorli INSERT da LAST_INSERT_ID faqat eng birinchi ID ni qaytaradi, ROW_COUNT esa faqat haqiqatda o‘zgargan qatorlarni sanaydi.",
+    "show": "Biroq MySQL da ko‘p qatorli INSERT da LAST_INSERT_ID faqat eng birinchi ID ni qaytaradi, ROW_COUNT esa faqat haqiqatda o‘zgargan qatorlarni sanaydi.",
+    "say": "Biroq May es-kyu-el da ko‘p qatorli insert da last insert ay-di faqat eng birinchi ay-di-ni qaytaradi, rou kaunt esa faqat haqiqatda o‘zgargan qatorlarni sanaydi.",
+    "a0": 18.81,
+    "a1": 28.72,
+    "words": [
+      {
+        "w": "Biroq",
+        "s": 18.81,
+        "e": 19.03
+      },
+      {
+        "w": "May",
+        "s": 19.11,
+        "e": 19.27
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 19.33,
+        "e": 19.63
+      },
+      {
+        "w": "da",
+        "s": 19.83,
+        "e": 19.89
+      },
+      {
+        "w": "ko‘p",
+        "s": 19.97,
+        "e": 20.15
+      },
+      {
+        "w": "qatorli",
+        "s": 20.21,
+        "e": 20.63
+      },
+      {
+        "w": "insert",
+        "s": 20.71,
+        "e": 21.07
+      },
+      {
+        "w": "da",
+        "s": 21.11,
+        "e": 21.21
+      },
+      {
+        "w": "last",
+        "s": 21.59,
+        "e": 21.81
+      },
+      {
+        "w": "insert",
+        "s": 21.89,
+        "e": 22.23
+      },
+      {
+        "w": "ay-di",
+        "s": 22.35,
+        "e": 22.58
+      },
+      {
+        "w": "faqat",
+        "s": 22.7,
+        "e": 23.0
+      },
+      {
+        "w": "eng",
+        "s": 23.24,
+        "e": 23.4
+      },
+      {
+        "w": "birinchi",
+        "s": 23.48,
+        "e": 23.8
+      },
+      {
+        "w": "ay-di-ni",
+        "s": 23.9,
+        "e": 24.24
+      },
+      {
+        "w": "qaytaradi,",
+        "s": 24.26,
+        "e": 24.7
+      },
+      {
+        "w": "rou",
+        "s": 25.1,
+        "e": 25.28
+      },
+      {
+        "w": "kaunt",
+        "s": 25.38,
+        "e": 25.7
+      },
+      {
+        "w": "esa",
+        "s": 25.76,
+        "e": 25.9
+      },
+      {
+        "w": "faqat",
+        "s": 26.28,
+        "e": 26.58
+      },
+      {
+        "w": "haqiqatda",
+        "s": 26.64,
+        "e": 27.16
+      },
+      {
+        "w": "o‘zgargan",
+        "s": 27.28,
+        "e": 27.76
+      },
+      {
+        "w": "qatorlarni",
+        "s": 27.8,
+        "e": 28.34
+      },
+      {
+        "w": "sanaydi.",
+        "s": 28.38,
+        "e": 28.72
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "sqlite_returning",
+    "text": "SQLite 3.35 versiyasidan boshlab RETURNING qo‘shilgan, lekin uni CTE yoki subquery ichiga yo‘naltirib bo‘lmaydi va natija tartibi ixtiyoriydir.",
+    "show": "SQLite 3.35 versiyasidan boshlab RETURNING qo‘shilgan, lekin uni CTE yoki subquery ichiga yo‘naltirib bo‘lmaydi va natija tartibi ixtiyoriydir.",
+    "say": "Es-kyu-layt uch butun o‘ttiz besh versiyasidan boshlab retyorning qo‘shilgan, lekin uni si-ti-i yoki subquery ichiga yo‘naltirib bo‘lmaydi va natija tartibi ixtiyoriydir.",
+    "a0": 29.42,
+    "a1": 38.57,
+    "words": [
+      {
+        "w": "Es-kyu-layt",
+        "s": 29.42,
+        "e": 29.9
+      },
+      {
+        "w": "uch",
+        "s": 30.06,
+        "e": 30.18
+      },
+      {
+        "w": "butun",
+        "s": 30.22,
+        "e": 30.44
+      },
+      {
+        "w": "o‘ttiz",
+        "s": 30.54,
+        "e": 30.78
+      },
+      {
+        "w": "besh",
+        "s": 30.84,
+        "e": 31.06
+      },
+      {
+        "w": "versiyasidan",
+        "s": 31.12,
+        "e": 31.66
+      },
+      {
+        "w": "boshlab",
+        "s": 31.7,
+        "e": 32.04
+      },
+      {
+        "w": "retyorning",
+        "s": 32.34,
+        "e": 32.76
+      },
+      {
+        "w": "qo‘shilgan,",
+        "s": 32.76,
+        "e": 33.16
+      },
+      {
+        "w": "lekin",
+        "s": 33.22,
+        "e": 33.46
+      },
+      {
+        "w": "uni",
+        "s": 33.56,
+        "e": 33.68
+      },
+      {
+        "w": "si-ti-i",
+        "s": 34.04,
+        "e": 34.5
+      },
+      {
+        "w": "yoki",
+        "s": 34.68,
+        "e": 34.94
+      },
+      {
+        "w": "subquery",
+        "s": 35.16,
+        "e": 35.68
+      },
+      {
+        "w": "ichiga",
+        "s": 35.74,
+        "e": 36.0
+      },
+      {
+        "w": "yo‘naltirib",
+        "s": 36.04,
+        "e": 36.46
+      },
+      {
+        "w": "bo‘lmaydi",
+        "s": 36.51,
+        "e": 36.95
+      },
+      {
+        "w": "va",
+        "s": 37.03,
+        "e": 37.07
+      },
+      {
+        "w": "natija",
+        "s": 37.15,
+        "e": 37.51
+      },
+      {
+        "w": "tartibi",
+        "s": 37.57,
+        "e": 37.93
+      },
+      {
+        "w": "ixtiyoriydir.",
+        "s": 37.99,
+        "e": 38.57
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "dml_pitfalls",
+    "text": "Maksimal ID ga tayanish yoki SQLite da natija qatorlari kiritilgan tartibda keladi deb o‘ylash ilovada yashirin xatolarni keltirib chiqaradi.",
+    "show": "Maksimal ID ga tayanish yoki SQLite da natija qatorlari kiritilgan tartibda keladi deb o‘ylash ilovada yashirin xatolarni keltirib chiqaradi.",
+    "say": "Maksimal ay-di ga tayanish yoki Es-kyu-layt da natija qatorlari kiritilgan tartibda keladi deb o‘ylash ilovada yashirin xatolarni keltirib chiqaradi.",
+    "a0": 39.37,
+    "a1": 47.45,
+    "words": [
+      {
+        "w": "Maksimal",
+        "s": 39.37,
+        "e": 39.83
+      },
+      {
+        "w": "ay-di",
+        "s": 39.93,
+        "e": 40.15
+      },
+      {
+        "w": "ga",
+        "s": 40.23,
+        "e": 40.31
+      },
+      {
+        "w": "tayanish",
+        "s": 40.35,
+        "e": 40.79
+      },
+      {
+        "w": "yoki",
+        "s": 40.85,
+        "e": 41.05
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 41.47,
+        "e": 41.97
+      },
+      {
+        "w": "da",
+        "s": 42.03,
+        "e": 42.11
+      },
+      {
+        "w": "natija",
+        "s": 42.25,
+        "e": 42.63
+      },
+      {
+        "w": "qatorlari",
+        "s": 42.69,
+        "e": 43.15
+      },
+      {
+        "w": "kiritilgan",
+        "s": 43.19,
+        "e": 43.63
+      },
+      {
+        "w": "tartibda",
+        "s": 43.67,
+        "e": 44.01
+      },
+      {
+        "w": "keladi",
+        "s": 44.07,
+        "e": 44.43
+      },
+      {
+        "w": "deb",
+        "s": 44.51,
+        "e": 44.65
+      },
+      {
+        "w": "o‘ylash",
+        "s": 44.69,
+        "e": 44.93
+      },
+      {
+        "w": "ilovada",
+        "s": 45.27,
+        "e": 45.65
+      },
+      {
+        "w": "yashirin",
+        "s": 45.75,
+        "e": 46.15
+      },
+      {
+        "w": "xatolarni",
+        "s": 46.21,
+        "e": 46.71
+      },
+      {
+        "w": "keltirib",
+        "s": 46.73,
+        "e": 47.05
+      },
+      {
+        "w": "chiqaradi.",
+        "s": 47.07,
+        "e": 47.45
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "xulosa",
+    "text": "Har bir tizimning ID generatsiya qilish va o‘zgarishlarni qaytarish mantig‘ini chuqur bilish ishonchli arxitektura qurishning poydevoridir.",
+    "show": "Har bir tizimning ID generatsiya qilish va o‘zgarishlarni qaytarish mantig‘ini chuqur bilish ishonchli arxitektura qurishning poydevoridir.",
+    "say": "Har bir tizimning ay-di generatsiya qilish va o‘zgarishlarni qaytarish mantig‘ini chuqur bilish ishonchli arxitektura qurishning poydevoridir.",
+    "a0": 48.07,
+    "a1": 55.78,
+    "words": [
+      {
+        "w": "Har",
+        "s": 48.07,
+        "e": 48.25
+      },
+      {
+        "w": "bir",
+        "s": 48.31,
+        "e": 48.43
+      },
+      {
+        "w": "tizimning",
+        "s": 48.47,
+        "e": 48.91
+      },
+      {
+        "w": "ay-di",
+        "s": 49.07,
+        "e": 49.31
+      },
+      {
+        "w": "generatsiya",
+        "s": 49.41,
+        "e": 49.94
+      },
+      {
+        "w": "qilish",
+        "s": 49.98,
+        "e": 50.26
+      },
+      {
+        "w": "va",
+        "s": 50.3,
+        "e": 50.36
+      },
+      {
+        "w": "o‘zgarishlarni",
+        "s": 50.74,
+        "e": 51.36
+      },
+      {
+        "w": "qaytarish",
+        "s": 51.42,
+        "e": 51.82
+      },
+      {
+        "w": "mantig‘ini",
+        "s": 51.86,
+        "e": 52.28
+      },
+      {
+        "w": "chuqur",
+        "s": 52.34,
+        "e": 52.62
+      },
+      {
+        "w": "bilish",
+        "s": 52.68,
+        "e": 52.94
+      },
+      {
+        "w": "ishonchli",
+        "s": 53.3,
+        "e": 53.74
+      },
+      {
+        "w": "arxitektura",
+        "s": 53.86,
+        "e": 54.48
+      },
+      {
+        "w": "qurishning",
+        "s": 54.52,
+        "e": 54.9
+      },
+      {
+        "w": "poydevoridir.",
+        "s": 55.14,
+        "e": 55.78
+      }
+    ]
+  }
+]

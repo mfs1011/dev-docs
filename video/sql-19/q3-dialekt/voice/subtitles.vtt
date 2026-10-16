@@ -1,0 +1,31 @@
+WEBVTT
+
+1
+00:01.420 --> 00:10.840
+RETURNING standarti hamma ma’lumotlar bazasida bir xil emas: PostgreSQL
+va SQLite uni qo‘llab-quvvatlasa-da, MySQL da u umuman mavjud emas.
+
+2
+00:13.650 --> 00:22.280
+MySQL da RETURNING yozish sintaktik xato beradi. Uning o‘rniga
+LAST_INSERT_ID funksiyasi orqali yangi yaratilgan ID olinadi.
+
+3
+00:25.010 --> 00:35.370
+Biroq MySQL da ko‘p qatorli INSERT da LAST_INSERT_ID faqat eng birinchi ID
+ni qaytaradi, ROW_COUNT esa faqat haqiqatda o‘zgargan qatorlarni sanaydi.
+
+4
+00:38.220 --> 00:47.820
+SQLite 3.35 versiyasidan boshlab RETURNING qo‘shilgan, lekin uni CTE yoki
+subquery ichiga yo‘naltirib bo‘lmaydi va natija tartibi ixtiyoriydir.
+
+5
+00:50.770 --> 00:59.300
+Maksimal ID ga tayanish yoki SQLite da natija qatorlari kiritilgan
+tartibda keladi deb o‘ylash ilovada yashirin xatolarni keltirib chiqaradi.
+
+6
+01:02.070 --> 01:10.230
+Har bir tizimning ID generatsiya qilish va o‘zgarishlarni qaytarish
+mantig‘ini chuqur bilish ishonchli arxitektura qurishning poydevoridir.
