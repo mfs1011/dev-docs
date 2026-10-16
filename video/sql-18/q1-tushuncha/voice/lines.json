@@ -1,0 +1,572 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Ushbu darsda ma’lumotlar bilan ishlashning asosi bo‘lgan DML buyruqlari: INSERT, UPDATE va DELETE amallarining muhim qoidalari bilan tanishamiz.",
+    "show": "Ushbu darsda ma’lumotlar bilan ishlashning asosi bo‘lgan DML buyruqlari: INSERT, UPDATE va DELETE amallarining muhim qoidalari bilan tanishamiz.",
+    "say": "Ushbu darsda ma’lumotlar bilan ishlashning asosi bo‘lgan di-em-el buyruqlari: insert, apdeyt va dilit amallarining muhim qoidalari bilan tanishamiz.",
+    "a0": 0.2,
+    "a1": 8.67,
+    "words": [
+      {
+        "w": "Ushbu",
+        "s": 0.2,
+        "e": 0.4
+      },
+      {
+        "w": "darsda",
+        "s": 0.48,
+        "e": 0.78
+      },
+      {
+        "w": "ma’lumotlar",
+        "s": 0.86,
+        "e": 1.44
+      },
+      {
+        "w": "bilan",
+        "s": 1.48,
+        "e": 1.64
+      },
+      {
+        "w": "ishlashning",
+        "s": 1.7,
+        "e": 2.2
+      },
+      {
+        "w": "asosi",
+        "s": 2.28,
+        "e": 2.62
+      },
+      {
+        "w": "bo‘lgan",
+        "s": 2.64,
+        "e": 2.96
+      },
+      {
+        "w": "di-em-el",
+        "s": 3.32,
+        "e": 3.72
+      },
+      {
+        "w": "buyruqlari:",
+        "s": 3.76,
+        "e": 4.24
+      },
+      {
+        "w": "insert,",
+        "s": 4.66,
+        "e": 5.08
+      },
+      {
+        "w": "apdeyt",
+        "s": 5.42,
+        "e": 5.8
+      },
+      {
+        "w": "va",
+        "s": 5.86,
+        "e": 5.94
+      },
+      {
+        "w": "dilit",
+        "s": 6.3,
+        "e": 6.56
+      },
+      {
+        "w": "amallarining",
+        "s": 6.62,
+        "e": 7.14
+      },
+      {
+        "w": "muhim",
+        "s": 7.22,
+        "e": 7.53
+      },
+      {
+        "w": "qoidalari",
+        "s": 7.59,
+        "e": 8.01
+      },
+      {
+        "w": "bilan",
+        "s": 8.03,
+        "e": 8.19
+      },
+      {
+        "w": "tanishamiz.",
+        "s": 8.23,
+        "e": 8.67
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "insert_usullari",
+    "text": "Relyatsion bazada faqat butun qator qo‘shiladi. Ko‘rsatilmagan ustunlar sukut bo‘yicha qiymat oladi, ustunlarni aniq sanab yozish esa kodni kelajakdagi o‘zgarishlardan asraydi.",
+    "show": "Relyatsion bazada faqat butun qator qo‘shiladi. Ko‘rsatilmagan ustunlar sukut bo‘yicha qiymat oladi, ustunlarni aniq sanab yozish esa kodni kelajakdagi o‘zgarishlardan asraydi.",
+    "say": "Relyatsion bazada faqat butun qator qo‘shiladi. Ko‘rsatilmagan ustunlar sukut bo‘yicha qiymat oladi, ustunlarni aniq sanab yozish esa kodni kelajakdagi o‘zgarishlardan asraydi.",
+    "a0": 9.63,
+    "a1": 19.69,
+    "words": [
+      {
+        "w": "Relyatsion",
+        "s": 9.63,
+        "e": 10.03
+      },
+      {
+        "w": "bazada",
+        "s": 10.09,
+        "e": 10.45
+      },
+      {
+        "w": "faqat",
+        "s": 10.51,
+        "e": 10.79
+      },
+      {
+        "w": "butun",
+        "s": 10.91,
+        "e": 11.17
+      },
+      {
+        "w": "qator",
+        "s": 11.23,
+        "e": 11.49
+      },
+      {
+        "w": "qo‘shiladi.",
+        "s": 11.55,
+        "e": 11.91
+      },
+      {
+        "w": "Ko‘rsatilmagan",
+        "s": 12.45,
+        "e": 13.13
+      },
+      {
+        "w": "ustunlar",
+        "s": 13.19,
+        "e": 13.63
+      },
+      {
+        "w": "sukut",
+        "s": 13.89,
+        "e": 14.15
+      },
+      {
+        "w": "bo‘yicha",
+        "s": 14.21,
+        "e": 14.45
+      },
+      {
+        "w": "qiymat",
+        "s": 14.51,
+        "e": 14.81
+      },
+      {
+        "w": "oladi,",
+        "s": 14.85,
+        "e": 15.07
+      },
+      {
+        "w": "ustunlarni",
+        "s": 15.57,
+        "e": 16.07
+      },
+      {
+        "w": "aniq",
+        "s": 16.23,
+        "e": 16.43
+      },
+      {
+        "w": "sanab",
+        "s": 16.49,
+        "e": 16.75
+      },
+      {
+        "w": "yozish",
+        "s": 16.79,
+        "e": 17.07
+      },
+      {
+        "w": "esa",
+        "s": 17.11,
+        "e": 17.27
+      },
+      {
+        "w": "kodni",
+        "s": 17.63,
+        "e": 17.91
+      },
+      {
+        "w": "kelajakdagi",
+        "s": 17.99,
+        "e": 18.57
+      },
+      {
+        "w": "o‘zgarishlardan",
+        "s": 18.61,
+        "e": 19.21
+      },
+      {
+        "w": "asraydi.",
+        "s": 19.31,
+        "e": 19.69
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "update_delete_qoidalari",
+    "text": "UPDATE va DELETE buyruqlarida WHERE yozilmasa, butun jadvaldagi barcha qatorlar ogohlantirishsiz o‘zgaradi yoki o‘chadi. Bitta qatorni aniq yangilash uchun birlamchi kalit shart.",
+    "show": "UPDATE va DELETE buyruqlarida WHERE yozilmasa, butun jadvaldagi barcha qatorlar ogohlantirishsiz o‘zgaradi yoki o‘chadi. Bitta qatorni aniq yangilash uchun birlamchi kalit shart.",
+    "say": "Apdeyt va dilit buyruqlarida ver yozilmasa, butun jadvaldagi barcha qatorlar ogohlantirishsiz o‘zgaradi yoki o‘chadi. Bitta qatorni aniq yangilash uchun birlamchi kalit shart.",
+    "a0": 20.59,
+    "a1": 31.14,
+    "words": [
+      {
+        "w": "Apdeyt",
+        "s": 20.59,
+        "e": 20.91
+      },
+      {
+        "w": "va",
+        "s": 20.97,
+        "e": 21.03
+      },
+      {
+        "w": "dilit",
+        "s": 21.11,
+        "e": 21.35
+      },
+      {
+        "w": "buyruqlarida",
+        "s": 21.39,
+        "e": 21.95
+      },
+      {
+        "w": "ver",
+        "s": 22.33,
+        "e": 22.52
+      },
+      {
+        "w": "yozilmasa,",
+        "s": 22.56,
+        "e": 23.06
+      },
+      {
+        "w": "butun",
+        "s": 23.42,
+        "e": 23.7
+      },
+      {
+        "w": "jadvaldagi",
+        "s": 23.74,
+        "e": 24.24
+      },
+      {
+        "w": "barcha",
+        "s": 24.36,
+        "e": 24.64
+      },
+      {
+        "w": "qatorlar",
+        "s": 24.7,
+        "e": 25.12
+      },
+      {
+        "w": "ogohlantirishsiz",
+        "s": 25.22,
+        "e": 26.04
+      },
+      {
+        "w": "o‘zgaradi",
+        "s": 26.14,
+        "e": 26.58
+      },
+      {
+        "w": "yoki",
+        "s": 26.76,
+        "e": 27.0
+      },
+      {
+        "w": "o‘chadi.",
+        "s": 27.12,
+        "e": 27.42
+      },
+      {
+        "w": "Bitta",
+        "s": 28.04,
+        "e": 28.26
+      },
+      {
+        "w": "qatorni",
+        "s": 28.3,
+        "e": 28.68
+      },
+      {
+        "w": "aniq",
+        "s": 28.8,
+        "e": 29.0
+      },
+      {
+        "w": "yangilash",
+        "s": 29.06,
+        "e": 29.48
+      },
+      {
+        "w": "uchun",
+        "s": 29.5,
+        "e": 29.7
+      },
+      {
+        "w": "birlamchi",
+        "s": 30.0,
+        "e": 30.44
+      },
+      {
+        "w": "kalit",
+        "s": 30.48,
+        "e": 30.78
+      },
+      {
+        "w": "shart.",
+        "s": 30.9,
+        "e": 31.14
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "boshqa_jadvallarga_tayanish",
+    "text": "PostgreSQL da boshqa jadvalga qarab o‘zgartirish uchun UPDATE FROM va DELETE USING bor. Agar bir nechta qator mos kelsa, ixtiyoriy bittasi olinishi katta xavf tug‘diradi.",
+    "show": "PostgreSQL da boshqa jadvalga qarab o‘zgartirish uchun UPDATE FROM va DELETE USING bor. Agar bir nechta qator mos kelsa, ixtiyoriy bittasi olinishi katta xavf tug‘diradi.",
+    "say": "Postgres da boshqa jadvalga qarab o‘zgartirish uchun apdeyt from va dilit yuzing bor. Agar bir nechta qator mos kelsa, ixtiyoriy bittasi olinishi katta xavf tug‘diradi.",
+    "a0": 31.96,
+    "a1": 41.77,
+    "words": [
+      {
+        "w": "Postgres",
+        "s": 31.96,
+        "e": 32.34
+      },
+      {
+        "w": "da",
+        "s": 32.38,
+        "e": 32.46
+      },
+      {
+        "w": "boshqa",
+        "s": 32.58,
+        "e": 32.84
+      },
+      {
+        "w": "jadvalga",
+        "s": 32.9,
+        "e": 33.26
+      },
+      {
+        "w": "qarab",
+        "s": 33.3,
+        "e": 33.52
+      },
+      {
+        "w": "o‘zgartirish",
+        "s": 33.56,
+        "e": 34.06
+      },
+      {
+        "w": "uchun",
+        "s": 34.1,
+        "e": 34.28
+      },
+      {
+        "w": "apdeyt",
+        "s": 34.68,
+        "e": 35.0
+      },
+      {
+        "w": "from",
+        "s": 35.06,
+        "e": 35.31
+      },
+      {
+        "w": "va",
+        "s": 35.53,
+        "e": 35.61
+      },
+      {
+        "w": "dilit",
+        "s": 35.99,
+        "e": 36.27
+      },
+      {
+        "w": "yuzing",
+        "s": 36.33,
+        "e": 36.63
+      },
+      {
+        "w": "bor.",
+        "s": 36.65,
+        "e": 36.77
+      },
+      {
+        "w": "Agar",
+        "s": 37.33,
+        "e": 37.57
+      },
+      {
+        "w": "bir",
+        "s": 37.71,
+        "e": 37.83
+      },
+      {
+        "w": "nechta",
+        "s": 37.87,
+        "e": 38.09
+      },
+      {
+        "w": "qator",
+        "s": 38.13,
+        "e": 38.39
+      },
+      {
+        "w": "mos",
+        "s": 38.45,
+        "e": 38.61
+      },
+      {
+        "w": "kelsa,",
+        "s": 38.65,
+        "e": 38.93
+      },
+      {
+        "w": "ixtiyoriy",
+        "s": 39.27,
+        "e": 39.75
+      },
+      {
+        "w": "bittasi",
+        "s": 39.81,
+        "e": 40.19
+      },
+      {
+        "w": "olinishi",
+        "s": 40.25,
+        "e": 40.61
+      },
+      {
+        "w": "katta",
+        "s": 40.73,
+        "e": 41.07
+      },
+      {
+        "w": "xavf",
+        "s": 41.13,
+        "e": 41.31
+      },
+      {
+        "w": "tug‘diradi.",
+        "s": 41.35,
+        "e": 41.77
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "xulosa",
+    "text": "Xavfli o‘zgartirishlarni doimo tranzaksiya ichida tekshirish va ko‘p jadvalli UPDATE da jamlangan subquery ishlatish eng to‘g‘ri amaliyotdir.",
+    "show": "Xavfli o‘zgartirishlarni doimo tranzaksiya ichida tekshirish va ko‘p jadvalli UPDATE da jamlangan subquery ishlatish eng to‘g‘ri amaliyotdir.",
+    "say": "Xavfli o‘zgartirishlarni doimo tranzaksiya ichida tekshirish va ko‘p jadvalli apdeyt da jamlangan subquery ishlatish eng to‘g‘ri amaliyotdir.",
+    "a0": 42.55,
+    "a1": 50.7,
+    "words": [
+      {
+        "w": "Xavfli",
+        "s": 42.55,
+        "e": 42.79
+      },
+      {
+        "w": "o‘zgartirishlarni",
+        "s": 42.85,
+        "e": 43.57
+      },
+      {
+        "w": "doimo",
+        "s": 43.69,
+        "e": 44.05
+      },
+      {
+        "w": "tranzaksiya",
+        "s": 44.15,
+        "e": 44.71
+      },
+      {
+        "w": "ichida",
+        "s": 44.73,
+        "e": 44.93
+      },
+      {
+        "w": "tekshirish",
+        "s": 44.99,
+        "e": 45.49
+      },
+      {
+        "w": "va",
+        "s": 45.84,
+        "e": 45.9
+      },
+      {
+        "w": "ko‘p",
+        "s": 46.2,
+        "e": 46.4
+      },
+      {
+        "w": "jadvalli",
+        "s": 46.44,
+        "e": 46.88
+      },
+      {
+        "w": "apdeyt",
+        "s": 47.02,
+        "e": 47.38
+      },
+      {
+        "w": "da",
+        "s": 47.44,
+        "e": 47.52
+      },
+      {
+        "w": "jamlangan",
+        "s": 47.74,
+        "e": 48.28
+      },
+      {
+        "w": "subquery",
+        "s": 48.4,
+        "e": 48.9
+      },
+      {
+        "w": "ishlatish",
+        "s": 48.94,
+        "e": 49.32
+      },
+      {
+        "w": "eng",
+        "s": 49.68,
+        "e": 49.82
+      },
+      {
+        "w": "to‘g‘ri",
+        "s": 49.88,
+        "e": 50.16
+      },
+      {
+        "w": "amaliyotdir.",
+        "s": 50.18,
+        "e": 50.7
+      }
+    ]
+  }
+]

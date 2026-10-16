@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:12.416
+Dialektlar: INSERT, UPDATE va DELETE farqlari
+
+00:12.416 --> 00:25.159
+MySQL: UPDATE JOIN va qat’iy INSERT
+
+00:25.159 --> 00:39.001
+MySQL: ORDER BY LIMIT va VALUES ROW
+
+00:39.001 --> 00:50.379
+SQLite: UPDATE FROM va DELETE cheklovlari
+
+00:50.379 --> 01:02.246
+DML Tuzoqlari va WHERE siz UPDATE
+
+01:02.246 --> 01:17.960
+Xulosa

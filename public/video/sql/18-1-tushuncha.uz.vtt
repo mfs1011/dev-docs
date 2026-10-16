@@ -1,0 +1,26 @@
+WEBVTT
+
+1
+00:01.420 --> 00:10.340
+Ushbu darsda ma’lumotlar bilan ishlashning asosi bo‘lgan DML buyruqlari:
+INSERT, UPDATE va DELETE amallarining muhim qoidalari bilan tanishamiz.
+
+2
+00:13.250 --> 00:23.760
+Relyatsion bazada faqat butun qator qo‘shiladi. Ko‘rsatilmagan ustunlar sukut bo‘yicha
+qiymat oladi, ustunlarni aniq sanab yozish esa kodni kelajakdagi o‘zgarishlardan asraydi.
+
+3
+00:26.810 --> 00:37.810
+UPDATE va DELETE buyruqlarida WHERE yozilmasa, butun jadvaldagi barcha qatorlar ogohlantirishsiz
+o‘zgaradi yoki o‘chadi. Bitta qatorni aniq yangilash uchun birlamchi kalit shart.
+
+4
+00:40.780 --> 00:51.040
+PostgreSQL da boshqa jadvalga qarab o‘zgartirish uchun UPDATE FROM va DELETE USING bor.
+Agar bir nechta qator mos kelsa, ixtiyoriy bittasi olinishi katta xavf tug‘diradi.
+
+5
+00:53.970 --> 01:02.570
+Xavfli o‘zgartirishlarni doimo tranzaksiya ichida tekshirish va ko‘p
+jadvalli UPDATE da jamlangan subquery ishlatish eng to‘g‘ri amaliyotdir.

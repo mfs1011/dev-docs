@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:14.321
+PostgreSQL 18: Amaliyotga kirish
+
+00:14.321 --> 00:26.275
+INSERT ko‘rinishlari va sukut bo‘yicha qiymatlar
+
+00:26.275 --> 00:39.933
+UPDATE va mavjud bo‘lmagan qatorlar
+
+00:39.933 --> 00:52.260
+UPDATE FROM: Boshqa jadval bilan yangilash
+
+00:52.260 --> 01:03.271
+Tuzoq: Birlashuvda ixtiyoriy qator tanlanishi
+
+01:03.271 --> 01:18.420
+DELETE USING va Xulosa
