@@ -1,0 +1,577 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Ushbu darsda SQL da view tushunchasi, yangilanadigan viewlar, WITH CHECK OPTION hamda ma’lumotni saqlovchi materialized viewlar bilan tanishamiz.",
+    "show": "Ushbu darsda SQL da view tushunchasi, yangilanadigan viewlar, WITH CHECK OPTION hamda ma’lumotni saqlovchi materialized viewlar bilan tanishamiz.",
+    "say": "Ushbu darsda es-kyu-el da vyu tushunchasi, yangilanadigan vyular, viz chek opshn hamda ma’lumotni saqlovchi materialayzd vyular bilan tanishamiz.",
+    "a0": 0.28,
+    "a1": 9.73,
+    "words": [
+      {
+        "w": "Ushbu",
+        "s": 0.28,
+        "e": 0.48
+      },
+      {
+        "w": "darsda",
+        "s": 0.54,
+        "e": 0.92
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 1.28,
+        "e": 1.68
+      },
+      {
+        "w": "da",
+        "s": 1.72,
+        "e": 1.8
+      },
+      {
+        "w": "vyu",
+        "s": 2.1,
+        "e": 2.26
+      },
+      {
+        "w": "tushunchasi,",
+        "s": 2.34,
+        "e": 2.94
+      },
+      {
+        "w": "yangilanadigan",
+        "s": 3.46,
+        "e": 4.16
+      },
+      {
+        "w": "vyular,",
+        "s": 4.26,
+        "e": 4.66
+      },
+      {
+        "w": "viz",
+        "s": 5.14,
+        "e": 5.28
+      },
+      {
+        "w": "chek",
+        "s": 5.38,
+        "e": 5.6
+      },
+      {
+        "w": "opshn",
+        "s": 5.74,
+        "e": 6.06
+      },
+      {
+        "w": "hamda",
+        "s": 6.14,
+        "e": 6.42
+      },
+      {
+        "w": "ma’lumotni",
+        "s": 6.76,
+        "e": 7.26
+      },
+      {
+        "w": "saqlovchi",
+        "s": 7.3,
+        "e": 7.79
+      },
+      {
+        "w": "materialayzd",
+        "s": 8.01,
+        "e": 8.81
+      },
+      {
+        "w": "vyular",
+        "s": 8.83,
+        "e": 9.13
+      },
+      {
+        "w": "bilan",
+        "s": 9.15,
+        "e": 9.31
+      },
+      {
+        "w": "tanishamiz.",
+        "s": 9.33,
+        "e": 9.73
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "view_tushunchasi",
+    "text": "View — bu diskda ma’lumot saqlamaydigan nomlangan so‘rovdir. U murakkab jadvallar tuzilmasini o‘zgarmas qulay interfeys ortiga yashirib, har chaqirilganda qayta bajariladi.",
+    "show": "View — bu diskda ma’lumot saqlamaydigan nomlangan so‘rovdir. U murakkab jadvallar tuzilmasini o‘zgarmas qulay interfeys ortiga yashirib, har chaqirilganda qayta bajariladi.",
+    "say": "Vyu — bu diskda ma’lumot saqlamaydigan nomlangan so‘rovdir. U murakkab jadvallar tuzilmasini o‘zgarmas qulay interfeys ortiga yashirib, har chaqirilganda qayta bajariladi.",
+    "a0": 10.93,
+    "a1": 21.75,
+    "words": [
+      {
+        "w": "Vyu",
+        "s": 10.93,
+        "e": 11.09
+      },
+      {
+        "w": "—",
+        "s": 11.09,
+        "e": 11.09
+      },
+      {
+        "w": "bu",
+        "s": 11.39,
+        "e": 11.47
+      },
+      {
+        "w": "diskda",
+        "s": 11.81,
+        "e": 12.15
+      },
+      {
+        "w": "ma’lumot",
+        "s": 12.21,
+        "e": 12.59
+      },
+      {
+        "w": "saqlamaydigan",
+        "s": 12.63,
+        "e": 13.39
+      },
+      {
+        "w": "nomlangan",
+        "s": 13.67,
+        "e": 14.31
+      },
+      {
+        "w": "so‘rovdir.",
+        "s": 14.41,
+        "e": 14.81
+      },
+      {
+        "w": "U",
+        "s": 15.47,
+        "e": 15.49
+      },
+      {
+        "w": "murakkab",
+        "s": 15.59,
+        "e": 15.99
+      },
+      {
+        "w": "jadvallar",
+        "s": 16.01,
+        "e": 16.47
+      },
+      {
+        "w": "tuzilmasini",
+        "s": 16.51,
+        "e": 17.07
+      },
+      {
+        "w": "o‘zgarmas",
+        "s": 17.45,
+        "e": 18.01
+      },
+      {
+        "w": "qulay",
+        "s": 18.15,
+        "e": 18.43
+      },
+      {
+        "w": "interfeys",
+        "s": 18.55,
+        "e": 19.09
+      },
+      {
+        "w": "ortiga",
+        "s": 19.17,
+        "e": 19.43
+      },
+      {
+        "w": "yashirib,",
+        "s": 19.47,
+        "e": 19.79
+      },
+      {
+        "w": "har",
+        "s": 20.13,
+        "e": 20.33
+      },
+      {
+        "w": "chaqirilganda",
+        "s": 20.39,
+        "e": 20.97
+      },
+      {
+        "w": "qayta",
+        "s": 21.05,
+        "e": 21.27
+      },
+      {
+        "w": "bajariladi.",
+        "s": 21.31,
+        "e": 21.75
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "updatable_va_check",
+    "text": "Oddiy bitta jadvalga tayangan viewlar orqali asosiy jadvalga yozish mumkin. WITH CHECK OPTION esa view chegarasidan chiqib ketadigan yangi yoki o‘zgartirilgan qatorlarni rad etadi.",
+    "show": "Oddiy bitta jadvalga tayangan viewlar orqali asosiy jadvalga yozish mumkin. WITH CHECK OPTION esa view chegarasidan chiqib ketadigan yangi yoki o‘zgartirilgan qatorlarni rad etadi.",
+    "say": "Oddiy bitta jadvalga tayangan vyular orqali asosiy jadvalga yozish mumkin. Viz chek opshn esa vyu chegarasidan chiqib ketadigan yangi yoki o‘zgartirilgan qatorlarni rad etadi.",
+    "a0": 22.86,
+    "a1": 33.46,
+    "words": [
+      {
+        "w": "Oddiy",
+        "s": 22.86,
+        "e": 23.08
+      },
+      {
+        "w": "bitta",
+        "s": 23.12,
+        "e": 23.36
+      },
+      {
+        "w": "jadvalga",
+        "s": 23.42,
+        "e": 23.82
+      },
+      {
+        "w": "tayangan",
+        "s": 23.86,
+        "e": 24.28
+      },
+      {
+        "w": "vyular",
+        "s": 24.36,
+        "e": 24.7
+      },
+      {
+        "w": "orqali",
+        "s": 24.76,
+        "e": 25.06
+      },
+      {
+        "w": "asosiy",
+        "s": 25.48,
+        "e": 25.86
+      },
+      {
+        "w": "jadvalga",
+        "s": 25.92,
+        "e": 26.3
+      },
+      {
+        "w": "yozish",
+        "s": 26.34,
+        "e": 26.6
+      },
+      {
+        "w": "mumkin.",
+        "s": 26.62,
+        "e": 26.9
+      },
+      {
+        "w": "Viz",
+        "s": 27.5,
+        "e": 27.68
+      },
+      {
+        "w": "chek",
+        "s": 27.8,
+        "e": 28.0
+      },
+      {
+        "w": "opshn",
+        "s": 28.12,
+        "e": 28.38
+      },
+      {
+        "w": "esa",
+        "s": 28.44,
+        "e": 28.6
+      },
+      {
+        "w": "vyu",
+        "s": 29.02,
+        "e": 29.16
+      },
+      {
+        "w": "chegarasidan",
+        "s": 29.22,
+        "e": 29.72
+      },
+      {
+        "w": "chiqib",
+        "s": 29.76,
+        "e": 29.94
+      },
+      {
+        "w": "ketadigan",
+        "s": 30.02,
+        "e": 30.4
+      },
+      {
+        "w": "yangi",
+        "s": 30.64,
+        "e": 31.06
+      },
+      {
+        "w": "yoki",
+        "s": 31.06,
+        "e": 31.42
+      },
+      {
+        "w": "o‘zgartirilgan",
+        "s": 31.8,
+        "e": 32.48
+      },
+      {
+        "w": "qatorlarni",
+        "s": 32.52,
+        "e": 33.0
+      },
+      {
+        "w": "rad",
+        "s": 33.04,
+        "e": 33.18
+      },
+      {
+        "w": "etadi.",
+        "s": 33.22,
+        "e": 33.46
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "materialized_view",
+    "text": "Materialized view esa so‘rov natijasini alohida jadval qilib diskda saqlaydi. U juda tez o‘qiladi, ma’lumot esa REFRESH buyrug‘i bilan, hatto CONCURRENTLY rejimida yangilab boriladi.",
+    "show": "Materialized view esa so‘rov natijasini alohida jadval qilib diskda saqlaydi. U juda tez o‘qiladi, ma’lumot esa REFRESH buyrug‘i bilan, hatto CONCURRENTLY rejimida yangilab boriladi.",
+    "say": "Materialayzd vyu esa so‘rov natijasini alohida jadval qilib diskda saqlaydi. U juda tez o‘qiladi, ma’lumot esa refresh buyrug‘i bilan, hatto konkurentli rejimida yangilab boriladi.",
+    "a0": 34.56,
+    "a1": 45.51,
+    "words": [
+      {
+        "w": "Materialayzd",
+        "s": 34.56,
+        "e": 35.22
+      },
+      {
+        "w": "vyu",
+        "s": 35.24,
+        "e": 35.4
+      },
+      {
+        "w": "esa",
+        "s": 35.48,
+        "e": 35.66
+      },
+      {
+        "w": "so‘rov",
+        "s": 35.98,
+        "e": 36.25
+      },
+      {
+        "w": "natijasini",
+        "s": 36.29,
+        "e": 36.83
+      },
+      {
+        "w": "alohida",
+        "s": 36.95,
+        "e": 37.35
+      },
+      {
+        "w": "jadval",
+        "s": 37.43,
+        "e": 37.83
+      },
+      {
+        "w": "qilib",
+        "s": 37.87,
+        "e": 38.07
+      },
+      {
+        "w": "diskda",
+        "s": 38.11,
+        "e": 38.45
+      },
+      {
+        "w": "saqlaydi.",
+        "s": 38.49,
+        "e": 38.83
+      },
+      {
+        "w": "U",
+        "s": 39.43,
+        "e": 39.45
+      },
+      {
+        "w": "juda",
+        "s": 39.81,
+        "e": 40.03
+      },
+      {
+        "w": "tez",
+        "s": 40.11,
+        "e": 40.29
+      },
+      {
+        "w": "o‘qiladi,",
+        "s": 40.33,
+        "e": 40.63
+      },
+      {
+        "w": "ma’lumot",
+        "s": 40.97,
+        "e": 41.31
+      },
+      {
+        "w": "esa",
+        "s": 41.37,
+        "e": 41.53
+      },
+      {
+        "w": "refresh",
+        "s": 41.83,
+        "e": 42.15
+      },
+      {
+        "w": "buyrug‘i",
+        "s": 42.19,
+        "e": 42.49
+      },
+      {
+        "w": "bilan,",
+        "s": 42.53,
+        "e": 42.73
+      },
+      {
+        "w": "hatto",
+        "s": 42.89,
+        "e": 43.15
+      },
+      {
+        "w": "konkurentli",
+        "s": 43.49,
+        "e": 44.05
+      },
+      {
+        "w": "rejimida",
+        "s": 44.07,
+        "e": 44.47
+      },
+      {
+        "w": "yangilab",
+        "s": 44.65,
+        "e": 45.07
+      },
+      {
+        "w": "boriladi.",
+        "s": 45.11,
+        "e": 45.51
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "xulosa",
+    "text": "Tezkor virtual interfeys uchun oddiy view, og‘ir tahliliy hisobotlar uchun esa materialized view eng to‘g‘ri arxitektura yechimidir.",
+    "show": "Tezkor virtual interfeys uchun oddiy view, og‘ir tahliliy hisobotlar uchun esa materialized view eng to‘g‘ri arxitektura yechimidir.",
+    "say": "Tezkor virtual interfeys uchun oddiy vyu, og‘ir tahliliy hisobotlar uchun esa Materialayzd vyu eng to‘g‘ri arxitektura yechimidir.",
+    "a0": 46.61,
+    "a1": 54.28,
+    "words": [
+      {
+        "w": "Tezkor",
+        "s": 46.61,
+        "e": 46.99
+      },
+      {
+        "w": "virtual",
+        "s": 47.07,
+        "e": 47.45
+      },
+      {
+        "w": "interfeys",
+        "s": 47.49,
+        "e": 47.91
+      },
+      {
+        "w": "uchun",
+        "s": 47.97,
+        "e": 48.15
+      },
+      {
+        "w": "oddiy",
+        "s": 48.31,
+        "e": 48.62
+      },
+      {
+        "w": "vyu,",
+        "s": 48.68,
+        "e": 48.86
+      },
+      {
+        "w": "og‘ir",
+        "s": 49.46,
+        "e": 49.66
+      },
+      {
+        "w": "tahliliy",
+        "s": 49.72,
+        "e": 50.14
+      },
+      {
+        "w": "hisobotlar",
+        "s": 50.2,
+        "e": 50.68
+      },
+      {
+        "w": "uchun",
+        "s": 50.72,
+        "e": 50.86
+      },
+      {
+        "w": "esa",
+        "s": 50.92,
+        "e": 51.06
+      },
+      {
+        "w": "Materialayzd",
+        "s": 51.38,
+        "e": 52.1
+      },
+      {
+        "w": "vyu",
+        "s": 52.16,
+        "e": 52.32
+      },
+      {
+        "w": "eng",
+        "s": 52.58,
+        "e": 52.74
+      },
+      {
+        "w": "to‘g‘ri",
+        "s": 52.82,
+        "e": 53.14
+      },
+      {
+        "w": "arxitektura",
+        "s": 53.28,
+        "e": 53.86
+      },
+      {
+        "w": "yechimidir.",
+        "s": 53.9,
+        "e": 54.28
+      }
+    ]
+  }
+]

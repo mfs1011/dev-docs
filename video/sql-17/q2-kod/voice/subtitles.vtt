@@ -1,0 +1,31 @@
+WEBVTT
+
+1
+00:01.380 --> 00:12.140
+Ushbu amaliy darsda PostgreSQL 18.6 da view orqali INSERT va UPDATE qilish, WITH
+CHECK OPTION, GROUP BY cheklovi hamda Materialized View REFRESH amallarini sinaymiz.
+
+2
+00:15.130 --> 00:24.520
+faol_mahsulotlar viewiga yozilgan UPDATE va INSERT so‘rovlari to‘g‘ridan-to‘g‘ri asosiy
+mahsulotlar jadvaliga o‘tadi, ko‘rsatilmagan ustunlar esa sukut bo‘yicha qiymat oladi.
+
+3
+00:27.670 --> 00:36.210
+arzonlar viewida narxi 5000 dan kichik mahsulotlar filtrlangan. WITH CHECK
+OPTION tufayli view orqali qimmat go‘sht mahsulotini kiritish rad etiladi.
+
+4
+00:39.220 --> 00:46.940
+statistika viewida GROUP BY agregatsiyasi bo‘lgani sababli u avtomatik
+yangilanmaydi va har qanday UPDATE buyrug‘ida xatolik qaytaradi.
+
+5
+00:50.070 --> 01:01.360
+narx_hisoboti materialized viewida esa yangi qator kiritilsa ham natija avtomatik o‘zgarmaydi.
+Yangilash uchun REFRESH, o‘qishni to‘xtatmaslik uchun esa UNIQUE indeks va CONCURRENTLY ishlatiladi.
+
+6
+01:04.310 --> 01:12.070
+Oddiy view orqali xavfsiz yozishda CHECK OPTION, og‘ir keshlar uchun
+esa UNIQUE indeksli REFRESH CONCURRENTLY eng ishonchli yondashuvdir.

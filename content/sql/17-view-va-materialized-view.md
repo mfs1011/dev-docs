@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/sql/17-1-tushuncha.jpg" src="/video/sql/17-1-tushuncha.mp4">
+  <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/sql/17-1-tushuncha.chapters.vtt" default>
+  <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/sql/17-1-tushuncha.uz.vtt">
+</video>
+<figcaption>Video: View va Materialized View — nomlangan virtual so'rovlar, yangilanish qoidalari va tezkor kesh</figcaption>
+</figure>
+
 ### View
 
 **View** — **nomlangan so'rov**. PostgreSQL qo'llanmasidagi misol: shahar va ob-havo jadvallarini birlashtiradigan so'rov ko'p ishlatilsa, uni har safar qayta yozmaslik uchun view yaratiladi. Keyin unga oddiy jadvaldek murojaat qilinadi:
@@ -66,6 +74,14 @@ Hujjatdagi muvozanat: materialized view'dan o'qish ko'pincha asosiy jadvallardan
 `CREATE MATERIALIZED VIEW` va `REFRESH MATERIALIZED VIEW` — PostgreSQL kengaytmalari, standartda yo'q.
 
 ## Kod
+
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/sql/17-2-kod.jpg" src="/video/sql/17-2-kod.mp4">
+  <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/sql/17-2-kod.chapters.vtt" default>
+  <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/sql/17-2-kod.uz.vtt">
+</video>
+<figcaption>Video: PostgreSQL 18 da View amaliyoti — updatable view, WITH CHECK OPTION, GROUP BY cheklovi va REFRESH CONCURRENTLY</figcaption>
+</figure>
 
 Misollar PostgreSQL 18.6, MySQL 9.7.2 va SQLite 3.54.0 da ishga tushirilgan.
 
@@ -258,6 +274,14 @@ HINT:  Use DROP ... CASCADE to drop the dependent objects too.
 ```
 
 ## Dialektlar
+
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/sql/17-3-dialektlar.jpg" src="/video/sql/17-3-dialektlar.mp4">
+  <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/sql/17-3-dialektlar.chapters.vtt" default>
+  <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/sql/17-3-dialektlar.uz.vtt">
+</video>
+<figcaption>Video: Dialektlar — MySQL da CASCADED CHECK va buzilgan viewlar, SQLite da INSTEAD OF triggerlar</figcaption>
+</figure>
 
 ### MySQL
 

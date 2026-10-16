@@ -1,0 +1,683 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "View va Materialized View tushunchalari MySQL hamda SQLite tizimlarida o‘ziga xos cheklovlar va qiziq farqlarga ega.",
+    "show": "View va Materialized View tushunchalari MySQL hamda SQLite tizimlarida o‘ziga xos cheklovlar va qiziq farqlarga ega.",
+    "say": "Vyu va Materialayzd Vyu tushunchalari May es-kyu-el hamda Es-kyu-layt tizimlarida o‘ziga xos cheklovlar va qiziq farqlarga ega.",
+    "a0": 0.32,
+    "a1": 8.13,
+    "words": [
+      {
+        "w": "Vyu",
+        "s": 0.32,
+        "e": 0.54
+      },
+      {
+        "w": "va",
+        "s": 0.8,
+        "e": 0.9
+      },
+      {
+        "w": "Materialayzd",
+        "s": 1.06,
+        "e": 1.82
+      },
+      {
+        "w": "Vyu",
+        "s": 1.88,
+        "e": 2.04
+      },
+      {
+        "w": "tushunchalari",
+        "s": 2.08,
+        "e": 2.68
+      },
+      {
+        "w": "May",
+        "s": 3.02,
+        "e": 3.22
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 3.28,
+        "e": 3.72
+      },
+      {
+        "w": "hamda",
+        "s": 3.76,
+        "e": 4.04
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 4.22,
+        "e": 4.84
+      },
+      {
+        "w": "tizimlarida",
+        "s": 4.9,
+        "e": 5.46
+      },
+      {
+        "w": "o‘ziga",
+        "s": 5.64,
+        "e": 5.9
+      },
+      {
+        "w": "xos",
+        "s": 5.96,
+        "e": 6.14
+      },
+      {
+        "w": "cheklovlar",
+        "s": 6.2,
+        "e": 6.72
+      },
+      {
+        "w": "va",
+        "s": 6.78,
+        "e": 6.84
+      },
+      {
+        "w": "qiziq",
+        "s": 7.22,
+        "e": 7.48
+      },
+      {
+        "w": "farqlarga",
+        "s": 7.53,
+        "e": 7.95
+      },
+      {
+        "w": "ega.",
+        "s": 7.99,
+        "e": 8.13
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "mysql_views",
+    "text": "MySQL da viewlar faqat asosiy jadval bilan birga-bir mos kelgandagina yangilanadi. WITH CHECK OPTION esa sukut bo‘yicha CASCADED bo‘lib, barcha qavatlarga tarqaladi.",
+    "show": "MySQL da viewlar faqat asosiy jadval bilan birga-bir mos kelgandagina yangilanadi. WITH CHECK OPTION esa sukut bo‘yicha CASCADED bo‘lib, barcha qavatlarga tarqaladi.",
+    "say": "May es-kyu-el da vyular faqat asosiy jadval bilan birga-bir mos kelgandagina yangilanadi. Viz chek opshn esa sukut bo‘yicha kaskeydid bo‘lib, barcha qavatlarga tarqaladi.",
+    "a0": 9.03,
+    "a1": 18.79,
+    "words": [
+      {
+        "w": "May",
+        "s": 9.03,
+        "e": 9.19
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 9.25,
+        "e": 9.61
+      },
+      {
+        "w": "da",
+        "s": 9.67,
+        "e": 9.75
+      },
+      {
+        "w": "vyular",
+        "s": 9.89,
+        "e": 10.27
+      },
+      {
+        "w": "faqat",
+        "s": 10.31,
+        "e": 10.55
+      },
+      {
+        "w": "asosiy",
+        "s": 10.65,
+        "e": 10.99
+      },
+      {
+        "w": "jadval",
+        "s": 11.05,
+        "e": 11.39
+      },
+      {
+        "w": "bilan",
+        "s": 11.43,
+        "e": 11.61
+      },
+      {
+        "w": "birga-bir",
+        "s": 11.75,
+        "e": 12.27
+      },
+      {
+        "w": "mos",
+        "s": 12.35,
+        "e": 12.51
+      },
+      {
+        "w": "kelgandagina",
+        "s": 12.55,
+        "e": 13.05
+      },
+      {
+        "w": "yangilanadi.",
+        "s": 13.09,
+        "e": 13.61
+      },
+      {
+        "w": "Viz",
+        "s": 14.35,
+        "e": 14.53
+      },
+      {
+        "w": "chek",
+        "s": 14.65,
+        "e": 14.87
+      },
+      {
+        "w": "opshn",
+        "s": 15.03,
+        "e": 15.35
+      },
+      {
+        "w": "esa",
+        "s": 15.41,
+        "e": 15.57
+      },
+      {
+        "w": "sukut",
+        "s": 15.67,
+        "e": 15.91
+      },
+      {
+        "w": "bo‘yicha",
+        "s": 15.97,
+        "e": 16.25
+      },
+      {
+        "w": "kaskeydid",
+        "s": 16.35,
+        "e": 16.87
+      },
+      {
+        "w": "bo‘lib,",
+        "s": 16.91,
+        "e": 17.11
+      },
+      {
+        "w": "barcha",
+        "s": 17.49,
+        "e": 17.81
+      },
+      {
+        "w": "qavatlarga",
+        "s": 17.85,
+        "e": 18.31
+      },
+      {
+        "w": "tarqaladi.",
+        "s": 18.35,
+        "e": 18.79
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "mysql_broken_views",
+    "text": "Xavfli farq: MySQL da view ishlatayotgan ustunni o‘chirib yuborish mumkin! Natijada baza xato bermaydi, lekin view chaqirilganda buzilib qoladi.",
+    "show": "Xavfli farq: MySQL da view ishlatayotgan ustunni o‘chirib yuborish mumkin! Natijada baza xato bermaydi, lekin view chaqirilganda buzilib qoladi.",
+    "say": "Xavfli farq: May es-kyu-el da vyu ishlatayotgan ustunni o‘chirib yuborish mumkin! Natijada baza xato bermaydi, lekin vyu chaqirilganda buzilib qoladi.",
+    "a0": 19.61,
+    "a1": 28.1,
+    "words": [
+      {
+        "w": "Xavfli",
+        "s": 19.61,
+        "e": 19.95
+      },
+      {
+        "w": "farq:",
+        "s": 20.01,
+        "e": 20.27
+      },
+      {
+        "w": "May",
+        "s": 20.63,
+        "e": 20.79
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 20.85,
+        "e": 21.19
+      },
+      {
+        "w": "da",
+        "s": 21.23,
+        "e": 21.29
+      },
+      {
+        "w": "vyu",
+        "s": 21.39,
+        "e": 21.57
+      },
+      {
+        "w": "ishlatayotgan",
+        "s": 21.61,
+        "e": 22.15
+      },
+      {
+        "w": "ustunni",
+        "s": 22.25,
+        "e": 22.66
+      },
+      {
+        "w": "o‘chirib",
+        "s": 22.74,
+        "e": 23.04
+      },
+      {
+        "w": "yuborish",
+        "s": 23.06,
+        "e": 23.38
+      },
+      {
+        "w": "mumkin!",
+        "s": 23.4,
+        "e": 23.68
+      },
+      {
+        "w": "Natijada",
+        "s": 24.2,
+        "e": 24.68
+      },
+      {
+        "w": "baza",
+        "s": 24.76,
+        "e": 25.06
+      },
+      {
+        "w": "xato",
+        "s": 25.16,
+        "e": 25.38
+      },
+      {
+        "w": "bermaydi,",
+        "s": 25.5,
+        "e": 25.92
+      },
+      {
+        "w": "lekin",
+        "s": 25.96,
+        "e": 26.18
+      },
+      {
+        "w": "vyu",
+        "s": 26.54,
+        "e": 26.74
+      },
+      {
+        "w": "chaqirilganda",
+        "s": 26.8,
+        "e": 27.4
+      },
+      {
+        "w": "buzilib",
+        "s": 27.48,
+        "e": 27.78
+      },
+      {
+        "w": "qoladi.",
+        "s": 27.82,
+        "e": 28.1
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "mysql_fake_matview",
+    "text": "MySQL Community da CREATE MATERIALIZED VIEW buyrug‘i qabul qilinsa ham, u oddiy viewdek ishlaydi, REFRESH esa sintaktik xato beradi.",
+    "show": "MySQL Community da CREATE MATERIALIZED VIEW buyrug‘i qabul qilinsa ham, u oddiy viewdek ishlaydi, REFRESH esa sintaktik xato beradi.",
+    "say": "May es-kyu-el Community da CREATE Materialayzd Vyu buyrug‘i qabul qilinsa ham, u oddiy viewdek ishlaydi, refresh esa sintaktik xato beradi.",
+    "a0": 28.76,
+    "a1": 36.97,
+    "words": [
+      {
+        "w": "May",
+        "s": 28.76,
+        "e": 28.92
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 28.98,
+        "e": 29.36
+      },
+      {
+        "w": "Community",
+        "s": 29.4,
+        "e": 29.88
+      },
+      {
+        "w": "da",
+        "s": 29.9,
+        "e": 29.96
+      },
+      {
+        "w": "CREATE",
+        "s": 30.18,
+        "e": 30.66
+      },
+      {
+        "w": "Materialayzd",
+        "s": 30.72,
+        "e": 31.4
+      },
+      {
+        "w": "Vyu",
+        "s": 31.48,
+        "e": 31.68
+      },
+      {
+        "w": "buyrug‘i",
+        "s": 31.8,
+        "e": 32.14
+      },
+      {
+        "w": "qabul",
+        "s": 32.22,
+        "e": 32.5
+      },
+      {
+        "w": "qilinsa",
+        "s": 32.54,
+        "e": 32.84
+      },
+      {
+        "w": "ham,",
+        "s": 32.88,
+        "e": 33.02
+      },
+      {
+        "w": "u",
+        "s": 33.18,
+        "e": 33.2
+      },
+      {
+        "w": "oddiy",
+        "s": 33.46,
+        "e": 33.84
+      },
+      {
+        "w": "viewdek",
+        "s": 33.92,
+        "e": 34.36
+      },
+      {
+        "w": "ishlaydi,",
+        "s": 34.38,
+        "e": 34.7
+      },
+      {
+        "w": "refresh",
+        "s": 35.14,
+        "e": 35.48
+      },
+      {
+        "w": "esa",
+        "s": 35.52,
+        "e": 35.68
+      },
+      {
+        "w": "sintaktik",
+        "s": 35.78,
+        "e": 36.3
+      },
+      {
+        "w": "xato",
+        "s": 36.36,
+        "e": 36.6
+      },
+      {
+        "w": "beradi.",
+        "s": 36.66,
+        "e": 36.97
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "sqlite_views",
+    "text": "SQLite da viewlar qat’iy ravishda faqat o‘qish uchun. Lekin INSTEAD OF triggerlar yordamida view orqali jadvalga yozish imkoniyatini hosil qilish mumkin.",
+    "show": "SQLite da viewlar qat’iy ravishda faqat o‘qish uchun. Lekin INSTEAD OF triggerlar yordamida view orqali jadvalga yozish imkoniyatini hosil qilish mumkin.",
+    "say": "Es-kyu-layt da vyular qat’iy ravishda faqat o‘qish uchun. Lekin insted ov triggerlar yordamida vyu orqali jadvalga yozish imkoniyatini hosil qilish mumkin.",
+    "a0": 38.13,
+    "a1": 46.69,
+    "words": [
+      {
+        "w": "Es-kyu-layt",
+        "s": 38.13,
+        "e": 38.63
+      },
+      {
+        "w": "da",
+        "s": 38.71,
+        "e": 38.79
+      },
+      {
+        "w": "vyular",
+        "s": 38.89,
+        "e": 39.29
+      },
+      {
+        "w": "qat’iy",
+        "s": 39.45,
+        "e": 39.85
+      },
+      {
+        "w": "ravishda",
+        "s": 39.95,
+        "e": 40.31
+      },
+      {
+        "w": "faqat",
+        "s": 40.35,
+        "e": 40.61
+      },
+      {
+        "w": "o‘qish",
+        "s": 40.77,
+        "e": 41.05
+      },
+      {
+        "w": "uchun.",
+        "s": 41.09,
+        "e": 41.29
+      },
+      {
+        "w": "Lekin",
+        "s": 41.79,
+        "e": 42.03
+      },
+      {
+        "w": "insted",
+        "s": 42.31,
+        "e": 42.63
+      },
+      {
+        "w": "ov",
+        "s": 42.67,
+        "e": 42.75
+      },
+      {
+        "w": "triggerlar",
+        "s": 42.79,
+        "e": 43.25
+      },
+      {
+        "w": "yordamida",
+        "s": 43.31,
+        "e": 43.71
+      },
+      {
+        "w": "vyu",
+        "s": 43.87,
+        "e": 44.05
+      },
+      {
+        "w": "orqali",
+        "s": 44.15,
+        "e": 44.45
+      },
+      {
+        "w": "jadvalga",
+        "s": 44.55,
+        "e": 44.97
+      },
+      {
+        "w": "yozish",
+        "s": 44.97,
+        "e": 45.27
+      },
+      {
+        "w": "imkoniyatini",
+        "s": 45.33,
+        "e": 45.83
+      },
+      {
+        "w": "hosil",
+        "s": 45.91,
+        "e": 46.21
+      },
+      {
+        "w": "qilish",
+        "s": 46.23,
+        "e": 46.41
+      },
+      {
+        "w": "mumkin.",
+        "s": 46.45,
+        "e": 46.69
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "xulosa",
+    "text": "PostgreSQL dagi qat’iy bog‘liqlik va to‘liq Materialized View, MySQL dagi CASCADED tekshiruv hamda SQLite dagi INSTEAD OF triggerlarni to‘g‘ri farqlash zarur.",
+    "show": "PostgreSQL dagi qat’iy bog‘liqlik va to‘liq Materialized View, MySQL dagi CASCADED tekshiruv hamda SQLite dagi INSTEAD OF triggerlarni to‘g‘ri farqlash zarur.",
+    "say": "Postgres dagi qat’iy bog‘liqlik va to‘liq Materialayzd Vyu, May es-kyu-el dagi kaskeydid tekshiruv hamda Es-kyu-layt dagi insted ov triggerlarni to‘g‘ri farqlash zarur.",
+    "a0": 47.39,
+    "a1": 56.78,
+    "words": [
+      {
+        "w": "Postgres",
+        "s": 47.39,
+        "e": 47.87
+      },
+      {
+        "w": "dagi",
+        "s": 47.91,
+        "e": 48.07
+      },
+      {
+        "w": "qat’iy",
+        "s": 48.17,
+        "e": 48.49
+      },
+      {
+        "w": "bog‘liqlik",
+        "s": 48.61,
+        "e": 49.17
+      },
+      {
+        "w": "va",
+        "s": 49.25,
+        "e": 49.33
+      },
+      {
+        "w": "to‘liq",
+        "s": 49.49,
+        "e": 49.79
+      },
+      {
+        "w": "Materialayzd",
+        "s": 49.87,
+        "e": 50.58
+      },
+      {
+        "w": "Vyu,",
+        "s": 50.66,
+        "e": 50.86
+      },
+      {
+        "w": "May",
+        "s": 51.24,
+        "e": 51.4
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 51.44,
+        "e": 51.74
+      },
+      {
+        "w": "dagi",
+        "s": 51.76,
+        "e": 51.94
+      },
+      {
+        "w": "kaskeydid",
+        "s": 52.02,
+        "e": 52.48
+      },
+      {
+        "w": "tekshiruv",
+        "s": 52.54,
+        "e": 52.96
+      },
+      {
+        "w": "hamda",
+        "s": 53.02,
+        "e": 53.26
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 53.58,
+        "e": 54.14
+      },
+      {
+        "w": "dagi",
+        "s": 54.2,
+        "e": 54.36
+      },
+      {
+        "w": "insted",
+        "s": 54.46,
+        "e": 54.8
+      },
+      {
+        "w": "ov",
+        "s": 54.82,
+        "e": 54.9
+      },
+      {
+        "w": "triggerlarni",
+        "s": 54.96,
+        "e": 55.56
+      },
+      {
+        "w": "to‘g‘ri",
+        "s": 55.74,
+        "e": 56.08
+      },
+      {
+        "w": "farqlash",
+        "s": 56.12,
+        "e": 56.5
+      },
+      {
+        "w": "zarur.",
+        "s": 56.54,
+        "e": 56.78
+      }
+    ]
+  }
+]
