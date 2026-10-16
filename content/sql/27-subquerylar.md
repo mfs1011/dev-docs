@@ -4,6 +4,15 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/27-1-tushuncha.jpg">
+    <source src="/video/sql/27-1-tushuncha.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/27-1-tushuncha.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/27-1-tushuncha.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>27.1-video. Subquery tushunchasi, shakllari va skalyar qoidalari</figcaption>
+</figure>
+
 **Subquery** (ichki so'rov) — boshqa so'rov ichida qavsga olingan `SELECT`. MySQL hujjati ta'rifi: "boshqa operator ichidagi `SELECT`". Tashqaridagisi — **tashqi so'rov** (outer query).
 
 Natijasining shakliga ko'ra MySQL hujjati to'rt turni ajratadi:
@@ -57,6 +66,15 @@ Subquery'da bu ayniqsa xavfli: ro'yxat ko'zga ko'rinmaydi, `NULL` esa jadvalga i
 Hosila jadval o'zidan oldingi `FROM` elementlariga murojaat qila olmaydi — buning uchun `LATERAL` (25-bob).
 
 ## Kod
+
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/27-2-kod.jpg">
+    <source src="/video/sql/27-2-kod.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/27-2-kod.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/27-2-kod.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>27.2-video. PostgreSQL 18: Amaliy subquery so'rovlari va tahlil</figcaption>
+</figure>
 
 Misollar PostgreSQL 18.6, MySQL 9.7.2 va SQLite 3.54.0 da ishga tushirilgan. Jadvallar 26-bobdagidek:
 
@@ -287,6 +305,15 @@ UPDATE 1
 PostgreSQL'da ikkalasi ham ishlaydi. MySQL'da ikkalasi ham xato — quyida.
 
 ## Dialektlar
+
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/27-3-dialektlar.jpg">
+    <source src="/video/sql/27-3-dialektlar.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/27-3-dialektlar.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/27-3-dialektlar.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>27.3-video. MySQL va SQLite da subquery farqlari va cheklovlari</figcaption>
+</figure>
 
 ### MySQL
 

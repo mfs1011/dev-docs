@@ -1,0 +1,36 @@
+WEBVTT
+
+1
+00:01.420 --> 00:07.890
+MySQL va SQLite tizimlarida subquery imkoniyatlari
+va ulardagi o'ziga xos cheklovlarni tahlil qilamiz.
+
+2
+00:10.740 --> 00:20.620
+MySQL da skalyar ko'p qator bersa ming ikki yuz qirq ikki xatosi chiqadi, hosila
+jadvalga alias berilmasa esa ming ikki yuz qirq sakkiz xatosi ro'y beradi.
+
+3
+00:23.850 --> 00:32.050
+MySQL da IN yoki ALL ichida LIMIT ishlatib bo'lmaydi. Yechim sifatida
+LIMIT li so'rovni qo'shimcha hosila jadvalga o'rab olish kerak.
+
+4
+00:33.580 --> 00:41.810
+Eng mashhur cheklov: o'zgartirilayotgan jadvaldan subquery ichida to'g'ridan-to'g'ri
+o'qib bo'lmaydi. Buning uchun hosila jadval materializatsiyasidan foydalanamiz.
+
+5
+00:45.200 --> 00:55.360
+SQLite da ANY va ALL kalit so'zlari umuman yo'q. Ular o'rniga MAX yoki MIN
+agregatlari ishlatiladi, ammo NULL xususiyatlarini inobatga olish shart.
+
+6
+00:58.350 --> 01:06.310
+Katta e'tibor: SQLite da skalyar subquery ko'p qator qaytarsa xato
+bermaydi, balki jimgina birinchi qator qiymatini tanlab oladi.
+
+7
+01:07.940 --> 01:15.850
+Shuningdek, SQLite da hosila jadvalga nom berish majburiy emas va
+to'g'ridan-to'g'ri jadval nomini IN dan keyin yozish imkoniyati mavjud.

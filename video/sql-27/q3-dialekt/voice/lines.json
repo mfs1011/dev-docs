@@ -1,0 +1,764 @@
+[
+  {
+    "id": "intro",
+    "scene": "kirish",
+    "text": "MySQL va SQLite tizimlarida subquery imkoniyatlari va ulardagi o'ziga xos cheklovlarni tahlil qilamiz.",
+    "show": "MySQL va SQLite tizimlarida subquery imkoniyatlari va ulardagi o'ziga xos cheklovlarni tahlil qilamiz.",
+    "say": "May es-kyu-el va Es-kyu-layt tizimlarida sabkveri imkoniyatlari va ulardagi o'ziga xos cheklovlarni tahlil qilamiz.",
+    "a0": 0.32,
+    "a1": 6.34,
+    "words": [
+      {
+        "w": "May",
+        "s": 0.32,
+        "e": 0.5
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 0.54,
+        "e": 0.9
+      },
+      {
+        "w": "va",
+        "s": 0.98,
+        "e": 1.06
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 1.32,
+        "e": 1.82
+      },
+      {
+        "w": "tizimlarida",
+        "s": 1.84,
+        "e": 2.4
+      },
+      {
+        "w": "sabkveri",
+        "s": 2.64,
+        "e": 3.1
+      },
+      {
+        "w": "imkoniyatlari",
+        "s": 3.14,
+        "e": 3.74
+      },
+      {
+        "w": "va",
+        "s": 3.82,
+        "e": 3.88
+      },
+      {
+        "w": "ulardagi",
+        "s": 3.92,
+        "e": 4.38
+      },
+      {
+        "w": "o'ziga",
+        "s": 4.5,
+        "e": 4.72
+      },
+      {
+        "w": "xos",
+        "s": 4.78,
+        "e": 4.94
+      },
+      {
+        "w": "cheklovlarni",
+        "s": 5,
+        "e": 5.62
+      },
+      {
+        "w": "tahlil",
+        "s": 5.68,
+        "e": 5.98
+      },
+      {
+        "w": "qilamiz.",
+        "s": 6.02,
+        "e": 6.34
+      }
+    ]
+  },
+  {
+    "id": "mysql_errors",
+    "scene": "mysql_errors",
+    "text": "MySQL da skalyar ko'p qator bersa ming ikki yuz qirq ikki xatosi chiqadi, hosila jadvalga alias berilmasa esa ming ikki yuz qirq sakkiz xatosi ro'y beradi.",
+    "show": "MySQL da skalyar ko'p qator bersa ming ikki yuz qirq ikki xatosi chiqadi, hosila jadvalga alias berilmasa esa ming ikki yuz qirq sakkiz xatosi ro'y beradi.",
+    "say": "May es-kyu-el da skalyar ko'p qator bersa ming ikki yuz qirq ikki xatosi chiqadi, hosila jadvalga alias berilmasa esa ming ikki yuz qirq sakkiz xatosi ro'y beradi.",
+    "a0": 7.24,
+    "a1": 16.67,
+    "words": [
+      {
+        "w": "May",
+        "s": 7.24,
+        "e": 7.4
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 7.44,
+        "e": 7.77
+      },
+      {
+        "w": "da",
+        "s": 7.79,
+        "e": 7.87
+      },
+      {
+        "w": "skalyar",
+        "s": 8.11,
+        "e": 8.51
+      },
+      {
+        "w": "ko'p",
+        "s": 8.71,
+        "e": 8.87
+      },
+      {
+        "w": "qator",
+        "s": 8.95,
+        "e": 9.23
+      },
+      {
+        "w": "bersa",
+        "s": 9.27,
+        "e": 9.59
+      },
+      {
+        "w": "ming",
+        "s": 10.21,
+        "e": 10.37
+      },
+      {
+        "w": "ikki",
+        "s": 10.47,
+        "e": 10.67
+      },
+      {
+        "w": "yuz",
+        "s": 10.69,
+        "e": 10.79
+      },
+      {
+        "w": "qirq",
+        "s": 10.83,
+        "e": 11.01
+      },
+      {
+        "w": "ikki",
+        "s": 11.07,
+        "e": 11.25
+      },
+      {
+        "w": "xatosi",
+        "s": 11.31,
+        "e": 11.65
+      },
+      {
+        "w": "chiqadi,",
+        "s": 11.71,
+        "e": 11.97
+      },
+      {
+        "w": "hosila",
+        "s": 12.49,
+        "e": 12.81
+      },
+      {
+        "w": "jadvalga",
+        "s": 12.85,
+        "e": 13.25
+      },
+      {
+        "w": "alias",
+        "s": 13.45,
+        "e": 13.73
+      },
+      {
+        "w": "berilmasa",
+        "s": 13.79,
+        "e": 14.19
+      },
+      {
+        "w": "esa",
+        "s": 14.25,
+        "e": 14.43
+      },
+      {
+        "w": "ming",
+        "s": 14.89,
+        "e": 15.05
+      },
+      {
+        "w": "ikki",
+        "s": 15.13,
+        "e": 15.29
+      },
+      {
+        "w": "yuz",
+        "s": 15.29,
+        "e": 15.41
+      },
+      {
+        "w": "qirq",
+        "s": 15.43,
+        "e": 15.59
+      },
+      {
+        "w": "sakkiz",
+        "s": 15.63,
+        "e": 15.93
+      },
+      {
+        "w": "xatosi",
+        "s": 15.95,
+        "e": 16.27
+      },
+      {
+        "w": "ro'y",
+        "s": 16.29,
+        "e": 16.39
+      },
+      {
+        "w": "beradi.",
+        "s": 16.41,
+        "e": 16.67
+      }
+    ]
+  },
+  {
+    "id": "mysql_limit",
+    "scene": "mysql_limit_update",
+    "text": "MySQL da IN yoki ALL ichida LIMIT ishlatib bo'lmaydi. Yechim sifatida LIMIT li so'rovni qo'shimcha hosila jadvalga o'rab olish kerak.",
+    "show": "MySQL da IN yoki ALL ichida LIMIT ishlatib bo'lmaydi. Yechim sifatida LIMIT li so'rovni qo'shimcha hosila jadvalga o'rab olish kerak.",
+    "say": "May es-kyu-el da in yoki oll ichida limit ishlatib bo'lmaydi. Yechim sifatida limit li so'rovni qo'shimcha hosila jadvalga o'rab olish kerak.",
+    "a0": 17.75,
+    "a1": 25.5,
+    "words": [
+      {
+        "w": "May",
+        "s": 17.75,
+        "e": 17.89
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 17.93,
+        "e": 18.21
+      },
+      {
+        "w": "da",
+        "s": 18.23,
+        "e": 18.33
+      },
+      {
+        "w": "in",
+        "s": 18.75,
+        "e": 18.87
+      },
+      {
+        "w": "yoki",
+        "s": 19.09,
+        "e": 19.33
+      },
+      {
+        "w": "oll",
+        "s": 19.65,
+        "e": 19.79
+      },
+      {
+        "w": "ichida",
+        "s": 19.89,
+        "e": 20.15
+      },
+      {
+        "w": "limit",
+        "s": 20.49,
+        "e": 20.73
+      },
+      {
+        "w": "ishlatib",
+        "s": 20.79,
+        "e": 21.11
+      },
+      {
+        "w": "bo'lmaydi.",
+        "s": 21.13,
+        "e": 21.51
+      },
+      {
+        "w": "Yechim",
+        "s": 21.87,
+        "e": 22.11
+      },
+      {
+        "w": "sifatida",
+        "s": 22.15,
+        "e": 22.52
+      },
+      {
+        "w": "limit",
+        "s": 22.62,
+        "e": 22.84
+      },
+      {
+        "w": "li",
+        "s": 22.88,
+        "e": 22.94
+      },
+      {
+        "w": "so'rovni",
+        "s": 23.02,
+        "e": 23.4
+      },
+      {
+        "w": "qo'shimcha",
+        "s": 23.48,
+        "e": 23.92
+      },
+      {
+        "w": "hosila",
+        "s": 23.98,
+        "e": 24.3
+      },
+      {
+        "w": "jadvalga",
+        "s": 24.36,
+        "e": 24.76
+      },
+      {
+        "w": "o'rab",
+        "s": 24.86,
+        "e": 25.06
+      },
+      {
+        "w": "olish",
+        "s": 25.1,
+        "e": 25.26
+      },
+      {
+        "w": "kerak.",
+        "s": 25.28,
+        "e": 25.5
+      }
+    ]
+  },
+  {
+    "id": "mysql_update",
+    "scene": "mysql_limit_update",
+    "text": "Eng mashhur cheklov: o'zgartirilayotgan jadvaldan subquery ichida to'g'ridan-to'g'ri o'qib bo'lmaydi. Buning uchun hosila jadval materializatsiyasidan foydalanamiz.",
+    "show": "Eng mashhur cheklov: o'zgartirilayotgan jadvaldan subquery ichida to'g'ridan-to'g'ri o'qib bo'lmaydi. Buning uchun hosila jadval materializatsiyasidan foydalanamiz.",
+    "say": "Eng mashhur cheklov: o'zgartirilayotgan jadvaldan sabkveri ichida to'g'ridan-to'g'ri o'qib bo'lmaydi. Buning uchun hosila jadval materializatsiyasidan foydalanamiz.",
+    "a0": 26.48,
+    "a1": 34.26,
+    "words": [
+      {
+        "w": "Eng",
+        "s": 26.48,
+        "e": 26.6
+      },
+      {
+        "w": "mashhur",
+        "s": 26.64,
+        "e": 26.92
+      },
+      {
+        "w": "cheklov:",
+        "s": 26.94,
+        "e": 27.24
+      },
+      {
+        "w": "o'zgartirilayotgan",
+        "s": 27.78,
+        "e": 28.48
+      },
+      {
+        "w": "jadvaldan",
+        "s": 28.52,
+        "e": 28.96
+      },
+      {
+        "w": "sabkveri",
+        "s": 29.02,
+        "e": 29.48
+      },
+      {
+        "w": "ichida",
+        "s": 29.5,
+        "e": 29.74
+      },
+      {
+        "w": "to'g'ridan-to'g'ri",
+        "s": 29.84,
+        "e": 30.42
+      },
+      {
+        "w": "o'qib",
+        "s": 30.5,
+        "e": 30.68
+      },
+      {
+        "w": "bo'lmaydi.",
+        "s": 30.74,
+        "e": 31.14
+      },
+      {
+        "w": "Buning",
+        "s": 31.38,
+        "e": 31.58
+      },
+      {
+        "w": "uchun",
+        "s": 31.6,
+        "e": 31.78
+      },
+      {
+        "w": "hosila",
+        "s": 31.96,
+        "e": 32.28
+      },
+      {
+        "w": "jadval",
+        "s": 32.32,
+        "e": 32.62
+      },
+      {
+        "w": "materializatsiyasidan",
+        "s": 32.7,
+        "e": 33.66
+      },
+      {
+        "w": "foydalanamiz.",
+        "s": 33.72,
+        "e": 34.26
+      }
+    ]
+  },
+  {
+    "id": "sqlite_any_all",
+    "scene": "sqlite_any_all",
+    "text": "SQLite da ANY va ALL kalit so'zlari umuman yo'q. Ular o'rniga MAX yoki MIN agregatlari ishlatiladi, ammo NULL xususiyatlarini inobatga olish shart.",
+    "show": "SQLite da ANY va ALL kalit so'zlari umuman yo'q. Ular o'rniga MAX yoki MIN agregatlari ishlatiladi, ammo NULL xususiyatlarini inobatga olish shart.",
+    "say": "Es-kyu-layt da eni va oll kalit so'zlari umuman yo'q. Ular o'rniga maks yoki min agregatlari ishlatiladi, ammo null xususiyatlarini inobatga olish shart.",
+    "a0": 35.3,
+    "a1": 45.01,
+    "words": [
+      {
+        "w": "Es-kyu-layt",
+        "s": 35.3,
+        "e": 35.78
+      },
+      {
+        "w": "da",
+        "s": 35.86,
+        "e": 35.96
+      },
+      {
+        "w": "eni",
+        "s": 36.36,
+        "e": 36.54
+      },
+      {
+        "w": "va",
+        "s": 36.66,
+        "e": 36.74
+      },
+      {
+        "w": "oll",
+        "s": 37.02,
+        "e": 37.14
+      },
+      {
+        "w": "kalit",
+        "s": 37.2,
+        "e": 37.44
+      },
+      {
+        "w": "so'zlari",
+        "s": 37.46,
+        "e": 37.87
+      },
+      {
+        "w": "umuman",
+        "s": 38.17,
+        "e": 38.51
+      },
+      {
+        "w": "yo'q.",
+        "s": 38.57,
+        "e": 38.73
+      },
+      {
+        "w": "Ular",
+        "s": 39.43,
+        "e": 39.61
+      },
+      {
+        "w": "o'rniga",
+        "s": 39.69,
+        "e": 40.01
+      },
+      {
+        "w": "maks",
+        "s": 40.33,
+        "e": 40.61
+      },
+      {
+        "w": "yoki",
+        "s": 40.71,
+        "e": 40.93
+      },
+      {
+        "w": "min",
+        "s": 41.15,
+        "e": 41.31
+      },
+      {
+        "w": "agregatlari",
+        "s": 41.41,
+        "e": 41.91
+      },
+      {
+        "w": "ishlatiladi,",
+        "s": 41.95,
+        "e": 42.37
+      },
+      {
+        "w": "ammo",
+        "s": 42.63,
+        "e": 42.79
+      },
+      {
+        "w": "null",
+        "s": 43.13,
+        "e": 43.33
+      },
+      {
+        "w": "xususiyatlarini",
+        "s": 43.37,
+        "e": 44.05
+      },
+      {
+        "w": "inobatga",
+        "s": 44.13,
+        "e": 44.49
+      },
+      {
+        "w": "olish",
+        "s": 44.55,
+        "e": 44.73
+      },
+      {
+        "w": "shart.",
+        "s": 44.77,
+        "e": 45.01
+      }
+    ]
+  },
+  {
+    "id": "sqlite_bare_scalar",
+    "scene": "sqlite_kengaytma",
+    "text": "Katta e'tibor: SQLite da skalyar subquery ko'p qator qaytarsa xato bermaydi, balki jimgina birinchi qator qiymatini tanlab oladi.",
+    "show": "Katta e'tibor: SQLite da skalyar subquery ko'p qator qaytarsa xato bermaydi, balki jimgina birinchi qator qiymatini tanlab oladi.",
+    "say": "Katta e'tibor: Es-kyu-layt da skalyar sabkveri ko'p qator qaytarsa xato bermaydi, balki jimgina birinchi qator qiymatini tanlab oladi.",
+    "a0": 45.85,
+    "a1": 53.36,
+    "words": [
+      {
+        "w": "Katta",
+        "s": 45.85,
+        "e": 46.07
+      },
+      {
+        "w": "e'tibor:",
+        "s": 46.13,
+        "e": 46.41
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 46.95,
+        "e": 47.41
+      },
+      {
+        "w": "da",
+        "s": 47.49,
+        "e": 47.57
+      },
+      {
+        "w": "skalyar",
+        "s": 47.81,
+        "e": 48.15
+      },
+      {
+        "w": "sabkveri",
+        "s": 48.23,
+        "e": 48.71
+      },
+      {
+        "w": "ko'p",
+        "s": 48.85,
+        "e": 48.99
+      },
+      {
+        "w": "qator",
+        "s": 49.05,
+        "e": 49.29
+      },
+      {
+        "w": "qaytarsa",
+        "s": 49.31,
+        "e": 49.75
+      },
+      {
+        "w": "xato",
+        "s": 49.91,
+        "e": 50.15
+      },
+      {
+        "w": "bermaydi,",
+        "s": 50.23,
+        "e": 50.61
+      },
+      {
+        "w": "balki",
+        "s": 50.75,
+        "e": 50.99
+      },
+      {
+        "w": "jimgina",
+        "s": 51.19,
+        "e": 51.59
+      },
+      {
+        "w": "birinchi",
+        "s": 51.75,
+        "e": 52.07
+      },
+      {
+        "w": "qator",
+        "s": 52.09,
+        "e": 52.33
+      },
+      {
+        "w": "qiymatini",
+        "s": 52.37,
+        "e": 52.78
+      },
+      {
+        "w": "tanlab",
+        "s": 52.84,
+        "e": 53.12
+      },
+      {
+        "w": "oladi.",
+        "s": 53.16,
+        "e": 53.36
+      }
+    ]
+  },
+  {
+    "id": "sqlite_kengaytma",
+    "scene": "sqlite_kengaytma",
+    "text": "Shuningdek, SQLite da hosila jadvalga nom berish majburiy emas va to'g'ridan-to'g'ri jadval nomini IN dan keyin yozish imkoniyati mavjud.",
+    "show": "Shuningdek, SQLite da hosila jadvalga nom berish majburiy emas va to'g'ridan-to'g'ri jadval nomini IN dan keyin yozish imkoniyati mavjud.",
+    "say": "Shuningdek, Es-kyu-layt da hosila jadvalga nom berish majburiy emas va to'g'ridan-to'g'ri jadval nomini in dan keyin yozish imkoniyati mavjud.",
+    "a0": 54.24,
+    "a1": 61.7,
+    "words": [
+      {
+        "w": "Shuningdek,",
+        "s": 54.24,
+        "e": 54.62
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 54.9,
+        "e": 55.34
+      },
+      {
+        "w": "da",
+        "s": 55.4,
+        "e": 55.5
+      },
+      {
+        "w": "hosila",
+        "s": 55.74,
+        "e": 56.06
+      },
+      {
+        "w": "jadvalga",
+        "s": 56.12,
+        "e": 56.5
+      },
+      {
+        "w": "nom",
+        "s": 56.6,
+        "e": 56.76
+      },
+      {
+        "w": "berish",
+        "s": 56.8,
+        "e": 57.08
+      },
+      {
+        "w": "majburiy",
+        "s": 57.14,
+        "e": 57.58
+      },
+      {
+        "w": "emas",
+        "s": 57.7,
+        "e": 57.96
+      },
+      {
+        "w": "va",
+        "s": 58.1,
+        "e": 58.16
+      },
+      {
+        "w": "to'g'ridan-to'g'ri",
+        "s": 58.28,
+        "e": 58.88
+      },
+      {
+        "w": "jadval",
+        "s": 58.94,
+        "e": 59.26
+      },
+      {
+        "w": "nomini",
+        "s": 59.32,
+        "e": 59.62
+      },
+      {
+        "w": "in",
+        "s": 60.02,
+        "e": 60.08
+      },
+      {
+        "w": "dan",
+        "s": 60.12,
+        "e": 60.26
+      },
+      {
+        "w": "keyin",
+        "s": 60.34,
+        "e": 60.59
+      },
+      {
+        "w": "yozish",
+        "s": 60.65,
+        "e": 60.93
+      },
+      {
+        "w": "imkoniyati",
+        "s": 60.97,
+        "e": 61.39
+      },
+      {
+        "w": "mavjud.",
+        "s": 61.41,
+        "e": 61.7
+      }
+    ]
+  }
+]
