@@ -1,0 +1,46 @@
+WEBVTT
+
+1
+00:01.420 --> 00:12.140
+Dialektlar qismida MySQL ning AUTO_INCREMENT xususiyati, SQLite ning rowid
+va AUTOINCREMENT mexanizmini hamda asosiy tuzoqlarni ko‘rib chiqamiz.
+
+2
+00:15.070 --> 00:27.430
+MySQL da AUTO_INCREMENT ustuniga nol yoki NULL yozilganda ham avtomatik raqam beriladi,
+LAST_INSERT_ID funksiyasi esa joriy ulanishdagi birinchi kiritilgan raqamni qaytaradi.
+
+3
+00:28.080 --> 00:42.200
+Agar qo‘lda yuz raqami kiritilsa, MySQL hisoblagichi ushbu songa ergashadi va keyingi qatorga yuz birni
+beradi. Shuningdek kichik tip tanlansa, masalan TINYINT da bir yuz yigirma yetti chegarasiga yetib to‘xtaydi.
+
+4
+00:45.650 --> 00:54.380
+SQLite da oddiy INTEGER PRIMARY KEY yetarli bo‘lib, u rowid ning
+taxallusi hisoblanadi va eng katta raqamdan bittaga oshirib boradi.
+
+5
+00:55.730 --> 01:03.750
+AUTOINCREMENT kalit so‘zi qo‘shilganda esa sqlite_sequence jadvali
+yuritilib, o‘chirilgan oxirgi raqamlar aslo qayta ishlatilmaydi.
+
+6
+01:04.400 --> 01:12.410
+E'tibor bering: SQLite da aynan to‘liq INTEGER so‘zi yozilishi
+shart, qisqa INT yozilsa rowid taxallusi ishlamaydi.
+
+7
+01:15.780 --> 01:27.640
+Uchta tizimni qiyoslasak: PostgreSQL da xavfsiz Identity standarti, MySQL da avtomatik
+suriluvchi AUTO_INCREMENT, SQLite da esa resurs tejovchi rowid mexanizmi mavjud.
+
+8
+01:30.810 --> 01:41.230
+Eng katta xato — buxgalteriya cheklari uchun bitta raqam ham tushib qolmasin deb identity
+ga tayanishdir. ROLLBACK yoki xatolarda bo‘shliqlar qolishi tabiiy qonuniyatdir.
+
+9
+01:44.340 --> 01:52.450
+Har bir ma'lumotlar bazasining o‘ziga xos avtomatik raqamlash qoidalarini
+to‘g‘ri qo‘llash orqali ishonchli va tezkor tizimlar yarating.

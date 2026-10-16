@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:13.706
+Dialektlar: AUTO_INCREMENT va rowid
+
+00:13.706 --> 00:44.272
+MySQL: AUTO_INCREMENT va LAST_INSERT_ID()
+
+00:44.272 --> 01:14.481
+SQLite: rowid vs AUTOINCREMENT
+
+01:14.481 --> 01:29.574
+Taqqoslash: PostgreSQL vs MySQL vs SQLite
+
+01:29.574 --> 01:43.141
+Tipik xatolar va tavsiyalar
+
+01:43.141 --> 01:56.140
+Xulosa
