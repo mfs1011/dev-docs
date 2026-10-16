@@ -34,6 +34,15 @@ const format = (seconds) => {
 }
 
 export function enhanceVideos(container) {
+  for (const video of container.querySelectorAll('video')) {
+    if (!video.closest('figure.video')) {
+      const figure = document.createElement('figure')
+      figure.className = 'video'
+      video.parentNode.insertBefore(figure, video)
+      figure.appendChild(video)
+    }
+  }
+
   for (const figure of container.querySelectorAll('figure.video')) {
     const video = figure.querySelector('video')
     if (!video || figure.classList.contains('vp')) continue
