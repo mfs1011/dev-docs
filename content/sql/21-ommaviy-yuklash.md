@@ -4,6 +4,15 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/21-1-tushuncha.jpg">
+    <source src="/video/sql/21-1-tushuncha.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/21-1-tushuncha.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/21-1-tushuncha.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>21.1-video. Ommaviy yuklash tushunchasi va strategiyalari</figcaption>
+</figure>
+
 Bazaga minglab yoki millionlab qator kiritish kerak bo'lgan holatlar ko'p:
 
 - eski tizimdan ma'lumot ko'chirish;
@@ -56,6 +65,15 @@ Mijozdagi fayl uchun `psql` ning **`\copy`** buyrug'i bor. U `COPY FROM STDIN` /
 **`FREEZE`** — boshlang'ich yuklash uchun tezlik parametri. Qatorlar `VACUUM FREEZE` dan keyingidek "muzlatilgan" holda yoziladi (65-bob). Jadval shu tranzaksiyada yaratilgan yoki tozalangan bo'lishi kerak.
 
 ## Kod
+
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/21-2-kod.jpg">
+    <source src="/video/sql/21-2-kod.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/21-2-kod.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/21-2-kod.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>21.2-video. PostgreSQL 18: COPY, ON_ERROR va REJECT_LIMIT amaliyoti</figcaption>
+</figure>
 
 Misollar PostgreSQL 18.6, MySQL 9.7.2 va SQLite 3.54.0 da ishga tushirilgan.
 
@@ -163,6 +181,15 @@ SUT,12000
 `STDOUT` ga chiqarilgani uchun natija mijozga keldi. Faylga yozish uchun `psql` da `\copy (…) TO 'fayl.csv' …` ishlatiladi.
 
 ## Dialektlar
+
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/21-3-dialektlar.jpg">
+    <source src="/video/sql/21-3-dialektlar.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/21-3-dialektlar.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/21-3-dialektlar.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>21.3-video. MySQL va SQLite: LOAD DATA, LOCAL xatari va .import</figcaption>
+</figure>
 
 ### MySQL: `LOAD DATA`
 

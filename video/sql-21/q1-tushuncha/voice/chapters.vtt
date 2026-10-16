@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:14.080
+Ommaviy yuklash zarurati va sekinlik sababi
+
+00:14.080 --> 00:27.457
+Kichik amallarni bitta amalga birlashtirish
+
+00:27.457 --> 00:40.245
+PostgreSQL COPY buyrug‘i
+
+00:40.245 --> 00:53.926
+Server fayli va psql ning \copy buyrug‘i
+
+00:53.926 --> 01:07.418
+Indekslar, cheklovlar va xotira sozlamalari
+
+01:07.418 --> 01:20.580
+Xatolarni boshqarish: ON_ERROR ignore va REJECT_LIMIT

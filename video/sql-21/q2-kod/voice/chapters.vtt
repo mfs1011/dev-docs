@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:12.824
+PostgreSQL 18 da COPY va CSV fayl tuzilishi
+
+00:12.824 --> 00:23.855
+Sukut bo‘yicha xato va tranzaksiyaning bekor bo‘lishi
+
+00:23.855 --> 00:36.649
+ON_ERROR ignore va LOG_VERBOSITY verbose
+
+00:36.649 --> 00:47.716
+REJECT_LIMIT bilan xatolar sonini chegaralash
+
+00:47.716 --> 01:00.828
+Server ruxsati xatosi va psql dagi \copy yechimi
+
+01:00.828 --> 01:13.780
+So‘rov natijasini CSV ga chiqarish va xulosa

@@ -1,0 +1,31 @@
+WEBVTT
+
+1
+00:01.420 --> 00:12.560
+MySQL va SQLite tizimlarida ham ommaviy yuklash uchun maxsus mexanizmlar
+mavjud: MySQL da bu LOAD DATA buyrug‘i, SQLite da esa nuqta import vositasidir.
+
+2
+00:15.470 --> 00:26.300
+MySQL dagi LOAD DATA buyrug‘i oddiy INSERT lardan yigirma baravargacha tez ishlaydi, lekin
+serverda xavfsizlik uchun maxsus sekyur fayl priv va lokal infayl sozlamalari talab qilinadi.
+
+3
+00:29.240 --> 00:39.570
+Lokal infayl ishlatilganda xatolar jimgina e’tiborsiz qoldiriladi: matnli narx nolga
+aylanadi, takror kalitlar esa tashlab yuborilib, ma’lumotlar buzilib yuklanishi mumkin.
+
+4
+00:42.660 --> 00:51.460
+SQLite da nuqta import orqali CSV faylni yuklashda jadval avvaldan
+yaratilgan bo‘lishi muhim, aks holda barcha ustunlar tipsiz bo‘lib qoladi.
+
+5
+00:54.410 --> 01:02.360
+SQLite da sukut bo‘yicha har qanday xato qiymat matn sifatida yuklanib
+ketaveradi, shuning uchun strikt jadvallar va cheklovlardan foydalanish shart.
+
+6
+01:05.310 --> 01:14.470
+Xulosa qilib aytganda, yuklash tezligi muhim bo‘lsa-da, ogohlantirishlarni tekshirish
+va yuklashdan so‘ng ma’lumotlar butunligini nazorat qilish barqaror tizim asosidir.
