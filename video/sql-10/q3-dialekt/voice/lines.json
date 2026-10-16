@@ -1,0 +1,1057 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Ushbu qismda NULL va tip konversiyasining PostgreSQL, MySQL hamda SQLite tizimlaridagi tub farqlari va amaliy tuzoqlarini ko‘ramiz.",
+    "show": "Ushbu qismda NULL va tip konversiyasining PostgreSQL, MySQL hamda SQLite tizimlaridagi tub farqlari va amaliy tuzoqlarini ko‘ramiz.",
+    "say": "Ushbu qismda nul va tip konversiyasining Postgres, May es-kyu-el hamda Es-kyu-layt tizimlaridagi tub farqlari va amaliy tuzoqlarini ko‘ramiz.",
+    "a0": 0.22,
+    "a1": 9.43,
+    "words": [
+      {
+        "w": "Ushbu",
+        "s": 0.22,
+        "e": 0.46
+      },
+      {
+        "w": "qismda",
+        "s": 0.54,
+        "e": 0.9
+      },
+      {
+        "w": "nul",
+        "s": 1.24,
+        "e": 1.44
+      },
+      {
+        "w": "va",
+        "s": 1.52,
+        "e": 1.6
+      },
+      {
+        "w": "tip",
+        "s": 1.74,
+        "e": 1.9
+      },
+      {
+        "w": "konversiyasining",
+        "s": 1.96,
+        "e": 2.78
+      },
+      {
+        "w": "Postgres,",
+        "s": 2.9,
+        "e": 3.46
+      },
+      {
+        "w": "May",
+        "s": 3.7,
+        "e": 3.88
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 4.02,
+        "e": 4.5
+      },
+      {
+        "w": "hamda",
+        "s": 4.58,
+        "e": 4.86
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 5.3,
+        "e": 5.84
+      },
+      {
+        "w": "tizimlaridagi",
+        "s": 5.86,
+        "e": 6.52
+      },
+      {
+        "w": "tub",
+        "s": 6.74,
+        "e": 6.96
+      },
+      {
+        "w": "farqlari",
+        "s": 7.02,
+        "e": 7.44
+      },
+      {
+        "w": "va",
+        "s": 7.51,
+        "e": 7.59
+      },
+      {
+        "w": "amaliy",
+        "s": 8.05,
+        "e": 8.39
+      },
+      {
+        "w": "tuzoqlarini",
+        "s": 8.43,
+        "e": 9.03
+      },
+      {
+        "w": "ko‘ramiz.",
+        "s": 9.07,
+        "e": 9.43
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "mysql_null",
+    "text": "MySQL da IS NOT DISTINCT FROM o‘rniga maxsus tenglik qushchasi, ya’ni <=> operatori ishlatiladi. NULL bilan NULL solishtirilganda u bir, ya’ni rost beradi.",
+    "show": "MySQL da IS NOT DISTINCT FROM o‘rniga maxsus tenglik qushchasi, ya’ni <=> operatori ishlatiladi. NULL bilan NULL solishtirilganda u bir, ya’ni rost beradi.",
+    "say": "May es-kyu-el da iz not distinkt from o‘rniga maxsus tenglik qushchasi, ya’ni <=> operatori ishlatiladi. Nul bilan nul solishtirilganda u bir, ya’ni rost beradi.",
+    "a0": 10.51,
+    "a1": 21.35,
+    "words": [
+      {
+        "w": "May",
+        "s": 10.51,
+        "e": 10.69
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 10.79,
+        "e": 11.19
+      },
+      {
+        "w": "da",
+        "s": 11.23,
+        "e": 11.31
+      },
+      {
+        "w": "iz",
+        "s": 11.69,
+        "e": 11.81
+      },
+      {
+        "w": "not",
+        "s": 11.87,
+        "e": 12.07
+      },
+      {
+        "w": "distinkt",
+        "s": 12.15,
+        "e": 12.55
+      },
+      {
+        "w": "from",
+        "s": 12.59,
+        "e": 12.85
+      },
+      {
+        "w": "o‘rniga",
+        "s": 13.01,
+        "e": 13.33
+      },
+      {
+        "w": "maxsus",
+        "s": 13.71,
+        "e": 14.11
+      },
+      {
+        "w": "tenglik",
+        "s": 14.21,
+        "e": 14.57
+      },
+      {
+        "w": "qushchasi,",
+        "s": 14.61,
+        "e": 15.01
+      },
+      {
+        "w": "ya’ni",
+        "s": 15.39,
+        "e": 15.59
+      },
+      {
+        "w": "<=>",
+        "s": 15.59,
+        "e": 16.71
+      },
+      {
+        "w": "operatori",
+        "s": 16.71,
+        "e": 17.13
+      },
+      {
+        "w": "ishlatiladi.",
+        "s": 17.15,
+        "e": 17.59
+      },
+      {
+        "w": "Nul",
+        "s": 18.07,
+        "e": 18.27
+      },
+      {
+        "w": "bilan",
+        "s": 18.31,
+        "e": 18.53
+      },
+      {
+        "w": "nul",
+        "s": 18.59,
+        "e": 18.75
+      },
+      {
+        "w": "solishtirilganda",
+        "s": 18.79,
+        "e": 19.53
+      },
+      {
+        "w": "u",
+        "s": 19.69,
+        "e": 19.71
+      },
+      {
+        "w": "bir,",
+        "s": 19.89,
+        "e": 20.07
+      },
+      {
+        "w": "ya’ni",
+        "s": 20.39,
+        "e": 20.59
+      },
+      {
+        "w": "rost",
+        "s": 20.81,
+        "e": 21.03
+      },
+      {
+        "w": "beradi.",
+        "s": 21.07,
+        "e": 21.35
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "mysql_null",
+    "text": "Ammo MySQL da konkat funksiyasiga NULL kelsa, butun natija NULL ga aylanadi. PostgreSQL da esa NULL e’tiborsiz qoldirilar edi.",
+    "show": "Ammo MySQL da konkat funksiyasiga NULL kelsa, butun natija NULL ga aylanadi. PostgreSQL da esa NULL e’tiborsiz qoldirilar edi.",
+    "say": "Ammo May es-kyu-el da konkat funksiyasiga nul kelsa, butun natija nul ga aylanadi. Postgres da esa nul e’tiborsiz qoldirilar edi.",
+    "a0": 22.15,
+    "a1": 30.0,
+    "words": [
+      {
+        "w": "Ammo",
+        "s": 22.15,
+        "e": 22.33
+      },
+      {
+        "w": "May",
+        "s": 22.58,
+        "e": 22.74
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 22.84,
+        "e": 23.22
+      },
+      {
+        "w": "da",
+        "s": 23.28,
+        "e": 23.36
+      },
+      {
+        "w": "konkat",
+        "s": 23.58,
+        "e": 24.04
+      },
+      {
+        "w": "funksiyasiga",
+        "s": 24.08,
+        "e": 24.66
+      },
+      {
+        "w": "nul",
+        "s": 24.78,
+        "e": 24.96
+      },
+      {
+        "w": "kelsa,",
+        "s": 25.0,
+        "e": 25.32
+      },
+      {
+        "w": "butun",
+        "s": 25.72,
+        "e": 26.02
+      },
+      {
+        "w": "natija",
+        "s": 26.08,
+        "e": 26.46
+      },
+      {
+        "w": "nul",
+        "s": 26.56,
+        "e": 26.72
+      },
+      {
+        "w": "ga",
+        "s": 26.76,
+        "e": 26.84
+      },
+      {
+        "w": "aylanadi.",
+        "s": 26.88,
+        "e": 27.24
+      },
+      {
+        "w": "Postgres",
+        "s": 27.68,
+        "e": 28.14
+      },
+      {
+        "w": "da",
+        "s": 28.16,
+        "e": 28.22
+      },
+      {
+        "w": "esa",
+        "s": 28.28,
+        "e": 28.44
+      },
+      {
+        "w": "nul",
+        "s": 28.56,
+        "e": 28.76
+      },
+      {
+        "w": "e’tiborsiz",
+        "s": 28.94,
+        "e": 29.42
+      },
+      {
+        "w": "qoldirilar",
+        "s": 29.46,
+        "e": 29.92
+      },
+      {
+        "w": "edi.",
+        "s": 29.94,
+        "e": 30.0
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "mysql_trap",
+    "text": "Eng dahshatli tuzoq: MySQL da matnli ustun son bilan solishtirilsa, barcha matnlar kasr son sifatida o‘qiladi.",
+    "show": "Eng dahshatli tuzoq: MySQL da matnli ustun son bilan solishtirilsa, barcha matnlar kasr son sifatida o‘qiladi.",
+    "say": "Eng dahshatli tuzoq: May es-kyu-el da matnli ustun son bilan solishtirilsa, barcha matnlar kasr son sifatida o‘qiladi.",
+    "a0": 30.98,
+    "a1": 37.63,
+    "words": [
+      {
+        "w": "Eng",
+        "s": 30.98,
+        "e": 31.12
+      },
+      {
+        "w": "dahshatli",
+        "s": 31.18,
+        "e": 31.6
+      },
+      {
+        "w": "tuzoq:",
+        "s": 31.66,
+        "e": 31.98
+      },
+      {
+        "w": "May",
+        "s": 32.22,
+        "e": 32.38
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 32.46,
+        "e": 32.82
+      },
+      {
+        "w": "da",
+        "s": 32.86,
+        "e": 32.92
+      },
+      {
+        "w": "matnli",
+        "s": 33.02,
+        "e": 33.38
+      },
+      {
+        "w": "ustun",
+        "s": 33.48,
+        "e": 33.76
+      },
+      {
+        "w": "son",
+        "s": 33.88,
+        "e": 34.1
+      },
+      {
+        "w": "bilan",
+        "s": 34.16,
+        "e": 34.38
+      },
+      {
+        "w": "solishtirilsa,",
+        "s": 34.42,
+        "e": 35.02
+      },
+      {
+        "w": "barcha",
+        "s": 35.42,
+        "e": 35.74
+      },
+      {
+        "w": "matnlar",
+        "s": 35.8,
+        "e": 36.24
+      },
+      {
+        "w": "kasr",
+        "s": 36.32,
+        "e": 36.66
+      },
+      {
+        "w": "son",
+        "s": 36.72,
+        "e": 36.9
+      },
+      {
+        "w": "sifatida",
+        "s": 36.94,
+        "e": 37.26
+      },
+      {
+        "w": "o‘qiladi.",
+        "s": 37.28,
+        "e": 37.63
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "mysql_trap",
+    "text": "Masalan, WHERE satr barobar nol deb yozilsa, uzum ham, olma ham nolga aylanib, barcha qatorlar chiqib ketadi va indeks umuman ishlamaydi!",
+    "show": "Masalan, WHERE satr barobar nol deb yozilsa, uzum ham, olma ham nolga aylanib, barcha qatorlar chiqib ketadi va indeks umuman ishlamaydi!",
+    "say": "Masalan, ver satr barobar nol deb yozilsa, uzum ham, olma ham nolga aylanib, barcha qatorlar chiqib ketadi va indeks umuman ishlamaydi!",
+    "a0": 37.93,
+    "a1": 46.73,
+    "words": [
+      {
+        "w": "Masalan,",
+        "s": 37.93,
+        "e": 38.29
+      },
+      {
+        "w": "ver",
+        "s": 38.61,
+        "e": 38.83
+      },
+      {
+        "w": "satr",
+        "s": 38.91,
+        "e": 39.17
+      },
+      {
+        "w": "barobar",
+        "s": 39.21,
+        "e": 39.59
+      },
+      {
+        "w": "nol",
+        "s": 39.69,
+        "e": 39.89
+      },
+      {
+        "w": "deb",
+        "s": 39.95,
+        "e": 40.07
+      },
+      {
+        "w": "yozilsa,",
+        "s": 40.11,
+        "e": 40.49
+      },
+      {
+        "w": "uzum",
+        "s": 40.87,
+        "e": 41.15
+      },
+      {
+        "w": "ham,",
+        "s": 41.21,
+        "e": 41.45
+      },
+      {
+        "w": "olma",
+        "s": 41.63,
+        "e": 41.87
+      },
+      {
+        "w": "ham",
+        "s": 41.93,
+        "e": 42.11
+      },
+      {
+        "w": "nolga",
+        "s": 42.19,
+        "e": 42.49
+      },
+      {
+        "w": "aylanib,",
+        "s": 42.59,
+        "e": 42.91
+      },
+      {
+        "w": "barcha",
+        "s": 43.27,
+        "e": 43.57
+      },
+      {
+        "w": "qatorlar",
+        "s": 43.61,
+        "e": 44.03
+      },
+      {
+        "w": "chiqib",
+        "s": 44.05,
+        "e": 44.21
+      },
+      {
+        "w": "ketadi",
+        "s": 44.23,
+        "e": 44.51
+      },
+      {
+        "w": "va",
+        "s": 44.85,
+        "e": 44.91
+      },
+      {
+        "w": "indeks",
+        "s": 45.11,
+        "e": 45.51
+      },
+      {
+        "w": "umuman",
+        "s": 45.73,
+        "e": 46.19
+      },
+      {
+        "w": "ishlamaydi!",
+        "s": 46.27,
+        "e": 46.73
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "mysql_trap",
+    "text": "MySQL da kast amali ham cheklangan: integer o‘rniga SIGNED yoziladi, uch butun o‘ndan yetti esa to‘rtga yaxlitlanadi.",
+    "show": "MySQL da kast amali ham cheklangan: integer o‘rniga SIGNED yoziladi, uch butun o‘ndan yetti esa to‘rtga yaxlitlanadi.",
+    "say": "May es-kyu-el da kast amali ham cheklangan: integer o‘rniga saynd yoziladi, uch butun o‘ndan yetti esa to‘rtga yaxlitlanadi.",
+    "a0": 47.93,
+    "a1": 55.14,
+    "words": [
+      {
+        "w": "May",
+        "s": 47.93,
+        "e": 48.11
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 48.21,
+        "e": 48.63
+      },
+      {
+        "w": "da",
+        "s": 48.67,
+        "e": 48.75
+      },
+      {
+        "w": "kast",
+        "s": 48.93,
+        "e": 49.25
+      },
+      {
+        "w": "amali",
+        "s": 49.35,
+        "e": 49.61
+      },
+      {
+        "w": "ham",
+        "s": 49.65,
+        "e": 49.77
+      },
+      {
+        "w": "cheklangan:",
+        "s": 49.83,
+        "e": 50.31
+      },
+      {
+        "w": "integer",
+        "s": 50.73,
+        "e": 51.17
+      },
+      {
+        "w": "o‘rniga",
+        "s": 51.25,
+        "e": 51.57
+      },
+      {
+        "w": "saynd",
+        "s": 51.67,
+        "e": 52.05
+      },
+      {
+        "w": "yoziladi,",
+        "s": 52.11,
+        "e": 52.52
+      },
+      {
+        "w": "uch",
+        "s": 52.86,
+        "e": 52.96
+      },
+      {
+        "w": "butun",
+        "s": 53.0,
+        "e": 53.22
+      },
+      {
+        "w": "o‘ndan",
+        "s": 53.32,
+        "e": 53.58
+      },
+      {
+        "w": "yetti",
+        "s": 53.64,
+        "e": 53.82
+      },
+      {
+        "w": "esa",
+        "s": 53.88,
+        "e": 54.04
+      },
+      {
+        "w": "to‘rtga",
+        "s": 54.14,
+        "e": 54.48
+      },
+      {
+        "w": "yaxlitlanadi.",
+        "s": 54.54,
+        "e": 55.14
+      }
+    ]
+  },
+  {
+    "id": "L7",
+    "scene": "sqlite_strict",
+    "text": "SQLite da esa tiplar afiniti orqali boshqariladi. Matndan songa kast qilinganda qirq ikki satridan boshidagi son olinib, matn qismi kesib tashlanadi.",
+    "show": "SQLite da esa tiplar afiniti orqali boshqariladi. Matndan songa kast qilinganda qirq ikki satridan boshidagi son olinib, matn qismi kesib tashlanadi.",
+    "say": "Es-kyu-layt da esa tiplar afiniti orqali boshqariladi. Matndan songa kast qilinganda qirq ikki satridan boshidagi son olinib, matn qismi kesib tashlanadi.",
+    "a0": 56.14,
+    "a1": 65.62,
+    "words": [
+      {
+        "w": "Es-kyu-layt",
+        "s": 56.14,
+        "e": 56.78
+      },
+      {
+        "w": "da",
+        "s": 56.82,
+        "e": 56.9
+      },
+      {
+        "w": "esa",
+        "s": 56.96,
+        "e": 57.14
+      },
+      {
+        "w": "tiplar",
+        "s": 57.38,
+        "e": 57.78
+      },
+      {
+        "w": "afiniti",
+        "s": 57.98,
+        "e": 58.5
+      },
+      {
+        "w": "orqali",
+        "s": 58.58,
+        "e": 58.84
+      },
+      {
+        "w": "boshqariladi.",
+        "s": 58.9,
+        "e": 59.4
+      },
+      {
+        "w": "Matndan",
+        "s": 60.0,
+        "e": 60.22
+      },
+      {
+        "w": "songa",
+        "s": 60.26,
+        "e": 60.56
+      },
+      {
+        "w": "kast",
+        "s": 60.64,
+        "e": 60.88
+      },
+      {
+        "w": "qilinganda",
+        "s": 60.92,
+        "e": 61.42
+      },
+      {
+        "w": "qirq",
+        "s": 61.78,
+        "e": 61.94
+      },
+      {
+        "w": "ikki",
+        "s": 62.0,
+        "e": 62.22
+      },
+      {
+        "w": "satridan",
+        "s": 62.3,
+        "e": 62.76
+      },
+      {
+        "w": "boshidagi",
+        "s": 62.86,
+        "e": 63.3
+      },
+      {
+        "w": "son",
+        "s": 63.36,
+        "e": 63.56
+      },
+      {
+        "w": "olinib,",
+        "s": 63.7,
+        "e": 63.98
+      },
+      {
+        "w": "matn",
+        "s": 64.26,
+        "e": 64.52
+      },
+      {
+        "w": "qismi",
+        "s": 64.58,
+        "e": 64.82
+      },
+      {
+        "w": "kesib",
+        "s": 64.88,
+        "e": 65.14
+      },
+      {
+        "w": "tashlanadi.",
+        "s": 65.16,
+        "e": 65.62
+      }
+    ]
+  },
+  {
+    "id": "L8",
+    "scene": "sqlite_strict",
+    "text": "Yaxshiyamki, SQLite ning yangi versiyalarida STRICT jadvallar mavjud bo‘lib, noto‘g‘ri kiritilgan ma’lumotlarni Postgres kabi rad etadi.",
+    "show": "Yaxshiyamki, SQLite ning yangi versiyalarida STRICT jadvallar mavjud bo‘lib, noto‘g‘ri kiritilgan ma’lumotlarni Postgres kabi rad etadi.",
+    "say": "Yaxshiyamki, Es-kyu-layt ning yangi versiyalarida strikt jadvallar mavjud bo‘lib, noto‘g‘ri kiritilgan ma’lumotlarni Postgres kabi rad etadi.",
+    "a0": 66.52,
+    "a1": 74.03,
+    "words": [
+      {
+        "w": "Yaxshiyamki,",
+        "s": 66.52,
+        "e": 67.02
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 67.36,
+        "e": 67.89
+      },
+      {
+        "w": "ning",
+        "s": 67.93,
+        "e": 68.07
+      },
+      {
+        "w": "yangi",
+        "s": 68.13,
+        "e": 68.39
+      },
+      {
+        "w": "versiyalarida",
+        "s": 68.43,
+        "e": 69.07
+      },
+      {
+        "w": "strikt",
+        "s": 69.21,
+        "e": 69.53
+      },
+      {
+        "w": "jadvallar",
+        "s": 69.59,
+        "e": 70.09
+      },
+      {
+        "w": "mavjud",
+        "s": 70.13,
+        "e": 70.43
+      },
+      {
+        "w": "bo‘lib,",
+        "s": 70.47,
+        "e": 70.65
+      },
+      {
+        "w": "noto‘g‘ri",
+        "s": 70.97,
+        "e": 71.45
+      },
+      {
+        "w": "kiritilgan",
+        "s": 71.49,
+        "e": 71.99
+      },
+      {
+        "w": "ma’lumotlarni",
+        "s": 72.03,
+        "e": 72.67
+      },
+      {
+        "w": "Postgres",
+        "s": 72.77,
+        "e": 73.25
+      },
+      {
+        "w": "kabi",
+        "s": 73.29,
+        "e": 73.47
+      },
+      {
+        "w": "rad",
+        "s": 73.57,
+        "e": 73.75
+      },
+      {
+        "w": "etadi.",
+        "s": 73.79,
+        "e": 74.03
+      }
+    ]
+  },
+  {
+    "id": "L9",
+    "scene": "pitfalls",
+    "text": "Xulosa qilib aytganda, oltita xavfli tuzoqdan saqlaning: ustun barobar NULL yozmang, qatorlarni sanashda count yulduzchadan foydalaning, va MySQL da satrni songa solishtirmang.",
+    "show": "Xulosa qilib aytganda, oltita xavfli tuzoqdan saqlaning: ustun barobar NULL yozmang, qatorlarni sanashda count yulduzchadan foydalaning, va MySQL da satrni songa solishtirmang.",
+    "say": "Xulosa qilib aytganda, oltita xavfli tuzoqdan saqlaning: ustun barobar nul yozmang, qatorlarni sanashda kaunt yulduzchadan foydalaning, va May es-kyu-el da satrni songa solishtirmang.",
+    "a0": 75.01,
+    "a1": 85.94,
+    "words": [
+      {
+        "w": "Xulosa",
+        "s": 75.01,
+        "e": 75.35
+      },
+      {
+        "w": "qilib",
+        "s": 75.39,
+        "e": 75.55
+      },
+      {
+        "w": "aytganda,",
+        "s": 75.57,
+        "e": 75.97
+      },
+      {
+        "w": "oltita",
+        "s": 76.43,
+        "e": 76.75
+      },
+      {
+        "w": "xavfli",
+        "s": 76.81,
+        "e": 77.11
+      },
+      {
+        "w": "tuzoqdan",
+        "s": 77.15,
+        "e": 77.57
+      },
+      {
+        "w": "saqlaning:",
+        "s": 77.61,
+        "e": 78.03
+      },
+      {
+        "w": "ustun",
+        "s": 78.51,
+        "e": 78.79
+      },
+      {
+        "w": "barobar",
+        "s": 78.85,
+        "e": 79.27
+      },
+      {
+        "w": "nul",
+        "s": 79.37,
+        "e": 79.57
+      },
+      {
+        "w": "yozmang,",
+        "s": 79.57,
+        "e": 80.11
+      },
+      {
+        "w": "qatorlarni",
+        "s": 80.49,
+        "e": 81.01
+      },
+      {
+        "w": "sanashda",
+        "s": 81.07,
+        "e": 81.43
+      },
+      {
+        "w": "kaunt",
+        "s": 81.53,
+        "e": 81.85
+      },
+      {
+        "w": "yulduzchadan",
+        "s": 81.91,
+        "e": 82.52
+      },
+      {
+        "w": "foydalaning,",
+        "s": 82.56,
+        "e": 83.1
+      },
+      {
+        "w": "va",
+        "s": 83.38,
+        "e": 83.46
+      },
+      {
+        "w": "May",
+        "s": 83.6,
+        "e": 83.78
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 83.9,
+        "e": 84.26
+      },
+      {
+        "w": "da",
+        "s": 84.3,
+        "e": 84.38
+      },
+      {
+        "w": "satrni",
+        "s": 84.54,
+        "e": 84.94
+      },
+      {
+        "w": "songa",
+        "s": 85.02,
+        "e": 85.32
+      },
+      {
+        "w": "solishtirmang.",
+        "s": 85.38,
+        "e": 85.94
+      }
+    ]
+  },
+  {
+    "id": "L10",
+    "scene": "xulosa",
+    "text": "NULL qiymatlarini to‘g‘ri boshqarish ma’lumotlar bazangizning ishonchli va xatosiz ishlashining garovidir.",
+    "show": "NULL qiymatlarini to‘g‘ri boshqarish ma’lumotlar bazangizning ishonchli va xatosiz ishlashining garovidir.",
+    "say": "Nul qiymatlarini to‘g‘ri boshqarish ma’lumotlar bazangizning ishonchli va xatosiz ishlashining garovidir.",
+    "a0": 86.52,
+    "a1": 92.34,
+    "words": [
+      {
+        "w": "Nul",
+        "s": 86.52,
+        "e": 86.68
+      },
+      {
+        "w": "qiymatlarini",
+        "s": 86.72,
+        "e": 87.32
+      },
+      {
+        "w": "to‘g‘ri",
+        "s": 87.38,
+        "e": 87.68
+      },
+      {
+        "w": "boshqarish",
+        "s": 87.7,
+        "e": 88.14
+      },
+      {
+        "w": "ma’lumotlar",
+        "s": 88.42,
+        "e": 88.96
+      },
+      {
+        "w": "bazangizning",
+        "s": 89.02,
+        "e": 89.62
+      },
+      {
+        "w": "ishonchli",
+        "s": 89.74,
+        "e": 90.18
+      },
+      {
+        "w": "va",
+        "s": 90.26,
+        "e": 90.32
+      },
+      {
+        "w": "xatosiz",
+        "s": 90.42,
+        "e": 90.97
+      },
+      {
+        "w": "ishlashining",
+        "s": 91.01,
+        "e": 91.53
+      },
+      {
+        "w": "garovidir.",
+        "s": 91.83,
+        "e": 92.34
+      }
+    ]
+  }
+]

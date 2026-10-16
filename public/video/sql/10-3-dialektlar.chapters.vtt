@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:12.715
+Uch tizim: PostgreSQL, MySQL va SQLite taqqoslashi
+
+00:12.715 --> 00:35.776
+MySQL: NULL-xavfsiz tenglik va CONCAT
+
+00:35.776 --> 01:03.512
+MySQL: Satr va nol tuzog‘i
+
+01:03.512 --> 01:25.002
+SQLite: Dynamic affinity va STRICT jadvallar
+
+01:25.002 --> 01:39.392
+Oltita xavfli amaliy tuzoq
+
+01:39.392 --> 01:50.540
+Xulosa va tavsiyalar

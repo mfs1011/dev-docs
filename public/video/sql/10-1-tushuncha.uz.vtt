@@ -1,0 +1,61 @@
+WEBVTT
+
+1
+00:01.420 --> 00:09.680
+Salom! O‘ninchi bobda relyatsion bazalarning eng nozik mavzulari
+— NULL qiymati va ma’lumot turlari konversiyasi bilan tanishamiz.
+
+2
+00:12.830 --> 00:19.680
+NULL — nol ham emas, bo‘sh satr ham emas. U qiymatning
+yo‘qligini yoki hozircha noma’lum ekanini bildiradi.
+
+3
+00:19.950 --> 00:28.050
+Masalan, telefon ustuniga NULL yozilsa — raqam noma’lum. Bo‘sh satr
+yozilsa — uning telefoni yo‘qligi aniq ma’lum degan ma’noni anglatadi.
+
+4
+00:31.620 --> 00:37.230
+SQL da mantiqiy ifodalar uchta qiymat qaytaradi:
+rost, yolg‘on va noma’lum, ya’ni NULL.
+
+5
+00:37.580 --> 00:47.120
+Mantiqiy amallarda FALSE bilan noma’lum har doim FALSE beradi, chunki yolg‘on har
+qanday noma’lumni yengadi. Ammo TRUE bilan noma’lum esa yana noma’lum bo‘lib qoladi.
+
+6
+00:50.470 --> 00:59.360
+Eng muhim qoida: oddiy tenglik operatori bilan NULL ni solishtirib bo‘lmaydi.
+Yetti barobar NULL ham, NULL barobar NULL ham natijada noma’lum beradi.
+
+7
+00:59.830 --> 01:08.010
+Shuning uchun WHERE ustun barobar NULL deb yozsangiz, baza birorta ham
+qator qaytarmaydi! Chunki WHERE faqat rost shartlarni qabul qiladi.
+
+8
+01:08.860 --> 01:15.650
+NULL ni to‘g‘ri tekshirish uchun IS NULL, IS NOT NULL hamda
+IS DISTINCT FROM kabi maxsus predikatlar ishlatiladi.
+
+9
+01:18.800 --> 01:28.000
+Tip konversiyasiga kelsak, SQL qat’iy tiplangan til hisoblanadi. Qiymatni boshqa
+tipga o‘tkazish uchun CAST ifodasi yoki ikkita ikki nuqta belgisi yoziladi.
+
+10
+01:28.590 --> 01:36.930
+Noma’lum literal o‘z tipini kontekstdan oladi. Masalan, bir qo‘shuv
+satrdagi bir ifodasi ishlaydi, chunki satr butun son sifatida tushuniladi.
+
+11
+01:37.200 --> 01:44.030
+Ammo jadval ustunidagi matn son bilan solishtirilsa, PostgreSQL
+yashirin o‘girishga yo‘l qo‘ymaydi va qat’iy xato beradi.
+
+12
+01:47.150 --> 01:56.210
+Xulosa: NULL bilan ishlashda doimo uch qiymatli mantiqni yodda tuting va
+tiplarni aniq boshqaring. Keyingi qismda ushbu qoidalarni amalda sinaymiz.

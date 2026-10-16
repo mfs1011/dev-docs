@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:08.841
+Kirish: PostgreSQL da amaliy sinovlar
+
+00:08.841 --> 00:25.681
+NULL bilan taqqoslash va 3VL
+
+00:25.681 --> 00:50.868
+Jadvalda NULL va IS DISTINCT FROM
+
+00:50.868 --> 01:11.216
+Ifodalarda NULL va agregatsiya
+
+01:11.216 --> 01:35.722
+Aniq va yashirin tip konversiyasi
+
+01:35.722 --> 01:47.320
+Xulosa

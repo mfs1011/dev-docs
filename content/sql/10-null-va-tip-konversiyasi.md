@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/sql/10-1-tushuncha.jpg" src="/video/sql/10-1-tushuncha.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/sql/10-1-tushuncha.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/sql/10-1-tushuncha.uz.vtt">
+</video>
+<figcaption>Video: NULL va tip konversiyasi — Noma'lumlik tushunchasi, uch qiymatli mantiq (TRUE, FALSE, NULL), taqqoslash qoidalari va qat'iy tiplash.</figcaption>
+</figure>
+
 ### NULL — "noma'lum"
 
 PostgreSQL glossariysida `NULL` — relyatsion nazariyaning asosiy tushunchalaridan biri: **aniq qiymatning yo'qligi**. MySQL hujjati uni "yo'q, noma'lum qiymat" deb ataydi.
@@ -81,6 +89,14 @@ Funksiyaga o'xshash yozuv ham bor: `int4('7')`. Lekin u `double precision` kabi 
 **Jadvalga yozish.** Yozilayotgan qiymat ustun tipiga aylantiriladi. Ikki tip orasida "tayinlash" (*assignment*) konversiyasi bo'lsa, u qo'llanadi. Literal bo'lsa, ustun tipining kiritish funksiyasi chaqiriladi.
 
 ## Kod
+
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/sql/10-2-kod.jpg" src="/video/sql/10-2-kod.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/sql/10-2-kod.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/sql/10-2-kod.uz.vtt">
+</video>
+<figcaption>Video: PostgreSQL 18 psql da jonli sinovlar — 7 = NULL bo'sh natijasi, WHERE filtrlash va IS DISTINCT FROM, count(*) vs count(ustun), hamda qat'iy tip xatolari.</figcaption>
+</figure>
 
 Misollar PostgreSQL 18.6, MySQL 9.7.2 va SQLite 3.54.0 da ishga tushirilgan.
 
@@ -245,6 +261,14 @@ ERROR:  invalid input syntax for type integer: "abc"
 ```
 
 ## Dialektlar
+
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/sql/10-3-dialektlar.jpg" src="/video/sql/10-3-dialektlar.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/sql/10-3-dialektlar.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/sql/10-3-dialektlar.uz.vtt">
+</video>
+<figcaption>Video: Dialektlar taqqoslash doskasi (PostgreSQL vs MySQL vs SQLite) — MySQL <=> operatori, WHERE satr = 0 falokati va indeks buzilishi, SQLite STRICT jadvallari va 6 ta amaliy tuzoq.</figcaption>
+</figure>
 
 ### MySQL
 

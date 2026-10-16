@@ -1,0 +1,51 @@
+WEBVTT
+
+1
+00:01.420 --> 00:11.080
+Ushbu qismda NULL va tip konversiyasining PostgreSQL, MySQL hamda
+SQLite tizimlaridagi tub farqlari va amaliy tuzoqlarini ko‘ramiz.
+
+2
+00:14.110 --> 00:25.400
+MySQL da IS NOT DISTINCT FROM o‘rniga maxsus tenglik qushchasi, ya’ni <=>
+operatori ishlatiladi. NULL bilan NULL solishtirilganda u bir, ya’ni rost beradi.
+
+3
+00:25.750 --> 00:34.050
+Ammo MySQL da konkat funksiyasiga NULL kelsa, butun natija NULL
+ga aylanadi. PostgreSQL da esa NULL e’tiborsiz qoldirilar edi.
+
+4
+00:37.180 --> 00:44.280
+Eng dahshatli tuzoq: MySQL da matnli ustun son bilan
+solishtirilsa, barcha matnlar kasr son sifatida o‘qiladi.
+
+5
+00:44.130 --> 00:53.380
+Masalan, WHERE satr barobar nol deb yozilsa, uzum ham, olma ham nolga
+aylanib, barcha qatorlar chiqib ketadi va indeks umuman ishlamaydi!
+
+6
+00:54.130 --> 01:01.790
+MySQL da kast amali ham cheklangan: integer o‘rniga SIGNED
+yoziladi, uch butun o‘ndan yetti esa to‘rtga yaxlitlanadi.
+
+7
+01:04.940 --> 01:14.870
+SQLite da esa tiplar afiniti orqali boshqariladi. Matndan songa kast qilinganda
+qirq ikki satridan boshidagi son olinib, matn qismi kesib tashlanadi.
+
+8
+01:15.320 --> 01:23.280
+Yaxshiyamki, SQLite ning yangi versiyalarida STRICT jadvallar mavjud
+bo‘lib, noto‘g‘ri kiritilgan ma’lumotlarni Postgres kabi rad etadi.
+
+9
+01:26.410 --> 01:37.790
+Xulosa qilib aytganda, oltita xavfli tuzoqdan saqlaning: ustun barobar NULL yozmang,
+qatorlarni sanashda count yulduzchadan foydalaning, va MySQL da satrni songa solishtirmang.
+
+10
+01:40.520 --> 01:46.790
+NULL qiymatlarini to‘g‘ri boshqarish ma’lumotlar
+bazangizning ishonchli va xatosiz ishlashining garovidir.
