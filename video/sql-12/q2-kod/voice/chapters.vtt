@@ -1,0 +1,22 @@
+WEBVTT
+
+00:00.000 --> 00:10.848
+PostgreSQL 18: CREATE TABLE va DEFAULT amaliyoti
+
+00:10.848 --> 00:30.203
+Jadval yaratish, DEFAULT va dublikat qatorlar
+
+00:30.203 --> 00:48.952
+Yashirin tizim ustunlari: ctid va MVCC xmin
+
+00:48.952 --> 00:57.944
+Tizim ustuni nomi bilan to‘qnashuv xatosi
+
+00:57.944 --> 01:08.680
+LIKE INCLUDING DEFAULTS va nusxalash
+
+01:08.680 --> 01:21.055
+TEMPORARY va UNLOGGED jadvallari
+
+01:21.055 --> 01:32.680
+Xulosa va tavsiyalar

@@ -1,0 +1,46 @@
+WEBVTT
+
+1
+00:01.420 --> 00:08.490
+O‘n ikkinchi bobda relyatsion jadvallarni yaratish, sukut bo‘yicha
+qiymatlar va PostgreSQL ning yashirin tizim ustunlarini o‘rganamiz.
+
+2
+00:11.570 --> 00:21.060
+Relyatsion modelda jadval qat'iy ustunlar to‘plamidan iborat bo‘lib, qatorlar tartibi
+kafolatlanmaydi va birlamchi kalitsiz bir xil dublikat qatorlar paydo bo‘lishi mumkin.
+
+3
+00:24.190 --> 00:32.990
+CREATE TABLE buyrug‘ida jadval nomi, har bir ustun va uning ma'lumot
+tipi ko‘rsatiladi. Izchil nomlash va ko‘plik shakli tavsiya etiladi.
+
+4
+00:35.860 --> 00:44.030
+Agar qator qo‘shishda ustun qiymati berilmasa, DEFAULT qiymati ishlatiladi.
+DEFAULT ko‘rsatilmagan ustunlarga sukut bo‘yicha NULL yoziladi.
+
+5
+00:44.480 --> 00:53.320
+Muhim qoida: DEFAULT now() kabi dinamik ifodalar jadval yaratilganda
+emas, aynan har bir yangi qator yozilayotgan paytda hisoblanadi.
+
+6
+00:56.350 --> 01:05.930
+PostgreSQL da har bir jadvalda yashirin tizim ustunlari mavjud: ctid qatorning
+jismoniy koordinatasi bo‘lsa, xmin uning tranzaksiya versiyasini bildiradi.
+
+7
+01:09.020 --> 01:16.490
+Shuningdek, seans tugashi bilan o‘chib ketuvchi TEMPORARY, va
+jurnallashsiz tez ishlaydigan UNLOGGED kabi maxsus jadvallar mavjud.
+
+8
+01:17.000 --> 01:25.340
+Boshqa jadvaldan nusxa olishda LIKE faqat sxemani ko‘chirsa, CREATE TABLE
+AS SELECT buyrug‘i ma'lumotlar bilan bir martalik jadval hosil qiladi.
+
+9
+01:28.450 --> 01:34.790
+Jadval strukturasini to‘g‘ri loyihalash va DEFAULT qiymatlarini
+oqilona tanlash ma'lumotlar yaxlitligining garovidir.

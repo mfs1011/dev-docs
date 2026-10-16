@@ -1,0 +1,22 @@
+WEBVTT
+
+00:00.000 --> 00:10.311
+CREATE TABLE va DEFAULT: Jadvallar arxitekturasi
+
+00:10.311 --> 00:22.994
+Relyatsion model: Ustunlar, tartibsizlik va multito‘plam
+
+00:22.994 --> 00:34.679
+CREATE TABLE sintaksisi va nomlash odatlari
+
+00:34.679 --> 00:55.214
+DEFAULT qiymatlari va dinamik ifodalar
+
+00:55.214 --> 01:07.814
+PostgreSQL yashirin tizim ustunlari: ctid va xmin
+
+01:07.814 --> 01:27.225
+Maxsus jadvallar: TEMPORARY, UNLOGGED va LIKE
+
+01:27.225 --> 01:38.520
+Xulosa va tavsiyalar

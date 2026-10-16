@@ -1,0 +1,46 @@
+WEBVTT
+
+1
+00:01.420 --> 00:11.020
+O‘n ikkinchi bobning uchinchi qismida MySQL va SQLite dagi CREATE
+TABLE hamda DEFAULT farqlari va amaliy tuzoqlarini tahlil qilamiz.
+
+2
+00:13.830 --> 00:24.120
+MySQL da juda qat'iy sintaksis mavjud: DEFAULT ga hisoblanuvchi ifoda yozilganda,
+uni albatta qavs ichiga olish shart, aks holda sintaksis xatosi beradi.
+
+3
+00:24.590 --> 00:34.370
+Shuningdek, TEXT, BLOB va JSON ustunlariga hatto oddiy matnli sukut
+qiymati berilganda ham u doimo ifoda sifatida qavs ichida yozilishi shart.
+
+4
+00:37.580 --> 00:46.480
+Yana bir qulaylik: MySQL da ustunlarni INVISIBLE qilib yashirish mumkin,
+bu esa yulduzcha so‘rovlarida eski ilovalarni buzilmasdan saqlaydi.
+
+5
+00:47.050 --> 00:54.960
+Muhim farq: MySQL ning LIKE buyrug‘i PostgreSQL dan farqli
+o‘laroq indekslarni qo‘shimcha kalitlarsiz avtomatik nusxalaydi.
+
+6
+00:57.910 --> 01:07.490
+SQLite da esa har bir jadvalda yashirin rowid ustuni mavjud bo‘lib,
+DEFAULT ifodalarida randomblob va joriy UTC vaqtidan foydalanish mumkin.
+
+7
+01:10.760 --> 01:21.940
+Diqqat qiling: jadvallar orasida migratsiya qilishda MySQL dagi qavslar, SQLite ning rowid
+xususiyati va birlamchi kalitsiz qatorlar dublikati eng ko‘p uchraydigan xatolardir.
+
+8
+01:23.630 --> 01:34.170
+Xulosa qilib aytganda: jadval yaratishda doimo birlamchi kalit qo‘ying, DEFAULT
+ifodalarini qavsga oling, va kesh jadvallarida UNLOGGED imkoniyatidan unumli foydalaning.
+
+9
+01:37.020 --> 01:43.110
+Har uchala tizimning o‘ziga xos xususiyatlarini bilish
+ishonchli va ko‘chma arxitektura qurish poydevoridir.
