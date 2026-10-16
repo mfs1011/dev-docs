@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:14.436
+SELECT buyrug‘i va yozilish tartibi
+
+00:14.436 --> 00:27.766
+Bandlarning mantiqiy bajarilish tartibi
+
+00:27.766 --> 00:39.059
+Aliaslarning paydo bo‘lish vaqti va WHERE dagi xato
+
+00:39.059 --> 00:50.009
+DISTINCT va ORDER BY bosqichlari
+
+00:50.009 --> 01:02.099
+Tushib qolgan vergul tuzog‘i
+
+01:02.099 --> 01:15.280
+PostgreSQL DISTINCT ON kengaytmasi

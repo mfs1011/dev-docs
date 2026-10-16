@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:12.643
+MySQL va SQLite da SELECT farqlari
+
+00:12.643 --> 00:25.121
+MySQL da HAVING va aliaslar
+
+00:25.121 --> 00:37.398
+MySQL FROM DUAL va soxta jadvallar
+
+00:37.398 --> 00:50.330
+SQLite da kutilmagan qulaylik: WHERE da alias
+
+00:50.330 --> 01:01.818
+SQLite hisob-kitoblari va portabellik xavfi
+
+01:01.818 --> 01:16.380
+Uch tizim qiyosiy xulosasi

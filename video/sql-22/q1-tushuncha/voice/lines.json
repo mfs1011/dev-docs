@@ -1,0 +1,713 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "SELECT so‘rovi ma’lumotlar bazasining eng asosiy buyrug‘i bo‘lib, u vit, from, ver, grup bay, having, order bay va limit kabi bir nechta bandlardan tashkil topadi.",
+    "show": "SELECT so‘rovi ma’lumotlar bazasining eng asosiy buyrug‘i bo‘lib, u vit, from, ver, grup bay, having, order bay va limit kabi bir nechta bandlardan tashkil topadi.",
+    "say": "Selekt so‘rovi ma’lumotlar bazasining eng asosiy buyrug‘i bo‘lib, u vit, from, ver, grup bay, having, order bay va limit kabi bir nechta bandlardan tashkil topadi.",
+    "a0": 0.2,
+    "a1": 11.13,
+    "words": [
+      {
+        "w": "Selekt",
+        "s": 0.2,
+        "e": 0.56
+      },
+      {
+        "w": "so‘rovi",
+        "s": 0.6,
+        "e": 0.96
+      },
+      {
+        "w": "ma’lumotlar",
+        "s": 1.2,
+        "e": 1.74
+      },
+      {
+        "w": "bazasining",
+        "s": 1.78,
+        "e": 2.3
+      },
+      {
+        "w": "eng",
+        "s": 2.46,
+        "e": 2.6
+      },
+      {
+        "w": "asosiy",
+        "s": 2.7,
+        "e": 3.1
+      },
+      {
+        "w": "buyrug‘i",
+        "s": 3.18,
+        "e": 3.52
+      },
+      {
+        "w": "bo‘lib,",
+        "s": 3.56,
+        "e": 3.8
+      },
+      {
+        "w": "u",
+        "s": 3.92,
+        "e": 3.94
+      },
+      {
+        "w": "vit,",
+        "s": 4.4,
+        "e": 4.64
+      },
+      {
+        "w": "from,",
+        "s": 4.92,
+        "e": 5.28
+      },
+      {
+        "w": "ver,",
+        "s": 5.68,
+        "e": 5.96
+      },
+      {
+        "w": "grup",
+        "s": 6.32,
+        "e": 6.52
+      },
+      {
+        "w": "bay,",
+        "s": 6.58,
+        "e": 6.82
+      },
+      {
+        "w": "having,",
+        "s": 7.2,
+        "e": 7.67
+      },
+      {
+        "w": "order",
+        "s": 7.97,
+        "e": 8.23
+      },
+      {
+        "w": "bay",
+        "s": 8.27,
+        "e": 8.47
+      },
+      {
+        "w": "va",
+        "s": 8.65,
+        "e": 8.73
+      },
+      {
+        "w": "limit",
+        "s": 9.03,
+        "e": 9.31
+      },
+      {
+        "w": "kabi",
+        "s": 9.37,
+        "e": 9.57
+      },
+      {
+        "w": "bir",
+        "s": 9.65,
+        "e": 9.75
+      },
+      {
+        "w": "nechta",
+        "s": 9.79,
+        "e": 10.03
+      },
+      {
+        "w": "bandlardan",
+        "s": 10.07,
+        "e": 10.53
+      },
+      {
+        "w": "tashkil",
+        "s": 10.57,
+        "e": 10.85
+      },
+      {
+        "w": "topadi.",
+        "s": 10.87,
+        "e": 11.13
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "execution_order",
+    "text": "Lekin bandlarning yozilish tartibi ularning bajarilish tartibiga mos kelmaydi: avval FROM va WHERE, so‘ngra guruhlash va faqat shundan keyin SELECT ro‘yxati hisoblanadi.",
+    "show": "Lekin bandlarning yozilish tartibi ularning bajarilish tartibiga mos kelmaydi: avval FROM va WHERE, so‘ngra guruhlash va faqat shundan keyin SELECT ro‘yxati hisoblanadi.",
+    "say": "Lekin bandlarning yozilish tartibi ularning bajarilish tartibiga mos kelmaydi: avval from va ver, so‘ngra guruhlash va faqat shundan keyin selekt ro‘yxati hisoblanadi.",
+    "a0": 11.93,
+    "a1": 21.85,
+    "words": [
+      {
+        "w": "Lekin",
+        "s": 11.93,
+        "e": 12.19
+      },
+      {
+        "w": "bandlarning",
+        "s": 12.33,
+        "e": 12.83
+      },
+      {
+        "w": "yozilish",
+        "s": 12.87,
+        "e": 13.23
+      },
+      {
+        "w": "tartibi",
+        "s": 13.25,
+        "e": 13.61
+      },
+      {
+        "w": "ularning",
+        "s": 13.69,
+        "e": 14.01
+      },
+      {
+        "w": "bajarilish",
+        "s": 14.27,
+        "e": 14.73
+      },
+      {
+        "w": "tartibiga",
+        "s": 14.75,
+        "e": 15.21
+      },
+      {
+        "w": "mos",
+        "s": 15.27,
+        "e": 15.43
+      },
+      {
+        "w": "kelmaydi:",
+        "s": 15.47,
+        "e": 15.91
+      },
+      {
+        "w": "avval",
+        "s": 16.49,
+        "e": 16.75
+      },
+      {
+        "w": "from",
+        "s": 17.01,
+        "e": 17.31
+      },
+      {
+        "w": "va",
+        "s": 17.49,
+        "e": 17.57
+      },
+      {
+        "w": "ver,",
+        "s": 17.69,
+        "e": 17.93
+      },
+      {
+        "w": "so‘ngra",
+        "s": 18.21,
+        "e": 18.51
+      },
+      {
+        "w": "guruhlash",
+        "s": 18.65,
+        "e": 19.09
+      },
+      {
+        "w": "va",
+        "s": 19.35,
+        "e": 19.41
+      },
+      {
+        "w": "faqat",
+        "s": 19.49,
+        "e": 19.77
+      },
+      {
+        "w": "shundan",
+        "s": 19.95,
+        "e": 20.31
+      },
+      {
+        "w": "keyin",
+        "s": 20.37,
+        "e": 20.63
+      },
+      {
+        "w": "selekt",
+        "s": 20.69,
+        "e": 20.99
+      },
+      {
+        "w": "ro‘yxati",
+        "s": 21.05,
+        "e": 21.35
+      },
+      {
+        "w": "hisoblanadi.",
+        "s": 21.37,
+        "e": 21.85
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "alias_timing",
+    "text": "Natija ustuniga berilgan nom, ya’ni alias oltinchi bosqichda yaratiladi; shuning uchun u uchinchi bosqichdagi WHERE shartida hali mavjud bo‘lmaydi.",
+    "show": "Natija ustuniga berilgan nom, ya’ni alias oltinchi bosqichda yaratiladi; shuning uchun u uchinchi bosqichdagi WHERE shartida hali mavjud bo‘lmaydi.",
+    "say": "Natija ustuniga berilgan nom, ya’ni alias oltinchi bosqichda yaratiladi; shuning uchun u uchinchi bosqichdagi ver shartida hali mavjud bo‘lmaydi.",
+    "a0": 22.88,
+    "a1": 30.52,
+    "words": [
+      {
+        "w": "Natija",
+        "s": 22.88,
+        "e": 23.2
+      },
+      {
+        "w": "ustuniga",
+        "s": 23.26,
+        "e": 23.64
+      },
+      {
+        "w": "berilgan",
+        "s": 23.68,
+        "e": 24.08
+      },
+      {
+        "w": "nom,",
+        "s": 24.16,
+        "e": 24.38
+      },
+      {
+        "w": "ya’ni",
+        "s": 24.58,
+        "e": 24.78
+      },
+      {
+        "w": "alias",
+        "s": 24.98,
+        "e": 25.32
+      },
+      {
+        "w": "oltinchi",
+        "s": 25.46,
+        "e": 25.82
+      },
+      {
+        "w": "bosqichda",
+        "s": 25.86,
+        "e": 26.28
+      },
+      {
+        "w": "yaratiladi;",
+        "s": 26.28,
+        "e": 27.02
+      },
+      {
+        "w": "shuning",
+        "s": 27.02,
+        "e": 27.22
+      },
+      {
+        "w": "uchun",
+        "s": 27.24,
+        "e": 27.38
+      },
+      {
+        "w": "u",
+        "s": 27.5,
+        "e": 27.52
+      },
+      {
+        "w": "uchinchi",
+        "s": 27.66,
+        "e": 27.98
+      },
+      {
+        "w": "bosqichdagi",
+        "s": 28.02,
+        "e": 28.54
+      },
+      {
+        "w": "ver",
+        "s": 28.86,
+        "e": 29.06
+      },
+      {
+        "w": "shartida",
+        "s": 29.1,
+        "e": 29.46
+      },
+      {
+        "w": "hali",
+        "s": 29.52,
+        "e": 29.72
+      },
+      {
+        "w": "mavjud",
+        "s": 29.76,
+        "e": 30.0
+      },
+      {
+        "w": "bo‘lmaydi.",
+        "s": 30.12,
+        "e": 30.52
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "distinct_and_order",
+    "text": "Saralash va qatorlar sonini cheklash eng oxirgi bosqichlarda bajariladi; shuning uchun ORDER BY bandi ustun aliaslarini bemalol taniydi.",
+    "show": "Saralash va qatorlar sonini cheklash eng oxirgi bosqichlarda bajariladi; shuning uchun ORDER BY bandi ustun aliaslarini bemalol taniydi.",
+    "say": "Saralash va qatorlar sonini cheklash eng oxirgi bosqichlarda bajariladi; shuning uchun order bay bandi ustun aliaslarini bemalol taniydi.",
+    "a0": 31.38,
+    "a1": 38.85,
+    "words": [
+      {
+        "w": "Saralash",
+        "s": 31.38,
+        "e": 31.82
+      },
+      {
+        "w": "va",
+        "s": 31.88,
+        "e": 31.94
+      },
+      {
+        "w": "qatorlar",
+        "s": 32.04,
+        "e": 32.48
+      },
+      {
+        "w": "sonini",
+        "s": 32.52,
+        "e": 32.84
+      },
+      {
+        "w": "cheklash",
+        "s": 32.88,
+        "e": 33.26
+      },
+      {
+        "w": "eng",
+        "s": 33.58,
+        "e": 33.72
+      },
+      {
+        "w": "oxirgi",
+        "s": 33.84,
+        "e": 34.16
+      },
+      {
+        "w": "bosqichlarda",
+        "s": 34.2,
+        "e": 34.74
+      },
+      {
+        "w": "bajariladi;",
+        "s": 34.74,
+        "e": 35.52
+      },
+      {
+        "w": "shuning",
+        "s": 35.52,
+        "e": 35.72
+      },
+      {
+        "w": "uchun",
+        "s": 35.74,
+        "e": 35.9
+      },
+      {
+        "w": "order",
+        "s": 36.14,
+        "e": 36.38
+      },
+      {
+        "w": "bay",
+        "s": 36.42,
+        "e": 36.54
+      },
+      {
+        "w": "bandi",
+        "s": 36.6,
+        "e": 36.87
+      },
+      {
+        "w": "ustun",
+        "s": 36.99,
+        "e": 37.27
+      },
+      {
+        "w": "aliaslarini",
+        "s": 37.39,
+        "e": 37.93
+      },
+      {
+        "w": "bemalol",
+        "s": 38.01,
+        "e": 38.43
+      },
+      {
+        "w": "taniydi.",
+        "s": 38.47,
+        "e": 38.85
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "comma_trap",
+    "text": "Ustunlar orasida vergul unutilganda xato chiqmaydi, ikkinchi ustun birinchisining aliasiga aylanib qoladi; shuning uchun har doim AS so‘zini yozish tavsiya etiladi.",
+    "show": "Ustunlar orasida vergul unutilganda xato chiqmaydi, ikkinchi ustun birinchisining aliasiga aylanib qoladi; shuning uchun har doim AS so‘zini yozish tavsiya etiladi.",
+    "say": "Ustunlar orasida vergul unutilganda xato chiqmaydi, ikkinchi ustun birinchisining aliasiga aylanib qoladi; shuning uchun har doim ez so‘zini yozish tavsiya etiladi.",
+    "a0": 39.71,
+    "a1": 48.37,
+    "words": [
+      {
+        "w": "Ustunlar",
+        "s": 39.71,
+        "e": 40.13
+      },
+      {
+        "w": "orasida",
+        "s": 40.21,
+        "e": 40.63
+      },
+      {
+        "w": "vergul",
+        "s": 40.77,
+        "e": 41.15
+      },
+      {
+        "w": "unutilganda",
+        "s": 41.23,
+        "e": 41.75
+      },
+      {
+        "w": "xato",
+        "s": 41.79,
+        "e": 41.99
+      },
+      {
+        "w": "chiqmaydi,",
+        "s": 42.05,
+        "e": 42.43
+      },
+      {
+        "w": "ikkinchi",
+        "s": 42.95,
+        "e": 43.25
+      },
+      {
+        "w": "ustun",
+        "s": 43.29,
+        "e": 43.53
+      },
+      {
+        "w": "birinchisining",
+        "s": 43.63,
+        "e": 44.11
+      },
+      {
+        "w": "aliasiga",
+        "s": 44.23,
+        "e": 44.63
+      },
+      {
+        "w": "aylanib",
+        "s": 44.67,
+        "e": 44.93
+      },
+      {
+        "w": "qoladi;",
+        "s": 44.93,
+        "e": 45.47
+      },
+      {
+        "w": "shuning",
+        "s": 45.47,
+        "e": 45.69
+      },
+      {
+        "w": "uchun",
+        "s": 45.69,
+        "e": 45.85
+      },
+      {
+        "w": "har",
+        "s": 46.01,
+        "e": 46.21
+      },
+      {
+        "w": "doim",
+        "s": 46.27,
+        "e": 46.53
+      },
+      {
+        "w": "ez",
+        "s": 46.73,
+        "e": 46.87
+      },
+      {
+        "w": "so‘zini",
+        "s": 46.95,
+        "e": 47.25
+      },
+      {
+        "w": "yozish",
+        "s": 47.29,
+        "e": 47.57
+      },
+      {
+        "w": "tavsiya",
+        "s": 47.65,
+        "e": 48.01
+      },
+      {
+        "w": "etiladi.",
+        "s": 48.07,
+        "e": 48.37
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "distinct_on",
+    "text": "PostgreSQL da har bir guruhdan faqat birinchi qatorni tanlab olish uchun DISTINCT ON ishlatiladi va u albatta aniq ORDER BY bilan birga qo‘llanishi shart.",
+    "show": "PostgreSQL da har bir guruhdan faqat birinchi qatorni tanlab olish uchun DISTINCT ON ishlatiladi va u albatta aniq ORDER BY bilan birga qo‘llanishi shart.",
+    "say": "Postgres da har bir guruhdan faqat birinchi qatorni tanlab olish uchun distinkt on ishlatiladi va u albatta aniq order bay bilan birga qo‘llanishi shart.",
+    "a0": 49.17,
+    "a1": 57.12,
+    "words": [
+      {
+        "w": "Postgres",
+        "s": 49.17,
+        "e": 49.61
+      },
+      {
+        "w": "da",
+        "s": 49.65,
+        "e": 49.73
+      },
+      {
+        "w": "har",
+        "s": 49.91,
+        "e": 50.05
+      },
+      {
+        "w": "bir",
+        "s": 50.11,
+        "e": 50.21
+      },
+      {
+        "w": "guruhdan",
+        "s": 50.27,
+        "e": 50.64
+      },
+      {
+        "w": "faqat",
+        "s": 50.68,
+        "e": 50.92
+      },
+      {
+        "w": "birinchi",
+        "s": 50.98,
+        "e": 51.28
+      },
+      {
+        "w": "qatorni",
+        "s": 51.32,
+        "e": 51.68
+      },
+      {
+        "w": "tanlab",
+        "s": 51.72,
+        "e": 52.0
+      },
+      {
+        "w": "olish",
+        "s": 52.06,
+        "e": 52.22
+      },
+      {
+        "w": "uchun",
+        "s": 52.24,
+        "e": 52.4
+      },
+      {
+        "w": "distinkt",
+        "s": 52.74,
+        "e": 53.16
+      },
+      {
+        "w": "on",
+        "s": 53.3,
+        "e": 53.4
+      },
+      {
+        "w": "ishlatiladi",
+        "s": 53.5,
+        "e": 53.96
+      },
+      {
+        "w": "va",
+        "s": 54.02,
+        "e": 54.08
+      },
+      {
+        "w": "u",
+        "s": 54.24,
+        "e": 54.26
+      },
+      {
+        "w": "albatta",
+        "s": 54.44,
+        "e": 54.9
+      },
+      {
+        "w": "aniq",
+        "s": 55.02,
+        "e": 55.22
+      },
+      {
+        "w": "order",
+        "s": 55.38,
+        "e": 55.62
+      },
+      {
+        "w": "bay",
+        "s": 55.7,
+        "e": 55.84
+      },
+      {
+        "w": "bilan",
+        "s": 55.88,
+        "e": 56.06
+      },
+      {
+        "w": "birga",
+        "s": 56.14,
+        "e": 56.36
+      },
+      {
+        "w": "qo‘llanishi",
+        "s": 56.42,
+        "e": 56.84
+      },
+      {
+        "w": "shart.",
+        "s": 56.88,
+        "e": 57.12
+      }
+    ]
+  }
+]

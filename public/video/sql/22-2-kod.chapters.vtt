@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:11.105
+Sotuvlar jadvali va boshlang‘ich ma’lumotlar
+
+00:11.105 --> 00:22.886
+WHERE da alias ishlatilgandagi xato
+
+00:22.886 --> 00:33.901
+WHERE da ifodani yozish va ORDER BY da alias
+
+00:33.901 --> 00:45.885
+DISTINCT ON yordamida eng yirik savdoni topish
+
+00:45.885 --> 00:57.862
+Tushib qolgan vergul va jadvalsiz SELECT
+
+00:57.862 --> 01:11.300
+PostgreSQL 18 amaliy xulosalari
