@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/sql/13-1-tushuncha.jpg" src="/video/sql/13-1-tushuncha.mp4">
+  <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/sql/13-1-tushuncha.chapters.vtt" default>
+  <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/sql/13-1-tushuncha.uz.vtt">
+</video>
+<figcaption>Video: Identity va Sequence tushunchasi — Relyatsion jadvallar uchun avtomatik raqamlar, GENERATED ALWAYS vs BY DEFAULT, sequence obyekti va bo'shliqlar sababi.</figcaption>
+</figure>
+
 Ko'p jadvallarda har qatorga avtomatik **tartib raqami** kerak bo'ladi: mijoz №1, mijoz №2, … Bu raqamni ilova o'zi hisoblamaydi, uni baza beradi. SQL'da buning uchun ikki tushuncha bor:
 
 - **Sequence** (ketma-ketlik) — raqamlar beradigan alohida obyekt. Har murojaatda keyingi sonni qaytaradi.
@@ -76,6 +84,14 @@ Hujjat bu haqida ochiq ogohlantiradi. `nextval` olgan qiymat tranzaksiya bekor q
 Hujjatning xulosasi: sequence'lardan "**bo'shliqsiz**" raqamlash uchun foydalanib **bo'lmaydi**. Masalan, buxgalteriyadagi ketma-ket hujjat raqamlari uchun. Buni hisoblagich jadvalini eksklyuziv qulflab qilish mumkin, lekin bu "ancha qimmat" (54-bob).
 
 ## Kod
+
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/sql/13-2-kod.jpg" src="/video/sql/13-2-kod.mp4">
+  <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/sql/13-2-kod.chapters.vtt" default>
+  <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/sql/13-2-kod.uz.vtt">
+</video>
+<figcaption>Video: PostgreSQL 18 psql da jonli sinovlar — GENERATED ALWAYS xatosi, OVERRIDING SYSTEM VALUE, pg_get_serial_sequence, nextval/currval va ROLLBACK bo'shliq isboti.</figcaption>
+</figure>
 
 Misollar PostgreSQL 18.6, MySQL 9.7.2 va SQLite 3.54.0 da ishga tushirilgan.
 
@@ -239,6 +255,14 @@ SELECT setval('chek_raqami', 5000), nextval('chek_raqami');
 ```
 
 ## Dialektlar
+
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/sql/13-3-dialektlar.jpg" src="/video/sql/13-3-dialektlar.mp4">
+  <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/sql/13-3-dialektlar.chapters.vtt" default>
+  <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/sql/13-3-dialektlar.uz.vtt">
+</video>
+<figcaption>Video: Dialektlar (PostgreSQL vs MySQL vs SQLite) — MySQL AUTO_INCREMENT va LAST_INSERT_ID, SQLite rowid vs AUTOINCREMENT, taqqoslash va buxgalteriya tuzog'i.</figcaption>
+</figure>
 
 ### MySQL: `AUTO_INCREMENT`
 

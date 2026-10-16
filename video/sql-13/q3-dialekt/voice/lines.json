@@ -1,0 +1,1016 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Dialektlar qismida MySQL ning AUTO_INCREMENT xususiyati, SQLite ning rowid va AUTOINCREMENT mexanizmini hamda asosiy tuzoqlarni ko‘rib chiqamiz.",
+    "show": "Dialektlar qismida MySQL ning AUTO_INCREMENT xususiyati, SQLite ning rowid va AUTOINCREMENT mexanizmini hamda asosiy tuzoqlarni ko‘rib chiqamiz.",
+    "say": "Dialektlar qismida May es-kyu-el ning Avto-inkrement xususiyati, Es-kyu-layt ning rou-ayd va Avto-inkrement mexanizmini hamda asosiy tuzoqlarni ko‘rib chiqamiz.",
+    "a0": 0.22,
+    "a1": 10.49,
+    "words": [
+      {
+        "w": "Dialektlar",
+        "s": 0.22,
+        "e": 0.8
+      },
+      {
+        "w": "qismida",
+        "s": 0.86,
+        "e": 1.22
+      },
+      {
+        "w": "May",
+        "s": 1.7,
+        "e": 1.88
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 2.0,
+        "e": 2.46
+      },
+      {
+        "w": "ning",
+        "s": 2.52,
+        "e": 2.7
+      },
+      {
+        "w": "Avto-inkrement",
+        "s": 2.98,
+        "e": 3.78
+      },
+      {
+        "w": "xususiyati,",
+        "s": 3.82,
+        "e": 4.36
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 4.96,
+        "e": 5.48
+      },
+      {
+        "w": "ning",
+        "s": 5.54,
+        "e": 5.68
+      },
+      {
+        "w": "rou-ayd",
+        "s": 5.88,
+        "e": 6.4
+      },
+      {
+        "w": "va",
+        "s": 6.48,
+        "e": 6.54
+      },
+      {
+        "w": "Avto-inkrement",
+        "s": 6.72,
+        "e": 7.53
+      },
+      {
+        "w": "mexanizmini",
+        "s": 7.57,
+        "e": 8.17
+      },
+      {
+        "w": "hamda",
+        "s": 8.23,
+        "e": 8.47
+      },
+      {
+        "w": "asosiy",
+        "s": 8.91,
+        "e": 9.31
+      },
+      {
+        "w": "tuzoqlarni",
+        "s": 9.37,
+        "e": 9.91
+      },
+      {
+        "w": "ko‘rib",
+        "s": 9.95,
+        "e": 10.15
+      },
+      {
+        "w": "chiqamiz.",
+        "s": 10.17,
+        "e": 10.49
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "mysql_demo",
+    "text": "MySQL da AUTO_INCREMENT ustuniga nol yoki NULL yozilganda ham avtomatik raqam beriladi, LAST_INSERT_ID funksiyasi esa joriy ulanishdagi birinchi kiritilgan raqamni qaytaradi.",
+    "show": "MySQL da AUTO_INCREMENT ustuniga nol yoki NULL yozilganda ham avtomatik raqam beriladi, LAST_INSERT_ID funksiyasi esa joriy ulanishdagi birinchi kiritilgan raqamni qaytaradi.",
+    "say": "May es-kyu-el da Avto-inkrement ustuniga nol yoki nul yozilganda ham avtomatik raqam beriladi, last-insert-ayd funksiyasi esa joriy ulanishdagi birinchi kiritilgan raqamni qaytaradi.",
+    "a0": 11.47,
+    "a1": 23.38,
+    "words": [
+      {
+        "w": "May",
+        "s": 11.47,
+        "e": 11.63
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 11.75,
+        "e": 12.13
+      },
+      {
+        "w": "da",
+        "s": 12.17,
+        "e": 12.25
+      },
+      {
+        "w": "Avto-inkrement",
+        "s": 12.51,
+        "e": 13.29
+      },
+      {
+        "w": "ustuniga",
+        "s": 13.33,
+        "e": 13.73
+      },
+      {
+        "w": "nol",
+        "s": 14.21,
+        "e": 14.47
+      },
+      {
+        "w": "yoki",
+        "s": 14.47,
+        "e": 14.83
+      },
+      {
+        "w": "nul",
+        "s": 15.23,
+        "e": 15.39
+      },
+      {
+        "w": "yozilganda",
+        "s": 15.39,
+        "e": 15.97
+      },
+      {
+        "w": "ham",
+        "s": 15.99,
+        "e": 16.15
+      },
+      {
+        "w": "avtomatik",
+        "s": 16.47,
+        "e": 16.97
+      },
+      {
+        "w": "raqam",
+        "s": 17.03,
+        "e": 17.27
+      },
+      {
+        "w": "beriladi,",
+        "s": 17.29,
+        "e": 17.67
+      },
+      {
+        "w": "last-insert-ayd",
+        "s": 18.53,
+        "e": 19.49
+      },
+      {
+        "w": "funksiyasi",
+        "s": 19.65,
+        "e": 20.05
+      },
+      {
+        "w": "esa",
+        "s": 20.09,
+        "e": 20.25
+      },
+      {
+        "w": "joriy",
+        "s": 20.65,
+        "e": 20.95
+      },
+      {
+        "w": "ulanishdagi",
+        "s": 21.03,
+        "e": 21.55
+      },
+      {
+        "w": "birinchi",
+        "s": 21.77,
+        "e": 22.11
+      },
+      {
+        "w": "kiritilgan",
+        "s": 22.13,
+        "e": 22.58
+      },
+      {
+        "w": "raqamni",
+        "s": 22.64,
+        "e": 22.96
+      },
+      {
+        "w": "qaytaradi.",
+        "s": 22.98,
+        "e": 23.38
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "mysql_demo",
+    "text": "Agar qo‘lda yuz raqami kiritilsa, MySQL hisoblagichi ushbu songa ergashadi va keyingi qatorga yuz birni beradi. Shuningdek kichik tip tanlansa, masalan TINYINT da bir yuz yigirma yetti chegarasiga yetib to‘xtaydi.",
+    "show": "Agar qo‘lda yuz raqami kiritilsa, MySQL hisoblagichi ushbu songa ergashadi va keyingi qatorga yuz birni beradi. Shuningdek kichik tip tanlansa, masalan TINYINT da bir yuz yigirma yetti chegarasiga yetib to‘xtaydi.",
+    "say": "Agar qo‘lda yuz raqami kiritilsa, May es-kyu-el hisoblagichi ushbu songa ergashadi va keyingi qatorga yuz birni beradi. Shuningdek kichik tip tanlansa, masalan tayni-int da bir yuz yigirma yetti chegarasiga yetib to‘xtaydi.",
+    "a0": 24.48,
+    "a1": 38.15,
+    "words": [
+      {
+        "w": "Agar",
+        "s": 24.48,
+        "e": 24.72
+      },
+      {
+        "w": "qo‘lda",
+        "s": 24.8,
+        "e": 25.1
+      },
+      {
+        "w": "yuz",
+        "s": 25.48,
+        "e": 25.66
+      },
+      {
+        "w": "raqami",
+        "s": 25.72,
+        "e": 26.04
+      },
+      {
+        "w": "kiritilsa,",
+        "s": 26.06,
+        "e": 26.48
+      },
+      {
+        "w": "May",
+        "s": 26.92,
+        "e": 27.1
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 27.2,
+        "e": 27.54
+      },
+      {
+        "w": "hisoblagichi",
+        "s": 27.56,
+        "e": 28.12
+      },
+      {
+        "w": "ushbu",
+        "s": 28.42,
+        "e": 28.64
+      },
+      {
+        "w": "songa",
+        "s": 28.7,
+        "e": 28.96
+      },
+      {
+        "w": "ergashadi",
+        "s": 29.02,
+        "e": 29.52
+      },
+      {
+        "w": "va",
+        "s": 29.62,
+        "e": 29.7
+      },
+      {
+        "w": "keyingi",
+        "s": 30.02,
+        "e": 30.36
+      },
+      {
+        "w": "qatorga",
+        "s": 30.4,
+        "e": 30.78
+      },
+      {
+        "w": "yuz",
+        "s": 31.1,
+        "e": 31.24
+      },
+      {
+        "w": "birni",
+        "s": 31.3,
+        "e": 31.52
+      },
+      {
+        "w": "beradi.",
+        "s": 31.56,
+        "e": 31.84
+      },
+      {
+        "w": "Shuningdek",
+        "s": 32.78,
+        "e": 33.16
+      },
+      {
+        "w": "kichik",
+        "s": 33.46,
+        "e": 33.74
+      },
+      {
+        "w": "tip",
+        "s": 33.78,
+        "e": 33.94
+      },
+      {
+        "w": "tanlansa,",
+        "s": 33.98,
+        "e": 34.34
+      },
+      {
+        "w": "masalan",
+        "s": 34.68,
+        "e": 35.0
+      },
+      {
+        "w": "tayni-int",
+        "s": 35.28,
+        "e": 35.88
+      },
+      {
+        "w": "da",
+        "s": 35.98,
+        "e": 36.08
+      },
+      {
+        "w": "bir",
+        "s": 36.22,
+        "e": 36.32
+      },
+      {
+        "w": "yuz",
+        "s": 36.34,
+        "e": 36.44
+      },
+      {
+        "w": "yigirma",
+        "s": 36.44,
+        "e": 36.68
+      },
+      {
+        "w": "yetti",
+        "s": 36.74,
+        "e": 36.96
+      },
+      {
+        "w": "chegarasiga",
+        "s": 37.02,
+        "e": 37.48
+      },
+      {
+        "w": "yetib",
+        "s": 37.53,
+        "e": 37.71
+      },
+      {
+        "w": "to‘xtaydi.",
+        "s": 37.75,
+        "e": 38.15
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "sqlite_demo",
+    "text": "SQLite da oddiy INTEGER PRIMARY KEY yetarli bo‘lib, u rowid ning taxallusi hisoblanadi va eng katta raqamdan bittaga oshirib boradi.",
+    "show": "SQLite da oddiy INTEGER PRIMARY KEY yetarli bo‘lib, u rowid ning taxallusi hisoblanadi va eng katta raqamdan bittaga oshirib boradi.",
+    "say": "Es-kyu-layt da oddiy integer praymari ki yetarli bo‘lib, u rou-ayd ning taxallusi hisoblanadi va eng katta raqamdan bittaga oshirib boradi.",
+    "a0": 39.45,
+    "a1": 47.73,
+    "words": [
+      {
+        "w": "Es-kyu-layt",
+        "s": 39.45,
+        "e": 39.95
+      },
+      {
+        "w": "da",
+        "s": 40.01,
+        "e": 40.09
+      },
+      {
+        "w": "oddiy",
+        "s": 40.29,
+        "e": 40.55
+      },
+      {
+        "w": "integer",
+        "s": 40.83,
+        "e": 41.23
+      },
+      {
+        "w": "praymari",
+        "s": 41.31,
+        "e": 41.75
+      },
+      {
+        "w": "ki",
+        "s": 41.83,
+        "e": 41.93
+      },
+      {
+        "w": "yetarli",
+        "s": 41.93,
+        "e": 42.41
+      },
+      {
+        "w": "bo‘lib,",
+        "s": 42.47,
+        "e": 42.69
+      },
+      {
+        "w": "u",
+        "s": 43.07,
+        "e": 43.09
+      },
+      {
+        "w": "rou-ayd",
+        "s": 43.43,
+        "e": 43.91
+      },
+      {
+        "w": "ning",
+        "s": 43.95,
+        "e": 44.09
+      },
+      {
+        "w": "taxallusi",
+        "s": 44.13,
+        "e": 44.59
+      },
+      {
+        "w": "hisoblanadi",
+        "s": 44.63,
+        "e": 45.17
+      },
+      {
+        "w": "va",
+        "s": 45.21,
+        "e": 45.29
+      },
+      {
+        "w": "eng",
+        "s": 45.71,
+        "e": 45.87
+      },
+      {
+        "w": "katta",
+        "s": 45.95,
+        "e": 46.21
+      },
+      {
+        "w": "raqamdan",
+        "s": 46.27,
+        "e": 46.67
+      },
+      {
+        "w": "bittaga",
+        "s": 46.77,
+        "e": 47.07
+      },
+      {
+        "w": "oshirib",
+        "s": 47.13,
+        "e": 47.43
+      },
+      {
+        "w": "boradi.",
+        "s": 47.45,
+        "e": 47.73
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "sqlite_demo",
+    "text": "AUTOINCREMENT kalit so‘zi qo‘shilganda esa sqlite_sequence jadvali yuritilib, o‘chirilgan oxirgi raqamlar aslo qayta ishlatilmaydi.",
+    "show": "AUTOINCREMENT kalit so‘zi qo‘shilganda esa sqlite_sequence jadvali yuritilib, o‘chirilgan oxirgi raqamlar aslo qayta ishlatilmaydi.",
+    "say": "Avto-inkrement kalit so‘zi qo‘shilganda esa es-kyu-layt-sikvens jadvali yuritilib, o‘chirilgan oxirgi raqamlar aslo qayta ishlatilmaydi.",
+    "a0": 48.73,
+    "a1": 56.3,
+    "words": [
+      {
+        "w": "Avto-inkrement",
+        "s": 48.73,
+        "e": 49.47
+      },
+      {
+        "w": "kalit",
+        "s": 49.53,
+        "e": 49.77
+      },
+      {
+        "w": "so‘zi",
+        "s": 49.79,
+        "e": 49.99
+      },
+      {
+        "w": "qo‘shilganda",
+        "s": 50.03,
+        "e": 50.47
+      },
+      {
+        "w": "esa",
+        "s": 50.51,
+        "e": 50.65
+      },
+      {
+        "w": "es-kyu-layt-sikvens",
+        "s": 51.07,
+        "e": 52.07
+      },
+      {
+        "w": "jadvali",
+        "s": 52.13,
+        "e": 52.49
+      },
+      {
+        "w": "yuritilib,",
+        "s": 52.54,
+        "e": 52.88
+      },
+      {
+        "w": "o‘chirilgan",
+        "s": 53.28,
+        "e": 53.8
+      },
+      {
+        "w": "oxirgi",
+        "s": 53.96,
+        "e": 54.3
+      },
+      {
+        "w": "raqamlar",
+        "s": 54.34,
+        "e": 54.74
+      },
+      {
+        "w": "aslo",
+        "s": 55.1,
+        "e": 55.38
+      },
+      {
+        "w": "qayta",
+        "s": 55.48,
+        "e": 55.7
+      },
+      {
+        "w": "ishlatilmaydi.",
+        "s": 55.76,
+        "e": 56.3
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "sqlite_demo",
+    "text": "E'tibor bering: SQLite da aynan to‘liq INTEGER so‘zi yozilishi shart, qisqa INT yozilsa rowid taxallusi ishlamaydi.",
+    "show": "E'tibor bering: SQLite da aynan to‘liq INTEGER so‘zi yozilishi shart, qisqa INT yozilsa rowid taxallusi ishlamaydi.",
+    "say": "E'tibor bering: Es-kyu-layt da aynan to‘liq integer so‘zi yozilishi shart, qisqa int yozilsa rou-ayd taxallusi ishlamaydi.",
+    "a0": 57.4,
+    "a1": 64.96,
+    "words": [
+      {
+        "w": "E'tibor",
+        "s": 57.4,
+        "e": 57.64
+      },
+      {
+        "w": "bering:",
+        "s": 57.66,
+        "e": 57.88
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 58.22,
+        "e": 58.78
+      },
+      {
+        "w": "da",
+        "s": 58.86,
+        "e": 58.94
+      },
+      {
+        "w": "aynan",
+        "s": 59.08,
+        "e": 59.34
+      },
+      {
+        "w": "to‘liq",
+        "s": 59.68,
+        "e": 59.98
+      },
+      {
+        "w": "integer",
+        "s": 60.16,
+        "e": 60.54
+      },
+      {
+        "w": "so‘zi",
+        "s": 60.6,
+        "e": 60.8
+      },
+      {
+        "w": "yozilishi",
+        "s": 60.8,
+        "e": 61.22
+      },
+      {
+        "w": "shart,",
+        "s": 61.28,
+        "e": 61.5
+      },
+      {
+        "w": "qisqa",
+        "s": 61.88,
+        "e": 62.14
+      },
+      {
+        "w": "int",
+        "s": 62.52,
+        "e": 62.68
+      },
+      {
+        "w": "yozilsa",
+        "s": 62.72,
+        "e": 63.18
+      },
+      {
+        "w": "rou-ayd",
+        "s": 63.5,
+        "e": 63.92
+      },
+      {
+        "w": "taxallusi",
+        "s": 63.94,
+        "e": 64.44
+      },
+      {
+        "w": "ishlamaydi.",
+        "s": 64.5,
+        "e": 64.96
+      }
+    ]
+  },
+  {
+    "id": "L7",
+    "scene": "taqqoslash",
+    "text": "Uchta tizimni qiyoslasak: PostgreSQL da xavfsiz Identity standarti, MySQL da avtomatik suriluvchi AUTO_INCREMENT, SQLite da esa resurs tejovchi rowid mexanizmi mavjud.",
+    "show": "Uchta tizimni qiyoslasak: PostgreSQL da xavfsiz Identity standarti, MySQL da avtomatik suriluvchi AUTO_INCREMENT, SQLite da esa resurs tejovchi rowid mexanizmi mavjud.",
+    "say": "Uchta tizimni qiyoslasak: Postgres da xavfsiz Aydentiti standarti, May es-kyu-el da avtomatik suriluvchi Avto-inkrement, Es-kyu-layt da esa resurs tejovchi rou-ayd mexanizmi mavjud.",
+    "a0": 66.18,
+    "a1": 77.59,
+    "words": [
+      {
+        "w": "Uchta",
+        "s": 66.18,
+        "e": 66.44
+      },
+      {
+        "w": "tizimni",
+        "s": 66.48,
+        "e": 66.78
+      },
+      {
+        "w": "qiyoslasak:",
+        "s": 66.84,
+        "e": 67.34
+      },
+      {
+        "w": "Postgres",
+        "s": 67.77,
+        "e": 68.23
+      },
+      {
+        "w": "da",
+        "s": 68.27,
+        "e": 68.35
+      },
+      {
+        "w": "xavfsiz",
+        "s": 68.47,
+        "e": 68.85
+      },
+      {
+        "w": "Aydentiti",
+        "s": 69.07,
+        "e": 69.55
+      },
+      {
+        "w": "standarti,",
+        "s": 69.63,
+        "e": 70.13
+      },
+      {
+        "w": "May",
+        "s": 70.75,
+        "e": 70.89
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 70.99,
+        "e": 71.35
+      },
+      {
+        "w": "da",
+        "s": 71.37,
+        "e": 71.47
+      },
+      {
+        "w": "avtomatik",
+        "s": 71.69,
+        "e": 72.19
+      },
+      {
+        "w": "suriluvchi",
+        "s": 72.21,
+        "e": 72.69
+      },
+      {
+        "w": "Avto-inkrement,",
+        "s": 72.87,
+        "e": 73.63
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 74.09,
+        "e": 74.59
+      },
+      {
+        "w": "da",
+        "s": 74.65,
+        "e": 74.71
+      },
+      {
+        "w": "esa",
+        "s": 74.75,
+        "e": 74.91
+      },
+      {
+        "w": "resurs",
+        "s": 75.27,
+        "e": 75.61
+      },
+      {
+        "w": "tejovchi",
+        "s": 75.65,
+        "e": 76.09
+      },
+      {
+        "w": "rou-ayd",
+        "s": 76.33,
+        "e": 76.75
+      },
+      {
+        "w": "mexanizmi",
+        "s": 76.81,
+        "e": 77.27
+      },
+      {
+        "w": "mavjud.",
+        "s": 77.31,
+        "e": 77.59
+      }
+    ]
+  },
+  {
+    "id": "L8",
+    "scene": "tuzoqlar",
+    "text": "Eng katta xato — buxgalteriya cheklari uchun bitta raqam ham tushib qolmasin deb identity ga tayanishdir. ROLLBACK yoki xatolarda bo‘shliqlar qolishi tabiiy qonuniyatdir.",
+    "show": "Eng katta xato — buxgalteriya cheklari uchun bitta raqam ham tushib qolmasin deb identity ga tayanishdir. ROLLBACK yoki xatolarda bo‘shliqlar qolishi tabiiy qonuniyatdir.",
+    "say": "Eng katta xato — buxgalteriya cheklari uchun bitta raqam ham tushib qolmasin deb aydentiti ga tayanishdir. Rolbek yoki xatolarda bo‘shliqlar qolishi tabiiy qonuniyatdir.",
+    "a0": 78.61,
+    "a1": 88.58,
+    "words": [
+      {
+        "w": "Eng",
+        "s": 78.61,
+        "e": 78.75
+      },
+      {
+        "w": "katta",
+        "s": 78.79,
+        "e": 79.05
+      },
+      {
+        "w": "xato",
+        "s": 79.11,
+        "e": 79.33
+      },
+      {
+        "w": "—",
+        "s": 79.33,
+        "e": 79.33
+      },
+      {
+        "w": "buxgalteriya",
+        "s": 79.77,
+        "e": 80.37
+      },
+      {
+        "w": "cheklari",
+        "s": 80.41,
+        "e": 80.75
+      },
+      {
+        "w": "uchun",
+        "s": 80.79,
+        "e": 80.95
+      },
+      {
+        "w": "bitta",
+        "s": 81.31,
+        "e": 81.61
+      },
+      {
+        "w": "raqam",
+        "s": 81.65,
+        "e": 81.91
+      },
+      {
+        "w": "ham",
+        "s": 81.95,
+        "e": 82.07
+      },
+      {
+        "w": "tushib",
+        "s": 82.13,
+        "e": 82.33
+      },
+      {
+        "w": "qolmasin",
+        "s": 82.37,
+        "e": 82.84
+      },
+      {
+        "w": "deb",
+        "s": 82.88,
+        "e": 83.04
+      },
+      {
+        "w": "aydentiti",
+        "s": 83.26,
+        "e": 83.74
+      },
+      {
+        "w": "ga",
+        "s": 83.8,
+        "e": 83.86
+      },
+      {
+        "w": "tayanishdir.",
+        "s": 83.92,
+        "e": 84.36
+      },
+      {
+        "w": "Rolbek",
+        "s": 85.1,
+        "e": 85.5
+      },
+      {
+        "w": "yoki",
+        "s": 85.56,
+        "e": 85.78
+      },
+      {
+        "w": "xatolarda",
+        "s": 85.9,
+        "e": 86.42
+      },
+      {
+        "w": "bo‘shliqlar",
+        "s": 86.48,
+        "e": 86.96
+      },
+      {
+        "w": "qolishi",
+        "s": 87.0,
+        "e": 87.3
+      },
+      {
+        "w": "tabiiy",
+        "s": 87.56,
+        "e": 87.92
+      },
+      {
+        "w": "qonuniyatdir.",
+        "s": 87.98,
+        "e": 88.58
+      }
+    ]
+  },
+  {
+    "id": "L9",
+    "scene": "xulosa",
+    "text": "Har bir ma'lumotlar bazasining o‘ziga xos avtomatik raqamlash qoidalarini to‘g‘ri qo‘llash orqali ishonchli va tezkor tizimlar yarating.",
+    "show": "Har bir ma'lumotlar bazasining o‘ziga xos avtomatik raqamlash qoidalarini to‘g‘ri qo‘llash orqali ishonchli va tezkor tizimlar yarating.",
+    "say": "Har bir ma'lumotlar bazasining o‘ziga xos avtomatik raqamlash qoidalarini to‘g‘ri qo‘llash orqali ishonchli va tezkor tizimlar yarating.",
+    "a0": 89.54,
+    "a1": 97.2,
+    "words": [
+      {
+        "w": "Har",
+        "s": 89.54,
+        "e": 89.68
+      },
+      {
+        "w": "bir",
+        "s": 89.74,
+        "e": 89.84
+      },
+      {
+        "w": "ma'lumotlar",
+        "s": 89.88,
+        "e": 90.4
+      },
+      {
+        "w": "bazasining",
+        "s": 90.46,
+        "e": 91.0
+      },
+      {
+        "w": "o‘ziga",
+        "s": 91.12,
+        "e": 91.38
+      },
+      {
+        "w": "xos",
+        "s": 91.46,
+        "e": 91.64
+      },
+      {
+        "w": "avtomatik",
+        "s": 91.8,
+        "e": 92.29
+      },
+      {
+        "w": "raqamlash",
+        "s": 92.33,
+        "e": 92.73
+      },
+      {
+        "w": "qoidalarini",
+        "s": 92.77,
+        "e": 93.25
+      },
+      {
+        "w": "to‘g‘ri",
+        "s": 93.57,
+        "e": 93.89
+      },
+      {
+        "w": "qo‘llash",
+        "s": 93.95,
+        "e": 94.27
+      },
+      {
+        "w": "orqali",
+        "s": 94.33,
+        "e": 94.61
+      },
+      {
+        "w": "ishonchli",
+        "s": 94.99,
+        "e": 95.49
+      },
+      {
+        "w": "va",
+        "s": 95.62,
+        "e": 95.7
+      },
+      {
+        "w": "tezkor",
+        "s": 96.04,
+        "e": 96.42
+      },
+      {
+        "w": "tizimlar",
+        "s": 96.46,
+        "e": 96.84
+      },
+      {
+        "w": "yarating.",
+        "s": 96.88,
+        "e": 97.2
+      }
+    ]
+  }
+]
