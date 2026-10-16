@@ -1,0 +1,26 @@
+WEBVTT
+
+1
+00:01.420 --> 00:13.920
+Jadval yaratilgandan keyin talablar o‘zgaradi: yangi ustun, boshqa ma'lumot tipi yoki cheklovlar kerak
+bo‘ladi. Buning uchun ma'lumotni o‘chirmasdan tuzilmani o‘zgartiruvchi ALTER TABLE buyrug‘i xizmat qiladi.
+
+2
+00:16.670 --> 00:27.070
+ALTER TABLE orqali ustun qo‘shish va o‘chirish, ma'lumot tipini o‘zgartirish, NOT NULL
+va CHECK cheklovlarini boshqarish hamda ustun yoki jadval nomini o‘zgartirish mumkin.
+
+3
+00:30.000 --> 00:40.530
+Eng muhim qoidasi: o‘zgarmas DEFAULT qiymatli yangi ustun qo‘shish jadval qatorlarini
+qayta yozishni talab qilmaydi va millionlab qatorli jadvallarda ham bir zumda bajariladi.
+
+4
+00:43.460 --> 00:54.080
+Jadvallar orasidagi bog‘liqliklarda DROP CASCADE barcha tashqi kalit va ko‘rinishlarni
+rekursiv o‘chiradi. TRUNCATE esa barcha qatorlarni darhol tozalab, disk joyini bo‘shatadi.
+
+5
+00:56.850 --> 01:05.310
+Sxemani xavfsiz va to‘g‘ri o‘zgartirish — ishlab turgan tizimlarda ma'lumotlar
+yo‘qolishi va qotib qolishlarning oldini oluvchi muhim mahoratdir.

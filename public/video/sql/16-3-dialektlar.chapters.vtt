@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:10.867
+Dialektlar: ALTER TABLE farqlari
+
+00:10.867 --> 00:24.557
+MySQL: MODIFY COLUMN va INSTANT DDL
+
+00:24.557 --> 00:38.809
+MySQL: Yashirin COMMIT va TRUNCATE
+
+00:38.809 --> 00:52.408
+SQLite: Cheklangan ALTER TABLE
+
+00:52.408 --> 01:03.470
+SQLite: 12 qadamli jadval qayta qurish
+
+01:03.470 --> 01:11.420
+Xulosa

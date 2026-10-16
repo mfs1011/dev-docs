@@ -1,0 +1,748 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Jadvallarni o‘zgartirish va DDL amallari PostgreSQL, MySQL hamda SQLite da jiddiy arxitektura farqlariga ega.",
+    "show": "Jadvallarni o‘zgartirish va DDL amallari PostgreSQL, MySQL hamda SQLite da jiddiy arxitektura farqlariga ega.",
+    "say": "Jadvallarni o‘zgartirish va di-di-el amallari Postgres, May es-kyu-el hamda Es-kyu-layt da jiddiy arxitektura farqlariga ega.",
+    "a0": 0.26,
+    "a1": 7.77,
+    "words": [
+      {
+        "w": "Jadvallarni",
+        "s": 0.26,
+        "e": 0.8
+      },
+      {
+        "w": "o‘zgartirish",
+        "s": 0.88,
+        "e": 1.5
+      },
+      {
+        "w": "va",
+        "s": 1.56,
+        "e": 1.64
+      },
+      {
+        "w": "di-di-el",
+        "s": 1.86,
+        "e": 2.24
+      },
+      {
+        "w": "amallari",
+        "s": 2.34,
+        "e": 2.76
+      },
+      {
+        "w": "Postgres,",
+        "s": 3.12,
+        "e": 3.62
+      },
+      {
+        "w": "May",
+        "s": 3.8,
+        "e": 3.96
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 4.04,
+        "e": 4.46
+      },
+      {
+        "w": "hamda",
+        "s": 4.5,
+        "e": 4.76
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 5.1,
+        "e": 5.7
+      },
+      {
+        "w": "da",
+        "s": 5.74,
+        "e": 5.84
+      },
+      {
+        "w": "jiddiy",
+        "s": 5.98,
+        "e": 6.28
+      },
+      {
+        "w": "arxitektura",
+        "s": 6.44,
+        "e": 7.06
+      },
+      {
+        "w": "farqlariga",
+        "s": 7.1,
+        "e": 7.55
+      },
+      {
+        "w": "ega.",
+        "s": 7.61,
+        "e": 7.77
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "mysql_instant",
+    "text": "MySQL da ustun tipi MODIFY COLUMN bilan bir yo‘la o‘zgartiriladi va avto-konversiya qilinadi. ALGORITHM INSTANT esa ustunni jadvalni qayta yozmasdan bir lahzada qo‘shadi.",
+    "show": "MySQL da ustun tipi MODIFY COLUMN bilan bir yo‘la o‘zgartiriladi va avto-konversiya qilinadi. ALGORITHM INSTANT esa ustunni jadvalni qayta yozmasdan bir lahzada qo‘shadi.",
+    "say": "May es-kyu-el da ustun tipi modifay kolumn bilan bir yo‘la o‘zgartiriladi va avto-konversiya qilinadi. Algoritm instant esa ustunni jadvalni qayta yozmasdan bir lahzada qo‘shadi.",
+    "a0": 8.23,
+    "a1": 18.75,
+    "words": [
+      {
+        "w": "May",
+        "s": 8.23,
+        "e": 8.39
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 8.47,
+        "e": 8.83
+      },
+      {
+        "w": "da",
+        "s": 8.87,
+        "e": 8.95
+      },
+      {
+        "w": "ustun",
+        "s": 9.23,
+        "e": 9.51
+      },
+      {
+        "w": "tipi",
+        "s": 9.53,
+        "e": 9.75
+      },
+      {
+        "w": "modifay",
+        "s": 9.91,
+        "e": 10.27
+      },
+      {
+        "w": "kolumn",
+        "s": 10.35,
+        "e": 10.67
+      },
+      {
+        "w": "bilan",
+        "s": 10.67,
+        "e": 10.87
+      },
+      {
+        "w": "bir",
+        "s": 11.25,
+        "e": 11.37
+      },
+      {
+        "w": "yo‘la",
+        "s": 11.41,
+        "e": 11.61
+      },
+      {
+        "w": "o‘zgartiriladi",
+        "s": 11.69,
+        "e": 12.33
+      },
+      {
+        "w": "va",
+        "s": 12.39,
+        "e": 12.45
+      },
+      {
+        "w": "avto-konversiya",
+        "s": 12.79,
+        "e": 13.51
+      },
+      {
+        "w": "qilinadi.",
+        "s": 13.55,
+        "e": 13.87
+      },
+      {
+        "w": "Algoritm",
+        "s": 14.59,
+        "e": 15.07
+      },
+      {
+        "w": "instant",
+        "s": 15.23,
+        "e": 15.65
+      },
+      {
+        "w": "esa",
+        "s": 15.73,
+        "e": 15.87
+      },
+      {
+        "w": "ustunni",
+        "s": 16.23,
+        "e": 16.61
+      },
+      {
+        "w": "jadvalni",
+        "s": 16.67,
+        "e": 17.11
+      },
+      {
+        "w": "qayta",
+        "s": 17.15,
+        "e": 17.37
+      },
+      {
+        "w": "yozmasdan",
+        "s": 17.43,
+        "e": 17.83
+      },
+      {
+        "w": "bir",
+        "s": 17.93,
+        "e": 18.05
+      },
+      {
+        "w": "lahzada",
+        "s": 18.09,
+        "e": 18.39
+      },
+      {
+        "w": "qo‘shadi.",
+        "s": 18.43,
+        "e": 18.75
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "mysql_implicit_commit",
+    "text": "Eng muhim farq: MySQL da DDL amallari faol tranzaksiyani yashirin commit qiladi. Shuningdek TRUNCATE ham DDL bo‘lib orqaga qaytmaydi, DROP CASCADE esa hech narsa qilmaydi.",
+    "show": "Eng muhim farq: MySQL da DDL amallari faol tranzaksiyani yashirin commit qiladi. Shuningdek TRUNCATE ham DDL bo‘lib orqaga qaytmaydi, DROP CASCADE esa hech narsa qilmaydi.",
+    "say": "Eng muhim farq: May es-kyu-el da di-di-el amallari faol tranzaksiyani yashirin commit qiladi. Shuningdek trankeyt ham di-di-el bo‘lib orqaga qaytmaydi, drop kaskad esa hech narsa qilmaydi.",
+    "a0": 19.45,
+    "a1": 30.36,
+    "words": [
+      {
+        "w": "Eng",
+        "s": 19.45,
+        "e": 19.57
+      },
+      {
+        "w": "muhim",
+        "s": 19.59,
+        "e": 19.79
+      },
+      {
+        "w": "farq:",
+        "s": 19.83,
+        "e": 20.03
+      },
+      {
+        "w": "May",
+        "s": 20.49,
+        "e": 20.65
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 20.73,
+        "e": 21.11
+      },
+      {
+        "w": "da",
+        "s": 21.15,
+        "e": 21.23
+      },
+      {
+        "w": "di-di-el",
+        "s": 21.35,
+        "e": 21.71
+      },
+      {
+        "w": "amallari",
+        "s": 21.79,
+        "e": 22.17
+      },
+      {
+        "w": "faol",
+        "s": 22.47,
+        "e": 22.76
+      },
+      {
+        "w": "tranzaksiyani",
+        "s": 22.8,
+        "e": 23.44
+      },
+      {
+        "w": "yashirin",
+        "s": 23.62,
+        "e": 24.02
+      },
+      {
+        "w": "commit",
+        "s": 24.08,
+        "e": 24.36
+      },
+      {
+        "w": "qiladi.",
+        "s": 24.4,
+        "e": 24.66
+      },
+      {
+        "w": "Shuningdek",
+        "s": 25.06,
+        "e": 25.48
+      },
+      {
+        "w": "trankeyt",
+        "s": 25.54,
+        "e": 26.0
+      },
+      {
+        "w": "ham",
+        "s": 26.06,
+        "e": 26.22
+      },
+      {
+        "w": "di-di-el",
+        "s": 26.34,
+        "e": 26.72
+      },
+      {
+        "w": "bo‘lib",
+        "s": 26.78,
+        "e": 27.0
+      },
+      {
+        "w": "orqaga",
+        "s": 27.12,
+        "e": 27.42
+      },
+      {
+        "w": "qaytmaydi,",
+        "s": 27.48,
+        "e": 27.92
+      },
+      {
+        "w": "drop",
+        "s": 28.34,
+        "e": 28.56
+      },
+      {
+        "w": "kaskad",
+        "s": 28.62,
+        "e": 28.9
+      },
+      {
+        "w": "esa",
+        "s": 28.94,
+        "e": 29.1
+      },
+      {
+        "w": "hech",
+        "s": 29.44,
+        "e": 29.64
+      },
+      {
+        "w": "narsa",
+        "s": 29.7,
+        "e": 29.92
+      },
+      {
+        "w": "qilmaydi.",
+        "s": 29.96,
+        "e": 30.36
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "sqlite_limits",
+    "text": "SQLite da ALTER TABLE juda cheklangan, chunki sxema oddiy matn sifatida saqlanadi. ADD COLUMN da UNIQUE yoki ifodali DEFAULT qo‘yib bo‘lmaydi, TRUNCATE esa umuman mavjud emas.",
+    "show": "SQLite da ALTER TABLE juda cheklangan, chunki sxema oddiy matn sifatida saqlanadi. ADD COLUMN da UNIQUE yoki ifodali DEFAULT qo‘yib bo‘lmaydi, TRUNCATE esa umuman mavjud emas.",
+    "say": "Es-kyu-layt da alter teybl juda cheklangan, chunki sxema oddiy matn sifatida saqlanadi. Ed kolumn da yunik yoki ifodali difolt qo‘yib bo‘lmaydi, trankeyt esa umuman mavjud emas.",
+    "a0": 31.1,
+    "a1": 41.37,
+    "words": [
+      {
+        "w": "Es-kyu-layt",
+        "s": 31.1,
+        "e": 31.62
+      },
+      {
+        "w": "da",
+        "s": 31.66,
+        "e": 31.74
+      },
+      {
+        "w": "alter",
+        "s": 31.86,
+        "e": 32.08
+      },
+      {
+        "w": "teybl",
+        "s": 32.14,
+        "e": 32.38
+      },
+      {
+        "w": "juda",
+        "s": 32.46,
+        "e": 32.64
+      },
+      {
+        "w": "cheklangan,",
+        "s": 32.68,
+        "e": 33.22
+      },
+      {
+        "w": "chunki",
+        "s": 33.28,
+        "e": 33.52
+      },
+      {
+        "w": "sxema",
+        "s": 33.64,
+        "e": 33.94
+      },
+      {
+        "w": "oddiy",
+        "s": 34.32,
+        "e": 34.58
+      },
+      {
+        "w": "matn",
+        "s": 34.62,
+        "e": 34.88
+      },
+      {
+        "w": "sifatida",
+        "s": 34.92,
+        "e": 35.28
+      },
+      {
+        "w": "saqlanadi.",
+        "s": 35.32,
+        "e": 35.76
+      },
+      {
+        "w": "Ed",
+        "s": 36.19,
+        "e": 36.29
+      },
+      {
+        "w": "kolumn",
+        "s": 36.33,
+        "e": 36.61
+      },
+      {
+        "w": "da",
+        "s": 36.63,
+        "e": 36.71
+      },
+      {
+        "w": "yunik",
+        "s": 37.11,
+        "e": 37.45
+      },
+      {
+        "w": "yoki",
+        "s": 37.47,
+        "e": 37.73
+      },
+      {
+        "w": "ifodali",
+        "s": 37.87,
+        "e": 38.25
+      },
+      {
+        "w": "difolt",
+        "s": 38.31,
+        "e": 38.61
+      },
+      {
+        "w": "qo‘yib",
+        "s": 38.65,
+        "e": 38.89
+      },
+      {
+        "w": "bo‘lmaydi,",
+        "s": 38.91,
+        "e": 39.29
+      },
+      {
+        "w": "trankeyt",
+        "s": 39.57,
+        "e": 39.95
+      },
+      {
+        "w": "esa",
+        "s": 39.99,
+        "e": 40.15
+      },
+      {
+        "w": "umuman",
+        "s": 40.33,
+        "e": 40.69
+      },
+      {
+        "w": "mavjud",
+        "s": 40.77,
+        "e": 41.09
+      },
+      {
+        "w": "emas.",
+        "s": 41.15,
+        "e": 41.37
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "sqlite_12_steps",
+    "text": "SQLite da ustun tipini o‘zgartirish uchun hujjat 12 qadamli usulni tavsiya qiladi: yangi jadval ochish, ma’lumotni ko‘chirish, eskisini o‘chirib nomini qaytarish va indekslarni tiklash.",
+    "show": "SQLite da ustun tipini o‘zgartirish uchun hujjat 12 qadamli usulni tavsiya qiladi: yangi jadval ochish, ma’lumotni ko‘chirish, eskisini o‘chirib nomini qaytarish va indekslarni tiklash.",
+    "say": "Es-kyu-layt da ustun tipini o‘zgartirish uchun hujjat o‘n ikki qadamli usulni tavsiya qiladi: yangi jadval ochish, ma’lumotni ko‘chirish, eskisini o‘chirib nomini qaytarish va indekslarni tiklash.",
+    "a0": 42.09,
+    "a1": 50.2,
+    "words": [
+      {
+        "w": "Es-kyu-layt",
+        "s": 42.09,
+        "e": 42.59
+      },
+      {
+        "w": "da",
+        "s": 42.63,
+        "e": 42.71
+      },
+      {
+        "w": "ustun",
+        "s": 42.83,
+        "e": 43.09
+      },
+      {
+        "w": "tipini",
+        "s": 43.13,
+        "e": 43.41
+      },
+      {
+        "w": "o‘zgartirish",
+        "s": 43.45,
+        "e": 43.93
+      },
+      {
+        "w": "uchun",
+        "s": 43.97,
+        "e": 44.13
+      },
+      {
+        "w": "hujjat",
+        "s": 44.41,
+        "e": 44.73
+      },
+      {
+        "w": "o‘n",
+        "s": 44.87,
+        "e": 44.95
+      },
+      {
+        "w": "ikki",
+        "s": 44.99,
+        "e": 45.13
+      },
+      {
+        "w": "qadamli",
+        "s": 45.17,
+        "e": 45.51
+      },
+      {
+        "w": "usulni",
+        "s": 45.61,
+        "e": 45.91
+      },
+      {
+        "w": "tavsiya",
+        "s": 45.93,
+        "e": 46.23
+      },
+      {
+        "w": "qiladi:",
+        "s": 46.27,
+        "e": 46.53
+      },
+      {
+        "w": "yangi",
+        "s": 46.97,
+        "e": 47.21
+      },
+      {
+        "w": "jadval",
+        "s": 47.25,
+        "e": 47.57
+      },
+      {
+        "w": "ochish,",
+        "s": 47.61,
+        "e": 47.9
+      },
+      {
+        "w": "ma’lumotni",
+        "s": 48.18,
+        "e": 48.7
+      },
+      {
+        "w": "ko‘chirish,",
+        "s": 48.74,
+        "e": 49.1
+      },
+      {
+        "w": "eskisini",
+        "s": 49.1,
+        "e": 49.26
+      },
+      {
+        "w": "o‘chirib",
+        "s": 49.26,
+        "e": 49.42
+      },
+      {
+        "w": "nomini",
+        "s": 49.42,
+        "e": 49.54
+      },
+      {
+        "w": "qaytarish",
+        "s": 49.54,
+        "e": 49.74
+      },
+      {
+        "w": "va",
+        "s": 49.74,
+        "e": 49.78
+      },
+      {
+        "w": "indekslarni",
+        "s": 49.78,
+        "e": 50.04
+      },
+      {
+        "w": "tiklash.",
+        "s": 50.04,
+        "e": 50.2
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "xulosa",
+    "text": "PostgreSQL dagi tranzaksiyaviy DDL, MySQL dagi instant tezlik va SQLite dagi 12 qadamli tartibni bilish professional migratsiyalarning poydevoridir.",
+    "show": "PostgreSQL dagi tranzaksiyaviy DDL, MySQL dagi instant tezlik va SQLite dagi 12 qadamli tartibni bilish professional migratsiyalarning poydevoridir.",
+    "say": "Postgres dagi tranzaksiyaviy di-di-el, May es-kyu-el dagi instant tezlik va Es-kyu-layt dagi o‘n ikki qadamli tartibni bilish professional migratsiyalarning poydevoridir.",
+    "a0": 50.22,
+    "a1": 53.54,
+    "words": [
+      {
+        "w": "Postgres",
+        "s": 50.22,
+        "e": 50.38
+      },
+      {
+        "w": "dagi",
+        "s": 50.38,
+        "e": 50.48
+      },
+      {
+        "w": "tranzaksiyaviy",
+        "s": 50.48,
+        "e": 50.78
+      },
+      {
+        "w": "di-di-el,",
+        "s": 50.8,
+        "e": 50.94
+      },
+      {
+        "w": "May",
+        "s": 50.94,
+        "e": 51.0
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 51.0,
+        "e": 51.14
+      },
+      {
+        "w": "dagi",
+        "s": 51.14,
+        "e": 51.26
+      },
+      {
+        "w": "instant",
+        "s": 51.28,
+        "e": 51.42
+      },
+      {
+        "w": "tezlik",
+        "s": 51.44,
+        "e": 51.64
+      },
+      {
+        "w": "va",
+        "s": 51.66,
+        "e": 51.7
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 51.72,
+        "e": 51.92
+      },
+      {
+        "w": "dagi",
+        "s": 51.92,
+        "e": 52.04
+      },
+      {
+        "w": "o‘n",
+        "s": 52.04,
+        "e": 52.1
+      },
+      {
+        "w": "ikki",
+        "s": 52.12,
+        "e": 52.22
+      },
+      {
+        "w": "qadamli",
+        "s": 52.22,
+        "e": 52.36
+      },
+      {
+        "w": "tartibni",
+        "s": 52.36,
+        "e": 52.52
+      },
+      {
+        "w": "bilish",
+        "s": 52.52,
+        "e": 52.64
+      },
+      {
+        "w": "professional",
+        "s": 52.64,
+        "e": 52.94
+      },
+      {
+        "w": "migratsiyalarning",
+        "s": 52.94,
+        "e": 53.3
+      },
+      {
+        "w": "poydevoridir.",
+        "s": 53.3,
+        "e": 53.54
+      }
+    ]
+  }
+]

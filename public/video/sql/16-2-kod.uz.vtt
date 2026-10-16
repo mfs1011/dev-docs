@@ -1,0 +1,31 @@
+WEBVTT
+
+1
+00:01.420 --> 00:12.320
+Ushbu amaliy darsda PostgreSQL 18.6 terminalida ADD COLUMN, ALTER COLUMN
+TYPE va USING, DROP CASCADE hamda TRUNCATE buyruqlarini sinovdan o‘tkazamiz.
+
+2
+00:15.630 --> 00:26.020
+mahsulotlar jadvaliga CHECK cheklovi bilan tavsif ustunini va NOT NULL DEFAULT 0 bilan
+soni ustunini qo‘shamiz. Yangi ustunlar mavjud qatorlarga ham xavfsiz biriktiriladi.
+
+3
+00:29.420 --> 00:40.030
+narx ustunini matndan numeric ga o‘tkazishda to‘g‘ridan-to‘g‘ri o‘girib bo‘lmaslik
+xatosi chiqadi. Uni yechish uchun USING narx::numeric ifodasidan foydalanamiz.
+
+4
+00:43.620 --> 00:52.700
+Tashqi kalit bilan bog‘langan jadvalni oddiy DROP qilib bo‘lmaydi. Tranzaksiya ichida
+DROP CASCADE qilsak, bola jadval qolib, faqat cheklov o‘chishini ko‘rishimiz mumkin.
+
+5
+00:56.030 --> 01:04.810
+Tashqi kaliti bor jadvalda TRUNCATE ham xato beradi. Shuningdek PostgreSQL da
+TRUNCATE tranzaksiyaviy xavfsiz bo‘lib, ROLLBACK bilan qatorlar to‘liq qaytariladi.
+
+6
+01:08.180 --> 01:15.990
+PostgreSQL da DDL buyruqlarining tranzaksiyada xavfsiz qaytarilishi
+murakkab migratsiyalarni xatosiz o‘tkazishda beqiyos yordam beradi.
