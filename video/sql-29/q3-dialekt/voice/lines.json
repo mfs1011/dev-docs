@@ -1,0 +1,507 @@
+[
+  {
+    "id": "intro",
+    "scene": "kirish",
+    "text": "MySQL va SQLite tizimlarida CTE sintaksisi va optimizatsiyasidagi asosiy farqlarni tahlil qilamiz.",
+    "show": "MySQL va SQLite tizimlarida CTE sintaksisi va optimizatsiyasidagi asosiy farqlarni tahlil qilamiz.",
+    "say": "May es-kyu-el va Es-kyu-layt tizimlarida si-ti-i sintaksisi va optimizatsiyasidagi asosiy farqlarni tahlil qilamiz.",
+    "a0": 0.28,
+    "a1": 6.78,
+    "words": [
+      {
+        "w": "May",
+        "s": 0.28,
+        "e": 0.46
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 0.5,
+        "e": 0.92
+      },
+      {
+        "w": "va",
+        "s": 1.02,
+        "e": 1.1
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 1.38,
+        "e": 1.98
+      },
+      {
+        "w": "tizimlarida",
+        "s": 2.02,
+        "e": 2.56
+      },
+      {
+        "w": "si-ti-i",
+        "s": 2.74,
+        "e": 3.06
+      },
+      {
+        "w": "sintaksisi",
+        "s": 3.14,
+        "e": 3.72
+      },
+      {
+        "w": "va",
+        "s": 3.8,
+        "e": 3.88
+      },
+      {
+        "w": "optimizatsiyasidagi",
+        "s": 4.08,
+        "e": 5.02
+      },
+      {
+        "w": "asosiy",
+        "s": 5.16,
+        "e": 5.52
+      },
+      {
+        "w": "farqlarni",
+        "s": 5.56,
+        "e": 6.02
+      },
+      {
+        "w": "tahlil",
+        "s": 6.14,
+        "e": 6.44
+      },
+      {
+        "w": "qilamiz.",
+        "s": 6.46,
+        "e": 6.78
+      }
+    ]
+  },
+  {
+    "id": "mysql_insert",
+    "scene": "mysql_limit_va_update",
+    "text": "MySQL da WITH bilan INSERT boshlab bo'lmaydi, lekin UPDATE ichida o'sha jadvaldan o'qishdagi ming to'qson uch xatosi CTE bilan ajoyib hal qilinadi.",
+    "show": "MySQL da WITH bilan INSERT boshlab bo'lmaydi, lekin UPDATE ichida o'sha jadvaldan o'qishdagi ming to'qson uch xatosi CTE bilan ajoyib hal qilinadi.",
+    "say": "May es-kyu-el da viz bilan insert boshlab bo'lmaydi, lekin apdeyt ichida o'sha jadvaldan o'qishdagi ming to'qson uch xatosi si-ti-i bilan ajoyib hal qilinadi.",
+    "a0": 7.32,
+    "a1": 15.39,
+    "words": [
+      {
+        "w": "May",
+        "s": 7.32,
+        "e": 7.46
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 7.51,
+        "e": 7.81
+      },
+      {
+        "w": "da",
+        "s": 7.83,
+        "e": 7.91
+      },
+      {
+        "w": "viz",
+        "s": 8.09,
+        "e": 8.27
+      },
+      {
+        "w": "bilan",
+        "s": 8.35,
+        "e": 8.57
+      },
+      {
+        "w": "insert",
+        "s": 8.67,
+        "e": 9.01
+      },
+      {
+        "w": "boshlab",
+        "s": 9.05,
+        "e": 9.33
+      },
+      {
+        "w": "bo'lmaydi,",
+        "s": 9.35,
+        "e": 9.79
+      },
+      {
+        "w": "lekin",
+        "s": 10.03,
+        "e": 10.27
+      },
+      {
+        "w": "apdeyt",
+        "s": 10.37,
+        "e": 10.67
+      },
+      {
+        "w": "ichida",
+        "s": 10.69,
+        "e": 10.93
+      },
+      {
+        "w": "o'sha",
+        "s": 11.03,
+        "e": 11.17
+      },
+      {
+        "w": "jadvaldan",
+        "s": 11.21,
+        "e": 11.67
+      },
+      {
+        "w": "o'qishdagi",
+        "s": 11.73,
+        "e": 12.15
+      },
+      {
+        "w": "ming",
+        "s": 12.49,
+        "e": 12.65
+      },
+      {
+        "w": "to'qson",
+        "s": 12.69,
+        "e": 13.03
+      },
+      {
+        "w": "uch",
+        "s": 13.09,
+        "e": 13.19
+      },
+      {
+        "w": "xatosi",
+        "s": 13.21,
+        "e": 13.61
+      },
+      {
+        "w": "si-ti-i",
+        "s": 13.87,
+        "e": 14.17
+      },
+      {
+        "w": "bilan",
+        "s": 14.23,
+        "e": 14.41
+      },
+      {
+        "w": "ajoyib",
+        "s": 14.53,
+        "e": 14.87
+      },
+      {
+        "w": "hal",
+        "s": 14.91,
+        "e": 15.03
+      },
+      {
+        "w": "qilinadi.",
+        "s": 15.07,
+        "e": 15.39
+      }
+    ]
+  },
+  {
+    "id": "sqlite_mat",
+    "scene": "sqlite_materialized_hint",
+    "text": "SQLite da MATERIALIZED va NOT MATERIALIZED so'zlari bor, ammo ular majburiy emas, shunchaki optimizator uchun maslahat hisoblanadi.",
+    "show": "SQLite da MATERIALIZED va NOT MATERIALIZED so'zlari bor, ammo ular majburiy emas, shunchaki optimizator uchun maslahat hisoblanadi.",
+    "say": "Es-kyu-layt da materialayzd va not materialayzd so'zlari bor, ammo ular majburiy emas, shunchaki optimizator uchun maslahat hisoblanadi.",
+    "a0": 16.09,
+    "a1": 23.36,
+    "words": [
+      {
+        "w": "Es-kyu-layt",
+        "s": 16.09,
+        "e": 16.57
+      },
+      {
+        "w": "da",
+        "s": 16.61,
+        "e": 16.71
+      },
+      {
+        "w": "materialayzd",
+        "s": 16.83,
+        "e": 17.49
+      },
+      {
+        "w": "va",
+        "s": 17.57,
+        "e": 17.63
+      },
+      {
+        "w": "not",
+        "s": 17.81,
+        "e": 17.97
+      },
+      {
+        "w": "materialayzd",
+        "s": 18.01,
+        "e": 18.67
+      },
+      {
+        "w": "so'zlari",
+        "s": 18.71,
+        "e": 19.07
+      },
+      {
+        "w": "bor,",
+        "s": 19.11,
+        "e": 19.29
+      },
+      {
+        "w": "ammo",
+        "s": 19.45,
+        "e": 19.65
+      },
+      {
+        "w": "ular",
+        "s": 19.93,
+        "e": 20.13
+      },
+      {
+        "w": "majburiy",
+        "s": 20.17,
+        "e": 20.55
+      },
+      {
+        "w": "emas,",
+        "s": 20.59,
+        "e": 20.83
+      },
+      {
+        "w": "shunchaki",
+        "s": 21.01,
+        "e": 21.35
+      },
+      {
+        "w": "optimizator",
+        "s": 21.65,
+        "e": 22.23
+      },
+      {
+        "w": "uchun",
+        "s": 22.27,
+        "e": 22.41
+      },
+      {
+        "w": "maslahat",
+        "s": 22.47,
+        "e": 22.86
+      },
+      {
+        "w": "hisoblanadi.",
+        "s": 22.9,
+        "e": 23.36
+      }
+    ]
+  },
+  {
+    "id": "sqlite_forward",
+    "scene": "sqlite_forward_ref",
+    "text": "Qiziq jihati: PostgreSQL va MySQL xato bergan oldinga murojaat SQLite da jimgina xatosiz ishlab ketadi, ammo bunga tayanmaslik lozim.",
+    "show": "Qiziq jihati: PostgreSQL va MySQL xato bergan oldinga murojaat SQLite da jimgina xatosiz ishlab ketadi, ammo bunga tayanmaslik lozim.",
+    "say": "Qiziq jihati: Postgres va May es-kyu-el xato bergan oldinga murojaat Es-kyu-layt da jimgina xatosiz ishlab ketadi, ammo bunga tayanmaslik lozim.",
+    "a0": 24.08,
+    "a1": 31.98,
+    "words": [
+      {
+        "w": "Qiziq",
+        "s": 24.08,
+        "e": 24.3
+      },
+      {
+        "w": "jihati:",
+        "s": 24.36,
+        "e": 24.7
+      },
+      {
+        "w": "Postgres",
+        "s": 25,
+        "e": 25.42
+      },
+      {
+        "w": "va",
+        "s": 25.48,
+        "e": 25.54
+      },
+      {
+        "w": "May",
+        "s": 25.64,
+        "e": 25.78
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 25.82,
+        "e": 26.12
+      },
+      {
+        "w": "xato",
+        "s": 26.16,
+        "e": 26.38
+      },
+      {
+        "w": "bergan",
+        "s": 26.46,
+        "e": 26.8
+      },
+      {
+        "w": "oldinga",
+        "s": 26.96,
+        "e": 27.34
+      },
+      {
+        "w": "murojaat",
+        "s": 27.38,
+        "e": 27.78
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 28.06,
+        "e": 28.54
+      },
+      {
+        "w": "da",
+        "s": 28.58,
+        "e": 28.68
+      },
+      {
+        "w": "jimgina",
+        "s": 28.9,
+        "e": 29.3
+      },
+      {
+        "w": "xatosiz",
+        "s": 29.34,
+        "e": 29.74
+      },
+      {
+        "w": "ishlab",
+        "s": 29.78,
+        "e": 29.98
+      },
+      {
+        "w": "ketadi,",
+        "s": 30.04,
+        "e": 30.28
+      },
+      {
+        "w": "ammo",
+        "s": 30.7,
+        "e": 30.88
+      },
+      {
+        "w": "bunga",
+        "s": 30.96,
+        "e": 31.18
+      },
+      {
+        "w": "tayanmaslik",
+        "s": 31.22,
+        "e": 31.7
+      },
+      {
+        "w": "lozim.",
+        "s": 31.74,
+        "e": 31.98
+      }
+    ]
+  },
+  {
+    "id": "chegaralar",
+    "scene": "chegaralar",
+    "text": "Shuningdek, har ikki tizimda ham CTE ichida DELETE yoki UPDATE amallari qo'llab-quvvatlanmaydi: CTE faqat SELECT so'rovlari uchundir.",
+    "show": "Shuningdek, har ikki tizimda ham CTE ichida DELETE yoki UPDATE amallari qo'llab-quvvatlanmaydi: CTE faqat SELECT so'rovlari uchundir.",
+    "say": "Shuningdek, har ikki tizimda ham si-ti-i ichida dilit yoki apdeyt amallari qo'llab-quvvatlanmaydi: si-ti-i faqat selekt so'rovlari uchundir.",
+    "a0": 32.71,
+    "a1": 39.6,
+    "words": [
+      {
+        "w": "Shuningdek,",
+        "s": 32.71,
+        "e": 33.07
+      },
+      {
+        "w": "har",
+        "s": 33.17,
+        "e": 33.31
+      },
+      {
+        "w": "ikki",
+        "s": 33.33,
+        "e": 33.49
+      },
+      {
+        "w": "tizimda",
+        "s": 33.53,
+        "e": 33.85
+      },
+      {
+        "w": "ham",
+        "s": 33.87,
+        "e": 34.03
+      },
+      {
+        "w": "si-ti-i",
+        "s": 34.09,
+        "e": 34.39
+      },
+      {
+        "w": "ichida",
+        "s": 34.45,
+        "e": 34.69
+      },
+      {
+        "w": "dilit",
+        "s": 34.85,
+        "e": 35.17
+      },
+      {
+        "w": "yoki",
+        "s": 35.17,
+        "e": 35.49
+      },
+      {
+        "w": "apdeyt",
+        "s": 35.63,
+        "e": 35.93
+      },
+      {
+        "w": "amallari",
+        "s": 35.99,
+        "e": 36.33
+      },
+      {
+        "w": "qo'llab-quvvatlanmaydi:",
+        "s": 36.35,
+        "e": 37.27
+      },
+      {
+        "w": "si-ti-i",
+        "s": 37.64,
+        "e": 37.94
+      },
+      {
+        "w": "faqat",
+        "s": 38,
+        "e": 38.26
+      },
+      {
+        "w": "selekt",
+        "s": 38.56,
+        "e": 38.86
+      },
+      {
+        "w": "so'rovlari",
+        "s": 38.88,
+        "e": 39.26
+      },
+      {
+        "w": "uchundir.",
+        "s": 39.3,
+        "e": 39.6
+      }
+    ]
+  }
+]

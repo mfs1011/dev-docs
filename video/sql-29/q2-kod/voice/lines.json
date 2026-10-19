@@ -1,0 +1,568 @@
+[
+  {
+    "id": "intro",
+    "scene": "kirish",
+    "text": "PostgreSQL 18 da CTE imkoniyatlarini sinab ko'ramiz. Bazamizda guruhlar, baholar va arxiv jadvallari mavjud.",
+    "show": "PostgreSQL 18 da CTE imkoniyatlarini sinab ko'ramiz. Bazamizda guruhlar, baholar va arxiv jadvallari mavjud.",
+    "say": "Postgres 18 da si-ti-i imkoniyatlarini sinab ko'ramiz. Bazamizda guruhlar, baholar va arxiv jadvallari mavjud.",
+    "a0": 0.28,
+    "a1": 5.52,
+    "words": [
+      {
+        "w": "Postgres",
+        "s": 0.28,
+        "e": 0.72
+      },
+      {
+        "w": "18",
+        "s": 0.72,
+        "e": 0.72
+      },
+      {
+        "w": "da",
+        "s": 1.32,
+        "e": 1.4
+      },
+      {
+        "w": "si-ti-i",
+        "s": 1.72,
+        "e": 2.14
+      },
+      {
+        "w": "imkoniyatlarini",
+        "s": 2.24,
+        "e": 2.96
+      },
+      {
+        "w": "sinab",
+        "s": 3.02,
+        "e": 3.24
+      },
+      {
+        "w": "ko'ramiz.",
+        "s": 3.28,
+        "e": 3.6
+      },
+      {
+        "w": "Bazamizda",
+        "s": 3.96,
+        "e": 4.6
+      },
+      {
+        "w": "guruhlar,",
+        "s": 4.6,
+        "e": 4.8
+      },
+      {
+        "w": "baholar",
+        "s": 4.8,
+        "e": 4.94
+      },
+      {
+        "w": "va",
+        "s": 4.94,
+        "e": 4.98
+      },
+      {
+        "w": "arxiv",
+        "s": 5,
+        "e": 5.14
+      },
+      {
+        "w": "jadvallari",
+        "s": 5.14,
+        "e": 5.38
+      },
+      {
+        "w": "mavjud.",
+        "s": 5.38,
+        "e": 5.52
+      }
+    ]
+  },
+  {
+    "id": "zanjir",
+    "scene": "zanjirli_cte",
+    "text": "Zanjirli CTE orqali eng yuqori o'rtacha ballga ega B guruhining talabalari: Vali va Dilnozani osongina ajratib oldik.",
+    "show": "Zanjirli CTE orqali eng yuqori o'rtacha ballga ega B guruhining talabalari: Vali va Dilnozani osongina ajratib oldik.",
+    "say": "Zanjirli si-ti-i orqali eng yuqori o'rtacha ballga ega B guruhining talabalari: Vali va Dilnozani osongina ajratib oldik.",
+    "a0": 5.56,
+    "a1": 12.21,
+    "words": [
+      {
+        "w": "Zanjirli",
+        "s": 5.56,
+        "e": 5.8
+      },
+      {
+        "w": "si-ti-i",
+        "s": 5.8,
+        "e": 5.92
+      },
+      {
+        "w": "orqali",
+        "s": 5.92,
+        "e": 6.24
+      },
+      {
+        "w": "eng",
+        "s": 6.26,
+        "e": 6.4
+      },
+      {
+        "w": "yuqori",
+        "s": 6.44,
+        "e": 6.8
+      },
+      {
+        "w": "o'rtacha",
+        "s": 6.86,
+        "e": 7.2
+      },
+      {
+        "w": "ballga",
+        "s": 7.24,
+        "e": 7.55
+      },
+      {
+        "w": "ega",
+        "s": 7.61,
+        "e": 7.81
+      },
+      {
+        "w": "B",
+        "s": 8.15,
+        "e": 8.17
+      },
+      {
+        "w": "guruhining",
+        "s": 8.37,
+        "e": 8.79
+      },
+      {
+        "w": "talabalari:",
+        "s": 8.81,
+        "e": 9.33
+      },
+      {
+        "w": "Vali",
+        "s": 9.81,
+        "e": 10.05
+      },
+      {
+        "w": "va",
+        "s": 10.15,
+        "e": 10.21
+      },
+      {
+        "w": "Dilnozani",
+        "s": 10.31,
+        "e": 10.85
+      },
+      {
+        "w": "osongina",
+        "s": 11.13,
+        "e": 11.57
+      },
+      {
+        "w": "ajratib",
+        "s": 11.59,
+        "e": 11.95
+      },
+      {
+        "w": "oldik.",
+        "s": 11.99,
+        "e": 12.21
+      }
+    ]
+  },
+  {
+    "id": "ustunlar",
+    "scene": "ustun_nomlari",
+    "text": "CTE nomidan so'ng qavsda guruh va soni kabi yangi ustun nomlarini berib, so'rovni yanada tushunarli qildik.",
+    "show": "CTE nomidan so'ng qavsda guruh va soni kabi yangi ustun nomlarini berib, so'rovni yanada tushunarli qildik.",
+    "say": "Si-ti-i nomidan so'ng qavsda guruh va soni kabi yangi ustun nomlarini berib, so'rovni yanada tushunarli qildik.",
+    "a0": 13.31,
+    "a1": 19.99,
+    "words": [
+      {
+        "w": "Si-ti-i",
+        "s": 13.31,
+        "e": 13.65
+      },
+      {
+        "w": "nomidan",
+        "s": 13.77,
+        "e": 14.15
+      },
+      {
+        "w": "so'ng",
+        "s": 14.21,
+        "e": 14.39
+      },
+      {
+        "w": "qavsda",
+        "s": 14.65,
+        "e": 15.11
+      },
+      {
+        "w": "guruh",
+        "s": 15.37,
+        "e": 15.67
+      },
+      {
+        "w": "va",
+        "s": 15.75,
+        "e": 15.83
+      },
+      {
+        "w": "soni",
+        "s": 16.19,
+        "e": 16.47
+      },
+      {
+        "w": "kabi",
+        "s": 16.53,
+        "e": 16.75
+      },
+      {
+        "w": "yangi",
+        "s": 16.85,
+        "e": 17.13
+      },
+      {
+        "w": "ustun",
+        "s": 17.19,
+        "e": 17.41
+      },
+      {
+        "w": "nomlarini",
+        "s": 17.43,
+        "e": 17.85
+      },
+      {
+        "w": "berib,",
+        "s": 17.87,
+        "e": 18.09
+      },
+      {
+        "w": "so'rovni",
+        "s": 18.35,
+        "e": 18.77
+      },
+      {
+        "w": "yanada",
+        "s": 18.87,
+        "e": 19.17
+      },
+      {
+        "w": "tushunarli",
+        "s": 19.19,
+        "e": 19.67
+      },
+      {
+        "w": "qildik.",
+        "s": 19.73,
+        "e": 19.99
+      }
+    ]
+  },
+  {
+    "id": "xatolar",
+    "scene": "sintaksis_xatolari",
+    "text": "Qoidalarni buzsak, PostgreSQL darhol xato beradi: ketma-ket ikkita WITH yozish ham, hali e'lon qilinmagan CTE ga oldindan murojaat qilish ham taqiqlangan.",
+    "show": "Qoidalarni buzsak, PostgreSQL darhol xato beradi: ketma-ket ikkita WITH yozish ham, hali e'lon qilinmagan CTE ga oldindan murojaat qilish ham taqiqlangan.",
+    "say": "Qoidalarni buzsak, Postgres darhol xato beradi: ketma-ket ikkita viz yozish ham, hali e'lon qilinmagan si-ti-i ga oldindan murojaat qilish ham taqiqlangan.",
+    "a0": 20.93,
+    "a1": 30.14,
+    "words": [
+      {
+        "w": "Qoidalarni",
+        "s": 20.93,
+        "e": 21.43
+      },
+      {
+        "w": "buzsak,",
+        "s": 21.47,
+        "e": 21.77
+      },
+      {
+        "w": "Postgres",
+        "s": 22.03,
+        "e": 22.52
+      },
+      {
+        "w": "darhol",
+        "s": 22.62,
+        "e": 23
+      },
+      {
+        "w": "xato",
+        "s": 23.06,
+        "e": 23.3
+      },
+      {
+        "w": "beradi:",
+        "s": 23.36,
+        "e": 23.66
+      },
+      {
+        "w": "ketma-ket",
+        "s": 24.16,
+        "e": 24.66
+      },
+      {
+        "w": "ikkita",
+        "s": 24.76,
+        "e": 25
+      },
+      {
+        "w": "viz",
+        "s": 25.08,
+        "e": 25.26
+      },
+      {
+        "w": "yozish",
+        "s": 25.3,
+        "e": 25.64
+      },
+      {
+        "w": "ham,",
+        "s": 25.66,
+        "e": 25.8
+      },
+      {
+        "w": "hali",
+        "s": 26.12,
+        "e": 26.32
+      },
+      {
+        "w": "e'lon",
+        "s": 26.4,
+        "e": 26.66
+      },
+      {
+        "w": "qilinmagan",
+        "s": 26.7,
+        "e": 27.2
+      },
+      {
+        "w": "si-ti-i",
+        "s": 27.28,
+        "e": 27.64
+      },
+      {
+        "w": "ga",
+        "s": 27.7,
+        "e": 27.78
+      },
+      {
+        "w": "oldindan",
+        "s": 28.12,
+        "e": 28.52
+      },
+      {
+        "w": "murojaat",
+        "s": 28.58,
+        "e": 28.98
+      },
+      {
+        "w": "qilish",
+        "s": 29.02,
+        "e": 29.22
+      },
+      {
+        "w": "ham",
+        "s": 29.24,
+        "e": 29.36
+      },
+      {
+        "w": "taqiqlangan.",
+        "s": 29.46,
+        "e": 30.14
+      }
+    ]
+  },
+  {
+    "id": "explain",
+    "scene": "materializatsiya_explain",
+    "text": "EXPLAIN rejasida ko'rinadiki, oddiy CTE indeksdan to'g'ridan-to'g'ri foydalanadi, MATERIALIZED esa avval butun jadvalni to'liq o'qiydi.",
+    "show": "EXPLAIN rejasida ko'rinadiki, oddiy CTE indeksdan to'g'ridan-to'g'ri foydalanadi, MATERIALIZED esa avval butun jadvalni to'liq o'qiydi.",
+    "say": "EXPLAIN rejasida ko'rinadiki, oddiy si-ti-i indeksdan to'g'ridan-to'g'ri foydalanadi, materialayzd esa avval butun jadvalni to'liq o'qiydi.",
+    "a0": 31.1,
+    "a1": 39.51,
+    "words": [
+      {
+        "w": "EXPLAIN",
+        "s": 31.1,
+        "e": 31.58
+      },
+      {
+        "w": "rejasida",
+        "s": 31.64,
+        "e": 32.06
+      },
+      {
+        "w": "ko'rinadiki,",
+        "s": 32.12,
+        "e": 32.6
+      },
+      {
+        "w": "oddiy",
+        "s": 33.02,
+        "e": 33.32
+      },
+      {
+        "w": "si-ti-i",
+        "s": 33.42,
+        "e": 33.82
+      },
+      {
+        "w": "indeksdan",
+        "s": 34.18,
+        "e": 34.72
+      },
+      {
+        "w": "to'g'ridan-to'g'ri",
+        "s": 34.81,
+        "e": 35.51
+      },
+      {
+        "w": "foydalanadi,",
+        "s": 35.53,
+        "e": 36.09
+      },
+      {
+        "w": "materialayzd",
+        "s": 36.45,
+        "e": 37.19
+      },
+      {
+        "w": "esa",
+        "s": 37.23,
+        "e": 37.39
+      },
+      {
+        "w": "avval",
+        "s": 37.71,
+        "e": 38.01
+      },
+      {
+        "w": "butun",
+        "s": 38.09,
+        "e": 38.35
+      },
+      {
+        "w": "jadvalni",
+        "s": 38.39,
+        "e": 38.81
+      },
+      {
+        "w": "to'liq",
+        "s": 38.91,
+        "e": 39.17
+      },
+      {
+        "w": "o'qiydi.",
+        "s": 39.21,
+        "e": 39.51
+      }
+    ]
+  },
+  {
+    "id": "kochiruvchi",
+    "scene": "qatorlarni_kochiruvchi_cte",
+    "text": "Eng ajoyib imkoniyat: DELETE amalini RETURNING bilan CTE ichida bajarib, o'chirilgan qatorlarni bitta operatorda arxiv jadvaliga ko'chirdik.",
+    "show": "Eng ajoyib imkoniyat: DELETE amalini RETURNING bilan CTE ichida bajarib, o'chirilgan qatorlarni bitta operatorda arxiv jadvaliga ko'chirdik.",
+    "say": "Eng ajoyib imkoniyat: dilit amalini rityorning bilan si-ti-i ichida bajarib, o'chirilgan qatorlarni bitta operatorda arxiv jadvaliga ko'chirdik.",
+    "a0": 40.37,
+    "a1": 48.72,
+    "words": [
+      {
+        "w": "Eng",
+        "s": 40.37,
+        "e": 40.51
+      },
+      {
+        "w": "ajoyib",
+        "s": 40.59,
+        "e": 40.95
+      },
+      {
+        "w": "imkoniyat:",
+        "s": 40.97,
+        "e": 41.45
+      },
+      {
+        "w": "dilit",
+        "s": 41.91,
+        "e": 42.25
+      },
+      {
+        "w": "amalini",
+        "s": 42.31,
+        "e": 42.67
+      },
+      {
+        "w": "rityorning",
+        "s": 42.75,
+        "e": 43.21
+      },
+      {
+        "w": "bilan",
+        "s": 43.23,
+        "e": 43.41
+      },
+      {
+        "w": "si-ti-i",
+        "s": 43.67,
+        "e": 44.01
+      },
+      {
+        "w": "ichida",
+        "s": 44.09,
+        "e": 44.36
+      },
+      {
+        "w": "bajarib,",
+        "s": 44.4,
+        "e": 44.78
+      },
+      {
+        "w": "o'chirilgan",
+        "s": 45.1,
+        "e": 45.58
+      },
+      {
+        "w": "qatorlarni",
+        "s": 45.62,
+        "e": 46.18
+      },
+      {
+        "w": "bitta",
+        "s": 46.4,
+        "e": 46.66
+      },
+      {
+        "w": "operatorda",
+        "s": 46.7,
+        "e": 47.2
+      },
+      {
+        "w": "arxiv",
+        "s": 47.54,
+        "e": 47.84
+      },
+      {
+        "w": "jadvaliga",
+        "s": 47.88,
+        "e": 48.3
+      },
+      {
+        "w": "ko'chirdik.",
+        "s": 48.34,
+        "e": 48.72
+      }
+    ]
+  }
+]

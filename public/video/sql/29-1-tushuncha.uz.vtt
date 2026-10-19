@@ -1,0 +1,31 @@
+WEBVTT
+
+1
+00:01.420 --> 00:11.120
+CTE — so'rov boshida WITH kalit so'zi bilan e'lon qilinadigan nomli vaqtinchalik
+natijadir. U murakkab so'rovlarni sodda bo'laklarga ajratish uchun xizmat qiladi.
+
+2
+00:13.930 --> 00:23.180
+Hosila jadvaldan farqli o'laroq, bitta CTE ga bir nechta joyda qayta
+murojaat qilish mumkin va bir CTE o'zidan oldingisiga bemalol tayanadi.
+
+3
+00:26.170 --> 00:37.230
+Asosiy qoidalar: bitta WITH ichida barcha CTE lar vergul bilan ajratiladi, ikkinchi
+WITH yozish xato hisoblanadi va CTE faqat o'zidan oldingisini ko'ra oladi.
+
+4
+00:38.520 --> 00:45.240
+Natija ustunlarining nomlarini CTE nomidan keyin qavsda
+aniq ko'rsatish orqali kodni yanada ixcham qilish mumkin.
+
+5
+00:47.910 --> 00:55.800
+Materializatsiya orqali natija vaqtinchalik xotiraga yoziladi yoki
+aksincha, NOT MATERIALIZED orqali tashqi so'rovga qo'shib yuboriladi.
+
+6
+00:58.950 --> 01:07.390
+PostgreSQL da CTE ichida DELETE yoki UPDATE amallarini RETURNING bilan
+ishlatib, bitta tranzaksiyada qatorlarni arxivga ko'chirish mumkin.

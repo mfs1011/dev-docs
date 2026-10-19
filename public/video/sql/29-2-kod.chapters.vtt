@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:08.380
+PostgreSQL 18: Sinov Jadvallari
+
+00:08.380 --> 00:18.263
+Zanjirli va Ko'p Murojaatli CTE
+
+00:18.263 --> 00:28.636
+Ustun Nomlarini Aniq Belgilash
+
+00:28.636 --> 00:41.639
+Ikki WITH va Oldinga Murojaat Xatolari
+
+00:41.639 --> 00:53.754
+EXPLAIN: MATERIALIZED vs Inline Rejasi
+
+00:53.754 --> 01:07.840
+DELETE + RETURNING: Bitta Tranzaksiyada Ko'chirish
