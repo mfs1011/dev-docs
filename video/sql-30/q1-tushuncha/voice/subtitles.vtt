@@ -1,0 +1,31 @@
+WEBVTT
+
+1
+00:01.420 --> 00:09.780
+WITH RECURSIVE kalit so'zi CTE ni oddiy qulaylikdan standart SQL da
+boshqa yo'l bilan qilib bo'lmaydigan qudratli imkoniyatga aylantiradi.
+
+2
+00:12.390 --> 00:20.440
+Uning tuzilishi uch qismdan iborat: boshlang'ich so'rov, birlashtiruvchi
+UNION ALL va o'z-o'ziga murojaat qiluvchi rekursiv qism.
+
+3
+00:23.690 --> 00:31.690
+Baza ichida rekursiya ishchi jadval orqali iteratsiya bilan bajariladi:
+har qadamda chiqqan yangi qatorlar keyingi qadam uchun manba bo'ladi.
+
+4
+00:34.560 --> 00:42.950
+Bu usul tashkilot tuzilmasi kabi bitta ota-onaga ega daraxtlarni ham,
+yo'llar tarmog'i kabi murakkab graflarni ham tahlil qilish imkonini beradi.
+
+5
+00:45.820 --> 00:54.740
+Ma'lumotlarni ikki tartibda olish mumkin: avval butun bir darajani ko'rish kenglik
+bo'yicha, har bir shoxni oxirigacha o'rganish esa chuqurlik bo'yicha qidiruvdir.
+
+6
+00:57.790 --> 01:05.230
+Grafda aylana mavjud bo'lsa, so'rov cheksiz aylanib qolmasligi
+uchun to'xtash sharti yoki yo'lni kuzatib boruvchi mexanizm shart.

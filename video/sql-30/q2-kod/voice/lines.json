@@ -1,0 +1,533 @@
+[
+  {
+    "id": "intro",
+    "scene": "kirish",
+    "text": "PostgreSQL 18 da rekursiv CTE amaliyotini boshlaymiz: bazamizda xodimlar ierarxiyasi va aylanali yo'llar grafigi mavjud.",
+    "show": "PostgreSQL 18 da rekursiv CTE amaliyotini boshlaymiz: bazamizda xodimlar ierarxiyasi va aylanali yo'llar grafigi mavjud.",
+    "say": "Postgres 18 da rekursiv si-ti-i amaliyotini boshlaymiz: bazamizda xodimlar ierarxiyasi va aylanali yo'llar grafigi mavjud.",
+    "a0": 0.24,
+    "a1": 7.75,
+    "words": [
+      {
+        "w": "Postgres",
+        "s": 0.24,
+        "e": 0.68
+      },
+      {
+        "w": "18",
+        "s": 0.68,
+        "e": 0.68
+      },
+      {
+        "w": "da",
+        "s": 1.24,
+        "e": 1.32
+      },
+      {
+        "w": "rekursiv",
+        "s": 1.52,
+        "e": 1.96
+      },
+      {
+        "w": "si-ti-i",
+        "s": 2.04,
+        "e": 2.46
+      },
+      {
+        "w": "amaliyotini",
+        "s": 2.62,
+        "e": 3.12
+      },
+      {
+        "w": "boshlaymiz:",
+        "s": 3.16,
+        "e": 3.62
+      },
+      {
+        "w": "bazamizda",
+        "s": 4.16,
+        "e": 4.6
+      },
+      {
+        "w": "xodimlar",
+        "s": 4.64,
+        "e": 5.08
+      },
+      {
+        "w": "ierarxiyasi",
+        "s": 5.18,
+        "e": 5.8
+      },
+      {
+        "w": "va",
+        "s": 5.86,
+        "e": 5.92
+      },
+      {
+        "w": "aylanali",
+        "s": 6.04,
+        "e": 6.48
+      },
+      {
+        "w": "yo'llar",
+        "s": 6.56,
+        "e": 6.9
+      },
+      {
+        "w": "grafigi",
+        "s": 6.96,
+        "e": 7.38
+      },
+      {
+        "w": "mavjud.",
+        "s": 7.42,
+        "e": 7.75
+      }
+    ]
+  },
+  {
+    "id": "sonlar",
+    "scene": "sonlar_ketma_ketligi",
+    "text": "Boshlanishiga birdan yuzgacha bo'lgan sonlar ketma-ketligini hosil qilib, ularning yig'indisi besh ming ellik ekanini bir zumda hisobladik.",
+    "show": "Boshlanishiga birdan yuzgacha bo'lgan sonlar ketma-ketligini hosil qilib, ularning yig'indisi besh ming ellik ekanini bir zumda hisobladik.",
+    "say": "Boshlanishiga birdan yuzgacha bo'lgan sonlar ketma-ketligini hosil qilib, ularning yig'indisi besh ming ellik ekanini bir zumda hisobladik.",
+    "a0": 8.45,
+    "a1": 15.53,
+    "words": [
+      {
+        "w": "Boshlanishiga",
+        "s": 8.45,
+        "e": 9.03
+      },
+      {
+        "w": "birdan",
+        "s": 9.15,
+        "e": 9.45
+      },
+      {
+        "w": "yuzgacha",
+        "s": 9.53,
+        "e": 9.89
+      },
+      {
+        "w": "bo'lgan",
+        "s": 9.91,
+        "e": 10.21
+      },
+      {
+        "w": "sonlar",
+        "s": 10.27,
+        "e": 10.59
+      },
+      {
+        "w": "ketma-ketligini",
+        "s": 10.63,
+        "e": 11.29
+      },
+      {
+        "w": "hosil",
+        "s": 11.33,
+        "e": 11.59
+      },
+      {
+        "w": "qilib,",
+        "s": 11.65,
+        "e": 11.83
+      },
+      {
+        "w": "ularning",
+        "s": 12.25,
+        "e": 12.61
+      },
+      {
+        "w": "yig'indisi",
+        "s": 12.63,
+        "e": 13.11
+      },
+      {
+        "w": "besh",
+        "s": 13.29,
+        "e": 13.49
+      },
+      {
+        "w": "ming",
+        "s": 13.55,
+        "e": 13.69
+      },
+      {
+        "w": "ellik",
+        "s": 13.81,
+        "e": 14.11
+      },
+      {
+        "w": "ekanini",
+        "s": 14.19,
+        "e": 14.57
+      },
+      {
+        "w": "bir",
+        "s": 14.63,
+        "e": 14.73
+      },
+      {
+        "w": "zumda",
+        "s": 14.79,
+        "e": 15.01
+      },
+      {
+        "w": "hisobladik.",
+        "s": 15.05,
+        "e": 15.53
+      }
+    ]
+  },
+  {
+    "id": "daraja",
+    "scene": "daraxt_va_darajalar",
+    "text": "Xodimlar jadvalida Alisadan boshlab har bir bo'ysunuvchining tashkilotdagi darajasini rekursiv ravishda osongina aniqladik.",
+    "show": "Xodimlar jadvalida Alisadan boshlab har bir bo'ysunuvchining tashkilotdagi darajasini rekursiv ravishda osongina aniqladik.",
+    "say": "Xodimlar jadvalida Alisadan boshlab har bir bo'ysunuvchining tashkilotdagi darajasini rekursiv ravishda osongina aniqladik.",
+    "a0": 16.29,
+    "a1": 23.32,
+    "words": [
+      {
+        "w": "Xodimlar",
+        "s": 16.29,
+        "e": 16.71
+      },
+      {
+        "w": "jadvalida",
+        "s": 16.77,
+        "e": 17.23
+      },
+      {
+        "w": "Alisadan",
+        "s": 17.63,
+        "e": 18.11
+      },
+      {
+        "w": "boshlab",
+        "s": 18.17,
+        "e": 18.49
+      },
+      {
+        "w": "har",
+        "s": 18.59,
+        "e": 18.79
+      },
+      {
+        "w": "bir",
+        "s": 18.85,
+        "e": 18.95
+      },
+      {
+        "w": "bo'ysunuvchining",
+        "s": 19.01,
+        "e": 19.65
+      },
+      {
+        "w": "tashkilotdagi",
+        "s": 19.69,
+        "e": 20.39
+      },
+      {
+        "w": "darajasini",
+        "s": 20.45,
+        "e": 20.99
+      },
+      {
+        "w": "rekursiv",
+        "s": 21.33,
+        "e": 21.79
+      },
+      {
+        "w": "ravishda",
+        "s": 21.85,
+        "e": 22.21
+      },
+      {
+        "w": "osongina",
+        "s": 22.37,
+        "e": 22.82
+      },
+      {
+        "w": "aniqladik.",
+        "s": 22.84,
+        "e": 23.32
+      }
+    ]
+  },
+  {
+    "id": "yol",
+    "scene": "daraxt_yoli_va_chuqurlik",
+    "text": "Yo'l ustunini qo'shib, satrli indentatsiya yordamida butun korxona tuzilmasini chuqurlik bo'yicha chiroyli daraxt shaklida chiqardik.",
+    "show": "Yo'l ustunini qo'shib, satrli indentatsiya yordamida butun korxona tuzilmasini chuqurlik bo'yicha chiroyli daraxt shaklida chiqardik.",
+    "say": "Yo'l ustunini qo'shib, satrli indentatsiya yordamida butun korxona tuzilmasini chuqurlik bo'yicha chiroyli daraxt shaklida chiqardik.",
+    "a0": 24.02,
+    "a1": 31.34,
+    "words": [
+      {
+        "w": "Yo'l",
+        "s": 24.02,
+        "e": 24.24
+      },
+      {
+        "w": "ustunini",
+        "s": 24.34,
+        "e": 24.74
+      },
+      {
+        "w": "qo'shib,",
+        "s": 24.78,
+        "e": 25.06
+      },
+      {
+        "w": "satrli",
+        "s": 25.36,
+        "e": 25.78
+      },
+      {
+        "w": "indentatsiya",
+        "s": 25.94,
+        "e": 26.56
+      },
+      {
+        "w": "yordamida",
+        "s": 26.56,
+        "e": 27
+      },
+      {
+        "w": "butun",
+        "s": 27.4,
+        "e": 27.72
+      },
+      {
+        "w": "korxona",
+        "s": 27.8,
+        "e": 28.18
+      },
+      {
+        "w": "tuzilmasini",
+        "s": 28.24,
+        "e": 28.74
+      },
+      {
+        "w": "chuqurlik",
+        "s": 28.82,
+        "e": 29.24
+      },
+      {
+        "w": "bo'yicha",
+        "s": 29.3,
+        "e": 29.56
+      },
+      {
+        "w": "chiroyli",
+        "s": 29.66,
+        "e": 30
+      },
+      {
+        "w": "daraxt",
+        "s": 30.16,
+        "e": 30.48
+      },
+      {
+        "w": "shaklida",
+        "s": 30.52,
+        "e": 30.92
+      },
+      {
+        "w": "chiqardik.",
+        "s": 30.98,
+        "e": 31.34
+      }
+    ]
+  },
+  {
+    "id": "cycle",
+    "scene": "search_va_cycle",
+    "text": "PostgreSQL ning ajoyib yangiliklari: SEARCH tartibni avtomatik boshqaradi, CYCLE esa aylanali grafda cheksiz siklni bir zumda to'xtatadi.",
+    "show": "PostgreSQL ning ajoyib yangiliklari: SEARCH tartibni avtomatik boshqaradi, CYCLE esa aylanali grafda cheksiz siklni bir zumda to'xtatadi.",
+    "say": "Postgres ning ajoyib yangiliklari: sorch tartibni avtomatik boshqaradi, saykl esa aylanali grafda cheksiz siklni bir zumda to'xtatadi.",
+    "a0": 32.1,
+    "a1": 40.51,
+    "words": [
+      {
+        "w": "Postgres",
+        "s": 32.1,
+        "e": 32.52
+      },
+      {
+        "w": "ning",
+        "s": 32.56,
+        "e": 32.68
+      },
+      {
+        "w": "ajoyib",
+        "s": 32.78,
+        "e": 33.18
+      },
+      {
+        "w": "yangiliklari:",
+        "s": 33.24,
+        "e": 33.82
+      },
+      {
+        "w": "sorch",
+        "s": 34.3,
+        "e": 34.58
+      },
+      {
+        "w": "tartibni",
+        "s": 34.74,
+        "e": 35.17
+      },
+      {
+        "w": "avtomatik",
+        "s": 35.27,
+        "e": 35.75
+      },
+      {
+        "w": "boshqaradi,",
+        "s": 35.79,
+        "e": 36.25
+      },
+      {
+        "w": "saykl",
+        "s": 36.69,
+        "e": 37.01
+      },
+      {
+        "w": "esa",
+        "s": 37.07,
+        "e": 37.25
+      },
+      {
+        "w": "aylanali",
+        "s": 37.61,
+        "e": 38.05
+      },
+      {
+        "w": "grafda",
+        "s": 38.11,
+        "e": 38.45
+      },
+      {
+        "w": "cheksiz",
+        "s": 38.55,
+        "e": 39.03
+      },
+      {
+        "w": "siklni",
+        "s": 39.09,
+        "e": 39.49
+      },
+      {
+        "w": "bir",
+        "s": 39.61,
+        "e": 39.73
+      },
+      {
+        "w": "zumda",
+        "s": 39.79,
+        "e": 40.01
+      },
+      {
+        "w": "to'xtatadi.",
+        "s": 40.05,
+        "e": 40.51
+      }
+    ]
+  },
+  {
+    "id": "cheklov",
+    "scene": "sintaksis_cheklovlari",
+    "text": "Unutmang: rekursiv qism ichida agregat funksiyalar, hamda PostgreSQL da LIMIT yoki ORDER BY yozish qat'iyan taqiqlangan.",
+    "show": "Unutmang: rekursiv qism ichida agregat funksiyalar, hamda PostgreSQL da LIMIT yoki ORDER BY yozish qat'iyan taqiqlangan.",
+    "say": "Unutmang: rekursiv qism ichida agregat funksiyalar, hamda Postgres da limit yoki order bay yozish qat'iyan taqiqlangan.",
+    "a0": 41.17,
+    "a1": 48.66,
+    "words": [
+      {
+        "w": "Unutmang:",
+        "s": 41.17,
+        "e": 41.55
+      },
+      {
+        "w": "rekursiv",
+        "s": 41.89,
+        "e": 42.31
+      },
+      {
+        "w": "qism",
+        "s": 42.37,
+        "e": 42.59
+      },
+      {
+        "w": "ichida",
+        "s": 42.67,
+        "e": 42.91
+      },
+      {
+        "w": "agregat",
+        "s": 43.07,
+        "e": 43.47
+      },
+      {
+        "w": "funksiyalar,",
+        "s": 43.51,
+        "e": 43.99
+      },
+      {
+        "w": "hamda",
+        "s": 44.23,
+        "e": 44.5
+      },
+      {
+        "w": "Postgres",
+        "s": 44.64,
+        "e": 45.1
+      },
+      {
+        "w": "da",
+        "s": 45.14,
+        "e": 45.24
+      },
+      {
+        "w": "limit",
+        "s": 45.48,
+        "e": 45.8
+      },
+      {
+        "w": "yoki",
+        "s": 45.82,
+        "e": 46.16
+      },
+      {
+        "w": "order",
+        "s": 46.34,
+        "e": 46.62
+      },
+      {
+        "w": "bay",
+        "s": 46.66,
+        "e": 46.8
+      },
+      {
+        "w": "yozish",
+        "s": 46.82,
+        "e": 47.14
+      },
+      {
+        "w": "qat'iyan",
+        "s": 47.46,
+        "e": 47.96
+      },
+      {
+        "w": "taqiqlangan.",
+        "s": 48,
+        "e": 48.66
+      }
+    ]
+  }
+]

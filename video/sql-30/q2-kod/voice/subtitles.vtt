@@ -1,0 +1,31 @@
+WEBVTT
+
+1
+00:01.420 --> 00:09.380
+PostgreSQL 18 da rekursiv CTE amaliyotini boshlaymiz: bazamizda
+xodimlar ierarxiyasi va aylanali yo'llar grafigi mavjud.
+
+2
+00:12.030 --> 00:19.560
+Boshlanishiga birdan yuzgacha bo'lgan sonlar ketma-ketligini hosil
+qilib, ularning yig'indisi besh ming ellik ekanini bir zumda hisobladik.
+
+3
+00:22.670 --> 00:30.150
+Xodimlar jadvalida Alisadan boshlab har bir bo'ysunuvchining
+tashkilotdagi darajasini rekursiv ravishda osongina aniqladik.
+
+4
+00:33.200 --> 00:40.970
+Yo'l ustunini qo'shib, satrli indentatsiya yordamida butun korxona
+tuzilmasini chuqurlik bo'yicha chiroyli daraxt shaklida chiqardik.
+
+5
+00:44.080 --> 00:52.940
+PostgreSQL ning ajoyib yangiliklari: SEARCH tartibni avtomatik boshqaradi,
+CYCLE esa aylanali grafda cheksiz siklni bir zumda to'xtatadi.
+
+6
+00:55.950 --> 01:03.890
+Unutmang: rekursiv qism ichida agregat funksiyalar, hamda
+PostgreSQL da LIMIT yoki ORDER BY yozish qat'iyan taqiqlangan.

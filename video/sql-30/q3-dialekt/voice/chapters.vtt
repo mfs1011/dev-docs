@@ -1,0 +1,16 @@
+WEBVTT
+
+00:00.000 --> 00:10.595
+Dialektlar: MySQL va SQLite Farqlari
+
+00:10.595 --> 00:21.803
+MySQL: VALUES ROW va SEARCH/CYCLE Yo'qligi
+
+00:21.803 --> 00:33.672
+MySQL: Tiplar Kengligi va Daraja Cheklovi
+
+00:33.672 --> 00:45.726
+SQLite: Navbat Algoritmi va Ichki ORDER BY
+
+00:45.726 --> 00:58.600
+SQLite: Ixtiyoriy RECURSIVE va Xulosa

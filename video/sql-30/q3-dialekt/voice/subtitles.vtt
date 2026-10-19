@@ -1,0 +1,26 @@
+WEBVTT
+
+1
+00:01.420 --> 00:09.050
+MySQL va SQLite tizimlarida rekursiv CTE mexanizmi va
+dialektlarga xos bo'lgan nozik jihatlarni tahlil qilamiz.
+
+2
+00:11.910 --> 00:19.960
+MySQL da VALUES ROW shaklida yozilishi shart, SEARCH va CYCLE
+bandlari yo'qligi sababli yo'llar CONCAT orqali qo'lda yig'iladi.
+
+3
+00:22.950 --> 00:31.650
+Ustun kengligi faqat boshlang'ich qismdan olingani uchun CAST yordamida zaxira
+joy ajratish kerak, shuningdek mingta qadamlik himoya chegarasi mavjud.
+
+4
+00:34.800 --> 00:43.880
+SQLite rekursiyani navbat orqali bajaradi va rekursiv qism ichida ORDER
+BY ishlatib chuqurlik yoki kenglik tartibini bevosita boshqarish mumkin.
+
+5
+00:46.850 --> 00:54.470
+Hatto RECURSIVE kalit so'zi yozilmasa ham SQLite da rekursiya
+ishlayveradi, biroq kod ko'chirilishi uchun doim standartga amal qiling.
