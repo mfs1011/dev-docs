@@ -1,0 +1,26 @@
+WEBVTT
+
+1
+00:01.420 --> 00:11.620
+Sotuvlar jadvali misolida EXTRACT yordamida sana qismlarini ajratamiz, yakshanba
+kuni uchun DOW nol qiymat bersa, ISODOW yettinchi kun deb to'g'ri ko'rsatadi.
+
+2
+00:14.310 --> 00:23.160
+date_trunc bilan vaqtni oy boshiga yaxlitlab guruhlaymiz va yanvar, fevral
+hamda mart oylari bo'yicha sotuvlar soni va umumiy summasini hisoblaymiz.
+
+3
+00:26.250 --> 00:34.730
+date_bin funksiyasi esa bitta soat ichida sodir bo'lgan tranzaksiyalarni o'n
+besh daqiqalik oraliqlarga ajratib, nozik davriy tahlil qilish imkonini beradi.
+
+4
+00:37.800 --> 00:46.240
+generate_series bilan olti kunlik to'liq oraliq ochib, unga sotuvlarni yarim
+ochiq chegara bilan birlashtiramiz va savdo bo'lmagan kunlarga nol qo'yamiz.
+
+5
+00:49.470 --> 00:58.350
+age funksiyasi ikki sana orasidagi yillik va oylik farqni aniqlaydi, bir
+oylik interval qo'shib bir kun ayirish esa oyning oxirgi kunini topib beradi.

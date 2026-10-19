@@ -1,0 +1,26 @@
+WEBVTT
+
+1
+00:01.420 --> 00:11.740
+Sana funksiyalarida relyatsion bazalar o'rtasida katta tafovutlar mavjud bo'lib,
+saqlash tipi, hafta kunini raqamlash va yaxlitlash mexanizmlari jiddiy farq qiladi.
+
+2
+00:14.690 --> 00:25.360
+MySQL da date_trunc yo'qligi sababli oy boshi uchun DATE_FORMAT satrga
+aylantiriladi, hafta kunida esa MySQL dushanbaga ikki yoki nol qiymatini beradi.
+
+3
+00:28.880 --> 00:37.950
+Postgresdagi generate_series muqobili sifatida MySQL va SQLite da
+rekursiv CTE yordamida uzluksiz kunlar ro'yxati generatsiya qilinadi.
+
+4
+00:41.300 --> 00:51.840
+Sanalar farqida MySQL TIMESTAMPDIFF va DATEDIFF dan foydalansa, oy oxirini
+topish uchun MySQL da LAST_DAY, SQLite da esa end of month modifikatori mavjud.
+
+5
+00:55.190 --> 01:06.010
+Joriy vaqtda Postgresdagi now tranzaksiya boshini anglatsa, MySQL dagi NOW faqat operator
+boshini beradi, portativ kodda esa sanalarni satrga aylantirmaslik tavsiya etiladi.

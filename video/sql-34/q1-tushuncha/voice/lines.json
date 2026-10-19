@@ -1,0 +1,637 @@
+[
+  {
+    "scene": "kirish",
+    "id": "intro",
+    "text": "Sana funksiyalari hisobotlar tuzish, davriy guruhlash va bo'sh kunlarni aniqlashda asosiy vosita bo'lib, relyatsion bazalarda ularning o'ziga xos qoidalari mavjud.",
+    "show": "Sana funksiyalari hisobotlar tuzish, davriy guruhlash va bo'sh kunlarni aniqlashda asosiy vosita bo'lib, relyatsion bazalarda ularning o'ziga xos qoidalari mavjud.",
+    "say": "Sana funksiyalari hisobotlar tuzish, davriy guruhlash va bo'sh kunlarni aniqlashda asosiy vosita bo'lib, relyatsion bazalarda ularning o'ziga xos qoidalari mavjud.",
+    "a0": 0.28,
+    "a1": 9.15,
+    "words": [
+      {
+        "w": "Sana",
+        "s": 0.28,
+        "e": 0.46
+      },
+      {
+        "w": "funksiyalari",
+        "s": 0.5,
+        "e": 1.04
+      },
+      {
+        "w": "hisobotlar",
+        "s": 1.14,
+        "e": 1.7
+      },
+      {
+        "w": "tuzish,",
+        "s": 1.74,
+        "e": 2.1
+      },
+      {
+        "w": "davriy",
+        "s": 2.26,
+        "e": 2.58
+      },
+      {
+        "w": "guruhlash",
+        "s": 2.64,
+        "e": 3.08
+      },
+      {
+        "w": "va",
+        "s": 3.16,
+        "e": 3.24
+      },
+      {
+        "w": "bo'sh",
+        "s": 3.48,
+        "e": 3.68
+      },
+      {
+        "w": "kunlarni",
+        "s": 3.72,
+        "e": 4.08
+      },
+      {
+        "w": "aniqlashda",
+        "s": 4.12,
+        "e": 4.58
+      },
+      {
+        "w": "asosiy",
+        "s": 4.72,
+        "e": 5.14
+      },
+      {
+        "w": "vosita",
+        "s": 5.22,
+        "e": 5.62
+      },
+      {
+        "w": "bo'lib,",
+        "s": 5.66,
+        "e": 5.9
+      },
+      {
+        "w": "relyatsion",
+        "s": 6.26,
+        "e": 6.7
+      },
+      {
+        "w": "bazalarda",
+        "s": 6.76,
+        "e": 7.32
+      },
+      {
+        "w": "ularning",
+        "s": 7.4,
+        "e": 7.77
+      },
+      {
+        "w": "o'ziga",
+        "s": 7.91,
+        "e": 8.15
+      },
+      {
+        "w": "xos",
+        "s": 8.19,
+        "e": 8.37
+      },
+      {
+        "w": "qoidalari",
+        "s": 8.41,
+        "e": 8.85
+      },
+      {
+        "w": "mavjud.",
+        "s": 8.87,
+        "e": 9.15
+      }
+    ]
+  },
+  {
+    "scene": "extract_va_hafta_kuni",
+    "id": "extract",
+    "text": "EXTRACT yordamida yil, oy va hafta kunini ajratamiz, ammo hafta kunini raqamlash tizimlararo farq qiladi, shuning uchun dushanbani bir, yakshanbani yetti deb hisoblovchi ISODOW standartiga tayanishingiz tavsiya etiladi.",
+    "show": "EXTRACT yordamida yil, oy va hafta kunini ajratamiz, ammo hafta kunini raqamlash tizimlararo farq qiladi, shuning uchun dushanbani bir, yakshanbani yetti deb hisoblovchi ISODOW standartiga tayanishingiz tavsiya etiladi.",
+    "say": "Ekstrakt yordamida yil, oy va hafta kunini ajratamiz, ammo hafta kunini raqamlash tizimlararo farq qiladi, shuning uchun dushanbani bir, yakshanbani yetti deb hisoblovchi aysodov standartiga tayanishingiz tavsiya etiladi.",
+    "a0": 9.71,
+    "a1": 23.1,
+    "words": [
+      {
+        "w": "Ekstrakt",
+        "s": 9.71,
+        "e": 10.13
+      },
+      {
+        "w": "yordamida",
+        "s": 10.17,
+        "e": 10.65
+      },
+      {
+        "w": "yil,",
+        "s": 10.85,
+        "e": 11.13
+      },
+      {
+        "w": "oy",
+        "s": 11.39,
+        "e": 11.55
+      },
+      {
+        "w": "va",
+        "s": 11.63,
+        "e": 11.69
+      },
+      {
+        "w": "hafta",
+        "s": 11.83,
+        "e": 12.11
+      },
+      {
+        "w": "kunini",
+        "s": 12.17,
+        "e": 12.41
+      },
+      {
+        "w": "ajratamiz,",
+        "s": 12.45,
+        "e": 13.03
+      },
+      {
+        "w": "ammo",
+        "s": 13.41,
+        "e": 13.57
+      },
+      {
+        "w": "hafta",
+        "s": 13.69,
+        "e": 13.97
+      },
+      {
+        "w": "kunini",
+        "s": 14.03,
+        "e": 14.29
+      },
+      {
+        "w": "raqamlash",
+        "s": 14.33,
+        "e": 14.81
+      },
+      {
+        "w": "tizimlararo",
+        "s": 14.83,
+        "e": 15.37
+      },
+      {
+        "w": "farq",
+        "s": 15.47,
+        "e": 15.67
+      },
+      {
+        "w": "qiladi,",
+        "s": 15.71,
+        "e": 15.99
+      },
+      {
+        "w": "shuning",
+        "s": 16.31,
+        "e": 16.49
+      },
+      {
+        "w": "uchun",
+        "s": 16.49,
+        "e": 16.71
+      },
+      {
+        "w": "dushanbani",
+        "s": 17.03,
+        "e": 17.59
+      },
+      {
+        "w": "bir,",
+        "s": 17.67,
+        "e": 17.83
+      },
+      {
+        "w": "yakshanbani",
+        "s": 18.13,
+        "e": 18.63
+      },
+      {
+        "w": "yetti",
+        "s": 18.71,
+        "e": 18.95
+      },
+      {
+        "w": "deb",
+        "s": 18.99,
+        "e": 19.11
+      },
+      {
+        "w": "hisoblovchi",
+        "s": 19.15,
+        "e": 19.65
+      },
+      {
+        "w": "aysodov",
+        "s": 19.81,
+        "e": 20.83
+      },
+      {
+        "w": "standartiga",
+        "s": 20.97,
+        "e": 21.49
+      },
+      {
+        "w": "tayanishingiz",
+        "s": 21.53,
+        "e": 22.15
+      },
+      {
+        "w": "tavsiya",
+        "s": 22.39,
+        "e": 22.78
+      },
+      {
+        "w": "etiladi.",
+        "s": 22.8,
+        "e": 23.1
+      }
+    ]
+  },
+  {
+    "scene": "yaxlitlash_trunc_va_bin",
+    "id": "yaxlitlash",
+    "text": "date_trunc funksiyasi sanani oy yoki soat boshiga yaxlitlab oylik hisobot tuzish imkonini beradi, date_bin esa ixtiyoriy o'n besh daqiqalik oraliqlarni guruhlash uchun qulaydir.",
+    "show": "date_trunc funksiyasi sanani oy yoki soat boshiga yaxlitlab oylik hisobot tuzish imkonini beradi, date_bin esa ixtiyoriy o'n besh daqiqalik oraliqlarni guruhlash uchun qulaydir.",
+    "say": "Deyt trank funksiyasi sanani oy yoki soat boshiga yaxlitlab oylik hisobot tuzish imkonini beradi, deyt bin esa ixtiyoriy o'n besh daqiqalik oraliqlarni guruhlash uchun qulaydir.",
+    "a0": 23.74,
+    "a1": 33.54,
+    "words": [
+      {
+        "w": "Deyt",
+        "s": 23.74,
+        "e": 23.94
+      },
+      {
+        "w": "trank",
+        "s": 24,
+        "e": 24.24
+      },
+      {
+        "w": "funksiyasi",
+        "s": 24.26,
+        "e": 24.72
+      },
+      {
+        "w": "sanani",
+        "s": 24.82,
+        "e": 25.14
+      },
+      {
+        "w": "oy",
+        "s": 25.3,
+        "e": 25.46
+      },
+      {
+        "w": "yoki",
+        "s": 25.48,
+        "e": 25.82
+      },
+      {
+        "w": "soat",
+        "s": 25.92,
+        "e": 26.16
+      },
+      {
+        "w": "boshiga",
+        "s": 26.2,
+        "e": 26.5
+      },
+      {
+        "w": "yaxlitlab",
+        "s": 26.56,
+        "e": 27.02
+      },
+      {
+        "w": "oylik",
+        "s": 27.38,
+        "e": 27.66
+      },
+      {
+        "w": "hisobot",
+        "s": 27.7,
+        "e": 28.12
+      },
+      {
+        "w": "tuzish",
+        "s": 28.14,
+        "e": 28.4
+      },
+      {
+        "w": "imkonini",
+        "s": 28.46,
+        "e": 28.84
+      },
+      {
+        "w": "beradi,",
+        "s": 28.88,
+        "e": 29.16
+      },
+      {
+        "w": "deyt",
+        "s": 29.54,
+        "e": 29.78
+      },
+      {
+        "w": "bin",
+        "s": 29.86,
+        "e": 29.98
+      },
+      {
+        "w": "esa",
+        "s": 30.1,
+        "e": 30.22
+      },
+      {
+        "w": "ixtiyoriy",
+        "s": 30.5,
+        "e": 30.92
+      },
+      {
+        "w": "o'n",
+        "s": 31.06,
+        "e": 31.16
+      },
+      {
+        "w": "besh",
+        "s": 31.22,
+        "e": 31.4
+      },
+      {
+        "w": "daqiqalik",
+        "s": 31.42,
+        "e": 31.92
+      },
+      {
+        "w": "oraliqlarni",
+        "s": 31.98,
+        "e": 32.5
+      },
+      {
+        "w": "guruhlash",
+        "s": 32.54,
+        "e": 32.92
+      },
+      {
+        "w": "uchun",
+        "s": 32.94,
+        "e": 33.1
+      },
+      {
+        "w": "qulaydir.",
+        "s": 33.16,
+        "e": 33.54
+      }
+    ]
+  },
+  {
+    "scene": "bosh_kunlar_va_oraliq",
+    "id": "bosh_kunlar",
+    "text": "Guruhlashda savdo bo'lmagan kunlar tushib qolmasligi uchun generate_series orqali to'liq kalendar yasab, chap tomondan birlashtiramiz va COALESCE yordamida nollarni to'ldiramiz.",
+    "show": "Guruhlashda savdo bo'lmagan kunlar tushib qolmasligi uchun generate_series orqali to'liq kalendar yasab, chap tomondan birlashtiramiz va COALESCE yordamida nollarni to'ldiramiz.",
+    "say": "Guruhlashda savdo bo'lmagan kunlar tushib qolmasligi uchun jenerayt siris orqali to'liq kalendar yasab, chap tomondan birlashtiramiz va koales yordamida nollarni to'ldiramiz.",
+    "a0": 34.4,
+    "a1": 44.03,
+    "words": [
+      {
+        "w": "Guruhlashda",
+        "s": 34.4,
+        "e": 34.92
+      },
+      {
+        "w": "savdo",
+        "s": 35.24,
+        "e": 35.52
+      },
+      {
+        "w": "bo'lmagan",
+        "s": 35.62,
+        "e": 36.06
+      },
+      {
+        "w": "kunlar",
+        "s": 36.13,
+        "e": 36.39
+      },
+      {
+        "w": "tushib",
+        "s": 36.41,
+        "e": 36.59
+      },
+      {
+        "w": "qolmasligi",
+        "s": 36.61,
+        "e": 37.07
+      },
+      {
+        "w": "uchun",
+        "s": 37.13,
+        "e": 37.33
+      },
+      {
+        "w": "jenerayt",
+        "s": 37.69,
+        "e": 38.13
+      },
+      {
+        "w": "siris",
+        "s": 38.21,
+        "e": 38.53
+      },
+      {
+        "w": "orqali",
+        "s": 38.63,
+        "e": 38.99
+      },
+      {
+        "w": "to'liq",
+        "s": 39.09,
+        "e": 39.33
+      },
+      {
+        "w": "kalendar",
+        "s": 39.39,
+        "e": 39.81
+      },
+      {
+        "w": "yasab,",
+        "s": 39.85,
+        "e": 40.15
+      },
+      {
+        "w": "chap",
+        "s": 40.39,
+        "e": 40.59
+      },
+      {
+        "w": "tomondan",
+        "s": 40.63,
+        "e": 41.01
+      },
+      {
+        "w": "birlashtiramiz",
+        "s": 41.05,
+        "e": 41.63
+      },
+      {
+        "w": "va",
+        "s": 41.69,
+        "e": 41.75
+      },
+      {
+        "w": "koales",
+        "s": 41.87,
+        "e": 42.29
+      },
+      {
+        "w": "yordamida",
+        "s": 42.33,
+        "e": 42.77
+      },
+      {
+        "w": "nollarni",
+        "s": 43.07,
+        "e": 43.53
+      },
+      {
+        "w": "to'ldiramiz.",
+        "s": 43.59,
+        "e": 44.03
+      }
+    ]
+  },
+  {
+    "scene": "farq_va_joriy_vaqt",
+    "id": "farq",
+    "text": "Sanalar orasidagi farqni age yoki kunlar bilan o'lchash mumkin, joriy vaqt esa tranzaksiya davomida o'zgarmasdan, barcha yozuvlarga bir xil vaqt belgisini kafolatlaydi.",
+    "show": "Sanalar orasidagi farqni age yoki kunlar bilan o'lchash mumkin, joriy vaqt esa tranzaksiya davomida o'zgarmasdan, barcha yozuvlarga bir xil vaqt belgisini kafolatlaydi.",
+    "say": "Sanalar orasidagi farqni eyj yoki kunlar bilan o'lchash mumkin, joriy vaqt esa tranzaksiya davomida o'zgarmasdan, barcha yozuvlarga bir xil vaqt belgisini kafolatlaydi.",
+    "a0": 44.67,
+    "a1": 54.24,
+    "words": [
+      {
+        "w": "Sanalar",
+        "s": 44.67,
+        "e": 45.05
+      },
+      {
+        "w": "orasidagi",
+        "s": 45.11,
+        "e": 45.51
+      },
+      {
+        "w": "farqni",
+        "s": 45.55,
+        "e": 45.87
+      },
+      {
+        "w": "eyj",
+        "s": 46.13,
+        "e": 46.39
+      },
+      {
+        "w": "yoki",
+        "s": 46.39,
+        "e": 46.77
+      },
+      {
+        "w": "kunlar",
+        "s": 46.87,
+        "e": 47.25
+      },
+      {
+        "w": "bilan",
+        "s": 47.27,
+        "e": 47.47
+      },
+      {
+        "w": "o'lchash",
+        "s": 47.55,
+        "e": 47.87
+      },
+      {
+        "w": "mumkin,",
+        "s": 47.89,
+        "e": 48.17
+      },
+      {
+        "w": "joriy",
+        "s": 48.54,
+        "e": 48.82
+      },
+      {
+        "w": "vaqt",
+        "s": 48.88,
+        "e": 49.08
+      },
+      {
+        "w": "esa",
+        "s": 49.14,
+        "e": 49.28
+      },
+      {
+        "w": "tranzaksiya",
+        "s": 49.54,
+        "e": 50.1
+      },
+      {
+        "w": "davomida",
+        "s": 50.14,
+        "e": 50.52
+      },
+      {
+        "w": "o'zgarmasdan,",
+        "s": 50.64,
+        "e": 51.26
+      },
+      {
+        "w": "barcha",
+        "s": 51.62,
+        "e": 51.92
+      },
+      {
+        "w": "yozuvlarga",
+        "s": 51.96,
+        "e": 52.48
+      },
+      {
+        "w": "bir",
+        "s": 52.6,
+        "e": 52.72
+      },
+      {
+        "w": "xil",
+        "s": 52.78,
+        "e": 52.92
+      },
+      {
+        "w": "vaqt",
+        "s": 53,
+        "e": 53.18
+      },
+      {
+        "w": "belgisini",
+        "s": 53.22,
+        "e": 53.6
+      },
+      {
+        "w": "kafolatlaydi.",
+        "s": 53.64,
+        "e": 54.24
+      }
+    ]
+  }
+]

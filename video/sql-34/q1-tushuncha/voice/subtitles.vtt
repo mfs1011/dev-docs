@@ -1,0 +1,26 @@
+WEBVTT
+
+1
+00:01.420 --> 00:10.740
+Sana funksiyalari hisobotlar tuzish, davriy guruhlash va bo'sh kunlarni aniqlashda
+asosiy vosita bo'lib, relyatsion bazalarda ularning o'ziga xos qoidalari mavjud.
+
+2
+00:13.250 --> 00:27.090
+EXTRACT yordamida yil, oy va hafta kunini ajratamiz, ammo hafta kunini raqamlash tizimlararo farq qiladi, shuning
+uchun dushanbani bir, yakshanbani yetti deb hisoblovchi ISODOW standartiga tayanishingiz tavsiya etiladi.
+
+3
+00:30.080 --> 00:40.330
+date_trunc funksiyasi sanani oy yoki soat boshiga yaxlitlab oylik hisobot tuzish imkonini
+beradi, date_bin esa ixtiyoriy o'n besh daqiqalik oraliqlarni guruhlash uchun qulaydir.
+
+4
+00:43.540 --> 00:53.620
+Guruhlashda savdo bo'lmagan kunlar tushib qolmasligi uchun generate_series orqali to'liq
+kalendar yasab, chap tomondan birlashtiramiz va COALESCE yordamida nollarni to'ldiramiz.
+
+5
+00:56.610 --> 01:06.630
+Sanalar orasidagi farqni age yoki kunlar bilan o'lchash mumkin, joriy vaqt esa
+tranzaksiya davomida o'zgarmasdan, barcha yozuvlarga bir xil vaqt belgisini kafolatlaydi.
