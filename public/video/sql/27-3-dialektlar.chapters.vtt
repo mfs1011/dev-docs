@@ -1,0 +1,16 @@
+WEBVTT
+
+00:00.000 --> 00:09.620
+Dialektlar: MySQL va SQLite Farqlari
+
+00:09.620 --> 00:22.604
+MySQL: 1242 va 1248 Xatolari
+
+00:22.604 --> 00:43.997
+MySQL: LIMIT va UPDATE Cheklovlari
+
+00:43.997 --> 00:57.241
+SQLite: ANY va ALL Yo'qligi
+
+00:57.241 --> 01:19.800
+SQLite: Skalyar va Jadval Kengaytmasi

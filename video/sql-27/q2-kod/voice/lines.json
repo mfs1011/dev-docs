@@ -1,0 +1,800 @@
+[
+  {
+    "id": "intro",
+    "scene": "kirish",
+    "text": "PostgreSQL 18 da amaliy subquery so'rovlarini o'rganamiz. Bazamizda guruhlar va baholar jadvallari yaratilgan.",
+    "show": "PostgreSQL 18 da amaliy subquery so'rovlarini o'rganamiz. Bazamizda guruhlar va baholar jadvallari yaratilgan.",
+    "say": "Postgres 18 da amaliy sabkveri so'rovlarini o'rganamiz. Bazamizda guruhlar va baholar jadvallari yaratilgan.",
+    "a0": 0.22,
+    "a1": 6.94,
+    "words": [
+      {
+        "w": "Postgres",
+        "s": 0.22,
+        "e": 0.64
+      },
+      {
+        "w": "18",
+        "s": 0.64,
+        "e": 0.64
+      },
+      {
+        "w": "da",
+        "s": 1.54,
+        "e": 1.62
+      },
+      {
+        "w": "amaliy",
+        "s": 1.82,
+        "e": 2.1
+      },
+      {
+        "w": "sabkveri",
+        "s": 2.18,
+        "e": 2.66
+      },
+      {
+        "w": "so'rovlarini",
+        "s": 2.7,
+        "e": 3.2
+      },
+      {
+        "w": "o'rganamiz.",
+        "s": 3.24,
+        "e": 3.64
+      },
+      {
+        "w": "Bazamizda",
+        "s": 4.24,
+        "e": 4.72
+      },
+      {
+        "w": "guruhlar",
+        "s": 4.88,
+        "e": 5.3
+      },
+      {
+        "w": "va",
+        "s": 5.38,
+        "e": 5.44
+      },
+      {
+        "w": "baholar",
+        "s": 5.52,
+        "e": 5.96
+      },
+      {
+        "w": "jadvallari",
+        "s": 6,
+        "e": 6.46
+      },
+      {
+        "w": "yaratilgan.",
+        "s": 6.5,
+        "e": 6.94
+      }
+    ]
+  },
+  {
+    "id": "skalyar",
+    "scene": "skalyar",
+    "text": "Skalyar subquery orqali o'rtacha balldan yuqori natija ko'rsatganlarni topamiz: Vali, Sobir va Dilnoza chiqdi.",
+    "show": "Skalyar subquery orqali o'rtacha balldan yuqori natija ko'rsatganlarni topamiz: Vali, Sobir va Dilnoza chiqdi.",
+    "say": "Skalyar sabkveri orqali o'rtacha balldan yuqori natija ko'rsatganlarni topamiz: Vali, Sobir va Dilnoza chiqdi.",
+    "a0": 7.48,
+    "a1": 13.93,
+    "words": [
+      {
+        "w": "Skalyar",
+        "s": 7.48,
+        "e": 7.87
+      },
+      {
+        "w": "sabkveri",
+        "s": 7.91,
+        "e": 8.37
+      },
+      {
+        "w": "orqali",
+        "s": 8.43,
+        "e": 8.75
+      },
+      {
+        "w": "o'rtacha",
+        "s": 8.97,
+        "e": 9.33
+      },
+      {
+        "w": "balldan",
+        "s": 9.41,
+        "e": 9.69
+      },
+      {
+        "w": "yuqori",
+        "s": 9.77,
+        "e": 10.13
+      },
+      {
+        "w": "natija",
+        "s": 10.17,
+        "e": 10.49
+      },
+      {
+        "w": "ko'rsatganlarni",
+        "s": 10.53,
+        "e": 11.19
+      },
+      {
+        "w": "topamiz:",
+        "s": 11.23,
+        "e": 11.55
+      },
+      {
+        "w": "Vali,",
+        "s": 12.07,
+        "e": 12.35
+      },
+      {
+        "w": "Sobir",
+        "s": 12.63,
+        "e": 13.01
+      },
+      {
+        "w": "va",
+        "s": 13.15,
+        "e": 13.21
+      },
+      {
+        "w": "Dilnoza",
+        "s": 13.29,
+        "e": 13.65
+      },
+      {
+        "w": "chiqdi.",
+        "s": 13.71,
+        "e": 13.93
+      }
+    ]
+  },
+  {
+    "id": "skalyar_xato",
+    "scene": "skalyar",
+    "text": "Agar skalyar o'rnida bir nechta qator yoki ustun qaytsa, PostgreSQL darhol xato beradi; qator topilmasa esa jimgina NULL beradi.",
+    "show": "Agar skalyar o'rnida bir nechta qator yoki ustun qaytsa, PostgreSQL darhol xato beradi; qator topilmasa esa jimgina NULL beradi.",
+    "say": "Agar skalyar o'rnida bir nechta qator yoki ustun qaytsa, Postgres darhol xato beradi; qator topilmasa esa jimgina null beradi.",
+    "a0": 14.63,
+    "a1": 21.97,
+    "words": [
+      {
+        "w": "Agar",
+        "s": 14.63,
+        "e": 14.83
+      },
+      {
+        "w": "skalyar",
+        "s": 14.97,
+        "e": 15.31
+      },
+      {
+        "w": "o'rnida",
+        "s": 15.35,
+        "e": 15.65
+      },
+      {
+        "w": "bir",
+        "s": 15.83,
+        "e": 15.93
+      },
+      {
+        "w": "nechta",
+        "s": 15.97,
+        "e": 16.21
+      },
+      {
+        "w": "qator",
+        "s": 16.27,
+        "e": 16.57
+      },
+      {
+        "w": "yoki",
+        "s": 16.69,
+        "e": 16.87
+      },
+      {
+        "w": "ustun",
+        "s": 16.95,
+        "e": 17.21
+      },
+      {
+        "w": "qaytsa,",
+        "s": 17.25,
+        "e": 17.55
+      },
+      {
+        "w": "Postgres",
+        "s": 17.83,
+        "e": 18.29
+      },
+      {
+        "w": "darhol",
+        "s": 18.47,
+        "e": 18.81
+      },
+      {
+        "w": "xato",
+        "s": 18.83,
+        "e": 19.03
+      },
+      {
+        "w": "beradi;",
+        "s": 19.03,
+        "e": 19.79
+      },
+      {
+        "w": "qator",
+        "s": 19.79,
+        "e": 20.05
+      },
+      {
+        "w": "topilmasa",
+        "s": 20.09,
+        "e": 20.51
+      },
+      {
+        "w": "esa",
+        "s": 20.57,
+        "e": 20.73
+      },
+      {
+        "w": "jimgina",
+        "s": 20.95,
+        "e": 21.31
+      },
+      {
+        "w": "null",
+        "s": 21.47,
+        "e": 21.67
+      },
+      {
+        "w": "beradi.",
+        "s": 21.69,
+        "e": 21.97
+      }
+    ]
+  },
+  {
+    "id": "korrelyatsiya",
+    "scene": "korrelyatsiya",
+    "text": "Korrelyatsiyalangan subquery har bir qator uchun alohida ishlaydi: har guruhning eng yuqori bali va o'z guruhida yetakchi bo'lganlar shu usulda topiladi.",
+    "show": "Korrelyatsiyalangan subquery har bir qator uchun alohida ishlaydi: har guruhning eng yuqori bali va o'z guruhida yetakchi bo'lganlar shu usulda topiladi.",
+    "say": "Korrelyatsiyalangan sabkveri har bir qator uchun alohida ishlaydi: har guruhning eng yuqori bali va o'z guruhida yetakchi bo'lganlar shu usulda topiladi.",
+    "a0": 23.02,
+    "a1": 31.08,
+    "words": [
+      {
+        "w": "Korrelyatsiyalangan",
+        "s": 23.02,
+        "e": 23.8
+      },
+      {
+        "w": "sabkveri",
+        "s": 23.84,
+        "e": 24.32
+      },
+      {
+        "w": "har",
+        "s": 24.54,
+        "e": 24.72
+      },
+      {
+        "w": "bir",
+        "s": 24.78,
+        "e": 24.88
+      },
+      {
+        "w": "qator",
+        "s": 24.9,
+        "e": 25.16
+      },
+      {
+        "w": "uchun",
+        "s": 25.2,
+        "e": 25.38
+      },
+      {
+        "w": "alohida",
+        "s": 25.52,
+        "e": 25.88
+      },
+      {
+        "w": "ishlaydi:",
+        "s": 25.92,
+        "e": 26.22
+      },
+      {
+        "w": "har",
+        "s": 26.66,
+        "e": 26.82
+      },
+      {
+        "w": "guruhning",
+        "s": 26.88,
+        "e": 27.24
+      },
+      {
+        "w": "eng",
+        "s": 27.44,
+        "e": 27.62
+      },
+      {
+        "w": "yuqori",
+        "s": 27.68,
+        "e": 28.04
+      },
+      {
+        "w": "bali",
+        "s": 28.08,
+        "e": 28.32
+      },
+      {
+        "w": "va",
+        "s": 28.5,
+        "e": 28.56
+      },
+      {
+        "w": "o'z",
+        "s": 28.68,
+        "e": 28.8
+      },
+      {
+        "w": "guruhida",
+        "s": 28.86,
+        "e": 29.18
+      },
+      {
+        "w": "yetakchi",
+        "s": 29.24,
+        "e": 29.56
+      },
+      {
+        "w": "bo'lganlar",
+        "s": 29.6,
+        "e": 29.98
+      },
+      {
+        "w": "shu",
+        "s": 30.18,
+        "e": 30.3
+      },
+      {
+        "w": "usulda",
+        "s": 30.38,
+        "e": 30.68
+      },
+      {
+        "w": "topiladi.",
+        "s": 30.72,
+        "e": 31.08
+      }
+    ]
+  },
+  {
+    "id": "exists_in",
+    "scene": "exists_va_in",
+    "text": "Talabasi bor guruhlarni EXISTS yoki IN bilan topamiz. Birlashmadan farqli ravishda, guruhlar faqat bir marta chiqadi.",
+    "show": "Talabasi bor guruhlarni EXISTS yoki IN bilan topamiz. Birlashmadan farqli ravishda, guruhlar faqat bir marta chiqadi.",
+    "say": "Talabasi bor guruhlarni egzists yoki in bilan topamiz. Birlashmadan farqli ravishda, guruhlar faqat bir marta chiqadi.",
+    "a0": 31.86,
+    "a1": 38.55,
+    "words": [
+      {
+        "w": "Talabasi",
+        "s": 31.86,
+        "e": 32.26
+      },
+      {
+        "w": "bor",
+        "s": 32.34,
+        "e": 32.48
+      },
+      {
+        "w": "guruhlarni",
+        "s": 32.54,
+        "e": 33.02
+      },
+      {
+        "w": "egzists",
+        "s": 33.28,
+        "e": 33.78
+      },
+      {
+        "w": "yoki",
+        "s": 33.8,
+        "e": 34.22
+      },
+      {
+        "w": "in",
+        "s": 34.44,
+        "e": 34.54
+      },
+      {
+        "w": "bilan",
+        "s": 34.6,
+        "e": 34.78
+      },
+      {
+        "w": "topamiz.",
+        "s": 34.8,
+        "e": 35.16
+      },
+      {
+        "w": "Birlashmadan",
+        "s": 35.6,
+        "e": 36.1
+      },
+      {
+        "w": "farqli",
+        "s": 36.16,
+        "e": 36.46
+      },
+      {
+        "w": "ravishda,",
+        "s": 36.5,
+        "e": 36.86
+      },
+      {
+        "w": "guruhlar",
+        "s": 37.08,
+        "e": 37.42
+      },
+      {
+        "w": "faqat",
+        "s": 37.46,
+        "e": 37.73
+      },
+      {
+        "w": "bir",
+        "s": 37.89,
+        "e": 38.01
+      },
+      {
+        "w": "marta",
+        "s": 38.05,
+        "e": 38.25
+      },
+      {
+        "w": "chiqadi.",
+        "s": 38.29,
+        "e": 38.55
+      }
+    ]
+  },
+  {
+    "id": "not_in_trap",
+    "scene": "tuzoq_va_any_all",
+    "text": "Katta xato: talabasi yo'q guruhni NOT IN bilan qidirganda nolta qator chiqdi, chunki jadvalda bitta NULL bor edi. NOT EXISTS esa to'g'ri C guruhini qaytardi.",
+    "show": "Katta xato: talabasi yo'q guruhni NOT IN bilan qidirganda nolta qator chiqdi, chunki jadvalda bitta NULL bor edi. NOT EXISTS esa to'g'ri C guruhini qaytardi.",
+    "say": "Katta xato: talabasi yo'q guruhni NOT in bilan qidirganda nolta qator chiqdi, chunki jadvalda bitta null bor edi. NOT egzists esa to'g'ri C guruhini qaytardi.",
+    "a0": 39.61,
+    "a1": 49.37,
+    "words": [
+      {
+        "w": "Katta",
+        "s": 39.61,
+        "e": 39.89
+      },
+      {
+        "w": "xato:",
+        "s": 39.93,
+        "e": 40.15
+      },
+      {
+        "w": "talabasi",
+        "s": 40.69,
+        "e": 41.09
+      },
+      {
+        "w": "yo'q",
+        "s": 41.15,
+        "e": 41.33
+      },
+      {
+        "w": "guruhni",
+        "s": 41.41,
+        "e": 41.73
+      },
+      {
+        "w": "NOT",
+        "s": 41.93,
+        "e": 42.15
+      },
+      {
+        "w": "in",
+        "s": 42.27,
+        "e": 42.37
+      },
+      {
+        "w": "bilan",
+        "s": 42.43,
+        "e": 42.63
+      },
+      {
+        "w": "qidirganda",
+        "s": 42.67,
+        "e": 43.15
+      },
+      {
+        "w": "nolta",
+        "s": 43.39,
+        "e": 43.69
+      },
+      {
+        "w": "qator",
+        "s": 43.73,
+        "e": 43.95
+      },
+      {
+        "w": "chiqdi,",
+        "s": 43.99,
+        "e": 44.19
+      },
+      {
+        "w": "chunki",
+        "s": 44.45,
+        "e": 44.73
+      },
+      {
+        "w": "jadvalda",
+        "s": 44.91,
+        "e": 45.31
+      },
+      {
+        "w": "bitta",
+        "s": 45.37,
+        "e": 45.63
+      },
+      {
+        "w": "null",
+        "s": 45.83,
+        "e": 46.05
+      },
+      {
+        "w": "bor",
+        "s": 46.09,
+        "e": 46.21
+      },
+      {
+        "w": "edi.",
+        "s": 46.25,
+        "e": 46.39
+      },
+      {
+        "w": "NOT",
+        "s": 46.93,
+        "e": 47.11
+      },
+      {
+        "w": "egzists",
+        "s": 47.17,
+        "e": 47.55
+      },
+      {
+        "w": "esa",
+        "s": 47.61,
+        "e": 47.75
+      },
+      {
+        "w": "to'g'ri",
+        "s": 47.97,
+        "e": 48.25
+      },
+      {
+        "w": "C",
+        "s": 48.45,
+        "e": 48.47
+      },
+      {
+        "w": "guruhini",
+        "s": 48.65,
+        "e": 48.97
+      },
+      {
+        "w": "qaytardi.",
+        "s": 48.99,
+        "e": 49.37
+      }
+    ]
+  },
+  {
+    "id": "any_all",
+    "scene": "tuzoq_va_any_all",
+    "text": "ALL barcha qiymatlardan, ANY esa kamida bittasidan kattalikni tekshiradi. ALL da ham NULL ehtiyotkorlik bilan filtrlanishi kerak.",
+    "show": "ALL barcha qiymatlardan, ANY esa kamida bittasidan kattalikni tekshiradi. ALL da ham NULL ehtiyotkorlik bilan filtrlanishi kerak.",
+    "say": "Oll barcha qiymatlardan, eni esa kamida bittasidan kattalikni tekshiradi. Oll da ham null ehtiyotkorlik bilan filtrlanishi kerak.",
+    "a0": 50.53,
+    "a1": 58.08,
+    "words": [
+      {
+        "w": "Oll",
+        "s": 50.53,
+        "e": 50.73
+      },
+      {
+        "w": "barcha",
+        "s": 50.99,
+        "e": 51.25
+      },
+      {
+        "w": "qiymatlardan,",
+        "s": 51.29,
+        "e": 51.87
+      },
+      {
+        "w": "eni",
+        "s": 52.29,
+        "e": 52.47
+      },
+      {
+        "w": "esa",
+        "s": 52.58,
+        "e": 52.78
+      },
+      {
+        "w": "kamida",
+        "s": 52.98,
+        "e": 53.32
+      },
+      {
+        "w": "bittasidan",
+        "s": 53.38,
+        "e": 53.9
+      },
+      {
+        "w": "kattalikni",
+        "s": 53.96,
+        "e": 54.42
+      },
+      {
+        "w": "tekshiradi.",
+        "s": 54.46,
+        "e": 54.86
+      },
+      {
+        "w": "Oll",
+        "s": 55.46,
+        "e": 55.56
+      },
+      {
+        "w": "da",
+        "s": 55.6,
+        "e": 55.68
+      },
+      {
+        "w": "ham",
+        "s": 55.74,
+        "e": 55.88
+      },
+      {
+        "w": "null",
+        "s": 56.08,
+        "e": 56.28
+      },
+      {
+        "w": "ehtiyotkorlik",
+        "s": 56.46,
+        "e": 57.06
+      },
+      {
+        "w": "bilan",
+        "s": 57.08,
+        "e": 57.26
+      },
+      {
+        "w": "filtrlanishi",
+        "s": 57.3,
+        "e": 57.86
+      },
+      {
+        "w": "kerak.",
+        "s": 57.86,
+        "e": 58.08
+      }
+    ]
+  },
+  {
+    "id": "derived_update",
+    "scene": "derived_va_update",
+    "text": "Hosila jadval yordamida guruhlar bo'yicha talabalarning o'rtacha sonini hisoblaymiz, hamda UPDATE orqali eng yuqori ballni boshqasiga o'zlashtiramiz.",
+    "show": "Hosila jadval yordamida guruhlar bo'yicha talabalarning o'rtacha sonini hisoblaymiz, hamda UPDATE orqali eng yuqori ballni boshqasiga o'zlashtiramiz.",
+    "say": "Hosila jadval yordamida guruhlar bo'yicha talabalarning o'rtacha sonini hisoblaymiz, hamda apdeyt orqali eng yuqori ballni boshqasiga o'zlashtiramiz.",
+    "a0": 59.16,
+    "a1": 66.86,
+    "words": [
+      {
+        "w": "Hosila",
+        "s": 59.16,
+        "e": 59.48
+      },
+      {
+        "w": "jadval",
+        "s": 59.54,
+        "e": 59.82
+      },
+      {
+        "w": "yordamida",
+        "s": 59.84,
+        "e": 60.24
+      },
+      {
+        "w": "guruhlar",
+        "s": 60.42,
+        "e": 60.82
+      },
+      {
+        "w": "bo'yicha",
+        "s": 60.86,
+        "e": 61.12
+      },
+      {
+        "w": "talabalarning",
+        "s": 61.18,
+        "e": 61.74
+      },
+      {
+        "w": "o'rtacha",
+        "s": 61.89,
+        "e": 62.23
+      },
+      {
+        "w": "sonini",
+        "s": 62.27,
+        "e": 62.59
+      },
+      {
+        "w": "hisoblaymiz,",
+        "s": 62.61,
+        "e": 63.07
+      },
+      {
+        "w": "hamda",
+        "s": 63.33,
+        "e": 63.57
+      },
+      {
+        "w": "apdeyt",
+        "s": 63.75,
+        "e": 64.07
+      },
+      {
+        "w": "orqali",
+        "s": 64.13,
+        "e": 64.41
+      },
+      {
+        "w": "eng",
+        "s": 64.71,
+        "e": 64.85
+      },
+      {
+        "w": "yuqori",
+        "s": 64.93,
+        "e": 65.29
+      },
+      {
+        "w": "ballni",
+        "s": 65.33,
+        "e": 65.6
+      },
+      {
+        "w": "boshqasiga",
+        "s": 65.8,
+        "e": 66.26
+      },
+      {
+        "w": "o'zlashtiramiz.",
+        "s": 66.3,
+        "e": 66.86
+      }
+    ]
+  }
+]

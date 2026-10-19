@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:10.001
+PostgreSQL 18: Jadvallar va Kirish
+
+00:10.001 --> 00:28.911
+Skalyar Subquery va Xatolar
+
+00:28.911 --> 00:40.639
+Korrelyatsiyalangan Subquery
+
+00:40.639 --> 00:50.702
+EXISTS va IN Bilan Guruhlarni Topish
+
+00:50.702 --> 01:13.962
+NOT IN Tuzog'i va ANY / ALL
+
+01:13.962 --> 01:27.460
+Hosila Jadval va UPDATE Operatori

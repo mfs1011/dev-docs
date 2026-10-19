@@ -1,0 +1,41 @@
+WEBVTT
+
+1
+00:01.420 --> 00:09.120
+Subquery — boshqa SQL so'rovi ichida qavsga olingan SELECT
+operatoridir. Tashqaridagi so'rov esa tashqi so'rov deyiladi.
+
+2
+00:12.010 --> 00:21.380
+Natija shakliga ko'ra to'rt tur mavjud: bitta qiymatli skalyar, bitta
+ustunli, bitta qatorli, hamda ko'p qator va ustunli hosila jadval.
+
+3
+00:22.710 --> 00:31.210
+Skalyar subquery aynan bitta qator va bitta ustun qaytarishi shart. Agar
+ko'p qiymat qaytsa xato beradi, hech narsa topilmasa esa NULL qaytadi.
+
+4
+00:34.540 --> 00:44.710
+Tashqi so'rov ustuniga murojaat qiluvchi subquery korrelyatsiyalangan deyiladi va har bir
+tashqi qator uchun qaytadan hisoblanadi. Oddiy subquery esa faqat bir marta ishlaydi.
+
+5
+00:48.190 --> 00:56.980
+EXISTS operatori subquery kamida bitta qator qaytarsa rost qiymat beradi.
+U birinchi qator topilishi bilanoq to'xtaydi va hech qachon NULL bermaydi.
+
+6
+00:58.630 --> 01:05.390
+IN operatori ANY bilan teng, NOT IN esa barcha
+qatorlardan farqli bo'lishni bildiruvchi ALL ga tengdir.
+
+7
+01:08.380 --> 01:19.480
+Katta tuzoq: agar subquery natijasida bitta bo'lsa ham NULL chiqsa, NOT IN hech narsa
+topilmaganda NULL qaytaradi va natija bo'shab qoladi. NOT EXISTS esa xavfsiz ishlaydi.
+
+8
+01:21.450 --> 01:30.370
+FROM ichidagi subquery hosila jadval deyiladi va agregat ustidan agregat
+hisoblash imkonini beradi. Standartga ko'ra unga doimo nom berilishi shart.
