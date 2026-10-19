@@ -1,0 +1,51 @@
+WEBVTT
+
+1
+00:01.420 --> 00:07.710
+Ko'rib o'tilgan to'rtta tip asosan PostgreSQL'ga xos bo'lib,
+boshqa relyatsion bazalarda to'g'ridan-to'g'ri mavjud emas.
+
+2
+00:07.820 --> 00:13.440
+Shuning uchun tizimlararo portativlik zarur bo'lganda
+muqobil yechimlardan foydalanishga to'g'ri keladi.
+
+3
+00:16.290 --> 00:22.040
+MySQL'da massiv o'rniga JSON massiv yoki
+alohida relyatsion jadvallar qo'llaniladi.
+
+4
+00:22.250 --> 00:28.510
+Oraliqlar ikki alohida ustunda saqlanadi, domen
+o'rniga esa har bir ustunda cheklov takrorlanadi.
+
+5
+00:31.380 --> 00:38.050
+SQLite'da massiv tipi yo'q, lekin text massiv yozsangiz
+xato bermay, oddiy matn sifatida qabul qiladi.
+
+6
+00:38.260 --> 00:42.450
+Bu katta tuzoq bo'lib, uning ichidan
+indeks bo'yicha element olib bo'lmaydi.
+
+7
+00:45.260 --> 00:51.760
+Solishtirma matritsada ko'rishingiz mumkinki, istisno cheklovi
+va oraliqlar faqat PostgreSQL'da to'liq ta'minlangan.
+
+8
+00:51.830 --> 00:57.060
+Boshqa bazalarda poyga holatlarini oldini olish
+dasturiy tranzaksiyalar orqali hal qilinadi.
+
+9
+00:59.950 --> 01:06.410
+Loyiha arxitekturasida relyatsion me'yorni saqlash
+va alohida jadvallar qurish eng universal yo'ldir.
+
+10
+01:06.560 --> 01:12.240
+Bu barcha tizimlarda yuqori unumdorlik, indekslash
+va ma'lumotlar yaxlitligini kafolatlaydi.
