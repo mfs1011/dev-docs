@@ -1,0 +1,712 @@
+[
+  {
+    "scene": "dialektlar_kirish",
+    "id": "l1",
+    "text": "Ko'rib o'tilgan to'rtta tip asosan PostgreSQL'ga xos bo'lib, boshqa relyatsion bazalarda to'g'ridan-to'g'ri mavjud emas.",
+    "show": "Ko'rib o'tilgan to'rtta tip asosan PostgreSQL'ga xos bo'lib, boshqa relyatsion bazalarda to'g'ridan-to'g'ri mavjud emas.",
+    "say": "Ko'rib o'tilgan to'rtta tip asosan Postgresga xos bo'lib, boshqa relyatsion bazalarda to'g'ridan-to'g'ri mavjud emas.",
+    "a0": 0.2,
+    "a1": 6.04,
+    "words": [
+      {
+        "w": "Ko'rib",
+        "s": 0.2,
+        "e": 0.42
+      },
+      {
+        "w": "o'tilgan",
+        "s": 0.44,
+        "e": 0.76
+      },
+      {
+        "w": "to'rtta",
+        "s": 0.8,
+        "e": 1.06
+      },
+      {
+        "w": "tip",
+        "s": 1.14,
+        "e": 1.3
+      },
+      {
+        "w": "asosan",
+        "s": 1.52,
+        "e": 1.96
+      },
+      {
+        "w": "Postgresga",
+        "s": 2.08,
+        "e": 2.62
+      },
+      {
+        "w": "xos",
+        "s": 2.66,
+        "e": 2.84
+      },
+      {
+        "w": "bo'lib,",
+        "s": 2.9,
+        "e": 3.14
+      },
+      {
+        "w": "boshqa",
+        "s": 3.4,
+        "e": 3.72
+      },
+      {
+        "w": "relyatsion",
+        "s": 3.88,
+        "e": 4.32
+      },
+      {
+        "w": "bazalarda",
+        "s": 4.38,
+        "e": 4.82
+      },
+      {
+        "w": "to'g'ridan-to'g'ri",
+        "s": 4.88,
+        "e": 5.46
+      },
+      {
+        "w": "mavjud",
+        "s": 5.5,
+        "e": 5.78
+      },
+      {
+        "w": "emas.",
+        "s": 5.84,
+        "e": 6.04
+      }
+    ]
+  },
+  {
+    "scene": "dialektlar_kirish",
+    "id": "l2",
+    "text": "Shuning uchun tizimlararo portativlik zarur bo'lganda muqobil yechimlardan foydalanishga to'g'ri keladi.",
+    "show": "Shuning uchun tizimlararo portativlik zarur bo'lganda muqobil yechimlardan foydalanishga to'g'ri keladi.",
+    "say": "Shuning uchun tizimlararo portativlik zarur bo'lganda muqobil yechimlardan foydalanishga to'g'ri keladi.",
+    "a0": 6.6,
+    "a1": 11.77,
+    "words": [
+      {
+        "w": "Shuning",
+        "s": 6.6,
+        "e": 6.8
+      },
+      {
+        "w": "uchun",
+        "s": 6.8,
+        "e": 7
+      },
+      {
+        "w": "tizimlararo",
+        "s": 7.38,
+        "e": 7.99
+      },
+      {
+        "w": "portativlik",
+        "s": 8.07,
+        "e": 8.69
+      },
+      {
+        "w": "zarur",
+        "s": 8.75,
+        "e": 9.03
+      },
+      {
+        "w": "bo'lganda",
+        "s": 9.07,
+        "e": 9.53
+      },
+      {
+        "w": "muqobil",
+        "s": 9.63,
+        "e": 10.05
+      },
+      {
+        "w": "yechimlardan",
+        "s": 10.09,
+        "e": 10.59
+      },
+      {
+        "w": "foydalanishga",
+        "s": 10.63,
+        "e": 11.21
+      },
+      {
+        "w": "to'g'ri",
+        "s": 11.25,
+        "e": 11.45
+      },
+      {
+        "w": "keladi.",
+        "s": 11.49,
+        "e": 11.77
+      }
+    ]
+  },
+  {
+    "scene": "mysql_muqobillari",
+    "id": "l3",
+    "text": "MySQL'da massiv o'rniga JSON massiv yoki alohida relyatsion jadvallar qo'llaniladi.",
+    "show": "MySQL'da massiv o'rniga JSON massiv yoki alohida relyatsion jadvallar qo'llaniladi.",
+    "say": "May es-kyu-elda massiv o'rniga jey-son massiv yoki alohida relyatsion jadvallar qo'llaniladi.",
+    "a0": 12.47,
+    "a1": 17.77,
+    "words": [
+      {
+        "w": "May",
+        "s": 12.47,
+        "e": 12.63
+      },
+      {
+        "w": "es-kyu-elda",
+        "s": 12.71,
+        "e": 13.21
+      },
+      {
+        "w": "massiv",
+        "s": 13.35,
+        "e": 13.69
+      },
+      {
+        "w": "o'rniga",
+        "s": 13.73,
+        "e": 14.03
+      },
+      {
+        "w": "jey-son",
+        "s": 14.21,
+        "e": 14.61
+      },
+      {
+        "w": "massiv",
+        "s": 14.69,
+        "e": 15.05
+      },
+      {
+        "w": "yoki",
+        "s": 15.27,
+        "e": 15.53
+      },
+      {
+        "w": "alohida",
+        "s": 15.75,
+        "e": 16.19
+      },
+      {
+        "w": "relyatsion",
+        "s": 16.33,
+        "e": 16.77
+      },
+      {
+        "w": "jadvallar",
+        "s": 16.81,
+        "e": 17.25
+      },
+      {
+        "w": "qo'llaniladi.",
+        "s": 17.29,
+        "e": 17.77
+      }
+    ]
+  },
+  {
+    "scene": "mysql_muqobillari",
+    "id": "l4",
+    "text": "Oraliqlar ikki alohida ustunda saqlanadi, domen o'rniga esa har bir ustunda cheklov takrorlanadi.",
+    "show": "Oraliqlar ikki alohida ustunda saqlanadi, domen o'rniga esa har bir ustunda cheklov takrorlanadi.",
+    "say": "Oraliqlar ikki alohida ustunda saqlanadi, domen o'rniga esa har bir ustunda cheklov takrorlanadi.",
+    "a0": 18.43,
+    "a1": 24.24,
+    "words": [
+      {
+        "w": "Oraliqlar",
+        "s": 18.43,
+        "e": 18.91
+      },
+      {
+        "w": "ikki",
+        "s": 19.33,
+        "e": 19.57
+      },
+      {
+        "w": "alohida",
+        "s": 19.63,
+        "e": 19.97
+      },
+      {
+        "w": "ustunda",
+        "s": 20.03,
+        "e": 20.35
+      },
+      {
+        "w": "saqlanadi,",
+        "s": 20.41,
+        "e": 20.89
+      },
+      {
+        "w": "domen",
+        "s": 21.39,
+        "e": 21.69
+      },
+      {
+        "w": "o'rniga",
+        "s": 21.81,
+        "e": 22.07
+      },
+      {
+        "w": "esa",
+        "s": 22.11,
+        "e": 22.27
+      },
+      {
+        "w": "har",
+        "s": 22.66,
+        "e": 22.84
+      },
+      {
+        "w": "bir",
+        "s": 22.88,
+        "e": 22.98
+      },
+      {
+        "w": "ustunda",
+        "s": 23,
+        "e": 23.28
+      },
+      {
+        "w": "cheklov",
+        "s": 23.32,
+        "e": 23.62
+      },
+      {
+        "w": "takrorlanadi.",
+        "s": 23.66,
+        "e": 24.24
+      }
+    ]
+  },
+  {
+    "scene": "sqlite_nozikliklari",
+    "id": "l5",
+    "text": "SQLite'da massiv tipi yo'q, lekin text massiv yozsangiz xato bermay, oddiy matn sifatida qabul qiladi.",
+    "show": "SQLite'da massiv tipi yo'q, lekin text massiv yozsangiz xato bermay, oddiy matn sifatida qabul qiladi.",
+    "say": "Es-kyu-laytda massiv tipi yo'q, lekin text massiv yozsangiz xato bermay, oddiy matn sifatida qabul qiladi.",
+    "a0": 24.96,
+    "a1": 31.18,
+    "words": [
+      {
+        "w": "Es-kyu-laytda",
+        "s": 24.96,
+        "e": 25.62
+      },
+      {
+        "w": "massiv",
+        "s": 25.76,
+        "e": 26.14
+      },
+      {
+        "w": "tipi",
+        "s": 26.18,
+        "e": 26.38
+      },
+      {
+        "w": "yo'q,",
+        "s": 26.44,
+        "e": 26.66
+      },
+      {
+        "w": "lekin",
+        "s": 26.86,
+        "e": 27.12
+      },
+      {
+        "w": "text",
+        "s": 27.52,
+        "e": 27.84
+      },
+      {
+        "w": "massiv",
+        "s": 27.92,
+        "e": 28.26
+      },
+      {
+        "w": "yozsangiz",
+        "s": 28.26,
+        "e": 28.76
+      },
+      {
+        "w": "xato",
+        "s": 28.82,
+        "e": 29.06
+      },
+      {
+        "w": "bermay,",
+        "s": 29.16,
+        "e": 29.52
+      },
+      {
+        "w": "oddiy",
+        "s": 29.68,
+        "e": 29.9
+      },
+      {
+        "w": "matn",
+        "s": 29.92,
+        "e": 30.2
+      },
+      {
+        "w": "sifatida",
+        "s": 30.24,
+        "e": 30.58
+      },
+      {
+        "w": "qabul",
+        "s": 30.64,
+        "e": 30.88
+      },
+      {
+        "w": "qiladi.",
+        "s": 30.9,
+        "e": 31.18
+      }
+    ]
+  },
+  {
+    "scene": "sqlite_nozikliklari",
+    "id": "l6",
+    "text": "Bu katta tuzoq bo'lib, uning ichidan indeks bo'yicha element olib bo'lmaydi.",
+    "show": "Bu katta tuzoq bo'lib, uning ichidan indeks bo'yicha element olib bo'lmaydi.",
+    "say": "Bu katta tuzoq bo'lib, uning ichidan indeks bo'yicha element olib bo'lmaydi.",
+    "a0": 31.84,
+    "a1": 35.58,
+    "words": [
+      {
+        "w": "Bu",
+        "s": 31.84,
+        "e": 31.9
+      },
+      {
+        "w": "katta",
+        "s": 32.1,
+        "e": 32.38
+      },
+      {
+        "w": "tuzoq",
+        "s": 32.44,
+        "e": 32.74
+      },
+      {
+        "w": "bo'lib,",
+        "s": 32.8,
+        "e": 33.02
+      },
+      {
+        "w": "uning",
+        "s": 33.24,
+        "e": 33.44
+      },
+      {
+        "w": "ichidan",
+        "s": 33.46,
+        "e": 33.74
+      },
+      {
+        "w": "indeks",
+        "s": 33.92,
+        "e": 34.26
+      },
+      {
+        "w": "bo'yicha",
+        "s": 34.32,
+        "e": 34.62
+      },
+      {
+        "w": "element",
+        "s": 34.66,
+        "e": 34.96
+      },
+      {
+        "w": "olib",
+        "s": 35.02,
+        "e": 35.16
+      },
+      {
+        "w": "bo'lmaydi.",
+        "s": 35.2,
+        "e": 35.58
+      }
+    ]
+  },
+  {
+    "scene": "solishtirma_jadval",
+    "id": "l7",
+    "text": "Solishtirma matritsada ko'rishingiz mumkinki, istisno cheklovi va oraliqlar faqat PostgreSQL'da to'liq ta'minlangan.",
+    "show": "Solishtirma matritsada ko'rishingiz mumkinki, istisno cheklovi va oraliqlar faqat PostgreSQL'da to'liq ta'minlangan.",
+    "say": "Solishtirma matritsada ko'rishingiz mumkinki, istisno cheklovi va oraliqlar faqat Postgresda to'liq ta'minlangan.",
+    "a0": 36.24,
+    "a1": 42.29,
+    "words": [
+      {
+        "w": "Solishtirma",
+        "s": 36.24,
+        "e": 36.7
+      },
+      {
+        "w": "matritsada",
+        "s": 36.76,
+        "e": 37.24
+      },
+      {
+        "w": "ko'rishingiz",
+        "s": 37.28,
+        "e": 37.75
+      },
+      {
+        "w": "mumkinki,",
+        "s": 37.79,
+        "e": 38.23
+      },
+      {
+        "w": "istisno",
+        "s": 38.53,
+        "e": 38.89
+      },
+      {
+        "w": "cheklovi",
+        "s": 38.95,
+        "e": 39.45
+      },
+      {
+        "w": "va",
+        "s": 39.61,
+        "e": 39.67
+      },
+      {
+        "w": "oraliqlar",
+        "s": 39.81,
+        "e": 40.29
+      },
+      {
+        "w": "faqat",
+        "s": 40.35,
+        "e": 40.67
+      },
+      {
+        "w": "Postgresda",
+        "s": 40.79,
+        "e": 41.33
+      },
+      {
+        "w": "to'liq",
+        "s": 41.39,
+        "e": 41.67
+      },
+      {
+        "w": "ta'minlangan.",
+        "s": 41.71,
+        "e": 42.29
+      }
+    ]
+  },
+  {
+    "scene": "solishtirma_jadval",
+    "id": "l8",
+    "text": "Boshqa bazalarda poyga holatlarini oldini olish dasturiy tranzaksiyalar orqali hal qilinadi.",
+    "show": "Boshqa bazalarda poyga holatlarini oldini olish dasturiy tranzaksiyalar orqali hal qilinadi.",
+    "say": "Boshqa bazalarda poyga holatlarini oldini olish dasturiy tranzaksiyalar orqali hal qilinadi.",
+    "a0": 42.81,
+    "a1": 47.59,
+    "words": [
+      {
+        "w": "Boshqa",
+        "s": 42.81,
+        "e": 43.07
+      },
+      {
+        "w": "bazalarda",
+        "s": 43.11,
+        "e": 43.55
+      },
+      {
+        "w": "poyga",
+        "s": 43.69,
+        "e": 43.95
+      },
+      {
+        "w": "holatlarini",
+        "s": 44.01,
+        "e": 44.51
+      },
+      {
+        "w": "oldini",
+        "s": 44.59,
+        "e": 44.83
+      },
+      {
+        "w": "olish",
+        "s": 44.91,
+        "e": 45.13
+      },
+      {
+        "w": "dasturiy",
+        "s": 45.45,
+        "e": 45.95
+      },
+      {
+        "w": "tranzaksiyalar",
+        "s": 45.99,
+        "e": 46.69
+      },
+      {
+        "w": "orqali",
+        "s": 46.73,
+        "e": 47.01
+      },
+      {
+        "w": "hal",
+        "s": 47.07,
+        "e": 47.21
+      },
+      {
+        "w": "qilinadi.",
+        "s": 47.25,
+        "e": 47.59
+      }
+    ]
+  },
+  {
+    "scene": "loyihalash_va_xulosalar",
+    "id": "l9",
+    "text": "Loyiha arxitekturasida relyatsion me'yorni saqlash va alohida jadvallar qurish eng universal yo'ldir.",
+    "show": "Loyiha arxitekturasida relyatsion me'yorni saqlash va alohida jadvallar qurish eng universal yo'ldir.",
+    "say": "Loyiha arxitekturasida relyatsion me'yorni saqlash va alohida jadvallar qurish eng universal yo'ldir.",
+    "a0": 48.33,
+    "a1": 54.34,
+    "words": [
+      {
+        "w": "Loyiha",
+        "s": 48.33,
+        "e": 48.65
+      },
+      {
+        "w": "arxitekturasida",
+        "s": 48.69,
+        "e": 49.49
+      },
+      {
+        "w": "relyatsion",
+        "s": 49.69,
+        "e": 50.13
+      },
+      {
+        "w": "me'yorni",
+        "s": 50.17,
+        "e": 50.57
+      },
+      {
+        "w": "saqlash",
+        "s": 50.63,
+        "e": 51.11
+      },
+      {
+        "w": "va",
+        "s": 51.23,
+        "e": 51.33
+      },
+      {
+        "w": "alohida",
+        "s": 51.83,
+        "e": 52.21
+      },
+      {
+        "w": "jadvallar",
+        "s": 52.27,
+        "e": 52.72
+      },
+      {
+        "w": "qurish",
+        "s": 52.74,
+        "e": 53
+      },
+      {
+        "w": "eng",
+        "s": 53.18,
+        "e": 53.34
+      },
+      {
+        "w": "universal",
+        "s": 53.48,
+        "e": 53.98
+      },
+      {
+        "w": "yo'ldir.",
+        "s": 54.04,
+        "e": 54.34
+      }
+    ]
+  },
+  {
+    "scene": "loyihalash_va_xulosalar",
+    "id": "l10",
+    "text": "Bu barcha tizimlarda yuqori unumdorlik, indekslash va ma'lumotlar yaxlitligini kafolatlaydi.",
+    "show": "Bu barcha tizimlarda yuqori unumdorlik, indekslash va ma'lumotlar yaxlitligini kafolatlaydi.",
+    "say": "Bu barcha tizimlarda yuqori unumdorlik, indekslash va ma'lumotlar yaxlitligini kafolatlaydi.",
+    "a0": 54.94,
+    "a1": 60.17,
+    "words": [
+      {
+        "w": "Bu",
+        "s": 54.94,
+        "e": 55
+      },
+      {
+        "w": "barcha",
+        "s": 55.22,
+        "e": 55.5
+      },
+      {
+        "w": "tizimlarda",
+        "s": 55.54,
+        "e": 56
+      },
+      {
+        "w": "yuqori",
+        "s": 56.08,
+        "e": 56.44
+      },
+      {
+        "w": "unumdorlik,",
+        "s": 56.48,
+        "e": 57.1
+      },
+      {
+        "w": "indekslash",
+        "s": 57.52,
+        "e": 58.1
+      },
+      {
+        "w": "va",
+        "s": 58.18,
+        "e": 58.26
+      },
+      {
+        "w": "ma'lumotlar",
+        "s": 58.44,
+        "e": 58.94
+      },
+      {
+        "w": "yaxlitligini",
+        "s": 58.98,
+        "e": 59.5
+      },
+      {
+        "w": "kafolatlaydi.",
+        "s": 59.54,
+        "e": 60.17
+      }
+    ]
+  }
+]

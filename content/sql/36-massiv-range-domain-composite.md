@@ -4,6 +4,15 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/36-1-tushuncha.jpg">
+    <source src="/video/sql/36-1-tushuncha.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/36-1-tushuncha.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/36-1-tushuncha.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>PostgreSQL maxsus tiplari tushunchasi: massivlar, range oraliqlari, exclusion cheklovi, domain va composite turlar</figcaption>
+</figure>
+
 Bu bob — **PostgreSQL'ga xos** tiplar. MySQL va SQLite'da ularning to'g'ridan-to'g'ri o'rni yo'q (oxirida — nima bilan almashtiriladi). To'rtta tip:
 
 | Tip | Nima | Misol |
@@ -64,6 +73,15 @@ Hujjatga ko'ra composite tip qator yoki yozuv tuzilishini ifodalaydi — maydon 
 Maydonga murojaat — nuqta bilan, lekin **qavsda**: `(manzil).shahar`. Hujjatga ko'ra qavssiz `manzil.shahar` da `manzil` jadval nomi deb o'qiladi.
 
 ## Kod
+
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/36-2-kod.jpg">
+    <source src="/video/sql/36-2-kod.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/36-2-kod.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/36-2-kod.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>Maxsus tiplar amaliyotda: massiv indekslari va unnest, daterange va multirange, bron tizimidagi EXCLUDE va domain tekshiruvi</figcaption>
+</figure>
 
 Misollar PostgreSQL 18.6 da ishga tushirilgan; MySQL 9.7.2 va SQLite 3.54.0 dagi natijalar "Dialektlar"da.
 
@@ -305,6 +323,15 @@ SELECT (manzil).* FROM mijozlar2 WHERE id = 1;
 Composite ustun ichidagi maydonlarga cheklov va indeks qo'yish qiyinroq. Ko'p hollarda oddiy ustunlar (`shahar`, `kocha`, `uy`) yoki alohida `manzillar` jadvali soddaroq.
 
 ## Dialektlar
+
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/36-3-dialektlar.jpg">
+    <source src="/video/sql/36-3-dialektlar.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/36-3-dialektlar.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/36-3-dialektlar.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>Dialektlar va muqobillar: MySQL (JSON massiv, 2 ustun), SQLite (text[] tuzog'i, affinity) va portativ relyatsion arxitektura</figcaption>
+</figure>
 
 ### MySQL
 
