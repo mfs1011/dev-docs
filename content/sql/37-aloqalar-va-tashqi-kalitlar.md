@@ -4,6 +4,15 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/37-1-tushuncha.jpg">
+    <source src="/video/sql/37-1-tushuncha.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/37-1-tushuncha.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/37-1-tushuncha.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>37.1-video. Aloqalar va tashqi kalitlar tushunchasi</figcaption>
+</figure>
+
 14-bobda tashqi kalitning (foreign key) **mexanikasi** ko'rildi: `REFERENCES`, `ON DELETE`/`ON UPDATE` amallari, kechiktirilgan tekshiruv, SQLite'dagi `PRAGMA foreign_keys`. Bu bob — **loyihalash**: jadvallar orasidagi aloqa turlari qanday quriladi va har biriga qaysi amal mos keladi.
 
 PostgreSQL qo'llanmasi (tutorial) tashqi kalitning vazifasini sodda tushuntiradi: `weather` jadvaliga `cities` da yo'q shahar yozilmasin. Buni ilovada qo'lda tekshirish (avval qidirib, keyin yozish) "qator muammolarga ega va juda noqulay" — ma'lumotlar bazasi buni o'zi qila oladi. Bu **ma'lumot yaxlitligi** (referential integrity).
@@ -80,6 +89,15 @@ Ota qator o'chirilganda bola jadvalda shu kalitli qatorlar qidiriladi. SQLite hu
 Oraliq jadvalda nozik joy bor: `PRIMARY KEY (product_no, order_id)` indeksi `product_no` bo'yicha qidiruvga yaraydi, lekin `order_id` bo'yicha — yo'q (ko'p ustunli indeksda chap ustun qoidasi, 42-bob). Buyurtma o'chirilganda (`CASCADE`) `order_items` dan `order_id` bo'yicha qidiriladi.
 
 ## Kod
+
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/37-2-kod.jpg">
+    <source src="/video/sql/37-2-kod.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/37-2-kod.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/37-2-kod.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>37.2-video. Aloqalar va tashqi kalitlar amaliyoti</figcaption>
+</figure>
 
 Misollar PostgreSQL 18.6, MySQL 9.7.2 va SQLite 3.54.0 (`PRAGMA foreign_keys = ON`) da ishga tushirilgan.
 
@@ -286,6 +304,15 @@ CREATE INDEX ON order_items (order_id);
 ```
 
 ## Dialektlar
+
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/37-3-dialektlar.jpg">
+    <source src="/video/sql/37-3-dialektlar.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/37-3-dialektlar.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/37-3-dialektlar.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>37.3-video. Dialektlar: PostgreSQL, MySQL va SQLite farqlari</figcaption>
+</figure>
 
 ### MySQL
 
