@@ -4,6 +4,15 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/28-1-tushuncha.jpg">
+    <source src="/video/sql/28-1-tushuncha.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/28-1-tushuncha.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/28-1-tushuncha.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>28.1-video. Set amallari tushunchasi: UNION, INTERSECT, EXCEPT va ustuvorlik</figcaption>
+</figure>
+
 **Set amallari** (set operations, to'plam amallari) ikki so'rov natijasini bitta natijaga birlashtiradi. JOIN (25-bob) jadvallarni **yonma-yon** (ustunlar bo'yicha) qo'shadi, set amallari esa natijalarni **ustma-ust** (qatorlar bo'yicha) qo'shadi.
 
 ```sql
@@ -60,6 +69,15 @@ Oxirdagi `ORDER BY`/`LIMIT` **butun** natijaga tegishli. PostgreSQL hujjatidagi 
 Bitta qismga `ORDER BY`/`LIMIT` qo'yish uchun shu qism **qavsga** olinadi. MySQL hujjatiga ko'ra qism ichidagi `ORDER BY` yakuniy tartibga ta'sir qilmaydi — u faqat `LIMIT` bilan birga ma'noga ega (qaysi qatorlar olinishini belgilaydi). `LIMIT` siz qism ichidagi `ORDER BY` ni optimizator olib tashlaydi.
 
 ## Kod
+
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/28-2-kod.jpg">
+    <source src="/video/sql/28-2-kod.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/28-2-kod.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/28-2-kod.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>28.2-video. PostgreSQL 18: Amaliy set amallari va takrorlar matematikasi</figcaption>
+</figure>
 
 Misollar PostgreSQL 18.6, MySQL 9.7.2 va SQLite 3.54.0 da ishga tushirilgan. Jadvallar MySQL hujjatidagi `INTERSECT` misolidan:
 
@@ -264,6 +282,15 @@ SELECT 1 AS k, 'x' AS v UNION SELECT NULL, NULL UNION SELECT NULL, NULL;
 Ikkita `(NULL, NULL)` qatori bitta bo'lib qoldi — takror deb topildi.
 
 ## Dialektlar
+
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/28-3-dialektlar.jpg">
+    <source src="/video/sql/28-3-dialektlar.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/28-3-dialektlar.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/28-3-dialektlar.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>28.3-video. MySQL va SQLite da set amallari farqlari va cheklovlari</figcaption>
+</figure>
 
 ### MySQL
 
