@@ -1,0 +1,757 @@
+[
+  {
+    "scene": "dialektlar_kirish",
+    "id": "l1",
+    "text": "Tashqi kalitlar mantiqi umumiy bo'lsa-da, uchta asosiy tizimda indekslash va cheklovlar turlicha ishlaydi.",
+    "show": "Tashqi kalitlar mantiqi umumiy bo'lsa-da, uchta asosiy tizimda indekslash va cheklovlar turlicha ishlaydi.",
+    "say": "Tashqi kalitlar mantiqi umumiy bo'lsa-da, uchta asosiy tizimda indekslash va cheklovlar turlicha ishlaydi.",
+    "a0": 0.22,
+    "a1": 6.74,
+    "words": [
+      {
+        "w": "Tashqi",
+        "s": 0.22,
+        "e": 0.5
+      },
+      {
+        "w": "kalitlar",
+        "s": 0.54,
+        "e": 0.98
+      },
+      {
+        "w": "mantiqi",
+        "s": 1.04,
+        "e": 1.48
+      },
+      {
+        "w": "umumiy",
+        "s": 1.72,
+        "e": 2.02
+      },
+      {
+        "w": "bo'lsa-da,",
+        "s": 2.1,
+        "e": 2.52
+      },
+      {
+        "w": "uchta",
+        "s": 3.06,
+        "e": 3.3
+      },
+      {
+        "w": "asosiy",
+        "s": 3.36,
+        "e": 3.7
+      },
+      {
+        "w": "tizimda",
+        "s": 3.78,
+        "e": 4.18
+      },
+      {
+        "w": "indekslash",
+        "s": 4.38,
+        "e": 5.06
+      },
+      {
+        "w": "va",
+        "s": 5.14,
+        "e": 5.2
+      },
+      {
+        "w": "cheklovlar",
+        "s": 5.3,
+        "e": 5.8
+      },
+      {
+        "w": "turlicha",
+        "s": 6,
+        "e": 6.38
+      },
+      {
+        "w": "ishlaydi.",
+        "s": 6.42,
+        "e": 6.74
+      }
+    ]
+  },
+  {
+    "scene": "dialektlar_kirish",
+    "id": "l2",
+    "text": "Postgres standartga qat'iy amal qilsa, May es-kyu-el va Es-kyu-layt o'ziga xos qoidalarga ega.",
+    "show": "Postgres standartga qat'iy amal qilsa, May es-kyu-el va Es-kyu-layt o'ziga xos qoidalarga ega.",
+    "say": "Postgres standartga qat'iy amal qilsa, May es-kyu-el va Es-kyu-layt o'ziga xos qoidalarga ega.",
+    "a0": 7.53,
+    "a1": 13.03,
+    "words": [
+      {
+        "w": "Postgres",
+        "s": 7.53,
+        "e": 8.01
+      },
+      {
+        "w": "standartga",
+        "s": 8.19,
+        "e": 8.73
+      },
+      {
+        "w": "qat'iy",
+        "s": 8.85,
+        "e": 9.17
+      },
+      {
+        "w": "amal",
+        "s": 9.27,
+        "e": 9.49
+      },
+      {
+        "w": "qilsa,",
+        "s": 9.53,
+        "e": 9.79
+      },
+      {
+        "w": "May",
+        "s": 10.29,
+        "e": 10.43
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 10.47,
+        "e": 10.81
+      },
+      {
+        "w": "va",
+        "s": 10.87,
+        "e": 10.93
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 11.01,
+        "e": 11.53
+      },
+      {
+        "w": "o'ziga",
+        "s": 11.67,
+        "e": 11.93
+      },
+      {
+        "w": "xos",
+        "s": 12.03,
+        "e": 12.23
+      },
+      {
+        "w": "qoidalarga",
+        "s": 12.29,
+        "e": 12.83
+      },
+      {
+        "w": "ega.",
+        "s": 12.87,
+        "e": 13.03
+      }
+    ]
+  },
+  {
+    "scene": "mysql_avtomatik_indeks",
+    "id": "l3",
+    "text": "May es-kyu-el bola tomondagi tashqi kalit ustuniga indeksni avtomatik ravishda o'zi yaratib beradi.",
+    "show": "May es-kyu-el bola tomondagi tashqi kalit ustuniga indeksni avtomatik ravishda o'zi yaratib beradi.",
+    "say": "May es-kyu-el bola tomondagi tashqi kalit ustuniga indeksni avtomatik ravishda o'zi yaratib beradi.",
+    "a0": 13.75,
+    "a1": 19.37,
+    "words": [
+      {
+        "w": "May",
+        "s": 13.75,
+        "e": 13.91
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 13.95,
+        "e": 14.29
+      },
+      {
+        "w": "bola",
+        "s": 14.73,
+        "e": 14.93
+      },
+      {
+        "w": "tomondagi",
+        "s": 14.99,
+        "e": 15.51
+      },
+      {
+        "w": "tashqi",
+        "s": 15.59,
+        "e": 15.85
+      },
+      {
+        "w": "kalit",
+        "s": 15.89,
+        "e": 16.13
+      },
+      {
+        "w": "ustuniga",
+        "s": 16.19,
+        "e": 16.63
+      },
+      {
+        "w": "indeksni",
+        "s": 16.85,
+        "e": 17.29
+      },
+      {
+        "w": "avtomatik",
+        "s": 17.43,
+        "e": 17.93
+      },
+      {
+        "w": "ravishda",
+        "s": 17.99,
+        "e": 18.33
+      },
+      {
+        "w": "o'zi",
+        "s": 18.51,
+        "e": 18.69
+      },
+      {
+        "w": "yaratib",
+        "s": 18.73,
+        "e": 19.05
+      },
+      {
+        "w": "beradi.",
+        "s": 19.09,
+        "e": 19.37
+      }
+    ]
+  },
+  {
+    "scene": "mysql_avtomatik_indeks",
+    "id": "l4",
+    "text": "Biroq unda qisman null qilish sintaksisi yo'q, set default amali esa amalda xatolik qaytaradi.",
+    "show": "Biroq unda qisman null qilish sintaksisi yo'q, set default amali esa amalda xatolik qaytaradi.",
+    "say": "Biroq unda qisman null qilish sintaksisi yo'q, set default amali esa amalda xatolik qaytaradi.",
+    "a0": 19.87,
+    "a1": 25.54,
+    "words": [
+      {
+        "w": "Biroq",
+        "s": 19.87,
+        "e": 20.09
+      },
+      {
+        "w": "unda",
+        "s": 20.15,
+        "e": 20.31
+      },
+      {
+        "w": "qisman",
+        "s": 20.43,
+        "e": 20.79
+      },
+      {
+        "w": "null",
+        "s": 20.89,
+        "e": 21.05
+      },
+      {
+        "w": "qilish",
+        "s": 21.11,
+        "e": 21.35
+      },
+      {
+        "w": "sintaksisi",
+        "s": 21.39,
+        "e": 21.91
+      },
+      {
+        "w": "yo'q,",
+        "s": 21.97,
+        "e": 22.15
+      },
+      {
+        "w": "set",
+        "s": 22.6,
+        "e": 22.78
+      },
+      {
+        "w": "default",
+        "s": 22.84,
+        "e": 23.22
+      },
+      {
+        "w": "amali",
+        "s": 23.3,
+        "e": 23.54
+      },
+      {
+        "w": "esa",
+        "s": 23.6,
+        "e": 23.78
+      },
+      {
+        "w": "amalda",
+        "s": 24.18,
+        "e": 24.52
+      },
+      {
+        "w": "xatolik",
+        "s": 24.6,
+        "e": 25.04
+      },
+      {
+        "w": "qaytaradi.",
+        "s": 25.08,
+        "e": 25.54
+      }
+    ]
+  },
+  {
+    "scene": "sqlite_fk_va_mismatch",
+    "id": "l5",
+    "text": "Es-kyu-laytda tashqi kalitlar sukut bo'yicha o'chiq bo'lib, pragma buyrug'i orqali yoqilishi shart.",
+    "show": "Es-kyu-laytda tashqi kalitlar sukut bo'yicha o'chiq bo'lib, pragma buyrug'i orqali yoqilishi shart.",
+    "say": "Es-kyu-laytda tashqi kalitlar sukut bo'yicha o'chiq bo'lib, pragma buyrug'i orqali yoqilishi shart.",
+    "a0": 26.1,
+    "a1": 31.06,
+    "words": [
+      {
+        "w": "Es-kyu-laytda",
+        "s": 26.1,
+        "e": 26.74
+      },
+      {
+        "w": "tashqi",
+        "s": 26.82,
+        "e": 27.08
+      },
+      {
+        "w": "kalitlar",
+        "s": 27.12,
+        "e": 27.52
+      },
+      {
+        "w": "sukut",
+        "s": 27.58,
+        "e": 27.82
+      },
+      {
+        "w": "bo'yicha",
+        "s": 27.88,
+        "e": 28.18
+      },
+      {
+        "w": "o'chiq",
+        "s": 28.36,
+        "e": 28.58
+      },
+      {
+        "w": "bo'lib,",
+        "s": 28.66,
+        "e": 28.9
+      },
+      {
+        "w": "pragma",
+        "s": 29.28,
+        "e": 29.64
+      },
+      {
+        "w": "buyrug'i",
+        "s": 29.7,
+        "e": 29.98
+      },
+      {
+        "w": "orqali",
+        "s": 30.06,
+        "e": 30.3
+      },
+      {
+        "w": "yoqilishi",
+        "s": 30.3,
+        "e": 30.74
+      },
+      {
+        "w": "shart.",
+        "s": 30.8,
+        "e": 31.06
+      }
+    ]
+  },
+  {
+    "scene": "sqlite_fk_va_mismatch",
+    "id": "l6",
+    "text": "Shuningdek, ota kaliti unikal bo'lmagan xatolik jadval yaratishda emas, yozuv kiritish paytida aniqlanadi.",
+    "show": "Shuningdek, ota kaliti unikal bo'lmagan xatolik jadval yaratishda emas, yozuv kiritish paytida aniqlanadi.",
+    "say": "Shuningdek, ota kaliti unikal bo'lmagan xatolik jadval yaratishda emas, yozuv kiritish paytida aniqlanadi.",
+    "a0": 31.5,
+    "a1": 37.22,
+    "words": [
+      {
+        "w": "Shuningdek,",
+        "s": 31.5,
+        "e": 31.9
+      },
+      {
+        "w": "ota",
+        "s": 32.22,
+        "e": 32.36
+      },
+      {
+        "w": "kaliti",
+        "s": 32.42,
+        "e": 32.74
+      },
+      {
+        "w": "unikal",
+        "s": 32.86,
+        "e": 33.22
+      },
+      {
+        "w": "bo'lmagan",
+        "s": 33.28,
+        "e": 33.7
+      },
+      {
+        "w": "xatolik",
+        "s": 33.76,
+        "e": 34.14
+      },
+      {
+        "w": "jadval",
+        "s": 34.2,
+        "e": 34.52
+      },
+      {
+        "w": "yaratishda",
+        "s": 34.56,
+        "e": 34.94
+      },
+      {
+        "w": "emas,",
+        "s": 35,
+        "e": 35.24
+      },
+      {
+        "w": "yozuv",
+        "s": 35.7,
+        "e": 35.98
+      },
+      {
+        "w": "kiritish",
+        "s": 36.04,
+        "e": 36.36
+      },
+      {
+        "w": "paytida",
+        "s": 36.38,
+        "e": 36.7
+      },
+      {
+        "w": "aniqlanadi.",
+        "s": 36.74,
+        "e": 37.22
+      }
+    ]
+  },
+  {
+    "scene": "solishtirma_matritsa",
+    "id": "l7",
+    "text": "Qiyosiy matritsa har bir tizimning kuchli va ehtiyot bo'lish zarur bo'lgan jihatlarini yaqqol ko'rsatadi.",
+    "show": "Qiyosiy matritsa har bir tizimning kuchli va ehtiyot bo'lish zarur bo'lgan jihatlarini yaqqol ko'rsatadi.",
+    "say": "Qiyosiy matritsa har bir tizimning kuchli va ehtiyot bo'lish zarur bo'lgan jihatlarini yaqqol ko'rsatadi.",
+    "a0": 37.79,
+    "a1": 43.45,
+    "words": [
+      {
+        "w": "Qiyosiy",
+        "s": 37.79,
+        "e": 38.15
+      },
+      {
+        "w": "matritsa",
+        "s": 38.23,
+        "e": 38.63
+      },
+      {
+        "w": "har",
+        "s": 38.73,
+        "e": 38.91
+      },
+      {
+        "w": "bir",
+        "s": 38.95,
+        "e": 39.05
+      },
+      {
+        "w": "tizimning",
+        "s": 39.09,
+        "e": 39.49
+      },
+      {
+        "w": "kuchli",
+        "s": 39.55,
+        "e": 39.87
+      },
+      {
+        "w": "va",
+        "s": 39.99,
+        "e": 40.07
+      },
+      {
+        "w": "ehtiyot",
+        "s": 40.51,
+        "e": 40.87
+      },
+      {
+        "w": "bo'lish",
+        "s": 40.95,
+        "e": 41.21
+      },
+      {
+        "w": "zarur",
+        "s": 41.27,
+        "e": 41.57
+      },
+      {
+        "w": "bo'lgan",
+        "s": 41.63,
+        "e": 41.95
+      },
+      {
+        "w": "jihatlarini",
+        "s": 41.99,
+        "e": 42.53
+      },
+      {
+        "w": "yaqqol",
+        "s": 42.61,
+        "e": 42.93
+      },
+      {
+        "w": "ko'rsatadi.",
+        "s": 42.97,
+        "e": 43.45
+      }
+    ]
+  },
+  {
+    "scene": "solishtirma_matritsa",
+    "id": "l8",
+    "text": "Postgres aniq xato xabarlari bersa, Es-kyu-layt umumiy, May es-kyu-el esa to'liq cheklov ta'rifini qaytaradi.",
+    "show": "Postgres aniq xato xabarlari bersa, Es-kyu-layt umumiy, May es-kyu-el esa to'liq cheklov ta'rifini qaytaradi.",
+    "say": "Postgres aniq xato xabarlari bersa, Es-kyu-layt umumiy, May es-kyu-el esa to'liq cheklov ta'rifini qaytaradi.",
+    "a0": 44.09,
+    "a1": 50.79,
+    "words": [
+      {
+        "w": "Postgres",
+        "s": 44.09,
+        "e": 44.51
+      },
+      {
+        "w": "aniq",
+        "s": 44.73,
+        "e": 44.95
+      },
+      {
+        "w": "xato",
+        "s": 45.03,
+        "e": 45.27
+      },
+      {
+        "w": "xabarlari",
+        "s": 45.35,
+        "e": 45.83
+      },
+      {
+        "w": "bersa,",
+        "s": 45.87,
+        "e": 46.15
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 46.53,
+        "e": 47.09
+      },
+      {
+        "w": "umumiy,",
+        "s": 47.25,
+        "e": 47.63
+      },
+      {
+        "w": "May",
+        "s": 48.05,
+        "e": 48.21
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 48.21,
+        "e": 48.51
+      },
+      {
+        "w": "esa",
+        "s": 48.57,
+        "e": 48.75
+      },
+      {
+        "w": "to'liq",
+        "s": 49.13,
+        "e": 49.45
+      },
+      {
+        "w": "cheklov",
+        "s": 49.51,
+        "e": 49.83
+      },
+      {
+        "w": "ta'rifini",
+        "s": 49.87,
+        "e": 50.31
+      },
+      {
+        "w": "qaytaradi.",
+        "s": 50.35,
+        "e": 50.79
+      }
+    ]
+  },
+  {
+    "scene": "xulosa_va_loyiha",
+    "id": "l9",
+    "text": "Aloqalarni ko'pga-ko'p massivlarda saqlamaslik va tarixiy narxni oraliq jadvalga kiritish muhim qoidadir.",
+    "show": "Aloqalarni ko'pga-ko'p massivlarda saqlamaslik va tarixiy narxni oraliq jadvalga kiritish muhim qoidadir.",
+    "say": "Aloqalarni ko'pga-ko'p massivlarda saqlamaslik va tarixiy narxni oraliq jadvalga kiritish muhim qoidadir.",
+    "a0": 51.39,
+    "a1": 57.96,
+    "words": [
+      {
+        "w": "Aloqalarni",
+        "s": 51.39,
+        "e": 52.01
+      },
+      {
+        "w": "ko'pga-ko'p",
+        "s": 52.15,
+        "e": 52.74
+      },
+      {
+        "w": "massivlarda",
+        "s": 52.86,
+        "e": 53.4
+      },
+      {
+        "w": "saqlamaslik",
+        "s": 53.46,
+        "e": 54.22
+      },
+      {
+        "w": "va",
+        "s": 54.32,
+        "e": 54.4
+      },
+      {
+        "w": "tarixiy",
+        "s": 54.76,
+        "e": 55.14
+      },
+      {
+        "w": "narxni",
+        "s": 55.22,
+        "e": 55.58
+      },
+      {
+        "w": "oraliq",
+        "s": 55.78,
+        "e": 56.08
+      },
+      {
+        "w": "jadvalga",
+        "s": 56.14,
+        "e": 56.54
+      },
+      {
+        "w": "kiritish",
+        "s": 56.58,
+        "e": 56.94
+      },
+      {
+        "w": "muhim",
+        "s": 57.2,
+        "e": 57.46
+      },
+      {
+        "w": "qoidadir.",
+        "s": 57.52,
+        "e": 57.96
+      }
+    ]
+  },
+  {
+    "scene": "xulosa_va_loyiha",
+    "id": "l10",
+    "text": "Kaskad siyosatini faqat ajralmas qismlarga qo'llab, bola ustunlarini doimo indekslab boring.",
+    "show": "Kaskad siyosatini faqat ajralmas qismlarga qo'llab, bola ustunlarini doimo indekslab boring.",
+    "say": "Kaskad siyosatini faqat ajralmas qismlarga qo'llab, bola ustunlarini doimo indekslab boring.",
+    "a0": 58.6,
+    "a1": 64.2,
+    "words": [
+      {
+        "w": "Kaskad",
+        "s": 58.6,
+        "e": 58.94
+      },
+      {
+        "w": "siyosatini",
+        "s": 58.98,
+        "e": 59.46
+      },
+      {
+        "w": "faqat",
+        "s": 59.78,
+        "e": 60.08
+      },
+      {
+        "w": "ajralmas",
+        "s": 60.2,
+        "e": 60.7
+      },
+      {
+        "w": "qismlarga",
+        "s": 60.76,
+        "e": 61.25
+      },
+      {
+        "w": "qo'llab,",
+        "s": 61.33,
+        "e": 61.69
+      },
+      {
+        "w": "bola",
+        "s": 62.09,
+        "e": 62.31
+      },
+      {
+        "w": "ustunlarini",
+        "s": 62.35,
+        "e": 62.89
+      },
+      {
+        "w": "doimo",
+        "s": 63.01,
+        "e": 63.38
+      },
+      {
+        "w": "indekslab",
+        "s": 63.46,
+        "e": 63.9
+      },
+      {
+        "w": "boring.",
+        "s": 63.94,
+        "e": 64.2
+      }
+    ]
+  }
+]

@@ -1,0 +1,51 @@
+WEBVTT
+
+1
+00:01.420 --> 00:07.070
+Tashqi kalitlar jadvallar o'rtasidagi munosabatlarni
+mustahkamlab, ma'lumotlar yaxlitligini kafolatlaydi.
+
+2
+00:07.420 --> 00:12.880
+Ular mavjud bo'lmagan ota yozuvga bog'lanish va
+yetim qatorlar paydo bo'lishining oldini oladi.
+
+3
+00:15.690 --> 00:21.440
+Birga-ko'p aloqada tashqi kalit ko'p tomonga qo'yilsa,
+birga-bir aloqada unga unikal cheklov qo'shiladi.
+
+4
+00:21.630 --> 00:26.850
+Ko'pga-ko'p munosabat esa alohida oraliq jadval
+va ikkita tashqi kalit orqali loyihalanadi.
+
+5
+00:29.800 --> 00:35.950
+Ota yozuv o'chirilganda bola qator uning ajralmas qismi
+bo'lsa kaskad, mustaqil bo'lsa taqiq amali tanlanadi.
+
+6
+00:36.040 --> 00:42.490
+Masalan, buyurtma o'chsa uning qatorlari o'chadi, ammo
+mahsulotni o'chirish tarixni saqlash uchun taqiqlanadi.
+
+7
+00:45.540 --> 00:50.520
+Postgresda bola tomondagi tashqi kalit ustunlariga
+indeks avtomatik ravishda yaratilmaydi.
+
+8
+00:50.630 --> 00:55.960
+Oraliq jadvalda ham ikkinchi kalit uchun alohida
+indeks qo'yish o'chirish tezligini keskin oshiradi.
+
+9
+00:58.930 --> 01:05.050
+Oraliq jadval nafaqat bog'laydi, balki sotilgan paytdagi
+narx kabi o'ziga xos atributlarni ham saqlaydi.
+
+10
+01:05.280 --> 01:10.850
+To'g'ri loyihalangan aloqalar butun arxitekturaning
+barqaror va xatosiz ishlashiga poydevor bo'ladi.
