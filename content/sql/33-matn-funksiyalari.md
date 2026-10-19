@@ -4,6 +4,15 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/33-1-tushuncha.jpg">
+    <source src="/video/sql/33-1-tushuncha.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/33-1-tushuncha.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/33-1-tushuncha.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>Matn funksiyalari tushunchasi: ulash, uzunlik, kesish, qidirish va regex amallarining dialekt farqlari</figcaption>
+</figure>
+
 Matn (satr) bilan ishlash funksiyalari uch tizimda eng ko'p farq qiladigan joylardan biri. Bir xil nomli funksiya boshqa narsa qaytarishi (`length`), bir xil belgi boshqa amal bo'lishi (`||`) mumkin. Bu bobda eng ko'p ishlatiladigan funksiyalar va ularning farqlari.
 
 PostgreSQL hujjatiga ko'ra satr funksiyalari `character`, `character varying` va `text` tiplari bilan ishlaydi. `character` (qat'iy uzunlikli `char(n)`) qiymatlari funksiyaga berilishdan oldin `text` ga o'giriladi va **oxiridagi bo'shliqlar olib tashlanadi** (7-bob).
@@ -73,6 +82,15 @@ SQLite hujjatiga ko'ra o'rnatilgan `lower()`/`upper()` **faqat ASCII** harflar u
 MySQL regex'i ICU kutubxonasiga, PostgreSQL'niki POSIX regex'iga asoslangan — sintaksis tafsilotlari farq qilishi mumkin.
 
 ## Kod
+
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/33-2-kod.jpg">
+    <source src="/video/sql/33-2-kod.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/33-2-kod.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/33-2-kod.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>Matn funksiyalari amaliyotda: CONCAT_WS, LENGTH vs CHAR_LENGTH, TRIM, SUBSTRING, LPAD va REGEXP_REPLACE</figcaption>
+</figure>
 
 Misollar PostgreSQL 18.6, MySQL 9.7.2 va SQLite 3.54.0 da ishga tushirilgan.
 
@@ -248,6 +266,15 @@ SELECT id, regexp_substr(email, '[a-z]+', 1, 2, 'i') AS ikkinchi FROM odamlar OR
 - `regexp_substr(…, 1, 2, 'i')` — 1-pozitsiyadan, **ikkinchi** mos kelish, katta-kichik harfga qaramay (`i`).
 
 ## Dialektlar
+
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/33-3-dialektlar.jpg">
+    <source src="/video/sql/33-3-dialektlar.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/33-3-dialektlar.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/33-3-dialektlar.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>Dialektlar tafovuti: MySQL || va LENGTH tuzoqlari, SQLite ASCII cheklovi va solishtirma matritsa</figcaption>
+</figure>
 
 ### MySQL
 

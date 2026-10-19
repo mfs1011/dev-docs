@@ -1,0 +1,497 @@
+[
+  {
+    "id": "intro",
+    "scene": "kirish",
+    "text": "Odamlar jadvalida ism va familiyani birlashtiramiz, otasining ismi NULL bo'lganda concat_ws yordamida toza to'liq ism hosil qilamiz.",
+    "show": "Odamlar jadvalida ism va familiyani birlashtiramiz, otasining ismi NULL bo'lganda concat_ws yordamida toza to'liq ism hosil qilamiz.",
+    "say": "Odamlar jadvalida ism va familiyani birlashtiramiz, otasining ismi null bo'lganda konkat dablyu-es yordamida toza to'liq ism hosil qilamiz.",
+    "a0": 0.26,
+    "a1": 9.21,
+    "words": [
+      {
+        "w": "Odamlar",
+        "s": 0.26,
+        "e": 0.64
+      },
+      {
+        "w": "jadvalida",
+        "s": 0.7,
+        "e": 1.18
+      },
+      {
+        "w": "ism",
+        "s": 1.4,
+        "e": 1.6
+      },
+      {
+        "w": "va",
+        "s": 1.64,
+        "e": 1.7
+      },
+      {
+        "w": "familiyani",
+        "s": 1.76,
+        "e": 2.26
+      },
+      {
+        "w": "birlashtiramiz,",
+        "s": 2.3,
+        "e": 3.02
+      },
+      {
+        "w": "otasining",
+        "s": 3.32,
+        "e": 3.76
+      },
+      {
+        "w": "ismi",
+        "s": 3.84,
+        "e": 4.08
+      },
+      {
+        "w": "null",
+        "s": 4.4,
+        "e": 4.64
+      },
+      {
+        "w": "bo'lganda",
+        "s": 4.7,
+        "e": 5.16
+      },
+      {
+        "w": "konkat",
+        "s": 5.5,
+        "e": 5.96
+      },
+      {
+        "w": "dablyu-es",
+        "s": 6.16,
+        "e": 6.68
+      },
+      {
+        "w": "yordamida",
+        "s": 6.7,
+        "e": 7.18
+      },
+      {
+        "w": "toza",
+        "s": 7.32,
+        "e": 7.79
+      },
+      {
+        "w": "to'liq",
+        "s": 8.01,
+        "e": 8.29
+      },
+      {
+        "w": "ism",
+        "s": 8.37,
+        "e": 8.53
+      },
+      {
+        "w": "hosil",
+        "s": 8.57,
+        "e": 8.83
+      },
+      {
+        "w": "qilamiz.",
+        "s": 8.87,
+        "e": 9.21
+      }
+    ]
+  },
+  {
+    "id": "uzunlik",
+    "scene": "uzunlik_va_tozalash",
+    "text": "Oʻgʻiloy ismida tutuq belgilari tufayli sakkiz belgi o'n baytni tashkil etadi, trim bilan bo'shliqlarni olib, emailni kichik harfga keltiramiz.",
+    "show": "Oʻgʻiloy ismida tutuq belgilari tufayli sakkiz belgi o'n baytni tashkil etadi, trim bilan bo'shliqlarni olib, emailni kichik harfga keltiramiz.",
+    "say": "Oʻgʻiloy ismida tutuq belgilari tufayli sakkiz belgi o'n baytni tashkil etadi, trim bilan bo'shliqlarni olib, emailni kichik harfga keltiramiz.",
+    "a0": 10.17,
+    "a1": 18.41,
+    "words": [
+      {
+        "w": "Oʻgʻiloy",
+        "s": 10.17,
+        "e": 10.55
+      },
+      {
+        "w": "ismida",
+        "s": 10.65,
+        "e": 10.99
+      },
+      {
+        "w": "tutuq",
+        "s": 11.07,
+        "e": 11.33
+      },
+      {
+        "w": "belgilari",
+        "s": 11.39,
+        "e": 11.83
+      },
+      {
+        "w": "tufayli",
+        "s": 11.87,
+        "e": 12.21
+      },
+      {
+        "w": "sakkiz",
+        "s": 12.37,
+        "e": 12.77
+      },
+      {
+        "w": "belgi",
+        "s": 12.85,
+        "e": 13.17
+      },
+      {
+        "w": "o'n",
+        "s": 13.39,
+        "e": 13.55
+      },
+      {
+        "w": "baytni",
+        "s": 13.63,
+        "e": 13.95
+      },
+      {
+        "w": "tashkil",
+        "s": 13.97,
+        "e": 14.27
+      },
+      {
+        "w": "etadi,",
+        "s": 14.31,
+        "e": 14.55
+      },
+      {
+        "w": "trim",
+        "s": 15.21,
+        "e": 15.41
+      },
+      {
+        "w": "bilan",
+        "s": 15.45,
+        "e": 15.63
+      },
+      {
+        "w": "bo'shliqlarni",
+        "s": 15.69,
+        "e": 16.25
+      },
+      {
+        "w": "olib,",
+        "s": 16.31,
+        "e": 16.49
+      },
+      {
+        "w": "emailni",
+        "s": 16.77,
+        "e": 17.21
+      },
+      {
+        "w": "kichik",
+        "s": 17.29,
+        "e": 17.53
+      },
+      {
+        "w": "harfga",
+        "s": 17.61,
+        "e": 17.91
+      },
+      {
+        "w": "keltiramiz.",
+        "s": 17.95,
+        "e": 18.41
+      }
+    ]
+  },
+  {
+    "id": "kesish",
+    "scene": "kesish_va_qidirish",
+    "text": "Substring va left yordamida familiya boshini kesib olamiz, split_part esa kuchukcha belgisi bo'yicha email domenini ajratadi.",
+    "show": "Substring va left yordamida familiya boshini kesib olamiz, split_part esa kuchukcha belgisi bo'yicha email domenini ajratadi.",
+    "say": "Sabstring va left yordamida familiya boshini kesib olamiz, split part esa kuchukcha belgisi bo'yicha email domenini ajratadi.",
+    "a0": 19.03,
+    "a1": 26.72,
+    "words": [
+      {
+        "w": "Sabstring",
+        "s": 19.03,
+        "e": 19.55
+      },
+      {
+        "w": "va",
+        "s": 19.59,
+        "e": 19.67
+      },
+      {
+        "w": "left",
+        "s": 19.95,
+        "e": 20.19
+      },
+      {
+        "w": "yordamida",
+        "s": 20.21,
+        "e": 20.69
+      },
+      {
+        "w": "familiya",
+        "s": 20.79,
+        "e": 21.21
+      },
+      {
+        "w": "boshini",
+        "s": 21.27,
+        "e": 21.57
+      },
+      {
+        "w": "kesib",
+        "s": 21.67,
+        "e": 21.97
+      },
+      {
+        "w": "olamiz,",
+        "s": 22.01,
+        "e": 22.33
+      },
+      {
+        "w": "split",
+        "s": 22.72,
+        "e": 23.04
+      },
+      {
+        "w": "part",
+        "s": 23.12,
+        "e": 23.34
+      },
+      {
+        "w": "esa",
+        "s": 23.4,
+        "e": 23.56
+      },
+      {
+        "w": "kuchukcha",
+        "s": 23.86,
+        "e": 24.22
+      },
+      {
+        "w": "belgisi",
+        "s": 24.28,
+        "e": 24.62
+      },
+      {
+        "w": "bo'yicha",
+        "s": 24.66,
+        "e": 24.98
+      },
+      {
+        "w": "email",
+        "s": 25.18,
+        "e": 25.52
+      },
+      {
+        "w": "domenini",
+        "s": 25.6,
+        "e": 26.06
+      },
+      {
+        "w": "ajratadi.",
+        "s": 26.26,
+        "e": 26.72
+      }
+    ]
+  },
+  {
+    "id": "lpad",
+    "scene": "lpad_va_format",
+    "text": "Tizimda hisob raqami yoki shaxsiy kod yasash uchun lpad funksiyasi yordamida identifikatorni besh xonali nollar bilan to'ldiramiz.",
+    "show": "Tizimda hisob raqami yoki shaxsiy kod yasash uchun lpad funksiyasi yordamida identifikatorni besh xonali nollar bilan to'ldiramiz.",
+    "say": "Tizimda hisob raqami yoki shaxsiy kod yasash uchun el-ped funksiyasi yordamida identifikatorni besh xonali nollar bilan to'ldiramiz.",
+    "a0": 27.48,
+    "a1": 35.11,
+    "words": [
+      {
+        "w": "Tizimda",
+        "s": 27.48,
+        "e": 27.88
+      },
+      {
+        "w": "hisob",
+        "s": 27.96,
+        "e": 28.26
+      },
+      {
+        "w": "raqami",
+        "s": 28.32,
+        "e": 28.66
+      },
+      {
+        "w": "yoki",
+        "s": 28.66,
+        "e": 28.94
+      },
+      {
+        "w": "shaxsiy",
+        "s": 29.04,
+        "e": 29.38
+      },
+      {
+        "w": "kod",
+        "s": 29.48,
+        "e": 29.68
+      },
+      {
+        "w": "yasash",
+        "s": 29.76,
+        "e": 30.08
+      },
+      {
+        "w": "uchun",
+        "s": 30.08,
+        "e": 30.26
+      },
+      {
+        "w": "el-ped",
+        "s": 30.68,
+        "e": 31.06
+      },
+      {
+        "w": "funksiyasi",
+        "s": 31.14,
+        "e": 31.52
+      },
+      {
+        "w": "yordamida",
+        "s": 31.58,
+        "e": 32.02
+      },
+      {
+        "w": "identifikatorni",
+        "s": 32.16,
+        "e": 32.96
+      },
+      {
+        "w": "besh",
+        "s": 33.3,
+        "e": 33.53
+      },
+      {
+        "w": "xonali",
+        "s": 33.59,
+        "e": 33.93
+      },
+      {
+        "w": "nollar",
+        "s": 34.03,
+        "e": 34.37
+      },
+      {
+        "w": "bilan",
+        "s": 34.41,
+        "e": 34.59
+      },
+      {
+        "w": "to'ldiramiz.",
+        "s": 34.63,
+        "e": 35.11
+      }
+    ]
+  },
+  {
+    "id": "regex",
+    "scene": "regex_tozalash",
+    "text": "Regex almashtirish orqali telefon raqamidagi barcha bo'shliq va chiziqchalarni tozalab, sof o'n ikki xonali raqamlar qatorini olamiz.",
+    "show": "Regex almashtirish orqali telefon raqamidagi barcha bo'shliq va chiziqchalarni tozalab, sof o'n ikki xonali raqamlar qatorini olamiz.",
+    "say": "Reg-eks almashtirish orqali telefon raqamidagi barcha bo'shliq va chiziqchalarni tozalab, sof o'n ikki xonali raqamlar qatorini olamiz.",
+    "a0": 35.83,
+    "a1": 43.02,
+    "words": [
+      {
+        "w": "Reg-eks",
+        "s": 35.83,
+        "e": 36.23
+      },
+      {
+        "w": "almashtirish",
+        "s": 36.35,
+        "e": 36.81
+      },
+      {
+        "w": "orqali",
+        "s": 36.83,
+        "e": 37.13
+      },
+      {
+        "w": "telefon",
+        "s": 37.23,
+        "e": 37.55
+      },
+      {
+        "w": "raqamidagi",
+        "s": 37.61,
+        "e": 38.09
+      },
+      {
+        "w": "barcha",
+        "s": 38.21,
+        "e": 38.55
+      },
+      {
+        "w": "bo'shliq",
+        "s": 38.63,
+        "e": 38.99
+      },
+      {
+        "w": "va",
+        "s": 39.05,
+        "e": 39.11
+      },
+      {
+        "w": "chiziqchalarni",
+        "s": 39.17,
+        "e": 39.75
+      },
+      {
+        "w": "tozalab,",
+        "s": 39.81,
+        "e": 40.26
+      },
+      {
+        "w": "sof",
+        "s": 40.6,
+        "e": 40.82
+      },
+      {
+        "w": "o'n",
+        "s": 41.1,
+        "e": 41.18
+      },
+      {
+        "w": "ikki",
+        "s": 41.22,
+        "e": 41.4
+      },
+      {
+        "w": "xonali",
+        "s": 41.44,
+        "e": 41.74
+      },
+      {
+        "w": "raqamlar",
+        "s": 41.82,
+        "e": 42.2
+      },
+      {
+        "w": "qatorini",
+        "s": 42.24,
+        "e": 42.64
+      },
+      {
+        "w": "olamiz.",
+        "s": 42.7,
+        "e": 43.02
+      }
+    ]
+  }
+]

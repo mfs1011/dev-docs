@@ -1,0 +1,517 @@
+[
+  {
+    "id": "intro",
+    "scene": "kirish",
+    "text": "Matn bilan ishlash funksiyalari SQL dialektlarida eng ko'p farq qiladigan soha bo'lib, bir xil funksiya har xil natija berishi mumkin.",
+    "show": "Matn bilan ishlash funksiyalari SQL dialektlarida eng ko'p farq qiladigan soha bo'lib, bir xil funksiya har xil natija berishi mumkin.",
+    "say": "Matn bilan ishlash funksiyalari es-kyu-el dialektlarida eng ko'p farq qiladigan soha bo'lib, bir xil funksiya har xil natija berishi mumkin.",
+    "a0": 0.36,
+    "a1": 7.61,
+    "words": [
+      {
+        "w": "Matn",
+        "s": 0.36,
+        "e": 0.66
+      },
+      {
+        "w": "bilan",
+        "s": 0.7,
+        "e": 0.9
+      },
+      {
+        "w": "ishlash",
+        "s": 0.94,
+        "e": 1.22
+      },
+      {
+        "w": "funksiyalari",
+        "s": 1.26,
+        "e": 1.82
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 2.04,
+        "e": 2.44
+      },
+      {
+        "w": "dialektlarida",
+        "s": 2.48,
+        "e": 3.1
+      },
+      {
+        "w": "eng",
+        "s": 3.38,
+        "e": 3.56
+      },
+      {
+        "w": "ko'p",
+        "s": 3.6,
+        "e": 3.76
+      },
+      {
+        "w": "farq",
+        "s": 3.82,
+        "e": 4.02
+      },
+      {
+        "w": "qiladigan",
+        "s": 4.04,
+        "e": 4.44
+      },
+      {
+        "w": "soha",
+        "s": 4.48,
+        "e": 4.72
+      },
+      {
+        "w": "bo'lib,",
+        "s": 4.76,
+        "e": 4.96
+      },
+      {
+        "w": "bir",
+        "s": 5.4,
+        "e": 5.5
+      },
+      {
+        "w": "xil",
+        "s": 5.54,
+        "e": 5.66
+      },
+      {
+        "w": "funksiya",
+        "s": 5.7,
+        "e": 6.04
+      },
+      {
+        "w": "har",
+        "s": 6.36,
+        "e": 6.54
+      },
+      {
+        "w": "xil",
+        "s": 6.58,
+        "e": 6.68
+      },
+      {
+        "w": "natija",
+        "s": 6.74,
+        "e": 7.04
+      },
+      {
+        "w": "berishi",
+        "s": 7.08,
+        "e": 7.32
+      },
+      {
+        "w": "mumkin.",
+        "s": 7.34,
+        "e": 7.61
+      }
+    ]
+  },
+  {
+    "id": "ulash",
+    "scene": "ulash_va_null",
+    "text": "Satrlarni ulashda ikkita vertikal chiziq va concat NULL qiymatda farqlanadi, concat_ws esa ajratuvchi bilan xavfsiz birlashtiradi.",
+    "show": "Satrlarni ulashda ikkita vertikal chiziq va concat NULL qiymatda farqlanadi, concat_ws esa ajratuvchi bilan xavfsiz birlashtiradi.",
+    "say": "Satrlarni ulashda ikkita vertikal chiziq va konkat null qiymatda farqlanadi, konkat dablyu-es esa ajratuvchi bilan xavfsiz birlashtiradi.",
+    "a0": 8.47,
+    "a1": 17.41,
+    "words": [
+      {
+        "w": "Satrlarni",
+        "s": 8.47,
+        "e": 8.99
+      },
+      {
+        "w": "ulashda",
+        "s": 9.03,
+        "e": 9.39
+      },
+      {
+        "w": "ikkita",
+        "s": 9.57,
+        "e": 9.81
+      },
+      {
+        "w": "vertikal",
+        "s": 9.87,
+        "e": 10.31
+      },
+      {
+        "w": "chiziq",
+        "s": 10.35,
+        "e": 10.69
+      },
+      {
+        "w": "va",
+        "s": 11.05,
+        "e": 11.13
+      },
+      {
+        "w": "konkat",
+        "s": 11.31,
+        "e": 11.71
+      },
+      {
+        "w": "null",
+        "s": 12.07,
+        "e": 12.27
+      },
+      {
+        "w": "qiymatda",
+        "s": 12.33,
+        "e": 12.71
+      },
+      {
+        "w": "farqlanadi,",
+        "s": 12.75,
+        "e": 13.29
+      },
+      {
+        "w": "konkat",
+        "s": 13.91,
+        "e": 14.29
+      },
+      {
+        "w": "dablyu-es",
+        "s": 14.39,
+        "e": 14.97
+      },
+      {
+        "w": "esa",
+        "s": 15.03,
+        "e": 15.19
+      },
+      {
+        "w": "ajratuvchi",
+        "s": 15.65,
+        "e": 16.19
+      },
+      {
+        "w": "bilan",
+        "s": 16.21,
+        "e": 16.39
+      },
+      {
+        "w": "xavfsiz",
+        "s": 16.49,
+        "e": 16.85
+      },
+      {
+        "w": "birlashtiradi.",
+        "s": 16.89,
+        "e": 17.41
+      }
+    ]
+  },
+  {
+    "id": "uzunlik",
+    "scene": "uzunlik_belgi_va_bayt",
+    "text": "Uzunlikni o'lchashda ehtiyot bo'ling: Postgres va SQLite da length belgilar soni bo'lsa, MySQL da u baytlar hajmini bildiradi.",
+    "show": "Uzunlikni o'lchashda ehtiyot bo'ling: Postgres va SQLite da length belgilar soni bo'lsa, MySQL da u baytlar hajmini bildiradi.",
+    "say": "Uzunlikni o'lchashda ehtiyot bo'ling: Postgres va Es-kyu-layt da lengs belgilar soni bo'lsa, May es-kyu-el da u baytlar hajmini bildiradi.",
+    "a0": 18.41,
+    "a1": 26.42,
+    "words": [
+      {
+        "w": "Uzunlikni",
+        "s": 18.41,
+        "e": 18.79
+      },
+      {
+        "w": "o'lchashda",
+        "s": 18.83,
+        "e": 19.25
+      },
+      {
+        "w": "ehtiyot",
+        "s": 19.35,
+        "e": 19.67
+      },
+      {
+        "w": "bo'ling:",
+        "s": 19.73,
+        "e": 19.95
+      },
+      {
+        "w": "Postgres",
+        "s": 20.43,
+        "e": 20.95
+      },
+      {
+        "w": "va",
+        "s": 21.05,
+        "e": 21.11
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 21.39,
+        "e": 21.99
+      },
+      {
+        "w": "da",
+        "s": 22.05,
+        "e": 22.13
+      },
+      {
+        "w": "lengs",
+        "s": 22.54,
+        "e": 22.86
+      },
+      {
+        "w": "belgilar",
+        "s": 23.02,
+        "e": 23.42
+      },
+      {
+        "w": "soni",
+        "s": 23.46,
+        "e": 23.68
+      },
+      {
+        "w": "bo'lsa,",
+        "s": 23.72,
+        "e": 23.98
+      },
+      {
+        "w": "May",
+        "s": 24.3,
+        "e": 24.46
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 24.52,
+        "e": 24.86
+      },
+      {
+        "w": "da",
+        "s": 24.88,
+        "e": 24.96
+      },
+      {
+        "w": "u",
+        "s": 25.08,
+        "e": 25.1
+      },
+      {
+        "w": "baytlar",
+        "s": 25.3,
+        "e": 25.68
+      },
+      {
+        "w": "hajmini",
+        "s": 25.72,
+        "e": 26.04
+      },
+      {
+        "w": "bildiradi.",
+        "s": 26.06,
+        "e": 26.42
+      }
+    ]
+  },
+  {
+    "id": "amallar",
+    "scene": "asosiy_amallar",
+    "text": "Katta-kichik harf, qism satr va qidiruv pozitsiyalari doimo birinchi belgidan boshlanadi, SQLite da esa harf o'zgartirish faqat ASCII ga xos.",
+    "show": "Katta-kichik harf, qism satr va qidiruv pozitsiyalari doimo birinchi belgidan boshlanadi, SQLite da esa harf o'zgartirish faqat ASCII ga xos.",
+    "say": "Katta-kichik harf, qism satr va qidiruv pozitsiyalari doimo birinchi belgidan boshlanadi, Es-kyu-layt da esa harf o'zgartirish faqat aski ga xos.",
+    "a0": 27.26,
+    "a1": 36.07,
+    "words": [
+      {
+        "w": "Katta-kichik",
+        "s": 27.26,
+        "e": 27.8
+      },
+      {
+        "w": "harf,",
+        "s": 27.84,
+        "e": 28.1
+      },
+      {
+        "w": "qism",
+        "s": 28.48,
+        "e": 28.7
+      },
+      {
+        "w": "satr",
+        "s": 28.78,
+        "e": 29.08
+      },
+      {
+        "w": "va",
+        "s": 29.14,
+        "e": 29.22
+      },
+      {
+        "w": "qidiruv",
+        "s": 29.6,
+        "e": 30.02
+      },
+      {
+        "w": "pozitsiyalari",
+        "s": 30.02,
+        "e": 30.48
+      },
+      {
+        "w": "doimo",
+        "s": 30.54,
+        "e": 30.88
+      },
+      {
+        "w": "birinchi",
+        "s": 31.04,
+        "e": 31.36
+      },
+      {
+        "w": "belgidan",
+        "s": 31.4,
+        "e": 31.72
+      },
+      {
+        "w": "boshlanadi,",
+        "s": 31.74,
+        "e": 32.16
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 32.72,
+        "e": 33.28
+      },
+      {
+        "w": "da",
+        "s": 33.32,
+        "e": 33.36
+      },
+      {
+        "w": "esa",
+        "s": 33.42,
+        "e": 33.58
+      },
+      {
+        "w": "harf",
+        "s": 33.93,
+        "e": 34.17
+      },
+      {
+        "w": "o'zgartirish",
+        "s": 34.25,
+        "e": 34.73
+      },
+      {
+        "w": "faqat",
+        "s": 34.77,
+        "e": 35.05
+      },
+      {
+        "w": "aski",
+        "s": 35.41,
+        "e": 35.69
+      },
+      {
+        "w": "ga",
+        "s": 35.77,
+        "e": 35.83
+      },
+      {
+        "w": "xos.",
+        "s": 35.89,
+        "e": 36.07
+      }
+    ]
+  },
+  {
+    "id": "regex",
+    "scene": "regex_va_farqlar",
+    "text": "Regex almashtirishda Postgres sukut bo'yicha faqat birinchi moslikni oladi, MySQL esa birdaniga barcha mosliklarni tozalaydi.",
+    "show": "Regex almashtirishda Postgres sukut bo'yicha faqat birinchi moslikni oladi, MySQL esa birdaniga barcha mosliklarni tozalaydi.",
+    "say": "Reg-eks almashtirishda Postgres sukut bo'yicha faqat birinchi moslikni oladi, May es-kyu-el esa birdaniga barcha mosliklarni tozalaydi.",
+    "a0": 36.91,
+    "a1": 44.44,
+    "words": [
+      {
+        "w": "Reg-eks",
+        "s": 36.91,
+        "e": 37.23
+      },
+      {
+        "w": "almashtirishda",
+        "s": 37.31,
+        "e": 37.87
+      },
+      {
+        "w": "Postgres",
+        "s": 38.23,
+        "e": 38.71
+      },
+      {
+        "w": "sukut",
+        "s": 38.77,
+        "e": 39.03
+      },
+      {
+        "w": "bo'yicha",
+        "s": 39.09,
+        "e": 39.39
+      },
+      {
+        "w": "faqat",
+        "s": 39.45,
+        "e": 39.73
+      },
+      {
+        "w": "birinchi",
+        "s": 39.89,
+        "e": 40.19
+      },
+      {
+        "w": "moslikni",
+        "s": 40.23,
+        "e": 40.61
+      },
+      {
+        "w": "oladi,",
+        "s": 40.65,
+        "e": 40.87
+      },
+      {
+        "w": "May",
+        "s": 41.34,
+        "e": 41.48
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 41.56,
+        "e": 41.9
+      },
+      {
+        "w": "esa",
+        "s": 41.96,
+        "e": 42.12
+      },
+      {
+        "w": "birdaniga",
+        "s": 42.48,
+        "e": 42.92
+      },
+      {
+        "w": "barcha",
+        "s": 43.08,
+        "e": 43.38
+      },
+      {
+        "w": "mosliklarni",
+        "s": 43.42,
+        "e": 43.96
+      },
+      {
+        "w": "tozalaydi.",
+        "s": 44,
+        "e": 44.44
+      }
+    ]
+  }
+]
