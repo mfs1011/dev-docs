@@ -1,0 +1,573 @@
+[
+  {
+    "id": "intro",
+    "scene": "kirish",
+    "text": "PostgreSQL 18 da oyna funksiyalarini sinab ko'ramiz: bazamizda xodimlarning bo'limi va maoshlari jadvali tayyorlangan.",
+    "show": "PostgreSQL 18 da oyna funksiyalarini sinab ko'ramiz: bazamizda xodimlarning bo'limi va maoshlari jadvali tayyorlangan.",
+    "say": "Postgres 18 da oyna funksiyalarini sinab ko'ramiz: bazamizda xodimlarning bo'limi va maoshlari jadvali tayyorlangan.",
+    "a0": 0.02,
+    "a1": 2.98,
+    "words": [
+      {
+        "w": "Postgres",
+        "s": 0.02,
+        "e": 0.26
+      },
+      {
+        "w": "18",
+        "s": 0.26,
+        "e": 0.26
+      },
+      {
+        "w": "da",
+        "s": 0.26,
+        "e": 0.3
+      },
+      {
+        "w": "oyna",
+        "s": 0.34,
+        "e": 0.44
+      },
+      {
+        "w": "funksiyalarini",
+        "s": 0.44,
+        "e": 0.72
+      },
+      {
+        "w": "sinab",
+        "s": 0.72,
+        "e": 0.82
+      },
+      {
+        "w": "ko'ramiz:",
+        "s": 0.82,
+        "e": 1
+      },
+      {
+        "w": "bazamizda",
+        "s": 1.02,
+        "e": 1.42
+      },
+      {
+        "w": "xodimlarning",
+        "s": 1.46,
+        "e": 1.82
+      },
+      {
+        "w": "bo'limi",
+        "s": 1.82,
+        "e": 2.02
+      },
+      {
+        "w": "va",
+        "s": 2.02,
+        "e": 2.08
+      },
+      {
+        "w": "maoshlari",
+        "s": 2.08,
+        "e": 2.32
+      },
+      {
+        "w": "jadvali",
+        "s": 2.34,
+        "e": 2.52
+      },
+      {
+        "w": "tayyorlangan.",
+        "s": 2.56,
+        "e": 2.98
+      }
+    ]
+  },
+  {
+    "id": "ortacha",
+    "scene": "bolim_ortachasi_va_over",
+    "text": "PARTITION BY yordamida qatorlarni qisqartirmasdan, har bir xodim yoniga uning o'z bo'limidagi o'rtacha maoshni joylashtirdik.",
+    "show": "PARTITION BY yordamida qatorlarni qisqartirmasdan, har bir xodim yoniga uning o'z bo'limidagi o'rtacha maoshni joylashtirdik.",
+    "say": "Partishn bay yordamida qatorlarni qisqartirmasdan, har bir xodim yoniga uning o'z bo'limidagi o'rtacha maoshni joylashtirdik.",
+    "a0": 3.68,
+    "a1": 10.23,
+    "words": [
+      {
+        "w": "Partishn",
+        "s": 3.68,
+        "e": 4.16
+      },
+      {
+        "w": "bay",
+        "s": 4.2,
+        "e": 4.32
+      },
+      {
+        "w": "yordamida",
+        "s": 4.34,
+        "e": 4.8
+      },
+      {
+        "w": "qatorlarni",
+        "s": 4.86,
+        "e": 5.38
+      },
+      {
+        "w": "qisqartirmasdan,",
+        "s": 5.42,
+        "e": 6.22
+      },
+      {
+        "w": "har",
+        "s": 6.52,
+        "e": 6.7
+      },
+      {
+        "w": "bir",
+        "s": 6.74,
+        "e": 6.84
+      },
+      {
+        "w": "xodim",
+        "s": 6.9,
+        "e": 7.18
+      },
+      {
+        "w": "yoniga",
+        "s": 7.2,
+        "e": 7.55
+      },
+      {
+        "w": "uning",
+        "s": 7.69,
+        "e": 7.89
+      },
+      {
+        "w": "o'z",
+        "s": 8.05,
+        "e": 8.19
+      },
+      {
+        "w": "bo'limidagi",
+        "s": 8.27,
+        "e": 8.77
+      },
+      {
+        "w": "o'rtacha",
+        "s": 8.91,
+        "e": 9.27
+      },
+      {
+        "w": "maoshni",
+        "s": 9.31,
+        "e": 9.61
+      },
+      {
+        "w": "joylashtirdik.",
+        "s": 9.65,
+        "e": 10.23
+      }
+    ]
+  },
+  {
+    "id": "reyting",
+    "scene": "reyting_va_window",
+    "text": "Teng maoshlarda rank oraliq tashlab to'rtga sakradi, dense_rank esa zich davom etdi; WINDOW bandi esa kodni chiroyli qisqartirdi.",
+    "show": "Teng maoshlarda rank oraliq tashlab to'rtga sakradi, dense_rank esa zich davom etdi; WINDOW bandi esa kodni chiroyli qisqartirdi.",
+    "say": "Teng maoshlarda renk oraliq tashlab to'rtga sakradi, dens renk esa zich davom etdi; vindou bandi esa kodni chiroyli qisqartirdi.",
+    "a0": 10.97,
+    "a1": 18.91,
+    "words": [
+      {
+        "w": "Teng",
+        "s": 10.97,
+        "e": 11.17
+      },
+      {
+        "w": "maoshlarda",
+        "s": 11.19,
+        "e": 11.73
+      },
+      {
+        "w": "renk",
+        "s": 12.13,
+        "e": 12.37
+      },
+      {
+        "w": "oraliq",
+        "s": 12.49,
+        "e": 12.79
+      },
+      {
+        "w": "tashlab",
+        "s": 12.83,
+        "e": 13.15
+      },
+      {
+        "w": "to'rtga",
+        "s": 13.27,
+        "e": 13.59
+      },
+      {
+        "w": "sakradi,",
+        "s": 13.63,
+        "e": 13.99
+      },
+      {
+        "w": "dens",
+        "s": 14.41,
+        "e": 14.63
+      },
+      {
+        "w": "renk",
+        "s": 14.71,
+        "e": 14.89
+      },
+      {
+        "w": "esa",
+        "s": 14.93,
+        "e": 15.09
+      },
+      {
+        "w": "zich",
+        "s": 15.31,
+        "e": 15.49
+      },
+      {
+        "w": "davom",
+        "s": 15.55,
+        "e": 15.81
+      },
+      {
+        "w": "etdi;",
+        "s": 15.81,
+        "e": 16.63
+      },
+      {
+        "w": "vindou",
+        "s": 16.63,
+        "e": 16.99
+      },
+      {
+        "w": "bandi",
+        "s": 17.03,
+        "e": 17.27
+      },
+      {
+        "w": "esa",
+        "s": 17.31,
+        "e": 17.45
+      },
+      {
+        "w": "kodni",
+        "s": 17.53,
+        "e": 17.85
+      },
+      {
+        "w": "chiroyli",
+        "s": 17.93,
+        "e": 18.31
+      },
+      {
+        "w": "qisqartirdi.",
+        "s": 18.37,
+        "e": 18.91
+      }
+    ]
+  },
+  {
+    "id": "top2",
+    "scene": "top2_va_where_xatosi",
+    "text": "To'g'ridan-to'g'ri WHERE ichida filtrlash xato beradi, ammo ichki so'rov orqali har bo'limdan eng ko'p oluvchi ikki xodimni ajratdik.",
+    "show": "To'g'ridan-to'g'ri WHERE ichida filtrlash xato beradi, ammo ichki so'rov orqali har bo'limdan eng ko'p oluvchi ikki xodimni ajratdik.",
+    "say": "To'g'ridan-to'g'ri veer ichida filtrlash xato beradi, ammo ichki so'rov orqali har bo'limdan eng ko'p oluvchi ikki xodimni ajratdik.",
+    "a0": 19.75,
+    "a1": 26.88,
+    "words": [
+      {
+        "w": "To'g'ridan-to'g'ri",
+        "s": 19.75,
+        "e": 20.43
+      },
+      {
+        "w": "veer",
+        "s": 20.51,
+        "e": 20.75
+      },
+      {
+        "w": "ichida",
+        "s": 20.77,
+        "e": 21.03
+      },
+      {
+        "w": "filtrlash",
+        "s": 21.07,
+        "e": 21.55
+      },
+      {
+        "w": "xato",
+        "s": 21.59,
+        "e": 21.83
+      },
+      {
+        "w": "beradi,",
+        "s": 21.91,
+        "e": 22.19
+      },
+      {
+        "w": "ammo",
+        "s": 22.54,
+        "e": 22.74
+      },
+      {
+        "w": "ichki",
+        "s": 22.9,
+        "e": 23.12
+      },
+      {
+        "w": "so'rov",
+        "s": 23.16,
+        "e": 23.42
+      },
+      {
+        "w": "orqali",
+        "s": 23.46,
+        "e": 23.76
+      },
+      {
+        "w": "har",
+        "s": 24.06,
+        "e": 24.26
+      },
+      {
+        "w": "bo'limdan",
+        "s": 24.34,
+        "e": 24.74
+      },
+      {
+        "w": "eng",
+        "s": 24.9,
+        "e": 25.08
+      },
+      {
+        "w": "ko'p",
+        "s": 25.14,
+        "e": 25.34
+      },
+      {
+        "w": "oluvchi",
+        "s": 25.44,
+        "e": 25.74
+      },
+      {
+        "w": "ikki",
+        "s": 25.84,
+        "e": 26
+      },
+      {
+        "w": "xodimni",
+        "s": 26.04,
+        "e": 26.38
+      },
+      {
+        "w": "ajratdik.",
+        "s": 26.44,
+        "e": 26.88
+      }
+    ]
+  },
+  {
+    "id": "yigindi",
+    "scene": "osib_boruvchi_yigindi",
+    "text": "Sukut bo'yicha RANGE teng maoshlarni bitta umumiy yig'indi qiladi, qat'iy ROWS esa har bir qatorni alohida qo'shib boradi.",
+    "show": "Sukut bo'yicha RANGE teng maoshlarni bitta umumiy yig'indi qiladi, qat'iy ROWS esa har bir qatorni alohida qo'shib boradi.",
+    "say": "Sukut bo'yicha reynj teng maoshlarni bitta umumiy yig'indi qiladi, qat'iy rouz esa har bir qatorni alohida qo'shib boradi.",
+    "a0": 27.76,
+    "a1": 34.31,
+    "words": [
+      {
+        "w": "Sukut",
+        "s": 27.76,
+        "e": 27.96
+      },
+      {
+        "w": "bo'yicha",
+        "s": 28.02,
+        "e": 28.32
+      },
+      {
+        "w": "reynj",
+        "s": 28.4,
+        "e": 28.6
+      },
+      {
+        "w": "teng",
+        "s": 28.82,
+        "e": 29.02
+      },
+      {
+        "w": "maoshlarni",
+        "s": 29.04,
+        "e": 29.52
+      },
+      {
+        "w": "bitta",
+        "s": 29.62,
+        "e": 29.9
+      },
+      {
+        "w": "umumiy",
+        "s": 30.02,
+        "e": 30.32
+      },
+      {
+        "w": "yig'indi",
+        "s": 30.38,
+        "e": 30.7
+      },
+      {
+        "w": "qiladi,",
+        "s": 30.72,
+        "e": 30.96
+      },
+      {
+        "w": "qat'iy",
+        "s": 31.28,
+        "e": 31.6
+      },
+      {
+        "w": "rouz",
+        "s": 31.74,
+        "e": 31.98
+      },
+      {
+        "w": "esa",
+        "s": 32.04,
+        "e": 32.2
+      },
+      {
+        "w": "har",
+        "s": 32.5,
+        "e": 32.66
+      },
+      {
+        "w": "bir",
+        "s": 32.72,
+        "e": 32.82
+      },
+      {
+        "w": "qatorni",
+        "s": 32.86,
+        "e": 33.25
+      },
+      {
+        "w": "alohida",
+        "s": 33.35,
+        "e": 33.71
+      },
+      {
+        "w": "qo'shib",
+        "s": 33.77,
+        "e": 34.01
+      },
+      {
+        "w": "boradi.",
+        "s": 34.03,
+        "e": 34.31
+      }
+    ]
+  },
+  {
+    "id": "lag",
+    "scene": "lag_lead_va_last_value",
+    "text": "lag orqali maoshlar farqini hisobladik, last_value to'g'ri ishlashi uchun esa chegarani UNBOUNDED FOLLOWING gacha kengaytirish shart.",
+    "show": "lag orqali maoshlar farqini hisobladik, last_value to'g'ri ishlashi uchun esa chegarani UNBOUNDED FOLLOWING gacha kengaytirish shart.",
+    "say": "Leg orqali maoshlar farqini hisobladik, last valyu to'g'ri ishlashi uchun esa chegarani anbaunded folloving gacha kengaytirish shart.",
+    "a0": 35.03,
+    "a1": 42.06,
+    "words": [
+      {
+        "w": "Leg",
+        "s": 35.03,
+        "e": 35.19
+      },
+      {
+        "w": "orqali",
+        "s": 35.27,
+        "e": 35.57
+      },
+      {
+        "w": "maoshlar",
+        "s": 35.65,
+        "e": 36.07
+      },
+      {
+        "w": "farqini",
+        "s": 36.11,
+        "e": 36.47
+      },
+      {
+        "w": "hisobladik,",
+        "s": 36.49,
+        "e": 36.95
+      },
+      {
+        "w": "last",
+        "s": 37.41,
+        "e": 37.63
+      },
+      {
+        "w": "valyu",
+        "s": 37.69,
+        "e": 37.95
+      },
+      {
+        "w": "to'g'ri",
+        "s": 37.99,
+        "e": 38.23
+      },
+      {
+        "w": "ishlashi",
+        "s": 38.25,
+        "e": 38.53
+      },
+      {
+        "w": "uchun",
+        "s": 38.55,
+        "e": 38.75
+      },
+      {
+        "w": "esa",
+        "s": 38.81,
+        "e": 38.97
+      },
+      {
+        "w": "chegarani",
+        "s": 39.32,
+        "e": 39.76
+      },
+      {
+        "w": "anbaunded",
+        "s": 39.88,
+        "e": 40.46
+      },
+      {
+        "w": "folloving",
+        "s": 40.54,
+        "e": 40.98
+      },
+      {
+        "w": "gacha",
+        "s": 41,
+        "e": 41.2
+      },
+      {
+        "w": "kengaytirish",
+        "s": 41.26,
+        "e": 41.8
+      },
+      {
+        "w": "shart.",
+        "s": 41.82,
+        "e": 42.06
+      }
+    ]
+  }
+]

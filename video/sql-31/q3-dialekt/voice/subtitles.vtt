@@ -1,0 +1,26 @@
+WEBVTT
+
+1
+00:01.420 --> 00:09.090
+MySQL va SQLite tizimlarida oyna funksiyalarining qo'llab-quvvatlanishi
+va ramka sintaksisidagi cheklovlarni solishtiramiz.
+
+2
+00:11.990 --> 00:20.160
+MySQL da GROUPS va EXCLUDE kalit so'zlari sintaksis tahlilidan o'tadi,
+ammo amalda bir ming ikki yuz o'ttiz besh xatosi bilan to'xtaydi.
+
+3
+00:23.030 --> 00:31.890
+Shuningdek, MySQL da FILTER bandi yo'qligi bois shartli sanash uchun
+CASE WHEN ishlatiladi, DISTINCT esa oyna ichida ruxsat etilmagan.
+
+4
+00:34.960 --> 00:42.450
+Kutilmaganda, SQLite da GROUPS, EXCLUDE va FILTER to'liq
+ishlaydi, hamda mavjud oynani kengaytiruvchi oyna zanjiri mavjud.
+
+5
+00:45.650 --> 00:53.790
+Xulosa qilib aytganda, sukutdagi ramka barcha tizimda bir xil, murakkab
+ramkalar uchun esa PostgreSQL va SQLite eng boy imkoniyatga ega.

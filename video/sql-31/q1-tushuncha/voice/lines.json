@@ -1,0 +1,633 @@
+[
+  {
+    "id": "intro",
+    "scene": "kirish",
+    "text": "Window funksiyalar agregatlarga o'xshaydi, ammo eng muhim farqi: qatorlar bitta qatorga guruhlanmaydi, balki har bir qator natijada saqlanib qoladi.",
+    "show": "Window funksiyalar agregatlarga o'xshaydi, ammo eng muhim farqi: qatorlar bitta qatorga guruhlanmaydi, balki har bir qator natijada saqlanib qoladi.",
+    "say": "Window funksiyalar agregatlarga o'xshaydi, ammo eng muhim farqi: qatorlar bitta qatorga guruhlanmaydi, balki har bir qator natijada saqlanib qoladi.",
+    "a0": 0.18,
+    "a1": 9.77,
+    "words": [
+      {
+        "w": "Window",
+        "s": 0.18,
+        "e": 0.48
+      },
+      {
+        "w": "funksiyalar",
+        "s": 0.54,
+        "e": 1.06
+      },
+      {
+        "w": "agregatlarga",
+        "s": 1.22,
+        "e": 1.88
+      },
+      {
+        "w": "o'xshaydi,",
+        "s": 1.92,
+        "e": 2.3
+      },
+      {
+        "w": "ammo",
+        "s": 2.74,
+        "e": 2.96
+      },
+      {
+        "w": "eng",
+        "s": 3.3,
+        "e": 3.48
+      },
+      {
+        "w": "muhim",
+        "s": 3.54,
+        "e": 3.82
+      },
+      {
+        "w": "farqi:",
+        "s": 3.88,
+        "e": 4.22
+      },
+      {
+        "w": "qatorlar",
+        "s": 4.66,
+        "e": 5.16
+      },
+      {
+        "w": "bitta",
+        "s": 5.4,
+        "e": 5.66
+      },
+      {
+        "w": "qatorga",
+        "s": 5.72,
+        "e": 6.1
+      },
+      {
+        "w": "guruhlanmaydi,",
+        "s": 6.14,
+        "e": 6.78
+      },
+      {
+        "w": "balki",
+        "s": 7.14,
+        "e": 7.4
+      },
+      {
+        "w": "har",
+        "s": 7.71,
+        "e": 7.91
+      },
+      {
+        "w": "bir",
+        "s": 7.97,
+        "e": 8.07
+      },
+      {
+        "w": "qator",
+        "s": 8.13,
+        "e": 8.45
+      },
+      {
+        "w": "natijada",
+        "s": 8.51,
+        "e": 8.99
+      },
+      {
+        "w": "saqlanib",
+        "s": 9.05,
+        "e": 9.45
+      },
+      {
+        "w": "qoladi.",
+        "s": 9.47,
+        "e": 9.77
+      }
+    ]
+  },
+  {
+    "id": "over",
+    "scene": "over_bandi_va_partition",
+    "text": "Funksiyani oyna rejimiga o'tkazuvchi kalit OVER bandidir: PARTITION BY qatorlarni bo'laklarga ajratsa, ORDER BY har bir bo'lak ichida tartibni belgilaydi.",
+    "show": "Funksiyani oyna rejimiga o'tkazuvchi kalit OVER bandidir: PARTITION BY qatorlarni bo'laklarga ajratsa, ORDER BY har bir bo'lak ichida tartibni belgilaydi.",
+    "say": "Funksiyani oyna rejimiga o'tkazuvchi kalit over bandidir: partishn bay qatorlarni bo'laklarga ajratsa, order bay har bir bo'lak ichida tartibni belgilaydi.",
+    "a0": 10.37,
+    "a1": 19.83,
+    "words": [
+      {
+        "w": "Funksiyani",
+        "s": 10.37,
+        "e": 10.85
+      },
+      {
+        "w": "oyna",
+        "s": 11.07,
+        "e": 11.31
+      },
+      {
+        "w": "rejimiga",
+        "s": 11.35,
+        "e": 11.75
+      },
+      {
+        "w": "o'tkazuvchi",
+        "s": 11.81,
+        "e": 12.29
+      },
+      {
+        "w": "kalit",
+        "s": 12.35,
+        "e": 12.65
+      },
+      {
+        "w": "over",
+        "s": 13.07,
+        "e": 13.35
+      },
+      {
+        "w": "bandidir:",
+        "s": 13.41,
+        "e": 13.79
+      },
+      {
+        "w": "partishn",
+        "s": 14.39,
+        "e": 14.89
+      },
+      {
+        "w": "bay",
+        "s": 14.95,
+        "e": 15.11
+      },
+      {
+        "w": "qatorlarni",
+        "s": 15.17,
+        "e": 15.71
+      },
+      {
+        "w": "bo'laklarga",
+        "s": 15.77,
+        "e": 16.29
+      },
+      {
+        "w": "ajratsa,",
+        "s": 16.33,
+        "e": 16.73
+      },
+      {
+        "w": "order",
+        "s": 17.27,
+        "e": 17.55
+      },
+      {
+        "w": "bay",
+        "s": 17.61,
+        "e": 17.77
+      },
+      {
+        "w": "har",
+        "s": 17.97,
+        "e": 18.15
+      },
+      {
+        "w": "bir",
+        "s": 18.19,
+        "e": 18.29
+      },
+      {
+        "w": "bo'lak",
+        "s": 18.35,
+        "e": 18.61
+      },
+      {
+        "w": "ichida",
+        "s": 18.65,
+        "e": 18.89
+      },
+      {
+        "w": "tartibni",
+        "s": 18.95,
+        "e": 19.35
+      },
+      {
+        "w": "belgilaydi.",
+        "s": 19.37,
+        "e": 19.83
+      }
+    ]
+  },
+  {
+    "id": "frame",
+    "scene": "frame_tushunchasi",
+    "text": "Frame joriy qator atrofidagi ko'rish chegarasi bo'lib, sukut bo'yicha bo'lak boshidan joriy qatorgacha o'sib boruvchi yig'indini hisoblaydi.",
+    "show": "Frame joriy qator atrofidagi ko'rish chegarasi bo'lib, sukut bo'yicha bo'lak boshidan joriy qatorgacha o'sib boruvchi yig'indini hisoblaydi.",
+    "say": "Frame joriy qator atrofidagi ko'rish chegarasi bo'lib, sukut bo'yicha bo'lak boshidan joriy qatorgacha o'sib boruvchi yig'indini hisoblaydi.",
+    "a0": 20.29,
+    "a1": 27.84,
+    "words": [
+      {
+        "w": "Frame",
+        "s": 20.29,
+        "e": 20.63
+      },
+      {
+        "w": "joriy",
+        "s": 20.95,
+        "e": 21.25
+      },
+      {
+        "w": "qator",
+        "s": 21.33,
+        "e": 21.59
+      },
+      {
+        "w": "atrofidagi",
+        "s": 21.63,
+        "e": 22.13
+      },
+      {
+        "w": "ko'rish",
+        "s": 22.27,
+        "e": 22.6
+      },
+      {
+        "w": "chegarasi",
+        "s": 22.64,
+        "e": 23.08
+      },
+      {
+        "w": "bo'lib,",
+        "s": 23.12,
+        "e": 23.34
+      },
+      {
+        "w": "sukut",
+        "s": 23.68,
+        "e": 23.9
+      },
+      {
+        "w": "bo'yicha",
+        "s": 23.96,
+        "e": 24.26
+      },
+      {
+        "w": "bo'lak",
+        "s": 24.48,
+        "e": 24.76
+      },
+      {
+        "w": "boshidan",
+        "s": 24.82,
+        "e": 25.22
+      },
+      {
+        "w": "joriy",
+        "s": 25.32,
+        "e": 25.6
+      },
+      {
+        "w": "qatorgacha",
+        "s": 25.68,
+        "e": 26.18
+      },
+      {
+        "w": "o'sib",
+        "s": 26.26,
+        "e": 26.48
+      },
+      {
+        "w": "boruvchi",
+        "s": 26.52,
+        "e": 26.88
+      },
+      {
+        "w": "yig'indini",
+        "s": 26.94,
+        "e": 27.34
+      },
+      {
+        "w": "hisoblaydi.",
+        "s": 27.36,
+        "e": 27.84
+      }
+    ]
+  },
+  {
+    "id": "reyting",
+    "scene": "reyting_funksiyalari",
+    "text": "Tartib raqami uchun row_number, tenglikda oraliq qoldiruvchi rank va oraliqsiz davom etuvchi dense_rank funksiyalari keng qo'llaniladi.",
+    "show": "Tartib raqami uchun row_number, tenglikda oraliq qoldiruvchi rank va oraliqsiz davom etuvchi dense_rank funksiyalari keng qo'llaniladi.",
+    "say": "Tartib raqami uchun rou nambor, tenglikda oraliq qoldiruvchi renk va oraliqsiz davom etuvchi dens renk funksiyalari keng qo'llaniladi.",
+    "a0": 28.4,
+    "a1": 36.55,
+    "words": [
+      {
+        "w": "Tartib",
+        "s": 28.4,
+        "e": 28.7
+      },
+      {
+        "w": "raqami",
+        "s": 28.74,
+        "e": 29.02
+      },
+      {
+        "w": "uchun",
+        "s": 29.08,
+        "e": 29.3
+      },
+      {
+        "w": "rou",
+        "s": 29.54,
+        "e": 29.7
+      },
+      {
+        "w": "nambor,",
+        "s": 29.8,
+        "e": 30.14
+      },
+      {
+        "w": "tenglikda",
+        "s": 30.56,
+        "e": 30.98
+      },
+      {
+        "w": "oraliq",
+        "s": 31.08,
+        "e": 31.34
+      },
+      {
+        "w": "qoldiruvchi",
+        "s": 31.38,
+        "e": 31.88
+      },
+      {
+        "w": "renk",
+        "s": 32.14,
+        "e": 32.42
+      },
+      {
+        "w": "va",
+        "s": 32.74,
+        "e": 32.82
+      },
+      {
+        "w": "oraliqsiz",
+        "s": 33.06,
+        "e": 33.6
+      },
+      {
+        "w": "davom",
+        "s": 33.64,
+        "e": 33.88
+      },
+      {
+        "w": "etuvchi",
+        "s": 33.92,
+        "e": 34.26
+      },
+      {
+        "w": "dens",
+        "s": 34.64,
+        "e": 34.92
+      },
+      {
+        "w": "renk",
+        "s": 35,
+        "e": 35.2
+      },
+      {
+        "w": "funksiyalari",
+        "s": 35.24,
+        "e": 35.72
+      },
+      {
+        "w": "keng",
+        "s": 35.78,
+        "e": 35.99
+      },
+      {
+        "w": "qo'llaniladi.",
+        "s": 36.01,
+        "e": 36.55
+      }
+    ]
+  },
+  {
+    "id": "siljish",
+    "scene": "siljish_va_qiymatlar",
+    "text": "Oldingi va keyingi qator qiymatlarini lag va lead bilan olamiz, first_value va last_value esa butun oyna chegarasidagi chekka qiymatlarni topadi.",
+    "show": "Oldingi va keyingi qator qiymatlarini lag va lead bilan olamiz, first_value va last_value esa butun oyna chegarasidagi chekka qiymatlarni topadi.",
+    "say": "Oldingi va keyingi qator qiymatlarini leg va liid bilan olamiz, forst valyu va last valyu esa butun oyna chegarasidagi chekka qiymatlarni topadi.",
+    "a0": 37.09,
+    "a1": 45.87,
+    "words": [
+      {
+        "w": "Oldingi",
+        "s": 37.09,
+        "e": 37.39
+      },
+      {
+        "w": "va",
+        "s": 37.43,
+        "e": 37.49
+      },
+      {
+        "w": "keyingi",
+        "s": 37.57,
+        "e": 37.87
+      },
+      {
+        "w": "qator",
+        "s": 37.91,
+        "e": 38.15
+      },
+      {
+        "w": "qiymatlarini",
+        "s": 38.19,
+        "e": 38.73
+      },
+      {
+        "w": "leg",
+        "s": 39.15,
+        "e": 39.35
+      },
+      {
+        "w": "va",
+        "s": 39.45,
+        "e": 39.53
+      },
+      {
+        "w": "liid",
+        "s": 39.83,
+        "e": 40.01
+      },
+      {
+        "w": "bilan",
+        "s": 40.07,
+        "e": 40.27
+      },
+      {
+        "w": "olamiz,",
+        "s": 40.35,
+        "e": 40.65
+      },
+      {
+        "w": "forst",
+        "s": 41.01,
+        "e": 41.33
+      },
+      {
+        "w": "valyu",
+        "s": 41.37,
+        "e": 41.67
+      },
+      {
+        "w": "va",
+        "s": 41.77,
+        "e": 41.85
+      },
+      {
+        "w": "last",
+        "s": 42.13,
+        "e": 42.37
+      },
+      {
+        "w": "valyu",
+        "s": 42.43,
+        "e": 42.65
+      },
+      {
+        "w": "esa",
+        "s": 42.75,
+        "e": 42.91
+      },
+      {
+        "w": "butun",
+        "s": 43.25,
+        "e": 43.53
+      },
+      {
+        "w": "oyna",
+        "s": 43.63,
+        "e": 43.81
+      },
+      {
+        "w": "chegarasidagi",
+        "s": 43.87,
+        "e": 44.49
+      },
+      {
+        "w": "chekka",
+        "s": 44.65,
+        "e": 44.95
+      },
+      {
+        "w": "qiymatlarni",
+        "s": 45.01,
+        "e": 45.53
+      },
+      {
+        "w": "topadi.",
+        "s": 45.57,
+        "e": 45.87
+      }
+    ]
+  },
+  {
+    "id": "tartib",
+    "scene": "bajarilish_tartibi",
+    "text": "Window funksiyalar WHERE va GROUP BY dan keyin bajariladi, shu sababli ularni to'g'ridan-to'g'ri WHERE ichida filtrlash taqiqlangan.",
+    "show": "Window funksiyalar WHERE va GROUP BY dan keyin bajariladi, shu sababli ularni to'g'ridan-to'g'ri WHERE ichida filtrlash taqiqlangan.",
+    "say": "Window funksiyalar veer va grup bay dan keyin bajariladi, shu sababli ularni to'g'ridan-to'g'ri veer ichida filtrlash taqiqlangan.",
+    "a0": 46.43,
+    "a1": 53.54,
+    "words": [
+      {
+        "w": "Window",
+        "s": 46.43,
+        "e": 46.71
+      },
+      {
+        "w": "funksiyalar",
+        "s": 46.75,
+        "e": 47.25
+      },
+      {
+        "w": "veer",
+        "s": 47.59,
+        "e": 47.84
+      },
+      {
+        "w": "va",
+        "s": 47.9,
+        "e": 47.98
+      },
+      {
+        "w": "grup",
+        "s": 48.12,
+        "e": 48.32
+      },
+      {
+        "w": "bay",
+        "s": 48.38,
+        "e": 48.54
+      },
+      {
+        "w": "dan",
+        "s": 48.58,
+        "e": 48.72
+      },
+      {
+        "w": "keyin",
+        "s": 48.82,
+        "e": 49.12
+      },
+      {
+        "w": "bajariladi,",
+        "s": 49.16,
+        "e": 49.66
+      },
+      {
+        "w": "shu",
+        "s": 49.96,
+        "e": 50.04
+      },
+      {
+        "w": "sababli",
+        "s": 50.08,
+        "e": 50.42
+      },
+      {
+        "w": "ularni",
+        "s": 50.48,
+        "e": 50.82
+      },
+      {
+        "w": "to'g'ridan-to'g'ri",
+        "s": 50.98,
+        "e": 51.7
+      },
+      {
+        "w": "veer",
+        "s": 51.88,
+        "e": 52.08
+      },
+      {
+        "w": "ichida",
+        "s": 52.12,
+        "e": 52.36
+      },
+      {
+        "w": "filtrlash",
+        "s": 52.42,
+        "e": 52.9
+      },
+      {
+        "w": "taqiqlangan.",
+        "s": 52.92,
+        "e": 53.54
+      }
+    ]
+  }
+]
