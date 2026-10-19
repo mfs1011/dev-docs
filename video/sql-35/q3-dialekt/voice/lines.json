@@ -1,0 +1,878 @@
+[
+  {
+    "scene": "tiplar_va_tekshiruv",
+    "id": "l1",
+    "text": "PostgreSQL'da jsonb va MySQL'da JSON turlari kiritilayotgan hujjat sintaksisini darhol qat'iy tekshiradi.",
+    "show": "PostgreSQL'da jsonb va MySQL'da JSON turlari kiritilayotgan hujjat sintaksisini darhol qat'iy tekshiradi.",
+    "say": "Postgresda jey-son-bi va May es-kyu-elda jey-son turlari kiritilayotgan hujjat sintaksisini darhol qat'iy tekshiradi.",
+    "a0": 0.28,
+    "a1": 6.8,
+    "words": [
+      {
+        "w": "Postgresda",
+        "s": 0.28,
+        "e": 0.9
+      },
+      {
+        "w": "jey-son-bi",
+        "s": 1.08,
+        "e": 1.56
+      },
+      {
+        "w": "va",
+        "s": 1.66,
+        "e": 1.74
+      },
+      {
+        "w": "May",
+        "s": 1.86,
+        "e": 2.02
+      },
+      {
+        "w": "es-kyu-elda",
+        "s": 2.06,
+        "e": 2.5
+      },
+      {
+        "w": "jey-son",
+        "s": 2.68,
+        "e": 3.02
+      },
+      {
+        "w": "turlari",
+        "s": 3.06,
+        "e": 3.42
+      },
+      {
+        "w": "kiritilayotgan",
+        "s": 3.58,
+        "e": 4.2
+      },
+      {
+        "w": "hujjat",
+        "s": 4.24,
+        "e": 4.56
+      },
+      {
+        "w": "sintaksisini",
+        "s": 4.6,
+        "e": 5.24
+      },
+      {
+        "w": "darhol",
+        "s": 5.56,
+        "e": 5.96
+      },
+      {
+        "w": "qat'iy",
+        "s": 6.04,
+        "e": 6.34
+      },
+      {
+        "w": "tekshiradi.",
+        "s": 6.36,
+        "e": 6.8
+      }
+    ]
+  },
+  {
+    "scene": "tiplar_va_tekshiruv",
+    "id": "l2",
+    "text": "SQLite esa JSONni oddiy matn sifatida saqlaydi, shuning uchun bazaga buzilgan JSON tushmasligi uchun cheklov shart.",
+    "show": "SQLite esa JSONni oddiy matn sifatida saqlaydi, shuning uchun bazaga buzilgan JSON tushmasligi uchun cheklov shart.",
+    "say": "Es-kyu-layt esa jey-sonni oddiy matn sifatida saqlaydi, shuning uchun bazaga buzilgan jey-son tushmasligi uchun cheklov shart.",
+    "a0": 7.67,
+    "a1": 14.29,
+    "words": [
+      {
+        "w": "Es-kyu-layt",
+        "s": 7.67,
+        "e": 8.15
+      },
+      {
+        "w": "esa",
+        "s": 8.21,
+        "e": 8.37
+      },
+      {
+        "w": "jey-sonni",
+        "s": 8.59,
+        "e": 9.05
+      },
+      {
+        "w": "oddiy",
+        "s": 9.25,
+        "e": 9.49
+      },
+      {
+        "w": "matn",
+        "s": 9.55,
+        "e": 9.81
+      },
+      {
+        "w": "sifatida",
+        "s": 9.83,
+        "e": 10.21
+      },
+      {
+        "w": "saqlaydi,",
+        "s": 10.27,
+        "e": 10.67
+      },
+      {
+        "w": "shuning",
+        "s": 10.95,
+        "e": 11.15
+      },
+      {
+        "w": "uchun",
+        "s": 11.17,
+        "e": 11.37
+      },
+      {
+        "w": "bazaga",
+        "s": 11.71,
+        "e": 12.07
+      },
+      {
+        "w": "buzilgan",
+        "s": 12.17,
+        "e": 12.57
+      },
+      {
+        "w": "jey-son",
+        "s": 12.61,
+        "e": 12.89
+      },
+      {
+        "w": "tushmasligi",
+        "s": 12.93,
+        "e": 13.37
+      },
+      {
+        "w": "uchun",
+        "s": 13.43,
+        "e": 13.61
+      },
+      {
+        "w": "cheklov",
+        "s": 13.69,
+        "e": 14.01
+      },
+      {
+        "w": "shart.",
+        "s": 14.05,
+        "e": 14.29
+      }
+    ]
+  },
+  {
+    "scene": "operatorlar_va_yollar",
+    "id": "l3",
+    "text": "PostgreSQL kalit nomini to'g'ridan-to'g'ri qabul qilsa, MySQL'da o'ng tomon doimo JSON yo'li bo'lishi talab qilinadi.",
+    "show": "PostgreSQL kalit nomini to'g'ridan-to'g'ri qabul qilsa, MySQL'da o'ng tomon doimo JSON yo'li bo'lishi talab qilinadi.",
+    "say": "Postgres kalit nomini to'g'ridan-to'g'ri qabul qilsa, May es-kyu-elda o'ng tomon doimo jey-son yo'li bo'lishi talab qilinadi.",
+    "a0": 15.09,
+    "a1": 21.43,
+    "words": [
+      {
+        "w": "Postgres",
+        "s": 15.09,
+        "e": 15.55
+      },
+      {
+        "w": "kalit",
+        "s": 15.87,
+        "e": 16.15
+      },
+      {
+        "w": "nomini",
+        "s": 16.19,
+        "e": 16.47
+      },
+      {
+        "w": "to'g'ridan-to'g'ri",
+        "s": 16.55,
+        "e": 17.15
+      },
+      {
+        "w": "qabul",
+        "s": 17.17,
+        "e": 17.41
+      },
+      {
+        "w": "qilsa,",
+        "s": 17.43,
+        "e": 17.69
+      },
+      {
+        "w": "May",
+        "s": 18.11,
+        "e": 18.27
+      },
+      {
+        "w": "es-kyu-elda",
+        "s": 18.29,
+        "e": 18.71
+      },
+      {
+        "w": "o'ng",
+        "s": 18.93,
+        "e": 19.05
+      },
+      {
+        "w": "tomon",
+        "s": 19.09,
+        "e": 19.33
+      },
+      {
+        "w": "doimo",
+        "s": 19.41,
+        "e": 19.75
+      },
+      {
+        "w": "jey-son",
+        "s": 19.91,
+        "e": 20.25
+      },
+      {
+        "w": "yo'li",
+        "s": 20.31,
+        "e": 20.51
+      },
+      {
+        "w": "bo'lishi",
+        "s": 20.53,
+        "e": 20.81
+      },
+      {
+        "w": "talab",
+        "s": 20.85,
+        "e": 21.05
+      },
+      {
+        "w": "qilinadi.",
+        "s": 21.09,
+        "e": 21.43
+      }
+    ]
+  },
+  {
+    "scene": "operatorlar_va_yollar",
+    "id": "l4",
+    "text": "SQLite esa qulaylik uchun ikkala usulni ham birdek qo'llab-quvvatlaydi.",
+    "show": "SQLite esa qulaylik uchun ikkala usulni ham birdek qo'llab-quvvatlaydi.",
+    "say": "Es-kyu-layt esa qulaylik uchun ikkala usulni ham birdek qo'llab-quvvatlaydi.",
+    "a0": 22.17,
+    "a1": 25.58,
+    "words": [
+      {
+        "w": "Es-kyu-layt",
+        "s": 22.17,
+        "e": 22.66
+      },
+      {
+        "w": "esa",
+        "s": 22.72,
+        "e": 22.86
+      },
+      {
+        "w": "qulaylik",
+        "s": 23.04,
+        "e": 23.4
+      },
+      {
+        "w": "uchun",
+        "s": 23.42,
+        "e": 23.6
+      },
+      {
+        "w": "ikkala",
+        "s": 23.72,
+        "e": 24.04
+      },
+      {
+        "w": "usulni",
+        "s": 24.08,
+        "e": 24.34
+      },
+      {
+        "w": "ham",
+        "s": 24.38,
+        "e": 24.52
+      },
+      {
+        "w": "birdek",
+        "s": 24.54,
+        "e": 24.8
+      },
+      {
+        "w": "qo'llab-quvvatlaydi.",
+        "s": 24.84,
+        "e": 25.58
+      }
+    ]
+  },
+  {
+    "scene": "massivlar_va_qidiruv",
+    "id": "l5",
+    "text": "PostgreSQL'dagi kuchukcha-katta va so'roq operatorlari o'rniga, MySQL'da JSON_CONTAINS hamda MEMBER OF ishlatiladi.",
+    "show": "PostgreSQL'dagi kuchukcha-katta va so'roq operatorlari o'rniga, MySQL'da JSON_CONTAINS hamda MEMBER OF ishlatiladi.",
+    "say": "Postgresdagi kuchukcha-katta va so'roq operatorlari o'rniga, May es-kyu-elda jey-son konteyns hamda member of ishlatiladi.",
+    "a0": 26.42,
+    "a1": 33.18,
+    "words": [
+      {
+        "w": "Postgresdagi",
+        "s": 26.42,
+        "e": 27.12
+      },
+      {
+        "w": "kuchukcha-katta",
+        "s": 27.22,
+        "e": 27.94
+      },
+      {
+        "w": "va",
+        "s": 28.04,
+        "e": 28.12
+      },
+      {
+        "w": "so'roq",
+        "s": 28.24,
+        "e": 28.5
+      },
+      {
+        "w": "operatorlari",
+        "s": 28.58,
+        "e": 29.18
+      },
+      {
+        "w": "o'rniga,",
+        "s": 29.24,
+        "e": 29.54
+      },
+      {
+        "w": "May",
+        "s": 30,
+        "e": 30.1
+      },
+      {
+        "w": "es-kyu-elda",
+        "s": 30.12,
+        "e": 30.54
+      },
+      {
+        "w": "jey-son",
+        "s": 30.76,
+        "e": 31.08
+      },
+      {
+        "w": "konteyns",
+        "s": 31.16,
+        "e": 31.58
+      },
+      {
+        "w": "hamda",
+        "s": 31.62,
+        "e": 31.86
+      },
+      {
+        "w": "member",
+        "s": 32.18,
+        "e": 32.44
+      },
+      {
+        "w": "of",
+        "s": 32.54,
+        "e": 32.64
+      },
+      {
+        "w": "ishlatiladi.",
+        "s": 32.68,
+        "e": 33.18
+      }
+    ]
+  },
+  {
+    "scene": "massivlar_va_qidiruv",
+    "id": "l6",
+    "text": "SQLite'da esa JSON_TABLE o'rniga json_each jadval funksiyasi yordamida massiv qatorlarga yoyiladi.",
+    "show": "SQLite'da esa JSON_TABLE o'rniga json_each jadval funksiyasi yordamida massiv qatorlarga yoyiladi.",
+    "say": "Es-kyu-laytda esa jey-son teybl o'rniga jey-son ich jadval funksiyasi yordamida massiv qatorlarga yoyiladi.",
+    "a0": 33.8,
+    "a1": 39.85,
+    "words": [
+      {
+        "w": "Es-kyu-laytda",
+        "s": 33.8,
+        "e": 34.32
+      },
+      {
+        "w": "esa",
+        "s": 34.38,
+        "e": 34.54
+      },
+      {
+        "w": "jey-son",
+        "s": 34.78,
+        "e": 35.1
+      },
+      {
+        "w": "teybl",
+        "s": 35.16,
+        "e": 35.42
+      },
+      {
+        "w": "o'rniga",
+        "s": 35.46,
+        "e": 35.76
+      },
+      {
+        "w": "jey-son",
+        "s": 36.12,
+        "e": 36.46
+      },
+      {
+        "w": "ich",
+        "s": 36.6,
+        "e": 36.74
+      },
+      {
+        "w": "jadval",
+        "s": 36.9,
+        "e": 37.22
+      },
+      {
+        "w": "funksiyasi",
+        "s": 37.26,
+        "e": 37.65
+      },
+      {
+        "w": "yordamida",
+        "s": 37.65,
+        "e": 38.13
+      },
+      {
+        "w": "massiv",
+        "s": 38.45,
+        "e": 38.79
+      },
+      {
+        "w": "qatorlarga",
+        "s": 38.87,
+        "e": 39.41
+      },
+      {
+        "w": "yoyiladi.",
+        "s": 39.41,
+        "e": 39.85
+      }
+    ]
+  },
+  {
+    "scene": "indekslash",
+    "id": "l7",
+    "text": "PostgreSQL butun hujjatga GIN indeksi qurish imkonini beradi, lekin ikkita tire-katta uchun ifoda indeksi kerak.",
+    "show": "PostgreSQL butun hujjatga GIN indeksi qurish imkonini beradi, lekin ikkita tire-katta uchun ifoda indeksi kerak.",
+    "say": "Postgres butun hujjatga jin indeksi qurish imkonini beradi, lekin ikkita tire-katta uchun ifoda indeksi kerak.",
+    "a0": 40.65,
+    "a1": 46.89,
+    "words": [
+      {
+        "w": "Postgres",
+        "s": 40.65,
+        "e": 41.13
+      },
+      {
+        "w": "butun",
+        "s": 41.25,
+        "e": 41.49
+      },
+      {
+        "w": "hujjatga",
+        "s": 41.55,
+        "e": 41.99
+      },
+      {
+        "w": "jin",
+        "s": 42.23,
+        "e": 42.39
+      },
+      {
+        "w": "indeksi",
+        "s": 42.51,
+        "e": 42.83
+      },
+      {
+        "w": "qurish",
+        "s": 42.87,
+        "e": 43.09
+      },
+      {
+        "w": "imkonini",
+        "s": 43.13,
+        "e": 43.57
+      },
+      {
+        "w": "beradi,",
+        "s": 43.59,
+        "e": 43.89
+      },
+      {
+        "w": "lekin",
+        "s": 44.11,
+        "e": 44.37
+      },
+      {
+        "w": "ikkita",
+        "s": 44.73,
+        "e": 44.95
+      },
+      {
+        "w": "tire-katta",
+        "s": 45.01,
+        "e": 45.51
+      },
+      {
+        "w": "uchun",
+        "s": 45.57,
+        "e": 45.75
+      },
+      {
+        "w": "ifoda",
+        "s": 45.89,
+        "e": 46.19
+      },
+      {
+        "w": "indeksi",
+        "s": 46.27,
+        "e": 46.59
+      },
+      {
+        "w": "kerak.",
+        "s": 46.63,
+        "e": 46.89
+      }
+    ]
+  },
+  {
+    "scene": "indekslash",
+    "id": "l8",
+    "text": "MySQL'da to'g'ridan-to'g'ri indeks taqiqlanadi, faqat hosila ustun yoki ko'p qiymatli indeks orqali hal qilinadi.",
+    "show": "MySQL'da to'g'ridan-to'g'ri indeks taqiqlanadi, faqat hosila ustun yoki ko'p qiymatli indeks orqali hal qilinadi.",
+    "say": "May es-kyu-elda to'g'ridan-to'g'ri indeks taqiqlanadi, faqat hosila ustun yoki ko'p qiymatli indeks orqali hal qilinadi.",
+    "a0": 47.79,
+    "a1": 53.98,
+    "words": [
+      {
+        "w": "May",
+        "s": 47.79,
+        "e": 47.95
+      },
+      {
+        "w": "es-kyu-elda",
+        "s": 47.97,
+        "e": 48.39
+      },
+      {
+        "w": "to'g'ridan-to'g'ri",
+        "s": 48.51,
+        "e": 49.13
+      },
+      {
+        "w": "indeks",
+        "s": 49.21,
+        "e": 49.53
+      },
+      {
+        "w": "taqiqlanadi,",
+        "s": 49.57,
+        "e": 50.21
+      },
+      {
+        "w": "faqat",
+        "s": 50.41,
+        "e": 50.67
+      },
+      {
+        "w": "hosila",
+        "s": 50.77,
+        "e": 51.13
+      },
+      {
+        "w": "ustun",
+        "s": 51.21,
+        "e": 51.47
+      },
+      {
+        "w": "yoki",
+        "s": 51.51,
+        "e": 51.77
+      },
+      {
+        "w": "ko'p",
+        "s": 52.07,
+        "e": 52.21
+      },
+      {
+        "w": "qiymatli",
+        "s": 52.27,
+        "e": 52.7
+      },
+      {
+        "w": "indeks",
+        "s": 52.8,
+        "e": 53.06
+      },
+      {
+        "w": "orqali",
+        "s": 53.12,
+        "e": 53.4
+      },
+      {
+        "w": "hal",
+        "s": 53.48,
+        "e": 53.6
+      },
+      {
+        "w": "qilinadi.",
+        "s": 53.64,
+        "e": 53.98
+      }
+    ]
+  },
+  {
+    "scene": "indekslash",
+    "id": "l9",
+    "text": "SQLite esa ikkita tire-katta ifodasi bo'yicha to'g'ridan-to'g'ri B-tree indeksi yaratishga ruxsat beradi.",
+    "show": "SQLite esa ikkita tire-katta ifodasi bo'yicha to'g'ridan-to'g'ri B-tree indeksi yaratishga ruxsat beradi.",
+    "say": "Es-kyu-layt esa ikkita tire-katta ifodasi bo'yicha to'g'ridan-to'g'ri bi-tri indeksi yaratishga ruxsat beradi.",
+    "a0": 54.86,
+    "a1": 60,
+    "words": [
+      {
+        "w": "Es-kyu-layt",
+        "s": 54.86,
+        "e": 55.34
+      },
+      {
+        "w": "esa",
+        "s": 55.38,
+        "e": 55.54
+      },
+      {
+        "w": "ikkita",
+        "s": 55.8,
+        "e": 56.04
+      },
+      {
+        "w": "tire-katta",
+        "s": 56.08,
+        "e": 56.58
+      },
+      {
+        "w": "ifodasi",
+        "s": 56.64,
+        "e": 57.06
+      },
+      {
+        "w": "bo'yicha",
+        "s": 57.1,
+        "e": 57.36
+      },
+      {
+        "w": "to'g'ridan-to'g'ri",
+        "s": 57.48,
+        "e": 58.16
+      },
+      {
+        "w": "bi-tri",
+        "s": 58.28,
+        "e": 58.64
+      },
+      {
+        "w": "indeksi",
+        "s": 58.72,
+        "e": 59.04
+      },
+      {
+        "w": "yaratishga",
+        "s": 59.08,
+        "e": 59.46
+      },
+      {
+        "w": "ruxsat",
+        "s": 59.48,
+        "e": 59.74
+      },
+      {
+        "w": "beradi.",
+        "s": 59.78,
+        "e": 60
+      }
+    ]
+  },
+  {
+    "scene": "solishtirma_xulosa",
+    "id": "l10",
+    "text": "SQLite JSON5 formatidagi erkin sintaksisni o'qiy oladi, ammo uning jsonb formati PostgreSQL bilan mos emas.",
+    "show": "SQLite JSON5 formatidagi erkin sintaksisni o'qiy oladi, ammo uning jsonb formati PostgreSQL bilan mos emas.",
+    "say": "Es-kyu-layt jey-son besh formatidagi erkin sintaksisni o'qiy oladi, ammo uning jey-son-bi formati Postgres bilan mos emas.",
+    "a0": 60.84,
+    "a1": 67.57,
+    "words": [
+      {
+        "w": "Es-kyu-layt",
+        "s": 60.84,
+        "e": 61.34
+      },
+      {
+        "w": "jey-son",
+        "s": 61.52,
+        "e": 61.82
+      },
+      {
+        "w": "besh",
+        "s": 61.88,
+        "e": 62.04
+      },
+      {
+        "w": "formatidagi",
+        "s": 62.06,
+        "e": 62.6
+      },
+      {
+        "w": "erkin",
+        "s": 62.74,
+        "e": 62.98
+      },
+      {
+        "w": "sintaksisni",
+        "s": 63.02,
+        "e": 63.58
+      },
+      {
+        "w": "o'qiy",
+        "s": 63.67,
+        "e": 63.85
+      },
+      {
+        "w": "oladi,",
+        "s": 63.91,
+        "e": 64.15
+      },
+      {
+        "w": "ammo",
+        "s": 64.43,
+        "e": 64.61
+      },
+      {
+        "w": "uning",
+        "s": 64.71,
+        "e": 64.93
+      },
+      {
+        "w": "jey-son-bi",
+        "s": 65.23,
+        "e": 65.69
+      },
+      {
+        "w": "formati",
+        "s": 65.77,
+        "e": 66.17
+      },
+      {
+        "w": "Postgres",
+        "s": 66.35,
+        "e": 66.81
+      },
+      {
+        "w": "bilan",
+        "s": 66.85,
+        "e": 67.03
+      },
+      {
+        "w": "mos",
+        "s": 67.07,
+        "e": 67.25
+      },
+      {
+        "w": "emas.",
+        "s": 67.33,
+        "e": 67.57
+      }
+    ]
+  },
+  {
+    "scene": "solishtirma_xulosa",
+    "id": "l11",
+    "text": "Loyihalashda har bir tizimning indekslash va tekshirish nozikliklarini bilish arxitektura barqarorligini ta'minlaydi.",
+    "show": "Loyihalashda har bir tizimning indekslash va tekshirish nozikliklarini bilish arxitektura barqarorligini ta'minlaydi.",
+    "say": "Loyihalashda har bir tizimning indekslash va tekshirish nozikliklarini bilish arxitektura barqarorligini ta'minlaydi.",
+    "a0": 68.41,
+    "a1": 74.16,
+    "words": [
+      {
+        "w": "Loyihalashda",
+        "s": 68.41,
+        "e": 68.99
+      },
+      {
+        "w": "har",
+        "s": 69.15,
+        "e": 69.31
+      },
+      {
+        "w": "bir",
+        "s": 69.37,
+        "e": 69.47
+      },
+      {
+        "w": "tizimning",
+        "s": 69.51,
+        "e": 69.89
+      },
+      {
+        "w": "indekslash",
+        "s": 69.95,
+        "e": 70.49
+      },
+      {
+        "w": "va",
+        "s": 70.53,
+        "e": 70.59
+      },
+      {
+        "w": "tekshirish",
+        "s": 70.71,
+        "e": 71.08
+      },
+      {
+        "w": "nozikliklarini",
+        "s": 71.12,
+        "e": 71.82
+      },
+      {
+        "w": "bilish",
+        "s": 71.86,
+        "e": 72.1
+      },
+      {
+        "w": "arxitektura",
+        "s": 72.36,
+        "e": 72.96
+      },
+      {
+        "w": "barqarorligini",
+        "s": 73,
+        "e": 73.64
+      },
+      {
+        "w": "ta'minlaydi.",
+        "s": 73.68,
+        "e": 74.16
+      }
+    ]
+  }
+]

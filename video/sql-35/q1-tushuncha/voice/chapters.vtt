@@ -1,0 +1,16 @@
+WEBVTT
+
+00:00.000 --> 00:13.530
+JSON va Relyatsion Model Integratsiyasi
+
+00:13.530 --> 00:27.054
+PostgreSQL: json va jsonb Farqi
+
+00:27.054 --> 00:41.279
+Ajratish Operatorlari: ->, ->> va #>>
+
+00:41.279 --> 00:54.380
+Containment (@>) va Kalit Tekshiruvi (?)
+
+00:54.380 --> 01:09.220
+JSON Loyihalash Qoidalari va GIN Indeksi

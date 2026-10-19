@@ -1,0 +1,56 @@
+WEBVTT
+
+1
+00:01.420 --> 00:07.030
+Buyurtmalar jadvalimizda har bir mijoz
+hujjati jsonb formatida saqlanadi.
+
+2
+00:07.500 --> 00:14.840
+Tire-katta belgisi natijani JSON ko'rinishida qo'shtirnoq
+bilan, ikkita tire-katta esa toza matn sifatida qaytaradi.
+
+3
+00:15.170 --> 00:20.700
+Panjara operatori yordamida esa ichki massiv
+yoki ob'ekt yo'li bo'yicha qiymat olinadi.
+
+4
+00:24.070 --> 00:29.850
+Kuchukcha-katta operatori hujjat qidirilayotgan JSON
+fragmentini to'liq o'z ichiga olishini tekshiradi.
+
+5
+00:30.360 --> 00:35.590
+So'roq belgisi esa kalit yoki massiv elementi
+mavjudligini aniqlash uchun xizmat qiladi.
+
+6
+00:38.040 --> 00:46.440
+SQL/JSON standartidagi JSON_VALUE funksiyasi natijani
+darhol butun son yoki kerakli tipga o'girib beradi.
+
+7
+00:46.950 --> 00:52.540
+JSON_EXISTS esa jsonpath ifodasi bo'yicha
+mos element bor yoki yo'qligini tekshiradi.
+
+8
+00:55.710 --> 01:01.380
+JSON_TABLE massiv ichidagi har bir ob'ektni
+relyatsion qatorlar va ustunlarga aylantiradi.
+
+9
+01:01.780 --> 01:06.930
+Bunday virtual jadval orqali har bir buyurtmaning
+umumiy summasini hisoblash mumkin bo'ladi.
+
+10
+01:10.240 --> 01:15.900
+Hujjatni o'zgartirish uchun jsonb_set yoki
+ikkita vertikal chiziq operatori ishlatiladi.
+
+11
+01:16.370 --> 01:22.950
+GIN indeksi kuchukcha-katta qidiruvini tezlashtiradi,
+lekin ikkita tire-katta uchun ifoda indeksi zarur.
