@@ -1,0 +1,467 @@
+[
+  {
+    "id": "intro",
+    "scene": "kirish",
+    "text": "CASE, COALESCE va NULLIF barcha tizimlarda universal ishlaydi, ammo GREATEST va qisqartma funksiyalarda muhim farqlar bor.",
+    "show": "CASE, COALESCE va NULLIF barcha tizimlarda universal ishlaydi, ammo GREATEST va qisqartma funksiyalarda muhim farqlar bor.",
+    "say": "Keys, koales va null-if barcha tizimlarda universal ishlaydi, ammo greytist va qisqartma funksiyalarda muhim farqlar bor.",
+    "a0": 0.3,
+    "a1": 8.93,
+    "words": [
+      {
+        "w": "Keys,",
+        "s": 0.3,
+        "e": 0.66
+      },
+      {
+        "w": "koales",
+        "s": 1.08,
+        "e": 1.58
+      },
+      {
+        "w": "va",
+        "s": 1.68,
+        "e": 1.74
+      },
+      {
+        "w": "null-if",
+        "s": 2.06,
+        "e": 2.58
+      },
+      {
+        "w": "barcha",
+        "s": 3.14,
+        "e": 3.48
+      },
+      {
+        "w": "tizimlarda",
+        "s": 3.52,
+        "e": 4.04
+      },
+      {
+        "w": "universal",
+        "s": 4.16,
+        "e": 4.66
+      },
+      {
+        "w": "ishlaydi,",
+        "s": 4.68,
+        "e": 5.02
+      },
+      {
+        "w": "ammo",
+        "s": 5.6,
+        "e": 5.82
+      },
+      {
+        "w": "greytist",
+        "s": 5.94,
+        "e": 6.46
+      },
+      {
+        "w": "va",
+        "s": 6.52,
+        "e": 6.58
+      },
+      {
+        "w": "qisqartma",
+        "s": 6.66,
+        "e": 7.1
+      },
+      {
+        "w": "funksiyalarda",
+        "s": 7.14,
+        "e": 7.69
+      },
+      {
+        "w": "muhim",
+        "s": 8.03,
+        "e": 8.33
+      },
+      {
+        "w": "farqlar",
+        "s": 8.39,
+        "e": 8.77
+      },
+      {
+        "w": "bor.",
+        "s": 8.81,
+        "e": 8.93
+      }
+    ]
+  },
+  {
+    "id": "greatest",
+    "scene": "greatest_null_farqi",
+    "text": "PostgreSQL NULL qiymatni e'tiborsiz qoldirsa, MySQL va SQLite standart bo'yicha bitta NULL kelsa ham darhol NULL qaytaradi.",
+    "show": "PostgreSQL NULL qiymatni e'tiborsiz qoldirsa, MySQL va SQLite standart bo'yicha bitta NULL kelsa ham darhol NULL qaytaradi.",
+    "say": "Postgres null qiymatni e'tiborsiz qoldirsa, May es-kyu-el va Es-kyu-layt standart bo'yicha bitta null kelsa ham darhol null qaytaradi.",
+    "a0": 9.59,
+    "a1": 18.03,
+    "words": [
+      {
+        "w": "Postgres",
+        "s": 9.59,
+        "e": 10.13
+      },
+      {
+        "w": "null",
+        "s": 10.33,
+        "e": 10.51
+      },
+      {
+        "w": "qiymatni",
+        "s": 10.57,
+        "e": 10.99
+      },
+      {
+        "w": "e'tiborsiz",
+        "s": 11.09,
+        "e": 11.55
+      },
+      {
+        "w": "qoldirsa,",
+        "s": 11.57,
+        "e": 11.97
+      },
+      {
+        "w": "May",
+        "s": 12.41,
+        "e": 12.57
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 12.65,
+        "e": 13.03
+      },
+      {
+        "w": "va",
+        "s": 13.11,
+        "e": 13.19
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 13.39,
+        "e": 14.01
+      },
+      {
+        "w": "standart",
+        "s": 14.21,
+        "e": 14.69
+      },
+      {
+        "w": "bo'yicha",
+        "s": 14.73,
+        "e": 15.03
+      },
+      {
+        "w": "bitta",
+        "s": 15.41,
+        "e": 15.73
+      },
+      {
+        "w": "null",
+        "s": 15.81,
+        "e": 15.97
+      },
+      {
+        "w": "kelsa",
+        "s": 16.01,
+        "e": 16.25
+      },
+      {
+        "w": "ham",
+        "s": 16.29,
+        "e": 16.41
+      },
+      {
+        "w": "darhol",
+        "s": 16.79,
+        "e": 17.23
+      },
+      {
+        "w": "null",
+        "s": 17.37,
+        "e": 17.55
+      },
+      {
+        "w": "qaytaradi.",
+        "s": 17.59,
+        "e": 18.03
+      }
+    ]
+  },
+  {
+    "id": "mysql",
+    "scene": "mysql_qisqartmalari",
+    "text": "MySQL da IF va IFNULL qisqartmalari mavjud, nolga bo'lish ogohlantirish bilan NULL beradi, hamda CASE tiplari erkinroqdir.",
+    "show": "MySQL da IF va IFNULL qisqartmalari mavjud, nolga bo'lish ogohlantirish bilan NULL beradi, hamda CASE tiplari erkinroqdir.",
+    "say": "May es-kyu-el da IF va if-null qisqartmalari mavjud, nolga bo'lish ogohlantirish bilan null beradi, hamda keys tiplari erkinroqdir.",
+    "a0": 19.09,
+    "a1": 28.14,
+    "words": [
+      {
+        "w": "May",
+        "s": 19.09,
+        "e": 19.25
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 19.31,
+        "e": 19.67
+      },
+      {
+        "w": "da",
+        "s": 19.73,
+        "e": 19.81
+      },
+      {
+        "w": "IF",
+        "s": 20.19,
+        "e": 20.37
+      },
+      {
+        "w": "va",
+        "s": 20.55,
+        "e": 20.65
+      },
+      {
+        "w": "if-null",
+        "s": 21.01,
+        "e": 21.55
+      },
+      {
+        "w": "qisqartmalari",
+        "s": 21.59,
+        "e": 22.13
+      },
+      {
+        "w": "mavjud,",
+        "s": 22.17,
+        "e": 22.45
+      },
+      {
+        "w": "nolga",
+        "s": 22.98,
+        "e": 23.3
+      },
+      {
+        "w": "bo'lish",
+        "s": 23.36,
+        "e": 23.64
+      },
+      {
+        "w": "ogohlantirish",
+        "s": 23.8,
+        "e": 24.48
+      },
+      {
+        "w": "bilan",
+        "s": 24.54,
+        "e": 24.74
+      },
+      {
+        "w": "null",
+        "s": 24.98,
+        "e": 25.16
+      },
+      {
+        "w": "beradi,",
+        "s": 25.22,
+        "e": 25.52
+      },
+      {
+        "w": "hamda",
+        "s": 25.8,
+        "e": 26.08
+      },
+      {
+        "w": "keys",
+        "s": 26.44,
+        "e": 26.7
+      },
+      {
+        "w": "tiplari",
+        "s": 26.74,
+        "e": 27.16
+      },
+      {
+        "w": "erkinroqdir.",
+        "s": 27.5,
+        "e": 28.14
+      }
+    ]
+  },
+  {
+    "id": "sqlite",
+    "scene": "sqlite_qisqartmalari",
+    "text": "SQLite da GREATEST o'rniga ko'p argumentli max funksiyasi ishlatiladi, hamda ixcham iif qisqartmasi to'liq mavjud.",
+    "show": "SQLite da GREATEST o'rniga ko'p argumentli max funksiyasi ishlatiladi, hamda ixcham iif qisqartmasi to'liq mavjud.",
+    "say": "Es-kyu-layt da greytist o'rniga ko'p argumentli meks funksiyasi ishlatiladi, hamda ixcham ay-ay-ef qisqartmasi to'liq mavjud.",
+    "a0": 29.16,
+    "a1": 37.23,
+    "words": [
+      {
+        "w": "Es-kyu-layt",
+        "s": 29.16,
+        "e": 29.64
+      },
+      {
+        "w": "da",
+        "s": 29.7,
+        "e": 29.8
+      },
+      {
+        "w": "greytist",
+        "s": 29.94,
+        "e": 30.42
+      },
+      {
+        "w": "o'rniga",
+        "s": 30.48,
+        "e": 30.86
+      },
+      {
+        "w": "ko'p",
+        "s": 31.16,
+        "e": 31.36
+      },
+      {
+        "w": "argumentli",
+        "s": 31.44,
+        "e": 31.98
+      },
+      {
+        "w": "meks",
+        "s": 32.26,
+        "e": 32.56
+      },
+      {
+        "w": "funksiyasi",
+        "s": 32.6,
+        "e": 32.98
+      },
+      {
+        "w": "ishlatiladi,",
+        "s": 33,
+        "e": 33.42
+      },
+      {
+        "w": "hamda",
+        "s": 33.72,
+        "e": 33.99
+      },
+      {
+        "w": "ixcham",
+        "s": 34.15,
+        "e": 34.53
+      },
+      {
+        "w": "ay-ay-ef",
+        "s": 34.99,
+        "e": 35.65
+      },
+      {
+        "w": "qisqartmasi",
+        "s": 35.71,
+        "e": 36.25
+      },
+      {
+        "w": "to'liq",
+        "s": 36.57,
+        "e": 36.87
+      },
+      {
+        "w": "mavjud.",
+        "s": 36.93,
+        "e": 37.23
+      }
+    ]
+  },
+  {
+    "id": "xulosa",
+    "scene": "solishtirma_va_xulosa",
+    "text": "Xulosa qilib aytganda, tizimlararo portativlik uchun standart CASE va COALESCE dan foydalanish eng to'g'ri strategiyadir.",
+    "show": "Xulosa qilib aytganda, tizimlararo portativlik uchun standart CASE va COALESCE dan foydalanish eng to'g'ri strategiyadir.",
+    "say": "Xulosa qilib aytganda, tizimlararo portativlik uchun standart keys va koales dan foydalanish eng to'g'ri strategiyadir.",
+    "a0": 38.15,
+    "a1": 45.48,
+    "words": [
+      {
+        "w": "Xulosa",
+        "s": 38.15,
+        "e": 38.43
+      },
+      {
+        "w": "qilib",
+        "s": 38.47,
+        "e": 38.61
+      },
+      {
+        "w": "aytganda,",
+        "s": 38.63,
+        "e": 38.97
+      },
+      {
+        "w": "tizimlararo",
+        "s": 39.33,
+        "e": 39.99
+      },
+      {
+        "w": "portativlik",
+        "s": 40.11,
+        "e": 40.73
+      },
+      {
+        "w": "uchun",
+        "s": 40.75,
+        "e": 40.95
+      },
+      {
+        "w": "standart",
+        "s": 41.27,
+        "e": 41.75
+      },
+      {
+        "w": "keys",
+        "s": 41.83,
+        "e": 42.18
+      },
+      {
+        "w": "va",
+        "s": 42.28,
+        "e": 42.36
+      },
+      {
+        "w": "koales",
+        "s": 42.64,
+        "e": 43.06
+      },
+      {
+        "w": "dan",
+        "s": 43.1,
+        "e": 43.22
+      },
+      {
+        "w": "foydalanish",
+        "s": 43.24,
+        "e": 43.76
+      },
+      {
+        "w": "eng",
+        "s": 44.16,
+        "e": 44.34
+      },
+      {
+        "w": "to'g'ri",
+        "s": 44.44,
+        "e": 44.76
+      },
+      {
+        "w": "strategiyadir.",
+        "s": 44.82,
+        "e": 45.48
+      }
+    ]
+  }
+]

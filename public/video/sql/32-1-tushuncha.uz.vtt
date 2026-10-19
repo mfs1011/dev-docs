@@ -1,0 +1,26 @@
+WEBVTT
+
+1
+00:01.420 --> 00:11.100
+SQL da shartga qarab har xil natija qaytarish uchun CASE, COALESCE,
+NULLIF hamda GREATEST va LEAST ifodalaridan foydalaniladi.
+
+2
+00:14.190 --> 00:21.580
+CASE ifodasi shartlarni yuqoridan pastga ketma-ket tekshiradi
+va birinchi rost shart topilishi bilan hisoblashni to'xtatadi.
+
+3
+00:24.690 --> 00:34.750
+Muhim qoida: SQL da NULL tenglik bilan tekshirilmaydi, shuning
+uchun CASE WHEN ustun = NULL emas, doimo IS NULL deb yoziladi.
+
+4
+00:37.940 --> 00:45.520
+COALESCE birinchi mavjud qiymatni tanlaydi, NULLIF esa ikki
+qiymat teng bo'lsa NULL qaytarib, nolga bo'lishdan xalos etadi.
+
+5
+00:48.670 --> 00:56.690
+GREATEST va LEAST agregat emas, balki bitta qatordagi bir
+nechta ustun ichidan eng katta yoki eng kichik qiymatni topadi.

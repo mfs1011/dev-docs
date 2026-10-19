@@ -1,0 +1,26 @@
+WEBVTT
+
+1
+00:01.420 --> 00:10.500
+CASE, COALESCE va NULLIF barcha tizimlarda universal ishlaydi,
+ammo GREATEST va qisqartma funksiyalarda muhim farqlar bor.
+
+2
+00:13.110 --> 00:22.000
+PostgreSQL NULL qiymatni e'tiborsiz qoldirsa, MySQL va SQLite
+standart bo'yicha bitta NULL kelsa ham darhol NULL qaytaradi.
+
+3
+00:25.410 --> 00:34.910
+MySQL da IF va IFNULL qisqartmalari mavjud, nolga bo'lish
+ogohlantirish bilan NULL beradi, hamda CASE tiplari erkinroqdir.
+
+4
+00:38.280 --> 00:46.800
+SQLite da GREATEST o'rniga ko'p argumentli max funksiyasi
+ishlatiladi, hamda ixcham iif qisqartmasi to'liq mavjud.
+
+5
+00:50.070 --> 00:57.850
+Xulosa qilib aytganda, tizimlararo portativlik uchun standart
+CASE va COALESCE dan foydalanish eng to'g'ri strategiyadir.

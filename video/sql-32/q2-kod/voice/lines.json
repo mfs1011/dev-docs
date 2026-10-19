@@ -1,0 +1,492 @@
+[
+  {
+    "id": "intro",
+    "scene": "kirish",
+    "text": "Narxlar jadvalidagi mahsulotlarni CASE ifodasi yordamida narxiga qarab qimmat, o'rta, arzon va tekin toifalariga ajratamiz.",
+    "show": "Narxlar jadvalidagi mahsulotlarni CASE ifodasi yordamida narxiga qarab qimmat, o'rta, arzon va tekin toifalariga ajratamiz.",
+    "say": "Narxlar jadvalidagi mahsulotlarni keys ifodasi yordamida narxiga qarab qimmat, o'rta, arzon va tekin toifalariga ajratamiz.",
+    "a0": 0.28,
+    "a1": 8.13,
+    "words": [
+      {
+        "w": "Narxlar",
+        "s": 0.28,
+        "e": 0.68
+      },
+      {
+        "w": "jadvalidagi",
+        "s": 0.74,
+        "e": 1.32
+      },
+      {
+        "w": "mahsulotlarni",
+        "s": 1.38,
+        "e": 2.06
+      },
+      {
+        "w": "keys",
+        "s": 2.22,
+        "e": 2.46
+      },
+      {
+        "w": "ifodasi",
+        "s": 2.54,
+        "e": 2.96
+      },
+      {
+        "w": "yordamida",
+        "s": 2.96,
+        "e": 3.46
+      },
+      {
+        "w": "narxiga",
+        "s": 3.58,
+        "e": 3.96
+      },
+      {
+        "w": "qarab",
+        "s": 4,
+        "e": 4.24
+      },
+      {
+        "w": "qimmat,",
+        "s": 4.58,
+        "e": 5.06
+      },
+      {
+        "w": "o'rta,",
+        "s": 5.34,
+        "e": 5.66
+      },
+      {
+        "w": "arzon",
+        "s": 6.04,
+        "e": 6.42
+      },
+      {
+        "w": "va",
+        "s": 6.52,
+        "e": 6.58
+      },
+      {
+        "w": "tekin",
+        "s": 6.72,
+        "e": 7
+      },
+      {
+        "w": "toifalariga",
+        "s": 7.06,
+        "e": 7.59
+      },
+      {
+        "w": "ajratamiz.",
+        "s": 7.63,
+        "e": 8.13
+      }
+    ]
+  },
+  {
+    "id": "null_tiplar",
+    "scene": "null_va_tiplar",
+    "text": "Shartda chegirma barobar NULL deb yozilsa mantiq buziladi, faqat IS NULL to'g'ri ishlaydi, hamda barcha natija tiplari mos bo'lishi shart.",
+    "show": "Shartda chegirma barobar NULL deb yozilsa mantiq buziladi, faqat IS NULL to'g'ri ishlaydi, hamda barcha natija tiplari mos bo'lishi shart.",
+    "say": "Shartda chegirma barobar null deb yozilsa mantiq buziladi, faqat iz null to'g'ri ishlaydi, hamda barcha natija tiplari mos bo'lishi shart.",
+    "a0": 9.11,
+    "a1": 17.25,
+    "words": [
+      {
+        "w": "Shartda",
+        "s": 9.11,
+        "e": 9.49
+      },
+      {
+        "w": "chegirma",
+        "s": 9.83,
+        "e": 10.23
+      },
+      {
+        "w": "barobar",
+        "s": 10.31,
+        "e": 10.65
+      },
+      {
+        "w": "null",
+        "s": 10.79,
+        "e": 10.99
+      },
+      {
+        "w": "deb",
+        "s": 11.05,
+        "e": 11.19
+      },
+      {
+        "w": "yozilsa",
+        "s": 11.23,
+        "e": 11.65
+      },
+      {
+        "w": "mantiq",
+        "s": 11.79,
+        "e": 12.11
+      },
+      {
+        "w": "buziladi,",
+        "s": 12.17,
+        "e": 12.55
+      },
+      {
+        "w": "faqat",
+        "s": 12.97,
+        "e": 13.27
+      },
+      {
+        "w": "iz",
+        "s": 13.45,
+        "e": 13.57
+      },
+      {
+        "w": "null",
+        "s": 13.67,
+        "e": 13.85
+      },
+      {
+        "w": "to'g'ri",
+        "s": 13.91,
+        "e": 14.17
+      },
+      {
+        "w": "ishlaydi,",
+        "s": 14.19,
+        "e": 14.51
+      },
+      {
+        "w": "hamda",
+        "s": 14.77,
+        "e": 15.03
+      },
+      {
+        "w": "barcha",
+        "s": 15.33,
+        "e": 15.61
+      },
+      {
+        "w": "natija",
+        "s": 15.65,
+        "e": 15.95
+      },
+      {
+        "w": "tiplari",
+        "s": 15.99,
+        "e": 16.33
+      },
+      {
+        "w": "mos",
+        "s": 16.49,
+        "e": 16.67
+      },
+      {
+        "w": "bo'lishi",
+        "s": 16.73,
+        "e": 16.99
+      },
+      {
+        "w": "shart.",
+        "s": 17.03,
+        "e": 17.25
+      }
+    ]
+  },
+  {
+    "id": "coalesce",
+    "scene": "coalesce_amalda",
+    "text": "COALESCE orqali birinchi to'la tavsifni tanlaymiz va chegirma yo'q bo'lsa noldan ayirib, narxning NULL ga aylanishini to'xtatamiz.",
+    "show": "COALESCE orqali birinchi to'la tavsifni tanlaymiz va chegirma yo'q bo'lsa noldan ayirib, narxning NULL ga aylanishini to'xtatamiz.",
+    "say": "Koales orqali birinchi to'la tavsifni tanlaymiz va chegirma yo'q bo'lsa noldan ayirib, narxning null ga aylanishini to'xtatamiz.",
+    "a0": 18.05,
+    "a1": 25.04,
+    "words": [
+      {
+        "w": "Koales",
+        "s": 18.05,
+        "e": 18.51
+      },
+      {
+        "w": "orqali",
+        "s": 18.59,
+        "e": 18.91
+      },
+      {
+        "w": "birinchi",
+        "s": 19.25,
+        "e": 19.55
+      },
+      {
+        "w": "to'la",
+        "s": 19.61,
+        "e": 19.81
+      },
+      {
+        "w": "tavsifni",
+        "s": 19.85,
+        "e": 20.25
+      },
+      {
+        "w": "tanlaymiz",
+        "s": 20.29,
+        "e": 20.75
+      },
+      {
+        "w": "va",
+        "s": 20.99,
+        "e": 21.05
+      },
+      {
+        "w": "chegirma",
+        "s": 21.13,
+        "e": 21.47
+      },
+      {
+        "w": "yo'q",
+        "s": 21.51,
+        "e": 21.65
+      },
+      {
+        "w": "bo'lsa",
+        "s": 21.69,
+        "e": 21.91
+      },
+      {
+        "w": "noldan",
+        "s": 22.13,
+        "e": 22.49
+      },
+      {
+        "w": "ayirib,",
+        "s": 22.62,
+        "e": 22.9
+      },
+      {
+        "w": "narxning",
+        "s": 23.08,
+        "e": 23.5
+      },
+      {
+        "w": "null",
+        "s": 23.66,
+        "e": 23.86
+      },
+      {
+        "w": "ga",
+        "s": 23.9,
+        "e": 23.98
+      },
+      {
+        "w": "aylanishini",
+        "s": 24.04,
+        "e": 24.48
+      },
+      {
+        "w": "to'xtatamiz.",
+        "s": 24.52,
+        "e": 25.04
+      }
+    ]
+  },
+  {
+    "id": "nullif",
+    "scene": "nullif_amalda",
+    "text": "NULLIF yordamida bo'sh satrni haqiqiy NULL ga o'giramiz va nolga bo'lish xatosini xavfsiz tarzda NULL natijaga aylantiramiz.",
+    "show": "NULLIF yordamida bo'sh satrni haqiqiy NULL ga o'giramiz va nolga bo'lish xatosini xavfsiz tarzda NULL natijaga aylantiramiz.",
+    "say": "Null-if yordamida bo'sh satrni haqiqiy null ga o'giramiz va nolga bo'lish xatosini xavfsiz tarzda null natijaga aylantiramiz.",
+    "a0": 26.04,
+    "a1": 33.19,
+    "words": [
+      {
+        "w": "Null-if",
+        "s": 26.04,
+        "e": 26.52
+      },
+      {
+        "w": "yordamida",
+        "s": 26.6,
+        "e": 27.06
+      },
+      {
+        "w": "bo'sh",
+        "s": 27.22,
+        "e": 27.44
+      },
+      {
+        "w": "satrni",
+        "s": 27.5,
+        "e": 27.86
+      },
+      {
+        "w": "haqiqiy",
+        "s": 27.94,
+        "e": 28.36
+      },
+      {
+        "w": "null",
+        "s": 28.52,
+        "e": 28.72
+      },
+      {
+        "w": "ga",
+        "s": 28.78,
+        "e": 28.86
+      },
+      {
+        "w": "o'giramiz",
+        "s": 28.96,
+        "e": 29.4
+      },
+      {
+        "w": "va",
+        "s": 29.52,
+        "e": 29.6
+      },
+      {
+        "w": "nolga",
+        "s": 29.74,
+        "e": 30.08
+      },
+      {
+        "w": "bo'lish",
+        "s": 30.08,
+        "e": 30.3
+      },
+      {
+        "w": "xatosini",
+        "s": 30.32,
+        "e": 30.78
+      },
+      {
+        "w": "xavfsiz",
+        "s": 30.88,
+        "e": 31.26
+      },
+      {
+        "w": "tarzda",
+        "s": 31.3,
+        "e": 31.64
+      },
+      {
+        "w": "null",
+        "s": 31.8,
+        "e": 32
+      },
+      {
+        "w": "natijaga",
+        "s": 32.06,
+        "e": 32.5
+      },
+      {
+        "w": "aylantiramiz.",
+        "s": 32.6,
+        "e": 33.19
+      }
+    ]
+  },
+  {
+    "id": "greatest",
+    "scene": "greatest_least_amalda",
+    "text": "GREATEST va LEAST bitta qatordagi joriy va eski narxni solishtirib, chegirmasiz eng katta yoki eng kichik narxni qaytaradi.",
+    "show": "GREATEST va LEAST bitta qatordagi joriy va eski narxni solishtirib, chegirmasiz eng katta yoki eng kichik narxni qaytaradi.",
+    "say": "Greytist va liyst bitta qatordagi joriy va eski narxni solishtirib, chegirmasiz eng katta yoki eng kichik narxni qaytaradi.",
+    "a0": 34.15,
+    "a1": 41.16,
+    "words": [
+      {
+        "w": "Greytist",
+        "s": 34.15,
+        "e": 34.59
+      },
+      {
+        "w": "va",
+        "s": 34.65,
+        "e": 34.71
+      },
+      {
+        "w": "liyst",
+        "s": 34.83,
+        "e": 35.09
+      },
+      {
+        "w": "bitta",
+        "s": 35.31,
+        "e": 35.55
+      },
+      {
+        "w": "qatordagi",
+        "s": 35.59,
+        "e": 36.07
+      },
+      {
+        "w": "joriy",
+        "s": 36.17,
+        "e": 36.53
+      },
+      {
+        "w": "va",
+        "s": 36.61,
+        "e": 36.67
+      },
+      {
+        "w": "eski",
+        "s": 36.79,
+        "e": 37.01
+      },
+      {
+        "w": "narxni",
+        "s": 37.05,
+        "e": 37.33
+      },
+      {
+        "w": "solishtirib,",
+        "s": 37.37,
+        "e": 37.83
+      },
+      {
+        "w": "chegirmasiz",
+        "s": 38.07,
+        "e": 38.62
+      },
+      {
+        "w": "eng",
+        "s": 38.8,
+        "e": 38.96
+      },
+      {
+        "w": "katta",
+        "s": 39.02,
+        "e": 39.4
+      },
+      {
+        "w": "yoki",
+        "s": 39.54,
+        "e": 39.74
+      },
+      {
+        "w": "eng",
+        "s": 39.94,
+        "e": 40.08
+      },
+      {
+        "w": "kichik",
+        "s": 40.12,
+        "e": 40.36
+      },
+      {
+        "w": "narxni",
+        "s": 40.42,
+        "e": 40.7
+      },
+      {
+        "w": "qaytaradi.",
+        "s": 40.74,
+        "e": 41.16
+      }
+    ]
+  }
+]
