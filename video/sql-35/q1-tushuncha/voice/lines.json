@@ -1,0 +1,567 @@
+[
+  {
+    "scene": "kirish",
+    "id": "intro",
+    "text": "JSON relyatsion bazalarda yarim strukturalashgan va dinamik ma'lumotlarni saqlash imkonini beradi, relyatsion model bilan birga qulay gibrid arxitekturani hosil qiladi.",
+    "show": "JSON relyatsion bazalarda yarim strukturalashgan va dinamik ma'lumotlarni saqlash imkonini beradi, relyatsion model bilan birga qulay gibrid arxitekturani hosil qiladi.",
+    "say": "Jey-son relyatsion bazalarda yarim strukturalashgan va dinamik ma'lumotlarni saqlash imkonini beradi, relyatsion model bilan birga qulay gibrid arxitekturani hosil qiladi.",
+    "a0": 0.24,
+    "a1": 10.19,
+    "words": [
+      {
+        "w": "Jey-son",
+        "s": 0.24,
+        "e": 0.64
+      },
+      {
+        "w": "relyatsion",
+        "s": 0.86,
+        "e": 1.38
+      },
+      {
+        "w": "bazalarda",
+        "s": 1.48,
+        "e": 2
+      },
+      {
+        "w": "yarim",
+        "s": 2.14,
+        "e": 2.46
+      },
+      {
+        "w": "strukturalashgan",
+        "s": 2.52,
+        "e": 3.36
+      },
+      {
+        "w": "va",
+        "s": 3.44,
+        "e": 3.52
+      },
+      {
+        "w": "dinamik",
+        "s": 3.64,
+        "e": 4.04
+      },
+      {
+        "w": "ma'lumotlarni",
+        "s": 4.1,
+        "e": 4.76
+      },
+      {
+        "w": "saqlash",
+        "s": 4.8,
+        "e": 5.12
+      },
+      {
+        "w": "imkonini",
+        "s": 5.16,
+        "e": 5.54
+      },
+      {
+        "w": "beradi,",
+        "s": 5.58,
+        "e": 5.88
+      },
+      {
+        "w": "relyatsion",
+        "s": 6.68,
+        "e": 7.12
+      },
+      {
+        "w": "model",
+        "s": 7.18,
+        "e": 7.44
+      },
+      {
+        "w": "bilan",
+        "s": 7.48,
+        "e": 7.69
+      },
+      {
+        "w": "birga",
+        "s": 7.73,
+        "e": 7.99
+      },
+      {
+        "w": "qulay",
+        "s": 8.17,
+        "e": 8.47
+      },
+      {
+        "w": "gibrid",
+        "s": 8.57,
+        "e": 8.89
+      },
+      {
+        "w": "arxitekturani",
+        "s": 8.97,
+        "e": 9.61
+      },
+      {
+        "w": "hosil",
+        "s": 9.65,
+        "e": 9.89
+      },
+      {
+        "w": "qiladi.",
+        "s": 9.93,
+        "e": 10.19
+      }
+    ]
+  },
+  {
+    "scene": "json_vs_jsonb",
+    "id": "types",
+    "text": "Postgresda json tipi matnning aniq nusxasini saqlasa, jsonb ikkilik binar formatda tahlil qilib, takror kalitlarni tozalaydi va juda tez o'qilishini ta'minlaydi.",
+    "show": "Postgresda json tipi matnning aniq nusxasini saqlasa, jsonb ikkilik binar formatda tahlil qilib, takror kalitlarni tozalaydi va juda tez o'qilishini ta'minlaydi.",
+    "say": "Postgresda jey-son tipi matnning aniq nusxasini saqlasa, jey-son-bi ikkilik binar formatda tahlil qilib, takror kalitlarni tozalaydi va juda tez o'qilishini ta'minlaydi.",
+    "a0": 11.05,
+    "a1": 20.99,
+    "words": [
+      {
+        "w": "Postgresda",
+        "s": 11.05,
+        "e": 11.55
+      },
+      {
+        "w": "jey-son",
+        "s": 11.67,
+        "e": 12.03
+      },
+      {
+        "w": "tipi",
+        "s": 12.07,
+        "e": 12.29
+      },
+      {
+        "w": "matnning",
+        "s": 12.51,
+        "e": 13.01
+      },
+      {
+        "w": "aniq",
+        "s": 13.19,
+        "e": 13.39
+      },
+      {
+        "w": "nusxasini",
+        "s": 13.43,
+        "e": 13.85
+      },
+      {
+        "w": "saqlasa,",
+        "s": 13.89,
+        "e": 14.27
+      },
+      {
+        "w": "jey-son-bi",
+        "s": 14.77,
+        "e": 15.31
+      },
+      {
+        "w": "ikkilik",
+        "s": 15.69,
+        "e": 16.07
+      },
+      {
+        "w": "binar",
+        "s": 16.11,
+        "e": 16.37
+      },
+      {
+        "w": "formatda",
+        "s": 16.41,
+        "e": 16.85
+      },
+      {
+        "w": "tahlil",
+        "s": 16.95,
+        "e": 17.29
+      },
+      {
+        "w": "qilib,",
+        "s": 17.33,
+        "e": 17.53
+      },
+      {
+        "w": "takror",
+        "s": 17.73,
+        "e": 18.09
+      },
+      {
+        "w": "kalitlarni",
+        "s": 18.13,
+        "e": 18.63
+      },
+      {
+        "w": "tozalaydi",
+        "s": 18.67,
+        "e": 19.17
+      },
+      {
+        "w": "va",
+        "s": 19.23,
+        "e": 19.31
+      },
+      {
+        "w": "juda",
+        "s": 19.55,
+        "e": 19.77
+      },
+      {
+        "w": "tez",
+        "s": 19.81,
+        "e": 19.97
+      },
+      {
+        "w": "o'qilishini",
+        "s": 20.05,
+        "e": 20.47
+      },
+      {
+        "w": "ta'minlaydi.",
+        "s": 20.49,
+        "e": 20.99
+      }
+    ]
+  },
+  {
+    "scene": "operatorlar",
+    "id": "ops",
+    "text": "Tire-katta belgisi elementni JSON formatida, ikkita tire-katta esa toza matn sifatida ajratadi, panjara operatorlari esa ichma-ich joylashgan yo'llar bo'yicha qiymat oladi.",
+    "show": "Tire-katta belgisi elementni JSON formatida, ikkita tire-katta esa toza matn sifatida ajratadi, panjara operatorlari esa ichma-ich joylashgan yo'llar bo'yicha qiymat oladi.",
+    "say": "Tire-katta belgisi elementni jey-son formatida, ikkita tire-katta esa toza matn sifatida ajratadi, panjara operatorlari esa ichma-ich joylashgan yo'llar bo'yicha qiymat oladi.",
+    "a0": 22.27,
+    "a1": 32.52,
+    "words": [
+      {
+        "w": "Tire-katta",
+        "s": 22.27,
+        "e": 22.8
+      },
+      {
+        "w": "belgisi",
+        "s": 22.84,
+        "e": 23.22
+      },
+      {
+        "w": "elementni",
+        "s": 23.66,
+        "e": 24.18
+      },
+      {
+        "w": "jey-son",
+        "s": 24.34,
+        "e": 24.74
+      },
+      {
+        "w": "formatida,",
+        "s": 24.8,
+        "e": 25.3
+      },
+      {
+        "w": "ikkita",
+        "s": 25.74,
+        "e": 26
+      },
+      {
+        "w": "tire-katta",
+        "s": 26.06,
+        "e": 26.56
+      },
+      {
+        "w": "esa",
+        "s": 26.6,
+        "e": 26.78
+      },
+      {
+        "w": "toza",
+        "s": 26.92,
+        "e": 27.18
+      },
+      {
+        "w": "matn",
+        "s": 27.26,
+        "e": 27.52
+      },
+      {
+        "w": "sifatida",
+        "s": 27.56,
+        "e": 27.94
+      },
+      {
+        "w": "ajratadi,",
+        "s": 28,
+        "e": 28.48
+      },
+      {
+        "w": "panjara",
+        "s": 28.88,
+        "e": 29.24
+      },
+      {
+        "w": "operatorlari",
+        "s": 29.26,
+        "e": 29.82
+      },
+      {
+        "w": "esa",
+        "s": 29.86,
+        "e": 30
+      },
+      {
+        "w": "ichma-ich",
+        "s": 30.18,
+        "e": 30.72
+      },
+      {
+        "w": "joylashgan",
+        "s": 30.76,
+        "e": 31.26
+      },
+      {
+        "w": "yo'llar",
+        "s": 31.32,
+        "e": 31.6
+      },
+      {
+        "w": "bo'yicha",
+        "s": 31.64,
+        "e": 31.88
+      },
+      {
+        "w": "qiymat",
+        "s": 31.94,
+        "e": 32.22
+      },
+      {
+        "w": "oladi.",
+        "s": 32.28,
+        "e": 32.52
+      }
+    ]
+  },
+  {
+    "scene": "containment_va_filter",
+    "id": "contain",
+    "text": "Kuchukcha-katta operatori hujjat ikkinchi JSONni to'liq o'z ichiga olishini tekshirsa, so'roq belgisi yuqori darajada kalit yoki massiv elementi borligini aniqlaydi.",
+    "show": "Kuchukcha-katta operatori hujjat ikkinchi JSONni to'liq o'z ichiga olishini tekshirsa, so'roq belgisi yuqori darajada kalit yoki massiv elementi borligini aniqlaydi.",
+    "say": "Kuchukcha-katta operatori hujjat ikkinchi jey-sonni to'liq o'z ichiga olishini tekshirsa, so'roq belgisi yuqori darajada kalit yoki massiv elementi borligini aniqlaydi.",
+    "a0": 33.4,
+    "a1": 42.57,
+    "words": [
+      {
+        "w": "Kuchukcha-katta",
+        "s": 33.4,
+        "e": 34.02
+      },
+      {
+        "w": "operatori",
+        "s": 34.08,
+        "e": 34.52
+      },
+      {
+        "w": "hujjat",
+        "s": 34.76,
+        "e": 35.16
+      },
+      {
+        "w": "ikkinchi",
+        "s": 35.34,
+        "e": 35.72
+      },
+      {
+        "w": "jey-sonni",
+        "s": 35.81,
+        "e": 36.27
+      },
+      {
+        "w": "to'liq",
+        "s": 36.39,
+        "e": 36.67
+      },
+      {
+        "w": "o'z",
+        "s": 36.75,
+        "e": 36.85
+      },
+      {
+        "w": "ichiga",
+        "s": 36.87,
+        "e": 37.11
+      },
+      {
+        "w": "olishini",
+        "s": 37.19,
+        "e": 37.49
+      },
+      {
+        "w": "tekshirsa,",
+        "s": 37.53,
+        "e": 37.99
+      },
+      {
+        "w": "so'roq",
+        "s": 38.43,
+        "e": 38.71
+      },
+      {
+        "w": "belgisi",
+        "s": 38.77,
+        "e": 39.13
+      },
+      {
+        "w": "yuqori",
+        "s": 39.31,
+        "e": 39.67
+      },
+      {
+        "w": "darajada",
+        "s": 39.71,
+        "e": 40.05
+      },
+      {
+        "w": "kalit",
+        "s": 40.11,
+        "e": 40.37
+      },
+      {
+        "w": "yoki",
+        "s": 40.37,
+        "e": 40.69
+      },
+      {
+        "w": "massiv",
+        "s": 40.91,
+        "e": 41.25
+      },
+      {
+        "w": "elementi",
+        "s": 41.29,
+        "e": 41.67
+      },
+      {
+        "w": "borligini",
+        "s": 41.71,
+        "e": 42.13
+      },
+      {
+        "w": "aniqlaydi.",
+        "s": 42.17,
+        "e": 42.57
+      }
+    ]
+  },
+  {
+    "scene": "loyihalash_va_indeks",
+    "id": "design",
+    "text": "JSON yangilanganda butun qator qulflanadi, shuning uchun tez-tez filtrlanadigan maydonlar oddiy ustun bo'lishi, jsonb esa GIN indeksi bilan tezlashtirilishi zarur.",
+    "show": "JSON yangilanganda butun qator qulflanadi, shuning uchun tez-tez filtrlanadigan maydonlar oddiy ustun bo'lishi, jsonb esa GIN indeksi bilan tezlashtirilishi zarur.",
+    "say": "Jey-son yangilanganda butun qator qulflanadi, shuning uchun tez-tez filtrlanadigan maydonlar oddiy ustun bo'lishi, jey-son-bi esa jin indeksi bilan tezlashtirilishi zarur.",
+    "a0": 43.71,
+    "a1": 52.64,
+    "words": [
+      {
+        "w": "Jey-son",
+        "s": 43.71,
+        "e": 43.97
+      },
+      {
+        "w": "yangilanganda",
+        "s": 44.03,
+        "e": 44.61
+      },
+      {
+        "w": "butun",
+        "s": 44.75,
+        "e": 45.01
+      },
+      {
+        "w": "qator",
+        "s": 45.05,
+        "e": 45.31
+      },
+      {
+        "w": "qulflanadi,",
+        "s": 45.35,
+        "e": 45.81
+      },
+      {
+        "w": "shuning",
+        "s": 45.87,
+        "e": 46.09
+      },
+      {
+        "w": "uchun",
+        "s": 46.11,
+        "e": 46.27
+      },
+      {
+        "w": "tez-tez",
+        "s": 46.59,
+        "e": 46.95
+      },
+      {
+        "w": "filtrlanadigan",
+        "s": 47.01,
+        "e": 47.7
+      },
+      {
+        "w": "maydonlar",
+        "s": 47.76,
+        "e": 48.18
+      },
+      {
+        "w": "oddiy",
+        "s": 48.38,
+        "e": 48.64
+      },
+      {
+        "w": "ustun",
+        "s": 48.7,
+        "e": 48.94
+      },
+      {
+        "w": "bo'lishi,",
+        "s": 48.98,
+        "e": 49.28
+      },
+      {
+        "w": "jey-son-bi",
+        "s": 49.7,
+        "e": 50.24
+      },
+      {
+        "w": "esa",
+        "s": 50.34,
+        "e": 50.52
+      },
+      {
+        "w": "jin",
+        "s": 50.8,
+        "e": 50.96
+      },
+      {
+        "w": "indeksi",
+        "s": 51.04,
+        "e": 51.38
+      },
+      {
+        "w": "bilan",
+        "s": 51.4,
+        "e": 51.6
+      },
+      {
+        "w": "tezlashtirilishi",
+        "s": 51.64,
+        "e": 52.32
+      },
+      {
+        "w": "zarur.",
+        "s": 52.36,
+        "e": 52.64
+      }
+    ]
+  }
+]

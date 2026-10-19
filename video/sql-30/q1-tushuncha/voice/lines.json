@@ -1,0 +1,628 @@
+[
+  {
+    "id": "intro",
+    "scene": "kirish",
+    "text": "WITH RECURSIVE kalit so'zi CTE ni oddiy qulaylikdan standart SQL da boshqa yo'l bilan qilib bo'lmaydigan qudratli imkoniyatga aylantiradi.",
+    "show": "WITH RECURSIVE kalit so'zi CTE ni oddiy qulaylikdan standart SQL da boshqa yo'l bilan qilib bo'lmaydigan qudratli imkoniyatga aylantiradi.",
+    "say": "Viz rekursiv kalit so'zi si-ti-i ni oddiy qulaylikdan standart es-kyu-el da boshqa yo'l bilan qilib bo'lmaydigan qudratli imkoniyatga aylantiradi.",
+    "a0": 0.26,
+    "a1": 8.17,
+    "words": [
+      {
+        "w": "Viz",
+        "s": 0.26,
+        "e": 0.52
+      },
+      {
+        "w": "rekursiv",
+        "s": 0.68,
+        "e": 1.18
+      },
+      {
+        "w": "kalit",
+        "s": 1.24,
+        "e": 1.52
+      },
+      {
+        "w": "so'zi",
+        "s": 1.56,
+        "e": 1.82
+      },
+      {
+        "w": "si-ti-i",
+        "s": 2.08,
+        "e": 2.44
+      },
+      {
+        "w": "ni",
+        "s": 2.56,
+        "e": 2.64
+      },
+      {
+        "w": "oddiy",
+        "s": 2.88,
+        "e": 3.18
+      },
+      {
+        "w": "qulaylikdan",
+        "s": 3.28,
+        "e": 3.86
+      },
+      {
+        "w": "standart",
+        "s": 4.02,
+        "e": 4.5
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 4.56,
+        "e": 4.94
+      },
+      {
+        "w": "da",
+        "s": 4.96,
+        "e": 5.02
+      },
+      {
+        "w": "boshqa",
+        "s": 5.08,
+        "e": 5.36
+      },
+      {
+        "w": "yo'l",
+        "s": 5.4,
+        "e": 5.54
+      },
+      {
+        "w": "bilan",
+        "s": 5.58,
+        "e": 5.78
+      },
+      {
+        "w": "qilib",
+        "s": 5.82,
+        "e": 6.02
+      },
+      {
+        "w": "bo'lmaydigan",
+        "s": 6.06,
+        "e": 6.6
+      },
+      {
+        "w": "qudratli",
+        "s": 6.68,
+        "e": 7.14
+      },
+      {
+        "w": "imkoniyatga",
+        "s": 7.22,
+        "e": 7.71
+      },
+      {
+        "w": "aylantiradi.",
+        "s": 7.75,
+        "e": 8.17
+      }
+    ]
+  },
+  {
+    "id": "tuzilish",
+    "scene": "tuzilishi",
+    "text": "Uning tuzilishi uch qismdan iborat: boshlang'ich so'rov, birlashtiruvchi UNION ALL va o'z-o'ziga murojaat qiluvchi rekursiv qism.",
+    "show": "Uning tuzilishi uch qismdan iborat: boshlang'ich so'rov, birlashtiruvchi UNION ALL va o'z-o'ziga murojaat qiluvchi rekursiv qism.",
+    "say": "Uning tuzilishi uch qismdan iborat: boshlang'ich so'rov, birlashtiruvchi yunon ol va o'z-o'ziga murojaat qiluvchi rekursiv qism.",
+    "a0": 8.83,
+    "a1": 16.43,
+    "words": [
+      {
+        "w": "Uning",
+        "s": 8.83,
+        "e": 8.99
+      },
+      {
+        "w": "tuzilishi",
+        "s": 9.01,
+        "e": 9.39
+      },
+      {
+        "w": "uch",
+        "s": 9.63,
+        "e": 9.77
+      },
+      {
+        "w": "qismdan",
+        "s": 9.85,
+        "e": 10.27
+      },
+      {
+        "w": "iborat:",
+        "s": 10.31,
+        "e": 10.59
+      },
+      {
+        "w": "boshlang'ich",
+        "s": 10.97,
+        "e": 11.45
+      },
+      {
+        "w": "so'rov,",
+        "s": 11.51,
+        "e": 11.79
+      },
+      {
+        "w": "birlashtiruvchi",
+        "s": 12.11,
+        "e": 12.79
+      },
+      {
+        "w": "yunon",
+        "s": 12.97,
+        "e": 13.37
+      },
+      {
+        "w": "ol",
+        "s": 13.55,
+        "e": 13.67
+      },
+      {
+        "w": "va",
+        "s": 14.01,
+        "e": 14.07
+      },
+      {
+        "w": "o'z-o'ziga",
+        "s": 14.27,
+        "e": 14.77
+      },
+      {
+        "w": "murojaat",
+        "s": 14.81,
+        "e": 15.17
+      },
+      {
+        "w": "qiluvchi",
+        "s": 15.21,
+        "e": 15.51
+      },
+      {
+        "w": "rekursiv",
+        "s": 15.71,
+        "e": 16.15
+      },
+      {
+        "w": "qism.",
+        "s": 16.21,
+        "e": 16.43
+      }
+    ]
+  },
+  {
+    "id": "algoritm",
+    "scene": "algoritm_va_ishchi_jadval",
+    "text": "Baza ichida rekursiya ishchi jadval orqali iteratsiya bilan bajariladi: har qadamda chiqqan yangi qatorlar keyingi qadam uchun manba bo'ladi.",
+    "show": "Baza ichida rekursiya ishchi jadval orqali iteratsiya bilan bajariladi: har qadamda chiqqan yangi qatorlar keyingi qadam uchun manba bo'ladi.",
+    "say": "Baza ichida rekursiya ishchi jadval orqali iteratsiya bilan bajariladi: har qadamda chiqqan yangi qatorlar keyingi qadam uchun manba bo'ladi.",
+    "a0": 17.33,
+    "a1": 24.88,
+    "words": [
+      {
+        "w": "Baza",
+        "s": 17.33,
+        "e": 17.57
+      },
+      {
+        "w": "ichida",
+        "s": 17.61,
+        "e": 17.87
+      },
+      {
+        "w": "rekursiya",
+        "s": 18.05,
+        "e": 18.49
+      },
+      {
+        "w": "ishchi",
+        "s": 18.65,
+        "e": 18.89
+      },
+      {
+        "w": "jadval",
+        "s": 18.93,
+        "e": 19.27
+      },
+      {
+        "w": "orqali",
+        "s": 19.33,
+        "e": 19.63
+      },
+      {
+        "w": "iteratsiya",
+        "s": 19.71,
+        "e": 20.17
+      },
+      {
+        "w": "bilan",
+        "s": 20.21,
+        "e": 20.39
+      },
+      {
+        "w": "bajariladi:",
+        "s": 20.43,
+        "e": 20.89
+      },
+      {
+        "w": "har",
+        "s": 21.21,
+        "e": 21.37
+      },
+      {
+        "w": "qadamda",
+        "s": 21.41,
+        "e": 21.73
+      },
+      {
+        "w": "chiqqan",
+        "s": 21.79,
+        "e": 22.11
+      },
+      {
+        "w": "yangi",
+        "s": 22.19,
+        "e": 22.45
+      },
+      {
+        "w": "qatorlar",
+        "s": 22.49,
+        "e": 22.92
+      },
+      {
+        "w": "keyingi",
+        "s": 23.2,
+        "e": 23.58
+      },
+      {
+        "w": "qadam",
+        "s": 23.66,
+        "e": 23.92
+      },
+      {
+        "w": "uchun",
+        "s": 23.98,
+        "e": 24.18
+      },
+      {
+        "w": "manba",
+        "s": 24.24,
+        "e": 24.52
+      },
+      {
+        "w": "bo'ladi.",
+        "s": 24.58,
+        "e": 24.88
+      }
+    ]
+  },
+  {
+    "id": "daraxt",
+    "scene": "daraxt_va_graf",
+    "text": "Bu usul tashkilot tuzilmasi kabi bitta ota-onaga ega daraxtlarni ham, yo'llar tarmog'i kabi murakkab graflarni ham tahlil qilish imkonini beradi.",
+    "show": "Bu usul tashkilot tuzilmasi kabi bitta ota-onaga ega daraxtlarni ham, yo'llar tarmog'i kabi murakkab graflarni ham tahlil qilish imkonini beradi.",
+    "say": "Bu usul tashkilot tuzilmasi kabi bitta ota-onaga ega daraxtlarni ham, yo'llar tarmog'i kabi murakkab graflarni ham tahlil qilish imkonini beradi.",
+    "a0": 25.4,
+    "a1": 33.34,
+    "words": [
+      {
+        "w": "Bu",
+        "s": 25.4,
+        "e": 25.46
+      },
+      {
+        "w": "usul",
+        "s": 25.54,
+        "e": 25.76
+      },
+      {
+        "w": "tashkilot",
+        "s": 26.04,
+        "e": 26.46
+      },
+      {
+        "w": "tuzilmasi",
+        "s": 26.5,
+        "e": 26.98
+      },
+      {
+        "w": "kabi",
+        "s": 27.02,
+        "e": 27.26
+      },
+      {
+        "w": "bitta",
+        "s": 27.46,
+        "e": 27.74
+      },
+      {
+        "w": "ota-onaga",
+        "s": 27.82,
+        "e": 28.3
+      },
+      {
+        "w": "ega",
+        "s": 28.42,
+        "e": 28.56
+      },
+      {
+        "w": "daraxtlarni",
+        "s": 28.6,
+        "e": 29.08
+      },
+      {
+        "w": "ham,",
+        "s": 29.12,
+        "e": 29.26
+      },
+      {
+        "w": "yo'llar",
+        "s": 29.6,
+        "e": 29.9
+      },
+      {
+        "w": "tarmog'i",
+        "s": 29.92,
+        "e": 30.3
+      },
+      {
+        "w": "kabi",
+        "s": 30.34,
+        "e": 30.54
+      },
+      {
+        "w": "murakkab",
+        "s": 30.6,
+        "e": 31.04
+      },
+      {
+        "w": "graflarni",
+        "s": 31.12,
+        "e": 31.62
+      },
+      {
+        "w": "ham",
+        "s": 31.64,
+        "e": 31.78
+      },
+      {
+        "w": "tahlil",
+        "s": 31.86,
+        "e": 32.2
+      },
+      {
+        "w": "qilish",
+        "s": 32.24,
+        "e": 32.48
+      },
+      {
+        "w": "imkonini",
+        "s": 32.56,
+        "e": 33.02
+      },
+      {
+        "w": "beradi.",
+        "s": 33.06,
+        "e": 33.34
+      }
+    ]
+  },
+  {
+    "id": "tartib",
+    "scene": "chuqurlik_va_kenglik",
+    "text": "Ma'lumotlarni ikki tartibda olish mumkin: avval butun bir darajani ko'rish kenglik bo'yicha, har bir shoxni oxirigacha o'rganish esa chuqurlik bo'yicha qidiruvdir.",
+    "show": "Ma'lumotlarni ikki tartibda olish mumkin: avval butun bir darajani ko'rish kenglik bo'yicha, har bir shoxni oxirigacha o'rganish esa chuqurlik bo'yicha qidiruvdir.",
+    "say": "Ma'lumotlarni ikki tartibda olish mumkin: avval butun bir darajani ko'rish kenglik bo'yicha, har bir shoxni oxirigacha o'rganish esa chuqurlik bo'yicha qidiruvdir.",
+    "a0": 33.86,
+    "a1": 42.33,
+    "words": [
+      {
+        "w": "Ma'lumotlarni",
+        "s": 33.86,
+        "e": 34.46
+      },
+      {
+        "w": "ikki",
+        "s": 34.76,
+        "e": 34.94
+      },
+      {
+        "w": "tartibda",
+        "s": 34.96,
+        "e": 35.33
+      },
+      {
+        "w": "olish",
+        "s": 35.37,
+        "e": 35.57
+      },
+      {
+        "w": "mumkin:",
+        "s": 35.59,
+        "e": 35.83
+      },
+      {
+        "w": "avval",
+        "s": 36.21,
+        "e": 36.47
+      },
+      {
+        "w": "butun",
+        "s": 36.71,
+        "e": 36.97
+      },
+      {
+        "w": "bir",
+        "s": 37.03,
+        "e": 37.13
+      },
+      {
+        "w": "darajani",
+        "s": 37.17,
+        "e": 37.57
+      },
+      {
+        "w": "ko'rish",
+        "s": 37.61,
+        "e": 37.93
+      },
+      {
+        "w": "kenglik",
+        "s": 38.03,
+        "e": 38.37
+      },
+      {
+        "w": "bo'yicha,",
+        "s": 38.41,
+        "e": 38.71
+      },
+      {
+        "w": "har",
+        "s": 39.13,
+        "e": 39.27
+      },
+      {
+        "w": "bir",
+        "s": 39.31,
+        "e": 39.41
+      },
+      {
+        "w": "shoxni",
+        "s": 39.47,
+        "e": 39.75
+      },
+      {
+        "w": "oxirigacha",
+        "s": 39.91,
+        "e": 40.37
+      },
+      {
+        "w": "o'rganish",
+        "s": 40.41,
+        "e": 40.75
+      },
+      {
+        "w": "esa",
+        "s": 40.77,
+        "e": 40.93
+      },
+      {
+        "w": "chuqurlik",
+        "s": 41.19,
+        "e": 41.61
+      },
+      {
+        "w": "bo'yicha",
+        "s": 41.67,
+        "e": 41.91
+      },
+      {
+        "w": "qidiruvdir.",
+        "s": 41.95,
+        "e": 42.33
+      }
+    ]
+  },
+  {
+    "id": "aylana",
+    "scene": "aylanalar_va_xavfsizlik",
+    "text": "Grafda aylana mavjud bo'lsa, so'rov cheksiz aylanib qolmasligi uchun to'xtash sharti yoki yo'lni kuzatib boruvchi mexanizm shart.",
+    "show": "Grafda aylana mavjud bo'lsa, so'rov cheksiz aylanib qolmasligi uchun to'xtash sharti yoki yo'lni kuzatib boruvchi mexanizm shart.",
+    "say": "Grafda aylana mavjud bo'lsa, so'rov cheksiz aylanib qolmasligi uchun to'xtash sharti yoki yo'lni kuzatib boruvchi mexanizm shart.",
+    "a0": 43.03,
+    "a1": 50.02,
+    "words": [
+      {
+        "w": "Grafda",
+        "s": 43.03,
+        "e": 43.39
+      },
+      {
+        "w": "aylana",
+        "s": 43.55,
+        "e": 43.87
+      },
+      {
+        "w": "mavjud",
+        "s": 43.91,
+        "e": 44.19
+      },
+      {
+        "w": "bo'lsa,",
+        "s": 44.23,
+        "e": 44.49
+      },
+      {
+        "w": "so'rov",
+        "s": 44.81,
+        "e": 45.09
+      },
+      {
+        "w": "cheksiz",
+        "s": 45.19,
+        "e": 45.54
+      },
+      {
+        "w": "aylanib",
+        "s": 45.6,
+        "e": 45.88
+      },
+      {
+        "w": "qolmasligi",
+        "s": 45.9,
+        "e": 46.32
+      },
+      {
+        "w": "uchun",
+        "s": 46.38,
+        "e": 46.54
+      },
+      {
+        "w": "to'xtash",
+        "s": 46.78,
+        "e": 47.2
+      },
+      {
+        "w": "sharti",
+        "s": 47.24,
+        "e": 47.56
+      },
+      {
+        "w": "yoki",
+        "s": 47.84,
+        "e": 48.08
+      },
+      {
+        "w": "yo'lni",
+        "s": 48.22,
+        "e": 48.5
+      },
+      {
+        "w": "kuzatib",
+        "s": 48.52,
+        "e": 48.86
+      },
+      {
+        "w": "boruvchi",
+        "s": 48.88,
+        "e": 49.22
+      },
+      {
+        "w": "mexanizm",
+        "s": 49.26,
+        "e": 49.74
+      },
+      {
+        "w": "shart.",
+        "s": 49.8,
+        "e": 50.02
+      }
+    ]
+  }
+]

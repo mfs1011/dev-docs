@@ -1,0 +1,31 @@
+WEBVTT
+
+1
+00:01.420 --> 00:11.460
+Window funksiyalar agregatlarga o'xshaydi, ammo eng muhim farqi: qatorlar
+bitta qatorga guruhlanmaydi, balki har bir qator natijada saqlanib qoladi.
+
+2
+00:14.010 --> 00:23.920
+Funksiyani oyna rejimiga o'tkazuvchi kalit OVER bandidir: PARTITION BY qatorlarni
+bo'laklarga ajratsa, ORDER BY har bir bo'lak ichida tartibni belgilaydi.
+
+3
+00:26.730 --> 00:34.730
+Frame joriy qator atrofidagi ko'rish chegarasi bo'lib, sukut bo'yicha
+bo'lak boshidan joriy qatorgacha o'sib boruvchi yig'indini hisoblaydi.
+
+4
+00:37.640 --> 00:46.240
+Tartib raqami uchun row_number, tenglikda oraliq qoldiruvchi rank va
+oraliqsiz davom etuvchi dense_rank funksiyalari keng qo'llaniladi.
+
+5
+00:49.130 --> 00:58.360
+Oldingi va keyingi qator qiymatlarini lag va lead bilan olamiz, first_value
+va last_value esa butun oyna chegarasidagi chekka qiymatlarni topadi.
+
+6
+01:01.270 --> 01:08.830
+Window funksiyalar WHERE va GROUP BY dan keyin bajariladi, shu
+sababli ularni to'g'ridan-to'g'ri WHERE ichida filtrlash taqiqlangan.

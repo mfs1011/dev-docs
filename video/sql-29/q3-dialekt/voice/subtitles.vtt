@@ -1,0 +1,26 @@
+WEBVTT
+
+1
+00:01.420 --> 00:08.370
+MySQL va SQLite tizimlarida CTE sintaksisi va
+optimizatsiyasidagi asosiy farqlarni tahlil qilamiz.
+
+2
+00:10.860 --> 00:19.380
+MySQL da WITH bilan INSERT boshlab bo'lmaydi, lekin UPDATE ichida o'sha
+jadvaldan o'qishdagi ming to'qson uch xatosi CTE bilan ajoyib hal qilinadi.
+
+3
+00:22.430 --> 00:30.150
+SQLite da MATERIALIZED va NOT MATERIALIZED so'zlari bor, ammo ular
+majburiy emas, shunchaki optimizator uchun maslahat hisoblanadi.
+
+4
+00:33.020 --> 00:41.370
+Qiziq jihati: PostgreSQL va MySQL xato bergan oldinga murojaat SQLite
+da jimgina xatosiz ishlab ketadi, ammo bunga tayanmaslik lozim.
+
+5
+00:44.450 --> 00:51.790
+Shuningdek, har ikki tizimda ham CTE ichida DELETE yoki UPDATE
+amallari qo'llab-quvvatlanmaydi: CTE faqat SELECT so'rovlari uchundir.

@@ -1,0 +1,16 @@
+WEBVTT
+
+00:00.000 --> 00:09.890
+Dialektlar: MySQL va SQLite Farqlari
+
+00:09.890 --> 00:21.160
+MySQL: INSERT va UPDATE dagi Xususiyatlar
+
+00:21.160 --> 00:31.718
+SQLite: MATERIALIZED Maslahati
+
+00:31.718 --> 00:43.107
+SQLite: Oldinga Murojaat Xulqi
+
+00:43.107 --> 00:55.720
+O'zgartiruvchi CTE Cheklovlari

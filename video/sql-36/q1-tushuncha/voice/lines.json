@@ -1,0 +1,757 @@
+[
+  {
+    "scene": "kirish",
+    "id": "l1",
+    "text": "PostgreSQL relyatsion imkoniyatlarni kengaytiruvchi massiv, oraliq, domen va kompozit tiplarni taklif etadi.",
+    "show": "PostgreSQL relyatsion imkoniyatlarni kengaytiruvchi massiv, oraliq, domen va kompozit tiplarni taklif etadi.",
+    "say": "Postgres relyatsion imkoniyatlarni kengaytiruvchi massiv, oraliq, domen va kompozit tiplarni taklif etadi.",
+    "a0": 0.26,
+    "a1": 7,
+    "words": [
+      {
+        "w": "Postgres",
+        "s": 0.26,
+        "e": 0.84
+      },
+      {
+        "w": "relyatsion",
+        "s": 1.12,
+        "e": 1.56
+      },
+      {
+        "w": "imkoniyatlarni",
+        "s": 1.62,
+        "e": 2.28
+      },
+      {
+        "w": "kengaytiruvchi",
+        "s": 2.34,
+        "e": 3.02
+      },
+      {
+        "w": "massiv,",
+        "s": 3.1,
+        "e": 3.62
+      },
+      {
+        "w": "oraliq,",
+        "s": 4,
+        "e": 4.48
+      },
+      {
+        "w": "domen",
+        "s": 4.78,
+        "e": 5.12
+      },
+      {
+        "w": "va",
+        "s": 5.24,
+        "e": 5.32
+      },
+      {
+        "w": "kompozit",
+        "s": 5.5,
+        "e": 5.96
+      },
+      {
+        "w": "tiplarni",
+        "s": 6,
+        "e": 6.4
+      },
+      {
+        "w": "taklif",
+        "s": 6.44,
+        "e": 6.74
+      },
+      {
+        "w": "etadi.",
+        "s": 6.78,
+        "e": 7
+      }
+    ]
+  },
+  {
+    "scene": "kirish",
+    "id": "l2",
+    "text": "Bular dinamik ro'yxatlar, vaqt davrlari va maxsus biznes qoidalarini aniq ifodalashga yordam beradi.",
+    "show": "Bular dinamik ro'yxatlar, vaqt davrlari va maxsus biznes qoidalarini aniq ifodalashga yordam beradi.",
+    "say": "Bular dinamik ro'yxatlar, vaqt davrlari va maxsus biznes qoidalarini aniq ifodalashga yordam beradi.",
+    "a0": 7.63,
+    "a1": 14.21,
+    "words": [
+      {
+        "w": "Bular",
+        "s": 7.63,
+        "e": 7.91
+      },
+      {
+        "w": "dinamik",
+        "s": 8.17,
+        "e": 8.55
+      },
+      {
+        "w": "ro'yxatlar,",
+        "s": 8.59,
+        "e": 9.15
+      },
+      {
+        "w": "vaqt",
+        "s": 9.63,
+        "e": 9.87
+      },
+      {
+        "w": "davrlari",
+        "s": 9.95,
+        "e": 10.47
+      },
+      {
+        "w": "va",
+        "s": 10.91,
+        "e": 10.97
+      },
+      {
+        "w": "maxsus",
+        "s": 11.15,
+        "e": 11.49
+      },
+      {
+        "w": "biznes",
+        "s": 11.59,
+        "e": 11.91
+      },
+      {
+        "w": "qoidalarini",
+        "s": 11.97,
+        "e": 12.49
+      },
+      {
+        "w": "aniq",
+        "s": 12.69,
+        "e": 12.93
+      },
+      {
+        "w": "ifodalashga",
+        "s": 13.01,
+        "e": 13.57
+      },
+      {
+        "w": "yordam",
+        "s": 13.61,
+        "e": 13.89
+      },
+      {
+        "w": "beradi.",
+        "s": 13.93,
+        "e": 14.21
+      }
+    ]
+  },
+  {
+    "scene": "massivlar",
+    "id": "l3",
+    "text": "Massiv indekslari birdan boshlanadi, e'lon qilingan o'lcham esa ma'lumotlar bazasi tomonidan qat'iy cheklanmaydi.",
+    "show": "Massiv indekslari birdan boshlanadi, e'lon qilingan o'lcham esa ma'lumotlar bazasi tomonidan qat'iy cheklanmaydi.",
+    "say": "Massiv indekslari birdan boshlanadi, e'lon qilingan o'lcham esa ma'lumotlar bazasi tomonidan qat'iy cheklanmaydi.",
+    "a0": 14.87,
+    "a1": 21.25,
+    "words": [
+      {
+        "w": "Massiv",
+        "s": 14.87,
+        "e": 15.19
+      },
+      {
+        "w": "indekslari",
+        "s": 15.25,
+        "e": 15.75
+      },
+      {
+        "w": "birdan",
+        "s": 15.95,
+        "e": 16.25
+      },
+      {
+        "w": "boshlanadi,",
+        "s": 16.31,
+        "e": 16.75
+      },
+      {
+        "w": "e'lon",
+        "s": 17.29,
+        "e": 17.51
+      },
+      {
+        "w": "qilingan",
+        "s": 17.53,
+        "e": 17.85
+      },
+      {
+        "w": "o'lcham",
+        "s": 17.93,
+        "e": 18.21
+      },
+      {
+        "w": "esa",
+        "s": 18.25,
+        "e": 18.43
+      },
+      {
+        "w": "ma'lumotlar",
+        "s": 18.69,
+        "e": 19.19
+      },
+      {
+        "w": "bazasi",
+        "s": 19.27,
+        "e": 19.63
+      },
+      {
+        "w": "tomonidan",
+        "s": 19.67,
+        "e": 20.09
+      },
+      {
+        "w": "qat'iy",
+        "s": 20.23,
+        "e": 20.59
+      },
+      {
+        "w": "cheklanmaydi.",
+        "s": 20.67,
+        "e": 21.25
+      }
+    ]
+  },
+  {
+    "scene": "massivlar",
+    "id": "l4",
+    "text": "Massiv to'plam emas, shuning uchun tez-tez qidiriladigan maydonlar uchun alohida relyatsion jadval tavsiya etiladi.",
+    "show": "Massiv to'plam emas, shuning uchun tez-tez qidiriladigan maydonlar uchun alohida relyatsion jadval tavsiya etiladi.",
+    "say": "Massiv to'plam emas, shuning uchun tez-tez qidiriladigan maydonlar uchun alohida relyatsion jadval tavsiya etiladi.",
+    "a0": 21.87,
+    "a1": 27.58,
+    "words": [
+      {
+        "w": "Massiv",
+        "s": 21.87,
+        "e": 22.23
+      },
+      {
+        "w": "to'plam",
+        "s": 22.41,
+        "e": 22.76
+      },
+      {
+        "w": "emas,",
+        "s": 22.84,
+        "e": 23.08
+      },
+      {
+        "w": "shuning",
+        "s": 23.22,
+        "e": 23.44
+      },
+      {
+        "w": "uchun",
+        "s": 23.46,
+        "e": 23.64
+      },
+      {
+        "w": "tez-tez",
+        "s": 23.88,
+        "e": 24.26
+      },
+      {
+        "w": "qidiriladigan",
+        "s": 24.3,
+        "e": 24.78
+      },
+      {
+        "w": "maydonlar",
+        "s": 24.82,
+        "e": 25.26
+      },
+      {
+        "w": "uchun",
+        "s": 25.3,
+        "e": 25.5
+      },
+      {
+        "w": "alohida",
+        "s": 25.68,
+        "e": 26.08
+      },
+      {
+        "w": "relyatsion",
+        "s": 26.14,
+        "e": 26.56
+      },
+      {
+        "w": "jadval",
+        "s": 26.62,
+        "e": 26.96
+      },
+      {
+        "w": "tavsiya",
+        "s": 27,
+        "e": 27.26
+      },
+      {
+        "w": "etiladi.",
+        "s": 27.28,
+        "e": 27.58
+      }
+    ]
+  },
+  {
+    "scene": "range_tiplari",
+    "id": "l5",
+    "text": "Oraliq tiplari qiymatlar chegarasini saqlaydi va diskret tiplarda avtomatik yarim ochiq kanonik shaklga keltiriladi.",
+    "show": "Oraliq tiplari qiymatlar chegarasini saqlaydi va diskret tiplarda avtomatik yarim ochiq kanonik shaklga keltiriladi.",
+    "say": "Oraliq tiplari qiymatlar chegarasini saqlaydi va diskret tiplarda avtomatik yarim ochiq kanonik shaklga keltiriladi.",
+    "a0": 28.26,
+    "a1": 34.76,
+    "words": [
+      {
+        "w": "Oraliq",
+        "s": 28.26,
+        "e": 28.54
+      },
+      {
+        "w": "tiplari",
+        "s": 28.58,
+        "e": 28.92
+      },
+      {
+        "w": "qiymatlar",
+        "s": 29.2,
+        "e": 29.6
+      },
+      {
+        "w": "chegarasini",
+        "s": 29.66,
+        "e": 30.14
+      },
+      {
+        "w": "saqlaydi",
+        "s": 30.18,
+        "e": 30.6
+      },
+      {
+        "w": "va",
+        "s": 30.98,
+        "e": 31.06
+      },
+      {
+        "w": "diskret",
+        "s": 31.28,
+        "e": 31.72
+      },
+      {
+        "w": "tiplarda",
+        "s": 31.76,
+        "e": 32.16
+      },
+      {
+        "w": "avtomatik",
+        "s": 32.24,
+        "e": 32.76
+      },
+      {
+        "w": "yarim",
+        "s": 32.92,
+        "e": 33.16
+      },
+      {
+        "w": "ochiq",
+        "s": 33.2,
+        "e": 33.4
+      },
+      {
+        "w": "kanonik",
+        "s": 33.5,
+        "e": 33.86
+      },
+      {
+        "w": "shaklga",
+        "s": 33.88,
+        "e": 34.24
+      },
+      {
+        "w": "keltiriladi.",
+        "s": 34.28,
+        "e": 34.76
+      }
+    ]
+  },
+  {
+    "scene": "range_tiplari",
+    "id": "l6",
+    "text": "Kuchukcha-katta operatori oraliq ichidaligini, ikkita ampersand esa ikki oraliq kesishishini tekshiradi.",
+    "show": "Kuchukcha-katta operatori oraliq ichidaligini, ikkita ampersand esa ikki oraliq kesishishini tekshiradi.",
+    "say": "Kuchukcha-katta operatori oraliq ichidaligini, ikkita ampersand esa ikki oraliq kesishishini tekshiradi.",
+    "a0": 35.46,
+    "a1": 41.51,
+    "words": [
+      {
+        "w": "Kuchukcha-katta",
+        "s": 35.46,
+        "e": 36.14
+      },
+      {
+        "w": "operatori",
+        "s": 36.24,
+        "e": 36.74
+      },
+      {
+        "w": "oraliq",
+        "s": 37.02,
+        "e": 37.38
+      },
+      {
+        "w": "ichidaligini,",
+        "s": 37.46,
+        "e": 38.07
+      },
+      {
+        "w": "ikkita",
+        "s": 38.51,
+        "e": 38.77
+      },
+      {
+        "w": "ampersand",
+        "s": 38.93,
+        "e": 39.41
+      },
+      {
+        "w": "esa",
+        "s": 39.47,
+        "e": 39.63
+      },
+      {
+        "w": "ikki",
+        "s": 39.87,
+        "e": 40.09
+      },
+      {
+        "w": "oraliq",
+        "s": 40.15,
+        "e": 40.43
+      },
+      {
+        "w": "kesishishini",
+        "s": 40.49,
+        "e": 41.01
+      },
+      {
+        "w": "tekshiradi.",
+        "s": 41.05,
+        "e": 41.51
+      }
+    ]
+  },
+  {
+    "scene": "exclusion_constraint",
+    "id": "l7",
+    "text": "Vaqt oraliqlarida unikallik emas, balki kesishmaslik talab qilingani uchun istisno cheklovi qo'llaniladi.",
+    "show": "Vaqt oraliqlarida unikallik emas, balki kesishmaslik talab qilingani uchun istisno cheklovi qo'llaniladi.",
+    "say": "Vaqt oraliqlarida unikallik emas, balki kesishmaslik talab qilingani uchun istisno cheklovi qo'llaniladi.",
+    "a0": 42.17,
+    "a1": 48.11,
+    "words": [
+      {
+        "w": "Vaqt",
+        "s": 42.17,
+        "e": 42.41
+      },
+      {
+        "w": "oraliqlarida",
+        "s": 42.49,
+        "e": 43.05
+      },
+      {
+        "w": "unikallik",
+        "s": 43.27,
+        "e": 43.77
+      },
+      {
+        "w": "emas,",
+        "s": 43.85,
+        "e": 44.11
+      },
+      {
+        "w": "balki",
+        "s": 44.25,
+        "e": 44.53
+      },
+      {
+        "w": "kesishmaslik",
+        "s": 44.75,
+        "e": 45.41
+      },
+      {
+        "w": "talab",
+        "s": 45.45,
+        "e": 45.67
+      },
+      {
+        "w": "qilingani",
+        "s": 45.71,
+        "e": 46.07
+      },
+      {
+        "w": "uchun",
+        "s": 46.13,
+        "e": 46.31
+      },
+      {
+        "w": "istisno",
+        "s": 46.67,
+        "e": 47.05
+      },
+      {
+        "w": "cheklovi",
+        "s": 47.11,
+        "e": 47.53
+      },
+      {
+        "w": "qo'llaniladi.",
+        "s": 47.57,
+        "e": 48.11
+      }
+    ]
+  },
+  {
+    "scene": "exclusion_constraint",
+    "id": "l8",
+    "text": "Gist indeksi yordamida mehmonxona yoki uchrashuv xonalari bir vaqtda qayta band qilinishining oldi olinadi.",
+    "show": "Gist indeksi yordamida mehmonxona yoki uchrashuv xonalari bir vaqtda qayta band qilinishining oldi olinadi.",
+    "say": "Jist indeksi yordamida mehmonxona yoki uchrashuv xonalari bir vaqtda qayta band qilinishining oldi olinadi.",
+    "a0": 48.83,
+    "a1": 54.56,
+    "words": [
+      {
+        "w": "Jist",
+        "s": 48.83,
+        "e": 49.07
+      },
+      {
+        "w": "indeksi",
+        "s": 49.15,
+        "e": 49.49
+      },
+      {
+        "w": "yordamida",
+        "s": 49.49,
+        "e": 49.99
+      },
+      {
+        "w": "mehmonxona",
+        "s": 50.21,
+        "e": 50.77
+      },
+      {
+        "w": "yoki",
+        "s": 50.77,
+        "e": 51.15
+      },
+      {
+        "w": "uchrashuv",
+        "s": 51.29,
+        "e": 51.69
+      },
+      {
+        "w": "xonalari",
+        "s": 51.73,
+        "e": 52.13
+      },
+      {
+        "w": "bir",
+        "s": 52.37,
+        "e": 52.49
+      },
+      {
+        "w": "vaqtda",
+        "s": 52.56,
+        "e": 52.86
+      },
+      {
+        "w": "qayta",
+        "s": 52.92,
+        "e": 53.16
+      },
+      {
+        "w": "band",
+        "s": 53.2,
+        "e": 53.36
+      },
+      {
+        "w": "qilinishining",
+        "s": 53.38,
+        "e": 53.88
+      },
+      {
+        "w": "oldi",
+        "s": 54,
+        "e": 54.18
+      },
+      {
+        "w": "olinadi.",
+        "s": 54.22,
+        "e": 54.56
+      }
+    ]
+  },
+  {
+    "scene": "domain_va_composite",
+    "id": "l9",
+    "text": "Domen mavjud tipga cheklov qo'shib, butun loyiha bo'ylab qayta ishlatiladigan xavfsiz tip yaratadi.",
+    "show": "Domen mavjud tipga cheklov qo'shib, butun loyiha bo'ylab qayta ishlatiladigan xavfsiz tip yaratadi.",
+    "say": "Domen mavjud tipga cheklov qo'shib, butun loyiha bo'ylab qayta ishlatiladigan xavfsiz tip yaratadi.",
+    "a0": 55.2,
+    "a1": 60.28,
+    "words": [
+      {
+        "w": "Domen",
+        "s": 55.2,
+        "e": 55.52
+      },
+      {
+        "w": "mavjud",
+        "s": 55.76,
+        "e": 56.06
+      },
+      {
+        "w": "tipga",
+        "s": 56.1,
+        "e": 56.32
+      },
+      {
+        "w": "cheklov",
+        "s": 56.38,
+        "e": 56.72
+      },
+      {
+        "w": "qo'shib,",
+        "s": 56.78,
+        "e": 57.06
+      },
+      {
+        "w": "butun",
+        "s": 57.28,
+        "e": 57.54
+      },
+      {
+        "w": "loyiha",
+        "s": 57.6,
+        "e": 57.9
+      },
+      {
+        "w": "bo'ylab",
+        "s": 57.96,
+        "e": 58.22
+      },
+      {
+        "w": "qayta",
+        "s": 58.26,
+        "e": 58.5
+      },
+      {
+        "w": "ishlatiladigan",
+        "s": 58.54,
+        "e": 59.14
+      },
+      {
+        "w": "xavfsiz",
+        "s": 59.28,
+        "e": 59.64
+      },
+      {
+        "w": "tip",
+        "s": 59.7,
+        "e": 59.86
+      },
+      {
+        "w": "yaratadi.",
+        "s": 59.9,
+        "e": 60.28
+      }
+    ]
+  },
+  {
+    "scene": "domain_va_composite",
+    "id": "l10",
+    "text": "Kompozit tip esa bir nechta maydonli yozuv tuzilmasini bitta ustunda jamlash imkonini beradi.",
+    "show": "Kompozit tip esa bir nechta maydonli yozuv tuzilmasini bitta ustunda jamlash imkonini beradi.",
+    "say": "Kompozit tip esa bir nechta maydonli yozuv tuzilmasini bitta ustunda jamlash imkonini beradi.",
+    "a0": 60.9,
+    "a1": 65.96,
+    "words": [
+      {
+        "w": "Kompozit",
+        "s": 60.9,
+        "e": 61.34
+      },
+      {
+        "w": "tip",
+        "s": 61.38,
+        "e": 61.54
+      },
+      {
+        "w": "esa",
+        "s": 61.59,
+        "e": 61.77
+      },
+      {
+        "w": "bir",
+        "s": 62.05,
+        "e": 62.17
+      },
+      {
+        "w": "nechta",
+        "s": 62.21,
+        "e": 62.45
+      },
+      {
+        "w": "maydonli",
+        "s": 62.51,
+        "e": 62.93
+      },
+      {
+        "w": "yozuv",
+        "s": 62.93,
+        "e": 63.25
+      },
+      {
+        "w": "tuzilmasini",
+        "s": 63.29,
+        "e": 63.83
+      },
+      {
+        "w": "bitta",
+        "s": 64.05,
+        "e": 64.31
+      },
+      {
+        "w": "ustunda",
+        "s": 64.39,
+        "e": 64.8
+      },
+      {
+        "w": "jamlash",
+        "s": 64.84,
+        "e": 65.2
+      },
+      {
+        "w": "imkonini",
+        "s": 65.26,
+        "e": 65.66
+      },
+      {
+        "w": "beradi.",
+        "s": 65.68,
+        "e": 65.96
+      }
+    ]
+  }
+]

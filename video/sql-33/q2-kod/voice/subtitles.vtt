@@ -1,0 +1,26 @@
+WEBVTT
+
+1
+00:01.420 --> 00:10.820
+Odamlar jadvalida ism va familiyani birlashtiramiz, otasining ismi
+NULL bo'lganda concat_ws yordamida toza to'liq ism hosil qilamiz.
+
+2
+00:13.730 --> 00:22.420
+Oʻgʻiloy ismida tutuq belgilari tufayli sakkiz belgi o'n baytni tashkil
+etadi, trim bilan bo'shliqlarni olib, emailni kichik harfga keltiramiz.
+
+3
+00:25.390 --> 00:33.530
+Substring va left yordamida familiya boshini kesib olamiz,
+split_part esa kuchukcha belgisi bo'yicha email domenini ajratadi.
+
+4
+00:36.640 --> 00:44.720
+Tizimda hisob raqami yoki shaxsiy kod yasash uchun lpad funksiyasi
+yordamida identifikatorni besh xonali nollar bilan to'ldiramiz.
+
+5
+00:47.790 --> 00:55.430
+Regex almashtirish orqali telefon raqamidagi barcha bo'shliq va
+chiziqchalarni tozalab, sof o'n ikki xonali raqamlar qatorini olamiz.

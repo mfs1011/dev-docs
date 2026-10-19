@@ -1,0 +1,749 @@
+[
+  {
+    "id": "intro",
+    "scene": "kirish",
+    "text": "SQL da set amallari ikki so'rov natijasini bitta natijaga birlashtiradi. JOIN ustunlar bo'yicha yonma-yon qo'shsa, set amallari qatorlar bo'yicha ustma-ust qo'shadi.",
+    "show": "SQL da set amallari ikki so'rov natijasini bitta natijaga birlashtiradi. JOIN ustunlar bo'yicha yonma-yon qo'shsa, set amallari qatorlar bo'yicha ustma-ust qo'shadi.",
+    "say": "Es-kyu-el da set amallari ikki so'rov natijasini bitta natijaga birlashtiradi. Joyn ustunlar bo'yicha yonma-yon qo'shsa, set amallari qatorlar bo'yicha ustma-ust qo'shadi.",
+    "a0": 0.1,
+    "a1": 10.61,
+    "words": [
+      {
+        "w": "Es-kyu-el",
+        "s": 0.1,
+        "e": 0.48
+      },
+      {
+        "w": "da",
+        "s": 0.52,
+        "e": 0.62
+      },
+      {
+        "w": "set",
+        "s": 0.88,
+        "e": 1.06
+      },
+      {
+        "w": "amallari",
+        "s": 1.18,
+        "e": 1.7
+      },
+      {
+        "w": "ikki",
+        "s": 2.02,
+        "e": 2.24
+      },
+      {
+        "w": "so'rov",
+        "s": 2.3,
+        "e": 2.56
+      },
+      {
+        "w": "natijasini",
+        "s": 2.6,
+        "e": 3.22
+      },
+      {
+        "w": "bitta",
+        "s": 3.36,
+        "e": 3.62
+      },
+      {
+        "w": "natijaga",
+        "s": 3.68,
+        "e": 4.14
+      },
+      {
+        "w": "birlashtiradi.",
+        "s": 4.18,
+        "e": 4.74
+      },
+      {
+        "w": "Joyn",
+        "s": 5.54,
+        "e": 5.84
+      },
+      {
+        "w": "ustunlar",
+        "s": 5.94,
+        "e": 6.36
+      },
+      {
+        "w": "bo'yicha",
+        "s": 6.4,
+        "e": 6.68
+      },
+      {
+        "w": "yonma-yon",
+        "s": 6.82,
+        "e": 7.22
+      },
+      {
+        "w": "qo'shsa,",
+        "s": 7.26,
+        "e": 7.59
+      },
+      {
+        "w": "set",
+        "s": 7.91,
+        "e": 8.09
+      },
+      {
+        "w": "amallari",
+        "s": 8.15,
+        "e": 8.63
+      },
+      {
+        "w": "qatorlar",
+        "s": 8.77,
+        "e": 9.27
+      },
+      {
+        "w": "bo'yicha",
+        "s": 9.31,
+        "e": 9.61
+      },
+      {
+        "w": "ustma-ust",
+        "s": 9.79,
+        "e": 10.21
+      },
+      {
+        "w": "qo'shadi.",
+        "s": 10.25,
+        "e": 10.61
+      }
+    ]
+  },
+  {
+    "id": "uch_amal",
+    "scene": "uch_amal",
+    "text": "Uchta asosiy amal mavjud: UNION barcha qatorlarni birlashtiradi, INTERSECT umumiy kesishmani oladi, EXCEPT esa birinchi natijadan ikkinchisini ayirib tashlaydi.",
+    "show": "Uchta asosiy amal mavjud: UNION barcha qatorlarni birlashtiradi, INTERSECT umumiy kesishmani oladi, EXCEPT esa birinchi natijadan ikkinchisini ayirib tashlaydi.",
+    "say": "Uchta asosiy amal mavjud: yunion barcha qatorlarni birlashtiradi, intersekt umumiy kesishmani oladi, eksept esa birinchi natijadan ikkinchisini ayirib tashlaydi.",
+    "a0": 11.71,
+    "a1": 21.77,
+    "words": [
+      {
+        "w": "Uchta",
+        "s": 11.71,
+        "e": 11.95
+      },
+      {
+        "w": "asosiy",
+        "s": 12.01,
+        "e": 12.37
+      },
+      {
+        "w": "amal",
+        "s": 12.47,
+        "e": 12.69
+      },
+      {
+        "w": "mavjud:",
+        "s": 12.73,
+        "e": 13.03
+      },
+      {
+        "w": "yunion",
+        "s": 13.61,
+        "e": 13.99
+      },
+      {
+        "w": "barcha",
+        "s": 14.21,
+        "e": 14.49
+      },
+      {
+        "w": "qatorlarni",
+        "s": 14.53,
+        "e": 15.07
+      },
+      {
+        "w": "birlashtiradi,",
+        "s": 15.09,
+        "e": 15.67
+      },
+      {
+        "w": "intersekt",
+        "s": 16.25,
+        "e": 16.79
+      },
+      {
+        "w": "umumiy",
+        "s": 16.99,
+        "e": 17.31
+      },
+      {
+        "w": "kesishmani",
+        "s": 17.39,
+        "e": 17.89
+      },
+      {
+        "w": "oladi,",
+        "s": 17.95,
+        "e": 18.21
+      },
+      {
+        "w": "eksept",
+        "s": 18.75,
+        "e": 19.07
+      },
+      {
+        "w": "esa",
+        "s": 19.13,
+        "e": 19.31
+      },
+      {
+        "w": "birinchi",
+        "s": 19.51,
+        "e": 19.83
+      },
+      {
+        "w": "natijadan",
+        "s": 19.87,
+        "e": 20.37
+      },
+      {
+        "w": "ikkinchisini",
+        "s": 20.49,
+        "e": 21.03
+      },
+      {
+        "w": "ayirib",
+        "s": 21.11,
+        "e": 21.35
+      },
+      {
+        "w": "tashlaydi.",
+        "s": 21.37,
+        "e": 21.77
+      }
+    ]
+  },
+  {
+    "id": "takrorlar",
+    "scene": "takrorlar_va_all",
+    "text": "Sukut bo'yicha bu amallar takror qatorlarni olib tashlaydi. Agar ALL kalit so'zi qo'shilsa, barcha takrorlar matematik aniqlikda saqlanib qoladi.",
+    "show": "Sukut bo'yicha bu amallar takror qatorlarni olib tashlaydi. Agar ALL kalit so'zi qo'shilsa, barcha takrorlar matematik aniqlikda saqlanib qoladi.",
+    "say": "Sukut bo'yicha bu amallar takror qatorlarni olib tashlaydi. Agar oll kalit so'zi qo'shilsa, barcha takrorlar matematik aniqlikda saqlanib qoladi.",
+    "a0": 22.56,
+    "a1": 30.8,
+    "words": [
+      {
+        "w": "Sukut",
+        "s": 22.56,
+        "e": 22.82
+      },
+      {
+        "w": "bo'yicha",
+        "s": 22.88,
+        "e": 23.2
+      },
+      {
+        "w": "bu",
+        "s": 23.32,
+        "e": 23.38
+      },
+      {
+        "w": "amallar",
+        "s": 23.46,
+        "e": 23.86
+      },
+      {
+        "w": "takror",
+        "s": 23.96,
+        "e": 24.3
+      },
+      {
+        "w": "qatorlarni",
+        "s": 24.34,
+        "e": 24.88
+      },
+      {
+        "w": "olib",
+        "s": 24.96,
+        "e": 25.12
+      },
+      {
+        "w": "tashlaydi.",
+        "s": 25.16,
+        "e": 25.56
+      },
+      {
+        "w": "Agar",
+        "s": 25.92,
+        "e": 26.16
+      },
+      {
+        "w": "oll",
+        "s": 26.54,
+        "e": 26.7
+      },
+      {
+        "w": "kalit",
+        "s": 26.78,
+        "e": 27.04
+      },
+      {
+        "w": "so'zi",
+        "s": 27.06,
+        "e": 27.26
+      },
+      {
+        "w": "qo'shilsa,",
+        "s": 27.3,
+        "e": 27.72
+      },
+      {
+        "w": "barcha",
+        "s": 28.12,
+        "e": 28.4
+      },
+      {
+        "w": "takrorlar",
+        "s": 28.44,
+        "e": 28.9
+      },
+      {
+        "w": "matematik",
+        "s": 29.02,
+        "e": 29.52
+      },
+      {
+        "w": "aniqlikda",
+        "s": 29.66,
+        "e": 30.08
+      },
+      {
+        "w": "saqlanib",
+        "s": 30.14,
+        "e": 30.5
+      },
+      {
+        "w": "qoladi.",
+        "s": 30.52,
+        "e": 30.8
+      }
+    ]
+  },
+  {
+    "id": "null_takror",
+    "scene": "takrorlar_va_all",
+    "text": "Set amallarida NULL qiymatlar teng deb hisoblanadi va takror deb topilib, bittasi qoldiriladi.",
+    "show": "Set amallarida NULL qiymatlar teng deb hisoblanadi va takror deb topilib, bittasi qoldiriladi.",
+    "say": "Set amallarida null qiymatlar teng deb hisoblanadi va takror deb topilib, bittasi qoldiriladi.",
+    "a0": 31.7,
+    "a1": 36.76,
+    "words": [
+      {
+        "w": "Set",
+        "s": 31.7,
+        "e": 31.88
+      },
+      {
+        "w": "amallarida",
+        "s": 31.9,
+        "e": 32.42
+      },
+      {
+        "w": "null",
+        "s": 32.72,
+        "e": 32.92
+      },
+      {
+        "w": "qiymatlar",
+        "s": 32.98,
+        "e": 33.44
+      },
+      {
+        "w": "teng",
+        "s": 33.56,
+        "e": 33.78
+      },
+      {
+        "w": "deb",
+        "s": 33.8,
+        "e": 33.92
+      },
+      {
+        "w": "hisoblanadi",
+        "s": 33.96,
+        "e": 34.46
+      },
+      {
+        "w": "va",
+        "s": 34.5,
+        "e": 34.56
+      },
+      {
+        "w": "takror",
+        "s": 34.86,
+        "e": 35.2
+      },
+      {
+        "w": "deb",
+        "s": 35.24,
+        "e": 35.38
+      },
+      {
+        "w": "topilib,",
+        "s": 35.4,
+        "e": 35.74
+      },
+      {
+        "w": "bittasi",
+        "s": 35.82,
+        "e": 36.2
+      },
+      {
+        "w": "qoldiriladi.",
+        "s": 36.24,
+        "e": 36.76
+      }
+    ]
+  },
+  {
+    "id": "moslik",
+    "scene": "moslik_va_ustuvorlik",
+    "text": "Ikki so'rov mos bo'lishi shart: ustunlar soni bir xil va tiplari bir-biriga to'g'ri kelishi kerak. Natija ustunlarining nomlari esa har doim birinchi so'rovdan olinadi.",
+    "show": "Ikki so'rov mos bo'lishi shart: ustunlar soni bir xil va tiplari bir-biriga to'g'ri kelishi kerak. Natija ustunlarining nomlari esa har doim birinchi so'rovdan olinadi.",
+    "say": "Ikki so'rov mos bo'lishi shart: ustunlar soni bir xil va tiplari bir-biriga to'g'ri kelishi kerak. Natija ustunlarining nomlari esa har doim birinchi so'rovdan olinadi.",
+    "a0": 37.67,
+    "a1": 46.37,
+    "words": [
+      {
+        "w": "Ikki",
+        "s": 37.67,
+        "e": 37.85
+      },
+      {
+        "w": "so'rov",
+        "s": 37.89,
+        "e": 38.13
+      },
+      {
+        "w": "mos",
+        "s": 38.23,
+        "e": 38.43
+      },
+      {
+        "w": "bo'lishi",
+        "s": 38.47,
+        "e": 38.77
+      },
+      {
+        "w": "shart:",
+        "s": 38.85,
+        "e": 39.13
+      },
+      {
+        "w": "ustunlar",
+        "s": 39.45,
+        "e": 39.87
+      },
+      {
+        "w": "soni",
+        "s": 39.93,
+        "e": 40.17
+      },
+      {
+        "w": "bir",
+        "s": 40.27,
+        "e": 40.37
+      },
+      {
+        "w": "xil",
+        "s": 40.43,
+        "e": 40.57
+      },
+      {
+        "w": "va",
+        "s": 40.65,
+        "e": 40.71
+      },
+      {
+        "w": "tiplari",
+        "s": 40.83,
+        "e": 41.21
+      },
+      {
+        "w": "bir-biriga",
+        "s": 41.29,
+        "e": 41.65
+      },
+      {
+        "w": "to'g'ri",
+        "s": 41.73,
+        "e": 42.01
+      },
+      {
+        "w": "kelishi",
+        "s": 42.05,
+        "e": 42.33
+      },
+      {
+        "w": "kerak.",
+        "s": 42.35,
+        "e": 42.59
+      },
+      {
+        "w": "Natija",
+        "s": 43.07,
+        "e": 43.39
+      },
+      {
+        "w": "ustunlarining",
+        "s": 43.45,
+        "e": 43.99
+      },
+      {
+        "w": "nomlari",
+        "s": 44.03,
+        "e": 44.37
+      },
+      {
+        "w": "esa",
+        "s": 44.41,
+        "e": 44.55
+      },
+      {
+        "w": "har",
+        "s": 44.65,
+        "e": 44.83
+      },
+      {
+        "w": "doim",
+        "s": 44.87,
+        "e": 45.13
+      },
+      {
+        "w": "birinchi",
+        "s": 45.21,
+        "e": 45.51
+      },
+      {
+        "w": "so'rovdan",
+        "s": 45.57,
+        "e": 45.97
+      },
+      {
+        "w": "olinadi.",
+        "s": 46.03,
+        "e": 46.37
+      }
+    ]
+  },
+  {
+    "id": "ustuvorlik",
+    "scene": "moslik_va_ustuvorlik",
+    "text": "Matematik ustuvorlikka ko'ra, INTERSECT amali har doim UNION va EXCEPT dan avval bajariladi. EXCEPT esa o'rin almashtirishga chidamsizdir.",
+    "show": "Matematik ustuvorlikka ko'ra, INTERSECT amali har doim UNION va EXCEPT dan avval bajariladi. EXCEPT esa o'rin almashtirishga chidamsizdir.",
+    "say": "Matematik ustuvorlikka ko'ra, intersekt amali har doim yunion va eksept dan avval bajariladi. Eksept esa o'rin almashtirishga chidamsizdir.",
+    "a0": 47.15,
+    "a1": 55.34,
+    "words": [
+      {
+        "w": "Matematik",
+        "s": 47.15,
+        "e": 47.63
+      },
+      {
+        "w": "ustuvorlikka",
+        "s": 47.69,
+        "e": 48.25
+      },
+      {
+        "w": "ko'ra,",
+        "s": 48.31,
+        "e": 48.53
+      },
+      {
+        "w": "intersekt",
+        "s": 48.91,
+        "e": 49.43
+      },
+      {
+        "w": "amali",
+        "s": 49.45,
+        "e": 49.73
+      },
+      {
+        "w": "har",
+        "s": 49.81,
+        "e": 49.97
+      },
+      {
+        "w": "doim",
+        "s": 50.03,
+        "e": 50.29
+      },
+      {
+        "w": "yunion",
+        "s": 50.63,
+        "e": 51.03
+      },
+      {
+        "w": "va",
+        "s": 51.09,
+        "e": 51.17
+      },
+      {
+        "w": "eksept",
+        "s": 51.31,
+        "e": 51.63
+      },
+      {
+        "w": "dan",
+        "s": 51.67,
+        "e": 51.81
+      },
+      {
+        "w": "avval",
+        "s": 51.93,
+        "e": 52.21
+      },
+      {
+        "w": "bajariladi.",
+        "s": 52.25,
+        "e": 52.78
+      },
+      {
+        "w": "Eksept",
+        "s": 53.26,
+        "e": 53.56
+      },
+      {
+        "w": "esa",
+        "s": 53.62,
+        "e": 53.76
+      },
+      {
+        "w": "o'rin",
+        "s": 53.94,
+        "e": 54.14
+      },
+      {
+        "w": "almashtirishga",
+        "s": 54.18,
+        "e": 54.72
+      },
+      {
+        "w": "chidamsizdir.",
+        "s": 54.78,
+        "e": 55.34
+      }
+    ]
+  },
+  {
+    "id": "order_limit",
+    "scene": "tartiblash_va_limit",
+    "text": "Oxirdagi ORDER BY va LIMIT butun birlashgan natijaga tegishli bo'ladi. Alohida qismga cheklov berish uchun shu qism qavsga olinishi lozim.",
+    "show": "Oxirdagi ORDER BY va LIMIT butun birlashgan natijaga tegishli bo'ladi. Alohida qismga cheklov berish uchun shu qism qavsga olinishi lozim.",
+    "say": "Oxirdagi order bay va limit butun birlashgan natijaga tegishli bo'ladi. Alohida qismga cheklov berish uchun shu qism qavsga olinishi lozim.",
+    "a0": 56.18,
+    "a1": 64.2,
+    "words": [
+      {
+        "w": "Oxirdagi",
+        "s": 56.18,
+        "e": 56.68
+      },
+      {
+        "w": "order",
+        "s": 56.9,
+        "e": 57.18
+      },
+      {
+        "w": "bay",
+        "s": 57.28,
+        "e": 57.48
+      },
+      {
+        "w": "va",
+        "s": 57.56,
+        "e": 57.64
+      },
+      {
+        "w": "limit",
+        "s": 57.88,
+        "e": 58.22
+      },
+      {
+        "w": "butun",
+        "s": 58.4,
+        "e": 58.66
+      },
+      {
+        "w": "birlashgan",
+        "s": 58.72,
+        "e": 59.2
+      },
+      {
+        "w": "natijaga",
+        "s": 59.26,
+        "e": 59.68
+      },
+      {
+        "w": "tegishli",
+        "s": 59.7,
+        "e": 59.98
+      },
+      {
+        "w": "bo'ladi.",
+        "s": 60.06,
+        "e": 60.34
+      },
+      {
+        "w": "Alohida",
+        "s": 60.78,
+        "e": 61.13
+      },
+      {
+        "w": "qismga",
+        "s": 61.17,
+        "e": 61.47
+      },
+      {
+        "w": "cheklov",
+        "s": 61.51,
+        "e": 61.79
+      },
+      {
+        "w": "berish",
+        "s": 61.85,
+        "e": 62.09
+      },
+      {
+        "w": "uchun",
+        "s": 62.11,
+        "e": 62.31
+      },
+      {
+        "w": "shu",
+        "s": 62.61,
+        "e": 62.71
+      },
+      {
+        "w": "qism",
+        "s": 62.85,
+        "e": 63.11
+      },
+      {
+        "w": "qavsga",
+        "s": 63.21,
+        "e": 63.56
+      },
+      {
+        "w": "olinishi",
+        "s": 63.62,
+        "e": 63.9
+      },
+      {
+        "w": "lozim.",
+        "s": 63.94,
+        "e": 64.2
+      }
+    ]
+  }
+]

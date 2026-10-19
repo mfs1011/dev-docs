@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:13.000
+31-bob: Window Funksiyalar Tushunchasi
+
+00:13.000 --> 00:25.810
+OVER Bandi va PARTITION BY Bo'laklari
+
+00:25.810 --> 00:36.668
+Frame: Oyna Ramkasi va Sukut Qoidasi
+
+00:36.668 --> 00:48.151
+Reyting: row_number, rank va dense_rank
+
+00:48.151 --> 01:00.272
+Siljish: lag, lead, first_value va last_value
+
+01:00.272 --> 01:12.900
+Bajarilish Ketma-ketligi va WHERE Cheklovi

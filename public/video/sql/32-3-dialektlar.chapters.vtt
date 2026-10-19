@@ -1,0 +1,16 @@
+WEBVTT
+
+00:00.000 --> 00:12.099
+Dialektlar: Shartli Ifodalardagi Farqlar
+
+00:12.099 --> 00:24.062
+GREATEST va NULL: Standart va PostgreSQL
+
+00:24.062 --> 00:37.008
+MySQL: IF, IFNULL va Nolga Bo'lish
+
+00:37.008 --> 00:48.854
+SQLite: iif, max/min va Tiplar
+
+00:48.854 --> 01:02.000
+3 Dialekt Solishtirma Matritsasi va Xulosa

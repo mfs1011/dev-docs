@@ -1,0 +1,689 @@
+[
+  {
+    "id": "intro",
+    "scene": "kirish",
+    "text": "To'plam amallarida MySQL va SQLite tizimlarining xatti-harakatlari va jiddiy farqlarini ko'rib chiqamiz.",
+    "show": "To'plam amallarida MySQL va SQLite tizimlarining xatti-harakatlari va jiddiy farqlarini ko'rib chiqamiz.",
+    "say": "To'plam amallarida May es-kyu-el va Es-kyu-layt tizimlarining xatti-harakatlari va jiddiy farqlarini ko'rib chiqamiz.",
+    "a0": 0.3,
+    "a1": 6.34,
+    "words": [
+      {
+        "w": "To'plam",
+        "s": 0.3,
+        "e": 0.64
+      },
+      {
+        "w": "amallarida",
+        "s": 0.68,
+        "e": 1.2
+      },
+      {
+        "w": "May",
+        "s": 1.6,
+        "e": 1.76
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 1.86,
+        "e": 2.34
+      },
+      {
+        "w": "va",
+        "s": 2.4,
+        "e": 2.48
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 2.62,
+        "e": 3.12
+      },
+      {
+        "w": "tizimlarining",
+        "s": 3.14,
+        "e": 3.72
+      },
+      {
+        "w": "xatti-harakatlari",
+        "s": 3.72,
+        "e": 4.54
+      },
+      {
+        "w": "va",
+        "s": 4.66,
+        "e": 4.74
+      },
+      {
+        "w": "jiddiy",
+        "s": 4.96,
+        "e": 5.28
+      },
+      {
+        "w": "farqlarini",
+        "s": 5.34,
+        "e": 5.78
+      },
+      {
+        "w": "ko'rib",
+        "s": 5.82,
+        "e": 6.02
+      },
+      {
+        "w": "chiqamiz.",
+        "s": 6.04,
+        "e": 6.34
+      }
+    ]
+  },
+  {
+    "id": "mysql_tiplar",
+    "scene": "mysql_xususiyatlari",
+    "text": "MySQL da tiplar mos kelmasa xato bermaydi, balki umumiy matn tipiga o'tkazadi; shuningdek TABLE nom sintaksisini qo'llab-quvvatlaydi.",
+    "show": "MySQL da tiplar mos kelmasa xato bermaydi, balki umumiy matn tipiga o'tkazadi; shuningdek TABLE nom sintaksisini qo'llab-quvvatlaydi.",
+    "say": "May es-kyu-el da tiplar mos kelmasa xato bermaydi, balki umumiy matn tipiga o'tkazadi; shuningdek TABLE nom sintaksisini qo'llab-quvvatlaydi.",
+    "a0": 7.14,
+    "a1": 15.47,
+    "words": [
+      {
+        "w": "May",
+        "s": 7.14,
+        "e": 7.28
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 7.36,
+        "e": 7.77
+      },
+      {
+        "w": "da",
+        "s": 7.81,
+        "e": 7.89
+      },
+      {
+        "w": "tiplar",
+        "s": 8.05,
+        "e": 8.37
+      },
+      {
+        "w": "mos",
+        "s": 8.45,
+        "e": 8.61
+      },
+      {
+        "w": "kelmasa",
+        "s": 8.65,
+        "e": 9.03
+      },
+      {
+        "w": "xato",
+        "s": 9.07,
+        "e": 9.29
+      },
+      {
+        "w": "bermaydi,",
+        "s": 9.35,
+        "e": 9.73
+      },
+      {
+        "w": "balki",
+        "s": 10.05,
+        "e": 10.33
+      },
+      {
+        "w": "umumiy",
+        "s": 10.67,
+        "e": 11.01
+      },
+      {
+        "w": "matn",
+        "s": 11.07,
+        "e": 11.35
+      },
+      {
+        "w": "tipiga",
+        "s": 11.39,
+        "e": 11.63
+      },
+      {
+        "w": "o'tkazadi;",
+        "s": 11.63,
+        "e": 12.59
+      },
+      {
+        "w": "shuningdek",
+        "s": 12.59,
+        "e": 12.97
+      },
+      {
+        "w": "TABLE",
+        "s": 13.27,
+        "e": 13.63
+      },
+      {
+        "w": "nom",
+        "s": 13.73,
+        "e": 13.91
+      },
+      {
+        "w": "sintaksisini",
+        "s": 14.01,
+        "e": 14.67
+      },
+      {
+        "w": "qo'llab-quvvatlaydi.",
+        "s": 14.73,
+        "e": 15.47
+      }
+    ]
+  },
+  {
+    "id": "mysql_order",
+    "scene": "mysql_xususiyatlari",
+    "text": "Bundan tashqari, MySQL da oxirgi ORDER BY da m qo'shuv n kabi ifodalar bilan bemalol saralash mumkin.",
+    "show": "Bundan tashqari, MySQL da oxirgi ORDER BY da m qo'shuv n kabi ifodalar bilan bemalol saralash mumkin.",
+    "say": "Bundan tashqari, May es-kyu-el da oxirgi order bay da m qo'shuv n kabi ifodalar bilan bemalol saralash mumkin.",
+    "a0": 16.27,
+    "a1": 22.96,
+    "words": [
+      {
+        "w": "Bundan",
+        "s": 16.27,
+        "e": 16.49
+      },
+      {
+        "w": "tashqari,",
+        "s": 16.51,
+        "e": 16.85
+      },
+      {
+        "w": "May",
+        "s": 17.15,
+        "e": 17.29
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 17.37,
+        "e": 17.75
+      },
+      {
+        "w": "da",
+        "s": 17.79,
+        "e": 17.85
+      },
+      {
+        "w": "oxirgi",
+        "s": 17.95,
+        "e": 18.31
+      },
+      {
+        "w": "order",
+        "s": 18.61,
+        "e": 18.89
+      },
+      {
+        "w": "bay",
+        "s": 18.95,
+        "e": 19.11
+      },
+      {
+        "w": "da",
+        "s": 19.15,
+        "e": 19.23
+      },
+      {
+        "w": "m",
+        "s": 19.71,
+        "e": 19.73
+      },
+      {
+        "w": "qo'shuv",
+        "s": 19.83,
+        "e": 20.13
+      },
+      {
+        "w": "n",
+        "s": 20.39,
+        "e": 20.41
+      },
+      {
+        "w": "kabi",
+        "s": 20.49,
+        "e": 20.67
+      },
+      {
+        "w": "ifodalar",
+        "s": 20.73,
+        "e": 21.15
+      },
+      {
+        "w": "bilan",
+        "s": 21.19,
+        "e": 21.37
+      },
+      {
+        "w": "bemalol",
+        "s": 21.77,
+        "e": 22.27
+      },
+      {
+        "w": "saralash",
+        "s": 22.31,
+        "e": 22.68
+      },
+      {
+        "w": "mumkin.",
+        "s": 22.7,
+        "e": 22.96
+      }
+    ]
+  },
+  {
+    "id": "sqlite_all",
+    "scene": "sqlite_all_yoqligi",
+    "text": "SQLite da INTERSECT ALL va EXCEPT ALL umuman mavjud emas va sintaksis xatosi beradi; faqat DISTINCT ko'rinishida ishlaydi.",
+    "show": "SQLite da INTERSECT ALL va EXCEPT ALL umuman mavjud emas va sintaksis xatosi beradi; faqat DISTINCT ko'rinishida ishlaydi.",
+    "say": "Es-kyu-layt da intersekt oll va eksept oll umuman mavjud emas va sintaksis xatosi beradi; faqat distinkt ko'rinishida ishlaydi.",
+    "a0": 23.92,
+    "a1": 31.7,
+    "words": [
+      {
+        "w": "Es-kyu-layt",
+        "s": 23.92,
+        "e": 24.38
+      },
+      {
+        "w": "da",
+        "s": 24.44,
+        "e": 24.52
+      },
+      {
+        "w": "intersekt",
+        "s": 24.84,
+        "e": 25.4
+      },
+      {
+        "w": "oll",
+        "s": 25.58,
+        "e": 25.74
+      },
+      {
+        "w": "va",
+        "s": 25.86,
+        "e": 25.96
+      },
+      {
+        "w": "eksept",
+        "s": 26.14,
+        "e": 26.52
+      },
+      {
+        "w": "oll",
+        "s": 26.68,
+        "e": 26.8
+      },
+      {
+        "w": "umuman",
+        "s": 26.96,
+        "e": 27.28
+      },
+      {
+        "w": "mavjud",
+        "s": 27.32,
+        "e": 27.6
+      },
+      {
+        "w": "emas",
+        "s": 27.64,
+        "e": 27.86
+      },
+      {
+        "w": "va",
+        "s": 27.92,
+        "e": 27.98
+      },
+      {
+        "w": "sintaksis",
+        "s": 28.38,
+        "e": 28.86
+      },
+      {
+        "w": "xatosi",
+        "s": 28.9,
+        "e": 29.22
+      },
+      {
+        "w": "beradi;",
+        "s": 29.22,
+        "e": 29.82
+      },
+      {
+        "w": "faqat",
+        "s": 29.82,
+        "e": 30.08
+      },
+      {
+        "w": "distinkt",
+        "s": 30.36,
+        "e": 30.82
+      },
+      {
+        "w": "ko'rinishida",
+        "s": 30.86,
+        "e": 31.32
+      },
+      {
+        "w": "ishlaydi.",
+        "s": 31.38,
+        "e": 31.7
+      }
+    ]
+  },
+  {
+    "id": "sqlite_precedence",
+    "scene": "sqlite_ustuvorlik_yoqligi",
+    "text": "Eng katta tuzoq: SQLite da INTERSECT ning ustuvorligi yo'q! Hammasi chapdan o'ngga bajariladi va PostgreSQL dan farqli ravishda ikki qator beradi.",
+    "show": "Eng katta tuzoq: SQLite da INTERSECT ning ustuvorligi yo'q! Hammasi chapdan o'ngga bajariladi va PostgreSQL dan farqli ravishda ikki qator beradi.",
+    "say": "Eng katta tuzoq: Es-kyu-layt da intersekt ning ustuvorligi yo'q! Hammasi chapdan o'ngga bajariladi va Postgres dan farqli ravishda ikki qator beradi.",
+    "a0": 32.64,
+    "a1": 41.59,
+    "words": [
+      {
+        "w": "Eng",
+        "s": 32.64,
+        "e": 32.78
+      },
+      {
+        "w": "katta",
+        "s": 32.82,
+        "e": 33.1
+      },
+      {
+        "w": "tuzoq:",
+        "s": 33.16,
+        "e": 33.52
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 33.88,
+        "e": 34.38
+      },
+      {
+        "w": "da",
+        "s": 34.44,
+        "e": 34.52
+      },
+      {
+        "w": "intersekt",
+        "s": 34.76,
+        "e": 35.28
+      },
+      {
+        "w": "ning",
+        "s": 35.32,
+        "e": 35.44
+      },
+      {
+        "w": "ustuvorligi",
+        "s": 35.52,
+        "e": 36.14
+      },
+      {
+        "w": "yo'q!",
+        "s": 36.24,
+        "e": 36.46
+      },
+      {
+        "w": "Hammasi",
+        "s": 37.03,
+        "e": 37.35
+      },
+      {
+        "w": "chapdan",
+        "s": 37.43,
+        "e": 37.81
+      },
+      {
+        "w": "o'ngga",
+        "s": 37.91,
+        "e": 38.09
+      },
+      {
+        "w": "bajariladi",
+        "s": 38.13,
+        "e": 38.63
+      },
+      {
+        "w": "va",
+        "s": 38.69,
+        "e": 38.77
+      },
+      {
+        "w": "Postgres",
+        "s": 39.15,
+        "e": 39.61
+      },
+      {
+        "w": "dan",
+        "s": 39.65,
+        "e": 39.77
+      },
+      {
+        "w": "farqli",
+        "s": 39.81,
+        "e": 40.09
+      },
+      {
+        "w": "ravishda",
+        "s": 40.17,
+        "e": 40.47
+      },
+      {
+        "w": "ikki",
+        "s": 40.79,
+        "e": 40.95
+      },
+      {
+        "w": "qator",
+        "s": 41.01,
+        "e": 41.25
+      },
+      {
+        "w": "beradi.",
+        "s": 41.31,
+        "e": 41.59
+      }
+    ]
+  },
+  {
+    "id": "sqlite_subquery",
+    "scene": "sqlite_tartib_va_tiplar",
+    "text": "Alohida qismlarga LIMIT berish uchun qavs ishlamaydi, uni faqat FROM ichidagi hosila jadval orqali amalga oshirish mumkin.",
+    "show": "Alohida qismlarga LIMIT berish uchun qavs ishlamaydi, uni faqat FROM ichidagi hosila jadval orqali amalga oshirish mumkin.",
+    "say": "Alohida qismlarga limit berish uchun qavs ishlamaydi, uni faqat from ichidagi hosila jadval orqali amalga oshirish mumkin.",
+    "a0": 42.47,
+    "a1": 49.07,
+    "words": [
+      {
+        "w": "Alohida",
+        "s": 42.47,
+        "e": 42.79
+      },
+      {
+        "w": "qismlarga",
+        "s": 42.85,
+        "e": 43.35
+      },
+      {
+        "w": "limit",
+        "s": 43.47,
+        "e": 43.73
+      },
+      {
+        "w": "berish",
+        "s": 43.79,
+        "e": 44.01
+      },
+      {
+        "w": "uchun",
+        "s": 44.05,
+        "e": 44.23
+      },
+      {
+        "w": "qavs",
+        "s": 44.31,
+        "e": 44.59
+      },
+      {
+        "w": "ishlamaydi,",
+        "s": 44.65,
+        "e": 45.11
+      },
+      {
+        "w": "uni",
+        "s": 45.55,
+        "e": 45.67
+      },
+      {
+        "w": "faqat",
+        "s": 45.73,
+        "e": 45.99
+      },
+      {
+        "w": "from",
+        "s": 46.25,
+        "e": 46.49
+      },
+      {
+        "w": "ichidagi",
+        "s": 46.57,
+        "e": 46.95
+      },
+      {
+        "w": "hosila",
+        "s": 47.07,
+        "e": 47.45
+      },
+      {
+        "w": "jadval",
+        "s": 47.51,
+        "e": 47.85
+      },
+      {
+        "w": "orqali",
+        "s": 47.87,
+        "e": 48.15
+      },
+      {
+        "w": "amalga",
+        "s": 48.23,
+        "e": 48.49
+      },
+      {
+        "w": "oshirish",
+        "s": 48.53,
+        "e": 48.79
+      },
+      {
+        "w": "mumkin.",
+        "s": 48.83,
+        "e": 49.07
+      }
+    ]
+  },
+  {
+    "id": "sqlite_tiplar",
+    "scene": "sqlite_tartib_va_tiplar",
+    "text": "Natijada har xil tiplar aralashib ketaveradi: bitta ustunda ham son, ham matn qiymati hech qanday konversiyasiz saqlanadi.",
+    "show": "Natijada har xil tiplar aralashib ketaveradi: bitta ustunda ham son, ham matn qiymati hech qanday konversiyasiz saqlanadi.",
+    "say": "Natijada har xil tiplar aralashib ketaveradi: bitta ustunda ham son, ham matn qiymati hech qanday konversiyasiz saqlanadi.",
+    "a0": 49.79,
+    "a1": 56.94,
+    "words": [
+      {
+        "w": "Natijada",
+        "s": 49.79,
+        "e": 50.21
+      },
+      {
+        "w": "har",
+        "s": 50.5,
+        "e": 50.66
+      },
+      {
+        "w": "xil",
+        "s": 50.7,
+        "e": 50.82
+      },
+      {
+        "w": "tiplar",
+        "s": 50.86,
+        "e": 51.14
+      },
+      {
+        "w": "aralashib",
+        "s": 51.2,
+        "e": 51.58
+      },
+      {
+        "w": "ketaveradi:",
+        "s": 51.58,
+        "e": 52.02
+      },
+      {
+        "w": "bitta",
+        "s": 52.48,
+        "e": 52.7
+      },
+      {
+        "w": "ustunda",
+        "s": 52.74,
+        "e": 53.08
+      },
+      {
+        "w": "ham",
+        "s": 53.36,
+        "e": 53.52
+      },
+      {
+        "w": "son,",
+        "s": 53.64,
+        "e": 53.86
+      },
+      {
+        "w": "ham",
+        "s": 54.04,
+        "e": 54.2
+      },
+      {
+        "w": "matn",
+        "s": 54.26,
+        "e": 54.5
+      },
+      {
+        "w": "qiymati",
+        "s": 54.54,
+        "e": 54.88
+      },
+      {
+        "w": "hech",
+        "s": 55.16,
+        "e": 55.36
+      },
+      {
+        "w": "qanday",
+        "s": 55.4,
+        "e": 55.66
+      },
+      {
+        "w": "konversiyasiz",
+        "s": 55.7,
+        "e": 56.32
+      },
+      {
+        "w": "saqlanadi.",
+        "s": 56.46,
+        "e": 56.94
+      }
+    ]
+  }
+]

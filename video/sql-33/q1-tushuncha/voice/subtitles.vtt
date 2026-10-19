@@ -1,0 +1,26 @@
+WEBVTT
+
+1
+00:01.420 --> 00:09.120
+Matn bilan ishlash funksiyalari SQL dialektlarida eng ko'p farq
+qiladigan soha bo'lib, bir xil funksiya har xil natija berishi mumkin.
+
+2
+00:11.930 --> 00:21.320
+Satrlarni ulashda ikkita vertikal chiziq va concat NULL qiymatda
+farqlanadi, concat_ws esa ajratuvchi bilan xavfsiz birlashtiradi.
+
+3
+00:24.670 --> 00:33.130
+Uzunlikni o'lchashda ehtiyot bo'ling: Postgres va SQLite da length
+belgilar soni bo'lsa, MySQL da u baytlar hajmini bildiradi.
+
+4
+00:36.320 --> 00:45.580
+Katta-kichik harf, qism satr va qidiruv pozitsiyalari doimo birinchi
+belgidan boshlanadi, SQLite da esa harf o'zgartirish faqat ASCII ga xos.
+
+5
+00:48.770 --> 00:56.750
+Regex almashtirishda Postgres sukut bo'yicha faqat birinchi
+moslikni oladi, MySQL esa birdaniga barcha mosliklarni tozalaydi.

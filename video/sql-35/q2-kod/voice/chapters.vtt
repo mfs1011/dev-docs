@@ -1,0 +1,16 @@
+WEBVTT
+
+00:00.000 --> 00:22.767
+Qiymat ajratish: ->, ->>, #>>
+
+00:22.767 --> 00:37.662
+Filtrlash: @> va ? operatorlari
+
+00:37.662 --> 00:54.439
+SQL/JSON: JSON_VALUE va JSON_EXISTS
+
+00:54.439 --> 01:08.934
+JSON_TABLE: Massivni qatorlarga
+
+01:08.934 --> 01:27.320
+O'zgartirish va GIN indeksi

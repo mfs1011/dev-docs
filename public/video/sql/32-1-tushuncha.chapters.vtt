@@ -1,0 +1,16 @@
+WEBVTT
+
+00:00.000 --> 00:13.221
+Shartli Ifodalar: SQL da If/Else
+
+00:13.221 --> 00:23.580
+CASE Ifodasi: Umumiy va Oddiy Shakllar
+
+00:23.580 --> 00:36.805
+NULL Tuzog'i: Nega = NULL Ishlamaydi?
+
+00:36.805 --> 00:47.522
+COALESCE va NULLIF Funksiyalari
+
+00:47.522 --> 01:00.840
+GREATEST va LEAST: Qatordagi Solishtirish

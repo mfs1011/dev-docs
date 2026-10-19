@@ -1,0 +1,56 @@
+WEBVTT
+
+1
+00:01.420 --> 00:08.390
+PostgreSQL'da jsonb va MySQL'da JSON turlari kiritilayotgan
+hujjat sintaksisini darhol qat'iy tekshiradi.
+
+2
+00:08.810 --> 00:15.880
+SQLite esa JSONni oddiy matn sifatida saqlaydi, shuning
+uchun bazaga buzilgan JSON tushmasligi uchun cheklov shart.
+
+3
+00:18.830 --> 00:25.620
+PostgreSQL kalit nomini to'g'ridan-to'g'ri qabul qilsa,
+MySQL'da o'ng tomon doimo JSON yo'li bo'lishi talab qilinadi.
+
+4
+00:25.910 --> 00:29.770
+SQLite esa qulaylik uchun ikkala
+usulni ham birdek qo'llab-quvvatlaydi.
+
+5
+00:32.760 --> 00:39.970
+PostgreSQL'dagi kuchukcha-katta va so'roq operatorlari
+o'rniga, MySQL'da JSON_CONTAINS hamda MEMBER OF ishlatiladi.
+
+6
+00:40.140 --> 00:46.640
+SQLite'da esa JSON_TABLE o'rniga json_each jadval
+funksiyasi yordamida massiv qatorlarga yoyiladi.
+
+7
+00:49.590 --> 00:56.280
+PostgreSQL butun hujjatga GIN indeksi qurish imkonini
+beradi, lekin ikkita tire-katta uchun ifoda indeksi kerak.
+
+8
+00:56.730 --> 01:03.370
+MySQL'da to'g'ridan-to'g'ri indeks taqiqlanadi, faqat
+hosila ustun yoki ko'p qiymatli indeks orqali hal qilinadi.
+
+9
+01:03.800 --> 01:09.390
+SQLite esa ikkita tire-katta ifodasi bo'yicha
+to'g'ridan-to'g'ri B-tree indeksi yaratishga ruxsat beradi.
+
+10
+01:12.380 --> 01:19.560
+SQLite JSON5 formatidagi erkin sintaksisni o'qiy oladi,
+ammo uning jsonb formati PostgreSQL bilan mos emas.
+
+11
+01:19.950 --> 01:26.150
+Loyihalashda har bir tizimning indekslash va tekshirish
+nozikliklarini bilish arxitektura barqarorligini ta'minlaydi.

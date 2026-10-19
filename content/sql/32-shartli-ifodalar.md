@@ -4,6 +4,15 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/32-1-tushuncha.jpg">
+    <source src="/video/sql/32-1-tushuncha.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/32-1-tushuncha.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/32-1-tushuncha.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>Shartli ifodalar tushunchasi: CASE, short-circuit, NULL tuzog'i, COALESCE va NULLIF</figcaption>
+</figure>
+
 **Shartli ifoda** (conditional expression) shartga qarab turli qiymat qaytaradi — dasturlash tillaridagi `if/else` ning SQL'dagi o'rni. Bu bobda standart SQL'dagi to'rtta vosita va tizimlarning o'z qisqartmalari ko'riladi.
 
 | Ifoda | Natija |
@@ -60,6 +69,15 @@ Argumentlar ichidan eng katta va eng kichigini tanlaydi. Bu yerda tizimlar **sta
 `GREATEST` agregat `max` emas: `max` ko'p **qator** ichidan tanlaydi (26-bob), `GREATEST` esa bitta qatordagi bir nechta **ifoda** ichidan.
 
 ## Kod
+
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/32-2-kod.jpg">
+    <source src="/video/sql/32-2-kod.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/32-2-kod.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/32-2-kod.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>Amaliy kod: toifalash, NULL tekshiruvi, COALESCE, NULLIF va GREATEST/LEAST</figcaption>
+</figure>
 
 Misollar PostgreSQL 18.6, MySQL 9.7.2 va SQLite 3.54.0 da ishga tushirilgan.
 
@@ -263,6 +281,15 @@ FROM narxlar ORDER BY id;
 `Ruchka` va `Sumka` da `eski_narx` — `NULL`. PostgreSQL uni e'tiborsiz qoldirdi va `narx` ni qaytardi. MySQL'da natija boshqacha — quyida.
 
 ## Dialektlar
+
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/32-3-dialektlar.jpg">
+    <source src="/video/sql/32-3-dialektlar.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/32-3-dialektlar.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/32-3-dialektlar.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>Dialektlar: GREATEST da NULL farqi, MySQL IF/IFNULL va SQLite iif hamda max()</figcaption>
+</figure>
 
 ### MySQL
 

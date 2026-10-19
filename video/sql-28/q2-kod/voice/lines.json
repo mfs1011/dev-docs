@@ -1,0 +1,714 @@
+[
+  {
+    "id": "intro",
+    "scene": "kirish",
+    "text": "PostgreSQL 18 da to'plam amallarini amalda tekshiramiz. Sinov uchun bir xil tuzilishga ega a, b va c jadvallaridan foydalanamiz.",
+    "show": "PostgreSQL 18 da to'plam amallarini amalda tekshiramiz. Sinov uchun bir xil tuzilishga ega a, b va c jadvallaridan foydalanamiz.",
+    "say": "Postgres 18 da to'plam amallarini amalda tekshiramiz. Sinov uchun bir xil tuzilishga ega a, b va c jadvallaridan foydalanamiz.",
+    "a0": 0.22,
+    "a1": 9.37,
+    "words": [
+      {
+        "w": "Postgres",
+        "s": 0.22,
+        "e": 0.68
+      },
+      {
+        "w": "18",
+        "s": 0.68,
+        "e": 0.68
+      },
+      {
+        "w": "da",
+        "s": 1.28,
+        "e": 1.38
+      },
+      {
+        "w": "to'plam",
+        "s": 1.68,
+        "e": 2.08
+      },
+      {
+        "w": "amallarini",
+        "s": 2.16,
+        "e": 2.72
+      },
+      {
+        "w": "amalda",
+        "s": 2.84,
+        "e": 3.14
+      },
+      {
+        "w": "tekshiramiz.",
+        "s": 3.18,
+        "e": 3.7
+      },
+      {
+        "w": "Sinov",
+        "s": 4.68,
+        "e": 4.9
+      },
+      {
+        "w": "uchun",
+        "s": 4.96,
+        "e": 5.18
+      },
+      {
+        "w": "bir",
+        "s": 5.54,
+        "e": 5.66
+      },
+      {
+        "w": "xil",
+        "s": 5.68,
+        "e": 5.82
+      },
+      {
+        "w": "tuzilishga",
+        "s": 5.86,
+        "e": 6.26
+      },
+      {
+        "w": "ega",
+        "s": 6.32,
+        "e": 6.5
+      },
+      {
+        "w": "a,",
+        "s": 6.78,
+        "e": 6.8
+      },
+      {
+        "w": "b",
+        "s": 7.36,
+        "e": 7.38
+      },
+      {
+        "w": "va",
+        "s": 7.71,
+        "e": 7.79
+      },
+      {
+        "w": "c",
+        "s": 8.17,
+        "e": 8.19
+      },
+      {
+        "w": "jadvallaridan",
+        "s": 8.19,
+        "e": 8.77
+      },
+      {
+        "w": "foydalanamiz.",
+        "s": 8.81,
+        "e": 9.37
+      }
+    ]
+  },
+  {
+    "id": "union_all",
+    "scene": "union_va_all",
+    "text": "UNION umumiy takrorlarni olib tashlab to'rtta qator berdi, UNION ALL esa barcha qatorlarni qo'shib oltita natija qaytardi.",
+    "show": "UNION umumiy takrorlarni olib tashlab to'rtta qator berdi, UNION ALL esa barcha qatorlarni qo'shib oltita natija qaytardi.",
+    "say": "Yunion umumiy takrorlarni olib tashlab to'rtta qator berdi, yunion oll esa barcha qatorlarni qo'shib oltita natija qaytardi.",
+    "a0": 10.47,
+    "a1": 18.05,
+    "words": [
+      {
+        "w": "Yunion",
+        "s": 10.47,
+        "e": 10.83
+      },
+      {
+        "w": "umumiy",
+        "s": 11.21,
+        "e": 11.49
+      },
+      {
+        "w": "takrorlarni",
+        "s": 11.55,
+        "e": 12.11
+      },
+      {
+        "w": "olib",
+        "s": 12.17,
+        "e": 12.33
+      },
+      {
+        "w": "tashlab",
+        "s": 12.35,
+        "e": 12.67
+      },
+      {
+        "w": "to'rtta",
+        "s": 12.77,
+        "e": 13.09
+      },
+      {
+        "w": "qator",
+        "s": 13.15,
+        "e": 13.41
+      },
+      {
+        "w": "berdi,",
+        "s": 13.47,
+        "e": 13.73
+      },
+      {
+        "w": "yunion",
+        "s": 14.43,
+        "e": 14.77
+      },
+      {
+        "w": "oll",
+        "s": 14.93,
+        "e": 15.05
+      },
+      {
+        "w": "esa",
+        "s": 15.13,
+        "e": 15.31
+      },
+      {
+        "w": "barcha",
+        "s": 15.75,
+        "e": 16.01
+      },
+      {
+        "w": "qatorlarni",
+        "s": 16.05,
+        "e": 16.53
+      },
+      {
+        "w": "qo'shib",
+        "s": 16.57,
+        "e": 16.83
+      },
+      {
+        "w": "oltita",
+        "s": 16.99,
+        "e": 17.29
+      },
+      {
+        "w": "natija",
+        "s": 17.33,
+        "e": 17.63
+      },
+      {
+        "w": "qaytardi.",
+        "s": 17.67,
+        "e": 18.05
+      }
+    ]
+  },
+  {
+    "id": "intersect_except",
+    "scene": "intersect_va_except",
+    "text": "INTERSECT ikkala jadvaldagi umumiy ikki qatorni ajratdi, EXCEPT esa faqat a jadvalida mavjud bo'lgan bitta qatorni chiqardi.",
+    "show": "INTERSECT ikkala jadvaldagi umumiy ikki qatorni ajratdi, EXCEPT esa faqat a jadvalida mavjud bo'lgan bitta qatorni chiqardi.",
+    "say": "Intersekt ikkala jadvaldagi umumiy ikki qatorni ajratdi, eksept esa faqat a jadvalida mavjud bo'lgan bitta qatorni chiqardi.",
+    "a0": 19.13,
+    "a1": 26.88,
+    "words": [
+      {
+        "w": "Intersekt",
+        "s": 19.13,
+        "e": 19.61
+      },
+      {
+        "w": "ikkala",
+        "s": 20.01,
+        "e": 20.31
+      },
+      {
+        "w": "jadvaldagi",
+        "s": 20.35,
+        "e": 20.87
+      },
+      {
+        "w": "umumiy",
+        "s": 20.97,
+        "e": 21.27
+      },
+      {
+        "w": "ikki",
+        "s": 21.39,
+        "e": 21.57
+      },
+      {
+        "w": "qatorni",
+        "s": 21.61,
+        "e": 21.99
+      },
+      {
+        "w": "ajratdi,",
+        "s": 22.05,
+        "e": 22.52
+      },
+      {
+        "w": "eksept",
+        "s": 23.2,
+        "e": 23.54
+      },
+      {
+        "w": "esa",
+        "s": 23.6,
+        "e": 23.74
+      },
+      {
+        "w": "faqat",
+        "s": 24.08,
+        "e": 24.34
+      },
+      {
+        "w": "a",
+        "s": 24.5,
+        "e": 24.52
+      },
+      {
+        "w": "jadvalida",
+        "s": 24.64,
+        "e": 25.12
+      },
+      {
+        "w": "mavjud",
+        "s": 25.18,
+        "e": 25.48
+      },
+      {
+        "w": "bo'lgan",
+        "s": 25.52,
+        "e": 25.8
+      },
+      {
+        "w": "bitta",
+        "s": 25.9,
+        "e": 26.14
+      },
+      {
+        "w": "qatorni",
+        "s": 26.18,
+        "e": 26.52
+      },
+      {
+        "w": "chiqardi.",
+        "s": 26.56,
+        "e": 26.88
+      }
+    ]
+  },
+  {
+    "id": "all_hisob",
+    "scene": "all_hisobi",
+    "text": "ALL kalit so'zi bilan takrorlar aniq hisoblanadi: INTERSECT ALL har ikki tomondagi eng kam uchrash sonini, EXCEPT ALL esa ayirmani saqlaydi.",
+    "show": "ALL kalit so'zi bilan takrorlar aniq hisoblanadi: INTERSECT ALL har ikki tomondagi eng kam uchrash sonini, EXCEPT ALL esa ayirmani saqlaydi.",
+    "say": "Oll kalit so'zi bilan takrorlar aniq hisoblanadi: intersekt oll har ikki tomondagi eng kam uchrash sonini, eksept oll esa ayirmani saqlaydi.",
+    "a0": 27.78,
+    "a1": 36.64,
+    "words": [
+      {
+        "w": "Oll",
+        "s": 27.78,
+        "e": 27.9
+      },
+      {
+        "w": "kalit",
+        "s": 27.96,
+        "e": 28.22
+      },
+      {
+        "w": "so'zi",
+        "s": 28.26,
+        "e": 28.46
+      },
+      {
+        "w": "bilan",
+        "s": 28.5,
+        "e": 28.68
+      },
+      {
+        "w": "takrorlar",
+        "s": 28.78,
+        "e": 29.24
+      },
+      {
+        "w": "aniq",
+        "s": 29.34,
+        "e": 29.52
+      },
+      {
+        "w": "hisoblanadi:",
+        "s": 29.54,
+        "e": 30
+      },
+      {
+        "w": "intersekt",
+        "s": 30.8,
+        "e": 31.24
+      },
+      {
+        "w": "oll",
+        "s": 31.32,
+        "e": 31.44
+      },
+      {
+        "w": "har",
+        "s": 31.74,
+        "e": 31.92
+      },
+      {
+        "w": "ikki",
+        "s": 32,
+        "e": 32.16
+      },
+      {
+        "w": "tomondagi",
+        "s": 32.2,
+        "e": 32.68
+      },
+      {
+        "w": "eng",
+        "s": 32.84,
+        "e": 33
+      },
+      {
+        "w": "kam",
+        "s": 33.04,
+        "e": 33.18
+      },
+      {
+        "w": "uchrash",
+        "s": 33.28,
+        "e": 33.6
+      },
+      {
+        "w": "sonini,",
+        "s": 33.66,
+        "e": 34.06
+      },
+      {
+        "w": "eksept",
+        "s": 34.64,
+        "e": 34.96
+      },
+      {
+        "w": "oll",
+        "s": 35.1,
+        "e": 35.2
+      },
+      {
+        "w": "esa",
+        "s": 35.28,
+        "e": 35.44
+      },
+      {
+        "w": "ayirmani",
+        "s": 35.82,
+        "e": 36.2
+      },
+      {
+        "w": "saqlaydi.",
+        "s": 36.24,
+        "e": 36.64
+      }
+    ]
+  },
+  {
+    "id": "ustuvorlik",
+    "scene": "ustuvorlik",
+    "text": "Uchala jadval aralashganda, INTERSECT ustunroq bo'lgani sababli avval kesishma, so'ng UNION hisoblanib to'rtta qator hosil bo'ladi.",
+    "show": "Uchala jadval aralashganda, INTERSECT ustunroq bo'lgani sababli avval kesishma, so'ng UNION hisoblanib to'rtta qator hosil bo'ladi.",
+    "say": "Uchala jadval aralashganda, intersekt ustunroq bo'lgani sababli avval kesishma, so'ng yunion hisoblanib to'rtta qator hosil bo'ladi.",
+    "a0": 37.4,
+    "a1": 44.97,
+    "words": [
+      {
+        "w": "Uchala",
+        "s": 37.4,
+        "e": 37.69
+      },
+      {
+        "w": "jadval",
+        "s": 37.75,
+        "e": 38.05
+      },
+      {
+        "w": "aralashganda,",
+        "s": 38.13,
+        "e": 38.75
+      },
+      {
+        "w": "intersekt",
+        "s": 39.01,
+        "e": 39.51
+      },
+      {
+        "w": "ustunroq",
+        "s": 39.57,
+        "e": 40.01
+      },
+      {
+        "w": "bo'lgani",
+        "s": 40.07,
+        "e": 40.37
+      },
+      {
+        "w": "sababli",
+        "s": 40.43,
+        "e": 40.79
+      },
+      {
+        "w": "avval",
+        "s": 41.17,
+        "e": 41.49
+      },
+      {
+        "w": "kesishma,",
+        "s": 41.57,
+        "e": 42.05
+      },
+      {
+        "w": "so'ng",
+        "s": 42.45,
+        "e": 42.67
+      },
+      {
+        "w": "yunion",
+        "s": 42.79,
+        "e": 43.17
+      },
+      {
+        "w": "hisoblanib",
+        "s": 43.21,
+        "e": 43.69
+      },
+      {
+        "w": "to'rtta",
+        "s": 43.79,
+        "e": 44.09
+      },
+      {
+        "w": "qator",
+        "s": 44.13,
+        "e": 44.37
+      },
+      {
+        "w": "hosil",
+        "s": 44.41,
+        "e": 44.67
+      },
+      {
+        "w": "bo'ladi.",
+        "s": 44.71,
+        "e": 44.97
+      }
+    ]
+  },
+  {
+    "id": "order_nom",
+    "scene": "order_va_xatolar",
+    "text": "ORDER BY faqat birinchi so'rov bergan natija ustun nomiga tayanadi. Boshqa qism ustun nomlari yoki ifodalar bo'yicha saralash xato beradi.",
+    "show": "ORDER BY faqat birinchi so'rov bergan natija ustun nomiga tayanadi. Boshqa qism ustun nomlari yoki ifodalar bo'yicha saralash xato beradi.",
+    "say": "Order bay faqat birinchi so'rov bergan natija ustun nomiga tayanadi. Boshqa qism ustun nomlari yoki ifodalar bo'yicha saralash xato beradi.",
+    "a0": 45.75,
+    "a1": 53.7,
+    "words": [
+      {
+        "w": "Order",
+        "s": 45.75,
+        "e": 46.01
+      },
+      {
+        "w": "bay",
+        "s": 46.05,
+        "e": 46.21
+      },
+      {
+        "w": "faqat",
+        "s": 46.39,
+        "e": 46.63
+      },
+      {
+        "w": "birinchi",
+        "s": 46.73,
+        "e": 47.03
+      },
+      {
+        "w": "so'rov",
+        "s": 47.07,
+        "e": 47.33
+      },
+      {
+        "w": "bergan",
+        "s": 47.37,
+        "e": 47.67
+      },
+      {
+        "w": "natija",
+        "s": 47.75,
+        "e": 48.09
+      },
+      {
+        "w": "ustun",
+        "s": 48.15,
+        "e": 48.41
+      },
+      {
+        "w": "nomiga",
+        "s": 48.47,
+        "e": 48.83
+      },
+      {
+        "w": "tayanadi.",
+        "s": 48.87,
+        "e": 49.31
+      },
+      {
+        "w": "Boshqa",
+        "s": 49.89,
+        "e": 50.15
+      },
+      {
+        "w": "qism",
+        "s": 50.21,
+        "e": 50.39
+      },
+      {
+        "w": "ustun",
+        "s": 50.49,
+        "e": 50.75
+      },
+      {
+        "w": "nomlari",
+        "s": 50.81,
+        "e": 51.21
+      },
+      {
+        "w": "yoki",
+        "s": 51.21,
+        "e": 51.75
+      },
+      {
+        "w": "ifodalar",
+        "s": 51.87,
+        "e": 52.33
+      },
+      {
+        "w": "bo'yicha",
+        "s": 52.37,
+        "e": 52.64
+      },
+      {
+        "w": "saralash",
+        "s": 52.7,
+        "e": 53.06
+      },
+      {
+        "w": "xato",
+        "s": 53.1,
+        "e": 53.32
+      },
+      {
+        "w": "beradi.",
+        "s": 53.4,
+        "e": 53.7
+      }
+    ]
+  },
+  {
+    "id": "xatolar",
+    "scene": "order_va_xatolar",
+    "text": "Ustunlar soni yoki tiplari mos kelmasa PostgreSQL darhol xato qaytaradi, ikkita NULL qatori esa bitta deb hisoblanadi.",
+    "show": "Ustunlar soni yoki tiplari mos kelmasa PostgreSQL darhol xato qaytaradi, ikkita NULL qatori esa bitta deb hisoblanadi.",
+    "say": "Ustunlar soni yoki tiplari mos kelmasa Postgres darhol xato qaytaradi, ikkita null qatori esa bitta deb hisoblanadi.",
+    "a0": 54.32,
+    "a1": 61.52,
+    "words": [
+      {
+        "w": "Ustunlar",
+        "s": 54.32,
+        "e": 54.74
+      },
+      {
+        "w": "soni",
+        "s": 54.8,
+        "e": 55.06
+      },
+      {
+        "w": "yoki",
+        "s": 55.06,
+        "e": 55.34
+      },
+      {
+        "w": "tiplari",
+        "s": 55.4,
+        "e": 55.76
+      },
+      {
+        "w": "mos",
+        "s": 55.82,
+        "e": 55.98
+      },
+      {
+        "w": "kelmasa",
+        "s": 56.02,
+        "e": 56.42
+      },
+      {
+        "w": "Postgres",
+        "s": 56.8,
+        "e": 57.22
+      },
+      {
+        "w": "darhol",
+        "s": 57.3,
+        "e": 57.6
+      },
+      {
+        "w": "xato",
+        "s": 57.66,
+        "e": 57.88
+      },
+      {
+        "w": "qaytaradi,",
+        "s": 57.94,
+        "e": 58.36
+      },
+      {
+        "w": "ikkita",
+        "s": 59.16,
+        "e": 59.42
+      },
+      {
+        "w": "null",
+        "s": 59.52,
+        "e": 59.72
+      },
+      {
+        "w": "qatori",
+        "s": 59.74,
+        "e": 60.06
+      },
+      {
+        "w": "esa",
+        "s": 60.06,
+        "e": 60.24
+      },
+      {
+        "w": "bitta",
+        "s": 60.61,
+        "e": 60.85
+      },
+      {
+        "w": "deb",
+        "s": 60.89,
+        "e": 60.99
+      },
+      {
+        "w": "hisoblanadi.",
+        "s": 61.03,
+        "e": 61.52
+      }
+    ]
+  }
+]

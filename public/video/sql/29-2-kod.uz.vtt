@@ -1,0 +1,31 @@
+WEBVTT
+
+1
+00:01.420 --> 00:07.110
+PostgreSQL 18 da CTE imkoniyatlarini sinab ko'ramiz.
+Bazamizda guruhlar, baholar va arxiv jadvallari mavjud.
+
+2
+00:09.100 --> 00:16.200
+Zanjirli CTE orqali eng yuqori o'rtacha ballga ega B guruhining
+talabalari: Vali va Dilnozani osongina ajratib oldik.
+
+3
+00:19.650 --> 00:26.780
+CTE nomidan so'ng qavsda guruh va soni kabi yangi ustun
+nomlarini berib, so'rovni yanada tushunarli qildik.
+
+4
+00:29.870 --> 00:39.530
+Qoidalarni buzsak, PostgreSQL darhol xato beradi: ketma-ket ikkita WITH yozish
+ham, hali e'lon qilinmagan CTE ga oldindan murojaat qilish ham taqiqlangan.
+
+5
+00:42.840 --> 00:51.700
+EXPLAIN rejasida ko'rinadiki, oddiy CTE indeksdan to'g'ridan-to'g'ri
+foydalanadi, MATERIALIZED esa avval butun jadvalni to'liq o'qiydi.
+
+6
+00:54.910 --> 01:03.710
+Eng ajoyib imkoniyat: DELETE amalini RETURNING bilan CTE ichida bajarib,
+o'chirilgan qatorlarni bitta operatorda arxiv jadvaliga ko'chirdik.

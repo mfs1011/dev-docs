@@ -1,0 +1,26 @@
+WEBVTT
+
+1
+00:01.420 --> 00:09.720
+Narxlar jadvalidagi mahsulotlarni CASE ifodasi yordamida narxiga
+qarab qimmat, o'rta, arzon va tekin toifalariga ajratamiz.
+
+2
+00:12.650 --> 00:21.240
+Shartda chegirma barobar NULL deb yozilsa mantiq buziladi, faqat IS
+NULL to'g'ri ishlaydi, hamda barcha natija tiplari mos bo'lishi shart.
+
+3
+00:24.390 --> 00:31.830
+COALESCE orqali birinchi to'la tavsifni tanlaymiz va chegirma yo'q
+bo'lsa noldan ayirib, narxning NULL ga aylanishini to'xtatamiz.
+
+4
+00:35.180 --> 00:42.780
+NULLIF yordamida bo'sh satrni haqiqiy NULL ga o'giramiz va nolga
+bo'lish xatosini xavfsiz tarzda NULL natijaga aylantiramiz.
+
+5
+00:46.090 --> 00:53.550
+GREATEST va LEAST bitta qatordagi joriy va eski narxni solishtirib,
+chegirmasiz eng katta yoki eng kichik narxni qaytaradi.

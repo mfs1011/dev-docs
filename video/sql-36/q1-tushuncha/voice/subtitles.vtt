@@ -1,0 +1,51 @@
+WEBVTT
+
+1
+00:01.420 --> 00:08.610
+PostgreSQL relyatsion imkoniyatlarni kengaytiruvchi
+massiv, oraliq, domen va kompozit tiplarni taklif etadi.
+
+2
+00:08.790 --> 00:15.820
+Bular dinamik ro'yxatlar, vaqt davrlari va maxsus
+biznes qoidalarini aniq ifodalashga yordam beradi.
+
+3
+00:18.630 --> 00:25.460
+Massiv indekslari birdan boshlanadi, e'lon qilingan o'lcham
+esa ma'lumotlar bazasi tomonidan qat'iy cheklanmaydi.
+
+4
+00:25.630 --> 00:31.790
+Massiv to'plam emas, shuning uchun tez-tez qidiriladigan
+maydonlar uchun alohida relyatsion jadval tavsiya etiladi.
+
+5
+00:34.620 --> 00:41.570
+Oraliq tiplari qiymatlar chegarasini saqlaydi va diskret
+tiplarda avtomatik yarim ochiq kanonik shaklga keltiriladi.
+
+6
+00:41.820 --> 00:48.320
+Kuchukcha-katta operatori oraliq ichidaligini, ikkita
+ampersand esa ikki oraliq kesishishini tekshiradi.
+
+7
+00:51.130 --> 00:57.520
+Vaqt oraliqlarida unikallik emas, balki kesishmaslik
+talab qilingani uchun istisno cheklovi qo'llaniladi.
+
+8
+00:57.790 --> 01:03.970
+Gist indeksi yordamida mehmonxona yoki uchrashuv xonalari
+bir vaqtda qayta band qilinishining oldi olinadi.
+
+9
+01:06.760 --> 01:12.290
+Domen mavjud tipga cheklov qo'shib, butun loyiha
+bo'ylab qayta ishlatiladigan xavfsiz tip yaratadi.
+
+10
+01:12.460 --> 01:17.970
+Kompozit tip esa bir nechta maydonli yozuv
+tuzilmasini bitta ustunda jamlash imkonini beradi.

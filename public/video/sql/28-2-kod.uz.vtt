@@ -1,0 +1,36 @@
+WEBVTT
+
+1
+00:01.420 --> 00:11.020
+PostgreSQL 18 da to'plam amallarini amalda tekshiramiz. Sinov
+uchun bir xil tuzilishga ega a, b va c jadvallaridan foydalanamiz.
+
+2
+00:14.070 --> 00:22.100
+UNION umumiy takrorlarni olib tashlab to'rtta qator berdi,
+UNION ALL esa barcha qatorlarni qo'shib oltita natija qaytardi.
+
+3
+00:25.330 --> 00:33.530
+INTERSECT ikkala jadvaldagi umumiy ikki qatorni ajratdi, EXCEPT
+esa faqat a jadvalida mavjud bo'lgan bitta qatorni chiqardi.
+
+4
+00:36.580 --> 00:45.890
+ALL kalit so'zi bilan takrorlar aniq hisoblanadi: INTERSECT ALL har ikki
+tomondagi eng kam uchrash sonini, EXCEPT ALL esa ayirmani saqlaydi.
+
+5
+00:49.000 --> 00:57.020
+Uchala jadval aralashganda, INTERSECT ustunroq bo'lgani sababli
+avval kesishma, so'ng UNION hisoblanib to'rtta qator hosil bo'ladi.
+
+6
+01:00.150 --> 01:08.550
+ORDER BY faqat birinchi so'rov bergan natija ustun nomiga tayanadi.
+Boshqa qism ustun nomlari yoki ifodalar bo'yicha saralash xato beradi.
+
+7
+01:09.720 --> 01:17.370
+Ustunlar soni yoki tiplari mos kelmasa PostgreSQL darhol xato
+qaytaradi, ikkita NULL qatori esa bitta deb hisoblanadi.

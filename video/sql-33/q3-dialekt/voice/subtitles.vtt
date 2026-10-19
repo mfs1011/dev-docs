@@ -1,0 +1,26 @@
+WEBVTT
+
+1
+00:01.420 --> 00:11.980
+Matn funksiyalarida relyatsion bazalar o'rtasida juda jiddiy farqlar mavjud bo'lib, bitta
+tizimda ishlagan so'rov boshqasida xato berishi yoki kutilmagan natija qaytarishi mumkin.
+
+2
+00:14.910 --> 00:30.090
+MySQL da vertikal chiziqlar satr ulash emas, balki mantiqiy OR amali hisoblanib nol qaytaradi, shuningdek
+CONCAT funksiyasiga null uchrasa null beradi, faqat CONCAT_WS barcha tizimda bir xil ishlaydi.
+
+3
+00:33.240 --> 00:45.520
+MySQL dagi LENGTH funksiyasi belgilarni emas baytlarni sanaydi, shuning uchun belgilar soniga
+CHAR_LENGTH yozish shart, SQLite da esa UPPER va LOWER faqat ASCII harflarga ta'sir qiladi.
+
+4
+00:48.590 --> 01:00.760
+Postgresdagi SPLIT_PART o'rniga MySQL da SUBSTRING_INDEX, SQLite da esa SUBSTR va INSTR
+birikmasi ishlatiladi, LPAD funksiyasi yo'q SQLite da esa PRINTF dan foydalaniladi.
+
+5
+01:03.590 --> 01:16.610
+Postgresda REGEXP_REPLACE da g bayrog'i shart bo'lsa, MySQL sukutda barchasini tozalaydi, SQLite da
+esa o'rnatilgan REGEXP yo'q bo'lib, portativ kodda har doim standart funksiyalarni tanlash zarur.

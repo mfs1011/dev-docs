@@ -1,0 +1,512 @@
+[
+  {
+    "id": "intro",
+    "scene": "kirish",
+    "text": "MySQL va SQLite tizimlarida oyna funksiyalarining qo'llab-quvvatlanishi va ramka sintaksisidagi cheklovlarni solishtiramiz.",
+    "show": "MySQL va SQLite tizimlarida oyna funksiyalarining qo'llab-quvvatlanishi va ramka sintaksisidagi cheklovlarni solishtiramiz.",
+    "say": "May es-kyu-el va Es-kyu-layt tizimlarida oyna funksiyalarining qo'llab-quvvatlanishi va ramka sintaksisidagi cheklovlarni solishtiramiz.",
+    "a0": 0.26,
+    "a1": 7.48,
+    "words": [
+      {
+        "w": "May",
+        "s": 0.26,
+        "e": 0.42
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 0.46,
+        "e": 0.86
+      },
+      {
+        "w": "va",
+        "s": 0.92,
+        "e": 1
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 1.18,
+        "e": 1.62
+      },
+      {
+        "w": "tizimlarida",
+        "s": 1.64,
+        "e": 2.2
+      },
+      {
+        "w": "oyna",
+        "s": 2.6,
+        "e": 2.8
+      },
+      {
+        "w": "funksiyalarining",
+        "s": 2.88,
+        "e": 3.52
+      },
+      {
+        "w": "qo'llab-quvvatlanishi",
+        "s": 3.56,
+        "e": 4.5
+      },
+      {
+        "w": "va",
+        "s": 4.56,
+        "e": 4.64
+      },
+      {
+        "w": "ramka",
+        "s": 5.02,
+        "e": 5.3
+      },
+      {
+        "w": "sintaksisidagi",
+        "s": 5.36,
+        "e": 6.12
+      },
+      {
+        "w": "cheklovlarni",
+        "s": 6.2,
+        "e": 6.82
+      },
+      {
+        "w": "solishtiramiz.",
+        "s": 6.88,
+        "e": 7.48
+      }
+    ]
+  },
+  {
+    "id": "groups",
+    "scene": "mysql_groups_va_exclude",
+    "text": "MySQL da GROUPS va EXCLUDE kalit so'zlari sintaksis tahlilidan o'tadi, ammo amalda bir ming ikki yuz o'ttiz besh xatosi bilan to'xtaydi.",
+    "show": "MySQL da GROUPS va EXCLUDE kalit so'zlari sintaksis tahlilidan o'tadi, ammo amalda bir ming ikki yuz o'ttiz besh xatosi bilan to'xtaydi.",
+    "say": "May es-kyu-el da grups va eksklyud kalit so'zlari sintaksis tahlilidan o'tadi, ammo amalda bir ming ikki yuz o'ttiz besh xatosi bilan to'xtaydi.",
+    "a0": 8.43,
+    "a1": 16.15,
+    "words": [
+      {
+        "w": "May",
+        "s": 8.43,
+        "e": 8.57
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 8.59,
+        "e": 8.93
+      },
+      {
+        "w": "da",
+        "s": 8.97,
+        "e": 9.05
+      },
+      {
+        "w": "grups",
+        "s": 9.49,
+        "e": 9.79
+      },
+      {
+        "w": "va",
+        "s": 9.85,
+        "e": 9.91
+      },
+      {
+        "w": "eksklyud",
+        "s": 10.07,
+        "e": 10.47
+      },
+      {
+        "w": "kalit",
+        "s": 10.53,
+        "e": 10.79
+      },
+      {
+        "w": "so'zlari",
+        "s": 10.83,
+        "e": 11.23
+      },
+      {
+        "w": "sintaksis",
+        "s": 11.39,
+        "e": 11.87
+      },
+      {
+        "w": "tahlilidan",
+        "s": 11.89,
+        "e": 12.45
+      },
+      {
+        "w": "o'tadi,",
+        "s": 12.51,
+        "e": 12.73
+      },
+      {
+        "w": "ammo",
+        "s": 12.81,
+        "e": 13.01
+      },
+      {
+        "w": "amalda",
+        "s": 13.17,
+        "e": 13.51
+      },
+      {
+        "w": "bir",
+        "s": 13.87,
+        "e": 13.99
+      },
+      {
+        "w": "ming",
+        "s": 14.03,
+        "e": 14.17
+      },
+      {
+        "w": "ikki",
+        "s": 14.23,
+        "e": 14.41
+      },
+      {
+        "w": "yuz",
+        "s": 14.41,
+        "e": 14.49
+      },
+      {
+        "w": "o'ttiz",
+        "s": 14.57,
+        "e": 14.83
+      },
+      {
+        "w": "besh",
+        "s": 14.87,
+        "e": 15.05
+      },
+      {
+        "w": "xatosi",
+        "s": 15.11,
+        "e": 15.49
+      },
+      {
+        "w": "bilan",
+        "s": 15.51,
+        "e": 15.69
+      },
+      {
+        "w": "to'xtaydi.",
+        "s": 15.73,
+        "e": 16.15
+      }
+    ]
+  },
+  {
+    "id": "filter",
+    "scene": "mysql_filter_va_limitations",
+    "text": "Shuningdek, MySQL da FILTER bandi yo'qligi bois shartli sanash uchun CASE WHEN ishlatiladi, DISTINCT esa oyna ichida ruxsat etilmagan.",
+    "show": "Shuningdek, MySQL da FILTER bandi yo'qligi bois shartli sanash uchun CASE WHEN ishlatiladi, DISTINCT esa oyna ichida ruxsat etilmagan.",
+    "say": "Shuningdek, May es-kyu-el da filter bandi yo'qligi bois shartli sanash uchun CASE WHEN ishlatiladi, DISTINCT esa oyna ichida ruxsat etilmagan.",
+    "a0": 16.67,
+    "a1": 25.08,
+    "words": [
+      {
+        "w": "Shuningdek,",
+        "s": 16.67,
+        "e": 17.07
+      },
+      {
+        "w": "May",
+        "s": 17.41,
+        "e": 17.57
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 17.59,
+        "e": 17.95
+      },
+      {
+        "w": "da",
+        "s": 17.99,
+        "e": 18.07
+      },
+      {
+        "w": "filter",
+        "s": 18.39,
+        "e": 18.71
+      },
+      {
+        "w": "bandi",
+        "s": 18.79,
+        "e": 19.07
+      },
+      {
+        "w": "yo'qligi",
+        "s": 19.13,
+        "e": 19.51
+      },
+      {
+        "w": "bois",
+        "s": 19.53,
+        "e": 19.79
+      },
+      {
+        "w": "shartli",
+        "s": 20.07,
+        "e": 20.45
+      },
+      {
+        "w": "sanash",
+        "s": 20.53,
+        "e": 20.79
+      },
+      {
+        "w": "uchun",
+        "s": 20.81,
+        "e": 21.01
+      },
+      {
+        "w": "CASE",
+        "s": 21.13,
+        "e": 21.47
+      },
+      {
+        "w": "WHEN",
+        "s": 21.53,
+        "e": 21.73
+      },
+      {
+        "w": "ishlatiladi,",
+        "s": 21.77,
+        "e": 22.25
+      },
+      {
+        "w": "DISTINCT",
+        "s": 22.76,
+        "e": 23.16
+      },
+      {
+        "w": "esa",
+        "s": 23.2,
+        "e": 23.38
+      },
+      {
+        "w": "oyna",
+        "s": 23.72,
+        "e": 23.92
+      },
+      {
+        "w": "ichida",
+        "s": 23.94,
+        "e": 24.18
+      },
+      {
+        "w": "ruxsat",
+        "s": 24.24,
+        "e": 24.52
+      },
+      {
+        "w": "etilmagan.",
+        "s": 24.6,
+        "e": 25.08
+      }
+    ]
+  },
+  {
+    "id": "sqlite",
+    "scene": "sqlite_mukammal_frame",
+    "text": "Kutilmaganda, SQLite da GROUPS, EXCLUDE va FILTER to'liq ishlaydi, hamda mavjud oynani kengaytiruvchi oyna zanjiri mavjud.",
+    "show": "Kutilmaganda, SQLite da GROUPS, EXCLUDE va FILTER to'liq ishlaydi, hamda mavjud oynani kengaytiruvchi oyna zanjiri mavjud.",
+    "say": "Kutilmaganda, Es-kyu-layt da grups, eksklyud va filter to'liq ishlaydi, hamda mavjud oynani kengaytiruvchi oyna zanjiri mavjud.",
+    "a0": 25.8,
+    "a1": 32.84,
+    "words": [
+      {
+        "w": "Kutilmaganda,",
+        "s": 25.8,
+        "e": 26.4
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 26.74,
+        "e": 27.18
+      },
+      {
+        "w": "da",
+        "s": 27.24,
+        "e": 27.32
+      },
+      {
+        "w": "grups,",
+        "s": 27.44,
+        "e": 27.78
+      },
+      {
+        "w": "eksklyud",
+        "s": 28.02,
+        "e": 28.48
+      },
+      {
+        "w": "va",
+        "s": 28.56,
+        "e": 28.62
+      },
+      {
+        "w": "filter",
+        "s": 28.76,
+        "e": 29.1
+      },
+      {
+        "w": "to'liq",
+        "s": 29.26,
+        "e": 29.52
+      },
+      {
+        "w": "ishlaydi,",
+        "s": 29.58,
+        "e": 29.88
+      },
+      {
+        "w": "hamda",
+        "s": 29.92,
+        "e": 30.16
+      },
+      {
+        "w": "mavjud",
+        "s": 30.26,
+        "e": 30.6
+      },
+      {
+        "w": "oynani",
+        "s": 30.7,
+        "e": 30.96
+      },
+      {
+        "w": "kengaytiruvchi",
+        "s": 31.02,
+        "e": 31.66
+      },
+      {
+        "w": "oyna",
+        "s": 31.84,
+        "e": 32.04
+      },
+      {
+        "w": "zanjiri",
+        "s": 32.12,
+        "e": 32.46
+      },
+      {
+        "w": "mavjud.",
+        "s": 32.5,
+        "e": 32.84
+      }
+    ]
+  },
+  {
+    "id": "xulosa",
+    "scene": "solishtirma_va_xulosa",
+    "text": "Xulosa qilib aytganda, sukutdagi ramka barcha tizimda bir xil, murakkab ramkalar uchun esa PostgreSQL va SQLite eng boy imkoniyatga ega.",
+    "show": "Xulosa qilib aytganda, sukutdagi ramka barcha tizimda bir xil, murakkab ramkalar uchun esa PostgreSQL va SQLite eng boy imkoniyatga ega.",
+    "say": "Xulosa qilib aytganda, sukutdagi ramka barcha tizimda bir xil, murakkab ramkalar uchun esa Postgres va Es-kyu-layt eng boy imkoniyatga ega.",
+    "a0": 33.69,
+    "a1": 41.38,
+    "words": [
+      {
+        "w": "Xulosa",
+        "s": 33.69,
+        "e": 33.99
+      },
+      {
+        "w": "qilib",
+        "s": 34.01,
+        "e": 34.17
+      },
+      {
+        "w": "aytganda,",
+        "s": 34.19,
+        "e": 34.53
+      },
+      {
+        "w": "sukutdagi",
+        "s": 34.87,
+        "e": 35.33
+      },
+      {
+        "w": "ramka",
+        "s": 35.43,
+        "e": 35.71
+      },
+      {
+        "w": "barcha",
+        "s": 35.85,
+        "e": 36.15
+      },
+      {
+        "w": "tizimda",
+        "s": 36.21,
+        "e": 36.53
+      },
+      {
+        "w": "bir",
+        "s": 36.65,
+        "e": 36.77
+      },
+      {
+        "w": "xil,",
+        "s": 36.83,
+        "e": 36.99
+      },
+      {
+        "w": "murakkab",
+        "s": 37.19,
+        "e": 37.59
+      },
+      {
+        "w": "ramkalar",
+        "s": 37.65,
+        "e": 38.01
+      },
+      {
+        "w": "uchun",
+        "s": 38.05,
+        "e": 38.19
+      },
+      {
+        "w": "esa",
+        "s": 38.23,
+        "e": 38.39
+      },
+      {
+        "w": "Postgres",
+        "s": 38.73,
+        "e": 39.2
+      },
+      {
+        "w": "va",
+        "s": 39.26,
+        "e": 39.32
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 39.6,
+        "e": 40.04
+      },
+      {
+        "w": "eng",
+        "s": 40.24,
+        "e": 40.38
+      },
+      {
+        "w": "boy",
+        "s": 40.44,
+        "e": 40.6
+      },
+      {
+        "w": "imkoniyatga",
+        "s": 40.7,
+        "e": 41.18
+      },
+      {
+        "w": "ega.",
+        "s": 41.24,
+        "e": 41.38
+      }
+    ]
+  }
+]

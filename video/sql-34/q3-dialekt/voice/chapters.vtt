@@ -1,0 +1,16 @@
+WEBVTT
+
+00:00.000 --> 00:13.479
+Dialektlar: Sana Funksiyalaridagi Tafovutlar
+
+00:13.479 --> 00:27.608
+Hafta Kuni va date_trunc Muqobillari
+
+00:27.608 --> 00:40.068
+Bo'sh Kunlar: generate_series vs Rekursiv CTE
+
+00:40.068 --> 00:53.948
+Sanalar Farqi va LAST_DAY Imkoniyatlari
+
+00:53.948 --> 01:10.080
+Joriy Vaqt (now vs NOW vs SYSDATE) va Matritsa

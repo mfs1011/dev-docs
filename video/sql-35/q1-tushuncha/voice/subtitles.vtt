@@ -1,0 +1,26 @@
+WEBVTT
+
+1
+00:01.420 --> 00:11.820
+JSON relyatsion bazalarda yarim strukturalashgan va dinamik ma'lumotlarni saqlash
+imkonini beradi, relyatsion model bilan birga qulay gibrid arxitekturani hosil qiladi.
+
+2
+00:14.630 --> 00:25.020
+Postgresda json tipi matnning aniq nusxasini saqlasa, jsonb ikkilik binar formatda
+tahlil qilib, takror kalitlarni tozalaydi va juda tez o'qilishini ta'minlaydi.
+
+3
+00:28.650 --> 00:39.350
+Tire-katta belgisi elementni JSON formatida, ikkita tire-katta esa toza matn sifatida
+ajratadi, panjara operatorlari esa ichma-ich joylashgan yo'llar bo'yicha qiymat oladi.
+
+4
+00:42.580 --> 00:52.200
+Kuchukcha-katta operatori hujjat ikkinchi JSONni to'liq o'z ichiga olishini tekshirsa,
+so'roq belgisi yuqori darajada kalit yoki massiv elementi borligini aniqlaydi.
+
+5
+00:55.690 --> 01:05.070
+JSON yangilanganda butun qator qulflanadi, shuning uchun tez-tez filtrlanadigan
+maydonlar oddiy ustun bo'lishi, jsonb esa GIN indeksi bilan tezlashtirilishi zarur.

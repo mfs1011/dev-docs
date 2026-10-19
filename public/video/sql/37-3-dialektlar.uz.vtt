@@ -1,0 +1,51 @@
+WEBVTT
+
+1
+00:01.420 --> 00:08.390
+Tashqi kalitlar mantiqi umumiy bo'lsa-da, uchta asosiy
+tizimda indekslash va cheklovlar turlicha ishlaydi.
+
+2
+00:08.730 --> 00:14.680
+Postgres standartga qat'iy amal qilsa, May
+es-kyu-el va Es-kyu-layt o'ziga xos qoidalarga ega.
+
+3
+00:17.550 --> 00:23.620
+May es-kyu-el bola tomondagi tashqi kalit ustuniga
+indeksni avtomatik ravishda o'zi yaratib beradi.
+
+4
+00:23.670 --> 00:29.790
+Biroq unda qisman null qilish sintaksisi yo'q,
+set default amali esa amalda xatolik qaytaradi.
+
+5
+00:32.500 --> 00:37.910
+Es-kyu-laytda tashqi kalitlar sukut bo'yicha o'chiq
+bo'lib, pragma buyrug'i orqali yoqilishi shart.
+
+6
+00:37.900 --> 00:44.070
+Shuningdek, ota kaliti unikal bo'lmagan xatolik jadval
+yaratishda emas, yozuv kiritish paytida aniqlanadi.
+
+7
+00:46.790 --> 00:52.900
+Qiyosiy matritsa har bir tizimning kuchli va ehtiyot
+bo'lish zarur bo'lgan jihatlarini yaqqol ko'rsatadi.
+
+8
+00:53.090 --> 01:00.240
+Postgres aniq xato xabarlari bersa, Es-kyu-layt umumiy,
+May es-kyu-el esa to'liq cheklov ta'rifini qaytaradi.
+
+9
+01:02.990 --> 01:10.010
+Aloqalarni ko'pga-ko'p massivlarda saqlamaslik va
+tarixiy narxni oraliq jadvalga kiritish muhim qoidadir.
+
+10
+01:10.200 --> 01:16.250
+Kaskad siyosatini faqat ajralmas qismlarga
+qo'llab, bola ustunlarini doimo indekslab boring.

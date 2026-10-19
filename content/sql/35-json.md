@@ -4,6 +4,15 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/35-1-tushuncha.jpg">
+    <source src="/video/sql/35-1-tushuncha.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/35-1-tushuncha.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/35-1-tushuncha.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>JSON tushunchasi: json va jsonb farqi, operatorlar (->, ->>, #>>), containment (@>) va GIN indeksi</figcaption>
+</figure>
+
 **JSON** (JavaScript Object Notation) — matnli ma'lumot formati: obyektlar `{"kalit": qiymat}`, massivlar `[…]`, satrlar, sonlar, `true/false`, `null`. Uchala tizim JSON'ni saqlay oladi va uning ichidan qiymat ajrata oladi, lekin buni turlicha qiladi.
 
 ### PostgreSQL: `json` va `jsonb`
@@ -63,6 +72,15 @@ PostgreSQL hujjatiga ko'ra GIN indeksi ko'p `jsonb` hujjatlar ichidan kalit yoki
 Muhim nozik joy: indeks faqat **indekslangan ifodaga to'g'ridan-to'g'ri** qo'llangan operator bilan ishlaydi. `hujjat @> '{…}'` GIN'dan foydalanadi, `hujjat ->> 'shahar' = '…'` esa yo'q — buning uchun alohida ifoda indeksi kerak (43-bob).
 
 ## Kod
+ 
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/35-2-kod.jpg">
+    <source src="/video/sql/35-2-kod.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/35-2-kod.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/35-2-kod.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>JSON amaliyotda: qiymat ajratish, @> va ? filtrlari, JSON_VALUE, JSON_TABLE bilan agregatsiya va GIN indeksi</figcaption>
+</figure>
 
 Misollar PostgreSQL 18.6, MySQL 9.7.2 va SQLite 3.54.0 da ishga tushirilgan. Ustun tipi: PG — `jsonb`, MySQL — `JSON`, SQLite — `text`.
 
@@ -261,6 +279,15 @@ EXPLAIN (COSTS OFF) SELECT id FROM buyurtmalar WHERE hujjat ->> 'shahar' = 'Tosh
 Mazmunan bir xil ikki shart: `@>` GIN'dan foydalandi, `->> … =` — yo'q (ketma-ket o'qishga majbur, hatto o'chirilgan bo'lsa ham: `Disabled: true`). `EXPLAIN` ni o'qish — 45-bob.
 
 ## Dialektlar
+
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/35-3-dialektlar.jpg">
+    <source src="/video/sql/35-3-dialektlar.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/35-3-dialektlar.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/35-3-dialektlar.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>JSON dialektlari: PostgreSQL, MySQL va SQLite tiplari, yo'l sintaksisi, JSON_TABLE vs json_each va indekslash</figcaption>
+</figure>
 
 ### MySQL
 

@@ -4,6 +4,16 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/29-1-tushuncha.jpg">
+    <source src="/video/sql/29-1-tushuncha.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/29-1-tushuncha.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/29-1-tushuncha.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>29.1-video. CTE tushunchasi: WITH sintaksisi, hosila jadvaldan farqlari, materializatsiya va ma'lumotni o'zgartiruvchi CTE</figcaption>
+</figure>
+
+
 **CTE** (Common Table Expression, "umumiy jadval ifodasi") — so'rov boshida `WITH` bilan nom berilgan yordamchi so'rov. MySQL hujjati ta'rifi: bitta operator doirasida mavjud bo'lgan, shu operator ichida (bir necha marta ham) murojaat qilinadigan **nomli vaqtinchalik natija**. SQLite hujjati: CTE — faqat bitta SQL operatori davomida yashaydigan **vaqtinchalik view**.
 
 ```sql
@@ -52,6 +62,16 @@ PostgreSQL'da `WITH` ichida `INSERT`, `UPDATE`, `DELETE`, `MERGE` ham bo'ladi. H
 - bitta qatorni bir operatorda ikki marta o'zgartirish qo'llab-quvvatlanmaydi — qaysi o'zgarish qolishini oldindan aytib bo'lmaydi.
 
 ## Kod
+
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/29-2-kod.jpg">
+    <source src="/video/sql/29-2-kod.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/29-2-kod.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/29-2-kod.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>29.2-video. PostgreSQL 18 da CTE amaliyoti: zanjirli CTE, ustun nomlari, sintaksis xatolari, EXPLAIN rejasi va DELETE + RETURNING</figcaption>
+</figure>
+
 
 Misollar PostgreSQL 18.6, MySQL 9.7.2 va SQLite 3.54.0 da ishga tushirilgan. Jadvallar 27-bobdagidek, qo'shimcha `arxiv` jadvali bilan:
 
@@ -235,6 +255,16 @@ ERROR:  WITH clause containing a data-modifying statement must be at the top lev
 ```
 
 ## Dialektlar
+
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/29-3-dialektlar.jpg">
+    <source src="/video/sql/29-3-dialektlar.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/29-3-dialektlar.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/29-3-dialektlar.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>29.3-video. MySQL va SQLite da CTE: WITH va INSERT cheklovi, 1093 xatosi yechimi, MATERIALIZED maslahati va oldinga murojaat</figcaption>
+</figure>
+
 
 ### MySQL
 

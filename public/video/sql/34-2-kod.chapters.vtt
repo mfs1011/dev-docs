@@ -1,0 +1,16 @@
+WEBVTT
+
+00:00.000 --> 00:13.224
+Jadval va EXTRACT Bilan Hafta Kunini Olish
+
+00:13.224 --> 00:25.155
+Oylik Hisobot: date_trunc Bilan Guruhlash
+
+00:25.155 --> 00:36.723
+15 Daqiqalik Oraliqlar: date_bin
+
+00:36.723 --> 00:48.323
+Bo'sh Kunlarni To'ldirish: generate_series
+
+00:48.323 --> 01:02.420
+Sanalar Farqi (age) va Oy Oxirini Topish

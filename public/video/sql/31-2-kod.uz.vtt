@@ -1,0 +1,31 @@
+WEBVTT
+
+1
+00:01.320 --> 00:04.730
+PostgreSQL 18 da oyna funksiyalarini sinab ko'ramiz: bazamizda
+xodimlarning bo'limi va maoshlari jadvali tayyorlangan.
+
+2
+00:07.380 --> 00:14.380
+PARTITION BY yordamida qatorlarni qisqartirmasdan, har bir xodim
+yoniga uning o'z bo'limidagi o'rtacha maoshni joylashtirdik.
+
+3
+00:17.470 --> 00:25.860
+Teng maoshlarda rank oraliq tashlab to'rtga sakradi, dense_rank
+esa zich davom etdi; WINDOW bandi esa kodni chiroyli qisqartirdi.
+
+4
+00:29.050 --> 00:36.630
+To'g'ridan-to'g'ri WHERE ichida filtrlash xato beradi, ammo ichki
+so'rov orqali har bo'limdan eng ko'p oluvchi ikki xodimni ajratdik.
+
+5
+00:39.860 --> 00:46.860
+Sukut bo'yicha RANGE teng maoshlarni bitta umumiy yig'indi
+qiladi, qat'iy ROWS esa har bir qatorni alohida qo'shib boradi.
+
+6
+00:49.930 --> 00:57.410
+lag orqali maoshlar farqini hisobladik, last_value to'g'ri ishlashi
+uchun esa chegarani UNBOUNDED FOLLOWING gacha kengaytirish shart.

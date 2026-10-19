@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:06.288
+PostgreSQL 18: Sinov Jadvali
+
+00:06.288 --> 00:16.286
+Bo'lim O'rtachasini Har Bir Xodim Yonida Chiqarish
+
+00:16.286 --> 00:27.939
+row_number, rank, dense_rank va WINDOW Bandi
+
+00:27.939 --> 00:38.693
+Har Bo'limdan Top 2 Xodim va WHERE Xatosi
+
+00:38.693 --> 00:48.743
+RANGE vs ROWS: O'sib Boruvchi Yig'indi
+
+00:48.743 --> 01:01.400
+lag, lead va last_value Tuzog'ining Yechimi

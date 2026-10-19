@@ -1,0 +1,727 @@
+[
+  {
+    "scene": "kirish",
+    "id": "intro",
+    "text": "Matn funksiyalarida relyatsion bazalar o'rtasida juda jiddiy farqlar mavjud bo'lib, bitta tizimda ishlagan so'rov boshqasida xato berishi yoki kutilmagan natija qaytarishi mumkin.",
+    "show": "Matn funksiyalarida relyatsion bazalar o'rtasida juda jiddiy farqlar mavjud bo'lib, bitta tizimda ishlagan so'rov boshqasida xato berishi yoki kutilmagan natija qaytarishi mumkin.",
+    "say": "Matn funksiyalarida relyatsion bazalar o'rtasida juda jiddiy farqlar mavjud bo'lib, bitta tizimda ishlagan so'rov boshqasida xato berishi yoki kutilmagan natija qaytarishi mumkin.",
+    "a0": 0.22,
+    "a1": 10.33,
+    "words": [
+      {
+        "w": "Matn",
+        "s": 0.22,
+        "e": 0.5
+      },
+      {
+        "w": "funksiyalarida",
+        "s": 0.56,
+        "e": 1.2
+      },
+      {
+        "w": "relyatsion",
+        "s": 1.48,
+        "e": 1.98
+      },
+      {
+        "w": "bazalar",
+        "s": 2.06,
+        "e": 2.42
+      },
+      {
+        "w": "o'rtasida",
+        "s": 2.5,
+        "e": 2.94
+      },
+      {
+        "w": "juda",
+        "s": 3.24,
+        "e": 3.48
+      },
+      {
+        "w": "jiddiy",
+        "s": 3.58,
+        "e": 3.92
+      },
+      {
+        "w": "farqlar",
+        "s": 4,
+        "e": 4.38
+      },
+      {
+        "w": "mavjud",
+        "s": 4.42,
+        "e": 4.72
+      },
+      {
+        "w": "bo'lib,",
+        "s": 4.74,
+        "e": 4.94
+      },
+      {
+        "w": "bitta",
+        "s": 5.38,
+        "e": 5.66
+      },
+      {
+        "w": "tizimda",
+        "s": 5.7,
+        "e": 6.04
+      },
+      {
+        "w": "ishlagan",
+        "s": 6.08,
+        "e": 6.44
+      },
+      {
+        "w": "so'rov",
+        "s": 6.5,
+        "e": 6.8
+      },
+      {
+        "w": "boshqasida",
+        "s": 6.94,
+        "e": 7.38
+      },
+      {
+        "w": "xato",
+        "s": 7.53,
+        "e": 7.77
+      },
+      {
+        "w": "berishi",
+        "s": 7.89,
+        "e": 8.25
+      },
+      {
+        "w": "yoki",
+        "s": 8.39,
+        "e": 8.59
+      },
+      {
+        "w": "kutilmagan",
+        "s": 8.69,
+        "e": 9.21
+      },
+      {
+        "w": "natija",
+        "s": 9.25,
+        "e": 9.57
+      },
+      {
+        "w": "qaytarishi",
+        "s": 9.63,
+        "e": 10.03
+      },
+      {
+        "w": "mumkin.",
+        "s": 10.05,
+        "e": 10.33
+      }
+    ]
+  },
+  {
+    "scene": "ulash_farqlari",
+    "id": "ulash",
+    "text": "MySQL da vertikal chiziqlar satr ulash emas, balki mantiqiy OR amali hisoblanib nol qaytaradi, shuningdek CONCAT funksiyasiga null uchrasa null beradi, faqat CONCAT_WS barcha tizimda bir xil ishlaydi.",
+    "show": "MySQL da vertikal chiziqlar satr ulash emas, balki mantiqiy OR amali hisoblanib nol qaytaradi, shuningdek CONCAT funksiyasiga null uchrasa null beradi, faqat CONCAT_WS barcha tizimda bir xil ishlaydi.",
+    "say": "May es-kyu-el da vertikal chiziqlar satr ulash emas, balki mantiqiy or amali hisoblanib nol qaytaradi, shuningdek konkat funksiyasiga null uchrasa null beradi, faqat konkat dablyu-es barcha tizimda bir xil ishlaydi.",
+    "a0": 11.31,
+    "a1": 26.04,
+    "words": [
+      {
+        "w": "May",
+        "s": 11.31,
+        "e": 11.47
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 11.49,
+        "e": 11.85
+      },
+      {
+        "w": "da",
+        "s": 11.87,
+        "e": 11.95
+      },
+      {
+        "w": "vertikal",
+        "s": 12.35,
+        "e": 12.79
+      },
+      {
+        "w": "chiziqlar",
+        "s": 12.85,
+        "e": 13.25
+      },
+      {
+        "w": "satr",
+        "s": 13.45,
+        "e": 13.73
+      },
+      {
+        "w": "ulash",
+        "s": 13.81,
+        "e": 14.05
+      },
+      {
+        "w": "emas,",
+        "s": 14.15,
+        "e": 14.43
+      },
+      {
+        "w": "balki",
+        "s": 14.51,
+        "e": 14.75
+      },
+      {
+        "w": "mantiqiy",
+        "s": 15.11,
+        "e": 15.65
+      },
+      {
+        "w": "or",
+        "s": 15.95,
+        "e": 16.11
+      },
+      {
+        "w": "amali",
+        "s": 16.25,
+        "e": 16.49
+      },
+      {
+        "w": "hisoblanib",
+        "s": 16.51,
+        "e": 16.99
+      },
+      {
+        "w": "nol",
+        "s": 17.33,
+        "e": 17.55
+      },
+      {
+        "w": "qaytaradi,",
+        "s": 17.59,
+        "e": 18.03
+      },
+      {
+        "w": "shuningdek",
+        "s": 18.47,
+        "e": 18.83
+      },
+      {
+        "w": "konkat",
+        "s": 19.11,
+        "e": 19.47
+      },
+      {
+        "w": "funksiyasiga",
+        "s": 19.53,
+        "e": 20.11
+      },
+      {
+        "w": "null",
+        "s": 20.55,
+        "e": 20.77
+      },
+      {
+        "w": "uchrasa",
+        "s": 20.85,
+        "e": 21.27
+      },
+      {
+        "w": "null",
+        "s": 21.59,
+        "e": 21.79
+      },
+      {
+        "w": "beradi,",
+        "s": 21.83,
+        "e": 22.13
+      },
+      {
+        "w": "faqat",
+        "s": 22.6,
+        "e": 22.86
+      },
+      {
+        "w": "konkat",
+        "s": 23.16,
+        "e": 23.54
+      },
+      {
+        "w": "dablyu-es",
+        "s": 23.64,
+        "e": 24.24
+      },
+      {
+        "w": "barcha",
+        "s": 24.52,
+        "e": 24.82
+      },
+      {
+        "w": "tizimda",
+        "s": 24.86,
+        "e": 25.2
+      },
+      {
+        "w": "bir",
+        "s": 25.4,
+        "e": 25.52
+      },
+      {
+        "w": "xil",
+        "s": 25.56,
+        "e": 25.68
+      },
+      {
+        "w": "ishlaydi.",
+        "s": 25.7,
+        "e": 26.04
+      }
+    ]
+  },
+  {
+    "scene": "uzunlik_va_registr",
+    "id": "uzunlik",
+    "text": "MySQL dagi LENGTH funksiyasi belgilarni emas baytlarni sanaydi, shuning uchun belgilar soniga CHAR_LENGTH yozish shart, SQLite da esa UPPER va LOWER faqat ASCII harflarga ta'sir qiladi.",
+    "show": "MySQL dagi LENGTH funksiyasi belgilarni emas baytlarni sanaydi, shuning uchun belgilar soniga CHAR_LENGTH yozish shart, SQLite da esa UPPER va LOWER faqat ASCII harflarga ta'sir qiladi.",
+    "say": "May es-kyu-el dagi lengs funksiyasi belgilarni emas baytlarni sanaydi, shuning uchun belgilar soniga char lengs yozish shart, Es-kyu-layt da esa apper va lover faqat aski harflarga ta'sir qiladi.",
+    "a0": 26.84,
+    "a1": 38.67,
+    "words": [
+      {
+        "w": "May",
+        "s": 26.84,
+        "e": 27
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 27.02,
+        "e": 27.38
+      },
+      {
+        "w": "dagi",
+        "s": 27.42,
+        "e": 27.66
+      },
+      {
+        "w": "lengs",
+        "s": 27.94,
+        "e": 28.24
+      },
+      {
+        "w": "funksiyasi",
+        "s": 28.3,
+        "e": 28.78
+      },
+      {
+        "w": "belgilarni",
+        "s": 29.1,
+        "e": 29.6
+      },
+      {
+        "w": "emas",
+        "s": 29.64,
+        "e": 29.86
+      },
+      {
+        "w": "baytlarni",
+        "s": 30.02,
+        "e": 30.5
+      },
+      {
+        "w": "sanaydi,",
+        "s": 30.54,
+        "e": 30.88
+      },
+      {
+        "w": "shuning",
+        "s": 31.16,
+        "e": 31.36
+      },
+      {
+        "w": "uchun",
+        "s": 31.36,
+        "e": 31.5
+      },
+      {
+        "w": "belgilar",
+        "s": 31.6,
+        "e": 32
+      },
+      {
+        "w": "soniga",
+        "s": 32.06,
+        "e": 32.38
+      },
+      {
+        "w": "char",
+        "s": 32.68,
+        "e": 32.94
+      },
+      {
+        "w": "lengs",
+        "s": 33.06,
+        "e": 33.34
+      },
+      {
+        "w": "yozish",
+        "s": 33.36,
+        "e": 33.72
+      },
+      {
+        "w": "shart,",
+        "s": 33.76,
+        "e": 33.98
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 34.46,
+        "e": 34.98
+      },
+      {
+        "w": "da",
+        "s": 35.02,
+        "e": 35.08
+      },
+      {
+        "w": "esa",
+        "s": 35.12,
+        "e": 35.28
+      },
+      {
+        "w": "apper",
+        "s": 35.72,
+        "e": 36.06
+      },
+      {
+        "w": "va",
+        "s": 36.14,
+        "e": 36.22
+      },
+      {
+        "w": "lover",
+        "s": 36.38,
+        "e": 36.66
+      },
+      {
+        "w": "faqat",
+        "s": 36.7,
+        "e": 36.96
+      },
+      {
+        "w": "aski",
+        "s": 37.3,
+        "e": 37.55
+      },
+      {
+        "w": "harflarga",
+        "s": 37.65,
+        "e": 38.09
+      },
+      {
+        "w": "ta'sir",
+        "s": 38.15,
+        "e": 38.39
+      },
+      {
+        "w": "qiladi.",
+        "s": 38.43,
+        "e": 38.67
+      }
+    ]
+  },
+  {
+    "scene": "kesish_va_format",
+    "id": "kesish",
+    "text": "Postgresdagi SPLIT_PART o'rniga MySQL da SUBSTRING_INDEX, SQLite da esa SUBSTR va INSTR birikmasi ishlatiladi, LPAD funksiyasi yo'q SQLite da esa PRINTF dan foydalaniladi.",
+    "show": "Postgresdagi SPLIT_PART o'rniga MySQL da SUBSTRING_INDEX, SQLite da esa SUBSTR va INSTR birikmasi ishlatiladi, LPAD funksiyasi yo'q SQLite da esa PRINTF dan foydalaniladi.",
+    "say": "Postgresdagi split part o'rniga May es-kyu-el da sabstring indeks, Es-kyu-layt da esa sabstr va instr birikmasi ishlatiladi, el-ped funksiyasi yo'q Es-kyu-layt da esa printf dan foydalaniladi.",
+    "a0": 39.39,
+    "a1": 51.11,
+    "words": [
+      {
+        "w": "Postgresdagi",
+        "s": 39.39,
+        "e": 40.05
+      },
+      {
+        "w": "split",
+        "s": 40.31,
+        "e": 40.65
+      },
+      {
+        "w": "part",
+        "s": 40.73,
+        "e": 40.93
+      },
+      {
+        "w": "o'rniga",
+        "s": 41.03,
+        "e": 41.37
+      },
+      {
+        "w": "May",
+        "s": 41.59,
+        "e": 41.75
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 41.79,
+        "e": 42.15
+      },
+      {
+        "w": "da",
+        "s": 42.19,
+        "e": 42.27
+      },
+      {
+        "w": "sabstring",
+        "s": 42.53,
+        "e": 43.05
+      },
+      {
+        "w": "indeks,",
+        "s": 43.15,
+        "e": 43.55
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 43.95,
+        "e": 44.47
+      },
+      {
+        "w": "da",
+        "s": 44.49,
+        "e": 44.55
+      },
+      {
+        "w": "esa",
+        "s": 44.61,
+        "e": 44.75
+      },
+      {
+        "w": "sabstr",
+        "s": 45.09,
+        "e": 45.51
+      },
+      {
+        "w": "va",
+        "s": 45.59,
+        "e": 45.65
+      },
+      {
+        "w": "instr",
+        "s": 45.85,
+        "e": 46.17
+      },
+      {
+        "w": "birikmasi",
+        "s": 46.21,
+        "e": 46.59
+      },
+      {
+        "w": "ishlatiladi,",
+        "s": 46.63,
+        "e": 47.09
+      },
+      {
+        "w": "el-ped",
+        "s": 47.55,
+        "e": 47.91
+      },
+      {
+        "w": "funksiyasi",
+        "s": 47.95,
+        "e": 48.37
+      },
+      {
+        "w": "yo'q",
+        "s": 48.43,
+        "e": 48.61
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 48.93,
+        "e": 49.41
+      },
+      {
+        "w": "da",
+        "s": 49.43,
+        "e": 49.49
+      },
+      {
+        "w": "esa",
+        "s": 49.55,
+        "e": 49.69
+      },
+      {
+        "w": "printf",
+        "s": 49.93,
+        "e": 50.21
+      },
+      {
+        "w": "dan",
+        "s": 50.27,
+        "e": 50.39
+      },
+      {
+        "w": "foydalaniladi.",
+        "s": 50.45,
+        "e": 51.11
+      }
+    ]
+  },
+  {
+    "scene": "regex_va_xulosa",
+    "id": "regex",
+    "text": "Postgresda REGEXP_REPLACE da g bayrog'i shart bo'lsa, MySQL sukutda barchasini tozalaydi, SQLite da esa o'rnatilgan REGEXP yo'q bo'lib, portativ kodda har doim standart funksiyalarni tanlash zarur.",
+    "show": "Postgresda REGEXP_REPLACE da g bayrog'i shart bo'lsa, MySQL sukutda barchasini tozalaydi, SQLite da esa o'rnatilgan REGEXP yo'q bo'lib, portativ kodda har doim standart funksiyalarni tanlash zarur.",
+    "say": "Postgresda reg-eks ripleys da ji bayrog'i shart bo'lsa, May es-kyu-el sukutda barchasini tozalaydi, Es-kyu-layt da esa o'rnatilgan reg-eks yo'q bo'lib, portativ kodda har doim standart funksiyalarni tanlash zarur.",
+    "a0": 51.59,
+    "a1": 64.16,
+    "words": [
+      {
+        "w": "Postgresda",
+        "s": 51.59,
+        "e": 52.11
+      },
+      {
+        "w": "reg-eks",
+        "s": 52.37,
+        "e": 52.76
+      },
+      {
+        "w": "ripleys",
+        "s": 52.88,
+        "e": 53.22
+      },
+      {
+        "w": "da",
+        "s": 53.26,
+        "e": 53.36
+      },
+      {
+        "w": "ji",
+        "s": 53.64,
+        "e": 53.76
+      },
+      {
+        "w": "bayrog'i",
+        "s": 53.86,
+        "e": 54.24
+      },
+      {
+        "w": "shart",
+        "s": 54.3,
+        "e": 54.5
+      },
+      {
+        "w": "bo'lsa,",
+        "s": 54.54,
+        "e": 54.78
+      },
+      {
+        "w": "May",
+        "s": 55.1,
+        "e": 55.26
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 55.3,
+        "e": 55.64
+      },
+      {
+        "w": "sukutda",
+        "s": 55.9,
+        "e": 56.3
+      },
+      {
+        "w": "barchasini",
+        "s": 56.4,
+        "e": 56.92
+      },
+      {
+        "w": "tozalaydi,",
+        "s": 56.96,
+        "e": 57.42
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 57.92,
+        "e": 58.44
+      },
+      {
+        "w": "da",
+        "s": 58.46,
+        "e": 58.52
+      },
+      {
+        "w": "esa",
+        "s": 58.56,
+        "e": 58.72
+      },
+      {
+        "w": "o'rnatilgan",
+        "s": 58.94,
+        "e": 59.48
+      },
+      {
+        "w": "reg-eks",
+        "s": 59.6,
+        "e": 59.94
+      },
+      {
+        "w": "yo'q",
+        "s": 60.04,
+        "e": 60.18
+      },
+      {
+        "w": "bo'lib,",
+        "s": 60.24,
+        "e": 60.44
+      },
+      {
+        "w": "portativ",
+        "s": 60.72,
+        "e": 61.15
+      },
+      {
+        "w": "kodda",
+        "s": 61.23,
+        "e": 61.51
+      },
+      {
+        "w": "har",
+        "s": 61.65,
+        "e": 61.85
+      },
+      {
+        "w": "doim",
+        "s": 61.89,
+        "e": 62.13
+      },
+      {
+        "w": "standart",
+        "s": 62.19,
+        "e": 62.65
+      },
+      {
+        "w": "funksiyalarni",
+        "s": 62.69,
+        "e": 63.25
+      },
+      {
+        "w": "tanlash",
+        "s": 63.54,
+        "e": 63.9
+      },
+      {
+        "w": "zarur.",
+        "s": 63.92,
+        "e": 64.16
+      }
+    ]
+  }
+]

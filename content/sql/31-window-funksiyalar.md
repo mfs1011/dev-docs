@@ -4,6 +4,15 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/31-1-tushuncha.jpg">
+    <source src="/video/sql/31-1-tushuncha.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/31-1-tushuncha.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/31-1-tushuncha.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>Oyna funksiyalari tushunchasi: OVER, PARTITION BY, ORDER BY, ROWS, RANGE va GROUPS ramkalari</figcaption>
+</figure>
+
 **Window funksiya** (oyna funksiyasi) joriy qator bilan qandaydir bog'liq qatorlar to'plami ustida hisob qiladi. PostgreSQL hujjatiga ko'ra bu agregat funksiyaga o'xshaydi, lekin bitta farqi bor: qatorlar **bitta qatorga guruhlanmaydi**, har biri natijada alohida qoladi.
 
 | | `GROUP BY` + agregat (26-bob) | Window funksiya |
@@ -89,6 +98,15 @@ SELECT sum(x) OVER w, avg(x) OVER w FROM t WINDOW w AS (PARTITION BY … ORDER B
 ```
 
 ## Kod
+
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/31-2-kod.jpg">
+    <source src="/video/sql/31-2-kod.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/31-2-kod.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/31-2-kod.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>Amaliy kod: bo'lim o'rtachasi, reytinglar, running sum, lag/lead va last_value tuzog'i</figcaption>
+</figure>
 
 Misollar PostgreSQL 18.6, MySQL 9.7.2 va SQLite 3.54.0 da ishga tushirilgan. Jadval — PostgreSQL hujjatidagi `empsalary`:
 
@@ -358,6 +376,15 @@ FROM empsalary ORDER BY salary, empno;
 `develop` da 4500 dan katta maoshlilar 3 ta (har qatorda `3`). `ntile(3)` 10 qatorni 4 + 3 + 3 ga bo'ldi.
 
 ## Dialektlar
+
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/31-3-dialektlar.jpg">
+    <source src="/video/sql/31-3-dialektlar.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/31-3-dialektlar.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/31-3-dialektlar.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>Dialektlar: MySQL 1235 xatosi (GROUPS/EXCLUDE), CASE WHEN va SQLite oyna zanjiri</figcaption>
+</figure>
 
 ### MySQL
 

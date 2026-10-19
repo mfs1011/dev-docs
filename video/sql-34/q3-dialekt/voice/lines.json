@@ -1,0 +1,627 @@
+[
+  {
+    "scene": "kirish",
+    "id": "intro",
+    "text": "Sana funksiyalarida relyatsion bazalar o'rtasida katta tafovutlar mavjud bo'lib, saqlash tipi, hafta kunini raqamlash va yaxlitlash mexanizmlari jiddiy farq qiladi.",
+    "show": "Sana funksiyalarida relyatsion bazalar o'rtasida katta tafovutlar mavjud bo'lib, saqlash tipi, hafta kunini raqamlash va yaxlitlash mexanizmlari jiddiy farq qiladi.",
+    "say": "Sana funksiyalarida relyatsion bazalar o'rtasida katta tafovutlar mavjud bo'lib, saqlash tipi, hafta kunini raqamlash va yaxlitlash mexanizmlari jiddiy farq qiladi.",
+    "a0": 0.28,
+    "a1": 10.15,
+    "words": [
+      {
+        "w": "Sana",
+        "s": 0.28,
+        "e": 0.48
+      },
+      {
+        "w": "funksiyalarida",
+        "s": 0.54,
+        "e": 1.22
+      },
+      {
+        "w": "relyatsion",
+        "s": 1.5,
+        "e": 2.02
+      },
+      {
+        "w": "bazalar",
+        "s": 2.1,
+        "e": 2.48
+      },
+      {
+        "w": "o'rtasida",
+        "s": 2.56,
+        "e": 3.02
+      },
+      {
+        "w": "katta",
+        "s": 3.26,
+        "e": 3.56
+      },
+      {
+        "w": "tafovutlar",
+        "s": 3.64,
+        "e": 4.2
+      },
+      {
+        "w": "mavjud",
+        "s": 4.24,
+        "e": 4.54
+      },
+      {
+        "w": "bo'lib,",
+        "s": 4.58,
+        "e": 4.8
+      },
+      {
+        "w": "saqlash",
+        "s": 5.22,
+        "e": 5.62
+      },
+      {
+        "w": "tipi,",
+        "s": 5.66,
+        "e": 5.9
+      },
+      {
+        "w": "hafta",
+        "s": 6.32,
+        "e": 6.58
+      },
+      {
+        "w": "kunini",
+        "s": 6.62,
+        "e": 6.9
+      },
+      {
+        "w": "raqamlash",
+        "s": 6.94,
+        "e": 7.53
+      },
+      {
+        "w": "va",
+        "s": 7.69,
+        "e": 7.75
+      },
+      {
+        "w": "yaxlitlash",
+        "s": 7.85,
+        "e": 8.35
+      },
+      {
+        "w": "mexanizmlari",
+        "s": 8.39,
+        "e": 9.05
+      },
+      {
+        "w": "jiddiy",
+        "s": 9.21,
+        "e": 9.55
+      },
+      {
+        "w": "farq",
+        "s": 9.67,
+        "e": 9.85
+      },
+      {
+        "w": "qiladi.",
+        "s": 9.87,
+        "e": 10.15
+      }
+    ]
+  },
+  {
+    "scene": "hafta_kuni_va_trunc",
+    "id": "hafta_kuni",
+    "text": "MySQL da date_trunc yo'qligi sababli oy boshi uchun DATE_FORMAT satrga aylantiriladi, hafta kunida esa MySQL dushanbaga ikki yoki nol qiymatini beradi.",
+    "show": "MySQL da date_trunc yo'qligi sababli oy boshi uchun DATE_FORMAT satrga aylantiriladi, hafta kunida esa MySQL dushanbaga ikki yoki nol qiymatini beradi.",
+    "say": "May es-kyu-el da deyt trank yo'qligi sababli oy boshi uchun deyt format satrga aylantiriladi, hafta kunida esa May es-kyu-el dushanbaga ikki yoki nol qiymatini beradi.",
+    "a0": 11.15,
+    "a1": 21.37,
+    "words": [
+      {
+        "w": "May",
+        "s": 11.15,
+        "e": 11.31
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 11.33,
+        "e": 11.67
+      },
+      {
+        "w": "da",
+        "s": 11.71,
+        "e": 11.79
+      },
+      {
+        "w": "deyt",
+        "s": 12.07,
+        "e": 12.27
+      },
+      {
+        "w": "trank",
+        "s": 12.31,
+        "e": 12.55
+      },
+      {
+        "w": "yo'qligi",
+        "s": 12.61,
+        "e": 12.91
+      },
+      {
+        "w": "sababli",
+        "s": 12.95,
+        "e": 13.31
+      },
+      {
+        "w": "oy",
+        "s": 13.53,
+        "e": 13.63
+      },
+      {
+        "w": "boshi",
+        "s": 13.69,
+        "e": 13.91
+      },
+      {
+        "w": "uchun",
+        "s": 13.97,
+        "e": 14.19
+      },
+      {
+        "w": "deyt",
+        "s": 14.59,
+        "e": 14.85
+      },
+      {
+        "w": "format",
+        "s": 14.97,
+        "e": 15.31
+      },
+      {
+        "w": "satrga",
+        "s": 15.39,
+        "e": 15.75
+      },
+      {
+        "w": "aylantiriladi,",
+        "s": 15.79,
+        "e": 16.35
+      },
+      {
+        "w": "hafta",
+        "s": 16.91,
+        "e": 17.13
+      },
+      {
+        "w": "kunida",
+        "s": 17.17,
+        "e": 17.41
+      },
+      {
+        "w": "esa",
+        "s": 17.49,
+        "e": 17.67
+      },
+      {
+        "w": "May",
+        "s": 17.87,
+        "e": 18.03
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 18.07,
+        "e": 18.41
+      },
+      {
+        "w": "dushanbaga",
+        "s": 18.73,
+        "e": 19.27
+      },
+      {
+        "w": "ikki",
+        "s": 19.49,
+        "e": 19.79
+      },
+      {
+        "w": "yoki",
+        "s": 19.79,
+        "e": 20.21
+      },
+      {
+        "w": "nol",
+        "s": 20.45,
+        "e": 20.63
+      },
+      {
+        "w": "qiymatini",
+        "s": 20.69,
+        "e": 21.07
+      },
+      {
+        "w": "beradi.",
+        "s": 21.09,
+        "e": 21.37
+      }
+    ]
+  },
+  {
+    "scene": "bosh_kunlar_va_cte",
+    "id": "bosh_kunlar",
+    "text": "Postgresdagi generate_series muqobili sifatida MySQL va SQLite da rekursiv CTE yordamida uzluksiz kunlar ro'yxati generatsiya qilinadi.",
+    "show": "Postgresdagi generate_series muqobili sifatida MySQL va SQLite da rekursiv CTE yordamida uzluksiz kunlar ro'yxati generatsiya qilinadi.",
+    "say": "Postgresdagi jenerayt siris muqobili sifatida May es-kyu-el va Es-kyu-layt da rekursiv si-ti-i yordamida uzluksiz kunlar ro'yxati generatsiya qilinadi.",
+    "a0": 22.54,
+    "a1": 31.16,
+    "words": [
+      {
+        "w": "Postgresdagi",
+        "s": 22.54,
+        "e": 23.22
+      },
+      {
+        "w": "jenerayt",
+        "s": 23.46,
+        "e": 23.82
+      },
+      {
+        "w": "siris",
+        "s": 23.9,
+        "e": 24.18
+      },
+      {
+        "w": "muqobili",
+        "s": 24.24,
+        "e": 24.62
+      },
+      {
+        "w": "sifatida",
+        "s": 24.66,
+        "e": 25.02
+      },
+      {
+        "w": "May",
+        "s": 25.4,
+        "e": 25.56
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 25.58,
+        "e": 25.94
+      },
+      {
+        "w": "va",
+        "s": 26.1,
+        "e": 26.16
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 26.3,
+        "e": 26.8
+      },
+      {
+        "w": "da",
+        "s": 26.84,
+        "e": 26.94
+      },
+      {
+        "w": "rekursiv",
+        "s": 27.24,
+        "e": 27.76
+      },
+      {
+        "w": "si-ti-i",
+        "s": 27.84,
+        "e": 28.24
+      },
+      {
+        "w": "yordamida",
+        "s": 28.24,
+        "e": 28.84
+      },
+      {
+        "w": "uzluksiz",
+        "s": 29.08,
+        "e": 29.58
+      },
+      {
+        "w": "kunlar",
+        "s": 29.62,
+        "e": 29.92
+      },
+      {
+        "w": "ro'yxati",
+        "s": 29.94,
+        "e": 30.34
+      },
+      {
+        "w": "generatsiya",
+        "s": 30.4,
+        "e": 30.84
+      },
+      {
+        "w": "qilinadi.",
+        "s": 30.84,
+        "e": 31.16
+      }
+    ]
+  },
+  {
+    "scene": "farq_va_oy_oxiri",
+    "id": "farq",
+    "text": "Sanalar farqida MySQL TIMESTAMPDIFF va DATEDIFF dan foydalansa, oy oxirini topish uchun MySQL da LAST_DAY, SQLite da esa end of month modifikatori mavjud.",
+    "show": "Sanalar farqida MySQL TIMESTAMPDIFF va DATEDIFF dan foydalansa, oy oxirini topish uchun MySQL da LAST_DAY, SQLite da esa end of month modifikatori mavjud.",
+    "say": "Sanalar farqida May es-kyu-el taym-stemp diff va deyt diff dan foydalansa, oy oxirini topish uchun May es-kyu-el da lest deyt, Es-kyu-layt da esa end of mans modifikatori mavjud.",
+    "a0": 32.16,
+    "a1": 42.25,
+    "words": [
+      {
+        "w": "Sanalar",
+        "s": 32.16,
+        "e": 32.52
+      },
+      {
+        "w": "farqida",
+        "s": 32.56,
+        "e": 32.94
+      },
+      {
+        "w": "May",
+        "s": 33.2,
+        "e": 33.36
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 33.38,
+        "e": 33.76
+      },
+      {
+        "w": "taym-stemp",
+        "s": 33.9,
+        "e": 34.42
+      },
+      {
+        "w": "diff",
+        "s": 34.46,
+        "e": 34.64
+      },
+      {
+        "w": "va",
+        "s": 34.78,
+        "e": 34.84
+      },
+      {
+        "w": "deyt",
+        "s": 35.02,
+        "e": 35.24
+      },
+      {
+        "w": "diff",
+        "s": 35.3,
+        "e": 35.44
+      },
+      {
+        "w": "dan",
+        "s": 35.5,
+        "e": 35.62
+      },
+      {
+        "w": "foydalansa,",
+        "s": 35.66,
+        "e": 36.17
+      },
+      {
+        "w": "oy",
+        "s": 36.61,
+        "e": 36.73
+      },
+      {
+        "w": "oxirini",
+        "s": 36.83,
+        "e": 37.15
+      },
+      {
+        "w": "topish",
+        "s": 37.19,
+        "e": 37.41
+      },
+      {
+        "w": "uchun",
+        "s": 37.45,
+        "e": 37.67
+      },
+      {
+        "w": "May",
+        "s": 37.75,
+        "e": 37.91
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 37.93,
+        "e": 38.27
+      },
+      {
+        "w": "da",
+        "s": 38.31,
+        "e": 38.39
+      },
+      {
+        "w": "lest",
+        "s": 38.71,
+        "e": 38.95
+      },
+      {
+        "w": "deyt,",
+        "s": 39.03,
+        "e": 39.29
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 39.59,
+        "e": 40.07
+      },
+      {
+        "w": "da",
+        "s": 40.09,
+        "e": 40.15
+      },
+      {
+        "w": "esa",
+        "s": 40.21,
+        "e": 40.37
+      },
+      {
+        "w": "end",
+        "s": 40.71,
+        "e": 40.89
+      },
+      {
+        "w": "of",
+        "s": 40.93,
+        "e": 41.03
+      },
+      {
+        "w": "mans",
+        "s": 41.11,
+        "e": 41.33
+      },
+      {
+        "w": "modifikatori",
+        "s": 41.39,
+        "e": 41.95
+      },
+      {
+        "w": "mavjud.",
+        "s": 41.97,
+        "e": 42.25
+      }
+    ]
+  },
+  {
+    "scene": "joriy_vaqt_va_matritsa",
+    "id": "joriy_vaqt",
+    "text": "Joriy vaqtda Postgresdagi now tranzaksiya boshini anglatsa, MySQL dagi NOW faqat operator boshini beradi, portativ kodda esa sanalarni satrga aylantirmaslik tavsiya etiladi.",
+    "show": "Joriy vaqtda Postgresdagi now tranzaksiya boshini anglatsa, MySQL dagi NOW faqat operator boshini beradi, portativ kodda esa sanalarni satrga aylantirmaslik tavsiya etiladi.",
+    "say": "Joriy vaqtda Postgresdagi now tranzaksiya boshini anglatsa, May es-kyu-el dagi NOW faqat operator boshini beradi, portativ kodda esa sanalarni satrga aylantirmaslik tavsiya etiladi.",
+    "a0": 43.25,
+    "a1": 53.62,
+    "words": [
+      {
+        "w": "Joriy",
+        "s": 43.25,
+        "e": 43.47
+      },
+      {
+        "w": "vaqtda",
+        "s": 43.51,
+        "e": 43.83
+      },
+      {
+        "w": "Postgresdagi",
+        "s": 43.99,
+        "e": 44.63
+      },
+      {
+        "w": "now",
+        "s": 44.87,
+        "e": 45.09
+      },
+      {
+        "w": "tranzaksiya",
+        "s": 45.27,
+        "e": 45.81
+      },
+      {
+        "w": "boshini",
+        "s": 45.85,
+        "e": 46.15
+      },
+      {
+        "w": "anglatsa,",
+        "s": 46.17,
+        "e": 46.55
+      },
+      {
+        "w": "May",
+        "s": 46.95,
+        "e": 47.11
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 47.13,
+        "e": 47.41
+      },
+      {
+        "w": "dagi",
+        "s": 47.45,
+        "e": 47.65
+      },
+      {
+        "w": "NOW",
+        "s": 47.73,
+        "e": 47.9
+      },
+      {
+        "w": "faqat",
+        "s": 47.94,
+        "e": 48.26
+      },
+      {
+        "w": "operator",
+        "s": 48.42,
+        "e": 48.84
+      },
+      {
+        "w": "boshini",
+        "s": 48.88,
+        "e": 49.18
+      },
+      {
+        "w": "beradi,",
+        "s": 49.2,
+        "e": 49.48
+      },
+      {
+        "w": "portativ",
+        "s": 50,
+        "e": 50.44
+      },
+      {
+        "w": "kodda",
+        "s": 50.5,
+        "e": 50.78
+      },
+      {
+        "w": "esa",
+        "s": 50.84,
+        "e": 51
+      },
+      {
+        "w": "sanalarni",
+        "s": 51.26,
+        "e": 51.72
+      },
+      {
+        "w": "satrga",
+        "s": 51.78,
+        "e": 52.2
+      },
+      {
+        "w": "aylantirmaslik",
+        "s": 52.3,
+        "e": 52.98
+      },
+      {
+        "w": "tavsiya",
+        "s": 53.02,
+        "e": 53.3
+      },
+      {
+        "w": "etiladi.",
+        "s": 53.3,
+        "e": 53.62
+      }
+    ]
+  }
+]

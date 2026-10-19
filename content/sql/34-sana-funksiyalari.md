@@ -4,6 +4,15 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/34-1-tushuncha.jpg">
+    <source src="/video/sql/34-1-tushuncha.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/34-1-tushuncha.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/34-1-tushuncha.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>Sana funksiyalari tushunchasi: EXTRACT, date_trunc, date_bin, bo'sh kunlarni to'ldirish va tranzaksiya vaqti</figcaption>
+</figure>
+
 8-bobda sana va vaqt **tiplari**, vaqt zonalari va interval arifmetikasi ko'rildi. Bu bobda sanalar bilan ishlaydigan **funksiyalar**: qismini ajratish, yaxlitlash (oy, soat, 15 daqiqa bo'yicha), ikki sana orasidagi farq, joriy vaqt va bo'sh kunlarni to'ldirish. Hisobotlarning ko'pchiligi aynan shulardan quriladi: "har oy bo'yicha savdo", "har kun, savdo bo'lmagan kunlar ham".
 
 ### Qismini ajratish: `extract`
@@ -55,6 +64,15 @@ Hujjat: "Boshqa ma'lumotlar bazalari bu qiymatlarni tez-tez yangilashi mumkin". 
 - MySQL va SQLite'da `generate_series` yo'q — rekursiv CTE (30-bob).
 
 ## Kod
+
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/34-2-kod.jpg">
+    <source src="/video/sql/34-2-kod.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/34-2-kod.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/34-2-kod.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>Sana funksiyalari amaliyotda: EXTRACT, date_trunc bilan oylik hisobot, date_bin va generate_series</figcaption>
+</figure>
 
 Misollar PostgreSQL 18.6, MySQL 9.7.2 va SQLite 3.54.0 da ishga tushirilgan. MySQL'da ustun tipi `DATETIME`, SQLite'da `text` (ISO 8601, 8-bob).
 
@@ -217,6 +235,15 @@ COMMIT;
 0.1 soniyadan keyin ham `now()` tranzaksiya boshidagi qiymatda qoldi; `statement_timestamp()` esa yangi operator bilan oldinga ketdi.
 
 ## Dialektlar
+
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/34-3-dialektlar.jpg">
+    <source src="/video/sql/34-3-dialektlar.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/34-3-dialektlar.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/34-3-dialektlar.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>Dialektlar tafovuti: MySQL va SQLite dagi muqobillar, hafta kuni farqlari va solishtirma matritsa</figcaption>
+</figure>
 
 ### MySQL
 

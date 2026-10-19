@@ -1,0 +1,51 @@
+WEBVTT
+
+1
+00:01.420 --> 00:06.990
+Maqolalar jadvalida matnli teglar va sonli
+baholar massiv ustunlari sifatida saqlanadi.
+
+2
+00:07.440 --> 00:12.980
+Birinchi indeks elementni oladi, o'z ichiga olish va
+kesishish operatorlari esa qidiruvni osonlashtiradi.
+
+3
+00:16.390 --> 00:21.800
+unnest funksiyasi massiv elementlarini alohida
+relyatsion qatorlarga yoyib, guruhlash imkonini beradi.
+
+4
+00:22.230 --> 00:27.470
+array_agg funksiyasi esa aksincha, qatorlardagi
+qiymatlarni bitta massivga yig'ib beradi.
+
+5
+00:30.780 --> 00:36.290
+daterange oraliqlari diskret sanalarni avtomatik
+ravishda yarim ochiq kanonik formatda saqlaydi.
+
+6
+00:36.840 --> 00:42.270
+Ikki oraliq kesishishini tekshirish uchun ikkita
+ampersand, birlashtirish uchun esa multirange ishlatiladi.
+
+7
+00:45.440 --> 00:51.480
+Mehmonxona xonalarini bron qilishda EXCLUDE cheklovi bir
+xonaga vaqti kesishuvchi oraliq kiritilishini bloklaydi.
+
+8
+00:52.010 --> 00:56.720
+Baza darajasidagi bunday cheklov poyga holatlari
+va xatolarning oldini ishonchli oladi.
+
+9
+00:59.910 --> 01:04.650
+Telefon raqami va musbat summa domenlari noto'g'ri
+qiymat kiritilganda darhol xatolik chiqaradi.
+
+10
+01:05.100 --> 01:10.190
+Kompozit manzil tipidagi maydonlarga esa
+qavsli ifoda orqali to'g'ri murojaat qilinadi.

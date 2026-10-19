@@ -4,6 +4,16 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/30-1-tushuncha.jpg">
+    <source src="/video/sql/30-1-tushuncha.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/30-1-tushuncha.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/30-1-tushuncha.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>30.1-video. Rekursiv CTE tushunchasi: WITH RECURSIVE, ishchi jadval algoritmi, daraxt va graflar</figcaption>
+</figure>
+
+
 PostgreSQL hujjatiga ko'ra `RECURSIVE` `WITH` ni oddiy qulaylikdan standart SQL'da boshqa yo'l bilan qilib bo'lmaydigan imkoniyatga aylantiradi: CTE **o'z natijasiga** murojaat qila oladi. SQLite hujjati: rekursiv CTE daraxt (tree) va graf (graph) bo'ylab yurish imkonini beradi.
 
 **Daraxt** — har element bitta "ota"ga ega bo'lgan ierarxiya: tashkilot tuzilmasi, kategoriyalar, izohga javoblar. **Graf** — elementlar orasidagi ixtiyoriy bog'lanishlar: yo'llar, do'stlik, bog'liqliklar. Grafda **aylana** (cycle) bo'lishi mumkin: A → B → C → A.
@@ -59,6 +69,16 @@ PostgreSQL hujjatiga ko'ra so'rov qatorlarni qaysi tartibda "ko'rishi"ni boshqar
 Hujjatga ko'ra ba'zan `UNION ALL` o'rniga `UNION` yetarli: takror qatorlar tashlanadi va aylana to'xtaydi. Lekin qatorda `qadam` kabi har safar o'zgaradigan ustun bo'lsa, qatorlar to'liq takrorlanmaydi va `UNION` yordam bermaydi. Standart yo'l — **o'tilgan nuqtalar ro'yxatini** saqlab, yangi nuqta unda bor-yo'qligini tekshirish.
 
 ## Kod
+
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/30-2-kod.jpg">
+    <source src="/video/sql/30-2-kod.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/30-2-kod.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/30-2-kod.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>30.2-video. PostgreSQL 18: Amaliy rekursiv CTE, sonlar ketma-ketligi, tashkilot daraxti, SEARCH va CYCLE</figcaption>
+</figure>
+
 
 Misollar PostgreSQL 18.6, MySQL 9.7.2 va SQLite 3.54.0 da ishga tushirilgan. Daraxt — SQLite hujjatidagi `org` jadvali; graf — aylanali yo'llar:
 
@@ -329,6 +349,16 @@ ERROR:  aggregate functions are not allowed in a recursive query's recursive ter
 ```
 
 ## Dialektlar
+
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/30-3-dialektlar.jpg">
+    <source src="/video/sql/30-3-dialektlar.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/30-3-dialektlar.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/30-3-dialektlar.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>30.3-video. MySQL va SQLite da rekursiv CTE: VALUES ROW talabi, navbat algoritmi va ichki ORDER BY</figcaption>
+</figure>
+
 
 ### MySQL
 

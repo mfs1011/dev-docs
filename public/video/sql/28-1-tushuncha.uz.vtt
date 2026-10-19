@@ -1,0 +1,36 @@
+WEBVTT
+
+1
+00:01.400 --> 00:12.360
+SQL da set amallari ikki so'rov natijasini bitta natijaga birlashtiradi. JOIN ustunlar
+bo'yicha yonma-yon qo'shsa, set amallari qatorlar bo'yicha ustma-ust qo'shadi.
+
+2
+00:15.410 --> 00:25.920
+Uchta asosiy amal mavjud: UNION barcha qatorlarni birlashtiradi, INTERSECT umumiy
+kesishmani oladi, EXCEPT esa birinchi natijadan ikkinchisini ayirib tashlaydi.
+
+3
+00:28.860 --> 00:37.550
+Sukut bo'yicha bu amallar takror qatorlarni olib tashlaydi. Agar ALL kalit
+so'zi qo'shilsa, barcha takrorlar matematik aniqlikda saqlanib qoladi.
+
+4
+00:39.000 --> 00:44.510
+Set amallarida NULL qiymatlar teng deb hisoblanadi
+va takror deb topilib, bittasi qoldiriladi.
+
+5
+00:47.370 --> 00:56.520
+Ikki so'rov mos bo'lishi shart: ustunlar soni bir xil va tiplari bir-biriga to'g'ri
+kelishi kerak. Natija ustunlarining nomlari esa har doim birinchi so'rovdan olinadi.
+
+6
+00:57.850 --> 01:06.490
+Matematik ustuvorlikka ko'ra, INTERSECT amali har doim UNION va EXCEPT
+dan avval bajariladi. EXCEPT esa o'rin almashtirishga chidamsizdir.
+
+7
+01:09.680 --> 01:18.150
+Oxirdagi ORDER BY va LIMIT butun birlashgan natijaga tegishli bo'ladi.
+Alohida qismga cheklov berish uchun shu qism qavsga olinishi lozim.

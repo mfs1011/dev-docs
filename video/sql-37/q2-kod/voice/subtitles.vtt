@@ -1,0 +1,51 @@
+WEBVTT
+
+1
+00:01.420 --> 00:08.150
+Mijozlar jadvaliga birga-bir aloqador profil yaratishda
+mijoz ID sini birlamchi va tashqi kalit qilamiz.
+
+2
+00:08.260 --> 00:14.020
+Aynan bir mijozga ikkinchi profil qo'shmoqchi
+bo'lsak, unikal cheklov buzilib xato qaytariladi.
+
+3
+00:16.930 --> 00:22.980
+Buyurtmalar jadvali birga-ko'p aloqada bo'lsa,
+mahsulotlar bilan munosabat oraliq jadvalda saqlanadi.
+
+4
+00:23.110 --> 00:29.530
+Oraliq jadvalda sotilgan paytdagi narx atributi
+saqlanishi tarixiy hisobotlar aniqligini ta'minlaydi.
+
+5
+00:32.400 --> 00:37.690
+Buyurtma o'chirilganda kaskad qoidasi tufayli
+uning barcha qatorlari ham avtomatik o'chiriladi.
+
+6
+00:37.720 --> 00:42.850
+Ammo buyurtmasi bor mahsulotni o'chirish
+taqiq cheklovi orqali qat'iy bloklanadi.
+
+7
+00:45.640 --> 00:52.380
+Multi-tenant tuzilmalarda kompozit tashqi kalit va
+faqat muallif ustunini null qilish siyosati qo'llanadi.
+
+8
+00:52.430 --> 00:58.120
+Foydalanuvchi o'chsa ham uning maqolalari
+saqlanadi va tenant ID si o'zgarmasdan qoladi.
+
+9
+01:00.790 --> 01:07.510
+Postgresda bola tomondagi tashqi kalit ustuniga qo'lda
+indeks yaratish o'chirish va birlashtirishni tezlashtiradi.
+
+10
+01:07.460 --> 01:13.290
+Shuningdek, oraliq jadvaldagi ikkinchi kalit ustunini
+ham alohida indekslash unumdorlik garovidir.

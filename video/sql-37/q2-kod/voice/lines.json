@@ -1,0 +1,702 @@
+[
+  {
+    "scene": "boshlangich_tuzilma_va_1_1",
+    "id": "l1",
+    "text": "Mijozlar jadvaliga birga-bir aloqador profil yaratishda mijoz ID sini birlamchi va tashqi kalit qilamiz.",
+    "show": "Mijozlar jadvaliga birga-bir aloqador profil yaratishda mijoz ID sini birlamchi va tashqi kalit qilamiz.",
+    "say": "Mijozlar jadvaliga birga-bir aloqador profil yaratishda mijoz ay-di sini birlamchi va tashqi kalit qilamiz.",
+    "a0": 0.28,
+    "a1": 6.56,
+    "words": [
+      {
+        "w": "Mijozlar",
+        "s": 0.28,
+        "e": 0.74
+      },
+      {
+        "w": "jadvaliga",
+        "s": 0.78,
+        "e": 1.24
+      },
+      {
+        "w": "birga-bir",
+        "s": 1.38,
+        "e": 1.86
+      },
+      {
+        "w": "aloqador",
+        "s": 1.96,
+        "e": 2.44
+      },
+      {
+        "w": "profil",
+        "s": 2.52,
+        "e": 2.88
+      },
+      {
+        "w": "yaratishda",
+        "s": 2.92,
+        "e": 3.38
+      },
+      {
+        "w": "mijoz",
+        "s": 3.56,
+        "e": 3.94
+      },
+      {
+        "w": "ay-di",
+        "s": 4.12,
+        "e": 4.36
+      },
+      {
+        "w": "sini",
+        "s": 4.5,
+        "e": 4.72
+      },
+      {
+        "w": "birlamchi",
+        "s": 4.86,
+        "e": 5.34
+      },
+      {
+        "w": "va",
+        "s": 5.4,
+        "e": 5.46
+      },
+      {
+        "w": "tashqi",
+        "s": 5.56,
+        "e": 5.86
+      },
+      {
+        "w": "kalit",
+        "s": 5.92,
+        "e": 6.18
+      },
+      {
+        "w": "qilamiz.",
+        "s": 6.22,
+        "e": 6.56
+      }
+    ]
+  },
+  {
+    "scene": "boshlangich_tuzilma_va_1_1",
+    "id": "l2",
+    "text": "Aynan bir mijozga ikkinchi profil qo'shmoqchi bo'lsak, unikal cheklov buzilib xato qaytariladi.",
+    "show": "Aynan bir mijozga ikkinchi profil qo'shmoqchi bo'lsak, unikal cheklov buzilib xato qaytariladi.",
+    "say": "Aynan bir mijozga ikkinchi profil qo'shmoqchi bo'lsak, unikal cheklov buzilib xato qaytariladi.",
+    "a0": 7.12,
+    "a1": 12.43,
+    "words": [
+      {
+        "w": "Aynan",
+        "s": 7.12,
+        "e": 7.38
+      },
+      {
+        "w": "bir",
+        "s": 7.46,
+        "e": 7.59
+      },
+      {
+        "w": "mijozga",
+        "s": 7.63,
+        "e": 8.05
+      },
+      {
+        "w": "ikkinchi",
+        "s": 8.23,
+        "e": 8.63
+      },
+      {
+        "w": "profil",
+        "s": 8.67,
+        "e": 8.99
+      },
+      {
+        "w": "qo'shmoqchi",
+        "s": 9.03,
+        "e": 9.47
+      },
+      {
+        "w": "bo'lsak,",
+        "s": 9.49,
+        "e": 9.83
+      },
+      {
+        "w": "unikal",
+        "s": 10.23,
+        "e": 10.65
+      },
+      {
+        "w": "cheklov",
+        "s": 10.71,
+        "e": 11.05
+      },
+      {
+        "w": "buzilib",
+        "s": 11.11,
+        "e": 11.47
+      },
+      {
+        "w": "xato",
+        "s": 11.55,
+        "e": 11.81
+      },
+      {
+        "w": "qaytariladi.",
+        "s": 11.91,
+        "e": 12.43
+      }
+    ]
+  },
+  {
+    "scene": "birga_kop_va_oraliq_jadval",
+    "id": "l3",
+    "text": "Buyurtmalar jadvali birga-ko'p aloqada bo'lsa, mahsulotlar bilan munosabat oraliq jadvalda saqlanadi.",
+    "show": "Buyurtmalar jadvali birga-ko'p aloqada bo'lsa, mahsulotlar bilan munosabat oraliq jadvalda saqlanadi.",
+    "say": "Buyurtmalar jadvali birga-ko'p aloqada bo'lsa, mahsulotlar bilan munosabat oraliq jadvalda saqlanadi.",
+    "a0": 13.19,
+    "a1": 18.79,
+    "words": [
+      {
+        "w": "Buyurtmalar",
+        "s": 13.19,
+        "e": 13.67
+      },
+      {
+        "w": "jadvali",
+        "s": 13.71,
+        "e": 14.07
+      },
+      {
+        "w": "birga-ko'p",
+        "s": 14.17,
+        "e": 14.77
+      },
+      {
+        "w": "aloqada",
+        "s": 14.85,
+        "e": 15.23
+      },
+      {
+        "w": "bo'lsa,",
+        "s": 15.29,
+        "e": 15.55
+      },
+      {
+        "w": "mahsulotlar",
+        "s": 15.89,
+        "e": 16.47
+      },
+      {
+        "w": "bilan",
+        "s": 16.51,
+        "e": 16.69
+      },
+      {
+        "w": "munosabat",
+        "s": 16.73,
+        "e": 17.25
+      },
+      {
+        "w": "oraliq",
+        "s": 17.47,
+        "e": 17.79
+      },
+      {
+        "w": "jadvalda",
+        "s": 17.87,
+        "e": 18.29
+      },
+      {
+        "w": "saqlanadi.",
+        "s": 18.33,
+        "e": 18.79
+      }
+    ]
+  },
+  {
+    "scene": "birga_kop_va_oraliq_jadval",
+    "id": "l4",
+    "text": "Oraliq jadvalda sotilgan paytdagi narx atributi saqlanishi tarixiy hisobotlar aniqligini ta'minlaydi.",
+    "show": "Oraliq jadvalda sotilgan paytdagi narx atributi saqlanishi tarixiy hisobotlar aniqligini ta'minlaydi.",
+    "say": "Oraliq jadvalda sotilgan paytdagi narx atributi saqlanishi tarixiy hisobotlar aniqligini ta'minlaydi.",
+    "a0": 19.37,
+    "a1": 25.34,
+    "words": [
+      {
+        "w": "Oraliq",
+        "s": 19.37,
+        "e": 19.67
+      },
+      {
+        "w": "jadvalda",
+        "s": 19.75,
+        "e": 20.13
+      },
+      {
+        "w": "sotilgan",
+        "s": 20.17,
+        "e": 20.59
+      },
+      {
+        "w": "paytdagi",
+        "s": 20.63,
+        "e": 21.01
+      },
+      {
+        "w": "narx",
+        "s": 21.13,
+        "e": 21.39
+      },
+      {
+        "w": "atributi",
+        "s": 21.53,
+        "e": 21.97
+      },
+      {
+        "w": "saqlanishi",
+        "s": 22.03,
+        "e": 22.56
+      },
+      {
+        "w": "tarixiy",
+        "s": 22.9,
+        "e": 23.38
+      },
+      {
+        "w": "hisobotlar",
+        "s": 23.44,
+        "e": 24.04
+      },
+      {
+        "w": "aniqligini",
+        "s": 24.16,
+        "e": 24.72
+      },
+      {
+        "w": "ta'minlaydi.",
+        "s": 24.78,
+        "e": 25.34
+      }
+    ]
+  },
+  {
+    "scene": "on_delete_amallari",
+    "id": "l5",
+    "text": "Buyurtma o'chirilganda kaskad qoidasi tufayli uning barcha qatorlari ham avtomatik o'chiriladi.",
+    "show": "Buyurtma o'chirilganda kaskad qoidasi tufayli uning barcha qatorlari ham avtomatik o'chiriladi.",
+    "say": "Buyurtma o'chirilganda kaskad qoidasi tufayli uning barcha qatorlari ham avtomatik o'chiriladi.",
+    "a0": 26.06,
+    "a1": 30.9,
+    "words": [
+      {
+        "w": "Buyurtma",
+        "s": 26.06,
+        "e": 26.36
+      },
+      {
+        "w": "o'chirilganda",
+        "s": 26.4,
+        "e": 26.92
+      },
+      {
+        "w": "kaskad",
+        "s": 27.24,
+        "e": 27.58
+      },
+      {
+        "w": "qoidasi",
+        "s": 27.66,
+        "e": 28.1
+      },
+      {
+        "w": "tufayli",
+        "s": 28.14,
+        "e": 28.48
+      },
+      {
+        "w": "uning",
+        "s": 28.58,
+        "e": 28.76
+      },
+      {
+        "w": "barcha",
+        "s": 28.86,
+        "e": 29.14
+      },
+      {
+        "w": "qatorlari",
+        "s": 29.18,
+        "e": 29.64
+      },
+      {
+        "w": "ham",
+        "s": 29.66,
+        "e": 29.8
+      },
+      {
+        "w": "avtomatik",
+        "s": 30,
+        "e": 30.46
+      },
+      {
+        "w": "o'chiriladi.",
+        "s": 30.5,
+        "e": 30.9
+      }
+    ]
+  },
+  {
+    "scene": "on_delete_amallari",
+    "id": "l6",
+    "text": "Ammo buyurtmasi bor mahsulotni o'chirish taqiq cheklovi orqali qat'iy bloklanadi.",
+    "show": "Ammo buyurtmasi bor mahsulotni o'chirish taqiq cheklovi orqali qat'iy bloklanadi.",
+    "say": "Ammo buyurtmasi bor mahsulotni o'chirish taqiq cheklovi orqali qat'iy bloklanadi.",
+    "a0": 31.38,
+    "a1": 36.06,
+    "words": [
+      {
+        "w": "Ammo",
+        "s": 31.38,
+        "e": 31.54
+      },
+      {
+        "w": "buyurtmasi",
+        "s": 31.8,
+        "e": 32.36
+      },
+      {
+        "w": "bor",
+        "s": 32.44,
+        "e": 32.62
+      },
+      {
+        "w": "mahsulotni",
+        "s": 32.7,
+        "e": 33.22
+      },
+      {
+        "w": "o'chirish",
+        "s": 33.28,
+        "e": 33.62
+      },
+      {
+        "w": "taqiq",
+        "s": 33.68,
+        "e": 34.06
+      },
+      {
+        "w": "cheklovi",
+        "s": 34.1,
+        "e": 34.48
+      },
+      {
+        "w": "orqali",
+        "s": 34.56,
+        "e": 34.86
+      },
+      {
+        "w": "qat'iy",
+        "s": 35,
+        "e": 35.42
+      },
+      {
+        "w": "bloklanadi.",
+        "s": 35.52,
+        "e": 36.06
+      }
+    ]
+  },
+  {
+    "scene": "kompozit_va_set_null",
+    "id": "l7",
+    "text": "Multi-tenant tuzilmalarda kompozit tashqi kalit va faqat muallif ustunini null qilish siyosati qo'llanadi.",
+    "show": "Multi-tenant tuzilmalarda kompozit tashqi kalit va faqat muallif ustunini null qilish siyosati qo'llanadi.",
+    "say": "Multi-tenant tuzilmalarda kompozit tashqi kalit va faqat muallif ustunini null qilish siyosati qo'llanadi.",
+    "a0": 36.7,
+    "a1": 42.99,
+    "words": [
+      {
+        "w": "Multi-tenant",
+        "s": 36.7,
+        "e": 37.26
+      },
+      {
+        "w": "tuzilmalarda",
+        "s": 37.28,
+        "e": 37.87
+      },
+      {
+        "w": "kompozit",
+        "s": 38.05,
+        "e": 38.53
+      },
+      {
+        "w": "tashqi",
+        "s": 38.57,
+        "e": 38.83
+      },
+      {
+        "w": "kalit",
+        "s": 38.89,
+        "e": 39.21
+      },
+      {
+        "w": "va",
+        "s": 39.35,
+        "e": 39.43
+      },
+      {
+        "w": "faqat",
+        "s": 39.61,
+        "e": 39.93
+      },
+      {
+        "w": "muallif",
+        "s": 40.05,
+        "e": 40.55
+      },
+      {
+        "w": "ustunini",
+        "s": 40.63,
+        "e": 41.05
+      },
+      {
+        "w": "null",
+        "s": 41.45,
+        "e": 41.65
+      },
+      {
+        "w": "qilish",
+        "s": 41.75,
+        "e": 41.99
+      },
+      {
+        "w": "siyosati",
+        "s": 42.05,
+        "e": 42.49
+      },
+      {
+        "w": "qo'llanadi.",
+        "s": 42.55,
+        "e": 42.99
+      }
+    ]
+  },
+  {
+    "scene": "kompozit_va_set_null",
+    "id": "l8",
+    "text": "Foydalanuvchi o'chsa ham uning maqolalari saqlanadi va tenant ID si o'zgarmasdan qoladi.",
+    "show": "Foydalanuvchi o'chsa ham uning maqolalari saqlanadi va tenant ID si o'zgarmasdan qoladi.",
+    "say": "Foydalanuvchi o'chsa ham uning maqolalari saqlanadi va tenant ay-di si o'zgarmasdan qoladi.",
+    "a0": 43.49,
+    "a1": 48.73,
+    "words": [
+      {
+        "w": "Foydalanuvchi",
+        "s": 43.49,
+        "e": 44.13
+      },
+      {
+        "w": "o'chsa",
+        "s": 44.19,
+        "e": 44.45
+      },
+      {
+        "w": "ham",
+        "s": 44.51,
+        "e": 44.69
+      },
+      {
+        "w": "uning",
+        "s": 44.79,
+        "e": 45.01
+      },
+      {
+        "w": "maqolalari",
+        "s": 45.05,
+        "e": 45.69
+      },
+      {
+        "w": "saqlanadi",
+        "s": 45.75,
+        "e": 46.25
+      },
+      {
+        "w": "va",
+        "s": 46.35,
+        "e": 46.41
+      },
+      {
+        "w": "tenant",
+        "s": 46.73,
+        "e": 47.07
+      },
+      {
+        "w": "ay-di",
+        "s": 47.17,
+        "e": 47.37
+      },
+      {
+        "w": "si",
+        "s": 47.47,
+        "e": 47.57
+      },
+      {
+        "w": "o'zgarmasdan",
+        "s": 47.77,
+        "e": 48.39
+      },
+      {
+        "w": "qoladi.",
+        "s": 48.43,
+        "e": 48.73
+      }
+    ]
+  },
+  {
+    "scene": "bola_indeksi_va_xulosa",
+    "id": "l9",
+    "text": "Postgresda bola tomondagi tashqi kalit ustuniga qo'lda indeks yaratish o'chirish va birlashtirishni tezlashtiradi.",
+    "show": "Postgresda bola tomondagi tashqi kalit ustuniga qo'lda indeks yaratish o'chirish va birlashtirishni tezlashtiradi.",
+    "say": "Postgresda bola tomondagi tashqi kalit ustuniga qo'lda indeks yaratish o'chirish va birlashtirishni tezlashtiradi.",
+    "a0": 49.25,
+    "a1": 55.52,
+    "words": [
+      {
+        "w": "Postgresda",
+        "s": 49.25,
+        "e": 49.83
+      },
+      {
+        "w": "bola",
+        "s": 49.95,
+        "e": 50.15
+      },
+      {
+        "w": "tomondagi",
+        "s": 50.19,
+        "e": 50.63
+      },
+      {
+        "w": "tashqi",
+        "s": 50.69,
+        "e": 50.93
+      },
+      {
+        "w": "kalit",
+        "s": 50.97,
+        "e": 51.21
+      },
+      {
+        "w": "ustuniga",
+        "s": 51.27,
+        "e": 51.67
+      },
+      {
+        "w": "qo'lda",
+        "s": 51.85,
+        "e": 52.23
+      },
+      {
+        "w": "indeks",
+        "s": 52.43,
+        "e": 52.78
+      },
+      {
+        "w": "yaratish",
+        "s": 52.82,
+        "e": 53.2
+      },
+      {
+        "w": "o'chirish",
+        "s": 53.54,
+        "e": 53.96
+      },
+      {
+        "w": "va",
+        "s": 54.02,
+        "e": 54.08
+      },
+      {
+        "w": "birlashtirishni",
+        "s": 54.22,
+        "e": 54.88
+      },
+      {
+        "w": "tezlashtiradi.",
+        "s": 54.92,
+        "e": 55.52
+      }
+    ]
+  },
+  {
+    "scene": "bola_indeksi_va_xulosa",
+    "id": "l10",
+    "text": "Shuningdek, oraliq jadvaldagi ikkinchi kalit ustunini ham alohida indekslash unumdorlik garovidir.",
+    "show": "Shuningdek, oraliq jadvaldagi ikkinchi kalit ustunini ham alohida indekslash unumdorlik garovidir.",
+    "say": "Shuningdek, oraliq jadvaldagi ikkinchi kalit ustunini ham alohida indekslash unumdorlik garovidir.",
+    "a0": 55.92,
+    "a1": 61.3,
+    "words": [
+      {
+        "w": "Shuningdek,",
+        "s": 55.92,
+        "e": 56.3
+      },
+      {
+        "w": "oraliq",
+        "s": 56.4,
+        "e": 56.7
+      },
+      {
+        "w": "jadvaldagi",
+        "s": 56.74,
+        "e": 57.22
+      },
+      {
+        "w": "ikkinchi",
+        "s": 57.32,
+        "e": 57.66
+      },
+      {
+        "w": "kalit",
+        "s": 57.7,
+        "e": 57.94
+      },
+      {
+        "w": "ustunini",
+        "s": 57.98,
+        "e": 58.38
+      },
+      {
+        "w": "ham",
+        "s": 58.42,
+        "e": 58.56
+      },
+      {
+        "w": "alohida",
+        "s": 58.72,
+        "e": 59.16
+      },
+      {
+        "w": "indekslash",
+        "s": 59.24,
+        "e": 59.8
+      },
+      {
+        "w": "unumdorlik",
+        "s": 60.12,
+        "e": 60.75
+      },
+      {
+        "w": "garovidir.",
+        "s": 60.79,
+        "e": 61.3
+      }
+    ]
+  }
+]
