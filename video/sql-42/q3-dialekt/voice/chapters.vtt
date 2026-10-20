@@ -1,0 +1,13 @@
+WEBVTT
+
+00:00.000 --> 00:15.578
+MySQL: Skip Scan va Aralash Saralash
+
+00:15.578 --> 00:31.277
+SQLite: ANALYZE va ANY() Sharti
+
+00:31.277 --> 00:47.133
+OR Shartlari: Index Merge va MULTI-INDEX
+
+00:47.133 --> 01:05.100
+Dialektlar Taqqoslashi va Tipik Xatolar
