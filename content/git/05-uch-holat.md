@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" playsinline poster="/video/git/05-uch-holat.jpg" src="/video/git/05-uch-holat.mp4">
+    <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/git/05-uch-holat.chapters.vtt" default>
+    <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/git/05-uch-holat.uz.vtt">
+  </video>
+  <figcaption>05.1-video. Uch holat va uch hudud</figcaption>
+</figure>
+
 Pro Git bu mavzuni "Git'ni o'rganishda eng muhim narsa" deb ataydi va bunga asos bor: keyingi har bir buyruq (`add`, `commit`, `diff`, `restore`, `reset`, `stash`, `switch`) aslida shu bobdagi uch hudud o'rtasida ma'lumot ko'chiradi. Shu modelni tushunsangiz, buyruqlarni yodlash shart bo'lmaydi — har birining nima qilishini o'zingiz chiqarib olasiz.
 
 ### Uch holat

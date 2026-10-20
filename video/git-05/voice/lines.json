@@ -1,0 +1,1024 @@
+[
+  {
+    "id": "l1",
+    "scene": "intro",
+    "text": "Salom! Ushbu beshinchi bobda Gitning eng muhim poydevori — uch holat va uch hudud modelini o‘rganamiz.",
+    "show": "Salom! Ushbu beshinchi bobda Gitning eng muhim poydevori — uch holat va uch hudud modelini o‘rganamiz.",
+    "say": "Salom! Ushbu beshinchi bobda Gitning eng muhim poydevori — uch holat va uch hudud modelini o‘rganamiz.",
+    "a0": 0.2,
+    "a1": 5.66,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.2,
+        "e": 0.46
+      },
+      {
+        "w": "Ushbu",
+        "s": 0.76,
+        "e": 0.98
+      },
+      {
+        "w": "beshinchi",
+        "s": 1.06,
+        "e": 1.44
+      },
+      {
+        "w": "bobda",
+        "s": 1.48,
+        "e": 1.74
+      },
+      {
+        "w": "Gitning",
+        "s": 1.82,
+        "e": 2.12
+      },
+      {
+        "w": "eng",
+        "s": 2.26,
+        "e": 2.42
+      },
+      {
+        "w": "muhim",
+        "s": 2.44,
+        "e": 2.68
+      },
+      {
+        "w": "poydevori",
+        "s": 2.74,
+        "e": 3.28
+      },
+      {
+        "w": "—",
+        "s": 3.28,
+        "e": 3.28
+      },
+      {
+        "w": "uch",
+        "s": 3.54,
+        "e": 3.68
+      },
+      {
+        "w": "holat",
+        "s": 3.76,
+        "e": 4.12
+      },
+      {
+        "w": "va",
+        "s": 4.16,
+        "e": 4.22
+      },
+      {
+        "w": "uch",
+        "s": 4.34,
+        "e": 4.46
+      },
+      {
+        "w": "hudud",
+        "s": 4.52,
+        "e": 4.76
+      },
+      {
+        "w": "modelini",
+        "s": 4.82,
+        "e": 5.18
+      },
+      {
+        "w": "o‘rganamiz.",
+        "s": 5.24,
+        "e": 5.66
+      }
+    ]
+  },
+  {
+    "id": "l2",
+    "scene": "intro",
+    "text": "Shu arxitekturani tushunsangiz, Gitdagi keyingi har qanday buyruqning maqsadi va mohiyatini osongina ilg‘ab olasiz.",
+    "show": "Shu arxitekturani tushunsangiz, Gitdagi keyingi har qanday buyruqning maqsadi va mohiyatini osongina ilg‘ab olasiz.",
+    "say": "Shu arxitekturani tushunsangiz, Gitdagi keyingi har qanday buyruqning maqsadi va mohiyatini osongina ilg‘ab olasiz.",
+    "a0": 6.24,
+    "a1": 12.39,
+    "words": [
+      {
+        "w": "Shu",
+        "s": 6.24,
+        "e": 6.34
+      },
+      {
+        "w": "arxitekturani",
+        "s": 6.42,
+        "e": 7.08
+      },
+      {
+        "w": "tushunsangiz,",
+        "s": 7.12,
+        "e": 7.73
+      },
+      {
+        "w": "Gitdagi",
+        "s": 7.91,
+        "e": 8.27
+      },
+      {
+        "w": "keyingi",
+        "s": 8.35,
+        "e": 8.69
+      },
+      {
+        "w": "har",
+        "s": 8.77,
+        "e": 8.97
+      },
+      {
+        "w": "qanday",
+        "s": 9.05,
+        "e": 9.33
+      },
+      {
+        "w": "buyruqning",
+        "s": 9.39,
+        "e": 9.85
+      },
+      {
+        "w": "maqsadi",
+        "s": 9.89,
+        "e": 10.37
+      },
+      {
+        "w": "va",
+        "s": 10.49,
+        "e": 10.55
+      },
+      {
+        "w": "mohiyatini",
+        "s": 10.63,
+        "e": 11.13
+      },
+      {
+        "w": "osongina",
+        "s": 11.29,
+        "e": 11.77
+      },
+      {
+        "w": "ilg‘ab",
+        "s": 11.83,
+        "e": 12.05
+      },
+      {
+        "w": "olasiz.",
+        "s": 12.07,
+        "e": 12.39
+      }
+    ]
+  },
+  {
+    "id": "l3",
+    "scene": "uch_holat",
+    "text": "Git kuzatuvidagi har bir fayl uchta holatdan birida bo‘ladi: modifayd, steyjd yoki kommitted.",
+    "show": "Git kuzatuvidagi har bir fayl uchta holatdan birida bo‘ladi: modifayd, steyjd yoki kommitted.",
+    "say": "Git kuzatuvidagi har bir fayl uchta holatdan birida bo‘ladi: modifayd, steyjd yoki kommitted.",
+    "a0": 13.29,
+    "a1": 18.97,
+    "words": [
+      {
+        "w": "Git",
+        "s": 13.29,
+        "e": 13.43
+      },
+      {
+        "w": "kuzatuvidagi",
+        "s": 13.49,
+        "e": 14.07
+      },
+      {
+        "w": "har",
+        "s": 14.15,
+        "e": 14.33
+      },
+      {
+        "w": "bir",
+        "s": 14.39,
+        "e": 14.51
+      },
+      {
+        "w": "fayl",
+        "s": 14.61,
+        "e": 14.87
+      },
+      {
+        "w": "uchta",
+        "s": 14.97,
+        "e": 15.21
+      },
+      {
+        "w": "holatdan",
+        "s": 15.27,
+        "e": 15.75
+      },
+      {
+        "w": "birida",
+        "s": 15.79,
+        "e": 16.05
+      },
+      {
+        "w": "bo‘ladi:",
+        "s": 16.09,
+        "e": 16.37
+      },
+      {
+        "w": "modifayd,",
+        "s": 16.81,
+        "e": 17.41
+      },
+      {
+        "w": "steyjd",
+        "s": 17.61,
+        "e": 18.09
+      },
+      {
+        "w": "yoki",
+        "s": 18.11,
+        "e": 18.43
+      },
+      {
+        "w": "kommitted.",
+        "s": 18.53,
+        "e": 18.97
+      }
+    ]
+  },
+  {
+    "id": "l4",
+    "scene": "uch_holat",
+    "text": "Modifayd — fayl diskda tahrirlangan; steyjd — keyingi saqlashga tayyorlangan; kommitted esa arxivga muhrlanganini bildiradi.",
+    "show": "Modifayd — fayl diskda tahrirlangan; steyjd — keyingi saqlashga tayyorlangan; kommitted esa arxivga muhrlanganini bildiradi.",
+    "say": "Modifayd — fayl diskda tahrirlangan; steyjd — keyingi saqlashga tayyorlangan; kommitted esa arxivga muhrlanganini bildiradi.",
+    "a0": 19.59,
+    "a1": 26.66,
+    "words": [
+      {
+        "w": "Modifayd",
+        "s": 19.59,
+        "e": 20.09
+      },
+      {
+        "w": "—",
+        "s": 20.09,
+        "e": 20.09
+      },
+      {
+        "w": "fayl",
+        "s": 20.19,
+        "e": 20.47
+      },
+      {
+        "w": "diskda",
+        "s": 20.55,
+        "e": 20.89
+      },
+      {
+        "w": "tahrirlangan;",
+        "s": 20.89,
+        "e": 21.93
+      },
+      {
+        "w": "steyjd",
+        "s": 21.93,
+        "e": 22.37
+      },
+      {
+        "w": "—",
+        "s": 22.37,
+        "e": 22.37
+      },
+      {
+        "w": "keyingi",
+        "s": 22.47,
+        "e": 22.84
+      },
+      {
+        "w": "saqlashga",
+        "s": 22.88,
+        "e": 23.3
+      },
+      {
+        "w": "tayyorlangan;",
+        "s": 23.3,
+        "e": 24.42
+      },
+      {
+        "w": "kommitted",
+        "s": 24.42,
+        "e": 24.82
+      },
+      {
+        "w": "esa",
+        "s": 24.86,
+        "e": 25.02
+      },
+      {
+        "w": "arxivga",
+        "s": 25.16,
+        "e": 25.56
+      },
+      {
+        "w": "muhrlanganini",
+        "s": 25.62,
+        "e": 26.28
+      },
+      {
+        "w": "bildiradi.",
+        "s": 26.32,
+        "e": 26.66
+      }
+    ]
+  },
+  {
+    "id": "l5",
+    "scene": "uch_hudud",
+    "text": "Bu holatlarga loyihaning uchta mustaqil hududi mos keladi: vorking tri, steyjing eria va git direktori.",
+    "show": "Bu holatlarga loyihaning uchta mustaqil hududi mos keladi: vorking tri, steyjing eria va git direktori.",
+    "say": "Bu holatlarga loyihaning uchta mustaqil hududi mos keladi: vorking tri, steyjing eria va git direktori.",
+    "a0": 27.42,
+    "a1": 33.44,
+    "words": [
+      {
+        "w": "Bu",
+        "s": 27.42,
+        "e": 27.5
+      },
+      {
+        "w": "holatlarga",
+        "s": 27.58,
+        "e": 28.08
+      },
+      {
+        "w": "loyihaning",
+        "s": 28.18,
+        "e": 28.6
+      },
+      {
+        "w": "uchta",
+        "s": 28.66,
+        "e": 28.9
+      },
+      {
+        "w": "mustaqil",
+        "s": 28.96,
+        "e": 29.38
+      },
+      {
+        "w": "hududi",
+        "s": 29.42,
+        "e": 29.76
+      },
+      {
+        "w": "mos",
+        "s": 29.8,
+        "e": 29.94
+      },
+      {
+        "w": "keladi:",
+        "s": 29.96,
+        "e": 30.28
+      },
+      {
+        "w": "vorking",
+        "s": 30.68,
+        "e": 31.04
+      },
+      {
+        "w": "tri,",
+        "s": 31.08,
+        "e": 31.22
+      },
+      {
+        "w": "steyjing",
+        "s": 31.66,
+        "e": 32.04
+      },
+      {
+        "w": "eria",
+        "s": 32.14,
+        "e": 32.42
+      },
+      {
+        "w": "va",
+        "s": 32.52,
+        "e": 32.6
+      },
+      {
+        "w": "git",
+        "s": 32.78,
+        "e": 32.92
+      },
+      {
+        "w": "direktori.",
+        "s": 32.96,
+        "e": 33.44
+      }
+    ]
+  },
+  {
+    "id": "l6",
+    "scene": "uch_hudud",
+    "text": "Vorking tri — diskdagi ishchi fayllar; indeks — bo‘lajak kommit qoralamasi; nuqta git esa butun arxiv omboridir.",
+    "show": "Vorking tri — diskdagi ishchi fayllar; indeks — bo‘lajak kommit qoralamasi; nuqta git esa butun arxiv omboridir.",
+    "say": "Vorking tri — diskdagi ishchi fayllar; indeks — bo‘lajak kommit qoralamasi; nuqta git esa butun arxiv omboridir.",
+    "a0": 34.16,
+    "a1": 41.15,
+    "words": [
+      {
+        "w": "Vorking",
+        "s": 34.16,
+        "e": 34.48
+      },
+      {
+        "w": "tri",
+        "s": 34.52,
+        "e": 34.66
+      },
+      {
+        "w": "—",
+        "s": 34.66,
+        "e": 34.66
+      },
+      {
+        "w": "diskdagi",
+        "s": 34.8,
+        "e": 35.26
+      },
+      {
+        "w": "ishchi",
+        "s": 35.36,
+        "e": 35.6
+      },
+      {
+        "w": "fayllar;",
+        "s": 35.6,
+        "e": 36.56
+      },
+      {
+        "w": "indeks",
+        "s": 36.56,
+        "e": 36.88
+      },
+      {
+        "w": "—",
+        "s": 36.88,
+        "e": 36.88
+      },
+      {
+        "w": "bo‘lajak",
+        "s": 37.02,
+        "e": 37.42
+      },
+      {
+        "w": "kommit",
+        "s": 37.48,
+        "e": 37.75
+      },
+      {
+        "w": "qoralamasi;",
+        "s": 37.75,
+        "e": 39.03
+      },
+      {
+        "w": "nuqta",
+        "s": 39.03,
+        "e": 39.29
+      },
+      {
+        "w": "git",
+        "s": 39.37,
+        "e": 39.51
+      },
+      {
+        "w": "esa",
+        "s": 39.55,
+        "e": 39.71
+      },
+      {
+        "w": "butun",
+        "s": 39.81,
+        "e": 40.11
+      },
+      {
+        "w": "arxiv",
+        "s": 40.23,
+        "e": 40.55
+      },
+      {
+        "w": "omboridir.",
+        "s": 40.67,
+        "e": 41.15
+      }
+    ]
+  },
+  {
+    "id": "l7",
+    "scene": "ish_oqimi",
+    "text": "Ish oqimi juda oddiy: tahrirlangan faylni git add bilan indeksga qo‘shasiz, so‘ng git kommit orqali tarixga yozasiz.",
+    "show": "Ish oqimi juda oddiy: tahrirlangan faylni git add bilan indeksga qo‘shasiz, so‘ng git kommit orqali tarixga yozasiz.",
+    "say": "Ish oqimi juda oddiy: tahrirlangan faylni git add bilan indeksga qo‘shasiz, so‘ng git kommit orqali tarixga yozasiz.",
+    "a0": 41.95,
+    "a1": 48.17,
+    "words": [
+      {
+        "w": "Ish",
+        "s": 41.95,
+        "e": 42.05
+      },
+      {
+        "w": "oqimi",
+        "s": 42.13,
+        "e": 42.37
+      },
+      {
+        "w": "juda",
+        "s": 42.41,
+        "e": 42.57
+      },
+      {
+        "w": "oddiy:",
+        "s": 42.61,
+        "e": 42.85
+      },
+      {
+        "w": "tahrirlangan",
+        "s": 43.11,
+        "e": 43.67
+      },
+      {
+        "w": "faylni",
+        "s": 43.73,
+        "e": 44.07
+      },
+      {
+        "w": "git",
+        "s": 44.17,
+        "e": 44.33
+      },
+      {
+        "w": "add",
+        "s": 44.45,
+        "e": 44.59
+      },
+      {
+        "w": "bilan",
+        "s": 44.59,
+        "e": 44.79
+      },
+      {
+        "w": "indeksga",
+        "s": 44.89,
+        "e": 45.29
+      },
+      {
+        "w": "qo‘shasiz,",
+        "s": 45.35,
+        "e": 45.91
+      },
+      {
+        "w": "so‘ng",
+        "s": 45.99,
+        "e": 46.19
+      },
+      {
+        "w": "git",
+        "s": 46.51,
+        "e": 46.67
+      },
+      {
+        "w": "kommit",
+        "s": 46.73,
+        "e": 46.99
+      },
+      {
+        "w": "orqali",
+        "s": 47.05,
+        "e": 47.35
+      },
+      {
+        "w": "tarixga",
+        "s": 47.39,
+        "e": 47.75
+      },
+      {
+        "w": "yozasiz.",
+        "s": 47.79,
+        "e": 48.17
+      }
+    ]
+  },
+  {
+    "id": "l8",
+    "scene": "ish_oqimi",
+    "text": "Muhim qoida: faylni indeksga qo‘shgach, diskda yana o‘zgartirsangiz, indeksdagi nusxa o‘zgarmaydi, ikkisi alohida yashaydi.",
+    "show": "Muhim qoida: faylni indeksga qo‘shgach, diskda yana o‘zgartirsangiz, indeksdagi nusxa o‘zgarmaydi, ikkisi alohida yashaydi.",
+    "say": "Muhim qoida: faylni indeksga qo‘shgach, diskda yana o‘zgartirsangiz, indeksdagi nusxa o‘zgarmaydi, ikkisi alohida yashaydi.",
+    "a0": 48.87,
+    "a1": 56.12,
+    "words": [
+      {
+        "w": "Muhim",
+        "s": 48.87,
+        "e": 49.09
+      },
+      {
+        "w": "qoida:",
+        "s": 49.15,
+        "e": 49.39
+      },
+      {
+        "w": "faylni",
+        "s": 49.67,
+        "e": 50.01
+      },
+      {
+        "w": "indeksga",
+        "s": 50.09,
+        "e": 50.45
+      },
+      {
+        "w": "qo‘shgach,",
+        "s": 50.51,
+        "e": 50.95
+      },
+      {
+        "w": "diskda",
+        "s": 51.27,
+        "e": 51.57
+      },
+      {
+        "w": "yana",
+        "s": 51.65,
+        "e": 51.83
+      },
+      {
+        "w": "o‘zgartirsangiz,",
+        "s": 51.89,
+        "e": 52.66
+      },
+      {
+        "w": "indeksdagi",
+        "s": 52.8,
+        "e": 53.32
+      },
+      {
+        "w": "nusxa",
+        "s": 53.36,
+        "e": 53.62
+      },
+      {
+        "w": "o‘zgarmaydi,",
+        "s": 53.76,
+        "e": 54.36
+      },
+      {
+        "w": "ikkisi",
+        "s": 54.74,
+        "e": 55.22
+      },
+      {
+        "w": "alohida",
+        "s": 55.34,
+        "e": 55.74
+      },
+      {
+        "w": "yashaydi.",
+        "s": 55.78,
+        "e": 56.12
+      }
+    ]
+  },
+  {
+    "id": "l9",
+    "scene": "nega_index",
+    "text": "Ko‘p tizimlardan farqli o‘laroq, Git oraliq indeks hududini kiritganining to‘rtta katta sababi bor.",
+    "show": "Ko‘p tizimlardan farqli o‘laroq, Git oraliq indeks hududini kiritganining to‘rtta katta sababi bor.",
+    "say": "Ko‘p tizimlardan farqli o‘laroq, Git oraliq indeks hududini kiritganining to‘rtta katta sababi bor.",
+    "a0": 57.04,
+    "a1": 62.12,
+    "words": [
+      {
+        "w": "Ko‘p",
+        "s": 57.04,
+        "e": 57.2
+      },
+      {
+        "w": "tizimlardan",
+        "s": 57.22,
+        "e": 57.7
+      },
+      {
+        "w": "farqli",
+        "s": 57.76,
+        "e": 58.04
+      },
+      {
+        "w": "o‘laroq,",
+        "s": 58.1,
+        "e": 58.44
+      },
+      {
+        "w": "Git",
+        "s": 58.74,
+        "e": 58.92
+      },
+      {
+        "w": "oraliq",
+        "s": 59.1,
+        "e": 59.4
+      },
+      {
+        "w": "indeks",
+        "s": 59.52,
+        "e": 59.8
+      },
+      {
+        "w": "hududini",
+        "s": 59.88,
+        "e": 60.22
+      },
+      {
+        "w": "kiritganining",
+        "s": 60.28,
+        "e": 60.84
+      },
+      {
+        "w": "to‘rtta",
+        "s": 60.9,
+        "e": 61.24
+      },
+      {
+        "w": "katta",
+        "s": 61.3,
+        "e": 61.56
+      },
+      {
+        "w": "sababi",
+        "s": 61.62,
+        "e": 61.94
+      },
+      {
+        "w": "bor.",
+        "s": 61.98,
+        "e": 62.12
+      }
+    ]
+  },
+  {
+    "id": "l10",
+    "scene": "nega_index",
+    "text": "U kommitlarni saralab yig‘ish, saqlashdan oldin tekshirish, tezkor kesh va konfliktlarni oson yechish imkonini beradi.",
+    "show": "U kommitlarni saralab yig‘ish, saqlashdan oldin tekshirish, tezkor kesh va konfliktlarni oson yechish imkonini beradi.",
+    "say": "U kommitlarni saralab yig‘ish, saqlashdan oldin tekshirish, tezkor kesh va konfliktlarni oson yechish imkonini beradi.",
+    "a0": 62.76,
+    "a1": 69.31,
+    "words": [
+      {
+        "w": "U",
+        "s": 62.76,
+        "e": 62.78
+      },
+      {
+        "w": "kommitlarni",
+        "s": 62.88,
+        "e": 63.4
+      },
+      {
+        "w": "saralab",
+        "s": 63.46,
+        "e": 63.8
+      },
+      {
+        "w": "yig‘ish,",
+        "s": 63.84,
+        "e": 64.24
+      },
+      {
+        "w": "saqlashdan",
+        "s": 64.48,
+        "e": 64.94
+      },
+      {
+        "w": "oldin",
+        "s": 65.0,
+        "e": 65.22
+      },
+      {
+        "w": "tekshirish,",
+        "s": 65.26,
+        "e": 65.83
+      },
+      {
+        "w": "tezkor",
+        "s": 66.15,
+        "e": 66.57
+      },
+      {
+        "w": "kesh",
+        "s": 66.69,
+        "e": 66.95
+      },
+      {
+        "w": "va",
+        "s": 67.01,
+        "e": 67.07
+      },
+      {
+        "w": "konfliktlarni",
+        "s": 67.19,
+        "e": 67.83
+      },
+      {
+        "w": "oson",
+        "s": 67.97,
+        "e": 68.27
+      },
+      {
+        "w": "yechish",
+        "s": 68.33,
+        "e": 68.57
+      },
+      {
+        "w": "imkonini",
+        "s": 68.61,
+        "e": 69.03
+      },
+      {
+        "w": "beradi.",
+        "s": 69.05,
+        "e": 69.31
+      }
+    ]
+  },
+  {
+    "id": "l11",
+    "scene": "xulosa",
+    "text": "Xulosa qilib aytganda, Git — bu uch hudud o‘rtasida o‘zgarishlarni xavfsiz va aniq boshqaruvchi mexanizmdir.",
+    "show": "Xulosa qilib aytganda, Git — bu uch hudud o‘rtasida o‘zgarishlarni xavfsiz va aniq boshqaruvchi mexanizmdir.",
+    "say": "Xulosa qilib aytganda, Git — bu uch hudud o‘rtasida o‘zgarishlarni xavfsiz va aniq boshqaruvchi mexanizmdir.",
+    "a0": 70.03,
+    "a1": 75.77,
+    "words": [
+      {
+        "w": "Xulosa",
+        "s": 70.03,
+        "e": 70.33
+      },
+      {
+        "w": "qilib",
+        "s": 70.37,
+        "e": 70.53
+      },
+      {
+        "w": "aytganda,",
+        "s": 70.57,
+        "e": 70.93
+      },
+      {
+        "w": "Git",
+        "s": 71.27,
+        "e": 71.43
+      },
+      {
+        "w": "—",
+        "s": 71.43,
+        "e": 71.43
+      },
+      {
+        "w": "bu",
+        "s": 71.53,
+        "e": 71.61
+      },
+      {
+        "w": "uch",
+        "s": 71.81,
+        "e": 71.93
+      },
+      {
+        "w": "hudud",
+        "s": 72.01,
+        "e": 72.25
+      },
+      {
+        "w": "o‘rtasida",
+        "s": 72.33,
+        "e": 72.71
+      },
+      {
+        "w": "o‘zgarishlarni",
+        "s": 72.77,
+        "e": 73.39
+      },
+      {
+        "w": "xavfsiz",
+        "s": 73.47,
+        "e": 73.97
+      },
+      {
+        "w": "va",
+        "s": 74.05,
+        "e": 74.11
+      },
+      {
+        "w": "aniq",
+        "s": 74.25,
+        "e": 74.45
+      },
+      {
+        "w": "boshqaruvchi",
+        "s": 74.53,
+        "e": 75.05
+      },
+      {
+        "w": "mexanizmdir.",
+        "s": 75.11,
+        "e": 75.77
+      }
+    ]
+  },
+  {
+    "id": "l12",
+    "scene": "xulosa",
+    "text": "Keyingi bobda ushbu hududlar bilan ishlaydigan status, add va commit buyruqlarini amalda ko‘ramiz. Rahmat!",
+    "show": "Keyingi bobda ushbu hududlar bilan ishlaydigan status, add va commit buyruqlarini amalda ko‘ramiz. Rahmat!",
+    "say": "Keyingi bobda ushbu hududlar bilan ishlaydigan status, add va kommit buyruqlarini amalda ko‘ramiz. Rahmat!",
+    "a0": 76.35,
+    "a1": 82.42,
+    "words": [
+      {
+        "w": "Keyingi",
+        "s": 76.35,
+        "e": 76.61
+      },
+      {
+        "w": "bobda",
+        "s": 76.65,
+        "e": 76.93
+      },
+      {
+        "w": "ushbu",
+        "s": 77.08,
+        "e": 77.32
+      },
+      {
+        "w": "hududlar",
+        "s": 77.38,
+        "e": 77.76
+      },
+      {
+        "w": "bilan",
+        "s": 77.8,
+        "e": 77.98
+      },
+      {
+        "w": "ishlaydigan",
+        "s": 78.02,
+        "e": 78.5
+      },
+      {
+        "w": "status,",
+        "s": 78.6,
+        "e": 79.12
+      },
+      {
+        "w": "add",
+        "s": 79.38,
+        "e": 79.5
+      },
+      {
+        "w": "va",
+        "s": 79.58,
+        "e": 79.66
+      },
+      {
+        "w": "kommit",
+        "s": 79.76,
+        "e": 80.02
+      },
+      {
+        "w": "buyruqlarini",
+        "s": 80.08,
+        "e": 80.62
+      },
+      {
+        "w": "amalda",
+        "s": 80.94,
+        "e": 81.26
+      },
+      {
+        "w": "ko‘ramiz.",
+        "s": 81.3,
+        "e": 81.66
+      },
+      {
+        "w": "Rahmat!",
+        "s": 82.16,
+        "e": 82.42
+      }
+    ]
+  }
+]
