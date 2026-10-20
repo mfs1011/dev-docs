@@ -205,14 +205,19 @@
     }
 
     function card(x, y, w, h, o = {}) {
-      const a = o.a == null ? 1 : o.a, col = o.col || C.blue;
+      const p = o.p == null ? 1 : o.p;
+      if (p <= 0.001) return;
+      const a = (o.a == null ? 1 : o.a) * (o.p == null ? 1 : p);
+      if (a <= 0.002) return;
+      const col = o.col || C.blue;
       withA(a, () => {
         ctx.save();
-        if (o.p) ctx.translate(0, (1 - eo(o.p)) * 20);
+        if (o.p != null) ctx.translate(0, (1 - eo(p)) * 16);
+        if (o.glow) { ctx.shadowColor = col; ctx.shadowBlur = o.glow; }
         ctx.fillStyle = o.fill || 'rgba(19,27,58,0.85)';
         rr(x, y, w, h, o.r || 16); ctx.fill();
+        ctx.shadowBlur = 0;
         ctx.strokeStyle = rgba(col, o.strokeA || 0.4); ctx.lineWidth = o.lw || 1.8; ctx.stroke();
-        if (o.glow) { ctx.shadowColor = col; ctx.shadowBlur = o.glow; }
         ctx.restore();
       });
     }

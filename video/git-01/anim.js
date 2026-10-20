@@ -59,9 +59,12 @@
     if (o.foot !== false) {
       const kFoot = o.isPoster ? 1 : P(u, 8.5, 0.8);
       withA(kFoot, () => {
-        card(100, 845, 1720, 165, { fill: 'rgba(17,24,52,0.92)', col: C.blue, p: kFoot });
+        ctx.save();
+        if (!o.isPoster) ctx.translate(0, (1 - eo(kFoot)) * 16);
+        card(100, 845, 1720, 165, { fill: 'rgba(17,24,52,0.92)', col: C.blue });
         text("Git fayllarning shunchaki nusxasini emas, balki loyihaning to'liq suratlarini saqlaydi.", 960, 895, { size: 24, weight: 700, color: C.text, align: 'center' });
         text("Barcha o'zgarishlar lokal, bir zumda va yuqori xavfsizlik bilan amalga oshadi.", 960, 950, { size: 20, color: C.mute, align: 'center' });
+        ctx.restore();
       });
     }
   }
@@ -89,12 +92,18 @@
         withA(kf, () => fileChip(fn, 370, 265 + i * 58, { s: eback(kf), col, w: 440, h: 48, size: 18 }));
       });
 
-      card(125, 565, 490, 235, { fill: 'rgba(255,107,122,0.08)', col: C.red, p: P(u, 3.2, 0.6) });
-      text("Katta Kamchiliklar:", 370, 598, { size: 20, weight: 700, color: C.red, align: 'center' });
-      text("• Qaysi biri oxirgisi ekanini bilib bo'lmaydi", 150, 640, { size: 16, color: C.text, align: 'left' });
-      text("• Nima o'zgargani va kim yozgani noma'lum", 150, 678, { size: 16, color: C.text, align: 'left' });
-      text("• Bir nechta dasturchi birga ishlay olmaydi", 150, 716, { size: 16, color: C.text, align: 'left' });
-      text("• Xato fayl ustidan yozib yuborish juda oson", 150, 754, { size: 16, color: C.red, align: 'left', weight: 600 });
+      // Kamchiliklar kartasi (faqat o'z vaqtida fade + slide bo'ladi)
+      const kWarn = P(u, 3.2, 0.6);
+      withA(kWarn, () => {
+        ctx.save(); ctx.translate(0, (1 - eo(kWarn)) * 16);
+        card(125, 565, 490, 235, { fill: 'rgba(255,107,122,0.08)', col: C.red });
+        text("Katta Kamchiliklar:", 370, 598, { size: 20, weight: 700, color: C.red, align: 'center' });
+        text("• Qaysi biri oxirgisi ekanini bilib bo'lmaydi", 150, 640, { size: 16, color: C.text, align: 'left' });
+        text("• Nima o'zgargani va kim yozgani noma'lum", 150, 678, { size: 16, color: C.text, align: 'left' });
+        text("• Bir nechta dasturchi birga ishlay olmaydi", 150, 716, { size: 16, color: C.text, align: 'left' });
+        text("• Xato fayl ustidan yozib yuborish juda oson", 150, 754, { size: 16, color: C.red, align: 'left', weight: 600 });
+        ctx.restore();
+      });
 
       // O'ng panel: Versiya nazoratining 3 avlodi
       panel(670, 140, 1150, 680, C.blue, "Versiya Nazoratining Uch Avlodi", "lokal -> markazlashgan -> taqsimlangan", kBox, kBox);
@@ -102,39 +111,47 @@
       // 1. Lokal VCS
       const kL = P(u, 4.5, 0.6);
       withA(kL, () => {
-        card(700, 245, 1090, 160, { fill: 'rgba(15,22,48,0.92)', col: C.purple, p: kL });
+        ctx.save(); ctx.translate(0, (1 - eo(kL)) * 16);
+        card(700, 245, 1090, 160, { fill: 'rgba(15,22,48,0.92)', col: C.purple });
         pill("1 · Lokal VCS (RCS)", 860, 280, C.purple, { size: 18, mono: false });
         text("• Tarix faqat bitta kompyuter ichidagi lokal bazada patchlar shaklida saqlanadi.", 730, 325, { size: 17, color: C.text, align: 'left' });
         text("• Asosiy muammo: Jamoa bilan ishlab bo'lmaydi; disk buzilsa butun tarix yo'qoladi!", 730, 365, { size: 17, color: C.red, align: 'left', weight: 600 });
+        ctx.restore();
       });
 
       // 2. Markazlashgan VCS
       const kC = P(u, 9.0, 0.6);
       withA(kC, () => {
-        card(700, 425, 1090, 175, { fill: 'rgba(15,22,48,0.92)', col: C.orange, p: kC });
+        ctx.save(); ctx.translate(0, (1 - eo(kC)) * 16);
+        card(700, 425, 1090, 175, { fill: 'rgba(15,22,48,0.92)', col: C.orange });
         pill("2 · Markazlashgan VCS (SVN, CVS)", 900, 460, C.orange, { size: 18, mono: false });
         text("• Bitta markaziy server. Dasturchilar faqat kerakli oxirgi versiyani yuklab oladi.", 730, 505, { size: 17, color: C.text, align: 'left' });
         text("• Yagona nosozlik nuqtasi (SPOF): Markaziy server o'chsa — hech kim kommit qila olmaydi!", 730, 545, { size: 17, color: C.orange, align: 'left', weight: 600 });
         text("• Server diski ishdan chiqsa — loyihaning butun o'tmishi bir zumda yo'qoladi.", 730, 575, { size: 15, color: C.mute, align: 'left' });
+        ctx.restore();
       });
 
       // 3. Taqsimlangan VCS
       const kD = P(u, 14.5, 0.6);
       withA(kD, () => {
-        card(700, 620, 1090, 180, { fill: 'rgba(21,34,70,0.95)', col: C.green, p: kD });
+        ctx.save(); ctx.translate(0, (1 - eo(kD)) * 16);
+        card(700, 620, 1090, 180, { fill: 'rgba(21,34,70,0.95)', col: C.green });
         pill("3 · Taqsimlangan VCS: Git (DVCS)", 905, 655, C.green, { size: 18, mono: false });
         text("• Dasturchi shunchaki fayllarni emas, butun repozitoriyni to'liq tarixi bilan ko'chiradi.", 730, 700, { size: 17, color: C.text, align: 'left' });
         text("• Har bir klon — markaziy serverning 100% to'liq zaxira nusxasidir!", 730, 735, { size: 18, color: C.green, align: 'left', weight: 700 });
         text("• Markaziy server ishdan chiqsa ham, istalgan kompyuterdan loyihani qayta tiklash mumkin.", 730, 770, { size: 16, color: C.mute, align: 'left' });
+        ctx.restore();
       });
     });
 
     // Pastki xulosa
     const kFoot = P(u, 19.0, 0.8);
     withA(kFoot, () => {
-      card(100, 845, 1720, 165, { fill: 'rgba(17,24,52,0.92)', col: C.green, p: kFoot });
+      ctx.save(); ctx.translate(0, (1 - eo(kFoot)) * 16);
+      card(100, 845, 1720, 165, { fill: 'rgba(17,24,52,0.92)', col: C.green });
       text("Taqsimlanganlik tufayli Git'da ish to'xtamaydi: har bir dasturchi to'liq va mustaqil ishlay oladi.", 960, 895, { size: 24, weight: 700, color: C.green, align: 'center' });
       text("Endi eng muhim savol: Git ma'lumotlarni qanday formatda o'ylaydi va saqlaydi?", 960, 950, { size: 20, color: C.mute, align: 'center' });
+      ctx.restore();
     });
   }
 
@@ -175,12 +192,18 @@
         });
       });
 
-      card(130, 580, 780, 220, { fill: 'rgba(255,107,122,0.08)', col: C.red, p: P(u, 2.0, 0.6) });
-      text("Qanday ishlaydi va asosiy kamchiligi:", 160, 615, { size: 18, weight: 700, color: C.red, align: 'left' });
-      text("• Har bir versiya avvalgisiga nisbatan farq (patch) sifatida saqlanadi.", 160, 655, { size: 16, color: C.text, align: 'left' });
-      text("• 4-versiyani ochish uchun: 1-faylga barcha deltalarni ketma-ket qo'shish shart!", 160, 695, { size: 16, color: C.text, align: 'left' });
-      text("• Bitta delta buzilsa, undan keyingi butun tarix ishdan chiqadi.", 160, 735, { size: 16, color: C.red, align: 'left', weight: 600 });
-      text("• Loyiha kattalashgani sari versiyalarni tiklash sekinlashib boradi.", 160, 770, { size: 15, color: C.mute, align: 'left' });
+      // Chap izoh kartasi (faqat u >= 2.0 da fade + slide bo'ladi)
+      const kLeftCard = P(u, 2.0, 0.6);
+      withA(kLeftCard, () => {
+        ctx.save(); ctx.translate(0, (1 - eo(kLeftCard)) * 16);
+        card(130, 580, 780, 220, { fill: 'rgba(255,107,122,0.08)', col: C.red });
+        text("Qanday ishlaydi va asosiy kamchiligi:", 160, 615, { size: 18, weight: 700, color: C.red, align: 'left' });
+        text("• Har bir versiya avvalgisiga nisbatan farq (patch) sifatida saqlanadi.", 160, 655, { size: 16, color: C.text, align: 'left' });
+        text("• 4-versiyani ochish uchun: 1-faylga barcha deltalarni ketma-ket qo'shish shart!", 160, 695, { size: 16, color: C.text, align: 'left' });
+        text("• Bitta delta buzilsa, undan keyingi butun tarix ishdan chiqadi.", 160, 735, { size: 16, color: C.red, align: 'left', weight: 600 });
+        text("• Loyiha kattalashgani sari versiyalarni tiklash sekinlashib boradi.", 160, 770, { size: 15, color: C.mute, align: 'left' });
+        ctx.restore();
+      });
 
       // O'ng: Snapshot-based (Git)
       const kRight = P(u, 3.0, 0.6);
@@ -212,21 +235,29 @@
           });
         });
 
-        card(1010, 580, 780, 220, { fill: 'rgba(52,211,153,0.08)', col: C.green, p: P(u, 5.0, 0.6) });
-        text("Git'ning ulkan afzalliklari:", 1040, 615, { size: 18, weight: 700, color: C.green, align: 'left' });
-        text("• Har bir commit — loyihaning o'sha lahzadagi to'liq mustaqil suratidir.", 1040, 655, { size: 16, color: C.text, align: 'left' });
-        text("• O'zgarmagan fayllar qayta nusxalanmaydi — oldingi obyektga havola qo'yiladi!", 1040, 695, { size: 16, color: C.blue, weight: 600, align: 'left' });
-        text("• Commit ochishda deltalarni yig'ish yo'q: istalgan versiya bir zumda ochiladi.", 1040, 735, { size: 16, color: C.text, align: 'left' });
-        text("• Snapshot modeli Git'ni yengil, juda tezkor va mustahkam qiladi.", 1040, 770, { size: 16, color: C.green, weight: 600, align: 'left' });
+        // O'ng izoh kartasi (faqat u >= 5.0 da fade + slide bo'ladi)
+        const kRightCard = P(u, 5.0, 0.6);
+        withA(kRightCard, () => {
+          ctx.save(); ctx.translate(0, (1 - eo(kRightCard)) * 16);
+          card(1010, 580, 780, 220, { fill: 'rgba(52,211,153,0.08)', col: C.green });
+          text("Git'ning ulkan afzalliklari:", 1040, 615, { size: 18, weight: 700, color: C.green, align: 'left' });
+          text("• Har bir commit — loyihaning o'sha lahzadagi to'liq mustaqil suratidir.", 1040, 655, { size: 16, color: C.text, align: 'left' });
+          text("• O'zgarmagan fayllar qayta nusxalanmaydi — oldingi obyektga havola qo'yiladi!", 1040, 695, { size: 16, color: C.blue, weight: 600, align: 'left' });
+          text("• Commit ochishda deltalarni yig'ish yo'q: istalgan versiya bir zumda ochiladi.", 1040, 735, { size: 16, color: C.text, align: 'left' });
+          text("• Snapshot modeli Git'ni yengil, juda tezkor va mustahkam qiladi.", 1040, 770, { size: 16, color: C.green, weight: 600, align: 'left' });
+          ctx.restore();
+        });
       });
     });
 
     // Pastki xulosa
     const kFoot = P(u, 9.0, 0.8);
     withA(kFoot, () => {
-      card(100, 845, 1720, 165, { fill: 'rgba(17,24,52,0.92)', col: C.blue, p: kFoot });
+      ctx.save(); ctx.translate(0, (1 - eo(kFoot)) * 16);
+      card(100, 845, 1720, 165, { fill: 'rgba(17,24,52,0.92)', col: C.blue });
       text("1000 ta fayldan 2 tasi o'zgarsa: Git 2 ta yangi blob yaratadi, qolgan 998 tasi havolalanadi.", 960, 895, { size: 24, weight: 700, color: C.blue, align: 'center' });
       text("Shu sababli Git juda ulkan loyihalarda ham yashindek tez va ixcham ishlaydi.", 960, 950, { size: 20, color: C.mute, align: 'center' });
+      ctx.restore();
     });
   }
 
@@ -252,10 +283,12 @@
         const py = 250 + i * 135;
         const kp = P(u, 0.8 + i * 0.4, 0.5);
         withA(kp, () => {
-          card(130, py, 780, 115, { fill: 'rgba(79,140,255,0.08)', col: C.blue, p: kp });
+          ctx.save(); ctx.translate(0, (1 - eo(kp)) * 16);
+          card(130, py, 780, 115, { fill: 'rgba(79,140,255,0.08)', col: C.blue });
           ctx.fillStyle = C.blue; ctx.beginPath(); ctx.arc(165, py + 36, 7, 0, 7); ctx.fill();
           text(head, 190, py + 36, { size: 20, weight: 700, fam: UI, align: 'left', color: C.text });
           text(desc, 190, py + 78, { size: 16, fam: UI, align: 'left', color: C.mute });
+          ctx.restore();
         });
       });
 
@@ -265,34 +298,51 @@
         panel(980, 140, 840, 680, C.purple, "2. SHA-1 Kriptografik Butunlik", "mazmundan hisoblanadigan 40 xonali barmoq izi", kRight, kRight);
 
         // Box 1: Hesh ko'rinishi
-        card(1010, 250, 780, 120, { fill: 'rgba(15,22,48,0.92)', col: C.purple, p: kRight });
-        text("SHA-1 Hesh Formati (40 ta o'n oltilik belgi):", 1040, 282, { size: 18, weight: 700, color: C.purple, align: 'left' });
-        card(1040, 310, 720, 44, { fill: '#0a0f24', col: C.purple });
-        text("a8345ce15a32566ca36b9e7779e3e08a2f294a55", 1400, 332, { size: 20, weight: 700, fam: MONO, color: C.yellow, align: 'center' });
+        const kB1 = P(u, 3.2, 0.6);
+        withA(kB1, () => {
+          ctx.save(); ctx.translate(0, (1 - eo(kB1)) * 16);
+          card(1010, 250, 780, 120, { fill: 'rgba(15,22,48,0.92)', col: C.purple });
+          text("SHA-1 Hesh Formati (40 ta o'n oltilik belgi):", 1040, 282, { size: 18, weight: 700, color: C.purple, align: 'left' });
+          card(1040, 310, 720, 44, { fill: '#0a0f24', col: C.purple });
+          text("a8345ce15a32566ca36b9e7779e3e08a2f294a55", 1400, 332, { size: 20, weight: 700, fam: MONO, color: C.yellow, align: 'center' });
+          ctx.restore();
+        });
 
-        // Box 2: Qanday hisoblanadi?
-        card(1010, 395, 780, 160, { fill: 'rgba(15,22,48,0.92)', col: C.blue, p: P(u, 4.5, 0.6) });
-        text("Hesh fayl mazmunidan generatsiya qilinadi:", 1040, 428, { size: 18, weight: 700, color: C.text, align: 'left' });
-        card(1040, 455, 720, 80, { fill: '#0a0f24', col: C.blue });
-        text("$ printf 'blob 27\\0console.log(\"salom\")' | shasum", 1060, 480, { size: 16, fam: MONO, align: 'left', color: C.green });
-        text("-> a8345ce15a32566ca36b9e7779e3e08a2f294a55", 1060, 512, { size: 16, fam: MONO, align: 'left', color: C.yellow });
+        // Box 2: Qanday hisoblanadi? (u >= 4.5 da boshlanadi)
+        const kB2 = P(u, 4.5, 0.6);
+        withA(kB2, () => {
+          ctx.save(); ctx.translate(0, (1 - eo(kB2)) * 16);
+          card(1010, 395, 780, 160, { fill: 'rgba(15,22,48,0.92)', col: C.blue });
+          text("Hesh fayl mazmunidan generatsiya qilinadi:", 1040, 428, { size: 18, weight: 700, color: C.text, align: 'left' });
+          card(1040, 455, 720, 80, { fill: '#0a0f24', col: C.blue });
+          text("$ printf 'blob 27\\0console.log(\"salom\")' | shasum", 1060, 480, { size: 16, fam: MONO, align: 'left', color: C.green });
+          text("-> a8345ce15a32566ca36b9e7779e3e08a2f294a55", 1060, 512, { size: 16, fam: MONO, align: 'left', color: C.yellow });
+          ctx.restore();
+        });
 
-        // Box 3: Butunlik Kafolati
-        card(1010, 580, 780, 220, { fill: 'rgba(180,108,255,0.08)', col: C.purple, p: P(u, 6.0, 0.6) });
-        text("Kriptografik Butunlik Kafolati:", 1040, 615, { size: 18, weight: 700, color: C.purple, align: 'left' });
-        text("• Fayldagi bitta bayt yoki probel o'zgarsa ham, butun hesh o'zgaradi.", 1040, 655, { size: 16, color: C.text, align: 'left' });
-        text("• Git bilmasdan biror faylni yoki o'tmishni soxtalashtirib bo'lmaydi.", 1040, 695, { size: 16, color: C.text, align: 'left' });
-        text("• git fsck buyrug'i har qanday zararlanish yoki xatoni darhol fosh qiladi.", 1040, 735, { size: 16, color: C.green, weight: 600, align: 'left' });
-        text("• Tarix zanjiri har bir ota-onaning heshiga qat'iy bog'langan bo'ladi.", 1040, 770, { size: 15, color: C.mute, align: 'left' });
+        // Box 3: Butunlik Kafolati (u >= 6.0 da boshlanadi)
+        const kB3 = P(u, 6.0, 0.6);
+        withA(kB3, () => {
+          ctx.save(); ctx.translate(0, (1 - eo(kB3)) * 16);
+          card(1010, 580, 780, 220, { fill: 'rgba(180,108,255,0.08)', col: C.purple });
+          text("Kriptografik Butunlik Kafolati:", 1040, 615, { size: 18, weight: 700, color: C.purple, align: 'left' });
+          text("• Fayldagi bitta bayt yoki probel o'zgarsa ham, butun hesh o'zgaradi.", 1040, 655, { size: 16, color: C.text, align: 'left' });
+          text("• Git bilmasdan biror faylni yoki o'tmishni soxtalashtirib bo'lmaydi.", 1040, 695, { size: 16, color: C.text, align: 'left' });
+          text("• git fsck buyrug'i har qanday zararlanish yoki xatoni darhol fosh qiladi.", 1040, 735, { size: 16, color: C.green, weight: 600, align: 'left' });
+          text("• Tarix zanjiri har bir ota-onaning heshiga qat'iy bog'langan bo'ladi.", 1040, 770, { size: 15, color: C.mute, align: 'left' });
+          ctx.restore();
+        });
       });
     });
 
     // Pastki xulosa
     const kFoot = P(u, 9.5, 0.8);
     withA(kFoot, () => {
-      card(100, 845, 1720, 165, { fill: 'rgba(17,24,52,0.92)', col: C.purple, p: kFoot });
+      ctx.save(); ctx.translate(0, (1 - eo(kFoot)) * 16);
+      card(100, 845, 1720, 165, { fill: 'rgba(17,24,52,0.92)', col: C.purple });
       text("ID fayl nomi bo'yicha emas, aynan uning mazmunidan hisoblanadi: mazmun o'zgarsa — yangi obyekt.", 960, 895, { size: 24, weight: 700, color: C.purple, align: 'center' });
       text("Natijada Git tarixi soxtalashtirishdan va tasodifiy buzilishlardan 100% himoyalangan.", 960, 950, { size: 20, color: C.mute, align: 'center' });
+      ctx.restore();
     });
   }
 
@@ -307,22 +357,35 @@
       // Chap: Faqat qo'shish
       panel(100, 140, 520, 680, C.green, "Faqat Qo'shish Qoidasi", "ma'lumot yo'qolmaydi (append-only)", kBox, kBox);
 
-      card(125, 250, 470, 145, { fill: 'rgba(15,22,48,0.92)', col: C.green, p: kBox });
+      // Box 1 (u=0.4)
+      card(125, 250, 470, 145, { fill: 'rgba(15,22,48,0.92)', col: C.green });
       text("Git bazasi — append-only:", 150, 282, { size: 19, weight: 700, color: C.green, align: 'left' });
       text("Bazada ma'lumotlar o'chirilmaydi,", 150, 320, { size: 16, color: C.text, align: 'left' });
       text("faqat yangi obyektlar qo'shiladi.", 150, 352, { size: 16, color: C.text, align: 'left' });
 
-      card(125, 415, 470, 160, { fill: '#0a0f24', col: C.blue, p: P(u, 1.8, 0.6) });
-      text("$ git commit --amend", 150, 448, { size: 16, fam: MONO, align: 'left', color: C.green });
-      text("Eski commit o'chmaydi!", 150, 485, { size: 17, weight: 700, align: 'left', color: C.orange });
-      text("Yangi commit yaratiladi, eski commit", 150, 520, { size: 15, color: C.text, align: 'left' });
-      text("esa xotirada saqlanib qolaveradi.", 150, 548, { size: 15, color: C.mute, align: 'left' });
+      // Box 2 (u=1.8 da boshlanadi)
+      const kAmend = P(u, 1.8, 0.6);
+      withA(kAmend, () => {
+        ctx.save(); ctx.translate(0, (1 - eo(kAmend)) * 16);
+        card(125, 415, 470, 160, { fill: '#0a0f24', col: C.blue });
+        text("$ git commit --amend", 150, 448, { size: 16, fam: MONO, align: 'left', color: C.green });
+        text("Eski commit o'chmaydi!", 150, 485, { size: 17, weight: 700, align: 'left', color: C.orange });
+        text("Yangi commit yaratiladi, eski commit", 150, 520, { size: 15, color: C.text, align: 'left' });
+        text("esa xotirada saqlanib qolaveradi.", 150, 548, { size: 15, color: C.mute, align: 'left' });
+        ctx.restore();
+      });
 
-      card(125, 595, 470, 205, { fill: 'rgba(52,211,153,0.08)', col: C.green, p: P(u, 3.5, 0.6) });
-      text("Reflog orqali qayta tiklash:", 150, 628, { size: 18, weight: 700, color: C.green, align: 'left' });
-      text("Tarixda 'yo'qolgan' commitlarni ham", 150, 668, { size: 16, color: C.text, align: 'left' });
-      text("reflog jurnali orqali 30-90 kun ichida", 150, 702, { size: 16, color: C.text, align: 'left' });
-      text("bemalol qaytarib olish mumkin!", 150, 736, { size: 17, weight: 700, color: C.yellow, align: 'left' });
+      // Box 3 (u=3.5 da boshlanadi)
+      const kReflog = P(u, 3.5, 0.6);
+      withA(kReflog, () => {
+        ctx.save(); ctx.translate(0, (1 - eo(kReflog)) * 16);
+        card(125, 595, 470, 205, { fill: 'rgba(52,211,153,0.08)', col: C.green });
+        text("Reflog orqali qayta tiklash:", 150, 628, { size: 18, weight: 700, color: C.green, align: 'left' });
+        text("Tarixda 'yo'qolgan' commitlarni ham", 150, 668, { size: 16, color: C.text, align: 'left' });
+        text("reflog jurnali orqali 30-90 kun ichida", 150, 702, { size: 16, color: C.text, align: 'left' });
+        text("bemalol qaytarib olish mumkin!", 150, 736, { size: 17, weight: 700, color: C.yellow, align: 'left' });
+        ctx.restore();
+      });
 
       // O'ng: Uchta hudud
       const kRight = P(u, 2.8, 0.6);
@@ -367,18 +430,25 @@
         link(1405, 450, 1450, 450, { col: C.blue, w: 5, p: P(u, 5.5, 0.5) });
         pill("git commit", 1427, 415, C.blue, { size: 14, s: eback(P(u, 5.7, 0.4)) });
 
-        // Pastki eslatma
-        card(680, 690, 1110, 105, { fill: 'rgba(255,255,255,0.04)', col: C.mute, p: P(u, 7.0, 0.6) });
-        text("Qoida: Avval nima kirishini tanlaysiz (git add), so'ngra to'liq surat qilib muhrlaysiz (git commit)!", 1235, 742, { size: 18, weight: 700, color: C.yellow, align: 'center' });
+        // Pastki eslatma (u=7.0 da boshlanadi)
+        const kNote = P(u, 7.0, 0.6);
+        withA(kNote, () => {
+          ctx.save(); ctx.translate(0, (1 - eo(kNote)) * 16);
+          card(680, 690, 1110, 105, { fill: 'rgba(255,255,255,0.04)', col: C.mute });
+          text("Qoida: Avval nima kirishini tanlaysiz (git add), so'ngra to'liq surat qilib muhrlaysiz (git commit)!", 1235, 742, { size: 18, weight: 700, color: C.yellow, align: 'center' });
+          ctx.restore();
+        });
       });
     });
 
     // Pastki xulosa
     const kFoot = P(u, 9.5, 0.8);
     withA(kFoot, () => {
-      card(100, 845, 1720, 165, { fill: 'rgba(17,24,52,0.92)', col: C.green, p: kFoot });
+      ctx.save(); ctx.translate(0, (1 - eo(kFoot)) * 16);
+      card(100, 845, 1720, 165, { fill: 'rgba(17,24,52,0.92)', col: C.green });
       text("Ikki bosqichli saqlash (add -> commit) tasodifiy xatolarni kiritmaslik uchun eng qulay mexanizmdir.", 960, 895, { size: 24, weight: 700, color: C.green, align: 'center' });
       text("Endi 01-bobning asosiy xulosalarini birgalikda umumlashtiramiz.", 960, 950, { size: 20, color: C.mute, align: 'center' });
+      ctx.restore();
     });
   }
 
@@ -430,9 +500,10 @@
       cards.forEach((c, i) => {
         const cx = 100 + i * 590;
         const cy = 160;
-        const kc = P(u, 0.6 + i * 0.35, 0.6);
+        const kc = P(u, 0.6 + i * 0.4, 0.6);
         withA(kc, () => {
-          card(cx, cy, cW, cH, { fill: 'rgba(15,22,48,0.92)', col: c.col, p: kc });
+          ctx.save(); ctx.translate(0, (1 - eo(kc)) * 16);
+          card(cx, cy, cW, cH, { fill: 'rgba(15,22,48,0.92)', col: c.col });
           pill(c.num + " · " + c.title, cx + cW / 2, cy + 45, c.col, { size: 20, mono: false });
 
           c.items.forEach((item, j) => {
@@ -441,16 +512,19 @@
             ctx.fillStyle = c.col; ctx.beginPath(); ctx.arc(cx + 55, iy + 32, 6, 0, 7); ctx.fill();
             text(item, cx + 78, iy + 33, { size: 17, weight: 600, align: 'left', color: C.text });
           });
+          ctx.restore();
         });
       });
 
       // Pastki xulosa
       const kFoot = P(u, 2.5, 0.8);
       withA(kFoot, () => {
-        card(100, 700, 1720, 310, { fill: 'rgba(18,26,58,0.95)', col: C.git, p: kFoot });
+        ctx.save(); ctx.translate(0, (1 - eo(kFoot)) * 16);
+        card(100, 700, 1720, 310, { fill: 'rgba(18,26,58,0.95)', col: C.git });
         text("Keyingi bob: 02 — Terminal va Git'ni o'rnatish", 960, 765, { size: 34, weight: 800, color: C.git, align: 'center' });
         text("Kompyuteringizda terminalni sozlash, Git'ni o'rnatish va birinchi muhitni tayyorlaymiz.", 960, 830, { size: 22, color: C.text, align: 'center' });
         text("E'tiboringiz uchun rahmat! · dev-docs.uz", 960, 895, { size: 20, weight: 600, color: C.mute, align: 'center' });
+        ctx.restore();
       });
     });
   }
