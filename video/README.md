@@ -25,8 +25,15 @@ Stilistika har xil bo'lsa-da, quyidagi texnik va vizual aniqlik talablari **barc
    - Terminal hech qachon 1-2 qatorli oddiy so'rov uchun butun ekranni egallab (1640 px) qora bo'sh quti bo'lib turmasligi shart (`q2-kod` da terminal doim chapda ixcham `w: 800–880 px` bo'ladi).
 
 4. **Renderdan oldingi avtomatik tekshiruv (Automated Pre-render Scan)**:
-   - Hech bir video to'liq kadrli skaner tekshiruvidan (`check-video.mjs`) o'tmasdan render qilinmaydi.
+   - Hech bir video to'liq kadrli skaner tekshiruvidan (`check-video.mjs` yoki `audit-suite.mjs`) o'tmasdan render qilinmaydi.
    - Butun video davomiyligi bo'yicha `window.OVERFLOWS.length === 0` va `missing: []` bo'lishi renderga ruxsat etilishining asosiy shartidir.
+
+5. **Elementlar to'qnashuvi va ustma-ust tushishini qat'iy taqiqlash (Zero Visual Collision & Mandatory Stills Audit)**:
+   - Chip, sarlavha, panel va ichki kartochkalar hech qachon bir-birining ustiga tushmasligi, panel bo'luvchi chiziqlarini (divider) bosib ketmasligi yoki qo'shaloq chegaralar hosil qilmasligi shart.
+   - Chap yuqoridagi sahna chipi (`chip`) bo'lgan sahnalarda ekranning yuqorisida markaziy uzun sarlavhalar (`heading`) chizish qat'iyan taqiqlanadi.
+   - Har qanday panel ichidagi kontent panel divideridan kamida **20–30 px pastda** (`y >= panel.y + 110`) boshlanadi.
+   - `audit-suite.mjs` faqat xatolik va ekran toshishini tekshiradi, lekin **ikkita element bir-birining ustiga chizilishini (visual overlap) aniqlay olmaydi**.
+   - Shu sababli har sahnaning asosiy vaqtlaridan `node stills.mjs` orqali kadrlar olinishi va **inson/model tomonidan vizual ko'rib chiqilishi majburiydir**. 0 ta vizual to'qnashuv tasdiqlanmasdan video render qilish yoki PR ochish taqiqlanadi.
 
 Har papka — bitta video. Tayyor fayl `public/video/<kitob>/` ga qo'yiladi va bobga `<figure class="video">` bilan qo'shiladi (namuna: `content/git/README.md`).
 
