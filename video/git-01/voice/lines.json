@@ -1,0 +1,1149 @@
+[
+  {
+    "id": "l1",
+    "scene": "intro",
+    "text": "Salom! Bu Git qo‘llanmasining birinchi bobi. Ushbu videoda versiya nazorati nima ekanini va Git ma’lumotni qanday saqlashini ko‘rib chiqamiz.",
+    "show": "Salom! Bu Git qo‘llanmasining birinchi bobi. Ushbu videoda versiya nazorati nima ekanini va Git ma’lumotni qanday saqlashini ko‘rib chiqamiz.",
+    "say": "Salom! Bu Git qo‘llanmasining birinchi bobi. Ushbu videoda versiya nazorati nima ekanini va Git ma’lumotni qanday saqlashini ko‘rib chiqamiz.",
+    "a0": 0.26,
+    "a1": 8.71,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.26,
+        "e": 0.54
+      },
+      {
+        "w": "Bu",
+        "s": 1.2,
+        "e": 1.28
+      },
+      {
+        "w": "Git",
+        "s": 1.44,
+        "e": 1.6
+      },
+      {
+        "w": "qo‘llanmasining",
+        "s": 1.66,
+        "e": 2.36
+      },
+      {
+        "w": "birinchi",
+        "s": 2.46,
+        "e": 2.82
+      },
+      {
+        "w": "bobi.",
+        "s": 2.86,
+        "e": 3.12
+      },
+      {
+        "w": "Ushbu",
+        "s": 3.84,
+        "e": 4.06
+      },
+      {
+        "w": "videoda",
+        "s": 4.12,
+        "e": 4.46
+      },
+      {
+        "w": "versiya",
+        "s": 4.62,
+        "e": 4.94
+      },
+      {
+        "w": "nazorati",
+        "s": 5.0,
+        "e": 5.44
+      },
+      {
+        "w": "nima",
+        "s": 5.48,
+        "e": 5.64
+      },
+      {
+        "w": "ekanini",
+        "s": 5.7,
+        "e": 6.12
+      },
+      {
+        "w": "va",
+        "s": 6.2,
+        "e": 6.28
+      },
+      {
+        "w": "Git",
+        "s": 6.44,
+        "e": 6.6
+      },
+      {
+        "w": "ma’lumotni",
+        "s": 6.68,
+        "e": 7.2
+      },
+      {
+        "w": "qanday",
+        "s": 7.28,
+        "e": 7.61
+      },
+      {
+        "w": "saqlashini",
+        "s": 7.65,
+        "e": 8.11
+      },
+      {
+        "w": "ko‘rib",
+        "s": 8.15,
+        "e": 8.35
+      },
+      {
+        "w": "chiqamiz.",
+        "s": 8.39,
+        "e": 8.71
+      }
+    ]
+  },
+  {
+    "id": "l2",
+    "scene": "muammo_va_avlodlar",
+    "text": "Ko‘pchilik fayllarni turli nomlar bilan nusxalaydi, ammo bu usulda qaysi biri oxirgisi ekanini va kim o‘zgartirganini bilish qiyin.",
+    "show": "Ko‘pchilik fayllarni turli nomlar bilan nusxalaydi, ammo bu usulda qaysi biri oxirgisi ekanini va kim o‘zgartirganini bilish qiyin.",
+    "say": "Ko‘pchilik fayllarni turli nomlar bilan nusxalaydi, ammo bu usulda qaysi biri oxirgisi ekanini va kim o‘zgartirganini bilish qiyin.",
+    "a0": 9.89,
+    "a1": 16.55,
+    "words": [
+      {
+        "w": "Ko‘pchilik",
+        "s": 9.89,
+        "e": 10.29
+      },
+      {
+        "w": "fayllarni",
+        "s": 10.33,
+        "e": 10.79
+      },
+      {
+        "w": "turli",
+        "s": 10.85,
+        "e": 11.07
+      },
+      {
+        "w": "nomlar",
+        "s": 11.13,
+        "e": 11.45
+      },
+      {
+        "w": "bilan",
+        "s": 11.49,
+        "e": 11.67
+      },
+      {
+        "w": "nusxalaydi,",
+        "s": 11.71,
+        "e": 12.19
+      },
+      {
+        "w": "ammo",
+        "s": 12.53,
+        "e": 12.67
+      },
+      {
+        "w": "bu",
+        "s": 12.75,
+        "e": 12.81
+      },
+      {
+        "w": "usulda",
+        "s": 12.89,
+        "e": 13.23
+      },
+      {
+        "w": "qaysi",
+        "s": 13.33,
+        "e": 13.61
+      },
+      {
+        "w": "biri",
+        "s": 13.63,
+        "e": 13.75
+      },
+      {
+        "w": "oxirgisi",
+        "s": 13.81,
+        "e": 14.23
+      },
+      {
+        "w": "ekanini",
+        "s": 14.27,
+        "e": 14.69
+      },
+      {
+        "w": "va",
+        "s": 14.85,
+        "e": 14.93
+      },
+      {
+        "w": "kim",
+        "s": 15.05,
+        "e": 15.21
+      },
+      {
+        "w": "o‘zgartirganini",
+        "s": 15.31,
+        "e": 16.03
+      },
+      {
+        "w": "bilish",
+        "s": 16.05,
+        "e": 16.27
+      },
+      {
+        "w": "qiyin.",
+        "s": 16.33,
+        "e": 16.55
+      }
+    ]
+  },
+  {
+    "id": "l3",
+    "scene": "muammo_va_avlodlar",
+    "text": "Lokal tizimlarda butun tarix bitta kompyuterda bo‘lsa, markazlashgan tizimlarda yagona server buzilsa butun jamoa ishi to‘xtab qoladi.",
+    "show": "Lokal tizimlarda butun tarix bitta kompyuterda bo‘lsa, markazlashgan tizimlarda yagona server buzilsa butun jamoa ishi to‘xtab qoladi.",
+    "say": "Lokal tizimlarda butun tarix bitta kompyuterda bo‘lsa, markazlashgan tizimlarda yagona server buzilsa butun jamoa ishi to‘xtab qoladi.",
+    "a0": 17.25,
+    "a1": 24.44,
+    "words": [
+      {
+        "w": "Lokal",
+        "s": 17.25,
+        "e": 17.59
+      },
+      {
+        "w": "tizimlarda",
+        "s": 17.61,
+        "e": 18.15
+      },
+      {
+        "w": "butun",
+        "s": 18.21,
+        "e": 18.43
+      },
+      {
+        "w": "tarix",
+        "s": 18.47,
+        "e": 18.75
+      },
+      {
+        "w": "bitta",
+        "s": 18.83,
+        "e": 19.07
+      },
+      {
+        "w": "kompyuterda",
+        "s": 19.11,
+        "e": 19.63
+      },
+      {
+        "w": "bo‘lsa,",
+        "s": 19.67,
+        "e": 19.95
+      },
+      {
+        "w": "markazlashgan",
+        "s": 20.29,
+        "e": 21.03
+      },
+      {
+        "w": "tizimlarda",
+        "s": 21.07,
+        "e": 21.59
+      },
+      {
+        "w": "yagona",
+        "s": 21.67,
+        "e": 22.05
+      },
+      {
+        "w": "server",
+        "s": 22.11,
+        "e": 22.45
+      },
+      {
+        "w": "buzilsa",
+        "s": 22.49,
+        "e": 22.86
+      },
+      {
+        "w": "butun",
+        "s": 22.94,
+        "e": 23.18
+      },
+      {
+        "w": "jamoa",
+        "s": 23.24,
+        "e": 23.58
+      },
+      {
+        "w": "ishi",
+        "s": 23.62,
+        "e": 23.76
+      },
+      {
+        "w": "to‘xtab",
+        "s": 23.8,
+        "e": 24.1
+      },
+      {
+        "w": "qoladi.",
+        "s": 24.14,
+        "e": 24.44
+      }
+    ]
+  },
+  {
+    "id": "l4",
+    "scene": "muammo_va_avlodlar",
+    "text": "Taqsimlangan tizim bo‘lgan Gitda esa har bir dasturchi butun repozitoriyni to‘liq tarixi bilan nusxalab oladi va har bir klon to‘liq zaxira hisoblanadi.",
+    "show": "Taqsimlangan tizim bo‘lgan Gitda esa har bir dasturchi butun repozitoriyni to‘liq tarixi bilan nusxalab oladi va har bir klon to‘liq zaxira hisoblanadi.",
+    "say": "Taqsimlangan tizim bo‘lgan Gitda esa har bir dasturchi butun repozitoriyni to‘liq tarixi bilan nusxalab oladi va har bir klon to‘liq zaxira hisoblanadi.",
+    "a0": 25.4,
+    "a1": 33.36,
+    "words": [
+      {
+        "w": "Taqsimlangan",
+        "s": 25.4,
+        "e": 26.0
+      },
+      {
+        "w": "tizim",
+        "s": 26.04,
+        "e": 26.24
+      },
+      {
+        "w": "bo‘lgan",
+        "s": 26.28,
+        "e": 26.56
+      },
+      {
+        "w": "Gitda",
+        "s": 26.62,
+        "e": 26.9
+      },
+      {
+        "w": "esa",
+        "s": 26.96,
+        "e": 27.14
+      },
+      {
+        "w": "har",
+        "s": 27.48,
+        "e": 27.68
+      },
+      {
+        "w": "bir",
+        "s": 27.72,
+        "e": 27.82
+      },
+      {
+        "w": "dasturchi",
+        "s": 27.86,
+        "e": 28.28
+      },
+      {
+        "w": "butun",
+        "s": 28.34,
+        "e": 28.56
+      },
+      {
+        "w": "repozitoriyni",
+        "s": 28.62,
+        "e": 29.32
+      },
+      {
+        "w": "to‘liq",
+        "s": 29.42,
+        "e": 29.74
+      },
+      {
+        "w": "tarixi",
+        "s": 29.82,
+        "e": 30.16
+      },
+      {
+        "w": "bilan",
+        "s": 30.18,
+        "e": 30.36
+      },
+      {
+        "w": "nusxalab",
+        "s": 30.38,
+        "e": 30.78
+      },
+      {
+        "w": "oladi",
+        "s": 30.8,
+        "e": 31.04
+      },
+      {
+        "w": "va",
+        "s": 31.1,
+        "e": 31.18
+      },
+      {
+        "w": "har",
+        "s": 31.28,
+        "e": 31.48
+      },
+      {
+        "w": "bir",
+        "s": 31.52,
+        "e": 31.64
+      },
+      {
+        "w": "klon",
+        "s": 31.7,
+        "e": 32.0
+      },
+      {
+        "w": "to‘liq",
+        "s": 32.08,
+        "e": 32.36
+      },
+      {
+        "w": "zaxira",
+        "s": 32.44,
+        "e": 32.82
+      },
+      {
+        "w": "hisoblanadi.",
+        "s": 32.86,
+        "e": 33.36
+      }
+    ]
+  },
+  {
+    "id": "l5",
+    "scene": "snapshot_modeli",
+    "text": "Boshqa tizimlar o‘zgarishlarni deltalarda, ya’ni fayllar farqi sifatida saqlasa, Git butun loyihaning to‘liq suratlari, ya’ni snepshotlar oqimi sifatida saqlaydi.",
+    "show": "Boshqa tizimlar o‘zgarishlarni deltalarda, ya’ni fayllar farqi sifatida saqlasa, Git butun loyihaning to‘liq suratlari, ya’ni snepshotlar oqimi sifatida saqlaydi.",
+    "say": "Boshqa tizimlar o‘zgarishlarni deltalarda, ya’ni fayllar farqi sifatida saqlasa, Git butun loyihaning to‘liq suratlari, ya’ni snepshotlar oqimi sifatida saqlaydi.",
+    "a0": 34.4,
+    "a1": 43.63,
+    "words": [
+      {
+        "w": "Boshqa",
+        "s": 34.4,
+        "e": 34.64
+      },
+      {
+        "w": "tizimlar",
+        "s": 34.68,
+        "e": 35.08
+      },
+      {
+        "w": "o‘zgarishlarni",
+        "s": 35.16,
+        "e": 35.76
+      },
+      {
+        "w": "deltalarda,",
+        "s": 35.82,
+        "e": 36.36
+      },
+      {
+        "w": "ya’ni",
+        "s": 36.46,
+        "e": 36.64
+      },
+      {
+        "w": "fayllar",
+        "s": 36.94,
+        "e": 37.38
+      },
+      {
+        "w": "farqi",
+        "s": 37.46,
+        "e": 37.81
+      },
+      {
+        "w": "sifatida",
+        "s": 37.85,
+        "e": 38.25
+      },
+      {
+        "w": "saqlasa,",
+        "s": 38.29,
+        "e": 38.69
+      },
+      {
+        "w": "Git",
+        "s": 39.09,
+        "e": 39.27
+      },
+      {
+        "w": "butun",
+        "s": 39.39,
+        "e": 39.65
+      },
+      {
+        "w": "loyihaning",
+        "s": 39.69,
+        "e": 40.19
+      },
+      {
+        "w": "to‘liq",
+        "s": 40.23,
+        "e": 40.49
+      },
+      {
+        "w": "suratlari,",
+        "s": 40.55,
+        "e": 41.11
+      },
+      {
+        "w": "ya’ni",
+        "s": 41.23,
+        "e": 41.43
+      },
+      {
+        "w": "snepshotlar",
+        "s": 41.73,
+        "e": 42.43
+      },
+      {
+        "w": "oqimi",
+        "s": 42.53,
+        "e": 42.77
+      },
+      {
+        "w": "sifatida",
+        "s": 42.83,
+        "e": 43.19
+      },
+      {
+        "w": "saqlaydi.",
+        "s": 43.23,
+        "e": 43.63
+      }
+    ]
+  },
+  {
+    "id": "l6",
+    "scene": "snapshot_modeli",
+    "text": "Agar biror fayl o‘zgarmagan bo‘lsa, Git uni qayta nusxalamaydi, balki oldingi bir xil obyektga havola qo‘yadi.",
+    "show": "Agar biror fayl o‘zgarmagan bo‘lsa, Git uni qayta nusxalamaydi, balki oldingi bir xil obyektga havola qo‘yadi.",
+    "say": "Agar biror fayl o‘zgarmagan bo‘lsa, Git uni qayta nusxalamaydi, balki oldingi bir xil obyektga havola qo‘yadi.",
+    "a0": 44.61,
+    "a1": 50.23,
+    "words": [
+      {
+        "w": "Agar",
+        "s": 44.61,
+        "e": 44.83
+      },
+      {
+        "w": "biror",
+        "s": 44.87,
+        "e": 45.07
+      },
+      {
+        "w": "fayl",
+        "s": 45.13,
+        "e": 45.35
+      },
+      {
+        "w": "o‘zgarmagan",
+        "s": 45.41,
+        "e": 45.89
+      },
+      {
+        "w": "bo‘lsa,",
+        "s": 45.93,
+        "e": 46.17
+      },
+      {
+        "w": "Git",
+        "s": 46.25,
+        "e": 46.39
+      },
+      {
+        "w": "uni",
+        "s": 46.47,
+        "e": 46.61
+      },
+      {
+        "w": "qayta",
+        "s": 46.65,
+        "e": 46.87
+      },
+      {
+        "w": "nusxalamaydi,",
+        "s": 46.91,
+        "e": 47.49
+      },
+      {
+        "w": "balki",
+        "s": 47.69,
+        "e": 47.95
+      },
+      {
+        "w": "oldingi",
+        "s": 48.27,
+        "e": 48.61
+      },
+      {
+        "w": "bir",
+        "s": 48.65,
+        "e": 48.77
+      },
+      {
+        "w": "xil",
+        "s": 48.81,
+        "e": 48.95
+      },
+      {
+        "w": "obyektga",
+        "s": 49.03,
+        "e": 49.47
+      },
+      {
+        "w": "havola",
+        "s": 49.53,
+        "e": 49.89
+      },
+      {
+        "w": "qo‘yadi.",
+        "s": 49.93,
+        "e": 50.23
+      }
+    ]
+  },
+  {
+    "id": "l7",
+    "scene": "lokal_amallar_va_butunlik",
+    "text": "Gitda deyarli barcha amallar lokal bajariladi, shuning uchun tarixni ko‘rish yoki farqlarni hisoblash oflayn rejimda ham bir zumda ishlaydi.",
+    "show": "Gitda deyarli barcha amallar lokal bajariladi, shuning uchun tarixni ko‘rish yoki farqlarni hisoblash oflayn rejimda ham bir zumda ishlaydi.",
+    "say": "Gitda deyarli barcha amallar lokal bajariladi, shuning uchun tarixni ko‘rish yoki farqlarni hisoblash oflayn rejimda ham bir zumda ishlaydi.",
+    "a0": 51.25,
+    "a1": 58.62,
+    "words": [
+      {
+        "w": "Gitda",
+        "s": 51.25,
+        "e": 51.55
+      },
+      {
+        "w": "deyarli",
+        "s": 51.63,
+        "e": 51.99
+      },
+      {
+        "w": "barcha",
+        "s": 52.07,
+        "e": 52.35
+      },
+      {
+        "w": "amallar",
+        "s": 52.41,
+        "e": 52.78
+      },
+      {
+        "w": "lokal",
+        "s": 52.86,
+        "e": 53.18
+      },
+      {
+        "w": "bajariladi,",
+        "s": 53.2,
+        "e": 53.72
+      },
+      {
+        "w": "shuning",
+        "s": 53.84,
+        "e": 54.06
+      },
+      {
+        "w": "uchun",
+        "s": 54.06,
+        "e": 54.22
+      },
+      {
+        "w": "tarixni",
+        "s": 54.48,
+        "e": 54.86
+      },
+      {
+        "w": "ko‘rish",
+        "s": 54.9,
+        "e": 55.26
+      },
+      {
+        "w": "yoki",
+        "s": 55.3,
+        "e": 55.48
+      },
+      {
+        "w": "farqlarni",
+        "s": 55.56,
+        "e": 56.08
+      },
+      {
+        "w": "hisoblash",
+        "s": 56.12,
+        "e": 56.54
+      },
+      {
+        "w": "oflayn",
+        "s": 56.8,
+        "e": 57.16
+      },
+      {
+        "w": "rejimda",
+        "s": 57.22,
+        "e": 57.56
+      },
+      {
+        "w": "ham",
+        "s": 57.6,
+        "e": 57.76
+      },
+      {
+        "w": "bir",
+        "s": 57.84,
+        "e": 57.96
+      },
+      {
+        "w": "zumda",
+        "s": 58.02,
+        "e": 58.24
+      },
+      {
+        "w": "ishlaydi.",
+        "s": 58.3,
+        "e": 58.62
+      }
+    ]
+  },
+  {
+    "id": "l8",
+    "scene": "lokal_amallar_va_butunlik",
+    "text": "Har bir fayl va kommit uchun qirq xonali esh-ey-van hesh nazorat yig‘indisi hisoblanadi, shuning uchun ma’lumot butunligi qat’iy kafolatlanadi.",
+    "show": "Har bir fayl va kommit uchun qirq xonali esh-ey-van hesh nazorat yig‘indisi hisoblanadi, shuning uchun ma’lumot butunligi qat’iy kafolatlanadi.",
+    "say": "Har bir fayl va kommit uchun qirq xonali esh-ey-van hesh nazorat yig‘indisi hisoblanadi, shuning uchun ma’lumot butunligi qat’iy kafolatlanadi.",
+    "a0": 59.78,
+    "a1": 67.48,
+    "words": [
+      {
+        "w": "Har",
+        "s": 59.78,
+        "e": 59.9
+      },
+      {
+        "w": "bir",
+        "s": 60.0,
+        "e": 60.08
+      },
+      {
+        "w": "fayl",
+        "s": 60.12,
+        "e": 60.4
+      },
+      {
+        "w": "va",
+        "s": 60.44,
+        "e": 60.5
+      },
+      {
+        "w": "kommit",
+        "s": 60.58,
+        "e": 60.86
+      },
+      {
+        "w": "uchun",
+        "s": 60.92,
+        "e": 61.1
+      },
+      {
+        "w": "qirq",
+        "s": 61.2,
+        "e": 61.42
+      },
+      {
+        "w": "xonali",
+        "s": 61.46,
+        "e": 61.82
+      },
+      {
+        "w": "esh-ey-van",
+        "s": 62.08,
+        "e": 62.9
+      },
+      {
+        "w": "hesh",
+        "s": 63.04,
+        "e": 63.28
+      },
+      {
+        "w": "nazorat",
+        "s": 63.34,
+        "e": 63.7
+      },
+      {
+        "w": "yig‘indisi",
+        "s": 63.76,
+        "e": 64.12
+      },
+      {
+        "w": "hisoblanadi,",
+        "s": 64.16,
+        "e": 64.66
+      },
+      {
+        "w": "shuning",
+        "s": 64.96,
+        "e": 65.2
+      },
+      {
+        "w": "uchun",
+        "s": 65.2,
+        "e": 65.38
+      },
+      {
+        "w": "ma’lumot",
+        "s": 65.44,
+        "e": 65.84
+      },
+      {
+        "w": "butunligi",
+        "s": 65.88,
+        "e": 66.28
+      },
+      {
+        "w": "qat’iy",
+        "s": 66.38,
+        "e": 66.74
+      },
+      {
+        "w": "kafolatlanadi.",
+        "s": 66.78,
+        "e": 67.48
+      }
+    ]
+  },
+  {
+    "id": "l9",
+    "scene": "faqat_qoshish_va_uch_hudud",
+    "text": "Git bazasiga faqat yangi ma’lumot qo‘shiladi, hatto kommitni o‘zgartirganda ham eski holat xotirada saqlanib qoladi.",
+    "show": "Git bazasiga faqat yangi ma’lumot qo‘shiladi, hatto kommitni o‘zgartirganda ham eski holat xotirada saqlanib qoladi.",
+    "say": "Git bazasiga faqat yangi ma’lumot qo‘shiladi, hatto kommitni o‘zgartirganda ham eski holat xotirada saqlanib qoladi.",
+    "a0": 68.53,
+    "a1": 74.81,
+    "words": [
+      {
+        "w": "Git",
+        "s": 68.53,
+        "e": 68.69
+      },
+      {
+        "w": "bazasiga",
+        "s": 68.77,
+        "e": 69.25
+      },
+      {
+        "w": "faqat",
+        "s": 69.37,
+        "e": 69.67
+      },
+      {
+        "w": "yangi",
+        "s": 69.73,
+        "e": 69.99
+      },
+      {
+        "w": "ma’lumot",
+        "s": 70.03,
+        "e": 70.39
+      },
+      {
+        "w": "qo‘shiladi,",
+        "s": 70.41,
+        "e": 70.81
+      },
+      {
+        "w": "hatto",
+        "s": 71.05,
+        "e": 71.29
+      },
+      {
+        "w": "kommitni",
+        "s": 71.59,
+        "e": 71.99
+      },
+      {
+        "w": "o‘zgartirganda",
+        "s": 72.05,
+        "e": 72.71
+      },
+      {
+        "w": "ham",
+        "s": 72.77,
+        "e": 72.93
+      },
+      {
+        "w": "eski",
+        "s": 73.07,
+        "e": 73.29
+      },
+      {
+        "w": "holat",
+        "s": 73.33,
+        "e": 73.61
+      },
+      {
+        "w": "xotirada",
+        "s": 73.65,
+        "e": 74.07
+      },
+      {
+        "w": "saqlanib",
+        "s": 74.13,
+        "e": 74.49
+      },
+      {
+        "w": "qoladi.",
+        "s": 74.51,
+        "e": 74.81
+      }
+    ]
+  },
+  {
+    "id": "l10",
+    "scene": "faqat_qoshish_va_uch_hudud",
+    "text": "Fayllar uchta hududdan o‘tadi: ishchi papkada tahrirlanadi, ed buyrug‘i bilan steyjingga qo‘yiladi va kommit orqali repozitoriyga muhrlanadi.",
+    "show": "Fayllar uchta hududdan o‘tadi: ishchi papkada tahrirlanadi, ed buyrug‘i bilan steyjingga qo‘yiladi va kommit orqali repozitoriyga muhrlanadi.",
+    "say": "Fayllar uchta hududdan o‘tadi: ishchi papkada tahrirlanadi, ed buyrug‘i bilan steyjingga qo‘yiladi va kommit orqali repozitoriyga muhrlanadi.",
+    "a0": 75.85,
+    "a1": 83.9,
+    "words": [
+      {
+        "w": "Fayllar",
+        "s": 75.85,
+        "e": 76.27
+      },
+      {
+        "w": "uchta",
+        "s": 76.35,
+        "e": 76.57
+      },
+      {
+        "w": "hududdan",
+        "s": 76.61,
+        "e": 76.99
+      },
+      {
+        "w": "o‘tadi:",
+        "s": 77.03,
+        "e": 77.31
+      },
+      {
+        "w": "ishchi",
+        "s": 77.77,
+        "e": 77.99
+      },
+      {
+        "w": "papkada",
+        "s": 78.03,
+        "e": 78.35
+      },
+      {
+        "w": "tahrirlanadi,",
+        "s": 78.41,
+        "e": 79.07
+      },
+      {
+        "w": "ed",
+        "s": 79.51,
+        "e": 79.61
+      },
+      {
+        "w": "buyrug‘i",
+        "s": 79.69,
+        "e": 80.05
+      },
+      {
+        "w": "bilan",
+        "s": 80.07,
+        "e": 80.25
+      },
+      {
+        "w": "steyjingga",
+        "s": 80.31,
+        "e": 80.79
+      },
+      {
+        "w": "qo‘yiladi",
+        "s": 80.83,
+        "e": 81.25
+      },
+      {
+        "w": "va",
+        "s": 81.55,
+        "e": 81.61
+      },
+      {
+        "w": "kommit",
+        "s": 81.75,
+        "e": 82.07
+      },
+      {
+        "w": "orqali",
+        "s": 82.15,
+        "e": 82.47
+      },
+      {
+        "w": "repozitoriyga",
+        "s": 82.62,
+        "e": 83.3
+      },
+      {
+        "w": "muhrlanadi.",
+        "s": 83.36,
+        "e": 83.9
+      }
+    ]
+  },
+  {
+    "id": "l11",
+    "scene": "xulosa",
+    "text": "Xulosa qilsak, Git snepshotlar modeli, lokal tezlik va xavfsiz butunlik asosiga qurilgan.",
+    "show": "Xulosa qilsak, Git snepshotlar modeli, lokal tezlik va xavfsiz butunlik asosiga qurilgan.",
+    "say": "Xulosa qilsak, Git snepshotlar modeli, lokal tezlik va xavfsiz butunlik asosiga qurilgan.",
+    "a0": 84.92,
+    "a1": 90.18,
+    "words": [
+      {
+        "w": "Xulosa",
+        "s": 84.92,
+        "e": 85.2
+      },
+      {
+        "w": "qilsak,",
+        "s": 85.24,
+        "e": 85.56
+      },
+      {
+        "w": "Git",
+        "s": 85.94,
+        "e": 86.12
+      },
+      {
+        "w": "snepshotlar",
+        "s": 86.32,
+        "e": 86.9
+      },
+      {
+        "w": "modeli,",
+        "s": 86.98,
+        "e": 87.34
+      },
+      {
+        "w": "lokal",
+        "s": 87.58,
+        "e": 87.86
+      },
+      {
+        "w": "tezlik",
+        "s": 87.9,
+        "e": 88.26
+      },
+      {
+        "w": "va",
+        "s": 88.32,
+        "e": 88.38
+      },
+      {
+        "w": "xavfsiz",
+        "s": 88.46,
+        "e": 88.86
+      },
+      {
+        "w": "butunlik",
+        "s": 88.92,
+        "e": 89.32
+      },
+      {
+        "w": "asosiga",
+        "s": 89.38,
+        "e": 89.78
+      },
+      {
+        "w": "qurilgan.",
+        "s": 89.82,
+        "e": 90.18
+      }
+    ]
+  },
+  {
+    "id": "l12",
+    "scene": "xulosa",
+    "text": "Keyingi bobda terminal va Gitni o‘rnatishni boshlaymiz. E’tiboringiz uchun rahmat!",
+    "show": "Keyingi bobda terminal va Gitni o‘rnatishni boshlaymiz. E’tiboringiz uchun rahmat!",
+    "say": "Keyingi bobda terminal va Gitni o‘rnatishni boshlaymiz. E’tiboringiz uchun rahmat!",
+    "a0": 90.9,
+    "a1": 95.34,
+    "words": [
+      {
+        "w": "Keyingi",
+        "s": 90.9,
+        "e": 91.2
+      },
+      {
+        "w": "bobda",
+        "s": 91.24,
+        "e": 91.51
+      },
+      {
+        "w": "terminal",
+        "s": 91.83,
+        "e": 92.29
+      },
+      {
+        "w": "va",
+        "s": 92.33,
+        "e": 92.39
+      },
+      {
+        "w": "Gitni",
+        "s": 92.49,
+        "e": 92.77
+      },
+      {
+        "w": "o‘rnatishni",
+        "s": 92.81,
+        "e": 93.23
+      },
+      {
+        "w": "boshlaymiz.",
+        "s": 93.25,
+        "e": 93.71
+      },
+      {
+        "w": "E’tiboringiz",
+        "s": 94.3,
+        "e": 94.8
+      },
+      {
+        "w": "uchun",
+        "s": 94.82,
+        "e": 94.98
+      },
+      {
+        "w": "rahmat!",
+        "s": 95.02,
+        "e": 95.34
+      }
+    ]
+  }
+]

@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" playsinline poster="/video/git/01-versiya-nazorati.jpg" src="/video/git/01-versiya-nazorati.mp4">
+    <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/git/01-versiya-nazorati.chapters.vtt" default>
+    <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/git/01-versiya-nazorati.uz.vtt">
+  </video>
+  <figcaption>01.1-video. Versiya nazorati va Git nima</figcaption>
+</figure>
+
 **Versiya nazorati** (inglizcha *version control*) — fayl yoki fayllar to'plamidagi o'zgarishlarni vaqt bo'yicha yozib boradigan tizim. Uning vazifasi oddiy: istalgan paytda **oldingi versiyani qaytarib olish**. Shunday tizimni dasturiy ta'minot tilida **VCS** (*Version Control System*) deyiladi.
 
 Bu qo'llanmada versiya nazoratidagi fayllar — dastur kodi. Lekin VCS deyarli har qanday fayl bilan ishlaydi: matn, hujjat, sayt maketi, konfiguratsiya. Dizayner rasm yoki maketning har versiyasini saqlamoqchi bo'lsa ham VCS foydali.
