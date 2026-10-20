@@ -1,0 +1,61 @@
+WEBVTT
+
+1
+00:01.420 --> 00:08.230
+Salom! Ushbu to‘rtinchi bobda Git repozitoriysini
+yaratish va masofadan klonlab olishni o‘rganamiz.
+
+2
+00:08.620 --> 00:16.400
+Gitda repozitoriyga ega bo‘lishning ikkita asosiy yo‘li
+bor: yangi loyiha uchun init va mavjud loyiha uchun klon.
+
+3
+00:19.530 --> 00:26.580
+Git init buyrug‘i joriy papkada yashirin nuqta git
+katalogini yaratadi va uni to‘liq repozitoriyga aylantiradi.
+
+4
+00:26.840 --> 00:33.450
+Nuqta git papkasi loyihaning butun o‘tmishini saqlaydi
+va unga qo‘lda tegmaslik qat’iy tavsiya etiladi.
+
+5
+00:36.420 --> 00:41.630
+Yangi repozitoriyda kommit bo‘lmagani uchun
+brench hali tug‘ilmagan holatda bo‘ladi.
+
+6
+00:41.960 --> 00:48.880
+Ilk fayllarni qo‘shib birinchi rut kommitni yaratishingiz
+bilan asosiy meyn brenchi rasman vujudga keladi.
+
+7
+00:51.970 --> 00:59.560
+Git klon buyrug‘i esa boshqa serverdagi loyihaning nafaqat
+oxirgi fayllarini, balki butun tarixini to‘liq nusxalab oladi.
+
+8
+00:59.790 --> 01:06.410
+Natijada lokal kompyuteringizda server bilan to‘laqonli
+bog‘langan oridjin repozitoriyasi paydo bo‘ladi.
+
+9
+01:09.320 --> 01:15.230
+Klonlashda eych-ti-ti-pi-es yoki xavfsiz
+es-es-eych protokollaridan foydalanish mumkin.
+
+10
+01:15.340 --> 01:21.920
+Katta loyihalarda faqat oxirgi versiya kerak bo‘lsa,
+depsh bir opsiyasi bilan sayoz klon olish qulay.
+
+11
+01:24.790 --> 01:31.160
+Xulosa qilib aytganda, init va klon buyruqlari har qanday
+loyiha bilan ishlashning eng birinchi debochasidir.
+
+12
+01:31.530 --> 01:37.650
+Keyingi bobda Gitdagi uchta holat va uchta hududni
+tushunib olamiz. E’tiboringiz uchun rahmat!
