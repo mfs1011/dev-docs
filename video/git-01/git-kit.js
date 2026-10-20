@@ -159,47 +159,47 @@
     }
 
     function fileChip(name, cx, cy, o = {}) {
-      const s = o.s == null ? 1 : o.s, w = o.w || 380, h = o.h || 54;
+      const s = o.s == null ? 1 : o.s, w = o.w || 380, h = o.h || 52;
       if (s <= 0.001) return;
       withA(o.a == null ? 1 : o.a, () => {
         ctx.save(); ctx.translate(cx, cy); ctx.scale(s, s);
         const col = o.col || C.blue;
-        ctx.fillStyle = '#19224a'; rr(-w / 2, -h / 2, w, h, 12); ctx.fill();
-        ctx.lineWidth = 2; ctx.strokeStyle = rgba(col, 0.45); ctx.stroke();
-        docIcon(-w / 2 + 16, -15, 22, 30, col);
-        text(name, -w / 2 + 52, 1, { size: o.size || 22, weight: 600, fam: MONO, align: 'left', color: C.text });
+        ctx.fillStyle = '#162044'; rr(-w / 2, -h / 2, w, h, 12); ctx.fill();
+        ctx.lineWidth = 1.8; ctx.strokeStyle = rgba(col, 0.45); ctx.stroke();
+        docIcon(-w / 2 + 16, -15, 20, 28, col);
+        text(name, -w / 2 + 48, 1, { size: o.size || 20, weight: 600, fam: MONO, align: 'left', color: C.text });
         if (o.tag) {
-          const tw2 = tw(o.tag, 16, 700) + 20;
-          ctx.fillStyle = rgba(col, 0.2); rr(w / 2 - tw2 - 12, -14, tw2, 28, 14); ctx.fill();
-          text(o.tag, w / 2 - 12 - tw2 / 2, 1, { size: 16, weight: 700, color: col });
+          const tw2 = tw(o.tag, 15, 700) + 20;
+          ctx.fillStyle = rgba(col, 0.2); rr(w / 2 - tw2 - 12, -13, tw2, 26, 13); ctx.fill();
+          text(o.tag, w / 2 - 12 - tw2 / 2, 1, { size: 15, weight: 700, color: col });
         }
         ctx.restore();
       });
     }
 
     function chip(n, title, u, start = 0) {
-      const k = eo(P(u, start + 0.15, 0.6));
+      const k = eo(P(u, start + 0.1, 0.5));
       withA(k, () => {
-        const x = 70 - (1 - k) * 30, y = 52, h = 58, w = tw(title, 28, 600) + 96;
-        ctx.fillStyle = 'rgba(18,26,58,0.88)'; rr(x, y, w, h, 29); ctx.fill();
-        ctx.strokeStyle = 'rgba(255,255,255,0.12)'; ctx.lineWidth = 1.5; ctx.stroke();
-        ctx.fillStyle = C.git; ctx.beginPath(); ctx.arc(x + 29, y + 29, 19, 0, 7); ctx.fill();
-        text(String(n), x + 29, y + 30, { size: 22, weight: 700, color: '#fff' });
-        text(title, x + 62, y + 30, { size: 28, weight: 600, align: 'left' });
+        const x = 70, y = 45, h = 54, w = tw(title, 24, 700) + 84;
+        ctx.fillStyle = 'rgba(18,26,58,0.92)'; rr(x, y, w, h, 27); ctx.fill();
+        ctx.strokeStyle = 'rgba(255,255,255,0.15)'; ctx.lineWidth = 1.5; ctx.stroke();
+        ctx.fillStyle = C.git; ctx.beginPath(); ctx.arc(x + 27, y + 27, 18, 0, 7); ctx.fill();
+        text(String(n), x + 27, y + 28, { size: 20, weight: 800, color: '#fff' });
+        text(title, x + 56, y + 28, { size: 24, weight: 700, align: 'left' });
       });
     }
 
     function panel(x, y, w, h, col, title, sub, a = 1, k = 1) {
       withA(a, () => {
-        ctx.save(); ctx.translate(0, (1 - k) * 35);
-        ctx.fillStyle = 'rgba(17,24,52,0.82)'; rr(x, y, w, h, 20); ctx.fill();
+        ctx.save(); ctx.translate(0, (1 - k) * 25);
+        ctx.fillStyle = 'rgba(16,23,50,0.88)'; rr(x, y, w, h, 20); ctx.fill();
         ctx.strokeStyle = rgba(col, 0.45); ctx.lineWidth = 2; ctx.stroke();
-        const g = ctx.createLinearGradient(x, y, x, y + 100); g.addColorStop(0, rgba(col, 0.18)); g.addColorStop(1, rgba(col, 0));
-        ctx.fillStyle = g; rr(x, y, w, 100, 20); ctx.fill();
-        ctx.fillStyle = col; ctx.beginPath(); ctx.arc(x + 32, y + 42, 8, 0, 7); ctx.fill();
-        text(title, x + 52, y + 42, { size: 28, weight: 700, align: 'left' });
-        if (sub) text(sub, x + 32, y + 76, { size: 17, fam: MONO, color: C.mute, align: 'left' });
-        ctx.fillStyle = 'rgba(255,255,255,0.08)'; ctx.fillRect(x + 20, y + 96, w - 40, 1.5);
+        const g = ctx.createLinearGradient(x, y, x, y + 90); g.addColorStop(0, rgba(col, 0.16)); g.addColorStop(1, rgba(col, 0));
+        ctx.fillStyle = g; rr(x, y, w, 90, 20); ctx.fill();
+        ctx.fillStyle = col; ctx.beginPath(); ctx.arc(x + 32, y + 36, 8, 0, 7); ctx.fill();
+        text(title, x + 52, y + 36, { size: 26, weight: 700, align: 'left' });
+        if (sub) text(sub, x + 32, y + 68, { size: 16, fam: MONO, color: C.mute, align: 'left' });
+        ctx.fillStyle = 'rgba(255,255,255,0.08)'; ctx.fillRect(x + 20, y + 86, w - 40, 1.5);
         ctx.restore();
       });
     }
@@ -208,21 +208,12 @@
       const a = o.a == null ? 1 : o.a, col = o.col || C.blue;
       withA(a, () => {
         ctx.save();
-        if (o.p) ctx.translate(0, (1 - eo(o.p)) * 25);
+        if (o.p) ctx.translate(0, (1 - eo(o.p)) * 20);
         ctx.fillStyle = o.fill || 'rgba(19,27,58,0.85)';
-        rr(x, y, w, h, o.r || 18); ctx.fill();
-        ctx.strokeStyle = rgba(col, o.strokeA || 0.45); ctx.lineWidth = o.lw || 2; ctx.stroke();
+        rr(x, y, w, h, o.r || 16); ctx.fill();
+        ctx.strokeStyle = rgba(col, o.strokeA || 0.4); ctx.lineWidth = o.lw || 1.8; ctx.stroke();
         if (o.glow) { ctx.shadowColor = col; ctx.shadowBlur = o.glow; }
         ctx.restore();
-      });
-    }
-
-    function heading(title, sub, t, scene) {
-      const u = t - scene.s;
-      const k = eo(P(u, 0.2, 0.6));
-      withA(k, () => {
-        text(title, 960, 80 + (1 - k) * 15, { size: 44, weight: 800, color: C.text, align: 'center' });
-        if (sub) text(sub, 960, 126 + (1 - k) * 10, { size: 24, weight: 500, fam: UI, color: C.mute, align: 'center' });
       });
     }
 
@@ -230,7 +221,7 @@
       W, H, C, UI, MONO,
       clamp, P, lerp, eo, eio, eback, rnd, hex, rgba, light, font, withA, rr,
       tw, text, glow, bg, node, ring, burst, curvePts, link, pill, docIcon,
-      fileChip, chip, panel, card, heading
+      fileChip, chip, panel, card
     };
   }
 
