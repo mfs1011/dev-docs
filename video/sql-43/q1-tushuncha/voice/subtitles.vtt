@@ -1,0 +1,51 @@
+WEBVTT
+
+1
+00:01.420 --> 00:08.210
+Maxsus indekslar ma'lumotlar bazasida indeksni aynan
+nimaga va qaysi qatorlarga qurish imkonini beradi.
+
+2
+00:08.640 --> 00:15.640
+Ular orqali ifodalar, qisman qatorlar, qoplovchi yuk
+ustunlari va maxsus qidiruv qoidalari boshqariladi.
+
+3
+00:18.650 --> 00:24.600
+Katta-kichik harfni farqlamaydigan qidiruvlarda oddiy
+indeks ishlamaydi, chunki ifoda saqlanmagan bo'ladi.
+
+4
+00:24.990 --> 00:32.390
+Lover ifodasi indeksi qidiruvni tezlashtiradi, unik indeksi
+esa bir xil emaillarni harf farqi bilan kiritishni taqiqlaydi.
+
+5
+00:35.380 --> 00:40.410
+Qisman indeks jadvalning faqat muayyan shartga
+mos kam sonli qatorlari uchun yaratiladi.
+
+6
+00:40.720 --> 00:46.840
+U o'nlab baravar kam joy egallaydi va yozish amallarini
+ortiqcha yangilanishlardan to'liq himoyalaydi.
+
+7
+00:50.150 --> 00:56.560
+Inklud kalit so'zi qidiruv kalitiga daxl qilmagan holda
+so'rovga kerakli qo'shimcha ustunlarni indeksga yuklaydi.
+
+8
+00:56.910 --> 01:02.990
+Baza jadval sahifalariga bormasdan javob qaytaradi,
+vakuum esa ko'rinuvchanlik xaritasini tozalab beradi.
+
+9
+01:06.060 --> 01:12.770
+Standart matn tartibi layk prefiks qidiruviga mos
+kelmaganda, tekst pattern ops operator klassi talab etiladi.
+
+10
+01:12.980 --> 01:19.130
+U belgima-belgi solishtirib layk shartini oraliqqa
+aylantiradi va qidiruvni yuzlab baravar tezlashtiradi.

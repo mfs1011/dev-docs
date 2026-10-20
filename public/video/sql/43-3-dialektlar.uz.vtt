@@ -1,0 +1,41 @@
+WEBVTT
+
+1
+00:01.420 --> 00:08.870
+May es-kyu-elda sukut kollatsiyasi harf farqini inobatga
+olmagani uchun oddiy indeksning o'zi yetarli bo'ladi.
+
+2
+00:09.210 --> 00:15.980
+Lekin ifoda qidiruvi kerak bo'lsa, ikki qavsli
+funksional indeks virtual ustun sifatida yaratiladi.
+
+3
+00:18.910 --> 00:25.280
+Es-kyu-layt algebraik tengliklarni tushunmaydi va ifoda
+harfma-harf indeksdagidek yozilishini talab qiladi.
+
+4
+00:25.430 --> 00:31.610
+Shuningdek, layk so'rovlarini tezlashtirish uchun
+ustunga nokase kollatsiyali indeks qurilishi zarur.
+
+5
+00:34.440 --> 00:40.750
+Qisman indeks Postgres va Es-kyu-laytda mavjud bo'lib,
+May es-kyu-elda esa sintaksis xatoligi beradi.
+
+6
+00:41.020 --> 00:47.220
+Inklud kalit so'zi ham faqat Postgresda mavjud bo'lib,
+boshqa bazalar ko'p ustunli indeksdan foydalanadi.
+
+7
+00:50.090 --> 00:57.000
+Har doim ifoda indeksini so'rovdagi ifoda bilan bir xil
+yozing va keshlanmaydigan tasodifiy funksiyalardan qoching.
+
+8
+00:57.160 --> 01:02.910
+Kam sonli qatorlarda qisman indeksdan foydalanib,
+tizim xotirasi va yozish resurslarini tejang.

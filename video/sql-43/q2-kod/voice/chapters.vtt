@@ -1,0 +1,13 @@
+WEBVTT
+
+00:00.000 --> 00:16.986
+Ifoda Indeksi va UNIQUE Cheklovi
+
+00:16.986 --> 00:33.869
+LIKE va text_pattern_ops Tahlili
+
+00:33.869 --> 00:51.380
+Qisman Indeks Hajmi va Rejalari
+
+00:51.380 --> 01:11.260
+INCLUDE va VACUUM Heap Fetches

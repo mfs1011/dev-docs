@@ -1,0 +1,767 @@
+[
+  {
+    "scene": "maxsus_indekslar_xaritasi",
+    "id": "l1",
+    "text": "Maxsus indekslar ma'lumotlar bazasida indeksni aynan nimaga va qaysi qatorlarga qurish imkonini beradi.",
+    "show": "Maxsus indekslar ma'lumotlar bazasida indeksni aynan nimaga va qaysi qatorlarga qurish imkonini beradi.",
+    "say": "Maxsus indekslar ma'lumotlar bazasida indeksni aynan nimaga va qaysi qatorlarga qurish imkonini beradi.",
+    "a0": 0.26,
+    "a1": 6.6,
+    "words": [
+      {
+        "w": "Maxsus",
+        "s": 0.26,
+        "e": 0.58
+      },
+      {
+        "w": "indekslar",
+        "s": 0.68,
+        "e": 1.22
+      },
+      {
+        "w": "ma'lumotlar",
+        "s": 1.44,
+        "e": 1.96
+      },
+      {
+        "w": "bazasida",
+        "s": 2.02,
+        "e": 2.52
+      },
+      {
+        "w": "indeksni",
+        "s": 2.74,
+        "e": 3.18
+      },
+      {
+        "w": "aynan",
+        "s": 3.34,
+        "e": 3.62
+      },
+      {
+        "w": "nimaga",
+        "s": 3.7,
+        "e": 4.06
+      },
+      {
+        "w": "va",
+        "s": 4.36,
+        "e": 4.42
+      },
+      {
+        "w": "qaysi",
+        "s": 4.56,
+        "e": 4.86
+      },
+      {
+        "w": "qatorlarga",
+        "s": 4.92,
+        "e": 5.42
+      },
+      {
+        "w": "qurish",
+        "s": 5.52,
+        "e": 5.78
+      },
+      {
+        "w": "imkonini",
+        "s": 5.86,
+        "e": 6.3
+      },
+      {
+        "w": "beradi.",
+        "s": 6.32,
+        "e": 6.6
+      }
+    ]
+  },
+  {
+    "scene": "maxsus_indekslar_xaritasi",
+    "id": "l2",
+    "text": "Ular orqali ifodalar, qisman qatorlar, qoplovchi yuk ustunlari va maxsus qidiruv qoidalari boshqariladi.",
+    "show": "Ular orqali ifodalar, qisman qatorlar, qoplovchi yuk ustunlari va maxsus qidiruv qoidalari boshqariladi.",
+    "say": "Ular orqali ifodalar, qisman qatorlar, qoplovchi yuk ustunlari va maxsus qidiruv qoidalari boshqariladi.",
+    "a0": 7.48,
+    "a1": 14.03,
+    "words": [
+      {
+        "w": "Ular",
+        "s": 7.48,
+        "e": 7.67
+      },
+      {
+        "w": "orqali",
+        "s": 7.71,
+        "e": 8.03
+      },
+      {
+        "w": "ifodalar,",
+        "s": 8.21,
+        "e": 8.77
+      },
+      {
+        "w": "qisman",
+        "s": 9.09,
+        "e": 9.39
+      },
+      {
+        "w": "qatorlar,",
+        "s": 9.45,
+        "e": 9.95
+      },
+      {
+        "w": "qoplovchi",
+        "s": 10.21,
+        "e": 10.65
+      },
+      {
+        "w": "yuk",
+        "s": 10.75,
+        "e": 10.91
+      },
+      {
+        "w": "ustunlari",
+        "s": 10.99,
+        "e": 11.49
+      },
+      {
+        "w": "va",
+        "s": 11.83,
+        "e": 11.91
+      },
+      {
+        "w": "maxsus",
+        "s": 12.15,
+        "e": 12.51
+      },
+      {
+        "w": "qidiruv",
+        "s": 12.57,
+        "e": 12.85
+      },
+      {
+        "w": "qoidalari",
+        "s": 12.91,
+        "e": 13.35
+      },
+      {
+        "w": "boshqariladi.",
+        "s": 13.47,
+        "e": 14.03
+      }
+    ]
+  },
+  {
+    "scene": "ifoda_indeksi_va_unique",
+    "id": "l3",
+    "text": "Katta-kichik harfni farqlamaydigan qidiruvlarda oddiy indeks ishlamaydi, chunki ifoda saqlanmagan bo'ladi.",
+    "show": "Katta-kichik harfni farqlamaydigan qidiruvlarda oddiy indeks ishlamaydi, chunki ifoda saqlanmagan bo'ladi.",
+    "say": "Katta-kichik harfni farqlamaydigan qidiruvlarda oddiy indeks ishlamaydi, chunki ifoda saqlanmagan bo'ladi.",
+    "a0": 14.89,
+    "a1": 20.39,
+    "words": [
+      {
+        "w": "Katta-kichik",
+        "s": 14.89,
+        "e": 15.47
+      },
+      {
+        "w": "harfni",
+        "s": 15.47,
+        "e": 15.77
+      },
+      {
+        "w": "farqlamaydigan",
+        "s": 15.79,
+        "e": 16.51
+      },
+      {
+        "w": "qidiruvlarda",
+        "s": 16.57,
+        "e": 17.17
+      },
+      {
+        "w": "oddiy",
+        "s": 17.41,
+        "e": 17.63
+      },
+      {
+        "w": "indeks",
+        "s": 17.69,
+        "e": 17.97
+      },
+      {
+        "w": "ishlamaydi,",
+        "s": 18.03,
+        "e": 18.47
+      },
+      {
+        "w": "chunki",
+        "s": 18.55,
+        "e": 18.81
+      },
+      {
+        "w": "ifoda",
+        "s": 19.23,
+        "e": 19.51
+      },
+      {
+        "w": "saqlanmagan",
+        "s": 19.55,
+        "e": 20.09
+      },
+      {
+        "w": "bo'ladi.",
+        "s": 20.11,
+        "e": 20.39
+      }
+    ]
+  },
+  {
+    "scene": "ifoda_indeksi_va_unique",
+    "id": "l4",
+    "text": "Lover ifodasi indeksi qidiruvni tezlashtiradi, unik indeksi esa bir xil emaillarni harf farqi bilan kiritishni taqiqlaydi.",
+    "show": "Lover ifodasi indeksi qidiruvni tezlashtiradi, unik indeksi esa bir xil emaillarni harf farqi bilan kiritishni taqiqlaydi.",
+    "say": "Lover ifodasi indeksi qidiruvni tezlashtiradi, unik indeksi esa bir xil emaillarni harf farqi bilan kiritishni taqiqlaydi.",
+    "a0": 21.23,
+    "a1": 28.18,
+    "words": [
+      {
+        "w": "Lover",
+        "s": 21.23,
+        "e": 21.45
+      },
+      {
+        "w": "ifodasi",
+        "s": 21.53,
+        "e": 21.93
+      },
+      {
+        "w": "indeksi",
+        "s": 21.99,
+        "e": 22.39
+      },
+      {
+        "w": "qidiruvni",
+        "s": 22.52,
+        "e": 22.9
+      },
+      {
+        "w": "tezlashtiradi,",
+        "s": 22.94,
+        "e": 23.56
+      },
+      {
+        "w": "unik",
+        "s": 24.16,
+        "e": 24.4
+      },
+      {
+        "w": "indeksi",
+        "s": 24.48,
+        "e": 24.82
+      },
+      {
+        "w": "esa",
+        "s": 24.9,
+        "e": 25.06
+      },
+      {
+        "w": "bir",
+        "s": 25.3,
+        "e": 25.42
+      },
+      {
+        "w": "xil",
+        "s": 25.48,
+        "e": 25.62
+      },
+      {
+        "w": "emaillarni",
+        "s": 25.74,
+        "e": 26.32
+      },
+      {
+        "w": "harf",
+        "s": 26.44,
+        "e": 26.64
+      },
+      {
+        "w": "farqi",
+        "s": 26.7,
+        "e": 26.96
+      },
+      {
+        "w": "bilan",
+        "s": 26.98,
+        "e": 27.16
+      },
+      {
+        "w": "kiritishni",
+        "s": 27.2,
+        "e": 27.56
+      },
+      {
+        "w": "taqiqlaydi.",
+        "s": 27.6,
+        "e": 28.18
+      }
+    ]
+  },
+  {
+    "scene": "qisman_indeks_mohiyati",
+    "id": "l5",
+    "text": "Qisman indeks jadvalning faqat muayyan shartga mos kam sonli qatorlari uchun yaratiladi.",
+    "show": "Qisman indeks jadvalning faqat muayyan shartga mos kam sonli qatorlari uchun yaratiladi.",
+    "say": "Qisman indeks jadvalning faqat muayyan shartga mos kam sonli qatorlari uchun yaratiladi.",
+    "a0": 29.02,
+    "a1": 33.6,
+    "words": [
+      {
+        "w": "Qisman",
+        "s": 29.02,
+        "e": 29.32
+      },
+      {
+        "w": "indeks",
+        "s": 29.38,
+        "e": 29.72
+      },
+      {
+        "w": "jadvalning",
+        "s": 29.86,
+        "e": 30.32
+      },
+      {
+        "w": "faqat",
+        "s": 30.36,
+        "e": 30.62
+      },
+      {
+        "w": "muayyan",
+        "s": 30.7,
+        "e": 31.18
+      },
+      {
+        "w": "shartga",
+        "s": 31.26,
+        "e": 31.6
+      },
+      {
+        "w": "mos",
+        "s": 31.66,
+        "e": 31.84
+      },
+      {
+        "w": "kam",
+        "s": 31.98,
+        "e": 32.18
+      },
+      {
+        "w": "sonli",
+        "s": 32.24,
+        "e": 32.5
+      },
+      {
+        "w": "qatorlari",
+        "s": 32.56,
+        "e": 32.98
+      },
+      {
+        "w": "uchun",
+        "s": 33.02,
+        "e": 33.16
+      },
+      {
+        "w": "yaratiladi.",
+        "s": 33.18,
+        "e": 33.6
+      }
+    ]
+  },
+  {
+    "scene": "qisman_indeks_mohiyati",
+    "id": "l6",
+    "text": "U o'nlab baravar kam joy egallaydi va yozish amallarini ortiqcha yangilanishlardan to'liq himoyalaydi.",
+    "show": "U o'nlab baravar kam joy egallaydi va yozish amallarini ortiqcha yangilanishlardan to'liq himoyalaydi.",
+    "say": "U o'nlab baravar kam joy egallaydi va yozish amallarini ortiqcha yangilanishlardan to'liq himoyalaydi.",
+    "a0": 34.36,
+    "a1": 40.03,
+    "words": [
+      {
+        "w": "U",
+        "s": 34.36,
+        "e": 34.38
+      },
+      {
+        "w": "o'nlab",
+        "s": 34.64,
+        "e": 34.96
+      },
+      {
+        "w": "baravar",
+        "s": 35.0,
+        "e": 35.32
+      },
+      {
+        "w": "kam",
+        "s": 35.38,
+        "e": 35.56
+      },
+      {
+        "w": "joy",
+        "s": 35.62,
+        "e": 35.78
+      },
+      {
+        "w": "egallaydi",
+        "s": 35.82,
+        "e": 36.26
+      },
+      {
+        "w": "va",
+        "s": 36.6,
+        "e": 36.66
+      },
+      {
+        "w": "yozish",
+        "s": 36.94,
+        "e": 37.24
+      },
+      {
+        "w": "amallarini",
+        "s": 37.28,
+        "e": 37.79
+      },
+      {
+        "w": "ortiqcha",
+        "s": 37.95,
+        "e": 38.29
+      },
+      {
+        "w": "yangilanishlardan",
+        "s": 38.33,
+        "e": 39.05
+      },
+      {
+        "w": "to'liq",
+        "s": 39.19,
+        "e": 39.45
+      },
+      {
+        "w": "himoyalaydi.",
+        "s": 39.49,
+        "e": 40.03
+      }
+    ]
+  },
+  {
+    "scene": "include_va_index_only_scan",
+    "id": "l7",
+    "text": "Inklud kalit so'zi qidiruv kalitiga daxl qilmagan holda so'rovga kerakli qo'shimcha ustunlarni indeksga yuklaydi.",
+    "show": "Inklud kalit so'zi qidiruv kalitiga daxl qilmagan holda so'rovga kerakli qo'shimcha ustunlarni indeksga yuklaydi.",
+    "say": "Inklud kalit so'zi qidiruv kalitiga daxl qilmagan holda so'rovga kerakli qo'shimcha ustunlarni indeksga yuklaydi.",
+    "a0": 41.19,
+    "a1": 47.15,
+    "words": [
+      {
+        "w": "Inklud",
+        "s": 41.19,
+        "e": 41.53
+      },
+      {
+        "w": "kalit",
+        "s": 41.59,
+        "e": 41.87
+      },
+      {
+        "w": "so'zi",
+        "s": 41.89,
+        "e": 42.15
+      },
+      {
+        "w": "qidiruv",
+        "s": 42.35,
+        "e": 42.63
+      },
+      {
+        "w": "kalitiga",
+        "s": 42.69,
+        "e": 43.09
+      },
+      {
+        "w": "daxl",
+        "s": 43.19,
+        "e": 43.47
+      },
+      {
+        "w": "qilmagan",
+        "s": 43.53,
+        "e": 43.93
+      },
+      {
+        "w": "holda",
+        "s": 43.97,
+        "e": 44.21
+      },
+      {
+        "w": "so'rovga",
+        "s": 44.29,
+        "e": 44.65
+      },
+      {
+        "w": "kerakli",
+        "s": 44.79,
+        "e": 45.19
+      },
+      {
+        "w": "qo'shimcha",
+        "s": 45.31,
+        "e": 45.69
+      },
+      {
+        "w": "ustunlarni",
+        "s": 45.73,
+        "e": 46.25
+      },
+      {
+        "w": "indeksga",
+        "s": 46.37,
+        "e": 46.75
+      },
+      {
+        "w": "yuklaydi.",
+        "s": 46.77,
+        "e": 47.15
+      }
+    ]
+  },
+  {
+    "scene": "include_va_index_only_scan",
+    "id": "l8",
+    "text": "Baza jadval sahifalariga bormasdan javob qaytaradi, vakuum esa ko'rinuvchanlik xaritasini tozalab beradi.",
+    "show": "Baza jadval sahifalariga bormasdan javob qaytaradi, vakuum esa ko'rinuvchanlik xaritasini tozalab beradi.",
+    "say": "Baza jadval sahifalariga bormasdan javob qaytaradi, vakuum esa ko'rinuvchanlik xaritasini tozalab beradi.",
+    "a0": 47.95,
+    "a1": 53.58,
+    "words": [
+      {
+        "w": "Baza",
+        "s": 47.95,
+        "e": 48.19
+      },
+      {
+        "w": "jadval",
+        "s": 48.25,
+        "e": 48.55
+      },
+      {
+        "w": "sahifalariga",
+        "s": 48.57,
+        "e": 49.15
+      },
+      {
+        "w": "bormasdan",
+        "s": 49.23,
+        "e": 49.71
+      },
+      {
+        "w": "javob",
+        "s": 49.77,
+        "e": 50.01
+      },
+      {
+        "w": "qaytaradi,",
+        "s": 50.03,
+        "e": 50.43
+      },
+      {
+        "w": "vakuum",
+        "s": 50.91,
+        "e": 51.29
+      },
+      {
+        "w": "esa",
+        "s": 51.33,
+        "e": 51.53
+      },
+      {
+        "w": "ko'rinuvchanlik",
+        "s": 51.71,
+        "e": 52.35
+      },
+      {
+        "w": "xaritasini",
+        "s": 52.39,
+        "e": 52.9
+      },
+      {
+        "w": "tozalab",
+        "s": 52.94,
+        "e": 53.3
+      },
+      {
+        "w": "beradi.",
+        "s": 53.32,
+        "e": 53.58
+      }
+    ]
+  },
+  {
+    "scene": "operator_klassi_va_like",
+    "id": "l9",
+    "text": "Standart matn tartibi layk prefiks qidiruviga mos kelmaganda, tekst pattern ops operator klassi talab etiladi.",
+    "show": "Standart matn tartibi layk prefiks qidiruviga mos kelmaganda, tekst pattern ops operator klassi talab etiladi.",
+    "say": "Standart matn tartibi layk prefiks qidiruviga mos kelmaganda, tekst pattern ops operator klassi talab etiladi.",
+    "a0": 54.5,
+    "a1": 60.76,
+    "words": [
+      {
+        "w": "Standart",
+        "s": 54.5,
+        "e": 54.92
+      },
+      {
+        "w": "matn",
+        "s": 55.0,
+        "e": 55.24
+      },
+      {
+        "w": "tartibi",
+        "s": 55.28,
+        "e": 55.66
+      },
+      {
+        "w": "layk",
+        "s": 55.98,
+        "e": 56.2
+      },
+      {
+        "w": "prefiks",
+        "s": 56.26,
+        "e": 56.64
+      },
+      {
+        "w": "qidiruviga",
+        "s": 56.68,
+        "e": 57.08
+      },
+      {
+        "w": "mos",
+        "s": 57.14,
+        "e": 57.3
+      },
+      {
+        "w": "kelmaganda,",
+        "s": 57.34,
+        "e": 57.88
+      },
+      {
+        "w": "tekst",
+        "s": 58.3,
+        "e": 58.56
+      },
+      {
+        "w": "pattern",
+        "s": 58.64,
+        "e": 59.0
+      },
+      {
+        "w": "ops",
+        "s": 59.18,
+        "e": 59.38
+      },
+      {
+        "w": "operator",
+        "s": 59.5,
+        "e": 59.88
+      },
+      {
+        "w": "klassi",
+        "s": 59.9,
+        "e": 60.18
+      },
+      {
+        "w": "talab",
+        "s": 60.22,
+        "e": 60.42
+      },
+      {
+        "w": "etiladi.",
+        "s": 60.46,
+        "e": 60.76
+      }
+    ]
+  },
+  {
+    "scene": "operator_klassi_va_like",
+    "id": "l10",
+    "text": "U belgima-belgi solishtirib layk shartini oraliqqa aylantiradi va qidiruvni yuzlab baravar tezlashtiradi.",
+    "show": "U belgima-belgi solishtirib layk shartini oraliqqa aylantiradi va qidiruvni yuzlab baravar tezlashtiradi.",
+    "say": "U belgima-belgi solishtirib layk shartini oraliqqa aylantiradi va qidiruvni yuzlab baravar tezlashtiradi.",
+    "a0": 61.42,
+    "a1": 67.12,
+    "words": [
+      {
+        "w": "U",
+        "s": 61.42,
+        "e": 61.44
+      },
+      {
+        "w": "belgima-belgi",
+        "s": 61.66,
+        "e": 62.35
+      },
+      {
+        "w": "solishtirib",
+        "s": 62.39,
+        "e": 62.85
+      },
+      {
+        "w": "layk",
+        "s": 63.09,
+        "e": 63.29
+      },
+      {
+        "w": "shartini",
+        "s": 63.33,
+        "e": 63.71
+      },
+      {
+        "w": "oraliqqa",
+        "s": 63.87,
+        "e": 64.25
+      },
+      {
+        "w": "aylantiradi",
+        "s": 64.29,
+        "e": 64.75
+      },
+      {
+        "w": "va",
+        "s": 64.81,
+        "e": 64.87
+      },
+      {
+        "w": "qidiruvni",
+        "s": 65.23,
+        "e": 65.68
+      },
+      {
+        "w": "yuzlab",
+        "s": 65.82,
+        "e": 66.18
+      },
+      {
+        "w": "baravar",
+        "s": 66.22,
+        "e": 66.52
+      },
+      {
+        "w": "tezlashtiradi.",
+        "s": 66.56,
+        "e": 67.12
+      }
+    ]
+  }
+]
