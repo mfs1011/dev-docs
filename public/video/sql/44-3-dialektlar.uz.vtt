@@ -1,0 +1,41 @@
+WEBVTT
+
+1
+00:01.420 --> 00:09.240
+MySQL'ning InnoDB mexanizmida alohida Hash indeksi mavjud
+emas, sintaksis xato bermasdan B-tree'ga aylanadi.
+
+2
+00:09.370 --> 00:15.680
+Baza faqat ogohlantirish beradi: haqiqiy hesh indeksi
+faqat tezkor xotiradagi Memory jadvallarida ishlaydi.
+
+3
+00:18.650 --> 00:26.500
+Geometrik koordinatalar uchun MySQL'da ar-tri asosidagi
+speyshl indeks va MBR konteyns funksiyasi qo'llanadi.
+
+4
+00:26.840 --> 00:33.150
+Yana bir qulaylik: invizibl indeks orqali indeksni
+o'chirmasdan, uning tizimga ta'sirini bexatar sinash mumkin.
+
+5
+00:36.320 --> 00:42.950
+SQLite'da CREATE INDEX faqat B-tree quradi, yuzing
+sintaksisi esa sintaksis xatosiga olib keladi.
+
+6
+00:43.310 --> 00:49.820
+Fazoviy va oraliqli so'rovlar uchun alohida ar-star-tri
+moduli virtual jadval ko'rinishida taqdim etilgan.
+
+7
+00:52.890 --> 00:58.890
+Eng katta xato — tasodifiy ustunlarga BRIN qurish
+yoki hesh indeksni har doim tez deb o'ylashdir.
+
+8
+00:59.280 --> 01:04.950
+Har bir baza imkoniyatlarini bilish va to'g'ri indeks
+tanlash eng og'ir yuklamalarni ham yengillashtiradi.

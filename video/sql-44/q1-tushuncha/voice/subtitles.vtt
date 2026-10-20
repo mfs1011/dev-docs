@@ -1,0 +1,41 @@
+WEBVTT
+
+1
+00:01.420 --> 00:08.530
+Standart B-tree indeksi tartiblangan qiymatlar, oraliq va
+tenglik qidiruvlari uchun eng zo'r tanlov hisoblanadi.
+
+2
+00:08.870 --> 00:17.380
+Ammo massiv ichidan element izlash, vaqt oraliqlari kesishuvi
+yoki eng yaqin nuqtalarni topishda B-tree yordam berolmaydi.
+
+3
+00:20.390 --> 00:28.070
+Bunday holatlar uchun maxsus indekslar bor: masalan, Hash
+indeksi faqat qat'iy tenglik qidiruvlarini o'ta tez bajaradi.
+
+4
+00:28.140 --> 00:37.070
+GiST va SP-GiST esa geometrik shakllar, range oraliqlar va eng yaqin
+qo'shnini qidirish uchun mo'ljallangan kuchli infratuzilmadir.
+
+5
+00:40.180 --> 00:49.040
+GIN ya'ni teskari indeks massiv, jsonb va to'liq matnli
+ma'lumotlarning har bir tarkibiy qismini alohida ro'yxatga oladi.
+
+6
+00:49.070 --> 00:55.540
+Natijada, millionlab qatorlar orasidan kerakli
+teg yoki kalit bor-yo'qligi bir zumda topiladi.
+
+7
+00:58.490 --> 01:06.450
+BRIN esa jadvalning fizik bloklari bo'yicha min-max xulosasini
+saqlab, vaqt bo'yicha o'suvchi loglar uchun mo'jizaviy yechimdir.
+
+8
+01:06.580 --> 01:13.950
+Aynan bir xil vaqt ustunida B-tree to'rt yarim megabayt joy
+egallagan bo'lsa, BRIN atigi yigirma to'rt kilobayt joy oladi.

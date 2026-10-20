@@ -1,0 +1,670 @@
+[
+  {
+    "scene": "hash_sinovi",
+    "id": "l1",
+    "text": "Ikki yuz ming qatorli jadvalda kod ustuniga qurilgan Hash indeksini ekspleyn orqali sinab ko'ramiz.",
+    "show": "Ikki yuz ming qatorli jadvalda kod ustuniga qurilgan Hash indeksini ekspleyn orqali sinab ko'ramiz.",
+    "say": "Ikki yuz ming qatorli jadvalda kod ustuniga qurilgan hesh indeksini ekspleyn orqali sinab ko'ramiz.",
+    "a0": 0.3,
+    "a1": 6.18,
+    "words": [
+      {
+        "w": "Ikki",
+        "s": 0.3,
+        "e": 0.52
+      },
+      {
+        "w": "yuz",
+        "s": 0.56,
+        "e": 0.72
+      },
+      {
+        "w": "ming",
+        "s": 0.76,
+        "e": 0.92
+      },
+      {
+        "w": "qatorli",
+        "s": 0.96,
+        "e": 1.36
+      },
+      {
+        "w": "jadvalda",
+        "s": 1.44,
+        "e": 1.88
+      },
+      {
+        "w": "kod",
+        "s": 2.22,
+        "e": 2.44
+      },
+      {
+        "w": "ustuniga",
+        "s": 2.52,
+        "e": 2.92
+      },
+      {
+        "w": "qurilgan",
+        "s": 2.98,
+        "e": 3.38
+      },
+      {
+        "w": "hesh",
+        "s": 3.52,
+        "e": 3.76
+      },
+      {
+        "w": "indeksini",
+        "s": 3.88,
+        "e": 4.36
+      },
+      {
+        "w": "ekspleyn",
+        "s": 4.7,
+        "e": 5.14
+      },
+      {
+        "w": "orqali",
+        "s": 5.22,
+        "e": 5.5
+      },
+      {
+        "w": "sinab",
+        "s": 5.58,
+        "e": 5.82
+      },
+      {
+        "w": "ko'ramiz.",
+        "s": 5.84,
+        "e": 6.18
+      }
+    ]
+  },
+  {
+    "scene": "hash_sinovi",
+    "id": "l2",
+    "text": "Tenglik so'rovi hesh indeks skan bilan darhol topildi, ammo oraliq so'rovida baza to'liq sek skanga tushib ketdi.",
+    "show": "Tenglik so'rovi hesh indeks skan bilan darhol topildi, ammo oraliq so'rovida baza to'liq sek skanga tushib ketdi.",
+    "say": "Tenglik so'rovi hesh indeks skan bilan darhol topildi, ammo oraliq so'rovida baza to'liq sek skanga tushib ketdi.",
+    "a0": 7.06,
+    "a1": 13.63,
+    "words": [
+      {
+        "w": "Tenglik",
+        "s": 7.06,
+        "e": 7.38
+      },
+      {
+        "w": "so'rovi",
+        "s": 7.4,
+        "e": 7.69
+      },
+      {
+        "w": "hesh",
+        "s": 7.77,
+        "e": 7.99
+      },
+      {
+        "w": "indeks",
+        "s": 8.09,
+        "e": 8.39
+      },
+      {
+        "w": "skan",
+        "s": 8.45,
+        "e": 8.69
+      },
+      {
+        "w": "bilan",
+        "s": 8.73,
+        "e": 8.93
+      },
+      {
+        "w": "darhol",
+        "s": 9.01,
+        "e": 9.31
+      },
+      {
+        "w": "topildi,",
+        "s": 9.35,
+        "e": 9.67
+      },
+      {
+        "w": "ammo",
+        "s": 10.19,
+        "e": 10.37
+      },
+      {
+        "w": "oraliq",
+        "s": 10.71,
+        "e": 10.99
+      },
+      {
+        "w": "so'rovida",
+        "s": 11.05,
+        "e": 11.43
+      },
+      {
+        "w": "baza",
+        "s": 11.79,
+        "e": 12.09
+      },
+      {
+        "w": "to'liq",
+        "s": 12.17,
+        "e": 12.45
+      },
+      {
+        "w": "sek",
+        "s": 12.57,
+        "e": 12.77
+      },
+      {
+        "w": "skanga",
+        "s": 12.81,
+        "e": 13.11
+      },
+      {
+        "w": "tushib",
+        "s": 13.15,
+        "e": 13.35
+      },
+      {
+        "w": "ketdi.",
+        "s": 13.37,
+        "e": 13.63
+      }
+    ]
+  },
+  {
+    "scene": "gin_va_gist_sinovi",
+    "id": "l3",
+    "text": "Teglar massivida uch va besh borligini qidirishda GIN indeksi bitmap indeks skan bilan aniq qatorlarni saraladi.",
+    "show": "Teglar massivida uch va besh borligini qidirishda GIN indeksi bitmap indeks skan bilan aniq qatorlarni saraladi.",
+    "say": "Teglar massivida uch va besh borligini qidirishda djin indeksi bitmap indeks skan bilan aniq qatorlarni saraladi.",
+    "a0": 14.55,
+    "a1": 21.23,
+    "words": [
+      {
+        "w": "Teglar",
+        "s": 14.55,
+        "e": 14.89
+      },
+      {
+        "w": "massivida",
+        "s": 14.93,
+        "e": 15.33
+      },
+      {
+        "w": "uch",
+        "s": 15.69,
+        "e": 15.85
+      },
+      {
+        "w": "va",
+        "s": 15.93,
+        "e": 15.99
+      },
+      {
+        "w": "besh",
+        "s": 16.11,
+        "e": 16.31
+      },
+      {
+        "w": "borligini",
+        "s": 16.37,
+        "e": 16.77
+      },
+      {
+        "w": "qidirishda",
+        "s": 16.81,
+        "e": 17.19
+      },
+      {
+        "w": "djin",
+        "s": 17.57,
+        "e": 17.79
+      },
+      {
+        "w": "indeksi",
+        "s": 17.89,
+        "e": 18.31
+      },
+      {
+        "w": "bitmap",
+        "s": 18.49,
+        "e": 18.89
+      },
+      {
+        "w": "indeks",
+        "s": 19.03,
+        "e": 19.37
+      },
+      {
+        "w": "skan",
+        "s": 19.41,
+        "e": 19.65
+      },
+      {
+        "w": "bilan",
+        "s": 19.69,
+        "e": 19.89
+      },
+      {
+        "w": "aniq",
+        "s": 20.03,
+        "e": 20.23
+      },
+      {
+        "w": "qatorlarni",
+        "s": 20.27,
+        "e": 20.77
+      },
+      {
+        "w": "saraladi.",
+        "s": 20.83,
+        "e": 21.23
+      }
+    ]
+  },
+  {
+    "scene": "gin_va_gist_sinovi",
+    "id": "l4",
+    "text": "Davr ustunida esa ikki vaqt oralig'i kesishuvini GiST indeksi ajoyib tezlikda filtrlashga muvaffaq bo'ldi.",
+    "show": "Davr ustunida esa ikki vaqt oralig'i kesishuvini GiST indeksi ajoyib tezlikda filtrlashga muvaffaq bo'ldi.",
+    "say": "Davr ustunida esa ikki vaqt oralig'i kesishuvini jist indeksi ajoyib tezlikda filtrlashga muvaffaq bo'ldi.",
+    "a0": 21.93,
+    "a1": 28.18,
+    "words": [
+      {
+        "w": "Davr",
+        "s": 21.93,
+        "e": 22.19
+      },
+      {
+        "w": "ustunida",
+        "s": 22.23,
+        "e": 22.6
+      },
+      {
+        "w": "esa",
+        "s": 22.66,
+        "e": 22.8
+      },
+      {
+        "w": "ikki",
+        "s": 23.22,
+        "e": 23.46
+      },
+      {
+        "w": "vaqt",
+        "s": 23.54,
+        "e": 23.78
+      },
+      {
+        "w": "oralig'i",
+        "s": 23.86,
+        "e": 24.2
+      },
+      {
+        "w": "kesishuvini",
+        "s": 24.26,
+        "e": 24.74
+      },
+      {
+        "w": "jist",
+        "s": 25.12,
+        "e": 25.4
+      },
+      {
+        "w": "indeksi",
+        "s": 25.48,
+        "e": 25.9
+      },
+      {
+        "w": "ajoyib",
+        "s": 26.1,
+        "e": 26.46
+      },
+      {
+        "w": "tezlikda",
+        "s": 26.5,
+        "e": 26.9
+      },
+      {
+        "w": "filtrlashga",
+        "s": 26.96,
+        "e": 27.54
+      },
+      {
+        "w": "muvaffaq",
+        "s": 27.58,
+        "e": 27.9
+      },
+      {
+        "w": "bo'ldi.",
+        "s": 27.96,
+        "e": 28.18
+      }
+    ]
+  },
+  {
+    "scene": "spgist_knn_sinovi",
+    "id": "l5",
+    "text": "Fazoviy nuqtalarda eng yaqin uchta koordinatani topish uchun SP-GiST va masofa operatori ishlatildi.",
+    "show": "Fazoviy nuqtalarda eng yaqin uchta koordinatani topish uchun SP-GiST va masofa operatori ishlatildi.",
+    "say": "Fazoviy nuqtalarda eng yaqin uchta koordinatani topish uchun es-pi jist va masofa operatori ishlatildi.",
+    "a0": 29.12,
+    "a1": 35.08,
+    "words": [
+      {
+        "w": "Fazoviy",
+        "s": 29.12,
+        "e": 29.54
+      },
+      {
+        "w": "nuqtalarda",
+        "s": 29.58,
+        "e": 30.0
+      },
+      {
+        "w": "eng",
+        "s": 30.44,
+        "e": 30.58
+      },
+      {
+        "w": "yaqin",
+        "s": 30.64,
+        "e": 30.9
+      },
+      {
+        "w": "uchta",
+        "s": 30.98,
+        "e": 31.2
+      },
+      {
+        "w": "koordinatani",
+        "s": 31.24,
+        "e": 31.78
+      },
+      {
+        "w": "topish",
+        "s": 31.82,
+        "e": 32.04
+      },
+      {
+        "w": "uchun",
+        "s": 32.08,
+        "e": 32.28
+      },
+      {
+        "w": "es-pi",
+        "s": 32.64,
+        "e": 32.92
+      },
+      {
+        "w": "jist",
+        "s": 33.0,
+        "e": 33.28
+      },
+      {
+        "w": "va",
+        "s": 33.58,
+        "e": 33.66
+      },
+      {
+        "w": "masofa",
+        "s": 33.78,
+        "e": 34.16
+      },
+      {
+        "w": "operatori",
+        "s": 34.22,
+        "e": 34.64
+      },
+      {
+        "w": "ishlatildi.",
+        "s": 34.66,
+        "e": 35.08
+      }
+    ]
+  },
+  {
+    "scene": "spgist_knn_sinovi",
+    "id": "l6",
+    "text": "Jadvaldagi barcha qatorlarni saralamasdan, indeksning o'zi eng yaqin uch nuqtani tartiblab chiqarib berdi.",
+    "show": "Jadvaldagi barcha qatorlarni saralamasdan, indeksning o'zi eng yaqin uch nuqtani tartiblab chiqarib berdi.",
+    "say": "Jadvaldagi barcha qatorlarni saralamasdan, indeksning o'zi eng yaqin uch nuqtani tartiblab chiqarib berdi.",
+    "a0": 36.04,
+    "a1": 41.79,
+    "words": [
+      {
+        "w": "Jadvaldagi",
+        "s": 36.04,
+        "e": 36.5
+      },
+      {
+        "w": "barcha",
+        "s": 36.59,
+        "e": 36.87
+      },
+      {
+        "w": "qatorlarni",
+        "s": 36.93,
+        "e": 37.43
+      },
+      {
+        "w": "saralamasdan,",
+        "s": 37.49,
+        "e": 38.07
+      },
+      {
+        "w": "indeksning",
+        "s": 38.45,
+        "e": 38.99
+      },
+      {
+        "w": "o'zi",
+        "s": 39.07,
+        "e": 39.27
+      },
+      {
+        "w": "eng",
+        "s": 39.65,
+        "e": 39.77
+      },
+      {
+        "w": "yaqin",
+        "s": 39.83,
+        "e": 40.11
+      },
+      {
+        "w": "uch",
+        "s": 40.23,
+        "e": 40.35
+      },
+      {
+        "w": "nuqtani",
+        "s": 40.39,
+        "e": 40.73
+      },
+      {
+        "w": "tartiblab",
+        "s": 40.79,
+        "e": 41.23
+      },
+      {
+        "w": "chiqarib",
+        "s": 41.25,
+        "e": 41.55
+      },
+      {
+        "w": "berdi.",
+        "s": 41.57,
+        "e": 41.79
+      }
+    ]
+  },
+  {
+    "scene": "brin_lossy_sinovi",
+    "id": "l7",
+    "text": "Nihoyat, vaqt bo'yicha BRIN indeksi yuz yigirma sakkizta fizik blokni o'qib, o'nlab megabaytli skanni tejab qoldi.",
+    "show": "Nihoyat, vaqt bo'yicha BRIN indeksi yuz yigirma sakkizta fizik blokni o'qib, o'nlab megabaytli skanni tejab qoldi.",
+    "say": "Nihoyat, vaqt bo'yicha brin indeksi yuz yigirma sakkizta fizik blokni o'qib, o'nlab megabaytli skanni tejab qoldi.",
+    "a0": 42.59,
+    "a1": 49.45,
+    "words": [
+      {
+        "w": "Nihoyat,",
+        "s": 42.59,
+        "e": 43.03
+      },
+      {
+        "w": "vaqt",
+        "s": 43.35,
+        "e": 43.59
+      },
+      {
+        "w": "bo'yicha",
+        "s": 43.65,
+        "e": 43.93
+      },
+      {
+        "w": "brin",
+        "s": 44.07,
+        "e": 44.27
+      },
+      {
+        "w": "indeksi",
+        "s": 44.39,
+        "e": 44.81
+      },
+      {
+        "w": "yuz",
+        "s": 45.13,
+        "e": 45.27
+      },
+      {
+        "w": "yigirma",
+        "s": 45.33,
+        "e": 45.59
+      },
+      {
+        "w": "sakkizta",
+        "s": 45.65,
+        "e": 46.05
+      },
+      {
+        "w": "fizik",
+        "s": 46.13,
+        "e": 46.43
+      },
+      {
+        "w": "blokni",
+        "s": 46.47,
+        "e": 46.81
+      },
+      {
+        "w": "o'qib,",
+        "s": 46.89,
+        "e": 47.11
+      },
+      {
+        "w": "o'nlab",
+        "s": 47.47,
+        "e": 47.79
+      },
+      {
+        "w": "megabaytli",
+        "s": 47.87,
+        "e": 48.41
+      },
+      {
+        "w": "skanni",
+        "s": 48.49,
+        "e": 48.85
+      },
+      {
+        "w": "tejab",
+        "s": 48.89,
+        "e": 49.17
+      },
+      {
+        "w": "qoldi.",
+        "s": 49.21,
+        "e": 49.45
+      }
+    ]
+  },
+  {
+    "scene": "brin_lossy_sinovi",
+    "id": "l8",
+    "text": "Atigi yigirma to'rt kilobaytli indeks bilan minglab qatorlar ichidan natijalar soniyalarda xulosalandi.",
+    "show": "Atigi yigirma to'rt kilobaytli indeks bilan minglab qatorlar ichidan natijalar soniyalarda xulosalandi.",
+    "say": "Atigi yigirma to'rt kilobaytli indeks bilan minglab qatorlar ichidan natijalar soniyalarda xulosalandi.",
+    "a0": 50.1,
+    "a1": 55.98,
+    "words": [
+      {
+        "w": "Atigi",
+        "s": 50.1,
+        "e": 50.4
+      },
+      {
+        "w": "yigirma",
+        "s": 50.74,
+        "e": 51.02
+      },
+      {
+        "w": "to'rt",
+        "s": 51.08,
+        "e": 51.28
+      },
+      {
+        "w": "kilobaytli",
+        "s": 51.32,
+        "e": 51.8
+      },
+      {
+        "w": "indeks",
+        "s": 51.92,
+        "e": 52.24
+      },
+      {
+        "w": "bilan",
+        "s": 52.28,
+        "e": 52.48
+      },
+      {
+        "w": "minglab",
+        "s": 52.78,
+        "e": 53.14
+      },
+      {
+        "w": "qatorlar",
+        "s": 53.22,
+        "e": 53.66
+      },
+      {
+        "w": "ichidan",
+        "s": 53.7,
+        "e": 53.96
+      },
+      {
+        "w": "natijalar",
+        "s": 54.24,
+        "e": 54.76
+      },
+      {
+        "w": "soniyalarda",
+        "s": 54.84,
+        "e": 55.4
+      },
+      {
+        "w": "xulosalandi.",
+        "s": 55.44,
+        "e": 55.98
+      }
+    ]
+  }
+]

@@ -4,6 +4,15 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/44-1-tushuncha.jpg">
+    <source src="/video/sql/44-1-tushuncha.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/44-1-tushuncha.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/44-1-tushuncha.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>44.1-video. Indeks turlari tushunchasi: B-tree, Hash, GiST, GIN va BRIN</figcaption>
+</figure>
+
 41–43-boblardagi hamma narsa **B-tree** haqida edi. PostgreSQL hujjatiga ko'ra B-tree "eng ko'p uchraydigan holatlarga" mos va `CREATE INDEX` sukut bo'yicha shuni yaratadi. Lekin B-tree faqat **tartiblanadigan** qiymatlarni qidiradi: `=`, `<`, `>`, oraliq. "Massivda 3 va 5 bormi?", "Bu ikki vaqt oralig'i kesishadimi?", "Shu nuqtaga eng yaqin 10 ta joy" — bu savollarga B-tree yaramaydi. Ular uchun boshqa indeks turlari bor.
 
 PostgreSQL'da tur `USING` bilan tanlanadi:
@@ -54,6 +63,15 @@ Hash indeks xususiyatlari (hujjat):
 SQLite'da `CREATE INDEX` faqat B-tree; `USING` sintaksisi yo'q. Fazoviy so'rovlar uchun alohida **R*Tree moduli** — hujjatga ko'ra oraliq so'rovlari uchun mo'ljallangan maxsus indeks (ko'pincha geodata: har yozuv — min/max X va Y koordinatali to'rtburchak). U oddiy indeks emas, **virtual jadval** sifatida yaratiladi.
 
 ## Kod
+
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/44-2-kod.jpg">
+    <source src="/video/sql/44-2-kod.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/44-2-kod.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/44-2-kod.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>44.2-video. Indeks turlari amaliyoti va EXPLAIN tahlili</figcaption>
+</figure>
 
 Misollar PostgreSQL 18.6, MySQL 9.7.2 va SQLite 3.54.0 da ishga tushirilgan. PostgreSQL'da 200 000 qatorli jadval — har ustun boshqa turdagi indeks uchun:
 
@@ -192,6 +210,15 @@ Bir xil `vaqt` ustuni: B-tree — **4408 kB**, BRIN — **24 kB** (~180 baravar 
 `bloom` kengaytmasi o'rnatilgan PostgreSQL bilan birga keladi (`CREATE EXTENSION bloom` ishladi), lekin bu bobda batafsil sinalmadi.
 
 ## Dialektlar
+
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/44-3-dialektlar.jpg">
+    <source src="/video/sql/44-3-dialektlar.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/44-3-dialektlar.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/44-3-dialektlar.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>44.3-video. Dialektlar: MySQL (InnoDB) va SQLite indeks farqlari</figcaption>
+</figure>
 
 ### MySQL
 

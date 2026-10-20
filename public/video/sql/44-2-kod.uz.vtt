@@ -1,0 +1,41 @@
+WEBVTT
+
+1
+00:01.420 --> 00:07.750
+Ikki yuz ming qatorli jadvalda kod ustuniga qurilgan
+Hash indeksini ekspleyn orqali sinab ko'ramiz.
+
+2
+00:08.180 --> 00:15.200
+Tenglik so'rovi hesh indeks skan bilan darhol topildi,
+ammo oraliq so'rovida baza to'liq sek skanga tushib ketdi.
+
+3
+00:18.270 --> 00:25.400
+Teglar massivida uch va besh borligini qidirishda GIN
+indeksi bitmap indeks skan bilan aniq qatorlarni saraladi.
+
+4
+00:25.650 --> 00:32.350
+Davr ustunida esa ikki vaqt oralig'i kesishuvini GiST
+indeksi ajoyib tezlikda filtrlashga muvaffaq bo'ldi.
+
+5
+00:35.440 --> 00:41.850
+Fazoviy nuqtalarda eng yaqin uchta koordinatani
+topish uchun SP-GiST va masofa operatori ishlatildi.
+
+6
+00:42.360 --> 00:48.560
+Jadvaldagi barcha qatorlarni saralamasdan, indeksning
+o'zi eng yaqin uch nuqtani tartiblab chiqarib berdi.
+
+7
+00:51.510 --> 00:58.820
+Nihoyat, vaqt bo'yicha BRIN indeksi yuz yigirma sakkizta
+fizik blokni o'qib, o'nlab megabaytli skanni tejab qoldi.
+
+8
+00:59.020 --> 01:05.350
+Atigi yigirma to'rt kilobaytli indeks bilan minglab
+qatorlar ichidan natijalar soniyalarda xulosalandi.

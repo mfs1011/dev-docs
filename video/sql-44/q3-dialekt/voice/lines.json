@@ -1,0 +1,645 @@
+[
+  {
+    "scene": "mysql_hash_innoDB",
+    "id": "l1",
+    "text": "MySQL'ning InnoDB mexanizmida alohida Hash indeksi mavjud emas, sintaksis xato bermasdan B-tree'ga aylanadi.",
+    "show": "MySQL'ning InnoDB mexanizmida alohida Hash indeksi mavjud emas, sintaksis xato bermasdan B-tree'ga aylanadi.",
+    "say": "May es-kyu-elning Inno-di-bi mexanizmida alohida hesh indeksi mavjud emas, sintaksis xato bermasdan bi-tri'ga aylanadi.",
+    "a0": 0.2,
+    "a1": 7.57,
+    "words": [
+      {
+        "w": "May",
+        "s": 0.2,
+        "e": 0.38
+      },
+      {
+        "w": "es-kyu-elning",
+        "s": 0.42,
+        "e": 0.96
+      },
+      {
+        "w": "Inno-di-bi",
+        "s": 1.1,
+        "e": 1.56
+      },
+      {
+        "w": "mexanizmida",
+        "s": 1.64,
+        "e": 2.28
+      },
+      {
+        "w": "alohida",
+        "s": 2.52,
+        "e": 2.96
+      },
+      {
+        "w": "hesh",
+        "s": 3.02,
+        "e": 3.26
+      },
+      {
+        "w": "indeksi",
+        "s": 3.34,
+        "e": 3.7
+      },
+      {
+        "w": "mavjud",
+        "s": 3.74,
+        "e": 4.04
+      },
+      {
+        "w": "emas,",
+        "s": 4.08,
+        "e": 4.32
+      },
+      {
+        "w": "sintaksis",
+        "s": 4.92,
+        "e": 5.46
+      },
+      {
+        "w": "xato",
+        "s": 5.54,
+        "e": 5.78
+      },
+      {
+        "w": "bermasdan",
+        "s": 5.88,
+        "e": 6.42
+      },
+      {
+        "w": "bi-tri'ga",
+        "s": 6.7,
+        "e": 7.12
+      },
+      {
+        "w": "aylanadi.",
+        "s": 7.18,
+        "e": 7.57
+      }
+    ]
+  },
+  {
+    "scene": "mysql_hash_innoDB",
+    "id": "l2",
+    "text": "Baza faqat ogohlantirish beradi: haqiqiy hesh indeksi faqat tezkor xotiradagi Memory jadvallarida ishlaydi.",
+    "show": "Baza faqat ogohlantirish beradi: haqiqiy hesh indeksi faqat tezkor xotiradagi Memory jadvallarida ishlaydi.",
+    "say": "Baza faqat ogohlantirish beradi: haqiqiy hesh indeksi faqat tezkor xotiradagi memori jadvallarida ishlaydi.",
+    "a0": 8.15,
+    "a1": 14.01,
+    "words": [
+      {
+        "w": "Baza",
+        "s": 8.15,
+        "e": 8.39
+      },
+      {
+        "w": "faqat",
+        "s": 8.47,
+        "e": 8.75
+      },
+      {
+        "w": "ogohlantirish",
+        "s": 8.87,
+        "e": 9.45
+      },
+      {
+        "w": "beradi:",
+        "s": 9.47,
+        "e": 9.73
+      },
+      {
+        "w": "haqiqiy",
+        "s": 9.99,
+        "e": 10.41
+      },
+      {
+        "w": "hesh",
+        "s": 10.49,
+        "e": 10.71
+      },
+      {
+        "w": "indeksi",
+        "s": 10.77,
+        "e": 11.11
+      },
+      {
+        "w": "faqat",
+        "s": 11.15,
+        "e": 11.41
+      },
+      {
+        "w": "tezkor",
+        "s": 11.47,
+        "e": 11.81
+      },
+      {
+        "w": "xotiradagi",
+        "s": 11.87,
+        "e": 12.41
+      },
+      {
+        "w": "memori",
+        "s": 12.79,
+        "e": 13.13
+      },
+      {
+        "w": "jadvallarida",
+        "s": 13.19,
+        "e": 13.67
+      },
+      {
+        "w": "ishlaydi.",
+        "s": 13.73,
+        "e": 14.01
+      }
+    ]
+  },
+  {
+    "scene": "mysql_spatial_invisible",
+    "id": "l3",
+    "text": "Geometrik koordinatalar uchun MySQL'da ar-tri asosidagi speyshl indeks va MBR konteyns funksiyasi qo'llanadi.",
+    "show": "Geometrik koordinatalar uchun MySQL'da ar-tri asosidagi speyshl indeks va MBR konteyns funksiyasi qo'llanadi.",
+    "say": "Geometrik koordinatalar uchun May es-kyu-elda ar-tri asosidagi speyshl indeks va em-bi-ar konteyns funksiyasi qo'llanadi.",
+    "a0": 14.83,
+    "a1": 22.23,
+    "words": [
+      {
+        "w": "Geometrik",
+        "s": 14.83,
+        "e": 15.33
+      },
+      {
+        "w": "koordinatalar",
+        "s": 15.35,
+        "e": 15.95
+      },
+      {
+        "w": "uchun",
+        "s": 15.99,
+        "e": 16.21
+      },
+      {
+        "w": "May",
+        "s": 16.43,
+        "e": 16.59
+      },
+      {
+        "w": "es-kyu-elda",
+        "s": 16.61,
+        "e": 17.07
+      },
+      {
+        "w": "ar-tri",
+        "s": 17.35,
+        "e": 17.69
+      },
+      {
+        "w": "asosidagi",
+        "s": 17.83,
+        "e": 18.39
+      },
+      {
+        "w": "speyshl",
+        "s": 18.51,
+        "e": 18.91
+      },
+      {
+        "w": "indeks",
+        "s": 19.03,
+        "e": 19.37
+      },
+      {
+        "w": "va",
+        "s": 19.45,
+        "e": 19.53
+      },
+      {
+        "w": "em-bi-ar",
+        "s": 20.07,
+        "e": 20.67
+      },
+      {
+        "w": "konteyns",
+        "s": 20.77,
+        "e": 21.27
+      },
+      {
+        "w": "funksiyasi",
+        "s": 21.33,
+        "e": 21.77
+      },
+      {
+        "w": "qo'llanadi.",
+        "s": 21.81,
+        "e": 22.23
+      }
+    ]
+  },
+  {
+    "scene": "mysql_spatial_invisible",
+    "id": "l4",
+    "text": "Yana bir qulaylik: invizibl indeks orqali indeksni o'chirmasdan, uning tizimga ta'sirini bexatar sinash mumkin.",
+    "show": "Yana bir qulaylik: invizibl indeks orqali indeksni o'chirmasdan, uning tizimga ta'sirini bexatar sinash mumkin.",
+    "say": "Yana bir qulaylik: invizibl indeks orqali indeksni o'chirmasdan, uning tizimga ta'sirini bexatar sinash mumkin.",
+    "a0": 23.02,
+    "a1": 28.88,
+    "words": [
+      {
+        "w": "Yana",
+        "s": 23.02,
+        "e": 23.2
+      },
+      {
+        "w": "bir",
+        "s": 23.24,
+        "e": 23.32
+      },
+      {
+        "w": "qulaylik:",
+        "s": 23.36,
+        "e": 23.7
+      },
+      {
+        "w": "invizibl",
+        "s": 24.12,
+        "e": 24.6
+      },
+      {
+        "w": "indeks",
+        "s": 24.68,
+        "e": 24.98
+      },
+      {
+        "w": "orqali",
+        "s": 25.06,
+        "e": 25.34
+      },
+      {
+        "w": "indeksni",
+        "s": 25.46,
+        "e": 25.86
+      },
+      {
+        "w": "o'chirmasdan,",
+        "s": 26.02,
+        "e": 26.62
+      },
+      {
+        "w": "uning",
+        "s": 26.76,
+        "e": 26.94
+      },
+      {
+        "w": "tizimga",
+        "s": 26.98,
+        "e": 27.32
+      },
+      {
+        "w": "ta'sirini",
+        "s": 27.38,
+        "e": 27.8
+      },
+      {
+        "w": "bexatar",
+        "s": 27.88,
+        "e": 28.32
+      },
+      {
+        "w": "sinash",
+        "s": 28.38,
+        "e": 28.62
+      },
+      {
+        "w": "mumkin.",
+        "s": 28.64,
+        "e": 28.88
+      }
+    ]
+  },
+  {
+    "scene": "sqlite_rtree",
+    "id": "l5",
+    "text": "SQLite'da CREATE INDEX faqat B-tree quradi, yuzing sintaksisi esa sintaksis xatosiga olib keladi.",
+    "show": "SQLite'da CREATE INDEX faqat B-tree quradi, yuzing sintaksisi esa sintaksis xatosiga olib keladi.",
+    "say": "Es-kyu-laytda krieyt indeks faqat bi-tri quradi, yuzing sintaksisi esa sintaksis xatosiga olib keladi.",
+    "a0": 29.9,
+    "a1": 36.08,
+    "words": [
+      {
+        "w": "Es-kyu-laytda",
+        "s": 29.9,
+        "e": 30.56
+      },
+      {
+        "w": "krieyt",
+        "s": 30.9,
+        "e": 31.3
+      },
+      {
+        "w": "indeks",
+        "s": 31.42,
+        "e": 31.76
+      },
+      {
+        "w": "faqat",
+        "s": 31.84,
+        "e": 32.12
+      },
+      {
+        "w": "bi-tri",
+        "s": 32.22,
+        "e": 32.54
+      },
+      {
+        "w": "quradi,",
+        "s": 32.62,
+        "e": 32.92
+      },
+      {
+        "w": "yuzing",
+        "s": 33.38,
+        "e": 33.72
+      },
+      {
+        "w": "sintaksisi",
+        "s": 33.78,
+        "e": 34.24
+      },
+      {
+        "w": "esa",
+        "s": 34.3,
+        "e": 34.46
+      },
+      {
+        "w": "sintaksis",
+        "s": 34.76,
+        "e": 35.24
+      },
+      {
+        "w": "xatosiga",
+        "s": 35.26,
+        "e": 35.66
+      },
+      {
+        "w": "olib",
+        "s": 35.68,
+        "e": 35.82
+      },
+      {
+        "w": "keladi.",
+        "s": 35.84,
+        "e": 36.08
+      }
+    ]
+  },
+  {
+    "scene": "sqlite_rtree",
+    "id": "l6",
+    "text": "Fazoviy va oraliqli so'rovlar uchun alohida ar-star-tri moduli virtual jadval ko'rinishida taqdim etilgan.",
+    "show": "Fazoviy va oraliqli so'rovlar uchun alohida ar-star-tri moduli virtual jadval ko'rinishida taqdim etilgan.",
+    "say": "Fazoviy va oraliqli so'rovlar uchun alohida ar-star-tri moduli virtual jadval ko'rinishida taqdim etilgan.",
+    "a0": 36.89,
+    "a1": 42.95,
+    "words": [
+      {
+        "w": "Fazoviy",
+        "s": 36.89,
+        "e": 37.43
+      },
+      {
+        "w": "va",
+        "s": 37.51,
+        "e": 37.57
+      },
+      {
+        "w": "oraliqli",
+        "s": 37.69,
+        "e": 38.05
+      },
+      {
+        "w": "so'rovlar",
+        "s": 38.11,
+        "e": 38.49
+      },
+      {
+        "w": "uchun",
+        "s": 38.53,
+        "e": 38.73
+      },
+      {
+        "w": "alohida",
+        "s": 38.89,
+        "e": 39.33
+      },
+      {
+        "w": "ar-star-tri",
+        "s": 39.59,
+        "e": 40.31
+      },
+      {
+        "w": "moduli",
+        "s": 40.41,
+        "e": 40.75
+      },
+      {
+        "w": "virtual",
+        "s": 41.09,
+        "e": 41.47
+      },
+      {
+        "w": "jadval",
+        "s": 41.51,
+        "e": 41.83
+      },
+      {
+        "w": "ko'rinishida",
+        "s": 41.85,
+        "e": 42.29
+      },
+      {
+        "w": "taqdim",
+        "s": 42.35,
+        "e": 42.61
+      },
+      {
+        "w": "etilgan.",
+        "s": 42.65,
+        "e": 42.95
+      }
+    ]
+  },
+  {
+    "scene": "taqqoslash_va_xatolar",
+    "id": "l7",
+    "text": "Eng katta xato — tasodifiy ustunlarga BRIN qurish yoki hesh indeksni har doim tez deb o'ylashdir.",
+    "show": "Eng katta xato — tasodifiy ustunlarga BRIN qurish yoki hesh indeksni har doim tez deb o'ylashdir.",
+    "say": "Eng katta xato — tasodifiy ustunlarga brin qurish yoki hesh indeksni har doim tez deb o'ylashdir.",
+    "a0": 43.87,
+    "a1": 49.42,
+    "words": [
+      {
+        "w": "Eng",
+        "s": 43.87,
+        "e": 43.99
+      },
+      {
+        "w": "katta",
+        "s": 44.01,
+        "e": 44.25
+      },
+      {
+        "w": "xato",
+        "s": 44.29,
+        "e": 44.53
+      },
+      {
+        "w": "—",
+        "s": 44.53,
+        "e": 44.53
+      },
+      {
+        "w": "tasodifiy",
+        "s": 44.91,
+        "e": 45.43
+      },
+      {
+        "w": "ustunlarga",
+        "s": 45.51,
+        "e": 46.01
+      },
+      {
+        "w": "brin",
+        "s": 46.09,
+        "e": 46.33
+      },
+      {
+        "w": "qurish",
+        "s": 46.39,
+        "e": 46.65
+      },
+      {
+        "w": "yoki",
+        "s": 46.67,
+        "e": 46.93
+      },
+      {
+        "w": "hesh",
+        "s": 47.27,
+        "e": 47.49
+      },
+      {
+        "w": "indeksni",
+        "s": 47.57,
+        "e": 47.97
+      },
+      {
+        "w": "har",
+        "s": 48.09,
+        "e": 48.31
+      },
+      {
+        "w": "doim",
+        "s": 48.37,
+        "e": 48.61
+      },
+      {
+        "w": "tez",
+        "s": 48.67,
+        "e": 48.83
+      },
+      {
+        "w": "deb",
+        "s": 48.87,
+        "e": 49.01
+      },
+      {
+        "w": "o'ylashdir.",
+        "s": 49.03,
+        "e": 49.42
+      }
+    ]
+  },
+  {
+    "scene": "taqqoslash_va_xatolar",
+    "id": "l8",
+    "text": "Har bir baza imkoniyatlarini bilish va to'g'ri indeks tanlash eng og'ir yuklamalarni ham yengillashtiradi.",
+    "show": "Har bir baza imkoniyatlarini bilish va to'g'ri indeks tanlash eng og'ir yuklamalarni ham yengillashtiradi.",
+    "say": "Har bir baza imkoniyatlarini bilish va to'g'ri indeks tanlash eng og'ir yuklamalarni ham yengillashtiradi.",
+    "a0": 50.26,
+    "a1": 55.48,
+    "words": [
+      {
+        "w": "Har",
+        "s": 50.26,
+        "e": 50.42
+      },
+      {
+        "w": "bir",
+        "s": 50.46,
+        "e": 50.56
+      },
+      {
+        "w": "baza",
+        "s": 50.6,
+        "e": 50.82
+      },
+      {
+        "w": "imkoniyatlarini",
+        "s": 50.86,
+        "e": 51.46
+      },
+      {
+        "w": "bilish",
+        "s": 51.52,
+        "e": 51.74
+      },
+      {
+        "w": "va",
+        "s": 51.78,
+        "e": 51.84
+      },
+      {
+        "w": "to'g'ri",
+        "s": 52.18,
+        "e": 52.52
+      },
+      {
+        "w": "indeks",
+        "s": 52.58,
+        "e": 52.86
+      },
+      {
+        "w": "tanlash",
+        "s": 52.88,
+        "e": 53.22
+      },
+      {
+        "w": "eng",
+        "s": 53.62,
+        "e": 53.78
+      },
+      {
+        "w": "og'ir",
+        "s": 53.92,
+        "e": 54.1
+      },
+      {
+        "w": "yuklamalarni",
+        "s": 54.14,
+        "e": 54.64
+      },
+      {
+        "w": "ham",
+        "s": 54.68,
+        "e": 54.8
+      },
+      {
+        "w": "yengillashtiradi.",
+        "s": 54.84,
+        "e": 55.48
+      }
+    ]
+  }
+]
