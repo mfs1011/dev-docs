@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" playsinline poster="/video/git/02-terminal-va-ornatish.jpg" src="/video/git/02-terminal-va-ornatish.mp4">
+    <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/git/02-terminal-va-ornatish.chapters.vtt" default>
+    <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/git/02-terminal-va-ornatish.uz.vtt">
+  </video>
+  <figcaption>02.1-video. Terminal va o'rnatish</figcaption>
+</figure>
+
 Git'dan foydalanishning ko'p yo'li bor: asl **buyruq qatori** (command line) vositalari va imkoniyatlari turlicha bo'lgan ko'plab **grafik interfeyslar** (GUI) — masalan, kod muharriridagi Git paneli yoki alohida dasturlar. Bu qo'llanmada Git'ni buyruq qatorida ishlatamiz.
 
 **Terminal** (buyruq qatori, *shell*) — kompyuterga matnli buyruq yozib, natijani matn ko'rinishida oladigan oyna. macOS'da u **Terminal** dasturi, Windows'da **Command Prompt** yoki **PowerShell** (Git for Windows bilan kelgan **Git Bash** ham), Linux'da odatda shunchaki "Terminal" deb ataladi.

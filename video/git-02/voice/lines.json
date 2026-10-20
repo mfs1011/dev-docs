@@ -1,0 +1,1149 @@
+[
+  {
+    "id": "l1",
+    "scene": "intro",
+    "text": "Salom! Ushbu bobda Gitni kompyuterga o‘rnatish va terminal buyruqlari qanday tuzilganini o‘rganamiz.",
+    "show": "Salom! Ushbu bobda Gitni kompyuterga o‘rnatish va terminal buyruqlari qanday tuzilganini o‘rganamiz.",
+    "say": "Salom! Ushbu bobda Gitni kompyuterga o‘rnatish va terminal buyruqlari qanday tuzilganini o‘rganamiz.",
+    "a0": 0.24,
+    "a1": 5.78,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.24,
+        "e": 0.52
+      },
+      {
+        "w": "Ushbu",
+        "s": 1.08,
+        "e": 1.3
+      },
+      {
+        "w": "bobda",
+        "s": 1.36,
+        "e": 1.64
+      },
+      {
+        "w": "Gitni",
+        "s": 1.82,
+        "e": 2.1
+      },
+      {
+        "w": "kompyuterga",
+        "s": 2.2,
+        "e": 2.68
+      },
+      {
+        "w": "o‘rnatish",
+        "s": 2.74,
+        "e": 3.26
+      },
+      {
+        "w": "va",
+        "s": 3.34,
+        "e": 3.4
+      },
+      {
+        "w": "terminal",
+        "s": 3.52,
+        "e": 3.92
+      },
+      {
+        "w": "buyruqlari",
+        "s": 3.96,
+        "e": 4.38
+      },
+      {
+        "w": "qanday",
+        "s": 4.46,
+        "e": 4.78
+      },
+      {
+        "w": "tuzilganini",
+        "s": 4.82,
+        "e": 5.32
+      },
+      {
+        "w": "o‘rganamiz.",
+        "s": 5.36,
+        "e": 5.78
+      }
+    ]
+  },
+  {
+    "id": "l2",
+    "scene": "intro",
+    "text": "Git bilan ishlashda grafik dasturlar bo‘lsa-da, barcha imkoniyatlar faqat buyruq qatorida to‘liq ochiladi va har bir tizimda bir xil ishlaydi.",
+    "show": "Git bilan ishlashda grafik dasturlar bo‘lsa-da, barcha imkoniyatlar faqat buyruq qatorida to‘liq ochiladi va har bir tizimda bir xil ishlaydi.",
+    "say": "Git bilan ishlashda grafik dasturlar bo‘lsa-da, barcha imkoniyatlar faqat buyruq qatorida to‘liq ochiladi va har bir tizimda bir xil ishlaydi.",
+    "a0": 6.88,
+    "a1": 14.17,
+    "words": [
+      {
+        "w": "Git",
+        "s": 6.88,
+        "e": 7.04
+      },
+      {
+        "w": "bilan",
+        "s": 7.08,
+        "e": 7.26
+      },
+      {
+        "w": "ishlashda",
+        "s": 7.3,
+        "e": 7.67
+      },
+      {
+        "w": "grafik",
+        "s": 7.77,
+        "e": 8.13
+      },
+      {
+        "w": "dasturlar",
+        "s": 8.17,
+        "e": 8.63
+      },
+      {
+        "w": "bo‘lsa-da,",
+        "s": 8.67,
+        "e": 9.03
+      },
+      {
+        "w": "barcha",
+        "s": 9.41,
+        "e": 9.69
+      },
+      {
+        "w": "imkoniyatlar",
+        "s": 9.73,
+        "e": 10.27
+      },
+      {
+        "w": "faqat",
+        "s": 10.35,
+        "e": 10.63
+      },
+      {
+        "w": "buyruq",
+        "s": 10.73,
+        "e": 11.05
+      },
+      {
+        "w": "qatorida",
+        "s": 11.09,
+        "e": 11.51
+      },
+      {
+        "w": "to‘liq",
+        "s": 11.61,
+        "e": 11.85
+      },
+      {
+        "w": "ochiladi",
+        "s": 11.91,
+        "e": 12.23
+      },
+      {
+        "w": "va",
+        "s": 12.31,
+        "e": 12.37
+      },
+      {
+        "w": "har",
+        "s": 12.73,
+        "e": 12.89
+      },
+      {
+        "w": "bir",
+        "s": 12.95,
+        "e": 13.05
+      },
+      {
+        "w": "tizimda",
+        "s": 13.09,
+        "e": 13.41
+      },
+      {
+        "w": "bir",
+        "s": 13.55,
+        "e": 13.67
+      },
+      {
+        "w": "xil",
+        "s": 13.71,
+        "e": 13.83
+      },
+      {
+        "w": "ishlaydi.",
+        "s": 13.85,
+        "e": 14.17
+      }
+    ]
+  },
+  {
+    "id": "l3",
+    "scene": "ornatish_va_path",
+    "text": "Gitni Linuxda paket menejeri orqali, macOSda buyruq qatori vositalari yoki Homebrew bilan, Windowsda esa Git for Windows orqali o‘rnatasiz.",
+    "show": "Gitni Linuxda paket menejeri orqali, macOSda buyruq qatori vositalari yoki Homebrew bilan, Windowsda esa Git for Windows orqali o‘rnatasiz.",
+    "say": "Gitni Linuksda paket menejeri orqali, Mak-o-esda buyruq qatori vositalari yoki Xoumbyu bilan, Vindovsda esa Git for Vindovs orqali o‘rnatasiz.",
+    "a0": 15.07,
+    "a1": 23.44,
+    "words": [
+      {
+        "w": "Gitni",
+        "s": 15.07,
+        "e": 15.35
+      },
+      {
+        "w": "Linuksda",
+        "s": 15.45,
+        "e": 15.87
+      },
+      {
+        "w": "paket",
+        "s": 15.93,
+        "e": 16.21
+      },
+      {
+        "w": "menejeri",
+        "s": 16.27,
+        "e": 16.65
+      },
+      {
+        "w": "orqali,",
+        "s": 16.69,
+        "e": 16.99
+      },
+      {
+        "w": "Mak-o-esda",
+        "s": 17.35,
+        "e": 17.93
+      },
+      {
+        "w": "buyruq",
+        "s": 18.07,
+        "e": 18.35
+      },
+      {
+        "w": "qatori",
+        "s": 18.39,
+        "e": 18.69
+      },
+      {
+        "w": "vositalari",
+        "s": 18.73,
+        "e": 19.29
+      },
+      {
+        "w": "yoki",
+        "s": 19.29,
+        "e": 19.63
+      },
+      {
+        "w": "Xoumbyu",
+        "s": 19.95,
+        "e": 20.45
+      },
+      {
+        "w": "bilan,",
+        "s": 20.49,
+        "e": 20.71
+      },
+      {
+        "w": "Vindovsda",
+        "s": 21.09,
+        "e": 21.51
+      },
+      {
+        "w": "esa",
+        "s": 21.57,
+        "e": 21.71
+      },
+      {
+        "w": "Git",
+        "s": 21.83,
+        "e": 21.99
+      },
+      {
+        "w": "for",
+        "s": 22.03,
+        "e": 22.19
+      },
+      {
+        "w": "Vindovs",
+        "s": 22.25,
+        "e": 22.58
+      },
+      {
+        "w": "orqali",
+        "s": 22.64,
+        "e": 22.9
+      },
+      {
+        "w": "o‘rnatasiz.",
+        "s": 22.96,
+        "e": 23.44
+      }
+    ]
+  },
+  {
+    "id": "l4",
+    "scene": "ornatish_va_path",
+    "text": "Kompyuterda bir nechta Git bo‘lishi mumkin va qaysi biri ishga tushishini Pas muhit o‘zgaruvchisidagi papkalar tartibi hal qiladi.",
+    "show": "Kompyuterda bir nechta Git bo‘lishi mumkin va qaysi biri ishga tushishini Pas muhit o‘zgaruvchisidagi papkalar tartibi hal qiladi.",
+    "say": "Kompyuterda bir nechta Git bo‘lishi mumkin va qaysi biri ishga tushishini Pas muhit o‘zgaruvchisidagi papkalar tartibi hal qiladi.",
+    "a0": 23.98,
+    "a1": 29.82,
+    "words": [
+      {
+        "w": "Kompyuterda",
+        "s": 23.98,
+        "e": 24.48
+      },
+      {
+        "w": "bir",
+        "s": 24.6,
+        "e": 24.7
+      },
+      {
+        "w": "nechta",
+        "s": 24.74,
+        "e": 24.98
+      },
+      {
+        "w": "Git",
+        "s": 25.04,
+        "e": 25.16
+      },
+      {
+        "w": "bo‘lishi",
+        "s": 25.22,
+        "e": 25.48
+      },
+      {
+        "w": "mumkin",
+        "s": 25.52,
+        "e": 25.8
+      },
+      {
+        "w": "va",
+        "s": 25.86,
+        "e": 25.9
+      },
+      {
+        "w": "qaysi",
+        "s": 26.02,
+        "e": 26.3
+      },
+      {
+        "w": "biri",
+        "s": 26.34,
+        "e": 26.48
+      },
+      {
+        "w": "ishga",
+        "s": 26.54,
+        "e": 26.74
+      },
+      {
+        "w": "tushishini",
+        "s": 26.78,
+        "e": 27.14
+      },
+      {
+        "w": "Pas",
+        "s": 27.26,
+        "e": 27.44
+      },
+      {
+        "w": "muhit",
+        "s": 27.5,
+        "e": 27.74
+      },
+      {
+        "w": "o‘zgaruvchisidagi",
+        "s": 27.78,
+        "e": 28.46
+      },
+      {
+        "w": "papkalar",
+        "s": 28.54,
+        "e": 28.96
+      },
+      {
+        "w": "tartibi",
+        "s": 29.0,
+        "e": 29.34
+      },
+      {
+        "w": "hal",
+        "s": 29.4,
+        "e": 29.54
+      },
+      {
+        "w": "qiladi.",
+        "s": 29.58,
+        "e": 29.82
+      }
+    ]
+  },
+  {
+    "id": "l5",
+    "scene": "buyruq_tuzilishi",
+    "text": "Har bir Git buyrug‘i aniq tuzilishga ega: global opsiyalar, ichki buyruq nomi, uning opsiyalari, argumentlar va fayl yo‘llari.",
+    "show": "Har bir Git buyrug‘i aniq tuzilishga ega: global opsiyalar, ichki buyruq nomi, uning opsiyalari, argumentlar va fayl yo‘llari.",
+    "say": "Har bir Git buyrug‘i aniq tuzilishga ega: global opsiyalar, ichki buyruq nomi, uning opsiyalari, argumentlar va fayl yo‘llari.",
+    "a0": 30.76,
+    "a1": 37.93,
+    "words": [
+      {
+        "w": "Har",
+        "s": 30.76,
+        "e": 30.92
+      },
+      {
+        "w": "bir",
+        "s": 30.96,
+        "e": 31.06
+      },
+      {
+        "w": "Git",
+        "s": 31.12,
+        "e": 31.26
+      },
+      {
+        "w": "buyrug‘i",
+        "s": 31.3,
+        "e": 31.6
+      },
+      {
+        "w": "aniq",
+        "s": 31.78,
+        "e": 31.98
+      },
+      {
+        "w": "tuzilishga",
+        "s": 32.04,
+        "e": 32.42
+      },
+      {
+        "w": "ega:",
+        "s": 32.48,
+        "e": 32.62
+      },
+      {
+        "w": "global",
+        "s": 33.06,
+        "e": 33.36
+      },
+      {
+        "w": "opsiyalar,",
+        "s": 33.42,
+        "e": 33.86
+      },
+      {
+        "w": "ichki",
+        "s": 34.14,
+        "e": 34.36
+      },
+      {
+        "w": "buyruq",
+        "s": 34.4,
+        "e": 34.66
+      },
+      {
+        "w": "nomi,",
+        "s": 34.72,
+        "e": 35.0
+      },
+      {
+        "w": "uning",
+        "s": 35.34,
+        "e": 35.54
+      },
+      {
+        "w": "opsiyalari,",
+        "s": 35.62,
+        "e": 36.14
+      },
+      {
+        "w": "argumentlar",
+        "s": 36.36,
+        "e": 36.98
+      },
+      {
+        "w": "va",
+        "s": 37.08,
+        "e": 37.14
+      },
+      {
+        "w": "fayl",
+        "s": 37.26,
+        "e": 37.53
+      },
+      {
+        "w": "yo‘llari.",
+        "s": 37.59,
+        "e": 37.93
+      }
+    ]
+  },
+  {
+    "id": "l6",
+    "scene": "buyruq_tuzilishi",
+    "text": "Har bir buyruq tugaganda ekzit kod qaytaradi: nol muvaffaqiyatni, yuz yigirma sakkiz esa xatolikni bildiradi.",
+    "show": "Har bir buyruq tugaganda ekzit kod qaytaradi: nol muvaffaqiyatni, yuz yigirma sakkiz esa xatolikni bildiradi.",
+    "say": "Har bir buyruq tugaganda ekzit kod qaytaradi: nol muvaffaqiyatni, yuz yigirma sakkiz esa xatolikni bildiradi.",
+    "a0": 38.97,
+    "a1": 44.33,
+    "words": [
+      {
+        "w": "Har",
+        "s": 38.97,
+        "e": 39.11
+      },
+      {
+        "w": "bir",
+        "s": 39.15,
+        "e": 39.23
+      },
+      {
+        "w": "buyruq",
+        "s": 39.27,
+        "e": 39.49
+      },
+      {
+        "w": "tugaganda",
+        "s": 39.53,
+        "e": 39.97
+      },
+      {
+        "w": "ekzit",
+        "s": 40.13,
+        "e": 40.41
+      },
+      {
+        "w": "kod",
+        "s": 40.45,
+        "e": 40.59
+      },
+      {
+        "w": "qaytaradi:",
+        "s": 40.63,
+        "e": 41.01
+      },
+      {
+        "w": "nol",
+        "s": 41.39,
+        "e": 41.61
+      },
+      {
+        "w": "muvaffaqiyatni,",
+        "s": 41.69,
+        "e": 42.31
+      },
+      {
+        "w": "yuz",
+        "s": 42.59,
+        "e": 42.71
+      },
+      {
+        "w": "yigirma",
+        "s": 42.73,
+        "e": 42.95
+      },
+      {
+        "w": "sakkiz",
+        "s": 42.99,
+        "e": 43.25
+      },
+      {
+        "w": "esa",
+        "s": 43.29,
+        "e": 43.43
+      },
+      {
+        "w": "xatolikni",
+        "s": 43.49,
+        "e": 43.97
+      },
+      {
+        "w": "bildiradi.",
+        "s": 43.99,
+        "e": 44.33
+      }
+    ]
+  },
+  {
+    "id": "l7",
+    "scene": "global_va_ustunlik",
+    "text": "Katta si opsiyasi Gitni boshqa papkaga kirmasdan ishlatishga, kichik si esa faqat bitta buyruq uchun sozlama berishga imkon beradi.",
+    "show": "Katta si opsiyasi Gitni boshqa papkaga kirmasdan ishlatishga, kichik si esa faqat bitta buyruq uchun sozlama berishga imkon beradi.",
+    "say": "Katta si opsiyasi Gitni boshqa papkaga kirmasdan ishlatishga, kichik si esa faqat bitta buyruq uchun sozlama berishga imkon beradi.",
+    "a0": 45.47,
+    "a1": 52.31,
+    "words": [
+      {
+        "w": "Katta",
+        "s": 45.47,
+        "e": 45.75
+      },
+      {
+        "w": "si",
+        "s": 45.87,
+        "e": 45.95
+      },
+      {
+        "w": "opsiyasi",
+        "s": 46.11,
+        "e": 46.51
+      },
+      {
+        "w": "Gitni",
+        "s": 46.87,
+        "e": 47.13
+      },
+      {
+        "w": "boshqa",
+        "s": 47.17,
+        "e": 47.41
+      },
+      {
+        "w": "papkaga",
+        "s": 47.45,
+        "e": 47.79
+      },
+      {
+        "w": "kirmasdan",
+        "s": 47.83,
+        "e": 48.29
+      },
+      {
+        "w": "ishlatishga,",
+        "s": 48.31,
+        "e": 48.75
+      },
+      {
+        "w": "kichik",
+        "s": 49.07,
+        "e": 49.31
+      },
+      {
+        "w": "si",
+        "s": 49.35,
+        "e": 49.45
+      },
+      {
+        "w": "esa",
+        "s": 49.53,
+        "e": 49.71
+      },
+      {
+        "w": "faqat",
+        "s": 49.81,
+        "e": 50.11
+      },
+      {
+        "w": "bitta",
+        "s": 50.19,
+        "e": 50.45
+      },
+      {
+        "w": "buyruq",
+        "s": 50.51,
+        "e": 50.75
+      },
+      {
+        "w": "uchun",
+        "s": 50.81,
+        "e": 50.99
+      },
+      {
+        "w": "sozlama",
+        "s": 51.03,
+        "e": 51.39
+      },
+      {
+        "w": "berishga",
+        "s": 51.43,
+        "e": 51.73
+      },
+      {
+        "w": "imkon",
+        "s": 51.77,
+        "e": 52.01
+      },
+      {
+        "w": "beradi.",
+        "s": 52.05,
+        "e": 52.31
+      }
+    ]
+  },
+  {
+    "id": "l8",
+    "scene": "global_va_ustunlik",
+    "text": "Agar bir xil sozlama turli joyda berilsa, eng yuqori ustunlik buyruq opsiyasiga, keyin muhit o‘zgaruvchisiga va eng oxirida konfig fayliga tegishli bo‘ladi.",
+    "show": "Agar bir xil sozlama turli joyda berilsa, eng yuqori ustunlik buyruq opsiyasiga, keyin muhit o‘zgaruvchisiga va eng oxirida konfig fayliga tegishli bo‘ladi.",
+    "say": "Agar bir xil sozlama turli joyda berilsa, eng yuqori ustunlik buyruq opsiyasiga, keyin muhit o‘zgaruvchisiga va eng oxirida konfig fayliga tegishli bo‘ladi.",
+    "a0": 52.98,
+    "a1": 61.22,
+    "words": [
+      {
+        "w": "Agar",
+        "s": 52.98,
+        "e": 53.2
+      },
+      {
+        "w": "bir",
+        "s": 53.28,
+        "e": 53.38
+      },
+      {
+        "w": "xil",
+        "s": 53.42,
+        "e": 53.56
+      },
+      {
+        "w": "sozlama",
+        "s": 53.6,
+        "e": 53.92
+      },
+      {
+        "w": "turli",
+        "s": 54.0,
+        "e": 54.24
+      },
+      {
+        "w": "joyda",
+        "s": 54.28,
+        "e": 54.52
+      },
+      {
+        "w": "berilsa,",
+        "s": 54.54,
+        "e": 54.86
+      },
+      {
+        "w": "eng",
+        "s": 55.24,
+        "e": 55.36
+      },
+      {
+        "w": "yuqori",
+        "s": 55.4,
+        "e": 55.7
+      },
+      {
+        "w": "ustunlik",
+        "s": 55.76,
+        "e": 56.12
+      },
+      {
+        "w": "buyruq",
+        "s": 56.22,
+        "e": 56.5
+      },
+      {
+        "w": "opsiyasiga,",
+        "s": 56.58,
+        "e": 57.06
+      },
+      {
+        "w": "keyin",
+        "s": 57.36,
+        "e": 57.6
+      },
+      {
+        "w": "muhit",
+        "s": 57.64,
+        "e": 57.84
+      },
+      {
+        "w": "o‘zgaruvchisiga",
+        "s": 57.9,
+        "e": 58.5
+      },
+      {
+        "w": "va",
+        "s": 58.84,
+        "e": 58.92
+      },
+      {
+        "w": "eng",
+        "s": 59.06,
+        "e": 59.2
+      },
+      {
+        "w": "oxirida",
+        "s": 59.3,
+        "e": 59.68
+      },
+      {
+        "w": "konfig",
+        "s": 59.8,
+        "e": 60.14
+      },
+      {
+        "w": "fayliga",
+        "s": 60.18,
+        "e": 60.54
+      },
+      {
+        "w": "tegishli",
+        "s": 60.58,
+        "e": 60.9
+      },
+      {
+        "w": "bo‘ladi.",
+        "s": 60.96,
+        "e": 61.22
+      }
+    ]
+  },
+  {
+    "id": "l9",
+    "scene": "ajratuvchi_va_qoshtirnoq",
+    "text": "Ikkita chiziqcha belgisi kommit yoki brenchni fayl nomidan ajratib, nomlar to‘qnashganda adashishning oldini oladi.",
+    "show": "Ikkita chiziqcha belgisi kommit yoki brenchni fayl nomidan ajratib, nomlar to‘qnashganda adashishning oldini oladi.",
+    "say": "Ikkita chiziqcha belgisi kommit yoki brenchni fayl nomidan ajratib, nomlar to‘qnashganda adashishning oldini oladi.",
+    "a0": 62.34,
+    "a1": 68.05,
+    "words": [
+      {
+        "w": "Ikkita",
+        "s": 62.34,
+        "e": 62.54
+      },
+      {
+        "w": "chiziqcha",
+        "s": 62.58,
+        "e": 62.92
+      },
+      {
+        "w": "belgisi",
+        "s": 62.98,
+        "e": 63.36
+      },
+      {
+        "w": "kommit",
+        "s": 63.5,
+        "e": 63.82
+      },
+      {
+        "w": "yoki",
+        "s": 63.84,
+        "e": 64.1
+      },
+      {
+        "w": "brenchni",
+        "s": 64.18,
+        "e": 64.56
+      },
+      {
+        "w": "fayl",
+        "s": 64.62,
+        "e": 64.84
+      },
+      {
+        "w": "nomidan",
+        "s": 64.88,
+        "e": 65.2
+      },
+      {
+        "w": "ajratib,",
+        "s": 65.26,
+        "e": 65.64
+      },
+      {
+        "w": "nomlar",
+        "s": 65.98,
+        "e": 66.28
+      },
+      {
+        "w": "to‘qnashganda",
+        "s": 66.32,
+        "e": 66.84
+      },
+      {
+        "w": "adashishning",
+        "s": 66.94,
+        "e": 67.47
+      },
+      {
+        "w": "oldini",
+        "s": 67.51,
+        "e": 67.77
+      },
+      {
+        "w": "oladi.",
+        "s": 67.81,
+        "e": 68.05
+      }
+    ]
+  },
+  {
+    "id": "l10",
+    "scene": "ajratuvchi_va_qoshtirnoq",
+    "text": "Yulduzcha kabi belgilarni esa har doim qo‘shtirnoqqa olish kerak, aks holda terminal fayllarni Gitga yetmasdan noto‘g‘ri almashtirib qo‘yadi.",
+    "show": "Yulduzcha kabi belgilarni esa har doim qo‘shtirnoqqa olish kerak, aks holda terminal fayllarni Gitga yetmasdan noto‘g‘ri almashtirib qo‘yadi.",
+    "say": "Yulduzcha kabi belgilarni esa har doim qo‘shtirnoqqa olish kerak, aks holda terminal fayllarni Gitga yetmasdan noto‘g‘ri almashtirib qo‘yadi.",
+    "a0": 68.85,
+    "a1": 75.43,
+    "words": [
+      {
+        "w": "Yulduzcha",
+        "s": 68.85,
+        "e": 69.23
+      },
+      {
+        "w": "kabi",
+        "s": 69.27,
+        "e": 69.47
+      },
+      {
+        "w": "belgilarni",
+        "s": 69.53,
+        "e": 69.97
+      },
+      {
+        "w": "esa",
+        "s": 70.01,
+        "e": 70.15
+      },
+      {
+        "w": "har",
+        "s": 70.21,
+        "e": 70.37
+      },
+      {
+        "w": "doim",
+        "s": 70.41,
+        "e": 70.63
+      },
+      {
+        "w": "qo‘shtirnoqqa",
+        "s": 70.69,
+        "e": 71.23
+      },
+      {
+        "w": "olish",
+        "s": 71.27,
+        "e": 71.45
+      },
+      {
+        "w": "kerak,",
+        "s": 71.47,
+        "e": 71.69
+      },
+      {
+        "w": "aks",
+        "s": 71.99,
+        "e": 72.15
+      },
+      {
+        "w": "holda",
+        "s": 72.17,
+        "e": 72.41
+      },
+      {
+        "w": "terminal",
+        "s": 72.47,
+        "e": 72.89
+      },
+      {
+        "w": "fayllarni",
+        "s": 72.93,
+        "e": 73.41
+      },
+      {
+        "w": "Gitga",
+        "s": 73.51,
+        "e": 73.77
+      },
+      {
+        "w": "yetmasdan",
+        "s": 73.83,
+        "e": 74.27
+      },
+      {
+        "w": "noto‘g‘ri",
+        "s": 74.35,
+        "e": 74.73
+      },
+      {
+        "w": "almashtirib",
+        "s": 74.77,
+        "e": 75.13
+      },
+      {
+        "w": "qo‘yadi.",
+        "s": 75.15,
+        "e": 75.43
+      }
+    ]
+  },
+  {
+    "id": "l11",
+    "scene": "xulosa",
+    "text": "Xulosa qilib aytganda, terminal sintaksisini puxta bilish keyingi boblardagi barcha amallarni to‘g‘ri tushunishga poydevor bo‘ladi.",
+    "show": "Xulosa qilib aytganda, terminal sintaksisini puxta bilish keyingi boblardagi barcha amallarni to‘g‘ri tushunishga poydevor bo‘ladi.",
+    "say": "Xulosa qilib aytganda, terminal sintaksisini puxta bilish keyingi boblardagi barcha amallarni to‘g‘ri tushunishga poydevor bo‘ladi.",
+    "a0": 76.39,
+    "a1": 82.4,
+    "words": [
+      {
+        "w": "Xulosa",
+        "s": 76.39,
+        "e": 76.71
+      },
+      {
+        "w": "qilib",
+        "s": 76.73,
+        "e": 76.91
+      },
+      {
+        "w": "aytganda,",
+        "s": 76.93,
+        "e": 77.25
+      },
+      {
+        "w": "terminal",
+        "s": 77.55,
+        "e": 77.93
+      },
+      {
+        "w": "sintaksisini",
+        "s": 77.97,
+        "e": 78.53
+      },
+      {
+        "w": "puxta",
+        "s": 78.57,
+        "e": 78.85
+      },
+      {
+        "w": "bilish",
+        "s": 78.89,
+        "e": 79.13
+      },
+      {
+        "w": "keyingi",
+        "s": 79.23,
+        "e": 79.55
+      },
+      {
+        "w": "boblardagi",
+        "s": 79.61,
+        "e": 80.09
+      },
+      {
+        "w": "barcha",
+        "s": 80.19,
+        "e": 80.47
+      },
+      {
+        "w": "amallarni",
+        "s": 80.49,
+        "e": 80.95
+      },
+      {
+        "w": "to‘g‘ri",
+        "s": 80.99,
+        "e": 81.23
+      },
+      {
+        "w": "tushunishga",
+        "s": 81.25,
+        "e": 81.63
+      },
+      {
+        "w": "poydevor",
+        "s": 81.69,
+        "e": 82.1
+      },
+      {
+        "w": "bo‘ladi.",
+        "s": 82.14,
+        "e": 82.4
+      }
+    ]
+  },
+  {
+    "id": "l12",
+    "scene": "xulosa",
+    "text": "Keyingi bobda Gitni birinchi marta sozlash va yordam tizimini o‘rganamiz. E’tiboringiz uchun rahmat!",
+    "show": "Keyingi bobda Gitni birinchi marta sozlash va yordam tizimini o‘rganamiz. E’tiboringiz uchun rahmat!",
+    "say": "Keyingi bobda Gitni birinchi marta sozlash va yordam tizimini o‘rganamiz. E’tiboringiz uchun rahmat!",
+    "a0": 83.36,
+    "a1": 88.72,
+    "words": [
+      {
+        "w": "Keyingi",
+        "s": 83.36,
+        "e": 83.66
+      },
+      {
+        "w": "bobda",
+        "s": 83.68,
+        "e": 83.94
+      },
+      {
+        "w": "Gitni",
+        "s": 84.04,
+        "e": 84.28
+      },
+      {
+        "w": "birinchi",
+        "s": 84.36,
+        "e": 84.66
+      },
+      {
+        "w": "marta",
+        "s": 84.68,
+        "e": 84.9
+      },
+      {
+        "w": "sozlash",
+        "s": 84.96,
+        "e": 85.32
+      },
+      {
+        "w": "va",
+        "s": 85.56,
+        "e": 85.62
+      },
+      {
+        "w": "yordam",
+        "s": 85.74,
+        "e": 86.04
+      },
+      {
+        "w": "tizimini",
+        "s": 86.08,
+        "e": 86.4
+      },
+      {
+        "w": "o‘rganamiz.",
+        "s": 86.42,
+        "e": 86.82
+      },
+      {
+        "w": "E’tiboringiz",
+        "s": 87.76,
+        "e": 88.24
+      },
+      {
+        "w": "uchun",
+        "s": 88.28,
+        "e": 88.42
+      },
+      {
+        "w": "rahmat!",
+        "s": 88.46,
+        "e": 88.72
+      }
+    ]
+  }
+]
