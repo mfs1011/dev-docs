@@ -1,0 +1,41 @@
+WEBVTT
+
+1
+00:01.420 --> 00:08.070
+Ikki yuz ming qatorli xodimlar jadvalida rol va bo'y
+bo'yicha qidirilganda indeks to'liq ishlatildi.
+
+2
+00:08.420 --> 00:14.840
+Lekin faqat rol sharti berilganda, u jadvalning uchdan
+ikki qismi bo'lgani uchun ketma-ket o'qish tanlandi.
+
+3
+00:17.870 --> 00:23.660
+So'rovda rol ko'rsatilmagan bo'lsa ham, Postgres
+o'n sakkiz beshta qidiruv bilan skip skan qildi.
+
+4
+00:23.890 --> 00:30.710
+Rolning har bir qiymati bo'ylab sakrab, olti yuzta sahifa
+o'rniga yigirma ikkita sahifa bilan natija olindi.
+
+5
+00:33.700 --> 00:39.870
+Teskari yo'nalishdagi saralash indeksni orqaga
+o'qish orqali saralash amalisiz bir zumda bajarildi.
+
+6
+00:40.320 --> 00:46.380
+Aralash yo'nalishda esa maxsus disending indeks
+yaratilgach, qo'shimcha saralash butunlay yo'qoldi.
+
+7
+00:49.470 --> 00:56.060
+Or shartida ikkita alohida indeks skanerlanib,
+ularning natijalari bitmap or orqali birlashtirildi.
+
+8
+00:56.370 --> 01:02.650
+Baza har bir indeksdan mos qatorlar xaritasini olib,
+asosiy jadvalga atigi bir marta murojaat qildi.

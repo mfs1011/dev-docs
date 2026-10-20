@@ -1,0 +1,807 @@
+[
+  {
+    "scene": "kop_ustunli_tuzilma",
+    "id": "l1",
+    "text": "Ko'p ustunli indeks bir nechta ustun qiymatlarini ketma-ket ulab, yagona tartiblangan massiv hosil qiladi.",
+    "show": "Ko'p ustunli indeks bir nechta ustun qiymatlarini ketma-ket ulab, yagona tartiblangan massiv hosil qiladi.",
+    "say": "Ko'p ustunli indeks bir nechta ustun qiymatlarini ketma-ket ulab, yagona tartiblangan massiv hosil qiladi.",
+    "a0": 0.28,
+    "a1": 6.4,
+    "words": [
+      {
+        "w": "Ko'p",
+        "s": 0.28,
+        "e": 0.46
+      },
+      {
+        "w": "ustunli",
+        "s": 0.52,
+        "e": 0.9
+      },
+      {
+        "w": "indeks",
+        "s": 0.98,
+        "e": 1.4
+      },
+      {
+        "w": "bir",
+        "s": 1.68,
+        "e": 1.8
+      },
+      {
+        "w": "nechta",
+        "s": 1.86,
+        "e": 2.14
+      },
+      {
+        "w": "ustun",
+        "s": 2.18,
+        "e": 2.42
+      },
+      {
+        "w": "qiymatlarini",
+        "s": 2.46,
+        "e": 3.04
+      },
+      {
+        "w": "ketma-ket",
+        "s": 3.12,
+        "e": 3.66
+      },
+      {
+        "w": "ulab,",
+        "s": 3.74,
+        "e": 3.98
+      },
+      {
+        "w": "yagona",
+        "s": 4.2,
+        "e": 4.66
+      },
+      {
+        "w": "tartiblangan",
+        "s": 4.72,
+        "e": 5.34
+      },
+      {
+        "w": "massiv",
+        "s": 5.42,
+        "e": 5.78
+      },
+      {
+        "w": "hosil",
+        "s": 5.82,
+        "e": 6.1
+      },
+      {
+        "w": "qiladi.",
+        "s": 6.14,
+        "e": 6.4
+      }
+    ]
+  },
+  {
+    "scene": "kop_ustunli_tuzilma",
+    "id": "l2",
+    "text": "Xuddi telefon kitobidek, familiya bo'yicha qidirish oson, lekin faqat ism bo'yicha butun kitobni varaqlashga to'g'ri keladi.",
+    "show": "Xuddi telefon kitobidek, familiya bo'yicha qidirish oson, lekin faqat ism bo'yicha butun kitobni varaqlashga to'g'ri keladi.",
+    "say": "Xuddi telefon kitobidek, familiya bo'yicha qidirish oson, lekin faqat ism bo'yicha butun kitobni varaqlashga to'g'ri keladi.",
+    "a0": 7.12,
+    "a1": 13.57,
+    "words": [
+      {
+        "w": "Xuddi",
+        "s": 7.12,
+        "e": 7.36
+      },
+      {
+        "w": "telefon",
+        "s": 7.4,
+        "e": 7.73
+      },
+      {
+        "w": "kitobidek,",
+        "s": 7.77,
+        "e": 8.19
+      },
+      {
+        "w": "familiya",
+        "s": 8.55,
+        "e": 9.01
+      },
+      {
+        "w": "bo'yicha",
+        "s": 9.05,
+        "e": 9.31
+      },
+      {
+        "w": "qidirish",
+        "s": 9.37,
+        "e": 9.69
+      },
+      {
+        "w": "oson,",
+        "s": 9.79,
+        "e": 10.15
+      },
+      {
+        "w": "lekin",
+        "s": 10.43,
+        "e": 10.67
+      },
+      {
+        "w": "faqat",
+        "s": 10.73,
+        "e": 11.01
+      },
+      {
+        "w": "ism",
+        "s": 11.17,
+        "e": 11.39
+      },
+      {
+        "w": "bo'yicha",
+        "s": 11.45,
+        "e": 11.77
+      },
+      {
+        "w": "butun",
+        "s": 11.87,
+        "e": 12.15
+      },
+      {
+        "w": "kitobni",
+        "s": 12.19,
+        "e": 12.51
+      },
+      {
+        "w": "varaqlashga",
+        "s": 12.53,
+        "e": 13.01
+      },
+      {
+        "w": "to'g'ri",
+        "s": 13.05,
+        "e": 13.25
+      },
+      {
+        "w": "keladi.",
+        "s": 13.29,
+        "e": 13.57
+      }
+    ]
+  },
+  {
+    "scene": "chap_ustunlar_qoidasi",
+    "id": "l3",
+    "text": "Chap ustunlar qoidasiga ko'ra, indeks faqat chapdan boshlangan ustunlar qidirilgandagina to'liq kuchga kiradi.",
+    "show": "Chap ustunlar qoidasiga ko'ra, indeks faqat chapdan boshlangan ustunlar qidirilgandagina to'liq kuchga kiradi.",
+    "say": "Chap ustunlar qoidasiga ko'ra, indeks faqat chapdan boshlangan ustunlar qidirilgandagina to'liq kuchga kiradi.",
+    "a0": 14.29,
+    "a1": 19.89,
+    "words": [
+      {
+        "w": "Chap",
+        "s": 14.29,
+        "e": 14.49
+      },
+      {
+        "w": "ustunlar",
+        "s": 14.53,
+        "e": 14.93
+      },
+      {
+        "w": "qoidasiga",
+        "s": 14.97,
+        "e": 15.45
+      },
+      {
+        "w": "ko'ra,",
+        "s": 15.49,
+        "e": 15.71
+      },
+      {
+        "w": "indeks",
+        "s": 16.13,
+        "e": 16.51
+      },
+      {
+        "w": "faqat",
+        "s": 16.55,
+        "e": 16.79
+      },
+      {
+        "w": "chapdan",
+        "s": 16.85,
+        "e": 17.21
+      },
+      {
+        "w": "boshlangan",
+        "s": 17.23,
+        "e": 17.69
+      },
+      {
+        "w": "ustunlar",
+        "s": 17.73,
+        "e": 18.13
+      },
+      {
+        "w": "qidirilgandagina",
+        "s": 18.17,
+        "e": 18.97
+      },
+      {
+        "w": "to'liq",
+        "s": 19.07,
+        "e": 19.33
+      },
+      {
+        "w": "kuchga",
+        "s": 19.35,
+        "e": 19.57
+      },
+      {
+        "w": "kiradi.",
+        "s": 19.63,
+        "e": 19.89
+      }
+    ]
+  },
+  {
+    "scene": "chap_ustunlar_qoidasi",
+    "id": "l4",
+    "text": "Oltin qoida: doimo tenglik bilan qidiriladigan ustunlarni chapga, oraliq shartlarini esa ulardan keyinga qo'ying.",
+    "show": "Oltin qoida: doimo tenglik bilan qidiriladigan ustunlarni chapga, oraliq shartlarini esa ulardan keyinga qo'ying.",
+    "say": "Oltin qoida: doimo tenglik bilan qidiriladigan ustunlarni chapga, oraliq shartlarini esa ulardan keyinga qo'ying.",
+    "a0": 20.59,
+    "a1": 26.74,
+    "words": [
+      {
+        "w": "Oltin",
+        "s": 20.59,
+        "e": 20.85
+      },
+      {
+        "w": "qoida:",
+        "s": 20.91,
+        "e": 21.21
+      },
+      {
+        "w": "doimo",
+        "s": 21.75,
+        "e": 22.09
+      },
+      {
+        "w": "tenglik",
+        "s": 22.19,
+        "e": 22.52
+      },
+      {
+        "w": "bilan",
+        "s": 22.56,
+        "e": 22.72
+      },
+      {
+        "w": "qidiriladigan",
+        "s": 22.76,
+        "e": 23.3
+      },
+      {
+        "w": "ustunlarni",
+        "s": 23.34,
+        "e": 23.82
+      },
+      {
+        "w": "chapga,",
+        "s": 23.88,
+        "e": 24.26
+      },
+      {
+        "w": "oraliq",
+        "s": 24.7,
+        "e": 25.0
+      },
+      {
+        "w": "shartlarini",
+        "s": 25.04,
+        "e": 25.48
+      },
+      {
+        "w": "esa",
+        "s": 25.52,
+        "e": 25.66
+      },
+      {
+        "w": "ulardan",
+        "s": 25.72,
+        "e": 26.06
+      },
+      {
+        "w": "keyinga",
+        "s": 26.1,
+        "e": 26.44
+      },
+      {
+        "w": "qo'ying.",
+        "s": 26.5,
+        "e": 26.74
+      }
+    ]
+  },
+  {
+    "scene": "skip_scan_mexanikasi",
+    "id": "l5",
+    "text": "Agar chap ustunda qiymatlar kam bo'lsa, zamonaviy bazalar qiymatdan qiymatga sakrab skip skan amalga oshiradi.",
+    "show": "Agar chap ustunda qiymatlar kam bo'lsa, zamonaviy bazalar qiymatdan qiymatga sakrab skip skan amalga oshiradi.",
+    "say": "Agar chap ustunda qiymatlar kam bo'lsa, zamonaviy bazalar qiymatdan qiymatga sakrab skip sken amalga oshiradi.",
+    "a0": 27.36,
+    "a1": 33.24,
+    "words": [
+      {
+        "w": "Agar",
+        "s": 27.36,
+        "e": 27.62
+      },
+      {
+        "w": "chap",
+        "s": 27.72,
+        "e": 27.92
+      },
+      {
+        "w": "ustunda",
+        "s": 27.96,
+        "e": 28.28
+      },
+      {
+        "w": "qiymatlar",
+        "s": 28.34,
+        "e": 28.74
+      },
+      {
+        "w": "kam",
+        "s": 28.78,
+        "e": 28.94
+      },
+      {
+        "w": "bo'lsa,",
+        "s": 28.98,
+        "e": 29.26
+      },
+      {
+        "w": "zamonaviy",
+        "s": 29.5,
+        "e": 29.96
+      },
+      {
+        "w": "bazalar",
+        "s": 30.04,
+        "e": 30.44
+      },
+      {
+        "w": "qiymatdan",
+        "s": 30.5,
+        "e": 31.0
+      },
+      {
+        "w": "qiymatga",
+        "s": 31.04,
+        "e": 31.42
+      },
+      {
+        "w": "sakrab",
+        "s": 31.48,
+        "e": 31.8
+      },
+      {
+        "w": "skip",
+        "s": 32.04,
+        "e": 32.28
+      },
+      {
+        "w": "sken",
+        "s": 32.32,
+        "e": 32.56
+      },
+      {
+        "w": "amalga",
+        "s": 32.58,
+        "e": 32.86
+      },
+      {
+        "w": "oshiradi.",
+        "s": 32.9,
+        "e": 33.24
+      }
+    ]
+  },
+  {
+    "scene": "skip_scan_mexanikasi",
+    "id": "l6",
+    "text": "Bu mexanizm chap ustun ko'rsatilmagan holatlarda ham o'ngdagi ustun bo'yicha indeksdan foydalanishga imkon beradi.",
+    "show": "Bu mexanizm chap ustun ko'rsatilmagan holatlarda ham o'ngdagi ustun bo'yicha indeksdan foydalanishga imkon beradi.",
+    "say": "Bu mexanizm chap ustun ko'rsatilmagan holatlarda ham o'ngdagi ustun bo'yicha indeksdan foydalanishga imkon beradi.",
+    "a0": 33.82,
+    "a1": 39.79,
+    "words": [
+      {
+        "w": "Bu",
+        "s": 33.82,
+        "e": 33.9
+      },
+      {
+        "w": "mexanizm",
+        "s": 33.98,
+        "e": 34.5
+      },
+      {
+        "w": "chap",
+        "s": 34.8,
+        "e": 34.98
+      },
+      {
+        "w": "ustun",
+        "s": 35.02,
+        "e": 35.24
+      },
+      {
+        "w": "ko'rsatilmagan",
+        "s": 35.28,
+        "e": 35.94
+      },
+      {
+        "w": "holatlarda",
+        "s": 35.98,
+        "e": 36.54
+      },
+      {
+        "w": "ham",
+        "s": 36.58,
+        "e": 36.72
+      },
+      {
+        "w": "o'ngdagi",
+        "s": 36.96,
+        "e": 37.32
+      },
+      {
+        "w": "ustun",
+        "s": 37.38,
+        "e": 37.61
+      },
+      {
+        "w": "bo'yicha",
+        "s": 37.65,
+        "e": 37.91
+      },
+      {
+        "w": "indeksdan",
+        "s": 38.01,
+        "e": 38.49
+      },
+      {
+        "w": "foydalanishga",
+        "s": 38.51,
+        "e": 39.13
+      },
+      {
+        "w": "imkon",
+        "s": 39.19,
+        "e": 39.49
+      },
+      {
+        "w": "beradi.",
+        "s": 39.53,
+        "e": 39.79
+      }
+    ]
+  },
+  {
+    "scene": "order_by_va_descending",
+    "id": "l7",
+    "text": "Indeks tartiblangan bo'lgani sababli, saralash buyrug'i qo'shimcha xotira sarflamasdan bir zumda bajariladi.",
+    "show": "Indeks tartiblangan bo'lgani sababli, saralash buyrug'i qo'shimcha xotira sarflamasdan bir zumda bajariladi.",
+    "say": "Indeks tartiblangan bo'lgani sababli, saralash buyrug'i qo'shimcha xotira sarflamasdan bir zumda bajariladi.",
+    "a0": 40.79,
+    "a1": 45.81,
+    "words": [
+      {
+        "w": "Indeks",
+        "s": 40.79,
+        "e": 41.09
+      },
+      {
+        "w": "tartiblangan",
+        "s": 41.13,
+        "e": 41.67
+      },
+      {
+        "w": "bo'lgani",
+        "s": 41.69,
+        "e": 42.03
+      },
+      {
+        "w": "sababli,",
+        "s": 42.07,
+        "e": 42.49
+      },
+      {
+        "w": "saralash",
+        "s": 42.63,
+        "e": 43.03
+      },
+      {
+        "w": "buyrug'i",
+        "s": 43.07,
+        "e": 43.35
+      },
+      {
+        "w": "qo'shimcha",
+        "s": 43.43,
+        "e": 43.83
+      },
+      {
+        "w": "xotira",
+        "s": 43.89,
+        "e": 44.17
+      },
+      {
+        "w": "sarflamasdan",
+        "s": 44.23,
+        "e": 44.79
+      },
+      {
+        "w": "bir",
+        "s": 44.89,
+        "e": 45.01
+      },
+      {
+        "w": "zumda",
+        "s": 45.07,
+        "e": 45.27
+      },
+      {
+        "w": "bajariladi.",
+        "s": 45.31,
+        "e": 45.81
+      }
+    ]
+  },
+  {
+    "scene": "order_by_va_descending",
+    "id": "l8",
+    "text": "Aralash yo'nalishli saralash uchun esa indeks yaratishda diskending kalit so'zidan foydalanish shart.",
+    "show": "Aralash yo'nalishli saralash uchun esa indeks yaratishda diskending kalit so'zidan foydalanish shart.",
+    "say": "Aralash yo'nalishli saralash uchun esa indeks yaratishda disending kalit so'zidan foydalanish shart.",
+    "a0": 46.67,
+    "a1": 51.79,
+    "words": [
+      {
+        "w": "Aralash",
+        "s": 46.67,
+        "e": 47.05
+      },
+      {
+        "w": "yo'nalishli",
+        "s": 47.09,
+        "e": 47.51
+      },
+      {
+        "w": "saralash",
+        "s": 47.57,
+        "e": 47.95
+      },
+      {
+        "w": "uchun",
+        "s": 47.99,
+        "e": 48.17
+      },
+      {
+        "w": "esa",
+        "s": 48.21,
+        "e": 48.37
+      },
+      {
+        "w": "indeks",
+        "s": 48.73,
+        "e": 49.03
+      },
+      {
+        "w": "yaratishda",
+        "s": 49.05,
+        "e": 49.47
+      },
+      {
+        "w": "disending",
+        "s": 49.69,
+        "e": 50.29
+      },
+      {
+        "w": "kalit",
+        "s": 50.31,
+        "e": 50.59
+      },
+      {
+        "w": "so'zidan",
+        "s": 50.61,
+        "e": 50.93
+      },
+      {
+        "w": "foydalanish",
+        "s": 50.95,
+        "e": 51.49
+      },
+      {
+        "w": "shart.",
+        "s": 51.53,
+        "e": 51.79
+      }
+    ]
+  },
+  {
+    "scene": "or_va_bitmap_birlashtirish",
+    "id": "l9",
+    "text": "Bitta ko'p ustunli indeks or sharti bilan bog'langan ikki ustunni bir vaqtda qidirishga qodir emas.",
+    "show": "Bitta ko'p ustunli indeks or sharti bilan bog'langan ikki ustunni bir vaqtda qidirishga qodir emas.",
+    "say": "Bitta ko'p ustunli indeks or sharti bilan bog'langan ikki ustunni bir vaqtda qidirishga qodir emas.",
+    "a0": 52.52,
+    "a1": 57.66,
+    "words": [
+      {
+        "w": "Bitta",
+        "s": 52.52,
+        "e": 52.78
+      },
+      {
+        "w": "ko'p",
+        "s": 52.84,
+        "e": 53.0
+      },
+      {
+        "w": "ustunli",
+        "s": 53.04,
+        "e": 53.4
+      },
+      {
+        "w": "indeks",
+        "s": 53.5,
+        "e": 53.86
+      },
+      {
+        "w": "or",
+        "s": 54.24,
+        "e": 54.34
+      },
+      {
+        "w": "sharti",
+        "s": 54.4,
+        "e": 54.68
+      },
+      {
+        "w": "bilan",
+        "s": 54.7,
+        "e": 54.88
+      },
+      {
+        "w": "bog'langan",
+        "s": 54.9,
+        "e": 55.38
+      },
+      {
+        "w": "ikki",
+        "s": 55.52,
+        "e": 55.74
+      },
+      {
+        "w": "ustunni",
+        "s": 55.8,
+        "e": 56.16
+      },
+      {
+        "w": "bir",
+        "s": 56.24,
+        "e": 56.34
+      },
+      {
+        "w": "vaqtda",
+        "s": 56.38,
+        "e": 56.66
+      },
+      {
+        "w": "qidirishga",
+        "s": 56.7,
+        "e": 57.08
+      },
+      {
+        "w": "qodir",
+        "s": 57.14,
+        "e": 57.38
+      },
+      {
+        "w": "emas.",
+        "s": 57.44,
+        "e": 57.66
+      }
+    ]
+  },
+  {
+    "scene": "or_va_bitmap_birlashtirish",
+    "id": "l10",
+    "text": "Bunday vaziyatda baza alohida indekslar bit xaritalarini xotirada birlashtirib eng optimal natijani hosil qiladi.",
+    "show": "Bunday vaziyatda baza alohida indekslar bit xaritalarini xotirada birlashtirib eng optimal natijani hosil qiladi.",
+    "say": "Bunday vaziyatda baza alohida indekslar bit xaritalarini xotirada birlashtirib eng optimal natijani hosil qiladi.",
+    "a0": 58.3,
+    "a1": 64.52,
+    "words": [
+      {
+        "w": "Bunday",
+        "s": 58.3,
+        "e": 58.54
+      },
+      {
+        "w": "vaziyatda",
+        "s": 58.58,
+        "e": 59.04
+      },
+      {
+        "w": "baza",
+        "s": 59.36,
+        "e": 59.6
+      },
+      {
+        "w": "alohida",
+        "s": 59.74,
+        "e": 60.1
+      },
+      {
+        "w": "indekslar",
+        "s": 60.14,
+        "e": 60.62
+      },
+      {
+        "w": "bit",
+        "s": 60.7,
+        "e": 60.84
+      },
+      {
+        "w": "xaritalarini",
+        "s": 60.88,
+        "e": 61.47
+      },
+      {
+        "w": "xotirada",
+        "s": 61.53,
+        "e": 61.91
+      },
+      {
+        "w": "birlashtirib",
+        "s": 61.95,
+        "e": 62.43
+      },
+      {
+        "w": "eng",
+        "s": 62.77,
+        "e": 62.91
+      },
+      {
+        "w": "optimal",
+        "s": 63.03,
+        "e": 63.43
+      },
+      {
+        "w": "natijani",
+        "s": 63.45,
+        "e": 63.88
+      },
+      {
+        "w": "hosil",
+        "s": 63.94,
+        "e": 64.2
+      },
+      {
+        "w": "qiladi.",
+        "s": 64.24,
+        "e": 64.52
+      }
+    ]
+  }
+]

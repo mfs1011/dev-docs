@@ -1,0 +1,635 @@
+[
+  {
+    "scene": "mysql_skip_scan_va_saralash",
+    "id": "l1",
+    "text": "May es-kyu-elda skip skan faqat so'rovdagi barcha ustunlar indeks ichida mavjud bo'lgandagina ishlaydi.",
+    "show": "May es-kyu-elda skip skan faqat so'rovdagi barcha ustunlar indeks ichida mavjud bo'lgandagina ishlaydi.",
+    "say": "May es-kyu-elda skip sken faqat so'rovdagi barcha ustunlar indeks ichida mavjud bo'lgandagina ishlaydi.",
+    "a0": 0.28,
+    "a1": 5.7,
+    "words": [
+      {
+        "w": "May",
+        "s": 0.28,
+        "e": 0.46
+      },
+      {
+        "w": "es-kyu-elda",
+        "s": 0.54,
+        "e": 1.02
+      },
+      {
+        "w": "skip",
+        "s": 1.14,
+        "e": 1.36
+      },
+      {
+        "w": "sken",
+        "s": 1.42,
+        "e": 1.64
+      },
+      {
+        "w": "faqat",
+        "s": 1.94,
+        "e": 2.2
+      },
+      {
+        "w": "so'rovdagi",
+        "s": 2.24,
+        "e": 2.68
+      },
+      {
+        "w": "barcha",
+        "s": 2.76,
+        "e": 3.06
+      },
+      {
+        "w": "ustunlar",
+        "s": 3.14,
+        "e": 3.56
+      },
+      {
+        "w": "indeks",
+        "s": 3.72,
+        "e": 4.06
+      },
+      {
+        "w": "ichida",
+        "s": 4.12,
+        "e": 4.34
+      },
+      {
+        "w": "mavjud",
+        "s": 4.4,
+        "e": 4.7
+      },
+      {
+        "w": "bo'lgandagina",
+        "s": 4.74,
+        "e": 5.32
+      },
+      {
+        "w": "ishlaydi.",
+        "s": 5.36,
+        "e": 5.7
+      }
+    ]
+  },
+  {
+    "scene": "mysql_skip_scan_va_saralash",
+    "id": "l2",
+    "text": "Aralash saralashda esa mos indeks bo'lmasa, May es-kyu-el butun jadvalni to'liq skanerlashga majbur bo'ladi.",
+    "show": "Aralash saralashda esa mos indeks bo'lmasa, May es-kyu-el butun jadvalni to'liq skanerlashga majbur bo'ladi.",
+    "say": "Aralash saralashda esa mos indeks bo'lmasa, May es-kyu-el butun jadvalni to'liq skanerlashga majbur bo'ladi.",
+    "a0": 6.54,
+    "a1": 12.31,
+    "words": [
+      {
+        "w": "Aralash",
+        "s": 6.54,
+        "e": 6.88
+      },
+      {
+        "w": "saralashda",
+        "s": 6.9,
+        "e": 7.32
+      },
+      {
+        "w": "esa",
+        "s": 7.4,
+        "e": 7.57
+      },
+      {
+        "w": "mos",
+        "s": 7.99,
+        "e": 8.21
+      },
+      {
+        "w": "indeks",
+        "s": 8.33,
+        "e": 8.63
+      },
+      {
+        "w": "bo'lmasa,",
+        "s": 8.69,
+        "e": 9.07
+      },
+      {
+        "w": "May",
+        "s": 9.21,
+        "e": 9.35
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 9.43,
+        "e": 9.79
+      },
+      {
+        "w": "butun",
+        "s": 9.93,
+        "e": 10.19
+      },
+      {
+        "w": "jadvalni",
+        "s": 10.25,
+        "e": 10.67
+      },
+      {
+        "w": "to'liq",
+        "s": 10.75,
+        "e": 11.01
+      },
+      {
+        "w": "skanerlashga",
+        "s": 11.09,
+        "e": 11.65
+      },
+      {
+        "w": "majbur",
+        "s": 11.69,
+        "e": 11.99
+      },
+      {
+        "w": "bo'ladi.",
+        "s": 12.03,
+        "e": 12.31
+      }
+    ]
+  },
+  {
+    "scene": "sqlite_analiz_va_any_qoidasi",
+    "id": "l3",
+    "text": "Es-kyu-laytda skip skan faqat analayz buyrug'idan keyin va takrorlar soni yetarli bo'lganda yoqiladi.",
+    "show": "Es-kyu-laytda skip skan faqat analayz buyrug'idan keyin va takrorlar soni yetarli bo'lganda yoqiladi.",
+    "say": "Es-kyu-laytda skip sken faqat analayz buyrug'idan keyin va takrorlar soni yetarli bo'lganda yoqiladi.",
+    "a0": 13.13,
+    "a1": 18.43,
+    "words": [
+      {
+        "w": "Es-kyu-laytda",
+        "s": 13.13,
+        "e": 13.79
+      },
+      {
+        "w": "skip",
+        "s": 13.93,
+        "e": 14.13
+      },
+      {
+        "w": "sken",
+        "s": 14.17,
+        "e": 14.37
+      },
+      {
+        "w": "faqat",
+        "s": 14.43,
+        "e": 14.67
+      },
+      {
+        "w": "analayz",
+        "s": 14.87,
+        "e": 15.27
+      },
+      {
+        "w": "buyrug'idan",
+        "s": 15.31,
+        "e": 15.73
+      },
+      {
+        "w": "keyin",
+        "s": 15.79,
+        "e": 16.05
+      },
+      {
+        "w": "va",
+        "s": 16.11,
+        "e": 16.19
+      },
+      {
+        "w": "takrorlar",
+        "s": 16.37,
+        "e": 16.85
+      },
+      {
+        "w": "soni",
+        "s": 16.89,
+        "e": 17.09
+      },
+      {
+        "w": "yetarli",
+        "s": 17.21,
+        "e": 17.59
+      },
+      {
+        "w": "bo'lganda",
+        "s": 17.65,
+        "e": 18.01
+      },
+      {
+        "w": "yoqiladi.",
+        "s": 18.05,
+        "e": 18.43
+      }
+    ]
+  },
+  {
+    "scene": "sqlite_analiz_va_any_qoidasi",
+    "id": "l4",
+    "text": "Statistikasiz u butun indeksni o'qiydi, analayzdan so'ng esa eni kaliti bilan haqiqiy sakrashni boshlaydi.",
+    "show": "Statistikasiz u butun indeksni o'qiydi, analayzdan so'ng esa eni kaliti bilan haqiqiy sakrashni boshlaydi.",
+    "say": "Statistikasiz u butun indeksni o'qiydi, analayzdan so'ng esa eni kaliti bilan haqiqiy sakrashni boshlaydi.",
+    "a0": 19.07,
+    "a1": 25.38,
+    "words": [
+      {
+        "w": "Statistikasiz",
+        "s": 19.07,
+        "e": 19.75
+      },
+      {
+        "w": "u",
+        "s": 19.89,
+        "e": 19.91
+      },
+      {
+        "w": "butun",
+        "s": 20.05,
+        "e": 20.29
+      },
+      {
+        "w": "indeksni",
+        "s": 20.39,
+        "e": 20.79
+      },
+      {
+        "w": "o'qiydi,",
+        "s": 20.83,
+        "e": 21.13
+      },
+      {
+        "w": "analayzdan",
+        "s": 21.63,
+        "e": 22.13
+      },
+      {
+        "w": "so'ng",
+        "s": 22.19,
+        "e": 22.37
+      },
+      {
+        "w": "esa",
+        "s": 22.43,
+        "e": 22.6
+      },
+      {
+        "w": "eni",
+        "s": 23.08,
+        "e": 23.26
+      },
+      {
+        "w": "kaliti",
+        "s": 23.36,
+        "e": 23.66
+      },
+      {
+        "w": "bilan",
+        "s": 23.68,
+        "e": 23.86
+      },
+      {
+        "w": "haqiqiy",
+        "s": 24.0,
+        "e": 24.46
+      },
+      {
+        "w": "sakrashni",
+        "s": 24.52,
+        "e": 24.94
+      },
+      {
+        "w": "boshlaydi.",
+        "s": 24.96,
+        "e": 25.38
+      }
+    ]
+  },
+  {
+    "scene": "multi_index_va_index_merge",
+    "id": "l5",
+    "text": "Or shartida May es-kyu-el indekslarni birlashtirib rou-ay-di bo'yicha saralash va dublikatni tozalashni qo'llaydi.",
+    "show": "Or shartida May es-kyu-el indekslarni birlashtirib rou-ay-di bo'yicha saralash va dublikatni tozalashni qo'llaydi.",
+    "say": "Or shartida May es-kyu-el indekslarni birlashtirib rou-ay-di bo'yicha saralash va dublikatni tozalashni qo'llaydi.",
+    "a0": 26.4,
+    "a1": 32.08,
+    "words": [
+      {
+        "w": "Or",
+        "s": 26.4,
+        "e": 26.54
+      },
+      {
+        "w": "shartida",
+        "s": 26.6,
+        "e": 26.96
+      },
+      {
+        "w": "May",
+        "s": 27.18,
+        "e": 27.34
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 27.44,
+        "e": 27.8
+      },
+      {
+        "w": "indekslarni",
+        "s": 27.92,
+        "e": 28.46
+      },
+      {
+        "w": "birlashtirib",
+        "s": 28.5,
+        "e": 28.96
+      },
+      {
+        "w": "rou-ay-di",
+        "s": 29.18,
+        "e": 29.6
+      },
+      {
+        "w": "bo'yicha",
+        "s": 29.68,
+        "e": 29.96
+      },
+      {
+        "w": "saralash",
+        "s": 30.04,
+        "e": 30.42
+      },
+      {
+        "w": "va",
+        "s": 30.48,
+        "e": 30.54
+      },
+      {
+        "w": "dublikatni",
+        "s": 30.68,
+        "e": 31.16
+      },
+      {
+        "w": "tozalashni",
+        "s": 31.22,
+        "e": 31.64
+      },
+      {
+        "w": "qo'llaydi.",
+        "s": 31.68,
+        "e": 32.08
+      }
+    ]
+  },
+  {
+    "scene": "multi_index_va_index_merge",
+    "id": "l6",
+    "text": "Es-kyu-layt esa multi-indeks or mexanizmi orqali har bir shartni o'z indeksi bilan alohida qidiradi.",
+    "show": "Es-kyu-layt esa multi-indeks or mexanizmi orqali har bir shartni o'z indeksi bilan alohida qidiradi.",
+    "say": "Es-kyu-layt esa multi-indeks or mexanizmi orqali har bir shartni o'z indeksi bilan alohida qidiradi.",
+    "a0": 32.8,
+    "a1": 38.65,
+    "words": [
+      {
+        "w": "Es-kyu-layt",
+        "s": 32.8,
+        "e": 33.32
+      },
+      {
+        "w": "esa",
+        "s": 33.38,
+        "e": 33.54
+      },
+      {
+        "w": "multi-indeks",
+        "s": 33.72,
+        "e": 34.46
+      },
+      {
+        "w": "or",
+        "s": 34.6,
+        "e": 34.72
+      },
+      {
+        "w": "mexanizmi",
+        "s": 34.78,
+        "e": 35.24
+      },
+      {
+        "w": "orqali",
+        "s": 35.28,
+        "e": 35.59
+      },
+      {
+        "w": "har",
+        "s": 35.97,
+        "e": 36.17
+      },
+      {
+        "w": "bir",
+        "s": 36.23,
+        "e": 36.35
+      },
+      {
+        "w": "shartni",
+        "s": 36.39,
+        "e": 36.71
+      },
+      {
+        "w": "o'z",
+        "s": 36.91,
+        "e": 37.05
+      },
+      {
+        "w": "indeksi",
+        "s": 37.19,
+        "e": 37.55
+      },
+      {
+        "w": "bilan",
+        "s": 37.59,
+        "e": 37.77
+      },
+      {
+        "w": "alohida",
+        "s": 37.93,
+        "e": 38.29
+      },
+      {
+        "w": "qidiradi.",
+        "s": 38.33,
+        "e": 38.65
+      }
+    ]
+  },
+  {
+    "scene": "dialektlar_jadvali_va_xatolar",
+    "id": "l7",
+    "text": "Ko'p ustunli indeks bor joyda alohida chap ustun indeksini saqlash xotira va yozishni isrof qilishdir.",
+    "show": "Ko'p ustunli indeks bor joyda alohida chap ustun indeksini saqlash xotira va yozishni isrof qilishdir.",
+    "say": "Ko'p ustunli indeks bor joyda alohida chap ustun indeksini saqlash xotira va yozishni isrof qilishdir.",
+    "a0": 39.51,
+    "a1": 45.21,
+    "words": [
+      {
+        "w": "Ko'p",
+        "s": 39.51,
+        "e": 39.71
+      },
+      {
+        "w": "ustunli",
+        "s": 39.77,
+        "e": 40.11
+      },
+      {
+        "w": "indeks",
+        "s": 40.21,
+        "e": 40.51
+      },
+      {
+        "w": "bor",
+        "s": 40.57,
+        "e": 40.71
+      },
+      {
+        "w": "joyda",
+        "s": 40.75,
+        "e": 41.01
+      },
+      {
+        "w": "alohida",
+        "s": 41.35,
+        "e": 41.73
+      },
+      {
+        "w": "chap",
+        "s": 41.81,
+        "e": 41.99
+      },
+      {
+        "w": "ustun",
+        "s": 42.07,
+        "e": 42.29
+      },
+      {
+        "w": "indeksini",
+        "s": 42.35,
+        "e": 42.77
+      },
+      {
+        "w": "saqlash",
+        "s": 42.81,
+        "e": 43.19
+      },
+      {
+        "w": "xotira",
+        "s": 43.31,
+        "e": 43.73
+      },
+      {
+        "w": "va",
+        "s": 43.81,
+        "e": 43.89
+      },
+      {
+        "w": "yozishni",
+        "s": 43.89,
+        "e": 44.47
+      },
+      {
+        "w": "isrof",
+        "s": 44.53,
+        "e": 44.83
+      },
+      {
+        "w": "qilishdir.",
+        "s": 44.87,
+        "e": 45.21
+      }
+    ]
+  },
+  {
+    "scene": "dialektlar_jadvali_va_xatolar",
+    "id": "l8",
+    "text": "Doimo tenglik ustunlarini chapga qo'ying va har bir reja samaradorligini o'lchovlar bilan tekshiring.",
+    "show": "Doimo tenglik ustunlarini chapga qo'ying va har bir reja samaradorligini o'lchovlar bilan tekshiring.",
+    "say": "Doimo tenglik ustunlarini chapga qo'ying va har bir reja samaradorligini o'lchovlar bilan tekshiring.",
+    "a0": 45.97,
+    "a1": 51.3,
+    "words": [
+      {
+        "w": "Doimo",
+        "s": 45.97,
+        "e": 46.38
+      },
+      {
+        "w": "tenglik",
+        "s": 46.54,
+        "e": 46.88
+      },
+      {
+        "w": "ustunlarini",
+        "s": 46.94,
+        "e": 47.42
+      },
+      {
+        "w": "chapga",
+        "s": 47.5,
+        "e": 47.78
+      },
+      {
+        "w": "qo'ying",
+        "s": 47.82,
+        "e": 48.1
+      },
+      {
+        "w": "va",
+        "s": 48.14,
+        "e": 48.22
+      },
+      {
+        "w": "har",
+        "s": 48.62,
+        "e": 48.82
+      },
+      {
+        "w": "bir",
+        "s": 48.88,
+        "e": 48.98
+      },
+      {
+        "w": "reja",
+        "s": 49.02,
+        "e": 49.24
+      },
+      {
+        "w": "samaradorligini",
+        "s": 49.32,
+        "e": 50.04
+      },
+      {
+        "w": "o'lchovlar",
+        "s": 50.22,
+        "e": 50.7
+      },
+      {
+        "w": "bilan",
+        "s": 50.74,
+        "e": 50.9
+      },
+      {
+        "w": "tekshiring.",
+        "s": 50.92,
+        "e": 51.3
+      }
+    ]
+  }
+]

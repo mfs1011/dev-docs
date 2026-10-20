@@ -1,0 +1,635 @@
+[
+  {
+    "scene": "chap_ustun_amaliyoti",
+    "id": "l1",
+    "text": "Ikki yuz ming qatorli xodimlar jadvalida rol va bo'y bo'yicha qidirilganda indeks to'liq ishlatildi.",
+    "show": "Ikki yuz ming qatorli xodimlar jadvalida rol va bo'y bo'yicha qidirilganda indeks to'liq ishlatildi.",
+    "say": "Ikki yuz ming qatorli xodimlar jadvalida rol va bo'y bo'yicha qidirilganda indeks to'liq ishlatildi.",
+    "a0": 0.34,
+    "a1": 6.54,
+    "words": [
+      {
+        "w": "Ikki",
+        "s": 0.34,
+        "e": 0.56
+      },
+      {
+        "w": "yuz",
+        "s": 0.62,
+        "e": 0.74
+      },
+      {
+        "w": "ming",
+        "s": 0.78,
+        "e": 0.94
+      },
+      {
+        "w": "qatorli",
+        "s": 0.96,
+        "e": 1.36
+      },
+      {
+        "w": "xodimlar",
+        "s": 1.46,
+        "e": 1.9
+      },
+      {
+        "w": "jadvalida",
+        "s": 1.96,
+        "e": 2.48
+      },
+      {
+        "w": "rol",
+        "s": 2.9,
+        "e": 3.16
+      },
+      {
+        "w": "va",
+        "s": 3.26,
+        "e": 3.34
+      },
+      {
+        "w": "bo'y",
+        "s": 3.5,
+        "e": 3.7
+      },
+      {
+        "w": "bo'yicha",
+        "s": 3.78,
+        "e": 4.04
+      },
+      {
+        "w": "qidirilganda",
+        "s": 4.1,
+        "e": 4.68
+      },
+      {
+        "w": "indeks",
+        "s": 5.12,
+        "e": 5.56
+      },
+      {
+        "w": "to'liq",
+        "s": 5.66,
+        "e": 5.98
+      },
+      {
+        "w": "ishlatildi.",
+        "s": 6.04,
+        "e": 6.54
+      }
+    ]
+  },
+  {
+    "scene": "chap_ustun_amaliyoti",
+    "id": "l2",
+    "text": "Lekin faqat rol sharti berilganda, u jadvalning uchdan ikki qismi bo'lgani uchun ketma-ket o'qish tanlandi.",
+    "show": "Lekin faqat rol sharti berilganda, u jadvalning uchdan ikki qismi bo'lgani uchun ketma-ket o'qish tanlandi.",
+    "say": "Lekin faqat rol sharti berilganda, u jadvalning uchdan ikki qismi bo'lgani uchun ketma-ket o'qish tanlandi.",
+    "a0": 7.34,
+    "a1": 13.31,
+    "words": [
+      {
+        "w": "Lekin",
+        "s": 7.34,
+        "e": 7.59
+      },
+      {
+        "w": "faqat",
+        "s": 7.63,
+        "e": 7.87
+      },
+      {
+        "w": "rol",
+        "s": 8.19,
+        "e": 8.37
+      },
+      {
+        "w": "sharti",
+        "s": 8.43,
+        "e": 8.69
+      },
+      {
+        "w": "berilganda,",
+        "s": 8.73,
+        "e": 9.25
+      },
+      {
+        "w": "u",
+        "s": 9.65,
+        "e": 9.67
+      },
+      {
+        "w": "jadvalning",
+        "s": 9.81,
+        "e": 10.31
+      },
+      {
+        "w": "uchdan",
+        "s": 10.39,
+        "e": 10.67
+      },
+      {
+        "w": "ikki",
+        "s": 10.79,
+        "e": 10.97
+      },
+      {
+        "w": "qismi",
+        "s": 11.01,
+        "e": 11.25
+      },
+      {
+        "w": "bo'lgani",
+        "s": 11.29,
+        "e": 11.63
+      },
+      {
+        "w": "uchun",
+        "s": 11.67,
+        "e": 11.87
+      },
+      {
+        "w": "ketma-ket",
+        "s": 12.09,
+        "e": 12.57
+      },
+      {
+        "w": "o'qish",
+        "s": 12.65,
+        "e": 12.87
+      },
+      {
+        "w": "tanlandi.",
+        "s": 12.89,
+        "e": 13.31
+      }
+    ]
+  },
+  {
+    "scene": "skip_scan_tajribasi",
+    "id": "l3",
+    "text": "So'rovda rol ko'rsatilmagan bo'lsa ham, Postgres o'n sakkiz beshta qidiruv bilan skip skan qildi.",
+    "show": "So'rovda rol ko'rsatilmagan bo'lsa ham, Postgres o'n sakkiz beshta qidiruv bilan skip skan qildi.",
+    "say": "So'rovda rol ko'rsatilmagan bo'lsa ham, Postgres o'n sakkiz beshta qidiruv bilan skip sken qildi.",
+    "a0": 14.19,
+    "a1": 19.53,
+    "words": [
+      {
+        "w": "So'rovda",
+        "s": 14.19,
+        "e": 14.57
+      },
+      {
+        "w": "rol",
+        "s": 14.65,
+        "e": 14.81
+      },
+      {
+        "w": "ko'rsatilmagan",
+        "s": 14.87,
+        "e": 15.49
+      },
+      {
+        "w": "bo'lsa",
+        "s": 15.53,
+        "e": 15.77
+      },
+      {
+        "w": "ham,",
+        "s": 15.81,
+        "e": 15.95
+      },
+      {
+        "w": "Postgres",
+        "s": 16.25,
+        "e": 16.75
+      },
+      {
+        "w": "o'n",
+        "s": 16.89,
+        "e": 16.97
+      },
+      {
+        "w": "sakkiz",
+        "s": 17.01,
+        "e": 17.33
+      },
+      {
+        "w": "beshta",
+        "s": 17.49,
+        "e": 17.77
+      },
+      {
+        "w": "qidiruv",
+        "s": 17.85,
+        "e": 18.15
+      },
+      {
+        "w": "bilan",
+        "s": 18.17,
+        "e": 18.35
+      },
+      {
+        "w": "skip",
+        "s": 18.67,
+        "e": 18.93
+      },
+      {
+        "w": "sken",
+        "s": 18.99,
+        "e": 19.25
+      },
+      {
+        "w": "qildi.",
+        "s": 19.31,
+        "e": 19.53
+      }
+    ]
+  },
+  {
+    "scene": "skip_scan_tajribasi",
+    "id": "l4",
+    "text": "Rolning har bir qiymati bo'ylab sakrab, olti yuzta sahifa o'rniga yigirma ikkita sahifa bilan natija olindi.",
+    "show": "Rolning har bir qiymati bo'ylab sakrab, olti yuzta sahifa o'rniga yigirma ikkita sahifa bilan natija olindi.",
+    "say": "Rolning har bir qiymati bo'ylab sakrab, olti yuzta sahifa o'rniga yigirma ikkita sahifa bilan natija olindi.",
+    "a0": 20.21,
+    "a1": 26.58,
+    "words": [
+      {
+        "w": "Rolning",
+        "s": 20.21,
+        "e": 20.55
+      },
+      {
+        "w": "har",
+        "s": 20.67,
+        "e": 20.87
+      },
+      {
+        "w": "bir",
+        "s": 20.93,
+        "e": 21.03
+      },
+      {
+        "w": "qiymati",
+        "s": 21.09,
+        "e": 21.43
+      },
+      {
+        "w": "bo'ylab",
+        "s": 21.47,
+        "e": 21.75
+      },
+      {
+        "w": "sakrab,",
+        "s": 21.77,
+        "e": 22.09
+      },
+      {
+        "w": "olti",
+        "s": 22.49,
+        "e": 22.76
+      },
+      {
+        "w": "yuzta",
+        "s": 22.8,
+        "e": 23.04
+      },
+      {
+        "w": "sahifa",
+        "s": 23.1,
+        "e": 23.46
+      },
+      {
+        "w": "o'rniga",
+        "s": 23.54,
+        "e": 23.88
+      },
+      {
+        "w": "yigirma",
+        "s": 24.26,
+        "e": 24.62
+      },
+      {
+        "w": "ikkita",
+        "s": 24.72,
+        "e": 24.94
+      },
+      {
+        "w": "sahifa",
+        "s": 25.0,
+        "e": 25.38
+      },
+      {
+        "w": "bilan",
+        "s": 25.42,
+        "e": 25.62
+      },
+      {
+        "w": "natija",
+        "s": 25.86,
+        "e": 26.2
+      },
+      {
+        "w": "olindi.",
+        "s": 26.26,
+        "e": 26.58
+      }
+    ]
+  },
+  {
+    "scene": "order_by_va_descending_indeks",
+    "id": "l5",
+    "text": "Teskari yo'nalishdagi saralash indeksni orqaga o'qish orqali saralash amalisiz bir zumda bajarildi.",
+    "show": "Teskari yo'nalishdagi saralash indeksni orqaga o'qish orqali saralash amalisiz bir zumda bajarildi.",
+    "say": "Teskari yo'nalishdagi saralash indeksni orqaga o'qish orqali saralash amalisiz bir zumda bajarildi.",
+    "a0": 27.42,
+    "a1": 33.14,
+    "words": [
+      {
+        "w": "Teskari",
+        "s": 27.42,
+        "e": 27.8
+      },
+      {
+        "w": "yo'nalishdagi",
+        "s": 27.82,
+        "e": 28.34
+      },
+      {
+        "w": "saralash",
+        "s": 28.38,
+        "e": 28.82
+      },
+      {
+        "w": "indeksni",
+        "s": 28.92,
+        "e": 29.34
+      },
+      {
+        "w": "orqaga",
+        "s": 29.74,
+        "e": 30.1
+      },
+      {
+        "w": "o'qish",
+        "s": 30.16,
+        "e": 30.38
+      },
+      {
+        "w": "orqali",
+        "s": 30.44,
+        "e": 30.74
+      },
+      {
+        "w": "saralash",
+        "s": 31.1,
+        "e": 31.5
+      },
+      {
+        "w": "amalisiz",
+        "s": 31.6,
+        "e": 32.04
+      },
+      {
+        "w": "bir",
+        "s": 32.28,
+        "e": 32.4
+      },
+      {
+        "w": "zumda",
+        "s": 32.44,
+        "e": 32.66
+      },
+      {
+        "w": "bajarildi.",
+        "s": 32.7,
+        "e": 33.14
+      }
+    ]
+  },
+  {
+    "scene": "order_by_va_descending_indeks",
+    "id": "l6",
+    "text": "Aralash yo'nalishda esa maxsus disending indeks yaratilgach, qo'shimcha saralash butunlay yo'qoldi.",
+    "show": "Aralash yo'nalishda esa maxsus disending indeks yaratilgach, qo'shimcha saralash butunlay yo'qoldi.",
+    "say": "Aralash yo'nalishda esa maxsus disending indeks yaratilgach, qo'shimcha saralash butunlay yo'qoldi.",
+    "a0": 34.04,
+    "a1": 39.65,
+    "words": [
+      {
+        "w": "Aralash",
+        "s": 34.04,
+        "e": 34.4
+      },
+      {
+        "w": "yo'nalishda",
+        "s": 34.44,
+        "e": 34.88
+      },
+      {
+        "w": "esa",
+        "s": 34.94,
+        "e": 35.08
+      },
+      {
+        "w": "maxsus",
+        "s": 35.42,
+        "e": 35.8
+      },
+      {
+        "w": "disending",
+        "s": 35.91,
+        "e": 36.47
+      },
+      {
+        "w": "indeks",
+        "s": 36.57,
+        "e": 36.87
+      },
+      {
+        "w": "yaratilgach,",
+        "s": 36.93,
+        "e": 37.47
+      },
+      {
+        "w": "qo'shimcha",
+        "s": 37.73,
+        "e": 38.15
+      },
+      {
+        "w": "saralash",
+        "s": 38.21,
+        "e": 38.59
+      },
+      {
+        "w": "butunlay",
+        "s": 38.73,
+        "e": 39.19
+      },
+      {
+        "w": "yo'qoldi.",
+        "s": 39.23,
+        "e": 39.65
+      }
+    ]
+  },
+  {
+    "scene": "bitmap_or_birlashtirish",
+    "id": "l7",
+    "text": "Or shartida ikkita alohida indeks skanerlanib, ularning natijalari bitmap or orqali birlashtirildi.",
+    "show": "Or shartida ikkita alohida indeks skanerlanib, ularning natijalari bitmap or orqali birlashtirildi.",
+    "say": "Or shartida ikkita alohida indeks skanerlanib, ularning natijalari bitmap or orqali birlashtirildi.",
+    "a0": 40.59,
+    "a1": 46.73,
+    "words": [
+      {
+        "w": "Or",
+        "s": 40.59,
+        "e": 40.75
+      },
+      {
+        "w": "shartida",
+        "s": 40.83,
+        "e": 41.21
+      },
+      {
+        "w": "ikkita",
+        "s": 41.61,
+        "e": 41.87
+      },
+      {
+        "w": "alohida",
+        "s": 41.99,
+        "e": 42.35
+      },
+      {
+        "w": "indeks",
+        "s": 42.45,
+        "e": 42.77
+      },
+      {
+        "w": "skanerlanib,",
+        "s": 42.83,
+        "e": 43.47
+      },
+      {
+        "w": "ularning",
+        "s": 43.75,
+        "e": 44.09
+      },
+      {
+        "w": "natijalari",
+        "s": 44.13,
+        "e": 44.67
+      },
+      {
+        "w": "bitmap",
+        "s": 44.97,
+        "e": 45.35
+      },
+      {
+        "w": "or",
+        "s": 45.55,
+        "e": 45.69
+      },
+      {
+        "w": "orqali",
+        "s": 45.81,
+        "e": 46.09
+      },
+      {
+        "w": "birlashtirildi.",
+        "s": 46.15,
+        "e": 46.73
+      }
+    ]
+  },
+  {
+    "scene": "bitmap_or_birlashtirish",
+    "id": "l8",
+    "text": "Baza har bir indeksdan mos qatorlar xaritasini olib, asosiy jadvalga atigi bir marta murojaat qildi.",
+    "show": "Baza har bir indeksdan mos qatorlar xaritasini olib, asosiy jadvalga atigi bir marta murojaat qildi.",
+    "say": "Baza har bir indeksdan mos qatorlar xaritasini olib, asosiy jadvalga atigi bir marta murojaat qildi.",
+    "a0": 47.49,
+    "a1": 53.32,
+    "words": [
+      {
+        "w": "Baza",
+        "s": 47.49,
+        "e": 47.78
+      },
+      {
+        "w": "har",
+        "s": 48.14,
+        "e": 48.34
+      },
+      {
+        "w": "bir",
+        "s": 48.38,
+        "e": 48.48
+      },
+      {
+        "w": "indeksdan",
+        "s": 48.6,
+        "e": 49.08
+      },
+      {
+        "w": "mos",
+        "s": 49.16,
+        "e": 49.34
+      },
+      {
+        "w": "qatorlar",
+        "s": 49.38,
+        "e": 49.8
+      },
+      {
+        "w": "xaritasini",
+        "s": 49.84,
+        "e": 50.32
+      },
+      {
+        "w": "olib,",
+        "s": 50.38,
+        "e": 50.56
+      },
+      {
+        "w": "asosiy",
+        "s": 50.86,
+        "e": 51.22
+      },
+      {
+        "w": "jadvalga",
+        "s": 51.26,
+        "e": 51.66
+      },
+      {
+        "w": "atigi",
+        "s": 51.76,
+        "e": 52.0
+      },
+      {
+        "w": "bir",
+        "s": 52.2,
+        "e": 52.32
+      },
+      {
+        "w": "marta",
+        "s": 52.36,
+        "e": 52.6
+      },
+      {
+        "w": "murojaat",
+        "s": 52.64,
+        "e": 53.06
+      },
+      {
+        "w": "qildi.",
+        "s": 53.1,
+        "e": 53.32
+      }
+    ]
+  }
+]

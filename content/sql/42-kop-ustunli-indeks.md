@@ -4,6 +4,15 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/42-1-tushuncha.jpg">
+    <source src="/video/sql/42-1-tushuncha.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/42-1-tushuncha.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/42-1-tushuncha.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>42.1-video. Ko'p ustunli indeks tushunchasi</figcaption>
+</figure>
+
 **Ko'p ustunli** (composite, multicolumn) indeks — bir nechta ustunga birgalikda qurilgan indeks:
 
 ```sql
@@ -77,6 +86,15 @@ Lekin PostgreSQL bir nechta indeksni (yoki bitta indeksni bir necha marta) **bir
 Hujjatning tanlov bo'yicha maslahati: ba'zan ko'p ustunli indeks yaxshi, ba'zan alohida indekslar va ularni birlashtirish. Har qo'shimcha indeks skanerlashi vaqt qo'shadi, shuning uchun rejalashtiruvchi ba'zan mavjud indekslardan faqat bittasini tanlaydi.
 
 ## Kod
+
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/42-2-kod.jpg">
+    <source src="/video/sql/42-2-kod.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/42-2-kod.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/42-2-kod.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>42.2-video. Ko'p ustunli indeks amaliyoti va kod tahlili</figcaption>
+</figure>
 
 Misollar PostgreSQL 18.6, MySQL 9.7.2 va SQLite 3.54.0 da ishga tushirilgan. 200 000 qator: `rol` — faqat 2 xil qiymat (SQLite hujjatidagi `people` misoli kabi), `bolim` — 200 xil, `boy` — 50 xil, `familiya` — 5000 xil.
 
@@ -209,6 +227,15 @@ EXPLAIN (COSTS OFF) SELECT * FROM xodimlar WHERE bolim = 5 OR boy = 199;
 Ikki indeks alohida skanerlandi, bitmaplar `BitmapOr` bilan birlashtirildi, keyin jadval o'qildi — hujjatdagi mexanizm aynan shu.
 
 ## Dialektlar
+
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/42-3-dialektlar.jpg">
+    <source src="/video/sql/42-3-dialektlar.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/42-3-dialektlar.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/42-3-dialektlar.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>42.3-video. Dialektlar: MySQL va SQLite ko'p ustunli indeks farqlari</figcaption>
+</figure>
 
 ### MySQL
 
