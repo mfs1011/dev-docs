@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" playsinline poster="/video/git/04-repo-olish.jpg" src="/video/git/04-repo-olish.mp4">
+    <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/git/04-repo-olish.chapters.vtt" default>
+    <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/git/04-repo-olish.uz.vtt">
+  </video>
+  <figcaption>04.1-video. Repo olish: init va clone</figcaption>
+</figure>
+
 **Repo** (repository, ombor) — loyihaning butun tarixi: har commit, har faylning har versiyasi, branch'lar, teglar va sozlamalar. Git'da repo — oddiy papka, odatda loyihangiz ichidagi yashirin `.git` papkasi.
 
 Repo'ga ega bo'lishning ikki yo'li bor (Pro Git):
