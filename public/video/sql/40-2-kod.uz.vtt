@@ -1,0 +1,41 @@
+WEBVTT
+
+1
+00:01.420 --> 00:07.390
+Postgres o'n sakkizda mahsulot narxlari jadvaliga
+WITHOUT OVERLAPS birlamchi kalitini o'rnatamiz.
+
+2
+00:07.780 --> 00:13.260
+Bitta mahsulotga kesishuvchi oraliq kiritilganda
+eksklyud cheklovi xatolik berib uni rad etadi.
+
+3
+00:16.570 --> 00:21.800
+Aksiyalar jadvaliga PERIOD kaliti orqali narxlar
+davriga bog'langan tashqi kalit qo'yamiz.
+
+4
+00:22.230 --> 00:27.130
+Aksiya muddati ota narx davrlari bilan
+to'liq qoplanmagan holatda cheklov buziladi.
+
+5
+00:30.260 --> 00:35.310
+Xodimlar jadvali uchun amallarni to'liq qayd
+etuvchi universal audit triggerini yaratamiz.
+
+6
+00:35.660 --> 00:41.640
+Har bir yangilash yoki o'chirish amali kim tomonidan
+va qachon bajarilgani bilan auditga yoziladi.
+
+7
+00:44.710 --> 00:49.800
+Foydalanuvchilar jadvalida ochirilgan ustuni
+orqali yumshoq o'chirish mexanizmini ko'ramiz.
+
+8
+00:50.150 --> 00:56.150
+Faqat faol yozuvlarni tekshiruvchi qisman indeks o'chirilgan
+emailni qayta ro'yxatdan o'tkazishga ruxsat beradi.

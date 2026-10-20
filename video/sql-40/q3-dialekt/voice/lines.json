@@ -1,0 +1,575 @@
+[
+  {
+    "scene": "dialektlar_jadvali",
+    "id": "l1",
+    "text": "Postgres o'n sakkiz temporal kalitlar va to'liq audit triggerlarini birdek qo'llab-quvvatlaydi.",
+    "show": "Postgres o'n sakkiz temporal kalitlar va to'liq audit triggerlarini birdek qo'llab-quvvatlaydi.",
+    "say": "Postgres o'n sakkiz temporal kalitlar va to'liq audit triggerlarini birdek qo'llab-quvvatlaydi.",
+    "a0": 0.44,
+    "a1": 5.58,
+    "words": [
+      {
+        "w": "Postgres",
+        "s": 0.44,
+        "e": 0.88
+      },
+      {
+        "w": "o'n",
+        "s": 0.96,
+        "e": 1.04
+      },
+      {
+        "w": "sakkiz",
+        "s": 1.06,
+        "e": 1.46
+      },
+      {
+        "w": "temporal",
+        "s": 1.54,
+        "e": 1.94
+      },
+      {
+        "w": "kalitlar",
+        "s": 2,
+        "e": 2.5
+      },
+      {
+        "w": "va",
+        "s": 2.58,
+        "e": 2.64
+      },
+      {
+        "w": "to'liq",
+        "s": 2.82,
+        "e": 3.14
+      },
+      {
+        "w": "audit",
+        "s": 3.26,
+        "e": 3.62
+      },
+      {
+        "w": "triggerlarini",
+        "s": 3.64,
+        "e": 4.3
+      },
+      {
+        "w": "birdek",
+        "s": 4.44,
+        "e": 4.74
+      },
+      {
+        "w": "qo'llab-quvvatlaydi.",
+        "s": 4.82,
+        "e": 5.58
+      }
+    ]
+  },
+  {
+    "scene": "dialektlar_jadvali",
+    "id": "l2",
+    "text": "MySQL va SQLite'da esa temporal kalitlar mavjud emas, ularni dasturiy usulda tekshirish lozim.",
+    "show": "MySQL va SQLite'da esa temporal kalitlar mavjud emas, ularni dasturiy usulda tekshirish lozim.",
+    "say": "May es-kyu-el va Es-kyu-laytda esa temporal kalitlar mavjud emas, ularni dasturiy usulda tekshirish lozim.",
+    "a0": 6.22,
+    "a1": 12.29,
+    "words": [
+      {
+        "w": "May",
+        "s": 6.22,
+        "e": 6.38
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 6.46,
+        "e": 6.9
+      },
+      {
+        "w": "va",
+        "s": 7,
+        "e": 7.08
+      },
+      {
+        "w": "Es-kyu-laytda",
+        "s": 7.22,
+        "e": 7.87
+      },
+      {
+        "w": "esa",
+        "s": 7.91,
+        "e": 8.09
+      },
+      {
+        "w": "temporal",
+        "s": 8.45,
+        "e": 8.83
+      },
+      {
+        "w": "kalitlar",
+        "s": 8.87,
+        "e": 9.23
+      },
+      {
+        "w": "mavjud",
+        "s": 9.29,
+        "e": 9.61
+      },
+      {
+        "w": "emas,",
+        "s": 9.69,
+        "e": 9.97
+      },
+      {
+        "w": "ularni",
+        "s": 10.41,
+        "e": 10.69
+      },
+      {
+        "w": "dasturiy",
+        "s": 10.75,
+        "e": 11.19
+      },
+      {
+        "w": "usulda",
+        "s": 11.25,
+        "e": 11.57
+      },
+      {
+        "w": "tekshirish",
+        "s": 11.61,
+        "e": 11.99
+      },
+      {
+        "w": "lozim.",
+        "s": 12.03,
+        "e": 12.29
+      }
+    ]
+  },
+  {
+    "scene": "yangilanish_mexanizmi",
+    "id": "l3",
+    "text": "MySQL'dagi ON UPDATE CURRENT_TIMESTAMP xususiyati qiymat haqiqatan o'zgargandagina vaqtni yangilaydi.",
+    "show": "MySQL'dagi ON UPDATE CURRENT_TIMESTAMP xususiyati qiymat haqiqatan o'zgargandagina vaqtni yangilaydi.",
+    "say": "May es-kyu-eldagi ON UPDATE karrent taymstemp xususiyati qiymat haqiqatan o'zgargandagina vaqtni yangilaydi.",
+    "a0": 13.05,
+    "a1": 19.41,
+    "words": [
+      {
+        "w": "May",
+        "s": 13.05,
+        "e": 13.19
+      },
+      {
+        "w": "es-kyu-eldagi",
+        "s": 13.29,
+        "e": 13.89
+      },
+      {
+        "w": "ON",
+        "s": 14.33,
+        "e": 14.45
+      },
+      {
+        "w": "UPDATE",
+        "s": 14.59,
+        "e": 15.03
+      },
+      {
+        "w": "karrent",
+        "s": 15.09,
+        "e": 15.45
+      },
+      {
+        "w": "taymstemp",
+        "s": 15.49,
+        "e": 15.99
+      },
+      {
+        "w": "xususiyati",
+        "s": 16.03,
+        "e": 16.55
+      },
+      {
+        "w": "qiymat",
+        "s": 16.65,
+        "e": 16.97
+      },
+      {
+        "w": "haqiqatan",
+        "s": 17.03,
+        "e": 17.65
+      },
+      {
+        "w": "o'zgargandagina",
+        "s": 17.81,
+        "e": 18.57
+      },
+      {
+        "w": "vaqtni",
+        "s": 18.61,
+        "e": 18.91
+      },
+      {
+        "w": "yangilaydi.",
+        "s": 18.95,
+        "e": 19.41
+      }
+    ]
+  },
+  {
+    "scene": "yangilanish_mexanizmi",
+    "id": "l4",
+    "text": "SQLite'da esa cheksiz takrorlanishdan saqlanish uchun triggerga maxsus WHEN sharti yoziladi.",
+    "show": "SQLite'da esa cheksiz takrorlanishdan saqlanish uchun triggerga maxsus WHEN sharti yoziladi.",
+    "say": "Es-kyu-laytda esa cheksiz takrorlanishdan saqlanish uchun triggerga maxsus WHEN sharti yoziladi.",
+    "a0": 20.19,
+    "a1": 25.6,
+    "words": [
+      {
+        "w": "Es-kyu-laytda",
+        "s": 20.19,
+        "e": 20.75
+      },
+      {
+        "w": "esa",
+        "s": 20.81,
+        "e": 20.97
+      },
+      {
+        "w": "cheksiz",
+        "s": 21.37,
+        "e": 21.67
+      },
+      {
+        "w": "takrorlanishdan",
+        "s": 21.71,
+        "e": 22.33
+      },
+      {
+        "w": "saqlanish",
+        "s": 22.39,
+        "e": 22.8
+      },
+      {
+        "w": "uchun",
+        "s": 22.84,
+        "e": 23.02
+      },
+      {
+        "w": "triggerga",
+        "s": 23.08,
+        "e": 23.54
+      },
+      {
+        "w": "maxsus",
+        "s": 23.92,
+        "e": 24.28
+      },
+      {
+        "w": "WHEN",
+        "s": 24.56,
+        "e": 24.76
+      },
+      {
+        "w": "sharti",
+        "s": 24.86,
+        "e": 25.14
+      },
+      {
+        "w": "yoziladi.",
+        "s": 25.14,
+        "e": 25.6
+      }
+    ]
+  },
+  {
+    "scene": "eng_katta_xatolar",
+    "id": "l5",
+    "text": "Davrlarni ikkala tomoni yopiq oraliq sifatida saqlash tutash sanalarda kesishish xatosini keltirib chiqaradi.",
+    "show": "Davrlarni ikkala tomoni yopiq oraliq sifatida saqlash tutash sanalarda kesishish xatosini keltirib chiqaradi.",
+    "say": "Davrlarni ikkala tomoni yopiq oraliq sifatida saqlash tutash sanalarda kesishish xatosini keltirib chiqaradi.",
+    "a0": 26.64,
+    "a1": 32.4,
+    "words": [
+      {
+        "w": "Davrlarni",
+        "s": 26.64,
+        "e": 27.14
+      },
+      {
+        "w": "ikkala",
+        "s": 27.26,
+        "e": 27.56
+      },
+      {
+        "w": "tomoni",
+        "s": 27.62,
+        "e": 27.96
+      },
+      {
+        "w": "yopiq",
+        "s": 28.04,
+        "e": 28.32
+      },
+      {
+        "w": "oraliq",
+        "s": 28.42,
+        "e": 28.68
+      },
+      {
+        "w": "sifatida",
+        "s": 28.72,
+        "e": 29.06
+      },
+      {
+        "w": "saqlash",
+        "s": 29.12,
+        "e": 29.48
+      },
+      {
+        "w": "tutash",
+        "s": 29.8,
+        "e": 30.08
+      },
+      {
+        "w": "sanalarda",
+        "s": 30.1,
+        "e": 30.56
+      },
+      {
+        "w": "kesishish",
+        "s": 30.76,
+        "e": 31.16
+      },
+      {
+        "w": "xatosini",
+        "s": 31.2,
+        "e": 31.64
+      },
+      {
+        "w": "keltirib",
+        "s": 31.66,
+        "e": 32
+      },
+      {
+        "w": "chiqaradi.",
+        "s": 32.04,
+        "e": 32.4
+      }
+    ]
+  },
+  {
+    "scene": "eng_katta_xatolar",
+    "id": "l6",
+    "text": "Yumshoq o'chirishda oddiy unikal indeks qo'yish o'chirilgan foydalanuvchi ma'lumotlarini qayta ishlatishga to'sqinlik qiladi.",
+    "show": "Yumshoq o'chirishda oddiy unikal indeks qo'yish o'chirilgan foydalanuvchi ma'lumotlarini qayta ishlatishga to'sqinlik qiladi.",
+    "say": "Yumshoq o'chirishda oddiy unikal indeks qo'yish o'chirilgan foydalanuvchi ma'lumotlarini qayta ishlatishga to'sqinlik qiladi.",
+    "a0": 33.34,
+    "a1": 39.87,
+    "words": [
+      {
+        "w": "Yumshoq",
+        "s": 33.34,
+        "e": 33.66
+      },
+      {
+        "w": "o'chirishda",
+        "s": 33.74,
+        "e": 34.12
+      },
+      {
+        "w": "oddiy",
+        "s": 34.56,
+        "e": 34.82
+      },
+      {
+        "w": "unikal",
+        "s": 35,
+        "e": 35.38
+      },
+      {
+        "w": "indeks",
+        "s": 35.46,
+        "e": 35.79
+      },
+      {
+        "w": "qo'yish",
+        "s": 35.85,
+        "e": 36.13
+      },
+      {
+        "w": "o'chirilgan",
+        "s": 36.47,
+        "e": 36.93
+      },
+      {
+        "w": "foydalanuvchi",
+        "s": 36.99,
+        "e": 37.51
+      },
+      {
+        "w": "ma'lumotlarini",
+        "s": 37.55,
+        "e": 38.19
+      },
+      {
+        "w": "qayta",
+        "s": 38.29,
+        "e": 38.59
+      },
+      {
+        "w": "ishlatishga",
+        "s": 38.65,
+        "e": 39.03
+      },
+      {
+        "w": "to'sqinlik",
+        "s": 39.09,
+        "e": 39.55
+      },
+      {
+        "w": "qiladi.",
+        "s": 39.59,
+        "e": 39.87
+      }
+    ]
+  },
+  {
+    "scene": "oltin_tavsiyalar",
+    "id": "l7",
+    "text": "Har doim yarim ochiq oraliqlar va faol qatorlarni filtrlovchi qisman indekslardan foydalaning.",
+    "show": "Har doim yarim ochiq oraliqlar va faol qatorlarni filtrlovchi qisman indekslardan foydalaning.",
+    "say": "Har doim yarim ochiq oraliqlar va faol qatorlarni filtrlovchi qisman indekslardan foydalaning.",
+    "a0": 40.79,
+    "a1": 46.41,
+    "words": [
+      {
+        "w": "Har",
+        "s": 40.79,
+        "e": 40.93
+      },
+      {
+        "w": "doim",
+        "s": 40.99,
+        "e": 41.25
+      },
+      {
+        "w": "yarim",
+        "s": 41.65,
+        "e": 41.93
+      },
+      {
+        "w": "ochiq",
+        "s": 42.07,
+        "e": 42.29
+      },
+      {
+        "w": "oraliqlar",
+        "s": 42.39,
+        "e": 42.83
+      },
+      {
+        "w": "va",
+        "s": 42.89,
+        "e": 42.95
+      },
+      {
+        "w": "faol",
+        "s": 43.07,
+        "e": 43.33
+      },
+      {
+        "w": "qatorlarni",
+        "s": 43.39,
+        "e": 43.89
+      },
+      {
+        "w": "filtrlovchi",
+        "s": 43.95,
+        "e": 44.51
+      },
+      {
+        "w": "qisman",
+        "s": 44.87,
+        "e": 45.21
+      },
+      {
+        "w": "indekslardan",
+        "s": 45.33,
+        "e": 45.91
+      },
+      {
+        "w": "foydalaning.",
+        "s": 45.97,
+        "e": 46.41
+      }
+    ]
+  },
+  {
+    "scene": "oltin_tavsiyalar",
+    "id": "l8",
+    "text": "Tranzaksiyalar xavfsizligi va qat'iy audit bazadagi har qanday o'zgarishning shaffofligini kafolatlaydi.",
+    "show": "Tranzaksiyalar xavfsizligi va qat'iy audit bazadagi har qanday o'zgarishning shaffofligini kafolatlaydi.",
+    "say": "Tranzaksiyalar xavfsizligi va qat'iy audit bazadagi har qanday o'zgarishning shaffofligini kafolatlaydi.",
+    "a0": 47.15,
+    "a1": 52.9,
+    "words": [
+      {
+        "w": "Tranzaksiyalar",
+        "s": 47.15,
+        "e": 47.8
+      },
+      {
+        "w": "xavfsizligi",
+        "s": 47.84,
+        "e": 48.32
+      },
+      {
+        "w": "va",
+        "s": 48.42,
+        "e": 48.5
+      },
+      {
+        "w": "qat'iy",
+        "s": 48.64,
+        "e": 48.98
+      },
+      {
+        "w": "audit",
+        "s": 49.14,
+        "e": 49.46
+      },
+      {
+        "w": "bazadagi",
+        "s": 49.82,
+        "e": 50.28
+      },
+      {
+        "w": "har",
+        "s": 50.4,
+        "e": 50.6
+      },
+      {
+        "w": "qanday",
+        "s": 50.68,
+        "e": 51
+      },
+      {
+        "w": "o'zgarishning",
+        "s": 51.1,
+        "e": 51.58
+      },
+      {
+        "w": "shaffofligini",
+        "s": 51.62,
+        "e": 52.2
+      },
+      {
+        "w": "kafolatlaydi.",
+        "s": 52.24,
+        "e": 52.9
+      }
+    ]
+  }
+]

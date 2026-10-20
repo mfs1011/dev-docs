@@ -1,0 +1,712 @@
+[
+  {
+    "scene": "vaqtga_bogliq_malumot",
+    "id": "l1",
+    "text": "Ko'plab ma'lumotlar vaqtga bog'liq bo'lib, narxlar, xodim maoshlari va statuslar doimiy o'zgarib turadi.",
+    "show": "Ko'plab ma'lumotlar vaqtga bog'liq bo'lib, narxlar, xodim maoshlari va statuslar doimiy o'zgarib turadi.",
+    "say": "Ko'plab ma'lumotlar vaqtga bog'liq bo'lib, narxlar, xodim maoshlari va statuslar doimiy o'zgarib turadi.",
+    "a0": 0.26,
+    "a1": 7.18,
+    "words": [
+      {
+        "w": "Ko'plab",
+        "s": 0.26,
+        "e": 0.64
+      },
+      {
+        "w": "ma'lumotlar",
+        "s": 0.7,
+        "e": 1.34
+      },
+      {
+        "w": "vaqtga",
+        "s": 1.42,
+        "e": 1.76
+      },
+      {
+        "w": "bog'liq",
+        "s": 1.82,
+        "e": 2.18
+      },
+      {
+        "w": "bo'lib,",
+        "s": 2.26,
+        "e": 2.52
+      },
+      {
+        "w": "narxlar,",
+        "s": 3.06,
+        "e": 3.68
+      },
+      {
+        "w": "xodim",
+        "s": 3.78,
+        "e": 4.14
+      },
+      {
+        "w": "maoshlari",
+        "s": 4.18,
+        "e": 4.74
+      },
+      {
+        "w": "va",
+        "s": 5.2,
+        "e": 5.26
+      },
+      {
+        "w": "statuslar",
+        "s": 5.4,
+        "e": 5.96
+      },
+      {
+        "w": "doimiy",
+        "s": 6.04,
+        "e": 6.46
+      },
+      {
+        "w": "o'zgarib",
+        "s": 6.56,
+        "e": 6.88
+      },
+      {
+        "w": "turadi.",
+        "s": 6.92,
+        "e": 7.18
+      }
+    ]
+  },
+  {
+    "scene": "vaqtga_bogliq_malumot",
+    "id": "l2",
+    "text": "Eski ma'lumotlarni shunchaki almashtirib yuborish o'tmishdagi buyurtmalar va moliyaviy hisobotlarni buzadi.",
+    "show": "Eski ma'lumotlarni shunchaki almashtirib yuborish o'tmishdagi buyurtmalar va moliyaviy hisobotlarni buzadi.",
+    "say": "Eski ma'lumotlarni shunchaki almashtirib yuborish o'tmishdagi buyurtmalar va moliyaviy hisobotlarni buzadi.",
+    "a0": 7.91,
+    "a1": 13.53,
+    "words": [
+      {
+        "w": "Eski",
+        "s": 7.91,
+        "e": 8.11
+      },
+      {
+        "w": "ma'lumotlarni",
+        "s": 8.15,
+        "e": 8.75
+      },
+      {
+        "w": "shunchaki",
+        "s": 8.85,
+        "e": 9.25
+      },
+      {
+        "w": "almashtirib",
+        "s": 9.35,
+        "e": 9.83
+      },
+      {
+        "w": "yuborish",
+        "s": 9.87,
+        "e": 10.25
+      },
+      {
+        "w": "o'tmishdagi",
+        "s": 10.67,
+        "e": 11.17
+      },
+      {
+        "w": "buyurtmalar",
+        "s": 11.21,
+        "e": 11.77
+      },
+      {
+        "w": "va",
+        "s": 11.85,
+        "e": 11.91
+      },
+      {
+        "w": "moliyaviy",
+        "s": 12.03,
+        "e": 12.51
+      },
+      {
+        "w": "hisobotlarni",
+        "s": 12.57,
+        "e": 13.19
+      },
+      {
+        "w": "buzadi.",
+        "s": 13.21,
+        "e": 13.53
+      }
+    ]
+  },
+  {
+    "scene": "temporal_kalitlar",
+    "id": "l3",
+    "text": "Postgres o'n sakkizdagi WITHOUT OVERLAPS kaliti vaqt oralig'ining kesishmasligini baza darajasida kafolatlaydi.",
+    "show": "Postgres o'n sakkizdagi WITHOUT OVERLAPS kaliti vaqt oralig'ining kesishmasligini baza darajasida kafolatlaydi.",
+    "say": "Postgres o'n sakkizdagi vizaut overleps kaliti vaqt oralig'ining kesishmasligini baza darajasida kafolatlaydi.",
+    "a0": 14.31,
+    "a1": 21.09,
+    "words": [
+      {
+        "w": "Postgres",
+        "s": 14.31,
+        "e": 14.79
+      },
+      {
+        "w": "o'n",
+        "s": 14.89,
+        "e": 14.97
+      },
+      {
+        "w": "sakkizdagi",
+        "s": 15.03,
+        "e": 15.59
+      },
+      {
+        "w": "vizaut",
+        "s": 15.99,
+        "e": 16.37
+      },
+      {
+        "w": "overleps",
+        "s": 16.49,
+        "e": 17.01
+      },
+      {
+        "w": "kaliti",
+        "s": 17.07,
+        "e": 17.41
+      },
+      {
+        "w": "vaqt",
+        "s": 17.89,
+        "e": 18.13
+      },
+      {
+        "w": "oralig'ining",
+        "s": 18.21,
+        "e": 18.67
+      },
+      {
+        "w": "kesishmasligini",
+        "s": 18.69,
+        "e": 19.45
+      },
+      {
+        "w": "baza",
+        "s": 19.55,
+        "e": 19.85
+      },
+      {
+        "w": "darajasida",
+        "s": 19.91,
+        "e": 20.39
+      },
+      {
+        "w": "kafolatlaydi.",
+        "s": 20.43,
+        "e": 21.09
+      }
+    ]
+  },
+  {
+    "scene": "temporal_kalitlar",
+    "id": "l4",
+    "text": "Bu cheklov tenglik o'rniga oraliqlar kesishuvini tekshiruvchi eksklyud mexanizmi orqali ishlaydi.",
+    "show": "Bu cheklov tenglik o'rniga oraliqlar kesishuvini tekshiruvchi eksklyud mexanizmi orqali ishlaydi.",
+    "say": "Bu cheklov tenglik o'rniga oraliqlar kesishuvini tekshiruvchi eksklyud mexanizmi orqali ishlaydi.",
+    "a0": 21.77,
+    "a1": 27.12,
+    "words": [
+      {
+        "w": "Bu",
+        "s": 21.77,
+        "e": 21.83
+      },
+      {
+        "w": "cheklov",
+        "s": 21.93,
+        "e": 22.27
+      },
+      {
+        "w": "tenglik",
+        "s": 22.6,
+        "e": 22.94
+      },
+      {
+        "w": "o'rniga",
+        "s": 23.04,
+        "e": 23.34
+      },
+      {
+        "w": "oraliqlar",
+        "s": 23.48,
+        "e": 23.92
+      },
+      {
+        "w": "kesishuvini",
+        "s": 23.96,
+        "e": 24.46
+      },
+      {
+        "w": "tekshiruvchi",
+        "s": 24.5,
+        "e": 25.02
+      },
+      {
+        "w": "eksklyud",
+        "s": 25.46,
+        "e": 25.92
+      },
+      {
+        "w": "mexanizmi",
+        "s": 25.98,
+        "e": 26.46
+      },
+      {
+        "w": "orqali",
+        "s": 26.5,
+        "e": 26.78
+      },
+      {
+        "w": "ishlaydi.",
+        "s": 26.8,
+        "e": 27.12
+      }
+    ]
+  },
+  {
+    "scene": "period_tashqi_kalit",
+    "id": "l5",
+    "text": "PERIOD tashqi kaliti esa bola yozuv davrining ota jadvaldagi davrlar bilan to'liq qoplanishini talab qiladi.",
+    "show": "PERIOD tashqi kaliti esa bola yozuv davrining ota jadvaldagi davrlar bilan to'liq qoplanishini talab qiladi.",
+    "say": "Period tashqi kaliti esa bola yozuv davrining ota jadvaldagi davrlar bilan to'liq qoplanishini talab qiladi.",
+    "a0": 28,
+    "a1": 34.1,
+    "words": [
+      {
+        "w": "Period",
+        "s": 28,
+        "e": 28.3
+      },
+      {
+        "w": "tashqi",
+        "s": 28.36,
+        "e": 28.64
+      },
+      {
+        "w": "kaliti",
+        "s": 28.7,
+        "e": 29
+      },
+      {
+        "w": "esa",
+        "s": 29.06,
+        "e": 29.22
+      },
+      {
+        "w": "bola",
+        "s": 29.72,
+        "e": 29.92
+      },
+      {
+        "w": "yozuv",
+        "s": 30.04,
+        "e": 30.26
+      },
+      {
+        "w": "davrining",
+        "s": 30.32,
+        "e": 30.76
+      },
+      {
+        "w": "ota",
+        "s": 30.94,
+        "e": 31.12
+      },
+      {
+        "w": "jadvaldagi",
+        "s": 31.18,
+        "e": 31.74
+      },
+      {
+        "w": "davrlar",
+        "s": 31.8,
+        "e": 32.26
+      },
+      {
+        "w": "bilan",
+        "s": 32.3,
+        "e": 32.48
+      },
+      {
+        "w": "to'liq",
+        "s": 32.62,
+        "e": 32.92
+      },
+      {
+        "w": "qoplanishini",
+        "s": 32.96,
+        "e": 33.56
+      },
+      {
+        "w": "talab",
+        "s": 33.6,
+        "e": 33.82
+      },
+      {
+        "w": "qiladi.",
+        "s": 33.84,
+        "e": 34.1
+      }
+    ]
+  },
+  {
+    "scene": "period_tashqi_kalit",
+    "id": "l6",
+    "text": "Masalan, mahsulot aksiyasi faqat uning narxi rasman belgilangan muddat ichidagina o'rinli bo'ladi.",
+    "show": "Masalan, mahsulot aksiyasi faqat uning narxi rasman belgilangan muddat ichidagina o'rinli bo'ladi.",
+    "say": "Masalan, mahsulot aksiyasi faqat uning narxi rasman belgilangan muddat ichidagina o'rinli bo'ladi.",
+    "a0": 34.84,
+    "a1": 40.07,
+    "words": [
+      {
+        "w": "Masalan,",
+        "s": 34.84,
+        "e": 35.16
+      },
+      {
+        "w": "mahsulot",
+        "s": 35.52,
+        "e": 35.94
+      },
+      {
+        "w": "aksiyasi",
+        "s": 36.06,
+        "e": 36.46
+      },
+      {
+        "w": "faqat",
+        "s": 36.54,
+        "e": 36.82
+      },
+      {
+        "w": "uning",
+        "s": 36.9,
+        "e": 37.1
+      },
+      {
+        "w": "narxi",
+        "s": 37.14,
+        "e": 37.44
+      },
+      {
+        "w": "rasman",
+        "s": 37.53,
+        "e": 37.91
+      },
+      {
+        "w": "belgilangan",
+        "s": 37.97,
+        "e": 38.53
+      },
+      {
+        "w": "muddat",
+        "s": 38.59,
+        "e": 38.91
+      },
+      {
+        "w": "ichidagina",
+        "s": 38.99,
+        "e": 39.41
+      },
+      {
+        "w": "o'rinli",
+        "s": 39.47,
+        "e": 39.73
+      },
+      {
+        "w": "bo'ladi.",
+        "s": 39.79,
+        "e": 40.07
+      }
+    ]
+  },
+  {
+    "scene": "audit_va_tarix",
+    "id": "l7",
+    "text": "Audit jadvali tizimdagi har bir qo'shish, o'zgartirish va o'chirish amallarini to'liq saqlab boradi.",
+    "show": "Audit jadvali tizimdagi har bir qo'shish, o'zgartirish va o'chirish amallarini to'liq saqlab boradi.",
+    "say": "Audit jadvali tizimdagi har bir qo'shish, o'zgartirish va o'chirish amallarini to'liq saqlab boradi.",
+    "a0": 40.85,
+    "a1": 46.73,
+    "words": [
+      {
+        "w": "Audit",
+        "s": 40.85,
+        "e": 41.19
+      },
+      {
+        "w": "jadvali",
+        "s": 41.23,
+        "e": 41.63
+      },
+      {
+        "w": "tizimdagi",
+        "s": 41.67,
+        "e": 42.13
+      },
+      {
+        "w": "har",
+        "s": 42.25,
+        "e": 42.45
+      },
+      {
+        "w": "bir",
+        "s": 42.53,
+        "e": 42.63
+      },
+      {
+        "w": "qo'shish,",
+        "s": 42.71,
+        "e": 43.27
+      },
+      {
+        "w": "o'zgartirish",
+        "s": 43.45,
+        "e": 44.09
+      },
+      {
+        "w": "va",
+        "s": 44.17,
+        "e": 44.25
+      },
+      {
+        "w": "o'chirish",
+        "s": 44.71,
+        "e": 45.07
+      },
+      {
+        "w": "amallarini",
+        "s": 45.13,
+        "e": 45.63
+      },
+      {
+        "w": "to'liq",
+        "s": 45.73,
+        "e": 46.05
+      },
+      {
+        "w": "saqlab",
+        "s": 46.11,
+        "e": 46.41
+      },
+      {
+        "w": "boradi.",
+        "s": 46.43,
+        "e": 46.73
+      }
+    ]
+  },
+  {
+    "scene": "audit_va_tarix",
+    "id": "l8",
+    "text": "Trigger yordamida o'zgarishdan oldingi va keyingi qatorlar, amal vaqti hamda foydalanuvchi qayd etiladi.",
+    "show": "Trigger yordamida o'zgarishdan oldingi va keyingi qatorlar, amal vaqti hamda foydalanuvchi qayd etiladi.",
+    "say": "Trigger yordamida o'zgarishdan oldingi va keyingi qatorlar, amal vaqti hamda foydalanuvchi qayd etiladi.",
+    "a0": 47.37,
+    "a1": 53.8,
+    "words": [
+      {
+        "w": "Trigger",
+        "s": 47.37,
+        "e": 47.71
+      },
+      {
+        "w": "yordamida",
+        "s": 47.75,
+        "e": 48.21
+      },
+      {
+        "w": "o'zgarishdan",
+        "s": 48.35,
+        "e": 48.85
+      },
+      {
+        "w": "oldingi",
+        "s": 49.03,
+        "e": 49.41
+      },
+      {
+        "w": "va",
+        "s": 49.51,
+        "e": 49.59
+      },
+      {
+        "w": "keyingi",
+        "s": 49.91,
+        "e": 50.27
+      },
+      {
+        "w": "qatorlar,",
+        "s": 50.33,
+        "e": 50.83
+      },
+      {
+        "w": "amal",
+        "s": 51.11,
+        "e": 51.35
+      },
+      {
+        "w": "vaqti",
+        "s": 51.45,
+        "e": 51.81
+      },
+      {
+        "w": "hamda",
+        "s": 51.97,
+        "e": 52.21
+      },
+      {
+        "w": "foydalanuvchi",
+        "s": 52.54,
+        "e": 53.18
+      },
+      {
+        "w": "qayd",
+        "s": 53.24,
+        "e": 53.42
+      },
+      {
+        "w": "etiladi.",
+        "s": 53.46,
+        "e": 53.8
+      }
+    ]
+  },
+  {
+    "scene": "yumshoq_ochirish",
+    "id": "l9",
+    "text": "Yumshoq o'chirishda qator bazada saqlanadi, ammo o'chirilgan vaqti bilan belgilanadi.",
+    "show": "Yumshoq o'chirishda qator bazada saqlanadi, ammo o'chirilgan vaqti bilan belgilanadi.",
+    "say": "Yumshoq o'chirishda qator bazada saqlanadi, ammo o'chirilgan vaqti bilan belgilanadi.",
+    "a0": 54.66,
+    "a1": 59.32,
+    "words": [
+      {
+        "w": "Yumshoq",
+        "s": 54.66,
+        "e": 55.02
+      },
+      {
+        "w": "o'chirishda",
+        "s": 55.1,
+        "e": 55.52
+      },
+      {
+        "w": "qator",
+        "s": 55.62,
+        "e": 55.94
+      },
+      {
+        "w": "bazada",
+        "s": 56.04,
+        "e": 56.42
+      },
+      {
+        "w": "saqlanadi,",
+        "s": 56.48,
+        "e": 56.96
+      },
+      {
+        "w": "ammo",
+        "s": 57.06,
+        "e": 57.24
+      },
+      {
+        "w": "o'chirilgan",
+        "s": 57.66,
+        "e": 58.14
+      },
+      {
+        "w": "vaqti",
+        "s": 58.22,
+        "e": 58.52
+      },
+      {
+        "w": "bilan",
+        "s": 58.54,
+        "e": 58.72
+      },
+      {
+        "w": "belgilanadi.",
+        "s": 58.74,
+        "e": 59.32
+      }
+    ]
+  },
+  {
+    "scene": "yumshoq_ochirish",
+    "id": "l10",
+    "text": "Qisman unikal indeks esa faqat faol foydalanuvchilar o'rtasida takrorlanmaslikni ta'minlaydi.",
+    "show": "Qisman unikal indeks esa faqat faol foydalanuvchilar o'rtasida takrorlanmaslikni ta'minlaydi.",
+    "say": "Qisman unikal indeks esa faqat faol foydalanuvchilar o'rtasida takrorlanmaslikni ta'minlaydi.",
+    "a0": 60.02,
+    "a1": 65.18,
+    "words": [
+      {
+        "w": "Qisman",
+        "s": 60.02,
+        "e": 60.3
+      },
+      {
+        "w": "unikal",
+        "s": 60.42,
+        "e": 60.76
+      },
+      {
+        "w": "indeks",
+        "s": 60.88,
+        "e": 61.16
+      },
+      {
+        "w": "esa",
+        "s": 61.22,
+        "e": 61.39
+      },
+      {
+        "w": "faqat",
+        "s": 61.79,
+        "e": 62.09
+      },
+      {
+        "w": "faol",
+        "s": 62.15,
+        "e": 62.45
+      },
+      {
+        "w": "foydalanuvchilar",
+        "s": 62.51,
+        "e": 63.21
+      },
+      {
+        "w": "o'rtasida",
+        "s": 63.29,
+        "e": 63.65
+      },
+      {
+        "w": "takrorlanmaslikni",
+        "s": 63.71,
+        "e": 64.64
+      },
+      {
+        "w": "ta'minlaydi.",
+        "s": 64.68,
+        "e": 65.18
+      }
+    ]
+  }
+]

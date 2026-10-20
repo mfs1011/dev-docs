@@ -1,0 +1,41 @@
+WEBVTT
+
+1
+00:01.420 --> 00:07.010
+Postgres o'n sakkiz temporal kalitlar va to'liq
+audit triggerlarini birdek qo'llab-quvvatlaydi.
+
+2
+00:07.200 --> 00:13.720
+MySQL va SQLite'da esa temporal kalitlar mavjud
+emas, ularni dasturiy usulda tekshirish lozim.
+
+3
+00:16.630 --> 00:23.440
+MySQL'dagi ON UPDATE CURRENT_TIMESTAMP xususiyati
+qiymat haqiqatan o'zgargandagina vaqtni yangilaydi.
+
+4
+00:23.770 --> 00:29.630
+SQLite'da esa cheksiz takrorlanishdan saqlanish
+uchun triggerga maxsus WHEN sharti yoziladi.
+
+5
+00:32.820 --> 00:39.030
+Davrlarni ikkala tomoni yopiq oraliq sifatida saqlash
+tutash sanalarda kesishish xatosini keltirib chiqaradi.
+
+6
+00:39.520 --> 00:46.500
+Yumshoq o'chirishda oddiy unikal indeks qo'yish o'chirilgan
+foydalanuvchi ma'lumotlarini qayta ishlatishga to'sqinlik qiladi.
+
+7
+00:49.570 --> 00:55.640
+Har doim yarim ochiq oraliqlar va faol qatorlarni
+filtrlovchi qisman indekslardan foydalaning.
+
+8
+00:55.930 --> 01:02.130
+Tranzaksiyalar xavfsizligi va qat'iy audit bazadagi
+har qanday o'zgarishning shaffofligini kafolatlaydi.

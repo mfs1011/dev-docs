@@ -1,0 +1,51 @@
+WEBVTT
+
+1
+00:01.420 --> 00:08.790
+Ko'plab ma'lumotlar vaqtga bog'liq bo'lib, narxlar,
+xodim maoshlari va statuslar doimiy o'zgarib turadi.
+
+2
+00:09.070 --> 00:15.140
+Eski ma'lumotlarni shunchaki almashtirib yuborish
+o'tmishdagi buyurtmalar va moliyaviy hisobotlarni buzadi.
+
+3
+00:18.070 --> 00:25.300
+Postgres o'n sakkizdagi WITHOUT OVERLAPS kaliti vaqt
+oralig'ining kesishmasligini baza darajasida kafolatlaydi.
+
+4
+00:25.530 --> 00:31.330
+Bu cheklov tenglik o'rniga oraliqlar kesishuvini
+tekshiruvchi eksklyud mexanizmi orqali ishlaydi.
+
+5
+00:34.360 --> 00:40.910
+PERIOD tashqi kaliti esa bola yozuv davrining ota
+jadvaldagi davrlar bilan to'liq qoplanishini talab qiladi.
+
+6
+00:41.200 --> 00:46.880
+Masalan, mahsulot aksiyasi faqat uning narxi rasman
+belgilangan muddat ichidagina o'rinli bo'ladi.
+
+7
+00:49.810 --> 00:56.140
+Audit jadvali tizimdagi har bir qo'shish, o'zgartirish
+va o'chirish amallarini to'liq saqlab boradi.
+
+8
+00:56.330 --> 01:03.210
+Trigger yordamida o'zgarishdan oldingi va keyingi
+qatorlar, amal vaqti hamda foydalanuvchi qayd etiladi.
+
+9
+01:06.220 --> 01:11.330
+Yumshoq o'chirishda qator bazada saqlanadi,
+ammo o'chirilgan vaqti bilan belgilanadi.
+
+10
+01:11.580 --> 01:17.190
+Qisman unikal indeks esa faqat faol foydalanuvchilar
+o'rtasida takrorlanmaslikni ta'minlaydi.
