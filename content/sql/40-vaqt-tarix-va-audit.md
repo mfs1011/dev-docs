@@ -4,6 +4,15 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/40-1-tushuncha.jpg">
+    <source src="/video/sql/40-1-tushuncha.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/40-1-tushuncha.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/40-1-tushuncha.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>40.1-video. Vaqt, tarix va audit tushunchasi</figcaption>
+</figure>
+
 Ko'p ma'lumot vaqtga bog'liq: narx yanvarda bir xil, fevralda boshqa; xodim maoshi o'zgaradi; foydalanuvchi o'chiriladi, lekin uning izi qolishi kerak. Bu bobda uchta loyihalash usuli:
 
 1. **Temporal kalitlar** — qiymat **qaysi davrda** amal qilishini saqlash va davrlar kesishmasligini kafolatlash (PostgreSQL 18).
@@ -57,6 +66,15 @@ CREATE UNIQUE INDEX tests_success_constraint ON tests (subject, target) WHERE su
 Yumshoq o'chirish uchun: `… ON foydalanuvchilar (email) WHERE ochirilgan IS NULL` — faqat **faol** foydalanuvchilar orasida email noyob. Indekslar 41–44-boblarda.
 
 ## Kod
+
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/40-2-kod.jpg">
+    <source src="/video/sql/40-2-kod.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/40-2-kod.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/40-2-kod.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>40.2-video. Temporal kalitlar, audit va yumshoq o'chirish amaliyoti</figcaption>
+</figure>
 
 Misollar PostgreSQL 18.6, MySQL 9.7.2 va SQLite 3.54.0 da ishga tushirilgan.
 
@@ -228,6 +246,15 @@ UPDATE 1
 Bir email'li ikki qator bor, lekin faqat bittasi faol.
 
 ## Dialektlar
+
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/40-3-dialektlar.jpg">
+    <source src="/video/sql/40-3-dialektlar.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/40-3-dialektlar.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/40-3-dialektlar.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>40.3-video. PostgreSQL, MySQL va SQLite dialektlarida vaqt va audit</figcaption>
+</figure>
 
 ### MySQL
 

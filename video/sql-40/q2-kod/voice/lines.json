@@ -1,0 +1,550 @@
+[
+  {
+    "scene": "temporal_narxlar",
+    "id": "l1",
+    "text": "Postgres o'n sakkizda mahsulot narxlari jadvaliga WITHOUT OVERLAPS birlamchi kalitini o'rnatamiz.",
+    "show": "Postgres o'n sakkizda mahsulot narxlari jadvaliga WITHOUT OVERLAPS birlamchi kalitini o'rnatamiz.",
+    "say": "Postgres o'n sakkizda mahsulot narxlari jadvaliga vizaut overleps birlamchi kalitini o'rnatamiz.",
+    "a0": 0.24,
+    "a1": 5.76,
+    "words": [
+      {
+        "w": "Postgres",
+        "s": 0.24,
+        "e": 0.7
+      },
+      {
+        "w": "o'n",
+        "s": 0.78,
+        "e": 0.86
+      },
+      {
+        "w": "sakkizda",
+        "s": 0.9,
+        "e": 1.36
+      },
+      {
+        "w": "mahsulot",
+        "s": 1.56,
+        "e": 1.98
+      },
+      {
+        "w": "narxlari",
+        "s": 2.02,
+        "e": 2.4
+      },
+      {
+        "w": "jadvaliga",
+        "s": 2.44,
+        "e": 2.94
+      },
+      {
+        "w": "vizaut",
+        "s": 3.32,
+        "e": 3.72
+      },
+      {
+        "w": "overleps",
+        "s": 3.86,
+        "e": 4.36
+      },
+      {
+        "w": "birlamchi",
+        "s": 4.46,
+        "e": 4.84
+      },
+      {
+        "w": "kalitini",
+        "s": 4.88,
+        "e": 5.24
+      },
+      {
+        "w": "o'rnatamiz.",
+        "s": 5.28,
+        "e": 5.76
+      }
+    ]
+  },
+  {
+    "scene": "temporal_narxlar",
+    "id": "l2",
+    "text": "Bitta mahsulotga kesishuvchi oraliq kiritilganda eksklyud cheklovi xatolik berib uni rad etadi.",
+    "show": "Bitta mahsulotga kesishuvchi oraliq kiritilganda eksklyud cheklovi xatolik berib uni rad etadi.",
+    "say": "Bitta mahsulotga kesishuvchi oraliq kiritilganda eksklyud cheklovi xatolik berib uni rad etadi.",
+    "a0": 6.6,
+    "a1": 11.63,
+    "words": [
+      {
+        "w": "Bitta",
+        "s": 6.6,
+        "e": 6.82
+      },
+      {
+        "w": "mahsulotga",
+        "s": 6.86,
+        "e": 7.36
+      },
+      {
+        "w": "kesishuvchi",
+        "s": 7.51,
+        "e": 7.99
+      },
+      {
+        "w": "oraliq",
+        "s": 8.05,
+        "e": 8.33
+      },
+      {
+        "w": "kiritilganda",
+        "s": 8.35,
+        "e": 8.93
+      },
+      {
+        "w": "eksklyud",
+        "s": 9.27,
+        "e": 9.71
+      },
+      {
+        "w": "cheklovi",
+        "s": 9.75,
+        "e": 10.15
+      },
+      {
+        "w": "xatolik",
+        "s": 10.21,
+        "e": 10.59
+      },
+      {
+        "w": "berib",
+        "s": 10.63,
+        "e": 10.87
+      },
+      {
+        "w": "uni",
+        "s": 10.95,
+        "e": 11.09
+      },
+      {
+        "w": "rad",
+        "s": 11.17,
+        "e": 11.31
+      },
+      {
+        "w": "etadi.",
+        "s": 11.37,
+        "e": 11.63
+      }
+    ]
+  },
+  {
+    "scene": "period_aksiyalar",
+    "id": "l3",
+    "text": "Aksiyalar jadvaliga PERIOD kaliti orqali narxlar davriga bog'langan tashqi kalit qo'yamiz.",
+    "show": "Aksiyalar jadvaliga PERIOD kaliti orqali narxlar davriga bog'langan tashqi kalit qo'yamiz.",
+    "say": "Aksiyalar jadvaliga period kaliti orqali narxlar davriga bog'langan tashqi kalit qo'yamiz.",
+    "a0": 12.79,
+    "a1": 17.57,
+    "words": [
+      {
+        "w": "Aksiyalar",
+        "s": 12.79,
+        "e": 13.21
+      },
+      {
+        "w": "jadvaliga",
+        "s": 13.23,
+        "e": 13.71
+      },
+      {
+        "w": "period",
+        "s": 13.95,
+        "e": 14.29
+      },
+      {
+        "w": "kaliti",
+        "s": 14.35,
+        "e": 14.63
+      },
+      {
+        "w": "orqali",
+        "s": 14.69,
+        "e": 15.01
+      },
+      {
+        "w": "narxlar",
+        "s": 15.31,
+        "e": 15.65
+      },
+      {
+        "w": "davriga",
+        "s": 15.71,
+        "e": 16.03
+      },
+      {
+        "w": "bog'langan",
+        "s": 16.09,
+        "e": 16.53
+      },
+      {
+        "w": "tashqi",
+        "s": 16.61,
+        "e": 16.91
+      },
+      {
+        "w": "kalit",
+        "s": 16.93,
+        "e": 17.17
+      },
+      {
+        "w": "qo'yamiz.",
+        "s": 17.21,
+        "e": 17.57
+      }
+    ]
+  },
+  {
+    "scene": "period_aksiyalar",
+    "id": "l4",
+    "text": "Aksiya muddati ota narx davrlari bilan to'liq qoplanmagan holatda cheklov buziladi.",
+    "show": "Aksiya muddati ota narx davrlari bilan to'liq qoplanmagan holatda cheklov buziladi.",
+    "say": "Aksiya muddati ota narx davrlari bilan to'liq qoplanmagan holatda cheklov buziladi.",
+    "a0": 18.45,
+    "a1": 22.9,
+    "words": [
+      {
+        "w": "Aksiya",
+        "s": 18.45,
+        "e": 18.71
+      },
+      {
+        "w": "muddati",
+        "s": 18.75,
+        "e": 19.13
+      },
+      {
+        "w": "ota",
+        "s": 19.33,
+        "e": 19.47
+      },
+      {
+        "w": "narx",
+        "s": 19.53,
+        "e": 19.71
+      },
+      {
+        "w": "davrlari",
+        "s": 19.77,
+        "e": 20.17
+      },
+      {
+        "w": "bilan",
+        "s": 20.19,
+        "e": 20.41
+      },
+      {
+        "w": "to'liq",
+        "s": 20.51,
+        "e": 20.77
+      },
+      {
+        "w": "qoplanmagan",
+        "s": 20.83,
+        "e": 21.37
+      },
+      {
+        "w": "holatda",
+        "s": 21.41,
+        "e": 21.81
+      },
+      {
+        "w": "cheklov",
+        "s": 22.09,
+        "e": 22.43
+      },
+      {
+        "w": "buziladi.",
+        "s": 22.49,
+        "e": 22.9
+      }
+    ]
+  },
+  {
+    "scene": "audit_jadvali_va_trigger",
+    "id": "l5",
+    "text": "Xodimlar jadvali uchun amallarni to'liq qayd etuvchi universal audit triggerini yaratamiz.",
+    "show": "Xodimlar jadvali uchun amallarni to'liq qayd etuvchi universal audit triggerini yaratamiz.",
+    "say": "Xodimlar jadvali uchun amallarni to'liq qayd etuvchi universal audit triggerini yaratamiz.",
+    "a0": 23.88,
+    "a1": 28.48,
+    "words": [
+      {
+        "w": "Xodimlar",
+        "s": 23.88,
+        "e": 24.28
+      },
+      {
+        "w": "jadvali",
+        "s": 24.32,
+        "e": 24.62
+      },
+      {
+        "w": "uchun",
+        "s": 24.68,
+        "e": 24.86
+      },
+      {
+        "w": "amallarni",
+        "s": 24.96,
+        "e": 25.44
+      },
+      {
+        "w": "to'liq",
+        "s": 25.52,
+        "e": 25.8
+      },
+      {
+        "w": "qayd",
+        "s": 25.84,
+        "e": 26.02
+      },
+      {
+        "w": "etuvchi",
+        "s": 26.08,
+        "e": 26.4
+      },
+      {
+        "w": "universal",
+        "s": 26.62,
+        "e": 27.1
+      },
+      {
+        "w": "audit",
+        "s": 27.2,
+        "e": 27.52
+      },
+      {
+        "w": "triggerini",
+        "s": 27.54,
+        "e": 28.02
+      },
+      {
+        "w": "yaratamiz.",
+        "s": 28.06,
+        "e": 28.48
+      }
+    ]
+  },
+  {
+    "scene": "audit_jadvali_va_trigger",
+    "id": "l6",
+    "text": "Har bir yangilash yoki o'chirish amali kim tomonidan va qachon bajarilgani bilan auditga yoziladi.",
+    "show": "Har bir yangilash yoki o'chirish amali kim tomonidan va qachon bajarilgani bilan auditga yoziladi.",
+    "say": "Har bir yangilash yoki o'chirish amali kim tomonidan va qachon bajarilgani bilan auditga yoziladi.",
+    "a0": 29.28,
+    "a1": 34.81,
+    "words": [
+      {
+        "w": "Har",
+        "s": 29.28,
+        "e": 29.44
+      },
+      {
+        "w": "bir",
+        "s": 29.48,
+        "e": 29.6
+      },
+      {
+        "w": "yangilash",
+        "s": 29.68,
+        "e": 30.16
+      },
+      {
+        "w": "yoki",
+        "s": 30.26,
+        "e": 30.48
+      },
+      {
+        "w": "o'chirish",
+        "s": 30.64,
+        "e": 30.96
+      },
+      {
+        "w": "amali",
+        "s": 31.02,
+        "e": 31.28
+      },
+      {
+        "w": "kim",
+        "s": 31.58,
+        "e": 31.72
+      },
+      {
+        "w": "tomonidan",
+        "s": 31.78,
+        "e": 32.34
+      },
+      {
+        "w": "va",
+        "s": 32.42,
+        "e": 32.5
+      },
+      {
+        "w": "qachon",
+        "s": 32.66,
+        "e": 32.96
+      },
+      {
+        "w": "bajarilgani",
+        "s": 33.02,
+        "e": 33.54
+      },
+      {
+        "w": "bilan",
+        "s": 33.58,
+        "e": 33.78
+      },
+      {
+        "w": "auditga",
+        "s": 33.94,
+        "e": 34.35
+      },
+      {
+        "w": "yoziladi.",
+        "s": 34.39,
+        "e": 34.81
+      }
+    ]
+  },
+  {
+    "scene": "yumshoq_ochirish_qisman",
+    "id": "l7",
+    "text": "Foydalanuvchilar jadvalida ochirilgan ustuni orqali yumshoq o'chirish mexanizmini ko'ramiz.",
+    "show": "Foydalanuvchilar jadvalida ochirilgan ustuni orqali yumshoq o'chirish mexanizmini ko'ramiz.",
+    "say": "Foydalanuvchilar jadvalida ochirilgan ustuni orqali yumshoq o'chirish mexanizmini ko'ramiz.",
+    "a0": 35.73,
+    "a1": 40.37,
+    "words": [
+      {
+        "w": "Foydalanuvchilar",
+        "s": 35.73,
+        "e": 36.39
+      },
+      {
+        "w": "jadvalida",
+        "s": 36.43,
+        "e": 36.89
+      },
+      {
+        "w": "ochirilgan",
+        "s": 37.11,
+        "e": 37.61
+      },
+      {
+        "w": "ustuni",
+        "s": 37.71,
+        "e": 37.99
+      },
+      {
+        "w": "orqali",
+        "s": 38.03,
+        "e": 38.37
+      },
+      {
+        "w": "yumshoq",
+        "s": 38.67,
+        "e": 38.99
+      },
+      {
+        "w": "o'chirish",
+        "s": 39.09,
+        "e": 39.41
+      },
+      {
+        "w": "mexanizmini",
+        "s": 39.43,
+        "e": 39.97
+      },
+      {
+        "w": "ko'ramiz.",
+        "s": 40.01,
+        "e": 40.37
+      }
+    ]
+  },
+  {
+    "scene": "yumshoq_ochirish_qisman",
+    "id": "l8",
+    "text": "Faqat faol yozuvlarni tekshiruvchi qisman indeks o'chirilgan emailni qayta ro'yxatdan o'tkazishga ruxsat beradi.",
+    "show": "Faqat faol yozuvlarni tekshiruvchi qisman indeks o'chirilgan emailni qayta ro'yxatdan o'tkazishga ruxsat beradi.",
+    "say": "Faqat faol yozuvlarni tekshiruvchi qisman indeks o'chirilgan emailni qayta ro'yxatdan o'tkazishga ruxsat beradi.",
+    "a0": 41.17,
+    "a1": 46.72,
+    "words": [
+      {
+        "w": "Faqat",
+        "s": 41.17,
+        "e": 41.45
+      },
+      {
+        "w": "faol",
+        "s": 41.55,
+        "e": 41.81
+      },
+      {
+        "w": "yozuvlarni",
+        "s": 41.87,
+        "e": 42.33
+      },
+      {
+        "w": "tekshiruvchi",
+        "s": 42.37,
+        "e": 42.84
+      },
+      {
+        "w": "qisman",
+        "s": 42.92,
+        "e": 43.24
+      },
+      {
+        "w": "indeks",
+        "s": 43.34,
+        "e": 43.66
+      },
+      {
+        "w": "o'chirilgan",
+        "s": 43.96,
+        "e": 44.42
+      },
+      {
+        "w": "emailni",
+        "s": 44.52,
+        "e": 44.92
+      },
+      {
+        "w": "qayta",
+        "s": 45,
+        "e": 45.24
+      },
+      {
+        "w": "ro'yxatdan",
+        "s": 45.28,
+        "e": 45.64
+      },
+      {
+        "w": "o'tkazishga",
+        "s": 45.68,
+        "e": 46.08
+      },
+      {
+        "w": "ruxsat",
+        "s": 46.14,
+        "e": 46.4
+      },
+      {
+        "w": "beradi.",
+        "s": 46.44,
+        "e": 46.72
+      }
+    ]
+  }
+]
