@@ -1,0 +1,61 @@
+WEBVTT
+
+1
+00:01.420 --> 00:10.080
+Salom! Ushbu oltinchi bobda kundalik ishning to‘qson foizini tashkil
+qiluvchi uchta asosiy buyruqni o‘rganamiz: status, add va kommit.
+
+2
+00:10.270 --> 00:17.300
+Ushbu buyruqlar diskdagi fayllarni kuzatish, tayyorlash va
+doimiy tarixga snapshot sifatida muhrlash uchun xizmat qiladi.
+
+3
+00:20.430 --> 00:26.890
+Git status buyrug‘i uchala hududni o‘zaro solishtirib,
+qaysi fayl qanday holatda ekanini aniq ko‘rsatib beradi.
+
+4
+00:26.960 --> 00:35.130
+U treked va antreked fayllarni ajratadi, shuningdek qisqa minus
+s opsiyasi bilan holatni ixcham harflarda namoyish etadi.
+
+5
+00:38.140 --> 00:45.540
+Git add buyrug‘i shunchaki fayl qo‘shish emas, balki faylning
+aynan hozirgi mazmunini navbatdagi kommitga tayyorlashdir.
+
+6
+00:45.690 --> 00:52.820
+U yangi fayllarni kuzatishni boshlaydi, o‘zgarishlarni indeksga
+oladi va o‘chirilgan fayllarni ham qoralama rejasiga kiritadi.
+
+7
+00:55.830 --> 01:02.870
+Git kommit buyrug‘i indeksdagi barcha tayyorlangan fayllarni
+olib, ulardan loyihaning o‘zgarmas yangi suratini yaratadi.
+
+8
+01:03.000 --> 01:09.670
+Har bir kommit o‘z muallifi, sanasi, aniq tavsif
+xabari va noyob xesh kaliti bilan tarixga yoziladi.
+
+9
+01:12.600 --> 01:20.400
+Fayllar hayot sikli juda ravshan: antreked fayl add qilingach
+steyjd bo‘ladi, kommitdan so‘ng esa anmodifayd holatiga o‘tadi.
+
+10
+01:20.410 --> 01:26.280
+Tahrirlanganda yana modifayd bo‘ladi va bu sikl
+loyiha davomida uzluksiz takrorlanib boraveradi.
+
+11
+01:29.010 --> 01:36.150
+Xulosa qilib aytganda, status, add va kommit — har bir
+dasturchining eng asosiy, eng ko‘p ishlatadigan qurollaridir.
+
+12
+01:36.200 --> 01:42.590
+Keyingi bobda aynan nimalar o‘zgarganini qatorlar kesimida
+ko‘rsatuvchi diff buyrug‘ini ko‘rib chiqamiz. Rahmat!
