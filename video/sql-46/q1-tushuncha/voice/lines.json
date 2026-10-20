@@ -1,0 +1,675 @@
+[
+  {
+    "scene": "planner_va_selektivlik",
+    "id": "l1",
+    "text": "Rejalashtiruvchi so'rov narxini hisoblashda eng avvalo bitta savolga javob izlaydi: nechta qator qaytadi?",
+    "show": "Rejalashtiruvchi so'rov narxini hisoblashda eng avvalo bitta savolga javob izlaydi: nechta qator qaytadi?",
+    "say": "Rejalashtiruvchi so'rov narxini hisoblashda eng avvalo bitta savolga javob izlaydi: nechta qator qaytadi?",
+    "a0": 0.26,
+    "a1": 5.66,
+    "words": [
+      {
+        "w": "Rejalashtiruvchi",
+        "s": 0.26,
+        "e": 0.94
+      },
+      {
+        "w": "so'rov",
+        "s": 1.02,
+        "e": 1.28
+      },
+      {
+        "w": "narxini",
+        "s": 1.34,
+        "e": 1.66
+      },
+      {
+        "w": "hisoblashda",
+        "s": 1.7,
+        "e": 2.2
+      },
+      {
+        "w": "eng",
+        "s": 2.4,
+        "e": 2.54
+      },
+      {
+        "w": "avvalo",
+        "s": 2.6,
+        "e": 2.9
+      },
+      {
+        "w": "bitta",
+        "s": 3.02,
+        "e": 3.28
+      },
+      {
+        "w": "savolga",
+        "s": 3.34,
+        "e": 3.66
+      },
+      {
+        "w": "javob",
+        "s": 3.7,
+        "e": 3.92
+      },
+      {
+        "w": "izlaydi:",
+        "s": 3.96,
+        "e": 4.28
+      },
+      {
+        "w": "nechta",
+        "s": 4.74,
+        "e": 5.02
+      },
+      {
+        "w": "qator",
+        "s": 5.06,
+        "e": 5.3
+      },
+      {
+        "w": "qaytadi?",
+        "s": 5.34,
+        "e": 5.66
+      }
+    ]
+  },
+  {
+    "scene": "planner_va_selektivlik",
+    "id": "l2",
+    "text": "Buning uchun har bir shartning selektivligi, ya'ni mos keluvchi qatorlar ulushi oldindan yig'ilgan statistika orqali taxmin qilinadi.",
+    "show": "Buning uchun har bir shartning selektivligi, ya'ni mos keluvchi qatorlar ulushi oldindan yig'ilgan statistika orqali taxmin qilinadi.",
+    "say": "Buning uchun har bir shartning selektivligi, ya'ni mos keluvchi qatorlar ulushi oldindan yig'ilgan statistika orqali taxmin qilinadi.",
+    "a0": 6.36,
+    "a1": 12.83,
+    "words": [
+      {
+        "w": "Buning",
+        "s": 6.36,
+        "e": 6.56
+      },
+      {
+        "w": "uchun",
+        "s": 6.58,
+        "e": 6.78
+      },
+      {
+        "w": "har",
+        "s": 6.86,
+        "e": 7.0
+      },
+      {
+        "w": "bir",
+        "s": 7.06,
+        "e": 7.16
+      },
+      {
+        "w": "shartning",
+        "s": 7.22,
+        "e": 7.65
+      },
+      {
+        "w": "selektivligi,",
+        "s": 7.71,
+        "e": 8.37
+      },
+      {
+        "w": "ya'ni",
+        "s": 8.45,
+        "e": 8.65
+      },
+      {
+        "w": "mos",
+        "s": 9.01,
+        "e": 9.23
+      },
+      {
+        "w": "keluvchi",
+        "s": 9.29,
+        "e": 9.61
+      },
+      {
+        "w": "qatorlar",
+        "s": 9.67,
+        "e": 10.13
+      },
+      {
+        "w": "ulushi",
+        "s": 10.23,
+        "e": 10.49
+      },
+      {
+        "w": "oldindan",
+        "s": 10.65,
+        "e": 11.03
+      },
+      {
+        "w": "yig'ilgan",
+        "s": 11.07,
+        "e": 11.43
+      },
+      {
+        "w": "statistika",
+        "s": 11.49,
+        "e": 11.89
+      },
+      {
+        "w": "orqali",
+        "s": 11.95,
+        "e": 12.19
+      },
+      {
+        "w": "taxmin",
+        "s": 12.23,
+        "e": 12.49
+      },
+      {
+        "w": "qilinadi.",
+        "s": 12.51,
+        "e": 12.83
+      }
+    ]
+  },
+  {
+    "scene": "pg_stats_tuzilishi",
+    "id": "l3",
+    "text": "Postgresda pi-ji stats ko'rinishi eng ko'p uchraydigan qiymatlar chastotasi, gistogramma chegaralari va korrelyatsiyani saqlaydi.",
+    "show": "Postgresda pi-ji stats ko'rinishi eng ko'p uchraydigan qiymatlar chastotasi, gistogramma chegaralari va korrelyatsiyani saqlaydi.",
+    "say": "Postgresda pi-ji stats ko'rinishi eng ko'p uchraydigan qiymatlar chastotasi, gistogramma chegaralari va korrelyatsiyani saqlaydi.",
+    "a0": 13.63,
+    "a1": 20.37,
+    "words": [
+      {
+        "w": "Postgresda",
+        "s": 13.63,
+        "e": 14.21
+      },
+      {
+        "w": "pi-ji",
+        "s": 14.35,
+        "e": 14.69
+      },
+      {
+        "w": "stats",
+        "s": 14.81,
+        "e": 15.09
+      },
+      {
+        "w": "ko'rinishi",
+        "s": 15.09,
+        "e": 15.51
+      },
+      {
+        "w": "eng",
+        "s": 15.75,
+        "e": 15.91
+      },
+      {
+        "w": "ko'p",
+        "s": 15.95,
+        "e": 16.11
+      },
+      {
+        "w": "uchraydigan",
+        "s": 16.15,
+        "e": 16.57
+      },
+      {
+        "w": "qiymatlar",
+        "s": 16.63,
+        "e": 17.05
+      },
+      {
+        "w": "chastotasi,",
+        "s": 17.09,
+        "e": 17.61
+      },
+      {
+        "w": "gistogramma",
+        "s": 18.07,
+        "e": 18.65
+      },
+      {
+        "w": "chegaralari",
+        "s": 18.69,
+        "e": 19.19
+      },
+      {
+        "w": "va",
+        "s": 19.23,
+        "e": 19.29
+      },
+      {
+        "w": "korrelyatsiyani",
+        "s": 19.39,
+        "e": 20.01
+      },
+      {
+        "w": "saqlaydi.",
+        "s": 20.03,
+        "e": 20.37
+      }
+    ]
+  },
+  {
+    "scene": "pg_stats_tuzilishi",
+    "id": "l4",
+    "text": "Ushbu ma'lumotlar avtovakuum va analayz tomonidan tasodifiy namunalar asosida davriy ravishda yangilanib boradi.",
+    "show": "Ushbu ma'lumotlar avtovakuum va analayz tomonidan tasodifiy namunalar asosida davriy ravishda yangilanib boradi.",
+    "say": "Ushbu ma'lumotlar avtovakuum va analayz tomonidan tasodifiy namunalar asosida davriy ravishda yangilanib boradi.",
+    "a0": 21.27,
+    "a1": 27.16,
+    "words": [
+      {
+        "w": "Ushbu",
+        "s": 21.27,
+        "e": 21.49
+      },
+      {
+        "w": "ma'lumotlar",
+        "s": 21.55,
+        "e": 22.09
+      },
+      {
+        "w": "avtovakuum",
+        "s": 22.29,
+        "e": 22.92
+      },
+      {
+        "w": "va",
+        "s": 23.0,
+        "e": 23.06
+      },
+      {
+        "w": "analayz",
+        "s": 23.18,
+        "e": 23.54
+      },
+      {
+        "w": "tomonidan",
+        "s": 23.56,
+        "e": 23.98
+      },
+      {
+        "w": "tasodifiy",
+        "s": 24.06,
+        "e": 24.56
+      },
+      {
+        "w": "namunalar",
+        "s": 24.62,
+        "e": 25.08
+      },
+      {
+        "w": "asosida",
+        "s": 25.14,
+        "e": 25.54
+      },
+      {
+        "w": "davriy",
+        "s": 25.86,
+        "e": 26.14
+      },
+      {
+        "w": "ravishda",
+        "s": 26.2,
+        "e": 26.5
+      },
+      {
+        "w": "yangilanib",
+        "s": 26.56,
+        "e": 26.9
+      },
+      {
+        "w": "boradi.",
+        "s": 26.92,
+        "e": 27.16
+      }
+    ]
+  },
+  {
+    "scene": "bogliq_ustunlar_create_stats",
+    "id": "l5",
+    "text": "Ammo rejalashtiruvchi ustunlarni bir-biriga bog'liq emas deb hisoblaydi, masalan tuman va viloyat shartlarida o'n baravar adashishi mumkin.",
+    "show": "Ammo rejalashtiruvchi ustunlarni bir-biriga bog'liq emas deb hisoblaydi, masalan tuman va viloyat shartlarida o'n baravar adashishi mumkin.",
+    "say": "Ammo rejalashtiruvchi ustunlarni bir-biriga bog'liq emas deb hisoblaydi, masalan tuman va viloyat shartlarida o'n baravar adashishi mumkin.",
+    "a0": 27.82,
+    "a1": 34.94,
+    "words": [
+      {
+        "w": "Ammo",
+        "s": 27.82,
+        "e": 28.02
+      },
+      {
+        "w": "rejalashtiruvchi",
+        "s": 28.12,
+        "e": 28.8
+      },
+      {
+        "w": "ustunlarni",
+        "s": 28.9,
+        "e": 29.46
+      },
+      {
+        "w": "bir-biriga",
+        "s": 29.54,
+        "e": 29.96
+      },
+      {
+        "w": "bog'liq",
+        "s": 30.04,
+        "e": 30.34
+      },
+      {
+        "w": "emas",
+        "s": 30.42,
+        "e": 30.66
+      },
+      {
+        "w": "deb",
+        "s": 30.68,
+        "e": 30.78
+      },
+      {
+        "w": "hisoblaydi,",
+        "s": 30.8,
+        "e": 31.22
+      },
+      {
+        "w": "masalan",
+        "s": 31.5,
+        "e": 31.8
+      },
+      {
+        "w": "tuman",
+        "s": 32.08,
+        "e": 32.42
+      },
+      {
+        "w": "va",
+        "s": 32.48,
+        "e": 32.54
+      },
+      {
+        "w": "viloyat",
+        "s": 32.62,
+        "e": 32.98
+      },
+      {
+        "w": "shartlarida",
+        "s": 33.0,
+        "e": 33.44
+      },
+      {
+        "w": "o'n",
+        "s": 33.78,
+        "e": 33.9
+      },
+      {
+        "w": "baravar",
+        "s": 33.98,
+        "e": 34.26
+      },
+      {
+        "w": "adashishi",
+        "s": 34.34,
+        "e": 34.66
+      },
+      {
+        "w": "mumkin.",
+        "s": 34.7,
+        "e": 34.94
+      }
+    ]
+  },
+  {
+    "scene": "bogliq_ustunlar_create_stats",
+    "id": "l6",
+    "text": "Bunday muammoni hal qilish uchun krieyt statistiks buyrug'i bilan maxsus funksional bog'liqlik statistikasi yaratiladi.",
+    "show": "Bunday muammoni hal qilish uchun krieyt statistiks buyrug'i bilan maxsus funksional bog'liqlik statistikasi yaratiladi.",
+    "say": "Bunday muammoni hal qilish uchun krieyt statistiks buyrug'i bilan maxsus funksional bog'liqlik statistikasi yaratiladi.",
+    "a0": 35.92,
+    "a1": 41.69,
+    "words": [
+      {
+        "w": "Bunday",
+        "s": 35.92,
+        "e": 36.18
+      },
+      {
+        "w": "muammoni",
+        "s": 36.22,
+        "e": 36.63
+      },
+      {
+        "w": "hal",
+        "s": 36.67,
+        "e": 36.81
+      },
+      {
+        "w": "qilish",
+        "s": 36.85,
+        "e": 37.03
+      },
+      {
+        "w": "uchun",
+        "s": 37.07,
+        "e": 37.23
+      },
+      {
+        "w": "krieyt",
+        "s": 37.51,
+        "e": 37.87
+      },
+      {
+        "w": "statistiks",
+        "s": 37.93,
+        "e": 38.47
+      },
+      {
+        "w": "buyrug'i",
+        "s": 38.51,
+        "e": 38.83
+      },
+      {
+        "w": "bilan",
+        "s": 38.83,
+        "e": 39.03
+      },
+      {
+        "w": "maxsus",
+        "s": 39.15,
+        "e": 39.53
+      },
+      {
+        "w": "funksional",
+        "s": 39.61,
+        "e": 40.09
+      },
+      {
+        "w": "bog'liqlik",
+        "s": 40.17,
+        "e": 40.65
+      },
+      {
+        "w": "statistikasi",
+        "s": 40.71,
+        "e": 41.23
+      },
+      {
+        "w": "yaratiladi.",
+        "s": 41.27,
+        "e": 41.69
+      }
+    ]
+  },
+  {
+    "scene": "rejaga_tasir_va_dialektlar",
+    "id": "l7",
+    "text": "Rejani majburlashda Postgresda ineybl parametrlari vaqtinchalik sinov uchun berilgan bo'lsa, May es-kyu-elda opti-mayzer hintlar ishlatiladi.",
+    "show": "Rejani majburlashda Postgresda ineybl parametrlari vaqtinchalik sinov uchun berilgan bo'lsa, May es-kyu-elda opti-mayzer hintlar ishlatiladi.",
+    "say": "Rejani majburlashda Postgresda ineybl parametrlari vaqtinchalik sinov uchun berilgan bo'lsa, May es-kyu-elda opti-mayzer hintlar ishlatiladi.",
+    "a0": 42.65,
+    "a1": 49.9,
+    "words": [
+      {
+        "w": "Rejani",
+        "s": 42.65,
+        "e": 42.99
+      },
+      {
+        "w": "majburlashda",
+        "s": 43.03,
+        "e": 43.59
+      },
+      {
+        "w": "Postgresda",
+        "s": 43.89,
+        "e": 44.45
+      },
+      {
+        "w": "ineybl",
+        "s": 44.63,
+        "e": 44.99
+      },
+      {
+        "w": "parametrlari",
+        "s": 45.05,
+        "e": 45.67
+      },
+      {
+        "w": "vaqtinchalik",
+        "s": 45.73,
+        "e": 46.25
+      },
+      {
+        "w": "sinov",
+        "s": 46.29,
+        "e": 46.53
+      },
+      {
+        "w": "uchun",
+        "s": 46.55,
+        "e": 46.71
+      },
+      {
+        "w": "berilgan",
+        "s": 46.73,
+        "e": 47.11
+      },
+      {
+        "w": "bo'lsa,",
+        "s": 47.13,
+        "e": 47.37
+      },
+      {
+        "w": "May",
+        "s": 47.69,
+        "e": 47.89
+      },
+      {
+        "w": "es-kyu-elda",
+        "s": 47.91,
+        "e": 48.37
+      },
+      {
+        "w": "opti-mayzer",
+        "s": 48.55,
+        "e": 49.05
+      },
+      {
+        "w": "hintlar",
+        "s": 49.13,
+        "e": 49.47
+      },
+      {
+        "w": "ishlatiladi.",
+        "s": 49.49,
+        "e": 49.9
+      }
+    ]
+  },
+  {
+    "scene": "rejaga_tasir_va_dialektlar",
+    "id": "l8",
+    "text": "Es-kyu-laytda esa indeksd bay kalit so'zi va pragma opti-mayz buyrug'i statistika yig'ishni tartibga soladi.",
+    "show": "Es-kyu-laytda esa indeksd bay kalit so'zi va pragma opti-mayz buyrug'i statistika yig'ishni tartibga soladi.",
+    "say": "Es-kyu-laytda esa indeksd bay kalit so'zi va pragma opti-mayz buyrug'i statistika yig'ishni tartibga soladi.",
+    "a0": 50.56,
+    "a1": 56.1,
+    "words": [
+      {
+        "w": "Es-kyu-laytda",
+        "s": 50.56,
+        "e": 51.2
+      },
+      {
+        "w": "esa",
+        "s": 51.28,
+        "e": 51.44
+      },
+      {
+        "w": "indeksd",
+        "s": 51.66,
+        "e": 52.08
+      },
+      {
+        "w": "bay",
+        "s": 52.14,
+        "e": 52.28
+      },
+      {
+        "w": "kalit",
+        "s": 52.34,
+        "e": 52.6
+      },
+      {
+        "w": "so'zi",
+        "s": 52.62,
+        "e": 52.84
+      },
+      {
+        "w": "va",
+        "s": 52.88,
+        "e": 52.96
+      },
+      {
+        "w": "pragma",
+        "s": 53.06,
+        "e": 53.42
+      },
+      {
+        "w": "opti-mayz",
+        "s": 53.58,
+        "e": 54.0
+      },
+      {
+        "w": "buyrug'i",
+        "s": 54.04,
+        "e": 54.38
+      },
+      {
+        "w": "statistika",
+        "s": 54.62,
+        "e": 55.1
+      },
+      {
+        "w": "yig'ishni",
+        "s": 55.14,
+        "e": 55.42
+      },
+      {
+        "w": "tartibga",
+        "s": 55.48,
+        "e": 55.8
+      },
+      {
+        "w": "soladi.",
+        "s": 55.82,
+        "e": 56.1
+      }
+    ]
+  }
+]

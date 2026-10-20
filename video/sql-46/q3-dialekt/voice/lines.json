@@ -1,0 +1,715 @@
+[
+  {
+    "scene": "mysql_gistogramma",
+    "id": "l1",
+    "text": "May es-kyu-elda gistogrammalar asosan indeksi yo'q ustunlar uchun foydali bo'lib, tenglik va oraliq shartlarida to'g'ri selektivlik beradi.",
+    "show": "May es-kyu-elda gistogrammalar asosan indeksi yo'q ustunlar uchun foydali bo'lib, tenglik va oraliq shartlarida to'g'ri selektivlik beradi.",
+    "say": "May es-kyu-elda gistogrammalar asosan indeksi yo'q ustunlar uchun foydali bo'lib, tenglik va oraliq shartlarida to'g'ri selektivlik beradi.",
+    "a0": 0.22,
+    "a1": 8.37,
+    "words": [
+      {
+        "w": "May",
+        "s": 0.22,
+        "e": 0.38
+      },
+      {
+        "w": "es-kyu-elda",
+        "s": 0.46,
+        "e": 0.96
+      },
+      {
+        "w": "gistogrammalar",
+        "s": 1.3,
+        "e": 2.0
+      },
+      {
+        "w": "asosan",
+        "s": 2.1,
+        "e": 2.58
+      },
+      {
+        "w": "indeksi",
+        "s": 2.7,
+        "e": 3.06
+      },
+      {
+        "w": "yo'q",
+        "s": 3.12,
+        "e": 3.26
+      },
+      {
+        "w": "ustunlar",
+        "s": 3.32,
+        "e": 3.72
+      },
+      {
+        "w": "uchun",
+        "s": 3.76,
+        "e": 3.94
+      },
+      {
+        "w": "foydali",
+        "s": 4.02,
+        "e": 4.38
+      },
+      {
+        "w": "bo'lib,",
+        "s": 4.42,
+        "e": 4.66
+      },
+      {
+        "w": "tenglik",
+        "s": 5.0,
+        "e": 5.5
+      },
+      {
+        "w": "va",
+        "s": 5.6,
+        "e": 5.66
+      },
+      {
+        "w": "oraliq",
+        "s": 5.86,
+        "e": 6.2
+      },
+      {
+        "w": "shartlarida",
+        "s": 6.24,
+        "e": 6.76
+      },
+      {
+        "w": "to'g'ri",
+        "s": 7.0,
+        "e": 7.32
+      },
+      {
+        "w": "selektivlik",
+        "s": 7.44,
+        "e": 8.05
+      },
+      {
+        "w": "beradi.",
+        "s": 8.09,
+        "e": 8.37
+      }
+    ]
+  },
+  {
+    "scene": "mysql_gistogramma",
+    "id": "l2",
+    "text": "Masalan, indekssiz holat ustuniga o'nta chelakli gistogramma qo'shilgach, filtr ko'rsatkichi o'n foizdan haqiqiy ikki foizga tushadi.",
+    "show": "Masalan, indekssiz holat ustuniga o'nta chelakli gistogramma qo'shilgach, filtr ko'rsatkichi o'n foizdan haqiqiy ikki foizga tushadi.",
+    "say": "Masalan, indekssiz holat ustuniga o'nta chelakli gistogramma qo'shilgach, filtr ko'rsatkichi o'n foizdan haqiqiy ikki foizga tushadi.",
+    "a0": 8.95,
+    "a1": 17.71,
+    "words": [
+      {
+        "w": "Masalan,",
+        "s": 8.95,
+        "e": 9.29
+      },
+      {
+        "w": "indekssiz",
+        "s": 9.69,
+        "e": 10.25
+      },
+      {
+        "w": "holat",
+        "s": 10.35,
+        "e": 10.73
+      },
+      {
+        "w": "ustuniga",
+        "s": 10.79,
+        "e": 11.23
+      },
+      {
+        "w": "o'nta",
+        "s": 11.47,
+        "e": 11.77
+      },
+      {
+        "w": "chelakli",
+        "s": 11.89,
+        "e": 12.31
+      },
+      {
+        "w": "gistogramma",
+        "s": 12.41,
+        "e": 12.99
+      },
+      {
+        "w": "qo'shilgach,",
+        "s": 13.03,
+        "e": 13.57
+      },
+      {
+        "w": "filtr",
+        "s": 13.93,
+        "e": 14.27
+      },
+      {
+        "w": "ko'rsatkichi",
+        "s": 14.31,
+        "e": 14.87
+      },
+      {
+        "w": "o'n",
+        "s": 15.15,
+        "e": 15.27
+      },
+      {
+        "w": "foizdan",
+        "s": 15.37,
+        "e": 15.91
+      },
+      {
+        "w": "haqiqiy",
+        "s": 16.03,
+        "e": 16.51
+      },
+      {
+        "w": "ikki",
+        "s": 16.73,
+        "e": 16.97
+      },
+      {
+        "w": "foizga",
+        "s": 17.01,
+        "e": 17.37
+      },
+      {
+        "w": "tushadi.",
+        "s": 17.41,
+        "e": 17.71
+      }
+    ]
+  },
+  {
+    "scene": "mysql_optimizer_hints",
+    "id": "l3",
+    "text": "Agar ustunda indeks bo'lsa, rejalashtiruvchi uni noo'rin tanlaganda opti-mayzer hintlar orqali to'liq skanerlashga majburlash mumkin.",
+    "show": "Agar ustunda indeks bo'lsa, rejalashtiruvchi uni noo'rin tanlaganda opti-mayzer hintlar orqali to'liq skanerlashga majburlash mumkin.",
+    "say": "Agar ustunda indeks bo'lsa, rejalashtiruvchi uni noo'rin tanlaganda opti-mayzer hintlar orqali to'liq skanerlashga majburlash mumkin.",
+    "a0": 18.35,
+    "a1": 26.32,
+    "words": [
+      {
+        "w": "Agar",
+        "s": 18.35,
+        "e": 18.55
+      },
+      {
+        "w": "ustunda",
+        "s": 18.81,
+        "e": 19.17
+      },
+      {
+        "w": "indeks",
+        "s": 19.27,
+        "e": 19.59
+      },
+      {
+        "w": "bo'lsa,",
+        "s": 19.65,
+        "e": 19.91
+      },
+      {
+        "w": "rejalashtiruvchi",
+        "s": 20.23,
+        "e": 20.95
+      },
+      {
+        "w": "uni",
+        "s": 21.01,
+        "e": 21.15
+      },
+      {
+        "w": "noo'rin",
+        "s": 21.35,
+        "e": 21.83
+      },
+      {
+        "w": "tanlaganda",
+        "s": 21.89,
+        "e": 22.43
+      },
+      {
+        "w": "opti-mayzer",
+        "s": 22.86,
+        "e": 23.5
+      },
+      {
+        "w": "hintlar",
+        "s": 23.6,
+        "e": 23.96
+      },
+      {
+        "w": "orqali",
+        "s": 24.02,
+        "e": 24.32
+      },
+      {
+        "w": "to'liq",
+        "s": 24.62,
+        "e": 24.9
+      },
+      {
+        "w": "skanerlashga",
+        "s": 24.98,
+        "e": 25.56
+      },
+      {
+        "w": "majburlash",
+        "s": 25.62,
+        "e": 26.08
+      },
+      {
+        "w": "mumkin.",
+        "s": 26.1,
+        "e": 26.32
+      }
+    ]
+  },
+  {
+    "scene": "mysql_optimizer_hints",
+    "id": "l4",
+    "text": "Sinovimizda no-indeks hinti tufayli so'rov bajarilish vaqti to'qson uch millisekunddan o'ttiz millisekundga qisqardi.",
+    "show": "Sinovimizda no-indeks hinti tufayli so'rov bajarilish vaqti to'qson uch millisekunddan o'ttiz millisekundga qisqardi.",
+    "say": "Sinovimizda no-indeks hinti tufayli so'rov bajarilish vaqti to'qson uch millisekunddan o'ttiz millisekundga qisqardi.",
+    "a0": 26.96,
+    "a1": 33.92,
+    "words": [
+      {
+        "w": "Sinovimizda",
+        "s": 26.96,
+        "e": 27.56
+      },
+      {
+        "w": "no-indeks",
+        "s": 27.98,
+        "e": 28.68
+      },
+      {
+        "w": "hinti",
+        "s": 28.74,
+        "e": 28.96
+      },
+      {
+        "w": "tufayli",
+        "s": 29.0,
+        "e": 29.32
+      },
+      {
+        "w": "so'rov",
+        "s": 29.44,
+        "e": 29.72
+      },
+      {
+        "w": "bajarilish",
+        "s": 29.76,
+        "e": 30.18
+      },
+      {
+        "w": "vaqti",
+        "s": 30.22,
+        "e": 30.48
+      },
+      {
+        "w": "to'qson",
+        "s": 30.78,
+        "e": 31.16
+      },
+      {
+        "w": "uch",
+        "s": 31.28,
+        "e": 31.42
+      },
+      {
+        "w": "millisekunddan",
+        "s": 31.48,
+        "e": 32.26
+      },
+      {
+        "w": "o'ttiz",
+        "s": 32.5,
+        "e": 32.82
+      },
+      {
+        "w": "millisekundga",
+        "s": 32.88,
+        "e": 33.46
+      },
+      {
+        "w": "qisqardi.",
+        "s": 33.5,
+        "e": 33.92
+      }
+    ]
+  },
+  {
+    "scene": "sqlite_statistika_pragma",
+    "id": "l5",
+    "text": "Es-kyu-laytda esa statistika ma'lumotlari es-kyu-layt stat bir ichki jadvalida indekslar bo'yicha o'rtacha takrorlanish sifatida saqlanadi.",
+    "show": "Es-kyu-laytda esa statistika ma'lumotlari es-kyu-layt stat bir ichki jadvalida indekslar bo'yicha o'rtacha takrorlanish sifatida saqlanadi.",
+    "say": "Es-kyu-laytda esa statistika ma'lumotlari es-kyu-layt stat bir ichki jadvalida indekslar bo'yicha o'rtacha takrorlanish sifatida saqlanadi.",
+    "a0": 34.9,
+    "a1": 43.09,
+    "words": [
+      {
+        "w": "Es-kyu-laytda",
+        "s": 34.9,
+        "e": 35.56
+      },
+      {
+        "w": "esa",
+        "s": 35.6,
+        "e": 35.78
+      },
+      {
+        "w": "statistika",
+        "s": 36.14,
+        "e": 36.7
+      },
+      {
+        "w": "ma'lumotlari",
+        "s": 36.76,
+        "e": 37.3
+      },
+      {
+        "w": "es-kyu-layt",
+        "s": 37.46,
+        "e": 38.05
+      },
+      {
+        "w": "stat",
+        "s": 38.19,
+        "e": 38.43
+      },
+      {
+        "w": "bir",
+        "s": 38.55,
+        "e": 38.71
+      },
+      {
+        "w": "ichki",
+        "s": 38.83,
+        "e": 39.05
+      },
+      {
+        "w": "jadvalida",
+        "s": 39.09,
+        "e": 39.57
+      },
+      {
+        "w": "indekslar",
+        "s": 39.93,
+        "e": 40.43
+      },
+      {
+        "w": "bo'yicha",
+        "s": 40.49,
+        "e": 40.81
+      },
+      {
+        "w": "o'rtacha",
+        "s": 41.03,
+        "e": 41.41
+      },
+      {
+        "w": "takrorlanish",
+        "s": 41.49,
+        "e": 42.15
+      },
+      {
+        "w": "sifatida",
+        "s": 42.21,
+        "e": 42.59
+      },
+      {
+        "w": "saqlanadi.",
+        "s": 42.65,
+        "e": 43.09
+      }
+    ]
+  },
+  {
+    "scene": "sqlite_statistika_pragma",
+    "id": "l6",
+    "text": "Tizim ishlab chiquvchilari tavsiya etgan pragma opti-mayz buyrug'i kerakli analayz amallarini avtomatik va tezkor bajaradi.",
+    "show": "Tizim ishlab chiquvchilari tavsiya etgan pragma opti-mayz buyrug'i kerakli analayz amallarini avtomatik va tezkor bajaradi.",
+    "say": "Tizim ishlab chiquvchilari tavsiya etgan pragma opti-mayz buyrug'i kerakli analayz amallarini avtomatik va tezkor bajaradi.",
+    "a0": 43.89,
+    "a1": 51.17,
+    "words": [
+      {
+        "w": "Tizim",
+        "s": 43.89,
+        "e": 44.15
+      },
+      {
+        "w": "ishlab",
+        "s": 44.19,
+        "e": 44.43
+      },
+      {
+        "w": "chiquvchilari",
+        "s": 44.45,
+        "e": 44.97
+      },
+      {
+        "w": "tavsiya",
+        "s": 45.01,
+        "e": 45.33
+      },
+      {
+        "w": "etgan",
+        "s": 45.37,
+        "e": 45.65
+      },
+      {
+        "w": "pragma",
+        "s": 45.95,
+        "e": 46.35
+      },
+      {
+        "w": "opti-mayz",
+        "s": 46.51,
+        "e": 47.01
+      },
+      {
+        "w": "buyrug'i",
+        "s": 47.07,
+        "e": 47.43
+      },
+      {
+        "w": "kerakli",
+        "s": 47.71,
+        "e": 48.13
+      },
+      {
+        "w": "analayz",
+        "s": 48.39,
+        "e": 48.85
+      },
+      {
+        "w": "amallarini",
+        "s": 48.93,
+        "e": 49.43
+      },
+      {
+        "w": "avtomatik",
+        "s": 49.53,
+        "e": 50.13
+      },
+      {
+        "w": "va",
+        "s": 50.19,
+        "e": 50.27
+      },
+      {
+        "w": "tezkor",
+        "s": 50.37,
+        "e": 50.71
+      },
+      {
+        "w": "bajaradi.",
+        "s": 50.75,
+        "e": 51.17
+      }
+    ]
+  },
+  {
+    "scene": "sqlite_indexed_by",
+    "id": "l7",
+    "text": "So'rovda aniq bir indeksni talab qilish uchun indeksd bay, yoki indekslarni chetlab o'tish uchun not indeksd direktivasi qo'llaniladi.",
+    "show": "So'rovda aniq bir indeksni talab qilish uchun indeksd bay, yoki indekslarni chetlab o'tish uchun not indeksd direktivasi qo'llaniladi.",
+    "say": "So'rovda aniq bir indeksni talab qilish uchun indeksd bay, yoki indekslarni chetlab o'tish uchun not indeksd direktivasi qo'llaniladi.",
+    "a0": 51.93,
+    "a1": 59.94,
+    "words": [
+      {
+        "w": "So'rovda",
+        "s": 51.93,
+        "e": 52.31
+      },
+      {
+        "w": "aniq",
+        "s": 52.54,
+        "e": 52.72
+      },
+      {
+        "w": "bir",
+        "s": 52.78,
+        "e": 52.9
+      },
+      {
+        "w": "indeksni",
+        "s": 52.98,
+        "e": 53.38
+      },
+      {
+        "w": "talab",
+        "s": 53.44,
+        "e": 53.68
+      },
+      {
+        "w": "qilish",
+        "s": 53.72,
+        "e": 53.94
+      },
+      {
+        "w": "uchun",
+        "s": 53.98,
+        "e": 54.16
+      },
+      {
+        "w": "indeksd",
+        "s": 54.54,
+        "e": 55.04
+      },
+      {
+        "w": "bay,",
+        "s": 55.16,
+        "e": 55.36
+      },
+      {
+        "w": "yoki",
+        "s": 55.38,
+        "e": 55.88
+      },
+      {
+        "w": "indekslarni",
+        "s": 56.22,
+        "e": 56.76
+      },
+      {
+        "w": "chetlab",
+        "s": 56.8,
+        "e": 57.12
+      },
+      {
+        "w": "o'tish",
+        "s": 57.14,
+        "e": 57.34
+      },
+      {
+        "w": "uchun",
+        "s": 57.36,
+        "e": 57.56
+      },
+      {
+        "w": "not",
+        "s": 57.94,
+        "e": 58.16
+      },
+      {
+        "w": "indeksd",
+        "s": 58.3,
+        "e": 58.72
+      },
+      {
+        "w": "direktivasi",
+        "s": 58.76,
+        "e": 59.32
+      },
+      {
+        "w": "qo'llaniladi.",
+        "s": 59.4,
+        "e": 59.94
+      }
+    ]
+  },
+  {
+    "scene": "sqlite_indexed_by",
+    "id": "l8",
+    "text": "Es-kyu-laytda bunday ko'rsatmalar maslahat emas, balki qat'iy buyruq bo'lib, hatto reja samarasiz bo'lsa ham unga bo'ysunadi.",
+    "show": "Es-kyu-laytda bunday ko'rsatmalar maslahat emas, balki qat'iy buyruq bo'lib, hatto reja samarasiz bo'lsa ham unga bo'ysunadi.",
+    "say": "Es-kyu-laytda bunday ko'rsatmalar maslahat emas, balki qat'iy buyruq bo'lib, hatto reja samarasiz bo'lsa ham unga bo'ysunadi.",
+    "a0": 60.86,
+    "a1": 68.34,
+    "words": [
+      {
+        "w": "Es-kyu-laytda",
+        "s": 60.86,
+        "e": 61.5
+      },
+      {
+        "w": "bunday",
+        "s": 61.82,
+        "e": 62.08
+      },
+      {
+        "w": "ko'rsatmalar",
+        "s": 62.12,
+        "e": 62.69
+      },
+      {
+        "w": "maslahat",
+        "s": 62.81,
+        "e": 63.23
+      },
+      {
+        "w": "emas,",
+        "s": 63.29,
+        "e": 63.53
+      },
+      {
+        "w": "balki",
+        "s": 63.75,
+        "e": 63.99
+      },
+      {
+        "w": "qat'iy",
+        "s": 64.29,
+        "e": 64.71
+      },
+      {
+        "w": "buyruq",
+        "s": 64.83,
+        "e": 65.15
+      },
+      {
+        "w": "bo'lib,",
+        "s": 65.21,
+        "e": 65.43
+      },
+      {
+        "w": "hatto",
+        "s": 65.65,
+        "e": 65.89
+      },
+      {
+        "w": "reja",
+        "s": 66.11,
+        "e": 66.37
+      },
+      {
+        "w": "samarasiz",
+        "s": 66.47,
+        "e": 67.02
+      },
+      {
+        "w": "bo'lsa",
+        "s": 67.06,
+        "e": 67.32
+      },
+      {
+        "w": "ham",
+        "s": 67.34,
+        "e": 67.48
+      },
+      {
+        "w": "unga",
+        "s": 67.64,
+        "e": 67.82
+      },
+      {
+        "w": "bo'ysunadi.",
+        "s": 67.86,
+        "e": 68.34
+      }
+    ]
+  }
+]

@@ -1,0 +1,41 @@
+WEBVTT
+
+1
+00:01.420 --> 00:07.270
+Rejalashtiruvchi so'rov narxini hisoblashda eng avvalo
+bitta savolga javob izlaydi: nechta qator qaytadi?
+
+2
+00:07.520 --> 00:14.440
+Buning uchun har bir shartning selektivligi, ya'ni mos keluvchi
+qatorlar ulushi oldindan yig'ilgan statistika orqali taxmin qilinadi.
+
+3
+00:17.390 --> 00:24.580
+Postgresda pi-ji stats ko'rinishi eng ko'p uchraydigan qiymatlar
+chastotasi, gistogramma chegaralari va korrelyatsiyani saqlaydi.
+
+4
+00:25.030 --> 00:31.370
+Ushbu ma'lumotlar avtovakuum va analayz tomonidan tasodifiy
+namunalar asosida davriy ravishda yangilanib boradi.
+
+5
+00:34.180 --> 00:41.750
+Ammo rejalashtiruvchi ustunlarni bir-biriga bog'liq emas deb hisoblaydi,
+masalan tuman va viloyat shartlarida o'n baravar adashishi mumkin.
+
+6
+00:42.280 --> 00:48.500
+Bunday muammoni hal qilish uchun krieyt statistiks buyrug'i
+bilan maxsus funksional bog'liqlik statistikasi yaratiladi.
+
+7
+00:51.610 --> 00:59.310
+Rejani majburlashda Postgresda ineybl parametrlari vaqtinchalik sinov
+uchun berilgan bo'lsa, May es-kyu-elda opti-mayzer hintlar ishlatiladi.
+
+8
+00:59.520 --> 01:05.510
+Es-kyu-laytda esa indeksd bay kalit so'zi va pragma
+opti-mayz buyrug'i statistika yig'ishni tartibga soladi.

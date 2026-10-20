@@ -1,0 +1,619 @@
+[
+  {
+    "scene": "pg_stats_korinishi",
+    "id": "l1",
+    "text": "Postgresda pi-ji stats ko'rinishi jadvaldagi ustunlar bo'yicha eng muhim statistik ko'rsatkichlarni beradi.",
+    "show": "Postgresda pi-ji stats ko'rinishi jadvaldagi ustunlar bo'yicha eng muhim statistik ko'rsatkichlarni beradi.",
+    "say": "Postgresda pi-ji stats ko'rinishi jadvaldagi ustunlar bo'yicha eng muhim statistik ko'rsatkichlarni beradi.",
+    "a0": 0.18,
+    "a1": 6.34,
+    "words": [
+      {
+        "w": "Postgresda",
+        "s": 0.18,
+        "e": 0.78
+      },
+      {
+        "w": "pi-ji",
+        "s": 1.26,
+        "e": 1.54
+      },
+      {
+        "w": "stats",
+        "s": 1.66,
+        "e": 1.96
+      },
+      {
+        "w": "ko'rinishi",
+        "s": 2.0,
+        "e": 2.46
+      },
+      {
+        "w": "jadvaldagi",
+        "s": 2.7,
+        "e": 3.26
+      },
+      {
+        "w": "ustunlar",
+        "s": 3.36,
+        "e": 3.8
+      },
+      {
+        "w": "bo'yicha",
+        "s": 3.86,
+        "e": 4.16
+      },
+      {
+        "w": "eng",
+        "s": 4.36,
+        "e": 4.5
+      },
+      {
+        "w": "muhim",
+        "s": 4.56,
+        "e": 4.8
+      },
+      {
+        "w": "statistik",
+        "s": 4.88,
+        "e": 5.36
+      },
+      {
+        "w": "ko'rsatkichlarni",
+        "s": 5.38,
+        "e": 6.04
+      },
+      {
+        "w": "beradi.",
+        "s": 6.06,
+        "e": 6.34
+      }
+    ]
+  },
+  {
+    "scene": "pg_stats_korinishi",
+    "id": "l2",
+    "text": "Yuz ming qatorli manzillar jadvalida holat ustuni uchun unikal qiymatlar soni va ularning uchrash foizlari aniq qayd etilgan.",
+    "show": "Yuz ming qatorli manzillar jadvalida holat ustuni uchun unikal qiymatlar soni va ularning uchrash foizlari aniq qayd etilgan.",
+    "say": "Yuz ming qatorli manzillar jadvalida holat ustuni uchun unikal qiymatlar soni va ularning uchrash foizlari aniq qayd etilgan.",
+    "a0": 7.12,
+    "a1": 13.93,
+    "words": [
+      {
+        "w": "Yuz",
+        "s": 7.12,
+        "e": 7.26
+      },
+      {
+        "w": "ming",
+        "s": 7.3,
+        "e": 7.44
+      },
+      {
+        "w": "qatorli",
+        "s": 7.46,
+        "e": 7.87
+      },
+      {
+        "w": "manzillar",
+        "s": 7.97,
+        "e": 8.41
+      },
+      {
+        "w": "jadvalida",
+        "s": 8.45,
+        "e": 8.91
+      },
+      {
+        "w": "holat",
+        "s": 9.27,
+        "e": 9.61
+      },
+      {
+        "w": "ustuni",
+        "s": 9.67,
+        "e": 9.97
+      },
+      {
+        "w": "uchun",
+        "s": 10.03,
+        "e": 10.23
+      },
+      {
+        "w": "unikal",
+        "s": 10.37,
+        "e": 10.69
+      },
+      {
+        "w": "qiymatlar",
+        "s": 10.71,
+        "e": 11.13
+      },
+      {
+        "w": "soni",
+        "s": 11.19,
+        "e": 11.49
+      },
+      {
+        "w": "va",
+        "s": 11.61,
+        "e": 11.69
+      },
+      {
+        "w": "ularning",
+        "s": 11.81,
+        "e": 12.15
+      },
+      {
+        "w": "uchrash",
+        "s": 12.21,
+        "e": 12.53
+      },
+      {
+        "w": "foizlari",
+        "s": 12.57,
+        "e": 12.99
+      },
+      {
+        "w": "aniq",
+        "s": 13.11,
+        "e": 13.31
+      },
+      {
+        "w": "qayd",
+        "s": 13.35,
+        "e": 13.53
+      },
+      {
+        "w": "etilgan.",
+        "s": 13.59,
+        "e": 13.93
+      }
+    ]
+  },
+  {
+    "scene": "bogliq_ustunlar_xatosi",
+    "id": "l3",
+    "text": "Ammo tuman va viloyat birgalikda so'ralganda, rejalashtiruvchi mustaqil ko'paytma hisoblab sakson to'qqiz qator kutadi, aslida esa mingta qator chiqadi.",
+    "show": "Ammo tuman va viloyat birgalikda so'ralganda, rejalashtiruvchi mustaqil ko'paytma hisoblab sakson to'qqiz qator kutadi, aslida esa mingta qator chiqadi.",
+    "say": "Ammo tuman va viloyat birgalikda so'ralganda, rejalashtiruvchi mustaqil ko'paytma hisoblab sakson to'qqiz qator kutadi, aslida esa mingta qator chiqadi.",
+    "a0": 14.77,
+    "a1": 23.9,
+    "words": [
+      {
+        "w": "Ammo",
+        "s": 14.77,
+        "e": 14.97
+      },
+      {
+        "w": "tuman",
+        "s": 15.35,
+        "e": 15.69
+      },
+      {
+        "w": "va",
+        "s": 15.77,
+        "e": 15.85
+      },
+      {
+        "w": "viloyat",
+        "s": 15.99,
+        "e": 16.37
+      },
+      {
+        "w": "birgalikda",
+        "s": 16.45,
+        "e": 16.95
+      },
+      {
+        "w": "so'ralganda,",
+        "s": 16.99,
+        "e": 17.51
+      },
+      {
+        "w": "rejalashtiruvchi",
+        "s": 17.97,
+        "e": 18.65
+      },
+      {
+        "w": "mustaqil",
+        "s": 18.79,
+        "e": 19.25
+      },
+      {
+        "w": "ko'paytma",
+        "s": 19.31,
+        "e": 19.71
+      },
+      {
+        "w": "hisoblab",
+        "s": 19.75,
+        "e": 20.11
+      },
+      {
+        "w": "sakson",
+        "s": 20.43,
+        "e": 20.79
+      },
+      {
+        "w": "to'qqiz",
+        "s": 20.83,
+        "e": 21.11
+      },
+      {
+        "w": "qator",
+        "s": 21.17,
+        "e": 21.41
+      },
+      {
+        "w": "kutadi,",
+        "s": 21.47,
+        "e": 21.75
+      },
+      {
+        "w": "aslida",
+        "s": 22.09,
+        "e": 22.43
+      },
+      {
+        "w": "esa",
+        "s": 22.49,
+        "e": 22.66
+      },
+      {
+        "w": "mingta",
+        "s": 23.02,
+        "e": 23.3
+      },
+      {
+        "w": "qator",
+        "s": 23.34,
+        "e": 23.58
+      },
+      {
+        "w": "chiqadi.",
+        "s": 23.64,
+        "e": 23.9
+      }
+    ]
+  },
+  {
+    "scene": "create_statistics_yechimi",
+    "id": "l4",
+    "text": "Bu o'n bir baravar xatolikni tuzatish uchun krieyt statistiks orqali funksional bog'liqlik statistikasi kiritiladi.",
+    "show": "Bu o'n bir baravar xatolikni tuzatish uchun krieyt statistiks orqali funksional bog'liqlik statistikasi kiritiladi.",
+    "say": "Bu o'n bir baravar xatolikni tuzatish uchun krieyt statistiks orqali funksional bog'liqlik statistikasi kiritiladi.",
+    "a0": 24.5,
+    "a1": 30.66,
+    "words": [
+      {
+        "w": "Bu",
+        "s": 24.5,
+        "e": 24.58
+      },
+      {
+        "w": "o'n",
+        "s": 25.0,
+        "e": 25.1
+      },
+      {
+        "w": "bir",
+        "s": 25.16,
+        "e": 25.28
+      },
+      {
+        "w": "baravar",
+        "s": 25.34,
+        "e": 25.68
+      },
+      {
+        "w": "xatolikni",
+        "s": 25.72,
+        "e": 26.2
+      },
+      {
+        "w": "tuzatish",
+        "s": 26.24,
+        "e": 26.56
+      },
+      {
+        "w": "uchun",
+        "s": 26.56,
+        "e": 26.74
+      },
+      {
+        "w": "krieyt",
+        "s": 27.06,
+        "e": 27.4
+      },
+      {
+        "w": "statistiks",
+        "s": 27.46,
+        "e": 28.0
+      },
+      {
+        "w": "orqali",
+        "s": 28.06,
+        "e": 28.36
+      },
+      {
+        "w": "funksional",
+        "s": 28.56,
+        "e": 29.04
+      },
+      {
+        "w": "bog'liqlik",
+        "s": 29.12,
+        "e": 29.6
+      },
+      {
+        "w": "statistikasi",
+        "s": 29.64,
+        "e": 30.2
+      },
+      {
+        "w": "kiritiladi.",
+        "s": 30.24,
+        "e": 30.66
+      }
+    ]
+  },
+  {
+    "scene": "create_statistics_yechimi",
+    "id": "l5",
+    "text": "Natijada tuman viloyatni to'liq belgilashi hisobga olinib, rejalashtiruvchi taxmini to'qqiz yuz oltmish uch qatorga yetadi.",
+    "show": "Natijada tuman viloyatni to'liq belgilashi hisobga olinib, rejalashtiruvchi taxmini to'qqiz yuz oltmish uch qatorga yetadi.",
+    "say": "Natijada tuman viloyatni to'liq belgilashi hisobga olinib, rejalashtiruvchi taxmini to'qqiz yuz oltmish uch qatorga yetadi.",
+    "a0": 31.38,
+    "a1": 37.93,
+    "words": [
+      {
+        "w": "Natijada",
+        "s": 31.38,
+        "e": 31.8
+      },
+      {
+        "w": "tuman",
+        "s": 32.12,
+        "e": 32.42
+      },
+      {
+        "w": "viloyatni",
+        "s": 32.5,
+        "e": 33.0
+      },
+      {
+        "w": "to'liq",
+        "s": 33.08,
+        "e": 33.32
+      },
+      {
+        "w": "belgilashi",
+        "s": 33.38,
+        "e": 33.86
+      },
+      {
+        "w": "hisobga",
+        "s": 33.92,
+        "e": 34.24
+      },
+      {
+        "w": "olinib,",
+        "s": 34.28,
+        "e": 34.54
+      },
+      {
+        "w": "rejalashtiruvchi",
+        "s": 34.88,
+        "e": 35.52
+      },
+      {
+        "w": "taxmini",
+        "s": 35.56,
+        "e": 35.97
+      },
+      {
+        "w": "to'qqiz",
+        "s": 36.23,
+        "e": 36.55
+      },
+      {
+        "w": "yuz",
+        "s": 36.57,
+        "e": 36.69
+      },
+      {
+        "w": "oltmish",
+        "s": 36.75,
+        "e": 37.03
+      },
+      {
+        "w": "uch",
+        "s": 37.11,
+        "e": 37.23
+      },
+      {
+        "w": "qatorga",
+        "s": 37.27,
+        "e": 37.63
+      },
+      {
+        "w": "yetadi.",
+        "s": 37.67,
+        "e": 37.93
+      }
+    ]
+  },
+  {
+    "scene": "eskirgan_statistika_va_enable",
+    "id": "l6",
+    "text": "Jadvalga ikki yuz ming yangi qator qo'shilib analayz qilinmasa, rejalashtiruvchi o'ttiz uch baravar adashishi mumkin.",
+    "show": "Jadvalga ikki yuz ming yangi qator qo'shilib analayz qilinmasa, rejalashtiruvchi o'ttiz uch baravar adashishi mumkin.",
+    "say": "Jadvalga ikki yuz ming yangi qator qo'shilib analayz qilinmasa, rejalashtiruvchi o'ttiz uch baravar adashishi mumkin.",
+    "a0": 38.87,
+    "a1": 45.45,
+    "words": [
+      {
+        "w": "Jadvalga",
+        "s": 38.87,
+        "e": 39.33
+      },
+      {
+        "w": "ikki",
+        "s": 39.65,
+        "e": 39.89
+      },
+      {
+        "w": "yuz",
+        "s": 39.93,
+        "e": 40.07
+      },
+      {
+        "w": "ming",
+        "s": 40.13,
+        "e": 40.29
+      },
+      {
+        "w": "yangi",
+        "s": 40.33,
+        "e": 40.59
+      },
+      {
+        "w": "qator",
+        "s": 40.63,
+        "e": 40.85
+      },
+      {
+        "w": "qo'shilib",
+        "s": 40.89,
+        "e": 41.31
+      },
+      {
+        "w": "analayz",
+        "s": 41.61,
+        "e": 42.01
+      },
+      {
+        "w": "qilinmasa,",
+        "s": 42.05,
+        "e": 42.49
+      },
+      {
+        "w": "rejalashtiruvchi",
+        "s": 42.81,
+        "e": 43.49
+      },
+      {
+        "w": "o'ttiz",
+        "s": 43.71,
+        "e": 44.05
+      },
+      {
+        "w": "uch",
+        "s": 44.17,
+        "e": 44.29
+      },
+      {
+        "w": "baravar",
+        "s": 44.37,
+        "e": 44.71
+      },
+      {
+        "w": "adashishi",
+        "s": 44.77,
+        "e": 45.15
+      },
+      {
+        "w": "mumkin.",
+        "s": 45.19,
+        "e": 45.45
+      }
+    ]
+  },
+  {
+    "scene": "eskirgan_statistika_va_enable",
+    "id": "l7",
+    "text": "Va nihoyat, ineybl parametrlari orqali ketma-ket skanerlash narxini oshirib, indeksli rejani amalda solishtirib ko'rish mumkin.",
+    "show": "Va nihoyat, ineybl parametrlari orqali ketma-ket skanerlash narxini oshirib, indeksli rejani amalda solishtirib ko'rish mumkin.",
+    "say": "Va nihoyat, ineybl parametrlari orqali ketma-ket skanerlash narxini oshirib, indeksli rejani amalda solishtirib ko'rish mumkin.",
+    "a0": 46.01,
+    "a1": 53.0,
+    "words": [
+      {
+        "w": "Va",
+        "s": 46.01,
+        "e": 46.07
+      },
+      {
+        "w": "nihoyat,",
+        "s": 46.11,
+        "e": 46.47
+      },
+      {
+        "w": "ineybl",
+        "s": 46.85,
+        "e": 47.21
+      },
+      {
+        "w": "parametrlari",
+        "s": 47.25,
+        "e": 47.9
+      },
+      {
+        "w": "orqali",
+        "s": 47.94,
+        "e": 48.26
+      },
+      {
+        "w": "ketma-ket",
+        "s": 48.54,
+        "e": 49.06
+      },
+      {
+        "w": "skanerlash",
+        "s": 49.1,
+        "e": 49.6
+      },
+      {
+        "w": "narxini",
+        "s": 49.62,
+        "e": 49.92
+      },
+      {
+        "w": "oshirib,",
+        "s": 49.96,
+        "e": 50.26
+      },
+      {
+        "w": "indeksli",
+        "s": 50.62,
+        "e": 51.08
+      },
+      {
+        "w": "rejani",
+        "s": 51.16,
+        "e": 51.5
+      },
+      {
+        "w": "amalda",
+        "s": 51.66,
+        "e": 51.98
+      },
+      {
+        "w": "solishtirib",
+        "s": 52.02,
+        "e": 52.44
+      },
+      {
+        "w": "ko'rish",
+        "s": 52.46,
+        "e": 52.7
+      },
+      {
+        "w": "mumkin.",
+        "s": 52.74,
+        "e": 53.0
+      }
+    ]
+  }
+]

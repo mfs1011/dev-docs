@@ -1,0 +1,41 @@
+WEBVTT
+
+1
+00:01.420 --> 00:10.020
+May es-kyu-elda gistogrammalar asosan indeksi yo'q ustunlar uchun foydali
+bo'lib, tenglik va oraliq shartlarida to'g'ri selektivlik beradi.
+
+2
+00:10.150 --> 00:19.360
+Masalan, indekssiz holat ustuniga o'nta chelakli gistogramma
+qo'shilgach, filtr ko'rsatkichi o'n foizdan haqiqiy ikki foizga tushadi.
+
+3
+00:22.150 --> 00:30.570
+Agar ustunda indeks bo'lsa, rejalashtiruvchi uni noo'rin tanlaganda
+opti-mayzer hintlar orqali to'liq skanerlashga majburlash mumkin.
+
+4
+00:30.760 --> 00:38.170
+Sinovimizda no-indeks hinti tufayli so'rov bajarilish vaqti
+to'qson uch millisekunddan o'ttiz millisekundga qisqardi.
+
+5
+00:41.300 --> 00:49.940
+Es-kyu-laytda esa statistika ma'lumotlari es-kyu-layt stat bir ichki
+jadvalida indekslar bo'yicha o'rtacha takrorlanish sifatida saqlanadi.
+
+6
+00:50.290 --> 00:58.020
+Tizim ishlab chiquvchilari tavsiya etgan pragma opti-mayz
+buyrug'i kerakli analayz amallarini avtomatik va tezkor bajaradi.
+
+7
+01:00.930 --> 01:09.390
+So'rovda aniq bir indeksni talab qilish uchun indeksd bay, yoki
+indekslarni chetlab o'tish uchun not indeksd direktivasi qo'llaniladi.
+
+8
+01:09.860 --> 01:17.790
+Es-kyu-laytda bunday ko'rsatmalar maslahat emas, balki qat'iy
+buyruq bo'lib, hatto reja samarasiz bo'lsa ham unga bo'ysunadi.
