@@ -1,0 +1,13 @@
+WEBVTT
+
+00:00.000 --> 00:21.120
+MySQL: Indekssiz Ustunlarda Gistogramma
+
+00:21.120 --> 00:40.109
+MySQL: Optimizer Hint va 3x Tezlashuv
+
+00:40.109 --> 00:59.820
+SQLite: sqlite_stat1 va PRAGMA optimize
+
+00:59.820 --> 01:22.240
+SQLite: INDEXED BY va NOT INDEXED

@@ -4,6 +4,15 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/46-1-tushuncha.jpg">
+    <source src="/video/sql/46-1-tushuncha.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/46-1-tushuncha.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/46-1-tushuncha.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>46.1-video. Planner va statistika tushunchasi</figcaption>
+</figure>
+
 45-bobda ko'rildi: rejalashtiruvchi har reja uchun **narx** hisoblaydi va eng arzonini tanlaydi. Narx esa asosan bitta savolga bog'liq — **nechta qator** qaytadi? Buni u jadvalni o'qimasdan, oldindan yig'ilgan **statistika** bo'yicha taxmin qiladi. Statistika noto'g'ri bo'lsa — taxmin noto'g'ri, reja ham noto'g'ri (41-bobdagi MySQL: 99 907 kutildi, 196 000 chiqdi).
 
 PostgreSQL hujjati (14.2): rejalashtiruvchiga so'rov qaytaradigan qatorlar sonini baholash kerak. Ko'p so'rovlar `WHERE` tufayli qatorlarning faqat bir qismini oladi, shuning uchun har shartning **selektivligini** (selectivity) — shartga mos qatorlar ulushini — baholash kerak.
@@ -67,6 +76,15 @@ Hujjatga ko'ra `ANALYZE` jadvallar va indekslar haqidagi statistikani ichki jadv
 Hujjatning tavsiyasi — **`PRAGMA optimize`**: kerak bo'lganda `ANALYZE` ni o'zi bajaradi. Qisqa ulanishli ilovalar — ulanishni yopishdan oldin; uzoq ulanishlilar — ochilganda `PRAGMA optimize=0x10002;`, keyin vaqti-vaqti bilan (masalan, kuniga bir marta). Sxema o'zgarganda, ayniqsa `CREATE INDEX` dan keyin — doim. 3.46.0 dan beri u katta bazada ham tez tugashi uchun `ANALYZE` hajmini o'zi cheklaydi.
 
 ## Kod
+
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/46-2-kod.jpg">
+    <source src="/video/sql/46-2-kod.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/46-2-kod.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/46-2-kod.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>46.2-video. Planner va statistika amaliyoti</figcaption>
+</figure>
 
 Misollar PostgreSQL 18.6, MySQL 9.7.2 va SQLite 3.54.0 da ishga tushirilgan.
 
@@ -182,6 +200,15 @@ RESET enable_seqscan;
 PostgreSQL'da `/*+ IndexScan(t) */` kabi yozuv — shunchaki SQL izohi; sinovda so'rov odatdagidek bajarildi.
 
 ## Dialektlar
+
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/46-3-dialektlar.jpg">
+    <source src="/video/sql/46-3-dialektlar.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/46-3-dialektlar.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/46-3-dialektlar.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>46.3-video. Dialektlar: MySQL va SQLite da statistika va hintlar</figcaption>
+</figure>
 
 ### MySQL
 
