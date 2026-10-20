@@ -1,0 +1,730 @@
+[
+  {
+    "id": "l1",
+    "scene": "btree_cheklovlari",
+    "text": "Standart B-tree indeksi tartiblangan qiymatlar, oraliq va tenglik qidiruvlari uchun eng zo'r tanlov hisoblanadi.",
+    "show": "Standart B-tree indeksi tartiblangan qiymatlar, oraliq va tenglik qidiruvlari uchun eng zo'r tanlov hisoblanadi.",
+    "say": "Standart bi-tri indeksi tartiblangan qiymatlar, oraliq va tenglik qidiruvlari uchun eng zo'r tanlov hisoblanadi.",
+    "a0": 0.32,
+    "a1": 6.98,
+    "words": [
+      {
+        "w": "Standart",
+        "s": 0.32,
+        "e": 0.78
+      },
+      {
+        "w": "bi-tri",
+        "s": 0.84,
+        "e": 1.14
+      },
+      {
+        "w": "indeksi",
+        "s": 1.24,
+        "e": 1.68
+      },
+      {
+        "w": "tartiblangan",
+        "s": 1.82,
+        "e": 2.46
+      },
+      {
+        "w": "qiymatlar,",
+        "s": 2.52,
+        "e": 3.1
+      },
+      {
+        "w": "oraliq",
+        "s": 3.44,
+        "e": 3.86
+      },
+      {
+        "w": "va",
+        "s": 3.98,
+        "e": 4.06
+      },
+      {
+        "w": "tenglik",
+        "s": 4.26,
+        "e": 4.6
+      },
+      {
+        "w": "qidiruvlari",
+        "s": 4.64,
+        "e": 5.14
+      },
+      {
+        "w": "uchun",
+        "s": 5.2,
+        "e": 5.4
+      },
+      {
+        "w": "eng",
+        "s": 5.66,
+        "e": 5.86
+      },
+      {
+        "w": "zo'r",
+        "s": 5.96,
+        "e": 6.14
+      },
+      {
+        "w": "tanlov",
+        "s": 6.2,
+        "e": 6.46
+      },
+      {
+        "w": "hisoblanadi.",
+        "s": 6.5,
+        "e": 6.98
+      }
+    ]
+  },
+  {
+    "id": "l2",
+    "scene": "btree_cheklovlari",
+    "text": "Ammo massiv ichidan element izlash, vaqt oraliqlari kesishuvi yoki eng yaqin nuqtalarni topishda B-tree yordam berolmaydi.",
+    "show": "Ammo massiv ichidan element izlash, vaqt oraliqlari kesishuvi yoki eng yaqin nuqtalarni topishda B-tree yordam berolmaydi.",
+    "say": "Ammo massiv ichidan element izlash, vaqt oraliqlari kesishuvi yoki eng yaqin nuqtalarni topishda bi-tri yordam berolmaydi.",
+    "a0": 7.77,
+    "a1": 15.83,
+    "words": [
+      {
+        "w": "Ammo",
+        "s": 7.77,
+        "e": 8.03
+      },
+      {
+        "w": "massiv",
+        "s": 8.35,
+        "e": 8.71
+      },
+      {
+        "w": "ichidan",
+        "s": 8.79,
+        "e": 9.11
+      },
+      {
+        "w": "element",
+        "s": 9.25,
+        "e": 9.59
+      },
+      {
+        "w": "izlash,",
+        "s": 9.67,
+        "e": 10.15
+      },
+      {
+        "w": "vaqt",
+        "s": 10.53,
+        "e": 10.77
+      },
+      {
+        "w": "oraliqlari",
+        "s": 10.83,
+        "e": 11.31
+      },
+      {
+        "w": "kesishuvi",
+        "s": 11.37,
+        "e": 11.85
+      },
+      {
+        "w": "yoki",
+        "s": 11.85,
+        "e": 12.27
+      },
+      {
+        "w": "eng",
+        "s": 12.81,
+        "e": 12.95
+      },
+      {
+        "w": "yaqin",
+        "s": 13.01,
+        "e": 13.27
+      },
+      {
+        "w": "nuqtalarni",
+        "s": 13.31,
+        "e": 13.77
+      },
+      {
+        "w": "topishda",
+        "s": 13.83,
+        "e": 14.23
+      },
+      {
+        "w": "bi-tri",
+        "s": 14.53,
+        "e": 14.89
+      },
+      {
+        "w": "yordam",
+        "s": 14.89,
+        "e": 15.27
+      },
+      {
+        "w": "berolmaydi.",
+        "s": 15.31,
+        "e": 15.83
+      }
+    ]
+  },
+  {
+    "id": "l3",
+    "scene": "hash_va_gist_spgist",
+    "text": "Bunday holatlar uchun maxsus indekslar bor: masalan, Hash indeksi faqat qat'iy tenglik qidiruvlarini o'ta tez bajaradi.",
+    "show": "Bunday holatlar uchun maxsus indekslar bor: masalan, Hash indeksi faqat qat'iy tenglik qidiruvlarini o'ta tez bajaradi.",
+    "say": "Bunday holatlar uchun maxsus indekslar bor: masalan, hesh indeksi faqat qat'iy tenglik qidiruvlarini o'ta tez bajaradi.",
+    "a0": 16.69,
+    "a1": 23.92,
+    "words": [
+      {
+        "w": "Bunday",
+        "s": 16.69,
+        "e": 16.97
+      },
+      {
+        "w": "holatlar",
+        "s": 17.01,
+        "e": 17.41
+      },
+      {
+        "w": "uchun",
+        "s": 17.45,
+        "e": 17.65
+      },
+      {
+        "w": "maxsus",
+        "s": 17.89,
+        "e": 18.29
+      },
+      {
+        "w": "indekslar",
+        "s": 18.39,
+        "e": 18.83
+      },
+      {
+        "w": "bor:",
+        "s": 18.87,
+        "e": 19.01
+      },
+      {
+        "w": "masalan,",
+        "s": 19.45,
+        "e": 19.81
+      },
+      {
+        "w": "hesh",
+        "s": 20.05,
+        "e": 20.29
+      },
+      {
+        "w": "indeksi",
+        "s": 20.37,
+        "e": 20.77
+      },
+      {
+        "w": "faqat",
+        "s": 20.85,
+        "e": 21.11
+      },
+      {
+        "w": "qat'iy",
+        "s": 21.27,
+        "e": 21.61
+      },
+      {
+        "w": "tenglik",
+        "s": 21.73,
+        "e": 22.09
+      },
+      {
+        "w": "qidiruvlarini",
+        "s": 22.15,
+        "e": 22.76
+      },
+      {
+        "w": "o'ta",
+        "s": 22.96,
+        "e": 23.14
+      },
+      {
+        "w": "tez",
+        "s": 23.26,
+        "e": 23.46
+      },
+      {
+        "w": "bajaradi.",
+        "s": 23.48,
+        "e": 23.92
+      }
+    ]
+  },
+  {
+    "id": "l4",
+    "scene": "hash_va_gist_spgist",
+    "text": "GiST va SP-GiST esa geometrik shakllar, range oraliqlar va eng yaqin qo'shnini qidirish uchun mo'ljallangan kuchli infratuzilmadir.",
+    "show": "GiST va SP-GiST esa geometrik shakllar, range oraliqlar va eng yaqin qo'shnini qidirish uchun mo'ljallangan kuchli infratuzilmadir.",
+    "say": "Jist va es-pi jist esa geometrik shakllar, renj oraliqlar va eng yaqin qo'shnini qidirish uchun mo'ljallangan kuchli infratuzilmadir.",
+    "a0": 24.44,
+    "a1": 32.92,
+    "words": [
+      {
+        "w": "Jist",
+        "s": 24.44,
+        "e": 24.8
+      },
+      {
+        "w": "va",
+        "s": 24.88,
+        "e": 24.96
+      },
+      {
+        "w": "es-pi",
+        "s": 25.22,
+        "e": 25.48
+      },
+      {
+        "w": "jist",
+        "s": 25.58,
+        "e": 25.8
+      },
+      {
+        "w": "esa",
+        "s": 25.86,
+        "e": 26.04
+      },
+      {
+        "w": "geometrik",
+        "s": 26.44,
+        "e": 26.94
+      },
+      {
+        "w": "shakllar,",
+        "s": 26.98,
+        "e": 27.54
+      },
+      {
+        "w": "renj",
+        "s": 27.92,
+        "e": 28.16
+      },
+      {
+        "w": "oraliqlar",
+        "s": 28.22,
+        "e": 28.68
+      },
+      {
+        "w": "va",
+        "s": 28.76,
+        "e": 28.84
+      },
+      {
+        "w": "eng",
+        "s": 29.34,
+        "e": 29.52
+      },
+      {
+        "w": "yaqin",
+        "s": 29.62,
+        "e": 29.88
+      },
+      {
+        "w": "qo'shnini",
+        "s": 30.02,
+        "e": 30.36
+      },
+      {
+        "w": "qidirish",
+        "s": 30.4,
+        "e": 30.68
+      },
+      {
+        "w": "uchun",
+        "s": 30.72,
+        "e": 30.9
+      },
+      {
+        "w": "mo'ljallangan",
+        "s": 30.94,
+        "e": 31.56
+      },
+      {
+        "w": "kuchli",
+        "s": 31.7,
+        "e": 32.04
+      },
+      {
+        "w": "infratuzilmadir.",
+        "s": 32.16,
+        "e": 32.92
+      }
+    ]
+  },
+  {
+    "id": "l5",
+    "scene": "gin_teskari_indeks",
+    "text": "GIN ya'ni teskari indeks massiv, jsonb va to'liq matnli ma'lumotlarning har bir tarkibiy qismini alohida ro'yxatga oladi.",
+    "show": "GIN ya'ni teskari indeks massiv, jsonb va to'liq matnli ma'lumotlarning har bir tarkibiy qismini alohida ro'yxatga oladi.",
+    "say": "Djin ya'ni teskari indeks massiv, jeyson-bi va to'liq matnli ma'lumotlarning har bir tarkibiy qismini alohida ro'yxatga oladi.",
+    "a0": 33.88,
+    "a1": 42.29,
+    "words": [
+      {
+        "w": "Djin",
+        "s": 33.88,
+        "e": 34.1
+      },
+      {
+        "w": "ya'ni",
+        "s": 34.34,
+        "e": 34.6
+      },
+      {
+        "w": "teskari",
+        "s": 34.86,
+        "e": 35.28
+      },
+      {
+        "w": "indeks",
+        "s": 35.38,
+        "e": 35.74
+      },
+      {
+        "w": "massiv,",
+        "s": 36.14,
+        "e": 36.62
+      },
+      {
+        "w": "jeyson-bi",
+        "s": 36.92,
+        "e": 37.48
+      },
+      {
+        "w": "va",
+        "s": 37.67,
+        "e": 37.75
+      },
+      {
+        "w": "to'liq",
+        "s": 38.17,
+        "e": 38.47
+      },
+      {
+        "w": "matnli",
+        "s": 38.53,
+        "e": 38.89
+      },
+      {
+        "w": "ma'lumotlarning",
+        "s": 38.97,
+        "e": 39.67
+      },
+      {
+        "w": "har",
+        "s": 39.75,
+        "e": 39.99
+      },
+      {
+        "w": "bir",
+        "s": 40.07,
+        "e": 40.17
+      },
+      {
+        "w": "tarkibiy",
+        "s": 40.23,
+        "e": 40.63
+      },
+      {
+        "w": "qismini",
+        "s": 40.69,
+        "e": 41.03
+      },
+      {
+        "w": "alohida",
+        "s": 41.19,
+        "e": 41.61
+      },
+      {
+        "w": "ro'yxatga",
+        "s": 41.65,
+        "e": 42.01
+      },
+      {
+        "w": "oladi.",
+        "s": 42.05,
+        "e": 42.29
+      }
+    ]
+  },
+  {
+    "id": "l6",
+    "scene": "gin_teskari_indeks",
+    "text": "Natijada, millionlab qatorlar orasidan kerakli teg yoki kalit bor-yo'qligi bir zumda topiladi.",
+    "show": "Natijada, millionlab qatorlar orasidan kerakli teg yoki kalit bor-yo'qligi bir zumda topiladi.",
+    "say": "Natijada, millionlab qatorlar orasidan kerakli teg yoki kalit bor-yo'qligi bir zumda topiladi.",
+    "a0": 42.77,
+    "a1": 48.79,
+    "words": [
+      {
+        "w": "Natijada,",
+        "s": 42.77,
+        "e": 43.25
+      },
+      {
+        "w": "millionlab",
+        "s": 43.65,
+        "e": 44.19
+      },
+      {
+        "w": "qatorlar",
+        "s": 44.23,
+        "e": 44.65
+      },
+      {
+        "w": "orasidan",
+        "s": 44.71,
+        "e": 45.11
+      },
+      {
+        "w": "kerakli",
+        "s": 45.21,
+        "e": 45.65
+      },
+      {
+        "w": "teg",
+        "s": 45.79,
+        "e": 46.05
+      },
+      {
+        "w": "yoki",
+        "s": 46.09,
+        "e": 46.41
+      },
+      {
+        "w": "kalit",
+        "s": 46.57,
+        "e": 46.87
+      },
+      {
+        "w": "bor-yo'qligi",
+        "s": 46.95,
+        "e": 47.61
+      },
+      {
+        "w": "bir",
+        "s": 47.97,
+        "e": 48.09
+      },
+      {
+        "w": "zumda",
+        "s": 48.15,
+        "e": 48.37
+      },
+      {
+        "w": "topiladi.",
+        "s": 48.41,
+        "e": 48.79
+      }
+    ]
+  },
+  {
+    "id": "l7",
+    "scene": "brin_va_hajmlar",
+    "text": "BRIN esa jadvalning fizik bloklari bo'yicha min-max xulosasini saqlab, vaqt bo'yicha o'suvchi loglar uchun mo'jizaviy yechimdir.",
+    "show": "BRIN esa jadvalning fizik bloklari bo'yicha min-max xulosasini saqlab, vaqt bo'yicha o'suvchi loglar uchun mo'jizaviy yechimdir.",
+    "say": "Brin esa jadvalning fizik bloklari bo'yicha min-maks xulosasini saqlab, vaqt bo'yicha o'suvchi loglar uchun mo'jizaviy yechimdir.",
+    "a0": 49.59,
+    "a1": 57.1,
+    "words": [
+      {
+        "w": "Brin",
+        "s": 49.59,
+        "e": 49.83
+      },
+      {
+        "w": "esa",
+        "s": 49.89,
+        "e": 50.07
+      },
+      {
+        "w": "jadvalning",
+        "s": 50.41,
+        "e": 50.91
+      },
+      {
+        "w": "fizik",
+        "s": 50.97,
+        "e": 51.31
+      },
+      {
+        "w": "bloklari",
+        "s": 51.37,
+        "e": 51.77
+      },
+      {
+        "w": "bo'yicha",
+        "s": 51.81,
+        "e": 52.15
+      },
+      {
+        "w": "min-maks",
+        "s": 52.45,
+        "e": 53.08
+      },
+      {
+        "w": "xulosasini",
+        "s": 53.12,
+        "e": 53.66
+      },
+      {
+        "w": "saqlab,",
+        "s": 53.7,
+        "e": 54.04
+      },
+      {
+        "w": "vaqt",
+        "s": 54.46,
+        "e": 54.72
+      },
+      {
+        "w": "bo'yicha",
+        "s": 54.76,
+        "e": 55.02
+      },
+      {
+        "w": "o'suvchi",
+        "s": 55.08,
+        "e": 55.42
+      },
+      {
+        "w": "loglar",
+        "s": 55.5,
+        "e": 55.82
+      },
+      {
+        "w": "uchun",
+        "s": 55.88,
+        "e": 56.06
+      },
+      {
+        "w": "mo'jizaviy",
+        "s": 56.16,
+        "e": 56.68
+      },
+      {
+        "w": "yechimdir.",
+        "s": 56.7,
+        "e": 57.1
+      }
+    ]
+  },
+  {
+    "id": "l8",
+    "scene": "brin_va_hajmlar",
+    "text": "Aynan bir xil vaqt ustunida B-tree to'rt yarim megabayt joy egallagan bo'lsa, BRIN atigi yigirma to'rt kilobayt joy oladi.",
+    "show": "Aynan bir xil vaqt ustunida B-tree to'rt yarim megabayt joy egallagan bo'lsa, BRIN atigi yigirma to'rt kilobayt joy oladi.",
+    "say": "Aynan bir xil vaqt ustunida bi-tri to'rt yarim megabayt joy egallagan bo'lsa, brin atigi yigirma to'rt kilobayt joy oladi.",
+    "a0": 57.68,
+    "a1": 64.6,
+    "words": [
+      {
+        "w": "Aynan",
+        "s": 57.68,
+        "e": 57.96
+      },
+      {
+        "w": "bir",
+        "s": 58.18,
+        "e": 58.32
+      },
+      {
+        "w": "xil",
+        "s": 58.38,
+        "e": 58.52
+      },
+      {
+        "w": "vaqt",
+        "s": 58.56,
+        "e": 58.76
+      },
+      {
+        "w": "ustunida",
+        "s": 58.82,
+        "e": 59.26
+      },
+      {
+        "w": "bi-tri",
+        "s": 59.52,
+        "e": 59.88
+      },
+      {
+        "w": "to'rt",
+        "s": 60.06,
+        "e": 60.26
+      },
+      {
+        "w": "yarim",
+        "s": 60.28,
+        "e": 60.54
+      },
+      {
+        "w": "megabayt",
+        "s": 60.58,
+        "e": 60.98
+      },
+      {
+        "w": "joy",
+        "s": 61.02,
+        "e": 61.2
+      },
+      {
+        "w": "egallagan",
+        "s": 61.27,
+        "e": 61.67
+      },
+      {
+        "w": "bo'lsa,",
+        "s": 61.71,
+        "e": 61.95
+      },
+      {
+        "w": "brin",
+        "s": 62.37,
+        "e": 62.61
+      },
+      {
+        "w": "atigi",
+        "s": 62.75,
+        "e": 63.01
+      },
+      {
+        "w": "yigirma",
+        "s": 63.19,
+        "e": 63.55
+      },
+      {
+        "w": "to'rt",
+        "s": 63.57,
+        "e": 63.74
+      },
+      {
+        "w": "kilobayt",
+        "s": 63.76,
+        "e": 64.12
+      },
+      {
+        "w": "joy",
+        "s": 64.14,
+        "e": 64.3
+      },
+      {
+        "w": "oladi.",
+        "s": 64.36,
+        "e": 64.6
+      }
+    ]
+  }
+]
