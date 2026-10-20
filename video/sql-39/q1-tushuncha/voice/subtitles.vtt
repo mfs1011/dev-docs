@@ -1,0 +1,51 @@
+WEBVTT
+
+1
+00:01.420 --> 00:07.170
+Birlamchi kalit qatorning yagona identifikatori
+bo'lib, tabiiy yoki sun'iy turlarga bo'linadi.
+
+2
+00:07.480 --> 00:14.420
+Email yoki telefon kabi tabiiy ma'lumotlar o'zgarishi mumkin,
+shuning uchun alohida sun'iy kalit ishlatish xavfsizroq.
+
+3
+00:17.570 --> 00:24.900
+Avtomatik oshuvchi bigint atigi sakkiz bayt joy oladi
+va bitta markaziy baza tomonidan ketma-ket yaratiladi.
+
+4
+00:25.230 --> 00:32.890
+O'n olti baytli UUID esa istalgan mikroxizmat yoki mobil
+ilovada bazaga murojaat qilmasdan generatsiya qilinadi.
+
+5
+00:35.940 --> 00:41.950
+Tasodifiy UUID v4 indeks daraxtida sahifa
+bo'linishi va xotira shishishiga olib keladi.
+
+6
+00:42.180 --> 00:49.240
+Vaqt bo'yicha tartiblangan UUID v7 esa ixcham
+saqlanadi, ammo yozuv yaratilgan vaqtni oshkor qiladi.
+
+7
+00:52.330 --> 00:59.820
+MySQL InnoDB dvigatelida butun jadval bevosita
+birlamchi kalit tartibida klasterli indeksda saqlanadi.
+
+8
+01:00.070 --> 01:06.570
+Har bir ikkilamchi indeks birlamchi kalit nusxasini olib
+yurgani uchun, uzun kalit barcha indekslarni shishiradi.
+
+9
+01:09.600 --> 01:17.200
+Postgresda jadval kalitga bog'lanmagan uyumda yotsa, SQLite
+oddiy jadvallarda tezkor rowid daraxtidan foydalanadi.
+
+10
+01:17.490 --> 01:24.290
+To'g'ri tanlangan birlamchi kalit xotirani tejaydi va
+butun arxitekturaning yuqori unumdorligini kafolatlaydi.

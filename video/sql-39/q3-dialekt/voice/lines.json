@@ -1,0 +1,705 @@
+[
+  {
+    "scene": "dialektlar_taqqoslovi",
+    "id": "l1",
+    "text": "Postgresda jadval kalit tartibida saqlanmaydi, MySQL InnoDB da esa qat'iy klasterli indeksda saqlanadi.",
+    "show": "Postgresda jadval kalit tartibida saqlanmaydi, MySQL InnoDB da esa qat'iy klasterli indeksda saqlanadi.",
+    "say": "Postgresda jadval kalit tartibida saqlanmaydi, May es-kyu-el inno-de-be da esa qat'iy klasterli indeksda saqlanadi.",
+    "a0": 0.2,
+    "a1": 6.98,
+    "words": [
+      {
+        "w": "Postgresda",
+        "s": 0.2,
+        "e": 0.8
+      },
+      {
+        "w": "jadval",
+        "s": 0.96,
+        "e": 1.34
+      },
+      {
+        "w": "kalit",
+        "s": 1.46,
+        "e": 1.74
+      },
+      {
+        "w": "tartibida",
+        "s": 1.78,
+        "e": 2.18
+      },
+      {
+        "w": "saqlanmaydi,",
+        "s": 2.24,
+        "e": 2.82
+      },
+      {
+        "w": "May",
+        "s": 3.28,
+        "e": 3.44
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 3.52,
+        "e": 3.98
+      },
+      {
+        "w": "inno-de-be",
+        "s": 4.1,
+        "e": 4.5
+      },
+      {
+        "w": "da",
+        "s": 4.56,
+        "e": 4.64
+      },
+      {
+        "w": "esa",
+        "s": 4.7,
+        "e": 4.88
+      },
+      {
+        "w": "qat'iy",
+        "s": 5.12,
+        "e": 5.44
+      },
+      {
+        "w": "klasterli",
+        "s": 5.56,
+        "e": 6.14
+      },
+      {
+        "w": "indeksda",
+        "s": 6.18,
+        "e": 6.52
+      },
+      {
+        "w": "saqlanadi.",
+        "s": 6.56,
+        "e": 6.98
+      }
+    ]
+  },
+  {
+    "scene": "dialektlar_taqqoslovi",
+    "id": "l2",
+    "text": "SQLite esa oddiy jadvallarda rowid bo'yicha, WITHOUT ROWID jadvallarida esa to'g'ridan-to'g'ri kalit bo'yicha klasterlaydi.",
+    "show": "SQLite esa oddiy jadvallarda rowid bo'yicha, WITHOUT ROWID jadvallarida esa to'g'ridan-to'g'ri kalit bo'yicha klasterlaydi.",
+    "say": "Es-kyu-layt esa oddiy jadvallarda rou-ay-di bo'yicha, vizaut rou-ay-di jadvallarida esa to'g'ridan-to'g'ri kalit bo'yicha klasterlaydi.",
+    "a0": 7.73,
+    "a1": 14.85,
+    "words": [
+      {
+        "w": "Es-kyu-layt",
+        "s": 7.73,
+        "e": 8.25
+      },
+      {
+        "w": "esa",
+        "s": 8.39,
+        "e": 8.55
+      },
+      {
+        "w": "oddiy",
+        "s": 8.71,
+        "e": 8.97
+      },
+      {
+        "w": "jadvallarda",
+        "s": 9.03,
+        "e": 9.65
+      },
+      {
+        "w": "rou-ay-di",
+        "s": 9.87,
+        "e": 10.39
+      },
+      {
+        "w": "bo'yicha,",
+        "s": 10.49,
+        "e": 10.81
+      },
+      {
+        "w": "vizaut",
+        "s": 11.27,
+        "e": 11.65
+      },
+      {
+        "w": "rou-ay-di",
+        "s": 11.71,
+        "e": 12.09
+      },
+      {
+        "w": "jadvallarida",
+        "s": 12.15,
+        "e": 12.67
+      },
+      {
+        "w": "esa",
+        "s": 12.71,
+        "e": 12.89
+      },
+      {
+        "w": "to'g'ridan-to'g'ri",
+        "s": 13.15,
+        "e": 13.75
+      },
+      {
+        "w": "kalit",
+        "s": 13.79,
+        "e": 14.03
+      },
+      {
+        "w": "bo'yicha",
+        "s": 14.05,
+        "e": 14.25
+      },
+      {
+        "w": "klasterlaydi.",
+        "s": 14.29,
+        "e": 14.85
+      }
+    ]
+  },
+  {
+    "scene": "uuid_va_auto_son",
+    "id": "l3",
+    "text": "Postgresda uuid v7 funksiyasi va GENERATED AS IDENTITY standarti eng xavfsiz va qulay usuldir.",
+    "show": "Postgresda uuid v7 funksiyasi va GENERATED AS IDENTITY standarti eng xavfsiz va qulay usuldir.",
+    "say": "Postgresda yu-yu-ay-di ve-yetti funksiyasi va GENERATED AS IDENTITY standarti eng xavfsiz va qulay usuldir.",
+    "a0": 15.81,
+    "a1": 22.33,
+    "words": [
+      {
+        "w": "Postgresda",
+        "s": 15.81,
+        "e": 16.39
+      },
+      {
+        "w": "yu-yu-ay-di",
+        "s": 16.87,
+        "e": 17.37
+      },
+      {
+        "w": "ve-yetti",
+        "s": 17.49,
+        "e": 17.95
+      },
+      {
+        "w": "funksiyasi",
+        "s": 17.99,
+        "e": 18.47
+      },
+      {
+        "w": "va",
+        "s": 18.55,
+        "e": 18.65
+      },
+      {
+        "w": "GENERATED",
+        "s": 18.93,
+        "e": 19.47
+      },
+      {
+        "w": "AS",
+        "s": 19.55,
+        "e": 19.65
+      },
+      {
+        "w": "IDENTITY",
+        "s": 19.81,
+        "e": 20.19
+      },
+      {
+        "w": "standarti",
+        "s": 20.29,
+        "e": 20.75
+      },
+      {
+        "w": "eng",
+        "s": 20.97,
+        "e": 21.11
+      },
+      {
+        "w": "xavfsiz",
+        "s": 21.23,
+        "e": 21.63
+      },
+      {
+        "w": "va",
+        "s": 21.69,
+        "e": 21.75
+      },
+      {
+        "w": "qulay",
+        "s": 21.79,
+        "e": 21.99
+      },
+      {
+        "w": "usuldir.",
+        "s": 22.03,
+        "e": 22.33
+      }
+    ]
+  },
+  {
+    "scene": "uuid_va_auto_son",
+    "id": "l4",
+    "text": "MySQL'da esa UUID_TO_BIN orqali o'n olti baytli binar saqlash va AUTO_INCREMENT ishlatiladi.",
+    "show": "MySQL'da esa UUID_TO_BIN orqali o'n olti baytli binar saqlash va AUTO_INCREMENT ishlatiladi.",
+    "say": "May es-kyu-elda esa yu-yu-ay-di to bin orqali o'n olti baytli binar saqlash va avto inkrement ishlatiladi.",
+    "a0": 23.02,
+    "a1": 28.36,
+    "words": [
+      {
+        "w": "May",
+        "s": 23.02,
+        "e": 23.16
+      },
+      {
+        "w": "es-kyu-elda",
+        "s": 23.2,
+        "e": 23.58
+      },
+      {
+        "w": "esa",
+        "s": 23.62,
+        "e": 23.78
+      },
+      {
+        "w": "yu-yu-ay-di",
+        "s": 23.94,
+        "e": 24.44
+      },
+      {
+        "w": "to",
+        "s": 24.64,
+        "e": 24.74
+      },
+      {
+        "w": "bin",
+        "s": 24.88,
+        "e": 25.06
+      },
+      {
+        "w": "orqali",
+        "s": 25.16,
+        "e": 25.5
+      },
+      {
+        "w": "o'n",
+        "s": 25.82,
+        "e": 25.92
+      },
+      {
+        "w": "olti",
+        "s": 25.96,
+        "e": 26.12
+      },
+      {
+        "w": "baytli",
+        "s": 26.16,
+        "e": 26.44
+      },
+      {
+        "w": "binar",
+        "s": 26.5,
+        "e": 26.78
+      },
+      {
+        "w": "saqlash",
+        "s": 26.82,
+        "e": 27.18
+      },
+      {
+        "w": "va",
+        "s": 27.2,
+        "e": 27.26
+      },
+      {
+        "w": "avto",
+        "s": 27.32,
+        "e": 27.52
+      },
+      {
+        "w": "inkrement",
+        "s": 27.56,
+        "e": 27.92
+      },
+      {
+        "w": "ishlatiladi.",
+        "s": 27.94,
+        "e": 28.36
+      }
+    ]
+  },
+  {
+    "scene": "tipik_xatolar",
+    "id": "l5",
+    "text": "MySQL'da matnli char 36 kalit ishlatish barcha ikkilamchi indekslarni qariyb uch baravarga shishirib yuboradi.",
+    "show": "MySQL'da matnli char 36 kalit ishlatish barcha ikkilamchi indekslarni qariyb uch baravarga shishirib yuboradi.",
+    "say": "May es-kyu-elda matnli char 36 kalit ishlatish barcha ikkilamchi indekslarni qariyb uch baravarga shishirib yuboradi.",
+    "a0": 29.22,
+    "a1": 35.18,
+    "words": [
+      {
+        "w": "May",
+        "s": 29.22,
+        "e": 29.36
+      },
+      {
+        "w": "es-kyu-elda",
+        "s": 29.4,
+        "e": 29.82
+      },
+      {
+        "w": "matnli",
+        "s": 30,
+        "e": 30.4
+      },
+      {
+        "w": "char",
+        "s": 30.58,
+        "e": 30.82
+      },
+      {
+        "w": "36",
+        "s": 30.82,
+        "e": 30.82
+      },
+      {
+        "w": "kalit",
+        "s": 31.36,
+        "e": 31.6
+      },
+      {
+        "w": "ishlatish",
+        "s": 31.64,
+        "e": 32.04
+      },
+      {
+        "w": "barcha",
+        "s": 32.18,
+        "e": 32.46
+      },
+      {
+        "w": "ikkilamchi",
+        "s": 32.52,
+        "e": 32.92
+      },
+      {
+        "w": "indekslarni",
+        "s": 32.98,
+        "e": 33.48
+      },
+      {
+        "w": "qariyb",
+        "s": 33.52,
+        "e": 33.8
+      },
+      {
+        "w": "uch",
+        "s": 33.92,
+        "e": 34.04
+      },
+      {
+        "w": "baravarga",
+        "s": 34.1,
+        "e": 34.48
+      },
+      {
+        "w": "shishirib",
+        "s": 34.5,
+        "e": 34.8
+      },
+      {
+        "w": "yuboradi.",
+        "s": 34.82,
+        "e": 35.18
+      }
+    ]
+  },
+  {
+    "scene": "tipik_xatolar",
+    "id": "l6",
+    "text": "Tasodifiy UUID v4 esa keshni yuvib yuboradi, shuning uchun katta jadvallarda tartibli v7 yoki butun son tanlash zarur.",
+    "show": "Tasodifiy UUID v4 esa keshni yuvib yuboradi, shuning uchun katta jadvallarda tartibli v7 yoki butun son tanlash zarur.",
+    "say": "Tasodifiy yu-yu-ay-di ve-to'rt esa keshni yuvib yuboradi, shuning uchun katta jadvallarda tartibli ve-yetti yoki butun son tanlash zarur.",
+    "a0": 35.94,
+    "a1": 43.77,
+    "words": [
+      {
+        "w": "Tasodifiy",
+        "s": 35.94,
+        "e": 36.4
+      },
+      {
+        "w": "yu-yu-ay-di",
+        "s": 36.62,
+        "e": 37.1
+      },
+      {
+        "w": "ve-to'rt",
+        "s": 37.22,
+        "e": 37.71
+      },
+      {
+        "w": "esa",
+        "s": 37.75,
+        "e": 37.91
+      },
+      {
+        "w": "keshni",
+        "s": 38.03,
+        "e": 38.35
+      },
+      {
+        "w": "yuvib",
+        "s": 38.43,
+        "e": 38.63
+      },
+      {
+        "w": "yuboradi,",
+        "s": 38.65,
+        "e": 39.03
+      },
+      {
+        "w": "shuning",
+        "s": 39.47,
+        "e": 39.69
+      },
+      {
+        "w": "uchun",
+        "s": 39.71,
+        "e": 39.87
+      },
+      {
+        "w": "katta",
+        "s": 40.01,
+        "e": 40.27
+      },
+      {
+        "w": "jadvallarda",
+        "s": 40.31,
+        "e": 40.81
+      },
+      {
+        "w": "tartibli",
+        "s": 40.87,
+        "e": 41.25
+      },
+      {
+        "w": "ve-yetti",
+        "s": 41.39,
+        "e": 41.97
+      },
+      {
+        "w": "yoki",
+        "s": 42.13,
+        "e": 42.37
+      },
+      {
+        "w": "butun",
+        "s": 42.71,
+        "e": 42.95
+      },
+      {
+        "w": "son",
+        "s": 42.99,
+        "e": 43.13
+      },
+      {
+        "w": "tanlash",
+        "s": 43.19,
+        "e": 43.49
+      },
+      {
+        "w": "zarur.",
+        "s": 43.53,
+        "e": 43.77
+      }
+    ]
+  },
+  {
+    "scene": "oltin_qoidalar",
+    "id": "l7",
+    "text": "SQLite'da WITHOUT ROWID faqat kompozit yoki qisqa qatorli jadvallar uchun foydali, bitta sonli kalitda oddiy jadval tezroq ishlaydi.",
+    "show": "SQLite'da WITHOUT ROWID faqat kompozit yoki qisqa qatorli jadvallar uchun foydali, bitta sonli kalitda oddiy jadval tezroq ishlaydi.",
+    "say": "Es-kyu-laytda vizaut rou-ay-di faqat kompozit yoki qisqa qatorli jadvallar uchun foydali, bitta sonli kalitda oddiy jadval tezroq ishlaydi.",
+    "a0": 44.73,
+    "a1": 52.36,
+    "words": [
+      {
+        "w": "Es-kyu-laytda",
+        "s": 44.73,
+        "e": 45.31
+      },
+      {
+        "w": "vizaut",
+        "s": 45.51,
+        "e": 45.89
+      },
+      {
+        "w": "rou-ay-di",
+        "s": 45.95,
+        "e": 46.35
+      },
+      {
+        "w": "faqat",
+        "s": 46.43,
+        "e": 46.71
+      },
+      {
+        "w": "kompozit",
+        "s": 46.79,
+        "e": 47.27
+      },
+      {
+        "w": "yoki",
+        "s": 47.33,
+        "e": 47.51
+      },
+      {
+        "w": "qisqa",
+        "s": 47.65,
+        "e": 47.91
+      },
+      {
+        "w": "qatorli",
+        "s": 47.97,
+        "e": 48.29
+      },
+      {
+        "w": "jadvallar",
+        "s": 48.35,
+        "e": 48.75
+      },
+      {
+        "w": "uchun",
+        "s": 48.79,
+        "e": 48.93
+      },
+      {
+        "w": "foydali,",
+        "s": 48.95,
+        "e": 49.27
+      },
+      {
+        "w": "bitta",
+        "s": 49.87,
+        "e": 50.11
+      },
+      {
+        "w": "sonli",
+        "s": 50.17,
+        "e": 50.43
+      },
+      {
+        "w": "kalitda",
+        "s": 50.49,
+        "e": 50.87
+      },
+      {
+        "w": "oddiy",
+        "s": 51.03,
+        "e": 51.27
+      },
+      {
+        "w": "jadval",
+        "s": 51.31,
+        "e": 51.63
+      },
+      {
+        "w": "tezroq",
+        "s": 51.69,
+        "e": 52.03
+      },
+      {
+        "w": "ishlaydi.",
+        "s": 52.05,
+        "e": 52.36
+      }
+    ]
+  },
+  {
+    "scene": "oltin_qoidalar",
+    "id": "l8",
+    "text": "Standart holatda bigint, tarqoq tizimlarda esa tartibli UUID v7 ishlatish eng to'g'ri me'moriy qarordir.",
+    "show": "Standart holatda bigint, tarqoq tizimlarda esa tartibli UUID v7 ishlatish eng to'g'ri me'moriy qarordir.",
+    "say": "Standart holatda big-int, tarqoq tizimlarda esa tartibli yu-yu-ay-di ve-yetti ishlatish eng to'g'ri me'moriy qarordir.",
+    "a0": 53.06,
+    "a1": 59.24,
+    "words": [
+      {
+        "w": "Standart",
+        "s": 53.06,
+        "e": 53.44
+      },
+      {
+        "w": "holatda",
+        "s": 53.48,
+        "e": 53.82
+      },
+      {
+        "w": "big-int,",
+        "s": 54.08,
+        "e": 54.58
+      },
+      {
+        "w": "tarqoq",
+        "s": 54.88,
+        "e": 55.22
+      },
+      {
+        "w": "tizimlarda",
+        "s": 55.24,
+        "e": 55.68
+      },
+      {
+        "w": "esa",
+        "s": 55.72,
+        "e": 55.86
+      },
+      {
+        "w": "tartibli",
+        "s": 55.94,
+        "e": 56.34
+      },
+      {
+        "w": "yu-yu-ay-di",
+        "s": 56.44,
+        "e": 56.88
+      },
+      {
+        "w": "ve-yetti",
+        "s": 56.98,
+        "e": 57.36
+      },
+      {
+        "w": "ishlatish",
+        "s": 57.4,
+        "e": 57.76
+      },
+      {
+        "w": "eng",
+        "s": 57.92,
+        "e": 58.06
+      },
+      {
+        "w": "to'g'ri",
+        "s": 58.12,
+        "e": 58.36
+      },
+      {
+        "w": "me'moriy",
+        "s": 58.38,
+        "e": 58.76
+      },
+      {
+        "w": "qarordir.",
+        "s": 58.82,
+        "e": 59.24
+      }
+    ]
+  }
+]

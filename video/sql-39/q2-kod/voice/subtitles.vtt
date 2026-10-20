@@ -1,0 +1,41 @@
+WEBVTT
+
+1
+00:01.420 --> 00:10.200
+Postgresda yuz ming qatorda bigint kalit indeksi
+2.2 megabayt, uuid v7 esa 3.1 megabayt joy oldi.
+
+2
+00:10.510 --> 00:18.720
+Uuid v4 ham o'n olti bayt bo'lsa-da, tasodifiy tartibi
+tufayli indeksi 4.4 megabaytga yetib qirq foizga shishdi.
+
+3
+00:21.550 --> 00:27.190
+MySQL InnoDB jadvallarida x ustunidagi bir
+xil ikkilamchi indeks hajmini tekshiramiz.
+
+4
+00:27.700 --> 00:35.610
+Butun sonli kalitda indeks 1.5 megabayt bo'lsa,
+char 36 matnli kalitda 2.5 megabaytga ko'paydi.
+
+5
+00:38.740 --> 00:44.240
+SQLite'da WITHOUT ROWID bilan yaratilgan
+jadvalda tizimli rowid ustuni bo'lmaydi.
+
+6
+00:44.490 --> 00:51.060
+Bunday jadvalga rowid so'rovi berilsa xato qaytadi va
+qatorlar to'g'ridan-to'g'ri kalit bo'yicha klasterlanadi.
+
+7
+00:53.810 --> 00:59.610
+WITHOUT ROWID jadvallarida AUTOINCREMENT taqiqlangan
+va birlamchi kalit majburiy hisoblanadi.
+
+8
+00:59.660 --> 01:05.990
+Oddiy jadvaldan farqli o'laroq, bo'sh qoldirilgan sonli
+kalit avtomatik to'lmaydi va NOT NULL xatosi beradi.
