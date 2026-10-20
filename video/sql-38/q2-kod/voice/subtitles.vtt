@@ -1,0 +1,51 @@
+WEBVTT
+
+1
+00:01.420 --> 00:07.250
+Dastlab barcha ma'lumotlarni bitta tekis jadvalga yozib,
+yangilash va o'chirish anomaliyalarini sinab ko'ramiz.
+
+2
+00:07.860 --> 00:14.680
+Ali yangi manzilga ko'chganda bazada ikki xil manzil paydo
+bo'ldi, Vali buyurtmasi o'chganda esa mijoz yo'qoldi.
+
+3
+00:17.670 --> 00:24.420
+Endi tizimni to'rtta alohida jadvalga bo'lamiz: mijozlar,
+mahsulotlar, buyurtmalar va buyurtma qatorlari.
+
+4
+00:24.770 --> 00:30.550
+Oraliq jadvalda sotilgan paytdagi narx alohida ustun
+sifatida saqlanib, tarixiy aniqlikni kafolatlaydi.
+
+5
+00:33.560 --> 00:39.590
+Mijozlar jadvalida manzil yangilansa, u bir joyda
+o'zgaradi va barcha buyurtmalarda avtomatik ko'rinadi.
+
+6
+00:39.980 --> 00:46.180
+Buyurtma bekor qilinib o'chirilsa ham, mijozning o'zi
+va uning aloqa ma'lumotlari bazada butun saqlanadi.
+
+7
+00:49.050 --> 00:55.060
+To'rtta jadvalni join operatori orqali birlashtirib,
+barcha buyurtmalar va mijozlarni bitta so'rovda olamiz.
+
+8
+00:55.190 --> 01:00.880
+Postgres bu birlashtirishni indekslar orqali o'ta
+tez va xotirani ortiqcha band qilmasdan bajaradi.
+
+9
+01:03.830 --> 01:10.130
+Hisobotni tezlashtirish uchun yig'ma jadval qilsak, yangi
+buyurtma kiritilganda ma'lumotlarda tafovut yuzaga keladi.
+
+10
+01:10.080 --> 01:15.970
+Shuning uchun denormalizatsiyani faqat o'lchangan ehtiyoj
+bo'lganda va yangilash mexanizmi bilan qo'llash shart.
