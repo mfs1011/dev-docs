@@ -1,0 +1,41 @@
+WEBVTT
+
+1
+00:01.420 --> 00:08.250
+Yuz ming qatorli jadvalda mijoz_id bo'yicha qidirganda,
+indekssiz so'rov barcha sahifalarni o'qib chiqdi.
+
+2
+00:08.750 --> 00:15.400
+Bi-tri indeksi qo'shilgach, olti yuzdan ortiq sahifa
+o'rniga atigi o'n ikkita sahifa bilan natija topildi.
+
+3
+00:18.690 --> 00:25.200
+Shartda mijoz_id plyus nol yoki matnga o'girish
+amali qo'llansa, indeks butunlay chetlab o'tiladi.
+
+4
+00:25.610 --> 00:31.890
+Baza o'zgartirilgan ifodani tanimay, butun jadvalni
+to'liq skanerlash rejimiga qaytishga majbur bo'ladi.
+
+5
+00:35.040 --> 00:41.230
+Atigi ikki foiz qatordan iborat yangi buyurtmalarni
+hisoblashda indeks orqali to'g'ridan-to'g'ri o'qildi.
+
+6
+00:41.620 --> 00:48.240
+To'qson sakkiz foizlik yopilgan qatorlarda esa rejalashtiruvchi
+indeksdan voz kechib ketma-ket o'qishni tanladi.
+
+7
+00:51.330 --> 00:58.320
+Uchta indeks jadvalning o'zidan yetmish foiz ko'p joy
+oldi va yozish vaqtini ikki baravar sekinlashtirdi.
+
+8
+00:58.780 --> 01:04.870
+Statistika jadvali orqali skan soni nol bo'lgan
+foydasiz indekslarni osonlikcha aniqlash mumkin.

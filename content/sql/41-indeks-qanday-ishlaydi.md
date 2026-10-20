@@ -4,6 +4,15 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/41-1-tushuncha.jpg">
+    <source src="/video/sql/41-1-tushuncha.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/41-1-tushuncha.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/41-1-tushuncha.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>41.1-video. Indeks qanday ishlaydi tushunchasi</figcaption>
+</figure>
+
 ### Indekssiz qidiruv
 
 PostgreSQL hujjatidagi misol: `SELECT content FROM test1 WHERE id = constant` ko'p bajariladi. Hech qanday tayyorgarliksiz tizim butun `test1` jadvalini **qatorma-qator** o'qishi kerak. Qatorlar ko'p bo'lsa-yu, mos keladigani bitta-ikkita bo'lsa — bu aniq samarasiz.
@@ -83,6 +92,15 @@ PostgreSQL hujjatining "Examining Index Usage" bo'limi:
 - reja noto'g'ri ko'rinsa — so'rovni indeks bilan va usiz **vaqtini o'lchang** (`EXPLAIN ANALYZE`). Rejalashtiruvchi to'g'ri bo'lishi ham, uning hisob-kitobi haqiqatga mos kelmasligi ham mumkin.
 
 ## Kod
+
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/41-2-kod.jpg">
+    <source src="/video/sql/41-2-kod.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/41-2-kod.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/41-2-kod.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>41.2-video. Indeks amaliyoti va kod tahlili</figcaption>
+</figure>
 
 Misollar PostgreSQL 18.6, MySQL 9.7.2 va SQLite 3.54.0 da ishga tushirilgan. Jadvalda 200 000 qator: har mijozda 10 ta buyurtma; `holat` — 2% `'yangi'`, 98% `'yopilgan'`.
 
@@ -240,6 +258,15 @@ WHERE relname = 'buyurtmalar' ORDER BY indexrelname;
 `buyurtmalar_holat_idx` hech qachon ishlatilmagan (`0`): yuqoridagi `'yangi'` so'rovi faqat oddiy `EXPLAIN` bilan ko'rilgan — u rejani ko'rsatadi, so'rovni **bajarmaydi**. `EXPLAIN ANALYZE` esa bajaradi va hisobga kiradi. Production'da uzoq vaqt `idx_scan = 0` bo'lgan indeks — hujjat aytgan "kam ishlatiladigan, o'chirish kerak" nomzodi. (Hisoblagichlar ham kechikib yangilanishi mumkin: sinovda ular faqat keyingi ulanishda ko'rindi.)
 
 ## Dialektlar
+
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/41-3-dialektlar.jpg">
+    <source src="/video/sql/41-3-dialektlar.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/41-3-dialektlar.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/41-3-dialektlar.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>41.3-video. Dialektlar: MySQL InnoDB va SQLite farqlari</figcaption>
+</figure>
 
 ### MySQL
 

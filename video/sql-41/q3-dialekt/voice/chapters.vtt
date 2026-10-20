@@ -1,0 +1,13 @@
+WEBVTT
+
+00:00.000 --> 00:14.878
+MySQL InnoDB: Birlamchi Kalit va Qoplash
+
+00:14.878 --> 00:31.448
+Rejalashtiruvchi Xatosi va IGNORE INDEX
+
+00:31.448 --> 00:47.719
+SQLite: rowid, SCAN/SEARCH va NOT INDEXED
+
+00:47.719 --> 01:05.140
+Dialektlar Xulosasi va Tipik Xatolar
