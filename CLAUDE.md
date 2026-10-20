@@ -27,6 +27,23 @@ Biror qo'llanma (mundarija yoki bob) yozishga buyruq berilsa:
 - **Til** — tushunarli o'zbek tili: har yangi atama birinchi uchraganda oddiy so'z bilan izohlanadi; atamaning inglizcha asli qavsda.
 - Tekshirib bo'lmagan narsa bo'lsa — yozilmaydi va foydalanuvchiga aytiladi.
 
+## Video darsliklar tayyorlash qoidalari (Sifat nazorati)
+
+Batafsil talablar: **`video/README.md`** va kitob uslublari (`video/GIT-VIDEO-USLUBI.md`, `SQL-VIDEO-USLUBI.md`, `FSD-VIDEO-USLUBI.md`).
+
+Har bir video generatsiyasida quyidagi xatoliklarga yo'l qo'yish qat'iyan taqiqlanadi:
+
+1. **Elementlar va sarlavhalar ustma-ust tushishi (Zero Collision):**
+   - Chap yuqoridagi sahna chipi (`chip`) bo'lgan sahnalarda ekranning yuqori qismida markaziy uzun sarlavhalar (`heading`) chizilmaydi.
+   - Panellar (`panel`), kartochkalar (`card`), `fileChip` va yorliqlar bir-birining ustiga chiqishi yoki panel bo'luvchi chizig'ini (divider) bosib ketishi qat'iyan man etiladi.
+   - Panel ichidagi elementlar doim bo'luvchi chiziqdan kamida 20–30 px pastda (`y >= panel.y + 110`) boshlanishi, kartochkalar orasida kamida 18–25 px vertical gap bo'lishi shart.
+2. **Kadrlar (Stills) majburiy vizual auditi:**
+   - `audit-suite.mjs` kod xatosi va ekran chegarasidan toshishni tekshiradi, lekin **ikkita elementning bir-birini to'sib qo'yishini aniqlay olmaydi**.
+   - Shuning uchun har bir sahnaning kalit vaqtlaridan `node stills.mjs` orqali kadrlar olinishi va model/dasturchi tomonidan **vizual ko'rib chiqilishi majburiydir**.
+   - 0 ta vizual to'qnashuv tasdiqlanmasdan video render qilish yoki PR ochish taqiqlanadi.
+3. **Muqova (Poster) tozaligi:**
+   - Markaziy (960, 540) soha pleyerning katta play tugmasi uchun bo'sh qoldiriladi.
+
 ## Ish tartibi
 
 - Har vazifa — `main` dan alohida branch; PR `main` ga (repo'da `dev` yo'q). Merge'ni egasi qiladi.

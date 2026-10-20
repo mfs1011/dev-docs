@@ -17,6 +17,25 @@ Umumiy texnik tartib — [README.md](README.md); bu yerda **qanday chiqishi kera
 | Komponentlar (`anim.js`) | `node` (commit doirasi, ichida qisqa hash), `link` (bola → ota strelka), `pill` (branch/HEAD ko'rsatkichi), `fileChip` (fayl + holat yorlig'i), `terminal` (buyruq yoziladi + haqiqiy chiqish), `panel` (hudud), `chip` (sahna raqami va nomi, chap yuqorida), `laptop`, `cloud`, `burst` (paydo bo'lish to'lqini) |
 | Harakat | Paydo bo'lish — `eback` (sakrab), ko'chish — `eio`, chiqish — `eo`; sahnalar orasida 0,6 s yumshoq o'tish |
 
+### 1.1. Sifat nazorati va joylashuv (Layout) qat'iy qoidalari
+
+Video render qilishda elementlar ustma-ust tushishi va xunuk joylashuv qat'iyan man etiladi:
+
+1. **Header va Chip to'qnashuvi taqiqlanadi (Zero Header Collision):**
+   - Chap yuqorida `chip(n, title)` (`x=70, y=45..99`) mavjud bo'lgan sahnalarda ekranning yuqori sohasida (`y=0..130`) markaziy katta sarlavhalar (`heading`) chizish **taqiqlanadi**. Ular chip bilan ustma-ust tushib, matnni o'qib bo'lmas qiladi.
+   - Sahna raqami va nomi chipda beriladi; mazmuniy sarlavhalar esa bevosita tegishli panellar (`panel`) ichida joylashadi.
+2. **Panellar va ichki kartochkalar chegaralari (Panel Padding & No Overlap):**
+   - Panellar (`panel`) va kartochkalar (`card`) ustma-ust tushishi, ramkalarning qo'shaloq bo'lib qolishi yoki panelning bo'luvchi chizig'i (divider) ustiga boshqa kartochka tushishi qat'iyan taqiqlanadi.
+   - Panel ichidagi kontent (kartochkalar, `fileChip`, matnlar) panelning bo'luvchi chizig'idan kamida **20–30 px pastda** (`y >= panel.y + 110`) boshlanishi shart.
+   - Kartochkalar orasidagi vertikal oraliq kamida **18–25 px** bo'lishi shart.
+3. **Pastki xulosa kartasi (Bottom Summary Card):**
+   - Panellar ostidagi xulosa kartasi panel tagidan kamida **25 px** pastda boshlanadi va ekran pastki chetidan kamida **60–70 px** xavfsiz masofa qoldiradi (`y=845..1010`).
+4. **Muqova (Poster) tozaligi:**
+   - `poster.mjs` da markaziy (960, 540) soha pleyerning katta `Play` tugmasi uchun bo'sh bo'lishi shart. Tugma tagida matn yoki yorliqlar ezilib qolmasligi lozim.
+5. **Majburiy vizual tekshiruv (Mandatory Visual Stills Inspection):**
+   - `audit-suite.mjs` faqat kod xatosi va ekran chetidan toshishni tekshiradi, lekin **ikkita element bir-birining ustiga chizilishini aniqlay olmaydi**.
+   - Har bir sahnaning asosiy vaqtlaridan (har sahna uchun kamida 2 ta kadr) `node stills.mjs` orqali kadrlar olinishi va **vizual tekshirilishi shart**. Matn to'qnashuvi yo'qligi tasdiqlanmasdan video render qilish yoki PR ochish taqiqlanadi!
+
 ## 2. Mazmun va sahnalar
 
 - Bitta video — bitta g'oya. Ketma-ketlik: **muammo → model → buyruq → natija**. Avval "nega", keyin "qanday".
@@ -76,8 +95,11 @@ jumla boshi katta harf.
 
 ## 6. Tekshiruv ro'yxati
 
-- [ ] `node stills.mjs …` — har sahnadan kadr ko'rildi, matn ustma-ust tushmaydi
+- [ ] `node stills.mjs <t1> <t2> ...` — **har bir sahnadan kamida 2 ta kadr ko'rib chiqildi, matnlar va kartochkalar ustma-ust tushmaydi (1.1-bo'lim)**
+- [ ] `chip` va sarlavhalar to'qnashuvi yo'q; panellar ichidagi kartochkalar bo'luvchi chiziq va panel sarlavhasini bosib ketmagan
 - [ ] Matn toshmasligi: panellar, chiplar va terminal ichidagi matnlar ramkadan chiqib ketmasligi tekshirilgan ([README.md](README.md) umumiy aniqlik qoidalari)
+- [ ] `node video/audit-suite.mjs video/git-<nom>` — PASS
+- [ ] Muqova (`poster.jpg`): markaziy play tugmasi atrofi ochiq
 - [ ] Terminal chiqishlari haqiqiy Git'da tekshirilgan
 - [ ] `node voice.mjs --plan` — matn ovoz uchun yozilgan (3-bo'lim qoidalari)
 - [ ] `align-lines.py` natijasi: gaplar ketma-ket, nol pauzali joylar jimlik bilan tekshirilgan
