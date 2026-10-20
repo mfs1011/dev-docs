@@ -1,0 +1,41 @@
+WEBVTT
+
+1
+00:01.420 --> 00:08.650
+Postgresda jadval kalit tartibida saqlanmaydi, MySQL
+InnoDB da esa qat'iy klasterli indeksda saqlanadi.
+
+2
+00:08.950 --> 00:16.520
+SQLite esa oddiy jadvallarda rowid bo'yicha, WITHOUT ROWID
+jadvallarida esa to'g'ridan-to'g'ri kalit bo'yicha klasterlaydi.
+
+3
+00:19.630 --> 00:26.600
+Postgresda uuid v7 funksiyasi va GENERATED AS
+IDENTITY standarti eng xavfsiz va qulay usuldir.
+
+4
+00:26.840 --> 00:32.630
+MySQL'da esa UUID_TO_BIN orqali o'n olti baytli
+binar saqlash va AUTO_INCREMENT ishlatiladi.
+
+5
+00:35.640 --> 00:42.050
+MySQL'da matnli char 36 kalit ishlatish barcha ikkilamchi
+indekslarni qariyb uch baravarga shishirib yuboradi.
+
+6
+00:42.360 --> 00:50.640
+Tasodifiy UUID v4 esa keshni yuvib yuboradi, shuning uchun
+katta jadvallarda tartibli v7 yoki butun son tanlash zarur.
+
+7
+00:53.750 --> 01:01.830
+SQLite'da WITHOUT ROWID faqat kompozit yoki qisqa qatorli jadvallar
+uchun foydali, bitta sonli kalitda oddiy jadval tezroq ishlaydi.
+
+8
+01:02.080 --> 01:08.710
+Standart holatda bigint, tarqoq tizimlarda esa tartibli
+UUID v7 ishlatish eng to'g'ri me'moriy qarordir.

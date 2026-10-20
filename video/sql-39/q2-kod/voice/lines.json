@@ -1,0 +1,625 @@
+[
+  {
+    "scene": "pg_indeks_hajmi",
+    "id": "l1",
+    "text": "Postgresda yuz ming qatorda bigint kalit indeksi 2.2 megabayt, uuid v7 esa 3.1 megabayt joy oldi.",
+    "show": "Postgresda yuz ming qatorda bigint kalit indeksi 2.2 megabayt, uuid v7 esa 3.1 megabayt joy oldi.",
+    "say": "Postgresda yuz ming qatorda big-int kalit indeksi 2.2 megabayt, yu-yu-ay-di ve-yetti esa 3.1 megabayt joy oldi.",
+    "a0": 0.18,
+    "a1": 8.51,
+    "words": [
+      {
+        "w": "Postgresda",
+        "s": 0.18,
+        "e": 0.84
+      },
+      {
+        "w": "yuz",
+        "s": 1.08,
+        "e": 1.26
+      },
+      {
+        "w": "ming",
+        "s": 1.3,
+        "e": 1.46
+      },
+      {
+        "w": "qatorda",
+        "s": 1.5,
+        "e": 1.94
+      },
+      {
+        "w": "big-int",
+        "s": 2.16,
+        "e": 2.56
+      },
+      {
+        "w": "kalit",
+        "s": 2.6,
+        "e": 2.88
+      },
+      {
+        "w": "indeksi",
+        "s": 2.92,
+        "e": 3.28
+      },
+      {
+        "w": "2.2",
+        "s": 3.28,
+        "e": 4.42
+      },
+      {
+        "w": "megabayt,",
+        "s": 4.42,
+        "e": 4.8
+      },
+      {
+        "w": "yu-yu-ay-di",
+        "s": 5.3,
+        "e": 5.86
+      },
+      {
+        "w": "ve-yetti",
+        "s": 5.98,
+        "e": 6.44
+      },
+      {
+        "w": "esa",
+        "s": 6.48,
+        "e": 6.66
+      },
+      {
+        "w": "3.1",
+        "s": 6.66,
+        "e": 7.69
+      },
+      {
+        "w": "megabayt",
+        "s": 7.69,
+        "e": 8.07
+      },
+      {
+        "w": "joy",
+        "s": 8.09,
+        "e": 8.25
+      },
+      {
+        "w": "oldi.",
+        "s": 8.31,
+        "e": 8.51
+      }
+    ]
+  },
+  {
+    "scene": "pg_indeks_hajmi",
+    "id": "l2",
+    "text": "Uuid v4 ham o'n olti bayt bo'lsa-da, tasodifiy tartibi tufayli indeksi 4.4 megabaytga yetib qirq foizga shishdi.",
+    "show": "Uuid v4 ham o'n olti bayt bo'lsa-da, tasodifiy tartibi tufayli indeksi 4.4 megabaytga yetib qirq foizga shishdi.",
+    "say": "Yu-yu-ay-di ve-to'rt ham o'n olti bayt bo'lsa-da, tasodifiy tartibi tufayli indeksi 4.4 megabaytga yetib qirq foizga shishdi.",
+    "a0": 9.27,
+    "a1": 17.03,
+    "words": [
+      {
+        "w": "Yu-yu-ay-di",
+        "s": 9.27,
+        "e": 9.83
+      },
+      {
+        "w": "ve-to'rt",
+        "s": 10.01,
+        "e": 10.45
+      },
+      {
+        "w": "ham",
+        "s": 10.51,
+        "e": 10.67
+      },
+      {
+        "w": "o'n",
+        "s": 10.79,
+        "e": 10.89
+      },
+      {
+        "w": "olti",
+        "s": 10.93,
+        "e": 11.11
+      },
+      {
+        "w": "bayt",
+        "s": 11.13,
+        "e": 11.31
+      },
+      {
+        "w": "bo'lsa-da,",
+        "s": 11.35,
+        "e": 11.69
+      },
+      {
+        "w": "tasodifiy",
+        "s": 12.03,
+        "e": 12.53
+      },
+      {
+        "w": "tartibi",
+        "s": 12.59,
+        "e": 12.95
+      },
+      {
+        "w": "tufayli",
+        "s": 13.01,
+        "e": 13.37
+      },
+      {
+        "w": "indeksi",
+        "s": 13.53,
+        "e": 13.93
+      },
+      {
+        "w": "4.4",
+        "s": 13.93,
+        "e": 15.05
+      },
+      {
+        "w": "megabaytga",
+        "s": 15.05,
+        "e": 15.53
+      },
+      {
+        "w": "yetib",
+        "s": 15.55,
+        "e": 15.77
+      },
+      {
+        "w": "qirq",
+        "s": 16.09,
+        "e": 16.29
+      },
+      {
+        "w": "foizga",
+        "s": 16.33,
+        "e": 16.69
+      },
+      {
+        "w": "shishdi.",
+        "s": 16.75,
+        "e": 17.03
+      }
+    ]
+  },
+  {
+    "scene": "mysql_ikkilamchi",
+    "id": "l3",
+    "text": "MySQL InnoDB jadvallarida x ustunidagi bir xil ikkilamchi indeks hajmini tekshiramiz.",
+    "show": "MySQL InnoDB jadvallarida x ustunidagi bir xil ikkilamchi indeks hajmini tekshiramiz.",
+    "say": "May es-kyu-el inno-de-be jadvallarida x ustunidagi bir xil ikkilamchi indeks hajmini tekshiramiz.",
+    "a0": 17.71,
+    "a1": 22.9,
+    "words": [
+      {
+        "w": "May",
+        "s": 17.71,
+        "e": 17.85
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 17.93,
+        "e": 18.33
+      },
+      {
+        "w": "inno-de-be",
+        "s": 18.45,
+        "e": 18.91
+      },
+      {
+        "w": "jadvallarida",
+        "s": 19.01,
+        "e": 19.63
+      },
+      {
+        "w": "x",
+        "s": 19.85,
+        "e": 19.87
+      },
+      {
+        "w": "ustunidagi",
+        "s": 20.13,
+        "e": 20.65
+      },
+      {
+        "w": "bir",
+        "s": 20.81,
+        "e": 20.95
+      },
+      {
+        "w": "xil",
+        "s": 21.01,
+        "e": 21.15
+      },
+      {
+        "w": "ikkilamchi",
+        "s": 21.25,
+        "e": 21.69
+      },
+      {
+        "w": "indeks",
+        "s": 21.75,
+        "e": 22.05
+      },
+      {
+        "w": "hajmini",
+        "s": 22.09,
+        "e": 22.41
+      },
+      {
+        "w": "tekshiramiz.",
+        "s": 22.43,
+        "e": 22.9
+      }
+    ]
+  },
+  {
+    "scene": "mysql_ikkilamchi",
+    "id": "l4",
+    "text": "Butun sonli kalitda indeks 1.5 megabayt bo'lsa, char 36 matnli kalitda 2.5 megabaytga ko'paydi.",
+    "show": "Butun sonli kalitda indeks 1.5 megabayt bo'lsa, char 36 matnli kalitda 2.5 megabaytga ko'paydi.",
+    "say": "Butun sonli kalitda indeks 1.5 megabayt bo'lsa, char 36 matnli kalitda 2.5 megabaytga ko'paydi.",
+    "a0": 23.86,
+    "a1": 31.32,
+    "words": [
+      {
+        "w": "Butun",
+        "s": 23.86,
+        "e": 24.1
+      },
+      {
+        "w": "sonli",
+        "s": 24.14,
+        "e": 24.4
+      },
+      {
+        "w": "kalitda",
+        "s": 24.48,
+        "e": 24.86
+      },
+      {
+        "w": "indeks",
+        "s": 25,
+        "e": 25.32
+      },
+      {
+        "w": "1.5",
+        "s": 25.32,
+        "e": 26.34
+      },
+      {
+        "w": "megabayt",
+        "s": 26.34,
+        "e": 26.72
+      },
+      {
+        "w": "bo'lsa,",
+        "s": 26.74,
+        "e": 27.02
+      },
+      {
+        "w": "char",
+        "s": 27.46,
+        "e": 27.68
+      },
+      {
+        "w": "36",
+        "s": 27.68,
+        "e": 27.68
+      },
+      {
+        "w": "matnli",
+        "s": 28.38,
+        "e": 28.74
+      },
+      {
+        "w": "kalitda",
+        "s": 28.82,
+        "e": 29.2
+      },
+      {
+        "w": "2.5",
+        "s": 29.2,
+        "e": 30.44
+      },
+      {
+        "w": "megabaytga",
+        "s": 30.44,
+        "e": 30.92
+      },
+      {
+        "w": "ko'paydi.",
+        "s": 30.96,
+        "e": 31.32
+      }
+    ]
+  },
+  {
+    "scene": "sqlite_without_rowid",
+    "id": "l5",
+    "text": "SQLite'da WITHOUT ROWID bilan yaratilgan jadvalda tizimli rowid ustuni bo'lmaydi.",
+    "show": "SQLite'da WITHOUT ROWID bilan yaratilgan jadvalda tizimli rowid ustuni bo'lmaydi.",
+    "say": "Es-kyu-laytda vizaut rou-ay-di bilan yaratilgan jadvalda tizimli rou-ay-di ustuni bo'lmaydi.",
+    "a0": 32.3,
+    "a1": 37.35,
+    "words": [
+      {
+        "w": "Es-kyu-laytda",
+        "s": 32.3,
+        "e": 32.98
+      },
+      {
+        "w": "vizaut",
+        "s": 33.14,
+        "e": 33.54
+      },
+      {
+        "w": "rou-ay-di",
+        "s": 33.62,
+        "e": 34.04
+      },
+      {
+        "w": "bilan",
+        "s": 34.1,
+        "e": 34.28
+      },
+      {
+        "w": "yaratilgan",
+        "s": 34.34,
+        "e": 34.8
+      },
+      {
+        "w": "jadvalda",
+        "s": 34.84,
+        "e": 35.26
+      },
+      {
+        "w": "tizimli",
+        "s": 35.58,
+        "e": 35.94
+      },
+      {
+        "w": "rou-ay-di",
+        "s": 36.08,
+        "e": 36.48
+      },
+      {
+        "w": "ustuni",
+        "s": 36.58,
+        "e": 36.89
+      },
+      {
+        "w": "bo'lmaydi.",
+        "s": 36.93,
+        "e": 37.35
+      }
+    ]
+  },
+  {
+    "scene": "sqlite_without_rowid",
+    "id": "l6",
+    "text": "Bunday jadvalga rowid so'rovi berilsa xato qaytadi va qatorlar to'g'ridan-to'g'ri kalit bo'yicha klasterlanadi.",
+    "show": "Bunday jadvalga rowid so'rovi berilsa xato qaytadi va qatorlar to'g'ridan-to'g'ri kalit bo'yicha klasterlanadi.",
+    "say": "Bunday jadvalga rou-ay-di so'rovi berilsa xato qaytadi va qatorlar to'g'ridan-to'g'ri kalit bo'yicha klasterlanadi.",
+    "a0": 38.05,
+    "a1": 44.17,
+    "words": [
+      {
+        "w": "Bunday",
+        "s": 38.05,
+        "e": 38.31
+      },
+      {
+        "w": "jadvalga",
+        "s": 38.35,
+        "e": 38.77
+      },
+      {
+        "w": "rou-ay-di",
+        "s": 38.97,
+        "e": 39.35
+      },
+      {
+        "w": "so'rovi",
+        "s": 39.45,
+        "e": 39.73
+      },
+      {
+        "w": "berilsa",
+        "s": 39.77,
+        "e": 40.13
+      },
+      {
+        "w": "xato",
+        "s": 40.23,
+        "e": 40.47
+      },
+      {
+        "w": "qaytadi",
+        "s": 40.53,
+        "e": 40.87
+      },
+      {
+        "w": "va",
+        "s": 41.17,
+        "e": 41.23
+      },
+      {
+        "w": "qatorlar",
+        "s": 41.31,
+        "e": 41.77
+      },
+      {
+        "w": "to'g'ridan-to'g'ri",
+        "s": 41.85,
+        "e": 42.53
+      },
+      {
+        "w": "kalit",
+        "s": 42.81,
+        "e": 43.11
+      },
+      {
+        "w": "bo'yicha",
+        "s": 43.15,
+        "e": 43.39
+      },
+      {
+        "w": "klasterlanadi.",
+        "s": 43.45,
+        "e": 44.17
+      }
+    ]
+  },
+  {
+    "scene": "sqlite_cheklovlar",
+    "id": "l7",
+    "text": "WITHOUT ROWID jadvallarida AUTOINCREMENT taqiqlangan va birlamchi kalit majburiy hisoblanadi.",
+    "show": "WITHOUT ROWID jadvallarida AUTOINCREMENT taqiqlangan va birlamchi kalit majburiy hisoblanadi.",
+    "say": "Vizaut rou-ay-di jadvallarida AUTOINCREMENT taqiqlangan va birlamchi kalit majburiy hisoblanadi.",
+    "a0": 44.77,
+    "a1": 50.12,
+    "words": [
+      {
+        "w": "Vizaut",
+        "s": 44.77,
+        "e": 45.19
+      },
+      {
+        "w": "rou-ay-di",
+        "s": 45.27,
+        "e": 45.65
+      },
+      {
+        "w": "jadvallarida",
+        "s": 45.71,
+        "e": 46.31
+      },
+      {
+        "w": "AUTOINCREMENT",
+        "s": 46.51,
+        "e": 47.27
+      },
+      {
+        "w": "taqiqlangan",
+        "s": 47.31,
+        "e": 47.91
+      },
+      {
+        "w": "va",
+        "s": 47.97,
+        "e": 48.05
+      },
+      {
+        "w": "birlamchi",
+        "s": 48.37,
+        "e": 48.77
+      },
+      {
+        "w": "kalit",
+        "s": 48.81,
+        "e": 49.07
+      },
+      {
+        "w": "majburiy",
+        "s": 49.15,
+        "e": 49.59
+      },
+      {
+        "w": "hisoblanadi.",
+        "s": 49.63,
+        "e": 50.12
+      }
+    ]
+  },
+  {
+    "scene": "sqlite_cheklovlar",
+    "id": "l8",
+    "text": "Oddiy jadvaldan farqli o'laroq, bo'sh qoldirilgan sonli kalit avtomatik to'lmaydi va NOT NULL xatosi beradi.",
+    "show": "Oddiy jadvaldan farqli o'laroq, bo'sh qoldirilgan sonli kalit avtomatik to'lmaydi va NOT NULL xatosi beradi.",
+    "say": "Oddiy jadvaldan farqli o'laroq, bo'sh qoldirilgan sonli kalit avtomatik to'lmaydi va NOT NULL xatosi beradi.",
+    "a0": 50.62,
+    "a1": 56.5,
+    "words": [
+      {
+        "w": "Oddiy",
+        "s": 50.62,
+        "e": 50.82
+      },
+      {
+        "w": "jadvaldan",
+        "s": 50.88,
+        "e": 51.32
+      },
+      {
+        "w": "farqli",
+        "s": 51.38,
+        "e": 51.74
+      },
+      {
+        "w": "o'laroq,",
+        "s": 51.84,
+        "e": 52.16
+      },
+      {
+        "w": "bo'sh",
+        "s": 52.28,
+        "e": 52.46
+      },
+      {
+        "w": "qoldirilgan",
+        "s": 52.5,
+        "e": 53.02
+      },
+      {
+        "w": "sonli",
+        "s": 53.08,
+        "e": 53.38
+      },
+      {
+        "w": "kalit",
+        "s": 53.46,
+        "e": 53.76
+      },
+      {
+        "w": "avtomatik",
+        "s": 53.94,
+        "e": 54.4
+      },
+      {
+        "w": "to'lmaydi",
+        "s": 54.44,
+        "e": 54.84
+      },
+      {
+        "w": "va",
+        "s": 54.88,
+        "e": 54.96
+      },
+      {
+        "w": "NOT",
+        "s": 55.28,
+        "e": 55.5
+      },
+      {
+        "w": "NULL",
+        "s": 55.58,
+        "e": 55.78
+      },
+      {
+        "w": "xatosi",
+        "s": 55.84,
+        "e": 56.2
+      },
+      {
+        "w": "beradi.",
+        "s": 56.22,
+        "e": 56.5
+      }
+    ]
+  }
+]

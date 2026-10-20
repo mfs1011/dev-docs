@@ -4,6 +4,15 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/39-1-tushuncha.jpg">
+    <source src="/video/sql/39-1-tushuncha.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/39-1-tushuncha.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/39-1-tushuncha.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>39.1-video. Birlamchi kalitni tanlash tushunchasi</figcaption>
+</figure>
+
 Birlamchi kalit (primary key) — qatorning yagona, `NULL` bo'lmagan identifikatori (14-bob). Uni yaratish usullari 13-bobda (identity, sequence, `AUTO_INCREMENT`), UUID tipi 9-bobda ko'rildi. Bu bob — **tanlov**: qaysi kalit qachon, va u saqlash tuzilishiga qanday ta'sir qiladi.
 
 ### Ikki xil kalit
@@ -55,6 +64,15 @@ SQLite hujjatiga ko'ra `CREATE TABLE` oxiriga `WITHOUT ROWID` qo'shilsa, `rowid`
 - hujjatning maslahati: ishlab chiqish oxirigacha `WITHOUT ROWID` haqida qayg'urmang, keyin sinab ko'ring.
 
 ## Kod
+
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/39-2-kod.jpg">
+    <source src="/video/sql/39-2-kod.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/39-2-kod.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/39-2-kod.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>39.2-video. Birlamchi kalit turlari va saqlash amaliyoti</figcaption>
+</figure>
 
 Misollar PostgreSQL 18.6, MySQL 9.7.2 va SQLite 3.54.0 da ishga tushirilgan. O'lchovlar macOS'dagi sinov muhitida, har jadvalga 200 000 qator.
 
@@ -203,6 +221,15 @@ Error near line 15: NOT NULL constraint failed: np.k
 14-bobda oddiy jadvalga xuddi shunday `NULL` kalitli qator yozilgan edi.
 
 ## Dialektlar
+
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/39-3-dialektlar.jpg">
+    <source src="/video/sql/39-3-dialektlar.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/39-3-dialektlar.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/39-3-dialektlar.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>39.3-video. PostgreSQL, MySQL va SQLite dialektlarida kalit tanlash</figcaption>
+</figure>
 
 Bu bobning o'zi dialektlar haqida — xulosa jadvalda.
 
