@@ -4,6 +4,15 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/43-1-tushuncha.jpg">
+    <source src="/video/sql/43-1-tushuncha.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/43-1-tushuncha.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/43-1-tushuncha.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>43.1-video. Maxsus indekslar: ifoda, qisman va qoplovchi indekslar</figcaption>
+</figure>
+
 Oddiy indeks — ustun qiymatlari, hamma qatorlar uchun. Bu bobda indeksni **nimaga** va **qaysi qatorlarga** qurish mumkinligi bo'yicha to'rt kengaytma:
 
 | Tur | Nima indekslanadi | Misol |
@@ -81,6 +90,15 @@ PostgreSQL'da har indeks ustunining **operator klassi** (operator class) bor —
 - bunday indeks `<`, `>` kabi oddiy taqqoslashlarga yaramaydi (tenglikka yaraydi) — kerak bo'lsa sukut klassli ikkinchi indeks ham qo'yiladi.
 
 ## Kod
+
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/43-2-kod.jpg">
+    <source src="/video/sql/43-2-kod.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/43-2-kod.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/43-2-kod.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>43.2-video. Maxsus indekslar amaliyoti va EXPLAIN tahlili</figcaption>
+</figure>
 
 Misollar PostgreSQL 18.6 (baza collation'i `en_US.UTF-8`), MySQL 9.7.2 va SQLite 3.54.0 da ishga tushirilgan. 200 000 qator; email'larning yarmi katta harflar bilan (`User2@Misol.UZ`), yarmi kichik; `holat` — 1% `'yangi'`.
 
@@ -224,6 +242,15 @@ SELECT id, ism FROM f WHERE id BETWEEN 1000 AND 1100;
 `Heap Fetches: 0` — javob to'liq indeksdan. Tez-tez o'zgaradigan jadvalda bu raqam yana o'sadi.
 
 ## Dialektlar
+
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/43-3-dialektlar.jpg">
+    <source src="/video/sql/43-3-dialektlar.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/43-3-dialektlar.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/43-3-dialektlar.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>43.3-video. Dialektlar: PostgreSQL, MySQL va SQLite maxsus indeks farqlari</figcaption>
+</figure>
 
 ### MySQL
 

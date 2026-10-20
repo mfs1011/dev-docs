@@ -1,0 +1,13 @@
+WEBVTT
+
+00:00.000 --> 00:17.779
+MySQL: Case-Insensitive Collation va Funksional Indeks
+
+00:17.779 --> 00:33.407
+SQLite: Algebra Yo'qligi va NOCASE Collation
+
+00:33.407 --> 00:48.988
+Qisman Indeks va INCLUDE Cheklovlari
+
+00:48.988 --> 01:07.260
+Dialektlar Taqqoslashi va Tipik Xatolar

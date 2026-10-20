@@ -1,0 +1,16 @@
+WEBVTT
+
+00:00.000 --> 00:17.326
+Maxsus Indekslar Xaritasi va Imkoniyatlari
+
+00:17.326 --> 00:34.028
+Ifoda Indeksi va UNIQUE (lower)
+
+00:34.028 --> 00:48.608
+Qisman Indeks (Partial Index)
+
+00:48.608 --> 01:04.701
+INCLUDE va Index-Only Scan
+
+01:04.701 --> 01:23.560
+Operator Klassi: text_pattern_ops va LIKE

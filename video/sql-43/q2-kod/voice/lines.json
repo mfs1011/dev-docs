@@ -1,0 +1,660 @@
+[
+  {
+    "scene": "lower_va_unique",
+    "id": "l1",
+    "text": "Lover ifodasi indeksi qo'shilgach, katta-kichik harfli emaillarni qidirish to'liq indeks skanga o'tdi.",
+    "show": "Lover ifodasi indeksi qo'shilgach, katta-kichik harfli emaillarni qidirish to'liq indeks skanga o'tdi.",
+    "say": "Lover ifodasi indeksi qo'shilgach, katta-kichik harfli emaillarni qidirish to'liq indeks skanga o'tdi.",
+    "a0": 0.28,
+    "a1": 6.5,
+    "words": [
+      {
+        "w": "Lover",
+        "s": 0.28,
+        "e": 0.54
+      },
+      {
+        "w": "ifodasi",
+        "s": 0.62,
+        "e": 1.06
+      },
+      {
+        "w": "indeksi",
+        "s": 1.16,
+        "e": 1.54
+      },
+      {
+        "w": "qo'shilgach,",
+        "s": 1.6,
+        "e": 2.18
+      },
+      {
+        "w": "katta-kichik",
+        "s": 2.54,
+        "e": 3.08
+      },
+      {
+        "w": "harfli",
+        "s": 3.12,
+        "e": 3.46
+      },
+      {
+        "w": "emaillarni",
+        "s": 3.62,
+        "e": 4.22
+      },
+      {
+        "w": "qidirish",
+        "s": 4.28,
+        "e": 4.66
+      },
+      {
+        "w": "to'liq",
+        "s": 5.0,
+        "e": 5.32
+      },
+      {
+        "w": "indeks",
+        "s": 5.46,
+        "e": 5.82
+      },
+      {
+        "w": "skanga",
+        "s": 5.84,
+        "e": 6.18
+      },
+      {
+        "w": "o'tdi.",
+        "s": 6.24,
+        "e": 6.5
+      }
+    ]
+  },
+  {
+    "scene": "lower_va_unique",
+    "id": "l2",
+    "text": "Yunik ifoda indeksi esa harflari katta qilib kiritilgan bir xil pochtani darhol bloklab xatolik berdi.",
+    "show": "Yunik ifoda indeksi esa harflari katta qilib kiritilgan bir xil pochtani darhol bloklab xatolik berdi.",
+    "say": "Yunik ifoda indeksi esa harflari katta qilib kiritilgan bir xil pochtani darhol bloklab xatolik berdi.",
+    "a0": 7.22,
+    "a1": 13.51,
+    "words": [
+      {
+        "w": "Yunik",
+        "s": 7.22,
+        "e": 7.53
+      },
+      {
+        "w": "ifoda",
+        "s": 7.61,
+        "e": 7.93
+      },
+      {
+        "w": "indeksi",
+        "s": 8.01,
+        "e": 8.39
+      },
+      {
+        "w": "esa",
+        "s": 8.43,
+        "e": 8.63
+      },
+      {
+        "w": "harflari",
+        "s": 9.01,
+        "e": 9.41
+      },
+      {
+        "w": "katta",
+        "s": 9.47,
+        "e": 9.77
+      },
+      {
+        "w": "qilib",
+        "s": 9.81,
+        "e": 10.01
+      },
+      {
+        "w": "kiritilgan",
+        "s": 10.05,
+        "e": 10.53
+      },
+      {
+        "w": "bir",
+        "s": 10.69,
+        "e": 10.83
+      },
+      {
+        "w": "xil",
+        "s": 10.87,
+        "e": 11.01
+      },
+      {
+        "w": "pochtani",
+        "s": 11.07,
+        "e": 11.47
+      },
+      {
+        "w": "darhol",
+        "s": 11.61,
+        "e": 11.99
+      },
+      {
+        "w": "bloklab",
+        "s": 12.07,
+        "e": 12.53
+      },
+      {
+        "w": "xatolik",
+        "s": 12.81,
+        "e": 13.23
+      },
+      {
+        "w": "berdi.",
+        "s": 13.27,
+        "e": 13.51
+      }
+    ]
+  },
+  {
+    "scene": "like_va_text_pattern_ops",
+    "id": "l3",
+    "text": "Oddiy indeks layk prefiksiga yaramadi, tekst pattern ops esa belgima-belgi oraliq hosil qildi.",
+    "show": "Oddiy indeks layk prefiksiga yaramadi, tekst pattern ops esa belgima-belgi oraliq hosil qildi.",
+    "say": "Oddiy indeks layk prefiksiga yaramadi, tekst pattern ops esa belgima-belgi oraliq hosil qildi.",
+    "a0": 14.47,
+    "a1": 20.69,
+    "words": [
+      {
+        "w": "Oddiy",
+        "s": 14.47,
+        "e": 14.71
+      },
+      {
+        "w": "indeks",
+        "s": 14.85,
+        "e": 15.17
+      },
+      {
+        "w": "layk",
+        "s": 15.29,
+        "e": 15.49
+      },
+      {
+        "w": "prefiksiga",
+        "s": 15.53,
+        "e": 16.07
+      },
+      {
+        "w": "yaramadi,",
+        "s": 16.15,
+        "e": 16.57
+      },
+      {
+        "w": "tekst",
+        "s": 17.07,
+        "e": 17.33
+      },
+      {
+        "w": "pattern",
+        "s": 17.39,
+        "e": 17.73
+      },
+      {
+        "w": "ops",
+        "s": 17.87,
+        "e": 18.03
+      },
+      {
+        "w": "esa",
+        "s": 18.11,
+        "e": 18.29
+      },
+      {
+        "w": "belgima-belgi",
+        "s": 18.77,
+        "e": 19.59
+      },
+      {
+        "w": "oraliq",
+        "s": 19.81,
+        "e": 20.15
+      },
+      {
+        "w": "hosil",
+        "s": 20.17,
+        "e": 20.45
+      },
+      {
+        "w": "qildi.",
+        "s": 20.47,
+        "e": 20.69
+      }
+    ]
+  },
+  {
+    "scene": "like_va_text_pattern_ops",
+    "id": "l4",
+    "text": "So'rov sharti katta yoki teng va qat'iy kichik belgilariga aylanib, qidiruv soniyaning ulushida yakunlandi.",
+    "show": "So'rov sharti katta yoki teng va qat'iy kichik belgilariga aylanib, qidiruv soniyaning ulushida yakunlandi.",
+    "say": "So'rov sharti katta yoki teng va qat'iy kichik belgilariga aylanib, qidiruv soniyaning ulushida yakunlandi.",
+    "a0": 21.33,
+    "a1": 27.76,
+    "words": [
+      {
+        "w": "So'rov",
+        "s": 21.33,
+        "e": 21.61
+      },
+      {
+        "w": "sharti",
+        "s": 21.65,
+        "e": 21.99
+      },
+      {
+        "w": "katta",
+        "s": 22.37,
+        "e": 22.72
+      },
+      {
+        "w": "yoki",
+        "s": 22.74,
+        "e": 23.04
+      },
+      {
+        "w": "teng",
+        "s": 23.18,
+        "e": 23.42
+      },
+      {
+        "w": "va",
+        "s": 23.48,
+        "e": 23.56
+      },
+      {
+        "w": "qat'iy",
+        "s": 23.88,
+        "e": 24.26
+      },
+      {
+        "w": "kichik",
+        "s": 24.38,
+        "e": 24.64
+      },
+      {
+        "w": "belgilariga",
+        "s": 24.68,
+        "e": 25.16
+      },
+      {
+        "w": "aylanib,",
+        "s": 25.2,
+        "e": 25.52
+      },
+      {
+        "w": "qidiruv",
+        "s": 25.84,
+        "e": 26.18
+      },
+      {
+        "w": "soniyaning",
+        "s": 26.26,
+        "e": 26.82
+      },
+      {
+        "w": "ulushida",
+        "s": 26.9,
+        "e": 27.22
+      },
+      {
+        "w": "yakunlandi.",
+        "s": 27.26,
+        "e": 27.76
+      }
+    ]
+  },
+  {
+    "scene": "qisman_indeks_olchovi",
+    "id": "l5",
+    "text": "Atigi bir foizlik yangi holat uchun qurilgan qisman indeks to'liq indeksdan yigirma bir baravar kichik bo'ldi.",
+    "show": "Atigi bir foizlik yangi holat uchun qurilgan qisman indeks to'liq indeksdan yigirma bir baravar kichik bo'ldi.",
+    "say": "Atigi bir foizlik yangi holat uchun qurilgan qisman indeks to'liq indeksdan yigirma bir baravar kichik bo'ldi.",
+    "a0": 28.72,
+    "a1": 35.36,
+    "words": [
+      {
+        "w": "Atigi",
+        "s": 28.72,
+        "e": 29.06
+      },
+      {
+        "w": "bir",
+        "s": 29.22,
+        "e": 29.34
+      },
+      {
+        "w": "foizlik",
+        "s": 29.4,
+        "e": 29.84
+      },
+      {
+        "w": "yangi",
+        "s": 30.02,
+        "e": 30.22
+      },
+      {
+        "w": "holat",
+        "s": 30.26,
+        "e": 30.52
+      },
+      {
+        "w": "uchun",
+        "s": 30.58,
+        "e": 30.76
+      },
+      {
+        "w": "qurilgan",
+        "s": 30.8,
+        "e": 31.2
+      },
+      {
+        "w": "qisman",
+        "s": 31.28,
+        "e": 31.62
+      },
+      {
+        "w": "indeks",
+        "s": 31.76,
+        "e": 32.12
+      },
+      {
+        "w": "to'liq",
+        "s": 32.52,
+        "e": 32.8
+      },
+      {
+        "w": "indeksdan",
+        "s": 32.92,
+        "e": 33.42
+      },
+      {
+        "w": "yigirma",
+        "s": 33.78,
+        "e": 34.18
+      },
+      {
+        "w": "bir",
+        "s": 34.28,
+        "e": 34.42
+      },
+      {
+        "w": "baravar",
+        "s": 34.48,
+        "e": 34.8
+      },
+      {
+        "w": "kichik",
+        "s": 34.84,
+        "e": 35.06
+      },
+      {
+        "w": "bo'ldi.",
+        "s": 35.1,
+        "e": 35.36
+      }
+    ]
+  },
+  {
+    "scene": "qisman_indeks_olchovi",
+    "id": "l6",
+    "text": "Yangi holatli so'rovlar bevosita indeksdan o'qildi, faol qatorlarda esa baza asosiy kalitga murojaat qildi.",
+    "show": "Yangi holatli so'rovlar bevosita indeksdan o'qildi, faol qatorlarda esa baza asosiy kalitga murojaat qildi.",
+    "say": "Yangi holatli so'rovlar bevosita indeksdan o'qildi, faol qatorlarda esa baza asosiy kalitga murojaat qildi.",
+    "a0": 36.08,
+    "a1": 42.75,
+    "words": [
+      {
+        "w": "Yangi",
+        "s": 36.08,
+        "e": 36.34
+      },
+      {
+        "w": "holatli",
+        "s": 36.38,
+        "e": 36.72
+      },
+      {
+        "w": "so'rovlar",
+        "s": 36.8,
+        "e": 37.19
+      },
+      {
+        "w": "bevosita",
+        "s": 37.35,
+        "e": 37.91
+      },
+      {
+        "w": "indeksdan",
+        "s": 38.05,
+        "e": 38.55
+      },
+      {
+        "w": "o'qildi,",
+        "s": 38.63,
+        "e": 38.95
+      },
+      {
+        "w": "faol",
+        "s": 39.33,
+        "e": 39.59
+      },
+      {
+        "w": "qatorlarda",
+        "s": 39.65,
+        "e": 40.15
+      },
+      {
+        "w": "esa",
+        "s": 40.21,
+        "e": 40.37
+      },
+      {
+        "w": "baza",
+        "s": 40.83,
+        "e": 41.13
+      },
+      {
+        "w": "asosiy",
+        "s": 41.31,
+        "e": 41.69
+      },
+      {
+        "w": "kalitga",
+        "s": 41.77,
+        "e": 42.13
+      },
+      {
+        "w": "murojaat",
+        "s": 42.17,
+        "e": 42.51
+      },
+      {
+        "w": "qildi.",
+        "s": 42.53,
+        "e": 42.75
+      }
+    ]
+  },
+  {
+    "scene": "include_va_heap_fetches",
+    "id": "l7",
+    "text": "Inklud orqali ism ustuni yuklanganda indeks onli skan ishga tushdi, ammo boshida yuz bitta hip fech bo'ldi.",
+    "show": "Inklud orqali ism ustuni yuklanganda indeks onli skan ishga tushdi, ammo boshida yuz bitta hip fech bo'ldi.",
+    "say": "Inklud orqali ism ustuni yuklanganda indeks onli skan ishga tushdi, ammo boshida yuz bitta hip fech bo'ldi.",
+    "a0": 43.55,
+    "a1": 50.55,
+    "words": [
+      {
+        "w": "Inklud",
+        "s": 43.55,
+        "e": 43.89
+      },
+      {
+        "w": "orqali",
+        "s": 43.95,
+        "e": 44.25
+      },
+      {
+        "w": "ism",
+        "s": 44.39,
+        "e": 44.59
+      },
+      {
+        "w": "ustuni",
+        "s": 44.67,
+        "e": 44.97
+      },
+      {
+        "w": "yuklanganda",
+        "s": 45.01,
+        "e": 45.61
+      },
+      {
+        "w": "indeks",
+        "s": 46.11,
+        "e": 46.47
+      },
+      {
+        "w": "onli",
+        "s": 46.65,
+        "e": 46.89
+      },
+      {
+        "w": "skan",
+        "s": 46.95,
+        "e": 47.19
+      },
+      {
+        "w": "ishga",
+        "s": 47.23,
+        "e": 47.41
+      },
+      {
+        "w": "tushdi,",
+        "s": 47.45,
+        "e": 47.69
+      },
+      {
+        "w": "ammo",
+        "s": 48.07,
+        "e": 48.27
+      },
+      {
+        "w": "boshida",
+        "s": 48.49,
+        "e": 48.85
+      },
+      {
+        "w": "yuz",
+        "s": 49.27,
+        "e": 49.43
+      },
+      {
+        "w": "bitta",
+        "s": 49.51,
+        "e": 49.75
+      },
+      {
+        "w": "hip",
+        "s": 49.81,
+        "e": 49.99
+      },
+      {
+        "w": "fech",
+        "s": 50.07,
+        "e": 50.25
+      },
+      {
+        "w": "bo'ldi.",
+        "s": 50.31,
+        "e": 50.55
+      }
+    ]
+  },
+  {
+    "scene": "include_va_heap_fetches",
+    "id": "l8",
+    "text": "Vakuum buyrug'i ko'rinuvchanlik xaritasini tozalagach, hip fechlar soni nolga tushib mutlaq tezlikka erishildi.",
+    "show": "Vakuum buyrug'i ko'rinuvchanlik xaritasini tozalagach, hip fechlar soni nolga tushib mutlaq tezlikka erishildi.",
+    "say": "Vakuum buyrug'i ko'rinuvchanlik xaritasini tozalagach, hip fechlar soni nolga tushib mutlaq tezlikka erishildi.",
+    "a0": 51.22,
+    "a1": 57.42,
+    "words": [
+      {
+        "w": "Vakuum",
+        "s": 51.22,
+        "e": 51.58
+      },
+      {
+        "w": "buyrug'i",
+        "s": 51.62,
+        "e": 51.98
+      },
+      {
+        "w": "ko'rinuvchanlik",
+        "s": 52.08,
+        "e": 52.68
+      },
+      {
+        "w": "xaritasini",
+        "s": 52.72,
+        "e": 53.22
+      },
+      {
+        "w": "tozalagach,",
+        "s": 53.28,
+        "e": 53.84
+      },
+      {
+        "w": "hip",
+        "s": 54.2,
+        "e": 54.4
+      },
+      {
+        "w": "fechlar",
+        "s": 54.48,
+        "e": 54.82
+      },
+      {
+        "w": "soni",
+        "s": 54.86,
+        "e": 55.12
+      },
+      {
+        "w": "nolga",
+        "s": 55.3,
+        "e": 55.6
+      },
+      {
+        "w": "tushib",
+        "s": 55.64,
+        "e": 55.9
+      },
+      {
+        "w": "mutlaq",
+        "s": 56.24,
+        "e": 56.6
+      },
+      {
+        "w": "tezlikka",
+        "s": 56.64,
+        "e": 57.0
+      },
+      {
+        "w": "erishildi.",
+        "s": 57.02,
+        "e": 57.42
+      }
+    ]
+  }
+]
