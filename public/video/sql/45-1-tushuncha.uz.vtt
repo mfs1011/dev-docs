@@ -1,0 +1,41 @@
+WEBVTT
+
+1
+00:01.420 --> 00:08.470
+SQL deklarativ til bo'lib, biz nima kerakligini yozamiz,
+qanday bajarishni esa rejalashtiruvchi hal qiladi.
+
+2
+00:08.890 --> 00:16.560
+Ekspleyn so'rov rejasini tugunlar daraxti ko'rinishida beradi: pastda
+skanerlash, tepada esa birlashtirish va saralash amallari turadi.
+
+3
+00:19.470 --> 00:26.870
+Oddiy ekspleyn so'rovni bajarmaydi, u faqat boshlash va to'liq
+bajarilish narxini hamda taxminiy qatorlar sonini ko'rsatadi.
+
+4
+00:27.280 --> 00:34.130
+Baza hisoblaydigan narx birliklari millisekund emas, balki
+disk sahifalarini o'qishga asoslangan shartli bahodir.
+
+5
+00:37.100 --> 00:44.060
+Ekspleyn analayz esa so'rovni haqiqatda ishga tushirib, har
+bir tugun uchun real vaqt va qatorlar sonini chiqaradi.
+
+6
+00:44.270 --> 00:50.160
+Ichki tugunlardagi vaqt bitta tsiklga tegishli bo'lib,
+umumiy hisob uchun uni loops soniga ko'paytirish shart.
+
+7
+00:53.270 --> 00:58.720
+O'ta muhim qoida: analayz buyrug'i ma'lumotlarni
+haqiqatan o'zgartiradi yoki o'chiradi.
+
+8
+00:58.800 --> 01:05.210
+Shuning uchun o'chirish va yangilash so'rovlarini tahlil
+qilishda doimo begin va rollback blokidan foydalaning.

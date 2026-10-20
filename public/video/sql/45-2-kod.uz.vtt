@@ -1,0 +1,41 @@
+WEBVTT
+
+1
+00:01.420 --> 00:08.670
+Ikki yuz ming qatorli buyurtmalar jadvalida filtrlarsiz
+so'rov oddiy sek skan orqali to'liq o'qilishini ko'ramiz.
+
+2
+00:09.130 --> 00:17.080
+Tartiblash va limit qo'shilganda esa reja pastdan parallel skanerlash,
+saralash va limit bosqichlari bo'ylab yuqoriga ko'tariladi.
+
+3
+00:20.210 --> 00:26.700
+Besh mijoz buyurtmalarini ekspleyn analayz bilan
+birlashtirganimizda, baza nested lup mexanizmini tanladi.
+
+4
+00:26.800 --> 00:33.930
+Tashqi mijozlar jadvali bir marta, ichki buyurtmalar esa
+indeks orqali besh marta takrorlanib, aniq qatorlar topildi.
+
+5
+00:36.880 --> 00:44.240
+Ammo butun jadval bo'yicha hisob-kitobda rejalashtiruvchi
+nested lupdan voz kechib, hesh joyn usulini ishga tushirdi.
+
+6
+00:44.530 --> 00:50.900
+Mijozlar xotiradagi hesh jadvalga joylandi va ikki
+yuz ming buyurtma bir martada chaqqon tutashtirildi.
+
+7
+00:53.910 --> 01:00.500
+Limit bilan saralashda top-en hip-sort usuli qo'llanib,
+xotirada faqat kerakli beshta qator ushlab turildi.
+
+8
+01:00.920 --> 01:07.330
+O'chirish so'rovini esa begin va rolbek ichida xavfsiz
+tekshirib, besh yuz qirq sakkiz qator o'chirilishini ko'rdik.

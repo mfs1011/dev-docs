@@ -1,0 +1,13 @@
+WEBVTT
+
+00:00.000 --> 00:18.956
+Sodda Reja va Daraxtni O'qish
+
+00:18.956 --> 00:35.809
+EXPLAIN ANALYZE: Nested Loop
+
+00:35.809 --> 00:52.758
+Katta Birlashtirish: Hash Join
+
+00:52.758 --> 01:11.780
+Top-N Heapsort va Xavfsiz DML

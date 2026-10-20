@@ -1,0 +1,665 @@
+[
+  {
+    "scene": "mysql_traditional",
+    "id": "l1",
+    "text": "MySQL'da tredishnl formati rejani jadval ko'rinishida berib, tayp ustunida kirish turini ko'rsatadi.",
+    "show": "MySQL'da tredishnl formati rejani jadval ko'rinishida berib, tayp ustunida kirish turini ko'rsatadi.",
+    "say": "May es-kyu-elda tredishnl formati rejani jadval ko'rinishida berib, tayp ustunida kirish turini ko'rsatadi.",
+    "a0": 0.3,
+    "a1": 5.9,
+    "words": [
+      {
+        "w": "May",
+        "s": 0.3,
+        "e": 0.48
+      },
+      {
+        "w": "es-kyu-elda",
+        "s": 0.52,
+        "e": 0.98
+      },
+      {
+        "w": "tredishnl",
+        "s": 1.04,
+        "e": 1.56
+      },
+      {
+        "w": "formati",
+        "s": 1.6,
+        "e": 2.0
+      },
+      {
+        "w": "rejani",
+        "s": 2.36,
+        "e": 2.68
+      },
+      {
+        "w": "jadval",
+        "s": 2.74,
+        "e": 3.04
+      },
+      {
+        "w": "ko'rinishida",
+        "s": 3.1,
+        "e": 3.54
+      },
+      {
+        "w": "berib,",
+        "s": 3.6,
+        "e": 3.82
+      },
+      {
+        "w": "tayp",
+        "s": 4.14,
+        "e": 4.4
+      },
+      {
+        "w": "ustunida",
+        "s": 4.5,
+        "e": 4.88
+      },
+      {
+        "w": "kirish",
+        "s": 4.94,
+        "e": 5.18
+      },
+      {
+        "w": "turini",
+        "s": 5.2,
+        "e": 5.42
+      },
+      {
+        "w": "ko'rsatadi.",
+        "s": 5.46,
+        "e": 5.9
+      }
+    ]
+  },
+  {
+    "scene": "mysql_traditional",
+    "id": "l2",
+    "text": "Eng xavfli belgi — bu ALL ya'ni to'liq skan, hamda ekstra ustunidagi yuzing faylsort yozuvidir.",
+    "show": "Eng xavfli belgi — bu ALL ya'ni to'liq skan, hamda ekstra ustunidagi yuzing faylsort yozuvidir.",
+    "say": "Eng xavfli belgi — bu ol ya'ni to'liq skan, hamda ekstra ustunidagi yuzing faylsort yozuvidir.",
+    "a0": 6.58,
+    "a1": 13.05,
+    "words": [
+      {
+        "w": "Eng",
+        "s": 6.58,
+        "e": 6.7
+      },
+      {
+        "w": "xavfli",
+        "s": 6.78,
+        "e": 7.08
+      },
+      {
+        "w": "belgi",
+        "s": 7.16,
+        "e": 7.46
+      },
+      {
+        "w": "—",
+        "s": 7.46,
+        "e": 7.46
+      },
+      {
+        "w": "bu",
+        "s": 7.53,
+        "e": 7.61
+      },
+      {
+        "w": "ol",
+        "s": 8.07,
+        "e": 8.25
+      },
+      {
+        "w": "ya'ni",
+        "s": 8.63,
+        "e": 8.87
+      },
+      {
+        "w": "to'liq",
+        "s": 9.01,
+        "e": 9.27
+      },
+      {
+        "w": "skan,",
+        "s": 9.35,
+        "e": 9.65
+      },
+      {
+        "w": "hamda",
+        "s": 9.95,
+        "e": 10.17
+      },
+      {
+        "w": "ekstra",
+        "s": 10.47,
+        "e": 10.81
+      },
+      {
+        "w": "ustunidagi",
+        "s": 10.87,
+        "e": 11.37
+      },
+      {
+        "w": "yuzing",
+        "s": 11.69,
+        "e": 12.03
+      },
+      {
+        "w": "faylsort",
+        "s": 12.09,
+        "e": 12.61
+      },
+      {
+        "w": "yozuvidir.",
+        "s": 12.65,
+        "e": 13.05
+      }
+    ]
+  },
+  {
+    "scene": "mysql_tree_va_analyze",
+    "id": "l3",
+    "text": "Zamonaviy MySQL'da ekspleyn analayz daraxt ko'rinishida bo'lib, har bir iterator uchun real vaqtni o'lchaydi.",
+    "show": "Zamonaviy MySQL'da ekspleyn analayz daraxt ko'rinishida bo'lib, har bir iterator uchun real vaqtni o'lchaydi.",
+    "say": "Zamonaviy May es-kyu-elda ekspleyn analayz daraxt ko'rinishida bo'lib, har bir iterator uchun real vaqtni o'lchaydi.",
+    "a0": 13.93,
+    "a1": 19.81,
+    "words": [
+      {
+        "w": "Zamonaviy",
+        "s": 13.93,
+        "e": 14.41
+      },
+      {
+        "w": "May",
+        "s": 14.49,
+        "e": 14.65
+      },
+      {
+        "w": "es-kyu-elda",
+        "s": 14.67,
+        "e": 15.09
+      },
+      {
+        "w": "ekspleyn",
+        "s": 15.43,
+        "e": 15.93
+      },
+      {
+        "w": "analayz",
+        "s": 16.03,
+        "e": 16.45
+      },
+      {
+        "w": "daraxt",
+        "s": 16.47,
+        "e": 16.71
+      },
+      {
+        "w": "ko'rinishida",
+        "s": 16.75,
+        "e": 17.15
+      },
+      {
+        "w": "bo'lib,",
+        "s": 17.17,
+        "e": 17.37
+      },
+      {
+        "w": "har",
+        "s": 17.67,
+        "e": 17.87
+      },
+      {
+        "w": "bir",
+        "s": 17.93,
+        "e": 18.05
+      },
+      {
+        "w": "iterator",
+        "s": 18.13,
+        "e": 18.55
+      },
+      {
+        "w": "uchun",
+        "s": 18.59,
+        "e": 18.75
+      },
+      {
+        "w": "real",
+        "s": 18.87,
+        "e": 19.13
+      },
+      {
+        "w": "vaqtni",
+        "s": 19.17,
+        "e": 19.43
+      },
+      {
+        "w": "o'lchaydi.",
+        "s": 19.45,
+        "e": 19.81
+      }
+    ]
+  },
+  {
+    "scene": "mysql_tree_va_analyze",
+    "id": "l4",
+    "text": "Katta birlashtirishda Postgres hesh joynga o'tgan bo'lsa, MySQL yigirma ming lupli nested lupda qoldi.",
+    "show": "Katta birlashtirishda Postgres hesh joynga o'tgan bo'lsa, MySQL yigirma ming lupli nested lupda qoldi.",
+    "say": "Katta birlashtirishda Postgres hesh joynga o'tgan bo'lsa, May es-kyu-el yigirma ming lupli nested lupda qoldi.",
+    "a0": 20.63,
+    "a1": 26.5,
+    "words": [
+      {
+        "w": "Katta",
+        "s": 20.63,
+        "e": 20.91
+      },
+      {
+        "w": "birlashtirishda",
+        "s": 20.93,
+        "e": 21.51
+      },
+      {
+        "w": "Postgres",
+        "s": 21.63,
+        "e": 22.11
+      },
+      {
+        "w": "hesh",
+        "s": 22.37,
+        "e": 22.58
+      },
+      {
+        "w": "joynga",
+        "s": 22.66,
+        "e": 22.98
+      },
+      {
+        "w": "o'tgan",
+        "s": 23.02,
+        "e": 23.24
+      },
+      {
+        "w": "bo'lsa,",
+        "s": 23.28,
+        "e": 23.52
+      },
+      {
+        "w": "May",
+        "s": 23.86,
+        "e": 24.04
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 24.06,
+        "e": 24.4
+      },
+      {
+        "w": "yigirma",
+        "s": 24.6,
+        "e": 24.96
+      },
+      {
+        "w": "ming",
+        "s": 25.0,
+        "e": 25.16
+      },
+      {
+        "w": "lupli",
+        "s": 25.2,
+        "e": 25.46
+      },
+      {
+        "w": "nested",
+        "s": 25.62,
+        "e": 25.94
+      },
+      {
+        "w": "lupda",
+        "s": 25.98,
+        "e": 26.2
+      },
+      {
+        "w": "qoldi.",
+        "s": 26.24,
+        "e": 26.5
+      }
+    ]
+  },
+  {
+    "scene": "sqlite_query_plan",
+    "id": "l5",
+    "text": "Es-kyu-laytda oddiy ekspleyn ichki baytkodni chiqargani sababli, albatta ekspleyn kveri plen ishlatilishi shart.",
+    "show": "Es-kyu-laytda oddiy ekspleyn ichki baytkodni chiqargani sababli, albatta ekspleyn kveri plen ishlatilishi shart.",
+    "say": "Es-kyu-laytda oddiy ekspleyn ichki baytkodni chiqargani sababli, albatta ekspleyn kveri plen ishlatilishi shart.",
+    "a0": 27.38,
+    "a1": 33.54,
+    "words": [
+      {
+        "w": "Es-kyu-laytda",
+        "s": 27.38,
+        "e": 28.0
+      },
+      {
+        "w": "oddiy",
+        "s": 28.14,
+        "e": 28.38
+      },
+      {
+        "w": "ekspleyn",
+        "s": 28.46,
+        "e": 28.92
+      },
+      {
+        "w": "ichki",
+        "s": 29.22,
+        "e": 29.42
+      },
+      {
+        "w": "baytkodni",
+        "s": 29.48,
+        "e": 29.92
+      },
+      {
+        "w": "chiqargani",
+        "s": 30.0,
+        "e": 30.34
+      },
+      {
+        "w": "sababli,",
+        "s": 30.36,
+        "e": 30.72
+      },
+      {
+        "w": "albatta",
+        "s": 31.2,
+        "e": 31.6
+      },
+      {
+        "w": "ekspleyn",
+        "s": 31.68,
+        "e": 32.14
+      },
+      {
+        "w": "kveri",
+        "s": 32.18,
+        "e": 32.48
+      },
+      {
+        "w": "plen",
+        "s": 32.54,
+        "e": 32.76
+      },
+      {
+        "w": "ishlatilishi",
+        "s": 32.82,
+        "e": 33.26
+      },
+      {
+        "w": "shart.",
+        "s": 33.3,
+        "e": 33.54
+      }
+    ]
+  },
+  {
+    "scene": "sqlite_query_plan",
+    "id": "l6",
+    "text": "U skan va serch so'zlari bilan indeks ishlatilishini ko'rsatadi, ammo reja ichida vaqt va narxlar berilmaydi.",
+    "show": "U skan va serch so'zlari bilan indeks ishlatilishini ko'rsatadi, ammo reja ichida vaqt va narxlar berilmaydi.",
+    "say": "U skan va serch so'zlari bilan indeks ishlatilishini ko'rsatadi, ammo reja ichida vaqt va narxlar berilmaydi.",
+    "a0": 34.3,
+    "a1": 40.01,
+    "words": [
+      {
+        "w": "U",
+        "s": 34.3,
+        "e": 34.32
+      },
+      {
+        "w": "skan",
+        "s": 34.56,
+        "e": 34.88
+      },
+      {
+        "w": "va",
+        "s": 34.94,
+        "e": 35.0
+      },
+      {
+        "w": "serch",
+        "s": 35.08,
+        "e": 35.32
+      },
+      {
+        "w": "so'zlari",
+        "s": 35.34,
+        "e": 35.69
+      },
+      {
+        "w": "bilan",
+        "s": 35.71,
+        "e": 35.89
+      },
+      {
+        "w": "indeks",
+        "s": 36.01,
+        "e": 36.29
+      },
+      {
+        "w": "ishlatilishini",
+        "s": 36.35,
+        "e": 36.83
+      },
+      {
+        "w": "ko'rsatadi,",
+        "s": 36.87,
+        "e": 37.29
+      },
+      {
+        "w": "ammo",
+        "s": 37.59,
+        "e": 37.73
+      },
+      {
+        "w": "reja",
+        "s": 38.05,
+        "e": 38.29
+      },
+      {
+        "w": "ichida",
+        "s": 38.31,
+        "e": 38.55
+      },
+      {
+        "w": "vaqt",
+        "s": 38.77,
+        "e": 39.01
+      },
+      {
+        "w": "va",
+        "s": 39.05,
+        "e": 39.11
+      },
+      {
+        "w": "narxlar",
+        "s": 39.17,
+        "e": 39.51
+      },
+      {
+        "w": "berilmaydi.",
+        "s": 39.57,
+        "e": 40.01
+      }
+    ]
+  },
+  {
+    "scene": "taqqoslash_va_xatolar",
+    "id": "l7",
+    "text": "Eng katta xato — kostni millisekund deb o'qish yoki lups ko'paytuvchisini hisobga olmaslikdir.",
+    "show": "Eng katta xato — kostni millisekund deb o'qish yoki lups ko'paytuvchisini hisobga olmaslikdir.",
+    "say": "Eng katta xato — kostni millisekund deb o'qish yoki lups ko'paytuvchisini hisobga olmaslikdir.",
+    "a0": 40.77,
+    "a1": 45.83,
+    "words": [
+      {
+        "w": "Eng",
+        "s": 40.77,
+        "e": 40.91
+      },
+      {
+        "w": "katta",
+        "s": 40.93,
+        "e": 41.17
+      },
+      {
+        "w": "xato",
+        "s": 41.23,
+        "e": 41.45
+      },
+      {
+        "w": "—",
+        "s": 41.45,
+        "e": 41.45
+      },
+      {
+        "w": "kostni",
+        "s": 41.79,
+        "e": 42.19
+      },
+      {
+        "w": "millisekund",
+        "s": 42.27,
+        "e": 42.77
+      },
+      {
+        "w": "deb",
+        "s": 42.79,
+        "e": 42.93
+      },
+      {
+        "w": "o'qish",
+        "s": 42.99,
+        "e": 43.25
+      },
+      {
+        "w": "yoki",
+        "s": 43.47,
+        "e": 43.69
+      },
+      {
+        "w": "lups",
+        "s": 44.03,
+        "e": 44.27
+      },
+      {
+        "w": "ko'paytuvchisini",
+        "s": 44.31,
+        "e": 44.93
+      },
+      {
+        "w": "hisobga",
+        "s": 44.95,
+        "e": 45.27
+      },
+      {
+        "w": "olmaslikdir.",
+        "s": 45.31,
+        "e": 45.83
+      }
+    ]
+  },
+  {
+    "scene": "taqqoslash_va_xatolar",
+    "id": "l8",
+    "text": "Rejani to'g'ri tahlil qilish orqali siz har qanday sekin so'rovning asl sababini osonlikcha bartaraf etasiz.",
+    "show": "Rejani to'g'ri tahlil qilish orqali siz har qanday sekin so'rovning asl sababini osonlikcha bartaraf etasiz.",
+    "say": "Rejani to'g'ri tahlil qilish orqali siz har qanday sekin so'rovning asl sababini osonlikcha bartaraf etasiz.",
+    "a0": 46.65,
+    "a1": 52.08,
+    "words": [
+      {
+        "w": "Rejani",
+        "s": 46.65,
+        "e": 47.02
+      },
+      {
+        "w": "to'g'ri",
+        "s": 47.08,
+        "e": 47.36
+      },
+      {
+        "w": "tahlil",
+        "s": 47.38,
+        "e": 47.68
+      },
+      {
+        "w": "qilish",
+        "s": 47.7,
+        "e": 47.9
+      },
+      {
+        "w": "orqali",
+        "s": 47.94,
+        "e": 48.2
+      },
+      {
+        "w": "siz",
+        "s": 48.52,
+        "e": 48.66
+      },
+      {
+        "w": "har",
+        "s": 48.76,
+        "e": 48.94
+      },
+      {
+        "w": "qanday",
+        "s": 49.0,
+        "e": 49.3
+      },
+      {
+        "w": "sekin",
+        "s": 49.34,
+        "e": 49.58
+      },
+      {
+        "w": "so'rovning",
+        "s": 49.62,
+        "e": 50.04
+      },
+      {
+        "w": "asl",
+        "s": 50.18,
+        "e": 50.4
+      },
+      {
+        "w": "sababini",
+        "s": 50.44,
+        "e": 50.8
+      },
+      {
+        "w": "osonlikcha",
+        "s": 50.88,
+        "e": 51.32
+      },
+      {
+        "w": "bartaraf",
+        "s": 51.36,
+        "e": 51.72
+      },
+      {
+        "w": "etasiz.",
+        "s": 51.76,
+        "e": 52.08
+      }
+    ]
+  }
+]
