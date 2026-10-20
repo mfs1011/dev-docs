@@ -1,0 +1,772 @@
+[
+  {
+    "scene": "tekis_jadval_va_anomaliyalar",
+    "id": "l1",
+    "text": "Dastlab barcha ma'lumotlarni bitta tekis jadvalga yozib, yangilash va o'chirish anomaliyalarini sinab ko'ramiz.",
+    "show": "Dastlab barcha ma'lumotlarni bitta tekis jadvalga yozib, yangilash va o'chirish anomaliyalarini sinab ko'ramiz.",
+    "say": "Dastlab barcha ma'lumotlarni bitta tekis jadvalga yozib, yangilash va o'chirish anomaliyalarini sinab ko'ramiz.",
+    "a0": 0.3,
+    "a1": 5.68,
+    "words": [
+      {
+        "w": "Dastlab",
+        "s": 0.3,
+        "e": 0.62
+      },
+      {
+        "w": "barcha",
+        "s": 0.66,
+        "e": 0.92
+      },
+      {
+        "w": "ma'lumotlarni",
+        "s": 0.96,
+        "e": 1.64
+      },
+      {
+        "w": "bitta",
+        "s": 1.78,
+        "e": 2.08
+      },
+      {
+        "w": "tekis",
+        "s": 2.14,
+        "e": 2.38
+      },
+      {
+        "w": "jadvalga",
+        "s": 2.46,
+        "e": 2.88
+      },
+      {
+        "w": "yozib,",
+        "s": 2.92,
+        "e": 3.2
+      },
+      {
+        "w": "yangilash",
+        "s": 3.32,
+        "e": 3.78
+      },
+      {
+        "w": "va",
+        "s": 3.84,
+        "e": 3.9
+      },
+      {
+        "w": "o'chirish",
+        "s": 4.02,
+        "e": 4.34
+      },
+      {
+        "w": "anomaliyalarini",
+        "s": 4.42,
+        "e": 5.1
+      },
+      {
+        "w": "sinab",
+        "s": 5.16,
+        "e": 5.36
+      },
+      {
+        "w": "ko'ramiz.",
+        "s": 5.38,
+        "e": 5.68
+      }
+    ]
+  },
+  {
+    "scene": "tekis_jadval_va_anomaliyalar",
+    "id": "l2",
+    "text": "Ali yangi manzilga ko'chganda bazada ikki xil manzil paydo bo'ldi, Vali buyurtmasi o'chganda esa mijoz yo'qoldi.",
+    "show": "Ali yangi manzilga ko'chganda bazada ikki xil manzil paydo bo'ldi, Vali buyurtmasi o'chganda esa mijoz yo'qoldi.",
+    "say": "Ali yangi manzilga ko'chganda bazada ikki xil manzil paydo bo'ldi, Vali buyurtmasi o'chganda esa mijoz yo'qoldi.",
+    "a0": 6.74,
+    "a1": 13.11,
+    "words": [
+      {
+        "w": "Ali",
+        "s": 6.74,
+        "e": 6.92
+      },
+      {
+        "w": "yangi",
+        "s": 7.18,
+        "e": 7.44
+      },
+      {
+        "w": "manzilga",
+        "s": 7.48,
+        "e": 7.85
+      },
+      {
+        "w": "ko'chganda",
+        "s": 7.89,
+        "e": 8.35
+      },
+      {
+        "w": "bazada",
+        "s": 8.43,
+        "e": 8.79
+      },
+      {
+        "w": "ikki",
+        "s": 9.07,
+        "e": 9.27
+      },
+      {
+        "w": "xil",
+        "s": 9.29,
+        "e": 9.43
+      },
+      {
+        "w": "manzil",
+        "s": 9.47,
+        "e": 9.73
+      },
+      {
+        "w": "paydo",
+        "s": 9.75,
+        "e": 9.97
+      },
+      {
+        "w": "bo'ldi,",
+        "s": 10.03,
+        "e": 10.29
+      },
+      {
+        "w": "Vali",
+        "s": 10.87,
+        "e": 11.11
+      },
+      {
+        "w": "buyurtmasi",
+        "s": 11.15,
+        "e": 11.57
+      },
+      {
+        "w": "o'chganda",
+        "s": 11.63,
+        "e": 11.95
+      },
+      {
+        "w": "esa",
+        "s": 12.01,
+        "e": 12.17
+      },
+      {
+        "w": "mijoz",
+        "s": 12.39,
+        "e": 12.71
+      },
+      {
+        "w": "yo'qoldi.",
+        "s": 12.75,
+        "e": 13.11
+      }
+    ]
+  },
+  {
+    "scene": "normallashgan_sxema_va_insert",
+    "id": "l3",
+    "text": "Endi tizimni to'rtta alohida jadvalga bo'lamiz: mijozlar, mahsulotlar, buyurtmalar va buyurtma qatorlari.",
+    "show": "Endi tizimni to'rtta alohida jadvalga bo'lamiz: mijozlar, mahsulotlar, buyurtmalar va buyurtma qatorlari.",
+    "say": "Endi tizimni to'rtta alohida jadvalga bo'lamiz: mijozlar, mahsulotlar, buyurtmalar va buyurtma qatorlari.",
+    "a0": 13.95,
+    "a1": 20.25,
+    "words": [
+      {
+        "w": "Endi",
+        "s": 13.95,
+        "e": 14.17
+      },
+      {
+        "w": "tizimni",
+        "s": 14.23,
+        "e": 14.59
+      },
+      {
+        "w": "to'rtta",
+        "s": 14.69,
+        "e": 15.05
+      },
+      {
+        "w": "alohida",
+        "s": 15.11,
+        "e": 15.49
+      },
+      {
+        "w": "jadvalga",
+        "s": 15.55,
+        "e": 15.93
+      },
+      {
+        "w": "bo'lamiz:",
+        "s": 15.97,
+        "e": 16.29
+      },
+      {
+        "w": "mijozlar,",
+        "s": 16.81,
+        "e": 17.31
+      },
+      {
+        "w": "mahsulotlar,",
+        "s": 17.57,
+        "e": 18.23
+      },
+      {
+        "w": "buyurtmalar",
+        "s": 18.59,
+        "e": 19.13
+      },
+      {
+        "w": "va",
+        "s": 19.19,
+        "e": 19.25
+      },
+      {
+        "w": "buyurtma",
+        "s": 19.41,
+        "e": 19.75
+      },
+      {
+        "w": "qatorlari.",
+        "s": 19.81,
+        "e": 20.25
+      }
+    ]
+  },
+  {
+    "scene": "normallashgan_sxema_va_insert",
+    "id": "l4",
+    "text": "Oraliq jadvalda sotilgan paytdagi narx alohida ustun sifatida saqlanib, tarixiy aniqlikni kafolatlaydi.",
+    "show": "Oraliq jadvalda sotilgan paytdagi narx alohida ustun sifatida saqlanib, tarixiy aniqlikni kafolatlaydi.",
+    "say": "Oraliq jadvalda sotilgan paytdagi narx alohida ustun sifatida saqlanib, tarixiy aniqlikni kafolatlaydi.",
+    "a0": 21.05,
+    "a1": 26.38,
+    "words": [
+      {
+        "w": "Oraliq",
+        "s": 21.05,
+        "e": 21.33
+      },
+      {
+        "w": "jadvalda",
+        "s": 21.39,
+        "e": 21.81
+      },
+      {
+        "w": "sotilgan",
+        "s": 21.95,
+        "e": 22.37
+      },
+      {
+        "w": "paytdagi",
+        "s": 22.43,
+        "e": 22.82
+      },
+      {
+        "w": "narx",
+        "s": 22.88,
+        "e": 23.08
+      },
+      {
+        "w": "alohida",
+        "s": 23.2,
+        "e": 23.6
+      },
+      {
+        "w": "ustun",
+        "s": 23.68,
+        "e": 23.92
+      },
+      {
+        "w": "sifatida",
+        "s": 23.96,
+        "e": 24.32
+      },
+      {
+        "w": "saqlanib,",
+        "s": 24.38,
+        "e": 24.8
+      },
+      {
+        "w": "tarixiy",
+        "s": 24.9,
+        "e": 25.32
+      },
+      {
+        "w": "aniqlikni",
+        "s": 25.4,
+        "e": 25.8
+      },
+      {
+        "w": "kafolatlaydi.",
+        "s": 25.82,
+        "e": 26.38
+      }
+    ]
+  },
+  {
+    "scene": "xavfsiz_yangilash_va_ochirish",
+    "id": "l5",
+    "text": "Mijozlar jadvalida manzil yangilansa, u bir joyda o'zgaradi va barcha buyurtmalarda avtomatik ko'rinadi.",
+    "show": "Mijozlar jadvalida manzil yangilansa, u bir joyda o'zgaradi va barcha buyurtmalarda avtomatik ko'rinadi.",
+    "say": "Mijozlar jadvalida manzil yangilansa, u bir joyda o'zgaradi va barcha buyurtmalarda avtomatik ko'rinadi.",
+    "a0": 27.24,
+    "a1": 32.82,
+    "words": [
+      {
+        "w": "Mijozlar",
+        "s": 27.24,
+        "e": 27.7
+      },
+      {
+        "w": "jadvalida",
+        "s": 27.74,
+        "e": 28.24
+      },
+      {
+        "w": "manzil",
+        "s": 28.34,
+        "e": 28.66
+      },
+      {
+        "w": "yangilansa,",
+        "s": 28.72,
+        "e": 29.24
+      },
+      {
+        "w": "u",
+        "s": 29.54,
+        "e": 29.56
+      },
+      {
+        "w": "bir",
+        "s": 29.7,
+        "e": 29.84
+      },
+      {
+        "w": "joyda",
+        "s": 29.88,
+        "e": 30.1
+      },
+      {
+        "w": "o'zgaradi",
+        "s": 30.16,
+        "e": 30.52
+      },
+      {
+        "w": "va",
+        "s": 30.8,
+        "e": 30.88
+      },
+      {
+        "w": "barcha",
+        "s": 30.98,
+        "e": 31.28
+      },
+      {
+        "w": "buyurtmalarda",
+        "s": 31.34,
+        "e": 31.88
+      },
+      {
+        "w": "avtomatik",
+        "s": 31.96,
+        "e": 32.44
+      },
+      {
+        "w": "ko'rinadi.",
+        "s": 32.48,
+        "e": 32.82
+      }
+    ]
+  },
+  {
+    "scene": "xavfsiz_yangilash_va_ochirish",
+    "id": "l6",
+    "text": "Buyurtma bekor qilinib o'chirilsa ham, mijozning o'zi va uning aloqa ma'lumotlari bazada butun saqlanadi.",
+    "show": "Buyurtma bekor qilinib o'chirilsa ham, mijozning o'zi va uning aloqa ma'lumotlari bazada butun saqlanadi.",
+    "say": "Buyurtma bekor qilinib o'chirilsa ham, mijozning o'zi va uning aloqa ma'lumotlari bazada butun saqlanadi.",
+    "a0": 33.66,
+    "a1": 39.41,
+    "words": [
+      {
+        "w": "Buyurtma",
+        "s": 33.66,
+        "e": 34.02
+      },
+      {
+        "w": "bekor",
+        "s": 34.12,
+        "e": 34.4
+      },
+      {
+        "w": "qilinib",
+        "s": 34.44,
+        "e": 34.72
+      },
+      {
+        "w": "o'chirilsa",
+        "s": 34.78,
+        "e": 35.16
+      },
+      {
+        "w": "ham,",
+        "s": 35.2,
+        "e": 35.34
+      },
+      {
+        "w": "mijozning",
+        "s": 35.6,
+        "e": 36.08
+      },
+      {
+        "w": "o'zi",
+        "s": 36.22,
+        "e": 36.42
+      },
+      {
+        "w": "va",
+        "s": 36.5,
+        "e": 36.56
+      },
+      {
+        "w": "uning",
+        "s": 36.7,
+        "e": 36.9
+      },
+      {
+        "w": "aloqa",
+        "s": 37,
+        "e": 37.28
+      },
+      {
+        "w": "ma'lumotlari",
+        "s": 37.34,
+        "e": 37.93
+      },
+      {
+        "w": "bazada",
+        "s": 38.19,
+        "e": 38.57
+      },
+      {
+        "w": "butun",
+        "s": 38.65,
+        "e": 38.91
+      },
+      {
+        "w": "saqlanadi.",
+        "s": 38.95,
+        "e": 39.41
+      }
+    ]
+  },
+  {
+    "scene": "join_sorovi_va_natija",
+    "id": "l7",
+    "text": "To'rtta jadvalni join operatori orqali birlashtirib, barcha buyurtmalar va mijozlarni bitta so'rovda olamiz.",
+    "show": "To'rtta jadvalni join operatori orqali birlashtirib, barcha buyurtmalar va mijozlarni bitta so'rovda olamiz.",
+    "say": "To'rtta jadvalni joyn operatori orqali birlashtirib, barcha buyurtmalar va mijozlarni bitta so'rovda olamiz.",
+    "a0": 40.13,
+    "a1": 45.69,
+    "words": [
+      {
+        "w": "To'rtta",
+        "s": 40.13,
+        "e": 40.43
+      },
+      {
+        "w": "jadvalni",
+        "s": 40.49,
+        "e": 40.93
+      },
+      {
+        "w": "joyn",
+        "s": 41.19,
+        "e": 41.43
+      },
+      {
+        "w": "operatori",
+        "s": 41.47,
+        "e": 41.89
+      },
+      {
+        "w": "orqali",
+        "s": 41.93,
+        "e": 42.19
+      },
+      {
+        "w": "birlashtirib,",
+        "s": 42.25,
+        "e": 42.71
+      },
+      {
+        "w": "barcha",
+        "s": 43.05,
+        "e": 43.33
+      },
+      {
+        "w": "buyurtmalar",
+        "s": 43.39,
+        "e": 43.91
+      },
+      {
+        "w": "va",
+        "s": 43.95,
+        "e": 44.01
+      },
+      {
+        "w": "mijozlarni",
+        "s": 44.11,
+        "e": 44.65
+      },
+      {
+        "w": "bitta",
+        "s": 44.73,
+        "e": 44.99
+      },
+      {
+        "w": "so'rovda",
+        "s": 45.05,
+        "e": 45.37
+      },
+      {
+        "w": "olamiz.",
+        "s": 45.41,
+        "e": 45.69
+      }
+    ]
+  },
+  {
+    "scene": "join_sorovi_va_natija",
+    "id": "l8",
+    "text": "Postgres bu birlashtirishni indekslar orqali o'ta tez va xotirani ortiqcha band qilmasdan bajaradi.",
+    "show": "Postgres bu birlashtirishni indekslar orqali o'ta tez va xotirani ortiqcha band qilmasdan bajaradi.",
+    "say": "Postgres bu birlashtirishni indekslar orqali o'ta tez va xotirani ortiqcha band qilmasdan bajaradi.",
+    "a0": 46.27,
+    "a1": 51.51,
+    "words": [
+      {
+        "w": "Postgres",
+        "s": 46.27,
+        "e": 46.73
+      },
+      {
+        "w": "bu",
+        "s": 46.87,
+        "e": 46.93
+      },
+      {
+        "w": "birlashtirishni",
+        "s": 47.03,
+        "e": 47.65
+      },
+      {
+        "w": "indekslar",
+        "s": 47.87,
+        "e": 48.33
+      },
+      {
+        "w": "orqali",
+        "s": 48.39,
+        "e": 48.67
+      },
+      {
+        "w": "o'ta",
+        "s": 48.79,
+        "e": 49.03
+      },
+      {
+        "w": "tez",
+        "s": 49.09,
+        "e": 49.29
+      },
+      {
+        "w": "va",
+        "s": 49.33,
+        "e": 49.39
+      },
+      {
+        "w": "xotirani",
+        "s": 49.49,
+        "e": 49.89
+      },
+      {
+        "w": "ortiqcha",
+        "s": 50.03,
+        "e": 50.39
+      },
+      {
+        "w": "band",
+        "s": 50.45,
+        "e": 50.61
+      },
+      {
+        "w": "qilmasdan",
+        "s": 50.65,
+        "e": 51.09
+      },
+      {
+        "w": "bajaradi.",
+        "s": 51.13,
+        "e": 51.51
+      }
+    ]
+  },
+  {
+    "scene": "denormalizatsiya_va_tafovut",
+    "id": "l9",
+    "text": "Hisobotni tezlashtirish uchun yig'ma jadval qilsak, yangi buyurtma kiritilganda ma'lumotlarda tafovut yuzaga keladi.",
+    "show": "Hisobotni tezlashtirish uchun yig'ma jadval qilsak, yangi buyurtma kiritilganda ma'lumotlarda tafovut yuzaga keladi.",
+    "say": "Hisobotni tezlashtirish uchun yig'ma jadval qilsak, yangi buyurtma kiritilganda ma'lumotlarda tafovut yuzaga keladi.",
+    "a0": 52.31,
+    "a1": 58.16,
+    "words": [
+      {
+        "w": "Hisobotni",
+        "s": 52.31,
+        "e": 52.76
+      },
+      {
+        "w": "tezlashtirish",
+        "s": 52.82,
+        "e": 53.36
+      },
+      {
+        "w": "uchun",
+        "s": 53.38,
+        "e": 53.56
+      },
+      {
+        "w": "yig'ma",
+        "s": 53.9,
+        "e": 54.16
+      },
+      {
+        "w": "jadval",
+        "s": 54.2,
+        "e": 54.5
+      },
+      {
+        "w": "qilsak,",
+        "s": 54.54,
+        "e": 54.84
+      },
+      {
+        "w": "yangi",
+        "s": 55.18,
+        "e": 55.46
+      },
+      {
+        "w": "buyurtma",
+        "s": 55.5,
+        "e": 55.82
+      },
+      {
+        "w": "kiritilganda",
+        "s": 55.86,
+        "e": 56.4
+      },
+      {
+        "w": "ma'lumotlarda",
+        "s": 56.46,
+        "e": 57.08
+      },
+      {
+        "w": "tafovut",
+        "s": 57.16,
+        "e": 57.54
+      },
+      {
+        "w": "yuzaga",
+        "s": 57.58,
+        "e": 57.84
+      },
+      {
+        "w": "keladi.",
+        "s": 57.88,
+        "e": 58.16
+      }
+    ]
+  },
+  {
+    "scene": "denormalizatsiya_va_tafovut",
+    "id": "l10",
+    "text": "Shuning uchun denormalizatsiyani faqat o'lchangan ehtiyoj bo'lganda va yangilash mexanizmi bilan qo'llash shart.",
+    "show": "Shuning uchun denormalizatsiyani faqat o'lchangan ehtiyoj bo'lganda va yangilash mexanizmi bilan qo'llash shart.",
+    "say": "Shuning uchun denormalizatsiyani faqat o'lchangan ehtiyoj bo'lganda va yangilash mexanizmi bilan qo'llash shart.",
+    "a0": 58.56,
+    "a1": 64,
+    "words": [
+      {
+        "w": "Shuning",
+        "s": 58.56,
+        "e": 58.78
+      },
+      {
+        "w": "uchun",
+        "s": 58.8,
+        "e": 58.98
+      },
+      {
+        "w": "denormalizatsiyani",
+        "s": 59.12,
+        "e": 59.92
+      },
+      {
+        "w": "faqat",
+        "s": 60,
+        "e": 60.18
+      },
+      {
+        "w": "o'lchangan",
+        "s": 60.3,
+        "e": 60.74
+      },
+      {
+        "w": "ehtiyoj",
+        "s": 60.86,
+        "e": 61.23
+      },
+      {
+        "w": "bo'lganda",
+        "s": 61.29,
+        "e": 61.73
+      },
+      {
+        "w": "va",
+        "s": 61.81,
+        "e": 61.87
+      },
+      {
+        "w": "yangilash",
+        "s": 62.21,
+        "e": 62.67
+      },
+      {
+        "w": "mexanizmi",
+        "s": 62.71,
+        "e": 63.19
+      },
+      {
+        "w": "bilan",
+        "s": 63.24,
+        "e": 63.42
+      },
+      {
+        "w": "qo'llash",
+        "s": 63.44,
+        "e": 63.76
+      },
+      {
+        "w": "shart.",
+        "s": 63.78,
+        "e": 64
+      }
+    ]
+  }
+]

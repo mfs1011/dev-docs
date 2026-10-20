@@ -1,0 +1,51 @@
+WEBVTT
+
+1
+00:01.420 --> 00:07.390
+Normalizatsiya qoidalari barcha relyatsion ma'lumotlar
+bazalarida bir xil mantiqiy poydevorga tayanadi.
+
+2
+00:07.800 --> 00:13.740
+Biroq yig'ma ma'lumotlarni saqlash va tashqi kalitlarni
+tekshirishda tizimlar o'rtasida farqlar mavjud.
+
+3
+00:16.990 --> 00:23.720
+May es-kyu-el qo'llanmasida uchinchi normal shakl qat'iy
+tavsiya etilsa-da, unda materialized view mavjud emas.
+
+4
+00:24.070 --> 00:30.650
+Yig'ma jadvallar oddiy jadval sifatida yaratilib, triggerlar
+yoki rejalashtirilgan vazifalar bilan yangilanadi.
+
+5
+00:33.880 --> 00:39.610
+Es-kyu-laytda normallashgan tuzilma qursangiz ham,
+pragma buyrug'isiz tashqi kalitlar tekshirilmaydi.
+
+6
+00:39.740 --> 00:45.480
+Shuning uchun ilovaning har bir ulanishida cheklovlarni
+yoqish relyatsion yaxlitlik uchun shartdir.
+
+7
+00:48.570 --> 00:54.820
+Qiyosiy matritsa Postgres, May es-kyu-el va Es-kyu-laytda
+tuzilma boshqaruvini yaqqol solishtirib beradi.
+
+8
+00:55.130 --> 01:01.720
+Postgresda materialized view qulay bo'lsa, qolgan tizimlarda
+yig'ma jadvallarni sinxronlash qo'lda boshqariladi.
+
+9
+01:04.780 --> 01:11.590
+Mijoz ma'lumotini takrorlamaslik va narx snapshotini
+oraliq jadvalda saqlash arxitekturaning oltin qoidasidir.
+
+10
+01:11.960 --> 01:18.070
+Har doim avval normallashgan toza model quring,
+denormalizatsiyani esa faqat o'lchab ko'rib qo'llang.

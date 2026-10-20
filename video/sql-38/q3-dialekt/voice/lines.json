@@ -1,0 +1,712 @@
+[
+  {
+    "scene": "dialektlar_kirish",
+    "id": "l1",
+    "text": "Normalizatsiya qoidalari barcha relyatsion ma'lumotlar bazalarida bir xil mantiqiy poydevorga tayanadi.",
+    "show": "Normalizatsiya qoidalari barcha relyatsion ma'lumotlar bazalarida bir xil mantiqiy poydevorga tayanadi.",
+    "say": "Normalizatsiya qoidalari barcha relyatsion ma'lumotlar bazalarida bir xil mantiqiy poydevorga tayanadi.",
+    "a0": 0.24,
+    "a1": 5.76,
+    "words": [
+      {
+        "w": "Normalizatsiya",
+        "s": 0.24,
+        "e": 0.88
+      },
+      {
+        "w": "qoidalari",
+        "s": 0.96,
+        "e": 1.44
+      },
+      {
+        "w": "barcha",
+        "s": 1.68,
+        "e": 1.98
+      },
+      {
+        "w": "relyatsion",
+        "s": 2.04,
+        "e": 2.5
+      },
+      {
+        "w": "ma'lumotlar",
+        "s": 2.56,
+        "e": 3.12
+      },
+      {
+        "w": "bazalarida",
+        "s": 3.18,
+        "e": 3.74
+      },
+      {
+        "w": "bir",
+        "s": 3.92,
+        "e": 4.04
+      },
+      {
+        "w": "xil",
+        "s": 4.08,
+        "e": 4.22
+      },
+      {
+        "w": "mantiqiy",
+        "s": 4.28,
+        "e": 4.7
+      },
+      {
+        "w": "poydevorga",
+        "s": 4.76,
+        "e": 5.3
+      },
+      {
+        "w": "tayanadi.",
+        "s": 5.36,
+        "e": 5.76
+      }
+    ]
+  },
+  {
+    "scene": "dialektlar_kirish",
+    "id": "l2",
+    "text": "Biroq yig'ma ma'lumotlarni saqlash va tashqi kalitlarni tekshirishda tizimlar o'rtasida farqlar mavjud.",
+    "show": "Biroq yig'ma ma'lumotlarni saqlash va tashqi kalitlarni tekshirishda tizimlar o'rtasida farqlar mavjud.",
+    "say": "Biroq yig'ma ma'lumotlarni saqlash va tashqi kalitlarni tekshirishda tizimlar o'rtasida farqlar mavjud.",
+    "a0": 6.62,
+    "a1": 12.11,
+    "words": [
+      {
+        "w": "Biroq",
+        "s": 6.62,
+        "e": 6.84
+      },
+      {
+        "w": "yig'ma",
+        "s": 7,
+        "e": 7.26
+      },
+      {
+        "w": "ma'lumotlarni",
+        "s": 7.32,
+        "e": 7.99
+      },
+      {
+        "w": "saqlash",
+        "s": 8.03,
+        "e": 8.53
+      },
+      {
+        "w": "va",
+        "s": 8.61,
+        "e": 8.67
+      },
+      {
+        "w": "tashqi",
+        "s": 8.77,
+        "e": 9.03
+      },
+      {
+        "w": "kalitlarni",
+        "s": 9.11,
+        "e": 9.63
+      },
+      {
+        "w": "tekshirishda",
+        "s": 9.67,
+        "e": 10.19
+      },
+      {
+        "w": "tizimlar",
+        "s": 10.39,
+        "e": 10.81
+      },
+      {
+        "w": "o'rtasida",
+        "s": 10.89,
+        "e": 11.31
+      },
+      {
+        "w": "farqlar",
+        "s": 11.37,
+        "e": 11.75
+      },
+      {
+        "w": "mavjud.",
+        "s": 11.81,
+        "e": 12.11
+      }
+    ]
+  },
+  {
+    "scene": "mysql_va_materialized_view",
+    "id": "l3",
+    "text": "May es-kyu-el qo'llanmasida uchinchi normal shakl qat'iy tavsiya etilsa-da, unda materialized view mavjud emas.",
+    "show": "May es-kyu-el qo'llanmasida uchinchi normal shakl qat'iy tavsiya etilsa-da, unda materialized view mavjud emas.",
+    "say": "May es-kyu-el qo'llanmasida uchinchi normal shakl qat'iy tavsiya etilsa-da, unda materialized vyu mavjud emas.",
+    "a0": 13.21,
+    "a1": 19.49,
+    "words": [
+      {
+        "w": "May",
+        "s": 13.21,
+        "e": 13.37
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 13.45,
+        "e": 13.85
+      },
+      {
+        "w": "qo'llanmasida",
+        "s": 13.91,
+        "e": 14.55
+      },
+      {
+        "w": "uchinchi",
+        "s": 14.79,
+        "e": 15.11
+      },
+      {
+        "w": "normal",
+        "s": 15.17,
+        "e": 15.49
+      },
+      {
+        "w": "shakl",
+        "s": 15.53,
+        "e": 15.81
+      },
+      {
+        "w": "qat'iy",
+        "s": 15.91,
+        "e": 16.21
+      },
+      {
+        "w": "tavsiya",
+        "s": 16.27,
+        "e": 16.61
+      },
+      {
+        "w": "etilsa-da,",
+        "s": 16.67,
+        "e": 17.11
+      },
+      {
+        "w": "unda",
+        "s": 17.51,
+        "e": 17.71
+      },
+      {
+        "w": "materialized",
+        "s": 17.89,
+        "e": 18.61
+      },
+      {
+        "w": "vyu",
+        "s": 18.67,
+        "e": 18.85
+      },
+      {
+        "w": "mavjud",
+        "s": 18.91,
+        "e": 19.21
+      },
+      {
+        "w": "emas.",
+        "s": 19.25,
+        "e": 19.49
+      }
+    ]
+  },
+  {
+    "scene": "mysql_va_materialized_view",
+    "id": "l4",
+    "text": "Yig'ma jadvallar oddiy jadval sifatida yaratilib, triggerlar yoki rejalashtirilgan vazifalar bilan yangilanadi.",
+    "show": "Yig'ma jadvallar oddiy jadval sifatida yaratilib, triggerlar yoki rejalashtirilgan vazifalar bilan yangilanadi.",
+    "say": "Yig'ma jadvallar oddiy jadval sifatida yaratilib, triggerlar yoki rejalashtirilgan vazifalar bilan yangilanadi.",
+    "a0": 20.29,
+    "a1": 26.42,
+    "words": [
+      {
+        "w": "Yig'ma",
+        "s": 20.29,
+        "e": 20.53
+      },
+      {
+        "w": "jadvallar",
+        "s": 20.57,
+        "e": 21.03
+      },
+      {
+        "w": "oddiy",
+        "s": 21.23,
+        "e": 21.47
+      },
+      {
+        "w": "jadval",
+        "s": 21.53,
+        "e": 21.87
+      },
+      {
+        "w": "sifatida",
+        "s": 21.91,
+        "e": 22.25
+      },
+      {
+        "w": "yaratilib,",
+        "s": 22.31,
+        "e": 22.74
+      },
+      {
+        "w": "triggerlar",
+        "s": 23.02,
+        "e": 23.62
+      },
+      {
+        "w": "yoki",
+        "s": 23.74,
+        "e": 23.96
+      },
+      {
+        "w": "rejalashtirilgan",
+        "s": 24.14,
+        "e": 24.92
+      },
+      {
+        "w": "vazifalar",
+        "s": 24.96,
+        "e": 25.46
+      },
+      {
+        "w": "bilan",
+        "s": 25.48,
+        "e": 25.7
+      },
+      {
+        "w": "yangilanadi.",
+        "s": 25.84,
+        "e": 26.42
+      }
+    ]
+  },
+  {
+    "scene": "sqlite_va_pragma_sharti",
+    "id": "l5",
+    "text": "Es-kyu-laytda normallashgan tuzilma qursangiz ham, pragma buyrug'isiz tashqi kalitlar tekshirilmaydi.",
+    "show": "Es-kyu-laytda normallashgan tuzilma qursangiz ham, pragma buyrug'isiz tashqi kalitlar tekshirilmaydi.",
+    "say": "Es-kyu-laytda normallashgan tuzilma qursangiz ham, pragma buyrug'isiz tashqi kalitlar tekshirilmaydi.",
+    "a0": 27.5,
+    "a1": 32.78,
+    "words": [
+      {
+        "w": "Es-kyu-laytda",
+        "s": 27.5,
+        "e": 28.22
+      },
+      {
+        "w": "normallashgan",
+        "s": 28.4,
+        "e": 29
+      },
+      {
+        "w": "tuzilma",
+        "s": 29.04,
+        "e": 29.36
+      },
+      {
+        "w": "qursangiz",
+        "s": 29.42,
+        "e": 29.88
+      },
+      {
+        "w": "ham,",
+        "s": 29.92,
+        "e": 30
+      },
+      {
+        "w": "pragma",
+        "s": 30.34,
+        "e": 30.7
+      },
+      {
+        "w": "buyrug'isiz",
+        "s": 30.76,
+        "e": 31.3
+      },
+      {
+        "w": "tashqi",
+        "s": 31.4,
+        "e": 31.68
+      },
+      {
+        "w": "kalitlar",
+        "s": 31.72,
+        "e": 32.1
+      },
+      {
+        "w": "tekshirilmaydi.",
+        "s": 32.14,
+        "e": 32.78
+      }
+    ]
+  },
+  {
+    "scene": "sqlite_va_pragma_sharti",
+    "id": "l6",
+    "text": "Shuning uchun ilovaning har bir ulanishida cheklovlarni yoqish relyatsion yaxlitlik uchun shartdir.",
+    "show": "Shuning uchun ilovaning har bir ulanishida cheklovlarni yoqish relyatsion yaxlitlik uchun shartdir.",
+    "say": "Shuning uchun ilovaning har bir ulanishida cheklovlarni yoqish relyatsion yaxlitlik uchun shartdir.",
+    "a0": 33.36,
+    "a1": 38.65,
+    "words": [
+      {
+        "w": "Shuning",
+        "s": 33.36,
+        "e": 33.58
+      },
+      {
+        "w": "uchun",
+        "s": 33.6,
+        "e": 33.82
+      },
+      {
+        "w": "ilovaning",
+        "s": 33.96,
+        "e": 34.44
+      },
+      {
+        "w": "har",
+        "s": 34.54,
+        "e": 34.72
+      },
+      {
+        "w": "bir",
+        "s": 34.78,
+        "e": 34.88
+      },
+      {
+        "w": "ulanishida",
+        "s": 34.94,
+        "e": 35.4
+      },
+      {
+        "w": "cheklovlarni",
+        "s": 35.7,
+        "e": 36.3
+      },
+      {
+        "w": "yoqish",
+        "s": 36.3,
+        "e": 36.68
+      },
+      {
+        "w": "relyatsion",
+        "s": 36.84,
+        "e": 37.36
+      },
+      {
+        "w": "yaxlitlik",
+        "s": 37.42,
+        "e": 37.93
+      },
+      {
+        "w": "uchun",
+        "s": 37.99,
+        "e": 38.19
+      },
+      {
+        "w": "shartdir.",
+        "s": 38.25,
+        "e": 38.65
+      }
+    ]
+  },
+  {
+    "scene": "qiyosiy_matritsa",
+    "id": "l7",
+    "text": "Qiyosiy matritsa Postgres, May es-kyu-el va Es-kyu-laytda tuzilma boshqaruvini yaqqol solishtirib beradi.",
+    "show": "Qiyosiy matritsa Postgres, May es-kyu-el va Es-kyu-laytda tuzilma boshqaruvini yaqqol solishtirib beradi.",
+    "say": "Qiyosiy matritsa Postgres, May es-kyu-el va Es-kyu-laytda tuzilma boshqaruvini yaqqol solishtirib beradi.",
+    "a0": 39.59,
+    "a1": 45.39,
+    "words": [
+      {
+        "w": "Qiyosiy",
+        "s": 39.59,
+        "e": 39.95
+      },
+      {
+        "w": "matritsa",
+        "s": 40.01,
+        "e": 40.45
+      },
+      {
+        "w": "Postgres,",
+        "s": 40.65,
+        "e": 41.15
+      },
+      {
+        "w": "May",
+        "s": 41.33,
+        "e": 41.49
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 41.59,
+        "e": 42.01
+      },
+      {
+        "w": "va",
+        "s": 42.05,
+        "e": 42.13
+      },
+      {
+        "w": "Es-kyu-laytda",
+        "s": 42.27,
+        "e": 43.01
+      },
+      {
+        "w": "tuzilma",
+        "s": 43.17,
+        "e": 43.51
+      },
+      {
+        "w": "boshqaruvini",
+        "s": 43.57,
+        "e": 44.09
+      },
+      {
+        "w": "yaqqol",
+        "s": 44.23,
+        "e": 44.59
+      },
+      {
+        "w": "solishtirib",
+        "s": 44.63,
+        "e": 45.07
+      },
+      {
+        "w": "beradi.",
+        "s": 45.11,
+        "e": 45.39
+      }
+    ]
+  },
+  {
+    "scene": "qiyosiy_matritsa",
+    "id": "l8",
+    "text": "Postgresda materialized view qulay bo'lsa, qolgan tizimlarda yig'ma jadvallarni sinxronlash qo'lda boshqariladi.",
+    "show": "Postgresda materialized view qulay bo'lsa, qolgan tizimlarda yig'ma jadvallarni sinxronlash qo'lda boshqariladi.",
+    "say": "Postgresda materialized vyu qulay bo'lsa, qolgan tizimlarda yig'ma jadvallarni sinxronlash qo'lda boshqariladi.",
+    "a0": 46.15,
+    "a1": 52.29,
+    "words": [
+      {
+        "w": "Postgresda",
+        "s": 46.15,
+        "e": 46.69
+      },
+      {
+        "w": "materialized",
+        "s": 46.87,
+        "e": 47.53
+      },
+      {
+        "w": "vyu",
+        "s": 47.57,
+        "e": 47.73
+      },
+      {
+        "w": "qulay",
+        "s": 47.83,
+        "e": 48.09
+      },
+      {
+        "w": "bo'lsa,",
+        "s": 48.13,
+        "e": 48.41
+      },
+      {
+        "w": "qolgan",
+        "s": 48.65,
+        "e": 48.97
+      },
+      {
+        "w": "tizimlarda",
+        "s": 49.01,
+        "e": 49.49
+      },
+      {
+        "w": "yig'ma",
+        "s": 49.81,
+        "e": 50.09
+      },
+      {
+        "w": "jadvallarni",
+        "s": 50.13,
+        "e": 50.69
+      },
+      {
+        "w": "sinxronlash",
+        "s": 50.75,
+        "e": 51.31
+      },
+      {
+        "w": "qo'lda",
+        "s": 51.41,
+        "e": 51.69
+      },
+      {
+        "w": "boshqariladi.",
+        "s": 51.73,
+        "e": 52.29
+      }
+    ]
+  },
+  {
+    "scene": "xulosa_va_loyiha",
+    "id": "l9",
+    "text": "Mijoz ma'lumotini takrorlamaslik va narx snapshotini oraliq jadvalda saqlash arxitekturaning oltin qoidasidir.",
+    "show": "Mijoz ma'lumotini takrorlamaslik va narx snapshotini oraliq jadvalda saqlash arxitekturaning oltin qoidasidir.",
+    "say": "Mijoz ma'lumotini takrorlamaslik va narx snapshotini oraliq jadvalda saqlash arxitekturaning oltin qoidasidir.",
+    "a0": 53.2,
+    "a1": 59.56,
+    "words": [
+      {
+        "w": "Mijoz",
+        "s": 53.2,
+        "e": 53.48
+      },
+      {
+        "w": "ma'lumotini",
+        "s": 53.52,
+        "e": 54
+      },
+      {
+        "w": "takrorlamaslik",
+        "s": 54.04,
+        "e": 54.86
+      },
+      {
+        "w": "va",
+        "s": 55.04,
+        "e": 55.12
+      },
+      {
+        "w": "narx",
+        "s": 55.34,
+        "e": 55.56
+      },
+      {
+        "w": "snapshotini",
+        "s": 55.62,
+        "e": 56.16
+      },
+      {
+        "w": "oraliq",
+        "s": 56.36,
+        "e": 56.66
+      },
+      {
+        "w": "jadvalda",
+        "s": 56.7,
+        "e": 57.1
+      },
+      {
+        "w": "saqlash",
+        "s": 57.16,
+        "e": 57.56
+      },
+      {
+        "w": "arxitekturaning",
+        "s": 57.82,
+        "e": 58.58
+      },
+      {
+        "w": "oltin",
+        "s": 58.72,
+        "e": 58.98
+      },
+      {
+        "w": "qoidasidir.",
+        "s": 59.04,
+        "e": 59.56
+      }
+    ]
+  },
+  {
+    "scene": "xulosa_va_loyiha",
+    "id": "l10",
+    "text": "Har doim avval normallashgan toza model quring, denormalizatsiyani esa faqat o'lchab ko'rib qo'llang.",
+    "show": "Har doim avval normallashgan toza model quring, denormalizatsiyani esa faqat o'lchab ko'rib qo'llang.",
+    "say": "Har doim avval normallashgan toza model quring, denormalizatsiyani esa faqat o'lchab ko'rib qo'llang.",
+    "a0": 60.38,
+    "a1": 66.04,
+    "words": [
+      {
+        "w": "Har",
+        "s": 60.38,
+        "e": 60.54
+      },
+      {
+        "w": "doim",
+        "s": 60.58,
+        "e": 60.84
+      },
+      {
+        "w": "avval",
+        "s": 61.02,
+        "e": 61.28
+      },
+      {
+        "w": "normallashgan",
+        "s": 61.38,
+        "e": 62.03
+      },
+      {
+        "w": "toza",
+        "s": 62.11,
+        "e": 62.35
+      },
+      {
+        "w": "model",
+        "s": 62.39,
+        "e": 62.65
+      },
+      {
+        "w": "quring,",
+        "s": 62.69,
+        "e": 62.95
+      },
+      {
+        "w": "denormalizatsiyani",
+        "s": 63.29,
+        "e": 64.13
+      },
+      {
+        "w": "esa",
+        "s": 64.19,
+        "e": 64.37
+      },
+      {
+        "w": "faqat",
+        "s": 64.55,
+        "e": 64.9
+      },
+      {
+        "w": "o'lchab",
+        "s": 65.04,
+        "e": 65.38
+      },
+      {
+        "w": "ko'rib",
+        "s": 65.42,
+        "e": 65.66
+      },
+      {
+        "w": "qo'llang.",
+        "s": 65.7,
+        "e": 66.04
+      }
+    ]
+  }
+]

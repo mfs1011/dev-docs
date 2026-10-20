@@ -1,0 +1,51 @@
+WEBVTT
+
+1
+00:01.420 --> 00:07.730
+Normalizatsiya — ma'lumotlarni takrorlanmaydigan qilib
+alohida mantiqiy jadvallarga taqsimlash jarayonidir.
+
+2
+00:08.340 --> 00:14.620
+Uning asosiy qoidasi: har bir mustaqil fakt
+ma'lumotlar bazasida aynan bir joyda saqlanishi kerak.
+
+3
+00:17.770 --> 00:23.540
+Barcha ustunlarni bitta tekis jadvalga yig'ish yangilash
+va o'chirish anomaliyalarini keltirib chiqaradi.
+
+4
+00:24.090 --> 00:30.590
+Mijoz ko'chganda manzil ikkita bo'lib qolishi yoki buyurtma
+bekor bo'lganda mijozning o'zi ham yo'qolishi mumkin.
+
+5
+00:33.500 --> 00:40.370
+To'g'ri modelda mijoz, mahsulot va buyurtmalar alohida
+jadvallarga ajratilib, faqat ID lar orqali bog'lanadi.
+
+6
+00:40.800 --> 00:47.320
+Bu yondashuv so'rovlarda join qilishni talab qilsa-da,
+ma'lumotlarning mutlaq yaxlitligi va sofligini kafolatlaydi.
+
+7
+00:50.510 --> 00:56.840
+Teglar va kategoriyalarni massiv yoki JSON da saqlab,
+ular bo'yicha qidirish noto'g'ri loyihalash belgisidir.
+
+8
+00:57.350 --> 01:03.890
+Agar element bo'yicha filtrlash yoki unga tashqi kalit
+bog'lash kerak bo'lsa, doimo alohida jadval quring.
+
+9
+01:06.980 --> 01:12.910
+Denormalizatsiya va yig'ma jadvallar faqat o'lchab
+ko'rilgan tezlik muammosini hal qilish uchun qo'llaniladi.
+
+10
+01:13.340 --> 01:20.030
+Loyiha boshida esa doimo uchinchi normal shaklga
+asoslangan toza relyatsion arxitektura tanlanishi shart.

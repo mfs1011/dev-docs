@@ -1,0 +1,777 @@
+[
+  {
+    "scene": "kirish",
+    "id": "l1",
+    "text": "Normalizatsiya — ma'lumotlarni takrorlanmaydigan qilib alohida mantiqiy jadvallarga taqsimlash jarayonidir.",
+    "show": "Normalizatsiya — ma'lumotlarni takrorlanmaydigan qilib alohida mantiqiy jadvallarga taqsimlash jarayonidir.",
+    "say": "Normalizatsiya — ma'lumotlarni takrorlanmaydigan qilib alohida mantiqiy jadvallarga taqsimlash jarayonidir.",
+    "a0": 0.16,
+    "a1": 6.02,
+    "words": [
+      {
+        "w": "Normalizatsiya",
+        "s": 0.16,
+        "e": 0.9
+      },
+      {
+        "w": "—",
+        "s": 0.9,
+        "e": 0.9
+      },
+      {
+        "w": "ma'lumotlarni",
+        "s": 1.16,
+        "e": 1.82
+      },
+      {
+        "w": "takrorlanmaydigan",
+        "s": 1.9,
+        "e": 2.94
+      },
+      {
+        "w": "qilib",
+        "s": 3,
+        "e": 3.18
+      },
+      {
+        "w": "alohida",
+        "s": 3.32,
+        "e": 3.74
+      },
+      {
+        "w": "mantiqiy",
+        "s": 3.82,
+        "e": 4.32
+      },
+      {
+        "w": "jadvallarga",
+        "s": 4.38,
+        "e": 4.94
+      },
+      {
+        "w": "taqsimlash",
+        "s": 5,
+        "e": 5.48
+      },
+      {
+        "w": "jarayonidir.",
+        "s": 5.5,
+        "e": 6.02
+      }
+    ]
+  },
+  {
+    "scene": "kirish",
+    "id": "l2",
+    "text": "Uning asosiy qoidasi: har bir mustaqil fakt ma'lumotlar bazasida aynan bir joyda saqlanishi kerak.",
+    "show": "Uning asosiy qoidasi: har bir mustaqil fakt ma'lumotlar bazasida aynan bir joyda saqlanishi kerak.",
+    "say": "Uning asosiy qoidasi: har bir mustaqil fakt ma'lumotlar bazasida aynan bir joyda saqlanishi kerak.",
+    "a0": 7.08,
+    "a1": 12.91,
+    "words": [
+      {
+        "w": "Uning",
+        "s": 7.08,
+        "e": 7.26
+      },
+      {
+        "w": "asosiy",
+        "s": 7.32,
+        "e": 7.73
+      },
+      {
+        "w": "qoidasi:",
+        "s": 7.79,
+        "e": 8.23
+      },
+      {
+        "w": "har",
+        "s": 8.59,
+        "e": 8.77
+      },
+      {
+        "w": "bir",
+        "s": 8.83,
+        "e": 8.93
+      },
+      {
+        "w": "mustaqil",
+        "s": 9.01,
+        "e": 9.49
+      },
+      {
+        "w": "fakt",
+        "s": 9.57,
+        "e": 9.87
+      },
+      {
+        "w": "ma'lumotlar",
+        "s": 10.05,
+        "e": 10.63
+      },
+      {
+        "w": "bazasida",
+        "s": 10.67,
+        "e": 11.09
+      },
+      {
+        "w": "aynan",
+        "s": 11.29,
+        "e": 11.65
+      },
+      {
+        "w": "bir",
+        "s": 11.77,
+        "e": 11.87
+      },
+      {
+        "w": "joyda",
+        "s": 11.93,
+        "e": 12.17
+      },
+      {
+        "w": "saqlanishi",
+        "s": 12.21,
+        "e": 12.65
+      },
+      {
+        "w": "kerak.",
+        "s": 12.65,
+        "e": 12.91
+      }
+    ]
+  },
+  {
+    "scene": "anomaliyalar",
+    "id": "l3",
+    "text": "Barcha ustunlarni bitta tekis jadvalga yig'ish yangilash va o'chirish anomaliyalarini keltirib chiqaradi.",
+    "show": "Barcha ustunlarni bitta tekis jadvalga yig'ish yangilash va o'chirish anomaliyalarini keltirib chiqaradi.",
+    "say": "Barcha ustunlarni bitta tekis jadvalga yig'ish yangilash va o'chirish anomaliyalarini keltirib chiqaradi.",
+    "a0": 13.91,
+    "a1": 19.23,
+    "words": [
+      {
+        "w": "Barcha",
+        "s": 13.91,
+        "e": 14.17
+      },
+      {
+        "w": "ustunlarni",
+        "s": 14.21,
+        "e": 14.73
+      },
+      {
+        "w": "bitta",
+        "s": 14.79,
+        "e": 15.03
+      },
+      {
+        "w": "tekis",
+        "s": 15.11,
+        "e": 15.41
+      },
+      {
+        "w": "jadvalga",
+        "s": 15.49,
+        "e": 15.91
+      },
+      {
+        "w": "yig'ish",
+        "s": 15.97,
+        "e": 16.25
+      },
+      {
+        "w": "yangilash",
+        "s": 16.63,
+        "e": 17.15
+      },
+      {
+        "w": "va",
+        "s": 17.19,
+        "e": 17.25
+      },
+      {
+        "w": "o'chirish",
+        "s": 17.39,
+        "e": 17.71
+      },
+      {
+        "w": "anomaliyalarini",
+        "s": 17.77,
+        "e": 18.47
+      },
+      {
+        "w": "keltirib",
+        "s": 18.49,
+        "e": 18.83
+      },
+      {
+        "w": "chiqaradi.",
+        "s": 18.85,
+        "e": 19.23
+      }
+    ]
+  },
+  {
+    "scene": "anomaliyalar",
+    "id": "l4",
+    "text": "Mijoz ko'chganda manzil ikkita bo'lib qolishi yoki buyurtma bekor bo'lganda mijozning o'zi ham yo'qolishi mumkin.",
+    "show": "Mijoz ko'chganda manzil ikkita bo'lib qolishi yoki buyurtma bekor bo'lganda mijozning o'zi ham yo'qolishi mumkin.",
+    "say": "Mijoz ko'chganda manzil ikkita bo'lib qolishi yoki buyurtma bekor bo'lganda mijozning o'zi ham yo'qolishi mumkin.",
+    "a0": 20.23,
+    "a1": 26.28,
+    "words": [
+      {
+        "w": "Mijoz",
+        "s": 20.23,
+        "e": 20.51
+      },
+      {
+        "w": "ko'chganda",
+        "s": 20.55,
+        "e": 20.97
+      },
+      {
+        "w": "manzil",
+        "s": 21.29,
+        "e": 21.63
+      },
+      {
+        "w": "ikkita",
+        "s": 21.75,
+        "e": 22.01
+      },
+      {
+        "w": "bo'lib",
+        "s": 22.07,
+        "e": 22.27
+      },
+      {
+        "w": "qolishi",
+        "s": 22.29,
+        "e": 22.66
+      },
+      {
+        "w": "yoki",
+        "s": 22.94,
+        "e": 23.16
+      },
+      {
+        "w": "buyurtma",
+        "s": 23.22,
+        "e": 23.6
+      },
+      {
+        "w": "bekor",
+        "s": 23.66,
+        "e": 23.92
+      },
+      {
+        "w": "bo'lganda",
+        "s": 23.96,
+        "e": 24.38
+      },
+      {
+        "w": "mijozning",
+        "s": 24.64,
+        "e": 25.1
+      },
+      {
+        "w": "o'zi",
+        "s": 25.22,
+        "e": 25.4
+      },
+      {
+        "w": "ham",
+        "s": 25.44,
+        "e": 25.56
+      },
+      {
+        "w": "yo'qolishi",
+        "s": 25.62,
+        "e": 26
+      },
+      {
+        "w": "mumkin.",
+        "s": 26.02,
+        "e": 26.28
+      }
+    ]
+  },
+  {
+    "scene": "normallashgan_model",
+    "id": "l5",
+    "text": "To'g'ri modelda mijoz, mahsulot va buyurtmalar alohida jadvallarga ajratilib, faqat ID lar orqali bog'lanadi.",
+    "show": "To'g'ri modelda mijoz, mahsulot va buyurtmalar alohida jadvallarga ajratilib, faqat ID lar orqali bog'lanadi.",
+    "say": "To'g'ri modelda mijoz, mahsulot va buyurtmalar alohida jadvallarga ajratilib, faqat ay-di lar orqali bog'lanadi.",
+    "a0": 27.04,
+    "a1": 33.46,
+    "words": [
+      {
+        "w": "To'g'ri",
+        "s": 27.04,
+        "e": 27.36
+      },
+      {
+        "w": "modelda",
+        "s": 27.4,
+        "e": 27.82
+      },
+      {
+        "w": "mijoz,",
+        "s": 28.12,
+        "e": 28.56
+      },
+      {
+        "w": "mahsulot",
+        "s": 28.74,
+        "e": 29.24
+      },
+      {
+        "w": "va",
+        "s": 29.3,
+        "e": 29.34
+      },
+      {
+        "w": "buyurtmalar",
+        "s": 29.42,
+        "e": 29.88
+      },
+      {
+        "w": "alohida",
+        "s": 30.02,
+        "e": 30.38
+      },
+      {
+        "w": "jadvallarga",
+        "s": 30.42,
+        "e": 30.96
+      },
+      {
+        "w": "ajratilib,",
+        "s": 31.04,
+        "e": 31.5
+      },
+      {
+        "w": "faqat",
+        "s": 31.78,
+        "e": 32.06
+      },
+      {
+        "w": "ay-di",
+        "s": 32.22,
+        "e": 32.44
+      },
+      {
+        "w": "lar",
+        "s": 32.52,
+        "e": 32.64
+      },
+      {
+        "w": "orqali",
+        "s": 32.68,
+        "e": 32.96
+      },
+      {
+        "w": "bog'lanadi.",
+        "s": 33,
+        "e": 33.46
+      }
+    ]
+  },
+  {
+    "scene": "normallashgan_model",
+    "id": "l6",
+    "text": "Bu yondashuv so'rovlarda join qilishni talab qilsa-da, ma'lumotlarning mutlaq yaxlitligi va sofligini kafolatlaydi.",
+    "show": "Bu yondashuv so'rovlarda join qilishni talab qilsa-da, ma'lumotlarning mutlaq yaxlitligi va sofligini kafolatlaydi.",
+    "say": "Bu yondashuv so'rovlarda joyn qilishni talab qilsa-da, ma'lumotlarning mutlaq yaxlitligi va sofligini kafolatlaydi.",
+    "a0": 34.34,
+    "a1": 40.41,
+    "words": [
+      {
+        "w": "Bu",
+        "s": 34.34,
+        "e": 34.42
+      },
+      {
+        "w": "yondashuv",
+        "s": 34.44,
+        "e": 34.92
+      },
+      {
+        "w": "so'rovlarda",
+        "s": 35.2,
+        "e": 35.7
+      },
+      {
+        "w": "joyn",
+        "s": 35.8,
+        "e": 36.06
+      },
+      {
+        "w": "qilishni",
+        "s": 36.1,
+        "e": 36.42
+      },
+      {
+        "w": "talab",
+        "s": 36.46,
+        "e": 36.68
+      },
+      {
+        "w": "qilsa-da,",
+        "s": 36.7,
+        "e": 37.04
+      },
+      {
+        "w": "ma'lumotlarning",
+        "s": 37.32,
+        "e": 38.05
+      },
+      {
+        "w": "mutlaq",
+        "s": 38.15,
+        "e": 38.51
+      },
+      {
+        "w": "yaxlitligi",
+        "s": 38.57,
+        "e": 39.07
+      },
+      {
+        "w": "va",
+        "s": 39.11,
+        "e": 39.17
+      },
+      {
+        "w": "sofligini",
+        "s": 39.27,
+        "e": 39.75
+      },
+      {
+        "w": "kafolatlaydi.",
+        "s": 39.79,
+        "e": 40.41
+      }
+    ]
+  },
+  {
+    "scene": "massiv_va_json_tuzogi",
+    "id": "l7",
+    "text": "Teglar va kategoriyalarni massiv yoki JSON da saqlab, ular bo'yicha qidirish noto'g'ri loyihalash belgisidir.",
+    "show": "Teglar va kategoriyalarni massiv yoki JSON da saqlab, ular bo'yicha qidirish noto'g'ri loyihalash belgisidir.",
+    "say": "Teglar va kategoriyalarni massiv yoki jeyson da saqlab, ular bo'yicha qidirish noto'g'ri loyihalash belgisidir.",
+    "a0": 41.45,
+    "a1": 47.33,
+    "words": [
+      {
+        "w": "Teglar",
+        "s": 41.45,
+        "e": 41.95
+      },
+      {
+        "w": "va",
+        "s": 42.05,
+        "e": 42.11
+      },
+      {
+        "w": "kategoriyalarni",
+        "s": 42.19,
+        "e": 42.95
+      },
+      {
+        "w": "massiv",
+        "s": 43.01,
+        "e": 43.37
+      },
+      {
+        "w": "yoki",
+        "s": 43.43,
+        "e": 43.65
+      },
+      {
+        "w": "jeyson",
+        "s": 43.73,
+        "e": 44.05
+      },
+      {
+        "w": "da",
+        "s": 44.09,
+        "e": 44.15
+      },
+      {
+        "w": "saqlab,",
+        "s": 44.19,
+        "e": 44.51
+      },
+      {
+        "w": "ular",
+        "s": 44.81,
+        "e": 45.01
+      },
+      {
+        "w": "bo'yicha",
+        "s": 45.05,
+        "e": 45.31
+      },
+      {
+        "w": "qidirish",
+        "s": 45.37,
+        "e": 45.71
+      },
+      {
+        "w": "noto'g'ri",
+        "s": 45.81,
+        "e": 46.31
+      },
+      {
+        "w": "loyihalash",
+        "s": 46.35,
+        "e": 46.81
+      },
+      {
+        "w": "belgisidir.",
+        "s": 46.85,
+        "e": 47.33
+      }
+    ]
+  },
+  {
+    "scene": "massiv_va_json_tuzogi",
+    "id": "l8",
+    "text": "Agar element bo'yicha filtrlash yoki unga tashqi kalit bog'lash kerak bo'lsa, doimo alohida jadval quring.",
+    "show": "Agar element bo'yicha filtrlash yoki unga tashqi kalit bog'lash kerak bo'lsa, doimo alohida jadval quring.",
+    "say": "Agar element bo'yicha filtrlash yoki unga tashqi kalit bog'lash kerak bo'lsa, doimo alohida jadval quring.",
+    "a0": 48.29,
+    "a1": 54.38,
+    "words": [
+      {
+        "w": "Agar",
+        "s": 48.29,
+        "e": 48.51
+      },
+      {
+        "w": "element",
+        "s": 48.81,
+        "e": 49.17
+      },
+      {
+        "w": "bo'yicha",
+        "s": 49.21,
+        "e": 49.47
+      },
+      {
+        "w": "filtrlash",
+        "s": 49.55,
+        "e": 50.11
+      },
+      {
+        "w": "yoki",
+        "s": 50.15,
+        "e": 50.35
+      },
+      {
+        "w": "unga",
+        "s": 50.43,
+        "e": 50.61
+      },
+      {
+        "w": "tashqi",
+        "s": 50.87,
+        "e": 51.19
+      },
+      {
+        "w": "kalit",
+        "s": 51.25,
+        "e": 51.51
+      },
+      {
+        "w": "bog'lash",
+        "s": 51.57,
+        "e": 51.89
+      },
+      {
+        "w": "kerak",
+        "s": 51.91,
+        "e": 52.15
+      },
+      {
+        "w": "bo'lsa,",
+        "s": 52.19,
+        "e": 52.43
+      },
+      {
+        "w": "doimo",
+        "s": 52.76,
+        "e": 53.14
+      },
+      {
+        "w": "alohida",
+        "s": 53.32,
+        "e": 53.72
+      },
+      {
+        "w": "jadval",
+        "s": 53.78,
+        "e": 54.1
+      },
+      {
+        "w": "quring.",
+        "s": 54.14,
+        "e": 54.38
+      }
+    ]
+  },
+  {
+    "scene": "denormalizatsiya_va_xulosa",
+    "id": "l9",
+    "text": "Denormalizatsiya va yig'ma jadvallar faqat o'lchab ko'rilgan tezlik muammosini hal qilish uchun qo'llaniladi.",
+    "show": "Denormalizatsiya va yig'ma jadvallar faqat o'lchab ko'rilgan tezlik muammosini hal qilish uchun qo'llaniladi.",
+    "say": "Denormalizatsiya va yig'ma jadvallar faqat o'lchab ko'rilgan tezlik muammosini hal qilish uchun qo'llaniladi.",
+    "a0": 55.32,
+    "a1": 60.8,
+    "words": [
+      {
+        "w": "Denormalizatsiya",
+        "s": 55.32,
+        "e": 56.18
+      },
+      {
+        "w": "va",
+        "s": 56.24,
+        "e": 56.3
+      },
+      {
+        "w": "yig'ma",
+        "s": 56.4,
+        "e": 56.66
+      },
+      {
+        "w": "jadvallar",
+        "s": 56.72,
+        "e": 57.18
+      },
+      {
+        "w": "faqat",
+        "s": 57.42,
+        "e": 57.68
+      },
+      {
+        "w": "o'lchab",
+        "s": 57.84,
+        "e": 58.14
+      },
+      {
+        "w": "ko'rilgan",
+        "s": 58.18,
+        "e": 58.56
+      },
+      {
+        "w": "tezlik",
+        "s": 58.64,
+        "e": 58.98
+      },
+      {
+        "w": "muammosini",
+        "s": 59.02,
+        "e": 59.5
+      },
+      {
+        "w": "hal",
+        "s": 59.54,
+        "e": 59.74
+      },
+      {
+        "w": "qilish",
+        "s": 59.78,
+        "e": 60
+      },
+      {
+        "w": "uchun",
+        "s": 60.04,
+        "e": 60.18
+      },
+      {
+        "w": "qo'llaniladi.",
+        "s": 60.24,
+        "e": 60.8
+      }
+    ]
+  },
+  {
+    "scene": "denormalizatsiya_va_xulosa",
+    "id": "l10",
+    "text": "Loyiha boshida esa doimo uchinchi normal shaklga asoslangan toza relyatsion arxitektura tanlanishi shart.",
+    "show": "Loyiha boshida esa doimo uchinchi normal shaklga asoslangan toza relyatsion arxitektura tanlanishi shart.",
+    "say": "Loyiha boshida esa doimo uchinchi normal shaklga asoslangan toza relyatsion arxitektura tanlanishi shart.",
+    "a0": 61.68,
+    "a1": 67.92,
+    "words": [
+      {
+        "w": "Loyiha",
+        "s": 61.68,
+        "e": 62.04
+      },
+      {
+        "w": "boshida",
+        "s": 62.13,
+        "e": 62.45
+      },
+      {
+        "w": "esa",
+        "s": 62.51,
+        "e": 62.67
+      },
+      {
+        "w": "doimo",
+        "s": 63.03,
+        "e": 63.39
+      },
+      {
+        "w": "uchinchi",
+        "s": 63.61,
+        "e": 63.99
+      },
+      {
+        "w": "normal",
+        "s": 64.05,
+        "e": 64.35
+      },
+      {
+        "w": "shaklga",
+        "s": 64.39,
+        "e": 64.71
+      },
+      {
+        "w": "asoslangan",
+        "s": 64.75,
+        "e": 65.27
+      },
+      {
+        "w": "toza",
+        "s": 65.55,
+        "e": 65.87
+      },
+      {
+        "w": "relyatsion",
+        "s": 65.93,
+        "e": 66.4
+      },
+      {
+        "w": "arxitektura",
+        "s": 66.46,
+        "e": 67.02
+      },
+      {
+        "w": "tanlanishi",
+        "s": 67.06,
+        "e": 67.54
+      },
+      {
+        "w": "shart.",
+        "s": 67.66,
+        "e": 67.92
+      }
+    ]
+  }
+]

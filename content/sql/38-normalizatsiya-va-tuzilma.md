@@ -4,6 +4,15 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/38-1-tushuncha.jpg">
+    <source src="/video/sql/38-1-tushuncha.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/38-1-tushuncha.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/38-1-tushuncha.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>38.1-video. Normalizatsiya va 3NF asoslari</figcaption>
+</figure>
+
 **Normalizatsiya** (normalization) — ma'lumotni **takrorlanmaydigan** qilib jadvallarga bo'lish. Bitta fakt (mijozning manzili, mahsulotning nomi) bazada **bir joyda** saqlanadi, boshqa joylarda unga ID orqali murojaat qilinadi.
 
 ### Rasmiy hujjat nima deydi
@@ -51,6 +60,15 @@ MySQL hujjati denormalizatsiyaga ruxsat beradi, lekin **narxini** ham aytadi: ma
 - **takrorlangan ustun** — masalan, buyurtma qatoridagi narx (37-bob). Bu holat alohida: bu takrorlash emas, **boshqa fakt** — "sotilgan paytdagi narx".
 
 ## Kod
+
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/38-2-kod.jpg">
+    <source src="/video/sql/38-2-kod.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/38-2-kod.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/38-2-kod.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>38.2-video. Normalizatsiya amaliyoti va anomaliyalar sinovi</figcaption>
+</figure>
 
 Misollar PostgreSQL 18.6, MySQL 9.7.2 va SQLite 3.54.0 da ishga tushirilgan — natijalar uchala tizimda bir xil (tartibi `DISTINCT` da farq qilishi mumkin). Natijalar PostgreSQL'dan.
 
@@ -211,6 +229,15 @@ SELECT k.summa AS jadvalda, (SELECT sum(summa) FROM b WHERE sana = k.sana) AS ha
 Hujjat aytgan "nusxalarni moslab turish xarajati" — shu. Yechimlar: davriy qayta hisoblash (`REFRESH MATERIALIZED VIEW`, 17-bob), trigger (57-bob) yoki ilova. Qaysi biri bo'lsa ham — bu qo'shimcha kod va xato manbai. Shuning uchun denormalizatsiya — o'lchab ko'rilgan (45–47-boblar) tezlik muammosiga javob, boshlang'ich loyiha emas.
 
 ## Dialektlar
+
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/38-3-dialektlar.jpg">
+    <source src="/video/sql/38-3-dialektlar.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/38-3-dialektlar.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/38-3-dialektlar.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>38.3-video. Dialektlar: MySQL, SQLite va PostgreSQL farqlari</figcaption>
+</figure>
 
 Normalizatsiya — tizimga bog'liq bo'lmagan loyihalash qoidasi. Yuqoridagi barcha so'rovlar uchala tizimda bir xil ishladi. Farqlar loyihaga ta'sir qiladigan joylarda:
 
