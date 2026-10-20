@@ -1,0 +1,615 @@
+[
+  {
+    "scene": "seq_scan_vs_index_scan",
+    "id": "l1",
+    "text": "Yuz ming qatorli jadvalda mijoz_id bo'yicha qidirganda, indekssiz so'rov barcha sahifalarni o'qib chiqdi.",
+    "show": "Yuz ming qatorli jadvalda mijoz_id bo'yicha qidirganda, indekssiz so'rov barcha sahifalarni o'qib chiqdi.",
+    "say": "Yuz ming qatorli jadvalda mijoz_id bo'yicha qidirganda, indekssiz so'rov barcha sahifalarni o'qib chiqdi.",
+    "a0": 0.4,
+    "a1": 6.78,
+    "words": [
+      {
+        "w": "Yuz",
+        "s": 0.4,
+        "e": 0.58
+      },
+      {
+        "w": "ming",
+        "s": 0.64,
+        "e": 0.8
+      },
+      {
+        "w": "qatorli",
+        "s": 0.82,
+        "e": 1.22
+      },
+      {
+        "w": "jadvalda",
+        "s": 1.28,
+        "e": 1.78
+      },
+      {
+        "w": "mijoz_id",
+        "s": 2.2,
+        "e": 2.8
+      },
+      {
+        "w": "bo'yicha",
+        "s": 2.96,
+        "e": 3.26
+      },
+      {
+        "w": "qidirganda,",
+        "s": 3.32,
+        "e": 3.86
+      },
+      {
+        "w": "indekssiz",
+        "s": 4.1,
+        "e": 4.66
+      },
+      {
+        "w": "so'rov",
+        "s": 4.72,
+        "e": 5.04
+      },
+      {
+        "w": "barcha",
+        "s": 5.22,
+        "e": 5.54
+      },
+      {
+        "w": "sahifalarni",
+        "s": 5.6,
+        "e": 6.26
+      },
+      {
+        "w": "o'qib",
+        "s": 6.32,
+        "e": 6.5
+      },
+      {
+        "w": "chiqdi.",
+        "s": 6.54,
+        "e": 6.78
+      }
+    ]
+  },
+  {
+    "scene": "seq_scan_vs_index_scan",
+    "id": "l2",
+    "text": "Bi-tri indeksi qo'shilgach, olti yuzdan ortiq sahifa o'rniga atigi o'n ikkita sahifa bilan natija topildi.",
+    "show": "Bi-tri indeksi qo'shilgach, olti yuzdan ortiq sahifa o'rniga atigi o'n ikkita sahifa bilan natija topildi.",
+    "say": "Bi-tri indeksi qo'shilgach, olti yuzdan ortiq sahifa o'rniga atigi o'n ikkita sahifa bilan natija topildi.",
+    "a0": 7.73,
+    "a1": 13.93,
+    "words": [
+      {
+        "w": "Bi-tri",
+        "s": 7.73,
+        "e": 8.09
+      },
+      {
+        "w": "indeksi",
+        "s": 8.23,
+        "e": 8.59
+      },
+      {
+        "w": "qo'shilgach,",
+        "s": 8.63,
+        "e": 9.13
+      },
+      {
+        "w": "olti",
+        "s": 9.53,
+        "e": 9.73
+      },
+      {
+        "w": "yuzdan",
+        "s": 9.77,
+        "e": 10.05
+      },
+      {
+        "w": "ortiq",
+        "s": 10.17,
+        "e": 10.39
+      },
+      {
+        "w": "sahifa",
+        "s": 10.43,
+        "e": 10.77
+      },
+      {
+        "w": "o'rniga",
+        "s": 10.85,
+        "e": 11.15
+      },
+      {
+        "w": "atigi",
+        "s": 11.61,
+        "e": 11.93
+      },
+      {
+        "w": "o'n",
+        "s": 12.13,
+        "e": 12.23
+      },
+      {
+        "w": "ikkita",
+        "s": 12.27,
+        "e": 12.49
+      },
+      {
+        "w": "sahifa",
+        "s": 12.55,
+        "e": 12.91
+      },
+      {
+        "w": "bilan",
+        "s": 12.95,
+        "e": 13.17
+      },
+      {
+        "w": "natija",
+        "s": 13.21,
+        "e": 13.53
+      },
+      {
+        "w": "topildi.",
+        "s": 13.57,
+        "e": 13.93
+      }
+    ]
+  },
+  {
+    "scene": "ustunga_amal_xatosi",
+    "id": "l3",
+    "text": "Shartda mijoz_id plyus nol yoki matnga o'girish amali qo'llansa, indeks butunlay chetlab o'tiladi.",
+    "show": "Shartda mijoz_id plyus nol yoki matnga o'girish amali qo'llansa, indeks butunlay chetlab o'tiladi.",
+    "say": "Shartda mijoz_id plyus nol yoki matnga o'girish amali qo'llansa, indeks butunlay chetlab o'tiladi.",
+    "a0": 15.07,
+    "a1": 21.13,
+    "words": [
+      {
+        "w": "Shartda",
+        "s": 15.07,
+        "e": 15.45
+      },
+      {
+        "w": "mijoz_id",
+        "s": 15.53,
+        "e": 16.13
+      },
+      {
+        "w": "plyus",
+        "s": 16.23,
+        "e": 16.47
+      },
+      {
+        "w": "nol",
+        "s": 16.55,
+        "e": 16.75
+      },
+      {
+        "w": "yoki",
+        "s": 16.75,
+        "e": 17.09
+      },
+      {
+        "w": "matnga",
+        "s": 17.45,
+        "e": 17.85
+      },
+      {
+        "w": "o'girish",
+        "s": 17.95,
+        "e": 18.27
+      },
+      {
+        "w": "amali",
+        "s": 18.35,
+        "e": 18.59
+      },
+      {
+        "w": "qo'llansa,",
+        "s": 18.63,
+        "e": 19.07
+      },
+      {
+        "w": "indeks",
+        "s": 19.51,
+        "e": 19.87
+      },
+      {
+        "w": "butunlay",
+        "s": 19.99,
+        "e": 20.39
+      },
+      {
+        "w": "chetlab",
+        "s": 20.45,
+        "e": 20.77
+      },
+      {
+        "w": "o'tiladi.",
+        "s": 20.79,
+        "e": 21.13
+      }
+    ]
+  },
+  {
+    "scene": "ustunga_amal_xatosi",
+    "id": "l4",
+    "text": "Baza o'zgartirilgan ifodani tanimay, butun jadvalni to'liq skanerlash rejimiga qaytishga majbur bo'ladi.",
+    "show": "Baza o'zgartirilgan ifodani tanimay, butun jadvalni to'liq skanerlash rejimiga qaytishga majbur bo'ladi.",
+    "say": "Baza o'zgartirilgan ifodani tanimay, butun jadvalni to'liq skanerlash rejimiga qaytishga majbur bo'ladi.",
+    "a0": 21.99,
+    "a1": 27.82,
+    "words": [
+      {
+        "w": "Baza",
+        "s": 21.99,
+        "e": 22.29
+      },
+      {
+        "w": "o'zgartirilgan",
+        "s": 22.39,
+        "e": 23.0
+      },
+      {
+        "w": "ifodani",
+        "s": 23.04,
+        "e": 23.44
+      },
+      {
+        "w": "tanimay,",
+        "s": 23.48,
+        "e": 23.84
+      },
+      {
+        "w": "butun",
+        "s": 24.26,
+        "e": 24.56
+      },
+      {
+        "w": "jadvalni",
+        "s": 24.62,
+        "e": 25.1
+      },
+      {
+        "w": "to'liq",
+        "s": 25.2,
+        "e": 25.46
+      },
+      {
+        "w": "skanerlash",
+        "s": 25.54,
+        "e": 26.18
+      },
+      {
+        "w": "rejimiga",
+        "s": 26.26,
+        "e": 26.62
+      },
+      {
+        "w": "qaytishga",
+        "s": 26.68,
+        "e": 27.08
+      },
+      {
+        "w": "majbur",
+        "s": 27.12,
+        "e": 27.48
+      },
+      {
+        "w": "bo'ladi.",
+        "s": 27.52,
+        "e": 27.82
+      }
+    ]
+  },
+  {
+    "scene": "selektivlik_tajribasi",
+    "id": "l5",
+    "text": "Atigi ikki foiz qatordan iborat yangi buyurtmalarni hisoblashda indeks orqali to'g'ridan-to'g'ri o'qildi.",
+    "show": "Atigi ikki foiz qatordan iborat yangi buyurtmalarni hisoblashda indeks orqali to'g'ridan-to'g'ri o'qildi.",
+    "say": "Atigi ikki foiz qatordan iborat yangi buyurtmalarni hisoblashda indeks orqali to'g'ridan-to'g'ri o'qildi.",
+    "a0": 28.82,
+    "a1": 34.56,
+    "words": [
+      {
+        "w": "Atigi",
+        "s": 28.82,
+        "e": 29.08
+      },
+      {
+        "w": "ikki",
+        "s": 29.2,
+        "e": 29.42
+      },
+      {
+        "w": "foiz",
+        "s": 29.46,
+        "e": 29.7
+      },
+      {
+        "w": "qatordan",
+        "s": 29.74,
+        "e": 30.14
+      },
+      {
+        "w": "iborat",
+        "s": 30.2,
+        "e": 30.56
+      },
+      {
+        "w": "yangi",
+        "s": 30.68,
+        "e": 30.96
+      },
+      {
+        "w": "buyurtmalarni",
+        "s": 30.98,
+        "e": 31.56
+      },
+      {
+        "w": "hisoblashda",
+        "s": 31.6,
+        "e": 32.12
+      },
+      {
+        "w": "indeks",
+        "s": 32.6,
+        "e": 32.92
+      },
+      {
+        "w": "orqali",
+        "s": 32.98,
+        "e": 33.34
+      },
+      {
+        "w": "to'g'ridan-to'g'ri",
+        "s": 33.48,
+        "e": 34.18
+      },
+      {
+        "w": "o'qildi.",
+        "s": 34.22,
+        "e": 34.56
+      }
+    ]
+  },
+  {
+    "scene": "selektivlik_tajribasi",
+    "id": "l6",
+    "text": "To'qson sakkiz foizlik yopilgan qatorlarda esa rejalashtiruvchi indeksdan voz kechib ketma-ket o'qishni tanladi.",
+    "show": "To'qson sakkiz foizlik yopilgan qatorlarda esa rejalashtiruvchi indeksdan voz kechib ketma-ket o'qishni tanladi.",
+    "say": "To'qson sakkiz foizlik yopilgan qatorlarda esa rejalashtiruvchi indeksdan voz kechib ketma-ket o'qishni tanladi.",
+    "a0": 35.4,
+    "a1": 41.57,
+    "words": [
+      {
+        "w": "To'qson",
+        "s": 35.4,
+        "e": 35.7
+      },
+      {
+        "w": "sakkiz",
+        "s": 35.74,
+        "e": 36.02
+      },
+      {
+        "w": "foizlik",
+        "s": 36.04,
+        "e": 36.44
+      },
+      {
+        "w": "yopilgan",
+        "s": 36.51,
+        "e": 36.87
+      },
+      {
+        "w": "qatorlarda",
+        "s": 36.91,
+        "e": 37.45
+      },
+      {
+        "w": "esa",
+        "s": 37.49,
+        "e": 37.67
+      },
+      {
+        "w": "rejalashtiruvchi",
+        "s": 38.05,
+        "e": 38.77
+      },
+      {
+        "w": "indeksdan",
+        "s": 38.95,
+        "e": 39.45
+      },
+      {
+        "w": "voz",
+        "s": 39.57,
+        "e": 39.75
+      },
+      {
+        "w": "kechib",
+        "s": 39.79,
+        "e": 40.07
+      },
+      {
+        "w": "ketma-ket",
+        "s": 40.31,
+        "e": 40.81
+      },
+      {
+        "w": "o'qishni",
+        "s": 40.91,
+        "e": 41.19
+      },
+      {
+        "w": "tanladi.",
+        "s": 41.23,
+        "e": 41.57
+      }
+    ]
+  },
+  {
+    "scene": "yozish_narxi_va_statistika",
+    "id": "l7",
+    "text": "Uchta indeks jadvalning o'zidan yetmish foiz ko'p joy oldi va yozish vaqtini ikki baravar sekinlashtirdi.",
+    "show": "Uchta indeks jadvalning o'zidan yetmish foiz ko'p joy oldi va yozish vaqtini ikki baravar sekinlashtirdi.",
+    "say": "Uchta indeks jadvalning o'zidan yetmish foiz ko'p joy oldi va yozish vaqtini ikki baravar sekinlashtirdi.",
+    "a0": 42.51,
+    "a1": 49.05,
+    "words": [
+      {
+        "w": "Uchta",
+        "s": 42.51,
+        "e": 42.79
+      },
+      {
+        "w": "indeks",
+        "s": 42.93,
+        "e": 43.31
+      },
+      {
+        "w": "jadvalning",
+        "s": 43.41,
+        "e": 43.89
+      },
+      {
+        "w": "o'zidan",
+        "s": 43.97,
+        "e": 44.31
+      },
+      {
+        "w": "yetmish",
+        "s": 44.65,
+        "e": 45.01
+      },
+      {
+        "w": "foiz",
+        "s": 45.05,
+        "e": 45.31
+      },
+      {
+        "w": "ko'p",
+        "s": 45.35,
+        "e": 45.51
+      },
+      {
+        "w": "joy",
+        "s": 45.57,
+        "e": 45.75
+      },
+      {
+        "w": "oldi",
+        "s": 45.81,
+        "e": 46.01
+      },
+      {
+        "w": "va",
+        "s": 46.43,
+        "e": 46.51
+      },
+      {
+        "w": "yozish",
+        "s": 46.69,
+        "e": 47.01
+      },
+      {
+        "w": "vaqtini",
+        "s": 47.03,
+        "e": 47.37
+      },
+      {
+        "w": "ikki",
+        "s": 47.73,
+        "e": 47.95
+      },
+      {
+        "w": "baravar",
+        "s": 47.97,
+        "e": 48.33
+      },
+      {
+        "w": "sekinlashtirdi.",
+        "s": 48.39,
+        "e": 49.05
+      }
+    ]
+  },
+  {
+    "scene": "yozish_narxi_va_statistika",
+    "id": "l8",
+    "text": "Statistika jadvali orqali skan soni nol bo'lgan foydasiz indekslarni osonlikcha aniqlash mumkin.",
+    "show": "Statistika jadvali orqali skan soni nol bo'lgan foydasiz indekslarni osonlikcha aniqlash mumkin.",
+    "say": "Statistika jadvali orqali skan soni nol bo'lgan foydasiz indekslarni osonlikcha aniqlash mumkin.",
+    "a0": 49.96,
+    "a1": 55.6,
+    "words": [
+      {
+        "w": "Statistika",
+        "s": 49.96,
+        "e": 50.48
+      },
+      {
+        "w": "jadvali",
+        "s": 50.52,
+        "e": 50.86
+      },
+      {
+        "w": "orqali",
+        "s": 50.92,
+        "e": 51.24
+      },
+      {
+        "w": "skan",
+        "s": 51.36,
+        "e": 51.62
+      },
+      {
+        "w": "soni",
+        "s": 51.66,
+        "e": 51.94
+      },
+      {
+        "w": "nol",
+        "s": 52.0,
+        "e": 52.16
+      },
+      {
+        "w": "bo'lgan",
+        "s": 52.22,
+        "e": 52.54
+      },
+      {
+        "w": "foydasiz",
+        "s": 52.6,
+        "e": 53.02
+      },
+      {
+        "w": "indekslarni",
+        "s": 53.12,
+        "e": 53.7
+      },
+      {
+        "w": "osonlikcha",
+        "s": 54.1,
+        "e": 54.74
+      },
+      {
+        "w": "aniqlash",
+        "s": 54.9,
+        "e": 55.3
+      },
+      {
+        "w": "mumkin.",
+        "s": 55.32,
+        "e": 55.6
+      }
+    ]
+  }
+]

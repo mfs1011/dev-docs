@@ -1,0 +1,817 @@
+[
+  {
+    "scene": "indekssiz_vs_indeks",
+    "id": "l1",
+    "text": "Indekssiz qidiruvda ma'lumotlar bazasi butun jadval qatorlarini boshidan oxirigacha ketma-ket tekshirib chiqadi.",
+    "show": "Indekssiz qidiruvda ma'lumotlar bazasi butun jadval qatorlarini boshidan oxirigacha ketma-ket tekshirib chiqadi.",
+    "say": "Indekssiz qidiruvda ma'lumotlar bazasi butun jadval qatorlarini boshidan oxirigacha ketma-ket tekshirib chiqadi.",
+    "a0": 0.2,
+    "a1": 6.96,
+    "words": [
+      {
+        "w": "Indekssiz",
+        "s": 0.2,
+        "e": 0.76
+      },
+      {
+        "w": "qidiruvda",
+        "s": 0.82,
+        "e": 1.26
+      },
+      {
+        "w": "ma'lumotlar",
+        "s": 1.54,
+        "e": 2.1
+      },
+      {
+        "w": "bazasi",
+        "s": 2.16,
+        "e": 2.58
+      },
+      {
+        "w": "butun",
+        "s": 2.7,
+        "e": 2.98
+      },
+      {
+        "w": "jadval",
+        "s": 3.04,
+        "e": 3.34
+      },
+      {
+        "w": "qatorlarini",
+        "s": 3.38,
+        "e": 4
+      },
+      {
+        "w": "boshidan",
+        "s": 4.26,
+        "e": 4.72
+      },
+      {
+        "w": "oxirigacha",
+        "s": 4.88,
+        "e": 5.44
+      },
+      {
+        "w": "ketma-ket",
+        "s": 5.8,
+        "e": 6.3
+      },
+      {
+        "w": "tekshirib",
+        "s": 6.34,
+        "e": 6.66
+      },
+      {
+        "w": "chiqadi.",
+        "s": 6.7,
+        "e": 6.96
+      }
+    ]
+  },
+  {
+    "scene": "indekssiz_vs_indeks",
+    "id": "l2",
+    "text": "Indeks esa kitob oxiridagi alifbo ko'rsatkichiga o'xshab, kerakli sahifani to'g'ridan-to'g'ri topish imkonini beradi.",
+    "show": "Indeks esa kitob oxiridagi alifbo ko'rsatkichiga o'xshab, kerakli sahifani to'g'ridan-to'g'ri topish imkonini beradi.",
+    "say": "Indeks esa kitob oxiridagi alifbo ko'rsatkichiga o'xshab, kerakli sahifani to'g'ridan-to'g'ri topish imkonini beradi.",
+    "a0": 7.73,
+    "a1": 13.99,
+    "words": [
+      {
+        "w": "Indeks",
+        "s": 7.73,
+        "e": 8.05
+      },
+      {
+        "w": "esa",
+        "s": 8.11,
+        "e": 8.27
+      },
+      {
+        "w": "kitob",
+        "s": 8.63,
+        "e": 8.87
+      },
+      {
+        "w": "oxiridagi",
+        "s": 8.99,
+        "e": 9.45
+      },
+      {
+        "w": "alifbo",
+        "s": 9.59,
+        "e": 9.93
+      },
+      {
+        "w": "ko'rsatkichiga",
+        "s": 10.01,
+        "e": 10.59
+      },
+      {
+        "w": "o'xshab,",
+        "s": 10.65,
+        "e": 10.93
+      },
+      {
+        "w": "kerakli",
+        "s": 11.29,
+        "e": 11.69
+      },
+      {
+        "w": "sahifani",
+        "s": 11.75,
+        "e": 12.23
+      },
+      {
+        "w": "to'g'ridan-to'g'ri",
+        "s": 12.31,
+        "e": 13.05
+      },
+      {
+        "w": "topish",
+        "s": 13.07,
+        "e": 13.29
+      },
+      {
+        "w": "imkonini",
+        "s": 13.33,
+        "e": 13.71
+      },
+      {
+        "w": "beradi.",
+        "s": 13.73,
+        "e": 13.99
+      }
+    ]
+  },
+  {
+    "scene": "b_tree_tuzilishi",
+    "id": "l3",
+    "text": "Standart bi-tri indeksi tartiblangan daraxt bo'lib, millionlab qatorlar orasida qidiruvni keskin tezlashtiradi.",
+    "show": "Standart bi-tri indeksi tartiblangan daraxt bo'lib, millionlab qatorlar orasida qidiruvni keskin tezlashtiradi.",
+    "say": "Standart bi-tri indeksi tartiblangan daraxt bo'lib, millionlab qatorlar orasida qidiruvni keskin tezlashtiradi.",
+    "a0": 14.73,
+    "a1": 21.11,
+    "words": [
+      {
+        "w": "Standart",
+        "s": 14.73,
+        "e": 15.15
+      },
+      {
+        "w": "bi-tri",
+        "s": 15.51,
+        "e": 15.87
+      },
+      {
+        "w": "indeksi",
+        "s": 15.97,
+        "e": 16.37
+      },
+      {
+        "w": "tartiblangan",
+        "s": 16.65,
+        "e": 17.21
+      },
+      {
+        "w": "daraxt",
+        "s": 17.25,
+        "e": 17.53
+      },
+      {
+        "w": "bo'lib,",
+        "s": 17.57,
+        "e": 17.79
+      },
+      {
+        "w": "millionlab",
+        "s": 18.11,
+        "e": 18.63
+      },
+      {
+        "w": "qatorlar",
+        "s": 18.69,
+        "e": 19.11
+      },
+      {
+        "w": "orasida",
+        "s": 19.17,
+        "e": 19.49
+      },
+      {
+        "w": "qidiruvni",
+        "s": 19.57,
+        "e": 19.97
+      },
+      {
+        "w": "keskin",
+        "s": 20.17,
+        "e": 20.51
+      },
+      {
+        "w": "tezlashtiradi.",
+        "s": 20.55,
+        "e": 21.11
+      }
+    ]
+  },
+  {
+    "scene": "b_tree_tuzilishi",
+    "id": "l4",
+    "text": "Tartiblangan tuzilma nafaqat tenglik, balki oraliq shartlar, saralash hamda minimum va maksimum uchun ham xizmat qiladi.",
+    "show": "Tartiblangan tuzilma nafaqat tenglik, balki oraliq shartlar, saralash hamda minimum va maksimum uchun ham xizmat qiladi.",
+    "say": "Tartiblangan tuzilma nafaqat tenglik, balki oraliq shartlar, saralash hamda minimum va maksimum uchun ham xizmat qiladi.",
+    "a0": 22.13,
+    "a1": 29.28,
+    "words": [
+      {
+        "w": "Tartiblangan",
+        "s": 22.13,
+        "e": 22.72
+      },
+      {
+        "w": "tuzilma",
+        "s": 22.76,
+        "e": 23.08
+      },
+      {
+        "w": "nafaqat",
+        "s": 23.4,
+        "e": 23.78
+      },
+      {
+        "w": "tenglik,",
+        "s": 23.84,
+        "e": 24.2
+      },
+      {
+        "w": "balki",
+        "s": 24.46,
+        "e": 24.7
+      },
+      {
+        "w": "oraliq",
+        "s": 24.9,
+        "e": 25.22
+      },
+      {
+        "w": "shartlar,",
+        "s": 25.28,
+        "e": 25.62
+      },
+      {
+        "w": "saralash",
+        "s": 25.94,
+        "e": 26.4
+      },
+      {
+        "w": "hamda",
+        "s": 26.44,
+        "e": 26.68
+      },
+      {
+        "w": "minimum",
+        "s": 27.08,
+        "e": 27.54
+      },
+      {
+        "w": "va",
+        "s": 27.68,
+        "e": 27.76
+      },
+      {
+        "w": "maksimum",
+        "s": 27.96,
+        "e": 28.36
+      },
+      {
+        "w": "uchun",
+        "s": 28.42,
+        "e": 28.58
+      },
+      {
+        "w": "ham",
+        "s": 28.62,
+        "e": 28.74
+      },
+      {
+        "w": "xizmat",
+        "s": 28.76,
+        "e": 29
+      },
+      {
+        "w": "qiladi.",
+        "s": 29.04,
+        "e": 29.28
+      }
+    ]
+  },
+  {
+    "scene": "qoplovchi_indeks",
+    "id": "l5",
+    "text": "Agar so'rovga kerakli barcha ustunlar indeksning o'zida mavjud bo'lsa, jadvalga murojaat qilish umuman talab etilmaydi.",
+    "show": "Agar so'rovga kerakli barcha ustunlar indeksning o'zida mavjud bo'lsa, jadvalga murojaat qilish umuman talab etilmaydi.",
+    "say": "Agar so'rovga kerakli barcha ustunlar indeksning o'zida mavjud bo'lsa, jadvalga murojaat qilish umuman talab etilmaydi.",
+    "a0": 30.2,
+    "a1": 36.34,
+    "words": [
+      {
+        "w": "Agar",
+        "s": 30.2,
+        "e": 30.42
+      },
+      {
+        "w": "so'rovga",
+        "s": 30.46,
+        "e": 30.82
+      },
+      {
+        "w": "kerakli",
+        "s": 30.88,
+        "e": 31.22
+      },
+      {
+        "w": "barcha",
+        "s": 31.32,
+        "e": 31.62
+      },
+      {
+        "w": "ustunlar",
+        "s": 31.66,
+        "e": 32.08
+      },
+      {
+        "w": "indeksning",
+        "s": 32.16,
+        "e": 32.62
+      },
+      {
+        "w": "o'zida",
+        "s": 32.74,
+        "e": 32.98
+      },
+      {
+        "w": "mavjud",
+        "s": 33.04,
+        "e": 33.3
+      },
+      {
+        "w": "bo'lsa,",
+        "s": 33.34,
+        "e": 33.58
+      },
+      {
+        "w": "jadvalga",
+        "s": 34,
+        "e": 34.42
+      },
+      {
+        "w": "murojaat",
+        "s": 34.48,
+        "e": 34.86
+      },
+      {
+        "w": "qilish",
+        "s": 34.88,
+        "e": 35.12
+      },
+      {
+        "w": "umuman",
+        "s": 35.38,
+        "e": 35.7
+      },
+      {
+        "w": "talab",
+        "s": 35.72,
+        "e": 35.92
+      },
+      {
+        "w": "etilmaydi.",
+        "s": 35.96,
+        "e": 36.34
+      }
+    ]
+  },
+  {
+    "scene": "qoplovchi_indeks",
+    "id": "l6",
+    "text": "Bunday qoplovchi indeks orqali so'rovlar eng yuqori unumdorlik va minimal xotira yuki bilan bajariladi.",
+    "show": "Bunday qoplovchi indeks orqali so'rovlar eng yuqori unumdorlik va minimal xotira yuki bilan bajariladi.",
+    "say": "Bunday qoplovchi indeks orqali so'rovlar eng yuqori unumdorlik va minimal xotira yuki bilan bajariladi.",
+    "a0": 37.28,
+    "a1": 43.15,
+    "words": [
+      {
+        "w": "Bunday",
+        "s": 37.28,
+        "e": 37.59
+      },
+      {
+        "w": "qoplovchi",
+        "s": 37.67,
+        "e": 38.09
+      },
+      {
+        "w": "indeks",
+        "s": 38.13,
+        "e": 38.37
+      },
+      {
+        "w": "orqali",
+        "s": 38.41,
+        "e": 38.71
+      },
+      {
+        "w": "so'rovlar",
+        "s": 39.03,
+        "e": 39.51
+      },
+      {
+        "w": "eng",
+        "s": 39.75,
+        "e": 39.91
+      },
+      {
+        "w": "yuqori",
+        "s": 39.97,
+        "e": 40.31
+      },
+      {
+        "w": "unumdorlik",
+        "s": 40.35,
+        "e": 40.89
+      },
+      {
+        "w": "va",
+        "s": 40.97,
+        "e": 41.05
+      },
+      {
+        "w": "minimal",
+        "s": 41.41,
+        "e": 41.85
+      },
+      {
+        "w": "xotira",
+        "s": 41.91,
+        "e": 42.21
+      },
+      {
+        "w": "yuki",
+        "s": 42.25,
+        "e": 42.41
+      },
+      {
+        "w": "bilan",
+        "s": 42.43,
+        "e": 42.63
+      },
+      {
+        "w": "bajariladi.",
+        "s": 42.67,
+        "e": 43.15
+      }
+    ]
+  },
+  {
+    "scene": "selektivlik_va_rejalashtiruvchi",
+    "id": "l7",
+    "text": "Rejalashtiruvchi har bir so'rov uchun statistikani tahlil qilib, indeks yoki ketma-ket o'qishni o'zi tanlaydi.",
+    "show": "Rejalashtiruvchi har bir so'rov uchun statistikani tahlil qilib, indeks yoki ketma-ket o'qishni o'zi tanlaydi.",
+    "say": "Rejalashtiruvchi har bir so'rov uchun statistikani tahlil qilib, indeks yoki ketma-ket o'qishni o'zi tanlaydi.",
+    "a0": 44.29,
+    "a1": 50.17,
+    "words": [
+      {
+        "w": "Rejalashtiruvchi",
+        "s": 44.29,
+        "e": 44.93
+      },
+      {
+        "w": "har",
+        "s": 45.21,
+        "e": 45.33
+      },
+      {
+        "w": "bir",
+        "s": 45.37,
+        "e": 45.47
+      },
+      {
+        "w": "so'rov",
+        "s": 45.49,
+        "e": 45.71
+      },
+      {
+        "w": "uchun",
+        "s": 45.75,
+        "e": 45.93
+      },
+      {
+        "w": "statistikani",
+        "s": 46.05,
+        "e": 46.63
+      },
+      {
+        "w": "tahlil",
+        "s": 46.69,
+        "e": 46.99
+      },
+      {
+        "w": "qilib,",
+        "s": 47.03,
+        "e": 47.25
+      },
+      {
+        "w": "indeks",
+        "s": 47.67,
+        "e": 48.03
+      },
+      {
+        "w": "yoki",
+        "s": 48.07,
+        "e": 48.31
+      },
+      {
+        "w": "ketma-ket",
+        "s": 48.45,
+        "e": 48.93
+      },
+      {
+        "w": "o'qishni",
+        "s": 49.01,
+        "e": 49.35
+      },
+      {
+        "w": "o'zi",
+        "s": 49.57,
+        "e": 49.75
+      },
+      {
+        "w": "tanlaydi.",
+        "s": 49.79,
+        "e": 50.17
+      }
+    ]
+  },
+  {
+    "scene": "selektivlik_va_rejalashtiruvchi",
+    "id": "l8",
+    "text": "Agar so'rov jadvalning katta qismini o'qishi kerak bo'lsa, to'liq skanerlash indeks orqali sakrashdan ko'ra tezroq bo'ladi.",
+    "show": "Agar so'rov jadvalning katta qismini o'qishi kerak bo'lsa, to'liq skanerlash indeks orqali sakrashdan ko'ra tezroq bo'ladi.",
+    "say": "Agar so'rov jadvalning katta qismini o'qishi kerak bo'lsa, to'liq skanerlash indeks orqali sakrashdan ko'ra tezroq bo'ladi.",
+    "a0": 50.93,
+    "a1": 57.28,
+    "words": [
+      {
+        "w": "Agar",
+        "s": 50.93,
+        "e": 51.15
+      },
+      {
+        "w": "so'rov",
+        "s": 51.19,
+        "e": 51.43
+      },
+      {
+        "w": "jadvalning",
+        "s": 51.69,
+        "e": 52.17
+      },
+      {
+        "w": "katta",
+        "s": 52.21,
+        "e": 52.49
+      },
+      {
+        "w": "qismini",
+        "s": 52.56,
+        "e": 52.82
+      },
+      {
+        "w": "o'qishi",
+        "s": 52.86,
+        "e": 53.08
+      },
+      {
+        "w": "kerak",
+        "s": 53.1,
+        "e": 53.3
+      },
+      {
+        "w": "bo'lsa,",
+        "s": 53.32,
+        "e": 53.54
+      },
+      {
+        "w": "to'liq",
+        "s": 53.86,
+        "e": 54.14
+      },
+      {
+        "w": "skanerlash",
+        "s": 54.2,
+        "e": 54.8
+      },
+      {
+        "w": "indeks",
+        "s": 54.96,
+        "e": 55.26
+      },
+      {
+        "w": "orqali",
+        "s": 55.3,
+        "e": 55.56
+      },
+      {
+        "w": "sakrashdan",
+        "s": 55.62,
+        "e": 56.06
+      },
+      {
+        "w": "ko'ra",
+        "s": 56.1,
+        "e": 56.28
+      },
+      {
+        "w": "tezroq",
+        "s": 56.6,
+        "e": 56.96
+      },
+      {
+        "w": "bo'ladi.",
+        "s": 57,
+        "e": 57.28
+      }
+    ]
+  },
+  {
+    "scene": "indeks_narxi",
+    "id": "l9",
+    "text": "Har bir yangi indeks ma'lumot qo'shish, yangilash va o'chirish amallarini sekinlashtiradi hamda disk hajmini oshiradi.",
+    "show": "Har bir yangi indeks ma'lumot qo'shish, yangilash va o'chirish amallarini sekinlashtiradi hamda disk hajmini oshiradi.",
+    "say": "Har bir yangi indeks ma'lumot qo'shish, yangilash va o'chirish amallarini sekinlashtiradi hamda disk hajmini oshiradi.",
+    "a0": 58.52,
+    "a1": 64.83,
+    "words": [
+      {
+        "w": "Har",
+        "s": 58.52,
+        "e": 58.64
+      },
+      {
+        "w": "bir",
+        "s": 58.66,
+        "e": 58.76
+      },
+      {
+        "w": "yangi",
+        "s": 58.8,
+        "e": 59
+      },
+      {
+        "w": "indeks",
+        "s": 59.06,
+        "e": 59.34
+      },
+      {
+        "w": "ma'lumot",
+        "s": 59.62,
+        "e": 59.96
+      },
+      {
+        "w": "qo'shish,",
+        "s": 60.02,
+        "e": 60.44
+      },
+      {
+        "w": "yangilash",
+        "s": 60.66,
+        "e": 61.2
+      },
+      {
+        "w": "va",
+        "s": 61.24,
+        "e": 61.32
+      },
+      {
+        "w": "o'chirish",
+        "s": 61.68,
+        "e": 62
+      },
+      {
+        "w": "amallarini",
+        "s": 62.06,
+        "e": 62.52
+      },
+      {
+        "w": "sekinlashtiradi",
+        "s": 62.58,
+        "e": 63.23
+      },
+      {
+        "w": "hamda",
+        "s": 63.25,
+        "e": 63.49
+      },
+      {
+        "w": "disk",
+        "s": 63.89,
+        "e": 64.13
+      },
+      {
+        "w": "hajmini",
+        "s": 64.15,
+        "e": 64.45
+      },
+      {
+        "w": "oshiradi.",
+        "s": 64.49,
+        "e": 64.83
+      }
+    ]
+  },
+  {
+    "scene": "indeks_narxi",
+    "id": "l10",
+    "text": "Shuning uchun har bir ustunga indeks qo'ymasdan, real so'rovlarga qarab foydasizlarini o'chirib borish zarur.",
+    "show": "Shuning uchun har bir ustunga indeks qo'ymasdan, real so'rovlarga qarab foydasizlarini o'chirib borish zarur.",
+    "say": "Shuning uchun har bir ustunga indeks qo'ymasdan, real so'rovlarga qarab foydasizlarini o'chirib borish zarur.",
+    "a0": 65.33,
+    "a1": 70.64,
+    "words": [
+      {
+        "w": "Shuning",
+        "s": 65.33,
+        "e": 65.53
+      },
+      {
+        "w": "uchun",
+        "s": 65.53,
+        "e": 65.71
+      },
+      {
+        "w": "har",
+        "s": 65.99,
+        "e": 66.17
+      },
+      {
+        "w": "bir",
+        "s": 66.21,
+        "e": 66.29
+      },
+      {
+        "w": "ustunga",
+        "s": 66.31,
+        "e": 66.63
+      },
+      {
+        "w": "indeks",
+        "s": 66.67,
+        "e": 66.91
+      },
+      {
+        "w": "qo'ymasdan,",
+        "s": 66.95,
+        "e": 67.41
+      },
+      {
+        "w": "real",
+        "s": 67.75,
+        "e": 68.01
+      },
+      {
+        "w": "so'rovlarga",
+        "s": 68.07,
+        "e": 68.56
+      },
+      {
+        "w": "qarab",
+        "s": 68.62,
+        "e": 68.88
+      },
+      {
+        "w": "foydasizlarini",
+        "s": 69.1,
+        "e": 69.84
+      },
+      {
+        "w": "o'chirib",
+        "s": 69.86,
+        "e": 70.12
+      },
+      {
+        "w": "borish",
+        "s": 70.16,
+        "e": 70.36
+      },
+      {
+        "w": "zarur.",
+        "s": 70.4,
+        "e": 70.64
+      }
+    ]
+  }
+]

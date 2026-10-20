@@ -1,0 +1,13 @@
+WEBVTT
+
+00:00.000 --> 00:17.393
+Seq Scan vs Index Scan (PostgreSQL 18)
+
+00:17.393 --> 00:33.820
+Ustunga Amal Qo'llash Xatosi
+
+00:33.820 --> 00:50.169
+Selektivlik: 2% Yangi vs 98% Yopilgan
+
+00:50.169 --> 01:09.320
+Indeks Hajmi, Yozish Narxi va Audit

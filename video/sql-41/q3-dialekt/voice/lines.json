@@ -1,0 +1,630 @@
+[
+  {
+    "scene": "mysql_va_innodb_qoplamasi",
+    "id": "l1",
+    "text": "May es-kyu-elda ikkilamchi indeks kalit bilan birga jadvalning birlamchi kalitini ham o'zida saqlaydi.",
+    "show": "May es-kyu-elda ikkilamchi indeks kalit bilan birga jadvalning birlamchi kalitini ham o'zida saqlaydi.",
+    "say": "May es-kyu-elda ikkilamchi indeks kalit bilan birga jadvalning birlamchi kalitini ham o'zida saqlaydi.",
+    "a0": 0.24,
+    "a1": 5.64,
+    "words": [
+      {
+        "w": "May",
+        "s": 0.24,
+        "e": 0.38
+      },
+      {
+        "w": "es-kyu-elda",
+        "s": 0.46,
+        "e": 0.94
+      },
+      {
+        "w": "ikkilamchi",
+        "s": 1.1,
+        "e": 1.64
+      },
+      {
+        "w": "indeks",
+        "s": 1.74,
+        "e": 2.08
+      },
+      {
+        "w": "kalit",
+        "s": 2.14,
+        "e": 2.44
+      },
+      {
+        "w": "bilan",
+        "s": 2.48,
+        "e": 2.7
+      },
+      {
+        "w": "birga",
+        "s": 2.76,
+        "e": 3.02
+      },
+      {
+        "w": "jadvalning",
+        "s": 3.16,
+        "e": 3.7
+      },
+      {
+        "w": "birlamchi",
+        "s": 3.78,
+        "e": 4.22
+      },
+      {
+        "w": "kalitini",
+        "s": 4.26,
+        "e": 4.62
+      },
+      {
+        "w": "ham",
+        "s": 4.66,
+        "e": 4.82
+      },
+      {
+        "w": "o'zida",
+        "s": 4.94,
+        "e": 5.18
+      },
+      {
+        "w": "saqlaydi.",
+        "s": 5.24,
+        "e": 5.64
+      }
+    ]
+  },
+  {
+    "scene": "mysql_va_innodb_qoplamasi",
+    "id": "l2",
+    "text": "Shu sababli birlamchi kalit ustunini so'rash avtomatik ravishda qoplovchi indeks qidiruviga aylanadi.",
+    "show": "Shu sababli birlamchi kalit ustunini so'rash avtomatik ravishda qoplovchi indeks qidiruviga aylanadi.",
+    "say": "Shu sababli birlamchi kalit ustunini so'rash avtomatik ravishda qoplovchi indeks qidiruviga aylanadi.",
+    "a0": 6.18,
+    "a1": 11.51,
+    "words": [
+      {
+        "w": "Shu",
+        "s": 6.18,
+        "e": 6.26
+      },
+      {
+        "w": "sababli",
+        "s": 6.32,
+        "e": 6.74
+      },
+      {
+        "w": "birlamchi",
+        "s": 6.92,
+        "e": 7.3
+      },
+      {
+        "w": "kalit",
+        "s": 7.34,
+        "e": 7.57
+      },
+      {
+        "w": "ustunini",
+        "s": 7.61,
+        "e": 7.99
+      },
+      {
+        "w": "so'rash",
+        "s": 8.03,
+        "e": 8.33
+      },
+      {
+        "w": "avtomatik",
+        "s": 8.71,
+        "e": 9.25
+      },
+      {
+        "w": "ravishda",
+        "s": 9.29,
+        "e": 9.63
+      },
+      {
+        "w": "qoplovchi",
+        "s": 9.71,
+        "e": 10.19
+      },
+      {
+        "w": "indeks",
+        "s": 10.33,
+        "e": 10.67
+      },
+      {
+        "w": "qidiruviga",
+        "s": 10.73,
+        "e": 11.11
+      },
+      {
+        "w": "aylanadi.",
+        "s": 11.15,
+        "e": 11.51
+      }
+    ]
+  },
+  {
+    "scene": "rejalashtiruvchi_xatosi_va_ignore_index",
+    "id": "l3",
+    "text": "To'qson sakkiz foiz qator tanlanganda May es-kyu-el rejalashtiruvchisi xato hisoblab indeksni tanlab yubordi.",
+    "show": "To'qson sakkiz foiz qator tanlanganda May es-kyu-el rejalashtiruvchisi xato hisoblab indeksni tanlab yubordi.",
+    "say": "To'qson sakkiz foiz qator tanlanganda May es-kyu-el rejalashtiruvchisi xato hisoblab indeksni tanlab yubordi.",
+    "a0": 12.25,
+    "a1": 18.17,
+    "words": [
+      {
+        "w": "To'qson",
+        "s": 12.25,
+        "e": 12.53
+      },
+      {
+        "w": "sakkiz",
+        "s": 12.57,
+        "e": 12.81
+      },
+      {
+        "w": "foiz",
+        "s": 12.87,
+        "e": 13.09
+      },
+      {
+        "w": "qator",
+        "s": 13.15,
+        "e": 13.39
+      },
+      {
+        "w": "tanlanganda",
+        "s": 13.43,
+        "e": 14.07
+      },
+      {
+        "w": "May",
+        "s": 14.29,
+        "e": 14.45
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 14.55,
+        "e": 14.91
+      },
+      {
+        "w": "rejalashtiruvchisi",
+        "s": 14.97,
+        "e": 15.77
+      },
+      {
+        "w": "xato",
+        "s": 16.15,
+        "e": 16.41
+      },
+      {
+        "w": "hisoblab",
+        "s": 16.49,
+        "e": 16.95
+      },
+      {
+        "w": "indeksni",
+        "s": 17.09,
+        "e": 17.49
+      },
+      {
+        "w": "tanlab",
+        "s": 17.53,
+        "e": 17.81
+      },
+      {
+        "w": "yubordi.",
+        "s": 17.85,
+        "e": 18.17
+      }
+    ]
+  },
+  {
+    "scene": "rejalashtiruvchi_xatosi_va_ignore_index",
+    "id": "l4",
+    "text": "Oqibatda so'rov uch baravar sekinlashdi, ignor indeks buyrug'i esa to'liq skanerlash bilan tezlikni qaytardi.",
+    "show": "Oqibatda so'rov uch baravar sekinlashdi, ignor indeks buyrug'i esa to'liq skanerlash bilan tezlikni qaytardi.",
+    "say": "Oqibatda so'rov uch baravar sekinlashdi, ignor indeks buyrug'i esa to'liq skanerlash bilan tezlikni qaytardi.",
+    "a0": 19.23,
+    "a1": 25.32,
+    "words": [
+      {
+        "w": "Oqibatda",
+        "s": 19.23,
+        "e": 19.67
+      },
+      {
+        "w": "so'rov",
+        "s": 19.75,
+        "e": 20.03
+      },
+      {
+        "w": "uch",
+        "s": 20.21,
+        "e": 20.31
+      },
+      {
+        "w": "baravar",
+        "s": 20.39,
+        "e": 20.71
+      },
+      {
+        "w": "sekinlashdi,",
+        "s": 20.75,
+        "e": 21.31
+      },
+      {
+        "w": "ignor",
+        "s": 21.75,
+        "e": 22.03
+      },
+      {
+        "w": "indeks",
+        "s": 22.15,
+        "e": 22.43
+      },
+      {
+        "w": "buyrug'i",
+        "s": 22.49,
+        "e": 22.82
+      },
+      {
+        "w": "esa",
+        "s": 22.86,
+        "e": 23.02
+      },
+      {
+        "w": "to'liq",
+        "s": 23.32,
+        "e": 23.58
+      },
+      {
+        "w": "skanerlash",
+        "s": 23.64,
+        "e": 24.22
+      },
+      {
+        "w": "bilan",
+        "s": 24.24,
+        "e": 24.44
+      },
+      {
+        "w": "tezlikni",
+        "s": 24.5,
+        "e": 24.9
+      },
+      {
+        "w": "qaytardi.",
+        "s": 24.94,
+        "e": 25.32
+      }
+    ]
+  },
+  {
+    "scene": "sqlite_rowid_va_not_indexed",
+    "id": "l5",
+    "text": "Es-kyu-laytda qidiruv rejasi skan va so'rch orqali ko'rsatilib, butun sonli kalit rou-ay-di deb ataladi.",
+    "show": "Es-kyu-laytda qidiruv rejasi skan va so'rch orqali ko'rsatilib, butun sonli kalit rou-ay-di deb ataladi.",
+    "say": "Es-kyu-laytda qidiruv rejasi skan va so'rch orqali ko'rsatilib, butun sonli kalit rou-ay-di deb ataladi.",
+    "a0": 26.26,
+    "a1": 32.14,
+    "words": [
+      {
+        "w": "Es-kyu-laytda",
+        "s": 26.26,
+        "e": 26.94
+      },
+      {
+        "w": "qidiruv",
+        "s": 27.02,
+        "e": 27.3
+      },
+      {
+        "w": "rejasi",
+        "s": 27.34,
+        "e": 27.74
+      },
+      {
+        "w": "skan",
+        "s": 27.86,
+        "e": 28.16
+      },
+      {
+        "w": "va",
+        "s": 28.26,
+        "e": 28.34
+      },
+      {
+        "w": "so'rch",
+        "s": 28.46,
+        "e": 28.76
+      },
+      {
+        "w": "orqali",
+        "s": 28.82,
+        "e": 29.1
+      },
+      {
+        "w": "ko'rsatilib,",
+        "s": 29.16,
+        "e": 29.62
+      },
+      {
+        "w": "butun",
+        "s": 30.0,
+        "e": 30.2
+      },
+      {
+        "w": "sonli",
+        "s": 30.24,
+        "e": 30.52
+      },
+      {
+        "w": "kalit",
+        "s": 30.6,
+        "e": 30.9
+      },
+      {
+        "w": "rou-ay-di",
+        "s": 31.14,
+        "e": 31.6
+      },
+      {
+        "w": "deb",
+        "s": 31.66,
+        "e": 31.78
+      },
+      {
+        "w": "ataladi.",
+        "s": 31.82,
+        "e": 32.14
+      }
+    ]
+  },
+  {
+    "scene": "sqlite_rowid_va_not_indexed",
+    "id": "l6",
+    "text": "Indeks orqasiga rou-ay-di yopishgani uchun u ham qoplovchi rejimda ishlaydi, not indeksd esa uni chetlab o'tadi.",
+    "show": "Indeks orqasiga rou-ay-di yopishgani uchun u ham qoplovchi rejimda ishlaydi, not indeksd esa uni chetlab o'tadi.",
+    "say": "Indeks orqasiga rou-ay-di yopishgani uchun u ham qoplovchi rejimda ishlaydi, not indeksd esa uni chetlab o'tadi.",
+    "a0": 32.74,
+    "a1": 38.99,
+    "words": [
+      {
+        "w": "Indeks",
+        "s": 32.74,
+        "e": 33.04
+      },
+      {
+        "w": "orqasiga",
+        "s": 33.1,
+        "e": 33.5
+      },
+      {
+        "w": "rou-ay-di",
+        "s": 33.6,
+        "e": 34.02
+      },
+      {
+        "w": "yopishgani",
+        "s": 34.02,
+        "e": 34.52
+      },
+      {
+        "w": "uchun",
+        "s": 34.56,
+        "e": 34.76
+      },
+      {
+        "w": "u",
+        "s": 35.04,
+        "e": 35.06
+      },
+      {
+        "w": "ham",
+        "s": 35.12,
+        "e": 35.28
+      },
+      {
+        "w": "qoplovchi",
+        "s": 35.36,
+        "e": 35.81
+      },
+      {
+        "w": "rejimda",
+        "s": 35.85,
+        "e": 36.15
+      },
+      {
+        "w": "ishlaydi,",
+        "s": 36.21,
+        "e": 36.51
+      },
+      {
+        "w": "not",
+        "s": 36.89,
+        "e": 37.11
+      },
+      {
+        "w": "indeksd",
+        "s": 37.27,
+        "e": 37.69
+      },
+      {
+        "w": "esa",
+        "s": 37.71,
+        "e": 37.89
+      },
+      {
+        "w": "uni",
+        "s": 38.17,
+        "e": 38.31
+      },
+      {
+        "w": "chetlab",
+        "s": 38.35,
+        "e": 38.71
+      },
+      {
+        "w": "o'tadi.",
+        "s": 38.73,
+        "e": 38.99
+      }
+    ]
+  },
+  {
+    "scene": "solishtirma_va_tipik_xatolar",
+    "id": "l7",
+    "text": "Uchala ma'lumotlar bazasida ham indekslar bi-tri daraxti bo'lib, har bir ustunga indeks qo'yish xatodir.",
+    "show": "Uchala ma'lumotlar bazasida ham indekslar bi-tri daraxti bo'lib, har bir ustunga indeks qo'yish xatodir.",
+    "say": "Uchala ma'lumotlar bazasida ham indekslar bi-tri daraxti bo'lib, har bir ustunga indeks qo'yish xatodir.",
+    "a0": 39.89,
+    "a1": 45.37,
+    "words": [
+      {
+        "w": "Uchala",
+        "s": 39.89,
+        "e": 40.17
+      },
+      {
+        "w": "ma'lumotlar",
+        "s": 40.21,
+        "e": 40.73
+      },
+      {
+        "w": "bazasida",
+        "s": 40.79,
+        "e": 41.25
+      },
+      {
+        "w": "ham",
+        "s": 41.31,
+        "e": 41.47
+      },
+      {
+        "w": "indekslar",
+        "s": 41.59,
+        "e": 42.07
+      },
+      {
+        "w": "bi-tri",
+        "s": 42.17,
+        "e": 42.53
+      },
+      {
+        "w": "daraxti",
+        "s": 42.59,
+        "e": 42.93
+      },
+      {
+        "w": "bo'lib,",
+        "s": 42.97,
+        "e": 43.17
+      },
+      {
+        "w": "har",
+        "s": 43.45,
+        "e": 43.61
+      },
+      {
+        "w": "bir",
+        "s": 43.67,
+        "e": 43.77
+      },
+      {
+        "w": "ustunga",
+        "s": 43.81,
+        "e": 44.17
+      },
+      {
+        "w": "indeks",
+        "s": 44.29,
+        "e": 44.59
+      },
+      {
+        "w": "qo'yish",
+        "s": 44.65,
+        "e": 44.89
+      },
+      {
+        "w": "xatodir.",
+        "s": 44.93,
+        "e": 45.37
+      }
+    ]
+  },
+  {
+    "scene": "solishtirma_va_tipik_xatolar",
+    "id": "l8",
+    "text": "Ishlatilmaydigan indekslarni o'chirish va rejani ekspleyn analayz bilan tekshirish eng to'g'ri amaliyotdir.",
+    "show": "Ishlatilmaydigan indekslarni o'chirish va rejani ekspleyn analayz bilan tekshirish eng to'g'ri amaliyotdir.",
+    "say": "Ishlatilmaydigan indekslarni o'chirish va rejani ekspleyn analayz bilan tekshirish eng to'g'ri amaliyotdir.",
+    "a0": 45.71,
+    "a1": 51.26,
+    "words": [
+      {
+        "w": "Ishlatilmaydigan",
+        "s": 45.71,
+        "e": 46.36
+      },
+      {
+        "w": "indekslarni",
+        "s": 46.44,
+        "e": 46.98
+      },
+      {
+        "w": "o'chirish",
+        "s": 47.06,
+        "e": 47.46
+      },
+      {
+        "w": "va",
+        "s": 47.56,
+        "e": 47.62
+      },
+      {
+        "w": "rejani",
+        "s": 47.7,
+        "e": 48.06
+      },
+      {
+        "w": "ekspleyn",
+        "s": 48.34,
+        "e": 48.8
+      },
+      {
+        "w": "analayz",
+        "s": 48.9,
+        "e": 49.3
+      },
+      {
+        "w": "bilan",
+        "s": 49.34,
+        "e": 49.5
+      },
+      {
+        "w": "tekshirish",
+        "s": 49.54,
+        "e": 49.94
+      },
+      {
+        "w": "eng",
+        "s": 50.24,
+        "e": 50.38
+      },
+      {
+        "w": "to'g'ri",
+        "s": 50.42,
+        "e": 50.68
+      },
+      {
+        "w": "amaliyotdir.",
+        "s": 50.74,
+        "e": 51.26
+      }
+    ]
+  }
+]
