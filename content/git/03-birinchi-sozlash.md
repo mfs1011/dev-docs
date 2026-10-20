@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" playsinline poster="/video/git/03-birinchi-sozlash.jpg" src="/video/git/03-birinchi-sozlash.mp4">
+    <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/git/03-birinchi-sozlash.chapters.vtt" default>
+    <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/git/03-birinchi-sozlash.uz.vtt">
+  </video>
+  <figcaption>03.1-video. Birinchi sozlash va yordam</figcaption>
+</figure>
+
 Git o'rnatilgandan keyin birinchi ish — uni **sozlash**: siz kimsiz, qaysi matn muharririda ishlaysiz, yangi repo'larda birinchi branch qanday nomlanadi. Bu ishlar bir kompyuterda **bir marta** qilinadi, Git yangilanganda ham saqlanib qoladi va istalgan payt o'zgartiriladi.
 
 Hamma sozlamalar bitta buyruq bilan o'qiladi va yoziladi: `git config`. Sozlama (konfiguratsiya o'zgaruvchisi) — `bo'lim.kalit = qiymat` ko'rinishidagi juftlik. Masalan, `user.name` — `user` bo'limidagi `name` kaliti.
