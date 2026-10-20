@@ -1,0 +1,1054 @@
+[
+  {
+    "id": "l1",
+    "scene": "intro",
+    "text": "Salom! Ushbu uchinchi bobda Gitni birinchi marta sozlash va yordam tizimidan foydalanishni o‘rganamiz.",
+    "show": "Salom! Ushbu uchinchi bobda Gitni birinchi marta sozlash va yordam tizimidan foydalanishni o‘rganamiz.",
+    "say": "Salom! Ushbu uchinchi bobda Gitni birinchi marta sozlash va yordam tizimidan foydalanishni o‘rganamiz.",
+    "a0": 0.24,
+    "a1": 5.68,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.24,
+        "e": 0.52
+      },
+      {
+        "w": "Ushbu",
+        "s": 1.08,
+        "e": 1.28
+      },
+      {
+        "w": "uchinchi",
+        "s": 1.34,
+        "e": 1.62
+      },
+      {
+        "w": "bobda",
+        "s": 1.66,
+        "e": 1.94
+      },
+      {
+        "w": "Gitni",
+        "s": 2.14,
+        "e": 2.4
+      },
+      {
+        "w": "birinchi",
+        "s": 2.44,
+        "e": 2.72
+      },
+      {
+        "w": "marta",
+        "s": 2.74,
+        "e": 2.96
+      },
+      {
+        "w": "sozlash",
+        "s": 3.02,
+        "e": 3.52
+      },
+      {
+        "w": "va",
+        "s": 3.62,
+        "e": 3.7
+      },
+      {
+        "w": "yordam",
+        "s": 3.7,
+        "e": 4.18
+      },
+      {
+        "w": "tizimidan",
+        "s": 4.22,
+        "e": 4.62
+      },
+      {
+        "w": "foydalanishni",
+        "s": 4.66,
+        "e": 5.24
+      },
+      {
+        "w": "o‘rganamiz.",
+        "s": 5.26,
+        "e": 5.68
+      }
+    ]
+  },
+  {
+    "id": "l2",
+    "scene": "intro",
+    "text": "Git o‘rnatilgach qilinadigan ilk qadam shaxsiy identifikatsiyani belgilashdir, chunki bu ma’lumot har bir kommitga muhrlanadi.",
+    "show": "Git o‘rnatilgach qilinadigan ilk qadam shaxsiy identifikatsiyani belgilashdir, chunki bu ma’lumot har bir kommitga muhrlanadi.",
+    "say": "Git o‘rnatilgach qilinadigan ilk qadam shaxsiy identifikatsiyani belgilashdir, chunki bu ma’lumot har bir kommitga muhrlanadi.",
+    "a0": 6.54,
+    "a1": 13.17,
+    "words": [
+      {
+        "w": "Git",
+        "s": 6.54,
+        "e": 6.7
+      },
+      {
+        "w": "o‘rnatilgach",
+        "s": 6.76,
+        "e": 7.32
+      },
+      {
+        "w": "qilinadigan",
+        "s": 7.36,
+        "e": 7.91
+      },
+      {
+        "w": "ilk",
+        "s": 8.07,
+        "e": 8.21
+      },
+      {
+        "w": "qadam",
+        "s": 8.33,
+        "e": 8.61
+      },
+      {
+        "w": "shaxsiy",
+        "s": 8.83,
+        "e": 9.17
+      },
+      {
+        "w": "identifikatsiyani",
+        "s": 9.25,
+        "e": 9.97
+      },
+      {
+        "w": "belgilashdir,",
+        "s": 9.99,
+        "e": 10.49
+      },
+      {
+        "w": "chunki",
+        "s": 10.95,
+        "e": 11.17
+      },
+      {
+        "w": "bu",
+        "s": 11.23,
+        "e": 11.29
+      },
+      {
+        "w": "ma’lumot",
+        "s": 11.37,
+        "e": 11.75
+      },
+      {
+        "w": "har",
+        "s": 11.83,
+        "e": 11.99
+      },
+      {
+        "w": "bir",
+        "s": 12.05,
+        "e": 12.15
+      },
+      {
+        "w": "kommitga",
+        "s": 12.21,
+        "e": 12.59
+      },
+      {
+        "w": "muhrlanadi.",
+        "s": 12.63,
+        "e": 13.17
+      }
+    ]
+  },
+  {
+    "id": "l3",
+    "scene": "darajalar_va_ustunlik",
+    "text": "Git sozlamalari beshta darajada saqlanadi: butun kompyuter uchun sistem, foydalanuvchi uchun global va bitta repozitoriy uchun lokal.",
+    "show": "Git sozlamalari beshta darajada saqlanadi: butun kompyuter uchun sistem, foydalanuvchi uchun global va bitta repozitoriy uchun lokal.",
+    "say": "Git sozlamalari beshta darajada saqlanadi: butun kompyuter uchun sistem, foydalanuvchi uchun global va bitta repozitoriy uchun lokal.",
+    "a0": 14.01,
+    "a1": 21.33,
+    "words": [
+      {
+        "w": "Git",
+        "s": 14.01,
+        "e": 14.15
+      },
+      {
+        "w": "sozlamalari",
+        "s": 14.19,
+        "e": 14.75
+      },
+      {
+        "w": "beshta",
+        "s": 14.83,
+        "e": 15.11
+      },
+      {
+        "w": "darajada",
+        "s": 15.17,
+        "e": 15.53
+      },
+      {
+        "w": "saqlanadi:",
+        "s": 15.57,
+        "e": 16.01
+      },
+      {
+        "w": "butun",
+        "s": 16.41,
+        "e": 16.61
+      },
+      {
+        "w": "kompyuter",
+        "s": 16.65,
+        "e": 17.03
+      },
+      {
+        "w": "uchun",
+        "s": 17.07,
+        "e": 17.25
+      },
+      {
+        "w": "sistem,",
+        "s": 17.33,
+        "e": 17.73
+      },
+      {
+        "w": "foydalanuvchi",
+        "s": 18.03,
+        "e": 18.61
+      },
+      {
+        "w": "uchun",
+        "s": 18.65,
+        "e": 18.85
+      },
+      {
+        "w": "global",
+        "s": 18.93,
+        "e": 19.37
+      },
+      {
+        "w": "va",
+        "s": 19.77,
+        "e": 19.83
+      },
+      {
+        "w": "bitta",
+        "s": 19.93,
+        "e": 20.15
+      },
+      {
+        "w": "repozitoriy",
+        "s": 20.19,
+        "e": 20.71
+      },
+      {
+        "w": "uchun",
+        "s": 20.75,
+        "e": 20.95
+      },
+      {
+        "w": "lokal.",
+        "s": 21.03,
+        "e": 21.33
+      }
+    ]
+  },
+  {
+    "id": "l4",
+    "scene": "darajalar_va_ustunlik",
+    "text": "Bunda tor doiradagi sozlama keng doiradagidan ustun turadi, ya’ni lokal repozitoriy konfigi global sozlamani bekor qila oladi.",
+    "show": "Bunda tor doiradagi sozlama keng doiradagidan ustun turadi, ya’ni lokal repozitoriy konfigi global sozlamani bekor qila oladi.",
+    "say": "Bunda tor doiradagi sozlama keng doiradagidan ustun turadi, ya’ni lokal repozitoriy konfigi global sozlamani bekor qila oladi.",
+    "a0": 21.95,
+    "a1": 29.3,
+    "words": [
+      {
+        "w": "Bunda",
+        "s": 21.95,
+        "e": 22.19
+      },
+      {
+        "w": "tor",
+        "s": 22.47,
+        "e": 22.66
+      },
+      {
+        "w": "doiradagi",
+        "s": 22.68,
+        "e": 23.18
+      },
+      {
+        "w": "sozlama",
+        "s": 23.22,
+        "e": 23.58
+      },
+      {
+        "w": "keng",
+        "s": 23.74,
+        "e": 23.92
+      },
+      {
+        "w": "doiradagidan",
+        "s": 23.94,
+        "e": 24.56
+      },
+      {
+        "w": "ustun",
+        "s": 24.66,
+        "e": 24.9
+      },
+      {
+        "w": "turadi,",
+        "s": 24.92,
+        "e": 25.2
+      },
+      {
+        "w": "ya’ni",
+        "s": 25.58,
+        "e": 25.8
+      },
+      {
+        "w": "lokal",
+        "s": 26.1,
+        "e": 26.36
+      },
+      {
+        "w": "repozitoriy",
+        "s": 26.4,
+        "e": 26.94
+      },
+      {
+        "w": "konfigi",
+        "s": 27.0,
+        "e": 27.44
+      },
+      {
+        "w": "global",
+        "s": 27.68,
+        "e": 27.98
+      },
+      {
+        "w": "sozlamani",
+        "s": 28.0,
+        "e": 28.5
+      },
+      {
+        "w": "bekor",
+        "s": 28.56,
+        "e": 28.84
+      },
+      {
+        "w": "qila",
+        "s": 28.88,
+        "e": 29.0
+      },
+      {
+        "w": "oladi.",
+        "s": 29.04,
+        "e": 29.3
+      }
+    ]
+  },
+  {
+    "id": "l5",
+    "scene": "identifikatsiya_va_sintaksis",
+    "text": "Yuzer neym va yuzer emeyl sozlamalari yordamida har bir kommit muallifi aniqlanadi va ularni kommitdan keyin osonlikcha o‘zgartirib bo‘lmaydi.",
+    "show": "Yuzer neym va yuzer emeyl sozlamalari yordamida har bir kommit muallifi aniqlanadi va ularni kommitdan keyin osonlikcha o‘zgartirib bo‘lmaydi.",
+    "say": "Yuzer neym va yuzer emeyl sozlamalari yordamida har bir kommit muallifi aniqlanadi va ularni kommitdan keyin osonlikcha o‘zgartirib bo‘lmaydi.",
+    "a0": 30.2,
+    "a1": 37.44,
+    "words": [
+      {
+        "w": "Yuzer",
+        "s": 30.2,
+        "e": 30.46
+      },
+      {
+        "w": "neym",
+        "s": 30.52,
+        "e": 30.72
+      },
+      {
+        "w": "va",
+        "s": 30.8,
+        "e": 30.86
+      },
+      {
+        "w": "yuzer",
+        "s": 31.02,
+        "e": 31.28
+      },
+      {
+        "w": "emeyl",
+        "s": 31.36,
+        "e": 31.64
+      },
+      {
+        "w": "sozlamalari",
+        "s": 31.68,
+        "e": 32.22
+      },
+      {
+        "w": "yordamida",
+        "s": 32.26,
+        "e": 32.7
+      },
+      {
+        "w": "har",
+        "s": 32.9,
+        "e": 33.1
+      },
+      {
+        "w": "bir",
+        "s": 33.14,
+        "e": 33.24
+      },
+      {
+        "w": "kommit",
+        "s": 33.28,
+        "e": 33.58
+      },
+      {
+        "w": "muallifi",
+        "s": 33.62,
+        "e": 33.94
+      },
+      {
+        "w": "aniqlanadi",
+        "s": 34.0,
+        "e": 34.48
+      },
+      {
+        "w": "va",
+        "s": 34.86,
+        "e": 34.92
+      },
+      {
+        "w": "ularni",
+        "s": 35.0,
+        "e": 35.26
+      },
+      {
+        "w": "kommitdan",
+        "s": 35.34,
+        "e": 35.82
+      },
+      {
+        "w": "keyin",
+        "s": 35.86,
+        "e": 36.1
+      },
+      {
+        "w": "osonlikcha",
+        "s": 36.16,
+        "e": 36.6
+      },
+      {
+        "w": "o‘zgartirib",
+        "s": 36.64,
+        "e": 37.04
+      },
+      {
+        "w": "bo‘lmaydi.",
+        "s": 37.08,
+        "e": 37.44
+      }
+    ]
+  },
+  {
+    "id": "l6",
+    "scene": "identifikatsiya_va_sintaksis",
+    "text": "Gitning yangi versiyalarida konfig buyrug‘i get, set va unset kabi aniq subkomandalarga bo‘lingan.",
+    "show": "Gitning yangi versiyalarida konfig buyrug‘i get, set va unset kabi aniq subkomandalarga bo‘lingan.",
+    "say": "Gitning yangi versiyalarida konfig buyrug‘i get, set va unset kabi aniq subkomandalarga bo‘lingan.",
+    "a0": 38.33,
+    "a1": 44.17,
+    "words": [
+      {
+        "w": "Gitning",
+        "s": 38.33,
+        "e": 38.61
+      },
+      {
+        "w": "yangi",
+        "s": 38.65,
+        "e": 38.87
+      },
+      {
+        "w": "versiyalarida",
+        "s": 38.89,
+        "e": 39.49
+      },
+      {
+        "w": "konfig",
+        "s": 39.67,
+        "e": 40.03
+      },
+      {
+        "w": "buyrug‘i",
+        "s": 40.07,
+        "e": 40.43
+      },
+      {
+        "w": "get,",
+        "s": 40.81,
+        "e": 41.09
+      },
+      {
+        "w": "set",
+        "s": 41.33,
+        "e": 41.59
+      },
+      {
+        "w": "va",
+        "s": 41.67,
+        "e": 41.75
+      },
+      {
+        "w": "unset",
+        "s": 41.91,
+        "e": 42.27
+      },
+      {
+        "w": "kabi",
+        "s": 42.31,
+        "e": 42.53
+      },
+      {
+        "w": "aniq",
+        "s": 42.73,
+        "e": 42.93
+      },
+      {
+        "w": "subkomandalarga",
+        "s": 43.01,
+        "e": 43.77
+      },
+      {
+        "w": "bo‘lingan.",
+        "s": 43.81,
+        "e": 44.17
+      }
+    ]
+  },
+  {
+    "id": "l7",
+    "scene": "muhim_sozlamalar",
+    "text": "Standart matn muharriri sifatida kor editor orqali VS Kod yoki nanoni, birinchi brench nomi sifatida esa meynni belgilab qo‘yish qulay.",
+    "show": "Standart matn muharriri sifatida kor editor orqali VS Kod yoki nanoni, birinchi brench nomi sifatida esa meynni belgilab qo‘yish qulay.",
+    "say": "Standart matn muharriri sifatida kor editor orqali Vi-es kod yoki nanoni, birinchi brench nomi sifatida esa meynni belgilab qo‘yish qulay.",
+    "a0": 44.91,
+    "a1": 52.62,
+    "words": [
+      {
+        "w": "Standart",
+        "s": 44.91,
+        "e": 45.29
+      },
+      {
+        "w": "matn",
+        "s": 45.33,
+        "e": 45.55
+      },
+      {
+        "w": "muharriri",
+        "s": 45.59,
+        "e": 45.99
+      },
+      {
+        "w": "sifatida",
+        "s": 46.03,
+        "e": 46.43
+      },
+      {
+        "w": "kor",
+        "s": 46.79,
+        "e": 46.99
+      },
+      {
+        "w": "editor",
+        "s": 47.07,
+        "e": 47.41
+      },
+      {
+        "w": "orqali",
+        "s": 47.47,
+        "e": 47.77
+      },
+      {
+        "w": "Vi-es",
+        "s": 47.89,
+        "e": 48.11
+      },
+      {
+        "w": "kod",
+        "s": 48.17,
+        "e": 48.37
+      },
+      {
+        "w": "yoki",
+        "s": 48.41,
+        "e": 48.63
+      },
+      {
+        "w": "nanoni,",
+        "s": 48.75,
+        "e": 49.19
+      },
+      {
+        "w": "birinchi",
+        "s": 49.77,
+        "e": 50.05
+      },
+      {
+        "w": "brench",
+        "s": 50.11,
+        "e": 50.39
+      },
+      {
+        "w": "nomi",
+        "s": 50.45,
+        "e": 50.63
+      },
+      {
+        "w": "sifatida",
+        "s": 50.67,
+        "e": 51.03
+      },
+      {
+        "w": "esa",
+        "s": 51.07,
+        "e": 51.23
+      },
+      {
+        "w": "meynni",
+        "s": 51.47,
+        "e": 51.79
+      },
+      {
+        "w": "belgilab",
+        "s": 51.81,
+        "e": 52.15
+      },
+      {
+        "w": "qo‘yish",
+        "s": 52.17,
+        "e": 52.37
+      },
+      {
+        "w": "qulay.",
+        "s": 52.41,
+        "e": 52.62
+      }
+    ]
+  },
+  {
+    "id": "l8",
+    "scene": "muhim_sozlamalar",
+    "text": "Shuningdek, terminalda natijalar tushunarli bo‘lishi uchun ranglar tizimini ham moslashtirish mumkin.",
+    "show": "Shuningdek, terminalda natijalar tushunarli bo‘lishi uchun ranglar tizimini ham moslashtirish mumkin.",
+    "say": "Shuningdek, terminalda natijalar tushunarli bo‘lishi uchun ranglar tizimini ham moslashtirish mumkin.",
+    "a0": 53.28,
+    "a1": 57.76,
+    "words": [
+      {
+        "w": "Shuningdek,",
+        "s": 53.28,
+        "e": 53.62
+      },
+      {
+        "w": "terminalda",
+        "s": 53.88,
+        "e": 54.34
+      },
+      {
+        "w": "natijalar",
+        "s": 54.4,
+        "e": 54.88
+      },
+      {
+        "w": "tushunarli",
+        "s": 54.9,
+        "e": 55.32
+      },
+      {
+        "w": "bo‘lishi",
+        "s": 55.38,
+        "e": 55.64
+      },
+      {
+        "w": "uchun",
+        "s": 55.68,
+        "e": 55.9
+      },
+      {
+        "w": "ranglar",
+        "s": 56.04,
+        "e": 56.38
+      },
+      {
+        "w": "tizimini",
+        "s": 56.42,
+        "e": 56.74
+      },
+      {
+        "w": "ham",
+        "s": 56.78,
+        "e": 56.92
+      },
+      {
+        "w": "moslashtirish",
+        "s": 56.96,
+        "e": 57.5
+      },
+      {
+        "w": "mumkin.",
+        "s": 57.52,
+        "e": 57.76
+      }
+    ]
+  },
+  {
+    "id": "l9",
+    "scene": "yordam_tizimi",
+    "text": "Git internetga ulanmasdan ham to‘liq rasmiy ma’lumotnomaga ega bo‘lib, git help yoki chiziqcha ech opsiyasi orqali tezkor yordam beradi.",
+    "show": "Git internetga ulanmasdan ham to‘liq rasmiy ma’lumotnomaga ega bo‘lib, git help yoki chiziqcha ech opsiyasi orqali tezkor yordam beradi.",
+    "say": "Git internetga ulanmasdan ham to‘liq rasmiy ma’lumotnomaga ega bo‘lib, git help yoki chiziqcha eych opsiyasi orqali tezkor yordam beradi.",
+    "a0": 58.72,
+    "a1": 66.02,
+    "words": [
+      {
+        "w": "Git",
+        "s": 58.72,
+        "e": 58.9
+      },
+      {
+        "w": "internetga",
+        "s": 58.98,
+        "e": 59.48
+      },
+      {
+        "w": "ulanmasdan",
+        "s": 59.52,
+        "e": 59.98
+      },
+      {
+        "w": "ham",
+        "s": 60.06,
+        "e": 60.18
+      },
+      {
+        "w": "to‘liq",
+        "s": 60.3,
+        "e": 60.6
+      },
+      {
+        "w": "rasmiy",
+        "s": 60.7,
+        "e": 61.0
+      },
+      {
+        "w": "ma’lumotnomaga",
+        "s": 61.06,
+        "e": 61.74
+      },
+      {
+        "w": "ega",
+        "s": 61.8,
+        "e": 61.94
+      },
+      {
+        "w": "bo‘lib,",
+        "s": 61.98,
+        "e": 62.18
+      },
+      {
+        "w": "git",
+        "s": 62.52,
+        "e": 62.68
+      },
+      {
+        "w": "help",
+        "s": 62.74,
+        "e": 63.02
+      },
+      {
+        "w": "yoki",
+        "s": 63.08,
+        "e": 63.3
+      },
+      {
+        "w": "chiziqcha",
+        "s": 63.42,
+        "e": 63.8
+      },
+      {
+        "w": "eych",
+        "s": 63.98,
+        "e": 64.14
+      },
+      {
+        "w": "opsiyasi",
+        "s": 64.24,
+        "e": 64.56
+      },
+      {
+        "w": "orqali",
+        "s": 64.62,
+        "e": 64.9
+      },
+      {
+        "w": "tezkor",
+        "s": 65.02,
+        "e": 65.4
+      },
+      {
+        "w": "yordam",
+        "s": 65.44,
+        "e": 65.72
+      },
+      {
+        "w": "beradi.",
+        "s": 65.76,
+        "e": 66.02
+      }
+    ]
+  },
+  {
+    "id": "l10",
+    "scene": "yordam_tizimi",
+    "text": "Qo‘shimcha ravishda help a barcha buyruqlar ro‘yxatini, help g esa amaliy qo‘llanmalar to‘plamini ko‘rsatadi.",
+    "show": "Qo‘shimcha ravishda help a barcha buyruqlar ro‘yxatini, help g esa amaliy qo‘llanmalar to‘plamini ko‘rsatadi.",
+    "say": "Qo‘shimcha ravishda help ey barcha buyruqlar ro‘yxatini, help ji esa amaliy qo‘llanmalar to‘plamini ko‘rsatadi.",
+    "a0": 66.73,
+    "a1": 72.65,
+    "words": [
+      {
+        "w": "Qo‘shimcha",
+        "s": 66.73,
+        "e": 67.05
+      },
+      {
+        "w": "ravishda",
+        "s": 67.09,
+        "e": 67.41
+      },
+      {
+        "w": "help",
+        "s": 67.55,
+        "e": 67.83
+      },
+      {
+        "w": "ey",
+        "s": 67.95,
+        "e": 68.07
+      },
+      {
+        "w": "barcha",
+        "s": 68.29,
+        "e": 68.59
+      },
+      {
+        "w": "buyruqlar",
+        "s": 68.63,
+        "e": 69.01
+      },
+      {
+        "w": "ro‘yxatini,",
+        "s": 69.05,
+        "e": 69.47
+      },
+      {
+        "w": "help",
+        "s": 69.93,
+        "e": 70.17
+      },
+      {
+        "w": "ji",
+        "s": 70.31,
+        "e": 70.43
+      },
+      {
+        "w": "esa",
+        "s": 70.57,
+        "e": 70.75
+      },
+      {
+        "w": "amaliy",
+        "s": 70.93,
+        "e": 71.23
+      },
+      {
+        "w": "qo‘llanmalar",
+        "s": 71.29,
+        "e": 71.81
+      },
+      {
+        "w": "to‘plamini",
+        "s": 71.83,
+        "e": 72.21
+      },
+      {
+        "w": "ko‘rsatadi.",
+        "s": 72.23,
+        "e": 72.65
+      }
+    ]
+  },
+  {
+    "id": "l11",
+    "scene": "xulosa",
+    "text": "Xulosa qilsak, to‘g‘ri sozlangan muhit va yordam tizimini bilish kundalik ishingizni xatosiz va tezkor qiladi.",
+    "show": "Xulosa qilsak, to‘g‘ri sozlangan muhit va yordam tizimini bilish kundalik ishingizni xatosiz va tezkor qiladi.",
+    "say": "Xulosa qilsak, to‘g‘ri sozlangan muhit va yordam tizimini bilish kundalik ishingizni xatosiz va tezkor qiladi.",
+    "a0": 73.41,
+    "a1": 79.24,
+    "words": [
+      {
+        "w": "Xulosa",
+        "s": 73.41,
+        "e": 73.69
+      },
+      {
+        "w": "qilsak,",
+        "s": 73.73,
+        "e": 74.05
+      },
+      {
+        "w": "to‘g‘ri",
+        "s": 74.23,
+        "e": 74.49
+      },
+      {
+        "w": "sozlangan",
+        "s": 74.51,
+        "e": 74.99
+      },
+      {
+        "w": "muhit",
+        "s": 75.05,
+        "e": 75.39
+      },
+      {
+        "w": "va",
+        "s": 75.47,
+        "e": 75.55
+      },
+      {
+        "w": "yordam",
+        "s": 75.67,
+        "e": 76.03
+      },
+      {
+        "w": "tizimini",
+        "s": 76.07,
+        "e": 76.41
+      },
+      {
+        "w": "bilish",
+        "s": 76.45,
+        "e": 76.69
+      },
+      {
+        "w": "kundalik",
+        "s": 76.97,
+        "e": 77.35
+      },
+      {
+        "w": "ishingizni",
+        "s": 77.37,
+        "e": 77.85
+      },
+      {
+        "w": "xatosiz",
+        "s": 77.93,
+        "e": 78.43
+      },
+      {
+        "w": "va",
+        "s": 78.47,
+        "e": 78.53
+      },
+      {
+        "w": "tezkor",
+        "s": 78.61,
+        "e": 78.96
+      },
+      {
+        "w": "qiladi.",
+        "s": 78.98,
+        "e": 79.24
+      }
+    ]
+  },
+  {
+    "id": "l12",
+    "scene": "xulosa",
+    "text": "Keyingi bobda ilk repozitoriy yaratish va klonlashni boshlaymiz. E’tiboringiz uchun rahmat!",
+    "show": "Keyingi bobda ilk repozitoriy yaratish va klonlashni boshlaymiz. E’tiboringiz uchun rahmat!",
+    "say": "Keyingi bobda ilk repozitoriy yaratish va klonlashni boshlaymiz. E’tiboringiz uchun rahmat!",
+    "a0": 79.92,
+    "a1": 84.68,
+    "words": [
+      {
+        "w": "Keyingi",
+        "s": 79.92,
+        "e": 80.18
+      },
+      {
+        "w": "bobda",
+        "s": 80.22,
+        "e": 80.48
+      },
+      {
+        "w": "ilk",
+        "s": 80.74,
+        "e": 80.9
+      },
+      {
+        "w": "repozitoriy",
+        "s": 80.98,
+        "e": 81.5
+      },
+      {
+        "w": "yaratish",
+        "s": 81.54,
+        "e": 81.94
+      },
+      {
+        "w": "va",
+        "s": 81.98,
+        "e": 82.06
+      },
+      {
+        "w": "klonlashni",
+        "s": 82.14,
+        "e": 82.66
+      },
+      {
+        "w": "boshlaymiz.",
+        "s": 82.68,
+        "e": 83.1
+      },
+      {
+        "w": "E’tiboringiz",
+        "s": 83.68,
+        "e": 84.16
+      },
+      {
+        "w": "uchun",
+        "s": 84.18,
+        "e": 84.34
+      },
+      {
+        "w": "rahmat!",
+        "s": 84.4,
+        "e": 84.68
+      }
+    ]
+  }
+]

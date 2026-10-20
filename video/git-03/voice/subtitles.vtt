@@ -1,0 +1,61 @@
+WEBVTT
+
+1
+00:01.420 --> 00:07.310
+Salom! Ushbu uchinchi bobda Gitni birinchi marta
+sozlash va yordam tizimidan foydalanishni o‘rganamiz.
+
+2
+00:07.720 --> 00:14.800
+Git o‘rnatilgach qilinadigan ilk qadam shaxsiy identifikatsiyani
+belgilashdir, chunki bu ma’lumot har bir kommitga muhrlanadi.
+
+3
+00:17.790 --> 00:25.560
+Git sozlamalari beshta darajada saqlanadi: butun kompyuter uchun
+sistem, foydalanuvchi uchun global va bitta repozitoriy uchun lokal.
+
+4
+00:25.730 --> 00:33.530
+Bunda tor doiradagi sozlama keng doiradagidan ustun turadi, ya’ni
+lokal repozitoriy konfigi global sozlamani bekor qila oladi.
+
+5
+00:36.580 --> 00:44.270
+Yuzer neym va yuzer emeyl sozlamalari yordamida har bir kommit muallifi
+aniqlanadi va ularni kommitdan keyin osonlikcha o‘zgartirib bo‘lmaydi.
+
+6
+00:44.710 --> 00:51.000
+Gitning yangi versiyalarida konfig buyrug‘i get,
+set va unset kabi aniq subkomandalarga bo‘lingan.
+
+7
+00:53.890 --> 01:02.050
+Standart matn muharriri sifatida kor editor orqali VS Kod yoki nanoni,
+birinchi brench nomi sifatida esa meynni belgilab qo‘yish qulay.
+
+8
+01:02.260 --> 01:07.190
+Shuningdek, terminalda natijalar tushunarli bo‘lishi
+uchun ranglar tizimini ham moslashtirish mumkin.
+
+9
+01:10.300 --> 01:18.050
+Git internetga ulanmasdan ham to‘liq rasmiy ma’lumotnomaga ega bo‘lib,
+git help yoki chiziqcha ech opsiyasi orqali tezkor yordam beradi.
+
+10
+01:18.310 --> 01:24.680
+Qo‘shimcha ravishda help a barcha buyruqlar ro‘yxatini,
+help g esa amaliy qo‘llanmalar to‘plamini ko‘rsatadi.
+
+11
+01:27.590 --> 01:33.870
+Xulosa qilsak, to‘g‘ri sozlangan muhit va yordam tizimini
+bilish kundalik ishingizni xatosiz va tezkor qiladi.
+
+12
+01:34.100 --> 01:39.310
+Keyingi bobda ilk repozitoriy yaratish va
+klonlashni boshlaymiz. E’tiboringiz uchun rahmat!
