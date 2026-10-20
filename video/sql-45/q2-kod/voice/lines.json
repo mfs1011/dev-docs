@@ -1,0 +1,680 @@
+[
+  {
+    "scene": "sodda_reja_va_daraxt",
+    "id": "l1",
+    "text": "Ikki yuz ming qatorli buyurtmalar jadvalida filtrlarsiz so'rov oddiy sek skan orqali to'liq o'qilishini ko'ramiz.",
+    "show": "Ikki yuz ming qatorli buyurtmalar jadvalida filtrlarsiz so'rov oddiy sek skan orqali to'liq o'qilishini ko'ramiz.",
+    "say": "Ikki yuz ming qatorli buyurtmalar jadvalida filtrlarsiz so'rov oddiy sek skan orqali to'liq o'qilishini ko'ramiz.",
+    "a0": 0.26,
+    "a1": 7.06,
+    "words": [
+      {
+        "w": "Ikki",
+        "s": 0.26,
+        "e": 0.5
+      },
+      {
+        "w": "yuz",
+        "s": 0.54,
+        "e": 0.68
+      },
+      {
+        "w": "ming",
+        "s": 0.72,
+        "e": 0.88
+      },
+      {
+        "w": "qatorli",
+        "s": 0.9,
+        "e": 1.32
+      },
+      {
+        "w": "buyurtmalar",
+        "s": 1.38,
+        "e": 1.86
+      },
+      {
+        "w": "jadvalida",
+        "s": 1.9,
+        "e": 2.36
+      },
+      {
+        "w": "filtrlarsiz",
+        "s": 2.72,
+        "e": 3.4
+      },
+      {
+        "w": "so'rov",
+        "s": 3.44,
+        "e": 3.72
+      },
+      {
+        "w": "oddiy",
+        "s": 4.0,
+        "e": 4.36
+      },
+      {
+        "w": "sek",
+        "s": 4.74,
+        "e": 4.92
+      },
+      {
+        "w": "skan",
+        "s": 5.0,
+        "e": 5.22
+      },
+      {
+        "w": "orqali",
+        "s": 5.28,
+        "e": 5.6
+      },
+      {
+        "w": "to'liq",
+        "s": 5.98,
+        "e": 6.28
+      },
+      {
+        "w": "o'qilishini",
+        "s": 6.34,
+        "e": 6.72
+      },
+      {
+        "w": "ko'ramiz.",
+        "s": 6.74,
+        "e": 7.06
+      }
+    ]
+  },
+  {
+    "scene": "sodda_reja_va_daraxt",
+    "id": "l2",
+    "text": "Tartiblash va limit qo'shilganda esa reja pastdan parallel skanerlash, saralash va limit bosqichlari bo'ylab yuqoriga ko'tariladi.",
+    "show": "Tartiblash va limit qo'shilganda esa reja pastdan parallel skanerlash, saralash va limit bosqichlari bo'ylab yuqoriga ko'tariladi.",
+    "say": "Tartiblash va limit qo'shilganda esa reja pastdan parallel skanerlash, saralash va limit bosqichlari bo'ylab yuqoriga ko'tariladi.",
+    "a0": 7.97,
+    "a1": 15.47,
+    "words": [
+      {
+        "w": "Tartiblash",
+        "s": 7.97,
+        "e": 8.53
+      },
+      {
+        "w": "va",
+        "s": 8.61,
+        "e": 8.67
+      },
+      {
+        "w": "limit",
+        "s": 8.77,
+        "e": 9.01
+      },
+      {
+        "w": "qo'shilganda",
+        "s": 9.05,
+        "e": 9.57
+      },
+      {
+        "w": "esa",
+        "s": 9.63,
+        "e": 9.79
+      },
+      {
+        "w": "reja",
+        "s": 10.17,
+        "e": 10.45
+      },
+      {
+        "w": "pastdan",
+        "s": 10.67,
+        "e": 11.09
+      },
+      {
+        "w": "parallel",
+        "s": 11.19,
+        "e": 11.57
+      },
+      {
+        "w": "skanerlash,",
+        "s": 11.63,
+        "e": 12.23
+      },
+      {
+        "w": "saralash",
+        "s": 12.61,
+        "e": 13.01
+      },
+      {
+        "w": "va",
+        "s": 13.07,
+        "e": 13.13
+      },
+      {
+        "w": "limit",
+        "s": 13.27,
+        "e": 13.51
+      },
+      {
+        "w": "bosqichlari",
+        "s": 13.55,
+        "e": 14.03
+      },
+      {
+        "w": "bo'ylab",
+        "s": 14.05,
+        "e": 14.33
+      },
+      {
+        "w": "yuqoriga",
+        "s": 14.59,
+        "e": 14.97
+      },
+      {
+        "w": "ko'tariladi.",
+        "s": 14.99,
+        "e": 15.47
+      }
+    ]
+  },
+  {
+    "scene": "nested_loop_va_analyze",
+    "id": "l3",
+    "text": "Besh mijoz buyurtmalarini ekspleyn analayz bilan birlashtirganimizda, baza nested lup mexanizmini tanladi.",
+    "show": "Besh mijoz buyurtmalarini ekspleyn analayz bilan birlashtirganimizda, baza nested lup mexanizmini tanladi.",
+    "say": "Besh mijoz buyurtmalarini ekspleyn analayz bilan birlashtirganimizda, baza nested lup mexanizmini tanladi.",
+    "a0": 16.45,
+    "a1": 22.49,
+    "words": [
+      {
+        "w": "Besh",
+        "s": 16.45,
+        "e": 16.69
+      },
+      {
+        "w": "mijoz",
+        "s": 16.75,
+        "e": 17.01
+      },
+      {
+        "w": "buyurtmalarini",
+        "s": 17.05,
+        "e": 17.63
+      },
+      {
+        "w": "ekspleyn",
+        "s": 17.99,
+        "e": 18.39
+      },
+      {
+        "w": "analayz",
+        "s": 18.53,
+        "e": 18.89
+      },
+      {
+        "w": "bilan",
+        "s": 18.93,
+        "e": 19.11
+      },
+      {
+        "w": "birlashtirganimizda,",
+        "s": 19.13,
+        "e": 19.91
+      },
+      {
+        "w": "baza",
+        "s": 20.33,
+        "e": 20.65
+      },
+      {
+        "w": "nested",
+        "s": 20.93,
+        "e": 21.33
+      },
+      {
+        "w": "lup",
+        "s": 21.43,
+        "e": 21.59
+      },
+      {
+        "w": "mexanizmini",
+        "s": 21.63,
+        "e": 22.13
+      },
+      {
+        "w": "tanladi.",
+        "s": 22.17,
+        "e": 22.49
+      }
+    ]
+  },
+  {
+    "scene": "nested_loop_va_analyze",
+    "id": "l4",
+    "text": "Tashqi mijozlar jadvali bir marta, ichki buyurtmalar esa indeks orqali besh marta takrorlanib, aniq qatorlar topildi.",
+    "show": "Tashqi mijozlar jadvali bir marta, ichki buyurtmalar esa indeks orqali besh marta takrorlanib, aniq qatorlar topildi.",
+    "say": "Tashqi mijozlar jadvali bir marta, ichki buyurtmalar esa indeks orqali besh marta takrorlanib, aniq qatorlar topildi.",
+    "a0": 23.04,
+    "a1": 29.72,
+    "words": [
+      {
+        "w": "Tashqi",
+        "s": 23.04,
+        "e": 23.32
+      },
+      {
+        "w": "mijozlar",
+        "s": 23.36,
+        "e": 23.74
+      },
+      {
+        "w": "jadvali",
+        "s": 23.78,
+        "e": 24.12
+      },
+      {
+        "w": "bir",
+        "s": 24.2,
+        "e": 24.32
+      },
+      {
+        "w": "marta,",
+        "s": 24.38,
+        "e": 24.64
+      },
+      {
+        "w": "ichki",
+        "s": 25.06,
+        "e": 25.28
+      },
+      {
+        "w": "buyurtmalar",
+        "s": 25.34,
+        "e": 25.78
+      },
+      {
+        "w": "esa",
+        "s": 25.82,
+        "e": 25.98
+      },
+      {
+        "w": "indeks",
+        "s": 26.36,
+        "e": 26.7
+      },
+      {
+        "w": "orqali",
+        "s": 26.74,
+        "e": 27.04
+      },
+      {
+        "w": "besh",
+        "s": 27.32,
+        "e": 27.56
+      },
+      {
+        "w": "marta",
+        "s": 27.62,
+        "e": 27.84
+      },
+      {
+        "w": "takrorlanib,",
+        "s": 27.88,
+        "e": 28.38
+      },
+      {
+        "w": "aniq",
+        "s": 28.7,
+        "e": 28.9
+      },
+      {
+        "w": "qatorlar",
+        "s": 28.96,
+        "e": 29.36
+      },
+      {
+        "w": "topildi.",
+        "s": 29.4,
+        "e": 29.72
+      }
+    ]
+  },
+  {
+    "scene": "katta_birlashtirish_hash_join",
+    "id": "l5",
+    "text": "Ammo butun jadval bo'yicha hisob-kitobda rejalashtiruvchi nested lupdan voz kechib, hesh joyn usulini ishga tushirdi.",
+    "show": "Ammo butun jadval bo'yicha hisob-kitobda rejalashtiruvchi nested lupdan voz kechib, hesh joyn usulini ishga tushirdi.",
+    "say": "Ammo butun jadval bo'yicha hisob-kitobda rejalashtiruvchi nested lupdan voz kechib, hesh joyn usulini ishga tushirdi.",
+    "a0": 30.52,
+    "a1": 37.43,
+    "words": [
+      {
+        "w": "Ammo",
+        "s": 30.52,
+        "e": 30.74
+      },
+      {
+        "w": "butun",
+        "s": 31.1,
+        "e": 31.36
+      },
+      {
+        "w": "jadval",
+        "s": 31.44,
+        "e": 31.76
+      },
+      {
+        "w": "bo'yicha",
+        "s": 31.8,
+        "e": 32.06
+      },
+      {
+        "w": "hisob-kitobda",
+        "s": 32.12,
+        "e": 32.76
+      },
+      {
+        "w": "rejalashtiruvchi",
+        "s": 33.14,
+        "e": 33.84
+      },
+      {
+        "w": "nested",
+        "s": 34.22,
+        "e": 34.6
+      },
+      {
+        "w": "lupdan",
+        "s": 34.68,
+        "e": 35.0
+      },
+      {
+        "w": "voz",
+        "s": 35.1,
+        "e": 35.3
+      },
+      {
+        "w": "kechib,",
+        "s": 35.36,
+        "e": 35.64
+      },
+      {
+        "w": "hesh",
+        "s": 35.92,
+        "e": 36.18
+      },
+      {
+        "w": "joyn",
+        "s": 36.28,
+        "e": 36.52
+      },
+      {
+        "w": "usulini",
+        "s": 36.58,
+        "e": 36.9
+      },
+      {
+        "w": "ishga",
+        "s": 36.96,
+        "e": 37.11
+      },
+      {
+        "w": "tushirdi.",
+        "s": 37.15,
+        "e": 37.43
+      }
+    ]
+  },
+  {
+    "scene": "katta_birlashtirish_hash_join",
+    "id": "l6",
+    "text": "Mijozlar xotiradagi hesh jadvalga joylandi va ikki yuz ming buyurtma bir martada chaqqon tutashtirildi.",
+    "show": "Mijozlar xotiradagi hesh jadvalga joylandi va ikki yuz ming buyurtma bir martada chaqqon tutashtirildi.",
+    "say": "Mijozlar xotiradagi hesh jadvalga joylandi va ikki yuz ming buyurtma bir martada chaqqon tutashtirildi.",
+    "a0": 38.17,
+    "a1": 44.09,
+    "words": [
+      {
+        "w": "Mijozlar",
+        "s": 38.17,
+        "e": 38.63
+      },
+      {
+        "w": "xotiradagi",
+        "s": 38.89,
+        "e": 39.45
+      },
+      {
+        "w": "hesh",
+        "s": 39.61,
+        "e": 39.81
+      },
+      {
+        "w": "jadvalga",
+        "s": 39.85,
+        "e": 40.23
+      },
+      {
+        "w": "joylandi",
+        "s": 40.27,
+        "e": 40.69
+      },
+      {
+        "w": "va",
+        "s": 40.97,
+        "e": 41.05
+      },
+      {
+        "w": "ikki",
+        "s": 41.37,
+        "e": 41.63
+      },
+      {
+        "w": "yuz",
+        "s": 41.69,
+        "e": 41.81
+      },
+      {
+        "w": "ming",
+        "s": 41.87,
+        "e": 42.01
+      },
+      {
+        "w": "buyurtma",
+        "s": 42.03,
+        "e": 42.35
+      },
+      {
+        "w": "bir",
+        "s": 42.55,
+        "e": 42.69
+      },
+      {
+        "w": "martada",
+        "s": 42.75,
+        "e": 43.09
+      },
+      {
+        "w": "chaqqon",
+        "s": 43.13,
+        "e": 43.53
+      },
+      {
+        "w": "tutashtirildi.",
+        "s": 43.57,
+        "e": 44.09
+      }
+    ]
+  },
+  {
+    "scene": "topn_sort_va_dml",
+    "id": "l7",
+    "text": "Limit bilan saralashda top-en hip-sort usuli qo'llanib, xotirada faqat kerakli beshta qator ushlab turildi.",
+    "show": "Limit bilan saralashda top-en hip-sort usuli qo'llanib, xotirada faqat kerakli beshta qator ushlab turildi.",
+    "say": "Limit bilan saralashda top-en hip-sort usuli qo'llanib, xotirada faqat kerakli beshta qator ushlab turildi.",
+    "a0": 44.95,
+    "a1": 51.09,
+    "words": [
+      {
+        "w": "Limit",
+        "s": 44.95,
+        "e": 45.19
+      },
+      {
+        "w": "bilan",
+        "s": 45.21,
+        "e": 45.39
+      },
+      {
+        "w": "saralashda",
+        "s": 45.43,
+        "e": 45.89
+      },
+      {
+        "w": "top-en",
+        "s": 46.27,
+        "e": 46.79
+      },
+      {
+        "w": "hip-sort",
+        "s": 47.05,
+        "e": 47.51
+      },
+      {
+        "w": "usuli",
+        "s": 47.57,
+        "e": 47.81
+      },
+      {
+        "w": "qo'llanib,",
+        "s": 47.83,
+        "e": 48.21
+      },
+      {
+        "w": "xotirada",
+        "s": 48.49,
+        "e": 48.89
+      },
+      {
+        "w": "faqat",
+        "s": 48.97,
+        "e": 49.27
+      },
+      {
+        "w": "kerakli",
+        "s": 49.35,
+        "e": 49.79
+      },
+      {
+        "w": "beshta",
+        "s": 49.93,
+        "e": 50.25
+      },
+      {
+        "w": "qator",
+        "s": 50.29,
+        "e": 50.53
+      },
+      {
+        "w": "ushlab",
+        "s": 50.55,
+        "e": 50.79
+      },
+      {
+        "w": "turildi.",
+        "s": 50.81,
+        "e": 51.09
+      }
+    ]
+  },
+  {
+    "scene": "topn_sort_va_dml",
+    "id": "l8",
+    "text": "O'chirish so'rovini esa begin va rolbek ichida xavfsiz tekshirib, besh yuz qirq sakkiz qator o'chirilishini ko'rdik.",
+    "show": "O'chirish so'rovini esa begin va rolbek ichida xavfsiz tekshirib, besh yuz qirq sakkiz qator o'chirilishini ko'rdik.",
+    "say": "O'chirish so'rovini esa begin va rolbek ichida xavfsiz tekshirib, besh yuz qirq sakkiz qator o'chirilishini ko'rdik.",
+    "a0": 51.96,
+    "a1": 57.92,
+    "words": [
+      {
+        "w": "O'chirish",
+        "s": 51.96,
+        "e": 52.24
+      },
+      {
+        "w": "so'rovini",
+        "s": 52.26,
+        "e": 52.62
+      },
+      {
+        "w": "esa",
+        "s": 52.66,
+        "e": 52.82
+      },
+      {
+        "w": "begin",
+        "s": 53.24,
+        "e": 53.6
+      },
+      {
+        "w": "va",
+        "s": 53.68,
+        "e": 53.74
+      },
+      {
+        "w": "rolbek",
+        "s": 53.88,
+        "e": 54.22
+      },
+      {
+        "w": "ichida",
+        "s": 54.24,
+        "e": 54.46
+      },
+      {
+        "w": "xavfsiz",
+        "s": 54.56,
+        "e": 54.98
+      },
+      {
+        "w": "tekshirib,",
+        "s": 55.02,
+        "e": 55.4
+      },
+      {
+        "w": "besh",
+        "s": 55.76,
+        "e": 55.98
+      },
+      {
+        "w": "yuz",
+        "s": 56.0,
+        "e": 56.12
+      },
+      {
+        "w": "qirq",
+        "s": 56.18,
+        "e": 56.34
+      },
+      {
+        "w": "sakkiz",
+        "s": 56.4,
+        "e": 56.7
+      },
+      {
+        "w": "qator",
+        "s": 56.76,
+        "e": 57.0
+      },
+      {
+        "w": "o'chirilishini",
+        "s": 57.08,
+        "e": 57.58
+      },
+      {
+        "w": "ko'rdik.",
+        "s": 57.62,
+        "e": 57.92
+      }
+    ]
+  }
+]

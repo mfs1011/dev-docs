@@ -1,0 +1,665 @@
+[
+  {
+    "scene": "reja_va_daraxt",
+    "id": "l1",
+    "text": "SQL deklarativ til bo'lib, biz nima kerakligini yozamiz, qanday bajarishni esa rejalashtiruvchi hal qiladi.",
+    "show": "SQL deklarativ til bo'lib, biz nima kerakligini yozamiz, qanday bajarishni esa rejalashtiruvchi hal qiladi.",
+    "say": "Es-kyu-el deklarativ til bo'lib, biz nima kerakligini yozamiz, qanday bajarishni esa rejalashtiruvchi hal qiladi.",
+    "a0": 0.26,
+    "a1": 6.86,
+    "words": [
+      {
+        "w": "Es-kyu-el",
+        "s": 0.26,
+        "e": 0.82
+      },
+      {
+        "w": "deklarativ",
+        "s": 1.14,
+        "e": 1.66
+      },
+      {
+        "w": "til",
+        "s": 1.72,
+        "e": 1.86
+      },
+      {
+        "w": "bo'lib,",
+        "s": 1.94,
+        "e": 2.18
+      },
+      {
+        "w": "biz",
+        "s": 2.4,
+        "e": 2.54
+      },
+      {
+        "w": "nima",
+        "s": 2.66,
+        "e": 2.86
+      },
+      {
+        "w": "kerakligini",
+        "s": 2.92,
+        "e": 3.44
+      },
+      {
+        "w": "yozamiz,",
+        "s": 3.48,
+        "e": 3.84
+      },
+      {
+        "w": "qanday",
+        "s": 4.32,
+        "e": 4.58
+      },
+      {
+        "w": "bajarishni",
+        "s": 4.62,
+        "e": 5.08
+      },
+      {
+        "w": "esa",
+        "s": 5.12,
+        "e": 5.3
+      },
+      {
+        "w": "rejalashtiruvchi",
+        "s": 5.56,
+        "e": 6.36
+      },
+      {
+        "w": "hal",
+        "s": 6.4,
+        "e": 6.54
+      },
+      {
+        "w": "qiladi.",
+        "s": 6.58,
+        "e": 6.86
+      }
+    ]
+  },
+  {
+    "scene": "reja_va_daraxt",
+    "id": "l2",
+    "text": "Ekspleyn so'rov rejasini tugunlar daraxti ko'rinishida beradi: pastda skanerlash, tepada esa birlashtirish va saralash amallari turadi.",
+    "show": "Ekspleyn so'rov rejasini tugunlar daraxti ko'rinishida beradi: pastda skanerlash, tepada esa birlashtirish va saralash amallari turadi.",
+    "say": "Ekspleyn so'rov rejasini tugunlar daraxti ko'rinishida beradi: pastda skanerlash, tepada esa birlashtirish va saralash amallari turadi.",
+    "a0": 7.73,
+    "a1": 14.95,
+    "words": [
+      {
+        "w": "Ekspleyn",
+        "s": 7.73,
+        "e": 8.15
+      },
+      {
+        "w": "so'rov",
+        "s": 8.23,
+        "e": 8.47
+      },
+      {
+        "w": "rejasini",
+        "s": 8.51,
+        "e": 8.99
+      },
+      {
+        "w": "tugunlar",
+        "s": 9.07,
+        "e": 9.53
+      },
+      {
+        "w": "daraxti",
+        "s": 9.59,
+        "e": 9.89
+      },
+      {
+        "w": "ko'rinishida",
+        "s": 9.91,
+        "e": 10.35
+      },
+      {
+        "w": "beradi:",
+        "s": 10.39,
+        "e": 10.67
+      },
+      {
+        "w": "pastda",
+        "s": 11.11,
+        "e": 11.41
+      },
+      {
+        "w": "skanerlash,",
+        "s": 11.47,
+        "e": 12.07
+      },
+      {
+        "w": "tepada",
+        "s": 12.35,
+        "e": 12.63
+      },
+      {
+        "w": "esa",
+        "s": 12.69,
+        "e": 12.85
+      },
+      {
+        "w": "birlashtirish",
+        "s": 13.01,
+        "e": 13.59
+      },
+      {
+        "w": "va",
+        "s": 13.63,
+        "e": 13.69
+      },
+      {
+        "w": "saralash",
+        "s": 13.79,
+        "e": 14.21
+      },
+      {
+        "w": "amallari",
+        "s": 14.25,
+        "e": 14.63
+      },
+      {
+        "w": "turadi.",
+        "s": 14.67,
+        "e": 14.95
+      }
+    ]
+  },
+  {
+    "scene": "taxminiy_narx",
+    "id": "l3",
+    "text": "Oddiy ekspleyn so'rovni bajarmaydi, u faqat boshlash va to'liq bajarilish narxini hamda taxminiy qatorlar sonini ko'rsatadi.",
+    "show": "Oddiy ekspleyn so'rovni bajarmaydi, u faqat boshlash va to'liq bajarilish narxini hamda taxminiy qatorlar sonini ko'rsatadi.",
+    "say": "Oddiy ekspleyn so'rovni bajarmaydi, u faqat boshlash va to'liq bajarilish narxini hamda taxminiy qatorlar sonini ko'rsatadi.",
+    "a0": 15.71,
+    "a1": 22.66,
+    "words": [
+      {
+        "w": "Oddiy",
+        "s": 15.71,
+        "e": 15.95
+      },
+      {
+        "w": "ekspleyn",
+        "s": 16.03,
+        "e": 16.45
+      },
+      {
+        "w": "so'rovni",
+        "s": 16.53,
+        "e": 16.89
+      },
+      {
+        "w": "bajarmaydi,",
+        "s": 16.95,
+        "e": 17.51
+      },
+      {
+        "w": "u",
+        "s": 17.83,
+        "e": 17.85
+      },
+      {
+        "w": "faqat",
+        "s": 17.89,
+        "e": 18.15
+      },
+      {
+        "w": "boshlash",
+        "s": 18.43,
+        "e": 18.89
+      },
+      {
+        "w": "va",
+        "s": 18.93,
+        "e": 18.99
+      },
+      {
+        "w": "to'liq",
+        "s": 19.13,
+        "e": 19.41
+      },
+      {
+        "w": "bajarilish",
+        "s": 19.49,
+        "e": 19.93
+      },
+      {
+        "w": "narxini",
+        "s": 19.97,
+        "e": 20.33
+      },
+      {
+        "w": "hamda",
+        "s": 20.41,
+        "e": 20.61
+      },
+      {
+        "w": "taxminiy",
+        "s": 20.83,
+        "e": 21.33
+      },
+      {
+        "w": "qatorlar",
+        "s": 21.41,
+        "e": 21.83
+      },
+      {
+        "w": "sonini",
+        "s": 21.87,
+        "e": 22.17
+      },
+      {
+        "w": "ko'rsatadi.",
+        "s": 22.21,
+        "e": 22.66
+      }
+    ]
+  },
+  {
+    "scene": "taxminiy_narx",
+    "id": "l4",
+    "text": "Baza hisoblaydigan narx birliklari millisekund emas, balki disk sahifalarini o'qishga asoslangan shartli bahodir.",
+    "show": "Baza hisoblaydigan narx birliklari millisekund emas, balki disk sahifalarini o'qishga asoslangan shartli bahodir.",
+    "say": "Baza hisoblaydigan narx birliklari millisekund emas, balki disk sahifalarini o'qishga asoslangan shartli bahodir.",
+    "a0": 23.52,
+    "a1": 29.92,
+    "words": [
+      {
+        "w": "Baza",
+        "s": 23.52,
+        "e": 23.74
+      },
+      {
+        "w": "hisoblaydigan",
+        "s": 23.78,
+        "e": 24.36
+      },
+      {
+        "w": "narx",
+        "s": 24.42,
+        "e": 24.64
+      },
+      {
+        "w": "birliklari",
+        "s": 24.68,
+        "e": 25.16
+      },
+      {
+        "w": "millisekund",
+        "s": 25.44,
+        "e": 26.02
+      },
+      {
+        "w": "emas,",
+        "s": 26.08,
+        "e": 26.32
+      },
+      {
+        "w": "balki",
+        "s": 26.38,
+        "e": 26.64
+      },
+      {
+        "w": "disk",
+        "s": 27.04,
+        "e": 27.28
+      },
+      {
+        "w": "sahifalarini",
+        "s": 27.32,
+        "e": 27.92
+      },
+      {
+        "w": "o'qishga",
+        "s": 28.04,
+        "e": 28.38
+      },
+      {
+        "w": "asoslangan",
+        "s": 28.44,
+        "e": 29.0
+      },
+      {
+        "w": "shartli",
+        "s": 29.08,
+        "e": 29.42
+      },
+      {
+        "w": "bahodir.",
+        "s": 29.5,
+        "e": 29.92
+      }
+    ]
+  },
+  {
+    "scene": "haqiqiy_natija_analyze",
+    "id": "l5",
+    "text": "Ekspleyn analayz esa so'rovni haqiqatda ishga tushirib, har bir tugun uchun real vaqt va qatorlar sonini chiqaradi.",
+    "show": "Ekspleyn analayz esa so'rovni haqiqatda ishga tushirib, har bir tugun uchun real vaqt va qatorlar sonini chiqaradi.",
+    "say": "Ekspleyn analayz esa so'rovni haqiqatda ishga tushirib, har bir tugun uchun real vaqt va qatorlar sonini chiqaradi.",
+    "a0": 30.74,
+    "a1": 37.25,
+    "words": [
+      {
+        "w": "Ekspleyn",
+        "s": 30.74,
+        "e": 31.18
+      },
+      {
+        "w": "analayz",
+        "s": 31.32,
+        "e": 31.74
+      },
+      {
+        "w": "esa",
+        "s": 31.78,
+        "e": 31.96
+      },
+      {
+        "w": "so'rovni",
+        "s": 32.2,
+        "e": 32.56
+      },
+      {
+        "w": "haqiqatda",
+        "s": 32.66,
+        "e": 33.3
+      },
+      {
+        "w": "ishga",
+        "s": 33.36,
+        "e": 33.54
+      },
+      {
+        "w": "tushirib,",
+        "s": 33.58,
+        "e": 33.9
+      },
+      {
+        "w": "har",
+        "s": 34.18,
+        "e": 34.38
+      },
+      {
+        "w": "bir",
+        "s": 34.44,
+        "e": 34.56
+      },
+      {
+        "w": "tugun",
+        "s": 34.6,
+        "e": 34.82
+      },
+      {
+        "w": "uchun",
+        "s": 34.86,
+        "e": 35.06
+      },
+      {
+        "w": "real",
+        "s": 35.24,
+        "e": 35.52
+      },
+      {
+        "w": "vaqt",
+        "s": 35.64,
+        "e": 35.9
+      },
+      {
+        "w": "va",
+        "s": 35.94,
+        "e": 36.0
+      },
+      {
+        "w": "qatorlar",
+        "s": 36.06,
+        "e": 36.52
+      },
+      {
+        "w": "sonini",
+        "s": 36.55,
+        "e": 36.83
+      },
+      {
+        "w": "chiqaradi.",
+        "s": 36.89,
+        "e": 37.25
+      }
+    ]
+  },
+  {
+    "scene": "haqiqiy_natija_analyze",
+    "id": "l6",
+    "text": "Ichki tugunlardagi vaqt bitta tsiklga tegishli bo'lib, umumiy hisob uchun uni loops soniga ko'paytirish shart.",
+    "show": "Ichki tugunlardagi vaqt bitta tsiklga tegishli bo'lib, umumiy hisob uchun uni loops soniga ko'paytirish shart.",
+    "say": "Ichki tugunlardagi vaqt bitta tsiklga tegishli bo'lib, umumiy hisob uchun uni lups soniga ko'paytirish shart.",
+    "a0": 37.91,
+    "a1": 43.35,
+    "words": [
+      {
+        "w": "Ichki",
+        "s": 37.91,
+        "e": 38.11
+      },
+      {
+        "w": "tugunlardagi",
+        "s": 38.13,
+        "e": 38.67
+      },
+      {
+        "w": "vaqt",
+        "s": 38.73,
+        "e": 38.97
+      },
+      {
+        "w": "bitta",
+        "s": 39.03,
+        "e": 39.27
+      },
+      {
+        "w": "tsiklga",
+        "s": 39.33,
+        "e": 39.71
+      },
+      {
+        "w": "tegishli",
+        "s": 39.73,
+        "e": 40.05
+      },
+      {
+        "w": "bo'lib,",
+        "s": 40.09,
+        "e": 40.31
+      },
+      {
+        "w": "umumiy",
+        "s": 40.63,
+        "e": 40.97
+      },
+      {
+        "w": "hisob",
+        "s": 41.03,
+        "e": 41.29
+      },
+      {
+        "w": "uchun",
+        "s": 41.31,
+        "e": 41.51
+      },
+      {
+        "w": "uni",
+        "s": 41.61,
+        "e": 41.75
+      },
+      {
+        "w": "lups",
+        "s": 42.05,
+        "e": 42.25
+      },
+      {
+        "w": "soniga",
+        "s": 42.31,
+        "e": 42.59
+      },
+      {
+        "w": "ko'paytirish",
+        "s": 42.63,
+        "e": 43.09
+      },
+      {
+        "w": "shart.",
+        "s": 43.11,
+        "e": 43.35
+      }
+    ]
+  },
+  {
+    "scene": "ogohlantirish_va_dml",
+    "id": "l7",
+    "text": "O'ta muhim qoida: analayz buyrug'i ma'lumotlarni haqiqatan o'zgartiradi yoki o'chiradi.",
+    "show": "O'ta muhim qoida: analayz buyrug'i ma'lumotlarni haqiqatan o'zgartiradi yoki o'chiradi.",
+    "say": "O'ta muhim qoida: analayz buyrug'i ma'lumotlarni haqiqatan o'zgartiradi yoki o'chiradi.",
+    "a0": 44.31,
+    "a1": 49.31,
+    "words": [
+      {
+        "w": "O'ta",
+        "s": 44.31,
+        "e": 44.49
+      },
+      {
+        "w": "muhim",
+        "s": 44.55,
+        "e": 44.81
+      },
+      {
+        "w": "qoida:",
+        "s": 44.89,
+        "e": 45.17
+      },
+      {
+        "w": "analayz",
+        "s": 45.79,
+        "e": 46.15
+      },
+      {
+        "w": "buyrug'i",
+        "s": 46.19,
+        "e": 46.53
+      },
+      {
+        "w": "ma'lumotlarni",
+        "s": 46.65,
+        "e": 47.19
+      },
+      {
+        "w": "haqiqatan",
+        "s": 47.23,
+        "e": 47.83
+      },
+      {
+        "w": "o'zgartiradi",
+        "s": 47.89,
+        "e": 48.43
+      },
+      {
+        "w": "yoki",
+        "s": 48.67,
+        "e": 48.87
+      },
+      {
+        "w": "o'chiradi.",
+        "s": 48.93,
+        "e": 49.31
+      }
+    ]
+  },
+  {
+    "scene": "ogohlantirish_va_dml",
+    "id": "l8",
+    "text": "Shuning uchun o'chirish va yangilash so'rovlarini tahlil qilishda doimo begin va rollback blokidan foydalaning.",
+    "show": "Shuning uchun o'chirish va yangilash so'rovlarini tahlil qilishda doimo begin va rollback blokidan foydalaning.",
+    "say": "Shuning uchun o'chirish va yangilash so'rovlarini tahlil qilishda doimo begin va rolbek blokidan foydalaning.",
+    "a0": 49.84,
+    "a1": 55.8,
+    "words": [
+      {
+        "w": "Shuning",
+        "s": 49.84,
+        "e": 50.06
+      },
+      {
+        "w": "uchun",
+        "s": 50.08,
+        "e": 50.24
+      },
+      {
+        "w": "o'chirish",
+        "s": 50.58,
+        "e": 50.98
+      },
+      {
+        "w": "va",
+        "s": 51.04,
+        "e": 51.1
+      },
+      {
+        "w": "yangilash",
+        "s": 51.2,
+        "e": 51.62
+      },
+      {
+        "w": "so'rovlarini",
+        "s": 51.64,
+        "e": 52.1
+      },
+      {
+        "w": "tahlil",
+        "s": 52.14,
+        "e": 52.44
+      },
+      {
+        "w": "qilishda",
+        "s": 52.46,
+        "e": 52.78
+      },
+      {
+        "w": "doimo",
+        "s": 53.14,
+        "e": 53.54
+      },
+      {
+        "w": "begin",
+        "s": 53.74,
+        "e": 54.14
+      },
+      {
+        "w": "va",
+        "s": 54.24,
+        "e": 54.32
+      },
+      {
+        "w": "rolbek",
+        "s": 54.48,
+        "e": 54.88
+      },
+      {
+        "w": "blokidan",
+        "s": 54.94,
+        "e": 55.32
+      },
+      {
+        "w": "foydalaning.",
+        "s": 55.34,
+        "e": 55.8
+      }
+    ]
+  }
+]

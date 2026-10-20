@@ -4,6 +4,15 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/45-1-tushuncha.jpg">
+    <source src="/video/sql/45-1-tushuncha.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/45-1-tushuncha.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/45-1-tushuncha.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>45.1-video. EXPLAIN tushunchasi: reja daraxti, cost va actual natijalar</figcaption>
+</figure>
+
 41–44-boblarda `EXPLAIN` ko'p ishlatildi. Bu bob — uni **o'qish**.
 
 **So'rov rejasi** (query plan) — ma'lumotlar bazasi so'rovni **qanday** bajarishi: qaysi jadvalni qanday o'qishi (to'liq yoki indeks orqali), jadvallarni qanday birlashtirishi, qayerda saralashi. SQL'da biz **nima** kerakligini yozamiz, rejani esa rejalashtiruvchi (planner, optimizer) tanlaydi. `EXPLAIN` shu tanlovni ko'rsatadi.
@@ -75,6 +84,15 @@ PostgreSQL hujjatining "Caveats" bo'limi:
 - `LIMIT` erta to'xtatgan tugunda taxmin va haqiqat mos kelmasligi normal.
 
 ## Kod
+
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/45-2-kod.jpg">
+    <source src="/video/sql/45-2-kod.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/45-2-kod.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/45-2-kod.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>45.2-video. EXPLAIN amaliyoti: Nested Loop, Hash Join va DML tahlili</figcaption>
+</figure>
 
 Misollar PostgreSQL 18.6, MySQL 9.7.2 va SQLite 3.54.0 da ishga tushirilgan. 20 000 mijoz (har 10-chi — Samarqand), 200 000 buyurtma (har mijozda 10 ta), `buyurtmalar.mijoz_id` da indeks.
 
@@ -268,6 +286,15 @@ EXPLAIN (FORMAT JSON, COSTS OFF) SELECT * FROM buyurtmalar WHERE id = 5;
 JSON (yoki `YAML`, `XML`) — rejani dastur bilan tahlil qilish va vizualizatsiya vositalari uchun.
 
 ## Dialektlar
+
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/45-3-dialektlar.jpg">
+    <source src="/video/sql/45-3-dialektlar.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/45-3-dialektlar.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/45-3-dialektlar.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+  <figcaption>45.3-video. Dialektlar: MySQL (TRADITIONAL/TREE) va SQLite (EXPLAIN QUERY PLAN)</figcaption>
+</figure>
 
 ### MySQL
 

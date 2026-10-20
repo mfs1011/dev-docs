@@ -1,0 +1,41 @@
+WEBVTT
+
+1
+00:01.420 --> 00:07.470
+MySQL'da tredishnl formati rejani jadval ko'rinishida
+berib, tayp ustunida kirish turini ko'rsatadi.
+
+2
+00:07.700 --> 00:14.620
+Eng xavfli belgi — bu ALL ya'ni to'liq skan, hamda
+ekstra ustunidagi yuzing faylsort yozuvidir.
+
+3
+00:17.650 --> 00:23.980
+Zamonaviy MySQL'da ekspleyn analayz daraxt ko'rinishida
+bo'lib, har bir iterator uchun real vaqtni o'lchaydi.
+
+4
+00:24.350 --> 00:30.670
+Katta birlashtirishda Postgres hesh joynga o'tgan
+bo'lsa, MySQL yigirma ming lupli nested lupda qoldi.
+
+5
+00:33.700 --> 00:40.310
+Es-kyu-laytda oddiy ekspleyn ichki baytkodni chiqargani
+sababli, albatta ekspleyn kveri plen ishlatilishi shart.
+
+6
+00:40.620 --> 00:46.780
+U skan va serch so'zlari bilan indeks ishlatilishini
+ko'rsatadi, ammo reja ichida vaqt va narxlar berilmaydi.
+
+7
+00:49.690 --> 00:55.200
+Eng katta xato — kostni millisekund deb o'qish
+yoki lups ko'paytuvchisini hisobga olmaslikdir.
+
+8
+00:55.570 --> 01:01.450
+Rejani to'g'ri tahlil qilish orqali siz har qanday sekin
+so'rovning asl sababini osonlikcha bartaraf etasiz.
