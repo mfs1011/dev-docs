@@ -20,12 +20,12 @@
   };
 
   const hold = {
-    l2: 1.0,
-    l4: 1.0,
-    l6: 1.0,
-    l8: 1.0,
-    l10: 1.0,
-    l12: 1.5
+    l2: 1.5,
+    l4: 2.0,
+    l6: 2.0,
+    l8: 2.0,
+    l10: 2.0,
+    l12: 2.0
   };
 
   const lines = [
@@ -52,7 +52,7 @@
     {
       id: 'l5',
       scene: 'check_ignore',
-      text: "Agar biror fayl git statusda ko‘rinmay qolsa, git check-ignore buyrug‘i buni qaysi qoida sababli ekanini darhol aniqlab beradi."
+      text: "Agar biror fayl git statusda ko‘rinmay qolsa, git check-ignore buyrug‘i buni aynan qaysi qoida sababli ekanini darhol aniqlab beradi."
     },
     {
       id: 'l6',
@@ -87,7 +87,7 @@
     {
       id: 'l12',
       scene: 'xulosa',
-      text: "Keyingi bobda loyihaning butun o‘tmishini ko‘zdan kechiruvchi git log buyrug‘i bilan tanishamiz. Rahmat!"
+      text: "Keyingi to‘qqizinchi bobda loyihaning butun o‘tmishini ko‘zdan kechiruvchi git log buyrug‘i bilan tanishamiz. Rahmat!"
     }
   ];
 

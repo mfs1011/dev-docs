@@ -1,61 +1,61 @@
 WEBVTT
 
 1
-00:01.420 --> 00:12.400
+00:01.420 --> 00:11.800
 Salom! Ushbu sakkizinchi bobda loyihani keraksiz fayllardan tozalash va tartibga
 keltirish vositalari: gitignore, git rm va git mv buyruqlarini o‘rganamiz.
 
 2
-00:12.710 --> 00:19.500
+00:12.110 --> 00:19.140
 Ushbu qurollar loyiha xotirasi shishib ketmasligi va maxfiy
 ma’lumotlar tasodifan omborga tushib qolmasligini ta’minlaydi.
 
 3
-00:22.510 --> 00:29.230
+00:22.630 --> 00:29.050
 Nuqta gitignore fayli Gitga qaysi fayllarni butunlay e’tiborsiz
 qoldirish kerakligini aytuvchi qoidalar ro‘yxatidir.
 
 4
-00:29.520 --> 00:37.170
+00:29.360 --> 00:36.430
 Yulduzcha, slesh va inkor belgisi kabi qulay shablonlar
 orqali papkalar yoki kengaytmalar osonlikcha filtrlanadi.
 
 5
-00:40.120 --> 00:48.060
+00:40.220 --> 00:47.740
 Agar biror fayl git statusda ko‘rinmay qolsa, git check-ignore
-buyrug‘i buni qaysi qoida sababli ekanini darhol aniqlab beradi.
+buyrug‘i buni aynan qaysi qoida sababli ekanini darhol aniqlab beradi.
 
 6
-00:48.250 --> 00:54.980
+00:47.990 --> 00:54.440
 Shuningdek, qisqa statusda minus minus ignord opsiyasidan
 foydalanib, chetlab o‘tilgan barcha fayllarni ko‘rish mumkin.
 
 7
-00:57.730 --> 01:04.190
+00:58.390 --> 01:04.590
 Git rm buyrug‘i faylni nafaqat diskdan, balki Gitning
 indeks qoralamasidan ham rasman olib tashlaydi.
 
 8
-01:04.500 --> 01:12.030
+01:04.700 --> 01:11.910
 Eng muhimi: minus minus keshd opsiyasi faylni diskda butun
 saqlagan holda, faqat Git nazoratidan xavfsiz chiqarib beradi.
 
 9
-01:14.860 --> 01:21.040
+01:15.920 --> 01:21.810
 Git mv buyrug‘i fayl nomini o‘zgartirish yoki yangi
 papkaga ko‘chirishni bitta tezkor qadamda bajaradi.
 
 10
-01:21.270 --> 01:27.620
+01:22.010 --> 01:28.320
 Aslida bu diskdagi ko‘chirish, eski faylni o‘chirish va
 yangisini qo‘shish amallarining qulay birlashmasidir.
 
 11
-01:30.330 --> 01:37.530
+01:32.130 --> 01:38.360
 Xulosa qilib aytganda, toza gitignore, oqilona o‘chirish va
 ko‘chirish — professional loyiha boshqaruvining asosidir.
 
 12
-01:38.040 --> 01:44.070
-Keyingi bobda loyihaning butun o‘tmishini ko‘zdan
+01:38.620 --> 01:44.530
+Keyingi to‘qqizinchi bobda loyihaning butun o‘tmishini ko‘zdan
 kechiruvchi git log buyrug‘i bilan tanishamiz. Rahmat!
