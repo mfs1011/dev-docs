@@ -7,16 +7,59 @@
     W, H, C, UI, MONO,
     clamp, P, lerp, eo, eio, eback, font, withA, rr,
     tw, text, bg, ring, burst, link, pill,
-    fileChip, chip, panel, card
+    fileChip, chip, panel, card, terminal
   } = kit;
 
   const TM = window.TM, NR = window.NR;
+
+  // Terminalda matn va buyruqlarni real yozilish effekti bilan chizish yordamchilari
+  function drawCommandLine(promptStr, fullCmd, tStart, tTypeEnd, tEnter, u, x, y, opt = {}) {
+    const tPrompt = opt.tPromptShow != null ? opt.tPromptShow : tStart - 0.3;
+    if (u < tPrompt) return;
+
+    const pCol = opt.promptCol || C.green;
+    text(promptStr, x, y, { size: 15, fam: MONO, color: pCol, weight: 700, align: 'left' });
+    const pw = tw(promptStr, 15, 700, MONO);
+
+    if (u < tStart) {
+      if (Math.floor(u * 2.5) % 2 === 0) {
+        text('█', x + pw + 2, y, { size: 15, fam: MONO, color: '#38bdf8', align: 'left' });
+      }
+      return;
+    }
+
+    const dur = Math.max(0.01, tTypeEnd - tStart);
+    const progress = clamp((u - tStart) / dur);
+    const charCount = Math.floor(progress * fullCmd.length);
+    const typedStr = fullCmd.slice(0, charCount);
+
+    text(typedStr, x + pw, y, { size: 15, fam: MONO, color: opt.cmdCol || '#e2e8f0', weight: 600, align: 'left' });
+    const cmdW = tw(typedStr, 15, 600, MONO);
+
+    if (u < tEnter) {
+      const isVisible = u < tTypeEnd ? true : (Math.floor(u * 2.5) % 2 === 0);
+      if (isVisible) {
+        text('█', x + pw + cmdW + 2, y, { size: 15, fam: MONO, color: '#38bdf8', align: 'left' });
+      }
+    }
+  }
+
+  function drawOutputLine(str, tAppear, u, x, y, opt = {}) {
+    if (u < tAppear) return;
+    text(str, x, y, {
+      size: opt.size || 14,
+      fam: MONO,
+      color: opt.color || '#94a3b8',
+      weight: opt.weight || 500,
+      align: 'left'
+    });
+  }
 
   // ==========================================
   // 1-SAHNA: Kirish va O'zgarishlar Ko'zgusi
   // ==========================================
   function sceneIntro(u, bounds, o = {}) {
-    // Sarlavha bosqichi (u < 8.5)
+    // Sarlavha bosqichi (u < 8.5 va poster emas)
     if (u < 8.5 && !o.isPoster) {
       const kTitle = P(u, 0.4, 0.7);
       withA(kTitle, () => {
@@ -28,24 +71,26 @@
         const kTerm = P(u, 1.8, 0.6);
         withA(kTerm, () => {
           ctx.save(); ctx.translate(0, (1 - eo(kTerm)) * 20);
-          card(360, 480, 1200, 260, { fill: 'rgba(11,16,32,0.94)', col: C.blue, lw: 2 });
-          pill("Diff Taqqoslash Yo'nalishlari", 960, 530, C.blue, { size: 22 });
+          card(360, 475, 1200, 280, { fill: 'rgba(11,16,32,0.94)', col: C.blue, lw: 2 });
+          pill("Diff Taqqoslash Yo'nalishlari", 960, 520, C.blue, { size: 22 });
 
-          card(410, 580, 320, 110, { fill: 'rgba(255,209,102,0.10)', col: C.yellow });
-          pill("Working Tree", 570, 615, C.yellow, { size: 18 });
-          text("Diskdagi o'zgarishlar", 570, 655, { size: 16, color: C.text });
+          card(410, 565, 320, 105, { fill: 'rgba(255,209,102,0.10)', col: C.yellow });
+          pill("Working Tree", 570, 598, C.yellow, { size: 18 });
+          text("Diskdagi o'zgarishlar", 570, 638, { size: 16, color: C.text });
 
-          text("◄─ git diff ─►", 780, 635, { size: 16, fam: MONO, color: C.cyan, weight: 700 });
+          text("◄─ git diff ─►", 780, 618, { size: 16, fam: MONO, color: '#38bdf8', weight: 700 });
 
-          card(830, 580, 320, 110, { fill: 'rgba(79,140,255,0.10)', col: C.blue });
-          pill("Staging (Index)", 990, 615, C.blue, { size: 18 });
-          text("Commit qoralamasi", 990, 655, { size: 16, color: C.text });
+          card(830, 565, 320, 105, { fill: 'rgba(79,140,255,0.10)', col: C.blue });
+          pill("Staging (Index)", 990, 598, C.blue, { size: 18 });
+          text("Commit qoralamasi", 990, 638, { size: 16, color: C.text });
 
-          text("◄─ --staged ─►", 1200, 635, { size: 16, fam: MONO, color: C.green, weight: 700 });
+          text("◄─ --staged ─►", 1200, 618, { size: 16, fam: MONO, color: C.green, weight: 700 });
 
-          card(1250, 580, 270, 110, { fill: 'rgba(52,211,153,0.10)', col: C.green });
-          pill("HEAD Commit", 1385, 615, C.green, { size: 18 });
-          text("Oxirgi arxiv", 1385, 655, { size: 16, color: C.text });
+          card(1250, 565, 270, 105, { fill: 'rgba(52,211,153,0.10)', col: C.green });
+          pill("HEAD Commit", 1385, 598, C.green, { size: 18 });
+          text("Oxirgi arxiv", 1385, 638, { size: 16, color: C.text });
+
+          text("◄──────────────────── git diff HEAD ────────────────────►", 960, 715, { size: 15, fam: MONO, color: '#f59e0b', weight: 700 });
 
           ctx.restore();
         });
@@ -65,7 +110,7 @@
       withA(kG1, () => {
         ctx.save(); if (!o.isPoster) ctx.translate(0, (1 - eo(kG1)) * 16);
         card(125, 255, 790, 160, { fill: 'rgba(255,209,102,0.08)', col: C.yellow });
-        pill("git status — Ro'yxat Ko'rinishi", 255, 290, C.yellow, { size: 16, mono: false });
+        pill("git status — Fayllar Ro'yxati", 255, 290, C.yellow, { size: 16, mono: false });
         text("• Faqat QAYSI fayllar o'zgarganini yuqoridan umumiy ko'rsatadi.", 150, 335, { size: 17, color: C.text, align: 'left' });
         text("• Fayl ichida aynan qanday o'zgarish bo'lganini aytmaydi.", 150, 375, { size: 17, color: C.yellow, align: 'left', weight: 600 });
         ctx.restore();
@@ -110,7 +155,7 @@
         ctx.save(); if (!o.isPoster) ctx.translate(0, (1 - eo(kC2)) * 16);
         card(1005, 455, 790, 180, { fill: 'rgba(79,140,255,0.08)', col: C.blue });
         pill("2-SAVOL · Keyingi commitga nima kiradi?", 1200, 490, C.blue, { size: 16, mono: false });
-        text("$ git diff --staged  (yoki --cached)", 1030, 535, { size: 18, fam: MONO, color: C.cyan, align: 'left', weight: 700 });
+        text("$ git diff --staged  (yoki --cached)", 1030, 535, { size: 18, fam: MONO, color: '#38bdf8', align: 'left', weight: 700 });
         text("Indexdagi qoralama va oxirgi commit o'rtasidagi farq.", 1030, 575, { size: 17, color: C.text, align: 'left' });
         text("Aynan nima saqlanishini commitdan oldin so'nggi tekshirish!", 1030, 610, { size: 16, color: C.blue, align: 'left', weight: 600 });
         ctx.restore();
@@ -128,220 +173,237 @@
   }
 
   // ==========================================
-  // 2-SAHNA: Uch Hudud va Uchta Diff
+  // 2-SAHNA: Uch Hudud va Uchta Diff (REAL TERMINAL AMALIYOTI)
   // ==========================================
   function sceneUchDiff(u, bounds, o = {}) {
-    chip(2, "Uch Hudud va Uchta Diff Buyrug'i", u, 0);
+    chip(2, "Uch Hudud va Uchta Diff Amaliyoti", u, 0);
 
-    const kBase = eo(P(u, 0.2, 0.5));
-    withA(kBase, () => {
-      // 3 ustun
-      // Ustun 1: git diff (x=100)
-      const k1 = P(u, 0.6, 0.5);
-      withA(k1, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(k1)) * 20);
-        panel(100, 140, 546, 680, C.yellow, "git diff", "stage qilinmagan o'zgarishlar", k1, k1);
-
-        card(120, 255, 506, 170, { fill: 'rgba(255,209,102,0.08)', col: C.yellow });
-        pill("Working Tree ↔ Index", 250, 290, C.yellow, { size: 16, mono: false });
-        text("Faylni tahrirladingiz, ammo hali", 140, 335, { size: 17, color: C.text, align: 'left' });
-        text("'git add' qilmadingiz.", 140, 365, { size: 17, color: C.text, align: 'left' });
-        text("Aynan shu farqni ko'rsatadi.", 140, 400, { size: 16, color: C.yellow, align: 'left', weight: 600 });
-
-        card(120, 445, 506, 210, { fill: 'rgba(15,22,48,0.92)', col: C.border });
-        pill("Nega add dan keyin bo'sh?", 250, 480, C.mute, { size: 16, mono: false });
-        text("• 'git add' qilishingiz bilan farq yo'qolmaydi.", 140, 525, { size: 16, color: C.text, align: 'left' });
-        text("• U shunchaki Indexga o'tadi.", 140, 560, { size: 16, color: C.mute, align: 'left' });
-        text("• Shuning uchun oddiy diff bo'sh qaytadi!", 140, 595, { size: 16, color: C.yellow, align: 'left', weight: 600 });
-
-        card(120, 675, 506, 125, { fill: 'rgba(255,209,102,0.05)', col: C.yellow });
-        text("Buyruq:", 140, 715, { size: 15, color: C.mute, align: 'left' });
-        text("$ git diff", 140, 755, { size: 18, fam: MONO, color: C.yellow, align: 'left', weight: 700 });
-        ctx.restore();
+    const kBox = eo(P(u, 0.2, 0.5));
+    withA(kBox, () => {
+      // Chap panel: Real Terminal Oynasi
+      terminal(100, 140, 840, 680, {
+        title: 'bash — ~/kalkulyator (80x24)',
+        p: kBox
       });
 
-      // Ustun 2: git diff --staged (x=686)
-      const k2 = P(u, 4.0, 0.5);
-      withA(k2, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(k2)) * 20);
-        panel(686, 140, 546, 680, C.blue, "git diff --staged", "stage qilingan o'zgarishlar", k2, k2);
+      const tu = o.isPoster ? 18.0 : u;
 
-        card(706, 255, 506, 170, { fill: 'rgba(79,140,255,0.08)', col: C.blue });
-        pill("Index ↔ HEAD", 790, 290, C.blue, { size: 16, mono: false });
-        text("Faylni 'git add' qilib stage qildingiz.", 726, 335, { size: 17, color: C.text, align: 'left' });
-        text("Endi farq Index va oxirgi commit", 726, 365, { size: 17, color: C.text, align: 'left' });
-        text("o'rtasida mavjud bo'ladi.", 726, 400, { size: 16, color: C.cyan, align: 'left', weight: 600 });
+      // 1-buyruq: git status -s (u: 0.8 to 2.2, Enter at 2.4)
+      drawCommandLine("kalkulyator $ ", "git status -s", 0.8, 2.2, 2.4, tu, 130, 205);
+      drawOutputLine("M  README.md   # Index'da (staged, commitga tayyor)", 2.6, tu, 130, 230, { color: C.green, weight: 600 });
+      drawOutputLine(" M hisob.py    # Ishchi papkada (unstaged qoralama)", 2.9, tu, 130, 252, { color: C.red, weight: 600 });
 
-        card(706, 445, 506, 210, { fill: 'rgba(15,22,48,0.92)', col: C.border });
-        pill("Commit Qoralamasi", 820, 480, C.mute, { size: 16, mono: false });
-        text("• Keyingi commitga nima kirishini bildiradi.", 726, 525, { size: 16, color: C.text, align: 'left' });
-        text("• Har doim commit oldidan tekshiring.", 726, 560, { size: 16, color: C.mute, align: 'left' });
-        text("• '--cached' va '--staged' sinonimdir.", 726, 595, { size: 16, color: C.blue, align: 'left', weight: 600 });
+      // 2-buyruq: git diff (u: 3.8 to 5.2, Enter at 5.5)
+      drawCommandLine("kalkulyator $ ", "git diff", 3.8, 5.2, 5.5, tu, 130, 285);
+      drawOutputLine("diff --git a/hisob.py b/hisob.py", 5.7, tu, 130, 310, { color: '#64748b' });
+      drawOutputLine("--- a/hisob.py", 6.0, tu, 130, 330, { color: C.red, weight: 700 });
+      drawOutputLine("+++ b/hisob.py", 6.2, tu, 130, 350, { color: C.green, weight: 700 });
+      drawOutputLine("@@ -7,3 +7,3 @@ def kopaytirish(a, b):", 6.5, tu, 130, 372, { color: '#38bdf8', weight: 700 });
+      drawOutputLine("-    natija = a * b", 6.8, tu, 130, 394, { color: C.red, weight: 600 });
+      drawOutputLine("+    natija = a * b  # ko'paytma", 7.1, tu, 130, 416, { color: C.green, weight: 600 });
+      drawOutputLine("(README.md bu yerda yo'q — u allaqachon staged!)", 7.6, tu, 130, 440, { color: C.yellow });
 
-        card(706, 675, 506, 125, { fill: 'rgba(79,140,255,0.05)', col: C.blue });
-        text("Buyruq:", 726, 715, { size: 15, color: C.mute, align: 'left' });
-        text("$ git diff --staged", 726, 755, { size: 18, fam: MONO, color: C.cyan, align: 'left', weight: 700 });
-        ctx.restore();
-      });
+      // 3-buyruq: git diff --staged (u: 9.8 to 12.0, Enter at 12.3)
+      drawCommandLine("kalkulyator $ ", "git diff --staged", 9.8, 12.0, 12.3, tu, 130, 475);
+      drawOutputLine("diff --git a/README.md b/README.md", 12.5, tu, 130, 500, { color: '#64748b' });
+      drawOutputLine("--- a/README.md", 12.8, tu, 130, 520, { color: C.red, weight: 700 });
+      drawOutputLine("+++ b/README.md", 13.0, tu, 130, 540, { color: C.green, weight: 700 });
+      drawOutputLine("@@ -2,2 +2,3 @@", 13.3, tu, 130, 562, { color: '#38bdf8', weight: 700 });
+      drawOutputLine("+Python 3.10+ talab qilinadi.", 13.6, tu, 130, 584, { color: C.green, weight: 600 });
+      drawOutputLine("(Navbatdagi commitga aynan shu qator kiradi)", 14.1, tu, 130, 608, { color: C.cyan });
 
-      // Ustun 3: git diff HEAD (x=1272)
-      const k3 = P(u, 7.5, 0.5);
-      withA(k3, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(k3)) * 20);
-        panel(1272, 140, 546, 680, C.green, "git diff HEAD", "barcha o'zgarishlar jamlanmasi", k3, k3);
+      // 4-buyruq: git diff HEAD (u: 15.0 to 16.5, Enter at 16.8)
+      drawCommandLine("kalkulyator $ ", "git diff HEAD --stat", 15.0, 16.5, 16.8, tu, 130, 642);
+      drawOutputLine(" README.md | 1 +", 17.0, tu, 130, 665, { color: C.text });
+      drawOutputLine(" hisob.py  | 2 +-", 17.2, tu, 130, 685, { color: C.text });
+      drawOutputLine(" 2 files changed, 2 insertions(+), 1 deletion(-)", 17.5, tu, 130, 707, { color: C.green, weight: 700 });
 
-        card(1292, 255, 506, 170, { fill: 'rgba(52,211,153,0.08)', col: C.green });
-        pill("Working Tree ↔ HEAD", 1420, 290, C.green, { size: 16, mono: false });
-        text("Staged qilingan va qilinmagan", 1312, 335, { size: 17, color: C.text, align: 'left' });
-        text("barcha o'zgarishlarni birlashtirib,", 1312, 365, { size: 17, color: C.text, align: 'left' });
-        text("oxirgi commit bilan solishtiradi.", 1312, 400, { size: 16, color: C.green, align: 'left', weight: 600 });
+      // O'ng panel: Tahlil va Qoidalar
+      panel(980, 140, 840, 680, C.blue, "Uch Hudud va Taqqoslash Mantiqi", "qaysi buyruq qayerdan o'qiydi", kBox, kBox);
 
-        card(1292, 445, 506, 210, { fill: 'rgba(15,22,48,0.92)', col: C.border });
-        pill("Qachon qulay?", 1380, 480, C.mute, { size: 16, mono: false });
-        text("• Loyihada oxirgi commitdan beri", 1312, 525, { size: 16, color: C.text, align: 'left' });
-        text("  qilingan hamma ishlarni bir qarashda", 1312, 560, { size: 16, color: C.text, align: 'left' });
-        text("  to'liq ko'rish zarur bo'lganda.", 1312, 595, { size: 16, color: C.green, align: 'left', weight: 600 });
-
-        card(1292, 675, 506, 125, { fill: 'rgba(52,211,153,0.05)', col: C.green });
-        text("Buyruq:", 1312, 715, { size: 15, color: C.mute, align: 'left' });
-        text("$ git diff HEAD", 1312, 755, { size: 18, fam: MONO, color: C.green, align: 'left', weight: 700 });
-        ctx.restore();
-      });
-    });
-  }
-
-  // ==========================================
-  // 3-SAHNA: Patch Formatini O'qish
-  // ==========================================
-  function scenePatchFormati(u, bounds, o = {}) {
-    chip(3, "Patch Formatini O'qish", u, 0);
-
-    const kBase = eo(P(u, 0.2, 0.5));
-    withA(kBase, () => {
-      // Chap panel: Haqiqiy Terminal Diff Chiqishi
-      panel(100, 140, 940, 680, C.green, "Terminal Patch Namunasi", "diff natijasining tuzilishi", kBase, kBase);
-
-      const kCode = P(u, 0.6, 0.6);
-      withA(kCode, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kCode)) * 16);
-        card(125, 255, 890, 535, { fill: 'rgba(11,16,32,0.95)', col: C.border });
-
-        // Qatorlar
-        text("diff --git a/hisob.py b/hisob.py", 150, 300, { size: 16, fam: MONO, color: C.mute, align: 'left' });
-        text("index e69de29..b74b39a 100644", 150, 335, { size: 16, fam: MONO, color: C.mute, align: 'left' });
-        text("--- a/hisob.py", 150, 370, { size: 17, fam: MONO, color: C.red, align: 'left', weight: 700 });
-        text("+++ b/hisob.py", 150, 405, { size: 17, fam: MONO, color: C.green, align: 'left', weight: 700 });
-        text("@@ -1,5 +1,6 @@", 150, 450, { size: 17, fam: MONO, color: C.cyan, align: 'left', weight: 700 });
-
-        text(" def hisobla(a, b):", 150, 495, { size: 16, fam: MONO, color: C.text, align: 'left' });
-        text("-    natija = a - b", 150, 535, { size: 17, fam: MONO, color: C.red, align: 'left', weight: 700 });
-        text("+    natija = a + b", 150, 575, { size: 17, fam: MONO, color: C.green, align: 'left', weight: 700 });
-        text("+    print(f'Natija: {natija}')", 150, 615, { size: 17, fam: MONO, color: C.green, align: 'left', weight: 700 });
-        text("     return natija", 150, 655, { size: 16, fam: MONO, color: C.text, align: 'left' });
-
-        ctx.restore();
-      });
-
-      // O'ng panel: Patch elementlari izohi
-      panel(1080, 140, 740, 680, C.blue, "Patch Belgilari Izohi", "har bir qator nimani anglatadi", kBase, kBase);
-
-      const kE1 = P(u, 2.5, 0.5);
-      withA(kE1, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kE1)) * 16);
-        card(1105, 255, 690, 150, { fill: 'rgba(255,107,107,0.08)', col: C.red });
-        pill("--- a/fayl va Qizil Qatorlar (-)", 1270, 290, C.red, { size: 16, mono: false });
-        text("• 'a/' versiyasi — eski fayl holati.", 1130, 335, { size: 17, color: C.text, align: 'left' });
-        text("• Minus (-) bilan boshlangan qatorlar o'chirilganini bildiradi.", 1130, 370, { size: 17, color: C.red, align: 'left', weight: 600 });
-        ctx.restore();
-      });
-
-      const kE2 = P(u, 5.0, 0.5);
-      withA(kE2, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kE2)) * 16);
-        card(1105, 425, 690, 150, { fill: 'rgba(52,211,153,0.08)', col: C.green });
-        pill("+++ b/fayl va Yashil Qatorlar (+)", 1275, 460, C.green, { size: 16, mono: false });
-        text("• 'b/' versiyasi — yangi fayl holati.", 1130, 505, { size: 17, color: C.text, align: 'left' });
-        text("• Plyus (+) bilan boshlangan qatorlar yangi qo'shilganini bildiradi.", 1130, 540, { size: 17, color: C.green, align: 'left', weight: 600 });
-        ctx.restore();
-      });
-
-      const kE3 = P(u, 7.5, 0.5);
-      withA(kE3, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kE3)) * 16);
-        card(1105, 595, 690, 190, { fill: 'rgba(79,140,255,0.08)', col: C.blue });
-        pill("@@ -1,5 +1,6 @@ (Hunk Header)", 1280, 630, C.blue, { size: 16, mono: false });
-        text("• Qatorlar koordinatasi (hunk):", 1130, 675, { size: 17, color: C.text, align: 'left' });
-        text("  Eski faylda 1-qatordan 5 ta qator olingan,", 1130, 710, { size: 16, fam: MONO, color: C.mute, align: 'left' });
-        text("  Yangi faylda esa 1-qatordan 6 ta qator bo'ldi.", 1130, 745, { size: 16, fam: MONO, color: C.cyan, align: 'left', weight: 600 });
-        ctx.restore();
-      });
-    });
-  }
-
-  // ==========================================
-  // 4-SAHNA: Kommitlar va Brenchlar Farqi
-  // ==========================================
-  function sceneCommitlarFarqi(u, bounds, o = {}) {
-    chip(4, "Kommitlar va Brenchlar Farqi", u, 0);
-
-    const kBase = eo(P(u, 0.2, 0.5));
-    withA(kBase, () => {
-      // Chap panel: Ikki commit taqqoslash
-      panel(100, 140, 840, 680, C.purple, "Ikki Commitni Solishtirish", "tarix bo'ylab istalgan nuqtalar", kBase, kBase);
-
-      const kD1 = P(u, 0.6, 0.5);
-      withA(kD1, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kD1)) * 16);
-        card(125, 255, 790, 160, { fill: 'rgba(180,108,255,0.08)', col: C.purple });
-        pill("Ikkita commit xeshi orasidagi farq", 280, 290, C.purple, { size: 16, mono: false });
-        text("$ git diff 1a2b3c 4d5e6f", 150, 335, { size: 18, fam: MONO, color: C.purple, align: 'left', weight: 700 });
-        text("Loyihaning ikki o'tmishdagi nuqtasi o'rtasida nimalar o'zgargani.", 150, 375, { size: 17, color: C.text, align: 'left' });
-        ctx.restore();
-      });
-
-      const kD2 = P(u, 2.8, 0.5);
-      withA(kD2, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kD2)) * 16);
-        card(125, 435, 790, 160, { fill: 'rgba(79,140,255,0.08)', col: C.blue });
-        pill("Oxirgi commit nima qilganini ko'rish", 280, 470, C.blue, { size: 16, mono: false });
-        text("$ git diff HEAD~1 HEAD", 150, 515, { size: 18, fam: MONO, color: C.cyan, align: 'left', weight: 700 });
-        text("Eng so'nggi commit kiritgan aniq o'zgarishlarni bir zumda ko'rish.", 150, 555, { size: 17, color: C.text, align: 'left' });
-        ctx.restore();
-      });
-
-      const kD3 = P(u, 5.0, 0.5);
-      withA(kD3, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kD3)) * 16);
-        card(125, 620, 790, 165, { fill: 'rgba(15,22,48,0.92)', col: C.mute });
-        pill("Faqat bitta fayl bo'yicha cheklash", 270, 655, C.mute, { size: 16, mono: false });
-        text("$ git diff v1.0 v2.0 -- src/api.js", 150, 700, { size: 18, fam: MONO, color: C.yellow, align: 'left' });
-        text("Yuzlab fayllar ichidan faqat kerakli fayl tarixini tekshirish.", 150, 740, { size: 16, color: C.mute, align: 'left' });
-        ctx.restore();
-      });
-
-      // O'ng panel: Ikki branch taqqoslash
-      panel(980, 140, 840, 680, C.blue, "Ikki Branchni Solishtirish", "ikki nuqta vs uch nuqta", kBase, kBase);
-
-      const kR1 = P(u, 7.5, 0.5);
+      const kR1 = P(u, 1.0, 0.5);
       withA(kR1, () => {
         ctx.save(); ctx.translate(0, (1 - eo(kR1)) * 16);
-        card(1005, 255, 790, 240, { fill: 'rgba(79,140,255,0.08)', col: C.blue });
-        pill("Ikki Nuqta (..) — Ikki Branch Uchlari", 1190, 290, C.blue, { size: 16, mono: false });
-        text("$ git diff main..feature", 1030, 335, { size: 18, fam: MONO, color: C.cyan, align: 'left', weight: 700 });
-        text("• Main va Feature branchlarining eng oxirgi holatlarini solishtiradi.", 1030, 375, { size: 17, color: C.text, align: 'left' });
-        text("• Agar main oldinga ketgan bo'lsa, main'dagi o'zgarishlar ham chiqadi.", 1030, 415, { size: 16, color: C.mute, align: 'left' });
+        card(1005, 255, 790, 160, { fill: 'rgba(255,209,102,0.08)', col: C.yellow });
+        pill("1 · git diff (Working Tree ↔ Index)", 1210, 290, C.yellow, { size: 16, mono: false });
+        text("• Diskdagi tahrirlangan faylni Index bilan solishtiradi.", 1030, 335, { size: 17, color: C.text, align: 'left' });
+        text("• Hali 'git add' qilinmagan qoralamalarni ko'rsatadi.", 1030, 370, { size: 17, color: C.yellow, align: 'left', weight: 600 });
+        text("• 'add'dan keyin diff bo'sh qaytadi — chunki farq Index'ga o'tdi!", 1030, 400, { size: 15, color: C.mute, align: 'left' });
         ctx.restore();
       });
 
-      const kR2 = P(u, 10.5, 0.5);
+      const kR2 = P(u, 7.5, 0.5);
       withA(kR2, () => {
         ctx.save(); ctx.translate(0, (1 - eo(kR2)) * 16);
-        card(1005, 520, 790, 265, { fill: 'rgba(52,211,153,0.08)', col: C.green });
-        pill("Uch Nuqta (...) — PR va Code Review Uchun", 1210, 555, C.green, { size: 16, mono: false });
-        text("$ git diff main...feature", 1030, 600, { size: 18, fam: MONO, color: C.green, align: 'left', weight: 700 });
-        text("• Feature brenchi main'dan ajralgan umumiy ajdoddan beri", 1030, 640, { size: 17, color: C.text, align: 'left' });
-        text("  aynan feature'da nimalar qilinganini ko'rsatadi!", 1030, 675, { size: 17, color: C.green, align: 'left', weight: 600 });
-        text("• GitHub Pull Request'lari aynan shu uch nuqtali diffni namoyish etadi.", 1030, 720, { size: 16, color: C.cyan, align: 'left' });
+        card(1005, 435, 790, 160, { fill: 'rgba(79,140,255,0.08)', col: C.blue });
+        pill("2 · git diff --staged (Index ↔ HEAD)", 1200, 470, C.blue, { size: 16, mono: false });
+        text("• Index'dagi snapshot qoralamasini oxirgi commit bilan solishtiradi.", 1030, 515, { size: 17, color: C.text, align: 'left' });
+        text("• Keyingi commit'ga nimalar kirishini aniq belgilaydi.", 1030, 550, { size: 17, color: '#38bdf8', align: 'left', weight: 600 });
+        text("• '--cached' va '--staged' — to'liq sinonimlar, bir xil ishlaydi.", 1030, 580, { size: 15, color: C.mute, align: 'left' });
+        ctx.restore();
+      });
+
+      const kR3 = P(u, 13.5, 0.5);
+      withA(kR3, () => {
+        ctx.save(); ctx.translate(0, (1 - eo(kR3)) * 16);
+        card(1005, 615, 790, 170, { fill: 'rgba(52,211,153,0.08)', col: C.green });
+        pill("3 · git diff HEAD (Working Tree ↔ HEAD)", 1210, 650, C.green, { size: 16, mono: false });
+        text("• Staged va unstaged barcha o'zgarishlarni jamlab ko'rsatadi.", 1030, 695, { size: 17, color: C.text, align: 'left' });
+        text("• Oxirgi commit'dan beri diskda nimalar sodir bo'lganini bilish", 1030, 730, { size: 17, color: C.green, align: 'left', weight: 600 });
+        text("  va 'git commit -a' nimani saqlashini oldindan ko'rish uchun eng qulay.", 1030, 760, { size: 15, color: C.mute, align: 'left' });
+        ctx.restore();
+      });
+    });
+  }
+
+  // ==========================================
+  // 3-SAHNA: Patch Formatini O'qish (SPLIT SCREEN)
+  // ==========================================
+  function scenePatchFormati(u, bounds, o = {}) {
+    chip(3, "Patch Formatini O'qish San'ati", u, 0);
+
+    const kBox = eo(P(u, 0.2, 0.5));
+    withA(kBox, () => {
+      // Chap panel: Haqiqiy Terminal Diff Chiqishi
+      terminal(100, 140, 840, 680, {
+        title: 'bash — unified diff (80x24)',
+        p: kBox
+      });
+
+      const tu = o.isPoster ? 18.0 : u;
+
+      // Buyruq yozilishi (u: 0.6 to 2.0, Enter at 2.2)
+      drawCommandLine("kalkulyator $ ", "git diff hisob.py", 0.6, 2.0, 2.2, tu, 130, 205);
+
+      // Diff qatorlari chiqishi
+      drawOutputLine("diff --git a/hisob.py b/hisob.py", 2.4, tu, 130, 235, { color: '#64748b' });
+      drawOutputLine("index 6444213..6c51cef 100644", 2.7, tu, 130, 258, { color: '#64748b' });
+      drawOutputLine("--- a/hisob.py", 3.0, tu, 130, 285, { color: C.red, weight: 700 });
+      drawOutputLine("+++ b/hisob.py", 3.3, tu, 130, 308, { color: C.green, weight: 700 });
+      drawOutputLine("@@ -9,7 +9,7 @@ def bolish(a, b):", 3.6, tu, 130, 335, { color: '#38bdf8', weight: 700 });
+
+      drawOutputLine(" def kopaytirish(a, b):", 4.0, tu, 130, 362, { color: '#e2e8f0' });
+      drawOutputLine("-    natija = a * b", 4.4, tu, 130, 388, { color: C.red, weight: 700 });
+      drawOutputLine("+    natija = a * b  # ko'paytma", 4.8, tu, 130, 414, { color: C.green, weight: 700 });
+      drawOutputLine("     return natija", 5.2, tu, 130, 440, { color: '#94a3b8' });
+      drawOutputLine(" def bolish(a, b):", 5.5, tu, 130, 466, { color: '#e2e8f0' });
+      drawOutputLine("-        raise ValueError(\"nolga bo'lib bo'lmaydi\")", 5.9, tu, 130, 492, { color: C.red, weight: 700 });
+      drawOutputLine("+        raise ValueError(\"nolga bo'lish mumkin emas\")", 6.3, tu, 130, 518, { color: C.green, weight: 700 });
+      drawOutputLine("     return a / b", 6.7, tu, 130, 544, { color: '#94a3b8' });
+
+      // Pastki vizual eslatma
+      drawOutputLine("--------------------------------------------------", 7.5, tu, 130, 580, { color: '#334155' });
+      drawOutputLine("Qizil (-) : eskida bor edi, yangisida o'chirildi", 8.0, tu, 130, 608, { color: C.red, weight: 600 });
+      drawOutputLine("Yashil (+): yangi versiyada qo'shilgan qator", 8.4, tu, 130, 632, { color: C.green, weight: 600 });
+      drawOutputLine("Bo'shliq  : o'zgarmagan kontekst (standart 3 qator)", 8.8, tu, 130, 656, { color: C.mute });
+
+      // O'ng panel: Patch elementlari izohi
+      panel(980, 140, 840, 680, C.green, "Patch Belgilari Izohi", "har bir qator nimani anglatadi", kBox, kBox);
+
+      const kE1 = P(u, 1.5, 0.5);
+      withA(kE1, () => {
+        ctx.save(); ctx.translate(0, (1 - eo(kE1)) * 16);
+        card(1005, 255, 790, 150, { fill: 'rgba(255,107,107,0.08)', col: C.red });
+        pill("--- a/fayl va Qizil Qatorlar (-)", 1210, 290, C.red, { size: 16, mono: false });
+        text("• 'a/' versiyasi — eski fayl holati (oldingi snapshot).", 1030, 335, { size: 17, color: C.text, align: 'left' });
+        text("• Minus (-) bilan boshlangan qatorlar o'chirilganini bildiradi.", 1030, 370, { size: 17, color: C.red, align: 'left', weight: 600 });
+        ctx.restore();
+      });
+
+      const kE2 = P(u, 5.5, 0.5);
+      withA(kE2, () => {
+        ctx.save(); ctx.translate(0, (1 - eo(kE2)) * 16);
+        card(1005, 425, 790, 150, { fill: 'rgba(52,211,153,0.08)', col: C.green });
+        pill("+++ b/fayl va Yashil Qatorlar (+)", 1215, 460, C.green, { size: 16, mono: false });
+        text("• 'b/' versiyasi — yangi fayl holati (keyingi snapshot).", 1030, 505, { size: 17, color: C.text, align: 'left' });
+        text("• Plyus (+) bilan boshlangan qatorlar yangi kiritilganini bildiradi.", 1030, 540, { size: 17, color: C.green, align: 'left', weight: 600 });
+        ctx.restore();
+      });
+
+      const kE3 = P(u, 9.5, 0.5);
+      withA(kE3, () => {
+        ctx.save(); ctx.translate(0, (1 - eo(kE3)) * 16);
+        card(1005, 595, 790, 190, { fill: 'rgba(79,140,255,0.08)', col: C.blue });
+        pill("@@ -9,7 +9,7 @@ (Hunk Koordinatasi)", 1240, 630, C.blue, { size: 16, mono: false });
+        text("• Hunk — yaqin o'zgarishlar va uning atrofi koordinatasi:", 1030, 675, { size: 17, color: C.text, align: 'left' });
+        text("  '-9,7'  -> eski faylda 9-qatordan boshlab 7 ta qator,", 1030, 710, { size: 16, fam: MONO, color: C.mute, align: 'left' });
+        text("  '+9,7'  -> yangi faylda 9-qatordan boshlab 7 ta qator.", 1030, 745, { size: 16, fam: MONO, color: '#38bdf8', align: 'left', weight: 600 });
+        ctx.restore();
+      });
+    });
+  }
+
+  // ==========================================
+  // 4-SAHNA: Statistika va Brenchlar Farqi (SPLIT SCREEN)
+  // ==========================================
+  function sceneStatVaTaqqoslash(u, bounds, o = {}) {
+    chip(4, "Statistika va Brenchlar Farqi", u, 0);
+
+    const kBox = eo(P(u, 0.2, 0.5));
+    withA(kBox, () => {
+      // Chap panel: Real Terminal Oynasi
+      terminal(100, 140, 840, 680, {
+        title: 'bash — diffstat va brenchlar (80x24)',
+        p: kBox
+      });
+
+      const tu = o.isPoster ? 17.0 : u;
+
+      // 1-buyruq: git diff HEAD --stat (u: 0.8 to 2.4, Enter at 2.6)
+      drawCommandLine("kalkulyator $ ", "git diff HEAD --stat", 0.8, 2.4, 2.6, tu, 130, 205);
+      drawOutputLine(" README.md | 1 +", 2.9, tu, 130, 235, { color: C.green, weight: 600 });
+      drawOutputLine(" hisob.py  | 4 ++--", 3.2, tu, 130, 258, { color: '#f59e0b', weight: 600 });
+      drawOutputLine(" 2 files changed, 3 insertions(+), 2 deletions(-)", 3.6, tu, 130, 285, { color: '#38bdf8', weight: 700 });
+
+      // 2-buyruq: git diff main..feature (u: 5.5 to 7.2, Enter at 7.5)
+      drawCommandLine("kalkulyator $ ", "git diff main..feature", 5.5, 7.2, 7.5, tu, 130, 325);
+      drawOutputLine("diff --git a/hisob.py b/hisob.py", 7.8, tu, 130, 350, { color: '#64748b' });
+      drawOutputLine("@@ -20,3 +20,7 @@ def bolish(a, b):", 8.1, tu, 130, 372, { color: '#38bdf8' });
+      drawOutputLine("+def daraja(a, n):", 8.4, tu, 130, 395, { color: C.green, weight: 600 });
+      drawOutputLine("+    return a ** n", 8.7, tu, 130, 418, { color: C.green, weight: 600 });
+
+      // 3-buyruq: git diff --name-only (u: 10.5 to 12.0, Enter at 12.2)
+      drawCommandLine("kalkulyator $ ", "git diff --name-only HEAD~1", 10.5, 12.0, 12.2, tu, 130, 460);
+      drawOutputLine("README.md", 12.5, tu, 130, 485, { color: C.text });
+      drawOutputLine("hisob.py", 12.8, tu, 130, 508, { color: C.text });
+
+      // 4-buyruq: git diff commit1 commit2 (u: 13.8 to 15.2, Enter at 15.4)
+      drawCommandLine("kalkulyator $ ", "git diff 0da34c3 870427f --stat", 13.8, 15.2, 15.4, tu, 130, 545);
+      drawOutputLine(" hisob.py | 8 ++++++--", 15.7, tu, 130, 570, { color: C.green, weight: 600 });
+      drawOutputLine(" 1 file changed, 6 insertions(+), 2 deletions(-)", 16.0, tu, 130, 595, { color: '#38bdf8', weight: 600 });
+
+      // O'ng panel: Qisqa ko'rinish va Brenchlar
+      panel(980, 140, 840, 680, C.purple, "Statistika va Brenchlar Farqi", "qisqa ko'rinish va taqqoslash", kBox, kBox);
+
+      const kD1 = P(u, 1.0, 0.5);
+      withA(kD1, () => {
+        ctx.save(); ctx.translate(0, (1 - eo(kD1)) * 16);
+        card(1005, 255, 790, 160, { fill: 'rgba(255,209,102,0.08)', col: C.yellow });
+        pill("--stat (Diffstat Gistogrammasi)", 1190, 290, C.yellow, { size: 16, mono: false });
+        text("• Yuzlab qatorlarni o'qimasdan oldin umumiy manzarani beradi.", 1030, 335, { size: 17, color: C.text, align: 'left' });
+        text("• Qaysi fayllar o'zgargani va ulardagi + / - nisbatini ko'rsatadi.", 1030, 370, { size: 17, color: C.yellow, align: 'left', weight: 600 });
+        text("• '--name-only' — faqat fayl nomlari ro'yxatini qaytaradi.", 1030, 400, { size: 15, color: C.mute, align: 'left' });
+        ctx.restore();
+      });
+
+      const kD2 = P(u, 6.0, 0.5);
+      withA(kD2, () => {
+        ctx.save(); ctx.translate(0, (1 - eo(kD2)) * 16);
+        card(1005, 435, 790, 180, { fill: 'rgba(180,108,255,0.08)', col: C.purple });
+        pill("Ikki Nuqta (..) vs Uch Nuqta (...)", 1210, 470, C.purple, { size: 16, mono: false });
+        text("• main..feature — ikki brench uchlarini to'g'ridan-to'g'ri solishtiradi.", 1030, 515, { size: 17, color: C.text, align: 'left' });
+        text("• main...feature — umumiy ajdoddan beri aynan feature'da qilingan ishlar.", 1030, 550, { size: 17, color: '#38bdf8', align: 'left', weight: 600 });
+        text("• GitHub Pull Request'lari aynan uch nuqtali diffni namoyish etadi!", 1030, 580, { size: 15, color: C.purple, align: 'left', weight: 600 });
+        ctx.restore();
+      });
+
+      const kD3 = P(u, 11.0, 0.5);
+      withA(kD3, () => {
+        ctx.save(); ctx.translate(0, (1 - eo(kD3)) * 16);
+        card(1005, 630, 790, 155, { fill: 'rgba(79,140,255,0.08)', col: C.blue });
+        pill("Ixtiyoriy Commitlarni Solishtirish", 1200, 665, C.blue, { size: 16, mono: false });
+        text("$ git diff <commit1> <commit2>", 1030, 710, { size: 18, fam: MONO, color: C.cyan, align: 'left', weight: 700 });
+        text("Tarix bo'ylab istalgan ikki commit orasidagi farqni bilish mumkin.", 1030, 750, { size: 16, color: C.text, align: 'left' });
         ctx.restore();
       });
     });
@@ -356,15 +418,15 @@
     const kBase = eo(P(u, 0.2, 0.5));
     withA(kBase, () => {
       // Chap panel: Mutlaq xavfsizlik
-      panel(100, 140, 840, 680, C.green, "100% Xavfsiz Buyruq", "hech qachon kodingizga tegmaydi", kBase, kBase);
+      panel(100, 140, 840, 680, C.green, "100% Xavfsiz Buyruq", "faqat o'qish rejimida ishlaydi", kBase, kBase);
 
       const kS1 = P(u, 0.6, 0.5);
       withA(kS1, () => {
         ctx.save(); ctx.translate(0, (1 - eo(kS1)) * 16);
         card(125, 255, 790, 160, { fill: 'rgba(52,211,153,0.08)', col: C.green });
         pill("Faqat O'qish (Read-Only)", 240, 290, C.green, { size: 16, mono: false });
-        text("• git diff hech narsani o'zgartirmaydi va hech narsani o'chirmaydi.", 150, 335, { size: 17, color: C.text, align: 'left' });
-        text("• U faqat mavjud holatlarni tahlil qilib ekranga chiqaradi.", 150, 375, { size: 17, color: C.green, align: 'left', weight: 600 });
+        text("• git diff kodingizga hech qachon teginmaydi va o'zgartirmaydi.", 150, 335, { size: 17, color: C.text, align: 'left' });
+        text("• U faqat disk, index va obyektlar bazasini qiyoslab o'qiydi.", 150, 375, { size: 17, color: C.green, align: 'left', weight: 600 });
         ctx.restore();
       });
 
@@ -394,24 +456,25 @@
       const kO1 = P(u, 7.5, 0.5);
       withA(kO1, () => {
         ctx.save(); ctx.translate(0, (1 - eo(kO1)) * 16);
-        card(1005, 255, 790, 240, { fill: 'rgba(255,209,102,0.08)', col: C.yellow });
+        card(1005, 255, 790, 220, { fill: 'rgba(255,209,102,0.08)', col: C.yellow });
         pill("Commit Oldidan Tekshiruv", 1150, 290, C.yellow, { size: 16, mono: false });
         text("1. Fayllarni stage qildingiz: $ git add .", 1030, 335, { size: 17, fam: MONO, color: C.text, align: 'left' });
         text("2. DARHOL commit qilmang! Avval tekshiring:", 1030, 375, { size: 17, color: C.yellow, align: 'left', weight: 700 });
-        text("   $ git diff --staged", 1030, 415, { size: 18, fam: MONO, color: C.cyan, align: 'left', weight: 800 });
-        text("3. Har bir qatorni ko'zdan kechirib, so'ng commit qiling.", 1030, 460, { size: 17, color: C.green, align: 'left', weight: 600 });
+        text("   $ git diff --staged", 1030, 415, { size: 18, fam: MONO, color: '#38bdf8', align: 'left', weight: 800 });
+        text("3. Har bir qatorni ko'zdan kechirib, so'ng commit qiling.", 1030, 455, { size: 17, color: C.green, align: 'left', weight: 600 });
         ctx.restore();
       });
 
       const kO2 = P(u, 10.5, 0.5);
       withA(kO2, () => {
         ctx.save(); ctx.translate(0, (1 - eo(kO2)) * 16);
-        card(1005, 520, 790, 265, { fill: 'rgba(180,108,255,0.08)', col: C.purple });
-        pill("Nimalardan Himoya Qiladi?", 1140, 555, C.purple, { size: 16, mono: false });
-        text("• Test paytida yozilgan 'console.log' va debug kodlari qolib ketmaydi.", 1030, 600, { size: 17, color: C.text, align: 'left' });
-        text("• Tasodifiy probellar va noto'g'ri formatlashlar tarixga kirmaydi.", 1030, 640, { size: 17, color: C.purple, align: 'left', weight: 600 });
-        text("• Commit xabarini aniqroq va professionalroq yozishga yordam beradi.", 1030, 680, { size: 16, color: C.cyan, align: 'left' });
-        text("• Jamoangizdagi Code Review jarayonini yengillashtiradi.", 1030, 720, { size: 16, color: C.mute, align: 'left' });
+        card(1005, 495, 790, 290, { fill: 'rgba(180,108,255,0.08)', col: C.purple });
+        pill("Nimalardan Himoya Qiladi?", 1140, 530, C.purple, { size: 16, mono: false });
+        text("• Test paytida yozilgan 'console.log' va debug kodlari qolib ketmaydi.", 1030, 575, { size: 17, color: C.text, align: 'left' });
+        text("• Tasodifiy probellar va noto'g'ri formatlashlar tarixga kirmaydi.", 1030, 615, { size: 17, color: C.purple, align: 'left', weight: 600 });
+        text("• Commit xabarini aniqroq va professionalroq yozishga yordam beradi.", 1030, 655, { size: 16, color: '#38bdf8', align: 'left' });
+        text("• Jamoangizdagi Code Review jarayonini sezilarli yengillashtiradi.", 1030, 695, { size: 16, color: C.green, align: 'left', weight: 600 });
+        text("• Maxfiy kalitlar (.env) tasodifan commit bo'lishini to'xtatadi.", 1030, 735, { size: 16, color: C.red, align: 'left', weight: 600 });
         ctx.restore();
       });
     });
@@ -434,25 +497,31 @@
 
         // 3 blok
         // Blok 1: Oddiy diff (x=140)
-        card(140, 260, 420, 200, { fill: 'rgba(255,209,102,0.10)', col: C.yellow, lw: 2 });
-        pill("git diff", 350, 305, C.yellow, { size: 20 });
-        text("Stage Qilinmagan Farqlar", 350, 350, { size: 18, weight: 700, color: C.text });
-        text("Working Tree ↔ Index", 350, 385, { size: 15, fam: MONO, color: C.mute });
-        text("Yana nimani qo'shishim kerak?", 350, 420, { size: 16, color: C.yellow, weight: 600 });
+        card(140, 260, 480, 210, { fill: 'rgba(255,209,102,0.10)', col: C.yellow, lw: 2 });
+        pill("git diff", 380, 305, C.yellow, { size: 20 });
+        text("Stage Qilinmagan Farqlar", 380, 350, { size: 18, weight: 700, color: C.text });
+        text("Working Tree ↔ Index", 380, 385, { size: 15, fam: MONO, color: C.mute });
+        text("Yana nimani qo'shishim kerak?", 380, 420, { size: 16, color: C.yellow, weight: 600 });
 
-        // Blok 2: diff --staged (x=686)
-        card(686, 260, 546, 200, { fill: 'rgba(79,140,255,0.10)', col: C.blue, lw: 2 });
+        // Blok 2: diff --staged (x=680)
+        card(680, 260, 560, 210, { fill: 'rgba(79,140,255,0.10)', col: C.blue, lw: 2 });
         pill("git diff --staged", 960, 305, C.blue, { size: 20 });
         text("Commitga Kiradigan O'zgarishlar", 960, 350, { size: 18, weight: 700, color: C.text });
         text("Index ↔ HEAD", 960, 385, { size: 15, fam: MONO, color: C.mute });
         text("Keyingi commitga nimalar kiradi?", 960, 420, { size: 16, color: C.blue, weight: 600 });
 
-        // Blok 3: diff HEAD (x=1272)
-        card(1272, 260, 508, 200, { fill: 'rgba(52,211,153,0.10)', col: C.green, lw: 2 });
-        pill("git diff HEAD", 1526, 305, C.green, { size: 20 });
-        text("Barcha O'zgarishlar Jamlanmasi", 1526, 350, { size: 18, weight: 700, color: C.text });
-        text("Working Tree ↔ HEAD", 1526, 385, { size: 15, fam: MONO, color: C.mute });
-        text("Oxirgi commitdan beri butun farq", 1526, 420, { size: 16, color: C.green, weight: 600 });
+        // Blok 3: diff HEAD (x=1300)
+        card(1300, 260, 480, 210, { fill: 'rgba(52,211,153,0.10)', col: C.green, lw: 2 });
+        pill("git diff HEAD", 1540, 305, C.green, { size: 20 });
+        text("Barcha O'zgarishlar Jamlanmasi", 1540, 350, { size: 18, weight: 700, color: C.text });
+        text("Working Tree ↔ HEAD", 1540, 385, { size: 15, fam: MONO, color: C.mute });
+        text("Oxirgi commitdan beri butun farq", 1540, 420, { size: 16, color: C.green, weight: 600 });
+
+        // Qo'shimcha qulay bayroqlar
+        card(140, 490, 1640, 125, { fill: 'rgba(15,22,48,0.92)', col: C.border });
+        pill("Qo'shimcha Qulay Bayroqlar", 300, 520, C.mute, { size: 16, mono: false });
+        text("• $ git diff --stat        -> O'zgargan fayllar va qatorlar soni gistogrammasi", 170, 558, { size: 16, fam: MONO, color: '#38bdf8', align: 'left' });
+        text("• $ git diff main..feature -> Ikki brench orasidagi o'zgarishlarni solishtirish", 170, 588, { size: 16, fam: MONO, color: C.green, align: 'left' });
 
         ctx.restore();
       });
@@ -480,7 +549,7 @@
       { id: 'intro', fn: sceneIntro },
       { id: 'uch_diff', fn: sceneUchDiff },
       { id: 'patch_formati', fn: scenePatchFormati },
-      { id: 'commitlar_farqi', fn: sceneCommitlarFarqi },
+      { id: 'stat_va_taqqoslash', fn: sceneStatVaTaqqoslash },
       { id: 'xavfsizlik_va_amaliyot', fn: sceneXavfsizlik },
       { id: 'xulosa', fn: sceneXulosa }
     ];

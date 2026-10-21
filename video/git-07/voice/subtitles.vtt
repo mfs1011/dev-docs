@@ -1,61 +1,61 @@
 WEBVTT
 
 1
-00:01.420 --> 00:09.860
-Salom! Ushbu yettinchi bobda fayllar ichida aynan nimalar o‘zgarganini
-qatorlar kesimida ko‘rsatuvchi git diff buyrug‘ini o‘rganamiz.
+00:01.420 --> 00:09.220
+Salom! Ushbu yettinchi bobda fayllar ichida aynan qaysi qatorlar
+o‘zgarganini aniq ko‘rsatuvchi git diff buyrug‘ini o‘rganamiz.
 
 2
-00:10.070 --> 00:16.700
-U ikki holatni solishtirib, qo‘shilgan, o‘chirilgan va
-o‘zgargan kodlarni aniq patch shaklida namoyish etadi.
+00:09.410 --> 00:15.500
+U ikki holatni qiyoslab, qo‘shilgan, o‘chirilgan va
+o‘zgargan kodlarni qulay patch shaklida namoyish etadi.
 
 3
-00:19.690 --> 00:26.720
+00:18.910 --> 00:25.840
 Oddiy git diff buyrug‘i diskdagi ishchi papkani indeks bilan
-solishtirib, hali stage qilinmagan o‘zgarishlarni ko‘rsatadi.
+solishtirib, hali stage qilinmagan qoralamalarni ko‘rsatadi.
 
 4
-00:27.000 --> 00:35.310
+00:26.170 --> 00:33.850
 git diff minus minus steyjd esa indeks va oxirgi kommit o‘rtasidagi
 farqni, ya’ni navbatdagi kommitga aynan nima kirishini bildiradi.
 
 5
-00:38.340 --> 00:46.540
+00:37.940 --> 00:45.870
 Diff natijasidagi minus belgili qizil qatorlar eskida bor bo‘lib o‘chirilganini,
-plyus belgili yashil qatorlar esa yangi qo‘shilganini anglatadi.
+plyus belgili yashil qatorlar esa yangi qo‘shilganini bildiradi.
 
 6
-00:46.630 --> 00:53.320
-Boshidagi guruhli sonlar esa faylning qaysi qatorlar
-diapazoniga daxldor ekanini bildiruvchi xank koordinatalaridir.
+00:46.030 --> 00:52.440
+Boshidagi guruhli sonlar esa faylning qaysi qatorlar diapazoniga
+tegishli ekanini bildiruvchi xank koordinatalaridir.
 
 7
-00:56.230 --> 01:03.590
-Git diff yordamida nafaqat ishchi hududlarni, balki istalgan ikkita
-kommit yoki brenchlar orasidagi farqni ham tekshirish mumkin.
+00:56.230 --> 01:03.220
+Katta o‘zgarishlarda minus minus stat bayrog‘i orqali qaysi fayllarda
+qancha qator o‘zgarganini ixcham gistogrammada ko‘rish mumkin.
 
 8
-01:03.560 --> 01:10.030
-Masalan, meyn va ficher brenchlari orasidagi farqni bilish
-loyihada nimalar yangilanganini bir zumda ochib beradi.
+01:03.570 --> 01:09.830
+Shuningdek, git diff bilan istalgan ikki kommit yoki brenchlar
+orasidagi butun loyiha farqini ham tahlil qilish mumkin.
 
 9
-01:13.000 --> 01:19.240
-Eng muhim xususiyat: git diff faqat o‘qish rejimida
-ishlaydi, u kodingizga hech qachon zarar yetkazmaydi.
+01:13.620 --> 01:20.630
+Eng muhim qoida: git diff faqat o‘qish rejimida ishlaydi, u
+fayllarga hech qachon zarar yetkazmaydi yoki o‘chirib yubormaydi.
 
 10
-01:19.230 --> 01:25.140
-Shuning uchun har bir kommitdan oldin git diff minus
-minus steyjd bilan tekshirib olish eng toza odatdir.
+01:20.780 --> 01:27.820
+Shuning uchun har bir kommitdan oldin git diff minus minus steyjd
+buyrug‘i bilan kodni ko‘zdan kechirish dasturchining oltin odatidir.
 
 11
-01:27.930 --> 01:35.230
+01:31.630 --> 01:38.260
 Xulosa qilib aytganda, git diff — o‘zgarishlarni ko‘r-ko‘rona
-emas, ongli va xatosiz saqlashning eng ishonchli kompasidir.
+emas, toza va ongli saqlashning eng ishonchli kompasidir.
 
 12
-01:35.260 --> 01:40.870
-Keyingi bobda keraksiz fayllarni chetlab o‘tuvchi
-gitignore qoidalarini ko‘rib chiqamiz. Rahmat!
+01:38.420 --> 01:44.690
+Keyingi sakkizinchi bobda keraksiz fayllarni chetlab
+o‘tuvchi gitignore qoidalarini amalda o‘rganamiz. Rahmat!

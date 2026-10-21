@@ -2,11 +2,11 @@
   {
     "id": "l1",
     "scene": "intro",
-    "text": "Salom! Ushbu yettinchi bobda fayllar ichida aynan nimalar o‘zgarganini qatorlar kesimida ko‘rsatuvchi git diff buyrug‘ini o‘rganamiz.",
-    "show": "Salom! Ushbu yettinchi bobda fayllar ichida aynan nimalar o‘zgarganini qatorlar kesimida ko‘rsatuvchi git diff buyrug‘ini o‘rganamiz.",
-    "say": "Salom! Ushbu yettinchi bobda fayllar ichida aynan nimalar o‘zgarganini qatorlar kesimida ko‘rsatuvchi git diff buyrug‘ini o‘rganamiz.",
+    "text": "Salom! Ushbu yettinchi bobda fayllar ichida aynan qaysi qatorlar o‘zgarganini aniq ko‘rsatuvchi git diff buyrug‘ini o‘rganamiz.",
+    "show": "Salom! Ushbu yettinchi bobda fayllar ichida aynan qaysi qatorlar o‘zgarganini aniq ko‘rsatuvchi git diff buyrug‘ini o‘rganamiz.",
+    "say": "Salom! Ushbu yettinchi bobda fayllar ichida aynan qaysi qatorlar o‘zgarganini aniq ko‘rsatuvchi git diff buyrug‘ini o‘rganamiz.",
     "a0": 0.18,
-    "a1": 8.17,
+    "a1": 7.53,
     "words": [
       {
         "w": "Salom!",
@@ -15,245 +15,245 @@
       },
       {
         "w": "Ushbu",
-        "s": 1.06,
-        "e": 1.28
+        "s": 0.96,
+        "e": 1.22
       },
       {
         "w": "yettinchi",
-        "s": 1.4,
-        "e": 1.78
+        "s": 1.32,
+        "e": 1.76
       },
       {
         "w": "bobda",
-        "s": 1.82,
-        "e": 2.14
+        "s": 1.78,
+        "e": 2.06
       },
       {
         "w": "fayllar",
-        "s": 2.36,
-        "e": 2.78
+        "s": 2.28,
+        "e": 2.74
       },
       {
         "w": "ichida",
-        "s": 2.86,
-        "e": 3.12
+        "s": 2.82,
+        "e": 3.04
       },
       {
         "w": "aynan",
-        "s": 3.3,
-        "e": 3.62
+        "s": 3.14,
+        "e": 3.38
       },
       {
-        "w": "nimalar",
-        "s": 3.78,
-        "e": 4.14
-      },
-      {
-        "w": "o‘zgarganini",
-        "s": 4.26,
-        "e": 4.88
+        "w": "qaysi",
+        "s": 3.44,
+        "e": 3.74
       },
       {
         "w": "qatorlar",
-        "s": 4.94,
-        "e": 5.38
+        "s": 3.8,
+        "e": 4.22
       },
       {
-        "w": "kesimida",
-        "s": 5.42,
-        "e": 5.78
+        "w": "o‘zgarganini",
+        "s": 4.34,
+        "e": 4.9
+      },
+      {
+        "w": "aniq",
+        "s": 5.0,
+        "e": 5.2
       },
       {
         "w": "ko‘rsatuvchi",
-        "s": 5.84,
-        "e": 6.36
+        "s": 5.26,
+        "e": 5.78
       },
       {
         "w": "git",
-        "s": 6.74,
-        "e": 6.94
+        "s": 6.14,
+        "e": 6.32
       },
       {
         "w": "diff",
-        "s": 7.08,
-        "e": 7.28
+        "s": 6.44,
+        "e": 6.62
       },
       {
         "w": "buyrug‘ini",
-        "s": 7.34,
-        "e": 7.73
+        "s": 6.7,
+        "e": 7.08
       },
       {
         "w": "o‘rganamiz.",
-        "s": 7.77,
-        "e": 8.17
+        "s": 7.12,
+        "e": 7.53
       }
     ]
   },
   {
     "id": "l2",
     "scene": "intro",
-    "text": "U ikki holatni solishtirib, qo‘shilgan, o‘chirilgan va o‘zgargan kodlarni aniq patch shaklida namoyish etadi.",
-    "show": "U ikki holatni solishtirib, qo‘shilgan, o‘chirilgan va o‘zgargan kodlarni aniq patch shaklida namoyish etadi.",
-    "say": "U ikki holatni solishtirib, qo‘shilgan, o‘chirilgan va o‘zgargan kodlarni aniq patch shaklida namoyish etadi.",
-    "a0": 8.83,
-    "a1": 15.01,
+    "text": "U ikki holatni qiyoslab, qo‘shilgan, o‘chirilgan va o‘zgargan kodlarni qulay patch shaklida namoyish etadi.",
+    "show": "U ikki holatni qiyoslab, qo‘shilgan, o‘chirilgan va o‘zgargan kodlarni qulay patch shaklida namoyish etadi.",
+    "say": "U ikki holatni qiyoslab, qo‘shilgan, o‘chirilgan va o‘zgargan kodlarni qulay patch shaklida namoyish etadi.",
+    "a0": 8.17,
+    "a1": 13.81,
     "words": [
       {
         "w": "U",
-        "s": 8.83,
-        "e": 8.85
+        "s": 8.17,
+        "e": 8.19
       },
       {
         "w": "ikki",
-        "s": 9.15,
-        "e": 9.33
+        "s": 8.41,
+        "e": 8.63
       },
       {
         "w": "holatni",
-        "s": 9.37,
-        "e": 9.73
+        "s": 8.69,
+        "e": 9.05
       },
       {
-        "w": "solishtirib,",
-        "s": 9.77,
-        "e": 10.23
+        "w": "qiyoslab,",
+        "s": 9.11,
+        "e": 9.53
       },
       {
         "w": "qo‘shilgan,",
-        "s": 10.43,
-        "e": 11.01
+        "s": 9.63,
+        "e": 10.11
       },
       {
         "w": "o‘chirilgan",
-        "s": 11.27,
-        "e": 11.83
+        "s": 10.43,
+        "e": 10.93
       },
       {
         "w": "va",
-        "s": 11.93,
-        "e": 12.01
+        "s": 11.01,
+        "e": 11.07
       },
       {
         "w": "o‘zgargan",
-        "s": 12.23,
-        "e": 12.73
+        "s": 11.17,
+        "e": 11.61
       },
       {
         "w": "kodlarni",
-        "s": 12.79,
-        "e": 13.25
+        "s": 11.65,
+        "e": 12.07
       },
       {
-        "w": "aniq",
-        "s": 13.41,
-        "e": 13.61
+        "w": "qulay",
+        "s": 12.15,
+        "e": 12.41
       },
       {
         "w": "patch",
-        "s": 13.77,
-        "e": 13.99
+        "s": 12.53,
+        "e": 12.73
       },
       {
         "w": "shaklida",
-        "s": 14.03,
-        "e": 14.39
+        "s": 12.77,
+        "e": 13.13
       },
       {
         "w": "namoyish",
-        "s": 14.45,
-        "e": 14.77
+        "s": 13.19,
+        "e": 13.55
       },
       {
         "w": "etadi.",
-        "s": 14.79,
-        "e": 15.01
+        "s": 13.57,
+        "e": 13.81
       }
     ]
   },
   {
     "id": "l3",
     "scene": "uch_diff",
-    "text": "Oddiy git diff buyrug‘i diskdagi ishchi papkani indeks bilan solishtirib, hali stage qilinmagan o‘zgarishlarni ko‘rsatadi.",
-    "show": "Oddiy git diff buyrug‘i diskdagi ishchi papkani indeks bilan solishtirib, hali stage qilinmagan o‘zgarishlarni ko‘rsatadi.",
-    "say": "Oddiy git diff buyrug‘i diskdagi ishchi papkani indeks bilan solishtirib, hali stage qilinmagan o‘zgarishlarni ko‘rsatadi.",
-    "a0": 15.85,
-    "a1": 22.43,
+    "text": "Oddiy git diff buyrug‘i diskdagi ishchi papkani indeks bilan solishtirib, hali stage qilinmagan qoralamalarni ko‘rsatadi.",
+    "show": "Oddiy git diff buyrug‘i diskdagi ishchi papkani indeks bilan solishtirib, hali stage qilinmagan qoralamalarni ko‘rsatadi.",
+    "say": "Oddiy git diff buyrug‘i diskdagi ishchi papkani indeks bilan solishtirib, hali steyj qilinmagan qoralamalarni ko‘rsatadi.",
+    "a0": 14.57,
+    "a1": 21.05,
     "words": [
       {
         "w": "Oddiy",
-        "s": 15.85,
-        "e": 16.09
+        "s": 14.57,
+        "e": 14.85
       },
       {
         "w": "git",
-        "s": 16.27,
-        "e": 16.47
+        "s": 15.07,
+        "e": 15.25
       },
       {
         "w": "diff",
-        "s": 16.57,
-        "e": 16.77
+        "s": 15.37,
+        "e": 15.55
       },
       {
         "w": "buyrug‘i",
-        "s": 16.83,
-        "e": 17.21
+        "s": 15.63,
+        "e": 15.99
       },
       {
         "w": "diskdagi",
-        "s": 17.43,
-        "e": 17.87
+        "s": 16.21,
+        "e": 16.67
       },
       {
         "w": "ishchi",
-        "s": 17.95,
-        "e": 18.17
+        "s": 16.77,
+        "e": 16.99
       },
       {
         "w": "papkani",
-        "s": 18.21,
-        "e": 18.61
+        "s": 17.03,
+        "e": 17.43
       },
       {
         "w": "indeks",
-        "s": 18.77,
-        "e": 19.11
+        "s": 17.57,
+        "e": 17.91
       },
       {
         "w": "bilan",
-        "s": 19.13,
-        "e": 19.31
+        "s": 17.95,
+        "e": 18.11
       },
       {
         "w": "solishtirib,",
-        "s": 19.37,
-        "e": 19.83
+        "s": 18.15,
+        "e": 18.61
       },
       {
         "w": "hali",
-        "s": 20.07,
-        "e": 20.29
+        "s": 18.87,
+        "e": 19.07
       },
       {
-        "w": "stage",
-        "s": 20.51,
-        "e": 20.81
+        "w": "steyj",
+        "s": 19.11,
+        "e": 19.37
       },
       {
         "w": "qilinmagan",
-        "s": 20.85,
-        "e": 21.37
+        "s": 19.45,
+        "e": 19.91
       },
       {
-        "w": "o‘zgarishlarni",
-        "s": 21.45,
-        "e": 21.99
+        "w": "qoralamalarni",
+        "s": 19.95,
+        "e": 20.57
       },
       {
         "w": "ko‘rsatadi.",
-        "s": 22.01,
-        "e": 22.43
+        "s": 20.61,
+        "e": 21.05
       }
     ]
   },
@@ -263,801 +263,841 @@
     "text": "git diff minus minus steyjd esa indeks va oxirgi kommit o‘rtasidagi farqni, ya’ni navbatdagi kommitga aynan nima kirishini bildiradi.",
     "show": "git diff minus minus steyjd esa indeks va oxirgi kommit o‘rtasidagi farqni, ya’ni navbatdagi kommitga aynan nima kirishini bildiradi.",
     "say": "Git diff minus minus steyjd esa indeks va oxirgi kommit o‘rtasidagi farqni, ya’ni navbatdagi kommitga aynan nima kirishini bildiradi.",
-    "a0": 23.16,
-    "a1": 31.02,
+    "a0": 21.83,
+    "a1": 29.06,
     "words": [
       {
         "w": "Git",
-        "s": 23.16,
-        "e": 23.32
+        "s": 21.83,
+        "e": 22.01
       },
       {
         "w": "diff",
-        "s": 23.38,
-        "e": 23.6
+        "s": 22.11,
+        "e": 22.29
       },
       {
         "w": "minus",
-        "s": 23.76,
-        "e": 24.02
+        "s": 22.39,
+        "e": 22.66
       },
       {
         "w": "minus",
-        "s": 24.06,
-        "e": 24.28
+        "s": 22.7,
+        "e": 22.9
       },
       {
         "w": "steyjd",
-        "s": 24.36,
-        "e": 24.76
+        "s": 22.96,
+        "e": 23.3
       },
       {
         "w": "esa",
-        "s": 24.84,
-        "e": 25.04
+        "s": 23.36,
+        "e": 23.52
       },
       {
         "w": "indeks",
-        "s": 25.44,
-        "e": 25.8
+        "s": 23.86,
+        "e": 24.16
       },
       {
         "w": "va",
-        "s": 25.86,
-        "e": 25.92
+        "s": 24.22,
+        "e": 24.28
       },
       {
         "w": "oxirgi",
-        "s": 26.1,
-        "e": 26.42
+        "s": 24.4,
+        "e": 24.72
       },
       {
         "w": "kommit",
-        "s": 26.48,
-        "e": 26.76
+        "s": 24.78,
+        "e": 25.06
       },
       {
         "w": "o‘rtasidagi",
-        "s": 26.82,
-        "e": 27.3
+        "s": 25.12,
+        "e": 25.62
       },
       {
         "w": "farqni,",
-        "s": 27.4,
-        "e": 27.76
+        "s": 25.68,
+        "e": 26.02
       },
       {
         "w": "ya’ni",
-        "s": 28.08,
-        "e": 28.24
+        "s": 26.14,
+        "e": 26.34
       },
       {
         "w": "navbatdagi",
-        "s": 28.52,
-        "e": 29.08
+        "s": 26.66,
+        "e": 27.2
       },
       {
         "w": "kommitga",
-        "s": 29.14,
-        "e": 29.48
+        "s": 27.26,
+        "e": 27.66
       },
       {
         "w": "aynan",
-        "s": 29.64,
-        "e": 29.92
+        "s": 27.76,
+        "e": 28.02
       },
       {
         "w": "nima",
-        "s": 30.06,
-        "e": 30.24
+        "s": 28.1,
+        "e": 28.28
       },
       {
         "w": "kirishini",
-        "s": 30.3,
-        "e": 30.64
+        "s": 28.34,
+        "e": 28.66
       },
       {
         "w": "bildiradi.",
-        "s": 30.66,
-        "e": 31.02
+        "s": 28.7,
+        "e": 29.06
       }
     ]
   },
   {
     "id": "l5",
     "scene": "patch_formati",
-    "text": "Diff natijasidagi minus belgili qizil qatorlar eskida bor bo‘lib o‘chirilganini, plyus belgili yashil qatorlar esa yangi qo‘shilganini anglatadi.",
-    "show": "Diff natijasidagi minus belgili qizil qatorlar eskida bor bo‘lib o‘chirilganini, plyus belgili yashil qatorlar esa yangi qo‘shilganini anglatadi.",
-    "say": "Diff natijasidagi minus belgili qizil qatorlar eskida bor bo‘lib o‘chirilganini, plyus belgili yashil qatorlar esa yangi qo‘shilganini anglatadi.",
-    "a0": 31.9,
-    "a1": 39.65,
+    "text": "Diff natijasidagi minus belgili qizil qatorlar eskida bor bo‘lib o‘chirilganini, plyus belgili yashil qatorlar esa yangi qo‘shilganini bildiradi.",
+    "show": "Diff natijasidagi minus belgili qizil qatorlar eskida bor bo‘lib o‘chirilganini, plyus belgili yashil qatorlar esa yangi qo‘shilganini bildiradi.",
+    "say": "Diff natijasidagi minus belgili qizil qatorlar eskida bor bo‘lib o‘chirilganini, plyus belgili yashil qatorlar esa yangi qo‘shilganini bildiradi.",
+    "a0": 30.0,
+    "a1": 37.48,
     "words": [
       {
         "w": "Diff",
-        "s": 31.9,
-        "e": 32.06
+        "s": 30.0,
+        "e": 30.12
       },
       {
         "w": "natijasidagi",
-        "s": 32.12,
-        "e": 32.76
+        "s": 30.14,
+        "e": 30.78
       },
       {
         "w": "minus",
-        "s": 32.86,
-        "e": 33.16
+        "s": 30.86,
+        "e": 31.14
       },
       {
         "w": "belgili",
-        "s": 33.22,
-        "e": 33.52
+        "s": 31.2,
+        "e": 31.5
       },
       {
         "w": "qizil",
-        "s": 33.64,
-        "e": 33.9
+        "s": 31.58,
+        "e": 31.8
       },
       {
         "w": "qatorlar",
-        "s": 33.94,
-        "e": 34.4
+        "s": 31.84,
+        "e": 32.28
       },
       {
         "w": "eskida",
-        "s": 34.6,
-        "e": 34.9
+        "s": 32.44,
+        "e": 32.74
       },
       {
         "w": "bor",
-        "s": 34.98,
-        "e": 35.14
+        "s": 32.8,
+        "e": 32.94
       },
       {
         "w": "bo‘lib",
-        "s": 35.2,
-        "e": 35.42
+        "s": 33.0,
+        "e": 33.2
       },
       {
         "w": "o‘chirilganini,",
-        "s": 35.48,
-        "e": 36.14
+        "s": 33.26,
+        "e": 33.9
       },
       {
         "w": "plyus",
-        "s": 36.56,
-        "e": 36.8
+        "s": 34.3,
+        "e": 34.56
       },
       {
         "w": "belgili",
-        "s": 36.84,
-        "e": 37.12
+        "s": 34.62,
+        "e": 34.92
       },
       {
         "w": "yashil",
-        "s": 37.2,
-        "e": 37.46
+        "s": 34.98,
+        "e": 35.26
       },
       {
         "w": "qatorlar",
-        "s": 37.51,
-        "e": 37.89
+        "s": 35.3,
+        "e": 35.7
       },
       {
         "w": "esa",
-        "s": 37.93,
-        "e": 38.07
+        "s": 35.74,
+        "e": 35.88
       },
       {
         "w": "yangi",
-        "s": 38.39,
-        "e": 38.63
+        "s": 36.16,
+        "e": 36.44
       },
       {
         "w": "qo‘shilganini",
-        "s": 38.67,
-        "e": 39.21
+        "s": 36.5,
+        "e": 37.1
       },
       {
-        "w": "anglatadi.",
-        "s": 39.23,
-        "e": 39.65
+        "w": "bildiradi.",
+        "s": 37.14,
+        "e": 37.48
       }
     ]
   },
   {
     "id": "l6",
     "scene": "patch_formati",
-    "text": "Boshidagi guruhli sonlar esa faylning qaysi qatorlar diapazoniga daxldor ekanini bildiruvchi xank koordinatalaridir.",
-    "show": "Boshidagi guruhli sonlar esa faylning qaysi qatorlar diapazoniga daxldor ekanini bildiruvchi xank koordinatalaridir.",
-    "say": "Boshidagi guruhli sonlar esa faylning qaysi qatorlar diapazoniga daxldor ekanini bildiruvchi xank koordinatalaridir.",
-    "a0": 40.19,
-    "a1": 46.43,
+    "text": "Boshidagi guruhli sonlar esa faylning qaysi qatorlar diapazoniga tegishli ekanini bildiruvchi xank koordinatalaridir.",
+    "show": "Boshidagi guruhli sonlar esa faylning qaysi qatorlar diapazoniga tegishli ekanini bildiruvchi xank koordinatalaridir.",
+    "say": "Boshidagi guruhli sonlar esa faylning qaysi qatorlar diapazoniga tegishli ekanini bildiruvchi xank koordinatalaridir.",
+    "a0": 38.09,
+    "a1": 44.05,
     "words": [
       {
         "w": "Boshidagi",
-        "s": 40.19,
-        "e": 40.59
+        "s": 38.09,
+        "e": 38.51
       },
       {
         "w": "guruhli",
-        "s": 40.65,
-        "e": 40.97
+        "s": 38.57,
+        "e": 38.87
       },
       {
         "w": "sonlar",
-        "s": 41.03,
-        "e": 41.33
+        "s": 38.91,
+        "e": 39.21
       },
       {
         "w": "esa",
-        "s": 41.39,
-        "e": 41.53
+        "s": 39.27,
+        "e": 39.39
       },
       {
         "w": "faylning",
-        "s": 41.67,
-        "e": 42.09
+        "s": 39.65,
+        "e": 40.07
       },
       {
         "w": "qaysi",
-        "s": 42.23,
-        "e": 42.59
+        "s": 40.13,
+        "e": 40.43
       },
       {
         "w": "qatorlar",
-        "s": 42.63,
-        "e": 43.07
+        "s": 40.47,
+        "e": 40.89
       },
       {
         "w": "diapazoniga",
-        "s": 43.09,
-        "e": 43.63
+        "s": 40.93,
+        "e": 41.53
       },
       {
-        "w": "daxldor",
-        "s": 43.69,
-        "e": 44.11
+        "w": "tegishli",
+        "s": 41.57,
+        "e": 41.91
       },
       {
         "w": "ekanini",
-        "s": 44.15,
-        "e": 44.51
+        "s": 42.01,
+        "e": 42.39
       },
       {
         "w": "bildiruvchi",
-        "s": 44.55,
-        "e": 44.99
+        "s": 42.43,
+        "e": 42.85
       },
       {
         "w": "xank",
-        "s": 45.31,
-        "e": 45.57
+        "s": 42.97,
+        "e": 43.19
       },
       {
         "w": "koordinatalaridir.",
-        "s": 45.67,
-        "e": 46.43
+        "s": 43.25,
+        "e": 44.05
       }
     ]
   },
   {
     "id": "l7",
-    "scene": "commitlar_farqi",
-    "text": "Git diff yordamida nafaqat ishchi hududlarni, balki istalgan ikkita kommit yoki brenchlar orasidagi farqni ham tekshirish mumkin.",
-    "show": "Git diff yordamida nafaqat ishchi hududlarni, balki istalgan ikkita kommit yoki brenchlar orasidagi farqni ham tekshirish mumkin.",
-    "say": "Git diff yordamida nafaqat ishchi hududlarni, balki istalgan ikkita kommit yoki brenchlar orasidagi farqni ham tekshirish mumkin.",
-    "a0": 47.19,
-    "a1": 54.1,
+    "scene": "stat_va_taqqoslash",
+    "text": "Katta o‘zgarishlarda minus minus stat bayrog‘i orqali qaysi fayllarda qancha qator o‘zgarganini ixcham gistogrammada ko‘rish mumkin.",
+    "show": "Katta o‘zgarishlarda minus minus stat bayrog‘i orqali qaysi fayllarda qancha qator o‘zgarganini ixcham gistogrammada ko‘rish mumkin.",
+    "say": "Katta o‘zgarishlarda minus minus stat bayrog‘i orqali qaysi fayllarda qancha qator o‘zgarganini ixcham gistogrammada ko‘rish mumkin.",
+    "a0": 44.69,
+    "a1": 51.23,
     "words": [
       {
-        "w": "Git",
-        "s": 47.19,
-        "e": 47.33
+        "w": "Katta",
+        "s": 44.69,
+        "e": 44.99
       },
       {
-        "w": "diff",
-        "s": 47.39,
-        "e": 47.57
+        "w": "o‘zgarishlarda",
+        "s": 45.07,
+        "e": 45.69
       },
       {
-        "w": "yordamida",
-        "s": 47.63,
-        "e": 48.07
+        "w": "minus",
+        "s": 45.87,
+        "e": 46.13
       },
       {
-        "w": "nafaqat",
-        "s": 48.17,
-        "e": 48.53
+        "w": "minus",
+        "s": 46.17,
+        "e": 46.39
       },
       {
-        "w": "ishchi",
-        "s": 48.63,
-        "e": 48.85
+        "w": "stat",
+        "s": 46.41,
+        "e": 46.67
       },
       {
-        "w": "hududlarni,",
-        "s": 48.87,
-        "e": 49.41
+        "w": "bayrog‘i",
+        "s": 46.73,
+        "e": 47.09
       },
       {
-        "w": "balki",
-        "s": 49.69,
-        "e": 49.91
+        "w": "orqali",
+        "s": 47.13,
+        "e": 47.43
       },
       {
-        "w": "istalgan",
+        "w": "qaysi",
+        "s": 47.53,
+        "e": 47.83
+      },
+      {
+        "w": "fayllarda",
+        "s": 47.87,
+        "e": 48.33
+      },
+      {
+        "w": "qancha",
+        "s": 48.43,
+        "e": 48.69
+      },
+      {
+        "w": "qator",
+        "s": 48.73,
+        "e": 48.97
+      },
+      {
+        "w": "o‘zgarganini",
+        "s": 49.03,
+        "e": 49.55
+      },
+      {
+        "w": "ixcham",
+        "s": 49.67,
+        "e": 49.99
+      },
+      {
+        "w": "gistogrammada",
         "s": 50.05,
-        "e": 50.49
+        "e": 50.67
       },
       {
-        "w": "ikkita",
-        "s": 50.63,
-        "e": 50.85
-      },
-      {
-        "w": "kommit",
-        "s": 50.93,
-        "e": 51.29
-      },
-      {
-        "w": "yoki",
-        "s": 51.29,
-        "e": 51.63
-      },
-      {
-        "w": "brenchlar",
-        "s": 51.93,
-        "e": 52.37
-      },
-      {
-        "w": "orasidagi",
-        "s": 52.47,
-        "e": 52.88
-      },
-      {
-        "w": "farqni",
-        "s": 52.96,
-        "e": 53.3
-      },
-      {
-        "w": "ham",
-        "s": 53.32,
-        "e": 53.46
-      },
-      {
-        "w": "tekshirish",
-        "s": 53.5,
-        "e": 53.84
+        "w": "ko‘rish",
+        "s": 50.71,
+        "e": 50.95
       },
       {
         "w": "mumkin.",
-        "s": 53.86,
-        "e": 54.1
+        "s": 50.99,
+        "e": 51.23
       }
     ]
   },
   {
     "id": "l8",
-    "scene": "commitlar_farqi",
-    "text": "Masalan, meyn va ficher brenchlari orasidagi farqni bilish loyihada nimalar yangilanganini bir zumda ochib beradi.",
-    "show": "Masalan, meyn va ficher brenchlari orasidagi farqni bilish loyihada nimalar yangilanganini bir zumda ochib beradi.",
-    "say": "Masalan, meyn va ficher brenchlari orasidagi farqni bilish loyihada nimalar yangilanganini bir zumda ochib beradi.",
-    "a0": 54.52,
-    "a1": 60.54,
+    "scene": "stat_va_taqqoslash",
+    "text": "Shuningdek, git diff bilan istalgan ikki kommit yoki brenchlar orasidagi butun loyiha farqini ham tahlil qilish mumkin.",
+    "show": "Shuningdek, git diff bilan istalgan ikki kommit yoki brenchlar orasidagi butun loyiha farqini ham tahlil qilish mumkin.",
+    "say": "Shuningdek, git diff bilan istalgan ikki kommit yoki brenchlar orasidagi butun loyiha farqini ham tahlil qilish mumkin.",
+    "a0": 52.03,
+    "a1": 57.84,
     "words": [
       {
-        "w": "Masalan,",
-        "s": 54.52,
-        "e": 54.9
+        "w": "Shuningdek,",
+        "s": 52.03,
+        "e": 52.45
       },
       {
-        "w": "meyn",
-        "s": 55.16,
-        "e": 55.44
+        "w": "git",
+        "s": 52.62,
+        "e": 52.78
       },
       {
-        "w": "va",
-        "s": 55.52,
-        "e": 55.62
+        "w": "diff",
+        "s": 52.86,
+        "e": 53.04
       },
       {
-        "w": "ficher",
-        "s": 55.76,
-        "e": 56.08
+        "w": "bilan",
+        "s": 53.12,
+        "e": 53.32
       },
       {
-        "w": "brenchlari",
-        "s": 56.14,
-        "e": 56.56
+        "w": "istalgan",
+        "s": 53.42,
+        "e": 53.82
+      },
+      {
+        "w": "ikki",
+        "s": 53.92,
+        "e": 54.12
+      },
+      {
+        "w": "kommit",
+        "s": 54.16,
+        "e": 54.5
+      },
+      {
+        "w": "yoki",
+        "s": 54.56,
+        "e": 54.76
+      },
+      {
+        "w": "brenchlar",
+        "s": 54.84,
+        "e": 55.24
       },
       {
         "w": "orasidagi",
-        "s": 56.6,
-        "e": 56.98
+        "s": 55.32,
+        "e": 55.76
       },
       {
-        "w": "farqni",
-        "s": 57.04,
+        "w": "butun",
+        "s": 55.84,
+        "e": 56.1
+      },
+      {
+        "w": "loyiha",
+        "s": 56.16,
+        "e": 56.48
+      },
+      {
+        "w": "farqini",
+        "s": 56.54,
+        "e": 56.86
+      },
+      {
+        "w": "ham",
+        "s": 56.9,
+        "e": 57.02
+      },
+      {
+        "w": "tahlil",
+        "s": 57.06,
         "e": 57.36
       },
       {
-        "w": "bilish",
-        "s": 57.4,
-        "e": 57.64
+        "w": "qilish",
+        "s": 57.38,
+        "e": 57.6
       },
       {
-        "w": "loyihada",
-        "s": 57.9,
-        "e": 58.28
-      },
-      {
-        "w": "nimalar",
-        "s": 58.4,
-        "e": 58.74
-      },
-      {
-        "w": "yangilanganini",
-        "s": 58.8,
-        "e": 59.5
-      },
-      {
-        "w": "bir",
-        "s": 59.62,
-        "e": 59.74
-      },
-      {
-        "w": "zumda",
-        "s": 59.8,
-        "e": 60.0
-      },
-      {
-        "w": "ochib",
-        "s": 60.08,
-        "e": 60.24
-      },
-      {
-        "w": "beradi.",
-        "s": 60.28,
-        "e": 60.54
+        "w": "mumkin.",
+        "s": 57.62,
+        "e": 57.84
       }
     ]
   },
   {
     "id": "l9",
     "scene": "xavfsizlik_va_amaliyot",
-    "text": "Eng muhim xususiyat: git diff faqat o‘qish rejimida ishlaydi, u kodingizga hech qachon zarar yetkazmaydi.",
-    "show": "Eng muhim xususiyat: git diff faqat o‘qish rejimida ishlaydi, u kodingizga hech qachon zarar yetkazmaydi.",
-    "say": "Eng muhim xususiyat: git diff faqat o‘qish rejimida ishlaydi, u kodingizga hech qachon zarar yetkazmaydi.",
-    "a0": 61.36,
-    "a1": 67.15,
+    "text": "Eng muhim qoida: git diff faqat o‘qish rejimida ishlaydi, u fayllarga hech qachon zarar yetkazmaydi yoki o‘chirib yubormaydi.",
+    "show": "Eng muhim qoida: git diff faqat o‘qish rejimida ishlaydi, u fayllarga hech qachon zarar yetkazmaydi yoki o‘chirib yubormaydi.",
+    "say": "Eng muhim qoida: git diff faqat o‘qish rejimida ishlaydi, u fayllarga hech qachon zarar yetkazmaydi yoki o‘chirib yubormaydi.",
+    "a0": 58.48,
+    "a1": 65.04,
     "words": [
       {
         "w": "Eng",
-        "s": 61.36,
-        "e": 61.48
+        "s": 58.48,
+        "e": 58.64
       },
       {
         "w": "muhim",
-        "s": 61.5,
-        "e": 61.74
+        "s": 58.68,
+        "e": 58.9
       },
       {
-        "w": "xususiyat:",
-        "s": 61.78,
-        "e": 62.22
+        "w": "qoida:",
+        "s": 58.98,
+        "e": 59.24
       },
       {
         "w": "git",
-        "s": 62.6,
-        "e": 62.76
+        "s": 59.62,
+        "e": 59.8
       },
       {
         "w": "diff",
-        "s": 62.82,
-        "e": 63.02
+        "s": 59.88,
+        "e": 60.08
       },
       {
         "w": "faqat",
-        "s": 63.18,
-        "e": 63.46
+        "s": 60.12,
+        "e": 60.36
       },
       {
         "w": "o‘qish",
-        "s": 63.6,
-        "e": 63.84
+        "s": 60.48,
+        "e": 60.68
       },
       {
         "w": "rejimida",
-        "s": 63.9,
-        "e": 64.24
+        "s": 60.74,
+        "e": 61.08
       },
       {
         "w": "ishlaydi,",
-        "s": 64.3,
-        "e": 64.6
+        "s": 61.12,
+        "e": 61.42
       },
       {
         "w": "u",
-        "s": 64.98,
-        "e": 65.0
+        "s": 61.96,
+        "e": 61.98
       },
       {
-        "w": "kodingizga",
-        "s": 65.1,
-        "e": 65.62
+        "w": "fayllarga",
+        "s": 62.08,
+        "e": 62.58
       },
       {
         "w": "hech",
-        "s": 65.74,
-        "e": 65.98
+        "s": 62.68,
+        "e": 62.9
       },
       {
         "w": "qachon",
-        "s": 66.02,
-        "e": 66.3
+        "s": 62.92,
+        "e": 63.18
       },
       {
         "w": "zarar",
-        "s": 66.34,
-        "e": 66.58
+        "s": 63.24,
+        "e": 63.46
       },
       {
-        "w": "yetkazmaydi.",
-        "s": 66.65,
-        "e": 67.15
+        "w": "yetkazmaydi",
+        "s": 63.52,
+        "e": 64.0
+      },
+      {
+        "w": "yoki",
+        "s": 64.0,
+        "e": 64.26
+      },
+      {
+        "w": "o‘chirib",
+        "s": 64.32,
+        "e": 64.58
+      },
+      {
+        "w": "yubormaydi.",
+        "s": 64.58,
+        "e": 65.04
       }
     ]
   },
   {
     "id": "l10",
     "scene": "xavfsizlik_va_amaliyot",
-    "text": "Shuning uchun har bir kommitdan oldin git diff minus minus steyjd bilan tekshirib olish eng toza odatdir.",
-    "show": "Shuning uchun har bir kommitdan oldin git diff minus minus steyjd bilan tekshirib olish eng toza odatdir.",
-    "say": "Shuning uchun har bir kommitdan oldin git diff minus minus steyjd bilan tekshirib olish eng toza odatdir.",
-    "a0": 67.59,
-    "a1": 73.05,
+    "text": "Shuning uchun har bir kommitdan oldin git diff minus minus steyjd buyrug‘i bilan kodni ko‘zdan kechirish dasturchining oltin odatidir.",
+    "show": "Shuning uchun har bir kommitdan oldin git diff minus minus steyjd buyrug‘i bilan kodni ko‘zdan kechirish dasturchining oltin odatidir.",
+    "say": "Shuning uchun har bir kommitdan oldin git diff minus minus steyjd buyrug‘i bilan kodni ko‘zdan kechirish dasturchining oltin odatidir.",
+    "a0": 65.64,
+    "a1": 72.23,
     "words": [
       {
         "w": "Shuning",
-        "s": 67.59,
-        "e": 67.79
+        "s": 65.64,
+        "e": 65.88
       },
       {
         "w": "uchun",
-        "s": 67.81,
-        "e": 67.97
+        "s": 65.9,
+        "e": 66.08
       },
       {
         "w": "har",
-        "s": 68.03,
-        "e": 68.21
+        "s": 66.16,
+        "e": 66.34
       },
       {
         "w": "bir",
-        "s": 68.25,
-        "e": 68.35
+        "s": 66.4,
+        "e": 66.51
       },
       {
         "w": "kommitdan",
-        "s": 68.39,
-        "e": 68.81
+        "s": 66.55,
+        "e": 67.01
       },
       {
         "w": "oldin",
-        "s": 68.87,
-        "e": 69.11
+        "s": 67.07,
+        "e": 67.27
       },
       {
         "w": "git",
-        "s": 69.43,
-        "e": 69.59
+        "s": 67.59,
+        "e": 67.77
       },
       {
         "w": "diff",
-        "s": 69.67,
-        "e": 69.85
+        "s": 67.87,
+        "e": 68.03
       },
       {
         "w": "minus",
-        "s": 70.07,
-        "e": 70.33
+        "s": 68.15,
+        "e": 68.39
       },
       {
         "w": "minus",
-        "s": 70.37,
-        "e": 70.59
+        "s": 68.43,
+        "e": 68.63
       },
       {
         "w": "steyjd",
-        "s": 70.69,
-        "e": 71.11
+        "s": 68.67,
+        "e": 69.05
+      },
+      {
+        "w": "buyrug‘i",
+        "s": 69.09,
+        "e": 69.39
       },
       {
         "w": "bilan",
-        "s": 71.17,
+        "s": 69.41,
+        "e": 69.59
+      },
+      {
+        "w": "kodni",
+        "s": 69.65,
+        "e": 69.93
+      },
+      {
+        "w": "ko‘zdan",
+        "s": 69.97,
+        "e": 70.31
+      },
+      {
+        "w": "kechirish",
+        "s": 70.37,
+        "e": 70.71
+      },
+      {
+        "w": "dasturchining",
+        "s": 70.79,
         "e": 71.35
       },
       {
-        "w": "tekshirib",
-        "s": 71.37,
-        "e": 71.71
+        "w": "oltin",
+        "s": 71.47,
+        "e": 71.73
       },
       {
-        "w": "olish",
-        "s": 71.75,
-        "e": 71.93
-      },
-      {
-        "w": "eng",
-        "s": 72.15,
-        "e": 72.29
-      },
-      {
-        "w": "toza",
-        "s": 72.35,
-        "e": 72.59
-      },
-      {
-        "w": "odatdir.",
-        "s": 72.67,
-        "e": 73.05
+        "w": "odatidir.",
+        "s": 71.83,
+        "e": 72.23
       }
     ]
   },
   {
     "id": "l11",
     "scene": "xulosa",
-    "text": "Xulosa qilib aytganda, git diff — o‘zgarishlarni ko‘r-ko‘rona emas, ongli va xatosiz saqlashning eng ishonchli kompasidir.",
-    "show": "Xulosa qilib aytganda, git diff — o‘zgarishlarni ko‘r-ko‘rona emas, ongli va xatosiz saqlashning eng ishonchli kompasidir.",
-    "say": "Xulosa qilib aytganda, git diff — o‘zgarishlarni ko‘r-ko‘rona emas, ongli va xatosiz saqlashning eng ishonchli kompasidir.",
-    "a0": 73.69,
-    "a1": 80.54,
+    "text": "Xulosa qilib aytganda, git diff — o‘zgarishlarni ko‘r-ko‘rona emas, toza va ongli saqlashning eng ishonchli kompasidir.",
+    "show": "Xulosa qilib aytganda, git diff — o‘zgarishlarni ko‘r-ko‘rona emas, toza va ongli saqlashning eng ishonchli kompasidir.",
+    "say": "Xulosa qilib aytganda, git diff — o‘zgarishlarni ko‘r-ko‘rona emas, toza va ongli saqlashning eng ishonchli kompasidir.",
+    "a0": 72.89,
+    "a1": 79.07,
     "words": [
       {
         "w": "Xulosa",
-        "s": 73.69,
-        "e": 73.95
+        "s": 72.89,
+        "e": 73.19
       },
       {
         "w": "qilib",
-        "s": 73.99,
-        "e": 74.13
+        "s": 73.23,
+        "e": 73.39
       },
       {
         "w": "aytganda,",
-        "s": 74.15,
-        "e": 74.53
+        "s": 73.41,
+        "e": 73.79
       },
       {
         "w": "git",
-        "s": 74.83,
-        "e": 75.01
+        "s": 74.03,
+        "e": 74.19
       },
       {
         "w": "diff",
-        "s": 75.09,
-        "e": 75.29
+        "s": 74.29,
+        "e": 74.47
       },
       {
         "w": "—",
-        "s": 75.29,
-        "e": 75.29
+        "s": 74.47,
+        "e": 74.47
       },
       {
         "w": "o‘zgarishlarni",
-        "s": 75.49,
-        "e": 76.11
+        "s": 74.67,
+        "e": 75.27
       },
       {
         "w": "ko‘r-ko‘rona",
-        "s": 76.19,
-        "e": 76.81
+        "s": 75.33,
+        "e": 75.85
       },
       {
         "w": "emas,",
-        "s": 76.93,
-        "e": 77.21
+        "s": 75.93,
+        "e": 76.15
       },
       {
-        "w": "ongli",
-        "s": 77.59,
-        "e": 77.89
+        "w": "toza",
+        "s": 76.43,
+        "e": 76.73
       },
       {
         "w": "va",
-        "s": 78.03,
-        "e": 78.11
+        "s": 76.83,
+        "e": 76.89
       },
       {
-        "w": "xatosiz",
-        "s": 78.21,
-        "e": 78.67
+        "w": "ongli",
+        "s": 77.05,
+        "e": 77.31
       },
       {
         "w": "saqlashning",
-        "s": 78.69,
-        "e": 79.17
+        "s": 77.39,
+        "e": 77.89
       },
       {
         "w": "eng",
-        "s": 79.35,
-        "e": 79.47
+        "s": 77.97,
+        "e": 78.09
       },
       {
         "w": "ishonchli",
-        "s": 79.57,
-        "e": 79.98
+        "s": 78.15,
+        "e": 78.53
       },
       {
         "w": "kompasidir.",
-        "s": 80.06,
-        "e": 80.54
+        "s": 78.59,
+        "e": 79.07
       }
     ]
   },
   {
     "id": "l12",
     "scene": "xulosa",
-    "text": "Keyingi bobda keraksiz fayllarni chetlab o‘tuvchi gitignore qoidalarini ko‘rib chiqamiz. Rahmat!",
-    "show": "Keyingi bobda keraksiz fayllarni chetlab o‘tuvchi gitignore qoidalarini ko‘rib chiqamiz. Rahmat!",
-    "say": "Keyingi bobda keraksiz fayllarni chetlab o‘tuvchi gitignore qoidalarini ko‘rib chiqamiz. Rahmat!",
-    "a0": 81.02,
-    "a1": 86.18,
+    "text": "Keyingi sakkizinchi bobda keraksiz fayllarni chetlab o‘tuvchi gitignore qoidalarini amalda o‘rganamiz. Rahmat!",
+    "show": "Keyingi sakkizinchi bobda keraksiz fayllarni chetlab o‘tuvchi gitignore qoidalarini amalda o‘rganamiz. Rahmat!",
+    "say": "Keyingi sakkizinchi bobda keraksiz fayllarni chetlab o‘tuvchi git ignor qoidalarini amalda o‘rganamiz. Rahmat!",
+    "a0": 79.68,
+    "a1": 85.5,
     "words": [
       {
         "w": "Keyingi",
-        "s": 81.02,
-        "e": 81.28
+        "s": 79.68,
+        "e": 80.04
+      },
+      {
+        "w": "sakkizinchi",
+        "s": 80.1,
+        "e": 80.6
       },
       {
         "w": "bobda",
-        "s": 81.32,
-        "e": 81.6
+        "s": 80.62,
+        "e": 80.88
       },
       {
         "w": "keraksiz",
-        "s": 81.88,
-        "e": 82.3
+        "s": 81.14,
+        "e": 81.54
       },
       {
         "w": "fayllarni",
-        "s": 82.34,
-        "e": 82.8
+        "s": 81.58,
+        "e": 82.04
       },
       {
         "w": "chetlab",
-        "s": 82.84,
-        "e": 83.16
+        "s": 82.1,
+        "e": 82.42
       },
       {
         "w": "o‘tuvchi",
-        "s": 83.18,
-        "e": 83.52
+        "s": 82.46,
+        "e": 82.76
       },
       {
-        "w": "gitignore",
-        "s": 83.76,
-        "e": 84.36
+        "w": "git",
+        "s": 82.88,
+        "e": 83.04
+      },
+      {
+        "w": "ignor",
+        "s": 83.14,
+        "e": 83.42
       },
       {
         "w": "qoidalarini",
-        "s": 84.36,
-        "e": 84.88
+        "s": 83.48,
+        "e": 83.98
       },
       {
-        "w": "ko‘rib",
-        "s": 84.92,
-        "e": 85.12
+        "w": "amalda",
+        "s": 84.08,
+        "e": 84.34
       },
       {
-        "w": "chiqamiz.",
-        "s": 85.16,
-        "e": 85.46
+        "w": "o‘rganamiz.",
+        "s": 84.38,
+        "e": 84.78
       },
       {
         "w": "Rahmat!",
-        "s": 85.9,
-        "e": 86.18
+        "s": 85.2,
+        "e": 85.5
       }
     ]
   }

@@ -5,7 +5,7 @@
     'intro',
     'uch_diff',
     'patch_formati',
-    'commitlar_farqi',
+    'stat_va_taqqoslash',
     'xavfsizlik_va_amaliyot',
     'xulosa'
   ];
@@ -14,35 +14,35 @@
     intro: 'git diff: O‘zgarishlar Ko‘zgusi',
     uch_diff: 'Uch Hudud va Uchta Diff',
     patch_formati: 'Patch Formatini O‘qish',
-    commitlar_farqi: 'Kommitlar va Brenchlar Farqi',
+    stat_va_taqqoslash: 'Statistika va Brenchlar Farqi',
     xavfsizlik_va_amaliyot: 'Xavfsizlik va Oltin Odat',
     xulosa: 'Xulosa'
   };
 
   const hold = {
-    l2: 1.0,
-    l4: 1.0,
-    l6: 1.0,
-    l8: 1.0,
-    l10: 1.0,
-    l12: 1.5
+    l2: 1.5,
+    l4: 2.0,
+    l6: 2.0,
+    l8: 2.0,
+    l10: 2.0,
+    l12: 2.0
   };
 
   const lines = [
     {
       id: 'l1',
       scene: 'intro',
-      text: "Salom! Ushbu yettinchi bobda fayllar ichida aynan nimalar o‘zgarganini qatorlar kesimida ko‘rsatuvchi git diff buyrug‘ini o‘rganamiz."
+      text: "Salom! Ushbu yettinchi bobda fayllar ichida aynan qaysi qatorlar o‘zgarganini aniq ko‘rsatuvchi git diff buyrug‘ini o‘rganamiz."
     },
     {
       id: 'l2',
       scene: 'intro',
-      text: "U ikki holatni solishtirib, qo‘shilgan, o‘chirilgan va o‘zgargan kodlarni aniq patch shaklida namoyish etadi."
+      text: "U ikki holatni qiyoslab, qo‘shilgan, o‘chirilgan va o‘zgargan kodlarni qulay patch shaklida namoyish etadi."
     },
     {
       id: 'l3',
       scene: 'uch_diff',
-      text: "Oddiy git diff buyrug‘i diskdagi ishchi papkani indeks bilan solishtirib, hali stage qilinmagan o‘zgarishlarni ko‘rsatadi."
+      text: "Oddiy git diff buyrug‘i diskdagi ishchi papkani indeks bilan solishtirib, hali stage qilinmagan qoralamalarni ko‘rsatadi."
     },
     {
       id: 'l4',
@@ -52,42 +52,42 @@
     {
       id: 'l5',
       scene: 'patch_formati',
-      text: "Diff natijasidagi minus belgili qizil qatorlar eskida bor bo‘lib o‘chirilganini, plyus belgili yashil qatorlar esa yangi qo‘shilganini anglatadi."
+      text: "Diff natijasidagi minus belgili qizil qatorlar eskida bor bo‘lib o‘chirilganini, plyus belgili yashil qatorlar esa yangi qo‘shilganini bildiradi."
     },
     {
       id: 'l6',
       scene: 'patch_formati',
-      text: "Boshidagi guruhli sonlar esa faylning qaysi qatorlar diapazoniga daxldor ekanini bildiruvchi xank koordinatalaridir."
+      text: "Boshidagi guruhli sonlar esa faylning qaysi qatorlar diapazoniga tegishli ekanini bildiruvchi xank koordinatalaridir."
     },
     {
       id: 'l7',
-      scene: 'commitlar_farqi',
-      text: "Git diff yordamida nafaqat ishchi hududlarni, balki istalgan ikkita kommit yoki brenchlar orasidagi farqni ham tekshirish mumkin."
+      scene: 'stat_va_taqqoslash',
+      text: "Katta o‘zgarishlarda minus minus stat bayrog‘i orqali qaysi fayllarda qancha qator o‘zgarganini ixcham gistogrammada ko‘rish mumkin."
     },
     {
       id: 'l8',
-      scene: 'commitlar_farqi',
-      text: "Masalan, meyn va ficher brenchlari orasidagi farqni bilish loyihada nimalar yangilanganini bir zumda ochib beradi."
+      scene: 'stat_va_taqqoslash',
+      text: "Shuningdek, git diff bilan istalgan ikki kommit yoki brenchlar orasidagi butun loyiha farqini ham tahlil qilish mumkin."
     },
     {
       id: 'l9',
       scene: 'xavfsizlik_va_amaliyot',
-      text: "Eng muhim xususiyat: git diff faqat o‘qish rejimida ishlaydi, u kodingizga hech qachon zarar yetkazmaydi."
+      text: "Eng muhim qoida: git diff faqat o‘qish rejimida ishlaydi, u fayllarga hech qachon zarar yetkazmaydi yoki o‘chirib yubormaydi."
     },
     {
       id: 'l10',
       scene: 'xavfsizlik_va_amaliyot',
-      text: "Shuning uchun har bir kommitdan oldin git diff minus minus steyjd bilan tekshirib olish eng toza odatdir."
+      text: "Shuning uchun har bir kommitdan oldin git diff minus minus steyjd buyrug‘i bilan kodni ko‘zdan kechirish dasturchining oltin odatidir."
     },
     {
       id: 'l11',
       scene: 'xulosa',
-      text: "Xulosa qilib aytganda, git diff — o‘zgarishlarni ko‘r-ko‘rona emas, ongli va xatosiz saqlashning eng ishonchli kompasidir."
+      text: "Xulosa qilib aytganda, git diff — o‘zgarishlarni ko‘r-ko‘rona emas, toza va ongli saqlashning eng ishonchli kompasidir."
     },
     {
       id: 'l12',
       scene: 'xulosa',
-      text: "Keyingi bobda keraksiz fayllarni chetlab o‘tuvchi gitignore qoidalarini ko‘rib chiqamiz. Rahmat!"
+      text: "Keyingi sakkizinchi bobda keraksiz fayllarni chetlab o‘tuvchi gitignore qoidalarini amalda o‘rganamiz. Rahmat!"
     }
   ];
 
