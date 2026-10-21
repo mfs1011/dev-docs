@@ -1,0 +1,61 @@
+WEBVTT
+
+1
+00:01.420 --> 00:10.920
+Salom! Ushbu to‘qqizinchi bobda loyihaning butun o‘tmishini ko‘rish, tahlil
+qilish va qidirishning eng asosiy quroli — git log buyrug‘ini o‘rganamiz.
+
+2
+00:11.650 --> 00:17.700
+U kommitlarning ota-ona zanjiri bo‘ylab orqaga yurib,
+loyiha qanday rivojlanganini to‘liq namoyon etadi.
+
+3
+00:20.950 --> 00:28.070
+Har bir kommit faqat o‘zidan oldingi ota kommit havolasini saqlaydi,
+chunki kommit yaratilayotganda bolalari hali mavjud bo‘lmaydi.
+
+4
+00:28.300 --> 00:35.250
+Shu sababli git log joriy HED ko‘rsatkichidan boshlab, eng
+yangi kommitdan eng eskisiga qarab orqaga harakatlanadi.
+
+5
+00:38.500 --> 00:45.480
+Standart uzun ko‘rinishdan tashqari, minus minus onlayn
+opsiyasi har bir kommitni bitta ixcham qatorga jamlab beradi.
+
+6
+00:46.170 --> 00:52.540
+Graf opsiyasi esa tarmoqlar qanday ajralgani va qayerda
+birlashganini chiroyli daraxt shaklida chizib ko‘rsatadi.
+
+7
+00:55.870 --> 01:01.900
+Minus minus stat opsiyasi qaysi fayllarda nechtadan
+qator o‘zgarganini qisqacha statistika qilib chiqaradi.
+
+8
+01:02.520 --> 01:08.550
+Minus p opsiyasi esa har bir kommit ichidagi barcha
+kod farqlarini to‘liq patch ko‘rinishida ochiqlaydi.
+
+9
+01:11.580 --> 01:18.910
+Git log yordamida muallif, sana, kommit xabari va hatto kod
+ichidagi o‘zgarishlar bo‘yicha aniq filtrlar qo‘llash mumkin.
+
+10
+01:19.330 --> 01:26.700
+Ayniqsa, katta es opsiyasi kod bazasidan istalgan funksiya
+yoki o‘zgaruvchi qachon kiritilganini bir zumda topib beradi.
+
+11
+01:29.730 --> 01:38.110
+Xulosa qilib aytganda, git log va git show — loyihada kim, qachon
+va nega o‘zgarish qilganini bilishning yagona haqiqat manbaidir.
+
+12
+01:38.700 --> 01:44.010
+Keyingi bobda eng namunali va toza kommitlar
+yaratish madaniyatini o‘rganamiz. Rahmat!
