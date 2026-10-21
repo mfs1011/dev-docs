@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" playsinline poster="/video/git/10-yaxshi-commit.jpg" src="/video/git/10-yaxshi-commit.mp4">
+    <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/git/10-yaxshi-commit.chapters.vtt" default>
+    <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/git/10-yaxshi-commit.uz.vtt">
+  </video>
+  <figcaption>10.1-video. Yaxshi commit madaniyati va qoidalari</figcaption>
+</figure>
+
 Oldingi boblarda commit'ni **qanday** qilishni o'rgandik: `git add`, keyin `git commit`. Bu bob boshqa savolga javob beradi — **qanday commit yaxshi**.
 
 Eslatma: **commit** — loyihaning ma'lum paytdagi to'liq surati (snapshot) va unga biriktirilgan xabar: kim, qachon, nega. Surat Git uchun, xabar esa odamlar uchun. Bir yildan keyin bu tarixni siz, hamkasbingiz yoki `git blame` ([41-bob](41-blame-va-bisect.md)) bilan qator muallifini qidirayotgan begona dasturchi o'qiydi.
