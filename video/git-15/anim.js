@@ -7,10 +7,53 @@
     W, H, C, UI, MONO,
     clamp, P, lerp, eo, eio, eback, font, withA, rr,
     tw, text, bg, ring, burst, link, pill,
-    fileChip, chip, panel, card
+    fileChip, chip, panel, card, terminal
   } = kit;
 
   const TM = window.TM, NR = window.NR;
+
+  // Real terminalda buyruqlarni jonli harfma-harf yozish va kursor miltillashi
+  function drawCommandLine(promptStr, fullCmd, tStart, tTypeEnd, tEnter, u, x, y, opt = {}) {
+    const tPrompt = opt.tPromptShow != null ? opt.tPromptShow : tStart - 0.3;
+    if (u < tPrompt) return;
+
+    const pCol = opt.promptCol || C.green;
+    text(promptStr, x, y, { size: 15, fam: MONO, color: pCol, weight: 700, align: 'left' });
+    const pw = tw(promptStr, 15, 700, MONO);
+
+    if (u < tStart) {
+      if (Math.floor(u * 2.5) % 2 === 0) {
+        text('█', x + pw + 2, y, { size: 15, fam: MONO, color: '#38bdf8', align: 'left' });
+      }
+      return;
+    }
+
+    const dur = Math.max(0.01, tTypeEnd - tStart);
+    const progress = clamp((u - tStart) / dur);
+    const charCount = Math.floor(progress * fullCmd.length);
+    const typedStr = fullCmd.slice(0, charCount);
+
+    text(typedStr, x + pw, y, { size: 15, fam: MONO, color: opt.cmdCol || '#e2e8f0', weight: 600, align: 'left' });
+    const cmdW = tw(typedStr, 15, 600, MONO);
+
+    if (u < tEnter) {
+      const isVisible = u < tTypeEnd ? true : (Math.floor(u * 2.5) % 2 === 0);
+      if (isVisible) {
+        text('█', x + pw + cmdW + 2, y, { size: 15, fam: MONO, color: '#38bdf8', align: 'left' });
+      }
+    }
+  }
+
+  function drawOutputLine(str, tAppear, u, x, y, opt = {}) {
+    if (u < tAppear) return;
+    text(str, x, y, {
+      size: opt.size || 14,
+      fam: MONO,
+      color: opt.color || '#94a3b8',
+      weight: opt.weight || 500,
+      align: 'left'
+    });
+  }
 
   function code(str, x, y, opt = {}) {
     text(str, x, y, {
@@ -207,50 +250,49 @@
   }
 
   // ==========================================
-  // 3-SAHNA: update-index va .git/index Fayli
+  // 3-SAHNA: update-index va .git/index Fayli (REAL TERMINAL)
   // ==========================================
   function sceneUpdateIndex(u, bounds, o = {}) {
     chip(3, "update-index va .git/index Fayli", u, 0.4);
 
-    const kBox = eo(P(u, 0.6, 0.6));
+    const kBox = eo(P(u, 0.2, 0.5));
     withA(kBox, () => {
-      // Chap panel: update-index buyrug'i
-      panel(100, 140, 840, 680, C.blue, "update-index Plumbing Buyrug'i", "index'ga to'g'ridan-to'g'ri yozuv kiritish", kBox, kBox);
-
-      const kG1 = P(u, 1.2, 0.5);
-      withA(kG1, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kG1)) * 16);
-        card(125, 255, 790, 160, { fill: 'rgba(56,189,248,0.08)', col: C.cyan });
-        pill("git update-index --cacheinfo", 260, 290, C.cyan, { size: 16, mono: false });
-        code("$ git update-index --add --cacheinfo 100644,83baae6...,test.txt", 150, 335, { size: 16, color: C.text });
-        text("• Diskdagi faylga qaramasdan ombordagi blob'ni index'ga biriktiradi.", 150, 375, { size: 16, color: C.cyan, align: 'left', weight: 600 });
-        ctx.restore();
+      // Chap panel: Real Terminalda update-index va index binar tekshiruvi
+      terminal(100, 140, 840, 680, {
+        title: 'zsh — ~/ombor (80x24)',
+        p: kBox
       });
 
-      const kG2 = P(u, 3.5, 0.5);
-      withA(kG2, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kG2)) * 16);
-        card(125, 435, 790, 160, { fill: 'rgba(255,209,102,0.08)', col: C.yellow });
-        pill("git ls-files -s (Stage)", 220, 470, C.yellow, { size: 16, mono: false });
-        code("100644 83baae61804e65cc73a7201a7252750c76066a30 0  test.txt", 150, 515, { size: 15, color: C.yellow });
-        text("• <rejim> <blob_hash> <stage_raqami> <yo'l> tartibida ko'rsatadi.", 150, 555, { size: 16, color: C.text, align: 'left' });
-        ctx.restore();
-      });
+      const tu = u;
 
-      const kG3 = P(u, 5.5, 0.5);
-      withA(kG3, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kG3)) * 16);
-        card(125, 620, 790, 165, { fill: 'rgba(15,22,48,0.92)', col: C.mute });
-        pill("Bir Vaqtda Ham Staged, Ham Modified", 280, 655, C.mute, { size: 16, mono: false });
-        text("• Index'da test.txt = v1, lekin diskda test.txt = v2 bo'lsa:", 150, 700, { size: 16, color: C.text, align: 'left' });
-        text("• git status uni ham Changes to be committed, ham not staged ko'rsatadi.", 150, 735, { size: 15, color: C.mute, align: 'left' });
-        ctx.restore();
-      });
+      // 1-buyruq: git update-index --add --cacheinfo (u: 0.6 to 2.8, Enter 3.0)
+      drawCommandLine("ombor $ ", "git update-index --add --cacheinfo 100644,83baae6...,test.txt", 0.6, 2.8, 3.0, tu, 130, 205);
 
-      // O'ng panel: DIRC binar formati
+      // 2-buyruq: git ls-files -s (u: 4.2 to 5.4, Enter 5.6)
+      drawCommandLine("ombor $ ", "git ls-files -s", 4.2, 5.4, 5.6, tu, 130, 235);
+      drawOutputLine("100644 83baae61804e65cc73a7201a... 0\ttest.txt", 5.8, tu, 130, 260, { color: C.yellow, weight: 600 });
+
+      // 3-buyruq: xxd .git/index | head -n 3 (u: 7.2 to 9.0, Enter 9.2)
+      drawCommandLine("ombor $ ", "xxd .git/index | head -n 3", 7.2, 9.0, 9.2, tu, 130, 295);
+      drawOutputLine("00000000: 4449 5243 0000 0002 0000 0001 0000 0000  DIRC............", 9.4, tu, 130, 320, { color: C.cyan });
+      drawOutputLine("00000010: 0000 0000 0000 0000 0000 0000 0000 0000  ................", 9.7, tu, 130, 342, { color: C.mute });
+      drawOutputLine("00000020: 0000 0000 0000 81a4 0000 0000 0000 0000  ................", 10.0, tu, 130, 364, { color: C.cyan });
+      drawOutputLine("  # 'DIRC' (dircache), v2, 1 ta yozuv, rejim 0x81a4 (100644)", 10.3, tu, 130, 388, { color: C.green, weight: 600 });
+
+      // 4-buyruq: git status holatini ko'rish (u: 12.0 to 13.2, Enter 13.4)
+      drawCommandLine("ombor $ ", "git status -s", 12.0, 13.2, 13.4, tu, 130, 420);
+      drawOutputLine("AM test.txt", 13.6, tu, 130, 445, { color: C.yellow, weight: 700 });
+      drawOutputLine("  # 'A': index'ga qo'shilgan (v1); 'M': diskda o'zgargan (v2)!", 14.0, tu, 130, 470, { color: C.cyan });
+
+      // Terminal xulosa izohi
+      drawOutputLine("--------------------------------------------------", 15.0, tu, 130, 505, { color: '#334155' });
+      drawOutputLine("Xulosa: .git/index diskdagi fayllarga qaramasdan", 15.5, tu, 130, 535, { color: C.yellow, weight: 600 });
+      drawOutputLine("har qanday bloblarni aniq yo'l bilan keshlay oladi!", 16.0, tu, 130, 560, { color: C.green, weight: 700 });
+
+      // O'ng panel: DIRC binar formati va parametrlari
       panel(980, 140, 840, 680, C.purple, "DIRC Binar Format Tuzilishi", ".git/index ichidagi 104 baytlik tuzilma", kBox, kBox);
 
-      const kP1 = P(u, 1.2, 0.5);
+      const kP1 = P(u, 1.0, 0.5);
       withA(kP1, () => {
         ctx.save(); ctx.translate(0, (1 - eo(kP1)) * 16);
         card(1005, 255, 790, 160, { fill: 'rgba(168,85,247,0.08)', col: C.purple });
@@ -260,7 +302,7 @@
         ctx.restore();
       });
 
-      const kP2 = P(u, 3.5, 0.5);
+      const kP2 = P(u, 6.0, 0.5);
       withA(kP2, () => {
         ctx.save(); ctx.translate(0, (1 - eo(kP2)) * 16);
         card(1005, 435, 790, 160, { fill: 'rgba(56,189,248,0.08)', col: C.cyan });
@@ -270,7 +312,7 @@
         ctx.restore();
       });
 
-      const kP3 = P(u, 5.5, 0.5);
+      const kP3 = P(u, 11.5, 0.5);
       withA(kP3, () => {
         ctx.save(); ctx.translate(0, (1 - eo(kP3)) * 16);
         card(1005, 620, 790, 165, { fill: 'rgba(15,22,48,0.92)', col: C.mute });
@@ -283,50 +325,50 @@
   }
 
   // ==========================================
-  // 4-SAHNA: write-tree va Papkalar Daraxti
+  // 4-SAHNA: write-tree va Papkalar Daraxti (REAL TERMINAL)
   // ==========================================
   function sceneWriteTree(u, bounds, o = {}) {
     chip(4, "write-tree va Papkalar Daraxti", u, 0.4);
 
-    const kBox = eo(P(u, 0.6, 0.6));
+    const kBox = eo(P(u, 0.2, 0.5));
     withA(kBox, () => {
-      // Chap panel: write-tree jarayoni
-      panel(100, 140, 840, 680, C.git, "write-tree Plumbing Buyrug'i", "tekis index ro'yxatidan tree yasash", kBox, kBox);
-
-      const kG1 = P(u, 1.2, 0.5);
-      withA(kG1, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kG1)) * 16);
-        card(125, 255, 790, 160, { fill: 'rgba(244,63,94,0.08)', col: C.git });
-        pill("git write-tree Natijasi", 225, 290, C.git, { size: 16, mono: false });
-        code("$ git write-tree  ->  d8329fc1cc938780ffdd9f94e0d364e0ea74f579", 150, 335, { size: 15, color: C.git });
-        text("• Index'dagi yozuvlar asosida omborda yangi tree obyekti yaratadi.", 150, 375, { size: 16, color: C.text, align: 'left' });
-        ctx.restore();
+      // Chap panel: Real Terminalda write-tree va cat-file orqali daraxt ko'rish
+      terminal(100, 140, 840, 680, {
+        title: 'zsh — ~/ombor (80x24)',
+        p: kBox
       });
 
-      const kG2 = P(u, 3.5, 0.5);
-      withA(kG2, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kG2)) * 16);
-        card(125, 435, 790, 160, { fill: 'rgba(56,189,248,0.08)', col: C.cyan });
-        pill("git cat-file -p <tree_id>", 235, 470, C.cyan, { size: 16, mono: false });
-        code("100644 blob 83baae61804e65cc73a7201a7252750c76066a30  test.txt", 150, 515, { size: 15, color: C.cyan });
-        text("• Tree ichida rejim, obyekt turi (blob), hash va fayl nomi saqlanadi.", 150, 555, { size: 16, color: C.text, align: 'left' });
-        ctx.restore();
-      });
+      const tu = u;
 
-      const kG3 = P(u, 5.5, 0.5);
-      withA(kG3, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kG3)) * 16);
-        card(125, 620, 790, 165, { fill: 'rgba(15,22,48,0.92)', col: C.mute });
-        pill("Cache Tree (TREE Kengaytmasi)", 255, 655, C.mute, { size: 16, mono: false });
-        text("• write-tree index ichiga TREE kengaytmasi eslatmasini qo'shadi.", 150, 700, { size: 16, color: C.text, align: 'left' });
-        text("• Keyingi commit'da faqat o'zgargan qismlar qayta hisoblanadi.", 150, 735, { size: 16, color: C.mute, align: 'left' });
-        ctx.restore();
-      });
+      // 1-buyruq: git write-tree (u: 0.6 to 1.8, Enter 2.0)
+      drawCommandLine("ombor $ ", "git write-tree", 0.6, 1.8, 2.0, tu, 130, 205);
+      drawOutputLine("d8329fc1cc938780ffdd9f94e0d364e0ea74f579", 2.2, tu, 130, 230, { color: C.yellow, weight: 600 });
+
+      // 2-buyruq: git cat-file -p d8329fc (u: 3.2 to 4.6, Enter 4.8)
+      drawCommandLine("ombor $ ", "git cat-file -p d8329fc", 3.2, 4.6, 4.8, tu, 130, 260);
+      drawOutputLine("100644 blob 83baae61804e65cc73a7201a...  test.txt", 5.0, tu, 130, 285, { color: C.green, weight: 600 });
+
+      // 3-buyruq: yangi fayl qo'shish va ikkinchi tree (u: 6.6 to 9.2, Enter 9.4)
+      drawCommandLine("ombor $ ", "echo 'new file' > new.txt && git update-index --add new.txt", 6.6, 9.2, 9.4, tu, 130, 320);
+
+      // 4-buyruq: git write-tree yangi tree yaratadi (u: 10.4 to 11.6, Enter 11.8)
+      drawCommandLine("ombor $ ", "git write-tree", 10.4, 11.6, 11.8, tu, 130, 350);
+      drawOutputLine("0155eb4229851634a0f03eb265b69f5a2d56f341", 12.0, tu, 130, 375, { color: C.cyan, weight: 600 });
+
+      // 5-buyruq: git cat-file -p 0155eb4 (u: 12.8 to 14.0, Enter 14.2)
+      drawCommandLine("ombor $ ", "git cat-file -p 0155eb4", 12.8, 14.0, 14.2, tu, 130, 405);
+      drawOutputLine("100644 blob fa49b077972391ad58037050...  new.txt", 14.4, tu, 130, 430, { color: C.text });
+      drawOutputLine("100644 blob 1f7a7a472abf3dd9643fd615...  test.txt", 14.7, tu, 130, 452, { color: C.text });
+
+      // Terminal xulosa izohi
+      drawOutputLine("--------------------------------------------------", 15.3, tu, 130, 490, { color: '#334155' });
+      drawOutputLine("Har bir snapshot uchun o'zgarmas tree obyekti saqlanadi.", 15.7, tu, 130, 520, { color: C.yellow, weight: 600 });
+      drawOutputLine("Eski tree (d8329fc) ham o'z holicha omborda abadiy qoladi!", 16.1, tu, 130, 545, { color: C.green, weight: 700 });
 
       // O'ng panel: Ierarxiya va deduplikatsiya
       panel(980, 140, 840, 680, C.cyan, "Ierarxiya va Diskni Tejash", "ichki papkalar va hash qayta ishlatilishi", kBox, kBox);
 
-      const kP1 = P(u, 1.2, 0.5);
+      const kP1 = P(u, 1.0, 0.5);
       withA(kP1, () => {
         ctx.save(); ctx.translate(0, (1 - eo(kP1)) * 16);
         card(1005, 255, 790, 160, { fill: 'rgba(56,189,248,0.08)', col: C.cyan });
@@ -336,7 +378,7 @@
         ctx.restore();
       });
 
-      const kP2 = P(u, 3.5, 0.5);
+      const kP2 = P(u, 6.0, 0.5);
       withA(kP2, () => {
         ctx.save(); ctx.translate(0, (1 - eo(kP2)) * 16);
         card(1005, 435, 790, 160, { fill: 'rgba(16,185,129,0.08)', col: C.green });
@@ -346,7 +388,7 @@
         ctx.restore();
       });
 
-      const kP3 = P(u, 5.5, 0.5);
+      const kP3 = P(u, 11.5, 0.5);
       withA(kP3, () => {
         ctx.save(); ctx.translate(0, (1 - eo(kP3)) * 16);
         card(1005, 620, 790, 165, { fill: 'rgba(15,22,48,0.92)', col: C.mute });
@@ -359,50 +401,47 @@
   }
 
   // ==========================================
-  // 5-SAHNA: read-tree va checkout-index
+  // 5-SAHNA: read-tree va checkout-index (REAL TERMINAL)
   // ==========================================
   function sceneReadTree(u, bounds, o = {}) {
     chip(5, "read-tree va checkout-index", u, 0.4);
 
-    const kBox = eo(P(u, 0.6, 0.6));
+    const kBox = eo(P(u, 0.2, 0.5));
     withA(kBox, () => {
-      // Chap panel: read-tree
-      panel(100, 140, 840, 680, C.green, "read-tree — Ombordan Index'ga", "tree obyektini staging maydoniga yuklash", kBox, kBox);
-
-      const kG1 = P(u, 1.2, 0.5);
-      withA(kG1, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kG1)) * 16);
-        card(125, 255, 790, 160, { fill: 'rgba(16,185,129,0.08)', col: C.green });
-        pill("git read-tree --prefix=bak", 240, 290, C.green, { size: 16, mono: false });
-        code("$ git read-tree --prefix=bak d8329fc...  (tree'ni papka qilib oladi)", 150, 335, { size: 15, color: C.green });
-        text("• Saqlangan tree ichidagi fayllarni index'ga bak/ yo'li bilan qo'shadi.", 150, 375, { size: 16, color: C.text, align: 'left' });
-        ctx.restore();
+      // Chap panel: Real Terminalda read-tree va checkout-index amaliyoti
+      terminal(100, 140, 840, 680, {
+        title: 'zsh — ~/ombor (80x24)',
+        p: kBox
       });
 
-      const kG2 = P(u, 3.5, 0.5);
-      withA(kG2, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kG2)) * 16);
-        card(125, 435, 790, 160, { fill: 'rgba(56,189,248,0.08)', col: C.cyan });
-        pill("Butun Index'ni Almashtirish", 240, 470, C.cyan, { size: 16, mono: false });
-        code("$ git read-tree <tree_id>  (butun index'ni tree holatiga keltiradi)", 150, 515, { size: 15, color: C.cyan });
-        text("• --prefix bo'lmasa index'ni tozalab, berilgan tree tarkibi bilan to'ldiradi.", 150, 555, { size: 16, color: C.text, align: 'left' });
-        ctx.restore();
-      });
+      const tu = u;
 
-      const kG3 = P(u, 5.5, 0.5);
-      withA(kG3, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kG3)) * 16);
-        card(125, 620, 790, 165, { fill: 'rgba(15,22,48,0.92)', col: C.mute });
-        pill("git reset --mixed Mexanizmi", 240, 655, C.mute, { size: 16, mono: false });
-        text("• Porcelain git reset buyrug'i aynan shu poydevor ustida ishlaydi.", 150, 700, { size: 16, color: C.text, align: 'left' });
-        text("• Index'ni o'tgan commit daraxtiga qaytarib, diskdagi fayllarga tegmaydi.", 150, 735, { size: 16, color: C.mute, align: 'left' });
-        ctx.restore();
-      });
+      // 1-buyruq: git read-tree --prefix=bak d8329fc (u: 0.6 to 2.8, Enter 3.0)
+      drawCommandLine("ombor $ ", "git read-tree --prefix=bak d8329fc", 0.6, 2.8, 3.0, tu, 130, 205);
 
-      // O'ng panel: checkout-index
-      panel(980, 140, 840, 680, C.yellow, "checkout-index — Index'dan Ishchi Joyga", "staged fayllarni diskka chiqarib berish", kBox, kBox);
+      // 2-buyruq: git write-tree bilan yangi daraxt yaratish (u: 4.2 to 5.4, Enter 5.6)
+      drawCommandLine("ombor $ ", "git write-tree", 4.2, 5.4, 5.6, tu, 130, 235);
+      drawOutputLine("3c4e9cdb788006d48e02d68e37b77b42f618b76c", 5.8, tu, 130, 260, { color: C.yellow, weight: 600 });
 
-      const kP1 = P(u, 1.2, 0.5);
+      // 3-buyruq: git cat-file -p 3c4e9cd (u: 7.0 to 8.4, Enter 8.6)
+      drawCommandLine("ombor $ ", "git cat-file -p 3c4e9cd", 7.0, 8.4, 8.6, tu, 130, 295);
+      drawOutputLine("040000 tree d8329fc1cc938780ffdd9f94...  bak", 8.8, tu, 130, 320, { color: C.cyan, weight: 700 });
+      drawOutputLine("100644 blob fa49b077972391ad58037050...  new.txt", 9.1, tu, 130, 342, { color: C.text });
+      drawOutputLine("100644 blob 1f7a7a472abf3dd9643fd615...  test.txt", 9.4, tu, 130, 364, { color: C.text });
+
+      // 4-buyruq: git checkout-index -a -f (u: 11.0 to 12.6, Enter 12.8)
+      drawCommandLine("ombor $ ", "git checkout-index -a -f", 11.0, 12.6, 12.8, tu, 130, 400);
+      drawOutputLine("bak/test.txt diskka chiqarildi (version 1)", 13.0, tu, 130, 425, { color: C.green, weight: 600 });
+
+      // Terminal xulosa izohi
+      drawOutputLine("--------------------------------------------------", 13.8, tu, 130, 460, { color: '#334155' });
+      drawOutputLine("Poydevor: git reset va git restore buyruqlari", 14.3, tu, 130, 490, { color: C.yellow, weight: 600 });
+      drawOutputLine("aynan read-tree + checkout-index zanjirida ishlaydi!", 14.8, tu, 130, 515, { color: C.green, weight: 700 });
+
+      // O'ng panel: checkout-index va reset mexanizmi
+      panel(980, 140, 840, 680, C.yellow, "checkout-index — Ishchi Joyga", "staged fayllarni diskka chiqarib berish", kBox, kBox);
+
+      const kP1 = P(u, 1.0, 0.5);
       withA(kP1, () => {
         ctx.save(); ctx.translate(0, (1 - eo(kP1)) * 16);
         card(1005, 255, 790, 160, { fill: 'rgba(255,209,102,0.08)', col: C.yellow });
@@ -412,7 +451,7 @@
         ctx.restore();
       });
 
-      const kP2 = P(u, 3.5, 0.5);
+      const kP2 = P(u, 6.0, 0.5);
       withA(kP2, () => {
         ctx.save(); ctx.translate(0, (1 - eo(kP2)) * 16);
         card(1005, 435, 790, 160, { fill: 'rgba(56,189,248,0.08)', col: C.cyan });
@@ -422,7 +461,7 @@
         ctx.restore();
       });
 
-      const kP3 = P(u, 5.5, 0.5);
+      const kP3 = P(u, 11.5, 0.5);
       withA(kP3, () => {
         ctx.save(); ctx.translate(0, (1 - eo(kP3)) * 16);
         card(1005, 620, 790, 165, { fill: 'rgba(15,22,48,0.92)', col: C.mute });
@@ -442,82 +481,77 @@
 
     const kBox = eo(P(u, 0.6, 0.6));
     withA(kBox, () => {
-      // Chap panel: Asosiy xulosalar
-      panel(100, 140, 840, 680, C.green, "Asosiy Xulosalar", "tree va index ning o'rni", kBox, kBox);
+      // Chap panel: Tree va Index xulosasi
+      panel(100, 140, 840, 520, C.green, "Tree va Index Bo‘yicha Xulosa", "fayl nomlari va staging asosi", kBox, kBox);
 
-      const kG1 = P(u, 1.2, 0.5);
-      withA(kG1, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kG1)) * 16);
-        card(125, 255, 790, 160, { fill: 'rgba(16,185,129,0.08)', col: C.green });
-        pill("Tree — Papkalar Surati", 230, 290, C.green, { size: 16, mono: false });
-        text("• Fayllarni rejim va nomlar bilan birlashtiruvchi o'zgarmas obyekt.", 150, 335, { size: 17, color: C.text, align: 'left' });
-        text("• Unda muallif, sana va izoh yo'q — ular keyingi bobda commit'ga kiritiladi.", 150, 375, { size: 16, color: C.green, align: 'left', weight: 600 });
+      const kX1 = P(u, 1.2, 0.45);
+      withA(kX1, () => {
+        ctx.save(); ctx.translate(0, (1 - eo(kX1)) * 14);
+        card(125, 245, 790, 115, { fill: 'rgba(16,185,129,0.08)', col: C.green });
+        pill("1 · Tree — Fayl Nomlari va Papkalar", 245, 275, C.green, { size: 15, mono: false });
+        text("Blob faqat mazmunni saqlaydi, nomlar va ruxsatlar faqat tree ichida bo'ladi.", 150, 315, { size: 16, color: C.text, align: 'left' });
         ctx.restore();
       });
 
-      const kG2 = P(u, 3.5, 0.5);
-      withA(kG2, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kG2)) * 16);
-        card(125, 435, 790, 160, { fill: 'rgba(56,189,248,0.08)', col: C.cyan });
-        pill("Index — Chaqqon Ish Maydoni", 245, 470, C.cyan, { size: 16, mono: false });
-        text("• .git/index (DIRC) binar formati, stat ma'lumotlar keshi va tezlik.", 150, 515, { size: 17, color: C.text, align: 'left' });
-        text("• O'zgarishlarni bo'laklab yig'ish va ziddiyatlarni hal qilish markazi.", 150, 555, { size: 16, color: C.cyan, align: 'left', weight: 600 });
+      const kX2 = P(u, 3.2, 0.45);
+      withA(kX2, () => {
+        ctx.save(); ctx.translate(0, (1 - eo(kX2)) * 14);
+        card(125, 375, 790, 115, { fill: 'rgba(255,209,102,0.08)', col: C.yellow });
+        pill("2 · Index — Stat Keshi va Ish Maydoni", 250, 405, C.yellow, { size: 15, mono: false });
+        text("DIRC binar formati stat ma'lumotlarini keshlab, git status'ni juda tezlashtiradi.", 150, 445, { size: 16, color: C.yellow, align: 'left' });
         ctx.restore();
       });
 
-      const kG3 = P(u, 5.5, 0.5);
-      withA(kG3, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kG3)) * 16);
-        card(125, 620, 790, 165, { fill: 'rgba(15,22,48,0.92)', col: C.mute });
-        pill("To'liq Plumbing Sikli", 220, 655, C.mute, { size: 16, mono: false });
-        text("• update-index (staging) -> write-tree (arxiv) -> read-tree -> checkout.", 150, 700, { size: 16, color: C.text, align: 'left' });
-        text("• Git'ning barcha qulay porcelain buyruqlari shu zanjirga tayanadi.", 150, 735, { size: 16, color: C.mute, align: 'left' });
+      const kX3 = P(u, 5.2, 0.45);
+      withA(kX3, () => {
+        ctx.save(); ctx.translate(0, (1 - eo(kX3)) * 14);
+        card(125, 505, 790, 125, { fill: 'rgba(56,189,248,0.08)', col: C.cyan });
+        pill("3 · write-tree va read-tree Juftligi", 240, 535, C.cyan, { size: 15, mono: false });
+        text("Tekis index ro'yxatini tree'ga aylantiradi va teskarisiga qaytarib beradi.", 150, 575, { size: 16, color: C.cyan, align: 'left' });
         ctx.restore();
       });
 
-      // O'ng panel: Tavsiyalar
-      panel(980, 140, 840, 680, C.blue, "Amaliy Tavsiyalar", "kundalik dasturlashda esda tuting", kBox, kBox);
+      // O'ng panel: Amaliy ahamiyati
+      panel(980, 140, 840, 520, C.blue, "Amaliy Ahamiyati", "ichki mexanizm va keyingi bosqich", kBox, kBox);
 
-      const kP1 = P(u, 1.2, 0.5);
-      withA(kP1, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kP1)) * 16);
-        card(1005, 255, 790, 160, { fill: 'rgba(56,189,248,0.08)', col: C.blue });
-        pill("git ls-files -s Bilan Ko'ring", 1145, 290, C.blue, { size: 16, mono: false });
-        text("• Qaysi blob qaysi stage raqamida turganini ko'rish uchun eng qulay buyruq.", 1030, 335, { size: 16, color: C.text, align: 'left' });
-        text("• Ziddiyat chiqqanda stage 1, 2, 3 farqlarini aynan shu orqali tekshirasiz.", 1030, 375, { size: 16, color: C.blue, align: 'left', weight: 600 });
+      const kY1 = P(u, 7.5, 0.45);
+      withA(kY1, () => {
+        ctx.save(); ctx.translate(0, (1 - eo(kY1)) * 14);
+        card(1005, 245, 790, 115, { fill: 'rgba(56,189,248,0.08)', col: C.cyan });
+        pill("1 · git ls-files -s Kuchli Qurol", 1160, 275, C.cyan, { size: 15, mono: false });
+        text("Index'dagi har qanday faylning joriy blob hashi va stage bosqichini ko'ring.", 1030, 315, { size: 16, color: C.text, align: 'left' });
         ctx.restore();
       });
 
-      const kP2 = P(u, 3.5, 0.5);
-      withA(kP2, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kP2)) * 16);
-        card(1005, 435, 790, 160, { fill: 'rgba(255,209,102,0.08)', col: C.yellow });
-        pill("Commit Aslida Tree Yozadi", 1140, 470, C.yellow, { size: 16, mono: false });
-        text("• git commit har doim avval ichki write-tree ni chaqirib, index'dan tree yasaydi.", 1030, 515, { size: 16, color: C.text, align: 'left' });
-        text("• Agar staging maydoni bo'sh bo'lsa, yangi o'zgarishlar commit'ga kirmaydi.", 1030, 555, { size: 16, color: C.yellow, align: 'left', weight: 600 });
+      const kY2 = P(u, 9.5, 0.45);
+      withA(kY2, () => {
+        ctx.save(); ctx.translate(0, (1 - eo(kY2)) * 14);
+        card(1005, 375, 790, 115, { fill: 'rgba(168,85,247,0.08)', col: C.purple });
+        pill("2 · Qayta Ishlatilishning Quvvati", 1170, 405, C.purple, { size: 15, mono: false });
+        text("O'zgarmagan butun boshli kataloglar bitta o'sha eski tree hashi bilan tekinga saqlanadi.", 1030, 445, { size: 16, color: C.purple, align: 'left' });
         ctx.restore();
       });
 
-      const kP3 = P(u, 5.5, 0.5);
-      withA(kP3, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kP3)) * 16);
-        card(1005, 620, 790, 165, { fill: 'rgba(15,22,48,0.92)', col: C.mute });
-        pill("Stat Kesh Ahamiyati", 1115, 655, C.mute, { size: 16, mono: false });
-        text("• Katta loyihalarda minglab fayllar tez tekshirilishi index keshiga bog'liq.", 1030, 700, { size: 16, color: C.text, align: 'left' });
-        text("• .git/index fayli buzilsa yoki o'chsa, git reset orqali uni qayta tiklash oson.", 1030, 735, { size: 16, color: C.mute, align: 'left' });
+      const kY3 = P(u, 11.5, 0.45);
+      withA(kY3, () => {
+        ctx.save(); ctx.translate(0, (1 - eo(kY3)) * 14);
+        card(1005, 505, 790, 125, { fill: 'rgba(244,63,94,0.08)', col: C.git });
+        pill("3 · Keyingi Qadam: Commit Obyekti", 1175, 535, C.git, { size: 15, mono: false });
+        text("Tree'ga muallif, sana, ota commitlar va xabarni qo'shib, to'liq commit yasaymiz.", 1030, 575, { size: 16, color: C.git, align: 'left' });
         ctx.restore();
       });
-    });
 
-    // Pastki tavsiya banneri
-    const kAdv = P(u, 7.5, 0.5);
-    withA(kAdv, () => {
-      ctx.save(); ctx.translate(0, (1 - eo(kAdv)) * 16);
-      card(100, 840, 1720, 160, { fill: 'rgba(15,22,48,0.96)', col: C.git, lw: 2 });
-      pill("Keyingi 16-bob", 220, 880, C.git, { size: 18, mono: false });
-      text("Navbatdagi dars: Commit obyekti va qo'lda commit yaratish", 150, 930, { size: 22, weight: 700, color: C.text, align: 'left' });
-      text("Ushbu tree obyektiga muallif, sana va ota commit ko'rsatkichini qo'shib haqiqiy commit yasashni o'rganamiz.", 150, 968, { size: 17, color: C.mute, align: 'left' });
-      ctx.restore();
+      // Pastki ko'prik banner: Keyingi bob
+      const kBanner = P(u, 9.0, 0.5);
+      withA(kBanner, () => {
+        ctx.save(); ctx.translate(0, (1 - eo(kBanner)) * 16);
+        card(100, 690, 1720, 240, { fill: 'rgba(249,115,22,0.06)', col: C.git, lw: 2 });
+        pill("Keyingi Bob: Commit Obyekti", 240, 725, C.git, { size: 16, mono: false });
+        text("Keyingi 16-bobda: Haqiqiy Git Commit Obyekti — commit-tree va commitning ichki tuzilishi!", 130, 785, { size: 24, color: C.git, weight: 700, align: 'left' });
+        text("Commit ichida nimalar bor, ota commit qanday ko'rsatiladi va commit nima uchun tarixning kalitidir?", 130, 830, { size: 18, color: C.text, align: 'left' });
+        text("Blob va tree'dan so'ng, Git arxitekturasining uchinchi va eng mashhur ustunini kashf etamiz.", 130, 870, { size: 17, color: C.mute, align: 'left' });
+        ctx.restore();
+      });
     });
   }
 
@@ -536,7 +570,8 @@
       { id: 'xulosa', fn: sceneXulosa }
     ];
 
-    for (const s of scenes) {
+    for (let i = 0; i < scenes.length; i++) {
+      const s = scenes[i];
       const bounds = TM.scenes[s.id];
       if (!bounds) continue;
 
