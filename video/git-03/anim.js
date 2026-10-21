@@ -7,10 +7,53 @@
     W, H, C, UI, MONO,
     clamp, P, lerp, eo, eio, eback, font, withA, rr,
     tw, text, bg, ring, burst, link, pill,
-    fileChip, chip, panel, card
+    fileChip, chip, panel, card, terminal
   } = kit;
 
   const TM = window.TM, NR = window.NR;
+
+  // Terminalda matn va buyruqlarni chizish yordamchilari
+  function drawCommandLine(promptStr, fullCmd, tStart, tTypeEnd, tEnter, u, x, y, opt = {}) {
+    const tPrompt = opt.tPromptShow != null ? opt.tPromptShow : tStart - 0.4;
+    if (u < tPrompt) return;
+
+    const pCol = opt.promptCol || C.green;
+    text(promptStr, x, y, { size: 15, fam: MONO, color: pCol, weight: 700, align: 'left' });
+    const pw = tw(promptStr, 15, 700, MONO);
+
+    if (u < tStart) {
+      if (Math.floor(u * 2.5) % 2 === 0) {
+        text('█', x + pw + 2, y, { size: 15, fam: MONO, color: '#38bdf8', align: 'left' });
+      }
+      return;
+    }
+
+    const dur = Math.max(0.01, tTypeEnd - tStart);
+    const progress = clamp((u - tStart) / dur);
+    const charCount = Math.floor(progress * fullCmd.length);
+    const typedStr = fullCmd.slice(0, charCount);
+
+    text(typedStr, x + pw, y, { size: 15, fam: MONO, color: opt.cmdCol || '#e2e8f0', weight: 600, align: 'left' });
+    const cmdW = tw(typedStr, 15, 600, MONO);
+
+    if (u < tEnter) {
+      const isVisible = u < tTypeEnd ? true : (Math.floor(u * 2.5) % 2 === 0);
+      if (isVisible) {
+        text('█', x + pw + cmdW + 2, y, { size: 15, fam: MONO, color: '#38bdf8', align: 'left' });
+      }
+    }
+  }
+
+  function drawOutputLine(str, tAppear, u, x, y, opt = {}) {
+    if (u < tAppear) return;
+    text(str, x, y, {
+      size: opt.size || 14,
+      fam: MONO,
+      color: opt.color || '#94a3b8',
+      weight: opt.weight || 500,
+      align: 'left'
+    });
+  }
 
   // ==========================================
   // 1-SAHNA: Kirish va Sozlash
@@ -20,18 +63,19 @@
     if (u < 7.5 && !o.isPoster) {
       const kTitle = P(u, 0.4, 0.7);
       withA(kTitle, () => {
-        pill("03-BOB · IDENTIFIKATSIYA VA YORDAM", 960, 280, C.git, { size: 24, mono: false, s: eback(kTitle) });
-        text("Birinchi Sozlash va Yordam", 960, 360, { size: 56, weight: 800, color: C.text });
-        text("user.name, user.email, darajalar ierarxiyasi va git help", 960, 430, { size: 28, color: C.mute });
+        pill("03-BOB · BIRINCHI SOZLASH VA YORDAM", 960, 260, C.git, { size: 24, mono: false, s: eback(kTitle) });
+        text("Birinchi Sozlash va Yordam", 960, 345, { size: 56, weight: 800, color: C.text });
+        text("user.name, user.email, darajalar ierarxiyasi va oflayn yordam", 960, 415, { size: 26, color: C.mute });
 
         // Markaziy konfiguratsiya namunasi
-        const kTerm = P(u, 2.0, 0.6);
+        const kTerm = P(u, 1.8, 0.6);
         withA(kTerm, () => {
           ctx.save(); ctx.translate(0, (1 - eo(kTerm)) * 20);
-          card(520, 500, 880, 220, { fill: 'rgba(11,16,32,0.92)', col: C.blue, lw: 2 });
-          pill("$ git config list --show-origin", 960, 560, C.blue, { size: 22 });
-          text("global  ~/.gitconfig  user.name=Ali Valiyev", 960, 625, { size: 22, fam: MONO, color: C.green, weight: 600 });
-          text("global  ~/.gitconfig  user.email=ali@example.com", 960, 665, { size: 20, fam: MONO, color: C.mute });
+          card(440, 480, 1040, 240, { fill: 'rgba(11,16,32,0.94)', col: C.blue, lw: 2 });
+          pill("$ git config list --show-origin", 960, 535, C.blue, { size: 22 });
+          text("global  file:~/.gitconfig  user.name=Ali Valiyev", 960, 605, { size: 22, fam: MONO, color: C.green, weight: 600 });
+          text("global  file:~/.gitconfig  user.email=ali@example.com", 960, 645, { size: 20, fam: MONO, color: '#38bdf8', weight: 500 });
+          text("global  file:~/.gitconfig  init.defaultBranch=main", 960, 685, { size: 18, fam: MONO, color: C.mute });
           ctx.restore();
         });
       });
@@ -41,36 +85,36 @@
     // Taqqoslash bosqichi (u >= 7.5 yoki poster)
     chip(1, "Nega Sozlash Muhim?", u, 7.5);
 
-    const kBox = o.isPoster ? 1 : eo(P(u, 8.0, 0.6));
+    const kBox = o.isPoster ? 1 : eo(P(u, 7.8, 0.6));
     withA(kBox, () => {
       // Chap: Nega birinchi qadam?
-      panel(100, 140, 840, 680, C.red, "Mualliflik Masalasi", "har bir commit'ning ajralmas qismi", kBox, kBox);
+      panel(100, 140, 840, 680, C.red, "Mualliflik Masalasi", "har bir kommitning ajralmas qismi", kBox, kBox);
 
-      const kG1 = o.isPoster ? 1 : P(u, 8.5, 0.5);
+      const kG1 = o.isPoster ? 1 : P(u, 8.4, 0.5);
       withA(kG1, () => {
         ctx.save(); if (!o.isPoster) ctx.translate(0, (1 - eo(kG1)) * 16);
         card(125, 255, 790, 160, { fill: 'rgba(255,107,122,0.08)', col: C.red });
-        pill("1 · Commit Hashiga Muhrlanadi", 290, 290, C.red, { size: 16, mono: false });
-        text("• Muallif (author) va commit qiluvchi (committer) to'liq yoziladi.", 150, 335, { size: 17, color: C.text, align: 'left' });
-        text("• Bu ma'lumotlar commit obyektining kriptografik heshini hosil qiladi!", 150, 375, { size: 17, color: C.red, align: 'left', weight: 600 });
+        pill("1 · Kriptografik Hash Poydevori", 290, 290, C.red, { size: 16, mono: false });
+        text("• Muallif (author) va kommit qiluvchi (committer) to'liq yoziladi.", 150, 335, { size: 17, color: C.text, align: 'left' });
+        text("• Bu ma'lumotlar kommit obyektining kriptografik heshini hosil qiladi!", 150, 375, { size: 17, color: C.red, align: 'left', weight: 600 });
         ctx.restore();
       });
 
-      const kG2 = o.isPoster ? 1 : P(u, 10.2, 0.5);
+      const kG2 = o.isPoster ? 1 : P(u, 10.4, 0.5);
       withA(kG2, () => {
         ctx.save(); if (!o.isPoster) ctx.translate(0, (1 - eo(kG2)) * 16);
         card(125, 435, 790, 160, { fill: 'rgba(255,107,122,0.08)', col: C.orange });
         pill("2 · Shunchaki Tuzatib Bo'lmaydi", 280, 470, C.orange, { size: 16, mono: false });
-        text("• Sozlamani keyin o'zgartirsangiz, u faqat kelgusi commitlarga o'tadi.", 150, 515, { size: 17, color: C.text, align: 'left' });
-        text("• Eski commitdagi xato ismni tuzatish yangi hash yaratishni talab qiladi.", 150, 555, { size: 17, color: C.orange, align: 'left', weight: 600 });
+        text("• Sozlamani keyin o'zgartirsangiz, u faqat kelgusi kommitlarga o'tadi.", 150, 515, { size: 17, color: C.text, align: 'left' });
+        text("• Eski kommitdagi ismni tuzatish yangi hash yaratishni talab qiladi.", 150, 555, { size: 17, color: C.orange, align: 'left', weight: 600 });
         ctx.restore();
       });
 
-      const kG3 = o.isPoster ? 1 : P(u, 12.0, 0.5);
+      const kG3 = o.isPoster ? 1 : P(u, 12.4, 0.5);
       withA(kG3, () => {
         ctx.save(); if (!o.isPoster) ctx.translate(0, (1 - eo(kG3)) * 16);
         card(125, 620, 790, 165, { fill: 'rgba(255,107,122,0.08)', col: C.purple });
-        pill("3 · Jamoaviy Mas'uliyat", 240, 655, C.purple, { size: 16, mono: false });
+        pill("3 · Jamoaviy Mas'uliyat va Statistika", 300, 655, C.purple, { size: 16, mono: false });
         text("• GitHub, GitLab va barcha CI tizimlari hisobni shu emailga bog'laydi.", 150, 700, { size: 17, color: C.text, align: 'left' });
         text("• Noto'g'ri email bilan hissangiz (contributions) ko'rinmay qolishi mumkin.", 150, 740, { size: 16, color: C.mute, align: 'left' });
         ctx.restore();
@@ -99,12 +143,12 @@
         ctx.restore();
       });
 
-      const kC3 = o.isPoster ? 1 : P(u, 13.0, 0.5);
+      const kC3 = o.isPoster ? 1 : P(u, 13.2, 0.5);
       withA(kC3, () => {
         ctx.save(); if (!o.isPoster) ctx.translate(0, (1 - eo(kC3)) * 16);
         card(1005, 620, 790, 165, { fill: 'rgba(255,209,102,0.08)', col: C.yellow });
         pill("3 · Doimiy Saqlanish", 1130, 655, C.yellow, { size: 16, mono: false });
-        text("• Global sozlamalar bir marta kiritiladi va tizimda abadiy qoladi.", 1030, 700, { size: 17, color: C.text, align: 'left' });
+        text("• Global sozlamalar bir marta kiritiladi va tizimda doimiy qoladi.", 1030, 700, { size: 17, color: C.text, align: 'left' });
         text("• Git dasturi yangilanganda ham sozlamalar hech qachon o'chib ketmaydi.", 1030, 740, { size: 17, color: C.yellow, align: 'left', weight: 600 });
         ctx.restore();
       });
@@ -112,12 +156,12 @@
 
     // Pastki xulosa
     if (o.foot !== false) {
-      const kFoot = o.isPoster ? 1 : P(u, 14.5, 0.7);
+      const kFoot = o.isPoster ? 1 : P(u, 14.8, 0.7);
       withA(kFoot, () => {
         ctx.save(); if (!o.isPoster) ctx.translate(0, (1 - eo(kFoot)) * 16);
         card(100, 845, 1720, 165, { fill: 'rgba(17,24,52,0.92)', col: C.blue });
         text("Git sozlamalari har bir kommitning tarixiy mualliflik poydevorini belgilaydi.", 960, 895, { size: 24, weight: 700, color: C.text, align: 'center' });
-        text("Endi sozlamalarning 3 ta asosiy darajasi va ustunlik qoidasini ko'ramiz.", 960, 950, { size: 20, color: C.mute, align: 'center' });
+        text("Endi sozlamalarning 3 ta asosiy darajasi va ustunlik ierarxiyasini ko'ramiz.", 960, 950, { size: 20, color: C.mute, align: 'center' });
         ctx.restore();
       });
     }
@@ -146,7 +190,7 @@
       });
 
       // Global
-      const kS2 = P(u, 3.2, 0.6);
+      const kS2 = P(u, 3.8, 0.6);
       withA(kS2, () => {
         ctx.save(); ctx.translate(0, (1 - eo(kS2)) * 16);
         card(125, 435, 790, 165, { fill: 'rgba(79,140,255,0.08)', col: C.blue });
@@ -157,7 +201,7 @@
       });
 
       // Local
-      const kS3 = P(u, 5.2, 0.6);
+      const kS3 = P(u, 6.2, 0.6);
       withA(kS3, () => {
         ctx.save(); ctx.translate(0, (1 - eo(kS3)) * 16);
         card(125, 620, 790, 165, { fill: 'rgba(52,211,153,0.08)', col: C.green });
@@ -170,197 +214,206 @@
       // O'ng panel: Ustunlik qoidasi
       panel(980, 140, 840, 680, C.yellow, "Oltin Qoida: Tor Daraja Ustun", "sozlamalar qanday tartibda o'qiladi?", kBox, kBox);
 
-      const kP1 = P(u, 6.8, 0.6);
+      const kP1 = P(u, 8.2, 0.6);
       withA(kP1, () => {
         ctx.save(); ctx.translate(0, (1 - eo(kP1)) * 16);
         card(1005, 255, 790, 175, { fill: 'rgba(255,209,102,0.08)', col: C.yellow });
         pill("O'qilish Tartibi va Qayta Yozilish", 1210, 290, C.yellow, { size: 16, mono: false });
-        text("system (/etc)  ->  global (~/.gitconfig)  ->  local (.git/config)", 1030, 340, { size: 17, fam: MONO, color: C.text, align: 'left' });
-        text("Git fayllarni ketma-ket o'qiydi; eng oxirgi o'qilgan qiymat g'olib bo'ladi!", 1030, 385, { size: 16, color: C.yellow, align: 'left', weight: 600 });
+        text("system (/etc)  →  global (~/.gitconfig)  →  local (.git/config)", 1030, 340, { size: 17, fam: MONO, color: C.text, align: 'left' });
+        text("Git fayllarni ketma-ket o'qiydi; eng oxirgi o'qilgan tor daraja g'olib bo'ladi!", 1030, 385, { size: 16, color: C.yellow, align: 'left', weight: 600 });
         ctx.restore();
       });
 
-      const kP2 = P(u, 9.2, 0.6);
+      const kP2 = P(u, 11.0, 0.6);
       withA(kP2, () => {
         ctx.save(); ctx.translate(0, (1 - eo(kP2)) * 16);
         card(1005, 450, 790, 185, { fill: 'rgba(15,22,48,0.92)', col: C.git });
         pill("Amaliy Misol: Shaxsiy vs Ishchi Email", 1220, 485, C.git, { size: 16, mono: false });
         text("global: user.email = ali@shaxsiy.uz", 1030, 530, { size: 17, fam: MONO, color: C.mute, align: 'left' });
-        text("local:  user.email = ali@kompaniya.uz   <- G'OLIB!", 1030, 570, { size: 17, fam: MONO, color: C.green, align: 'left', weight: 700 });
-        text("Natija: Ishchi repoda to'g'ri korporativ email ishlatiladi.", 1030, 605, { size: 16, color: C.text, align: 'left' });
+        text("local:  user.email = ali@ishxona.uz   ◄── G'OLIB!", 1030, 570, { size: 17, fam: MONO, color: C.green, align: 'left', weight: 700 });
+        text("Natija: Ishchi repoda to'g'ri korporativ email bilan kommit qilinadi.", 1030, 605, { size: 16, color: C.text, align: 'left' });
         ctx.restore();
       });
 
-      const kP3 = P(u, 11.5, 0.6);
+      const kP3 = P(u, 13.8, 0.6);
       withA(kP3, () => {
         ctx.save(); ctx.translate(0, (1 - eo(kP3)) * 16);
         card(1005, 655, 790, 130, { fill: 'rgba(79,140,255,0.08)', col: C.blue });
         pill("Manbani Tekshirish Buyrug'i", 1180, 690, C.blue, { size: 16, mono: false });
-        text("$ git config list --show-scope --show-origin", 1030, 735, { size: 18, fam: MONO, color: C.blue, align: 'left', weight: 600 });
+        text("$ git config list --show-scope --show-origin", 1030, 735, { size: 18, fam: MONO, color: '#38bdf8', align: 'left', weight: 600 });
         ctx.restore();
       });
     });
 
     // Pastki xulosa
-    const kFoot = P(u, 13.5, 0.7);
+    const kFoot = P(u, 16.5, 0.7);
     withA(kFoot, () => {
       ctx.save(); ctx.translate(0, (1 - eo(kFoot)) * 16);
       card(100, 845, 1720, 165, { fill: 'rgba(17,24,52,0.92)', col: C.green });
-      text("Qoida oddiy: Tor daraja keng darajadan ustun; lokal repo sozlamasi global sozlamani yengadi.", 960, 895, { size: 24, weight: 700, color: C.green, align: 'center' });
-      text("Endi identifikatsiyani o'rnatish va yangi Git 2.46+ subkomandalarini ko'rib chiqamiz.", 960, 950, { size: 20, color: C.mute, align: 'center' });
+      text("Qoida oddiy: Tor daraja keng darajadan ustun; lokal repozitoriy sozlamasi global sozlamani yengadi.", 960, 895, { size: 24, weight: 700, color: C.green, align: 'center' });
+      text("Endi real terminalda identifikatsiyani o'rnatamiz va yangi Git 2.46+ subkomandalarini ko'ramiz.", 960, 950, { size: 20, color: C.mute, align: 'center' });
       ctx.restore();
     });
   }
 
   // ==========================================
-  // 3-SAHNA: Identifikatsiya va Sintaksis
+  // 3-SAHNA: Identifikatsiya va Sintaksis (SPLIT SCREEN)
   // ==========================================
-  function sceneIdentifikatsiyaSintaksis(u, bounds) {
+  function sceneIdentifikatsiyaSintaksis(u, bounds, o = {}) {
     chip(3, "Identifikatsiya va Sintaksis", u);
 
     const kBox = eo(P(u, 0.4, 0.6));
     withA(kBox, () => {
-      // Chap panel: Ism va email
-      panel(100, 140, 840, 680, C.blue, "Identifikatsiyani Sozlash", "user.name va user.email", kBox, kBox);
-
-      // Ism
-      const kI1 = P(u, 1.2, 0.6);
-      withA(kI1, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kI1)) * 16);
-        card(125, 255, 790, 160, { fill: 'rgba(15,22,48,0.92)', col: C.blue });
-        pill("Ism Kiritish (user.name)", 240, 290, C.blue, { size: 16, mono: false });
-        text("$ git config set --global user.name 'Ali Valiyev'", 150, 340, { size: 18, fam: MONO, color: C.blue, align: 'left', weight: 600 });
-        text("Ushbu ism barcha kommitlaringizda muallif sifatida saqlanadi.", 150, 380, { size: 16, color: C.mute, align: 'left' });
-        ctx.restore();
+      // Chap tomonda: Real Jonli Terminal!
+      terminal(100, 140, 840, 680, {
+        title: 'bash — ~/.gitconfig (80x24)',
+        p: kBox
       });
 
-      // Email
-      const kI2 = P(u, 3.5, 0.6);
-      withA(kI2, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kI2)) * 16);
-        card(125, 435, 790, 160, { fill: 'rgba(15,22,48,0.92)', col: C.green });
-        pill("Email Kiritish (user.email)", 250, 470, C.green, { size: 16, mono: false });
-        text("$ git config set --global user.email 'ali@example.com'", 150, 520, { size: 18, fam: MONO, color: C.green, align: 'left', weight: 600 });
-        text("GitHub yoki GitLab profilingizdagi email bilan bir xil bo'lsin.", 150, 560, { size: 16, color: C.mute, align: 'left' });
-        ctx.restore();
-      });
+      const tu = o.isPoster ? 20.0 : u;
 
-      // ~/.gitconfig fayli
-      const kI3 = P(u, 5.8, 0.6);
-      withA(kI3, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kI3)) * 16);
-        card(125, 615, 790, 170, { fill: 'rgba(11,16,32,0.92)', col: C.yellow, lw: 2 });
-        pill("Fayldagi Ko'rinishi (~/.gitconfig)", 270, 650, C.yellow, { size: 16, mono: false });
-        text("[user]", 150, 695, { size: 17, fam: MONO, color: C.yellow, align: 'left' });
-        text("    name = Ali Valiyev", 150, 725, { size: 17, fam: MONO, color: C.text, align: 'left' });
-        text("    email = ali@example.com", 150, 755, { size: 17, fam: MONO, color: C.text, align: 'left' });
-        ctx.restore();
-      });
+      // 1-buyruq: user.name sozlash
+      drawCommandLine("~ $ ", "git config set --global user.name 'Ali Valiyev'", 1.0, 3.4, 3.8, tu, 130, 205);
 
-      // O'ng panel: Yangi sintaksis
-      panel(980, 140, 840, 680, C.orange, "Yangi Git 2.46+ Subkomandalari", "zamonaviy va aniq boshqaruv", kBox, kBox);
+      // 2-buyruq: user.email sozlash
+      drawCommandLine("~ $ ", "git config set --global user.email ali@example.com", 4.4, 6.8, 7.2, tu, 130, 235);
 
-      const kS1 = P(u, 7.5, 0.6);
+      // 3-buyruq: cat ~/.gitconfig ko'rish
+      drawCommandLine("~ $ ", "cat ~/.gitconfig", 7.8, 8.9, 9.2, tu, 130, 265, { promptCol: C.yellow });
+      drawOutputLine("[user]", 9.4, tu, 150, 292, { color: C.yellow, weight: 600 });
+      drawOutputLine("	name = Ali Valiyev", 9.4, tu, 150, 314, { color: '#e2e8f0' });
+      drawOutputLine("	email = ali@example.com", 9.4, tu, 150, 336, { color: '#38bdf8' });
+
+      // 4-buyruq: git config get user.name
+      drawCommandLine("~ $ ", "git config get user.name", 10.4, 12.0, 12.3, tu, 130, 366);
+      drawOutputLine("Ali Valiyev", 12.5, tu, 150, 392, { color: C.green, weight: 600 });
+
+      // 5-buyruq: git config list --global
+      drawCommandLine("~ $ ", "git config list --global", 13.0, 14.8, 15.2, tu, 130, 422);
+      drawOutputLine("user.name=Ali Valiyev", 15.4, tu, 150, 448, { color: '#cbd5e1' });
+      drawOutputLine("user.email=ali@example.com", 15.4, tu, 150, 468, { color: '#38bdf8' });
+
+      // Faol prompt va miltillovchi kursor
+      if (tu >= 16.0) {
+        text("~ $ ", 130, 502, { size: 15, fam: MONO, color: C.green, weight: 700, align: 'left' });
+        const pw = tw("~ $ ", 15, 700, MONO);
+        if (Math.floor(tu * 2.5) % 2 === 0 || o.isPoster) {
+          text('█', 130 + pw + 2, 502, { size: 15, fam: MONO, color: '#38bdf8', align: 'left' });
+        }
+      }
+
+      // O'ng panel: Zamonaviy Sintaksis va Izoh
+      panel(980, 140, 840, 680, C.orange, "Zamonaviy Git 2.46+ Subkomandalari", "aniq, xavfsiz va tizimli boshqaruv", kBox, kBox);
+
+      const kS1 = P(u, 2.0, 0.6);
       withA(kS1, () => {
         ctx.save(); ctx.translate(0, (1 - eo(kS1)) * 16);
         card(1005, 255, 790, 240, { fill: 'rgba(255,181,71,0.08)', col: C.orange });
         pill("4 Ta Asosiy Subkomanda", 1140, 290, C.orange, { size: 16, mono: false });
-        text("• git config list       -> barcha sozlamalarni ko'rish", 1030, 340, { size: 17, fam: MONO, color: C.text, align: 'left' });
-        text("• git config get <nom>  -> bitta qiymatni o'qish", 1030, 380, { size: 17, fam: MONO, color: C.text, align: 'left' });
-        text("• git config set <nom>  -> qiymatni yozish", 1030, 420, { size: 17, fam: MONO, color: C.text, align: 'left' });
-        text("• git config unset <nom> -> sozlamani o'chirish", 1030, 460, { size: 17, fam: MONO, color: C.text, align: 'left' });
+        text("• git config set <kalit> <qiymat>   -> qiymat yozish", 1030, 335, { size: 17, fam: MONO, color: C.text, align: 'left' });
+        text("• git config get <kalit>            -> qiymatni o'qish", 1030, 375, { size: 17, fam: MONO, color: C.text, align: 'left' });
+        text("• git config unset <kalit>          -> sozlamani o'chirish", 1030, 415, { size: 17, fam: MONO, color: C.text, align: 'left' });
+        text("• git config list                   -> barchasini ko'rish", 1030, 455, { size: 17, fam: MONO, color: C.text, align: 'left' });
         ctx.restore();
       });
 
-      const kS2 = P(u, 9.8, 0.6);
+      const kS2 = P(u, 6.0, 0.6);
       withA(kS2, () => {
         ctx.save(); ctx.translate(0, (1 - eo(kS2)) * 16);
         card(1005, 515, 790, 270, { fill: 'rgba(52,211,153,0.08)', col: C.green });
         pill("Yangi vs Eski Sintaksis Solishtiruvi", 1210, 550, C.green, { size: 16, mono: false });
-        text("Yangi (2.46+):  git config get user.name", 1030, 600, { size: 17, fam: MONO, color: C.green, align: 'left', weight: 600 });
-        text("Eski shakl:     git config user.name (yoki --get)", 1030, 635, { size: 16, fam: MONO, color: C.mute, align: 'left' });
-        text("Eski shakllar ham ishlaydi, lekin ma'lumotnomada", 1030, 680, { size: 16, color: C.text, align: 'left' });
-        text("eskirgan (deprecated) deb belgilangan.", 1030, 715, { size: 16, color: C.yellow, align: 'left', weight: 600 });
+        text("Yangi (2.46+):  git config get user.name", 1030, 595, { size: 17, fam: MONO, color: C.green, align: 'left', weight: 600 });
+        text("Eski shakl:     git config user.name (yoki --get)", 1030, 630, { size: 16, fam: MONO, color: C.mute, align: 'left' });
+        text("Eski shakllar hamon ishlaydi, ammo rasmiy hujjatda", 1030, 675, { size: 16, color: C.text, align: 'left' });
+        text("eskirgan (deprecated) deb belgilangan.", 1030, 710, { size: 16, color: C.yellow, align: 'left', weight: 600 });
+        text("Tavsiya: Har doim yangi subkomandalarni ishlating!", 1030, 745, { size: 16, color: '#38bdf8', align: 'left', weight: 600 });
         ctx.restore();
       });
     });
 
     // Pastki xulosa
-    const kFoot = P(u, 13.0, 0.7);
+    const kFoot = P(u, 16.5, 0.7);
     withA(kFoot, () => {
       ctx.save(); ctx.translate(0, (1 - eo(kFoot)) * 16);
       card(100, 845, 1720, 165, { fill: 'rgba(17,24,52,0.92)', col: C.blue });
-      text("Yangi subkomandalar sintaksisi konfiguratsiyani boshqarishni aniq va xavfsiz qiladi.", 960, 895, { size: 24, weight: 700, color: C.text, align: 'center' });
-      text("Endi muharrir, standart brench va rang sozlamalarini ko'rib chiqamiz.", 960, 950, { size: 20, color: C.mute, align: 'center' });
+      text("Yangi subkomandalar konfiguratsiyani boshqarishni aniq, qulay va xavfsiz qiladi.", 960, 895, { size: 24, weight: 700, color: C.text, align: 'center' });
+      text("Endi muharrir, standart brench va rang sozlamalarini amalda tekshiramiz.", 960, 950, { size: 20, color: C.mute, align: 'center' });
       ctx.restore();
     });
   }
 
   // ==========================================
-  // 4-SAHNA: Muhim Global Sozlamalar
+  // 4-SAHNA: Muhim Global Sozlamalar (SPLIT SCREEN)
   // ==========================================
-  function sceneMuhimSozlamalar(u, bounds) {
+  function sceneMuhimSozlamalar(u, bounds, o = {}) {
     chip(4, "Muhim Global Sozlamalar", u);
 
     const kBox = eo(P(u, 0.4, 0.6));
     withA(kBox, () => {
-      // Chap panel: Muharrir va default branch
-      panel(100, 140, 840, 680, C.purple, "Muharrir va Standart Brench", "core.editor va init.defaultBranch", kBox, kBox);
+      // Chap tomonda: Real Jonli Terminal!
+      terminal(100, 140, 840, 680, {
+        title: 'bash — ~/loyiha (80x24)',
+        p: kBox
+      });
 
-      const kM1 = P(u, 1.2, 0.6);
+      const tu = o.isPoster ? 20.0 : u;
+
+      // 1-buyruq: init.defaultBranch main
+      drawCommandLine("~ $ ", "git config set --global init.defaultBranch main", 1.0, 3.6, 4.0, tu, 130, 205);
+
+      // 2-buyruq: core.editor "code --wait"
+      drawCommandLine("~ $ ", "git config set --global core.editor 'code --wait'", 4.6, 7.2, 7.6, tu, 130, 235);
+
+      // 3-buyruq: git config list --show-origin
+      drawCommandLine("~ $ ", "git config list --show-origin", 8.2, 9.8, 10.1, tu, 130, 265, { promptCol: C.yellow });
+      drawOutputLine("file:~/.gitconfig	user.name=Ali Valiyev", 10.3, tu, 150, 292, { color: '#94a3b8' });
+      drawOutputLine("file:~/.gitconfig	user.email=ali@example.com", 10.3, tu, 150, 314, { color: '#94a3b8' });
+      drawOutputLine("file:~/.gitconfig	init.defaultbranch=main", 10.3, tu, 150, 336, { color: C.green, weight: 600 });
+      drawOutputLine("file:~/.gitconfig	core.editor=code --wait", 10.3, tu, 150, 358, { color: '#38bdf8', weight: 600 });
+
+      // 4-buyruq: git var tekshiruvi
+      drawCommandLine("~ $ ", "git var GIT_DEFAULT_BRANCH", 11.2, 12.8, 13.2, tu, 130, 390);
+      drawOutputLine("main", 13.4, tu, 150, 416, { color: C.green, weight: 700 });
+
+      // Faol prompt va miltillovchi kursor
+      if (tu >= 14.5) {
+        text("~ $ ", 130, 452, { size: 15, fam: MONO, color: C.green, weight: 700, align: 'left' });
+        const pw = tw("~ $ ", 15, 700, MONO);
+        if (Math.floor(tu * 2.5) % 2 === 0 || o.isPoster) {
+          text('█', 130 + pw + 2, 452, { size: 15, fam: MONO, color: '#38bdf8', align: 'left' });
+        }
+      }
+
+      // O'ng panel: Tushuntirish kartalari
+      panel(980, 140, 840, 680, C.purple, "Standart Brench va Muharrir", "kundalik qulaylik va kelajak standartlari", kBox, kBox);
+
+      const kM1 = P(u, 1.8, 0.6);
       withA(kM1, () => {
         ctx.save(); ctx.translate(0, (1 - eo(kM1)) * 16);
-        card(125, 255, 790, 240, { fill: 'rgba(180,108,255,0.08)', col: C.purple });
-        pill("Standart Matn Muharriri (core.editor)", 310, 290, C.purple, { size: 16, mono: false });
-        text("$ git config set --global core.editor 'code --wait'", 150, 340, { size: 18, fam: MONO, color: C.purple, align: 'left', weight: 600 });
-        text("• Kommit xabari va rebase amallari uchun VS Code ochiladi.", 150, 385, { size: 17, color: C.text, align: 'left' });
-        text("• Terminal ichida qolishni istasangiz: 'nano' yoki 'vim'.", 150, 420, { size: 17, color: C.mute, align: 'left' });
-        text("• Belgilanmasa tizimning standart EDITOR o'zgaruvchisidan olinadi.", 150, 455, { size: 15, color: C.mute, align: 'left' });
+        card(1005, 255, 790, 240, { fill: 'rgba(180,108,255,0.08)', col: C.purple });
+        pill("Standart Matn Muharriri (core.editor)", 1190, 290, C.purple, { size: 16, mono: false });
+        text("$ git config set --global core.editor 'code --wait'", 1030, 340, { size: 18, fam: MONO, color: C.purple, align: 'left', weight: 600 });
+        text("• Kommit xabari va rebase amallari uchun VS Code ochiladi.", 1030, 385, { size: 17, color: C.text, align: 'left' });
+        text("• Muhim: '--wait' kaliti kerak, aks holda kommit bo'sh qolib bekor bo'ladi!", 1030, 420, { size: 16, color: C.yellow, align: 'left', weight: 600 });
+        text("• Terminal ichida qolishni istasangiz: 'nano' yoki 'vim'.", 1030, 455, { size: 16, color: C.mute, align: 'left' });
         ctx.restore();
       });
 
-      const kM2 = P(u, 3.8, 0.6);
+      const kM2 = P(u, 6.5, 0.6);
       withA(kM2, () => {
         ctx.save(); ctx.translate(0, (1 - eo(kM2)) * 16);
-        card(125, 520, 790, 265, { fill: 'rgba(79,140,255,0.08)', col: C.blue });
-        pill("Standart Brench Nomi (init.defaultBranch)", 320, 555, C.blue, { size: 16, mono: false });
-        text("$ git config set --global init.defaultBranch main", 150, 605, { size: 18, fam: MONO, color: C.blue, align: 'left', weight: 600 });
-        text("• Yangi yaratilgan repozitoriyda birinchi brench 'main' bo'ladi.", 150, 650, { size: 17, color: C.text, align: 'left' });
-        text("• Tarixiy 'master' o'rniga bugungi zamonaviy standart.", 150, 685, { size: 17, color: C.text, align: 'left' });
-        text("• GitHub va GitLab standartlariga 100% to'liq mos keladi.", 150, 720, { size: 16, color: C.yellow, align: 'left', weight: 600 });
-        ctx.restore();
-      });
-
-      // O'ng panel: Ranglar va tahrirlash
-      panel(980, 140, 840, 680, C.green, "Ranglar va To'g'ridan-to'g'ri Tahrir", "chiroyli terminal va tezkor ochish", kBox, kBox);
-
-      const kR1 = P(u, 6.2, 0.6);
-      withA(kR1, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kR1)) * 16);
-        card(1005, 255, 790, 240, { fill: 'rgba(52,211,153,0.08)', col: C.green });
-        pill("Ranglar Tizimi (color.ui)", 1160, 290, C.green, { size: 16, mono: false });
-        text("$ git config set --global color.ui auto", 1030, 340, { size: 18, fam: MONO, color: C.green, align: 'left', weight: 600 });
-        text("• git status, git diff va git branch chiqishlarini chiroyli ranglaydi.", 1030, 385, { size: 16, color: C.text, align: 'left' });
-        text("• 'auto' opsiyasi chiqish faylga uzatilganda rang kodlarini o'chiradi.", 1030, 420, { size: 16, color: C.mute, align: 'left' });
-        text("• Zamonaviy Git'da bu sozlama standart yoqilgan bo'ladi.", 1030, 455, { size: 15, color: C.mute, align: 'left' });
-        ctx.restore();
-      });
-
-      const kR2 = P(u, 8.8, 0.6);
-      withA(kR2, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kR2)) * 16);
-        card(1005, 520, 790, 265, { fill: 'rgba(255,209,102,0.08)', col: C.yellow });
-        pill("Faylni Muharrirda Ochish (edit)", 1190, 555, C.yellow, { size: 16, mono: false });
-        text("$ git config edit --global", 1030, 605, { size: 18, fam: MONO, color: C.yellow, align: 'left', weight: 600 });
-        text("• ~/.gitconfig faylini to'g'ridan-to'g'ri matn muharririda ochadi.", 1030, 650, { size: 16, color: C.text, align: 'left' });
-        text("• Bir nechta alias yoki sozlamani birdaniga tahrirlashda qulay.", 1030, 685, { size: 16, color: C.text, align: 'left' });
-        text("• Saqlab yopishingiz bilan Git yangi qiymatlarni darhol qabul qiladi.", 1030, 720, { size: 16, color: C.yellow, align: 'left', weight: 600 });
+        card(1005, 515, 790, 270, { fill: 'rgba(79,140,255,0.08)', col: C.blue });
+        pill("Standart Brench Nomi: 'main'", 1160, 550, C.blue, { size: 16, mono: false });
+        text("$ git config set --global init.defaultBranch main", 1030, 600, { size: 18, fam: MONO, color: C.blue, align: 'left', weight: 600 });
+        text("• Yangi repoda birinchi brench avtomatik ravishda 'main' bo'ladi.", 1030, 645, { size: 17, color: C.text, align: 'left' });
+        text("• Git 3.0 da 'main' rasmiy standartga aylanadi.", 1030, 680, { size: 17, color: C.green, align: 'left', weight: 600 });
+        text("• GitHub va GitLab standartlariga 100% to'liq mos keladi.", 1030, 715, { size: 16, color: C.text, align: 'left' });
         ctx.restore();
       });
     });
 
     // Pastki xulosa
-    const kFoot = P(u, 11.5, 0.7);
+    const kFoot = P(u, 16.5, 0.7);
     withA(kFoot, () => {
       ctx.save(); ctx.translate(0, (1 - eo(kFoot)) * 16);
       card(100, 845, 1720, 165, { fill: 'rgba(17,24,52,0.92)', col: C.git });
@@ -371,88 +424,95 @@
   }
 
   // ==========================================
-  // 5-SAHNA: Git Help va Ma'lumotnoma
+  // 5-SAHNA: Git Help va Ma'lumotnoma (SPLIT SCREEN)
   // ==========================================
-  function sceneYordamTizimi(u, bounds) {
+  function sceneYordamTizimi(u, bounds, o = {}) {
     chip(5, "Git Help va Ma’lumotnoma", u);
 
     const kBox = eo(P(u, 0.4, 0.6));
     withA(kBox, () => {
-      // Chap panel: Buyruq yordami
-      panel(100, 140, 840, 680, C.blue, "Buyruq Bo'yicha Yordam", "3 xil yo'l bilan ma'lumot olish", kBox, kBox);
+      // Chap tomonda: Real Jonli Terminal!
+      terminal(100, 140, 840, 680, {
+        title: 'bash — git help (80x24)',
+        p: kBox
+      });
 
-      const kH1 = P(u, 1.2, 0.6);
+      const tu = o.isPoster ? 20.0 : u;
+
+      // 1-buyruq: git config -h (tezkor konspekt)
+      drawCommandLine("~ $ ", "git config -h", 1.0, 2.4, 2.7, tu, 130, 205, { promptCol: C.purple });
+      drawOutputLine("usage: git config [<options>]", 2.9, tu, 150, 230, { color: C.yellow, weight: 600 });
+      drawOutputLine("    --global      use global config file", 2.9, tu, 150, 250, { color: '#cbd5e1' });
+      drawOutputLine("    --system      use system config file", 2.9, tu, 150, 270, { color: '#cbd5e1' });
+      drawOutputLine("    --local       use repository config file", 2.9, tu, 150, 290, { color: '#cbd5e1' });
+      drawOutputLine("    --show-origin show origin of config", 2.9, tu, 150, 310, { color: '#38bdf8' });
+
+      // 2-buyruq: git help -g (konseptual qo'llanmalar)
+      drawCommandLine("~ $ ", "git help -g", 4.5, 5.8, 6.2, tu, 130, 342, { promptCol: C.green });
+      drawOutputLine("The Git concept guides are:", 6.4, tu, 150, 368, { color: C.green, weight: 600 });
+      drawOutputLine("   everyday   A useful minimum set of commands", 6.4, tu, 150, 388, { color: '#cbd5e1' });
+      drawOutputLine("   glossary   A Git Glossary and core concepts", 6.4, tu, 150, 408, { color: '#cbd5e1' });
+      drawOutputLine("   workflows  An overview of recommended workflows", 6.4, tu, 150, 428, { color: '#cbd5e1' });
+
+      // 3-buyruq: git help config (to'liq oflayn man page)
+      drawCommandLine("~ $ ", "git help config", 8.2, 9.8, 10.2, tu, 130, 460, { promptCol: C.git });
+      drawOutputLine("GIT-CONFIG(1)            Git Manual            GIT-CONFIG(1)", 10.4, tu, 150, 486, { color: '#38bdf8', weight: 700 });
+      drawOutputLine("NAME", 10.4, tu, 150, 508, { color: C.yellow, weight: 600 });
+      drawOutputLine("       git-config - Get and set options", 10.4, tu, 150, 528, { color: '#cbd5e1' });
+      drawOutputLine("DESCRIPTION", 10.4, tu, 150, 548, { color: C.yellow, weight: 600 });
+      drawOutputLine("       You can query/set/replace/unset options.", 10.4, tu, 150, 568, { color: '#94a3b8' });
+      drawOutputLine("       (Chiqish uchun 'q' tugmasini bosing)", 10.4, tu, 150, 590, { color: C.red, weight: 600 });
+
+      // Faol prompt va miltillovchi kursor
+      if (tu >= 13.5) {
+        text("~ $ ", 130, 626, { size: 15, fam: MONO, color: C.green, weight: 700, align: 'left' });
+        const pw = tw("~ $ ", 15, 700, MONO);
+        if (Math.floor(tu * 2.5) % 2 === 0 || o.isPoster) {
+          text('█', 130 + pw + 2, 626, { size: 15, fam: MONO, color: '#38bdf8', align: 'left' });
+        }
+      }
+
+      // O'ng panel: 3 Ta Yordam Yo'li
+      panel(980, 140, 840, 680, C.yellow, "Oflayn Yordam Tizimi", "internet talab qilmaydigan to'liq hujjatlar", kBox, kBox);
+
+      const kH1 = P(u, 1.8, 0.6);
       withA(kH1, () => {
         ctx.save(); ctx.translate(0, (1 - eo(kH1)) * 16);
-        card(125, 255, 790, 160, { fill: 'rgba(180,108,255,0.08)', col: C.purple });
-        pill("1 · Tezkor Konspekt (-h)", 250, 290, C.purple, { size: 16, mono: false });
-        text("$ git commit -h", 150, 335, { size: 18, fam: MONO, color: C.purple, align: 'left', weight: 600 });
-        text("Terminaldan chiqmasdan barcha opsiyalar ro'yxatini ko'rish.", 150, 375, { size: 16, color: C.text, align: 'left' });
+        card(1005, 255, 790, 160, { fill: 'rgba(180,108,255,0.08)', col: C.purple });
+        pill("1 · Tezkor Konspekt (-h)", 1130, 290, C.purple, { size: 16, mono: false });
+        text("$ git config -h   yoki   $ git add -h", 1030, 335, { size: 18, fam: MONO, color: C.purple, align: 'left', weight: 600 });
+        text("Terminaldan chiqmasdan barcha opsiyalar ro'yxatini ko'rish.", 1030, 375, { size: 16, color: C.text, align: 'left' });
         ctx.restore();
       });
 
-      const kH2 = P(u, 3.5, 0.6);
+      const kH2 = P(u, 5.5, 0.6);
       withA(kH2, () => {
         ctx.save(); ctx.translate(0, (1 - eo(kH2)) * 16);
-        card(125, 435, 790, 165, { fill: 'rgba(52,211,153,0.08)', col: C.green });
-        pill("2 · To'liq Ma'lumotnoma (man page)", 280, 470, C.green, { size: 16, mono: false });
-        text("$ git help commit   yoki   $ git commit --help", 150, 515, { size: 18, fam: MONO, color: C.green, align: 'left', weight: 600 });
-        text("To'liq rasmiy ma'lumotnoma; butunlay OFLAYN ishlaydi!", 150, 555, { size: 16, color: C.yellow, align: 'left', weight: 600 });
+        card(1005, 435, 790, 165, { fill: 'rgba(52,211,153,0.08)', col: C.green });
+        pill("2 · To'liq Ma'lumotnoma (man page)", 1160, 470, C.green, { size: 16, mono: false });
+        text("$ git help config   yoki   $ git config --help", 1030, 515, { size: 18, fam: MONO, color: C.green, align: 'left', weight: 600 });
+        text("To'liq rasmiy ma'lumotnoma; butunlay OFLAYN ishlaydi!", 1030, 555, { size: 16, color: C.yellow, align: 'left', weight: 600 });
         ctx.restore();
       });
 
-      const kH3 = P(u, 5.8, 0.6);
+      const kH3 = P(u, 9.5, 0.6);
       withA(kH3, () => {
         ctx.save(); ctx.translate(0, (1 - eo(kH3)) * 16);
-        card(125, 620, 790, 165, { fill: 'rgba(79,140,255,0.08)', col: C.blue });
-        pill("3 · Veb Ko'rinish (-w)", 230, 655, C.blue, { size: 16, mono: false });
-        text("$ git help -w commit", 150, 700, { size: 18, fam: MONO, color: C.blue, align: 'left', weight: 600 });
-        text("Qo'llanmani brauzerda chiroyli HTML formatida ochib beradi.", 150, 740, { size: 16, color: C.mute, align: 'left' });
-        ctx.restore();
-      });
-
-      // O'ng panel: Qo'llanmalar to'plami
-      panel(980, 140, 840, 680, C.git, "Tizimli Qo'llanmalar (Guides)", "git help -a va git help -g", kBox, kBox);
-
-      const kG1 = P(u, 7.5, 0.6);
-      withA(kG1, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kG1)) * 16);
-        card(1005, 255, 790, 160, { fill: 'rgba(255,107,122,0.08)', col: C.git });
-        pill("Barcha 190+ Buyruqlar (-a)", 1170, 290, C.git, { size: 16, mono: false });
-        text("$ git help -a", 1030, 335, { size: 18, fam: MONO, color: C.git, align: 'left', weight: 600 });
-        text("Barcha kundalik (porcelain) va ichki (plumbing) buyruqlar ro'yxati.", 1030, 375, { size: 16, color: C.text, align: 'left' });
-        ctx.restore();
-      });
-
-      const kG2 = P(u, 9.8, 0.6);
-      withA(kG2, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kG2)) * 16);
-        card(1005, 435, 790, 175, { fill: 'rgba(255,181,71,0.08)', col: C.orange });
-        pill("Mavzular va Tushunchalar (-g)", 1170, 470, C.orange, { size: 16, mono: false });
-        text("$ git help -g", 1030, 515, { size: 18, fam: MONO, color: C.orange, align: 'left', weight: 600 });
-        text("Alohida amaliy qo'llanmalar to'plamini ko'rsatadi:", 1030, 555, { size: 16, color: C.text, align: 'left' });
-        text("everyday, tutorial, revisions, workflows, gitcli", 1030, 585, { size: 16, fam: MONO, color: C.yellow, align: 'left', weight: 600 });
-        ctx.restore();
-      });
-
-      const kG3 = P(u, 11.8, 0.6);
-      withA(kG3, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kG3)) * 16);
-        card(1005, 630, 790, 155, { fill: 'rgba(52,211,153,0.08)', col: C.green });
-        pill("Masalan: Revision Sintaksisi", 1170, 665, C.green, { size: 16, mono: false });
-        text("$ git help revisions", 1030, 710, { size: 18, fam: MONO, color: C.green, align: 'left', weight: 600 });
-        text("HEAD~3, master..feature kabi barcha tanlash sirlari.", 1030, 745, { size: 16, color: C.mute, align: 'left' });
+        card(1005, 620, 790, 165, { fill: 'rgba(79,140,255,0.08)', col: C.blue });
+        pill("3 · Barcha Buyruqlar va Qo'llanmalar", 1175, 655, C.blue, { size: 16, mono: false });
+        text("$ git help -a (barcha buyruqlar)  va  $ git help -g (konseptlar)", 1030, 700, { size: 17, fam: MONO, color: '#38bdf8', align: 'left', weight: 600 });
+        text("Atamalar lug'ati (glossary) va kundalik buyruqlar (everyday) jamlangan.", 1030, 740, { size: 16, color: C.mute, align: 'left' });
         ctx.restore();
       });
     });
 
     // Pastki xulosa
-    const kFoot = P(u, 13.5, 0.7);
+    const kFoot = P(u, 16.5, 0.7);
     withA(kFoot, () => {
       ctx.save(); ctx.translate(0, (1 - eo(kFoot)) * 16);
-      card(100, 845, 1720, 165, { fill: 'rgba(17,24,52,0.92)', col: C.green });
-      text("Git yordam tizimi to'liq oflayn ishlaydi va har qanday savolga rasmiy javob beradi.", 960, 895, { size: 24, weight: 700, color: C.green, align: 'center' });
-      text("Endi 03-bobning asosiy xulosalarini umumlashtiramiz.", 960, 950, { size: 20, color: C.mute, align: 'center' });
+      card(100, 845, 1720, 165, { fill: 'rgba(17,24,52,0.92)', col: C.yellow });
+      text("Git yordam tizimi istalgan joyda internetsiz eng to'liq hujjatlarni qo'lingizda ushlab turadi.", 960, 895, { size: 24, weight: 700, color: C.yellow, align: 'center' });
+      text("Chiqish uchun 'q' tugmasini bosishni unutmang. Endi xulosalarni chiqaramiz.", 960, 950, { size: 20, color: C.mute, align: 'center' });
       ctx.restore();
     });
   }
@@ -461,116 +521,129 @@
   // 6-SAHNA: Xulosa
   // ==========================================
   function sceneXulosa(u, bounds) {
-    chip(6, "03-Bob Xulosasi", u);
+    chip(6, "Xulosa va Tavsiyalar", u);
 
     const kBox = eo(P(u, 0.4, 0.6));
     withA(kBox, () => {
-      const cards = [
-        {
-          num: "1",
-          title: "Konfig Darajalari",
-          col: C.blue,
-          items: [
-            "system (/etc) butun tizim",
-            "global (~/.gitconfig) siz uchun",
-            "local (.git/config) joriy repo",
-            "Tor daraja kengidan ustun turadi"
-          ]
-        },
-        {
-          num: "2",
-          title: "Asosiy Sozlamalar",
-          col: C.green,
-          items: [
-            "user.name & user.email identifikatsiya",
-            "core.editor: VS Code yoki nano",
-            "init.defaultBranch: main nomi",
-            "Yangi get, set, unset subkomandalari"
-          ]
-        },
-        {
-          num: "3",
-          title: "Rasmiy Yordam",
-          col: C.git,
-          items: [
-            "git help <buyruq> oflayn man",
-            "git <buyruq> -h tezkor konspekt",
-            "git help -a barcha 190+ buyruqlar",
-            "git help -g nazariy qo'llanmalar"
-          ]
-        }
-      ];
+      // Chap: 4 Ta Asosiy Qoida
+      panel(100, 140, 840, 680, C.blue, "Birinchi Sozlash Qoidalari", "kundalik ishonchli poydevor", kBox, kBox);
 
-      const cW = 540, cH = 480;
-      cards.forEach((c, i) => {
-        const cx = 100 + i * 590;
-        const cy = 160;
-        const kc = P(u, 0.6 + i * 0.4, 0.6);
-        withA(kc, () => {
-          ctx.save(); ctx.translate(0, (1 - eo(kc)) * 16);
-          card(cx, cy, cW, cH, { fill: 'rgba(15,22,48,0.92)', col: c.col });
-          pill(c.num + " · " + c.title, cx + cW / 2, cy + 45, c.col, { size: 20, mono: false });
-
-          c.items.forEach((item, j) => {
-            const iy = cy + 120 + j * 80;
-            ctx.fillStyle = 'rgba(255,255,255,0.04)'; rr(cx + 35, iy, cW - 70, 60, 10); ctx.fill();
-            ctx.fillStyle = c.col; ctx.beginPath(); ctx.arc(cx + 55, iy + 30, 6, 0, 7); ctx.fill();
-            text(item, cx + 78, iy + 31, { size: 17, weight: 600, align: 'left', color: C.text });
-          });
-          ctx.restore();
-        });
+      const kX1 = P(u, 1.2, 0.5);
+      withA(kX1, () => {
+        ctx.save(); ctx.translate(0, (1 - eo(kX1)) * 16);
+        card(125, 255, 790, 120, { fill: 'rgba(79,140,255,0.08)', col: C.blue });
+        pill("1 · Identifikatsiyani Boshida Sozlang", 290, 285, C.blue, { size: 16, mono: false });
+        text("user.name va user.email kommitga muhrlanadi; oldindan qo'yib qo'ying.", 150, 335, { size: 16, color: C.text, align: 'left' });
+        ctx.restore();
       });
 
-      // Pastki xulosa
-      const kFoot = P(u, 2.5, 0.8);
-      withA(kFoot, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kFoot)) * 16);
-        card(100, 680, 1720, 320, { fill: 'rgba(18,26,58,0.95)', col: C.git });
-        text("Keyingi bob: 04 — Repozitoriy Olish: init va clone", 960, 745, { size: 34, weight: 800, color: C.git, align: 'center' });
-        text("Noldan repozitoriy yaratish va masofaviy loyihalarni klonlashni boshlaymiz.", 960, 810, { size: 22, color: C.text, align: 'center' });
-        text("E'tiboringiz uchun rahmat! · dev-docs.uz", 960, 875, { size: 20, weight: 600, color: C.mute, align: 'center' });
+      const kX2 = P(u, 3.2, 0.5);
+      withA(kX2, () => {
+        ctx.save(); ctx.translate(0, (1 - eo(kX2)) * 16);
+        card(125, 395, 790, 120, { fill: 'rgba(52,211,153,0.08)', col: C.green });
+        pill("2 · Tor Daraja Kengidan Ustun", 260, 425, C.green, { size: 16, mono: false });
+        text("Lokal repo (.git/config) global sozlamalarni bemalol almashtira oladi.", 150, 475, { size: 16, color: C.text, align: 'left' });
+        ctx.restore();
+      });
+
+      const kX3 = P(u, 5.2, 0.5);
+      withA(kX3, () => {
+        ctx.save(); ctx.translate(0, (1 - eo(kX3)) * 16);
+        card(125, 535, 790, 120, { fill: 'rgba(255,181,71,0.08)', col: C.orange });
+        pill("3 · init.defaultBranch main va core.editor", 310, 565, C.orange, { size: 16, mono: false });
+        text("Git 3.0 standarti 'main' va VS Code uchun 'code --wait' dan foydalaning.", 150, 615, { size: 16, color: C.text, align: 'left' });
+        ctx.restore();
+      });
+
+      const kX4 = P(u, 7.2, 0.5);
+      withA(kX4, () => {
+        ctx.save(); ctx.translate(0, (1 - eo(kX4)) * 16);
+        card(125, 675, 790, 120, { fill: 'rgba(255,209,102,0.08)', col: C.yellow });
+        pill("4 · Oflayn Yordam Tizimidan Foydalaning", 300, 705, C.yellow, { size: 16, mono: false });
+        text("Tezkor yordam uchun -h, to'liq qo'llanmalar uchun 'git help' yoningizda.", 150, 755, { size: 16, color: C.text, align: 'left' });
+        ctx.restore();
+      });
+
+      // O'ng: Keyingi Bobga Yo'llanma
+      panel(980, 140, 840, 680, C.git, "Keyingi Bosqich", "04-bob: repozitoriy olish (init va clone)", kBox, kBox);
+
+      const kN1 = P(u, 9.2, 0.6);
+      withA(kN1, () => {
+        ctx.save(); ctx.translate(0, (1 - eo(kN1)) * 16);
+        card(1005, 255, 790, 250, { fill: 'rgba(240,81,51,0.08)', col: C.git });
+        pill("Keyingi Bobda Ko'riladigan Amallar", 1170, 290, C.git, { size: 16, mono: false });
+        text("• Noldan repozitoriy yaratish: git init va .git anatomiyasi", 1030, 340, { size: 17, color: C.text, align: 'left' });
+        text("• Masofaviy repo'ni nusxalash: git clone va uning opsiyalari", 1030, 385, { size: 17, color: C.text, align: 'left' });
+        text("• Loyiha boshlang'ich holatini tekshirish: git status", 1030, 430, { size: 17, color: C.text, align: 'left' });
+        text("• Git ichki kataloglari bilan birinchi tanishuv", 1030, 475, { size: 17, color: '#38bdf8', align: 'left', weight: 600 });
+        ctx.restore();
+      });
+
+      const kN2 = P(u, 11.5, 0.6);
+      withA(kN2, () => {
+        ctx.save(); ctx.translate(0, (1 - eo(kN2)) * 16);
+        card(1005, 525, 790, 255, { fill: 'rgba(15,22,48,0.92)', col: C.green });
+        pill("Mustaqil Amaliyot Uchun Topshiriq", 1170, 560, C.green, { size: 16, mono: false });
+        text("1. Terminalda 'git config list --show-origin' ni ishga tushiring.", 1030, 605, { size: 16, fam: MONO, color: C.green, align: 'left', weight: 600 });
+        text("2. cat ~/.gitconfig orqali faylni ko'zdan kechiring.", 1030, 645, { size: 16, fam: MONO, color: '#38bdf8', align: 'left' });
+        text("3. 'git help everyday' qo'llanmasini ochib, 'q' bilan chiqing.", 1030, 685, { size: 16, fam: MONO, color: C.yellow, align: 'left' });
+        text("Sozlamalaringiz to'liq tayyor bo'lsa, keyingi darsga o'tamiz!", 1030, 735, { size: 16, color: C.text, align: 'left', weight: 600 });
         ctx.restore();
       });
     });
+
+    // Pastki xulosa
+    const kFoot = P(u, 14.5, 0.7);
+    withA(kFoot, () => {
+      ctx.save(); ctx.translate(0, (1 - eo(kFoot)) * 16);
+      card(100, 845, 1720, 165, { fill: 'rgba(17,24,52,0.92)', col: C.blue });
+      text("To'g'ri sozlangan muhit va yordam tizimi professional ishning poydevoridir!", 960, 895, { size: 24, weight: 700, color: C.text, align: 'center' });
+      text("Keyingi bobda ilk repozitoriy yaratishni boshlaymiz. E'tiboringiz uchun rahmat!", 960, 950, { size: 20, color: C.mute, align: 'center' });
+      ctx.restore();
+    });
   }
 
-  // Asosiy kadr chizuvchi
-  window.renderFrame = function (t) {
-    bg(t);
-    const sc = TM.scenes;
-    if (t < sc.darajalar_va_ustunlik.s) {
-      sceneIntro(t - sc.intro.s, { s: sc.intro.s, e: sc.intro.e });
-    } else if (t < sc.identifikatsiya_va_sintaksis.s) {
-      sceneDarajalarUstunlik(t - sc.darajalar_va_ustunlik.s, { s: sc.darajalar_va_ustunlik.s, e: sc.darajalar_va_ustunlik.e });
-    } else if (t < sc.muhim_sozlamalar.s) {
-      sceneIdentifikatsiyaSintaksis(t - sc.identifikatsiya_va_sintaksis.s, { s: sc.identifikatsiya_va_sintaksis.s, e: sc.identifikatsiya_va_sintaksis.e });
-    } else if (t < sc.yordam_tizimi.s) {
-      sceneMuhimSozlamalar(t - sc.muhim_sozlamalar.s, { s: sc.muhim_sozlamalar.s, e: sc.muhim_sozlamalar.e });
-    } else if (t < sc.xulosa.s) {
-      sceneYordamTizimi(t - sc.yordam_tizimi.s, { s: sc.yordam_tizimi.s, e: sc.yordam_tizimi.e });
-    } else {
-      sceneXulosa(t - sc.xulosa.s, { s: sc.xulosa.s, e: sc.xulosa.e });
-    }
-  };
+  // ==========================================
+  // ASOSIY FRAME CHIZISH
+  // ==========================================
+  function frame(t, o = {}) {
+    bg();
+    const sc = o.scene || (TM ? Object.keys(TM.scenes).find((k) => t >= TM.scenes[k].s && t < TM.scenes[k].e) : 'intro') || 'intro';
+    const bounds = TM ? TM.scenes[sc] : { s: 0, e: 120.6 };
+    const u = t - bounds.s;
 
-  window.drawFrame = window.renderFrame;
-  window.render = window.renderFrame;
+    switch (sc) {
+      case 'intro': sceneIntro(u, bounds, o); break;
+      case 'darajalar_va_ustunlik': sceneDarajalarUstunlik(u, bounds); break;
+      case 'identifikatsiya_va_sintaksis': sceneIdentifikatsiyaSintaksis(u, bounds, o); break;
+      case 'muhim_sozlamalar': sceneMuhimSozlamalar(u, bounds, o); break;
+      case 'yordam_tizimi': sceneYordamTizimi(u, bounds, o); break;
+      case 'xulosa': sceneXulosa(u, bounds); break;
+      default: sceneIntro(u, bounds, o);
+    }
+  }
+
+  window.renderFrame = frame;
+  window.drawFrame = frame;
+  window.render = frame;
+
   window.renderPoster = function () {
     bg(0);
     // 03-bob muqovasi (Markaz pleyer tugmasi uchun qulay)
-    pill("03-BOB · SOZLASH VA YORDAM", 960, 160, C.git, { size: 26, mono: false });
+    pill("03-BOB · BIRINCHI SOZLASH", 960, 160, C.git, { size: 26, mono: false });
     text("Birinchi Sozlash va Yordam", 960, 230, { size: 64, weight: 800, color: C.text, fam: UI });
-    text("user.name, user.email, 5 daraja ierarxiyasi va git help", 960, 290, { size: 28, color: C.mute, fam: UI });
+    text("user.name, user.email, darajalar ierarxiyasi va oflayn yordam", 960, 290, { size: 28, color: C.mute, fam: UI });
 
     // Markaziy konfiguratsiya kartasi
-    card(480, 410, 960, 280, { fill: 'rgba(11,16,32,0.94)', col: C.blue, lw: 2.5 });
-    pill("$ git config list --show-origin", 960, 480, C.blue, { size: 24 });
-    text("global  ~/.gitconfig  user.name = Ali Valiyev", 960, 550, { size: 24, fam: MONO, color: C.green, weight: 700 });
-    text("global  ~/.gitconfig  user.email = ali@example.com", 960, 615, { size: 22, fam: MONO, color: C.mute });
+    card(460, 410, 1000, 280, { fill: 'rgba(11,16,32,0.94)', col: C.blue, lw: 2.5 });
+    pill("$ git config list --show-origin", 960, 475, C.blue, { size: 24 });
+    text("file:~/.gitconfig  user.name=Ali Valiyev", 960, 540, { size: 26, fam: MONO, color: C.green, weight: 700 });
+    text("file:~/.gitconfig  user.email=ali@example.com", 960, 590, { size: 24, fam: MONO, color: '#38bdf8', weight: 600 });
+    text("file:~/.gitconfig  init.defaultBranch=main", 960, 640, { size: 22, fam: MONO, color: C.yellow, weight: 600 });
 
     // Pastki xulosa
     card(100, 845, 1720, 165, { fill: 'rgba(17,24,52,0.92)', col: C.blue });
     text("Git sozlamalari har bir kommitning tarixiy mualliflik poydevorini belgilaydi.", 960, 895, { size: 24, weight: 700, color: C.text, align: 'center' });
-    text("Barcha keyingi boblardagi amallar shu sozlamalar asosida ishlaydi.", 960, 950, { size: 20, color: C.mute, align: 'center' });
+    text("Yangi Git 2.46+ subkomandalari orqali xavfsiz va aniq boshqaring.", 960, 950, { size: 20, color: C.mute, align: 'center' });
   };
 })();

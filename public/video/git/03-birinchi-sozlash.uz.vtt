@@ -1,61 +1,61 @@
 WEBVTT
 
 1
-00:01.420 --> 00:07.310
-Salom! Ushbu uchinchi bobda Gitni birinchi marta
-sozlash va yordam tizimidan foydalanishni o‘rganamiz.
+00:01.420 --> 00:08.330
+Salom! Ushbu uchinchi bobda Gitni birinchi marta sozlash
+va yordam tizimidan to‘g‘ri foydalanishni o‘rganamiz.
 
 2
-00:07.720 --> 00:14.800
-Git o‘rnatilgach qilinadigan ilk qadam shaxsiy identifikatsiyani
-belgilashdir, chunki bu ma’lumot har bir kommitga muhrlanadi.
+00:08.890 --> 00:16.080
+Har bir kommit ichiga muallifning ismi va emaili muhrlanadi, shuning
+uchun bu sozlamalarni eng boshidayoq to‘g‘ri kiritish shart.
 
 3
-00:17.790 --> 00:25.560
-Git sozlamalari beshta darajada saqlanadi: butun kompyuter uchun
-sistem, foydalanuvchi uchun global va bitta repozitoriy uchun lokal.
+00:19.190 --> 00:27.990
+Git sozlamalari uchta asosiy darajada saqlanadi: butun tizim uchun
+sistem, foydalanuvchi uchun global va bitta loyiha uchun lokal daraja.
 
 4
-00:25.730 --> 00:33.530
-Bunda tor doiradagi sozlama keng doiradagidan ustun turadi, ya’ni
-lokal repozitoriy konfigi global sozlamani bekor qila oladi.
+00:28.320 --> 00:37.370
+Bunda oltin qoida amal qiladi: tor daraja keng darajadan ustun turadi,
+ya’ni lokal repozitoriy sozlamasi global sozlamani bemalol yengadi.
 
 5
-00:36.580 --> 00:44.270
-Yuzer neym va yuzer emeyl sozlamalari yordamida har bir kommit muallifi
-aniqlanadi va ularni kommitdan keyin osonlikcha o‘zgartirib bo‘lmaydi.
+00:40.300 --> 00:49.540
+Keling, terminalda global ism va emailimizni o‘rnatamiz; bu ma’lumotlar
+to‘g‘ridan-to‘g‘ri uy papkangizdagi nuqta gitkonfig fayliga yoziladi.
 
 6
-00:44.710 --> 00:51.000
-Gitning yangi versiyalarida konfig buyrug‘i get,
-set va unset kabi aniq subkomandalarga bo‘lingan.
+00:49.990 --> 00:57.780
+Gitning yangi versiyalarida konfig buyrug‘i set, get va unset
+kabi tushunarli va aniq subkomandalar orqali boshqariladi.
 
 7
-00:53.890 --> 01:02.050
-Standart matn muharriri sifatida kor editor orqali VS Kod yoki nanoni,
-birinchi brench nomi sifatida esa meynni belgilab qo‘yish qulay.
+01:00.950 --> 01:10.950
+Standart brench nomi sifatida meynni belgilaymiz, matn muharriri uchun esa kor
+editor yordamida sevimli dasturingizni, masalan Vi-es kodni tanlashingiz mumkin.
 
 8
-01:02.260 --> 01:07.190
-Shuningdek, terminalda natijalar tushunarli bo‘lishi
-uchun ranglar tizimini ham moslashtirish mumkin.
+01:11.240 --> 01:18.580
+Konfig list va shou orijin opsiyalari orqali qaysi sozlama qaysi
+fayldan o‘qilayotganini bir zumda tekshirib olish juda qulay.
 
 9
-01:10.300 --> 01:18.050
-Git internetga ulanmasdan ham to‘liq rasmiy ma’lumotnomaga ega bo‘lib,
-git help yoki chiziqcha ech opsiyasi orqali tezkor yordam beradi.
+01:21.710 --> 01:31.020
+Git internetga ulanmasdan ham to‘liq rasmiy ma’lumotnomaga ega; chiziqcha
+eych orqali tezkor konspekt, git help orqali esa to‘liq qo‘llanma ochiladi.
 
 10
-01:18.310 --> 01:24.680
-Qo‘shimcha ravishda help a barcha buyruqlar ro‘yxatini,
-help g esa amaliy qo‘llanmalar to‘plamini ko‘rsatadi.
+01:31.210 --> 01:39.210
+Shuningdek, help ey barcha ichki buyruqlarni, help ji esa tushunchalar
+va ish jarayonlari bo‘yicha maxsus qo‘llanmalarni taqdim etadi.
 
 11
-01:27.590 --> 01:33.870
-Xulosa qilsak, to‘g‘ri sozlangan muhit va yordam tizimini
-bilish kundalik ishingizni xatosiz va tezkor qiladi.
+01:41.980 --> 01:49.520
+Xulosa qilib aytganda, to‘g‘ri sozlangan identifikatsiya va oflayn
+yordam tizimi kundalik ishingizni xavfsiz va ishonchli qiladi.
 
 12
-01:34.100 --> 01:39.310
-Keyingi bobda ilk repozitoriy yaratish va
-klonlashni boshlaymiz. E’tiboringiz uchun rahmat!
+01:49.810 --> 01:56.230
+Keyingi to‘rtinchi bobda ilk repozitoriy yaratish va
+klonlash amaliyotini boshlaymiz. E’tiboringiz uchun rahmat!
