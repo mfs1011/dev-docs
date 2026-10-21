@@ -1,0 +1,1144 @@
+[
+  {
+    "id": "l1",
+    "scene": "intro",
+    "text": "Salom! Ushbu o‘n uchinchi bobda Git'ning ichki mexanizmlari, quyi darajadagi plumbing buyruqlari hamda sirli .git papkasini o‘rganamiz.",
+    "show": "Salom! Ushbu o‘n uchinchi bobda Git'ning ichki mexanizmlari, quyi darajadagi plumbing buyruqlari hamda sirli .git papkasini o‘rganamiz.",
+    "say": "Salom! Ushbu o‘n uchinchi bobda Git'ning ichki mexanizmlari, quyi darajadagi plambing buyruqlari hamda sirli nuqta git papkasini o‘rganamiz.",
+    "a0": 0.24,
+    "a1": 8.81,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.24,
+        "e": 0.52
+      },
+      {
+        "w": "Ushbu",
+        "s": 1.0,
+        "e": 1.26
+      },
+      {
+        "w": "o‘n",
+        "s": 1.4,
+        "e": 1.5
+      },
+      {
+        "w": "uchinchi",
+        "s": 1.56,
+        "e": 1.84
+      },
+      {
+        "w": "bobda",
+        "s": 1.88,
+        "e": 2.16
+      },
+      {
+        "w": "Git'ning",
+        "s": 2.42,
+        "e": 2.76
+      },
+      {
+        "w": "ichki",
+        "s": 2.84,
+        "e": 3.04
+      },
+      {
+        "w": "mexanizmlari,",
+        "s": 3.08,
+        "e": 3.84
+      },
+      {
+        "w": "quyi",
+        "s": 4.24,
+        "e": 4.42
+      },
+      {
+        "w": "darajadagi",
+        "s": 4.48,
+        "e": 5.0
+      },
+      {
+        "w": "plambing",
+        "s": 5.18,
+        "e": 5.6
+      },
+      {
+        "w": "buyruqlari",
+        "s": 5.62,
+        "e": 6.12
+      },
+      {
+        "w": "hamda",
+        "s": 6.3,
+        "e": 6.56
+      },
+      {
+        "w": "sirli",
+        "s": 6.92,
+        "e": 7.2
+      },
+      {
+        "w": "nuqta",
+        "s": 7.34,
+        "e": 7.63
+      },
+      {
+        "w": "git",
+        "s": 7.75,
+        "e": 7.91
+      },
+      {
+        "w": "papkasini",
+        "s": 7.97,
+        "e": 8.37
+      },
+      {
+        "w": "o‘rganamiz.",
+        "s": 8.41,
+        "e": 8.81
+      }
+    ]
+  },
+  {
+    "id": "l2",
+    "scene": "intro",
+    "text": "Git buyruqlari ikki qatlamga bo‘linadi: foydalanuvchiga qulay porcelain buyruqlar va kapot ostidagi quvurlar kabi ishlovchi plumbing buyruqlari.",
+    "show": "Git buyruqlari ikki qatlamga bo‘linadi: foydalanuvchiga qulay porcelain buyruqlar va kapot ostidagi quvurlar kabi ishlovchi plumbing buyruqlari.",
+    "say": "Git buyruqlari ikki qatlamga bo‘linadi: foydalanuvchiga qulay porselan buyruqlar va kapot ostidagi quvurlar kabi ishlovchi plambing buyruqlari.",
+    "a0": 10.21,
+    "a1": 18.23,
+    "words": [
+      {
+        "w": "Git",
+        "s": 10.21,
+        "e": 10.37
+      },
+      {
+        "w": "buyruqlari",
+        "s": 10.43,
+        "e": 10.89
+      },
+      {
+        "w": "ikki",
+        "s": 11.03,
+        "e": 11.21
+      },
+      {
+        "w": "qatlamga",
+        "s": 11.25,
+        "e": 11.63
+      },
+      {
+        "w": "bo‘linadi:",
+        "s": 11.67,
+        "e": 12.03
+      },
+      {
+        "w": "foydalanuvchiga",
+        "s": 12.49,
+        "e": 13.21
+      },
+      {
+        "w": "qulay",
+        "s": 13.29,
+        "e": 13.51
+      },
+      {
+        "w": "porselan",
+        "s": 13.63,
+        "e": 14.09
+      },
+      {
+        "w": "buyruqlar",
+        "s": 14.11,
+        "e": 14.53
+      },
+      {
+        "w": "va",
+        "s": 14.89,
+        "e": 14.97
+      },
+      {
+        "w": "kapot",
+        "s": 15.19,
+        "e": 15.49
+      },
+      {
+        "w": "ostidagi",
+        "s": 15.55,
+        "e": 15.95
+      },
+      {
+        "w": "quvurlar",
+        "s": 16.07,
+        "e": 16.47
+      },
+      {
+        "w": "kabi",
+        "s": 16.51,
+        "e": 16.67
+      },
+      {
+        "w": "ishlovchi",
+        "s": 16.73,
+        "e": 17.11
+      },
+      {
+        "w": "plambing",
+        "s": 17.35,
+        "e": 17.77
+      },
+      {
+        "w": "buyruqlari.",
+        "s": 17.79,
+        "e": 18.23
+      }
+    ]
+  },
+  {
+    "id": "l3",
+    "scene": "nega_ikki_qatlam",
+    "text": "Odamlar uchun mo‘ljallangan porcelain buyruqlar vaqt o‘tishi bilan qulayroq so‘zlar va ranglar bilan yangilanib turishi mumkin.",
+    "show": "Odamlar uchun mo‘ljallangan porcelain buyruqlar vaqt o‘tishi bilan qulayroq so‘zlar va ranglar bilan yangilanib turishi mumkin.",
+    "say": "Odamlar uchun mo‘ljallangan porselan buyruqlar vaqt o‘tishi bilan qulayroq so‘zlar va ranglar bilan yangilanib turishi mumkin.",
+    "a0": 19.19,
+    "a1": 25.42,
+    "words": [
+      {
+        "w": "Odamlar",
+        "s": 19.19,
+        "e": 19.51
+      },
+      {
+        "w": "uchun",
+        "s": 19.55,
+        "e": 19.73
+      },
+      {
+        "w": "mo‘ljallangan",
+        "s": 19.77,
+        "e": 20.37
+      },
+      {
+        "w": "porselan",
+        "s": 20.43,
+        "e": 20.85
+      },
+      {
+        "w": "buyruqlar",
+        "s": 20.89,
+        "e": 21.31
+      },
+      {
+        "w": "vaqt",
+        "s": 21.71,
+        "e": 21.93
+      },
+      {
+        "w": "o‘tishi",
+        "s": 22.01,
+        "e": 22.25
+      },
+      {
+        "w": "bilan",
+        "s": 22.27,
+        "e": 22.47
+      },
+      {
+        "w": "qulayroq",
+        "s": 22.64,
+        "e": 23.04
+      },
+      {
+        "w": "so‘zlar",
+        "s": 23.12,
+        "e": 23.54
+      },
+      {
+        "w": "va",
+        "s": 23.62,
+        "e": 23.7
+      },
+      {
+        "w": "ranglar",
+        "s": 23.82,
+        "e": 24.16
+      },
+      {
+        "w": "bilan",
+        "s": 24.2,
+        "e": 24.36
+      },
+      {
+        "w": "yangilanib",
+        "s": 24.44,
+        "e": 24.86
+      },
+      {
+        "w": "turishi",
+        "s": 24.88,
+        "e": 25.14
+      },
+      {
+        "w": "mumkin.",
+        "s": 25.16,
+        "e": 25.42
+      }
+    ]
+  },
+  {
+    "id": "l4",
+    "scene": "nega_ikki_qatlam",
+    "text": "Avtomatlashtirilgan skriptlar va dasturlar uchun esa barqaror, hech qachon formati o‘zgarmaydigan plumbing buyruqlari xizmat qiladi.",
+    "show": "Avtomatlashtirilgan skriptlar va dasturlar uchun esa barqaror, hech qachon formati o‘zgarmaydigan plumbing buyruqlari xizmat qiladi.",
+    "say": "Avtomatlashtirilgan skriptlar va dasturlar uchun esa barqaror, hech qachon formati o‘zgarmaydigan plambing buyruqlari xizmat qiladi.",
+    "a0": 26.22,
+    "a1": 33.56,
+    "words": [
+      {
+        "w": "Avtomatlashtirilgan",
+        "s": 26.22,
+        "e": 27.12
+      },
+      {
+        "w": "skriptlar",
+        "s": 27.22,
+        "e": 27.78
+      },
+      {
+        "w": "va",
+        "s": 27.86,
+        "e": 27.94
+      },
+      {
+        "w": "dasturlar",
+        "s": 28.06,
+        "e": 28.54
+      },
+      {
+        "w": "uchun",
+        "s": 28.58,
+        "e": 28.72
+      },
+      {
+        "w": "esa",
+        "s": 28.78,
+        "e": 28.92
+      },
+      {
+        "w": "barqaror,",
+        "s": 29.34,
+        "e": 29.86
+      },
+      {
+        "w": "hech",
+        "s": 30.12,
+        "e": 30.34
+      },
+      {
+        "w": "qachon",
+        "s": 30.38,
+        "e": 30.62
+      },
+      {
+        "w": "formati",
+        "s": 30.7,
+        "e": 31.08
+      },
+      {
+        "w": "o‘zgarmaydigan",
+        "s": 31.2,
+        "e": 31.84
+      },
+      {
+        "w": "plambing",
+        "s": 32.08,
+        "e": 32.54
+      },
+      {
+        "w": "buyruqlari",
+        "s": 32.58,
+        "e": 33.02
+      },
+      {
+        "w": "xizmat",
+        "s": 33.04,
+        "e": 33.3
+      },
+      {
+        "w": "qiladi.",
+        "s": 33.32,
+        "e": 33.56
+      }
+    ]
+  },
+  {
+    "id": "l5",
+    "scene": "git_papkasi",
+    "text": "Loyiha ichidagi .git papkasi Git'ning butun ma’lumotlar bazasi bo‘lib, fayllaringiz faqat undan olingan ishchi nusxadir.",
+    "show": "Loyiha ichidagi .git papkasi Git'ning butun ma’lumotlar bazasi bo‘lib, fayllaringiz faqat undan olingan ishchi nusxadir.",
+    "say": "Loyiha ichidagi nuqta git papkasi Git'ning butun ma’lumotlar bazasi bo‘lib, fayllaringiz faqat undan olingan ishchi nusxadir.",
+    "a0": 34.58,
+    "a1": 41.55,
+    "words": [
+      {
+        "w": "Loyiha",
+        "s": 34.58,
+        "e": 34.86
+      },
+      {
+        "w": "ichidagi",
+        "s": 34.9,
+        "e": 35.24
+      },
+      {
+        "w": "nuqta",
+        "s": 35.4,
+        "e": 35.7
+      },
+      {
+        "w": "git",
+        "s": 35.8,
+        "e": 35.94
+      },
+      {
+        "w": "papkasi",
+        "s": 36.02,
+        "e": 36.42
+      },
+      {
+        "w": "Git'ning",
+        "s": 36.78,
+        "e": 37.16
+      },
+      {
+        "w": "butun",
+        "s": 37.22,
+        "e": 37.51
+      },
+      {
+        "w": "ma’lumotlar",
+        "s": 37.59,
+        "e": 38.11
+      },
+      {
+        "w": "bazasi",
+        "s": 38.15,
+        "e": 38.47
+      },
+      {
+        "w": "bo‘lib,",
+        "s": 38.49,
+        "e": 38.69
+      },
+      {
+        "w": "fayllaringiz",
+        "s": 39.05,
+        "e": 39.67
+      },
+      {
+        "w": "faqat",
+        "s": 39.75,
+        "e": 40.01
+      },
+      {
+        "w": "undan",
+        "s": 40.15,
+        "e": 40.45
+      },
+      {
+        "w": "olingan",
+        "s": 40.53,
+        "e": 40.85
+      },
+      {
+        "w": "ishchi",
+        "s": 40.91,
+        "e": 41.13
+      },
+      {
+        "w": "nusxadir.",
+        "s": 41.15,
+        "e": 41.55
+      }
+    ]
+  },
+  {
+    "id": "l6",
+    "scene": "git_papkasi",
+    "text": "Uning ichida eng muhim to‘rtta ustun joylashgan: obyektlar bazasi, ref ko‘rsatkichlari, HEAD fayli hamda staging hududini ifodalovchi index.",
+    "show": "Uning ichida eng muhim to‘rtta ustun joylashgan: obyektlar bazasi, ref ko‘rsatkichlari, HEAD fayli hamda staging hududini ifodalovchi index.",
+    "say": "Uning ichida eng muhim to‘rtta ustun joylashgan: obyektlar bazasi, ref ko‘rsatkichlari, hed fayli hamda staging hududini ifodalovchi indeks.",
+    "a0": 42.35,
+    "a1": 50.79,
+    "words": [
+      {
+        "w": "Uning",
+        "s": 42.35,
+        "e": 42.53
+      },
+      {
+        "w": "ichida",
+        "s": 42.55,
+        "e": 42.77
+      },
+      {
+        "w": "eng",
+        "s": 42.91,
+        "e": 43.07
+      },
+      {
+        "w": "muhim",
+        "s": 43.11,
+        "e": 43.35
+      },
+      {
+        "w": "to‘rtta",
+        "s": 43.43,
+        "e": 43.71
+      },
+      {
+        "w": "ustun",
+        "s": 43.75,
+        "e": 43.97
+      },
+      {
+        "w": "joylashgan:",
+        "s": 44.01,
+        "e": 44.45
+      },
+      {
+        "w": "obyektlar",
+        "s": 45.05,
+        "e": 45.51
+      },
+      {
+        "w": "bazasi,",
+        "s": 45.57,
+        "e": 45.97
+      },
+      {
+        "w": "ref",
+        "s": 46.49,
+        "e": 46.67
+      },
+      {
+        "w": "ko‘rsatkichlari,",
+        "s": 46.71,
+        "e": 47.39
+      },
+      {
+        "w": "hed",
+        "s": 47.87,
+        "e": 48.07
+      },
+      {
+        "w": "fayli",
+        "s": 48.15,
+        "e": 48.45
+      },
+      {
+        "w": "hamda",
+        "s": 48.51,
+        "e": 48.75
+      },
+      {
+        "w": "staging",
+        "s": 48.95,
+        "e": 49.37
+      },
+      {
+        "w": "hududini",
+        "s": 49.39,
+        "e": 49.75
+      },
+      {
+        "w": "ifodalovchi",
+        "s": 49.81,
+        "e": 50.33
+      },
+      {
+        "w": "indeks.",
+        "s": 50.47,
+        "e": 50.79
+      }
+    ]
+  },
+  {
+    "id": "l7",
+    "scene": "add_va_commit_ichida",
+    "text": "Git add buyrug‘i fayl mazmunidan blob obyektini yaratib, index fayliga uning rejimi va hash kodini yozib qo‘yadi.",
+    "show": "Git add buyrug‘i fayl mazmunidan blob obyektini yaratib, index fayliga uning rejimi va hash kodini yozib qo‘yadi.",
+    "say": "Git edd buyrug‘i fayl mazmunidan blob obyektini yaratib, indeks fayliga uning rejimi va hesh kodini yozib qo‘yadi.",
+    "a0": 51.75,
+    "a1": 58.6,
+    "words": [
+      {
+        "w": "Git",
+        "s": 51.75,
+        "e": 51.93
+      },
+      {
+        "w": "edd",
+        "s": 52.09,
+        "e": 52.21
+      },
+      {
+        "w": "buyrug‘i",
+        "s": 52.27,
+        "e": 52.62
+      },
+      {
+        "w": "fayl",
+        "s": 52.98,
+        "e": 53.24
+      },
+      {
+        "w": "mazmunidan",
+        "s": 53.3,
+        "e": 53.8
+      },
+      {
+        "w": "blob",
+        "s": 53.92,
+        "e": 54.16
+      },
+      {
+        "w": "obyektini",
+        "s": 54.24,
+        "e": 54.66
+      },
+      {
+        "w": "yaratib,",
+        "s": 54.72,
+        "e": 55.08
+      },
+      {
+        "w": "indeks",
+        "s": 55.5,
+        "e": 55.84
+      },
+      {
+        "w": "fayliga",
+        "s": 55.92,
+        "e": 56.32
+      },
+      {
+        "w": "uning",
+        "s": 56.48,
+        "e": 56.7
+      },
+      {
+        "w": "rejimi",
+        "s": 56.8,
+        "e": 57.2
+      },
+      {
+        "w": "va",
+        "s": 57.3,
+        "e": 57.38
+      },
+      {
+        "w": "hesh",
+        "s": 57.52,
+        "e": 57.72
+      },
+      {
+        "w": "kodini",
+        "s": 57.76,
+        "e": 58.02
+      },
+      {
+        "w": "yozib",
+        "s": 58.08,
+        "e": 58.28
+      },
+      {
+        "w": "qo‘yadi.",
+        "s": 58.34,
+        "e": 58.6
+      }
+    ]
+  },
+  {
+    "id": "l8",
+    "scene": "add_va_commit_ichida",
+    "text": "Git commit esa indexdan tree obyektini shakllantirib, muallif va xabarni biriktirgan holda commit obyekti yasaydi hamda branch ko‘rsatkichini siljitadi.",
+    "show": "Git commit esa indexdan tree obyektini shakllantirib, muallif va xabarni biriktirgan holda commit obyekti yasaydi hamda branch ko‘rsatkichini siljitadi.",
+    "say": "Git kommit esa indeksdan tri obyektini shakllantirib, muallif va xabarni biriktirgan holda kommit obyekti yasaydi hamda brench ko‘rsatkichini siljitadi.",
+    "a0": 59.42,
+    "a1": 68.13,
+    "words": [
+      {
+        "w": "Git",
+        "s": 59.42,
+        "e": 59.56
+      },
+      {
+        "w": "kommit",
+        "s": 59.62,
+        "e": 59.92
+      },
+      {
+        "w": "esa",
+        "s": 59.92,
+        "e": 60.12
+      },
+      {
+        "w": "indeksdan",
+        "s": 60.44,
+        "e": 60.92
+      },
+      {
+        "w": "tri",
+        "s": 61.08,
+        "e": 61.24
+      },
+      {
+        "w": "obyektini",
+        "s": 61.42,
+        "e": 61.84
+      },
+      {
+        "w": "shakllantirib,",
+        "s": 61.88,
+        "e": 62.48
+      },
+      {
+        "w": "muallif",
+        "s": 62.74,
+        "e": 63.16
+      },
+      {
+        "w": "va",
+        "s": 63.28,
+        "e": 63.36
+      },
+      {
+        "w": "xabarni",
+        "s": 63.48,
+        "e": 63.86
+      },
+      {
+        "w": "biriktirgan",
+        "s": 63.9,
+        "e": 64.34
+      },
+      {
+        "w": "holda",
+        "s": 64.38,
+        "e": 64.62
+      },
+      {
+        "w": "kommit",
+        "s": 64.72,
+        "e": 65.04
+      },
+      {
+        "w": "obyekti",
+        "s": 65.14,
+        "e": 65.48
+      },
+      {
+        "w": "yasaydi",
+        "s": 65.52,
+        "e": 65.84
+      },
+      {
+        "w": "hamda",
+        "s": 66.18,
+        "e": 66.42
+      },
+      {
+        "w": "brench",
+        "s": 66.74,
+        "e": 67.0
+      },
+      {
+        "w": "ko‘rsatkichini",
+        "s": 67.04,
+        "e": 67.59
+      },
+      {
+        "w": "siljitadi.",
+        "s": 67.67,
+        "e": 68.13
+      }
+    ]
+  },
+  {
+    "id": "l9",
+    "scene": "plumbing_amalda",
+    "text": "Masalan, git status --porcelain yoki git rev-parse kabi plumbing vositalari skriptlar uchun eng toza natijani beradi.",
+    "show": "Masalan, git status --porcelain yoki git rev-parse kabi plumbing vositalari skriptlar uchun eng toza natijani beradi.",
+    "say": "Masalan, git status minus minus porselan yoki git rev-pars kabi plambing vositalari skriptlar uchun eng toza natijani beradi.",
+    "a0": 68.91,
+    "a1": 77.03,
+    "words": [
+      {
+        "w": "Masalan,",
+        "s": 68.91,
+        "e": 69.25
+      },
+      {
+        "w": "git",
+        "s": 69.61,
+        "e": 69.81
+      },
+      {
+        "w": "status",
+        "s": 70.03,
+        "e": 70.47
+      },
+      {
+        "w": "minus",
+        "s": 70.73,
+        "e": 70.99
+      },
+      {
+        "w": "minus",
+        "s": 71.03,
+        "e": 71.27
+      },
+      {
+        "w": "porselan",
+        "s": 71.37,
+        "e": 71.89
+      },
+      {
+        "w": "yoki",
+        "s": 72.13,
+        "e": 72.33
+      },
+      {
+        "w": "git",
+        "s": 72.65,
+        "e": 72.81
+      },
+      {
+        "w": "rev-pars",
+        "s": 72.99,
+        "e": 73.51
+      },
+      {
+        "w": "kabi",
+        "s": 73.57,
+        "e": 73.77
+      },
+      {
+        "w": "plambing",
+        "s": 73.83,
+        "e": 74.25
+      },
+      {
+        "w": "vositalari",
+        "s": 74.27,
+        "e": 74.79
+      },
+      {
+        "w": "skriptlar",
+        "s": 75.07,
+        "e": 75.51
+      },
+      {
+        "w": "uchun",
+        "s": 75.57,
+        "e": 75.75
+      },
+      {
+        "w": "eng",
+        "s": 75.91,
+        "e": 76.03
+      },
+      {
+        "w": "toza",
+        "s": 76.09,
+        "e": 76.29
+      },
+      {
+        "w": "natijani",
+        "s": 76.33,
+        "e": 76.73
+      },
+      {
+        "w": "beradi.",
+        "s": 76.77,
+        "e": 77.03
+      }
+    ]
+  },
+  {
+    "id": "l10",
+    "scene": "plumbing_amalda",
+    "text": "Ushbu barqaror qatlam yordamida tizimga o‘z shaxsiy buyruqlaringizni qo‘shishingiz va mustaqil dasturlar integratsiyasini qurishingiz mumkin.",
+    "show": "Ushbu barqaror qatlam yordamida tizimga o‘z shaxsiy buyruqlaringizni qo‘shishingiz va mustaqil dasturlar integratsiyasini qurishingiz mumkin.",
+    "say": "Ushbu barqaror qatlam yordamida tizimga o‘z shaxsiy buyruqlaringizni qo‘shishingiz va mustaqil dasturlar integratsiyasini qurishingiz mumkin.",
+    "a0": 77.97,
+    "a1": 84.98,
+    "words": [
+      {
+        "w": "Ushbu",
+        "s": 77.97,
+        "e": 78.21
+      },
+      {
+        "w": "barqaror",
+        "s": 78.29,
+        "e": 78.71
+      },
+      {
+        "w": "qatlam",
+        "s": 78.75,
+        "e": 79.05
+      },
+      {
+        "w": "yordamida",
+        "s": 79.09,
+        "e": 79.53
+      },
+      {
+        "w": "tizimga",
+        "s": 79.61,
+        "e": 79.99
+      },
+      {
+        "w": "o‘z",
+        "s": 80.13,
+        "e": 80.23
+      },
+      {
+        "w": "shaxsiy",
+        "s": 80.33,
+        "e": 80.67
+      },
+      {
+        "w": "buyruqlaringizni",
+        "s": 80.73,
+        "e": 81.43
+      },
+      {
+        "w": "qo‘shishingiz",
+        "s": 81.47,
+        "e": 82.09
+      },
+      {
+        "w": "va",
+        "s": 82.21,
+        "e": 82.29
+      },
+      {
+        "w": "mustaqil",
+        "s": 82.6,
+        "e": 83.02
+      },
+      {
+        "w": "dasturlar",
+        "s": 83.06,
+        "e": 83.5
+      },
+      {
+        "w": "integratsiyasini",
+        "s": 83.58,
+        "e": 84.22
+      },
+      {
+        "w": "qurishingiz",
+        "s": 84.26,
+        "e": 84.68
+      },
+      {
+        "w": "mumkin.",
+        "s": 84.7,
+        "e": 84.98
+      }
+    ]
+  },
+  {
+    "id": "l11",
+    "scene": "xulosa",
+    "text": "Plumbing buyruqlari Git qanday ishlashini tushunish, murakkab xatolarni tuzatish va avtomatlashtirish uchun bebaho poydevor hisoblanadi.",
+    "show": "Plumbing buyruqlari Git qanday ishlashini tushunish, murakkab xatolarni tuzatish va avtomatlashtirish uchun bebaho poydevor hisoblanadi.",
+    "say": "Plambing buyruqlari Git qanday ishlashini tushunish, murakkab xatolarni tuzatish va avtomatlashtirish uchun bebaho poydevor hisoblanadi.",
+    "a0": 85.82,
+    "a1": 92.89,
+    "words": [
+      {
+        "w": "Plambing",
+        "s": 85.82,
+        "e": 86.22
+      },
+      {
+        "w": "buyruqlari",
+        "s": 86.22,
+        "e": 86.66
+      },
+      {
+        "w": "Git",
+        "s": 87.0,
+        "e": 87.14
+      },
+      {
+        "w": "qanday",
+        "s": 87.22,
+        "e": 87.48
+      },
+      {
+        "w": "ishlashini",
+        "s": 87.48,
+        "e": 87.84
+      },
+      {
+        "w": "tushunish,",
+        "s": 87.88,
+        "e": 88.3
+      },
+      {
+        "w": "murakkab",
+        "s": 88.52,
+        "e": 88.88
+      },
+      {
+        "w": "xatolarni",
+        "s": 88.9,
+        "e": 89.4
+      },
+      {
+        "w": "tuzatish",
+        "s": 89.44,
+        "e": 89.9
+      },
+      {
+        "w": "va",
+        "s": 89.96,
+        "e": 90.0
+      },
+      {
+        "w": "avtomatlashtirish",
+        "s": 90.34,
+        "e": 91.06
+      },
+      {
+        "w": "uchun",
+        "s": 91.08,
+        "e": 91.28
+      },
+      {
+        "w": "bebaho",
+        "s": 91.4,
+        "e": 91.82
+      },
+      {
+        "w": "poydevor",
+        "s": 91.9,
+        "e": 92.36
+      },
+      {
+        "w": "hisoblanadi.",
+        "s": 92.4,
+        "e": 92.89
+      }
+    ]
+  },
+  {
+    "id": "l12",
+    "scene": "xulosa",
+    "text": "Keyingi o‘n to‘rtinchi bobda Git'ning eng birinchi g‘ishti bo‘lgan blob obyektlari va ularning hash kodlarini qo‘lda yasashni o‘rganamiz.",
+    "show": "Keyingi o‘n to‘rtinchi bobda Git'ning eng birinchi g‘ishti bo‘lgan blob obyektlari va ularning hash kodlarini qo‘lda yasashni o‘rganamiz.",
+    "say": "Keyingi o‘n to‘rtinchi bobda Git'ning eng birinchi g‘ishti bo‘lgan blob obyektlari va ularning hesh kodlarini qo‘lda yasashni o‘rganamiz.",
+    "a0": 93.81,
+    "a1": 100.8,
+    "words": [
+      {
+        "w": "Keyingi",
+        "s": 93.81,
+        "e": 94.19
+      },
+      {
+        "w": "o‘n",
+        "s": 94.33,
+        "e": 94.43
+      },
+      {
+        "w": "to‘rtinchi",
+        "s": 94.47,
+        "e": 94.85
+      },
+      {
+        "w": "bobda",
+        "s": 94.89,
+        "e": 95.13
+      },
+      {
+        "w": "Git'ning",
+        "s": 95.25,
+        "e": 95.61
+      },
+      {
+        "w": "eng",
+        "s": 95.77,
+        "e": 95.93
+      },
+      {
+        "w": "birinchi",
+        "s": 96.03,
+        "e": 96.39
+      },
+      {
+        "w": "g‘ishti",
+        "s": 96.45,
+        "e": 96.69
+      },
+      {
+        "w": "bo‘lgan",
+        "s": 96.71,
+        "e": 96.99
+      },
+      {
+        "w": "blob",
+        "s": 97.29,
+        "e": 97.53
+      },
+      {
+        "w": "obyektlari",
+        "s": 97.61,
+        "e": 98.09
+      },
+      {
+        "w": "va",
+        "s": 98.17,
+        "e": 98.23
+      },
+      {
+        "w": "ularning",
+        "s": 98.38,
+        "e": 98.7
+      },
+      {
+        "w": "hesh",
+        "s": 98.94,
+        "e": 99.16
+      },
+      {
+        "w": "kodlarini",
+        "s": 99.18,
+        "e": 99.6
+      },
+      {
+        "w": "qo‘lda",
+        "s": 99.7,
+        "e": 100.0
+      },
+      {
+        "w": "yasashni",
+        "s": 100.04,
+        "e": 100.36
+      },
+      {
+        "w": "o‘rganamiz.",
+        "s": 100.4,
+        "e": 100.8
+      }
+    ]
+  }
+]
