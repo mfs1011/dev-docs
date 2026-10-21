@@ -20,12 +20,12 @@
   };
 
   const hold = {
-    l2: 1.0,
-    l4: 1.0,
-    l6: 1.0,
-    l8: 1.0,
-    l10: 1.0,
-    l12: 1.5
+    l2: 1.5,
+    l4: 2.0,
+    l6: 2.0,
+    l8: 2.0,
+    l10: 2.0,
+    l12: 2.0
   };
 
   const lines = [
@@ -47,7 +47,7 @@
     {
       id: 'l4',
       scene: 'git_status',
-      text: "U treked va antreked fayllarni ajratadi, shuningdek qisqa minus s opsiyasi bilan holatni ixcham harflarda namoyish etadi."
+      text: "U treked va antreked fayllarni ajratadi, shuningdek qisqa minus es opsiyasi bilan holatni ixcham harflarda namoyish etadi."
     },
     {
       id: 'l5',
@@ -67,7 +67,7 @@
     {
       id: 'l8',
       scene: 'git_commit',
-      text: "Har bir kommit o‘z muallifi, sanasi, aniq tavsif xabari va noyob xesh kaliti bilan tarixga yoziladi."
+      text: "Har bir kommit o‘z muallifi, sanasi, aniq tavsif xabari va noyob hesh kaliti bilan tarixga yoziladi."
     },
     {
       id: 'l9',

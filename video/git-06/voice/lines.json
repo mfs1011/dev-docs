@@ -4,99 +4,99 @@
     "scene": "intro",
     "text": "Salom! Ushbu oltinchi bobda kundalik ishning to‘qson foizini tashkil qiluvchi uchta asosiy buyruqni o‘rganamiz: status, add va kommit.",
     "show": "Salom! Ushbu oltinchi bobda kundalik ishning to‘qson foizini tashkil qiluvchi uchta asosiy buyruqni o‘rganamiz: status, add va kommit.",
-    "say": "Salom! Ushbu oltinchi bobda kundalik ishning to‘qson foizini tashkil qiluvchi uchta asosiy buyruqni o‘rganamiz: status, add va kommit.",
-    "a0": 0.24,
-    "a1": 8.45,
+    "say": "Salom! Ushbu oltinchi bobda kundalik ishning to‘qson foizini tashkil qiluvchi uchta asosiy buyruqni o‘rganamiz: status, ed va kommit.",
+    "a0": 0.34,
+    "a1": 10.09,
     "words": [
       {
         "w": "Salom!",
-        "s": 0.24,
-        "e": 0.5
+        "s": 0.34,
+        "e": 0.62
       },
       {
         "w": "Ushbu",
-        "s": 1.0,
-        "e": 1.22
+        "s": 1.24,
+        "e": 1.46
       },
       {
         "w": "oltinchi",
-        "s": 1.36,
-        "e": 1.68
+        "s": 1.6,
+        "e": 1.94
       },
       {
         "w": "bobda",
-        "s": 1.72,
-        "e": 1.96
+        "s": 1.98,
+        "e": 2.28
       },
       {
         "w": "kundalik",
-        "s": 2.14,
-        "e": 2.52
+        "s": 2.52,
+        "e": 2.92
       },
       {
         "w": "ishning",
-        "s": 2.56,
-        "e": 2.82
-      },
-      {
-        "w": "to‘qson",
-        "s": 2.9,
+        "s": 3.0,
         "e": 3.32
       },
       {
+        "w": "to‘qson",
+        "s": 3.42,
+        "e": 3.84
+      },
+      {
         "w": "foizini",
-        "s": 3.36,
-        "e": 3.74
+        "s": 3.92,
+        "e": 4.3
       },
       {
         "w": "tashkil",
-        "s": 3.78,
-        "e": 4.08
+        "s": 4.34,
+        "e": 4.66
       },
       {
         "w": "qiluvchi",
-        "s": 4.12,
-        "e": 4.46
+        "s": 4.68,
+        "e": 5.04
       },
       {
         "w": "uchta",
-        "s": 4.62,
-        "e": 4.86
+        "s": 5.3,
+        "e": 5.6
       },
       {
         "w": "asosiy",
-        "s": 4.96,
-        "e": 5.36
+        "s": 5.76,
+        "e": 6.16
       },
       {
         "w": "buyruqni",
-        "s": 5.42,
-        "e": 5.76
+        "s": 6.24,
+        "e": 6.6
       },
       {
         "w": "o‘rganamiz:",
-        "s": 5.8,
-        "e": 6.2
+        "s": 6.64,
+        "e": 7.06
       },
       {
         "w": "status,",
-        "s": 6.56,
-        "e": 6.98
+        "s": 7.75,
+        "e": 8.17
       },
       {
-        "w": "add",
-        "s": 7.53,
-        "e": 7.69
+        "w": "ed",
+        "s": 8.73,
+        "e": 8.89
       },
       {
         "w": "va",
-        "s": 7.95,
-        "e": 8.03
+        "s": 9.37,
+        "e": 9.45
       },
       {
         "w": "kommit.",
-        "s": 8.13,
-        "e": 8.45
+        "s": 9.79,
+        "e": 10.09
       }
     ]
   },
@@ -106,83 +106,83 @@
     "text": "Ushbu buyruqlar diskdagi fayllarni kuzatish, tayyorlash va doimiy tarixga snapshot sifatida muhrlash uchun xizmat qiladi.",
     "show": "Ushbu buyruqlar diskdagi fayllarni kuzatish, tayyorlash va doimiy tarixga snapshot sifatida muhrlash uchun xizmat qiladi.",
     "say": "Ushbu buyruqlar diskdagi fayllarni kuzatish, tayyorlash va doimiy tarixga snapshot sifatida muhrlash uchun xizmat qiladi.",
-    "a0": 9.09,
-    "a1": 15.67,
+    "a0": 11.17,
+    "a1": 18.23,
     "words": [
       {
         "w": "Ushbu",
-        "s": 9.09,
-        "e": 9.29
+        "s": 11.17,
+        "e": 11.39
       },
       {
         "w": "buyruqlar",
-        "s": 9.33,
-        "e": 9.75
+        "s": 11.43,
+        "e": 11.85
       },
       {
         "w": "diskdagi",
-        "s": 10.03,
-        "e": 10.45
+        "s": 12.01,
+        "e": 12.43
       },
       {
         "w": "fayllarni",
-        "s": 10.47,
-        "e": 10.91
+        "s": 12.49,
+        "e": 12.95
       },
       {
         "w": "kuzatish,",
-        "s": 10.95,
-        "e": 11.49
+        "s": 13.01,
+        "e": 13.55
       },
       {
         "w": "tayyorlash",
-        "s": 11.81,
-        "e": 12.27
+        "s": 13.79,
+        "e": 14.39
       },
       {
         "w": "va",
-        "s": 12.33,
-        "e": 12.41
+        "s": 14.77,
+        "e": 14.85
       },
       {
         "w": "doimiy",
-        "s": 12.53,
-        "e": 12.87
-      },
-      {
-        "w": "tarixga",
-        "s": 12.95,
-        "e": 13.39
-      },
-      {
-        "w": "snapshot",
-        "s": 13.57,
-        "e": 14.01
-      },
-      {
-        "w": "sifatida",
-        "s": 14.05,
-        "e": 14.41
-      },
-      {
-        "w": "muhrlash",
-        "s": 14.47,
-        "e": 14.87
-      },
-      {
-        "w": "uchun",
-        "s": 14.89,
-        "e": 15.05
-      },
-      {
-        "w": "xizmat",
-        "s": 15.11,
+        "s": 14.97,
         "e": 15.39
       },
       {
+        "w": "tarixga",
+        "s": 15.51,
+        "e": 15.97
+      },
+      {
+        "w": "snapshot",
+        "s": 16.15,
+        "e": 16.63
+      },
+      {
+        "w": "sifatida",
+        "s": 16.67,
+        "e": 17.05
+      },
+      {
+        "w": "muhrlash",
+        "s": 17.13,
+        "e": 17.55
+      },
+      {
+        "w": "uchun",
+        "s": 17.55,
+        "e": 17.69
+      },
+      {
+        "w": "xizmat",
+        "s": 17.73,
+        "e": 17.97
+      },
+      {
         "w": "qiladi.",
-        "s": 15.43,
-        "e": 15.67
+        "s": 17.99,
+        "e": 18.23
       }
     ]
   },
@@ -192,179 +192,179 @@
     "text": "Git status buyrug‘i uchala hududni o‘zaro solishtirib, qaysi fayl qanday holatda ekanini aniq ko‘rsatib beradi.",
     "show": "Git status buyrug‘i uchala hududni o‘zaro solishtirib, qaysi fayl qanday holatda ekanini aniq ko‘rsatib beradi.",
     "say": "Git status buyrug‘i uchala hududni o‘zaro solishtirib, qaysi fayl qanday holatda ekanini aniq ko‘rsatib beradi.",
-    "a0": 16.65,
-    "a1": 22.66,
+    "a0": 19.31,
+    "a1": 25.78,
     "words": [
       {
         "w": "Git",
-        "s": 16.65,
-        "e": 16.81
+        "s": 19.31,
+        "e": 19.49
       },
       {
         "w": "status",
-        "s": 16.87,
-        "e": 17.19
+        "s": 19.57,
+        "e": 19.87
       },
       {
         "w": "buyrug‘i",
-        "s": 17.23,
-        "e": 17.53
+        "s": 19.91,
+        "e": 20.23
       },
       {
         "w": "uchala",
-        "s": 17.89,
-        "e": 18.15
+        "s": 20.59,
+        "e": 20.85
       },
       {
         "w": "hududni",
-        "s": 18.17,
-        "e": 18.51
+        "s": 20.91,
+        "e": 21.31
       },
       {
         "w": "o‘zaro",
-        "s": 18.67,
-        "e": 18.93
+        "s": 21.51,
+        "e": 21.79
       },
       {
         "w": "solishtirib,",
-        "s": 19.01,
-        "e": 19.45
+        "s": 21.87,
+        "e": 22.35
       },
       {
         "w": "qaysi",
-        "s": 19.75,
-        "e": 20.03
+        "s": 22.74,
+        "e": 23.02
       },
       {
         "w": "fayl",
-        "s": 20.05,
-        "e": 20.27
+        "s": 23.08,
+        "e": 23.34
       },
       {
         "w": "qanday",
-        "s": 20.41,
-        "e": 20.77
+        "s": 23.42,
+        "e": 23.76
       },
       {
         "w": "holatda",
-        "s": 20.85,
-        "e": 21.25
+        "s": 23.82,
+        "e": 24.16
       },
       {
         "w": "ekanini",
-        "s": 21.29,
-        "e": 21.63
+        "s": 24.2,
+        "e": 24.58
       },
       {
         "w": "aniq",
-        "s": 21.81,
-        "e": 22.01
+        "s": 24.78,
+        "e": 25.02
       },
       {
         "w": "ko‘rsatib",
-        "s": 22.03,
-        "e": 22.39
+        "s": 25.1,
+        "e": 25.5
       },
       {
         "w": "beradi.",
-        "s": 22.41,
-        "e": 22.66
+        "s": 25.52,
+        "e": 25.78
       }
     ]
   },
   {
     "id": "l4",
     "scene": "git_status",
-    "text": "U treked va antreked fayllarni ajratadi, shuningdek qisqa minus s opsiyasi bilan holatni ixcham harflarda namoyish etadi.",
-    "show": "U treked va antreked fayllarni ajratadi, shuningdek qisqa minus s opsiyasi bilan holatni ixcham harflarda namoyish etadi.",
-    "say": "U treked va antreked fayllarni ajratadi, shuningdek qisqa minus s opsiyasi bilan holatni ixcham harflarda namoyish etadi.",
-    "a0": 23.18,
-    "a1": 30.9,
+    "text": "U treked va antreked fayllarni ajratadi, shuningdek qisqa minus es opsiyasi bilan holatni ixcham harflarda namoyish etadi.",
+    "show": "U treked va antreked fayllarni ajratadi, shuningdek qisqa minus es opsiyasi bilan holatni ixcham harflarda namoyish etadi.",
+    "say": "U treked va antreked fayllarni ajratadi, shuningdek qisqa minus es opsiyasi bilan holatni ixcham harflarda namoyish etadi.",
+    "a0": 26.64,
+    "a1": 34.02,
     "words": [
       {
         "w": "U",
-        "s": 23.18,
-        "e": 23.2
+        "s": 26.64,
+        "e": 26.66
       },
       {
         "w": "treked",
-        "s": 23.42,
-        "e": 23.76
+        "s": 27.1,
+        "e": 27.46
       },
       {
         "w": "va",
-        "s": 23.82,
-        "e": 23.88
+        "s": 27.52,
+        "e": 27.58
       },
       {
         "w": "antreked",
-        "s": 24.08,
-        "e": 24.5
+        "s": 27.74,
+        "e": 28.16
       },
       {
         "w": "fayllarni",
-        "s": 24.54,
-        "e": 24.96
+        "s": 28.2,
+        "e": 28.66
       },
       {
         "w": "ajratadi,",
-        "s": 24.96,
-        "e": 25.4
+        "s": 28.7,
+        "e": 29.14
       },
       {
         "w": "shuningdek",
-        "s": 25.74,
-        "e": 26.08
+        "s": 29.5,
+        "e": 29.88
       },
       {
         "w": "qisqa",
-        "s": 26.4,
-        "e": 26.7
+        "s": 30.02,
+        "e": 30.24
       },
       {
         "w": "minus",
-        "s": 26.92,
-        "e": 27.24
+        "s": 30.54,
+        "e": 30.84
       },
       {
-        "w": "s",
-        "s": 27.68,
-        "e": 27.7
+        "w": "es",
+        "s": 30.96,
+        "e": 31.1
       },
       {
         "w": "opsiyasi",
-        "s": 28.0,
-        "e": 28.38
+        "s": 31.2,
+        "e": 31.58
       },
       {
         "w": "bilan",
-        "s": 28.4,
-        "e": 28.58
+        "s": 31.6,
+        "e": 31.8
       },
       {
         "w": "holatni",
-        "s": 28.82,
-        "e": 29.26
+        "s": 31.94,
+        "e": 32.38
       },
       {
         "w": "ixcham",
-        "s": 29.42,
-        "e": 29.76
+        "s": 32.58,
+        "e": 32.94
       },
       {
         "w": "harflarda",
-        "s": 29.82,
-        "e": 30.26
+        "s": 32.98,
+        "e": 33.4
       },
       {
         "w": "namoyish",
-        "s": 30.32,
-        "e": 30.64
+        "s": 33.46,
+        "e": 33.74
       },
       {
         "w": "etadi.",
-        "s": 30.66,
-        "e": 30.9
+        "s": 33.78,
+        "e": 34.02
       }
     ]
   },
@@ -373,84 +373,84 @@
     "scene": "git_add",
     "text": "Git add buyrug‘i shunchaki fayl qo‘shish emas, balki faylning aynan hozirgi mazmunini navbatdagi kommitga tayyorlashdir.",
     "show": "Git add buyrug‘i shunchaki fayl qo‘shish emas, balki faylning aynan hozirgi mazmunini navbatdagi kommitga tayyorlashdir.",
-    "say": "Git add buyrug‘i shunchaki fayl qo‘shish emas, balki faylning aynan hozirgi mazmunini navbatdagi kommitga tayyorlashdir.",
-    "a0": 31.76,
-    "a1": 38.71,
+    "say": "Git ed buyrug‘i shunchaki fayl qo‘shish emas, balki faylning aynan hozirgi mazmunini navbatdagi kommitga tayyorlashdir.",
+    "a0": 34.96,
+    "a1": 42.45,
     "words": [
       {
         "w": "Git",
-        "s": 31.76,
-        "e": 31.94
+        "s": 34.96,
+        "e": 35.14
       },
       {
-        "w": "add",
-        "s": 32.12,
-        "e": 32.24
+        "w": "ed",
+        "s": 35.26,
+        "e": 35.38
       },
       {
         "w": "buyrug‘i",
-        "s": 32.3,
-        "e": 32.64
-      },
-      {
-        "w": "shunchaki",
-        "s": 32.94,
-        "e": 33.28
-      },
-      {
-        "w": "fayl",
-        "s": 33.42,
-        "e": 33.68
-      },
-      {
-        "w": "qo‘shish",
-        "s": 33.72,
-        "e": 34.02
-      },
-      {
-        "w": "emas,",
-        "s": 34.08,
-        "e": 34.34
-      },
-      {
-        "w": "balki",
-        "s": 34.4,
-        "e": 34.62
-      },
-      {
-        "w": "faylning",
-        "s": 34.94,
-        "e": 35.34
-      },
-      {
-        "w": "aynan",
-        "s": 35.5,
+        "s": 35.44,
         "e": 35.8
       },
       {
+        "w": "shunchaki",
+        "s": 36.18,
+        "e": 36.52
+      },
+      {
+        "w": "fayl",
+        "s": 36.62,
+        "e": 36.82
+      },
+      {
+        "w": "qo‘shish",
+        "s": 36.86,
+        "e": 37.16
+      },
+      {
+        "w": "emas,",
+        "s": 37.2,
+        "e": 37.44
+      },
+      {
+        "w": "balki",
+        "s": 37.91,
+        "e": 38.15
+      },
+      {
+        "w": "faylning",
+        "s": 38.27,
+        "e": 38.75
+      },
+      {
+        "w": "aynan",
+        "s": 38.95,
+        "e": 39.25
+      },
+      {
         "w": "hozirgi",
-        "s": 35.92,
-        "e": 36.36
+        "s": 39.37,
+        "e": 39.81
       },
       {
         "w": "mazmunini",
-        "s": 36.4,
-        "e": 36.88
+        "s": 39.89,
+        "e": 40.41
       },
       {
         "w": "navbatdagi",
-        "s": 37.2,
-        "e": 37.75
+        "s": 40.77,
+        "e": 41.37
       },
       {
         "w": "kommitga",
-        "s": 37.79,
-        "e": 38.13
+        "s": 41.45,
+        "e": 41.83
       },
       {
         "w": "tayyorlashdir.",
-        "s": 38.17,
-        "e": 38.71
+        "s": 41.87,
+        "e": 42.45
       }
     ]
   },
@@ -460,83 +460,83 @@
     "text": "U yangi fayllarni kuzatishni boshlaydi, o‘zgarishlarni indeksga oladi va o‘chirilgan fayllarni ham qoralama rejasiga kiritadi.",
     "show": "U yangi fayllarni kuzatishni boshlaydi, o‘zgarishlarni indeksga oladi va o‘chirilgan fayllarni ham qoralama rejasiga kiritadi.",
     "say": "U yangi fayllarni kuzatishni boshlaydi, o‘zgarishlarni indeksga oladi va o‘chirilgan fayllarni ham qoralama rejasiga kiritadi.",
-    "a0": 39.31,
-    "a1": 45.99,
+    "a0": 43.39,
+    "a1": 50.75,
     "words": [
       {
         "w": "U",
-        "s": 39.31,
-        "e": 39.33
+        "s": 43.39,
+        "e": 43.41
       },
       {
         "w": "yangi",
-        "s": 39.47,
-        "e": 39.69
+        "s": 43.67,
+        "e": 43.93
       },
       {
         "w": "fayllarni",
-        "s": 39.73,
-        "e": 40.15
+        "s": 43.97,
+        "e": 44.41
       },
       {
         "w": "kuzatishni",
-        "s": 40.19,
-        "e": 40.59
+        "s": 44.45,
+        "e": 44.89
       },
       {
         "w": "boshlaydi,",
-        "s": 40.61,
-        "e": 41.03
+        "s": 44.93,
+        "e": 45.43
       },
       {
         "w": "o‘zgarishlarni",
-        "s": 41.39,
-        "e": 42.01
+        "s": 45.93,
+        "e": 46.51
       },
       {
         "w": "indeksga",
-        "s": 42.19,
-        "e": 42.59
+        "s": 46.67,
+        "e": 47.09
       },
       {
         "w": "oladi",
-        "s": 42.65,
-        "e": 42.89
+        "s": 47.15,
+        "e": 47.41
       },
       {
         "w": "va",
-        "s": 43.23,
-        "e": 43.29
+        "s": 47.83,
+        "e": 47.91
       },
       {
         "w": "o‘chirilgan",
-        "s": 43.45,
-        "e": 43.89
+        "s": 48.09,
+        "e": 48.57
       },
       {
         "w": "fayllarni",
-        "s": 43.95,
-        "e": 44.35
+        "s": 48.63,
+        "e": 49.07
       },
       {
         "w": "ham",
-        "s": 44.37,
-        "e": 44.51
+        "s": 49.11,
+        "e": 49.27
       },
       {
         "w": "qoralama",
-        "s": 44.75,
-        "e": 45.15
+        "s": 49.37,
+        "e": 49.77
       },
       {
         "w": "rejasiga",
-        "s": 45.19,
-        "e": 45.59
+        "s": 49.81,
+        "e": 50.29
       },
       {
         "w": "kiritadi.",
-        "s": 45.63,
-        "e": 45.99
+        "s": 50.37,
+        "e": 50.75
       }
     ]
   },
@@ -546,169 +546,169 @@
     "text": "Git kommit buyrug‘i indeksdagi barcha tayyorlangan fayllarni olib, ulardan loyihaning o‘zgarmas yangi suratini yaratadi.",
     "show": "Git kommit buyrug‘i indeksdagi barcha tayyorlangan fayllarni olib, ulardan loyihaning o‘zgarmas yangi suratini yaratadi.",
     "say": "Git kommit buyrug‘i indeksdagi barcha tayyorlangan fayllarni olib, ulardan loyihaning o‘zgarmas yangi suratini yaratadi.",
-    "a0": 46.85,
-    "a1": 53.44,
+    "a0": 51.67,
+    "a1": 58.62,
     "words": [
       {
         "w": "Git",
-        "s": 46.85,
-        "e": 47.01
+        "s": 51.67,
+        "e": 51.83
       },
       {
         "w": "kommit",
-        "s": 47.07,
-        "e": 47.35
+        "s": 51.95,
+        "e": 52.25
       },
       {
         "w": "buyrug‘i",
-        "s": 47.41,
-        "e": 47.73
+        "s": 52.33,
+        "e": 52.68
       },
       {
         "w": "indeksdagi",
-        "s": 48.13,
-        "e": 48.65
+        "s": 53.14,
+        "e": 53.64
       },
       {
         "w": "barcha",
-        "s": 48.79,
-        "e": 49.11
+        "s": 53.78,
+        "e": 54.08
       },
       {
         "w": "tayyorlangan",
-        "s": 49.15,
-        "e": 49.65
+        "s": 54.12,
+        "e": 54.64
       },
       {
         "w": "fayllarni",
-        "s": 49.71,
-        "e": 50.13
+        "s": 54.68,
+        "e": 55.12
       },
       {
         "w": "olib,",
-        "s": 50.21,
-        "e": 50.39
+        "s": 55.18,
+        "e": 55.36
       },
       {
         "w": "ulardan",
-        "s": 50.71,
-        "e": 51.05
+        "s": 55.7,
+        "e": 56.06
       },
       {
         "w": "loyihaning",
-        "s": 51.21,
-        "e": 51.67
+        "s": 56.14,
+        "e": 56.68
       },
       {
         "w": "o‘zgarmas",
-        "s": 51.81,
-        "e": 52.29
+        "s": 56.9,
+        "e": 57.42
       },
       {
         "w": "yangi",
-        "s": 52.37,
-        "e": 52.62
+        "s": 57.52,
+        "e": 57.8
       },
       {
         "w": "suratini",
-        "s": 52.68,
-        "e": 53.06
+        "s": 57.86,
+        "e": 58.22
       },
       {
         "w": "yaratadi.",
-        "s": 53.1,
-        "e": 53.44
+        "s": 58.26,
+        "e": 58.62
       }
     ]
   },
   {
     "id": "l8",
     "scene": "git_commit",
-    "text": "Har bir kommit o‘z muallifi, sanasi, aniq tavsif xabari va noyob xesh kaliti bilan tarixga yoziladi.",
-    "show": "Har bir kommit o‘z muallifi, sanasi, aniq tavsif xabari va noyob xesh kaliti bilan tarixga yoziladi.",
-    "say": "Har bir kommit o‘z muallifi, sanasi, aniq tavsif xabari va noyob xesh kaliti bilan tarixga yoziladi.",
-    "a0": 54.02,
-    "a1": 60.24,
+    "text": "Har bir kommit o‘z muallifi, sanasi, aniq tavsif xabari va noyob hesh kaliti bilan tarixga yoziladi.",
+    "show": "Har bir kommit o‘z muallifi, sanasi, aniq tavsif xabari va noyob hesh kaliti bilan tarixga yoziladi.",
+    "say": "Har bir kommit o‘z muallifi, sanasi, aniq tavsif xabari va noyob hesh kaliti bilan tarixga yoziladi.",
+    "a0": 59.5,
+    "a1": 66.18,
     "words": [
       {
         "w": "Har",
-        "s": 54.02,
-        "e": 54.14
+        "s": 59.5,
+        "e": 59.64
       },
       {
         "w": "bir",
-        "s": 54.18,
-        "e": 54.26
+        "s": 59.68,
+        "e": 59.76
       },
       {
         "w": "kommit",
-        "s": 54.32,
-        "e": 54.6
+        "s": 59.8,
+        "e": 60.08
       },
       {
         "w": "o‘z",
-        "s": 54.92,
-        "e": 55.04
+        "s": 60.42,
+        "e": 60.54
       },
       {
         "w": "muallifi,",
-        "s": 55.12,
-        "e": 55.62
+        "s": 60.62,
+        "e": 61.08
       },
       {
         "w": "sanasi,",
-        "s": 56.06,
-        "e": 56.52
+        "s": 61.52,
+        "e": 61.96
       },
       {
         "w": "aniq",
-        "s": 56.96,
-        "e": 57.16
+        "s": 62.46,
+        "e": 62.68
       },
       {
         "w": "tavsif",
-        "s": 57.24,
-        "e": 57.58
+        "s": 62.76,
+        "e": 63.1
       },
       {
         "w": "xabari",
-        "s": 57.62,
-        "e": 57.96
+        "s": 63.18,
+        "e": 63.54
       },
       {
         "w": "va",
-        "s": 58.02,
-        "e": 58.08
+        "s": 63.74,
+        "e": 63.8
       },
       {
         "w": "noyob",
-        "s": 58.26,
-        "e": 58.64
+        "s": 63.96,
+        "e": 64.36
       },
       {
-        "w": "xesh",
-        "s": 58.8,
-        "e": 59.0
+        "w": "hesh",
+        "s": 64.52,
+        "e": 64.74
       },
       {
         "w": "kaliti",
-        "s": 59.02,
-        "e": 59.3
+        "s": 64.8,
+        "e": 65.12
       },
       {
         "w": "bilan",
-        "s": 59.3,
-        "e": 59.48
+        "s": 65.16,
+        "e": 65.36
       },
       {
         "w": "tarixga",
-        "s": 59.52,
-        "e": 59.86
+        "s": 65.44,
+        "e": 65.78
       },
       {
         "w": "yoziladi.",
-        "s": 59.88,
-        "e": 60.24
+        "s": 65.78,
+        "e": 66.18
       }
     ]
   },
@@ -717,94 +717,94 @@
     "scene": "kuzatuv_sikli",
     "text": "Fayllar hayot sikli juda ravshan: antreked fayl add qilingach steyjd bo‘ladi, kommitdan so‘ng esa anmodifayd holatiga o‘tadi.",
     "show": "Fayllar hayot sikli juda ravshan: antreked fayl add qilingach steyjd bo‘ladi, kommitdan so‘ng esa anmodifayd holatiga o‘tadi.",
-    "say": "Fayllar hayot sikli juda ravshan: antreked fayl add qilingach steyjd bo‘ladi, kommitdan so‘ng esa anmodifayd holatiga o‘tadi.",
-    "a0": 61.02,
-    "a1": 68.37,
+    "say": "Fayllar hayot sikli juda ravshan: antreked fayl ed qilingach steyjd bo‘ladi, kommitdan so‘ng esa anmodifayd holatiga o‘tadi.",
+    "a0": 67.1,
+    "a1": 74.81,
     "words": [
       {
         "w": "Fayllar",
-        "s": 61.02,
-        "e": 61.4
+        "s": 67.1,
+        "e": 67.48
       },
       {
         "w": "hayot",
-        "s": 61.46,
-        "e": 61.72
+        "s": 67.51,
+        "e": 67.79
       },
       {
         "w": "sikli",
-        "s": 61.74,
-        "e": 62.0
-      },
-      {
-        "w": "juda",
-        "s": 62.28,
-        "e": 62.44
-      },
-      {
-        "w": "ravshan:",
-        "s": 62.48,
-        "e": 62.78
-      },
-      {
-        "w": "antreked",
-        "s": 63.26,
-        "e": 63.64
-      },
-      {
-        "w": "fayl",
-        "s": 63.68,
-        "e": 63.92
-      },
-      {
-        "w": "add",
-        "s": 64.1,
-        "e": 64.22
-      },
-      {
-        "w": "qilingach",
-        "s": 64.26,
-        "e": 64.7
-      },
-      {
-        "w": "steyjd",
-        "s": 64.88,
-        "e": 65.2
-      },
-      {
-        "w": "bo‘ladi,",
-        "s": 65.24,
-        "e": 65.54
-      },
-      {
-        "w": "kommitdan",
-        "s": 65.92,
-        "e": 66.36
-      },
-      {
-        "w": "so‘ng",
-        "s": 66.4,
-        "e": 66.58
-      },
-      {
-        "w": "esa",
-        "s": 66.62,
-        "e": 66.78
-      },
-      {
-        "w": "anmodifayd",
-        "s": 67.13,
-        "e": 67.71
-      },
-      {
-        "w": "holatiga",
-        "s": 67.75,
+        "s": 67.83,
         "e": 68.09
       },
       {
-        "w": "o‘tadi.",
-        "s": 68.13,
+        "w": "juda",
+        "s": 68.19,
         "e": 68.37
+      },
+      {
+        "w": "ravshan:",
+        "s": 68.43,
+        "e": 68.77
+      },
+      {
+        "w": "antreked",
+        "s": 69.39,
+        "e": 69.81
+      },
+      {
+        "w": "fayl",
+        "s": 69.85,
+        "e": 70.09
+      },
+      {
+        "w": "ed",
+        "s": 70.29,
+        "e": 70.39
+      },
+      {
+        "w": "qilingach",
+        "s": 70.45,
+        "e": 70.89
+      },
+      {
+        "w": "steyjd",
+        "s": 71.13,
+        "e": 71.49
+      },
+      {
+        "w": "bo‘ladi,",
+        "s": 71.53,
+        "e": 71.81
+      },
+      {
+        "w": "kommitdan",
+        "s": 72.37,
+        "e": 72.81
+      },
+      {
+        "w": "so‘ng",
+        "s": 72.85,
+        "e": 73.01
+      },
+      {
+        "w": "esa",
+        "s": 73.05,
+        "e": 73.19
+      },
+      {
+        "w": "anmodifayd",
+        "s": 73.55,
+        "e": 74.15
+      },
+      {
+        "w": "holatiga",
+        "s": 74.19,
+        "e": 74.53
+      },
+      {
+        "w": "o‘tadi.",
+        "s": 74.57,
+        "e": 74.81
       }
     ]
   },
@@ -814,68 +814,68 @@
     "text": "Tahrirlanganda yana modifayd bo‘ladi va bu sikl loyiha davomida uzluksiz takrorlanib boraveradi.",
     "show": "Tahrirlanganda yana modifayd bo‘ladi va bu sikl loyiha davomida uzluksiz takrorlanib boraveradi.",
     "say": "Tahrirlanganda yana modifayd bo‘ladi va bu sikl loyiha davomida uzluksiz takrorlanib boraveradi.",
-    "a0": 68.83,
-    "a1": 74.25,
+    "a0": 75.53,
+    "a1": 81.31,
     "words": [
       {
         "w": "Tahrirlanganda",
-        "s": 68.83,
-        "e": 69.51
+        "s": 75.53,
+        "e": 76.23
       },
       {
         "w": "yana",
-        "s": 69.57,
-        "e": 69.75
+        "s": 76.33,
+        "e": 76.53
       },
       {
         "w": "modifayd",
-        "s": 69.91,
-        "e": 70.39
+        "s": 76.65,
+        "e": 77.13
       },
       {
         "w": "bo‘ladi",
-        "s": 70.43,
-        "e": 70.71
+        "s": 77.17,
+        "e": 77.47
       },
       {
         "w": "va",
-        "s": 71.07,
-        "e": 71.13
+        "s": 77.81,
+        "e": 77.87
       },
       {
         "w": "bu",
-        "s": 71.19,
-        "e": 71.23
+        "s": 78.01,
+        "e": 78.09
       },
       {
         "w": "sikl",
-        "s": 71.31,
-        "e": 71.53
+        "s": 78.21,
+        "e": 78.49
       },
       {
         "w": "loyiha",
-        "s": 71.85,
-        "e": 72.11
+        "s": 78.77,
+        "e": 79.09
       },
       {
         "w": "davomida",
-        "s": 72.15,
-        "e": 72.53
+        "s": 79.15,
+        "e": 79.57
       },
       {
         "w": "uzluksiz",
-        "s": 72.71,
-        "e": 73.17
+        "s": 79.75,
+        "e": 80.27
       },
       {
         "w": "takrorlanib",
-        "s": 73.21,
-        "e": 73.77
+        "s": 80.31,
+        "e": 80.83
       },
       {
         "w": "boraveradi.",
-        "s": 73.79,
-        "e": 74.25
+        "s": 80.85,
+        "e": 81.31
       }
     ]
   },
@@ -884,94 +884,94 @@
     "scene": "xulosa",
     "text": "Xulosa qilib aytganda, status, add va kommit — har bir dasturchining eng asosiy, eng ko‘p ishlatadigan qurollaridir.",
     "show": "Xulosa qilib aytganda, status, add va kommit — har bir dasturchining eng asosiy, eng ko‘p ishlatadigan qurollaridir.",
-    "say": "Xulosa qilib aytganda, status, add va kommit — har bir dasturchining eng asosiy, eng ko‘p ishlatadigan qurollaridir.",
-    "a0": 74.83,
-    "a1": 81.52,
+    "say": "Xulosa qilib aytganda, status, ed va kommit — har bir dasturchining eng asosiy, eng ko‘p ishlatadigan qurollaridir.",
+    "a0": 82.15,
+    "a1": 89.6,
     "words": [
       {
         "w": "Xulosa",
-        "s": 74.83,
-        "e": 75.11
+        "s": 82.15,
+        "e": 82.43
       },
       {
         "w": "qilib",
-        "s": 75.15,
-        "e": 75.31
+        "s": 82.47,
+        "e": 82.62
       },
       {
         "w": "aytganda,",
-        "s": 75.33,
-        "e": 75.63
+        "s": 82.66,
+        "e": 83.02
       },
       {
         "w": "status,",
-        "s": 76.01,
-        "e": 76.45
+        "s": 83.46,
+        "e": 83.96
       },
       {
-        "w": "add",
-        "s": 76.75,
-        "e": 76.87
+        "w": "ed",
+        "s": 84.22,
+        "e": 84.38
       },
       {
         "w": "va",
-        "s": 76.95,
-        "e": 77.01
+        "s": 84.48,
+        "e": 84.56
       },
       {
         "w": "kommit",
-        "s": 77.15,
-        "e": 77.47
+        "s": 84.66,
+        "e": 85.0
       },
       {
         "w": "—",
-        "s": 77.47,
-        "e": 77.47
+        "s": 85.0,
+        "e": 85.0
       },
       {
         "w": "har",
-        "s": 77.79,
-        "e": 77.99
+        "s": 85.42,
+        "e": 85.62
       },
       {
         "w": "bir",
-        "s": 78.03,
-        "e": 78.13
+        "s": 85.66,
+        "e": 85.78
       },
       {
         "w": "dasturchining",
-        "s": 78.17,
-        "e": 78.71
+        "s": 85.82,
+        "e": 86.44
       },
       {
         "w": "eng",
-        "s": 78.85,
-        "e": 79.01
+        "s": 86.64,
+        "e": 86.8
       },
       {
         "w": "asosiy,",
-        "s": 79.11,
-        "e": 79.49
+        "s": 86.92,
+        "e": 87.42
       },
       {
         "w": "eng",
-        "s": 79.95,
-        "e": 80.11
+        "s": 87.82,
+        "e": 87.98
       },
       {
         "w": "ko‘p",
-        "s": 80.21,
-        "e": 80.39
+        "s": 88.04,
+        "e": 88.2
       },
       {
         "w": "ishlatadigan",
-        "s": 80.43,
-        "e": 80.97
+        "s": 88.3,
+        "e": 88.9
       },
       {
         "w": "qurollaridir.",
-        "s": 81.01,
-        "e": 81.52
+        "s": 89.02,
+        "e": 89.6
       }
     ]
   },
@@ -981,73 +981,73 @@
     "text": "Keyingi bobda aynan nimalar o‘zgarganini qatorlar kesimida ko‘rsatuvchi diff buyrug‘ini ko‘rib chiqamiz. Rahmat!",
     "show": "Keyingi bobda aynan nimalar o‘zgarganini qatorlar kesimida ko‘rsatuvchi diff buyrug‘ini ko‘rib chiqamiz. Rahmat!",
     "say": "Keyingi bobda aynan nimalar o‘zgarganini qatorlar kesimida ko‘rsatuvchi diff buyrug‘ini ko‘rib chiqamiz. Rahmat!",
-    "a0": 82.02,
-    "a1": 87.96,
+    "a0": 90.34,
+    "a1": 96.86,
     "words": [
       {
         "w": "Keyingi",
-        "s": 82.02,
-        "e": 82.26
+        "s": 90.34,
+        "e": 90.62
       },
       {
         "w": "bobda",
-        "s": 82.28,
-        "e": 82.52
+        "s": 90.64,
+        "e": 90.9
       },
       {
         "w": "aynan",
-        "s": 82.9,
-        "e": 83.16
+        "s": 91.32,
+        "e": 91.58
       },
       {
         "w": "nimalar",
-        "s": 83.24,
-        "e": 83.6
+        "s": 91.66,
+        "e": 92.03
       },
       {
         "w": "o‘zgarganini",
-        "s": 83.68,
-        "e": 84.22
+        "s": 92.13,
+        "e": 92.73
       },
       {
         "w": "qatorlar",
-        "s": 84.3,
-        "e": 84.76
+        "s": 92.81,
+        "e": 93.27
       },
       {
         "w": "kesimida",
-        "s": 84.8,
-        "e": 85.14
+        "s": 93.29,
+        "e": 93.65
       },
       {
         "w": "ko‘rsatuvchi",
-        "s": 85.16,
-        "e": 85.64
+        "s": 93.69,
+        "e": 94.25
       },
       {
         "w": "diff",
-        "s": 85.98,
-        "e": 86.18
+        "s": 94.71,
+        "e": 94.87
       },
       {
         "w": "buyrug‘ini",
-        "s": 86.2,
-        "e": 86.56
+        "s": 94.97,
+        "e": 95.35
       },
       {
         "w": "ko‘rib",
-        "s": 86.6,
-        "e": 86.78
+        "s": 95.4,
+        "e": 95.6
       },
       {
         "w": "chiqamiz.",
-        "s": 86.8,
-        "e": 87.12
+        "s": 95.6,
+        "e": 95.92
       },
       {
         "w": "Rahmat!",
-        "s": 87.68,
-        "e": 87.96
+        "s": 96.56,
+        "e": 96.86
       }
     ]
   }

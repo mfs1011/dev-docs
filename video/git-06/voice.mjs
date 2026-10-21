@@ -10,21 +10,24 @@ const STYLE = 'warm, natural, conversational narration of a short educational ex
 
 const SAY = [
   [/\bcommit\b/gi, "kommit"],
+  [/\bkommit\b/gi, "kommit"],
   [/\bkommitni\b/gi, "kommitni"],
+  [/\bkommitdan\b/gi, "kommitdan"],
   [/\bbranch\b/gi, "brench"],
-  [/\bbrenchi\b/gi, "brenchi"],
+  [/\badd\b/gi, "ed"],
+  [/\bstatus\b/gi, "status"],
   [/\binit\b/gi, "init"],
   [/\bclone\b/gi, "klon"],
-  [/\bklon\b/gi, "klon"],
   [/\bHEAD\b/g, "hed"],
   [/\bmain\b/gi, "meyn"],
-  [/\bmeyn\b/gi, "meyn"],
-  [/\boridjin\b/gi, "orijin"],
-  [/\borigin\b/gi, "orijin"],
-  [/\brut kommitni\b/gi, "rut kommitni"],
-  [/\beych-ti-ti-pi-es\b/gi, "eych ti ti pi es"],
-  [/\bes-es-eych\b/gi, "es es eych"],
-  [/\bdepsh bir\b/gi, "deps bir"],
+  [/\btreked\b/gi, "treked"],
+  [/\bantreked\b/gi, "antreked"],
+  [/\bmodifayd\b/gi, "modifayd"],
+  [/\banmodifayd\b/gi, "anmodifayd"],
+  [/\bsteyjd\b/gi, "steyjd"],
+  [/\bkommitted\b/gi, "kommitted"],
+  [/\bminus es\b/gi, "minus es"],
+  [/\bhesh\b/gi, "hesh"],
 ];
 const toSay = (text) => SAY.reduce((s, [re, to]) => s.replace(re, to), text)
   .replace(/(^|[.!?…]\s+)(\p{Ll})/gu, (m, p, c) => p + c.toUpperCase());
