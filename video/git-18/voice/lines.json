@@ -1,0 +1,1219 @@
+[
+  {
+    "id": "l1",
+    "scene": "intro",
+    "text": "Salom! Ushbu o‘n sakkizinchi bobda Git omborini ixchamlashtiruvchi packfile arxitekturasi, delta siqish va axlat yig‘uvchi git gc buyrug‘ini ko‘rib chiqamiz.",
+    "show": "Salom! Ushbu o‘n sakkizinchi bobda Git omborini ixchamlashtiruvchi packfile arxitekturasi, delta siqish va axlat yig‘uvchi git gc buyrug‘ini ko‘rib chiqamiz.",
+    "say": "Salom! Ushbu o‘n sakkizinchi bobda Git omborini ixchamlashtiruvchi pakfayl arxitekturasi, delta siqish va axlat yig‘uvchi git ji-si buyrug‘ini ko‘rib chiqamiz.",
+    "a0": 0.18,
+    "a1": 11.27,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.18,
+        "e": 0.46
+      },
+      {
+        "w": "Ushbu",
+        "s": 1.08,
+        "e": 1.36
+      },
+      {
+        "w": "o‘n",
+        "s": 1.62,
+        "e": 1.74
+      },
+      {
+        "w": "sakkizinchi",
+        "s": 1.8,
+        "e": 2.36
+      },
+      {
+        "w": "bobda",
+        "s": 2.4,
+        "e": 2.7
+      },
+      {
+        "w": "Git",
+        "s": 3.08,
+        "e": 3.26
+      },
+      {
+        "w": "omborini",
+        "s": 3.42,
+        "e": 3.86
+      },
+      {
+        "w": "ixchamlashtiruvchi",
+        "s": 3.96,
+        "e": 4.78
+      },
+      {
+        "w": "pakfayl",
+        "s": 5.0,
+        "e": 5.48
+      },
+      {
+        "w": "arxitekturasi,",
+        "s": 5.6,
+        "e": 6.42
+      },
+      {
+        "w": "delta",
+        "s": 6.86,
+        "e": 7.2
+      },
+      {
+        "w": "siqish",
+        "s": 7.26,
+        "e": 7.63
+      },
+      {
+        "w": "va",
+        "s": 7.93,
+        "e": 8.01
+      },
+      {
+        "w": "axlat",
+        "s": 8.21,
+        "e": 8.53
+      },
+      {
+        "w": "yig‘uvchi",
+        "s": 8.57,
+        "e": 8.93
+      },
+      {
+        "w": "git",
+        "s": 9.27,
+        "e": 9.49
+      },
+      {
+        "w": "ji-si",
+        "s": 9.67,
+        "e": 9.99
+      },
+      {
+        "w": "buyrug‘ini",
+        "s": 10.11,
+        "e": 10.53
+      },
+      {
+        "w": "ko‘rib",
+        "s": 10.65,
+        "e": 10.89
+      },
+      {
+        "w": "chiqamiz.",
+        "s": 10.91,
+        "e": 11.27
+      }
+    ]
+  },
+  {
+    "id": "l2",
+    "scene": "intro",
+    "text": "Git har bir versiyani mustaqil obyekt sifatida to‘liq saqlagani sababli, minglab mayda loose fayllar disk klasterlarida joyni isrof qila boshlaydi.",
+    "show": "Git har bir versiyani mustaqil obyekt sifatida to‘liq saqlagani sababli, minglab mayda loose fayllar disk klasterlarida joyni isrof qila boshlaydi.",
+    "say": "Git har bir versiyani mustaqil obyekt sifatida to‘liq saqlagani sababli, minglab mayda luus fayllar disk klasterlarida joyni isrof qila boshlaydi.",
+    "a0": 12.43,
+    "a1": 21.03,
+    "words": [
+      {
+        "w": "Git",
+        "s": 12.43,
+        "e": 12.61
+      },
+      {
+        "w": "har",
+        "s": 12.91,
+        "e": 13.09
+      },
+      {
+        "w": "bir",
+        "s": 13.13,
+        "e": 13.23
+      },
+      {
+        "w": "versiyani",
+        "s": 13.27,
+        "e": 13.63
+      },
+      {
+        "w": "mustaqil",
+        "s": 13.69,
+        "e": 14.11
+      },
+      {
+        "w": "obyekt",
+        "s": 14.21,
+        "e": 14.51
+      },
+      {
+        "w": "sifatida",
+        "s": 14.55,
+        "e": 14.93
+      },
+      {
+        "w": "to‘liq",
+        "s": 15.03,
+        "e": 15.29
+      },
+      {
+        "w": "saqlagani",
+        "s": 15.35,
+        "e": 15.81
+      },
+      {
+        "w": "sababli,",
+        "s": 15.85,
+        "e": 16.21
+      },
+      {
+        "w": "minglab",
+        "s": 16.59,
+        "e": 16.99
+      },
+      {
+        "w": "mayda",
+        "s": 17.07,
+        "e": 17.39
+      },
+      {
+        "w": "luus",
+        "s": 17.67,
+        "e": 17.89
+      },
+      {
+        "w": "fayllar",
+        "s": 17.97,
+        "e": 18.37
+      },
+      {
+        "w": "disk",
+        "s": 18.69,
+        "e": 18.91
+      },
+      {
+        "w": "klasterlarida",
+        "s": 18.93,
+        "e": 19.65
+      },
+      {
+        "w": "joyni",
+        "s": 19.75,
+        "e": 20.05
+      },
+      {
+        "w": "isrof",
+        "s": 20.13,
+        "e": 20.41
+      },
+      {
+        "w": "qila",
+        "s": 20.47,
+        "e": 20.63
+      },
+      {
+        "w": "boshlaydi.",
+        "s": 20.65,
+        "e": 21.03
+      }
+    ]
+  },
+  {
+    "id": "l3",
+    "scene": "packfile_va_idx",
+    "text": "git count-objects buyrug‘i loose obyektlar soni va disk hajmini ko‘rsatsa, git gc ularni bitta yirik pack faylga jamlaydi.",
+    "show": "git count-objects buyrug‘i loose obyektlar soni va disk hajmini ko‘rsatsa, git gc ularni bitta yirik pack faylga jamlaydi.",
+    "say": "Git kaunt-obdzhekts buyrug‘i luus obyektlar soni va disk hajmini ko‘rsatsa, git ji-si ularni bitta yirik pack faylga jamlaydi.",
+    "a0": 21.81,
+    "a1": 29.66,
+    "words": [
+      {
+        "w": "Git",
+        "s": 21.81,
+        "e": 21.99
+      },
+      {
+        "w": "kaunt-obdzhekts",
+        "s": 22.17,
+        "e": 23.0
+      },
+      {
+        "w": "buyrug‘i",
+        "s": 23.08,
+        "e": 23.42
+      },
+      {
+        "w": "luus",
+        "s": 23.76,
+        "e": 23.94
+      },
+      {
+        "w": "obyektlar",
+        "s": 24.1,
+        "e": 24.56
+      },
+      {
+        "w": "soni",
+        "s": 24.6,
+        "e": 24.86
+      },
+      {
+        "w": "va",
+        "s": 24.96,
+        "e": 25.04
+      },
+      {
+        "w": "disk",
+        "s": 25.16,
+        "e": 25.36
+      },
+      {
+        "w": "hajmini",
+        "s": 25.46,
+        "e": 25.82
+      },
+      {
+        "w": "ko‘rsatsa,",
+        "s": 25.86,
+        "e": 26.28
+      },
+      {
+        "w": "git",
+        "s": 26.64,
+        "e": 26.84
+      },
+      {
+        "w": "ji-si",
+        "s": 26.98,
+        "e": 27.28
+      },
+      {
+        "w": "ularni",
+        "s": 27.52,
+        "e": 27.84
+      },
+      {
+        "w": "bitta",
+        "s": 27.98,
+        "e": 28.26
+      },
+      {
+        "w": "yirik",
+        "s": 28.34,
+        "e": 28.58
+      },
+      {
+        "w": "pack",
+        "s": 28.66,
+        "e": 28.84
+      },
+      {
+        "w": "faylga",
+        "s": 28.9,
+        "e": 29.22
+      },
+      {
+        "w": "jamlaydi.",
+        "s": 29.26,
+        "e": 29.66
+      }
+    ]
+  },
+  {
+    "id": "l4",
+    "scene": "packfile_va_idx",
+    "text": "Har bir packfile yonida tezkor qidiruv jadvali bo‘lgan nuqta idx indeksi yaratilib, minglab loose fayllar bitta tartibli juftlikka aylanadi.",
+    "show": "Har bir packfile yonida tezkor qidiruv jadvali bo‘lgan nuqta idx indeksi yaratilib, minglab loose fayllar bitta tartibli juftlikka aylanadi.",
+    "say": "Har bir pakfayl yonida tezkor qidiruv jadvali bo‘lgan nuqta ay-di-eks indeksi yaratilib, minglab luus fayllar bitta tartibli juftlikka aylanadi.",
+    "a0": 30.52,
+    "a1": 39.21,
+    "words": [
+      {
+        "w": "Har",
+        "s": 30.52,
+        "e": 30.64
+      },
+      {
+        "w": "bir",
+        "s": 30.68,
+        "e": 30.78
+      },
+      {
+        "w": "pakfayl",
+        "s": 30.82,
+        "e": 31.3
+      },
+      {
+        "w": "yonida",
+        "s": 31.3,
+        "e": 31.68
+      },
+      {
+        "w": "tezkor",
+        "s": 31.76,
+        "e": 32.12
+      },
+      {
+        "w": "qidiruv",
+        "s": 32.2,
+        "e": 32.5
+      },
+      {
+        "w": "jadvali",
+        "s": 32.56,
+        "e": 32.94
+      },
+      {
+        "w": "bo‘lgan",
+        "s": 32.98,
+        "e": 33.28
+      },
+      {
+        "w": "nuqta",
+        "s": 33.6,
+        "e": 33.9
+      },
+      {
+        "w": "ay-di-eks",
+        "s": 34.14,
+        "e": 34.74
+      },
+      {
+        "w": "indeksi",
+        "s": 34.86,
+        "e": 35.22
+      },
+      {
+        "w": "yaratilib,",
+        "s": 35.26,
+        "e": 35.68
+      },
+      {
+        "w": "minglab",
+        "s": 36.04,
+        "e": 36.42
+      },
+      {
+        "w": "luus",
+        "s": 36.54,
+        "e": 36.72
+      },
+      {
+        "w": "fayllar",
+        "s": 36.8,
+        "e": 37.2
+      },
+      {
+        "w": "bitta",
+        "s": 37.48,
+        "e": 37.77
+      },
+      {
+        "w": "tartibli",
+        "s": 37.87,
+        "e": 38.29
+      },
+      {
+        "w": "juftlikka",
+        "s": 38.35,
+        "e": 38.79
+      },
+      {
+        "w": "aylanadi.",
+        "s": 38.83,
+        "e": 39.21
+      }
+    ]
+  },
+  {
+    "id": "l5",
+    "scene": "delta_siqish",
+    "text": "Packfile ichida o‘xshash obyektlar to‘liq emas, balki bir-biriga nisbatan delta, ya’ni faqat o‘zgargan farqlar ko‘rinishida siqiladi.",
+    "show": "Packfile ichida o‘xshash obyektlar to‘liq emas, balki bir-biriga nisbatan delta, ya’ni faqat o‘zgargan farqlar ko‘rinishida siqiladi.",
+    "say": "Pakfayl ichida o‘xshash obyektlar to‘liq emas, balki bir-biriga nisbatan delta, ya’ni faqat o‘zgargan farqlar ko‘rinishida siqiladi.",
+    "a0": 40.05,
+    "a1": 47.81,
+    "words": [
+      {
+        "w": "Pakfayl",
+        "s": 40.05,
+        "e": 40.51
+      },
+      {
+        "w": "ichida",
+        "s": 40.55,
+        "e": 40.77
+      },
+      {
+        "w": "o‘xshash",
+        "s": 40.91,
+        "e": 41.25
+      },
+      {
+        "w": "obyektlar",
+        "s": 41.37,
+        "e": 41.85
+      },
+      {
+        "w": "to‘liq",
+        "s": 41.95,
+        "e": 42.23
+      },
+      {
+        "w": "emas,",
+        "s": 42.33,
+        "e": 42.59
+      },
+      {
+        "w": "balki",
+        "s": 42.87,
+        "e": 43.13
+      },
+      {
+        "w": "bir-biriga",
+        "s": 43.37,
+        "e": 43.79
+      },
+      {
+        "w": "nisbatan",
+        "s": 43.87,
+        "e": 44.29
+      },
+      {
+        "w": "delta,",
+        "s": 44.55,
+        "e": 44.89
+      },
+      {
+        "w": "ya’ni",
+        "s": 45.19,
+        "e": 45.37
+      },
+      {
+        "w": "faqat",
+        "s": 45.47,
+        "e": 45.77
+      },
+      {
+        "w": "o‘zgargan",
+        "s": 45.95,
+        "e": 46.45
+      },
+      {
+        "w": "farqlar",
+        "s": 46.55,
+        "e": 46.95
+      },
+      {
+        "w": "ko‘rinishida",
+        "s": 46.99,
+        "e": 47.41
+      },
+      {
+        "w": "siqiladi.",
+        "s": 47.47,
+        "e": 47.81
+      }
+    ]
+  },
+  {
+    "id": "l6",
+    "scene": "delta_siqish",
+    "text": "git verify-pack buyrug‘i orqali Git eng yirik yoki yangi versiyani to‘liq saqlab, eski versiyani atigi bir necha baytlik delta qilganini ko‘rishimiz mumkin.",
+    "show": "git verify-pack buyrug‘i orqali Git eng yirik yoki yangi versiyani to‘liq saqlab, eski versiyani atigi bir necha baytlik delta qilganini ko‘rishimiz mumkin.",
+    "say": "Git verifay-pak buyrug‘i orqali Git eng yirik yoki yangi versiyani to‘liq saqlab, eski versiyani atigi bir necha baytlik delta qilganini ko‘rishimiz mumkin.",
+    "a0": 48.61,
+    "a1": 57.22,
+    "words": [
+      {
+        "w": "Git",
+        "s": 48.61,
+        "e": 48.79
+      },
+      {
+        "w": "verifay-pak",
+        "s": 48.93,
+        "e": 49.59
+      },
+      {
+        "w": "buyrug‘i",
+        "s": 49.69,
+        "e": 49.99
+      },
+      {
+        "w": "orqali",
+        "s": 50.01,
+        "e": 50.37
+      },
+      {
+        "w": "Git",
+        "s": 50.65,
+        "e": 50.83
+      },
+      {
+        "w": "eng",
+        "s": 51.05,
+        "e": 51.21
+      },
+      {
+        "w": "yirik",
+        "s": 51.29,
+        "e": 51.57
+      },
+      {
+        "w": "yoki",
+        "s": 51.59,
+        "e": 51.91
+      },
+      {
+        "w": "yangi",
+        "s": 52.01,
+        "e": 52.27
+      },
+      {
+        "w": "versiyani",
+        "s": 52.31,
+        "e": 52.7
+      },
+      {
+        "w": "to‘liq",
+        "s": 52.76,
+        "e": 53.02
+      },
+      {
+        "w": "saqlab,",
+        "s": 53.08,
+        "e": 53.4
+      },
+      {
+        "w": "eski",
+        "s": 53.72,
+        "e": 53.94
+      },
+      {
+        "w": "versiyani",
+        "s": 54.0,
+        "e": 54.38
+      },
+      {
+        "w": "atigi",
+        "s": 54.52,
+        "e": 54.8
+      },
+      {
+        "w": "bir",
+        "s": 54.9,
+        "e": 55.02
+      },
+      {
+        "w": "necha",
+        "s": 55.06,
+        "e": 55.26
+      },
+      {
+        "w": "baytlik",
+        "s": 55.32,
+        "e": 55.66
+      },
+      {
+        "w": "delta",
+        "s": 55.72,
+        "e": 55.98
+      },
+      {
+        "w": "qilganini",
+        "s": 56.02,
+        "e": 56.46
+      },
+      {
+        "w": "ko‘rishimiz",
+        "s": 56.5,
+        "e": 56.94
+      },
+      {
+        "w": "mumkin.",
+        "s": 56.98,
+        "e": 57.22
+      }
+    ]
+  },
+  {
+    "id": "l7",
+    "scene": "delta_zanjirlari",
+    "text": "Deltalar bir-biriga zanjir bo‘lib ulanishi mumkin; buni boshqarish uchun repack buyrug‘ining window va depth parametrlari xizmat qiladi.",
+    "show": "Deltalar bir-biriga zanjir bo‘lib ulanishi mumkin; buni boshqarish uchun repack buyrug‘ining window va depth parametrlari xizmat qiladi.",
+    "say": "Deltalar bir-biriga zanjir bo‘lib ulanishi mumkin; buni boshqarish uchun ripak buyrug‘ining vindou va depth parametrlari xizmat qiladi.",
+    "a0": 57.9,
+    "a1": 65.62,
+    "words": [
+      {
+        "w": "Deltalar",
+        "s": 57.9,
+        "e": 58.36
+      },
+      {
+        "w": "bir-biriga",
+        "s": 58.62,
+        "e": 59.0
+      },
+      {
+        "w": "zanjir",
+        "s": 59.24,
+        "e": 59.6
+      },
+      {
+        "w": "bo‘lib",
+        "s": 59.66,
+        "e": 59.86
+      },
+      {
+        "w": "ulanishi",
+        "s": 59.92,
+        "e": 60.24
+      },
+      {
+        "w": "mumkin;",
+        "s": 60.24,
+        "e": 60.9
+      },
+      {
+        "w": "buni",
+        "s": 60.9,
+        "e": 61.06
+      },
+      {
+        "w": "boshqarish",
+        "s": 61.08,
+        "e": 61.5
+      },
+      {
+        "w": "uchun",
+        "s": 61.54,
+        "e": 61.74
+      },
+      {
+        "w": "ripak",
+        "s": 62.04,
+        "e": 62.36
+      },
+      {
+        "w": "buyrug‘ining",
+        "s": 62.46,
+        "e": 62.92
+      },
+      {
+        "w": "vindou",
+        "s": 63.14,
+        "e": 63.52
+      },
+      {
+        "w": "va",
+        "s": 63.72,
+        "e": 63.8
+      },
+      {
+        "w": "depth",
+        "s": 64.1,
+        "e": 64.34
+      },
+      {
+        "w": "parametrlari",
+        "s": 64.4,
+        "e": 65.06
+      },
+      {
+        "w": "xizmat",
+        "s": 65.08,
+        "e": 65.36
+      },
+      {
+        "w": "qiladi.",
+        "s": 65.38,
+        "e": 65.62
+      }
+    ]
+  },
+  {
+    "id": "l8",
+    "scene": "delta_zanjirlari",
+    "text": "Chuqurroq zanjir diskni maksimal tejaydi, ammo obyektni o‘qish tezligiga ta’sir qilgani uchun Git muvozanatli standart chegaralardan foydalanadi.",
+    "show": "Chuqurroq zanjir diskni maksimal tejaydi, ammo obyektni o‘qish tezligiga ta’sir qilgani uchun Git muvozanatli standart chegaralardan foydalanadi.",
+    "say": "Chuqurroq zanjir diskni maksimal tejaydi, ammo obyektni o‘qish tezligiga ta’sir qilgani uchun Git muvozanatli standart chegaralardan foydalanadi.",
+    "a0": 66.48,
+    "a1": 74.79,
+    "words": [
+      {
+        "w": "Chuqurroq",
+        "s": 66.48,
+        "e": 66.94
+      },
+      {
+        "w": "zanjir",
+        "s": 67.04,
+        "e": 67.4
+      },
+      {
+        "w": "diskni",
+        "s": 67.46,
+        "e": 67.77
+      },
+      {
+        "w": "maksimal",
+        "s": 68.05,
+        "e": 68.51
+      },
+      {
+        "w": "tejaydi,",
+        "s": 68.57,
+        "e": 68.93
+      },
+      {
+        "w": "ammo",
+        "s": 69.23,
+        "e": 69.43
+      },
+      {
+        "w": "obyektni",
+        "s": 69.69,
+        "e": 70.13
+      },
+      {
+        "w": "o‘qish",
+        "s": 70.25,
+        "e": 70.49
+      },
+      {
+        "w": "tezligiga",
+        "s": 70.53,
+        "e": 70.99
+      },
+      {
+        "w": "ta’sir",
+        "s": 71.03,
+        "e": 71.31
+      },
+      {
+        "w": "qilgani",
+        "s": 71.35,
+        "e": 71.63
+      },
+      {
+        "w": "uchun",
+        "s": 71.67,
+        "e": 71.85
+      },
+      {
+        "w": "Git",
+        "s": 72.15,
+        "e": 72.33
+      },
+      {
+        "w": "muvozanatli",
+        "s": 72.45,
+        "e": 73.09
+      },
+      {
+        "w": "standart",
+        "s": 73.17,
+        "e": 73.59
+      },
+      {
+        "w": "chegaralardan",
+        "s": 73.59,
+        "e": 74.21
+      },
+      {
+        "w": "foydalanadi.",
+        "s": 74.27,
+        "e": 74.79
+      }
+    ]
+  },
+  {
+    "id": "l9",
+    "scene": "cruft_pack_va_prune",
+    "text": "Hech qaysi branch yoki reflog ko‘rsatmayotgan keraksiz obyektlar darhol o‘chirilmay, xavfsizlik uchun alohida cruft pack fayliga o‘tkaziladi.",
+    "show": "Hech qaysi branch yoki reflog ko‘rsatmayotgan keraksiz obyektlar darhol o‘chirilmay, xavfsizlik uchun alohida cruft pack fayliga o‘tkaziladi.",
+    "say": "Hech qaysi brench yoki reflog ko‘rsatmayotgan keraksiz obyektlar darhol o‘chirilmay, xavfsizlik uchun alohida kraft pak fayliga o‘tkaziladi.",
+    "a0": 75.59,
+    "a1": 83.98,
+    "words": [
+      {
+        "w": "Hech",
+        "s": 75.59,
+        "e": 75.73
+      },
+      {
+        "w": "qaysi",
+        "s": 75.77,
+        "e": 76.01
+      },
+      {
+        "w": "brench",
+        "s": 76.11,
+        "e": 76.47
+      },
+      {
+        "w": "yoki",
+        "s": 76.51,
+        "e": 76.75
+      },
+      {
+        "w": "reflog",
+        "s": 77.07,
+        "e": 77.45
+      },
+      {
+        "w": "ko‘rsatmayotgan",
+        "s": 77.53,
+        "e": 78.25
+      },
+      {
+        "w": "keraksiz",
+        "s": 78.35,
+        "e": 78.79
+      },
+      {
+        "w": "obyektlar",
+        "s": 78.93,
+        "e": 79.39
+      },
+      {
+        "w": "darhol",
+        "s": 79.67,
+        "e": 80.03
+      },
+      {
+        "w": "o‘chirilmay,",
+        "s": 80.13,
+        "e": 80.61
+      },
+      {
+        "w": "xavfsizlik",
+        "s": 80.85,
+        "e": 81.29
+      },
+      {
+        "w": "uchun",
+        "s": 81.33,
+        "e": 81.51
+      },
+      {
+        "w": "alohida",
+        "s": 81.73,
+        "e": 82.15
+      },
+      {
+        "w": "kraft",
+        "s": 82.37,
+        "e": 82.74
+      },
+      {
+        "w": "pak",
+        "s": 82.84,
+        "e": 83.02
+      },
+      {
+        "w": "fayliga",
+        "s": 83.08,
+        "e": 83.44
+      },
+      {
+        "w": "o‘tkaziladi.",
+        "s": 83.48,
+        "e": 83.98
+      }
+    ]
+  },
+  {
+    "id": "l10",
+    "scene": "cruft_pack_va_prune",
+    "text": "Ular faqat prune expire muddati, ya’ni odatda ikki hafta o‘tgandan keyingina ombordan butunlay xavfsiz tozalab tashlanadi.",
+    "show": "Ular faqat prune expire muddati, ya’ni odatda ikki hafta o‘tgandan keyingina ombordan butunlay xavfsiz tozalab tashlanadi.",
+    "say": "Ular faqat pruun ekspayr muddati, ya’ni odatda ikki hafta o‘tgandan keyingina ombordan butunlay xavfsiz tozalab tashlanadi.",
+    "a0": 84.68,
+    "a1": 92.32,
+    "words": [
+      {
+        "w": "Ular",
+        "s": 84.68,
+        "e": 84.86
+      },
+      {
+        "w": "faqat",
+        "s": 84.9,
+        "e": 85.18
+      },
+      {
+        "w": "pruun",
+        "s": 85.4,
+        "e": 85.68
+      },
+      {
+        "w": "ekspayr",
+        "s": 85.82,
+        "e": 86.28
+      },
+      {
+        "w": "muddati,",
+        "s": 86.34,
+        "e": 86.68
+      },
+      {
+        "w": "ya’ni",
+        "s": 86.94,
+        "e": 87.12
+      },
+      {
+        "w": "odatda",
+        "s": 87.34,
+        "e": 87.74
+      },
+      {
+        "w": "ikki",
+        "s": 87.98,
+        "e": 88.22
+      },
+      {
+        "w": "hafta",
+        "s": 88.28,
+        "e": 88.54
+      },
+      {
+        "w": "o‘tgandan",
+        "s": 88.64,
+        "e": 89.1
+      },
+      {
+        "w": "keyingina",
+        "s": 89.14,
+        "e": 89.5
+      },
+      {
+        "w": "ombordan",
+        "s": 89.82,
+        "e": 90.28
+      },
+      {
+        "w": "butunlay",
+        "s": 90.36,
+        "e": 90.84
+      },
+      {
+        "w": "xavfsiz",
+        "s": 91.08,
+        "e": 91.46
+      },
+      {
+        "w": "tozalab",
+        "s": 91.5,
+        "e": 91.86
+      },
+      {
+        "w": "tashlanadi.",
+        "s": 91.88,
+        "e": 92.32
+      }
+    ]
+  },
+  {
+    "id": "l11",
+    "scene": "xulosa",
+    "text": "Zamonaviy Git 2.56 da git maintenance vositasi fon rejimida commit-graph, loose obyektlar va reflarni avtomatik tartibga solib boradi.",
+    "show": "Zamonaviy Git 2.56 da git maintenance vositasi fon rejimida commit-graph, loose obyektlar va reflarni avtomatik tartibga solib boradi.",
+    "say": "Zamonaviy Git 2.56 da git meyntenens vositasi fon rejimida kommit-graf, luus obyektlar va reflarni avtomatik tartibga solib boradi.",
+    "a0": 93.2,
+    "a1": 101.95,
+    "words": [
+      {
+        "w": "Zamonaviy",
+        "s": 93.2,
+        "e": 93.68
+      },
+      {
+        "w": "Git",
+        "s": 93.78,
+        "e": 93.94
+      },
+      {
+        "w": "2.56",
+        "s": 93.94,
+        "e": 95.02
+      },
+      {
+        "w": "da",
+        "s": 95.02,
+        "e": 95.1
+      },
+      {
+        "w": "git",
+        "s": 95.43,
+        "e": 95.61
+      },
+      {
+        "w": "meyntenens",
+        "s": 95.77,
+        "e": 96.27
+      },
+      {
+        "w": "vositasi",
+        "s": 96.33,
+        "e": 96.81
+      },
+      {
+        "w": "fon",
+        "s": 97.07,
+        "e": 97.25
+      },
+      {
+        "w": "rejimida",
+        "s": 97.33,
+        "e": 97.71
+      },
+      {
+        "w": "kommit-graf,",
+        "s": 97.81,
+        "e": 98.47
+      },
+      {
+        "w": "luus",
+        "s": 98.79,
+        "e": 98.97
+      },
+      {
+        "w": "obyektlar",
+        "s": 99.09,
+        "e": 99.55
+      },
+      {
+        "w": "va",
+        "s": 99.79,
+        "e": 99.85
+      },
+      {
+        "w": "reflarni",
+        "s": 99.97,
+        "e": 100.43
+      },
+      {
+        "w": "avtomatik",
+        "s": 100.57,
+        "e": 101.03
+      },
+      {
+        "w": "tartibga",
+        "s": 101.07,
+        "e": 101.39
+      },
+      {
+        "w": "solib",
+        "s": 101.43,
+        "e": 101.65
+      },
+      {
+        "w": "boradi.",
+        "s": 101.69,
+        "e": 101.95
+      }
+    ]
+  },
+  {
+    "id": "l12",
+    "scene": "xulosa",
+    "text": "Loose format tezkor yozish imkonini bersa, packfile omborni ixcham va tarmoq orqali uzatishga doimo tayyor holatda saqlaydi.",
+    "show": "Loose format tezkor yozish imkonini bersa, packfile omborni ixcham va tarmoq orqali uzatishga doimo tayyor holatda saqlaydi.",
+    "say": "Luus format tezkor yozish imkonini bersa, pakfayl omborni ixcham va tarmoq orqali uzatishga doimo tayyor holatda saqlaydi.",
+    "a0": 102.75,
+    "a1": 110.6,
+    "words": [
+      {
+        "w": "Luus",
+        "s": 102.75,
+        "e": 102.93
+      },
+      {
+        "w": "format",
+        "s": 102.99,
+        "e": 103.33
+      },
+      {
+        "w": "tezkor",
+        "s": 103.55,
+        "e": 103.95
+      },
+      {
+        "w": "yozish",
+        "s": 103.95,
+        "e": 104.35
+      },
+      {
+        "w": "imkonini",
+        "s": 104.43,
+        "e": 104.87
+      },
+      {
+        "w": "bersa,",
+        "s": 104.89,
+        "e": 105.17
+      },
+      {
+        "w": "pakfayl",
+        "s": 105.45,
+        "e": 105.96
+      },
+      {
+        "w": "omborni",
+        "s": 106.1,
+        "e": 106.52
+      },
+      {
+        "w": "ixcham",
+        "s": 106.64,
+        "e": 107.02
+      },
+      {
+        "w": "va",
+        "s": 107.1,
+        "e": 107.16
+      },
+      {
+        "w": "tarmoq",
+        "s": 107.3,
+        "e": 107.66
+      },
+      {
+        "w": "orqali",
+        "s": 107.74,
+        "e": 108.04
+      },
+      {
+        "w": "uzatishga",
+        "s": 108.12,
+        "e": 108.54
+      },
+      {
+        "w": "doimo",
+        "s": 108.88,
+        "e": 109.28
+      },
+      {
+        "w": "tayyor",
+        "s": 109.4,
+        "e": 109.74
+      },
+      {
+        "w": "holatda",
+        "s": 109.78,
+        "e": 110.16
+      },
+      {
+        "w": "saqlaydi.",
+        "s": 110.2,
+        "e": 110.6
+      }
+    ]
+  }
+]

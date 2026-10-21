@@ -1,0 +1,61 @@
+WEBVTT
+
+1
+00:01.420 --> 00:12.960
+Salom! Ushbu o‘n sakkizinchi bobda Git omborini ixchamlashtiruvchi packfile
+arxitekturasi, delta siqish va axlat yig‘uvchi git gc buyrug‘ini ko‘rib chiqamiz.
+
+2
+00:13.670 --> 00:22.720
+Git har bir versiyani mustaqil obyekt sifatida to‘liq saqlagani sababli,
+minglab mayda loose fayllar disk klasterlarida joyni isrof qila boshlaydi.
+
+3
+00:26.150 --> 00:34.450
+git count-objects buyrug‘i loose obyektlar soni va disk hajmini
+ko‘rsatsa, git gc ularni bitta yirik pack faylga jamlaydi.
+
+4
+00:34.860 --> 00:44.000
+Har bir packfile yonida tezkor qidiruv jadvali bo‘lgan nuqta idx indeksi
+yaratilib, minglab loose fayllar bitta tartibli juftlikka aylanadi.
+
+5
+00:47.990 --> 00:56.200
+Packfile ichida o‘xshash obyektlar to‘liq emas, balki bir-biriga
+nisbatan delta, ya’ni faqat o‘zgargan farqlar ko‘rinishida siqiladi.
+
+6
+00:56.550 --> 01:05.610
+git verify-pack buyrug‘i orqali Git eng yirik yoki yangi versiyani to‘liq saqlab,
+eski versiyani atigi bir necha baytlik delta qilganini ko‘rishimiz mumkin.
+
+7
+01:09.440 --> 01:17.610
+Deltalar bir-biriga zanjir bo‘lib ulanishi mumkin; buni boshqarish
+uchun repack buyrug‘ining window va depth parametrlari xizmat qiladi.
+
+8
+01:18.020 --> 01:26.780
+Chuqurroq zanjir diskni maksimal tejaydi, ammo obyektni o‘qish tezligiga
+ta’sir qilgani uchun Git muvozanatli standart chegaralardan foydalanadi.
+
+9
+01:30.730 --> 01:39.570
+Hech qaysi branch yoki reflog ko‘rsatmayotgan keraksiz obyektlar darhol
+o‘chirilmay, xavfsizlik uchun alohida cruft pack fayliga o‘tkaziladi.
+
+10
+01:39.820 --> 01:47.910
+Ular faqat prune expire muddati, ya’ni odatda ikki hafta
+o‘tgandan keyingina ombordan butunlay xavfsiz tozalab tashlanadi.
+
+11
+01:51.940 --> 02:01.140
+Zamonaviy Git 2.56 da git maintenance vositasi fon rejimida commit-graph,
+loose obyektlar va reflarni avtomatik tartibga solib boradi.
+
+12
+02:01.490 --> 02:09.790
+Loose format tezkor yozish imkonini bersa, packfile omborni
+ixcham va tarmoq orqali uzatishga doimo tayyor holatda saqlaydi.

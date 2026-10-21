@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" playsinline poster="/video/git/18-packfile-va-gc.jpg" src="/video/git/18-packfile-va-gc.mp4">
+    <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/git/18-packfile-va-gc.chapters.vtt" default>
+    <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/git/18-packfile-va-gc.uz.vtt">
+  </video>
+  <figcaption>18.1-video. Packfile'lar, delta siqish va gc</figcaption>
+</figure>
+
 [14–16-boblarda](14-obyektlar-blob.md) har obyekt `.git/objects/` ichida alohida fayl bo'lib yozildi: `.git/objects/f1/ad0c97...` — bitta commit, `.git/objects/83/baae61...` — bitta blob. Bu shakl **loose** (bo'sh, "sochilgan") obyekt deyiladi. Har loose obyekt alohida zlib bilan siqilgan, lekin boshqa obyektlardan butunlay mustaqil.
 
 Bu modelning narxini [14-bobda](14-obyektlar-blob.md) aytgan edik: Git diff saqlamaydi, har versiyaning **to'liq** mazmunini saqlaydi. 30 KB faylga bitta qator qo'shsangiz — omborda ikkita deyarli bir xil 30 KB'lik blob paydo bo'ladi. Ming marta o'zgargan fayl — ming nusxa.
