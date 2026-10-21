@@ -16,6 +16,8 @@ const SAY = [
   [/\binit\b/gi, "init"],
   [/\bclone\b/gi, "klon"],
   [/\bklon\b/gi, "klon"],
+  [/\banborn\b/gi, "anborn"],
+  [/\bunborn\b/gi, "anborn"],
   [/\bHEAD\b/g, "hed"],
   [/\bmain\b/gi, "meyn"],
   [/\bmeyn\b/gi, "meyn"],

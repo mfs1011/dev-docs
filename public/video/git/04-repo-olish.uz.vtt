@@ -1,61 +1,61 @@
 WEBVTT
 
 1
-00:01.420 --> 00:08.230
-Salom! Ushbu to‘rtinchi bobda Git repozitoriysini
+00:01.420 --> 00:08.470
+Salom! Ushbu to‘rtinchi bobda Git repozitoriysini noldan
 yaratish va masofadan klonlab olishni o‘rganamiz.
 
 2
-00:08.620 --> 00:16.400
-Gitda repozitoriyga ega bo‘lishning ikkita asosiy yo‘li
-bor: yangi loyiha uchun init va mavjud loyiha uchun klon.
+00:09.290 --> 00:16.460
+Repoga ega bo‘lishning ikkita asosiy yo‘li mavjud: yangi loyiha
+uchun init va mavjud loyiha tarixini ko‘chirish uchun klon.
 
 3
-00:19.530 --> 00:26.580
+00:20.170 --> 00:26.760
 Git init buyrug‘i joriy papkada yashirin nuqta git
-katalogini yaratadi va uni to‘liq repozitoriyga aylantiradi.
+katalogini yaratadi va uni to‘liq Git omboriga aylantiradi.
 
 4
-00:26.840 --> 00:33.450
-Nuqta git papkasi loyihaning butun o‘tmishini saqlaydi
-va unga qo‘lda tegmaslik qat’iy tavsiya etiladi.
+00:27.140 --> 00:33.530
+Nuqta git papkasi loyihaning butun o‘tmishi va sozlamalarini
+saqlaydi; unga hech qachon qo‘lda tegmaslik kerak.
 
 5
-00:36.420 --> 00:41.630
-Yangi repozitoriyda kommit bo‘lmagani uchun
-brench hali tug‘ilmagan holatda bo‘ladi.
+00:37.920 --> 00:44.350
+Yangi repozitoriyda hali kommit bo‘lmagani sababli asosiy
+brench tug‘ilmagan, ya’ni anborn brench holatida turadi.
 
 6
-00:41.960 --> 00:48.880
-Ilk fayllarni qo‘shib birinchi rut kommitni yaratishingiz
-bilan asosiy meyn brenchi rasman vujudga keladi.
+00:44.780 --> 00:51.600
+Fayllarni qo‘shib ilk rut kommitni amalga oshirishingiz
+bilan bosh brench rasman vujudga keladi va tarix boshlanadi.
 
 7
-00:51.970 --> 00:59.560
-Git klon buyrug‘i esa boshqa serverdagi loyihaning nafaqat
-oxirgi fayllarini, balki butun tarixini to‘liq nusxalab oladi.
+00:56.010 --> 01:03.200
+Git klon buyrug‘i serverdagi loyihaning faqat bitta versiyasini
+emas, balki boshidan buyon yozilgan butun tarixini ko‘chiradi.
 
 8
-00:59.790 --> 01:06.410
+01:03.350 --> 01:10.270
 Natijada lokal kompyuteringizda server bilan to‘laqonli
-bog‘langan oridjin repozitoriyasi paydo bo‘ladi.
+bog‘langan, mustaqil orijin repozitoriyasi paydo bo‘ladi.
 
 9
-01:09.320 --> 01:15.230
-Klonlashda eych-ti-ti-pi-es yoki xavfsiz
-es-es-eych protokollaridan foydalanish mumkin.
+01:14.500 --> 01:20.750
+Klonlashda eych-ti-ti-pi-es yoki xavfsiz es-es-eych kabi
+bir nechta tarmoq protokollaridan foydalanish mumkin.
 
 10
-01:15.340 --> 01:21.920
-Katta loyihalarda faqat oxirgi versiya kerak bo‘lsa,
-depsh bir opsiyasi bilan sayoz klon olish qulay.
+01:20.940 --> 01:28.280
+Katta va og‘ir repozitoriylarda esa depsh bir opsiyasi
+orqali faqat oxirgi kommitni sayoz klonlash juda qulay.
 
 11
-01:24.790 --> 01:31.160
-Xulosa qilib aytganda, init va klon buyruqlari har qanday
-loyiha bilan ishlashning eng birinchi debochasidir.
+01:32.650 --> 01:39.260
+Xulosa qilib aytganda, init va klon amallari har qanday
+dasturlash loyihasining eng muhim boshlang‘ich poydevoridir.
 
 12
-01:31.530 --> 01:37.650
-Keyingi bobda Gitdagi uchta holat va uchta hududni
-tushunib olamiz. E’tiboringiz uchun rahmat!
+01:39.880 --> 01:46.310
+Keyingi beshinchi bobda Gitdagi uchta holat va uchta
+hudud mexanizmini o‘rganamiz. E’tiboringiz uchun rahmat!

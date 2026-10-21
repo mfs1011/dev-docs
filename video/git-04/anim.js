@@ -7,10 +7,53 @@
     W, H, C, UI, MONO,
     clamp, P, lerp, eo, eio, eback, font, withA, rr,
     tw, text, bg, ring, burst, link, pill,
-    fileChip, chip, panel, card
+    fileChip, chip, panel, card, terminal
   } = kit;
 
   const TM = window.TM, NR = window.NR;
+
+  // Terminalda matn va buyruqlarni chizish yordamchilari
+  function drawCommandLine(promptStr, fullCmd, tStart, tTypeEnd, tEnter, u, x, y, opt = {}) {
+    const tPrompt = opt.tPromptShow != null ? opt.tPromptShow : tStart - 0.4;
+    if (u < tPrompt) return;
+
+    const pCol = opt.promptCol || C.green;
+    text(promptStr, x, y, { size: 15, fam: MONO, color: pCol, weight: 700, align: 'left' });
+    const pw = tw(promptStr, 15, 700, MONO);
+
+    if (u < tStart) {
+      if (Math.floor(u * 2.5) % 2 === 0) {
+        text('█', x + pw + 2, y, { size: 15, fam: MONO, color: '#38bdf8', align: 'left' });
+      }
+      return;
+    }
+
+    const dur = Math.max(0.01, tTypeEnd - tStart);
+    const progress = clamp((u - tStart) / dur);
+    const charCount = Math.floor(progress * fullCmd.length);
+    const typedStr = fullCmd.slice(0, charCount);
+
+    text(typedStr, x + pw, y, { size: 15, fam: MONO, color: opt.cmdCol || '#e2e8f0', weight: 600, align: 'left' });
+    const cmdW = tw(typedStr, 15, 600, MONO);
+
+    if (u < tEnter) {
+      const isVisible = u < tTypeEnd ? true : (Math.floor(u * 2.5) % 2 === 0);
+      if (isVisible) {
+        text('█', x + pw + cmdW + 2, y, { size: 15, fam: MONO, color: '#38bdf8', align: 'left' });
+      }
+    }
+  }
+
+  function drawOutputLine(str, tAppear, u, x, y, opt = {}) {
+    if (u < tAppear) return;
+    text(str, x, y, {
+      size: opt.size || 14,
+      fam: MONO,
+      color: opt.color || '#94a3b8',
+      weight: opt.weight || 500,
+      align: 'left'
+    });
+  }
 
   // ==========================================
   // 1-SAHNA: Repo Olishning 2 Yo'li
@@ -20,18 +63,19 @@
     if (u < 7.5 && !o.isPoster) {
       const kTitle = P(u, 0.4, 0.7);
       withA(kTitle, () => {
-        pill("04-BOB · REPOZITORIY OLISH", 960, 280, C.git, { size: 24, mono: false, s: eback(kTitle) });
-        text("Repo Olish: init va clone", 960, 360, { size: 56, weight: 800, color: C.text });
-        text("Yangi loyiha boshlash yoki masofaviy repozitoriyni to'liq nusxalash", 960, 430, { size: 28, color: C.mute });
+        pill("04-BOB · REPOZITORIY OLISH", 960, 260, C.git, { size: 24, mono: false, s: eback(kTitle) });
+        text("Repo Olish: init va clone", 960, 345, { size: 56, weight: 800, color: C.text });
+        text("Yangi loyiha boshlash yoki masofaviy repozitoriyni to'liq nusxalash", 960, 415, { size: 26, color: C.mute });
 
         // Markaziy taqqoslash kartasi
-        const kTerm = P(u, 2.0, 0.6);
+        const kTerm = P(u, 1.8, 0.6);
         withA(kTerm, () => {
           ctx.save(); ctx.translate(0, (1 - eo(kTerm)) * 20);
-          card(480, 500, 960, 220, { fill: 'rgba(11,16,32,0.92)', col: C.blue, lw: 2 });
-          pill("$ git init  vs  $ git clone <url>", 960, 555, C.blue, { size: 22 });
-          text("git init   ->  lokal papkada yangi .git xotirasini boshlash", 960, 620, { size: 20, fam: MONO, color: C.yellow, weight: 600 });
-          text("git clone  ->  serverdagi butun tarixni to'liq nusxalab olish", 960, 665, { size: 20, fam: MONO, color: C.green, weight: 600 });
+          card(440, 480, 1040, 240, { fill: 'rgba(11,16,32,0.94)', col: C.blue, lw: 2 });
+          pill("$ git init  vs  $ git clone <url>", 960, 535, C.blue, { size: 22 });
+          text("git init   ->  lokal papkada yangi .git xotirasini boshlash", 960, 605, { size: 22, fam: MONO, color: C.yellow, weight: 600 });
+          text("git clone  ->  serverdagi butun tarixni to'liq nusxalab olish", 960, 650, { size: 22, fam: MONO, color: C.green, weight: 600 });
+          text("Ikkala yo'l ham kompyuteringizda to'laqonli Git repo'sini hosil qiladi.", 960, 690, { size: 18, color: C.mute });
           ctx.restore();
         });
       });
@@ -41,12 +85,12 @@
     // Taqqoslash bosqichi (u >= 7.5 yoki poster)
     chip(1, "Repo Olishning 2 Asosiy Yo‘li", u, 7.5);
 
-    const kBox = o.isPoster ? 1 : eo(P(u, 8.0, 0.6));
+    const kBox = o.isPoster ? 1 : eo(P(u, 7.8, 0.6));
     withA(kBox, () => {
       // Chap: git init
       panel(100, 140, 840, 680, C.yellow, "1 · Yangi Loyiha (git init)", "noldan yangi tarix boshlash", kBox, kBox);
 
-      const kG1 = o.isPoster ? 1 : P(u, 8.5, 0.5);
+      const kG1 = o.isPoster ? 1 : P(u, 8.4, 0.5);
       withA(kG1, () => {
         ctx.save(); if (!o.isPoster) ctx.translate(0, (1 - eo(kG1)) * 16);
         card(125, 255, 790, 160, { fill: 'rgba(255,209,102,0.08)', col: C.yellow });
@@ -56,7 +100,7 @@
         ctx.restore();
       });
 
-      const kG2 = o.isPoster ? 1 : P(u, 10.2, 0.5);
+      const kG2 = o.isPoster ? 1 : P(u, 10.4, 0.5);
       withA(kG2, () => {
         ctx.save(); if (!o.isPoster) ctx.translate(0, (1 - eo(kG2)) * 16);
         card(125, 435, 790, 160, { fill: 'rgba(79,140,255,0.08)', col: C.blue });
@@ -66,13 +110,13 @@
         ctx.restore();
       });
 
-      const kG3 = o.isPoster ? 1 : P(u, 12.0, 0.5);
+      const kG3 = o.isPoster ? 1 : P(u, 12.4, 0.5);
       withA(kG3, () => {
         ctx.save(); if (!o.isPoster) ctx.translate(0, (1 - eo(kG3)) * 16);
         card(125, 620, 790, 165, { fill: 'rgba(15,22,48,0.92)', col: C.mute });
         pill("Mutlaqo Mustaqil", 220, 655, C.mute, { size: 16, mono: false });
         text("• Server yoki internet aloqasi mutlaqo shart emas.", 150, 700, { size: 17, color: C.text, align: 'left' });
-        text("• Butun tarix o'z kompyuteringiz ichida lokal yuritiladi.", 150, 740, { size: 16, color: C.mute, align: 'left' });
+        text("• Butun tarix o'z kompyuteringiz ichida xavfsiz yuritiladi.", 150, 740, { size: 16, color: C.mute, align: 'left' });
         ctx.restore();
       });
 
@@ -84,7 +128,7 @@
         ctx.save(); if (!o.isPoster) ctx.translate(0, (1 - eo(kC1)) * 16);
         card(1005, 255, 790, 160, { fill: 'rgba(52,211,153,0.08)', col: C.green });
         pill("To'liq Tarix Nusxasi", 1140, 290, C.green, { size: 16, mono: false });
-        text("• Serverdagi barcha commitlar, branchlar va teglar ko'chirib olinadi.", 1030, 335, { size: 17, color: C.text, align: 'left' });
+        text("• Serverdagi barcha kommitlar, branchlar va teglar ko'chirib olinadi.", 1030, 335, { size: 17, color: C.text, align: 'left' });
         text("• Faqat oxirgi versiya emas, loyihaning BUTUN o'tmishi yuklanadi!", 1030, 375, { size: 17, color: C.green, align: 'left', weight: 600 });
         ctx.restore();
       });
@@ -99,356 +143,365 @@
         ctx.restore();
       });
 
-      const kC3 = o.isPoster ? 1 : P(u, 13.0, 0.5);
+      const kC3 = o.isPoster ? 1 : P(u, 13.2, 0.5);
       withA(kC3, () => {
         ctx.save(); if (!o.isPoster) ctx.translate(0, (1 - eo(kC3)) * 16);
-        card(1005, 620, 790, 165, { fill: 'rgba(240,81,51,0.08)', col: C.git });
-        pill("Teng Huquqli Zaxira (Backup)", 1180, 655, C.git, { size: 16, mono: false });
-        text("• Har bir klon — serverning to'laqonli mustaqil zaxirasidir.", 1030, 700, { size: 17, color: C.text, align: 'left' });
-        text("• Server buzilsa ham, istalgan dasturchining klonidan qayta tiklash mumkin.", 1030, 740, { size: 17, color: C.git, align: 'left', weight: 600 });
+        card(1005, 620, 790, 165, { fill: 'rgba(79,140,255,0.08)', col: C.blue });
+        pill("Teng Huquqli Nusxa", 1140, 655, C.blue, { size: 16, mono: false });
+        text("• Klonlangan repo server bilan teng huquqli to'laqonli repodir.", 1030, 700, { size: 17, color: C.text, align: 'left' });
+        text("• Server diski shikastlansa ham, ixtiyoriy klondan qayta tiklasa bo'ladi.", 1030, 740, { size: 16, color: '#38bdf8', align: 'left', weight: 600 });
         ctx.restore();
       });
     });
 
     // Pastki xulosa
     if (o.foot !== false) {
-      const kFoot = o.isPoster ? 1 : P(u, 14.5, 0.7);
+      const kFoot = o.isPoster ? 1 : P(u, 15.0, 0.7);
       withA(kFoot, () => {
         ctx.save(); if (!o.isPoster) ctx.translate(0, (1 - eo(kFoot)) * 16);
         card(100, 845, 1720, 165, { fill: 'rgba(17,24,52,0.92)', col: C.blue });
-        text("Ikkala holatda ham natija bir xil: kompyuteringizda ishga tayyor to'laqonli lokal repozitoriy.", 960, 895, { size: 24, weight: 700, color: C.text, align: 'center' });
-        text("Endi git init buyrug'ining ishlashi va .git ichki tuzilishini ko'rib chiqamiz.", 960, 950, { size: 20, color: C.mute, align: 'center' });
+        text("Git'da repozitoriyga ega bo'lish: noldan boshlash (init) yoki serverdan to'liq nusxa olish (clone).", 960, 895, { size: 24, weight: 700, color: C.text, align: 'center' });
+        text("Endi terminalda 'git init' buyrug'ini ishlatib, .git papkasi tuzilishini ko'ramiz.", 960, 950, { size: 20, color: C.mute, align: 'center' });
         ctx.restore();
       });
     }
   }
 
   // ==========================================
-  // 2-SAHNA: git init va .git Papkasi
+  // 2-SAHNA: git init va .git Papkasi (SPLIT SCREEN)
   // ==========================================
-  function sceneGitInit(u, bounds) {
+  function sceneGitInit(u, bounds, o = {}) {
     chip(2, "git init va .git Papkasi", u);
 
     const kBox = eo(P(u, 0.4, 0.6));
     withA(kBox, () => {
-      // Chap panel: git init amali
-      panel(100, 140, 840, 680, C.yellow, "git init Buyrug'i", "loyihani repoga aylantirish", kBox, kBox);
+      // Chap tomonda: Real Jonli Terminal!
+      terminal(100, 140, 840, 680, {
+        title: 'bash — ~/mening-loyiham (80x24)',
+        p: kBox
+      });
 
-      const kI1 = P(u, 1.2, 0.6);
+      const tu = o.isPoster ? 20.0 : u;
+
+      // 1-buyruq: mkdir & cd
+      drawCommandLine("~/dasturlar $ ", "mkdir mening-loyiham && cd mening-loyiham", 1.0, 3.2, 3.5, tu, 130, 205);
+
+      // 2-buyruq: git init
+      drawCommandLine("mening-loyiham $ ", "git init", 4.2, 5.4, 5.7, tu, 130, 235);
+      drawOutputLine("Initialized empty Git repository in /.../mening-loyiham/.git/", 5.9, tu, 150, 260, { color: C.green, weight: 600 });
+
+      // 3-buyruq: ls -la
+      drawCommandLine("mening-loyiham $ ", "ls -la", 6.8, 7.8, 8.1, tu, 130, 290, { promptCol: C.yellow });
+      drawOutputLine("drwxr-xr-x   .git/", 8.3, tu, 150, 314, { color: '#38bdf8', weight: 600 });
+
+      // 4-buyruq: ls -1 .git
+      drawCommandLine("mening-loyiham $ ", "ls -1 .git", 9.0, 10.2, 10.5, tu, 130, 344);
+      drawOutputLine("HEAD", 10.7, tu, 150, 368, { color: C.yellow, weight: 600 });
+      drawOutputLine("config", 10.7, tu, 150, 388, { color: '#e2e8f0' });
+      drawOutputLine("description", 10.7, tu, 150, 408, { color: '#94a3b8' });
+      drawOutputLine("hooks/", 10.7, tu, 150, 428, { color: '#94a3b8' });
+      drawOutputLine("info/", 10.7, tu, 150, 448, { color: '#94a3b8' });
+      drawOutputLine("objects/", 10.7, tu, 150, 468, { color: C.green, weight: 600 });
+      drawOutputLine("refs/", 10.7, tu, 150, 488, { color: C.purple, weight: 600 });
+
+      // Faol prompt va miltillovchi kursor
+      if (tu >= 12.0) {
+        text("mening-loyiham $ ", 130, 524, { size: 15, fam: MONO, color: C.green, weight: 700, align: 'left' });
+        const pw = tw("mening-loyiham $ ", 15, 700, MONO);
+        if (Math.floor(tu * 2.5) % 2 === 0 || o.isPoster) {
+          text('█', 130 + pw + 2, 524, { size: 15, fam: MONO, color: '#38bdf8', align: 'left' });
+        }
+      }
+
+      // O'ng panel: .git Papkasi — Ichki Anatomiyasi
+      panel(980, 140, 840, 680, C.yellow, ".git Papkasi — Repo Yuragi", "ichki kataloglar va ma'lumotlar bazasi", kBox, kBox);
+
+      const kI1 = P(u, 1.8, 0.6);
       withA(kI1, () => {
         ctx.save(); ctx.translate(0, (1 - eo(kI1)) * 16);
-        card(125, 255, 790, 175, { fill: 'rgba(11,16,32,0.92)', col: C.yellow, lw: 2 });
-        pill("Papkada Repozitoriy Ochish", 250, 290, C.yellow, { size: 16, mono: false });
-        text("$ cd mening-loyiham && git init", 150, 340, { size: 18, fam: MONO, color: C.yellow, align: 'left', weight: 600 });
-        text("Initialized empty Git repository in /mening-loyiham/.git/", 150, 385, { size: 16, fam: MONO, color: C.green, align: 'left' });
+        card(1005, 255, 790, 160, { fill: 'rgba(255,209,102,0.08)', col: C.yellow });
+        pill("HEAD va config Fayllari", 1160, 290, C.yellow, { size: 16, mono: false });
+        text("• HEAD   -> joriy qaysi branch'daligingizni ko'rsatadi (ref: refs/heads/main).", 1030, 335, { size: 16, color: C.text, align: 'left' });
+        text("• config -> faqat shu loyihaga tegishli lokal sozlamalar (.git/config).", 1030, 375, { size: 16, color: C.yellow, align: 'left', weight: 600 });
         ctx.restore();
       });
 
-      const kI2 = P(u, 3.5, 0.6);
+      const kI2 = P(u, 5.0, 0.6);
       withA(kI2, () => {
         ctx.save(); ctx.translate(0, (1 - eo(kI2)) * 16);
-        card(125, 450, 790, 165, { fill: 'rgba(52,211,153,0.08)', col: C.green });
-        pill("Qayta Init Qilish Xavfsiz", 240, 485, C.green, { size: 16, mono: false });
-        text("Mavjud repoda 'git init' ni qayta chaqirish xavfsiz:", 150, 530, { size: 17, color: C.text, align: 'left' });
-        text("Reinitialized existing Git repository in /.../.git/", 150, 565, { size: 16, fam: MONO, color: C.green, align: 'left' });
-        text("U mavjud commitlar va konfiguratsiyani aslo o'chirib yubormaydi.", 150, 600, { size: 15, color: C.mute, align: 'left' });
+        card(1005, 435, 790, 165, { fill: 'rgba(52,211,153,0.08)', col: C.green });
+        pill("objects va refs Kataloglari", 1170, 470, C.green, { size: 16, mono: false });
+        text("• objects/ -> barcha fayllar, kataloglar va kommitlar ombori (hozircha bo'sh).", 1030, 515, { size: 16, color: C.text, align: 'left' });
+        text("• refs/    -> branchlar va teglar ko'rsatkichlari saqlanadigan joy.", 1030, 555, { size: 16, color: C.green, align: 'left', weight: 600 });
         ctx.restore();
       });
 
-      const kI3 = P(u, 5.8, 0.6);
+      const kI3 = P(u, 8.5, 0.6);
       withA(kI3, () => {
         ctx.save(); ctx.translate(0, (1 - eo(kI3)) * 16);
-        card(125, 635, 790, 150, { fill: 'rgba(79,140,255,0.08)', col: C.blue });
-        pill("Yangi Papka Yaratib Init Qilish", 260, 670, C.blue, { size: 16, mono: false });
-        text("$ git init yangi-loyiha", 150, 715, { size: 18, fam: MONO, color: C.blue, align: 'left', weight: 600 });
-        text("Agar papka mavjud bo'lmasa, Git uni o'zi avtomatik yaratadi.", 150, 755, { size: 16, color: C.text, align: 'left' });
-        ctx.restore();
-      });
-
-      // O'ng panel: .git ichki tuzilishi
-      panel(980, 140, 840, 680, C.orange, ".git Papkasi — Repo Xotirasi", "ichida nimalar bor va nega tegilmaydi?", kBox, kBox);
-
-      const kS1 = P(u, 7.5, 0.6);
-      withA(kS1, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kS1)) * 16);
-        card(1005, 255, 790, 240, { fill: 'rgba(255,181,71,0.08)', col: C.orange });
-        pill("Skelet Kataloglar va Fayllar", 1150, 290, C.orange, { size: 16, mono: false });
-        text("• HEAD     -> joriy qaysi branch faol ekanini saqlaydi", 1030, 340, { size: 17, fam: MONO, color: C.text, align: 'left' });
-        text("• config   -> shu reponing shaxsiy local sozlamalari", 1030, 380, { size: 17, fam: MONO, color: C.text, align: 'left' });
-        text("• objects/ -> barcha commitlar, bloblar va papkalar daraxti", 1030, 420, { size: 17, fam: MONO, color: C.text, align: 'left' });
-        text("• refs/    -> branchlar va teglar ko'rsatkichlari papkasi", 1030, 460, { size: 17, fam: MONO, color: C.text, align: 'left' });
-        ctx.restore();
-      });
-
-      const kS2 = P(u, 9.8, 0.6);
-      withA(kS2, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kS2)) * 16);
-        card(1005, 515, 790, 270, { fill: 'rgba(255,107,122,0.08)', col: C.red, lw: 2 });
-        pill("Oltin Qoida: Qo'lda Tegilmaydi!", 1160, 550, C.red, { size: 16, mono: false });
-        text("• .git papkasidagi barcha amallarni faqat Git buyruqlari boshqaradi.", 1030, 600, { size: 16, color: C.text, align: 'left' });
-        text("• Agar '.git' papkasi o'chirilsa — butun tarix abadiy yo'qoladi!", 1030, 640, { size: 17, color: C.red, align: 'left', weight: 700 });
-        text("• Qolgan fayllar esa oddiy, kuzatilmaydigan fayllar bo'lib qoladi.", 1030, 680, { size: 16, color: C.mute, align: 'left' });
-        text("• Ehtiyot bo'ling: 'rm -rf .git' hech qachon qaytarilmaydi!", 1030, 720, { size: 16, color: C.yellow, align: 'left', weight: 600 });
+        card(1005, 620, 790, 165, { fill: 'rgba(255,107,122,0.08)', col: C.red });
+        pill("Qat'iy Tavsiya: Qo'lda Tegilmaydi!", 1190, 655, C.red, { size: 16, mono: false });
+        text("• .git papkasi — Git'ning shaxsiy ma'lumotlar bazasi.", 1030, 700, { size: 16, color: C.text, align: 'left' });
+        text("• Uni faqat Git buyruqlari bilan boshqaring; o'chirsangiz butun tarix ketadi!", 1030, 740, { size: 16, color: C.red, align: 'left', weight: 600 });
         ctx.restore();
       });
     });
 
     // Pastki xulosa
-    const kFoot = P(u, 13.0, 0.7);
+    const kFoot = P(u, 14.0, 0.7);
     withA(kFoot, () => {
       ctx.save(); ctx.translate(0, (1 - eo(kFoot)) * 16);
       card(100, 845, 1720, 165, { fill: 'rgba(17,24,52,0.92)', col: C.yellow });
-      text("Loyiha fayllari — ishchi maydon; .git papkasi esa loyihaning butun xotirasi va tarixidir.", 960, 895, { size: 24, weight: 700, color: C.yellow, align: 'center' });
-      text("Endi yangi repo'dagi 'tug'ilmagan brench' va birinchi commitni ko'ramiz.", 960, 950, { size: 20, color: C.mute, align: 'center' });
+      text("git init faqat .git papkasini yaratadi; mavjud fayllaringizga tegilmaydi va ular untracked qoladi.", 960, 895, { size: 24, weight: 700, color: C.yellow, align: 'center' });
+      text("Endi tug'ilmagan brench holatini va birinchi 'root-commit'ni amalga oshiramiz.", 960, 950, { size: 20, color: C.mute, align: 'center' });
       ctx.restore();
     });
   }
 
   // ==========================================
-  // 3-SAHNA: Tug'ilmagan Brench va Ilk Commit
+  // 3-SAHNA: Tug'ilmagan Brench va Ilk Commit (SPLIT SCREEN)
   // ==========================================
-  function sceneUnbornCommit(u, bounds) {
+  function sceneUnbornCommit(u, bounds, o = {}) {
     chip(3, "Tug‘ilmagan Brench va Ilk Commit", u);
 
     const kBox = eo(P(u, 0.4, 0.6));
     withA(kBox, () => {
-      // Chap panel: Tug'ilmagan brench
-      panel(100, 140, 840, 680, C.purple, "Tug'ilmagan Brench (Unborn)", "brench bor, lekin hali mavjud emas", kBox, kBox);
+      // Chap tomonda: Real Jonli Terminal!
+      terminal(100, 140, 840, 680, {
+        title: 'bash — ~/mening-loyiham (80x24)',
+        p: kBox
+      });
 
-      const kU1 = P(u, 1.2, 0.6);
+      const tu = o.isPoster ? 20.0 : u;
+
+      // 1-buyruq: git status
+      drawCommandLine("mening-loyiham $ ", "git status", 1.0, 2.2, 2.5, tu, 130, 205);
+      drawOutputLine("On branch main", 2.7, tu, 150, 230, { color: C.yellow, weight: 600 });
+      drawOutputLine("No commits yet", 2.7, tu, 150, 250, { color: C.red, weight: 600 });
+
+      // 2-buyruq: fayl yaratish
+      drawCommandLine("mening-loyiham $ ", "echo '# Salom Git' > README.md", 3.6, 5.4, 5.7, tu, 130, 280);
+
+      // 3-buyruq: git add
+      drawCommandLine("mening-loyiham $ ", "git add README.md", 6.2, 7.4, 7.7, tu, 130, 310);
+
+      // 4-buyruq: git commit -m "Ilk commit"
+      drawCommandLine("mening-loyiham $ ", "git commit -m 'Ilk commit'", 8.2, 9.8, 10.1, tu, 130, 340);
+      drawOutputLine("[main (root-commit) 8d792ce] Ilk commit", 10.3, tu, 150, 366, { color: C.green, weight: 700 });
+      drawOutputLine(" 1 file changed, 1 insertion(+)", 10.3, tu, 150, 388, { color: '#94a3b8' });
+
+      // 5-buyruq: cat .git/refs/heads/main
+      drawCommandLine("mening-loyiham $ ", "cat .git/refs/heads/main", 11.2, 12.6, 12.9, tu, 130, 418, { promptCol: C.blue });
+      drawOutputLine("8d792cee11e02a695d37613916b4e0bd187e35c8", 13.1, tu, 150, 444, { color: '#38bdf8', weight: 600 });
+
+      // Faol prompt va miltillovchi kursor
+      if (tu >= 14.0) {
+        text("mening-loyiham $ ", 130, 480, { size: 15, fam: MONO, color: C.green, weight: 700, align: 'left' });
+        const pw = tw("mening-loyiham $ ", 15, 700, MONO);
+        if (Math.floor(tu * 2.5) % 2 === 0 || o.isPoster) {
+          text('█', 130 + pw + 2, 480, { size: 15, fam: MONO, color: '#38bdf8', align: 'left' });
+        }
+      }
+
+      // O'ng panel: Tug'ilmagan Brenchdan Ilk Kommitga
+      panel(980, 140, 840, 680, C.blue, "Tug‘ilmagan Brenchdan Ilk Kommitga", "anborn branch va root-commit mohiyati", kBox, kBox);
+
+      const kU1 = P(u, 1.8, 0.6);
       withA(kU1, () => {
         ctx.save(); ctx.translate(0, (1 - eo(kU1)) * 16);
-        card(125, 255, 790, 180, { fill: 'rgba(180,108,255,0.08)', col: C.purple });
-        pill("HEAD Noto'liq Ishora Qiladi", 250, 290, C.purple, { size: 16, mono: false });
-        text("$ cat .git/HEAD", 150, 340, { size: 18, fam: MONO, color: C.purple, align: 'left', weight: 600 });
-        text("ref: refs/heads/main", 150, 380, { size: 18, fam: MONO, color: C.yellow, align: 'left', weight: 600 });
-        text("Lekin '.git/refs/heads/' papkasi hozircha mutlaqo bo'sh!", 150, 415, { size: 16, color: C.mute, align: 'left' });
+        card(1005, 255, 790, 240, { fill: 'rgba(79,140,255,0.08)', col: C.blue });
+        pill("Tug'ilmagan Brench (Unborn Branch)", 1190, 290, C.blue, { size: 16, mono: false });
+        text("• Yangi repoda HEAD 'refs/heads/main'ga qaraydi, lekin fayl yo'q!", 1030, 335, { size: 17, color: C.text, align: 'left' });
+        text("• Brench — bu kommitga ko'rsatkich. Kommit bo'lmagani uchun brench hali yo'q.", 1030, 375, { size: 16, color: C.mute, align: 'left' });
+        text("• Bu holat rasmiy Git terminologiyasida 'unborn branch' deyiladi.", 1030, 415, { size: 16, color: C.yellow, align: 'left', weight: 600 });
+        text("• git log yoki rev-parse HEAD xato qaytaradi — bu mutlaqo tabiiy!", 1030, 455, { size: 16, color: C.text, align: 'left' });
         ctx.restore();
       });
 
-      const kU2 = P(u, 3.5, 0.6);
+      const kU2 = P(u, 6.5, 0.6);
       withA(kU2, () => {
         ctx.save(); ctx.translate(0, (1 - eo(kU2)) * 16);
-        card(125, 455, 790, 205, { fill: 'rgba(255,107,122,0.08)', col: C.red });
-        pill("Nega Brench Hali Yo'q?", 230, 490, C.red, { size: 16, mono: false });
-        text("$ git log", 150, 535, { size: 18, fam: MONO, color: C.red, align: 'left', weight: 600 });
-        text("fatal: your current branch 'main' does not have any commits yet", 150, 575, { size: 15, fam: MONO, color: C.red, align: 'left' });
-        text("Qoida: Branch — bu commitga ko'rsatkich. Commit bo'lmagani uchun", 150, 615, { size: 16, color: C.text, align: 'left' });
-        text("branch rasman hali 'tug'ilmagan' (unborn) hisoblanadi.", 150, 645, { size: 16, color: C.yellow, align: 'left', weight: 600 });
-        ctx.restore();
-      });
-
-      const kU3 = P(u, 5.8, 0.6);
-      withA(kU3, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kU3)) * 16);
-        card(125, 680, 790, 115, { fill: 'rgba(15,22,48,0.92)', col: C.mute });
-        text("Git bu holatda sizdan birinchi commitni amalga oshirishni kutadi.", 150, 740, { size: 17, color: C.text, align: 'left' });
-        ctx.restore();
-      });
-
-      // O'ng panel: Birinchi commit
-      panel(980, 140, 840, 680, C.green, "Birinchi Commit (Root Commit)", "tarix poydevorini qo'yish", kBox, kBox);
-
-      const kR1 = P(u, 7.5, 0.6);
-      withA(kR1, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kR1)) * 16);
-        card(1005, 255, 790, 200, { fill: 'rgba(52,211,153,0.08)', col: C.green });
-        pill("Ilk Fayllarni Qo'shish va Muhrlash", 1210, 290, C.green, { size: 16, mono: false });
-        text("$ git add .", 1030, 340, { size: 18, fam: MONO, color: C.green, align: 'left', weight: 600 });
-        text("$ git commit -m 'Loyihaning birinchi versiyasi'", 1030, 380, { size: 18, fam: MONO, color: C.green, align: 'left', weight: 600 });
-        text("[main (root-commit) 8d792ce] Loyihaning birinchi versiyasi", 1030, 425, { size: 16, fam: MONO, color: C.text, align: 'left' });
-        ctx.restore();
-      });
-
-      const kR2 = P(u, 9.8, 0.6);
-      withA(kR2, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kR2)) * 16);
-        card(1005, 475, 790, 200, { fill: 'rgba(79,140,255,0.08)', col: C.blue });
-        pill("Root-Commit Nima?", 1140, 510, C.blue, { size: 16, mono: false });
-        text("• root-commit — ota commitga ega bo'lmagan ilk boshlang'ich nuqta.", 1030, 555, { size: 16, color: C.text, align: 'left' });
-        text("• Shu lahzada 'refs/heads/main' fayli yaratiladi va hash yoziladi.", 1030, 595, { size: 16, color: C.blue, align: 'left', weight: 600 });
-        text("• Endi 'main' brenchi to'liq va rasman vujudga keldi!", 1030, 635, { size: 17, color: C.green, align: 'left', weight: 700 });
-        ctx.restore();
-      });
-
-      const kR3 = P(u, 11.8, 0.6);
-      withA(kR3, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kR3)) * 16);
-        card(1005, 695, 790, 105, { fill: 'rgba(15,22,48,0.92)', col: C.yellow });
-        text("Tarix boshlandi! Endi barcha keyingi buyruqlar odatiy ishlaydi.", 1030, 750, { size: 17, color: C.yellow, align: 'left', weight: 600 });
+        card(1005, 515, 790, 270, { fill: 'rgba(52,211,153,0.08)', col: C.green });
+        pill("Ilk Rut Kommit (root-commit)", 1170, 550, C.green, { size: 16, mono: false });
+        text("• Tarixdagi birinchi kommit otasiz (parent'siz) yaratiladi: 'root-commit'.", 1030, 595, { size: 17, color: C.text, align: 'left' });
+        text("• Shu lahzada .git/refs/heads/main fayli yaratiladi va brench tug'iladi!", 1030, 635, { size: 17, color: C.green, align: 'left', weight: 600 });
+        text("• .git/objects ichida birinchi blob, tree va commit obyektlari paydo bo'ladi.", 1030, 675, { size: 16, color: C.text, align: 'left' });
+        text("• Endi loyihaning haqiqiy tarixi boshlandi!", 1030, 715, { size: 16, color: '#38bdf8', align: 'left', weight: 600 });
         ctx.restore();
       });
     });
 
     // Pastki xulosa
-    const kFoot = P(u, 13.0, 0.7);
+    const kFoot = P(u, 14.5, 0.7);
     withA(kFoot, () => {
       ctx.save(); ctx.translate(0, (1 - eo(kFoot)) * 16);
-      card(100, 845, 1720, 165, { fill: 'rgba(17,24,52,0.92)', col: C.green });
-      text("Birinchi commit yaratilishi bilan loyihaning boshlang'ich tarixi va asosiy brenchi vujudga keladi.", 960, 895, { size: 24, weight: 700, color: C.green, align: 'center' });
-      text("Endi masofadagi mavjud repozitoriylarni git clone orqali yuklashni o'rganamiz.", 960, 950, { size: 20, color: C.mute, align: 'center' });
+      card(100, 845, 1720, 165, { fill: 'rgba(17,24,52,0.92)', col: C.blue });
+      text("Rut kommit amalga oshirilgach, bosh brench rasman vujudga keladi va tarix boshlanadi.", 960, 895, { size: 24, weight: 700, color: C.blue, align: 'center' });
+      text("Endi serverdagi mavjud loyihani 'git clone' orqali to'liq nusxalab olishni ko'ramiz.", 960, 950, { size: 20, color: C.mute, align: 'center' });
       ctx.restore();
     });
   }
 
   // ==========================================
-  // 4-SAHNA: git clone Mexanizmi
+  // 4-SAHNA: git clone Mexanizmi (SPLIT SCREEN)
   // ==========================================
-  function sceneGitClone(u, bounds) {
+  function sceneGitClone(u, bounds, o = {}) {
     chip(4, "git clone Mexanizmi", u);
 
     const kBox = eo(P(u, 0.4, 0.6));
     withA(kBox, () => {
-      // Chap panel: git clone buyrug'i
-      panel(100, 140, 840, 680, C.blue, "git clone Buyrug'i", "masofaviy loyihani to'liq yuklash", kBox, kBox);
+      // Chap tomonda: Real Jonli Terminal!
+      terminal(100, 140, 840, 680, {
+        title: 'bash — ~/klonlash (80x24)',
+        p: kBox
+      });
 
-      const kC1 = P(u, 1.2, 0.6);
+      const tu = o.isPoster ? 20.0 : u;
+
+      // 1-buyruq: git clone
+      drawCommandLine("~ $ ", "git clone https://github.com/loyiha/sayt.git", 1.0, 3.4, 3.7, tu, 130, 205);
+      drawOutputLine("Cloning into 'sayt'...", 3.9, tu, 150, 230, { color: C.yellow, weight: 600 });
+      drawOutputLine("remote: Enumerating objects: 45, done.", 4.5, tu, 150, 250, { color: '#cbd5e1' });
+      drawOutputLine("remote: Compressing objects: 100% (32/32), done.", 4.5, tu, 150, 270, { color: '#cbd5e1' });
+      drawOutputLine("Receiving objects: 100% (45/45), 18.50 KiB, done.", 4.5, tu, 150, 290, { color: C.green, weight: 600 });
+
+      // 2-buyruq: cd sayt
+      drawCommandLine("~ $ ", "cd sayt", 5.5, 6.4, 6.7, tu, 130, 320);
+
+      // 3-buyruq: git remote -v
+      drawCommandLine("sayt $ ", "git remote -v", 7.2, 8.4, 8.7, tu, 130, 350, { promptCol: C.blue });
+      drawOutputLine("origin  https://github.com/loyiha/sayt.git (fetch)", 8.9, tu, 150, 374, { color: '#38bdf8' });
+      drawOutputLine("origin  https://github.com/loyiha/sayt.git (push)", 8.9, tu, 150, 394, { color: '#38bdf8' });
+
+      // 4-buyruq: git log --oneline -2
+      drawCommandLine("sayt $ ", "git log --oneline -2", 9.8, 11.2, 11.5, tu, 130, 424, { promptCol: C.green });
+      drawOutputLine("* 9b4d1a2 (HEAD -> main, origin/main) Yangi funksiya", 11.7, tu, 150, 450, { color: C.green, weight: 600 });
+      drawOutputLine("* 8d792ce Ilk commit", 11.7, tu, 150, 470, { color: '#94a3b8' });
+
+      // Faol prompt va miltillovchi kursor
+      if (tu >= 13.0) {
+        text("sayt $ ", 130, 506, { size: 15, fam: MONO, color: C.green, weight: 700, align: 'left' });
+        const pw = tw("sayt $ ", 15, 700, MONO);
+        if (Math.floor(tu * 2.5) % 2 === 0 || o.isPoster) {
+          text('█', 130 + pw + 2, 506, { size: 15, fam: MONO, color: '#38bdf8', align: 'left' });
+        }
+      }
+
+      // O'ng panel: Nega clone, checkout emas?
+      panel(980, 140, 840, 680, C.green, "git clone Mexanizmi", "to'liq tarix va avtomatik remote", kBox, kBox);
+
+      const kC1 = P(u, 1.8, 0.6);
       withA(kC1, () => {
         ctx.save(); ctx.translate(0, (1 - eo(kC1)) * 16);
-        card(125, 255, 790, 190, { fill: 'rgba(11,16,32,0.92)', col: C.blue, lw: 2 });
-        pill("Asosiy Buyruq", 200, 290, C.blue, { size: 16, mono: false });
-        text("$ git clone https://github.com/libgit2/libgit2", 150, 345, { size: 18, fam: MONO, color: C.blue, align: 'left', weight: 600 });
-        text("Cloning into 'libgit2'...", 150, 385, { size: 16, fam: MONO, color: C.mute, align: 'left' });
-        text("Boshqa nom bilan yuklash: git clone <url> mening-papkam", 150, 420, { size: 16, color: C.yellow, align: 'left', weight: 600 });
+        card(1005, 255, 790, 240, { fill: 'rgba(52,211,153,0.08)', col: C.green });
+        pill("Nega 'clone', 'checkout' emas?", 1160, 290, C.green, { size: 16, mono: false });
+        text("• Eski markazlashgan tizimlar (SVN) faqat bitta versiyani olardi.", 1030, 335, { size: 17, color: C.text, align: 'left' });
+        text("• Git esa serverdagi DEYARLI BARCHA ma'lumotni to'liq ko'chiradi.", 1030, 375, { size: 17, color: C.green, align: 'left', weight: 600 });
+        text("• Har bir klon — mustaqil va to'liq zaxira nusxa hisoblanadi.", 1030, 415, { size: 16, color: C.text, align: 'left' });
+        text("• Server buzilsa ham, ixtiyoriy klondan serverni qayta tiklash mumkin!", 1030, 455, { size: 16, color: C.yellow, align: 'left', weight: 600 });
         ctx.restore();
       });
 
-      const kC2 = P(u, 3.8, 0.6);
+      const kC2 = P(u, 6.5, 0.6);
       withA(kC2, () => {
         ctx.save(); ctx.translate(0, (1 - eo(kC2)) * 16);
-        card(125, 465, 790, 210, { fill: 'rgba(52,211,153,0.08)', col: C.green });
-        pill("Nega Checkout Emas, Aynan Clone?", 280, 500, C.green, { size: 16, mono: false });
-        text("• SVN kabi tizimlarda serverdan faqat oxirgi versiya olinadi.", 150, 545, { size: 16, color: C.text, align: 'left' });
-        text("• Git'da esa buyruq 'clone' deb ataladi, chunki u serverdagi", 150, 580, { size: 16, color: C.text, align: 'left' });
-        text("  barcha commitlar va barcha fayllar tarixini to'liq ko'chiradi!", 150, 615, { size: 16, color: C.green, align: 'left', weight: 700 });
-        text("• Klonlash tugashi bilan loyihani oflayn boshqara olasiz.", 150, 645, { size: 15, color: C.mute, align: 'left' });
-        ctx.restore();
-      });
-
-      const kC3 = P(u, 6.0, 0.6);
-      withA(kC3, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kC3)) * 16);
-        card(125, 695, 790, 105, { fill: 'rgba(15,22,48,0.92)', col: C.mute });
-        text("Mavjud papkaga klonlash faqat papka BO'SH bo'lgandagina mumkin.", 150, 750, { size: 16, color: C.mute, align: 'left' });
-        ctx.restore();
-      });
-
-      // O'ng panel: 5 ta ichki qadam
-      panel(980, 140, 840, 680, C.green, "Git Clone Ichki 5 Qadami", "avtomatik bajariladigan amallar", kBox, kBox);
-
-      const kS1 = P(u, 7.5, 0.6);
-      withA(kS1, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kS1)) * 16);
-        card(1005, 255, 790, 280, { fill: 'rgba(52,211,153,0.08)', col: C.green });
-        pill("5 Ta Bosqich Ketma-Ketligi", 1160, 290, C.green, { size: 16, mono: false });
-        text("1. Papkani yaratadi va ichida 'git init' qiladi", 1030, 340, { size: 17, color: C.text, align: 'left' });
-        text("2. Manbani 'origin' nomli masofaviy remote qilib ulaydi", 1030, 380, { size: 17, color: C.blue, align: 'left', weight: 600 });
-        text("3. Hamma commitlar va obyektlar arxivini (packfile) tortib oladi", 1030, 420, { size: 17, color: C.text, align: 'left' });
-        text("4. Remote-tracking brenchlarni yaratadi (origin/main, origin/dev)", 1030, 460, { size: 17, color: C.purple, align: 'left' });
-        text("5. Asosiy brenchni ishchi papkaga chiqaradi (checkout)", 1030, 500, { size: 17, color: C.green, align: 'left', weight: 600 });
-        ctx.restore();
-      });
-
-      const kS2 = P(u, 10.0, 0.6);
-      withA(kS2, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kS2)) * 16);
-        card(1005, 555, 790, 230, { fill: 'rgba(15,22,48,0.92)', col: C.git });
-        pill("Natijaviy Holat", 1100, 590, C.git, { size: 16, mono: false });
-        text("$ git status", 1030, 635, { size: 18, fam: MONO, color: C.git, align: 'left', weight: 600 });
-        text("On branch main", 1030, 675, { size: 17, fam: MONO, color: C.text, align: 'left' });
-        text("Your branch is up to date with 'origin/main'.", 1030, 715, { size: 17, fam: MONO, color: C.green, align: 'left', weight: 700 });
-        text("nothing to commit, working tree clean", 1030, 750, { size: 16, fam: MONO, color: C.mute, align: 'left' });
+        card(1005, 515, 790, 270, { fill: 'rgba(79,140,255,0.08)', col: C.blue });
+        pill("Avtomatik 'origin' Masofaviy Ombori", 1200, 550, C.blue, { size: 16, mono: false });
+        text("• Klonlangan manzil avtomatik ravishda 'origin' nomi bilan saqlanadi.", 1030, 595, { size: 17, color: C.text, align: 'left' });
+        text("• Kelgusida 'git fetch', 'git pull' va 'git push' shu nom orqali ishlaydi.", 1030, 635, { size: 17, color: '#38bdf8', align: 'left', weight: 600 });
+        text("• Boshqa papka nomiga klonlash: '$ git clone <url> boshqa-nom'.", 1030, 675, { size: 16, fam: MONO, color: C.text, align: 'left' });
+        text("• Papka nomi o'zgarsa ham, ichidagi tarix va remote bir xil qoladi.", 1030, 715, { size: 16, color: C.mute, align: 'left' });
         ctx.restore();
       });
     });
 
     // Pastki xulosa
-    const kFoot = P(u, 12.8, 0.7);
+    const kFoot = P(u, 14.5, 0.7);
     withA(kFoot, () => {
       ctx.save(); ctx.translate(0, (1 - eo(kFoot)) * 16);
-      card(100, 845, 1720, 165, { fill: 'rgba(17,24,52,0.92)', col: C.blue });
-      text("Git clone masofaviy repozitoriyni to'liq nusxalab, mahalliy kompyuterni bir zumda ishga tayyorlaydi.", 960, 895, { size: 24, weight: 700, color: C.text, align: 'center' });
-      text("Endi uzatish protokollari va sayoz (shallow) klon olishni ko'rib chiqamiz.", 960, 950, { size: 20, color: C.mute, align: 'center' });
+      card(100, 845, 1720, 165, { fill: 'rgba(17,24,52,0.92)', col: C.green });
+      text("Klonlash orqali butun o'tmish ko'chiriladi va server bilan bog'langan to'liq repo paydo bo'ladi.", 960, 895, { size: 24, weight: 700, color: C.green, align: 'center' });
+      text("Endi tarmoq protokollari va katta repolar uchun sayoz klonlash (shallow clone) ni ko'ramiz.", 960, 950, { size: 20, color: C.mute, align: 'center' });
       ctx.restore();
     });
   }
 
   // ==========================================
-  // 5-SAHNA: Protokollar va Sayoz Klon
+  // 5-SAHNA: Protokollar va Sayoz Klon (SPLIT SCREEN)
   // ==========================================
-  function sceneProtokollarOpsiyalar(u, bounds) {
+  function sceneProtokollarOpsiyalar(u, bounds, o = {}) {
     chip(5, "Protokollar va Sayoz Klon", u);
 
     const kBox = eo(P(u, 0.4, 0.6));
     withA(kBox, () => {
-      // Chap panel: Protokollar
-      panel(100, 140, 840, 680, C.purple, "Uzatish Protokollari", "HTTPS, SSH va lokal yo'llar", kBox, kBox);
+      // Chap tomonda: Real Jonli Terminal!
+      terminal(100, 140, 840, 680, {
+        title: 'bash — ~/sayoz-klon (80x24)',
+        p: kBox
+      });
 
-      const kP1 = P(u, 1.2, 0.6);
+      const tu = o.isPoster ? 20.0 : u;
+
+      // 1-buyruq: git clone --depth 1
+      drawCommandLine("~ $ ", "git clone --depth 1 https://github.com/katta/loyiha.git", 1.0, 3.4, 3.7, tu, 130, 205, { promptCol: C.purple });
+      drawOutputLine("Cloning into 'loyiha'...", 3.9, tu, 150, 230, { color: C.yellow, weight: 600 });
+      drawOutputLine("remote: Total 1 (delta 0), reused 0", 4.3, tu, 150, 250, { color: '#cbd5e1' });
+      drawOutputLine("Receiving objects: 100% (12/12), 4.20 KiB, done.", 4.3, tu, 150, 270, { color: C.green, weight: 600 });
+
+      // 2-buyruq: cd & git log
+      drawCommandLine("~ $ ", "cd loyiha && git log --oneline", 5.5, 7.2, 7.5, tu, 130, 300);
+      drawOutputLine("* 7c3e10f (grafted, HEAD -> main) Eng so'nggi reliz", 7.7, tu, 150, 326, { color: C.green, weight: 600 });
+      drawOutputLine("(Eski tarix yuklanmadi — faqat 1 ta kommit!)", 7.7, tu, 150, 348, { color: C.yellow, weight: 600 });
+
+      // 3-buyruq: du -sh .git
+      drawCommandLine("loyiha $ ", "du -sh .git", 8.8, 10.0, 10.3, tu, 130, 378, { promptCol: C.blue });
+      drawOutputLine("450K    .git  (2GB o'rniga soniyalarda yuklandi!)", 10.5, tu, 150, 404, { color: '#38bdf8', weight: 700 });
+
+      // Faol prompt va miltillovchi kursor
+      if (tu >= 12.0) {
+        text("loyiha $ ", 130, 440, { size: 15, fam: MONO, color: C.green, weight: 700, align: 'left' });
+        const pw = tw("loyiha $ ", 15, 700, MONO);
+        if (Math.floor(tu * 2.5) % 2 === 0 || o.isPoster) {
+          text('█', 130 + pw + 2, 440, { size: 15, fam: MONO, color: '#38bdf8', align: 'left' });
+        }
+      }
+
+      // O'ng panel: Protokollar va Tezkor Yuklash
+      panel(980, 140, 840, 680, C.purple, "Protokollar va Sayoz Klon", "tarmoq turlari va optimallashtirish", kBox, kBox);
+
+      const kP1 = P(u, 1.8, 0.6);
       withA(kP1, () => {
         ctx.save(); ctx.translate(0, (1 - eo(kP1)) * 16);
-        card(125, 255, 790, 160, { fill: 'rgba(79,140,255,0.08)', col: C.blue });
-        pill("HTTPS Protokoli", 215, 290, C.blue, { size: 16, mono: false });
-        text("https://github.com/libgit2/libgit2.git", 150, 335, { size: 18, fam: MONO, color: C.blue, align: 'left', weight: 600 });
-        text("Eng keng tarqalgan; shaxsiy token (PAT) orqali avtorizatsiya.", 150, 375, { size: 16, color: C.text, align: 'left' });
+        card(1005, 255, 790, 240, { fill: 'rgba(180,108,255,0.08)', col: C.purple });
+        pill("3 Asosiy Tarmoq Protokoli", 1150, 290, C.purple, { size: 16, mono: false });
+        text("• HTTPS: https://github.com/loyiha/sayt.git", 1030, 335, { size: 17, fam: MONO, color: C.text, align: 'left' });
+        text("  Eng keng tarqalgan, standart veb-portlar orqali ishlaydi.", 1030, 365, { size: 15, color: C.mute, align: 'left' });
+        text("• SSH:   git@github.com:loyiha/sayt.git", 1030, 400, { size: 17, fam: MONO, color: '#38bdf8', align: 'left', weight: 600 });
+        text("  Xavfsiz kalitlar bilan parolsiz avtomatik ishlash imkoni.", 1030, 430, { size: 15, color: C.mute, align: 'left' });
+        text("• Fayl:  /yo'l/loyiha  yoki  file:///...", 1030, 465, { size: 16, fam: MONO, color: C.yellow, align: 'left' });
         ctx.restore();
       });
 
-      const kP2 = P(u, 3.5, 0.6);
+      const kP2 = P(u, 6.5, 0.6);
       withA(kP2, () => {
         ctx.save(); ctx.translate(0, (1 - eo(kP2)) * 16);
-        card(125, 435, 790, 160, { fill: 'rgba(180,108,255,0.08)', col: C.purple });
-        pill("SSH Protokoli (Tavsiya Etiladi)", 270, 470, C.purple, { size: 16, mono: false });
-        text("git@github.com:libgit2/libgit2.git", 150, 515, { size: 18, fam: MONO, color: C.purple, align: 'left', weight: 600 });
-        text("SSH kalitlar orqali parolsiz va yuqori xavfsizlikda ishlash.", 150, 555, { size: 16, color: C.text, align: 'left' });
-        ctx.restore();
-      });
-
-      const kP3 = P(u, 5.8, 0.6);
-      withA(kP3, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kP3)) * 16);
-        card(125, 615, 790, 170, { fill: 'rgba(15,22,48,0.92)', col: C.mute });
-        pill("Lokal Papkalar (/path yoki file://)", 275, 650, C.mute, { size: 16, mono: false });
-        text("git clone /var/repos/loyiha", 150, 695, { size: 18, fam: MONO, color: C.mute, align: 'left' });
-        text("Disk ichida hardlink yordamida joy tejab tez nusxalaydi.", 150, 735, { size: 16, color: C.text, align: 'left' });
-        ctx.restore();
-      });
-
-      // O'ng panel: Sayoz klon va bare
-      panel(980, 140, 840, 680, C.git, "Klon Opsiyalari: Depth va Bare", "tezlik va server uchun maxsus rejimlar", kBox, kBox);
-
-      const kO1 = P(u, 7.5, 0.6);
-      withA(kO1, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kO1)) * 16);
-        card(1005, 255, 790, 240, { fill: 'rgba(52,211,153,0.08)', col: C.green });
-        pill("Sayoz Klon (--depth 1) · CI/CD Uchun Ideal", 1240, 290, C.green, { size: 16, mono: false });
-        text("$ git clone --depth 1 https://...", 1030, 340, { size: 18, fam: MONO, color: C.green, align: 'left', weight: 700 });
-        text("• Faqat eng oxirgi bitta commit tarixini tortib oladi.", 1030, 385, { size: 16, color: C.text, align: 'left' });
-        text("• Katta repolarda yuklash hajmini gigabaytlardan megabaytlarga tushiradi!", 1030, 420, { size: 16, color: C.green, align: 'left', weight: 600 });
-        text("• CI/CD serverlarda build va testlarni 10 barobar tezlashtiradi.", 1030, 455, { size: 16, color: C.yellow, align: 'left', weight: 600 });
-        ctx.restore();
-      });
-
-      const kO2 = P(u, 9.8, 0.6);
-      withA(kO2, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kO2)) * 16);
-        card(1005, 515, 790, 270, { fill: 'rgba(240,81,51,0.08)', col: C.git });
-        pill("Bare Repozitoriy (--bare)", 1160, 550, C.git, { size: 16, mono: false });
-        text("$ git init --bare server.git", 1030, 600, { size: 18, fam: MONO, color: C.git, align: 'left', weight: 600 });
-        text("• Working tree'siz, faqat tarixni saqlovchi server repo turi.", 1030, 645, { size: 16, color: C.text, align: 'left' });
-        text("• Nega serverda bare? Oddiy repo checked-out branchga push qabul qilmaydi!", 1030, 680, { size: 16, color: C.red, align: 'left', weight: 600 });
-        text("• GitHub, GitLab va barcha git serverlar aynan bare formatida ishlaydi.", 1030, 715, { size: 16, color: C.yellow, align: 'left', weight: 600 });
+        card(1005, 515, 790, 270, { fill: 'rgba(255,181,71,0.08)', col: C.orange });
+        pill("Sayoz Klon (--depth 1) va Filtrlar", 1180, 550, C.orange, { size: 16, mono: false });
+        text("• --depth 1 faqat eng oxirgi kommitni yuklaydi (shallow clone).", 1030, 595, { size: 17, color: C.text, align: 'left' });
+        text("• CI/CD quvurlarida va katta repolarni tezkor ko'rishda muhim.", 1030, 635, { size: 16, color: C.orange, align: 'left', weight: 600 });
+        text("• --filter=blob:none katta fayllarni faqat kerak paytda yuklaydi.", 1030, 675, { size: 16, color: C.green, align: 'left' });
+        text("• Vaqtni ham, internet trafigini ham bir necha barobar tejaydi!", 1030, 715, { size: 16, color: '#38bdf8', align: 'left', weight: 600 });
         ctx.restore();
       });
     });
 
     // Pastki xulosa
-    const kFoot = P(u, 12.5, 0.7);
+    const kFoot = P(u, 14.5, 0.7);
     withA(kFoot, () => {
       ctx.save(); ctx.translate(0, (1 - eo(kFoot)) * 16);
-      card(100, 845, 1720, 165, { fill: 'rgba(17,24,52,0.92)', col: C.git });
-      text("Protokol va opsiyalarni to'g'ri tanlash tarmoq tezligi va loyihaning xavfsizligini ta'minlaydi.", 960, 895, { size: 24, weight: 700, color: C.git, align: 'center' });
-      text("Endi 04-bobning barcha asosiy xulosalarini umumlashtiramiz.", 960, 950, { size: 20, color: C.mute, align: 'center' });
+      card(100, 845, 1720, 165, { fill: 'rgba(17,24,52,0.92)', col: C.purple });
+      text("To'g'ri protokol va sayoz klon katta loyihalarni soniyalarda ko'chirib olishga imkon beradi.", 960, 895, { size: 24, weight: 700, color: C.purple, align: 'center' });
+      text("Endi to'rtinchi bob bo'yicha asosiy xulosalar va tavsiyalarni jamlaymiz.", 960, 950, { size: 20, color: C.mute, align: 'center' });
       ctx.restore();
     });
   }
@@ -457,116 +510,129 @@
   // 6-SAHNA: Xulosa
   // ==========================================
   function sceneXulosa(u, bounds) {
-    chip(6, "04-Bob Xulosasi", u);
+    chip(6, "Xulosa va Tavsiyalar", u);
 
     const kBox = eo(P(u, 0.4, 0.6));
     withA(kBox, () => {
-      const cards = [
-        {
-          num: "1",
-          title: "git init",
-          col: C.yellow,
-          items: [
-            "Yangi .git xotira papkasi",
-            "Mavjud papkani repoga aylantirish",
-            "Qayta init qilish xavfsiz",
-            "Root-commit bilan main tug'iladi"
-          ]
-        },
-        {
-          num: "2",
-          title: "git clone",
-          col: C.green,
-          items: [
-            "Serverdagi butun tarix nusxasi",
-            "origin masofaviy remote ulanishi",
-            "Remote-tracking brenchlar",
-            "Teng huquqli to'liq zaxira"
-          ]
-        },
-        {
-          num: "3",
-          title: "Maxsus Rejimlar",
-          col: C.git,
-          items: [
-            "--depth 1: CI/CD uchun sayoz klon",
-            "-b <nom>: muayyan brenchni olish",
-            "--bare: serverlar uchun worktree'siz",
-            "HTTPS va SSH protokollari"
-          ]
-        }
-      ];
+      // Chap: 4 Ta Asosiy Qoida
+      panel(100, 140, 840, 680, C.blue, "Repo Boshqaruvi Poydevori", "amaliy eslatmalar va qoidalar", kBox, kBox);
 
-      const cW = 540, cH = 480;
-      cards.forEach((c, i) => {
-        const cx = 100 + i * 590;
-        const cy = 160;
-        const kc = P(u, 0.6 + i * 0.4, 0.6);
-        withA(kc, () => {
-          ctx.save(); ctx.translate(0, (1 - eo(kc)) * 16);
-          card(cx, cy, cW, cH, { fill: 'rgba(15,22,48,0.92)', col: c.col });
-          pill(c.num + " · " + c.title, cx + cW / 2, cy + 45, c.col, { size: 20, mono: false });
-
-          c.items.forEach((item, j) => {
-            const iy = cy + 120 + j * 80;
-            ctx.fillStyle = 'rgba(255,255,255,0.04)'; rr(cx + 35, iy, cW - 70, 60, 10); ctx.fill();
-            ctx.fillStyle = c.col; ctx.beginPath(); ctx.arc(cx + 55, iy + 30, 6, 0, 7); ctx.fill();
-            text(item, cx + 78, iy + 31, { size: 17, weight: 600, align: 'left', color: C.text });
-          });
-          ctx.restore();
-        });
+      const kX1 = P(u, 1.2, 0.5);
+      withA(kX1, () => {
+        ctx.save(); ctx.translate(0, (1 - eo(kX1)) * 16);
+        card(125, 255, 790, 120, { fill: 'rgba(79,140,255,0.08)', col: C.blue });
+        pill("1 · git init Faqat .git Yaratadi", 260, 285, C.blue, { size: 16, mono: false });
+        text("Mavjud fayllaringizga tegilmaydi; ularni kuzatish uchun git add kerak.", 150, 335, { size: 16, color: C.text, align: 'left' });
+        ctx.restore();
       });
 
-      // Pastki xulosa
-      const kFoot = P(u, 2.5, 0.8);
-      withA(kFoot, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kFoot)) * 16);
-        card(100, 680, 1720, 320, { fill: 'rgba(18,26,58,0.95)', col: C.git });
-        text("Keyingi bob: 05 — Uchta Holat va Uchta Hudud", 960, 745, { size: 34, weight: 800, color: C.git, align: 'center' });
-        text("Modified, Staged, Committed holatlari va Git fayllar bilan qanday ishlashini o'rganamiz.", 960, 810, { size: 22, color: C.text, align: 'center' });
-        text("E'tiboringiz uchun rahmat! · dev-docs.uz", 960, 875, { size: 20, weight: 600, color: C.mute, align: 'center' });
+      const kX2 = P(u, 3.2, 0.5);
+      withA(kX2, () => {
+        ctx.save(); ctx.translate(0, (1 - eo(kX2)) * 16);
+        card(125, 395, 790, 120, { fill: 'rgba(52,211,153,0.08)', col: C.green });
+        pill("2 · Ilk Kommit Brench Tug'diradi", 270, 425, C.green, { size: 16, mono: false });
+        text("Rut kommitgacha brench unborn holatida bo'ladi; commit bilan tarix boshlanadi.", 150, 475, { size: 16, color: C.text, align: 'left' });
+        ctx.restore();
+      });
+
+      const kX3 = P(u, 5.2, 0.5);
+      withA(kX3, () => {
+        ctx.save(); ctx.translate(0, (1 - eo(kX3)) * 16);
+        card(125, 535, 790, 120, { fill: 'rgba(255,181,71,0.08)', col: C.orange });
+        pill("3 · git clone Butun Tarixni Ko'chiradi", 290, 565, C.orange, { size: 16, mono: false });
+        text("Har bir klon mustaqil zaxira nusxa; server bilan origin bog'lanishi ochiladi.", 150, 615, { size: 16, color: C.text, align: 'left' });
+        ctx.restore();
+      });
+
+      const kX4 = P(u, 7.2, 0.5);
+      withA(kX4, () => {
+        ctx.save(); ctx.translate(0, (1 - eo(kX4)) * 16);
+        card(125, 675, 790, 120, { fill: 'rgba(255,209,102,0.08)', col: C.yellow });
+        pill("4 · Sayoz Klon: --depth 1", 240, 705, C.yellow, { size: 16, mono: false });
+        text("Katta loyihalarda faqat oxirgi versiyani tez yuklash uchun ajoyib qulaylik.", 150, 755, { size: 16, color: C.text, align: 'left' });
+        ctx.restore();
+      });
+
+      // O'ng: Keyingi Bobga Yo'llanma
+      panel(980, 140, 840, 680, C.git, "Keyingi Bosqich", "05-bob: uch holat va uch hudud", kBox, kBox);
+
+      const kN1 = P(u, 9.2, 0.6);
+      withA(kN1, () => {
+        ctx.save(); ctx.translate(0, (1 - eo(kN1)) * 16);
+        card(1005, 255, 790, 250, { fill: 'rgba(240,81,51,0.08)', col: C.git });
+        pill("Keyingi Bobda Ko'riladigan Amallar", 1170, 290, C.git, { size: 16, mono: false });
+        text("• Git'ning 3 asosiy holati: Modified, Staged va Committed", 1030, 340, { size: 17, color: C.text, align: 'left' });
+        text("• Git'ning 3 hududi: Working Tree, Staging Area (Index) va .git", 1030, 385, { size: 17, color: C.text, align: 'left' });
+        text("• Fayllarning hayot sikli qanday kechadi?", 1030, 430, { size: 17, color: C.text, align: 'left' });
+        text("• Git arxitekturasining eng markaziy konsepsiyasi!", 1030, 475, { size: 17, color: '#38bdf8', align: 'left', weight: 600 });
+        ctx.restore();
+      });
+
+      const kN2 = P(u, 11.5, 0.6);
+      withA(kN2, () => {
+        ctx.save(); ctx.translate(0, (1 - eo(kN2)) * 16);
+        card(1005, 525, 790, 255, { fill: 'rgba(15,22,48,0.92)', col: C.green });
+        pill("Mustaqil Amaliyot Uchun Topshiriq", 1170, 560, C.green, { size: 16, mono: false });
+        text("1. Yangi papka ochib, 'git init' bilan repozitoriy qiling.", 1030, 605, { size: 16, fam: MONO, color: C.green, align: 'left', weight: 600 });
+        text("2. 'ls -1 .git' qilib, ichki fayllarni ko'zdan kechiring.", 1030, 645, { size: 16, fam: MONO, color: '#38bdf8', align: 'left' });
+        text("3. Birinchi faylni yaratib, ilk kommitni amalga oshiring.", 1030, 685, { size: 16, fam: MONO, color: C.yellow, align: 'left' });
+        text("Repozitoriyingiz tayyor bo'lsa, keyingi darsga o'tamiz!", 1030, 735, { size: 16, color: C.text, align: 'left', weight: 600 });
         ctx.restore();
       });
     });
+
+    // Pastki xulosa
+    const kFoot = P(u, 14.5, 0.7);
+    withA(kFoot, () => {
+      ctx.save(); ctx.translate(0, (1 - eo(kFoot)) * 16);
+      card(100, 845, 1720, 165, { fill: 'rgba(17,24,52,0.92)', col: C.blue });
+      text("Init va klon amallari har qanday dasturlash loyihasining eng muhim boshlang'ich poydevoridir!", 960, 895, { size: 24, weight: 700, color: C.text, align: 'center' });
+      text("Keyingi bobda Gitdagi uch holat va uch hududni o'rganamiz. E'tiboringiz uchun rahmat!", 960, 950, { size: 20, color: C.mute, align: 'center' });
+      ctx.restore();
+    });
   }
 
-  // Asosiy kadr chizuvchi
-  window.renderFrame = function (t) {
-    bg(t);
-    const sc = TM.scenes;
-    if (t < sc.git_init.s) {
-      sceneIntro(t - sc.intro.s, { s: sc.intro.s, e: sc.intro.e });
-    } else if (t < sc.unborn_va_birinchi_commit.s) {
-      sceneGitInit(t - sc.git_init.s, { s: sc.git_init.s, e: sc.git_init.e });
-    } else if (t < sc.git_clone.s) {
-      sceneUnbornCommit(t - sc.unborn_va_birinchi_commit.s, { s: sc.unborn_va_birinchi_commit.s, e: sc.unborn_va_birinchi_commit.e });
-    } else if (t < sc.protokollar_va_opsiyalar.s) {
-      sceneGitClone(t - sc.git_clone.s, { s: sc.git_clone.s, e: sc.git_clone.e });
-    } else if (t < sc.xulosa.s) {
-      sceneProtokollarOpsiyalar(t - sc.protokollar_va_opsiyalar.s, { s: sc.protokollar_va_opsiyalar.s, e: sc.protokollar_va_opsiyalar.e });
-    } else {
-      sceneXulosa(t - sc.xulosa.s, { s: sc.xulosa.s, e: sc.xulosa.e });
-    }
-  };
+  // ==========================================
+  // ASOSIY FRAME CHIZISH
+  // ==========================================
+  function frame(t, o = {}) {
+    bg();
+    const sc = o.scene || (TM ? Object.keys(TM.scenes).find((k) => t >= TM.scenes[k].s && t < TM.scenes[k].e) : 'intro') || 'intro';
+    const bounds = TM ? TM.scenes[sc] : { s: 0, e: 111.3 };
+    const u = t - bounds.s;
 
-  window.drawFrame = window.renderFrame;
-  window.render = window.renderFrame;
+    switch (sc) {
+      case 'intro': sceneIntro(u, bounds, o); break;
+      case 'git_init': sceneGitInit(u, bounds, o); break;
+      case 'unborn_va_birinchi_commit': sceneUnbornCommit(u, bounds, o); break;
+      case 'git_clone': sceneGitClone(u, bounds, o); break;
+      case 'protokollar_va_opsiyalar': sceneProtokollarOpsiyalar(u, bounds, o); break;
+      case 'xulosa': sceneXulosa(u, bounds); break;
+      default: sceneIntro(u, bounds, o);
+    }
+  }
+
+  window.renderFrame = frame;
+  window.drawFrame = frame;
+  window.render = frame;
+
   window.renderPoster = function () {
     bg(0);
     // 04-bob muqovasi (Markaz pleyer tugmasi uchun qulay)
     pill("04-BOB · REPOZITORIY OLISH", 960, 160, C.git, { size: 26, mono: false });
     text("Repo Olish: init va clone", 960, 230, { size: 64, weight: 800, color: C.text, fam: UI });
-    text("git init xotirasi, .git tuzilishi va git clone mexanizmi", 960, 290, { size: 28, color: C.mute, fam: UI });
+    text("Yangi loyiha boshlash yoki masofaviy repozitoriyni to'liq nusxalash", 960, 290, { size: 28, color: C.mute, fam: UI });
 
     // Markaziy taqqoslash kartasi
-    card(480, 410, 960, 280, { fill: 'rgba(11,16,32,0.94)', col: C.blue, lw: 2.5 });
-    pill("$ git init  va  $ git clone", 960, 480, C.blue, { size: 24 });
-    text("git init   ->  mening-loyiham/.git  (yangi tarix)", 960, 550, { size: 24, fam: MONO, color: C.yellow, weight: 700 });
-    text("git clone  ->  server:loyiha.git   (to'liq nusxa)", 960, 615, { size: 24, fam: MONO, color: C.green, weight: 700 });
+    card(440, 410, 1040, 280, { fill: 'rgba(11,16,32,0.94)', col: C.blue, lw: 2.5 });
+    pill("$ git init  vs  $ git clone <url>", 960, 475, C.blue, { size: 24 });
+    text("git init   ->  lokal papkada yangi .git xotirasini boshlash", 960, 540, { size: 26, fam: MONO, color: C.yellow, weight: 700 });
+    text("git clone  ->  serverdagi butun tarixni to'liq nusxalab olish", 960, 595, { size: 26, fam: MONO, color: C.green, weight: 700 });
+    text("origin masofaviy ombori bilan bog'langan mustaqil to'liq repo", 960, 645, { size: 20, fam: MONO, color: '#38bdf8' });
 
     // Pastki xulosa
     card(100, 845, 1720, 165, { fill: 'rgba(17,24,52,0.92)', col: C.blue });
-    text("Ikkala holatda ham natija bir xil: kompyuteringizda ishga tayyor to'laqonli lokal repozitoriy.", 960, 895, { size: 24, weight: 700, color: C.text, align: 'center' });
-    text("Barcha keyingi amallar shu repozitoriy ichida bajariladi.", 960, 950, { size: 20, color: C.mute, align: 'center' });
+    text("Init va klon amallari har qanday dasturlash loyihasining eng muhim boshlang'ich poydevoridir!", 960, 895, { size: 24, weight: 700, color: C.text, align: 'center' });
+    text("Lokal yaratish, tug'ilmagan brench, root-commit va sayoz klonlash imkoniyatlari.", 960, 950, { size: 20, color: C.mute, align: 'center' });
   };
 })();
