@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" playsinline poster="/video/git/15-tree-va-index.jpg" src="/video/git/15-tree-va-index.mp4">
+    <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/git/15-tree-va-index.chapters.vtt" default>
+    <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/git/15-tree-va-index.uz.vtt">
+  </video>
+  <figcaption>15.1-video. Tree va index</figcaption>
+</figure>
+
 [14-bobda](14-obyektlar-blob.md) omborga blob'lar yozdik va ikki muammo bilan qoldik: fayl **nomi** hech qayerda saqlanmaydi, va bir nechta faylni **birga** — bitta loyiha holati sifatida — saqlashning yo'li yo'q. Ikkalasini **tree** obyekti hal qiladi.
 
 **Tree** — Git'dagi **papka**. U ro'yxat: har qatorida bitta element turadi — fayl yoki ichki papka. Har element uchun uch narsa yoziladi:

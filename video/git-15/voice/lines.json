@@ -1,0 +1,1134 @@
+[
+  {
+    "id": "l1",
+    "scene": "intro",
+    "text": "Salom! Ushbu o‘n beshinchi bobda fayllarni kataloglar shaklida bog‘lovchi tree obyektlari hamda staging hududining asosi bo‘lgan index faylini o‘rganamiz.",
+    "show": "Salom! Ushbu o‘n beshinchi bobda fayllarni kataloglar shaklida bog‘lovchi tree obyektlari hamda staging hududining asosi bo‘lgan index faylini o‘rganamiz.",
+    "say": "Salom! Ushbu o‘n beshinchi bobda fayllarni kataloglar shaklida bog‘lovchi tri obyektlari hamda staging hududining asosi bo‘lgan indeks faylini o‘rganamiz.",
+    "a0": 0.3,
+    "a1": 9.23,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.3,
+        "e": 0.58
+      },
+      {
+        "w": "Ushbu",
+        "s": 1.3,
+        "e": 1.56
+      },
+      {
+        "w": "o‘n",
+        "s": 1.72,
+        "e": 1.8
+      },
+      {
+        "w": "beshinchi",
+        "s": 1.84,
+        "e": 2.2
+      },
+      {
+        "w": "bobda",
+        "s": 2.22,
+        "e": 2.5
+      },
+      {
+        "w": "fayllarni",
+        "s": 2.62,
+        "e": 3.14
+      },
+      {
+        "w": "kataloglar",
+        "s": 3.2,
+        "e": 3.76
+      },
+      {
+        "w": "shaklida",
+        "s": 3.8,
+        "e": 4.16
+      },
+      {
+        "w": "bog‘lovchi",
+        "s": 4.2,
+        "e": 4.66
+      },
+      {
+        "w": "tri",
+        "s": 4.74,
+        "e": 4.9
+      },
+      {
+        "w": "obyektlari",
+        "s": 5.02,
+        "e": 5.54
+      },
+      {
+        "w": "hamda",
+        "s": 5.84,
+        "e": 6.08
+      },
+      {
+        "w": "staging",
+        "s": 6.24,
+        "e": 6.66
+      },
+      {
+        "w": "hududining",
+        "s": 6.7,
+        "e": 7.12
+      },
+      {
+        "w": "asosi",
+        "s": 7.18,
+        "e": 7.51
+      },
+      {
+        "w": "bo‘lgan",
+        "s": 7.55,
+        "e": 7.85
+      },
+      {
+        "w": "indeks",
+        "s": 8.03,
+        "e": 8.39
+      },
+      {
+        "w": "faylini",
+        "s": 8.43,
+        "e": 8.79
+      },
+      {
+        "w": "o‘rganamiz.",
+        "s": 8.83,
+        "e": 9.23
+      }
+    ]
+  },
+  {
+    "id": "l2",
+    "scene": "intro",
+    "text": "Blob faqat xom baytlarni saqlasa, tree unga fayl nomi, ruxsatlar va butun papkalar daraxtini biriktirib beradi.",
+    "show": "Blob faqat xom baytlarni saqlasa, tree unga fayl nomi, ruxsatlar va butun papkalar daraxtini biriktirib beradi.",
+    "say": "Blob faqat xom baytlarni saqlasa, tri unga fayl nomi, ruxsatlar va butun papkalar daraxtini biriktirib beradi.",
+    "a0": 10.19,
+    "a1": 17.01,
+    "words": [
+      {
+        "w": "Blob",
+        "s": 10.19,
+        "e": 10.45
+      },
+      {
+        "w": "faqat",
+        "s": 10.59,
+        "e": 10.87
+      },
+      {
+        "w": "xom",
+        "s": 10.99,
+        "e": 11.19
+      },
+      {
+        "w": "baytlarni",
+        "s": 11.25,
+        "e": 11.71
+      },
+      {
+        "w": "saqlasa,",
+        "s": 11.75,
+        "e": 12.17
+      },
+      {
+        "w": "tri",
+        "s": 12.39,
+        "e": 12.57
+      },
+      {
+        "w": "unga",
+        "s": 12.83,
+        "e": 13.03
+      },
+      {
+        "w": "fayl",
+        "s": 13.15,
+        "e": 13.45
+      },
+      {
+        "w": "nomi,",
+        "s": 13.53,
+        "e": 13.85
+      },
+      {
+        "w": "ruxsatlar",
+        "s": 14.03,
+        "e": 14.59
+      },
+      {
+        "w": "va",
+        "s": 14.99,
+        "e": 15.05
+      },
+      {
+        "w": "butun",
+        "s": 15.13,
+        "e": 15.43
+      },
+      {
+        "w": "papkalar",
+        "s": 15.49,
+        "e": 15.89
+      },
+      {
+        "w": "daraxtini",
+        "s": 15.93,
+        "e": 16.35
+      },
+      {
+        "w": "biriktirib",
+        "s": 16.39,
+        "e": 16.73
+      },
+      {
+        "w": "beradi.",
+        "s": 16.75,
+        "e": 17.01
+      }
+    ]
+  },
+  {
+    "id": "l3",
+    "scene": "nega_index",
+    "text": "To‘g‘ridan-to‘g‘ri papkadan commit qilish o‘rniga o‘rtada index qatlamining bo‘lishi o‘zgarishlarni bo‘laklab yig‘ish imkonini beradi.",
+    "show": "To‘g‘ridan-to‘g‘ri papkadan commit qilish o‘rniga o‘rtada index qatlamining bo‘lishi o‘zgarishlarni bo‘laklab yig‘ish imkonini beradi.",
+    "say": "To‘g‘ridan-to‘g‘ri papkadan kommit qilish o‘rniga o‘rtada indeks qatlamining bo‘lishi o‘zgarishlarni bo‘laklab yig‘ish imkonini beradi.",
+    "a0": 17.87,
+    "a1": 24.4,
+    "words": [
+      {
+        "w": "To‘g‘ridan-to‘g‘ri",
+        "s": 17.87,
+        "e": 18.55
+      },
+      {
+        "w": "papkadan",
+        "s": 18.61,
+        "e": 18.99
+      },
+      {
+        "w": "kommit",
+        "s": 19.05,
+        "e": 19.33
+      },
+      {
+        "w": "qilish",
+        "s": 19.35,
+        "e": 19.57
+      },
+      {
+        "w": "o‘rniga",
+        "s": 19.61,
+        "e": 19.91
+      },
+      {
+        "w": "o‘rtada",
+        "s": 20.07,
+        "e": 20.35
+      },
+      {
+        "w": "indeks",
+        "s": 20.49,
+        "e": 20.79
+      },
+      {
+        "w": "qatlamining",
+        "s": 20.85,
+        "e": 21.31
+      },
+      {
+        "w": "bo‘lishi",
+        "s": 21.35,
+        "e": 21.67
+      },
+      {
+        "w": "o‘zgarishlarni",
+        "s": 22.03,
+        "e": 22.68
+      },
+      {
+        "w": "bo‘laklab",
+        "s": 22.76,
+        "e": 23.24
+      },
+      {
+        "w": "yig‘ish",
+        "s": 23.28,
+        "e": 23.56
+      },
+      {
+        "w": "imkonini",
+        "s": 23.62,
+        "e": 24.1
+      },
+      {
+        "w": "beradi.",
+        "s": 24.12,
+        "e": 24.4
+      }
+    ]
+  },
+  {
+    "id": "l4",
+    "scene": "nega_index",
+    "text": "Shuningdek, index har bir faylning stat ma’lumotlarini keshlab, git status buyrug‘ining chaqmoqdek tez ishlashini ta’minlaydi.",
+    "show": "Shuningdek, index har bir faylning stat ma’lumotlarini keshlab, git status buyrug‘ining chaqmoqdek tez ishlashini ta’minlaydi.",
+    "say": "Shuningdek, indeks har bir faylning stat ma’lumotlarini keshlab, git status buyrug‘ining chaqmoqdek tez ishlashini ta’minlaydi.",
+    "a0": 25.12,
+    "a1": 31.58,
+    "words": [
+      {
+        "w": "Shuningdek,",
+        "s": 25.12,
+        "e": 25.5
+      },
+      {
+        "w": "indeks",
+        "s": 25.62,
+        "e": 25.96
+      },
+      {
+        "w": "har",
+        "s": 26.04,
+        "e": 26.24
+      },
+      {
+        "w": "bir",
+        "s": 26.3,
+        "e": 26.4
+      },
+      {
+        "w": "faylning",
+        "s": 26.46,
+        "e": 26.9
+      },
+      {
+        "w": "stat",
+        "s": 27.02,
+        "e": 27.32
+      },
+      {
+        "w": "ma’lumotlarini",
+        "s": 27.4,
+        "e": 28.02
+      },
+      {
+        "w": "keshlab,",
+        "s": 28.08,
+        "e": 28.44
+      },
+      {
+        "w": "git",
+        "s": 28.82,
+        "e": 29.0
+      },
+      {
+        "w": "status",
+        "s": 29.06,
+        "e": 29.4
+      },
+      {
+        "w": "buyrug‘ining",
+        "s": 29.46,
+        "e": 29.86
+      },
+      {
+        "w": "chaqmoqdek",
+        "s": 29.9,
+        "e": 30.4
+      },
+      {
+        "w": "tez",
+        "s": 30.46,
+        "e": 30.62
+      },
+      {
+        "w": "ishlashini",
+        "s": 30.66,
+        "e": 31.06
+      },
+      {
+        "w": "ta’minlaydi.",
+        "s": 31.1,
+        "e": 31.58
+      }
+    ]
+  },
+  {
+    "id": "l5",
+    "scene": "update_index_va_dirc",
+    "text": "Git update-index buyrug‘i fayllarni yoki tayyor bloblarni DIRC binar formatidagi .git/index fayliga ro‘yxat qilib yozadi.",
+    "show": "Git update-index buyrug‘i fayllarni yoki tayyor bloblarni DIRC binar formatidagi .git/index fayliga ro‘yxat qilib yozadi.",
+    "say": "Git apdeyt-indeks buyrug‘i fayllarni yoki tayyor bloblarni di-ay-ar-si binar formatidagi nuqta git slesh indeks fayliga ro‘yxat qilib yozadi.",
+    "a0": 32.68,
+    "a1": 41.43,
+    "words": [
+      {
+        "w": "Git",
+        "s": 32.68,
+        "e": 32.88
+      },
+      {
+        "w": "apdeyt-indeks",
+        "s": 33.04,
+        "e": 33.9
+      },
+      {
+        "w": "buyrug‘i",
+        "s": 33.96,
+        "e": 34.32
+      },
+      {
+        "w": "fayllarni",
+        "s": 34.44,
+        "e": 35.02
+      },
+      {
+        "w": "yoki",
+        "s": 35.02,
+        "e": 35.34
+      },
+      {
+        "w": "tayyor",
+        "s": 35.44,
+        "e": 35.8
+      },
+      {
+        "w": "bloblarni",
+        "s": 35.84,
+        "e": 36.38
+      },
+      {
+        "w": "di-ay-ar-si",
+        "s": 36.76,
+        "e": 37.42
+      },
+      {
+        "w": "binar",
+        "s": 37.61,
+        "e": 37.89
+      },
+      {
+        "w": "formatidagi",
+        "s": 37.95,
+        "e": 38.53
+      },
+      {
+        "w": "nuqta",
+        "s": 38.73,
+        "e": 39.03
+      },
+      {
+        "w": "git",
+        "s": 39.15,
+        "e": 39.33
+      },
+      {
+        "w": "slesh",
+        "s": 39.37,
+        "e": 39.65
+      },
+      {
+        "w": "indeks",
+        "s": 39.79,
+        "e": 40.13
+      },
+      {
+        "w": "fayliga",
+        "s": 40.19,
+        "e": 40.57
+      },
+      {
+        "w": "ro‘yxat",
+        "s": 40.61,
+        "e": 40.91
+      },
+      {
+        "w": "qilib",
+        "s": 40.95,
+        "e": 41.13
+      },
+      {
+        "w": "yozadi.",
+        "s": 41.15,
+        "e": 41.43
+      }
+    ]
+  },
+  {
+    "id": "l6",
+    "scene": "update_index_va_dirc",
+    "text": "git ls-files minus s buyrug‘i orqali index ichidagi fayl rejimi, blob hashi, stage bosqichi va yo‘lini ko‘rishimiz mumkin.",
+    "show": "git ls-files minus s buyrug‘i orqali index ichidagi fayl rejimi, blob hashi, stage bosqichi va yo‘lini ko‘rishimiz mumkin.",
+    "say": "Git el-es faylz minus es buyrug‘i orqali indeks ichidagi fayl rejimi, blob heshi, stage bosqichi va yo‘lini ko‘rishimiz mumkin.",
+    "a0": 42.45,
+    "a1": 50.35,
+    "words": [
+      {
+        "w": "Git",
+        "s": 42.45,
+        "e": 42.69
+      },
+      {
+        "w": "el-es",
+        "s": 42.85,
+        "e": 43.15
+      },
+      {
+        "w": "faylz",
+        "s": 43.25,
+        "e": 43.67
+      },
+      {
+        "w": "minus",
+        "s": 43.75,
+        "e": 44.05
+      },
+      {
+        "w": "es",
+        "s": 44.21,
+        "e": 44.33
+      },
+      {
+        "w": "buyrug‘i",
+        "s": 44.39,
+        "e": 44.71
+      },
+      {
+        "w": "orqali",
+        "s": 44.75,
+        "e": 45.07
+      },
+      {
+        "w": "indeks",
+        "s": 45.17,
+        "e": 45.49
+      },
+      {
+        "w": "ichidagi",
+        "s": 45.55,
+        "e": 45.91
+      },
+      {
+        "w": "fayl",
+        "s": 46.01,
+        "e": 46.31
+      },
+      {
+        "w": "rejimi,",
+        "s": 46.41,
+        "e": 46.81
+      },
+      {
+        "w": "blob",
+        "s": 47.23,
+        "e": 47.49
+      },
+      {
+        "w": "heshi,",
+        "s": 47.57,
+        "e": 47.91
+      },
+      {
+        "w": "stage",
+        "s": 48.29,
+        "e": 48.59
+      },
+      {
+        "w": "bosqichi",
+        "s": 48.63,
+        "e": 49.03
+      },
+      {
+        "w": "va",
+        "s": 49.15,
+        "e": 49.21
+      },
+      {
+        "w": "yo‘lini",
+        "s": 49.33,
+        "e": 49.63
+      },
+      {
+        "w": "ko‘rishimiz",
+        "s": 49.67,
+        "e": 50.05
+      },
+      {
+        "w": "mumkin.",
+        "s": 50.07,
+        "e": 50.35
+      }
+    ]
+  },
+  {
+    "id": "l7",
+    "scene": "write_tree_ierarxiya",
+    "text": "Git write-tree buyrug‘i indexdagi tekis ro‘yxatni tahlil qilib, har bir ichki papka uchun o‘zgarmas tree obyektini yasaydi.",
+    "show": "Git write-tree buyrug‘i indexdagi tekis ro‘yxatni tahlil qilib, har bir ichki papka uchun o‘zgarmas tree obyektini yasaydi.",
+    "say": "Git rayt-tri buyrug‘i indeksdagi tekis ro‘yxatni tahlil qilib, har bir ichki papka uchun o‘zgarmas tri obyektini yasaydi.",
+    "a0": 51.49,
+    "a1": 58.34,
+    "words": [
+      {
+        "w": "Git",
+        "s": 51.49,
+        "e": 51.73
+      },
+      {
+        "w": "rayt-tri",
+        "s": 51.93,
+        "e": 52.37
+      },
+      {
+        "w": "buyrug‘i",
+        "s": 52.47,
+        "e": 52.88
+      },
+      {
+        "w": "indeksdagi",
+        "s": 53.28,
+        "e": 53.86
+      },
+      {
+        "w": "tekis",
+        "s": 53.94,
+        "e": 54.22
+      },
+      {
+        "w": "ro‘yxatni",
+        "s": 54.28,
+        "e": 54.68
+      },
+      {
+        "w": "tahlil",
+        "s": 54.72,
+        "e": 55.04
+      },
+      {
+        "w": "qilib,",
+        "s": 55.08,
+        "e": 55.32
+      },
+      {
+        "w": "har",
+        "s": 55.44,
+        "e": 55.64
+      },
+      {
+        "w": "bir",
+        "s": 55.7,
+        "e": 55.8
+      },
+      {
+        "w": "ichki",
+        "s": 55.88,
+        "e": 56.1
+      },
+      {
+        "w": "papka",
+        "s": 56.14,
+        "e": 56.4
+      },
+      {
+        "w": "uchun",
+        "s": 56.46,
+        "e": 56.64
+      },
+      {
+        "w": "o‘zgarmas",
+        "s": 56.78,
+        "e": 57.3
+      },
+      {
+        "w": "tri",
+        "s": 57.34,
+        "e": 57.48
+      },
+      {
+        "w": "obyektini",
+        "s": 57.6,
+        "e": 58.0
+      },
+      {
+        "w": "yasaydi.",
+        "s": 58.02,
+        "e": 58.34
+      }
+    ]
+  },
+  {
+    "id": "l8",
+    "scene": "write_tree_ierarxiya",
+    "text": "Bunda bir xil papka tuzilmalari qayta yaratilmasdan o‘sha hash kodi bilan qayta ishlatiladi va disk joyi tejaladi.",
+    "show": "Bunda bir xil papka tuzilmalari qayta yaratilmasdan o‘sha hash kodi bilan qayta ishlatiladi va disk joyi tejaladi.",
+    "say": "Bunda bir xil papka tuzilmalari qayta yaratilmasdan o‘sha hesh kodi bilan qayta ishlatiladi va disk joyi tejaladi.",
+    "a0": 59.04,
+    "a1": 65.26,
+    "words": [
+      {
+        "w": "Bunda",
+        "s": 59.04,
+        "e": 59.28
+      },
+      {
+        "w": "bir",
+        "s": 59.5,
+        "e": 59.62
+      },
+      {
+        "w": "xil",
+        "s": 59.66,
+        "e": 59.78
+      },
+      {
+        "w": "papka",
+        "s": 59.84,
+        "e": 60.08
+      },
+      {
+        "w": "tuzilmalari",
+        "s": 60.1,
+        "e": 60.58
+      },
+      {
+        "w": "qayta",
+        "s": 60.62,
+        "e": 60.86
+      },
+      {
+        "w": "yaratilmasdan",
+        "s": 60.94,
+        "e": 61.6
+      },
+      {
+        "w": "o‘sha",
+        "s": 61.94,
+        "e": 62.16
+      },
+      {
+        "w": "hesh",
+        "s": 62.24,
+        "e": 62.46
+      },
+      {
+        "w": "kodi",
+        "s": 62.5,
+        "e": 62.7
+      },
+      {
+        "w": "bilan",
+        "s": 62.72,
+        "e": 62.9
+      },
+      {
+        "w": "qayta",
+        "s": 62.96,
+        "e": 63.22
+      },
+      {
+        "w": "ishlatiladi",
+        "s": 63.28,
+        "e": 63.76
+      },
+      {
+        "w": "va",
+        "s": 64.08,
+        "e": 64.16
+      },
+      {
+        "w": "disk",
+        "s": 64.28,
+        "e": 64.5
+      },
+      {
+        "w": "joyi",
+        "s": 64.58,
+        "e": 64.82
+      },
+      {
+        "w": "tejaladi.",
+        "s": 64.86,
+        "e": 65.26
+      }
+    ]
+  },
+  {
+    "id": "l9",
+    "scene": "read_tree_va_checkout",
+    "text": "Teskari yo‘nalishda git read-tree saqlangan tree obyektini indexga yuklaydi, checkout-index esa uni ishchi papkaga chiqarib beradi.",
+    "show": "Teskari yo‘nalishda git read-tree saqlangan tree obyektini indexga yuklaydi, checkout-index esa uni ishchi papkaga chiqarib beradi.",
+    "say": "Teskari yo‘nalishda git rid-tri saqlangan tri obyektini indeksga yuklaydi, chekaut-indeks esa uni ishchi papkaga chiqarib beradi.",
+    "a0": 66.3,
+    "a1": 73.79,
+    "words": [
+      {
+        "w": "Teskari",
+        "s": 66.3,
+        "e": 66.68
+      },
+      {
+        "w": "yo‘nalishda",
+        "s": 66.72,
+        "e": 67.16
+      },
+      {
+        "w": "git",
+        "s": 67.44,
+        "e": 67.65
+      },
+      {
+        "w": "rid-tri",
+        "s": 67.81,
+        "e": 68.25
+      },
+      {
+        "w": "saqlangan",
+        "s": 68.41,
+        "e": 68.89
+      },
+      {
+        "w": "tri",
+        "s": 68.95,
+        "e": 69.07
+      },
+      {
+        "w": "obyektini",
+        "s": 69.19,
+        "e": 69.65
+      },
+      {
+        "w": "indeksga",
+        "s": 69.75,
+        "e": 70.17
+      },
+      {
+        "w": "yuklaydi,",
+        "s": 70.23,
+        "e": 70.63
+      },
+      {
+        "w": "chekaut-indeks",
+        "s": 71.05,
+        "e": 71.97
+      },
+      {
+        "w": "esa",
+        "s": 72.05,
+        "e": 72.23
+      },
+      {
+        "w": "uni",
+        "s": 72.35,
+        "e": 72.47
+      },
+      {
+        "w": "ishchi",
+        "s": 72.57,
+        "e": 72.81
+      },
+      {
+        "w": "papkaga",
+        "s": 72.83,
+        "e": 73.17
+      },
+      {
+        "w": "chiqarib",
+        "s": 73.23,
+        "e": 73.51
+      },
+      {
+        "w": "beradi.",
+        "s": 73.53,
+        "e": 73.79
+      }
+    ]
+  },
+  {
+    "id": "l10",
+    "scene": "read_tree_va_checkout",
+    "text": "Ushbu zanjir git reset va git restore kabi qulay buyruqlarning asl poydevori qanday ishlashini yaqqol ko‘rsatadi.",
+    "show": "Ushbu zanjir git reset va git restore kabi qulay buyruqlarning asl poydevori qanday ishlashini yaqqol ko‘rsatadi.",
+    "say": "Ushbu zanjir git reset va git restor kabi qulay buyruqlarning asl poydevori qanday ishlashini yaqqol ko‘rsatadi.",
+    "a0": 74.55,
+    "a1": 80.85,
+    "words": [
+      {
+        "w": "Ushbu",
+        "s": 74.55,
+        "e": 74.75
+      },
+      {
+        "w": "zanjir",
+        "s": 74.81,
+        "e": 75.19
+      },
+      {
+        "w": "git",
+        "s": 75.41,
+        "e": 75.61
+      },
+      {
+        "w": "reset",
+        "s": 75.69,
+        "e": 76.05
+      },
+      {
+        "w": "va",
+        "s": 76.11,
+        "e": 76.17
+      },
+      {
+        "w": "git",
+        "s": 76.29,
+        "e": 76.45
+      },
+      {
+        "w": "restor",
+        "s": 76.51,
+        "e": 76.81
+      },
+      {
+        "w": "kabi",
+        "s": 76.85,
+        "e": 77.03
+      },
+      {
+        "w": "qulay",
+        "s": 77.11,
+        "e": 77.37
+      },
+      {
+        "w": "buyruqlarning",
+        "s": 77.41,
+        "e": 77.97
+      },
+      {
+        "w": "asl",
+        "s": 78.07,
+        "e": 78.31
+      },
+      {
+        "w": "poydevori",
+        "s": 78.35,
+        "e": 78.85
+      },
+      {
+        "w": "qanday",
+        "s": 78.91,
+        "e": 79.25
+      },
+      {
+        "w": "ishlashini",
+        "s": 79.29,
+        "e": 79.71
+      },
+      {
+        "w": "yaqqol",
+        "s": 79.99,
+        "e": 80.35
+      },
+      {
+        "w": "ko‘rsatadi.",
+        "s": 80.39,
+        "e": 80.85
+      }
+    ]
+  },
+  {
+    "id": "l11",
+    "scene": "xulosa",
+    "text": "Tree papkalar suratini saqlaydi, lekin unda muallif, sana va commit xabari yo‘q; ular keyingi bobda commit obyektiga birikadi.",
+    "show": "Tree papkalar suratini saqlaydi, lekin unda muallif, sana va commit xabari yo‘q; ular keyingi bobda commit obyektiga birikadi.",
+    "say": "Tri papkalar suratini saqlaydi, lekin unda muallif, sana va kommit xabari yo‘q; ular keyingi bobda kommit obyektiga birikadi.",
+    "a0": 81.99,
+    "a1": 88.94,
+    "words": [
+      {
+        "w": "Tri",
+        "s": 81.99,
+        "e": 82.15
+      },
+      {
+        "w": "papkalar",
+        "s": 82.31,
+        "e": 82.74
+      },
+      {
+        "w": "suratini",
+        "s": 82.78,
+        "e": 83.14
+      },
+      {
+        "w": "saqlaydi,",
+        "s": 83.18,
+        "e": 83.58
+      },
+      {
+        "w": "lekin",
+        "s": 83.8,
+        "e": 84.02
+      },
+      {
+        "w": "unda",
+        "s": 84.08,
+        "e": 84.26
+      },
+      {
+        "w": "muallif,",
+        "s": 84.34,
+        "e": 84.9
+      },
+      {
+        "w": "sana",
+        "s": 85.02,
+        "e": 85.28
+      },
+      {
+        "w": "va",
+        "s": 85.46,
+        "e": 85.52
+      },
+      {
+        "w": "kommit",
+        "s": 85.6,
+        "e": 85.88
+      },
+      {
+        "w": "xabari",
+        "s": 85.94,
+        "e": 86.24
+      },
+      {
+        "w": "yo‘q;",
+        "s": 86.24,
+        "e": 86.86
+      },
+      {
+        "w": "ular",
+        "s": 86.86,
+        "e": 87.04
+      },
+      {
+        "w": "keyingi",
+        "s": 87.1,
+        "e": 87.4
+      },
+      {
+        "w": "bobda",
+        "s": 87.44,
+        "e": 87.7
+      },
+      {
+        "w": "kommit",
+        "s": 87.8,
+        "e": 88.08
+      },
+      {
+        "w": "obyektiga",
+        "s": 88.14,
+        "e": 88.54
+      },
+      {
+        "w": "birikadi.",
+        "s": 88.58,
+        "e": 88.94
+      }
+    ]
+  },
+  {
+    "id": "l12",
+    "scene": "xulosa",
+    "text": "Keyingi o‘n oltinchi bobda aynan ushbu tree obyektidan foydalanib, qo‘lda haqiqiy commit obyekti yaratishni o‘rganamiz.",
+    "show": "Keyingi o‘n oltinchi bobda aynan ushbu tree obyektidan foydalanib, qo‘lda haqiqiy commit obyekti yaratishni o‘rganamiz.",
+    "say": "Keyingi o‘n oltinchi bobda aynan ushbu tri obyektidan foydalanib, qo‘lda haqiqiy kommit obyekti yaratishni o‘rganamiz.",
+    "a0": 89.76,
+    "a1": 95.9,
+    "words": [
+      {
+        "w": "Keyingi",
+        "s": 89.76,
+        "e": 90.1
+      },
+      {
+        "w": "o‘n",
+        "s": 90.24,
+        "e": 90.34
+      },
+      {
+        "w": "oltinchi",
+        "s": 90.4,
+        "e": 90.7
+      },
+      {
+        "w": "bobda",
+        "s": 90.72,
+        "e": 91.0
+      },
+      {
+        "w": "aynan",
+        "s": 91.34,
+        "e": 91.57
+      },
+      {
+        "w": "ushbu",
+        "s": 91.69,
+        "e": 91.93
+      },
+      {
+        "w": "tri",
+        "s": 92.01,
+        "e": 92.17
+      },
+      {
+        "w": "obyektidan",
+        "s": 92.27,
+        "e": 92.73
+      },
+      {
+        "w": "foydalanib,",
+        "s": 92.77,
+        "e": 93.31
+      },
+      {
+        "w": "qo‘lda",
+        "s": 93.45,
+        "e": 93.75
+      },
+      {
+        "w": "haqiqiy",
+        "s": 93.81,
+        "e": 94.27
+      },
+      {
+        "w": "kommit",
+        "s": 94.33,
+        "e": 94.64
+      },
+      {
+        "w": "obyekti",
+        "s": 94.7,
+        "e": 95.0
+      },
+      {
+        "w": "yaratishni",
+        "s": 95.04,
+        "e": 95.44
+      },
+      {
+        "w": "o‘rganamiz.",
+        "s": 95.48,
+        "e": 95.9
+      }
+    ]
+  }
+]

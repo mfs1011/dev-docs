@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:20.318
+Tree va Index Tushunchasi
+
+00:20.318 --> 00:37.513
+Nega To‘g‘ridan-to‘g‘ri Emas, Index Orqali?
+
+00:37.513 --> 00:58.837
+update-index va .git/index Fayli
+
+00:58.837 --> 01:16.620
+write-tree va Papkalar Daraxti
+
+01:16.620 --> 01:34.565
+read-tree va checkout-index
+
+01:34.565 --> 01:54.840
+Xulosa va Tavsiyalar
