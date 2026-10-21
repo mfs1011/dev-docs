@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" playsinline poster="/video/git/07-diff.jpg" src="/video/git/07-diff.mp4">
+    <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/git/07-diff.chapters.vtt" default>
+    <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/git/07-diff.uz.vtt">
+  </video>
+  <figcaption>07.1-video. diff: nima o'zgardi</figcaption>
+</figure>
+
 `git status` **qaysi fayllar** o'zgarganini aytadi. Lekin ko'pincha bu yetmaydi: fayl ichida **aynan nima** o'zgardi — qaysi qator qo'shildi, qaysi biri o'chdi? Bu savolga `git diff` javob beradi. U ikki holatni solishtiradi va farqni **patch** (yamoq) ko'rinishida chiqaradi: `-` bilan boshlangan qator — eskida bor edi, yangida yo'q; `+` bilan boshlangan — yangida paydo bo'ldi; bo'shliq bilan boshlangan — o'zgarmagan, faqat mo'ljal uchun ko'rsatilgan (kontekst).
 
 5-bobdagi uch hududni eslang:
