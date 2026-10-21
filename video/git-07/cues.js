@@ -11,11 +11,11 @@
     ['l2', 'U'], ['l2', 'etadi.'],
     ['l3', 'Oddiy'], ['l3', 'ko‘rsatadi.'],
     ['l4', 'Git'], ['l4', 'bildiradi.'],
-    ['l5', 'Diff'], ['l5', 'anglatadi.'],
+    ['l5', 'Diff'], ['l5', 'bildiradi.'],
     ['l6', 'Boshidagi'], ['l6', 'koordinatalaridir.'],
-    ['l7', 'Git'], ['l7', 'mumkin.'],
-    ['l8', 'Masalan,'], ['l8', 'beradi.'],
-    ['l9', 'Eng'], ['l9', 'yetkazmaydi.'],
+    ['l7', 'Katta'], ['l7', 'mumkin.'],
+    ['l8', 'Shuningdek,'], ['l8', 'mumkin.'],
+    ['l9', 'Eng'], ['l9', 'yubormaydi.'],
     ['l10', 'Shuning'], ['l10', 'odatdir.'],
     ['l11', 'Xulosa'], ['l11', 'kompasidir.'],
     ['l12', 'Keyingi'], ['l12', 'Rahmat!']
@@ -29,11 +29,11 @@
   try { add(W('l2', 'etadi.'), 'ding'); } catch (e) {}
   try { add(W('l3', 'ko‘rsatadi.'), 'whoosh'); } catch (e) {}
   try { add(W('l4', 'bildiradi.'), 'pop'); } catch (e) {}
-  try { add(W('l5', 'anglatadi.'), 'pop'); } catch (e) {}
+  try { add(W('l5', 'bildiradi.'), 'pop'); } catch (e) {}
   try { add(W('l6', 'koordinatalaridir.'), 'ding'); } catch (e) {}
   try { add(W('l7', 'mumkin.'), 'whoosh'); } catch (e) {}
-  try { add(W('l8', 'beradi.'), 'ding'); } catch (e) {}
-  try { add(W('l9', 'yetkazmaydi.'), 'pop'); } catch (e) {}
+  try { add(W('l8', 'mumkin.'), 'ding'); } catch (e) {}
+  try { add(W('l9', 'yubormaydi.'), 'pop'); } catch (e) {}
   try { add(W('l10', 'odatdir.'), 'ding'); } catch (e) {}
   try { add(W('l11', 'kompasidir.'), 'ding'); } catch (e) {}
   add(L('l12').e + 0.3, 'swell');
