@@ -1,0 +1,1074 @@
+[
+  {
+    "id": "l1",
+    "scene": "intro",
+    "text": "Salom! Ushbu to‘qqizinchi bobda loyihaning butun o‘tmishini ko‘rish, tahlil qilish va qidirishning eng asosiy quroli — git log buyrug‘ini o‘rganamiz.",
+    "show": "Salom! Ushbu to‘qqizinchi bobda loyihaning butun o‘tmishini ko‘rish, tahlil qilish va qidirishning eng asosiy quroli — git log buyrug‘ini o‘rganamiz.",
+    "say": "Salom! Ushbu to‘qqizinchi bobda loyihaning butun o‘tmishini ko‘rish, tahlil qilish va qidirishning eng asosiy quroli — git log buyrug‘ini o‘rganamiz.",
+    "a0": 0.12,
+    "a1": 9.17,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.12,
+        "e": 0.36
+      },
+      {
+        "w": "Ushbu",
+        "s": 0.98,
+        "e": 1.22
+      },
+      {
+        "w": "to‘qqizinchi",
+        "s": 1.28,
+        "e": 1.76
+      },
+      {
+        "w": "bobda",
+        "s": 1.8,
+        "e": 2.08
+      },
+      {
+        "w": "loyihaning",
+        "s": 2.34,
+        "e": 2.86
+      },
+      {
+        "w": "butun",
+        "s": 2.96,
+        "e": 3.26
+      },
+      {
+        "w": "o‘tmishini",
+        "s": 3.42,
+        "e": 3.84
+      },
+      {
+        "w": "ko‘rish,",
+        "s": 3.88,
+        "e": 4.2
+      },
+      {
+        "w": "tahlil",
+        "s": 4.62,
+        "e": 4.98
+      },
+      {
+        "w": "qilish",
+        "s": 5.02,
+        "e": 5.28
+      },
+      {
+        "w": "va",
+        "s": 5.46,
+        "e": 5.52
+      },
+      {
+        "w": "qidirishning",
+        "s": 5.64,
+        "e": 6.18
+      },
+      {
+        "w": "eng",
+        "s": 6.34,
+        "e": 6.5
+      },
+      {
+        "w": "asosiy",
+        "s": 6.6,
+        "e": 6.94
+      },
+      {
+        "w": "quroli",
+        "s": 7.0,
+        "e": 7.32
+      },
+      {
+        "w": "—",
+        "s": 7.32,
+        "e": 7.32
+      },
+      {
+        "w": "git",
+        "s": 7.73,
+        "e": 7.93
+      },
+      {
+        "w": "log",
+        "s": 8.05,
+        "e": 8.25
+      },
+      {
+        "w": "buyrug‘ini",
+        "s": 8.31,
+        "e": 8.71
+      },
+      {
+        "w": "o‘rganamiz.",
+        "s": 8.77,
+        "e": 9.17
+      }
+    ]
+  },
+  {
+    "id": "l2",
+    "scene": "intro",
+    "text": "U kommitlarning ota-ona zanjiri bo‘ylab orqaga yurib, loyiha qanday rivojlanganini to‘liq namoyon etadi.",
+    "show": "U kommitlarning ota-ona zanjiri bo‘ylab orqaga yurib, loyiha qanday rivojlanganini to‘liq namoyon etadi.",
+    "say": "U kommitlarning ota-ona zanjiri bo‘ylab orqaga yurib, loyiha qanday rivojlanganini to‘liq namoyon etadi.",
+    "a0": 10.35,
+    "a1": 15.95,
+    "words": [
+      {
+        "w": "U",
+        "s": 10.35,
+        "e": 10.37
+      },
+      {
+        "w": "kommitlarning",
+        "s": 10.53,
+        "e": 11.15
+      },
+      {
+        "w": "ota-ona",
+        "s": 11.29,
+        "e": 11.65
+      },
+      {
+        "w": "zanjiri",
+        "s": 11.69,
+        "e": 11.99
+      },
+      {
+        "w": "bo‘ylab",
+        "s": 12.01,
+        "e": 12.29
+      },
+      {
+        "w": "orqaga",
+        "s": 12.39,
+        "e": 12.71
+      },
+      {
+        "w": "yurib,",
+        "s": 12.77,
+        "e": 12.97
+      },
+      {
+        "w": "loyiha",
+        "s": 13.31,
+        "e": 13.63
+      },
+      {
+        "w": "qanday",
+        "s": 13.71,
+        "e": 14.03
+      },
+      {
+        "w": "rivojlanganini",
+        "s": 14.09,
+        "e": 14.77
+      },
+      {
+        "w": "to‘liq",
+        "s": 14.87,
+        "e": 15.19
+      },
+      {
+        "w": "namoyon",
+        "s": 15.25,
+        "e": 15.67
+      },
+      {
+        "w": "etadi.",
+        "s": 15.73,
+        "e": 15.95
+      }
+    ]
+  },
+  {
+    "id": "l3",
+    "scene": "orqaga_yurish",
+    "text": "Har bir kommit faqat o‘zidan oldingi ota kommit havolasini saqlaydi, chunki kommit yaratilayotganda bolalari hali mavjud bo‘lmaydi.",
+    "show": "Har bir kommit faqat o‘zidan oldingi ota kommit havolasini saqlaydi, chunki kommit yaratilayotganda bolalari hali mavjud bo‘lmaydi.",
+    "say": "Har bir kommit faqat o‘zidan oldingi ota kommit havolasini saqlaydi, chunki kommit yaratilayotganda bolalari hali mavjud bo‘lmaydi.",
+    "a0": 17.05,
+    "a1": 23.72,
+    "words": [
+      {
+        "w": "Har",
+        "s": 17.05,
+        "e": 17.19
+      },
+      {
+        "w": "bir",
+        "s": 17.23,
+        "e": 17.35
+      },
+      {
+        "w": "kommit",
+        "s": 17.39,
+        "e": 17.67
+      },
+      {
+        "w": "faqat",
+        "s": 17.73,
+        "e": 17.99
+      },
+      {
+        "w": "o‘zidan",
+        "s": 18.17,
+        "e": 18.49
+      },
+      {
+        "w": "oldingi",
+        "s": 18.63,
+        "e": 18.95
+      },
+      {
+        "w": "ota",
+        "s": 19.07,
+        "e": 19.21
+      },
+      {
+        "w": "kommit",
+        "s": 19.27,
+        "e": 19.49
+      },
+      {
+        "w": "havolasini",
+        "s": 19.51,
+        "e": 19.99
+      },
+      {
+        "w": "saqlaydi,",
+        "s": 20.03,
+        "e": 20.39
+      },
+      {
+        "w": "chunki",
+        "s": 20.43,
+        "e": 20.69
+      },
+      {
+        "w": "kommit",
+        "s": 21.05,
+        "e": 21.37
+      },
+      {
+        "w": "yaratilayotganda",
+        "s": 21.43,
+        "e": 22.17
+      },
+      {
+        "w": "bolalari",
+        "s": 22.23,
+        "e": 22.64
+      },
+      {
+        "w": "hali",
+        "s": 22.7,
+        "e": 22.9
+      },
+      {
+        "w": "mavjud",
+        "s": 22.96,
+        "e": 23.26
+      },
+      {
+        "w": "bo‘lmaydi.",
+        "s": 23.3,
+        "e": 23.72
+      }
+    ]
+  },
+  {
+    "id": "l4",
+    "scene": "orqaga_yurish",
+    "text": "Shu sababli git log joriy HED ko‘rsatkichidan boshlab, eng yangi kommitdan eng eskisiga qarab orqaga harakatlanadi.",
+    "show": "Shu sababli git log joriy HED ko‘rsatkichidan boshlab, eng yangi kommitdan eng eskisiga qarab orqaga harakatlanadi.",
+    "say": "Shu sababli git log joriy HED ko‘rsatkichidan boshlab, eng yangi kommitdan eng eskisiga qarab orqaga harakatlanadi.",
+    "a0": 24.4,
+    "a1": 30.9,
+    "words": [
+      {
+        "w": "Shu",
+        "s": 24.4,
+        "e": 24.5
+      },
+      {
+        "w": "sababli",
+        "s": 24.56,
+        "e": 24.9
+      },
+      {
+        "w": "git",
+        "s": 24.98,
+        "e": 25.12
+      },
+      {
+        "w": "log",
+        "s": 25.18,
+        "e": 25.34
+      },
+      {
+        "w": "joriy",
+        "s": 25.66,
+        "e": 25.96
+      },
+      {
+        "w": "HED",
+        "s": 26.08,
+        "e": 26.28
+      },
+      {
+        "w": "ko‘rsatkichidan",
+        "s": 26.34,
+        "e": 26.96
+      },
+      {
+        "w": "boshlab,",
+        "s": 27.0,
+        "e": 27.3
+      },
+      {
+        "w": "eng",
+        "s": 27.74,
+        "e": 27.9
+      },
+      {
+        "w": "yangi",
+        "s": 27.98,
+        "e": 28.2
+      },
+      {
+        "w": "kommitdan",
+        "s": 28.26,
+        "e": 28.72
+      },
+      {
+        "w": "eng",
+        "s": 28.9,
+        "e": 29.08
+      },
+      {
+        "w": "eskisiga",
+        "s": 29.24,
+        "e": 29.68
+      },
+      {
+        "w": "qarab",
+        "s": 29.72,
+        "e": 29.92
+      },
+      {
+        "w": "orqaga",
+        "s": 30.04,
+        "e": 30.3
+      },
+      {
+        "w": "harakatlanadi.",
+        "s": 30.32,
+        "e": 30.9
+      }
+    ]
+  },
+  {
+    "id": "l5",
+    "scene": "formatlar",
+    "text": "Standart uzun ko‘rinishdan tashqari, minus minus onlayn opsiyasi har bir kommitni bitta ixcham qatorga jamlab beradi.",
+    "show": "Standart uzun ko‘rinishdan tashqari, minus minus onlayn opsiyasi har bir kommitni bitta ixcham qatorga jamlab beradi.",
+    "say": "Standart uzun ko‘rinishdan tashqari, minus minus onlayn opsiyasi har bir kommitni bitta ixcham qatorga jamlab beradi.",
+    "a0": 32.0,
+    "a1": 38.53,
+    "words": [
+      {
+        "w": "Standart",
+        "s": 32.0,
+        "e": 32.44
+      },
+      {
+        "w": "uzun",
+        "s": 32.56,
+        "e": 32.78
+      },
+      {
+        "w": "ko‘rinishdan",
+        "s": 32.84,
+        "e": 33.34
+      },
+      {
+        "w": "tashqari,",
+        "s": 33.36,
+        "e": 33.7
+      },
+      {
+        "w": "minus",
+        "s": 34.06,
+        "e": 34.34
+      },
+      {
+        "w": "minus",
+        "s": 34.42,
+        "e": 34.66
+      },
+      {
+        "w": "onlayn",
+        "s": 34.82,
+        "e": 35.2
+      },
+      {
+        "w": "opsiyasi",
+        "s": 35.32,
+        "e": 35.7
+      },
+      {
+        "w": "har",
+        "s": 35.9,
+        "e": 36.08
+      },
+      {
+        "w": "bir",
+        "s": 36.12,
+        "e": 36.2
+      },
+      {
+        "w": "kommitni",
+        "s": 36.24,
+        "e": 36.62
+      },
+      {
+        "w": "bitta",
+        "s": 36.7,
+        "e": 36.98
+      },
+      {
+        "w": "ixcham",
+        "s": 37.12,
+        "e": 37.44
+      },
+      {
+        "w": "qatorga",
+        "s": 37.48,
+        "e": 37.85
+      },
+      {
+        "w": "jamlab",
+        "s": 37.89,
+        "e": 38.21
+      },
+      {
+        "w": "beradi.",
+        "s": 38.25,
+        "e": 38.53
+      }
+    ]
+  },
+  {
+    "id": "l6",
+    "scene": "formatlar",
+    "text": "Graf opsiyasi esa tarmoqlar qanday ajralgani va qayerda birlashganini chiroyli daraxt shaklida chizib ko‘rsatadi.",
+    "show": "Graf opsiyasi esa tarmoqlar qanday ajralgani va qayerda birlashganini chiroyli daraxt shaklida chizib ko‘rsatadi.",
+    "say": "Graf opsiyasi esa tarmoqlar qanday ajralgani va qayerda birlashganini chiroyli daraxt shaklida chizib ko‘rsatadi.",
+    "a0": 39.67,
+    "a1": 45.59,
+    "words": [
+      {
+        "w": "Graf",
+        "s": 39.67,
+        "e": 39.93
+      },
+      {
+        "w": "opsiyasi",
+        "s": 40.05,
+        "e": 40.37
+      },
+      {
+        "w": "esa",
+        "s": 40.41,
+        "e": 40.57
+      },
+      {
+        "w": "tarmoqlar",
+        "s": 40.67,
+        "e": 41.11
+      },
+      {
+        "w": "qanday",
+        "s": 41.17,
+        "e": 41.47
+      },
+      {
+        "w": "ajralgani",
+        "s": 41.53,
+        "e": 41.99
+      },
+      {
+        "w": "va",
+        "s": 42.09,
+        "e": 42.17
+      },
+      {
+        "w": "qayerda",
+        "s": 42.29,
+        "e": 42.67
+      },
+      {
+        "w": "birlashganini",
+        "s": 42.73,
+        "e": 43.35
+      },
+      {
+        "w": "chiroyli",
+        "s": 43.69,
+        "e": 44.11
+      },
+      {
+        "w": "daraxt",
+        "s": 44.21,
+        "e": 44.51
+      },
+      {
+        "w": "shaklida",
+        "s": 44.53,
+        "e": 44.87
+      },
+      {
+        "w": "chizib",
+        "s": 44.93,
+        "e": 45.15
+      },
+      {
+        "w": "ko‘rsatadi.",
+        "s": 45.17,
+        "e": 45.59
+      }
+    ]
+  },
+  {
+    "id": "l7",
+    "scene": "tarkib",
+    "text": "Minus minus stat opsiyasi qaysi fayllarda nechtadan qator o‘zgarganini qisqacha statistika qilib chiqaradi.",
+    "show": "Minus minus stat opsiyasi qaysi fayllarda nechtadan qator o‘zgarganini qisqacha statistika qilib chiqaradi.",
+    "say": "Minus minus stat opsiyasi qaysi fayllarda nechtadan qator o‘zgarganini qisqacha statistika qilib chiqaradi.",
+    "a0": 46.77,
+    "a1": 52.35,
+    "words": [
+      {
+        "w": "Minus",
+        "s": 46.77,
+        "e": 47.07
+      },
+      {
+        "w": "minus",
+        "s": 47.13,
+        "e": 47.35
+      },
+      {
+        "w": "stat",
+        "s": 47.43,
+        "e": 47.65
+      },
+      {
+        "w": "opsiyasi",
+        "s": 47.73,
+        "e": 48.11
+      },
+      {
+        "w": "qaysi",
+        "s": 48.45,
+        "e": 48.71
+      },
+      {
+        "w": "fayllarda",
+        "s": 48.75,
+        "e": 49.25
+      },
+      {
+        "w": "nechtadan",
+        "s": 49.35,
+        "e": 49.79
+      },
+      {
+        "w": "qator",
+        "s": 49.85,
+        "e": 50.13
+      },
+      {
+        "w": "o‘zgarganini",
+        "s": 50.21,
+        "e": 50.75
+      },
+      {
+        "w": "qisqacha",
+        "s": 50.83,
+        "e": 51.19
+      },
+      {
+        "w": "statistika",
+        "s": 51.27,
+        "e": 51.77
+      },
+      {
+        "w": "qilib",
+        "s": 51.81,
+        "e": 51.99
+      },
+      {
+        "w": "chiqaradi.",
+        "s": 52.01,
+        "e": 52.35
+      }
+    ]
+  },
+  {
+    "id": "l8",
+    "scene": "tarkib",
+    "text": "Minus p opsiyasi esa har bir kommit ichidagi barcha kod farqlarini to‘liq patch ko‘rinishida ochiqlaydi.",
+    "show": "Minus p opsiyasi esa har bir kommit ichidagi barcha kod farqlarini to‘liq patch ko‘rinishida ochiqlaydi.",
+    "say": "Minus p opsiyasi esa har bir kommit ichidagi barcha kod farqlarini to‘liq patch ko‘rinishida ochiqlaydi.",
+    "a0": 53.42,
+    "a1": 59.0,
+    "words": [
+      {
+        "w": "Minus",
+        "s": 53.42,
+        "e": 53.7
+      },
+      {
+        "w": "p",
+        "s": 53.84,
+        "e": 53.86
+      },
+      {
+        "w": "opsiyasi",
+        "s": 54.12,
+        "e": 54.46
+      },
+      {
+        "w": "esa",
+        "s": 54.5,
+        "e": 54.66
+      },
+      {
+        "w": "har",
+        "s": 55.0,
+        "e": 55.2
+      },
+      {
+        "w": "bir",
+        "s": 55.24,
+        "e": 55.36
+      },
+      {
+        "w": "kommit",
+        "s": 55.4,
+        "e": 55.68
+      },
+      {
+        "w": "ichidagi",
+        "s": 55.72,
+        "e": 56.06
+      },
+      {
+        "w": "barcha",
+        "s": 56.18,
+        "e": 56.52
+      },
+      {
+        "w": "kod",
+        "s": 56.6,
+        "e": 56.76
+      },
+      {
+        "w": "farqlarini",
+        "s": 56.8,
+        "e": 57.28
+      },
+      {
+        "w": "to‘liq",
+        "s": 57.36,
+        "e": 57.66
+      },
+      {
+        "w": "patch",
+        "s": 57.78,
+        "e": 58.02
+      },
+      {
+        "w": "ko‘rinishida",
+        "s": 58.06,
+        "e": 58.5
+      },
+      {
+        "w": "ochiqlaydi.",
+        "s": 58.56,
+        "e": 59.0
+      }
+    ]
+  },
+  {
+    "id": "l9",
+    "scene": "qidiruv_va_filtr",
+    "text": "Git log yordamida muallif, sana, kommit xabari va hatto kod ichidagi o‘zgarishlar bo‘yicha aniq filtrlar qo‘llash mumkin.",
+    "show": "Git log yordamida muallif, sana, kommit xabari va hatto kod ichidagi o‘zgarishlar bo‘yicha aniq filtrlar qo‘llash mumkin.",
+    "say": "Git log yordamida muallif, sana, kommit xabari va hatto kod ichidagi o‘zgarishlar bo‘yicha aniq filtrlar qo‘llash mumkin.",
+    "a0": 59.88,
+    "a1": 66.76,
+    "words": [
+      {
+        "w": "Git",
+        "s": 59.88,
+        "e": 60.04
+      },
+      {
+        "w": "log",
+        "s": 60.08,
+        "e": 60.24
+      },
+      {
+        "w": "yordamida",
+        "s": 60.3,
+        "e": 60.74
+      },
+      {
+        "w": "muallif,",
+        "s": 60.84,
+        "e": 61.26
+      },
+      {
+        "w": "sana,",
+        "s": 61.66,
+        "e": 61.92
+      },
+      {
+        "w": "kommit",
+        "s": 62.36,
+        "e": 62.66
+      },
+      {
+        "w": "xabari",
+        "s": 62.7,
+        "e": 63.04
+      },
+      {
+        "w": "va",
+        "s": 63.12,
+        "e": 63.18
+      },
+      {
+        "w": "hatto",
+        "s": 63.26,
+        "e": 63.54
+      },
+      {
+        "w": "kod",
+        "s": 63.88,
+        "e": 64.06
+      },
+      {
+        "w": "ichidagi",
+        "s": 64.14,
+        "e": 64.48
+      },
+      {
+        "w": "o‘zgarishlar",
+        "s": 64.58,
+        "e": 65.06
+      },
+      {
+        "w": "bo‘yicha",
+        "s": 65.1,
+        "e": 65.34
+      },
+      {
+        "w": "aniq",
+        "s": 65.46,
+        "e": 65.66
+      },
+      {
+        "w": "filtrlar",
+        "s": 65.72,
+        "e": 66.18
+      },
+      {
+        "w": "qo‘llash",
+        "s": 66.22,
+        "e": 66.5
+      },
+      {
+        "w": "mumkin.",
+        "s": 66.54,
+        "e": 66.76
+      }
+    ]
+  },
+  {
+    "id": "l10",
+    "scene": "qidiruv_va_filtr",
+    "text": "Ayniqsa, katta es opsiyasi kod bazasidan istalgan funksiya yoki o‘zgaruvchi qachon kiritilganini bir zumda topib beradi.",
+    "show": "Ayniqsa, katta es opsiyasi kod bazasidan istalgan funksiya yoki o‘zgaruvchi qachon kiritilganini bir zumda topib beradi.",
+    "say": "Ayniqsa, katta es opsiyasi kod bazasidan istalgan funksiya yoki o‘zgaruvchi qachon kiritilganini bir zumda topib beradi.",
+    "a0": 67.63,
+    "a1": 74.55,
+    "words": [
+      {
+        "w": "Ayniqsa,",
+        "s": 67.63,
+        "e": 67.95
+      },
+      {
+        "w": "katta",
+        "s": 68.29,
+        "e": 68.59
+      },
+      {
+        "w": "es",
+        "s": 68.75,
+        "e": 68.89
+      },
+      {
+        "w": "opsiyasi",
+        "s": 69.01,
+        "e": 69.39
+      },
+      {
+        "w": "kod",
+        "s": 69.73,
+        "e": 69.91
+      },
+      {
+        "w": "bazasidan",
+        "s": 69.97,
+        "e": 70.45
+      },
+      {
+        "w": "istalgan",
+        "s": 70.55,
+        "e": 71.01
+      },
+      {
+        "w": "funksiya",
+        "s": 71.07,
+        "e": 71.51
+      },
+      {
+        "w": "yoki",
+        "s": 71.53,
+        "e": 71.81
+      },
+      {
+        "w": "o‘zgaruvchi",
+        "s": 71.95,
+        "e": 72.41
+      },
+      {
+        "w": "qachon",
+        "s": 72.49,
+        "e": 72.81
+      },
+      {
+        "w": "kiritilganini",
+        "s": 72.87,
+        "e": 73.47
+      },
+      {
+        "w": "bir",
+        "s": 73.59,
+        "e": 73.71
+      },
+      {
+        "w": "zumda",
+        "s": 73.77,
+        "e": 73.95
+      },
+      {
+        "w": "topib",
+        "s": 73.99,
+        "e": 74.25
+      },
+      {
+        "w": "beradi.",
+        "s": 74.27,
+        "e": 74.55
+      }
+    ]
+  },
+  {
+    "id": "l11",
+    "scene": "xulosa",
+    "text": "Xulosa qilib aytganda, git log va git show — loyihada kim, qachon va nega o‘zgarish qilganini bilishning yagona haqiqat manbaidir.",
+    "show": "Xulosa qilib aytganda, git log va git show — loyihada kim, qachon va nega o‘zgarish qilganini bilishning yagona haqiqat manbaidir.",
+    "say": "Xulosa qilib aytganda, git log va git show — loyihada kim, qachon va nega o‘zgarish qilganini bilishning yagona haqiqat manbaidir.",
+    "a0": 75.43,
+    "a1": 83.36,
+    "words": [
+      {
+        "w": "Xulosa",
+        "s": 75.43,
+        "e": 75.73
+      },
+      {
+        "w": "qilib",
+        "s": 75.77,
+        "e": 75.95
+      },
+      {
+        "w": "aytganda,",
+        "s": 75.97,
+        "e": 76.29
+      },
+      {
+        "w": "git",
+        "s": 76.69,
+        "e": 76.85
+      },
+      {
+        "w": "log",
+        "s": 76.93,
+        "e": 77.13
+      },
+      {
+        "w": "va",
+        "s": 77.19,
+        "e": 77.27
+      },
+      {
+        "w": "git",
+        "s": 77.39,
+        "e": 77.53
+      },
+      {
+        "w": "show",
+        "s": 77.61,
+        "e": 77.81
+      },
+      {
+        "w": "—",
+        "s": 77.81,
+        "e": 77.81
+      },
+      {
+        "w": "loyihada",
+        "s": 78.15,
+        "e": 78.59
+      },
+      {
+        "w": "kim,",
+        "s": 78.71,
+        "e": 78.91
+      },
+      {
+        "w": "qachon",
+        "s": 79.25,
+        "e": 79.63
+      },
+      {
+        "w": "va",
+        "s": 79.73,
+        "e": 79.81
+      },
+      {
+        "w": "nega",
+        "s": 79.95,
+        "e": 80.21
+      },
+      {
+        "w": "o‘zgarish",
+        "s": 80.31,
+        "e": 80.67
+      },
+      {
+        "w": "qilganini",
+        "s": 80.69,
+        "e": 81.13
+      },
+      {
+        "w": "bilishning",
+        "s": 81.15,
+        "e": 81.53
+      },
+      {
+        "w": "yagona",
+        "s": 81.83,
+        "e": 82.28
+      },
+      {
+        "w": "haqiqat",
+        "s": 82.36,
+        "e": 82.86
+      },
+      {
+        "w": "manbaidir.",
+        "s": 82.92,
+        "e": 83.36
+      }
+    ]
+  },
+  {
+    "id": "l12",
+    "scene": "xulosa",
+    "text": "Keyingi bobda eng namunali va toza kommitlar yaratish madaniyatini o‘rganamiz. Rahmat!",
+    "show": "Keyingi bobda eng namunali va toza kommitlar yaratish madaniyatini o‘rganamiz. Rahmat!",
+    "say": "Keyingi bobda eng namunali va toza kommitlar yaratish madaniyatini o‘rganamiz. Rahmat!",
+    "a0": 84.4,
+    "a1": 89.26,
+    "words": [
+      {
+        "w": "Keyingi",
+        "s": 84.4,
+        "e": 84.68
+      },
+      {
+        "w": "bobda",
+        "s": 84.72,
+        "e": 84.98
+      },
+      {
+        "w": "eng",
+        "s": 85.18,
+        "e": 85.32
+      },
+      {
+        "w": "namunali",
+        "s": 85.36,
+        "e": 85.86
+      },
+      {
+        "w": "va",
+        "s": 85.98,
+        "e": 86.06
+      },
+      {
+        "w": "toza",
+        "s": 86.2,
+        "e": 86.46
+      },
+      {
+        "w": "kommitlar",
+        "s": 86.52,
+        "e": 86.9
+      },
+      {
+        "w": "yaratish",
+        "s": 86.94,
+        "e": 87.3
+      },
+      {
+        "w": "madaniyatini",
+        "s": 87.34,
+        "e": 87.84
+      },
+      {
+        "w": "o‘rganamiz.",
+        "s": 87.88,
+        "e": 88.3
+      },
+      {
+        "w": "Rahmat!",
+        "s": 88.96,
+        "e": 89.26
+      }
+    ]
+  }
+]

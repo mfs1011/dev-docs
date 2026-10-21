@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" playsinline poster="/video/git/09-tarixni-korish.jpg" src="/video/git/09-tarixni-korish.mp4">
+    <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/git/09-tarixni-korish.chapters.vtt" default>
+    <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/git/09-tarixni-korish.uz.vtt">
+  </video>
+  <figcaption>09.1-video. Tarixni ko'rish: log</figcaption>
+</figure>
+
 Bir nechta commit qilganingizdan keyin yoki tayyor repo'ni klon qilganingizda, birinchi savol: **nima bo'lgan?** Kim, qachon, nimani o'zgartirgan va nega? Pro Git aytganidek, bunga eng asosiy va eng kuchli vosita — `git log`.
 
 `git log` HEAD'dan (hozirgi commit'dan) boshlab **ota-ona havolalari** bo'ylab orqaga yuradi va har commit haqida ma'lumot chiqaradi. Esingizda bo'lsin: har **commit** — loyihaning ma'lum paytdagi to'liq surati (snapshot) va u o'zidan oldingi commit'ga (ota-onasiga) havola saqlaydi. Shu havolalar zanjiri — tarix:
