@@ -2,962 +2,1047 @@
   {
     "id": "l1",
     "scene": "intro",
-    "text": "Salom! Ushbu to‘rtinchi bobda Git repozitoriysini yaratish va masofadan klonlab olishni o‘rganamiz.",
-    "show": "Salom! Ushbu to‘rtinchi bobda Git repozitoriysini yaratish va masofadan klonlab olishni o‘rganamiz.",
-    "say": "Salom! Ushbu to‘rtinchi bobda Git repozitoriysini yaratish va masofadan klonlab olishni o‘rganamiz.",
+    "text": "Salom! Ushbu to‘rtinchi bobda Git repozitoriysini noldan yaratish va masofadan klonlab olishni o‘rganamiz.",
+    "show": "Salom! Ushbu to‘rtinchi bobda Git repozitoriysini noldan yaratish va masofadan klonlab olishni o‘rganamiz.",
+    "say": "Salom! Ushbu to‘rtinchi bobda Git repozitoriysini noldan yaratish va masofadan klonlab olishni o‘rganamiz.",
     "a0": 0.2,
-    "a1": 6.56,
+    "a1": 6.8,
     "words": [
       {
         "w": "Salom!",
         "s": 0.2,
-        "e": 0.46
+        "e": 0.48
       },
       {
         "w": "Ushbu",
-        "s": 1.12,
-        "e": 1.34
+        "s": 0.96,
+        "e": 1.18
       },
       {
         "w": "to‘rtinchi",
-        "s": 1.42,
-        "e": 1.82
+        "s": 1.26,
+        "e": 1.7
       },
       {
         "w": "bobda",
-        "s": 1.86,
-        "e": 2.14
+        "s": 1.74,
+        "e": 2.02
       },
       {
         "w": "Git",
-        "s": 2.46,
-        "e": 2.64
+        "s": 2.42,
+        "e": 2.6
       },
       {
         "w": "repozitoriysini",
-        "s": 2.7,
-        "e": 3.5
+        "s": 2.66,
+        "e": 3.42
+      },
+      {
+        "w": "noldan",
+        "s": 3.54,
+        "e": 3.94
       },
       {
         "w": "yaratish",
-        "s": 3.56,
-        "e": 4.0
+        "s": 4.0,
+        "e": 4.42
       },
       {
         "w": "va",
-        "s": 4.44,
-        "e": 4.5
+        "s": 4.5,
+        "e": 4.56
       },
       {
         "w": "masofadan",
-        "s": 4.66,
-        "e": 5.22
+        "s": 4.96,
+        "e": 5.52
       },
       {
         "w": "klonlab",
-        "s": 5.28,
-        "e": 5.72
+        "s": 5.62,
+        "e": 6.04
       },
       {
         "w": "olishni",
-        "s": 5.82,
-        "e": 6.1
+        "s": 6.08,
+        "e": 6.36
       },
       {
         "w": "o‘rganamiz.",
-        "s": 6.14,
-        "e": 6.56
+        "s": 6.4,
+        "e": 6.8
       }
     ]
   },
   {
     "id": "l2",
     "scene": "intro",
-    "text": "Gitda repozitoriyga ega bo‘lishning ikkita asosiy yo‘li bor: yangi loyiha uchun init va mavjud loyiha uchun klon.",
-    "show": "Gitda repozitoriyga ega bo‘lishning ikkita asosiy yo‘li bor: yangi loyiha uchun init va mavjud loyiha uchun klon.",
-    "say": "Gitda repozitoriyga ega bo‘lishning ikkita asosiy yo‘li bor: yangi loyiha uchun init va mavjud loyiha uchun klon.",
-    "a0": 7.4,
-    "a1": 14.73,
+    "text": "Repoga ega bo‘lishning ikkita asosiy yo‘li mavjud: yangi loyiha uchun init va mavjud loyiha tarixini ko‘chirish uchun klon.",
+    "show": "Repoga ega bo‘lishning ikkita asosiy yo‘li mavjud: yangi loyiha uchun init va mavjud loyiha tarixini ko‘chirish uchun klon.",
+    "say": "Repoga ega bo‘lishning ikkita asosiy yo‘li mavjud: yangi loyiha uchun init va mavjud loyiha tarixini ko‘chirish uchun klon.",
+    "a0": 8.07,
+    "a1": 14.79,
     "words": [
       {
-        "w": "Gitda",
-        "s": 7.4,
-        "e": 7.73
-      },
-      {
-        "w": "repozitoriyga",
-        "s": 7.79,
-        "e": 8.47
+        "w": "Repoga",
+        "s": 8.07,
+        "e": 8.41
       },
       {
         "w": "ega",
-        "s": 8.57,
-        "e": 8.75
+        "s": 8.47,
+        "e": 8.61
       },
       {
         "w": "bo‘lishning",
-        "s": 8.79,
-        "e": 9.25
+        "s": 8.63,
+        "e": 9.01
       },
       {
         "w": "ikkita",
-        "s": 9.39,
-        "e": 9.65
+        "s": 9.13,
+        "e": 9.39
       },
       {
         "w": "asosiy",
-        "s": 9.71,
-        "e": 10.07
+        "s": 9.45,
+        "e": 9.85
       },
       {
         "w": "yo‘li",
-        "s": 10.09,
-        "e": 10.35
+        "s": 9.91,
+        "e": 10.09
       },
       {
-        "w": "bor:",
-        "s": 10.39,
-        "e": 10.53
+        "w": "mavjud:",
+        "s": 10.13,
+        "e": 10.41
       },
       {
         "w": "yangi",
-        "s": 11.13,
-        "e": 11.39
+        "s": 10.89,
+        "e": 11.15
       },
       {
         "w": "loyiha",
-        "s": 11.43,
+        "s": 11.19,
+        "e": 11.47
+      },
+      {
+        "w": "uchun",
+        "s": 11.51,
         "e": 11.73
       },
       {
-        "w": "uchun",
-        "s": 11.79,
-        "e": 12.03
-      },
-      {
         "w": "init",
-        "s": 12.29,
-        "e": 12.57
+        "s": 11.91,
+        "e": 12.17
       },
       {
         "w": "va",
-        "s": 13.03,
-        "e": 13.11
+        "s": 12.39,
+        "e": 12.47
       },
       {
         "w": "mavjud",
-        "s": 13.23,
-        "e": 13.55
+        "s": 12.65,
+        "e": 12.99
       },
       {
         "w": "loyiha",
-        "s": 13.59,
-        "e": 13.87
+        "s": 13.03,
+        "e": 13.25
+      },
+      {
+        "w": "tarixini",
+        "s": 13.31,
+        "e": 13.65
+      },
+      {
+        "w": "ko‘chirish",
+        "s": 13.69,
+        "e": 14.03
       },
       {
         "w": "uchun",
-        "s": 13.93,
-        "e": 14.15
+        "s": 14.03,
+        "e": 14.21
       },
       {
         "w": "klon.",
-        "s": 14.47,
-        "e": 14.73
+        "s": 14.53,
+        "e": 14.79
       }
     ]
   },
   {
     "id": "l3",
     "scene": "git_init",
-    "text": "Git init buyrug‘i joriy papkada yashirin nuqta git katalogini yaratadi va uni to‘liq repozitoriyga aylantiradi.",
-    "show": "Git init buyrug‘i joriy papkada yashirin nuqta git katalogini yaratadi va uni to‘liq repozitoriyga aylantiradi.",
-    "say": "Git init buyrug‘i joriy papkada yashirin nuqta git katalogini yaratadi va uni to‘liq repozitoriyga aylantiradi.",
-    "a0": 15.71,
-    "a1": 22.31,
+    "text": "Git init buyrug‘i joriy papkada yashirin nuqta git katalogini yaratadi va uni to‘liq Git omboriga aylantiradi.",
+    "show": "Git init buyrug‘i joriy papkada yashirin nuqta git katalogini yaratadi va uni to‘liq Git omboriga aylantiradi.",
+    "say": "Git init buyrug‘i joriy papkada yashirin nuqta git katalogini yaratadi va uni to‘liq Git omboriga aylantiradi.",
+    "a0": 15.85,
+    "a1": 21.99,
     "words": [
       {
         "w": "Git",
-        "s": 15.71,
-        "e": 15.89
+        "s": 15.85,
+        "e": 16.03
       },
       {
         "w": "init",
-        "s": 16.01,
-        "e": 16.21
+        "s": 16.15,
+        "e": 16.39
       },
       {
         "w": "buyrug‘i",
-        "s": 16.27,
-        "e": 16.63
+        "s": 16.45,
+        "e": 16.81
       },
       {
         "w": "joriy",
-        "s": 16.99,
-        "e": 17.27
+        "s": 16.89,
+        "e": 17.15
       },
       {
         "w": "papkada",
-        "s": 17.33,
-        "e": 17.71
+        "s": 17.19,
+        "e": 17.51
       },
       {
         "w": "yashirin",
-        "s": 17.89,
-        "e": 18.33
+        "s": 17.57,
+        "e": 17.95
       },
       {
         "w": "nuqta",
-        "s": 18.59,
-        "e": 18.87
+        "s": 18.19,
+        "e": 18.49
       },
       {
         "w": "git",
-        "s": 18.95,
-        "e": 19.11
+        "s": 18.55,
+        "e": 18.71
       },
       {
         "w": "katalogini",
-        "s": 19.17,
-        "e": 19.65
+        "s": 18.77,
+        "e": 19.21
       },
       {
         "w": "yaratadi",
-        "s": 19.67,
-        "e": 20.07
+        "s": 19.25,
+        "e": 19.65
       },
       {
         "w": "va",
-        "s": 20.39,
-        "e": 20.45
+        "s": 19.73,
+        "e": 19.81
       },
       {
         "w": "uni",
-        "s": 20.55,
-        "e": 20.69
+        "s": 20.21,
+        "e": 20.33
       },
       {
         "w": "to‘liq",
-        "s": 20.83,
-        "e": 21.11
+        "s": 20.45,
+        "e": 20.75
       },
       {
-        "w": "repozitoriyga",
-        "s": 21.17,
-        "e": 21.79
+        "w": "Git",
+        "s": 20.89,
+        "e": 21.05
+      },
+      {
+        "w": "omboriga",
+        "s": 21.13,
+        "e": 21.51
       },
       {
         "w": "aylantiradi.",
-        "s": 21.83,
-        "e": 22.31
+        "s": 21.55,
+        "e": 21.99
       }
     ]
   },
   {
     "id": "l4",
     "scene": "git_init",
-    "text": "Nuqta git papkasi loyihaning butun o‘tmishini saqlaydi va unga qo‘lda tegmaslik qat’iy tavsiya etiladi.",
-    "show": "Nuqta git papkasi loyihaning butun o‘tmishini saqlaydi va unga qo‘lda tegmaslik qat’iy tavsiya etiladi.",
-    "say": "Nuqta git papkasi loyihaning butun o‘tmishini saqlaydi va unga qo‘lda tegmaslik qat’iy tavsiya etiladi.",
-    "a0": 23.02,
-    "a1": 29.18,
+    "text": "Nuqta git papkasi loyihaning butun o‘tmishi va sozlamalarini saqlaydi; unga hech qachon qo‘lda tegmaslik kerak.",
+    "show": "Nuqta git papkasi loyihaning butun o‘tmishi va sozlamalarini saqlaydi; unga hech qachon qo‘lda tegmaslik kerak.",
+    "say": "Nuqta git papkasi loyihaning butun o‘tmishi va sozlamalarini saqlaydi; unga hech qachon qo‘lda tegmaslik kerak.",
+    "a0": 22.82,
+    "a1": 28.76,
     "words": [
       {
         "w": "Nuqta",
-        "s": 23.02,
-        "e": 23.28
+        "s": 22.82,
+        "e": 23.06
       },
       {
         "w": "git",
-        "s": 23.34,
-        "e": 23.5
+        "s": 23.1,
+        "e": 23.24
       },
       {
         "w": "papkasi",
-        "s": 23.56,
-        "e": 24.02
+        "s": 23.3,
+        "e": 23.7
       },
       {
         "w": "loyihaning",
-        "s": 24.46,
-        "e": 24.92
+        "s": 23.84,
+        "e": 24.3
       },
       {
         "w": "butun",
-        "s": 24.98,
-        "e": 25.22
+        "s": 24.36,
+        "e": 24.68
       },
       {
-        "w": "o‘tmishini",
-        "s": 25.34,
-        "e": 25.76
-      },
-      {
-        "w": "saqlaydi",
-        "s": 25.78,
-        "e": 26.18
+        "w": "o‘tmishi",
+        "s": 24.84,
+        "e": 25.2
       },
       {
         "w": "va",
-        "s": 26.52,
-        "e": 26.6
+        "s": 25.24,
+        "e": 25.3
+      },
+      {
+        "w": "sozlamalarini",
+        "s": 25.38,
+        "e": 26.0
+      },
+      {
+        "w": "saqlaydi;",
+        "s": 26.0,
+        "e": 26.82
       },
       {
         "w": "unga",
-        "s": 26.68,
-        "e": 26.88
+        "s": 26.82,
+        "e": 27.02
+      },
+      {
+        "w": "hech",
+        "s": 27.1,
+        "e": 27.32
+      },
+      {
+        "w": "qachon",
+        "s": 27.34,
+        "e": 27.6
       },
       {
         "w": "qo‘lda",
-        "s": 26.98,
-        "e": 27.3
+        "s": 27.7,
+        "e": 28.0
       },
       {
         "w": "tegmaslik",
-        "s": 27.34,
-        "e": 27.84
+        "s": 28.04,
+        "e": 28.48
       },
       {
-        "w": "qat’iy",
-        "s": 27.98,
-        "e": 28.32
-      },
-      {
-        "w": "tavsiya",
-        "s": 28.42,
-        "e": 28.78
-      },
-      {
-        "w": "etiladi.",
-        "s": 28.84,
-        "e": 29.18
+        "w": "kerak.",
+        "s": 28.52,
+        "e": 28.76
       }
     ]
   },
   {
     "id": "l5",
     "scene": "unborn_va_birinchi_commit",
-    "text": "Yangi repozitoriyda kommit bo‘lmagani uchun brench hali tug‘ilmagan holatda bo‘ladi.",
-    "show": "Yangi repozitoriyda kommit bo‘lmagani uchun brench hali tug‘ilmagan holatda bo‘ladi.",
-    "say": "Yangi repozitoriyda kommit bo‘lmagani uchun brench hali tug‘ilmagan holatda bo‘ladi.",
+    "text": "Yangi repozitoriyda hali kommit bo‘lmagani sababli asosiy brench tug‘ilmagan, ya’ni anborn brench holatida turadi.",
+    "show": "Yangi repozitoriyda hali kommit bo‘lmagani sababli asosiy brench tug‘ilmagan, ya’ni anborn brench holatida turadi.",
+    "say": "Yangi repozitoriyda hali kommit bo‘lmagani sababli asosiy brench tug‘ilmagan, ya’ni anborn brench holatida turadi.",
     "a0": 30.0,
-    "a1": 34.76,
+    "a1": 35.98,
     "words": [
       {
         "w": "Yangi",
         "s": 30.0,
-        "e": 30.22
+        "e": 30.16
       },
       {
         "w": "repozitoriyda",
-        "s": 30.26,
-        "e": 30.98
-      },
-      {
-        "w": "kommit",
-        "s": 31.42,
-        "e": 31.7
-      },
-      {
-        "w": "bo‘lmagani",
-        "s": 31.76,
-        "e": 32.2
-      },
-      {
-        "w": "uchun",
-        "s": 32.24,
-        "e": 32.44
-      },
-      {
-        "w": "brench",
-        "s": 32.82,
-        "e": 33.1
+        "s": 30.2,
+        "e": 30.8
       },
       {
         "w": "hali",
-        "s": 33.14,
-        "e": 33.36
+        "s": 30.86,
+        "e": 31.04
       },
       {
-        "w": "tug‘ilmagan",
-        "s": 33.5,
-        "e": 34.04
+        "w": "kommit",
+        "s": 31.1,
+        "e": 31.34
       },
       {
-        "w": "holatda",
-        "s": 34.1,
-        "e": 34.46
+        "w": "bo‘lmagani",
+        "s": 31.38,
+        "e": 31.78
       },
       {
-        "w": "bo‘ladi.",
+        "w": "sababli",
+        "s": 31.82,
+        "e": 32.18
+      },
+      {
+        "w": "asosiy",
+        "s": 32.36,
+        "e": 32.78
+      },
+      {
+        "w": "brench",
+        "s": 32.92,
+        "e": 33.22
+      },
+      {
+        "w": "tug‘ilmagan,",
+        "s": 33.28,
+        "e": 33.78
+      },
+      {
+        "w": "ya’ni",
+        "s": 33.88,
+        "e": 34.08
+      },
+      {
+        "w": "anborn",
         "s": 34.5,
-        "e": 34.76
+        "e": 34.9
+      },
+      {
+        "w": "brench",
+        "s": 34.98,
+        "e": 35.22
+      },
+      {
+        "w": "holatida",
+        "s": 35.28,
+        "e": 35.68
+      },
+      {
+        "w": "turadi.",
+        "s": 35.72,
+        "e": 35.98
       }
     ]
   },
   {
     "id": "l6",
     "scene": "unborn_va_birinchi_commit",
-    "text": "Ilk fayllarni qo‘shib birinchi rut kommitni yaratishingiz bilan asosiy meyn brenchi rasman vujudga keladi.",
-    "show": "Ilk fayllarni qo‘shib birinchi rut kommitni yaratishingiz bilan asosiy meyn brenchi rasman vujudga keladi.",
-    "say": "Ilk fayllarni qo‘shib birinchi rut kommitni yaratishingiz bilan asosiy meyn brenchi rasman vujudga keladi.",
-    "a0": 35.54,
-    "a1": 42.01,
+    "text": "Fayllarni qo‘shib ilk rut kommitni amalga oshirishingiz bilan bosh brench rasman vujudga keladi va tarix boshlanadi.",
+    "show": "Fayllarni qo‘shib ilk rut kommitni amalga oshirishingiz bilan bosh brench rasman vujudga keladi va tarix boshlanadi.",
+    "say": "Fayllarni qo‘shib ilk rut kommitni amalga oshirishingiz bilan bosh brench rasman vujudga keladi va tarix boshlanadi.",
+    "a0": 36.86,
+    "a1": 43.23,
     "words": [
       {
-        "w": "Ilk",
-        "s": 35.54,
-        "e": 35.7
-      },
-      {
-        "w": "fayllarni",
-        "s": 35.76,
-        "e": 36.24
+        "w": "Fayllarni",
+        "s": 36.86,
+        "e": 37.34
       },
       {
         "w": "qo‘shib",
-        "s": 36.28,
-        "e": 36.58
+        "s": 37.38,
+        "e": 37.73
       },
       {
-        "w": "birinchi",
-        "s": 36.96,
-        "e": 37.32
+        "w": "ilk",
+        "s": 37.89,
+        "e": 38.05
       },
       {
         "w": "rut",
-        "s": 37.61,
-        "e": 37.79
+        "s": 38.25,
+        "e": 38.43
       },
       {
         "w": "kommitni",
-        "s": 37.87,
-        "e": 38.23
+        "s": 38.49,
+        "e": 38.85
       },
       {
-        "w": "yaratishingiz",
-        "s": 38.27,
-        "e": 38.83
+        "w": "amalga",
+        "s": 38.89,
+        "e": 39.15
+      },
+      {
+        "w": "oshirishingiz",
+        "s": 39.21,
+        "e": 39.71
       },
       {
         "w": "bilan",
-        "s": 38.87,
-        "e": 39.07
+        "s": 39.75,
+        "e": 39.93
       },
       {
-        "w": "asosiy",
-        "s": 39.41,
-        "e": 39.79
+        "w": "bosh",
+        "s": 40.07,
+        "e": 40.29
       },
       {
-        "w": "meyn",
-        "s": 39.95,
-        "e": 40.21
-      },
-      {
-        "w": "brenchi",
-        "s": 40.27,
-        "e": 40.65
+        "w": "brench",
+        "s": 40.35,
+        "e": 40.61
       },
       {
         "w": "rasman",
-        "s": 40.89,
-        "e": 41.29
+        "s": 40.75,
+        "e": 41.11
       },
       {
         "w": "vujudga",
-        "s": 41.35,
-        "e": 41.69
+        "s": 41.17,
+        "e": 41.51
       },
       {
-        "w": "keladi.",
-        "s": 41.73,
-        "e": 42.01
+        "w": "keladi",
+        "s": 41.55,
+        "e": 41.83
+      },
+      {
+        "w": "va",
+        "s": 42.01,
+        "e": 42.07
+      },
+      {
+        "w": "tarix",
+        "s": 42.41,
+        "e": 42.73
+      },
+      {
+        "w": "boshlanadi.",
+        "s": 42.77,
+        "e": 43.23
       }
     ]
   },
   {
     "id": "l7",
     "scene": "git_clone",
-    "text": "Git klon buyrug‘i esa boshqa serverdagi loyihaning nafaqat oxirgi fayllarini, balki butun tarixini to‘liq nusxalab oladi.",
-    "show": "Git klon buyrug‘i esa boshqa serverdagi loyihaning nafaqat oxirgi fayllarini, balki butun tarixini to‘liq nusxalab oladi.",
-    "say": "Git klon buyrug‘i esa boshqa serverdagi loyihaning nafaqat oxirgi fayllarini, balki butun tarixini to‘liq nusxalab oladi.",
-    "a0": 42.95,
-    "a1": 50.09,
+    "text": "Git klon buyrug‘i serverdagi loyihaning faqat bitta versiyasini emas, balki boshidan buyon yozilgan butun tarixini ko‘chiradi.",
+    "show": "Git klon buyrug‘i serverdagi loyihaning faqat bitta versiyasini emas, balki boshidan buyon yozilgan butun tarixini ko‘chiradi.",
+    "say": "Git klon buyrug‘i serverdagi loyihaning faqat bitta versiyasini emas, balki boshidan buyon yozilgan butun tarixini ko‘chiradi.",
+    "a0": 44.49,
+    "a1": 51.23,
     "words": [
       {
         "w": "Git",
-        "s": 42.95,
-        "e": 43.13
+        "s": 44.49,
+        "e": 44.63
       },
       {
         "w": "klon",
-        "s": 43.19,
-        "e": 43.45
+        "s": 44.69,
+        "e": 44.93
       },
       {
         "w": "buyrug‘i",
-        "s": 43.51,
-        "e": 43.83
-      },
-      {
-        "w": "esa",
-        "s": 43.89,
-        "e": 44.07
-      },
-      {
-        "w": "boshqa",
-        "s": 44.33,
-        "e": 44.61
+        "s": 44.97,
+        "e": 45.35
       },
       {
         "w": "serverdagi",
-        "s": 44.67,
-        "e": 45.23
+        "s": 45.43,
+        "e": 45.93
       },
       {
         "w": "loyihaning",
-        "s": 45.27,
-        "e": 45.73
+        "s": 45.97,
+        "e": 46.43
       },
       {
-        "w": "nafaqat",
-        "s": 46.03,
-        "e": 46.41
+        "w": "faqat",
+        "s": 46.49,
+        "e": 46.79
       },
       {
-        "w": "oxirgi",
-        "s": 46.55,
-        "e": 46.91
+        "w": "bitta",
+        "s": 46.89,
+        "e": 47.17
       },
       {
-        "w": "fayllarini,",
-        "s": 46.97,
-        "e": 47.49
+        "w": "versiyasini",
+        "s": 47.21,
+        "e": 47.67
+      },
+      {
+        "w": "emas,",
+        "s": 47.71,
+        "e": 47.93
       },
       {
         "w": "balki",
-        "s": 47.85,
-        "e": 48.11
+        "s": 47.99,
+        "e": 48.23
       },
       {
-        "w": "butun",
-        "s": 48.27,
-        "e": 48.55
+        "w": "boshidan",
+        "s": 48.63,
+        "e": 49.09
       },
       {
-        "w": "tarixini",
-        "s": 48.59,
-        "e": 49.01
-      },
-      {
-        "w": "to‘liq",
-        "s": 49.11,
+        "w": "buyon",
+        "s": 49.17,
         "e": 49.41
       },
       {
-        "w": "nusxalab",
-        "s": 49.47,
-        "e": 49.83
+        "w": "yozilgan",
+        "s": 49.45,
+        "e": 49.89
       },
       {
-        "w": "oladi.",
-        "s": 49.85,
-        "e": 50.09
+        "w": "butun",
+        "s": 50.01,
+        "e": 50.33
+      },
+      {
+        "w": "tarixini",
+        "s": 50.39,
+        "e": 50.81
+      },
+      {
+        "w": "ko‘chiradi.",
+        "s": 50.85,
+        "e": 51.23
       }
     ]
   },
   {
     "id": "l8",
     "scene": "git_clone",
-    "text": "Natijada lokal kompyuteringizda server bilan to‘laqonli bog‘langan oridjin repozitoriyasi paydo bo‘ladi.",
-    "show": "Natijada lokal kompyuteringizda server bilan to‘laqonli bog‘langan oridjin repozitoriyasi paydo bo‘ladi.",
-    "say": "Natijada lokal kompyuteringizda server bilan to‘laqonli bog‘langan orijin repozitoriyasi paydo bo‘ladi.",
-    "a0": 50.77,
-    "a1": 56.94,
+    "text": "Natijada lokal kompyuteringizda server bilan to‘laqonli bog‘langan, mustaqil orijin repozitoriyasi paydo bo‘ladi.",
+    "show": "Natijada lokal kompyuteringizda server bilan to‘laqonli bog‘langan, mustaqil orijin repozitoriyasi paydo bo‘ladi.",
+    "say": "Natijada lokal kompyuteringizda server bilan to‘laqonli bog‘langan, mustaqil orijin repozitoriyasi paydo bo‘ladi.",
+    "a0": 51.83,
+    "a1": 58.3,
     "words": [
       {
         "w": "Natijada",
-        "s": 50.77,
-        "e": 51.23
+        "s": 51.83,
+        "e": 52.27
       },
       {
         "w": "lokal",
-        "s": 51.65,
-        "e": 51.95
+        "s": 52.62,
+        "e": 52.9
       },
       {
         "w": "kompyuteringizda",
-        "s": 51.99,
-        "e": 52.76
+        "s": 52.94,
+        "e": 53.66
       },
       {
         "w": "server",
-        "s": 52.88,
-        "e": 53.24
+        "s": 53.76,
+        "e": 54.1
       },
       {
         "w": "bilan",
-        "s": 53.28,
-        "e": 53.48
+        "s": 54.12,
+        "e": 54.3
       },
       {
         "w": "to‘laqonli",
-        "s": 53.56,
-        "e": 54.16
+        "s": 54.36,
+        "e": 54.92
       },
       {
-        "w": "bog‘langan",
-        "s": 54.24,
-        "e": 54.74
+        "w": "bog‘langan,",
+        "s": 55.0,
+        "e": 55.52
+      },
+      {
+        "w": "mustaqil",
+        "s": 55.86,
+        "e": 56.32
       },
       {
         "w": "orijin",
-        "s": 55.18,
-        "e": 55.54
+        "s": 56.56,
+        "e": 56.94
       },
       {
         "w": "repozitoriyasi",
-        "s": 55.6,
-        "e": 56.34
+        "s": 57.02,
+        "e": 57.72
       },
       {
         "w": "paydo",
-        "s": 56.38,
-        "e": 56.62
+        "s": 57.76,
+        "e": 57.98
       },
       {
         "w": "bo‘ladi.",
-        "s": 56.68,
-        "e": 56.94
+        "s": 58.04,
+        "e": 58.3
       }
     ]
   },
   {
     "id": "l9",
     "scene": "protokollar_va_opsiyalar",
-    "text": "Klonlashda eych-ti-ti-pi-es yoki xavfsiz es-es-eych protokollaridan foydalanish mumkin.",
-    "show": "Klonlashda eych-ti-ti-pi-es yoki xavfsiz es-es-eych protokollaridan foydalanish mumkin.",
-    "say": "Klonlashda eych ti ti pi es yoki xavfsiz es es eych protokollaridan foydalanish mumkin.",
-    "a0": 57.7,
-    "a1": 63.16,
+    "text": "Klonlashda eych-ti-ti-pi-es yoki xavfsiz es-es-eych kabi bir nechta tarmoq protokollaridan foydalanish mumkin.",
+    "show": "Klonlashda eych-ti-ti-pi-es yoki xavfsiz es-es-eych kabi bir nechta tarmoq protokollaridan foydalanish mumkin.",
+    "say": "Klonlashda eych ti ti pi es yoki xavfsiz es es eych kabi bir nechta tarmoq protokollaridan foydalanish mumkin.",
+    "a0": 59.38,
+    "a1": 65.18,
     "words": [
       {
         "w": "Klonlashda",
-        "s": 57.7,
-        "e": 58.3
+        "s": 59.38,
+        "e": 59.92
       },
       {
         "w": "eych",
-        "s": 58.82,
-        "e": 58.98
+        "s": 60.14,
+        "e": 60.3
       },
       {
         "w": "ti",
-        "s": 59.0,
-        "e": 59.08
+        "s": 60.32,
+        "e": 60.38
       },
       {
         "w": "ti",
-        "s": 59.12,
-        "e": 59.2
+        "s": 60.42,
+        "e": 60.5
       },
       {
         "w": "pi",
-        "s": 59.24,
-        "e": 59.32
+        "s": 60.54,
+        "e": 60.64
       },
       {
         "w": "es",
-        "s": 59.4,
-        "e": 59.56
+        "s": 60.76,
+        "e": 60.92
       },
       {
         "w": "yoki",
-        "s": 59.86,
-        "e": 60.14
+        "s": 60.96,
+        "e": 61.28
       },
       {
         "w": "xavfsiz",
-        "s": 60.32,
-        "e": 60.72
+        "s": 61.4,
+        "e": 61.8
       },
       {
         "w": "es",
-        "s": 60.96,
-        "e": 61.06
+        "s": 61.96,
+        "e": 62.06
       },
       {
         "w": "es",
-        "s": 61.1,
-        "e": 61.2
+        "s": 62.1,
+        "e": 62.2
       },
       {
         "w": "eych",
-        "s": 61.36,
-        "e": 61.56
+        "s": 62.26,
+        "e": 62.44
+      },
+      {
+        "w": "kabi",
+        "s": 62.48,
+        "e": 62.68
+      },
+      {
+        "w": "bir",
+        "s": 62.8,
+        "e": 62.94
+      },
+      {
+        "w": "nechta",
+        "s": 63.0,
+        "e": 63.24
+      },
+      {
+        "w": "tarmoq",
+        "s": 63.3,
+        "e": 63.6
       },
       {
         "w": "protokollaridan",
-        "s": 61.62,
-        "e": 62.34
+        "s": 63.64,
+        "e": 64.36
       },
       {
         "w": "foydalanish",
-        "s": 62.38,
-        "e": 62.86
+        "s": 64.4,
+        "e": 64.9
       },
       {
         "w": "mumkin.",
-        "s": 62.9,
-        "e": 63.16
+        "s": 64.94,
+        "e": 65.18
       }
     ]
   },
   {
     "id": "l10",
     "scene": "protokollar_va_opsiyalar",
-    "text": "Katta loyihalarda faqat oxirgi versiya kerak bo‘lsa, depsh bir opsiyasi bilan sayoz klon olish qulay.",
-    "show": "Katta loyihalarda faqat oxirgi versiya kerak bo‘lsa, depsh bir opsiyasi bilan sayoz klon olish qulay.",
-    "say": "Katta loyihalarda faqat oxirgi versiya kerak bo‘lsa, deps bir opsiyasi bilan sayoz klon olish qulay.",
-    "a0": 63.72,
-    "a1": 69.85,
+    "text": "Katta va og‘ir repozitoriylarda esa depsh bir opsiyasi orqali faqat oxirgi kommitni sayoz klonlash juda qulay.",
+    "show": "Katta va og‘ir repozitoriylarda esa depsh bir opsiyasi orqali faqat oxirgi kommitni sayoz klonlash juda qulay.",
+    "say": "Katta va og‘ir repozitoriylarda esa deps bir opsiyasi orqali faqat oxirgi kommitni sayoz klonlash juda qulay.",
+    "a0": 65.82,
+    "a1": 72.71,
     "words": [
       {
         "w": "Katta",
-        "s": 63.72,
-        "e": 64.0
+        "s": 65.82,
+        "e": 66.14
       },
       {
-        "w": "loyihalarda",
-        "s": 64.04,
-        "e": 64.6
+        "w": "va",
+        "s": 66.2,
+        "e": 66.28
       },
       {
-        "w": "faqat",
-        "s": 64.8,
-        "e": 65.06
+        "w": "og‘ir",
+        "s": 66.46,
+        "e": 66.7
       },
       {
-        "w": "oxirgi",
-        "s": 65.24,
-        "e": 65.58
+        "w": "repozitoriylarda",
+        "s": 66.76,
+        "e": 67.57
       },
       {
-        "w": "versiya",
-        "s": 65.64,
-        "e": 65.97
-      },
-      {
-        "w": "kerak",
-        "s": 66.01,
-        "e": 66.27
-      },
-      {
-        "w": "bo‘lsa,",
-        "s": 66.31,
-        "e": 66.57
+        "w": "esa",
+        "s": 67.61,
+        "e": 67.77
       },
       {
         "w": "deps",
-        "s": 67.03,
-        "e": 67.27
+        "s": 68.13,
+        "e": 68.41
       },
       {
         "w": "bir",
-        "s": 67.41,
-        "e": 67.53
+        "s": 68.55,
+        "e": 68.69
       },
       {
         "w": "opsiyasi",
-        "s": 67.69,
-        "e": 68.09
+        "s": 68.85,
+        "e": 69.19
       },
       {
-        "w": "bilan",
-        "s": 68.13,
-        "e": 68.33
+        "w": "orqali",
+        "s": 69.23,
+        "e": 69.53
+      },
+      {
+        "w": "faqat",
+        "s": 69.61,
+        "e": 69.87
+      },
+      {
+        "w": "oxirgi",
+        "s": 70.27,
+        "e": 70.63
+      },
+      {
+        "w": "kommitni",
+        "s": 70.69,
+        "e": 71.07
       },
       {
         "w": "sayoz",
-        "s": 68.65,
-        "e": 68.97
+        "s": 71.19,
+        "e": 71.51
       },
       {
-        "w": "klon",
-        "s": 69.03,
-        "e": 69.25
+        "w": "klonlash",
+        "s": 71.59,
+        "e": 72.05
       },
       {
-        "w": "olish",
-        "s": 69.37,
-        "e": 69.57
+        "w": "juda",
+        "s": 72.29,
+        "e": 72.45
       },
       {
         "w": "qulay.",
-        "s": 69.61,
-        "e": 69.85
+        "s": 72.49,
+        "e": 72.71
       }
     ]
   },
   {
     "id": "l11",
     "scene": "xulosa",
-    "text": "Xulosa qilib aytganda, init va klon buyruqlari har qanday loyiha bilan ishlashning eng birinchi debochasidir.",
-    "show": "Xulosa qilib aytganda, init va klon buyruqlari har qanday loyiha bilan ishlashning eng birinchi debochasidir.",
-    "say": "Xulosa qilib aytganda, init va klon buyruqlari har qanday loyiha bilan ishlashning eng birinchi debochasidir.",
-    "a0": 70.57,
-    "a1": 76.49,
+    "text": "Xulosa qilib aytganda, init va klon amallari har qanday dasturlash loyihasining eng muhim boshlang‘ich poydevoridir.",
+    "show": "Xulosa qilib aytganda, init va klon amallari har qanday dasturlash loyihasining eng muhim boshlang‘ich poydevoridir.",
+    "say": "Xulosa qilib aytganda, init va klon amallari har qanday dasturlash loyihasining eng muhim boshlang‘ich poydevoridir.",
+    "a0": 73.93,
+    "a1": 80.09,
     "words": [
       {
         "w": "Xulosa",
-        "s": 70.57,
-        "e": 70.87
+        "s": 73.93,
+        "e": 74.21
       },
       {
         "w": "qilib",
-        "s": 70.91,
-        "e": 71.09
+        "s": 74.23,
+        "e": 74.39
       },
       {
         "w": "aytganda,",
-        "s": 71.11,
-        "e": 71.47
+        "s": 74.41,
+        "e": 74.79
       },
       {
         "w": "init",
-        "s": 71.85,
-        "e": 72.07
+        "s": 75.03,
+        "e": 75.35
       },
       {
         "w": "va",
-        "s": 72.15,
-        "e": 72.23
+        "s": 75.45,
+        "e": 75.53
       },
       {
         "w": "klon",
-        "s": 72.35,
-        "e": 72.59
+        "s": 75.71,
+        "e": 75.95
       },
       {
-        "w": "buyruqlari",
-        "s": 72.63,
-        "e": 73.11
+        "w": "amallari",
+        "s": 76.01,
+        "e": 76.39
       },
       {
         "w": "har",
-        "s": 73.43,
-        "e": 73.61
+        "s": 76.49,
+        "e": 76.65
       },
       {
         "w": "qanday",
-        "s": 73.65,
-        "e": 73.93
+        "s": 76.71,
+        "e": 76.99
       },
       {
-        "w": "loyiha",
-        "s": 73.99,
-        "e": 74.27
+        "w": "dasturlash",
+        "s": 77.03,
+        "e": 77.55
       },
       {
-        "w": "bilan",
-        "s": 74.31,
-        "e": 74.49
-      },
-      {
-        "w": "ishlashning",
-        "s": 74.57,
-        "e": 75.03
+        "w": "loyihasining",
+        "s": 77.59,
+        "e": 78.15
       },
       {
         "w": "eng",
-        "s": 75.25,
-        "e": 75.41
+        "s": 78.37,
+        "e": 78.53
       },
       {
-        "w": "birinchi",
-        "s": 75.47,
-        "e": 75.79
+        "w": "muhim",
+        "s": 78.61,
+        "e": 78.87
       },
       {
-        "w": "debochasidir.",
-        "s": 75.85,
-        "e": 76.49
+        "w": "boshlang‘ich",
+        "s": 78.95,
+        "e": 79.47
+      },
+      {
+        "w": "poydevoridir.",
+        "s": 79.51,
+        "e": 80.09
       }
     ]
   },
   {
     "id": "l12",
     "scene": "xulosa",
-    "text": "Keyingi bobda Gitdagi uchta holat va uchta hududni tushunib olamiz. E’tiboringiz uchun rahmat!",
-    "show": "Keyingi bobda Gitdagi uchta holat va uchta hududni tushunib olamiz. E’tiboringiz uchun rahmat!",
-    "say": "Keyingi bobda Gitdagi uchta holat va uchta hududni tushunib olamiz. E’tiboringiz uchun rahmat!",
-    "a0": 77.31,
-    "a1": 82.98,
+    "text": "Keyingi beshinchi bobda Gitdagi uchta holat va uchta hudud mexanizmini o‘rganamiz. E’tiboringiz uchun rahmat!",
+    "show": "Keyingi beshinchi bobda Gitdagi uchta holat va uchta hudud mexanizmini o‘rganamiz. E’tiboringiz uchun rahmat!",
+    "say": "Keyingi beshinchi bobda Gitdagi uchta holat va uchta hudud mexanizmini o‘rganamiz. E’tiboringiz uchun rahmat!",
+    "a0": 81.16,
+    "a1": 87.14,
     "words": [
       {
         "w": "Keyingi",
-        "s": 77.31,
-        "e": 77.62
+        "s": 81.16,
+        "e": 81.42
+      },
+      {
+        "w": "beshinchi",
+        "s": 81.46,
+        "e": 81.78
       },
       {
         "w": "bobda",
-        "s": 77.66,
-        "e": 77.94
+        "s": 81.82,
+        "e": 82.08
       },
       {
         "w": "Gitdagi",
-        "s": 78.16,
-        "e": 78.58
+        "s": 82.18,
+        "e": 82.56
       },
       {
         "w": "uchta",
-        "s": 78.74,
-        "e": 79.0
+        "s": 82.7,
+        "e": 82.96
       },
       {
         "w": "holat",
-        "s": 79.08,
-        "e": 79.44
+        "s": 83.06,
+        "e": 83.44
       },
       {
         "w": "va",
-        "s": 79.52,
-        "e": 79.58
+        "s": 83.52,
+        "e": 83.58
       },
       {
         "w": "uchta",
-        "s": 79.78,
-        "e": 80.04
+        "s": 83.98,
+        "e": 84.24
       },
       {
-        "w": "hududni",
-        "s": 80.1,
-        "e": 80.5
+        "w": "hudud",
+        "s": 84.32,
+        "e": 84.58
       },
       {
-        "w": "tushunib",
-        "s": 80.54,
-        "e": 80.86
+        "w": "mexanizmini",
+        "s": 84.62,
+        "e": 85.18
       },
       {
-        "w": "olamiz.",
-        "s": 80.88,
-        "e": 81.16
+        "w": "o‘rganamiz.",
+        "s": 85.22,
+        "e": 85.64
       },
       {
         "w": "E’tiboringiz",
-        "s": 81.82,
-        "e": 82.3
+        "s": 86.18,
+        "e": 86.64
       },
       {
         "w": "uchun",
-        "s": 82.32,
-        "e": 82.5
+        "s": 86.68,
+        "e": 86.84
       },
       {
         "w": "rahmat!",
-        "s": 82.7,
-        "e": 82.98
+        "s": 86.88,
+        "e": 87.14
       }
     ]
   }

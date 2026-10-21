@@ -20,74 +20,74 @@
   };
 
   const hold = {
-    l2: 1.0,
-    l4: 1.0,
-    l6: 1.0,
-    l8: 1.0,
-    l10: 1.0,
-    l12: 1.5
+    l2: 1.5,
+    l4: 2.0,
+    l6: 2.0,
+    l8: 2.0,
+    l10: 2.0,
+    l12: 2.0
   };
 
   const lines = [
     {
       id: 'l1',
       scene: 'intro',
-      text: "Salom! Ushbu to‘rtinchi bobda Git repozitoriysini yaratish va masofadan klonlab olishni o‘rganamiz."
+      text: "Salom! Ushbu to‘rtinchi bobda Git repozitoriysini noldan yaratish va masofadan klonlab olishni o‘rganamiz."
     },
     {
       id: 'l2',
       scene: 'intro',
-      text: "Gitda repozitoriyga ega bo‘lishning ikkita asosiy yo‘li bor: yangi loyiha uchun init va mavjud loyiha uchun klon."
+      text: "Repoga ega bo‘lishning ikkita asosiy yo‘li mavjud: yangi loyiha uchun init va mavjud loyiha tarixini ko‘chirish uchun klon."
     },
     {
       id: 'l3',
       scene: 'git_init',
-      text: "Git init buyrug‘i joriy papkada yashirin nuqta git katalogini yaratadi va uni to‘liq repozitoriyga aylantiradi."
+      text: "Git init buyrug‘i joriy papkada yashirin nuqta git katalogini yaratadi va uni to‘liq Git omboriga aylantiradi."
     },
     {
       id: 'l4',
       scene: 'git_init',
-      text: "Nuqta git papkasi loyihaning butun o‘tmishini saqlaydi va unga qo‘lda tegmaslik qat’iy tavsiya etiladi."
+      text: "Nuqta git papkasi loyihaning butun o‘tmishi va sozlamalarini saqlaydi; unga hech qachon qo‘lda tegmaslik kerak."
     },
     {
       id: 'l5',
       scene: 'unborn_va_birinchi_commit',
-      text: "Yangi repozitoriyda kommit bo‘lmagani uchun brench hali tug‘ilmagan holatda bo‘ladi."
+      text: "Yangi repozitoriyda hali kommit bo‘lmagani sababli asosiy brench tug‘ilmagan, ya’ni anborn brench holatida turadi."
     },
     {
       id: 'l6',
       scene: 'unborn_va_birinchi_commit',
-      text: "Ilk fayllarni qo‘shib birinchi rut kommitni yaratishingiz bilan asosiy meyn brenchi rasman vujudga keladi."
+      text: "Fayllarni qo‘shib ilk rut kommitni amalga oshirishingiz bilan bosh brench rasman vujudga keladi va tarix boshlanadi."
     },
     {
       id: 'l7',
       scene: 'git_clone',
-      text: "Git klon buyrug‘i esa boshqa serverdagi loyihaning nafaqat oxirgi fayllarini, balki butun tarixini to‘liq nusxalab oladi."
+      text: "Git klon buyrug‘i serverdagi loyihaning faqat bitta versiyasini emas, balki boshidan buyon yozilgan butun tarixini ko‘chiradi."
     },
     {
       id: 'l8',
       scene: 'git_clone',
-      text: "Natijada lokal kompyuteringizda server bilan to‘laqonli bog‘langan oridjin repozitoriyasi paydo bo‘ladi."
+      text: "Natijada lokal kompyuteringizda server bilan to‘laqonli bog‘langan, mustaqil orijin repozitoriyasi paydo bo‘ladi."
     },
     {
       id: 'l9',
       scene: 'protokollar_va_opsiyalar',
-      text: "Klonlashda eych-ti-ti-pi-es yoki xavfsiz es-es-eych protokollaridan foydalanish mumkin."
+      text: "Klonlashda eych-ti-ti-pi-es yoki xavfsiz es-es-eych kabi bir nechta tarmoq protokollaridan foydalanish mumkin."
     },
     {
       id: 'l10',
       scene: 'protokollar_va_opsiyalar',
-      text: "Katta loyihalarda faqat oxirgi versiya kerak bo‘lsa, depsh bir opsiyasi bilan sayoz klon olish qulay."
+      text: "Katta va og‘ir repozitoriylarda esa depsh bir opsiyasi orqali faqat oxirgi kommitni sayoz klonlash juda qulay."
     },
     {
       id: 'l11',
       scene: 'xulosa',
-      text: "Xulosa qilib aytganda, init va klon buyruqlari har qanday loyiha bilan ishlashning eng birinchi debochasidir."
+      text: "Xulosa qilib aytganda, init va klon amallari har qanday dasturlash loyihasining eng muhim boshlang‘ich poydevoridir."
     },
     {
       id: 'l12',
       scene: 'xulosa',
-      text: "Keyingi bobda Gitdagi uchta holat va uchta hududni tushunib olamiz. E’tiboringiz uchun rahmat!"
+      text: "Keyingi beshinchi bobda Gitdagi uchta holat va uchta hudud mexanizmini o‘rganamiz. E’tiboringiz uchun rahmat!"
     }
   ];
 

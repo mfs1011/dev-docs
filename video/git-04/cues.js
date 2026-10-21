@@ -8,16 +8,16 @@
   // So'z bog'lanishlari
   [
     ['l1', 'Salom!'], ['l1', 'o‘rganamiz.'],
-    ['l2', 'Gitda'], ['l2', 'klon.'],
+    ['l2', 'Repoga'], ['l2', 'klon.'],
     ['l3', 'Git'], ['l3', 'aylantiradi.'],
-    ['l4', 'Nuqta'], ['l4', 'etiladi.'],
-    ['l5', 'Yangi'], ['l5', 'bo‘ladi.'],
-    ['l6', 'Ilk'], ['l6', 'keladi.'],
-    ['l7', 'Git'], ['l7', 'oladi.'],
+    ['l4', 'Nuqta'], ['l4', 'kerak.'],
+    ['l5', 'Yangi'], ['l5', 'turadi.'],
+    ['l6', 'Fayllarni'], ['l6', 'boshlanadi.'],
+    ['l7', 'Git'], ['l7', 'ko‘chiradi.'],
     ['l8', 'Natijada'], ['l8', 'bo‘ladi.'],
     ['l9', 'Klonlashda'], ['l9', 'mumkin.'],
     ['l10', 'Katta'], ['l10', 'qulay.'],
-    ['l11', 'Xulosa'], ['l11', 'debochasidir.'],
+    ['l11', 'Xulosa'], ['l11', 'poydevoridir.'],
     ['l12', 'Keyingi'], ['l12', 'rahmat!']
   ].forEach(([l, w]) => {
     try {
@@ -28,14 +28,14 @@
 
   try { add(W('l2', 'klon.'), 'ding'); } catch (e) {}
   try { add(W('l3', 'aylantiradi.'), 'whoosh'); } catch (e) {}
-  try { add(W('l4', 'etiladi.'), 'pop'); } catch (e) {}
-  try { add(W('l5', 'bo‘ladi.'), 'error'); } catch (e) {}
-  try { add(W('l6', 'keladi.'), 'ding'); } catch (e) {}
-  try { add(W('l7', 'oladi.'), 'whoosh'); } catch (e) {}
+  try { add(W('l4', 'kerak.'), 'pop'); } catch (e) {}
+  try { add(W('l5', 'turadi.'), 'whoosh'); } catch (e) {}
+  try { add(W('l6', 'boshlanadi.'), 'ding'); } catch (e) {}
+  try { add(W('l7', 'ko‘chiradi.'), 'whoosh'); } catch (e) {}
   try { add(W('l8', 'bo‘ladi.'), 'ding'); } catch (e) {}
   try { add(W('l9', 'mumkin.'), 'pop'); } catch (e) {}
   try { add(W('l10', 'qulay.'), 'ding'); } catch (e) {}
-  try { add(W('l11', 'debochasidir.'), 'ding'); } catch (e) {}
+  try { add(W('l11', 'poydevoridir.'), 'ding'); } catch (e) {}
   add(L('l12').e + 0.3, 'swell');
 
   cues.sort((a, b) => a.t - b.t);
