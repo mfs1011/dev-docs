@@ -7,16 +7,49 @@
     W, H, C, UI, MONO,
     clamp, P, lerp, eo, eio, eback, font, withA, rr,
     tw, text, bg, ring, burst, link, pill,
-    fileChip, chip, panel, card
+    fileChip, chip, panel, card, terminal
   } = kit;
 
   const TM = window.TM, NR = window.NR;
 
-  function code(str, x, y, opt = {}) {
+  // Real terminalda buyruqlarni jonli harfma-harf yozish va kursor miltillashi
+  function drawCommandLine(promptStr, fullCmd, tStart, tTypeEnd, tEnter, u, x, y, opt = {}) {
+    const tPrompt = opt.tPromptShow != null ? opt.tPromptShow : tStart - 0.3;
+    if (u < tPrompt) return;
+
+    const pCol = opt.promptCol || C.green;
+    text(promptStr, x, y, { size: 15, fam: MONO, color: pCol, weight: 700, align: 'left' });
+    const pw = tw(promptStr, 15, 700, MONO);
+
+    if (u < tStart) {
+      if (Math.floor(u * 2.5) % 2 === 0) {
+        text('█', x + pw + 2, y, { size: 15, fam: MONO, color: '#38bdf8', align: 'left' });
+      }
+      return;
+    }
+
+    const dur = Math.max(0.01, tTypeEnd - tStart);
+    const progress = clamp((u - tStart) / dur);
+    const charCount = Math.floor(progress * fullCmd.length);
+    const typedStr = fullCmd.slice(0, charCount);
+
+    text(typedStr, x + pw, y, { size: 15, fam: MONO, color: opt.cmdCol || '#e2e8f0', weight: 600, align: 'left' });
+    const cmdW = tw(typedStr, 15, 600, MONO);
+
+    if (u < tEnter) {
+      const isVisible = u < tTypeEnd ? true : (Math.floor(u * 2.5) % 2 === 0);
+      if (isVisible) {
+        text('█', x + pw + cmdW + 2, y, { size: 15, fam: MONO, color: '#38bdf8', align: 'left' });
+      }
+    }
+  }
+
+  function drawOutputLine(str, tAppear, u, x, y, opt = {}) {
+    if (u < tAppear) return;
     text(str, x, y, {
-      size: opt.size || 16,
+      size: opt.size || 14,
       fam: MONO,
-      color: opt.color || C.cyan,
+      color: opt.color || '#94a3b8',
       weight: opt.weight || 500,
       align: 'left'
     });
@@ -26,7 +59,7 @@
   // 1-SAHNA: Kirish va Bekor Qilish Xaritasi
   // ==========================================
   function sceneIntro(u, bounds, o = {}) {
-    // Sarlavha bosqichi (u < 8.5)
+    // Sarlavha bosqichi (u < 8.5 va poster emas)
     if (u < 8.5 && !o.isPoster) {
       const kTitle = P(u, 0.4, 0.7);
       withA(kTitle, () => {
@@ -43,15 +76,15 @@
 
           card(400, 580, 340, 110, { fill: 'rgba(255,209,102,0.10)', col: C.yellow });
           pill("Oxirgi Commit", 570, 615, C.yellow, { size: 18 });
-          code("git commit --amend", 570, 655, { size: 15, color: C.yellow });
+          text("git commit --amend", 570, 655, { size: 15, fam: MONO, color: C.yellow, weight: 600 });
 
           card(790, 580, 340, 110, { fill: 'rgba(52,211,153,0.10)', col: C.green });
           pill("Index (Staging)", 960, 615, C.green, { size: 18 });
-          code("git restore --staged", 960, 655, { size: 15, color: C.green });
+          text("git restore --staged", 960, 655, { size: 15, fam: MONO, color: C.green, weight: 600 });
 
           card(1180, 580, 340, 110, { fill: 'rgba(239,68,68,0.10)', col: C.red });
           pill("Working Tree", 1350, 615, C.red, { size: 18 });
-          code("git restore <fayl>", 1350, 655, { size: 15, color: C.red });
+          text("git restore <fayl>", 1350, 655, { size: 15, fam: MONO, color: C.red, weight: 600 });
 
           ctx.restore();
         });
@@ -72,7 +105,7 @@
         ctx.save(); if (!o.isPoster) ctx.translate(0, (1 - eo(kG1)) * 16);
         card(125, 255, 790, 160, { fill: 'rgba(255,209,102,0.08)', col: C.yellow });
         pill("3 Ta Hudud Chegarasi", 230, 290, C.yellow, { size: 16, mono: false });
-        text("• Oxirgi commitda: Fayl unutilgan yoki xabarda imlo xatosi.", 150, 335, { size: 17, color: C.text, align: 'left' });
+        text("• Oxirgi commitda: Fayl unutilgan yoki xabarda imlo xatosi bor.", 150, 335, { size: 17, color: C.text, align: 'left' });
         text("• Index hududida: Keraksiz fayl tasodifan 'git add' bilan qo'shilgan.", 150, 375, { size: 17, color: C.yellow, align: 'left', weight: 600 });
         ctx.restore();
       });
@@ -133,258 +166,320 @@
   }
 
   // ==========================================
-  // 2-SAHNA: commit --amend
+  // 2-SAHNA: commit --amend (SPLIT SCREEN)
   // ==========================================
-  function sceneAmend(u, bounds) {
-    chip(2, "commit --amend: Oxirgi Commitni Yangilash", u);
+  function sceneAmend(u, bounds, o = {}) {
+    chip(2, "commit --amend: Oxirgi Commitni Yangilash", u, 0);
 
-    const kBox = eo(P(u, 0.2, 0.6));
+    const kBox = eo(P(u, 0.2, 0.5));
     withA(kBox, () => {
-      // Chap panel: Unutilgan fayl yoki xabar
-      panel(100, 140, 840, 680, C.yellow, "Unutilgan Fayl yoki Xatoni Tuzatish", "yangi commit yaratmasdan tarixni toza saqlash", kBox, kBox);
+      // Chap panel: Real Terminalda amend amaliyoti
+      terminal(100, 140, 840, 680, {
+        title: 'zsh — ~/hisob-loyiha (80x24)',
+        p: kBox
+      });
 
-      const kL1 = P(u, 0.6, 0.5);
-      withA(kL1, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kL1)) * 16);
-        card(125, 255, 790, 250, { fill: 'rgba(11,16,32,0.94)', col: C.yellow, lw: 2 });
-        pill("Terminal: Unutilgan Faylni Qo'shish", 270, 290, C.yellow, { size: 16, mono: false });
-        code("$ git commit -m \"Ko'paytmani hisoblash\"", 150, 335, { size: 16, color: C.yellow });
-        code("# hisob.py fayli qolib ketganini ko'rdingiz!", 150, 375, { size: 15, color: C.mute });
-        code("$ git add hisob.py", 150, 415, { size: 16, color: C.cyan });
-        code("$ git commit --amend --no-edit", 150, 455, { size: 16, color: C.green, weight: 600 });
+      const tu = o.isPoster ? 17.0 : u;
+
+      // 1-buyruq: git commit va unutilgan fayl (u: 0.8 to 2.4, Enter 2.6)
+      drawCommandLine("loyiha $ ", "git commit -m \"Ko'paytmani hisoblash\"", 0.8, 2.4, 2.6, tu, 130, 205);
+      drawOutputLine("[main 5c2f252] Ko'paytmani hisoblash", 2.9, tu, 130, 230, { color: C.green, weight: 600 });
+      drawOutputLine(" 1 file changed, 2 insertions(+)  # faqat app.py kirdi!", 3.2, tu, 130, 252, { color: '#64748b' });
+
+      // 2-buyruq: git status -s tekshiruvi (u: 4.0 to 4.8, Enter 5.0)
+      drawCommandLine("loyiha $ ", "git status -s", 4.0, 4.8, 5.0, tu, 130, 284);
+      drawOutputLine("?? hisob.py  # hisob moduli commitda unutilib qolgan!", 5.3, tu, 130, 308, { color: C.red, weight: 600 });
+
+      // 3-buyruq: git add hisob.py && git commit --amend --no-edit (u: 6.5 to 8.5, Enter 8.7)
+      drawCommandLine("loyiha $ ", "git add hisob.py && git commit --amend --no-edit", 6.5, 8.5, 8.7, tu, 130, 340);
+      drawOutputLine("[main 4d5e0f1] Ko'paytmani hisoblash", 9.0, tu, 130, 364, { color: C.green, weight: 700 });
+      drawOutputLine(" Date: Wed Oct 21 12:00:00 2026 +0500", 9.3, tu, 130, 386, { color: '#64748b' });
+      drawOutputLine(" 2 files changed, 4 insertions(+)  # endi hisob.py ham bor!", 9.6, tu, 130, 408, { color: C.cyan, weight: 600 });
+
+      // 4-buyruq: git reflog -2 (almashtirish isboti) (u: 10.8 to 12.0, Enter 12.2)
+      drawCommandLine("loyiha $ ", "git reflog -2", 10.8, 12.0, 12.2, tu, 130, 440);
+      drawOutputLine("4d5e0f1 HEAD@{0}: commit (amend): Ko'paytmani hisoblash", 12.5, tu, 130, 464, { color: C.yellow, weight: 600 });
+      drawOutputLine("5c2f252 HEAD@{1}: commit: Ko'paytmani hisoblash", 12.9, tu, 130, 488, { color: '#64748b' });
+
+      // Terminal xulosasi
+      drawOutputLine("--------------------------------------------------", 13.5, tu, 130, 525, { color: '#334155' });
+      drawOutputLine("Isbot: Eski commit 5c2f252 chetga surilib,", 14.0, tu, 130, 555, { color: C.yellow, weight: 600 });
+      drawOutputLine("butunlay yangi commit 4d5e0f1 uning o'rniga o'tdi!", 14.5, tu, 130, 580, { color: C.green, weight: 700 });
+      drawOutputLine("Bekor qilish: git reset --soft HEAD@{1}", 15.0, tu, 130, 608, { color: C.cyan });
+
+      // O'ng panel: Amend qoidalari va xavf tahlili
+      panel(980, 140, 840, 680, C.yellow, "commit --amend Falsafasi", "oxirgi commitni almashtirish qoidalari", kBox, kBox);
+
+      const kP1 = P(u, 1.0, 0.5);
+      withA(kP1, () => {
+        ctx.save(); ctx.translate(0, (1 - eo(kP1)) * 16);
+        card(1005, 255, 790, 160, { fill: 'rgba(255,209,102,0.08)', col: C.yellow });
+        pill("Qachon Ishlatiladi?", 1130, 290, C.yellow, { size: 16, mono: false });
+        text("• Commitga yangi fayl qo'shish unutilganda (git add + amend).", 1030, 335, { size: 17, color: C.text, align: 'left' });
+        text("• Xabardagi imlo xatosini tuzatishda: git commit --amend -m \"xabar\".", 1030, 370, { size: 17, fam: MONO, color: C.yellow, align: 'left', weight: 600 });
+        text("• --no-edit: Xabarga tegmasdan faqat o'zgargan fayllarni biriktiradi.", 1030, 400, { size: 15, color: C.mute, align: 'left' });
         ctx.restore();
       });
 
-      const kL2 = P(u, 3.5, 0.5);
-      withA(kL2, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kL2)) * 16);
-        card(125, 525, 790, 260, { fill: 'rgba(255,255,255,0.025)', col: C.cyan });
-        pill("Foydali Amend Opsiyalari", 230, 560, C.cyan, { size: 16, mono: false });
-        text("• --no-edit: Xabarni o'zgartirmasdan faqat fayllarni qo'shish.", 150, 610, { size: 17, color: C.text, align: 'left' });
-        text("• -m \"yangi xabar\": Sarlavha yoki tanadagi imlo xatosini tuzatish.", 150, 655, { size: 17, color: C.yellow, align: 'left' });
-        text("• --only: Boshqa stage qilingan fayllarni aralashtirmaslik.", 150, 700, { size: 17, color: C.cyan, align: 'left', weight: 600 });
-        text("• --reset-author: Muallif ma'lumotlari va vaqt tamg'asini yangilash.", 150, 740, { size: 15, color: C.mute, align: 'left' });
+      const kP2 = P(u, 6.0, 0.5);
+      withA(kP2, () => {
+        ctx.save(); ctx.translate(0, (1 - eo(kP2)) * 16);
+        card(1005, 435, 790, 165, { fill: 'rgba(180,108,255,0.08)', col: C.purple });
+        pill("Ichki Mexanizm: Almashtirish", 1170, 470, C.purple, { size: 16, mono: false });
+        text("• Amend eski commitni tuzatmaydi, yangi commit obyekti yasaydi.", 1030, 515, { size: 17, color: C.text, align: 'left' });
+        text("• Yangi commit eskisining otasiga ulanadi, eskisiga emas!", 1030, 550, { size: 17, color: C.purple, align: 'left', weight: 600 });
+        text("• Hash o'zgaradi, lekin eski commit reflogda 90 kun saqlanadi.", 1030, 580, { size: 16, color: C.mute, align: 'left' });
         ctx.restore();
       });
 
-      // O'ng panel: Ichki mexanizm va oltin qoida
-      panel(980, 140, 840, 680, C.red, "Ichki Mexanizm va Oltin Qoida", "amend almashtiradi, tuzatmaydi", kBox, kBox);
-
-      const kR1 = P(u, 7.0, 0.5);
-      withA(kR1, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kR1)) * 16);
-        card(1005, 255, 790, 250, { fill: 'rgba(180,108,255,0.06)', col: C.purple });
-        pill("Amend — Almashtirish Demakdir!", 1160, 290, C.purple, { size: 16, mono: false });
-        text("• Amend eski commitni tuzatmaydi, butunlay yangi commit yaratadi.", 1030, 340, { size: 17, color: C.text, align: 'left' });
-        text("• Yangi commit eskisining otasiga ulanadi, eskisiga emas!", 1030, 385, { size: 17, color: C.purple, align: 'left', weight: 600 });
-        text("• Hash o'zgaradi, lekin eski commit hali reflogda saqlanadi.", 1030, 430, { size: 17, color: C.text, align: 'left' });
-        text("• Amendni bekor qilish: git reset --soft HEAD@{1}", 1030, 470, { size: 16, fam: MONO, color: C.cyan, align: 'left' });
-        ctx.restore();
-      });
-
-      const kR2 = P(u, 11.0, 0.5);
-      withA(kR2, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kR2)) * 16);
-        card(1005, 525, 790, 260, { fill: 'rgba(239,68,68,0.06)', col: C.red });
-        pill("QAT'IY QOIDA: Push Bo'lsa Amend Qilmang!", 1210, 560, C.red, { size: 16, mono: false });
-        text("• Faqat hali lokal, hech qayerga yuborilmagan commitni amend qiling.", 1030, 610, { size: 17, color: C.text, align: 'left' });
-        text("• Push qilingan commitni amend qilsangiz, tarix ajraladi (ahead/behind).", 1030, 655, { size: 17, color: C.red, align: 'left', weight: 600 });
-        text("• Hamkasblaringiz bilan ma'nosiz sun'iy konfliktlar yuzaga keladi!", 1030, 700, { size: 17, color: C.yellow, align: 'left' });
-        text("• Push qilingan xatoni yangi commit yoki 'git revert' bilan tuzating.", 1030, 740, { size: 16, color: C.mute, align: 'left' });
+      const kP3 = P(u, 11.5, 0.5);
+      withA(kP3, () => {
+        ctx.save(); ctx.translate(0, (1 - eo(kP3)) * 16);
+        card(1005, 620, 790, 165, { fill: 'rgba(239,68,68,0.06)', col: C.red });
+        pill("Qat'iy Qoida: Push Bo'lsa Amend Qilmang!", 1220, 655, C.red, { size: 16, mono: false });
+        text("• Faqat shaxsiy, hali push qilinmagan kommitlarni amend qiling.", 1030, 700, { size: 17, color: C.text, align: 'left' });
+        text("• Push qilingan commit amend qilinsa, hamkasblar tarixi ajraladi!", 1030, 735, { size: 17, color: C.red, align: 'left', weight: 600 });
+        text("• Push qilingan xatoni faqat yangi commit yoki 'git revert' bilan hal qiling.", 1030, 765, { size: 16, color: C.mute, align: 'left' });
         ctx.restore();
       });
     });
   }
 
   // ==========================================
-  // 3-SAHNA: git restore --staged
+  // 3-SAHNA: git restore --staged (SPLIT SCREEN)
   // ==========================================
-  function sceneUnstage(u, bounds) {
-    chip(3, "git restore --staged: Indexdan Chiqarish", u);
+  function sceneUnstage(u, bounds, o = {}) {
+    chip(3, "git restore --staged: Indexdan Chiqarish", u, 0);
 
-    const kBox = eo(P(u, 0.2, 0.6));
+    const kBox = eo(P(u, 0.2, 0.5));
     withA(kBox, () => {
-      // Chap panel: Muammo va yechim
-      panel(100, 140, 840, 680, C.green, "Staging Hududidan Chiqarish (Unstage)", "keraksiz faylni commitga kiritmaslik", kBox, kBox);
-
-      const kL1 = P(u, 0.6, 0.5);
-      withA(kL1, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kL1)) * 16);
-        card(125, 255, 790, 240, { fill: 'rgba(255,209,102,0.06)', col: C.yellow });
-        pill("Muammo: Tasodifiy git add .", 230, 290, C.yellow, { size: 16, mono: false });
-        text("• Ikki mustaqil faylni alohida commit qilmoqchi edingiz.", 150, 340, { size: 17, color: C.text, align: 'left' });
-        text("• Lekin 'git add .' barcha o'zgarishlarni bittada stage qilib qo'ydi.", 150, 385, { size: 17, color: C.text, align: 'left' });
-        text("• Yoki maxfiy sozlama fayli (.env) xatolik bilan indexga tushdi.", 150, 430, { size: 17, color: C.yellow, align: 'left', weight: 600 });
-        ctx.restore();
+      // Chap panel: Real Terminalda unstage amaliyoti
+      terminal(100, 140, 840, 680, {
+        title: 'zsh — ~/hisob-loyiha (80x24)',
+        p: kBox
       });
 
-      const kL2 = P(u, 3.5, 0.5);
-      withA(kL2, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kL2)) * 16);
-        card(125, 515, 790, 270, { fill: 'rgba(52,211,153,0.06)', col: C.green, lw: 2 });
-        pill("Yechim: git restore --staged <fayl>", 260, 550, C.green, { size: 16, mono: false });
-        code("$ git restore --staged README.md", 150, 600, { size: 16, color: C.yellow });
-        text("• Fayl indexdan chiqarildi (unstage bo'ldi).", 150, 645, { size: 17, color: C.text, align: 'left' });
-        text("• 100% Xavfsiz: Diskdagi o'zgarishlar o'z joyida to'liq saqlanadi!", 150, 690, { size: 17, color: C.green, align: 'left', weight: 600 });
-        text("• Bu 'git add' ning aynan teskarisi: HEAD dan indexga tiklaydi.", 150, 735, { size: 16, color: C.mute, align: 'left' });
-        ctx.restore();
-      });
+      const tu = o.isPoster ? 17.0 : u;
 
-      // O'ng panel: Qulayliklar va birinchi commit
-      panel(980, 140, 840, 680, C.blue, "Qulayliklar va Ilk Commit Holati", "turli vaziyatlarda to'g'ri qo'llash", kBox, kBox);
+      // 1-buyruq: git status tekshiruvi (u: 0.8 to 1.8, Enter 2.0)
+      drawCommandLine("loyiha $ ", "git status", 0.8, 1.8, 2.0, tu, 130, 205);
+      drawOutputLine("Changes to be committed:  (git add . barchasini qo'shgan)", 2.3, tu, 130, 230, { color: C.green, weight: 600 });
+      drawOutputLine("  (use \"git restore --staged <file>...\" to unstage)", 2.6, tu, 130, 252, { color: '#64748b' });
+      drawOutputLine("\tmodified:   app.py     # bu commitga kirishi kerak", 2.9, tu, 130, 274, { color: C.green });
+      drawOutputLine("\tmodified:   README.md  # bu esa alohida commit bo'lishi lozim", 3.2, tu, 130, 296, { color: C.yellow, weight: 600 });
 
-      const kR1 = P(u, 7.0, 0.5);
+      // 2-buyruq: git restore --staged README.md (u: 4.5 to 6.2, Enter 6.4)
+      drawCommandLine("loyiha $ ", "git restore --staged README.md", 4.5, 6.2, 6.4, tu, 130, 330);
+      drawOutputLine("# Muvaffaqiyatli unstage bo'ldi (xatoliksiz)", 6.7, tu, 130, 354, { color: '#64748b' });
+
+      // 3-buyruq: git status -s tekshiruvi (u: 7.6 to 8.6, Enter 8.8)
+      drawCommandLine("loyiha $ ", "git status -s", 7.6, 8.6, 8.8, tu, 130, 390);
+      drawOutputLine("M  app.py     # staged: faqat app.py commitga ketadi", 9.1, tu, 130, 414, { color: C.green, weight: 700 });
+      drawOutputLine(" M README.md  # unstaged: diskdagi barcha o'zgarish joyida!", 9.5, tu, 130, 438, { color: C.yellow, weight: 700 });
+
+      // 4-buyruq: butun papkani unstage qilish (u: 10.8 to 12.0, Enter 12.2)
+      drawCommandLine("loyiha $ ", "git restore --staged .", 10.8, 12.0, 12.2, tu, 130, 474);
+      drawOutputLine("# Joriy papkadagi barcha fayllar indexdan xavfsiz chiqarildi", 12.5, tu, 130, 498, { color: C.cyan });
+
+      // Terminal xulosasi
+      drawOutputLine("--------------------------------------------------", 13.2, tu, 130, 535, { color: '#334155' });
+      drawOutputLine("Xulosa: 'restore --staged' buyrug'i 100% xavfsiz!", 13.7, tu, 130, 565, { color: C.green, weight: 700 });
+      drawOutputLine("Fayllardagi birorta ham qator o'chirilmaydi yoki yo'qolmaydi.", 14.1, tu, 130, 590, { color: C.yellow });
+      drawOutputLine("Bu 'git add' ning teskarisi: HEAD versiyasini indexga tiklaydi.", 14.6, tu, 130, 615, { color: C.mute });
+
+      // O'ng panel: Staging hududidan chiqarish tahlili
+      panel(980, 140, 840, 680, C.green, "Staging Hududidan Chiqarish", "100% xavfsiz bekor qilish amali", kBox, kBox);
+
+      const kR1 = P(u, 1.0, 0.5);
       withA(kR1, () => {
         ctx.save(); ctx.translate(0, (1 - eo(kR1)) * 16);
-        card(1005, 255, 790, 240, { fill: 'rgba(56,189,248,0.06)', col: C.cyan });
-        pill("Butun Papkani Chiqarish", 1150, 290, C.cyan, { size: 16, mono: false });
-        code("$ git restore --staged .", 1030, 340, { size: 16, color: C.yellow });
-        text("• Joriy papkadagi barcha stage qilingan fayllarni chiqaradi.", 1030, 385, { size: 17, color: C.text, align: 'left' });
-        code("$ git restore --staged :/", 1030, 425, { size: 16, color: C.yellow });
-        text("• Butun repo ildizidagi barcha fayllarni bir zumda unstage qiladi.", 1030, 465, { size: 16, color: C.cyan, align: 'left' });
+        card(1005, 255, 790, 160, { fill: 'rgba(255,209,102,0.06)', col: C.yellow });
+        pill("Muammo: Tasodifiy 'git add .'", 1160, 290, C.yellow, { size: 16, mono: false });
+        text("• Ikki mustaqil faylni alohida commit qilmoqchi edingiz.", 1030, 335, { size: 17, color: C.text, align: 'left' });
+        text("• Lekin 'git add .' barcha o'zgarishlarni bittada stage qilib qo'ydi.", 1030, 370, { size: 17, color: C.text, align: 'left' });
+        text("• Yoki .env yoki maxfiy sozlama fayli indexga tushib qoldi.", 1030, 400, { size: 16, color: C.yellow, align: 'left', weight: 600 });
         ctx.restore();
       });
 
-      const kR2 = P(u, 11.0, 0.5);
+      const kR2 = P(u, 6.0, 0.5);
       withA(kR2, () => {
         ctx.save(); ctx.translate(0, (1 - eo(kR2)) * 16);
-        card(1005, 515, 790, 270, { fill: 'rgba(255,255,255,0.025)', col: C.yellow });
-        pill("Hali Ilk Commit Bo'lmagan Repoda", 1180, 550, C.yellow, { size: 16, mono: false });
-        text("• Yangi repoda hali HEAD yo'q bo'lsa:", 1030, 600, { size: 17, color: C.text, align: 'left' });
-        code("$ git restore --staged app.py  -> fatal: could not resolve 'HEAD'", 1030, 640, { size: 15, color: C.red });
-        text("• Bunday paytda git status boshqa maslahat beradi:", 1030, 680, { size: 17, color: C.text, align: 'left' });
-        code("$ git rm --cached app.py", 1030, 715, { size: 16, color: C.green, weight: 600 });
-        text("• Fayl indexdan o'chadi va yana untracked holatiga qaytadi.", 1030, 755, { size: 15, color: C.mute, align: 'left' });
+        card(1005, 435, 790, 165, { fill: 'rgba(52,211,153,0.08)', col: C.green });
+        pill("Yechim: git restore --staged <fayl>", 1190, 470, C.green, { size: 16, mono: false });
+        text("• Fayl indexdan chiqarildi (unstage bo'ldi).", 1030, 515, { size: 17, color: C.text, align: 'left' });
+        text("• 100% Xavfsiz: Diskdagi o'zgarishlar o'z joyida to'liq saqlanadi!", 1030, 550, { size: 17, color: C.green, align: 'left', weight: 600 });
+        text("• Bu 'git add' ning aynan teskarisi: HEAD dan indexga tiklaydi.", 1030, 580, { size: 16, color: C.mute, align: 'left' });
+        ctx.restore();
+      });
+
+      const kR3 = P(u, 11.5, 0.5);
+      withA(kR3, () => {
+        ctx.save(); ctx.translate(0, (1 - eo(kR3)) * 16);
+        card(1005, 620, 790, 165, { fill: 'rgba(56,189,248,0.08)', col: C.cyan });
+        pill("Hali Ilk Commit Bo'lmagan Repoda", 1180, 655, C.cyan, { size: 16, mono: false });
+        text("• Yangi repoda hali HEAD bo'lmasa: git rm --cached <fayl>", 1030, 700, { size: 17, fam: MONO, color: C.cyan, align: 'left', weight: 600 });
+        text("• Sababi: HEAD mavjud bo'lmagani uchun restore nusxa ololmaydi.", 1030, 735, { size: 17, color: C.text, align: 'left' });
+        text("• git rm --cached faylni indexdan olib, qayta untracked holatga keltiradi.", 1030, 765, { size: 16, color: C.mute, align: 'left' });
         ctx.restore();
       });
     });
   }
 
   // ==========================================
-  // 4-SAHNA: git restore (Working Tree)
+  // 4-SAHNA: git restore (Working Tree) (SPLIT SCREEN)
   // ==========================================
-  function sceneRestoreWorktree(u, bounds) {
-    chip(4, "git restore: Diskdagi O‘zgarishni Tashlash", u);
+  function sceneRestoreWorktree(u, bounds, o = {}) {
+    chip(4, "git restore: Diskdagi O‘zgarishni Tashlash", u, 0);
 
-    const kBox = eo(P(u, 0.2, 0.6));
+    const kBox = eo(P(u, 0.2, 0.5));
     withA(kBox, () => {
-      // Chap panel: Diskdagi o'zgarishni tashlash
-      panel(100, 140, 840, 680, C.red, "Fayldagi O'zgarishni Tashlash", "ishchi papkani oxirgi holatga qaytarish", kBox, kBox);
+      // Chap panel: Real Terminalda diskdagi o'zgarishni tashlash va o'chirilgan faylni qaytarish
+      terminal(100, 140, 840, 680, {
+        title: 'zsh — ~/hisob-loyiha (80x24)',
+        p: kBox
+      });
 
-      const kL1 = P(u, 0.6, 0.5);
+      const tu = o.isPoster ? 17.0 : u;
+
+      // 1-buyruq: git diff app.py keraksiz kodni ko'rish (u: 0.8 to 2.0, Enter 2.2)
+      drawCommandLine("loyiha $ ", "git diff app.py", 0.8, 2.0, 2.2, tu, 130, 205);
+      drawOutputLine("@@ -5,3 +5,5 @@ def hisobla():", 2.5, tu, 130, 230, { color: C.cyan });
+      drawOutputLine("+print(\"DEBUG EXPERIMENT\")  # keraksiz sinov kodi", 2.8, tu, 130, 252, { color: C.red, weight: 600 });
+      drawOutputLine("+raise Exception(\"xatolik\")  # bu kod kerak emas!", 3.1, tu, 130, 274, { color: C.red, weight: 600 });
+
+      // 2-buyruq: git restore app.py (u: 4.5 to 5.8, Enter 6.0)
+      drawCommandLine("loyiha $ ", "git restore app.py", 4.5, 5.8, 6.0, tu, 130, 308);
+      drawOutputLine("# app.py indexdagi toza versiyasiga qaytarildi", 6.3, tu, 130, 332, { color: '#64748b' });
+
+      // 3-buyruq: git status -s tekshiruvi (u: 7.2 to 8.2, Enter 8.4)
+      drawCommandLine("loyiha $ ", "git status -s", 7.2, 8.2, 8.4, tu, 130, 366);
+      drawOutputLine("# (toza — hech qanday o'zgarish qolmadi)", 8.7, tu, 130, 390, { color: C.green, weight: 600 });
+
+      // 4-buyruq: tasodifan o'chirilgan faylni tiklash (u: 9.8 to 11.2, Enter 11.4)
+      drawCommandLine("loyiha $ ", "rm hisob.py && git status -s", 9.8, 11.2, 11.4, tu, 130, 424);
+      drawOutputLine(" D hisob.py  # fayl diskdan o'chirildi", 11.7, tu, 130, 448, { color: C.red });
+
+      // 5-buyruq: glob bilan tiklash (u: 12.6 to 13.8, Enter 14.0)
+      drawCommandLine("loyiha $ ", "git restore '*.py'", 12.6, 13.8, 14.0, tu, 130, 480);
+      drawOutputLine("# hisob.py indexdan to'liq qaytarildi (qo'shtirnoq shart!)", 14.3, tu, 130, 504, { color: C.green, weight: 700 });
+
+      // Terminal xulosasi
+      drawOutputLine("--------------------------------------------------", 14.8, tu, 130, 540, { color: '#334155' });
+      drawOutputLine("DIQQAT: 'git restore <fayl>' xavfli buyruq!", 15.2, tu, 130, 570, { color: C.red, weight: 700 });
+      drawOutputLine("Commit qilinmagan lokal kod butunlay o'chib ketadi.", 15.6, tu, 130, 595, { color: C.yellow });
+      drawOutputLine("Shubha bo'lsa: avval 'git stash' bilan saqlab qo'ying!", 16.0, tu, 130, 620, { color: C.green, weight: 600 });
+
+      // O'ng panel: Working tree xavfi va nozikliklar
+      panel(980, 140, 840, 680, C.red, "Fayldagi O'zgarishni Tashlash", "qaytarib bo'lmaydigan xavfli amal", kBox, kBox);
+
+      const kL1 = P(u, 1.0, 0.5);
       withA(kL1, () => {
         ctx.save(); ctx.translate(0, (1 - eo(kL1)) * 16);
-        card(125, 255, 790, 230, { fill: 'rgba(11,16,32,0.94)', col: C.cyan, lw: 2 });
-        pill("Terminal: git restore <fayl>", 250, 290, C.cyan, { size: 16, mono: false });
-        code("$ git status -s  -> M app.py", 150, 335, { size: 16, color: C.yellow });
-        code("$ git restore app.py", 150, 375, { size: 16, color: C.red, weight: 600 });
-        code("$ git status -s  -> (toza, hech narsa yo'q)", 150, 415, { size: 15, color: C.green });
-        text("• Fayl index'dagi (oxirgi git add paytidagi) holatiga qaytadi.", 150, 455, { size: 16, color: C.text, align: 'left' });
+        card(1005, 255, 790, 160, { fill: 'rgba(239,68,68,0.06)', col: C.red });
+        pill("Qat'iy Ogohlantirish: Xavfli Amal!", 1180, 290, C.red, { size: 16, mono: false });
+        text("• Bu buyruq o'sha fayldagi barcha saqlanmagan tahrirlarni o'chiradi!", 1030, 335, { size: 17, color: C.red, align: 'left', weight: 600 });
+        text("• Commit qilinmagan o'zgarishlar Git xotirasida saqlanmagan.", 1030, 370, { size: 17, color: C.text, align: 'left' });
+        text("• O'chirilgach, ularni qaytarib olishning MUTLAQO iloji yo'q!", 1030, 400, { size: 16, color: C.yellow, align: 'left' });
         ctx.restore();
       });
 
-      const kL2 = P(u, 3.5, 0.5);
+      const kL2 = P(u, 6.0, 0.5);
       withA(kL2, () => {
         ctx.save(); ctx.translate(0, (1 - eo(kL2)) * 16);
-        card(125, 505, 790, 280, { fill: 'rgba(239,68,68,0.06)', col: C.red });
-        pill("QAT'IY OGOHLANTIRISH: Xavfli Buyruq!", 270, 540, C.red, { size: 16, mono: false });
-        text("• Bu buyruq o'sha fayldagi barcha saqlanmagan tahrirlarni o'chiradi!", 150, 590, { size: 17, color: C.red, align: 'left', weight: 600 });
-        text("• Commit qilinmagan o'zgarishlar Git xotirasida saqlanmagan.", 150, 635, { size: 17, color: C.text, align: 'left' });
-        text("• O'chirilgach, ularni qaytarib olishning MUTLAQO iloji yo'q!", 150, 680, { size: 17, color: C.yellow, align: 'left' });
-        text("• O'zgarishlar kerak emasligiga 100% ishonmasangiz — ishlatmang.", 150, 725, { size: 17, color: C.text, align: 'left' });
-        text("• Ehtiyotkor yo'l: Avval 'git stash' bilan saqlab qo'ying.", 150, 760, { size: 15, color: C.mute, align: 'left' });
+        card(1005, 435, 790, 165, { fill: 'rgba(255,209,102,0.06)', col: C.yellow });
+        pill("Indexdan Tiklash Qoidasi", 1140, 470, C.yellow, { size: 16, mono: false });
+        text("• git restore <fayl> HEAD dan emas, INDEX dan tiklaydi!", 1030, 515, { size: 17, fam: MONO, color: C.yellow, align: 'left', weight: 600 });
+        text("• Agar fayl 'MM' bo'lsa, faqat stage qilinmagan qism tashlanadi.", 1030, 550, { size: 17, color: C.text, align: 'left' });
+        text("• Ikkalasini ham HEAD ga tenglash: git restore -s@ -SW <fayl>", 1030, 580, { size: 16, fam: MONO, color: C.cyan, align: 'left' });
         ctx.restore();
       });
 
-      // O'ng panel: Ilg'or variantlar
-      panel(980, 140, 840, 680, C.blue, "Ilg'or Variantlar va Bo'laklash", "aniq manba va hunk bo'yicha tiklash", kBox, kBox);
-
-      const kR1 = P(u, 7.0, 0.5);
-      withA(kR1, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kR1)) * 16);
-        card(1005, 255, 790, 250, { fill: 'rgba(255,209,102,0.06)', col: C.yellow });
-        pill("Faylni To'liq HEAD Commitga Tenglash", 1200, 290, C.yellow, { size: 16, mono: false });
-        code("$ git restore --source=HEAD --staged --worktree README.md", 1030, 335, { size: 14, color: C.yellow });
-        code("qisqa shakli: git restore -s@ -SW README.md", 1030, 375, { size: 15, color: C.cyan, weight: 600 });
-        text("• Faylni ham indexda, ham diskda oxirgi commit holatiga qaytaradi.", 1030, 420, { size: 17, color: C.text, align: 'left' });
-        text("• Barcha yangi va stage qilingan tahrirlar to'liq bekor qilinadi.", 1030, 465, { size: 16, color: C.mute, align: 'left' });
-        ctx.restore();
-      });
-
-      const kR2 = P(u, 11.0, 0.5);
-      withA(kR2, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kR2)) * 16);
-        card(1005, 525, 790, 260, { fill: 'rgba(52,211,153,0.06)', col: C.green });
-        pill("Bo'laklab Bekor Qilish: restore -p", 1180, 560, C.green, { size: 16, mono: false });
-        code("$ git restore -p app.py", 1030, 610, { size: 16, color: C.yellow });
-        code("(1/2) Discard this hunk from worktree [y,n,q,a,d,e,?]? y", 1030, 655, { size: 15, color: C.red });
-        text("• Fayl ichidagi faqat keraksiz debug qatorlarini tashlash.", 1030, 700, { size: 17, color: C.text, align: 'left' });
-        text("• Foydali yozilgan yangi kod esa diskda butun saqlab qolinadi!", 1030, 740, { size: 16, color: C.green, align: 'left', weight: 600 });
+      const kL3 = P(u, 11.5, 0.5);
+      withA(kL3, () => {
+        ctx.save(); ctx.translate(0, (1 - eo(kL3)) * 16);
+        card(1005, 620, 790, 165, { fill: 'rgba(52,211,153,0.08)', col: C.green });
+        pill("Bo'laklab Bekor Qilish: restore -p", 1180, 655, C.green, { size: 16, mono: false });
+        text("• git restore -p yordamida diffni bo'lakma-bo'lak ko'rish mumkin.", 1030, 700, { size: 17, color: C.text, align: 'left' });
+        text("• Keraksiz debug qatorlarni tashlab, foydali kodni saqlab qolasiz.", 1030, 735, { size: 17, color: C.green, align: 'left', weight: 600 });
+        text("• O'chirilgan fayllarni tiklashda esa '*.py' qo'shtirnoqda beriladi.", 1030, 765, { size: 16, color: C.mute, align: 'left' });
         ctx.restore();
       });
     });
   }
 
   // ==========================================
-  // 5-SAHNA: checkout va restore Farqi
+  // 5-SAHNA: checkout va restore Farqi (SPLIT SCREEN)
   // ==========================================
-  function sceneEskiYol(u, bounds) {
-    chip(5, "Eski Usul: checkout va restore Farqi", u);
+  function sceneEskiYol(u, bounds, o = {}) {
+    chip(5, "Eski Usul: checkout va restore Farqi", u, 0);
 
-    const kBox = eo(P(u, 0.2, 0.6));
+    const kBox = eo(P(u, 0.2, 0.5));
     withA(kBox, () => {
-      // Chap panel: Eski buyruqlar va xavflar
-      panel(100, 140, 840, 680, C.yellow, "Eski Buyruqlar: checkout va reset", "tarixiy meros va uning chalkashliklari", kBox, kBox);
-
-      const kL1 = P(u, 0.6, 0.5);
-      withA(kL1, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kL1)) * 16);
-        card(125, 255, 790, 240, { fill: 'rgba(255,255,255,0.025)', col: C.yellow });
-        pill("Eski Git Maqolalaridagi Buyruqlar", 260, 290, C.yellow, { size: 16, mono: false });
-        code("git checkout -- <fayl>   ->  git restore <fayl>", 150, 340, { size: 15, color: C.yellow });
-        code("git reset HEAD <fayl>     ->  git restore --staged <fayl>", 150, 380, { size: 15, color: C.green });
-        code("git checkout -p           ->  git restore -p", 150, 420, { size: 15, color: C.cyan });
-        text("• Internetdagi eski qo'llanmalarda hali ham ko'p uchraydi.", 150, 460, { size: 16, color: C.mute, align: 'left' });
-        ctx.restore();
+      // Chap panel: Real Terminalda checkout xavfi va zamonaviy restore
+      terminal(100, 140, 840, 680, {
+        title: 'zsh — ~/hisob-loyiha (80x24)',
+        p: kBox
       });
 
-      const kL2 = P(u, 3.5, 0.5);
-      withA(kL2, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kL2)) * 16);
-        card(125, 515, 790, 270, { fill: 'rgba(239,68,68,0.06)', col: C.red });
-        pill("Nega checkout Xavfli Edi?", 230, 550, C.red, { size: 16, mono: false });
-        text("• checkout juda ko'p vazifali edi: ham branch almashar, ham fayl tiklardi.", 150, 600, { size: 17, color: C.text, align: 'left' });
-        text("• Agar fayl nomi bilan bir xil branch bo'lsa (masalan: app.py branchi):", 150, 645, { size: 17, color: C.yellow, align: 'left' });
-        code("$ git checkout app.py  -> Switched to branch 'app.py'!", 150, 685, { size: 15, color: C.red, weight: 600 });
-        text("• Faylni tiklash o'rniga kutilmaganda branch almashtirib qo'yardi!", 150, 725, { size: 17, color: C.red, align: 'left' });
-        text("• Shuning uchun majburiy '--' belgisi talab qilinar edi.", 150, 760, { size: 15, color: C.mute, align: 'left' });
-        ctx.restore();
-      });
+      const tu = o.isPoster ? 17.0 : u;
 
-      // O'ng panel: Zamonaviy aniq taqsimot
-      panel(980, 140, 840, 680, C.green, "Zamonaviy Git: Aniq Vazifalar", "Git 2.23+ va Git 2.51+ standarti", kBox, kBox);
+      // 1-buyruq: branch va fayl nomi to'qnashuvi (u: 0.8 to 3.0, Enter 3.2)
+      drawCommandLine("loyiha $ ", "git branch hisob.py && echo \"x\" >> hisob.py", 0.8, 3.0, 3.2, tu, 130, 205);
+      drawOutputLine("# Fayl nomi bilan bir xil yangi branch yaratildi", 3.5, tu, 130, 230, { color: '#64748b' });
 
-      const kR1 = P(u, 7.0, 0.5);
+      // 2-buyruq: eski checkout xavfi (u: 4.5 to 6.0, Enter 6.2)
+      drawCommandLine("loyiha $ ", "git checkout hisob.py  # faylni tiklamoqchisiz", 4.5, 6.0, 6.2, tu, 130, 264);
+      drawOutputLine("Switched to branch 'hisob.py'  # XAVF: branch almashib ketdi!", 6.6, tu, 130, 288, { color: C.red, weight: 700 });
+      drawOutputLine("M\thisob.py  # fayldagi o'zgarish esa aslo tiklanmadi!", 7.0, tu, 130, 312, { color: C.yellow, weight: 600 });
+
+      // 3-buyruq: zamonaviy restore xavfsizligi (u: 8.2 to 10.4, Enter 10.6)
+      drawCommandLine("loyiha $ ", "git switch main && git restore hisob.py", 8.2, 10.4, 10.6, tu, 130, 346);
+      drawOutputLine("Switched to branch 'main'", 10.9, tu, 130, 370, { color: C.cyan });
+      drawOutputLine("# hisob.py xavfsiz tiklandi (branch chalkashligi yo'q!)", 11.3, tu, 130, 394, { color: C.green, weight: 700 });
+
+      // 4-buyruq: no-overlay taqqoslashi (u: 12.5 to 14.5, Enter 14.7)
+      drawCommandLine("loyiha $ ", "git restore --source=HEAD~1 -SW .", 12.5, 14.5, 14.7, tu, 130, 430);
+      drawOutputLine("# Papka HEAD~1 ga 100% ANIQ moslandi (no-overlay)", 15.0, tu, 130, 454, { color: C.cyan, weight: 600 });
+
+      // Terminal xulosasi
+      drawOutputLine("--------------------------------------------------", 15.5, tu, 130, 490, { color: '#334155' });
+      drawOutputLine("Yechim: Git 2.23+ dan boshlab vazifalar ajratildi:", 16.0, tu, 130, 520, { color: C.yellow, weight: 600 });
+      drawOutputLine("git restore -> faqat fayllarni tiklaydi.", 16.4, tu, 130, 545, { color: C.green, weight: 700 });
+      drawOutputLine("git switch  -> faqat tarmoqlarni (branch) almashtiradi.", 16.8, tu, 130, 570, { color: C.cyan, weight: 700 });
+
+      // O'ng panel: Zamonaviy Git taqsimoti
+      panel(980, 140, 840, 680, C.green, "Zamonaviy Git: Aniq Ajratish", "Git 2.23+ va Git 2.51+ standarti", kBox, kBox);
+
+      const kR1 = P(u, 1.0, 0.5);
       withA(kR1, () => {
         ctx.save(); ctx.translate(0, (1 - eo(kR1)) * 16);
-        card(1005, 255, 790, 240, { fill: 'rgba(52,211,153,0.06)', col: C.green, lw: 2 });
-        pill("Vazifalar To'liq Ajratildi", 1150, 290, C.green, { size: 16, mono: false });
-        code("git restore  ->  Faqat fayllarni tiklaydi", 1030, 340, { size: 16, color: C.green, weight: 600 });
-        text("  Branchlarga umuman tegmaydi, chalkashlik yo'q.", 1030, 375, { size: 16, color: C.text, align: 'left' });
-        code("git switch   ->  Faqat branchlarni almashtiradi", 1030, 420, { size: 16, color: C.cyan, weight: 600 });
-        text("  Fayllarni tasodifan o'chirib yuborish xavfi yo'q.", 1030, 455, { size: 16, color: C.text, align: 'left' });
+        card(1005, 255, 790, 160, { fill: 'rgba(255,255,255,0.025)', col: C.yellow });
+        pill("Eski Buyruqlar Chalkashligi", 1160, 290, C.yellow, { size: 16, mono: false });
+        text("• git checkout -- <fayl>   ->  git restore <fayl>", 1030, 335, { size: 16, fam: MONO, color: C.text, align: 'left' });
+        text("• git reset HEAD <fayl>     ->  git restore --staged <fayl>", 1030, 370, { size: 16, fam: MONO, color: C.green, align: 'left', weight: 600 });
+        text("• checkout ham branch almashar, ham fayl tiklardi (juda xavfli).", 1030, 400, { size: 15, color: C.mute, align: 'left' });
         ctx.restore();
       });
 
-      const kR2 = P(u, 11.0, 0.5);
+      const kR2 = P(u, 6.0, 0.5);
       withA(kR2, () => {
         ctx.save(); ctx.translate(0, (1 - eo(kR2)) * 16);
-        card(1005, 515, 790, 270, { fill: 'rgba(56,189,248,0.06)', col: C.cyan });
-        pill("No-Overlay Afzalligi", 1130, 550, C.cyan, { size: 16, mono: false });
-        text("• checkout papkani tiklaganda, manbada yo'q fayllarni qoldirib ketardi.", 1030, 600, { size: 17, color: C.text, align: 'left' });
-        text("• git restore --source esa papkani o'sha commitga ANIQ moslaydi:", 1030, 645, { size: 17, color: C.cyan, align: 'left', weight: 600 });
-        text("• Manbada bo'lmagan fayllar toza o'chiriladi (no-overlay).", 1030, 690, { size: 17, color: C.text, align: 'left' });
-        text("• Git 2.51 rasmiy reliziga ko'ra restore to'liq barqaror va standart!", 1030, 735, { size: 16, color: C.green, align: 'left' });
+        card(1005, 435, 790, 165, { fill: 'rgba(52,211,153,0.08)', col: C.green });
+        pill("Vazifalar To'liq Ajratildi", 1140, 470, C.green, { size: 16, mono: false });
+        text("• git restore: Faqat fayllarni tiklaydi, branchga tegmaydi.", 1030, 515, { size: 17, color: C.green, align: 'left', weight: 600 });
+        text("• git switch: Faqat branchlarni almashtiradi, faylni o'chirmaydi.", 1030, 550, { size: 17, color: C.cyan, align: 'left', weight: 600 });
+        text("• Git 2.51 rasmiy reliziga ko'ra restore to'liq barqaror va standart!", 1030, 580, { size: 16, color: C.mute, align: 'left' });
+        ctx.restore();
+      });
+
+      const kR3 = P(u, 11.5, 0.5);
+      withA(kR3, () => {
+        ctx.save(); ctx.translate(0, (1 - eo(kR3)) * 16);
+        card(1005, 620, 790, 165, { fill: 'rgba(56,189,248,0.08)', col: C.cyan });
+        pill("No-Overlay Afzalligi", 1120, 655, C.cyan, { size: 16, mono: false });
+        text("• checkout papkani tiklaganda, manbada yo'q fayllarni qoldirardi.", 1030, 700, { size: 17, color: C.text, align: 'left' });
+        text("• git restore --source esa papkani o'sha commitga ANIQ moslaydi.", 1030, 735, { size: 17, color: C.cyan, align: 'left', weight: 600 });
+        text("• Manbada bo'lmagan fayllar toza o'chiriladi (no-overlay).", 1030, 765, { size: 16, color: C.mute, align: 'left' });
         ctx.restore();
       });
     });
