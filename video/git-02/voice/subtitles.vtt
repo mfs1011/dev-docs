@@ -1,61 +1,61 @@
 WEBVTT
 
 1
-00:01.420 --> 00:07.410
-Salom! Ushbu bobda Gitni kompyuterga o‘rnatish va
-terminal buyruqlari qanday tuzilganini o‘rganamiz.
+00:01.420 --> 00:08.770
+Salom! Ushbu ikkinchi bobda Gitni kompyuterga o‘rnatish, uning
+terminaldagi anatomiyasi va buyruqlar tuzilishini amalda o‘rganamiz.
 
 2
-00:08.060 --> 00:15.800
-Git bilan ishlashda grafik dasturlar bo‘lsa-da, barcha imkoniyatlar faqat
-buyruq qatorida to‘liq ochiladi va har bir tizimda bir xil ishlaydi.
+00:09.250 --> 00:17.340
+Grafik interfeyslar qulay bo‘lsa-da, Gitning barcha imkoniyatlari faqat buyruq
+qatorida to‘liq ochiladi va har bir operatsion tizimda bir xil ishlaydi.
 
 3
-00:18.850 --> 00:27.670
-Gitni Linuxda paket menejeri orqali, macOSda buyruq qatori vositalari
-yoki Homebrew bilan, Windowsda esa Git for Windows orqali o‘rnatasiz.
+00:21.030 --> 00:28.690
+Terminalda git minus minus vershn buyrug‘i orqali Git borligini va
+uning qaysi versiyasi ishlayotganini darhol tekshirishingiz mumkin.
 
 4
-00:27.760 --> 00:34.050
-Kompyuterda bir nechta Git bo‘lishi mumkin va qaysi biri ishga
+00:29.020 --> 00:35.430
+Agar kompyuteringizda bir nechta Git bo‘lsa, qaysi biri ishga
 tushishini Pas muhit o‘zgaruvchisidagi papkalar tartibi hal qiladi.
 
 5
-00:37.140 --> 00:44.760
+00:39.840 --> 00:47.800
 Har bir Git buyrug‘i aniq tuzilishga ega: global opsiyalar, ichki
-buyruq nomi, uning opsiyalari, argumentlar va fayl yo‘llari.
+buyruq nomi, uning kalitlari, argumentlar va fayl yo‘llari.
 
 6
-00:45.350 --> 00:51.160
-Har bir buyruq tugaganda ekzit kod qaytaradi: nol
-muvaffaqiyatni, yuz yigirma sakkiz esa xatolikni bildiradi.
+00:48.410 --> 00:55.940
+Har bir buyruq tugaganda ekzit kod qaytaradi: nol muvaffaqiyatni,
+noldan farqli qiymat esa xatolik yuz berganini bildiradi.
 
 7
-00:54.450 --> 01:01.740
-Katta si opsiyasi Gitni boshqa papkaga kirmasdan ishlatishga, kichik
-si esa faqat bitta buyruq uchun sozlama berishga imkon beradi.
+00:59.750 --> 01:07.230
+Katta si opsiyasi Gitni boshqa papkaga kirmasdan turib boshqarishga,
+kichik si esa vaqtinchalik sozlama bilan ishlatishga imkon beradi.
 
 8
-01:01.960 --> 01:10.650
-Agar bir xil sozlama turli joyda berilsa, eng yuqori ustunlik buyruq opsiyasiga,
-keyin muhit o‘zgaruvchisiga va eng oxirida konfig fayliga tegishli bo‘ladi.
+01:07.660 --> 01:16.690
+Agar bir xil parametr turli joyda berilsa, eng yuqori ustunlik buyruq
+opsiyasiga, keyin muhit o‘zgaruvchisiga va eng oxirida konfig fayliga beriladi.
 
 9
-01:13.920 --> 01:20.080
+01:20.740 --> 01:27.080
 Ikkita chiziqcha belgisi kommit yoki brenchni fayl nomidan
 ajratib, nomlar to‘qnashganda adashishning oldini oladi.
 
 10
-01:20.430 --> 01:27.460
-Yulduzcha kabi belgilarni esa har doim qo‘shtirnoqqa olish kerak, aks
-holda terminal fayllarni Gitga yetmasdan noto‘g‘ri almashtirib qo‘yadi.
+01:27.570 --> 01:34.560
+Yulduzcha kabi shablon belgilarini esa har doim qo‘shtirnoqqa olish kerak,
+aks holda terminal ularni Gitga yetib bormasdan almashtirib qo‘yadi.
 
 11
-01:30.570 --> 01:37.030
-Xulosa qilib aytganda, terminal sintaksisini puxta bilish keyingi
-boblardagi barcha amallarni to‘g‘ri tushunishga poydevor bo‘ladi.
+01:38.570 --> 01:44.910
+Xulosa qilsak, terminal sintaksisini puxta tushunish keyingi
+barcha amaliy boblarda erkin va xatosiz ishlash garovidir.
 
 12
-01:37.540 --> 01:43.350
-Keyingi bobda Gitni birinchi marta sozlash va yordam
-tizimini o‘rganamiz. E’tiboringiz uchun rahmat!
+01:45.460 --> 01:51.690
+Keyingi uchinchi bobda Gitni birinchi marta o‘z ismingiz va
+emailingiz bilan sozlashni o‘rganamiz. E’tiboringiz uchun rahmat!
