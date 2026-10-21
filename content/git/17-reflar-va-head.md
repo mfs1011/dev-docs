@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" playsinline poster="/video/git/17-reflar-va-head.jpg" src="/video/git/17-reflar-va-head.mp4">
+    <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/git/17-reflar-va-head.chapters.vtt" default>
+    <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/git/17-reflar-va-head.uz.vtt">
+  </video>
+  <figcaption>17.1-video. Ref'lar, HEAD va teg obyekti</figcaption>
+</figure>
+
 Oldingi uch bobda obyektlar omborini qurdik: blob, tree va commit ([14–16-boblar](14-obyektlar-blob.md)). Har obyektning nomi — 40 belgili hash. Tarixni ko'rish uchun `git log 9fb24ac6bf55c9ca489787f18a6dbad620e7f320` deb yozish mumkin, lekin bunday raqamlarni hech kim eslab qololmaydi. Kerak bo'lgani — hash'ga **odam tushunadigan nom** berish.
 
 Git'da bunday nom **ref** (reference — havola) deyiladi. Rasmiy `gitglossary` ta'rifi: ref — **obyekt nomiga yoki boshqa ref'ga ishora qiluvchi nom**. Ikki holat bor:

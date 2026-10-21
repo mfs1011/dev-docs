@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:21.575
+Ref‘lar va HEAD Tushunchasi
+
+00:21.575 --> 00:42.548
+git update-ref va Xavfsizlik Kafolati
+
+00:42.548 --> 01:02.913
+HEAD Ko‘rsatkichi va Symbolic Ref
+
+01:02.913 --> 01:23.892
+Oddiy Teg va Annotated Teg Obyekti
+
+01:23.892 --> 01:44.287
+packed-refs va Reftable Formati
+
+01:44.287 --> 02:05.960
+Xulosa va Tavsiyalar
