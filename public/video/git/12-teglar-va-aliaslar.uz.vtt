@@ -11,51 +11,51 @@ Teg loyiha tarixidagi muhim reliz va burilish nuqtalariga qo‘yiladigan
 doimiy nom bo‘lib, branchdan farqli ravishda harakatlanmaydi.
 
 3
-00:18.990 --> 00:26.730
+00:19.490 --> 00:27.230
 Git'da ikki xil teg bor: yengil lightweight teg faqat commit
 hash'iga ko‘rsatuvchi oddiy qirq bir baytlik ko‘rsatkich fayldir.
 
 4
-00:26.820 --> 00:34.570
+00:27.320 --> 00:35.070
 Annotated izohli teg esa alohida obyekt bo‘lib, unga muallif,
 sana, reliz eslatmasi va hatto raqamli imzo biriktiriladi.
 
 5
-00:37.400 --> 00:45.240
+00:38.900 --> 00:46.740
 Standart git push buyrug‘i teglarni avtomatik serverga yubormaydi;
 buning uchun tegga aniq murojaat qilish yoki follow-tags opsiyasi kerak.
 
 6
-00:45.470 --> 00:53.180
+00:46.970 --> 00:54.680
 Keraksiz teglarni lokalda git tag minus d, masofaviy omborda esa
 git push minus minus delete yordamida oson o‘chirish mumkin.
 
 7
-00:55.890 --> 01:03.030
+00:58.390 --> 01:05.530
 Git describe buyrug‘i commit eng yaqin teggacha necha qadam
 masofada ekanini inson tushunadigan chiroyli formatda ifodalaydi.
 
 8
-01:03.380 --> 01:10.230
+01:05.880 --> 01:12.730
 Teg nomiga switch qilsangiz detached HEAD holatiga o‘tasiz; eski
 versiya ustida ishlash uchun tegdan yangi branch ochish lozim.
 
 9
-01:13.060 --> 01:18.860
+01:16.560 --> 01:22.360
 Tez-tez yoziladigan uzun buyruqlarni qisqartirish uchun
 Git sozlamalarida maxsus alias taxalluslari o‘rnatiladi.
 
 10
-01:18.930 --> 01:26.100
+01:22.430 --> 01:29.600
 Masalan, git st yoki git last kabi qisqa buyruqlar kundalik
 terminaldagi ish maromini sezilarli darajada tezlashtiradi.
 
 11
-01:28.990 --> 01:35.210
+01:33.490 --> 01:39.710
 Rasmiy relizlar uchun har doim annotated teglardan foydalaning
 va e’lon qilingan teglarni qayta surishdan saqlaning.
 
 12
-01:35.280 --> 01:40.910
+01:39.780 --> 01:45.410
 O‘z ish uslubingizga mos aliaslarni sozlab oling
 va Git bilan ancha samarali hamda qulay ishlang.
