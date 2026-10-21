@@ -22,6 +22,48 @@
     });
   }
 
+  function drawCommandLine(promptStr, fullCmd, tStart, tTypeEnd, tEnter, u, x, y, opt = {}) {
+    const tPrompt = opt.tPromptShow != null ? opt.tPromptShow : tStart - 0.4;
+    if (u < tPrompt) return;
+
+    const pCol = opt.promptCol || C.green;
+    text(promptStr, x, y, { size: 15, fam: MONO, color: pCol, weight: 700, align: 'left' });
+    const pw = tw(promptStr, 15, 700, MONO);
+
+    if (u < tStart) {
+      if (Math.floor(u * 3) % 2 === 0) {
+        text('█', x + pw + 2, y, { size: 15, fam: MONO, color: '#38bdf8', align: 'left' });
+      }
+      return;
+    }
+
+    const dur = Math.max(0.01, tTypeEnd - tStart);
+    const progress = clamp((u - tStart) / dur);
+    const charCount = Math.floor(progress * fullCmd.length);
+    const typedStr = fullCmd.slice(0, charCount);
+
+    text(typedStr, x + pw, y, { size: 15, fam: MONO, color: opt.cmdCol || '#e2e8f0', weight: 600, align: 'left' });
+    const cmdW = tw(typedStr, 15, 600, MONO);
+
+    if (u < tEnter) {
+      const isVisible = u < tTypeEnd ? true : (Math.floor(u * 4) % 2 === 0);
+      if (isVisible) {
+        text('█', x + pw + cmdW + 2, y, { size: 15, fam: MONO, color: '#38bdf8', align: 'left' });
+      }
+    }
+  }
+
+  function drawOutputLine(str, tAppear, u, x, y, opt = {}) {
+    if (u < tAppear) return;
+    text(str, x, y, {
+      size: opt.size || 14,
+      fam: MONO,
+      color: opt.color || '#94a3b8',
+      weight: opt.weight || 500,
+      align: 'left'
+    });
+  }
+
   // ==========================================
   // 1-SAHNA: Versiya Nazorati Nima?
   // ==========================================
@@ -145,56 +187,56 @@
         p: kBox
       });
 
-      // Terminal ichidagi buyruqlar va chiqishlar (vaqt bo'yicha bosqichma-bosqich)
-      const t1 = P(u, 1.2, 0.4);
-      if (t1 > 0) {
-        withA(t1, () => {
-          code("$ mkdir sayt && cd sayt", 130, 215, { color: C.cyan, size: 16 });
-          code("$ echo '<h1>Salom</h1>' > index.html", 130, 245, { color: C.cyan, size: 16 });
-        });
+      const tu = o.isPoster ? 20.0 : u;
+
+      // 1-buyruq: papka ochish va kirish
+      drawCommandLine("~/dasturlar $ ", "mkdir sayt && cd sayt", 1.0, 2.4, 2.8, tu, 130, 205);
+
+      // 2-buyruq: fayl yaratish
+      drawCommandLine("sayt $ ", "echo '<h1>Salom</h1>' > index.html", 3.2, 4.8, 5.2, tu, 130, 232);
+
+      // 3-buyruq: eski nusxa olish
+      drawCommandLine("sayt $ ", "cd .. && cp -r sayt sayt-eski", 5.6, 7.1, 7.5, tu, 130, 259);
+
+      // 4-buyruq: yakuniy nusxa
+      drawCommandLine("~/dasturlar $ ", "cp -r sayt sayt-yakuniy", 7.9, 9.1, 9.4, tu, 130, 286);
+
+      // 5-buyruq: yana bitta nusxa (tartibsizlik cho'qqisi)
+      drawCommandLine("~/dasturlar $ ", "cp -r sayt 'sayt-yakuniy-2 (ishlaydigan)'", 9.7, 11.5, 11.8, tu, 130, 313);
+
+      // 6-buyruq: ls -1 orqali papkalarni ko'rish
+      drawCommandLine("~/dasturlar $ ", "ls -1", 12.1, 12.5, 12.8, tu, 130, 342, { promptCol: C.yellow });
+      drawOutputLine("sayt/", 12.9, tu, 150, 368, { color: C.cyan, weight: 600 });
+      drawOutputLine("sayt-eski/", 12.9, tu, 150, 388, { color: '#94a3b8' });
+      drawOutputLine("sayt-yakuniy/", 12.9, tu, 150, 408, { color: '#94a3b8' });
+      drawOutputLine("sayt-yakuniy-2 (ishlaydigan)/", 12.9, tu, 150, 428, { color: C.yellow, weight: 600 });
+
+      // 7-buyruq: diff solishtirish azobi
+      drawCommandLine("~/dasturlar $ ", "diff -u sayt/index.html sayt-yakuniy/index.html", 13.8, 16.0, 16.3, tu, 130, 458, { promptCol: C.git });
+      drawOutputLine("--- sayt/index.html    2026-10-21 10:15", 16.4, tu, 150, 484, { color: C.red });
+      drawOutputLine("+++ sayt-yakuniy/...   2026-10-21 10:20", 16.4, tu, 150, 504, { color: C.green });
+      drawOutputLine("@@ -1,1 +1,2 @@", 16.4, tu, 150, 524, { color: '#64748b' });
+      drawOutputLine(" <h1>Salom</h1>", 16.4, tu, 150, 544, { color: '#cbd5e1' });
+      drawOutputLine("+<p>Qaysi biri oxirgi? Noma'lum!</p>", 16.4, tu, 150, 564, { color: C.red, weight: 700 });
+
+      // Faol prompt va miltillovchi kursor
+      if (tu >= 17.0) {
+        text("~/dasturlar $ ", 130, 596, { size: 15, fam: MONO, color: C.green, weight: 700, align: 'left' });
+        const pw = tw("~/dasturlar $ ", 15, 700, MONO);
+        if (Math.floor(tu * 2.5) % 2 === 0 || o.isPoster) {
+          text('█', 130 + pw + 2, 596, { size: 15, fam: MONO, color: '#38bdf8', align: 'left' });
+        }
       }
 
-      const t2 = P(u, 3.2, 0.4);
-      if (t2 > 0) {
-        withA(t2, () => {
-          code("$ cd .. && cp -r sayt sayt-eski", 130, 285, { color: C.cyan, size: 16 });
-          code("$ cp -r sayt sayt-yakuniy", 130, 315, { color: C.cyan, size: 16 });
-          code("$ cp -r sayt 'sayt-yakuniy-2 (ishlaydigan)'", 130, 345, { color: C.cyan, size: 16 });
-        });
-      }
-
-      const t3 = P(u, 5.5, 0.5);
-      if (t3 > 0) {
-        withA(t3, () => {
-          code("$ ls -1", 130, 395, { color: C.yellow, size: 16 });
-          code("sayt", 150, 425, { color: C.text, size: 15 });
-          code("sayt-eski", 150, 450, { color: C.mute, size: 15 });
-          code("sayt-yakuniy", 150, 475, { color: C.mute, size: 15 });
-          code("sayt-yakuniy-2 (ishlaydigan)", 150, 500, { color: C.yellow, size: 15 });
-        });
-      }
-
-      const t4 = P(u, 8.5, 0.5);
-      if (t4 > 0) {
-        withA(t4, () => {
-          code("$ diff -u sayt/index.html sayt-yakuniy/index.html", 130, 550, { color: C.git, size: 16 });
-          code("--- sayt/index.html    2026-10-21 10:15:00", 150, 580, { color: C.red, size: 14 });
-          code("+++ sayt-yakuniy/...   2026-10-21 10:20:00", 150, 605, { color: C.green, size: 14 });
-          code("@@ -1,1 +1,2 @@", 150, 630, { color: C.mute, size: 14 });
-          code(" <h1>Salom</h1>", 150, 655, { color: C.text, size: 14 });
-          code("+<p>Qaysi biri oxirgi versiya? Chalkashlik!</p>", 150, 680, { color: C.red, size: 14 });
-
-          // Terminal pastida diqqat eslatmasi
-          ctx.fillStyle = 'rgba(239,68,68,0.15)';
-          rr(130, 715, 780, 75, 10); ctx.fill();
-          ctx.strokeStyle = 'rgba(239,68,68,0.4)'; ctx.lineWidth = 1.2; ctx.stroke();
-          text("DIQQAT: Qaysi faylda nima o'zgarganini eslab qolish amalda imkonsiz!", 150, 752, {
-            size: 15,
-            fam: MONO,
-            color: C.red,
-            weight: 700,
-            align: 'left'
-          });
+      // Terminal pastida ogohlantirish qutisi
+      if (tu >= 17.5) {
+        const kw = clamp((tu - 17.5) / 0.5);
+        withA(kw, () => {
+          ctx.fillStyle = 'rgba(239,68,68,0.12)';
+          rr(130, 630, 780, 70, 10); ctx.fill();
+          ctx.strokeStyle = 'rgba(239,68,68,0.4)'; ctx.lineWidth = 1.4; ctx.stroke();
+          pill("DIQQAT", 185, 665, C.red, { size: 13, mono: false });
+          text("Qaysi faylda nima o'zgarganini eslab qolish amalda imkonsiz!", 240, 665, { size: 14, fam: MONO, color: C.red, weight: 700, align: 'left' });
         });
       }
 
