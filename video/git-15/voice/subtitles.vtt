@@ -11,51 +11,51 @@ Blob faqat xom baytlarni saqlasa, tree unga fayl nomi,
 ruxsatlar va butun papkalar daraxtini biriktirib beradi.
 
 3
-00:21.590 --> 00:28.570
+00:22.090 --> 00:29.070
 To‘g‘ridan-to‘g‘ri papkadan commit qilish o‘rniga o‘rtada index
 qatlamining bo‘lishi o‘zgarishlarni bo‘laklab yig‘ish imkonini beradi.
 
 4
-00:28.840 --> 00:35.750
+00:29.340 --> 00:36.250
 Shuningdek, index har bir faylning stat ma’lumotlarini keshlab,
 git status buyrug‘ining chaqmoqdek tez ishlashini ta’minlaydi.
 
 5
-00:39.000 --> 00:48.200
+00:40.500 --> 00:49.700
 Git update-index buyrug‘i fayllarni yoki tayyor bloblarni DIRC
 binar formatidagi .git/index fayliga ro‘yxat qilib yozadi.
 
 6
-00:48.770 --> 00:57.120
+00:50.270 --> 00:58.620
 git ls-files minus s buyrug‘i orqali index ichidagi fayl rejimi,
 blob hashi, stage bosqichi va yo‘lini ko‘rishimiz mumkin.
 
 7
-01:00.410 --> 01:07.710
+01:02.910 --> 01:10.210
 Git write-tree buyrug‘i indexdagi tekis ro‘yxatni tahlil qilib,
 har bir ichki papka uchun o‘zgarmas tree obyektini yasaydi.
 
 8
-01:07.960 --> 01:14.630
+01:10.460 --> 01:17.130
 Bunda bir xil papka tuzilmalari qayta yaratilmasdan o‘sha
 hash kodi bilan qayta ishlatiladi va disk joyi tejaladi.
 
 9
-01:17.820 --> 01:25.760
+01:21.320 --> 01:29.260
 Teskari yo‘nalishda git read-tree saqlangan tree obyektini indexga
 yuklaydi, checkout-index esa uni ishchi papkaga chiqarib beradi.
 
 10
-01:26.070 --> 01:32.820
+01:29.570 --> 01:36.320
 Ushbu zanjir git reset va git restore kabi qulay buyruqlarning
 asl poydevori qanday ishlashini yaqqol ko‘rsatadi.
 
 11
-01:36.110 --> 01:43.510
+01:40.610 --> 01:48.010
 Tree papkalar suratini saqlaydi, lekin unda muallif, sana va
 commit xabari yo‘q; ular keyingi bobda commit obyektiga birikadi.
 
 12
-01:43.880 --> 01:50.470
+01:48.380 --> 01:54.970
 Keyingi o‘n oltinchi bobda aynan ushbu tree obyektidan
 foydalanib, qo‘lda haqiqiy commit obyekti yaratishni o‘rganamiz.
