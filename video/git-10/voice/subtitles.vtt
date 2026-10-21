@@ -11,51 +11,51 @@ Git har qanday kommitni qabul qilaveradi, lekin yaxshi kommit kelajakdagi
 insonlar va avtomatlashtirilgan asboblar uchun xizmat qiladi.
 
 3
-00:19.710 --> 00:27.150
+00:20.210 --> 00:27.650
 Birinchi talab — toza o‘zgarish: qator oxiridagi keraksiz
 bo‘shliqlar va format xatolari diffni ifloslantirmasligi lozim.
 
 4
-00:27.360 --> 00:35.790
+00:27.860 --> 00:36.290
 Git diff chek buyrug‘i bo‘sh joy xatolarini darhol ko‘rsatadi, pre-kommit
 xuk esa bunday xatolarning omborga kirishini avtomatik to‘xtatadi.
 
 5
-00:39.020 --> 00:46.080
+00:40.520 --> 00:47.580
 Ikkinchi ustun — atomar kommit: bitta katta kommit ichiga bir
 haftalik turli ishlarni qorishtirish qat’iyan tavsiya etilmaydi.
 
 6
-00:46.410 --> 00:53.320
+00:47.910 --> 00:54.820
 Git add minus p yordamida bitta fayl ichidagi mustaqil
 o‘zgarishlarni bo‘laklarga ajratib, alohida stage qilish mumkin.
 
 7
-00:56.190 --> 01:04.070
+00:58.690 --> 01:06.570
 Uchinchi ustun — xabar tuzilishi: ellik belgigacha bo‘lgan buyruq
 maylidagi qisqa sarlavhadan keyin majburiy bo‘sh qator bo‘lishi shart.
 
 8
-01:04.420 --> 01:12.510
+01:06.920 --> 01:15.010
 Tanada esa kod nima qilgani emas, aynan nega bunday qaror qabul qilingani
 va qaysi muqobillar rad etilgani yetmish ikki belgida tushuntiriladi.
 
 9
-01:15.380 --> 01:23.540
+01:18.880 --> 01:27.040
 Xabar oxiridagi Saynd-off-bay yoki Ko-osord-bay kabi treylerlar
 rasmiy tasdiq va hammualliflik metama’lumotlarini taqdim etadi.
 
 10
-01:23.890 --> 01:31.520
+01:27.390 --> 01:35.020
 Konvenshnal kommitlar kelishuvi esa fit yoki fiks kabi turlar orqali
 avtomatik versiyalash va reliz solnomalarini yaratishni osonlashtiradi.
 
 11
-01:34.450 --> 01:41.490
+01:38.950 --> 01:45.990
 Kommitdan oldin status va keshd chek orqali tozalikni tekshirib,
 xabar qoidalariga rioya qilish jamoaviy ishonch garovidir.
 
 12
-01:41.820 --> 01:48.710
+01:46.320 --> 01:53.210
 Keyingi bobda xato ketgan kommitlarni xavfsiz tuzatish,
 ya’ni emend va restor buyruqlari bilan tanishamiz. Rahmat!
