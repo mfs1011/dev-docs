@@ -20,12 +20,12 @@
   };
 
   const hold = {
-    l2: 1.0,
-    l4: 1.0,
-    l6: 1.0,
-    l8: 1.0,
-    l10: 1.0,
-    l12: 1.5
+    l2: 1.5,
+    l4: 2.0,
+    l6: 2.0,
+    l8: 2.0,
+    l10: 2.0,
+    l12: 2.0
   };
 
   const lines = [
@@ -87,7 +87,7 @@
     {
       id: 'l12',
       scene: 'xulosa',
-      text: "Keyingi bobda eng namunali va toza kommitlar yaratish madaniyatini o‘rganamiz. Rahmat!"
+      text: "Keyingi o‘ninchi bobda eng namunali va toza kommitlar yaratish madaniyatini o‘rganamiz. Rahmat!"
     }
   ];
 

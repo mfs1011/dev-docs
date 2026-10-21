@@ -25,6 +25,9 @@ const SAY = [
   [/\beych-ti-ti-pi-es\b/gi, "eych ti ti pi es"],
   [/\bes-es-eych\b/gi, "es es eych"],
   [/\bdepsh bir\b/gi, "deps bir"],
+  [/\bshow\b/gi, "shou"],
+  [/\bHED\b/gi, "hed"],
+  [/\bstat\b/gi, "stat"],
 ];
 const toSay = (text) => SAY.reduce((s, [re, to]) => s.replace(re, to), text)
   .replace(/(^|[.!?…]\s+)(\p{Ll})/gu, (m, p, c) => p + c.toUpperCase());
