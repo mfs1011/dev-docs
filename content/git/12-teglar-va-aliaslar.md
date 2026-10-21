@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" playsinline poster="/video/git/12-teglar-va-aliaslar.jpg" src="/video/git/12-teglar-va-aliaslar.mp4">
+    <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/git/12-teglar-va-aliaslar.chapters.vtt" default>
+    <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/git/12-teglar-va-aliaslar.uz.vtt">
+  </video>
+  <figcaption>12.1-video. Git teglari va alias'lar</figcaption>
+</figure>
+
 Loyiha tarixida ba'zi nuqtalar boshqalaridan muhimroq: "1.0 versiya shu yerda chiqdi", "mijozga aynan shu holat topshirildi". Har safar 40 belgili hash'ni eslab qolish noqulay. **Teg** (tag) — tarixdagi aniq bir nuqtaga qo'yiladigan doimiy nom: `v1.0`, `v2.3.1`.
 
 Teg branch'ga o'xshaydi — ikkalasi ham commit'ga ko'rsatkich. Farqi: branch yangi commit qilganda oldinga siljiydi, teg esa **joyida qoladi**. Kitobdagi xatcho'pga o'xshatsak: branch — o'qiyotgan joyingiz (har kuni ko'chadi), teg — "shu sahifa muhim" degan doimiy belgi.
