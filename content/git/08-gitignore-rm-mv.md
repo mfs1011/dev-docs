@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" playsinline poster="/video/git/08-gitignore-rm-mv.jpg" src="/video/git/08-gitignore-rm-mv.mp4">
+    <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/git/08-gitignore-rm-mv.chapters.vtt" default>
+    <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/git/08-gitignore-rm-mv.uz.vtt">
+  </video>
+  <figcaption>08.1-video. .gitignore, rm va mv</figcaption>
+</figure>
+
 Loyiha papkasida har doim Git saqlashi **kerak bo'lmagan** fayllar bo'ladi: build natijalari (`build/`, `*.o`), yuklab olingan kutubxonalar (`node_modules/`), log'lar, muharrirning vaqtinchalik fayllari (`*.swp`, `*~`), maxfiy sozlamalar (`.env`). Ular `git status`da "untracked" bo'lib turaveradi, `git add .` qilsangiz esa tasodifan commit'ga tushib qoladi.
 
 Bu bobda uchta vosita bor:
