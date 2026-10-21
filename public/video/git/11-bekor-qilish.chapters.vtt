@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:18.125
+Bekor Qilish Xaritasi
+
+00:18.125 --> 00:36.938
+commit --amend: Oxirgi Commitni Yangilash
+
+00:36.938 --> 00:53.526
+git restore --staged: Indexdan Chiqarish
+
+00:53.526 --> 01:11.237
+git restore: Diskdagi O‘zgarishni Tashlash
+
+01:11.237 --> 01:29.858
+Eski Usul: checkout va restore Farqi
+
+01:29.858 --> 01:50.060
+Xavflar Xaritasi va Xulosa

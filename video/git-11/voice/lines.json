@@ -1,0 +1,1114 @@
+[
+  {
+    "id": "l1",
+    "scene": "intro",
+    "text": "Salom! Ushbu o‘n birinchi bobda kundalik ishlarda xato ketgan amallarni orqaga qaytarish va bekor qilish usullarini o‘rganamiz.",
+    "show": "Salom! Ushbu o‘n birinchi bobda kundalik ishlarda xato ketgan amallarni orqaga qaytarish va bekor qilish usullarini o‘rganamiz.",
+    "say": "Salom! Ushbu o‘n birinchi bobda kundalik ishlarda xato ketgan amallarni orqaga qaytarish va bekor qilish usullarini o‘rganamiz.",
+    "a0": 0.12,
+    "a1": 7.18,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.12,
+        "e": 0.38
+      },
+      {
+        "w": "Ushbu",
+        "s": 0.94,
+        "e": 1.16
+      },
+      {
+        "w": "o‘n",
+        "s": 1.34,
+        "e": 1.42
+      },
+      {
+        "w": "birinchi",
+        "s": 1.44,
+        "e": 1.7
+      },
+      {
+        "w": "bobda",
+        "s": 1.74,
+        "e": 2.02
+      },
+      {
+        "w": "kundalik",
+        "s": 2.22,
+        "e": 2.58
+      },
+      {
+        "w": "ishlarda",
+        "s": 2.62,
+        "e": 3.0
+      },
+      {
+        "w": "xato",
+        "s": 3.1,
+        "e": 3.32
+      },
+      {
+        "w": "ketgan",
+        "s": 3.4,
+        "e": 3.68
+      },
+      {
+        "w": "amallarni",
+        "s": 3.76,
+        "e": 4.24
+      },
+      {
+        "w": "orqaga",
+        "s": 4.44,
+        "e": 4.72
+      },
+      {
+        "w": "qaytarish",
+        "s": 4.78,
+        "e": 5.24
+      },
+      {
+        "w": "va",
+        "s": 5.32,
+        "e": 5.4
+      },
+      {
+        "w": "bekor",
+        "s": 5.76,
+        "e": 6.04
+      },
+      {
+        "w": "qilish",
+        "s": 6.08,
+        "e": 6.28
+      },
+      {
+        "w": "usullarini",
+        "s": 6.32,
+        "e": 6.74
+      },
+      {
+        "w": "o‘rganamiz.",
+        "s": 6.76,
+        "e": 7.18
+      }
+    ]
+  },
+  {
+    "id": "l2",
+    "scene": "intro",
+    "text": "Xato oxirgi kommitda, indeks qoralamasida yoki diskdagi ishchi papkada bo‘lishiga qarab turli buyruqlar qo‘llaniladi.",
+    "show": "Xato oxirgi kommitda, indeks qoralamasida yoki diskdagi ishchi papkada bo‘lishiga qarab turli buyruqlar qo‘llaniladi.",
+    "say": "Xato oxirgi kommitda, indeks qoralamasida yoki diskdagi ishchi papkada bo‘lishiga qarab turli buyruqlar qo‘llaniladi.",
+    "a0": 8.15,
+    "a1": 14.65,
+    "words": [
+      {
+        "w": "Xato",
+        "s": 8.15,
+        "e": 8.37
+      },
+      {
+        "w": "oxirgi",
+        "s": 8.65,
+        "e": 8.97
+      },
+      {
+        "w": "kommitda,",
+        "s": 9.01,
+        "e": 9.49
+      },
+      {
+        "w": "indeks",
+        "s": 9.87,
+        "e": 10.19
+      },
+      {
+        "w": "qoralamasida",
+        "s": 10.23,
+        "e": 10.83
+      },
+      {
+        "w": "yoki",
+        "s": 10.95,
+        "e": 11.19
+      },
+      {
+        "w": "diskdagi",
+        "s": 11.55,
+        "e": 11.99
+      },
+      {
+        "w": "ishchi",
+        "s": 12.05,
+        "e": 12.25
+      },
+      {
+        "w": "papkada",
+        "s": 12.29,
+        "e": 12.61
+      },
+      {
+        "w": "bo‘lishiga",
+        "s": 12.65,
+        "e": 12.99
+      },
+      {
+        "w": "qarab",
+        "s": 13.05,
+        "e": 13.27
+      },
+      {
+        "w": "turli",
+        "s": 13.35,
+        "e": 13.61
+      },
+      {
+        "w": "buyruqlar",
+        "s": 13.67,
+        "e": 14.07
+      },
+      {
+        "w": "qo‘llaniladi.",
+        "s": 14.11,
+        "e": 14.65
+      }
+    ]
+  },
+  {
+    "id": "l3",
+    "scene": "amend",
+    "text": "Agar kommitda fayl unutilgan yoki xabarda xatolik ketgan bo‘lsa, git commit minus minus emend buyrug‘i uni yangisiga almashtirib beradi.",
+    "show": "Agar kommitda fayl unutilgan yoki xabarda xatolik ketgan bo‘lsa, git commit minus minus emend buyrug‘i uni yangisiga almashtirib beradi.",
+    "say": "Agar kommitda fayl unutilgan yoki xabarda xatolik ketgan bo‘lsa, git kommit minus minus emend buyrug‘i uni yangisiga almashtirib beradi.",
+    "a0": 15.57,
+    "a1": 23.16,
+    "words": [
+      {
+        "w": "Agar",
+        "s": 15.57,
+        "e": 15.79
+      },
+      {
+        "w": "kommitda",
+        "s": 15.89,
+        "e": 16.27
+      },
+      {
+        "w": "fayl",
+        "s": 16.43,
+        "e": 16.71
+      },
+      {
+        "w": "unutilgan",
+        "s": 16.77,
+        "e": 17.23
+      },
+      {
+        "w": "yoki",
+        "s": 17.29,
+        "e": 17.51
+      },
+      {
+        "w": "xabarda",
+        "s": 17.61,
+        "e": 17.97
+      },
+      {
+        "w": "xatolik",
+        "s": 18.01,
+        "e": 18.37
+      },
+      {
+        "w": "ketgan",
+        "s": 18.39,
+        "e": 18.69
+      },
+      {
+        "w": "bo‘lsa,",
+        "s": 18.73,
+        "e": 18.97
+      },
+      {
+        "w": "git",
+        "s": 19.41,
+        "e": 19.59
+      },
+      {
+        "w": "kommit",
+        "s": 19.65,
+        "e": 19.99
+      },
+      {
+        "w": "minus",
+        "s": 20.15,
+        "e": 20.39
+      },
+      {
+        "w": "minus",
+        "s": 20.43,
+        "e": 20.65
+      },
+      {
+        "w": "emend",
+        "s": 20.77,
+        "e": 21.05
+      },
+      {
+        "w": "buyrug‘i",
+        "s": 21.13,
+        "e": 21.47
+      },
+      {
+        "w": "uni",
+        "s": 21.77,
+        "e": 21.91
+      },
+      {
+        "w": "yangisiga",
+        "s": 22.03,
+        "e": 22.43
+      },
+      {
+        "w": "almashtirib",
+        "s": 22.49,
+        "e": 22.88
+      },
+      {
+        "w": "beradi.",
+        "s": 22.9,
+        "e": 23.16
+      }
+    ]
+  },
+  {
+    "id": "l4",
+    "scene": "amend",
+    "text": "Muhim qoida: emend yangi kommit obyekti yaratadi, shuning uchun uni faqat hali tashqariga push qilinmagan holatda ishlatish zarur.",
+    "show": "Muhim qoida: emend yangi kommit obyekti yaratadi, shuning uchun uni faqat hali tashqariga push qilinmagan holatda ishlatish zarur.",
+    "say": "Muhim qoida: emend yangi kommit obyekti yaratadi, shuning uchun uni faqat hali tashqariga push qilinmagan holatda ishlatish zarur.",
+    "a0": 24.06,
+    "a1": 30.82,
+    "words": [
+      {
+        "w": "Muhim",
+        "s": 24.06,
+        "e": 24.3
+      },
+      {
+        "w": "qoida:",
+        "s": 24.34,
+        "e": 24.64
+      },
+      {
+        "w": "emend",
+        "s": 25.24,
+        "e": 25.54
+      },
+      {
+        "w": "yangi",
+        "s": 25.64,
+        "e": 25.88
+      },
+      {
+        "w": "kommit",
+        "s": 25.94,
+        "e": 26.24
+      },
+      {
+        "w": "obyekti",
+        "s": 26.3,
+        "e": 26.58
+      },
+      {
+        "w": "yaratadi,",
+        "s": 26.62,
+        "e": 27.0
+      },
+      {
+        "w": "shuning",
+        "s": 27.22,
+        "e": 27.44
+      },
+      {
+        "w": "uchun",
+        "s": 27.44,
+        "e": 27.6
+      },
+      {
+        "w": "uni",
+        "s": 27.66,
+        "e": 27.78
+      },
+      {
+        "w": "faqat",
+        "s": 27.88,
+        "e": 28.16
+      },
+      {
+        "w": "hali",
+        "s": 28.22,
+        "e": 28.42
+      },
+      {
+        "w": "tashqariga",
+        "s": 28.5,
+        "e": 28.94
+      },
+      {
+        "w": "push",
+        "s": 29.02,
+        "e": 29.22
+      },
+      {
+        "w": "qilinmagan",
+        "s": 29.26,
+        "e": 29.74
+      },
+      {
+        "w": "holatda",
+        "s": 29.8,
+        "e": 30.18
+      },
+      {
+        "w": "ishlatish",
+        "s": 30.22,
+        "e": 30.54
+      },
+      {
+        "w": "zarur.",
+        "s": 30.58,
+        "e": 30.82
+      }
+    ]
+  },
+  {
+    "id": "l5",
+    "scene": "unstage",
+    "text": "Keraksiz fayl tasodifan steyj qilib qo‘yilganda, git restore minus minus steyjd buyrug‘i uni indeksdan xavfsiz chiqarib oladi.",
+    "show": "Keraksiz fayl tasodifan steyj qilib qo‘yilganda, git restore minus minus steyjd buyrug‘i uni indeksdan xavfsiz chiqarib oladi.",
+    "say": "Keraksiz fayl tasodifan steyj qilib qo‘yilganda, git restore minus minus steyjd buyrug‘i uni indeksdan xavfsiz chiqarib oladi.",
+    "a0": 32.18,
+    "a1": 38.79,
+    "words": [
+      {
+        "w": "Keraksiz",
+        "s": 32.18,
+        "e": 32.6
+      },
+      {
+        "w": "fayl",
+        "s": 32.64,
+        "e": 32.94
+      },
+      {
+        "w": "tasodifan",
+        "s": 33.02,
+        "e": 33.52
+      },
+      {
+        "w": "steyj",
+        "s": 33.62,
+        "e": 33.86
+      },
+      {
+        "w": "qilib",
+        "s": 33.9,
+        "e": 34.06
+      },
+      {
+        "w": "qo‘yilganda,",
+        "s": 34.1,
+        "e": 34.58
+      },
+      {
+        "w": "git",
+        "s": 34.94,
+        "e": 35.12
+      },
+      {
+        "w": "restore",
+        "s": 35.2,
+        "e": 35.64
+      },
+      {
+        "w": "minus",
+        "s": 35.72,
+        "e": 35.96
+      },
+      {
+        "w": "minus",
+        "s": 36.0,
+        "e": 36.2
+      },
+      {
+        "w": "steyjd",
+        "s": 36.22,
+        "e": 36.58
+      },
+      {
+        "w": "buyrug‘i",
+        "s": 36.62,
+        "e": 36.96
+      },
+      {
+        "w": "uni",
+        "s": 37.08,
+        "e": 37.22
+      },
+      {
+        "w": "indeksdan",
+        "s": 37.38,
+        "e": 37.83
+      },
+      {
+        "w": "xavfsiz",
+        "s": 37.89,
+        "e": 38.21
+      },
+      {
+        "w": "chiqarib",
+        "s": 38.25,
+        "e": 38.53
+      },
+      {
+        "w": "oladi.",
+        "s": 38.55,
+        "e": 38.79
+      }
+    ]
+  },
+  {
+    "id": "l6",
+    "scene": "unstage",
+    "text": "Bu buyruq ishchi faylga aslo tegmaydi, diskdagi barcha o‘zgarishlar o‘z joyida butun saqlanib qoladi.",
+    "show": "Bu buyruq ishchi faylga aslo tegmaydi, diskdagi barcha o‘zgarishlar o‘z joyida butun saqlanib qoladi.",
+    "say": "Bu buyruq ishchi faylga aslo tegmaydi, diskdagi barcha o‘zgarishlar o‘z joyida butun saqlanib qoladi.",
+    "a0": 39.53,
+    "a1": 44.85,
+    "words": [
+      {
+        "w": "Bu",
+        "s": 39.53,
+        "e": 39.59
+      },
+      {
+        "w": "buyruq",
+        "s": 39.67,
+        "e": 39.91
+      },
+      {
+        "w": "ishchi",
+        "s": 40.03,
+        "e": 40.21
+      },
+      {
+        "w": "faylga",
+        "s": 40.23,
+        "e": 40.55
+      },
+      {
+        "w": "aslo",
+        "s": 40.65,
+        "e": 40.89
+      },
+      {
+        "w": "tegmaydi,",
+        "s": 40.93,
+        "e": 41.35
+      },
+      {
+        "w": "diskdagi",
+        "s": 41.71,
+        "e": 42.13
+      },
+      {
+        "w": "barcha",
+        "s": 42.27,
+        "e": 42.55
+      },
+      {
+        "w": "o‘zgarishlar",
+        "s": 42.59,
+        "e": 43.07
+      },
+      {
+        "w": "o‘z",
+        "s": 43.19,
+        "e": 43.31
+      },
+      {
+        "w": "joyida",
+        "s": 43.35,
+        "e": 43.65
+      },
+      {
+        "w": "butun",
+        "s": 43.91,
+        "e": 44.15
+      },
+      {
+        "w": "saqlanib",
+        "s": 44.21,
+        "e": 44.57
+      },
+      {
+        "w": "qoladi.",
+        "s": 44.59,
+        "e": 44.85
+      }
+    ]
+  },
+  {
+    "id": "l7",
+    "scene": "restore_worktree",
+    "text": "Agar fayldagi yangi yozilgan kod butunlay keraksiz bo‘lib qolsa, git restore fayl nomi orqali uni oxirgi holatiga qaytarish mumkin.",
+    "show": "Agar fayldagi yangi yozilgan kod butunlay keraksiz bo‘lib qolsa, git restore fayl nomi orqali uni oxirgi holatiga qaytarish mumkin.",
+    "say": "Agar fayldagi yangi yozilgan kod butunlay keraksiz bo‘lib qolsa, git restore fayl nomi orqali uni oxirgi holatiga qaytarish mumkin.",
+    "a0": 45.91,
+    "a1": 52.94,
+    "words": [
+      {
+        "w": "Agar",
+        "s": 45.91,
+        "e": 46.13
+      },
+      {
+        "w": "fayldagi",
+        "s": 46.29,
+        "e": 46.71
+      },
+      {
+        "w": "yangi",
+        "s": 46.79,
+        "e": 47.03
+      },
+      {
+        "w": "yozilgan",
+        "s": 47.07,
+        "e": 47.45
+      },
+      {
+        "w": "kod",
+        "s": 47.49,
+        "e": 47.67
+      },
+      {
+        "w": "butunlay",
+        "s": 47.81,
+        "e": 48.21
+      },
+      {
+        "w": "keraksiz",
+        "s": 48.25,
+        "e": 48.69
+      },
+      {
+        "w": "bo‘lib",
+        "s": 48.73,
+        "e": 48.91
+      },
+      {
+        "w": "qolsa,",
+        "s": 48.95,
+        "e": 49.19
+      },
+      {
+        "w": "git",
+        "s": 49.59,
+        "e": 49.75
+      },
+      {
+        "w": "restore",
+        "s": 49.81,
+        "e": 50.19
+      },
+      {
+        "w": "fayl",
+        "s": 50.25,
+        "e": 50.55
+      },
+      {
+        "w": "nomi",
+        "s": 50.59,
+        "e": 50.81
+      },
+      {
+        "w": "orqali",
+        "s": 50.87,
+        "e": 51.19
+      },
+      {
+        "w": "uni",
+        "s": 51.31,
+        "e": 51.43
+      },
+      {
+        "w": "oxirgi",
+        "s": 51.55,
+        "e": 51.85
+      },
+      {
+        "w": "holatiga",
+        "s": 51.89,
+        "e": 52.27
+      },
+      {
+        "w": "qaytarish",
+        "s": 52.29,
+        "e": 52.68
+      },
+      {
+        "w": "mumkin.",
+        "s": 52.7,
+        "e": 52.94
+      }
+    ]
+  },
+  {
+    "id": "l8",
+    "scene": "restore_worktree",
+    "text": "Biroq ehtiyot bo‘ling: kommit qilinmagan o‘zgarishlar qaytarib bo‘lmas darajada yo‘qoladi, Git ularni qayta tiklay olmaydi.",
+    "show": "Biroq ehtiyot bo‘ling: kommit qilinmagan o‘zgarishlar qaytarib bo‘lmas darajada yo‘qoladi, Git ularni qayta tiklay olmaydi.",
+    "say": "Biroq ehtiyot bo‘ling: kommit qilinmagan o‘zgarishlar qaytarib bo‘lmas darajada yo‘qoladi, Git ularni qayta tiklay olmaydi.",
+    "a0": 53.28,
+    "a1": 59.72,
+    "words": [
+      {
+        "w": "Biroq",
+        "s": 53.28,
+        "e": 53.48
+      },
+      {
+        "w": "ehtiyot",
+        "s": 53.62,
+        "e": 53.94
+      },
+      {
+        "w": "bo‘ling:",
+        "s": 53.98,
+        "e": 54.22
+      },
+      {
+        "w": "kommit",
+        "s": 54.62,
+        "e": 54.9
+      },
+      {
+        "w": "qilinmagan",
+        "s": 54.96,
+        "e": 55.4
+      },
+      {
+        "w": "o‘zgarishlar",
+        "s": 55.46,
+        "e": 55.94
+      },
+      {
+        "w": "qaytarib",
+        "s": 56.22,
+        "e": 56.68
+      },
+      {
+        "w": "bo‘lmas",
+        "s": 56.72,
+        "e": 57.04
+      },
+      {
+        "w": "darajada",
+        "s": 57.06,
+        "e": 57.4
+      },
+      {
+        "w": "yo‘qoladi,",
+        "s": 57.44,
+        "e": 57.86
+      },
+      {
+        "w": "Git",
+        "s": 58.2,
+        "e": 58.34
+      },
+      {
+        "w": "ularni",
+        "s": 58.4,
+        "e": 58.66
+      },
+      {
+        "w": "qayta",
+        "s": 58.72,
+        "e": 58.96
+      },
+      {
+        "w": "tiklay",
+        "s": 59.02,
+        "e": 59.32
+      },
+      {
+        "w": "olmaydi.",
+        "s": 59.38,
+        "e": 59.72
+      }
+    ]
+  },
+  {
+    "id": "l9",
+    "scene": "eski_yol",
+    "text": "Eski Git talqinlarida bu amallar chekaut va reset yordamida bajarilar edi, lekin ular ko‘p vazifaliligi sababli xavfli hisoblanardi.",
+    "show": "Eski Git talqinlarida bu amallar chekaut va reset yordamida bajarilar edi, lekin ular ko‘p vazifaliligi sababli xavfli hisoblanardi.",
+    "say": "Eski Git talqinlarida bu amallar chekaut va reset yordamida bajarilar edi, lekin ular ko‘p vazifaliligi sababli xavfli hisoblanardi.",
+    "a0": 61.44,
+    "a1": 68.49,
+    "words": [
+      {
+        "w": "Eski",
+        "s": 61.44,
+        "e": 61.62
+      },
+      {
+        "w": "Git",
+        "s": 61.68,
+        "e": 61.8
+      },
+      {
+        "w": "talqinlarida",
+        "s": 61.82,
+        "e": 62.4
+      },
+      {
+        "w": "bu",
+        "s": 62.5,
+        "e": 62.56
+      },
+      {
+        "w": "amallar",
+        "s": 62.62,
+        "e": 63.02
+      },
+      {
+        "w": "chekaut",
+        "s": 63.2,
+        "e": 63.66
+      },
+      {
+        "w": "va",
+        "s": 63.72,
+        "e": 63.78
+      },
+      {
+        "w": "reset",
+        "s": 63.9,
+        "e": 64.18
+      },
+      {
+        "w": "yordamida",
+        "s": 64.22,
+        "e": 64.58
+      },
+      {
+        "w": "bajarilar",
+        "s": 64.6,
+        "e": 65.02
+      },
+      {
+        "w": "edi,",
+        "s": 65.06,
+        "e": 65.18
+      },
+      {
+        "w": "lekin",
+        "s": 65.54,
+        "e": 65.76
+      },
+      {
+        "w": "ular",
+        "s": 65.82,
+        "e": 66.02
+      },
+      {
+        "w": "ko‘p",
+        "s": 66.14,
+        "e": 66.3
+      },
+      {
+        "w": "vazifaliligi",
+        "s": 66.34,
+        "e": 66.96
+      },
+      {
+        "w": "sababli",
+        "s": 67.0,
+        "e": 67.38
+      },
+      {
+        "w": "xavfli",
+        "s": 67.57,
+        "e": 67.83
+      },
+      {
+        "w": "hisoblanardi.",
+        "s": 67.91,
+        "e": 68.49
+      }
+    ]
+  },
+  {
+    "id": "l10",
+    "scene": "eski_yol",
+    "text": "Zamonaviy Gitda esa vazifalar aniq ajratilgan: restor faqat fayllarni tiklaydi, svitch esa tarmoqlarni almashtiradi.",
+    "show": "Zamonaviy Gitda esa vazifalar aniq ajratilgan: restor faqat fayllarni tiklaydi, svitch esa tarmoqlarni almashtiradi.",
+    "say": "Zamonaviy Gitda esa vazifalar aniq ajratilgan: restor faqat fayllarni tiklaydi, svitch esa tarmoqlarni almashtiradi.",
+    "a0": 69.39,
+    "a1": 75.97,
+    "words": [
+      {
+        "w": "Zamonaviy",
+        "s": 69.39,
+        "e": 69.81
+      },
+      {
+        "w": "Gitda",
+        "s": 69.85,
+        "e": 70.05
+      },
+      {
+        "w": "esa",
+        "s": 70.11,
+        "e": 70.27
+      },
+      {
+        "w": "vazifalar",
+        "s": 70.43,
+        "e": 70.89
+      },
+      {
+        "w": "aniq",
+        "s": 71.01,
+        "e": 71.19
+      },
+      {
+        "w": "ajratilgan:",
+        "s": 71.23,
+        "e": 71.75
+      },
+      {
+        "w": "restor",
+        "s": 72.17,
+        "e": 72.51
+      },
+      {
+        "w": "faqat",
+        "s": 72.61,
+        "e": 72.85
+      },
+      {
+        "w": "fayllarni",
+        "s": 72.91,
+        "e": 73.41
+      },
+      {
+        "w": "tiklaydi,",
+        "s": 73.45,
+        "e": 73.83
+      },
+      {
+        "w": "svitch",
+        "s": 74.21,
+        "e": 74.47
+      },
+      {
+        "w": "esa",
+        "s": 74.51,
+        "e": 74.67
+      },
+      {
+        "w": "tarmoqlarni",
+        "s": 74.87,
+        "e": 75.45
+      },
+      {
+        "w": "almashtiradi.",
+        "s": 75.47,
+        "e": 75.97
+      }
+    ]
+  },
+  {
+    "id": "l11",
+    "scene": "xulosa",
+    "text": "Xulosa qilib aytganda, indeksdagi bekor qilishlar mutlaqo xavfsiz, lekin diskdagi saqlanmagan kodni o‘chirishda doim ehtiyotkor bo‘ling.",
+    "show": "Xulosa qilib aytganda, indeksdagi bekor qilishlar mutlaqo xavfsiz, lekin diskdagi saqlanmagan kodni o‘chirishda doim ehtiyotkor bo‘ling.",
+    "say": "Xulosa qilib aytganda, indeksdagi bekor qilishlar mutlaqo xavfsiz, lekin diskdagi saqlanmagan kodni o‘chirishda doim ehtiyotkor bo‘ling.",
+    "a0": 77.09,
+    "a1": 84.24,
+    "words": [
+      {
+        "w": "Xulosa",
+        "s": 77.09,
+        "e": 77.37
+      },
+      {
+        "w": "qilib",
+        "s": 77.39,
+        "e": 77.53
+      },
+      {
+        "w": "aytganda,",
+        "s": 77.57,
+        "e": 77.93
+      },
+      {
+        "w": "indeksdagi",
+        "s": 78.25,
+        "e": 78.71
+      },
+      {
+        "w": "bekor",
+        "s": 78.75,
+        "e": 78.99
+      },
+      {
+        "w": "qilishlar",
+        "s": 79.03,
+        "e": 79.39
+      },
+      {
+        "w": "mutlaqo",
+        "s": 79.53,
+        "e": 79.89
+      },
+      {
+        "w": "xavfsiz,",
+        "s": 79.97,
+        "e": 80.35
+      },
+      {
+        "w": "lekin",
+        "s": 80.61,
+        "e": 80.85
+      },
+      {
+        "w": "diskdagi",
+        "s": 81.03,
+        "e": 81.43
+      },
+      {
+        "w": "saqlanmagan",
+        "s": 81.51,
+        "e": 82.05
+      },
+      {
+        "w": "kodni",
+        "s": 82.11,
+        "e": 82.33
+      },
+      {
+        "w": "o‘chirishda",
+        "s": 82.37,
+        "e": 82.76
+      },
+      {
+        "w": "doim",
+        "s": 83.1,
+        "e": 83.4
+      },
+      {
+        "w": "ehtiyotkor",
+        "s": 83.48,
+        "e": 83.98
+      },
+      {
+        "w": "bo‘ling.",
+        "s": 84.02,
+        "e": 84.24
+      }
+    ]
+  },
+  {
+    "id": "l12",
+    "scene": "xulosa",
+    "text": "Keyingi o‘n ikkinchi bobda loyihaning muhim nuqtalarini belgilash — teglar va aliaslar bilan tanishamiz. Rahmat!",
+    "show": "Keyingi o‘n ikkinchi bobda loyihaning muhim nuqtalarini belgilash — teglar va aliaslar bilan tanishamiz. Rahmat!",
+    "say": "Keyingi o‘n ikkinchi bobda loyihaning muhim nuqtalarini belgilash — teglar va aliaslar bilan tanishamiz. Rahmat!",
+    "a0": 85.06,
+    "a1": 90.98,
+    "words": [
+      {
+        "w": "Keyingi",
+        "s": 85.06,
+        "e": 85.42
+      },
+      {
+        "w": "o‘n",
+        "s": 85.56,
+        "e": 85.64
+      },
+      {
+        "w": "ikkinchi",
+        "s": 85.66,
+        "e": 85.92
+      },
+      {
+        "w": "bobda",
+        "s": 85.96,
+        "e": 86.2
+      },
+      {
+        "w": "loyihaning",
+        "s": 86.34,
+        "e": 86.78
+      },
+      {
+        "w": "muhim",
+        "s": 86.82,
+        "e": 87.06
+      },
+      {
+        "w": "nuqtalarini",
+        "s": 87.12,
+        "e": 87.62
+      },
+      {
+        "w": "belgilash",
+        "s": 87.66,
+        "e": 88.06
+      },
+      {
+        "w": "—",
+        "s": 88.06,
+        "e": 88.06
+      },
+      {
+        "w": "teglar",
+        "s": 88.36,
+        "e": 88.76
+      },
+      {
+        "w": "va",
+        "s": 88.82,
+        "e": 88.88
+      },
+      {
+        "w": "aliaslar",
+        "s": 89.2,
+        "e": 89.6
+      },
+      {
+        "w": "bilan",
+        "s": 89.64,
+        "e": 89.8
+      },
+      {
+        "w": "tanishamiz.",
+        "s": 89.82,
+        "e": 90.24
+      },
+      {
+        "w": "Rahmat!",
+        "s": 90.69,
+        "e": 90.98
+      }
+    ]
+  }
+]

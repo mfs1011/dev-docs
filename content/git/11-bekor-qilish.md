@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" playsinline poster="/video/git/11-bekor-qilish.jpg" src="/video/git/11-bekor-qilish.mp4">
+    <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/git/11-bekor-qilish.chapters.vtt" default>
+    <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/git/11-bekor-qilish.uz.vtt">
+  </video>
+  <figcaption>11.1-video. Bekor qilish: amend va restore</figcaption>
+</figure>
+
 Ishlayotganda xato qilish tabiiy: commit'ni erta qilib, faylni qo'shishni unutdingiz; xabarda imlo xatosi; `git add .` keraksiz faylni ham stage qildi; yoki faylga kiritgan o'zgarishlaringiz umuman kerak emas. Bu bob kundalik **bekor qilish** amallarini o'rgatadi — har biri uch hududdan ([05-bob](05-uch-holat.md)) bittasini orqaga qaytaradi:
 
 | Xato qayerda | Nima qilmoqchisiz | Hozirgi buyruq | Eski yo'l (Pro Git, eski maqolalar) |

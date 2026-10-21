@@ -1,0 +1,61 @@
+WEBVTT
+
+1
+00:01.420 --> 00:08.930
+Salom! Ushbu o‘n birinchi bobda kundalik ishlarda xato ketgan
+amallarni orqaga qaytarish va bekor qilish usullarini o‘rganamiz.
+
+2
+00:09.450 --> 00:16.400
+Xato oxirgi kommitda, indeks qoralamasida yoki diskdagi
+ishchi papkada bo‘lishiga qarab turli buyruqlar qo‘llaniladi.
+
+3
+00:19.470 --> 00:27.510
+Agar kommitda fayl unutilgan yoki xabarda xatolik ketgan bo‘lsa, git
+commit minus minus emend buyrug‘i uni yangisiga almashtirib beradi.
+
+4
+00:27.960 --> 00:35.170
+Muhim qoida: emend yangi kommit obyekti yaratadi, shuning uchun
+uni faqat hali tashqariga push qilinmagan holatda ishlatish zarur.
+
+5
+00:38.680 --> 00:45.740
+Keraksiz fayl tasodifan steyj qilib qo‘yilganda, git restore
+minus minus steyjd buyrug‘i uni indeksdan xavfsiz chiqarib oladi.
+
+6
+00:46.030 --> 00:51.800
+Bu buyruq ishchi faylga aslo tegmaydi, diskdagi
+barcha o‘zgarishlar o‘z joyida butun saqlanib qoladi.
+
+7
+00:55.010 --> 01:02.490
+Agar fayldagi yangi yozilgan kod butunlay keraksiz bo‘lib qolsa,
+git restore fayl nomi orqali uni oxirgi holatiga qaytarish mumkin.
+
+8
+01:02.380 --> 01:09.270
+Biroq ehtiyot bo‘ling: kommit qilinmagan o‘zgarishlar qaytarib
+bo‘lmas darajada yo‘qoladi, Git ularni qayta tiklay olmaydi.
+
+9
+01:13.140 --> 01:20.640
+Eski Git talqinlarida bu amallar chekaut va reset yordamida bajarilar
+edi, lekin ular ko‘p vazifaliligi sababli xavfli hisoblanardi.
+
+10
+01:21.090 --> 01:28.120
+Zamonaviy Gitda esa vazifalar aniq ajratilgan: restor faqat
+fayllarni tiklaydi, svitch esa tarmoqlarni almashtiradi.
+
+11
+01:31.390 --> 01:38.990
+Xulosa qilib aytganda, indeksdagi bekor qilishlar mutlaqo xavfsiz,
+lekin diskdagi saqlanmagan kodni o‘chirishda doim ehtiyotkor bo‘ling.
+
+12
+01:39.360 --> 01:45.730
+Keyingi o‘n ikkinchi bobda loyihaning muhim nuqtalarini
+belgilash — teglar va aliaslar bilan tanishamiz. Rahmat!
