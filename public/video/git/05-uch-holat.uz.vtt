@@ -1,61 +1,61 @@
 WEBVTT
 
 1
-00:01.420 --> 00:07.330
-Salom! Ushbu beshinchi bobda Gitning eng muhim
+00:01.420 --> 00:08.690
+Salom! Ushbu beshinchi bobda Gitning eng asosiy
 poydevori — uch holat va uch hudud modelini o‘rganamiz.
 
 2
-00:07.460 --> 00:14.060
-Shu arxitekturani tushunsangiz, Gitdagi keyingi har qanday
-buyruqning maqsadi va mohiyatini osongina ilg‘ab olasiz.
+00:09.150 --> 00:16.660
+Ushbu arxitekturani chuqur tushunsangiz, Gitdagi barcha keyingi
+buyruqlarning maqsadi va ishlash mexanizmini osongina ilg‘ab olasiz.
 
 3
-00:17.110 --> 00:23.240
-Git kuzatuvidagi har bir fayl uchta holatdan
-birida bo‘ladi: modifayd, steyjd yoki kommitted.
+00:20.330 --> 00:27.220
+Git kuzatuvidagi har bir fayl uchta asosiy holatdan
+birida bo‘ladi: modifayd, steyjd yoki kommitted holati.
 
 4
-00:23.410 --> 00:30.930
-Modifayd — fayl diskda tahrirlangan; steyjd — keyingi saqlashga
-tayyorlangan; kommitted esa arxivga muhrlanganini bildiradi.
+00:27.420 --> 00:36.110
+Modifayd — fayl diskda tahrirlangan; steyjd — bo‘lajak kommitga
+tayyorlangan; kommitted esa arxivga doimiy muhrlanganini bildiradi.
 
 5
-00:33.840 --> 00:40.310
-Bu holatlarga loyihaning uchta mustaqil hududi mos
+00:39.980 --> 00:47.020
+Ushbu uch holatga loyihaning uchta mustaqil hududi mos
 keladi: vorking tri, steyjing eria va git direktori.
 
 6
-00:40.580 --> 00:48.020
-Vorking tri — diskdagi ishchi fayllar; indeks — bo‘lajak
+00:47.330 --> 00:55.500
+Vorking tri — diskdagi ishchi fayllaringiz; indeks — navbatdagi
 kommit qoralamasi; nuqta git esa butun arxiv omboridir.
 
 7
-00:50.970 --> 00:57.640
-Ish oqimi juda oddiy: tahrirlangan faylni git add bilan
-indeksga qo‘shasiz, so‘ng git kommit orqali tarixga yozasiz.
+00:59.530 --> 01:07.070
+Amaliy ish oqimi juda aniq: faylni tahrirlab, git add yordamida
+indeksga olasiz, so‘ng git kommit bilan uni tarixga yozasiz.
 
 8
-00:57.890 --> 01:05.590
-Muhim qoida: faylni indeksga qo‘shgach, diskda yana o‘zgartirsangiz,
-indeksdagi nusxa o‘zgarmaydi, ikkisi alohida yashaydi.
+01:07.380 --> 01:14.590
+Muhim qoida: fayl indeksga olingach diskda yana o‘zgartirilsa,
+indeksdagi nusxa o‘zgarmaydi, ikkisi mustaqil yashaydi.
 
 9
-01:08.660 --> 01:14.190
-Ko‘p tizimlardan farqli o‘laroq, Git oraliq indeks
-hududini kiritganining to‘rtta katta sababi bor.
+01:18.680 --> 01:25.240
+Boshqa tizimlardan farqli o‘laroq, Git oraliq indeks hududini
+bejiz kiritmagan: uning to‘rtta katta afzalligi bor.
 
 10
-01:14.380 --> 01:21.380
-U kommitlarni saralab yig‘ish, saqlashdan oldin tekshirish,
-tezkor kesh va konfliktlarni oson yechish imkonini beradi.
+01:25.410 --> 01:32.600
+U kommitlarni mantiqiy saralash, saqlashdan oldin tekshirish,
+tezkor kesh va konfliktlarni oson hal qilish imkonini beradi.
 
 11
-01:24.250 --> 01:30.440
+01:36.510 --> 01:42.690
 Xulosa qilib aytganda, Git — bu uch hudud o‘rtasida
-o‘zgarishlarni xavfsiz va aniq boshqaruvchi mexanizmdir.
+o‘zgarishlarni xavfsiz va aniq boshqaruvchi qudratli tizimdir.
 
 12
-01:30.570 --> 01:37.090
+01:42.780 --> 01:49.050
 Keyingi bobda ushbu hududlar bilan ishlaydigan status,
-add va commit buyruqlarini amalda ko‘ramiz. Rahmat!
+add va kommit buyruqlarini amalda sinaymiz. Rahmat!

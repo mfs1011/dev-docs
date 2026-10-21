@@ -20,74 +20,74 @@
   };
 
   const hold = {
-    l2: 1.0,
-    l4: 1.0,
-    l6: 1.0,
-    l8: 1.0,
-    l10: 1.0,
-    l12: 1.5
+    l2: 1.5,
+    l4: 2.0,
+    l6: 2.0,
+    l8: 2.0,
+    l10: 2.0,
+    l12: 2.0
   };
 
   const lines = [
     {
       id: 'l1',
       scene: 'intro',
-      text: "Salom! Ushbu beshinchi bobda Gitning eng muhim poydevori — uch holat va uch hudud modelini o‘rganamiz."
+      text: "Salom! Ushbu beshinchi bobda Gitning eng asosiy poydevori — uch holat va uch hudud modelini o‘rganamiz."
     },
     {
       id: 'l2',
       scene: 'intro',
-      text: "Shu arxitekturani tushunsangiz, Gitdagi keyingi har qanday buyruqning maqsadi va mohiyatini osongina ilg‘ab olasiz."
+      text: "Ushbu arxitekturani chuqur tushunsangiz, Gitdagi barcha keyingi buyruqlarning maqsadi va ishlash mexanizmini osongina ilg‘ab olasiz."
     },
     {
       id: 'l3',
       scene: 'uch_holat',
-      text: "Git kuzatuvidagi har bir fayl uchta holatdan birida bo‘ladi: modifayd, steyjd yoki kommitted."
+      text: "Git kuzatuvidagi har bir fayl uchta asosiy holatdan birida bo‘ladi: modifayd, steyjd yoki kommitted holati."
     },
     {
       id: 'l4',
       scene: 'uch_holat',
-      text: "Modifayd — fayl diskda tahrirlangan; steyjd — keyingi saqlashga tayyorlangan; kommitted esa arxivga muhrlanganini bildiradi."
+      text: "Modifayd — fayl diskda tahrirlangan; steyjd — bo‘lajak kommitga tayyorlangan; kommitted esa arxivga doimiy muhrlanganini bildiradi."
     },
     {
       id: 'l5',
       scene: 'uch_hudud',
-      text: "Bu holatlarga loyihaning uchta mustaqil hududi mos keladi: vorking tri, steyjing eria va git direktori."
+      text: "Ushbu uch holatga loyihaning uchta mustaqil hududi mos keladi: vorking tri, steyjing eria va git direktori."
     },
     {
       id: 'l6',
       scene: 'uch_hudud',
-      text: "Vorking tri — diskdagi ishchi fayllar; indeks — bo‘lajak kommit qoralamasi; nuqta git esa butun arxiv omboridir."
+      text: "Vorking tri — diskdagi ishchi fayllaringiz; indeks — navbatdagi kommit qoralamasi; nuqta git esa butun arxiv omboridir."
     },
     {
       id: 'l7',
       scene: 'ish_oqimi',
-      text: "Ish oqimi juda oddiy: tahrirlangan faylni git add bilan indeksga qo‘shasiz, so‘ng git kommit orqali tarixga yozasiz."
+      text: "Amaliy ish oqimi juda aniq: faylni tahrirlab, git add yordamida indeksga olasiz, so‘ng git kommit bilan uni tarixga yozasiz."
     },
     {
       id: 'l8',
       scene: 'ish_oqimi',
-      text: "Muhim qoida: faylni indeksga qo‘shgach, diskda yana o‘zgartirsangiz, indeksdagi nusxa o‘zgarmaydi, ikkisi alohida yashaydi."
+      text: "Muhim qoida: fayl indeksga olingach diskda yana o‘zgartirilsa, indeksdagi nusxa o‘zgarmaydi, ikkisi mustaqil yashaydi."
     },
     {
       id: 'l9',
       scene: 'nega_index',
-      text: "Ko‘p tizimlardan farqli o‘laroq, Git oraliq indeks hududini kiritganining to‘rtta katta sababi bor."
+      text: "Boshqa tizimlardan farqli o‘laroq, Git oraliq indeks hududini bejiz kiritmagan: uning to‘rtta katta afzalligi bor."
     },
     {
       id: 'l10',
       scene: 'nega_index',
-      text: "U kommitlarni saralab yig‘ish, saqlashdan oldin tekshirish, tezkor kesh va konfliktlarni oson yechish imkonini beradi."
+      text: "U kommitlarni mantiqiy saralash, saqlashdan oldin tekshirish, tezkor kesh va konfliktlarni oson hal qilish imkonini beradi."
     },
     {
       id: 'l11',
       scene: 'xulosa',
-      text: "Xulosa qilib aytganda, Git — bu uch hudud o‘rtasida o‘zgarishlarni xavfsiz va aniq boshqaruvchi mexanizmdir."
+      text: "Xulosa qilib aytganda, Git — bu uch hudud o‘rtasida o‘zgarishlarni xavfsiz va aniq boshqaruvchi qudratli tizimdir."
     },
     {
       id: 'l12',
       scene: 'xulosa',
-      text: "Keyingi bobda ushbu hududlar bilan ishlaydigan status, add va commit buyruqlarini amalda ko‘ramiz. Rahmat!"
+      text: "Keyingi bobda ushbu hududlar bilan ishlaydigan status, add va kommit buyruqlarini amalda sinaymiz. Rahmat!"
     }
   ];
 
