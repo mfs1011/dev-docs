@@ -4,70 +4,70 @@
   const scenes = [
     'intro',
     'ornatish_va_path',
-    'buyruq_tuzilishi',
+    'buyruq_anatomiyasi',
     'global_va_ustunlik',
     'ajratuvchi_va_qoshtirnoq',
     'xulosa'
   ];
 
   const sceneNames = {
-    intro: 'Kirish va Buyruq Qatori',
-    ornatish_va_path: 'O‘rnatish va PATH',
-    buyruq_tuzilishi: 'Buyruq Anatomiyasi',
+    intro: 'Nega Buyruq Qatori (CLI)?',
+    ornatish_va_path: 'O‘rnatish va PATH Tahlili',
+    buyruq_anatomiyasi: 'Buyruq Anatomiyasi va Exit Kod',
     global_va_ustunlik: 'Global Opsiyalar va Ustunlik',
-    ajratuvchi_va_qoshtirnoq: 'Ajratuvchi va Xavfsizlik',
-    xulosa: 'Xulosa'
+    ajratuvchi_va_qoshtirnoq: 'Ajratuvchi (--) va Glob Qashtirnoqlari',
+    xulosa: 'Xulosa va Tavsiyalar'
   };
 
   const hold = {
-    l2: 1.0,
-    l4: 1.0,
-    l6: 1.0,
-    l8: 1.0,
-    l10: 1.0,
-    l12: 1.5
+    l2: 1.5,
+    l4: 2.0,
+    l6: 1.5,
+    l8: 1.8,
+    l10: 1.8,
+    l12: 2.5
   };
 
   const lines = [
     {
       id: 'l1',
       scene: 'intro',
-      text: "Salom! Ushbu bobda Gitni kompyuterga o‘rnatish va terminal buyruqlari qanday tuzilganini o‘rganamiz."
+      text: "Salom! Ushbu ikkinchi bobda Gitni kompyuterga o‘rnatish, uning terminaldagi anatomiyasi va buyruqlar tuzilishini amalda o‘rganamiz."
     },
     {
       id: 'l2',
       scene: 'intro',
-      text: "Git bilan ishlashda grafik dasturlar bo‘lsa-da, barcha imkoniyatlar faqat buyruq qatorida to‘liq ochiladi va har bir tizimda bir xil ishlaydi."
+      text: "Grafik interfeyslar qulay bo‘lsa-da, Gitning barcha imkoniyatlari faqat buyruq qatorida to‘liq ochiladi va har bir operatsion tizimda bir xil ishlaydi."
     },
     {
       id: 'l3',
       scene: 'ornatish_va_path',
-      text: "Gitni Linuxda paket menejeri orqali, macOSda buyruq qatori vositalari yoki Homebrew bilan, Windowsda esa Git for Windows orqali o‘rnatasiz."
+      text: "Terminalda git minus minus vershn buyrug‘i orqali Git borligini va uning qaysi versiyasi ishlayotganini darhol tekshirishingiz mumkin."
     },
     {
       id: 'l4',
       scene: 'ornatish_va_path',
-      text: "Kompyuterda bir nechta Git bo‘lishi mumkin va qaysi biri ishga tushishini Pas muhit o‘zgaruvchisidagi papkalar tartibi hal qiladi."
+      text: "Agar kompyuteringizda bir nechta Git bo‘lsa, qaysi biri ishga tushishini Pas muhit o‘zgaruvchisidagi papkalar tartibi hal qiladi."
     },
     {
       id: 'l5',
-      scene: 'buyruq_tuzilishi',
-      text: "Har bir Git buyrug‘i aniq tuzilishga ega: global opsiyalar, ichki buyruq nomi, uning opsiyalari, argumentlar va fayl yo‘llari."
+      scene: 'buyruq_anatomiyasi',
+      text: "Har bir Git buyrug‘i aniq tuzilishga ega: global opsiyalar, ichki buyruq nomi, uning kalitlari, argumentlar va fayl yo‘llari."
     },
     {
       id: 'l6',
-      scene: 'buyruq_tuzilishi',
-      text: "Har bir buyruq tugaganda ekzit kod qaytaradi: nol muvaffaqiyatni, yuz yigirma sakkiz esa xatolikni bildiradi."
+      scene: 'buyruq_anatomiyasi',
+      text: "Har bir buyruq tugaganda ekzit kod qaytaradi: nol muvaffaqiyatni, noldan farqli qiymat esa xatolik yuz berganini bildiradi."
     },
     {
       id: 'l7',
       scene: 'global_va_ustunlik',
-      text: "Katta si opsiyasi Gitni boshqa papkaga kirmasdan ishlatishga, kichik si esa faqat bitta buyruq uchun sozlama berishga imkon beradi."
+      text: "Katta si opsiyasi Gitni boshqa papkaga kirmasdan turib boshqarishga, kichik si esa vaqtinchalik sozlama bilan ishlatishga imkon beradi."
     },
     {
       id: 'l8',
       scene: 'global_va_ustunlik',
-      text: "Agar bir xil sozlama turli joyda berilsa, eng yuqori ustunlik buyruq opsiyasiga, keyin muhit o‘zgaruvchisiga va eng oxirida konfig fayliga tegishli bo‘ladi."
+      text: "Agar bir xil parametr turli joyda berilsa, eng yuqori ustunlik buyruq opsiyasiga, keyin muhit o‘zgaruvchisiga va eng oxirida konfig fayliga beriladi."
     },
     {
       id: 'l9',
@@ -77,19 +77,27 @@
     {
       id: 'l10',
       scene: 'ajratuvchi_va_qoshtirnoq',
-      text: "Yulduzcha kabi belgilarni esa har doim qo‘shtirnoqqa olish kerak, aks holda terminal fayllarni Gitga yetmasdan noto‘g‘ri almashtirib qo‘yadi."
+      text: "Yulduzcha kabi shablon belgilarini esa har doim qo‘shtirnoqqa olish kerak, aks holda terminal ularni Gitga yetib bormasdan almashtirib qo‘yadi."
     },
     {
       id: 'l11',
       scene: 'xulosa',
-      text: "Xulosa qilib aytganda, terminal sintaksisini puxta bilish keyingi boblardagi barcha amallarni to‘g‘ri tushunishga poydevor bo‘ladi."
+      text: "Xulosa qilsak, terminal sintaksisini puxta tushunish keyingi barcha amaliy boblarda erkin va xatosiz ishlash garovidir."
     },
     {
       id: 'l12',
       scene: 'xulosa',
-      text: "Keyingi bobda Gitni birinchi marta sozlash va yordam tizimini o‘rganamiz. E’tiboringiz uchun rahmat!"
+      text: "Keyingi uchinchi bobda Gitni birinchi marta o‘z ismingiz va emailingiz bilan sozlashni o‘rganamiz. E’tiboringiz uchun rahmat!"
     }
   ];
 
-  g.NR = { scenes, sceneNames, hold, lines };
+  g.NR = {
+    course: 'Git darslari',
+    chapter: '02-bob',
+    title: "Terminal va o'rnatish",
+    scenes,
+    sceneNames,
+    hold,
+    lines
+  };
 })(typeof window !== 'undefined' ? window : globalThis);
