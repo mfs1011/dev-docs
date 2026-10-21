@@ -29,11 +29,11 @@
   try { add(W('l2', 'qiladi.'), 'ding'); } catch (e) {}
   try { add(W('l3', 'beradi.'), 'whoosh'); } catch (e) {}
   try { add(W('l4', 'etadi.'), 'pop'); } catch (e) {}
-  try { add(W('l5', 'tayyorlashdir.'), 'pop'); } catch (e) {}
-  try { add(W('l6', 'kiritadi.'), 'ding'); } catch (e) {}
-  try { add(W('l7', 'yaratadi.'), 'whoosh'); } catch (e) {}
-  try { add(W('l8', 'yoziladi.'), 'ding'); } catch (e) {}
-  try { add(W('l9', 'o‘tadi.'), 'pop'); } catch (e) {}
+  try { add(W('l5', 'tayyorlashdir.'), 'ding'); } catch (e) {}
+  try { add(W('l6', 'kiritadi.'), 'whoosh'); } catch (e) {}
+  try { add(W('l7', 'yaratadi.'), 'ding'); } catch (e) {}
+  try { add(W('l8', 'yoziladi.'), 'pop'); } catch (e) {}
+  try { add(W('l9', 'o‘tadi.'), 'whoosh'); } catch (e) {}
   try { add(W('l10', 'boraveradi.'), 'ding'); } catch (e) {}
   try { add(W('l11', 'qurollaridir.'), 'ding'); } catch (e) {}
   add(L('l12').e + 0.3, 'swell');

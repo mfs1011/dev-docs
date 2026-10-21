@@ -7,45 +7,84 @@
     W, H, C, UI, MONO,
     clamp, P, lerp, eo, eio, eback, font, withA, rr,
     tw, text, bg, ring, burst, link, pill,
-    fileChip, chip, panel, card
+    fileChip, chip, panel, card, terminal
   } = kit;
 
   const TM = window.TM, NR = window.NR;
 
+  // Terminalda matn va buyruqlarni chizish yordamchilari
+  function drawCommandLine(promptStr, fullCmd, tStart, tTypeEnd, tEnter, u, x, y, opt = {}) {
+    const tPrompt = opt.tPromptShow != null ? opt.tPromptShow : tStart - 0.4;
+    if (u < tPrompt) return;
+
+    const pCol = opt.promptCol || C.green;
+    text(promptStr, x, y, { size: 15, fam: MONO, color: pCol, weight: 700, align: 'left' });
+    const pw = tw(promptStr, 15, 700, MONO);
+
+    if (u < tStart) {
+      if (Math.floor(u * 2.5) % 2 === 0) {
+        text('█', x + pw + 2, y, { size: 15, fam: MONO, color: '#38bdf8', align: 'left' });
+      }
+      return;
+    }
+
+    const dur = Math.max(0.01, tTypeEnd - tStart);
+    const progress = clamp((u - tStart) / dur);
+    const charCount = Math.floor(progress * fullCmd.length);
+    const typedStr = fullCmd.slice(0, charCount);
+
+    text(typedStr, x + pw, y, { size: 15, fam: MONO, color: opt.cmdCol || '#e2e8f0', weight: 600, align: 'left' });
+    const cmdW = tw(typedStr, 15, 600, MONO);
+
+    if (u < tEnter) {
+      const isVisible = u < tTypeEnd ? true : (Math.floor(u * 2.5) % 2 === 0);
+      if (isVisible) {
+        text('█', x + pw + cmdW + 2, y, { size: 15, fam: MONO, color: '#38bdf8', align: 'left' });
+      }
+    }
+  }
+
+  function drawOutputLine(str, tAppear, u, x, y, opt = {}) {
+    if (u < tAppear) return;
+    text(str, x, y, {
+      size: opt.size || 14,
+      fam: MONO,
+      color: opt.color || '#94a3b8',
+      weight: opt.weight || 500,
+      align: 'left'
+    });
+  }
+
   // ==========================================
-  // 1-SAHNA: Kirish va Asosiy Sikl
+  // 1-SAHNA: O'zgarishlarni Yozish Sikli
   // ==========================================
   function sceneIntro(u, bounds, o = {}) {
     // Sarlavha bosqichi (u < 8.5)
     if (u < 8.5 && !o.isPoster) {
       const kTitle = P(u, 0.4, 0.7);
       withA(kTitle, () => {
-        pill("06-BOB · O'ZGARISHLARNI YOZISH", 960, 260, C.git, { size: 24, mono: false, s: eback(kTitle) });
-        text("status, add va commit", 960, 345, { size: 56, weight: 800, color: C.text });
-        text("Kundalik dasturlash ishlarining 90 foizi shu uchlik bilan kechadi", 960, 415, { size: 26, color: C.mute });
+        pill("06-BOB · KUNDALIK ISH SIKLI", 960, 260, C.git, { size: 24, mono: false, s: eback(kTitle) });
+        text("O'zgarishlarni Yozish: status, add, commit", 960, 345, { size: 54, weight: 800, color: C.text });
+        text("Kundalik dasturlashning 90% qismini tashkil qiluvchi asosiy trio", 960, 415, { size: 26, color: C.mute });
 
-        // Markaziy uchlik kartasi
-        const kTerm = P(u, 1.8, 0.6);
+        // Markaziy sikl diagrammasi
+        const kTerm = P(u, 2.0, 0.6);
         withA(kTerm, () => {
           ctx.save(); ctx.translate(0, (1 - eo(kTerm)) * 20);
-          card(360, 480, 1200, 260, { fill: 'rgba(11,16,32,0.94)', col: C.blue, lw: 2 });
-          pill("Kundalik Ish Siklining Asosiy Uchligi", 960, 530, C.blue, { size: 22 });
+          card(360, 480, 1200, 240, { fill: 'rgba(11,16,32,0.94)', col: C.blue, lw: 2 });
+          pill("Kundalik Ish Oqimi", 960, 530, C.blue, { size: 22 });
 
-          card(410, 580, 320, 110, { fill: 'rgba(255,209,102,0.10)', col: C.yellow });
-          pill("$ git status", 570, 615, C.yellow, { size: 18 });
-          text("Holatni tekshirish", 570, 655, { size: 16, color: C.text });
+          card(400, 575, 340, 120, { fill: 'rgba(79,140,255,0.08)', col: C.blue });
+          pill("1 · git status", 570, 610, C.blue, { size: 17 });
+          text("Nima o'zgardi? (Tekshiruv)", 570, 650, { size: 16, color: C.text });
 
-          text("──►", 780, 635, { size: 20, fam: MONO, color: C.blue, weight: 700 });
+          card(790, 575, 340, 120, { fill: 'rgba(52,211,153,0.08)', col: C.green });
+          pill("2 · git add", 960, 610, C.green, { size: 17 });
+          text("Kommitga tayyorlash (Staging)", 960, 650, { size: 16, color: C.text });
 
-          card(830, 580, 320, 110, { fill: 'rgba(79,140,255,0.10)', col: C.blue });
-          pill("$ git add <fayl>", 990, 615, C.blue, { size: 18 });
-          text("Mazmunni stage qilish", 990, 655, { size: 16, color: C.text });
-
-          text("──►", 1200, 635, { size: 20, fam: MONO, color: C.green, weight: 700 });
-
-          card(1250, 580, 270, 110, { fill: 'rgba(52,211,153,0.10)', col: C.green });
-          pill("$ git commit", 1385, 615, C.green, { size: 18 });
-          text("Tarixga muhrlash", 1385, 655, { size: 16, color: C.text });
+          card(1180, 575, 340, 120, { fill: 'rgba(255,181,71,0.08)', col: C.orange });
+          pill("3 · git commit", 1350, 610, C.orange, { size: 17 });
+          text("Tarixga muhrlash (Snapshot)", 1350, 650, { size: 16, color: C.text });
 
           ctx.restore();
         });
@@ -54,460 +93,526 @@
     }
 
     // Taqqoslash bosqichi (u >= 8.5 yoki poster)
-    chip(1, "O'zgarishlarni Yozish Sikli", u, 8.5);
+    chip(1, "Kundalik Ishning Asosiy Triosi", u, 8.5);
 
     const kBox = o.isPoster ? 1 : eo(P(u, 8.8, 0.6));
     withA(kBox, () => {
-      // Chap panel: 3 buyruq mas'uliyati
-      panel(100, 140, 840, 680, C.yellow, "Uch Asosiy Buyruq Mas'uliyati", "har birining alohida vazifasi", kBox, kBox);
+      // Chap: 3 Ta Asosiy Buyruq
+      panel(100, 140, 840, 680, C.blue, "Uchta Asosiy Harakat", "status, add va commit vazifasi", kBox, kBox);
 
       const kG1 = o.isPoster ? 1 : P(u, 9.4, 0.5);
       withA(kG1, () => {
         ctx.save(); if (!o.isPoster) ctx.translate(0, (1 - eo(kG1)) * 16);
-        card(125, 255, 790, 160, { fill: 'rgba(255,209,102,0.08)', col: C.yellow });
-        pill("1 · git status", 220, 290, C.yellow, { size: 16 });
-        text("• 'Hozir qaysi fayl qaysi holatda?' degan savolga to'liq javob beradi.", 150, 335, { size: 17, color: C.text, align: 'left' });
-        text("• Working Tree, Index va Reponi solishtiradi, hech narsani o'zgartirmaydi.", 150, 375, { size: 17, color: C.yellow, align: 'left', weight: 600 });
+        card(125, 255, 790, 160, { fill: 'rgba(79,140,255,0.08)', col: C.blue });
+        pill("1 · git status (Holat Nazorati)", 260, 290, C.blue, { size: 16, mono: false });
+        text("• Hozir qaysi fayl qaysi holatda ekanini ko'rsatadi.", 150, 335, { size: 17, color: C.text, align: 'left' });
+        text("• Working tree, index va repo'ni solishtiradi, hech narsani o'zgartirmaydi.", 150, 375, { size: 16, color: '#38bdf8', align: 'left', weight: 600 });
         ctx.restore();
       });
 
-      const kG2 = o.isPoster ? 1 : P(u, 11.2, 0.5);
+      const kG2 = o.isPoster ? 1 : P(u, 11.8, 0.5);
       withA(kG2, () => {
         ctx.save(); if (!o.isPoster) ctx.translate(0, (1 - eo(kG2)) * 16);
-        card(125, 435, 790, 160, { fill: 'rgba(79,140,255,0.08)', col: C.blue });
-        pill("2 · git add", 210, 470, C.blue, { size: 16 });
-        text("• Faylning diskdagi aynan hozirgi mazmunini Index hududiga ko'chiradi.", 150, 515, { size: 17, color: C.text, align: 'left' });
-        text("• Yangi faylni kuzatadi, o'zgarganni stage qiladi, o'chirilganni belgilaydi.", 150, 555, { size: 17, color: C.blue, align: 'left', weight: 600 });
+        card(125, 435, 790, 160, { fill: 'rgba(52,211,153,0.08)', col: C.green });
+        pill("2 · git add (Mazmunni Qoralamaga Olish)", 300, 470, C.green, { size: 16, mono: false });
+        text("• Faylning aynan hozirgi mazmunini navbatdagi kommitga kiritadi.", 150, 515, { size: 17, color: C.text, align: 'left' });
+        text("• Yangi faylni kuzatadi, tahrirlanganini yangilaydi, o'chirilganni belgilaydi.", 150, 555, { size: 16, color: C.green, align: 'left', weight: 600 });
         ctx.restore();
       });
 
-      const kG3 = o.isPoster ? 1 : P(u, 13.0, 0.5);
+      const kG3 = o.isPoster ? 1 : P(u, 14.2, 0.5);
       withA(kG3, () => {
         ctx.save(); if (!o.isPoster) ctx.translate(0, (1 - eo(kG3)) * 16);
-        card(125, 620, 790, 165, { fill: 'rgba(52,211,153,0.08)', col: C.green });
-        pill("3 · git commit", 225, 655, C.green, { size: 16 });
-        text("• Indexdagi barcha qoralama fayllarni olib, tarixga yangi snapshot qiladi.", 150, 700, { size: 17, color: C.text, align: 'left' });
-        text("• Har bir commit o'z muallifi, sanasi va xabari bilan abadiy muhrlanadi.", 150, 740, { size: 17, color: C.green, align: 'left', weight: 600 });
+        card(125, 620, 790, 165, { fill: 'rgba(255,181,71,0.08)', col: C.orange });
+        pill("3 · git commit (Tarixga Muhrlash)", 260, 655, C.orange, { size: 16, mono: false });
+        text("• Index'dagi barcha fayllarni olib, loyihaning yangi snapshot'ini yaratadi.", 150, 700, { size: 17, color: C.text, align: 'left' });
+        text("• Muallif, sana va tavsif xabari bilan kriptografik hash biriktiriladi.", 150, 740, { size: 16, color: C.orange, align: 'left', weight: 600 });
         ctx.restore();
       });
 
-      // O'ng panel: Tracked vs Untracked
-      panel(980, 140, 840, 680, C.blue, "Tracked va Untracked", "fayllarning Git bilan aloqasi", kBox, kBox);
+      // O'ng: Nega Git yangi fayllarni o'zi qo'shmaydi?
+      panel(980, 140, 840, 680, C.yellow, "Nega Git Avtomatik Qo'shmaydi?", "ataylab qilinadigan xavfsizlik qarori", kBox, kBox);
 
-      const kC1 = o.isPoster ? 1 : P(u, 10.2, 0.5);
+      const kC1 = o.isPoster ? 1 : P(u, 10.5, 0.5);
       withA(kC1, () => {
         ctx.save(); if (!o.isPoster) ctx.translate(0, (1 - eo(kC1)) * 16);
-        card(1005, 255, 790, 160, { fill: 'rgba(79,140,255,0.08)', col: C.blue });
-        pill("Tracked (Kuzatiladigan)", 1160, 290, C.blue, { size: 16, mono: false });
-        text("• Oxirgi commitda bo'lgan yoki yangi stage qilingan, Git biladigan fayllar.", 1030, 335, { size: 17, color: C.text, align: 'left' });
-        text("• Ular unmodified (o'zgarmagan), modified yoki staged bo'lishi mumkin.", 1030, 375, { size: 17, color: C.blue, align: 'left', weight: 600 });
+        card(1005, 255, 790, 160, { fill: 'rgba(255,209,102,0.08)', col: C.yellow });
+        pill("Keraksiz Fayllardan Himoya", 1160, 290, C.yellow, { size: 16, mono: false });
+        text("• Build fayllari, vaqtinchalik loglar va maxfiy kalitlar (.env)", 1030, 335, { size: 17, color: C.text, align: 'left' });
+        text("  tasodifan tarixga kirib ketmasligi uchun!", 1030, 375, { size: 17, color: C.yellow, align: 'left', weight: 600 });
         ctx.restore();
       });
 
-      const kC2 = o.isPoster ? 1 : P(u, 12.2, 0.5);
+      const kC2 = o.isPoster ? 1 : P(u, 13.0, 0.5);
       withA(kC2, () => {
         ctx.save(); if (!o.isPoster) ctx.translate(0, (1 - eo(kC2)) * 16);
-        card(1005, 435, 790, 160, { fill: 'rgba(255,107,107,0.08)', col: C.red });
-        pill("Untracked (Kuzatilmaydigan)", 1180, 470, C.red, { size: 16, mono: false });
-        text("• Loyihada yangi paydo bo'lgan, ammo Git hali bilmaydigan begona fayllar.", 1030, 515, { size: 17, color: C.text, align: 'left' });
-        text("• Git ularni ko'radi, lekin siz 'git add' demaguningizcha kuzatmaydi.", 1030, 555, { size: 17, color: C.red, align: 'left', weight: 600 });
+        card(1005, 435, 790, 160, { fill: 'rgba(255,107,122,0.08)', col: C.red });
+        pill("Tarixdan O'chirish Qiyin", 1140, 470, C.red, { size: 16, mono: false });
+        text("• Bir marta kommit qilingan fayl keyinchalik o'chirilsa ham,", 1030, 515, { size: 17, color: C.text, align: 'left' });
+        text("  loyiha o'tmishida abadiy saqlanib qoladi.", 1030, 555, { size: 17, color: C.red, align: 'left', weight: 600 });
         ctx.restore();
       });
 
-      const kC3 = o.isPoster ? 1 : P(u, 14.2, 0.5);
+      const kC3 = o.isPoster ? 1 : P(u, 15.5, 0.5);
       withA(kC3, () => {
         ctx.save(); if (!o.isPoster) ctx.translate(0, (1 - eo(kC3)) * 16);
-        card(1005, 620, 790, 165, { fill: 'rgba(15,22,48,0.92)', col: C.mute });
-        pill("Nega Git o'zi qo'shib yubormaydi?", 1210, 655, C.mute, { size: 16, mono: false });
-        text("• Build fayllari, vaqtinchalik loglar va .env kabi maxfiy ma'lumotlar", 1030, 700, { size: 17, color: C.text, align: 'left' });
-        text("  tasodifan tarixga tushib qolmasligi uchun qo'shish qat'iy ixtiyoriydir!", 1030, 740, { size: 17, color: C.yellow, align: 'left', weight: 600 });
+        card(1005, 620, 790, 165, { fill: 'rgba(52,211,153,0.08)', col: C.green });
+        pill("Qo'shish — Bu Ongli Tanlov", 1150, 655, C.green, { size: 16, mono: false });
+        text("• 'git add' — har bir o'zgarishni tekshirib, ongli ravishda", 1030, 700, { size: 17, color: C.text, align: 'left' });
+        text("  kommitga kiritish imkoniyatidir.", 1030, 740, { size: 16, color: C.green, align: 'left', weight: 600 });
         ctx.restore();
       });
     });
+
+    // Pastki xulosa
+    if (o.foot !== false) {
+      const kFoot = o.isPoster ? 1 : P(u, 17.5, 0.7);
+      withA(kFoot, () => {
+        ctx.save(); if (!o.isPoster) ctx.translate(0, (1 - eo(kFoot)) * 16);
+        card(100, 845, 1720, 165, { fill: 'rgba(17,24,52,0.92)', col: C.blue });
+        text("Kundalik ish sikli: o'zgartirish -> status bilan tekshirish -> add bilan tayyorlash -> commit bilan muhrlash.", 960, 895, { size: 24, weight: 700, color: C.text, align: 'center' });
+        text("Endi 'git status' buyrug'ini real terminalda uzun va qisqa formatlarda ko'ramiz.", 960, 950, { size: 20, color: C.mute, align: 'center' });
+        ctx.restore();
+      });
+    }
   }
 
   // ==========================================
-  // 2-SAHNA: git status: Holatni Ko'rish
+  // 2-SAHNA: git status: Holatni Ko'rish (SPLIT SCREEN)
   // ==========================================
   function sceneGitStatus(u, bounds, o = {}) {
-    chip(2, "git status: Holatni Nazorat Qilish", u, 0);
+    chip(2, "git status: Holatni Ko‘rish", u);
 
-    const kBase = eo(P(u, 0.2, 0.5));
-    withA(kBase, () => {
-      // Chap panel: Uzun (standart) format
-      panel(100, 140, 840, 680, C.yellow, "Standart Format: git status", "batafsil ma'lumot va yo'l-yo'riqlar", kBase, kBase);
-
-      const kL1 = P(u, 0.6, 0.5);
-      withA(kL1, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kL1)) * 16);
-        card(125, 255, 790, 150, { fill: 'rgba(11,16,32,0.95)', col: C.blue });
-        pill("1 · Branch Holati", 220, 290, C.blue, { size: 16, mono: false });
-        text("On branch main", 150, 330, { size: 16, fam: MONO, color: C.green, align: 'left', weight: 600 });
-        text("Your branch is up to date with 'origin/main'.", 150, 365, { size: 15, fam: MONO, color: C.mute, align: 'left' });
-        ctx.restore();
+    const kBox = eo(P(u, 0.4, 0.6));
+    withA(kBox, () => {
+      // Chap tomonda: Real Jonli Terminal!
+      terminal(100, 140, 840, 680, {
+        title: 'bash — ~/kutubxona (80x24)',
+        p: kBox
       });
 
-      const kL2 = P(u, 2.8, 0.5);
-      withA(kL2, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kL2)) * 16);
-        card(125, 425, 790, 175, { fill: 'rgba(52,211,153,0.08)', col: C.green });
-        pill("2 · Changes to be committed (Staged)", 305, 460, C.green, { size: 16, mono: false });
-        text("(use 'git restore --staged <file>...' to unstage)", 150, 500, { size: 14, fam: MONO, color: C.mute, align: 'left' });
-        text("new file:   LICENSE", 150, 535, { size: 16, fam: MONO, color: C.green, align: 'left', weight: 700 });
-        text("modified:   src/index.js", 150, 565, { size: 16, fam: MONO, color: C.green, align: 'left', weight: 700 });
-        ctx.restore();
-      });
+      const tu = o.isPoster ? 20.0 : u;
 
-      const kL3 = P(u, 5.0, 0.5);
-      withA(kL3, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kL3)) * 16);
-        card(125, 620, 790, 175, { fill: 'rgba(255,107,107,0.08)', col: C.red });
-        pill("3 · Untracked files (Kuzatilmayotgan)", 300, 655, C.red, { size: 16, mono: false });
-        text("(use 'git add <file>...' to include in what will be committed)", 150, 695, { size: 14, fam: MONO, color: C.mute, align: 'left' });
-        text("todo.txt", 150, 730, { size: 16, fam: MONO, color: C.red, align: 'left', weight: 700 });
-        text("src/util/temp.js", 150, 760, { size: 16, fam: MONO, color: C.red, align: 'left', weight: 700 });
-        ctx.restore();
-      });
+      // 1-buyruq: git status toza holatda
+      drawCommandLine("kutubxona $ ", "git status", 1.0, 2.2, 2.5, tu, 130, 205);
+      drawOutputLine("On branch main", 2.7, tu, 150, 230, { color: C.yellow, weight: 600 });
+      drawOutputLine("Your branch is up to date with 'origin/main'.", 2.7, tu, 150, 250, { color: '#cbd5e1' });
+      drawOutputLine("nothing to commit, working tree clean", 2.7, tu, 150, 270, { color: C.green, weight: 600 });
 
-      // O'ng panel: Qisqa format git status -s
-      panel(980, 140, 840, 680, C.blue, "Qisqa Format: git status -s", "ikki ustunli ixcham harflar", kBase, kBase);
+      // 2-buyruq: fayl yaratish
+      drawCommandLine("kutubxona $ ", "echo 'MIT' > LICENSE && echo 'x' > app.js", 4.2, 6.8, 7.1, tu, 130, 300);
 
-      const kS1 = P(u, 7.5, 0.5);
+      // 3-buyruq: git status -s (qisqa format)
+      drawCommandLine("kutubxona $ ", "git status -s", 8.0, 9.2, 9.5, tu, 130, 330, { promptCol: C.blue });
+      drawOutputLine("?? LICENSE", 9.7, tu, 150, 355, { color: C.red, weight: 600 });
+      drawOutputLine("?? app.js", 9.7, tu, 150, 375, { color: C.red, weight: 600 });
+
+      // 4-buyruq: git status (to'liq format)
+      drawCommandLine("kutubxona $ ", "git status", 10.8, 12.0, 12.3, tu, 130, 405);
+      drawOutputLine("Untracked files:", 12.5, tu, 150, 430, { color: C.red, weight: 600 });
+      drawOutputLine("  (use \"git add <file>...\" to include in what will be committed)", 12.5, tu, 150, 450, { color: '#94a3b8' });
+      drawOutputLine("	LICENSE", 12.5, tu, 150, 470, { color: C.red });
+      drawOutputLine("	app.js", 12.5, tu, 150, 490, { color: C.red });
+
+      // Faol prompt va miltillovchi kursor
+      if (tu >= 13.5) {
+        text("kutubxona $ ", 130, 526, { size: 15, fam: MONO, color: C.green, weight: 700, align: 'left' });
+        const pw = tw("kutubxona $ ", 15, 700, MONO);
+        if (Math.floor(tu * 2.5) % 2 === 0 || o.isPoster) {
+          text('█', 130 + pw + 2, 526, { size: 15, fam: MONO, color: '#38bdf8', align: 'left' });
+        }
+      }
+
+      // O'ng panel: git status Shifrlari va Anatomiyasi
+      panel(980, 140, 840, 680, C.blue, "git status: Qisqa Format (-s) Sirlari", "ikki ustunli ixcham xarita", kBox, kBox);
+
+      const kS1 = P(u, 1.8, 0.6);
       withA(kS1, () => {
         ctx.save(); ctx.translate(0, (1 - eo(kS1)) * 16);
-        card(1005, 255, 790, 240, { fill: 'rgba(11,16,32,0.95)', col: C.blue });
-        pill("Ikki Ustun Mantiqi (XY)", 1140, 290, C.blue, { size: 16, mono: false });
-        text("• X (chap ustun)  = Staging Area (Index) holati", 1030, 335, { size: 17, color: C.green, align: 'left', weight: 600 });
-        text("• Y (o'ng ustun)  = Working Tree (diskdagi) holati", 1030, 375, { size: 17, color: C.red, align: 'left', weight: 600 });
-        text("--------------------------------------------------", 1030, 410, { size: 15, fam: MONO, color: C.mute, align: 'left' });
-        text("?? fayl.txt   -> Untracked (Git hali kuzatmayapti)", 1030, 440, { size: 16, fam: MONO, color: C.red, align: 'left' });
-        text("A  yangi.txt  -> Yangi fayl indexga qo'shildi (Staged)", 1030, 470, { size: 16, fam: MONO, color: C.green, align: 'left' });
+        card(1005, 255, 790, 240, { fill: 'rgba(79,140,255,0.08)', col: C.blue });
+        pill("2 Ustunli Format: Chap = Index, O'ng = Disk", 1220, 290, C.blue, { size: 16, mono: false });
+        text("• ?? <fayl> -> Untracked (Git hali kuzatmaydi, mutlaqo yangi).", 1030, 335, { size: 16, color: C.red, align: 'left', weight: 600 });
+        text("• A  <fayl> -> Staged (yangi fayl index'ga qo'shildi, saqlashga tayyor).", 1030, 375, { size: 16, color: C.green, align: 'left', weight: 600 });
+        text("•  M <fayl> -> Modified in working tree (diskda o'zgargan, lekin staged emas).", 1030, 415, { size: 16, color: C.orange, align: 'left' });
+        text("• M  <fayl> -> Staged (o'zgarish index'ga olingan).", 1030, 455, { size: 16, color: '#38bdf8', align: 'left', weight: 600 });
         ctx.restore();
       });
 
-      const kS2 = P(u, 10.5, 0.5);
+      const kS2 = P(u, 6.5, 0.6);
       withA(kS2, () => {
         ctx.save(); ctx.translate(0, (1 - eo(kS2)) * 16);
-        card(1005, 520, 790, 265, { fill: 'rgba(180,108,255,0.08)', col: C.purple });
-        pill("Modified Farqlari: M va MM", 1150, 555, C.purple, { size: 16, mono: false });
-        text(" M app.js  -> Diskda o'zgargan, lekin staged qilinmagan", 1030, 600, { size: 16, fam: MONO, color: C.yellow, align: 'left' });
-        text("M  app.js  -> Staged qilingan, commitga tayyor", 1030, 640, { size: 16, fam: MONO, color: C.green, align: 'left' });
-        text("MM app.js  -> Staged qilingan, so'ng diskda YANA tahrirlangan!", 1030, 680, { size: 16, fam: MONO, color: C.purple, align: 'left', weight: 700 });
-        text("Qisqa format yuzlab fayllar ichida ko'zni toliqtirmaydi.", 1030, 730, { size: 16, color: C.mute, align: 'left' });
+        card(1005, 515, 790, 270, { fill: 'rgba(255,209,102,0.08)', col: C.yellow });
+        pill("Nodir Holat: 'MM' Belgisi Nimani Bildiradi?", 1220, 550, C.yellow, { size: 16, mono: false });
+        text("• 'MM fayl.txt' — fayl bir vaqtning o'zida ham staged, ham modified!", 1030, 595, { size: 16, color: C.yellow, align: 'left', weight: 600 });
+        text("• Sababi: Siz faylni 'git add' qilib, keyin diskda yana o'zgartirgansiz.", 1030, 635, { size: 16, color: C.text, align: 'left' });
+        text("• Index'dagi nusxa birinchi o'zgarishni saqlaydi, diskda esa yangisi turadi.", 1030, 675, { size: 16, color: C.mute, align: 'left' });
+        text("• Yangi o'zgarishni ham kiritish uchun yana 'git add' qilish kerak!", 1030, 715, { size: 16, color: C.green, align: 'left', weight: 600 });
         ctx.restore();
       });
+    });
+
+    // Pastki xulosa
+    const kFoot = P(u, 15.0, 0.7);
+    withA(kFoot, () => {
+      ctx.save(); ctx.translate(0, (1 - eo(kFoot)) * 16);
+      card(100, 845, 1720, 165, { fill: 'rgba(17,24,52,0.92)', col: C.blue });
+      text("git status uch hududni solishtirib beradi; qisqa -s opsiyasi esa holatni ixcham harflarda ko'rsatadi.", 960, 895, { size: 24, weight: 700, color: C.blue, align: 'center' });
+      text("Endi fayllarni stage qilish uchun 'git add' buyrug'ini amalda sinaymiz.", 960, 950, { size: 20, color: C.mute, align: 'center' });
+      ctx.restore();
     });
   }
 
   // ==========================================
-  // 3-SAHNA: git add: Mazmunni Stage Qilish
+  // 3-SAHNA: git add: Ko'p Vazifali Kuch (SPLIT SCREEN)
   // ==========================================
   function sceneGitAdd(u, bounds, o = {}) {
-    chip(3, "git add: Mazmunni Stage Qilish", u, 0);
+    chip(3, "git add: Ko‘p Vazifali Kuch", u);
 
-    const kBase = eo(P(u, 0.2, 0.5));
-    withA(kBase, () => {
-      // Chap panel: Ko'p vazifali tabiat
-      panel(100, 140, 840, 680, C.green, "Ko'p Vazifali Buyruq", "faqat qo'shish emas, mazmunni moslash", kBase, kBase);
+    const kBox = eo(P(u, 0.4, 0.6));
+    withA(kBox, () => {
+      // Chap tomonda: Real Jonli Terminal!
+      terminal(100, 140, 840, 680, {
+        title: 'bash — ~/kutubxona (80x24)',
+        p: kBox
+      });
 
-      const kA1 = P(u, 0.6, 0.5);
+      const tu = o.isPoster ? 20.0 : u;
+
+      // 1-buyruq: git add LICENSE
+      drawCommandLine("kutubxona $ ", "git add LICENSE", 1.0, 2.6, 2.9, tu, 130, 205);
+
+      // 2-buyruq: git status -s
+      drawCommandLine("kutubxona $ ", "git status -s", 3.6, 4.8, 5.1, tu, 130, 235);
+      drawOutputLine("A  LICENSE  (staged: navbatga qo'yildi)", 5.3, tu, 150, 260, { color: C.green, weight: 600 });
+      drawOutputLine("?? app.js   (hali untracked)", 5.3, tu, 150, 280, { color: C.red });
+
+      // 3-buyruq: git add . (hamma narsani olish)
+      drawCommandLine("kutubxona $ ", "git add .", 6.8, 7.8, 8.1, tu, 130, 310, { promptCol: C.yellow });
+
+      // 4-buyruq: git status -s
+      drawCommandLine("kutubxona $ ", "git status -s", 8.8, 10.0, 10.3, tu, 130, 340);
+      drawOutputLine("A  LICENSE", 10.5, tu, 150, 365, { color: C.green, weight: 600 });
+      drawOutputLine("A  app.js", 10.5, tu, 150, 385, { color: C.green, weight: 600 });
+
+      // 5-buyruq: git ls-files -s tekshirish
+      drawCommandLine("kutubxona $ ", "git ls-files -s", 11.4, 12.8, 13.1, tu, 130, 415, { promptCol: C.blue });
+      drawOutputLine("100644 e69de29... 0	LICENSE", 13.3, tu, 150, 440, { color: '#38bdf8' });
+      drawOutputLine("100644 587be6b... 0	app.js", 13.3, tu, 150, 460, { color: '#38bdf8' });
+
+      // Faol prompt va miltillovchi kursor
+      if (tu >= 14.5) {
+        text("kutubxona $ ", 130, 496, { size: 15, fam: MONO, color: C.green, weight: 700, align: 'left' });
+        const pw = tw("kutubxona $ ", 15, 700, MONO);
+        if (Math.floor(tu * 2.5) % 2 === 0 || o.isPoster) {
+          text('█', 130 + pw + 2, 496, { size: 15, fam: MONO, color: '#38bdf8', align: 'left' });
+        }
+      }
+
+      // O'ng panel: git add ning Keng Imkoniyatlari
+      panel(980, 140, 840, 680, C.green, "git add: Kuchli va Moslashuvchan", "shunchaki qo'shish emas, aniq stage qilish", kBox, kBox);
+
+      const kA1 = P(u, 1.8, 0.6);
       withA(kA1, () => {
         ctx.save(); ctx.translate(0, (1 - eo(kA1)) * 16);
-        card(125, 255, 790, 160, { fill: 'rgba(52,211,153,0.08)', col: C.green });
-        pill("1 · Yangi fayllarni kuzatish", 270, 290, C.green, { size: 16, mono: false });
-        text("$ git add newfile.js", 150, 335, { size: 18, fam: MONO, color: C.text, align: 'left' });
-        text("Untracked fayl rasman Git nazoratiga o'tadi va staged bo'ladi.", 150, 375, { size: 17, color: C.green, align: 'left', weight: 600 });
+        card(1005, 255, 790, 240, { fill: 'rgba(52,211,153,0.08)', col: C.green });
+        pill("4 Asosiy Qo'llanilish Shakli", 1160, 290, C.green, { size: 16, mono: false });
+        text("• git add <fayl>   -> aniq bitta faylni stage qilish.", 1030, 335, { size: 17, fam: MONO, color: C.text, align: 'left' });
+        text("• git add .        -> joriy papkadagi barcha o'zgarishlarni olish.", 1030, 375, { size: 17, fam: MONO, color: C.green, align: 'left', weight: 600 });
+        text("• git add *.js     -> faqat shablonga mos fayllarni stage qilish.", 1030, 415, { size: 17, fam: MONO, color: C.text, align: 'left' });
+        text("• git add -A       -> butun repozitoriy bo'ylab hamma narsani olish.", 1030, 455, { size: 17, fam: MONO, color: '#38bdf8', align: 'left', weight: 600 });
         ctx.restore();
       });
 
-      const kA2 = P(u, 3.0, 0.5);
+      const kA2 = P(u, 6.5, 0.6);
       withA(kA2, () => {
         ctx.save(); ctx.translate(0, (1 - eo(kA2)) * 16);
-        card(125, 435, 790, 160, { fill: 'rgba(79,140,255,0.08)', col: C.blue });
-        pill("2 · O'zgargan faylni stage qilish", 280, 470, C.blue, { size: 16, mono: false });
-        text("$ git add src/main.js", 150, 515, { size: 18, fam: MONO, color: C.text, align: 'left' });
-        text("Faylning aynan hozirgi ko'rinishi snapshot qoralamasiga olinadi.", 150, 555, { size: 17, color: C.blue, align: 'left', weight: 600 });
+        card(1005, 515, 790, 270, { fill: 'rgba(79,140,255,0.08)', col: C.blue });
+        pill("O'chirilgan Fayllar Ham 'add' Qilinadi!", 1200, 550, C.blue, { size: 16, mono: false });
+        text("• Agar faylni diskdan 'rm' bilan o'chirsangiz, u 'deleted' bo'ladi.", 1030, 595, { size: 16, color: C.text, align: 'left' });
+        text("• 'git add <ochirilgan>' qilish orqali o'chirish amali stage qilinadi!", 1030, 635, { size: 16, color: C.yellow, align: 'left', weight: 600 });
+        text("• 'add' so'zi fayl mazmunini emas, o'zgarish holatini index'ga kiritadi.", 1030, 675, { size: 16, color: C.text, align: 'left' });
+        text("• Bu Git arxitekturasining eng universal va qulay mexanizmidir.", 1030, 715, { size: 16, color: C.green, align: 'left', weight: 600 });
         ctx.restore();
       });
+    });
 
-      const kA3 = P(u, 5.5, 0.5);
-      withA(kA3, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kA3)) * 16);
-        card(125, 620, 790, 165, { fill: 'rgba(180,108,255,0.08)', col: C.purple });
-        pill("3 · O'chirilgan fayllarni tasdiqlash", 290, 655, C.purple, { size: 16, mono: false });
-        text("$ git add eski_fayl.js", 150, 700, { size: 18, fam: MONO, color: C.text, align: 'left' });
-        text("Diskdan o'chirilgan fayl Indexda ham o'chirilgan deb belgilanadi.", 150, 740, { size: 17, color: C.purple, align: 'left', weight: 600 });
-        ctx.restore();
-      });
-
-      // O'ng panel: Qo'llash usullari
-      panel(980, 140, 840, 680, C.blue, "add Buyrug'ining Turli Shakllari", "tanlab yoki yoppasiga stage qilish", kBase, kBase);
-
-      const kB1 = P(u, 7.5, 0.5);
-      withA(kB1, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kB1)) * 16);
-        card(1005, 255, 790, 160, { fill: 'rgba(11,16,32,0.95)', col: C.yellow });
-        pill("Muayyan fayl yoki papka", 1140, 290, C.yellow, { size: 16, mono: false });
-        text("$ git add src/ components/ button.vue", 1030, 335, { size: 18, fam: MONO, color: C.yellow, align: 'left' });
-        text("Faqat ko'rsatilgan fayllar yoki papkalar ichidagilar stage qilinadi.", 1030, 375, { size: 16, color: C.text, align: 'left' });
-        ctx.restore();
-      });
-
-      const kB2 = P(u, 9.5, 0.5);
-      withA(kB2, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kB2)) * 16);
-        card(1005, 435, 790, 160, { fill: 'rgba(11,16,32,0.95)', col: C.blue });
-        pill("Barcha o'zgarishlarni olish", 1150, 470, C.blue, { size: 16, mono: false });
-        text("$ git add .   yoki   $ git add -A", 1030, 515, { size: 18, fam: MONO, color: C.cyan, align: 'left' });
-        text("Barcha yangi, tahrirlangan va o'chirilgan fayllarni yoppasiga stage qiladi.", 1030, 555, { size: 16, color: C.text, align: 'left' });
-        ctx.restore();
-      });
-
-      const kB3 = P(u, 11.5, 0.5);
-      withA(kB3, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kB3)) * 16);
-        card(1005, 620, 790, 165, { fill: 'rgba(11,16,32,0.95)', col: C.green });
-        pill("Interaktiv bo'laklab olish (Patch)", 1170, 655, C.green, { size: 16, mono: false });
-        text("$ git add -p", 1030, 700, { size: 18, fam: MONO, color: C.green, align: 'left' });
-        text("Bitta fayl ichidagi ayrim o'zgarishlarni alohida tanlab stage qilish imkoni!", 1030, 740, { size: 16, color: C.green, align: 'left', weight: 600 });
-        ctx.restore();
-      });
+    // Pastki xulosa
+    const kFoot = P(u, 15.0, 0.7);
+    withA(kFoot, () => {
+      ctx.save(); ctx.translate(0, (1 - eo(kFoot)) * 16);
+      card(100, 845, 1720, 165, { fill: 'rgba(17,24,52,0.92)', col: C.green });
+      text("git add yangi fayllarni kuzatadi, tahrirlanganini yangilaydi va o'chirilganni kommit rejasiga kiritadi.", 960, 895, { size: 24, weight: 700, color: C.green, align: 'center' });
+      text("Endi tayyorlangan qoralamani 'git commit' orqali doimiy tarixga muhrlaymiz.", 960, 950, { size: 20, color: C.mute, align: 'center' });
+      ctx.restore();
     });
   }
 
   // ==========================================
-  // 4-SAHNA: git commit: Tarixga Muhrlash
+  // 4-SAHNA: git commit: Tarixga Muhrlash (SPLIT SCREEN)
   // ==========================================
   function sceneGitCommit(u, bounds, o = {}) {
-    chip(4, "git commit: Tarixga Muhrlash", u, 0);
+    chip(4, "git commit: Tarixga Muhrlash", u);
 
-    const kBase = eo(P(u, 0.2, 0.5));
-    withA(kBase, () => {
-      // Chap panel: Commitning ichki tuzilishi
-      panel(100, 140, 840, 680, C.green, "Commitning Ichki Anatomiyasi", "har bir commit nimani o'z ichiga oladi", kBase, kBase);
-
-      const kC1 = P(u, 0.6, 0.5);
-      withA(kC1, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kC1)) * 16);
-        card(125, 255, 790, 160, { fill: 'rgba(52,211,153,0.08)', col: C.green });
-        pill("1 · Daraxt Surati (Tree Snapshot)", 290, 290, C.green, { size: 16, mono: false });
-        text("Commit faqat farq (diff) emas, loyihaning to'liq suratini saqlaydi.", 150, 335, { size: 17, color: C.text, align: 'left' });
-        text("O'zgarmagan fayllar oldingi commit obyektiga havola qiladi.", 150, 375, { size: 17, color: C.green, align: 'left', weight: 600 });
-        ctx.restore();
+    const kBox = eo(P(u, 0.4, 0.6));
+    withA(kBox, () => {
+      // Chap tomonda: Real Jonli Terminal!
+      terminal(100, 140, 840, 680, {
+        title: 'bash — ~/kutubxona (80x24)',
+        p: kBox
       });
 
-      const kC2 = P(u, 3.0, 0.5);
-      withA(kC2, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kC2)) * 16);
-        card(125, 435, 790, 160, { fill: 'rgba(79,140,255,0.08)', col: C.blue });
-        pill("2 · Muallif, Sana va Ota Commit", 270, 470, C.blue, { size: 16, mono: false });
-        text("author: Ali Valiyev <ali@example.com>, sana: 2026-10-20", 150, 515, { size: 16, fam: MONO, color: C.mute, align: 'left' });
-        text("Har bir commit oldingi commit xeshini (parent) yodda tutadi.", 150, 555, { size: 17, color: C.blue, align: 'left', weight: 600 });
-        ctx.restore();
-      });
+      const tu = o.isPoster ? 20.0 : u;
 
-      const kC3 = P(u, 5.5, 0.5);
-      withA(kC3, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kC3)) * 16);
-        card(125, 620, 790, 165, { fill: 'rgba(180,108,255,0.08)', col: C.purple });
-        pill("3 · Noyob SHA-1 Xesh Kaliti", 260, 655, C.purple, { size: 16, mono: false });
-        text("commit c6e10ac... (40 belgili betakror barmoq izi)", 150, 700, { size: 16, fam: MONO, color: C.purple, align: 'left', weight: 700 });
-        text("Ma'lumotlar o'zgarmasligi va yaxlitligi matematik kafolatlangan.", 150, 740, { size: 17, color: C.text, align: 'left' });
-        ctx.restore();
-      });
+      // 1-buyruq: git commit -m "..."
+      drawCommandLine("kutubxona $ ", "git commit -m 'Litsenziya va app.js qo‘shildi'", 1.0, 3.8, 4.2, tu, 130, 205);
+      drawOutputLine("[main 4f1a20b] Litsenziya va app.js qo‘shildi", 4.4, tu, 150, 230, { color: C.green, weight: 700 });
+      drawOutputLine(" 2 files changed, 2 insertions(+)", 4.4, tu, 150, 250, { color: '#cbd5e1' });
+      drawOutputLine(" create mode 100644 LICENSE", 4.4, tu, 150, 270, { color: '#94a3b8' });
+      drawOutputLine(" create mode 100644 app.js", 4.4, tu, 150, 290, { color: '#94a3b8' });
 
-      // O'ng panel: Commit usullari
-      panel(980, 140, 840, 680, C.blue, "Commit Qilish Usullari", "qulay buyruqlar va parametrlar", kBase, kBase);
+      // 2-buyruq: git status (toza)
+      drawCommandLine("kutubxona $ ", "git status", 5.8, 7.0, 7.3, tu, 130, 320);
+      drawOutputLine("On branch main", 7.5, tu, 150, 345, { color: C.yellow, weight: 600 });
+      drawOutputLine("nothing to commit, working tree clean", 7.5, tu, 150, 365, { color: C.green, weight: 600 });
 
-      const kD1 = P(u, 7.5, 0.5);
-      withA(kD1, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kD1)) * 16);
-        card(1005, 255, 790, 160, { fill: 'rgba(11,16,32,0.95)', col: C.blue });
-        pill("Tezkor xabar bilan: -m opsiyasi", 1170, 290, C.blue, { size: 16, mono: false });
-        text("$ git commit -m 'feat: yangi qidiruv tizimi'", 1030, 335, { size: 18, fam: MONO, color: C.cyan, align: 'left' });
-        text("Kichik va aniq o'zgarishlar uchun eng qulay bir qatorlik format.", 1030, 375, { size: 16, color: C.text, align: 'left' });
-        ctx.restore();
-      });
+      // 3-buyruq: git log --oneline -1
+      drawCommandLine("kutubxona $ ", "git log --oneline -1", 8.8, 10.2, 10.5, tu, 130, 395, { promptCol: C.blue });
+      drawOutputLine("* 4f1a20b (HEAD -> main) Litsenziya va app.js qo‘shildi", 10.7, tu, 150, 420, { color: '#38bdf8', weight: 600 });
 
-      const kD2 = P(u, 9.5, 0.5);
-      withA(kD2, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kD2)) * 16);
-        card(1005, 435, 790, 160, { fill: 'rgba(11,16,32,0.95)', col: C.yellow });
-        pill("Avtomatik stage qilish: -a opsiyasi", 1180, 470, C.yellow, { size: 16, mono: false });
-        text("$ git commit -a -m 'fix: matn xatosi tuzatildi'", 1030, 515, { size: 18, fam: MONO, color: C.yellow, align: 'left' });
-        text("Tracked fayllarni add qilmasdan to'g'ridan-to'g'ri commitga kiritadi.", 1030, 555, { size: 16, color: C.mute, align: 'left' });
-        ctx.restore();
-      });
+      // 4-buyruq: git commit -a misoli
+      drawCommandLine("kutubxona $ ", "git commit -a -m 'Tezkor tuzatish'", 11.8, 13.4, 13.7, tu, 130, 450, { promptCol: C.orange });
+      drawOutputLine("[main 8c2d91e] Tezkor tuzatish (index'ni chetlab o'tdi!)", 13.9, tu, 150, 475, { color: C.orange, weight: 600 });
 
-      const kD3 = P(u, 11.5, 0.5);
-      withA(kD3, () => {
-        ctx.save(); if (!o.isPoster) ctx.translate(0, (1 - eo(kD3)) * 16);
-        card(1005, 620, 790, 165, { fill: 'rgba(11,16,32,0.95)', col: C.red });
-        pill("Oxirgi commitni tuzatish: --amend", 1170, 655, C.red, { size: 16, mono: false });
-        text("$ git commit --amend", 1030, 700, { size: 18, fam: MONO, color: C.red, align: 'left' });
-        text("Unutilgan fayllarni oxirgi commitga qo'shish yoki xabarni o'zgartirish.", 1030, 740, { size: 16, color: C.text, align: 'left' });
-        ctx.restore();
-      });
-    });
-  }
-
-  // ==========================================
-  // 5-SAHNA: Faylning To'liq Hayot Sikli
-  // ==========================================
-  function sceneKuzatuvSikli(u, bounds, o = {}) {
-    chip(5, "Faylning To'liq Hayot Sikli", u, 0);
-
-    const kBase = eo(P(u, 0.2, 0.5));
-    withA(kBase, () => {
-      // Katta sikl paneli
-      panel(100, 140, 1720, 480, C.purple, "Fayllarning Holat Mashinasi (Lifecycle)", "fayl bosib o'tadigan 4 asosiy bosqich", kBase, kBase);
-
-      const kFlow = P(u, 0.6, 0.6);
-      withA(kFlow, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kFlow)) * 16);
-
-        // 4 blok
-        // 1. Untracked
-        card(140, 260, 360, 190, { fill: 'rgba(255,107,107,0.10)', col: C.red, lw: 2 });
-        pill("Untracked", 320, 305, C.red, { size: 20 });
-        text("Yangi Fayl", 320, 350, { size: 18, weight: 700, color: C.text });
-        text("Git hali kuzatmayapti", 320, 385, { size: 15, color: C.mute });
-        text("echo 'salom' > yangi.js", 320, 420, { size: 14, fam: MONO, color: C.red });
-
-        text("git add ──►", 560, 355, { size: 16, fam: MONO, color: C.cyan, weight: 800 });
-
-        // 2. Staged
-        card(640, 260, 360, 190, { fill: 'rgba(79,140,255,0.10)', col: C.blue, lw: 2 });
-        pill("Staged", 820, 305, C.blue, { size: 20 });
-        text("Commitga Tayyor", 820, 350, { size: 18, weight: 700, color: C.text });
-        text("Index qoralamasida", 820, 385, { size: 15, color: C.mute });
-        text("git status: to be committed", 820, 420, { size: 14, fam: MONO, color: C.blue });
-
-        text("commit ──►", 1060, 355, { size: 16, fam: MONO, color: C.green, weight: 800 });
-
-        // 3. Unmodified
-        card(1140, 260, 270, 190, { fill: 'rgba(52,211,153,0.10)', col: C.green, lw: 2 });
-        pill("Unmodified", 1275, 305, C.green, { size: 20 });
-        text("Tinch Holat", 1275, 350, { size: 18, weight: 700, color: C.text });
-        text("Repo bilan bir xil", 1275, 385, { size: 15, color: C.mute });
-        text("working tree clean", 1275, 420, { size: 14, fam: MONO, color: C.green });
-
-        text("tahrir ──►", 1450, 355, { size: 15, fam: MONO, color: C.yellow, weight: 800 });
-
-        // 4. Modified
-        card(1510, 260, 270, 190, { fill: 'rgba(255,209,102,0.10)', col: C.yellow, lw: 2 });
-        pill("Modified", 1645, 305, C.yellow, { size: 20 });
-        text("O'zgargan", 1645, 350, { size: 18, weight: 700, color: C.text });
-        text("Diskda yangilandi", 1645, 385, { size: 15, color: C.mute });
-        text("not staged", 1645, 420, { size: 14, fam: MONO, color: C.yellow });
-
-        ctx.restore();
-      });
-
-      // Pastki izoh kartasi
-      const kCycleExp = P(u, 4.0, 0.5);
-      withA(kCycleExp, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kCycleExp)) * 16);
-        card(100, 650, 1720, 180, { fill: 'rgba(11,16,32,0.95)', col: C.purple, lw: 2 });
-        pill("Uzluksiz Takrorlanuvchi Sikl", 960, 695, C.purple, { size: 20, mono: false });
-        text("Fayl o'zgartirilishi bilan yana Modified holatiga o'tadi va uni yana 'git add' qilish talab etiladi.", 960, 745, { size: 20, weight: 700, color: C.text });
-        text("Bu sikl butun dasturlash faoliyatingiz davomida millionlab marta bir maromda davom etadi.", 960, 785, { size: 18, color: C.mute });
-        ctx.restore();
-      });
-    });
-  }
-
-  // ==========================================
-  // 6-SAHNA: Xulosa va Tavsiyalar
-  // ==========================================
-  function sceneXulosa(u, bounds, o = {}) {
-    chip(6, "Xulosa va Asosiy Qoidalar", u, 0);
-
-    const kBase = eo(P(u, 0.2, 0.5));
-    withA(kBase, () => {
-      // 3 ustunli tavsiyalar
-      const kC1 = P(u, 0.5, 0.5);
-      withA(kC1, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kC1)) * 16);
-        panel(100, 140, 546, 500, C.yellow, "1 · Doim status qiling", "qayerda ekaningizni biling", kC1, kC1);
-        card(120, 255, 506, 170, { fill: 'rgba(255,209,102,0.08)', col: C.yellow });
-        pill("Oltin Odat", 200, 290, C.yellow, { size: 16, mono: false });
-        text("Har qanday jiddiy amaldan avval", 140, 335, { size: 17, color: C.text, align: 'left' });
-        text("va keyin 'git status' qilishni odat qiling.", 140, 365, { size: 17, color: C.text, align: 'left' });
-        text("Kutilmagan xatolar oldi olinadi.", 140, 400, { size: 16, color: C.yellow, align: 'left' });
-        ctx.restore();
-      });
-
-      const kC2 = P(u, 2.5, 0.5);
-      withA(kC2, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kC2)) * 16);
-        panel(686, 140, 546, 500, C.blue, "2 · Mantiqiy stage qiling", "kerakli fayllarnigina oling", kC2, kC2);
-        card(706, 255, 506, 170, { fill: 'rgba(79,140,255,0.08)', col: C.blue });
-        pill("Toza Qoralama", 790, 290, C.blue, { size: 16, mono: false });
-        text("Hamma narsani yoppasiga emas,", 726, 335, { size: 17, color: C.text, align: 'left' });
-        text("bitta mantiqqa ega bo'lgan o'zgarishlarni", 726, 365, { size: 17, color: C.text, align: 'left' });
-        text("bitta commitga jamlang.", 726, 400, { size: 16, color: C.blue, align: 'left' });
-        ctx.restore();
-      });
-
-      const kC3 = P(u, 4.5, 0.5);
-      withA(kC3, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kC3)) * 16);
-        panel(1272, 140, 546, 500, C.green, "3 · Aniq xabar yozing", "kelajakdagi o'zingiz uchun", kC3, kC3);
-        card(1292, 255, 506, 170, { fill: 'rgba(52,211,153,0.08)', col: C.green });
-        pill("Tushunarli Tarix", 1385, 290, C.green, { size: 16, mono: false });
-        text("Commit xabari nima va nega", 1312, 335, { size: 17, color: C.text, align: 'left' });
-        text("o'zgarganini aniq tushuntirsin.", 1312, 365, { size: 17, color: C.text, align: 'left' });
-        text("'update' yoki 'fix' deb yozmang!", 1312, 400, { size: 16, color: C.green, align: 'left' });
-        ctx.restore();
-      });
-
-      // Pastki xulosa banneri
-      const kFinal = P(u, 6.5, 0.5);
-      withA(kFinal, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kFinal)) * 16);
-        card(100, 670, 1720, 160, { fill: 'rgba(11,16,32,0.95)', col: C.git, lw: 2 });
-        pill("Keyingi Bob: O'zgarishlarni Taqqoslash", 960, 715, C.git, { size: 20, mono: false });
-        text("Keyingi 7-bobda aynan qaysi qatorda nimalar o'zgarganini solishtiruvchi 'git diff' qurolini o'rganamiz!", 960, 765, { size: 22, weight: 700, color: C.text });
-        text("status, add va commit buyruqlari — sizning har kungi eng ishonchli do'stingizdir.", 960, 800, { size: 18, color: C.mute });
-        ctx.restore();
-      });
-    });
-  }
-
-  // ==========================================
-  // ASOSIY RENDER SIKLI
-  // ==========================================
-  window.renderFrame = function (t) {
-    bg();
-
-    const scenes = [
-      { id: 'intro', fn: sceneIntro },
-      { id: 'git_status', fn: sceneGitStatus },
-      { id: 'git_add', fn: sceneGitAdd },
-      { id: 'git_commit', fn: sceneGitCommit },
-      { id: 'kuzatuv_sikli', fn: sceneKuzatuvSikli },
-      { id: 'xulosa', fn: sceneXulosa }
-    ];
-
-    for (let i = 0; i < scenes.length; i++) {
-      const s = scenes[i];
-      const bounds = TM.scenes[s.id];
-      if (!bounds) continue;
-
-      if (t >= bounds.s && t <= bounds.e) {
-        const u = t - bounds.s;
-        s.fn(u, bounds);
-        break;
+      // Faol prompt va miltillovchi kursor
+      if (tu >= 14.8) {
+        text("kutubxona $ ", 130, 511, { size: 15, fam: MONO, color: C.green, weight: 700, align: 'left' });
+        const pw = tw("kutubxona $ ", 15, 700, MONO);
+        if (Math.floor(tu * 2.5) % 2 === 0 || o.isPoster) {
+          text('█', 130 + pw + 2, 511, { size: 15, fam: MONO, color: '#38bdf8', align: 'left' });
+        }
       }
-    }
-  };
 
-  window.render = window.renderFrame;
+      // O'ng panel: Commitning Ichki Mohiyati
+      panel(980, 140, 840, 680, C.orange, "git commit: Doimiy Snapshot", "kriptografik muhrlangan tarix", kBox, kBox);
 
-  // Poster uchun qulay kadr (1-sahna taqqoslashi)
-  window.renderPoster = function () {
+      const kC1 = P(u, 1.8, 0.6);
+      withA(kC1, () => {
+        ctx.save(); ctx.translate(0, (1 - eo(kC1)) * 16);
+        card(1005, 255, 790, 240, { fill: 'rgba(255,181,71,0.08)', col: C.orange });
+        pill("Kommit Ob'ektining 4 Ustuni", 1160, 290, C.orange, { size: 16, mono: false });
+        text("1. Tree (daraxt) — loyihadagi barcha fayllar va ularning bloblari.", 1030, 335, { size: 16, color: C.text, align: 'left' });
+        text("2. Muallif (Author va Committer) — ism, email va sana belgisi.", 1030, 375, { size: 16, color: C.green, align: 'left', weight: 600 });
+        text("3. Tavsif xabari — qilingan o'zgarishning maqsadi va sababi.", 1030, 415, { size: 16, color: C.text, align: 'left' });
+        text("4. Hash kaliti — SHA-1 yoki SHA-256 bilan qotirilgan xavfsizlik.", 1030, 455, { size: 16, color: '#38bdf8', align: 'left', weight: 600 });
+        ctx.restore();
+      });
+
+      const kC2 = P(u, 6.5, 0.6);
+      withA(kC2, () => {
+        ctx.save(); ctx.translate(0, (1 - eo(kC2)) * 16);
+        card(1005, 515, 790, 270, { fill: 'rgba(52,211,153,0.08)', col: C.green });
+        pill("Tezkor 'commit -a' Opsiyasi", 1140, 550, C.green, { size: 16, mono: false });
+        text("• 'git commit -a -m ...' — barcha tracked fayllarni avtomatik stage qiladi.", 1030, 595, { size: 16, color: C.text, align: 'left' });
+        text("• 'git add'ni alohida yozish shart emas — vaqtni tejaydi.", 1030, 635, { size: 16, color: C.green, align: 'left', weight: 600 });
+        text("• MUHIM CHEKLOV: Yangi (untracked) fayllarni qo'shmaydi!", 1030, 675, { size: 16, color: C.red, align: 'left', weight: 700 });
+        text("• Yangi fayllar paydo bo'lganda, baribir 'git add' qilish shart.", 1030, 715, { size: 16, color: C.yellow, align: 'left' });
+        ctx.restore();
+      });
+    });
+
+    // Pastki xulosa
+    const kFoot = P(u, 14.5, 0.7);
+    withA(kFoot, () => {
+      ctx.save(); ctx.translate(0, (1 - eo(kFoot)) * 16);
+      card(100, 845, 1720, 165, { fill: 'rgba(17,24,52,0.92)', col: C.orange });
+      text("Har bir kommit o'z muallifi, sanasi, aniq tavsifi va xavfsiz hesh kaliti bilan tarixga muhrlanadi.", 960, 895, { size: 24, weight: 700, color: C.orange, align: 'center' });
+      text("Endi fayllarning butun hayot sikli bo'ylab harakatlanish xaritasini ko'ramiz.", 960, 950, { size: 20, color: C.mute, align: 'center' });
+      ctx.restore();
+    });
+  }
+
+  // ==========================================
+  // 5-SAHNA: Fayllarning Hayot Sikli
+  // ==========================================
+  function sceneKuzatuvSikli(u, bounds) {
+    chip(5, "Fayllarning Hayot Sikli", u);
+
+    const kBox = eo(P(u, 0.4, 0.6));
+    withA(kBox, () => {
+      // 4 Bosqichli Katta Hayot Sikli Xaritasi
+      panel(100, 140, 1720, 680, C.blue, "Fayllarning To'liq Hayot Sikli Xaritasi", "untracked -> staged -> unmodified -> modified", kBox, kBox);
+
+      // 4 ta ustun
+      const states = [
+        { name: "1 · Untracked", col: C.red, sub: "Yangi Yaratilgan", desc: "Git hali tanimaydi; faqat diskda mavjud.", act: "Harakat: git add <fayl>" },
+        { name: "2 · Staged", col: C.green, sub: "Indeksga Olingan", desc: "Kommit qoralamasida tayyor turibdi.", act: "Harakat: git commit" },
+        { name: "3 · Unmodified", col: C.blue, sub: "Tarixda Saqlangan", desc: "Oxirgi kommit bilan to'liq bir xil.", act: "Harakat: faylni tahrirlash" },
+        { name: "4 · Modified", col: C.orange, sub: "Diskda O'zgargan", desc: "Tahrirlangan, lekin hali index'da yo'q.", act: "Harakat: yana git add" }
+      ];
+
+      states.forEach((st, idx) => {
+        const x = 135 + idx * 415;
+        const kS = P(u, 1.2 + idx * 1.6, 0.6);
+        withA(kS, () => {
+          ctx.save(); ctx.translate(0, (1 - eo(kS)) * 16);
+          card(x, 255, 385, 360, { fill: 'rgba(15,22,48,0.92)', col: st.col, lw: 2 });
+          pill(st.name, x + 192, 295, st.col, { size: 18 });
+          text(st.sub, x + 192, 345, { size: 20, weight: 700, color: C.text });
+          text(st.desc, x + 192, 410, { size: 16, color: C.mute, align: 'center' });
+
+          card(x + 20, 480, 345, 100, { fill: 'rgba(11,16,32,0.92)', col: st.col });
+          text(st.act, x + 192, 530, { size: 16, fam: MONO, color: st.col, weight: 600 });
+          ctx.restore();
+        });
+      });
+
+      // Siklik bog'liqlik chizig'i
+      const kArr = P(u, 8.5, 0.6);
+      withA(kArr, () => {
+        card(135, 645, 1650, 140, { fill: 'rgba(11,16,32,0.94)', col: C.yellow });
+        pill("Uzluksiz Sikl Qoidasi", 960, 680, C.yellow, { size: 18, mono: false });
+        text("Untracked ──► git add ──► Staged ──► git commit ──► Unmodified ──► tahrirlash ──► Modified ──► qayta git add...", 960, 735, { size: 18, fam: MONO, color: C.green, weight: 600 });
+      });
+    });
+
+    // Pastki xulosa
+    const kFoot = P(u, 14.5, 0.7);
+    withA(kFoot, () => {
+      ctx.save(); ctx.translate(0, (1 - eo(kFoot)) * 16);
+      card(100, 845, 1720, 165, { fill: 'rgba(17,24,52,0.92)', col: C.blue });
+      text("Bu to'rt holat zanjiri loyiha davomida uzluksiz takrorlanadi va butun tarixni hosil qiladi.", 960, 895, { size: 24, weight: 700, color: C.text, align: 'center' });
+      text("Endi bob bo'yicha asosiy xulosalar va tavsiyalarni jamlaymiz.", 960, 950, { size: 20, color: C.mute, align: 'center' });
+      ctx.restore();
+    });
+  }
+
+  // ==========================================
+  // 6-SAHNA: Xulosa
+  // ==========================================
+  function sceneXulosa(u, bounds) {
+    chip(6, "Xulosa va Tavsiyalar", u);
+
+    const kBox = eo(P(u, 0.4, 0.6));
+    withA(kBox, () => {
+      // Chap: 4 Ta Oltin Qoida
+      panel(100, 140, 840, 680, C.blue, "Kundalik Ishning Oltin Qoidalari", "status, add va commit bilimi", kBox, kBox);
+
+      const kX1 = P(u, 1.2, 0.5);
+      withA(kX1, () => {
+        ctx.save(); ctx.translate(0, (1 - eo(kX1)) * 16);
+        card(125, 255, 790, 120, { fill: 'rgba(79,140,255,0.08)', col: C.blue });
+        pill("1 · 'git status' Bilan Boshlang va Tugating", 290, 285, C.blue, { size: 16, mono: false });
+        text("Har qanday amal oldidan va keyin holatni tekshirib olish xatolardan asraydi.", 150, 335, { size: 16, color: C.text, align: 'left' });
+        ctx.restore();
+      });
+
+      const kX2 = P(u, 3.2, 0.5);
+      withA(kX2, () => {
+        ctx.save(); ctx.translate(0, (1 - eo(kX2)) * 16);
+        card(125, 395, 790, 120, { fill: 'rgba(52,211,153,0.08)', col: C.green });
+        pill("2 · git add = Aynan Shu Mazmunni Stage Qilish", 310, 425, C.green, { size: 16, mono: false });
+        text("Faylni add qilgach yana o'zgartirsangiz, yangi o'zgarish uchun yana add kerak!", 150, 475, { size: 16, color: C.text, align: 'left' });
+        ctx.restore();
+      });
+
+      const kX3 = P(u, 5.2, 0.5);
+      withA(kX3, () => {
+        ctx.save(); ctx.translate(0, (1 - eo(kX3)) * 16);
+        card(125, 535, 790, 120, { fill: 'rgba(255,181,71,0.08)', col: C.orange });
+        pill("3 · Mazmunli Commit Xabarlari Yozing", 280, 565, C.orange, { size: 16, mono: false });
+        text("Commit xabari nima va nega o'zgarganini kelajakdagi jamoangizga tushuntiradi.", 150, 615, { size: 16, color: C.text, align: 'left' });
+        ctx.restore();
+      });
+
+      const kX4 = P(u, 7.2, 0.5);
+      withA(kX4, () => {
+        ctx.save(); ctx.translate(0, (1 - eo(kX4)) * 16);
+        card(125, 675, 790, 120, { fill: 'rgba(255,209,102,0.08)', col: C.yellow });
+        pill("4 · Qisqa Format: 'git status -s'", 260, 705, C.yellow, { size: 16, mono: false });
+        text("??, A, M va MM belgilari orqali loyiha holatini bir qarashda ko'ring.", 150, 755, { size: 16, color: C.text, align: 'left' });
+        ctx.restore();
+      });
+
+      // O'ng: Keyingi Bobga Yo'llanma
+      panel(980, 140, 840, 680, C.git, "Keyingi Bosqich", "07-bob: diff — nima o'zgardi?", kBox, kBox);
+
+      const kN1 = P(u, 9.2, 0.6);
+      withA(kN1, () => {
+        ctx.save(); ctx.translate(0, (1 - eo(kN1)) * 16);
+        card(1005, 255, 790, 250, { fill: 'rgba(240,81,51,0.08)', col: C.git });
+        pill("Keyingi Bobda Ko'riladigan Amallar", 1170, 290, C.git, { size: 16, mono: false });
+        text("• 'git diff': qatorlar kesimida nima o'zgarganini ko'rish", 1030, 340, { size: 17, color: C.text, align: 'left' });
+        text("• 'git diff --staged': kommitga tayyorlangan o'zgarishlarni tekshirish", 1030, 385, { size: 17, color: C.text, align: 'left' });
+        text("• Unified diff formati va rangli belgilarni o'qish san'ati", 1030, 430, { size: 17, color: C.text, align: 'left' });
+        text("• Kod sifatini oshirishda diff ning beqiyos o'rni", 1030, 475, { size: 17, color: '#38bdf8', align: 'left', weight: 600 });
+        ctx.restore();
+      });
+
+      const kN2 = P(u, 11.5, 0.6);
+      withA(kN2, () => {
+        ctx.save(); ctx.translate(0, (1 - eo(kN2)) * 16);
+        card(1005, 525, 790, 255, { fill: 'rgba(15,22,48,0.92)', col: C.green });
+        pill("Mustaqil Amaliyot Uchun Topshiriq", 1170, 560, C.green, { size: 16, mono: false });
+        text("1. Ikkita fayl ochib, 'git status -s' bilan ko'ring.", 1030, 605, { size: 16, fam: MONO, color: C.green, align: 'left', weight: 600 });
+        text("2. Bittasini add qiling va 'A' hamda '??' farqini tasdiqlang.", 1030, 645, { size: 16, fam: MONO, color: '#38bdf8', align: 'left' });
+        text("3. 'git commit -m ...' bilan birinchi kommitni yozing.", 1030, 685, { size: 16, fam: MONO, color: C.yellow, align: 'left' });
+        text("Asosiy sikl o'zlashtirilgan bo'lsa, keyingi darsga o'tamiz!", 1030, 735, { size: 16, color: C.text, align: 'left', weight: 600 });
+        ctx.restore();
+      });
+    });
+
+    // Pastki xulosa
+    const kFoot = P(u, 14.5, 0.7);
+    withA(kFoot, () => {
+      ctx.save(); ctx.translate(0, (1 - eo(kFoot)) * 16);
+      card(100, 845, 1720, 165, { fill: 'rgba(17,24,52,0.92)', col: C.blue });
+      text("status, add va commit — har bir dasturchining eng asosiy, eng ko'p ishlatadigan qurollaridir!", 960, 895, { size: 24, weight: 700, color: C.text, align: 'center' });
+      text("Keyingi bobda aynan nimalar o'zgarganini ko'rsatuvchi diff buyrug'ini ko'rib chiqamiz. Rahmat!", 960, 950, { size: 20, color: C.mute, align: 'center' });
+      ctx.restore();
+    });
+  }
+
+  // ==========================================
+  // ASOSIY FRAME CHIZISH
+  // ==========================================
+  function frame(t, o = {}) {
     bg();
-    sceneIntro(10.0, TM.scenes.intro, { isPoster: true });
+    const sc = o.scene || (TM ? Object.keys(TM.scenes).find((k) => t >= TM.scenes[k].s && t < TM.scenes[k].e) : 'intro') || 'intro';
+    const bounds = TM ? TM.scenes[sc] : { s: 0, e: 120.8 };
+    const u = t - bounds.s;
+
+    switch (sc) {
+      case 'intro': sceneIntro(u, bounds, o); break;
+      case 'git_status': sceneGitStatus(u, bounds, o); break;
+      case 'git_add': sceneGitAdd(u, bounds, o); break;
+      case 'git_commit': sceneGitCommit(u, bounds, o); break;
+      case 'kuzatuv_sikli': sceneKuzatuvSikli(u, bounds); break;
+      case 'xulosa': sceneXulosa(u, bounds); break;
+      default: sceneIntro(u, bounds, o);
+    }
+  }
+
+  window.renderFrame = frame;
+  window.drawFrame = frame;
+  window.render = frame;
+
+  window.renderPoster = function () {
+    bg(0);
+    // 06-bob muqovasi (Markaz pleyer tugmasi uchun qulay)
+    pill("06-BOB · KUNDALIK ISH SIKLI", 960, 160, C.git, { size: 26, mono: false });
+    text("O'zgarishlarni Yozish: status, add, commit", 960, 230, { size: 64, weight: 800, color: C.text, fam: UI });
+    text("Kundalik dasturlashning 90% qismini tashkil qiluvchi asosiy trio", 960, 290, { size: 28, color: C.mute, fam: UI });
+
+    // Markaziy taqqoslash kartasi
+    card(400, 410, 1120, 280, { fill: 'rgba(11,16,32,0.94)', col: C.blue, lw: 2.5 });
+    pill("Kundalik Ish Oqimi", 960, 475, C.blue, { size: 24 });
+    text("git status  ──►  git add <fayllar>  ──►  git commit -m '...'", 960, 545, { size: 26, fam: MONO, color: C.green, weight: 700 });
+    text("Untracked, Staged, Unmodified va Modified holatlari", 960, 595, { size: 22, fam: MONO, color: '#38bdf8', weight: 600 });
+    text("Qisqa format (-s) shifrlari va doimiy snapshotlar yaratish", 960, 645, { size: 20, fam: MONO, color: C.yellow });
+
+    // Pastki xulosa
+    card(100, 845, 1720, 165, { fill: 'rgba(17,24,52,0.92)', col: C.blue });
+    text("status, add va commit — har bir dasturchining eng asosiy, eng ko'p ishlatadigan qurollaridir!", 960, 895, { size: 24, weight: 700, color: C.text, align: 'center' });
+    text("Toza ishchi papka, mantiqiy saralangan kommitlar va xavfsiz tarix poydevori.", 960, 950, { size: 20, color: C.mute, align: 'center' });
   };
 })();
