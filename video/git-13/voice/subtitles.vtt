@@ -11,51 +11,51 @@ Git buyruqlari ikki qatlamga bo‘linadi: foydalanuvchiga qulay porcelain
 buyruqlar va kapot ostidagi quvurlar kabi ishlovchi plumbing buyruqlari.
 
 3
-00:22.970 --> 00:29.650
+00:23.470 --> 00:30.150
 Odamlar uchun mo‘ljallangan porcelain buyruqlar vaqt o‘tishi bilan
 qulayroq so‘zlar va ranglar bilan yangilanib turishi mumkin.
 
 4
-00:30.000 --> 00:37.790
+00:30.500 --> 00:38.290
 Avtomatlashtirilgan skriptlar va dasturlar uchun esa barqaror, hech
 qachon formati o‘zgarmaydigan plumbing buyruqlari xizmat qiladi.
 
 5
-00:40.960 --> 00:48.380
+00:42.460 --> 00:49.880
 Loyiha ichidagi .git papkasi Git'ning butun ma’lumotlar bazasi
 bo‘lib, fayllaringiz faqat undan olingan ishchi nusxadir.
 
 6
-00:48.730 --> 00:57.620
+00:50.230 --> 00:59.120
 Uning ichida eng muhim to‘rtta ustun joylashgan: obyektlar bazasi, ref
 ko‘rsatkichlari, HEAD fayli hamda staging hududini ifodalovchi index.
 
 7
-01:00.730 --> 01:08.030
+01:03.230 --> 01:10.530
 Git add buyrug‘i fayl mazmunidan blob obyektini yaratib,
 index fayliga uning rejimi va hash kodini yozib qo‘yadi.
 
 8
-01:08.400 --> 01:17.560
+01:10.900 --> 01:20.060
 Git commit esa indexdan tree obyektini shakllantirib, muallif va xabarni
 biriktirgan holda commit obyekti yasaydi hamda branch ko‘rsatkichini siljitadi.
 
 9
-01:20.490 --> 01:29.060
+01:23.990 --> 01:32.560
 Masalan, git status --porcelain yoki git rev-parse kabi
 plumbing vositalari skriptlar uchun eng toza natijani beradi.
 
 10
-01:29.550 --> 01:37.010
+01:33.050 --> 01:40.510
 Ushbu barqaror qatlam yordamida tizimga o‘z shaxsiy buyruqlaringizni
 qo‘shishingiz va mustaqil dasturlar integratsiyasini qurishingiz mumkin.
 
 11
-01:40.000 --> 01:47.520
+01:44.500 --> 01:52.020
 Plumbing buyruqlari Git qanday ishlashini tushunish, murakkab xatolarni
 tuzatish va avtomatlashtirish uchun bebaho poydevor hisoblanadi.
 
 12
-01:47.990 --> 01:55.430
+01:52.490 --> 01:59.930
 Keyingi o‘n to‘rtinchi bobda Git'ning eng birinchi g‘ishti bo‘lgan
 blob obyektlari va ularning hash kodlarini qo‘lda yasashni o‘rganamiz.
