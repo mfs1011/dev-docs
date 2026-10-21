@@ -7,16 +7,59 @@
     W, H, C, UI, MONO,
     clamp, P, lerp, eo, eio, eback, font, withA, rr,
     tw, text, bg, ring, burst, link, pill,
-    fileChip, chip, panel, card
+    fileChip, chip, panel, card, terminal
   } = kit;
 
   const TM = window.TM, NR = window.NR;
+
+  // Terminalda matn va buyruqlarni real yozilish effekti bilan chizish yordamchilari
+  function drawCommandLine(promptStr, fullCmd, tStart, tTypeEnd, tEnter, u, x, y, opt = {}) {
+    const tPrompt = opt.tPromptShow != null ? opt.tPromptShow : tStart - 0.3;
+    if (u < tPrompt) return;
+
+    const pCol = opt.promptCol || C.green;
+    text(promptStr, x, y, { size: 15, fam: MONO, color: pCol, weight: 700, align: 'left' });
+    const pw = tw(promptStr, 15, 700, MONO);
+
+    if (u < tStart) {
+      if (Math.floor(u * 2.5) % 2 === 0) {
+        text('█', x + pw + 2, y, { size: 15, fam: MONO, color: '#38bdf8', align: 'left' });
+      }
+      return;
+    }
+
+    const dur = Math.max(0.01, tTypeEnd - tStart);
+    const progress = clamp((u - tStart) / dur);
+    const charCount = Math.floor(progress * fullCmd.length);
+    const typedStr = fullCmd.slice(0, charCount);
+
+    text(typedStr, x + pw, y, { size: 15, fam: MONO, color: opt.cmdCol || '#e2e8f0', weight: 600, align: 'left' });
+    const cmdW = tw(typedStr, 15, 600, MONO);
+
+    if (u < tEnter) {
+      const isVisible = u < tTypeEnd ? true : (Math.floor(u * 2.5) % 2 === 0);
+      if (isVisible) {
+        text('█', x + pw + cmdW + 2, y, { size: 15, fam: MONO, color: '#38bdf8', align: 'left' });
+      }
+    }
+  }
+
+  function drawOutputLine(str, tAppear, u, x, y, opt = {}) {
+    if (u < tAppear) return;
+    text(str, x, y, {
+      size: opt.size || 14,
+      fam: MONO,
+      color: opt.color || '#94a3b8',
+      weight: opt.weight || 500,
+      align: 'left'
+    });
+  }
 
   // ==========================================
   // 1-SAHNA: Kirish va Loyihani Toza Saqlash
   // ==========================================
   function sceneIntro(u, bounds, o = {}) {
-    // Sarlavha bosqichi (u < 8.5)
+    // Sarlavha bosqichi (u < 8.5 va poster emas)
     if (u < 8.5 && !o.isPoster) {
       const kTitle = P(u, 0.4, 0.7);
       withA(kTitle, () => {
@@ -120,267 +163,306 @@
         card(1005, 620, 790, 165, { fill: 'rgba(79,140,255,0.08)', col: C.blue });
         pill("git mv — Qayta Nomlash va Ko'chirish", 1200, 655, C.blue, { size: 16, mono: false });
         text("• Faylni ko'chirish yoki nomini o'zgartirishni bitta qadamda bajaradi.", 1030, 700, { size: 17, color: C.text, align: 'left' });
-        text("• O'zgarishni darhol Staged (renamed) qilib tayyorlab qo'yadi.", 1030, 740, { size: 17, color: C.blue, align: 'left', weight: 600 });
+        text("• O'zgarishni darhol Staged (renamed) qilib tayyorlab qo'yadi.", 1030, 740, { size: 17, color: '#38bdf8', align: 'left', weight: 600 });
         ctx.restore();
       });
     });
   }
 
   // ==========================================
-  // 2-SAHNA: .gitignore Qoidalari va Patternlar
+  // 2-SAHNA: .gitignore Qoidalari (SPLIT SCREEN)
   // ==========================================
   function sceneGitignoreQoidalari(u, bounds, o = {}) {
-    chip(2, ".gitignore Pattern Sintaksisi", u, 0);
+    chip(2, ".gitignore Pattern Sintaksisi Amaliyoti", u, 0);
 
-    const kBase = eo(P(u, 0.2, 0.5));
-    withA(kBase, () => {
-      // Chap panel: Asosiy glob shablonlari
-      panel(100, 140, 840, 680, C.yellow, "Asosiy Pattern Qoidalari", "eng ko'p ishlatiladigan shablonlar", kBase, kBase);
+    const kBox = eo(P(u, 0.2, 0.5));
+    withA(kBox, () => {
+      // Chap panel: Real Terminalda .gitignore faylini ochib ko'rish
+      terminal(100, 140, 840, 680, {
+        title: 'bash — ~/loyiha (80x24)',
+        p: kBox
+      });
 
-      const kP1 = P(u, 0.6, 0.5);
+      const tu = o.isPoster ? 17.0 : u;
+
+      // 1-buyruq: cat .gitignore (u: 0.8 to 2.2, Enter at 2.4)
+      drawCommandLine("loyiha $ ", "cat .gitignore", 0.8, 2.2, 2.4, tu, 130, 205);
+      drawOutputLine("# kompilyatsiya va kutubxonalar", 2.6, tu, 130, 230, { color: '#64748b' });
+      drawOutputLine("*.[oa]", 2.9, tu, 130, 252, { color: '#38bdf8', weight: 600 });
+      drawOutputLine("!lib.a", 3.2, tu, 130, 274, { color: C.green, weight: 700 });
+      drawOutputLine("build/", 3.5, tu, 130, 296, { color: C.yellow, weight: 600 });
+      drawOutputLine("node_modules/", 3.8, tu, 130, 318, { color: C.yellow, weight: 600 });
+      drawOutputLine("# maxfiy sozlamalar va loglar", 4.1, tu, 130, 340, { color: '#64748b' });
+      drawOutputLine(".env", 4.4, tu, 130, 362, { color: C.red, weight: 700 });
+      drawOutputLine("logs/", 4.7, tu, 130, 384, { color: C.yellow });
+
+      // 2-buyruq: git status -s (u: 6.5 to 8.0, Enter at 8.2)
+      drawCommandLine("loyiha $ ", "git status -s", 6.5, 8.0, 8.2, tu, 130, 420);
+      drawOutputLine("?? .gitignore       # yangi filtr qoidalari fayli", 8.5, tu, 130, 448, { color: C.green, weight: 600 });
+      drawOutputLine("?? src/app.js       # dastur kodi (ko'rinib turibdi)", 8.9, tu, 130, 472, { color: C.green, weight: 600 });
+      drawOutputLine("?? lib.a            # !lib.a sababli qaytarildi", 9.3, tu, 130, 496, { color: C.cyan, weight: 600 });
+
+      // Izoh
+      drawOutputLine("--------------------------------------------------", 10.0, tu, 130, 530, { color: '#334155' });
+      drawOutputLine("E'tibor bering: .env, build/ va *.o fayllar", 10.5, tu, 130, 560, { color: C.yellow, weight: 600 });
+      drawOutputLine("statusda chiqmaydi — Git ularni butunlay chetlab o'tdi!", 11.0, tu, 130, 585, { color: C.mute });
+      drawOutputLine(".gitignore faylining o'zi esa commit qilinishi shart.", 11.5, tu, 130, 615, { color: C.green, weight: 600 });
+
+      // O'ng panel: Qoidalar tahlili
+      panel(980, 140, 840, 680, C.yellow, "Pattern Qoidalari Tahlili", "shablonlar qanday ishlaydi", kBox, kBox);
+
+      const kP1 = P(u, 1.0, 0.5);
       withA(kP1, () => {
         ctx.save(); ctx.translate(0, (1 - eo(kP1)) * 16);
-        card(125, 255, 790, 160, { fill: 'rgba(255,209,102,0.08)', col: C.yellow });
-        pill("*.[oa] va Joker Belgilar (*, ?)", 270, 290, C.yellow, { size: 16, mono: false });
-        text("• *.[oa]  -> barcha .o va .a fayllarni har qanday chuqurlikda ushlaydi.", 150, 335, { size: 17, fam: MONO, color: C.text, align: 'left' });
-        text("• Yulduzcha (*) har qanday belgilarni, so'roq (?) esa bitta belgini bildiradi.", 150, 375, { size: 16, color: C.yellow, align: 'left' });
+        card(1005, 255, 790, 160, { fill: 'rgba(255,209,102,0.08)', col: C.yellow });
+        pill("*.[oa] va Joker Belgilar (*, ?)", 1210, 290, C.yellow, { size: 16, mono: false });
+        text("• *.[oa]  -> barcha .o va .a kengaytmali fayllarni ushlaydi.", 1030, 335, { size: 17, fam: MONO, color: C.text, align: 'left' });
+        text("• Yulduzcha (*) har qanday belgilarni, so'roq (?) bitta belgini bildiradi.", 1030, 370, { size: 16, color: C.yellow, align: 'left' });
+        text("• Agar '/' belgisi bo'lmasa, har qanday ichki papkadan qidiradi.", 1030, 400, { size: 15, color: C.mute, align: 'left' });
         ctx.restore();
       });
 
-      const kP2 = P(u, 2.8, 0.5);
+      const kP2 = P(u, 6.0, 0.5);
       withA(kP2, () => {
         ctx.save(); ctx.translate(0, (1 - eo(kP2)) * 16);
-        card(125, 435, 790, 160, { fill: 'rgba(79,140,255,0.08)', col: C.blue });
-        pill("/TODO va build/ (Slesh Ahamiyati)", 280, 470, C.blue, { size: 16, mono: false });
-        text("• /TODO   -> faqat loyiha ILDIZIDAGI TODO faylini ushlaydi (sub/TODO emas).", 150, 515, { size: 17, fam: MONO, color: C.text, align: 'left' });
-        text("• build/  -> oxirida slesh bo'lsa, faqat shu nomdagi PAPKA va uning ichidagilar.", 150, 555, { size: 16, color: C.blue, align: 'left' });
+        card(1005, 435, 790, 165, { fill: 'rgba(79,140,255,0.08)', col: C.blue });
+        pill("/TODO va build/ (Slesh Ahamiyati)", 1200, 470, C.blue, { size: 16, mono: false });
+        text("• /TODO   -> faqat loyiha ILDIZIDAGI TODO faylini ushlaydi (sub/TODO emas).", 1030, 515, { size: 17, fam: MONO, color: C.text, align: 'left' });
+        text("• build/  -> oxirida slesh bo'lsa, faqat shu nomdagi PAPKA va uning ichi.", 1030, 550, { size: 16, color: '#38bdf8', align: 'left' });
+        text("• doc/**/*.pdf -> doc ichidagi barcha pdf fayllarni cheksiz chuqurlikda.", 1030, 580, { size: 15, fam: MONO, color: C.mute, align: 'left' });
         ctx.restore();
       });
 
-      const kP3 = P(u, 5.0, 0.5);
+      const kP3 = P(u, 11.0, 0.5);
       withA(kP3, () => {
         ctx.save(); ctx.translate(0, (1 - eo(kP3)) * 16);
-        card(125, 620, 790, 165, { fill: 'rgba(52,211,153,0.08)', col: C.green });
-        pill("!lib.a (Inkor) va doc/**/*.pdf", 270, 655, C.green, { size: 16, mono: false });
-        text("• !lib.a        -> oldingi qoida ignore qilgan faylni qayta ko'rsatadi.", 150, 700, { size: 17, fam: MONO, color: C.text, align: 'left' });
-        text("• doc/**/*.pdf  -> doc ichidagi barcha pdf fayllarni cheksiz chuqurlikda.", 150, 740, { size: 16, fam: MONO, color: C.green, align: 'left' });
-        ctx.restore();
-      });
-
-      // O'ng panel: Eng muhim qoida va ota papka cheklovi
-      panel(980, 140, 840, 680, C.purple, "Eng Muhim Cheklovlar", "e'tibor bermasa xato bo'ladigan joylar", kBase, kBase);
-
-      const kR1 = P(u, 7.5, 0.5);
-      withA(kR1, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kR1)) * 16);
-        card(1005, 255, 790, 240, { fill: 'rgba(255,107,107,0.08)', col: C.red });
-        pill("1-QOIDA · Tracked Fayllar E'tiborsiz Qolmaydi!", 1250, 290, C.red, { size: 16, mono: false });
-        text("• .gitignore faqat hali Git bilmaydigan (untracked) fayllarni to'sadi.", 1030, 335, { size: 17, color: C.text, align: 'left' });
-        text("• Allaqachon commit qilib bo'lingan fayl .gitignore'ga kiritilsa ham,", 1030, 375, { size: 17, color: C.text, align: 'left' });
-        text("  Git uni kuzatishda davom etadi! (Uning uchun git rm --cached kerak).", 1030, 415, { size: 17, color: C.red, align: 'left', weight: 700 });
-        text("• Bu yangi o'rganuvchilar eng ko'p adashadigan holatdir.", 1030, 460, { size: 16, color: C.mute, align: 'left' });
-        ctx.restore();
-      });
-
-      const kR2 = P(u, 10.5, 0.5);
-      withA(kR2, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kR2)) * 16);
-        card(1005, 520, 790, 265, { fill: 'rgba(180,108,255,0.08)', col: C.purple });
-        pill("2-QOIDA · Ota Papka Chiqarilsa, Ichini Qaytarib Bo'lmaydi", 1300, 555, C.purple, { size: 16, mono: false });
-        text("• Agar 'build/' butunlay chiqarib tashlangan bo'lsa,", 1030, 600, { size: 17, color: C.text, align: 'left' });
-        text("  '!build/keep.txt' qoidasi ISHLAMAYDI!", 1030, 640, { size: 17, color: C.yellow, align: 'left', weight: 700 });
-        text("• Chunki Git tezlik uchun ignore qilingan papka ichiga umuman kirmaydi.", 1030, 680, { size: 16, color: C.text, align: 'left' });
-        text("• Yechim: 'build/*' qilib, so'ng '!build/keep.txt' deb yozish lozim.", 1030, 720, { size: 16, color: C.cyan, align: 'left' });
+        card(1005, 620, 790, 165, { fill: 'rgba(52,211,153,0.08)', col: C.green });
+        pill("! (Inkor) va Ota Papka Cheklovi", 1210, 655, C.green, { size: 16, mono: false });
+        text("• !lib.a  -> oldingi qoida ignore qilgan faylni qaytadan ochadi.", 1030, 700, { size: 17, fam: MONO, color: C.green, align: 'left' });
+        text("• MUHIM: agar ota papka ('logs/') butunlay chiqarilgan bo'lsa,", 1030, 735, { size: 16, color: C.text, align: 'left' });
+        text("  ichidagi '!logs/keep.log' ishlamaydi! ('logs/*' deb yozish lozim).", 1030, 765, { size: 15, color: C.yellow, align: 'left', weight: 600 });
         ctx.restore();
       });
     });
   }
 
   // ==========================================
-  // 3-SAHNA: git check-ignore: Detektiv Buyruq
+  // 3-SAHNA: git check-ignore (SPLIT SCREEN)
   // ==========================================
   function sceneCheckIgnore(u, bounds, o = {}) {
     chip(3, "git check-ignore: Nega Ko'rinmayapti?", u, 0);
 
-    const kBase = eo(P(u, 0.2, 0.5));
-    withA(kBase, () => {
-      // Chap panel: check-ignore detektivi
-      panel(100, 140, 840, 680, C.green, "check-ignore — Detektiv Qurol", "qaysi qoida to'sayotganini aniqlash", kBase, kBase);
+    const kBox = eo(P(u, 0.2, 0.5));
+    withA(kBox, () => {
+      // Chap panel: Haqiqiy Terminalda check-ignore
+      terminal(100, 140, 840, 680, {
+        title: 'bash — git check-ignore (80x24)',
+        p: kBox
+      });
 
-      const kD1 = P(u, 0.6, 0.5);
+      const tu = o.isPoster ? 17.0 : u;
+
+      // 1-buyruq: git check-ignore -v .env (u: 0.8 to 2.4, Enter at 2.6)
+      drawCommandLine("loyiha $ ", "git check-ignore -v .env", 0.8, 2.4, 2.6, tu, 130, 205);
+      drawOutputLine(".gitignore:7:.env    .env", 2.9, tu, 130, 235, { color: C.green, weight: 700 });
+      drawOutputLine("(Aniq javob: .gitignore ning 7-qatori to'smoqda!)", 3.4, tu, 130, 260, { color: '#38bdf8' });
+
+      // 2-buyruq: git check-ignore -v build/out.js (u: 5.0 to 6.8, Enter at 7.0)
+      drawCommandLine("loyiha $ ", "git check-ignore -v build/out.js", 5.0, 6.8, 7.0, tu, 130, 295);
+      drawOutputLine(".gitignore:4:build/    build/out.js", 7.3, tu, 130, 325, { color: C.green, weight: 700 });
+
+      // 3-buyruq: git status -s --ignored (u: 9.0 to 11.0, Enter at 11.2)
+      drawCommandLine("loyiha $ ", "git status -s --ignored", 9.0, 11.0, 11.2, tu, 130, 365);
+      drawOutputLine("?? .gitignore", 11.5, tu, 130, 395, { color: C.green, weight: 600 });
+      drawOutputLine("?? src/app.js", 11.8, tu, 130, 420, { color: C.green, weight: 600 });
+      drawOutputLine("!! .env             # yashirilgan maxfiy fayl", 12.2, tu, 130, 448, { color: '#c084fc', weight: 700 });
+      drawOutputLine("!! build/           # chetlab o'tilgan build papkasi", 12.6, tu, 130, 473, { color: '#c084fc', weight: 700 });
+      drawOutputLine("!! node_modules/    # kutubxonalar papkasi", 13.0, tu, 130, 498, { color: '#c084fc', weight: 700 });
+      drawOutputLine("!! logs/app.log     # log fayli", 13.4, tu, 130, 523, { color: '#c084fc', weight: 700 });
+
+      // Xulosa izohi
+      drawOutputLine("--------------------------------------------------", 14.0, tu, 130, 560, { color: '#334155' });
+      drawOutputLine("'!!' belgisi — qoidaga tushgan barcha fayllarni ko'rsatadi.", 14.5, tu, 130, 590, { color: C.yellow, weight: 600 });
+      drawOutputLine("Chiqish kodi: 0 — ignore qilingan, 1 — mos kelmagan.", 15.0, tu, 130, 615, { color: C.mute });
+
+      // O'ng panel: check-ignore tahlili
+      panel(980, 140, 840, 680, C.purple, "check-ignore va --ignored Mantiqi", "fayl nega ko'rinmayapti?", kBox, kBox);
+
+      const kD1 = P(u, 1.0, 0.5);
       withA(kD1, () => {
         ctx.save(); ctx.translate(0, (1 - eo(kD1)) * 16);
-        card(125, 255, 790, 220, { fill: 'rgba(11,16,32,0.95)', col: C.green });
-        pill("Muammoni Aniqlash Buyrug'i", 260, 290, C.green, { size: 16, mono: false });
-        text("$ git check-ignore -v logs/app.log", 150, 335, { size: 18, fam: MONO, color: C.yellow, align: 'left' });
-        text(".gitignore:12:logs/    logs/app.log", 150, 375, { size: 17, fam: MONO, color: C.green, align: 'left', weight: 700 });
-        text("Aniq javob beradi: .gitignore faylining 12-qatori to'smoqda!", 150, 420, { size: 16, color: C.text, align: 'left' });
+        card(1005, 255, 790, 175, { fill: 'rgba(180,108,255,0.08)', col: C.purple });
+        pill("check-ignore -v (Detektiv Qurol)", 1210, 290, C.purple, { size: 16, mono: false });
+        text("• 'Faylim statusda yo'q, nega?' degan savolga eng aniq javob.", 1030, 335, { size: 17, color: C.text, align: 'left' });
+        text("• Qaysi fayl, qaysi qator va qaysi shablon to'sayotganini ko'rsatadi.", 1030, 370, { size: 17, color: '#38bdf8', align: 'left', weight: 600 });
+        text("• Katta jamoalarda murakkab qoidalarni tekshirish uchun zarur.", 1030, 405, { size: 15, color: C.mute, align: 'left' });
         ctx.restore();
       });
 
-      const kD2 = P(u, 3.5, 0.5);
+      const kD2 = P(u, 6.5, 0.5);
       withA(kD2, () => {
         ctx.save(); ctx.translate(0, (1 - eo(kD2)) * 16);
-        card(125, 500, 790, 285, { fill: 'rgba(52,211,153,0.08)', col: C.blue });
-        pill("Foydali Opsiyalar", 200, 535, C.blue, { size: 16, mono: false });
-        text("• -v, --verbose     -> qaysi fayl va qaysi qator ekanini ko'rsatadi.", 150, 580, { size: 16, fam: MONO, color: C.text, align: 'left' });
-        text("• --no-index        -> tracked fayllarni ham tekshiradi.", 150, 620, { size: 16, fam: MONO, color: C.cyan, align: 'left' });
-        text("• -n, --non-matching-> ignore qilinmagan fayllarni ham chiqaradi.", 150, 660, { size: 16, fam: MONO, color: C.text, align: 'left' });
-        text("Chiqish kodi: 0 — ignore qilingan, 1 — mos kelmagan.", 150, 710, { size: 16, color: C.yellow, align: 'left', weight: 600 });
+        card(1005, 450, 790, 170, { fill: 'rgba(52,211,153,0.08)', col: C.green });
+        pill("--no-index Opsiyasi", 1150, 485, C.green, { size: 16, mono: false });
+        text("• Standart holatda tracked fayllarni tekshirmaydi.", 1030, 530, { size: 17, color: C.text, align: 'left' });
+        text("• Allaqachon commit qilib bo'lingan faylga nisbatan qoidani", 1030, 565, { size: 17, color: C.green, align: 'left', weight: 600 });
+        text("  tekshirmoqchi bo'lsangiz: $ git check-ignore -v --no-index fayl", 1030, 595, { size: 15, fam: MONO, color: C.mute, align: 'left' });
         ctx.restore();
       });
 
-      // O'ng panel: git status --ignored
-      panel(980, 140, 840, 680, C.purple, "E'tiborsiz Qoldirilganlarni Ko'rish", "yashirin fayllar ro'yxati", kBase, kBase);
-
-      const kS1 = P(u, 7.5, 0.5);
-      withA(kS1, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kS1)) * 16);
-        card(1005, 255, 790, 535, { fill: 'rgba(11,16,32,0.95)', col: C.purple });
-        pill("$ git status --short --ignored", 1190, 290, C.purple, { size: 16, mono: false });
-
-        text("?? .gitignore       (yangi yaratilgan qoidalar fayli)", 1030, 345, { size: 16, fam: MONO, color: C.green, align: 'left' });
-        text("?? src/app.js       (loyihadagi oddiy fayl)", 1030, 385, { size: 16, fam: MONO, color: C.green, align: 'left' });
-        text("-----------------------------------------------------", 1030, 425, { size: 15, fam: MONO, color: C.mute, align: 'left' });
-        text("!! .env             (maxfiy sozlamalar yashirildi)", 1030, 465, { size: 16, fam: MONO, color: C.purple, align: 'left', weight: 700 });
-        text("!! build/           (kompilyatsiya papkasi chetlab o'tildi)", 1030, 505, { size: 16, fam: MONO, color: C.purple, align: 'left', weight: 700 });
-        text("!! node_modules/    (kutubxonalar ignore qilindi)", 1030, 545, { size: 16, fam: MONO, color: C.purple, align: 'left', weight: 700 });
-        text("!! logs/app.log     (vaqtinchalik loglar to'sib qo'yildi)", 1030, 585, { size: 16, fam: MONO, color: C.purple, align: 'left', weight: 700 });
-        text("-----------------------------------------------------", 1030, 625, { size: 15, fam: MONO, color: C.mute, align: 'left' });
-        text("'!!' belgisi — qoidaga tushgan barcha fayllarni ko'rsatadi.", 1030, 675, { size: 16, color: C.yellow, align: 'left', weight: 600 });
+      const kD3 = P(u, 11.5, 0.5);
+      withA(kD3, () => {
+        ctx.save(); ctx.translate(0, (1 - eo(kD3)) * 16);
+        card(1005, 640, 790, 145, { fill: 'rgba(255,209,102,0.08)', col: C.yellow });
+        pill("git status --ignored", 1160, 675, C.yellow, { size: 16, mono: false });
+        text("• E'tiborsiz qoldirilgan barcha fayllarni bir zumda ro'yxatlaydi.", 1030, 715, { size: 17, color: C.text, align: 'left' });
+        text("• Keraksiz yoki adashib tushgan fayllar yo'qligini tekshirish usuli.", 1030, 750, { size: 16, color: C.yellow, align: 'left', weight: 600 });
         ctx.restore();
       });
     });
   }
 
   // ==========================================
-  // 4-SAHNA: git rm va --cached Sehri
+  // 4-SAHNA: git rm va --cached Sehri (SPLIT SCREEN)
   // ==========================================
   function sceneGitRm(u, bounds, o = {}) {
     chip(4, "git rm va --cached Sehrli Kuchi", u, 0);
 
-    const kBase = eo(P(u, 0.2, 0.5));
-    withA(kBase, () => {
-      // Chap panel: Oddiy git rm
-      panel(100, 140, 840, 680, C.red, "Faylni O'chirish: git rm", "ham diskdan, ham indexdan", kBase, kBase);
-
-      const kR1 = P(u, 0.6, 0.5);
-      withA(kR1, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kR1)) * 16);
-        card(125, 255, 790, 160, { fill: 'rgba(255,107,107,0.08)', col: C.red });
-        pill("Standart O'chirish", 220, 290, C.red, { size: 16, mono: false });
-        text("$ git rm eski_fayl.txt", 150, 335, { size: 18, fam: MONO, color: C.text, align: 'left' });
-        text("Fayl diskdan o'chiriladi va o'chirish darhol stage qilinadi.", 150, 375, { size: 17, color: C.red, align: 'left', weight: 600 });
-        ctx.restore();
+    const kBox = eo(P(u, 0.2, 0.5));
+    withA(kBox, () => {
+      // Chap panel: Real Terminalda git rm amaliyoti
+      terminal(100, 140, 840, 680, {
+        title: 'bash — git rm amaliyoti (80x24)',
+        p: kBox
       });
 
-      const kR2 = P(u, 2.8, 0.5);
-      withA(kR2, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kR2)) * 16);
-        card(125, 435, 790, 160, { fill: 'rgba(255,209,102,0.08)', col: C.yellow });
-        pill("Xavfsizlik Tekshiruvi va -f", 250, 470, C.yellow, { size: 16, mono: false });
-        text("• Agar faylda saqlanmagan o'zgarish bo'lsa, Git o'chirishni rad etadi.", 150, 515, { size: 17, color: C.text, align: 'left' });
-        text("• Majburiy o'chirish uchun '-f' (force) ishlatiladi, ehtiyot bo'ling!", 150, 555, { size: 17, color: C.yellow, align: 'left', weight: 600 });
-        ctx.restore();
-      });
+      const tu = o.isPoster ? 17.0 : u;
 
-      const kR3 = P(u, 5.0, 0.5);
-      withA(kR3, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kR3)) * 16);
-        card(125, 620, 790, 165, { fill: 'rgba(15,22,48,0.92)', col: C.mute });
-        pill("Papkalarni o'chirish: -r", 220, 655, C.mute, { size: 16, mono: false });
-        text("$ git rm -r papka/", 150, 700, { size: 18, fam: MONO, color: C.cyan, align: 'left' });
-        text("Butun boshli papkani rekursiv tarzda ombordan chiqarib tashlash.", 150, 740, { size: 16, color: C.mute, align: 'left' });
-        ctx.restore();
-      });
+      // 1-buyruq: git rm eski_fayl.txt (u: 0.8 to 2.4, Enter at 2.6)
+      drawCommandLine("loyiha $ ", "git rm eski_fayl.txt", 0.8, 2.4, 2.6, tu, 130, 205);
+      drawOutputLine("rm 'eski_fayl.txt'", 2.8, tu, 130, 235, { color: C.red, weight: 600 });
 
-      // O'ng panel: git rm --cached
-      panel(980, 140, 840, 680, C.green, "Oltin Vosita: git rm --cached", "diskda qoldirib, Gitdan chiqarish", kBase, kBase);
+      // 2-buyruq: git status -s (u: 3.8 to 5.0, Enter at 5.2)
+      drawCommandLine("loyiha $ ", "git status -s", 3.8, 5.0, 5.2, tu, 130, 270);
+      drawOutputLine("D  eski_fayl.txt    (ham diskdan, ham indexdan o'chdi)", 5.5, tu, 130, 300, { color: C.red, weight: 700 });
 
-      const kC1 = P(u, 7.5, 0.5);
+      // 3-buyruq: git rm --cached .env (u: 7.2 to 9.2, Enter at 9.5)
+      drawCommandLine("loyiha $ ", "git rm --cached .env", 7.2, 9.2, 9.5, tu, 130, 345);
+      drawOutputLine("rm '.env'", 9.8, tu, 130, 375, { color: '#38bdf8', weight: 700 });
+
+      // 4-buyruq: git status -s (u: 11.0 to 12.2, Enter at 12.4)
+      drawCommandLine("loyiha $ ", "git status -s", 11.0, 12.2, 12.4, tu, 130, 415);
+      drawOutputLine("D  .env    # Index'dan olindi (keyingi commitda o'chadi)", 12.7, tu, 130, 445, { color: C.red, weight: 700 });
+      drawOutputLine("?? .env    # Ammo fayl DISKDA BUTUN SAQLANIB QOLDI!", 13.1, tu, 130, 470, { color: C.green, weight: 700 });
+
+      // Izoh
+      drawOutputLine("--------------------------------------------------", 13.8, tu, 130, 508, { color: '#334155' });
+      drawOutputLine("Endi .env ni .gitignore ga qo'shib commit qilinsa:", 14.2, tu, 130, 538, { color: C.yellow, weight: 600 });
+      drawOutputLine("fayl kompyuteringizda yashaydi, ammo repo'ga kirmaydi!", 14.6, tu, 130, 563, { color: C.green, weight: 600 });
+
+      // O'ng panel: rm va --cached qoidalari
+      panel(980, 140, 840, 680, C.green, "git rm va --cached Sehri", "diskda qoldirib, Gitdan chiqarish", kBox, kBox);
+
+      const kC1 = P(u, 1.0, 0.5);
       withA(kC1, () => {
         ctx.save(); ctx.translate(0, (1 - eo(kC1)) * 16);
-        card(1005, 255, 790, 240, { fill: 'rgba(52,211,153,0.08)', col: C.green });
-        pill("Klassik Muammo va Yechim", 1140, 290, C.green, { size: 16, mono: false });
-        text("Muammo: .env faylini bilmasdan commit qilib qo'ydingiz.", 1030, 335, { size: 17, color: C.text, align: 'left' });
-        text("Uni diskdan o'chirib bo'lmaydi — dastur ishlashi uchun kerak!", 1030, 375, { size: 17, color: C.yellow, align: 'left', weight: 600 });
-        text("Yechim: $ git rm --cached .env", 1030, 420, { size: 18, fam: MONO, color: C.green, align: 'left', weight: 800 });
-        text("Natija: Fayl diskda QOLADI, ammo Git nazoratidan CHIQARILADI!", 1030, 460, { size: 17, color: C.cyan, align: 'left', weight: 700 });
+        card(1005, 255, 790, 175, { fill: 'rgba(255,107,107,0.08)', col: C.red });
+        pill("Standart git rm (Disk + Index)", 1210, 290, C.red, { size: 16, mono: false });
+        text("• Faylni ham ishchi papkadan, ham Git indexidan o'chiradi.", 1030, 335, { size: 17, color: C.text, align: 'left' });
+        text("• O'chirish darhol Staged bo'ladi (D yorlig'i bilan).", 1030, 370, { size: 17, color: C.red, align: 'left', weight: 600 });
+        text("• Saqlanmagan o'zgarish bo'lsa, xavfsizlik uchun rad etadi (-f kerak).", 1030, 405, { size: 15, color: C.mute, align: 'left' });
         ctx.restore();
       });
 
-      const kC2 = P(u, 10.5, 0.5);
+      const kC2 = P(u, 7.5, 0.5);
       withA(kC2, () => {
         ctx.save(); ctx.translate(0, (1 - eo(kC2)) * 16);
-        card(1005, 520, 790, 265, { fill: 'rgba(79,140,255,0.08)', col: C.blue });
-        pill("Keyingi Majburiy Qadamlar", 1140, 555, C.blue, { size: 16, mono: false });
-        text("1. Faylni .gitignore ga qo'shing: echo '.env' >> .gitignore", 1030, 600, { size: 16, fam: MONO, color: C.text, align: 'left' });
-        text("2. O'zgarishlarni commit qiling: git commit -m 'env olindi'", 1030, 640, { size: 16, fam: MONO, color: C.blue, align: 'left' });
-        text("3. Endi fayl faqat sizning kompyuteringizda yashaydi,", 1030, 680, { size: 17, color: C.green, align: 'left', weight: 600 });
-        text("   GitHub yoki serverga boshqa hech qachon chiqmaydi!", 1030, 720, { size: 17, color: C.green, align: 'left', weight: 600 });
+        card(1005, 450, 790, 185, { fill: 'rgba(52,211,153,0.08)', col: C.green });
+        pill("Oltin Yechim: git rm --cached", 1210, 485, C.green, { size: 16, mono: false });
+        text("• Muammo: .env fayli adashib commit qilib qo'yildi.", 1030, 530, { size: 17, color: C.text, align: 'left' });
+        text("• Diskdan o'chirib bo'lmaydi — loyihaning ishlashi uchun zarur!", 1030, 565, { size: 17, color: C.yellow, align: 'left', weight: 600 });
+        text("• Yechim: $ git rm --cached .env  ->  faqat Git kuzatuvidan oladi!", 1030, 600, { size: 16, fam: MONO, color: C.green, align: 'left', weight: 700 });
+        ctx.restore();
+      });
+
+      const kC3 = P(u, 12.0, 0.5);
+      withA(kC3, () => {
+        ctx.save(); ctx.translate(0, (1 - eo(kC3)) * 16);
+        card(1005, 655, 790, 130, { fill: 'rgba(79,140,255,0.08)', col: C.blue });
+        pill("Papkalarni O'chirish (-r)", 1160, 690, C.blue, { size: 16, mono: false });
+        text("$ git rm -r log/     va     $ git rm -n log/*.log", 1030, 735, { size: 17, fam: MONO, color: '#38bdf8', align: 'left', weight: 600 });
         ctx.restore();
       });
     });
   }
 
   // ==========================================
-  // 5-SAHNA: git mv: Ko'chirish va Qayta Nomlash
+  // 5-SAHNA: git mv: Ko'chirish va Qayta Nomlash (SPLIT SCREEN)
   // ==========================================
   function sceneGitMv(u, bounds, o = {}) {
     chip(5, "git mv: Ko'chirish va Qayta Nomlash", u, 0);
 
-    const kBase = eo(P(u, 0.2, 0.5));
-    withA(kBase, () => {
-      // Chap panel: 3 amaliyot bitta buyruqda
-      panel(100, 140, 840, 680, C.blue, "Bitta Buyruqda 3 Amaliyot", "git mv ning qulayligi", kBase, kBase);
+    const kBox = eo(P(u, 0.2, 0.5));
+    withA(kBox, () => {
+      // Chap panel: Real Terminalda git mv amaliyoti
+      terminal(100, 140, 840, 680, {
+        title: 'bash — git mv amaliyoti (80x24)',
+        p: kBox
+      });
 
-      const kM1 = P(u, 0.6, 0.5);
+      const tu = o.isPoster ? 16.0 : u;
+
+      // 1-buyruq: git mv README.md README (u: 0.8 to 2.4, Enter at 2.6)
+      drawCommandLine("loyiha $ ", "git mv README.md README", 0.8, 2.4, 2.6, tu, 130, 205);
+
+      // 2-buyruq: git status -s (u: 3.5 to 4.8, Enter at 5.0)
+      drawCommandLine("loyiha $ ", "git status -s", 3.5, 4.8, 5.0, tu, 130, 245);
+      drawOutputLine("R  README.md -> README  (staged, commitga tayyor!)", 5.3, tu, 130, 275, { color: C.green, weight: 700 });
+
+      // 3-buyruq: git mv docs/*.txt archive/ (u: 7.0 to 9.0, Enter at 9.3)
+      drawCommandLine("loyiha $ ", "git mv docs/*.txt archive/", 7.0, 9.0, 9.3, tu, 130, 320);
+
+      // 4-buyruq: git status -s (u: 10.5 to 11.8, Enter at 12.0)
+      drawCommandLine("loyiha $ ", "git status -s", 10.5, 11.8, 12.0, tu, 130, 360);
+      drawOutputLine("R  docs/intro.txt -> archive/intro.txt", 12.3, tu, 130, 390, { color: C.green, weight: 600 });
+      drawOutputLine("R  docs/usage.txt -> archive/usage.txt", 12.6, tu, 130, 415, { color: C.green, weight: 600 });
+
+      // Izoh
+      drawOutputLine("--------------------------------------------------", 13.2, tu, 130, 455, { color: '#334155' });
+      drawOutputLine("Git fayl nomiga emas, uning MAZMUNIGA qaraydi.", 13.6, tu, 130, 485, { color: '#38bdf8', weight: 600 });
+      drawOutputLine("Fayl qayerga ko'chsa ham, uning butun tarixi saqlanadi!", 14.0, tu, 130, 510, { color: C.text });
+
+      // O'ng panel: git mv afzalliklari
+      panel(980, 140, 840, 680, C.blue, "Bitta Buyruqda 3 Amaliyot", "git mv ning afzalliklari", kBox, kBox);
+
+      const kM1 = P(u, 1.0, 0.5);
       withA(kM1, () => {
         ctx.save(); ctx.translate(0, (1 - eo(kM1)) * 16);
-        card(125, 255, 790, 160, { fill: 'rgba(79,140,255,0.08)', col: C.blue });
-        pill("Buyruq Shakli", 190, 290, C.blue, { size: 16, mono: false });
-        text("$ git mv README.md README", 150, 335, { size: 18, fam: MONO, color: C.text, align: 'left' });
-        text("renamed: README.md -> README (darhol Staged bo'ladi)", 150, 375, { size: 17, color: C.green, align: 'left', weight: 600 });
+        card(1005, 255, 790, 220, { fill: 'rgba(79,140,255,0.08)', col: C.blue });
+        pill("Qo'lda Bajarish vs git mv", 1180, 290, C.blue, { size: 16, mono: false });
+        text("Agar qo'lda qilsangiz, uchta buyruq kerak bo'lardi:", 1030, 335, { size: 17, color: C.text, align: 'left' });
+        text("1. $ mv eski.md yangi.md     (diskda nomini o'zgartirish)", 1030, 370, { size: 16, fam: MONO, color: C.yellow, align: 'left' });
+        text("2. $ git rm eski.md          (eski nomni indexdan o'chirish)", 1030, 400, { size: 16, fam: MONO, color: C.red, align: 'left' });
+        text("3. $ git add yangi.md        (yangi faylni stage qilish)", 1030, 430, { size: 16, fam: MONO, color: C.green, align: 'left' });
         ctx.restore();
       });
 
-      const kM2 = P(u, 3.0, 0.5);
+      const kM2 = P(u, 6.5, 0.5);
       withA(kM2, () => {
         ctx.save(); ctx.translate(0, (1 - eo(kM2)) * 16);
-        card(125, 435, 790, 350, { fill: 'rgba(11,16,32,0.95)', col: C.border });
-        pill("Aslida Nima Sodir Bo'ladi?", 240, 470, C.mute, { size: 16, mono: false });
-        text("Agar qo'lda qilsangiz, uchta buyruq kerak bo'lardi:", 150, 515, { size: 17, color: C.text, align: 'left' });
-        text("1. $ mv README.md README        (diskda nomini o'zgartirish)", 150, 560, { size: 16, fam: MONO, color: C.yellow, align: 'left' });
-        text("2. $ git rm -q README.md        (eski nomni o'chirish)", 150, 600, { size: 16, fam: MONO, color: C.red, align: 'left' });
-        text("3. $ git add README             (yangi faylni qo'shish)", 150, 640, { size: 16, fam: MONO, color: C.green, align: 'left' });
-        text("git mv bularning barini xatosiz va bir zumda bajaradi!", 150, 700, { size: 17, color: C.cyan, align: 'left', weight: 700 });
+        card(1005, 495, 790, 200, { fill: 'rgba(180,108,255,0.08)', col: C.purple });
+        pill("Kontent Xeshi (SHA-1 Blob)", 1150, 530, C.purple, { size: 16, mono: false });
+        text("• Git faylning nomini emas, uning ichidagi MAZMUNINI saqlaydi.", 1030, 575, { size: 17, color: C.text, align: 'left' });
+        text("• Fayl boshqa papkaga ko'chsa ham, uning blobi o'zgarmaydi.", 1030, 610, { size: 17, color: C.purple, align: 'left', weight: 600 });
+        text("• Natijada faylning butun commit tarixi uzilmasdan qoladi!", 1030, 645, { size: 17, color: '#38bdf8', align: 'left', weight: 700 });
         ctx.restore();
       });
 
-      // O'ng panel: Kontent bo'yicha kuzatish
-      panel(980, 140, 840, 680, C.purple, "Git Fayllarni Qanday Taniyadi?", "nomga emas, kontentga qarash", kBase, kBase);
-
-      const kK1 = P(u, 7.5, 0.5);
-      withA(kK1, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kK1)) * 16);
-        card(1005, 255, 790, 240, { fill: 'rgba(180,108,255,0.08)', col: C.purple });
-        pill("Kontent Xeshi (SHA-1 Blob)", 1150, 290, C.purple, { size: 16, mono: false });
-        text("• Git faylning nomini emas, uning ichidagi MAZMUNINI saqlaydi.", 1030, 335, { size: 17, color: C.text, align: 'left' });
-        text("• Fayl boshqa papkaga ko'chsa ham, uning blobi o'zgarmaydi.", 1030, 375, { size: 17, color: C.purple, align: 'left', weight: 600 });
-        text("• Git solishtirish paytida 'bu fayl 100% o'sha fayl' deb tanib oladi.", 1030, 415, { size: 17, color: C.green, align: 'left' });
-        text("• Natijada faylning butun commit tarixi uzilmasdan qoladi!", 1030, 460, { size: 17, color: C.cyan, align: 'left', weight: 700 });
-        ctx.restore();
-      });
-
-      const kK2 = P(u, 10.5, 0.5);
-      withA(kK2, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kK2)) * 16);
-        card(1005, 520, 790, 265, { fill: 'rgba(79,140,255,0.08)', col: C.blue });
-        pill("Bir Nechta Faylni Papkaga Ko'chirish", 1200, 555, C.blue, { size: 16, mono: false });
-        text("$ git mv docs/intro.txt docs/usage.txt archive/", 1030, 600, { size: 17, fam: MONO, color: C.cyan, align: 'left' });
-        text("• Oxirgi argument papka bo'lsa, bir nechta faylni birga ko'chirish mumkin.", 1030, 645, { size: 16, color: C.text, align: 'left' });
-        text("• Agar manzil mavjud bo'lsa, Git xatolik berib to'xtaydi (ustidan yozmaydi).", 1030, 685, { size: 16, color: C.yellow, align: 'left' });
-        text("• Majburlash uchun '-f' opsiyasi mavjud.", 1030, 725, { size: 16, color: C.mute, align: 'left' });
+      const kM3 = P(u, 11.5, 0.5);
+      withA(kM3, () => {
+        ctx.save(); ctx.translate(0, (1 - eo(kM3)) * 16);
+        card(1005, 715, 790, 85, { fill: 'rgba(52,211,153,0.08)', col: C.green });
+        text("Bir nechta faylni papkaga: $ git mv fayl1 fayl2 papka/", 1030, 765, { size: 16, fam: MONO, color: C.green, align: 'left', weight: 600 });
         ctx.restore();
       });
     });
@@ -394,51 +476,52 @@
 
     const kBase = eo(P(u, 0.2, 0.5));
     withA(kBase, () => {
-      // 3 ustunli tavsiyalar
-      const kC1 = P(u, 0.5, 0.5);
-      withA(kC1, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kC1)) * 16);
-        panel(100, 140, 546, 500, C.yellow, "1 · .gitignore Yarating", "boshidanoq filtr qiling", kC1, kC1);
-        card(120, 255, 506, 170, { fill: 'rgba(255,209,102,0.08)', col: C.yellow });
-        pill("Toza Boshlanish", 200, 290, C.yellow, { size: 16, mono: false });
-        text("Loyiha boshlangan zahoti", 140, 335, { size: 17, color: C.text, align: 'left' });
-        text(".gitignore faylini to'ldirib oling.", 140, 365, { size: 17, color: C.text, align: 'left' });
-        text("Axlat fayllar tarixga tushmaydi.", 140, 400, { size: 16, color: C.yellow, align: 'left' });
-        ctx.restore();
-      });
+      // Katta xulosa paneli
+      panel(100, 140, 1720, 500, C.blue, "Loyihani Tartibga Solish Xaritasi", "qaysi qurol nimaga javob beradi", kBase, kBase);
 
-      const kC2 = P(u, 2.5, 0.5);
-      withA(kC2, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kC2)) * 16);
-        panel(686, 140, 546, 500, C.red, "2 · git rm --cached", "adashganda xaloskor", kC2, kC2);
-        card(706, 255, 506, 170, { fill: 'rgba(255,107,107,0.08)', col: C.red });
-        pill("Xavfsiz Qutulish", 790, 290, C.red, { size: 16, mono: false });
-        text("Adashib commit qilingan .env", 726, 335, { size: 17, color: C.text, align: 'left' });
-        text("yoki loglarni '--cached' bilan chiqaring.", 726, 365, { size: 17, color: C.text, align: 'left' });
-        text("Fayl diskda xavfsiz qoladi.", 726, 400, { size: 16, color: C.red, align: 'left' });
-        ctx.restore();
-      });
+      const kMap = P(u, 0.8, 0.6);
+      withA(kMap, () => {
+        ctx.save(); ctx.translate(0, (1 - eo(kMap)) * 16);
 
-      const kC3 = P(u, 4.5, 0.5);
-      withA(kC3, () => {
-        ctx.save(); ctx.translate(0, (1 - eo(kC3)) * 16);
-        panel(1272, 140, 546, 500, C.blue, "3 · git mv Ishlating", "nomlash va ko'chirish", kC3, kC3);
-        card(1292, 255, 506, 170, { fill: 'rgba(79,140,255,0.08)', col: C.blue });
-        pill("Qulay Birlashma", 1370, 290, C.blue, { size: 16, mono: false });
-        text("Fayl nomini o'zgartirganda", 1312, 335, { size: 17, color: C.text, align: 'left' });
-        text("oddiy 'mv' emas, 'git mv' qiling.", 1312, 365, { size: 17, color: C.text, align: 'left' });
-        text("O'zgarish darhol stage bo'ladi.", 1312, 400, { size: 16, color: C.blue, align: 'left' });
+        // 3 blok
+        // Blok 1: .gitignore (x=140)
+        card(140, 260, 480, 210, { fill: 'rgba(255,209,102,0.10)', col: C.yellow, lw: 2 });
+        pill(".gitignore", 380, 305, C.yellow, { size: 20 });
+        text("Keraksizlarni Yashirish", 380, 350, { size: 18, weight: 700, color: C.text });
+        text("Faqat Untracked Fayllarga", 380, 385, { size: 15, fam: MONO, color: C.mute });
+        text("Ombor shishishidan saqlaydi", 380, 420, { size: 16, color: C.yellow, weight: 600 });
+
+        // Blok 2: git rm --cached (x=680)
+        card(680, 260, 560, 210, { fill: 'rgba(255,107,107,0.10)', col: C.red, lw: 2 });
+        pill("git rm va --cached", 960, 305, C.red, { size: 20 });
+        text("Ombordan Olib Tashlash", 960, 350, { size: 18, weight: 700, color: C.text });
+        text("Diskda Qoldirib, Gitdan Chiqarish", 960, 385, { size: 15, fam: MONO, color: C.mute });
+        text("Maxfiy .env xatolarining yechimi", 960, 420, { size: 16, color: C.red, weight: 600 });
+
+        // Blok 3: git mv (x=1300)
+        card(1300, 260, 480, 210, { fill: 'rgba(79,140,255,0.10)', col: C.blue, lw: 2 });
+        pill("git mv", 1540, 305, C.blue, { size: 20 });
+        text("Xavfsiz Ko'chirish va Nomlash", 1540, 350, { size: 18, weight: 700, color: C.text });
+        text("Tarixni Yo'qotmasdan Saqlash", 1540, 385, { size: 15, fam: MONO, color: C.mute });
+        text("Bitta buyruqda 3 ta amaliyot", 1540, 420, { size: 16, color: '#38bdf8', weight: 600 });
+
+        // Qo'shimcha qulay buyruqlar
+        card(140, 490, 1640, 125, { fill: 'rgba(15,22,48,0.92)', col: C.border });
+        pill("Qo'shimcha Qulay Buyruqlar", 300, 520, C.mute, { size: 16, mono: false });
+        text("• $ git check-ignore -v <fayl> -> Qaysi qoida to'sayotganini aniqlash", 170, 558, { size: 16, fam: MONO, color: '#38bdf8', align: 'left' });
+        text("• $ git status -s --ignored     -> Chetlab o'tilgan barcha fayllar ro'yxati (!!)", 170, 588, { size: 16, fam: MONO, color: C.green, align: 'left' });
+
         ctx.restore();
       });
 
       // Pastki xulosa banneri
-      const kFinal = P(u, 6.5, 0.5);
+      const kFinal = P(u, 4.0, 0.5);
       withA(kFinal, () => {
         ctx.save(); ctx.translate(0, (1 - eo(kFinal)) * 16);
         card(100, 670, 1720, 160, { fill: 'rgba(11,16,32,0.95)', col: C.git, lw: 2 });
         pill("Keyingi Bob: Tarixni Ko'rish (git log)", 960, 715, C.git, { size: 20, mono: false });
-        text("Keyingi 9-bobda loyihaning butun o'tmishi va har bir commitini ko'zdan kechiruvchi 'git log' qurolini o'rganamiz!", 960, 765, { size: 22, weight: 700, color: C.text });
-        text("Toza ombor, xavfsiz sozlamalar va tartibli loyiha — professional dasturchining belgisi.", 960, 800, { size: 18, color: C.mute });
+        text("Keyingi 9-bobda loyihaning butun o'tmishini chuqur tahlil qiluvchi git log buyrug'ini o'rganamiz!", 960, 765, { size: 22, weight: 700, color: C.text });
+        text("Toza gitignore, oqilona o'chirish va ko'chirish — professional loyiha poydevoridir.", 960, 800, { size: 18, color: C.mute });
         ctx.restore();
       });
     });
