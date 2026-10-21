@@ -1,0 +1,1104 @@
+[
+  {
+    "id": "l1",
+    "scene": "intro",
+    "text": "Salom! Ushbu o‘n to‘rtinchi bobda Git'ning eng tub asosi — kalit-qiymat ombori hamda birinchi g‘ishti bo‘lgan blob obyektini o‘rganamiz.",
+    "show": "Salom! Ushbu o‘n to‘rtinchi bobda Git'ning eng tub asosi — kalit-qiymat ombori hamda birinchi g‘ishti bo‘lgan blob obyektini o‘rganamiz.",
+    "say": "Salom! Ushbu o‘n to‘rtinchi bobda Git'ning eng tub asosi — kalit-qiymat ombori hamda birinchi g‘ishti bo‘lgan blob obyektini o‘rganamiz.",
+    "a0": 0.3,
+    "a1": 9.17,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.3,
+        "e": 0.56
+      },
+      {
+        "w": "Ushbu",
+        "s": 1.1,
+        "e": 1.32
+      },
+      {
+        "w": "o‘n",
+        "s": 1.4,
+        "e": 1.48
+      },
+      {
+        "w": "to‘rtinchi",
+        "s": 1.52,
+        "e": 1.92
+      },
+      {
+        "w": "bobda",
+        "s": 1.94,
+        "e": 2.26
+      },
+      {
+        "w": "Git'ning",
+        "s": 2.54,
+        "e": 2.9
+      },
+      {
+        "w": "eng",
+        "s": 3.04,
+        "e": 3.24
+      },
+      {
+        "w": "tub",
+        "s": 3.38,
+        "e": 3.56
+      },
+      {
+        "w": "asosi",
+        "s": 3.68,
+        "e": 4.1
+      },
+      {
+        "w": "—",
+        "s": 4.1,
+        "e": 4.1
+      },
+      {
+        "w": "kalit-qiymat",
+        "s": 4.54,
+        "e": 5.2
+      },
+      {
+        "w": "ombori",
+        "s": 5.32,
+        "e": 5.7
+      },
+      {
+        "w": "hamda",
+        "s": 5.76,
+        "e": 6.0
+      },
+      {
+        "w": "birinchi",
+        "s": 6.4,
+        "e": 6.76
+      },
+      {
+        "w": "g‘ishti",
+        "s": 6.8,
+        "e": 7.06
+      },
+      {
+        "w": "bo‘lgan",
+        "s": 7.1,
+        "e": 7.44
+      },
+      {
+        "w": "blob",
+        "s": 7.69,
+        "e": 7.95
+      },
+      {
+        "w": "obyektini",
+        "s": 8.05,
+        "e": 8.53
+      },
+      {
+        "w": "o‘rganamiz.",
+        "s": 8.75,
+        "e": 9.17
+      }
+    ]
+  },
+  {
+    "id": "l2",
+    "scene": "intro",
+    "text": "Git oddiy fayl tizimi emas, balki manzili o‘z mazmunidan kelib chiqadigan kontent-adreslanuvchi ma’lumotlar bazasidir.",
+    "show": "Git oddiy fayl tizimi emas, balki manzili o‘z mazmunidan kelib chiqadigan kontent-adreslanuvchi ma’lumotlar bazasidir.",
+    "say": "Git oddiy fayl tizimi emas, balki manzili o‘z mazmunidan kelib chiqadigan kontent-adreslanuvchi ma’lumotlar bazasidir.",
+    "a0": 9.97,
+    "a1": 17.09,
+    "words": [
+      {
+        "w": "Git",
+        "s": 9.97,
+        "e": 10.17
+      },
+      {
+        "w": "oddiy",
+        "s": 10.37,
+        "e": 10.61
+      },
+      {
+        "w": "fayl",
+        "s": 10.69,
+        "e": 10.93
+      },
+      {
+        "w": "tizimi",
+        "s": 10.97,
+        "e": 11.25
+      },
+      {
+        "w": "emas,",
+        "s": 11.31,
+        "e": 11.55
+      },
+      {
+        "w": "balki",
+        "s": 11.89,
+        "e": 12.15
+      },
+      {
+        "w": "manzili",
+        "s": 12.53,
+        "e": 12.97
+      },
+      {
+        "w": "o‘z",
+        "s": 13.11,
+        "e": 13.23
+      },
+      {
+        "w": "mazmunidan",
+        "s": 13.31,
+        "e": 13.85
+      },
+      {
+        "w": "kelib",
+        "s": 13.91,
+        "e": 14.11
+      },
+      {
+        "w": "chiqadigan",
+        "s": 14.13,
+        "e": 14.57
+      },
+      {
+        "w": "kontent-adreslanuvchi",
+        "s": 14.69,
+        "e": 15.97
+      },
+      {
+        "w": "ma’lumotlar",
+        "s": 16.03,
+        "e": 16.55
+      },
+      {
+        "w": "bazasidir.",
+        "s": 16.59,
+        "e": 17.09
+      }
+    ]
+  },
+  {
+    "id": "l3",
+    "scene": "hash_mohiyati",
+    "text": "Kalitning aynan mazmun hashidan olinishi bir xil fayllarning takrorlanmasligini va butunlik tekshiruvini tekin ta’minlaydi.",
+    "show": "Kalitning aynan mazmun hashidan olinishi bir xil fayllarning takrorlanmasligini va butunlik tekshiruvini tekin ta’minlaydi.",
+    "say": "Kalitning aynan mazmun heshidan olinishi bir xil fayllarning takrorlanmasligini va butunlik tekshiruvini tekin ta’minlaydi.",
+    "a0": 17.73,
+    "a1": 24.86,
+    "words": [
+      {
+        "w": "Kalitning",
+        "s": 17.73,
+        "e": 18.17
+      },
+      {
+        "w": "aynan",
+        "s": 18.55,
+        "e": 18.83
+      },
+      {
+        "w": "mazmun",
+        "s": 18.93,
+        "e": 19.27
+      },
+      {
+        "w": "heshidan",
+        "s": 19.33,
+        "e": 19.71
+      },
+      {
+        "w": "olinishi",
+        "s": 19.79,
+        "e": 20.19
+      },
+      {
+        "w": "bir",
+        "s": 20.39,
+        "e": 20.49
+      },
+      {
+        "w": "xil",
+        "s": 20.55,
+        "e": 20.71
+      },
+      {
+        "w": "fayllarning",
+        "s": 20.77,
+        "e": 21.37
+      },
+      {
+        "w": "takrorlanmasligini",
+        "s": 21.43,
+        "e": 22.35
+      },
+      {
+        "w": "va",
+        "s": 22.72,
+        "e": 22.78
+      },
+      {
+        "w": "butunlik",
+        "s": 22.86,
+        "e": 23.26
+      },
+      {
+        "w": "tekshiruvini",
+        "s": 23.3,
+        "e": 23.8
+      },
+      {
+        "w": "tekin",
+        "s": 23.98,
+        "e": 24.3
+      },
+      {
+        "w": "ta’minlaydi.",
+        "s": 24.34,
+        "e": 24.86
+      }
+    ]
+  },
+  {
+    "id": "l4",
+    "scene": "hash_mohiyati",
+    "text": "Git'da obyektlar bir marta yaratilgach hech qachon o‘zgarmaydi; biror bayt o‘zgarsa, u butunlay yangi obyektga aylanadi.",
+    "show": "Git'da obyektlar bir marta yaratilgach hech qachon o‘zgarmaydi; biror bayt o‘zgarsa, u butunlay yangi obyektga aylanadi.",
+    "say": "Git'da obyektlar bir marta yaratilgach hech qachon o‘zgarmaydi; biror bayt o‘zgarsa, u butunlay yangi obyektga aylanadi.",
+    "a0": 25.68,
+    "a1": 32.26,
+    "words": [
+      {
+        "w": "Git'da",
+        "s": 25.68,
+        "e": 25.9
+      },
+      {
+        "w": "obyektlar",
+        "s": 25.98,
+        "e": 26.38
+      },
+      {
+        "w": "bir",
+        "s": 26.46,
+        "e": 26.56
+      },
+      {
+        "w": "marta",
+        "s": 26.6,
+        "e": 26.84
+      },
+      {
+        "w": "yaratilgach",
+        "s": 26.88,
+        "e": 27.38
+      },
+      {
+        "w": "hech",
+        "s": 27.7,
+        "e": 27.92
+      },
+      {
+        "w": "qachon",
+        "s": 27.94,
+        "e": 28.18
+      },
+      {
+        "w": "o‘zgarmaydi;",
+        "s": 28.18,
+        "e": 29.18
+      },
+      {
+        "w": "biror",
+        "s": 29.18,
+        "e": 29.42
+      },
+      {
+        "w": "bayt",
+        "s": 29.48,
+        "e": 29.7
+      },
+      {
+        "w": "o‘zgarsa,",
+        "s": 29.76,
+        "e": 30.14
+      },
+      {
+        "w": "u",
+        "s": 30.5,
+        "e": 30.52
+      },
+      {
+        "w": "butunlay",
+        "s": 30.6,
+        "e": 31.02
+      },
+      {
+        "w": "yangi",
+        "s": 31.12,
+        "e": 31.42
+      },
+      {
+        "w": "obyektga",
+        "s": 31.5,
+        "e": 31.86
+      },
+      {
+        "w": "aylanadi.",
+        "s": 31.9,
+        "e": 32.26
+      }
+    ]
+  },
+  {
+    "id": "l5",
+    "scene": "hash_object_cat_file",
+    "text": "Git hash-object buyrug‘i xom ma’lumotni omborga blob sifatida yozadi, git cat-file esa uni qulay o‘qib beradi.",
+    "show": "Git hash-object buyrug‘i xom ma’lumotni omborga blob sifatida yozadi, git cat-file esa uni qulay o‘qib beradi.",
+    "say": "Git hesh-obyekt buyrug‘i xom ma’lumotni omborga blob sifatida yozadi, git ket-fayl esa uni qulay o‘qib beradi.",
+    "a0": 33.32,
+    "a1": 40.13,
+    "words": [
+      {
+        "w": "Git",
+        "s": 33.32,
+        "e": 33.48
+      },
+      {
+        "w": "hesh-obyekt",
+        "s": 33.62,
+        "e": 34.2
+      },
+      {
+        "w": "buyrug‘i",
+        "s": 34.26,
+        "e": 34.58
+      },
+      {
+        "w": "xom",
+        "s": 34.72,
+        "e": 34.9
+      },
+      {
+        "w": "ma’lumotni",
+        "s": 34.94,
+        "e": 35.44
+      },
+      {
+        "w": "omborga",
+        "s": 35.52,
+        "e": 35.94
+      },
+      {
+        "w": "blob",
+        "s": 36.26,
+        "e": 36.48
+      },
+      {
+        "w": "sifatida",
+        "s": 36.54,
+        "e": 36.9
+      },
+      {
+        "w": "yozadi,",
+        "s": 36.96,
+        "e": 37.3
+      },
+      {
+        "w": "git",
+        "s": 37.75,
+        "e": 37.93
+      },
+      {
+        "w": "ket-fayl",
+        "s": 38.01,
+        "e": 38.59
+      },
+      {
+        "w": "esa",
+        "s": 38.69,
+        "e": 38.89
+      },
+      {
+        "w": "uni",
+        "s": 39.05,
+        "e": 39.21
+      },
+      {
+        "w": "qulay",
+        "s": 39.29,
+        "e": 39.55
+      },
+      {
+        "w": "o‘qib",
+        "s": 39.65,
+        "e": 39.83
+      },
+      {
+        "w": "beradi.",
+        "s": 39.85,
+        "e": 40.13
+      }
+    ]
+  },
+  {
+    "id": "l6",
+    "scene": "hash_object_cat_file",
+    "text": "cat-file minus t orqali obyekt turini, minus s bilan hajmini, minus p bilan esa uning to‘liq mazmunini ko‘ramiz.",
+    "show": "cat-file minus t orqali obyekt turini, minus s bilan hajmini, minus p bilan esa uning to‘liq mazmunini ko‘ramiz.",
+    "say": "Ket-fayl minus ti orqali obyekt turini, minus es bilan hajmini, minus pi bilan esa uning to‘liq mazmunini ko‘ramiz.",
+    "a0": 40.79,
+    "a1": 47.39,
+    "words": [
+      {
+        "w": "Ket-fayl",
+        "s": 40.79,
+        "e": 41.23
+      },
+      {
+        "w": "minus",
+        "s": 41.31,
+        "e": 41.57
+      },
+      {
+        "w": "ti",
+        "s": 41.63,
+        "e": 41.73
+      },
+      {
+        "w": "orqali",
+        "s": 41.85,
+        "e": 42.17
+      },
+      {
+        "w": "obyekt",
+        "s": 42.29,
+        "e": 42.61
+      },
+      {
+        "w": "turini,",
+        "s": 42.65,
+        "e": 42.99
+      },
+      {
+        "w": "minus",
+        "s": 43.35,
+        "e": 43.59
+      },
+      {
+        "w": "es",
+        "s": 43.71,
+        "e": 43.83
+      },
+      {
+        "w": "bilan",
+        "s": 43.87,
+        "e": 44.09
+      },
+      {
+        "w": "hajmini,",
+        "s": 44.19,
+        "e": 44.61
+      },
+      {
+        "w": "minus",
+        "s": 44.97,
+        "e": 45.23
+      },
+      {
+        "w": "pi",
+        "s": 45.29,
+        "e": 45.39
+      },
+      {
+        "w": "bilan",
+        "s": 45.47,
+        "e": 45.65
+      },
+      {
+        "w": "esa",
+        "s": 45.71,
+        "e": 45.85
+      },
+      {
+        "w": "uning",
+        "s": 45.93,
+        "e": 46.13
+      },
+      {
+        "w": "to‘liq",
+        "s": 46.21,
+        "e": 46.49
+      },
+      {
+        "w": "mazmunini",
+        "s": 46.57,
+        "e": 47.03
+      },
+      {
+        "w": "ko‘ramiz.",
+        "s": 47.07,
+        "e": 47.39
+      }
+    ]
+  },
+  {
+    "id": "l7",
+    "scene": "obyekt_ichki_tuzilishi",
+    "text": "Diskdagi har bir obyekt zlib bilan siqilgan bo‘lib, ichida tur, hajm, bo‘sh bayt va haqiqiy kontent saqlanadi.",
+    "show": "Diskdagi har bir obyekt zlib bilan siqilgan bo‘lib, ichida tur, hajm, bo‘sh bayt va haqiqiy kontent saqlanadi.",
+    "say": "Diskdagi har bir obyekt zet-lib bilan siqilgan bo‘lib, ichida tur, hajm, bo‘sh bayt va haqiqiy kontent saqlanadi.",
+    "a0": 48.39,
+    "a1": 55.24,
+    "words": [
+      {
+        "w": "Diskdagi",
+        "s": 48.39,
+        "e": 48.77
+      },
+      {
+        "w": "har",
+        "s": 48.85,
+        "e": 48.99
+      },
+      {
+        "w": "bir",
+        "s": 49.03,
+        "e": 49.13
+      },
+      {
+        "w": "obyekt",
+        "s": 49.19,
+        "e": 49.55
+      },
+      {
+        "w": "zet-lib",
+        "s": 49.73,
+        "e": 50.13
+      },
+      {
+        "w": "bilan",
+        "s": 50.15,
+        "e": 50.37
+      },
+      {
+        "w": "siqilgan",
+        "s": 50.45,
+        "e": 50.89
+      },
+      {
+        "w": "bo‘lib,",
+        "s": 50.93,
+        "e": 51.15
+      },
+      {
+        "w": "ichida",
+        "s": 51.45,
+        "e": 51.73
+      },
+      {
+        "w": "tur,",
+        "s": 51.93,
+        "e": 52.15
+      },
+      {
+        "w": "hajm,",
+        "s": 52.45,
+        "e": 52.82
+      },
+      {
+        "w": "bo‘sh",
+        "s": 53.02,
+        "e": 53.24
+      },
+      {
+        "w": "bayt",
+        "s": 53.28,
+        "e": 53.46
+      },
+      {
+        "w": "va",
+        "s": 53.52,
+        "e": 53.58
+      },
+      {
+        "w": "haqiqiy",
+        "s": 53.88,
+        "e": 54.26
+      },
+      {
+        "w": "kontent",
+        "s": 54.36,
+        "e": 54.78
+      },
+      {
+        "w": "saqlanadi.",
+        "s": 54.8,
+        "e": 55.24
+      }
+    ]
+  },
+  {
+    "id": "l8",
+    "scene": "obyekt_ichki_tuzilishi",
+    "text": "Fayl tizimini sekinlashuvdan asrash uchun qirq belgili hashning dastlabki ikki belgisi papka, qolgani fayl nomi qilinadi.",
+    "show": "Fayl tizimini sekinlashuvdan asrash uchun qirq belgili hashning dastlabki ikki belgisi papka, qolgani fayl nomi qilinadi.",
+    "say": "Fayl tizimini sekinlashuvdan asrash uchun qirq belgili heshning dastlabki ikki belgisi papka, qolgani fayl nomi qilinadi.",
+    "a0": 56.0,
+    "a1": 62.7,
+    "words": [
+      {
+        "w": "Fayl",
+        "s": 56.0,
+        "e": 56.24
+      },
+      {
+        "w": "tizimini",
+        "s": 56.3,
+        "e": 56.68
+      },
+      {
+        "w": "sekinlashuvdan",
+        "s": 56.72,
+        "e": 57.38
+      },
+      {
+        "w": "asrash",
+        "s": 57.42,
+        "e": 57.68
+      },
+      {
+        "w": "uchun",
+        "s": 57.7,
+        "e": 57.88
+      },
+      {
+        "w": "qirq",
+        "s": 58.18,
+        "e": 58.34
+      },
+      {
+        "w": "belgili",
+        "s": 58.4,
+        "e": 58.7
+      },
+      {
+        "w": "heshning",
+        "s": 58.78,
+        "e": 59.18
+      },
+      {
+        "w": "dastlabki",
+        "s": 59.28,
+        "e": 59.72
+      },
+      {
+        "w": "ikki",
+        "s": 59.8,
+        "e": 60.0
+      },
+      {
+        "w": "belgisi",
+        "s": 60.06,
+        "e": 60.44
+      },
+      {
+        "w": "papka,",
+        "s": 60.56,
+        "e": 60.88
+      },
+      {
+        "w": "qolgani",
+        "s": 61.24,
+        "e": 61.64
+      },
+      {
+        "w": "fayl",
+        "s": 61.74,
+        "e": 62.04
+      },
+      {
+        "w": "nomi",
+        "s": 62.12,
+        "e": 62.34
+      },
+      {
+        "w": "qilinadi.",
+        "s": 62.36,
+        "e": 62.7
+      }
+    ]
+  },
+  {
+    "id": "l9",
+    "scene": "qolda_hash_hisoblash",
+    "text": "Git hashi shunchaki fayl hashi emas, balki maxsus sarlavha va mazmunning birgalikdagi SHA-1 natijasidir.",
+    "show": "Git hashi shunchaki fayl hashi emas, balki maxsus sarlavha va mazmunning birgalikdagi SHA-1 natijasidir.",
+    "say": "Git heshi shunchaki fayl heshi emas, balki maxsus sarlavha va mazmunning birgalikdagi sha bir natijasidir.",
+    "a0": 63.56,
+    "a1": 69.33,
+    "words": [
+      {
+        "w": "Git",
+        "s": 63.56,
+        "e": 63.7
+      },
+      {
+        "w": "heshi",
+        "s": 63.74,
+        "e": 63.98
+      },
+      {
+        "w": "shunchaki",
+        "s": 64.04,
+        "e": 64.4
+      },
+      {
+        "w": "fayl",
+        "s": 64.46,
+        "e": 64.7
+      },
+      {
+        "w": "heshi",
+        "s": 64.74,
+        "e": 64.94
+      },
+      {
+        "w": "emas,",
+        "s": 65.0,
+        "e": 65.24
+      },
+      {
+        "w": "balki",
+        "s": 65.56,
+        "e": 65.78
+      },
+      {
+        "w": "maxsus",
+        "s": 65.92,
+        "e": 66.26
+      },
+      {
+        "w": "sarlavha",
+        "s": 66.3,
+        "e": 66.74
+      },
+      {
+        "w": "va",
+        "s": 66.78,
+        "e": 66.84
+      },
+      {
+        "w": "mazmunning",
+        "s": 66.92,
+        "e": 67.46
+      },
+      {
+        "w": "birgalikdagi",
+        "s": 67.57,
+        "e": 68.17
+      },
+      {
+        "w": "sha",
+        "s": 68.29,
+        "e": 68.41
+      },
+      {
+        "w": "bir",
+        "s": 68.59,
+        "e": 68.69
+      },
+      {
+        "w": "natijasidir.",
+        "s": 68.75,
+        "e": 69.33
+      }
+    ]
+  },
+  {
+    "id": "l10",
+    "scene": "qolda_hash_hisoblash",
+    "text": "Shu sababli oddiy terminaldagi hash hisoblash buyrug‘i Git natijasiga teng bo‘lishi uchun unga sarlavha qo‘shish shart.",
+    "show": "Shu sababli oddiy terminaldagi hash hisoblash buyrug‘i Git natijasiga teng bo‘lishi uchun unga sarlavha qo‘shish shart.",
+    "say": "Shu sababli oddiy terminaldagi hesh hisoblash buyrug‘i Git natijasiga teng bo‘lishi uchun unga sarlavha qo‘shish shart.",
+    "a0": 69.87,
+    "a1": 76.41,
+    "words": [
+      {
+        "w": "Shu",
+        "s": 69.87,
+        "e": 69.93
+      },
+      {
+        "w": "sababli",
+        "s": 69.97,
+        "e": 70.29
+      },
+      {
+        "w": "oddiy",
+        "s": 70.69,
+        "e": 70.93
+      },
+      {
+        "w": "terminaldagi",
+        "s": 70.99,
+        "e": 71.61
+      },
+      {
+        "w": "hesh",
+        "s": 71.71,
+        "e": 71.95
+      },
+      {
+        "w": "hisoblash",
+        "s": 71.97,
+        "e": 72.39
+      },
+      {
+        "w": "buyrug‘i",
+        "s": 72.43,
+        "e": 72.77
+      },
+      {
+        "w": "Git",
+        "s": 73.15,
+        "e": 73.29
+      },
+      {
+        "w": "natijasiga",
+        "s": 73.35,
+        "e": 73.87
+      },
+      {
+        "w": "teng",
+        "s": 73.95,
+        "e": 74.15
+      },
+      {
+        "w": "bo‘lishi",
+        "s": 74.17,
+        "e": 74.43
+      },
+      {
+        "w": "uchun",
+        "s": 74.47,
+        "e": 74.65
+      },
+      {
+        "w": "unga",
+        "s": 74.77,
+        "e": 74.99
+      },
+      {
+        "w": "sarlavha",
+        "s": 75.25,
+        "e": 75.69
+      },
+      {
+        "w": "qo‘shish",
+        "s": 75.77,
+        "e": 76.11
+      },
+      {
+        "w": "shart.",
+        "s": 76.17,
+        "e": 76.41
+      }
+    ]
+  },
+  {
+    "id": "l11",
+    "scene": "xulosa",
+    "text": "Blob fayl mazmunini saqlaydi, lekin unda fayl nomi va katalog tuzilishi yo‘q; ular keyingi bobda tree obyektida joylashadi.",
+    "show": "Blob fayl mazmunini saqlaydi, lekin unda fayl nomi va katalog tuzilishi yo‘q; ular keyingi bobda tree obyektida joylashadi.",
+    "say": "Blob fayl mazmunini saqlaydi, lekin unda fayl nomi va katalog tuzilishi yo‘q; ular keyingi bobda tri obyektida joylashadi.",
+    "a0": 77.29,
+    "a1": 85.04,
+    "words": [
+      {
+        "w": "Blob",
+        "s": 77.29,
+        "e": 77.53
+      },
+      {
+        "w": "fayl",
+        "s": 77.89,
+        "e": 78.13
+      },
+      {
+        "w": "mazmunini",
+        "s": 78.19,
+        "e": 78.61
+      },
+      {
+        "w": "saqlaydi,",
+        "s": 78.65,
+        "e": 79.07
+      },
+      {
+        "w": "lekin",
+        "s": 79.21,
+        "e": 79.39
+      },
+      {
+        "w": "unda",
+        "s": 79.43,
+        "e": 79.59
+      },
+      {
+        "w": "fayl",
+        "s": 79.91,
+        "e": 80.17
+      },
+      {
+        "w": "nomi",
+        "s": 80.25,
+        "e": 80.55
+      },
+      {
+        "w": "va",
+        "s": 80.67,
+        "e": 80.75
+      },
+      {
+        "w": "katalog",
+        "s": 80.91,
+        "e": 81.31
+      },
+      {
+        "w": "tuzilishi",
+        "s": 81.35,
+        "e": 81.73
+      },
+      {
+        "w": "yo‘q;",
+        "s": 81.73,
+        "e": 82.43
+      },
+      {
+        "w": "ular",
+        "s": 82.43,
+        "e": 82.64
+      },
+      {
+        "w": "keyingi",
+        "s": 82.72,
+        "e": 83.1
+      },
+      {
+        "w": "bobda",
+        "s": 83.18,
+        "e": 83.48
+      },
+      {
+        "w": "tri",
+        "s": 83.74,
+        "e": 83.92
+      },
+      {
+        "w": "obyektida",
+        "s": 84.06,
+        "e": 84.52
+      },
+      {
+        "w": "joylashadi.",
+        "s": 84.56,
+        "e": 85.04
+      }
+    ]
+  },
+  {
+    "id": "l12",
+    "scene": "xulosa",
+    "text": "Keyingi o‘n beshinchi bobda aynan papkalar tuzilishini saqlovchi tree obyektlari va index bilan amaliy tanishamiz.",
+    "show": "Keyingi o‘n beshinchi bobda aynan papkalar tuzilishini saqlovchi tree obyektlari va index bilan amaliy tanishamiz.",
+    "say": "Keyingi o‘n beshinchi bobda aynan papkalar tuzilishini saqlovchi tri obyektlari va indeks bilan amaliy tanishamiz.",
+    "a0": 85.78,
+    "a1": 91.76,
+    "words": [
+      {
+        "w": "Keyingi",
+        "s": 85.78,
+        "e": 86.08
+      },
+      {
+        "w": "o‘n",
+        "s": 86.14,
+        "e": 86.22
+      },
+      {
+        "w": "beshinchi",
+        "s": 86.24,
+        "e": 86.54
+      },
+      {
+        "w": "bobda",
+        "s": 86.56,
+        "e": 86.78
+      },
+      {
+        "w": "aynan",
+        "s": 87.1,
+        "e": 87.32
+      },
+      {
+        "w": "papkalar",
+        "s": 87.42,
+        "e": 87.86
+      },
+      {
+        "w": "tuzilishini",
+        "s": 87.88,
+        "e": 88.3
+      },
+      {
+        "w": "saqlovchi",
+        "s": 88.34,
+        "e": 88.78
+      },
+      {
+        "w": "tri",
+        "s": 88.94,
+        "e": 89.1
+      },
+      {
+        "w": "obyektlari",
+        "s": 89.26,
+        "e": 89.76
+      },
+      {
+        "w": "va",
+        "s": 89.8,
+        "e": 89.88
+      },
+      {
+        "w": "indeks",
+        "s": 90.22,
+        "e": 90.53
+      },
+      {
+        "w": "bilan",
+        "s": 90.55,
+        "e": 90.77
+      },
+      {
+        "w": "amaliy",
+        "s": 90.95,
+        "e": 91.25
+      },
+      {
+        "w": "tanishamiz.",
+        "s": 91.29,
+        "e": 91.76
+      }
+    ]
+  }
+]

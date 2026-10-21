@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" playsinline poster="/video/git/14-obyektlar-blob.jpg" src="/video/git/14-obyektlar-blob.mp4">
+    <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/git/14-obyektlar-blob.chapters.vtt" default>
+    <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/git/14-obyektlar-blob.uz.vtt">
+  </video>
+  <figcaption>14.1-video. Obyektlar: blob va hash</figcaption>
+</figure>
+
 Git'ning eng ichki qatlami — juda oddiy **kalit-qiymat ombori** (key-value store). Unga istalgan baytlarni berasiz, Git ularni saqlab qo'yadi va sizga **kalit** qaytaradi. Keyin shu kalit bilan baytlarni aynan o'sha holida qaytarib olasiz.
 
 Muhim jihati: kalitni siz tanlamaysiz va Git ham tasodifiy tanlamaydi. Kalit — **saqlanayotgan kontentning o'zidan hisoblangan hash**. Shuning uchun Pro Git Git'ni **content-addressable filesystem** deb ataydi: "manzili mazmunidan kelib chiqadigan fayl tizimi". Kutubxonaga o'xshatsak: kitobga javon raqami emas, kitob matnining "barmoq izi" yopishtiriladi. Bir xil matnli ikki kitob — bitta barmoq izi, bitta joy.
