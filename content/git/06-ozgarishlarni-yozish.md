@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" playsinline poster="/video/git/06-ozgarishlarni-yozish.jpg" src="/video/git/06-ozgarishlarni-yozish.mp4">
+    <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/git/06-ozgarishlarni-yozish.chapters.vtt" default>
+    <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/git/06-ozgarishlarni-yozish.uz.vtt">
+  </video>
+  <figcaption>06.1-video. O'zgarishlarni yozish: status, add, commit</figcaption>
+</figure>
+
 [5-bobda](05-uch-holat.md) uch hududni ko'rdik: **working tree** (diskdagi fayllar), **index** yoki staging area (keyingi commit qoralamasi, `.git/index`) va **repository** (commit'lar bazasi, `.git`). Kundalik ishning 90 foizi shu uchlik orasida uchta buyruq bilan o'tadi:
 
 | Buyruq | Savol yoki amal | Hududlar |
