@@ -1,0 +1,1149 @@
+[
+  {
+    "id": "l1",
+    "scene": "intro",
+    "text": "Salom! Ushbu o‘ninchi bobda namunali va professional kommit yaratish madaniyati hamda uning uch asosiy ustunini o‘rganamiz.",
+    "show": "Salom! Ushbu o‘ninchi bobda namunali va professional kommit yaratish madaniyati hamda uning uch asosiy ustunini o‘rganamiz.",
+    "say": "Salom! Ushbu o‘ninchi bobda namunali va professional kommit yaratish madaniyati hamda uning uch asosiy ustunini o‘rganamiz.",
+    "a0": 0.22,
+    "a1": 7.4,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.22,
+        "e": 0.48
+      },
+      {
+        "w": "Ushbu",
+        "s": 0.92,
+        "e": 1.16
+      },
+      {
+        "w": "o‘ninchi",
+        "s": 1.28,
+        "e": 1.58
+      },
+      {
+        "w": "bobda",
+        "s": 1.62,
+        "e": 1.92
+      },
+      {
+        "w": "namunali",
+        "s": 2.14,
+        "e": 2.68
+      },
+      {
+        "w": "va",
+        "s": 2.8,
+        "e": 2.88
+      },
+      {
+        "w": "professional",
+        "s": 3.02,
+        "e": 3.68
+      },
+      {
+        "w": "kommit",
+        "s": 3.76,
+        "e": 4.04
+      },
+      {
+        "w": "yaratish",
+        "s": 4.1,
+        "e": 4.44
+      },
+      {
+        "w": "madaniyati",
+        "s": 4.48,
+        "e": 5.02
+      },
+      {
+        "w": "hamda",
+        "s": 5.16,
+        "e": 5.42
+      },
+      {
+        "w": "uning",
+        "s": 5.5,
+        "e": 5.7
+      },
+      {
+        "w": "uch",
+        "s": 5.8,
+        "e": 5.94
+      },
+      {
+        "w": "asosiy",
+        "s": 6.08,
+        "e": 6.48
+      },
+      {
+        "w": "ustunini",
+        "s": 6.58,
+        "e": 6.96
+      },
+      {
+        "w": "o‘rganamiz.",
+        "s": 7.0,
+        "e": 7.4
+      }
+    ]
+  },
+  {
+    "id": "l2",
+    "scene": "intro",
+    "text": "Git har qanday kommitni qabul qilaveradi, lekin yaxshi kommit kelajakdagi insonlar va avtomatlashtirilgan asboblar uchun xizmat qiladi.",
+    "show": "Git har qanday kommitni qabul qilaveradi, lekin yaxshi kommit kelajakdagi insonlar va avtomatlashtirilgan asboblar uchun xizmat qiladi.",
+    "say": "Git har qanday kommitni qabul qilaveradi, lekin yaxshi kommit kelajakdagi insonlar va avtomatlashtirilgan asboblar uchun xizmat qiladi.",
+    "a0": 8.17,
+    "a1": 15.31,
+    "words": [
+      {
+        "w": "Git",
+        "s": 8.17,
+        "e": 8.33
+      },
+      {
+        "w": "har",
+        "s": 8.41,
+        "e": 8.55
+      },
+      {
+        "w": "qanday",
+        "s": 8.59,
+        "e": 8.81
+      },
+      {
+        "w": "kommitni",
+        "s": 8.85,
+        "e": 9.23
+      },
+      {
+        "w": "qabul",
+        "s": 9.29,
+        "e": 9.53
+      },
+      {
+        "w": "qilaveradi,",
+        "s": 9.57,
+        "e": 10.03
+      },
+      {
+        "w": "lekin",
+        "s": 10.07,
+        "e": 10.31
+      },
+      {
+        "w": "yaxshi",
+        "s": 10.75,
+        "e": 11.05
+      },
+      {
+        "w": "kommit",
+        "s": 11.11,
+        "e": 11.43
+      },
+      {
+        "w": "kelajakdagi",
+        "s": 11.81,
+        "e": 12.35
+      },
+      {
+        "w": "insonlar",
+        "s": 12.39,
+        "e": 12.85
+      },
+      {
+        "w": "va",
+        "s": 12.91,
+        "e": 12.97
+      },
+      {
+        "w": "avtomatlashtirilgan",
+        "s": 13.07,
+        "e": 13.97
+      },
+      {
+        "w": "asboblar",
+        "s": 14.05,
+        "e": 14.47
+      },
+      {
+        "w": "uchun",
+        "s": 14.53,
+        "e": 14.69
+      },
+      {
+        "w": "xizmat",
+        "s": 14.77,
+        "e": 15.05
+      },
+      {
+        "w": "qiladi.",
+        "s": 15.07,
+        "e": 15.31
+      }
+    ]
+  },
+  {
+    "id": "l3",
+    "scene": "toza_ozgarish",
+    "text": "Birinchi talab — toza o‘zgarish: qator oxiridagi keraksiz bo‘shliqlar va format xatolari diffni ifloslantirmasligi lozim.",
+    "show": "Birinchi talab — toza o‘zgarish: qator oxiridagi keraksiz bo‘shliqlar va format xatolari diffni ifloslantirmasligi lozim.",
+    "say": "Birinchi talab — toza o‘zgarish: qator oxiridagi keraksiz bo‘shliqlar va format xatolari diffni ifloslantirmasligi lozim.",
+    "a0": 15.91,
+    "a1": 22.9,
+    "words": [
+      {
+        "w": "Birinchi",
+        "s": 15.91,
+        "e": 16.21
+      },
+      {
+        "w": "talab",
+        "s": 16.23,
+        "e": 16.47
+      },
+      {
+        "w": "—",
+        "s": 16.47,
+        "e": 16.47
+      },
+      {
+        "w": "toza",
+        "s": 16.85,
+        "e": 17.11
+      },
+      {
+        "w": "o‘zgarish:",
+        "s": 17.19,
+        "e": 17.61
+      },
+      {
+        "w": "qator",
+        "s": 18.13,
+        "e": 18.43
+      },
+      {
+        "w": "oxiridagi",
+        "s": 18.51,
+        "e": 18.91
+      },
+      {
+        "w": "keraksiz",
+        "s": 18.97,
+        "e": 19.41
+      },
+      {
+        "w": "bo‘shliqlar",
+        "s": 19.47,
+        "e": 19.95
+      },
+      {
+        "w": "va",
+        "s": 20.01,
+        "e": 20.09
+      },
+      {
+        "w": "format",
+        "s": 20.17,
+        "e": 20.51
+      },
+      {
+        "w": "xatolari",
+        "s": 20.55,
+        "e": 21.01
+      },
+      {
+        "w": "diffni",
+        "s": 21.39,
+        "e": 21.67
+      },
+      {
+        "w": "ifloslantirmasligi",
+        "s": 21.71,
+        "e": 22.62
+      },
+      {
+        "w": "lozim.",
+        "s": 22.66,
+        "e": 22.9
+      }
+    ]
+  },
+  {
+    "id": "l4",
+    "scene": "toza_ozgarish",
+    "text": "Git diff chek buyrug‘i bo‘sh joy xatolarini darhol ko‘rsatadi, pre-kommit xuk esa bunday xatolarning omborga kirishini avtomatik to‘xtatadi.",
+    "show": "Git diff chek buyrug‘i bo‘sh joy xatolarini darhol ko‘rsatadi, pre-kommit xuk esa bunday xatolarning omborga kirishini avtomatik to‘xtatadi.",
+    "say": "Git diff chek buyrug‘i bo‘sh joy xatolarini darhol ko‘rsatadi, pri-kommit huk esa bunday xatolarning omborga kirishini avtomatik to‘xtatadi.",
+    "a0": 23.56,
+    "a1": 31.54,
+    "words": [
+      {
+        "w": "Git",
+        "s": 23.56,
+        "e": 23.74
+      },
+      {
+        "w": "diff",
+        "s": 23.86,
+        "e": 24.04
+      },
+      {
+        "w": "chek",
+        "s": 24.16,
+        "e": 24.38
+      },
+      {
+        "w": "buyrug‘i",
+        "s": 24.46,
+        "e": 24.8
+      },
+      {
+        "w": "bo‘sh",
+        "s": 25.12,
+        "e": 25.32
+      },
+      {
+        "w": "joy",
+        "s": 25.32,
+        "e": 25.48
+      },
+      {
+        "w": "xatolarini",
+        "s": 25.5,
+        "e": 26.0
+      },
+      {
+        "w": "darhol",
+        "s": 26.08,
+        "e": 26.44
+      },
+      {
+        "w": "ko‘rsatadi,",
+        "s": 26.48,
+        "e": 26.92
+      },
+      {
+        "w": "pri-kommit",
+        "s": 27.6,
+        "e": 28.1
+      },
+      {
+        "w": "huk",
+        "s": 28.18,
+        "e": 28.36
+      },
+      {
+        "w": "esa",
+        "s": 28.44,
+        "e": 28.6
+      },
+      {
+        "w": "bunday",
+        "s": 28.68,
+        "e": 28.92
+      },
+      {
+        "w": "xatolarning",
+        "s": 28.96,
+        "e": 29.5
+      },
+      {
+        "w": "omborga",
+        "s": 29.58,
+        "e": 29.94
+      },
+      {
+        "w": "kirishini",
+        "s": 29.94,
+        "e": 30.3
+      },
+      {
+        "w": "avtomatik",
+        "s": 30.62,
+        "e": 31.06
+      },
+      {
+        "w": "to‘xtatadi.",
+        "s": 31.12,
+        "e": 31.54
+      }
+    ]
+  },
+  {
+    "id": "l5",
+    "scene": "atomar_commit",
+    "text": "Ikkinchi ustun — atomar kommit: bitta katta kommit ichiga bir haftalik turli ishlarni qorishtirish qat’iyan tavsiya etilmaydi.",
+    "show": "Ikkinchi ustun — atomar kommit: bitta katta kommit ichiga bir haftalik turli ishlarni qorishtirish qat’iyan tavsiya etilmaydi.",
+    "say": "Ikkinchi ustun — atomar kommit: bitta katta kommit ichiga bir haftalik turli ishlarni qorishtirish qat’iyan tavsiya etilmaydi.",
+    "a0": 32.62,
+    "a1": 39.23,
+    "words": [
+      {
+        "w": "Ikkinchi",
+        "s": 32.62,
+        "e": 32.94
+      },
+      {
+        "w": "ustun",
+        "s": 33.0,
+        "e": 33.28
+      },
+      {
+        "w": "—",
+        "s": 33.28,
+        "e": 33.28
+      },
+      {
+        "w": "atomar",
+        "s": 33.6,
+        "e": 34.0
+      },
+      {
+        "w": "kommit:",
+        "s": 34.04,
+        "e": 34.32
+      },
+      {
+        "w": "bitta",
+        "s": 35.0,
+        "e": 35.24
+      },
+      {
+        "w": "katta",
+        "s": 35.3,
+        "e": 35.54
+      },
+      {
+        "w": "kommit",
+        "s": 35.6,
+        "e": 35.86
+      },
+      {
+        "w": "ichiga",
+        "s": 35.9,
+        "e": 36.14
+      },
+      {
+        "w": "bir",
+        "s": 36.22,
+        "e": 36.32
+      },
+      {
+        "w": "haftalik",
+        "s": 36.36,
+        "e": 36.76
+      },
+      {
+        "w": "turli",
+        "s": 36.78,
+        "e": 37.02
+      },
+      {
+        "w": "ishlarni",
+        "s": 37.08,
+        "e": 37.44
+      },
+      {
+        "w": "qorishtirish",
+        "s": 37.48,
+        "e": 37.97
+      },
+      {
+        "w": "qat’iyan",
+        "s": 37.99,
+        "e": 38.47
+      },
+      {
+        "w": "tavsiya",
+        "s": 38.51,
+        "e": 38.81
+      },
+      {
+        "w": "etilmaydi.",
+        "s": 38.85,
+        "e": 39.23
+      }
+    ]
+  },
+  {
+    "id": "l6",
+    "scene": "atomar_commit",
+    "text": "Git add minus p yordamida bitta fayl ichidagi mustaqil o‘zgarishlarni bo‘laklarga ajratib, alohida stage qilish mumkin.",
+    "show": "Git add minus p yordamida bitta fayl ichidagi mustaqil o‘zgarishlarni bo‘laklarga ajratib, alohida stage qilish mumkin.",
+    "say": "Git add minus p yordamida bitta fayl ichidagi mustaqil o‘zgarishlarni bo‘laklarga ajratib, alohida steyj qilish mumkin.",
+    "a0": 40.01,
+    "a1": 46.47,
+    "words": [
+      {
+        "w": "Git",
+        "s": 40.01,
+        "e": 40.17
+      },
+      {
+        "w": "add",
+        "s": 40.29,
+        "e": 40.43
+      },
+      {
+        "w": "minus",
+        "s": 40.51,
+        "e": 40.75
+      },
+      {
+        "w": "p",
+        "s": 40.85,
+        "e": 40.87
+      },
+      {
+        "w": "yordamida",
+        "s": 40.93,
+        "e": 41.51
+      },
+      {
+        "w": "bitta",
+        "s": 41.61,
+        "e": 41.87
+      },
+      {
+        "w": "fayl",
+        "s": 41.93,
+        "e": 42.17
+      },
+      {
+        "w": "ichidagi",
+        "s": 42.21,
+        "e": 42.53
+      },
+      {
+        "w": "mustaqil",
+        "s": 42.59,
+        "e": 42.99
+      },
+      {
+        "w": "o‘zgarishlarni",
+        "s": 43.03,
+        "e": 43.63
+      },
+      {
+        "w": "bo‘laklarga",
+        "s": 43.99,
+        "e": 44.51
+      },
+      {
+        "w": "ajratib,",
+        "s": 44.59,
+        "e": 44.99
+      },
+      {
+        "w": "alohida",
+        "s": 45.29,
+        "e": 45.67
+      },
+      {
+        "w": "steyj",
+        "s": 45.73,
+        "e": 45.95
+      },
+      {
+        "w": "qilish",
+        "s": 46.01,
+        "e": 46.21
+      },
+      {
+        "w": "mumkin.",
+        "s": 46.23,
+        "e": 46.47
+      }
+    ]
+  },
+  {
+    "id": "l7",
+    "scene": "xabar_tuzilishi",
+    "text": "Uchinchi ustun — xabar tuzilishi: ellik belgigacha bo‘lgan buyruq maylidagi qisqa sarlavhadan keyin majburiy bo‘sh qator bo‘lishi shart.",
+    "show": "Uchinchi ustun — xabar tuzilishi: ellik belgigacha bo‘lgan buyruq maylidagi qisqa sarlavhadan keyin majburiy bo‘sh qator bo‘lishi shart.",
+    "say": "Uchinchi ustun — xabar tuzilishi: ellik belgigacha bo‘lgan buyruq maylidagi qisqa sarlavhadan keyin majburiy bo‘sh qator bo‘lishi shart.",
+    "a0": 47.19,
+    "a1": 54.62,
+    "words": [
+      {
+        "w": "Uchinchi",
+        "s": 47.19,
+        "e": 47.49
+      },
+      {
+        "w": "ustun",
+        "s": 47.55,
+        "e": 47.81
+      },
+      {
+        "w": "—",
+        "s": 47.81,
+        "e": 47.81
+      },
+      {
+        "w": "xabar",
+        "s": 48.09,
+        "e": 48.37
+      },
+      {
+        "w": "tuzilishi:",
+        "s": 48.41,
+        "e": 48.83
+      },
+      {
+        "w": "ellik",
+        "s": 49.65,
+        "e": 49.89
+      },
+      {
+        "w": "belgigacha",
+        "s": 49.93,
+        "e": 50.41
+      },
+      {
+        "w": "bo‘lgan",
+        "s": 50.45,
+        "e": 50.75
+      },
+      {
+        "w": "buyruq",
+        "s": 50.81,
+        "e": 51.09
+      },
+      {
+        "w": "maylidagi",
+        "s": 51.13,
+        "e": 51.57
+      },
+      {
+        "w": "qisqa",
+        "s": 51.63,
+        "e": 51.85
+      },
+      {
+        "w": "sarlavhadan",
+        "s": 51.93,
+        "e": 52.45
+      },
+      {
+        "w": "keyin",
+        "s": 52.49,
+        "e": 52.7
+      },
+      {
+        "w": "majburiy",
+        "s": 52.98,
+        "e": 53.44
+      },
+      {
+        "w": "bo‘sh",
+        "s": 53.54,
+        "e": 53.74
+      },
+      {
+        "w": "qator",
+        "s": 53.78,
+        "e": 54.02
+      },
+      {
+        "w": "bo‘lishi",
+        "s": 54.08,
+        "e": 54.36
+      },
+      {
+        "w": "shart.",
+        "s": 54.4,
+        "e": 54.62
+      }
+    ]
+  },
+  {
+    "id": "l8",
+    "scene": "xabar_tuzilishi",
+    "text": "Tanada esa kod nima qilgani emas, aynan nega bunday qaror qabul qilingani va qaysi muqobillar rad etilgani yetmish ikki belgida tushuntiriladi.",
+    "show": "Tanada esa kod nima qilgani emas, aynan nega bunday qaror qabul qilingani va qaysi muqobillar rad etilgani yetmish ikki belgida tushuntiriladi.",
+    "say": "Tanada esa kod nima qilgani emas, aynan nega bunday qaror qabul qilingani va qaysi muqobillar rad etilgani yetmish ikki belgida tushuntiriladi.",
+    "a0": 55.42,
+    "a1": 63.06,
+    "words": [
+      {
+        "w": "Tanada",
+        "s": 55.42,
+        "e": 55.72
+      },
+      {
+        "w": "esa",
+        "s": 55.76,
+        "e": 55.92
+      },
+      {
+        "w": "kod",
+        "s": 56.0,
+        "e": 56.18
+      },
+      {
+        "w": "nima",
+        "s": 56.26,
+        "e": 56.44
+      },
+      {
+        "w": "qilgani",
+        "s": 56.48,
+        "e": 56.78
+      },
+      {
+        "w": "emas,",
+        "s": 56.84,
+        "e": 57.06
+      },
+      {
+        "w": "aynan",
+        "s": 57.16,
+        "e": 57.4
+      },
+      {
+        "w": "nega",
+        "s": 57.82,
+        "e": 58.08
+      },
+      {
+        "w": "bunday",
+        "s": 58.12,
+        "e": 58.36
+      },
+      {
+        "w": "qaror",
+        "s": 58.42,
+        "e": 58.66
+      },
+      {
+        "w": "qabul",
+        "s": 58.7,
+        "e": 58.9
+      },
+      {
+        "w": "qilingani",
+        "s": 58.92,
+        "e": 59.3
+      },
+      {
+        "w": "va",
+        "s": 59.4,
+        "e": 59.48
+      },
+      {
+        "w": "qaysi",
+        "s": 59.82,
+        "e": 60.1
+      },
+      {
+        "w": "muqobillar",
+        "s": 60.14,
+        "e": 60.66
+      },
+      {
+        "w": "rad",
+        "s": 60.72,
+        "e": 60.88
+      },
+      {
+        "w": "etilgani",
+        "s": 60.94,
+        "e": 61.34
+      },
+      {
+        "w": "yetmish",
+        "s": 61.66,
+        "e": 61.94
+      },
+      {
+        "w": "ikki",
+        "s": 62.0,
+        "e": 62.18
+      },
+      {
+        "w": "belgida",
+        "s": 62.22,
+        "e": 62.52
+      },
+      {
+        "w": "tushuntiriladi.",
+        "s": 62.54,
+        "e": 63.06
+      }
+    ]
+  },
+  {
+    "id": "l9",
+    "scene": "metamalumotlar",
+    "text": "Xabar oxiridagi Saynd-off-bay yoki Ko-osord-bay kabi treylerlar rasmiy tasdiq va hammualliflik metama’lumotlarini taqdim etadi.",
+    "show": "Xabar oxiridagi Saynd-off-bay yoki Ko-osord-bay kabi treylerlar rasmiy tasdiq va hammualliflik metama’lumotlarini taqdim etadi.",
+    "say": "Xabar oxiridagi saynd off bay yoki ko-osord bay kabi treylerlar rasmiy tasdiq va hammualliflik metama’lumotlarini taqdim etadi.",
+    "a0": 63.78,
+    "a1": 71.49,
+    "words": [
+      {
+        "w": "Xabar",
+        "s": 63.78,
+        "e": 64.04
+      },
+      {
+        "w": "oxiridagi",
+        "s": 64.1,
+        "e": 64.54
+      },
+      {
+        "w": "saynd",
+        "s": 64.88,
+        "e": 65.16
+      },
+      {
+        "w": "off",
+        "s": 65.26,
+        "e": 65.36
+      },
+      {
+        "w": "bay",
+        "s": 65.48,
+        "e": 65.66
+      },
+      {
+        "w": "yoki",
+        "s": 65.72,
+        "e": 65.94
+      },
+      {
+        "w": "ko-osord",
+        "s": 66.26,
+        "e": 66.88
+      },
+      {
+        "w": "bay",
+        "s": 66.94,
+        "e": 67.12
+      },
+      {
+        "w": "kabi",
+        "s": 67.16,
+        "e": 67.36
+      },
+      {
+        "w": "treylerlar",
+        "s": 67.4,
+        "e": 67.93
+      },
+      {
+        "w": "rasmiy",
+        "s": 67.97,
+        "e": 68.27
+      },
+      {
+        "w": "tasdiq",
+        "s": 68.33,
+        "e": 68.69
+      },
+      {
+        "w": "va",
+        "s": 68.75,
+        "e": 68.81
+      },
+      {
+        "w": "hammualliflik",
+        "s": 69.19,
+        "e": 69.93
+      },
+      {
+        "w": "metama’lumotlarini",
+        "s": 70.01,
+        "e": 70.91
+      },
+      {
+        "w": "taqdim",
+        "s": 70.95,
+        "e": 71.23
+      },
+      {
+        "w": "etadi.",
+        "s": 71.27,
+        "e": 71.49
+      }
+    ]
+  },
+  {
+    "id": "l10",
+    "scene": "metamalumotlar",
+    "text": "Konvenshnal kommitlar kelishuvi esa fit yoki fiks kabi turlar orqali avtomatik versiyalash va reliz solnomalarini yaratishni osonlashtiradi.",
+    "show": "Konvenshnal kommitlar kelishuvi esa fit yoki fiks kabi turlar orqali avtomatik versiyalash va reliz solnomalarini yaratishni osonlashtiradi.",
+    "say": "Konvenshnal kommitlar kelishuvi esa fit yoki fiks kabi turlar orqali avtomatik versiyalash va reliz solnomalarini yaratishni osonlashtiradi.",
+    "a0": 72.29,
+    "a1": 79.47,
+    "words": [
+      {
+        "w": "Konvenshnal",
+        "s": 72.29,
+        "e": 72.83
+      },
+      {
+        "w": "kommitlar",
+        "s": 72.87,
+        "e": 73.25
+      },
+      {
+        "w": "kelishuvi",
+        "s": 73.29,
+        "e": 73.63
+      },
+      {
+        "w": "esa",
+        "s": 73.67,
+        "e": 73.83
+      },
+      {
+        "w": "fit",
+        "s": 74.15,
+        "e": 74.33
+      },
+      {
+        "w": "yoki",
+        "s": 74.35,
+        "e": 74.61
+      },
+      {
+        "w": "fiks",
+        "s": 74.69,
+        "e": 74.93
+      },
+      {
+        "w": "kabi",
+        "s": 74.97,
+        "e": 75.15
+      },
+      {
+        "w": "turlar",
+        "s": 75.19,
+        "e": 75.47
+      },
+      {
+        "w": "orqali",
+        "s": 75.51,
+        "e": 75.79
+      },
+      {
+        "w": "avtomatik",
+        "s": 75.89,
+        "e": 76.33
+      },
+      {
+        "w": "versiyalash",
+        "s": 76.39,
+        "e": 76.91
+      },
+      {
+        "w": "va",
+        "s": 76.95,
+        "e": 77.01
+      },
+      {
+        "w": "reliz",
+        "s": 77.41,
+        "e": 77.69
+      },
+      {
+        "w": "solnomalarini",
+        "s": 77.75,
+        "e": 78.37
+      },
+      {
+        "w": "yaratishni",
+        "s": 78.41,
+        "e": 78.77
+      },
+      {
+        "w": "osonlashtiradi.",
+        "s": 78.87,
+        "e": 79.47
+      }
+    ]
+  },
+  {
+    "id": "l11",
+    "scene": "xulosa",
+    "text": "Kommitdan oldin status va keshd chek orqali tozalikni tekshirib, xabar qoidalariga rioya qilish jamoaviy ishonch garovidir.",
+    "show": "Kommitdan oldin status va keshd chek orqali tozalikni tekshirib, xabar qoidalariga rioya qilish jamoaviy ishonch garovidir.",
+    "say": "Kommitdan oldin status va keshd chek orqali tozalikni tekshirib, xabar qoidalariga rioya qilish jamoaviy ishonch garovidir.",
+    "a0": 80.25,
+    "a1": 86.84,
+    "words": [
+      {
+        "w": "Kommitdan",
+        "s": 80.25,
+        "e": 80.67
+      },
+      {
+        "w": "oldin",
+        "s": 80.73,
+        "e": 80.95
+      },
+      {
+        "w": "status",
+        "s": 81.23,
+        "e": 81.61
+      },
+      {
+        "w": "va",
+        "s": 81.69,
+        "e": 81.77
+      },
+      {
+        "w": "keshd",
+        "s": 82.11,
+        "e": 82.41
+      },
+      {
+        "w": "chek",
+        "s": 82.45,
+        "e": 82.66
+      },
+      {
+        "w": "orqali",
+        "s": 82.74,
+        "e": 83.02
+      },
+      {
+        "w": "tozalikni",
+        "s": 83.08,
+        "e": 83.52
+      },
+      {
+        "w": "tekshirib,",
+        "s": 83.56,
+        "e": 83.9
+      },
+      {
+        "w": "xabar",
+        "s": 84.18,
+        "e": 84.44
+      },
+      {
+        "w": "qoidalariga",
+        "s": 84.48,
+        "e": 84.96
+      },
+      {
+        "w": "rioya",
+        "s": 85.02,
+        "e": 85.26
+      },
+      {
+        "w": "qilish",
+        "s": 85.3,
+        "e": 85.52
+      },
+      {
+        "w": "jamoaviy",
+        "s": 85.6,
+        "e": 86.06
+      },
+      {
+        "w": "ishonch",
+        "s": 86.1,
+        "e": 86.38
+      },
+      {
+        "w": "garovidir.",
+        "s": 86.4,
+        "e": 86.84
+      }
+    ]
+  },
+  {
+    "id": "l12",
+    "scene": "xulosa",
+    "text": "Keyingi bobda xato ketgan kommitlarni xavfsiz tuzatish, ya’ni emend va restor buyruqlari bilan tanishamiz. Rahmat!",
+    "show": "Keyingi bobda xato ketgan kommitlarni xavfsiz tuzatish, ya’ni emend va restor buyruqlari bilan tanishamiz. Rahmat!",
+    "say": "Keyingi bobda xato ketgan kommitlarni xavfsiz tuzatish, ya’ni emend va restor buyruqlari bilan tanishamiz. Rahmat!",
+    "a0": 87.62,
+    "a1": 94.06,
+    "words": [
+      {
+        "w": "Keyingi",
+        "s": 87.62,
+        "e": 87.9
+      },
+      {
+        "w": "bobda",
+        "s": 87.92,
+        "e": 88.18
+      },
+      {
+        "w": "xato",
+        "s": 88.5,
+        "e": 88.72
+      },
+      {
+        "w": "ketgan",
+        "s": 88.78,
+        "e": 89.08
+      },
+      {
+        "w": "kommitlarni",
+        "s": 89.1,
+        "e": 89.58
+      },
+      {
+        "w": "xavfsiz",
+        "s": 89.64,
+        "e": 89.98
+      },
+      {
+        "w": "tuzatish,",
+        "s": 90.04,
+        "e": 90.44
+      },
+      {
+        "w": "ya’ni",
+        "s": 90.5,
+        "e": 90.66
+      },
+      {
+        "w": "emend",
+        "s": 91.0,
+        "e": 91.35
+      },
+      {
+        "w": "va",
+        "s": 91.45,
+        "e": 91.51
+      },
+      {
+        "w": "restor",
+        "s": 91.67,
+        "e": 92.03
+      },
+      {
+        "w": "buyruqlari",
+        "s": 92.07,
+        "e": 92.53
+      },
+      {
+        "w": "bilan",
+        "s": 92.53,
+        "e": 92.69
+      },
+      {
+        "w": "tanishamiz.",
+        "s": 92.73,
+        "e": 93.13
+      },
+      {
+        "w": "Rahmat!",
+        "s": 93.78,
+        "e": 94.06
+      }
+    ]
+  }
+]
