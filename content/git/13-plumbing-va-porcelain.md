@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" playsinline poster="/video/git/13-plumbing-va-porcelain.jpg" src="/video/git/13-plumbing-va-porcelain.mp4">
+    <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/git/13-plumbing-va-porcelain.chapters.vtt" default>
+    <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/git/13-plumbing-va-porcelain.uz.vtt">
+  </video>
+  <figcaption>13.1-video. Plumbing, porcelain va .git papkasi</figcaption>
+</figure>
+
 Shu paytgacha biz `add`, `commit`, `log`, `switch`, `tag` kabi 20–30 ta buyruq bilan ishladik. Ular qulay: odam o'qiy oladigan chiqish, maslahatlar (`use "git add <file>..."`), ranglar. Lekin Git ularning ostida yana yuzga yaqin "kichik" buyruqqa ega — ular bitta ishni bajaradi, chiqishi quruq va skript uchun mo'ljallangan.
 
 Pro Git bu ikki qatlamni uy jihozlari bilan o'xshatgan atamalar bilan ataydi:
