@@ -7,6 +7,7 @@
       text: '#eef1fb',
       mute: '#8f99bf',
       blue: '#4f8cff',
+      cyan: '#38bdf8',
       purple: '#b46cff',
       green: '#34d399',
       orange: '#ffb547',
@@ -222,11 +223,56 @@
       });
     }
 
+    function terminal(x, y, w, h, o = {}) {
+      const p = o.p == null ? 1 : o.p;
+      if (p <= 0.001) return;
+      const a = (o.a == null ? 1 : o.a) * p;
+      if (a <= 0.002) return;
+      withA(a, () => {
+        ctx.save();
+        if (o.p != null) ctx.translate(0, (1 - eo(p)) * 16);
+        ctx.fillStyle = o.bg || '#0b0f19';
+        rr(x, y, w, h, 16);
+        ctx.fill();
+        ctx.strokeStyle = o.border || 'rgba(56,189,248,0.3)';
+        ctx.lineWidth = 1.8;
+        ctx.stroke();
+
+        ctx.fillStyle = '#111827';
+        ctx.beginPath();
+        ctx.roundRect(x, y, w, 44, [16, 16, 0, 0]);
+        ctx.fill();
+        ctx.fillStyle = 'rgba(255,255,255,0.08)';
+        ctx.fillRect(x, y + 43, w, 1);
+
+        const dots = [
+          { x: x + 24, col: '#ff5f56' },
+          { x: x + 44, col: '#ffbd2e' },
+          { x: x + 64, col: '#27c93f' }
+        ];
+        dots.forEach((d) => {
+          ctx.fillStyle = d.col;
+          ctx.beginPath();
+          ctx.arc(d.x, y + 22, 6, 0, 7);
+          ctx.fill();
+        });
+
+        text(o.title || '~/loyiha — zsh — 80x24', x + w / 2, y + 22, {
+          size: 14,
+          fam: MONO,
+          color: '#8b949e',
+          weight: 600
+        });
+
+        ctx.restore();
+      });
+    }
+
     return {
       W, H, C, UI, MONO,
       clamp, P, lerp, eo, eio, eback, rnd, hex, rgba, light, font, withA, rr,
       tw, text, glow, bg, node, ring, burst, curvePts, link, pill, docIcon,
-      fileChip, chip, panel, card
+      fileChip, chip, panel, card, terminal
     };
   }
 

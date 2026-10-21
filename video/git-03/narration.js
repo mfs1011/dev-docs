@@ -32,62 +32,62 @@
     {
       id: 'l1',
       scene: 'intro',
-      text: "Salom! Ushbu uchinchi bobda Gitni birinchi marta sozlash va yordam tizimidan foydalanishni o‘rganamiz."
+      text: "Salom! Ushbu uchinchi bobda Gitni birinchi marta sozlash va yordam tizimidan to‘g‘ri foydalanishni o‘rganamiz."
     },
     {
       id: 'l2',
       scene: 'intro',
-      text: "Git o‘rnatilgach qilinadigan ilk qadam shaxsiy identifikatsiyani belgilashdir, chunki bu ma’lumot har bir kommitga muhrlanadi."
+      text: "Har bir kommit ichiga muallifning ismi va emaili muhrlanadi, shuning uchun bu sozlamalarni eng boshidayoq to‘g‘ri kiritish shart."
     },
     {
       id: 'l3',
       scene: 'darajalar_va_ustunlik',
-      text: "Git sozlamalari beshta darajada saqlanadi: butun kompyuter uchun sistem, foydalanuvchi uchun global va bitta repozitoriy uchun lokal."
+      text: "Git sozlamalari uchta asosiy darajada saqlanadi: butun tizim uchun sistem, foydalanuvchi uchun global va bitta loyiha uchun lokal daraja."
     },
     {
       id: 'l4',
       scene: 'darajalar_va_ustunlik',
-      text: "Bunda tor doiradagi sozlama keng doiradagidan ustun turadi, ya’ni lokal repozitoriy konfigi global sozlamani bekor qila oladi."
+      text: "Bunda oltin qoida amal qiladi: tor daraja keng darajadan ustun turadi, ya’ni lokal repozitoriy sozlamasi global sozlamani bemalol yengadi."
     },
     {
       id: 'l5',
       scene: 'identifikatsiya_va_sintaksis',
-      text: "Yuzer neym va yuzer emeyl sozlamalari yordamida har bir kommit muallifi aniqlanadi va ularni kommitdan keyin osonlikcha o‘zgartirib bo‘lmaydi."
+      text: "Keling, terminalda global ism va emailimizni o‘rnatamiz; bu ma’lumotlar to‘g‘ridan-to‘g‘ri uy papkangizdagi nuqta gitkonfig fayliga yoziladi."
     },
     {
       id: 'l6',
       scene: 'identifikatsiya_va_sintaksis',
-      text: "Gitning yangi versiyalarida konfig buyrug‘i get, set va unset kabi aniq subkomandalarga bo‘lingan."
+      text: "Gitning yangi versiyalarida konfig buyrug‘i set, get va unset kabi tushunarli va aniq subkomandalar orqali boshqariladi."
     },
     {
       id: 'l7',
       scene: 'muhim_sozlamalar',
-      text: "Standart matn muharriri sifatida kor editor orqali VS Kod yoki nanoni, birinchi brench nomi sifatida esa meynni belgilab qo‘yish qulay."
+      text: "Standart brench nomi sifatida meynni belgilaymiz, matn muharriri uchun esa kor editor yordamida sevimli dasturingizni, masalan Vi-es kodni tanlashingiz mumkin."
     },
     {
       id: 'l8',
       scene: 'muhim_sozlamalar',
-      text: "Shuningdek, terminalda natijalar tushunarli bo‘lishi uchun ranglar tizimini ham moslashtirish mumkin."
+      text: "Konfig list va shou orijin opsiyalari orqali qaysi sozlama qaysi fayldan o‘qilayotganini bir zumda tekshirib olish juda qulay."
     },
     {
       id: 'l9',
       scene: 'yordam_tizimi',
-      text: "Git internetga ulanmasdan ham to‘liq rasmiy ma’lumotnomaga ega bo‘lib, git help yoki chiziqcha ech opsiyasi orqali tezkor yordam beradi."
+      text: "Git internetga ulanmasdan ham to‘liq rasmiy ma’lumotnomaga ega; chiziqcha eych orqali tezkor konspekt, git help orqali esa to‘liq qo‘llanma ochiladi."
     },
     {
       id: 'l10',
       scene: 'yordam_tizimi',
-      text: "Qo‘shimcha ravishda help a barcha buyruqlar ro‘yxatini, help g esa amaliy qo‘llanmalar to‘plamini ko‘rsatadi."
+      text: "Shuningdek, help ey barcha ichki buyruqlarni, help ji esa tushunchalar va ish jarayonlari bo‘yicha maxsus qo‘llanmalarni taqdim etadi."
     },
     {
       id: 'l11',
       scene: 'xulosa',
-      text: "Xulosa qilsak, to‘g‘ri sozlangan muhit va yordam tizimini bilish kundalik ishingizni xatosiz va tezkor qiladi."
+      text: "Xulosa qilib aytganda, to‘g‘ri sozlangan identifikatsiya va oflayn yordam tizimi kundalik ishingizni xavfsiz va ishonchli qiladi."
     },
     {
       id: 'l12',
       scene: 'xulosa',
-      text: "Keyingi bobda ilk repozitoriy yaratish va klonlashni boshlaymiz. E’tiboringiz uchun rahmat!"
+      text: "Keyingi to‘rtinchi bobda ilk repozitoriy yaratish va klonlash amaliyotini boshlaymiz. E’tiboringiz uchun rahmat!"
     }
   ];
 
