@@ -11,51 +11,51 @@ Git oddiy fayl tizimi emas, balki manzili o‘z mazmunidan
 kelib chiqadigan kontent-adreslanuvchi ma’lumotlar bazasidir.
 
 3
-00:21.450 --> 00:29.030
+00:21.950 --> 00:29.530
 Kalitning aynan mazmun hashidan olinishi bir xil fayllarning
 takrorlanmasligini va butunlik tekshiruvini tekin ta’minlaydi.
 
 4
-00:29.400 --> 00:36.430
+00:29.900 --> 00:36.930
 Git'da obyektlar bir marta yaratilgach hech qachon o‘zgarmaydi;
 biror bayt o‘zgarsa, u butunlay yangi obyektga aylanadi.
 
 5
-00:39.640 --> 00:46.900
+00:41.140 --> 00:48.400
 Git hash-object buyrug‘i xom ma’lumotni omborga blob
 sifatida yozadi, git cat-file esa uni qulay o‘qib beradi.
 
 6
-00:47.110 --> 00:54.160
+00:48.610 --> 00:55.660
 cat-file minus t orqali obyekt turini, minus s bilan
 hajmini, minus p bilan esa uning to‘liq mazmunini ko‘ramiz.
 
 7
-00:57.310 --> 01:04.610
+00:59.810 --> 01:07.110
 Diskdagi har bir obyekt zlib bilan siqilgan bo‘lib, ichida
 tur, hajm, bo‘sh bayt va haqiqiy kontent saqlanadi.
 
 8
-01:04.920 --> 01:12.070
+01:07.420 --> 01:14.570
 Fayl tizimini sekinlashuvdan asrash uchun qirq belgili hashning
 dastlabki ikki belgisi papka, qolgani fayl nomi qilinadi.
 
 9
-01:15.080 --> 01:21.300
+01:18.580 --> 01:24.800
 Git hashi shunchaki fayl hashi emas, balki maxsus
 sarlavha va mazmunning birgalikdagi SHA-1 natijasidir.
 
 10
-01:21.390 --> 01:28.380
+01:24.890 --> 01:31.880
 Shu sababli oddiy terminaldagi hash hisoblash buyrug‘i Git
 natijasiga teng bo‘lishi uchun unga sarlavha qo‘shish shart.
 
 11
-01:31.410 --> 01:39.610
+01:35.910 --> 01:44.110
 Blob fayl mazmunini saqlaydi, lekin unda fayl nomi va katalog
 tuzilishi yo‘q; ular keyingi bobda tree obyektida joylashadi.
 
 12
-01:39.900 --> 01:46.330
+01:44.400 --> 01:50.830
 Keyingi o‘n beshinchi bobda aynan papkalar tuzilishini
 saqlovchi tree obyektlari va index bilan amaliy tanishamiz.
