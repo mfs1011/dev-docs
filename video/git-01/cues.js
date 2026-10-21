@@ -7,17 +7,17 @@
 
   // So'z bog'lanishlari
   [
-    ['l1', 'Salom!'], ['l1', 'chiqamiz.'],
-    ['l2', 'Ko‘pchilik'], ['l2', 'qiyin.'],
-    ['l3', 'Lokal'], ['l3', 'qoladi.'],
-    ['l4', 'Taqsimlangan'], ['l4', 'hisoblanadi.'],
-    ['l5', 'Boshqa'], ['l5', 'saqlaydi.'],
-    ['l6', 'Agar'], ['l6', 'qo‘yadi.'],
-    ['l7', 'Gitda'], ['l7', 'ishlaydi.'],
-    ['l8', 'Har'], ['l8', 'kafolatlanadi.'],
-    ['l9', 'Git'], ['l9', 'qoladi.'],
-    ['l10', 'Fayllar'], ['l10', 'muhrlanadi.'],
-    ['l11', 'Xulosa'], ['l11', 'qurilgan.'],
+    ['l1', 'Salom!'], ['l1', 'tushunib'],
+    ['l2', 'Keling,'], ['l2', 'chiqamiz.'],
+    ['l3', 'Ko‘pchilik'], ['l3', 'qo‘yadi.'],
+    ['l4', 'Lekin'], ['l4', 'qolmaydi.'],
+    ['l5', 'Dastlab'], ['l5', 'qolgan.'],
+    ['l6', 'Git'], ['l6', 'aylanadi.'],
+    ['l7', 'Boshqa'], ['l7', 'saqlaydi.'],
+    ['l8', 'Bunda'], ['l8', 'erishiladi.'],
+    ['l9', 'Gitda'], ['l9', 'kechadi.'],
+    ['l10', 'Har'], ['l10', 'himoyalangan.'],
+    ['l11', 'Xulosa'], ['l11', 'arxitekturadir.'],
     ['l12', 'Keyingi'], ['l12', 'rahmat!']
   ].forEach(([l, w]) => {
     try {
@@ -26,16 +26,16 @@
     } catch (e) {}
   });
 
-  try { add(W('l2', 'qiyin.'), 'error'); } catch (e) {}
-  try { add(W('l3', 'qoladi.'), 'error'); } catch (e) {}
-  try { add(W('l4', 'hisoblanadi.'), 'ding'); } catch (e) {}
-  try { add(W('l5', 'saqlaydi.'), 'whoosh'); } catch (e) {}
-  try { add(W('l6', 'qo‘yadi.'), 'ding'); } catch (e) {}
-  try { add(W('l7', 'ishlaydi.'), 'whoosh'); } catch (e) {}
-  try { add(W('l8', 'kafolatlanadi.'), 'ding'); } catch (e) {}
-  try { add(W('l9', 'qoladi.'), 'pop'); } catch (e) {}
-  try { add(W('l10', 'muhrlanadi.'), 'ding'); } catch (e) {}
-  try { add(W('l11', 'qurilgan.'), 'ding'); } catch (e) {}
+  try { add(W('l2', 'chiqamiz.'), 'whoosh'); } catch (e) {}
+  try { add(W('l3', 'qo‘yadi.'), 'pop'); } catch (e) {}
+  try { add(W('l4', 'qolmaydi.'), 'ding'); } catch (e) {}
+  try { add(W('l5', 'qolgan.'), 'whoosh'); } catch (e) {}
+  try { add(W('l6', 'aylanadi.'), 'ding'); } catch (e) {}
+  try { add(W('l7', 'saqlaydi.'), 'whoosh'); } catch (e) {}
+  try { add(W('l8', 'erishiladi.'), 'ding'); } catch (e) {}
+  try { add(W('l9', 'kechadi.'), 'pop'); } catch (e) {}
+  try { add(W('l10', 'himoyalangan.'), 'ding'); } catch (e) {}
+  try { add(W('l11', 'arxitekturadir.'), 'ding'); } catch (e) {}
   add(L('l12').e + 0.3, 'swell');
 
   cues.sort((a, b) => a.t - b.t);

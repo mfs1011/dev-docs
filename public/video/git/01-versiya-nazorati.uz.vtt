@@ -1,61 +1,61 @@
 WEBVTT
 
 1
-00:01.420 --> 00:10.320
-Salom! Bu Git qo‘llanmasining birinchi bobi. Ushbu videoda versiya
-nazorati nima ekanini va Git ma’lumotni qanday saqlashini ko‘rib chiqamiz.
+00:01.420 --> 00:10.360
+Salom! Ushbu birinchi bobda dasturlashda eng muhim vositalardan biri
+bo‘lgan versiya nazorati tizimi va Git nima ekanini tushunib olamiz.
 
 2
-00:13.450 --> 00:20.560
-Ko‘pchilik fayllarni turli nomlar bilan nusxalaydi, ammo bu usulda
-qaysi biri oxirgisi ekanini va kim o‘zgartirganini bilish qiyin.
+00:10.950 --> 00:17.540
+Keling, avval nima uchun fayllarni oddiygina papkaga ko‘chirib
+saqlash yetarli emasligini real misolda ko‘rib chiqamiz.
 
 3
-00:20.810 --> 00:28.450
-Lokal tizimlarda butun tarix bitta kompyuterda bo‘lsa, markazlashgan
-tizimlarda yagona server buzilsa butun jamoa ishi to‘xtab qoladi.
+00:21.170 --> 00:28.310
+Ko‘pchilik boshida shunday qiladi: loyiha papkasini
+nusxalab, nomiga eski, yakuniy yoki sana qo‘shib qo‘yadi.
 
 4
-00:28.960 --> 00:37.370
-Taqsimlangan tizim bo‘lgan Gitda esa har bir dasturchi butun repozitoriyni
-to‘liq tarixi bilan nusxalab oladi va har bir klon to‘liq zaxira hisoblanadi.
+00:28.560 --> 00:37.430
+Lekin terminalda ko‘rib turganingizdek, qisqa vaqtda tartibsizlik paydo bo‘ladi;
+qaysi biri oxirgisi ekanini va nima o‘zgarganini bilishning iloji qolmaydi.
 
 5
-00:40.560 --> 00:50.240
-Boshqa tizimlar o‘zgarishlarni deltalarda, ya’ni fayllar farqi sifatida saqlasa,
-Git butun loyihaning to‘liq suratlari, ya’ni snepshotlar oqimi sifatida saqlaydi.
+00:41.600 --> 00:50.720
+Dastlab lokal tizimlarda butun tarix bitta kompyuterda saqlangan bo‘lsa,
+markazlashgan tizimlarda yagona server buzilsa butun jamoa ishi to‘xtab qolgan.
 
 6
-00:50.770 --> 00:56.840
-Agar biror fayl o‘zgarmagan bo‘lsa, Git uni qayta
-nusxalamaydi, balki oldingi bir xil obyektga havola qo‘yadi.
+00:51.170 --> 01:00.460
+Git kabi taqsimlangan tizimlarda esa har bir dasturchi butun repozitoriyni
+to‘liq tarixi bilan nusxalab oladi va har bir klon mustaqil zaxiraga aylanadi.
 
 7
-01:00.010 --> 01:07.830
-Gitda deyarli barcha amallar lokal bajariladi, shuning uchun tarixni
-ko‘rish yoki farqlarni hisoblash oflayn rejimda ham bir zumda ishlaydi.
+01:04.060 --> 01:13.410
+Boshqa tizimlar fayllar orasidagi farqlarni, ya’ni deltalarni saqlasa, Git
+butun loyihaning to‘liq suratlari, ya’ni snepshotlar oqimi sifatida saqlaydi.
 
 8
-01:08.540 --> 01:16.690
-Har bir fayl va kommit uchun qirq xonali esh-ey-van hesh nazorat yig‘indisi
-hisoblanadi, shuning uchun ma’lumot butunligi qat’iy kafolatlanadi.
+01:13.640 --> 01:20.660
+Bunda o‘zgarmagan fayllar qayta nusxalanmasdan, oldingi obyektga
+ko‘rsatkich qo‘yiladi va natijada yuqori tezlikka erishiladi.
 
 9
-01:19.890 --> 01:26.620
-Git bazasiga faqat yangi ma’lumot qo‘shiladi, hatto kommitni
-o‘zgartirganda ham eski holat xotirada saqlanib qoladi.
+01:24.270 --> 01:32.700
+Gitda deyarli barcha amallar lokal bajariladi; hatto internet yo‘q paytda
+ham butun loyiha tarixini ko‘rish yoki solishtirish bir zumda kechadi.
 
 10
-01:27.210 --> 01:35.710
-Fayllar uchta hududdan o‘tadi: ishchi papkada tahrirlanadi, ed buyrug‘i
-bilan steyjingga qo‘yiladi va kommit orqali repozitoriyga muhrlanadi.
+01:33.130 --> 01:41.230
+Har bir fayl va kommit uchun esh-ey-van hesh nazorat yig‘indisi
+hisoblanadi, shuning uchun ma’lumotlar butunligi qat’iy himoyalangan.
 
 11
-01:38.880 --> 01:44.590
-Xulosa qilsak, Git snepshotlar modeli, lokal
-tezlik va xavfsiz butunlik asosiga qurilgan.
+01:44.720 --> 01:52.500
+Xulosa qilsak, Git snepshotlar modeli, to‘liq taqsimlanganlik va
+ma’lumotlar xavfsizligi ustiga qurilgan pishiq arxitekturadir.
 
 12
-01:44.860 --> 01:49.750
-Keyingi bobda terminal va Gitni o‘rnatishni
-boshlaymiz. E’tiboringiz uchun rahmat!
+01:52.970 --> 02:00.770
+Keyingi ikkinchi bobda terminal bilan ishlash asoslarini va
+kompyuteringizga Gitni o‘rnatishni boshlaymiz. E’tiboringiz uchun rahmat!
