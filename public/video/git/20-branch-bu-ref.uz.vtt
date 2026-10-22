@@ -1,0 +1,61 @@
+WEBVTT
+
+1
+00:01.420 --> 00:10.980
+Salom! Ushbu yigirmanchi bobda Git'ning eng mashhur va qulay imkoniyatlaridan
+biri bo‘lgan brenchlar, ya’ni tarmoqlarning ichki tuzilishini o‘rganamiz.
+
+2
+00:11.410 --> 00:20.240
+Git'da brench fayllar nusxasi emas, balki oxirgi commit heshini
+saqlovchi atigi qirq bir baytlik o‘ta yengil ko‘rsatkich fayldir.
+
+3
+00:23.690 --> 00:31.590
+git branch buyrug‘i joriy commitga qaragan yangi ko‘rsatkich faylini
+bir zumda yaratadi, ammo HEAD hali ham eski brenchda qoladi.
+
+4
+00:31.940 --> 00:39.250
+Loyiha hajmi qanchalik katta bo‘lmasin, brench ochish diskdan
+joy olmaydi va birorta ham faylni ortiqcha nusxalamaydi.
+
+5
+00:43.560 --> 00:52.280
+git switch buyrug‘i orqali yangi brenchga o‘tganimizda HEAD fayli o‘zgaradi
+va navbatdagi commit aynan shu brench ko‘rsatkichini oldinga siljitadi.
+
+6
+00:52.530 --> 00:59.800
+Bu paytda boshqa brenchlar o‘z joyida qoladi, chunki Git
+faqat HEAD ulangan faol brench faylidagi heshni yangilaydi.
+
+7
+01:04.020 --> 01:11.290
+Eski brenchga qaytib yana commit qilsak, loyiha tarixi ikki
+mustaqil tarmoqqa ajralib, chiroyli graf hosil qiladi.
+
+8
+01:11.520 --> 01:19.150
+git log graph va all opsiyalari butun tarmoqlar qayerda
+ajralib, qanday rivojlanayotganini aniq ko‘rsatib beradi.
+
+9
+01:23.270 --> 01:31.600
+Brench almashtirishda saqlanmagan o‘zgarishlar to‘qnashsa, Git xavfsizlik
+yuzasidan switch jarayonini darhol to‘xtatib, ishingizni saqlab qoladi.
+
+10
+01:31.950 --> 01:40.050
+To‘g‘ridan-to‘g‘ri commitga o‘tish esa detached HEAD holatini keltirib chiqaradi
+va bu paytda yangi kommitlar brenchsiz qolishidan ehtiyot bo‘lish lozim.
+
+11
+01:44.140 --> 01:50.210
+Zamonaviy Git'da brenchlar uchun switch, fayllarni tiklash
+uchun esa restore buyrug‘i standart qilib belgilangan.
+
+12
+01:50.460 --> 01:57.310
+Keyingi yigirma birinchi bobda turli brenchlardagi mustaqil
+ishlarni birlashtiruvchi merge mexanizmini to‘liq ko‘rib chiqamiz.
