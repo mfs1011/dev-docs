@@ -1,0 +1,1154 @@
+[
+  {
+    "id": "l1",
+    "scene": "intro",
+    "text": "Salom! Ushbu yigirma birinchi bobda ajralgan tarmoqlarni bir-biriga xavfsiz qo‘shuvchi git merge buyrug‘i va uning ichki arxitekturasini o‘rganamiz.",
+    "show": "Salom! Ushbu yigirma birinchi bobda ajralgan tarmoqlarni bir-biriga xavfsiz qo‘shuvchi git merge buyrug‘i va uning ichki arxitekturasini o‘rganamiz.",
+    "say": "Salom! Ushbu yigirma birinchi bobda ajralgan tarmoqlarni bir-biriga xavfsiz qo‘shuvchi git merj buyrug‘i va uning ichki arxitekturasini o‘rganamiz.",
+    "a0": 0.28,
+    "a1": 8.83,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.28,
+        "e": 0.54
+      },
+      {
+        "w": "Ushbu",
+        "s": 0.98,
+        "e": 1.2
+      },
+      {
+        "w": "yigirma",
+        "s": 1.32,
+        "e": 1.6
+      },
+      {
+        "w": "birinchi",
+        "s": 1.64,
+        "e": 1.92
+      },
+      {
+        "w": "bobda",
+        "s": 1.96,
+        "e": 2.24
+      },
+      {
+        "w": "ajralgan",
+        "s": 2.42,
+        "e": 2.92
+      },
+      {
+        "w": "tarmoqlarni",
+        "s": 2.96,
+        "e": 3.54
+      },
+      {
+        "w": "bir-biriga",
+        "s": 3.62,
+        "e": 4.02
+      },
+      {
+        "w": "xavfsiz",
+        "s": 4.08,
+        "e": 4.42
+      },
+      {
+        "w": "qo‘shuvchi",
+        "s": 4.46,
+        "e": 4.92
+      },
+      {
+        "w": "git",
+        "s": 5.38,
+        "e": 5.56
+      },
+      {
+        "w": "merj",
+        "s": 5.76,
+        "e": 6.04
+      },
+      {
+        "w": "buyrug‘i",
+        "s": 6.14,
+        "e": 6.52
+      },
+      {
+        "w": "va",
+        "s": 6.64,
+        "e": 6.72
+      },
+      {
+        "w": "uning",
+        "s": 6.9,
+        "e": 7.14
+      },
+      {
+        "w": "ichki",
+        "s": 7.34,
+        "e": 7.59
+      },
+      {
+        "w": "arxitekturasini",
+        "s": 7.65,
+        "e": 8.33
+      },
+      {
+        "w": "o‘rganamiz.",
+        "s": 8.37,
+        "e": 8.83
+      }
+    ]
+  },
+  {
+    "id": "l2",
+    "scene": "intro",
+    "text": "Merge har doim o‘zgarishlarni joriy branchga olib kiradi, shuning uchun avval qabul qiluvchi branchga o‘tib, so‘ng ikkinchi branchni birlashtiramiz.",
+    "show": "Merge har doim o‘zgarishlarni joriy branchga olib kiradi, shuning uchun avval qabul qiluvchi branchga o‘tib, so‘ng ikkinchi branchni birlashtiramiz.",
+    "say": "Merj har doim o‘zgarishlarni joriy brenchga olib kiradi, shuning uchun avval qabul qiluvchi brenchga o‘tib, so‘ng ikkinchi brenchni birlashtiramiz.",
+    "a0": 9.93,
+    "a1": 17.49,
+    "words": [
+      {
+        "w": "Merj",
+        "s": 9.93,
+        "e": 10.15
+      },
+      {
+        "w": "har",
+        "s": 10.33,
+        "e": 10.47
+      },
+      {
+        "w": "doim",
+        "s": 10.51,
+        "e": 10.75
+      },
+      {
+        "w": "o‘zgarishlarni",
+        "s": 10.83,
+        "e": 11.47
+      },
+      {
+        "w": "joriy",
+        "s": 11.53,
+        "e": 11.79
+      },
+      {
+        "w": "brenchga",
+        "s": 11.85,
+        "e": 12.17
+      },
+      {
+        "w": "olib",
+        "s": 12.23,
+        "e": 12.39
+      },
+      {
+        "w": "kiradi,",
+        "s": 12.41,
+        "e": 12.67
+      },
+      {
+        "w": "shuning",
+        "s": 13.01,
+        "e": 13.21
+      },
+      {
+        "w": "uchun",
+        "s": 13.21,
+        "e": 13.39
+      },
+      {
+        "w": "avval",
+        "s": 13.71,
+        "e": 13.95
+      },
+      {
+        "w": "qabul",
+        "s": 14.13,
+        "e": 14.39
+      },
+      {
+        "w": "qiluvchi",
+        "s": 14.45,
+        "e": 14.77
+      },
+      {
+        "w": "brenchga",
+        "s": 14.81,
+        "e": 15.17
+      },
+      {
+        "w": "o‘tib,",
+        "s": 15.23,
+        "e": 15.49
+      },
+      {
+        "w": "so‘ng",
+        "s": 15.77,
+        "e": 15.99
+      },
+      {
+        "w": "ikkinchi",
+        "s": 16.11,
+        "e": 16.45
+      },
+      {
+        "w": "brenchni",
+        "s": 16.49,
+        "e": 16.83
+      },
+      {
+        "w": "birlashtiramiz.",
+        "s": 16.87,
+        "e": 17.49
+      }
+    ]
+  },
+  {
+    "id": "l3",
+    "scene": "fast_forward",
+    "text": "Agar joriy branch qo‘shilayotgan branchni to‘g‘ridan-to‘g‘ri ajdodi bo‘lsa, Git hech qanday yangi commit yaratmay, fast-forward mergeni bajaradi.",
+    "show": "Agar joriy branch qo‘shilayotgan branchni to‘g‘ridan-to‘g‘ri ajdodi bo‘lsa, Git hech qanday yangi commit yaratmay, fast-forward mergeni bajaradi.",
+    "say": "Agar joriy brench qo‘shilayotgan brenchni to‘g‘ridan-to‘g‘ri ajdodi bo‘lsa, Git hech qanday yangi kommit yaratmay, fast-forvard merjni bajaradi.",
+    "a0": 18.27,
+    "a1": 26.02,
+    "words": [
+      {
+        "w": "Agar",
+        "s": 18.27,
+        "e": 18.49
+      },
+      {
+        "w": "joriy",
+        "s": 18.65,
+        "e": 18.89
+      },
+      {
+        "w": "brench",
+        "s": 18.93,
+        "e": 19.19
+      },
+      {
+        "w": "qo‘shilayotgan",
+        "s": 19.25,
+        "e": 19.83
+      },
+      {
+        "w": "brenchni",
+        "s": 19.89,
+        "e": 20.27
+      },
+      {
+        "w": "to‘g‘ridan-to‘g‘ri",
+        "s": 20.55,
+        "e": 21.27
+      },
+      {
+        "w": "ajdodi",
+        "s": 21.31,
+        "e": 21.65
+      },
+      {
+        "w": "bo‘lsa,",
+        "s": 21.69,
+        "e": 21.95
+      },
+      {
+        "w": "Git",
+        "s": 22.39,
+        "e": 22.56
+      },
+      {
+        "w": "hech",
+        "s": 22.62,
+        "e": 22.78
+      },
+      {
+        "w": "qanday",
+        "s": 22.82,
+        "e": 23.1
+      },
+      {
+        "w": "yangi",
+        "s": 23.16,
+        "e": 23.4
+      },
+      {
+        "w": "kommit",
+        "s": 23.44,
+        "e": 23.72
+      },
+      {
+        "w": "yaratmay,",
+        "s": 23.76,
+        "e": 24.14
+      },
+      {
+        "w": "fast-forvard",
+        "s": 24.46,
+        "e": 25.14
+      },
+      {
+        "w": "merjni",
+        "s": 25.24,
+        "e": 25.6
+      },
+      {
+        "w": "bajaradi.",
+        "s": 25.62,
+        "e": 26.02
+      }
+    ]
+  },
+  {
+    "id": "l4",
+    "scene": "fast_forward",
+    "text": "Bunda Git obyektlar bazasiga tegilmaydi, faqat refs papkasidagi branch ko‘rsatkich fayli yangi commit heshiga surib qo‘yiladi.",
+    "show": "Bunda Git obyektlar bazasiga tegilmaydi, faqat refs papkasidagi branch ko‘rsatkich fayli yangi commit heshiga surib qo‘yiladi.",
+    "say": "Bunda Git obyektlar bazasiga tegilmaydi, faqat refslar papkasidagi brench ko‘rsatkich fayli yangi kommit heshiga surib qo‘yiladi.",
+    "a0": 26.64,
+    "a1": 33.88,
+    "words": [
+      {
+        "w": "Bunda",
+        "s": 26.64,
+        "e": 26.86
+      },
+      {
+        "w": "Git",
+        "s": 27.18,
+        "e": 27.34
+      },
+      {
+        "w": "obyektlar",
+        "s": 27.42,
+        "e": 27.84
+      },
+      {
+        "w": "bazasiga",
+        "s": 27.88,
+        "e": 28.3
+      },
+      {
+        "w": "tegilmaydi,",
+        "s": 28.34,
+        "e": 28.86
+      },
+      {
+        "w": "faqat",
+        "s": 29.14,
+        "e": 29.42
+      },
+      {
+        "w": "refslar",
+        "s": 29.62,
+        "e": 29.98
+      },
+      {
+        "w": "papkasidagi",
+        "s": 30.06,
+        "e": 30.68
+      },
+      {
+        "w": "brench",
+        "s": 30.8,
+        "e": 31.08
+      },
+      {
+        "w": "ko‘rsatkich",
+        "s": 31.12,
+        "e": 31.62
+      },
+      {
+        "w": "fayli",
+        "s": 31.66,
+        "e": 31.98
+      },
+      {
+        "w": "yangi",
+        "s": 32.3,
+        "e": 32.54
+      },
+      {
+        "w": "kommit",
+        "s": 32.6,
+        "e": 32.86
+      },
+      {
+        "w": "heshiga",
+        "s": 32.88,
+        "e": 33.2
+      },
+      {
+        "w": "surib",
+        "s": 33.28,
+        "e": 33.48
+      },
+      {
+        "w": "qo‘yiladi.",
+        "s": 33.52,
+        "e": 33.88
+      }
+    ]
+  },
+  {
+    "id": "l5",
+    "scene": "three_way_merge",
+    "text": "Agar ikkala branchda ham yangi mustaqil commitlar mavjud bo‘lsa, Git uch tomonlama merge algoritmini ishga tushirib, birlashtiruvchi yangi commit yaratadi.",
+    "show": "Agar ikkala branchda ham yangi mustaqil commitlar mavjud bo‘lsa, Git uch tomonlama merge algoritmini ishga tushirib, birlashtiruvchi yangi commit yaratadi.",
+    "say": "Agar ikkala brenchda ham yangi mustaqil kommitlar mavjud bo‘lsa, Git uch tomonlama merj algoritmini ishga tushirib, birlashtiruvchi yangi kommit yaratadi.",
+    "a0": 35.04,
+    "a1": 43.07,
+    "words": [
+      {
+        "w": "Agar",
+        "s": 35.04,
+        "e": 35.24
+      },
+      {
+        "w": "ikkala",
+        "s": 35.32,
+        "e": 35.56
+      },
+      {
+        "w": "brenchda",
+        "s": 35.6,
+        "e": 35.92
+      },
+      {
+        "w": "ham",
+        "s": 35.98,
+        "e": 36.1
+      },
+      {
+        "w": "yangi",
+        "s": 36.18,
+        "e": 36.44
+      },
+      {
+        "w": "mustaqil",
+        "s": 36.5,
+        "e": 36.9
+      },
+      {
+        "w": "kommitlar",
+        "s": 36.96,
+        "e": 37.34
+      },
+      {
+        "w": "mavjud",
+        "s": 37.4,
+        "e": 37.71
+      },
+      {
+        "w": "bo‘lsa,",
+        "s": 37.75,
+        "e": 38.01
+      },
+      {
+        "w": "Git",
+        "s": 38.39,
+        "e": 38.55
+      },
+      {
+        "w": "uch",
+        "s": 38.85,
+        "e": 38.97
+      },
+      {
+        "w": "tomonlama",
+        "s": 39.03,
+        "e": 39.45
+      },
+      {
+        "w": "merj",
+        "s": 39.53,
+        "e": 39.75
+      },
+      {
+        "w": "algoritmini",
+        "s": 39.85,
+        "e": 40.35
+      },
+      {
+        "w": "ishga",
+        "s": 40.39,
+        "e": 40.55
+      },
+      {
+        "w": "tushirib,",
+        "s": 40.59,
+        "e": 40.87
+      },
+      {
+        "w": "birlashtiruvchi",
+        "s": 41.17,
+        "e": 41.85
+      },
+      {
+        "w": "yangi",
+        "s": 42.03,
+        "e": 42.31
+      },
+      {
+        "w": "kommit",
+        "s": 42.35,
+        "e": 42.63
+      },
+      {
+        "w": "yaratadi.",
+        "s": 42.69,
+        "e": 43.07
+      }
+    ]
+  },
+  {
+    "id": "l6",
+    "scene": "three_way_merge",
+    "text": "Bu maxsus merge commit ikkita otaga ega bo‘lib, loyiha tarixida ikkala tarmoqning muvaffaqiyatli tutashgan nuqtasini mustahkamlaydi.",
+    "show": "Bu maxsus merge commit ikkita otaga ega bo‘lib, loyiha tarixida ikkala tarmoqning muvaffaqiyatli tutashgan nuqtasini mustahkamlaydi.",
+    "say": "Bu maxsus merj kommit ikkita otaga ega bo‘lib, loyiha tarixida ikkala tarmoqning muvaffaqiyatli tutashgan nuqtasini mustahkamlaydi.",
+    "a0": 43.63,
+    "a1": 50.93,
+    "words": [
+      {
+        "w": "Bu",
+        "s": 43.63,
+        "e": 43.69
+      },
+      {
+        "w": "maxsus",
+        "s": 43.83,
+        "e": 44.17
+      },
+      {
+        "w": "merj",
+        "s": 44.33,
+        "e": 44.57
+      },
+      {
+        "w": "kommit",
+        "s": 44.63,
+        "e": 44.89
+      },
+      {
+        "w": "ikkita",
+        "s": 45.21,
+        "e": 45.45
+      },
+      {
+        "w": "otaga",
+        "s": 45.51,
+        "e": 45.77
+      },
+      {
+        "w": "ega",
+        "s": 45.83,
+        "e": 45.97
+      },
+      {
+        "w": "bo‘lib,",
+        "s": 46.01,
+        "e": 46.23
+      },
+      {
+        "w": "loyiha",
+        "s": 46.53,
+        "e": 46.83
+      },
+      {
+        "w": "tarixida",
+        "s": 46.87,
+        "e": 47.29
+      },
+      {
+        "w": "ikkala",
+        "s": 47.45,
+        "e": 47.75
+      },
+      {
+        "w": "tarmoqning",
+        "s": 47.79,
+        "e": 48.27
+      },
+      {
+        "w": "muvaffaqiyatli",
+        "s": 48.55,
+        "e": 49.33
+      },
+      {
+        "w": "tutashgan",
+        "s": 49.37,
+        "e": 49.77
+      },
+      {
+        "w": "nuqtasini",
+        "s": 49.81,
+        "e": 50.21
+      },
+      {
+        "w": "mustahkamlaydi.",
+        "s": 50.25,
+        "e": 50.93
+      }
+    ]
+  },
+  {
+    "id": "l7",
+    "scene": "merge_base",
+    "text": "Git ikkala tomon nimalarni o‘zgartirganini aniqlash uchun ularning eng yaqin umumiy ajdodi bo‘lgan merge-base snapshotini asos qilib oladi.",
+    "show": "Git ikkala tomon nimalarni o‘zgartirganini aniqlash uchun ularning eng yaqin umumiy ajdodi bo‘lgan merge-base snapshotini asos qilib oladi.",
+    "say": "Git ikkala tomon nimalarni o‘zgartirganini aniqlash uchun ularning eng yaqin umumiy ajdodi bo‘lgan merj-beys snepshotini asos qilib oladi.",
+    "a0": 52.15,
+    "a1": 59.98,
+    "words": [
+      {
+        "w": "Git",
+        "s": 52.15,
+        "e": 52.33
+      },
+      {
+        "w": "ikkala",
+        "s": 52.54,
+        "e": 52.82
+      },
+      {
+        "w": "tomon",
+        "s": 52.86,
+        "e": 53.08
+      },
+      {
+        "w": "nimalarni",
+        "s": 53.12,
+        "e": 53.6
+      },
+      {
+        "w": "o‘zgartirganini",
+        "s": 53.66,
+        "e": 54.36
+      },
+      {
+        "w": "aniqlash",
+        "s": 54.42,
+        "e": 54.78
+      },
+      {
+        "w": "uchun",
+        "s": 54.82,
+        "e": 55.02
+      },
+      {
+        "w": "ularning",
+        "s": 55.3,
+        "e": 55.68
+      },
+      {
+        "w": "eng",
+        "s": 55.88,
+        "e": 56.02
+      },
+      {
+        "w": "yaqin",
+        "s": 56.08,
+        "e": 56.34
+      },
+      {
+        "w": "umumiy",
+        "s": 56.46,
+        "e": 56.8
+      },
+      {
+        "w": "ajdodi",
+        "s": 56.92,
+        "e": 57.26
+      },
+      {
+        "w": "bo‘lgan",
+        "s": 57.3,
+        "e": 57.62
+      },
+      {
+        "w": "merj-beys",
+        "s": 57.88,
+        "e": 58.5
+      },
+      {
+        "w": "snepshotini",
+        "s": 58.66,
+        "e": 59.22
+      },
+      {
+        "w": "asos",
+        "s": 59.28,
+        "e": 59.52
+      },
+      {
+        "w": "qilib",
+        "s": 59.56,
+        "e": 59.74
+      },
+      {
+        "w": "oladi.",
+        "s": 59.78,
+        "e": 59.98
+      }
+    ]
+  },
+  {
+    "id": "l8",
+    "scene": "merge_base",
+    "text": "Faqat bir tomon o‘zgartirgan fayllar uchun tayyor bloblar qayta ishlatiladi, natijada yangi keraksiz nusxalar saqlanmaydi.",
+    "show": "Faqat bir tomon o‘zgartirgan fayllar uchun tayyor bloblar qayta ishlatiladi, natijada yangi keraksiz nusxalar saqlanmaydi.",
+    "say": "Faqat bir tomon o‘zgartirgan fayllar uchun tayyor bloblar qayta ishlatiladi, natijada yangi keraksiz nusxalar saqlanmaydi.",
+    "a0": 60.66,
+    "a1": 67.4,
+    "words": [
+      {
+        "w": "Faqat",
+        "s": 60.66,
+        "e": 60.9
+      },
+      {
+        "w": "bir",
+        "s": 60.98,
+        "e": 61.08
+      },
+      {
+        "w": "tomon",
+        "s": 61.12,
+        "e": 61.34
+      },
+      {
+        "w": "o‘zgartirgan",
+        "s": 61.4,
+        "e": 61.92
+      },
+      {
+        "w": "fayllar",
+        "s": 61.98,
+        "e": 62.34
+      },
+      {
+        "w": "uchun",
+        "s": 62.4,
+        "e": 62.62
+      },
+      {
+        "w": "tayyor",
+        "s": 62.76,
+        "e": 63.1
+      },
+      {
+        "w": "bloblar",
+        "s": 63.16,
+        "e": 63.54
+      },
+      {
+        "w": "qayta",
+        "s": 63.64,
+        "e": 63.9
+      },
+      {
+        "w": "ishlatiladi,",
+        "s": 63.96,
+        "e": 64.44
+      },
+      {
+        "w": "natijada",
+        "s": 64.76,
+        "e": 65.2
+      },
+      {
+        "w": "yangi",
+        "s": 65.54,
+        "e": 65.84
+      },
+      {
+        "w": "keraksiz",
+        "s": 65.94,
+        "e": 66.42
+      },
+      {
+        "w": "nusxalar",
+        "s": 66.44,
+        "e": 66.82
+      },
+      {
+        "w": "saqlanmaydi.",
+        "s": 66.86,
+        "e": 67.4
+      }
+    ]
+  },
+  {
+    "id": "l9",
+    "scene": "branch_tozalash",
+    "text": "Merge yakunlangach, o‘z vazifasini o‘tab bo‘lgan branchni git branch minus d buyrug‘i yordamida bemalol o‘chirib tashlashimiz mumkin.",
+    "show": "Merge yakunlangach, o‘z vazifasini o‘tab bo‘lgan branchni git branch minus d buyrug‘i yordamida bemalol o‘chirib tashlashimiz mumkin.",
+    "say": "Merj yakunlangach, o‘z vazifasini o‘tab bo‘lgan brenchni git brench minus di buyrug‘i yordamida bemalol o‘chirib tashlashimiz mumkin.",
+    "a0": 68.17,
+    "a1": 75.61,
+    "words": [
+      {
+        "w": "Merj",
+        "s": 68.17,
+        "e": 68.39
+      },
+      {
+        "w": "yakunlangach,",
+        "s": 68.45,
+        "e": 69.03
+      },
+      {
+        "w": "o‘z",
+        "s": 69.31,
+        "e": 69.39
+      },
+      {
+        "w": "vazifasini",
+        "s": 69.45,
+        "e": 69.93
+      },
+      {
+        "w": "o‘tab",
+        "s": 69.99,
+        "e": 70.21
+      },
+      {
+        "w": "bo‘lgan",
+        "s": 70.25,
+        "e": 70.55
+      },
+      {
+        "w": "brenchni",
+        "s": 70.61,
+        "e": 71.01
+      },
+      {
+        "w": "git",
+        "s": 71.37,
+        "e": 71.53
+      },
+      {
+        "w": "brench",
+        "s": 71.63,
+        "e": 71.95
+      },
+      {
+        "w": "minus",
+        "s": 72.11,
+        "e": 72.43
+      },
+      {
+        "w": "di",
+        "s": 72.69,
+        "e": 72.79
+      },
+      {
+        "w": "buyrug‘i",
+        "s": 72.93,
+        "e": 73.27
+      },
+      {
+        "w": "yordamida",
+        "s": 73.31,
+        "e": 73.75
+      },
+      {
+        "w": "bemalol",
+        "s": 74.05,
+        "e": 74.47
+      },
+      {
+        "w": "o‘chirib",
+        "s": 74.53,
+        "e": 74.77
+      },
+      {
+        "w": "tashlashimiz",
+        "s": 74.81,
+        "e": 75.29
+      },
+      {
+        "w": "mumkin.",
+        "s": 75.31,
+        "e": 75.61
+      }
+    ]
+  },
+  {
+    "id": "l10",
+    "scene": "branch_tozalash",
+    "text": "Bunda qilingan commitlar tarixdan yo‘qolmaydi, chunki ular endi asosiy branchni ota commitlari zanjiriga mustahkam ulanib bo‘lgan.",
+    "show": "Bunda qilingan commitlar tarixdan yo‘qolmaydi, chunki ular endi asosiy branchni ota commitlari zanjiriga mustahkam ulanib bo‘lgan.",
+    "say": "Bunda qilingan kommitlar tarixdan yo‘qolmaydi, chunki ular endi asosiy brenchni ota kommitlari zanjiriga mustahkam ulanib bo‘lgan.",
+    "a0": 76.15,
+    "a1": 83.3,
+    "words": [
+      {
+        "w": "Bunda",
+        "s": 76.15,
+        "e": 76.35
+      },
+      {
+        "w": "qilingan",
+        "s": 76.39,
+        "e": 76.73
+      },
+      {
+        "w": "kommitlar",
+        "s": 76.77,
+        "e": 77.17
+      },
+      {
+        "w": "tarixdan",
+        "s": 77.39,
+        "e": 77.81
+      },
+      {
+        "w": "yo‘qolmaydi,",
+        "s": 77.87,
+        "e": 78.41
+      },
+      {
+        "w": "chunki",
+        "s": 78.57,
+        "e": 78.81
+      },
+      {
+        "w": "ular",
+        "s": 79.11,
+        "e": 79.29
+      },
+      {
+        "w": "endi",
+        "s": 79.37,
+        "e": 79.55
+      },
+      {
+        "w": "asosiy",
+        "s": 79.73,
+        "e": 80.11
+      },
+      {
+        "w": "brenchni",
+        "s": 80.19,
+        "e": 80.57
+      },
+      {
+        "w": "ota",
+        "s": 80.71,
+        "e": 80.85
+      },
+      {
+        "w": "kommitlari",
+        "s": 80.91,
+        "e": 81.35
+      },
+      {
+        "w": "zanjiriga",
+        "s": 81.37,
+        "e": 81.81
+      },
+      {
+        "w": "mustahkam",
+        "s": 82.09,
+        "e": 82.6
+      },
+      {
+        "w": "ulanib",
+        "s": 82.66,
+        "e": 82.94
+      },
+      {
+        "w": "bo‘lgan.",
+        "s": 82.98,
+        "e": 83.3
+      }
+    ]
+  },
+  {
+    "id": "l11",
+    "scene": "xulosa",
+    "text": "Jamoaviy qoidalarga qarab faqat fast-forward ruxsat beruvchi ff-only yoki alohida merge commit yaratuvchi no-ff bayroqlaridan foydalaniladi.",
+    "show": "Jamoaviy qoidalarga qarab faqat fast-forward ruxsat beruvchi ff-only yoki alohida merge commit yaratuvchi no-ff bayroqlaridan foydalaniladi.",
+    "say": "Jamoaviy qoidalarga qarab faqat fast-forvard ruxsat beruvchi ef-ef-onli yoki alohida merj kommit yaratuvchi no-ef-ef bayroqlaridan foydalaniladi.",
+    "a0": 84.0,
+    "a1": 92.44,
+    "words": [
+      {
+        "w": "Jamoaviy",
+        "s": 84.0,
+        "e": 84.36
+      },
+      {
+        "w": "qoidalarga",
+        "s": 84.4,
+        "e": 84.88
+      },
+      {
+        "w": "qarab",
+        "s": 84.92,
+        "e": 85.16
+      },
+      {
+        "w": "faqat",
+        "s": 85.32,
+        "e": 85.58
+      },
+      {
+        "w": "fast-forvard",
+        "s": 85.62,
+        "e": 86.22
+      },
+      {
+        "w": "ruxsat",
+        "s": 86.34,
+        "e": 86.6
+      },
+      {
+        "w": "beruvchi",
+        "s": 86.64,
+        "e": 86.98
+      },
+      {
+        "w": "ef-ef-onli",
+        "s": 87.22,
+        "e": 87.9
+      },
+      {
+        "w": "yoki",
+        "s": 87.9,
+        "e": 88.36
+      },
+      {
+        "w": "alohida",
+        "s": 88.7,
+        "e": 89.14
+      },
+      {
+        "w": "merj",
+        "s": 89.22,
+        "e": 89.42
+      },
+      {
+        "w": "kommit",
+        "s": 89.46,
+        "e": 89.72
+      },
+      {
+        "w": "yaratuvchi",
+        "s": 89.76,
+        "e": 90.18
+      },
+      {
+        "w": "no-ef-ef",
+        "s": 90.44,
+        "e": 91.02
+      },
+      {
+        "w": "bayroqlaridan",
+        "s": 91.1,
+        "e": 91.72
+      },
+      {
+        "w": "foydalaniladi.",
+        "s": 91.76,
+        "e": 92.44
+      }
+    ]
+  },
+  {
+    "id": "l12",
+    "scene": "xulosa",
+    "text": "Keyingi bobda ikkala branch bitta faylning ayni bir qatorini tahrirlaganda yuzaga keladigan konfliktlarni hal qilishni o‘rganamiz.",
+    "show": "Keyingi bobda ikkala branch bitta faylning ayni bir qatorini tahrirlaganda yuzaga keladigan konfliktlarni hal qilishni o‘rganamiz.",
+    "say": "Keyingi bobda ikkala brench bitta faylning ayni bir qatorini tahrirlaganda yuzaga keladigan konfliktlarni hal qilishni o‘rganamiz.",
+    "a0": 93.09,
+    "a1": 99.68,
+    "words": [
+      {
+        "w": "Keyingi",
+        "s": 93.09,
+        "e": 93.37
+      },
+      {
+        "w": "bobda",
+        "s": 93.39,
+        "e": 93.63
+      },
+      {
+        "w": "ikkala",
+        "s": 93.93,
+        "e": 94.21
+      },
+      {
+        "w": "brench",
+        "s": 94.25,
+        "e": 94.53
+      },
+      {
+        "w": "bitta",
+        "s": 94.63,
+        "e": 94.85
+      },
+      {
+        "w": "faylning",
+        "s": 94.89,
+        "e": 95.33
+      },
+      {
+        "w": "ayni",
+        "s": 95.53,
+        "e": 95.77
+      },
+      {
+        "w": "bir",
+        "s": 95.81,
+        "e": 95.91
+      },
+      {
+        "w": "qatorini",
+        "s": 95.95,
+        "e": 96.35
+      },
+      {
+        "w": "tahrirlaganda",
+        "s": 96.41,
+        "e": 97.09
+      },
+      {
+        "w": "yuzaga",
+        "s": 97.13,
+        "e": 97.39
+      },
+      {
+        "w": "keladigan",
+        "s": 97.43,
+        "e": 97.86
+      },
+      {
+        "w": "konfliktlarni",
+        "s": 97.9,
+        "e": 98.54
+      },
+      {
+        "w": "hal",
+        "s": 98.66,
+        "e": 98.84
+      },
+      {
+        "w": "qilishni",
+        "s": 98.9,
+        "e": 99.18
+      },
+      {
+        "w": "o‘rganamiz.",
+        "s": 99.22,
+        "e": 99.68
+      }
+    ]
+  }
+]

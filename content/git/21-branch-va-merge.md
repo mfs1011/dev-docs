@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" playsinline poster="/video/git/21-branch-va-merge.jpg" src="/video/git/21-branch-va-merge.mp4">
+    <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/git/21-branch-va-merge.chapters.vtt" default>
+    <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/git/21-branch-va-merge.uz.vtt">
+  </video>
+  <figcaption>21.1-video. Git'da branch yaratish, fast-forward va merge mexanizmi</figcaption>
+</figure>
+
 [20-bobda](20-branch-bu-ref.md) branch'ni ochishni, unga o'tishni va tarixni ajratishni ko'rdik. Endi teskari ish: ajralgan tarixni yana bitta qilish. Buni **merge** (birlashtirish) bajaradi.
 
 `git merge` hujjati buyruqni bir jumlada ta'riflaydi: "ikki yoki undan ko'p rivojlanish tarixini bir-biriga qo'shadi". Aniqrog'i: siz ko'rsatgan commit'larda **tarixlar ajralgan paytdan beri** qilingan o'zgarishlarni **joriy branch'ga** olib kiradi.
