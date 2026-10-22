@@ -1,0 +1,61 @@
+WEBVTT
+
+1
+00:01.420 --> 00:12.640
+Ish jarayonida shoshilinch boshqa vazifaga o'tish kerak bo'lganda, chala qolgan o'zgarishlarni yo'qotmasdan
+va keraksiz xom commit yaratmasdan vaqtincha yashirib qo'yish uchun git stash buyrug'i ishlatiladi.
+
+2
+00:12.810 --> 00:21.460
+Oddiy git stash buyrug'i joriy tracked fayllar va index holatini stack
+tuzilmasiga saqlaydi hamda ishchi daraxtni toza HEAD commit holatiga qaytaradi.
+
+3
+00:24.790 --> 00:32.090
+Gitda stash maxsus fayl turi emas, balki odatiy commit obyektlari
+va refs stash havolasi orqali boshqariladigan zanjirdir.
+
+4
+00:32.380 --> 00:41.230
+U ikkita ota commitga tayanadi: H joriy HEAD commit, I esa index holatini
+ifodalaydi; untracked fayllar saqlanganda uchinchi ota qo'shiladi.
+
+5
+00:44.960 --> 00:52.860
+Saqlangan o'zgarishlar ro'yxatini git stash list, ularning to'liq
+patch farqini esa git stash show minus p orqali tekshirish mumkin.
+
+6
+00:53.130 --> 01:03.290
+git stash pop o'zgarishlarni ishchi daraxtga qaytarib ro'yxatdan o'chiradi, apply esa saqlab
+qoladi; index holatini birga tiklash uchun esa minus-minus index kaliti talab etiladi.
+
+7
+01:06.980 --> 01:14.890
+Faqat stage qilinmagan qismlarni yashirish uchun keep-index, faqat indexdagi
+o'zgarishlarni ajratib olish uchun esa staged bayrog'idan foydalaniladi.
+
+8
+01:15.100 --> 01:24.160
+Kuzatilmayotgan fayllarni birga saqlash uchun minus u, ignore qilinganlar bilan
+to'liq tozalash uchun minus a, hunkma-hunk tanlash uchun esa minus p qo'llanadi.
+
+9
+01:27.950 --> 01:36.840
+Agar branch o'zgarib stash qo'llashda konflikt chiqsa, pop stashni o'chirib
+yubormaydi; qulay yechim sifatida git stash branch yangi xavfsiz shoxcha ochib beradi.
+
+10
+01:36.990 --> 01:46.290
+Tasodifan drop yoki clear bilan o'chirilgan stash commitlarini git fsck unreachable
+orqali topib, git stash store yordamida ro'yxatga qayta tiklash mumkin.
+
+11
+01:50.220 --> 01:56.820
+git clean buyrug'i ombordan tashqarida yotgan kuzatilmayotgan
+vaqtinchalik chiqindilarni diskdan butunlay o'chirib tashlaydi.
+
+12
+01:56.890 --> 02:06.370
+Xavfsizlik uchun avval minus n sinovini o'tkazing; papkalarni o'chirishda minus
+d, ignored fayllar uchun minus x va interaktiv saralashda minus i yordam beradi.
