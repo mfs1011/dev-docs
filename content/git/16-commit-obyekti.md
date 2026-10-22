@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" playsinline poster="/video/git/16-commit-obyekti.jpg" src="/video/git/16-commit-obyekti.mp4">
+    <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/git/16-commit-obyekti.chapters.vtt" default>
+    <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/git/16-commit-obyekti.uz.vtt">
+  </video>
+  <figcaption>16.1-video. Commit obyekti</figcaption>
+</figure>
+
 [15-bobda](15-tree-va-index.md) uchta tree yasadik — loyihaning uchta surati: `d8329fc`, `0155eb4` va `3c4e9cd`. Lekin Pro Git aytganidek, muammo hali hal bo'lmadi:
 
 - suratlarni qaytarib olish uchun uchala hash'ni **eslab qolish** kerak;

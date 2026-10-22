@@ -1,0 +1,1139 @@
+[
+  {
+    "id": "l1",
+    "scene": "intro",
+    "text": "Salom! Ushbu o‘n oltinchi bobda Git arxitekturasining markaziy ustuni bo‘lgan commit obyektining ichki tuzilishini o‘rganamiz.",
+    "show": "Salom! Ushbu o‘n oltinchi bobda Git arxitekturasining markaziy ustuni bo‘lgan commit obyektining ichki tuzilishini o‘rganamiz.",
+    "say": "Salom! Ushbu o‘n oltinchi bobda Git arxitekturasining markaziy ustuni bo‘lgan kommit obyektining ichki tuzilishini o‘rganamiz.",
+    "a0": 0.26,
+    "a1": 8.05,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.26,
+        "e": 0.52
+      },
+      {
+        "w": "Ushbu",
+        "s": 1.26,
+        "e": 1.5
+      },
+      {
+        "w": "o‘n",
+        "s": 1.7,
+        "e": 1.78
+      },
+      {
+        "w": "oltinchi",
+        "s": 1.86,
+        "e": 2.22
+      },
+      {
+        "w": "bobda",
+        "s": 2.26,
+        "e": 2.54
+      },
+      {
+        "w": "Git",
+        "s": 2.98,
+        "e": 3.14
+      },
+      {
+        "w": "arxitekturasining",
+        "s": 3.22,
+        "e": 4.14
+      },
+      {
+        "w": "markaziy",
+        "s": 4.22,
+        "e": 4.68
+      },
+      {
+        "w": "ustuni",
+        "s": 4.78,
+        "e": 5.1
+      },
+      {
+        "w": "bo‘lgan",
+        "s": 5.14,
+        "e": 5.46
+      },
+      {
+        "w": "kommit",
+        "s": 5.6,
+        "e": 5.9
+      },
+      {
+        "w": "obyektining",
+        "s": 5.98,
+        "e": 6.48
+      },
+      {
+        "w": "ichki",
+        "s": 6.82,
+        "e": 7.06
+      },
+      {
+        "w": "tuzilishini",
+        "s": 7.1,
+        "e": 7.57
+      },
+      {
+        "w": "o‘rganamiz.",
+        "s": 7.61,
+        "e": 8.05
+      }
+    ]
+  },
+  {
+    "id": "l2",
+    "scene": "intro",
+    "text": "Tree ma’lum holatni saqlasa, commit shu holatni vaqtga joylaydi, unga kim va nima maqsadda kelganini tushuntirib beradi.",
+    "show": "Tree ma’lum holatni saqlasa, commit shu holatni vaqtga joylaydi, unga kim va nima maqsadda kelganini tushuntirib beradi.",
+    "say": "Tri ma’lum holatni saqlasa, kommit shu holatni vaqtga joylaydi, unga kim va nima maqsadda kelganini tushuntirib beradi.",
+    "a0": 8.99,
+    "a1": 16.15,
+    "words": [
+      {
+        "w": "Tri",
+        "s": 8.99,
+        "e": 9.17
+      },
+      {
+        "w": "ma’lum",
+        "s": 9.41,
+        "e": 9.69
+      },
+      {
+        "w": "holatni",
+        "s": 9.73,
+        "e": 10.09
+      },
+      {
+        "w": "saqlasa,",
+        "s": 10.11,
+        "e": 10.51
+      },
+      {
+        "w": "kommit",
+        "s": 10.85,
+        "e": 11.13
+      },
+      {
+        "w": "shu",
+        "s": 11.19,
+        "e": 11.27
+      },
+      {
+        "w": "holatni",
+        "s": 11.35,
+        "e": 11.73
+      },
+      {
+        "w": "vaqtga",
+        "s": 11.79,
+        "e": 12.09
+      },
+      {
+        "w": "joylaydi,",
+        "s": 12.15,
+        "e": 12.53
+      },
+      {
+        "w": "unga",
+        "s": 13.13,
+        "e": 13.35
+      },
+      {
+        "w": "kim",
+        "s": 13.73,
+        "e": 14.01
+      },
+      {
+        "w": "va",
+        "s": 14.15,
+        "e": 14.23
+      },
+      {
+        "w": "nima",
+        "s": 14.33,
+        "e": 14.51
+      },
+      {
+        "w": "maqsadda",
+        "s": 14.55,
+        "e": 14.93
+      },
+      {
+        "w": "kelganini",
+        "s": 14.97,
+        "e": 15.43
+      },
+      {
+        "w": "tushuntirib",
+        "s": 15.45,
+        "e": 15.83
+      },
+      {
+        "w": "beradi.",
+        "s": 15.87,
+        "e": 16.15
+      }
+    ]
+  },
+  {
+    "id": "l3",
+    "scene": "commit_tuzilishi",
+    "text": "Commit beshta asosiy qismdan iborat: ildiz tree hashi, ota commitlar ro‘yxati, muallif, commit qiluvchi hamda tushuntirish xabari.",
+    "show": "Commit beshta asosiy qismdan iborat: ildiz tree hashi, ota commitlar ro‘yxati, muallif, commit qiluvchi hamda tushuntirish xabari.",
+    "say": "Kommit beshta asosiy qismdan iborat: ildiz tri heshi, ota kommitlar ro‘yxati, muallif, kommit qiluvchi hamda tushuntirish xabari.",
+    "a0": 17.07,
+    "a1": 25.34,
+    "words": [
+      {
+        "w": "Kommit",
+        "s": 17.07,
+        "e": 17.35
+      },
+      {
+        "w": "beshta",
+        "s": 17.49,
+        "e": 17.79
+      },
+      {
+        "w": "asosiy",
+        "s": 17.87,
+        "e": 18.21
+      },
+      {
+        "w": "qismdan",
+        "s": 18.25,
+        "e": 18.59
+      },
+      {
+        "w": "iborat:",
+        "s": 18.61,
+        "e": 18.93
+      },
+      {
+        "w": "ildiz",
+        "s": 19.43,
+        "e": 19.69
+      },
+      {
+        "w": "tri",
+        "s": 19.73,
+        "e": 19.89
+      },
+      {
+        "w": "heshi,",
+        "s": 19.99,
+        "e": 20.27
+      },
+      {
+        "w": "ota",
+        "s": 20.79,
+        "e": 20.95
+      },
+      {
+        "w": "kommitlar",
+        "s": 21.01,
+        "e": 21.41
+      },
+      {
+        "w": "ro‘yxati,",
+        "s": 21.47,
+        "e": 21.89
+      },
+      {
+        "w": "muallif,",
+        "s": 22.31,
+        "e": 22.78
+      },
+      {
+        "w": "kommit",
+        "s": 23.1,
+        "e": 23.36
+      },
+      {
+        "w": "qiluvchi",
+        "s": 23.42,
+        "e": 23.8
+      },
+      {
+        "w": "hamda",
+        "s": 24.1,
+        "e": 24.36
+      },
+      {
+        "w": "tushuntirish",
+        "s": 24.52,
+        "e": 24.98
+      },
+      {
+        "w": "xabari.",
+        "s": 25.02,
+        "e": 25.34
+      }
+    ]
+  },
+  {
+    "id": "l4",
+    "scene": "commit_tuzilishi",
+    "text": "Git hech qachon diff saqlamaydi; u loyihaning to‘liq suratini saqlab, farqlarni har gal ota commit bilan solishtirib hisoblaydi.",
+    "show": "Git hech qachon diff saqlamaydi; u loyihaning to‘liq suratini saqlab, farqlarni har gal ota commit bilan solishtirib hisoblaydi.",
+    "say": "Git hech qachon diff saqlamaydi; u loyihaning to‘liq suratini saqlab, farqlarni har gal ota kommit bilan solishtirib hisoblaydi.",
+    "a0": 26.34,
+    "a1": 33.1,
+    "words": [
+      {
+        "w": "Git",
+        "s": 26.34,
+        "e": 26.48
+      },
+      {
+        "w": "hech",
+        "s": 26.52,
+        "e": 26.68
+      },
+      {
+        "w": "qachon",
+        "s": 26.7,
+        "e": 26.96
+      },
+      {
+        "w": "diff",
+        "s": 27.02,
+        "e": 27.18
+      },
+      {
+        "w": "saqlamaydi;",
+        "s": 27.18,
+        "e": 28.16
+      },
+      {
+        "w": "u",
+        "s": 28.16,
+        "e": 28.18
+      },
+      {
+        "w": "loyihaning",
+        "s": 28.38,
+        "e": 28.84
+      },
+      {
+        "w": "to‘liq",
+        "s": 28.92,
+        "e": 29.18
+      },
+      {
+        "w": "suratini",
+        "s": 29.22,
+        "e": 29.62
+      },
+      {
+        "w": "saqlab,",
+        "s": 29.66,
+        "e": 29.96
+      },
+      {
+        "w": "farqlarni",
+        "s": 30.24,
+        "e": 30.72
+      },
+      {
+        "w": "har",
+        "s": 30.84,
+        "e": 31.06
+      },
+      {
+        "w": "gal",
+        "s": 31.16,
+        "e": 31.34
+      },
+      {
+        "w": "ota",
+        "s": 31.5,
+        "e": 31.66
+      },
+      {
+        "w": "kommit",
+        "s": 31.7,
+        "e": 31.98
+      },
+      {
+        "w": "bilan",
+        "s": 32.0,
+        "e": 32.18
+      },
+      {
+        "w": "solishtirib",
+        "s": 32.22,
+        "e": 32.64
+      },
+      {
+        "w": "hisoblaydi.",
+        "s": 32.66,
+        "e": 33.1
+      }
+    ]
+  },
+  {
+    "id": "l5",
+    "scene": "commit_tree_amalda",
+    "text": "Plumbing darajasidagi git commit-tree buyrug‘i berilgan tree hashi va xabar asosida to‘g‘ridan-to‘g‘ri commit obyekti yasab beradi.",
+    "show": "Plumbing darajasidagi git commit-tree buyrug‘i berilgan tree hashi va xabar asosida to‘g‘ridan-to‘g‘ri commit obyekti yasab beradi.",
+    "say": "Plumbing darajasidagi git kommit-tri buyrug‘i berilgan tri heshi va xabar asosida to‘g‘ridan-to‘g‘ri kommit obyekti yasab beradi.",
+    "a0": 34.24,
+    "a1": 41.29,
+    "words": [
+      {
+        "w": "Plumbing",
+        "s": 34.24,
+        "e": 34.66
+      },
+      {
+        "w": "darajasidagi",
+        "s": 34.68,
+        "e": 35.32
+      },
+      {
+        "w": "git",
+        "s": 35.64,
+        "e": 35.82
+      },
+      {
+        "w": "kommit-tri",
+        "s": 35.9,
+        "e": 36.4
+      },
+      {
+        "w": "buyrug‘i",
+        "s": 36.5,
+        "e": 36.88
+      },
+      {
+        "w": "berilgan",
+        "s": 37.2,
+        "e": 37.61
+      },
+      {
+        "w": "tri",
+        "s": 37.65,
+        "e": 37.79
+      },
+      {
+        "w": "heshi",
+        "s": 37.87,
+        "e": 38.13
+      },
+      {
+        "w": "va",
+        "s": 38.21,
+        "e": 38.27
+      },
+      {
+        "w": "xabar",
+        "s": 38.43,
+        "e": 38.67
+      },
+      {
+        "w": "asosida",
+        "s": 38.75,
+        "e": 39.19
+      },
+      {
+        "w": "to‘g‘ridan-to‘g‘ri",
+        "s": 39.31,
+        "e": 40.03
+      },
+      {
+        "w": "kommit",
+        "s": 40.09,
+        "e": 40.33
+      },
+      {
+        "w": "obyekti",
+        "s": 40.39,
+        "e": 40.71
+      },
+      {
+        "w": "yasab",
+        "s": 40.73,
+        "e": 40.97
+      },
+      {
+        "w": "beradi.",
+        "s": 41.01,
+        "e": 41.29
+      }
+    ]
+  },
+  {
+    "id": "l6",
+    "scene": "commit_tree_amalda",
+    "text": "Birinchi commit ildiz hisoblanib otasiz yaratiladi, keyingilari esa minus p parametri orqali oldingi commitga mustahkam bog‘lanadi.",
+    "show": "Birinchi commit ildiz hisoblanib otasiz yaratiladi, keyingilari esa minus p parametri orqali oldingi commitga mustahkam bog‘lanadi.",
+    "say": "Birinchi kommit ildiz hisoblanib otasiz yaratiladi, keyingilari esa minus pi parametri orqali oldingi kommitga mustahkam bog‘lanadi.",
+    "a0": 42.27,
+    "a1": 49.65,
+    "words": [
+      {
+        "w": "Birinchi",
+        "s": 42.27,
+        "e": 42.55
+      },
+      {
+        "w": "kommit",
+        "s": 42.57,
+        "e": 42.85
+      },
+      {
+        "w": "ildiz",
+        "s": 42.97,
+        "e": 43.21
+      },
+      {
+        "w": "hisoblanib",
+        "s": 43.23,
+        "e": 43.69
+      },
+      {
+        "w": "otasiz",
+        "s": 43.81,
+        "e": 44.15
+      },
+      {
+        "w": "yaratiladi,",
+        "s": 44.23,
+        "e": 44.69
+      },
+      {
+        "w": "keyingilari",
+        "s": 44.99,
+        "e": 45.47
+      },
+      {
+        "w": "esa",
+        "s": 45.51,
+        "e": 45.69
+      },
+      {
+        "w": "minus",
+        "s": 45.99,
+        "e": 46.31
+      },
+      {
+        "w": "pi",
+        "s": 46.41,
+        "e": 46.51
+      },
+      {
+        "w": "parametri",
+        "s": 46.63,
+        "e": 47.09
+      },
+      {
+        "w": "orqali",
+        "s": 47.13,
+        "e": 47.43
+      },
+      {
+        "w": "oldingi",
+        "s": 47.75,
+        "e": 48.07
+      },
+      {
+        "w": "kommitga",
+        "s": 48.11,
+        "e": 48.51
+      },
+      {
+        "w": "mustahkam",
+        "s": 48.69,
+        "e": 49.17
+      },
+      {
+        "w": "bog‘lanadi.",
+        "s": 49.21,
+        "e": 49.65
+      }
+    ]
+  },
+  {
+    "id": "l7",
+    "scene": "ota_zanjiri",
+    "text": "Commit faqat o‘z otasini biladi, lekin bolalarini bilmaydi; bu esa butun loyiha tarixini yangidan eskiga yo‘naltirilgan grafga aylantiradi.",
+    "show": "Commit faqat o‘z otasini biladi, lekin bolalarini bilmaydi; bu esa butun loyiha tarixini yangidan eskiga yo‘naltirilgan grafga aylantiradi.",
+    "say": "Kommit faqat o‘z otasini biladi, lekin bolalarini bilmaydi; bu esa butun loyiha tarixini yangidan eskiga yo‘naltirilgan grafga aylantiradi.",
+    "a0": 50.65,
+    "a1": 58.58,
+    "words": [
+      {
+        "w": "Kommit",
+        "s": 50.65,
+        "e": 50.93
+      },
+      {
+        "w": "faqat",
+        "s": 51.07,
+        "e": 51.33
+      },
+      {
+        "w": "o‘z",
+        "s": 51.45,
+        "e": 51.57
+      },
+      {
+        "w": "otasini",
+        "s": 51.65,
+        "e": 51.99
+      },
+      {
+        "w": "biladi,",
+        "s": 52.03,
+        "e": 52.25
+      },
+      {
+        "w": "lekin",
+        "s": 52.49,
+        "e": 52.72
+      },
+      {
+        "w": "bolalarini",
+        "s": 52.8,
+        "e": 53.28
+      },
+      {
+        "w": "bilmaydi;",
+        "s": 53.28,
+        "e": 54.1
+      },
+      {
+        "w": "bu",
+        "s": 54.1,
+        "e": 54.14
+      },
+      {
+        "w": "esa",
+        "s": 54.2,
+        "e": 54.36
+      },
+      {
+        "w": "butun",
+        "s": 54.5,
+        "e": 54.74
+      },
+      {
+        "w": "loyiha",
+        "s": 54.78,
+        "e": 55.04
+      },
+      {
+        "w": "tarixini",
+        "s": 55.1,
+        "e": 55.5
+      },
+      {
+        "w": "yangidan",
+        "s": 55.82,
+        "e": 56.26
+      },
+      {
+        "w": "eskiga",
+        "s": 56.42,
+        "e": 56.74
+      },
+      {
+        "w": "yo‘naltirilgan",
+        "s": 56.82,
+        "e": 57.44
+      },
+      {
+        "w": "grafga",
+        "s": 57.72,
+        "e": 58.08
+      },
+      {
+        "w": "aylantiradi.",
+        "s": 58.12,
+        "e": 58.58
+      }
+    ]
+  },
+  {
+    "id": "l8",
+    "scene": "ota_zanjiri",
+    "text": "Ota hashining yozilishi zanjirli kafolat yaratadi: tarixdagi biror bayt o‘zgarsa, undan keyingi barcha commitlar hashi ham o‘zgaradi.",
+    "show": "Ota hashining yozilishi zanjirli kafolat yaratadi: tarixdagi biror bayt o‘zgarsa, undan keyingi barcha commitlar hashi ham o‘zgaradi.",
+    "say": "Ota hashining yozilishi zanjirli kafolat yaratadi: tarixdagi biror bayt o‘zgarsa, undan keyingi barcha kommitlar heshi ham o‘zgaradi.",
+    "a0": 59.56,
+    "a1": 66.5,
+    "words": [
+      {
+        "w": "Ota",
+        "s": 59.56,
+        "e": 59.7
+      },
+      {
+        "w": "hashining",
+        "s": 59.76,
+        "e": 60.12
+      },
+      {
+        "w": "yozilishi",
+        "s": 60.14,
+        "e": 60.56
+      },
+      {
+        "w": "zanjirli",
+        "s": 60.74,
+        "e": 61.18
+      },
+      {
+        "w": "kafolat",
+        "s": 61.22,
+        "e": 61.62
+      },
+      {
+        "w": "yaratadi:",
+        "s": 61.66,
+        "e": 62.02
+      },
+      {
+        "w": "tarixdagi",
+        "s": 62.46,
+        "e": 62.9
+      },
+      {
+        "w": "biror",
+        "s": 62.98,
+        "e": 63.28
+      },
+      {
+        "w": "bayt",
+        "s": 63.34,
+        "e": 63.52
+      },
+      {
+        "w": "o‘zgarsa,",
+        "s": 63.6,
+        "e": 64.02
+      },
+      {
+        "w": "undan",
+        "s": 64.32,
+        "e": 64.54
+      },
+      {
+        "w": "keyingi",
+        "s": 64.6,
+        "e": 64.92
+      },
+      {
+        "w": "barcha",
+        "s": 65.0,
+        "e": 65.3
+      },
+      {
+        "w": "kommitlar",
+        "s": 65.34,
+        "e": 65.7
+      },
+      {
+        "w": "heshi",
+        "s": 65.74,
+        "e": 65.94
+      },
+      {
+        "w": "ham",
+        "s": 65.94,
+        "e": 66.08
+      },
+      {
+        "w": "o‘zgaradi.",
+        "s": 66.12,
+        "e": 66.5
+      }
+    ]
+  },
+  {
+    "id": "l9",
+    "scene": "xom_baytlar",
+    "text": "Diskda commit toza matn ko‘rinishida bo‘lib, zlib bilan siqilgan holda nuqta git slesh objects papkasida saqlanadi.",
+    "show": "Diskda commit toza matn ko‘rinishida bo‘lib, zlib bilan siqilgan holda nuqta git slesh objects papkasida saqlanadi.",
+    "say": "Diskda kommit toza matn ko‘rinishida bo‘lib, zlib bilan siqilgan holda nuqta git slesh objects papkasida saqlanadi.",
+    "a0": 67.55,
+    "a1": 73.71,
+    "words": [
+      {
+        "w": "Diskda",
+        "s": 67.55,
+        "e": 67.89
+      },
+      {
+        "w": "kommit",
+        "s": 68.05,
+        "e": 68.31
+      },
+      {
+        "w": "toza",
+        "s": 68.37,
+        "e": 68.59
+      },
+      {
+        "w": "matn",
+        "s": 68.63,
+        "e": 68.87
+      },
+      {
+        "w": "ko‘rinishida",
+        "s": 68.91,
+        "e": 69.37
+      },
+      {
+        "w": "bo‘lib,",
+        "s": 69.41,
+        "e": 69.61
+      },
+      {
+        "w": "zlib",
+        "s": 69.91,
+        "e": 70.17
+      },
+      {
+        "w": "bilan",
+        "s": 70.19,
+        "e": 70.41
+      },
+      {
+        "w": "siqilgan",
+        "s": 70.45,
+        "e": 70.85
+      },
+      {
+        "w": "holda",
+        "s": 70.91,
+        "e": 71.17
+      },
+      {
+        "w": "nuqta",
+        "s": 71.49,
+        "e": 71.77
+      },
+      {
+        "w": "git",
+        "s": 71.85,
+        "e": 72.01
+      },
+      {
+        "w": "slesh",
+        "s": 72.05,
+        "e": 72.29
+      },
+      {
+        "w": "objects",
+        "s": 72.43,
+        "e": 72.77
+      },
+      {
+        "w": "papkasida",
+        "s": 72.81,
+        "e": 73.21
+      },
+      {
+        "w": "saqlanadi.",
+        "s": 73.25,
+        "e": 73.71
+      }
+    ]
+  },
+  {
+    "id": "l10",
+    "scene": "xom_baytlar",
+    "text": "Unga yangi commit qo‘shilgach, Git shunchaki branch ko‘rsatkichini ushbu yangi commit hashiga surib qo‘yadi xolos.",
+    "show": "Unga yangi commit qo‘shilgach, Git shunchaki branch ko‘rsatkichini ushbu yangi commit hashiga surib qo‘yadi xolos.",
+    "say": "Unga yangi kommit qo‘shilgach, Git shunchaki brench ko‘rsatkichini ushbu yangi kommit hashiga surib qo‘yadi xolos.",
+    "a0": 74.43,
+    "a1": 80.13,
+    "words": [
+      {
+        "w": "Unga",
+        "s": 74.43,
+        "e": 74.63
+      },
+      {
+        "w": "yangi",
+        "s": 74.85,
+        "e": 75.09
+      },
+      {
+        "w": "kommit",
+        "s": 75.13,
+        "e": 75.39
+      },
+      {
+        "w": "qo‘shilgach,",
+        "s": 75.41,
+        "e": 75.85
+      },
+      {
+        "w": "Git",
+        "s": 76.11,
+        "e": 76.25
+      },
+      {
+        "w": "shunchaki",
+        "s": 76.31,
+        "e": 76.71
+      },
+      {
+        "w": "brench",
+        "s": 76.79,
+        "e": 77.03
+      },
+      {
+        "w": "ko‘rsatkichini",
+        "s": 77.05,
+        "e": 77.63
+      },
+      {
+        "w": "ushbu",
+        "s": 77.89,
+        "e": 78.13
+      },
+      {
+        "w": "yangi",
+        "s": 78.25,
+        "e": 78.51
+      },
+      {
+        "w": "kommit",
+        "s": 78.55,
+        "e": 78.81
+      },
+      {
+        "w": "hashiga",
+        "s": 78.83,
+        "e": 79.17
+      },
+      {
+        "w": "surib",
+        "s": 79.27,
+        "e": 79.51
+      },
+      {
+        "w": "qo‘yadi",
+        "s": 79.57,
+        "e": 79.85
+      },
+      {
+        "w": "xolos.",
+        "s": 79.87,
+        "e": 80.13
+      }
+    ]
+  },
+  {
+    "id": "l11",
+    "scene": "xulosa",
+    "text": "Shunday qilib, Git yadrosidagi uch buyuk poydevor — blob, tree va commit birgalikda to‘liq ishlaydigan versiya tizimini hosil qiladi.",
+    "show": "Shunday qilib, Git yadrosidagi uch buyuk poydevor — blob, tree va commit birgalikda to‘liq ishlaydigan versiya tizimini hosil qiladi.",
+    "say": "Shunday qilib, Git yadrosidagi uch buyuk poydevor — blob, tri va kommit birgalikda to‘liq ishlaydigan versiya tizimini hosil qiladi.",
+    "a0": 81.27,
+    "a1": 88.64,
+    "words": [
+      {
+        "w": "Shunday",
+        "s": 81.27,
+        "e": 81.51
+      },
+      {
+        "w": "qilib,",
+        "s": 81.53,
+        "e": 81.75
+      },
+      {
+        "w": "Git",
+        "s": 81.95,
+        "e": 82.09
+      },
+      {
+        "w": "yadrosidagi",
+        "s": 82.15,
+        "e": 82.78
+      },
+      {
+        "w": "uch",
+        "s": 83.0,
+        "e": 83.14
+      },
+      {
+        "w": "buyuk",
+        "s": 83.24,
+        "e": 83.48
+      },
+      {
+        "w": "poydevor",
+        "s": 83.54,
+        "e": 84.08
+      },
+      {
+        "w": "—",
+        "s": 84.08,
+        "e": 84.08
+      },
+      {
+        "w": "blob,",
+        "s": 84.4,
+        "e": 84.66
+      },
+      {
+        "w": "tri",
+        "s": 84.84,
+        "e": 85.02
+      },
+      {
+        "w": "va",
+        "s": 85.14,
+        "e": 85.22
+      },
+      {
+        "w": "kommit",
+        "s": 85.36,
+        "e": 85.66
+      },
+      {
+        "w": "birgalikda",
+        "s": 85.86,
+        "e": 86.32
+      },
+      {
+        "w": "to‘liq",
+        "s": 86.44,
+        "e": 86.72
+      },
+      {
+        "w": "ishlaydigan",
+        "s": 86.78,
+        "e": 87.28
+      },
+      {
+        "w": "versiya",
+        "s": 87.36,
+        "e": 87.7
+      },
+      {
+        "w": "tizimini",
+        "s": 87.74,
+        "e": 88.08
+      },
+      {
+        "w": "hosil",
+        "s": 88.1,
+        "e": 88.38
+      },
+      {
+        "w": "qiladi.",
+        "s": 88.4,
+        "e": 88.64
+      }
+    ]
+  },
+  {
+    "id": "l12",
+    "scene": "xulosa",
+    "text": "Keyingi o‘n yettinchi bobda commitlarga oson ishora qiluvchi ref ko‘rsatkichlari, HEAD fayli va teg obyektlarini ko‘rib chiqamiz.",
+    "show": "Keyingi o‘n yettinchi bobda commitlarga oson ishora qiluvchi ref ko‘rsatkichlari, HEAD fayli va teg obyektlarini ko‘rib chiqamiz.",
+    "say": "Keyingi o‘n yettinchi bobda commitlarga oson ishora qiluvchi ref ko‘rsatkichlari, hed fayli va teg obyektlarini ko‘rib chiqamiz.",
+    "a0": 89.6,
+    "a1": 96.64,
+    "words": [
+      {
+        "w": "Keyingi",
+        "s": 89.6,
+        "e": 89.9
+      },
+      {
+        "w": "o‘n",
+        "s": 90.04,
+        "e": 90.12
+      },
+      {
+        "w": "yettinchi",
+        "s": 90.16,
+        "e": 90.5
+      },
+      {
+        "w": "bobda",
+        "s": 90.52,
+        "e": 90.78
+      },
+      {
+        "w": "commitlarga",
+        "s": 91.08,
+        "e": 91.6
+      },
+      {
+        "w": "oson",
+        "s": 91.73,
+        "e": 92.01
+      },
+      {
+        "w": "ishora",
+        "s": 92.07,
+        "e": 92.35
+      },
+      {
+        "w": "qiluvchi",
+        "s": 92.39,
+        "e": 92.73
+      },
+      {
+        "w": "ref",
+        "s": 93.01,
+        "e": 93.19
+      },
+      {
+        "w": "ko‘rsatkichlari,",
+        "s": 93.23,
+        "e": 93.89
+      },
+      {
+        "w": "hed",
+        "s": 94.25,
+        "e": 94.43
+      },
+      {
+        "w": "fayli",
+        "s": 94.51,
+        "e": 94.83
+      },
+      {
+        "w": "va",
+        "s": 94.91,
+        "e": 94.99
+      },
+      {
+        "w": "teg",
+        "s": 95.26,
+        "e": 95.46
+      },
+      {
+        "w": "obyektlarini",
+        "s": 95.54,
+        "e": 96.08
+      },
+      {
+        "w": "ko‘rib",
+        "s": 96.12,
+        "e": 96.32
+      },
+      {
+        "w": "chiqamiz.",
+        "s": 96.34,
+        "e": 96.64
+      }
+    ]
+  }
+]

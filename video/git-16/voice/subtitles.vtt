@@ -1,0 +1,61 @@
+WEBVTT
+
+1
+00:01.420 --> 00:09.660
+Salom! Ushbu o‘n oltinchi bobda Git arxitekturasining markaziy
+ustuni bo‘lgan commit obyektining ichki tuzilishini o‘rganamiz.
+
+2
+00:10.150 --> 00:17.760
+Tree ma’lum holatni saqlasa, commit shu holatni vaqtga joylaydi,
+unga kim va nima maqsadda kelganini tushuntirib beradi.
+
+3
+00:21.330 --> 00:30.050
+Commit beshta asosiy qismdan iborat: ildiz tree hashi, ota commitlar
+ro‘yxati, muallif, commit qiluvchi hamda tushuntirish xabari.
+
+4
+00:30.600 --> 00:37.810
+Git hech qachon diff saqlamaydi; u loyihaning to‘liq suratini
+saqlab, farqlarni har gal ota commit bilan solishtirib hisoblaydi.
+
+5
+00:42.100 --> 00:49.600
+Plumbing darajasidagi git commit-tree buyrug‘i berilgan tree hashi
+va xabar asosida to‘g‘ridan-to‘g‘ri commit obyekti yasab beradi.
+
+6
+00:50.130 --> 00:57.960
+Birinchi commit ildiz hisoblanib otasiz yaratiladi, keyingilari esa
+minus p parametri orqali oldingi commitga mustahkam bog‘lanadi.
+
+7
+01:02.110 --> 01:10.490
+Commit faqat o‘z otasini biladi, lekin bolalarini bilmaydi; bu esa butun
+loyiha tarixini yangidan eskiga yo‘naltirilgan grafga aylantiradi.
+
+8
+01:11.020 --> 01:18.410
+Ota hashining yozilishi zanjirli kafolat yaratadi: tarixdagi biror
+bayt o‘zgarsa, undan keyingi barcha commitlar hashi ham o‘zgaradi.
+
+9
+01:22.610 --> 01:29.220
+Diskda commit toza matn ko‘rinishida bo‘lib, zlib bilan
+siqilgan holda nuqta git slesh objects papkasida saqlanadi.
+
+10
+01:29.490 --> 01:35.640
+Unga yangi commit qo‘shilgach, Git shunchaki branch
+ko‘rsatkichini ushbu yangi commit hashiga surib qo‘yadi xolos.
+
+11
+01:39.930 --> 01:47.750
+Shunday qilib, Git yadrosidagi uch buyuk poydevor — blob, tree va
+commit birgalikda to‘liq ishlaydigan versiya tizimini hosil qiladi.
+
+12
+01:48.260 --> 01:55.750
+Keyingi o‘n yettinchi bobda commitlarga oson ishora qiluvchi ref
+ko‘rsatkichlari, HEAD fayli va teg obyektlarini ko‘rib chiqamiz.
