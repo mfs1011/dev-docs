@@ -1,0 +1,61 @@
+WEBVTT
+
+1
+00:01.420 --> 00:07.270
+Gitdagi har qanday murakkab buyruqni tushunish uch
+hudud va o'zgarmas obyektlar modeliga tayanadi.
+
+2
+00:07.880 --> 00:14.480
+Ishchi maydon, indeks va ombor o'rtasidagi ma'lumot
+oqimini tasavvur qilish chalkashliklarning oldini oladi.
+
+3
+00:18.130 --> 00:24.560
+Yuzlab buyruqlarni yodlamasdan, har qanday amal
+oldidan to'rtta oddiy savolga javob berish kifoyadir.
+
+4
+00:24.890 --> 00:32.530
+Bu amal xedni suradimi, indeksni o'zgartiradimi, fayllarga
+tegadimi yoki masofaviy server bilan bog'lanadimi.
+
+5
+00:36.960 --> 00:42.430
+Commit qilingan obyektlar deyarli har doim
+ref-log orqali qayta tiklanishi kafolatlangan.
+
+6
+00:42.700 --> 00:50.620
+Lekin ishchi papkadagi saqlanmagan o'zgarishlarni o'chiruvchi
+xard reset va checkout kabi buyruqlar ehtiyotkorlik talab qiladi.
+
+7
+00:54.930 --> 01:03.180
+Har kuni ish boshlashdan oldin yangiliklarni tortib olish va kichik
+mantiqiy qismlarga bo'lib commit qilish qat'iy odat bo'lishi lozim.
+
+8
+01:03.610 --> 01:10.510
+Branchlarni qisqa umrli saqlash va konfliktlarni erta
+bartaraf etish jamoaviy integratsiyani osonlashtiradi.
+
+9
+01:14.700 --> 01:23.000
+Yangi avlod Git tizimi eskirgan nomaqbul xatti-harakatlarni tozalab,
+svitch va restor buyruqlarini asosiy standartga aylantirmoqda.
+
+10
+01:23.370 --> 01:31.440
+Xesh algoritmining sha ikkiyuz ellik oltiga ko'chishi va skalar
+kabi zamonaviy arxitektura tezlikni yangi bosqichga olib chiqadi.
+
+11
+01:35.710 --> 01:42.730
+Ellikta bob davomida biz Gitning tub poydevoridan tortib eng
+ilg'or professional sirlarigacha birgalikda o'rganib chiqdik.
+
+12
+01:42.920 --> 01:51.310
+Endi siz nafaqat buyruqlarni teruvchi, balki versiya nazoratining
+har bir bosqichini chuqur his qiluvchi tajribali mutaxassissiz.
