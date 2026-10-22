@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:23.891
+Gitning Uch Daraxti: HEAD, Index va Working Tree
+
+00:23.891 --> 00:46.795
+Resetning Uch Qadami: --soft, --mixed va --hard
+
+00:46.795 --> 01:07.399
+Yo‘l Bilan Reset va Unstage Amali
+
+01:07.399 --> 01:29.274
+Amaliyot: Commitlarni Birlashtirish va Bo‘lish
+
+01:29.274 --> 01:50.465
+Reset va Switch Farqlari: Branch va Xavfsizlik
+
+01:50.465 --> 02:12.920
+Ilg‘or Rejimlar: --keep, --merge va Qaytarish

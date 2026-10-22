@@ -1,0 +1,61 @@
+WEBVTT
+
+1
+00:01.420 --> 00:12.400
+Gitning ishlash mexanizmini to'liq tushunish uchun uchta asosiy daraxt, ya'ni HEAD
+commit surati, Index oraliq qatlami va Working Tree ishchi nusxasini bilish shart.
+
+2
+00:12.850 --> 00:21.540
+Oddiy ish oqimida o'zgarishlar ishchi papkadan git add orqali indexga
+o'tadi, so'ng git commit yordamida yangi HEAD commitiga aylanadi.
+
+3
+00:25.070 --> 00:32.510
+git reset bitta yagona uch bosqichli algoritm bo'lib, uning
+bayroqlari bu jarayon aynan qaysi qadamda to'xtashini belgilaydi.
+
+4
+00:32.980 --> 00:43.880
+Minus-minus soft faqat branch ko'rsatkichini suradi, standart mixed rejimi indexni ham
+yangilaydi, minus-minus hard esa ishchi katalogdagi tahrirlarni ham so'roqsiz almashtiradi.
+
+5
+00:48.010 --> 00:55.700
+Agar reset buyrug'iga aniq fayl yo'li berilsa, birinchi qadam
+tashlab ketiladi va faqat indexdagi fayl HEAD holatiga qaytariladi.
+
+6
+00:55.910 --> 01:04.590
+Bu amalda add harakatining teskarisi bo'lib, zamonaviy Gitda xuddi
+shu vazifani git restore minus-minus staged buyrug'i aniq bajaradi.
+
+7
+01:08.460 --> 01:17.350
+Push qilinmagan bir nechta mayda commitlarni birlashtirish uchun git reset
+minus-minus soft bilan eski nuqtaga qaytib, bitta yaxlit commit qilish juda qulaydir.
+
+8
+01:17.660 --> 01:26.360
+Aksincha, bitta katta commitni bo'lish uchun minus-minus mixed va intent
+to add bayrog'i yordamida patch rejimida alohida commitlar hosil qilinadi.
+
+9
+01:30.490 --> 01:38.890
+git switch boshqa branchga o'tganda ishchi fayllarni xavfsiz merge qiladi,
+reset minus-minus hard esa saqlanmagan tahrirlarni yo'qotib yuborishi mumkin.
+
+10
+01:39.240 --> 01:47.630
+Eng muhim farq shundaki, switch HEAD ko'rsatkichining o'zini yo'naltiradi,
+reset esa HEAD turgan joriy branchni orqaga yoki oldinga suradi.
+
+11
+01:51.560 --> 01:59.680
+Ishchi daraxtdagi o'zgarishlarni asragan holda commitlarni bekor qilish uchun
+keep, muammoli mergedan xavfsiz chiqish uchun esa merge bayrog'i ishlatiladi.
+
+12
+02:00.070 --> 02:07.990
+Kutilmagan xato yuz berganda Git ORIG_HEAD va reflog orqali barcha
+bekor qilingan commitlarni to'liq tiklash imkonini taqdim etadi.

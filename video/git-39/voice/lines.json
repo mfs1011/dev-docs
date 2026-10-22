@@ -1,0 +1,1334 @@
+[
+  {
+    "id": "l1",
+    "scene": "three_trees",
+    "text": "Gitning ishlash mexanizmini to'liq tushunish uchun uchta asosiy daraxt, ya'ni HEAD commit surati, Index oraliq qatlami va Working Tree ishchi nusxasini bilish shart.",
+    "show": "Gitning ishlash mexanizmini to'liq tushunish uchun uchta asosiy daraxt, ya'ni HEAD commit surati, Index oraliq qatlami va Working Tree ishchi nusxasini bilish shart.",
+    "say": "Gitning ishlash mexanizmini to'liq tushunish uchun uchta asosiy daraxt, ya'ni hed kommit surati, indeks oraliq qatlami va vorking tri ishchi nusxasini bilish shart.",
+    "a0": 0.14,
+    "a1": 10.67,
+    "words": [
+      {
+        "w": "Gitning",
+        "s": 0.14,
+        "e": 0.5
+      },
+      {
+        "w": "ishlash",
+        "s": 0.54,
+        "e": 0.86
+      },
+      {
+        "w": "mexanizmini",
+        "s": 0.9,
+        "e": 1.52
+      },
+      {
+        "w": "to'liq",
+        "s": 1.64,
+        "e": 1.92
+      },
+      {
+        "w": "tushunish",
+        "s": 1.96,
+        "e": 2.3
+      },
+      {
+        "w": "uchun",
+        "s": 2.34,
+        "e": 2.56
+      },
+      {
+        "w": "uchta",
+        "s": 2.96,
+        "e": 3.24
+      },
+      {
+        "w": "asosiy",
+        "s": 3.3,
+        "e": 3.7
+      },
+      {
+        "w": "daraxt,",
+        "s": 3.78,
+        "e": 4.14
+      },
+      {
+        "w": "ya'ni",
+        "s": 4.42,
+        "e": 4.64
+      },
+      {
+        "w": "hed",
+        "s": 5.02,
+        "e": 5.24
+      },
+      {
+        "w": "kommit",
+        "s": 5.34,
+        "e": 5.62
+      },
+      {
+        "w": "surati,",
+        "s": 5.7,
+        "e": 6.12
+      },
+      {
+        "w": "indeks",
+        "s": 6.68,
+        "e": 7.02
+      },
+      {
+        "w": "oraliq",
+        "s": 7.16,
+        "e": 7.44
+      },
+      {
+        "w": "qatlami",
+        "s": 7.51,
+        "e": 7.93
+      },
+      {
+        "w": "va",
+        "s": 8.05,
+        "e": 8.13
+      },
+      {
+        "w": "vorking",
+        "s": 8.53,
+        "e": 8.91
+      },
+      {
+        "w": "tri",
+        "s": 8.95,
+        "e": 9.09
+      },
+      {
+        "w": "ishchi",
+        "s": 9.39,
+        "e": 9.63
+      },
+      {
+        "w": "nusxasini",
+        "s": 9.67,
+        "e": 10.11
+      },
+      {
+        "w": "bilish",
+        "s": 10.15,
+        "e": 10.39
+      },
+      {
+        "w": "shart.",
+        "s": 10.43,
+        "e": 10.67
+      }
+    ]
+  },
+  {
+    "id": "l2",
+    "scene": "three_trees",
+    "text": "Oddiy ish oqimida o'zgarishlar ishchi papkadan git add orqali indexga o'tadi, so'ng git commit yordamida yangi HEAD commitiga aylanadi.",
+    "show": "Oddiy ish oqimida o'zgarishlar ishchi papkadan git add orqali indexga o'tadi, so'ng git commit yordamida yangi HEAD commitiga aylanadi.",
+    "say": "Oddiy ish oqimida o'zgarishlar ishchi papkadan git ed orqali indeksga o'tadi, so'ng git kommit yordamida yangi hed kommitiga aylanadi.",
+    "a0": 11.57,
+    "a1": 19.81,
+    "words": [
+      {
+        "w": "Oddiy",
+        "s": 11.57,
+        "e": 11.79
+      },
+      {
+        "w": "ish",
+        "s": 11.89,
+        "e": 11.99
+      },
+      {
+        "w": "oqimida",
+        "s": 12.09,
+        "e": 12.47
+      },
+      {
+        "w": "o'zgarishlar",
+        "s": 12.57,
+        "e": 13.11
+      },
+      {
+        "w": "ishchi",
+        "s": 13.39,
+        "e": 13.63
+      },
+      {
+        "w": "papkadan",
+        "s": 13.67,
+        "e": 14.15
+      },
+      {
+        "w": "git",
+        "s": 14.35,
+        "e": 14.53
+      },
+      {
+        "w": "ed",
+        "s": 14.73,
+        "e": 14.83
+      },
+      {
+        "w": "orqali",
+        "s": 14.93,
+        "e": 15.25
+      },
+      {
+        "w": "indeksga",
+        "s": 15.39,
+        "e": 15.79
+      },
+      {
+        "w": "o'tadi,",
+        "s": 15.85,
+        "e": 16.13
+      },
+      {
+        "w": "so'ng",
+        "s": 16.55,
+        "e": 16.79
+      },
+      {
+        "w": "git",
+        "s": 16.93,
+        "e": 17.09
+      },
+      {
+        "w": "kommit",
+        "s": 17.15,
+        "e": 17.43
+      },
+      {
+        "w": "yordamida",
+        "s": 17.45,
+        "e": 17.89
+      },
+      {
+        "w": "yangi",
+        "s": 18.27,
+        "e": 18.57
+      },
+      {
+        "w": "hed",
+        "s": 18.71,
+        "e": 18.91
+      },
+      {
+        "w": "kommitiga",
+        "s": 18.97,
+        "e": 19.37
+      },
+      {
+        "w": "aylanadi.",
+        "s": 19.43,
+        "e": 19.81
+      }
+    ]
+  },
+  {
+    "id": "l3",
+    "scene": "reset_algorithm",
+    "text": "git reset bitta yagona uch bosqichli algoritm bo'lib, uning bayroqlari bu jarayon aynan qaysi qadamda to'xtashini belgilaydi.",
+    "show": "git reset bitta yagona uch bosqichli algoritm bo'lib, uning bayroqlari bu jarayon aynan qaysi qadamda to'xtashini belgilaydi.",
+    "say": "Git reset bitta yagona uch bosqichli algoritm bo'lib, uning bayroqlari bu jarayon aynan qaysi qadamda to'xtashini belgilaydi.",
+    "a0": 20.69,
+    "a1": 27.68,
+    "words": [
+      {
+        "w": "Git",
+        "s": 20.69,
+        "e": 20.85
+      },
+      {
+        "w": "reset",
+        "s": 20.89,
+        "e": 21.21
+      },
+      {
+        "w": "bitta",
+        "s": 21.31,
+        "e": 21.59
+      },
+      {
+        "w": "yagona",
+        "s": 21.69,
+        "e": 22.13
+      },
+      {
+        "w": "uch",
+        "s": 22.41,
+        "e": 22.54
+      },
+      {
+        "w": "bosqichli",
+        "s": 22.6,
+        "e": 23.04
+      },
+      {
+        "w": "algoritm",
+        "s": 23.14,
+        "e": 23.6
+      },
+      {
+        "w": "bo'lib,",
+        "s": 23.64,
+        "e": 23.84
+      },
+      {
+        "w": "uning",
+        "s": 24.16,
+        "e": 24.34
+      },
+      {
+        "w": "bayroqlari",
+        "s": 24.38,
+        "e": 24.92
+      },
+      {
+        "w": "bu",
+        "s": 25.0,
+        "e": 25.08
+      },
+      {
+        "w": "jarayon",
+        "s": 25.18,
+        "e": 25.54
+      },
+      {
+        "w": "aynan",
+        "s": 25.68,
+        "e": 25.94
+      },
+      {
+        "w": "qaysi",
+        "s": 26.02,
+        "e": 26.34
+      },
+      {
+        "w": "qadamda",
+        "s": 26.38,
+        "e": 26.72
+      },
+      {
+        "w": "to'xtashini",
+        "s": 26.74,
+        "e": 27.18
+      },
+      {
+        "w": "belgilaydi.",
+        "s": 27.22,
+        "e": 27.68
+      }
+    ]
+  },
+  {
+    "id": "l4",
+    "scene": "reset_algorithm",
+    "text": "Minus-minus soft faqat branch ko'rsatkichini suradi, standart mixed rejimi indexni ham yangilaydi, minus-minus hard esa ishchi katalogdagi tahrirlarni ham so'roqsiz almashtiradi.",
+    "show": "Minus-minus soft faqat branch ko'rsatkichini suradi, standart mixed rejimi indexni ham yangilaydi, minus-minus hard esa ishchi katalogdagi tahrirlarni ham so'roqsiz almashtiradi.",
+    "say": "Minus minus soft faqat branch ko'rsatkichini suradi, standart mixed rejimi indeksni ham yangilaydi, minus minus hard esa ishchi katalogdagi tahrirlarni ham so'roqsiz almashtiradi.",
+    "a0": 28.6,
+    "a1": 39.05,
+    "words": [
+      {
+        "w": "Minus",
+        "s": 28.6,
+        "e": 28.84
+      },
+      {
+        "w": "minus",
+        "s": 28.88,
+        "e": 29.12
+      },
+      {
+        "w": "soft",
+        "s": 29.16,
+        "e": 29.42
+      },
+      {
+        "w": "faqat",
+        "s": 29.58,
+        "e": 30.04
+      },
+      {
+        "w": "branch",
+        "s": 30.04,
+        "e": 30.2
+      },
+      {
+        "w": "ko'rsatkichini",
+        "s": 30.22,
+        "e": 30.76
+      },
+      {
+        "w": "suradi,",
+        "s": 30.82,
+        "e": 31.12
+      },
+      {
+        "w": "standart",
+        "s": 31.66,
+        "e": 32.08
+      },
+      {
+        "w": "mixed",
+        "s": 32.28,
+        "e": 32.62
+      },
+      {
+        "w": "rejimi",
+        "s": 32.68,
+        "e": 33.06
+      },
+      {
+        "w": "indeksni",
+        "s": 33.24,
+        "e": 33.64
+      },
+      {
+        "w": "ham",
+        "s": 33.68,
+        "e": 33.82
+      },
+      {
+        "w": "yangilaydi,",
+        "s": 33.9,
+        "e": 34.36
+      },
+      {
+        "w": "minus",
+        "s": 35.0,
+        "e": 35.22
+      },
+      {
+        "w": "minus",
+        "s": 35.26,
+        "e": 35.46
+      },
+      {
+        "w": "hard",
+        "s": 35.52,
+        "e": 35.76
+      },
+      {
+        "w": "esa",
+        "s": 35.8,
+        "e": 35.96
+      },
+      {
+        "w": "ishchi",
+        "s": 36.36,
+        "e": 36.56
+      },
+      {
+        "w": "katalogdagi",
+        "s": 36.6,
+        "e": 37.16
+      },
+      {
+        "w": "tahrirlarni",
+        "s": 37.22,
+        "e": 37.79
+      },
+      {
+        "w": "ham",
+        "s": 37.83,
+        "e": 37.97
+      },
+      {
+        "w": "so'roqsiz",
+        "s": 38.07,
+        "e": 38.51
+      },
+      {
+        "w": "almashtiradi.",
+        "s": 38.55,
+        "e": 39.05
+      }
+    ]
+  },
+  {
+    "id": "l5",
+    "scene": "reset_paths",
+    "text": "Agar reset buyrug'iga aniq fayl yo'li berilsa, birinchi qadam tashlab ketiladi va faqat indexdagi fayl HEAD holatiga qaytariladi.",
+    "show": "Agar reset buyrug'iga aniq fayl yo'li berilsa, birinchi qadam tashlab ketiladi va faqat indexdagi fayl HEAD holatiga qaytariladi.",
+    "say": "Agar reset buyrug'iga aniq fayl yo'li berilsa, birinchi qadam tashlab ketiladi va faqat indexdagi fayl hed holatiga qaytariladi.",
+    "a0": 40.03,
+    "a1": 47.27,
+    "words": [
+      {
+        "w": "Agar",
+        "s": 40.03,
+        "e": 40.29
+      },
+      {
+        "w": "reset",
+        "s": 40.49,
+        "e": 40.79
+      },
+      {
+        "w": "buyrug'iga",
+        "s": 40.83,
+        "e": 41.27
+      },
+      {
+        "w": "aniq",
+        "s": 41.45,
+        "e": 41.65
+      },
+      {
+        "w": "fayl",
+        "s": 41.73,
+        "e": 41.97
+      },
+      {
+        "w": "yo'li",
+        "s": 42.03,
+        "e": 42.21
+      },
+      {
+        "w": "berilsa,",
+        "s": 42.23,
+        "e": 42.61
+      },
+      {
+        "w": "birinchi",
+        "s": 43.01,
+        "e": 43.27
+      },
+      {
+        "w": "qadam",
+        "s": 43.29,
+        "e": 43.51
+      },
+      {
+        "w": "tashlab",
+        "s": 43.53,
+        "e": 43.83
+      },
+      {
+        "w": "ketiladi",
+        "s": 43.85,
+        "e": 44.21
+      },
+      {
+        "w": "va",
+        "s": 44.29,
+        "e": 44.35
+      },
+      {
+        "w": "faqat",
+        "s": 44.45,
+        "e": 44.73
+      },
+      {
+        "w": "indexdagi",
+        "s": 44.87,
+        "e": 45.39
+      },
+      {
+        "w": "fayl",
+        "s": 45.47,
+        "e": 45.77
+      },
+      {
+        "w": "hed",
+        "s": 46.09,
+        "e": 46.27
+      },
+      {
+        "w": "holatiga",
+        "s": 46.31,
+        "e": 46.73
+      },
+      {
+        "w": "qaytariladi.",
+        "s": 46.77,
+        "e": 47.27
+      }
+    ]
+  },
+  {
+    "id": "l6",
+    "scene": "reset_paths",
+    "text": "Bu amalda add harakatining teskarisi bo'lib, zamonaviy Gitda xuddi shu vazifani git restore minus-minus staged buyrug'i aniq bajaradi.",
+    "show": "Bu amalda add harakatining teskarisi bo'lib, zamonaviy Gitda xuddi shu vazifani git restore minus-minus staged buyrug'i aniq bajaradi.",
+    "say": "Bu amalda add harakatining teskarisi bo'lib, zamonaviy Gitda xuddi shu vazifani git restor minus minus steyjd buyrug'i aniq bajaradi.",
+    "a0": 47.93,
+    "a1": 56.16,
+    "words": [
+      {
+        "w": "Bu",
+        "s": 47.93,
+        "e": 47.99
+      },
+      {
+        "w": "amalda",
+        "s": 48.09,
+        "e": 48.41
+      },
+      {
+        "w": "add",
+        "s": 48.83,
+        "e": 48.95
+      },
+      {
+        "w": "harakatining",
+        "s": 48.99,
+        "e": 49.51
+      },
+      {
+        "w": "teskarisi",
+        "s": 49.55,
+        "e": 50.07
+      },
+      {
+        "w": "bo'lib,",
+        "s": 50.09,
+        "e": 50.31
+      },
+      {
+        "w": "zamonaviy",
+        "s": 50.65,
+        "e": 51.13
+      },
+      {
+        "w": "Gitda",
+        "s": 51.23,
+        "e": 51.57
+      },
+      {
+        "w": "xuddi",
+        "s": 51.79,
+        "e": 52.07
+      },
+      {
+        "w": "shu",
+        "s": 52.17,
+        "e": 52.27
+      },
+      {
+        "w": "vazifani",
+        "s": 52.35,
+        "e": 52.82
+      },
+      {
+        "w": "git",
+        "s": 53.18,
+        "e": 53.34
+      },
+      {
+        "w": "restor",
+        "s": 53.46,
+        "e": 53.86
+      },
+      {
+        "w": "minus",
+        "s": 53.98,
+        "e": 54.2
+      },
+      {
+        "w": "minus",
+        "s": 54.26,
+        "e": 54.5
+      },
+      {
+        "w": "steyjd",
+        "s": 54.54,
+        "e": 54.94
+      },
+      {
+        "w": "buyrug'i",
+        "s": 54.98,
+        "e": 55.34
+      },
+      {
+        "w": "aniq",
+        "s": 55.56,
+        "e": 55.74
+      },
+      {
+        "w": "bajaradi.",
+        "s": 55.78,
+        "e": 56.16
+      }
+    ]
+  },
+  {
+    "id": "l7",
+    "scene": "squash_split",
+    "text": "Push qilinmagan bir nechta mayda commitlarni birlashtirish uchun git reset minus-minus soft bilan eski nuqtaga qaytib, bitta yaxlit commit qilish juda qulaydir.",
+    "show": "Push qilinmagan bir nechta mayda commitlarni birlashtirish uchun git reset minus-minus soft bilan eski nuqtaga qaytib, bitta yaxlit commit qilish juda qulaydir.",
+    "say": "Push qilinmagan bir nechta mayda kommitlarni birlashtirish uchun git reset minus minus soft bilan eski nuqtaga qaytib, bitta yaxlit kommit qilish juda qulaydir.",
+    "a0": 56.88,
+    "a1": 65.32,
+    "words": [
+      {
+        "w": "Push",
+        "s": 56.88,
+        "e": 57.06
+      },
+      {
+        "w": "qilinmagan",
+        "s": 57.1,
+        "e": 57.6
+      },
+      {
+        "w": "bir",
+        "s": 57.72,
+        "e": 57.84
+      },
+      {
+        "w": "nechta",
+        "s": 57.88,
+        "e": 58.14
+      },
+      {
+        "w": "mayda",
+        "s": 58.22,
+        "e": 58.48
+      },
+      {
+        "w": "kommitlarni",
+        "s": 58.52,
+        "e": 59.0
+      },
+      {
+        "w": "birlashtirish",
+        "s": 59.04,
+        "e": 59.54
+      },
+      {
+        "w": "uchun",
+        "s": 59.56,
+        "e": 59.78
+      },
+      {
+        "w": "git",
+        "s": 60.1,
+        "e": 60.26
+      },
+      {
+        "w": "reset",
+        "s": 60.32,
+        "e": 60.66
+      },
+      {
+        "w": "minus",
+        "s": 60.78,
+        "e": 61.02
+      },
+      {
+        "w": "minus",
+        "s": 61.06,
+        "e": 61.28
+      },
+      {
+        "w": "soft",
+        "s": 61.34,
+        "e": 61.58
+      },
+      {
+        "w": "bilan",
+        "s": 61.62,
+        "e": 61.82
+      },
+      {
+        "w": "eski",
+        "s": 62.16,
+        "e": 62.38
+      },
+      {
+        "w": "nuqtaga",
+        "s": 62.42,
+        "e": 62.76
+      },
+      {
+        "w": "qaytib,",
+        "s": 62.82,
+        "e": 63.16
+      },
+      {
+        "w": "bitta",
+        "s": 63.48,
+        "e": 63.74
+      },
+      {
+        "w": "yaxlit",
+        "s": 63.84,
+        "e": 64.2
+      },
+      {
+        "w": "kommit",
+        "s": 64.24,
+        "e": 64.48
+      },
+      {
+        "w": "qilish",
+        "s": 64.5,
+        "e": 64.72
+      },
+      {
+        "w": "juda",
+        "s": 64.78,
+        "e": 64.96
+      },
+      {
+        "w": "qulaydir.",
+        "s": 64.98,
+        "e": 65.32
+      }
+    ]
+  },
+  {
+    "id": "l8",
+    "scene": "squash_split",
+    "text": "Aksincha, bitta katta commitni bo'lish uchun minus-minus mixed va intent to add bayrog'i yordamida patch rejimida alohida commitlar hosil qilinadi.",
+    "show": "Aksincha, bitta katta commitni bo'lish uchun minus-minus mixed va intent to add bayrog'i yordamida patch rejimida alohida commitlar hosil qilinadi.",
+    "say": "Aksincha, bitta katta commitni bo'lish uchun minus minus miksd va intent tu ed bayrog'i yordamida patch rejimida alohida kommitlar hosil qilinadi.",
+    "a0": 66.08,
+    "a1": 74.33,
+    "words": [
+      {
+        "w": "Aksincha,",
+        "s": 66.08,
+        "e": 66.48
+      },
+      {
+        "w": "bitta",
+        "s": 66.84,
+        "e": 67.04
+      },
+      {
+        "w": "katta",
+        "s": 67.1,
+        "e": 67.34
+      },
+      {
+        "w": "commitni",
+        "s": 67.38,
+        "e": 67.75
+      },
+      {
+        "w": "bo'lish",
+        "s": 67.79,
+        "e": 68.05
+      },
+      {
+        "w": "uchun",
+        "s": 68.09,
+        "e": 68.31
+      },
+      {
+        "w": "minus",
+        "s": 68.43,
+        "e": 68.65
+      },
+      {
+        "w": "minus",
+        "s": 68.69,
+        "e": 68.91
+      },
+      {
+        "w": "miksd",
+        "s": 69.01,
+        "e": 69.37
+      },
+      {
+        "w": "va",
+        "s": 69.45,
+        "e": 69.53
+      },
+      {
+        "w": "intent",
+        "s": 69.89,
+        "e": 70.25
+      },
+      {
+        "w": "tu",
+        "s": 70.29,
+        "e": 70.39
+      },
+      {
+        "w": "ed",
+        "s": 70.55,
+        "e": 70.67
+      },
+      {
+        "w": "bayrog'i",
+        "s": 70.73,
+        "e": 71.11
+      },
+      {
+        "w": "yordamida",
+        "s": 71.11,
+        "e": 71.55
+      },
+      {
+        "w": "patch",
+        "s": 71.89,
+        "e": 72.13
+      },
+      {
+        "w": "rejimida",
+        "s": 72.19,
+        "e": 72.61
+      },
+      {
+        "w": "alohida",
+        "s": 72.77,
+        "e": 73.15
+      },
+      {
+        "w": "kommitlar",
+        "s": 73.21,
+        "e": 73.63
+      },
+      {
+        "w": "hosil",
+        "s": 73.69,
+        "e": 73.95
+      },
+      {
+        "w": "qilinadi.",
+        "s": 73.97,
+        "e": 74.33
+      }
+    ]
+  },
+  {
+    "id": "l9",
+    "scene": "reset_vs_switch",
+    "text": "git switch boshqa branchga o'tganda ishchi fayllarni xavfsiz merge qiladi, reset minus-minus hard esa saqlanmagan tahrirlarni yo'qotib yuborishi mumkin.",
+    "show": "git switch boshqa branchga o'tganda ishchi fayllarni xavfsiz merge qiladi, reset minus-minus hard esa saqlanmagan tahrirlarni yo'qotib yuborishi mumkin.",
+    "say": "Git switch boshqa brenchga o'tganda ishchi fayllarni xavfsiz merj qiladi, reset minus minus hard esa saqlanmagan tahrirlarni yo'qotib yuborishi mumkin.",
+    "a0": 75.31,
+    "a1": 83.26,
+    "words": [
+      {
+        "w": "Git",
+        "s": 75.31,
+        "e": 75.47
+      },
+      {
+        "w": "switch",
+        "s": 75.51,
+        "e": 75.77
+      },
+      {
+        "w": "boshqa",
+        "s": 75.91,
+        "e": 76.17
+      },
+      {
+        "w": "brenchga",
+        "s": 76.21,
+        "e": 76.53
+      },
+      {
+        "w": "o'tganda",
+        "s": 76.59,
+        "e": 77.01
+      },
+      {
+        "w": "ishchi",
+        "s": 77.15,
+        "e": 77.35
+      },
+      {
+        "w": "fayllarni",
+        "s": 77.39,
+        "e": 77.89
+      },
+      {
+        "w": "xavfsiz",
+        "s": 77.97,
+        "e": 78.37
+      },
+      {
+        "w": "merj",
+        "s": 78.45,
+        "e": 78.67
+      },
+      {
+        "w": "qiladi,",
+        "s": 78.71,
+        "e": 78.99
+      },
+      {
+        "w": "reset",
+        "s": 79.49,
+        "e": 79.75
+      },
+      {
+        "w": "minus",
+        "s": 79.79,
+        "e": 79.99
+      },
+      {
+        "w": "minus",
+        "s": 80.01,
+        "e": 80.19
+      },
+      {
+        "w": "hard",
+        "s": 80.25,
+        "e": 80.47
+      },
+      {
+        "w": "esa",
+        "s": 80.53,
+        "e": 80.67
+      },
+      {
+        "w": "saqlanmagan",
+        "s": 80.99,
+        "e": 81.59
+      },
+      {
+        "w": "tahrirlarni",
+        "s": 81.63,
+        "e": 82.19
+      },
+      {
+        "w": "yo'qotib",
+        "s": 82.25,
+        "e": 82.58
+      },
+      {
+        "w": "yuborishi",
+        "s": 82.6,
+        "e": 82.96
+      },
+      {
+        "w": "mumkin.",
+        "s": 83.0,
+        "e": 83.26
+      }
+    ]
+  },
+  {
+    "id": "l10",
+    "scene": "reset_vs_switch",
+    "text": "Eng muhim farq shundaki, switch HEAD ko'rsatkichining o'zini yo'naltiradi, reset esa HEAD turgan joriy branchni orqaga yoki oldinga suradi.",
+    "show": "Eng muhim farq shundaki, switch HEAD ko'rsatkichining o'zini yo'naltiradi, reset esa HEAD turgan joriy branchni orqaga yoki oldinga suradi.",
+    "say": "Eng muhim farq shundaki, switch hed ko'rsatkichining o'zini yo'naltiradi, reset esa hed turgan joriy brenchni orqaga yoki oldinga suradi.",
+    "a0": 84.06,
+    "a1": 92.0,
+    "words": [
+      {
+        "w": "Eng",
+        "s": 84.06,
+        "e": 84.2
+      },
+      {
+        "w": "muhim",
+        "s": 84.22,
+        "e": 84.42
+      },
+      {
+        "w": "farq",
+        "s": 84.46,
+        "e": 84.64
+      },
+      {
+        "w": "shundaki,",
+        "s": 84.7,
+        "e": 85.1
+      },
+      {
+        "w": "switch",
+        "s": 85.46,
+        "e": 85.74
+      },
+      {
+        "w": "hed",
+        "s": 85.96,
+        "e": 86.16
+      },
+      {
+        "w": "ko'rsatkichining",
+        "s": 86.2,
+        "e": 86.86
+      },
+      {
+        "w": "o'zini",
+        "s": 87.0,
+        "e": 87.26
+      },
+      {
+        "w": "yo'naltiradi,",
+        "s": 87.3,
+        "e": 87.84
+      },
+      {
+        "w": "reset",
+        "s": 88.22,
+        "e": 88.5
+      },
+      {
+        "w": "esa",
+        "s": 88.56,
+        "e": 88.72
+      },
+      {
+        "w": "hed",
+        "s": 88.96,
+        "e": 89.14
+      },
+      {
+        "w": "turgan",
+        "s": 89.2,
+        "e": 89.5
+      },
+      {
+        "w": "joriy",
+        "s": 89.6,
+        "e": 89.9
+      },
+      {
+        "w": "brenchni",
+        "s": 89.94,
+        "e": 90.28
+      },
+      {
+        "w": "orqaga",
+        "s": 90.48,
+        "e": 90.84
+      },
+      {
+        "w": "yoki",
+        "s": 90.84,
+        "e": 91.16
+      },
+      {
+        "w": "oldinga",
+        "s": 91.34,
+        "e": 91.66
+      },
+      {
+        "w": "suradi.",
+        "s": 91.72,
+        "e": 92.0
+      }
+    ]
+  },
+  {
+    "id": "l11",
+    "scene": "keep_merge_recovery",
+    "text": "Ishchi daraxtdagi o'zgarishlarni asragan holda commitlarni bekor qilish uchun keep, muammoli mergedan xavfsiz chiqish uchun esa merge bayrog'i ishlatiladi.",
+    "show": "Ishchi daraxtdagi o'zgarishlarni asragan holda commitlarni bekor qilish uchun keep, muammoli mergedan xavfsiz chiqish uchun esa merge bayrog'i ishlatiladi.",
+    "say": "Ishchi daraxtdagi o'zgarishlarni asragan holda kommitlarni bekor qilish uchun kip, muammoli merjdan xavfsiz chiqish uchun esa merj bayrog'i ishlatiladi.",
+    "a0": 92.78,
+    "a1": 100.45,
+    "words": [
+      {
+        "w": "Ishchi",
+        "s": 92.78,
+        "e": 92.98
+      },
+      {
+        "w": "daraxtdagi",
+        "s": 93.02,
+        "e": 93.46
+      },
+      {
+        "w": "o'zgarishlarni",
+        "s": 93.52,
+        "e": 94.1
+      },
+      {
+        "w": "asragan",
+        "s": 94.18,
+        "e": 94.58
+      },
+      {
+        "w": "holda",
+        "s": 94.64,
+        "e": 94.89
+      },
+      {
+        "w": "kommitlarni",
+        "s": 94.95,
+        "e": 95.45
+      },
+      {
+        "w": "bekor",
+        "s": 95.49,
+        "e": 95.73
+      },
+      {
+        "w": "qilish",
+        "s": 95.77,
+        "e": 95.99
+      },
+      {
+        "w": "uchun",
+        "s": 96.03,
+        "e": 96.23
+      },
+      {
+        "w": "kip,",
+        "s": 96.45,
+        "e": 96.69
+      },
+      {
+        "w": "muammoli",
+        "s": 97.05,
+        "e": 97.51
+      },
+      {
+        "w": "merjdan",
+        "s": 97.57,
+        "e": 97.91
+      },
+      {
+        "w": "xavfsiz",
+        "s": 97.99,
+        "e": 98.31
+      },
+      {
+        "w": "chiqish",
+        "s": 98.35,
+        "e": 98.57
+      },
+      {
+        "w": "uchun",
+        "s": 98.61,
+        "e": 98.77
+      },
+      {
+        "w": "esa",
+        "s": 98.81,
+        "e": 98.97
+      },
+      {
+        "w": "merj",
+        "s": 99.35,
+        "e": 99.57
+      },
+      {
+        "w": "bayrog'i",
+        "s": 99.63,
+        "e": 99.97
+      },
+      {
+        "w": "ishlatiladi.",
+        "s": 100.01,
+        "e": 100.45
+      }
+    ]
+  },
+  {
+    "id": "l12",
+    "scene": "keep_merge_recovery",
+    "text": "Kutilmagan xato yuz berganda Git ORIG_HEAD va reflog orqali barcha bekor qilingan commitlarni to'liq tiklash imkonini taqdim etadi.",
+    "show": "Kutilmagan xato yuz berganda Git ORIG_HEAD va reflog orqali barcha bekor qilingan commitlarni to'liq tiklash imkonini taqdim etadi.",
+    "say": "Kutilmagan xato yuz berganda Git orij hed va reflog orqali barcha bekor qilingan kommitlarni to'liq tiklash imkonini taqdim etadi.",
+    "a0": 101.29,
+    "a1": 108.76,
+    "words": [
+      {
+        "w": "Kutilmagan",
+        "s": 101.29,
+        "e": 101.71
+      },
+      {
+        "w": "xato",
+        "s": 101.75,
+        "e": 101.97
+      },
+      {
+        "w": "yuz",
+        "s": 102.03,
+        "e": 102.17
+      },
+      {
+        "w": "berganda",
+        "s": 102.21,
+        "e": 102.61
+      },
+      {
+        "w": "Git",
+        "s": 102.95,
+        "e": 103.13
+      },
+      {
+        "w": "orij",
+        "s": 103.35,
+        "e": 103.57
+      },
+      {
+        "w": "hed",
+        "s": 103.67,
+        "e": 103.87
+      },
+      {
+        "w": "va",
+        "s": 103.95,
+        "e": 104.03
+      },
+      {
+        "w": "reflog",
+        "s": 104.25,
+        "e": 104.68
+      },
+      {
+        "w": "orqali",
+        "s": 104.74,
+        "e": 105.04
+      },
+      {
+        "w": "barcha",
+        "s": 105.44,
+        "e": 105.72
+      },
+      {
+        "w": "bekor",
+        "s": 105.76,
+        "e": 106.02
+      },
+      {
+        "w": "qilingan",
+        "s": 106.06,
+        "e": 106.36
+      },
+      {
+        "w": "kommitlarni",
+        "s": 106.38,
+        "e": 106.9
+      },
+      {
+        "w": "to'liq",
+        "s": 107.02,
+        "e": 107.3
+      },
+      {
+        "w": "tiklash",
+        "s": 107.34,
+        "e": 107.68
+      },
+      {
+        "w": "imkonini",
+        "s": 107.7,
+        "e": 108.1
+      },
+      {
+        "w": "taqdim",
+        "s": 108.18,
+        "e": 108.48
+      },
+      {
+        "w": "etadi.",
+        "s": 108.5,
+        "e": 108.76
+      }
+    ]
+  }
+]
