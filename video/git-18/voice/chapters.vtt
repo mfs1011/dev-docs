@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:25.029
+Loose Obyektlar va Disk Isrofi
+
+00:25.029 --> 00:46.884
+git gc va Packfile Arxitekturasi
+
+00:46.884 --> 01:08.354
+Delta Siqish va verify-pack
+
+01:08.354 --> 01:29.629
+Delta Zanjirlari: window va depth
+
+01:29.629 --> 01:50.772
+Cruft Pack va Xavfsiz Tozalash
+
+01:50.772 --> 02:14.740
+Xulosa va git maintenance
