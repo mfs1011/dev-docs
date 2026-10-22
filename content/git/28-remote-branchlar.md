@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" playsinline poster="/video/git/28-remote-branchlar.jpg" src="/video/git/28-remote-branchlar.mp4">
+    <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/git/28-remote-branchlar.chapters.vtt" default>
+    <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/git/28-remote-branchlar.uz.vtt">
+  </video>
+  <figcaption>28.1-video. Git remote-tracking branchlar, upstream kuzatuv va prune tozalash</figcaption>
+</figure>
+
 [27-bobda](27-remote.md) remote'ni qo'shdik, `fetch`, `pull`, `push` qildik va bir necha marta `origin/main` degan nomni ishlatdik. Bu bob shu nomning ortida nima turganini ochadi.
 
 Uch xil "branch" bor va ularni chalkashtirmaslik kerak:

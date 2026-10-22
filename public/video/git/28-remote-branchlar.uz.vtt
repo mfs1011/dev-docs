@@ -1,0 +1,61 @@
+WEBVTT
+
+1
+00:01.420 --> 00:10.200
+Salom! Ushbu yigirma sakkizinchi bobda Git'da remote branchlar, kuzatuvchi
+tarmoqlar va ularning ichki mexanizmlarini batafsil o‘rganamiz.
+
+2
+00:10.650 --> 00:19.660
+Git'da uch xil tarmoq mavjud: lokal branchlar, serverdagi branchlar hamda
+server holatini xatcho‘p kabi eslab qoluvchi remote-tracking branchlar.
+
+3
+00:23.190 --> 00:30.170
+git switch qidiruv buyrug‘i orqali remote-tracking branchdan
+avtomatik ravishda kuzatuvchi lokal branch ochish juda qulaydir.
+
+4
+00:30.640 --> 00:38.670
+Git konfiguratsiyasida branch nuqta remote va branch nuqta merge qatorlari
+orqali tarmoqlar o‘rtasida to‘g‘ridan-to‘g‘ri bog‘liqlik o‘rnatiladi.
+
+5
+00:42.700 --> 00:51.440
+git status va git branch -vv buyruqlari sizning lokal branchingiz
+serverdan necha commit oldinda yoki orqadaligini aniq ko‘rsatadi.
+
+6
+00:51.890 --> 00:59.480
+Ahead raqami hali push qilinmagan commitlarni, behind esa serverda
+bor, ammo hali olib birlashtirilmagan yangi ishlarni bildiradi.
+
+7
+01:03.570 --> 01:11.510
+Yangi branchni birinchi marta yuborishda git push -u origin buyrug‘i
+serverda branch yaratadi va upstream bog‘liqligini o‘rnatadi.
+
+8
+01:11.900 --> 01:20.180
+push.autoSetupRemote sozlamasini yoqib qo‘ysak, kelgusida barcha yangi
+tarmoqlar birgina oddiy git push buyrug‘i bilan avtomatik ulanadi.
+
+9
+01:24.210 --> 01:30.880
+Ishi tugagan masofaviy branchni git push origin --delete
+buyrug‘i yordamida serverdan xavfsiz o‘chirib tashlaymiz.
+
+10
+01:31.270 --> 01:38.570
+Boshqa jamoa a’zolarida qolib ketgan eskirgan xatcho‘plarni
+tozalash uchun esa git fetch --prune buyrug‘idan foydalaniladi.
+
+11
+01:42.620 --> 01:50.730
+Remote branchlar va prune amaliyoti orqali ombordagi barcha
+tarmoqlar doimo sarishta, toza va aniq sinxron holatda saqlanadi.
+
+12
+01:51.150 --> 01:58.430
+Keyingi bobda fetch va push amallarining ichki protokollari,
+refspeklar va tarmoq trafigini to‘liq tahlil qilamiz.

@@ -1,0 +1,1169 @@
+[
+  {
+    "id": "l1",
+    "scene": "intro",
+    "text": "Salom! Ushbu yigirma sakkizinchi bobda Git'da remote branchlar, kuzatuvchi tarmoqlar va ularning ichki mexanizmlarini batafsil o‘rganamiz.",
+    "show": "Salom! Ushbu yigirma sakkizinchi bobda Git'da remote branchlar, kuzatuvchi tarmoqlar va ularning ichki mexanizmlarini batafsil o‘rganamiz.",
+    "say": "Salom! Ushbu yigirma sakkizinchi bobda Git'da remout brenchlar, kuzatuvchi tarmoqlar va ularning ichki mexanizmlarini batafsil o‘rganamiz.",
+    "a0": 0.18,
+    "a1": 8.51,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.18,
+        "e": 0.44
+      },
+      {
+        "w": "Ushbu",
+        "s": 1.06,
+        "e": 1.28
+      },
+      {
+        "w": "yigirma",
+        "s": 1.38,
+        "e": 1.66
+      },
+      {
+        "w": "sakkizinchi",
+        "s": 1.72,
+        "e": 2.18
+      },
+      {
+        "w": "bobda",
+        "s": 2.22,
+        "e": 2.52
+      },
+      {
+        "w": "Git'da",
+        "s": 2.86,
+        "e": 3.2
+      },
+      {
+        "w": "remout",
+        "s": 3.34,
+        "e": 3.66
+      },
+      {
+        "w": "brenchlar,",
+        "s": 3.72,
+        "e": 4.2
+      },
+      {
+        "w": "kuzatuvchi",
+        "s": 4.54,
+        "e": 4.98
+      },
+      {
+        "w": "tarmoqlar",
+        "s": 5.04,
+        "e": 5.54
+      },
+      {
+        "w": "va",
+        "s": 5.82,
+        "e": 5.9
+      },
+      {
+        "w": "ularning",
+        "s": 5.98,
+        "e": 6.34
+      },
+      {
+        "w": "ichki",
+        "s": 6.4,
+        "e": 6.6
+      },
+      {
+        "w": "mexanizmlarini",
+        "s": 6.62,
+        "e": 7.4
+      },
+      {
+        "w": "batafsil",
+        "s": 7.63,
+        "e": 8.01
+      },
+      {
+        "w": "o‘rganamiz.",
+        "s": 8.09,
+        "e": 8.51
+      }
+    ]
+  },
+  {
+    "id": "l2",
+    "scene": "intro",
+    "text": "Git'da uch xil tarmoq mavjud: lokal branchlar, serverdagi branchlar hamda server holatini xatcho‘p kabi eslab qoluvchi remote-tracking branchlar.",
+    "show": "Git'da uch xil tarmoq mavjud: lokal branchlar, serverdagi branchlar hamda server holatini xatcho‘p kabi eslab qoluvchi remote-tracking branchlar.",
+    "say": "Git'da uch xil tarmoq mavjud: lokal brenchlar, serverdagi brenchlar hamda server holatini xatcho‘p kabi eslab qoluvchi remout treking brenchlar.",
+    "a0": 9.41,
+    "a1": 17.97,
+    "words": [
+      {
+        "w": "Git'da",
+        "s": 9.41,
+        "e": 9.71
+      },
+      {
+        "w": "uch",
+        "s": 9.85,
+        "e": 9.95
+      },
+      {
+        "w": "xil",
+        "s": 9.99,
+        "e": 10.11
+      },
+      {
+        "w": "tarmoq",
+        "s": 10.15,
+        "e": 10.45
+      },
+      {
+        "w": "mavjud:",
+        "s": 10.49,
+        "e": 10.79
+      },
+      {
+        "w": "lokal",
+        "s": 11.35,
+        "e": 11.65
+      },
+      {
+        "w": "brenchlar,",
+        "s": 11.71,
+        "e": 12.15
+      },
+      {
+        "w": "serverdagi",
+        "s": 12.55,
+        "e": 13.05
+      },
+      {
+        "w": "brenchlar",
+        "s": 13.09,
+        "e": 13.51
+      },
+      {
+        "w": "hamda",
+        "s": 13.79,
+        "e": 14.07
+      },
+      {
+        "w": "server",
+        "s": 14.27,
+        "e": 14.59
+      },
+      {
+        "w": "holatini",
+        "s": 14.63,
+        "e": 15.03
+      },
+      {
+        "w": "xatcho‘p",
+        "s": 15.09,
+        "e": 15.49
+      },
+      {
+        "w": "kabi",
+        "s": 15.53,
+        "e": 15.73
+      },
+      {
+        "w": "eslab",
+        "s": 15.81,
+        "e": 16.07
+      },
+      {
+        "w": "qoluvchi",
+        "s": 16.11,
+        "e": 16.45
+      },
+      {
+        "w": "remout",
+        "s": 16.77,
+        "e": 17.11
+      },
+      {
+        "w": "treking",
+        "s": 17.15,
+        "e": 17.53
+      },
+      {
+        "w": "brenchlar.",
+        "s": 17.53,
+        "e": 17.97
+      }
+    ]
+  },
+  {
+    "id": "l3",
+    "scene": "tracking_va_switch",
+    "text": "git switch qidiruv buyrug‘i orqali remote-tracking branchdan avtomatik ravishda kuzatuvchi lokal branch ochish juda qulaydir.",
+    "show": "git switch qidiruv buyrug‘i orqali remote-tracking branchdan avtomatik ravishda kuzatuvchi lokal branch ochish juda qulaydir.",
+    "say": "Git svitch qidiruv buyrug‘i orqali remout treking brenchdan avtomatik ravishda kuzatuvchi lokal brench ochish juda qulaydir.",
+    "a0": 18.85,
+    "a1": 25.38,
+    "words": [
+      {
+        "w": "Git",
+        "s": 18.85,
+        "e": 19.03
+      },
+      {
+        "w": "svitch",
+        "s": 19.13,
+        "e": 19.39
+      },
+      {
+        "w": "qidiruv",
+        "s": 19.47,
+        "e": 19.73
+      },
+      {
+        "w": "buyrug‘i",
+        "s": 19.77,
+        "e": 20.09
+      },
+      {
+        "w": "orqali",
+        "s": 20.15,
+        "e": 20.47
+      },
+      {
+        "w": "remout",
+        "s": 20.79,
+        "e": 21.09
+      },
+      {
+        "w": "treking",
+        "s": 21.13,
+        "e": 21.47
+      },
+      {
+        "w": "brenchdan",
+        "s": 21.49,
+        "e": 21.89
+      },
+      {
+        "w": "avtomatik",
+        "s": 22.01,
+        "e": 22.54
+      },
+      {
+        "w": "ravishda",
+        "s": 22.6,
+        "e": 22.9
+      },
+      {
+        "w": "kuzatuvchi",
+        "s": 22.94,
+        "e": 23.38
+      },
+      {
+        "w": "lokal",
+        "s": 23.54,
+        "e": 23.9
+      },
+      {
+        "w": "brench",
+        "s": 23.96,
+        "e": 24.22
+      },
+      {
+        "w": "ochish",
+        "s": 24.28,
+        "e": 24.54
+      },
+      {
+        "w": "juda",
+        "s": 24.76,
+        "e": 24.94
+      },
+      {
+        "w": "qulaydir.",
+        "s": 25.02,
+        "e": 25.38
+      }
+    ]
+  },
+  {
+    "id": "l4",
+    "scene": "tracking_va_switch",
+    "text": "Git konfiguratsiyasida branch nuqta remote va branch nuqta merge qatorlari orqali tarmoqlar o‘rtasida to‘g‘ridan-to‘g‘ri bog‘liqlik o‘rnatiladi.",
+    "show": "Git konfiguratsiyasida branch nuqta remote va branch nuqta merge qatorlari orqali tarmoqlar o‘rtasida to‘g‘ridan-to‘g‘ri bog‘liqlik o‘rnatiladi.",
+    "say": "Git konfiguratsiyasida brench nuqta remout va brench nuqta merj qatorlari orqali tarmoqlar o‘rtasida to‘g‘ridan-to‘g‘ri bog‘liqlik o‘rnatiladi.",
+    "a0": 26.3,
+    "a1": 33.88,
+    "words": [
+      {
+        "w": "Git",
+        "s": 26.3,
+        "e": 26.48
+      },
+      {
+        "w": "konfiguratsiyasida",
+        "s": 26.52,
+        "e": 27.38
+      },
+      {
+        "w": "brench",
+        "s": 27.68,
+        "e": 27.98
+      },
+      {
+        "w": "nuqta",
+        "s": 28.04,
+        "e": 28.26
+      },
+      {
+        "w": "remout",
+        "s": 28.32,
+        "e": 28.66
+      },
+      {
+        "w": "va",
+        "s": 28.94,
+        "e": 29.02
+      },
+      {
+        "w": "brench",
+        "s": 29.1,
+        "e": 29.38
+      },
+      {
+        "w": "nuqta",
+        "s": 29.44,
+        "e": 29.66
+      },
+      {
+        "w": "merj",
+        "s": 29.76,
+        "e": 29.94
+      },
+      {
+        "w": "qatorlari",
+        "s": 30.02,
+        "e": 30.44
+      },
+      {
+        "w": "orqali",
+        "s": 30.5,
+        "e": 30.78
+      },
+      {
+        "w": "tarmoqlar",
+        "s": 31.06,
+        "e": 31.5
+      },
+      {
+        "w": "o‘rtasida",
+        "s": 31.58,
+        "e": 32.0
+      },
+      {
+        "w": "to‘g‘ridan-to‘g‘ri",
+        "s": 32.08,
+        "e": 32.82
+      },
+      {
+        "w": "bog‘liqlik",
+        "s": 32.88,
+        "e": 33.32
+      },
+      {
+        "w": "o‘rnatiladi.",
+        "s": 33.38,
+        "e": 33.88
+      }
+    ]
+  },
+  {
+    "id": "l5",
+    "scene": "ahead_va_behind",
+    "text": "git status va git branch -vv buyruqlari sizning lokal branchingiz serverdan necha commit oldinda yoki orqadaligini aniq ko‘rsatadi.",
+    "show": "git status va git branch -vv buyruqlari sizning lokal branchingiz serverdan necha commit oldinda yoki orqadaligini aniq ko‘rsatadi.",
+    "say": "Git status va git brench minus vi vi buyruqlari sizning lokal brenchingiz serverdan necha kommit oldinda yoki orqadaligini aniq ko‘rsatadi.",
+    "a0": 34.76,
+    "a1": 43.05,
+    "words": [
+      {
+        "w": "Git",
+        "s": 34.76,
+        "e": 34.94
+      },
+      {
+        "w": "status",
+        "s": 35.02,
+        "e": 35.44
+      },
+      {
+        "w": "va",
+        "s": 35.72,
+        "e": 35.8
+      },
+      {
+        "w": "git",
+        "s": 35.92,
+        "e": 36.1
+      },
+      {
+        "w": "brench",
+        "s": 36.18,
+        "e": 36.48
+      },
+      {
+        "w": "minus",
+        "s": 36.62,
+        "e": 36.9
+      },
+      {
+        "w": "vi",
+        "s": 37.04,
+        "e": 37.14
+      },
+      {
+        "w": "vi",
+        "s": 37.24,
+        "e": 37.32
+      },
+      {
+        "w": "buyruqlari",
+        "s": 37.42,
+        "e": 37.91
+      },
+      {
+        "w": "sizning",
+        "s": 38.25,
+        "e": 38.55
+      },
+      {
+        "w": "lokal",
+        "s": 38.59,
+        "e": 38.89
+      },
+      {
+        "w": "brenchingiz",
+        "s": 38.91,
+        "e": 39.43
+      },
+      {
+        "w": "serverdan",
+        "s": 39.49,
+        "e": 39.99
+      },
+      {
+        "w": "necha",
+        "s": 40.09,
+        "e": 40.33
+      },
+      {
+        "w": "kommit",
+        "s": 40.41,
+        "e": 40.69
+      },
+      {
+        "w": "oldinda",
+        "s": 40.83,
+        "e": 41.21
+      },
+      {
+        "w": "yoki",
+        "s": 41.23,
+        "e": 41.53
+      },
+      {
+        "w": "orqadaligini",
+        "s": 41.65,
+        "e": 42.21
+      },
+      {
+        "w": "aniq",
+        "s": 42.37,
+        "e": 42.55
+      },
+      {
+        "w": "ko‘rsatadi.",
+        "s": 42.59,
+        "e": 43.05
+      }
+    ]
+  },
+  {
+    "id": "l6",
+    "scene": "ahead_va_behind",
+    "text": "Ahead raqami hali push qilinmagan commitlarni, behind esa serverda bor, ammo hali olib birlashtirilmagan yangi ishlarni bildiradi.",
+    "show": "Ahead raqami hali push qilinmagan commitlarni, behind esa serverda bor, ammo hali olib birlashtirilmagan yangi ishlarni bildiradi.",
+    "say": "Ehed raqami hali push qilinmagan kommitlarni, bixaynd esa serverda bor, ammo hali olib birlashtirilmagan yangi ishlarni bildiradi.",
+    "a0": 43.95,
+    "a1": 51.09,
+    "words": [
+      {
+        "w": "Ehed",
+        "s": 43.95,
+        "e": 44.25
+      },
+      {
+        "w": "raqami",
+        "s": 44.29,
+        "e": 44.61
+      },
+      {
+        "w": "hali",
+        "s": 44.71,
+        "e": 44.93
+      },
+      {
+        "w": "push",
+        "s": 44.99,
+        "e": 45.17
+      },
+      {
+        "w": "qilinmagan",
+        "s": 45.23,
+        "e": 45.67
+      },
+      {
+        "w": "kommitlarni,",
+        "s": 45.73,
+        "e": 46.23
+      },
+      {
+        "w": "bixaynd",
+        "s": 46.67,
+        "e": 47.09
+      },
+      {
+        "w": "esa",
+        "s": 47.13,
+        "e": 47.29
+      },
+      {
+        "w": "serverda",
+        "s": 47.63,
+        "e": 48.07
+      },
+      {
+        "w": "bor,",
+        "s": 48.13,
+        "e": 48.33
+      },
+      {
+        "w": "ammo",
+        "s": 48.45,
+        "e": 48.61
+      },
+      {
+        "w": "hali",
+        "s": 48.69,
+        "e": 48.87
+      },
+      {
+        "w": "olib",
+        "s": 48.95,
+        "e": 49.11
+      },
+      {
+        "w": "birlashtirilmagan",
+        "s": 49.15,
+        "e": 49.93
+      },
+      {
+        "w": "yangi",
+        "s": 50.03,
+        "e": 50.29
+      },
+      {
+        "w": "ishlarni",
+        "s": 50.35,
+        "e": 50.69
+      },
+      {
+        "w": "bildiradi.",
+        "s": 50.73,
+        "e": 51.09
+      }
+    ]
+  },
+  {
+    "id": "l7",
+    "scene": "remote_branch_push",
+    "text": "Yangi branchni birinchi marta yuborishda git push -u origin buyrug‘i serverda branch yaratadi va upstream bog‘liqligini o‘rnatadi.",
+    "show": "Yangi branchni birinchi marta yuborishda git push -u origin buyrug‘i serverda branch yaratadi va upstream bog‘liqligini o‘rnatadi.",
+    "say": "Yangi brenchni birinchi marta yuborishda git push minus yu orijin buyrug‘i serverda brench yaratadi va apstrim bog‘liqligini o‘rnatadi.",
+    "a0": 52.03,
+    "a1": 59.52,
+    "words": [
+      {
+        "w": "Yangi",
+        "s": 52.03,
+        "e": 52.31
+      },
+      {
+        "w": "brenchni",
+        "s": 52.35,
+        "e": 52.72
+      },
+      {
+        "w": "birinchi",
+        "s": 52.76,
+        "e": 53.08
+      },
+      {
+        "w": "marta",
+        "s": 53.1,
+        "e": 53.32
+      },
+      {
+        "w": "yuborishda",
+        "s": 53.36,
+        "e": 53.78
+      },
+      {
+        "w": "git",
+        "s": 54.12,
+        "e": 54.26
+      },
+      {
+        "w": "push",
+        "s": 54.32,
+        "e": 54.54
+      },
+      {
+        "w": "minus",
+        "s": 54.66,
+        "e": 54.94
+      },
+      {
+        "w": "yu",
+        "s": 55.06,
+        "e": 55.14
+      },
+      {
+        "w": "orijin",
+        "s": 55.36,
+        "e": 55.68
+      },
+      {
+        "w": "buyrug‘i",
+        "s": 55.74,
+        "e": 56.08
+      },
+      {
+        "w": "serverda",
+        "s": 56.38,
+        "e": 56.8
+      },
+      {
+        "w": "brench",
+        "s": 56.86,
+        "e": 57.14
+      },
+      {
+        "w": "yaratadi",
+        "s": 57.18,
+        "e": 57.54
+      },
+      {
+        "w": "va",
+        "s": 57.82,
+        "e": 57.9
+      },
+      {
+        "w": "apstrim",
+        "s": 58.06,
+        "e": 58.48
+      },
+      {
+        "w": "bog‘liqligini",
+        "s": 58.52,
+        "e": 59.06
+      },
+      {
+        "w": "o‘rnatadi.",
+        "s": 59.12,
+        "e": 59.52
+      }
+    ]
+  },
+  {
+    "id": "l8",
+    "scene": "remote_branch_push",
+    "text": "push.autoSetupRemote sozlamasini yoqib qo‘ysak, kelgusida barcha yangi tarmoqlar birgina oddiy git push buyrug‘i bilan avtomatik ulanadi.",
+    "show": "push.autoSetupRemote sozlamasini yoqib qo‘ysak, kelgusida barcha yangi tarmoqlar birgina oddiy git push buyrug‘i bilan avtomatik ulanadi.",
+    "say": "Push nuqta avto setup remout sozlamasini yoqib qo‘ysak, kelgusida barcha yangi tarmoqlar birgina oddiy git push buyrug‘i bilan avtomatik ulanadi.",
+    "a0": 60.36,
+    "a1": 68.19,
+    "words": [
+      {
+        "w": "Push",
+        "s": 60.36,
+        "e": 60.58
+      },
+      {
+        "w": "nuqta",
+        "s": 60.64,
+        "e": 60.86
+      },
+      {
+        "w": "avto",
+        "s": 61.02,
+        "e": 61.22
+      },
+      {
+        "w": "setup",
+        "s": 61.28,
+        "e": 61.56
+      },
+      {
+        "w": "remout",
+        "s": 61.64,
+        "e": 61.94
+      },
+      {
+        "w": "sozlamasini",
+        "s": 61.98,
+        "e": 62.5
+      },
+      {
+        "w": "yoqib",
+        "s": 62.5,
+        "e": 62.78
+      },
+      {
+        "w": "qo‘ysak,",
+        "s": 62.8,
+        "e": 63.12
+      },
+      {
+        "w": "kelgusida",
+        "s": 63.42,
+        "e": 63.92
+      },
+      {
+        "w": "barcha",
+        "s": 64.04,
+        "e": 64.38
+      },
+      {
+        "w": "yangi",
+        "s": 64.46,
+        "e": 64.68
+      },
+      {
+        "w": "tarmoqlar",
+        "s": 64.7,
+        "e": 65.14
+      },
+      {
+        "w": "birgina",
+        "s": 65.46,
+        "e": 65.78
+      },
+      {
+        "w": "oddiy",
+        "s": 65.92,
+        "e": 66.14
+      },
+      {
+        "w": "git",
+        "s": 66.24,
+        "e": 66.4
+      },
+      {
+        "w": "push",
+        "s": 66.48,
+        "e": 66.66
+      },
+      {
+        "w": "buyrug‘i",
+        "s": 66.7,
+        "e": 67.02
+      },
+      {
+        "w": "bilan",
+        "s": 67.04,
+        "e": 67.22
+      },
+      {
+        "w": "avtomatik",
+        "s": 67.34,
+        "e": 67.81
+      },
+      {
+        "w": "ulanadi.",
+        "s": 67.85,
+        "e": 68.19
+      }
+    ]
+  },
+  {
+    "id": "l9",
+    "scene": "delete_va_prune",
+    "text": "Ishi tugagan masofaviy branchni git push origin --delete buyrug‘i yordamida serverdan xavfsiz o‘chirib tashlaymiz.",
+    "show": "Ishi tugagan masofaviy branchni git push origin --delete buyrug‘i yordamida serverdan xavfsiz o‘chirib tashlaymiz.",
+    "say": "Ishi tugagan masofaviy brenchni git push orijin minus minus delit buyrug‘i yordamida serverdan xavfsiz o‘chirib tashlaymiz.",
+    "a0": 69.07,
+    "a1": 75.29,
+    "words": [
+      {
+        "w": "Ishi",
+        "s": 69.07,
+        "e": 69.23
+      },
+      {
+        "w": "tugagan",
+        "s": 69.25,
+        "e": 69.61
+      },
+      {
+        "w": "masofaviy",
+        "s": 69.67,
+        "e": 70.13
+      },
+      {
+        "w": "brenchni",
+        "s": 70.17,
+        "e": 70.55
+      },
+      {
+        "w": "git",
+        "s": 70.87,
+        "e": 71.01
+      },
+      {
+        "w": "push",
+        "s": 71.07,
+        "e": 71.27
+      },
+      {
+        "w": "orijin",
+        "s": 71.39,
+        "e": 71.71
+      },
+      {
+        "w": "minus",
+        "s": 71.81,
+        "e": 72.09
+      },
+      {
+        "w": "minus",
+        "s": 72.15,
+        "e": 72.41
+      },
+      {
+        "w": "delit",
+        "s": 72.49,
+        "e": 72.75
+      },
+      {
+        "w": "buyrug‘i",
+        "s": 72.81,
+        "e": 73.11
+      },
+      {
+        "w": "yordamida",
+        "s": 73.13,
+        "e": 73.55
+      },
+      {
+        "w": "serverdan",
+        "s": 73.63,
+        "e": 74.07
+      },
+      {
+        "w": "xavfsiz",
+        "s": 74.15,
+        "e": 74.51
+      },
+      {
+        "w": "o‘chirib",
+        "s": 74.57,
+        "e": 74.83
+      },
+      {
+        "w": "tashlaymiz.",
+        "s": 74.85,
+        "e": 75.29
+      }
+    ]
+  },
+  {
+    "id": "l10",
+    "scene": "delete_va_prune",
+    "text": "Boshqa jamoa a’zolarida qolib ketgan eskirgan xatcho‘plarni tozalash uchun esa git fetch --prune buyrug‘idan foydalaniladi.",
+    "show": "Boshqa jamoa a’zolarida qolib ketgan eskirgan xatcho‘plarni tozalash uchun esa git fetch --prune buyrug‘idan foydalaniladi.",
+    "say": "Boshqa jamoa a’zolarida qolib ketgan eskirgan xatcho‘plarni tozalash uchun esa git fech minus minus prun buyrug‘idan foydalaniladi.",
+    "a0": 76.13,
+    "a1": 82.98,
+    "words": [
+      {
+        "w": "Boshqa",
+        "s": 76.13,
+        "e": 76.39
+      },
+      {
+        "w": "jamoa",
+        "s": 76.45,
+        "e": 76.77
+      },
+      {
+        "w": "a’zolarida",
+        "s": 76.85,
+        "e": 77.31
+      },
+      {
+        "w": "qolib",
+        "s": 77.35,
+        "e": 77.57
+      },
+      {
+        "w": "ketgan",
+        "s": 77.61,
+        "e": 77.91
+      },
+      {
+        "w": "eskirgan",
+        "s": 78.05,
+        "e": 78.47
+      },
+      {
+        "w": "xatcho‘plarni",
+        "s": 78.53,
+        "e": 79.11
+      },
+      {
+        "w": "tozalash",
+        "s": 79.15,
+        "e": 79.51
+      },
+      {
+        "w": "uchun",
+        "s": 79.57,
+        "e": 79.71
+      },
+      {
+        "w": "esa",
+        "s": 79.75,
+        "e": 79.91
+      },
+      {
+        "w": "git",
+        "s": 80.29,
+        "e": 80.45
+      },
+      {
+        "w": "fech",
+        "s": 80.49,
+        "e": 80.73
+      },
+      {
+        "w": "minus",
+        "s": 80.87,
+        "e": 81.13
+      },
+      {
+        "w": "minus",
+        "s": 81.19,
+        "e": 81.45
+      },
+      {
+        "w": "prun",
+        "s": 81.51,
+        "e": 81.77
+      },
+      {
+        "w": "buyrug‘idan",
+        "s": 81.81,
+        "e": 82.25
+      },
+      {
+        "w": "foydalaniladi.",
+        "s": 82.29,
+        "e": 82.98
+      }
+    ]
+  },
+  {
+    "id": "l11",
+    "scene": "xulosa",
+    "text": "Remote branchlar va prune amaliyoti orqali ombordagi barcha tarmoqlar doimo sarishta, toza va aniq sinxron holatda saqlanadi.",
+    "show": "Remote branchlar va prune amaliyoti orqali ombordagi barcha tarmoqlar doimo sarishta, toza va aniq sinxron holatda saqlanadi.",
+    "say": "Remout brenchlar va prun amaliyoti orqali ombordagi barcha tarmoqlar doimo sarishta, toza va aniq sinxron holatda saqlanadi.",
+    "a0": 83.88,
+    "a1": 91.54,
+    "words": [
+      {
+        "w": "Remout",
+        "s": 83.88,
+        "e": 84.18
+      },
+      {
+        "w": "brenchlar",
+        "s": 84.24,
+        "e": 84.7
+      },
+      {
+        "w": "va",
+        "s": 84.82,
+        "e": 84.9
+      },
+      {
+        "w": "prun",
+        "s": 85.0,
+        "e": 85.22
+      },
+      {
+        "w": "amaliyoti",
+        "s": 85.3,
+        "e": 85.7
+      },
+      {
+        "w": "orqali",
+        "s": 85.74,
+        "e": 86.04
+      },
+      {
+        "w": "ombordagi",
+        "s": 86.38,
+        "e": 86.82
+      },
+      {
+        "w": "barcha",
+        "s": 86.92,
+        "e": 87.2
+      },
+      {
+        "w": "tarmoqlar",
+        "s": 87.24,
+        "e": 87.68
+      },
+      {
+        "w": "doimo",
+        "s": 87.84,
+        "e": 88.24
+      },
+      {
+        "w": "sarishta,",
+        "s": 88.4,
+        "e": 88.84
+      },
+      {
+        "w": "toza",
+        "s": 89.22,
+        "e": 89.52
+      },
+      {
+        "w": "va",
+        "s": 89.86,
+        "e": 89.92
+      },
+      {
+        "w": "aniq",
+        "s": 90.06,
+        "e": 90.24
+      },
+      {
+        "w": "sinxron",
+        "s": 90.3,
+        "e": 90.66
+      },
+      {
+        "w": "holatda",
+        "s": 90.7,
+        "e": 91.04
+      },
+      {
+        "w": "saqlanadi.",
+        "s": 91.1,
+        "e": 91.54
+      }
+    ]
+  },
+  {
+    "id": "l12",
+    "scene": "xulosa",
+    "text": "Keyingi bobda fetch va push amallarining ichki protokollari, refspeklar va tarmoq trafigini to‘liq tahlil qilamiz.",
+    "show": "Keyingi bobda fetch va push amallarining ichki protokollari, refspeklar va tarmoq trafigini to‘liq tahlil qilamiz.",
+    "say": "Keyingi bobda fech va push amallarining ichki protokollari, refspeklar va tarmoq trafigini to‘liq tahlil qilamiz.",
+    "a0": 92.41,
+    "a1": 99.24,
+    "words": [
+      {
+        "w": "Keyingi",
+        "s": 92.41,
+        "e": 92.73
+      },
+      {
+        "w": "bobda",
+        "s": 92.77,
+        "e": 93.05
+      },
+      {
+        "w": "fech",
+        "s": 93.37,
+        "e": 93.63
+      },
+      {
+        "w": "va",
+        "s": 93.71,
+        "e": 93.77
+      },
+      {
+        "w": "push",
+        "s": 93.89,
+        "e": 94.09
+      },
+      {
+        "w": "amallarining",
+        "s": 94.17,
+        "e": 94.71
+      },
+      {
+        "w": "ichki",
+        "s": 94.83,
+        "e": 95.05
+      },
+      {
+        "w": "protokollari,",
+        "s": 95.09,
+        "e": 95.73
+      },
+      {
+        "w": "refspeklar",
+        "s": 96.15,
+        "e": 96.79
+      },
+      {
+        "w": "va",
+        "s": 97.12,
+        "e": 97.18
+      },
+      {
+        "w": "tarmoq",
+        "s": 97.3,
+        "e": 97.6
+      },
+      {
+        "w": "trafigini",
+        "s": 97.64,
+        "e": 98.1
+      },
+      {
+        "w": "to‘liq",
+        "s": 98.24,
+        "e": 98.52
+      },
+      {
+        "w": "tahlil",
+        "s": 98.56,
+        "e": 98.88
+      },
+      {
+        "w": "qilamiz.",
+        "s": 98.92,
+        "e": 99.24
+      }
+    ]
+  }
+]
