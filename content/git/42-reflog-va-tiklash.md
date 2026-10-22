@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" playsinline poster="/video/git/42-reflog-va-tiklash.jpg" src="/video/git/42-reflog-va-tiklash.mp4">
+    <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/git/42-reflog-va-tiklash.chapters.vtt" default>
+    <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/git/42-reflog-va-tiklash.uz.vtt">
+  </video>
+  <figcaption>42.1-video. Git reflog va ma'lumotni tiklash: yo'qolgan commitlarni qutqarish va fsck</figcaption>
+</figure>
+
 Git bilan ishlaganda vaqti-vaqti bilan "commit'larim yo'qoldi" degan holat bo'ladi. Odatda sabab ikkitadan biri:
 
 - ish bor branch'ni majburan o'chirib yubordingiz (`git branch -D`), keyin u kerak bo'lib qoldi;
