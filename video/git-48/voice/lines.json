@@ -1,0 +1,1004 @@
+[
+  {
+    "id": "l1",
+    "scene": "env_intro",
+    "text": "Muhit o'zgaruvchilari operatsion tizim tomonidan dasturga uzatiladigan bir martalik yoki meros bo'lib o'tuvchi parametrlardir.",
+    "show": "Muhit o'zgaruvchilari operatsion tizim tomonidan dasturga uzatiladigan bir martalik yoki meros bo'lib o'tuvchi parametrlardir.",
+    "say": "Muhit o'zgaruvchilari operatsion tizim tomonidan dasturga uzatiladigan bir martalik yoki meros bo'lib o'tuvchi parametrlardir.",
+    "a0": 0.18,
+    "a1": 7.16,
+    "words": [
+      {
+        "w": "Muhit",
+        "s": 0.18,
+        "e": 0.42
+      },
+      {
+        "w": "o'zgaruvchilari",
+        "s": 0.48,
+        "e": 1.18
+      },
+      {
+        "w": "operatsion",
+        "s": 1.48,
+        "e": 1.96
+      },
+      {
+        "w": "tizim",
+        "s": 2.0,
+        "e": 2.2
+      },
+      {
+        "w": "tomonidan",
+        "s": 2.24,
+        "e": 2.7
+      },
+      {
+        "w": "dasturga",
+        "s": 2.74,
+        "e": 3.18
+      },
+      {
+        "w": "uzatiladigan",
+        "s": 3.22,
+        "e": 3.9
+      },
+      {
+        "w": "bir",
+        "s": 4.2,
+        "e": 4.34
+      },
+      {
+        "w": "martalik",
+        "s": 4.4,
+        "e": 4.84
+      },
+      {
+        "w": "yoki",
+        "s": 4.96,
+        "e": 5.24
+      },
+      {
+        "w": "meros",
+        "s": 5.44,
+        "e": 5.78
+      },
+      {
+        "w": "bo'lib",
+        "s": 5.82,
+        "e": 6.04
+      },
+      {
+        "w": "o'tuvchi",
+        "s": 6.06,
+        "e": 6.36
+      },
+      {
+        "w": "parametrlardir.",
+        "s": 6.4,
+        "e": 7.16
+      }
+    ]
+  },
+  {
+    "id": "l2",
+    "scene": "env_intro",
+    "text": "Gitda ushbu parametrlar konfiguratsiya fayllaridan ustun turib, skriptlar va avtomatlashtirishda beqiyos imkoniyatlar beradi.",
+    "show": "Gitda ushbu parametrlar konfiguratsiya fayllaridan ustun turib, skriptlar va avtomatlashtirishda beqiyos imkoniyatlar beradi.",
+    "say": "Gitda ushbu parametrlar konfiguratsiya fayllaridan ustun turib, skriptlar va avtomatlashtirishda beqiyos imkoniyatlar beradi.",
+    "a0": 8.29,
+    "a1": 15.23,
+    "words": [
+      {
+        "w": "Gitda",
+        "s": 8.29,
+        "e": 8.61
+      },
+      {
+        "w": "ushbu",
+        "s": 8.79,
+        "e": 8.99
+      },
+      {
+        "w": "parametrlar",
+        "s": 9.07,
+        "e": 9.69
+      },
+      {
+        "w": "konfiguratsiya",
+        "s": 9.89,
+        "e": 10.51
+      },
+      {
+        "w": "fayllaridan",
+        "s": 10.53,
+        "e": 11.07
+      },
+      {
+        "w": "ustun",
+        "s": 11.19,
+        "e": 11.49
+      },
+      {
+        "w": "turib,",
+        "s": 11.53,
+        "e": 11.73
+      },
+      {
+        "w": "skriptlar",
+        "s": 12.09,
+        "e": 12.55
+      },
+      {
+        "w": "va",
+        "s": 12.65,
+        "e": 12.71
+      },
+      {
+        "w": "avtomatlashtirishda",
+        "s": 12.89,
+        "e": 13.71
+      },
+      {
+        "w": "beqiyos",
+        "s": 13.79,
+        "e": 14.29
+      },
+      {
+        "w": "imkoniyatlar",
+        "s": 14.37,
+        "e": 14.91
+      },
+      {
+        "w": "beradi.",
+        "s": 14.95,
+        "e": 15.23
+      }
+    ]
+  },
+  {
+    "id": "l3",
+    "scene": "repo_paths",
+    "text": "Jiti dir va jiti vork tri o'zgaruvchilari orqali repozitoriy va ishchi papkani bir-biridan ajratilgan holda boshqarish mumkin.",
+    "show": "Jiti dir va jiti vork tri o'zgaruvchilari orqali repozitoriy va ishchi papkani bir-biridan ajratilgan holda boshqarish mumkin.",
+    "say": "Jiti dir va jiti vork tri o'zgaruvchilari orqali repozitoriy va ishchi papkani bir-biridan ajratilgan holda boshqarish mumkin.",
+    "a0": 16.73,
+    "a1": 23.76,
+    "words": [
+      {
+        "w": "Jiti",
+        "s": 16.73,
+        "e": 17.03
+      },
+      {
+        "w": "dir",
+        "s": 17.03,
+        "e": 17.23
+      },
+      {
+        "w": "va",
+        "s": 17.41,
+        "e": 17.49
+      },
+      {
+        "w": "jiti",
+        "s": 17.73,
+        "e": 17.97
+      },
+      {
+        "w": "vork",
+        "s": 18.09,
+        "e": 18.31
+      },
+      {
+        "w": "tri",
+        "s": 18.37,
+        "e": 18.53
+      },
+      {
+        "w": "o'zgaruvchilari",
+        "s": 18.61,
+        "e": 19.19
+      },
+      {
+        "w": "orqali",
+        "s": 19.25,
+        "e": 19.57
+      },
+      {
+        "w": "repozitoriy",
+        "s": 19.81,
+        "e": 20.37
+      },
+      {
+        "w": "va",
+        "s": 20.45,
+        "e": 20.51
+      },
+      {
+        "w": "ishchi",
+        "s": 20.61,
+        "e": 20.85
+      },
+      {
+        "w": "papkani",
+        "s": 20.87,
+        "e": 21.25
+      },
+      {
+        "w": "bir-biridan",
+        "s": 21.59,
+        "e": 22.07
+      },
+      {
+        "w": "ajratilgan",
+        "s": 22.19,
+        "e": 22.8
+      },
+      {
+        "w": "holda",
+        "s": 22.86,
+        "e": 23.06
+      },
+      {
+        "w": "boshqarish",
+        "s": 23.1,
+        "e": 23.48
+      },
+      {
+        "w": "mumkin.",
+        "s": 23.52,
+        "e": 23.76
+      }
+    ]
+  },
+  {
+    "id": "l4",
+    "scene": "repo_paths",
+    "text": "Bu usul repozitoriy ichiga kirmasdan turib, istalgan katalogdan turib Git buyruqlarini xavfsiz bajarishga sharoit yaratadi.",
+    "show": "Bu usul repozitoriy ichiga kirmasdan turib, istalgan katalogdan turib Git buyruqlarini xavfsiz bajarishga sharoit yaratadi.",
+    "say": "Bu usul repozitoriy ichiga kirmasdan turib, istalgan katalogdan turib Git buyruqlarini xavfsiz bajarishga sharoit yaratadi.",
+    "a0": 24.5,
+    "a1": 31.08,
+    "words": [
+      {
+        "w": "Bu",
+        "s": 24.5,
+        "e": 24.58
+      },
+      {
+        "w": "usul",
+        "s": 24.66,
+        "e": 24.92
+      },
+      {
+        "w": "repozitoriy",
+        "s": 25.26,
+        "e": 25.8
+      },
+      {
+        "w": "ichiga",
+        "s": 25.84,
+        "e": 26.06
+      },
+      {
+        "w": "kirmasdan",
+        "s": 26.12,
+        "e": 26.66
+      },
+      {
+        "w": "turib,",
+        "s": 26.7,
+        "e": 26.9
+      },
+      {
+        "w": "istalgan",
+        "s": 27.02,
+        "e": 27.5
+      },
+      {
+        "w": "katalogdan",
+        "s": 27.56,
+        "e": 28.12
+      },
+      {
+        "w": "turib",
+        "s": 28.14,
+        "e": 28.34
+      },
+      {
+        "w": "Git",
+        "s": 28.64,
+        "e": 28.8
+      },
+      {
+        "w": "buyruqlarini",
+        "s": 28.86,
+        "e": 29.4
+      },
+      {
+        "w": "xavfsiz",
+        "s": 29.48,
+        "e": 29.86
+      },
+      {
+        "w": "bajarishga",
+        "s": 29.9,
+        "e": 30.32
+      },
+      {
+        "w": "sharoit",
+        "s": 30.38,
+        "e": 30.7
+      },
+      {
+        "w": "yaratadi.",
+        "s": 30.72,
+        "e": 31.08
+      }
+    ]
+  },
+  {
+    "id": "l5",
+    "scene": "author_override",
+    "text": "Jiti avtor neym, i-meyl va sana parametrlari commit mualliflik ma'lumotlarini bir martalik buyruq darajasida o'zgartiradi.",
+    "show": "Jiti avtor neym, i-meyl va sana parametrlari commit mualliflik ma'lumotlarini bir martalik buyruq darajasida o'zgartiradi.",
+    "say": "Jiti avtor neym, i-meyl va sana parametrlari kommit mualliflik ma'lumotlarini bir martalik buyruq darajasida o'zgartiradi.",
+    "a0": 32.58,
+    "a1": 39.57,
+    "words": [
+      {
+        "w": "Jiti",
+        "s": 32.58,
+        "e": 32.8
+      },
+      {
+        "w": "avtor",
+        "s": 32.94,
+        "e": 33.18
+      },
+      {
+        "w": "neym,",
+        "s": 33.24,
+        "e": 33.56
+      },
+      {
+        "w": "i-meyl",
+        "s": 33.92,
+        "e": 34.28
+      },
+      {
+        "w": "va",
+        "s": 34.36,
+        "e": 34.44
+      },
+      {
+        "w": "sana",
+        "s": 34.58,
+        "e": 34.8
+      },
+      {
+        "w": "parametrlari",
+        "s": 34.84,
+        "e": 35.48
+      },
+      {
+        "w": "kommit",
+        "s": 35.82,
+        "e": 36.12
+      },
+      {
+        "w": "mualliflik",
+        "s": 36.16,
+        "e": 36.62
+      },
+      {
+        "w": "ma'lumotlarini",
+        "s": 36.66,
+        "e": 37.34
+      },
+      {
+        "w": "bir",
+        "s": 37.48,
+        "e": 37.63
+      },
+      {
+        "w": "martalik",
+        "s": 37.69,
+        "e": 38.13
+      },
+      {
+        "w": "buyruq",
+        "s": 38.21,
+        "e": 38.51
+      },
+      {
+        "w": "darajasida",
+        "s": 38.57,
+        "e": 38.99
+      },
+      {
+        "w": "o'zgartiradi.",
+        "s": 39.05,
+        "e": 39.57
+      }
+    ]
+  },
+  {
+    "id": "l6",
+    "scene": "author_override",
+    "text": "Ushbu vosita tarixni import qilish yoki eski commitlar xronologiyasini qayta tiklashda keng foydalaniladi.",
+    "show": "Ushbu vosita tarixni import qilish yoki eski commitlar xronologiyasini qayta tiklashda keng foydalaniladi.",
+    "say": "Ushbu vosita tarixni import qilish yoki eski commitlar xronologiyasini qayta tiklashda keng foydalaniladi.",
+    "a0": 40.43,
+    "a1": 46.43,
+    "words": [
+      {
+        "w": "Ushbu",
+        "s": 40.43,
+        "e": 40.65
+      },
+      {
+        "w": "vosita",
+        "s": 40.71,
+        "e": 41.11
+      },
+      {
+        "w": "tarixni",
+        "s": 41.45,
+        "e": 41.85
+      },
+      {
+        "w": "import",
+        "s": 41.99,
+        "e": 42.27
+      },
+      {
+        "w": "qilish",
+        "s": 42.31,
+        "e": 42.63
+      },
+      {
+        "w": "yoki",
+        "s": 42.83,
+        "e": 43.11
+      },
+      {
+        "w": "eski",
+        "s": 43.33,
+        "e": 43.55
+      },
+      {
+        "w": "commitlar",
+        "s": 43.61,
+        "e": 44.01
+      },
+      {
+        "w": "xronologiyasini",
+        "s": 44.05,
+        "e": 44.79
+      },
+      {
+        "w": "qayta",
+        "s": 44.89,
+        "e": 45.15
+      },
+      {
+        "w": "tiklashda",
+        "s": 45.19,
+        "e": 45.55
+      },
+      {
+        "w": "keng",
+        "s": 45.61,
+        "e": 45.81
+      },
+      {
+        "w": "foydalaniladi.",
+        "s": 45.81,
+        "e": 46.43
+      }
+    ]
+  },
+  {
+    "id": "l7",
+    "scene": "network_ssh",
+    "text": "Jiti es-es-eych kommand o'zgaruvchisi orqali aniq bir maxfiy kalit bilan ulanish yoki tarmoq portini alohida belgilash mumkin.",
+    "show": "Jiti es-es-eych kommand o'zgaruvchisi orqali aniq bir maxfiy kalit bilan ulanish yoki tarmoq portini alohida belgilash mumkin.",
+    "say": "Jiti es-es-eych kommand o'zgaruvchisi orqali aniq bir maxfiy kalit bilan ulanish yoki tarmoq portini alohida belgilash mumkin.",
+    "a0": 47.93,
+    "a1": 54.7,
+    "words": [
+      {
+        "w": "Jiti",
+        "s": 47.93,
+        "e": 48.17
+      },
+      {
+        "w": "es-es-eych",
+        "s": 48.27,
+        "e": 48.69
+      },
+      {
+        "w": "kommand",
+        "s": 48.75,
+        "e": 49.09
+      },
+      {
+        "w": "o'zgaruvchisi",
+        "s": 49.15,
+        "e": 49.61
+      },
+      {
+        "w": "orqali",
+        "s": 49.67,
+        "e": 49.99
+      },
+      {
+        "w": "aniq",
+        "s": 50.41,
+        "e": 50.61
+      },
+      {
+        "w": "bir",
+        "s": 50.69,
+        "e": 50.81
+      },
+      {
+        "w": "maxfiy",
+        "s": 50.87,
+        "e": 51.17
+      },
+      {
+        "w": "kalit",
+        "s": 51.23,
+        "e": 51.49
+      },
+      {
+        "w": "bilan",
+        "s": 51.53,
+        "e": 51.71
+      },
+      {
+        "w": "ulanish",
+        "s": 51.77,
+        "e": 52.25
+      },
+      {
+        "w": "yoki",
+        "s": 52.43,
+        "e": 52.66
+      },
+      {
+        "w": "tarmoq",
+        "s": 52.78,
+        "e": 53.08
+      },
+      {
+        "w": "portini",
+        "s": 53.14,
+        "e": 53.5
+      },
+      {
+        "w": "alohida",
+        "s": 53.64,
+        "e": 54.02
+      },
+      {
+        "w": "belgilash",
+        "s": 54.06,
+        "e": 54.42
+      },
+      {
+        "w": "mumkin.",
+        "s": 54.44,
+        "e": 54.7
+      }
+    ]
+  },
+  {
+    "id": "l8",
+    "scene": "network_ssh",
+    "text": "Avtomatlashgan CI muhitlarida esa jiti ask-pas interaktiv so'rovlarsiz parollarni xavfsiz uzatishga xizmat qiladi.",
+    "show": "Avtomatlashgan CI muhitlarida esa jiti ask-pas interaktiv so'rovlarsiz parollarni xavfsiz uzatishga xizmat qiladi.",
+    "say": "Avtomatlashgan CI muhitlarida esa jiti ask-pas interaktiv so'rovlarsiz parollarni xavfsiz uzatishga xizmat qiladi.",
+    "a0": 55.78,
+    "a1": 62.34,
+    "words": [
+      {
+        "w": "Avtomatlashgan",
+        "s": 55.78,
+        "e": 56.46
+      },
+      {
+        "w": "CI",
+        "s": 56.58,
+        "e": 56.86
+      },
+      {
+        "w": "muhitlarida",
+        "s": 56.92,
+        "e": 57.38
+      },
+      {
+        "w": "esa",
+        "s": 57.44,
+        "e": 57.6
+      },
+      {
+        "w": "jiti",
+        "s": 57.98,
+        "e": 58.18
+      },
+      {
+        "w": "ask-pas",
+        "s": 58.32,
+        "e": 58.82
+      },
+      {
+        "w": "interaktiv",
+        "s": 59.02,
+        "e": 59.54
+      },
+      {
+        "w": "so'rovlarsiz",
+        "s": 59.62,
+        "e": 60.28
+      },
+      {
+        "w": "parollarni",
+        "s": 60.4,
+        "e": 60.9
+      },
+      {
+        "w": "xavfsiz",
+        "s": 60.94,
+        "e": 61.3
+      },
+      {
+        "w": "uzatishga",
+        "s": 61.38,
+        "e": 61.74
+      },
+      {
+        "w": "xizmat",
+        "s": 61.78,
+        "e": 62.04
+      },
+      {
+        "w": "qiladi.",
+        "s": 62.06,
+        "e": 62.34
+      }
+    ]
+  },
+  {
+    "id": "l9",
+    "scene": "debug_trace",
+    "text": "Jiti treys barobar bir sozlamasi Gitning ichki amallari, bajarilgan tashqi buyruqlar va fayllar yo'lini to'liq fosh qiladi.",
+    "show": "Jiti treys barobar bir sozlamasi Gitning ichki amallari, bajarilgan tashqi buyruqlar va fayllar yo'lini to'liq fosh qiladi.",
+    "say": "Jiti treys barobar bir sozlamasi Gitning ichki amallari, bajarilgan tashqi buyruqlar va fayllar yo'lini to'liq fosh qiladi.",
+    "a0": 63.7,
+    "a1": 71.07,
+    "words": [
+      {
+        "w": "Jiti",
+        "s": 63.7,
+        "e": 63.94
+      },
+      {
+        "w": "treys",
+        "s": 64.02,
+        "e": 64.32
+      },
+      {
+        "w": "barobar",
+        "s": 64.38,
+        "e": 64.74
+      },
+      {
+        "w": "bir",
+        "s": 64.86,
+        "e": 65.02
+      },
+      {
+        "w": "sozlamasi",
+        "s": 65.12,
+        "e": 65.68
+      },
+      {
+        "w": "Gitning",
+        "s": 66.02,
+        "e": 66.36
+      },
+      {
+        "w": "ichki",
+        "s": 66.46,
+        "e": 66.7
+      },
+      {
+        "w": "amallari,",
+        "s": 66.78,
+        "e": 67.26
+      },
+      {
+        "w": "bajarilgan",
+        "s": 67.59,
+        "e": 68.05
+      },
+      {
+        "w": "tashqi",
+        "s": 68.09,
+        "e": 68.35
+      },
+      {
+        "w": "buyruqlar",
+        "s": 68.39,
+        "e": 68.89
+      },
+      {
+        "w": "va",
+        "s": 69.19,
+        "e": 69.27
+      },
+      {
+        "w": "fayllar",
+        "s": 69.39,
+        "e": 69.83
+      },
+      {
+        "w": "yo'lini",
+        "s": 69.87,
+        "e": 70.17
+      },
+      {
+        "w": "to'liq",
+        "s": 70.27,
+        "e": 70.55
+      },
+      {
+        "w": "fosh",
+        "s": 70.59,
+        "e": 70.77
+      },
+      {
+        "w": "qiladi.",
+        "s": 70.81,
+        "e": 71.07
+      }
+    ]
+  },
+  {
+    "id": "l10",
+    "scene": "debug_trace",
+    "text": "Jiti treys performens esa har bir operatsiyaning millisekundlardagi vaqtini ko'rsatib, sekinlashuvlarni aniqlashga yordam beradi.",
+    "show": "Jiti treys performens esa har bir operatsiyaning millisekundlardagi vaqtini ko'rsatib, sekinlashuvlarni aniqlashga yordam beradi.",
+    "say": "Jiti treys performens esa har bir operatsiyaning millisekundlardagi vaqtini ko'rsatib, sekinlashuvlarni aniqlashga yordam beradi.",
+    "a0": 71.95,
+    "a1": 78.67,
+    "words": [
+      {
+        "w": "Jiti",
+        "s": 71.95,
+        "e": 72.17
+      },
+      {
+        "w": "treys",
+        "s": 72.23,
+        "e": 72.51
+      },
+      {
+        "w": "performens",
+        "s": 72.57,
+        "e": 73.05
+      },
+      {
+        "w": "esa",
+        "s": 73.11,
+        "e": 73.27
+      },
+      {
+        "w": "har",
+        "s": 73.65,
+        "e": 73.85
+      },
+      {
+        "w": "bir",
+        "s": 73.89,
+        "e": 74.01
+      },
+      {
+        "w": "operatsiyaning",
+        "s": 74.09,
+        "e": 74.69
+      },
+      {
+        "w": "millisekundlardagi",
+        "s": 74.75,
+        "e": 75.73
+      },
+      {
+        "w": "vaqtini",
+        "s": 75.79,
+        "e": 76.13
+      },
+      {
+        "w": "ko'rsatib,",
+        "s": 76.15,
+        "e": 76.57
+      },
+      {
+        "w": "sekinlashuvlarni",
+        "s": 76.85,
+        "e": 77.67
+      },
+      {
+        "w": "aniqlashga",
+        "s": 77.69,
+        "e": 78.07
+      },
+      {
+        "w": "yordam",
+        "s": 78.13,
+        "e": 78.37
+      },
+      {
+        "w": "beradi.",
+        "s": 78.39,
+        "e": 78.67
+      }
+    ]
+  },
+  {
+    "id": "l11",
+    "scene": "xulosa",
+    "text": "Muhit o'zgaruvchilarining bolalar jarayoniga meros qolishi skriptlarda yangi repo bilan ishlashda ehtiyotkorlikni talab etadi.",
+    "show": "Muhit o'zgaruvchilarining bolalar jarayoniga meros qolishi skriptlarda yangi repo bilan ishlashda ehtiyotkorlikni talab etadi.",
+    "say": "Muhit o'zgaruvchilarining bolalar jarayoniga meros qolishi skriptlarda yangi repo bilan ishlashda ehtiyotkorlikni talab etadi.",
+    "a0": 79.99,
+    "a1": 86.26,
+    "words": [
+      {
+        "w": "Muhit",
+        "s": 79.99,
+        "e": 80.21
+      },
+      {
+        "w": "o'zgaruvchilarining",
+        "s": 80.27,
+        "e": 81.07
+      },
+      {
+        "w": "bolalar",
+        "s": 81.15,
+        "e": 81.51
+      },
+      {
+        "w": "jarayoniga",
+        "s": 81.57,
+        "e": 82.03
+      },
+      {
+        "w": "meros",
+        "s": 82.09,
+        "e": 82.37
+      },
+      {
+        "w": "qolishi",
+        "s": 82.43,
+        "e": 82.8
+      },
+      {
+        "w": "skriptlarda",
+        "s": 83.02,
+        "e": 83.58
+      },
+      {
+        "w": "yangi",
+        "s": 83.78,
+        "e": 84.06
+      },
+      {
+        "w": "repo",
+        "s": 84.1,
+        "e": 84.32
+      },
+      {
+        "w": "bilan",
+        "s": 84.38,
+        "e": 84.56
+      },
+      {
+        "w": "ishlashda",
+        "s": 84.58,
+        "e": 84.94
+      },
+      {
+        "w": "ehtiyotkorlikni",
+        "s": 85.02,
+        "e": 85.72
+      },
+      {
+        "w": "talab",
+        "s": 85.76,
+        "e": 85.98
+      },
+      {
+        "w": "etadi.",
+        "s": 86.02,
+        "e": 86.26
+      }
+    ]
+  },
+  {
+    "id": "l12",
+    "scene": "xulosa",
+    "text": "Zarurat tug'ilganda un-set orqali ularni tozalash turli repozitoriylar o'rtasidagi ziddiyatlarning oldini oladi.",
+    "show": "Zarurat tug'ilganda un-set orqali ularni tozalash turli repozitoriylar o'rtasidagi ziddiyatlarning oldini oladi.",
+    "say": "Zarurat tug'ilganda un-set orqali ularni tozalash turli repozitoriylar o'rtasidagi ziddiyatlarning oldini oladi.",
+    "a0": 87.2,
+    "a1": 93.28,
+    "words": [
+      {
+        "w": "Zarurat",
+        "s": 87.2,
+        "e": 87.56
+      },
+      {
+        "w": "tug'ilganda",
+        "s": 87.6,
+        "e": 88.08
+      },
+      {
+        "w": "un-set",
+        "s": 88.46,
+        "e": 88.8
+      },
+      {
+        "w": "orqali",
+        "s": 88.84,
+        "e": 89.14
+      },
+      {
+        "w": "ularni",
+        "s": 89.22,
+        "e": 89.5
+      },
+      {
+        "w": "tozalash",
+        "s": 89.54,
+        "e": 89.94
+      },
+      {
+        "w": "turli",
+        "s": 90.22,
+        "e": 90.48
+      },
+      {
+        "w": "repozitoriylar",
+        "s": 90.54,
+        "e": 91.25
+      },
+      {
+        "w": "o'rtasidagi",
+        "s": 91.29,
+        "e": 91.77
+      },
+      {
+        "w": "ziddiyatlarning",
+        "s": 91.81,
+        "e": 92.51
+      },
+      {
+        "w": "oldini",
+        "s": 92.72,
+        "e": 92.98
+      },
+      {
+        "w": "oladi.",
+        "s": 93.02,
+        "e": 93.28
+      }
+    ]
+  }
+]

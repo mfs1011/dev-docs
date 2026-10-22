@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" playsinline poster="/video/git/48-muhit-ozgaruvchilari.jpg" src="/video/git/48-muhit-ozgaruvchilari.mp4">
+    <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/git/48-muhit-ozgaruvchilari.chapters.vtt" default>
+    <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/git/48-muhit-ozgaruvchilari.uz.vtt">
+  </video>
+  <figcaption>48.1-video. Git muhit o'zgaruvchilari: GIT_DIR, GIT_WORK_TREE, mualliflik, SSH va nosozliklarni izlash</figcaption>
+</figure>
+
 **Muhit o'zgaruvchisi** (*environment variable*) — har bir ishga tushgan dasturga operatsion tizim beradigan `NOM=qiymat` juftliklari ro'yxati. O'xshatish: dastur ishga ketayotganda cho'ntagiga solib qo'yilgan xat. Dastur xatni o'qiydi va unga qarab ishlaydi; u boshqa dasturni chaqirsa, xatning nusxasi yangi dasturning cho'ntagiga ham tushadi (*meros*).
 
 Git ham shunday xatlarni o'qiydi. Ularning ko'pchiligi `GIT_` bilan boshlanadi, ba'zilari umumiy (`HOME`, `EDITOR`, `PAGER`, `EMAIL`). Pro Git aytganidek, ularni bilish kamdan-kam kerak bo'ladi, lekin kerak bo'lganda — skript yozganda, CI sozlaganda, "Git nega bunday qilyapti?" degan savolga javob izlaganda — boshqa yo'l yo'q.
