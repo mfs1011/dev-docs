@@ -1,0 +1,61 @@
+WEBVTT
+
+1
+00:01.420 --> 00:11.820
+Salom! Ushbu o‘n to‘qqizinchi bobda Git omboridagi commit, tree va bloblarni
+aniq ko‘rsatuvchi revizhn sintaksisi hamda diapazonlar bilan tanishamiz.
+
+2
+00:12.670 --> 00:21.340
+To‘liq qirq belgili hesh o‘rniga kamida to‘rtta belgidan iborat yagona
+qisqa prefiks yozish orqali ham istalgan obyektga murojaat qilish mumkin.
+
+3
+00:25.230 --> 00:33.310
+Kuchukcha belgisi HEAD ko‘rsatkichini bildirsa, jingalak qavs ichidagi
+indeks reflog bo‘yicha refning o‘tmishdagi qadamlarini aniqlaydi.
+
+4
+00:33.440 --> 00:42.920
+Shuningdek, kuchukcha minus bir sintaksisi avvalgi turgan brenchga qaytish,
+sana ko‘rsatkichlari esa muayyan vaqtdagi holatni topishga xizmat qiladi.
+
+5
+00:46.890 --> 00:55.940
+Ota zanjirida karet belgisi merjdagi ikkinchi otani eni bo‘yicha tanlasa,
+tilda belgisi avlodlar chuqurligi bo‘ylab ketma-ket orqaga siljiydi.
+
+6
+00:56.030 --> 01:04.690
+Masalan, HEAD tilda uch faqat birinchi otalar bo‘ylab uch qadam orqaga
+yursa, HEAD karet ikki aynan merj qilingan tarmoq uchini ko‘rsatadi.
+
+7
+01:09.160 --> 01:17.610
+Revision sintaksisi fayl yo‘llari bilan ham ishlaydi: ikki nuqta orqali
+brench almashtirmasdan istalgan eski versiyadagi faylni o‘qish mumkin.
+
+8
+01:18.360 --> 01:27.220
+Annotated teglardan to‘g‘ridan-to‘g‘ri commitga o‘tish uchun jingalak qavsda
+commit turi, stagingdagi fayllar uchun esa boshlang‘ich indeks ko‘rsatiladi.
+
+9
+01:31.590 --> 01:37.780
+Diapazonlarda ikki nuqta orqali bir brenchda bor,
+ikkinchisida yo‘q commitlar to‘plami filtrlanadi.
+
+10
+01:37.980 --> 01:45.890
+Uch nuqta esa ikki tarmoq o‘rtasidagi simmetrik farqni, ya’ni umumiy
+ajdoddan keyingi mustaqil commitlarni aniqlash imkonini beradi.
+
+11
+01:50.040 --> 01:57.680
+Bundan tashqari, xabar bo‘yicha qidiruv va fyorst-perent filtrlari
+loyiha tarixini tahlil qilishni sezilarli darajada soddalashtiradi.
+
+12
+01:57.890 --> 02:05.470
+Keyingi yigirmanchi bobda brenchlarning asl tabiati va
+ularning o‘ta yengil ko‘rsatkich ekanini amalda o‘rganamiz.

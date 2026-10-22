@@ -1,0 +1,1154 @@
+[
+  {
+    "id": "l1",
+    "scene": "intro",
+    "text": "Salom! Ushbu o‘n to‘qqizinchi bobda Git omboridagi commit, tree va bloblarni aniq ko‘rsatuvchi revizhn sintaksisi hamda diapazonlar bilan tanishamiz.",
+    "show": "Salom! Ushbu o‘n to‘qqizinchi bobda Git omboridagi commit, tree va bloblarni aniq ko‘rsatuvchi revizhn sintaksisi hamda diapazonlar bilan tanishamiz.",
+    "say": "Salom! Ushbu o‘n to‘qqizinchi bobda Git omboridagi kommit, tree va bloblarni aniq ko‘rsatuvchi revizhn sintaksisi hamda diapazonlar bilan tanishamiz.",
+    "a0": 0.32,
+    "a1": 10.27,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.32,
+        "e": 0.6
+      },
+      {
+        "w": "Ushbu",
+        "s": 1.2,
+        "e": 1.46
+      },
+      {
+        "w": "o‘n",
+        "s": 1.7,
+        "e": 1.78
+      },
+      {
+        "w": "to‘qqizinchi",
+        "s": 1.82,
+        "e": 2.3
+      },
+      {
+        "w": "bobda",
+        "s": 2.34,
+        "e": 2.64
+      },
+      {
+        "w": "Git",
+        "s": 2.82,
+        "e": 3.0
+      },
+      {
+        "w": "omboridagi",
+        "s": 3.06,
+        "e": 3.64
+      },
+      {
+        "w": "kommit,",
+        "s": 3.82,
+        "e": 4.28
+      },
+      {
+        "w": "tree",
+        "s": 4.56,
+        "e": 4.82
+      },
+      {
+        "w": "va",
+        "s": 4.94,
+        "e": 5.04
+      },
+      {
+        "w": "bloblarni",
+        "s": 5.28,
+        "e": 5.82
+      },
+      {
+        "w": "aniq",
+        "s": 5.96,
+        "e": 6.16
+      },
+      {
+        "w": "ko‘rsatuvchi",
+        "s": 6.22,
+        "e": 6.8
+      },
+      {
+        "w": "revizhn",
+        "s": 7.06,
+        "e": 7.46
+      },
+      {
+        "w": "sintaksisi",
+        "s": 7.53,
+        "e": 8.11
+      },
+      {
+        "w": "hamda",
+        "s": 8.21,
+        "e": 8.49
+      },
+      {
+        "w": "diapazonlar",
+        "s": 8.89,
+        "e": 9.51
+      },
+      {
+        "w": "bilan",
+        "s": 9.53,
+        "e": 9.75
+      },
+      {
+        "w": "tanishamiz.",
+        "s": 9.79,
+        "e": 10.27
+      }
+    ]
+  },
+  {
+    "id": "l2",
+    "scene": "intro",
+    "text": "To‘liq qirq belgili hesh o‘rniga kamida to‘rtta belgidan iborat yagona qisqa prefiks yozish orqali ham istalgan obyektga murojaat qilish mumkin.",
+    "show": "To‘liq qirq belgili hesh o‘rniga kamida to‘rtta belgidan iborat yagona qisqa prefiks yozish orqali ham istalgan obyektga murojaat qilish mumkin.",
+    "say": "To‘liq qirq belgili hesh o‘rniga kamida to‘rtta belgidan iborat yagona qisqa prefiks yozish orqali ham istalgan obyektga murojaat qilish mumkin.",
+    "a0": 11.57,
+    "a1": 19.79,
+    "words": [
+      {
+        "w": "To‘liq",
+        "s": 11.57,
+        "e": 11.87
+      },
+      {
+        "w": "qirq",
+        "s": 12.09,
+        "e": 12.29
+      },
+      {
+        "w": "belgili",
+        "s": 12.37,
+        "e": 12.75
+      },
+      {
+        "w": "hesh",
+        "s": 12.87,
+        "e": 13.09
+      },
+      {
+        "w": "o‘rniga",
+        "s": 13.17,
+        "e": 13.51
+      },
+      {
+        "w": "kamida",
+        "s": 13.81,
+        "e": 14.11
+      },
+      {
+        "w": "to‘rtta",
+        "s": 14.17,
+        "e": 14.47
+      },
+      {
+        "w": "belgidan",
+        "s": 14.51,
+        "e": 14.85
+      },
+      {
+        "w": "iborat",
+        "s": 14.91,
+        "e": 15.23
+      },
+      {
+        "w": "yagona",
+        "s": 15.55,
+        "e": 15.91
+      },
+      {
+        "w": "qisqa",
+        "s": 15.97,
+        "e": 16.21
+      },
+      {
+        "w": "prefiks",
+        "s": 16.25,
+        "e": 16.65
+      },
+      {
+        "w": "yozish",
+        "s": 16.67,
+        "e": 16.99
+      },
+      {
+        "w": "orqali",
+        "s": 17.09,
+        "e": 17.39
+      },
+      {
+        "w": "ham",
+        "s": 17.43,
+        "e": 17.59
+      },
+      {
+        "w": "istalgan",
+        "s": 17.89,
+        "e": 18.33
+      },
+      {
+        "w": "obyektga",
+        "s": 18.43,
+        "e": 18.87
+      },
+      {
+        "w": "murojaat",
+        "s": 18.95,
+        "e": 19.31
+      },
+      {
+        "w": "qilish",
+        "s": 19.35,
+        "e": 19.53
+      },
+      {
+        "w": "mumkin.",
+        "s": 19.55,
+        "e": 19.79
+      }
+    ]
+  },
+  {
+    "id": "l3",
+    "scene": "reflog_va_at",
+    "text": "Kuchukcha belgisi HEAD ko‘rsatkichini bildirsa, jingalak qavs ichidagi indeks reflog bo‘yicha refning o‘tmishdagi qadamlarini aniqlaydi.",
+    "show": "Kuchukcha belgisi HEAD ko‘rsatkichini bildirsa, jingalak qavs ichidagi indeks reflog bo‘yicha refning o‘tmishdagi qadamlarini aniqlaydi.",
+    "say": "Kuchukcha belgisi hed ko‘rsatkichini bildirsa, jingalak qavs ichidagi indeks reflog bo‘yicha refning o‘tmishdagi qadamlarini aniqlaydi.",
+    "a0": 21.03,
+    "a1": 28.66,
+    "words": [
+      {
+        "w": "Kuchukcha",
+        "s": 21.03,
+        "e": 21.35
+      },
+      {
+        "w": "belgisi",
+        "s": 21.39,
+        "e": 21.79
+      },
+      {
+        "w": "hed",
+        "s": 22.01,
+        "e": 22.17
+      },
+      {
+        "w": "ko‘rsatkichini",
+        "s": 22.23,
+        "e": 22.84
+      },
+      {
+        "w": "bildirsa,",
+        "s": 22.9,
+        "e": 23.26
+      },
+      {
+        "w": "jingalak",
+        "s": 23.82,
+        "e": 24.16
+      },
+      {
+        "w": "qavs",
+        "s": 24.2,
+        "e": 24.44
+      },
+      {
+        "w": "ichidagi",
+        "s": 24.5,
+        "e": 24.88
+      },
+      {
+        "w": "indeks",
+        "s": 24.98,
+        "e": 25.34
+      },
+      {
+        "w": "reflog",
+        "s": 25.62,
+        "e": 26.0
+      },
+      {
+        "w": "bo‘yicha",
+        "s": 26.06,
+        "e": 26.38
+      },
+      {
+        "w": "refning",
+        "s": 26.68,
+        "e": 27.06
+      },
+      {
+        "w": "o‘tmishdagi",
+        "s": 27.14,
+        "e": 27.58
+      },
+      {
+        "w": "qadamlarini",
+        "s": 27.64,
+        "e": 28.2
+      },
+      {
+        "w": "aniqlaydi.",
+        "s": 28.24,
+        "e": 28.66
+      }
+    ]
+  },
+  {
+    "id": "l4",
+    "scene": "reflog_va_at",
+    "text": "Shuningdek, kuchukcha minus bir sintaksisi avvalgi turgan brenchga qaytish, sana ko‘rsatkichlari esa muayyan vaqtdagi holatni topishga xizmat qiladi.",
+    "show": "Shuningdek, kuchukcha minus bir sintaksisi avvalgi turgan brenchga qaytish, sana ko‘rsatkichlari esa muayyan vaqtdagi holatni topishga xizmat qiladi.",
+    "say": "Shuningdek, kuchukcha minus bir sintaksisi avvalgi turgan brenchga qaytish, sana ko‘rsatkichlari esa muayyan vaqtdagi holatni topishga xizmat qiladi.",
+    "a0": 29.24,
+    "a1": 38.27,
+    "words": [
+      {
+        "w": "Shuningdek,",
+        "s": 29.24,
+        "e": 29.54
+      },
+      {
+        "w": "kuchukcha",
+        "s": 29.56,
+        "e": 30.26
+      },
+      {
+        "w": "minus",
+        "s": 30.32,
+        "e": 30.6
+      },
+      {
+        "w": "bir",
+        "s": 30.68,
+        "e": 30.8
+      },
+      {
+        "w": "sintaksisi",
+        "s": 30.86,
+        "e": 31.42
+      },
+      {
+        "w": "avvalgi",
+        "s": 31.88,
+        "e": 32.26
+      },
+      {
+        "w": "turgan",
+        "s": 32.3,
+        "e": 32.6
+      },
+      {
+        "w": "brenchga",
+        "s": 32.7,
+        "e": 33.06
+      },
+      {
+        "w": "qaytish,",
+        "s": 33.16,
+        "e": 33.62
+      },
+      {
+        "w": "sana",
+        "s": 34.08,
+        "e": 34.3
+      },
+      {
+        "w": "ko‘rsatkichlari",
+        "s": 34.34,
+        "e": 34.96
+      },
+      {
+        "w": "esa",
+        "s": 35.02,
+        "e": 35.2
+      },
+      {
+        "w": "muayyan",
+        "s": 35.6,
+        "e": 36.0
+      },
+      {
+        "w": "vaqtdagi",
+        "s": 36.06,
+        "e": 36.44
+      },
+      {
+        "w": "holatni",
+        "s": 36.5,
+        "e": 36.9
+      },
+      {
+        "w": "topishga",
+        "s": 36.94,
+        "e": 37.3
+      },
+      {
+        "w": "xizmat",
+        "s": 37.67,
+        "e": 37.99
+      },
+      {
+        "w": "qiladi.",
+        "s": 38.03,
+        "e": 38.27
+      }
+    ]
+  },
+  {
+    "id": "l5",
+    "scene": "ota_zanjiri",
+    "text": "Ota zanjirida karet belgisi merjdagi ikkinchi otani eni bo‘yicha tanlasa, tilda belgisi avlodlar chuqurligi bo‘ylab ketma-ket orqaga siljiydi.",
+    "show": "Ota zanjirida karet belgisi merjdagi ikkinchi otani eni bo‘yicha tanlasa, tilda belgisi avlodlar chuqurligi bo‘ylab ketma-ket orqaga siljiydi.",
+    "say": "Ota zanjirida karet belgisi merjdagi ikkinchi otani eni bo‘yicha tanlasa, tilda belgisi avlodlar chuqurligi bo‘ylab ketma-ket orqaga siljiydi.",
+    "a0": 39.09,
+    "a1": 47.69,
+    "words": [
+      {
+        "w": "Ota",
+        "s": 39.09,
+        "e": 39.23
+      },
+      {
+        "w": "zanjirida",
+        "s": 39.27,
+        "e": 39.75
+      },
+      {
+        "w": "karet",
+        "s": 40.01,
+        "e": 40.31
+      },
+      {
+        "w": "belgisi",
+        "s": 40.37,
+        "e": 40.77
+      },
+      {
+        "w": "merjdagi",
+        "s": 41.05,
+        "e": 41.55
+      },
+      {
+        "w": "ikkinchi",
+        "s": 41.61,
+        "e": 41.93
+      },
+      {
+        "w": "otani",
+        "s": 41.99,
+        "e": 42.27
+      },
+      {
+        "w": "eni",
+        "s": 42.49,
+        "e": 42.67
+      },
+      {
+        "w": "bo‘yicha",
+        "s": 42.71,
+        "e": 42.95
+      },
+      {
+        "w": "tanlasa,",
+        "s": 42.99,
+        "e": 43.37
+      },
+      {
+        "w": "tilda",
+        "s": 43.87,
+        "e": 44.17
+      },
+      {
+        "w": "belgisi",
+        "s": 44.23,
+        "e": 44.63
+      },
+      {
+        "w": "avlodlar",
+        "s": 44.95,
+        "e": 45.39
+      },
+      {
+        "w": "chuqurligi",
+        "s": 45.43,
+        "e": 45.85
+      },
+      {
+        "w": "bo‘ylab",
+        "s": 45.91,
+        "e": 46.23
+      },
+      {
+        "w": "ketma-ket",
+        "s": 46.29,
+        "e": 46.79
+      },
+      {
+        "w": "orqaga",
+        "s": 46.97,
+        "e": 47.27
+      },
+      {
+        "w": "siljiydi.",
+        "s": 47.31,
+        "e": 47.69
+      }
+    ]
+  },
+  {
+    "id": "l6",
+    "scene": "ota_zanjiri",
+    "text": "Masalan, HEAD tilda uch faqat birinchi otalar bo‘ylab uch qadam orqaga yursa, HEAD karet ikki aynan merj qilingan tarmoq uchini ko‘rsatadi.",
+    "show": "Masalan, HEAD tilda uch faqat birinchi otalar bo‘ylab uch qadam orqaga yursa, HEAD karet ikki aynan merj qilingan tarmoq uchini ko‘rsatadi.",
+    "say": "Masalan, hed tilda uch faqat birinchi otalar bo‘ylab uch qadam orqaga yursa, hed karet ikki aynan merj qilingan tarmoq uchini ko‘rsatadi.",
+    "a0": 48.23,
+    "a1": 56.44,
+    "words": [
+      {
+        "w": "Masalan,",
+        "s": 48.23,
+        "e": 48.55
+      },
+      {
+        "w": "hed",
+        "s": 48.97,
+        "e": 49.19
+      },
+      {
+        "w": "tilda",
+        "s": 49.33,
+        "e": 49.63
+      },
+      {
+        "w": "uch",
+        "s": 49.71,
+        "e": 49.87
+      },
+      {
+        "w": "faqat",
+        "s": 50.19,
+        "e": 50.47
+      },
+      {
+        "w": "birinchi",
+        "s": 50.53,
+        "e": 50.83
+      },
+      {
+        "w": "otalar",
+        "s": 50.89,
+        "e": 51.17
+      },
+      {
+        "w": "bo‘ylab",
+        "s": 51.21,
+        "e": 51.51
+      },
+      {
+        "w": "uch",
+        "s": 51.59,
+        "e": 51.69
+      },
+      {
+        "w": "qadam",
+        "s": 51.73,
+        "e": 51.99
+      },
+      {
+        "w": "orqaga",
+        "s": 52.09,
+        "e": 52.35
+      },
+      {
+        "w": "yursa,",
+        "s": 52.41,
+        "e": 52.7
+      },
+      {
+        "w": "hed",
+        "s": 53.06,
+        "e": 53.26
+      },
+      {
+        "w": "karet",
+        "s": 53.32,
+        "e": 53.62
+      },
+      {
+        "w": "ikki",
+        "s": 53.74,
+        "e": 54.02
+      },
+      {
+        "w": "aynan",
+        "s": 54.34,
+        "e": 54.66
+      },
+      {
+        "w": "merj",
+        "s": 54.78,
+        "e": 55.02
+      },
+      {
+        "w": "qilingan",
+        "s": 55.08,
+        "e": 55.4
+      },
+      {
+        "w": "tarmoq",
+        "s": 55.44,
+        "e": 55.74
+      },
+      {
+        "w": "uchini",
+        "s": 55.78,
+        "e": 55.98
+      },
+      {
+        "w": "ko‘rsatadi.",
+        "s": 56.02,
+        "e": 56.44
+      }
+    ]
+  },
+  {
+    "id": "l7",
+    "scene": "ichki_yollar",
+    "text": "Revision sintaksisi fayl yo‘llari bilan ham ishlaydi: ikki nuqta orqali brench almashtirmasdan istalgan eski versiyadagi faylni o‘qish mumkin.",
+    "show": "Revision sintaksisi fayl yo‘llari bilan ham ishlaydi: ikki nuqta orqali brench almashtirmasdan istalgan eski versiyadagi faylni o‘qish mumkin.",
+    "say": "Revizhn sintaksisi fayl yo‘llari bilan ham ishlaydi: ikki nuqta orqali brench almashtirmasdan istalgan eski versiyadagi faylni o‘qish mumkin.",
+    "a0": 57.76,
+    "a1": 65.76,
+    "words": [
+      {
+        "w": "Revizhn",
+        "s": 57.76,
+        "e": 58.14
+      },
+      {
+        "w": "sintaksisi",
+        "s": 58.2,
+        "e": 58.76
+      },
+      {
+        "w": "fayl",
+        "s": 58.94,
+        "e": 59.18
+      },
+      {
+        "w": "yo‘llari",
+        "s": 59.22,
+        "e": 59.54
+      },
+      {
+        "w": "bilan",
+        "s": 59.56,
+        "e": 59.76
+      },
+      {
+        "w": "ham",
+        "s": 59.82,
+        "e": 59.92
+      },
+      {
+        "w": "ishlaydi:",
+        "s": 59.92,
+        "e": 60.26
+      },
+      {
+        "w": "ikki",
+        "s": 60.84,
+        "e": 61.02
+      },
+      {
+        "w": "nuqta",
+        "s": 61.06,
+        "e": 61.26
+      },
+      {
+        "w": "orqali",
+        "s": 61.34,
+        "e": 61.64
+      },
+      {
+        "w": "brench",
+        "s": 61.88,
+        "e": 62.18
+      },
+      {
+        "w": "almashtirmasdan",
+        "s": 62.26,
+        "e": 62.94
+      },
+      {
+        "w": "istalgan",
+        "s": 63.26,
+        "e": 63.68
+      },
+      {
+        "w": "eski",
+        "s": 63.8,
+        "e": 64.04
+      },
+      {
+        "w": "versiyadagi",
+        "s": 64.1,
+        "e": 64.52
+      },
+      {
+        "w": "faylni",
+        "s": 64.58,
+        "e": 65.02
+      },
+      {
+        "w": "o‘qish",
+        "s": 65.22,
+        "e": 65.44
+      },
+      {
+        "w": "mumkin.",
+        "s": 65.5,
+        "e": 65.76
+      }
+    ]
+  },
+  {
+    "id": "l8",
+    "scene": "ichki_yollar",
+    "text": "Annotated teglardan to‘g‘ridan-to‘g‘ri commitga o‘tish uchun jingalak qavsda commit turi, stagingdagi fayllar uchun esa boshlang‘ich indeks ko‘rsatiladi.",
+    "show": "Annotated teglardan to‘g‘ridan-to‘g‘ri commitga o‘tish uchun jingalak qavsda commit turi, stagingdagi fayllar uchun esa boshlang‘ich indeks ko‘rsatiladi.",
+    "say": "Annoteytid teglardan to‘g‘ridan-to‘g‘ri kommitga o‘tish uchun jingalak qavsda kommit turi, stagingdagi fayllar uchun esa boshlang‘ich indeks ko‘rsatiladi.",
+    "a0": 66.96,
+    "a1": 75.37,
+    "words": [
+      {
+        "w": "Annoteytid",
+        "s": 66.96,
+        "e": 67.46
+      },
+      {
+        "w": "teglardan",
+        "s": 67.53,
+        "e": 68.05
+      },
+      {
+        "w": "to‘g‘ridan-to‘g‘ri",
+        "s": 68.15,
+        "e": 68.79
+      },
+      {
+        "w": "kommitga",
+        "s": 68.83,
+        "e": 69.21
+      },
+      {
+        "w": "o‘tish",
+        "s": 69.27,
+        "e": 69.47
+      },
+      {
+        "w": "uchun",
+        "s": 69.51,
+        "e": 69.73
+      },
+      {
+        "w": "jingalak",
+        "s": 69.99,
+        "e": 70.33
+      },
+      {
+        "w": "qavsda",
+        "s": 70.37,
+        "e": 70.73
+      },
+      {
+        "w": "kommit",
+        "s": 70.87,
+        "e": 71.19
+      },
+      {
+        "w": "turi,",
+        "s": 71.29,
+        "e": 71.55
+      },
+      {
+        "w": "stagingdagi",
+        "s": 72.05,
+        "e": 72.63
+      },
+      {
+        "w": "fayllar",
+        "s": 72.69,
+        "e": 73.09
+      },
+      {
+        "w": "uchun",
+        "s": 73.13,
+        "e": 73.27
+      },
+      {
+        "w": "esa",
+        "s": 73.33,
+        "e": 73.49
+      },
+      {
+        "w": "boshlang‘ich",
+        "s": 73.87,
+        "e": 74.41
+      },
+      {
+        "w": "indeks",
+        "s": 74.51,
+        "e": 74.81
+      },
+      {
+        "w": "ko‘rsatiladi.",
+        "s": 74.85,
+        "e": 75.37
+      }
+    ]
+  },
+  {
+    "id": "l9",
+    "scene": "diapazonlar",
+    "text": "Diapazonlarda ikki nuqta orqali bir brenchda bor, ikkinchisida yo‘q commitlar to‘plami filtrlanadi.",
+    "show": "Diapazonlarda ikki nuqta orqali bir brenchda bor, ikkinchisida yo‘q commitlar to‘plami filtrlanadi.",
+    "say": "Diapazonlarda ikki nuqta orqali bir brenchda bor, ikkinchisida yo‘q kommitlar to‘plami filtrlanadi.",
+    "a0": 76.59,
+    "a1": 82.33,
+    "words": [
+      {
+        "w": "Diapazonlarda",
+        "s": 76.59,
+        "e": 77.31
+      },
+      {
+        "w": "ikki",
+        "s": 77.51,
+        "e": 77.69
+      },
+      {
+        "w": "nuqta",
+        "s": 77.73,
+        "e": 77.93
+      },
+      {
+        "w": "orqali",
+        "s": 77.99,
+        "e": 78.31
+      },
+      {
+        "w": "bir",
+        "s": 78.71,
+        "e": 78.85
+      },
+      {
+        "w": "brenchda",
+        "s": 78.91,
+        "e": 79.31
+      },
+      {
+        "w": "bor,",
+        "s": 79.43,
+        "e": 79.67
+      },
+      {
+        "w": "ikkinchisida",
+        "s": 79.93,
+        "e": 80.49
+      },
+      {
+        "w": "yo‘q",
+        "s": 80.59,
+        "e": 80.81
+      },
+      {
+        "w": "kommitlar",
+        "s": 80.87,
+        "e": 81.27
+      },
+      {
+        "w": "to‘plami",
+        "s": 81.31,
+        "e": 81.67
+      },
+      {
+        "w": "filtrlanadi.",
+        "s": 81.71,
+        "e": 82.33
+      }
+    ]
+  },
+  {
+    "id": "l10",
+    "scene": "diapazonlar",
+    "text": "Uch nuqta esa ikki tarmoq o‘rtasidagi simmetrik farqni, ya’ni umumiy ajdoddan keyingi mustaqil commitlarni aniqlash imkonini beradi.",
+    "show": "Uch nuqta esa ikki tarmoq o‘rtasidagi simmetrik farqni, ya’ni umumiy ajdoddan keyingi mustaqil commitlarni aniqlash imkonini beradi.",
+    "say": "Uch nuqta esa ikki tarmoq o‘rtasidagi simmetrik farqni, ya’ni umumiy ajdoddan keyingi mustaqil commitlarni aniqlash imkonini beradi.",
+    "a0": 82.98,
+    "a1": 90.44,
+    "words": [
+      {
+        "w": "Uch",
+        "s": 82.98,
+        "e": 83.08
+      },
+      {
+        "w": "nuqta",
+        "s": 83.14,
+        "e": 83.36
+      },
+      {
+        "w": "esa",
+        "s": 83.42,
+        "e": 83.6
+      },
+      {
+        "w": "ikki",
+        "s": 84.04,
+        "e": 84.22
+      },
+      {
+        "w": "tarmoq",
+        "s": 84.26,
+        "e": 84.6
+      },
+      {
+        "w": "o‘rtasidagi",
+        "s": 84.64,
+        "e": 85.14
+      },
+      {
+        "w": "simmetrik",
+        "s": 85.3,
+        "e": 85.76
+      },
+      {
+        "w": "farqni,",
+        "s": 85.8,
+        "e": 86.1
+      },
+      {
+        "w": "ya’ni",
+        "s": 86.52,
+        "e": 86.74
+      },
+      {
+        "w": "umumiy",
+        "s": 86.94,
+        "e": 87.24
+      },
+      {
+        "w": "ajdoddan",
+        "s": 87.38,
+        "e": 87.86
+      },
+      {
+        "w": "keyingi",
+        "s": 87.92,
+        "e": 88.22
+      },
+      {
+        "w": "mustaqil",
+        "s": 88.28,
+        "e": 88.66
+      },
+      {
+        "w": "commitlarni",
+        "s": 88.7,
+        "e": 89.22
+      },
+      {
+        "w": "aniqlash",
+        "s": 89.3,
+        "e": 89.64
+      },
+      {
+        "w": "imkonini",
+        "s": 89.7,
+        "e": 90.14
+      },
+      {
+        "w": "beradi.",
+        "s": 90.16,
+        "e": 90.44
+      }
+    ]
+  },
+  {
+    "id": "l11",
+    "scene": "xulosa",
+    "text": "Bundan tashqari, xabar bo‘yicha qidiruv va fyorst-perent filtrlari loyiha tarixini tahlil qilishni sezilarli darajada soddalashtiradi.",
+    "show": "Bundan tashqari, xabar bo‘yicha qidiruv va fyorst-perent filtrlari loyiha tarixini tahlil qilishni sezilarli darajada soddalashtiradi.",
+    "say": "Bundan tashqari, xabar bo‘yicha qidiruv va fyorst-perent filtrlari loyiha tarixini tahlil qilishni sezilarli darajada soddalashtiradi.",
+    "a0": 91.44,
+    "a1": 98.63,
+    "words": [
+      {
+        "w": "Bundan",
+        "s": 91.44,
+        "e": 91.68
+      },
+      {
+        "w": "tashqari,",
+        "s": 91.7,
+        "e": 92.04
+      },
+      {
+        "w": "xabar",
+        "s": 92.24,
+        "e": 92.54
+      },
+      {
+        "w": "bo‘yicha",
+        "s": 92.58,
+        "e": 92.86
+      },
+      {
+        "w": "qidiruv",
+        "s": 92.92,
+        "e": 93.24
+      },
+      {
+        "w": "va",
+        "s": 93.34,
+        "e": 93.42
+      },
+      {
+        "w": "fyorst-perent",
+        "s": 93.62,
+        "e": 94.27
+      },
+      {
+        "w": "filtrlari",
+        "s": 94.31,
+        "e": 94.81
+      },
+      {
+        "w": "loyiha",
+        "s": 95.23,
+        "e": 95.53
+      },
+      {
+        "w": "tarixini",
+        "s": 95.57,
+        "e": 95.93
+      },
+      {
+        "w": "tahlil",
+        "s": 96.01,
+        "e": 96.33
+      },
+      {
+        "w": "qilishni",
+        "s": 96.35,
+        "e": 96.71
+      },
+      {
+        "w": "sezilarli",
+        "s": 96.95,
+        "e": 97.51
+      },
+      {
+        "w": "darajada",
+        "s": 97.57,
+        "e": 97.95
+      },
+      {
+        "w": "soddalashtiradi.",
+        "s": 98.01,
+        "e": 98.63
+      }
+    ]
+  },
+  {
+    "id": "l12",
+    "scene": "xulosa",
+    "text": "Keyingi yigirmanchi bobda brenchlarning asl tabiati va ularning o‘ta yengil ko‘rsatkich ekanini amalda o‘rganamiz.",
+    "show": "Keyingi yigirmanchi bobda brenchlarning asl tabiati va ularning o‘ta yengil ko‘rsatkich ekanini amalda o‘rganamiz.",
+    "say": "Keyingi yigirmanchi bobda brenchlarning asl tabiati va ularning o‘ta yengil ko‘rsatkich ekanini amalda o‘rganamiz.",
+    "a0": 99.29,
+    "a1": 106.42,
+    "words": [
+      {
+        "w": "Keyingi",
+        "s": 99.29,
+        "e": 99.61
+      },
+      {
+        "w": "yigirmanchi",
+        "s": 99.99,
+        "e": 100.43
+      },
+      {
+        "w": "bobda",
+        "s": 100.47,
+        "e": 100.75
+      },
+      {
+        "w": "brenchlarning",
+        "s": 101.11,
+        "e": 101.73
+      },
+      {
+        "w": "asl",
+        "s": 101.99,
+        "e": 102.23
+      },
+      {
+        "w": "tabiati",
+        "s": 102.29,
+        "e": 102.76
+      },
+      {
+        "w": "va",
+        "s": 103.14,
+        "e": 103.2
+      },
+      {
+        "w": "ularning",
+        "s": 103.28,
+        "e": 103.66
+      },
+      {
+        "w": "o‘ta",
+        "s": 103.82,
+        "e": 104.0
+      },
+      {
+        "w": "yengil",
+        "s": 104.08,
+        "e": 104.4
+      },
+      {
+        "w": "ko‘rsatkich",
+        "s": 104.44,
+        "e": 104.86
+      },
+      {
+        "w": "ekanini",
+        "s": 104.92,
+        "e": 105.26
+      },
+      {
+        "w": "amalda",
+        "s": 105.64,
+        "e": 105.92
+      },
+      {
+        "w": "o‘rganamiz.",
+        "s": 105.98,
+        "e": 106.42
+      }
+    ]
+  }
+]
