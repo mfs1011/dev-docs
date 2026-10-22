@@ -1,0 +1,1339 @@
+[
+  {
+    "id": "l1",
+    "scene": "intro",
+    "text": "Salom! Ushbu o‘ttiz birinchi bobda Git loyihalarida branchlar bilan ishlash uslublari, ya'ni workflow strategiyalarini batafsil tahlil qilamiz.",
+    "show": "Salom! Ushbu o‘ttiz birinchi bobda Git loyihalarida branchlar bilan ishlash uslublari, ya'ni workflow strategiyalarini batafsil tahlil qilamiz.",
+    "say": "Salom! Ushbu o‘ttiz birinchi bobda Git loyihalarida brenchlar bilan ishlash uslublari, ya'ni vorkflou strategiyalarini batafsil tahlil qilamiz.",
+    "a0": 0.14,
+    "a1": 9.03,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.14,
+        "e": 0.42
+      },
+      {
+        "w": "Ushbu",
+        "s": 1.06,
+        "e": 1.32
+      },
+      {
+        "w": "o‘ttiz",
+        "s": 1.5,
+        "e": 1.76
+      },
+      {
+        "w": "birinchi",
+        "s": 1.78,
+        "e": 2.06
+      },
+      {
+        "w": "bobda",
+        "s": 2.1,
+        "e": 2.4
+      },
+      {
+        "w": "Git",
+        "s": 2.8,
+        "e": 2.98
+      },
+      {
+        "w": "loyihalarida",
+        "s": 3.04,
+        "e": 3.64
+      },
+      {
+        "w": "brenchlar",
+        "s": 3.9,
+        "e": 4.38
+      },
+      {
+        "w": "bilan",
+        "s": 4.44,
+        "e": 4.6
+      },
+      {
+        "w": "ishlash",
+        "s": 4.7,
+        "e": 5.02
+      },
+      {
+        "w": "uslublari,",
+        "s": 5.1,
+        "e": 5.6
+      },
+      {
+        "w": "ya'ni",
+        "s": 5.96,
+        "e": 6.16
+      },
+      {
+        "w": "vorkflou",
+        "s": 6.52,
+        "e": 6.92
+      },
+      {
+        "w": "strategiyalarini",
+        "s": 6.98,
+        "e": 7.75
+      },
+      {
+        "w": "batafsil",
+        "s": 7.91,
+        "e": 8.35
+      },
+      {
+        "w": "tahlil",
+        "s": 8.39,
+        "e": 8.69
+      },
+      {
+        "w": "qilamiz.",
+        "s": 8.71,
+        "e": 9.03
+      }
+    ]
+  },
+  {
+    "id": "l2",
+    "scene": "intro",
+    "text": "Git'da branchlar juda yengil bo'lgani sababli ikki toifada ishlatiladi: yillab yashovchi barqaror integratsiya branchlari hamda aniq bitta vazifaga yo'naltirilgan qisqa umrli topic branchlar.",
+    "show": "Git'da branchlar juda yengil bo'lgani sababli ikki toifada ishlatiladi: yillab yashovchi barqaror integratsiya branchlari hamda aniq bitta vazifaga yo'naltirilgan qisqa umrli topic branchlar.",
+    "say": "Git'da brenchlar juda yengil bo'lgani sababli ikki toifada ishlatiladi: yillab yashovchi barqaror integratsiya brenchlari hamda aniq bitta vazifaga yo'naltirilgan qisqa umrli topik brenchlar.",
+    "a0": 10.19,
+    "a1": 21.57,
+    "words": [
+      {
+        "w": "Git'da",
+        "s": 10.19,
+        "e": 10.51
+      },
+      {
+        "w": "brenchlar",
+        "s": 10.73,
+        "e": 11.21
+      },
+      {
+        "w": "juda",
+        "s": 11.27,
+        "e": 11.43
+      },
+      {
+        "w": "yengil",
+        "s": 11.51,
+        "e": 11.81
+      },
+      {
+        "w": "bo'lgani",
+        "s": 11.85,
+        "e": 12.17
+      },
+      {
+        "w": "sababli",
+        "s": 12.21,
+        "e": 12.61
+      },
+      {
+        "w": "ikki",
+        "s": 12.91,
+        "e": 13.11
+      },
+      {
+        "w": "toifada",
+        "s": 13.13,
+        "e": 13.49
+      },
+      {
+        "w": "ishlatiladi:",
+        "s": 13.53,
+        "e": 13.97
+      },
+      {
+        "w": "yillab",
+        "s": 14.65,
+        "e": 14.95
+      },
+      {
+        "w": "yashovchi",
+        "s": 14.99,
+        "e": 15.41
+      },
+      {
+        "w": "barqaror",
+        "s": 15.61,
+        "e": 16.11
+      },
+      {
+        "w": "integratsiya",
+        "s": 16.23,
+        "e": 16.79
+      },
+      {
+        "w": "brenchlari",
+        "s": 16.81,
+        "e": 17.29
+      },
+      {
+        "w": "hamda",
+        "s": 17.59,
+        "e": 17.83
+      },
+      {
+        "w": "aniq",
+        "s": 18.01,
+        "e": 18.23
+      },
+      {
+        "w": "bitta",
+        "s": 18.31,
+        "e": 18.53
+      },
+      {
+        "w": "vazifaga",
+        "s": 18.59,
+        "e": 19.05
+      },
+      {
+        "w": "yo'naltirilgan",
+        "s": 19.09,
+        "e": 19.71
+      },
+      {
+        "w": "qisqa",
+        "s": 19.87,
+        "e": 20.15
+      },
+      {
+        "w": "umrli",
+        "s": 20.25,
+        "e": 20.57
+      },
+      {
+        "w": "topik",
+        "s": 20.77,
+        "e": 21.09
+      },
+      {
+        "w": "brenchlar.",
+        "s": 21.13,
+        "e": 21.57
+      }
+    ]
+  },
+  {
+    "id": "l3",
+    "scene": "topic_branchlar",
+    "text": "Topic branch har bir alohida xususiyat yoki xato tuzatish uchun ochilib, uning hayot sikli yaratish, ishlash, birlashtirish va o'chirishdan iborat bo'ladi.",
+    "show": "Topic branch har bir alohida xususiyat yoki xato tuzatish uchun ochilib, uning hayot sikli yaratish, ishlash, birlashtirish va o'chirishdan iborat bo'ladi.",
+    "say": "Topik brench har bir alohida xususiyat yoki xato tuzatish uchun ochilib, uning hayot sikli yaratish, ishlash, birlashtirish va o'chirishdan iborat bo'ladi.",
+    "a0": 22.72,
+    "a1": 32.08,
+    "words": [
+      {
+        "w": "Topik",
+        "s": 22.72,
+        "e": 23.02
+      },
+      {
+        "w": "brench",
+        "s": 23.04,
+        "e": 23.3
+      },
+      {
+        "w": "har",
+        "s": 23.52,
+        "e": 23.72
+      },
+      {
+        "w": "bir",
+        "s": 23.78,
+        "e": 23.88
+      },
+      {
+        "w": "alohida",
+        "s": 24.0,
+        "e": 24.38
+      },
+      {
+        "w": "xususiyat",
+        "s": 24.42,
+        "e": 24.96
+      },
+      {
+        "w": "yoki",
+        "s": 25.04,
+        "e": 25.28
+      },
+      {
+        "w": "xato",
+        "s": 25.4,
+        "e": 25.64
+      },
+      {
+        "w": "tuzatish",
+        "s": 25.72,
+        "e": 26.1
+      },
+      {
+        "w": "uchun",
+        "s": 26.14,
+        "e": 26.3
+      },
+      {
+        "w": "ochilib,",
+        "s": 26.4,
+        "e": 26.68
+      },
+      {
+        "w": "uning",
+        "s": 27.04,
+        "e": 27.22
+      },
+      {
+        "w": "hayot",
+        "s": 27.3,
+        "e": 27.62
+      },
+      {
+        "w": "sikli",
+        "s": 27.68,
+        "e": 27.98
+      },
+      {
+        "w": "yaratish,",
+        "s": 28.44,
+        "e": 28.94
+      },
+      {
+        "w": "ishlash,",
+        "s": 29.26,
+        "e": 29.7
+      },
+      {
+        "w": "birlashtirish",
+        "s": 30.02,
+        "e": 30.6
+      },
+      {
+        "w": "va",
+        "s": 30.72,
+        "e": 30.8
+      },
+      {
+        "w": "o'chirishdan",
+        "s": 30.98,
+        "e": 31.44
+      },
+      {
+        "w": "iborat",
+        "s": 31.48,
+        "e": 31.78
+      },
+      {
+        "w": "bo'ladi.",
+        "s": 31.82,
+        "e": 32.08
+      }
+    ]
+  },
+  {
+    "id": "l4",
+    "scene": "topic_branchlar",
+    "text": "Keraksiz yoki rad etilgan yechimlar minus katta D bayrog'i bilan o'chiriladi. Qolgan sifatli branchlar esa bevosita asosiy chiziqqa merge qilinadi.",
+    "show": "Keraksiz yoki rad etilgan yechimlar minus katta D bayrog'i bilan o'chiriladi. Qolgan sifatli branchlar esa bevosita asosiy chiziqqa merge qilinadi.",
+    "say": "Keraksiz yoki rad etilgan yechimlar minus katta de bayrog'i bilan o'chiriladi. Qolgan sifatli brenchlar esa bevosita asosiy chiziqqa merj qilinadi.",
+    "a0": 33.1,
+    "a1": 42.39,
+    "words": [
+      {
+        "w": "Keraksiz",
+        "s": 33.1,
+        "e": 33.52
+      },
+      {
+        "w": "yoki",
+        "s": 33.58,
+        "e": 33.78
+      },
+      {
+        "w": "rad",
+        "s": 34.0,
+        "e": 34.16
+      },
+      {
+        "w": "etilgan",
+        "s": 34.24,
+        "e": 34.6
+      },
+      {
+        "w": "yechimlar",
+        "s": 34.66,
+        "e": 35.1
+      },
+      {
+        "w": "minus",
+        "s": 35.44,
+        "e": 35.78
+      },
+      {
+        "w": "katta",
+        "s": 35.98,
+        "e": 36.34
+      },
+      {
+        "w": "de",
+        "s": 36.44,
+        "e": 36.54
+      },
+      {
+        "w": "bayrog'i",
+        "s": 36.72,
+        "e": 37.12
+      },
+      {
+        "w": "bilan",
+        "s": 37.14,
+        "e": 37.3
+      },
+      {
+        "w": "o'chiriladi.",
+        "s": 37.38,
+        "e": 37.83
+      },
+      {
+        "w": "Qolgan",
+        "s": 38.51,
+        "e": 38.83
+      },
+      {
+        "w": "sifatli",
+        "s": 38.97,
+        "e": 39.29
+      },
+      {
+        "w": "brenchlar",
+        "s": 39.35,
+        "e": 39.71
+      },
+      {
+        "w": "esa",
+        "s": 39.75,
+        "e": 39.91
+      },
+      {
+        "w": "bevosita",
+        "s": 40.07,
+        "e": 40.63
+      },
+      {
+        "w": "asosiy",
+        "s": 40.79,
+        "e": 41.17
+      },
+      {
+        "w": "chiziqqa",
+        "s": 41.23,
+        "e": 41.59
+      },
+      {
+        "w": "merj",
+        "s": 41.75,
+        "e": 41.97
+      },
+      {
+        "w": "qilinadi.",
+        "s": 42.03,
+        "e": 42.39
+      }
+    ]
+  },
+  {
+    "id": "l5",
+    "scene": "silos_va_darajalar",
+    "text": "Barqarorlik siloslari konsepsiyasida har bir branch ma'lum bir yetuklik darajasini ifodalaydi: sinovdagi kod asta-sekin eng yuqori barqaror reliz branchiga ko'tariladi.",
+    "show": "Barqarorlik siloslari konsepsiyasida har bir branch ma'lum bir yetuklik darajasini ifodalaydi: sinovdagi kod asta-sekin eng yuqori barqaror reliz branchiga ko'tariladi.",
+    "say": "Barqarorlik siloslari konsepsiyasida har bir brench ma'lum bir yetuklik darajasini ifodalaydi: sinovdagi kod asta-sekin eng yuqori barqaror reliz brenchiga ko'tariladi.",
+    "a0": 43.59,
+    "a1": 53.66,
+    "words": [
+      {
+        "w": "Barqarorlik",
+        "s": 43.59,
+        "e": 44.17
+      },
+      {
+        "w": "siloslari",
+        "s": 44.23,
+        "e": 44.71
+      },
+      {
+        "w": "konsepsiyasida",
+        "s": 44.73,
+        "e": 45.43
+      },
+      {
+        "w": "har",
+        "s": 45.67,
+        "e": 45.83
+      },
+      {
+        "w": "bir",
+        "s": 45.87,
+        "e": 45.97
+      },
+      {
+        "w": "brench",
+        "s": 46.03,
+        "e": 46.31
+      },
+      {
+        "w": "ma'lum",
+        "s": 46.47,
+        "e": 46.77
+      },
+      {
+        "w": "bir",
+        "s": 46.81,
+        "e": 46.93
+      },
+      {
+        "w": "yetuklik",
+        "s": 47.03,
+        "e": 47.43
+      },
+      {
+        "w": "darajasini",
+        "s": 47.49,
+        "e": 48.01
+      },
+      {
+        "w": "ifodalaydi:",
+        "s": 48.05,
+        "e": 48.53
+      },
+      {
+        "w": "sinovdagi",
+        "s": 49.19,
+        "e": 49.67
+      },
+      {
+        "w": "kod",
+        "s": 49.73,
+        "e": 49.91
+      },
+      {
+        "w": "asta-sekin",
+        "s": 50.03,
+        "e": 50.61
+      },
+      {
+        "w": "eng",
+        "s": 50.85,
+        "e": 51.01
+      },
+      {
+        "w": "yuqori",
+        "s": 51.07,
+        "e": 51.45
+      },
+      {
+        "w": "barqaror",
+        "s": 51.75,
+        "e": 52.23
+      },
+      {
+        "w": "reliz",
+        "s": 52.47,
+        "e": 52.78
+      },
+      {
+        "w": "brenchiga",
+        "s": 52.82,
+        "e": 53.16
+      },
+      {
+        "w": "ko'tariladi.",
+        "s": 53.2,
+        "e": 53.66
+      }
+    ]
+  },
+  {
+    "id": "l6",
+    "scene": "silos_va_darajalar",
+    "text": "Integratsiya jarayonida minus minus no ef ef bayrog'i alohida tarixiy nuqta qoldirsa, minus minus ef ef onli esa faqat qat'iy oldinga siljishni ta'minlaydi.",
+    "show": "Integratsiya jarayonida minus minus no ef ef bayrog'i alohida tarixiy nuqta qoldirsa, minus minus ef ef onli esa faqat qat'iy oldinga siljishni ta'minlaydi.",
+    "say": "Integratsiya jarayonida minus minus no ef ef bayrog'i alohida tarixiy nuqta qoldirsa, minus minus ef ef onli esa faqat qat'iy oldinga siljishni ta'minlaydi.",
+    "a0": 54.72,
+    "a1": 64.28,
+    "words": [
+      {
+        "w": "Integratsiya",
+        "s": 54.72,
+        "e": 55.18
+      },
+      {
+        "w": "jarayonida",
+        "s": 55.18,
+        "e": 55.7
+      },
+      {
+        "w": "minus",
+        "s": 56.06,
+        "e": 56.3
+      },
+      {
+        "w": "minus",
+        "s": 56.34,
+        "e": 56.58
+      },
+      {
+        "w": "no",
+        "s": 56.68,
+        "e": 56.76
+      },
+      {
+        "w": "ef",
+        "s": 56.94,
+        "e": 57.02
+      },
+      {
+        "w": "ef",
+        "s": 57.16,
+        "e": 57.24
+      },
+      {
+        "w": "bayrog'i",
+        "s": 57.32,
+        "e": 57.72
+      },
+      {
+        "w": "alohida",
+        "s": 58.04,
+        "e": 58.46
+      },
+      {
+        "w": "tarixiy",
+        "s": 58.54,
+        "e": 58.98
+      },
+      {
+        "w": "nuqta",
+        "s": 59.04,
+        "e": 59.28
+      },
+      {
+        "w": "qoldirsa,",
+        "s": 59.32,
+        "e": 59.72
+      },
+      {
+        "w": "minus",
+        "s": 60.08,
+        "e": 60.34
+      },
+      {
+        "w": "minus",
+        "s": 60.4,
+        "e": 60.64
+      },
+      {
+        "w": "ef",
+        "s": 60.8,
+        "e": 60.9
+      },
+      {
+        "w": "ef",
+        "s": 61.02,
+        "e": 61.12
+      },
+      {
+        "w": "onli",
+        "s": 61.3,
+        "e": 61.5
+      },
+      {
+        "w": "esa",
+        "s": 61.58,
+        "e": 61.74
+      },
+      {
+        "w": "faqat",
+        "s": 61.96,
+        "e": 62.24
+      },
+      {
+        "w": "qat'iy",
+        "s": 62.36,
+        "e": 62.72
+      },
+      {
+        "w": "oldinga",
+        "s": 62.92,
+        "e": 63.3
+      },
+      {
+        "w": "siljishni",
+        "s": 63.36,
+        "e": 63.76
+      },
+      {
+        "w": "ta'minlaydi.",
+        "s": 63.8,
+        "e": 64.28
+      }
+    ]
+  },
+  {
+    "id": "l7",
+    "scene": "gitgit_tizimi",
+    "text": "Rasmiy gitworkflows hujjatida to'rtta integratsiya branchi ko'rsatilgan: maint texnik tuzatishlar, master reliz, next sinov, seen esa bir martalik eksperimentlar uchun xizmat qiladi.",
+    "show": "Rasmiy gitworkflows hujjatida to'rtta integratsiya branchi ko'rsatilgan: maint texnik tuzatishlar, master reliz, next sinov, seen esa bir martalik eksperimentlar uchun xizmat qiladi.",
+    "say": "Rasmiy git vorkflous hujjatida to'rtta integratsiya branchi ko'rsatilgan: meynt texnik tuzatishlar, master reliz, nekst sinov, siyn esa bir martalik eksperimentlar uchun xizmat qiladi.",
+    "a0": 65.54,
+    "a1": 77.27,
+    "words": [
+      {
+        "w": "Rasmiy",
+        "s": 65.54,
+        "e": 65.84
+      },
+      {
+        "w": "git",
+        "s": 66.02,
+        "e": 66.18
+      },
+      {
+        "w": "vorkflous",
+        "s": 66.24,
+        "e": 66.7
+      },
+      {
+        "w": "hujjatida",
+        "s": 66.74,
+        "e": 67.2
+      },
+      {
+        "w": "to'rtta",
+        "s": 67.46,
+        "e": 67.81
+      },
+      {
+        "w": "integratsiya",
+        "s": 67.91,
+        "e": 68.37
+      },
+      {
+        "w": "branchi",
+        "s": 68.41,
+        "e": 68.67
+      },
+      {
+        "w": "ko'rsatilgan:",
+        "s": 68.71,
+        "e": 69.25
+      },
+      {
+        "w": "meynt",
+        "s": 69.99,
+        "e": 70.29
+      },
+      {
+        "w": "texnik",
+        "s": 70.49,
+        "e": 70.83
+      },
+      {
+        "w": "tuzatishlar,",
+        "s": 70.85,
+        "e": 71.37
+      },
+      {
+        "w": "master",
+        "s": 71.81,
+        "e": 72.23
+      },
+      {
+        "w": "reliz,",
+        "s": 72.53,
+        "e": 72.87
+      },
+      {
+        "w": "nekst",
+        "s": 73.31,
+        "e": 73.63
+      },
+      {
+        "w": "sinov,",
+        "s": 73.91,
+        "e": 74.23
+      },
+      {
+        "w": "siyn",
+        "s": 74.61,
+        "e": 74.81
+      },
+      {
+        "w": "esa",
+        "s": 74.87,
+        "e": 75.05
+      },
+      {
+        "w": "bir",
+        "s": 75.23,
+        "e": 75.35
+      },
+      {
+        "w": "martalik",
+        "s": 75.39,
+        "e": 75.79
+      },
+      {
+        "w": "eksperimentlar",
+        "s": 75.87,
+        "e": 76.49
+      },
+      {
+        "w": "uchun",
+        "s": 76.53,
+        "e": 76.67
+      },
+      {
+        "w": "xizmat",
+        "s": 76.71,
+        "e": 77.01
+      },
+      {
+        "w": "qiladi.",
+        "s": 77.03,
+        "e": 77.27
+      }
+    ]
+  },
+  {
+    "id": "l8",
+    "scene": "gitgit_tizimi",
+    "text": "Eng muhim qoida shuki, yangi topic branch har doim u oxir-oqibat kirishi kerak bo'lgan eng eski integratsiya branchidan ajratib olinishi shart.",
+    "show": "Eng muhim qoida shuki, yangi topic branch har doim u oxir-oqibat kirishi kerak bo'lgan eng eski integratsiya branchidan ajratib olinishi shart.",
+    "say": "Eng muhim qoida shuki, yangi topik brench har doim u oxir-oqibat kirishi kerak bo'lgan eng eski integratsiya brenchidan ajratib olinishi shart.",
+    "a0": 78.53,
+    "a1": 86.38,
+    "words": [
+      {
+        "w": "Eng",
+        "s": 78.53,
+        "e": 78.65
+      },
+      {
+        "w": "muhim",
+        "s": 78.69,
+        "e": 78.87
+      },
+      {
+        "w": "qoida",
+        "s": 78.93,
+        "e": 79.15
+      },
+      {
+        "w": "shuki,",
+        "s": 79.19,
+        "e": 79.43
+      },
+      {
+        "w": "yangi",
+        "s": 79.83,
+        "e": 80.11
+      },
+      {
+        "w": "topik",
+        "s": 80.17,
+        "e": 80.47
+      },
+      {
+        "w": "brench",
+        "s": 80.51,
+        "e": 80.77
+      },
+      {
+        "w": "har",
+        "s": 80.93,
+        "e": 81.11
+      },
+      {
+        "w": "doim",
+        "s": 81.17,
+        "e": 81.43
+      },
+      {
+        "w": "u",
+        "s": 81.57,
+        "e": 81.59
+      },
+      {
+        "w": "oxir-oqibat",
+        "s": 81.81,
+        "e": 82.41
+      },
+      {
+        "w": "kirishi",
+        "s": 82.47,
+        "e": 82.76
+      },
+      {
+        "w": "kerak",
+        "s": 82.78,
+        "e": 83.02
+      },
+      {
+        "w": "bo'lgan",
+        "s": 83.06,
+        "e": 83.36
+      },
+      {
+        "w": "eng",
+        "s": 83.6,
+        "e": 83.74
+      },
+      {
+        "w": "eski",
+        "s": 83.92,
+        "e": 84.18
+      },
+      {
+        "w": "integratsiya",
+        "s": 84.28,
+        "e": 84.8
+      },
+      {
+        "w": "brenchidan",
+        "s": 84.82,
+        "e": 85.24
+      },
+      {
+        "w": "ajratib",
+        "s": 85.36,
+        "e": 85.72
+      },
+      {
+        "w": "olinishi",
+        "s": 85.78,
+        "e": 86.1
+      },
+      {
+        "w": "shart.",
+        "s": 86.16,
+        "e": 86.38
+      }
+    ]
+  },
+  {
+    "id": "l9",
+    "scene": "merge_upwards",
+    "text": "Xatolarni tuzatish har doim eng quyi qo'llab-quvvatlanadigan branchga commit qilinadi, so'ngra integratsiya branchlari bir-biriga yuqoriga qarab merge qilinadi.",
+    "show": "Xatolarni tuzatish har doim eng quyi qo'llab-quvvatlanadigan branchga commit qilinadi, so'ngra integratsiya branchlari bir-biriga yuqoriga qarab merge qilinadi.",
+    "say": "Xatolarni tuzatish har doim eng quyi qo'llab-quvvatlanadigan branchga kommit qilinadi, so'ngra integratsiya brenchlari bir-biriga yuqoriga qarab merj qilinadi.",
+    "a0": 88.02,
+    "a1": 96.12,
+    "words": [
+      {
+        "w": "Xatolarni",
+        "s": 88.02,
+        "e": 88.52
+      },
+      {
+        "w": "tuzatish",
+        "s": 88.56,
+        "e": 88.94
+      },
+      {
+        "w": "har",
+        "s": 88.98,
+        "e": 89.12
+      },
+      {
+        "w": "doim",
+        "s": 89.16,
+        "e": 89.38
+      },
+      {
+        "w": "eng",
+        "s": 89.56,
+        "e": 89.7
+      },
+      {
+        "w": "quyi",
+        "s": 89.76,
+        "e": 89.96
+      },
+      {
+        "w": "qo'llab-quvvatlanadigan",
+        "s": 90.04,
+        "e": 90.92
+      },
+      {
+        "w": "branchga",
+        "s": 90.96,
+        "e": 91.3
+      },
+      {
+        "w": "kommit",
+        "s": 91.36,
+        "e": 91.62
+      },
+      {
+        "w": "qilinadi,",
+        "s": 91.64,
+        "e": 91.96
+      },
+      {
+        "w": "so'ngra",
+        "s": 92.4,
+        "e": 92.72
+      },
+      {
+        "w": "integratsiya",
+        "s": 92.88,
+        "e": 93.36
+      },
+      {
+        "w": "brenchlari",
+        "s": 93.36,
+        "e": 93.78
+      },
+      {
+        "w": "bir-biriga",
+        "s": 94.04,
+        "e": 94.48
+      },
+      {
+        "w": "yuqoriga",
+        "s": 94.66,
+        "e": 95.16
+      },
+      {
+        "w": "qarab",
+        "s": 95.22,
+        "e": 95.44
+      },
+      {
+        "w": "merj",
+        "s": 95.52,
+        "e": 95.72
+      },
+      {
+        "w": "qilinadi.",
+        "s": 95.78,
+        "e": 96.12
+      }
+    ]
+  },
+  {
+    "id": "l10",
+    "scene": "merge_upwards",
+    "text": "Bu merge upwards tamoyili beqaror yangiliklarning relizga oqib o'tishining oldini oladi va butun loyiha bo'ylab barqarorlikni kafolatlaydi.",
+    "show": "Bu merge upwards tamoyili beqaror yangiliklarning relizga oqib o'tishining oldini oladi va butun loyiha bo'ylab barqarorlikni kafolatlaydi.",
+    "say": "Bu merj apvords tamoyili beqaror yangiliklarning relizga oqib o'tishining oldini oladi va butun loyiha bo'ylab barqarorlikni kafolatlaydi.",
+    "a0": 96.84,
+    "a1": 104.67,
+    "words": [
+      {
+        "w": "Bu",
+        "s": 96.84,
+        "e": 96.92
+      },
+      {
+        "w": "merj",
+        "s": 97.22,
+        "e": 97.46
+      },
+      {
+        "w": "apvords",
+        "s": 97.59,
+        "e": 97.95
+      },
+      {
+        "w": "tamoyili",
+        "s": 97.99,
+        "e": 98.41
+      },
+      {
+        "w": "beqaror",
+        "s": 98.73,
+        "e": 99.19
+      },
+      {
+        "w": "yangiliklarning",
+        "s": 99.25,
+        "e": 99.95
+      },
+      {
+        "w": "relizga",
+        "s": 100.11,
+        "e": 100.47
+      },
+      {
+        "w": "oqib",
+        "s": 100.57,
+        "e": 100.75
+      },
+      {
+        "w": "o'tishining",
+        "s": 100.77,
+        "e": 101.15
+      },
+      {
+        "w": "oldini",
+        "s": 101.25,
+        "e": 101.51
+      },
+      {
+        "w": "oladi",
+        "s": 101.55,
+        "e": 101.79
+      },
+      {
+        "w": "va",
+        "s": 102.11,
+        "e": 102.17
+      },
+      {
+        "w": "butun",
+        "s": 102.27,
+        "e": 102.53
+      },
+      {
+        "w": "loyiha",
+        "s": 102.61,
+        "e": 102.95
+      },
+      {
+        "w": "bo'ylab",
+        "s": 102.99,
+        "e": 103.27
+      },
+      {
+        "w": "barqarorlikni",
+        "s": 103.37,
+        "e": 104.01
+      },
+      {
+        "w": "kafolatlaydi.",
+        "s": 104.07,
+        "e": 104.67
+      }
+    ]
+  },
+  {
+    "id": "l11",
+    "scene": "xulosa",
+    "text": "Xulosa qilganda, qisqa umrli topic branchlar, barqarorlik darajalari va yuqoriga merge qilish tamoyili yirik jamoalarda toza va xavfsiz kod yuritish imkonini beradi.",
+    "show": "Xulosa qilganda, qisqa umrli topic branchlar, barqarorlik darajalari va yuqoriga merge qilish tamoyili yirik jamoalarda toza va xavfsiz kod yuritish imkonini beradi.",
+    "say": "Xulosa qilganda, qisqa umrli topik brenchlar, barqarorlik darajalari va yuqoriga merj qilish tamoyili yirik jamoalarda toza va xavfsiz kod yuritish imkonini beradi.",
+    "a0": 105.87,
+    "a1": 115.16,
+    "words": [
+      {
+        "w": "Xulosa",
+        "s": 105.87,
+        "e": 106.17
+      },
+      {
+        "w": "qilganda,",
+        "s": 106.19,
+        "e": 106.57
+      },
+      {
+        "w": "qisqa",
+        "s": 106.93,
+        "e": 107.19
+      },
+      {
+        "w": "umrli",
+        "s": 107.25,
+        "e": 107.53
+      },
+      {
+        "w": "topik",
+        "s": 107.59,
+        "e": 107.87
+      },
+      {
+        "w": "brenchlar,",
+        "s": 107.91,
+        "e": 108.35
+      },
+      {
+        "w": "barqarorlik",
+        "s": 108.69,
+        "e": 109.23
+      },
+      {
+        "w": "darajalari",
+        "s": 109.27,
+        "e": 109.81
+      },
+      {
+        "w": "va",
+        "s": 109.99,
+        "e": 110.07
+      },
+      {
+        "w": "yuqoriga",
+        "s": 110.21,
+        "e": 110.67
+      },
+      {
+        "w": "merj",
+        "s": 110.77,
+        "e": 111.01
+      },
+      {
+        "w": "qilish",
+        "s": 111.07,
+        "e": 111.27
+      },
+      {
+        "w": "tamoyili",
+        "s": 111.29,
+        "e": 111.73
+      },
+      {
+        "w": "yirik",
+        "s": 111.95,
+        "e": 112.19
+      },
+      {
+        "w": "jamoalarda",
+        "s": 112.25,
+        "e": 112.86
+      },
+      {
+        "w": "toza",
+        "s": 112.94,
+        "e": 113.24
+      },
+      {
+        "w": "va",
+        "s": 113.3,
+        "e": 113.36
+      },
+      {
+        "w": "xavfsiz",
+        "s": 113.46,
+        "e": 113.82
+      },
+      {
+        "w": "kod",
+        "s": 113.88,
+        "e": 114.04
+      },
+      {
+        "w": "yuritish",
+        "s": 114.1,
+        "e": 114.38
+      },
+      {
+        "w": "imkonini",
+        "s": 114.44,
+        "e": 114.86
+      },
+      {
+        "w": "beradi.",
+        "s": 114.9,
+        "e": 115.16
+      }
+    ]
+  },
+  {
+    "id": "l12",
+    "scene": "xulosa",
+    "text": "Keyingi o‘ttiz ikkinchi bobda bir nechta dasturchilar o‘rtasidagi taqsimlangan workflowlar va markazlashtirilgan hamda integratsion boshqaruvni o‘rganamiz.",
+    "show": "Keyingi o‘ttiz ikkinchi bobda bir nechta dasturchilar o‘rtasidagi taqsimlangan workflowlar va markazlashtirilgan hamda integratsion boshqaruvni o‘rganamiz.",
+    "say": "Keyingi o‘ttiz ikkinchi bobda bir nechta dasturchilar o‘rtasidagi taqsimlangan vorkfloular va markazlashtirilgan hamda integratsion boshqaruvni o‘rganamiz.",
+    "a0": 116.22,
+    "a1": 124.28,
+    "words": [
+      {
+        "w": "Keyingi",
+        "s": 116.22,
+        "e": 116.58
+      },
+      {
+        "w": "o‘ttiz",
+        "s": 116.74,
+        "e": 117.0
+      },
+      {
+        "w": "ikkinchi",
+        "s": 117.02,
+        "e": 117.32
+      },
+      {
+        "w": "bobda",
+        "s": 117.36,
+        "e": 117.62
+      },
+      {
+        "w": "bir",
+        "s": 117.98,
+        "e": 118.08
+      },
+      {
+        "w": "nechta",
+        "s": 118.14,
+        "e": 118.36
+      },
+      {
+        "w": "dasturchilar",
+        "s": 118.4,
+        "e": 118.92
+      },
+      {
+        "w": "o‘rtasidagi",
+        "s": 118.98,
+        "e": 119.48
+      },
+      {
+        "w": "taqsimlangan",
+        "s": 119.54,
+        "e": 120.16
+      },
+      {
+        "w": "vorkfloular",
+        "s": 120.2,
+        "e": 120.78
+      },
+      {
+        "w": "va",
+        "s": 121.12,
+        "e": 121.19
+      },
+      {
+        "w": "markazlashtirilgan",
+        "s": 121.33,
+        "e": 122.25
+      },
+      {
+        "w": "hamda",
+        "s": 122.37,
+        "e": 122.63
+      },
+      {
+        "w": "integratsion",
+        "s": 122.75,
+        "e": 123.33
+      },
+      {
+        "w": "boshqaruvni",
+        "s": 123.37,
+        "e": 123.84
+      },
+      {
+        "w": "o‘rganamiz.",
+        "s": 123.88,
+        "e": 124.28
+      }
+    ]
+  }
+]
