@@ -1,0 +1,61 @@
+WEBVTT
+
+1
+00:01.420 --> 00:10.760
+Salom! Ushbu o‘ttiz birinchi bobda Git loyihalarida branchlar bilan ishlash
+uslublari, ya'ni workflow strategiyalarini batafsil tahlil qilamiz.
+
+2
+00:11.470 --> 00:23.300
+Git'da branchlar juda yengil bo'lgani sababli ikki toifada ishlatiladi: yillab yashovchi barqaror
+integratsiya branchlari hamda aniq bitta vazifaga yo'naltirilgan qisqa umrli topic branchlar.
+
+3
+00:27.100 --> 00:36.910
+Topic branch har bir alohida xususiyat yoki xato tuzatish uchun ochilib, uning
+hayot sikli yaratish, ishlash, birlashtirish va o'chirishdan iborat bo'ladi.
+
+4
+00:37.480 --> 00:47.220
+Keraksiz yoki rad etilgan yechimlar minus katta D bayrog'i bilan o'chiriladi.
+Qolgan sifatli branchlar esa bevosita asosiy chiziqqa merge qilinadi.
+
+5
+00:51.570 --> 01:02.090
+Barqarorlik siloslari konsepsiyasida har bir branch ma'lum bir yetuklik darajasini
+ifodalaydi: sinovdagi kod asta-sekin eng yuqori barqaror reliz branchiga ko'tariladi.
+
+6
+01:02.700 --> 01:12.710
+Integratsiya jarayonida minus minus no ef ef bayrog'i alohida tarixiy nuqta
+qoldirsa, minus minus ef ef onli esa faqat qat'iy oldinga siljishni ta'minlaydi.
+
+7
+01:17.120 --> 01:29.300
+Rasmiy gitworkflows hujjatida to'rtta integratsiya branchi ko'rsatilgan: maint texnik
+tuzatishlar, master reliz, next sinov, seen esa bir martalik eksperimentlar uchun xizmat qiladi.
+
+8
+01:30.110 --> 01:38.410
+Eng muhim qoida shuki, yangi topic branch har doim u oxir-oqibat kirishi
+kerak bo'lgan eng eski integratsiya branchidan ajratib olinishi shart.
+
+9
+01:43.200 --> 01:51.750
+Xatolarni tuzatish har doim eng quyi qo'llab-quvvatlanadigan branchga commit
+qilinadi, so'ngra integratsiya branchlari bir-biriga yuqoriga qarab merge qilinadi.
+
+10
+01:52.020 --> 02:00.300
+Bu merge upwards tamoyili beqaror yangiliklarning relizga oqib o'tishining
+oldini oladi va butun loyiha bo'ylab barqarorlikni kafolatlaydi.
+
+11
+02:04.650 --> 02:14.390
+Xulosa qilganda, qisqa umrli topic branchlar, barqarorlik darajalari va yuqoriga
+merge qilish tamoyili yirik jamoalarda toza va xavfsiz kod yuritish imkonini beradi.
+
+12
+02:15.000 --> 02:23.510
+Keyingi o‘ttiz ikkinchi bobda bir nechta dasturchilar o‘rtasidagi taqsimlangan
+workflowlar va markazlashtirilgan hamda integratsion boshqaruvni o‘rganamiz.

@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" playsinline poster="/video/git/31-branch-workflowlari.jpg" src="/video/git/31-branch-workflowlari.mp4">
+    <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/git/31-branch-workflowlari.chapters.vtt" default>
+    <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/git/31-branch-workflowlari.uz.vtt">
+  </video>
+  <figcaption>31.1-video. Git branch workflowlari, barqarorlik siloslari va gitworkflows qoidalari</figcaption>
+</figure>
+
 Oldingi boblarda branch'ning **qanday** ishlashini ko'rdik: branch — bu `.git/refs/heads/` ichidagi, bitta commit hash'ini saqlaydigan kichik fayl ([20-bob](20-branch-bu-ref.md)), merge ikki tarixni birlashtiradi ([21-bob](21-branch-va-merge.md)), remote'ga push qilinadi ([27-bob](27-remote.md)). Bu bobning savoli boshqa: branch'lardan **qanday foydalanish kerak**? Qaysi branch qancha yashaydi, nimani saqlaydi, o'zgarish qaysi yo'l bilan qaysi branch'ga o'tadi?
 
 Bunday kelishuvlar to'plami **workflow** (ish oqimi) deyiladi. Git sizga bitta workflow'ni majburlamaydi — u faqat vositalar beradi. Lekin ikki xil branch deyarli hamma loyihada uchraydi:
