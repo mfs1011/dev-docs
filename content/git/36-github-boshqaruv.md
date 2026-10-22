@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" playsinline poster="/video/git/36-github-boshqaruv.jpg" src="/video/git/36-github-boshqaruv.mp4">
+    <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/git/36-github-boshqaruv.chapters.vtt" default>
+    <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/git/36-github-boshqaruv.uz.vtt">
+  </video>
+  <figcaption>36.1-video. GitHub'da repo va tashkilot boshqaruvi: rulesetlar, CODEOWNERS va avtomatlashtirish</figcaption>
+</figure>
+
 [35-bobda](35-github-fork-va-pr.md) siz **hissa qo'shuvchi** edingiz: fork qildingiz, branch ochdingiz, pull request yubordingiz. Bu bobda stolning narigi tomoniga o'tamiz — siz **loyiha egasi** (maintainer)siz. Sizga PR keladi, siz uni ko'rib chiqasiz, sinaysiz, qabul qilasiz yoki yopasiz. Loyiha o'sgach, qoidalar kerak bo'ladi: `main` ga to'g'ridan-to'g'ri push qilinmasin, har o'zgarishni kimdir ko'rib chiqsin, testlar o'tmaguncha merge bo'lmasin.
 
 Bob to'rt qismdan iborat:
