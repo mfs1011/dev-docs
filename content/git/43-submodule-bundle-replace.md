@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" playsinline poster="/video/git/43-submodule-bundle-replace.jpg" src="/video/git/43-submodule-bundle-replace.mp4">
+    <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/git/43-submodule-bundle-replace.chapters.vtt" default>
+    <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/git/43-submodule-bundle-replace.uz.vtt">
+  </video>
+  <figcaption>43.1-video. Git submodule, bundle va replace: tashqi repozitoriylar, oflayn arxivlar va tarixni ulash</figcaption>
+</figure>
+
 Bu bobda bir-biriga bog'liq bo'lmagan, lekin bitta umumiy jihati bor uch asbob ko'riladi: ular Git'ning odatiy "bitta repo — bitta tarix — tarmoq orqali push/fetch" modelidan tashqariga chiqadi.
 
 1. **Submodule** — bir Git repo'ni boshqa Git repo ichida papka sifatida saqlash. Tashqi repo **superproject** deyiladi. Ichkaridagi repo o'z tarixini saqlaydi, superproject esa faqat "ichkarida aynan qaysi commit turishi kerak" degan bitta hash'ni yozib qo'yadi. O'xshatish: kitob ichidagi "ilova: X kitobining 3-nashri, 145-bet" degan havola — ilovaning o'zi kitobga ko'chirilmaydi, faqat aniq nashri ko'rsatiladi.
