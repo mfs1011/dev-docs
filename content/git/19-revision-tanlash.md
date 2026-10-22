@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" playsinline poster="/video/git/19-revision-tanlash.jpg" src="/video/git/19-revision-tanlash.mp4">
+    <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/git/19-revision-tanlash.chapters.vtt" default>
+    <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/git/19-revision-tanlash.uz.vtt">
+  </video>
+  <figcaption>19.1-video. Git revision sintaksisi va diapazonlar</figcaption>
+</figure>
+
 Git buyruqlarining ko'pi argument sifatida **revision** kutadi. **Revision** — Git'ga "qaysi obyekt haqida gapiryapmiz" deb aytishning bir usuli. Ko'pincha bu commit, lekin tree yoki blob ham bo'lishi mumkin (`git show HEAD:README.md` — fayl mazmuni). Rasmiy hujjat (`gitrevisions`) buni *extended SHA-1* sintaksisi deb ataydi: oxir-oqibat har qanday yozuv bitta obyekt nomiga — hash'ga — aylanadi.
 
 Oldingi boblarda ko'rdik: har obyektning nomi — uning mazmunidan hisoblangan 40 belgili hash ([14-bob](14-obyektlar-blob.md)), commit o'z otasini biladi ([16-bob](16-commit-obyekti.md)), ref esa hash'ni saqlaydigan nom ([17-bob](17-reflar-va-head.md)). Revision sintaksisi shu uch narsaning ustiga qurilgan kichik "so'rov tili":
