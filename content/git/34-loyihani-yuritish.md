@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" playsinline poster="/video/git/34-loyihani-yuritish.jpg" src="/video/git/34-loyihani-yuritish.mp4">
+    <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/git/34-loyihani-yuritish.chapters.vtt" default>
+    <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/git/34-loyihani-yuritish.uz.vtt">
+  </video>
+  <figcaption>34.1-video. Loyihani maintainer sifatida yuritish, patchlarni qabul qilish va reliz chiqarish</figcaption>
+</figure>
+
 [33-bobda](33-hissa-qoshish.md) biz **hissa qo'shuvchi** tomonida turdik: ishni topic branch'da tayyorlash, `format-patch` bilan patch yaratish, fork'ga push qilib so'rov yuborish. Bu bob — qarama-qarshi tomon. **Maintainer** (loyihani yurituvchi — asosiy repo'ga yozish huquqi bor va begona ishni qabul qiladigan yoki rad etadigan odam) savoli: "Menga patch keldi (yoki "mana bu branch'ni oling" degan xat). Uni qanday qilib xavfsiz sinab ko'raman, ko'rib chiqaman va loyihaga qo'shaman — shunday qilib, ertaga ham, bir yildan keyin ham bu jarayon menga og'ir bo'lmasin?"
 
 Pro Git bu ishni bir necha bosqichga bo'ladi. Biz hammasini lokal repo'larda haqiqatan yurgizamiz:

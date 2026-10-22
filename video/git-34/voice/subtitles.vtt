@@ -1,0 +1,61 @@
+WEBVTT
+
+1
+00:01.420 --> 00:10.860
+Salom! Ushbu o‘ttiz to‘rtinchi bobda masalaga maintainer, ya'ni loyihani
+yurituvchi va qabul qiluvchi boshqaruvchi nuqtai nazaridan yondashamiz.
+
+2
+00:11.470 --> 00:20.080
+Kelgan patch yoki taklif hali to‘liq ishonilmagan kod hisoblanadi, shuning uchun
+asosiy tarmoqni buzmaslik uchun begona ish avval alohida topic branch'ga olinadi.
+
+3
+00:23.770 --> 00:32.710
+Oddiy diff fayllari git apply bilan tekshiriladi; ushbu buyruq atomar bo'lib,
+ziddiyat chiqsa barcha fayllarni toza qoldiradi, commit esa qo‘lda yasaladi.
+
+4
+00:33.160 --> 00:42.320
+Agar o'zgarishlar eskirgan asosda yozilgan bo'lsa, uch tomonlama merge opsiyasi
+blob xeshlaridan foydalanib to‘qnashuvlarni oson bartaraf etishga yordam beradi.
+
+5
+00:46.110 --> 00:55.360
+Format-patch orqali kelgan mbox fayllarini git am buyrug'i bir zumda
+qo'llab, muallif ismi, sanasi va commit xabarini to'liq saqlab qoladi.
+
+6
+00:55.810 --> 01:04.930
+Jarayonda nizo chiqsa, git am continue, skip yoki abort kabi qulay
+buyruqlar maintainerga butun sessiyani to'liq boshqarish imkonini beradi.
+
+7
+01:09.420 --> 01:16.030
+Doimiy hamkorlarning ommaviy forklaridan branchlarni remote
+qilib qo'shamiz va yangiliklarni xavfsiz fetch qilib olamiz.
+
+8
+01:16.360 --> 01:25.240
+Aynan nima kiritilayotganini aniqlash uchun uch nuqtali git diff sintaksisi
+umumiy merge base ajdodidan keyingi haqiqiy farqni to'g'ri ko'rsatadi.
+
+9
+01:29.290 --> 01:37.040
+Tarixni toza va chiziqli saqlash uchun topic branch asosiy tarmoq
+ustiga rebase qilinadi va main faqat fast-forward bilan yangilanadi.
+
+10
+01:37.720 --> 01:45.570
+Katta seriyadan faqat ma'lum bir zarur o'zgarishni ajratib olish kerak
+bo'lganda, git cherry-pick buyrug'i yangi commit hosil qilib yordamga keladi.
+
+11
+01:49.680 --> 01:58.320
+Loyiha relizga tayyor bo'lgach, annotated reliz tegi qo'yiladi, git describe
+orqali build raqami olinadi va git archive yordamida toza arxiv yasaladi.
+
+12
+01:58.810 --> 02:07.870
+Xulosa qilganda, qat'iy tekshirish, alohida topic branchlar va to'g'ri integratsiya
+vositalari yirik loyihalarni yillar davomida barqaror saqlash garovidir.
