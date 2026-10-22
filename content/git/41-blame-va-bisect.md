@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" playsinline poster="/video/git/41-blame-va-bisect.jpg" src="/video/git/41-blame-va-bisect.mp4">
+    <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/git/41-blame-va-bisect.chapters.vtt" default>
+    <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/git/41-blame-va-bisect.uz.vtt">
+  </video>
+  <figcaption>41.1-video. Git blame va bisect: xatoliklarni qidirish, tahlil qilish va ikkilik qidiruv</figcaption>
+</figure>
+
 Git asosan versiya nazorati uchun yaratilgan, lekin u bilan kodni **tuzatish (debugging)** ham mumkin. Buning uchun ikkita asbob bor, va ular ikki xil savolga javob beradi:
 
 | Savol | Asbob | Qachon |
