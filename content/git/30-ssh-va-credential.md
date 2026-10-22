@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" playsinline poster="/video/git/30-ssh-va-credential.jpg" src="/video/git/30-ssh-va-credential.mp4">
+    <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/git/30-ssh-va-credential.chapters.vtt" default>
+    <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/git/30-ssh-va-credential.uz.vtt">
+  </video>
+  <figcaption>30.1-video. Git SSH kalitlari va Credential tizimi arxitekturasi</figcaption>
+</figure>
+
 [29-bobda](29-fetch-push-ichidan.md) ko'rdik: tarmoq orqali `fetch`/`push` uchun Git ikki yo'ldan birini ishlatadi — **SSH** yoki **HTTPS**. Ikkalasida ham server "siz kimsiz?" deb so'raydi. Bu bob shu savolga qanday javob berilishi haqida.
 
 **Autentifikatsiya** — server sizning shaxsingizni tekshirishi. Git'ning o'zi bu ishni qilmaydi, uni transportga topshiradi:
