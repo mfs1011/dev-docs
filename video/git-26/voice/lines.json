@@ -1,0 +1,1264 @@
+[
+  {
+    "id": "l1",
+    "scene": "intro",
+    "text": "Salom! Ushbu yigirma oltinchi bobda Git'da murakkab merge holatlari, turli merge strategiyalari va ularning maxsus opsiyalarini batafsil o‘rganamiz.",
+    "show": "Salom! Ushbu yigirma oltinchi bobda Git'da murakkab merge holatlari, turli merge strategiyalari va ularning maxsus opsiyalarini batafsil o‘rganamiz.",
+    "say": "Salom! Ushbu yigirma oltinchi bobda Git'da murakkab merj holatlari, turli merj strategiyalari va ularning maxsus opsiyalarini batafsil o‘rganamiz.",
+    "a0": 0.26,
+    "a1": 9.23,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.26,
+        "e": 0.54
+      },
+      {
+        "w": "Ushbu",
+        "s": 1.2,
+        "e": 1.42
+      },
+      {
+        "w": "yigirma",
+        "s": 1.54,
+        "e": 1.84
+      },
+      {
+        "w": "oltinchi",
+        "s": 1.86,
+        "e": 2.22
+      },
+      {
+        "w": "bobda",
+        "s": 2.26,
+        "e": 2.56
+      },
+      {
+        "w": "Git'da",
+        "s": 2.7,
+        "e": 3.0
+      },
+      {
+        "w": "murakkab",
+        "s": 3.14,
+        "e": 3.6
+      },
+      {
+        "w": "merj",
+        "s": 3.76,
+        "e": 3.98
+      },
+      {
+        "w": "holatlari,",
+        "s": 4.06,
+        "e": 4.56
+      },
+      {
+        "w": "turli",
+        "s": 4.78,
+        "e": 5.04
+      },
+      {
+        "w": "merj",
+        "s": 5.16,
+        "e": 5.4
+      },
+      {
+        "w": "strategiyalari",
+        "s": 5.48,
+        "e": 6.24
+      },
+      {
+        "w": "va",
+        "s": 6.58,
+        "e": 6.66
+      },
+      {
+        "w": "ularning",
+        "s": 6.8,
+        "e": 7.14
+      },
+      {
+        "w": "maxsus",
+        "s": 7.22,
+        "e": 7.55
+      },
+      {
+        "w": "opsiyalarini",
+        "s": 7.69,
+        "e": 8.21
+      },
+      {
+        "w": "batafsil",
+        "s": 8.27,
+        "e": 8.71
+      },
+      {
+        "w": "o‘rganamiz.",
+        "s": 8.77,
+        "e": 9.23
+      }
+    ]
+  },
+  {
+    "id": "l2",
+    "scene": "intro",
+    "text": "Git sukut bo‘yicha ort strategiyasidan foydalanadi, ammo har bir murakkab vaziyat uchun alohida algoritm va qulay sozlamalar mavjud.",
+    "show": "Git sukut bo‘yicha ort strategiyasidan foydalanadi, ammo har bir murakkab vaziyat uchun alohida algoritm va qulay sozlamalar mavjud.",
+    "say": "Git sukut bo‘yicha ort strategiyasidan foydalanadi, ammo har bir murakkab vaziyat uchun alohida algoritm va qulay sozlamalar mavjud.",
+    "a0": 9.91,
+    "a1": 17.23,
+    "words": [
+      {
+        "w": "Git",
+        "s": 9.91,
+        "e": 10.11
+      },
+      {
+        "w": "sukut",
+        "s": 10.29,
+        "e": 10.53
+      },
+      {
+        "w": "bo‘yicha",
+        "s": 10.59,
+        "e": 10.91
+      },
+      {
+        "w": "ort",
+        "s": 11.17,
+        "e": 11.33
+      },
+      {
+        "w": "strategiyasidan",
+        "s": 11.41,
+        "e": 12.13
+      },
+      {
+        "w": "foydalanadi,",
+        "s": 12.17,
+        "e": 12.73
+      },
+      {
+        "w": "ammo",
+        "s": 12.87,
+        "e": 13.07
+      },
+      {
+        "w": "har",
+        "s": 13.51,
+        "e": 13.65
+      },
+      {
+        "w": "bir",
+        "s": 13.69,
+        "e": 13.79
+      },
+      {
+        "w": "murakkab",
+        "s": 13.85,
+        "e": 14.25
+      },
+      {
+        "w": "vaziyat",
+        "s": 14.29,
+        "e": 14.63
+      },
+      {
+        "w": "uchun",
+        "s": 14.69,
+        "e": 14.89
+      },
+      {
+        "w": "alohida",
+        "s": 15.01,
+        "e": 15.35
+      },
+      {
+        "w": "algoritm",
+        "s": 15.43,
+        "e": 15.91
+      },
+      {
+        "w": "va",
+        "s": 15.95,
+        "e": 16.01
+      },
+      {
+        "w": "qulay",
+        "s": 16.11,
+        "e": 16.35
+      },
+      {
+        "w": "sozlamalar",
+        "s": 16.39,
+        "e": 16.87
+      },
+      {
+        "w": "mavjud.",
+        "s": 16.93,
+        "e": 17.23
+      }
+    ]
+  },
+  {
+    "id": "l3",
+    "scene": "options_ours_theirs",
+    "text": "Agar merge paytida konflikt chiqsa va ziddiyatli joylarda faqat bir tomon ustun bo‘lishi kerak bo‘lsa, -X ours yoki theirs opsiyasi ishlatiladi.",
+    "show": "Agar merge paytida konflikt chiqsa va ziddiyatli joylarda faqat bir tomon ustun bo‘lishi kerak bo‘lsa, -X ours yoki theirs opsiyasi ishlatiladi.",
+    "say": "Agar merj paytida konflikt chiqsa va ziddiyatli joylarda faqat bir tomon ustun bo‘lishi kerak bo‘lsa, minus katta iks aurs yoki zears opsiyasi ishlatiladi.",
+    "a0": 17.91,
+    "a1": 27.32,
+    "words": [
+      {
+        "w": "Agar",
+        "s": 17.91,
+        "e": 18.15
+      },
+      {
+        "w": "merj",
+        "s": 18.27,
+        "e": 18.47
+      },
+      {
+        "w": "paytida",
+        "s": 18.55,
+        "e": 18.87
+      },
+      {
+        "w": "konflikt",
+        "s": 18.93,
+        "e": 19.29
+      },
+      {
+        "w": "chiqsa",
+        "s": 19.31,
+        "e": 19.57
+      },
+      {
+        "w": "va",
+        "s": 19.69,
+        "e": 19.77
+      },
+      {
+        "w": "ziddiyatli",
+        "s": 20.01,
+        "e": 20.43
+      },
+      {
+        "w": "joylarda",
+        "s": 20.51,
+        "e": 20.91
+      },
+      {
+        "w": "faqat",
+        "s": 21.29,
+        "e": 21.59
+      },
+      {
+        "w": "bir",
+        "s": 21.75,
+        "e": 21.87
+      },
+      {
+        "w": "tomon",
+        "s": 21.93,
+        "e": 22.19
+      },
+      {
+        "w": "ustun",
+        "s": 22.27,
+        "e": 22.52
+      },
+      {
+        "w": "bo‘lishi",
+        "s": 22.56,
+        "e": 22.8
+      },
+      {
+        "w": "kerak",
+        "s": 22.82,
+        "e": 23.02
+      },
+      {
+        "w": "bo‘lsa,",
+        "s": 23.06,
+        "e": 23.3
+      },
+      {
+        "w": "minus",
+        "s": 23.78,
+        "e": 24.14
+      },
+      {
+        "w": "katta",
+        "s": 24.28,
+        "e": 24.56
+      },
+      {
+        "w": "iks",
+        "s": 24.72,
+        "e": 24.9
+      },
+      {
+        "w": "aurs",
+        "s": 25.06,
+        "e": 25.36
+      },
+      {
+        "w": "yoki",
+        "s": 25.56,
+        "e": 25.8
+      },
+      {
+        "w": "zears",
+        "s": 26.08,
+        "e": 26.38
+      },
+      {
+        "w": "opsiyasi",
+        "s": 26.48,
+        "e": 26.82
+      },
+      {
+        "w": "ishlatiladi.",
+        "s": 26.84,
+        "e": 27.32
+      }
+    ]
+  },
+  {
+    "id": "l4",
+    "scene": "options_ours_theirs",
+    "text": "Ushbu opsiya faqat ziddiyatli bo‘laklarni tanlangan tomondan oladi, konfliktsiz yangi o‘zgarishlar esa ikkala tomondan bekamu-ko‘st birlashtiriladi.",
+    "show": "Ushbu opsiya faqat ziddiyatli bo‘laklarni tanlangan tomondan oladi, konfliktsiz yangi o‘zgarishlar esa ikkala tomondan bekamu-ko‘st birlashtiriladi.",
+    "say": "Ushbu opsiya faqat ziddiyatli bo‘laklarni tanlangan tomondan oladi, konfliktsiz yangi o‘zgarishlar esa ikkala tomondan bekamu-ko‘st birlashtiriladi.",
+    "a0": 27.78,
+    "a1": 35.34,
+    "words": [
+      {
+        "w": "Ushbu",
+        "s": 27.78,
+        "e": 27.98
+      },
+      {
+        "w": "opsiya",
+        "s": 28.1,
+        "e": 28.36
+      },
+      {
+        "w": "faqat",
+        "s": 28.42,
+        "e": 28.72
+      },
+      {
+        "w": "ziddiyatli",
+        "s": 28.86,
+        "e": 29.36
+      },
+      {
+        "w": "bo‘laklarni",
+        "s": 29.42,
+        "e": 29.96
+      },
+      {
+        "w": "tanlangan",
+        "s": 30.02,
+        "e": 30.48
+      },
+      {
+        "w": "tomondan",
+        "s": 30.52,
+        "e": 30.94
+      },
+      {
+        "w": "oladi,",
+        "s": 31.0,
+        "e": 31.24
+      },
+      {
+        "w": "konfliktsiz",
+        "s": 31.66,
+        "e": 32.16
+      },
+      {
+        "w": "yangi",
+        "s": 32.22,
+        "e": 32.44
+      },
+      {
+        "w": "o‘zgarishlar",
+        "s": 32.5,
+        "e": 32.96
+      },
+      {
+        "w": "esa",
+        "s": 33.02,
+        "e": 33.16
+      },
+      {
+        "w": "ikkala",
+        "s": 33.28,
+        "e": 33.54
+      },
+      {
+        "w": "tomondan",
+        "s": 33.58,
+        "e": 33.98
+      },
+      {
+        "w": "bekamu-ko‘st",
+        "s": 34.06,
+        "e": 34.68
+      },
+      {
+        "w": "birlashtiriladi.",
+        "s": 34.7,
+        "e": 35.34
+      }
+    ]
+  },
+  {
+    "id": "l5",
+    "scene": "strategy_ours",
+    "text": "-s ours strategiyasi esa mutlaqo boshqa narsa bo‘lib, u ikkinchi branchdagi kodlarni umuman olmaydi va faqat joriy fayllar holatini saqlab qoladi.",
+    "show": "-s ours strategiyasi esa mutlaqo boshqa narsa bo‘lib, u ikkinchi branchdagi kodlarni umuman olmaydi va faqat joriy fayllar holatini saqlab qoladi.",
+    "say": "Minus kichik es aurs strategiyasi esa mutlaqo boshqa narsa bo‘lib, u ikkinchi brenchdagi kodlarni umuman olmaydi va faqat joriy fayllar holatini saqlab qoladi.",
+    "a0": 36.1,
+    "a1": 44.39,
+    "words": [
+      {
+        "w": "Minus",
+        "s": 36.1,
+        "e": 36.4
+      },
+      {
+        "w": "kichik",
+        "s": 36.58,
+        "e": 36.84
+      },
+      {
+        "w": "es",
+        "s": 36.96,
+        "e": 37.1
+      },
+      {
+        "w": "aurs",
+        "s": 37.24,
+        "e": 37.46
+      },
+      {
+        "w": "strategiyasi",
+        "s": 37.48,
+        "e": 38.13
+      },
+      {
+        "w": "esa",
+        "s": 38.17,
+        "e": 38.33
+      },
+      {
+        "w": "mutlaqo",
+        "s": 38.37,
+        "e": 38.71
+      },
+      {
+        "w": "boshqa",
+        "s": 38.79,
+        "e": 39.01
+      },
+      {
+        "w": "narsa",
+        "s": 39.05,
+        "e": 39.29
+      },
+      {
+        "w": "bo‘lib,",
+        "s": 39.33,
+        "e": 39.61
+      },
+      {
+        "w": "u",
+        "s": 39.71,
+        "e": 39.73
+      },
+      {
+        "w": "ikkinchi",
+        "s": 39.91,
+        "e": 40.21
+      },
+      {
+        "w": "brenchdagi",
+        "s": 40.25,
+        "e": 40.67
+      },
+      {
+        "w": "kodlarni",
+        "s": 40.73,
+        "e": 41.13
+      },
+      {
+        "w": "umuman",
+        "s": 41.25,
+        "e": 41.57
+      },
+      {
+        "w": "olmaydi",
+        "s": 41.65,
+        "e": 41.95
+      },
+      {
+        "w": "va",
+        "s": 41.99,
+        "e": 42.05
+      },
+      {
+        "w": "faqat",
+        "s": 42.09,
+        "e": 42.35
+      },
+      {
+        "w": "joriy",
+        "s": 42.71,
+        "e": 42.97
+      },
+      {
+        "w": "fayllar",
+        "s": 42.99,
+        "e": 43.33
+      },
+      {
+        "w": "holatini",
+        "s": 43.37,
+        "e": 43.75
+      },
+      {
+        "w": "saqlab",
+        "s": 43.79,
+        "e": 44.07
+      },
+      {
+        "w": "qoladi.",
+        "s": 44.11,
+        "e": 44.39
+      }
+    ]
+  },
+  {
+    "id": "l6",
+    "scene": "strategy_ours",
+    "text": "Natijada ikkinchi branch tarixda to‘liq birlashtirilgan deb belgilanadi, bu esa eski yoki eskirgan tarmoqlarni xavfsiz yopish uchun ayni muddao.",
+    "show": "Natijada ikkinchi branch tarixda to‘liq birlashtirilgan deb belgilanadi, bu esa eski yoki eskirgan tarmoqlarni xavfsiz yopish uchun ayni muddao.",
+    "say": "Natijada ikkinchi brench tarixda to‘liq birlashtirilgan deb belgilanadi, bu esa eski yoki eskirgan tarmoqlarni xavfsiz yopish uchun ayni muddao.",
+    "a0": 44.75,
+    "a1": 52.88,
+    "words": [
+      {
+        "w": "Natijada",
+        "s": 44.75,
+        "e": 45.17
+      },
+      {
+        "w": "ikkinchi",
+        "s": 45.33,
+        "e": 45.65
+      },
+      {
+        "w": "brench",
+        "s": 45.67,
+        "e": 45.93
+      },
+      {
+        "w": "tarixda",
+        "s": 46.03,
+        "e": 46.41
+      },
+      {
+        "w": "to‘liq",
+        "s": 46.53,
+        "e": 46.79
+      },
+      {
+        "w": "birlashtirilgan",
+        "s": 46.85,
+        "e": 47.49
+      },
+      {
+        "w": "deb",
+        "s": 47.53,
+        "e": 47.65
+      },
+      {
+        "w": "belgilanadi,",
+        "s": 47.67,
+        "e": 48.15
+      },
+      {
+        "w": "bu",
+        "s": 48.51,
+        "e": 48.57
+      },
+      {
+        "w": "esa",
+        "s": 48.61,
+        "e": 48.77
+      },
+      {
+        "w": "eski",
+        "s": 49.01,
+        "e": 49.29
+      },
+      {
+        "w": "yoki",
+        "s": 49.29,
+        "e": 49.63
+      },
+      {
+        "w": "eskirgan",
+        "s": 49.83,
+        "e": 50.23
+      },
+      {
+        "w": "tarmoqlarni",
+        "s": 50.25,
+        "e": 50.79
+      },
+      {
+        "w": "xavfsiz",
+        "s": 51.09,
+        "e": 51.47
+      },
+      {
+        "w": "yopish",
+        "s": 51.53,
+        "e": 51.79
+      },
+      {
+        "w": "uchun",
+        "s": 51.83,
+        "e": 52.03
+      },
+      {
+        "w": "ayni",
+        "s": 52.25,
+        "e": 52.47
+      },
+      {
+        "w": "muddao.",
+        "s": 52.52,
+        "e": 52.88
+      }
+    ]
+  },
+  {
+    "id": "l7",
+    "scene": "octopus_merge",
+    "text": "Bir vaqtning o‘zida uchta yoki undan ortiq mustaqil branchlarni bitta commit bilan birlashtirish kerak bo‘lganda, Git avtomatik ravishda octopus strategiyasini tanlaydi.",
+    "show": "Bir vaqtning o‘zida uchta yoki undan ortiq mustaqil branchlarni bitta commit bilan birlashtirish kerak bo‘lganda, Git avtomatik ravishda octopus strategiyasini tanlaydi.",
+    "say": "Bir vaqtning o‘zida uchta yoki undan ortiq mustaqil brenchlarni bitta kommit bilan birlashtirish kerak bo‘lganda, Git avtomatik ravishda oktopus strategiyasini tanlaydi.",
+    "a0": 53.66,
+    "a1": 62.38,
+    "words": [
+      {
+        "w": "Bir",
+        "s": 53.66,
+        "e": 53.76
+      },
+      {
+        "w": "vaqtning",
+        "s": 53.8,
+        "e": 54.1
+      },
+      {
+        "w": "o‘zida",
+        "s": 54.14,
+        "e": 54.4
+      },
+      {
+        "w": "uchta",
+        "s": 54.6,
+        "e": 54.88
+      },
+      {
+        "w": "yoki",
+        "s": 54.88,
+        "e": 55.24
+      },
+      {
+        "w": "undan",
+        "s": 55.4,
+        "e": 55.68
+      },
+      {
+        "w": "ortiq",
+        "s": 55.74,
+        "e": 55.96
+      },
+      {
+        "w": "mustaqil",
+        "s": 56.02,
+        "e": 56.34
+      },
+      {
+        "w": "brenchlarni",
+        "s": 56.42,
+        "e": 56.94
+      },
+      {
+        "w": "bitta",
+        "s": 57.24,
+        "e": 57.48
+      },
+      {
+        "w": "kommit",
+        "s": 57.52,
+        "e": 57.76
+      },
+      {
+        "w": "bilan",
+        "s": 57.78,
+        "e": 57.96
+      },
+      {
+        "w": "birlashtirish",
+        "s": 57.98,
+        "e": 58.46
+      },
+      {
+        "w": "kerak",
+        "s": 58.48,
+        "e": 58.68
+      },
+      {
+        "w": "bo‘lganda,",
+        "s": 58.72,
+        "e": 59.12
+      },
+      {
+        "w": "Git",
+        "s": 59.5,
+        "e": 59.66
+      },
+      {
+        "w": "avtomatik",
+        "s": 59.84,
+        "e": 60.28
+      },
+      {
+        "w": "ravishda",
+        "s": 60.3,
+        "e": 60.64
+      },
+      {
+        "w": "oktopus",
+        "s": 60.9,
+        "e": 61.24
+      },
+      {
+        "w": "strategiyasini",
+        "s": 61.28,
+        "e": 61.96
+      },
+      {
+        "w": "tanlaydi.",
+        "s": 62.0,
+        "e": 62.38
+      }
+    ]
+  },
+  {
+    "id": "l8",
+    "scene": "octopus_merge",
+    "text": "Natijaviy commitda birdaniga to‘rtta ota bog‘lanadi, biroq ziddiyat yuzaga kelsa, octopus merge jarayonini darhol to‘xtatadi.",
+    "show": "Natijaviy commitda birdaniga to‘rtta ota bog‘lanadi, biroq ziddiyat yuzaga kelsa, octopus merge jarayonini darhol to‘xtatadi.",
+    "say": "Natijaviy kommitda birdaniga to‘rtta ota bog‘lanadi, biroq ziddiyat yuzaga kelsa, oktopus merj jarayonini darhol to‘xtatadi.",
+    "a0": 62.78,
+    "a1": 69.43,
+    "words": [
+      {
+        "w": "Natijaviy",
+        "s": 62.78,
+        "e": 63.22
+      },
+      {
+        "w": "kommitda",
+        "s": 63.28,
+        "e": 63.64
+      },
+      {
+        "w": "birdaniga",
+        "s": 63.78,
+        "e": 64.2
+      },
+      {
+        "w": "to‘rtta",
+        "s": 64.32,
+        "e": 64.68
+      },
+      {
+        "w": "ota",
+        "s": 64.76,
+        "e": 64.92
+      },
+      {
+        "w": "bog‘lanadi,",
+        "s": 64.96,
+        "e": 65.4
+      },
+      {
+        "w": "biroq",
+        "s": 65.74,
+        "e": 65.94
+      },
+      {
+        "w": "ziddiyat",
+        "s": 66.08,
+        "e": 66.42
+      },
+      {
+        "w": "yuzaga",
+        "s": 66.46,
+        "e": 66.7
+      },
+      {
+        "w": "kelsa,",
+        "s": 66.76,
+        "e": 67.04
+      },
+      {
+        "w": "oktopus",
+        "s": 67.22,
+        "e": 67.61
+      },
+      {
+        "w": "merj",
+        "s": 67.83,
+        "e": 68.01
+      },
+      {
+        "w": "jarayonini",
+        "s": 68.03,
+        "e": 68.47
+      },
+      {
+        "w": "darhol",
+        "s": 68.57,
+        "e": 68.91
+      },
+      {
+        "w": "to‘xtatadi.",
+        "s": 68.95,
+        "e": 69.43
+      }
+    ]
+  },
+  {
+    "id": "l9",
+    "scene": "merge_bekor_qilish",
+    "text": "Xato qilingan mergeni serverga yuborishdan oldin bekor qilish uchun git reset --hard ORIG_HEAD buyrug‘i eng toza yechim hisoblanadi.",
+    "show": "Xato qilingan mergeni serverga yuborishdan oldin bekor qilish uchun git reset --hard ORIG_HEAD buyrug‘i eng toza yechim hisoblanadi.",
+    "say": "Xato qilingan merjni serverga yuborishdan oldin bekor qilish uchun git reset minus minus xard orij hed buyrug‘i eng toza yechim hisoblanadi.",
+    "a0": 70.07,
+    "a1": 77.77,
+    "words": [
+      {
+        "w": "Xato",
+        "s": 70.07,
+        "e": 70.29
+      },
+      {
+        "w": "qilingan",
+        "s": 70.35,
+        "e": 70.71
+      },
+      {
+        "w": "merjni",
+        "s": 70.75,
+        "e": 71.11
+      },
+      {
+        "w": "serverga",
+        "s": 71.31,
+        "e": 71.69
+      },
+      {
+        "w": "yuborishdan",
+        "s": 71.71,
+        "e": 72.17
+      },
+      {
+        "w": "oldin",
+        "s": 72.21,
+        "e": 72.39
+      },
+      {
+        "w": "bekor",
+        "s": 72.45,
+        "e": 72.71
+      },
+      {
+        "w": "qilish",
+        "s": 72.75,
+        "e": 72.97
+      },
+      {
+        "w": "uchun",
+        "s": 73.01,
+        "e": 73.21
+      },
+      {
+        "w": "git",
+        "s": 73.55,
+        "e": 73.71
+      },
+      {
+        "w": "reset",
+        "s": 73.79,
+        "e": 74.13
+      },
+      {
+        "w": "minus",
+        "s": 74.33,
+        "e": 74.57
+      },
+      {
+        "w": "minus",
+        "s": 74.63,
+        "e": 74.85
+      },
+      {
+        "w": "xard",
+        "s": 74.89,
+        "e": 75.11
+      },
+      {
+        "w": "orij",
+        "s": 75.37,
+        "e": 75.57
+      },
+      {
+        "w": "hed",
+        "s": 75.77,
+        "e": 75.95
+      },
+      {
+        "w": "buyrug‘i",
+        "s": 75.99,
+        "e": 76.33
+      },
+      {
+        "w": "eng",
+        "s": 76.59,
+        "e": 76.73
+      },
+      {
+        "w": "toza",
+        "s": 76.77,
+        "e": 76.99
+      },
+      {
+        "w": "yechim",
+        "s": 77.03,
+        "e": 77.25
+      },
+      {
+        "w": "hisoblanadi.",
+        "s": 77.29,
+        "e": 77.77
+      }
+    ]
+  },
+  {
+    "id": "l10",
+    "scene": "merge_bekor_qilish",
+    "text": "Agar merge allaqachon serverga ketgan bo‘lsa, git revert -m 1 buyrug‘i orqali asosiy tarmoq yo‘nalishini saqlagan holda o‘zgarishlarni ortga qaytaramiz.",
+    "show": "Agar merge allaqachon serverga ketgan bo‘lsa, git revert -m 1 buyrug‘i orqali asosiy tarmoq yo‘nalishini saqlagan holda o‘zgarishlarni ortga qaytaramiz.",
+    "say": "Agar merj allaqachon serverga ketgan bo‘lsa, git revert minus em bir buyrug‘i orqali asosiy tarmoq yo‘nalishini saqlagan holda o‘zgarishlarni ortga qaytaramiz.",
+    "a0": 78.25,
+    "a1": 86.56,
+    "words": [
+      {
+        "w": "Agar",
+        "s": 78.25,
+        "e": 78.47
+      },
+      {
+        "w": "merj",
+        "s": 78.61,
+        "e": 78.83
+      },
+      {
+        "w": "allaqachon",
+        "s": 78.93,
+        "e": 79.35
+      },
+      {
+        "w": "serverga",
+        "s": 79.39,
+        "e": 79.77
+      },
+      {
+        "w": "ketgan",
+        "s": 79.81,
+        "e": 80.11
+      },
+      {
+        "w": "bo‘lsa,",
+        "s": 80.15,
+        "e": 80.39
+      },
+      {
+        "w": "git",
+        "s": 80.75,
+        "e": 80.89
+      },
+      {
+        "w": "revert",
+        "s": 80.95,
+        "e": 81.25
+      },
+      {
+        "w": "minus",
+        "s": 81.35,
+        "e": 81.63
+      },
+      {
+        "w": "em",
+        "s": 81.83,
+        "e": 81.93
+      },
+      {
+        "w": "bir",
+        "s": 82.03,
+        "e": 82.13
+      },
+      {
+        "w": "buyrug‘i",
+        "s": 82.19,
+        "e": 82.47
+      },
+      {
+        "w": "orqali",
+        "s": 82.49,
+        "e": 82.8
+      },
+      {
+        "w": "asosiy",
+        "s": 83.14,
+        "e": 83.48
+      },
+      {
+        "w": "tarmoq",
+        "s": 83.52,
+        "e": 83.8
+      },
+      {
+        "w": "yo‘nalishini",
+        "s": 83.84,
+        "e": 84.28
+      },
+      {
+        "w": "saqlagan",
+        "s": 84.34,
+        "e": 84.74
+      },
+      {
+        "w": "holda",
+        "s": 84.78,
+        "e": 85.04
+      },
+      {
+        "w": "o‘zgarishlarni",
+        "s": 85.14,
+        "e": 85.74
+      },
+      {
+        "w": "ortga",
+        "s": 85.86,
+        "e": 86.06
+      },
+      {
+        "w": "qaytaramiz.",
+        "s": 86.1,
+        "e": 86.56
+      }
+    ]
+  },
+  {
+    "id": "l11",
+    "scene": "subtree_va_rerere",
+    "text": "Shuningdek, git konfiguratsiyasida rerere imkoniyatini yoqish orqali bir xil konfliktlarni qayta-qayta qo‘lda hal qilish mashaqqatidan butunlay qutulamiz.",
+    "show": "Shuningdek, git konfiguratsiyasida rerere imkoniyatini yoqish orqali bir xil konfliktlarni qayta-qayta qo‘lda hal qilish mashaqqatidan butunlay qutulamiz.",
+    "say": "Shuningdek, git konfiguratsiyasida rerere imkoniyatini yoqish orqali bir xil konfliktlarni qayta-qayta qo‘lda hal qilish mashaqqatidan butunlay qutulamiz.",
+    "a0": 87.16,
+    "a1": 94.65,
+    "words": [
+      {
+        "w": "Shuningdek,",
+        "s": 87.16,
+        "e": 87.56
+      },
+      {
+        "w": "git",
+        "s": 87.72,
+        "e": 87.86
+      },
+      {
+        "w": "konfiguratsiyasida",
+        "s": 87.92,
+        "e": 88.66
+      },
+      {
+        "w": "rerere",
+        "s": 88.9,
+        "e": 89.26
+      },
+      {
+        "w": "imkoniyatini",
+        "s": 89.36,
+        "e": 89.86
+      },
+      {
+        "w": "yoqish",
+        "s": 89.88,
+        "e": 90.12
+      },
+      {
+        "w": "orqali",
+        "s": 90.14,
+        "e": 90.42
+      },
+      {
+        "w": "bir",
+        "s": 90.76,
+        "e": 90.88
+      },
+      {
+        "w": "xil",
+        "s": 90.9,
+        "e": 91.02
+      },
+      {
+        "w": "konfliktlarni",
+        "s": 91.08,
+        "e": 91.64
+      },
+      {
+        "w": "qayta-qayta",
+        "s": 91.74,
+        "e": 92.28
+      },
+      {
+        "w": "qo‘lda",
+        "s": 92.36,
+        "e": 92.66
+      },
+      {
+        "w": "hal",
+        "s": 92.7,
+        "e": 92.84
+      },
+      {
+        "w": "qilish",
+        "s": 92.88,
+        "e": 93.07
+      },
+      {
+        "w": "mashaqqatidan",
+        "s": 93.11,
+        "e": 93.69
+      },
+      {
+        "w": "butunlay",
+        "s": 93.79,
+        "e": 94.19
+      },
+      {
+        "w": "qutulamiz.",
+        "s": 94.23,
+        "e": 94.65
+      }
+    ]
+  },
+  {
+    "id": "l12",
+    "scene": "subtree_va_rerere",
+    "text": "Keyingi bobda loyihani masofaviy serverlar va remote repozitoriylar bilan bog‘lab ishlash mexanizmlarini to‘liq o‘zlashtiramiz.",
+    "show": "Keyingi bobda loyihani masofaviy serverlar va remote repozitoriylar bilan bog‘lab ishlash mexanizmlarini to‘liq o‘zlashtiramiz.",
+    "say": "Keyingi bobda loyihani masofaviy serverlar va remout repozitoriylar bilan bog‘lab ishlash mexanizmlarini to‘liq o‘zlashtiramiz.",
+    "a0": 95.19,
+    "a1": 101.58,
+    "words": [
+      {
+        "w": "Keyingi",
+        "s": 95.19,
+        "e": 95.45
+      },
+      {
+        "w": "bobda",
+        "s": 95.47,
+        "e": 95.73
+      },
+      {
+        "w": "loyihani",
+        "s": 95.97,
+        "e": 96.35
+      },
+      {
+        "w": "masofaviy",
+        "s": 96.41,
+        "e": 96.93
+      },
+      {
+        "w": "serverlar",
+        "s": 96.99,
+        "e": 97.47
+      },
+      {
+        "w": "va",
+        "s": 97.51,
+        "e": 97.59
+      },
+      {
+        "w": "remout",
+        "s": 97.93,
+        "e": 98.23
+      },
+      {
+        "w": "repozitoriylar",
+        "s": 98.29,
+        "e": 98.98
+      },
+      {
+        "w": "bilan",
+        "s": 99.0,
+        "e": 99.16
+      },
+      {
+        "w": "bog‘lab",
+        "s": 99.22,
+        "e": 99.48
+      },
+      {
+        "w": "ishlash",
+        "s": 99.54,
+        "e": 99.78
+      },
+      {
+        "w": "mexanizmlarini",
+        "s": 99.8,
+        "e": 100.48
+      },
+      {
+        "w": "to‘liq",
+        "s": 100.68,
+        "e": 100.96
+      },
+      {
+        "w": "o‘zlashtiramiz.",
+        "s": 101.02,
+        "e": 101.58
+      }
+    ]
+  }
+]

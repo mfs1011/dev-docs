@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:21.136
+Kirish: Merge strategiyalari va ORT
+
+00:21.136 --> 00:42.876
+Strategiya opsiyalari: -X ours va theirs
+
+00:42.876 --> 01:04.045
+Soxta merge: -s ours strategiyasi
+
+01:04.045 --> 01:24.104
+Ko‘p branchli merge: Octopus strategiyasi
+
+01:24.104 --> 01:44.818
+Mergeni bekor qilish: Reset va Revert
+
+01:44.818 --> 02:05.600
+Rerere va Remote repozitoriylar
