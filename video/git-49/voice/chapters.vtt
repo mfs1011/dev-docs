@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:19.627
+Git Worktree: Bir Repozitoriy va Bir Nechta Ishchi Maydon
+
+00:19.627 --> 00:37.543
+Worktree Yaratish va Boshqarish: add, list va remove
+
+00:37.543 --> 00:55.075
+Xavfsizlik Qoidasi va Ichki Tuzilma
+
+00:55.075 --> 01:14.044
+Sparse-Checkout: Faqat Kerakli Papkalarni Ochish
+
+01:14.044 --> 01:33.049
+Katta Omborlar: Partial Clone va Skalar
+
+01:33.049 --> 01:54.800
+Xulosa va Ish Oqimi Tavsiyalari

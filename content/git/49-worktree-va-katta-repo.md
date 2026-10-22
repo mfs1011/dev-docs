@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" playsinline poster="/video/git/49-worktree-va-katta-repo.jpg" src="/video/git/49-worktree-va-katta-repo.mp4">
+    <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/git/49-worktree-va-katta-repo.chapters.vtt" default>
+    <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/git/49-worktree-va-katta-repo.uz.vtt">
+  </video>
+  <figcaption>49.1-video. Git worktree va katta omborlar: parallel branchlar, sparse-checkout va partial clone</figcaption>
+</figure>
+
 Odatda bitta repo — bitta papka: bitta `.git` va uning yonida bitta **working tree** (fayllar turgan ish papkasi). Bir vaqtda faqat bitta branch "ochiq" bo'ladi. Repo kattalashganda yoki ish ko'payganda bu ikki xil muammoga olib keladi:
 
 1. **Bir vaqtda bir nechta branch kerak.** Siz katta refactoring o'rtasidasiz, fayllar sochilib yotibdi — shu payt shoshilinch tuzatish so'rashadi. `stash` ([38-bob](38-stash-va-clean.md)) bor, lekin chalkash holatni yig'ishtirib-qaytarish xavfli va noqulay.

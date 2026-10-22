@@ -1,0 +1,61 @@
+WEBVTT
+
+1
+00:01.420 --> 00:08.290
+Katta loyihalarda bir vaqtning o'zida shoshilinch xatolarni
+tuzatish yoki parallel branchlarda ishlash zarurati paydo bo'ladi.
+
+2
+00:08.640 --> 00:17.200
+Git vork-tri mexanizmi butun omborni qayta klonlamasdan, bitta obyektlar
+bazasiga ulangan mustaqil ishchi kataloglar ochishga imkon beradi.
+
+3
+00:20.830 --> 00:27.670
+Jiti vork-tri add buyrug'i ko'rsatilgan papka va branch
+uchun alohida katalog yaratib, darhol ishlashga tayyorlaydi.
+
+4
+00:27.860 --> 00:34.710
+Ro'yxatni ko'rish va tugallangan filiallarni xavfsiz tozalash
+esa list hamda remuv buyruqlari orqali amalga oshiriladi.
+
+5
+00:38.680 --> 00:44.850
+Git xatolarning oldini olish uchun bir xil branchni bir
+vaqtda ikkita alohida vork-trida ochishni qat'iy taqiqlaydi.
+
+6
+00:45.220 --> 00:52.240
+Har bir ishchi maydon o'zining mustaqil xed va indeksiga ega
+bo'lsa-da, barcha commitlar umumiy omborga bir zumda qo'shiladi.
+
+7
+00:56.250 --> 01:03.960
+Yuz minglab faylli yirik monorepolarda spars-chekaut sozlamasi
+diskka faqat kerakli quyi kataloglarni yuklashni ta'minlaydi.
+
+8
+01:04.300 --> 01:11.170
+Konus rejimi orqali keraksiz modullarni chetlab o'tish kompyuter
+xotirasini tejab, indekslash tezligini keskin oshiradi.
+
+9
+01:15.160 --> 01:22.910
+Partiyal klonlash filtri yordamida gigabaytlab binar fayllar yoki
+og'ir bloblar faqat zarurat tug'ilgandagina serverdan tortib olinadi.
+
+10
+01:23.430 --> 01:30.200
+Maykrosoft va Git hamjamiyati yaratgan skalar vositasi esa
+barcha ushbu ilg'or texnologiyalarni bir tugma bilan sozlaydi.
+
+11
+01:34.210 --> 01:42.290
+Vork-tri va yirik repozitoriy vositalari dasturchini ortiqcha klonlash
+hamda kutishlardan xalos etib, mahsuldorlikni bir necha barobar oshiradi.
+
+12
+01:42.720 --> 01:49.880
+O'zgarishlar tugagach vork-tri prun buyrug'i bilan eski yozuvlarni
+tozalab turish tizimni doimiy tartibda saqlashga xizmat qiladi.
