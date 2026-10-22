@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:22.569
+Atomar Commit va Interaktiv Staging
+
+00:22.569 --> 00:44.535
+git add -i Menyu Tizimi
+
+00:44.535 --> 01:04.862
+git add -p va Hunk Tanlash
+
+01:04.862 --> 01:23.773
+Hunklarni Bo‘lish va Tahrirlash
+
+01:23.773 --> 01:41.598
+Bitta Fayl Ikki Holatda
+
+01:41.598 --> 02:03.100
+Boshqa Patch Buyruqlari va Xulosa
