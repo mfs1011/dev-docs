@@ -1,0 +1,61 @@
+WEBVTT
+
+1
+00:01.420 --> 00:11.180
+Salom! Ushbu o‘ttiz yettinchi bobda bir fayl ichidagi turli o‘zgarishlarni
+bo‘laklab indexga olish, ya'ni interaktiv staging usulini o‘rganamiz.
+
+2
+00:11.650 --> 00:20.260
+Kod yozayotganda tuzatishlar va vaqtinchalik debug qatorlari aralashib ketadi,
+yaxshi commit esa faqat bitta mantiqiy mavzudan iborat bo‘lishi lozim.
+
+3
+00:23.710 --> 00:32.230
+Git add minus i buyrug‘i qulay matnli menyu ochib, fayllarni to‘liq
+yoki qisman boshqarish, stage qilish va bekor qilish imkonini beradi.
+
+4
+00:32.540 --> 00:41.690
+Ushbu menyudagi status va update amallari orqali istalgan fayllar
+guruhini raqamlar yoki oraliqlar yordamida tezda tanlab olish mumkin.
+
+5
+00:45.610 --> 00:53.580
+Kundalik ishda eng ko‘p qo‘llanadigan vosita bu git add minus p
+bo‘lib, u faylni alohida xanklarga ajratib, har birini so‘raydi.
+
+6
+00:53.770 --> 01:02.050
+Foydalanuvchi y harfi bilan kerakli bo‘lakni qabul qiladi, n bilan
+tashlab ketadi, q bilan esa jarayonni istalgan payt to‘xtata oladi.
+
+7
+01:05.980 --> 01:12.830
+Agar bitta bo‘lak ichida bir nechta mustaqil o‘zgarish bo‘lsa, s
+harfi orqali uni yanada kichikroq xanklarga bo‘lib tashlaymiz.
+
+8
+01:13.080 --> 01:20.940
+Qo‘shni qatorlardagi vaqtinchalik debug yozuvlarini esa e harfi
+yordamida muharrirda ochib, indexga kiritmasdan o‘chirib yuboramiz.
+
+9
+01:24.830 --> 01:32.820
+Natijada bitta fayl bir vaqtning o‘zida ham staged, ham unstaged
+holatida bo‘lib, sof o‘zgarishlar alohida atomar commit qilinadi.
+
+10
+01:33.050 --> 01:38.790
+Diskdagi ishchi nusxa esa buzilmasdan saqlanib qoladi
+va keyingi mantiqiy qadam uchun tayyor turadi.
+
+11
+01:42.700 --> 01:49.750
+Xuddi shu patch rejimi git restore, reset, stash va hatto
+commit buyruqlarida ham to‘liq quvvat bilan ishlaydi.
+
+12
+01:49.960 --> 01:58.310
+Xulosa qilganda, interaktiv staging vositalari sizga erkin kod
+yozish va har doim mukammal, toza tarix yaratish erkinligini beradi.

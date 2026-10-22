@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" playsinline poster="/video/git/37-interaktiv-staging.jpg" src="/video/git/37-interaktiv-staging.mp4">
+    <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/git/37-interaktiv-staging.chapters.vtt" default>
+    <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/git/37-interaktiv-staging.uz.vtt">
+  </video>
+  <figcaption>37.1-video. Interaktiv staging: git add -i menyusi, git add -p xanklari va atomar commitlar</figcaption>
+</figure>
+
 Ko'pincha ish shunday bo'ladi: bir faylda bir nechta **mustaqil** o'zgarish qilasiz — bitta xatoni tuzatasiz, yo'l-yo'lakay izoh qo'shasiz, vaqtincha `print` bilan nosozlik qidirasiz. Oxirida `git add hisob.py` desangiz, hammasi bitta commit'ga tushadi. 10-bobda aytilgandek, yaxshi commit **atomar** bo'lishi kerak: bitta mantiqiy o'zgarish, bitta commit.
 
 **Interaktiv staging** — faylni butunligicha emas, **bo'laklab** index'ga qo'shish usuli. Eslatma: **index** (staging area) — keyingi commit'ning "qoralamasi", `.git/index` faylida saqlanadi (5- va [15-bob](15-tree-va-index.md)). Odatda `git add fayl` faylning working tree'dagi to'liq holatini index'ga yozadi. Interaktiv rejimda esa siz o'zingiz tanlaysiz: qaysi fayl, faylning qaysi qismi, hatto qaysi qator.

@@ -1,0 +1,1214 @@
+[
+  {
+    "id": "l1",
+    "scene": "intro",
+    "text": "Salom! Ushbu o‘ttiz yettinchi bobda bir fayl ichidagi turli o‘zgarishlarni bo‘laklab indexga olish, ya'ni interaktiv staging usulini o‘rganamiz.",
+    "show": "Salom! Ushbu o‘ttiz yettinchi bobda bir fayl ichidagi turli o‘zgarishlarni bo‘laklab indexga olish, ya'ni interaktiv staging usulini o‘rganamiz.",
+    "say": "Salom! Ushbu o‘ttiz yettinchi bobda bir fayl ichidagi turli o‘zgarishlarni bo‘laklab indexga olish, ya'ni interaktiv steyjing usulini o‘rganamiz.",
+    "a0": 0.32,
+    "a1": 9.63,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.32,
+        "e": 0.58
+      },
+      {
+        "w": "Ushbu",
+        "s": 1.28,
+        "e": 1.52
+      },
+      {
+        "w": "o‘ttiz",
+        "s": 1.76,
+        "e": 2.04
+      },
+      {
+        "w": "yettinchi",
+        "s": 2.08,
+        "e": 2.46
+      },
+      {
+        "w": "bobda",
+        "s": 2.5,
+        "e": 2.82
+      },
+      {
+        "w": "bir",
+        "s": 3.18,
+        "e": 3.3
+      },
+      {
+        "w": "fayl",
+        "s": 3.4,
+        "e": 3.66
+      },
+      {
+        "w": "ichidagi",
+        "s": 3.74,
+        "e": 4.08
+      },
+      {
+        "w": "turli",
+        "s": 4.14,
+        "e": 4.4
+      },
+      {
+        "w": "o‘zgarishlarni",
+        "s": 4.52,
+        "e": 5.16
+      },
+      {
+        "w": "bo‘laklab",
+        "s": 5.24,
+        "e": 5.68
+      },
+      {
+        "w": "indexga",
+        "s": 5.8,
+        "e": 6.24
+      },
+      {
+        "w": "olish,",
+        "s": 6.32,
+        "e": 6.64
+      },
+      {
+        "w": "ya'ni",
+        "s": 7.06,
+        "e": 7.24
+      },
+      {
+        "w": "interaktiv",
+        "s": 7.67,
+        "e": 8.23
+      },
+      {
+        "w": "steyjing",
+        "s": 8.33,
+        "e": 8.71
+      },
+      {
+        "w": "usulini",
+        "s": 8.75,
+        "e": 9.13
+      },
+      {
+        "w": "o‘rganamiz.",
+        "s": 9.19,
+        "e": 9.63
+      }
+    ]
+  },
+  {
+    "id": "l2",
+    "scene": "intro",
+    "text": "Kod yozayotganda tuzatishlar va vaqtinchalik debug qatorlari aralashib ketadi, yaxshi commit esa faqat bitta mantiqiy mavzudan iborat bo‘lishi lozim.",
+    "show": "Kod yozayotganda tuzatishlar va vaqtinchalik debug qatorlari aralashib ketadi, yaxshi commit esa faqat bitta mantiqiy mavzudan iborat bo‘lishi lozim.",
+    "say": "Kod yozayotganda tuzatishlar va vaqtinchalik debug qatorlari aralashib ketadi, yaxshi kommit esa faqat bitta mantiqiy mavzudan iborat bo‘lishi lozim.",
+    "a0": 10.55,
+    "a1": 18.71,
+    "words": [
+      {
+        "w": "Kod",
+        "s": 10.55,
+        "e": 10.69
+      },
+      {
+        "w": "yozayotganda",
+        "s": 10.73,
+        "e": 11.33
+      },
+      {
+        "w": "tuzatishlar",
+        "s": 11.49,
+        "e": 12.07
+      },
+      {
+        "w": "va",
+        "s": 12.13,
+        "e": 12.19
+      },
+      {
+        "w": "vaqtinchalik",
+        "s": 12.29,
+        "e": 12.85
+      },
+      {
+        "w": "debug",
+        "s": 12.91,
+        "e": 13.17
+      },
+      {
+        "w": "qatorlari",
+        "s": 13.21,
+        "e": 13.69
+      },
+      {
+        "w": "aralashib",
+        "s": 13.81,
+        "e": 14.17
+      },
+      {
+        "w": "ketadi,",
+        "s": 14.21,
+        "e": 14.51
+      },
+      {
+        "w": "yaxshi",
+        "s": 15.07,
+        "e": 15.35
+      },
+      {
+        "w": "kommit",
+        "s": 15.41,
+        "e": 15.71
+      },
+      {
+        "w": "esa",
+        "s": 15.77,
+        "e": 15.93
+      },
+      {
+        "w": "faqat",
+        "s": 16.19,
+        "e": 16.47
+      },
+      {
+        "w": "bitta",
+        "s": 16.59,
+        "e": 16.83
+      },
+      {
+        "w": "mantiqiy",
+        "s": 16.87,
+        "e": 17.31
+      },
+      {
+        "w": "mavzudan",
+        "s": 17.35,
+        "e": 17.75
+      },
+      {
+        "w": "iborat",
+        "s": 17.83,
+        "e": 18.13
+      },
+      {
+        "w": "bo‘lishi",
+        "s": 18.17,
+        "e": 18.41
+      },
+      {
+        "w": "lozim.",
+        "s": 18.45,
+        "e": 18.71
+      }
+    ]
+  },
+  {
+    "id": "l3",
+    "scene": "git_add_i",
+    "text": "Git add minus i buyrug‘i qulay matnli menyu ochib, fayllarni to‘liq yoki qisman boshqarish, stage qilish va bekor qilish imkonini beradi.",
+    "show": "Git add minus i buyrug‘i qulay matnli menyu ochib, fayllarni to‘liq yoki qisman boshqarish, stage qilish va bekor qilish imkonini beradi.",
+    "say": "Git ed minus ay buyrug‘i qulay matnli menyu ochib, fayllarni to‘liq yoki qisman boshqarish, stage qilish va bekor qilish imkonini beradi.",
+    "a0": 19.51,
+    "a1": 27.58,
+    "words": [
+      {
+        "w": "Git",
+        "s": 19.51,
+        "e": 19.67
+      },
+      {
+        "w": "ed",
+        "s": 19.77,
+        "e": 19.91
+      },
+      {
+        "w": "minus",
+        "s": 19.99,
+        "e": 20.23
+      },
+      {
+        "w": "ay",
+        "s": 20.35,
+        "e": 20.47
+      },
+      {
+        "w": "buyrug‘i",
+        "s": 20.51,
+        "e": 20.87
+      },
+      {
+        "w": "qulay",
+        "s": 21.29,
+        "e": 21.55
+      },
+      {
+        "w": "matnli",
+        "s": 21.61,
+        "e": 21.97
+      },
+      {
+        "w": "menyu",
+        "s": 22.03,
+        "e": 22.29
+      },
+      {
+        "w": "ochib,",
+        "s": 22.39,
+        "e": 22.64
+      },
+      {
+        "w": "fayllarni",
+        "s": 23.02,
+        "e": 23.52
+      },
+      {
+        "w": "to‘liq",
+        "s": 23.58,
+        "e": 23.86
+      },
+      {
+        "w": "yoki",
+        "s": 23.94,
+        "e": 24.14
+      },
+      {
+        "w": "qisman",
+        "s": 24.26,
+        "e": 24.58
+      },
+      {
+        "w": "boshqarish,",
+        "s": 24.64,
+        "e": 25.14
+      },
+      {
+        "w": "stage",
+        "s": 25.52,
+        "e": 25.8
+      },
+      {
+        "w": "qilish",
+        "s": 25.84,
+        "e": 26.06
+      },
+      {
+        "w": "va",
+        "s": 26.1,
+        "e": 26.16
+      },
+      {
+        "w": "bekor",
+        "s": 26.28,
+        "e": 26.58
+      },
+      {
+        "w": "qilish",
+        "s": 26.6,
+        "e": 26.82
+      },
+      {
+        "w": "imkonini",
+        "s": 26.86,
+        "e": 27.26
+      },
+      {
+        "w": "beradi.",
+        "s": 27.28,
+        "e": 27.58
+      }
+    ]
+  },
+  {
+    "id": "l4",
+    "scene": "git_add_i",
+    "text": "Ushbu menyudagi status va update amallari orqali istalgan fayllar guruhini raqamlar yoki oraliqlar yordamida tezda tanlab olish mumkin.",
+    "show": "Ushbu menyudagi status va update amallari orqali istalgan fayllar guruhini raqamlar yoki oraliqlar yordamida tezda tanlab olish mumkin.",
+    "say": "Ushbu menyudagi status va update amallari orqali istalgan fayllar guruhini raqamlar yoki oraliqlar yordamida tezda tanlab olish mumkin.",
+    "a0": 28.34,
+    "a1": 37.04,
+    "words": [
+      {
+        "w": "Ushbu",
+        "s": 28.34,
+        "e": 28.56
+      },
+      {
+        "w": "menyudagi",
+        "s": 28.64,
+        "e": 29.16
+      },
+      {
+        "w": "status",
+        "s": 29.58,
+        "e": 30.06
+      },
+      {
+        "w": "va",
+        "s": 30.12,
+        "e": 30.2
+      },
+      {
+        "w": "update",
+        "s": 30.46,
+        "e": 30.84
+      },
+      {
+        "w": "amallari",
+        "s": 30.9,
+        "e": 31.28
+      },
+      {
+        "w": "orqali",
+        "s": 31.32,
+        "e": 31.64
+      },
+      {
+        "w": "istalgan",
+        "s": 32.06,
+        "e": 32.56
+      },
+      {
+        "w": "fayllar",
+        "s": 32.64,
+        "e": 33.0
+      },
+      {
+        "w": "guruhini",
+        "s": 33.04,
+        "e": 33.42
+      },
+      {
+        "w": "raqamlar",
+        "s": 33.52,
+        "e": 34.1
+      },
+      {
+        "w": "yoki",
+        "s": 34.18,
+        "e": 34.4
+      },
+      {
+        "w": "oraliqlar",
+        "s": 34.76,
+        "e": 35.24
+      },
+      {
+        "w": "yordamida",
+        "s": 35.28,
+        "e": 35.74
+      },
+      {
+        "w": "tezda",
+        "s": 35.92,
+        "e": 36.22
+      },
+      {
+        "w": "tanlab",
+        "s": 36.26,
+        "e": 36.54
+      },
+      {
+        "w": "olish",
+        "s": 36.58,
+        "e": 36.76
+      },
+      {
+        "w": "mumkin.",
+        "s": 36.8,
+        "e": 37.04
+      }
+    ]
+  },
+  {
+    "id": "l5",
+    "scene": "git_add_p_hunks",
+    "text": "Kundalik ishda eng ko‘p qo‘llanadigan vosita bu git add minus p bo‘lib, u faylni alohida xanklarga ajratib, har birini so‘raydi.",
+    "show": "Kundalik ishda eng ko‘p qo‘llanadigan vosita bu git add minus p bo‘lib, u faylni alohida xanklarga ajratib, har birini so‘raydi.",
+    "say": "Kundalik ishda eng ko‘p qo‘llanadigan vosita bu git ed minus pi bo‘lib, u faylni alohida xanklarga ajratib, har birini so‘raydi.",
+    "a0": 37.81,
+    "a1": 45.33,
+    "words": [
+      {
+        "w": "Kundalik",
+        "s": 37.81,
+        "e": 38.17
+      },
+      {
+        "w": "ishda",
+        "s": 38.21,
+        "e": 38.39
+      },
+      {
+        "w": "eng",
+        "s": 38.55,
+        "e": 38.69
+      },
+      {
+        "w": "ko‘p",
+        "s": 38.73,
+        "e": 38.89
+      },
+      {
+        "w": "qo‘llanadigan",
+        "s": 38.93,
+        "e": 39.43
+      },
+      {
+        "w": "vosita",
+        "s": 39.47,
+        "e": 39.85
+      },
+      {
+        "w": "bu",
+        "s": 39.91,
+        "e": 39.99
+      },
+      {
+        "w": "git",
+        "s": 40.39,
+        "e": 40.55
+      },
+      {
+        "w": "ed",
+        "s": 40.65,
+        "e": 40.77
+      },
+      {
+        "w": "minus",
+        "s": 40.85,
+        "e": 41.09
+      },
+      {
+        "w": "pi",
+        "s": 41.19,
+        "e": 41.29
+      },
+      {
+        "w": "bo‘lib,",
+        "s": 41.39,
+        "e": 41.63
+      },
+      {
+        "w": "u",
+        "s": 42.05,
+        "e": 42.07
+      },
+      {
+        "w": "faylni",
+        "s": 42.19,
+        "e": 42.57
+      },
+      {
+        "w": "alohida",
+        "s": 42.75,
+        "e": 43.13
+      },
+      {
+        "w": "xanklarga",
+        "s": 43.25,
+        "e": 43.75
+      },
+      {
+        "w": "ajratib,",
+        "s": 43.81,
+        "e": 44.19
+      },
+      {
+        "w": "har",
+        "s": 44.53,
+        "e": 44.69
+      },
+      {
+        "w": "birini",
+        "s": 44.73,
+        "e": 44.95
+      },
+      {
+        "w": "so‘raydi.",
+        "s": 44.99,
+        "e": 45.33
+      }
+    ]
+  },
+  {
+    "id": "l6",
+    "scene": "git_add_p_hunks",
+    "text": "Foydalanuvchi y harfi bilan kerakli bo‘lakni qabul qiladi, n bilan tashlab ketadi, q bilan esa jarayonni istalgan payt to‘xtata oladi.",
+    "show": "Foydalanuvchi y harfi bilan kerakli bo‘lakni qabul qiladi, n bilan tashlab ketadi, q bilan esa jarayonni istalgan payt to‘xtata oladi.",
+    "say": "Foydalanuvchi igrek harfi bilan kerakli bo‘lakni qabul qiladi, en bilan tashlab ketadi, kyu bilan esa jarayonni istalgan payt to‘xtata oladi.",
+    "a0": 45.97,
+    "a1": 53.8,
+    "words": [
+      {
+        "w": "Foydalanuvchi",
+        "s": 45.97,
+        "e": 46.55
+      },
+      {
+        "w": "igrek",
+        "s": 46.93,
+        "e": 47.23
+      },
+      {
+        "w": "harfi",
+        "s": 47.23,
+        "e": 47.49
+      },
+      {
+        "w": "bilan",
+        "s": 47.53,
+        "e": 47.71
+      },
+      {
+        "w": "kerakli",
+        "s": 47.77,
+        "e": 48.17
+      },
+      {
+        "w": "bo‘lakni",
+        "s": 48.23,
+        "e": 48.55
+      },
+      {
+        "w": "qabul",
+        "s": 48.61,
+        "e": 48.87
+      },
+      {
+        "w": "qiladi,",
+        "s": 48.91,
+        "e": 49.21
+      },
+      {
+        "w": "en",
+        "s": 49.67,
+        "e": 49.77
+      },
+      {
+        "w": "bilan",
+        "s": 49.83,
+        "e": 50.03
+      },
+      {
+        "w": "tashlab",
+        "s": 50.09,
+        "e": 50.39
+      },
+      {
+        "w": "ketadi,",
+        "s": 50.43,
+        "e": 50.75
+      },
+      {
+        "w": "kyu",
+        "s": 51.09,
+        "e": 51.29
+      },
+      {
+        "w": "bilan",
+        "s": 51.35,
+        "e": 51.53
+      },
+      {
+        "w": "esa",
+        "s": 51.59,
+        "e": 51.75
+      },
+      {
+        "w": "jarayonni",
+        "s": 51.89,
+        "e": 52.37
+      },
+      {
+        "w": "istalgan",
+        "s": 52.49,
+        "e": 52.94
+      },
+      {
+        "w": "payt",
+        "s": 52.98,
+        "e": 53.14
+      },
+      {
+        "w": "to‘xtata",
+        "s": 53.18,
+        "e": 53.5
+      },
+      {
+        "w": "oladi.",
+        "s": 53.54,
+        "e": 53.8
+      }
+    ]
+  },
+  {
+    "id": "l7",
+    "scene": "hunk_split_edit",
+    "text": "Agar bitta bo‘lak ichida bir nechta mustaqil o‘zgarish bo‘lsa, s harfi orqali uni yanada kichikroq xanklarga bo‘lib tashlaymiz.",
+    "show": "Agar bitta bo‘lak ichida bir nechta mustaqil o‘zgarish bo‘lsa, s harfi orqali uni yanada kichikroq xanklarga bo‘lib tashlaymiz.",
+    "say": "Agar bitta bo‘lak ichida bir nechta mustaqil o‘zgarish bo‘lsa, es harfi orqali uni yanada kichikroq xanklarga bo‘lib tashlaymiz.",
+    "a0": 54.58,
+    "a1": 60.98,
+    "words": [
+      {
+        "w": "Agar",
+        "s": 54.58,
+        "e": 54.8
+      },
+      {
+        "w": "bitta",
+        "s": 54.86,
+        "e": 55.08
+      },
+      {
+        "w": "bo‘lak",
+        "s": 55.12,
+        "e": 55.38
+      },
+      {
+        "w": "ichida",
+        "s": 55.42,
+        "e": 55.64
+      },
+      {
+        "w": "bir",
+        "s": 55.98,
+        "e": 56.08
+      },
+      {
+        "w": "nechta",
+        "s": 56.14,
+        "e": 56.36
+      },
+      {
+        "w": "mustaqil",
+        "s": 56.42,
+        "e": 56.84
+      },
+      {
+        "w": "o‘zgarish",
+        "s": 56.9,
+        "e": 57.24
+      },
+      {
+        "w": "bo‘lsa,",
+        "s": 57.26,
+        "e": 57.52
+      },
+      {
+        "w": "es",
+        "s": 57.96,
+        "e": 58.1
+      },
+      {
+        "w": "harfi",
+        "s": 58.16,
+        "e": 58.4
+      },
+      {
+        "w": "orqali",
+        "s": 58.44,
+        "e": 58.74
+      },
+      {
+        "w": "uni",
+        "s": 58.84,
+        "e": 58.96
+      },
+      {
+        "w": "yanada",
+        "s": 59.08,
+        "e": 59.36
+      },
+      {
+        "w": "kichikroq",
+        "s": 59.42,
+        "e": 59.78
+      },
+      {
+        "w": "xanklarga",
+        "s": 59.84,
+        "e": 60.26
+      },
+      {
+        "w": "bo‘lib",
+        "s": 60.3,
+        "e": 60.5
+      },
+      {
+        "w": "tashlaymiz.",
+        "s": 60.54,
+        "e": 60.98
+      }
+    ]
+  },
+  {
+    "id": "l8",
+    "scene": "hunk_split_edit",
+    "text": "Qo‘shni qatorlardagi vaqtinchalik debug yozuvlarini esa e harfi yordamida muharrirda ochib, indexga kiritmasdan o‘chirib yuboramiz.",
+    "show": "Qo‘shni qatorlardagi vaqtinchalik debug yozuvlarini esa e harfi yordamida muharrirda ochib, indexga kiritmasdan o‘chirib yuboramiz.",
+    "say": "Qo‘shni qatorlardagi vaqtinchalik debug yozuvlarini esa e harfi yordamida muharrirda ochib, indexga kiritmasdan o‘chirib yuboramiz.",
+    "a0": 61.68,
+    "a1": 69.09,
+    "words": [
+      {
+        "w": "Qo‘shni",
+        "s": 61.68,
+        "e": 61.92
+      },
+      {
+        "w": "qatorlardagi",
+        "s": 61.96,
+        "e": 62.58
+      },
+      {
+        "w": "vaqtinchalik",
+        "s": 62.92,
+        "e": 63.46
+      },
+      {
+        "w": "debug",
+        "s": 63.54,
+        "e": 63.8
+      },
+      {
+        "w": "yozuvlarini",
+        "s": 63.86,
+        "e": 64.34
+      },
+      {
+        "w": "esa",
+        "s": 64.38,
+        "e": 64.54
+      },
+      {
+        "w": "e",
+        "s": 64.98,
+        "e": 65.0
+      },
+      {
+        "w": "harfi",
+        "s": 65.12,
+        "e": 65.4
+      },
+      {
+        "w": "yordamida",
+        "s": 65.42,
+        "e": 65.86
+      },
+      {
+        "w": "muharrirda",
+        "s": 65.94,
+        "e": 66.56
+      },
+      {
+        "w": "ochib,",
+        "s": 66.64,
+        "e": 66.86
+      },
+      {
+        "w": "indexga",
+        "s": 67.2,
+        "e": 67.61
+      },
+      {
+        "w": "kiritmasdan",
+        "s": 67.67,
+        "e": 68.25
+      },
+      {
+        "w": "o‘chirib",
+        "s": 68.35,
+        "e": 68.63
+      },
+      {
+        "w": "yuboramiz.",
+        "s": 68.65,
+        "e": 69.09
+      }
+    ]
+  },
+  {
+    "id": "l9",
+    "scene": "bitta_fayl_ikki_holat",
+    "text": "Natijada bitta fayl bir vaqtning o‘zida ham staged, ham unstaged holatida bo‘lib, sof o‘zgarishlar alohida atomar commit qilinadi.",
+    "show": "Natijada bitta fayl bir vaqtning o‘zida ham staged, ham unstaged holatida bo‘lib, sof o‘zgarishlar alohida atomar commit qilinadi.",
+    "say": "Natijada bitta fayl bir vaqtning o‘zida ham steyjd, ham an-steyjd holatida bo‘lib, sof o‘zgarishlar alohida atomar kommit qilinadi.",
+    "a0": 69.83,
+    "a1": 77.37,
+    "words": [
+      {
+        "w": "Natijada",
+        "s": 69.83,
+        "e": 70.31
+      },
+      {
+        "w": "bitta",
+        "s": 70.43,
+        "e": 70.69
+      },
+      {
+        "w": "fayl",
+        "s": 70.75,
+        "e": 71.03
+      },
+      {
+        "w": "bir",
+        "s": 71.15,
+        "e": 71.29
+      },
+      {
+        "w": "vaqtning",
+        "s": 71.33,
+        "e": 71.69
+      },
+      {
+        "w": "o‘zida",
+        "s": 71.75,
+        "e": 72.01
+      },
+      {
+        "w": "ham",
+        "s": 72.11,
+        "e": 72.29
+      },
+      {
+        "w": "steyjd,",
+        "s": 72.39,
+        "e": 72.87
+      },
+      {
+        "w": "ham",
+        "s": 72.97,
+        "e": 73.11
+      },
+      {
+        "w": "an-steyjd",
+        "s": 73.27,
+        "e": 73.75
+      },
+      {
+        "w": "holatida",
+        "s": 73.79,
+        "e": 74.19
+      },
+      {
+        "w": "bo‘lib,",
+        "s": 74.23,
+        "e": 74.45
+      },
+      {
+        "w": "sof",
+        "s": 74.87,
+        "e": 75.07
+      },
+      {
+        "w": "o‘zgarishlar",
+        "s": 75.19,
+        "e": 75.67
+      },
+      {
+        "w": "alohida",
+        "s": 75.81,
+        "e": 76.19
+      },
+      {
+        "w": "atomar",
+        "s": 76.31,
+        "e": 76.65
+      },
+      {
+        "w": "kommit",
+        "s": 76.71,
+        "e": 76.97
+      },
+      {
+        "w": "qilinadi.",
+        "s": 77.01,
+        "e": 77.37
+      }
+    ]
+  },
+  {
+    "id": "l10",
+    "scene": "bitta_fayl_ikki_holat",
+    "text": "Diskdagi ishchi nusxa esa buzilmasdan saqlanib qoladi va keyingi mantiqiy qadam uchun tayyor turadi.",
+    "show": "Diskdagi ishchi nusxa esa buzilmasdan saqlanib qoladi va keyingi mantiqiy qadam uchun tayyor turadi.",
+    "say": "Diskdagi ishchi nusxa esa buzilmasdan saqlanib qoladi va keyingi mantiqiy qadam uchun tayyor turadi.",
+    "a0": 78.05,
+    "a1": 83.34,
+    "words": [
+      {
+        "w": "Diskdagi",
+        "s": 78.05,
+        "e": 78.49
+      },
+      {
+        "w": "ishchi",
+        "s": 78.59,
+        "e": 78.77
+      },
+      {
+        "w": "nusxa",
+        "s": 78.81,
+        "e": 79.05
+      },
+      {
+        "w": "esa",
+        "s": 79.09,
+        "e": 79.25
+      },
+      {
+        "w": "buzilmasdan",
+        "s": 79.59,
+        "e": 80.15
+      },
+      {
+        "w": "saqlanib",
+        "s": 80.19,
+        "e": 80.57
+      },
+      {
+        "w": "qoladi",
+        "s": 80.61,
+        "e": 80.87
+      },
+      {
+        "w": "va",
+        "s": 80.91,
+        "e": 80.97
+      },
+      {
+        "w": "keyingi",
+        "s": 81.29,
+        "e": 81.61
+      },
+      {
+        "w": "mantiqiy",
+        "s": 81.69,
+        "e": 82.09
+      },
+      {
+        "w": "qadam",
+        "s": 82.15,
+        "e": 82.39
+      },
+      {
+        "w": "uchun",
+        "s": 82.41,
+        "e": 82.6
+      },
+      {
+        "w": "tayyor",
+        "s": 82.7,
+        "e": 83.02
+      },
+      {
+        "w": "turadi.",
+        "s": 83.06,
+        "e": 83.34
+      }
+    ]
+  },
+  {
+    "id": "l11",
+    "scene": "boshqa_patch_buyruqlar",
+    "text": "Xuddi shu patch rejimi git restore, reset, stash va hatto commit buyruqlarida ham to‘liq quvvat bilan ishlaydi.",
+    "show": "Xuddi shu patch rejimi git restore, reset, stash va hatto commit buyruqlarida ham to‘liq quvvat bilan ishlaydi.",
+    "say": "Xuddi shu patch rejimi git restor, reset, stesh va hatto kommit buyruqlarida ham to‘liq quvvat bilan ishlaydi.",
+    "a0": 84.1,
+    "a1": 90.7,
+    "words": [
+      {
+        "w": "Xuddi",
+        "s": 84.1,
+        "e": 84.32
+      },
+      {
+        "w": "shu",
+        "s": 84.36,
+        "e": 84.44
+      },
+      {
+        "w": "patch",
+        "s": 84.64,
+        "e": 84.88
+      },
+      {
+        "w": "rejimi",
+        "s": 84.94,
+        "e": 85.28
+      },
+      {
+        "w": "git",
+        "s": 85.68,
+        "e": 85.84
+      },
+      {
+        "w": "restor,",
+        "s": 85.9,
+        "e": 86.32
+      },
+      {
+        "w": "reset,",
+        "s": 86.68,
+        "e": 87.08
+      },
+      {
+        "w": "stesh",
+        "s": 87.38,
+        "e": 87.7
+      },
+      {
+        "w": "va",
+        "s": 87.76,
+        "e": 87.84
+      },
+      {
+        "w": "hatto",
+        "s": 87.94,
+        "e": 88.22
+      },
+      {
+        "w": "kommit",
+        "s": 88.38,
+        "e": 88.68
+      },
+      {
+        "w": "buyruqlarida",
+        "s": 88.74,
+        "e": 89.22
+      },
+      {
+        "w": "ham",
+        "s": 89.26,
+        "e": 89.4
+      },
+      {
+        "w": "to‘liq",
+        "s": 89.5,
+        "e": 89.78
+      },
+      {
+        "w": "quvvat",
+        "s": 89.84,
+        "e": 90.12
+      },
+      {
+        "w": "bilan",
+        "s": 90.16,
+        "e": 90.32
+      },
+      {
+        "w": "ishlaydi.",
+        "s": 90.36,
+        "e": 90.7
+      }
+    ]
+  },
+  {
+    "id": "l12",
+    "scene": "boshqa_patch_buyruqlar",
+    "text": "Xulosa qilganda, interaktiv staging vositalari sizga erkin kod yozish va har doim mukammal, toza tarix yaratish erkinligini beradi.",
+    "show": "Xulosa qilganda, interaktiv staging vositalari sizga erkin kod yozish va har doim mukammal, toza tarix yaratish erkinligini beradi.",
+    "say": "Xulosa qilganda, interaktiv steyjing vositalari sizga erkin kod yozish va har doim mukammal, toza tarix yaratish erkinligini beradi.",
+    "a0": 91.36,
+    "a1": 99.26,
+    "words": [
+      {
+        "w": "Xulosa",
+        "s": 91.36,
+        "e": 91.68
+      },
+      {
+        "w": "qilganda,",
+        "s": 91.72,
+        "e": 92.12
+      },
+      {
+        "w": "interaktiv",
+        "s": 92.55,
+        "e": 93.09
+      },
+      {
+        "w": "steyjing",
+        "s": 93.15,
+        "e": 93.51
+      },
+      {
+        "w": "vositalari",
+        "s": 93.53,
+        "e": 94.11
+      },
+      {
+        "w": "sizga",
+        "s": 94.17,
+        "e": 94.41
+      },
+      {
+        "w": "erkin",
+        "s": 94.61,
+        "e": 94.91
+      },
+      {
+        "w": "kod",
+        "s": 94.99,
+        "e": 95.15
+      },
+      {
+        "w": "yozish",
+        "s": 95.15,
+        "e": 95.51
+      },
+      {
+        "w": "va",
+        "s": 95.79,
+        "e": 95.85
+      },
+      {
+        "w": "har",
+        "s": 95.95,
+        "e": 96.13
+      },
+      {
+        "w": "doim",
+        "s": 96.19,
+        "e": 96.43
+      },
+      {
+        "w": "mukammal,",
+        "s": 96.49,
+        "e": 97.01
+      },
+      {
+        "w": "toza",
+        "s": 97.36,
+        "e": 97.62
+      },
+      {
+        "w": "tarix",
+        "s": 97.68,
+        "e": 97.94
+      },
+      {
+        "w": "yaratish",
+        "s": 98.02,
+        "e": 98.36
+      },
+      {
+        "w": "erkinligini",
+        "s": 98.48,
+        "e": 98.96
+      },
+      {
+        "w": "beradi.",
+        "s": 98.98,
+        "e": 99.26
+      }
+    ]
+  }
+]
