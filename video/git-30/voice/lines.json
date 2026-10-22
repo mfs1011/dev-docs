@@ -1,0 +1,1559 @@
+[
+  {
+    "id": "l1",
+    "scene": "intro",
+    "text": "Salom! Ushbu o‘ttizinchi bobda Git masofaviy repozitoriylar bilan aloqa o‘rnatishda SSH va HTTPS orqali autentifikatsiyani qanday amalga oshirishini o‘rganamiz.",
+    "show": "Salom! Ushbu o‘ttizinchi bobda Git masofaviy repozitoriylar bilan aloqa o‘rnatishda SSH va HTTPS orqali autentifikatsiyani qanday amalga oshirishini o‘rganamiz.",
+    "say": "Salom! Ushbu o‘ttizinchi bobda Git masofaviy repozitoriylar bilan aloqa o‘rnatishda es es eych va eych ti ti pi es orqali autentifikatsiyani qanday amalga oshirishini o‘rganamiz.",
+    "a0": 0.28,
+    "a1": 11.19,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.28,
+        "e": 0.52
+      },
+      {
+        "w": "Ushbu",
+        "s": 1.24,
+        "e": 1.48
+      },
+      {
+        "w": "o‘ttizinchi",
+        "s": 1.64,
+        "e": 2.12
+      },
+      {
+        "w": "bobda",
+        "s": 2.16,
+        "e": 2.46
+      },
+      {
+        "w": "Git",
+        "s": 2.82,
+        "e": 3.04
+      },
+      {
+        "w": "masofaviy",
+        "s": 3.22,
+        "e": 3.72
+      },
+      {
+        "w": "repozitoriylar",
+        "s": 3.78,
+        "e": 4.52
+      },
+      {
+        "w": "bilan",
+        "s": 4.54,
+        "e": 4.74
+      },
+      {
+        "w": "aloqa",
+        "s": 4.86,
+        "e": 5.14
+      },
+      {
+        "w": "o‘rnatishda",
+        "s": 5.18,
+        "e": 5.66
+      },
+      {
+        "w": "es",
+        "s": 6.12,
+        "e": 6.2
+      },
+      {
+        "w": "es",
+        "s": 6.24,
+        "e": 6.34
+      },
+      {
+        "w": "eych",
+        "s": 6.38,
+        "e": 6.6
+      },
+      {
+        "w": "va",
+        "s": 6.7,
+        "e": 6.78
+      },
+      {
+        "w": "eych",
+        "s": 7.04,
+        "e": 7.18
+      },
+      {
+        "w": "ti",
+        "s": 7.2,
+        "e": 7.26
+      },
+      {
+        "w": "ti",
+        "s": 7.3,
+        "e": 7.38
+      },
+      {
+        "w": "pi",
+        "s": 7.44,
+        "e": 7.53
+      },
+      {
+        "w": "es",
+        "s": 7.61,
+        "e": 7.71
+      },
+      {
+        "w": "orqali",
+        "s": 7.79,
+        "e": 8.09
+      },
+      {
+        "w": "autentifikatsiyani",
+        "s": 8.47,
+        "e": 9.45
+      },
+      {
+        "w": "qanday",
+        "s": 9.55,
+        "e": 9.91
+      },
+      {
+        "w": "amalga",
+        "s": 10.03,
+        "e": 10.29
+      },
+      {
+        "w": "oshirishini",
+        "s": 10.35,
+        "e": 10.73
+      },
+      {
+        "w": "o‘rganamiz.",
+        "s": 10.75,
+        "e": 11.19
+      }
+    ]
+  },
+  {
+    "id": "l2",
+    "scene": "intro",
+    "text": "Git parollarni o‘zi saqlamaydi. SSH uchun asimmetrik kalit juftligiga, HTTPS uchun esa operatsion tizimning Credential Helper vositalariga tayanadi.",
+    "show": "Git parollarni o‘zi saqlamaydi. SSH uchun asimmetrik kalit juftligiga, HTTPS uchun esa operatsion tizimning Credential Helper vositalariga tayanadi.",
+    "say": "Git parollarni o‘zi saqlamaydi. Es es eych uchun asimmetrik kalit juftligiga, eych ti ti pi es uchun esa operatsion tizimning kredenshl helper vositalariga tayanadi.",
+    "a0": 12.27,
+    "a1": 21.23,
+    "words": [
+      {
+        "w": "Git",
+        "s": 12.27,
+        "e": 12.43
+      },
+      {
+        "w": "parollarni",
+        "s": 12.51,
+        "e": 12.95
+      },
+      {
+        "w": "o‘zi",
+        "s": 12.99,
+        "e": 13.09
+      },
+      {
+        "w": "saqlamaydi.",
+        "s": 13.13,
+        "e": 13.65
+      },
+      {
+        "w": "Es",
+        "s": 14.07,
+        "e": 14.15
+      },
+      {
+        "w": "es",
+        "s": 14.19,
+        "e": 14.27
+      },
+      {
+        "w": "eych",
+        "s": 14.31,
+        "e": 14.49
+      },
+      {
+        "w": "uchun",
+        "s": 14.51,
+        "e": 14.73
+      },
+      {
+        "w": "asimmetrik",
+        "s": 15.07,
+        "e": 15.65
+      },
+      {
+        "w": "kalit",
+        "s": 15.71,
+        "e": 15.97
+      },
+      {
+        "w": "juftligiga,",
+        "s": 15.99,
+        "e": 16.49
+      },
+      {
+        "w": "eych",
+        "s": 16.99,
+        "e": 17.13
+      },
+      {
+        "w": "ti",
+        "s": 17.13,
+        "e": 17.21
+      },
+      {
+        "w": "ti",
+        "s": 17.25,
+        "e": 17.33
+      },
+      {
+        "w": "pi",
+        "s": 17.37,
+        "e": 17.45
+      },
+      {
+        "w": "es",
+        "s": 17.51,
+        "e": 17.59
+      },
+      {
+        "w": "uchun",
+        "s": 17.65,
+        "e": 17.83
+      },
+      {
+        "w": "esa",
+        "s": 17.87,
+        "e": 18.01
+      },
+      {
+        "w": "operatsion",
+        "s": 18.11,
+        "e": 18.57
+      },
+      {
+        "w": "tizimning",
+        "s": 18.61,
+        "e": 18.99
+      },
+      {
+        "w": "kredenshl",
+        "s": 19.23,
+        "e": 19.81
+      },
+      {
+        "w": "helper",
+        "s": 19.89,
+        "e": 20.21
+      },
+      {
+        "w": "vositalariga",
+        "s": 20.25,
+        "e": 20.81
+      },
+      {
+        "w": "tayanadi.",
+        "s": 20.85,
+        "e": 21.23
+      }
+    ]
+  },
+  {
+    "id": "l3",
+    "scene": "ssh_kalit_va_huquqlar",
+    "text": "Zamonaviy va ishonchli SSH ulanish uchun Ed25519 algoritmidan foydalanish tavsiya etiladi. ssh-keygen buyrug‘i orqali maxfiy kalit va uning ommaviy .pub jufti hosil qilinadi.",
+    "show": "Zamonaviy va ishonchli SSH ulanish uchun Ed25519 algoritmidan foydalanish tavsiya etiladi. ssh-keygen buyrug‘i orqali maxfiy kalit va uning ommaviy .pub jufti hosil qilinadi.",
+    "say": "Zamonaviy va ishonchli es es eych ulanish uchun ed ikki yuz ellik besh o'n to'qqiz algoritmidan foydalanish tavsiya etiladi. Es es eych key jen buyrug‘i orqali maxfiy kalit va uning ommaviy nuqta pab jufti hosil qilinadi.",
+    "a0": 22.11,
+    "a1": 34.08,
+    "words": [
+      {
+        "w": "Zamonaviy",
+        "s": 22.11,
+        "e": 22.6
+      },
+      {
+        "w": "va",
+        "s": 22.66,
+        "e": 22.72
+      },
+      {
+        "w": "ishonchli",
+        "s": 22.8,
+        "e": 23.18
+      },
+      {
+        "w": "es",
+        "s": 23.3,
+        "e": 23.38
+      },
+      {
+        "w": "es",
+        "s": 23.42,
+        "e": 23.52
+      },
+      {
+        "w": "eych",
+        "s": 23.56,
+        "e": 23.72
+      },
+      {
+        "w": "ulanish",
+        "s": 23.76,
+        "e": 24.04
+      },
+      {
+        "w": "uchun",
+        "s": 24.06,
+        "e": 24.22
+      },
+      {
+        "w": "ed",
+        "s": 24.7,
+        "e": 24.84
+      },
+      {
+        "w": "ikki",
+        "s": 24.86,
+        "e": 25.02
+      },
+      {
+        "w": "yuz",
+        "s": 25.02,
+        "e": 25.12
+      },
+      {
+        "w": "ellik",
+        "s": 25.14,
+        "e": 25.5
+      },
+      {
+        "w": "besh",
+        "s": 25.56,
+        "e": 25.74
+      },
+      {
+        "w": "o'n",
+        "s": 25.86,
+        "e": 25.94
+      },
+      {
+        "w": "to'qqiz",
+        "s": 25.98,
+        "e": 26.26
+      },
+      {
+        "w": "algoritmidan",
+        "s": 26.32,
+        "e": 26.92
+      },
+      {
+        "w": "foydalanish",
+        "s": 26.96,
+        "e": 27.38
+      },
+      {
+        "w": "tavsiya",
+        "s": 27.4,
+        "e": 27.64
+      },
+      {
+        "w": "etiladi.",
+        "s": 27.66,
+        "e": 27.96
+      },
+      {
+        "w": "Es",
+        "s": 28.64,
+        "e": 28.72
+      },
+      {
+        "w": "es",
+        "s": 28.76,
+        "e": 28.86
+      },
+      {
+        "w": "eych",
+        "s": 28.9,
+        "e": 29.08
+      },
+      {
+        "w": "key",
+        "s": 29.14,
+        "e": 29.28
+      },
+      {
+        "w": "jen",
+        "s": 29.4,
+        "e": 29.58
+      },
+      {
+        "w": "buyrug‘i",
+        "s": 29.62,
+        "e": 30.0
+      },
+      {
+        "w": "orqali",
+        "s": 30.02,
+        "e": 30.28
+      },
+      {
+        "w": "maxfiy",
+        "s": 30.4,
+        "e": 30.72
+      },
+      {
+        "w": "kalit",
+        "s": 30.82,
+        "e": 31.14
+      },
+      {
+        "w": "va",
+        "s": 31.24,
+        "e": 31.3
+      },
+      {
+        "w": "uning",
+        "s": 31.44,
+        "e": 31.64
+      },
+      {
+        "w": "ommaviy",
+        "s": 31.78,
+        "e": 32.14
+      },
+      {
+        "w": "nuqta",
+        "s": 32.52,
+        "e": 32.8
+      },
+      {
+        "w": "pab",
+        "s": 32.9,
+        "e": 33.06
+      },
+      {
+        "w": "jufti",
+        "s": 33.12,
+        "e": 33.36
+      },
+      {
+        "w": "hosil",
+        "s": 33.42,
+        "e": 33.68
+      },
+      {
+        "w": "qilinadi.",
+        "s": 33.72,
+        "e": 34.08
+      }
+    ]
+  },
+  {
+    "id": "l4",
+    "scene": "ssh_kalit_va_huquqlar",
+    "text": "Maxfiy kalit ruxsati faqat egasiga berilishi shart, ya'ni 600. Aks holda OpenSSH xavfsizlik vajidan kalitni qabul qilmaydi. Parol iborasi esa kalitni diskda kuchli shifrlaydi.",
+    "show": "Maxfiy kalit ruxsati faqat egasiga berilishi shart, ya'ni 600. Aks holda OpenSSH xavfsizlik vajidan kalitni qabul qilmaydi. Parol iborasi esa kalitni diskda kuchli shifrlaydi.",
+    "say": "Maxfiy kalit ruxsati faqat egasiga berilishi shart, ya'ni olti yuz. Aks holda OpenSSH xavfsizlik vajidan kalitni qabul qilmaydi. Parol iborasi esa kalitni diskda kuchli shifrlaydi.",
+    "a0": 34.96,
+    "a1": 45.59,
+    "words": [
+      {
+        "w": "Maxfiy",
+        "s": 34.96,
+        "e": 35.22
+      },
+      {
+        "w": "kalit",
+        "s": 35.28,
+        "e": 35.52
+      },
+      {
+        "w": "ruxsati",
+        "s": 35.58,
+        "e": 35.92
+      },
+      {
+        "w": "faqat",
+        "s": 35.96,
+        "e": 36.22
+      },
+      {
+        "w": "egasiga",
+        "s": 36.32,
+        "e": 36.72
+      },
+      {
+        "w": "berilishi",
+        "s": 36.74,
+        "e": 37.1
+      },
+      {
+        "w": "shart,",
+        "s": 37.1,
+        "e": 37.3
+      },
+      {
+        "w": "ya'ni",
+        "s": 37.63,
+        "e": 37.83
+      },
+      {
+        "w": "olti",
+        "s": 38.01,
+        "e": 38.23
+      },
+      {
+        "w": "yuz.",
+        "s": 38.25,
+        "e": 38.37
+      },
+      {
+        "w": "Aks",
+        "s": 38.77,
+        "e": 38.93
+      },
+      {
+        "w": "holda",
+        "s": 38.95,
+        "e": 39.21
+      },
+      {
+        "w": "OpenSSH",
+        "s": 39.37,
+        "e": 40.17
+      },
+      {
+        "w": "xavfsizlik",
+        "s": 40.23,
+        "e": 40.69
+      },
+      {
+        "w": "vajidan",
+        "s": 40.73,
+        "e": 41.09
+      },
+      {
+        "w": "kalitni",
+        "s": 41.13,
+        "e": 41.45
+      },
+      {
+        "w": "qabul",
+        "s": 41.49,
+        "e": 41.71
+      },
+      {
+        "w": "qilmaydi.",
+        "s": 41.75,
+        "e": 42.11
+      },
+      {
+        "w": "Parol",
+        "s": 42.67,
+        "e": 42.91
+      },
+      {
+        "w": "iborasi",
+        "s": 42.97,
+        "e": 43.35
+      },
+      {
+        "w": "esa",
+        "s": 43.39,
+        "e": 43.53
+      },
+      {
+        "w": "kalitni",
+        "s": 43.61,
+        "e": 43.99
+      },
+      {
+        "w": "diskda",
+        "s": 44.05,
+        "e": 44.37
+      },
+      {
+        "w": "kuchli",
+        "s": 44.71,
+        "e": 44.99
+      },
+      {
+        "w": "shifrlaydi.",
+        "s": 45.07,
+        "e": 45.59
+      }
+    ]
+  },
+  {
+    "id": "l5",
+    "scene": "ssh_agent_va_config",
+    "text": "Har safar parolni qayta kiritmaslik uchun fonda ssh-agent ishlatiladi. U yechilgan kalitni xotirada saqlab, server so‘rovlariga xavfsiz imzo qo‘yib beradi.",
+    "show": "Har safar parolni qayta kiritmaslik uchun fonda ssh-agent ishlatiladi. U yechilgan kalitni xotirada saqlab, server so‘rovlariga xavfsiz imzo qo‘yib beradi.",
+    "say": "Har safar parolni qayta kiritmaslik uchun fonda es es eych eyjent ishlatiladi. U yechilgan kalitni xotirada saqlab, server so‘rovlariga xavfsiz imzo qo‘yib beradi.",
+    "a0": 46.37,
+    "a1": 54.76,
+    "words": [
+      {
+        "w": "Har",
+        "s": 46.37,
+        "e": 46.49
+      },
+      {
+        "w": "safar",
+        "s": 46.53,
+        "e": 46.77
+      },
+      {
+        "w": "parolni",
+        "s": 46.81,
+        "e": 47.11
+      },
+      {
+        "w": "qayta",
+        "s": 47.15,
+        "e": 47.37
+      },
+      {
+        "w": "kiritmaslik",
+        "s": 47.41,
+        "e": 47.87
+      },
+      {
+        "w": "uchun",
+        "s": 47.89,
+        "e": 48.07
+      },
+      {
+        "w": "fonda",
+        "s": 48.37,
+        "e": 48.65
+      },
+      {
+        "w": "es",
+        "s": 48.83,
+        "e": 48.93
+      },
+      {
+        "w": "es",
+        "s": 48.97,
+        "e": 49.07
+      },
+      {
+        "w": "eych",
+        "s": 49.11,
+        "e": 49.31
+      },
+      {
+        "w": "eyjent",
+        "s": 49.45,
+        "e": 49.71
+      },
+      {
+        "w": "ishlatiladi.",
+        "s": 49.75,
+        "e": 50.21
+      },
+      {
+        "w": "U",
+        "s": 50.69,
+        "e": 50.71
+      },
+      {
+        "w": "yechilgan",
+        "s": 50.85,
+        "e": 51.27
+      },
+      {
+        "w": "kalitni",
+        "s": 51.33,
+        "e": 51.65
+      },
+      {
+        "w": "xotirada",
+        "s": 51.69,
+        "e": 52.05
+      },
+      {
+        "w": "saqlab,",
+        "s": 52.11,
+        "e": 52.43
+      },
+      {
+        "w": "server",
+        "s": 52.64,
+        "e": 52.94
+      },
+      {
+        "w": "so‘rovlariga",
+        "s": 52.98,
+        "e": 53.44
+      },
+      {
+        "w": "xavfsiz",
+        "s": 53.52,
+        "e": 53.9
+      },
+      {
+        "w": "imzo",
+        "s": 53.98,
+        "e": 54.2
+      },
+      {
+        "w": "qo‘yib",
+        "s": 54.26,
+        "e": 54.46
+      },
+      {
+        "w": "beradi.",
+        "s": 54.48,
+        "e": 54.76
+      }
+    ]
+  },
+  {
+    "id": "l6",
+    "scene": "ssh_agent_va_config",
+    "text": "Bir serverda shaxsiy va ishchi akkauntlarni ajratish uchun esa ssh config faylida alohida host taxalluslari va IdentitiesOnly sozlamasidan foydalanamiz.",
+    "show": "Bir serverda shaxsiy va ishchi akkauntlarni ajratish uchun esa ssh config faylida alohida host taxalluslari va IdentitiesOnly sozlamasidan foydalanamiz.",
+    "say": "Bir serverda shaxsiy va ishchi akkauntlarni ajratish uchun esa es es eych konfig faylida alohida host taxalluslari va aydentitiz onli sozlamasidan foydalanamiz.",
+    "a0": 55.54,
+    "a1": 64.28,
+    "words": [
+      {
+        "w": "Bir",
+        "s": 55.54,
+        "e": 55.66
+      },
+      {
+        "w": "serverda",
+        "s": 55.74,
+        "e": 56.16
+      },
+      {
+        "w": "shaxsiy",
+        "s": 56.22,
+        "e": 56.6
+      },
+      {
+        "w": "va",
+        "s": 56.7,
+        "e": 56.76
+      },
+      {
+        "w": "ishchi",
+        "s": 56.86,
+        "e": 57.06
+      },
+      {
+        "w": "akkauntlarni",
+        "s": 57.06,
+        "e": 57.66
+      },
+      {
+        "w": "ajratish",
+        "s": 57.7,
+        "e": 58.08
+      },
+      {
+        "w": "uchun",
+        "s": 58.1,
+        "e": 58.26
+      },
+      {
+        "w": "esa",
+        "s": 58.3,
+        "e": 58.44
+      },
+      {
+        "w": "es",
+        "s": 58.84,
+        "e": 58.94
+      },
+      {
+        "w": "es",
+        "s": 58.98,
+        "e": 59.08
+      },
+      {
+        "w": "eych",
+        "s": 59.1,
+        "e": 59.28
+      },
+      {
+        "w": "konfig",
+        "s": 59.36,
+        "e": 59.68
+      },
+      {
+        "w": "faylida",
+        "s": 59.72,
+        "e": 60.06
+      },
+      {
+        "w": "alohida",
+        "s": 60.18,
+        "e": 60.58
+      },
+      {
+        "w": "host",
+        "s": 60.68,
+        "e": 60.92
+      },
+      {
+        "w": "taxalluslari",
+        "s": 60.94,
+        "e": 61.58
+      },
+      {
+        "w": "va",
+        "s": 61.64,
+        "e": 61.72
+      },
+      {
+        "w": "aydentitiz",
+        "s": 62.12,
+        "e": 62.7
+      },
+      {
+        "w": "onli",
+        "s": 62.84,
+        "e": 63.06
+      },
+      {
+        "w": "sozlamasidan",
+        "s": 63.12,
+        "e": 63.68
+      },
+      {
+        "w": "foydalanamiz.",
+        "s": 63.7,
+        "e": 64.28
+      }
+    ]
+  },
+  {
+    "id": "l7",
+    "scene": "https_credential_plumbing",
+    "text": "HTTPS protokoli orqali ishlaganda GitHub an'anaviy parollarni qabul qilmaydi, uning o‘rniga shaxsiy kirish tokenlari kiritiladi.",
+    "show": "HTTPS protokoli orqali ishlaganda GitHub an'anaviy parollarni qabul qilmaydi, uning o‘rniga shaxsiy kirish tokenlari kiritiladi.",
+    "say": "Eych ti ti pi es protokoli orqali ishlaganda git hab an'anaviy parollarni qabul qilmaydi, uning o‘rniga shaxsiy kirish tokenlari kiritiladi.",
+    "a0": 65.14,
+    "a1": 71.77,
+    "words": [
+      {
+        "w": "Eych",
+        "s": 65.14,
+        "e": 65.26
+      },
+      {
+        "w": "ti",
+        "s": 65.28,
+        "e": 65.34
+      },
+      {
+        "w": "ti",
+        "s": 65.38,
+        "e": 65.46
+      },
+      {
+        "w": "pi",
+        "s": 65.48,
+        "e": 65.56
+      },
+      {
+        "w": "es",
+        "s": 65.62,
+        "e": 65.7
+      },
+      {
+        "w": "protokoli",
+        "s": 65.74,
+        "e": 66.16
+      },
+      {
+        "w": "orqali",
+        "s": 66.2,
+        "e": 66.46
+      },
+      {
+        "w": "ishlaganda",
+        "s": 66.5,
+        "e": 66.96
+      },
+      {
+        "w": "git",
+        "s": 67.26,
+        "e": 67.4
+      },
+      {
+        "w": "hab",
+        "s": 67.44,
+        "e": 67.63
+      },
+      {
+        "w": "an'anaviy",
+        "s": 67.73,
+        "e": 68.09
+      },
+      {
+        "w": "parollarni",
+        "s": 68.13,
+        "e": 68.57
+      },
+      {
+        "w": "qabul",
+        "s": 68.59,
+        "e": 68.81
+      },
+      {
+        "w": "qilmaydi,",
+        "s": 68.85,
+        "e": 69.19
+      },
+      {
+        "w": "uning",
+        "s": 69.61,
+        "e": 69.77
+      },
+      {
+        "w": "o‘rniga",
+        "s": 69.79,
+        "e": 70.07
+      },
+      {
+        "w": "shaxsiy",
+        "s": 70.19,
+        "e": 70.51
+      },
+      {
+        "w": "kirish",
+        "s": 70.57,
+        "e": 70.81
+      },
+      {
+        "w": "tokenlari",
+        "s": 70.87,
+        "e": 71.33
+      },
+      {
+        "w": "kiritiladi.",
+        "s": 71.35,
+        "e": 71.77
+      }
+    ]
+  },
+  {
+    "id": "l8",
+    "scene": "https_credential_plumbing",
+    "text": "Git ichidagi git credential quyi tizimi fill amali orqali parolni qidiradi, approve bilan xotiraga oladi va reject orqali eskirgan tokenni o‘chiradi.",
+    "show": "Git ichidagi git credential quyi tizimi fill amali orqali parolni qidiradi, approve bilan xotiraga oladi va reject orqali eskirgan tokenni o‘chiradi.",
+    "say": "Git ichidagi git kredenshl quyi tizimi fill amali orqali parolni qidiradi, epruv bilan xotiraga oladi va rijekt orqali eskirgan tokenni o‘chiradi.",
+    "a0": 72.55,
+    "a1": 80.41,
+    "words": [
+      {
+        "w": "Git",
+        "s": 72.55,
+        "e": 72.69
+      },
+      {
+        "w": "ichidagi",
+        "s": 72.75,
+        "e": 73.13
+      },
+      {
+        "w": "git",
+        "s": 73.27,
+        "e": 73.43
+      },
+      {
+        "w": "kredenshl",
+        "s": 73.49,
+        "e": 73.99
+      },
+      {
+        "w": "quyi",
+        "s": 74.05,
+        "e": 74.23
+      },
+      {
+        "w": "tizimi",
+        "s": 74.27,
+        "e": 74.59
+      },
+      {
+        "w": "fill",
+        "s": 74.77,
+        "e": 74.95
+      },
+      {
+        "w": "amali",
+        "s": 75.07,
+        "e": 75.29
+      },
+      {
+        "w": "orqali",
+        "s": 75.33,
+        "e": 75.63
+      },
+      {
+        "w": "parolni",
+        "s": 75.69,
+        "e": 76.01
+      },
+      {
+        "w": "qidiradi,",
+        "s": 76.05,
+        "e": 76.45
+      },
+      {
+        "w": "epruv",
+        "s": 76.87,
+        "e": 77.17
+      },
+      {
+        "w": "bilan",
+        "s": 77.21,
+        "e": 77.39
+      },
+      {
+        "w": "xotiraga",
+        "s": 77.45,
+        "e": 77.83
+      },
+      {
+        "w": "oladi",
+        "s": 77.89,
+        "e": 78.17
+      },
+      {
+        "w": "va",
+        "s": 78.25,
+        "e": 78.31
+      },
+      {
+        "w": "rijekt",
+        "s": 78.45,
+        "e": 78.79
+      },
+      {
+        "w": "orqali",
+        "s": 78.85,
+        "e": 79.13
+      },
+      {
+        "w": "eskirgan",
+        "s": 79.25,
+        "e": 79.65
+      },
+      {
+        "w": "tokenni",
+        "s": 79.69,
+        "e": 80.05
+      },
+      {
+        "w": "o‘chiradi.",
+        "s": 80.09,
+        "e": 80.41
+      }
+    ]
+  },
+  {
+    "id": "l9",
+    "scene": "credential_helperlar",
+    "text": "Tokenlarni eslab qolish uchun macOS'da osxkeychain, Windows'da wincred tokenlarni operatsion tizimning shifrlangan omborida xavfsiz saqlaydi.",
+    "show": "Tokenlarni eslab qolish uchun macOS'da osxkeychain, Windows'da wincred tokenlarni operatsion tizimning shifrlangan omborida xavfsiz saqlaydi.",
+    "say": "Tokenlarni eslab qolish uchun macOS'da o es iks keycheyn, Windows'da vin kred tokenlarni operatsion tizimning shifrlangan omborida xavfsiz saqlaydi.",
+    "a0": 81.19,
+    "a1": 89.26,
+    "words": [
+      {
+        "w": "Tokenlarni",
+        "s": 81.19,
+        "e": 81.67
+      },
+      {
+        "w": "eslab",
+        "s": 81.71,
+        "e": 81.93
+      },
+      {
+        "w": "qolish",
+        "s": 81.95,
+        "e": 82.19
+      },
+      {
+        "w": "uchun",
+        "s": 82.19,
+        "e": 82.37
+      },
+      {
+        "w": "macOS'da",
+        "s": 82.47,
+        "e": 82.92
+      },
+      {
+        "w": "o",
+        "s": 83.24,
+        "e": 83.26
+      },
+      {
+        "w": "es",
+        "s": 83.32,
+        "e": 83.36
+      },
+      {
+        "w": "iks",
+        "s": 83.5,
+        "e": 83.64
+      },
+      {
+        "w": "keycheyn,",
+        "s": 83.72,
+        "e": 84.2
+      },
+      {
+        "w": "Windows'da",
+        "s": 84.58,
+        "e": 85.08
+      },
+      {
+        "w": "vin",
+        "s": 85.18,
+        "e": 85.34
+      },
+      {
+        "w": "kred",
+        "s": 85.4,
+        "e": 85.64
+      },
+      {
+        "w": "tokenlarni",
+        "s": 85.84,
+        "e": 86.4
+      },
+      {
+        "w": "operatsion",
+        "s": 86.48,
+        "e": 86.92
+      },
+      {
+        "w": "tizimning",
+        "s": 86.96,
+        "e": 87.34
+      },
+      {
+        "w": "shifrlangan",
+        "s": 87.4,
+        "e": 87.96
+      },
+      {
+        "w": "omborida",
+        "s": 88.04,
+        "e": 88.42
+      },
+      {
+        "w": "xavfsiz",
+        "s": 88.48,
+        "e": 88.82
+      },
+      {
+        "w": "saqlaydi.",
+        "s": 88.84,
+        "e": 89.26
+      }
+    ]
+  },
+  {
+    "id": "l10",
+    "scene": "credential_helperlar",
+    "text": "Vaqtinchalik cache yoki diskka ochiq yozuvchi store helperlari ham mavjud. Biroq xavfsizlik vajidan parollarni ochiq fayllarda yoki URL ichida saqlash qat'iyan man etiladi.",
+    "show": "Vaqtinchalik cache yoki diskka ochiq yozuvchi store helperlari ham mavjud. Biroq xavfsizlik vajidan parollarni ochiq fayllarda yoki URL ichida saqlash qat'iyan man etiladi.",
+    "say": "Vaqtinchalik kesh yoki diskka ochiq yozuvchi stor helperlari ham mavjud. Biroq xavfsizlik vajidan parollarni ochiq fayllarda yoki URL ichida saqlash qat'iyan man etiladi.",
+    "a0": 89.88,
+    "a1": 99.17,
+    "words": [
+      {
+        "w": "Vaqtinchalik",
+        "s": 89.88,
+        "e": 90.38
+      },
+      {
+        "w": "kesh",
+        "s": 90.44,
+        "e": 90.68
+      },
+      {
+        "w": "yoki",
+        "s": 90.76,
+        "e": 91.0
+      },
+      {
+        "w": "diskka",
+        "s": 91.12,
+        "e": 91.44
+      },
+      {
+        "w": "ochiq",
+        "s": 91.54,
+        "e": 91.74
+      },
+      {
+        "w": "yozuvchi",
+        "s": 91.78,
+        "e": 92.14
+      },
+      {
+        "w": "stor",
+        "s": 92.22,
+        "e": 92.44
+      },
+      {
+        "w": "helperlari",
+        "s": 92.5,
+        "e": 92.96
+      },
+      {
+        "w": "ham",
+        "s": 92.98,
+        "e": 93.12
+      },
+      {
+        "w": "mavjud.",
+        "s": 93.14,
+        "e": 93.44
+      },
+      {
+        "w": "Biroq",
+        "s": 93.78,
+        "e": 94.0
+      },
+      {
+        "w": "xavfsizlik",
+        "s": 94.14,
+        "e": 94.58
+      },
+      {
+        "w": "vajidan",
+        "s": 94.62,
+        "e": 94.94
+      },
+      {
+        "w": "parollarni",
+        "s": 95.0,
+        "e": 95.46
+      },
+      {
+        "w": "ochiq",
+        "s": 95.56,
+        "e": 95.78
+      },
+      {
+        "w": "fayllarda",
+        "s": 95.84,
+        "e": 96.32
+      },
+      {
+        "w": "yoki",
+        "s": 96.44,
+        "e": 96.66
+      },
+      {
+        "w": "URL",
+        "s": 97.08,
+        "e": 97.39
+      },
+      {
+        "w": "ichida",
+        "s": 97.43,
+        "e": 97.65
+      },
+      {
+        "w": "saqlash",
+        "s": 97.69,
+        "e": 98.01
+      },
+      {
+        "w": "qat'iyan",
+        "s": 98.09,
+        "e": 98.63
+      },
+      {
+        "w": "man",
+        "s": 98.67,
+        "e": 98.81
+      },
+      {
+        "w": "etiladi.",
+        "s": 98.85,
+        "e": 99.17
+      }
+    ]
+  },
+  {
+    "id": "l11",
+    "scene": "xulosa",
+    "text": "Xulosa qilganda, SSH uchun Ed25519 va ssh config profilidan, HTTPS uchun esa tizim darajasidagi shifrlangan credential helperdan foydalaning.",
+    "show": "Xulosa qilganda, SSH uchun Ed25519 va ssh config profilidan, HTTPS uchun esa tizim darajasidagi shifrlangan credential helperdan foydalaning.",
+    "say": "Xulosa qilganda, es es eych uchun ed ikki yuz ellik besh o'n to'qqiz va es es eych konfig profilidan, eych ti ti pi es uchun esa tizim darajasidagi shifrlangan kredenshl helperdan foydalaning.",
+    "a0": 99.93,
+    "a1": 110.05,
+    "words": [
+      {
+        "w": "Xulosa",
+        "s": 99.93,
+        "e": 100.25
+      },
+      {
+        "w": "qilganda,",
+        "s": 100.29,
+        "e": 100.71
+      },
+      {
+        "w": "es",
+        "s": 101.01,
+        "e": 101.11
+      },
+      {
+        "w": "es",
+        "s": 101.13,
+        "e": 101.23
+      },
+      {
+        "w": "eych",
+        "s": 101.27,
+        "e": 101.41
+      },
+      {
+        "w": "uchun",
+        "s": 101.45,
+        "e": 101.65
+      },
+      {
+        "w": "ed",
+        "s": 102.01,
+        "e": 102.15
+      },
+      {
+        "w": "ikki",
+        "s": 102.15,
+        "e": 102.25
+      },
+      {
+        "w": "yuz",
+        "s": 102.25,
+        "e": 102.37
+      },
+      {
+        "w": "ellik",
+        "s": 102.39,
+        "e": 102.71
+      },
+      {
+        "w": "besh",
+        "s": 102.77,
+        "e": 102.91
+      },
+      {
+        "w": "o'n",
+        "s": 103.05,
+        "e": 103.13
+      },
+      {
+        "w": "to'qqiz",
+        "s": 103.17,
+        "e": 103.51
+      },
+      {
+        "w": "va",
+        "s": 103.59,
+        "e": 103.67
+      },
+      {
+        "w": "es",
+        "s": 103.89,
+        "e": 103.99
+      },
+      {
+        "w": "es",
+        "s": 104.03,
+        "e": 104.11
+      },
+      {
+        "w": "eych",
+        "s": 104.15,
+        "e": 104.31
+      },
+      {
+        "w": "konfig",
+        "s": 104.39,
+        "e": 104.71
+      },
+      {
+        "w": "profilidan,",
+        "s": 104.75,
+        "e": 105.29
+      },
+      {
+        "w": "eych",
+        "s": 105.73,
+        "e": 105.87
+      },
+      {
+        "w": "ti",
+        "s": 105.87,
+        "e": 105.95
+      },
+      {
+        "w": "ti",
+        "s": 105.99,
+        "e": 106.05
+      },
+      {
+        "w": "pi",
+        "s": 106.09,
+        "e": 106.17
+      },
+      {
+        "w": "es",
+        "s": 106.25,
+        "e": 106.33
+      },
+      {
+        "w": "uchun",
+        "s": 106.39,
+        "e": 106.57
+      },
+      {
+        "w": "esa",
+        "s": 106.63,
+        "e": 106.77
+      },
+      {
+        "w": "tizim",
+        "s": 106.91,
+        "e": 107.17
+      },
+      {
+        "w": "darajasidagi",
+        "s": 107.21,
+        "e": 107.81
+      },
+      {
+        "w": "shifrlangan",
+        "s": 107.87,
+        "e": 108.45
+      },
+      {
+        "w": "kredenshl",
+        "s": 108.53,
+        "e": 109.01
+      },
+      {
+        "w": "helperdan",
+        "s": 109.07,
+        "e": 109.55
+      },
+      {
+        "w": "foydalaning.",
+        "s": 109.59,
+        "e": 110.05
+      }
+    ]
+  },
+  {
+    "id": "l12",
+    "scene": "xulosa",
+    "text": "Keyingi o‘ttiz birinchi bobda jamoalarda qo‘llaniladigan turli xil branch workflowlari va tarmoqlanish strategiyalarini tahlil qilamiz.",
+    "show": "Keyingi o‘ttiz birinchi bobda jamoalarda qo‘llaniladigan turli xil branch workflowlari va tarmoqlanish strategiyalarini tahlil qilamiz.",
+    "say": "Keyingi o‘ttiz birinchi bobda jamoalarda qo‘llaniladigan turli xil brench vorkfloulari va tarmoqlanish strategiyalarini tahlil qilamiz.",
+    "a0": 110.67,
+    "a1": 119.16,
+    "words": [
+      {
+        "w": "Keyingi",
+        "s": 110.67,
+        "e": 111.07
+      },
+      {
+        "w": "o‘ttiz",
+        "s": 111.19,
+        "e": 111.49
+      },
+      {
+        "w": "birinchi",
+        "s": 111.53,
+        "e": 111.83
+      },
+      {
+        "w": "bobda",
+        "s": 111.87,
+        "e": 112.2
+      },
+      {
+        "w": "jamoalarda",
+        "s": 112.66,
+        "e": 113.2
+      },
+      {
+        "w": "qo‘llaniladigan",
+        "s": 113.26,
+        "e": 114.04
+      },
+      {
+        "w": "turli",
+        "s": 114.14,
+        "e": 114.42
+      },
+      {
+        "w": "xil",
+        "s": 114.5,
+        "e": 114.68
+      },
+      {
+        "w": "brench",
+        "s": 114.92,
+        "e": 115.24
+      },
+      {
+        "w": "vorkfloulari",
+        "s": 115.3,
+        "e": 116.02
+      },
+      {
+        "w": "va",
+        "s": 116.44,
+        "e": 116.52
+      },
+      {
+        "w": "tarmoqlanish",
+        "s": 116.74,
+        "e": 117.38
+      },
+      {
+        "w": "strategiyalarini",
+        "s": 117.42,
+        "e": 118.22
+      },
+      {
+        "w": "tahlil",
+        "s": 118.44,
+        "e": 118.78
+      },
+      {
+        "w": "qilamiz.",
+        "s": 118.82,
+        "e": 119.16
+      }
+    ]
+  }
+]
