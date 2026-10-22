@@ -1,0 +1,1104 @@
+[
+  {
+    "id": "l1",
+    "scene": "submodule_intro",
+    "text": "Git submodule boshqa bir mustaqil repozitoriyni asosiy loyiha ichiga aniq bir commit bog'lanmasi sifatida kiritish imkonini beradi.",
+    "show": "Git submodule boshqa bir mustaqil repozitoriyni asosiy loyiha ichiga aniq bir commit bog'lanmasi sifatida kiritish imkonini beradi.",
+    "say": "Git sabmodyul boshqa bir mustaqil repozitoriyni asosiy loyiha ichiga aniq bir kommit bog'lanmasi sifatida kiritish imkonini beradi.",
+    "a0": 0.32,
+    "a1": 7.73,
+    "words": [
+      {
+        "w": "Git",
+        "s": 0.32,
+        "e": 0.52
+      },
+      {
+        "w": "sabmodyul",
+        "s": 0.58,
+        "e": 1.12
+      },
+      {
+        "w": "boshqa",
+        "s": 1.38,
+        "e": 1.64
+      },
+      {
+        "w": "bir",
+        "s": 1.68,
+        "e": 1.78
+      },
+      {
+        "w": "mustaqil",
+        "s": 1.84,
+        "e": 2.28
+      },
+      {
+        "w": "repozitoriyni",
+        "s": 2.38,
+        "e": 3.1
+      },
+      {
+        "w": "asosiy",
+        "s": 3.26,
+        "e": 3.66
+      },
+      {
+        "w": "loyiha",
+        "s": 3.76,
+        "e": 4.08
+      },
+      {
+        "w": "ichiga",
+        "s": 4.12,
+        "e": 4.42
+      },
+      {
+        "w": "aniq",
+        "s": 4.74,
+        "e": 4.98
+      },
+      {
+        "w": "bir",
+        "s": 5.04,
+        "e": 5.14
+      },
+      {
+        "w": "kommit",
+        "s": 5.2,
+        "e": 5.48
+      },
+      {
+        "w": "bog'lanmasi",
+        "s": 5.54,
+        "e": 6.06
+      },
+      {
+        "w": "sifatida",
+        "s": 6.1,
+        "e": 6.48
+      },
+      {
+        "w": "kiritish",
+        "s": 6.56,
+        "e": 6.9
+      },
+      {
+        "w": "imkonini",
+        "s": 6.96,
+        "e": 7.4
+      },
+      {
+        "w": "beradi.",
+        "s": 7.42,
+        "e": 7.73
+      }
+    ]
+  },
+  {
+    "id": "l2",
+    "scene": "submodule_intro",
+    "text": "Superproyekt submodule fayllarini emas, balki daraxt obyektida o'n olti nol-nol-nol rejimidagi gitlink commit xeshini saqlaydi.",
+    "show": "Superproyekt submodule fayllarini emas, balki daraxt obyektida o'n olti nol-nol-nol rejimidagi gitlink commit xeshini saqlaydi.",
+    "say": "Superproyekt sabmodyul fayllarini emas, balki daraxt obyektida o'n olti nol-nol-nol rejimidagi gitlink kommit xeshini saqlaydi.",
+    "a0": 8.51,
+    "a1": 16.71,
+    "words": [
+      {
+        "w": "Superproyekt",
+        "s": 8.51,
+        "e": 9.19
+      },
+      {
+        "w": "sabmodyul",
+        "s": 9.39,
+        "e": 9.87
+      },
+      {
+        "w": "fayllarini",
+        "s": 9.91,
+        "e": 10.43
+      },
+      {
+        "w": "emas,",
+        "s": 10.49,
+        "e": 10.77
+      },
+      {
+        "w": "balki",
+        "s": 11.01,
+        "e": 11.27
+      },
+      {
+        "w": "daraxt",
+        "s": 11.43,
+        "e": 11.77
+      },
+      {
+        "w": "obyektida",
+        "s": 11.85,
+        "e": 12.31
+      },
+      {
+        "w": "o'n",
+        "s": 12.77,
+        "e": 12.87
+      },
+      {
+        "w": "olti",
+        "s": 12.91,
+        "e": 13.17
+      },
+      {
+        "w": "nol-nol-nol",
+        "s": 13.21,
+        "e": 13.93
+      },
+      {
+        "w": "rejimidagi",
+        "s": 14.03,
+        "e": 14.61
+      },
+      {
+        "w": "gitlink",
+        "s": 14.77,
+        "e": 15.27
+      },
+      {
+        "w": "kommit",
+        "s": 15.63,
+        "e": 15.91
+      },
+      {
+        "w": "xeshini",
+        "s": 15.97,
+        "e": 16.27
+      },
+      {
+        "w": "saqlaydi.",
+        "s": 16.31,
+        "e": 16.71
+      }
+    ]
+  },
+  {
+    "id": "l3",
+    "scene": "submodule_manage",
+    "text": "Yangi loyihani klonlaganda submodullarni to'liq yuklab olish uchun clone recurse-submodules yoki submodule update init buyrug'i qo'llaniladi.",
+    "show": "Yangi loyihani klonlaganda submodullarni to'liq yuklab olish uchun clone recurse-submodules yoki submodule update init buyrug'i qo'llaniladi.",
+    "say": "Yangi loyihani klonlaganda sabmodyullarni to'liq yuklab olish uchun clone rekurs sabmodyuls yoki sabmodyul update init buyrug'i qo'llaniladi.",
+    "a0": 17.63,
+    "a1": 26.16,
+    "words": [
+      {
+        "w": "Yangi",
+        "s": 17.63,
+        "e": 17.89
+      },
+      {
+        "w": "loyihani",
+        "s": 17.93,
+        "e": 18.31
+      },
+      {
+        "w": "klonlaganda",
+        "s": 18.35,
+        "e": 19.01
+      },
+      {
+        "w": "sabmodyullarni",
+        "s": 19.23,
+        "e": 19.97
+      },
+      {
+        "w": "to'liq",
+        "s": 20.03,
+        "e": 20.29
+      },
+      {
+        "w": "yuklab",
+        "s": 20.33,
+        "e": 20.63
+      },
+      {
+        "w": "olish",
+        "s": 20.67,
+        "e": 20.85
+      },
+      {
+        "w": "uchun",
+        "s": 20.89,
+        "e": 21.09
+      },
+      {
+        "w": "clone",
+        "s": 21.55,
+        "e": 21.87
+      },
+      {
+        "w": "rekurs",
+        "s": 21.95,
+        "e": 22.29
+      },
+      {
+        "w": "sabmodyuls",
+        "s": 22.35,
+        "e": 22.96
+      },
+      {
+        "w": "yoki",
+        "s": 23.24,
+        "e": 23.48
+      },
+      {
+        "w": "sabmodyul",
+        "s": 23.74,
+        "e": 24.3
+      },
+      {
+        "w": "update",
+        "s": 24.46,
+        "e": 24.84
+      },
+      {
+        "w": "init",
+        "s": 24.96,
+        "e": 25.16
+      },
+      {
+        "w": "buyrug'i",
+        "s": 25.24,
+        "e": 25.54
+      },
+      {
+        "w": "qo'llaniladi.",
+        "s": 25.6,
+        "e": 26.16
+      }
+    ]
+  },
+  {
+    "id": "l4",
+    "scene": "submodule_manage",
+    "text": "Submodule ichida ishlaganda detached HEAD holati yuzaga kelmasligi uchun uning mos shoxiga o'tib commit qilish tavsiya etiladi.",
+    "show": "Submodule ichida ishlaganda detached HEAD holati yuzaga kelmasligi uchun uning mos shoxiga o'tib commit qilish tavsiya etiladi.",
+    "say": "Sabmodyul ichida ishlaganda ditached xed holati yuzaga kelmasligi uchun uning mos shoxiga o'tib kommit qilish tavsiya etiladi.",
+    "a0": 27.04,
+    "a1": 33.66,
+    "words": [
+      {
+        "w": "Sabmodyul",
+        "s": 27.04,
+        "e": 27.5
+      },
+      {
+        "w": "ichida",
+        "s": 27.54,
+        "e": 27.76
+      },
+      {
+        "w": "ishlaganda",
+        "s": 27.84,
+        "e": 28.34
+      },
+      {
+        "w": "ditached",
+        "s": 28.62,
+        "e": 29.04
+      },
+      {
+        "w": "xed",
+        "s": 29.08,
+        "e": 29.28
+      },
+      {
+        "w": "holati",
+        "s": 29.32,
+        "e": 29.7
+      },
+      {
+        "w": "yuzaga",
+        "s": 29.8,
+        "e": 30.1
+      },
+      {
+        "w": "kelmasligi",
+        "s": 30.14,
+        "e": 30.64
+      },
+      {
+        "w": "uchun",
+        "s": 30.7,
+        "e": 30.92
+      },
+      {
+        "w": "uning",
+        "s": 31.26,
+        "e": 31.46
+      },
+      {
+        "w": "mos",
+        "s": 31.6,
+        "e": 31.78
+      },
+      {
+        "w": "shoxiga",
+        "s": 31.84,
+        "e": 32.16
+      },
+      {
+        "w": "o'tib",
+        "s": 32.22,
+        "e": 32.4
+      },
+      {
+        "w": "kommit",
+        "s": 32.44,
+        "e": 32.7
+      },
+      {
+        "w": "qilish",
+        "s": 32.74,
+        "e": 32.96
+      },
+      {
+        "w": "tavsiya",
+        "s": 32.98,
+        "e": 33.28
+      },
+      {
+        "w": "etiladi.",
+        "s": 33.3,
+        "e": 33.66
+      }
+    ]
+  },
+  {
+    "id": "l5",
+    "scene": "bundle_basics",
+    "text": "Git bundle buyrug'i barcha obyektlar va ko'rsatkichlarni tarmoqsiz fleshka yoki elektron pochta orqali uzatish uchun bitta binar faylga jamlaydi.",
+    "show": "Git bundle buyrug'i barcha obyektlar va ko'rsatkichlarni tarmoqsiz fleshka yoki elektron pochta orqali uzatish uchun bitta binar faylga jamlaydi.",
+    "say": "Git bandl buyrug'i barcha obyektlar va ko'rsatkichlarni tarmoqsiz fleshka yoki elektron pochta orqali uzatish uchun bitta binar faylga jamlaydi.",
+    "a0": 34.52,
+    "a1": 42.43,
+    "words": [
+      {
+        "w": "Git",
+        "s": 34.52,
+        "e": 34.68
+      },
+      {
+        "w": "bandl",
+        "s": 34.76,
+        "e": 35.12
+      },
+      {
+        "w": "buyrug'i",
+        "s": 35.18,
+        "e": 35.54
+      },
+      {
+        "w": "barcha",
+        "s": 35.76,
+        "e": 36.02
+      },
+      {
+        "w": "obyektlar",
+        "s": 36.08,
+        "e": 36.52
+      },
+      {
+        "w": "va",
+        "s": 36.58,
+        "e": 36.62
+      },
+      {
+        "w": "ko'rsatkichlarni",
+        "s": 36.7,
+        "e": 37.42
+      },
+      {
+        "w": "tarmoqsiz",
+        "s": 37.53,
+        "e": 38.11
+      },
+      {
+        "w": "fleshka",
+        "s": 38.27,
+        "e": 38.67
+      },
+      {
+        "w": "yoki",
+        "s": 38.71,
+        "e": 38.99
+      },
+      {
+        "w": "elektron",
+        "s": 39.11,
+        "e": 39.47
+      },
+      {
+        "w": "pochta",
+        "s": 39.53,
+        "e": 39.79
+      },
+      {
+        "w": "orqali",
+        "s": 39.81,
+        "e": 40.11
+      },
+      {
+        "w": "uzatish",
+        "s": 40.17,
+        "e": 40.51
+      },
+      {
+        "w": "uchun",
+        "s": 40.53,
+        "e": 40.75
+      },
+      {
+        "w": "bitta",
+        "s": 40.91,
+        "e": 41.19
+      },
+      {
+        "w": "binar",
+        "s": 41.27,
+        "e": 41.53
+      },
+      {
+        "w": "faylga",
+        "s": 41.59,
+        "e": 41.95
+      },
+      {
+        "w": "jamlaydi.",
+        "s": 42.01,
+        "e": 42.43
+      }
+    ]
+  },
+  {
+    "id": "l6",
+    "scene": "bundle_basics",
+    "text": "Hosildor faylni git bundle verify bilan tekshirib, undan to'g'ridan-to'g'ri yangi klon yoki fetch amalini bajarish mumkin.",
+    "show": "Hosildor faylni git bundle verify bilan tekshirib, undan to'g'ridan-to'g'ri yangi klon yoki fetch amalini bajarish mumkin.",
+    "say": "Hosildor faylni git bandl verify bilan tekshirib, undan to'g'ridan-to'g'ri yangi klon yoki fetch amalini bajarish mumkin.",
+    "a0": 43.19,
+    "a1": 50.13,
+    "words": [
+      {
+        "w": "Hosildor",
+        "s": 43.19,
+        "e": 43.65
+      },
+      {
+        "w": "faylni",
+        "s": 43.87,
+        "e": 44.25
+      },
+      {
+        "w": "git",
+        "s": 44.45,
+        "e": 44.61
+      },
+      {
+        "w": "bandl",
+        "s": 44.69,
+        "e": 45.01
+      },
+      {
+        "w": "verify",
+        "s": 45.05,
+        "e": 45.41
+      },
+      {
+        "w": "bilan",
+        "s": 45.43,
+        "e": 45.63
+      },
+      {
+        "w": "tekshirib,",
+        "s": 45.67,
+        "e": 46.07
+      },
+      {
+        "w": "undan",
+        "s": 46.43,
+        "e": 46.67
+      },
+      {
+        "w": "to'g'ridan-to'g'ri",
+        "s": 46.75,
+        "e": 47.53
+      },
+      {
+        "w": "yangi",
+        "s": 47.69,
+        "e": 47.95
+      },
+      {
+        "w": "klon",
+        "s": 48.03,
+        "e": 48.29
+      },
+      {
+        "w": "yoki",
+        "s": 48.31,
+        "e": 48.67
+      },
+      {
+        "w": "fetch",
+        "s": 48.81,
+        "e": 49.03
+      },
+      {
+        "w": "amalini",
+        "s": 49.11,
+        "e": 49.45
+      },
+      {
+        "w": "bajarish",
+        "s": 49.47,
+        "e": 49.83
+      },
+      {
+        "w": "mumkin.",
+        "s": 49.87,
+        "e": 50.13
+      }
+    ]
+  },
+  {
+    "id": "l7",
+    "scene": "replace_basics",
+    "text": "Git replace mexanizmi obyekt xeshlarini qayta yozmasdan turib, bir commit yoki daraxt o'rniga boshqasini ko'rsatishga xizmat qiladi.",
+    "show": "Git replace mexanizmi obyekt xeshlarini qayta yozmasdan turib, bir commit yoki daraxt o'rniga boshqasini ko'rsatishga xizmat qiladi.",
+    "say": "Git ripleys mexanizmi obyekt xeshlarini qayta yozmasdan turib, bir kommit yoki daraxt o'rniga boshqasini ko'rsatishga xizmat qiladi.",
+    "a0": 51.23,
+    "a1": 58.16,
+    "words": [
+      {
+        "w": "Git",
+        "s": 51.23,
+        "e": 51.41
+      },
+      {
+        "w": "ripleys",
+        "s": 51.47,
+        "e": 51.87
+      },
+      {
+        "w": "mexanizmi",
+        "s": 51.93,
+        "e": 52.47
+      },
+      {
+        "w": "obyekt",
+        "s": 52.82,
+        "e": 53.12
+      },
+      {
+        "w": "xeshlarini",
+        "s": 53.16,
+        "e": 53.62
+      },
+      {
+        "w": "qayta",
+        "s": 53.66,
+        "e": 53.9
+      },
+      {
+        "w": "yozmasdan",
+        "s": 53.9,
+        "e": 54.46
+      },
+      {
+        "w": "turib,",
+        "s": 54.5,
+        "e": 54.72
+      },
+      {
+        "w": "bir",
+        "s": 55.14,
+        "e": 55.24
+      },
+      {
+        "w": "kommit",
+        "s": 55.3,
+        "e": 55.6
+      },
+      {
+        "w": "yoki",
+        "s": 55.62,
+        "e": 55.88
+      },
+      {
+        "w": "daraxt",
+        "s": 55.94,
+        "e": 56.26
+      },
+      {
+        "w": "o'rniga",
+        "s": 56.32,
+        "e": 56.62
+      },
+      {
+        "w": "boshqasini",
+        "s": 56.68,
+        "e": 57.08
+      },
+      {
+        "w": "ko'rsatishga",
+        "s": 57.12,
+        "e": 57.56
+      },
+      {
+        "w": "xizmat",
+        "s": 57.6,
+        "e": 57.86
+      },
+      {
+        "w": "qiladi.",
+        "s": 57.9,
+        "e": 58.16
+      }
+    ]
+  },
+  {
+    "id": "l8",
+    "scene": "replace_basics",
+    "text": "Ushbu vosita yordamida ikkita ajralgan tarixni birlashtirish yoki juda katta eski commitlarni asosiy zanjirdan ajratish osonlashadi.",
+    "show": "Ushbu vosita yordamida ikkita ajralgan tarixni birlashtirish yoki juda katta eski commitlarni asosiy zanjirdan ajratish osonlashadi.",
+    "say": "Ushbu vosita yordamida ikkita ajralgan tarixni birlashtirish yoki juda katta eski kommitlarni asosiy zanjirdan ajratish osonlashadi.",
+    "a0": 58.96,
+    "a1": 66.64,
+    "words": [
+      {
+        "w": "Ushbu",
+        "s": 58.96,
+        "e": 59.18
+      },
+      {
+        "w": "vosita",
+        "s": 59.26,
+        "e": 59.6
+      },
+      {
+        "w": "yordamida",
+        "s": 59.64,
+        "e": 60.0
+      },
+      {
+        "w": "ikkita",
+        "s": 60.28,
+        "e": 60.52
+      },
+      {
+        "w": "ajralgan",
+        "s": 60.58,
+        "e": 61.0
+      },
+      {
+        "w": "tarixni",
+        "s": 61.04,
+        "e": 61.4
+      },
+      {
+        "w": "birlashtirish",
+        "s": 61.44,
+        "e": 62.04
+      },
+      {
+        "w": "yoki",
+        "s": 62.3,
+        "e": 62.5
+      },
+      {
+        "w": "juda",
+        "s": 62.62,
+        "e": 62.8
+      },
+      {
+        "w": "katta",
+        "s": 62.88,
+        "e": 63.22
+      },
+      {
+        "w": "eski",
+        "s": 63.52,
+        "e": 63.72
+      },
+      {
+        "w": "kommitlarni",
+        "s": 63.8,
+        "e": 64.34
+      },
+      {
+        "w": "asosiy",
+        "s": 64.52,
+        "e": 64.92
+      },
+      {
+        "w": "zanjirdan",
+        "s": 65.0,
+        "e": 65.48
+      },
+      {
+        "w": "ajratish",
+        "s": 65.54,
+        "e": 65.96
+      },
+      {
+        "w": "osonlashadi.",
+        "s": 66.04,
+        "e": 66.64
+      }
+    ]
+  },
+  {
+    "id": "l9",
+    "scene": "replace_inspect",
+    "text": "Almashtirilgan ko'rsatkichlar refs replace papkasida saqlanadi va git log da haqiqiy tarix kabi shaffof ko'rinadi.",
+    "show": "Almashtirilgan ko'rsatkichlar refs replace papkasida saqlanadi va git log da haqiqiy tarix kabi shaffof ko'rinadi.",
+    "say": "Almashtirilgan ko'rsatkichlar refs ripleys papkasida saqlanadi va git log da haqiqiy tarix kabi shaffof ko'rinadi.",
+    "a0": 67.57,
+    "a1": 74.03,
+    "words": [
+      {
+        "w": "Almashtirilgan",
+        "s": 67.57,
+        "e": 68.15
+      },
+      {
+        "w": "ko'rsatkichlar",
+        "s": 68.19,
+        "e": 68.83
+      },
+      {
+        "w": "refs",
+        "s": 69.09,
+        "e": 69.35
+      },
+      {
+        "w": "ripleys",
+        "s": 69.47,
+        "e": 69.83
+      },
+      {
+        "w": "papkasida",
+        "s": 69.89,
+        "e": 70.35
+      },
+      {
+        "w": "saqlanadi",
+        "s": 70.39,
+        "e": 70.89
+      },
+      {
+        "w": "va",
+        "s": 71.07,
+        "e": 71.17
+      },
+      {
+        "w": "git",
+        "s": 71.53,
+        "e": 71.69
+      },
+      {
+        "w": "log",
+        "s": 71.77,
+        "e": 71.93
+      },
+      {
+        "w": "da",
+        "s": 71.99,
+        "e": 72.07
+      },
+      {
+        "w": "haqiqiy",
+        "s": 72.23,
+        "e": 72.67
+      },
+      {
+        "w": "tarix",
+        "s": 72.73,
+        "e": 72.97
+      },
+      {
+        "w": "kabi",
+        "s": 73.03,
+        "e": 73.19
+      },
+      {
+        "w": "shaffof",
+        "s": 73.25,
+        "e": 73.59
+      },
+      {
+        "w": "ko'rinadi.",
+        "s": 73.63,
+        "e": 74.03
+      }
+    ]
+  },
+  {
+    "id": "l10",
+    "scene": "replace_inspect",
+    "text": "Zarurat tug'ilganda no-replace-objects bayrog'i yordamida repozitoriyning asl nusxasini ko'rish yoki tahrirlash mumkin.",
+    "show": "Zarurat tug'ilganda no-replace-objects bayrog'i yordamida repozitoriyning asl nusxasini ko'rish yoki tahrirlash mumkin.",
+    "say": "Zarurat tug'ilganda no ripleys obyekts bayrog'i yordamida repozitoriyning asl nusxasini ko'rish yoki tahrirlash mumkin.",
+    "a0": 74.91,
+    "a1": 81.47,
+    "words": [
+      {
+        "w": "Zarurat",
+        "s": 74.91,
+        "e": 75.33
+      },
+      {
+        "w": "tug'ilganda",
+        "s": 75.35,
+        "e": 75.85
+      },
+      {
+        "w": "no",
+        "s": 76.19,
+        "e": 76.29
+      },
+      {
+        "w": "ripleys",
+        "s": 76.41,
+        "e": 76.75
+      },
+      {
+        "w": "obyekts",
+        "s": 76.89,
+        "e": 77.21
+      },
+      {
+        "w": "bayrog'i",
+        "s": 77.27,
+        "e": 77.63
+      },
+      {
+        "w": "yordamida",
+        "s": 77.67,
+        "e": 78.13
+      },
+      {
+        "w": "repozitoriyning",
+        "s": 78.37,
+        "e": 79.15
+      },
+      {
+        "w": "asl",
+        "s": 79.29,
+        "e": 79.53
+      },
+      {
+        "w": "nusxasini",
+        "s": 79.57,
+        "e": 80.01
+      },
+      {
+        "w": "ko'rish",
+        "s": 80.07,
+        "e": 80.35
+      },
+      {
+        "w": "yoki",
+        "s": 80.43,
+        "e": 80.61
+      },
+      {
+        "w": "tahrirlash",
+        "s": 80.69,
+        "e": 81.19
+      },
+      {
+        "w": "mumkin.",
+        "s": 81.21,
+        "e": 81.47
+      }
+    ]
+  },
+  {
+    "id": "l11",
+    "scene": "xulosa",
+    "text": "Submodule, bundle va replace vositalari odatiy markaziy repo chegarasidan chiqib, murakkab tizimlarni xavfsiz boshqarishga zamin yaratadi.",
+    "show": "Submodule, bundle va replace vositalari odatiy markaziy repo chegarasidan chiqib, murakkab tizimlarni xavfsiz boshqarishga zamin yaratadi.",
+    "say": "Sabmodyul, bandl va ripleys vositalari odatiy markaziy repo chegarasidan chiqib, murakkab tizimlarni xavfsiz boshqarishga zamin yaratadi.",
+    "a0": 82.37,
+    "a1": 90.12,
+    "words": [
+      {
+        "w": "Sabmodyul,",
+        "s": 82.37,
+        "e": 82.96
+      },
+      {
+        "w": "bandl",
+        "s": 83.2,
+        "e": 83.54
+      },
+      {
+        "w": "va",
+        "s": 83.62,
+        "e": 83.7
+      },
+      {
+        "w": "ripleys",
+        "s": 83.76,
+        "e": 84.14
+      },
+      {
+        "w": "vositalari",
+        "s": 84.18,
+        "e": 84.76
+      },
+      {
+        "w": "odatiy",
+        "s": 85.14,
+        "e": 85.46
+      },
+      {
+        "w": "markaziy",
+        "s": 85.56,
+        "e": 85.98
+      },
+      {
+        "w": "repo",
+        "s": 86.04,
+        "e": 86.24
+      },
+      {
+        "w": "chegarasidan",
+        "s": 86.32,
+        "e": 86.9
+      },
+      {
+        "w": "chiqib,",
+        "s": 86.94,
+        "e": 87.18
+      },
+      {
+        "w": "murakkab",
+        "s": 87.5,
+        "e": 87.92
+      },
+      {
+        "w": "tizimlarni",
+        "s": 87.96,
+        "e": 88.44
+      },
+      {
+        "w": "xavfsiz",
+        "s": 88.52,
+        "e": 88.88
+      },
+      {
+        "w": "boshqarishga",
+        "s": 88.92,
+        "e": 89.4
+      },
+      {
+        "w": "zamin",
+        "s": 89.46,
+        "e": 89.72
+      },
+      {
+        "w": "yaratadi.",
+        "s": 89.76,
+        "e": 90.12
+      }
+    ]
+  },
+  {
+    "id": "l12",
+    "scene": "xulosa",
+    "text": "Har bir asbobning o'ziga xos arxitekturasini tushunish sizni kutilmagan ziddiyatlar va ma'lumot yo'qotish xavfidan asraydi.",
+    "show": "Har bir asbobning o'ziga xos arxitekturasini tushunish sizni kutilmagan ziddiyatlar va ma'lumot yo'qotish xavfidan asraydi.",
+    "say": "Har bir asbobning o'ziga xos arxitekturasini tushunish sizni kutilmagan ziddiyatlar va ma'lumot yo'qotish xavfidan asraydi.",
+    "a0": 90.94,
+    "a1": 96.94,
+    "words": [
+      {
+        "w": "Har",
+        "s": 90.94,
+        "e": 91.08
+      },
+      {
+        "w": "bir",
+        "s": 91.12,
+        "e": 91.22
+      },
+      {
+        "w": "asbobning",
+        "s": 91.26,
+        "e": 91.7
+      },
+      {
+        "w": "o'ziga",
+        "s": 91.83,
+        "e": 92.07
+      },
+      {
+        "w": "xos",
+        "s": 92.13,
+        "e": 92.29
+      },
+      {
+        "w": "arxitekturasini",
+        "s": 92.37,
+        "e": 93.11
+      },
+      {
+        "w": "tushunish",
+        "s": 93.15,
+        "e": 93.51
+      },
+      {
+        "w": "sizni",
+        "s": 93.77,
+        "e": 94.01
+      },
+      {
+        "w": "kutilmagan",
+        "s": 94.09,
+        "e": 94.61
+      },
+      {
+        "w": "ziddiyatlar",
+        "s": 94.65,
+        "e": 95.17
+      },
+      {
+        "w": "va",
+        "s": 95.21,
+        "e": 95.27
+      },
+      {
+        "w": "ma'lumot",
+        "s": 95.35,
+        "e": 95.74
+      },
+      {
+        "w": "yo'qotish",
+        "s": 95.78,
+        "e": 96.16
+      },
+      {
+        "w": "xavfidan",
+        "s": 96.18,
+        "e": 96.52
+      },
+      {
+        "w": "asraydi.",
+        "s": 96.56,
+        "e": 96.94
+      }
+    ]
+  }
+]

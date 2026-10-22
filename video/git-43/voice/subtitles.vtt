@@ -1,0 +1,61 @@
+WEBVTT
+
+1
+00:01.420 --> 00:09.280
+Git submodule boshqa bir mustaqil repozitoriyni asosiy loyiha ichiga
+aniq bir commit bog'lanmasi sifatida kiritish imkonini beradi.
+
+2
+00:09.610 --> 00:18.260
+Superproyekt submodule fayllarini emas, balki daraxt obyektida
+o'n olti nol-nol-nol rejimidagi gitlink commit xeshini saqlaydi.
+
+3
+00:21.830 --> 00:30.810
+Yangi loyihani klonlaganda submodullarni to'liq yuklab olish uchun clone
+recurse-submodules yoki submodule update init buyrug'i qo'llaniladi.
+
+4
+00:31.240 --> 00:38.310
+Submodule ichida ishlaganda detached HEAD holati yuzaga kelmasligi
+uchun uning mos shoxiga o'tib commit qilish tavsiya etiladi.
+
+5
+00:42.320 --> 00:50.680
+Git bundle buyrug'i barcha obyektlar va ko'rsatkichlarni tarmoqsiz fleshka
+yoki elektron pochta orqali uzatish uchun bitta binar faylga jamlaydi.
+
+6
+00:50.990 --> 00:58.380
+Hosildor faylni git bundle verify bilan tekshirib, undan
+to'g'ridan-to'g'ri yangi klon yoki fetch amalini bajarish mumkin.
+
+7
+01:02.630 --> 01:10.010
+Git replace mexanizmi obyekt xeshlarini qayta yozmasdan turib, bir
+commit yoki daraxt o'rniga boshqasini ko'rsatishga xizmat qiladi.
+
+8
+01:10.360 --> 01:18.490
+Ushbu vosita yordamida ikkita ajralgan tarixni birlashtirish yoki
+juda katta eski commitlarni asosiy zanjirdan ajratish osonlashadi.
+
+9
+01:22.570 --> 01:29.480
+Almashtirilgan ko'rsatkichlar refs replace papkasida
+saqlanadi va git log da haqiqiy tarix kabi shaffof ko'rinadi.
+
+10
+01:29.910 --> 01:36.920
+Zarurat tug'ilganda no-replace-objects bayrog'i yordamida
+repozitoriyning asl nusxasini ko'rish yoki tahrirlash mumkin.
+
+11
+01:40.970 --> 01:49.170
+Submodule, bundle va replace vositalari odatiy markaziy repo chegarasidan
+chiqib, murakkab tizimlarni xavfsiz boshqarishga zamin yaratadi.
+
+12
+01:49.540 --> 01:55.990
+Har bir asbobning o'ziga xos arxitekturasini tushunish sizni
+kutilmagan ziddiyatlar va ma'lumot yo'qotish xavfidan asraydi.
