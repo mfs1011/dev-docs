@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" playsinline poster="/video/git/39-reset-sirlari.jpg" src="/video/git/39-reset-sirlari.mp4">
+    <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/git/39-reset-sirlari.chapters.vtt" default>
+    <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/git/39-reset-sirlari.uz.vtt">
+  </video>
+  <figcaption>39.1-video. Git reset sirlari: uch daraxt, bosqichlar va xavfsiz qaytarish</figcaption>
+</figure>
+
 `git reset` va `git checkout` — Git'ni endi o'rganayotgan odamni eng ko'p chalg'itadigan ikki buyruq. Ular juda ko'p ish qiladi va bir qarashda qoidasiz ko'rinadi. Pro Git kitobi buni bitta oddiy model bilan tushuntiradi: **Git uchta "daraxt"ni boshqaradi**, `reset` esa shu uchtasini aniq tartibda qayta yozadi.
 
 Bu yerda "daraxt" so'zi ma'lumot tuzilmasi ma'nosida emas, **"fayllar to'plami"** ma'nosida ishlatiladi.
