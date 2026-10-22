@@ -1,0 +1,1119 @@
+[
+  {
+    "id": "l1",
+    "scene": "intro",
+    "text": "Salom! Ushbu o‘n yettinchi bobda qirq belgili heshlar ustiga inson tushunadigan nomlar qo‘yuvchi ref ko‘rsatkichlari va HEAD faylini o‘rganamiz.",
+    "show": "Salom! Ushbu o‘n yettinchi bobda qirq belgili heshlar ustiga inson tushunadigan nomlar qo‘yuvchi ref ko‘rsatkichlari va HEAD faylini o‘rganamiz.",
+    "say": "Salom! Ushbu o‘n yettinchi bobda qirq belgili heshlar ustiga inson tushunadigan nomlar qo‘yuvchi ref ko‘rsatkichlari va hed faylini o‘rganamiz.",
+    "a0": 0.14,
+    "a1": 8.67,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.14,
+        "e": 0.4
+      },
+      {
+        "w": "Ushbu",
+        "s": 0.98,
+        "e": 1.22
+      },
+      {
+        "w": "o‘n",
+        "s": 1.32,
+        "e": 1.4
+      },
+      {
+        "w": "yettinchi",
+        "s": 1.46,
+        "e": 1.86
+      },
+      {
+        "w": "bobda",
+        "s": 1.9,
+        "e": 2.2
+      },
+      {
+        "w": "qirq",
+        "s": 2.44,
+        "e": 2.64
+      },
+      {
+        "w": "belgili",
+        "s": 2.74,
+        "e": 3.06
+      },
+      {
+        "w": "heshlar",
+        "s": 3.14,
+        "e": 3.5
+      },
+      {
+        "w": "ustiga",
+        "s": 3.54,
+        "e": 3.82
+      },
+      {
+        "w": "inson",
+        "s": 4.0,
+        "e": 4.34
+      },
+      {
+        "w": "tushunadigan",
+        "s": 4.4,
+        "e": 4.92
+      },
+      {
+        "w": "nomlar",
+        "s": 4.98,
+        "e": 5.3
+      },
+      {
+        "w": "qo‘yuvchi",
+        "s": 5.34,
+        "e": 5.72
+      },
+      {
+        "w": "ref",
+        "s": 6.14,
+        "e": 6.3
+      },
+      {
+        "w": "ko‘rsatkichlari",
+        "s": 6.4,
+        "e": 7.1
+      },
+      {
+        "w": "va",
+        "s": 7.2,
+        "e": 7.3
+      },
+      {
+        "w": "hed",
+        "s": 7.59,
+        "e": 7.83
+      },
+      {
+        "w": "faylini",
+        "s": 7.91,
+        "e": 8.25
+      },
+      {
+        "w": "o‘rganamiz.",
+        "s": 8.29,
+        "e": 8.67
+      }
+    ]
+  },
+  {
+    "id": "l2",
+    "scene": "intro",
+    "text": "Git'da barcha obyektlar o‘zgarmas bo‘lsa, ref'lar aksincha: ular joriy holatni saqlovchi o‘ta yengil va o‘zgaruvchan havolalardir.",
+    "show": "Git'da barcha obyektlar o‘zgarmas bo‘lsa, ref'lar aksincha: ular joriy holatni saqlovchi o‘ta yengil va o‘zgaruvchan havolalardir.",
+    "say": "Git'da barcha obyektlar o‘zgarmas bo‘lsa, ref'lar aksincha: ular joriy holatni saqlovchi o‘ta yengil va o‘zgaruvchan havolalardir.",
+    "a0": 9.63,
+    "a1": 17.71,
+    "words": [
+      {
+        "w": "Git'da",
+        "s": 9.63,
+        "e": 9.89
+      },
+      {
+        "w": "barcha",
+        "s": 9.95,
+        "e": 10.19
+      },
+      {
+        "w": "obyektlar",
+        "s": 10.23,
+        "e": 10.63
+      },
+      {
+        "w": "o‘zgarmas",
+        "s": 10.81,
+        "e": 11.27
+      },
+      {
+        "w": "bo‘lsa,",
+        "s": 11.33,
+        "e": 11.61
+      },
+      {
+        "w": "ref'lar",
+        "s": 12.05,
+        "e": 12.39
+      },
+      {
+        "w": "aksincha:",
+        "s": 12.51,
+        "e": 12.97
+      },
+      {
+        "w": "ular",
+        "s": 13.21,
+        "e": 13.41
+      },
+      {
+        "w": "joriy",
+        "s": 13.75,
+        "e": 14.09
+      },
+      {
+        "w": "holatni",
+        "s": 14.17,
+        "e": 14.55
+      },
+      {
+        "w": "saqlovchi",
+        "s": 14.59,
+        "e": 15.07
+      },
+      {
+        "w": "o‘ta",
+        "s": 15.23,
+        "e": 15.41
+      },
+      {
+        "w": "yengil",
+        "s": 15.49,
+        "e": 15.87
+      },
+      {
+        "w": "va",
+        "s": 15.95,
+        "e": 16.03
+      },
+      {
+        "w": "o‘zgaruvchan",
+        "s": 16.39,
+        "e": 16.99
+      },
+      {
+        "w": "havolalardir.",
+        "s": 17.05,
+        "e": 17.71
+      }
+    ]
+  },
+  {
+    "id": "l3",
+    "scene": "update_ref_xavfsizlik",
+    "text": "Reflar shunchaki fayl bo‘lsa-da, ularni qo‘lda emas, git update-ref buyrug‘i orqali xavfsiz qulflash va tekshiruv bilan yangilash shart.",
+    "show": "Reflar shunchaki fayl bo‘lsa-da, ularni qo‘lda emas, git update-ref buyrug‘i orqali xavfsiz qulflash va tekshiruv bilan yangilash shart.",
+    "say": "Reflar shunchaki fayl bo‘lsa-da, ularni qo‘lda emas, git apdeyt-ref buyrug‘i orqali xavfsiz qulflash va tekshiruv bilan yangilash shart.",
+    "a0": 18.65,
+    "a1": 26.3,
+    "words": [
+      {
+        "w": "Reflar",
+        "s": 18.65,
+        "e": 18.97
+      },
+      {
+        "w": "shunchaki",
+        "s": 19.07,
+        "e": 19.41
+      },
+      {
+        "w": "fayl",
+        "s": 19.51,
+        "e": 19.79
+      },
+      {
+        "w": "bo‘lsa-da,",
+        "s": 19.85,
+        "e": 20.25
+      },
+      {
+        "w": "ularni",
+        "s": 20.39,
+        "e": 20.69
+      },
+      {
+        "w": "qo‘lda",
+        "s": 20.75,
+        "e": 21.05
+      },
+      {
+        "w": "emas,",
+        "s": 21.11,
+        "e": 21.35
+      },
+      {
+        "w": "git",
+        "s": 21.69,
+        "e": 21.89
+      },
+      {
+        "w": "apdeyt-ref",
+        "s": 22.09,
+        "e": 22.78
+      },
+      {
+        "w": "buyrug‘i",
+        "s": 22.88,
+        "e": 23.2
+      },
+      {
+        "w": "orqali",
+        "s": 23.24,
+        "e": 23.54
+      },
+      {
+        "w": "xavfsiz",
+        "s": 23.84,
+        "e": 24.28
+      },
+      {
+        "w": "qulflash",
+        "s": 24.36,
+        "e": 24.84
+      },
+      {
+        "w": "va",
+        "s": 24.88,
+        "e": 24.94
+      },
+      {
+        "w": "tekshiruv",
+        "s": 25.02,
+        "e": 25.44
+      },
+      {
+        "w": "bilan",
+        "s": 25.46,
+        "e": 25.64
+      },
+      {
+        "w": "yangilash",
+        "s": 25.68,
+        "e": 26.08
+      },
+      {
+        "w": "shart.",
+        "s": 26.08,
+        "e": 26.3
+      }
+    ]
+  },
+  {
+    "id": "l4",
+    "scene": "update_ref_xavfsizlik",
+    "text": "update-ref buyrug‘i poyga holatlarini oldini oluvchi compare-and-swap sharti va har bir qadamni yozib boruvchi reflog bilan himoyalangan.",
+    "show": "update-ref buyrug‘i poyga holatlarini oldini oluvchi compare-and-swap sharti va har bir qadamni yozib boruvchi reflog bilan himoyalangan.",
+    "say": "Apdeyt-ref buyrug‘i poyga holatlarini oldini oluvchi compare-and-swap sharti va har bir qadamni yozib boruvchi reflog bilan himoyalangan.",
+    "a0": 27.2,
+    "a1": 35.0,
+    "words": [
+      {
+        "w": "Apdeyt-ref",
+        "s": 27.2,
+        "e": 27.66
+      },
+      {
+        "w": "buyrug‘i",
+        "s": 27.74,
+        "e": 28.08
+      },
+      {
+        "w": "poyga",
+        "s": 28.26,
+        "e": 28.54
+      },
+      {
+        "w": "holatlarini",
+        "s": 28.6,
+        "e": 29.12
+      },
+      {
+        "w": "oldini",
+        "s": 29.22,
+        "e": 29.46
+      },
+      {
+        "w": "oluvchi",
+        "s": 29.5,
+        "e": 29.84
+      },
+      {
+        "w": "compare-and-swap",
+        "s": 30.12,
+        "e": 31.18
+      },
+      {
+        "w": "sharti",
+        "s": 31.28,
+        "e": 31.6
+      },
+      {
+        "w": "va",
+        "s": 31.74,
+        "e": 31.82
+      },
+      {
+        "w": "har",
+        "s": 32.14,
+        "e": 32.34
+      },
+      {
+        "w": "bir",
+        "s": 32.38,
+        "e": 32.48
+      },
+      {
+        "w": "qadamni",
+        "s": 32.58,
+        "e": 32.94
+      },
+      {
+        "w": "yozib",
+        "s": 32.94,
+        "e": 33.26
+      },
+      {
+        "w": "boruvchi",
+        "s": 33.28,
+        "e": 33.64
+      },
+      {
+        "w": "reflog",
+        "s": 33.8,
+        "e": 34.18
+      },
+      {
+        "w": "bilan",
+        "s": 34.22,
+        "e": 34.42
+      },
+      {
+        "w": "himoyalangan.",
+        "s": 34.48,
+        "e": 35.0
+      }
+    ]
+  },
+  {
+    "id": "l5",
+    "scene": "head_va_symref",
+    "text": "HEAD fayli ko‘pincha to‘g‘ridan-to‘g‘ri commitga emas, balki joriy branchga ishora qiluvchi simvolik ref hisoblanadi.",
+    "show": "HEAD fayli ko‘pincha to‘g‘ridan-to‘g‘ri commitga emas, balki joriy branchga ishora qiluvchi simvolik ref hisoblanadi.",
+    "say": "Hed fayli ko‘pincha to‘g‘ridan-to‘g‘ri kommitga emas, balki joriy brenchga ishora qiluvchi simvolik ref hisoblanadi.",
+    "a0": 36.12,
+    "a1": 42.59,
+    "words": [
+      {
+        "w": "Hed",
+        "s": 36.12,
+        "e": 36.3
+      },
+      {
+        "w": "fayli",
+        "s": 36.34,
+        "e": 36.68
+      },
+      {
+        "w": "ko‘pincha",
+        "s": 36.82,
+        "e": 37.2
+      },
+      {
+        "w": "to‘g‘ridan-to‘g‘ri",
+        "s": 37.28,
+        "e": 37.97
+      },
+      {
+        "w": "kommitga",
+        "s": 38.01,
+        "e": 38.39
+      },
+      {
+        "w": "emas,",
+        "s": 38.43,
+        "e": 38.69
+      },
+      {
+        "w": "balki",
+        "s": 38.79,
+        "e": 39.05
+      },
+      {
+        "w": "joriy",
+        "s": 39.43,
+        "e": 39.77
+      },
+      {
+        "w": "brenchga",
+        "s": 39.89,
+        "e": 40.31
+      },
+      {
+        "w": "ishora",
+        "s": 40.39,
+        "e": 40.67
+      },
+      {
+        "w": "qiluvchi",
+        "s": 40.73,
+        "e": 41.07
+      },
+      {
+        "w": "simvolik",
+        "s": 41.25,
+        "e": 41.75
+      },
+      {
+        "w": "ref",
+        "s": 41.87,
+        "e": 42.03
+      },
+      {
+        "w": "hisoblanadi.",
+        "s": 42.09,
+        "e": 42.59
+      }
+    ]
+  },
+  {
+    "id": "l6",
+    "scene": "head_va_symref",
+    "text": "git symbolic-ref buyrug‘i HEAD qaysi tarmoqqa bog‘langanini ko‘rsatadi, detached holatida esa HEAD to‘g‘ridan-to‘g‘ri commitga ulanadi.",
+    "show": "git symbolic-ref buyrug‘i HEAD qaysi tarmoqqa bog‘langanini ko‘rsatadi, detached holatida esa HEAD to‘g‘ridan-to‘g‘ri commitga ulanadi.",
+    "say": "Git simbolik-ref buyrug‘i hed qaysi tarmoqqa bog‘langanini ko‘rsatadi, diteched holatida esa hed to‘g‘ridan-to‘g‘ri kommitga ulanadi.",
+    "a0": 43.35,
+    "a1": 51.27,
+    "words": [
+      {
+        "w": "Git",
+        "s": 43.35,
+        "e": 43.53
+      },
+      {
+        "w": "simbolik-ref",
+        "s": 43.77,
+        "e": 44.45
+      },
+      {
+        "w": "buyrug‘i",
+        "s": 44.57,
+        "e": 44.91
+      },
+      {
+        "w": "hed",
+        "s": 45.13,
+        "e": 45.33
+      },
+      {
+        "w": "qaysi",
+        "s": 45.47,
+        "e": 45.77
+      },
+      {
+        "w": "tarmoqqa",
+        "s": 45.83,
+        "e": 46.25
+      },
+      {
+        "w": "bog‘langanini",
+        "s": 46.31,
+        "e": 46.89
+      },
+      {
+        "w": "ko‘rsatadi,",
+        "s": 46.91,
+        "e": 47.39
+      },
+      {
+        "w": "diteched",
+        "s": 47.85,
+        "e": 48.29
+      },
+      {
+        "w": "holatida",
+        "s": 48.33,
+        "e": 48.75
+      },
+      {
+        "w": "esa",
+        "s": 48.81,
+        "e": 48.97
+      },
+      {
+        "w": "hed",
+        "s": 49.09,
+        "e": 49.29
+      },
+      {
+        "w": "to‘g‘ridan-to‘g‘ri",
+        "s": 49.57,
+        "e": 50.35
+      },
+      {
+        "w": "kommitga",
+        "s": 50.45,
+        "e": 50.87
+      },
+      {
+        "w": "ulanadi.",
+        "s": 50.91,
+        "e": 51.27
+      }
+    ]
+  },
+  {
+    "id": "l7",
+    "scene": "teg_obyektlari",
+    "text": "Git teglari ikki xil bo‘ladi: shunchaki commitga ishora qiluvchi yengil teglar hamda ichida muallif va xabari bor to‘laqonli teg obyektlari.",
+    "show": "Git teglari ikki xil bo‘ladi: shunchaki commitga ishora qiluvchi yengil teglar hamda ichida muallif va xabari bor to‘laqonli teg obyektlari.",
+    "say": "Git teglari ikki xil bo‘ladi: shunchaki kommitga ishora qiluvchi yengil teglar hamda ichida muallif va xabari bor to‘laqonli teg obyektlari.",
+    "a0": 52.33,
+    "a1": 60.34,
+    "words": [
+      {
+        "w": "Git",
+        "s": 52.33,
+        "e": 52.47
+      },
+      {
+        "w": "teglari",
+        "s": 52.52,
+        "e": 52.9
+      },
+      {
+        "w": "ikki",
+        "s": 52.96,
+        "e": 53.12
+      },
+      {
+        "w": "xil",
+        "s": 53.14,
+        "e": 53.26
+      },
+      {
+        "w": "bo‘ladi:",
+        "s": 53.3,
+        "e": 53.58
+      },
+      {
+        "w": "shunchaki",
+        "s": 53.94,
+        "e": 54.32
+      },
+      {
+        "w": "kommitga",
+        "s": 54.44,
+        "e": 54.82
+      },
+      {
+        "w": "ishora",
+        "s": 54.88,
+        "e": 55.12
+      },
+      {
+        "w": "qiluvchi",
+        "s": 55.18,
+        "e": 55.5
+      },
+      {
+        "w": "yengil",
+        "s": 55.64,
+        "e": 55.98
+      },
+      {
+        "w": "teglar",
+        "s": 56.04,
+        "e": 56.38
+      },
+      {
+        "w": "hamda",
+        "s": 56.66,
+        "e": 56.9
+      },
+      {
+        "w": "ichida",
+        "s": 57.0,
+        "e": 57.24
+      },
+      {
+        "w": "muallif",
+        "s": 57.34,
+        "e": 57.74
+      },
+      {
+        "w": "va",
+        "s": 57.82,
+        "e": 57.88
+      },
+      {
+        "w": "xabari",
+        "s": 57.98,
+        "e": 58.32
+      },
+      {
+        "w": "bor",
+        "s": 58.36,
+        "e": 58.5
+      },
+      {
+        "w": "to‘laqonli",
+        "s": 58.76,
+        "e": 59.36
+      },
+      {
+        "w": "teg",
+        "s": 59.52,
+        "e": 59.72
+      },
+      {
+        "w": "obyektlari.",
+        "s": 59.82,
+        "e": 60.34
+      }
+    ]
+  },
+  {
+    "id": "l8",
+    "scene": "teg_obyektlari",
+    "text": "Annotated teglar Git omborida to‘rtinchi mustaqil obyekt turi bo‘lib, ommaviy relizlar va kriptografik imzolar uchun xizmat qiladi.",
+    "show": "Annotated teglar Git omborida to‘rtinchi mustaqil obyekt turi bo‘lib, ommaviy relizlar va kriptografik imzolar uchun xizmat qiladi.",
+    "say": "Annotated teglar Git omborida to‘rtinchi mustaqil obyekt turi bo‘lib, ommaviy relizlar va kriptografik imzolar uchun xizmat qiladi.",
+    "a0": 61.26,
+    "a1": 68.49,
+    "words": [
+      {
+        "w": "Annotated",
+        "s": 61.26,
+        "e": 61.74
+      },
+      {
+        "w": "teglar",
+        "s": 61.78,
+        "e": 62.14
+      },
+      {
+        "w": "Git",
+        "s": 62.28,
+        "e": 62.44
+      },
+      {
+        "w": "omborida",
+        "s": 62.54,
+        "e": 62.94
+      },
+      {
+        "w": "to‘rtinchi",
+        "s": 63.04,
+        "e": 63.54
+      },
+      {
+        "w": "mustaqil",
+        "s": 63.6,
+        "e": 64.04
+      },
+      {
+        "w": "obyekt",
+        "s": 64.16,
+        "e": 64.5
+      },
+      {
+        "w": "turi",
+        "s": 64.52,
+        "e": 64.68
+      },
+      {
+        "w": "bo‘lib,",
+        "s": 64.72,
+        "e": 64.94
+      },
+      {
+        "w": "ommaviy",
+        "s": 65.28,
+        "e": 65.64
+      },
+      {
+        "w": "relizlar",
+        "s": 65.74,
+        "e": 66.26
+      },
+      {
+        "w": "va",
+        "s": 66.32,
+        "e": 66.4
+      },
+      {
+        "w": "kriptografik",
+        "s": 66.54,
+        "e": 67.2
+      },
+      {
+        "w": "imzolar",
+        "s": 67.3,
+        "e": 67.71
+      },
+      {
+        "w": "uchun",
+        "s": 67.73,
+        "e": 67.89
+      },
+      {
+        "w": "xizmat",
+        "s": 67.93,
+        "e": 68.21
+      },
+      {
+        "w": "qiladi.",
+        "s": 68.23,
+        "e": 68.49
+      }
+    ]
+  },
+  {
+    "id": "l9",
+    "scene": "packed_refs",
+    "text": "Minglab ref fayllari diskni sekinlashtirmasligi uchun git pack-refs ularni bitta ixcham packed-refs fayliga jamlab beradi.",
+    "show": "Minglab ref fayllari diskni sekinlashtirmasligi uchun git pack-refs ularni bitta ixcham packed-refs fayliga jamlab beradi.",
+    "say": "Minglab ref fayllari diskni sekinlashtirmasligi uchun git pak-refs ularni bitta ixcham pakt-refs fayliga jamlab beradi.",
+    "a0": 69.67,
+    "a1": 76.77,
+    "words": [
+      {
+        "w": "Minglab",
+        "s": 69.67,
+        "e": 70.01
+      },
+      {
+        "w": "ref",
+        "s": 70.19,
+        "e": 70.35
+      },
+      {
+        "w": "fayllari",
+        "s": 70.43,
+        "e": 70.89
+      },
+      {
+        "w": "diskni",
+        "s": 70.95,
+        "e": 71.25
+      },
+      {
+        "w": "sekinlashtirmasligi",
+        "s": 71.29,
+        "e": 72.09
+      },
+      {
+        "w": "uchun",
+        "s": 72.15,
+        "e": 72.35
+      },
+      {
+        "w": "git",
+        "s": 72.53,
+        "e": 72.71
+      },
+      {
+        "w": "pak-refs",
+        "s": 72.85,
+        "e": 73.41
+      },
+      {
+        "w": "ularni",
+        "s": 73.51,
+        "e": 73.81
+      },
+      {
+        "w": "bitta",
+        "s": 73.85,
+        "e": 74.11
+      },
+      {
+        "w": "ixcham",
+        "s": 74.49,
+        "e": 74.89
+      },
+      {
+        "w": "pakt-refs",
+        "s": 75.09,
+        "e": 75.71
+      },
+      {
+        "w": "fayliga",
+        "s": 75.77,
+        "e": 76.11
+      },
+      {
+        "w": "jamlab",
+        "s": 76.17,
+        "e": 76.47
+      },
+      {
+        "w": "beradi.",
+        "s": 76.49,
+        "e": 76.77
+      }
+    ]
+  },
+  {
+    "id": "l10",
+    "scene": "packed_refs",
+    "text": "Zamonaviy Git tizimlarida esa yanada tezkor, tranzaksiyaviy va ikkilik ko‘rinishdagi reftable backend texnologiyasi joriy etilmoqda.",
+    "show": "Zamonaviy Git tizimlarida esa yanada tezkor, tranzaksiyaviy va ikkilik ko‘rinishdagi reftable backend texnologiyasi joriy etilmoqda.",
+    "say": "Zamonaviy Git tizimlarida esa yanada tezkor, tranzaksiyaviy va ikkilik ko‘rinishdagi refteybl bekend texnologiyasi joriy etilmoqda.",
+    "a0": 77.67,
+    "a1": 85.26,
+    "words": [
+      {
+        "w": "Zamonaviy",
+        "s": 77.67,
+        "e": 78.13
+      },
+      {
+        "w": "Git",
+        "s": 78.23,
+        "e": 78.37
+      },
+      {
+        "w": "tizimlarida",
+        "s": 78.41,
+        "e": 78.95
+      },
+      {
+        "w": "esa",
+        "s": 78.99,
+        "e": 79.17
+      },
+      {
+        "w": "yanada",
+        "s": 79.35,
+        "e": 79.67
+      },
+      {
+        "w": "tezkor,",
+        "s": 79.73,
+        "e": 80.15
+      },
+      {
+        "w": "tranzaksiyaviy",
+        "s": 80.43,
+        "e": 81.19
+      },
+      {
+        "w": "va",
+        "s": 81.47,
+        "e": 81.53
+      },
+      {
+        "w": "ikkilik",
+        "s": 81.71,
+        "e": 82.05
+      },
+      {
+        "w": "ko‘rinishdagi",
+        "s": 82.09,
+        "e": 82.66
+      },
+      {
+        "w": "refteybl",
+        "s": 82.8,
+        "e": 83.34
+      },
+      {
+        "w": "bekend",
+        "s": 83.46,
+        "e": 83.78
+      },
+      {
+        "w": "texnologiyasi",
+        "s": 83.82,
+        "e": 84.48
+      },
+      {
+        "w": "joriy",
+        "s": 84.52,
+        "e": 84.78
+      },
+      {
+        "w": "etilmoqda.",
+        "s": 84.82,
+        "e": 85.26
+      }
+    ]
+  },
+  {
+    "id": "l11",
+    "scene": "xulosa",
+    "text": "Reflar va HEAD mexanizmini chuqur tushunish branchlar, checkout va reset buyruqlarining qanday ishlashini to‘liq oydinlashtiradi.",
+    "show": "Reflar va HEAD mexanizmini chuqur tushunish branchlar, checkout va reset buyruqlarining qanday ishlashini to‘liq oydinlashtiradi.",
+    "say": "Reflar va hed mexanizmini chuqur tushunish brenchlar, chekaut va reset buyruqlarining qanday ishlashini to‘liq oydinlashtiradi.",
+    "a0": 86.48,
+    "a1": 93.49,
+    "words": [
+      {
+        "w": "Reflar",
+        "s": 86.48,
+        "e": 86.8
+      },
+      {
+        "w": "va",
+        "s": 86.86,
+        "e": 86.94
+      },
+      {
+        "w": "hed",
+        "s": 87.14,
+        "e": 87.36
+      },
+      {
+        "w": "mexanizmini",
+        "s": 87.42,
+        "e": 88.0
+      },
+      {
+        "w": "chuqur",
+        "s": 88.06,
+        "e": 88.34
+      },
+      {
+        "w": "tushunish",
+        "s": 88.38,
+        "e": 88.82
+      },
+      {
+        "w": "brenchlar,",
+        "s": 89.0,
+        "e": 89.58
+      },
+      {
+        "w": "chekaut",
+        "s": 89.92,
+        "e": 90.36
+      },
+      {
+        "w": "va",
+        "s": 90.42,
+        "e": 90.48
+      },
+      {
+        "w": "reset",
+        "s": 90.58,
+        "e": 90.84
+      },
+      {
+        "w": "buyruqlarining",
+        "s": 90.9,
+        "e": 91.5
+      },
+      {
+        "w": "qanday",
+        "s": 91.58,
+        "e": 91.92
+      },
+      {
+        "w": "ishlashini",
+        "s": 91.96,
+        "e": 92.4
+      },
+      {
+        "w": "to‘liq",
+        "s": 92.52,
+        "e": 92.8
+      },
+      {
+        "w": "oydinlashtiradi.",
+        "s": 92.9,
+        "e": 93.49
+      }
+    ]
+  },
+  {
+    "id": "l12",
+    "scene": "xulosa",
+    "text": "Keyingi o‘n sakkizinchi bobda omborni siqish, delta mexanizmi va avtomatik axlat yig‘uvchi git gc buyrug‘ini o‘rganamiz.",
+    "show": "Keyingi o‘n sakkizinchi bobda omborni siqish, delta mexanizmi va avtomatik axlat yig‘uvchi git gc buyrug‘ini o‘rganamiz.",
+    "say": "Keyingi o‘n sakkizinchi bobda omborni siqish, delta mexanizmi va avtomatik axlat yig‘uvchi git ji-si buyrug‘ini o‘rganamiz.",
+    "a0": 94.39,
+    "a1": 101.8,
+    "words": [
+      {
+        "w": "Keyingi",
+        "s": 94.39,
+        "e": 94.73
+      },
+      {
+        "w": "o‘n",
+        "s": 94.99,
+        "e": 95.07
+      },
+      {
+        "w": "sakkizinchi",
+        "s": 95.11,
+        "e": 95.59
+      },
+      {
+        "w": "bobda",
+        "s": 95.61,
+        "e": 95.89
+      },
+      {
+        "w": "omborni",
+        "s": 96.09,
+        "e": 96.49
+      },
+      {
+        "w": "siqish,",
+        "s": 96.55,
+        "e": 97.01
+      },
+      {
+        "w": "delta",
+        "s": 97.31,
+        "e": 97.59
+      },
+      {
+        "w": "mexanizmi",
+        "s": 97.65,
+        "e": 98.15
+      },
+      {
+        "w": "va",
+        "s": 98.21,
+        "e": 98.27
+      },
+      {
+        "w": "avtomatik",
+        "s": 98.61,
+        "e": 99.12
+      },
+      {
+        "w": "axlat",
+        "s": 99.22,
+        "e": 99.52
+      },
+      {
+        "w": "yig‘uvchi",
+        "s": 99.56,
+        "e": 99.9
+      },
+      {
+        "w": "git",
+        "s": 100.24,
+        "e": 100.4
+      },
+      {
+        "w": "ji-si",
+        "s": 100.5,
+        "e": 100.84
+      },
+      {
+        "w": "buyrug‘ini",
+        "s": 100.92,
+        "e": 101.32
+      },
+      {
+        "w": "o‘rganamiz.",
+        "s": 101.36,
+        "e": 101.8
+      }
+    ]
+  }
+]

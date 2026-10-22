@@ -1,0 +1,61 @@
+WEBVTT
+
+1
+00:01.420 --> 00:10.400
+Salom! Ushbu o‘n yettinchi bobda qirq belgili heshlar ustiga inson
+tushunadigan nomlar qo‘yuvchi ref ko‘rsatkichlari va HEAD faylini o‘rganamiz.
+
+2
+00:10.910 --> 00:19.440
+Git'da barcha obyektlar o‘zgarmas bo‘lsa, ref'lar aksincha: ular
+joriy holatni saqlovchi o‘ta yengil va o‘zgaruvchan havolalardir.
+
+3
+00:23.030 --> 00:31.130
+Reflar shunchaki fayl bo‘lsa-da, ularni qo‘lda emas, git update-ref
+buyrug‘i orqali xavfsiz qulflash va tekshiruv bilan yangilash shart.
+
+4
+00:31.580 --> 00:39.830
+update-ref buyrug‘i poyga holatlarini oldini oluvchi compare-and-swap
+sharti va har bir qadamni yozib boruvchi reflog bilan himoyalangan.
+
+5
+00:44.100 --> 00:51.020
+HEAD fayli ko‘pincha to‘g‘ridan-to‘g‘ri commitga emas, balki
+joriy branchga ishora qiluvchi simvolik ref hisoblanadi.
+
+6
+00:51.330 --> 00:59.700
+git symbolic-ref buyrug‘i HEAD qaysi tarmoqqa bog‘langanini ko‘rsatadi,
+detached holatida esa HEAD to‘g‘ridan-to‘g‘ri commitga ulanadi.
+
+7
+01:03.910 --> 01:12.370
+Git teglari ikki xil bo‘ladi: shunchaki commitga ishora qiluvchi yengil
+teglar hamda ichida muallif va xabari bor to‘laqonli teg obyektlari.
+
+8
+01:12.840 --> 01:20.520
+Annotated teglar Git omborida to‘rtinchi mustaqil obyekt turi bo‘lib,
+ommaviy relizlar va kriptografik imzolar uchun xizmat qiladi.
+
+9
+01:24.850 --> 01:32.400
+Minglab ref fayllari diskni sekinlashtirmasligi uchun git
+pack-refs ularni bitta ixcham packed-refs fayliga jamlab beradi.
+
+10
+01:32.850 --> 01:40.890
+Zamonaviy Git tizimlarida esa yanada tezkor, tranzaksiyaviy va
+ikkilik ko‘rinishdagi reftable backend texnologiyasi joriy etilmoqda.
+
+11
+01:45.260 --> 01:52.720
+Reflar va HEAD mexanizmini chuqur tushunish branchlar, checkout
+va reset buyruqlarining qanday ishlashini to‘liq oydinlashtiradi.
+
+12
+01:53.170 --> 02:01.030
+Keyingi o‘n sakkizinchi bobda omborni siqish, delta mexanizmi
+va avtomatik axlat yig‘uvchi git gc buyrug‘ini o‘rganamiz.
