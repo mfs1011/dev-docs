@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:19.965
+Tarixni Qayta Yozish: git rebase -i
+
+00:19.965 --> 00:39.363
+Todo Ro‘yxati va reword Buyrug‘i
+
+00:39.363 --> 00:57.742
+edit: Commitni Bo‘lish va Tuzatish
+
+00:57.742 --> 01:14.170
+squash va fixup: Birlashtirish
+
+01:14.170 --> 01:33.523
+drop va Tartibni O‘zgartirish
+
+01:33.523 --> 01:52.240
+Xulosa: exec va Lokal Gigiyena

@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" playsinline poster="/video/git/25-tarixni-qayta-yozish.jpg" src="/video/git/25-tarixni-qayta-yozish.mp4">
+    <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/git/25-tarixni-qayta-yozish.chapters.vtt" default>
+    <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/git/25-tarixni-qayta-yozish.uz.vtt">
+  </video>
+  <figcaption>25.1-video. Git'da tarixni qayta yozish va interaktiv rebase imkoniyatlari</figcaption>
+</figure>
+
 Pro Git bu mavzuni shunday fikr bilan boshlaydi: Git'ning yaxshi tomonlaridan biri — qarorni **eng oxirgi paytda** qabul qilish mumkinligi. Qaysi fayl qaysi commit'ga tushishini commit qilishdan oldin staging'da hal qilasiz ([5-bob](05-uch-holat.md)), vaqtincha kerak bo'lmagan ishni `git stash` bilan chetga olasiz ([38-bob](38-stash-va-clean.md)). Xuddi shunday, **bo'lib o'tgan** commit'larni ham boshqacha bo'lgandek qilib qayta yozish mumkin: tartibini almashtirish, xabarini yoki mazmunini o'zgartirish, bir nechtasini birlashtirish, bittasini bo'lish yoki butunlay olib tashlash.
 
 Oxirgi commit'ni o'zgartirish — `git commit --amend` — [11-bobda](11-bekor-qilish.md) ko'rilgan. Pro Git uni "juda kichik rebase" deb ataydi. Undan chuqurroqdagi commit'lar uchun Git'da alohida "tarixni tahrirlash" buyrug'i uzoq vaqt bo'lmagan; buning uchun rebase ishlatiladi. G'oya shunday: commit'larni **o'sha eski asosning o'zi ustiga** qayta rebase qilasiz, lekin jarayonni to'xtatib, har commit bilan nima qilishni o'zingiz aytasiz. Bu — **interaktiv rebase** (`git rebase -i`).
