@@ -1,0 +1,61 @@
+WEBVTT
+
+1
+00:01.420 --> 00:11.260
+Gitda hard reset yoki shoxni majburan o'chirish oqibatida commitlar yo'qolgandek
+ko'rinsa ham, aslida ular obyektlar bazasida to'liq saqlanib turadi.
+
+2
+00:11.470 --> 00:19.640
+Git deyarli har doim faqat yangi ma'lumot qo'shadi; ref ko'rsatkichlari
+siljigani bilan eski obyektlar diskdan darhol o'chirib yuborilmaydi.
+
+3
+00:23.090 --> 00:31.650
+Reflog — bu HEAD va har bir shoxning qachon va qayerga ko'chganini
+yozib boruvchi qat'iy lokal harakatlar jurnali hisoblanadi.
+
+4
+00:31.820 --> 00:40.150
+Git reflog buyrug'i oxirgi amallarni, xususan reset, commit
+hamda rebase siljishlarini vaqt tartibida aniq ko'rsatib beradi.
+
+5
+00:44.020 --> 00:53.540
+HEAD figurali qavsda n belgisi orqali HEAD ning n qadam oldingi holatiga,
+yoki shox nomi va sana orqali o'tmishdagi nuqtaga murojaat qilinadi.
+
+6
+00:53.590 --> 01:01.830
+Shuningdek, kuchukcha chiziqcha bir sintaksisi oldingi checkout qilingan
+shoxga tezkor qaytish yoki ko'zdan kechirish imkonini taqdim etadi.
+
+7
+01:05.720 --> 01:13.850
+Yo'qolgan commit xeshini reflogdan topgach, uni git branch yangi shox
+HEAD bir buyrug'i bilan xavfsiz yangi shoxga biriktirish mumkin.
+
+8
+01:13.940 --> 01:21.580
+Yoki joriy shoxda git reset hard HEAD bir buyrug'ini berib, tashlab
+ketilgan barcha o'zgarishlarni bir zumda ortga qaytarish mumkin.
+
+9
+01:25.550 --> 01:34.660
+Agar reflog jurnali tozalangan bo'lsa ham, git fsck lost-found buyrug'i hech
+bir ko'rsatkich bog'lanmagan osilib qolgan dangling obyektlarni topadi.
+
+10
+01:34.750 --> 01:41.690
+Topilgan xeshlar git show orqali tekshirilib, lost-found
+papkasidagi fayllardan kerakli kodlar to'liq qayta tiklab olinadi.
+
+11
+01:45.620 --> 01:52.280
+Reflog yozuvlari lokal sozlamaga ko'ra to'qson kungacha
+saqlanadi va masofaviy repozitoriyga hech qachon uzatilmaydi.
+
+12
+01:52.410 --> 02:00.470
+Katta hajmli maxfiy fayllarni repo tarixidan butunlay yo'qotish uchun
+esa git filter-repo hamda gc prune buyruqlaridan foydalaniladi.

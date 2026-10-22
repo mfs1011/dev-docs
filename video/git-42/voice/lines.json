@@ -1,0 +1,1224 @@
+[
+  {
+    "id": "l1",
+    "scene": "reflog_intro",
+    "text": "Gitda hard reset yoki shoxni majburan o'chirish oqibatida commitlar yo'qolgandek ko'rinsa ham, aslida ular obyektlar bazasida to'liq saqlanib turadi.",
+    "show": "Gitda hard reset yoki shoxni majburan o'chirish oqibatida commitlar yo'qolgandek ko'rinsa ham, aslida ular obyektlar bazasida to'liq saqlanib turadi.",
+    "say": "Gitda hard reset yoki shoxni majburan o'chirish oqibatida kommitlar yo'qolgandek ko'rinsa ham, aslida ular obyektlar bazasida to'liq saqlanib turadi.",
+    "a0": 0.38,
+    "a1": 9.77,
+    "words": [
+      {
+        "w": "Gitda",
+        "s": 0.38,
+        "e": 0.78
+      },
+      {
+        "w": "hard",
+        "s": 1.14,
+        "e": 1.42
+      },
+      {
+        "w": "reset",
+        "s": 1.48,
+        "e": 1.82
+      },
+      {
+        "w": "yoki",
+        "s": 1.92,
+        "e": 2.16
+      },
+      {
+        "w": "shoxni",
+        "s": 2.4,
+        "e": 2.76
+      },
+      {
+        "w": "majburan",
+        "s": 2.82,
+        "e": 3.4
+      },
+      {
+        "w": "o'chirish",
+        "s": 3.48,
+        "e": 3.82
+      },
+      {
+        "w": "oqibatida",
+        "s": 3.84,
+        "e": 4.34
+      },
+      {
+        "w": "kommitlar",
+        "s": 4.68,
+        "e": 5.18
+      },
+      {
+        "w": "yo'qolgandek",
+        "s": 5.22,
+        "e": 5.86
+      },
+      {
+        "w": "ko'rinsa",
+        "s": 5.88,
+        "e": 6.24
+      },
+      {
+        "w": "ham,",
+        "s": 6.28,
+        "e": 6.44
+      },
+      {
+        "w": "aslida",
+        "s": 6.68,
+        "e": 7.02
+      },
+      {
+        "w": "ular",
+        "s": 7.08,
+        "e": 7.3
+      },
+      {
+        "w": "obyektlar",
+        "s": 7.46,
+        "e": 8.05
+      },
+      {
+        "w": "bazasida",
+        "s": 8.13,
+        "e": 8.63
+      },
+      {
+        "w": "to'liq",
+        "s": 8.77,
+        "e": 9.05
+      },
+      {
+        "w": "saqlanib",
+        "s": 9.09,
+        "e": 9.49
+      },
+      {
+        "w": "turadi.",
+        "s": 9.51,
+        "e": 9.77
+      }
+    ]
+  },
+  {
+    "id": "l2",
+    "scene": "reflog_intro",
+    "text": "Git deyarli har doim faqat yangi ma'lumot qo'shadi; ref ko'rsatkichlari siljigani bilan eski obyektlar diskdan darhol o'chirib yuborilmaydi.",
+    "show": "Git deyarli har doim faqat yangi ma'lumot qo'shadi; ref ko'rsatkichlari siljigani bilan eski obyektlar diskdan darhol o'chirib yuborilmaydi.",
+    "say": "Git deyarli har doim faqat yangi ma'lumot qo'shadi; ref ko'rsatkichlari siljigani bilan eski obyektlar diskdan darhol o'chirib yuborilmaydi.",
+    "a0": 10.43,
+    "a1": 18.15,
+    "words": [
+      {
+        "w": "Git",
+        "s": 10.43,
+        "e": 10.61
+      },
+      {
+        "w": "deyarli",
+        "s": 10.79,
+        "e": 11.09
+      },
+      {
+        "w": "har",
+        "s": 11.23,
+        "e": 11.45
+      },
+      {
+        "w": "doim",
+        "s": 11.51,
+        "e": 11.75
+      },
+      {
+        "w": "faqat",
+        "s": 11.83,
+        "e": 12.13
+      },
+      {
+        "w": "yangi",
+        "s": 12.23,
+        "e": 12.53
+      },
+      {
+        "w": "ma'lumot",
+        "s": 12.59,
+        "e": 12.95
+      },
+      {
+        "w": "qo'shadi;",
+        "s": 12.95,
+        "e": 13.87
+      },
+      {
+        "w": "ref",
+        "s": 13.87,
+        "e": 14.03
+      },
+      {
+        "w": "ko'rsatkichlari",
+        "s": 14.09,
+        "e": 14.75
+      },
+      {
+        "w": "siljigani",
+        "s": 14.79,
+        "e": 15.23
+      },
+      {
+        "w": "bilan",
+        "s": 15.25,
+        "e": 15.47
+      },
+      {
+        "w": "eski",
+        "s": 15.59,
+        "e": 15.83
+      },
+      {
+        "w": "obyektlar",
+        "s": 15.91,
+        "e": 16.39
+      },
+      {
+        "w": "diskdan",
+        "s": 16.43,
+        "e": 16.81
+      },
+      {
+        "w": "darhol",
+        "s": 16.89,
+        "e": 17.27
+      },
+      {
+        "w": "o'chirib",
+        "s": 17.33,
+        "e": 17.59
+      },
+      {
+        "w": "yuborilmaydi.",
+        "s": 17.61,
+        "e": 18.15
+      }
+    ]
+  },
+  {
+    "id": "l3",
+    "scene": "reflog_basics",
+    "text": "Reflog — bu HEAD va har bir shoxning qachon va qayerga ko'chganini yozib boruvchi qat'iy lokal harakatlar jurnali hisoblanadi.",
+    "show": "Reflog — bu HEAD va har bir shoxning qachon va qayerga ko'chganini yozib boruvchi qat'iy lokal harakatlar jurnali hisoblanadi.",
+    "say": "Reflog — bu xed va har bir shoxning qachon va qayerga ko'chganini yozib boruvchi qat'iy lokal harakatlar jurnali hisoblanadi.",
+    "a0": 18.95,
+    "a1": 27.06,
+    "words": [
+      {
+        "w": "Reflog",
+        "s": 18.95,
+        "e": 19.31
+      },
+      {
+        "w": "—",
+        "s": 19.31,
+        "e": 19.31
+      },
+      {
+        "w": "bu",
+        "s": 19.55,
+        "e": 19.63
+      },
+      {
+        "w": "xed",
+        "s": 19.97,
+        "e": 20.21
+      },
+      {
+        "w": "va",
+        "s": 20.37,
+        "e": 20.45
+      },
+      {
+        "w": "har",
+        "s": 20.63,
+        "e": 20.85
+      },
+      {
+        "w": "bir",
+        "s": 20.89,
+        "e": 21.01
+      },
+      {
+        "w": "shoxning",
+        "s": 21.07,
+        "e": 21.45
+      },
+      {
+        "w": "qachon",
+        "s": 21.61,
+        "e": 21.99
+      },
+      {
+        "w": "va",
+        "s": 22.09,
+        "e": 22.15
+      },
+      {
+        "w": "qayerga",
+        "s": 22.58,
+        "e": 23.1
+      },
+      {
+        "w": "ko'chganini",
+        "s": 23.18,
+        "e": 23.7
+      },
+      {
+        "w": "yozib",
+        "s": 23.7,
+        "e": 24.02
+      },
+      {
+        "w": "boruvchi",
+        "s": 24.06,
+        "e": 24.42
+      },
+      {
+        "w": "qat'iy",
+        "s": 24.58,
+        "e": 24.98
+      },
+      {
+        "w": "lokal",
+        "s": 25.16,
+        "e": 25.52
+      },
+      {
+        "w": "harakatlar",
+        "s": 25.58,
+        "e": 26.1
+      },
+      {
+        "w": "jurnali",
+        "s": 26.16,
+        "e": 26.52
+      },
+      {
+        "w": "hisoblanadi.",
+        "s": 26.56,
+        "e": 27.06
+      }
+    ]
+  },
+  {
+    "id": "l4",
+    "scene": "reflog_basics",
+    "text": "Git reflog buyrug'i oxirgi amallarni, xususan reset, commit hamda rebase siljishlarini vaqt tartibida aniq ko'rsatib beradi.",
+    "show": "Git reflog buyrug'i oxirgi amallarni, xususan reset, commit hamda rebase siljishlarini vaqt tartibida aniq ko'rsatib beradi.",
+    "say": "Git reflog buyrug'i oxirgi amallarni, xususan reset, kommit hamda rebase siljishlarini vaqt tartibida aniq ko'rsatib beradi.",
+    "a0": 27.68,
+    "a1": 35.56,
+    "words": [
+      {
+        "w": "Git",
+        "s": 27.68,
+        "e": 27.86
+      },
+      {
+        "w": "reflog",
+        "s": 28.0,
+        "e": 28.32
+      },
+      {
+        "w": "buyrug'i",
+        "s": 28.38,
+        "e": 28.72
+      },
+      {
+        "w": "oxirgi",
+        "s": 29.14,
+        "e": 29.48
+      },
+      {
+        "w": "amallarni,",
+        "s": 29.52,
+        "e": 30.0
+      },
+      {
+        "w": "xususan",
+        "s": 30.2,
+        "e": 30.56
+      },
+      {
+        "w": "reset,",
+        "s": 30.76,
+        "e": 31.12
+      },
+      {
+        "w": "kommit",
+        "s": 31.4,
+        "e": 31.76
+      },
+      {
+        "w": "hamda",
+        "s": 32.0,
+        "e": 32.22
+      },
+      {
+        "w": "rebase",
+        "s": 32.44,
+        "e": 32.84
+      },
+      {
+        "w": "siljishlarini",
+        "s": 32.86,
+        "e": 33.5
+      },
+      {
+        "w": "vaqt",
+        "s": 33.64,
+        "e": 33.92
+      },
+      {
+        "w": "tartibida",
+        "s": 33.98,
+        "e": 34.46
+      },
+      {
+        "w": "aniq",
+        "s": 34.6,
+        "e": 34.82
+      },
+      {
+        "w": "ko'rsatib",
+        "s": 34.88,
+        "e": 35.28
+      },
+      {
+        "w": "beradi.",
+        "s": 35.3,
+        "e": 35.56
+      }
+    ]
+  },
+  {
+    "id": "l5",
+    "scene": "reflog_syntax",
+    "text": "HEAD figurali qavsda n belgisi orqali HEAD ning n qadam oldingi holatiga, yoki shox nomi va sana orqali o'tmishdagi nuqtaga murojaat qilinadi.",
+    "show": "HEAD figurali qavsda n belgisi orqali HEAD ning n qadam oldingi holatiga, yoki shox nomi va sana orqali o'tmishdagi nuqtaga murojaat qilinadi.",
+    "say": "Xed figurali qavsda n belgisi orqali xed ning n qadam oldingi holatiga, yoki shox nomi va sana orqali o'tmishdagi nuqtaga murojaat qilinadi.",
+    "a0": 36.28,
+    "a1": 45.35,
+    "words": [
+      {
+        "w": "Xed",
+        "s": 36.28,
+        "e": 36.5
+      },
+      {
+        "w": "figurali",
+        "s": 36.8,
+        "e": 37.2
+      },
+      {
+        "w": "qavsda",
+        "s": 37.24,
+        "e": 37.63
+      },
+      {
+        "w": "n",
+        "s": 37.93,
+        "e": 37.95
+      },
+      {
+        "w": "belgisi",
+        "s": 38.03,
+        "e": 38.37
+      },
+      {
+        "w": "orqali",
+        "s": 38.41,
+        "e": 38.75
+      },
+      {
+        "w": "xed",
+        "s": 39.07,
+        "e": 39.25
+      },
+      {
+        "w": "ning",
+        "s": 39.29,
+        "e": 39.43
+      },
+      {
+        "w": "n",
+        "s": 39.73,
+        "e": 39.75
+      },
+      {
+        "w": "qadam",
+        "s": 39.83,
+        "e": 40.07
+      },
+      {
+        "w": "oldingi",
+        "s": 40.21,
+        "e": 40.55
+      },
+      {
+        "w": "holatiga,",
+        "s": 40.59,
+        "e": 41.05
+      },
+      {
+        "w": "yoki",
+        "s": 41.31,
+        "e": 41.55
+      },
+      {
+        "w": "shox",
+        "s": 41.81,
+        "e": 42.01
+      },
+      {
+        "w": "nomi",
+        "s": 42.11,
+        "e": 42.37
+      },
+      {
+        "w": "va",
+        "s": 42.49,
+        "e": 42.59
+      },
+      {
+        "w": "sana",
+        "s": 42.79,
+        "e": 43.03
+      },
+      {
+        "w": "orqali",
+        "s": 43.11,
+        "e": 43.45
+      },
+      {
+        "w": "o'tmishdagi",
+        "s": 43.61,
+        "e": 44.11
+      },
+      {
+        "w": "nuqtaga",
+        "s": 44.17,
+        "e": 44.49
+      },
+      {
+        "w": "murojaat",
+        "s": 44.53,
+        "e": 44.91
+      },
+      {
+        "w": "qilinadi.",
+        "s": 44.97,
+        "e": 45.35
+      }
+    ]
+  },
+  {
+    "id": "l6",
+    "scene": "reflog_syntax",
+    "text": "Shuningdek, kuchukcha chiziqcha bir sintaksisi oldingi checkout qilingan shoxga tezkor qaytish yoki ko'zdan kechirish imkonini taqdim etadi.",
+    "show": "Shuningdek, kuchukcha chiziqcha bir sintaksisi oldingi checkout qilingan shoxga tezkor qaytish yoki ko'zdan kechirish imkonini taqdim etadi.",
+    "say": "Shuningdek, kuchukcha chiziqcha bir sintaksisi oldingi checkout qilingan shoxga tezkor qaytish yoki ko'zdan kechirish imkonini taqdim etadi.",
+    "a0": 45.85,
+    "a1": 53.64,
+    "words": [
+      {
+        "w": "Shuningdek,",
+        "s": 45.85,
+        "e": 46.21
+      },
+      {
+        "w": "kuchukcha",
+        "s": 46.53,
+        "e": 46.91
+      },
+      {
+        "w": "chiziqcha",
+        "s": 47.01,
+        "e": 47.43
+      },
+      {
+        "w": "bir",
+        "s": 47.57,
+        "e": 47.71
+      },
+      {
+        "w": "sintaksisi",
+        "s": 47.77,
+        "e": 48.33
+      },
+      {
+        "w": "oldingi",
+        "s": 48.69,
+        "e": 49.05
+      },
+      {
+        "w": "checkout",
+        "s": 49.13,
+        "e": 49.53
+      },
+      {
+        "w": "qilingan",
+        "s": 49.59,
+        "e": 49.93
+      },
+      {
+        "w": "shoxga",
+        "s": 49.97,
+        "e": 50.29
+      },
+      {
+        "w": "tezkor",
+        "s": 50.41,
+        "e": 50.81
+      },
+      {
+        "w": "qaytish",
+        "s": 50.89,
+        "e": 51.31
+      },
+      {
+        "w": "yoki",
+        "s": 51.37,
+        "e": 51.57
+      },
+      {
+        "w": "ko'zdan",
+        "s": 51.71,
+        "e": 52.09
+      },
+      {
+        "w": "kechirish",
+        "s": 52.15,
+        "e": 52.49
+      },
+      {
+        "w": "imkonini",
+        "s": 52.54,
+        "e": 52.98
+      },
+      {
+        "w": "taqdim",
+        "s": 53.02,
+        "e": 53.34
+      },
+      {
+        "w": "etadi.",
+        "s": 53.4,
+        "e": 53.64
+      }
+    ]
+  },
+  {
+    "id": "l7",
+    "scene": "reflog_restore",
+    "text": "Yo'qolgan commit xeshini reflogdan topgach, uni git branch yangi shox HEAD bir buyrug'i bilan xavfsiz yangi shoxga biriktirish mumkin.",
+    "show": "Yo'qolgan commit xeshini reflogdan topgach, uni git branch yangi shox HEAD bir buyrug'i bilan xavfsiz yangi shoxga biriktirish mumkin.",
+    "say": "Yo'qolgan kommit xeshini reflogdan topgach, uni git branch yangi shox xed bir buyrug'i bilan xavfsiz yangi shoxga biriktirish mumkin.",
+    "a0": 54.38,
+    "a1": 62.06,
+    "words": [
+      {
+        "w": "Yo'qolgan",
+        "s": 54.38,
+        "e": 54.8
+      },
+      {
+        "w": "kommit",
+        "s": 54.86,
+        "e": 55.12
+      },
+      {
+        "w": "xeshini",
+        "s": 55.14,
+        "e": 55.48
+      },
+      {
+        "w": "reflogdan",
+        "s": 55.64,
+        "e": 56.08
+      },
+      {
+        "w": "topgach,",
+        "s": 56.12,
+        "e": 56.5
+      },
+      {
+        "w": "uni",
+        "s": 56.76,
+        "e": 56.9
+      },
+      {
+        "w": "git",
+        "s": 57.16,
+        "e": 57.32
+      },
+      {
+        "w": "branch",
+        "s": 57.42,
+        "e": 57.74
+      },
+      {
+        "w": "yangi",
+        "s": 57.94,
+        "e": 58.24
+      },
+      {
+        "w": "shox",
+        "s": 58.34,
+        "e": 58.56
+      },
+      {
+        "w": "xed",
+        "s": 58.86,
+        "e": 59.04
+      },
+      {
+        "w": "bir",
+        "s": 59.16,
+        "e": 59.3
+      },
+      {
+        "w": "buyrug'i",
+        "s": 59.36,
+        "e": 59.7
+      },
+      {
+        "w": "bilan",
+        "s": 59.7,
+        "e": 59.9
+      },
+      {
+        "w": "xavfsiz",
+        "s": 60.16,
+        "e": 60.58
+      },
+      {
+        "w": "yangi",
+        "s": 60.7,
+        "e": 60.98
+      },
+      {
+        "w": "shoxga",
+        "s": 61.02,
+        "e": 61.3
+      },
+      {
+        "w": "biriktirish",
+        "s": 61.36,
+        "e": 61.76
+      },
+      {
+        "w": "mumkin.",
+        "s": 61.8,
+        "e": 62.06
+      }
+    ]
+  },
+  {
+    "id": "l8",
+    "scene": "reflog_restore",
+    "text": "Yoki joriy shoxda git reset hard HEAD bir buyrug'ini berib, tashlab ketilgan barcha o'zgarishlarni bir zumda ortga qaytarish mumkin.",
+    "show": "Yoki joriy shoxda git reset hard HEAD bir buyrug'ini berib, tashlab ketilgan barcha o'zgarishlarni bir zumda ortga qaytarish mumkin.",
+    "say": "Yoki joriy shoxda git reset hard xed bir buyrug'ini berib, tashlab ketilgan barcha o'zgarishlarni bir zumda ortga qaytarish mumkin.",
+    "a0": 62.6,
+    "a1": 69.79,
+    "words": [
+      {
+        "w": "Yoki",
+        "s": 62.6,
+        "e": 62.82
+      },
+      {
+        "w": "joriy",
+        "s": 62.96,
+        "e": 63.28
+      },
+      {
+        "w": "shoxda",
+        "s": 63.34,
+        "e": 63.64
+      },
+      {
+        "w": "git",
+        "s": 63.82,
+        "e": 64.02
+      },
+      {
+        "w": "reset",
+        "s": 64.08,
+        "e": 64.4
+      },
+      {
+        "w": "hard",
+        "s": 64.48,
+        "e": 64.74
+      },
+      {
+        "w": "xed",
+        "s": 64.82,
+        "e": 65.02
+      },
+      {
+        "w": "bir",
+        "s": 65.08,
+        "e": 65.2
+      },
+      {
+        "w": "buyrug'ini",
+        "s": 65.26,
+        "e": 65.66
+      },
+      {
+        "w": "berib,",
+        "s": 65.7,
+        "e": 65.92
+      },
+      {
+        "w": "tashlab",
+        "s": 66.22,
+        "e": 66.56
+      },
+      {
+        "w": "ketilgan",
+        "s": 66.58,
+        "e": 67.0
+      },
+      {
+        "w": "barcha",
+        "s": 67.18,
+        "e": 67.46
+      },
+      {
+        "w": "o'zgarishlarni",
+        "s": 67.51,
+        "e": 68.17
+      },
+      {
+        "w": "bir",
+        "s": 68.39,
+        "e": 68.53
+      },
+      {
+        "w": "zumda",
+        "s": 68.61,
+        "e": 68.85
+      },
+      {
+        "w": "ortga",
+        "s": 68.91,
+        "e": 69.11
+      },
+      {
+        "w": "qaytarish",
+        "s": 69.15,
+        "e": 69.51
+      },
+      {
+        "w": "mumkin.",
+        "s": 69.55,
+        "e": 69.79
+      }
+    ]
+  },
+  {
+    "id": "l9",
+    "scene": "fsck_lost_found",
+    "text": "Agar reflog jurnali tozalangan bo'lsa ham, git fsck lost-found buyrug'i hech bir ko'rsatkich bog'lanmagan osilib qolgan dangling obyektlarni topadi.",
+    "show": "Agar reflog jurnali tozalangan bo'lsa ham, git fsck lost-found buyrug'i hech bir ko'rsatkich bog'lanmagan osilib qolgan dangling obyektlarni topadi.",
+    "say": "Agar reflog jurnali tozalangan bo'lsa ham, git fasik lost faund buyrug'i hech bir ko'rsatkich bog'lanmagan osilib qolgan dangling obyektlarni topadi.",
+    "a0": 70.61,
+    "a1": 79.27,
+    "words": [
+      {
+        "w": "Agar",
+        "s": 70.61,
+        "e": 70.83
+      },
+      {
+        "w": "reflog",
+        "s": 71.01,
+        "e": 71.31
+      },
+      {
+        "w": "jurnali",
+        "s": 71.35,
+        "e": 71.71
+      },
+      {
+        "w": "tozalangan",
+        "s": 71.75,
+        "e": 72.29
+      },
+      {
+        "w": "bo'lsa",
+        "s": 72.33,
+        "e": 72.55
+      },
+      {
+        "w": "ham,",
+        "s": 72.59,
+        "e": 72.73
+      },
+      {
+        "w": "git",
+        "s": 73.05,
+        "e": 73.23
+      },
+      {
+        "w": "fasik",
+        "s": 73.29,
+        "e": 73.59
+      },
+      {
+        "w": "lost",
+        "s": 73.71,
+        "e": 73.91
+      },
+      {
+        "w": "faund",
+        "s": 73.95,
+        "e": 74.19
+      },
+      {
+        "w": "buyrug'i",
+        "s": 74.25,
+        "e": 74.59
+      },
+      {
+        "w": "hech",
+        "s": 74.93,
+        "e": 75.15
+      },
+      {
+        "w": "bir",
+        "s": 75.19,
+        "e": 75.31
+      },
+      {
+        "w": "ko'rsatkich",
+        "s": 75.35,
+        "e": 75.85
+      },
+      {
+        "w": "bog'lanmagan",
+        "s": 75.91,
+        "e": 76.55
+      },
+      {
+        "w": "osilib",
+        "s": 76.85,
+        "e": 77.15
+      },
+      {
+        "w": "qolgan",
+        "s": 77.17,
+        "e": 77.49
+      },
+      {
+        "w": "dangling",
+        "s": 77.85,
+        "e": 78.29
+      },
+      {
+        "w": "obyektlarni",
+        "s": 78.37,
+        "e": 78.93
+      },
+      {
+        "w": "topadi.",
+        "s": 78.97,
+        "e": 79.27
+      }
+    ]
+  },
+  {
+    "id": "l10",
+    "scene": "fsck_lost_found",
+    "text": "Topilgan xeshlar git show orqali tekshirilib, lost-found papkasidagi fayllardan kerakli kodlar to'liq qayta tiklab olinadi.",
+    "show": "Topilgan xeshlar git show orqali tekshirilib, lost-found papkasidagi fayllardan kerakli kodlar to'liq qayta tiklab olinadi.",
+    "say": "Topilgan xeshlar git show orqali tekshirilib, lost faund papkasidagi fayllardan kerakli kodlar to'liq qayta tiklab olinadi.",
+    "a0": 79.81,
+    "a1": 86.3,
+    "words": [
+      {
+        "w": "Topilgan",
+        "s": 79.81,
+        "e": 80.19
+      },
+      {
+        "w": "xeshlar",
+        "s": 80.23,
+        "e": 80.57
+      },
+      {
+        "w": "git",
+        "s": 80.71,
+        "e": 80.85
+      },
+      {
+        "w": "show",
+        "s": 80.91,
+        "e": 81.09
+      },
+      {
+        "w": "orqali",
+        "s": 81.13,
+        "e": 81.41
+      },
+      {
+        "w": "tekshirilib,",
+        "s": 81.47,
+        "e": 81.91
+      },
+      {
+        "w": "lost",
+        "s": 82.25,
+        "e": 82.47
+      },
+      {
+        "w": "faund",
+        "s": 82.52,
+        "e": 82.78
+      },
+      {
+        "w": "papkasidagi",
+        "s": 82.8,
+        "e": 83.36
+      },
+      {
+        "w": "fayllardan",
+        "s": 83.42,
+        "e": 84.02
+      },
+      {
+        "w": "kerakli",
+        "s": 84.1,
+        "e": 84.5
+      },
+      {
+        "w": "kodlar",
+        "s": 84.58,
+        "e": 84.94
+      },
+      {
+        "w": "to'liq",
+        "s": 85.08,
+        "e": 85.36
+      },
+      {
+        "w": "qayta",
+        "s": 85.4,
+        "e": 85.64
+      },
+      {
+        "w": "tiklab",
+        "s": 85.68,
+        "e": 85.94
+      },
+      {
+        "w": "olinadi.",
+        "s": 85.98,
+        "e": 86.3
+      }
+    ]
+  },
+  {
+    "id": "l11",
+    "scene": "reflog_gc_cleanup",
+    "text": "Reflog yozuvlari lokal sozlamaga ko'ra to'qson kungacha saqlanadi va masofaviy repozitoriyga hech qachon uzatilmaydi.",
+    "show": "Reflog yozuvlari lokal sozlamaga ko'ra to'qson kungacha saqlanadi va masofaviy repozitoriyga hech qachon uzatilmaydi.",
+    "say": "Reflog yozuvlari lokal sozlamaga ko'ra to'qson kungacha saqlanadi va masofaviy repozitoriyga hech qachon uzatilmaydi.",
+    "a0": 87.08,
+    "a1": 93.29,
+    "words": [
+      {
+        "w": "Reflog",
+        "s": 87.08,
+        "e": 87.4
+      },
+      {
+        "w": "yozuvlari",
+        "s": 87.44,
+        "e": 87.88
+      },
+      {
+        "w": "lokal",
+        "s": 88.0,
+        "e": 88.28
+      },
+      {
+        "w": "sozlamaga",
+        "s": 88.32,
+        "e": 88.78
+      },
+      {
+        "w": "ko'ra",
+        "s": 88.82,
+        "e": 89.0
+      },
+      {
+        "w": "to'qson",
+        "s": 89.1,
+        "e": 89.46
+      },
+      {
+        "w": "kungacha",
+        "s": 89.5,
+        "e": 89.86
+      },
+      {
+        "w": "saqlanadi",
+        "s": 89.9,
+        "e": 90.36
+      },
+      {
+        "w": "va",
+        "s": 90.68,
+        "e": 90.74
+      },
+      {
+        "w": "masofaviy",
+        "s": 90.84,
+        "e": 91.38
+      },
+      {
+        "w": "repozitoriyga",
+        "s": 91.42,
+        "e": 92.08
+      },
+      {
+        "w": "hech",
+        "s": 92.2,
+        "e": 92.42
+      },
+      {
+        "w": "qachon",
+        "s": 92.46,
+        "e": 92.7
+      },
+      {
+        "w": "uzatilmaydi.",
+        "s": 92.74,
+        "e": 93.29
+      }
+    ]
+  },
+  {
+    "id": "l12",
+    "scene": "reflog_gc_cleanup",
+    "text": "Katta hajmli maxfiy fayllarni repo tarixidan butunlay yo'qotish uchun esa git filter-repo hamda gc prune buyruqlaridan foydalaniladi.",
+    "show": "Katta hajmli maxfiy fayllarni repo tarixidan butunlay yo'qotish uchun esa git filter-repo hamda gc prune buyruqlaridan foydalaniladi.",
+    "say": "Katta hajmli maxfiy fayllarni repo tarixidan butunlay yo'qotish uchun esa git filter repo hamda ji si pryun buyruqlaridan foydalaniladi.",
+    "a0": 93.87,
+    "a1": 101.48,
+    "words": [
+      {
+        "w": "Katta",
+        "s": 93.87,
+        "e": 94.17
+      },
+      {
+        "w": "hajmli",
+        "s": 94.21,
+        "e": 94.57
+      },
+      {
+        "w": "maxfiy",
+        "s": 94.65,
+        "e": 94.95
+      },
+      {
+        "w": "fayllarni",
+        "s": 95.03,
+        "e": 95.55
+      },
+      {
+        "w": "repo",
+        "s": 95.67,
+        "e": 95.87
+      },
+      {
+        "w": "tarixidan",
+        "s": 95.95,
+        "e": 96.41
+      },
+      {
+        "w": "butunlay",
+        "s": 96.51,
+        "e": 96.93
+      },
+      {
+        "w": "yo'qotish",
+        "s": 96.97,
+        "e": 97.35
+      },
+      {
+        "w": "uchun",
+        "s": 97.35,
+        "e": 97.51
+      },
+      {
+        "w": "esa",
+        "s": 97.55,
+        "e": 97.69
+      },
+      {
+        "w": "git",
+        "s": 98.07,
+        "e": 98.23
+      },
+      {
+        "w": "filter",
+        "s": 98.31,
+        "e": 98.65
+      },
+      {
+        "w": "repo",
+        "s": 98.73,
+        "e": 98.98
+      },
+      {
+        "w": "hamda",
+        "s": 99.06,
+        "e": 99.3
+      },
+      {
+        "w": "ji",
+        "s": 99.58,
+        "e": 99.66
+      },
+      {
+        "w": "si",
+        "s": 99.76,
+        "e": 99.86
+      },
+      {
+        "w": "pryun",
+        "s": 99.96,
+        "e": 100.22
+      },
+      {
+        "w": "buyruqlaridan",
+        "s": 100.26,
+        "e": 100.8
+      },
+      {
+        "w": "foydalaniladi.",
+        "s": 100.84,
+        "e": 101.48
+      }
+    ]
+  }
+]
