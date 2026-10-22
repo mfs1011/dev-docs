@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" playsinline poster="/video/git/29-fetch-push-ichidan.jpg" src="/video/git/29-fetch-push-ichidan.mp4">
+    <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/git/29-fetch-push-ichidan.chapters.vtt" default>
+    <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/git/29-fetch-push-ichidan.uz.vtt">
+  </video>
+  <figcaption>29.1-video. Git fetch va push ichki mexanizmi: refspec, transfer protokoli va force opsiyalari</figcaption>
+</figure>
+
 [27-bobda](27-remote.md) `fetch` va `push` ni foydalanuvchi ko'zi bilan ko'rdik: biri olib keladi, biri yuboradi. Bu bobda ikki savolga ichkaridan javob beramiz:
 
 1. **Qaysi ref qaysi ref'ga yoziladi?** Bunga **refspec** javob beradi.
