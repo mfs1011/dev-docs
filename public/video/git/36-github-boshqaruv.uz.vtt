@@ -1,0 +1,61 @@
+WEBVTT
+
+1
+00:01.420 --> 00:08.530
+Salom! Ushbu o‘ttiz oltinchi bobda GitHub platformasida repozitoriy
+va butun tashkilotni boshqarish vositalarini o‘rganamiz.
+
+2
+00:08.740 --> 00:16.440
+Loyiha yaxshi boshqarilishi uchun README, CONTRIBUTING va maxsus
+papkalar orqali hissa qo‘shish qoidalari aniq belgilab olinadi.
+
+3
+00:19.770 --> 00:27.100
+GitHub har bir pull request uchun maxsus yashirin ref yaratadi va
+ularni alohida remote qo‘shmasdan xavfsiz fetch qilish mumkin.
+
+4
+00:27.100 --> 00:33.530
+Maxsus refspek sozlash orqali esa serverdagi barcha pull
+request tarmoqlarini bitta buyruq bilan lokalga tortib olamiz.
+
+5
+00:37.440 --> 00:44.610
+Asosiy tarmoqni himoyalash uchun unga to‘g‘ridan-to‘g‘ri push taqiqlanib,
+faqat pull request va testlar orqali kod kiritish majburlanadi.
+
+6
+00:44.720 --> 00:50.860
+Zamonaviy ruleset tizimi qoidalarni qatlamlab, kim qachon
+o‘zgarish kirita olishini to‘liq va shaffof nazorat qiladi.
+
+7
+00:54.710 --> 01:01.800
+CODEOWNERS fayli orqali muhim papka va modullarga mas’ul shaxslar
+yoki jamoalar biriktirilib, ularning tasdig‘i shart qilib qo‘yiladi.
+
+8
+01:01.890 --> 01:08.830
+Faylda oxirgi mos kelgan qator ustuvor hisoblanadi va tegishli
+o‘zgarishlar kiritilganda mas’ullarga avtomatik so‘rov yuboriladi.
+
+9
+01:12.420 --> 01:19.070
+Tashkilotlarda foydalanuvchilar maxsus jamoalarga birlashtirilib,
+ularga repo darajasida turli darajadagi huquq rollari beriladi.
+
+10
+01:19.100 --> 01:26.200
+Bunday tuzilma yuzlab repozitoriylarga kirish huquqlarini oson
+boshqarish va xavfsizlik auditini muntazam yuritish imkonini beradi.
+
+11
+01:29.950 --> 01:37.220
+Webhook va REST API yordamida esa tekshiruvlar, sharhlar hamda
+avtomatik birlashtirish jarayonlari to‘liq avtomatlashtiriladi.
+
+12
+01:37.330 --> 01:45.210
+Xulosa qilganda, mustahkam himoya qoidalari, CODEOWNERS va to‘g‘ri rollar
+yirik loyihalarni xavfsiz hamda barqaror rivojlantirish garovidir.

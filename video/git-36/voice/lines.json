@@ -1,0 +1,1089 @@
+[
+  {
+    "id": "l1",
+    "scene": "intro",
+    "text": "Salom! Ushbu o‘ttiz oltinchi bobda GitHub platformasida repozitoriy va butun tashkilotni boshqarish vositalarini o‘rganamiz.",
+    "show": "Salom! Ushbu o‘ttiz oltinchi bobda GitHub platformasida repozitoriy va butun tashkilotni boshqarish vositalarini o‘rganamiz.",
+    "say": "Salom! Ushbu o‘ttiz oltinchi bobda git hab platformasida repozitoriy va butun tashkilotni boshqarish vositalarini o‘rganamiz.",
+    "a0": 0.12,
+    "a1": 6.78,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.12,
+        "e": 0.36
+      },
+      {
+        "w": "Ushbu",
+        "s": 0.7,
+        "e": 0.94
+      },
+      {
+        "w": "o‘ttiz",
+        "s": 0.98,
+        "e": 1.2
+      },
+      {
+        "w": "oltinchi",
+        "s": 1.24,
+        "e": 1.54
+      },
+      {
+        "w": "bobda",
+        "s": 1.58,
+        "e": 1.86
+      },
+      {
+        "w": "git",
+        "s": 2.28,
+        "e": 2.42
+      },
+      {
+        "w": "hab",
+        "s": 2.46,
+        "e": 2.6
+      },
+      {
+        "w": "platformasida",
+        "s": 2.62,
+        "e": 3.3
+      },
+      {
+        "w": "repozitoriy",
+        "s": 3.58,
+        "e": 4.2
+      },
+      {
+        "w": "va",
+        "s": 4.3,
+        "e": 4.38
+      },
+      {
+        "w": "butun",
+        "s": 4.56,
+        "e": 4.8
+      },
+      {
+        "w": "tashkilotni",
+        "s": 4.82,
+        "e": 5.34
+      },
+      {
+        "w": "boshqarish",
+        "s": 5.38,
+        "e": 5.78
+      },
+      {
+        "w": "vositalarini",
+        "s": 5.82,
+        "e": 6.34
+      },
+      {
+        "w": "o‘rganamiz.",
+        "s": 6.38,
+        "e": 6.78
+      }
+    ]
+  },
+  {
+    "id": "l2",
+    "scene": "intro",
+    "text": "Loyiha yaxshi boshqarilishi uchun README, CONTRIBUTING va maxsus papkalar orqali hissa qo‘shish qoidalari aniq belgilab olinadi.",
+    "show": "Loyiha yaxshi boshqarilishi uchun README, CONTRIBUTING va maxsus papkalar orqali hissa qo‘shish qoidalari aniq belgilab olinadi.",
+    "say": "Loyiha yaxshi boshqarilishi uchun README, CONTRIBUTING va maxsus papkalar orqali hissa qo‘shish qoidalari aniq belgilab olinadi.",
+    "a0": 7.44,
+    "a1": 14.69,
+    "words": [
+      {
+        "w": "Loyiha",
+        "s": 7.44,
+        "e": 7.75
+      },
+      {
+        "w": "yaxshi",
+        "s": 7.83,
+        "e": 8.07
+      },
+      {
+        "w": "boshqarilishi",
+        "s": 8.09,
+        "e": 8.59
+      },
+      {
+        "w": "uchun",
+        "s": 8.63,
+        "e": 8.83
+      },
+      {
+        "w": "README,",
+        "s": 9.17,
+        "e": 9.47
+      },
+      {
+        "w": "CONTRIBUTING",
+        "s": 9.85,
+        "e": 10.53
+      },
+      {
+        "w": "va",
+        "s": 10.87,
+        "e": 10.97
+      },
+      {
+        "w": "maxsus",
+        "s": 11.23,
+        "e": 11.57
+      },
+      {
+        "w": "papkalar",
+        "s": 11.61,
+        "e": 11.99
+      },
+      {
+        "w": "orqali",
+        "s": 12.07,
+        "e": 12.37
+      },
+      {
+        "w": "hissa",
+        "s": 12.47,
+        "e": 12.75
+      },
+      {
+        "w": "qo‘shish",
+        "s": 12.79,
+        "e": 13.05
+      },
+      {
+        "w": "qoidalari",
+        "s": 13.07,
+        "e": 13.49
+      },
+      {
+        "w": "aniq",
+        "s": 13.69,
+        "e": 13.89
+      },
+      {
+        "w": "belgilab",
+        "s": 13.95,
+        "e": 14.31
+      },
+      {
+        "w": "olinadi.",
+        "s": 14.35,
+        "e": 14.69
+      }
+    ]
+  },
+  {
+    "id": "l3",
+    "scene": "pr_reflari",
+    "text": "GitHub har bir pull request uchun maxsus yashirin ref yaratadi va ularni alohida remote qo‘shmasdan xavfsiz fetch qilish mumkin.",
+    "show": "GitHub har bir pull request uchun maxsus yashirin ref yaratadi va ularni alohida remote qo‘shmasdan xavfsiz fetch qilish mumkin.",
+    "say": "Git hab har bir pul rekvest uchun maxsus yashirin ref yaratadi va ularni alohida remote qo‘shmasdan xavfsiz fetch qilish mumkin.",
+    "a0": 15.37,
+    "a1": 22.25,
+    "words": [
+      {
+        "w": "Git",
+        "s": 15.37,
+        "e": 15.49
+      },
+      {
+        "w": "hab",
+        "s": 15.53,
+        "e": 15.69
+      },
+      {
+        "w": "har",
+        "s": 15.97,
+        "e": 16.13
+      },
+      {
+        "w": "bir",
+        "s": 16.19,
+        "e": 16.29
+      },
+      {
+        "w": "pul",
+        "s": 16.35,
+        "e": 16.47
+      },
+      {
+        "w": "rekvest",
+        "s": 16.53,
+        "e": 16.87
+      },
+      {
+        "w": "uchun",
+        "s": 16.91,
+        "e": 17.09
+      },
+      {
+        "w": "maxsus",
+        "s": 17.31,
+        "e": 17.69
+      },
+      {
+        "w": "yashirin",
+        "s": 17.77,
+        "e": 18.13
+      },
+      {
+        "w": "ref",
+        "s": 18.23,
+        "e": 18.41
+      },
+      {
+        "w": "yaratadi",
+        "s": 18.45,
+        "e": 18.79
+      },
+      {
+        "w": "va",
+        "s": 19.11,
+        "e": 19.17
+      },
+      {
+        "w": "ularni",
+        "s": 19.23,
+        "e": 19.53
+      },
+      {
+        "w": "alohida",
+        "s": 19.63,
+        "e": 20.01
+      },
+      {
+        "w": "remote",
+        "s": 20.05,
+        "e": 20.33
+      },
+      {
+        "w": "qo‘shmasdan",
+        "s": 20.35,
+        "e": 20.83
+      },
+      {
+        "w": "xavfsiz",
+        "s": 21.13,
+        "e": 21.47
+      },
+      {
+        "w": "fetch",
+        "s": 21.55,
+        "e": 21.75
+      },
+      {
+        "w": "qilish",
+        "s": 21.77,
+        "e": 21.97
+      },
+      {
+        "w": "mumkin.",
+        "s": 21.99,
+        "e": 22.25
+      }
+    ]
+  },
+  {
+    "id": "l4",
+    "scene": "pr_reflari",
+    "text": "Maxsus refspek sozlash orqali esa serverdagi barcha pull request tarmoqlarini bitta buyruq bilan lokalga tortib olamiz.",
+    "show": "Maxsus refspek sozlash orqali esa serverdagi barcha pull request tarmoqlarini bitta buyruq bilan lokalga tortib olamiz.",
+    "say": "Maxsus refspek sozlash orqali esa serverdagi barcha pul rekvest tarmoqlarini bitta buyruq bilan lokalga tortib olamiz.",
+    "a0": 22.7,
+    "a1": 28.68,
+    "words": [
+      {
+        "w": "Maxsus",
+        "s": 22.7,
+        "e": 23.02
+      },
+      {
+        "w": "refspek",
+        "s": 23.1,
+        "e": 23.46
+      },
+      {
+        "w": "sozlash",
+        "s": 23.52,
+        "e": 23.84
+      },
+      {
+        "w": "orqali",
+        "s": 23.9,
+        "e": 24.16
+      },
+      {
+        "w": "esa",
+        "s": 24.22,
+        "e": 24.38
+      },
+      {
+        "w": "serverdagi",
+        "s": 24.7,
+        "e": 25.22
+      },
+      {
+        "w": "barcha",
+        "s": 25.32,
+        "e": 25.6
+      },
+      {
+        "w": "pul",
+        "s": 25.64,
+        "e": 25.76
+      },
+      {
+        "w": "rekvest",
+        "s": 25.8,
+        "e": 26.12
+      },
+      {
+        "w": "tarmoqlarini",
+        "s": 26.14,
+        "e": 26.7
+      },
+      {
+        "w": "bitta",
+        "s": 26.82,
+        "e": 27.08
+      },
+      {
+        "w": "buyruq",
+        "s": 27.14,
+        "e": 27.38
+      },
+      {
+        "w": "bilan",
+        "s": 27.42,
+        "e": 27.6
+      },
+      {
+        "w": "lokalga",
+        "s": 27.66,
+        "e": 28.0
+      },
+      {
+        "w": "tortib",
+        "s": 28.06,
+        "e": 28.36
+      },
+      {
+        "w": "olamiz.",
+        "s": 28.4,
+        "e": 28.68
+      }
+    ]
+  },
+  {
+    "id": "l5",
+    "scene": "himoyalangan_branch",
+    "text": "Asosiy tarmoqni himoyalash uchun unga to‘g‘ridan-to‘g‘ri push taqiqlanib, faqat pull request va testlar orqali kod kiritish majburlanadi.",
+    "show": "Asosiy tarmoqni himoyalash uchun unga to‘g‘ridan-to‘g‘ri push taqiqlanib, faqat pull request va testlar orqali kod kiritish majburlanadi.",
+    "say": "Asosiy tarmoqni himoyalash uchun unga to‘g‘ridan-to‘g‘ri push taqiqlanib, faqat pul rekvest va testlar orqali kod kiritish majburlanadi.",
+    "a0": 29.44,
+    "a1": 36.16,
+    "words": [
+      {
+        "w": "Asosiy",
+        "s": 29.44,
+        "e": 29.76
+      },
+      {
+        "w": "tarmoqni",
+        "s": 29.82,
+        "e": 30.18
+      },
+      {
+        "w": "himoyalash",
+        "s": 30.2,
+        "e": 30.66
+      },
+      {
+        "w": "uchun",
+        "s": 30.68,
+        "e": 30.86
+      },
+      {
+        "w": "unga",
+        "s": 31.14,
+        "e": 31.3
+      },
+      {
+        "w": "to‘g‘ridan-to‘g‘ri",
+        "s": 31.38,
+        "e": 31.96
+      },
+      {
+        "w": "push",
+        "s": 32.02,
+        "e": 32.18
+      },
+      {
+        "w": "taqiqlanib,",
+        "s": 32.22,
+        "e": 32.7
+      },
+      {
+        "w": "faqat",
+        "s": 32.98,
+        "e": 33.26
+      },
+      {
+        "w": "pul",
+        "s": 33.34,
+        "e": 33.48
+      },
+      {
+        "w": "rekvest",
+        "s": 33.54,
+        "e": 33.96
+      },
+      {
+        "w": "va",
+        "s": 34.06,
+        "e": 34.12
+      },
+      {
+        "w": "testlar",
+        "s": 34.28,
+        "e": 34.62
+      },
+      {
+        "w": "orqali",
+        "s": 34.66,
+        "e": 34.92
+      },
+      {
+        "w": "kod",
+        "s": 34.98,
+        "e": 35.14
+      },
+      {
+        "w": "kiritish",
+        "s": 35.18,
+        "e": 35.48
+      },
+      {
+        "w": "majburlanadi.",
+        "s": 35.54,
+        "e": 36.16
+      }
+    ]
+  },
+  {
+    "id": "l6",
+    "scene": "himoyalangan_branch",
+    "text": "Zamonaviy ruleset tizimi qoidalarni qatlamlab, kim qachon o‘zgarish kirita olishini to‘liq va shaffof nazorat qiladi.",
+    "show": "Zamonaviy ruleset tizimi qoidalarni qatlamlab, kim qachon o‘zgarish kirita olishini to‘liq va shaffof nazorat qiladi.",
+    "say": "Zamonaviy rulset tizimi qoidalarni qatlamlab, kim qachon o‘zgarish kirita olishini to‘liq va shaffof nazorat qiladi.",
+    "a0": 36.72,
+    "a1": 42.41,
+    "words": [
+      {
+        "w": "Zamonaviy",
+        "s": 36.72,
+        "e": 37.16
+      },
+      {
+        "w": "rulset",
+        "s": 37.22,
+        "e": 37.51
+      },
+      {
+        "w": "tizimi",
+        "s": 37.55,
+        "e": 37.85
+      },
+      {
+        "w": "qoidalarni",
+        "s": 37.95,
+        "e": 38.43
+      },
+      {
+        "w": "qatlamlab,",
+        "s": 38.47,
+        "e": 38.99
+      },
+      {
+        "w": "kim",
+        "s": 39.27,
+        "e": 39.49
+      },
+      {
+        "w": "qachon",
+        "s": 39.61,
+        "e": 39.91
+      },
+      {
+        "w": "o‘zgarish",
+        "s": 39.97,
+        "e": 40.29
+      },
+      {
+        "w": "kirita",
+        "s": 40.31,
+        "e": 40.53
+      },
+      {
+        "w": "olishini",
+        "s": 40.59,
+        "e": 40.87
+      },
+      {
+        "w": "to‘liq",
+        "s": 40.99,
+        "e": 41.27
+      },
+      {
+        "w": "va",
+        "s": 41.31,
+        "e": 41.37
+      },
+      {
+        "w": "shaffof",
+        "s": 41.43,
+        "e": 41.77
+      },
+      {
+        "w": "nazorat",
+        "s": 41.83,
+        "e": 42.15
+      },
+      {
+        "w": "qiladi.",
+        "s": 42.17,
+        "e": 42.41
+      }
+    ]
+  },
+  {
+    "id": "l7",
+    "scene": "codeowners",
+    "text": "CODEOWNERS fayli orqali muhim papka va modullarga mas’ul shaxslar yoki jamoalar biriktirilib, ularning tasdig‘i shart qilib qo‘yiladi.",
+    "show": "CODEOWNERS fayli orqali muhim papka va modullarga mas’ul shaxslar yoki jamoalar biriktirilib, ularning tasdig‘i shart qilib qo‘yiladi.",
+    "say": "Kod ouners fayli orqali muhim papka va modullarga mas’ul shaxslar yoki jamoalar biriktirilib, ularning tasdig‘i shart qilib qo‘yiladi.",
+    "a0": 43.11,
+    "a1": 49.75,
+    "words": [
+      {
+        "w": "Kod",
+        "s": 43.11,
+        "e": 43.29
+      },
+      {
+        "w": "ouners",
+        "s": 43.37,
+        "e": 43.67
+      },
+      {
+        "w": "fayli",
+        "s": 43.71,
+        "e": 43.95
+      },
+      {
+        "w": "orqali",
+        "s": 43.99,
+        "e": 44.27
+      },
+      {
+        "w": "muhim",
+        "s": 44.35,
+        "e": 44.57
+      },
+      {
+        "w": "papka",
+        "s": 44.63,
+        "e": 44.93
+      },
+      {
+        "w": "va",
+        "s": 45.05,
+        "e": 45.11
+      },
+      {
+        "w": "modullarga",
+        "s": 45.25,
+        "e": 45.77
+      },
+      {
+        "w": "mas’ul",
+        "s": 45.85,
+        "e": 46.19
+      },
+      {
+        "w": "shaxslar",
+        "s": 46.23,
+        "e": 46.61
+      },
+      {
+        "w": "yoki",
+        "s": 46.67,
+        "e": 46.87
+      },
+      {
+        "w": "jamoalar",
+        "s": 46.97,
+        "e": 47.39
+      },
+      {
+        "w": "biriktirilib,",
+        "s": 47.43,
+        "e": 47.89
+      },
+      {
+        "w": "ularning",
+        "s": 48.19,
+        "e": 48.51
+      },
+      {
+        "w": "tasdig‘i",
+        "s": 48.51,
+        "e": 48.89
+      },
+      {
+        "w": "shart",
+        "s": 48.97,
+        "e": 49.19
+      },
+      {
+        "w": "qilib",
+        "s": 49.23,
+        "e": 49.39
+      },
+      {
+        "w": "qo‘yiladi.",
+        "s": 49.41,
+        "e": 49.75
+      }
+    ]
+  },
+  {
+    "id": "l8",
+    "scene": "codeowners",
+    "text": "Faylda oxirgi mos kelgan qator ustuvor hisoblanadi va tegishli o‘zgarishlar kiritilganda mas’ullarga avtomatik so‘rov yuboriladi.",
+    "show": "Faylda oxirgi mos kelgan qator ustuvor hisoblanadi va tegishli o‘zgarishlar kiritilganda mas’ullarga avtomatik so‘rov yuboriladi.",
+    "say": "Faylda oxirgi mos kelgan qator ustuvor hisoblanadi va tegishli o‘zgarishlar kiritilganda mas’ullarga avtomatik so‘rov yuboriladi.",
+    "a0": 50.29,
+    "a1": 56.78,
+    "words": [
+      {
+        "w": "Faylda",
+        "s": 50.29,
+        "e": 50.67
+      },
+      {
+        "w": "oxirgi",
+        "s": 50.83,
+        "e": 51.15
+      },
+      {
+        "w": "mos",
+        "s": 51.19,
+        "e": 51.33
+      },
+      {
+        "w": "kelgan",
+        "s": 51.35,
+        "e": 51.59
+      },
+      {
+        "w": "qator",
+        "s": 51.63,
+        "e": 51.87
+      },
+      {
+        "w": "ustuvor",
+        "s": 51.99,
+        "e": 52.35
+      },
+      {
+        "w": "hisoblanadi",
+        "s": 52.37,
+        "e": 52.82
+      },
+      {
+        "w": "va",
+        "s": 53.12,
+        "e": 53.18
+      },
+      {
+        "w": "tegishli",
+        "s": 53.28,
+        "e": 53.62
+      },
+      {
+        "w": "o‘zgarishlar",
+        "s": 53.68,
+        "e": 54.06
+      },
+      {
+        "w": "kiritilganda",
+        "s": 54.08,
+        "e": 54.62
+      },
+      {
+        "w": "mas’ullarga",
+        "s": 54.9,
+        "e": 55.46
+      },
+      {
+        "w": "avtomatik",
+        "s": 55.6,
+        "e": 56.06
+      },
+      {
+        "w": "so‘rov",
+        "s": 56.08,
+        "e": 56.3
+      },
+      {
+        "w": "yuboriladi.",
+        "s": 56.32,
+        "e": 56.78
+      }
+    ]
+  },
+  {
+    "id": "l9",
+    "scene": "tashkilot_va_jamoalar",
+    "text": "Tashkilotlarda foydalanuvchilar maxsus jamoalarga birlashtirilib, ularga repo darajasida turli darajadagi huquq rollari beriladi.",
+    "show": "Tashkilotlarda foydalanuvchilar maxsus jamoalarga birlashtirilib, ularga repo darajasida turli darajadagi huquq rollari beriladi.",
+    "say": "Tashkilotlarda foydalanuvchilar maxsus jamoalarga birlashtirilib, ularga repo darajasida turli darajadagi huquq rollari beriladi.",
+    "a0": 57.22,
+    "a1": 63.42,
+    "words": [
+      {
+        "w": "Tashkilotlarda",
+        "s": 57.22,
+        "e": 57.86
+      },
+      {
+        "w": "foydalanuvchilar",
+        "s": 57.94,
+        "e": 58.6
+      },
+      {
+        "w": "maxsus",
+        "s": 58.76,
+        "e": 59.1
+      },
+      {
+        "w": "jamoalarga",
+        "s": 59.16,
+        "e": 59.68
+      },
+      {
+        "w": "birlashtirilib,",
+        "s": 59.72,
+        "e": 60.26
+      },
+      {
+        "w": "ularga",
+        "s": 60.54,
+        "e": 60.82
+      },
+      {
+        "w": "repo",
+        "s": 60.96,
+        "e": 61.16
+      },
+      {
+        "w": "darajasida",
+        "s": 61.22,
+        "e": 61.64
+      },
+      {
+        "w": "turli",
+        "s": 61.7,
+        "e": 61.94
+      },
+      {
+        "w": "darajadagi",
+        "s": 61.96,
+        "e": 62.38
+      },
+      {
+        "w": "huquq",
+        "s": 62.42,
+        "e": 62.66
+      },
+      {
+        "w": "rollari",
+        "s": 62.72,
+        "e": 63.04
+      },
+      {
+        "w": "beriladi.",
+        "s": 63.06,
+        "e": 63.42
+      }
+    ]
+  },
+  {
+    "id": "l10",
+    "scene": "tashkilot_va_jamoalar",
+    "text": "Bunday tuzilma yuzlab repozitoriylarga kirish huquqlarini oson boshqarish va xavfsizlik auditini muntazam yuritish imkonini beradi.",
+    "show": "Bunday tuzilma yuzlab repozitoriylarga kirish huquqlarini oson boshqarish va xavfsizlik auditini muntazam yuritish imkonini beradi.",
+    "say": "Bunday tuzilma yuzlab repozitoriylarga kirish huquqlarini oson boshqarish va xavfsizlik auditini muntazam yuritish imkonini beradi.",
+    "a0": 63.9,
+    "a1": 70.55,
+    "words": [
+      {
+        "w": "Bunday",
+        "s": 63.9,
+        "e": 64.16
+      },
+      {
+        "w": "tuzilma",
+        "s": 64.18,
+        "e": 64.5
+      },
+      {
+        "w": "yuzlab",
+        "s": 64.84,
+        "e": 65.14
+      },
+      {
+        "w": "repozitoriylarga",
+        "s": 65.16,
+        "e": 65.86
+      },
+      {
+        "w": "kirish",
+        "s": 65.92,
+        "e": 66.12
+      },
+      {
+        "w": "huquqlarini",
+        "s": 66.14,
+        "e": 66.61
+      },
+      {
+        "w": "oson",
+        "s": 66.75,
+        "e": 67.01
+      },
+      {
+        "w": "boshqarish",
+        "s": 67.05,
+        "e": 67.49
+      },
+      {
+        "w": "va",
+        "s": 67.79,
+        "e": 67.85
+      },
+      {
+        "w": "xavfsizlik",
+        "s": 68.01,
+        "e": 68.47
+      },
+      {
+        "w": "auditini",
+        "s": 68.53,
+        "e": 68.95
+      },
+      {
+        "w": "muntazam",
+        "s": 69.03,
+        "e": 69.43
+      },
+      {
+        "w": "yuritish",
+        "s": 69.47,
+        "e": 69.77
+      },
+      {
+        "w": "imkonini",
+        "s": 69.83,
+        "e": 70.25
+      },
+      {
+        "w": "beradi.",
+        "s": 70.29,
+        "e": 70.55
+      }
+    ]
+  },
+  {
+    "id": "l11",
+    "scene": "avtomatlashtirish_va_xulosa",
+    "text": "Webhook va REST API yordamida esa tekshiruvlar, sharhlar hamda avtomatik birlashtirish jarayonlari to‘liq avtomatlashtiriladi.",
+    "show": "Webhook va REST API yordamida esa tekshiruvlar, sharhlar hamda avtomatik birlashtirish jarayonlari to‘liq avtomatlashtiriladi.",
+    "say": "Vebhuk va rest ey-pi-ay yordamida esa tekshiruvlar, sharhlar hamda avtomatik birlashtirish jarayonlari to‘liq avtomatlashtiriladi.",
+    "a0": 71.15,
+    "a1": 77.97,
+    "words": [
+      {
+        "w": "Vebhuk",
+        "s": 71.15,
+        "e": 71.53
+      },
+      {
+        "w": "va",
+        "s": 71.63,
+        "e": 71.69
+      },
+      {
+        "w": "rest",
+        "s": 71.89,
+        "e": 72.09
+      },
+      {
+        "w": "ey-pi-ay",
+        "s": 72.17,
+        "e": 72.43
+      },
+      {
+        "w": "yordamida",
+        "s": 72.45,
+        "e": 72.87
+      },
+      {
+        "w": "esa",
+        "s": 72.91,
+        "e": 73.05
+      },
+      {
+        "w": "tekshiruvlar,",
+        "s": 73.37,
+        "e": 73.97
+      },
+      {
+        "w": "sharhlar",
+        "s": 74.23,
+        "e": 74.65
+      },
+      {
+        "w": "hamda",
+        "s": 74.89,
+        "e": 75.15
+      },
+      {
+        "w": "avtomatik",
+        "s": 75.33,
+        "e": 75.77
+      },
+      {
+        "w": "birlashtirish",
+        "s": 75.81,
+        "e": 76.23
+      },
+      {
+        "w": "jarayonlari",
+        "s": 76.25,
+        "e": 76.69
+      },
+      {
+        "w": "to‘liq",
+        "s": 76.81,
+        "e": 77.09
+      },
+      {
+        "w": "avtomatlashtiriladi.",
+        "s": 77.15,
+        "e": 77.97
+      }
+    ]
+  },
+  {
+    "id": "l12",
+    "scene": "avtomatlashtirish_va_xulosa",
+    "text": "Xulosa qilganda, mustahkam himoya qoidalari, CODEOWNERS va to‘g‘ri rollar yirik loyihalarni xavfsiz hamda barqaror rivojlantirish garovidir.",
+    "show": "Xulosa qilganda, mustahkam himoya qoidalari, CODEOWNERS va to‘g‘ri rollar yirik loyihalarni xavfsiz hamda barqaror rivojlantirish garovidir.",
+    "say": "Xulosa qilganda, mustahkam himoya qoidalari, kod ouners va to‘g‘ri rollar yirik loyihalarni xavfsiz hamda barqaror rivojlantirish garovidir.",
+    "a0": 78.53,
+    "a1": 85.96,
+    "words": [
+      {
+        "w": "Xulosa",
+        "s": 78.53,
+        "e": 78.79
+      },
+      {
+        "w": "qilganda,",
+        "s": 78.83,
+        "e": 79.21
+      },
+      {
+        "w": "mustahkam",
+        "s": 79.53,
+        "e": 80.0
+      },
+      {
+        "w": "himoya",
+        "s": 80.04,
+        "e": 80.36
+      },
+      {
+        "w": "qoidalari,",
+        "s": 80.42,
+        "e": 80.86
+      },
+      {
+        "w": "kod",
+        "s": 81.2,
+        "e": 81.36
+      },
+      {
+        "w": "ouners",
+        "s": 81.44,
+        "e": 81.72
+      },
+      {
+        "w": "va",
+        "s": 81.8,
+        "e": 81.88
+      },
+      {
+        "w": "to‘g‘ri",
+        "s": 82.04,
+        "e": 82.32
+      },
+      {
+        "w": "rollar",
+        "s": 82.36,
+        "e": 82.66
+      },
+      {
+        "w": "yirik",
+        "s": 82.96,
+        "e": 83.18
+      },
+      {
+        "w": "loyihalarni",
+        "s": 83.24,
+        "e": 83.68
+      },
+      {
+        "w": "xavfsiz",
+        "s": 83.76,
+        "e": 84.14
+      },
+      {
+        "w": "hamda",
+        "s": 84.18,
+        "e": 84.42
+      },
+      {
+        "w": "barqaror",
+        "s": 84.56,
+        "e": 84.96
+      },
+      {
+        "w": "rivojlantirish",
+        "s": 84.98,
+        "e": 85.5
+      },
+      {
+        "w": "garovidir.",
+        "s": 85.52,
+        "e": 85.96
+      }
+    ]
+  }
+]
