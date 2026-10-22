@@ -1,0 +1,1204 @@
+[
+  {
+    "id": "l1",
+    "scene": "blame_basics",
+    "text": "Git dasturchiga nafaqat versiyalarni saqlash, balki murakkab xatoliklarni aniqlash va disk raskadrovka qilishda ham kuchli vositalarni taqdim etadi.",
+    "show": "Git dasturchiga nafaqat versiyalarni saqlash, balki murakkab xatoliklarni aniqlash va disk raskadrovka qilishda ham kuchli vositalarni taqdim etadi.",
+    "say": "Git dasturchiga nafaqat versiyalarni saqlash, balki murakkab xatoliklarni aniqlash va disk raskadrovka qilishda ham kuchli vositalarni taqdim etadi.",
+    "a0": 0.42,
+    "a1": 8.67,
+    "words": [
+      {
+        "w": "Git",
+        "s": 0.42,
+        "e": 0.62
+      },
+      {
+        "w": "dasturchiga",
+        "s": 0.82,
+        "e": 1.36
+      },
+      {
+        "w": "nafaqat",
+        "s": 1.42,
+        "e": 1.76
+      },
+      {
+        "w": "versiyalarni",
+        "s": 1.82,
+        "e": 2.38
+      },
+      {
+        "w": "saqlash,",
+        "s": 2.44,
+        "e": 2.84
+      },
+      {
+        "w": "balki",
+        "s": 3.0,
+        "e": 3.26
+      },
+      {
+        "w": "murakkab",
+        "s": 3.4,
+        "e": 3.88
+      },
+      {
+        "w": "xatoliklarni",
+        "s": 3.92,
+        "e": 4.6
+      },
+      {
+        "w": "aniqlash",
+        "s": 4.68,
+        "e": 5.14
+      },
+      {
+        "w": "va",
+        "s": 5.2,
+        "e": 5.28
+      },
+      {
+        "w": "disk",
+        "s": 5.48,
+        "e": 5.72
+      },
+      {
+        "w": "raskadrovka",
+        "s": 5.86,
+        "e": 6.42
+      },
+      {
+        "w": "qilishda",
+        "s": 6.48,
+        "e": 6.78
+      },
+      {
+        "w": "ham",
+        "s": 6.82,
+        "e": 6.98
+      },
+      {
+        "w": "kuchli",
+        "s": 7.08,
+        "e": 7.36
+      },
+      {
+        "w": "vositalarni",
+        "s": 7.44,
+        "e": 8.09
+      },
+      {
+        "w": "taqdim",
+        "s": 8.13,
+        "e": 8.39
+      },
+      {
+        "w": "etadi.",
+        "s": 8.43,
+        "e": 8.67
+      }
+    ]
+  },
+  {
+    "id": "l2",
+    "scene": "blame_basics",
+    "text": "git blame buyrug'i faylning har bir qatori yoniga uni oxirgi marta o'zgartirgan commit, muallif va vaqtni aniq ko'rsatib, kodning kelib chiqish kontekstini ochadi.",
+    "show": "git blame buyrug'i faylning har bir qatori yoniga uni oxirgi marta o'zgartirgan commit, muallif va vaqtni aniq ko'rsatib, kodning kelib chiqish kontekstini ochadi.",
+    "say": "Git bleym buyrug'i faylning har bir qatori yoniga uni oxirgi marta o'zgartirgan kommit, muallif va vaqtni aniq ko'rsatib, kodning kelib chiqish kontekstini ochadi.",
+    "a0": 9.69,
+    "a1": 18.47,
+    "words": [
+      {
+        "w": "Git",
+        "s": 9.69,
+        "e": 9.83
+      },
+      {
+        "w": "bleym",
+        "s": 9.93,
+        "e": 10.19
+      },
+      {
+        "w": "buyrug'i",
+        "s": 10.23,
+        "e": 10.61
+      },
+      {
+        "w": "faylning",
+        "s": 10.79,
+        "e": 11.19
+      },
+      {
+        "w": "har",
+        "s": 11.25,
+        "e": 11.39
+      },
+      {
+        "w": "bir",
+        "s": 11.43,
+        "e": 11.53
+      },
+      {
+        "w": "qatori",
+        "s": 11.57,
+        "e": 11.91
+      },
+      {
+        "w": "yoniga",
+        "s": 11.91,
+        "e": 12.23
+      },
+      {
+        "w": "uni",
+        "s": 12.35,
+        "e": 12.49
+      },
+      {
+        "w": "oxirgi",
+        "s": 12.63,
+        "e": 12.93
+      },
+      {
+        "w": "marta",
+        "s": 12.97,
+        "e": 13.19
+      },
+      {
+        "w": "o'zgartirgan",
+        "s": 13.25,
+        "e": 13.85
+      },
+      {
+        "w": "kommit,",
+        "s": 13.97,
+        "e": 14.39
+      },
+      {
+        "w": "muallif",
+        "s": 14.59,
+        "e": 14.91
+      },
+      {
+        "w": "va",
+        "s": 14.97,
+        "e": 15.03
+      },
+      {
+        "w": "vaqtni",
+        "s": 15.11,
+        "e": 15.43
+      },
+      {
+        "w": "aniq",
+        "s": 15.53,
+        "e": 15.71
+      },
+      {
+        "w": "ko'rsatib,",
+        "s": 15.73,
+        "e": 16.17
+      },
+      {
+        "w": "kodning",
+        "s": 16.51,
+        "e": 16.91
+      },
+      {
+        "w": "kelib",
+        "s": 17.01,
+        "e": 17.29
+      },
+      {
+        "w": "chiqish",
+        "s": 17.33,
+        "e": 17.55
+      },
+      {
+        "w": "kontekstini",
+        "s": 17.59,
+        "e": 18.15
+      },
+      {
+        "w": "ochadi.",
+        "s": 18.17,
+        "e": 18.47
+      }
+    ]
+  },
+  {
+    "id": "l3",
+    "scene": "blame_ignore_format",
+    "text": "Katta formatlash yoki bo'sh joylarni o'zgartirish commitlari asl mualliflik tarixini yashirib qo'ymasligi uchun minus w kaliti qo'llanadi.",
+    "show": "Katta formatlash yoki bo'sh joylarni o'zgartirish commitlari asl mualliflik tarixini yashirib qo'ymasligi uchun minus w kaliti qo'llanadi.",
+    "say": "Katta formatlash yoki bo'sh joylarni o'zgartirish commitlari asl mualliflik tarixini yashirib qo'ymasligi uchun minus dabl-yu kaliti qo'llanadi.",
+    "a0": 19.37,
+    "a1": 26.7,
+    "words": [
+      {
+        "w": "Katta",
+        "s": 19.37,
+        "e": 19.65
+      },
+      {
+        "w": "formatlash",
+        "s": 19.71,
+        "e": 20.35
+      },
+      {
+        "w": "yoki",
+        "s": 20.39,
+        "e": 20.61
+      },
+      {
+        "w": "bo'sh",
+        "s": 20.75,
+        "e": 20.95
+      },
+      {
+        "w": "joylarni",
+        "s": 20.97,
+        "e": 21.39
+      },
+      {
+        "w": "o'zgartirish",
+        "s": 21.45,
+        "e": 21.89
+      },
+      {
+        "w": "commitlari",
+        "s": 21.91,
+        "e": 22.37
+      },
+      {
+        "w": "asl",
+        "s": 22.54,
+        "e": 22.76
+      },
+      {
+        "w": "mualliflik",
+        "s": 22.8,
+        "e": 23.28
+      },
+      {
+        "w": "tarixini",
+        "s": 23.32,
+        "e": 23.7
+      },
+      {
+        "w": "yashirib",
+        "s": 23.76,
+        "e": 24.06
+      },
+      {
+        "w": "qo'ymasligi",
+        "s": 24.08,
+        "e": 24.56
+      },
+      {
+        "w": "uchun",
+        "s": 24.62,
+        "e": 24.8
+      },
+      {
+        "w": "minus",
+        "s": 25.16,
+        "e": 25.46
+      },
+      {
+        "w": "dabl-yu",
+        "s": 25.52,
+        "e": 25.78
+      },
+      {
+        "w": "kaliti",
+        "s": 25.84,
+        "e": 26.12
+      },
+      {
+        "w": "qo'llanadi.",
+        "s": 26.14,
+        "e": 26.7
+      }
+    ]
+  },
+  {
+    "id": "l4",
+    "scene": "blame_ignore_format",
+    "text": "Jamoa miqyosida esa nuqta git-blame-ignore-revs fayliga bunday commitlar kiritilib, butunlay e'tiborsiz qoldirilishi mumkin.",
+    "show": "Jamoa miqyosida esa nuqta git-blame-ignore-revs fayliga bunday commitlar kiritilib, butunlay e'tiborsiz qoldirilishi mumkin.",
+    "say": "Jamoa miqyosida esa nuqta git-bleym-ignore-revs fayliga bunday kommitlar kiritilib, butunlay e'tiborsiz qoldirilishi mumkin.",
+    "a0": 27.78,
+    "a1": 34.28,
+    "words": [
+      {
+        "w": "Jamoa",
+        "s": 27.78,
+        "e": 28.12
+      },
+      {
+        "w": "miqyosida",
+        "s": 28.18,
+        "e": 28.68
+      },
+      {
+        "w": "esa",
+        "s": 28.72,
+        "e": 28.9
+      },
+      {
+        "w": "nuqta",
+        "s": 29.18,
+        "e": 29.46
+      },
+      {
+        "w": "git-bleym-ignore-revs",
+        "s": 29.58,
+        "e": 30.8
+      },
+      {
+        "w": "fayliga",
+        "s": 30.84,
+        "e": 31.22
+      },
+      {
+        "w": "bunday",
+        "s": 31.34,
+        "e": 31.6
+      },
+      {
+        "w": "kommitlar",
+        "s": 31.64,
+        "e": 32.02
+      },
+      {
+        "w": "kiritilib,",
+        "s": 32.06,
+        "e": 32.42
+      },
+      {
+        "w": "butunlay",
+        "s": 32.48,
+        "e": 32.94
+      },
+      {
+        "w": "e'tiborsiz",
+        "s": 33.06,
+        "e": 33.48
+      },
+      {
+        "w": "qoldirilishi",
+        "s": 33.54,
+        "e": 34.0
+      },
+      {
+        "w": "mumkin.",
+        "s": 34.0,
+        "e": 34.28
+      }
+    ]
+  },
+  {
+    "id": "l5",
+    "scene": "blame_moved_code",
+    "text": "Refaktoring paytida kod boshqa faylga yoki funksiyaga ko'chirilganda, minus M va minus C bayroqlari uning asl tug'ilgan joyini topib beradi.",
+    "show": "Refaktoring paytida kod boshqa faylga yoki funksiyaga ko'chirilganda, minus M va minus C bayroqlari uning asl tug'ilgan joyini topib beradi.",
+    "say": "Refaktoring paytida kod boshqa faylga yoki funksiyaga ko'chirilganda, minus em va minus si bayroqlari uning asl tug'ilgan joyini topib beradi.",
+    "a0": 35.2,
+    "a1": 43.03,
+    "words": [
+      {
+        "w": "Refaktoring",
+        "s": 35.2,
+        "e": 35.72
+      },
+      {
+        "w": "paytida",
+        "s": 35.74,
+        "e": 36.1
+      },
+      {
+        "w": "kod",
+        "s": 36.24,
+        "e": 36.44
+      },
+      {
+        "w": "boshqa",
+        "s": 36.54,
+        "e": 36.8
+      },
+      {
+        "w": "faylga",
+        "s": 36.86,
+        "e": 37.26
+      },
+      {
+        "w": "yoki",
+        "s": 37.28,
+        "e": 37.61
+      },
+      {
+        "w": "funksiyaga",
+        "s": 37.67,
+        "e": 38.09
+      },
+      {
+        "w": "ko'chirilganda,",
+        "s": 38.15,
+        "e": 38.75
+      },
+      {
+        "w": "minus",
+        "s": 39.07,
+        "e": 39.37
+      },
+      {
+        "w": "em",
+        "s": 39.51,
+        "e": 39.63
+      },
+      {
+        "w": "va",
+        "s": 39.71,
+        "e": 39.79
+      },
+      {
+        "w": "minus",
+        "s": 39.99,
+        "e": 40.27
+      },
+      {
+        "w": "si",
+        "s": 40.33,
+        "e": 40.43
+      },
+      {
+        "w": "bayroqlari",
+        "s": 40.51,
+        "e": 41.03
+      },
+      {
+        "w": "uning",
+        "s": 41.11,
+        "e": 41.31
+      },
+      {
+        "w": "asl",
+        "s": 41.45,
+        "e": 41.69
+      },
+      {
+        "w": "tug'ilgan",
+        "s": 41.73,
+        "e": 42.11
+      },
+      {
+        "w": "joyini",
+        "s": 42.17,
+        "e": 42.45
+      },
+      {
+        "w": "topib",
+        "s": 42.49,
+        "e": 42.73
+      },
+      {
+        "w": "beradi.",
+        "s": 42.75,
+        "e": 43.03
+      }
+    ]
+  },
+  {
+    "id": "l6",
+    "scene": "blame_moved_code",
+    "text": "Natijada siz kodni shunchaki ko'chirgan odamni emas, balki uni dastlab yozgan asl muallif va commitni aniq ko'rasiz.",
+    "show": "Natijada siz kodni shunchaki ko'chirgan odamni emas, balki uni dastlab yozgan asl muallif va commitni aniq ko'rasiz.",
+    "say": "Natijada siz kodni shunchaki ko'chirgan odamni emas, balki uni dastlab yozgan asl muallif va commitni aniq ko'rasiz.",
+    "a0": 43.87,
+    "a1": 50.19,
+    "words": [
+      {
+        "w": "Natijada",
+        "s": 43.87,
+        "e": 44.33
+      },
+      {
+        "w": "siz",
+        "s": 44.41,
+        "e": 44.61
+      },
+      {
+        "w": "kodni",
+        "s": 44.71,
+        "e": 45.01
+      },
+      {
+        "w": "shunchaki",
+        "s": 45.07,
+        "e": 45.45
+      },
+      {
+        "w": "ko'chirgan",
+        "s": 45.53,
+        "e": 45.93
+      },
+      {
+        "w": "odamni",
+        "s": 45.99,
+        "e": 46.25
+      },
+      {
+        "w": "emas,",
+        "s": 46.31,
+        "e": 46.57
+      },
+      {
+        "w": "balki",
+        "s": 46.67,
+        "e": 46.91
+      },
+      {
+        "w": "uni",
+        "s": 46.97,
+        "e": 47.11
+      },
+      {
+        "w": "dastlab",
+        "s": 47.43,
+        "e": 47.79
+      },
+      {
+        "w": "yozgan",
+        "s": 47.81,
+        "e": 48.13
+      },
+      {
+        "w": "asl",
+        "s": 48.25,
+        "e": 48.47
+      },
+      {
+        "w": "muallif",
+        "s": 48.51,
+        "e": 48.87
+      },
+      {
+        "w": "va",
+        "s": 48.93,
+        "e": 48.99
+      },
+      {
+        "w": "commitni",
+        "s": 49.07,
+        "e": 49.49
+      },
+      {
+        "w": "aniq",
+        "s": 49.57,
+        "e": 49.75
+      },
+      {
+        "w": "ko'rasiz.",
+        "s": 49.79,
+        "e": 50.19
+      }
+    ]
+  },
+  {
+    "id": "l7",
+    "scene": "bisect_manual",
+    "text": "Xato qachon va qaysi commitda paydo bo'lganini bilmagan hollarda git bisect ikkilik qidiruv mexanizmi ishga tushiriladi.",
+    "show": "Xato qachon va qaysi commitda paydo bo'lganini bilmagan hollarda git bisect ikkilik qidiruv mexanizmi ishga tushiriladi.",
+    "say": "Xato qachon va qaysi kommitda paydo bo'lganini bilmagan hollarda git baysekt ikkilik qidiruv mexanizmi ishga tushiriladi.",
+    "a0": 51.05,
+    "a1": 57.76,
+    "words": [
+      {
+        "w": "Xato",
+        "s": 51.05,
+        "e": 51.29
+      },
+      {
+        "w": "qachon",
+        "s": 51.41,
+        "e": 51.79
+      },
+      {
+        "w": "va",
+        "s": 51.87,
+        "e": 51.95
+      },
+      {
+        "w": "qaysi",
+        "s": 52.15,
+        "e": 52.43
+      },
+      {
+        "w": "kommitda",
+        "s": 52.49,
+        "e": 52.9
+      },
+      {
+        "w": "paydo",
+        "s": 52.96,
+        "e": 53.22
+      },
+      {
+        "w": "bo'lganini",
+        "s": 53.28,
+        "e": 53.7
+      },
+      {
+        "w": "bilmagan",
+        "s": 53.76,
+        "e": 54.14
+      },
+      {
+        "w": "hollarda",
+        "s": 54.2,
+        "e": 54.64
+      },
+      {
+        "w": "git",
+        "s": 54.92,
+        "e": 55.06
+      },
+      {
+        "w": "baysekt",
+        "s": 55.14,
+        "e": 55.64
+      },
+      {
+        "w": "ikkilik",
+        "s": 55.86,
+        "e": 56.22
+      },
+      {
+        "w": "qidiruv",
+        "s": 56.3,
+        "e": 56.58
+      },
+      {
+        "w": "mexanizmi",
+        "s": 56.62,
+        "e": 57.08
+      },
+      {
+        "w": "ishga",
+        "s": 57.14,
+        "e": 57.3
+      },
+      {
+        "w": "tushiriladi.",
+        "s": 57.34,
+        "e": 57.76
+      }
+    ]
+  },
+  {
+    "id": "l8",
+    "scene": "bisect_manual",
+    "text": "U yaxshi va yomon commitlar orasidagi o'rtacha nuqtani chiqarib beradi, siz uni sinab, minglab commitlar orasidan aybdorni sanoqli qadamda topasiz.",
+    "show": "U yaxshi va yomon commitlar orasidagi o'rtacha nuqtani chiqarib beradi, siz uni sinab, minglab commitlar orasidan aybdorni sanoqli qadamda topasiz.",
+    "say": "U yaxshi va yomon kommitlar orasidagi o'rtacha nuqtani chiqarib beradi, siz uni sinab, minglab kommitlar orasidan aybdorni sanoqli qadamda topasiz.",
+    "a0": 58.68,
+    "a1": 66.3,
+    "words": [
+      {
+        "w": "U",
+        "s": 58.68,
+        "e": 58.7
+      },
+      {
+        "w": "yaxshi",
+        "s": 58.98,
+        "e": 59.28
+      },
+      {
+        "w": "va",
+        "s": 59.32,
+        "e": 59.38
+      },
+      {
+        "w": "yomon",
+        "s": 59.46,
+        "e": 59.72
+      },
+      {
+        "w": "kommitlar",
+        "s": 59.8,
+        "e": 60.18
+      },
+      {
+        "w": "orasidagi",
+        "s": 60.22,
+        "e": 60.62
+      },
+      {
+        "w": "o'rtacha",
+        "s": 60.76,
+        "e": 61.08
+      },
+      {
+        "w": "nuqtani",
+        "s": 61.1,
+        "e": 61.4
+      },
+      {
+        "w": "chiqarib",
+        "s": 61.44,
+        "e": 61.7
+      },
+      {
+        "w": "beradi,",
+        "s": 61.72,
+        "e": 61.98
+      },
+      {
+        "w": "siz",
+        "s": 62.26,
+        "e": 62.4
+      },
+      {
+        "w": "uni",
+        "s": 62.44,
+        "e": 62.54
+      },
+      {
+        "w": "sinab,",
+        "s": 62.6,
+        "e": 62.88
+      },
+      {
+        "w": "minglab",
+        "s": 63.16,
+        "e": 63.54
+      },
+      {
+        "w": "kommitlar",
+        "s": 63.58,
+        "e": 63.98
+      },
+      {
+        "w": "orasidan",
+        "s": 64.04,
+        "e": 64.44
+      },
+      {
+        "w": "aybdorni",
+        "s": 64.56,
+        "e": 65.0
+      },
+      {
+        "w": "sanoqli",
+        "s": 65.12,
+        "e": 65.5
+      },
+      {
+        "w": "qadamda",
+        "s": 65.56,
+        "e": 65.86
+      },
+      {
+        "w": "topasiz.",
+        "s": 65.9,
+        "e": 66.3
+      }
+    ]
+  },
+  {
+    "id": "l9",
+    "scene": "bisect_run_auto",
+    "text": "git bisect run buyrug'i maxsus test skripti yordamida butun tekshiruv jarayonini inson aralashuvisiz to'liq avtomatlashtiradi.",
+    "show": "git bisect run buyrug'i maxsus test skripti yordamida butun tekshiruv jarayonini inson aralashuvisiz to'liq avtomatlashtiradi.",
+    "say": "Git baysekt run buyrug'i maxsus test skripti yordamida butun tekshiruv jarayonini inson aralashuvisiz to'liq avtomatlashtiradi.",
+    "a0": 67.26,
+    "a1": 73.91,
+    "words": [
+      {
+        "w": "Git",
+        "s": 67.26,
+        "e": 67.42
+      },
+      {
+        "w": "baysekt",
+        "s": 67.51,
+        "e": 67.93
+      },
+      {
+        "w": "run",
+        "s": 67.97,
+        "e": 68.15
+      },
+      {
+        "w": "buyrug'i",
+        "s": 68.21,
+        "e": 68.57
+      },
+      {
+        "w": "maxsus",
+        "s": 68.75,
+        "e": 69.13
+      },
+      {
+        "w": "test",
+        "s": 69.17,
+        "e": 69.39
+      },
+      {
+        "w": "skripti",
+        "s": 69.41,
+        "e": 69.75
+      },
+      {
+        "w": "yordamida",
+        "s": 69.75,
+        "e": 70.19
+      },
+      {
+        "w": "butun",
+        "s": 70.31,
+        "e": 70.61
+      },
+      {
+        "w": "tekshiruv",
+        "s": 70.67,
+        "e": 71.03
+      },
+      {
+        "w": "jarayonini",
+        "s": 71.07,
+        "e": 71.57
+      },
+      {
+        "w": "inson",
+        "s": 71.69,
+        "e": 72.01
+      },
+      {
+        "w": "aralashuvisiz",
+        "s": 72.11,
+        "e": 72.75
+      },
+      {
+        "w": "to'liq",
+        "s": 72.85,
+        "e": 73.11
+      },
+      {
+        "w": "avtomatlashtiradi.",
+        "s": 73.17,
+        "e": 73.91
+      }
+    ]
+  },
+  {
+    "id": "l10",
+    "scene": "bisect_run_auto",
+    "text": "Bunda skript nol chiqarsa yaxshi, bir chiqarsa yomon, bir yuz yigirma besh kodi esa sinab bo'lmaydigan oraliq commitni o'tkazib yuborishni bildiradi.",
+    "show": "Bunda skript nol chiqarsa yaxshi, bir chiqarsa yomon, bir yuz yigirma besh kodi esa sinab bo'lmaydigan oraliq commitni o'tkazib yuborishni bildiradi.",
+    "say": "Bunda skript nol chiqarsa yaxshi, bir chiqarsa yomon, bir yuz yigirma besh kodi esa sinab bo'lmaydigan oraliq commitni o'tkazib yuborishni bildiradi.",
+    "a0": 74.77,
+    "a1": 81.87,
+    "words": [
+      {
+        "w": "Bunda",
+        "s": 74.77,
+        "e": 74.97
+      },
+      {
+        "w": "skript",
+        "s": 75.05,
+        "e": 75.37
+      },
+      {
+        "w": "nol",
+        "s": 75.49,
+        "e": 75.65
+      },
+      {
+        "w": "chiqarsa",
+        "s": 75.71,
+        "e": 76.05
+      },
+      {
+        "w": "yaxshi,",
+        "s": 76.13,
+        "e": 76.43
+      },
+      {
+        "w": "bir",
+        "s": 76.67,
+        "e": 76.77
+      },
+      {
+        "w": "chiqarsa",
+        "s": 76.83,
+        "e": 77.17
+      },
+      {
+        "w": "yomon,",
+        "s": 77.23,
+        "e": 77.49
+      },
+      {
+        "w": "bir",
+        "s": 77.83,
+        "e": 77.91
+      },
+      {
+        "w": "yuz",
+        "s": 77.97,
+        "e": 78.07
+      },
+      {
+        "w": "yigirma",
+        "s": 78.09,
+        "e": 78.31
+      },
+      {
+        "w": "besh",
+        "s": 78.35,
+        "e": 78.49
+      },
+      {
+        "w": "kodi",
+        "s": 78.51,
+        "e": 78.73
+      },
+      {
+        "w": "esa",
+        "s": 78.77,
+        "e": 78.93
+      },
+      {
+        "w": "sinab",
+        "s": 79.05,
+        "e": 79.31
+      },
+      {
+        "w": "bo'lmaydigan",
+        "s": 79.35,
+        "e": 79.87
+      },
+      {
+        "w": "oraliq",
+        "s": 80.01,
+        "e": 80.29
+      },
+      {
+        "w": "commitni",
+        "s": 80.33,
+        "e": 80.69
+      },
+      {
+        "w": "o'tkazib",
+        "s": 80.75,
+        "e": 81.07
+      },
+      {
+        "w": "yuborishni",
+        "s": 81.13,
+        "e": 81.51
+      },
+      {
+        "w": "bildiradi.",
+        "s": 81.53,
+        "e": 81.87
+      }
+    ]
+  },
+  {
+    "id": "l11",
+    "scene": "bisect_terms_reset",
+    "text": "Faqat xatolar emas, balki tezlik pasayishi yoki yangi imkoniyat paydo bo'lishini qidirishda old va new kabi erkin terminlar qo'llaniladi.",
+    "show": "Faqat xatolar emas, balki tezlik pasayishi yoki yangi imkoniyat paydo bo'lishini qidirishda old va new kabi erkin terminlar qo'llaniladi.",
+    "say": "Faqat xatolar emas, balki tezlik pasayishi yoki yangi imkoniyat paydo bo'lishini qidirishda old va nyu kabi erkin terminlar qo'llaniladi.",
+    "a0": 82.66,
+    "a1": 89.8,
+    "words": [
+      {
+        "w": "Faqat",
+        "s": 82.66,
+        "e": 82.92
+      },
+      {
+        "w": "xatolar",
+        "s": 82.96,
+        "e": 83.34
+      },
+      {
+        "w": "emas,",
+        "s": 83.4,
+        "e": 83.62
+      },
+      {
+        "w": "balki",
+        "s": 83.72,
+        "e": 83.98
+      },
+      {
+        "w": "tezlik",
+        "s": 84.06,
+        "e": 84.38
+      },
+      {
+        "w": "pasayishi",
+        "s": 84.42,
+        "e": 84.92
+      },
+      {
+        "w": "yoki",
+        "s": 84.92,
+        "e": 85.28
+      },
+      {
+        "w": "yangi",
+        "s": 85.34,
+        "e": 85.6
+      },
+      {
+        "w": "imkoniyat",
+        "s": 85.66,
+        "e": 86.08
+      },
+      {
+        "w": "paydo",
+        "s": 86.12,
+        "e": 86.34
+      },
+      {
+        "w": "bo'lishini",
+        "s": 86.42,
+        "e": 86.74
+      },
+      {
+        "w": "qidirishda",
+        "s": 86.78,
+        "e": 87.16
+      },
+      {
+        "w": "old",
+        "s": 87.58,
+        "e": 87.74
+      },
+      {
+        "w": "va",
+        "s": 87.8,
+        "e": 87.88
+      },
+      {
+        "w": "nyu",
+        "s": 87.94,
+        "e": 88.08
+      },
+      {
+        "w": "kabi",
+        "s": 88.18,
+        "e": 88.38
+      },
+      {
+        "w": "erkin",
+        "s": 88.5,
+        "e": 88.76
+      },
+      {
+        "w": "terminlar",
+        "s": 88.8,
+        "e": 89.22
+      },
+      {
+        "w": "qo'llaniladi.",
+        "s": 89.26,
+        "e": 89.8
+      }
+    ]
+  },
+  {
+    "id": "l12",
+    "scene": "bisect_terms_reset",
+    "text": "Bisect tugagach, ishchi daraxtni asl holatiga qaytarish uchun albatta git bisect reset buyrug'ini bajarish shart.",
+    "show": "Bisect tugagach, ishchi daraxtni asl holatiga qaytarish uchun albatta git bisect reset buyrug'ini bajarish shart.",
+    "say": "Baysekt tugagach, ishchi daraxtni asl holatiga qaytarish uchun albatta git baysekt reset buyrug'ini bajarish shart.",
+    "a0": 90.72,
+    "a1": 96.78,
+    "words": [
+      {
+        "w": "Baysekt",
+        "s": 90.72,
+        "e": 91.1
+      },
+      {
+        "w": "tugagach,",
+        "s": 91.14,
+        "e": 91.6
+      },
+      {
+        "w": "ishchi",
+        "s": 91.74,
+        "e": 91.93
+      },
+      {
+        "w": "daraxtni",
+        "s": 91.99,
+        "e": 92.33
+      },
+      {
+        "w": "asl",
+        "s": 92.43,
+        "e": 92.63
+      },
+      {
+        "w": "holatiga",
+        "s": 92.67,
+        "e": 93.05
+      },
+      {
+        "w": "qaytarish",
+        "s": 93.09,
+        "e": 93.45
+      },
+      {
+        "w": "uchun",
+        "s": 93.45,
+        "e": 93.65
+      },
+      {
+        "w": "albatta",
+        "s": 93.83,
+        "e": 94.31
+      },
+      {
+        "w": "git",
+        "s": 94.65,
+        "e": 94.81
+      },
+      {
+        "w": "baysekt",
+        "s": 94.89,
+        "e": 95.32
+      },
+      {
+        "w": "reset",
+        "s": 95.4,
+        "e": 95.68
+      },
+      {
+        "w": "buyrug'ini",
+        "s": 95.72,
+        "e": 96.14
+      },
+      {
+        "w": "bajarish",
+        "s": 96.16,
+        "e": 96.54
+      },
+      {
+        "w": "shart.",
+        "s": 96.54,
+        "e": 96.78
+      }
+    ]
+  }
+]

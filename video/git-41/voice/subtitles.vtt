@@ -1,0 +1,61 @@
+WEBVTT
+
+1
+00:01.420 --> 00:10.120
+Git dasturchiga nafaqat versiyalarni saqlash, balki murakkab xatoliklarni
+aniqlash va disk raskadrovka qilishda ham kuchli vositalarni taqdim etadi.
+
+2
+00:10.690 --> 00:19.920
+git blame buyrug'i faylning har bir qatori yoniga uni oxirgi marta o'zgartirgan
+commit, muallif va vaqtni aniq ko'rsatib, kodning kelib chiqish kontekstini ochadi.
+
+3
+00:23.470 --> 00:31.250
+Katta formatlash yoki bo'sh joylarni o'zgartirish commitlari asl
+mualliflik tarixini yashirib qo'ymasligi uchun minus w kaliti qo'llanadi.
+
+4
+00:31.880 --> 00:38.830
+Jamoa miqyosida esa nuqta git-blame-ignore-revs fayliga bunday
+commitlar kiritilib, butunlay e'tiborsiz qoldirilishi mumkin.
+
+5
+00:42.900 --> 00:51.180
+Refaktoring paytida kod boshqa faylga yoki funksiyaga ko'chirilganda,
+minus M va minus C bayroqlari uning asl tug'ilgan joyini topib beradi.
+
+6
+00:51.570 --> 00:58.340
+Natijada siz kodni shunchaki ko'chirgan odamni emas, balki
+uni dastlab yozgan asl muallif va commitni aniq ko'rasiz.
+
+7
+01:02.350 --> 01:09.510
+Xato qachon va qaysi commitda paydo bo'lganini bilmagan hollarda
+git bisect ikkilik qidiruv mexanizmi ishga tushiriladi.
+
+8
+01:09.980 --> 01:18.050
+U yaxshi va yomon commitlar orasidagi o'rtacha nuqtani chiqarib beradi, siz
+uni sinab, minglab commitlar orasidan aybdorni sanoqli qadamda topasiz.
+
+9
+01:22.160 --> 01:29.260
+git bisect run buyrug'i maxsus test skripti yordamida butun
+tekshiruv jarayonini inson aralashuvisiz to'liq avtomatlashtiradi.
+
+10
+01:29.670 --> 01:37.220
+Bunda skript nol chiqarsa yaxshi, bir chiqarsa yomon, bir yuz yigirma besh
+kodi esa sinab bo'lmaydigan oraliq commitni o'tkazib yuborishni bildiradi.
+
+11
+01:41.160 --> 01:48.750
+Faqat xatolar emas, balki tezlik pasayishi yoki yangi imkoniyat paydo
+bo'lishini qidirishda old va new kabi erkin terminlar qo'llaniladi.
+
+12
+01:49.220 --> 01:55.730
+Bisect tugagach, ishchi daraxtni asl holatiga qaytarish
+uchun albatta git bisect reset buyrug'ini bajarish shart.
