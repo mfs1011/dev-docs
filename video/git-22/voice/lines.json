@@ -1,0 +1,1089 @@
+[
+  {
+    "id": "l1",
+    "scene": "intro",
+    "text": "Salom! Ushbu yigirma ikkinchi bobda har qanday dasturchi hayotida uchraydigan merge konfliktlari va ularni xavfsiz hal qilishni o‘rganamiz.",
+    "show": "Salom! Ushbu yigirma ikkinchi bobda har qanday dasturchi hayotida uchraydigan merge konfliktlari va ularni xavfsiz hal qilishni o‘rganamiz.",
+    "say": "Salom! Ushbu yigirma ikkinchi bobda har qanday dasturchi hayotida uchraydigan merj konfliktlari va ularni xavfsiz hal qilishni o‘rganamiz.",
+    "a0": 0.3,
+    "a1": 7.69,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.3,
+        "e": 0.56
+      },
+      {
+        "w": "Ushbu",
+        "s": 1.0,
+        "e": 1.22
+      },
+      {
+        "w": "yigirma",
+        "s": 1.3,
+        "e": 1.56
+      },
+      {
+        "w": "ikkinchi",
+        "s": 1.56,
+        "e": 1.9
+      },
+      {
+        "w": "bobda",
+        "s": 1.94,
+        "e": 2.24
+      },
+      {
+        "w": "har",
+        "s": 2.42,
+        "e": 2.58
+      },
+      {
+        "w": "qanday",
+        "s": 2.64,
+        "e": 2.9
+      },
+      {
+        "w": "dasturchi",
+        "s": 2.94,
+        "e": 3.32
+      },
+      {
+        "w": "hayotida",
+        "s": 3.36,
+        "e": 3.74
+      },
+      {
+        "w": "uchraydigan",
+        "s": 3.78,
+        "e": 4.28
+      },
+      {
+        "w": "merj",
+        "s": 4.48,
+        "e": 4.66
+      },
+      {
+        "w": "konfliktlari",
+        "s": 4.72,
+        "e": 5.26
+      },
+      {
+        "w": "va",
+        "s": 5.58,
+        "e": 5.64
+      },
+      {
+        "w": "ularni",
+        "s": 5.7,
+        "e": 6.02
+      },
+      {
+        "w": "xavfsiz",
+        "s": 6.1,
+        "e": 6.44
+      },
+      {
+        "w": "hal",
+        "s": 6.48,
+        "e": 6.62
+      },
+      {
+        "w": "qilishni",
+        "s": 6.68,
+        "e": 7.02
+      },
+      {
+        "w": "o‘rganamiz.",
+        "s": 7.24,
+        "e": 7.69
+      }
+    ]
+  },
+  {
+    "id": "l2",
+    "scene": "intro",
+    "text": "Konflikt bu tizim xatosi emas, balki bir joyni ikki xil o‘zgartirganda Git inson aralashuvi va yakuniy qarorini kutayotgan holatdir.",
+    "show": "Konflikt bu tizim xatosi emas, balki bir joyni ikki xil o‘zgartirganda Git inson aralashuvi va yakuniy qarorini kutayotgan holatdir.",
+    "say": "Konflikt bu tizim xatosi emas, balki bir joyni ikki xil o‘zgartirganda Git inson aralashuvi va yakuniy qarorini kutayotgan holatdir.",
+    "a0": 8.57,
+    "a1": 16.73,
+    "words": [
+      {
+        "w": "Konflikt",
+        "s": 8.57,
+        "e": 8.97
+      },
+      {
+        "w": "bu",
+        "s": 9.03,
+        "e": 9.11
+      },
+      {
+        "w": "tizim",
+        "s": 9.21,
+        "e": 9.41
+      },
+      {
+        "w": "xatosi",
+        "s": 9.47,
+        "e": 9.81
+      },
+      {
+        "w": "emas,",
+        "s": 9.87,
+        "e": 10.15
+      },
+      {
+        "w": "balki",
+        "s": 10.29,
+        "e": 10.57
+      },
+      {
+        "w": "bir",
+        "s": 11.03,
+        "e": 11.17
+      },
+      {
+        "w": "joyni",
+        "s": 11.23,
+        "e": 11.51
+      },
+      {
+        "w": "ikki",
+        "s": 11.61,
+        "e": 11.77
+      },
+      {
+        "w": "xil",
+        "s": 11.79,
+        "e": 11.91
+      },
+      {
+        "w": "o‘zgartirganda",
+        "s": 11.99,
+        "e": 12.67
+      },
+      {
+        "w": "Git",
+        "s": 13.07,
+        "e": 13.27
+      },
+      {
+        "w": "inson",
+        "s": 13.45,
+        "e": 13.77
+      },
+      {
+        "w": "aralashuvi",
+        "s": 13.85,
+        "e": 14.33
+      },
+      {
+        "w": "va",
+        "s": 14.41,
+        "e": 14.49
+      },
+      {
+        "w": "yakuniy",
+        "s": 14.83,
+        "e": 15.27
+      },
+      {
+        "w": "qarorini",
+        "s": 15.37,
+        "e": 15.79
+      },
+      {
+        "w": "kutayotgan",
+        "s": 15.81,
+        "e": 16.23
+      },
+      {
+        "w": "holatdir.",
+        "s": 16.29,
+        "e": 16.73
+      }
+    ]
+  },
+  {
+    "id": "l3",
+    "scene": "belgilar_va_status",
+    "text": "git merge to‘xtaganda, git status buyrug‘i fayllarni both modified va unmerged qilib ko‘rsatadi.",
+    "show": "git merge to‘xtaganda, git status buyrug‘i fayllarni both modified va unmerged qilib ko‘rsatadi.",
+    "say": "Git merj to‘xtaganda, git status buyrug‘i fayllarni bous modifayd va anmerjd qilib ko‘rsatadi.",
+    "a0": 17.81,
+    "a1": 23.26,
+    "words": [
+      {
+        "w": "Git",
+        "s": 17.81,
+        "e": 17.99
+      },
+      {
+        "w": "merj",
+        "s": 18.05,
+        "e": 18.25
+      },
+      {
+        "w": "to‘xtaganda,",
+        "s": 18.31,
+        "e": 18.85
+      },
+      {
+        "w": "git",
+        "s": 19.15,
+        "e": 19.31
+      },
+      {
+        "w": "status",
+        "s": 19.37,
+        "e": 19.67
+      },
+      {
+        "w": "buyrug‘i",
+        "s": 19.73,
+        "e": 20.07
+      },
+      {
+        "w": "fayllarni",
+        "s": 20.17,
+        "e": 20.69
+      },
+      {
+        "w": "bous",
+        "s": 20.91,
+        "e": 21.13
+      },
+      {
+        "w": "modifayd",
+        "s": 21.21,
+        "e": 21.71
+      },
+      {
+        "w": "va",
+        "s": 21.85,
+        "e": 21.93
+      },
+      {
+        "w": "anmerjd",
+        "s": 22.15,
+        "e": 22.62
+      },
+      {
+        "w": "qilib",
+        "s": 22.64,
+        "e": 22.82
+      },
+      {
+        "w": "ko‘rsatadi.",
+        "s": 22.84,
+        "e": 23.26
+      }
+    ]
+  },
+  {
+    "id": "l4",
+    "scene": "belgilar_va_status",
+    "text": "Fayl ichida esa HEAD tomonimiz, ajratuvchi tenglik chiziqlari va ikkinchi branch o‘zgarishlarini ko‘rsatuvchi maxsus belgilar paydo bo‘ladi.",
+    "show": "Fayl ichida esa HEAD tomonimiz, ajratuvchi tenglik chiziqlari va ikkinchi branch o‘zgarishlarini ko‘rsatuvchi maxsus belgilar paydo bo‘ladi.",
+    "say": "Fayl ichida esa hed tomonimiz, ajratuvchi tenglik chiziqlari va ikkinchi brench o‘zgarishlarini ko‘rsatuvchi maxsus belgilar paydo bo‘ladi.",
+    "a0": 24.22,
+    "a1": 31.7,
+    "words": [
+      {
+        "w": "Fayl",
+        "s": 24.22,
+        "e": 24.5
+      },
+      {
+        "w": "ichida",
+        "s": 24.56,
+        "e": 24.8
+      },
+      {
+        "w": "esa",
+        "s": 24.84,
+        "e": 25.02
+      },
+      {
+        "w": "hed",
+        "s": 25.26,
+        "e": 25.44
+      },
+      {
+        "w": "tomonimiz,",
+        "s": 25.5,
+        "e": 26.04
+      },
+      {
+        "w": "ajratuvchi",
+        "s": 26.28,
+        "e": 26.78
+      },
+      {
+        "w": "tenglik",
+        "s": 26.84,
+        "e": 27.12
+      },
+      {
+        "w": "chiziqlari",
+        "s": 27.16,
+        "e": 27.64
+      },
+      {
+        "w": "va",
+        "s": 27.96,
+        "e": 28.02
+      },
+      {
+        "w": "ikkinchi",
+        "s": 28.24,
+        "e": 28.56
+      },
+      {
+        "w": "brench",
+        "s": 28.6,
+        "e": 28.84
+      },
+      {
+        "w": "o‘zgarishlarini",
+        "s": 28.9,
+        "e": 29.46
+      },
+      {
+        "w": "ko‘rsatuvchi",
+        "s": 29.48,
+        "e": 29.96
+      },
+      {
+        "w": "maxsus",
+        "s": 30.32,
+        "e": 30.66
+      },
+      {
+        "w": "belgilar",
+        "s": 30.72,
+        "e": 31.12
+      },
+      {
+        "w": "paydo",
+        "s": 31.16,
+        "e": 31.38
+      },
+      {
+        "w": "bo‘ladi.",
+        "s": 31.44,
+        "e": 31.7
+      }
+    ]
+  },
+  {
+    "id": "l5",
+    "scene": "uch_bosqich_indeks",
+    "text": "Konflikt paytida indeksda har bir fayl uchun uchta alohida bosqich, ya’ni stage saqlanadi.",
+    "show": "Konflikt paytida indeksda har bir fayl uchun uchta alohida bosqich, ya’ni stage saqlanadi.",
+    "say": "Konflikt paytida indeksda har bir fayl uchun uchta alohida bosqich, ya’ni steyj saqlanadi.",
+    "a0": 32.62,
+    "a1": 37.53,
+    "words": [
+      {
+        "w": "Konflikt",
+        "s": 32.62,
+        "e": 33.02
+      },
+      {
+        "w": "paytida",
+        "s": 33.04,
+        "e": 33.36
+      },
+      {
+        "w": "indeksda",
+        "s": 33.48,
+        "e": 33.9
+      },
+      {
+        "w": "har",
+        "s": 34.0,
+        "e": 34.18
+      },
+      {
+        "w": "bir",
+        "s": 34.22,
+        "e": 34.32
+      },
+      {
+        "w": "fayl",
+        "s": 34.36,
+        "e": 34.58
+      },
+      {
+        "w": "uchun",
+        "s": 34.64,
+        "e": 34.82
+      },
+      {
+        "w": "uchta",
+        "s": 34.94,
+        "e": 35.18
+      },
+      {
+        "w": "alohida",
+        "s": 35.24,
+        "e": 35.58
+      },
+      {
+        "w": "bosqich,",
+        "s": 35.62,
+        "e": 35.98
+      },
+      {
+        "w": "ya’ni",
+        "s": 36.26,
+        "e": 36.46
+      },
+      {
+        "w": "steyj",
+        "s": 36.7,
+        "e": 36.98
+      },
+      {
+        "w": "saqlanadi.",
+        "s": 37.06,
+        "e": 37.53
+      }
+    ]
+  },
+  {
+    "id": "l6",
+    "scene": "uch_bosqich_indeks",
+    "text": "Stage bir umumiy ajdod snapshotini, stage ikki joriy branchimizni, stage uch esa qo‘shilayotgan branch versiyasini ifodalaydi.",
+    "show": "Stage bir umumiy ajdod snapshotini, stage ikki joriy branchimizni, stage uch esa qo‘shilayotgan branch versiyasini ifodalaydi.",
+    "say": "Steyj bir umumiy ajdod snepshotini, steyj ikki joriy brenchimizni, steyj uch esa qo‘shilayotgan brench versiyasini ifodalaydi.",
+    "a0": 38.13,
+    "a1": 45.79,
+    "words": [
+      {
+        "w": "Steyj",
+        "s": 38.13,
+        "e": 38.35
+      },
+      {
+        "w": "bir",
+        "s": 38.45,
+        "e": 38.57
+      },
+      {
+        "w": "umumiy",
+        "s": 38.93,
+        "e": 39.25
+      },
+      {
+        "w": "ajdod",
+        "s": 39.41,
+        "e": 39.73
+      },
+      {
+        "w": "snepshotini,",
+        "s": 39.79,
+        "e": 40.27
+      },
+      {
+        "w": "steyj",
+        "s": 40.65,
+        "e": 40.87
+      },
+      {
+        "w": "ikki",
+        "s": 40.95,
+        "e": 41.17
+      },
+      {
+        "w": "joriy",
+        "s": 41.39,
+        "e": 41.67
+      },
+      {
+        "w": "brenchimizni,",
+        "s": 41.75,
+        "e": 42.33
+      },
+      {
+        "w": "steyj",
+        "s": 42.73,
+        "e": 42.99
+      },
+      {
+        "w": "uch",
+        "s": 43.13,
+        "e": 43.27
+      },
+      {
+        "w": "esa",
+        "s": 43.33,
+        "e": 43.47
+      },
+      {
+        "w": "qo‘shilayotgan",
+        "s": 43.69,
+        "e": 44.25
+      },
+      {
+        "w": "brench",
+        "s": 44.31,
+        "e": 44.53
+      },
+      {
+        "w": "versiyasini",
+        "s": 44.57,
+        "e": 45.03
+      },
+      {
+        "w": "ifodalaydi.",
+        "s": 45.27,
+        "e": 45.79
+      }
+    ]
+  },
+  {
+    "id": "l7",
+    "scene": "git_fayllari",
+    "text": "Git papkasi ichida MERGE_HEAD, MERGE_MSG va AUTO_MERGE fayllari yaratilib, jarayon holati xotirada mahkam ushlab turiladi.",
+    "show": "Git papkasi ichida MERGE_HEAD, MERGE_MSG va AUTO_MERGE fayllari yaratilib, jarayon holati xotirada mahkam ushlab turiladi.",
+    "say": "Git papkasi ichida merj-hed, merj-emesji va avto-merj fayllari yaratilib, jarayon holati xotirada mahkam ushlab turiladi.",
+    "a0": 46.71,
+    "a1": 54.14,
+    "words": [
+      {
+        "w": "Git",
+        "s": 46.71,
+        "e": 46.85
+      },
+      {
+        "w": "papkasi",
+        "s": 46.91,
+        "e": 47.27
+      },
+      {
+        "w": "ichida",
+        "s": 47.31,
+        "e": 47.55
+      },
+      {
+        "w": "merj-hed,",
+        "s": 47.77,
+        "e": 48.33
+      },
+      {
+        "w": "merj-emesji",
+        "s": 48.55,
+        "e": 49.25
+      },
+      {
+        "w": "va",
+        "s": 49.61,
+        "e": 49.69
+      },
+      {
+        "w": "avto-merj",
+        "s": 50.03,
+        "e": 50.49
+      },
+      {
+        "w": "fayllari",
+        "s": 50.53,
+        "e": 50.93
+      },
+      {
+        "w": "yaratilib,",
+        "s": 50.97,
+        "e": 51.37
+      },
+      {
+        "w": "jarayon",
+        "s": 51.69,
+        "e": 52.03
+      },
+      {
+        "w": "holati",
+        "s": 52.09,
+        "e": 52.43
+      },
+      {
+        "w": "xotirada",
+        "s": 52.49,
+        "e": 52.9
+      },
+      {
+        "w": "mahkam",
+        "s": 53.14,
+        "e": 53.48
+      },
+      {
+        "w": "ushlab",
+        "s": 53.52,
+        "e": 53.78
+      },
+      {
+        "w": "turiladi.",
+        "s": 53.8,
+        "e": 54.14
+      }
+    ]
+  },
+  {
+    "id": "l8",
+    "scene": "git_fayllari",
+    "text": "git diff buyrug‘i esa ikkala tomon bilan solishtiruvchi combined diff rejimida faqat yechilmagan qatorlarni qulay ajratib beradi.",
+    "show": "git diff buyrug‘i esa ikkala tomon bilan solishtiruvchi combined diff rejimida faqat yechilmagan qatorlarni qulay ajratib beradi.",
+    "say": "Git diff buyrug‘i esa ikkala tomon bilan solishtiruvchi kombaynd diff rejimida faqat yechilmagan qatorlarni qulay ajratib beradi.",
+    "a0": 55.18,
+    "a1": 61.64,
+    "words": [
+      {
+        "w": "Git",
+        "s": 55.18,
+        "e": 55.34
+      },
+      {
+        "w": "diff",
+        "s": 55.38,
+        "e": 55.52
+      },
+      {
+        "w": "buyrug‘i",
+        "s": 55.58,
+        "e": 55.92
+      },
+      {
+        "w": "esa",
+        "s": 55.98,
+        "e": 56.12
+      },
+      {
+        "w": "ikkala",
+        "s": 56.34,
+        "e": 56.58
+      },
+      {
+        "w": "tomon",
+        "s": 56.6,
+        "e": 56.82
+      },
+      {
+        "w": "bilan",
+        "s": 56.86,
+        "e": 57.02
+      },
+      {
+        "w": "solishtiruvchi",
+        "s": 57.06,
+        "e": 57.62
+      },
+      {
+        "w": "kombaynd",
+        "s": 57.8,
+        "e": 58.24
+      },
+      {
+        "w": "diff",
+        "s": 58.28,
+        "e": 58.4
+      },
+      {
+        "w": "rejimida",
+        "s": 58.46,
+        "e": 58.86
+      },
+      {
+        "w": "faqat",
+        "s": 59.14,
+        "e": 59.4
+      },
+      {
+        "w": "yechilmagan",
+        "s": 59.5,
+        "e": 59.98
+      },
+      {
+        "w": "qatorlarni",
+        "s": 60.02,
+        "e": 60.52
+      },
+      {
+        "w": "qulay",
+        "s": 60.72,
+        "e": 60.96
+      },
+      {
+        "w": "ajratib",
+        "s": 61.02,
+        "e": 61.36
+      },
+      {
+        "w": "beradi.",
+        "s": 61.38,
+        "e": 61.64
+      }
+    ]
+  },
+  {
+    "id": "l9",
+    "scene": "hal_qilish_va_abort",
+    "text": "Fayldagi keraksiz belgilarni o‘chirib to‘g‘rilagach, git add qilsak, indeksdagi uchta stage o‘rniga yagona toza stage nol o‘rnatiladi.",
+    "show": "Fayldagi keraksiz belgilarni o‘chirib to‘g‘rilagach, git add qilsak, indeksdagi uchta stage o‘rniga yagona toza stage nol o‘rnatiladi.",
+    "say": "Fayldagi keraksiz belgilarni o‘chirib to‘g‘rilagach, git add qilsak, indeksdagi uchta steyj o‘rniga yagona toza steyj nol o‘rnatiladi.",
+    "a0": 62.48,
+    "a1": 69.79,
+    "words": [
+      {
+        "w": "Fayldagi",
+        "s": 62.48,
+        "e": 62.9
+      },
+      {
+        "w": "keraksiz",
+        "s": 62.96,
+        "e": 63.36
+      },
+      {
+        "w": "belgilarni",
+        "s": 63.38,
+        "e": 63.84
+      },
+      {
+        "w": "o‘chirib",
+        "s": 63.88,
+        "e": 64.12
+      },
+      {
+        "w": "to‘g‘rilagach,",
+        "s": 64.14,
+        "e": 64.7
+      },
+      {
+        "w": "git",
+        "s": 64.94,
+        "e": 65.08
+      },
+      {
+        "w": "add",
+        "s": 65.22,
+        "e": 65.32
+      },
+      {
+        "w": "qilsak,",
+        "s": 65.38,
+        "e": 65.72
+      },
+      {
+        "w": "indeksdagi",
+        "s": 66.04,
+        "e": 66.52
+      },
+      {
+        "w": "uchta",
+        "s": 66.6,
+        "e": 66.86
+      },
+      {
+        "w": "steyj",
+        "s": 66.9,
+        "e": 67.12
+      },
+      {
+        "w": "o‘rniga",
+        "s": 67.2,
+        "e": 67.51
+      },
+      {
+        "w": "yagona",
+        "s": 67.85,
+        "e": 68.23
+      },
+      {
+        "w": "toza",
+        "s": 68.33,
+        "e": 68.59
+      },
+      {
+        "w": "steyj",
+        "s": 68.67,
+        "e": 68.93
+      },
+      {
+        "w": "nol",
+        "s": 69.03,
+        "e": 69.19
+      },
+      {
+        "w": "o‘rnatiladi.",
+        "s": 69.33,
+        "e": 69.79
+      }
+    ]
+  },
+  {
+    "id": "l10",
+    "scene": "hal_qilish_va_abort",
+    "text": "Agar adashib ketsak yoki merjeni to‘xtatmoqchi bo‘lsak, git merge abort buyrug‘i loyihani avvalgi asl holatiga to‘liq qaytaradi.",
+    "show": "Agar adashib ketsak yoki merjeni to‘xtatmoqchi bo‘lsak, git merge abort buyrug‘i loyihani avvalgi asl holatiga to‘liq qaytaradi.",
+    "say": "Agar adashib ketsak yoki merjni to‘xtatmoqchi bo‘lsak, git merj ebort buyrug‘i loyihani avvalgi asl holatiga to‘liq qaytaradi.",
+    "a0": 70.53,
+    "a1": 77.69,
+    "words": [
+      {
+        "w": "Agar",
+        "s": 70.53,
+        "e": 70.75
+      },
+      {
+        "w": "adashib",
+        "s": 70.85,
+        "e": 71.15
+      },
+      {
+        "w": "ketsak",
+        "s": 71.17,
+        "e": 71.49
+      },
+      {
+        "w": "yoki",
+        "s": 71.61,
+        "e": 71.81
+      },
+      {
+        "w": "merjni",
+        "s": 72.01,
+        "e": 72.31
+      },
+      {
+        "w": "to‘xtatmoqchi",
+        "s": 72.37,
+        "e": 72.93
+      },
+      {
+        "w": "bo‘lsak,",
+        "s": 72.95,
+        "e": 73.25
+      },
+      {
+        "w": "git",
+        "s": 73.59,
+        "e": 73.73
+      },
+      {
+        "w": "merj",
+        "s": 73.79,
+        "e": 73.99
+      },
+      {
+        "w": "ebort",
+        "s": 74.15,
+        "e": 74.41
+      },
+      {
+        "w": "buyrug‘i",
+        "s": 74.47,
+        "e": 74.79
+      },
+      {
+        "w": "loyihani",
+        "s": 75.07,
+        "e": 75.45
+      },
+      {
+        "w": "avvalgi",
+        "s": 75.59,
+        "e": 75.95
+      },
+      {
+        "w": "asl",
+        "s": 76.09,
+        "e": 76.29
+      },
+      {
+        "w": "holatiga",
+        "s": 76.33,
+        "e": 76.75
+      },
+      {
+        "w": "to‘liq",
+        "s": 76.95,
+        "e": 77.23
+      },
+      {
+        "w": "qaytaradi.",
+        "s": 77.27,
+        "e": 77.69
+      }
+    ]
+  },
+  {
+    "id": "l11",
+    "scene": "xulosa",
+    "text": "zdiff3 sozlamasi esa konflikt ichida umumiy ajdod matnini ham ko‘rsatib, to‘g‘ri xulosa chiqarishni yanada osonlashtiradi.",
+    "show": "zdiff3 sozlamasi esa konflikt ichida umumiy ajdod matnini ham ko‘rsatib, to‘g‘ri xulosa chiqarishni yanada osonlashtiradi.",
+    "say": "Zed-diff-uch sozlamasi esa konflikt ichida umumiy ajdod matnini ham ko‘rsatib, to‘g‘ri xulosa chiqarishni yanada osonlashtiradi.",
+    "a0": 78.57,
+    "a1": 85.18,
+    "words": [
+      {
+        "w": "Zed-diff-uch",
+        "s": 78.57,
+        "e": 79.11
+      },
+      {
+        "w": "sozlamasi",
+        "s": 79.15,
+        "e": 79.61
+      },
+      {
+        "w": "esa",
+        "s": 79.65,
+        "e": 79.81
+      },
+      {
+        "w": "konflikt",
+        "s": 79.97,
+        "e": 80.35
+      },
+      {
+        "w": "ichida",
+        "s": 80.39,
+        "e": 80.63
+      },
+      {
+        "w": "umumiy",
+        "s": 80.95,
+        "e": 81.27
+      },
+      {
+        "w": "ajdod",
+        "s": 81.39,
+        "e": 81.67
+      },
+      {
+        "w": "matnini",
+        "s": 81.73,
+        "e": 82.01
+      },
+      {
+        "w": "ham",
+        "s": 82.05,
+        "e": 82.17
+      },
+      {
+        "w": "ko‘rsatib,",
+        "s": 82.23,
+        "e": 82.68
+      },
+      {
+        "w": "to‘g‘ri",
+        "s": 82.94,
+        "e": 83.2
+      },
+      {
+        "w": "xulosa",
+        "s": 83.22,
+        "e": 83.52
+      },
+      {
+        "w": "chiqarishni",
+        "s": 83.56,
+        "e": 83.98
+      },
+      {
+        "w": "yanada",
+        "s": 84.2,
+        "e": 84.48
+      },
+      {
+        "w": "osonlashtiradi.",
+        "s": 84.54,
+        "e": 85.18
+      }
+    ]
+  },
+  {
+    "id": "l12",
+    "scene": "xulosa",
+    "text": "Keyingi bobda brenchlarni qulay boshqarish, ro‘yxatlash, qayta nomlash va tekshirish sirlarini to‘liq ko‘rib chiqamiz.",
+    "show": "Keyingi bobda brenchlarni qulay boshqarish, ro‘yxatlash, qayta nomlash va tekshirish sirlarini to‘liq ko‘rib chiqamiz.",
+    "say": "Keyingi bobda brenchlarni qulay boshqarish, ro‘yxatlash, qayta nomlash va tekshirish sirlarini to‘liq ko‘rib chiqamiz.",
+    "a0": 86.02,
+    "a1": 91.76,
+    "words": [
+      {
+        "w": "Keyingi",
+        "s": 86.02,
+        "e": 86.3
+      },
+      {
+        "w": "bobda",
+        "s": 86.32,
+        "e": 86.58
+      },
+      {
+        "w": "brenchlarni",
+        "s": 86.8,
+        "e": 87.28
+      },
+      {
+        "w": "qulay",
+        "s": 87.34,
+        "e": 87.54
+      },
+      {
+        "w": "boshqarish,",
+        "s": 87.58,
+        "e": 88.1
+      },
+      {
+        "w": "ro‘yxatlash,",
+        "s": 88.28,
+        "e": 88.88
+      },
+      {
+        "w": "qayta",
+        "s": 89.12,
+        "e": 89.36
+      },
+      {
+        "w": "nomlash",
+        "s": 89.4,
+        "e": 89.72
+      },
+      {
+        "w": "va",
+        "s": 89.74,
+        "e": 89.8
+      },
+      {
+        "w": "tekshirish",
+        "s": 89.84,
+        "e": 90.18
+      },
+      {
+        "w": "sirlarini",
+        "s": 90.22,
+        "e": 90.61
+      },
+      {
+        "w": "to‘liq",
+        "s": 90.83,
+        "e": 91.13
+      },
+      {
+        "w": "ko‘rib",
+        "s": 91.19,
+        "e": 91.41
+      },
+      {
+        "w": "chiqamiz.",
+        "s": 91.43,
+        "e": 91.76
+      }
+    ]
+  }
+]

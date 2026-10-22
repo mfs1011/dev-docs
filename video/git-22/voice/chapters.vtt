@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:20.757
+Konflikt Tushunchasi: Nega Chiqadi?
+
+00:20.757 --> 00:39.296
+Konflikt Belgilari va git status
+
+00:39.296 --> 00:56.948
+Index Bosqichlari: Stage 1, 2 va 3
+
+00:56.948 --> 01:16.391
+.git Papkasi: MERGE_HEAD va AUTO_MERGE
+
+01:16.391 --> 01:36.029
+Konfliktni Hal Qilish va git merge --abort
+
+01:36.029 --> 01:55.760
+Xulosa: zdiff3 va --ours / --theirs
