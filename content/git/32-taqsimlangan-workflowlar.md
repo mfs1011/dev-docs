@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" playsinline poster="/video/git/32-taqsimlangan-workflowlar.jpg" src="/video/git/32-taqsimlangan-workflowlar.mp4">
+    <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/git/32-taqsimlangan-workflowlar.chapters.vtt" default>
+    <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/git/32-taqsimlangan-workflowlar.uz.vtt">
+  </video>
+  <figcaption>32.1-video. Taqsimlangan workflowlar: markazlashgan, integratsiya menejeri va diktator modellari</figcaption>
+</figure>
+
 [31-bobda](31-branch-workflowlari.md) bitta repo **ichidagi** branch'larni qanday tashkil qilishni ko'rdik. Endi savol kengroq: bir nechta odam, bir nechta repo — o'zgarishlar **kimdan kimga**, qaysi yo'l bilan oqadi?
 
 Markazlashgan tizimlarda (CVCS — Centralized Version Control System, masalan Subversion) javob bitta. Bitta markaziy server (**hub** — markaz) bor, har dasturchi esa unga ulangan **tugun** (node): hamma o'z ishini shu bitta joy bilan sinxronlaydi.

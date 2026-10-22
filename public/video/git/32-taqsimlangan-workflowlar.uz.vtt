@@ -1,0 +1,61 @@
+WEBVTT
+
+1
+00:01.420 --> 00:10.580
+Salom! Ushbu o‘ttiz ikkinchi bobda bir nechta dasturchilar va repozitoriylar
+o‘rtasida kod almashishning taqsimlangan workflow strategiyalarini tahlil qilamiz.
+
+2
+00:11.130 --> 00:21.400
+Git markazlashmagan tizim bo'lib, har bir klon to'laqonli repozitoriy hisoblanadi. Bugun
+markazlashgan, integratsiya menejeri va diktator-leytenantlar modellarini ko'rib chiqamiz.
+
+3
+00:24.910 --> 00:34.730
+Markazlashgan modelda barcha dasturchilar bitta umumiy repozitoriyga push qiladi. Agar
+serverdagi tarix o'zgargan bo'lsa, Git boshqalarning ishini ustidan yozishga yo'l qo'ymaydi.
+
+4
+00:34.920 --> 00:43.240
+Dasturchi avval fetch qilib yangiliklarni o'ziga birlashtiradi va faqat
+fast-forward bilan yangilangan toza tarixni serverga push qiladi.
+
+5
+00:47.050 --> 00:56.840
+Integratsiya menejeri modelida har kim o'zining ommaviy repozitoriyasiga yozadi,
+rasmiy etalon repo'ga esa faqat loyiha yurituvchisi, ya'ni maintainer o'tkazadi.
+
+6
+00:57.070 --> 01:05.930
+GitHub va GitLab'dagi mashhur Fork va Pull Request mexanizmi aynan shu model
+asosida ishlaydi, unda hech kim boshqalarni kutmasdan mustaqil ishlay oladi.
+
+7
+01:09.980 --> 01:17.990
+Linux yadrosi kabi minglab dasturchilar ishlaydigan ulkan tizimlarda
+diktator va leytenantlar deb nomlanuvchi ierarxik boshqaruv qo'llaniladi.
+
+8
+01:18.260 --> 01:27.440
+Dasturchilar quyi tizim leytenantlariga kod uzatadi, leytenantlar tekshirib
+diktatorga taqdim etadi, diktator esa yakuniy kodni etalon repozitoriyga chiqaradi.
+
+9
+01:31.410 --> 01:41.030
+O'zgarishlarni uzatish shakliga ko'ra merge workflow va patch workflow farqlanadi.
+Merge usulida to'liq tarmoq tarixi va merge commitlari to'g'ridan-to'g'ri o'tadi.
+
+10
+01:41.220 --> 01:50.010
+Email orqali uzatiladigan patch workflow'da esa format-patch va git am
+buyruqlari yordamida faqat alohida toza commitlar zanjiri ko'chirib o'tkaziladi.
+
+11
+01:53.840 --> 02:02.440
+Xulosa qilganda, kichik va o'rta jamoalarda markazlashgan model, ochiq manbali
+va ommaviy loyihalarda esa integratsiya menejeri eng yaxshi tanlovdir.
+
+12
+02:02.650 --> 02:10.170
+Keyingi o‘ttiz uchinchi bobda ochiq loyihalarga hissa qo'shish, toza
+commitlar tayyorlash va patchlarni jo'natish amaliyotini o'rganamiz.

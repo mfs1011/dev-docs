@@ -1,0 +1,1279 @@
+[
+  {
+    "id": "l1",
+    "scene": "intro",
+    "text": "Salom! Ushbu o‘ttiz ikkinchi bobda bir nechta dasturchilar va repozitoriylar o‘rtasida kod almashishning taqsimlangan workflow strategiyalarini tahlil qilamiz.",
+    "show": "Salom! Ushbu o‘ttiz ikkinchi bobda bir nechta dasturchilar va repozitoriylar o‘rtasida kod almashishning taqsimlangan workflow strategiyalarini tahlil qilamiz.",
+    "say": "Salom! Ushbu o‘ttiz ikkinchi bobda bir nechta dasturchilar va repozitoriylar o‘rtasida kod almashishning taqsimlangan vorkflou strategiyalarini tahlil qilamiz.",
+    "a0": 0.24,
+    "a1": 8.95,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.24,
+        "e": 0.5
+      },
+      {
+        "w": "Ushbu",
+        "s": 0.88,
+        "e": 1.12
+      },
+      {
+        "w": "o‘ttiz",
+        "s": 1.28,
+        "e": 1.56
+      },
+      {
+        "w": "ikkinchi",
+        "s": 1.66,
+        "e": 2.02
+      },
+      {
+        "w": "bobda",
+        "s": 2.06,
+        "e": 2.34
+      },
+      {
+        "w": "bir",
+        "s": 2.66,
+        "e": 2.76
+      },
+      {
+        "w": "nechta",
+        "s": 2.84,
+        "e": 3.08
+      },
+      {
+        "w": "dasturchilar",
+        "s": 3.14,
+        "e": 3.7
+      },
+      {
+        "w": "va",
+        "s": 3.76,
+        "e": 3.82
+      },
+      {
+        "w": "repozitoriylar",
+        "s": 3.98,
+        "e": 4.68
+      },
+      {
+        "w": "o‘rtasida",
+        "s": 4.76,
+        "e": 5.14
+      },
+      {
+        "w": "kod",
+        "s": 5.22,
+        "e": 5.4
+      },
+      {
+        "w": "almashishning",
+        "s": 5.44,
+        "e": 5.96
+      },
+      {
+        "w": "taqsimlangan",
+        "s": 6.26,
+        "e": 6.98
+      },
+      {
+        "w": "vorkflou",
+        "s": 7.14,
+        "e": 7.59
+      },
+      {
+        "w": "strategiyalarini",
+        "s": 7.63,
+        "e": 8.31
+      },
+      {
+        "w": "tahlil",
+        "s": 8.35,
+        "e": 8.63
+      },
+      {
+        "w": "qilamiz.",
+        "s": 8.65,
+        "e": 8.95
+      }
+    ]
+  },
+  {
+    "id": "l2",
+    "scene": "intro",
+    "text": "Git markazlashmagan tizim bo'lib, har bir klon to'laqonli repozitoriy hisoblanadi. Bugun markazlashgan, integratsiya menejeri va diktator-leytenantlar modellarini ko'rib chiqamiz.",
+    "show": "Git markazlashmagan tizim bo'lib, har bir klon to'laqonli repozitoriy hisoblanadi. Bugun markazlashgan, integratsiya menejeri va diktator-leytenantlar modellarini ko'rib chiqamiz.",
+    "say": "Git markazlashmagan tizim bo'lib, har bir klon to'laqonli repozitoriy hisoblanadi. Bugun markazlashgan, integratsiya menejeri va diktator-leytenantlar modellarini ko'rib chiqamiz.",
+    "a0": 9.95,
+    "a1": 19.77,
+    "words": [
+      {
+        "w": "Git",
+        "s": 9.95,
+        "e": 10.15
+      },
+      {
+        "w": "markazlashmagan",
+        "s": 10.33,
+        "e": 11.01
+      },
+      {
+        "w": "tizim",
+        "s": 11.05,
+        "e": 11.27
+      },
+      {
+        "w": "bo'lib,",
+        "s": 11.29,
+        "e": 11.49
+      },
+      {
+        "w": "har",
+        "s": 11.83,
+        "e": 12.03
+      },
+      {
+        "w": "bir",
+        "s": 12.09,
+        "e": 12.19
+      },
+      {
+        "w": "klon",
+        "s": 12.25,
+        "e": 12.47
+      },
+      {
+        "w": "to'laqonli",
+        "s": 12.55,
+        "e": 13.07
+      },
+      {
+        "w": "repozitoriy",
+        "s": 13.13,
+        "e": 13.67
+      },
+      {
+        "w": "hisoblanadi.",
+        "s": 13.71,
+        "e": 14.17
+      },
+      {
+        "w": "Bugun",
+        "s": 14.69,
+        "e": 14.91
+      },
+      {
+        "w": "markazlashgan,",
+        "s": 14.95,
+        "e": 15.63
+      },
+      {
+        "w": "integratsiya",
+        "s": 16.03,
+        "e": 16.51
+      },
+      {
+        "w": "menejeri",
+        "s": 16.57,
+        "e": 17.03
+      },
+      {
+        "w": "va",
+        "s": 17.11,
+        "e": 17.19
+      },
+      {
+        "w": "diktator-leytenantlar",
+        "s": 17.53,
+        "e": 18.71
+      },
+      {
+        "w": "modellarini",
+        "s": 18.75,
+        "e": 19.23
+      },
+      {
+        "w": "ko'rib",
+        "s": 19.25,
+        "e": 19.43
+      },
+      {
+        "w": "chiqamiz.",
+        "s": 19.47,
+        "e": 19.77
+      }
+    ]
+  },
+  {
+    "id": "l3",
+    "scene": "markaziy_workflow",
+    "text": "Markazlashgan modelda barcha dasturchilar bitta umumiy repozitoriyga push qiladi. Agar serverdagi tarix o'zgargan bo'lsa, Git boshqalarning ishini ustidan yozishga yo'l qo'ymaydi.",
+    "show": "Markazlashgan modelda barcha dasturchilar bitta umumiy repozitoriyga push qiladi. Agar serverdagi tarix o'zgargan bo'lsa, Git boshqalarning ishini ustidan yozishga yo'l qo'ymaydi.",
+    "say": "Markazlashgan modelda barcha dasturchilar bitta umumiy repozitoriyga push qiladi. Agar serverdagi tarix o'zgargan bo'lsa, Git boshqalarning ishini ustidan yozishga yo'l qo'ymaydi.",
+    "a0": 20.63,
+    "a1": 30.0,
+    "words": [
+      {
+        "w": "Markazlashgan",
+        "s": 20.63,
+        "e": 21.23
+      },
+      {
+        "w": "modelda",
+        "s": 21.27,
+        "e": 21.63
+      },
+      {
+        "w": "barcha",
+        "s": 21.99,
+        "e": 22.23
+      },
+      {
+        "w": "dasturchilar",
+        "s": 22.27,
+        "e": 22.78
+      },
+      {
+        "w": "bitta",
+        "s": 22.9,
+        "e": 23.22
+      },
+      {
+        "w": "umumiy",
+        "s": 23.32,
+        "e": 23.62
+      },
+      {
+        "w": "repozitoriyga",
+        "s": 23.68,
+        "e": 24.36
+      },
+      {
+        "w": "push",
+        "s": 24.42,
+        "e": 24.6
+      },
+      {
+        "w": "qiladi.",
+        "s": 24.62,
+        "e": 24.86
+      },
+      {
+        "w": "Agar",
+        "s": 25.4,
+        "e": 25.62
+      },
+      {
+        "w": "serverdagi",
+        "s": 25.68,
+        "e": 26.16
+      },
+      {
+        "w": "tarix",
+        "s": 26.18,
+        "e": 26.4
+      },
+      {
+        "w": "o'zgargan",
+        "s": 26.5,
+        "e": 26.9
+      },
+      {
+        "w": "bo'lsa,",
+        "s": 26.94,
+        "e": 27.2
+      },
+      {
+        "w": "Git",
+        "s": 27.62,
+        "e": 27.8
+      },
+      {
+        "w": "boshqalarning",
+        "s": 27.88,
+        "e": 28.42
+      },
+      {
+        "w": "ishini",
+        "s": 28.46,
+        "e": 28.68
+      },
+      {
+        "w": "ustidan",
+        "s": 28.76,
+        "e": 29.1
+      },
+      {
+        "w": "yozishga",
+        "s": 29.16,
+        "e": 29.5
+      },
+      {
+        "w": "yo'l",
+        "s": 29.54,
+        "e": 29.66
+      },
+      {
+        "w": "qo'ymaydi.",
+        "s": 29.7,
+        "e": 30.0
+      }
+    ]
+  },
+  {
+    "id": "l4",
+    "scene": "markaziy_workflow",
+    "text": "Dasturchi avval fetch qilib yangiliklarni o'ziga birlashtiradi va faqat fast-forward bilan yangilangan toza tarixni serverga push qiladi.",
+    "show": "Dasturchi avval fetch qilib yangiliklarni o'ziga birlashtiradi va faqat fast-forward bilan yangilangan toza tarixni serverga push qiladi.",
+    "say": "Dasturchi avval fetch qilib yangiliklarni o'ziga birlashtiradi va faqat fast forvard bilan yangilangan toza tarixni serverga push qiladi.",
+    "a0": 30.64,
+    "a1": 38.51,
+    "words": [
+      {
+        "w": "Dasturchi",
+        "s": 30.64,
+        "e": 31.04
+      },
+      {
+        "w": "avval",
+        "s": 31.44,
+        "e": 31.74
+      },
+      {
+        "w": "fetch",
+        "s": 31.92,
+        "e": 32.16
+      },
+      {
+        "w": "qilib",
+        "s": 32.2,
+        "e": 32.42
+      },
+      {
+        "w": "yangiliklarni",
+        "s": 32.72,
+        "e": 33.3
+      },
+      {
+        "w": "o'ziga",
+        "s": 33.42,
+        "e": 33.68
+      },
+      {
+        "w": "birlashtiradi",
+        "s": 33.74,
+        "e": 34.26
+      },
+      {
+        "w": "va",
+        "s": 34.34,
+        "e": 34.42
+      },
+      {
+        "w": "faqat",
+        "s": 34.78,
+        "e": 35.12
+      },
+      {
+        "w": "fast",
+        "s": 35.28,
+        "e": 35.54
+      },
+      {
+        "w": "forvard",
+        "s": 35.58,
+        "e": 35.94
+      },
+      {
+        "w": "bilan",
+        "s": 35.96,
+        "e": 36.16
+      },
+      {
+        "w": "yangilangan",
+        "s": 36.22,
+        "e": 36.76
+      },
+      {
+        "w": "toza",
+        "s": 36.86,
+        "e": 37.14
+      },
+      {
+        "w": "tarixni",
+        "s": 37.2,
+        "e": 37.57
+      },
+      {
+        "w": "serverga",
+        "s": 37.63,
+        "e": 38.03
+      },
+      {
+        "w": "push",
+        "s": 38.09,
+        "e": 38.25
+      },
+      {
+        "w": "qiladi.",
+        "s": 38.27,
+        "e": 38.51
+      }
+    ]
+  },
+  {
+    "id": "l5",
+    "scene": "integratsiya_menejeri",
+    "text": "Integratsiya menejeri modelida har kim o'zining ommaviy repozitoriyasiga yozadi, rasmiy etalon repo'ga esa faqat loyiha yurituvchisi, ya'ni maintainer o'tkazadi.",
+    "show": "Integratsiya menejeri modelida har kim o'zining ommaviy repozitoriyasiga yozadi, rasmiy etalon repo'ga esa faqat loyiha yurituvchisi, ya'ni maintainer o'tkazadi.",
+    "say": "Integratsiya menejeri modelida har kim o'zining ommaviy repozitoriyasiga yozadi, rasmiy etalon repoga esa faqat loyiha yurituvchisi, ya'ni meynteyner o'tkazadi.",
+    "a0": 39.17,
+    "a1": 48.51,
+    "words": [
+      {
+        "w": "Integratsiya",
+        "s": 39.17,
+        "e": 39.69
+      },
+      {
+        "w": "menejeri",
+        "s": 39.75,
+        "e": 40.15
+      },
+      {
+        "w": "modelida",
+        "s": 40.19,
+        "e": 40.55
+      },
+      {
+        "w": "har",
+        "s": 40.89,
+        "e": 41.03
+      },
+      {
+        "w": "kim",
+        "s": 41.07,
+        "e": 41.21
+      },
+      {
+        "w": "o'zining",
+        "s": 41.35,
+        "e": 41.67
+      },
+      {
+        "w": "ommaviy",
+        "s": 41.79,
+        "e": 42.13
+      },
+      {
+        "w": "repozitoriyasiga",
+        "s": 42.17,
+        "e": 42.95
+      },
+      {
+        "w": "yozadi,",
+        "s": 42.99,
+        "e": 43.27
+      },
+      {
+        "w": "rasmiy",
+        "s": 43.67,
+        "e": 43.99
+      },
+      {
+        "w": "etalon",
+        "s": 44.17,
+        "e": 44.51
+      },
+      {
+        "w": "repoga",
+        "s": 44.57,
+        "e": 44.89
+      },
+      {
+        "w": "esa",
+        "s": 44.95,
+        "e": 45.11
+      },
+      {
+        "w": "faqat",
+        "s": 45.17,
+        "e": 45.47
+      },
+      {
+        "w": "loyiha",
+        "s": 45.77,
+        "e": 46.09
+      },
+      {
+        "w": "yurituvchisi,",
+        "s": 46.17,
+        "e": 46.75
+      },
+      {
+        "w": "ya'ni",
+        "s": 46.97,
+        "e": 47.17
+      },
+      {
+        "w": "meynteyner",
+        "s": 47.49,
+        "e": 48.09
+      },
+      {
+        "w": "o'tkazadi.",
+        "s": 48.13,
+        "e": 48.51
+      }
+    ]
+  },
+  {
+    "id": "l6",
+    "scene": "integratsiya_menejeri",
+    "text": "GitHub va GitLab'dagi mashhur Fork va Pull Request mexanizmi aynan shu model asosida ishlaydi, unda hech kim boshqalarni kutmasdan mustaqil ishlay oladi.",
+    "show": "GitHub va GitLab'dagi mashhur Fork va Pull Request mexanizmi aynan shu model asosida ishlaydi, unda hech kim boshqalarni kutmasdan mustaqil ishlay oladi.",
+    "say": "Git hab va git leb'dagi mashhur fork va pul rekvest mexanizmi aynan shu model asosida ishlaydi, unda hech kim boshqalarni kutmasdan mustaqil ishlay oladi.",
+    "a0": 49.19,
+    "a1": 57.6,
+    "words": [
+      {
+        "w": "Git",
+        "s": 49.19,
+        "e": 49.33
+      },
+      {
+        "w": "hab",
+        "s": 49.37,
+        "e": 49.53
+      },
+      {
+        "w": "va",
+        "s": 49.59,
+        "e": 49.67
+      },
+      {
+        "w": "git",
+        "s": 49.83,
+        "e": 49.97
+      },
+      {
+        "w": "leb'dagi",
+        "s": 50.01,
+        "e": 50.35
+      },
+      {
+        "w": "mashhur",
+        "s": 50.43,
+        "e": 50.83
+      },
+      {
+        "w": "fork",
+        "s": 50.99,
+        "e": 51.25
+      },
+      {
+        "w": "va",
+        "s": 51.29,
+        "e": 51.35
+      },
+      {
+        "w": "pul",
+        "s": 51.47,
+        "e": 51.63
+      },
+      {
+        "w": "rekvest",
+        "s": 51.69,
+        "e": 52.05
+      },
+      {
+        "w": "mexanizmi",
+        "s": 52.07,
+        "e": 52.56
+      },
+      {
+        "w": "aynan",
+        "s": 52.92,
+        "e": 53.16
+      },
+      {
+        "w": "shu",
+        "s": 53.24,
+        "e": 53.36
+      },
+      {
+        "w": "model",
+        "s": 53.44,
+        "e": 53.72
+      },
+      {
+        "w": "asosida",
+        "s": 53.76,
+        "e": 54.1
+      },
+      {
+        "w": "ishlaydi,",
+        "s": 54.14,
+        "e": 54.42
+      },
+      {
+        "w": "unda",
+        "s": 54.84,
+        "e": 55.02
+      },
+      {
+        "w": "hech",
+        "s": 55.36,
+        "e": 55.56
+      },
+      {
+        "w": "kim",
+        "s": 55.58,
+        "e": 55.72
+      },
+      {
+        "w": "boshqalarni",
+        "s": 55.76,
+        "e": 56.22
+      },
+      {
+        "w": "kutmasdan",
+        "s": 56.24,
+        "e": 56.66
+      },
+      {
+        "w": "mustaqil",
+        "s": 56.74,
+        "e": 57.12
+      },
+      {
+        "w": "ishlay",
+        "s": 57.16,
+        "e": 57.34
+      },
+      {
+        "w": "oladi.",
+        "s": 57.38,
+        "e": 57.6
+      }
+    ]
+  },
+  {
+    "id": "l7",
+    "scene": "diktator_va_leytenantlar",
+    "text": "Linux yadrosi kabi minglab dasturchilar ishlaydigan ulkan tizimlarda diktator va leytenantlar deb nomlanuvchi ierarxik boshqaruv qo'llaniladi.",
+    "show": "Linux yadrosi kabi minglab dasturchilar ishlaydigan ulkan tizimlarda diktator va leytenantlar deb nomlanuvchi ierarxik boshqaruv qo'llaniladi.",
+    "say": "Linux yadrosi kabi minglab dasturchilar ishlaydigan ulkan tizimlarda diktator va leytenantlar deb nomlanuvchi ierarxik boshqaruv qo'llaniladi.",
+    "a0": 58.5,
+    "a1": 66.06,
+    "words": [
+      {
+        "w": "Linux",
+        "s": 58.5,
+        "e": 58.78
+      },
+      {
+        "w": "yadrosi",
+        "s": 58.86,
+        "e": 59.22
+      },
+      {
+        "w": "kabi",
+        "s": 59.24,
+        "e": 59.44
+      },
+      {
+        "w": "minglab",
+        "s": 59.58,
+        "e": 60.04
+      },
+      {
+        "w": "dasturchilar",
+        "s": 60.04,
+        "e": 60.52
+      },
+      {
+        "w": "ishlaydigan",
+        "s": 60.56,
+        "e": 60.98
+      },
+      {
+        "w": "ulkan",
+        "s": 61.3,
+        "e": 61.6
+      },
+      {
+        "w": "tizimlarda",
+        "s": 61.64,
+        "e": 62.1
+      },
+      {
+        "w": "diktator",
+        "s": 62.48,
+        "e": 62.92
+      },
+      {
+        "w": "va",
+        "s": 62.98,
+        "e": 63.06
+      },
+      {
+        "w": "leytenantlar",
+        "s": 63.16,
+        "e": 63.7
+      },
+      {
+        "w": "deb",
+        "s": 63.74,
+        "e": 63.84
+      },
+      {
+        "w": "nomlanuvchi",
+        "s": 63.88,
+        "e": 64.3
+      },
+      {
+        "w": "ierarxik",
+        "s": 64.66,
+        "e": 65.12
+      },
+      {
+        "w": "boshqaruv",
+        "s": 65.18,
+        "e": 65.56
+      },
+      {
+        "w": "qo'llaniladi.",
+        "s": 65.58,
+        "e": 66.06
+      }
+    ]
+  },
+  {
+    "id": "l8",
+    "scene": "diktator_va_leytenantlar",
+    "text": "Dasturchilar quyi tizim leytenantlariga kod uzatadi, leytenantlar tekshirib diktatorga taqdim etadi, diktator esa yakuniy kodni etalon repozitoriyga chiqaradi.",
+    "show": "Dasturchilar quyi tizim leytenantlariga kod uzatadi, leytenantlar tekshirib diktatorga taqdim etadi, diktator esa yakuniy kodni etalon repozitoriyga chiqaradi.",
+    "say": "Dasturchilar quyi tizim leytenantlariga kod uzatadi, leytenantlar tekshirib diktatorga taqdim etadi, diktator esa yakuniy kodni etalon repozitoriyga chiqaradi.",
+    "a0": 66.78,
+    "a1": 75.51,
+    "words": [
+      {
+        "w": "Dasturchilar",
+        "s": 66.78,
+        "e": 67.26
+      },
+      {
+        "w": "quyi",
+        "s": 67.34,
+        "e": 67.55
+      },
+      {
+        "w": "tizim",
+        "s": 67.59,
+        "e": 67.79
+      },
+      {
+        "w": "leytenantlariga",
+        "s": 67.85,
+        "e": 68.43
+      },
+      {
+        "w": "kod",
+        "s": 68.49,
+        "e": 68.67
+      },
+      {
+        "w": "uzatadi,",
+        "s": 68.71,
+        "e": 69.05
+      },
+      {
+        "w": "leytenantlar",
+        "s": 69.41,
+        "e": 69.89
+      },
+      {
+        "w": "tekshirib",
+        "s": 70.17,
+        "e": 70.59
+      },
+      {
+        "w": "diktatorga",
+        "s": 70.67,
+        "e": 71.15
+      },
+      {
+        "w": "taqdim",
+        "s": 71.19,
+        "e": 71.47
+      },
+      {
+        "w": "etadi,",
+        "s": 71.51,
+        "e": 71.73
+      },
+      {
+        "w": "diktator",
+        "s": 72.13,
+        "e": 72.53
+      },
+      {
+        "w": "esa",
+        "s": 72.59,
+        "e": 72.73
+      },
+      {
+        "w": "yakuniy",
+        "s": 73.07,
+        "e": 73.51
+      },
+      {
+        "w": "kodni",
+        "s": 73.55,
+        "e": 73.87
+      },
+      {
+        "w": "etalon",
+        "s": 74.07,
+        "e": 74.43
+      },
+      {
+        "w": "repozitoriyga",
+        "s": 74.49,
+        "e": 75.15
+      },
+      {
+        "w": "chiqaradi.",
+        "s": 75.17,
+        "e": 75.51
+      }
+    ]
+  },
+  {
+    "id": "l9",
+    "scene": "merge_va_patch_farqi",
+    "text": "O'zgarishlarni uzatish shakliga ko'ra merge workflow va patch workflow farqlanadi. Merge usulida to'liq tarmoq tarixi va merge commitlari to'g'ridan-to'g'ri o'tadi.",
+    "show": "O'zgarishlarni uzatish shakliga ko'ra merge workflow va patch workflow farqlanadi. Merge usulida to'liq tarmoq tarixi va merge commitlari to'g'ridan-to'g'ri o'tadi.",
+    "say": "O'zgarishlarni uzatish shakliga ko'ra merge vorkflou va patch vorkflou farqlanadi. Merge usulida to'liq tarmoq tarixi va merge kommitlari to'g'ridan-to'g'ri o'tadi.",
+    "a0": 76.33,
+    "a1": 85.5,
+    "words": [
+      {
+        "w": "O'zgarishlarni",
+        "s": 76.33,
+        "e": 76.87
+      },
+      {
+        "w": "uzatish",
+        "s": 76.91,
+        "e": 77.21
+      },
+      {
+        "w": "shakliga",
+        "s": 77.23,
+        "e": 77.57
+      },
+      {
+        "w": "ko'ra",
+        "s": 77.61,
+        "e": 77.79
+      },
+      {
+        "w": "merge",
+        "s": 78.17,
+        "e": 78.45
+      },
+      {
+        "w": "vorkflou",
+        "s": 78.49,
+        "e": 78.89
+      },
+      {
+        "w": "va",
+        "s": 79.03,
+        "e": 79.11
+      },
+      {
+        "w": "patch",
+        "s": 79.45,
+        "e": 79.69
+      },
+      {
+        "w": "vorkflou",
+        "s": 79.73,
+        "e": 80.09
+      },
+      {
+        "w": "farqlanadi.",
+        "s": 80.13,
+        "e": 80.57
+      },
+      {
+        "w": "Merge",
+        "s": 81.13,
+        "e": 81.39
+      },
+      {
+        "w": "usulida",
+        "s": 81.41,
+        "e": 81.75
+      },
+      {
+        "w": "to'liq",
+        "s": 82.09,
+        "e": 82.37
+      },
+      {
+        "w": "tarmoq",
+        "s": 82.45,
+        "e": 82.78
+      },
+      {
+        "w": "tarixi",
+        "s": 82.84,
+        "e": 83.2
+      },
+      {
+        "w": "va",
+        "s": 83.32,
+        "e": 83.38
+      },
+      {
+        "w": "merge",
+        "s": 83.72,
+        "e": 83.96
+      },
+      {
+        "w": "kommitlari",
+        "s": 83.98,
+        "e": 84.42
+      },
+      {
+        "w": "to'g'ridan-to'g'ri",
+        "s": 84.54,
+        "e": 85.22
+      },
+      {
+        "w": "o'tadi.",
+        "s": 85.26,
+        "e": 85.5
+      }
+    ]
+  },
+  {
+    "id": "l10",
+    "scene": "merge_va_patch_farqi",
+    "text": "Email orqali uzatiladigan patch workflow'da esa format-patch va git am buyruqlari yordamida faqat alohida toza commitlar zanjiri ko'chirib o'tkaziladi.",
+    "show": "Email orqali uzatiladigan patch workflow'da esa format-patch va git am buyruqlari yordamida faqat alohida toza commitlar zanjiri ko'chirib o'tkaziladi.",
+    "say": "Email orqali uzatiladigan patch vorkflou'da esa format pech va git ey em buyruqlari yordamida faqat alohida toza kommitlar zanjiri ko'chirib o'tkaziladi.",
+    "a0": 86.14,
+    "a1": 94.48,
+    "words": [
+      {
+        "w": "Email",
+        "s": 86.14,
+        "e": 86.42
+      },
+      {
+        "w": "orqali",
+        "s": 86.46,
+        "e": 86.72
+      },
+      {
+        "w": "uzatiladigan",
+        "s": 86.76,
+        "e": 87.26
+      },
+      {
+        "w": "patch",
+        "s": 87.56,
+        "e": 87.78
+      },
+      {
+        "w": "vorkflou'da",
+        "s": 87.84,
+        "e": 88.28
+      },
+      {
+        "w": "esa",
+        "s": 88.32,
+        "e": 88.48
+      },
+      {
+        "w": "format",
+        "s": 88.8,
+        "e": 89.1
+      },
+      {
+        "w": "pech",
+        "s": 89.16,
+        "e": 89.4
+      },
+      {
+        "w": "va",
+        "s": 89.46,
+        "e": 89.52
+      },
+      {
+        "w": "git",
+        "s": 89.66,
+        "e": 89.82
+      },
+      {
+        "w": "ey",
+        "s": 90.02,
+        "e": 90.1
+      },
+      {
+        "w": "em",
+        "s": 90.22,
+        "e": 90.34
+      },
+      {
+        "w": "buyruqlari",
+        "s": 90.38,
+        "e": 90.78
+      },
+      {
+        "w": "yordamida",
+        "s": 90.8,
+        "e": 91.22
+      },
+      {
+        "w": "faqat",
+        "s": 91.36,
+        "e": 91.66
+      },
+      {
+        "w": "alohida",
+        "s": 91.98,
+        "e": 92.38
+      },
+      {
+        "w": "toza",
+        "s": 92.54,
+        "e": 92.82
+      },
+      {
+        "w": "kommitlar",
+        "s": 92.88,
+        "e": 93.3
+      },
+      {
+        "w": "zanjiri",
+        "s": 93.34,
+        "e": 93.7
+      },
+      {
+        "w": "ko'chirib",
+        "s": 93.72,
+        "e": 94.02
+      },
+      {
+        "w": "o'tkaziladi.",
+        "s": 94.04,
+        "e": 94.48
+      }
+    ]
+  },
+  {
+    "id": "l11",
+    "scene": "xulosa",
+    "text": "Xulosa qilganda, kichik va o'rta jamoalarda markazlashgan model, ochiq manbali va ommaviy loyihalarda esa integratsiya menejeri eng yaxshi tanlovdir.",
+    "show": "Xulosa qilganda, kichik va o'rta jamoalarda markazlashgan model, ochiq manbali va ommaviy loyihalarda esa integratsiya menejeri eng yaxshi tanlovdir.",
+    "say": "Xulosa qilganda, kichik va o'rta jamoalarda markazlashgan model, ochiq manbali va ommaviy loyihalarda esa integratsiya menejeri eng yaxshi tanlovdir.",
+    "a0": 95.16,
+    "a1": 103.31,
+    "words": [
+      {
+        "w": "Xulosa",
+        "s": 95.16,
+        "e": 95.45
+      },
+      {
+        "w": "qilganda,",
+        "s": 95.47,
+        "e": 95.85
+      },
+      {
+        "w": "kichik",
+        "s": 96.01,
+        "e": 96.31
+      },
+      {
+        "w": "va",
+        "s": 96.39,
+        "e": 96.45
+      },
+      {
+        "w": "o'rta",
+        "s": 96.65,
+        "e": 96.87
+      },
+      {
+        "w": "jamoalarda",
+        "s": 96.91,
+        "e": 97.43
+      },
+      {
+        "w": "markazlashgan",
+        "s": 97.53,
+        "e": 98.17
+      },
+      {
+        "w": "model,",
+        "s": 98.21,
+        "e": 98.47
+      },
+      {
+        "w": "ochiq",
+        "s": 98.85,
+        "e": 99.07
+      },
+      {
+        "w": "manbali",
+        "s": 99.11,
+        "e": 99.49
+      },
+      {
+        "w": "va",
+        "s": 99.55,
+        "e": 99.61
+      },
+      {
+        "w": "ommaviy",
+        "s": 99.97,
+        "e": 100.31
+      },
+      {
+        "w": "loyihalarda",
+        "s": 100.39,
+        "e": 100.85
+      },
+      {
+        "w": "esa",
+        "s": 100.89,
+        "e": 101.05
+      },
+      {
+        "w": "integratsiya",
+        "s": 101.25,
+        "e": 101.79
+      },
+      {
+        "w": "menejeri",
+        "s": 101.83,
+        "e": 102.21
+      },
+      {
+        "w": "eng",
+        "s": 102.41,
+        "e": 102.57
+      },
+      {
+        "w": "yaxshi",
+        "s": 102.61,
+        "e": 102.85
+      },
+      {
+        "w": "tanlovdir.",
+        "s": 102.89,
+        "e": 103.31
+      }
+    ]
+  },
+  {
+    "id": "l12",
+    "scene": "xulosa",
+    "text": "Keyingi o‘ttiz uchinchi bobda ochiq loyihalarga hissa qo'shish, toza commitlar tayyorlash va patchlarni jo'natish amaliyotini o'rganamiz.",
+    "show": "Keyingi o‘ttiz uchinchi bobda ochiq loyihalarga hissa qo'shish, toza commitlar tayyorlash va patchlarni jo'natish amaliyotini o'rganamiz.",
+    "say": "Keyingi o‘ttiz uchinchi bobda ochiq loyihalarga hissa qo'shish, toza kommitlar tayyorlash va patchlarni jo'natish amaliyotini o'rganamiz.",
+    "a0": 103.97,
+    "a1": 111.04,
+    "words": [
+      {
+        "w": "Keyingi",
+        "s": 103.97,
+        "e": 104.33
+      },
+      {
+        "w": "o‘ttiz",
+        "s": 104.49,
+        "e": 104.73
+      },
+      {
+        "w": "uchinchi",
+        "s": 104.83,
+        "e": 105.13
+      },
+      {
+        "w": "bobda",
+        "s": 105.15,
+        "e": 105.41
+      },
+      {
+        "w": "ochiq",
+        "s": 105.77,
+        "e": 106.0
+      },
+      {
+        "w": "loyihalarga",
+        "s": 106.04,
+        "e": 106.56
+      },
+      {
+        "w": "hissa",
+        "s": 106.64,
+        "e": 106.86
+      },
+      {
+        "w": "qo'shish,",
+        "s": 106.92,
+        "e": 107.28
+      },
+      {
+        "w": "toza",
+        "s": 107.58,
+        "e": 107.82
+      },
+      {
+        "w": "kommitlar",
+        "s": 107.9,
+        "e": 108.36
+      },
+      {
+        "w": "tayyorlash",
+        "s": 108.38,
+        "e": 108.8
+      },
+      {
+        "w": "va",
+        "s": 108.86,
+        "e": 108.92
+      },
+      {
+        "w": "patchlarni",
+        "s": 109.26,
+        "e": 109.74
+      },
+      {
+        "w": "jo'natish",
+        "s": 109.78,
+        "e": 110.12
+      },
+      {
+        "w": "amaliyotini",
+        "s": 110.18,
+        "e": 110.62
+      },
+      {
+        "w": "o'rganamiz.",
+        "s": 110.64,
+        "e": 111.04
+      }
+    ]
+  }
+]
