@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" playsinline poster="/video/git/50-buyruqlar-xaritasi.jpg" src="/video/git/50-buyruqlar-xaritasi.mp4">
+    <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/git/50-buyruqlar-xaritasi.chapters.vtt" default>
+    <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/git/50-buyruqlar-xaritasi.uz.vtt">
+  </video>
+  <figcaption>50.1-video. Git buyruqlar xaritasi: mental model, 4 ta oltin savol, reflog va yakuniy xulosa</figcaption>
+</figure>
+
 Bu — kitobning oxirgi bobi. Unda yangi mavzu deyarli yo'q: u **xarita**. Oldingi 49 bobda buyruqlar hikoya ichida, kerak bo'lgan joyda birma-bir kiritildi. Natijada bitta buyruq haqidagi gap bir nechta bobga tarqalib ketdi — masalan, `git config` 3-bobda boshlanib, 12-, 28-, 45-, 47-boblarda davom etadi. Pro Git kitobining "Git Commands" ilovasi xuddi shu muammo uchun yozilgan: buyruqlarni vazifasi bo'yicha guruhlab, har biri kitobning qayerida ishlatilganini ko'rsatadi. Bu bob shu ilova tuzilishiga amal qiladi, lekin havolalar bizning boblarga, ro'yxat esa Git 2.56 holatiga moslangan.
 
 Bobda to'rt qism bor:

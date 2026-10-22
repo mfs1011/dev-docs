@@ -1,0 +1,994 @@
+[
+  {
+    "id": "l1",
+    "scene": "model_mental",
+    "text": "Gitdagi har qanday murakkab buyruqni tushunish uch hudud va o'zgarmas obyektlar modeliga tayanadi.",
+    "show": "Gitdagi har qanday murakkab buyruqni tushunish uch hudud va o'zgarmas obyektlar modeliga tayanadi.",
+    "say": "Gitdagi har qanday murakkab buyruqni tushunish uch hudud va o'zgarmas obyektlar modeliga tayanadi.",
+    "a0": 0.36,
+    "a1": 5.76,
+    "words": [
+      {
+        "w": "Gitdagi",
+        "s": 0.36,
+        "e": 0.78
+      },
+      {
+        "w": "har",
+        "s": 0.88,
+        "e": 1.02
+      },
+      {
+        "w": "qanday",
+        "s": 1.08,
+        "e": 1.36
+      },
+      {
+        "w": "murakkab",
+        "s": 1.42,
+        "e": 1.86
+      },
+      {
+        "w": "buyruqni",
+        "s": 1.88,
+        "e": 2.3
+      },
+      {
+        "w": "tushunish",
+        "s": 2.34,
+        "e": 2.76
+      },
+      {
+        "w": "uch",
+        "s": 3.1,
+        "e": 3.26
+      },
+      {
+        "w": "hudud",
+        "s": 3.32,
+        "e": 3.64
+      },
+      {
+        "w": "va",
+        "s": 3.74,
+        "e": 3.82
+      },
+      {
+        "w": "o'zgarmas",
+        "s": 3.98,
+        "e": 4.44
+      },
+      {
+        "w": "obyektlar",
+        "s": 4.5,
+        "e": 4.9
+      },
+      {
+        "w": "modeliga",
+        "s": 4.94,
+        "e": 5.34
+      },
+      {
+        "w": "tayanadi.",
+        "s": 5.38,
+        "e": 5.76
+      }
+    ]
+  },
+  {
+    "id": "l2",
+    "scene": "model_mental",
+    "text": "Ishchi maydon, indeks va ombor o'rtasidagi ma'lumot oqimini tasavvur qilish chalkashliklarning oldini oladi.",
+    "show": "Ishchi maydon, indeks va ombor o'rtasidagi ma'lumot oqimini tasavvur qilish chalkashliklarning oldini oladi.",
+    "say": "Ishchi maydon, indeks va ombor o'rtasidagi ma'lumot oqimini tasavvur qilish chalkashliklarning oldini oladi.",
+    "a0": 6.82,
+    "a1": 12.97,
+    "words": [
+      {
+        "w": "Ishchi",
+        "s": 6.82,
+        "e": 7.06
+      },
+      {
+        "w": "maydon,",
+        "s": 7.1,
+        "e": 7.48
+      },
+      {
+        "w": "indeks",
+        "s": 7.91,
+        "e": 8.35
+      },
+      {
+        "w": "va",
+        "s": 8.45,
+        "e": 8.53
+      },
+      {
+        "w": "ombor",
+        "s": 8.79,
+        "e": 9.11
+      },
+      {
+        "w": "o'rtasidagi",
+        "s": 9.15,
+        "e": 9.65
+      },
+      {
+        "w": "ma'lumot",
+        "s": 9.69,
+        "e": 10.09
+      },
+      {
+        "w": "oqimini",
+        "s": 10.15,
+        "e": 10.47
+      },
+      {
+        "w": "tasavvur",
+        "s": 10.53,
+        "e": 10.93
+      },
+      {
+        "w": "qilish",
+        "s": 10.99,
+        "e": 11.27
+      },
+      {
+        "w": "chalkashliklarning",
+        "s": 11.51,
+        "e": 12.37
+      },
+      {
+        "w": "oldini",
+        "s": 12.47,
+        "e": 12.71
+      },
+      {
+        "w": "oladi.",
+        "s": 12.75,
+        "e": 12.97
+      }
+    ]
+  },
+  {
+    "id": "l3",
+    "scene": "four_questions",
+    "text": "Yuzlab buyruqlarni yodlamasdan, har qanday amal oldidan to'rtta oddiy savolga javob berish kifoyadir.",
+    "show": "Yuzlab buyruqlarni yodlamasdan, har qanday amal oldidan to'rtta oddiy savolga javob berish kifoyadir.",
+    "say": "Yuzlab buyruqlarni yodlamasdan, har qanday amal oldidan to'rtta oddiy savolga javob berish kifoyadir.",
+    "a0": 13.97,
+    "a1": 19.95,
+    "words": [
+      {
+        "w": "Yuzlab",
+        "s": 13.97,
+        "e": 14.33
+      },
+      {
+        "w": "buyruqlarni",
+        "s": 14.37,
+        "e": 14.95
+      },
+      {
+        "w": "yodlamasdan,",
+        "s": 14.95,
+        "e": 15.67
+      },
+      {
+        "w": "har",
+        "s": 16.05,
+        "e": 16.23
+      },
+      {
+        "w": "qanday",
+        "s": 16.27,
+        "e": 16.57
+      },
+      {
+        "w": "amal",
+        "s": 16.67,
+        "e": 16.91
+      },
+      {
+        "w": "oldidan",
+        "s": 17.01,
+        "e": 17.35
+      },
+      {
+        "w": "to'rtta",
+        "s": 17.71,
+        "e": 18.13
+      },
+      {
+        "w": "oddiy",
+        "s": 18.27,
+        "e": 18.51
+      },
+      {
+        "w": "savolga",
+        "s": 18.57,
+        "e": 18.93
+      },
+      {
+        "w": "javob",
+        "s": 18.97,
+        "e": 19.21
+      },
+      {
+        "w": "berish",
+        "s": 19.25,
+        "e": 19.47
+      },
+      {
+        "w": "kifoyadir.",
+        "s": 19.49,
+        "e": 19.95
+      }
+    ]
+  },
+  {
+    "id": "l4",
+    "scene": "four_questions",
+    "text": "Bu amal xedni suradimi, indeksni o'zgartiradimi, fayllarga tegadimi yoki masofaviy server bilan bog'lanadimi.",
+    "show": "Bu amal xedni suradimi, indeksni o'zgartiradimi, fayllarga tegadimi yoki masofaviy server bilan bog'lanadimi.",
+    "say": "Bu amal xedni suradimi, indeksni o'zgartiradimi, fayllarga tegadimi yoki masofaviy server bilan bog'lanadimi.",
+    "a0": 20.73,
+    "a1": 27.92,
+    "words": [
+      {
+        "w": "Bu",
+        "s": 20.73,
+        "e": 20.79
+      },
+      {
+        "w": "amal",
+        "s": 20.87,
+        "e": 21.09
+      },
+      {
+        "w": "xedni",
+        "s": 21.49,
+        "e": 21.75
+      },
+      {
+        "w": "suradimi,",
+        "s": 21.81,
+        "e": 22.21
+      },
+      {
+        "w": "indeksni",
+        "s": 22.78,
+        "e": 23.18
+      },
+      {
+        "w": "o'zgartiradimi,",
+        "s": 23.24,
+        "e": 23.8
+      },
+      {
+        "w": "fayllarga",
+        "s": 24.28,
+        "e": 24.76
+      },
+      {
+        "w": "tegadimi",
+        "s": 24.82,
+        "e": 25.26
+      },
+      {
+        "w": "yoki",
+        "s": 25.58,
+        "e": 25.84
+      },
+      {
+        "w": "masofaviy",
+        "s": 26.22,
+        "e": 26.76
+      },
+      {
+        "w": "server",
+        "s": 26.84,
+        "e": 27.16
+      },
+      {
+        "w": "bilan",
+        "s": 27.18,
+        "e": 27.36
+      },
+      {
+        "w": "bog'lanadimi.",
+        "s": 27.4,
+        "e": 27.92
+      }
+    ]
+  },
+  {
+    "id": "l5",
+    "scene": "safety_danger",
+    "text": "Commit qilingan obyektlar deyarli har doim ref-log orqali qayta tiklanishi kafolatlangan.",
+    "show": "Commit qilingan obyektlar deyarli har doim ref-log orqali qayta tiklanishi kafolatlangan.",
+    "say": "Kommit qilingan obyektlar deyarli har doim ref-log orqali qayta tiklanishi kafolatlangan.",
+    "a0": 29.2,
+    "a1": 34.22,
+    "words": [
+      {
+        "w": "Kommit",
+        "s": 29.2,
+        "e": 29.46
+      },
+      {
+        "w": "qilingan",
+        "s": 29.5,
+        "e": 29.88
+      },
+      {
+        "w": "obyektlar",
+        "s": 30.02,
+        "e": 30.42
+      },
+      {
+        "w": "deyarli",
+        "s": 30.5,
+        "e": 30.86
+      },
+      {
+        "w": "har",
+        "s": 30.98,
+        "e": 31.22
+      },
+      {
+        "w": "doim",
+        "s": 31.26,
+        "e": 31.58
+      },
+      {
+        "w": "ref-log",
+        "s": 31.96,
+        "e": 32.34
+      },
+      {
+        "w": "orqali",
+        "s": 32.42,
+        "e": 32.7
+      },
+      {
+        "w": "qayta",
+        "s": 32.8,
+        "e": 33.04
+      },
+      {
+        "w": "tiklanishi",
+        "s": 33.08,
+        "e": 33.52
+      },
+      {
+        "w": "kafolatlangan.",
+        "s": 33.54,
+        "e": 34.22
+      }
+    ]
+  },
+  {
+    "id": "l6",
+    "scene": "safety_danger",
+    "text": "Lekin ishchi papkadagi saqlanmagan o'zgarishlarni o'chiruvchi xard reset va checkout kabi buyruqlar ehtiyotkorlik talab qiladi.",
+    "show": "Lekin ishchi papkadagi saqlanmagan o'zgarishlarni o'chiruvchi xard reset va checkout kabi buyruqlar ehtiyotkorlik talab qiladi.",
+    "say": "Lekin ishchi papkadagi saqlanmagan o'zgarishlarni o'chiruvchi xard reset va checkout kabi buyruqlar ehtiyotkorlik talab qiladi.",
+    "a0": 34.94,
+    "a1": 42.41,
+    "words": [
+      {
+        "w": "Lekin",
+        "s": 34.94,
+        "e": 35.18
+      },
+      {
+        "w": "ishchi",
+        "s": 35.54,
+        "e": 35.8
+      },
+      {
+        "w": "papkadagi",
+        "s": 35.82,
+        "e": 36.34
+      },
+      {
+        "w": "saqlanmagan",
+        "s": 36.52,
+        "e": 37.08
+      },
+      {
+        "w": "o'zgarishlarni",
+        "s": 37.14,
+        "e": 37.75
+      },
+      {
+        "w": "o'chiruvchi",
+        "s": 37.79,
+        "e": 38.17
+      },
+      {
+        "w": "xard",
+        "s": 38.53,
+        "e": 38.81
+      },
+      {
+        "w": "reset",
+        "s": 38.87,
+        "e": 39.25
+      },
+      {
+        "w": "va",
+        "s": 39.43,
+        "e": 39.51
+      },
+      {
+        "w": "checkout",
+        "s": 39.67,
+        "e": 40.13
+      },
+      {
+        "w": "kabi",
+        "s": 40.15,
+        "e": 40.35
+      },
+      {
+        "w": "buyruqlar",
+        "s": 40.39,
+        "e": 40.83
+      },
+      {
+        "w": "ehtiyotkorlik",
+        "s": 41.17,
+        "e": 41.87
+      },
+      {
+        "w": "talab",
+        "s": 41.91,
+        "e": 42.11
+      },
+      {
+        "w": "qiladi.",
+        "s": 42.15,
+        "e": 42.41
+      }
+    ]
+  },
+  {
+    "id": "l7",
+    "scene": "workflow_checklist",
+    "text": "Har kuni ish boshlashdan oldin yangiliklarni tortib olish va kichik mantiqiy qismlarga bo'lib commit qilish qat'iy odat bo'lishi lozim.",
+    "show": "Har kuni ish boshlashdan oldin yangiliklarni tortib olish va kichik mantiqiy qismlarga bo'lib commit qilish qat'iy odat bo'lishi lozim.",
+    "say": "Har kuni ish boshlashdan oldin yangiliklarni tortib olish va kichik mantiqiy qismlarga bo'lib kommit qilish qat'iy odat bo'lishi lozim.",
+    "a0": 43.57,
+    "a1": 51.37,
+    "words": [
+      {
+        "w": "Har",
+        "s": 43.57,
+        "e": 43.71
+      },
+      {
+        "w": "kuni",
+        "s": 43.77,
+        "e": 43.93
+      },
+      {
+        "w": "ish",
+        "s": 44.01,
+        "e": 44.11
+      },
+      {
+        "w": "boshlashdan",
+        "s": 44.17,
+        "e": 44.65
+      },
+      {
+        "w": "oldin",
+        "s": 44.71,
+        "e": 44.97
+      },
+      {
+        "w": "yangiliklarni",
+        "s": 45.23,
+        "e": 45.93
+      },
+      {
+        "w": "tortib",
+        "s": 45.99,
+        "e": 46.29
+      },
+      {
+        "w": "olish",
+        "s": 46.35,
+        "e": 46.63
+      },
+      {
+        "w": "va",
+        "s": 46.83,
+        "e": 46.91
+      },
+      {
+        "w": "kichik",
+        "s": 47.31,
+        "e": 47.57
+      },
+      {
+        "w": "mantiqiy",
+        "s": 47.65,
+        "e": 48.09
+      },
+      {
+        "w": "qismlarga",
+        "s": 48.17,
+        "e": 48.63
+      },
+      {
+        "w": "bo'lib",
+        "s": 48.69,
+        "e": 48.91
+      },
+      {
+        "w": "kommit",
+        "s": 49.01,
+        "e": 49.33
+      },
+      {
+        "w": "qilish",
+        "s": 49.37,
+        "e": 49.63
+      },
+      {
+        "w": "qat'iy",
+        "s": 49.99,
+        "e": 50.33
+      },
+      {
+        "w": "odat",
+        "s": 50.49,
+        "e": 50.75
+      },
+      {
+        "w": "bo'lishi",
+        "s": 50.81,
+        "e": 51.11
+      },
+      {
+        "w": "lozim.",
+        "s": 51.11,
+        "e": 51.37
+      }
+    ]
+  },
+  {
+    "id": "l8",
+    "scene": "workflow_checklist",
+    "text": "Branchlarni qisqa umrli saqlash va konfliktlarni erta bartaraf etish jamoaviy integratsiyani osonlashtiradi.",
+    "show": "Branchlarni qisqa umrli saqlash va konfliktlarni erta bartaraf etish jamoaviy integratsiyani osonlashtiradi.",
+    "say": "Branchlarni qisqa umrli saqlash va konfliktlarni erta bartaraf etish jamoaviy integratsiyani osonlashtiradi.",
+    "a0": 52.25,
+    "a1": 58.7,
+    "words": [
+      {
+        "w": "Branchlarni",
+        "s": 52.25,
+        "e": 52.84
+      },
+      {
+        "w": "qisqa",
+        "s": 52.88,
+        "e": 53.12
+      },
+      {
+        "w": "umrli",
+        "s": 53.22,
+        "e": 53.5
+      },
+      {
+        "w": "saqlash",
+        "s": 53.58,
+        "e": 54.0
+      },
+      {
+        "w": "va",
+        "s": 54.26,
+        "e": 54.34
+      },
+      {
+        "w": "konfliktlarni",
+        "s": 54.48,
+        "e": 55.14
+      },
+      {
+        "w": "erta",
+        "s": 55.5,
+        "e": 55.74
+      },
+      {
+        "w": "bartaraf",
+        "s": 55.82,
+        "e": 56.2
+      },
+      {
+        "w": "etish",
+        "s": 56.26,
+        "e": 56.48
+      },
+      {
+        "w": "jamoaviy",
+        "s": 56.8,
+        "e": 57.32
+      },
+      {
+        "w": "integratsiyani",
+        "s": 57.4,
+        "e": 58.0
+      },
+      {
+        "w": "osonlashtiradi.",
+        "s": 58.04,
+        "e": 58.7
+      }
+    ]
+  },
+  {
+    "id": "l9",
+    "scene": "git3_future",
+    "text": "Yangi avlod Git tizimi eskirgan nomaqbul xatti-harakatlarni tozalab, svitch va restor buyruqlarini asosiy standartga aylantirmoqda.",
+    "show": "Yangi avlod Git tizimi eskirgan nomaqbul xatti-harakatlarni tozalab, svitch va restor buyruqlarini asosiy standartga aylantirmoqda.",
+    "say": "Yangi avlod Git tizimi eskirgan nomaqbul xatti-harakatlarni tozalab, svitch va restor buyruqlarini asosiy standartga aylantirmoqda.",
+    "a0": 59.74,
+    "a1": 67.59,
+    "words": [
+      {
+        "w": "Yangi",
+        "s": 59.74,
+        "e": 60.04
+      },
+      {
+        "w": "avlod",
+        "s": 60.06,
+        "e": 60.3
+      },
+      {
+        "w": "Git",
+        "s": 60.38,
+        "e": 60.52
+      },
+      {
+        "w": "tizimi",
+        "s": 60.58,
+        "e": 60.9
+      },
+      {
+        "w": "eskirgan",
+        "s": 61.3,
+        "e": 61.8
+      },
+      {
+        "w": "nomaqbul",
+        "s": 61.88,
+        "e": 62.42
+      },
+      {
+        "w": "xatti-harakatlarni",
+        "s": 62.46,
+        "e": 63.32
+      },
+      {
+        "w": "tozalab,",
+        "s": 63.38,
+        "e": 63.78
+      },
+      {
+        "w": "svitch",
+        "s": 64.14,
+        "e": 64.54
+      },
+      {
+        "w": "va",
+        "s": 64.72,
+        "e": 64.8
+      },
+      {
+        "w": "restor",
+        "s": 65.02,
+        "e": 65.36
+      },
+      {
+        "w": "buyruqlarini",
+        "s": 65.4,
+        "e": 65.94
+      },
+      {
+        "w": "asosiy",
+        "s": 66.08,
+        "e": 66.48
+      },
+      {
+        "w": "standartga",
+        "s": 66.56,
+        "e": 67.02
+      },
+      {
+        "w": "aylantirmoqda.",
+        "s": 67.04,
+        "e": 67.59
+      }
+    ]
+  },
+  {
+    "id": "l10",
+    "scene": "git3_future",
+    "text": "Xesh algoritmining sha ikkiyuz ellik oltiga ko'chishi va skalar kabi zamonaviy arxitektura tezlikni yangi bosqichga olib chiqadi.",
+    "show": "Xesh algoritmining sha ikkiyuz ellik oltiga ko'chishi va skalar kabi zamonaviy arxitektura tezlikni yangi bosqichga olib chiqadi.",
+    "say": "Xesh algoritmining sha ikkiyuz ellik oltiga ko'chishi va skalar kabi zamonaviy arxitektura tezlikni yangi bosqichga olib chiqadi.",
+    "a0": 68.41,
+    "a1": 76.03,
+    "words": [
+      {
+        "w": "Xesh",
+        "s": 68.41,
+        "e": 68.65
+      },
+      {
+        "w": "algoritmining",
+        "s": 68.71,
+        "e": 69.35
+      },
+      {
+        "w": "sha",
+        "s": 69.55,
+        "e": 69.67
+      },
+      {
+        "w": "ikkiyuz",
+        "s": 69.89,
+        "e": 70.21
+      },
+      {
+        "w": "ellik",
+        "s": 70.29,
+        "e": 70.51
+      },
+      {
+        "w": "oltiga",
+        "s": 70.57,
+        "e": 70.85
+      },
+      {
+        "w": "ko'chishi",
+        "s": 70.91,
+        "e": 71.31
+      },
+      {
+        "w": "va",
+        "s": 71.69,
+        "e": 71.77
+      },
+      {
+        "w": "skalar",
+        "s": 72.13,
+        "e": 72.49
+      },
+      {
+        "w": "kabi",
+        "s": 72.55,
+        "e": 72.75
+      },
+      {
+        "w": "zamonaviy",
+        "s": 72.85,
+        "e": 73.35
+      },
+      {
+        "w": "arxitektura",
+        "s": 73.41,
+        "e": 73.97
+      },
+      {
+        "w": "tezlikni",
+        "s": 74.29,
+        "e": 74.81
+      },
+      {
+        "w": "yangi",
+        "s": 74.89,
+        "e": 75.17
+      },
+      {
+        "w": "bosqichga",
+        "s": 75.21,
+        "e": 75.57
+      },
+      {
+        "w": "olib",
+        "s": 75.61,
+        "e": 75.75
+      },
+      {
+        "w": "chiqadi.",
+        "s": 75.77,
+        "e": 76.03
+      }
+    ]
+  },
+  {
+    "id": "l11",
+    "scene": "xulosa",
+    "text": "Ellikta bob davomida biz Gitning tub poydevoridan tortib eng ilg'or professional sirlarigacha birgalikda o'rganib chiqdik.",
+    "show": "Ellikta bob davomida biz Gitning tub poydevoridan tortib eng ilg'or professional sirlarigacha birgalikda o'rganib chiqdik.",
+    "say": "Ellikta bob davomida biz Gitning tub poydevoridan tortib eng ilg'or professional sirlarigacha birgalikda o'rganib chiqdik.",
+    "a0": 77.15,
+    "a1": 83.72,
+    "words": [
+      {
+        "w": "Ellikta",
+        "s": 77.15,
+        "e": 77.53
+      },
+      {
+        "w": "bob",
+        "s": 77.57,
+        "e": 77.71
+      },
+      {
+        "w": "davomida",
+        "s": 77.77,
+        "e": 78.21
+      },
+      {
+        "w": "biz",
+        "s": 78.33,
+        "e": 78.55
+      },
+      {
+        "w": "Gitning",
+        "s": 78.69,
+        "e": 79.05
+      },
+      {
+        "w": "tub",
+        "s": 79.13,
+        "e": 79.29
+      },
+      {
+        "w": "poydevoridan",
+        "s": 79.33,
+        "e": 79.99
+      },
+      {
+        "w": "tortib",
+        "s": 80.03,
+        "e": 80.33
+      },
+      {
+        "w": "eng",
+        "s": 80.69,
+        "e": 80.85
+      },
+      {
+        "w": "ilg'or",
+        "s": 80.97,
+        "e": 81.33
+      },
+      {
+        "w": "professional",
+        "s": 81.39,
+        "e": 81.93
+      },
+      {
+        "w": "sirlarigacha",
+        "s": 81.99,
+        "e": 82.58
+      },
+      {
+        "w": "birgalikda",
+        "s": 82.66,
+        "e": 83.1
+      },
+      {
+        "w": "o'rganib",
+        "s": 83.14,
+        "e": 83.46
+      },
+      {
+        "w": "chiqdik.",
+        "s": 83.48,
+        "e": 83.72
+      }
+    ]
+  },
+  {
+    "id": "l12",
+    "scene": "xulosa",
+    "text": "Endi siz nafaqat buyruqlarni teruvchi, balki versiya nazoratining har bir bosqichini chuqur his qiluvchi tajribali mutaxassissiz.",
+    "show": "Endi siz nafaqat buyruqlarni teruvchi, balki versiya nazoratining har bir bosqichini chuqur his qiluvchi tajribali mutaxassissiz.",
+    "say": "Endi siz nafaqat buyruqlarni teruvchi, balki versiya nazoratining har bir bosqichini chuqur his qiluvchi tajribali mutaxassissiz.",
+    "a0": 84.36,
+    "a1": 92.3,
+    "words": [
+      {
+        "w": "Endi",
+        "s": 84.36,
+        "e": 84.54
+      },
+      {
+        "w": "siz",
+        "s": 84.58,
+        "e": 84.74
+      },
+      {
+        "w": "nafaqat",
+        "s": 85.04,
+        "e": 85.4
+      },
+      {
+        "w": "buyruqlarni",
+        "s": 85.44,
+        "e": 86.0
+      },
+      {
+        "w": "teruvchi,",
+        "s": 86.04,
+        "e": 86.46
+      },
+      {
+        "w": "balki",
+        "s": 86.92,
+        "e": 87.16
+      },
+      {
+        "w": "versiya",
+        "s": 87.58,
+        "e": 87.94
+      },
+      {
+        "w": "nazoratining",
+        "s": 88.0,
+        "e": 88.6
+      },
+      {
+        "w": "har",
+        "s": 88.78,
+        "e": 89.0
+      },
+      {
+        "w": "bir",
+        "s": 89.06,
+        "e": 89.16
+      },
+      {
+        "w": "bosqichini",
+        "s": 89.24,
+        "e": 89.7
+      },
+      {
+        "w": "chuqur",
+        "s": 89.78,
+        "e": 90.06
+      },
+      {
+        "w": "his",
+        "s": 90.12,
+        "e": 90.2
+      },
+      {
+        "w": "qiluvchi",
+        "s": 90.26,
+        "e": 90.6
+      },
+      {
+        "w": "tajribali",
+        "s": 90.99,
+        "e": 91.55
+      },
+      {
+        "w": "mutaxassissiz.",
+        "s": 91.59,
+        "e": 92.3
+      }
+    ]
+  }
+]
