@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:21.421
+Merge Tushunchasi va Yo‘nalish
+
+00:21.421 --> 00:41.909
+Fast-Forward Merge Mexanizmi
+
+00:41.909 --> 01:02.222
+Uch Tomonlama Merge va Merge Commit
+
+01:02.222 --> 01:22.126
+Merge Base: Umumiy Ajdod Snapshotlari
+
+01:22.126 --> 01:41.550
+Branch Tozalash: git branch -d
+
+01:41.550 --> 02:03.720
+Xulosa: --no-ff, --squash va --ff-only

@@ -1,0 +1,61 @@
+WEBVTT
+
+1
+00:01.420 --> 00:10.420
+Salom! Ushbu yigirma birinchi bobda ajralgan tarmoqlarni bir-biriga xavfsiz
+qo‘shuvchi git merge buyrug‘i va uning ichki arxitekturasini o‘rganamiz.
+
+2
+00:11.070 --> 00:19.080
+Merge har doim o‘zgarishlarni joriy branchga olib kiradi, shuning uchun
+avval qabul qiluvchi branchga o‘tib, so‘ng ikkinchi branchni birlashtiramiz.
+
+3
+00:22.510 --> 00:30.710
+Agar joriy branch qo‘shilayotgan branchni to‘g‘ridan-to‘g‘ri ajdodi bo‘lsa,
+Git hech qanday yangi commit yaratmay, fast-forward mergeni bajaradi.
+
+4
+00:30.880 --> 00:38.570
+Bunda Git obyektlar bazasiga tegilmaydi, faqat refs papkasidagi
+branch ko‘rsatkich fayli yangi commit heshiga surib qo‘yiladi.
+
+5
+00:42.880 --> 00:51.360
+Agar ikkala branchda ham yangi mustaqil commitlar mavjud bo‘lsa, Git uch tomonlama
+merge algoritmini ishga tushirib, birlashtiruvchi yangi commit yaratadi.
+
+6
+00:51.470 --> 00:59.220
+Bu maxsus merge commit ikkita otaga ega bo‘lib, loyiha tarixida
+ikkala tarmoqning muvaffaqiyatli tutashgan nuqtasini mustahkamlaydi.
+
+7
+01:03.590 --> 01:11.870
+Git ikkala tomon nimalarni o‘zgartirganini aniqlash uchun ularning eng
+yaqin umumiy ajdodi bo‘lgan merge-base snapshotini asos qilib oladi.
+
+8
+01:12.100 --> 01:19.290
+Faqat bir tomon o‘zgartirgan fayllar uchun tayyor bloblar qayta
+ishlatiladi, natijada yangi keraksiz nusxalar saqlanmaydi.
+
+9
+01:23.210 --> 01:31.100
+Merge yakunlangach, o‘z vazifasini o‘tab bo‘lgan branchni git branch
+minus d buyrug‘i yordamida bemalol o‘chirib tashlashimiz mumkin.
+
+10
+01:31.190 --> 01:38.790
+Bunda qilingan commitlar tarixdan yo‘qolmaydi, chunki ular endi
+asosiy branchni ota commitlari zanjiriga mustahkam ulanib bo‘lgan.
+
+11
+01:42.640 --> 01:51.530
+Jamoaviy qoidalarga qarab faqat fast-forward ruxsat beruvchi ff-only
+yoki alohida merge commit yaratuvchi no-ff bayroqlaridan foydalaniladi.
+
+12
+01:51.730 --> 01:58.770
+Keyingi bobda ikkala branch bitta faylning ayni bir qatorini
+tahrirlaganda yuzaga keladigan konfliktlarni hal qilishni o‘rganamiz.
