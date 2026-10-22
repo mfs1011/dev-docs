@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" playsinline poster="/video/git/33-hissa-qoshish.jpg" src="/video/git/33-hissa-qoshish.mp4">
+    <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/git/33-hissa-qoshish.chapters.vtt" default>
+    <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/git/33-hissa-qoshish.uz.vtt">
+  </video>
+  <figcaption>33.1-video. Git loyihalariga hissa qo'shish strategiyalari va sifatli commit tayyorlash</figcaption>
+</figure>
+
 [32-bobda](32-taqsimlangan-workflowlar.md) workflow'larni "yuqoridan", ya'ni butun loyiha tuzilishi sifatida ko'rdik: kim qaysi repo'ga yozadi, o'zgarish qaysi yo'l bilan oqadi. Bu bob — **hissa qo'shuvchi** (contributor — loyihaga o'z kodini taklif qiladigan odam) nuqtai nazari. Savol: "Men shu loyihada ishlayapman. Ishimni qanday qilib boshqalarga eng kam og'riq bilan yetkazaman?"
 
 Pro Git ochiq tan oladi: hissa qo'shishni bitta retsept bilan tasvirlab bo'lmaydi, chunki Git juda moslashuvchan va har loyiha o'zicha ishlaydi. Natijaga to'rtta o'zgaruvchi ta'sir qiladi:
