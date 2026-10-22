@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" playsinline poster="/video/git/46-gitattributes.jpg" src="/video/git/46-gitattributes.mp4">
+    <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/git/46-gitattributes.chapters.vtt" default>
+    <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/git/46-gitattributes.uz.vtt">
+  </video>
+  <figcaption>46.1-video. Git attributes: fayl xususiyatlari, qator oxirlari, diff driverlar va filtrlar</figcaption>
+</figure>
+
 [45-bobda](45-config-chuqur.md) ko'rgan sozlamalar butun repo'ga (yoki butun kompyuterga) ta'sir qiladi: `core.autocrlf` hamma faylning qator oxirini o'zgartiradi, `core.whitespace` hamma faylni bir xil qoida bilan tekshiradi. Lekin ko'pincha qoida **faylga qarab** farq qilishi kerak: `.sh` skript doim LF bilan, `.bat` doim CRLF bilan; `.png` hech qachon "matn" deb o'zgartirilmasin; `package-lock.json` diff'da ko'rsatilmasin; `database.xml` merge'da hech qachon boshqa branch'dan olinmasin.
 
 Buning uchun Git'da **atributlar** (attributes) bor. **Atribut** — Git ma'lum yo'lga (fayl yoki papkaga) "yopishtiradigan" yorliq: "bu fayl matn", "bu faylni diff qilishda `python` qoidasidan foydalan", "bu fayl arxivga kirmasin". O'xshatish: omborxonadagi qutilarga yopishtirilgan stikerlar — "ehtiyot bo'ling, shisha", "ag'darmang". Yuk tashuvchi (Git) qutini ko'rganda stikerga qarab ishlaydi.

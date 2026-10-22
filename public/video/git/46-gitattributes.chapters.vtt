@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:18.920
+Git Atributlari Nima: Yo'l Bo'yicha Qoidalar
+
+00:18.920 --> 00:38.731
+Atributlarni Tekshirish: git check-attr va sintaksis
+
+00:38.731 --> 00:57.675
+Qator Oxirlari va Binar Fayllar: eol va binary
+
+00:57.675 --> 01:16.784
+Maxsus Diff Driverlar: diff va textconv
+
+01:16.784 --> 01:35.770
+Filtrlar: clean va smudge mexanizmi
+
+01:35.770 --> 01:56.920
+Xulosa va Export Qoidalari

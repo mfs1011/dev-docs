@@ -1,0 +1,61 @@
+WEBVTT
+
+1
+00:01.420 --> 00:08.310
+Nuqta gitattributes fayli har bir fayl va papka uchun
+maxsus xatti-harakat qoidalarini belgilashga xizmat qiladi.
+
+2
+00:08.710 --> 00:16.560
+Oddiy configdan farqli ravishda ushbu atributlar repozitoriy ichida
+commit qilinadi va barcha jamoadoshlar uchun bir xil ishlaydi.
+
+3
+00:20.130 --> 00:27.690
+Git check-attr buyrug'i berilgan yo'lga qaysi atributlar
+biriktirilganini va ularning faol holatini aniq ko'rsatib beradi.
+
+4
+00:28.120 --> 00:35.910
+Atributlar set, unset, aniq qiymat yoki aytilmagan
+unspecified kabi to'rtta holatdan birida bo'lishi mumkin.
+
+5
+00:39.860 --> 00:47.020
+Barcha platformalarda bir xillikni ta'minlash uchun text
+barobar avto hamda eol barobar el-ef qoidasi o'rnatiladi.
+
+6
+00:47.430 --> 00:54.800
+Rasmlar va siqilgan arxivlar uchun esa binary makrosi orqali
+matnli konvertatsiyalar va diff butunlay o'chirib qo'yiladi.
+
+7
+00:58.890 --> 01:06.210
+Diff barobar zip yoki pdf atributlari orqali binar formatlarni
+avval matnga aylantirib, so'ngra qulay solishtirish mumkin.
+
+8
+01:06.560 --> 01:13.970
+Bunda textconv drayveri tashqi utilitani ishga tushirib, noqulay
+binar o'zgarishlarni o'qilishi oson matn ko'rinishida chiqaradi.
+
+9
+01:17.880 --> 01:25.900
+Filter atributi check-in paytida clean orqali kodni tozalash,
+checkout paytida esa smudge orqali ma'lumot kiritish imkonini beradi.
+
+10
+01:26.150 --> 01:32.920
+Ushbu mexanizm kod formatlash, kalit so'zlarni joylash
+yoki avtomatik indentatsiya qilishda keng qo'llaniladi.
+
+11
+01:36.890 --> 01:44.090
+Export-ignore atributi arxiv yaratganda yoki reliz paketlaganda
+keraksiz sinov fayllarini chetlab o'tishni ta'minlaydi.
+
+12
+01:44.400 --> 01:51.970
+To'g'ri sozlangan gitattributes loyiha fayllarining turli operatsion
+tizimlarda buzilmasdan, yaxlit saqlanishini kafolatlaydi.
