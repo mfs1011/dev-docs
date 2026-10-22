@@ -1,0 +1,61 @@
+WEBVTT
+
+1
+00:01.420 --> 00:10.620
+Salom! Ushbu yigirma to‘qqizinchi bobda Git'da fetch va push amallarining
+ichki arxitekturasi, refspeklar va tarmoq protokollarini batafsil o‘rganamiz.
+
+2
+00:10.970 --> 00:18.740
+Refspec — masofaviy ombordagi qaysi ko‘rsatkich lokal kompyuterimizdagi
+qaysi manzilga yozilishini belgilab beruvchi maxsus qoidadir.
+
+3
+00:22.070 --> 00:29.530
+Qisman moslik va inkor refspeklari orqali keraksiz tarmoqlarni chetlab
+o‘tib, faqat kerakli loyiha branchlarini saralab olish mumkin.
+
+4
+00:29.780 --> 00:36.950
+Shuningdek, push paytida refspec yordamida o‘z lokal branchimizni
+serverga butunlay boshqa nom bilan xavfsiz yuklash imkoniyati mavjud.
+
+5
+00:40.940 --> 00:48.960
+Git'ning zamonaviy aqlli protokoli server va mijoz o‘rtasida kamchilik
+obyektlarni hisoblab, ularni bitta ixcham packfile ichida uzatadi.
+
+6
+00:49.230 --> 00:57.160
+Fetch paytida fetch-pack va upload-pack, push jarayonida esa
+send-pack va receive-pack vositalari o‘zaro tezkor aloqa o‘rnatadi.
+
+7
+01:01.030 --> 01:08.350
+Ko‘r-ko‘rona ishlatilgan --force buyrug‘i serverdagi boshqa hamkasblar
+yozgan yangi commitlarni butunlay o‘chirib yuborishi mumkin.
+
+8
+01:08.560 --> 01:16.630
+--force-with-lease esa serverdagi holat siz oxirgi marta ko‘rgan joyda
+tursagina o‘zgarishni qabul qilib, begona kodlarni asrab qoladi.
+
+9
+01:20.600 --> 01:28.480
+Biroq muharrir fonda o‘zi fetch qilib tursa, lease sharti aldanib
+qolmasligi uchun --force-if-includes qo‘shimcha tekshiruvidan foydalanamiz.
+
+10
+01:28.850 --> 01:35.520
+Ushbu bayroq serverdagi commit sizning lokal tarixingiz va
+reflogingizdan haqiqatan o‘tganligini to‘liq kafolatlaydi.
+
+11
+01:39.410 --> 01:45.530
+Ushbu ichki mexanizmlarni bilish katta jamoalarda o‘zaro
+kod almashish xavfsizligini eng yuqori darajaga ko‘taradi.
+
+12
+01:45.760 --> 01:53.090
+Keyingi o‘ttizinchi bobda masofaviy repozitoriylar bilan xavfsiz
+autentifikatsiya o‘rnatish va SSH kalitlarini sozlashni ko‘rib chiqamiz.

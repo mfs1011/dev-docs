@@ -1,0 +1,1159 @@
+[
+  {
+    "id": "l1",
+    "scene": "intro",
+    "text": "Salom! Ushbu yigirma to‘qqizinchi bobda Git'da fetch va push amallarining ichki arxitekturasi, refspeklar va tarmoq protokollarini batafsil o‘rganamiz.",
+    "show": "Salom! Ushbu yigirma to‘qqizinchi bobda Git'da fetch va push amallarining ichki arxitekturasi, refspeklar va tarmoq protokollarini batafsil o‘rganamiz.",
+    "say": "Salom! Ushbu yigirma to‘qqizinchi bobda Git'da fech va push amallarining ichki arxitekturasi, refspeklar va tarmoq protokollarini batafsil o‘rganamiz.",
+    "a0": 0.26,
+    "a1": 9.01,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.26,
+        "e": 0.52
+      },
+      {
+        "w": "Ushbu",
+        "s": 1.06,
+        "e": 1.3
+      },
+      {
+        "w": "yigirma",
+        "s": 1.38,
+        "e": 1.66
+      },
+      {
+        "w": "to‘qqizinchi",
+        "s": 1.68,
+        "e": 2.12
+      },
+      {
+        "w": "bobda",
+        "s": 2.16,
+        "e": 2.44
+      },
+      {
+        "w": "Git'da",
+        "s": 2.72,
+        "e": 3.04
+      },
+      {
+        "w": "fech",
+        "s": 3.16,
+        "e": 3.4
+      },
+      {
+        "w": "va",
+        "s": 3.48,
+        "e": 3.56
+      },
+      {
+        "w": "push",
+        "s": 3.68,
+        "e": 3.88
+      },
+      {
+        "w": "amallarining",
+        "s": 3.94,
+        "e": 4.46
+      },
+      {
+        "w": "ichki",
+        "s": 4.52,
+        "e": 4.72
+      },
+      {
+        "w": "arxitekturasi,",
+        "s": 4.8,
+        "e": 5.52
+      },
+      {
+        "w": "refspeklar",
+        "s": 5.94,
+        "e": 6.6
+      },
+      {
+        "w": "va",
+        "s": 6.86,
+        "e": 6.94
+      },
+      {
+        "w": "tarmoq",
+        "s": 7.06,
+        "e": 7.38
+      },
+      {
+        "w": "protokollarini",
+        "s": 7.42,
+        "e": 8.07
+      },
+      {
+        "w": "batafsil",
+        "s": 8.15,
+        "e": 8.57
+      },
+      {
+        "w": "o‘rganamiz.",
+        "s": 8.61,
+        "e": 9.01
+      }
+    ]
+  },
+  {
+    "id": "l2",
+    "scene": "intro",
+    "text": "Refspec — masofaviy ombordagi qaysi ko‘rsatkich lokal kompyuterimizdagi qaysi manzilga yozilishini belgilab beruvchi maxsus qoidadir.",
+    "show": "Refspec — masofaviy ombordagi qaysi ko‘rsatkich lokal kompyuterimizdagi qaysi manzilga yozilishini belgilab beruvchi maxsus qoidadir.",
+    "say": "Refspek — masofaviy ombordagi qaysi ko‘rsatkich lokal kompyuterimizdagi qaysi manzilga yozilishini belgilab beruvchi maxsus qoidadir.",
+    "a0": 9.81,
+    "a1": 17.13,
+    "words": [
+      {
+        "w": "Refspek",
+        "s": 9.81,
+        "e": 10.23
+      },
+      {
+        "w": "—",
+        "s": 10.23,
+        "e": 10.23
+      },
+      {
+        "w": "masofaviy",
+        "s": 10.87,
+        "e": 11.33
+      },
+      {
+        "w": "ombordagi",
+        "s": 11.43,
+        "e": 11.89
+      },
+      {
+        "w": "qaysi",
+        "s": 11.99,
+        "e": 12.25
+      },
+      {
+        "w": "ko‘rsatkich",
+        "s": 12.29,
+        "e": 12.83
+      },
+      {
+        "w": "lokal",
+        "s": 12.97,
+        "e": 13.25
+      },
+      {
+        "w": "kompyuterimizdagi",
+        "s": 13.29,
+        "e": 13.99
+      },
+      {
+        "w": "qaysi",
+        "s": 14.09,
+        "e": 14.35
+      },
+      {
+        "w": "manzilga",
+        "s": 14.39,
+        "e": 14.75
+      },
+      {
+        "w": "yozilishini",
+        "s": 14.81,
+        "e": 15.31
+      },
+      {
+        "w": "belgilab",
+        "s": 15.35,
+        "e": 15.73
+      },
+      {
+        "w": "beruvchi",
+        "s": 15.75,
+        "e": 16.11
+      },
+      {
+        "w": "maxsus",
+        "s": 16.27,
+        "e": 16.63
+      },
+      {
+        "w": "qoidadir.",
+        "s": 16.69,
+        "e": 17.13
+      }
+    ]
+  },
+  {
+    "id": "l3",
+    "scene": "refspec_turlari",
+    "text": "Qisman moslik va inkor refspeklari orqali keraksiz tarmoqlarni chetlab o‘tib, faqat kerakli loyiha branchlarini saralab olish mumkin.",
+    "show": "Qisman moslik va inkor refspeklari orqali keraksiz tarmoqlarni chetlab o‘tib, faqat kerakli loyiha branchlarini saralab olish mumkin.",
+    "say": "Qisman moslik va inkor refspeklari orqali keraksiz tarmoqlarni chetlab o‘tib, faqat kerakli loyiha brenchlarini saralab olish mumkin.",
+    "a0": 17.81,
+    "a1": 24.82,
+    "words": [
+      {
+        "w": "Qisman",
+        "s": 17.81,
+        "e": 18.11
+      },
+      {
+        "w": "moslik",
+        "s": 18.17,
+        "e": 18.57
+      },
+      {
+        "w": "va",
+        "s": 18.67,
+        "e": 18.73
+      },
+      {
+        "w": "inkor",
+        "s": 18.89,
+        "e": 19.19
+      },
+      {
+        "w": "refspeklari",
+        "s": 19.25,
+        "e": 19.81
+      },
+      {
+        "w": "orqali",
+        "s": 19.87,
+        "e": 20.21
+      },
+      {
+        "w": "keraksiz",
+        "s": 20.33,
+        "e": 20.73
+      },
+      {
+        "w": "tarmoqlarni",
+        "s": 20.75,
+        "e": 21.29
+      },
+      {
+        "w": "chetlab",
+        "s": 21.35,
+        "e": 21.69
+      },
+      {
+        "w": "o‘tib,",
+        "s": 21.73,
+        "e": 21.93
+      },
+      {
+        "w": "faqat",
+        "s": 22.19,
+        "e": 22.49
+      },
+      {
+        "w": "kerakli",
+        "s": 22.6,
+        "e": 23.02
+      },
+      {
+        "w": "loyiha",
+        "s": 23.12,
+        "e": 23.4
+      },
+      {
+        "w": "brenchlarini",
+        "s": 23.44,
+        "e": 23.96
+      },
+      {
+        "w": "saralab",
+        "s": 24.02,
+        "e": 24.36
+      },
+      {
+        "w": "olish",
+        "s": 24.4,
+        "e": 24.56
+      },
+      {
+        "w": "mumkin.",
+        "s": 24.58,
+        "e": 24.82
+      }
+    ]
+  },
+  {
+    "id": "l4",
+    "scene": "refspec_turlari",
+    "text": "Shuningdek, push paytida refspec yordamida o‘z lokal branchimizni serverga butunlay boshqa nom bilan xavfsiz yuklash imkoniyati mavjud.",
+    "show": "Shuningdek, push paytida refspec yordamida o‘z lokal branchimizni serverga butunlay boshqa nom bilan xavfsiz yuklash imkoniyati mavjud.",
+    "say": "Shuningdek, push paytida refspek yordamida o‘z lokal brenchimizni serverga butunlay boshqa nom bilan xavfsiz yuklash imkoniyati mavjud.",
+    "a0": 25.52,
+    "a1": 32.24,
+    "words": [
+      {
+        "w": "Shuningdek,",
+        "s": 25.52,
+        "e": 25.9
+      },
+      {
+        "w": "push",
+        "s": 26.14,
+        "e": 26.32
+      },
+      {
+        "w": "paytida",
+        "s": 26.34,
+        "e": 26.68
+      },
+      {
+        "w": "refspek",
+        "s": 26.8,
+        "e": 27.2
+      },
+      {
+        "w": "yordamida",
+        "s": 27.26,
+        "e": 27.68
+      },
+      {
+        "w": "o‘z",
+        "s": 27.86,
+        "e": 27.98
+      },
+      {
+        "w": "lokal",
+        "s": 28.04,
+        "e": 28.34
+      },
+      {
+        "w": "brenchimizni",
+        "s": 28.36,
+        "e": 28.94
+      },
+      {
+        "w": "serverga",
+        "s": 29.0,
+        "e": 29.42
+      },
+      {
+        "w": "butunlay",
+        "s": 29.52,
+        "e": 29.92
+      },
+      {
+        "w": "boshqa",
+        "s": 30.02,
+        "e": 30.28
+      },
+      {
+        "w": "nom",
+        "s": 30.34,
+        "e": 30.48
+      },
+      {
+        "w": "bilan",
+        "s": 30.52,
+        "e": 30.72
+      },
+      {
+        "w": "xavfsiz",
+        "s": 30.8,
+        "e": 31.14
+      },
+      {
+        "w": "yuklash",
+        "s": 31.18,
+        "e": 31.48
+      },
+      {
+        "w": "imkoniyati",
+        "s": 31.52,
+        "e": 31.92
+      },
+      {
+        "w": "mavjud.",
+        "s": 31.94,
+        "e": 32.24
+      }
+    ]
+  },
+  {
+    "id": "l5",
+    "scene": "transfer_protokol",
+    "text": "Git'ning zamonaviy aqlli protokoli server va mijoz o‘rtasida kamchilik obyektlarni hisoblab, ularni bitta ixcham packfile ichida uzatadi.",
+    "show": "Git'ning zamonaviy aqlli protokoli server va mijoz o‘rtasida kamchilik obyektlarni hisoblab, ularni bitta ixcham packfile ichida uzatadi.",
+    "say": "Git'ning zamonaviy aqlli protokoli server va mijoz o‘rtasida kamchilik obyektlarni hisoblab, ularni bitta ixcham pekfayl ichida uzatadi.",
+    "a0": 33.08,
+    "a1": 40.65,
+    "words": [
+      {
+        "w": "Git'ning",
+        "s": 33.08,
+        "e": 33.42
+      },
+      {
+        "w": "zamonaviy",
+        "s": 33.48,
+        "e": 34.0
+      },
+      {
+        "w": "aqlli",
+        "s": 34.16,
+        "e": 34.46
+      },
+      {
+        "w": "protokoli",
+        "s": 34.52,
+        "e": 35.0
+      },
+      {
+        "w": "server",
+        "s": 35.18,
+        "e": 35.58
+      },
+      {
+        "w": "va",
+        "s": 35.66,
+        "e": 35.74
+      },
+      {
+        "w": "mijoz",
+        "s": 35.88,
+        "e": 36.18
+      },
+      {
+        "w": "o‘rtasida",
+        "s": 36.24,
+        "e": 36.62
+      },
+      {
+        "w": "kamchilik",
+        "s": 36.7,
+        "e": 37.14
+      },
+      {
+        "w": "obyektlarni",
+        "s": 37.2,
+        "e": 37.67
+      },
+      {
+        "w": "hisoblab,",
+        "s": 37.69,
+        "e": 38.07
+      },
+      {
+        "w": "ularni",
+        "s": 38.35,
+        "e": 38.65
+      },
+      {
+        "w": "bitta",
+        "s": 38.75,
+        "e": 39.05
+      },
+      {
+        "w": "ixcham",
+        "s": 39.17,
+        "e": 39.47
+      },
+      {
+        "w": "pekfayl",
+        "s": 39.57,
+        "e": 40.03
+      },
+      {
+        "w": "ichida",
+        "s": 40.05,
+        "e": 40.25
+      },
+      {
+        "w": "uzatadi.",
+        "s": 40.29,
+        "e": 40.65
+      }
+    ]
+  },
+  {
+    "id": "l6",
+    "scene": "transfer_protokol",
+    "text": "Fetch paytida fetch-pack va upload-pack, push jarayonida esa send-pack va receive-pack vositalari o‘zaro tezkor aloqa o‘rnatadi.",
+    "show": "Fetch paytida fetch-pack va upload-pack, push jarayonida esa send-pack va receive-pack vositalari o‘zaro tezkor aloqa o‘rnatadi.",
+    "say": "Fech paytida fech pek va apload pek, push jarayonida esa send pek va resiv pek vositalari o‘zaro tezkor aloqa o‘rnatadi.",
+    "a0": 41.37,
+    "a1": 48.85,
+    "words": [
+      {
+        "w": "Fech",
+        "s": 41.37,
+        "e": 41.57
+      },
+      {
+        "w": "paytida",
+        "s": 41.61,
+        "e": 41.93
+      },
+      {
+        "w": "fech",
+        "s": 42.25,
+        "e": 42.45
+      },
+      {
+        "w": "pek",
+        "s": 42.53,
+        "e": 42.71
+      },
+      {
+        "w": "va",
+        "s": 42.81,
+        "e": 42.87
+      },
+      {
+        "w": "apload",
+        "s": 43.05,
+        "e": 43.45
+      },
+      {
+        "w": "pek,",
+        "s": 43.51,
+        "e": 43.69
+      },
+      {
+        "w": "push",
+        "s": 44.07,
+        "e": 44.27
+      },
+      {
+        "w": "jarayonida",
+        "s": 44.31,
+        "e": 44.69
+      },
+      {
+        "w": "esa",
+        "s": 44.75,
+        "e": 44.91
+      },
+      {
+        "w": "send",
+        "s": 45.23,
+        "e": 45.45
+      },
+      {
+        "w": "pek",
+        "s": 45.49,
+        "e": 45.67
+      },
+      {
+        "w": "va",
+        "s": 45.75,
+        "e": 45.81
+      },
+      {
+        "w": "resiv",
+        "s": 45.97,
+        "e": 46.27
+      },
+      {
+        "w": "pek",
+        "s": 46.31,
+        "e": 46.45
+      },
+      {
+        "w": "vositalari",
+        "s": 46.51,
+        "e": 47.05
+      },
+      {
+        "w": "o‘zaro",
+        "s": 47.35,
+        "e": 47.63
+      },
+      {
+        "w": "tezkor",
+        "s": 47.75,
+        "e": 48.13
+      },
+      {
+        "w": "aloqa",
+        "s": 48.19,
+        "e": 48.43
+      },
+      {
+        "w": "o‘rnatadi.",
+        "s": 48.47,
+        "e": 48.85
+      }
+    ]
+  },
+  {
+    "id": "l7",
+    "scene": "force_with_lease",
+    "text": "Ko‘r-ko‘rona ishlatilgan --force buyrug‘i serverdagi boshqa hamkasblar yozgan yangi commitlarni butunlay o‘chirib yuborishi mumkin.",
+    "show": "Ko‘r-ko‘rona ishlatilgan --force buyrug‘i serverdagi boshqa hamkasblar yozgan yangi commitlarni butunlay o‘chirib yuborishi mumkin.",
+    "say": "Ko‘r-ko‘rona ishlatilgan minus minus fors buyrug‘i serverdagi boshqa hamkasblar yozgan yangi kommitlarni butunlay o‘chirib yuborishi mumkin.",
+    "a0": 49.57,
+    "a1": 56.44,
+    "words": [
+      {
+        "w": "Ko‘r-ko‘rona",
+        "s": 49.57,
+        "e": 50.03
+      },
+      {
+        "w": "ishlatilgan",
+        "s": 50.07,
+        "e": 50.55
+      },
+      {
+        "w": "minus",
+        "s": 50.71,
+        "e": 50.97
+      },
+      {
+        "w": "minus",
+        "s": 51.03,
+        "e": 51.25
+      },
+      {
+        "w": "fors",
+        "s": 51.33,
+        "e": 51.55
+      },
+      {
+        "w": "buyrug‘i",
+        "s": 51.61,
+        "e": 51.91
+      },
+      {
+        "w": "serverdagi",
+        "s": 52.23,
+        "e": 52.74
+      },
+      {
+        "w": "boshqa",
+        "s": 52.82,
+        "e": 53.1
+      },
+      {
+        "w": "hamkasblar",
+        "s": 53.16,
+        "e": 53.68
+      },
+      {
+        "w": "yozgan",
+        "s": 53.7,
+        "e": 54.06
+      },
+      {
+        "w": "yangi",
+        "s": 54.18,
+        "e": 54.46
+      },
+      {
+        "w": "kommitlarni",
+        "s": 54.5,
+        "e": 55.02
+      },
+      {
+        "w": "butunlay",
+        "s": 55.12,
+        "e": 55.52
+      },
+      {
+        "w": "o‘chirib",
+        "s": 55.62,
+        "e": 55.88
+      },
+      {
+        "w": "yuborishi",
+        "s": 55.9,
+        "e": 56.2
+      },
+      {
+        "w": "mumkin.",
+        "s": 56.2,
+        "e": 56.44
+      }
+    ]
+  },
+  {
+    "id": "l8",
+    "scene": "force_with_lease",
+    "text": "--force-with-lease esa serverdagi holat siz oxirgi marta ko‘rgan joyda tursagina o‘zgarishni qabul qilib, begona kodlarni asrab qoladi.",
+    "show": "--force-with-lease esa serverdagi holat siz oxirgi marta ko‘rgan joyda tursagina o‘zgarishni qabul qilib, begona kodlarni asrab qoladi.",
+    "say": "Minus minus fors viz liz esa serverdagi holat siz oxirgi marta ko‘rgan joyda tursagina o‘zgarishni qabul qilib, begona kodlarni asrab qoladi.",
+    "a0": 57.1,
+    "a1": 64.72,
+    "words": [
+      {
+        "w": "Minus",
+        "s": 57.1,
+        "e": 57.32
+      },
+      {
+        "w": "minus",
+        "s": 57.38,
+        "e": 57.6
+      },
+      {
+        "w": "fors",
+        "s": 57.72,
+        "e": 57.98
+      },
+      {
+        "w": "viz",
+        "s": 58.08,
+        "e": 58.24
+      },
+      {
+        "w": "liz",
+        "s": 58.34,
+        "e": 58.52
+      },
+      {
+        "w": "esa",
+        "s": 58.58,
+        "e": 58.72
+      },
+      {
+        "w": "serverdagi",
+        "s": 59.02,
+        "e": 59.5
+      },
+      {
+        "w": "holat",
+        "s": 59.56,
+        "e": 59.84
+      },
+      {
+        "w": "siz",
+        "s": 59.92,
+        "e": 60.08
+      },
+      {
+        "w": "oxirgi",
+        "s": 60.2,
+        "e": 60.46
+      },
+      {
+        "w": "marta",
+        "s": 60.5,
+        "e": 60.7
+      },
+      {
+        "w": "ko‘rgan",
+        "s": 60.74,
+        "e": 61.04
+      },
+      {
+        "w": "joyda",
+        "s": 61.08,
+        "e": 61.32
+      },
+      {
+        "w": "tursagina",
+        "s": 61.4,
+        "e": 61.88
+      },
+      {
+        "w": "o‘zgarishni",
+        "s": 62.18,
+        "e": 62.6
+      },
+      {
+        "w": "qabul",
+        "s": 62.64,
+        "e": 62.9
+      },
+      {
+        "w": "qilib,",
+        "s": 62.92,
+        "e": 63.1
+      },
+      {
+        "w": "begona",
+        "s": 63.28,
+        "e": 63.66
+      },
+      {
+        "w": "kodlarni",
+        "s": 63.7,
+        "e": 64.1
+      },
+      {
+        "w": "asrab",
+        "s": 64.18,
+        "e": 64.44
+      },
+      {
+        "w": "qoladi.",
+        "s": 64.46,
+        "e": 64.72
+      }
+    ]
+  },
+  {
+    "id": "l9",
+    "scene": "force_if_includes",
+    "text": "Biroq muharrir fonda o‘zi fetch qilib tursa, lease sharti aldanib qolmasligi uchun --force-if-includes qo‘shimcha tekshiruvidan foydalanamiz.",
+    "show": "Biroq muharrir fonda o‘zi fetch qilib tursa, lease sharti aldanib qolmasligi uchun --force-if-includes qo‘shimcha tekshiruvidan foydalanamiz.",
+    "say": "Biroq muharrir fonda o‘zi fech qilib tursa, liz sharti aldanib qolmasligi uchun minus minus fors if inklyuds qo‘shimcha tekshiruvidan foydalanamiz.",
+    "a0": 65.54,
+    "a1": 72.97,
+    "words": [
+      {
+        "w": "Biroq",
+        "s": 65.54,
+        "e": 65.76
+      },
+      {
+        "w": "muharrir",
+        "s": 65.88,
+        "e": 66.28
+      },
+      {
+        "w": "fonda",
+        "s": 66.38,
+        "e": 66.7
+      },
+      {
+        "w": "o‘zi",
+        "s": 66.86,
+        "e": 67.04
+      },
+      {
+        "w": "fech",
+        "s": 67.14,
+        "e": 67.32
+      },
+      {
+        "w": "qilib",
+        "s": 67.34,
+        "e": 67.53
+      },
+      {
+        "w": "tursa,",
+        "s": 67.53,
+        "e": 67.77
+      },
+      {
+        "w": "liz",
+        "s": 68.09,
+        "e": 68.25
+      },
+      {
+        "w": "sharti",
+        "s": 68.31,
+        "e": 68.61
+      },
+      {
+        "w": "aldanib",
+        "s": 68.69,
+        "e": 68.99
+      },
+      {
+        "w": "qolmasligi",
+        "s": 69.01,
+        "e": 69.41
+      },
+      {
+        "w": "uchun",
+        "s": 69.47,
+        "e": 69.65
+      },
+      {
+        "w": "minus",
+        "s": 69.93,
+        "e": 70.15
+      },
+      {
+        "w": "minus",
+        "s": 70.17,
+        "e": 70.37
+      },
+      {
+        "w": "fors",
+        "s": 70.45,
+        "e": 70.73
+      },
+      {
+        "w": "if",
+        "s": 70.89,
+        "e": 70.97
+      },
+      {
+        "w": "inklyuds",
+        "s": 71.11,
+        "e": 71.49
+      },
+      {
+        "w": "qo‘shimcha",
+        "s": 71.55,
+        "e": 71.87
+      },
+      {
+        "w": "tekshiruvidan",
+        "s": 71.91,
+        "e": 72.37
+      },
+      {
+        "w": "foydalanamiz.",
+        "s": 72.43,
+        "e": 72.97
+      }
+    ]
+  },
+  {
+    "id": "l10",
+    "scene": "force_if_includes",
+    "text": "Ushbu bayroq serverdagi commit sizning lokal tarixingiz va reflogingizdan haqiqatan o‘tganligini to‘liq kafolatlaydi.",
+    "show": "Ushbu bayroq serverdagi commit sizning lokal tarixingiz va reflogingizdan haqiqatan o‘tganligini to‘liq kafolatlaydi.",
+    "say": "Ushbu bayroq serverdagi kommit sizning lokal tarixingiz va reflogingizdan haqiqatan o‘tganligini to‘liq kafolatlaydi.",
+    "a0": 73.79,
+    "a1": 80.01,
+    "words": [
+      {
+        "w": "Ushbu",
+        "s": 73.79,
+        "e": 73.99
+      },
+      {
+        "w": "bayroq",
+        "s": 74.05,
+        "e": 74.35
+      },
+      {
+        "w": "serverdagi",
+        "s": 74.55,
+        "e": 75.05
+      },
+      {
+        "w": "kommit",
+        "s": 75.09,
+        "e": 75.37
+      },
+      {
+        "w": "sizning",
+        "s": 75.49,
+        "e": 75.79
+      },
+      {
+        "w": "lokal",
+        "s": 75.85,
+        "e": 76.13
+      },
+      {
+        "w": "tarixingiz",
+        "s": 76.17,
+        "e": 76.69
+      },
+      {
+        "w": "va",
+        "s": 76.75,
+        "e": 76.83
+      },
+      {
+        "w": "reflogingizdan",
+        "s": 76.97,
+        "e": 77.65
+      },
+      {
+        "w": "haqiqatan",
+        "s": 77.89,
+        "e": 78.43
+      },
+      {
+        "w": "o‘tganligini",
+        "s": 78.53,
+        "e": 79.05
+      },
+      {
+        "w": "to‘liq",
+        "s": 79.13,
+        "e": 79.37
+      },
+      {
+        "w": "kafolatlaydi.",
+        "s": 79.41,
+        "e": 80.01
+      }
+    ]
+  },
+  {
+    "id": "l11",
+    "scene": "xulosa",
+    "text": "Ushbu ichki mexanizmlarni bilish katta jamoalarda o‘zaro kod almashish xavfsizligini eng yuqori darajaga ko‘taradi.",
+    "show": "Ushbu ichki mexanizmlarni bilish katta jamoalarda o‘zaro kod almashish xavfsizligini eng yuqori darajaga ko‘taradi.",
+    "say": "Ushbu ichki mexanizmlarni bilish katta jamoalarda o‘zaro kod almashish xavfsizligini eng yuqori darajaga ko‘taradi.",
+    "a0": 80.75,
+    "a1": 86.42,
+    "words": [
+      {
+        "w": "Ushbu",
+        "s": 80.75,
+        "e": 80.99
+      },
+      {
+        "w": "ichki",
+        "s": 81.09,
+        "e": 81.27
+      },
+      {
+        "w": "mexanizmlarni",
+        "s": 81.29,
+        "e": 81.93
+      },
+      {
+        "w": "bilish",
+        "s": 81.97,
+        "e": 82.19
+      },
+      {
+        "w": "katta",
+        "s": 82.27,
+        "e": 82.56
+      },
+      {
+        "w": "jamoalarda",
+        "s": 82.6,
+        "e": 83.16
+      },
+      {
+        "w": "o‘zaro",
+        "s": 83.32,
+        "e": 83.58
+      },
+      {
+        "w": "kod",
+        "s": 83.68,
+        "e": 83.86
+      },
+      {
+        "w": "almashish",
+        "s": 83.88,
+        "e": 84.24
+      },
+      {
+        "w": "xavfsizligini",
+        "s": 84.26,
+        "e": 84.8
+      },
+      {
+        "w": "eng",
+        "s": 85.1,
+        "e": 85.26
+      },
+      {
+        "w": "yuqori",
+        "s": 85.3,
+        "e": 85.66
+      },
+      {
+        "w": "darajaga",
+        "s": 85.68,
+        "e": 86.02
+      },
+      {
+        "w": "ko‘taradi.",
+        "s": 86.06,
+        "e": 86.42
+      }
+    ]
+  },
+  {
+    "id": "l12",
+    "scene": "xulosa",
+    "text": "Keyingi o‘ttizinchi bobda masofaviy repozitoriylar bilan xavfsiz autentifikatsiya o‘rnatish va SSH kalitlarini sozlashni ko‘rib chiqamiz.",
+    "show": "Keyingi o‘ttizinchi bobda masofaviy repozitoriylar bilan xavfsiz autentifikatsiya o‘rnatish va SSH kalitlarini sozlashni ko‘rib chiqamiz.",
+    "say": "Keyingi o‘ttizinchi bobda masofaviy repozitoriylar bilan xavfsiz autentifikatsiya o‘rnatish va es es eych kalitlarini sozlashni ko‘rib chiqamiz.",
+    "a0": 87.1,
+    "a1": 93.98,
+    "words": [
+      {
+        "w": "Keyingi",
+        "s": 87.1,
+        "e": 87.4
+      },
+      {
+        "w": "o‘ttizinchi",
+        "s": 87.48,
+        "e": 87.88
+      },
+      {
+        "w": "bobda",
+        "s": 87.92,
+        "e": 88.18
+      },
+      {
+        "w": "masofaviy",
+        "s": 88.38,
+        "e": 88.86
+      },
+      {
+        "w": "repozitoriylar",
+        "s": 88.92,
+        "e": 89.58
+      },
+      {
+        "w": "bilan",
+        "s": 89.62,
+        "e": 89.76
+      },
+      {
+        "w": "xavfsiz",
+        "s": 89.84,
+        "e": 90.18
+      },
+      {
+        "w": "autentifikatsiya",
+        "s": 90.26,
+        "e": 90.98
+      },
+      {
+        "w": "o‘rnatish",
+        "s": 91.07,
+        "e": 91.49
+      },
+      {
+        "w": "va",
+        "s": 91.73,
+        "e": 91.79
+      },
+      {
+        "w": "es",
+        "s": 91.99,
+        "e": 92.09
+      },
+      {
+        "w": "es",
+        "s": 92.13,
+        "e": 92.23
+      },
+      {
+        "w": "eych",
+        "s": 92.25,
+        "e": 92.43
+      },
+      {
+        "w": "kalitlarini",
+        "s": 92.45,
+        "e": 92.89
+      },
+      {
+        "w": "sozlashni",
+        "s": 92.93,
+        "e": 93.36
+      },
+      {
+        "w": "ko‘rib",
+        "s": 93.42,
+        "e": 93.64
+      },
+      {
+        "w": "chiqamiz.",
+        "s": 93.66,
+        "e": 93.98
+      }
+    ]
+  }
+]
