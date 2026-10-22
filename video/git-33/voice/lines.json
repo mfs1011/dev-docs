@@ -1,0 +1,1344 @@
+[
+  {
+    "id": "l1",
+    "scene": "intro",
+    "text": "Salom! Ushbu o‘ttiz uchinchi bobda loyihalarga hissa qo'shuvchi, ya'ni contributor sifatida sifatli va xatosiz kod yetkazish amaliyotini o'rganamiz.",
+    "show": "Salom! Ushbu o‘ttiz uchinchi bobda loyihalarga hissa qo'shuvchi, ya'ni contributor sifatida sifatli va xatosiz kod yetkazish amaliyotini o'rganamiz.",
+    "say": "Salom! Ushbu o‘ttiz uchinchi bobda loyihalarga hissa qo'shuvchi, ya'ni kontribyutor sifatida sifatli va xatosiz kod yetkazish amaliyotini o'rganamiz.",
+    "a0": 0.12,
+    "a1": 8.11,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.12,
+        "e": 0.4
+      },
+      {
+        "w": "Ushbu",
+        "s": 1.08,
+        "e": 1.34
+      },
+      {
+        "w": "o‘ttiz",
+        "s": 1.52,
+        "e": 1.8
+      },
+      {
+        "w": "uchinchi",
+        "s": 1.84,
+        "e": 2.16
+      },
+      {
+        "w": "bobda",
+        "s": 2.18,
+        "e": 2.44
+      },
+      {
+        "w": "loyihalarga",
+        "s": 2.52,
+        "e": 3.04
+      },
+      {
+        "w": "hissa",
+        "s": 3.08,
+        "e": 3.3
+      },
+      {
+        "w": "qo'shuvchi,",
+        "s": 3.36,
+        "e": 3.76
+      },
+      {
+        "w": "ya'ni",
+        "s": 3.9,
+        "e": 4.1
+      },
+      {
+        "w": "kontribyutor",
+        "s": 4.38,
+        "e": 4.94
+      },
+      {
+        "w": "sifatida",
+        "s": 4.98,
+        "e": 5.36
+      },
+      {
+        "w": "sifatli",
+        "s": 5.44,
+        "e": 5.86
+      },
+      {
+        "w": "va",
+        "s": 5.92,
+        "e": 5.98
+      },
+      {
+        "w": "xatosiz",
+        "s": 6.08,
+        "e": 6.52
+      },
+      {
+        "w": "kod",
+        "s": 6.56,
+        "e": 6.7
+      },
+      {
+        "w": "yetkazish",
+        "s": 6.76,
+        "e": 7.12
+      },
+      {
+        "w": "amaliyotini",
+        "s": 7.18,
+        "e": 7.65
+      },
+      {
+        "w": "o'rganamiz.",
+        "s": 7.69,
+        "e": 8.11
+      }
+    ]
+  },
+  {
+    "id": "l2",
+    "scene": "intro",
+    "text": "Git'da birlashtirish klient tomonida bajarilgani sababli, yaxshi dasturchi review qiluvchi maintainer uchun ishlarni qabul qilishni imkon qadar yengillashtirishi kerak.",
+    "show": "Git'da birlashtirish klient tomonida bajarilgani sababli, yaxshi dasturchi review qiluvchi maintainer uchun ishlarni qabul qilishni imkon qadar yengillashtirishi kerak.",
+    "say": "Git'da birlashtirish klient tomonida bajarilgani sababli, yaxshi dasturchi revyu qiluvchi meynteyner uchun ishlarni qabul qilishni imkon qadar yengillashtirishi kerak.",
+    "a0": 9.23,
+    "a1": 17.89,
+    "words": [
+      {
+        "w": "Git'da",
+        "s": 9.23,
+        "e": 9.57
+      },
+      {
+        "w": "birlashtirish",
+        "s": 9.63,
+        "e": 10.21
+      },
+      {
+        "w": "klient",
+        "s": 10.35,
+        "e": 10.71
+      },
+      {
+        "w": "tomonida",
+        "s": 10.75,
+        "e": 11.13
+      },
+      {
+        "w": "bajarilgani",
+        "s": 11.17,
+        "e": 11.67
+      },
+      {
+        "w": "sababli,",
+        "s": 11.71,
+        "e": 12.05
+      },
+      {
+        "w": "yaxshi",
+        "s": 12.47,
+        "e": 12.77
+      },
+      {
+        "w": "dasturchi",
+        "s": 12.79,
+        "e": 13.27
+      },
+      {
+        "w": "revyu",
+        "s": 13.49,
+        "e": 13.79
+      },
+      {
+        "w": "qiluvchi",
+        "s": 13.87,
+        "e": 14.21
+      },
+      {
+        "w": "meynteyner",
+        "s": 14.29,
+        "e": 14.85
+      },
+      {
+        "w": "uchun",
+        "s": 14.87,
+        "e": 15.05
+      },
+      {
+        "w": "ishlarni",
+        "s": 15.23,
+        "e": 15.65
+      },
+      {
+        "w": "qabul",
+        "s": 15.73,
+        "e": 16.01
+      },
+      {
+        "w": "qilishni",
+        "s": 16.05,
+        "e": 16.37
+      },
+      {
+        "w": "imkon",
+        "s": 16.43,
+        "e": 16.73
+      },
+      {
+        "w": "qadar",
+        "s": 16.77,
+        "e": 16.99
+      },
+      {
+        "w": "yengillashtirishi",
+        "s": 17.03,
+        "e": 17.65
+      },
+      {
+        "w": "kerak.",
+        "s": 17.67,
+        "e": 17.89
+      }
+    ]
+  },
+  {
+    "id": "l3",
+    "scene": "kichik_jamoa_workflow",
+    "text": "Kichik jamoada hamma umumiy repozitoriyga yoza oladi. Agar hamkasbingiz sizdan oldinroq yangi kod chiqargan bo'lsa, Git fetch first bilan sizning push amalingizni to'xtatadi.",
+    "show": "Kichik jamoada hamma umumiy repozitoriyga yoza oladi. Agar hamkasbingiz sizdan oldinroq yangi kod chiqargan bo'lsa, Git fetch first bilan sizning push amalingizni to'xtatadi.",
+    "say": "Kichik jamoada hamma umumiy repozitoriyga yoza oladi. Agar hamkasbingiz sizdan oldinroq yangi kod chiqargan bo'lsa, Git fech ferst bilan sizning push amalingizni to'xtatadi.",
+    "a0": 18.67,
+    "a1": 28.5,
+    "words": [
+      {
+        "w": "Kichik",
+        "s": 18.67,
+        "e": 18.91
+      },
+      {
+        "w": "jamoada",
+        "s": 18.95,
+        "e": 19.37
+      },
+      {
+        "w": "hamma",
+        "s": 19.49,
+        "e": 19.77
+      },
+      {
+        "w": "umumiy",
+        "s": 19.89,
+        "e": 20.15
+      },
+      {
+        "w": "repozitoriyga",
+        "s": 20.23,
+        "e": 20.85
+      },
+      {
+        "w": "yoza",
+        "s": 20.89,
+        "e": 21.07
+      },
+      {
+        "w": "oladi.",
+        "s": 21.11,
+        "e": 21.35
+      },
+      {
+        "w": "Agar",
+        "s": 22.01,
+        "e": 22.25
+      },
+      {
+        "w": "hamkasbingiz",
+        "s": 22.37,
+        "e": 23.06
+      },
+      {
+        "w": "sizdan",
+        "s": 23.12,
+        "e": 23.42
+      },
+      {
+        "w": "oldinroq",
+        "s": 23.56,
+        "e": 24.0
+      },
+      {
+        "w": "yangi",
+        "s": 24.06,
+        "e": 24.28
+      },
+      {
+        "w": "kod",
+        "s": 24.32,
+        "e": 24.46
+      },
+      {
+        "w": "chiqargan",
+        "s": 24.52,
+        "e": 24.86
+      },
+      {
+        "w": "bo'lsa,",
+        "s": 24.88,
+        "e": 25.14
+      },
+      {
+        "w": "Git",
+        "s": 25.58,
+        "e": 25.76
+      },
+      {
+        "w": "fech",
+        "s": 26.0,
+        "e": 26.2
+      },
+      {
+        "w": "ferst",
+        "s": 26.28,
+        "e": 26.54
+      },
+      {
+        "w": "bilan",
+        "s": 26.6,
+        "e": 26.82
+      },
+      {
+        "w": "sizning",
+        "s": 26.86,
+        "e": 27.16
+      },
+      {
+        "w": "push",
+        "s": 27.22,
+        "e": 27.4
+      },
+      {
+        "w": "amalingizni",
+        "s": 27.46,
+        "e": 28.02
+      },
+      {
+        "w": "to'xtatadi.",
+        "s": 28.04,
+        "e": 28.5
+      }
+    ]
+  },
+  {
+    "id": "l4",
+    "scene": "kichik_jamoa_workflow",
+    "text": "Dasturchi avval fetch qilib farqlarni solishtiradi, o'zgarishlarni lokal birlashtiradi, testlarni ishga tushirib, so'ngra serverga muvaffaqiyatli push qiladi.",
+    "show": "Dasturchi avval fetch qilib farqlarni solishtiradi, o'zgarishlarni lokal birlashtiradi, testlarni ishga tushirib, so'ngra serverga muvaffaqiyatli push qiladi.",
+    "say": "Dasturchi avval fetch qilib farqlarni solishtiradi, o'zgarishlarni lokal birlashtiradi, testlarni ishga tushirib, so'ngra serverga muvaffaqiyatli push qiladi.",
+    "a0": 29.3,
+    "a1": 37.28,
+    "words": [
+      {
+        "w": "Dasturchi",
+        "s": 29.3,
+        "e": 29.7
+      },
+      {
+        "w": "avval",
+        "s": 29.74,
+        "e": 29.96
+      },
+      {
+        "w": "fetch",
+        "s": 30.06,
+        "e": 30.26
+      },
+      {
+        "w": "qilib",
+        "s": 30.32,
+        "e": 30.52
+      },
+      {
+        "w": "farqlarni",
+        "s": 30.58,
+        "e": 30.98
+      },
+      {
+        "w": "solishtiradi,",
+        "s": 31.02,
+        "e": 31.52
+      },
+      {
+        "w": "o'zgarishlarni",
+        "s": 31.96,
+        "e": 32.58
+      },
+      {
+        "w": "lokal",
+        "s": 32.68,
+        "e": 32.98
+      },
+      {
+        "w": "birlashtiradi,",
+        "s": 33.02,
+        "e": 33.56
+      },
+      {
+        "w": "testlarni",
+        "s": 33.86,
+        "e": 34.36
+      },
+      {
+        "w": "ishga",
+        "s": 34.46,
+        "e": 34.68
+      },
+      {
+        "w": "tushirib,",
+        "s": 34.72,
+        "e": 35.0
+      },
+      {
+        "w": "so'ngra",
+        "s": 35.06,
+        "e": 35.34
+      },
+      {
+        "w": "serverga",
+        "s": 35.68,
+        "e": 36.1
+      },
+      {
+        "w": "muvaffaqiyatli",
+        "s": 36.16,
+        "e": 36.82
+      },
+      {
+        "w": "push",
+        "s": 36.88,
+        "e": 37.02
+      },
+      {
+        "w": "qiladi.",
+        "s": 37.04,
+        "e": 37.28
+      }
+    ]
+  },
+  {
+    "id": "l5",
+    "scene": "boshqariladigan_jamoa",
+    "text": "Kattaroq jamoalarda asosiy main branch himoyalanadi va unga faqat integratorlar yozadi. Dasturchilar esa alohida feature branchlar va refspeklar orqali parallel hamkorlik qiladi.",
+    "show": "Kattaroq jamoalarda asosiy main branch himoyalanadi va unga faqat integratorlar yozadi. Dasturchilar esa alohida feature branchlar va refspeklar orqali parallel hamkorlik qiladi.",
+    "say": "Kattaroq jamoalarda asosiy main brench himoyalanadi va unga faqat integratorlar yozadi. Dasturchilar esa alohida ficher brenchlar va refspeklar orqali parallel hamkorlik qiladi.",
+    "a0": 37.97,
+    "a1": 48.21,
+    "words": [
+      {
+        "w": "Kattaroq",
+        "s": 37.97,
+        "e": 38.39
+      },
+      {
+        "w": "jamoalarda",
+        "s": 38.43,
+        "e": 38.93
+      },
+      {
+        "w": "asosiy",
+        "s": 39.09,
+        "e": 39.49
+      },
+      {
+        "w": "main",
+        "s": 39.61,
+        "e": 39.85
+      },
+      {
+        "w": "brench",
+        "s": 39.89,
+        "e": 40.15
+      },
+      {
+        "w": "himoyalanadi",
+        "s": 40.19,
+        "e": 40.81
+      },
+      {
+        "w": "va",
+        "s": 40.85,
+        "e": 40.93
+      },
+      {
+        "w": "unga",
+        "s": 41.25,
+        "e": 41.41
+      },
+      {
+        "w": "faqat",
+        "s": 41.45,
+        "e": 41.75
+      },
+      {
+        "w": "integratorlar",
+        "s": 41.85,
+        "e": 42.53
+      },
+      {
+        "w": "yozadi.",
+        "s": 42.57,
+        "e": 42.87
+      },
+      {
+        "w": "Dasturchilar",
+        "s": 43.35,
+        "e": 43.85
+      },
+      {
+        "w": "esa",
+        "s": 43.89,
+        "e": 44.03
+      },
+      {
+        "w": "alohida",
+        "s": 44.41,
+        "e": 44.79
+      },
+      {
+        "w": "ficher",
+        "s": 44.87,
+        "e": 45.17
+      },
+      {
+        "w": "brenchlar",
+        "s": 45.21,
+        "e": 45.61
+      },
+      {
+        "w": "va",
+        "s": 45.67,
+        "e": 45.73
+      },
+      {
+        "w": "refspeklar",
+        "s": 46.05,
+        "e": 46.65
+      },
+      {
+        "w": "orqali",
+        "s": 46.71,
+        "e": 46.99
+      },
+      {
+        "w": "parallel",
+        "s": 47.07,
+        "e": 47.45
+      },
+      {
+        "w": "hamkorlik",
+        "s": 47.51,
+        "e": 47.93
+      },
+      {
+        "w": "qiladi.",
+        "s": 47.97,
+        "e": 48.21
+      }
+    ]
+  },
+  {
+    "id": "l6",
+    "scene": "boshqariladigan_jamoa",
+    "text": "Bu uslubda kichik guruhlar bir-biriga xalaqit bermasdan bir nechta yangi imkoniyatlar ustida mustaqil ishlay oladi, yakunda esa integrator ularni main chizig'iga birlashtiradi.",
+    "show": "Bu uslubda kichik guruhlar bir-biriga xalaqit bermasdan bir nechta yangi imkoniyatlar ustida mustaqil ishlay oladi, yakunda esa integrator ularni main chizig'iga birlashtiradi.",
+    "say": "Bu uslubda kichik guruhlar bir-biriga xalaqit bermasdan bir nechta yangi imkoniyatlar ustida mustaqil ishlay oladi, yakunda esa integrator ularni main chizig'iga birlashtiradi.",
+    "a0": 48.91,
+    "a1": 58.4,
+    "words": [
+      {
+        "w": "Bu",
+        "s": 48.91,
+        "e": 48.97
+      },
+      {
+        "w": "uslubda",
+        "s": 49.05,
+        "e": 49.45
+      },
+      {
+        "w": "kichik",
+        "s": 49.81,
+        "e": 50.05
+      },
+      {
+        "w": "guruhlar",
+        "s": 50.09,
+        "e": 50.45
+      },
+      {
+        "w": "bir-biriga",
+        "s": 50.49,
+        "e": 50.85
+      },
+      {
+        "w": "xalaqit",
+        "s": 50.93,
+        "e": 51.23
+      },
+      {
+        "w": "bermasdan",
+        "s": 51.29,
+        "e": 51.71
+      },
+      {
+        "w": "bir",
+        "s": 52.01,
+        "e": 52.13
+      },
+      {
+        "w": "nechta",
+        "s": 52.21,
+        "e": 52.47
+      },
+      {
+        "w": "yangi",
+        "s": 52.54,
+        "e": 52.78
+      },
+      {
+        "w": "imkoniyatlar",
+        "s": 52.84,
+        "e": 53.32
+      },
+      {
+        "w": "ustida",
+        "s": 53.36,
+        "e": 53.58
+      },
+      {
+        "w": "mustaqil",
+        "s": 53.66,
+        "e": 54.1
+      },
+      {
+        "w": "ishlay",
+        "s": 54.14,
+        "e": 54.36
+      },
+      {
+        "w": "oladi,",
+        "s": 54.42,
+        "e": 54.64
+      },
+      {
+        "w": "yakunda",
+        "s": 55.1,
+        "e": 55.42
+      },
+      {
+        "w": "esa",
+        "s": 55.48,
+        "e": 55.62
+      },
+      {
+        "w": "integrator",
+        "s": 55.98,
+        "e": 56.52
+      },
+      {
+        "w": "ularni",
+        "s": 56.58,
+        "e": 56.9
+      },
+      {
+        "w": "main",
+        "s": 57.16,
+        "e": 57.44
+      },
+      {
+        "w": "chizig'iga",
+        "s": 57.46,
+        "e": 57.86
+      },
+      {
+        "w": "birlashtiradi.",
+        "s": 57.9,
+        "e": 58.4
+      }
+    ]
+  },
+  {
+    "id": "l7",
+    "scene": "fork_va_request_pull",
+    "text": "Ochiq manbali loyihalarda esa to'g'ridan-to'g'ri push huquqi bo'lmaydi. Dasturchi loyihani o'ziga fork qilib oladi va o'zgarishlarni faqat alohida topic branchga push qiladi.",
+    "show": "Ochiq manbali loyihalarda esa to'g'ridan-to'g'ri push huquqi bo'lmaydi. Dasturchi loyihani o'ziga fork qilib oladi va o'zgarishlarni faqat alohida topic branchga push qiladi.",
+    "say": "Ochiq manbali loyihalarda esa to'g'ridan-to'g'ri push huquqi bo'lmaydi. Dasturchi loyihani o'ziga fork qilib oladi va o'zgarishlarni faqat alohida topik branchga push qiladi.",
+    "a0": 59.24,
+    "a1": 68.51,
+    "words": [
+      {
+        "w": "Ochiq",
+        "s": 59.24,
+        "e": 59.48
+      },
+      {
+        "w": "manbali",
+        "s": 59.54,
+        "e": 59.92
+      },
+      {
+        "w": "loyihalarda",
+        "s": 60.02,
+        "e": 60.48
+      },
+      {
+        "w": "esa",
+        "s": 60.54,
+        "e": 60.68
+      },
+      {
+        "w": "to'g'ridan-to'g'ri",
+        "s": 60.98,
+        "e": 61.66
+      },
+      {
+        "w": "push",
+        "s": 61.72,
+        "e": 61.94
+      },
+      {
+        "w": "huquqi",
+        "s": 62.0,
+        "e": 62.32
+      },
+      {
+        "w": "bo'lmaydi.",
+        "s": 62.36,
+        "e": 62.78
+      },
+      {
+        "w": "Dasturchi",
+        "s": 63.4,
+        "e": 63.84
+      },
+      {
+        "w": "loyihani",
+        "s": 63.9,
+        "e": 64.28
+      },
+      {
+        "w": "o'ziga",
+        "s": 64.38,
+        "e": 64.6
+      },
+      {
+        "w": "fork",
+        "s": 64.72,
+        "e": 64.94
+      },
+      {
+        "w": "qilib",
+        "s": 64.98,
+        "e": 65.18
+      },
+      {
+        "w": "oladi",
+        "s": 65.22,
+        "e": 65.42
+      },
+      {
+        "w": "va",
+        "s": 65.46,
+        "e": 65.52
+      },
+      {
+        "w": "o'zgarishlarni",
+        "s": 65.88,
+        "e": 66.46
+      },
+      {
+        "w": "faqat",
+        "s": 66.5,
+        "e": 66.76
+      },
+      {
+        "w": "alohida",
+        "s": 66.92,
+        "e": 67.28
+      },
+      {
+        "w": "topik",
+        "s": 67.38,
+        "e": 67.69
+      },
+      {
+        "w": "branchga",
+        "s": 67.73,
+        "e": 68.05
+      },
+      {
+        "w": "push",
+        "s": 68.09,
+        "e": 68.23
+      },
+      {
+        "w": "qiladi.",
+        "s": 68.25,
+        "e": 68.51
+      }
+    ]
+  },
+  {
+    "id": "l8",
+    "scene": "fork_va_request_pull",
+    "text": "So'ngra git request-pull buyrug'i yoki veb pull request orqali loyiha yurituvchisiga o'zgarishlar manzili va commitlar tavsifini o'z ichiga olgan so'rov yuboriladi.",
+    "show": "So'ngra git request-pull buyrug'i yoki veb pull request orqali loyiha yurituvchisiga o'zgarishlar manzili va commitlar tavsifini o'z ichiga olgan so'rov yuboriladi.",
+    "say": "So'ngra git rekvest pul buyrug'i yoki veb pul rekvest orqali loyiha yurituvchisiga o'zgarishlar manzili va kommitlar tavsifini o'z ichiga olgan so'rov yuboriladi.",
+    "a0": 69.27,
+    "a1": 78.23,
+    "words": [
+      {
+        "w": "So'ngra",
+        "s": 69.27,
+        "e": 69.59
+      },
+      {
+        "w": "git",
+        "s": 69.93,
+        "e": 70.11
+      },
+      {
+        "w": "rekvest",
+        "s": 70.17,
+        "e": 70.53
+      },
+      {
+        "w": "pul",
+        "s": 70.59,
+        "e": 70.75
+      },
+      {
+        "w": "buyrug'i",
+        "s": 70.81,
+        "e": 71.17
+      },
+      {
+        "w": "yoki",
+        "s": 71.33,
+        "e": 71.57
+      },
+      {
+        "w": "veb",
+        "s": 71.81,
+        "e": 72.01
+      },
+      {
+        "w": "pul",
+        "s": 72.11,
+        "e": 72.29
+      },
+      {
+        "w": "rekvest",
+        "s": 72.35,
+        "e": 72.71
+      },
+      {
+        "w": "orqali",
+        "s": 72.79,
+        "e": 73.11
+      },
+      {
+        "w": "loyiha",
+        "s": 73.23,
+        "e": 73.55
+      },
+      {
+        "w": "yurituvchisiga",
+        "s": 73.61,
+        "e": 74.21
+      },
+      {
+        "w": "o'zgarishlar",
+        "s": 74.33,
+        "e": 74.81
+      },
+      {
+        "w": "manzili",
+        "s": 74.87,
+        "e": 75.19
+      },
+      {
+        "w": "va",
+        "s": 75.23,
+        "e": 75.29
+      },
+      {
+        "w": "kommitlar",
+        "s": 75.63,
+        "e": 76.17
+      },
+      {
+        "w": "tavsifini",
+        "s": 76.21,
+        "e": 76.67
+      },
+      {
+        "w": "o'z",
+        "s": 76.75,
+        "e": 76.87
+      },
+      {
+        "w": "ichiga",
+        "s": 76.89,
+        "e": 77.11
+      },
+      {
+        "w": "olgan",
+        "s": 77.15,
+        "e": 77.37
+      },
+      {
+        "w": "so'rov",
+        "s": 77.43,
+        "e": 77.73
+      },
+      {
+        "w": "yuboriladi.",
+        "s": 77.77,
+        "e": 78.23
+      }
+    ]
+  },
+  {
+    "id": "l9",
+    "scene": "rebase_va_patch_navbati",
+    "text": "Agar siz kutayotgan paytda loyihaning asosiy tarixi oldinga ketgan bo'lsa, yuzaga keladigan konfliktlarni maintainerga yuklamasdan o'zingiz hal qilishingiz shart.",
+    "show": "Agar siz kutayotgan paytda loyihaning asosiy tarixi oldinga ketgan bo'lsa, yuzaga keladigan konfliktlarni maintainerga yuklamasdan o'zingiz hal qilishingiz shart.",
+    "say": "Agar siz kutayotgan paytda loyihaning asosiy tarixi oldinga ketgan bo'lsa, yuzaga keladigan konfliktlarni meynteynerga yuklamasdan o'zingiz hal qilishingiz shart.",
+    "a0": 79.21,
+    "a1": 87.48,
+    "words": [
+      {
+        "w": "Agar",
+        "s": 79.21,
+        "e": 79.41
+      },
+      {
+        "w": "siz",
+        "s": 79.45,
+        "e": 79.59
+      },
+      {
+        "w": "kutayotgan",
+        "s": 79.63,
+        "e": 80.09
+      },
+      {
+        "w": "paytda",
+        "s": 80.13,
+        "e": 80.47
+      },
+      {
+        "w": "loyihaning",
+        "s": 80.71,
+        "e": 81.19
+      },
+      {
+        "w": "asosiy",
+        "s": 81.29,
+        "e": 81.63
+      },
+      {
+        "w": "tarixi",
+        "s": 81.69,
+        "e": 81.97
+      },
+      {
+        "w": "oldinga",
+        "s": 82.05,
+        "e": 82.37
+      },
+      {
+        "w": "ketgan",
+        "s": 82.43,
+        "e": 82.7
+      },
+      {
+        "w": "bo'lsa,",
+        "s": 82.74,
+        "e": 82.98
+      },
+      {
+        "w": "yuzaga",
+        "s": 83.42,
+        "e": 83.7
+      },
+      {
+        "w": "keladigan",
+        "s": 83.74,
+        "e": 84.1
+      },
+      {
+        "w": "konfliktlarni",
+        "s": 84.14,
+        "e": 84.74
+      },
+      {
+        "w": "meynteynerga",
+        "s": 84.88,
+        "e": 85.52
+      },
+      {
+        "w": "yuklamasdan",
+        "s": 85.58,
+        "e": 86.12
+      },
+      {
+        "w": "o'zingiz",
+        "s": 86.28,
+        "e": 86.62
+      },
+      {
+        "w": "hal",
+        "s": 86.68,
+        "e": 86.8
+      },
+      {
+        "w": "qilishingiz",
+        "s": 86.84,
+        "e": 87.24
+      },
+      {
+        "w": "shart.",
+        "s": 87.26,
+        "e": 87.48
+      }
+    ]
+  },
+  {
+    "id": "l10",
+    "scene": "rebase_va_patch_navbati",
+    "text": "Buning uchun o'z topic branchimizni yangilangan asosiy branch ustiga rebase qilib, toza va mojarosiz holatga keltirib qayta jo'natamiz.",
+    "show": "Buning uchun o'z topic branchimizni yangilangan asosiy branch ustiga rebase qilib, toza va mojarosiz holatga keltirib qayta jo'natamiz.",
+    "say": "Buning uchun o'z topik brenchimizni yangilangan asosiy brench ustiga ribeyse qilib, toza va mojarosiz holatga keltirib qayta jo'natamiz.",
+    "a0": 88.06,
+    "a1": 94.94,
+    "words": [
+      {
+        "w": "Buning",
+        "s": 88.06,
+        "e": 88.26
+      },
+      {
+        "w": "uchun",
+        "s": 88.26,
+        "e": 88.44
+      },
+      {
+        "w": "o'z",
+        "s": 88.8,
+        "e": 88.92
+      },
+      {
+        "w": "topik",
+        "s": 88.96,
+        "e": 89.22
+      },
+      {
+        "w": "brenchimizni",
+        "s": 89.26,
+        "e": 89.78
+      },
+      {
+        "w": "yangilangan",
+        "s": 89.86,
+        "e": 90.46
+      },
+      {
+        "w": "asosiy",
+        "s": 90.56,
+        "e": 90.9
+      },
+      {
+        "w": "brench",
+        "s": 90.94,
+        "e": 91.2
+      },
+      {
+        "w": "ustiga",
+        "s": 91.24,
+        "e": 91.5
+      },
+      {
+        "w": "ribeyse",
+        "s": 91.58,
+        "e": 91.9
+      },
+      {
+        "w": "qilib,",
+        "s": 91.92,
+        "e": 92.1
+      },
+      {
+        "w": "toza",
+        "s": 92.42,
+        "e": 92.68
+      },
+      {
+        "w": "va",
+        "s": 92.74,
+        "e": 92.8
+      },
+      {
+        "w": "mojarosiz",
+        "s": 93.0,
+        "e": 93.5
+      },
+      {
+        "w": "holatga",
+        "s": 93.54,
+        "e": 93.86
+      },
+      {
+        "w": "keltirib",
+        "s": 93.9,
+        "e": 94.22
+      },
+      {
+        "w": "qayta",
+        "s": 94.26,
+        "e": 94.5
+      },
+      {
+        "w": "jo'natamiz.",
+        "s": 94.54,
+        "e": 94.94
+      }
+    ]
+  },
+  {
+    "id": "l11",
+    "scene": "xulosa",
+    "text": "Xulosa qilganda, bitta mantiqiy masala uchun bitta toza commit yaratish, ortiqcha probellarni tozalash va alohida topic branchlardan foydalanish eng yaxshi amaliyotdir.",
+    "show": "Xulosa qilganda, bitta mantiqiy masala uchun bitta toza commit yaratish, ortiqcha probellarni tozalash va alohida topic branchlardan foydalanish eng yaxshi amaliyotdir.",
+    "say": "Xulosa qilganda, bitta mantiqiy masala uchun bitta toza kommit yaratish, ortiqcha probellarni tozalash va alohida topik branchlardan foydalanish eng yaxshi amaliyotdir.",
+    "a0": 96.05,
+    "a1": 104.81,
+    "words": [
+      {
+        "w": "Xulosa",
+        "s": 96.05,
+        "e": 96.33
+      },
+      {
+        "w": "qilganda,",
+        "s": 96.37,
+        "e": 96.75
+      },
+      {
+        "w": "bitta",
+        "s": 97.11,
+        "e": 97.35
+      },
+      {
+        "w": "mantiqiy",
+        "s": 97.39,
+        "e": 97.77
+      },
+      {
+        "w": "masala",
+        "s": 97.83,
+        "e": 98.09
+      },
+      {
+        "w": "uchun",
+        "s": 98.13,
+        "e": 98.31
+      },
+      {
+        "w": "bitta",
+        "s": 98.41,
+        "e": 98.65
+      },
+      {
+        "w": "toza",
+        "s": 98.71,
+        "e": 98.93
+      },
+      {
+        "w": "kommit",
+        "s": 98.99,
+        "e": 99.25
+      },
+      {
+        "w": "yaratish,",
+        "s": 99.31,
+        "e": 99.65
+      },
+      {
+        "w": "ortiqcha",
+        "s": 100.01,
+        "e": 100.33
+      },
+      {
+        "w": "probellarni",
+        "s": 100.37,
+        "e": 100.89
+      },
+      {
+        "w": "tozalash",
+        "s": 100.93,
+        "e": 101.31
+      },
+      {
+        "w": "va",
+        "s": 101.63,
+        "e": 101.69
+      },
+      {
+        "w": "alohida",
+        "s": 101.81,
+        "e": 102.19
+      },
+      {
+        "w": "topik",
+        "s": 102.27,
+        "e": 102.55
+      },
+      {
+        "w": "branchlardan",
+        "s": 102.57,
+        "e": 103.03
+      },
+      {
+        "w": "foydalanish",
+        "s": 103.09,
+        "e": 103.65
+      },
+      {
+        "w": "eng",
+        "s": 103.89,
+        "e": 104.03
+      },
+      {
+        "w": "yaxshi",
+        "s": 104.09,
+        "e": 104.33
+      },
+      {
+        "w": "amaliyotdir.",
+        "s": 104.35,
+        "e": 104.81
+      }
+    ]
+  },
+  {
+    "id": "l12",
+    "scene": "xulosa",
+    "text": "Keyingi o‘ttiz to‘rtinchi bobda masalaga maintainer nuqtai nazaridan yondashib, loyihani yuritish, patchlarni qabul qilish va relizlar chiqarishni ko‘rib chiqamiz.",
+    "show": "Keyingi o‘ttiz to‘rtinchi bobda masalaga maintainer nuqtai nazaridan yondashib, loyihani yuritish, patchlarni qabul qilish va relizlar chiqarishni ko‘rib chiqamiz.",
+    "say": "Keyingi o‘ttiz to‘rtinchi bobda masalaga meynteyner nuqtai nazaridan yondashib, loyihani yuritish, patchlarni qabul qilish va relizlar chiqarishni ko‘rib chiqamiz.",
+    "a0": 105.69,
+    "a1": 113.76,
+    "words": [
+      {
+        "w": "Keyingi",
+        "s": 105.69,
+        "e": 106.03
+      },
+      {
+        "w": "o‘ttiz",
+        "s": 106.17,
+        "e": 106.43
+      },
+      {
+        "w": "to‘rtinchi",
+        "s": 106.47,
+        "e": 106.85
+      },
+      {
+        "w": "bobda",
+        "s": 106.87,
+        "e": 107.09
+      },
+      {
+        "w": "masalaga",
+        "s": 107.17,
+        "e": 107.55
+      },
+      {
+        "w": "meynteyner",
+        "s": 107.85,
+        "e": 108.44
+      },
+      {
+        "w": "nuqtai",
+        "s": 108.48,
+        "e": 108.74
+      },
+      {
+        "w": "nazaridan",
+        "s": 108.78,
+        "e": 109.12
+      },
+      {
+        "w": "yondashib,",
+        "s": 109.16,
+        "e": 109.54
+      },
+      {
+        "w": "loyihani",
+        "s": 109.86,
+        "e": 110.3
+      },
+      {
+        "w": "yuritish,",
+        "s": 110.34,
+        "e": 110.74
+      },
+      {
+        "w": "patchlarni",
+        "s": 111.02,
+        "e": 111.46
+      },
+      {
+        "w": "qabul",
+        "s": 111.5,
+        "e": 111.74
+      },
+      {
+        "w": "qilish",
+        "s": 111.78,
+        "e": 112.0
+      },
+      {
+        "w": "va",
+        "s": 112.04,
+        "e": 112.1
+      },
+      {
+        "w": "relizlar",
+        "s": 112.42,
+        "e": 112.86
+      },
+      {
+        "w": "chiqarishni",
+        "s": 112.88,
+        "e": 113.26
+      },
+      {
+        "w": "ko‘rib",
+        "s": 113.3,
+        "e": 113.48
+      },
+      {
+        "w": "chiqamiz.",
+        "s": 113.5,
+        "e": 113.76
+      }
+    ]
+  }
+]
