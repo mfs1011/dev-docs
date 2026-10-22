@@ -1,0 +1,1189 @@
+[
+  {
+    "id": "l1",
+    "scene": "intro",
+    "text": "Salom! Ushbu o‘ttiz beshinchi bobda GitHub platformasida fork qilish va pull request ochish orqali jamoaviy ishlashni o‘rganamiz.",
+    "show": "Salom! Ushbu o‘ttiz beshinchi bobda GitHub platformasida fork qilish va pull request ochish orqali jamoaviy ishlashni o‘rganamiz.",
+    "say": "Salom! Ushbu o‘ttiz beshinchi bobda git hab platformasida fork qilish va pul rekvest ochish orqali jamoaviy ishlashni o‘rganamiz.",
+    "a0": 0.24,
+    "a1": 8.71,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.24,
+        "e": 0.5
+      },
+      {
+        "w": "Ushbu",
+        "s": 1.16,
+        "e": 1.42
+      },
+      {
+        "w": "o‘ttiz",
+        "s": 1.64,
+        "e": 1.9
+      },
+      {
+        "w": "beshinchi",
+        "s": 1.96,
+        "e": 2.42
+      },
+      {
+        "w": "bobda",
+        "s": 2.48,
+        "e": 2.84
+      },
+      {
+        "w": "git",
+        "s": 3.32,
+        "e": 3.46
+      },
+      {
+        "w": "hab",
+        "s": 3.52,
+        "e": 3.7
+      },
+      {
+        "w": "platformasida",
+        "s": 3.74,
+        "e": 4.54
+      },
+      {
+        "w": "fork",
+        "s": 4.68,
+        "e": 4.94
+      },
+      {
+        "w": "qilish",
+        "s": 5.02,
+        "e": 5.36
+      },
+      {
+        "w": "va",
+        "s": 5.48,
+        "e": 5.56
+      },
+      {
+        "w": "pul",
+        "s": 5.94,
+        "e": 6.12
+      },
+      {
+        "w": "rekvest",
+        "s": 6.2,
+        "e": 6.58
+      },
+      {
+        "w": "ochish",
+        "s": 6.66,
+        "e": 6.88
+      },
+      {
+        "w": "orqali",
+        "s": 6.92,
+        "e": 7.24
+      },
+      {
+        "w": "jamoaviy",
+        "s": 7.32,
+        "e": 7.77
+      },
+      {
+        "w": "ishlashni",
+        "s": 7.81,
+        "e": 8.23
+      },
+      {
+        "w": "o‘rganamiz.",
+        "s": 8.27,
+        "e": 8.71
+      }
+    ]
+  },
+  {
+    "id": "l2",
+    "scene": "intro",
+    "text": "Fork — bu asl repozitoriyning sizga tegishli nusxasi bo‘lib, siz o‘zgartirishlarni unga xavfsiz push qilasiz, asl loyiha esa upstream deb ataladi.",
+    "show": "Fork — bu asl repozitoriyning sizga tegishli nusxasi bo‘lib, siz o‘zgartirishlarni unga xavfsiz push qilasiz, asl loyiha esa upstream deb ataladi.",
+    "say": "Fork — bu asl repozitoriyning sizga tegishli nusxasi bo‘lib, siz o‘zgartirishlarni unga xavfsiz push qilasiz, asl loyiha esa apstrim deb ataladi.",
+    "a0": 9.33,
+    "a1": 18.21,
+    "words": [
+      {
+        "w": "Fork",
+        "s": 9.33,
+        "e": 9.61
+      },
+      {
+        "w": "—",
+        "s": 9.61,
+        "e": 9.61
+      },
+      {
+        "w": "bu",
+        "s": 9.97,
+        "e": 10.05
+      },
+      {
+        "w": "asl",
+        "s": 10.33,
+        "e": 10.57
+      },
+      {
+        "w": "repozitoriyning",
+        "s": 10.65,
+        "e": 11.45
+      },
+      {
+        "w": "sizga",
+        "s": 11.53,
+        "e": 11.79
+      },
+      {
+        "w": "tegishli",
+        "s": 11.85,
+        "e": 12.23
+      },
+      {
+        "w": "nusxasi",
+        "s": 12.31,
+        "e": 12.73
+      },
+      {
+        "w": "bo‘lib,",
+        "s": 12.77,
+        "e": 12.99
+      },
+      {
+        "w": "siz",
+        "s": 13.29,
+        "e": 13.43
+      },
+      {
+        "w": "o‘zgartirishlarni",
+        "s": 13.55,
+        "e": 14.33
+      },
+      {
+        "w": "unga",
+        "s": 14.39,
+        "e": 14.55
+      },
+      {
+        "w": "xavfsiz",
+        "s": 14.63,
+        "e": 15.01
+      },
+      {
+        "w": "push",
+        "s": 15.07,
+        "e": 15.27
+      },
+      {
+        "w": "qilasiz,",
+        "s": 15.31,
+        "e": 15.69
+      },
+      {
+        "w": "asl",
+        "s": 15.99,
+        "e": 16.21
+      },
+      {
+        "w": "loyiha",
+        "s": 16.27,
+        "e": 16.59
+      },
+      {
+        "w": "esa",
+        "s": 16.65,
+        "e": 16.83
+      },
+      {
+        "w": "apstrim",
+        "s": 17.17,
+        "e": 17.63
+      },
+      {
+        "w": "deb",
+        "s": 17.67,
+        "e": 17.79
+      },
+      {
+        "w": "ataladi.",
+        "s": 17.83,
+        "e": 18.21
+      }
+    ]
+  },
+  {
+    "id": "l3",
+    "scene": "topic_va_pr",
+    "text": "Hissa qo‘shishda hech qachon asosiy tarmoqdan emas, alohida topic branch ochib o‘zgarishlar kiritiladi va forkingizga yuboriladi.",
+    "show": "Hissa qo‘shishda hech qachon asosiy tarmoqdan emas, alohida topic branch ochib o‘zgarishlar kiritiladi va forkingizga yuboriladi.",
+    "say": "Hissa qo‘shishda hech qachon asosiy tarmoqdan emas, alohida topik brench ochib o‘zgarishlar kiritiladi va forkingizga yuboriladi.",
+    "a0": 19.21,
+    "a1": 26.58,
+    "words": [
+      {
+        "w": "Hissa",
+        "s": 19.21,
+        "e": 19.39
+      },
+      {
+        "w": "qo‘shishda",
+        "s": 19.43,
+        "e": 19.87
+      },
+      {
+        "w": "hech",
+        "s": 20.17,
+        "e": 20.35
+      },
+      {
+        "w": "qachon",
+        "s": 20.39,
+        "e": 20.67
+      },
+      {
+        "w": "asosiy",
+        "s": 20.75,
+        "e": 21.11
+      },
+      {
+        "w": "tarmoqdan",
+        "s": 21.17,
+        "e": 21.65
+      },
+      {
+        "w": "emas,",
+        "s": 21.69,
+        "e": 21.91
+      },
+      {
+        "w": "alohida",
+        "s": 22.25,
+        "e": 22.68
+      },
+      {
+        "w": "topik",
+        "s": 22.78,
+        "e": 23.1
+      },
+      {
+        "w": "brench",
+        "s": 23.16,
+        "e": 23.46
+      },
+      {
+        "w": "ochib",
+        "s": 23.5,
+        "e": 23.72
+      },
+      {
+        "w": "o‘zgarishlar",
+        "s": 23.82,
+        "e": 24.32
+      },
+      {
+        "w": "kiritiladi",
+        "s": 24.36,
+        "e": 24.88
+      },
+      {
+        "w": "va",
+        "s": 25.24,
+        "e": 25.3
+      },
+      {
+        "w": "forkingizga",
+        "s": 25.4,
+        "e": 26.02
+      },
+      {
+        "w": "yuboriladi.",
+        "s": 26.06,
+        "e": 26.58
+      }
+    ]
+  },
+  {
+    "id": "l4",
+    "scene": "topic_va_pr",
+    "text": "GitHub veb-interfeysi yoki CLI orqali pull request yaratilib, o‘zgarish maqsadi va bog‘liq masalalar raqami aniq bayon etiladi.",
+    "show": "GitHub veb-interfeysi yoki CLI orqali pull request yaratilib, o‘zgarish maqsadi va bog‘liq masalalar raqami aniq bayon etiladi.",
+    "say": "Git hab veb-interfeysi yoki si-el-ay orqali pul rekvest yaratilib, o‘zgarish maqsadi va bog‘liq masalalar raqami aniq bayon etiladi.",
+    "a0": 27.62,
+    "a1": 35.14,
+    "words": [
+      {
+        "w": "Git",
+        "s": 27.62,
+        "e": 27.74
+      },
+      {
+        "w": "hab",
+        "s": 27.8,
+        "e": 27.98
+      },
+      {
+        "w": "veb-interfeysi",
+        "s": 28.1,
+        "e": 28.9
+      },
+      {
+        "w": "yoki",
+        "s": 29.0,
+        "e": 29.26
+      },
+      {
+        "w": "si-el-ay",
+        "s": 29.36,
+        "e": 29.76
+      },
+      {
+        "w": "orqali",
+        "s": 29.84,
+        "e": 30.14
+      },
+      {
+        "w": "pul",
+        "s": 30.44,
+        "e": 30.58
+      },
+      {
+        "w": "rekvest",
+        "s": 30.66,
+        "e": 31.0
+      },
+      {
+        "w": "yaratilib,",
+        "s": 31.06,
+        "e": 31.46
+      },
+      {
+        "w": "o‘zgarish",
+        "s": 31.78,
+        "e": 32.16
+      },
+      {
+        "w": "maqsadi",
+        "s": 32.22,
+        "e": 32.64
+      },
+      {
+        "w": "va",
+        "s": 32.7,
+        "e": 32.78
+      },
+      {
+        "w": "bog‘liq",
+        "s": 32.88,
+        "e": 33.18
+      },
+      {
+        "w": "masalalar",
+        "s": 33.26,
+        "e": 33.76
+      },
+      {
+        "w": "raqami",
+        "s": 33.82,
+        "e": 34.14
+      },
+      {
+        "w": "aniq",
+        "s": 34.24,
+        "e": 34.42
+      },
+      {
+        "w": "bayon",
+        "s": 34.48,
+        "e": 34.76
+      },
+      {
+        "w": "etiladi.",
+        "s": 34.8,
+        "e": 35.14
+      }
+    ]
+  },
+  {
+    "id": "l5",
+    "scene": "review_va_iteratsiya",
+    "text": "Pull request — bu faqat kod emas, balki jonli suhbat bo‘lib, sharhlovchilar taklif bildirsa yangi commit qilib o‘sha tarmoqqa push qilinadi.",
+    "show": "Pull request — bu faqat kod emas, balki jonli suhbat bo‘lib, sharhlovchilar taklif bildirsa yangi commit qilib o‘sha tarmoqqa push qilinadi.",
+    "say": "Pul rekvest — bu faqat kod emas, balki jonli suhbat bo‘lib, sharhlovchilar taklif bildirsa yangi kommit qilib o‘sha tarmoqqa push qilinadi.",
+    "a0": 36.22,
+    "a1": 43.51,
+    "words": [
+      {
+        "w": "Pul",
+        "s": 36.22,
+        "e": 36.36
+      },
+      {
+        "w": "rekvest",
+        "s": 36.42,
+        "e": 36.8
+      },
+      {
+        "w": "—",
+        "s": 36.8,
+        "e": 36.8
+      },
+      {
+        "w": "bu",
+        "s": 37.06,
+        "e": 37.12
+      },
+      {
+        "w": "faqat",
+        "s": 37.2,
+        "e": 37.48
+      },
+      {
+        "w": "kod",
+        "s": 37.57,
+        "e": 37.75
+      },
+      {
+        "w": "emas,",
+        "s": 37.81,
+        "e": 38.05
+      },
+      {
+        "w": "balki",
+        "s": 38.33,
+        "e": 38.59
+      },
+      {
+        "w": "jonli",
+        "s": 38.67,
+        "e": 38.93
+      },
+      {
+        "w": "suhbat",
+        "s": 39.01,
+        "e": 39.33
+      },
+      {
+        "w": "bo‘lib,",
+        "s": 39.37,
+        "e": 39.59
+      },
+      {
+        "w": "sharhlovchilar",
+        "s": 39.85,
+        "e": 40.45
+      },
+      {
+        "w": "taklif",
+        "s": 40.49,
+        "e": 40.79
+      },
+      {
+        "w": "bildirsa",
+        "s": 40.85,
+        "e": 41.23
+      },
+      {
+        "w": "yangi",
+        "s": 41.31,
+        "e": 41.59
+      },
+      {
+        "w": "kommit",
+        "s": 41.65,
+        "e": 41.93
+      },
+      {
+        "w": "qilib",
+        "s": 41.97,
+        "e": 42.17
+      },
+      {
+        "w": "o‘sha",
+        "s": 42.25,
+        "e": 42.41
+      },
+      {
+        "w": "tarmoqqa",
+        "s": 42.45,
+        "e": 42.85
+      },
+      {
+        "w": "push",
+        "s": 42.91,
+        "e": 43.09
+      },
+      {
+        "w": "qilinadi.",
+        "s": 43.13,
+        "e": 43.51
+      }
+    ]
+  },
+  {
+    "id": "l6",
+    "scene": "review_va_iteratsiya",
+    "text": "Tizim uch nuqtali git diff sintaksisi orqali umumiy ajdoddan keyingi haqiqiy farqni ko‘rsatib, muhokamani yanada qulaylashtiradi.",
+    "show": "Tizim uch nuqtali git diff sintaksisi orqali umumiy ajdoddan keyingi haqiqiy farqni ko‘rsatib, muhokamani yanada qulaylashtiradi.",
+    "say": "Tizim uch nuqtali git diff sintaksisi orqali umumiy ajdoddan keyingi haqiqiy farqni ko‘rsatib, muhokamani yanada qulaylashtiradi.",
+    "a0": 44.57,
+    "a1": 51.97,
+    "words": [
+      {
+        "w": "Tizim",
+        "s": 44.57,
+        "e": 44.85
+      },
+      {
+        "w": "uch",
+        "s": 45.19,
+        "e": 45.31
+      },
+      {
+        "w": "nuqtali",
+        "s": 45.37,
+        "e": 45.73
+      },
+      {
+        "w": "git",
+        "s": 45.85,
+        "e": 46.01
+      },
+      {
+        "w": "diff",
+        "s": 46.09,
+        "e": 46.23
+      },
+      {
+        "w": "sintaksisi",
+        "s": 46.29,
+        "e": 46.83
+      },
+      {
+        "w": "orqali",
+        "s": 46.91,
+        "e": 47.21
+      },
+      {
+        "w": "umumiy",
+        "s": 47.57,
+        "e": 47.89
+      },
+      {
+        "w": "ajdoddan",
+        "s": 48.01,
+        "e": 48.53
+      },
+      {
+        "w": "keyingi",
+        "s": 48.57,
+        "e": 48.89
+      },
+      {
+        "w": "haqiqiy",
+        "s": 48.95,
+        "e": 49.33
+      },
+      {
+        "w": "farqni",
+        "s": 49.39,
+        "e": 49.69
+      },
+      {
+        "w": "ko‘rsatib,",
+        "s": 49.73,
+        "e": 50.15
+      },
+      {
+        "w": "muhokamani",
+        "s": 50.39,
+        "e": 50.93
+      },
+      {
+        "w": "yanada",
+        "s": 50.99,
+        "e": 51.25
+      },
+      {
+        "w": "qulaylashtiradi.",
+        "s": 51.29,
+        "e": 51.97
+      }
+    ]
+  },
+  {
+    "id": "l7",
+    "scene": "upstream_va_konflikt",
+    "text": "Siz ishlayotgan paytda asl loyiha oldinga ketishi mumkin, shuning uchun upstream tarmoqlarini vaqti-vaqti bilan fetch qilib turish zarur.",
+    "show": "Siz ishlayotgan paytda asl loyiha oldinga ketishi mumkin, shuning uchun upstream tarmoqlarini vaqti-vaqti bilan fetch qilib turish zarur.",
+    "say": "Siz ishlayotgan paytda asl loyiha oldinga ketishi mumkin, shuning uchun apstrim tarmoqlarini vaqti-vaqti bilan fetch qilib turish zarur.",
+    "a0": 52.98,
+    "a1": 59.64,
+    "words": [
+      {
+        "w": "Siz",
+        "s": 52.98,
+        "e": 53.12
+      },
+      {
+        "w": "ishlayotgan",
+        "s": 53.16,
+        "e": 53.62
+      },
+      {
+        "w": "paytda",
+        "s": 53.66,
+        "e": 53.98
+      },
+      {
+        "w": "asl",
+        "s": 54.32,
+        "e": 54.54
+      },
+      {
+        "w": "loyiha",
+        "s": 54.58,
+        "e": 54.9
+      },
+      {
+        "w": "oldinga",
+        "s": 54.98,
+        "e": 55.26
+      },
+      {
+        "w": "ketishi",
+        "s": 55.3,
+        "e": 55.6
+      },
+      {
+        "w": "mumkin,",
+        "s": 55.62,
+        "e": 55.9
+      },
+      {
+        "w": "shuning",
+        "s": 56.14,
+        "e": 56.36
+      },
+      {
+        "w": "uchun",
+        "s": 56.38,
+        "e": 56.56
+      },
+      {
+        "w": "apstrim",
+        "s": 56.84,
+        "e": 57.22
+      },
+      {
+        "w": "tarmoqlarini",
+        "s": 57.26,
+        "e": 57.82
+      },
+      {
+        "w": "vaqti-vaqti",
+        "s": 57.88,
+        "e": 58.4
+      },
+      {
+        "w": "bilan",
+        "s": 58.42,
+        "e": 58.6
+      },
+      {
+        "w": "fetch",
+        "s": 58.68,
+        "e": 58.86
+      },
+      {
+        "w": "qilib",
+        "s": 58.9,
+        "e": 59.08
+      },
+      {
+        "w": "turish",
+        "s": 59.12,
+        "e": 59.32
+      },
+      {
+        "w": "zarur.",
+        "s": 59.38,
+        "e": 59.64
+      }
+    ]
+  },
+  {
+    "id": "l8",
+    "scene": "upstream_va_konflikt",
+    "text": "Agar ziddiyat yuzaga kelsa, upstream o‘zgarishlarini topic branchga birlashtirib, konfliktlarni lokal yechgach qayta push qilamiz.",
+    "show": "Agar ziddiyat yuzaga kelsa, upstream o‘zgarishlarini topic branchga birlashtirib, konfliktlarni lokal yechgach qayta push qilamiz.",
+    "say": "Agar ziddiyat yuzaga kelsa, apstrim o‘zgarishlarini topik brenchga birlashtirib, konfliktlarni lokal yechgach qayta push qilamiz.",
+    "a0": 60.64,
+    "a1": 67.46,
+    "words": [
+      {
+        "w": "Agar",
+        "s": 60.64,
+        "e": 60.88
+      },
+      {
+        "w": "ziddiyat",
+        "s": 61.16,
+        "e": 61.58
+      },
+      {
+        "w": "yuzaga",
+        "s": 61.62,
+        "e": 61.9
+      },
+      {
+        "w": "kelsa,",
+        "s": 61.94,
+        "e": 62.24
+      },
+      {
+        "w": "apstrim",
+        "s": 62.56,
+        "e": 62.94
+      },
+      {
+        "w": "o‘zgarishlarini",
+        "s": 63.02,
+        "e": 63.68
+      },
+      {
+        "w": "topik",
+        "s": 63.76,
+        "e": 64.06
+      },
+      {
+        "w": "brenchga",
+        "s": 64.1,
+        "e": 64.44
+      },
+      {
+        "w": "birlashtirib,",
+        "s": 64.48,
+        "e": 64.98
+      },
+      {
+        "w": "konfliktlarni",
+        "s": 65.2,
+        "e": 65.82
+      },
+      {
+        "w": "lokal",
+        "s": 65.9,
+        "e": 66.18
+      },
+      {
+        "w": "yechgach",
+        "s": 66.22,
+        "e": 66.56
+      },
+      {
+        "w": "qayta",
+        "s": 66.62,
+        "e": 66.88
+      },
+      {
+        "w": "push",
+        "s": 66.92,
+        "e": 67.1
+      },
+      {
+        "w": "qilamiz.",
+        "s": 67.12,
+        "e": 67.46
+      }
+    ]
+  },
+  {
+    "id": "l9",
+    "scene": "maintainer_va_merge",
+    "text": "Maintainerlar pull requestni maxsus yashirin ref orqali lokal tortib olib sinaydi va loyiha siyosatiga ko‘ra birlashtiradi.",
+    "show": "Maintainerlar pull requestni maxsus yashirin ref orqali lokal tortib olib sinaydi va loyiha siyosatiga ko‘ra birlashtiradi.",
+    "say": "Meynteynerlar pul rekvestni maxsus yashirin ref orqali lokal tortib olib sinaydi va loyiha siyosatiga ko‘ra birlashtiradi.",
+    "a0": 68.55,
+    "a1": 75.11,
+    "words": [
+      {
+        "w": "Meynteynerlar",
+        "s": 68.55,
+        "e": 69.27
+      },
+      {
+        "w": "pul",
+        "s": 69.53,
+        "e": 69.67
+      },
+      {
+        "w": "rekvestni",
+        "s": 69.73,
+        "e": 70.15
+      },
+      {
+        "w": "maxsus",
+        "s": 70.21,
+        "e": 70.53
+      },
+      {
+        "w": "yashirin",
+        "s": 70.59,
+        "e": 70.95
+      },
+      {
+        "w": "ref",
+        "s": 71.03,
+        "e": 71.19
+      },
+      {
+        "w": "orqali",
+        "s": 71.27,
+        "e": 71.57
+      },
+      {
+        "w": "lokal",
+        "s": 71.69,
+        "e": 71.93
+      },
+      {
+        "w": "tortib",
+        "s": 71.97,
+        "e": 72.27
+      },
+      {
+        "w": "olib",
+        "s": 72.31,
+        "e": 72.47
+      },
+      {
+        "w": "sinaydi",
+        "s": 72.53,
+        "e": 72.89
+      },
+      {
+        "w": "va",
+        "s": 73.21,
+        "e": 73.27
+      },
+      {
+        "w": "loyiha",
+        "s": 73.35,
+        "e": 73.67
+      },
+      {
+        "w": "siyosatiga",
+        "s": 73.73,
+        "e": 74.27
+      },
+      {
+        "w": "ko‘ra",
+        "s": 74.33,
+        "e": 74.49
+      },
+      {
+        "w": "birlashtiradi.",
+        "s": 74.53,
+        "e": 75.11
+      }
+    ]
+  },
+  {
+    "id": "l10",
+    "scene": "maintainer_va_merge",
+    "text": "Bunda to‘liq tarixni saqlovchi merge commit, bitta qilib ixchamlovchi squash yoki chiziqli rebase merge usullari qo‘llanadi.",
+    "show": "Bunda to‘liq tarixni saqlovchi merge commit, bitta qilib ixchamlovchi squash yoki chiziqli rebase merge usullari qo‘llanadi.",
+    "say": "Bunda to‘liq tarixni saqlovchi merge kommit, bitta qilib ixchamlovchi skvosh yoki chiziqli ribeyse merge usullari qo‘llanadi.",
+    "a0": 76.05,
+    "a1": 82.78,
+    "words": [
+      {
+        "w": "Bunda",
+        "s": 76.05,
+        "e": 76.27
+      },
+      {
+        "w": "to‘liq",
+        "s": 76.57,
+        "e": 76.81
+      },
+      {
+        "w": "tarixni",
+        "s": 76.87,
+        "e": 77.19
+      },
+      {
+        "w": "saqlovchi",
+        "s": 77.23,
+        "e": 77.65
+      },
+      {
+        "w": "merge",
+        "s": 77.75,
+        "e": 77.99
+      },
+      {
+        "w": "kommit,",
+        "s": 78.05,
+        "e": 78.35
+      },
+      {
+        "w": "bitta",
+        "s": 78.65,
+        "e": 78.91
+      },
+      {
+        "w": "qilib",
+        "s": 78.95,
+        "e": 79.13
+      },
+      {
+        "w": "ixchamlovchi",
+        "s": 79.17,
+        "e": 79.69
+      },
+      {
+        "w": "skvosh",
+        "s": 79.77,
+        "e": 80.15
+      },
+      {
+        "w": "yoki",
+        "s": 80.41,
+        "e": 80.59
+      },
+      {
+        "w": "chiziqli",
+        "s": 80.65,
+        "e": 81.05
+      },
+      {
+        "w": "ribeyse",
+        "s": 81.15,
+        "e": 81.55
+      },
+      {
+        "w": "merge",
+        "s": 81.61,
+        "e": 81.85
+      },
+      {
+        "w": "usullari",
+        "s": 81.89,
+        "e": 82.27
+      },
+      {
+        "w": "qo‘llanadi.",
+        "s": 82.31,
+        "e": 82.78
+      }
+    ]
+  },
+  {
+    "id": "l11",
+    "scene": "sinxronizatsiya_va_xulosa",
+    "text": "O‘zgarish qabul qilingach, forkingizning main tarmog‘i upstream bilan tezkor yangilanadi va ortiqcha topic branch o‘chiriladi.",
+    "show": "O‘zgarish qabul qilingach, forkingizning main tarmog‘i upstream bilan tezkor yangilanadi va ortiqcha topic branch o‘chiriladi.",
+    "say": "O‘zgarish qabul qilingach, forkingizning main tarmog‘i apstrim bilan tezkor yangilanadi va ortiqcha topik brench o‘chiriladi.",
+    "a0": 83.82,
+    "a1": 90.0,
+    "words": [
+      {
+        "w": "O‘zgarish",
+        "s": 83.82,
+        "e": 84.18
+      },
+      {
+        "w": "qabul",
+        "s": 84.22,
+        "e": 84.46
+      },
+      {
+        "w": "qilingach,",
+        "s": 84.48,
+        "e": 84.88
+      },
+      {
+        "w": "forkingizning",
+        "s": 85.14,
+        "e": 85.76
+      },
+      {
+        "w": "main",
+        "s": 85.82,
+        "e": 86.02
+      },
+      {
+        "w": "tarmog‘i",
+        "s": 86.08,
+        "e": 86.48
+      },
+      {
+        "w": "apstrim",
+        "s": 86.62,
+        "e": 87.0
+      },
+      {
+        "w": "bilan",
+        "s": 87.02,
+        "e": 87.2
+      },
+      {
+        "w": "tezkor",
+        "s": 87.28,
+        "e": 87.66
+      },
+      {
+        "w": "yangilanadi",
+        "s": 87.7,
+        "e": 88.24
+      },
+      {
+        "w": "va",
+        "s": 88.52,
+        "e": 88.56
+      },
+      {
+        "w": "ortiqcha",
+        "s": 88.66,
+        "e": 88.98
+      },
+      {
+        "w": "topik",
+        "s": 89.04,
+        "e": 89.32
+      },
+      {
+        "w": "brench",
+        "s": 89.36,
+        "e": 89.6
+      },
+      {
+        "w": "o‘chiriladi.",
+        "s": 89.66,
+        "e": 90.0
+      }
+    ]
+  },
+  {
+    "id": "l12",
+    "scene": "sinxronizatsiya_va_xulosa",
+    "text": "Xulosa qilganda, har bir mavzu uchun alohida tarmoq ochish, aniq tavsif yozish va forkingizni muntazam yangilab turish GitHub oqimining poydevoridir.",
+    "show": "Xulosa qilganda, har bir mavzu uchun alohida tarmoq ochish, aniq tavsif yozish va forkingizni muntazam yangilab turish GitHub oqimining poydevoridir.",
+    "say": "Xulosa qilganda, har bir mavzu uchun alohida tarmoq ochish, aniq tavsif yozish va forkingizni muntazam yangilab turish git hab oqimining poydevoridir.",
+    "a0": 91.04,
+    "a1": 99.42,
+    "words": [
+      {
+        "w": "Xulosa",
+        "s": 91.04,
+        "e": 91.38
+      },
+      {
+        "w": "qilganda,",
+        "s": 91.42,
+        "e": 91.8
+      },
+      {
+        "w": "har",
+        "s": 92.14,
+        "e": 92.3
+      },
+      {
+        "w": "bir",
+        "s": 92.36,
+        "e": 92.47
+      },
+      {
+        "w": "mavzu",
+        "s": 92.53,
+        "e": 92.77
+      },
+      {
+        "w": "uchun",
+        "s": 92.83,
+        "e": 93.01
+      },
+      {
+        "w": "alohida",
+        "s": 93.11,
+        "e": 93.47
+      },
+      {
+        "w": "tarmoq",
+        "s": 93.53,
+        "e": 93.85
+      },
+      {
+        "w": "ochish,",
+        "s": 93.93,
+        "e": 94.21
+      },
+      {
+        "w": "aniq",
+        "s": 94.51,
+        "e": 94.69
+      },
+      {
+        "w": "tavsif",
+        "s": 94.79,
+        "e": 95.17
+      },
+      {
+        "w": "yozish",
+        "s": 95.23,
+        "e": 95.55
+      },
+      {
+        "w": "va",
+        "s": 95.79,
+        "e": 95.85
+      },
+      {
+        "w": "forkingizni",
+        "s": 95.93,
+        "e": 96.51
+      },
+      {
+        "w": "muntazam",
+        "s": 96.59,
+        "e": 97.03
+      },
+      {
+        "w": "yangilab",
+        "s": 97.09,
+        "e": 97.48
+      },
+      {
+        "w": "turish",
+        "s": 97.5,
+        "e": 97.72
+      },
+      {
+        "w": "git",
+        "s": 97.96,
+        "e": 98.1
+      },
+      {
+        "w": "hab",
+        "s": 98.14,
+        "e": 98.3
+      },
+      {
+        "w": "oqimining",
+        "s": 98.38,
+        "e": 98.74
+      },
+      {
+        "w": "poydevoridir.",
+        "s": 98.78,
+        "e": 99.42
+      }
+    ]
+  }
+]
