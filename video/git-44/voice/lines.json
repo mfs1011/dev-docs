@@ -1,0 +1,1004 @@
+[
+  {
+    "id": "l1",
+    "scene": "imzolash_intro",
+    "text": "Git commitidagi muallif satri oddiy matn bo'lib, har kim o'zini boshqa shaxs sifatida ko'rsatishi mumkin.",
+    "show": "Git commitidagi muallif satri oddiy matn bo'lib, har kim o'zini boshqa shaxs sifatida ko'rsatishi mumkin.",
+    "say": "Git kommitidagi muallif satri oddiy matn bo'lib, har kim o'zini boshqa shaxs sifatida ko'rsatishi mumkin.",
+    "a0": 0.28,
+    "a1": 6.28,
+    "words": [
+      {
+        "w": "Git",
+        "s": 0.28,
+        "e": 0.44
+      },
+      {
+        "w": "kommitidagi",
+        "s": 0.5,
+        "e": 1.08
+      },
+      {
+        "w": "muallif",
+        "s": 1.16,
+        "e": 1.54
+      },
+      {
+        "w": "satri",
+        "s": 1.6,
+        "e": 1.9
+      },
+      {
+        "w": "oddiy",
+        "s": 2.1,
+        "e": 2.4
+      },
+      {
+        "w": "matn",
+        "s": 2.48,
+        "e": 2.76
+      },
+      {
+        "w": "bo'lib,",
+        "s": 2.8,
+        "e": 3.06
+      },
+      {
+        "w": "har",
+        "s": 3.32,
+        "e": 3.54
+      },
+      {
+        "w": "kim",
+        "s": 3.6,
+        "e": 3.78
+      },
+      {
+        "w": "o'zini",
+        "s": 3.92,
+        "e": 4.2
+      },
+      {
+        "w": "boshqa",
+        "s": 4.36,
+        "e": 4.7
+      },
+      {
+        "w": "shaxs",
+        "s": 4.78,
+        "e": 5.02
+      },
+      {
+        "w": "sifatida",
+        "s": 5.06,
+        "e": 5.44
+      },
+      {
+        "w": "ko'rsatishi",
+        "s": 5.5,
+        "e": 5.96
+      },
+      {
+        "w": "mumkin.",
+        "s": 6.0,
+        "e": 6.28
+      }
+    ]
+  },
+  {
+    "id": "l2",
+    "scene": "imzolash_intro",
+    "text": "Kriptografik raqamli imzo esa commit yoki tegning haqiqatan ishonchli shaxs tomonidan yaratilganini qat'iy kafolatlaydi.",
+    "show": "Kriptografik raqamli imzo esa commit yoki tegning haqiqatan ishonchli shaxs tomonidan yaratilganini qat'iy kafolatlaydi.",
+    "say": "Kriptografik raqamli imzo esa kommit yoki tegning haqiqatan ishonchli shaxs tomonidan yaratilganini qat'iy kafolatlaydi.",
+    "a0": 7.3,
+    "a1": 15.01,
+    "words": [
+      {
+        "w": "Kriptografik",
+        "s": 7.3,
+        "e": 8.01
+      },
+      {
+        "w": "raqamli",
+        "s": 8.07,
+        "e": 8.45
+      },
+      {
+        "w": "imzo",
+        "s": 8.59,
+        "e": 8.85
+      },
+      {
+        "w": "esa",
+        "s": 8.97,
+        "e": 9.17
+      },
+      {
+        "w": "kommit",
+        "s": 9.51,
+        "e": 9.85
+      },
+      {
+        "w": "yoki",
+        "s": 9.85,
+        "e": 10.17
+      },
+      {
+        "w": "tegning",
+        "s": 10.27,
+        "e": 10.69
+      },
+      {
+        "w": "haqiqatan",
+        "s": 10.79,
+        "e": 11.51
+      },
+      {
+        "w": "ishonchli",
+        "s": 11.73,
+        "e": 12.19
+      },
+      {
+        "w": "shaxs",
+        "s": 12.31,
+        "e": 12.55
+      },
+      {
+        "w": "tomonidan",
+        "s": 12.59,
+        "e": 13.03
+      },
+      {
+        "w": "yaratilganini",
+        "s": 13.09,
+        "e": 13.71
+      },
+      {
+        "w": "qat'iy",
+        "s": 13.87,
+        "e": 14.25
+      },
+      {
+        "w": "kafolatlaydi.",
+        "s": 14.35,
+        "e": 15.01
+      }
+    ]
+  },
+  {
+    "id": "l3",
+    "scene": "ssh_signing",
+    "text": "Git yigirma uch nuqta to'rtdan boshlab keng tarqalgan standart SSH kalitlari orqali imzolashni to'liq qo'llab-quvvatlaydi.",
+    "show": "Git yigirma uch nuqta to'rtdan boshlab keng tarqalgan standart SSH kalitlari orqali imzolashni to'liq qo'llab-quvvatlaydi.",
+    "say": "Git yigirma uch nuqta to'rtdan boshlab keng tarqalgan standart es-es-eych kalitlari orqali imzolashni to'liq qo'llab-quvvatlaydi.",
+    "a0": 16.89,
+    "a1": 23.58,
+    "words": [
+      {
+        "w": "Git",
+        "s": 16.89,
+        "e": 17.13
+      },
+      {
+        "w": "yigirma",
+        "s": 17.29,
+        "e": 17.57
+      },
+      {
+        "w": "uch",
+        "s": 17.59,
+        "e": 17.73
+      },
+      {
+        "w": "nuqta",
+        "s": 17.75,
+        "e": 17.95
+      },
+      {
+        "w": "to'rtdan",
+        "s": 17.95,
+        "e": 18.45
+      },
+      {
+        "w": "boshlab",
+        "s": 18.51,
+        "e": 18.87
+      },
+      {
+        "w": "keng",
+        "s": 18.99,
+        "e": 19.19
+      },
+      {
+        "w": "tarqalgan",
+        "s": 19.23,
+        "e": 19.67
+      },
+      {
+        "w": "standart",
+        "s": 19.73,
+        "e": 20.21
+      },
+      {
+        "w": "es-es-eych",
+        "s": 20.33,
+        "e": 20.81
+      },
+      {
+        "w": "kalitlari",
+        "s": 20.85,
+        "e": 21.25
+      },
+      {
+        "w": "orqali",
+        "s": 21.29,
+        "e": 21.57
+      },
+      {
+        "w": "imzolashni",
+        "s": 21.63,
+        "e": 22.17
+      },
+      {
+        "w": "to'liq",
+        "s": 22.35,
+        "e": 22.7
+      },
+      {
+        "w": "qo'llab-quvvatlaydi.",
+        "s": 22.8,
+        "e": 23.58
+      }
+    ]
+  },
+  {
+    "id": "l4",
+    "scene": "ssh_signing",
+    "text": "Buning uchun ji-pi-ji format sozlamasini ssh ga o'rnatib, foydalanuvchi imzo kaliti manzilini ko'rsatish kifoya.",
+    "show": "Buning uchun ji-pi-ji format sozlamasini ssh ga o'rnatib, foydalanuvchi imzo kaliti manzilini ko'rsatish kifoya.",
+    "say": "Buning uchun ji-pi-ji format sozlamasini ssh ga o'rnatib, foydalanuvchi imzo kaliti manzilini ko'rsatish kifoya.",
+    "a0": 24.5,
+    "a1": 31.44,
+    "words": [
+      {
+        "w": "Buning",
+        "s": 24.5,
+        "e": 24.72
+      },
+      {
+        "w": "uchun",
+        "s": 24.74,
+        "e": 24.96
+      },
+      {
+        "w": "ji-pi-ji",
+        "s": 25.36,
+        "e": 25.76
+      },
+      {
+        "w": "format",
+        "s": 25.88,
+        "e": 26.22
+      },
+      {
+        "w": "sozlamasini",
+        "s": 26.24,
+        "e": 26.84
+      },
+      {
+        "w": "ssh",
+        "s": 27.22,
+        "e": 27.68
+      },
+      {
+        "w": "ga",
+        "s": 27.72,
+        "e": 27.78
+      },
+      {
+        "w": "o'rnatib,",
+        "s": 27.92,
+        "e": 28.38
+      },
+      {
+        "w": "foydalanuvchi",
+        "s": 28.72,
+        "e": 29.36
+      },
+      {
+        "w": "imzo",
+        "s": 29.48,
+        "e": 29.72
+      },
+      {
+        "w": "kaliti",
+        "s": 29.8,
+        "e": 30.0
+      },
+      {
+        "w": "manzilini",
+        "s": 30.1,
+        "e": 30.46
+      },
+      {
+        "w": "ko'rsatish",
+        "s": 30.5,
+        "e": 30.98
+      },
+      {
+        "w": "kifoya.",
+        "s": 31.04,
+        "e": 31.44
+      }
+    ]
+  },
+  {
+    "id": "l5",
+    "scene": "commit_tag_sign",
+    "text": "Git commit minus katta S buyrug'i commit obyekti sarlavhasiga raqamli imzo muhrini biriktirib saqlaydi.",
+    "show": "Git commit minus katta S buyrug'i commit obyekti sarlavhasiga raqamli imzo muhrini biriktirib saqlaydi.",
+    "say": "Git kommit minus katta S buyrug'i kommit obyekti sarlavhasiga raqamli imzo muhrini biriktirib saqlaydi.",
+    "a0": 32.64,
+    "a1": 39.25,
+    "words": [
+      {
+        "w": "Git",
+        "s": 32.64,
+        "e": 32.82
+      },
+      {
+        "w": "kommit",
+        "s": 32.88,
+        "e": 33.2
+      },
+      {
+        "w": "minus",
+        "s": 33.42,
+        "e": 33.74
+      },
+      {
+        "w": "katta",
+        "s": 33.86,
+        "e": 34.24
+      },
+      {
+        "w": "S",
+        "s": 34.5,
+        "e": 34.52
+      },
+      {
+        "w": "buyrug'i",
+        "s": 34.58,
+        "e": 34.94
+      },
+      {
+        "w": "kommit",
+        "s": 35.28,
+        "e": 35.58
+      },
+      {
+        "w": "obyekti",
+        "s": 35.66,
+        "e": 35.96
+      },
+      {
+        "w": "sarlavhasiga",
+        "s": 36.02,
+        "e": 36.66
+      },
+      {
+        "w": "raqamli",
+        "s": 36.88,
+        "e": 37.34
+      },
+      {
+        "w": "imzo",
+        "s": 37.48,
+        "e": 37.75
+      },
+      {
+        "w": "muhrini",
+        "s": 37.85,
+        "e": 38.25
+      },
+      {
+        "w": "biriktirib",
+        "s": 38.41,
+        "e": 38.83
+      },
+      {
+        "w": "saqlaydi.",
+        "s": 38.87,
+        "e": 39.25
+      }
+    ]
+  },
+  {
+    "id": "l6",
+    "scene": "commit_tag_sign",
+    "text": "Rasmiy relizlar uchun esa git tag minus kichik s yordamida annotated teglarni maxsus kriptografik imzo bilan chiqariladi.",
+    "show": "Rasmiy relizlar uchun esa git tag minus kichik s yordamida annotated teglarni maxsus kriptografik imzo bilan chiqariladi.",
+    "say": "Rasmiy relizlar uchun esa git tag minus kichik s yordamida annoteytid teglarni maxsus kriptografik imzo bilan chiqariladi.",
+    "a0": 40.09,
+    "a1": 47.57,
+    "words": [
+      {
+        "w": "Rasmiy",
+        "s": 40.09,
+        "e": 40.39
+      },
+      {
+        "w": "relizlar",
+        "s": 40.49,
+        "e": 40.89
+      },
+      {
+        "w": "uchun",
+        "s": 40.93,
+        "e": 41.11
+      },
+      {
+        "w": "esa",
+        "s": 41.15,
+        "e": 41.33
+      },
+      {
+        "w": "git",
+        "s": 41.77,
+        "e": 41.97
+      },
+      {
+        "w": "tag",
+        "s": 42.09,
+        "e": 42.33
+      },
+      {
+        "w": "minus",
+        "s": 42.55,
+        "e": 42.83
+      },
+      {
+        "w": "kichik",
+        "s": 42.95,
+        "e": 43.23
+      },
+      {
+        "w": "s",
+        "s": 43.47,
+        "e": 43.49
+      },
+      {
+        "w": "yordamida",
+        "s": 43.61,
+        "e": 44.01
+      },
+      {
+        "w": "annoteytid",
+        "s": 44.27,
+        "e": 44.81
+      },
+      {
+        "w": "teglarni",
+        "s": 44.87,
+        "e": 45.31
+      },
+      {
+        "w": "maxsus",
+        "s": 45.43,
+        "e": 45.85
+      },
+      {
+        "w": "kriptografik",
+        "s": 45.89,
+        "e": 46.55
+      },
+      {
+        "w": "imzo",
+        "s": 46.63,
+        "e": 46.87
+      },
+      {
+        "w": "bilan",
+        "s": 46.93,
+        "e": 47.11
+      },
+      {
+        "w": "chiqariladi.",
+        "s": 47.13,
+        "e": 47.57
+      }
+    ]
+  },
+  {
+    "id": "l7",
+    "scene": "signature_verify",
+    "text": "Git log show-signature buyrug'i imzo butunligi bilan birga uning ishonchli kalitlar ro'yxatiga mosligini tekshiradi.",
+    "show": "Git log show-signature buyrug'i imzo butunligi bilan birga uning ishonchli kalitlar ro'yxatiga mosligini tekshiradi.",
+    "say": "Git log show-signature buyrug'i imzo butunligi bilan birga uning ishonchli kalitlar ro'yxatiga mosligini tekshiradi.",
+    "a0": 48.85,
+    "a1": 55.12,
+    "words": [
+      {
+        "w": "Git",
+        "s": 48.85,
+        "e": 49.03
+      },
+      {
+        "w": "log",
+        "s": 49.11,
+        "e": 49.31
+      },
+      {
+        "w": "show-signature",
+        "s": 49.63,
+        "e": 50.43
+      },
+      {
+        "w": "buyrug'i",
+        "s": 50.43,
+        "e": 50.75
+      },
+      {
+        "w": "imzo",
+        "s": 51.15,
+        "e": 51.41
+      },
+      {
+        "w": "butunligi",
+        "s": 51.47,
+        "e": 51.89
+      },
+      {
+        "w": "bilan",
+        "s": 51.93,
+        "e": 52.13
+      },
+      {
+        "w": "birga",
+        "s": 52.15,
+        "e": 52.37
+      },
+      {
+        "w": "uning",
+        "s": 52.49,
+        "e": 52.7
+      },
+      {
+        "w": "ishonchli",
+        "s": 52.8,
+        "e": 53.24
+      },
+      {
+        "w": "kalitlar",
+        "s": 53.32,
+        "e": 53.72
+      },
+      {
+        "w": "ro'yxatiga",
+        "s": 53.76,
+        "e": 54.18
+      },
+      {
+        "w": "mosligini",
+        "s": 54.26,
+        "e": 54.7
+      },
+      {
+        "w": "tekshiradi.",
+        "s": 54.72,
+        "e": 55.12
+      }
+    ]
+  },
+  {
+    "id": "l8",
+    "scene": "signature_verify",
+    "text": "Agar imzo to'g'ri bo'lsa gud git signatye xabari, begona kalit bo'lsa no prinsipal match ogohlantirishi beriladi.",
+    "show": "Agar imzo to'g'ri bo'lsa gud git signatye xabari, begona kalit bo'lsa no prinsipal match ogohlantirishi beriladi.",
+    "say": "Agar imzo to'g'ri bo'lsa gud git signatye xabari, begona kalit bo'lsa no prinsipal match ogohlantirishi beriladi.",
+    "a0": 55.88,
+    "a1": 63.08,
+    "words": [
+      {
+        "w": "Agar",
+        "s": 55.88,
+        "e": 56.1
+      },
+      {
+        "w": "imzo",
+        "s": 56.18,
+        "e": 56.42
+      },
+      {
+        "w": "to'g'ri",
+        "s": 56.54,
+        "e": 56.82
+      },
+      {
+        "w": "bo'lsa",
+        "s": 56.84,
+        "e": 57.14
+      },
+      {
+        "w": "gud",
+        "s": 57.64,
+        "e": 57.86
+      },
+      {
+        "w": "git",
+        "s": 58.04,
+        "e": 58.24
+      },
+      {
+        "w": "signatye",
+        "s": 58.32,
+        "e": 58.68
+      },
+      {
+        "w": "xabari,",
+        "s": 58.74,
+        "e": 59.04
+      },
+      {
+        "w": "begona",
+        "s": 59.48,
+        "e": 59.88
+      },
+      {
+        "w": "kalit",
+        "s": 59.92,
+        "e": 60.16
+      },
+      {
+        "w": "bo'lsa",
+        "s": 60.2,
+        "e": 60.46
+      },
+      {
+        "w": "no",
+        "s": 60.86,
+        "e": 60.98
+      },
+      {
+        "w": "prinsipal",
+        "s": 61.14,
+        "e": 61.6
+      },
+      {
+        "w": "match",
+        "s": 61.7,
+        "e": 61.92
+      },
+      {
+        "w": "ogohlantirishi",
+        "s": 62.08,
+        "e": 62.68
+      },
+      {
+        "w": "beriladi.",
+        "s": 62.72,
+        "e": 63.08
+      }
+    ]
+  },
+  {
+    "id": "l9",
+    "scene": "allowed_signers",
+    "text": "SSH imzolarni jamoada tekshirish uchun allowed signers faylida xodimlarning elektron pochtalari va ommaviy kalitlari jamlanadi.",
+    "show": "SSH imzolarni jamoada tekshirish uchun allowed signers faylida xodimlarning elektron pochtalari va ommaviy kalitlari jamlanadi.",
+    "say": "Es-es-eych imzolarni jamoada tekshirish uchun alloud sayners faylida xodimlarning elektron pochtalari va ommaviy kalitlari jamlanadi.",
+    "a0": 64.42,
+    "a1": 72.07,
+    "words": [
+      {
+        "w": "Es-es-eych",
+        "s": 64.42,
+        "e": 64.86
+      },
+      {
+        "w": "imzolarni",
+        "s": 64.94,
+        "e": 65.5
+      },
+      {
+        "w": "jamoada",
+        "s": 65.64,
+        "e": 66.08
+      },
+      {
+        "w": "tekshirish",
+        "s": 66.12,
+        "e": 66.5
+      },
+      {
+        "w": "uchun",
+        "s": 66.54,
+        "e": 66.76
+      },
+      {
+        "w": "alloud",
+        "s": 67.14,
+        "e": 67.57
+      },
+      {
+        "w": "sayners",
+        "s": 67.65,
+        "e": 68.07
+      },
+      {
+        "w": "faylida",
+        "s": 68.13,
+        "e": 68.51
+      },
+      {
+        "w": "xodimlarning",
+        "s": 68.65,
+        "e": 69.29
+      },
+      {
+        "w": "elektron",
+        "s": 69.39,
+        "e": 69.75
+      },
+      {
+        "w": "pochtalari",
+        "s": 69.81,
+        "e": 70.33
+      },
+      {
+        "w": "va",
+        "s": 70.39,
+        "e": 70.47
+      },
+      {
+        "w": "ommaviy",
+        "s": 70.69,
+        "e": 71.05
+      },
+      {
+        "w": "kalitlari",
+        "s": 71.11,
+        "e": 71.55
+      },
+      {
+        "w": "jamlanadi.",
+        "s": 71.59,
+        "e": 72.07
+      }
+    ]
+  },
+  {
+    "id": "l10",
+    "scene": "allowed_signers",
+    "text": "Ushbu fayl orqali begona kalitlar bilan soxtalashtirilgan begona commitlar avtomatik tarzda fosh etiladi.",
+    "show": "Ushbu fayl orqali begona kalitlar bilan soxtalashtirilgan begona commitlar avtomatik tarzda fosh etiladi.",
+    "say": "Ushbu fayl orqali begona kalitlar bilan soxtalashtirilgan begona kommitlar avtomatik tarzda fosh etiladi.",
+    "a0": 72.83,
+    "a1": 79.03,
+    "words": [
+      {
+        "w": "Ushbu",
+        "s": 72.83,
+        "e": 73.07
+      },
+      {
+        "w": "fayl",
+        "s": 73.15,
+        "e": 73.37
+      },
+      {
+        "w": "orqali",
+        "s": 73.43,
+        "e": 73.73
+      },
+      {
+        "w": "begona",
+        "s": 74.09,
+        "e": 74.47
+      },
+      {
+        "w": "kalitlar",
+        "s": 74.53,
+        "e": 74.91
+      },
+      {
+        "w": "bilan",
+        "s": 74.95,
+        "e": 75.11
+      },
+      {
+        "w": "soxtalashtirilgan",
+        "s": 75.15,
+        "e": 75.95
+      },
+      {
+        "w": "begona",
+        "s": 76.11,
+        "e": 76.55
+      },
+      {
+        "w": "kommitlar",
+        "s": 76.61,
+        "e": 77.07
+      },
+      {
+        "w": "avtomatik",
+        "s": 77.31,
+        "e": 77.91
+      },
+      {
+        "w": "tarzda",
+        "s": 77.95,
+        "e": 78.27
+      },
+      {
+        "w": "fosh",
+        "s": 78.41,
+        "e": 78.65
+      },
+      {
+        "w": "etiladi.",
+        "s": 78.71,
+        "e": 79.03
+      }
+    ]
+  },
+  {
+    "id": "l11",
+    "scene": "xulosa",
+    "text": "Avtomatlashtirilgan tekshiruvlar uchun git merge verify-signatures bayrog'i faqat imzoli commitlarni qabul qilishni ta'minlaydi.",
+    "show": "Avtomatlashtirilgan tekshiruvlar uchun git merge verify-signatures bayrog'i faqat imzoli commitlarni qabul qilishni ta'minlaydi.",
+    "say": "Avtomatlashtirilgan tekshiruvlar uchun git merge verifay signatyurs bayrog'i faqat imzoli kommitlarni qabul qilishni ta'minlaydi.",
+    "a0": 80.23,
+    "a1": 87.34,
+    "words": [
+      {
+        "w": "Avtomatlashtirilgan",
+        "s": 80.23,
+        "e": 81.07
+      },
+      {
+        "w": "tekshiruvlar",
+        "s": 81.11,
+        "e": 81.57
+      },
+      {
+        "w": "uchun",
+        "s": 81.61,
+        "e": 81.81
+      },
+      {
+        "w": "git",
+        "s": 82.15,
+        "e": 82.35
+      },
+      {
+        "w": "merge",
+        "s": 82.43,
+        "e": 82.78
+      },
+      {
+        "w": "verifay",
+        "s": 82.98,
+        "e": 83.4
+      },
+      {
+        "w": "signatyurs",
+        "s": 83.54,
+        "e": 84.02
+      },
+      {
+        "w": "bayrog'i",
+        "s": 84.06,
+        "e": 84.46
+      },
+      {
+        "w": "faqat",
+        "s": 84.68,
+        "e": 85.04
+      },
+      {
+        "w": "imzoli",
+        "s": 85.18,
+        "e": 85.58
+      },
+      {
+        "w": "kommitlarni",
+        "s": 85.64,
+        "e": 86.1
+      },
+      {
+        "w": "qabul",
+        "s": 86.16,
+        "e": 86.42
+      },
+      {
+        "w": "qilishni",
+        "s": 86.46,
+        "e": 86.78
+      },
+      {
+        "w": "ta'minlaydi.",
+        "s": 86.82,
+        "e": 87.34
+      }
+    ]
+  },
+  {
+    "id": "l12",
+    "scene": "xulosa",
+    "text": "Jamoada imzolash intizomi o'rnatilishi tashqi buzg'unchiliklar va ishonchsiz kodlarning loyihaga kirishini butunlay to'xtatadi.",
+    "show": "Jamoada imzolash intizomi o'rnatilishi tashqi buzg'unchiliklar va ishonchsiz kodlarning loyihaga kirishini butunlay to'xtatadi.",
+    "say": "Jamoada imzolash intizomi o'rnatilishi tashqi buzg'unchiliklar va ishonchsiz kodlarning loyihaga kirishini butunlay to'xtatadi.",
+    "a0": 88.24,
+    "a1": 95.24,
+    "words": [
+      {
+        "w": "Jamoada",
+        "s": 88.24,
+        "e": 88.64
+      },
+      {
+        "w": "imzolash",
+        "s": 88.68,
+        "e": 89.14
+      },
+      {
+        "w": "intizomi",
+        "s": 89.2,
+        "e": 89.62
+      },
+      {
+        "w": "o'rnatilishi",
+        "s": 89.68,
+        "e": 90.16
+      },
+      {
+        "w": "tashqi",
+        "s": 90.5,
+        "e": 90.84
+      },
+      {
+        "w": "buzg'unchiliklar",
+        "s": 90.88,
+        "e": 91.63
+      },
+      {
+        "w": "va",
+        "s": 91.69,
+        "e": 91.77
+      },
+      {
+        "w": "ishonchsiz",
+        "s": 91.93,
+        "e": 92.39
+      },
+      {
+        "w": "kodlarning",
+        "s": 92.43,
+        "e": 92.95
+      },
+      {
+        "w": "loyihaga",
+        "s": 93.05,
+        "e": 93.51
+      },
+      {
+        "w": "kirishini",
+        "s": 93.55,
+        "e": 93.93
+      },
+      {
+        "w": "butunlay",
+        "s": 94.2,
+        "e": 94.68
+      },
+      {
+        "w": "to'xtatadi.",
+        "s": 94.74,
+        "e": 95.24
+      }
+    ]
+  }
+]
