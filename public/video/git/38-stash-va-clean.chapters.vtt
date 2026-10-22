@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:23.724
+Git Stash Asoslari va Stack Tuzilishi
+
+00:23.724 --> 00:43.969
+Stash Ichki Arxitekturasi: H, I, W Commitlari
+
+00:43.969 --> 01:05.995
+Tiklash va Ko‘rish: apply, --index, pop, drop
+
+01:05.995 --> 01:26.917
+Ilg‘or Usullar: --keep-index, --staged, -u, -p
+
+01:26.917 --> 01:48.955
+Konfliktlar, git stash branch va fsck bilan Tiklash
+
+01:48.955 --> 02:11.320
+git clean: Untracked Fayllarni Xavfsiz Tozalash

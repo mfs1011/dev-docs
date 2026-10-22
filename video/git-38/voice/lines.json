@@ -1,0 +1,1359 @@
+[
+  {
+    "scene": "intro_stash",
+    "text": "Ish jarayonida shoshilinch boshqa vazifaga o'tish kerak bo'lganda, chala qolgan o'zgarishlarni yo'qotmasdan va keraksiz xom commit yaratmasdan vaqtincha yashirib qo'yish uchun git stash buyrug'i ishlatiladi.",
+    "show": "Ish jarayonida shoshilinch boshqa vazifaga o'tish kerak bo'lganda, chala qolgan o'zgarishlarni yo'qotmasdan va keraksiz xom commit yaratmasdan vaqtincha yashirib qo'yish uchun git stash buyrug'i ishlatiladi.",
+    "say": "Ish jarayonida shoshilinch boshqa vazifaga o'tish kerak bo'lganda, chala qolgan o'zgarishlarni yo'qotmasdan va keraksiz xom kommit yaratmasdan vaqtincha yashirib qo'yish uchun git stesh buyrug'i ishlatiladi.",
+    "a0": 0.26,
+    "a1": 11.03,
+    "words": [
+      {
+        "w": "Ish",
+        "s": 0.26,
+        "e": 0.38
+      },
+      {
+        "w": "jarayonida",
+        "s": 0.44,
+        "e": 0.98
+      },
+      {
+        "w": "shoshilinch",
+        "s": 1.08,
+        "e": 1.56
+      },
+      {
+        "w": "boshqa",
+        "s": 1.62,
+        "e": 1.86
+      },
+      {
+        "w": "vazifaga",
+        "s": 1.9,
+        "e": 2.32
+      },
+      {
+        "w": "o'tish",
+        "s": 2.38,
+        "e": 2.58
+      },
+      {
+        "w": "kerak",
+        "s": 2.6,
+        "e": 2.84
+      },
+      {
+        "w": "bo'lganda,",
+        "s": 2.88,
+        "e": 3.32
+      },
+      {
+        "w": "chala",
+        "s": 3.84,
+        "e": 4.06
+      },
+      {
+        "w": "qolgan",
+        "s": 4.1,
+        "e": 4.42
+      },
+      {
+        "w": "o'zgarishlarni",
+        "s": 4.52,
+        "e": 5.1
+      },
+      {
+        "w": "yo'qotmasdan",
+        "s": 5.14,
+        "e": 5.76
+      },
+      {
+        "w": "va",
+        "s": 5.84,
+        "e": 5.9
+      },
+      {
+        "w": "keraksiz",
+        "s": 6,
+        "e": 6.48
+      },
+      {
+        "w": "xom",
+        "s": 6.54,
+        "e": 6.76
+      },
+      {
+        "w": "kommit",
+        "s": 6.82,
+        "e": 7.1
+      },
+      {
+        "w": "yaratmasdan",
+        "s": 7.14,
+        "e": 7.71
+      },
+      {
+        "w": "vaqtincha",
+        "s": 8.11,
+        "e": 8.57
+      },
+      {
+        "w": "yashirib",
+        "s": 8.61,
+        "e": 8.93
+      },
+      {
+        "w": "qo'yish",
+        "s": 8.95,
+        "e": 9.21
+      },
+      {
+        "w": "uchun",
+        "s": 9.23,
+        "e": 9.43
+      },
+      {
+        "w": "git",
+        "s": 9.61,
+        "e": 9.79
+      },
+      {
+        "w": "stesh",
+        "s": 9.87,
+        "e": 10.15
+      },
+      {
+        "w": "buyrug'i",
+        "s": 10.19,
+        "e": 10.49
+      },
+      {
+        "w": "ishlatiladi.",
+        "s": 10.53,
+        "e": 11.03
+      }
+    ],
+    "id": "l1"
+  },
+  {
+    "scene": "intro_stash",
+    "text": "Oddiy git stash buyrug'i joriy tracked fayllar va index holatini stack tuzilmasiga saqlaydi hamda ishchi daraxtni toza HEAD commit holatiga qaytaradi.",
+    "show": "Oddiy git stash buyrug'i joriy tracked fayllar va index holatini stack tuzilmasiga saqlaydi hamda ishchi daraxtni toza HEAD commit holatiga qaytaradi.",
+    "say": "Oddiy git stesh buyrug'i joriy tracked fayllar va index holatini stack tuzilmasiga saqlaydi hamda ishchi daraxtni toza hed kommit holatiga qaytaradi.",
+    "a0": 11.65,
+    "a1": 19.85,
+    "words": [
+      {
+        "w": "Oddiy",
+        "s": 11.65,
+        "e": 11.89
+      },
+      {
+        "w": "git",
+        "s": 11.97,
+        "e": 12.15
+      },
+      {
+        "w": "stesh",
+        "s": 12.23,
+        "e": 12.47
+      },
+      {
+        "w": "buyrug'i",
+        "s": 12.53,
+        "e": 12.89
+      },
+      {
+        "w": "joriy",
+        "s": 13.01,
+        "e": 13.33
+      },
+      {
+        "w": "tracked",
+        "s": 13.39,
+        "e": 13.69
+      },
+      {
+        "w": "fayllar",
+        "s": 13.75,
+        "e": 14.23
+      },
+      {
+        "w": "va",
+        "s": 14.31,
+        "e": 14.39
+      },
+      {
+        "w": "index",
+        "s": 14.55,
+        "e": 14.81
+      },
+      {
+        "w": "holatini",
+        "s": 14.91,
+        "e": 15.31
+      },
+      {
+        "w": "stack",
+        "s": 15.41,
+        "e": 15.65
+      },
+      {
+        "w": "tuzilmasiga",
+        "s": 15.67,
+        "e": 16.19
+      },
+      {
+        "w": "saqlaydi",
+        "s": 16.25,
+        "e": 16.67
+      },
+      {
+        "w": "hamda",
+        "s": 16.99,
+        "e": 17.25
+      },
+      {
+        "w": "ishchi",
+        "s": 17.39,
+        "e": 17.61
+      },
+      {
+        "w": "daraxtni",
+        "s": 17.65,
+        "e": 18.03
+      },
+      {
+        "w": "toza",
+        "s": 18.09,
+        "e": 18.39
+      },
+      {
+        "w": "hed",
+        "s": 18.47,
+        "e": 18.67
+      },
+      {
+        "w": "kommit",
+        "s": 18.73,
+        "e": 18.97
+      },
+      {
+        "w": "holatiga",
+        "s": 19.01,
+        "e": 19.37
+      },
+      {
+        "w": "qaytaradi.",
+        "s": 19.43,
+        "e": 19.85
+      }
+    ],
+    "id": "l2"
+  },
+  {
+    "scene": "stash_architecture",
+    "text": "Gitda stash maxsus fayl turi emas, balki odatiy commit obyektlari va refs stash havolasi orqali boshqariladigan zanjirdir.",
+    "show": "Gitda stash maxsus fayl turi emas, balki odatiy commit obyektlari va refs stash havolasi orqali boshqariladigan zanjirdir.",
+    "say": "Gitda stesh maxsus fayl turi emas, balki odatiy kommit obyektlari va refs stesh havolasi orqali boshqariladigan zanjirdir.",
+    "a0": 20.53,
+    "a1": 27.38,
+    "words": [
+      {
+        "w": "Gitda",
+        "s": 20.53,
+        "e": 20.85
+      },
+      {
+        "w": "stesh",
+        "s": 20.95,
+        "e": 21.25
+      },
+      {
+        "w": "maxsus",
+        "s": 21.33,
+        "e": 21.63
+      },
+      {
+        "w": "fayl",
+        "s": 21.67,
+        "e": 21.91
+      },
+      {
+        "w": "turi",
+        "s": 21.95,
+        "e": 22.09
+      },
+      {
+        "w": "emas,",
+        "s": 22.15,
+        "e": 22.39
+      },
+      {
+        "w": "balki",
+        "s": 22.49,
+        "e": 22.78
+      },
+      {
+        "w": "odatiy",
+        "s": 23.18,
+        "e": 23.5
+      },
+      {
+        "w": "kommit",
+        "s": 23.56,
+        "e": 23.86
+      },
+      {
+        "w": "obyektlari",
+        "s": 23.96,
+        "e": 24.44
+      },
+      {
+        "w": "va",
+        "s": 24.52,
+        "e": 24.6
+      },
+      {
+        "w": "refs",
+        "s": 24.74,
+        "e": 25.02
+      },
+      {
+        "w": "stesh",
+        "s": 25.08,
+        "e": 25.36
+      },
+      {
+        "w": "havolasi",
+        "s": 25.4,
+        "e": 25.82
+      },
+      {
+        "w": "orqali",
+        "s": 25.88,
+        "e": 26.16
+      },
+      {
+        "w": "boshqariladigan",
+        "s": 26.2,
+        "e": 26.86
+      },
+      {
+        "w": "zanjirdir.",
+        "s": 26.9,
+        "e": 27.38
+      }
+    ],
+    "id": "l3"
+  },
+  {
+    "scene": "stash_architecture",
+    "text": "U ikkita ota commitga tayanadi: H joriy HEAD commit, I esa index holatini ifodalaydi; untracked fayllar saqlanganda uchinchi ota qo'shiladi.",
+    "show": "U ikkita ota commitga tayanadi: H joriy HEAD commit, I esa index holatini ifodalaydi; untracked fayllar saqlanganda uchinchi ota qo'shiladi.",
+    "say": "U ikkita ota kommitga tayanadi: H joriy hed kommit, I esa index holatini ifodalaydi; an-trekd fayllar saqlanganda uchinchi ota qo'shiladi.",
+    "a0": 28.12,
+    "a1": 36.52,
+    "words": [
+      {
+        "w": "U",
+        "s": 28.12,
+        "e": 28.14
+      },
+      {
+        "w": "ikkita",
+        "s": 28.3,
+        "e": 28.52
+      },
+      {
+        "w": "ota",
+        "s": 28.56,
+        "e": 28.7
+      },
+      {
+        "w": "kommitga",
+        "s": 28.76,
+        "e": 29.12
+      },
+      {
+        "w": "tayanadi:",
+        "s": 29.16,
+        "e": 29.56
+      },
+      {
+        "w": "H",
+        "s": 30.16,
+        "e": 30.18
+      },
+      {
+        "w": "joriy",
+        "s": 30.38,
+        "e": 30.66
+      },
+      {
+        "w": "hed",
+        "s": 30.72,
+        "e": 30.88
+      },
+      {
+        "w": "kommit,",
+        "s": 30.94,
+        "e": 31.22
+      },
+      {
+        "w": "I",
+        "s": 31.72,
+        "e": 31.74
+      },
+      {
+        "w": "esa",
+        "s": 31.78,
+        "e": 31.96
+      },
+      {
+        "w": "index",
+        "s": 32.16,
+        "e": 32.42
+      },
+      {
+        "w": "holatini",
+        "s": 32.52,
+        "e": 32.92
+      },
+      {
+        "w": "ifodalaydi;",
+        "s": 32.92,
+        "e": 33.94
+      },
+      {
+        "w": "an-trekd",
+        "s": 33.94,
+        "e": 34.32
+      },
+      {
+        "w": "fayllar",
+        "s": 34.38,
+        "e": 34.76
+      },
+      {
+        "w": "saqlanganda",
+        "s": 34.8,
+        "e": 35.38
+      },
+      {
+        "w": "uchinchi",
+        "s": 35.52,
+        "e": 35.84
+      },
+      {
+        "w": "ota",
+        "s": 35.9,
+        "e": 36.04
+      },
+      {
+        "w": "qo'shiladi.",
+        "s": 36.1,
+        "e": 36.52
+      }
+    ],
+    "id": "l4"
+  },
+  {
+    "scene": "apply_pop_drop",
+    "text": "Saqlangan o'zgarishlar ro'yxatini git stash list, ularning to'liq patch farqini esa git stash show minus p orqali tekshirish mumkin.",
+    "show": "Saqlangan o'zgarishlar ro'yxatini git stash list, ularning to'liq patch farqini esa git stash show minus p orqali tekshirish mumkin.",
+    "say": "Saqlangan o'zgarishlar ro'yxatini git stesh list, ularning to'liq patch farqini esa git stesh shou minus pi orqali tekshirish mumkin.",
+    "a0": 37.1,
+    "a1": 44.55,
+    "words": [
+      {
+        "w": "Saqlangan",
+        "s": 37.1,
+        "e": 37.55
+      },
+      {
+        "w": "o'zgarishlar",
+        "s": 37.63,
+        "e": 38.09
+      },
+      {
+        "w": "ro'yxatini",
+        "s": 38.13,
+        "e": 38.59
+      },
+      {
+        "w": "git",
+        "s": 38.83,
+        "e": 39.03
+      },
+      {
+        "w": "stesh",
+        "s": 39.13,
+        "e": 39.43
+      },
+      {
+        "w": "list,",
+        "s": 39.51,
+        "e": 39.77
+      },
+      {
+        "w": "ularning",
+        "s": 40.17,
+        "e": 40.51
+      },
+      {
+        "w": "to'liq",
+        "s": 40.57,
+        "e": 40.85
+      },
+      {
+        "w": "patch",
+        "s": 40.97,
+        "e": 41.19
+      },
+      {
+        "w": "farqini",
+        "s": 41.23,
+        "e": 41.57
+      },
+      {
+        "w": "esa",
+        "s": 41.61,
+        "e": 41.77
+      },
+      {
+        "w": "git",
+        "s": 42.13,
+        "e": 42.29
+      },
+      {
+        "w": "stesh",
+        "s": 42.37,
+        "e": 42.63
+      },
+      {
+        "w": "shou",
+        "s": 42.69,
+        "e": 42.91
+      },
+      {
+        "w": "minus",
+        "s": 43.03,
+        "e": 43.31
+      },
+      {
+        "w": "pi",
+        "s": 43.37,
+        "e": 43.45
+      },
+      {
+        "w": "orqali",
+        "s": 43.57,
+        "e": 43.85
+      },
+      {
+        "w": "tekshirish",
+        "s": 43.89,
+        "e": 44.25
+      },
+      {
+        "w": "mumkin.",
+        "s": 44.29,
+        "e": 44.55
+      }
+    ],
+    "id": "l5"
+  },
+  {
+    "scene": "apply_pop_drop",
+    "text": "git stash pop o'zgarishlarni ishchi daraxtga qaytarib ro'yxatdan o'chiradi, apply esa saqlab qoladi; index holatini birga tiklash uchun esa minus-minus index kaliti talab etiladi.",
+    "show": "git stash pop o'zgarishlarni ishchi daraxtga qaytarib ro'yxatdan o'chiradi, apply esa saqlab qoladi; index holatini birga tiklash uchun esa minus-minus index kaliti talab etiladi.",
+    "say": "Git stesh pop o'zgarishlarni ishchi daraxtga qaytarib ro'yxatdan o'chiradi, eplay esa saqlab qoladi; index holatini birga tiklash uchun esa minus minus indeks kaliti talab etiladi.",
+    "a0": 45.27,
+    "a1": 54.98,
+    "words": [
+      {
+        "w": "Git",
+        "s": 45.27,
+        "e": 45.45
+      },
+      {
+        "w": "stesh",
+        "s": 45.51,
+        "e": 45.77
+      },
+      {
+        "w": "pop",
+        "s": 45.81,
+        "e": 46.01
+      },
+      {
+        "w": "o'zgarishlarni",
+        "s": 46.09,
+        "e": 46.71
+      },
+      {
+        "w": "ishchi",
+        "s": 46.79,
+        "e": 46.97
+      },
+      {
+        "w": "daraxtga",
+        "s": 47.03,
+        "e": 47.39
+      },
+      {
+        "w": "qaytarib",
+        "s": 47.45,
+        "e": 47.85
+      },
+      {
+        "w": "ro'yxatdan",
+        "s": 47.89,
+        "e": 48.33
+      },
+      {
+        "w": "o'chiradi,",
+        "s": 48.43,
+        "e": 48.79
+      },
+      {
+        "w": "eplay",
+        "s": 49.27,
+        "e": 49.55
+      },
+      {
+        "w": "esa",
+        "s": 49.61,
+        "e": 49.75
+      },
+      {
+        "w": "saqlab",
+        "s": 49.85,
+        "e": 50.15
+      },
+      {
+        "w": "qoladi;",
+        "s": 50.15,
+        "e": 50.97
+      },
+      {
+        "w": "index",
+        "s": 50.97,
+        "e": 51.21
+      },
+      {
+        "w": "holatini",
+        "s": 51.29,
+        "e": 51.65
+      },
+      {
+        "w": "birga",
+        "s": 51.69,
+        "e": 51.91
+      },
+      {
+        "w": "tiklash",
+        "s": 51.95,
+        "e": 52.25
+      },
+      {
+        "w": "uchun",
+        "s": 52.27,
+        "e": 52.43
+      },
+      {
+        "w": "esa",
+        "s": 52.47,
+        "e": 52.62
+      },
+      {
+        "w": "minus",
+        "s": 52.94,
+        "e": 53.22
+      },
+      {
+        "w": "minus",
+        "s": 53.28,
+        "e": 53.52
+      },
+      {
+        "w": "indeks",
+        "s": 53.68,
+        "e": 54
+      },
+      {
+        "w": "kaliti",
+        "s": 54.04,
+        "e": 54.36
+      },
+      {
+        "w": "talab",
+        "s": 54.4,
+        "e": 54.62
+      },
+      {
+        "w": "etiladi.",
+        "s": 54.68,
+        "e": 54.98
+      }
+    ],
+    "id": "l6"
+  },
+  {
+    "scene": "advanced_stash",
+    "text": "Faqat stage qilinmagan qismlarni yashirish uchun keep-index, faqat indexdagi o'zgarishlarni ajratib olish uchun esa staged bayrog'idan foydalaniladi.",
+    "show": "Faqat stage qilinmagan qismlarni yashirish uchun keep-index, faqat indexdagi o'zgarishlarni ajratib olish uchun esa staged bayrog'idan foydalaniladi.",
+    "say": "Faqat steyj qilinmagan qismlarni yashirish uchun kip-indeks, faqat indexdagi o'zgarishlarni ajratib olish uchun esa steyjd bayrog'idan foydalaniladi.",
+    "a0": 55.52,
+    "a1": 62.98,
+    "words": [
+      {
+        "w": "Faqat",
+        "s": 55.52,
+        "e": 55.8
+      },
+      {
+        "w": "steyj",
+        "s": 55.84,
+        "e": 56.06
+      },
+      {
+        "w": "qilinmagan",
+        "s": 56.12,
+        "e": 56.56
+      },
+      {
+        "w": "qismlarni",
+        "s": 56.6,
+        "e": 57.02
+      },
+      {
+        "w": "yashirish",
+        "s": 57.04,
+        "e": 57.38
+      },
+      {
+        "w": "uchun",
+        "s": 57.38,
+        "e": 57.58
+      },
+      {
+        "w": "kip-indeks,",
+        "s": 57.66,
+        "e": 58.36
+      },
+      {
+        "w": "faqat",
+        "s": 58.72,
+        "e": 59
+      },
+      {
+        "w": "indexdagi",
+        "s": 59.1,
+        "e": 59.64
+      },
+      {
+        "w": "o'zgarishlarni",
+        "s": 59.7,
+        "e": 60.26
+      },
+      {
+        "w": "ajratib",
+        "s": 60.26,
+        "e": 60.66
+      },
+      {
+        "w": "olish",
+        "s": 60.7,
+        "e": 60.88
+      },
+      {
+        "w": "uchun",
+        "s": 60.88,
+        "e": 61.04
+      },
+      {
+        "w": "esa",
+        "s": 61.08,
+        "e": 61.26
+      },
+      {
+        "w": "steyjd",
+        "s": 61.4,
+        "e": 61.78
+      },
+      {
+        "w": "bayrog'idan",
+        "s": 61.82,
+        "e": 62.3
+      },
+      {
+        "w": "foydalaniladi.",
+        "s": 62.34,
+        "e": 62.98
+      }
+    ],
+    "id": "l7"
+  },
+  {
+    "scene": "advanced_stash",
+    "text": "Kuzatilmayotgan fayllarni birga saqlash uchun minus u, ignore qilinganlar bilan to'liq tozalash uchun minus a, hunkma-hunk tanlash uchun esa minus p qo'llanadi.",
+    "show": "Kuzatilmayotgan fayllarni birga saqlash uchun minus u, ignore qilinganlar bilan to'liq tozalash uchun minus a, hunkma-hunk tanlash uchun esa minus p qo'llanadi.",
+    "say": "Kuzatilmayotgan fayllarni birga saqlash uchun minus yu, ignore qilinganlar bilan to'liq tozalash uchun minus ey, hunkma-hunk tanlash uchun esa minus pi qo'llanadi.",
+    "a0": 63.64,
+    "a1": 72.25,
+    "words": [
+      {
+        "w": "Kuzatilmayotgan",
+        "s": 63.64,
+        "e": 64.32
+      },
+      {
+        "w": "fayllarni",
+        "s": 64.36,
+        "e": 64.88
+      },
+      {
+        "w": "birga",
+        "s": 64.92,
+        "e": 65.14
+      },
+      {
+        "w": "saqlash",
+        "s": 65.18,
+        "e": 65.52
+      },
+      {
+        "w": "uchun",
+        "s": 65.54,
+        "e": 65.72
+      },
+      {
+        "w": "minus",
+        "s": 65.8,
+        "e": 66.1
+      },
+      {
+        "w": "yu,",
+        "s": 66.18,
+        "e": 66.26
+      },
+      {
+        "w": "ignore",
+        "s": 66.76,
+        "e": 67.06
+      },
+      {
+        "w": "qilinganlar",
+        "s": 67.06,
+        "e": 67.61
+      },
+      {
+        "w": "bilan",
+        "s": 67.63,
+        "e": 67.83
+      },
+      {
+        "w": "to'liq",
+        "s": 67.91,
+        "e": 68.17
+      },
+      {
+        "w": "tozalash",
+        "s": 68.23,
+        "e": 68.63
+      },
+      {
+        "w": "uchun",
+        "s": 68.65,
+        "e": 68.83
+      },
+      {
+        "w": "minus",
+        "s": 68.89,
+        "e": 69.19
+      },
+      {
+        "w": "ey,",
+        "s": 69.33,
+        "e": 69.41
+      },
+      {
+        "w": "hunkma-hunk",
+        "s": 69.87,
+        "e": 70.43
+      },
+      {
+        "w": "tanlash",
+        "s": 70.45,
+        "e": 70.75
+      },
+      {
+        "w": "uchun",
+        "s": 70.75,
+        "e": 70.89
+      },
+      {
+        "w": "esa",
+        "s": 70.93,
+        "e": 71.09
+      },
+      {
+        "w": "minus",
+        "s": 71.17,
+        "e": 71.47
+      },
+      {
+        "w": "pi",
+        "s": 71.55,
+        "e": 71.65
+      },
+      {
+        "w": "qo'llanadi.",
+        "s": 71.79,
+        "e": 72.25
+      }
+    ],
+    "id": "l8"
+  },
+  {
+    "scene": "conflicts_branch",
+    "text": "Agar branch o'zgarib stash qo'llashda konflikt chiqsa, pop stashni o'chirib yubormaydi; qulay yechim sifatida git stash branch yangi xavfsiz shoxcha ochib beradi.",
+    "show": "Agar branch o'zgarib stash qo'llashda konflikt chiqsa, pop stashni o'chirib yubormaydi; qulay yechim sifatida git stash branch yangi xavfsiz shoxcha ochib beradi.",
+    "say": "Agar branch o'zgarib stesh qo'llashda konflikt chiqsa, pop steshni o'chirib yubormaydi; qulay yechim sifatida git stesh branch yangi xavfsiz shoxcha ochib beradi.",
+    "a0": 72.89,
+    "a1": 81.33,
+    "words": [
+      {
+        "w": "Agar",
+        "s": 72.89,
+        "e": 73.13
+      },
+      {
+        "w": "branch",
+        "s": 73.19,
+        "e": 73.49
+      },
+      {
+        "w": "o'zgarib",
+        "s": 73.55,
+        "e": 73.89
+      },
+      {
+        "w": "stesh",
+        "s": 73.97,
+        "e": 74.21
+      },
+      {
+        "w": "qo'llashda",
+        "s": 74.25,
+        "e": 74.65
+      },
+      {
+        "w": "konflikt",
+        "s": 74.71,
+        "e": 75.09
+      },
+      {
+        "w": "chiqsa,",
+        "s": 75.09,
+        "e": 75.37
+      },
+      {
+        "w": "pop",
+        "s": 75.65,
+        "e": 75.87
+      },
+      {
+        "w": "steshni",
+        "s": 75.97,
+        "e": 76.29
+      },
+      {
+        "w": "o'chirib",
+        "s": 76.31,
+        "e": 76.57
+      },
+      {
+        "w": "yubormaydi;",
+        "s": 76.57,
+        "e": 77.55
+      },
+      {
+        "w": "qulay",
+        "s": 77.55,
+        "e": 77.79
+      },
+      {
+        "w": "yechim",
+        "s": 77.83,
+        "e": 78.07
+      },
+      {
+        "w": "sifatida",
+        "s": 78.11,
+        "e": 78.49
+      },
+      {
+        "w": "git",
+        "s": 78.61,
+        "e": 78.79
+      },
+      {
+        "w": "stesh",
+        "s": 78.87,
+        "e": 79.17
+      },
+      {
+        "w": "branch",
+        "s": 79.23,
+        "e": 79.53
+      },
+      {
+        "w": "yangi",
+        "s": 79.61,
+        "e": 79.95
+      },
+      {
+        "w": "xavfsiz",
+        "s": 80.05,
+        "e": 80.41
+      },
+      {
+        "w": "shoxcha",
+        "s": 80.45,
+        "e": 80.73
+      },
+      {
+        "w": "ochib",
+        "s": 80.77,
+        "e": 80.99
+      },
+      {
+        "w": "beradi.",
+        "s": 81.03,
+        "e": 81.33
+      }
+    ],
+    "id": "l9"
+  },
+  {
+    "scene": "conflicts_branch",
+    "text": "Tasodifan drop yoki clear bilan o'chirilgan stash commitlarini git fsck unreachable orqali topib, git stash store yordamida ro'yxatga qayta tiklash mumkin.",
+    "show": "Tasodifan drop yoki clear bilan o'chirilgan stash commitlarini git fsck unreachable orqali topib, git stash store yordamida ro'yxatga qayta tiklash mumkin.",
+    "say": "Tasodifan drop yoki clear bilan o'chirilgan stesh kommitlarini git ef-es-si-key an-richabl orqali topib, git stesh stor yordamida ro'yxatga qayta tiklash mumkin.",
+    "a0": 81.93,
+    "a1": 90.78,
+    "words": [
+      {
+        "w": "Tasodifan",
+        "s": 81.93,
+        "e": 82.47
+      },
+      {
+        "w": "drop",
+        "s": 82.52,
+        "e": 82.74
+      },
+      {
+        "w": "yoki",
+        "s": 82.74,
+        "e": 82.98
+      },
+      {
+        "w": "clear",
+        "s": 83.08,
+        "e": 83.34
+      },
+      {
+        "w": "bilan",
+        "s": 83.4,
+        "e": 83.58
+      },
+      {
+        "w": "o'chirilgan",
+        "s": 83.66,
+        "e": 84.1
+      },
+      {
+        "w": "stesh",
+        "s": 84.2,
+        "e": 84.42
+      },
+      {
+        "w": "kommitlarini",
+        "s": 84.46,
+        "e": 85
+      },
+      {
+        "w": "git",
+        "s": 85.34,
+        "e": 85.5
+      },
+      {
+        "w": "ef-es-si-key",
+        "s": 85.64,
+        "e": 86.28
+      },
+      {
+        "w": "an-richabl",
+        "s": 86.38,
+        "e": 86.88
+      },
+      {
+        "w": "orqali",
+        "s": 86.92,
+        "e": 87.2
+      },
+      {
+        "w": "topib,",
+        "s": 87.26,
+        "e": 87.56
+      },
+      {
+        "w": "git",
+        "s": 87.9,
+        "e": 88.06
+      },
+      {
+        "w": "stesh",
+        "s": 88.16,
+        "e": 88.42
+      },
+      {
+        "w": "stor",
+        "s": 88.64,
+        "e": 88.86
+      },
+      {
+        "w": "yordamida",
+        "s": 88.9,
+        "e": 89.34
+      },
+      {
+        "w": "ro'yxatga",
+        "s": 89.38,
+        "e": 89.8
+      },
+      {
+        "w": "qayta",
+        "s": 89.9,
+        "e": 90.12
+      },
+      {
+        "w": "tiklash",
+        "s": 90.16,
+        "e": 90.46
+      },
+      {
+        "w": "mumkin.",
+        "s": 90.5,
+        "e": 90.78
+      }
+    ],
+    "id": "l10"
+  },
+  {
+    "scene": "git_clean",
+    "text": "git clean buyrug'i ombordan tashqarida yotgan kuzatilmayotgan vaqtinchalik chiqindilarni diskdan butunlay o'chirib tashlaydi.",
+    "show": "git clean buyrug'i ombordan tashqarida yotgan kuzatilmayotgan vaqtinchalik chiqindilarni diskdan butunlay o'chirib tashlaydi.",
+    "say": "Git klin buyrug'i ombordan tashqarida yotgan kuzatilmayotgan vaqtinchalik chiqindilarni diskdan butunlay o'chirib tashlaydi.",
+    "a0": 91.56,
+    "a1": 97.71,
+    "words": [
+      {
+        "w": "Git",
+        "s": 91.56,
+        "e": 91.72
+      },
+      {
+        "w": "klin",
+        "s": 91.78,
+        "e": 92.04
+      },
+      {
+        "w": "buyrug'i",
+        "s": 92.08,
+        "e": 92.46
+      },
+      {
+        "w": "ombordan",
+        "s": 92.6,
+        "e": 92.98
+      },
+      {
+        "w": "tashqarida",
+        "s": 93.02,
+        "e": 93.44
+      },
+      {
+        "w": "yotgan",
+        "s": 93.48,
+        "e": 93.8
+      },
+      {
+        "w": "kuzatilmayotgan",
+        "s": 94.06,
+        "e": 94.83
+      },
+      {
+        "w": "vaqtinchalik",
+        "s": 94.91,
+        "e": 95.45
+      },
+      {
+        "w": "chiqindilarni",
+        "s": 95.47,
+        "e": 96.05
+      },
+      {
+        "w": "diskdan",
+        "s": 96.13,
+        "e": 96.51
+      },
+      {
+        "w": "butunlay",
+        "s": 96.61,
+        "e": 96.99
+      },
+      {
+        "w": "o'chirib",
+        "s": 97.03,
+        "e": 97.29
+      },
+      {
+        "w": "tashlaydi.",
+        "s": 97.33,
+        "e": 97.71
+      }
+    ],
+    "id": "l11"
+  },
+  {
+    "scene": "git_clean",
+    "text": "Xavfsizlik uchun avval minus n sinovini o'tkazing; papkalarni o'chirishda minus d, ignored fayllar uchun minus x va interaktiv saralashda minus i yordam beradi.",
+    "show": "Xavfsizlik uchun avval minus n sinovini o'tkazing; papkalarni o'chirishda minus d, ignored fayllar uchun minus x va interaktiv saralashda minus i yordam beradi.",
+    "say": "Xavfsizlik uchun avval minus en sinovini o'tkazing; papkalarni o'chirishda minus di, ignored fayllar uchun minus iks va interaktiv saralashda minus ay yordam beradi.",
+    "a0": 98.23,
+    "a1": 107.26,
+    "words": [
+      {
+        "w": "Xavfsizlik",
+        "s": 98.23,
+        "e": 98.65
+      },
+      {
+        "w": "uchun",
+        "s": 98.67,
+        "e": 98.87
+      },
+      {
+        "w": "avval",
+        "s": 98.99,
+        "e": 99.25
+      },
+      {
+        "w": "minus",
+        "s": 99.31,
+        "e": 99.57
+      },
+      {
+        "w": "en",
+        "s": 99.69,
+        "e": 99.81
+      },
+      {
+        "w": "sinovini",
+        "s": 99.87,
+        "e": 100.21
+      },
+      {
+        "w": "o'tkazing;",
+        "s": 100.21,
+        "e": 101.01
+      },
+      {
+        "w": "papkalarni",
+        "s": 101.01,
+        "e": 101.47
+      },
+      {
+        "w": "o'chirishda",
+        "s": 101.51,
+        "e": 101.89
+      },
+      {
+        "w": "minus",
+        "s": 101.97,
+        "e": 102.25
+      },
+      {
+        "w": "di,",
+        "s": 102.33,
+        "e": 102.43
+      },
+      {
+        "w": "ignored",
+        "s": 102.85,
+        "e": 103.18
+      },
+      {
+        "w": "fayllar",
+        "s": 103.24,
+        "e": 103.6
+      },
+      {
+        "w": "uchun",
+        "s": 103.62,
+        "e": 103.82
+      },
+      {
+        "w": "minus",
+        "s": 103.86,
+        "e": 104.14
+      },
+      {
+        "w": "iks",
+        "s": 104.24,
+        "e": 104.44
+      },
+      {
+        "w": "va",
+        "s": 104.76,
+        "e": 104.82
+      },
+      {
+        "w": "interaktiv",
+        "s": 104.94,
+        "e": 105.4
+      },
+      {
+        "w": "saralashda",
+        "s": 105.44,
+        "e": 105.9
+      },
+      {
+        "w": "minus",
+        "s": 106,
+        "e": 106.3
+      },
+      {
+        "w": "ay",
+        "s": 106.46,
+        "e": 106.56
+      },
+      {
+        "w": "yordam",
+        "s": 106.62,
+        "e": 106.92
+      },
+      {
+        "w": "beradi.",
+        "s": 106.98,
+        "e": 107.26
+      }
+    ],
+    "id": "l12"
+  }
+]

@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" playsinline poster="/video/git/38-stash-va-clean.jpg" src="/video/git/38-stash-va-clean.mp4">
+    <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/git/38-stash-va-clean.chapters.vtt" default>
+    <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/git/38-stash-va-clean.uz.vtt">
+  </video>
+  <figcaption>38.1-video. Git stash va clean: vaqtincha yashirish, commit tuzilishi va xavfsiz tozalash</figcaption>
+</figure>
+
 Tasavvur qiling: siz bir funksiya ustida ishlayapsiz, fayllar yarim tayyor, testlar o'tmaydi. Shu payt shoshilinch xato haqida xabar keladi — boshqa branch'ga o'tib, uni tuzatish kerak. Yarim tayyor ishni commit qilgingiz kelmaydi (tarixda "WIP, ishlamaydi" degan commit qoladi), lekin uni yo'qotib ham bo'lmaydi.
 
 Buning uchun **`git stash`** bor. **Stash** (inglizcha "yashirib qo'yish") — tugallanmagan o'zgarishlarni vaqtincha olib qo'yadigan joy. U ikki narsani saqlaydi:
