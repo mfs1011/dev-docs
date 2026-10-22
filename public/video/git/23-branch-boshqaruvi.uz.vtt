@@ -1,0 +1,61 @@
+WEBVTT
+
+1
+00:01.420 --> 00:09.070
+Salom! Ushbu yigirma uchinchi bobda loyihada ko‘payib ketgan tarmoqlarni
+tartibli boshqarish va nazorat qilish vositalarini o‘rganamiz.
+
+2
+00:09.710 --> 00:17.060
+git branch buyrug‘i nafaqat tarmoq ochish, balki butun ombordagi
+brenchlarni tahlil qilish va saralashning asosiy kalitidir.
+
+3
+00:20.510 --> 00:27.550
+git branch buyrug‘iga minus v bayrog‘ini qo‘shsak, har bir
+brenchning oxirgi kommit heshi va uning xabari birga chiqadi.
+
+4
+00:27.920 --> 00:35.290
+list parametri va maxsus yulduzcha naqshlari orqali yuzlab brenchlar
+orasidan aynan kerakli guruhlarni bir zumda filtrlab olamiz.
+
+5
+00:39.460 --> 00:45.960
+merged filtri asosiy brenchga to‘liq qo‘shilgan va xavfsiz
+o‘chirilishi mumkin bo‘lgan tarmoqlarni aniq ajratib beradi.
+
+6
+00:46.330 --> 00:53.900
+no-merged esa hali birlashtirilmagan mustaqil ishlarni ko‘rsatadi va
+Git ularni tasodifan o‘chirib yuborishdan ishonchli himoya qiladi.
+
+7
+00:57.870 --> 01:04.300
+contains opsiyasi ma’lum bir kommit aynan qaysi brenchlar
+tarixiga kirganini graf bo‘ylab tekshirish imkonini beradi.
+
+8
+01:04.600 --> 01:11.250
+points-at esa hozirgi kommit ustida to‘g‘ridan-to‘g‘ri turgan
+tarmoqlarni aniqlab, brenchlar chalkashligining oldini oladi.
+
+9
+01:15.260 --> 01:21.950
+Vazifasi tugagan brenchni xavfsiz minus d bilan,
+birlashtirilmaganini esa majburiy katta minus D bilan o‘chiramiz.
+
+10
+01:22.240 --> 01:29.800
+minus m orqali brench nomini o‘zgartirganda esa, Git refs
+papkasidagi fayl va uning reflog jurnalini toza qayta nomlaydi.
+
+11
+01:33.750 --> 01:40.520
+sort committerdate sozlamasi yaqinda faol bo‘lgan brenchlarni
+doimo ro‘yxat boshida ko‘rsatib, vaqtingizni tejaydi.
+
+12
+01:40.960 --> 01:47.710
+Keyingi yigirma to‘rtinchi bobda tarmoqlanish tarixini to‘g‘ri
+va tekis chiziqqa keltiruvchi rebase texnikasini o‘rganamiz.

@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" playsinline poster="/video/git/23-branch-boshqaruvi.jpg" src="/video/git/23-branch-boshqaruvi.mp4">
+    <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/git/23-branch-boshqaruvi.chapters.vtt" default>
+    <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/git/23-branch-boshqaruvi.uz.vtt">
+  </video>
+  <figcaption>23.1-video. Git'da branchlarni boshqarish, saralash va tozalash</figcaption>
+</figure>
+
 [20–22-boblarda](20-branch-bu-ref.md) branch'larni yaratdik, birlashtirdik va konfliktlarni hal qildik. Branch'lardan har kuni foydalana boshlaganingizda, ular tez ko'payadi: har vazifa, har tuzatish, har tajriba uchun bittadan. Bir necha haftadan keyin `git branch` o'nlab nomni chiqaradi va savollar tug'iladi: qaysilari allaqachon qo'shilgan? Qaysi birida hali saqlanmagan ish bor? Bu branch serverda bormi? Nomi noto'g'ri bo'lsa nima qilish kerak?
 
 Bu bob — shu savollarga javob beradigan vositalar. Ularning deyarli hammasi bitta buyruqda: `git branch`. Pro Git aytganidek, u branch yaratish va o'chirishdan ancha ko'proq ish qiladi:
