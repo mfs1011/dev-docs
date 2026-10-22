@@ -1,0 +1,1079 @@
+[
+  {
+    "id": "l1",
+    "scene": "worktree_intro",
+    "text": "Katta loyihalarda bir vaqtning o'zida shoshilinch xatolarni tuzatish yoki parallel branchlarda ishlash zarurati paydo bo'ladi.",
+    "show": "Katta loyihalarda bir vaqtning o'zida shoshilinch xatolarni tuzatish yoki parallel branchlarda ishlash zarurati paydo bo'ladi.",
+    "say": "Katta loyihalarda bir vaqtning o'zida shoshilinch xatolarni tuzatish yoki parallel branchlarda ishlash zarurati paydo bo'ladi.",
+    "a0": 0.26,
+    "a1": 6.68,
+    "words": [
+      {
+        "w": "Katta",
+        "s": 0.26,
+        "e": 0.54
+      },
+      {
+        "w": "loyihalarda",
+        "s": 0.58,
+        "e": 1.16
+      },
+      {
+        "w": "bir",
+        "s": 1.26,
+        "e": 1.36
+      },
+      {
+        "w": "vaqtning",
+        "s": 1.42,
+        "e": 1.76
+      },
+      {
+        "w": "o'zida",
+        "s": 1.8,
+        "e": 2.06
+      },
+      {
+        "w": "shoshilinch",
+        "s": 2.14,
+        "e": 2.6
+      },
+      {
+        "w": "xatolarni",
+        "s": 2.62,
+        "e": 3.16
+      },
+      {
+        "w": "tuzatish",
+        "s": 3.2,
+        "e": 3.66
+      },
+      {
+        "w": "yoki",
+        "s": 3.72,
+        "e": 3.96
+      },
+      {
+        "w": "parallel",
+        "s": 4.28,
+        "e": 4.68
+      },
+      {
+        "w": "branchlarda",
+        "s": 4.74,
+        "e": 5.3
+      },
+      {
+        "w": "ishlash",
+        "s": 5.34,
+        "e": 5.6
+      },
+      {
+        "w": "zarurati",
+        "s": 5.64,
+        "e": 6.06
+      },
+      {
+        "w": "paydo",
+        "s": 6.1,
+        "e": 6.34
+      },
+      {
+        "w": "bo'ladi.",
+        "s": 6.4,
+        "e": 6.68
+      }
+    ]
+  },
+  {
+    "id": "l2",
+    "scene": "worktree_intro",
+    "text": "Git vork-tri mexanizmi butun omborni qayta klonlamasdan, bitta obyektlar bazasiga ulangan mustaqil ishchi kataloglar ochishga imkon beradi.",
+    "show": "Git vork-tri mexanizmi butun omborni qayta klonlamasdan, bitta obyektlar bazasiga ulangan mustaqil ishchi kataloglar ochishga imkon beradi.",
+    "say": "Git vork-tri mexanizmi butun omborni qayta klonlamasdan, bitta obyektlar bazasiga ulangan mustaqil ishchi kataloglar ochishga imkon beradi.",
+    "a0": 7.48,
+    "a1": 15.59,
+    "words": [
+      {
+        "w": "Git",
+        "s": 7.48,
+        "e": 7.67
+      },
+      {
+        "w": "vork-tri",
+        "s": 7.77,
+        "e": 8.15
+      },
+      {
+        "w": "mexanizmi",
+        "s": 8.21,
+        "e": 8.67
+      },
+      {
+        "w": "butun",
+        "s": 9.03,
+        "e": 9.27
+      },
+      {
+        "w": "omborni",
+        "s": 9.37,
+        "e": 9.75
+      },
+      {
+        "w": "qayta",
+        "s": 9.81,
+        "e": 10.07
+      },
+      {
+        "w": "klonlamasdan,",
+        "s": 10.13,
+        "e": 10.89
+      },
+      {
+        "w": "bitta",
+        "s": 11.21,
+        "e": 11.43
+      },
+      {
+        "w": "obyektlar",
+        "s": 11.49,
+        "e": 11.89
+      },
+      {
+        "w": "bazasiga",
+        "s": 11.93,
+        "e": 12.35
+      },
+      {
+        "w": "ulangan",
+        "s": 12.39,
+        "e": 12.79
+      },
+      {
+        "w": "mustaqil",
+        "s": 12.85,
+        "e": 13.31
+      },
+      {
+        "w": "ishchi",
+        "s": 13.41,
+        "e": 13.63
+      },
+      {
+        "w": "kataloglar",
+        "s": 13.67,
+        "e": 14.19
+      },
+      {
+        "w": "ochishga",
+        "s": 14.27,
+        "e": 14.61
+      },
+      {
+        "w": "imkon",
+        "s": 14.99,
+        "e": 15.27
+      },
+      {
+        "w": "beradi.",
+        "s": 15.31,
+        "e": 15.59
+      }
+    ]
+  },
+  {
+    "id": "l3",
+    "scene": "worktree_ops",
+    "text": "Jiti vork-tri add buyrug'i ko'rsatilgan papka va branch uchun alohida katalog yaratib, darhol ishlashga tayyorlaydi.",
+    "show": "Jiti vork-tri add buyrug'i ko'rsatilgan papka va branch uchun alohida katalog yaratib, darhol ishlashga tayyorlaydi.",
+    "say": "Jiti vork-tri add buyrug'i ko'rsatilgan papka va branch uchun alohida katalog yaratib, darhol ishlashga tayyorlaydi.",
+    "a0": 16.57,
+    "a1": 22.96,
+    "words": [
+      {
+        "w": "Jiti",
+        "s": 16.57,
+        "e": 16.81
+      },
+      {
+        "w": "vork-tri",
+        "s": 16.87,
+        "e": 17.25
+      },
+      {
+        "w": "add",
+        "s": 17.45,
+        "e": 17.59
+      },
+      {
+        "w": "buyrug'i",
+        "s": 17.67,
+        "e": 18.03
+      },
+      {
+        "w": "ko'rsatilgan",
+        "s": 18.37,
+        "e": 18.95
+      },
+      {
+        "w": "papka",
+        "s": 19.01,
+        "e": 19.29
+      },
+      {
+        "w": "va",
+        "s": 19.33,
+        "e": 19.39
+      },
+      {
+        "w": "branch",
+        "s": 19.47,
+        "e": 19.75
+      },
+      {
+        "w": "uchun",
+        "s": 19.77,
+        "e": 19.95
+      },
+      {
+        "w": "alohida",
+        "s": 20.07,
+        "e": 20.47
+      },
+      {
+        "w": "katalog",
+        "s": 20.53,
+        "e": 20.91
+      },
+      {
+        "w": "yaratib,",
+        "s": 20.95,
+        "e": 21.29
+      },
+      {
+        "w": "darhol",
+        "s": 21.61,
+        "e": 21.97
+      },
+      {
+        "w": "ishlashga",
+        "s": 22.05,
+        "e": 22.41
+      },
+      {
+        "w": "tayyorlaydi.",
+        "s": 22.45,
+        "e": 22.96
+      }
+    ]
+  },
+  {
+    "id": "l4",
+    "scene": "worktree_ops",
+    "text": "Ro'yxatni ko'rish va tugallangan filiallarni xavfsiz tozalash esa list hamda remuv buyruqlari orqali amalga oshiriladi.",
+    "show": "Ro'yxatni ko'rish va tugallangan filiallarni xavfsiz tozalash esa list hamda remuv buyruqlari orqali amalga oshiriladi.",
+    "say": "Ro'yxatni ko'rish va tugallangan filiallarni xavfsiz tozalash esa list hamda remuv buyruqlari orqali amalga oshiriladi.",
+    "a0": 23.6,
+    "a1": 30.0,
+    "words": [
+      {
+        "w": "Ro'yxatni",
+        "s": 23.6,
+        "e": 23.98
+      },
+      {
+        "w": "ko'rish",
+        "s": 24.04,
+        "e": 24.34
+      },
+      {
+        "w": "va",
+        "s": 24.38,
+        "e": 24.44
+      },
+      {
+        "w": "tugallangan",
+        "s": 24.5,
+        "e": 25.08
+      },
+      {
+        "w": "filiallarni",
+        "s": 25.12,
+        "e": 25.72
+      },
+      {
+        "w": "xavfsiz",
+        "s": 25.76,
+        "e": 26.12
+      },
+      {
+        "w": "tozalash",
+        "s": 26.14,
+        "e": 26.52
+      },
+      {
+        "w": "esa",
+        "s": 26.56,
+        "e": 26.72
+      },
+      {
+        "w": "list",
+        "s": 27.14,
+        "e": 27.34
+      },
+      {
+        "w": "hamda",
+        "s": 27.38,
+        "e": 27.62
+      },
+      {
+        "w": "remuv",
+        "s": 27.92,
+        "e": 28.14
+      },
+      {
+        "w": "buyruqlari",
+        "s": 28.18,
+        "e": 28.62
+      },
+      {
+        "w": "orqali",
+        "s": 28.66,
+        "e": 28.98
+      },
+      {
+        "w": "amalga",
+        "s": 29.28,
+        "e": 29.54
+      },
+      {
+        "w": "oshiriladi.",
+        "s": 29.6,
+        "e": 30.0
+      }
+    ]
+  },
+  {
+    "id": "l5",
+    "scene": "branch_safety",
+    "text": "Git xatolarning oldini olish uchun bir xil branchni bir vaqtda ikkita alohida vork-trida ochishni qat'iy taqiqlaydi.",
+    "show": "Git xatolarning oldini olish uchun bir xil branchni bir vaqtda ikkita alohida vork-trida ochishni qat'iy taqiqlaydi.",
+    "say": "Git xatolarning oldini olish uchun bir xil branchni bir vaqtda ikkita alohida vork-trida ochishni qat'iy taqiqlaydi.",
+    "a0": 30.82,
+    "a1": 36.54,
+    "words": [
+      {
+        "w": "Git",
+        "s": 30.82,
+        "e": 31.0
+      },
+      {
+        "w": "xatolarning",
+        "s": 31.06,
+        "e": 31.62
+      },
+      {
+        "w": "oldini",
+        "s": 31.68,
+        "e": 31.9
+      },
+      {
+        "w": "olish",
+        "s": 31.94,
+        "e": 32.14
+      },
+      {
+        "w": "uchun",
+        "s": 32.16,
+        "e": 32.32
+      },
+      {
+        "w": "bir",
+        "s": 32.38,
+        "e": 32.5
+      },
+      {
+        "w": "xil",
+        "s": 32.54,
+        "e": 32.68
+      },
+      {
+        "w": "branchni",
+        "s": 32.72,
+        "e": 33.1
+      },
+      {
+        "w": "bir",
+        "s": 33.16,
+        "e": 33.28
+      },
+      {
+        "w": "vaqtda",
+        "s": 33.32,
+        "e": 33.6
+      },
+      {
+        "w": "ikkita",
+        "s": 33.72,
+        "e": 33.96
+      },
+      {
+        "w": "alohida",
+        "s": 34.02,
+        "e": 34.36
+      },
+      {
+        "w": "vork-trida",
+        "s": 34.44,
+        "e": 34.9
+      },
+      {
+        "w": "ochishni",
+        "s": 34.96,
+        "e": 35.28
+      },
+      {
+        "w": "qat'iy",
+        "s": 35.58,
+        "e": 35.9
+      },
+      {
+        "w": "taqiqlaydi.",
+        "s": 35.98,
+        "e": 36.54
+      }
+    ]
+  },
+  {
+    "id": "l6",
+    "scene": "branch_safety",
+    "text": "Har bir ishchi maydon o'zining mustaqil xed va indeksiga ega bo'lsa-da, barcha commitlar umumiy omborga bir zumda qo'shiladi.",
+    "show": "Har bir ishchi maydon o'zining mustaqil xed va indeksiga ega bo'lsa-da, barcha commitlar umumiy omborga bir zumda qo'shiladi.",
+    "say": "Har bir ishchi maydon o'zining mustaqil xed va indeksiga ega bo'lsa-da, barcha commitlar umumiy omborga bir zumda qo'shiladi.",
+    "a0": 37.36,
+    "a1": 43.93,
+    "words": [
+      {
+        "w": "Har",
+        "s": 37.36,
+        "e": 37.51
+      },
+      {
+        "w": "bir",
+        "s": 37.55,
+        "e": 37.65
+      },
+      {
+        "w": "ishchi",
+        "s": 37.71,
+        "e": 37.91
+      },
+      {
+        "w": "maydon",
+        "s": 37.95,
+        "e": 38.25
+      },
+      {
+        "w": "o'zining",
+        "s": 38.33,
+        "e": 38.63
+      },
+      {
+        "w": "mustaqil",
+        "s": 38.65,
+        "e": 39.07
+      },
+      {
+        "w": "xed",
+        "s": 39.15,
+        "e": 39.33
+      },
+      {
+        "w": "va",
+        "s": 39.39,
+        "e": 39.45
+      },
+      {
+        "w": "indeksiga",
+        "s": 39.55,
+        "e": 39.99
+      },
+      {
+        "w": "ega",
+        "s": 40.03,
+        "e": 40.17
+      },
+      {
+        "w": "bo'lsa-da,",
+        "s": 40.21,
+        "e": 40.57
+      },
+      {
+        "w": "barcha",
+        "s": 40.99,
+        "e": 41.27
+      },
+      {
+        "w": "commitlar",
+        "s": 41.33,
+        "e": 41.77
+      },
+      {
+        "w": "umumiy",
+        "s": 41.89,
+        "e": 42.19
+      },
+      {
+        "w": "omborga",
+        "s": 42.27,
+        "e": 42.71
+      },
+      {
+        "w": "bir",
+        "s": 43.05,
+        "e": 43.17
+      },
+      {
+        "w": "zumda",
+        "s": 43.23,
+        "e": 43.45
+      },
+      {
+        "w": "qo'shiladi.",
+        "s": 43.51,
+        "e": 43.93
+      }
+    ]
+  },
+  {
+    "id": "l7",
+    "scene": "sparse_checkout",
+    "text": "Yuz minglab faylli yirik monorepolarda spars-chekaut sozlamasi diskka faqat kerakli quyi kataloglarni yuklashni ta'minlaydi.",
+    "show": "Yuz minglab faylli yirik monorepolarda spars-chekaut sozlamasi diskka faqat kerakli quyi kataloglarni yuklashni ta'minlaydi.",
+    "say": "Yuz minglab faylli yirik monorepolarda spars-chekaut sozlamasi diskka faqat kerakli quyi kataloglarni yuklashni ta'minlaydi.",
+    "a0": 44.79,
+    "a1": 52.05,
+    "words": [
+      {
+        "w": "Yuz",
+        "s": 44.79,
+        "e": 44.99
+      },
+      {
+        "w": "minglab",
+        "s": 45.03,
+        "e": 45.35
+      },
+      {
+        "w": "faylli",
+        "s": 45.39,
+        "e": 45.79
+      },
+      {
+        "w": "yirik",
+        "s": 45.89,
+        "e": 46.13
+      },
+      {
+        "w": "monorepolarda",
+        "s": 46.19,
+        "e": 46.93
+      },
+      {
+        "w": "spars-chekaut",
+        "s": 47.25,
+        "e": 48.05
+      },
+      {
+        "w": "sozlamasi",
+        "s": 48.09,
+        "e": 48.61
+      },
+      {
+        "w": "diskka",
+        "s": 48.97,
+        "e": 49.29
+      },
+      {
+        "w": "faqat",
+        "s": 49.33,
+        "e": 49.59
+      },
+      {
+        "w": "kerakli",
+        "s": 49.65,
+        "e": 50.05
+      },
+      {
+        "w": "quyi",
+        "s": 50.17,
+        "e": 50.37
+      },
+      {
+        "w": "kataloglarni",
+        "s": 50.41,
+        "e": 51.07
+      },
+      {
+        "w": "yuklashni",
+        "s": 51.09,
+        "e": 51.49
+      },
+      {
+        "w": "ta'minlaydi.",
+        "s": 51.53,
+        "e": 52.05
+      }
+    ]
+  },
+  {
+    "id": "l8",
+    "scene": "sparse_checkout",
+    "text": "Konus rejimi orqali keraksiz modullarni chetlab o'tish kompyuter xotirasini tejab, indekslash tezligini keskin oshiradi.",
+    "show": "Konus rejimi orqali keraksiz modullarni chetlab o'tish kompyuter xotirasini tejab, indekslash tezligini keskin oshiradi.",
+    "say": "Konus rejimi orqali keraksiz modullarni chetlab o'tish kompyuter xotirasini tejab, indekslash tezligini keskin oshiradi.",
+    "a0": 52.84,
+    "a1": 59.26,
+    "words": [
+      {
+        "w": "Konus",
+        "s": 52.84,
+        "e": 53.14
+      },
+      {
+        "w": "rejimi",
+        "s": 53.2,
+        "e": 53.46
+      },
+      {
+        "w": "orqali",
+        "s": 53.52,
+        "e": 53.8
+      },
+      {
+        "w": "keraksiz",
+        "s": 53.86,
+        "e": 54.26
+      },
+      {
+        "w": "modullarni",
+        "s": 54.34,
+        "e": 54.86
+      },
+      {
+        "w": "chetlab",
+        "s": 54.88,
+        "e": 55.2
+      },
+      {
+        "w": "o'tish",
+        "s": 55.22,
+        "e": 55.44
+      },
+      {
+        "w": "kompyuter",
+        "s": 55.72,
+        "e": 56.16
+      },
+      {
+        "w": "xotirasini",
+        "s": 56.2,
+        "e": 56.7
+      },
+      {
+        "w": "tejab,",
+        "s": 56.72,
+        "e": 57.02
+      },
+      {
+        "w": "indekslash",
+        "s": 57.36,
+        "e": 57.88
+      },
+      {
+        "w": "tezligini",
+        "s": 57.9,
+        "e": 58.36
+      },
+      {
+        "w": "keskin",
+        "s": 58.42,
+        "e": 58.78
+      },
+      {
+        "w": "oshiradi.",
+        "s": 58.88,
+        "e": 59.26
+      }
+    ]
+  },
+  {
+    "id": "l9",
+    "scene": "partial_clone",
+    "text": "Partiyal klonlash filtri yordamida gigabaytlab binar fayllar yoki og'ir bloblar faqat zarurat tug'ilgandagina serverdan tortib olinadi.",
+    "show": "Partiyal klonlash filtri yordamida gigabaytlab binar fayllar yoki og'ir bloblar faqat zarurat tug'ilgandagina serverdan tortib olinadi.",
+    "say": "Partiyal klonlash filtri yordamida gigabaytlab binar fayllar yoki og'ir bloblar faqat zarurat tug'ilgandagina serverdan tortib olinadi.",
+    "a0": 60.1,
+    "a1": 67.4,
+    "words": [
+      {
+        "w": "Partiyal",
+        "s": 60.1,
+        "e": 60.44
+      },
+      {
+        "w": "klonlash",
+        "s": 60.48,
+        "e": 60.86
+      },
+      {
+        "w": "filtri",
+        "s": 60.88,
+        "e": 61.16
+      },
+      {
+        "w": "yordamida",
+        "s": 61.16,
+        "e": 61.62
+      },
+      {
+        "w": "gigabaytlab",
+        "s": 61.7,
+        "e": 62.34
+      },
+      {
+        "w": "binar",
+        "s": 62.4,
+        "e": 62.7
+      },
+      {
+        "w": "fayllar",
+        "s": 62.76,
+        "e": 63.18
+      },
+      {
+        "w": "yoki",
+        "s": 63.24,
+        "e": 63.44
+      },
+      {
+        "w": "og'ir",
+        "s": 63.8,
+        "e": 64.0
+      },
+      {
+        "w": "bloblar",
+        "s": 64.06,
+        "e": 64.48
+      },
+      {
+        "w": "faqat",
+        "s": 64.74,
+        "e": 65.0
+      },
+      {
+        "w": "zarurat",
+        "s": 65.1,
+        "e": 65.5
+      },
+      {
+        "w": "tug'ilgandagina",
+        "s": 65.52,
+        "e": 66.2
+      },
+      {
+        "w": "serverdan",
+        "s": 66.26,
+        "e": 66.72
+      },
+      {
+        "w": "tortib",
+        "s": 66.76,
+        "e": 67.04
+      },
+      {
+        "w": "olinadi.",
+        "s": 67.1,
+        "e": 67.4
+      }
+    ]
+  },
+  {
+    "id": "l10",
+    "scene": "partial_clone",
+    "text": "Maykrosoft va Git hamjamiyati yaratgan skalar vositasi esa barcha ushbu ilg'or texnologiyalarni bir tugma bilan sozlaydi.",
+    "show": "Maykrosoft va Git hamjamiyati yaratgan skalar vositasi esa barcha ushbu ilg'or texnologiyalarni bir tugma bilan sozlaydi.",
+    "say": "Maykrosoft va Git hamjamiyati yaratgan skalar vositasi esa barcha ushbu ilg'or texnologiyalarni bir tugma bilan sozlaydi.",
+    "a0": 68.37,
+    "a1": 74.69,
+    "words": [
+      {
+        "w": "Maykrosoft",
+        "s": 68.37,
+        "e": 68.91
+      },
+      {
+        "w": "va",
+        "s": 68.97,
+        "e": 69.03
+      },
+      {
+        "w": "Git",
+        "s": 69.15,
+        "e": 69.31
+      },
+      {
+        "w": "hamjamiyati",
+        "s": 69.35,
+        "e": 69.87
+      },
+      {
+        "w": "yaratgan",
+        "s": 69.89,
+        "e": 70.29
+      },
+      {
+        "w": "skalar",
+        "s": 70.37,
+        "e": 70.73
+      },
+      {
+        "w": "vositasi",
+        "s": 70.77,
+        "e": 71.25
+      },
+      {
+        "w": "esa",
+        "s": 71.31,
+        "e": 71.47
+      },
+      {
+        "w": "barcha",
+        "s": 71.87,
+        "e": 72.13
+      },
+      {
+        "w": "ushbu",
+        "s": 72.17,
+        "e": 72.35
+      },
+      {
+        "w": "ilg'or",
+        "s": 72.45,
+        "e": 72.71
+      },
+      {
+        "w": "texnologiyalarni",
+        "s": 72.75,
+        "e": 73.51
+      },
+      {
+        "w": "bir",
+        "s": 73.61,
+        "e": 73.73
+      },
+      {
+        "w": "tugma",
+        "s": 73.77,
+        "e": 73.99
+      },
+      {
+        "w": "bilan",
+        "s": 74.03,
+        "e": 74.23
+      },
+      {
+        "w": "sozlaydi.",
+        "s": 74.27,
+        "e": 74.69
+      }
+    ]
+  },
+  {
+    "id": "l11",
+    "scene": "xulosa",
+    "text": "Vork-tri va yirik repozitoriy vositalari dasturchini ortiqcha klonlash hamda kutishlardan xalos etib, mahsuldorlikni bir necha barobar oshiradi.",
+    "show": "Vork-tri va yirik repozitoriy vositalari dasturchini ortiqcha klonlash hamda kutishlardan xalos etib, mahsuldorlikni bir necha barobar oshiradi.",
+    "say": "Vork-tri va yirik repozitoriy vositalari dasturchini ortiqcha klonlash hamda kutishlardan xalos etib, mahsuldorlikni bir necha barobar oshiradi.",
+    "a0": 75.55,
+    "a1": 83.18,
+    "words": [
+      {
+        "w": "Vork-tri",
+        "s": 75.55,
+        "e": 75.95
+      },
+      {
+        "w": "va",
+        "s": 76.03,
+        "e": 76.11
+      },
+      {
+        "w": "yirik",
+        "s": 76.21,
+        "e": 76.45
+      },
+      {
+        "w": "repozitoriy",
+        "s": 76.53,
+        "e": 77.07
+      },
+      {
+        "w": "vositalari",
+        "s": 77.13,
+        "e": 77.71
+      },
+      {
+        "w": "dasturchini",
+        "s": 78.03,
+        "e": 78.51
+      },
+      {
+        "w": "ortiqcha",
+        "s": 78.63,
+        "e": 78.97
+      },
+      {
+        "w": "klonlash",
+        "s": 79.03,
+        "e": 79.51
+      },
+      {
+        "w": "hamda",
+        "s": 79.55,
+        "e": 79.75
+      },
+      {
+        "w": "kutishlardan",
+        "s": 79.81,
+        "e": 80.33
+      },
+      {
+        "w": "xalos",
+        "s": 80.41,
+        "e": 80.69
+      },
+      {
+        "w": "etib,",
+        "s": 80.75,
+        "e": 80.93
+      },
+      {
+        "w": "mahsuldorlikni",
+        "s": 81.23,
+        "e": 81.97
+      },
+      {
+        "w": "bir",
+        "s": 82.09,
+        "e": 82.21
+      },
+      {
+        "w": "necha",
+        "s": 82.27,
+        "e": 82.45
+      },
+      {
+        "w": "barobar",
+        "s": 82.47,
+        "e": 82.8
+      },
+      {
+        "w": "oshiradi.",
+        "s": 82.86,
+        "e": 83.18
+      }
+    ]
+  },
+  {
+    "id": "l12",
+    "scene": "xulosa",
+    "text": "O'zgarishlar tugagach vork-tri prun buyrug'i bilan eski yozuvlarni tozalab turish tizimni doimiy tartibda saqlashga xizmat qiladi.",
+    "show": "O'zgarishlar tugagach vork-tri prun buyrug'i bilan eski yozuvlarni tozalab turish tizimni doimiy tartibda saqlashga xizmat qiladi.",
+    "say": "O'zgarishlar tugagach vork-tri prun buyrug'i bilan eski yozuvlarni tozalab turish tizimni doimiy tartibda saqlashga xizmat qiladi.",
+    "a0": 84.06,
+    "a1": 90.77,
+    "words": [
+      {
+        "w": "O'zgarishlar",
+        "s": 84.06,
+        "e": 84.52
+      },
+      {
+        "w": "tugagach",
+        "s": 84.54,
+        "e": 84.98
+      },
+      {
+        "w": "vork-tri",
+        "s": 85.12,
+        "e": 85.48
+      },
+      {
+        "w": "prun",
+        "s": 85.58,
+        "e": 85.84
+      },
+      {
+        "w": "buyrug'i",
+        "s": 85.88,
+        "e": 86.18
+      },
+      {
+        "w": "bilan",
+        "s": 86.22,
+        "e": 86.42
+      },
+      {
+        "w": "eski",
+        "s": 86.54,
+        "e": 86.74
+      },
+      {
+        "w": "yozuvlarni",
+        "s": 86.76,
+        "e": 87.22
+      },
+      {
+        "w": "tozalab",
+        "s": 87.28,
+        "e": 87.6
+      },
+      {
+        "w": "turish",
+        "s": 87.64,
+        "e": 87.88
+      },
+      {
+        "w": "tizimni",
+        "s": 88.14,
+        "e": 88.5
+      },
+      {
+        "w": "doimiy",
+        "s": 88.56,
+        "e": 88.98
+      },
+      {
+        "w": "tartibda",
+        "s": 89.04,
+        "e": 89.42
+      },
+      {
+        "w": "saqlashga",
+        "s": 89.46,
+        "e": 89.92
+      },
+      {
+        "w": "xizmat",
+        "s": 90.18,
+        "e": 90.49
+      },
+      {
+        "w": "qiladi.",
+        "s": 90.51,
+        "e": 90.77
+      }
+    ]
+  }
+]
