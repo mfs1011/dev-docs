@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" playsinline poster="/video/git/26-murakkab-merge.jpg" src="/video/git/26-murakkab-merge.mp4">
+    <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/git/26-murakkab-merge.chapters.vtt" default>
+    <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/git/26-murakkab-merge.uz.vtt">
+  </video>
+  <figcaption>26.1-video. Git'da murakkab merge, strategiyalar va xatolarni xavfsiz bekor qilish</figcaption>
+</figure>
+
 [21-bobda](21-branch-va-merge.md) merge'ning ikki turini, [22-bobda](22-konfliktlar.md) esa konflikt paytida index'da nima bo'lishini (1/2/3 bosqichlar, `MERGE_HEAD`, `AUTO_MERGE`) ko'rdik. Bu bob — undan keyingi qadam: **merge'ni boshqarish**.
 
 Har `git merge` ortida bitta savol turadi: "ikki (yoki undan ko'p) tarixdan bitta natija tree'sini qanday hosil qilaman?" Bu savolga javob beradigan algoritm — **merge strategiyasi** (*merge strategy*). Siz hozirgacha bilmagan holda doim bittasini ishlatgansiz — `ort`. Chiqishdagi `Merge made by the 'ort' strategy.` qatori aynan shu haqda.

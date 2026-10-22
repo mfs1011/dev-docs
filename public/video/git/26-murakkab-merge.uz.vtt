@@ -1,0 +1,61 @@
+WEBVTT
+
+1
+00:01.420 --> 00:10.840
+Salom! Ushbu yigirma oltinchi bobda Git'da murakkab merge holatlari, turli
+merge strategiyalari va ularning maxsus opsiyalarini batafsil o‘rganamiz.
+
+2
+00:11.070 --> 00:18.840
+Git sukut bo‘yicha ort strategiyasidan foydalanadi, ammo har bir
+murakkab vaziyat uchun alohida algoritm va qulay sozlamalar mavjud.
+
+3
+00:22.170 --> 00:32.030
+Agar merge paytida konflikt chiqsa va ziddiyatli joylarda faqat bir tomon
+ustun bo‘lishi kerak bo‘lsa, -X ours yoki theirs opsiyasi ishlatiladi.
+
+4
+00:32.040 --> 00:40.050
+Ushbu opsiya faqat ziddiyatli bo‘laklarni tanlangan tomondan oladi, konfliktsiz
+yangi o‘zgarishlar esa ikkala tomondan bekamu-ko‘st birlashtiriladi.
+
+5
+00:43.960 --> 00:52.700
+-s ours strategiyasi esa mutlaqo boshqa narsa bo‘lib, u ikkinchi branchdagi
+kodlarni umuman olmaydi va faqat joriy fayllar holatini saqlab qoladi.
+
+6
+00:52.610 --> 01:01.190
+Natijada ikkinchi branch tarixda to‘liq birlashtirilgan deb belgilanadi,
+bu esa eski yoki eskirgan tarmoqlarni xavfsiz yopish uchun ayni muddao.
+
+7
+01:05.120 --> 01:14.290
+Bir vaqtning o‘zida uchta yoki undan ortiq mustaqil branchlarni bitta commit bilan
+birlashtirish kerak bo‘lganda, Git avtomatik ravishda octopus strategiyasini tanlaydi.
+
+8
+01:14.240 --> 01:21.340
+Natijaviy commitda birdaniga to‘rtta ota bog‘lanadi, biroq
+ziddiyat yuzaga kelsa, octopus merge jarayonini darhol to‘xtatadi.
+
+9
+01:25.130 --> 01:33.280
+Xato qilingan mergeni serverga yuborishdan oldin bekor qilish uchun
+git reset --hard ORIG_HEAD buyrug‘i eng toza yechim hisoblanadi.
+
+10
+01:33.310 --> 01:42.070
+Agar merge allaqachon serverga ketgan bo‘lsa, git revert -m 1 buyrug‘i orqali
+asosiy tarmoq yo‘nalishini saqlagan holda o‘zgarishlarni ortga qaytaramiz.
+
+11
+01:45.820 --> 01:53.760
+Shuningdek, git konfiguratsiyasida rerere imkoniyatini yoqish orqali bir xil
+konfliktlarni qayta-qayta qo‘lda hal qilish mashaqqatidan butunlay qutulamiz.
+
+12
+01:53.850 --> 02:00.690
+Keyingi bobda loyihani masofaviy serverlar va remote repozitoriylar
+bilan bog‘lab ishlash mexanizmlarini to‘liq o‘zlashtiramiz.
