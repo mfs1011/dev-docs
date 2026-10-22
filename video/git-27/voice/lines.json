@@ -1,0 +1,1224 @@
+[
+  {
+    "id": "l1",
+    "scene": "intro",
+    "text": "Salom! Ushbu yigirma yettinchi bobda Git'da masofaviy repozitoriylar, ya’ni remote'lar bilan ishlash asoslarini batafsil o‘rganamiz.",
+    "show": "Salom! Ushbu yigirma yettinchi bobda Git'da masofaviy repozitoriylar, ya’ni remote'lar bilan ishlash asoslarini batafsil o‘rganamiz.",
+    "say": "Salom! Ushbu yigirma yettinchi bobda Git'da masofaviy repozitoriylar, ya’ni remoutlar bilan ishlash asoslarini batafsil o‘rganamiz.",
+    "a0": 0.26,
+    "a1": 7.61,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.26,
+        "e": 0.56
+      },
+      {
+        "w": "Ushbu",
+        "s": 1.08,
+        "e": 1.3
+      },
+      {
+        "w": "yigirma",
+        "s": 1.42,
+        "e": 1.76
+      },
+      {
+        "w": "yettinchi",
+        "s": 1.84,
+        "e": 2.22
+      },
+      {
+        "w": "bobda",
+        "s": 2.24,
+        "e": 2.5
+      },
+      {
+        "w": "Git'da",
+        "s": 2.6,
+        "e": 2.88
+      },
+      {
+        "w": "masofaviy",
+        "s": 2.94,
+        "e": 3.48
+      },
+      {
+        "w": "repozitoriylar,",
+        "s": 3.56,
+        "e": 4.32
+      },
+      {
+        "w": "ya’ni",
+        "s": 4.44,
+        "e": 4.66
+      },
+      {
+        "w": "remoutlar",
+        "s": 5.0,
+        "e": 5.52
+      },
+      {
+        "w": "bilan",
+        "s": 5.56,
+        "e": 5.74
+      },
+      {
+        "w": "ishlash",
+        "s": 5.78,
+        "e": 6.08
+      },
+      {
+        "w": "asoslarini",
+        "s": 6.12,
+        "e": 6.66
+      },
+      {
+        "w": "batafsil",
+        "s": 6.72,
+        "e": 7.14
+      },
+      {
+        "w": "o‘rganamiz.",
+        "s": 7.18,
+        "e": 7.61
+      }
+    ]
+  },
+  {
+    "id": "l2",
+    "scene": "intro",
+    "text": "Remote — bu uzoqdagi yoki boshqa papkada joylashgan loyiha omborining qulay qisqa taxallusi bo‘lib, jamoaviy almashinuvning poydevori hisoblanadi.",
+    "show": "Remote — bu uzoqdagi yoki boshqa papkada joylashgan loyiha omborining qulay qisqa taxallusi bo‘lib, jamoaviy almashinuvning poydevori hisoblanadi.",
+    "say": "Remout — bu uzoqdagi yoki boshqa papkada joylashgan loyiha omborining qulay qisqa taxallusi bo‘lib, jamoaviy almashinuvning poydevori hisoblanadi.",
+    "a0": 8.29,
+    "a1": 16.09,
+    "words": [
+      {
+        "w": "Remout",
+        "s": 8.29,
+        "e": 8.67
+      },
+      {
+        "w": "—",
+        "s": 8.67,
+        "e": 8.67
+      },
+      {
+        "w": "bu",
+        "s": 8.75,
+        "e": 8.81
+      },
+      {
+        "w": "uzoqdagi",
+        "s": 8.91,
+        "e": 9.37
+      },
+      {
+        "w": "yoki",
+        "s": 9.41,
+        "e": 9.61
+      },
+      {
+        "w": "boshqa",
+        "s": 9.71,
+        "e": 9.99
+      },
+      {
+        "w": "papkada",
+        "s": 10.05,
+        "e": 10.37
+      },
+      {
+        "w": "joylashgan",
+        "s": 10.41,
+        "e": 10.83
+      },
+      {
+        "w": "loyiha",
+        "s": 11.13,
+        "e": 11.49
+      },
+      {
+        "w": "omborining",
+        "s": 11.57,
+        "e": 12.05
+      },
+      {
+        "w": "qulay",
+        "s": 12.11,
+        "e": 12.41
+      },
+      {
+        "w": "qisqa",
+        "s": 12.53,
+        "e": 12.77
+      },
+      {
+        "w": "taxallusi",
+        "s": 12.85,
+        "e": 13.35
+      },
+      {
+        "w": "bo‘lib,",
+        "s": 13.39,
+        "e": 13.59
+      },
+      {
+        "w": "jamoaviy",
+        "s": 13.83,
+        "e": 14.33
+      },
+      {
+        "w": "almashinuvning",
+        "s": 14.43,
+        "e": 14.99
+      },
+      {
+        "w": "poydevori",
+        "s": 15.05,
+        "e": 15.59
+      },
+      {
+        "w": "hisoblanadi.",
+        "s": 15.63,
+        "e": 16.09
+      }
+    ]
+  },
+  {
+    "id": "l3",
+    "scene": "remote_boshqaruvi",
+    "text": "git remote add buyrug‘i orqali yangi remote ulaymiz, git remote -v esa qabul qilish va yuborish uchun sozlangan to‘liq manzillarni ko‘rsatadi.",
+    "show": "git remote add buyrug‘i orqali yangi remote ulaymiz, git remote -v esa qabul qilish va yuborish uchun sozlangan to‘liq manzillarni ko‘rsatadi.",
+    "say": "Git remout add buyrug‘i orqali yangi remout ulaymiz, git remout minus vi esa qabul qilish va yuborish uchun sozlangan to‘liq manzillarni ko‘rsatadi.",
+    "a0": 16.83,
+    "a1": 25.12,
+    "words": [
+      {
+        "w": "Git",
+        "s": 16.83,
+        "e": 17.01
+      },
+      {
+        "w": "remout",
+        "s": 17.09,
+        "e": 17.45
+      },
+      {
+        "w": "add",
+        "s": 17.61,
+        "e": 17.75
+      },
+      {
+        "w": "buyrug‘i",
+        "s": 17.81,
+        "e": 18.11
+      },
+      {
+        "w": "orqali",
+        "s": 18.15,
+        "e": 18.43
+      },
+      {
+        "w": "yangi",
+        "s": 18.51,
+        "e": 18.77
+      },
+      {
+        "w": "remout",
+        "s": 18.83,
+        "e": 19.13
+      },
+      {
+        "w": "ulaymiz,",
+        "s": 19.17,
+        "e": 19.51
+      },
+      {
+        "w": "git",
+        "s": 19.89,
+        "e": 20.07
+      },
+      {
+        "w": "remout",
+        "s": 20.15,
+        "e": 20.55
+      },
+      {
+        "w": "minus",
+        "s": 20.67,
+        "e": 20.97
+      },
+      {
+        "w": "vi",
+        "s": 21.15,
+        "e": 21.25
+      },
+      {
+        "w": "esa",
+        "s": 21.39,
+        "e": 21.59
+      },
+      {
+        "w": "qabul",
+        "s": 21.85,
+        "e": 22.09
+      },
+      {
+        "w": "qilish",
+        "s": 22.13,
+        "e": 22.33
+      },
+      {
+        "w": "va",
+        "s": 22.37,
+        "e": 22.43
+      },
+      {
+        "w": "yuborish",
+        "s": 22.49,
+        "e": 22.9
+      },
+      {
+        "w": "uchun",
+        "s": 22.94,
+        "e": 23.14
+      },
+      {
+        "w": "sozlangan",
+        "s": 23.2,
+        "e": 23.7
+      },
+      {
+        "w": "to‘liq",
+        "s": 23.78,
+        "e": 24.04
+      },
+      {
+        "w": "manzillarni",
+        "s": 24.1,
+        "e": 24.64
+      },
+      {
+        "w": "ko‘rsatadi.",
+        "s": 24.68,
+        "e": 25.12
+      }
+    ]
+  },
+  {
+    "id": "l4",
+    "scene": "remote_boshqaruvi",
+    "text": "Agar server manzili o‘zgarsa, git remote set-url orqali mavjud sozlamalarni buzmasdan manzilni yangilashimiz mumkin.",
+    "show": "Agar server manzili o‘zgarsa, git remote set-url orqali mavjud sozlamalarni buzmasdan manzilni yangilashimiz mumkin.",
+    "say": "Agar server manzili o‘zgarsa, git remout set minus url orqali mavjud sozlamalarni buzmasdan manzilni yangilashimiz mumkin.",
+    "a0": 25.78,
+    "a1": 33.02,
+    "words": [
+      {
+        "w": "Agar",
+        "s": 25.78,
+        "e": 26.0
+      },
+      {
+        "w": "server",
+        "s": 26.06,
+        "e": 26.38
+      },
+      {
+        "w": "manzili",
+        "s": 26.42,
+        "e": 26.72
+      },
+      {
+        "w": "o‘zgarsa,",
+        "s": 26.76,
+        "e": 27.1
+      },
+      {
+        "w": "git",
+        "s": 27.44,
+        "e": 27.6
+      },
+      {
+        "w": "remout",
+        "s": 27.66,
+        "e": 28.06
+      },
+      {
+        "w": "set",
+        "s": 28.22,
+        "e": 28.44
+      },
+      {
+        "w": "minus",
+        "s": 28.66,
+        "e": 28.94
+      },
+      {
+        "w": "url",
+        "s": 29.16,
+        "e": 29.56
+      },
+      {
+        "w": "orqali",
+        "s": 29.64,
+        "e": 29.92
+      },
+      {
+        "w": "mavjud",
+        "s": 30.14,
+        "e": 30.42
+      },
+      {
+        "w": "sozlamalarni",
+        "s": 30.46,
+        "e": 31.0
+      },
+      {
+        "w": "buzmasdan",
+        "s": 31.04,
+        "e": 31.54
+      },
+      {
+        "w": "manzilni",
+        "s": 31.62,
+        "e": 32.02
+      },
+      {
+        "w": "yangilashimiz",
+        "s": 32.08,
+        "e": 32.68
+      },
+      {
+        "w": "mumkin.",
+        "s": 32.72,
+        "e": 33.02
+      }
+    ]
+  },
+  {
+    "id": "l5",
+    "scene": "fetch_ichki_tuzilishi",
+    "text": "git fetch buyrug‘i faqat yangi obyektlar va remote-tracking ko‘rsatkichlarni yuklab oladi, biroq sizning ishchi fayllaringizga mutlaqo tegmaydi.",
+    "show": "git fetch buyrug‘i faqat yangi obyektlar va remote-tracking ko‘rsatkichlarni yuklab oladi, biroq sizning ishchi fayllaringizga mutlaqo tegmaydi.",
+    "say": "Git fech buyrug‘i faqat yangi obyektlar va remout treking ko‘rsatkichlarni yuklab oladi, biroq sizning ishchi fayllaringizga mutlaqo tegmaydi.",
+    "a0": 33.92,
+    "a1": 41.11,
+    "words": [
+      {
+        "w": "Git",
+        "s": 33.92,
+        "e": 34.06
+      },
+      {
+        "w": "fech",
+        "s": 34.12,
+        "e": 34.34
+      },
+      {
+        "w": "buyrug‘i",
+        "s": 34.4,
+        "e": 34.7
+      },
+      {
+        "w": "faqat",
+        "s": 34.76,
+        "e": 35.02
+      },
+      {
+        "w": "yangi",
+        "s": 35.12,
+        "e": 35.38
+      },
+      {
+        "w": "obyektlar",
+        "s": 35.44,
+        "e": 35.9
+      },
+      {
+        "w": "va",
+        "s": 35.94,
+        "e": 36.0
+      },
+      {
+        "w": "remout",
+        "s": 36.32,
+        "e": 36.68
+      },
+      {
+        "w": "treking",
+        "s": 36.7,
+        "e": 37.1
+      },
+      {
+        "w": "ko‘rsatkichlarni",
+        "s": 37.12,
+        "e": 37.77
+      },
+      {
+        "w": "yuklab",
+        "s": 37.79,
+        "e": 38.05
+      },
+      {
+        "w": "oladi,",
+        "s": 38.09,
+        "e": 38.29
+      },
+      {
+        "w": "biroq",
+        "s": 38.31,
+        "e": 38.51
+      },
+      {
+        "w": "sizning",
+        "s": 38.77,
+        "e": 39.07
+      },
+      {
+        "w": "ishchi",
+        "s": 39.17,
+        "e": 39.39
+      },
+      {
+        "w": "fayllaringizga",
+        "s": 39.45,
+        "e": 40.17
+      },
+      {
+        "w": "mutlaqo",
+        "s": 40.23,
+        "e": 40.61
+      },
+      {
+        "w": "tegmaydi.",
+        "s": 40.67,
+        "e": 41.11
+      }
+    ]
+  },
+  {
+    "id": "l6",
+    "scene": "fetch_ichki_tuzilishi",
+    "text": "Natijada serverdagi yangiliklarni git log va git diff orqali xavfsiz ko‘zdan kechirib, keyin birlashtirish to‘g‘risida qaror qabul qilamiz.",
+    "show": "Natijada serverdagi yangiliklarni git log va git diff orqali xavfsiz ko‘zdan kechirib, keyin birlashtirish to‘g‘risida qaror qabul qilamiz.",
+    "say": "Natijada serverdagi yangiliklarni git log va git diff orqali xavfsiz ko‘zdan kechirib, keyin birlashtirish to‘g‘risida qaror qabul qilamiz.",
+    "a0": 41.81,
+    "a1": 49.05,
+    "words": [
+      {
+        "w": "Natijada",
+        "s": 41.81,
+        "e": 42.23
+      },
+      {
+        "w": "serverdagi",
+        "s": 42.31,
+        "e": 42.83
+      },
+      {
+        "w": "yangiliklarni",
+        "s": 42.87,
+        "e": 43.49
+      },
+      {
+        "w": "git",
+        "s": 43.83,
+        "e": 43.99
+      },
+      {
+        "w": "log",
+        "s": 44.13,
+        "e": 44.37
+      },
+      {
+        "w": "va",
+        "s": 44.47,
+        "e": 44.55
+      },
+      {
+        "w": "git",
+        "s": 44.67,
+        "e": 44.85
+      },
+      {
+        "w": "diff",
+        "s": 44.97,
+        "e": 45.17
+      },
+      {
+        "w": "orqali",
+        "s": 45.27,
+        "e": 45.55
+      },
+      {
+        "w": "xavfsiz",
+        "s": 45.63,
+        "e": 45.97
+      },
+      {
+        "w": "ko‘zdan",
+        "s": 46.01,
+        "e": 46.33
+      },
+      {
+        "w": "kechirib,",
+        "s": 46.37,
+        "e": 46.67
+      },
+      {
+        "w": "keyin",
+        "s": 46.95,
+        "e": 47.21
+      },
+      {
+        "w": "birlashtirish",
+        "s": 47.27,
+        "e": 47.79
+      },
+      {
+        "w": "to‘g‘risida",
+        "s": 47.81,
+        "e": 48.17
+      },
+      {
+        "w": "qaror",
+        "s": 48.23,
+        "e": 48.47
+      },
+      {
+        "w": "qabul",
+        "s": 48.51,
+        "e": 48.71
+      },
+      {
+        "w": "qilamiz.",
+        "s": 48.73,
+        "e": 49.05
+      }
+    ]
+  },
+  {
+    "id": "l7",
+    "scene": "push_va_fast_forward",
+    "text": "git push -u origin main buyrug‘i o‘zgarishlarni serverga yuboradi hamda kelgusidagi buyruqlar uchun kuzatuvchi tarmoqni avtomatik o‘rnatadi.",
+    "show": "git push -u origin main buyrug‘i o‘zgarishlarni serverga yuboradi hamda kelgusidagi buyruqlar uchun kuzatuvchi tarmoqni avtomatik o‘rnatadi.",
+    "say": "Git push minus yu orijin main buyrug‘i o‘zgarishlarni serverga yuboradi hamda kelgusidagi buyruqlar uchun kuzatuvchi tarmoqni avtomatik o‘rnatadi.",
+    "a0": 49.89,
+    "a1": 58.3,
+    "words": [
+      {
+        "w": "Git",
+        "s": 49.89,
+        "e": 50.05
+      },
+      {
+        "w": "push",
+        "s": 50.15,
+        "e": 50.43
+      },
+      {
+        "w": "minus",
+        "s": 50.55,
+        "e": 50.87
+      },
+      {
+        "w": "yu",
+        "s": 51.03,
+        "e": 51.15
+      },
+      {
+        "w": "orijin",
+        "s": 51.47,
+        "e": 51.87
+      },
+      {
+        "w": "main",
+        "s": 52.03,
+        "e": 52.29
+      },
+      {
+        "w": "buyrug‘i",
+        "s": 52.33,
+        "e": 52.66
+      },
+      {
+        "w": "o‘zgarishlarni",
+        "s": 52.96,
+        "e": 53.54
+      },
+      {
+        "w": "serverga",
+        "s": 53.62,
+        "e": 54.06
+      },
+      {
+        "w": "yuboradi",
+        "s": 54.12,
+        "e": 54.5
+      },
+      {
+        "w": "hamda",
+        "s": 54.52,
+        "e": 54.76
+      },
+      {
+        "w": "kelgusidagi",
+        "s": 55.02,
+        "e": 55.64
+      },
+      {
+        "w": "buyruqlar",
+        "s": 55.68,
+        "e": 56.1
+      },
+      {
+        "w": "uchun",
+        "s": 56.12,
+        "e": 56.3
+      },
+      {
+        "w": "kuzatuvchi",
+        "s": 56.36,
+        "e": 56.82
+      },
+      {
+        "w": "tarmoqni",
+        "s": 56.86,
+        "e": 57.26
+      },
+      {
+        "w": "avtomatik",
+        "s": 57.32,
+        "e": 57.82
+      },
+      {
+        "w": "o‘rnatadi.",
+        "s": 57.88,
+        "e": 58.3
+      }
+    ]
+  },
+  {
+    "id": "l8",
+    "scene": "push_va_fast_forward",
+    "text": "Agar serverda sizda yo‘q boshqa yangi commitlar mavjud bo‘lsa, Git tarixdan hech narsa tushib qolmasligi uchun pushni rad etadi.",
+    "show": "Agar serverda sizda yo‘q boshqa yangi commitlar mavjud bo‘lsa, Git tarixdan hech narsa tushib qolmasligi uchun pushni rad etadi.",
+    "say": "Agar serverda sizda yo‘q boshqa yangi kommitlar mavjud bo‘lsa, Git tarixdan hech narsa tushib qolmasligi uchun pushni rad etadi.",
+    "a0": 59.14,
+    "a1": 65.62,
+    "words": [
+      {
+        "w": "Agar",
+        "s": 59.14,
+        "e": 59.38
+      },
+      {
+        "w": "serverda",
+        "s": 59.46,
+        "e": 59.88
+      },
+      {
+        "w": "sizda",
+        "s": 60.0,
+        "e": 60.14
+      },
+      {
+        "w": "yo‘q",
+        "s": 60.18,
+        "e": 60.32
+      },
+      {
+        "w": "boshqa",
+        "s": 60.4,
+        "e": 60.68
+      },
+      {
+        "w": "yangi",
+        "s": 60.76,
+        "e": 61.04
+      },
+      {
+        "w": "kommitlar",
+        "s": 61.08,
+        "e": 61.46
+      },
+      {
+        "w": "mavjud",
+        "s": 61.5,
+        "e": 61.76
+      },
+      {
+        "w": "bo‘lsa,",
+        "s": 61.8,
+        "e": 62.02
+      },
+      {
+        "w": "Git",
+        "s": 62.36,
+        "e": 62.5
+      },
+      {
+        "w": "tarixdan",
+        "s": 62.6,
+        "e": 63.02
+      },
+      {
+        "w": "hech",
+        "s": 63.08,
+        "e": 63.28
+      },
+      {
+        "w": "narsa",
+        "s": 63.3,
+        "e": 63.5
+      },
+      {
+        "w": "tushib",
+        "s": 63.54,
+        "e": 63.74
+      },
+      {
+        "w": "qolmasligi",
+        "s": 63.78,
+        "e": 64.24
+      },
+      {
+        "w": "uchun",
+        "s": 64.28,
+        "e": 64.46
+      },
+      {
+        "w": "pushni",
+        "s": 64.72,
+        "e": 65.06
+      },
+      {
+        "w": "rad",
+        "s": 65.14,
+        "e": 65.32
+      },
+      {
+        "w": "etadi.",
+        "s": 65.38,
+        "e": 65.62
+      }
+    ]
+  },
+  {
+    "id": "l9",
+    "scene": "pull_strategiyalari",
+    "text": "Tarix ajralgan vaziyatda git pull --rebase buyrug‘i o‘zgarishlaringizni server commitlari ustiga chiroyli va chiziqli qilib qayta teradi.",
+    "show": "Tarix ajralgan vaziyatda git pull --rebase buyrug‘i o‘zgarishlaringizni server commitlari ustiga chiroyli va chiziqli qilib qayta teradi.",
+    "say": "Tarix ajralgan vaziyatda git pull minus minus ribeys buyrug‘i o‘zgarishlaringizni server kommitlari ustiga chiroyli va chiziqli qilib qayta teradi.",
+    "a0": 66.5,
+    "a1": 74.47,
+    "words": [
+      {
+        "w": "Tarix",
+        "s": 66.5,
+        "e": 66.76
+      },
+      {
+        "w": "ajralgan",
+        "s": 66.88,
+        "e": 67.34
+      },
+      {
+        "w": "vaziyatda",
+        "s": 67.36,
+        "e": 67.81
+      },
+      {
+        "w": "git",
+        "s": 68.13,
+        "e": 68.31
+      },
+      {
+        "w": "pull",
+        "s": 68.45,
+        "e": 68.65
+      },
+      {
+        "w": "minus",
+        "s": 68.77,
+        "e": 69.03
+      },
+      {
+        "w": "minus",
+        "s": 69.09,
+        "e": 69.33
+      },
+      {
+        "w": "ribeys",
+        "s": 69.43,
+        "e": 69.79
+      },
+      {
+        "w": "buyrug‘i",
+        "s": 69.85,
+        "e": 70.15
+      },
+      {
+        "w": "o‘zgarishlaringizni",
+        "s": 70.23,
+        "e": 70.99
+      },
+      {
+        "w": "server",
+        "s": 71.31,
+        "e": 71.67
+      },
+      {
+        "w": "kommitlari",
+        "s": 71.71,
+        "e": 72.13
+      },
+      {
+        "w": "ustiga",
+        "s": 72.17,
+        "e": 72.41
+      },
+      {
+        "w": "chiroyli",
+        "s": 72.49,
+        "e": 72.87
+      },
+      {
+        "w": "va",
+        "s": 72.93,
+        "e": 72.99
+      },
+      {
+        "w": "chiziqli",
+        "s": 73.07,
+        "e": 73.49
+      },
+      {
+        "w": "qilib",
+        "s": 73.55,
+        "e": 73.75
+      },
+      {
+        "w": "qayta",
+        "s": 73.85,
+        "e": 74.11
+      },
+      {
+        "w": "teradi.",
+        "s": 74.15,
+        "e": 74.47
+      }
+    ]
+  },
+  {
+    "id": "l10",
+    "scene": "pull_strategiyalari",
+    "text": "git pull --no-rebase esa an’anaviy merge commit yaratadi, git pull --ff-only esa faqat toza siljish bo‘lsagina ishlaydi.",
+    "show": "git pull --no-rebase esa an’anaviy merge commit yaratadi, git pull --ff-only esa faqat toza siljish bo‘lsagina ishlaydi.",
+    "say": "Git pull minus minus no minus ribeys esa an’anaviy merj kommit yaratadi, git pull minus minus ff minus onli esa faqat toza siljish bo‘lsagina ishlaydi.",
+    "a0": 75.15,
+    "a1": 85.0,
+    "words": [
+      {
+        "w": "Git",
+        "s": 75.15,
+        "e": 75.29
+      },
+      {
+        "w": "pull",
+        "s": 75.37,
+        "e": 75.55
+      },
+      {
+        "w": "minus",
+        "s": 75.73,
+        "e": 76.01
+      },
+      {
+        "w": "minus",
+        "s": 76.07,
+        "e": 76.31
+      },
+      {
+        "w": "no",
+        "s": 76.49,
+        "e": 76.61
+      },
+      {
+        "w": "minus",
+        "s": 76.73,
+        "e": 76.99
+      },
+      {
+        "w": "ribeys",
+        "s": 77.07,
+        "e": 77.37
+      },
+      {
+        "w": "esa",
+        "s": 77.43,
+        "e": 77.57
+      },
+      {
+        "w": "an’anaviy",
+        "s": 77.91,
+        "e": 78.33
+      },
+      {
+        "w": "merj",
+        "s": 78.49,
+        "e": 78.75
+      },
+      {
+        "w": "kommit",
+        "s": 78.83,
+        "e": 79.13
+      },
+      {
+        "w": "yaratadi,",
+        "s": 79.17,
+        "e": 79.53
+      },
+      {
+        "w": "git",
+        "s": 80.15,
+        "e": 80.31
+      },
+      {
+        "w": "pull",
+        "s": 80.41,
+        "e": 80.59
+      },
+      {
+        "w": "minus",
+        "s": 80.79,
+        "e": 81.05
+      },
+      {
+        "w": "minus",
+        "s": 81.09,
+        "e": 81.33
+      },
+      {
+        "w": "ff",
+        "s": 81.61,
+        "e": 81.89
+      },
+      {
+        "w": "minus",
+        "s": 81.97,
+        "e": 82.21
+      },
+      {
+        "w": "onli",
+        "s": 82.35,
+        "e": 82.62
+      },
+      {
+        "w": "esa",
+        "s": 82.7,
+        "e": 82.86
+      },
+      {
+        "w": "faqat",
+        "s": 83.14,
+        "e": 83.4
+      },
+      {
+        "w": "toza",
+        "s": 83.54,
+        "e": 83.8
+      },
+      {
+        "w": "siljish",
+        "s": 83.86,
+        "e": 84.2
+      },
+      {
+        "w": "bo‘lsagina",
+        "s": 84.24,
+        "e": 84.64
+      },
+      {
+        "w": "ishlaydi.",
+        "s": 84.68,
+        "e": 85.0
+      }
+    ]
+  },
+  {
+    "id": "l11",
+    "scene": "xulosa",
+    "text": "Ushbu mexanizmlar orqali taqsimlangan jamoada har bir dasturchi o‘z ishini erkin olib boradi va ma’lumotlar xavfsiz almashinadi.",
+    "show": "Ushbu mexanizmlar orqali taqsimlangan jamoada har bir dasturchi o‘z ishini erkin olib boradi va ma’lumotlar xavfsiz almashinadi.",
+    "say": "Ushbu mexanizmlar orqali taqsimlangan jamoada har bir dasturchi o‘z ishini erkin olib boradi va ma’lumotlar xavfsiz almashinadi.",
+    "a0": 85.78,
+    "a1": 92.41,
+    "words": [
+      {
+        "w": "Ushbu",
+        "s": 85.78,
+        "e": 85.98
+      },
+      {
+        "w": "mexanizmlar",
+        "s": 86.04,
+        "e": 86.62
+      },
+      {
+        "w": "orqali",
+        "s": 86.66,
+        "e": 86.92
+      },
+      {
+        "w": "taqsimlangan",
+        "s": 86.98,
+        "e": 87.64
+      },
+      {
+        "w": "jamoada",
+        "s": 87.68,
+        "e": 88.08
+      },
+      {
+        "w": "har",
+        "s": 88.36,
+        "e": 88.56
+      },
+      {
+        "w": "bir",
+        "s": 88.6,
+        "e": 88.72
+      },
+      {
+        "w": "dasturchi",
+        "s": 88.76,
+        "e": 89.18
+      },
+      {
+        "w": "o‘z",
+        "s": 89.28,
+        "e": 89.4
+      },
+      {
+        "w": "ishini",
+        "s": 89.46,
+        "e": 89.68
+      },
+      {
+        "w": "erkin",
+        "s": 89.8,
+        "e": 90.1
+      },
+      {
+        "w": "olib",
+        "s": 90.14,
+        "e": 90.28
+      },
+      {
+        "w": "boradi",
+        "s": 90.3,
+        "e": 90.56
+      },
+      {
+        "w": "va",
+        "s": 90.6,
+        "e": 90.66
+      },
+      {
+        "w": "ma’lumotlar",
+        "s": 90.94,
+        "e": 91.5
+      },
+      {
+        "w": "xavfsiz",
+        "s": 91.54,
+        "e": 91.86
+      },
+      {
+        "w": "almashinadi.",
+        "s": 91.92,
+        "e": 92.41
+      }
+    ]
+  },
+  {
+    "id": "l12",
+    "scene": "xulosa",
+    "text": "Keyingi bobda remote branchlar, ularni masofadan boshqarish va tozalash amallarini yanada chuqurroq o‘rganamiz.",
+    "show": "Keyingi bobda remote branchlar, ularni masofadan boshqarish va tozalash amallarini yanada chuqurroq o‘rganamiz.",
+    "say": "Keyingi bobda remout brenchlar, ularni masofadan boshqarish va tozalash amallarini yanada chuqurroq o‘rganamiz.",
+    "a0": 93.03,
+    "a1": 98.9,
+    "words": [
+      {
+        "w": "Keyingi",
+        "s": 93.03,
+        "e": 93.33
+      },
+      {
+        "w": "bobda",
+        "s": 93.37,
+        "e": 93.61
+      },
+      {
+        "w": "remout",
+        "s": 93.91,
+        "e": 94.23
+      },
+      {
+        "w": "brenchlar,",
+        "s": 94.29,
+        "e": 94.75
+      },
+      {
+        "w": "ularni",
+        "s": 94.99,
+        "e": 95.27
+      },
+      {
+        "w": "masofadan",
+        "s": 95.29,
+        "e": 95.79
+      },
+      {
+        "w": "boshqarish",
+        "s": 95.83,
+        "e": 96.29
+      },
+      {
+        "w": "va",
+        "s": 96.33,
+        "e": 96.39
+      },
+      {
+        "w": "tozalash",
+        "s": 96.47,
+        "e": 96.87
+      },
+      {
+        "w": "amallarini",
+        "s": 96.96,
+        "e": 97.4
+      },
+      {
+        "w": "yanada",
+        "s": 97.66,
+        "e": 97.94
+      },
+      {
+        "w": "chuqurroq",
+        "s": 97.98,
+        "e": 98.4
+      },
+      {
+        "w": "o‘rganamiz.",
+        "s": 98.46,
+        "e": 98.9
+      }
+    ]
+  }
+]

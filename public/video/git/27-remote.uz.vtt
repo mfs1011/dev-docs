@@ -1,0 +1,61 @@
+WEBVTT
+
+1
+00:01.420 --> 00:09.220
+Salom! Ushbu yigirma yettinchi bobda Git'da masofaviy repozitoriylar,
+ya’ni remote'lar bilan ishlash asoslarini batafsil o‘rganamiz.
+
+2
+00:09.450 --> 00:17.700
+Remote — bu uzoqdagi yoki boshqa papkada joylashgan loyiha omborining qulay
+qisqa taxallusi bo‘lib, jamoaviy almashinuvning poydevori hisoblanadi.
+
+3
+00:21.090 --> 00:29.830
+git remote add buyrug‘i orqali yangi remote ulaymiz, git remote -v esa
+qabul qilish va yuborish uchun sozlangan to‘liq manzillarni ko‘rsatadi.
+
+4
+00:30.040 --> 00:37.730
+Agar server manzili o‘zgarsa, git remote set-url orqali
+mavjud sozlamalarni buzmasdan manzilni yangilashimiz mumkin.
+
+5
+00:41.780 --> 00:49.420
+git fetch buyrug‘i faqat yangi obyektlar va remote-tracking ko‘rsatkichlarni
+yuklab oladi, biroq sizning ishchi fayllaringizga mutlaqo tegmaydi.
+
+6
+00:49.670 --> 00:57.360
+Natijada serverdagi yangiliklarni git log va git diff orqali xavfsiz
+ko‘zdan kechirib, keyin birlashtirish to‘g‘risida qaror qabul qilamiz.
+
+7
+01:01.350 --> 01:10.210
+git push -u origin main buyrug‘i o‘zgarishlarni serverga yuboradi hamda
+kelgusidagi buyruqlar uchun kuzatuvchi tarmoqni avtomatik o‘rnatadi.
+
+8
+01:10.600 --> 01:17.530
+Agar serverda sizda yo‘q boshqa yangi commitlar mavjud bo‘lsa,
+Git tarixdan hech narsa tushib qolmasligi uchun pushni rad etadi.
+
+9
+01:21.560 --> 01:29.980
+Tarix ajralgan vaziyatda git pull --rebase buyrug‘i o‘zgarishlaringizni
+server commitlari ustiga chiroyli va chiziqli qilib qayta teradi.
+
+10
+01:30.210 --> 01:40.510
+git pull --no-rebase esa an’anaviy merge commit yaratadi, git
+pull --ff-only esa faqat toza siljish bo‘lsagina ishlaydi.
+
+11
+01:44.440 --> 01:51.520
+Ushbu mexanizmlar orqali taqsimlangan jamoada har bir dasturchi
+o‘z ishini erkin olib boradi va ma’lumotlar xavfsiz almashinadi.
+
+12
+01:51.690 --> 01:58.010
+Keyingi bobda remote branchlar, ularni masofadan boshqarish
+va tozalash amallarini yanada chuqurroq o‘rganamiz.

@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" playsinline poster="/video/git/27-remote.jpg" src="/video/git/27-remote.mp4">
+    <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/git/27-remote.chapters.vtt" default>
+    <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/git/27-remote.uz.vtt">
+  </video>
+  <figcaption>27.1-video. Git remote mexanizmi, fetch, push va xavfsiz sinxronizatsiya</figcaption>
+</figure>
+
 Shu paytgacha hamma ish bitta repo ichida bo'ldi. Jamoada ishlash uchun esa repo'lar bir-biri bilan ma'lumot almashishi kerak. Buning uchun Git'da **remote** tushunchasi bor.
 
 **Remote** — boshqa joyda turgan xuddi shu loyiha repo'sining **qisqa nomi** (taxallusi). Uzun URL'ni har safar yozish o'rniga `origin`, `upstream`, `bobur` kabi nom bilan murojaat qilasiz. Remote odatda internetdagi serverda (GitHub, GitLab, kompaniya serveri) turadi, lekin shart emas: "remote" so'zi "uzoqda" degani emas, "boshqa joyda" degani. Xuddi shu kompyuterdagi boshqa papka ham to'liq huquqli remote bo'la oladi — bu bobdagi hamma misol aynan shunday ishlaydi.
