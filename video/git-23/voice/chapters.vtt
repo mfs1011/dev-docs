@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:19.297
+Branchlarni Boshqarish: git branch
+
+00:19.297 --> 00:38.257
+Ro‘yxatlash, -v va --list Filtrlari
+
+00:38.257 --> 00:56.767
+--merged va --no-merged Tahlili
+
+00:56.767 --> 01:14.108
+--contains va --points-at Savollari
+
+01:14.108 --> 01:32.625
+O‘chirish, Qayta Nomlash: -d, -D va -m
+
+01:32.625 --> 01:52.660
+Xulosa: --sort va Tartibli Tarmoqlar

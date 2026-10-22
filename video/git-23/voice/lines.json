@@ -1,0 +1,1064 @@
+[
+  {
+    "id": "l1",
+    "scene": "intro",
+    "text": "Salom! Ushbu yigirma uchinchi bobda loyihada ko‘payib ketgan tarmoqlarni tartibli boshqarish va nazorat qilish vositalarini o‘rganamiz.",
+    "show": "Salom! Ushbu yigirma uchinchi bobda loyihada ko‘payib ketgan tarmoqlarni tartibli boshqarish va nazorat qilish vositalarini o‘rganamiz.",
+    "say": "Salom! Ushbu yigirma uchinchi bobda loyihada ko‘payib ketgan tarmoqlarni tartibli boshqarish va nazorat qilish vositalarini o‘rganamiz.",
+    "a0": 0.28,
+    "a1": 7.48,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.28,
+        "e": 0.54
+      },
+      {
+        "w": "Ushbu",
+        "s": 1.24,
+        "e": 1.46
+      },
+      {
+        "w": "yigirma",
+        "s": 1.54,
+        "e": 1.82
+      },
+      {
+        "w": "uchinchi",
+        "s": 1.84,
+        "e": 2.14
+      },
+      {
+        "w": "bobda",
+        "s": 2.18,
+        "e": 2.48
+      },
+      {
+        "w": "loyihada",
+        "s": 2.62,
+        "e": 3.04
+      },
+      {
+        "w": "ko‘payib",
+        "s": 3.08,
+        "e": 3.44
+      },
+      {
+        "w": "ketgan",
+        "s": 3.48,
+        "e": 3.78
+      },
+      {
+        "w": "tarmoqlarni",
+        "s": 3.82,
+        "e": 4.42
+      },
+      {
+        "w": "tartibli",
+        "s": 4.52,
+        "e": 4.94
+      },
+      {
+        "w": "boshqarish",
+        "s": 5.0,
+        "e": 5.5
+      },
+      {
+        "w": "va",
+        "s": 5.58,
+        "e": 5.66
+      },
+      {
+        "w": "nazorat",
+        "s": 5.8,
+        "e": 6.18
+      },
+      {
+        "w": "qilish",
+        "s": 6.22,
+        "e": 6.42
+      },
+      {
+        "w": "vositalarini",
+        "s": 6.46,
+        "e": 7.02
+      },
+      {
+        "w": "o‘rganamiz.",
+        "s": 7.06,
+        "e": 7.48
+      }
+    ]
+  },
+  {
+    "id": "l2",
+    "scene": "intro",
+    "text": "git branch buyrug‘i nafaqat tarmoq ochish, balki butun ombordagi brenchlarni tahlil qilish va saralashning asosiy kalitidir.",
+    "show": "git branch buyrug‘i nafaqat tarmoq ochish, balki butun ombordagi brenchlarni tahlil qilish va saralashning asosiy kalitidir.",
+    "say": "Git brench buyrug‘i nafaqat tarmoq ochish, balki butun ombordagi brenchlarni tahlil qilish va saralashning asosiy kalitidir.",
+    "a0": 8.57,
+    "a1": 15.47,
+    "words": [
+      {
+        "w": "Git",
+        "s": 8.57,
+        "e": 8.77
+      },
+      {
+        "w": "brench",
+        "s": 8.85,
+        "e": 9.11
+      },
+      {
+        "w": "buyrug‘i",
+        "s": 9.17,
+        "e": 9.49
+      },
+      {
+        "w": "nafaqat",
+        "s": 9.61,
+        "e": 9.97
+      },
+      {
+        "w": "tarmoq",
+        "s": 10.03,
+        "e": 10.35
+      },
+      {
+        "w": "ochish,",
+        "s": 10.43,
+        "e": 10.71
+      },
+      {
+        "w": "balki",
+        "s": 10.91,
+        "e": 11.15
+      },
+      {
+        "w": "butun",
+        "s": 11.29,
+        "e": 11.55
+      },
+      {
+        "w": "ombordagi",
+        "s": 11.65,
+        "e": 12.11
+      },
+      {
+        "w": "brenchlarni",
+        "s": 12.15,
+        "e": 12.67
+      },
+      {
+        "w": "tahlil",
+        "s": 12.77,
+        "e": 13.13
+      },
+      {
+        "w": "qilish",
+        "s": 13.19,
+        "e": 13.47
+      },
+      {
+        "w": "va",
+        "s": 13.53,
+        "e": 13.59
+      },
+      {
+        "w": "saralashning",
+        "s": 13.95,
+        "e": 14.53
+      },
+      {
+        "w": "asosiy",
+        "s": 14.61,
+        "e": 14.97
+      },
+      {
+        "w": "kalitidir.",
+        "s": 15.03,
+        "e": 15.47
+      }
+    ]
+  },
+  {
+    "id": "l3",
+    "scene": "royxat_va_filtr",
+    "text": "git branch buyrug‘iga minus v bayrog‘ini qo‘shsak, har bir brenchning oxirgi kommit heshi va uning xabari birga chiqadi.",
+    "show": "git branch buyrug‘iga minus v bayrog‘ini qo‘shsak, har bir brenchning oxirgi kommit heshi va uning xabari birga chiqadi.",
+    "say": "Git brench buyrug‘iga minus vi bayrog‘ini qo‘shsak, har bir brenchning oxirgi kommit heshi va uning xabari birga chiqadi.",
+    "a0": 16.27,
+    "a1": 22.86,
+    "words": [
+      {
+        "w": "Git",
+        "s": 16.27,
+        "e": 16.43
+      },
+      {
+        "w": "brench",
+        "s": 16.51,
+        "e": 16.75
+      },
+      {
+        "w": "buyrug‘iga",
+        "s": 16.79,
+        "e": 17.17
+      },
+      {
+        "w": "minus",
+        "s": 17.51,
+        "e": 17.79
+      },
+      {
+        "w": "vi",
+        "s": 17.89,
+        "e": 17.99
+      },
+      {
+        "w": "bayrog‘ini",
+        "s": 18.11,
+        "e": 18.49
+      },
+      {
+        "w": "qo‘shsak,",
+        "s": 18.51,
+        "e": 18.87
+      },
+      {
+        "w": "har",
+        "s": 19.15,
+        "e": 19.31
+      },
+      {
+        "w": "bir",
+        "s": 19.35,
+        "e": 19.45
+      },
+      {
+        "w": "brenchning",
+        "s": 19.51,
+        "e": 19.95
+      },
+      {
+        "w": "oxirgi",
+        "s": 20.07,
+        "e": 20.41
+      },
+      {
+        "w": "kommit",
+        "s": 20.49,
+        "e": 20.77
+      },
+      {
+        "w": "heshi",
+        "s": 20.83,
+        "e": 21.15
+      },
+      {
+        "w": "va",
+        "s": 21.25,
+        "e": 21.33
+      },
+      {
+        "w": "uning",
+        "s": 21.65,
+        "e": 21.85
+      },
+      {
+        "w": "xabari",
+        "s": 21.91,
+        "e": 22.27
+      },
+      {
+        "w": "birga",
+        "s": 22.31,
+        "e": 22.54
+      },
+      {
+        "w": "chiqadi.",
+        "s": 22.58,
+        "e": 22.86
+      }
+    ]
+  },
+  {
+    "id": "l4",
+    "scene": "royxat_va_filtr",
+    "text": "list parametri va maxsus yulduzcha naqshlari orqali yuzlab brenchlar orasidan aynan kerakli guruhlarni bir zumda filtrlab olamiz.",
+    "show": "list parametri va maxsus yulduzcha naqshlari orqali yuzlab brenchlar orasidan aynan kerakli guruhlarni bir zumda filtrlab olamiz.",
+    "say": "List parametri va maxsus yulduzcha naqshlari orqali yuzlab brenchlar orasidan aynan kerakli guruhlarni bir zumda filtrlab olamiz.",
+    "a0": 23.68,
+    "a1": 30.6,
+    "words": [
+      {
+        "w": "List",
+        "s": 23.68,
+        "e": 23.9
+      },
+      {
+        "w": "parametri",
+        "s": 23.96,
+        "e": 24.48
+      },
+      {
+        "w": "va",
+        "s": 24.56,
+        "e": 24.62
+      },
+      {
+        "w": "maxsus",
+        "s": 24.72,
+        "e": 25.08
+      },
+      {
+        "w": "yulduzcha",
+        "s": 25.22,
+        "e": 25.64
+      },
+      {
+        "w": "naqshlari",
+        "s": 25.7,
+        "e": 26.08
+      },
+      {
+        "w": "orqali",
+        "s": 26.12,
+        "e": 26.4
+      },
+      {
+        "w": "yuzlab",
+        "s": 26.74,
+        "e": 27.08
+      },
+      {
+        "w": "brenchlar",
+        "s": 27.12,
+        "e": 27.5
+      },
+      {
+        "w": "orasidan",
+        "s": 27.56,
+        "e": 27.92
+      },
+      {
+        "w": "aynan",
+        "s": 28.08,
+        "e": 28.38
+      },
+      {
+        "w": "kerakli",
+        "s": 28.46,
+        "e": 28.88
+      },
+      {
+        "w": "guruhlarni",
+        "s": 28.92,
+        "e": 29.4
+      },
+      {
+        "w": "bir",
+        "s": 29.52,
+        "e": 29.64
+      },
+      {
+        "w": "zumda",
+        "s": 29.68,
+        "e": 29.9
+      },
+      {
+        "w": "filtrlab",
+        "s": 29.92,
+        "e": 30.32
+      },
+      {
+        "w": "olamiz.",
+        "s": 30.34,
+        "e": 30.6
+      }
+    ]
+  },
+  {
+    "id": "l5",
+    "scene": "merged_va_xavfsizlik",
+    "text": "merged filtri asosiy brenchga to‘liq qo‘shilgan va xavfsiz o‘chirilishi mumkin bo‘lgan tarmoqlarni aniq ajratib beradi.",
+    "show": "merged filtri asosiy brenchga to‘liq qo‘shilgan va xavfsiz o‘chirilishi mumkin bo‘lgan tarmoqlarni aniq ajratib beradi.",
+    "say": "Merjd filtri asosiy brenchga to‘liq qo‘shilgan va xavfsiz o‘chirilishi mumkin bo‘lgan tarmoqlarni aniq ajratib beradi.",
+    "a0": 31.62,
+    "a1": 37.67,
+    "words": [
+      {
+        "w": "Merjd",
+        "s": 31.62,
+        "e": 31.96
+      },
+      {
+        "w": "filtri",
+        "s": 32.0,
+        "e": 32.34
+      },
+      {
+        "w": "asosiy",
+        "s": 32.48,
+        "e": 32.84
+      },
+      {
+        "w": "brenchga",
+        "s": 32.9,
+        "e": 33.24
+      },
+      {
+        "w": "to‘liq",
+        "s": 33.34,
+        "e": 33.6
+      },
+      {
+        "w": "qo‘shilgan",
+        "s": 33.64,
+        "e": 34.1
+      },
+      {
+        "w": "va",
+        "s": 34.18,
+        "e": 34.26
+      },
+      {
+        "w": "xavfsiz",
+        "s": 34.6,
+        "e": 34.94
+      },
+      {
+        "w": "o‘chirilishi",
+        "s": 35.0,
+        "e": 35.46
+      },
+      {
+        "w": "mumkin",
+        "s": 35.48,
+        "e": 35.76
+      },
+      {
+        "w": "bo‘lgan",
+        "s": 35.78,
+        "e": 36.04
+      },
+      {
+        "w": "tarmoqlarni",
+        "s": 36.08,
+        "e": 36.64
+      },
+      {
+        "w": "aniq",
+        "s": 36.78,
+        "e": 36.98
+      },
+      {
+        "w": "ajratib",
+        "s": 37.04,
+        "e": 37.38
+      },
+      {
+        "w": "beradi.",
+        "s": 37.4,
+        "e": 37.67
+      }
+    ]
+  },
+  {
+    "id": "l6",
+    "scene": "merged_va_xavfsizlik",
+    "text": "no-merged esa hali birlashtirilmagan mustaqil ishlarni ko‘rsatadi va Git ularni tasodifan o‘chirib yuborishdan ishonchli himoya qiladi.",
+    "show": "no-merged esa hali birlashtirilmagan mustaqil ishlarni ko‘rsatadi va Git ularni tasodifan o‘chirib yuborishdan ishonchli himoya qiladi.",
+    "say": "No-merjd esa hali birlashtirilmagan mustaqil ishlarni ko‘rsatadi va Git ularni tasodifan o‘chirib yuborishdan ishonchli himoya qiladi.",
+    "a0": 38.49,
+    "a1": 45.61,
+    "words": [
+      {
+        "w": "No-merjd",
+        "s": 38.49,
+        "e": 39.03
+      },
+      {
+        "w": "esa",
+        "s": 39.07,
+        "e": 39.23
+      },
+      {
+        "w": "hali",
+        "s": 39.57,
+        "e": 39.77
+      },
+      {
+        "w": "birlashtirilmagan",
+        "s": 39.83,
+        "e": 40.57
+      },
+      {
+        "w": "mustaqil",
+        "s": 40.65,
+        "e": 41.03
+      },
+      {
+        "w": "ishlarni",
+        "s": 41.09,
+        "e": 41.41
+      },
+      {
+        "w": "ko‘rsatadi",
+        "s": 41.45,
+        "e": 41.87
+      },
+      {
+        "w": "va",
+        "s": 42.25,
+        "e": 42.33
+      },
+      {
+        "w": "Git",
+        "s": 42.55,
+        "e": 42.73
+      },
+      {
+        "w": "ularni",
+        "s": 42.79,
+        "e": 43.07
+      },
+      {
+        "w": "tasodifan",
+        "s": 43.13,
+        "e": 43.63
+      },
+      {
+        "w": "o‘chirib",
+        "s": 43.73,
+        "e": 43.99
+      },
+      {
+        "w": "yuborishdan",
+        "s": 43.99,
+        "e": 44.45
+      },
+      {
+        "w": "ishonchli",
+        "s": 44.57,
+        "e": 44.97
+      },
+      {
+        "w": "himoya",
+        "s": 45.03,
+        "e": 45.33
+      },
+      {
+        "w": "qiladi.",
+        "s": 45.37,
+        "e": 45.61
+      }
+    ]
+  },
+  {
+    "id": "l7",
+    "scene": "contains_va_points_at",
+    "text": "contains opsiyasi ma’lum bir kommit aynan qaysi brenchlar tarixiga kirganini graf bo‘ylab tekshirish imkonini beradi.",
+    "show": "contains opsiyasi ma’lum bir kommit aynan qaysi brenchlar tarixiga kirganini graf bo‘ylab tekshirish imkonini beradi.",
+    "say": "Konteyns opsiyasi ma’lum bir kommit aynan qaysi brenchlar tarixiga kirganini graf bo‘ylab tekshirish imkonini beradi.",
+    "a0": 46.43,
+    "a1": 52.41,
+    "words": [
+      {
+        "w": "Konteyns",
+        "s": 46.43,
+        "e": 46.87
+      },
+      {
+        "w": "opsiyasi",
+        "s": 46.99,
+        "e": 47.43
+      },
+      {
+        "w": "ma’lum",
+        "s": 47.55,
+        "e": 47.83
+      },
+      {
+        "w": "bir",
+        "s": 47.85,
+        "e": 47.95
+      },
+      {
+        "w": "kommit",
+        "s": 48.01,
+        "e": 48.31
+      },
+      {
+        "w": "aynan",
+        "s": 48.45,
+        "e": 48.69
+      },
+      {
+        "w": "qaysi",
+        "s": 48.79,
+        "e": 49.07
+      },
+      {
+        "w": "brenchlar",
+        "s": 49.11,
+        "e": 49.47
+      },
+      {
+        "w": "tarixiga",
+        "s": 49.51,
+        "e": 49.93
+      },
+      {
+        "w": "kirganini",
+        "s": 49.99,
+        "e": 50.41
+      },
+      {
+        "w": "graf",
+        "s": 50.81,
+        "e": 51.07
+      },
+      {
+        "w": "bo‘ylab",
+        "s": 51.13,
+        "e": 51.37
+      },
+      {
+        "w": "tekshirish",
+        "s": 51.41,
+        "e": 51.75
+      },
+      {
+        "w": "imkonini",
+        "s": 51.79,
+        "e": 52.13
+      },
+      {
+        "w": "beradi.",
+        "s": 52.15,
+        "e": 52.41
+      }
+    ]
+  },
+  {
+    "id": "l8",
+    "scene": "contains_va_points_at",
+    "text": "points-at esa hozirgi kommit ustida to‘g‘ridan-to‘g‘ri turgan tarmoqlarni aniqlab, brenchlar chalkashligining oldini oladi.",
+    "show": "points-at esa hozirgi kommit ustida to‘g‘ridan-to‘g‘ri turgan tarmoqlarni aniqlab, brenchlar chalkashligining oldini oladi.",
+    "say": "Poynts-et esa hozirgi kommit ustida to‘g‘ridan-to‘g‘ri turgan tarmoqlarni aniqlab, brenchlar chalkashligining oldini oladi.",
+    "a0": 53.16,
+    "a1": 59.36,
+    "words": [
+      {
+        "w": "Poynts-et",
+        "s": 53.16,
+        "e": 53.7
+      },
+      {
+        "w": "esa",
+        "s": 53.74,
+        "e": 53.92
+      },
+      {
+        "w": "hozirgi",
+        "s": 54.26,
+        "e": 54.64
+      },
+      {
+        "w": "kommit",
+        "s": 54.68,
+        "e": 54.94
+      },
+      {
+        "w": "ustida",
+        "s": 55.0,
+        "e": 55.28
+      },
+      {
+        "w": "to‘g‘ridan-to‘g‘ri",
+        "s": 55.38,
+        "e": 56.08
+      },
+      {
+        "w": "turgan",
+        "s": 56.12,
+        "e": 56.36
+      },
+      {
+        "w": "tarmoqlarni",
+        "s": 56.4,
+        "e": 56.94
+      },
+      {
+        "w": "aniqlab,",
+        "s": 56.98,
+        "e": 57.3
+      },
+      {
+        "w": "brenchlar",
+        "s": 57.62,
+        "e": 58.04
+      },
+      {
+        "w": "chalkashligining",
+        "s": 58.08,
+        "e": 58.7
+      },
+      {
+        "w": "oldini",
+        "s": 58.84,
+        "e": 59.06
+      },
+      {
+        "w": "oladi.",
+        "s": 59.1,
+        "e": 59.36
+      }
+    ]
+  },
+  {
+    "id": "l9",
+    "scene": "ochirish_va_nomlash",
+    "text": "Vazifasi tugagan brenchni xavfsiz minus d bilan, birlashtirilmaganini esa majburiy katta minus D bilan o‘chiramiz.",
+    "show": "Vazifasi tugagan brenchni xavfsiz minus d bilan, birlashtirilmaganini esa majburiy katta minus D bilan o‘chiramiz.",
+    "say": "Vazifasi tugagan brenchni xavfsiz minus di bilan, birlashtirilmaganini esa majburiy katta minus di bilan o‘chiramiz.",
+    "a0": 60.22,
+    "a1": 66.46,
+    "words": [
+      {
+        "w": "Vazifasi",
+        "s": 60.22,
+        "e": 60.64
+      },
+      {
+        "w": "tugagan",
+        "s": 60.68,
+        "e": 60.98
+      },
+      {
+        "w": "brenchni",
+        "s": 61.02,
+        "e": 61.38
+      },
+      {
+        "w": "xavfsiz",
+        "s": 61.46,
+        "e": 61.82
+      },
+      {
+        "w": "minus",
+        "s": 62.1,
+        "e": 62.38
+      },
+      {
+        "w": "di",
+        "s": 62.48,
+        "e": 62.6
+      },
+      {
+        "w": "bilan,",
+        "s": 62.66,
+        "e": 62.88
+      },
+      {
+        "w": "birlashtirilmaganini",
+        "s": 63.2,
+        "e": 64.08
+      },
+      {
+        "w": "esa",
+        "s": 64.12,
+        "e": 64.28
+      },
+      {
+        "w": "majburiy",
+        "s": 64.36,
+        "e": 64.82
+      },
+      {
+        "w": "katta",
+        "s": 64.96,
+        "e": 65.28
+      },
+      {
+        "w": "minus",
+        "s": 65.36,
+        "e": 65.64
+      },
+      {
+        "w": "di",
+        "s": 65.7,
+        "e": 65.78
+      },
+      {
+        "w": "bilan",
+        "s": 65.86,
+        "e": 66.02
+      },
+      {
+        "w": "o‘chiramiz.",
+        "s": 66.06,
+        "e": 66.46
+      }
+    ]
+  },
+  {
+    "id": "l10",
+    "scene": "ochirish_va_nomlash",
+    "text": "minus m orqali brench nomini o‘zgartirganda esa, Git refs papkasidagi fayl va uning reflog jurnalini toza qayta nomlaydi.",
+    "show": "minus m orqali brench nomini o‘zgartirganda esa, Git refs papkasidagi fayl va uning reflog jurnalini toza qayta nomlaydi.",
+    "say": "Minus em orqali brench nomini o‘zgartirganda esa, Git refslar papkasidagi fayl va uning reflog jurnalini toza qayta nomlaydi.",
+    "a0": 67.2,
+    "a1": 74.31,
+    "words": [
+      {
+        "w": "Minus",
+        "s": 67.2,
+        "e": 67.49
+      },
+      {
+        "w": "em",
+        "s": 67.63,
+        "e": 67.75
+      },
+      {
+        "w": "orqali",
+        "s": 67.79,
+        "e": 68.09
+      },
+      {
+        "w": "brench",
+        "s": 68.19,
+        "e": 68.47
+      },
+      {
+        "w": "nomini",
+        "s": 68.53,
+        "e": 68.79
+      },
+      {
+        "w": "o‘zgartirganda",
+        "s": 68.83,
+        "e": 69.39
+      },
+      {
+        "w": "esa,",
+        "s": 69.45,
+        "e": 69.59
+      },
+      {
+        "w": "Git",
+        "s": 69.99,
+        "e": 70.17
+      },
+      {
+        "w": "refslar",
+        "s": 70.39,
+        "e": 70.77
+      },
+      {
+        "w": "papkasidagi",
+        "s": 70.81,
+        "e": 71.33
+      },
+      {
+        "w": "fayl",
+        "s": 71.41,
+        "e": 71.69
+      },
+      {
+        "w": "va",
+        "s": 71.75,
+        "e": 71.81
+      },
+      {
+        "w": "uning",
+        "s": 71.87,
+        "e": 72.07
+      },
+      {
+        "w": "reflog",
+        "s": 72.37,
+        "e": 72.73
+      },
+      {
+        "w": "jurnalini",
+        "s": 72.79,
+        "e": 73.21
+      },
+      {
+        "w": "toza",
+        "s": 73.35,
+        "e": 73.59
+      },
+      {
+        "w": "qayta",
+        "s": 73.65,
+        "e": 73.91
+      },
+      {
+        "w": "nomlaydi.",
+        "s": 73.95,
+        "e": 74.31
+      }
+    ]
+  },
+  {
+    "id": "l11",
+    "scene": "xulosa",
+    "text": "sort committerdate sozlamasi yaqinda faol bo‘lgan brenchlarni doimo ro‘yxat boshida ko‘rsatib, vaqtingizni tejaydi.",
+    "show": "sort committerdate sozlamasi yaqinda faol bo‘lgan brenchlarni doimo ro‘yxat boshida ko‘rsatib, vaqtingizni tejaydi.",
+    "say": "Sort kommitter-deyt sozlamasi yaqinda faol bo‘lgan brenchlarni doimo ro‘yxat boshida ko‘rsatib, vaqtingizni tejaydi.",
+    "a0": 75.11,
+    "a1": 81.43,
+    "words": [
+      {
+        "w": "Sort",
+        "s": 75.11,
+        "e": 75.35
+      },
+      {
+        "w": "kommitter-deyt",
+        "s": 75.47,
+        "e": 76.19
+      },
+      {
+        "w": "sozlamasi",
+        "s": 76.21,
+        "e": 76.71
+      },
+      {
+        "w": "yaqinda",
+        "s": 77.05,
+        "e": 77.39
+      },
+      {
+        "w": "faol",
+        "s": 77.45,
+        "e": 77.71
+      },
+      {
+        "w": "bo‘lgan",
+        "s": 77.75,
+        "e": 78.03
+      },
+      {
+        "w": "brenchlarni",
+        "s": 78.07,
+        "e": 78.59
+      },
+      {
+        "w": "doimo",
+        "s": 78.71,
+        "e": 79.05
+      },
+      {
+        "w": "ro‘yxat",
+        "s": 79.15,
+        "e": 79.47
+      },
+      {
+        "w": "boshida",
+        "s": 79.51,
+        "e": 79.79
+      },
+      {
+        "w": "ko‘rsatib,",
+        "s": 79.83,
+        "e": 80.21
+      },
+      {
+        "w": "vaqtingizni",
+        "s": 80.53,
+        "e": 81.03
+      },
+      {
+        "w": "tejaydi.",
+        "s": 81.07,
+        "e": 81.43
+      }
+    ]
+  },
+  {
+    "id": "l12",
+    "scene": "xulosa",
+    "text": "Keyingi yigirma to‘rtinchi bobda tarmoqlanish tarixini to‘g‘ri va tekis chiziqqa keltiruvchi rebase texnikasini o‘rganamiz.",
+    "show": "Keyingi yigirma to‘rtinchi bobda tarmoqlanish tarixini to‘g‘ri va tekis chiziqqa keltiruvchi rebase texnikasini o‘rganamiz.",
+    "say": "Keyingi yigirma to‘rtinchi bobda tarmoqlanish tarixini to‘g‘ri va tekis chiziqqa keltiruvchi ribeys texnikasini o‘rganamiz.",
+    "a0": 82.32,
+    "a1": 88.62,
+    "words": [
+      {
+        "w": "Keyingi",
+        "s": 82.32,
+        "e": 82.66
+      },
+      {
+        "w": "yigirma",
+        "s": 82.76,
+        "e": 83.06
+      },
+      {
+        "w": "to‘rtinchi",
+        "s": 83.1,
+        "e": 83.48
+      },
+      {
+        "w": "bobda",
+        "s": 83.5,
+        "e": 83.76
+      },
+      {
+        "w": "tarmoqlanish",
+        "s": 84.08,
+        "e": 84.64
+      },
+      {
+        "w": "tarixini",
+        "s": 84.66,
+        "e": 85.08
+      },
+      {
+        "w": "to‘g‘ri",
+        "s": 85.18,
+        "e": 85.5
+      },
+      {
+        "w": "va",
+        "s": 85.58,
+        "e": 85.66
+      },
+      {
+        "w": "tekis",
+        "s": 85.78,
+        "e": 86.04
+      },
+      {
+        "w": "chiziqqa",
+        "s": 86.1,
+        "e": 86.42
+      },
+      {
+        "w": "keltiruvchi",
+        "s": 86.48,
+        "e": 86.94
+      },
+      {
+        "w": "ribeys",
+        "s": 87.3,
+        "e": 87.66
+      },
+      {
+        "w": "texnikasini",
+        "s": 87.68,
+        "e": 88.18
+      },
+      {
+        "w": "o‘rganamiz.",
+        "s": 88.22,
+        "e": 88.62
+      }
+    ]
+  }
+]
