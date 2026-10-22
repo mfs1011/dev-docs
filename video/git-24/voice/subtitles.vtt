@@ -1,0 +1,61 @@
+WEBVTT
+
+1
+00:01.420 --> 00:09.560
+Salom! Ushbu yigirma to‘rtinchi bobda Git'dagi eng qiziqarli va kuchli
+vositalardan biri bo‘lgan rebase texnikasini to‘liq o‘rganamiz.
+
+2
+00:10.030 --> 00:18.200
+Rebase brenchdagi kommitlarni boshqa asos ustiga qaytadan yasash bo‘lib, u
+loyiha tarixini ko‘chirib o‘tqazish, ya’ni transplantatsiya amaliyotidir.
+
+3
+00:21.590 --> 00:28.130
+Rebase kommitlarni jismonan ko‘chirmaydi, balki ularning ota
+kommitini o‘zgartirib, mutlaqo yangi heshli kommitlar yaratadi.
+
+4
+00:28.300 --> 00:35.750
+Bunda muallif va uning asl yozilgan sanasi saqlanib qoladi, ammo
+kommitter vaqti rebase qilingan yangi paytga moslab yangilanadi.
+
+5
+00:39.820 --> 00:46.320
+Rebasedan so‘ng barcha kommitlar asosiy brench davomiga to‘g‘ri
+chiziq bo‘lib joylashadi va ortiqcha tarmoqlanish yo‘qoladi.
+
+6
+00:46.530 --> 00:53.480
+Natijada asosiy brenchga qaytib, hech qanday merge kommit
+yaratmasdan, toza fast-forward mergeni bemalol bajarish mumkin.
+
+7
+00:57.470 --> 01:03.860
+Agar rebase jarayonida konflikt yuzaga kelsa, Git to‘xtaydi
+va sizdan to‘qnashgan qatorlarni hal qilishni so‘raydi.
+
+8
+01:03.990 --> 01:10.670
+Faylni to‘g‘rilab git add qilgach, yangi kommit qilinmaydi, balki
+git rebase continue buyrug‘i bilan jarayon davom ettiriladi.
+
+9
+01:14.640 --> 01:22.760
+Rebasening qat’iy oltin qoidasi mavjud: serverga yuborilgan va boshqa
+dasturchilar ishlatayotgan ommaviy brenchlarni aslo rebase qilmang.
+
+10
+01:22.810 --> 01:29.800
+Chunki heshlarning o‘zgarishi jamoa a’zolarida bir xil ishlarning
+duplikat bo‘lib ketishi va og‘ir to‘qnashuvlarga olib keladi.
+
+11
+01:33.650 --> 01:40.400
+Rebase shaxsiy brenchda chiroyli va toza tarix yaratish uchun,
+merge esa jamoaviy haqiqiy tarixni saqlash uchun qulaydir.
+
+12
+01:40.640 --> 01:47.490
+Keyingi bobda kommitlarni birlashtirish, tahrirlash va tartibini
+o‘zgartiruvchi interaktiv rebase imkoniyatlarini o‘rganamiz.
