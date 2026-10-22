@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" playsinline poster="/video/git/45-config-chuqur.jpg" src="/video/git/45-config-chuqur.mp4">
+    <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/git/45-config-chuqur.chapters.vtt" default>
+    <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/git/45-config-chuqur.uz.vtt">
+  </video>
+  <figcaption>45.1-video. Git config chuqur: qatlamlar ierarxiyasi, includeIf shartlari va server sozlamalari</figcaption>
+</figure>
+
 [3-bobda](03-birinchi-sozlash.md) `git config` ning asoslarini ko'rdik: sozlama — `bo'lim.kalit = qiymat` juftligi, u bir nechta **darajada** (system, global, local, worktree, command) saqlanadi, tor daraja keng darajadan ustun, yangi `git config list/get/set` sintaksisi eski `--list`/`--get` o'rnini egallagan. Ism, email, muharrir, `init.defaultBranch` va `includeIf "gitdir:..."` ning eng oddiy shakli ham o'sha yerda.
 
 Bu bob o'sha poydevor ustiga quriladi. Uch savolga javob beramiz:

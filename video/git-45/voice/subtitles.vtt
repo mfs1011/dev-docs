@@ -1,0 +1,61 @@
+WEBVTT
+
+1
+00:01.420 --> 00:10.420
+Git konfiguratsiyasi tizim, global, lokal, ishchi daraxt
+va buyruq satri kabi beshta ustuvor darajaga bo'linadi.
+
+2
+00:10.790 --> 00:18.140
+Torroq doiradagi sozlama kengroq qatlam ustidan g'olib chiqib,
+shaxsiy va jamoaviy parametrlarni moslashuvchan boshqaradi.
+
+3
+00:21.670 --> 00:29.130
+Ko'p darajali tizimda qiymat qaysi fayldan kelganini aniqlash
+uchun git config list show-origin show-scope ishlatiladi.
+
+4
+00:29.380 --> 00:37.770
+Bu buyruq har bir parametrning aniq manzilini va uning global
+yoki lokal ko'lamga tegishliligini bir zumda ko'rsatib beradi.
+
+5
+00:41.880 --> 00:49.360
+IncludeIf direktivasi yordamida repo papkasi yoki joriy branch
+shartiga qarab alohida config fayllar avtomatik ulanadi.
+
+6
+00:49.390 --> 00:56.760
+Masalan, ishchi loyihalar uchun alohida korporativ elektron
+pochta, shaxsiy loyihalar uchun esa boshqa profil faollashadi.
+
+7
+01:00.690 --> 01:09.450
+Kundalik qulaylik uchun autocrlf qator oxirlarini moslashtiradi,
+autocorrect esa xato yozilgan buyruqlarni avtomatik tuzatadi.
+
+8
+01:09.520 --> 01:17.010
+Shuningdek, whitespace tekshiruvi qator oxiridagi keraksiz
+bo'shliqlarni va aralash tab belgilarini stage qilishdan asraydi.
+
+9
+01:21.080 --> 01:29.100
+Serverdagi markaziy repoda receive denyCurrentBranch va
+denyNonFastForwards sozlamalari majburiy surishlarni cheklaydi.
+
+10
+01:29.190 --> 01:35.820
+Receive fsckObjects esa buzilgan yoki shikastlangan
+obyektlarning repozitoriy bazasiga kirishiga yo'l qo'ymaydi.
+
+11
+01:39.690 --> 01:47.130
+Tizimli sozlangan Git konfiguratsiyasi jamoada xatoliklarning
+oldini olib, kundalik ishlash unumdorligini keskin oshiradi.
+
+12
+01:47.300 --> 01:54.070
+Konfiguratsiyani kod kabi tartibli saqlash va shartli
+ulanishlardan oqilona foydalanish eng yaxshi amaliyotdir.
