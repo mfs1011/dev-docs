@@ -1,0 +1,61 @@
+WEBVTT
+
+1
+00:01.420 --> 00:10.340
+Salom! Ushbu o‘ttiz beshinchi bobda GitHub platformasida fork
+qilish va pull request ochish orqali jamoaviy ishlashni o‘rganamiz.
+
+2
+00:10.510 --> 00:19.840
+Fork — bu asl repozitoriyning sizga tegishli nusxasi bo‘lib, siz
+o‘zgartirishlarni unga xavfsiz push qilasiz, asl loyiha esa upstream deb ataladi.
+
+3
+00:23.490 --> 00:31.310
+Hissa qo‘shishda hech qachon asosiy tarmoqdan emas, alohida topic
+branch ochib o‘zgarishlar kiritiladi va forkingizga yuboriladi.
+
+4
+00:31.900 --> 00:39.870
+GitHub veb-interfeysi yoki CLI orqali pull request yaratilib,
+o‘zgarish maqsadi va bog‘liq masalalar raqami aniq bayon etiladi.
+
+5
+00:44.100 --> 00:51.840
+Pull request — bu faqat kod emas, balki jonli suhbat bo‘lib, sharhlovchilar
+taklif bildirsa yangi commit qilib o‘sha tarmoqqa push qilinadi.
+
+6
+00:52.450 --> 01:00.300
+Tizim uch nuqtali git diff sintaksisi orqali umumiy ajdoddan keyingi
+haqiqiy farqni ko‘rsatib, muhokamani yanada qulaylashtiradi.
+
+7
+01:04.460 --> 01:11.570
+Siz ishlayotgan paytda asl loyiha oldinga ketishi mumkin, shuning uchun
+upstream tarmoqlarini vaqti-vaqti bilan fetch qilib turish zarur.
+
+8
+01:12.120 --> 01:19.390
+Agar ziddiyat yuzaga kelsa, upstream o‘zgarishlarini topic branchga
+birlashtirib, konfliktlarni lokal yechgach qayta push qilamiz.
+
+9
+01:23.630 --> 01:30.640
+Maintainerlar pull requestni maxsus yashirin ref orqali lokal
+tortib olib sinaydi va loyiha siyosatiga ko‘ra birlashtiradi.
+
+10
+01:31.130 --> 01:38.310
+Bunda to‘liq tarixni saqlovchi merge commit, bitta qilib
+ixchamlovchi squash yoki chiziqli rebase merge usullari qo‘llanadi.
+
+11
+01:42.500 --> 01:49.130
+O‘zgarish qabul qilingach, forkingizning main tarmog‘i upstream
+bilan tezkor yangilanadi va ortiqcha topic branch o‘chiriladi.
+
+12
+01:49.720 --> 01:58.550
+Xulosa qilganda, har bir mavzu uchun alohida tarmoq ochish, aniq tavsif
+yozish va forkingizni muntazam yangilab turish GitHub oqimining poydevoridir.

@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" playsinline poster="/video/git/35-github-fork-va-pr.jpg" src="/video/git/35-github-fork-va-pr.mp4">
+    <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/git/35-github-fork-va-pr.chapters.vtt" default>
+    <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/git/35-github-fork-va-pr.uz.vtt">
+  </video>
+  <figcaption>35.1-video. GitHub Flow: fork qilish, branch yaratish, pull request ochish va upstream bilan sinxronlash</figcaption>
+</figure>
+
 Oldingi boblarda Git'ning o'zi bilan ishladik: commit, branch, remote, push. **GitHub** — bu Git repo'larini saqlaydigan eng katta xizmat (hosting). U Git'ning ustiga veb-interfeys va jamoaviy ish uchun vositalar qo'shadi. Muhimi: GitHub Git'ning o'rnini bosmaydi. Siz baribir `git clone`, `git push`, `git fetch` qilasiz — GitHub esa shu repo'larning "uyi" va ular atrofidagi muhokama joyi.
 
 Bu bobda ikki asosiy tushuncha bor:
