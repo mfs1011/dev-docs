@@ -1,0 +1,1299 @@
+[
+  {
+    "id": "l1",
+    "scene": "intro",
+    "text": "Salom! Ushbu o‘ttiz to‘rtinchi bobda masalaga maintainer, ya'ni loyihani yurituvchi va qabul qiluvchi boshqaruvchi nuqtai nazaridan yondashamiz.",
+    "show": "Salom! Ushbu o‘ttiz to‘rtinchi bobda masalaga maintainer, ya'ni loyihani yurituvchi va qabul qiluvchi boshqaruvchi nuqtai nazaridan yondashamiz.",
+    "say": "Salom! Ushbu o‘ttiz to‘rtinchi bobda masalaga meynteyner, ya'ni loyihani yurituvchi va qabul qiluvchi boshqaruvchi nuqtai nazaridan yondashamiz.",
+    "a0": 0.2,
+    "a1": 9.19,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.2,
+        "e": 0.5
+      },
+      {
+        "w": "Ushbu",
+        "s": 1.24,
+        "e": 1.5
+      },
+      {
+        "w": "o‘ttiz",
+        "s": 1.82,
+        "e": 2.16
+      },
+      {
+        "w": "to‘rtinchi",
+        "s": 2.22,
+        "e": 2.66
+      },
+      {
+        "w": "bobda",
+        "s": 2.68,
+        "e": 2.94
+      },
+      {
+        "w": "masalaga",
+        "s": 3.18,
+        "e": 3.62
+      },
+      {
+        "w": "meynteyner,",
+        "s": 4.0,
+        "e": 4.72
+      },
+      {
+        "w": "ya'ni",
+        "s": 4.94,
+        "e": 5.14
+      },
+      {
+        "w": "loyihani",
+        "s": 5.5,
+        "e": 5.88
+      },
+      {
+        "w": "yurituvchi",
+        "s": 5.92,
+        "e": 6.38
+      },
+      {
+        "w": "va",
+        "s": 6.6,
+        "e": 6.66
+      },
+      {
+        "w": "qabul",
+        "s": 6.76,
+        "e": 7.04
+      },
+      {
+        "w": "qiluvchi",
+        "s": 7.08,
+        "e": 7.38
+      },
+      {
+        "w": "boshqaruvchi",
+        "s": 7.44,
+        "e": 7.97
+      },
+      {
+        "w": "nuqtai",
+        "s": 8.01,
+        "e": 8.25
+      },
+      {
+        "w": "nazaridan",
+        "s": 8.29,
+        "e": 8.67
+      },
+      {
+        "w": "yondashamiz.",
+        "s": 8.71,
+        "e": 9.19
+      }
+    ]
+  },
+  {
+    "id": "l2",
+    "scene": "intro",
+    "text": "Kelgan patch yoki taklif hali to‘liq ishonilmagan kod hisoblanadi, shuning uchun asosiy tarmoqni buzmaslik uchun begona ish avval alohida topic branch'ga olinadi.",
+    "show": "Kelgan patch yoki taklif hali to‘liq ishonilmagan kod hisoblanadi, shuning uchun asosiy tarmoqni buzmaslik uchun begona ish avval alohida topic branch'ga olinadi.",
+    "say": "Kelgan patch yoki taklif hali to‘liq ishonilmagan kod hisoblanadi, shuning uchun asosiy tarmoqni buzmaslik uchun begona ish avval alohida topik brenchga olinadi.",
+    "a0": 10.25,
+    "a1": 18.41,
+    "words": [
+      {
+        "w": "Kelgan",
+        "s": 10.25,
+        "e": 10.55
+      },
+      {
+        "w": "patch",
+        "s": 10.67,
+        "e": 10.91
+      },
+      {
+        "w": "yoki",
+        "s": 10.97,
+        "e": 11.15
+      },
+      {
+        "w": "taklif",
+        "s": 11.21,
+        "e": 11.51
+      },
+      {
+        "w": "hali",
+        "s": 11.57,
+        "e": 11.77
+      },
+      {
+        "w": "to‘liq",
+        "s": 11.85,
+        "e": 12.09
+      },
+      {
+        "w": "ishonilmagan",
+        "s": 12.21,
+        "e": 12.77
+      },
+      {
+        "w": "kod",
+        "s": 12.85,
+        "e": 12.99
+      },
+      {
+        "w": "hisoblanadi,",
+        "s": 13.03,
+        "e": 13.51
+      },
+      {
+        "w": "shuning",
+        "s": 13.71,
+        "e": 13.91
+      },
+      {
+        "w": "uchun",
+        "s": 13.93,
+        "e": 14.09
+      },
+      {
+        "w": "asosiy",
+        "s": 14.41,
+        "e": 14.77
+      },
+      {
+        "w": "tarmoqni",
+        "s": 14.81,
+        "e": 15.19
+      },
+      {
+        "w": "buzmaslik",
+        "s": 15.23,
+        "e": 15.65
+      },
+      {
+        "w": "uchun",
+        "s": 15.67,
+        "e": 15.85
+      },
+      {
+        "w": "begona",
+        "s": 15.93,
+        "e": 16.27
+      },
+      {
+        "w": "ish",
+        "s": 16.33,
+        "e": 16.43
+      },
+      {
+        "w": "avval",
+        "s": 16.57,
+        "e": 16.85
+      },
+      {
+        "w": "alohida",
+        "s": 16.97,
+        "e": 17.33
+      },
+      {
+        "w": "topik",
+        "s": 17.41,
+        "e": 17.69
+      },
+      {
+        "w": "brenchga",
+        "s": 17.73,
+        "e": 18.05
+      },
+      {
+        "w": "olinadi.",
+        "s": 18.09,
+        "e": 18.41
+      }
+    ]
+  },
+  {
+    "id": "l3",
+    "scene": "git_apply",
+    "text": "Oddiy diff fayllari git apply bilan tekshiriladi; ushbu buyruq atomar bo'lib, ziddiyat chiqsa barcha fayllarni toza qoldiradi, commit esa qo‘lda yasaladi.",
+    "show": "Oddiy diff fayllari git apply bilan tekshiriladi; ushbu buyruq atomar bo'lib, ziddiyat chiqsa barcha fayllarni toza qoldiradi, commit esa qo‘lda yasaladi.",
+    "say": "Oddiy diff fayllari git epplay bilan tekshiriladi; ushbu buyruq atomar bo'lib, ziddiyat chiqsa barcha fayllarni toza qoldiradi, kommit esa qo‘lda yasaladi.",
+    "a0": 19.45,
+    "a1": 27.94,
+    "words": [
+      {
+        "w": "Oddiy",
+        "s": 19.45,
+        "e": 19.67
+      },
+      {
+        "w": "diff",
+        "s": 19.75,
+        "e": 19.93
+      },
+      {
+        "w": "fayllari",
+        "s": 19.95,
+        "e": 20.37
+      },
+      {
+        "w": "git",
+        "s": 20.65,
+        "e": 20.81
+      },
+      {
+        "w": "epplay",
+        "s": 20.97,
+        "e": 21.25
+      },
+      {
+        "w": "bilan",
+        "s": 21.27,
+        "e": 21.43
+      },
+      {
+        "w": "tekshiriladi;",
+        "s": 21.43,
+        "e": 22.35
+      },
+      {
+        "w": "ushbu",
+        "s": 22.35,
+        "e": 22.56
+      },
+      {
+        "w": "buyruq",
+        "s": 22.62,
+        "e": 22.88
+      },
+      {
+        "w": "atomar",
+        "s": 23.06,
+        "e": 23.44
+      },
+      {
+        "w": "bo'lib,",
+        "s": 23.48,
+        "e": 23.68
+      },
+      {
+        "w": "ziddiyat",
+        "s": 24.04,
+        "e": 24.42
+      },
+      {
+        "w": "chiqsa",
+        "s": 24.44,
+        "e": 24.66
+      },
+      {
+        "w": "barcha",
+        "s": 24.8,
+        "e": 25.06
+      },
+      {
+        "w": "fayllarni",
+        "s": 25.12,
+        "e": 25.58
+      },
+      {
+        "w": "toza",
+        "s": 25.64,
+        "e": 25.86
+      },
+      {
+        "w": "qoldiradi,",
+        "s": 25.9,
+        "e": 26.3
+      },
+      {
+        "w": "kommit",
+        "s": 26.68,
+        "e": 26.98
+      },
+      {
+        "w": "esa",
+        "s": 27.02,
+        "e": 27.16
+      },
+      {
+        "w": "qo‘lda",
+        "s": 27.3,
+        "e": 27.54
+      },
+      {
+        "w": "yasaladi.",
+        "s": 27.56,
+        "e": 27.94
+      }
+    ]
+  },
+  {
+    "id": "l4",
+    "scene": "git_apply",
+    "text": "Agar o'zgarishlar eskirgan asosda yozilgan bo'lsa, uch tomonlama merge opsiyasi blob xeshlaridan foydalanib to‘qnashuvlarni oson bartaraf etishga yordam beradi.",
+    "show": "Agar o'zgarishlar eskirgan asosda yozilgan bo'lsa, uch tomonlama merge opsiyasi blob xeshlaridan foydalanib to‘qnashuvlarni oson bartaraf etishga yordam beradi.",
+    "say": "Agar o'zgarishlar eskirgan asosda yozilgan bo'lsa, uch tomonlama merge opsiyasi blob xeshlaridan foydalanib to‘qnashuvlarni oson bartaraf etishga yordam beradi.",
+    "a0": 28.84,
+    "a1": 37.55,
+    "words": [
+      {
+        "w": "Agar",
+        "s": 28.84,
+        "e": 29.1
+      },
+      {
+        "w": "o'zgarishlar",
+        "s": 29.42,
+        "e": 29.88
+      },
+      {
+        "w": "eskirgan",
+        "s": 30.02,
+        "e": 30.42
+      },
+      {
+        "w": "asosda",
+        "s": 30.52,
+        "e": 30.82
+      },
+      {
+        "w": "yozilgan",
+        "s": 30.82,
+        "e": 31.22
+      },
+      {
+        "w": "bo'lsa,",
+        "s": 31.26,
+        "e": 31.54
+      },
+      {
+        "w": "uch",
+        "s": 31.86,
+        "e": 31.98
+      },
+      {
+        "w": "tomonlama",
+        "s": 32.04,
+        "e": 32.5
+      },
+      {
+        "w": "merge",
+        "s": 32.66,
+        "e": 32.92
+      },
+      {
+        "w": "opsiyasi",
+        "s": 33.04,
+        "e": 33.46
+      },
+      {
+        "w": "blob",
+        "s": 33.84,
+        "e": 34.08
+      },
+      {
+        "w": "xeshlaridan",
+        "s": 34.12,
+        "e": 34.58
+      },
+      {
+        "w": "foydalanib",
+        "s": 34.62,
+        "e": 35.08
+      },
+      {
+        "w": "to‘qnashuvlarni",
+        "s": 35.16,
+        "e": 35.86
+      },
+      {
+        "w": "oson",
+        "s": 36.06,
+        "e": 36.3
+      },
+      {
+        "w": "bartaraf",
+        "s": 36.36,
+        "e": 36.72
+      },
+      {
+        "w": "etishga",
+        "s": 36.78,
+        "e": 36.98
+      },
+      {
+        "w": "yordam",
+        "s": 37.02,
+        "e": 37.26
+      },
+      {
+        "w": "beradi.",
+        "s": 37.28,
+        "e": 37.55
+      }
+    ]
+  },
+  {
+    "id": "l5",
+    "scene": "git_am",
+    "text": "Format-patch orqali kelgan mbox fayllarini git am buyrug'i bir zumda qo'llab, muallif ismi, sanasi va commit xabarini to'liq saqlab qoladi.",
+    "show": "Format-patch orqali kelgan mbox fayllarini git am buyrug'i bir zumda qo'llab, muallif ismi, sanasi va commit xabarini to'liq saqlab qoladi.",
+    "say": "Format pech orqali kelgan em boks fayllarini git ey-em buyrug'i bir zumda qo'llab, muallif ismi, sanasi va kommit xabarini to'liq saqlab qoladi.",
+    "a0": 38.19,
+    "a1": 46.99,
+    "words": [
+      {
+        "w": "Format",
+        "s": 38.19,
+        "e": 38.53
+      },
+      {
+        "w": "pech",
+        "s": 38.63,
+        "e": 38.81
+      },
+      {
+        "w": "orqali",
+        "s": 38.87,
+        "e": 39.13
+      },
+      {
+        "w": "kelgan",
+        "s": 39.19,
+        "e": 39.47
+      },
+      {
+        "w": "em",
+        "s": 39.89,
+        "e": 39.99
+      },
+      {
+        "w": "boks",
+        "s": 40.09,
+        "e": 40.29
+      },
+      {
+        "w": "fayllarini",
+        "s": 40.35,
+        "e": 40.85
+      },
+      {
+        "w": "git",
+        "s": 41.11,
+        "e": 41.25
+      },
+      {
+        "w": "ey-em",
+        "s": 41.47,
+        "e": 41.69
+      },
+      {
+        "w": "buyrug'i",
+        "s": 41.75,
+        "e": 42.11
+      },
+      {
+        "w": "bir",
+        "s": 42.51,
+        "e": 42.61
+      },
+      {
+        "w": "zumda",
+        "s": 42.67,
+        "e": 42.89
+      },
+      {
+        "w": "qo'llab,",
+        "s": 42.95,
+        "e": 43.29
+      },
+      {
+        "w": "muallif",
+        "s": 43.49,
+        "e": 43.83
+      },
+      {
+        "w": "ismi,",
+        "s": 43.95,
+        "e": 44.21
+      },
+      {
+        "w": "sanasi",
+        "s": 44.43,
+        "e": 44.87
+      },
+      {
+        "w": "va",
+        "s": 45.21,
+        "e": 45.27
+      },
+      {
+        "w": "kommit",
+        "s": 45.37,
+        "e": 45.69
+      },
+      {
+        "w": "xabarini",
+        "s": 45.73,
+        "e": 46.09
+      },
+      {
+        "w": "to'liq",
+        "s": 46.17,
+        "e": 46.43
+      },
+      {
+        "w": "saqlab",
+        "s": 46.47,
+        "e": 46.71
+      },
+      {
+        "w": "qoladi.",
+        "s": 46.73,
+        "e": 46.99
+      }
+    ]
+  },
+  {
+    "id": "l6",
+    "scene": "git_am",
+    "text": "Jarayonda nizo chiqsa, git am continue, skip yoki abort kabi qulay buyruqlar maintainerga butun sessiyani to'liq boshqarish imkonini beradi.",
+    "show": "Jarayonda nizo chiqsa, git am continue, skip yoki abort kabi qulay buyruqlar maintainerga butun sessiyani to'liq boshqarish imkonini beradi.",
+    "say": "Jarayonda nizo chiqsa, git ey-em continue, skip yoki abort kabi qulay buyruqlar meynteynerga butun sessiyani to'liq boshqarish imkonini beradi.",
+    "a0": 47.89,
+    "a1": 56.56,
+    "words": [
+      {
+        "w": "Jarayonda",
+        "s": 47.89,
+        "e": 48.27
+      },
+      {
+        "w": "nizo",
+        "s": 48.31,
+        "e": 48.49
+      },
+      {
+        "w": "chiqsa,",
+        "s": 48.55,
+        "e": 48.81
+      },
+      {
+        "w": "git",
+        "s": 49.15,
+        "e": 49.31
+      },
+      {
+        "w": "ey-em",
+        "s": 49.45,
+        "e": 49.67
+      },
+      {
+        "w": "continue,",
+        "s": 49.75,
+        "e": 50.35
+      },
+      {
+        "w": "skip",
+        "s": 50.65,
+        "e": 50.99
+      },
+      {
+        "w": "yoki",
+        "s": 51.19,
+        "e": 51.41
+      },
+      {
+        "w": "abort",
+        "s": 51.87,
+        "e": 52.17
+      },
+      {
+        "w": "kabi",
+        "s": 52.23,
+        "e": 52.41
+      },
+      {
+        "w": "qulay",
+        "s": 52.54,
+        "e": 52.78
+      },
+      {
+        "w": "buyruqlar",
+        "s": 52.84,
+        "e": 53.26
+      },
+      {
+        "w": "meynteynerga",
+        "s": 53.58,
+        "e": 54.26
+      },
+      {
+        "w": "butun",
+        "s": 54.36,
+        "e": 54.6
+      },
+      {
+        "w": "sessiyani",
+        "s": 54.64,
+        "e": 55.06
+      },
+      {
+        "w": "to'liq",
+        "s": 55.14,
+        "e": 55.4
+      },
+      {
+        "w": "boshqarish",
+        "s": 55.46,
+        "e": 55.84
+      },
+      {
+        "w": "imkonini",
+        "s": 55.88,
+        "e": 56.28
+      },
+      {
+        "w": "beradi.",
+        "s": 56.3,
+        "e": 56.56
+      }
+    ]
+  },
+  {
+    "id": "l7",
+    "scene": "remote_va_tekshirish",
+    "text": "Doimiy hamkorlarning ommaviy forklaridan branchlarni remote qilib qo'shamiz va yangiliklarni xavfsiz fetch qilib olamiz.",
+    "show": "Doimiy hamkorlarning ommaviy forklaridan branchlarni remote qilib qo'shamiz va yangiliklarni xavfsiz fetch qilib olamiz.",
+    "say": "Doimiy hamkorlarning ommaviy forklaridan brenchlarni remote qilib qo'shamiz va yangiliklarni xavfsiz fetch qilib olamiz.",
+    "a0": 57.9,
+    "a1": 64.06,
+    "words": [
+      {
+        "w": "Doimiy",
+        "s": 57.9,
+        "e": 58.24
+      },
+      {
+        "w": "hamkorlarning",
+        "s": 58.3,
+        "e": 58.9
+      },
+      {
+        "w": "ommaviy",
+        "s": 59.08,
+        "e": 59.42
+      },
+      {
+        "w": "forklaridan",
+        "s": 59.5,
+        "e": 60.0
+      },
+      {
+        "w": "brenchlarni",
+        "s": 60.16,
+        "e": 60.68
+      },
+      {
+        "w": "remote",
+        "s": 60.74,
+        "e": 61.06
+      },
+      {
+        "w": "qilib",
+        "s": 61.06,
+        "e": 61.22
+      },
+      {
+        "w": "qo'shamiz",
+        "s": 61.24,
+        "e": 61.6
+      },
+      {
+        "w": "va",
+        "s": 61.78,
+        "e": 61.84
+      },
+      {
+        "w": "yangiliklarni",
+        "s": 61.92,
+        "e": 62.5
+      },
+      {
+        "w": "xavfsiz",
+        "s": 62.8,
+        "e": 63.22
+      },
+      {
+        "w": "fetch",
+        "s": 63.38,
+        "e": 63.58
+      },
+      {
+        "w": "qilib",
+        "s": 63.62,
+        "e": 63.76
+      },
+      {
+        "w": "olamiz.",
+        "s": 63.8,
+        "e": 64.06
+      }
+    ]
+  },
+  {
+    "id": "l8",
+    "scene": "remote_va_tekshirish",
+    "text": "Aynan nima kiritilayotganini aniqlash uchun uch nuqtali git diff sintaksisi umumiy merge base ajdodidan keyingi haqiqiy farqni to'g'ri ko'rsatadi.",
+    "show": "Aynan nima kiritilayotganini aniqlash uchun uch nuqtali git diff sintaksisi umumiy merge base ajdodidan keyingi haqiqiy farqni to'g'ri ko'rsatadi.",
+    "say": "Aynan nima kiritilayotganini aniqlash uchun uch nuqtali git diff sintaksisi umumiy merj beys ajdodidan keyingi haqiqiy farqni to'g'ri ko'rsatadi.",
+    "a0": 64.84,
+    "a1": 73.27,
+    "words": [
+      {
+        "w": "Aynan",
+        "s": 64.84,
+        "e": 65.1
+      },
+      {
+        "w": "nima",
+        "s": 65.36,
+        "e": 65.52
+      },
+      {
+        "w": "kiritilayotganini",
+        "s": 65.58,
+        "e": 66.24
+      },
+      {
+        "w": "aniqlash",
+        "s": 66.3,
+        "e": 66.64
+      },
+      {
+        "w": "uchun",
+        "s": 66.66,
+        "e": 66.84
+      },
+      {
+        "w": "uch",
+        "s": 67.2,
+        "e": 67.32
+      },
+      {
+        "w": "nuqtali",
+        "s": 67.38,
+        "e": 67.75
+      },
+      {
+        "w": "git",
+        "s": 68.15,
+        "e": 68.31
+      },
+      {
+        "w": "diff",
+        "s": 68.47,
+        "e": 68.63
+      },
+      {
+        "w": "sintaksisi",
+        "s": 68.71,
+        "e": 69.29
+      },
+      {
+        "w": "umumiy",
+        "s": 69.65,
+        "e": 69.99
+      },
+      {
+        "w": "merj",
+        "s": 70.13,
+        "e": 70.35
+      },
+      {
+        "w": "beys",
+        "s": 70.43,
+        "e": 70.65
+      },
+      {
+        "w": "ajdodidan",
+        "s": 70.77,
+        "e": 71.25
+      },
+      {
+        "w": "keyingi",
+        "s": 71.31,
+        "e": 71.61
+      },
+      {
+        "w": "haqiqiy",
+        "s": 71.69,
+        "e": 72.11
+      },
+      {
+        "w": "farqni",
+        "s": 72.17,
+        "e": 72.49
+      },
+      {
+        "w": "to'g'ri",
+        "s": 72.55,
+        "e": 72.83
+      },
+      {
+        "w": "ko'rsatadi.",
+        "s": 72.85,
+        "e": 73.27
+      }
+    ]
+  },
+  {
+    "id": "l9",
+    "scene": "integratsiya_usullari",
+    "text": "Tarixni toza va chiziqli saqlash uchun topic branch asosiy tarmoq ustiga rebase qilinadi va main faqat fast-forward bilan yangilanadi.",
+    "show": "Tarixni toza va chiziqli saqlash uchun topic branch asosiy tarmoq ustiga rebase qilinadi va main faqat fast-forward bilan yangilanadi.",
+    "say": "Tarixni toza va chiziqli saqlash uchun topik brench asosiy tarmoq ustiga ribeyse qilinadi va main faqat fast forvard bilan yangilanadi.",
+    "a0": 74.17,
+    "a1": 81.47,
+    "words": [
+      {
+        "w": "Tarixni",
+        "s": 74.17,
+        "e": 74.51
+      },
+      {
+        "w": "toza",
+        "s": 74.81,
+        "e": 75.07
+      },
+      {
+        "w": "va",
+        "s": 75.15,
+        "e": 75.21
+      },
+      {
+        "w": "chiziqli",
+        "s": 75.25,
+        "e": 75.59
+      },
+      {
+        "w": "saqlash",
+        "s": 75.63,
+        "e": 75.93
+      },
+      {
+        "w": "uchun",
+        "s": 75.97,
+        "e": 76.13
+      },
+      {
+        "w": "topik",
+        "s": 76.43,
+        "e": 76.73
+      },
+      {
+        "w": "brench",
+        "s": 76.75,
+        "e": 76.99
+      },
+      {
+        "w": "asosiy",
+        "s": 77.09,
+        "e": 77.45
+      },
+      {
+        "w": "tarmoq",
+        "s": 77.51,
+        "e": 77.79
+      },
+      {
+        "w": "ustiga",
+        "s": 77.81,
+        "e": 78.05
+      },
+      {
+        "w": "ribeyse",
+        "s": 78.11,
+        "e": 78.45
+      },
+      {
+        "w": "qilinadi",
+        "s": 78.47,
+        "e": 78.79
+      },
+      {
+        "w": "va",
+        "s": 79.01,
+        "e": 79.07
+      },
+      {
+        "w": "main",
+        "s": 79.17,
+        "e": 79.39
+      },
+      {
+        "w": "faqat",
+        "s": 79.63,
+        "e": 79.87
+      },
+      {
+        "w": "fast",
+        "s": 80.13,
+        "e": 80.35
+      },
+      {
+        "w": "forvard",
+        "s": 80.39,
+        "e": 80.75
+      },
+      {
+        "w": "bilan",
+        "s": 80.77,
+        "e": 80.95
+      },
+      {
+        "w": "yangilanadi.",
+        "s": 80.99,
+        "e": 81.47
+      }
+    ]
+  },
+  {
+    "id": "l10",
+    "scene": "integratsiya_usullari",
+    "text": "Katta seriyadan faqat ma'lum bir zarur o'zgarishni ajratib olish kerak bo'lganda, git cherry-pick buyrug'i yangi commit hosil qilib yordamga keladi.",
+    "show": "Katta seriyadan faqat ma'lum bir zarur o'zgarishni ajratib olish kerak bo'lganda, git cherry-pick buyrug'i yangi commit hosil qilib yordamga keladi.",
+    "say": "Katta seriyadan faqat ma'lum bir zarur o'zgarishni ajratib olish kerak bo'lganda, git cherri pik buyrug'i yangi kommit hosil qilib yordamga keladi.",
+    "a0": 82.6,
+    "a1": 90.0,
+    "words": [
+      {
+        "w": "Katta",
+        "s": 82.6,
+        "e": 82.88
+      },
+      {
+        "w": "seriyadan",
+        "s": 82.94,
+        "e": 83.36
+      },
+      {
+        "w": "faqat",
+        "s": 83.42,
+        "e": 83.68
+      },
+      {
+        "w": "ma'lum",
+        "s": 83.8,
+        "e": 84.12
+      },
+      {
+        "w": "bir",
+        "s": 84.18,
+        "e": 84.28
+      },
+      {
+        "w": "zarur",
+        "s": 84.36,
+        "e": 84.64
+      },
+      {
+        "w": "o'zgarishni",
+        "s": 84.72,
+        "e": 85.1
+      },
+      {
+        "w": "ajratib",
+        "s": 85.18,
+        "e": 85.52
+      },
+      {
+        "w": "olish",
+        "s": 85.54,
+        "e": 85.72
+      },
+      {
+        "w": "kerak",
+        "s": 85.74,
+        "e": 85.94
+      },
+      {
+        "w": "bo'lganda,",
+        "s": 85.98,
+        "e": 86.34
+      },
+      {
+        "w": "git",
+        "s": 86.7,
+        "e": 86.86
+      },
+      {
+        "w": "cherri",
+        "s": 87.0,
+        "e": 87.26
+      },
+      {
+        "w": "pik",
+        "s": 87.36,
+        "e": 87.52
+      },
+      {
+        "w": "buyrug'i",
+        "s": 87.58,
+        "e": 87.9
+      },
+      {
+        "w": "yangi",
+        "s": 88.24,
+        "e": 88.52
+      },
+      {
+        "w": "kommit",
+        "s": 88.58,
+        "e": 88.84
+      },
+      {
+        "w": "hosil",
+        "s": 88.88,
+        "e": 89.14
+      },
+      {
+        "w": "qilib",
+        "s": 89.18,
+        "e": 89.34
+      },
+      {
+        "w": "yordamga",
+        "s": 89.4,
+        "e": 89.74
+      },
+      {
+        "w": "keladi.",
+        "s": 89.78,
+        "e": 90.0
+      }
+    ]
+  },
+  {
+    "id": "l11",
+    "scene": "reliz_va_xulosa",
+    "text": "Loyiha relizga tayyor bo'lgach, annotated reliz tegi qo'yiladi, git describe orqali build raqami olinadi va git archive yordamida toza arxiv yasaladi.",
+    "show": "Loyiha relizga tayyor bo'lgach, annotated reliz tegi qo'yiladi, git describe orqali build raqami olinadi va git archive yordamida toza arxiv yasaladi.",
+    "say": "Loyiha relizga tayyor bo'lgach, annoteitid reliz tegi qo'yiladi, git diskrayb orqali build raqami olinadi va git arxayv yordamida toza arxiv yasaladi.",
+    "a0": 90.96,
+    "a1": 99.15,
+    "words": [
+      {
+        "w": "Loyiha",
+        "s": 90.96,
+        "e": 91.24
+      },
+      {
+        "w": "relizga",
+        "s": 91.3,
+        "e": 91.62
+      },
+      {
+        "w": "tayyor",
+        "s": 91.66,
+        "e": 91.94
+      },
+      {
+        "w": "bo'lgach,",
+        "s": 91.98,
+        "e": 92.36
+      },
+      {
+        "w": "annoteitid",
+        "s": 92.5,
+        "e": 93.04
+      },
+      {
+        "w": "reliz",
+        "s": 93.16,
+        "e": 93.42
+      },
+      {
+        "w": "tegi",
+        "s": 93.46,
+        "e": 93.66
+      },
+      {
+        "w": "qo'yiladi,",
+        "s": 93.72,
+        "e": 94.08
+      },
+      {
+        "w": "git",
+        "s": 94.44,
+        "e": 94.58
+      },
+      {
+        "w": "diskrayb",
+        "s": 94.64,
+        "e": 95.09
+      },
+      {
+        "w": "orqali",
+        "s": 95.17,
+        "e": 95.45
+      },
+      {
+        "w": "build",
+        "s": 95.57,
+        "e": 95.83
+      },
+      {
+        "w": "raqami",
+        "s": 95.87,
+        "e": 96.15
+      },
+      {
+        "w": "olinadi",
+        "s": 96.19,
+        "e": 96.51
+      },
+      {
+        "w": "va",
+        "s": 96.81,
+        "e": 96.87
+      },
+      {
+        "w": "git",
+        "s": 96.97,
+        "e": 97.11
+      },
+      {
+        "w": "arxayv",
+        "s": 97.25,
+        "e": 97.59
+      },
+      {
+        "w": "yordamida",
+        "s": 97.63,
+        "e": 98.03
+      },
+      {
+        "w": "toza",
+        "s": 98.15,
+        "e": 98.39
+      },
+      {
+        "w": "arxiv",
+        "s": 98.49,
+        "e": 98.77
+      },
+      {
+        "w": "yasaladi.",
+        "s": 98.79,
+        "e": 99.15
+      }
+    ]
+  },
+  {
+    "id": "l12",
+    "scene": "reliz_va_xulosa",
+    "text": "Xulosa qilganda, qat'iy tekshirish, alohida topic branchlar va to'g'ri integratsiya vositalari yirik loyihalarni yillar davomida barqaror saqlash garovidir.",
+    "show": "Xulosa qilganda, qat'iy tekshirish, alohida topic branchlar va to'g'ri integratsiya vositalari yirik loyihalarni yillar davomida barqaror saqlash garovidir.",
+    "say": "Xulosa qilganda, qat'iy tekshirish, alohida topik brenchlar va to'g'ri integratsiya vositalari yirik loyihalarni yillar davomida barqaror saqlash garovidir.",
+    "a0": 100.09,
+    "a1": 108.7,
+    "words": [
+      {
+        "w": "Xulosa",
+        "s": 100.09,
+        "e": 100.35
+      },
+      {
+        "w": "qilganda,",
+        "s": 100.39,
+        "e": 100.77
+      },
+      {
+        "w": "qat'iy",
+        "s": 101.13,
+        "e": 101.43
+      },
+      {
+        "w": "tekshirish,",
+        "s": 101.49,
+        "e": 102.03
+      },
+      {
+        "w": "alohida",
+        "s": 102.29,
+        "e": 102.65
+      },
+      {
+        "w": "topik",
+        "s": 102.73,
+        "e": 103.01
+      },
+      {
+        "w": "brenchlar",
+        "s": 103.05,
+        "e": 103.53
+      },
+      {
+        "w": "va",
+        "s": 103.59,
+        "e": 103.65
+      },
+      {
+        "w": "to'g'ri",
+        "s": 103.73,
+        "e": 103.99
+      },
+      {
+        "w": "integratsiya",
+        "s": 104.07,
+        "e": 104.64
+      },
+      {
+        "w": "vositalari",
+        "s": 104.66,
+        "e": 105.18
+      },
+      {
+        "w": "yirik",
+        "s": 105.56,
+        "e": 105.78
+      },
+      {
+        "w": "loyihalarni",
+        "s": 105.84,
+        "e": 106.36
+      },
+      {
+        "w": "yillar",
+        "s": 106.44,
+        "e": 106.76
+      },
+      {
+        "w": "davomida",
+        "s": 106.8,
+        "e": 107.2
+      },
+      {
+        "w": "barqaror",
+        "s": 107.32,
+        "e": 107.76
+      },
+      {
+        "w": "saqlash",
+        "s": 107.8,
+        "e": 108.14
+      },
+      {
+        "w": "garovidir.",
+        "s": 108.22,
+        "e": 108.7
+      }
+    ]
+  }
+]

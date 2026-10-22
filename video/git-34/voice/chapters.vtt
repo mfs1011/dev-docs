@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:22.533
+Maintainer va Topic Branchlar
+
+00:22.533 --> 00:45.058
+Diff Patchlar va git apply
+
+00:45.058 --> 01:07.745
+Format-Patch va git am
+
+01:07.745 --> 01:28.164
+Remote Branch va Uch Nuqtali Diff
+
+01:28.164 --> 01:48.502
+Rebase, FF va Cherry-pick
+
+01:48.502 --> 02:12.820
+Reliz: Tag, Describe va Arxiv
