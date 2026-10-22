@@ -1,0 +1,61 @@
+WEBVTT
+
+1
+00:01.420 --> 00:07.870
+Git commitidagi muallif satri oddiy matn bo'lib, har
+kim o'zini boshqa shaxs sifatida ko'rsatishi mumkin.
+
+2
+00:08.440 --> 00:16.600
+Kriptografik raqamli imzo esa commit yoki tegning haqiqatan
+ishonchli shaxs tomonidan yaratilganini qat'iy kafolatlaydi.
+
+3
+00:21.130 --> 00:28.270
+Git yigirma uch nuqta to'rtdan boshlab keng tarqalgan standart
+SSH kalitlari orqali imzolashni to'liq qo'llab-quvvatlaydi.
+
+4
+00:28.740 --> 00:36.130
+Buning uchun ji-pi-ji format sozlamasini ssh ga o'rnatib,
+foydalanuvchi imzo kaliti manzilini ko'rsatish kifoya.
+
+5
+00:40.480 --> 00:47.540
+Git commit minus katta S buyrug'i commit obyekti
+sarlavhasiga raqamli imzo muhrini biriktirib saqlaydi.
+
+6
+00:47.930 --> 00:55.860
+Rasmiy relizlar uchun esa git tag minus kichik s yordamida
+annotated teglarni maxsus kriptografik imzo bilan chiqariladi.
+
+7
+01:00.290 --> 01:07.010
+Git log show-signature buyrug'i imzo butunligi bilan birga
+uning ishonchli kalitlar ro'yxatiga mosligini tekshiradi.
+
+8
+01:07.320 --> 01:14.970
+Agar imzo to'g'ri bo'lsa gud git signatye xabari, begona
+kalit bo'lsa no prinsipal match ogohlantirishi beriladi.
+
+9
+01:19.460 --> 01:27.560
+SSH imzolarni jamoada tekshirish uchun allowed signers faylida
+xodimlarning elektron pochtalari va ommaviy kalitlari jamlanadi.
+
+10
+01:27.870 --> 01:34.520
+Ushbu fayl orqali begona kalitlar bilan soxtalashtirilgan
+begona commitlar avtomatik tarzda fosh etiladi.
+
+11
+01:38.870 --> 01:46.430
+Avtomatlashtirilgan tekshiruvlar uchun git merge verify-signatures
+bayrog'i faqat imzoli commitlarni qabul qilishni ta'minlaydi.
+
+12
+01:46.880 --> 01:54.330
+Jamoada imzolash intizomi o'rnatilishi tashqi buzg'unchiliklar
+va ishonchsiz kodlarning loyihaga kirishini butunlay to'xtatadi.

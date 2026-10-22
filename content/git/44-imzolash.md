@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" playsinline poster="/video/git/44-imzolash.jpg" src="/video/git/44-imzolash.mp4">
+    <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/git/44-imzolash.chapters.vtt" default>
+    <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/git/44-imzolash.uz.vtt">
+  </video>
+  <figcaption>44.1-video. Git imzolash: GPG va SSH kalitlari orqali commit va teglarni tasdiqlash</figcaption>
+</figure>
+
 Git obyektlari hash bilan nomlanadi ([14-bob](14-obyektlar-blob.md)): commit'ning bitta harfi o'zgarsa, hash ham o'zgaradi. Bu **yaxlitlikni** kafolatlaydi — "olgan narsam yuborilgan narsa bilan bir xil". Lekin **muallifni** kafolatlamaydi. Commit'dagi `author` va `committer` qatorlari — oddiy matn, ular `user.name` va `user.email` dan olinadi ([03-bob](03-birinchi-sozlash.md)), va bu sozlamalarga istalgan kishi istalgan ism yozishi mumkin. Pro Git bobni shunday boshlaydi: Git kriptografik jihatdan xavfsiz, lekin "hamma narsadan himoyalangan" emas — internetdan olingan ish haqiqatan ishonchli manbadan ekanini tekshirish uchun alohida vosita kerak.
 
 Bu vosita — **raqamli imzo**. Oddiy so'z bilan: sizda ikki qismli kalit bor. **Maxfiy kalit** faqat sizda turadi va u bilan matnga "muhr" bosasiz. **Ommaviy kalit** hammaga beriladi va u bilan har kim "bu muhrni haqiqatan shu maxfiy kalit egasi bosganmi va matn shundan keyin o'zgarmaganmi" degan savolga javob oladi. Maxfiy kalitsiz bunday muhrni yasab bo'lmaydi.
