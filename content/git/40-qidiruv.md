@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" playsinline poster="/video/git/40-qidiruv.jpg" src="/video/git/40-qidiruv.mp4">
+    <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/git/40-qidiruv.chapters.vtt" default>
+    <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/git/40-qidiruv.uz.vtt">
+  </video>
+  <figcaption>40.1-video. Git qidiruv vositalari: git grep, log -S pickaxe, log -G diff va log -L</figcaption>
+</figure>
+
 Loyiha kattalashgani sari ikki xil savol tez-tez chiqadi:
 
 1. **"Qayerda?"** — bu funksiya qayerda e'lon qilingan, qayerdan chaqiriladi, bu konstanta qaysi fayllarda bor?

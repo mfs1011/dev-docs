@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:20.551
+Qidiruv Savollari va git grep Asoslari
+
+00:20.551 --> 00:40.541
+Turli Qatlamlar va Commitlarda Qidiruv
+
+00:40.541 --> 01:01.549
+Funksiya Konteksti va Mantiqiy Regex
+
+01:01.549 --> 01:20.353
+git log -S (Pickaxe): Satr Qachon Qo'shildi / O'chdi
+
+01:20.353 --> 01:39.704
+git log -G vs -S: Qiymat O'zgarishi va Diff Tahlili
+
+01:39.704 --> 02:00.740
+git log -L va --grep: Funksiya Tarixi va Xabarlar

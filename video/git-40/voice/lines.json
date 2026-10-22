@@ -1,0 +1,1299 @@
+[
+  {
+    "id": "l1",
+    "scene": "grep_basics",
+    "text": "Katta loyihalarda ma'lum bir funksiya yoki o'zgaruvchi qayerda e'lon qilinganini tezkor topish uchun ko'p oqimli va aqlli git grep buyrug'i ishlatiladi.",
+    "show": "Katta loyihalarda ma'lum bir funksiya yoki o'zgaruvchi qayerda e'lon qilinganini tezkor topish uchun ko'p oqimli va aqlli git grep buyrug'i ishlatiladi.",
+    "say": "Katta loyihalarda ma'lum bir funksiya yoki o'zgaruvchi qayerda e'lon qilinganini tezkor topish uchun ko'p oqimli va aqlli git grep buyrug'i ishlatiladi.",
+    "a0": 0.06,
+    "a1": 8.07,
+    "words": [
+      {
+        "w": "Katta",
+        "s": 0.06,
+        "e": 0.34
+      },
+      {
+        "w": "loyihalarda",
+        "s": 0.4,
+        "e": 0.94
+      },
+      {
+        "w": "ma'lum",
+        "s": 1.02,
+        "e": 1.36
+      },
+      {
+        "w": "bir",
+        "s": 1.4,
+        "e": 1.5
+      },
+      {
+        "w": "funksiya",
+        "s": 1.56,
+        "e": 2.0
+      },
+      {
+        "w": "yoki",
+        "s": 2.02,
+        "e": 2.42
+      },
+      {
+        "w": "o'zgaruvchi",
+        "s": 2.52,
+        "e": 2.98
+      },
+      {
+        "w": "qayerda",
+        "s": 3.02,
+        "e": 3.38
+      },
+      {
+        "w": "e'lon",
+        "s": 3.46,
+        "e": 3.72
+      },
+      {
+        "w": "qilinganini",
+        "s": 3.76,
+        "e": 4.28
+      },
+      {
+        "w": "tezkor",
+        "s": 4.34,
+        "e": 4.7
+      },
+      {
+        "w": "topish",
+        "s": 4.74,
+        "e": 4.98
+      },
+      {
+        "w": "uchun",
+        "s": 5.04,
+        "e": 5.22
+      },
+      {
+        "w": "ko'p",
+        "s": 5.58,
+        "e": 5.76
+      },
+      {
+        "w": "oqimli",
+        "s": 5.88,
+        "e": 6.18
+      },
+      {
+        "w": "va",
+        "s": 6.26,
+        "e": 6.32
+      },
+      {
+        "w": "aqlli",
+        "s": 6.4,
+        "e": 6.72
+      },
+      {
+        "w": "git",
+        "s": 6.86,
+        "e": 7.0
+      },
+      {
+        "w": "grep",
+        "s": 7.08,
+        "e": 7.3
+      },
+      {
+        "w": "buyrug'i",
+        "s": 7.32,
+        "e": 7.61
+      },
+      {
+        "w": "ishlatiladi.",
+        "s": 7.63,
+        "e": 8.07
+      }
+    ]
+  },
+  {
+    "id": "l2",
+    "scene": "grep_basics",
+    "text": "Oddiy tizim grep buyrug'idan farqli ravishda u faqat Git kuzatuvidagi fayllarni tekshiradi hamda qator raqami va mos fayllar sonini qulay chiqaradi.",
+    "show": "Oddiy tizim grep buyrug'idan farqli ravishda u faqat Git kuzatuvidagi fayllarni tekshiradi hamda qator raqami va mos fayllar sonini qulay chiqaradi.",
+    "say": "Oddiy tizim grep buyrug'idan farqli ravishda u faqat Git kuzatuvidagi fayllarni tekshiradi hamda qator raqami va mos fayllar sonini qulay chiqaradi.",
+    "a0": 8.75,
+    "a1": 16.55,
+    "words": [
+      {
+        "w": "Oddiy",
+        "s": 8.75,
+        "e": 9.01
+      },
+      {
+        "w": "tizim",
+        "s": 9.09,
+        "e": 9.37
+      },
+      {
+        "w": "grep",
+        "s": 9.47,
+        "e": 9.71
+      },
+      {
+        "w": "buyrug'idan",
+        "s": 9.73,
+        "e": 10.17
+      },
+      {
+        "w": "farqli",
+        "s": 10.25,
+        "e": 10.51
+      },
+      {
+        "w": "ravishda",
+        "s": 10.57,
+        "e": 10.91
+      },
+      {
+        "w": "u",
+        "s": 11.05,
+        "e": 11.07
+      },
+      {
+        "w": "faqat",
+        "s": 11.19,
+        "e": 11.49
+      },
+      {
+        "w": "Git",
+        "s": 11.63,
+        "e": 11.77
+      },
+      {
+        "w": "kuzatuvidagi",
+        "s": 11.83,
+        "e": 12.39
+      },
+      {
+        "w": "fayllarni",
+        "s": 12.47,
+        "e": 12.93
+      },
+      {
+        "w": "tekshiradi",
+        "s": 12.95,
+        "e": 13.37
+      },
+      {
+        "w": "hamda",
+        "s": 13.45,
+        "e": 13.71
+      },
+      {
+        "w": "qator",
+        "s": 14.03,
+        "e": 14.33
+      },
+      {
+        "w": "raqami",
+        "s": 14.37,
+        "e": 14.71
+      },
+      {
+        "w": "va",
+        "s": 14.79,
+        "e": 14.87
+      },
+      {
+        "w": "mos",
+        "s": 14.95,
+        "e": 15.13
+      },
+      {
+        "w": "fayllar",
+        "s": 15.19,
+        "e": 15.55
+      },
+      {
+        "w": "sonini",
+        "s": 15.59,
+        "e": 15.91
+      },
+      {
+        "w": "qulay",
+        "s": 15.97,
+        "e": 16.17
+      },
+      {
+        "w": "chiqaradi.",
+        "s": 16.21,
+        "e": 16.55
+      }
+    ]
+  },
+  {
+    "id": "l3",
+    "scene": "grep_trees",
+    "text": "git grep nafaqat ishchi katalogda, balki minus-minus cached bilan indexda yoki istalgan eski teg va commit daraxtida to'g'ridan-to'g'ri qidira oladi.",
+    "show": "git grep nafaqat ishchi katalogda, balki minus-minus cached bilan indexda yoki istalgan eski teg va commit daraxtida to'g'ridan-to'g'ri qidira oladi.",
+    "say": "Git grep nafaqat ishchi katalogda, balki minus minus kesht bilan indeksda yoki istalgan eski teg va kommit daraxtida to'g'ridan-to'g'ri qidira oladi.",
+    "a0": 17.25,
+    "a1": 25.08,
+    "words": [
+      {
+        "w": "Git",
+        "s": 17.25,
+        "e": 17.41
+      },
+      {
+        "w": "grep",
+        "s": 17.45,
+        "e": 17.67
+      },
+      {
+        "w": "nafaqat",
+        "s": 17.73,
+        "e": 18.07
+      },
+      {
+        "w": "ishchi",
+        "s": 18.19,
+        "e": 18.41
+      },
+      {
+        "w": "katalogda,",
+        "s": 18.45,
+        "e": 18.97
+      },
+      {
+        "w": "balki",
+        "s": 19.01,
+        "e": 19.27
+      },
+      {
+        "w": "minus",
+        "s": 19.59,
+        "e": 19.81
+      },
+      {
+        "w": "minus",
+        "s": 19.87,
+        "e": 20.09
+      },
+      {
+        "w": "kesht",
+        "s": 20.15,
+        "e": 20.39
+      },
+      {
+        "w": "bilan",
+        "s": 20.43,
+        "e": 20.63
+      },
+      {
+        "w": "indeksda",
+        "s": 20.75,
+        "e": 21.21
+      },
+      {
+        "w": "yoki",
+        "s": 21.53,
+        "e": 21.75
+      },
+      {
+        "w": "istalgan",
+        "s": 21.85,
+        "e": 22.29
+      },
+      {
+        "w": "eski",
+        "s": 22.41,
+        "e": 22.66
+      },
+      {
+        "w": "teg",
+        "s": 22.74,
+        "e": 22.92
+      },
+      {
+        "w": "va",
+        "s": 22.98,
+        "e": 23.04
+      },
+      {
+        "w": "kommit",
+        "s": 23.1,
+        "e": 23.4
+      },
+      {
+        "w": "daraxtida",
+        "s": 23.44,
+        "e": 23.84
+      },
+      {
+        "w": "to'g'ridan-to'g'ri",
+        "s": 23.92,
+        "e": 24.58
+      },
+      {
+        "w": "qidira",
+        "s": 24.62,
+        "e": 24.8
+      },
+      {
+        "w": "oladi.",
+        "s": 24.86,
+        "e": 25.08
+      }
+    ]
+  },
+  {
+    "id": "l4",
+    "scene": "grep_trees",
+    "text": "Bu esa branch almashtirmasdan yoki fayllarni qayta yuklamasdan turib o'tmishdagi konfiguratsiyalarni bir zumda tekshirish imkonini beradi.",
+    "show": "Bu esa branch almashtirmasdan yoki fayllarni qayta yuklamasdan turib o'tmishdagi konfiguratsiyalarni bir zumda tekshirish imkonini beradi.",
+    "say": "Bu esa brench almashtirmasdan yoki fayllarni qayta yuklamasdan turib o'tmishdagi konfiguratsiyalarni bir zumda tekshirish imkonini beradi.",
+    "a0": 25.7,
+    "a1": 32.86,
+    "words": [
+      {
+        "w": "Bu",
+        "s": 25.7,
+        "e": 25.76
+      },
+      {
+        "w": "esa",
+        "s": 25.82,
+        "e": 26.0
+      },
+      {
+        "w": "brench",
+        "s": 26.28,
+        "e": 26.52
+      },
+      {
+        "w": "almashtirmasdan",
+        "s": 26.56,
+        "e": 27.34
+      },
+      {
+        "w": "yoki",
+        "s": 27.44,
+        "e": 27.68
+      },
+      {
+        "w": "fayllarni",
+        "s": 27.96,
+        "e": 28.44
+      },
+      {
+        "w": "qayta",
+        "s": 28.5,
+        "e": 28.78
+      },
+      {
+        "w": "yuklamasdan",
+        "s": 28.82,
+        "e": 29.34
+      },
+      {
+        "w": "turib",
+        "s": 29.38,
+        "e": 29.56
+      },
+      {
+        "w": "o'tmishdagi",
+        "s": 29.84,
+        "e": 30.28
+      },
+      {
+        "w": "konfiguratsiyalarni",
+        "s": 30.34,
+        "e": 31.18
+      },
+      {
+        "w": "bir",
+        "s": 31.36,
+        "e": 31.5
+      },
+      {
+        "w": "zumda",
+        "s": 31.54,
+        "e": 31.76
+      },
+      {
+        "w": "tekshirish",
+        "s": 31.8,
+        "e": 32.16
+      },
+      {
+        "w": "imkonini",
+        "s": 32.2,
+        "e": 32.6
+      },
+      {
+        "w": "beradi.",
+        "s": 32.62,
+        "e": 32.86
+      }
+    ]
+  },
+  {
+    "id": "l5",
+    "scene": "grep_context_logic",
+    "text": "Minus p va minus W kalitlari mos qator aynan qaysi funksiya ichida joylashganini va uning butun tanasini terminalda yaqqol ko'rsatib beradi.",
+    "show": "Minus p va minus W kalitlari mos qator aynan qaysi funksiya ichida joylashganini va uning butun tanasini terminalda yaqqol ko'rsatib beradi.",
+    "say": "Minus pi va minus dabl-yu kalitlari mos qator aynan qaysi funksiya ichida joylashganini va uning butun tanasini terminalda yaqqol ko'rsatib beradi.",
+    "a0": 33.62,
+    "a1": 41.45,
+    "words": [
+      {
+        "w": "Minus",
+        "s": 33.62,
+        "e": 33.9
+      },
+      {
+        "w": "pi",
+        "s": 33.96,
+        "e": 34.06
+      },
+      {
+        "w": "va",
+        "s": 34.24,
+        "e": 34.32
+      },
+      {
+        "w": "minus",
+        "s": 34.46,
+        "e": 34.68
+      },
+      {
+        "w": "dabl-yu",
+        "s": 34.74,
+        "e": 35.06
+      },
+      {
+        "w": "kalitlari",
+        "s": 35.1,
+        "e": 35.54
+      },
+      {
+        "w": "mos",
+        "s": 35.88,
+        "e": 36.08
+      },
+      {
+        "w": "qator",
+        "s": 36.12,
+        "e": 36.4
+      },
+      {
+        "w": "aynan",
+        "s": 36.54,
+        "e": 36.84
+      },
+      {
+        "w": "qaysi",
+        "s": 36.92,
+        "e": 37.22
+      },
+      {
+        "w": "funksiya",
+        "s": 37.26,
+        "e": 37.57
+      },
+      {
+        "w": "ichida",
+        "s": 37.59,
+        "e": 37.79
+      },
+      {
+        "w": "joylashganini",
+        "s": 37.83,
+        "e": 38.47
+      },
+      {
+        "w": "va",
+        "s": 38.81,
+        "e": 38.87
+      },
+      {
+        "w": "uning",
+        "s": 38.93,
+        "e": 39.13
+      },
+      {
+        "w": "butun",
+        "s": 39.19,
+        "e": 39.47
+      },
+      {
+        "w": "tanasini",
+        "s": 39.53,
+        "e": 39.93
+      },
+      {
+        "w": "terminalda",
+        "s": 39.97,
+        "e": 40.43
+      },
+      {
+        "w": "yaqqol",
+        "s": 40.49,
+        "e": 40.81
+      },
+      {
+        "w": "ko'rsatib",
+        "s": 40.83,
+        "e": 41.19
+      },
+      {
+        "w": "beradi.",
+        "s": 41.21,
+        "e": 41.45
+      }
+    ]
+  },
+  {
+    "id": "l6",
+    "scene": "grep_context_logic",
+    "text": "Shuningdek minus-minus and, or va not operatorlari bir nechta shartlarni bitta qatorda mantiqiy bog'lash orqali murakkab qidiruvni amalga oshiradi.",
+    "show": "Shuningdek minus-minus and, or va not operatorlari bir nechta shartlarni bitta qatorda mantiqiy bog'lash orqali murakkab qidiruvni amalga oshiradi.",
+    "say": "Shuningdek minus minus end, or va not operatorlari bir nechta shartlarni bitta qatorda mantiqiy bog'lash orqali murakkab qidiruvni amalga oshiradi.",
+    "a0": 42.13,
+    "a1": 50.25,
+    "words": [
+      {
+        "w": "Shuningdek",
+        "s": 42.13,
+        "e": 42.47
+      },
+      {
+        "w": "minus",
+        "s": 42.75,
+        "e": 42.97
+      },
+      {
+        "w": "minus",
+        "s": 43.03,
+        "e": 43.25
+      },
+      {
+        "w": "end,",
+        "s": 43.41,
+        "e": 43.63
+      },
+      {
+        "w": "or",
+        "s": 44.03,
+        "e": 44.23
+      },
+      {
+        "w": "va",
+        "s": 44.33,
+        "e": 44.39
+      },
+      {
+        "w": "not",
+        "s": 44.51,
+        "e": 44.69
+      },
+      {
+        "w": "operatorlari",
+        "s": 44.77,
+        "e": 45.33
+      },
+      {
+        "w": "bir",
+        "s": 45.65,
+        "e": 45.75
+      },
+      {
+        "w": "nechta",
+        "s": 45.81,
+        "e": 46.05
+      },
+      {
+        "w": "shartlarni",
+        "s": 46.09,
+        "e": 46.55
+      },
+      {
+        "w": "bitta",
+        "s": 46.61,
+        "e": 46.87
+      },
+      {
+        "w": "qatorda",
+        "s": 46.91,
+        "e": 47.29
+      },
+      {
+        "w": "mantiqiy",
+        "s": 47.39,
+        "e": 47.85
+      },
+      {
+        "w": "bog'lash",
+        "s": 47.91,
+        "e": 48.23
+      },
+      {
+        "w": "orqali",
+        "s": 48.27,
+        "e": 48.55
+      },
+      {
+        "w": "murakkab",
+        "s": 48.85,
+        "e": 49.25
+      },
+      {
+        "w": "qidiruvni",
+        "s": 49.27,
+        "e": 49.59
+      },
+      {
+        "w": "amalga",
+        "s": 49.65,
+        "e": 49.89
+      },
+      {
+        "w": "oshiradi.",
+        "s": 49.93,
+        "e": 50.25
+      }
+    ]
+  },
+  {
+    "id": "l7",
+    "scene": "log_pickaxe",
+    "text": "Kod qachon tug'ilgan yoki qachon o'chirilgan degan savolga javob topish uchun git log minus S, ya'ni pickaxe mexanizmi yordamga keladi.",
+    "show": "Kod qachon tug'ilgan yoki qachon o'chirilgan degan savolga javob topish uchun git log minus S, ya'ni pickaxe mexanizmi yordamga keladi.",
+    "say": "Kod qachon tug'ilgan yoki qachon o'chirilgan degan savolga javob topish uchun git log minus es, ya'ni pikaks mexanizmi yordamga keladi.",
+    "a0": 51.05,
+    "a1": 58.56,
+    "words": [
+      {
+        "w": "Kod",
+        "s": 51.05,
+        "e": 51.23
+      },
+      {
+        "w": "qachon",
+        "s": 51.29,
+        "e": 51.59
+      },
+      {
+        "w": "tug'ilgan",
+        "s": 51.65,
+        "e": 52.25
+      },
+      {
+        "w": "yoki",
+        "s": 52.27,
+        "e": 52.62
+      },
+      {
+        "w": "qachon",
+        "s": 52.72,
+        "e": 53.0
+      },
+      {
+        "w": "o'chirilgan",
+        "s": 53.06,
+        "e": 53.54
+      },
+      {
+        "w": "degan",
+        "s": 53.58,
+        "e": 53.8
+      },
+      {
+        "w": "savolga",
+        "s": 53.82,
+        "e": 54.14
+      },
+      {
+        "w": "javob",
+        "s": 54.18,
+        "e": 54.38
+      },
+      {
+        "w": "topish",
+        "s": 54.4,
+        "e": 54.64
+      },
+      {
+        "w": "uchun",
+        "s": 54.68,
+        "e": 54.86
+      },
+      {
+        "w": "git",
+        "s": 55.24,
+        "e": 55.42
+      },
+      {
+        "w": "log",
+        "s": 55.48,
+        "e": 55.68
+      },
+      {
+        "w": "minus",
+        "s": 55.74,
+        "e": 56.0
+      },
+      {
+        "w": "es,",
+        "s": 56.08,
+        "e": 56.22
+      },
+      {
+        "w": "ya'ni",
+        "s": 56.56,
+        "e": 56.76
+      },
+      {
+        "w": "pikaks",
+        "s": 57.0,
+        "e": 57.36
+      },
+      {
+        "w": "mexanizmi",
+        "s": 57.42,
+        "e": 57.86
+      },
+      {
+        "w": "yordamga",
+        "s": 57.88,
+        "e": 58.26
+      },
+      {
+        "w": "keladi.",
+        "s": 58.3,
+        "e": 58.56
+      }
+    ]
+  },
+  {
+    "id": "l8",
+    "scene": "log_pickaxe",
+    "text": "U butun tarix bo'ylab matnning uchrashlar soni o'zgargan nuqtalarni qazib topadi va keraksiz oraliq commitlarni chetlab o'tadi.",
+    "show": "U butun tarix bo'ylab matnning uchrashlar soni o'zgargan nuqtalarni qazib topadi va keraksiz oraliq commitlarni chetlab o'tadi.",
+    "say": "U butun tarix bo'ylab matnning uchrashlar soni o'zgargan nuqtalarni qazib topadi va keraksiz oraliq kommitlarni chetlab o'tadi.",
+    "a0": 59.3,
+    "a1": 65.44,
+    "words": [
+      {
+        "w": "U",
+        "s": 59.3,
+        "e": 59.32
+      },
+      {
+        "w": "butun",
+        "s": 59.46,
+        "e": 59.7
+      },
+      {
+        "w": "tarix",
+        "s": 59.76,
+        "e": 60.08
+      },
+      {
+        "w": "bo'ylab",
+        "s": 60.12,
+        "e": 60.4
+      },
+      {
+        "w": "matnning",
+        "s": 60.46,
+        "e": 60.86
+      },
+      {
+        "w": "uchrashlar",
+        "s": 60.88,
+        "e": 61.3
+      },
+      {
+        "w": "soni",
+        "s": 61.34,
+        "e": 61.54
+      },
+      {
+        "w": "o'zgargan",
+        "s": 61.6,
+        "e": 61.96
+      },
+      {
+        "w": "nuqtalarni",
+        "s": 62.0,
+        "e": 62.46
+      },
+      {
+        "w": "qazib",
+        "s": 62.54,
+        "e": 62.78
+      },
+      {
+        "w": "topadi",
+        "s": 62.8,
+        "e": 63.1
+      },
+      {
+        "w": "va",
+        "s": 63.38,
+        "e": 63.44
+      },
+      {
+        "w": "keraksiz",
+        "s": 63.54,
+        "e": 63.98
+      },
+      {
+        "w": "oraliq",
+        "s": 64.06,
+        "e": 64.34
+      },
+      {
+        "w": "kommitlarni",
+        "s": 64.38,
+        "e": 64.86
+      },
+      {
+        "w": "chetlab",
+        "s": 64.9,
+        "e": 65.18
+      },
+      {
+        "w": "o'tadi.",
+        "s": 65.22,
+        "e": 65.44
+      }
+    ]
+  },
+  {
+    "id": "l9",
+    "scene": "log_g_diff",
+    "text": "Agar satr soni emas, balki konstanta qiymati o'zgargan bo'lsa, commit diffidagi qatorlarni qidiruvchi git log minus G buyrug'idan foydalaniladi.",
+    "show": "Agar satr soni emas, balki konstanta qiymati o'zgargan bo'lsa, commit diffidagi qatorlarni qidiruvchi git log minus G buyrug'idan foydalaniladi.",
+    "say": "Agar satr soni emas, balki konstanta qiymati o'zgargan bo'lsa, kommit diffidagi qatorlarni qidiruvchi git log minus ji buyrug'idan foydalaniladi.",
+    "a0": 66.26,
+    "a1": 73.67,
+    "words": [
+      {
+        "w": "Agar",
+        "s": 66.26,
+        "e": 66.46
+      },
+      {
+        "w": "satr",
+        "s": 66.56,
+        "e": 66.8
+      },
+      {
+        "w": "soni",
+        "s": 66.84,
+        "e": 67.06
+      },
+      {
+        "w": "emas,",
+        "s": 67.14,
+        "e": 67.44
+      },
+      {
+        "w": "balki",
+        "s": 67.51,
+        "e": 67.77
+      },
+      {
+        "w": "konstanta",
+        "s": 68.05,
+        "e": 68.49
+      },
+      {
+        "w": "qiymati",
+        "s": 68.55,
+        "e": 68.87
+      },
+      {
+        "w": "o'zgargan",
+        "s": 68.91,
+        "e": 69.29
+      },
+      {
+        "w": "bo'lsa,",
+        "s": 69.33,
+        "e": 69.57
+      },
+      {
+        "w": "kommit",
+        "s": 69.89,
+        "e": 70.19
+      },
+      {
+        "w": "diffidagi",
+        "s": 70.23,
+        "e": 70.65
+      },
+      {
+        "w": "qatorlarni",
+        "s": 70.71,
+        "e": 71.21
+      },
+      {
+        "w": "qidiruvchi",
+        "s": 71.23,
+        "e": 71.63
+      },
+      {
+        "w": "git",
+        "s": 71.79,
+        "e": 71.95
+      },
+      {
+        "w": "log",
+        "s": 72.01,
+        "e": 72.17
+      },
+      {
+        "w": "minus",
+        "s": 72.23,
+        "e": 72.45
+      },
+      {
+        "w": "ji",
+        "s": 72.49,
+        "e": 72.57
+      },
+      {
+        "w": "buyrug'idan",
+        "s": 72.63,
+        "e": 73.07
+      },
+      {
+        "w": "foydalaniladi.",
+        "s": 73.09,
+        "e": 73.67
+      }
+    ]
+  },
+  {
+    "id": "l10",
+    "scene": "log_g_diff",
+    "text": "Minus G diffdagi har bir qo'shilgan va o'chirilgan qatorni regex bo'yicha tahlil qiladi hamda murakkab mantiqiy yangilanishlarni aniqlaydi.",
+    "show": "Minus G diffdagi har bir qo'shilgan va o'chirilgan qatorni regex bo'yicha tahlil qiladi hamda murakkab mantiqiy yangilanishlarni aniqlaydi.",
+    "say": "Minus ji diffdagi har bir qo'shilgan va o'chirilgan qatorni regeks bo'yicha tahlil qiladi hamda murakkab mantiqiy yangilanishlarni aniqlaydi.",
+    "a0": 74.33,
+    "a1": 81.33,
+    "words": [
+      {
+        "w": "Minus",
+        "s": 74.33,
+        "e": 74.57
+      },
+      {
+        "w": "ji",
+        "s": 74.59,
+        "e": 74.67
+      },
+      {
+        "w": "diffdagi",
+        "s": 75.01,
+        "e": 75.37
+      },
+      {
+        "w": "har",
+        "s": 75.45,
+        "e": 75.59
+      },
+      {
+        "w": "bir",
+        "s": 75.63,
+        "e": 75.73
+      },
+      {
+        "w": "qo'shilgan",
+        "s": 75.77,
+        "e": 76.29
+      },
+      {
+        "w": "va",
+        "s": 76.37,
+        "e": 76.43
+      },
+      {
+        "w": "o'chirilgan",
+        "s": 76.53,
+        "e": 76.97
+      },
+      {
+        "w": "qatorni",
+        "s": 77.01,
+        "e": 77.37
+      },
+      {
+        "w": "regeks",
+        "s": 77.45,
+        "e": 77.77
+      },
+      {
+        "w": "bo'yicha",
+        "s": 77.81,
+        "e": 78.05
+      },
+      {
+        "w": "tahlil",
+        "s": 78.09,
+        "e": 78.33
+      },
+      {
+        "w": "qiladi",
+        "s": 78.37,
+        "e": 78.63
+      },
+      {
+        "w": "hamda",
+        "s": 78.87,
+        "e": 79.11
+      },
+      {
+        "w": "murakkab",
+        "s": 79.35,
+        "e": 79.75
+      },
+      {
+        "w": "mantiqiy",
+        "s": 79.81,
+        "e": 80.23
+      },
+      {
+        "w": "yangilanishlarni",
+        "s": 80.27,
+        "e": 80.91
+      },
+      {
+        "w": "aniqlaydi.",
+        "s": 80.95,
+        "e": 81.33
+      }
+    ]
+  },
+  {
+    "id": "l11",
+    "scene": "log_l_and_grep",
+    "text": "git log minus L orqali aniq bir qatorlar oralig'i yoki butun bir funksiyaning boshidan oxirigacha bo'lgan to'liq evolyutsiya tarixini ko'rish mumkin.",
+    "show": "git log minus L orqali aniq bir qatorlar oralig'i yoki butun bir funksiyaning boshidan oxirigacha bo'lgan to'liq evolyutsiya tarixini ko'rish mumkin.",
+    "say": "Git log minus el orqali aniq bir qatorlar oralig'i yoki butun bir funksiyaning boshidan oxirigacha bo'lgan to'liq evolyutsiya tarixini ko'rish mumkin.",
+    "a0": 82.11,
+    "a1": 89.8,
+    "words": [
+      {
+        "w": "Git",
+        "s": 82.11,
+        "e": 82.25
+      },
+      {
+        "w": "log",
+        "s": 82.31,
+        "e": 82.45
+      },
+      {
+        "w": "minus",
+        "s": 82.52,
+        "e": 82.74
+      },
+      {
+        "w": "el",
+        "s": 82.8,
+        "e": 82.9
+      },
+      {
+        "w": "orqali",
+        "s": 82.94,
+        "e": 83.26
+      },
+      {
+        "w": "aniq",
+        "s": 83.62,
+        "e": 83.84
+      },
+      {
+        "w": "bir",
+        "s": 83.88,
+        "e": 83.98
+      },
+      {
+        "w": "qatorlar",
+        "s": 84.02,
+        "e": 84.46
+      },
+      {
+        "w": "oralig'i",
+        "s": 84.54,
+        "e": 84.92
+      },
+      {
+        "w": "yoki",
+        "s": 85.28,
+        "e": 85.5
+      },
+      {
+        "w": "butun",
+        "s": 85.6,
+        "e": 85.88
+      },
+      {
+        "w": "bir",
+        "s": 85.92,
+        "e": 86.02
+      },
+      {
+        "w": "funksiyaning",
+        "s": 86.06,
+        "e": 86.56
+      },
+      {
+        "w": "boshidan",
+        "s": 86.66,
+        "e": 87.1
+      },
+      {
+        "w": "oxirigacha",
+        "s": 87.24,
+        "e": 87.7
+      },
+      {
+        "w": "bo'lgan",
+        "s": 87.74,
+        "e": 88.02
+      },
+      {
+        "w": "to'liq",
+        "s": 88.14,
+        "e": 88.42
+      },
+      {
+        "w": "evolyutsiya",
+        "s": 88.52,
+        "e": 88.9
+      },
+      {
+        "w": "tarixini",
+        "s": 88.92,
+        "e": 89.26
+      },
+      {
+        "w": "ko'rish",
+        "s": 89.3,
+        "e": 89.52
+      },
+      {
+        "w": "mumkin.",
+        "s": 89.56,
+        "e": 89.8
+      }
+    ]
+  },
+  {
+    "id": "l12",
+    "scene": "log_l_and_grep",
+    "text": "Commit xabarlari ichidan vazifalar va izohlarni topish uchun esa git log minus-minus grep buyrug'i qulay vosita hisoblanadi.",
+    "show": "Commit xabarlari ichidan vazifalar va izohlarni topish uchun esa git log minus-minus grep buyrug'i qulay vosita hisoblanadi.",
+    "say": "Kommit xabarlari ichidan vazifalar va izohlarni topish uchun esa git log minus minus grep buyrug'i qulay vosita hisoblanadi.",
+    "a0": 90.56,
+    "a1": 96.7,
+    "words": [
+      {
+        "w": "Kommit",
+        "s": 90.56,
+        "e": 90.82
+      },
+      {
+        "w": "xabarlari",
+        "s": 90.86,
+        "e": 91.26
+      },
+      {
+        "w": "ichidan",
+        "s": 91.28,
+        "e": 91.54
+      },
+      {
+        "w": "vazifalar",
+        "s": 91.62,
+        "e": 92.19
+      },
+      {
+        "w": "va",
+        "s": 92.45,
+        "e": 92.49
+      },
+      {
+        "w": "izohlarni",
+        "s": 92.57,
+        "e": 93.03
+      },
+      {
+        "w": "topish",
+        "s": 93.07,
+        "e": 93.29
+      },
+      {
+        "w": "uchun",
+        "s": 93.33,
+        "e": 93.47
+      },
+      {
+        "w": "esa",
+        "s": 93.53,
+        "e": 93.67
+      },
+      {
+        "w": "git",
+        "s": 94.01,
+        "e": 94.17
+      },
+      {
+        "w": "log",
+        "s": 94.21,
+        "e": 94.39
+      },
+      {
+        "w": "minus",
+        "s": 94.47,
+        "e": 94.71
+      },
+      {
+        "w": "minus",
+        "s": 94.75,
+        "e": 94.95
+      },
+      {
+        "w": "grep",
+        "s": 94.99,
+        "e": 95.2
+      },
+      {
+        "w": "buyrug'i",
+        "s": 95.22,
+        "e": 95.52
+      },
+      {
+        "w": "qulay",
+        "s": 95.6,
+        "e": 95.82
+      },
+      {
+        "w": "vosita",
+        "s": 95.86,
+        "e": 96.18
+      },
+      {
+        "w": "hisoblanadi.",
+        "s": 96.22,
+        "e": 96.7
+      }
+    ]
+  }
+]
