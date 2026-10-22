@@ -1,0 +1,1034 @@
+[
+  {
+    "id": "l1",
+    "scene": "config_intro",
+    "text": "Git konfiguratsiyasi tizim, global, lokal, ishchi daraxt va buyruq satri kabi beshta ustuvor darajaga bo'linadi.",
+    "show": "Git konfiguratsiyasi tizim, global, lokal, ishchi daraxt va buyruq satri kabi beshta ustuvor darajaga bo'linadi.",
+    "say": "Git konfiguratsiyasi tizim, global, lokal, ishchi daraxt va buyruq satri kabi beshta ustuvor darajaga bo'linadi.",
+    "a0": 0.28,
+    "a1": 8.83,
+    "words": [
+      {
+        "w": "Git",
+        "s": 0.28,
+        "e": 0.46
+      },
+      {
+        "w": "konfiguratsiyasi",
+        "s": 0.52,
+        "e": 1.4
+      },
+      {
+        "w": "tizim,",
+        "s": 1.84,
+        "e": 2.22
+      },
+      {
+        "w": "global,",
+        "s": 2.84,
+        "e": 3.28
+      },
+      {
+        "w": "lokal,",
+        "s": 3.88,
+        "e": 4.24
+      },
+      {
+        "w": "ishchi",
+        "s": 4.88,
+        "e": 5.14
+      },
+      {
+        "w": "daraxt",
+        "s": 5.2,
+        "e": 5.56
+      },
+      {
+        "w": "va",
+        "s": 5.66,
+        "e": 5.74
+      },
+      {
+        "w": "buyruq",
+        "s": 6.04,
+        "e": 6.4
+      },
+      {
+        "w": "satri",
+        "s": 6.46,
+        "e": 6.72
+      },
+      {
+        "w": "kabi",
+        "s": 6.74,
+        "e": 6.94
+      },
+      {
+        "w": "beshta",
+        "s": 7.06,
+        "e": 7.48
+      },
+      {
+        "w": "ustuvor",
+        "s": 7.61,
+        "e": 7.99
+      },
+      {
+        "w": "darajaga",
+        "s": 8.03,
+        "e": 8.43
+      },
+      {
+        "w": "bo'linadi.",
+        "s": 8.47,
+        "e": 8.83
+      }
+    ]
+  },
+  {
+    "id": "l2",
+    "scene": "config_intro",
+    "text": "Torroq doiradagi sozlama kengroq qatlam ustidan g'olib chiqib, shaxsiy va jamoaviy parametrlarni moslashuvchan boshqaradi.",
+    "show": "Torroq doiradagi sozlama kengroq qatlam ustidan g'olib chiqib, shaxsiy va jamoaviy parametrlarni moslashuvchan boshqaradi.",
+    "say": "Torroq doiradagi sozlama kengroq qatlam ustidan g'olib chiqib, shaxsiy va jamoaviy parametrlarni moslashuvchan boshqaradi.",
+    "a0": 9.65,
+    "a1": 16.55,
+    "words": [
+      {
+        "w": "Torroq",
+        "s": 9.65,
+        "e": 10.03
+      },
+      {
+        "w": "doiradagi",
+        "s": 10.09,
+        "e": 10.53
+      },
+      {
+        "w": "sozlama",
+        "s": 10.59,
+        "e": 10.93
+      },
+      {
+        "w": "kengroq",
+        "s": 11.05,
+        "e": 11.41
+      },
+      {
+        "w": "qatlam",
+        "s": 11.47,
+        "e": 11.79
+      },
+      {
+        "w": "ustidan",
+        "s": 11.83,
+        "e": 12.15
+      },
+      {
+        "w": "g'olib",
+        "s": 12.23,
+        "e": 12.53
+      },
+      {
+        "w": "chiqib,",
+        "s": 12.57,
+        "e": 12.81
+      },
+      {
+        "w": "shaxsiy",
+        "s": 13.17,
+        "e": 13.61
+      },
+      {
+        "w": "va",
+        "s": 13.73,
+        "e": 13.81
+      },
+      {
+        "w": "jamoaviy",
+        "s": 14.03,
+        "e": 14.49
+      },
+      {
+        "w": "parametrlarni",
+        "s": 14.55,
+        "e": 15.29
+      },
+      {
+        "w": "moslashuvchan",
+        "s": 15.49,
+        "e": 16.09
+      },
+      {
+        "w": "boshqaradi.",
+        "s": 16.13,
+        "e": 16.55
+      }
+    ]
+  },
+  {
+    "id": "l3",
+    "scene": "origin_scope",
+    "text": "Ko'p darajali tizimda qiymat qaysi fayldan kelganini aniqlash uchun git config list show-origin show-scope ishlatiladi.",
+    "show": "Ko'p darajali tizimda qiymat qaysi fayldan kelganini aniqlash uchun git config list show-origin show-scope ishlatiladi.",
+    "say": "Ko'p darajali tizimda qiymat qaysi fayldan kelganini aniqlash uchun git konfig list shou orijin shou skoup ishlatiladi.",
+    "a0": 17.43,
+    "a1": 24.44,
+    "words": [
+      {
+        "w": "Ko'p",
+        "s": 17.43,
+        "e": 17.63
+      },
+      {
+        "w": "darajali",
+        "s": 17.69,
+        "e": 18.09
+      },
+      {
+        "w": "tizimda",
+        "s": 18.13,
+        "e": 18.49
+      },
+      {
+        "w": "qiymat",
+        "s": 18.55,
+        "e": 18.85
+      },
+      {
+        "w": "qaysi",
+        "s": 18.99,
+        "e": 19.31
+      },
+      {
+        "w": "fayldan",
+        "s": 19.37,
+        "e": 19.77
+      },
+      {
+        "w": "kelganini",
+        "s": 19.81,
+        "e": 20.23
+      },
+      {
+        "w": "aniqlash",
+        "s": 20.35,
+        "e": 20.75
+      },
+      {
+        "w": "uchun",
+        "s": 20.79,
+        "e": 20.99
+      },
+      {
+        "w": "git",
+        "s": 21.45,
+        "e": 21.63
+      },
+      {
+        "w": "konfig",
+        "s": 21.71,
+        "e": 22.13
+      },
+      {
+        "w": "list",
+        "s": 22.21,
+        "e": 22.43
+      },
+      {
+        "w": "shou",
+        "s": 22.56,
+        "e": 22.76
+      },
+      {
+        "w": "orijin",
+        "s": 22.9,
+        "e": 23.24
+      },
+      {
+        "w": "shou",
+        "s": 23.32,
+        "e": 23.52
+      },
+      {
+        "w": "skoup",
+        "s": 23.58,
+        "e": 23.86
+      },
+      {
+        "w": "ishlatiladi.",
+        "s": 23.94,
+        "e": 24.44
+      }
+    ]
+  },
+  {
+    "id": "l4",
+    "scene": "origin_scope",
+    "text": "Bu buyruq har bir parametrning aniq manzilini va uning global yoki lokal ko'lamga tegishliligini bir zumda ko'rsatib beradi.",
+    "show": "Bu buyruq har bir parametrning aniq manzilini va uning global yoki lokal ko'lamga tegishliligini bir zumda ko'rsatib beradi.",
+    "say": "Bu buyruq har bir parametrning aniq manzilini va uning global yoki lokal ko'lamga tegishliligini bir zumda ko'rsatib beradi.",
+    "a0": 25.14,
+    "a1": 33.08,
+    "words": [
+      {
+        "w": "Bu",
+        "s": 25.14,
+        "e": 25.2
+      },
+      {
+        "w": "buyruq",
+        "s": 25.3,
+        "e": 25.6
+      },
+      {
+        "w": "har",
+        "s": 26.02,
+        "e": 26.22
+      },
+      {
+        "w": "bir",
+        "s": 26.28,
+        "e": 26.4
+      },
+      {
+        "w": "parametrning",
+        "s": 26.44,
+        "e": 27.1
+      },
+      {
+        "w": "aniq",
+        "s": 27.22,
+        "e": 27.44
+      },
+      {
+        "w": "manzilini",
+        "s": 27.52,
+        "e": 28.08
+      },
+      {
+        "w": "va",
+        "s": 28.52,
+        "e": 28.6
+      },
+      {
+        "w": "uning",
+        "s": 28.8,
+        "e": 29.02
+      },
+      {
+        "w": "global",
+        "s": 29.08,
+        "e": 29.54
+      },
+      {
+        "w": "yoki",
+        "s": 29.54,
+        "e": 29.86
+      },
+      {
+        "w": "lokal",
+        "s": 30.24,
+        "e": 30.58
+      },
+      {
+        "w": "ko'lamga",
+        "s": 30.62,
+        "e": 30.96
+      },
+      {
+        "w": "tegishliligini",
+        "s": 31.0,
+        "e": 31.6
+      },
+      {
+        "w": "bir",
+        "s": 31.9,
+        "e": 32.04
+      },
+      {
+        "w": "zumda",
+        "s": 32.12,
+        "e": 32.36
+      },
+      {
+        "w": "ko'rsatib",
+        "s": 32.42,
+        "e": 32.8
+      },
+      {
+        "w": "beradi.",
+        "s": 32.82,
+        "e": 33.08
+      }
+    ]
+  },
+  {
+    "id": "l5",
+    "scene": "include_conditions",
+    "text": "IncludeIf direktivasi yordamida repo papkasi yoki joriy branch shartiga qarab alohida config fayllar avtomatik ulanadi.",
+    "show": "IncludeIf direktivasi yordamida repo papkasi yoki joriy branch shartiga qarab alohida config fayllar avtomatik ulanadi.",
+    "say": "Inklyud if direktivasi yordamida repo papkasi yoki joriy branch shartiga qarab alohida konfig fayllar avtomatik ulanadi.",
+    "a0": 34.04,
+    "a1": 41.07,
+    "words": [
+      {
+        "w": "Inklyud",
+        "s": 34.04,
+        "e": 34.44
+      },
+      {
+        "w": "if",
+        "s": 34.56,
+        "e": 34.66
+      },
+      {
+        "w": "direktivasi",
+        "s": 34.72,
+        "e": 35.3
+      },
+      {
+        "w": "yordamida",
+        "s": 35.3,
+        "e": 35.76
+      },
+      {
+        "w": "repo",
+        "s": 35.96,
+        "e": 36.16
+      },
+      {
+        "w": "papkasi",
+        "s": 36.26,
+        "e": 36.74
+      },
+      {
+        "w": "yoki",
+        "s": 36.74,
+        "e": 37.08
+      },
+      {
+        "w": "joriy",
+        "s": 37.44,
+        "e": 37.79
+      },
+      {
+        "w": "branch",
+        "s": 37.85,
+        "e": 38.11
+      },
+      {
+        "w": "shartiga",
+        "s": 38.15,
+        "e": 38.47
+      },
+      {
+        "w": "qarab",
+        "s": 38.51,
+        "e": 38.71
+      },
+      {
+        "w": "alohida",
+        "s": 38.81,
+        "e": 39.17
+      },
+      {
+        "w": "konfig",
+        "s": 39.25,
+        "e": 39.61
+      },
+      {
+        "w": "fayllar",
+        "s": 39.65,
+        "e": 40.05
+      },
+      {
+        "w": "avtomatik",
+        "s": 40.19,
+        "e": 40.69
+      },
+      {
+        "w": "ulanadi.",
+        "s": 40.73,
+        "e": 41.07
+      }
+    ]
+  },
+  {
+    "id": "l6",
+    "scene": "include_conditions",
+    "text": "Masalan, ishchi loyihalar uchun alohida korporativ elektron pochta, shaxsiy loyihalar uchun esa boshqa profil faollashadi.",
+    "show": "Masalan, ishchi loyihalar uchun alohida korporativ elektron pochta, shaxsiy loyihalar uchun esa boshqa profil faollashadi.",
+    "say": "Masalan, ishchi loyihalar uchun alohida korporativ elektron pochta, shaxsiy loyihalar uchun esa boshqa profil faollashadi.",
+    "a0": 41.55,
+    "a1": 48.47,
+    "words": [
+      {
+        "w": "Masalan,",
+        "s": 41.55,
+        "e": 41.87
+      },
+      {
+        "w": "ishchi",
+        "s": 42.21,
+        "e": 42.45
+      },
+      {
+        "w": "loyihalar",
+        "s": 42.51,
+        "e": 42.95
+      },
+      {
+        "w": "uchun",
+        "s": 42.99,
+        "e": 43.19
+      },
+      {
+        "w": "alohida",
+        "s": 43.33,
+        "e": 43.71
+      },
+      {
+        "w": "korporativ",
+        "s": 43.79,
+        "e": 44.31
+      },
+      {
+        "w": "elektron",
+        "s": 44.37,
+        "e": 44.73
+      },
+      {
+        "w": "pochta,",
+        "s": 44.79,
+        "e": 45.21
+      },
+      {
+        "w": "shaxsiy",
+        "s": 45.71,
+        "e": 46.05
+      },
+      {
+        "w": "loyihalar",
+        "s": 46.13,
+        "e": 46.53
+      },
+      {
+        "w": "uchun",
+        "s": 46.57,
+        "e": 46.73
+      },
+      {
+        "w": "esa",
+        "s": 46.77,
+        "e": 46.91
+      },
+      {
+        "w": "boshqa",
+        "s": 47.15,
+        "e": 47.47
+      },
+      {
+        "w": "profil",
+        "s": 47.53,
+        "e": 47.87
+      },
+      {
+        "w": "faollashadi.",
+        "s": 47.91,
+        "e": 48.47
+      }
+    ]
+  },
+  {
+    "id": "l7",
+    "scene": "client_tuning",
+    "text": "Kundalik qulaylik uchun autocrlf qator oxirlarini moslashtiradi, autocorrect esa xato yozilgan buyruqlarni avtomatik tuzatadi.",
+    "show": "Kundalik qulaylik uchun autocrlf qator oxirlarini moslashtiradi, autocorrect esa xato yozilgan buyruqlarni avtomatik tuzatadi.",
+    "say": "Kundalik qulaylik uchun avto si-ar-el-ef qator oxirlarini moslashtiradi, avto korrekt esa xato yozilgan buyruqlarni avtomatik tuzatadi.",
+    "a0": 49.25,
+    "a1": 57.56,
+    "words": [
+      {
+        "w": "Kundalik",
+        "s": 49.25,
+        "e": 49.71
+      },
+      {
+        "w": "qulaylik",
+        "s": 49.77,
+        "e": 50.15
+      },
+      {
+        "w": "uchun",
+        "s": 50.21,
+        "e": 50.43
+      },
+      {
+        "w": "avto",
+        "s": 50.65,
+        "e": 50.93
+      },
+      {
+        "w": "si-ar-el-ef",
+        "s": 51.03,
+        "e": 51.83
+      },
+      {
+        "w": "qator",
+        "s": 52.03,
+        "e": 52.31
+      },
+      {
+        "w": "oxirlarini",
+        "s": 52.39,
+        "e": 52.88
+      },
+      {
+        "w": "moslashtiradi,",
+        "s": 52.9,
+        "e": 53.52
+      },
+      {
+        "w": "avto",
+        "s": 54.0,
+        "e": 54.22
+      },
+      {
+        "w": "korrekt",
+        "s": 54.3,
+        "e": 54.66
+      },
+      {
+        "w": "esa",
+        "s": 54.7,
+        "e": 54.88
+      },
+      {
+        "w": "xato",
+        "s": 55.18,
+        "e": 55.44
+      },
+      {
+        "w": "yozilgan",
+        "s": 55.5,
+        "e": 55.94
+      },
+      {
+        "w": "buyruqlarni",
+        "s": 55.98,
+        "e": 56.5
+      },
+      {
+        "w": "avtomatik",
+        "s": 56.6,
+        "e": 57.12
+      },
+      {
+        "w": "tuzatadi.",
+        "s": 57.14,
+        "e": 57.56
+      }
+    ]
+  },
+  {
+    "id": "l8",
+    "scene": "client_tuning",
+    "text": "Shuningdek, whitespace tekshiruvi qator oxiridagi keraksiz bo'shliqlarni va aralash tab belgilarini stage qilishdan asraydi.",
+    "show": "Shuningdek, whitespace tekshiruvi qator oxiridagi keraksiz bo'shliqlarni va aralash tab belgilarini stage qilishdan asraydi.",
+    "say": "Shuningdek, vaytspeys tekshiruvi qator oxiridagi keraksiz bo'shliqlarni va aralash tab belgilarini stage qilishdan asraydi.",
+    "a0": 58.08,
+    "a1": 65.12,
+    "words": [
+      {
+        "w": "Shuningdek,",
+        "s": 58.08,
+        "e": 58.48
+      },
+      {
+        "w": "vaytspeys",
+        "s": 58.84,
+        "e": 59.4
+      },
+      {
+        "w": "tekshiruvi",
+        "s": 59.44,
+        "e": 59.9
+      },
+      {
+        "w": "qator",
+        "s": 60.04,
+        "e": 60.32
+      },
+      {
+        "w": "oxiridagi",
+        "s": 60.4,
+        "e": 60.82
+      },
+      {
+        "w": "keraksiz",
+        "s": 60.92,
+        "e": 61.44
+      },
+      {
+        "w": "bo'shliqlarni",
+        "s": 61.48,
+        "e": 62.08
+      },
+      {
+        "w": "va",
+        "s": 62.2,
+        "e": 62.28
+      },
+      {
+        "w": "aralash",
+        "s": 62.7,
+        "e": 63.08
+      },
+      {
+        "w": "tab",
+        "s": 63.14,
+        "e": 63.3
+      },
+      {
+        "w": "belgilarini",
+        "s": 63.36,
+        "e": 63.88
+      },
+      {
+        "w": "stage",
+        "s": 63.98,
+        "e": 64.28
+      },
+      {
+        "w": "qilishdan",
+        "s": 64.34,
+        "e": 64.68
+      },
+      {
+        "w": "asraydi.",
+        "s": 64.74,
+        "e": 65.12
+      }
+    ]
+  },
+  {
+    "id": "l9",
+    "scene": "server_security",
+    "text": "Serverdagi markaziy repoda receive denyCurrentBranch va denyNonFastForwards sozlamalari majburiy surishlarni cheklaydi.",
+    "show": "Serverdagi markaziy repoda receive denyCurrentBranch va denyNonFastForwards sozlamalari majburiy surishlarni cheklaydi.",
+    "say": "Serverdagi markaziy repoda risiv denay karrent branch va denay non fast forvards sozlamalari majburiy surishlarni cheklaydi.",
+    "a0": 66.04,
+    "a1": 73.61,
+    "words": [
+      {
+        "w": "Serverdagi",
+        "s": 66.04,
+        "e": 66.58
+      },
+      {
+        "w": "markaziy",
+        "s": 66.64,
+        "e": 67.04
+      },
+      {
+        "w": "repoda",
+        "s": 67.1,
+        "e": 67.46
+      },
+      {
+        "w": "risiv",
+        "s": 67.73,
+        "e": 68.09
+      },
+      {
+        "w": "denay",
+        "s": 68.15,
+        "e": 68.45
+      },
+      {
+        "w": "karrent",
+        "s": 68.51,
+        "e": 68.85
+      },
+      {
+        "w": "branch",
+        "s": 68.89,
+        "e": 69.23
+      },
+      {
+        "w": "va",
+        "s": 69.31,
+        "e": 69.41
+      },
+      {
+        "w": "denay",
+        "s": 69.83,
+        "e": 70.17
+      },
+      {
+        "w": "non",
+        "s": 70.25,
+        "e": 70.41
+      },
+      {
+        "w": "fast",
+        "s": 70.51,
+        "e": 70.79
+      },
+      {
+        "w": "forvards",
+        "s": 70.85,
+        "e": 71.25
+      },
+      {
+        "w": "sozlamalari",
+        "s": 71.29,
+        "e": 71.83
+      },
+      {
+        "w": "majburiy",
+        "s": 72.17,
+        "e": 72.63
+      },
+      {
+        "w": "surishlarni",
+        "s": 72.69,
+        "e": 73.17
+      },
+      {
+        "w": "cheklaydi.",
+        "s": 73.21,
+        "e": 73.61
+      }
+    ]
+  },
+  {
+    "id": "l10",
+    "scene": "server_security",
+    "text": "Receive fsckObjects esa buzilgan yoki shikastlangan obyektlarning repozitoriy bazasiga kirishiga yo'l qo'ymaydi.",
+    "show": "Receive fsckObjects esa buzilgan yoki shikastlangan obyektlarning repozitoriy bazasiga kirishiga yo'l qo'ymaydi.",
+    "say": "Risiv fasik obyekts esa buzilgan yoki shikastlangan obyektlarning repozitoriy bazasiga kirishiga yo'l qo'ymaydi.",
+    "a0": 74.15,
+    "a1": 80.33,
+    "words": [
+      {
+        "w": "Risiv",
+        "s": 74.15,
+        "e": 74.45
+      },
+      {
+        "w": "fasik",
+        "s": 74.51,
+        "e": 74.85
+      },
+      {
+        "w": "obyekts",
+        "s": 74.95,
+        "e": 75.35
+      },
+      {
+        "w": "esa",
+        "s": 75.41,
+        "e": 75.57
+      },
+      {
+        "w": "buzilgan",
+        "s": 75.69,
+        "e": 76.21
+      },
+      {
+        "w": "yoki",
+        "s": 76.21,
+        "e": 76.53
+      },
+      {
+        "w": "shikastlangan",
+        "s": 76.85,
+        "e": 77.47
+      },
+      {
+        "w": "obyektlarning",
+        "s": 77.53,
+        "e": 78.07
+      },
+      {
+        "w": "repozitoriy",
+        "s": 78.13,
+        "e": 78.71
+      },
+      {
+        "w": "bazasiga",
+        "s": 78.77,
+        "e": 79.19
+      },
+      {
+        "w": "kirishiga",
+        "s": 79.25,
+        "e": 79.61
+      },
+      {
+        "w": "yo'l",
+        "s": 79.69,
+        "e": 79.85
+      },
+      {
+        "w": "qo'ymaydi.",
+        "s": 79.89,
+        "e": 80.33
+      }
+    ]
+  },
+  {
+    "id": "l11",
+    "scene": "xulosa",
+    "text": "Tizimli sozlangan Git konfiguratsiyasi jamoada xatoliklarning oldini olib, kundalik ishlash unumdorligini keskin oshiradi.",
+    "show": "Tizimli sozlangan Git konfiguratsiyasi jamoada xatoliklarning oldini olib, kundalik ishlash unumdorligini keskin oshiradi.",
+    "say": "Tizimli sozlangan Git konfiguratsiyasi jamoada xatoliklarning oldini olib, kundalik ishlash unumdorligini keskin oshiradi.",
+    "a0": 81.05,
+    "a1": 88.04,
+    "words": [
+      {
+        "w": "Tizimli",
+        "s": 81.05,
+        "e": 81.49
+      },
+      {
+        "w": "sozlangan",
+        "s": 81.59,
+        "e": 82.13
+      },
+      {
+        "w": "Git",
+        "s": 82.19,
+        "e": 82.35
+      },
+      {
+        "w": "konfiguratsiyasi",
+        "s": 82.39,
+        "e": 83.16
+      },
+      {
+        "w": "jamoada",
+        "s": 83.48,
+        "e": 83.9
+      },
+      {
+        "w": "xatoliklarning",
+        "s": 83.98,
+        "e": 84.66
+      },
+      {
+        "w": "oldini",
+        "s": 84.8,
+        "e": 85.1
+      },
+      {
+        "w": "olib,",
+        "s": 85.18,
+        "e": 85.4
+      },
+      {
+        "w": "kundalik",
+        "s": 85.7,
+        "e": 86.16
+      },
+      {
+        "w": "ishlash",
+        "s": 86.22,
+        "e": 86.5
+      },
+      {
+        "w": "unumdorligini",
+        "s": 86.56,
+        "e": 87.14
+      },
+      {
+        "w": "keskin",
+        "s": 87.2,
+        "e": 87.58
+      },
+      {
+        "w": "oshiradi.",
+        "s": 87.68,
+        "e": 88.04
+      }
+    ]
+  },
+  {
+    "id": "l12",
+    "scene": "xulosa",
+    "text": "Konfiguratsiyani kod kabi tartibli saqlash va shartli ulanishlardan oqilona foydalanish eng yaxshi amaliyotdir.",
+    "show": "Konfiguratsiyani kod kabi tartibli saqlash va shartli ulanishlardan oqilona foydalanish eng yaxshi amaliyotdir.",
+    "say": "Konfiguratsiyani kod kabi tartibli saqlash va shartli ulanishlardan oqilona foydalanish eng yaxshi amaliyotdir.",
+    "a0": 88.66,
+    "a1": 94.98,
+    "words": [
+      {
+        "w": "Konfiguratsiyani",
+        "s": 88.66,
+        "e": 89.4
+      },
+      {
+        "w": "kod",
+        "s": 89.5,
+        "e": 89.72
+      },
+      {
+        "w": "kabi",
+        "s": 89.8,
+        "e": 89.96
+      },
+      {
+        "w": "tartibli",
+        "s": 90.04,
+        "e": 90.48
+      },
+      {
+        "w": "saqlash",
+        "s": 90.56,
+        "e": 90.98
+      },
+      {
+        "w": "va",
+        "s": 91.04,
+        "e": 91.12
+      },
+      {
+        "w": "shartli",
+        "s": 91.51,
+        "e": 91.83
+      },
+      {
+        "w": "ulanishlardan",
+        "s": 91.91,
+        "e": 92.51
+      },
+      {
+        "w": "oqilona",
+        "s": 92.65,
+        "e": 93.09
+      },
+      {
+        "w": "foydalanish",
+        "s": 93.13,
+        "e": 93.63
+      },
+      {
+        "w": "eng",
+        "s": 93.95,
+        "e": 94.1
+      },
+      {
+        "w": "yaxshi",
+        "s": 94.14,
+        "e": 94.4
+      },
+      {
+        "w": "amaliyotdir.",
+        "s": 94.46,
+        "e": 94.98
+      }
+    ]
+  }
+]
