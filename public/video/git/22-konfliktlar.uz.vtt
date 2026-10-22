@@ -1,0 +1,61 @@
+WEBVTT
+
+1
+00:01.420 --> 00:09.260
+Salom! Ushbu yigirma ikkinchi bobda har qanday dasturchi hayotida
+uchraydigan merge konfliktlari va ularni xavfsiz hal qilishni o‘rganamiz.
+
+2
+00:09.690 --> 00:18.300
+Konflikt bu tizim xatosi emas, balki bir joyni ikki xil o‘zgartirganda
+Git inson aralashuvi va yakuniy qarorini kutayotgan holatdir.
+
+3
+00:22.030 --> 00:27.930
+git merge to‘xtaganda, git status buyrug‘i fayllarni
+both modified va unmerged qilib ko‘rsatadi.
+
+4
+00:28.440 --> 00:36.370
+Fayl ichida esa HEAD tomonimiz, ajratuvchi tenglik chiziqlari va ikkinchi
+branch o‘zgarishlarini ko‘rsatuvchi maxsus belgilar paydo bo‘ladi.
+
+5
+00:40.440 --> 00:45.800
+Konflikt paytida indeksda har bir fayl uchun
+uchta alohida bosqich, ya’ni stage saqlanadi.
+
+6
+00:45.950 --> 00:54.060
+Stage bir umumiy ajdod snapshotini, stage ikki joriy branchimizni,
+stage uch esa qo‘shilayotgan branch versiyasini ifodalaydi.
+
+7
+00:58.130 --> 01:06.010
+Git papkasi ichida MERGE_HEAD, MERGE_MSG va AUTO_MERGE fayllari
+yaratilib, jarayon holati xotirada mahkam ushlab turiladi.
+
+8
+01:06.600 --> 01:13.510
+git diff buyrug‘i esa ikkala tomon bilan solishtiruvchi combined
+diff rejimida faqat yechilmagan qatorlarni qulay ajratib beradi.
+
+9
+01:17.500 --> 01:25.260
+Fayldagi keraksiz belgilarni o‘chirib to‘g‘rilagach, git add qilsak,
+indeksdagi uchta stage o‘rniga yagona toza stage nol o‘rnatiladi.
+
+10
+01:25.550 --> 01:33.160
+Agar adashib ketsak yoki merjeni to‘xtatmoqchi bo‘lsak, git merge
+abort buyrug‘i loyihani avvalgi asl holatiga to‘liq qaytaradi.
+
+11
+01:37.190 --> 01:44.250
+zdiff3 sozlamasi esa konflikt ichida umumiy ajdod matnini ham
+ko‘rsatib, to‘g‘ri xulosa chiqarishni yanada osonlashtiradi.
+
+12
+01:44.640 --> 01:50.830
+Keyingi bobda brenchlarni qulay boshqarish, ro‘yxatlash,
+qayta nomlash va tekshirish sirlarini to‘liq ko‘rib chiqamiz.

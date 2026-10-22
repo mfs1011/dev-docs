@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" playsinline poster="/video/git/22-konfliktlar.jpg" src="/video/git/22-konfliktlar.mp4">
+    <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/git/22-konfliktlar.chapters.vtt" default>
+    <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/git/22-konfliktlar.uz.vtt">
+  </video>
+  <figcaption>22.1-video. Git'da konfliktlar, index stage'lari va xavfsiz hal qilish</figcaption>
+</figure>
+
 [21-bobda](21-branch-va-merge.md) merge'ning ikki turini ko'rdik. Agar joriy branch boshqa branch'ning ajdodi bo'lsa, Git shunchaki ko'rsatkichni oldinga suradi (**fast-forward**). Tarix ajralgan bo'lsa, Git **uch tomonlama merge** qiladi: uchta snapshot'ni — ikki branch uchini va ularning umumiy ajdodini (**merge base**) — solishtiradi va natijani ikki otali **merge commit** sifatida yozadi.
 
 Uch tomonlama merge'ning mantig'i oddiy. Har fayl uchun Git so'raydi: "umumiy ajdoddan beri kim nimani o'zgartirdi?"
