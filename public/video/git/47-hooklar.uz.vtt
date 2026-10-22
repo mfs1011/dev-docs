@@ -1,0 +1,61 @@
+WEBVTT
+
+1
+00:01.420 --> 00:07.390
+Git hooklari repozitoriyda ro'y beradigan har bir muhim
+amal chog'ida avtomatik ishga tushuvchi skriptlardir.
+
+2
+00:07.560 --> 00:15.020
+Ular dasturchi xatosini erta aniqlash, formatlashni tekshirish
+yoki serverda qat'iy qoidalarni joriy qilish uchun xizmat qiladi.
+
+3
+00:18.390 --> 00:24.860
+Pre-commit hooki commit yaratilishidan oldin testlar,
+linter va sintaksis tozaligini avtomatik tekshirib chiqadi.
+
+4
+00:25.210 --> 00:32.510
+Commit-msg esa xabar formati, masalan Jira chipta raqami
+yoki standart talablariga mosligini qat'iy nazorat qiladi.
+
+5
+00:36.400 --> 00:42.610
+Nuqta git hooks papkasi klon bilan ko'chmagani sababli,
+skriptlarni loyiha ichidagi maxsus papkada saqlash qulaydir.
+
+6
+00:42.880 --> 00:48.860
+Core nuqta hooksPath sozlamasi orqali jamoaviy hooklar barcha
+ishlab chiquvchilar uchun osonlikcha faollashtiriladi.
+
+7
+00:52.690 --> 00:58.640
+Markaziy serverda ishlovchi pre-receive hooki butun push
+bo'yicha kirib kelayotgan barcha ref va commitlarni tekshiradi.
+
+8
+00:58.790 --> 01:04.890
+Agar birorta qoida buzilsa, butun push bekor qilinadi va
+mijoz konsoliga batafsil tushuntirish xabari qaytariladi.
+
+9
+01:08.920 --> 01:15.070
+Yangi Git versiyalarida alohida fayl yaratmasdan, bevosita
+git config orqali ham buyruqli hooklar biriktirish mumkin.
+
+10
+01:15.260 --> 01:21.500
+Ushbu moslashuvchan mexanizm bitta hodisaga bir nechta mustaqil
+tekshiruv skriptlarini navbat bilan ulash imkonini beradi.
+
+11
+01:25.470 --> 01:32.240
+Klient hooklari dasturchiga yordam beradi, server hooklari esa
+ta'minot zanjiri va repo xavfsizligining so'nggi qalqonidir.
+
+12
+01:32.430 --> 01:38.690
+Ikkala bosqichni uyg'un qo'llash orqali jamoaviy kod sifati
+va ishlab chiqish madaniyati eng yuqori darajaga ko'tariladi.

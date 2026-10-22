@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" playsinline poster="/video/git/47-hooklar.jpg" src="/video/git/47-hooklar.mp4">
+    <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/git/47-hooklar.chapters.vtt" default>
+    <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/git/47-hooklar.uz.vtt">
+  </video>
+  <figcaption>47.1-video. Git hook'lari: pre-commit, commit-msg, server tekshiruvlari va core.hooksPath</figcaption>
+</figure>
+
 **Hook** (ilgak) — Git ma'lum bir ish paytida o'zi chaqiradigan sizning dasturingiz. O'xshatish: eshik oldidagi qorovul. Git "commit yaratmoqchiman", "push qabul qilmoqchiman" degan paytda avval qorovuldan so'raydi; qorovul "yo'q" desa (nolga teng bo'lmagan chiqish kodi), ish to'xtaydi. Ba'zi qorovullar esa faqat "ish bo'ldi" deb xabar beradi va hech narsani to'xtata olmaydi.
 
 Hook'lar ikki guruhga bo'linadi:

@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:17.346
+Git Hooklari Nima: Avtomatik Qorovullar
+
+00:17.346 --> 00:35.310
+Klient Hooklari: pre-commit va commit-msg
+
+00:35.310 --> 00:51.656
+Hooklarni Ulashish: core.hooksPath
+
+00:51.656 --> 01:07.745
+Server Hooklari: pre-receive va update
+
+01:07.745 --> 01:24.389
+Git Konfiguratsiyasidagi Hooklar: hook.command
+
+01:24.389 --> 01:43.640
+Xulosa va Xavfsizlik Zanjiri
