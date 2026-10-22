@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" playsinline poster="/video/git/20-branch-bu-ref.jpg" src="/video/git/20-branch-bu-ref.mp4">
+    <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/git/20-branch-bu-ref.chapters.vtt" default>
+    <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/git/20-branch-bu-ref.uz.vtt">
+  </video>
+  <figcaption>20.1-video. Git'da branch tabiati, yaratish va switch</figcaption>
+</figure>
+
 Ko'p versiya nazorati tizimlarida "branch" (tarmoq) — loyihaning alohida nusxasi: asosiy chiziqdan ajralib, boshqa ish qilish uchun hamma fayllar boshqa papkaga ko'chiriladi. Git'da bunday emas. Git'da **branch — bitta commit'ga qaratilgan, siljiydigan ko'rsatkich (pointer)**. Boshqa hech narsa emas.
 
 Buni tushunish uchun III qismdagi modelni eslaymiz ([13–19-boblar](13-plumbing-va-porcelain.md)):
