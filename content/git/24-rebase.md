@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" playsinline poster="/video/git/24-rebase.jpg" src="/video/git/24-rebase.mp4">
+    <track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/git/24-rebase.chapters.vtt" default>
+    <track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/git/24-rebase.uz.vtt">
+  </video>
+  <figcaption>24.1-video. Git'da rebase, ichki hashlar va toza tarix</figcaption>
+</figure>
+
 Bir branch'dagi o'zgarishlarni boshqasiga qo'shishning Git'da ikki asosiy yo'li bor: **merge** va **rebase**. Merge'ni [21-bobda](21-branch-va-merge.md) ko'rdik: ikki uchni va umumiy ajdodni solishtirib, ikki otali yangi commit yasaydi. Rebase boshqacha ishlaydi.
 
 **Rebase** — branch'dagi commit'larni boshqa boshlang'ich nuqta ustiga **qaytadan yasash**. `git rebase` hujjatining birinchi jumlasi aynan shunday: "Reapply commits on top of another base tip" — commit'larni boshqa asos uchi ustiga qayta qo'llash. Hujjat yana bir so'z ishlatadi: *transplant* — ko'chirib o'tqazish (bog'bon novdani bir daraxtdan kesib, boshqasiga payvand qilgani kabi).

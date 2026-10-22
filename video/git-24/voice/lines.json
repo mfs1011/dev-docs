@@ -1,0 +1,1079 @@
+[
+  {
+    "id": "l1",
+    "scene": "intro",
+    "text": "Salom! Ushbu yigirma to‘rtinchi bobda Git'dagi eng qiziqarli va kuchli vositalardan biri bo‘lgan rebase texnikasini to‘liq o‘rganamiz.",
+    "show": "Salom! Ushbu yigirma to‘rtinchi bobda Git'dagi eng qiziqarli va kuchli vositalardan biri bo‘lgan rebase texnikasini to‘liq o‘rganamiz.",
+    "say": "Salom! Ushbu yigirma to‘rtinchi bobda Git'dagi eng qiziqarli va kuchli vositalardan biri bo‘lgan ribeys texnikasini to‘liq o‘rganamiz.",
+    "a0": 0.2,
+    "a1": 7.89,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.2,
+        "e": 0.48
+      },
+      {
+        "w": "Ushbu",
+        "s": 1.16,
+        "e": 1.38
+      },
+      {
+        "w": "yigirma",
+        "s": 1.46,
+        "e": 1.74
+      },
+      {
+        "w": "to‘rtinchi",
+        "s": 1.78,
+        "e": 2.18
+      },
+      {
+        "w": "bobda",
+        "s": 2.2,
+        "e": 2.5
+      },
+      {
+        "w": "Git'dagi",
+        "s": 2.68,
+        "e": 3.1
+      },
+      {
+        "w": "eng",
+        "s": 3.24,
+        "e": 3.4
+      },
+      {
+        "w": "qiziqarli",
+        "s": 3.46,
+        "e": 4.04
+      },
+      {
+        "w": "va",
+        "s": 4.16,
+        "e": 4.24
+      },
+      {
+        "w": "kuchli",
+        "s": 4.38,
+        "e": 4.7
+      },
+      {
+        "w": "vositalardan",
+        "s": 4.76,
+        "e": 5.38
+      },
+      {
+        "w": "biri",
+        "s": 5.4,
+        "e": 5.54
+      },
+      {
+        "w": "bo‘lgan",
+        "s": 5.56,
+        "e": 5.86
+      },
+      {
+        "w": "ribeys",
+        "s": 6.22,
+        "e": 6.58
+      },
+      {
+        "w": "texnikasini",
+        "s": 6.62,
+        "e": 7.14
+      },
+      {
+        "w": "to‘liq",
+        "s": 7.18,
+        "e": 7.42
+      },
+      {
+        "w": "o‘rganamiz.",
+        "s": 7.46,
+        "e": 7.89
+      }
+    ]
+  },
+  {
+    "id": "l2",
+    "scene": "intro",
+    "text": "Rebase brenchdagi kommitlarni boshqa asos ustiga qaytadan yasash bo‘lib, u loyiha tarixini ko‘chirib o‘tqazish, ya’ni transplantatsiya amaliyotidir.",
+    "show": "Rebase brenchdagi kommitlarni boshqa asos ustiga qaytadan yasash bo‘lib, u loyiha tarixini ko‘chirib o‘tqazish, ya’ni transplantatsiya amaliyotidir.",
+    "say": "Ribeys brenchdagi kommitlarni boshqa asos ustiga qaytadan yasash bo‘lib, u loyiha tarixini ko‘chirib o‘tqazish, ya’ni transplantatsiya amaliyotidir.",
+    "a0": 8.81,
+    "a1": 16.53,
+    "words": [
+      {
+        "w": "Ribeys",
+        "s": 8.81,
+        "e": 9.19
+      },
+      {
+        "w": "brenchdagi",
+        "s": 9.33,
+        "e": 9.75
+      },
+      {
+        "w": "kommitlarni",
+        "s": 9.79,
+        "e": 10.31
+      },
+      {
+        "w": "boshqa",
+        "s": 10.35,
+        "e": 10.59
+      },
+      {
+        "w": "asos",
+        "s": 10.65,
+        "e": 10.85
+      },
+      {
+        "w": "ustiga",
+        "s": 10.91,
+        "e": 11.17
+      },
+      {
+        "w": "qaytadan",
+        "s": 11.23,
+        "e": 11.57
+      },
+      {
+        "w": "yasash",
+        "s": 11.61,
+        "e": 11.87
+      },
+      {
+        "w": "bo‘lib,",
+        "s": 11.91,
+        "e": 12.11
+      },
+      {
+        "w": "u",
+        "s": 12.49,
+        "e": 12.51
+      },
+      {
+        "w": "loyiha",
+        "s": 12.73,
+        "e": 13.03
+      },
+      {
+        "w": "tarixini",
+        "s": 13.11,
+        "e": 13.57
+      },
+      {
+        "w": "ko‘chirib",
+        "s": 13.63,
+        "e": 13.95
+      },
+      {
+        "w": "o‘tqazish,",
+        "s": 13.99,
+        "e": 14.53
+      },
+      {
+        "w": "ya’ni",
+        "s": 14.73,
+        "e": 14.93
+      },
+      {
+        "w": "transplantatsiya",
+        "s": 15.27,
+        "e": 16.05
+      },
+      {
+        "w": "amaliyotidir.",
+        "s": 16.07,
+        "e": 16.53
+      }
+    ]
+  },
+  {
+    "id": "l3",
+    "scene": "hashlar_va_ichki_tuzilish",
+    "text": "Rebase kommitlarni jismonan ko‘chirmaydi, balki ularning ota kommitini o‘zgartirib, mutlaqo yangi heshli kommitlar yaratadi.",
+    "show": "Rebase kommitlarni jismonan ko‘chirmaydi, balki ularning ota kommitini o‘zgartirib, mutlaqo yangi heshli kommitlar yaratadi.",
+    "say": "Ribeys kommitlarni jismonan ko‘chirmaydi, balki ularning ota kommitini o‘zgartirib, mutlaqo yangi heshli kommitlar yaratadi.",
+    "a0": 17.27,
+    "a1": 23.36,
+    "words": [
+      {
+        "w": "Ribeys",
+        "s": 17.27,
+        "e": 17.61
+      },
+      {
+        "w": "kommitlarni",
+        "s": 17.77,
+        "e": 18.23
+      },
+      {
+        "w": "jismonan",
+        "s": 18.29,
+        "e": 18.67
+      },
+      {
+        "w": "ko‘chirmaydi,",
+        "s": 18.71,
+        "e": 19.19
+      },
+      {
+        "w": "balki",
+        "s": 19.29,
+        "e": 19.51
+      },
+      {
+        "w": "ularning",
+        "s": 19.57,
+        "e": 19.91
+      },
+      {
+        "w": "ota",
+        "s": 20.03,
+        "e": 20.17
+      },
+      {
+        "w": "kommitini",
+        "s": 20.21,
+        "e": 20.57
+      },
+      {
+        "w": "o‘zgartirib,",
+        "s": 20.61,
+        "e": 21.03
+      },
+      {
+        "w": "mutlaqo",
+        "s": 21.35,
+        "e": 21.73
+      },
+      {
+        "w": "yangi",
+        "s": 21.87,
+        "e": 22.17
+      },
+      {
+        "w": "heshli",
+        "s": 22.23,
+        "e": 22.54
+      },
+      {
+        "w": "kommitlar",
+        "s": 22.6,
+        "e": 22.96
+      },
+      {
+        "w": "yaratadi.",
+        "s": 23.0,
+        "e": 23.36
+      }
+    ]
+  },
+  {
+    "id": "l4",
+    "scene": "hashlar_va_ichki_tuzilish",
+    "text": "Bunda muallif va uning asl yozilgan sanasi saqlanib qoladi, ammo kommitter vaqti rebase qilingan yangi paytga moslab yangilanadi.",
+    "show": "Bunda muallif va uning asl yozilgan sanasi saqlanib qoladi, ammo kommitter vaqti rebase qilingan yangi paytga moslab yangilanadi.",
+    "say": "Bunda muallif va uning asl yozilgan sanasi saqlanib qoladi, ammo kommitter vaqti ribeys qilingan yangi paytga moslab yangilanadi.",
+    "a0": 23.98,
+    "a1": 30.98,
+    "words": [
+      {
+        "w": "Bunda",
+        "s": 23.98,
+        "e": 24.24
+      },
+      {
+        "w": "muallif",
+        "s": 24.46,
+        "e": 24.94
+      },
+      {
+        "w": "va",
+        "s": 25.02,
+        "e": 25.1
+      },
+      {
+        "w": "uning",
+        "s": 25.22,
+        "e": 25.4
+      },
+      {
+        "w": "asl",
+        "s": 25.52,
+        "e": 25.72
+      },
+      {
+        "w": "yozilgan",
+        "s": 25.76,
+        "e": 26.12
+      },
+      {
+        "w": "sanasi",
+        "s": 26.14,
+        "e": 26.38
+      },
+      {
+        "w": "saqlanib",
+        "s": 26.4,
+        "e": 26.76
+      },
+      {
+        "w": "qoladi,",
+        "s": 26.78,
+        "e": 27.0
+      },
+      {
+        "w": "ammo",
+        "s": 27.06,
+        "e": 27.22
+      },
+      {
+        "w": "kommitter",
+        "s": 27.58,
+        "e": 28.02
+      },
+      {
+        "w": "vaqti",
+        "s": 28.08,
+        "e": 28.34
+      },
+      {
+        "w": "ribeys",
+        "s": 28.48,
+        "e": 28.78
+      },
+      {
+        "w": "qilingan",
+        "s": 28.82,
+        "e": 29.14
+      },
+      {
+        "w": "yangi",
+        "s": 29.22,
+        "e": 29.48
+      },
+      {
+        "w": "paytga",
+        "s": 29.52,
+        "e": 29.78
+      },
+      {
+        "w": "moslab",
+        "s": 29.8,
+        "e": 30.12
+      },
+      {
+        "w": "yangilanadi.",
+        "s": 30.42,
+        "e": 30.98
+      }
+    ]
+  },
+  {
+    "id": "l5",
+    "scene": "toza_tarix_va_fast_forward",
+    "text": "Rebasedan so‘ng barcha kommitlar asosiy brench davomiga to‘g‘ri chiziq bo‘lib joylashadi va ortiqcha tarmoqlanish yo‘qoladi.",
+    "show": "Rebasedan so‘ng barcha kommitlar asosiy brench davomiga to‘g‘ri chiziq bo‘lib joylashadi va ortiqcha tarmoqlanish yo‘qoladi.",
+    "say": "Ribeysdan so‘ng barcha kommitlar asosiy brench davomiga to‘g‘ri chiziq bo‘lib joylashadi va ortiqcha tarmoqlanish yo‘qoladi.",
+    "a0": 31.9,
+    "a1": 37.95,
+    "words": [
+      {
+        "w": "Ribeysdan",
+        "s": 31.9,
+        "e": 32.32
+      },
+      {
+        "w": "so‘ng",
+        "s": 32.36,
+        "e": 32.56
+      },
+      {
+        "w": "barcha",
+        "s": 32.66,
+        "e": 32.92
+      },
+      {
+        "w": "kommitlar",
+        "s": 32.96,
+        "e": 33.4
+      },
+      {
+        "w": "asosiy",
+        "s": 33.54,
+        "e": 33.9
+      },
+      {
+        "w": "brench",
+        "s": 33.94,
+        "e": 34.18
+      },
+      {
+        "w": "davomiga",
+        "s": 34.2,
+        "e": 34.6
+      },
+      {
+        "w": "to‘g‘ri",
+        "s": 34.68,
+        "e": 34.94
+      },
+      {
+        "w": "chiziq",
+        "s": 34.98,
+        "e": 35.2
+      },
+      {
+        "w": "bo‘lib",
+        "s": 35.24,
+        "e": 35.44
+      },
+      {
+        "w": "joylashadi",
+        "s": 35.46,
+        "e": 35.9
+      },
+      {
+        "w": "va",
+        "s": 35.94,
+        "e": 36.02
+      },
+      {
+        "w": "ortiqcha",
+        "s": 36.44,
+        "e": 36.84
+      },
+      {
+        "w": "tarmoqlanish",
+        "s": 36.88,
+        "e": 37.46
+      },
+      {
+        "w": "yo‘qoladi.",
+        "s": 37.53,
+        "e": 37.95
+      }
+    ]
+  },
+  {
+    "id": "l6",
+    "scene": "toza_tarix_va_fast_forward",
+    "text": "Natijada asosiy brenchga qaytib, hech qanday merge kommit yaratmasdan, toza fast-forward mergeni bemalol bajarish mumkin.",
+    "show": "Natijada asosiy brenchga qaytib, hech qanday merge kommit yaratmasdan, toza fast-forward mergeni bemalol bajarish mumkin.",
+    "say": "Natijada asosiy brenchga qaytib, hech qanday merj kommit yaratmasdan, toza fast-forvard merjni bemalol bajarish mumkin.",
+    "a0": 38.61,
+    "a1": 45.11,
+    "words": [
+      {
+        "w": "Natijada",
+        "s": 38.61,
+        "e": 39.05
+      },
+      {
+        "w": "asosiy",
+        "s": 39.13,
+        "e": 39.43
+      },
+      {
+        "w": "brenchga",
+        "s": 39.47,
+        "e": 39.77
+      },
+      {
+        "w": "qaytib,",
+        "s": 39.83,
+        "e": 40.15
+      },
+      {
+        "w": "hech",
+        "s": 40.45,
+        "e": 40.63
+      },
+      {
+        "w": "qanday",
+        "s": 40.67,
+        "e": 40.95
+      },
+      {
+        "w": "merj",
+        "s": 41.01,
+        "e": 41.23
+      },
+      {
+        "w": "kommit",
+        "s": 41.29,
+        "e": 41.55
+      },
+      {
+        "w": "yaratmasdan,",
+        "s": 41.59,
+        "e": 42.15
+      },
+      {
+        "w": "toza",
+        "s": 42.33,
+        "e": 42.63
+      },
+      {
+        "w": "fast-forvard",
+        "s": 42.81,
+        "e": 43.37
+      },
+      {
+        "w": "merjni",
+        "s": 43.41,
+        "e": 43.73
+      },
+      {
+        "w": "bemalol",
+        "s": 44.05,
+        "e": 44.45
+      },
+      {
+        "w": "bajarish",
+        "s": 44.49,
+        "e": 44.83
+      },
+      {
+        "w": "mumkin.",
+        "s": 44.87,
+        "e": 45.11
+      }
+    ]
+  },
+  {
+    "id": "l7",
+    "scene": "konflikt_va_rebase_boshqaruvi",
+    "text": "Agar rebase jarayonida konflikt yuzaga kelsa, Git to‘xtaydi va sizdan to‘qnashgan qatorlarni hal qilishni so‘raydi.",
+    "show": "Agar rebase jarayonida konflikt yuzaga kelsa, Git to‘xtaydi va sizdan to‘qnashgan qatorlarni hal qilishni so‘raydi.",
+    "say": "Agar ribeys jarayonida konflikt yuzaga kelsa, Git to‘xtaydi va sizdan to‘qnashgan qatorlarni hal qilishni so‘raydi.",
+    "a0": 45.95,
+    "a1": 51.89,
+    "words": [
+      {
+        "w": "Agar",
+        "s": 45.95,
+        "e": 46.21
+      },
+      {
+        "w": "ribeys",
+        "s": 46.43,
+        "e": 46.73
+      },
+      {
+        "w": "jarayonida",
+        "s": 46.77,
+        "e": 47.23
+      },
+      {
+        "w": "konflikt",
+        "s": 47.29,
+        "e": 47.69
+      },
+      {
+        "w": "yuzaga",
+        "s": 47.73,
+        "e": 48.01
+      },
+      {
+        "w": "kelsa,",
+        "s": 48.05,
+        "e": 48.35
+      },
+      {
+        "w": "Git",
+        "s": 48.63,
+        "e": 48.81
+      },
+      {
+        "w": "to‘xtaydi",
+        "s": 48.91,
+        "e": 49.31
+      },
+      {
+        "w": "va",
+        "s": 49.35,
+        "e": 49.43
+      },
+      {
+        "w": "sizdan",
+        "s": 49.49,
+        "e": 49.77
+      },
+      {
+        "w": "to‘qnashgan",
+        "s": 50.05,
+        "e": 50.53
+      },
+      {
+        "w": "qatorlarni",
+        "s": 50.57,
+        "e": 51.03
+      },
+      {
+        "w": "hal",
+        "s": 51.09,
+        "e": 51.23
+      },
+      {
+        "w": "qilishni",
+        "s": 51.25,
+        "e": 51.53
+      },
+      {
+        "w": "so‘raydi.",
+        "s": 51.55,
+        "e": 51.89
+      }
+    ]
+  },
+  {
+    "id": "l8",
+    "scene": "konflikt_va_rebase_boshqaruvi",
+    "text": "Faylni to‘g‘rilab git add qilgach, yangi kommit qilinmaydi, balki git rebase continue buyrug‘i bilan jarayon davom ettiriladi.",
+    "show": "Faylni to‘g‘rilab git add qilgach, yangi kommit qilinmaydi, balki git rebase continue buyrug‘i bilan jarayon davom ettiriladi.",
+    "say": "Faylni to‘g‘rilab git add qilgach, yangi kommit qilinmaydi, balki git ribeys kontinyu buyrug‘i bilan jarayon davom ettiriladi.",
+    "a0": 52.47,
+    "a1": 58.7,
+    "words": [
+      {
+        "w": "Faylni",
+        "s": 52.47,
+        "e": 52.78
+      },
+      {
+        "w": "to‘g‘rilab",
+        "s": 52.8,
+        "e": 53.2
+      },
+      {
+        "w": "git",
+        "s": 53.28,
+        "e": 53.44
+      },
+      {
+        "w": "add",
+        "s": 53.58,
+        "e": 53.72
+      },
+      {
+        "w": "qilgach,",
+        "s": 53.78,
+        "e": 54.16
+      },
+      {
+        "w": "yangi",
+        "s": 54.3,
+        "e": 54.52
+      },
+      {
+        "w": "kommit",
+        "s": 54.56,
+        "e": 54.8
+      },
+      {
+        "w": "qilinmaydi,",
+        "s": 54.84,
+        "e": 55.22
+      },
+      {
+        "w": "balki",
+        "s": 55.24,
+        "e": 55.5
+      },
+      {
+        "w": "git",
+        "s": 55.86,
+        "e": 56.02
+      },
+      {
+        "w": "ribeys",
+        "s": 56.16,
+        "e": 56.5
+      },
+      {
+        "w": "kontinyu",
+        "s": 56.58,
+        "e": 57.02
+      },
+      {
+        "w": "buyrug‘i",
+        "s": 57.06,
+        "e": 57.34
+      },
+      {
+        "w": "bilan",
+        "s": 57.36,
+        "e": 57.54
+      },
+      {
+        "w": "jarayon",
+        "s": 57.58,
+        "e": 57.92
+      },
+      {
+        "w": "davom",
+        "s": 57.98,
+        "e": 58.22
+      },
+      {
+        "w": "ettiriladi.",
+        "s": 58.26,
+        "e": 58.7
+      }
+    ]
+  },
+  {
+    "id": "l9",
+    "scene": "rebase_oltin_qoidasi",
+    "text": "Rebasening qat’iy oltin qoidasi mavjud: serverga yuborilgan va boshqa dasturchilar ishlatayotgan ommaviy brenchlarni aslo rebase qilmang.",
+    "show": "Rebasening qat’iy oltin qoidasi mavjud: serverga yuborilgan va boshqa dasturchilar ishlatayotgan ommaviy brenchlarni aslo rebase qilmang.",
+    "say": "Ribeysning qat’iy oltin qoidasi mavjud: serverga yuborilgan va boshqa dasturchilar ishlatayotgan ommaviy brenchlarni aslo ribeys qilmang.",
+    "a0": 59.52,
+    "a1": 67.19,
+    "words": [
+      {
+        "w": "Ribeysning",
+        "s": 59.52,
+        "e": 59.96
+      },
+      {
+        "w": "qat’iy",
+        "s": 60.14,
+        "e": 60.48
+      },
+      {
+        "w": "oltin",
+        "s": 60.62,
+        "e": 60.88
+      },
+      {
+        "w": "qoidasi",
+        "s": 60.94,
+        "e": 61.28
+      },
+      {
+        "w": "mavjud:",
+        "s": 61.3,
+        "e": 61.6
+      },
+      {
+        "w": "serverga",
+        "s": 62.18,
+        "e": 62.6
+      },
+      {
+        "w": "yuborilgan",
+        "s": 62.66,
+        "e": 63.16
+      },
+      {
+        "w": "va",
+        "s": 63.24,
+        "e": 63.32
+      },
+      {
+        "w": "boshqa",
+        "s": 63.5,
+        "e": 63.78
+      },
+      {
+        "w": "dasturchilar",
+        "s": 63.82,
+        "e": 64.34
+      },
+      {
+        "w": "ishlatayotgan",
+        "s": 64.38,
+        "e": 64.92
+      },
+      {
+        "w": "ommaviy",
+        "s": 65.08,
+        "e": 65.46
+      },
+      {
+        "w": "brenchlarni",
+        "s": 65.54,
+        "e": 66.06
+      },
+      {
+        "w": "aslo",
+        "s": 66.24,
+        "e": 66.5
+      },
+      {
+        "w": "ribeys",
+        "s": 66.58,
+        "e": 66.86
+      },
+      {
+        "w": "qilmang.",
+        "s": 66.9,
+        "e": 67.19
+      }
+    ]
+  },
+  {
+    "id": "l10",
+    "scene": "rebase_oltin_qoidasi",
+    "text": "Chunki heshlarning o‘zgarishi jamoa a’zolarida bir xil ishlarning duplikat bo‘lib ketishi va og‘ir to‘qnashuvlarga olib keladi.",
+    "show": "Chunki heshlarning o‘zgarishi jamoa a’zolarida bir xil ishlarning duplikat bo‘lib ketishi va og‘ir to‘qnashuvlarga olib keladi.",
+    "say": "Chunki heshlarning o‘zgarishi jamoa a’zolarida bir xil ishlarning duplikat bo‘lib ketishi va og‘ir to‘qnashuvlarga olib keladi.",
+    "a0": 67.69,
+    "a1": 74.23,
+    "words": [
+      {
+        "w": "Chunki",
+        "s": 67.69,
+        "e": 67.91
+      },
+      {
+        "w": "heshlarning",
+        "s": 68.25,
+        "e": 68.71
+      },
+      {
+        "w": "o‘zgarishi",
+        "s": 68.73,
+        "e": 69.17
+      },
+      {
+        "w": "jamoa",
+        "s": 69.53,
+        "e": 69.85
+      },
+      {
+        "w": "a’zolarida",
+        "s": 69.97,
+        "e": 70.49
+      },
+      {
+        "w": "bir",
+        "s": 70.61,
+        "e": 70.73
+      },
+      {
+        "w": "xil",
+        "s": 70.75,
+        "e": 70.89
+      },
+      {
+        "w": "ishlarning",
+        "s": 70.95,
+        "e": 71.35
+      },
+      {
+        "w": "duplikat",
+        "s": 71.39,
+        "e": 71.83
+      },
+      {
+        "w": "bo‘lib",
+        "s": 71.85,
+        "e": 72.03
+      },
+      {
+        "w": "ketishi",
+        "s": 72.07,
+        "e": 72.35
+      },
+      {
+        "w": "va",
+        "s": 72.39,
+        "e": 72.47
+      },
+      {
+        "w": "og‘ir",
+        "s": 72.87,
+        "e": 73.11
+      },
+      {
+        "w": "to‘qnashuvlarga",
+        "s": 73.15,
+        "e": 73.75
+      },
+      {
+        "w": "olib",
+        "s": 73.81,
+        "e": 73.93
+      },
+      {
+        "w": "keladi.",
+        "s": 73.95,
+        "e": 74.23
+      }
+    ]
+  },
+  {
+    "id": "l11",
+    "scene": "xulosa",
+    "text": "Rebase shaxsiy brenchda chiroyli va toza tarix yaratish uchun, merge esa jamoaviy haqiqiy tarixni saqlash uchun qulaydir.",
+    "show": "Rebase shaxsiy brenchda chiroyli va toza tarix yaratish uchun, merge esa jamoaviy haqiqiy tarixni saqlash uchun qulaydir.",
+    "say": "Ribeys shaxsiy brenchda chiroyli va toza tarix yaratish uchun, merj esa jamoaviy haqiqiy tarixni saqlash uchun qulaydir.",
+    "a0": 74.93,
+    "a1": 81.23,
+    "words": [
+      {
+        "w": "Ribeys",
+        "s": 74.93,
+        "e": 75.27
+      },
+      {
+        "w": "shaxsiy",
+        "s": 75.47,
+        "e": 75.77
+      },
+      {
+        "w": "brenchda",
+        "s": 75.81,
+        "e": 76.11
+      },
+      {
+        "w": "chiroyli",
+        "s": 76.17,
+        "e": 76.53
+      },
+      {
+        "w": "va",
+        "s": 76.65,
+        "e": 76.73
+      },
+      {
+        "w": "toza",
+        "s": 76.87,
+        "e": 77.09
+      },
+      {
+        "w": "tarix",
+        "s": 77.13,
+        "e": 77.37
+      },
+      {
+        "w": "yaratish",
+        "s": 77.45,
+        "e": 77.73
+      },
+      {
+        "w": "uchun,",
+        "s": 77.77,
+        "e": 77.95
+      },
+      {
+        "w": "merj",
+        "s": 78.43,
+        "e": 78.67
+      },
+      {
+        "w": "esa",
+        "s": 78.71,
+        "e": 78.87
+      },
+      {
+        "w": "jamoaviy",
+        "s": 79.05,
+        "e": 79.51
+      },
+      {
+        "w": "haqiqiy",
+        "s": 79.59,
+        "e": 79.97
+      },
+      {
+        "w": "tarixni",
+        "s": 80.03,
+        "e": 80.35
+      },
+      {
+        "w": "saqlash",
+        "s": 80.37,
+        "e": 80.69
+      },
+      {
+        "w": "uchun",
+        "s": 80.71,
+        "e": 80.87
+      },
+      {
+        "w": "qulaydir.",
+        "s": 80.89,
+        "e": 81.23
+      }
+    ]
+  },
+  {
+    "id": "l12",
+    "scene": "xulosa",
+    "text": "Keyingi bobda kommitlarni birlashtirish, tahrirlash va tartibini o‘zgartiruvchi interaktiv rebase imkoniyatlarini o‘rganamiz.",
+    "show": "Keyingi bobda kommitlarni birlashtirish, tahrirlash va tartibini o‘zgartiruvchi interaktiv rebase imkoniyatlarini o‘rganamiz.",
+    "say": "Keyingi bobda kommitlarni birlashtirish, tahrirlash va tartibini o‘zgartiruvchi interaktiv ribeys imkoniyatlarini o‘rganamiz.",
+    "a0": 81.92,
+    "a1": 88.32,
+    "words": [
+      {
+        "w": "Keyingi",
+        "s": 81.92,
+        "e": 82.2
+      },
+      {
+        "w": "bobda",
+        "s": 82.24,
+        "e": 82.54
+      },
+      {
+        "w": "kommitlarni",
+        "s": 82.88,
+        "e": 83.44
+      },
+      {
+        "w": "birlashtirish,",
+        "s": 83.48,
+        "e": 84.08
+      },
+      {
+        "w": "tahrirlash",
+        "s": 84.22,
+        "e": 84.8
+      },
+      {
+        "w": "va",
+        "s": 84.84,
+        "e": 84.9
+      },
+      {
+        "w": "tartibini",
+        "s": 85.24,
+        "e": 85.66
+      },
+      {
+        "w": "o‘zgartiruvchi",
+        "s": 85.72,
+        "e": 86.24
+      },
+      {
+        "w": "interaktiv",
+        "s": 86.36,
+        "e": 86.82
+      },
+      {
+        "w": "ribeys",
+        "s": 86.9,
+        "e": 87.2
+      },
+      {
+        "w": "imkoniyatlarini",
+        "s": 87.28,
+        "e": 87.84
+      },
+      {
+        "w": "o‘rganamiz.",
+        "s": 87.88,
+        "e": 88.32
+      }
+    ]
+  }
+]
