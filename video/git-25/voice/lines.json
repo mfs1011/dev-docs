@@ -1,0 +1,1054 @@
+[
+  {
+    "id": "l1",
+    "scene": "intro",
+    "text": "Salom! Ushbu yigirma beshinchi bobda Git tarixini qayta yozish, ya’ni interaktiv rebase imkoniyatlarini batafsil o‘rganamiz.",
+    "show": "Salom! Ushbu yigirma beshinchi bobda Git tarixini qayta yozish, ya’ni interaktiv rebase imkoniyatlarini batafsil o‘rganamiz.",
+    "say": "Salom! Ushbu yigirma beshinchi bobda Git tarixini qayta yozish, ya’ni interaktiv ribeys imkoniyatlarini batafsil o‘rganamiz.",
+    "a0": 0.18,
+    "a1": 7.4,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.18,
+        "e": 0.44
+      },
+      {
+        "w": "Ushbu",
+        "s": 1.0,
+        "e": 1.22
+      },
+      {
+        "w": "yigirma",
+        "s": 1.3,
+        "e": 1.56
+      },
+      {
+        "w": "beshinchi",
+        "s": 1.6,
+        "e": 1.92
+      },
+      {
+        "w": "bobda",
+        "s": 1.96,
+        "e": 2.26
+      },
+      {
+        "w": "Git",
+        "s": 2.58,
+        "e": 2.74
+      },
+      {
+        "w": "tarixini",
+        "s": 2.8,
+        "e": 3.24
+      },
+      {
+        "w": "qayta",
+        "s": 3.32,
+        "e": 3.6
+      },
+      {
+        "w": "yozish,",
+        "s": 3.6,
+        "e": 4.0
+      },
+      {
+        "w": "ya’ni",
+        "s": 4.42,
+        "e": 4.64
+      },
+      {
+        "w": "interaktiv",
+        "s": 4.8,
+        "e": 5.3
+      },
+      {
+        "w": "ribeys",
+        "s": 5.34,
+        "e": 5.64
+      },
+      {
+        "w": "imkoniyatlarini",
+        "s": 5.7,
+        "e": 6.38
+      },
+      {
+        "w": "batafsil",
+        "s": 6.44,
+        "e": 6.84
+      },
+      {
+        "w": "o‘rganamiz.",
+        "s": 6.94,
+        "e": 7.4
+      }
+    ]
+  },
+  {
+    "id": "l2",
+    "scene": "intro",
+    "text": "Interaktiv rebase orqali o‘tgan kommitlarni xuddi matn muharririda tahrirlagandek qayta shakllantirish, to‘g‘rilash va tozalash mumkin.",
+    "show": "Interaktiv rebase orqali o‘tgan kommitlarni xuddi matn muharririda tahrirlagandek qayta shakllantirish, to‘g‘rilash va tozalash mumkin.",
+    "say": "Interaktiv ribeys orqali o‘tgan kommitlarni xuddi matn muharririda tahrirlagandek qayta shakllantirish, to‘g‘rilash va tozalash mumkin.",
+    "a0": 8.41,
+    "a1": 15.79,
+    "words": [
+      {
+        "w": "Interaktiv",
+        "s": 8.41,
+        "e": 8.87
+      },
+      {
+        "w": "ribeys",
+        "s": 8.91,
+        "e": 9.21
+      },
+      {
+        "w": "orqali",
+        "s": 9.25,
+        "e": 9.59
+      },
+      {
+        "w": "o‘tgan",
+        "s": 9.83,
+        "e": 10.11
+      },
+      {
+        "w": "kommitlarni",
+        "s": 10.17,
+        "e": 10.73
+      },
+      {
+        "w": "xuddi",
+        "s": 10.85,
+        "e": 11.15
+      },
+      {
+        "w": "matn",
+        "s": 11.25,
+        "e": 11.55
+      },
+      {
+        "w": "muharririda",
+        "s": 11.59,
+        "e": 12.11
+      },
+      {
+        "w": "tahrirlagandek",
+        "s": 12.17,
+        "e": 12.87
+      },
+      {
+        "w": "qayta",
+        "s": 13.15,
+        "e": 13.39
+      },
+      {
+        "w": "shakllantirish,",
+        "s": 13.43,
+        "e": 14.09
+      },
+      {
+        "w": "to‘g‘rilash",
+        "s": 14.37,
+        "e": 14.91
+      },
+      {
+        "w": "va",
+        "s": 14.97,
+        "e": 15.03
+      },
+      {
+        "w": "tozalash",
+        "s": 15.13,
+        "e": 15.51
+      },
+      {
+        "w": "mumkin.",
+        "s": 15.53,
+        "e": 15.79
+      }
+    ]
+  },
+  {
+    "id": "l3",
+    "scene": "todo_va_reword",
+    "text": "git rebase minus i HEAD tilda uch buyrug‘ini bersak, Git bajarilishi kerak bo‘lgan todo buyruqlar ro‘yxatini ochadi.",
+    "show": "git rebase minus i HEAD tilda uch buyrug‘ini bersak, Git bajarilishi kerak bo‘lgan todo buyruqlar ro‘yxatini ochadi.",
+    "say": "Git ribeys minus ay hed tilda uch buyrug‘ini bersak, Git bajarilishi kerak bo‘lgan tudu buyruqlar ro‘yxatini ochadi.",
+    "a0": 16.95,
+    "a1": 23.88,
+    "words": [
+      {
+        "w": "Git",
+        "s": 16.95,
+        "e": 17.15
+      },
+      {
+        "w": "ribeys",
+        "s": 17.29,
+        "e": 17.69
+      },
+      {
+        "w": "minus",
+        "s": 17.81,
+        "e": 18.11
+      },
+      {
+        "w": "ay",
+        "s": 18.31,
+        "e": 18.43
+      },
+      {
+        "w": "hed",
+        "s": 18.77,
+        "e": 18.97
+      },
+      {
+        "w": "tilda",
+        "s": 19.05,
+        "e": 19.33
+      },
+      {
+        "w": "uch",
+        "s": 19.45,
+        "e": 19.59
+      },
+      {
+        "w": "buyrug‘ini",
+        "s": 19.63,
+        "e": 19.99
+      },
+      {
+        "w": "bersak,",
+        "s": 20.03,
+        "e": 20.35
+      },
+      {
+        "w": "Git",
+        "s": 20.77,
+        "e": 20.95
+      },
+      {
+        "w": "bajarilishi",
+        "s": 21.03,
+        "e": 21.53
+      },
+      {
+        "w": "kerak",
+        "s": 21.59,
+        "e": 21.85
+      },
+      {
+        "w": "bo‘lgan",
+        "s": 21.91,
+        "e": 22.25
+      },
+      {
+        "w": "tudu",
+        "s": 22.43,
+        "e": 22.7
+      },
+      {
+        "w": "buyruqlar",
+        "s": 22.8,
+        "e": 23.2
+      },
+      {
+        "w": "ro‘yxatini",
+        "s": 23.24,
+        "e": 23.6
+      },
+      {
+        "w": "ochadi.",
+        "s": 23.62,
+        "e": 23.88
+      }
+    ]
+  },
+  {
+    "id": "l4",
+    "scene": "todo_va_reword",
+    "text": "Ro‘yxatda birinchi kommit uchun reword so‘zini yozsak, Git o‘sha qadamda to‘xtab, kommit xabarini qayta tahrirlash imkonini beradi.",
+    "show": "Ro‘yxatda birinchi kommit uchun reword so‘zini yozsak, Git o‘sha qadamda to‘xtab, kommit xabarini qayta tahrirlash imkonini beradi.",
+    "say": "Ro‘yxatda birinchi kommit uchun rivord so‘zini yozsak, Git o‘sha qadamda to‘xtab, kommit xabarini qayta tahrirlash imkonini beradi.",
+    "a0": 24.64,
+    "a1": 31.72,
+    "words": [
+      {
+        "w": "Ro‘yxatda",
+        "s": 24.64,
+        "e": 25.12
+      },
+      {
+        "w": "birinchi",
+        "s": 25.3,
+        "e": 25.62
+      },
+      {
+        "w": "kommit",
+        "s": 25.66,
+        "e": 25.94
+      },
+      {
+        "w": "uchun",
+        "s": 25.98,
+        "e": 26.22
+      },
+      {
+        "w": "rivord",
+        "s": 26.46,
+        "e": 26.82
+      },
+      {
+        "w": "so‘zini",
+        "s": 26.86,
+        "e": 27.14
+      },
+      {
+        "w": "yozsak,",
+        "s": 27.14,
+        "e": 27.52
+      },
+      {
+        "w": "Git",
+        "s": 27.92,
+        "e": 28.1
+      },
+      {
+        "w": "o‘sha",
+        "s": 28.24,
+        "e": 28.42
+      },
+      {
+        "w": "qadamda",
+        "s": 28.48,
+        "e": 28.8
+      },
+      {
+        "w": "to‘xtab,",
+        "s": 28.86,
+        "e": 29.22
+      },
+      {
+        "w": "kommit",
+        "s": 29.38,
+        "e": 29.66
+      },
+      {
+        "w": "xabarini",
+        "s": 29.7,
+        "e": 30.0
+      },
+      {
+        "w": "qayta",
+        "s": 30.14,
+        "e": 30.42
+      },
+      {
+        "w": "tahrirlash",
+        "s": 30.46,
+        "e": 30.96
+      },
+      {
+        "w": "imkonini",
+        "s": 31.0,
+        "e": 31.42
+      },
+      {
+        "w": "beradi.",
+        "s": 31.46,
+        "e": 31.72
+      }
+    ]
+  },
+  {
+    "id": "l5",
+    "scene": "edit_va_bolish",
+    "text": "edit buyrug‘i orqali jarayonni ma’lum bir kommitda to‘xtatib, unga yangi fayllarni commit amend bilan qo‘shishimiz mumkin.",
+    "show": "edit buyrug‘i orqali jarayonni ma’lum bir kommitda to‘xtatib, unga yangi fayllarni commit amend bilan qo‘shishimiz mumkin.",
+    "say": "Edit buyrug‘i orqali jarayonni ma’lum bir kommitda to‘xtatib, unga yangi fayllarni kommit emend bilan qo‘shishimiz mumkin.",
+    "a0": 32.56,
+    "a1": 39.01,
+    "words": [
+      {
+        "w": "Edit",
+        "s": 32.56,
+        "e": 32.8
+      },
+      {
+        "w": "buyrug‘i",
+        "s": 32.84,
+        "e": 33.16
+      },
+      {
+        "w": "orqali",
+        "s": 33.2,
+        "e": 33.54
+      },
+      {
+        "w": "jarayonni",
+        "s": 33.68,
+        "e": 34.12
+      },
+      {
+        "w": "ma’lum",
+        "s": 34.2,
+        "e": 34.5
+      },
+      {
+        "w": "bir",
+        "s": 34.52,
+        "e": 34.62
+      },
+      {
+        "w": "kommitda",
+        "s": 34.66,
+        "e": 35.02
+      },
+      {
+        "w": "to‘xtatib,",
+        "s": 35.06,
+        "e": 35.48
+      },
+      {
+        "w": "unga",
+        "s": 35.84,
+        "e": 36.04
+      },
+      {
+        "w": "yangi",
+        "s": 36.18,
+        "e": 36.46
+      },
+      {
+        "w": "fayllarni",
+        "s": 36.52,
+        "e": 37.08
+      },
+      {
+        "w": "kommit",
+        "s": 37.26,
+        "e": 37.57
+      },
+      {
+        "w": "emend",
+        "s": 37.71,
+        "e": 37.99
+      },
+      {
+        "w": "bilan",
+        "s": 38.03,
+        "e": 38.23
+      },
+      {
+        "w": "qo‘shishimiz",
+        "s": 38.29,
+        "e": 38.73
+      },
+      {
+        "w": "mumkin.",
+        "s": 38.77,
+        "e": 39.01
+      }
+    ]
+  },
+  {
+    "id": "l6",
+    "scene": "edit_va_bolish",
+    "text": "Yoki git reset orqali bitta katta kommitni ochib yuborib, uni bir nechta mantiqiy kichik kommitlarga bo‘lib tashlash ham oson.",
+    "show": "Yoki git reset orqali bitta katta kommitni ochib yuborib, uni bir nechta mantiqiy kichik kommitlarga bo‘lib tashlash ham oson.",
+    "say": "Yoki git reset orqali bitta katta kommitni ochib yuborib, uni bir nechta mantiqiy kichik kommitlarga bo‘lib tashlash ham oson.",
+    "a0": 39.81,
+    "a1": 46.51,
+    "words": [
+      {
+        "w": "Yoki",
+        "s": 39.81,
+        "e": 40.07
+      },
+      {
+        "w": "git",
+        "s": 40.33,
+        "e": 40.49
+      },
+      {
+        "w": "reset",
+        "s": 40.59,
+        "e": 40.89
+      },
+      {
+        "w": "orqali",
+        "s": 40.93,
+        "e": 41.23
+      },
+      {
+        "w": "bitta",
+        "s": 41.39,
+        "e": 41.63
+      },
+      {
+        "w": "katta",
+        "s": 41.69,
+        "e": 41.99
+      },
+      {
+        "w": "kommitni",
+        "s": 42.03,
+        "e": 42.39
+      },
+      {
+        "w": "ochib",
+        "s": 42.49,
+        "e": 42.71
+      },
+      {
+        "w": "yuborib,",
+        "s": 42.73,
+        "e": 43.07
+      },
+      {
+        "w": "uni",
+        "s": 43.39,
+        "e": 43.53
+      },
+      {
+        "w": "bir",
+        "s": 43.63,
+        "e": 43.75
+      },
+      {
+        "w": "nechta",
+        "s": 43.81,
+        "e": 44.07
+      },
+      {
+        "w": "mantiqiy",
+        "s": 44.11,
+        "e": 44.55
+      },
+      {
+        "w": "kichik",
+        "s": 44.63,
+        "e": 44.87
+      },
+      {
+        "w": "kommitlarga",
+        "s": 44.91,
+        "e": 45.41
+      },
+      {
+        "w": "bo‘lib",
+        "s": 45.47,
+        "e": 45.69
+      },
+      {
+        "w": "tashlash",
+        "s": 45.73,
+        "e": 46.05
+      },
+      {
+        "w": "ham",
+        "s": 46.07,
+        "e": 46.17
+      },
+      {
+        "w": "oson.",
+        "s": 46.27,
+        "e": 46.51
+      }
+    ]
+  },
+  {
+    "id": "l7",
+    "scene": "squash_va_fixup",
+    "text": "Bir nechta mayda oraliq ishlarni bitta yaxlit kommitga aylantirish uchun squash buyrug‘idan foydalaniladi.",
+    "show": "Bir nechta mayda oraliq ishlarni bitta yaxlit kommitga aylantirish uchun squash buyrug‘idan foydalaniladi.",
+    "say": "Bir nechta mayda oraliq ishlarni bitta yaxlit kommitga aylantirish uchun skvosh buyrug‘idan foydalaniladi.",
+    "a0": 47.39,
+    "a1": 52.45,
+    "words": [
+      {
+        "w": "Bir",
+        "s": 47.39,
+        "e": 47.51
+      },
+      {
+        "w": "nechta",
+        "s": 47.55,
+        "e": 47.79
+      },
+      {
+        "w": "mayda",
+        "s": 47.85,
+        "e": 48.07
+      },
+      {
+        "w": "oraliq",
+        "s": 48.15,
+        "e": 48.45
+      },
+      {
+        "w": "ishlarni",
+        "s": 48.49,
+        "e": 48.87
+      },
+      {
+        "w": "bitta",
+        "s": 48.99,
+        "e": 49.23
+      },
+      {
+        "w": "yaxlit",
+        "s": 49.31,
+        "e": 49.61
+      },
+      {
+        "w": "kommitga",
+        "s": 49.65,
+        "e": 49.97
+      },
+      {
+        "w": "aylantirish",
+        "s": 50.01,
+        "e": 50.45
+      },
+      {
+        "w": "uchun",
+        "s": 50.49,
+        "e": 50.67
+      },
+      {
+        "w": "skvosh",
+        "s": 50.97,
+        "e": 51.31
+      },
+      {
+        "w": "buyrug‘idan",
+        "s": 51.35,
+        "e": 51.79
+      },
+      {
+        "w": "foydalaniladi.",
+        "s": 51.83,
+        "e": 52.45
+      }
+    ]
+  },
+  {
+    "id": "l8",
+    "scene": "squash_va_fixup",
+    "text": "fixup esa ikkinchi kommit xabarini e’tiborga olmay, faqat uning kodini oldingi kommit tarkibiga toza birlashtirib beradi.",
+    "show": "fixup esa ikkinchi kommit xabarini e’tiborga olmay, faqat uning kodini oldingi kommit tarkibiga toza birlashtirib beradi.",
+    "say": "Fiksap esa ikkinchi kommit xabarini e’tiborga olmay, faqat uning kodini oldingi kommit tarkibiga toza birlashtirib beradi.",
+    "a0": 53.2,
+    "a1": 59.34,
+    "words": [
+      {
+        "w": "Fiksap",
+        "s": 53.2,
+        "e": 53.56
+      },
+      {
+        "w": "esa",
+        "s": 53.62,
+        "e": 53.78
+      },
+      {
+        "w": "ikkinchi",
+        "s": 54.12,
+        "e": 54.4
+      },
+      {
+        "w": "kommit",
+        "s": 54.44,
+        "e": 54.66
+      },
+      {
+        "w": "xabarini",
+        "s": 54.7,
+        "e": 55.04
+      },
+      {
+        "w": "e’tiborga",
+        "s": 55.12,
+        "e": 55.54
+      },
+      {
+        "w": "olmay,",
+        "s": 55.6,
+        "e": 55.86
+      },
+      {
+        "w": "faqat",
+        "s": 56.0,
+        "e": 56.26
+      },
+      {
+        "w": "uning",
+        "s": 56.34,
+        "e": 56.52
+      },
+      {
+        "w": "kodini",
+        "s": 56.56,
+        "e": 56.88
+      },
+      {
+        "w": "oldingi",
+        "s": 57.04,
+        "e": 57.38
+      },
+      {
+        "w": "kommit",
+        "s": 57.42,
+        "e": 57.68
+      },
+      {
+        "w": "tarkibiga",
+        "s": 57.7,
+        "e": 58.14
+      },
+      {
+        "w": "toza",
+        "s": 58.28,
+        "e": 58.52
+      },
+      {
+        "w": "birlashtirib",
+        "s": 58.58,
+        "e": 59.06
+      },
+      {
+        "w": "beradi.",
+        "s": 59.08,
+        "e": 59.34
+      }
+    ]
+  },
+  {
+    "id": "l9",
+    "scene": "drop_va_tartib",
+    "text": "Keraksiz yoki vaqtinchalik debug kommitlarni drop qilish yoki ro‘yxatdan o‘chirib tashlash orqali tarixdan butunlay yo‘qotamiz.",
+    "show": "Keraksiz yoki vaqtinchalik debug kommitlarni drop qilish yoki ro‘yxatdan o‘chirib tashlash orqali tarixdan butunlay yo‘qotamiz.",
+    "say": "Keraksiz yoki vaqtinchalik debug kommitlarni drop qilish yoki ro‘yxatdan o‘chirib tashlash orqali tarixdan butunlay yo‘qotamiz.",
+    "a0": 60.12,
+    "a1": 67.21,
+    "words": [
+      {
+        "w": "Keraksiz",
+        "s": 60.12,
+        "e": 60.72
+      },
+      {
+        "w": "yoki",
+        "s": 60.8,
+        "e": 61.06
+      },
+      {
+        "w": "vaqtinchalik",
+        "s": 61.14,
+        "e": 61.72
+      },
+      {
+        "w": "debug",
+        "s": 61.86,
+        "e": 62.18
+      },
+      {
+        "w": "kommitlarni",
+        "s": 62.24,
+        "e": 62.78
+      },
+      {
+        "w": "drop",
+        "s": 63.14,
+        "e": 63.38
+      },
+      {
+        "w": "qilish",
+        "s": 63.46,
+        "e": 63.7
+      },
+      {
+        "w": "yoki",
+        "s": 63.78,
+        "e": 63.96
+      },
+      {
+        "w": "ro‘yxatdan",
+        "s": 64.04,
+        "e": 64.46
+      },
+      {
+        "w": "o‘chirib",
+        "s": 64.58,
+        "e": 64.86
+      },
+      {
+        "w": "tashlash",
+        "s": 64.88,
+        "e": 65.2
+      },
+      {
+        "w": "orqali",
+        "s": 65.24,
+        "e": 65.52
+      },
+      {
+        "w": "tarixdan",
+        "s": 65.8,
+        "e": 66.2
+      },
+      {
+        "w": "butunlay",
+        "s": 66.28,
+        "e": 66.7
+      },
+      {
+        "w": "yo‘qotamiz.",
+        "s": 66.72,
+        "e": 67.21
+      }
+    ]
+  },
+  {
+    "id": "l10",
+    "scene": "drop_va_tartib",
+    "text": "Todo ro‘yxatidagi qatorlar tartibini yuqoriga yoki pastga siljitish orqali esa kommitlar ketma-ketligini osongina almashtirish mumkin.",
+    "show": "Todo ro‘yxatidagi qatorlar tartibini yuqoriga yoki pastga siljitish orqali esa kommitlar ketma-ketligini osongina almashtirish mumkin.",
+    "say": "Tudu ro‘yxatidagi qatorlar tartibini yuqoriga yoki pastga siljitish orqali esa kommitlar ketma-ketligini osongina almashtirish mumkin.",
+    "a0": 68.15,
+    "a1": 75.07,
+    "words": [
+      {
+        "w": "Tudu",
+        "s": 68.15,
+        "e": 68.37
+      },
+      {
+        "w": "ro‘yxatidagi",
+        "s": 68.45,
+        "e": 68.99
+      },
+      {
+        "w": "qatorlar",
+        "s": 69.03,
+        "e": 69.47
+      },
+      {
+        "w": "tartibini",
+        "s": 69.51,
+        "e": 69.97
+      },
+      {
+        "w": "yuqoriga",
+        "s": 70.11,
+        "e": 70.59
+      },
+      {
+        "w": "yoki",
+        "s": 70.67,
+        "e": 70.89
+      },
+      {
+        "w": "pastga",
+        "s": 70.97,
+        "e": 71.23
+      },
+      {
+        "w": "siljitish",
+        "s": 71.27,
+        "e": 71.67
+      },
+      {
+        "w": "orqali",
+        "s": 71.71,
+        "e": 72.01
+      },
+      {
+        "w": "esa",
+        "s": 72.07,
+        "e": 72.23
+      },
+      {
+        "w": "kommitlar",
+        "s": 72.55,
+        "e": 72.95
+      },
+      {
+        "w": "ketma-ketligini",
+        "s": 73.01,
+        "e": 73.67
+      },
+      {
+        "w": "osongina",
+        "s": 73.87,
+        "e": 74.29
+      },
+      {
+        "w": "almashtirish",
+        "s": 74.33,
+        "e": 74.79
+      },
+      {
+        "w": "mumkin.",
+        "s": 74.81,
+        "e": 75.07
+      }
+    ]
+  },
+  {
+    "id": "l11",
+    "scene": "xulosa",
+    "text": "exec buyrug‘i har bir qadamda avtomatik testlarni yurgizib, qayta yozilgan tarixning to‘g‘ri ishlashini kafolatlaydi.",
+    "show": "exec buyrug‘i har bir qadamda avtomatik testlarni yurgizib, qayta yozilgan tarixning to‘g‘ri ishlashini kafolatlaydi.",
+    "say": "Ekzek buyrug‘i har bir qadamda avtomatik testlarni yurgizib, qayta yozilgan tarixning to‘g‘ri ishlashini kafolatlaydi.",
+    "a0": 75.93,
+    "a1": 81.88,
+    "words": [
+      {
+        "w": "Ekzek",
+        "s": 75.93,
+        "e": 76.25
+      },
+      {
+        "w": "buyrug‘i",
+        "s": 76.31,
+        "e": 76.65
+      },
+      {
+        "w": "har",
+        "s": 76.81,
+        "e": 76.99
+      },
+      {
+        "w": "bir",
+        "s": 77.05,
+        "e": 77.15
+      },
+      {
+        "w": "qadamda",
+        "s": 77.19,
+        "e": 77.55
+      },
+      {
+        "w": "avtomatik",
+        "s": 77.71,
+        "e": 78.21
+      },
+      {
+        "w": "testlarni",
+        "s": 78.25,
+        "e": 78.69
+      },
+      {
+        "w": "yurgizib,",
+        "s": 78.73,
+        "e": 79.11
+      },
+      {
+        "w": "qayta",
+        "s": 79.41,
+        "e": 79.65
+      },
+      {
+        "w": "yozilgan",
+        "s": 79.71,
+        "e": 80.07
+      },
+      {
+        "w": "tarixning",
+        "s": 80.11,
+        "e": 80.51
+      },
+      {
+        "w": "to‘g‘ri",
+        "s": 80.57,
+        "e": 80.83
+      },
+      {
+        "w": "ishlashini",
+        "s": 80.87,
+        "e": 81.23
+      },
+      {
+        "w": "kafolatlaydi.",
+        "s": 81.25,
+        "e": 81.88
+      }
+    ]
+  },
+  {
+    "id": "l12",
+    "scene": "xulosa",
+    "text": "Keyingi bobda turli tarmoqlarni birlashtirishda uchraydigan murakkab merge strategiyalarini to‘liq ko‘rib chiqamiz.",
+    "show": "Keyingi bobda turli tarmoqlarni birlashtirishda uchraydigan murakkab merge strategiyalarini to‘liq ko‘rib chiqamiz.",
+    "say": "Keyingi bobda turli tarmoqlarni birlashtirishda uchraydigan murakkab merj strategiyalarini to‘liq ko‘rib chiqamiz.",
+    "a0": 82.54,
+    "a1": 88.16,
+    "words": [
+      {
+        "w": "Keyingi",
+        "s": 82.54,
+        "e": 82.86
+      },
+      {
+        "w": "bobda",
+        "s": 82.9,
+        "e": 83.18
+      },
+      {
+        "w": "turli",
+        "s": 83.32,
+        "e": 83.58
+      },
+      {
+        "w": "tarmoqlarni",
+        "s": 83.66,
+        "e": 84.22
+      },
+      {
+        "w": "birlashtirishda",
+        "s": 84.26,
+        "e": 84.82
+      },
+      {
+        "w": "uchraydigan",
+        "s": 84.86,
+        "e": 85.34
+      },
+      {
+        "w": "murakkab",
+        "s": 85.6,
+        "e": 86.08
+      },
+      {
+        "w": "merj",
+        "s": 86.22,
+        "e": 86.42
+      },
+      {
+        "w": "strategiyalarini",
+        "s": 86.46,
+        "e": 87.2
+      },
+      {
+        "w": "to‘liq",
+        "s": 87.3,
+        "e": 87.56
+      },
+      {
+        "w": "ko‘rib",
+        "s": 87.62,
+        "e": 87.82
+      },
+      {
+        "w": "chiqamiz.",
+        "s": 87.84,
+        "e": 88.16
+      }
+    ]
+  }
+]
