@@ -1,0 +1,61 @@
+WEBVTT
+
+1
+00:01.360 --> 00:09.820
+Katta loyihalarda ma'lum bir funksiya yoki o'zgaruvchi qayerda e'lon qilinganini
+tezkor topish uchun ko'p oqimli va aqlli git grep buyrug'i ishlatiladi.
+
+2
+00:10.050 --> 00:18.300
+Oddiy tizim grep buyrug'idan farqli ravishda u faqat Git kuzatuvidagi
+fayllarni tekshiradi hamda qator raqami va mos fayllar sonini qulay chiqaradi.
+
+3
+00:21.650 --> 00:29.930
+git grep nafaqat ishchi katalogda, balki minus-minus cached bilan indexda
+yoki istalgan eski teg va commit daraxtida to'g'ridan-to'g'ri qidira oladi.
+
+4
+00:30.100 --> 00:37.710
+Bu esa branch almashtirmasdan yoki fayllarni qayta yuklamasdan turib
+o'tmishdagi konfiguratsiyalarni bir zumda tekshirish imkonini beradi.
+
+5
+00:41.620 --> 00:49.900
+Minus p va minus W kalitlari mos qator aynan qaysi funksiya ichida
+joylashganini va uning butun tanasini terminalda yaqqol ko'rsatib beradi.
+
+6
+00:50.130 --> 00:58.700
+Shuningdek minus-minus and, or va not operatorlari bir nechta shartlarni
+bitta qatorda mantiqiy bog'lash orqali murakkab qidiruvni amalga oshiradi.
+
+7
+01:02.650 --> 01:10.610
+Kod qachon tug'ilgan yoki qachon o'chirilgan degan savolga javob
+topish uchun git log minus S, ya'ni pickaxe mexanizmi yordamga keladi.
+
+8
+01:10.900 --> 01:17.490
+U butun tarix bo'ylab matnning uchrashlar soni o'zgargan nuqtalarni
+qazib topadi va keraksiz oraliq commitlarni chetlab o'tadi.
+
+9
+01:21.460 --> 01:29.320
+Agar satr soni emas, balki konstanta qiymati o'zgargan bo'lsa, commit
+diffidagi qatorlarni qidiruvchi git log minus G buyrug'idan foydalaniladi.
+
+10
+01:29.530 --> 01:36.980
+Minus G diffdagi har bir qo'shilgan va o'chirilgan qatorni regex bo'yicha
+tahlil qiladi hamda murakkab mantiqiy yangilanishlarni aniqlaydi.
+
+11
+01:40.910 --> 01:49.050
+git log minus L orqali aniq bir qatorlar oralig'i yoki butun bir funksiyaning
+boshidan oxirigacha bo'lgan to'liq evolyutsiya tarixini ko'rish mumkin.
+
+12
+01:49.360 --> 01:55.950
+Commit xabarlari ichidan vazifalar va izohlarni topish uchun
+esa git log minus-minus grep buyrug'i qulay vosita hisoblanadi.
