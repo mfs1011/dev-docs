@@ -1,0 +1,1683 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Salom! Bu FSD qo'llanmasining o'n yettinchi bobi — Desegmentatsiya va to'g'ri nomlash. Bugun loyihalarda eng ko'p uchraydigan texnik ajratish tuzog'i va uni bartaraf etishni o'rganamiz.",
+    "show": "Salom! Bu FSD qo'llanmasining o'n yettinchi bobi — Desegmentatsiya va to'g'ri nomlash. Bugun loyihalarda eng ko'p uchraydigan texnik ajratish tuzog'i va uni bartaraf etishni o'rganamiz.",
+    "say": "Salom! Bu Ef-es-di qo'llanmasining o'n yettinchi bobi — Desegmentatsiya va to'g'ri nomlash. Bugun loyihalarda eng ko'p uchraydigan texnik ajratish tuzog'i va uni bartaraf etishni o'rganamiz.",
+    "a0": 0.38,
+    "a1": 12.11,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.38,
+        "e": 0.7
+      },
+      {
+        "w": "Bu",
+        "s": 1.1,
+        "e": 1.18
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 1.4,
+        "e": 1.86
+      },
+      {
+        "w": "qo'llanmasining",
+        "s": 1.94,
+        "e": 2.68
+      },
+      {
+        "w": "o'n",
+        "s": 2.86,
+        "e": 2.96
+      },
+      {
+        "w": "yettinchi",
+        "s": 3.02,
+        "e": 3.5
+      },
+      {
+        "w": "bobi",
+        "s": 3.56,
+        "e": 3.82
+      },
+      {
+        "w": "—",
+        "s": 3.82,
+        "e": 3.82
+      },
+      {
+        "w": "Desegmentatsiya",
+        "s": 4.28,
+        "e": 5.14
+      },
+      {
+        "w": "va",
+        "s": 5.26,
+        "e": 5.32
+      },
+      {
+        "w": "to'g'ri",
+        "s": 5.44,
+        "e": 5.8
+      },
+      {
+        "w": "nomlash.",
+        "s": 5.86,
+        "e": 6.28
+      },
+      {
+        "w": "Bugun",
+        "s": 6.78,
+        "e": 7.04
+      },
+      {
+        "w": "loyihalarda",
+        "s": 7.1,
+        "e": 7.71
+      },
+      {
+        "w": "eng",
+        "s": 7.97,
+        "e": 8.17
+      },
+      {
+        "w": "ko'p",
+        "s": 8.23,
+        "e": 8.41
+      },
+      {
+        "w": "uchraydigan",
+        "s": 8.45,
+        "e": 8.99
+      },
+      {
+        "w": "texnik",
+        "s": 9.05,
+        "e": 9.41
+      },
+      {
+        "w": "ajratish",
+        "s": 9.45,
+        "e": 9.87
+      },
+      {
+        "w": "tuzog'i",
+        "s": 9.89,
+        "e": 10.33
+      },
+      {
+        "w": "va",
+        "s": 10.41,
+        "e": 10.49
+      },
+      {
+        "w": "uni",
+        "s": 10.63,
+        "e": 10.77
+      },
+      {
+        "w": "bartaraf",
+        "s": 10.83,
+        "e": 11.25
+      },
+      {
+        "w": "etishni",
+        "s": 11.33,
+        "e": 11.59
+      },
+      {
+        "w": "o'rganamiz.",
+        "s": 11.65,
+        "e": 12.11
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "intro",
+    "text": "Desegmentatsiya — bu fayllarni biznes sohasi bo'yicha emas, balki ularning texnik turi bo'yicha components, hooks yoki utils kabi papkalarga sochib tashlashdir.",
+    "show": "Desegmentatsiya — bu fayllarni biznes sohasi bo'yicha emas, balki ularning texnik turi bo'yicha components, hooks yoki utils kabi papkalarga sochib tashlashdir.",
+    "say": "Desegmentatsiya — bu fayllarni biznes sohasi bo'yicha emas, balki ularning texnik turi bo'yicha komponents, xuks yoki yutils kabi papkalarga sochib tashlashdir.",
+    "a0": 13.13,
+    "a1": 22.13,
+    "words": [
+      {
+        "w": "Desegmentatsiya",
+        "s": 13.13,
+        "e": 13.91
+      },
+      {
+        "w": "—",
+        "s": 13.91,
+        "e": 13.91
+      },
+      {
+        "w": "bu",
+        "s": 13.95,
+        "e": 14.01
+      },
+      {
+        "w": "fayllarni",
+        "s": 14.11,
+        "e": 14.71
+      },
+      {
+        "w": "biznes",
+        "s": 14.79,
+        "e": 15.11
+      },
+      {
+        "w": "sohasi",
+        "s": 15.15,
+        "e": 15.51
+      },
+      {
+        "w": "bo'yicha",
+        "s": 15.55,
+        "e": 15.83
+      },
+      {
+        "w": "emas,",
+        "s": 15.91,
+        "e": 16.17
+      },
+      {
+        "w": "balki",
+        "s": 16.47,
+        "e": 16.73
+      },
+      {
+        "w": "ularning",
+        "s": 16.87,
+        "e": 17.25
+      },
+      {
+        "w": "texnik",
+        "s": 17.31,
+        "e": 17.73
+      },
+      {
+        "w": "turi",
+        "s": 17.77,
+        "e": 17.95
+      },
+      {
+        "w": "bo'yicha",
+        "s": 17.99,
+        "e": 18.31
+      },
+      {
+        "w": "komponents,",
+        "s": 18.61,
+        "e": 19.37
+      },
+      {
+        "w": "xuks",
+        "s": 19.47,
+        "e": 19.85
+      },
+      {
+        "w": "yoki",
+        "s": 19.93,
+        "e": 20.15
+      },
+      {
+        "w": "yutils",
+        "s": 20.21,
+        "e": 20.53
+      },
+      {
+        "w": "kabi",
+        "s": 20.55,
+        "e": 20.75
+      },
+      {
+        "w": "papkalarga",
+        "s": 20.79,
+        "e": 21.31
+      },
+      {
+        "w": "sochib",
+        "s": 21.37,
+        "e": 21.63
+      },
+      {
+        "w": "tashlashdir.",
+        "s": 21.65,
+        "e": 22.13
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "muammolar",
+    "text": "Bir qarashda bu tartibli tuyulsa-da, amalda past bog'liqlik keltirib chiqaradi: bitta yetkazib berish mantiqini o'zgartirish uchun beshta alohida papkaga kirishga to'g'ri keladi.",
+    "show": "Bir qarashda bu tartibli tuyulsa-da, amalda past bog'liqlik keltirib chiqaradi: bitta yetkazib berish mantiqini o'zgartirish uchun beshta alohida papkaga kirishga to'g'ri keladi.",
+    "say": "Bir qarashda bu tartibli tuyulsa-da, amalda past bog'liqlik keltirib chiqaradi: bitta yetkazib berish mantiqini o'zgartirish uchun beshta alohida papkaga kirishga to'g'ri keladi.",
+    "a0": 22.8,
+    "a1": 32.52,
+    "words": [
+      {
+        "w": "Bir",
+        "s": 22.8,
+        "e": 22.92
+      },
+      {
+        "w": "qarashda",
+        "s": 22.96,
+        "e": 23.38
+      },
+      {
+        "w": "bu",
+        "s": 23.58,
+        "e": 23.64
+      },
+      {
+        "w": "tartibli",
+        "s": 23.74,
+        "e": 24.2
+      },
+      {
+        "w": "tuyulsa-da,",
+        "s": 24.24,
+        "e": 24.72
+      },
+      {
+        "w": "amalda",
+        "s": 25.06,
+        "e": 25.38
+      },
+      {
+        "w": "past",
+        "s": 25.54,
+        "e": 25.82
+      },
+      {
+        "w": "bog'liqlik",
+        "s": 25.88,
+        "e": 26.34
+      },
+      {
+        "w": "keltirib",
+        "s": 26.36,
+        "e": 26.7
+      },
+      {
+        "w": "chiqaradi:",
+        "s": 26.72,
+        "e": 27.1
+      },
+      {
+        "w": "bitta",
+        "s": 27.74,
+        "e": 28.0
+      },
+      {
+        "w": "yetkazib",
+        "s": 28.08,
+        "e": 28.48
+      },
+      {
+        "w": "berish",
+        "s": 28.5,
+        "e": 28.7
+      },
+      {
+        "w": "mantiqini",
+        "s": 28.74,
+        "e": 29.14
+      },
+      {
+        "w": "o'zgartirish",
+        "s": 29.18,
+        "e": 29.68
+      },
+      {
+        "w": "uchun",
+        "s": 29.72,
+        "e": 29.94
+      },
+      {
+        "w": "beshta",
+        "s": 30.26,
+        "e": 30.64
+      },
+      {
+        "w": "alohida",
+        "s": 30.78,
+        "e": 31.18
+      },
+      {
+        "w": "papkaga",
+        "s": 31.24,
+        "e": 31.6
+      },
+      {
+        "w": "kirishga",
+        "s": 31.66,
+        "e": 31.94
+      },
+      {
+        "w": "to'g'ri",
+        "s": 31.98,
+        "e": 32.2
+      },
+      {
+        "w": "keladi.",
+        "s": 32.24,
+        "e": 32.52
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "muammolar",
+    "text": "Natijada komponentlar o'rtasida yashirin chigal bog'lanishlar paydo bo'ladi va kodni refaktoring qilish deyarli imkonsiz bo'lib qoladi.",
+    "show": "Natijada komponentlar o'rtasida yashirin chigal bog'lanishlar paydo bo'ladi va kodni refaktoring qilish deyarli imkonsiz bo'lib qoladi.",
+    "say": "Natijada komponentlar o'rtasida yashirin chigal bog'lanishlar paydo bo'ladi va kodni refaktoring qilish deyarli imkonsiz bo'lib qoladi.",
+    "a0": 33.4,
+    "a1": 40.81,
+    "words": [
+      {
+        "w": "Natijada",
+        "s": 33.4,
+        "e": 33.86
+      },
+      {
+        "w": "komponentlar",
+        "s": 33.94,
+        "e": 34.56
+      },
+      {
+        "w": "o'rtasida",
+        "s": 34.6,
+        "e": 35.0
+      },
+      {
+        "w": "yashirin",
+        "s": 35.32,
+        "e": 35.82
+      },
+      {
+        "w": "chigal",
+        "s": 35.88,
+        "e": 36.18
+      },
+      {
+        "w": "bog'lanishlar",
+        "s": 36.22,
+        "e": 36.78
+      },
+      {
+        "w": "paydo",
+        "s": 36.82,
+        "e": 37.04
+      },
+      {
+        "w": "bo'ladi",
+        "s": 37.1,
+        "e": 37.4
+      },
+      {
+        "w": "va",
+        "s": 37.73,
+        "e": 37.79
+      },
+      {
+        "w": "kodni",
+        "s": 37.91,
+        "e": 38.27
+      },
+      {
+        "w": "refaktoring",
+        "s": 38.39,
+        "e": 38.93
+      },
+      {
+        "w": "qilish",
+        "s": 38.95,
+        "e": 39.19
+      },
+      {
+        "w": "deyarli",
+        "s": 39.23,
+        "e": 39.59
+      },
+      {
+        "w": "imkonsiz",
+        "s": 39.77,
+        "e": 40.25
+      },
+      {
+        "w": "bo'lib",
+        "s": 40.31,
+        "e": 40.49
+      },
+      {
+        "w": "qoladi.",
+        "s": 40.53,
+        "e": 40.81
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "domen_boyicha",
+    "text": "FSD yondashuvi barcha bog'liq kodlarni bitta domen ostiga jamlashni talab qiladi.",
+    "show": "FSD yondashuvi barcha bog'liq kodlarni bitta domen ostiga jamlashni talab qiladi.",
+    "say": "Ef-es-di yondashuvi barcha bog'liq kodlarni bitta domen ostiga jamlashni talab qiladi.",
+    "a0": 41.93,
+    "a1": 46.45,
+    "words": [
+      {
+        "w": "Ef-es-di",
+        "s": 41.93,
+        "e": 42.31
+      },
+      {
+        "w": "yondashuvi",
+        "s": 42.33,
+        "e": 42.85
+      },
+      {
+        "w": "barcha",
+        "s": 42.97,
+        "e": 43.27
+      },
+      {
+        "w": "bog'liq",
+        "s": 43.35,
+        "e": 43.65
+      },
+      {
+        "w": "kodlarni",
+        "s": 43.69,
+        "e": 44.15
+      },
+      {
+        "w": "bitta",
+        "s": 44.45,
+        "e": 44.75
+      },
+      {
+        "w": "domen",
+        "s": 44.81,
+        "e": 45.09
+      },
+      {
+        "w": "ostiga",
+        "s": 45.13,
+        "e": 45.43
+      },
+      {
+        "w": "jamlashni",
+        "s": 45.47,
+        "e": 45.91
+      },
+      {
+        "w": "talab",
+        "s": 45.93,
+        "e": 46.15
+      },
+      {
+        "w": "qiladi.",
+        "s": 46.19,
+        "e": 46.45
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "domen_boyicha",
+    "text": "Masalan, delivery slice'ida barcha interfeyslar ui papkasida, barcha hisob-kitoblar model papkasida, tarmoq so'rovlari esa api ichida saqlanadi.",
+    "show": "Masalan, delivery slice'ida barcha interfeyslar ui papkasida, barcha hisob-kitoblar model papkasida, tarmoq so'rovlari esa api ichida saqlanadi.",
+    "say": "Masalan, deliveri slays'ida barcha interfeyslar yu-ay papkasida, barcha hisob-kitoblar model papkasida, tarmoq so'rovlari esa ey-pi-ay ichida saqlanadi.",
+    "a0": 47.33,
+    "a1": 56.26,
+    "words": [
+      {
+        "w": "Masalan,",
+        "s": 47.33,
+        "e": 47.71
+      },
+      {
+        "w": "deliveri",
+        "s": 48.01,
+        "e": 48.41
+      },
+      {
+        "w": "slays'ida",
+        "s": 48.47,
+        "e": 48.89
+      },
+      {
+        "w": "barcha",
+        "s": 48.97,
+        "e": 49.25
+      },
+      {
+        "w": "interfeyslar",
+        "s": 49.31,
+        "e": 49.93
+      },
+      {
+        "w": "yu-ay",
+        "s": 49.99,
+        "e": 50.23
+      },
+      {
+        "w": "papkasida,",
+        "s": 50.27,
+        "e": 50.81
+      },
+      {
+        "w": "barcha",
+        "s": 51.31,
+        "e": 51.59
+      },
+      {
+        "w": "hisob-kitoblar",
+        "s": 51.61,
+        "e": 52.29
+      },
+      {
+        "w": "model",
+        "s": 52.45,
+        "e": 52.76
+      },
+      {
+        "w": "papkasida,",
+        "s": 52.8,
+        "e": 53.32
+      },
+      {
+        "w": "tarmoq",
+        "s": 53.74,
+        "e": 54.06
+      },
+      {
+        "w": "so'rovlari",
+        "s": 54.1,
+        "e": 54.56
+      },
+      {
+        "w": "esa",
+        "s": 54.62,
+        "e": 54.82
+      },
+      {
+        "w": "ey-pi-ay",
+        "s": 55.04,
+        "e": 55.46
+      },
+      {
+        "w": "ichida",
+        "s": 55.5,
+        "e": 55.74
+      },
+      {
+        "w": "saqlanadi.",
+        "s": 55.78,
+        "e": 56.26
+      }
+    ]
+  },
+  {
+    "id": "L7",
+    "scene": "domen_boyicha",
+    "text": "Har qanday o'zgarish faqat bitta papka ichida amalga oshiriladi, bu esa loyihani tushunishni va rivojlantirishni bir necha barobar tezlashtiradi.",
+    "show": "Har qanday o'zgarish faqat bitta papka ichida amalga oshiriladi, bu esa loyihani tushunishni va rivojlantirishni bir necha barobar tezlashtiradi.",
+    "say": "Har qanday o'zgarish faqat bitta papka ichida amalga oshiriladi, bu esa loyihani tushunishni va rivojlantirishni bir necha barobar tezlashtiradi.",
+    "a0": 57.14,
+    "a1": 64.66,
+    "words": [
+      {
+        "w": "Har",
+        "s": 57.14,
+        "e": 57.3
+      },
+      {
+        "w": "qanday",
+        "s": 57.36,
+        "e": 57.66
+      },
+      {
+        "w": "o'zgarish",
+        "s": 57.74,
+        "e": 58.14
+      },
+      {
+        "w": "faqat",
+        "s": 58.34,
+        "e": 58.6
+      },
+      {
+        "w": "bitta",
+        "s": 58.7,
+        "e": 58.96
+      },
+      {
+        "w": "papka",
+        "s": 59.02,
+        "e": 59.26
+      },
+      {
+        "w": "ichida",
+        "s": 59.32,
+        "e": 59.54
+      },
+      {
+        "w": "amalga",
+        "s": 59.6,
+        "e": 59.86
+      },
+      {
+        "w": "oshiriladi,",
+        "s": 59.9,
+        "e": 60.36
+      },
+      {
+        "w": "bu",
+        "s": 60.64,
+        "e": 60.7
+      },
+      {
+        "w": "esa",
+        "s": 60.76,
+        "e": 60.92
+      },
+      {
+        "w": "loyihani",
+        "s": 60.98,
+        "e": 61.4
+      },
+      {
+        "w": "tushunishni",
+        "s": 61.44,
+        "e": 61.96
+      },
+      {
+        "w": "va",
+        "s": 62.1,
+        "e": 62.18
+      },
+      {
+        "w": "rivojlantirishni",
+        "s": 62.26,
+        "e": 62.98
+      },
+      {
+        "w": "bir",
+        "s": 63.14,
+        "e": 63.32
+      },
+      {
+        "w": "necha",
+        "s": 63.38,
+        "e": 63.6
+      },
+      {
+        "w": "barobar",
+        "s": 63.64,
+        "e": 64.0
+      },
+      {
+        "w": "tezlashtiradi.",
+        "s": 64.04,
+        "e": 64.66
+      }
+    ]
+  },
+  {
+    "id": "L8",
+    "scene": "nomlash_qoidalari",
+    "text": "Nomlashda har doim o'zingizga savol bering: bu nom kod qanday yozilganini aytadimi yoki nima maqsadda yozilganini?",
+    "show": "Nomlashda har doim o'zingizga savol bering: bu nom kod qanday yozilganini aytadimi yoki nima maqsadda yozilganini?",
+    "say": "Nomlashda har doim o'zingizga savol bering: bu nom kod qanday yozilganini aytadimi yoki nima maqsadda yozilganini?",
+    "a0": 65.78,
+    "a1": 72.19,
+    "words": [
+      {
+        "w": "Nomlashda",
+        "s": 65.78,
+        "e": 66.26
+      },
+      {
+        "w": "har",
+        "s": 66.32,
+        "e": 66.52
+      },
+      {
+        "w": "doim",
+        "s": 66.56,
+        "e": 66.8
+      },
+      {
+        "w": "o'zingizga",
+        "s": 66.82,
+        "e": 67.26
+      },
+      {
+        "w": "savol",
+        "s": 67.32,
+        "e": 67.61
+      },
+      {
+        "w": "bering:",
+        "s": 67.65,
+        "e": 67.89
+      },
+      {
+        "w": "bu",
+        "s": 68.25,
+        "e": 68.33
+      },
+      {
+        "w": "nom",
+        "s": 68.45,
+        "e": 68.65
+      },
+      {
+        "w": "kod",
+        "s": 68.81,
+        "e": 69.01
+      },
+      {
+        "w": "qanday",
+        "s": 69.13,
+        "e": 69.47
+      },
+      {
+        "w": "yozilganini",
+        "s": 69.49,
+        "e": 70.05
+      },
+      {
+        "w": "aytadimi",
+        "s": 70.09,
+        "e": 70.45
+      },
+      {
+        "w": "yoki",
+        "s": 70.51,
+        "e": 70.75
+      },
+      {
+        "w": "nima",
+        "s": 70.95,
+        "e": 71.11
+      },
+      {
+        "w": "maqsadda",
+        "s": 71.17,
+        "e": 71.57
+      },
+      {
+        "w": "yozilganini?",
+        "s": 71.57,
+        "e": 72.19
+      }
+    ]
+  },
+  {
+    "id": "L9",
+    "scene": "nomlash_qoidalari",
+    "text": "types.ts yoki utils.ts deb nomlash xatodir, chunki bu shunchaki fayl turini bildiradi. Buning o'rniga product.ts yoki format-price.ts kabi aniq domen nomlarini tanlang.",
+    "show": "types.ts yoki utils.ts deb nomlash xatodir, chunki bu shunchaki fayl turini bildiradi. Buning o'rniga product.ts yoki format-price.ts kabi aniq domen nomlarini tanlang.",
+    "say": "Tayps nuqta te-es yoki yutils nuqta te-es deb nomlash xatodir, chunki bu shunchaki fayl turini bildiradi. Buning o'rniga prodakt nuqta te-es yoki format-prays nuqta te-es kabi aniq domen nomlarini tanlang.",
+    "a0": 73.09,
+    "a1": 85.08,
+    "words": [
+      {
+        "w": "Tayps",
+        "s": 73.09,
+        "e": 73.39
+      },
+      {
+        "w": "nuqta",
+        "s": 73.43,
+        "e": 73.67
+      },
+      {
+        "w": "te-es",
+        "s": 73.75,
+        "e": 74.03
+      },
+      {
+        "w": "yoki",
+        "s": 74.09,
+        "e": 74.31
+      },
+      {
+        "w": "yutils",
+        "s": 74.63,
+        "e": 74.99
+      },
+      {
+        "w": "nuqta",
+        "s": 75.03,
+        "e": 75.27
+      },
+      {
+        "w": "te-es",
+        "s": 75.31,
+        "e": 75.57
+      },
+      {
+        "w": "deb",
+        "s": 75.61,
+        "e": 75.73
+      },
+      {
+        "w": "nomlash",
+        "s": 75.79,
+        "e": 76.13
+      },
+      {
+        "w": "xatodir,",
+        "s": 76.17,
+        "e": 76.59
+      },
+      {
+        "w": "chunki",
+        "s": 76.85,
+        "e": 77.09
+      },
+      {
+        "w": "bu",
+        "s": 77.15,
+        "e": 77.21
+      },
+      {
+        "w": "shunchaki",
+        "s": 77.31,
+        "e": 77.69
+      },
+      {
+        "w": "fayl",
+        "s": 77.79,
+        "e": 78.07
+      },
+      {
+        "w": "turini",
+        "s": 78.11,
+        "e": 78.35
+      },
+      {
+        "w": "bildiradi.",
+        "s": 78.39,
+        "e": 78.79
+      },
+      {
+        "w": "Buning",
+        "s": 79.55,
+        "e": 79.77
+      },
+      {
+        "w": "o'rniga",
+        "s": 79.83,
+        "e": 80.15
+      },
+      {
+        "w": "prodakt",
+        "s": 80.29,
+        "e": 80.69
+      },
+      {
+        "w": "nuqta",
+        "s": 80.71,
+        "e": 80.93
+      },
+      {
+        "w": "te-es",
+        "s": 80.99,
+        "e": 81.29
+      },
+      {
+        "w": "yoki",
+        "s": 81.35,
+        "e": 81.57
+      },
+      {
+        "w": "format-prays",
+        "s": 81.75,
+        "e": 82.43
+      },
+      {
+        "w": "nuqta",
+        "s": 82.47,
+        "e": 82.7
+      },
+      {
+        "w": "te-es",
+        "s": 82.76,
+        "e": 83.0
+      },
+      {
+        "w": "kabi",
+        "s": 83.02,
+        "e": 83.24
+      },
+      {
+        "w": "aniq",
+        "s": 83.62,
+        "e": 83.88
+      },
+      {
+        "w": "domen",
+        "s": 83.94,
+        "e": 84.22
+      },
+      {
+        "w": "nomlarini",
+        "s": 84.26,
+        "e": 84.7
+      },
+      {
+        "w": "tanlang.",
+        "s": 84.74,
+        "e": 85.08
+      }
+    ]
+  },
+  {
+    "id": "L10",
+    "scene": "nomlash_qoidalari",
+    "text": "Slice ichida alohida types.ts ochish o'rniga, har bir tipni uni ishlatadigan biznes modeli bilan bir faylga joylang.",
+    "show": "Slice ichida alohida types.ts ochish o'rniga, har bir tipni uni ishlatadigan biznes modeli bilan bir faylga joylang.",
+    "say": "Slays ichida alohida tayps nuqta te-es ochish o'rniga, har bir tipni uni ishlatadigan biznes modeli bilan bir faylga joylang.",
+    "a0": 85.92,
+    "a1": 92.58,
+    "words": [
+      {
+        "w": "Slays",
+        "s": 85.92,
+        "e": 86.26
+      },
+      {
+        "w": "ichida",
+        "s": 86.3,
+        "e": 86.56
+      },
+      {
+        "w": "alohida",
+        "s": 86.7,
+        "e": 87.16
+      },
+      {
+        "w": "tayps",
+        "s": 87.34,
+        "e": 87.64
+      },
+      {
+        "w": "nuqta",
+        "s": 87.68,
+        "e": 87.9
+      },
+      {
+        "w": "te-es",
+        "s": 87.96,
+        "e": 88.2
+      },
+      {
+        "w": "ochish",
+        "s": 88.26,
+        "e": 88.48
+      },
+      {
+        "w": "o'rniga,",
+        "s": 88.54,
+        "e": 88.86
+      },
+      {
+        "w": "har",
+        "s": 89.18,
+        "e": 89.32
+      },
+      {
+        "w": "bir",
+        "s": 89.38,
+        "e": 89.48
+      },
+      {
+        "w": "tipni",
+        "s": 89.52,
+        "e": 89.82
+      },
+      {
+        "w": "uni",
+        "s": 90.0,
+        "e": 90.08
+      },
+      {
+        "w": "ishlatadigan",
+        "s": 90.1,
+        "e": 90.66
+      },
+      {
+        "w": "biznes",
+        "s": 90.74,
+        "e": 91.06
+      },
+      {
+        "w": "modeli",
+        "s": 91.1,
+        "e": 91.42
+      },
+      {
+        "w": "bilan",
+        "s": 91.44,
+        "e": 91.62
+      },
+      {
+        "w": "bir",
+        "s": 91.68,
+        "e": 91.8
+      },
+      {
+        "w": "faylga",
+        "s": 91.86,
+        "e": 92.2
+      },
+      {
+        "w": "joylang.",
+        "s": 92.26,
+        "e": 92.58
+      }
+    ]
+  },
+  {
+    "id": "L11",
+    "scene": "istisnolar_va_xatolar",
+    "text": "Istisno tariqasida, faqat shared qatlamida texnik guruhlash tabiiydir: chunki shared biznesga ega emas, unda umumiy tugmalar yoki sana kutubxonalari turadi.",
+    "show": "Istisno tariqasida, faqat shared qatlamida texnik guruhlash tabiiydir: chunki shared biznesga ega emas, unda umumiy tugmalar yoki sana kutubxonalari turadi.",
+    "say": "Istisno tariqasida, faqat sherd qatlamida texnik guruhlash tabiiydir: chunki sherd biznesga ega emas, unda umumiy tugmalar yoki sana kutubxonalari turadi.",
+    "a0": 93.42,
+    "a1": 102.55,
+    "words": [
+      {
+        "w": "Istisno",
+        "s": 93.42,
+        "e": 93.78
+      },
+      {
+        "w": "tariqasida,",
+        "s": 93.86,
+        "e": 94.38
+      },
+      {
+        "w": "faqat",
+        "s": 94.44,
+        "e": 94.7
+      },
+      {
+        "w": "sherd",
+        "s": 95.0,
+        "e": 95.4
+      },
+      {
+        "w": "qatlamida",
+        "s": 95.44,
+        "e": 95.9
+      },
+      {
+        "w": "texnik",
+        "s": 95.96,
+        "e": 96.3
+      },
+      {
+        "w": "guruhlash",
+        "s": 96.34,
+        "e": 96.72
+      },
+      {
+        "w": "tabiiydir:",
+        "s": 96.74,
+        "e": 97.18
+      },
+      {
+        "w": "chunki",
+        "s": 97.46,
+        "e": 97.71
+      },
+      {
+        "w": "sherd",
+        "s": 97.81,
+        "e": 98.17
+      },
+      {
+        "w": "biznesga",
+        "s": 98.23,
+        "e": 98.67
+      },
+      {
+        "w": "ega",
+        "s": 98.75,
+        "e": 98.91
+      },
+      {
+        "w": "emas,",
+        "s": 98.99,
+        "e": 99.21
+      },
+      {
+        "w": "unda",
+        "s": 99.61,
+        "e": 99.79
+      },
+      {
+        "w": "umumiy",
+        "s": 99.93,
+        "e": 100.25
+      },
+      {
+        "w": "tugmalar",
+        "s": 100.33,
+        "e": 100.85
+      },
+      {
+        "w": "yoki",
+        "s": 100.87,
+        "e": 101.15
+      },
+      {
+        "w": "sana",
+        "s": 101.33,
+        "e": 101.55
+      },
+      {
+        "w": "kutubxonalari",
+        "s": 101.59,
+        "e": 102.25
+      },
+      {
+        "w": "turadi.",
+        "s": 102.27,
+        "e": 102.55
+      }
+    ]
+  },
+  {
+    "id": "L12",
+    "scene": "istisnolar_va_xatolar",
+    "text": "Lekin shared ichida ham utils.ts nomli axlat qutisi yaratmang, balki lib date yoki lib money kabi aniq yo'nalishli modullarga ajrating.",
+    "show": "Lekin shared ichida ham utils.ts nomli axlat qutisi yaratmang, balki lib date yoki lib money kabi aniq yo'nalishli modullarga ajrating.",
+    "say": "Lekin sherd ichida ham yutils nuqta te-es nomli axlat qutisi yaratmang, balki lib deyt yoki lib mani kabi aniq yo'nalishli modullarga ajrating.",
+    "a0": 103.33,
+    "a1": 112.09,
+    "words": [
+      {
+        "w": "Lekin",
+        "s": 103.33,
+        "e": 103.61
+      },
+      {
+        "w": "sherd",
+        "s": 103.71,
+        "e": 104.07
+      },
+      {
+        "w": "ichida",
+        "s": 104.09,
+        "e": 104.33
+      },
+      {
+        "w": "ham",
+        "s": 104.37,
+        "e": 104.53
+      },
+      {
+        "w": "yutils",
+        "s": 104.83,
+        "e": 105.21
+      },
+      {
+        "w": "nuqta",
+        "s": 105.23,
+        "e": 105.47
+      },
+      {
+        "w": "te-es",
+        "s": 105.51,
+        "e": 105.77
+      },
+      {
+        "w": "nomli",
+        "s": 105.83,
+        "e": 106.09
+      },
+      {
+        "w": "axlat",
+        "s": 106.21,
+        "e": 106.51
+      },
+      {
+        "w": "qutisi",
+        "s": 106.55,
+        "e": 106.79
+      },
+      {
+        "w": "yaratmang,",
+        "s": 106.85,
+        "e": 107.29
+      },
+      {
+        "w": "balki",
+        "s": 107.55,
+        "e": 107.83
+      },
+      {
+        "w": "lib",
+        "s": 108.05,
+        "e": 108.25
+      },
+      {
+        "w": "deyt",
+        "s": 108.35,
+        "e": 108.63
+      },
+      {
+        "w": "yoki",
+        "s": 108.63,
+        "e": 108.95
+      },
+      {
+        "w": "lib",
+        "s": 109.27,
+        "e": 109.45
+      },
+      {
+        "w": "mani",
+        "s": 109.55,
+        "e": 109.81
+      },
+      {
+        "w": "kabi",
+        "s": 109.89,
+        "e": 110.13
+      },
+      {
+        "w": "aniq",
+        "s": 110.29,
+        "e": 110.51
+      },
+      {
+        "w": "yo'nalishli",
+        "s": 110.57,
+        "e": 111.03
+      },
+      {
+        "w": "modullarga",
+        "s": 111.11,
+        "e": 111.65
+      },
+      {
+        "w": "ajrating.",
+        "s": 111.71,
+        "e": 112.09
+      }
+    ]
+  },
+  {
+    "id": "L13",
+    "scene": "istisnolar_va_xatolar",
+    "text": "Slice ichida ortiqcha ui components kabi ichma-ich papkalar ochish ham desegmentatsiyaning qaytishi hisoblanadi.",
+    "show": "Slice ichida ortiqcha ui components kabi ichma-ich papkalar ochish ham desegmentatsiyaning qaytishi hisoblanadi.",
+    "say": "Slays ichida ortiqcha yu-ay komponents kabi ichma-ich papkalar ochish ham desegmentatsiyaning qaytishi hisoblanadi.",
+    "a0": 112.98,
+    "a1": 119.02,
+    "words": [
+      {
+        "w": "Slays",
+        "s": 112.98,
+        "e": 113.32
+      },
+      {
+        "w": "ichida",
+        "s": 113.36,
+        "e": 113.6
+      },
+      {
+        "w": "ortiqcha",
+        "s": 113.74,
+        "e": 114.14
+      },
+      {
+        "w": "yu-ay",
+        "s": 114.44,
+        "e": 114.7
+      },
+      {
+        "w": "komponents",
+        "s": 114.74,
+        "e": 115.32
+      },
+      {
+        "w": "kabi",
+        "s": 115.36,
+        "e": 115.56
+      },
+      {
+        "w": "ichma-ich",
+        "s": 115.66,
+        "e": 116.04
+      },
+      {
+        "w": "papkalar",
+        "s": 116.08,
+        "e": 116.46
+      },
+      {
+        "w": "ochish",
+        "s": 116.54,
+        "e": 116.72
+      },
+      {
+        "w": "ham",
+        "s": 116.76,
+        "e": 116.9
+      },
+      {
+        "w": "desegmentatsiyaning",
+        "s": 117.18,
+        "e": 118.08
+      },
+      {
+        "w": "qaytishi",
+        "s": 118.12,
+        "e": 118.46
+      },
+      {
+        "w": "hisoblanadi.",
+        "s": 118.48,
+        "e": 119.02
+      }
+    ]
+  },
+  {
+    "id": "L14",
+    "scene": "steiger",
+    "text": "Steiger linteri slice ichidagi ortiqcha qatlamlarni va noto'g'ri segment nomlarini avtomatik tekshirib boradi.",
+    "show": "Steiger linteri slice ichidagi ortiqcha qatlamlarni va noto'g'ri segment nomlarini avtomatik tekshirib boradi.",
+    "say": "Stayger linteri slays ichidagi ortiqcha qatlamlarni va noto'g'ri segment nomlarini avtomatik tekshirib boradi.",
+    "a0": 119.6,
+    "a1": 126.22,
+    "words": [
+      {
+        "w": "Stayger",
+        "s": 119.6,
+        "e": 120.0
+      },
+      {
+        "w": "linteri",
+        "s": 120.1,
+        "e": 120.52
+      },
+      {
+        "w": "slays",
+        "s": 120.88,
+        "e": 121.18
+      },
+      {
+        "w": "ichidagi",
+        "s": 121.26,
+        "e": 121.62
+      },
+      {
+        "w": "ortiqcha",
+        "s": 121.76,
+        "e": 122.14
+      },
+      {
+        "w": "qatlamlarni",
+        "s": 122.2,
+        "e": 122.86
+      },
+      {
+        "w": "va",
+        "s": 123.0,
+        "e": 123.08
+      },
+      {
+        "w": "noto'g'ri",
+        "s": 123.36,
+        "e": 123.84
+      },
+      {
+        "w": "segment",
+        "s": 123.9,
+        "e": 124.3
+      },
+      {
+        "w": "nomlarini",
+        "s": 124.34,
+        "e": 124.78
+      },
+      {
+        "w": "avtomatik",
+        "s": 124.88,
+        "e": 125.42
+      },
+      {
+        "w": "tekshirib",
+        "s": 125.48,
+        "e": 125.86
+      },
+      {
+        "w": "boradi.",
+        "s": 125.9,
+        "e": 126.22
+      }
+    ]
+  },
+  {
+    "id": "L15",
+    "scene": "steiger",
+    "text": "Domen asosida tuzilgan papkalar tufayli linter to'liq yashil tasdiq beradi va arxitektura tozaligini saqlaydi.",
+    "show": "Domen asosida tuzilgan papkalar tufayli linter to'liq yashil tasdiq beradi va arxitektura tozaligini saqlaydi.",
+    "say": "Domen asosida tuzilgan papkalar tufayli linter to'liq yashil tasdiq beradi va arxitektura tozaligini saqlaydi.",
+    "a0": 126.93,
+    "a1": 134.07,
+    "words": [
+      {
+        "w": "Domen",
+        "s": 126.93,
+        "e": 127.25
+      },
+      {
+        "w": "asosida",
+        "s": 127.35,
+        "e": 127.79
+      },
+      {
+        "w": "tuzilgan",
+        "s": 127.83,
+        "e": 128.23
+      },
+      {
+        "w": "papkalar",
+        "s": 128.31,
+        "e": 128.77
+      },
+      {
+        "w": "tufayli",
+        "s": 128.81,
+        "e": 129.19
+      },
+      {
+        "w": "linter",
+        "s": 129.69,
+        "e": 130.07
+      },
+      {
+        "w": "to'liq",
+        "s": 130.25,
+        "e": 130.57
+      },
+      {
+        "w": "yashil",
+        "s": 130.67,
+        "e": 130.99
+      },
+      {
+        "w": "tasdiq",
+        "s": 131.07,
+        "e": 131.37
+      },
+      {
+        "w": "beradi",
+        "s": 131.43,
+        "e": 131.71
+      },
+      {
+        "w": "va",
+        "s": 131.77,
+        "e": 131.83
+      },
+      {
+        "w": "arxitektura",
+        "s": 132.27,
+        "e": 132.93
+      },
+      {
+        "w": "tozaligini",
+        "s": 132.99,
+        "e": 133.55
+      },
+      {
+        "w": "saqlaydi.",
+        "s": 133.59,
+        "e": 134.07
+      }
+    ]
+  },
+  {
+    "id": "L16",
+    "scene": "xulosa",
+    "text": "Xulosa qilsak: kodni texnik turiga qarab sochmang, har doim domenga qarab jamlang va aniq nomlang. Keyingi bobda ortiqcha entity'lar muammosini ko'rib chiqamiz. Rahmat!",
+    "show": "Xulosa qilsak: kodni texnik turiga qarab sochmang, har doim domenga qarab jamlang va aniq nomlang. Keyingi bobda ortiqcha entity'lar muammosini ko'rib chiqamiz. Rahmat!",
+    "say": "Xulosa qilsak: kodni texnik turiga qarab sochmang, har doim domenga qarab jamlang va aniq nomlang. Keyingi bobda ortiqcha entiti'lar muammosini ko'rib chiqamiz. Rahmat!",
+    "a0": 134.89,
+    "a1": 146.42,
+    "words": [
+      {
+        "w": "Xulosa",
+        "s": 134.89,
+        "e": 135.23
+      },
+      {
+        "w": "qilsak:",
+        "s": 135.29,
+        "e": 135.63
+      },
+      {
+        "w": "kodni",
+        "s": 136.07,
+        "e": 136.41
+      },
+      {
+        "w": "texnik",
+        "s": 136.53,
+        "e": 136.89
+      },
+      {
+        "w": "turiga",
+        "s": 136.95,
+        "e": 137.21
+      },
+      {
+        "w": "qarab",
+        "s": 137.27,
+        "e": 137.51
+      },
+      {
+        "w": "sochmang,",
+        "s": 137.57,
+        "e": 138.03
+      },
+      {
+        "w": "har",
+        "s": 138.49,
+        "e": 138.73
+      },
+      {
+        "w": "doim",
+        "s": 138.79,
+        "e": 139.03
+      },
+      {
+        "w": "domenga",
+        "s": 139.13,
+        "e": 139.57
+      },
+      {
+        "w": "qarab",
+        "s": 139.65,
+        "e": 139.89
+      },
+      {
+        "w": "jamlang",
+        "s": 139.97,
+        "e": 140.46
+      },
+      {
+        "w": "va",
+        "s": 140.52,
+        "e": 140.6
+      },
+      {
+        "w": "aniq",
+        "s": 141.04,
+        "e": 141.26
+      },
+      {
+        "w": "nomlang.",
+        "s": 141.34,
+        "e": 141.74
+      },
+      {
+        "w": "Keyingi",
+        "s": 142.34,
+        "e": 142.62
+      },
+      {
+        "w": "bobda",
+        "s": 142.66,
+        "e": 142.98
+      },
+      {
+        "w": "ortiqcha",
+        "s": 143.26,
+        "e": 143.66
+      },
+      {
+        "w": "entiti'lar",
+        "s": 143.8,
+        "e": 144.28
+      },
+      {
+        "w": "muammosini",
+        "s": 144.32,
+        "e": 144.84
+      },
+      {
+        "w": "ko'rib",
+        "s": 144.88,
+        "e": 145.08
+      },
+      {
+        "w": "chiqamiz.",
+        "s": 145.1,
+        "e": 145.5
+      },
+      {
+        "w": "Rahmat!",
+        "s": 146.06,
+        "e": 146.42
+      }
+    ]
+  }
+]
