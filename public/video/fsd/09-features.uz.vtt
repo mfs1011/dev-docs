@@ -1,0 +1,81 @@
+WEBVTT
+
+1
+00:01.420 --> 00:11.740
+Salom! Bu FSD qo'llanmasining to'qqizinchi bobi — features qatlami. Features
+— bu foydalanuvchiga real qiymat beruvchi asosiy harakatlar va amallardir.
+
+2
+00:14.530 --> 00:20.620
+Entity dastur ishlaydigan otlar bo'lsa, feature
+esa ular ustida bajariladigan aniq fe'llardir.
+
+3
+00:20.730 --> 00:27.670
+Masalan: mahsulot bu entity, uni savatga qo'shish
+yoki izoh qoldirish esa alohida feature hisoblanadi.
+
+4
+00:27.920 --> 00:32.950
+Lekin eng muhim qoida: har qanday
+kichik amal ham feature bo'lavermaydi.
+
+5
+00:36.000 --> 00:40.890
+Harakat mustaqil feature bo'lishi uchun u bir
+nechta sahifada qayta ishlatilishi shart.
+
+6
+00:41.180 --> 00:48.140
+Faqat bitta sahifaga xos yagona amalni alohida feature qilish
+o'rniga, to'g'ridan-to'g'ri o'sha sahifaning o'zida qoldirish ma'qul.
+
+7
+00:48.650 --> 00:55.400
+Yangi dasturchi pages va features ro'yxatiga qarab, loyiha
+nimalarga qodirligini bir qarashda tushunishi kerak.
+
+8
+00:58.770 --> 01:06.150
+Har bir feature slice'i odatda harakat tugmasi yoki formasi,
+api so'rovlari va validatsiya modelidan tashkil topadi.
+
+9
+01:06.420 --> 01:11.950
+Ed-tu-kart tugmasi bosilganda serverga so'rov
+yuboriladi va kesh optimistik tarzda yangilanadi.
+
+10
+01:12.480 --> 01:19.380
+Barcha bu mantiq ixcham index nuqtasi orqali bitta
+tayyor komponent sifatida tashqariga eksport qilinadi.
+
+11
+01:22.470 --> 01:28.100
+Xuddi entity'lardagi kabi, bitta feature ikkinchi
+feature'ni to'g'ridan-to'g'ri import qila olmaydi.
+
+12
+01:28.290 --> 01:35.370
+Masalan, add-to-cart va apply-promo-code faqat yuqoridagi
+widget yoki sahifa qatlamida o'zaro birlashtiriladi.
+
+13
+01:38.700 --> 01:45.750
+Steiger linteri feature slice'larining to'g'ri shakllanishini
+va taqiqlangan o'zaro importlarni doimiy tekshirib boradi.
+
+14
+01:46.200 --> 01:52.160
+Har bir harakat mustaqil qolganda tizimni kengaytirish
+va yangi sahifalarga ko'chirish osonlashadi.
+
+15
+01:55.430 --> 02:02.600
+Xulosa qilsak: features — qiymat beruvchi takrorlanuvchi
+harakatlar, mustaqil slice'lar va aniq fe'llar qatlamidir.
+
+16
+02:02.810 --> 02:08.190
+Keyingi bobda yirik bloklarni birlashtiruvchi
+widgets qatlami bilan tanishamiz. Rahmat!
