@@ -1,0 +1,1498 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Salom! Bu FSD qo'llanmasining o'n oltinchi bobi — Yuqori qatlamda kompozitsiya. Bugun bir qatlamdagi slice'larni o'zaro bog'lamasdan, toza kompozitsiya orqali birga ishlatish san'atini o'rganamiz.",
+    "show": "Salom! Bu FSD qo'llanmasining o'n oltinchi bobi — Yuqori qatlamda kompozitsiya. Bugun bir qatlamdagi slice'larni o'zaro bog'lamasdan, toza kompozitsiya orqali birga ishlatish san'atini o'rganamiz.",
+    "say": "Salom! Bu Ef-es-di qo'llanmasining o'n oltinchi bobi — Yuqori qatlamda kompozitsiya. Bugun bir qatlamdagi slays'larni o'zaro bog'lamasdan, toza kompozitsiya orqali birga ishlatish san'atini o'rganamiz.",
+    "a0": 0.26,
+    "a1": 13.57,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.26,
+        "e": 0.62
+      },
+      {
+        "w": "Bu",
+        "s": 1.18,
+        "e": 1.26
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 1.54,
+        "e": 2.02
+      },
+      {
+        "w": "qo'llanmasining",
+        "s": 2.12,
+        "e": 2.82
+      },
+      {
+        "w": "o'n",
+        "s": 2.92,
+        "e": 3.02
+      },
+      {
+        "w": "oltinchi",
+        "s": 3.08,
+        "e": 3.48
+      },
+      {
+        "w": "bobi",
+        "s": 3.54,
+        "e": 3.8
+      },
+      {
+        "w": "—",
+        "s": 3.8,
+        "e": 3.8
+      },
+      {
+        "w": "Yuqori",
+        "s": 4.28,
+        "e": 4.66
+      },
+      {
+        "w": "qatlamda",
+        "s": 4.72,
+        "e": 5.2
+      },
+      {
+        "w": "kompozitsiya.",
+        "s": 5.3,
+        "e": 6.02
+      },
+      {
+        "w": "Bugun",
+        "s": 6.68,
+        "e": 7.0
+      },
+      {
+        "w": "bir",
+        "s": 7.12,
+        "e": 7.24
+      },
+      {
+        "w": "qatlamdagi",
+        "s": 7.3,
+        "e": 7.91
+      },
+      {
+        "w": "slays'larni",
+        "s": 7.97,
+        "e": 8.59
+      },
+      {
+        "w": "o'zaro",
+        "s": 8.75,
+        "e": 9.05
+      },
+      {
+        "w": "bog'lamasdan,",
+        "s": 9.13,
+        "e": 9.93
+      },
+      {
+        "w": "toza",
+        "s": 10.37,
+        "e": 10.65
+      },
+      {
+        "w": "kompozitsiya",
+        "s": 10.73,
+        "e": 11.33
+      },
+      {
+        "w": "orqali",
+        "s": 11.41,
+        "e": 11.77
+      },
+      {
+        "w": "birga",
+        "s": 11.89,
+        "e": 12.11
+      },
+      {
+        "w": "ishlatish",
+        "s": 12.17,
+        "e": 12.59
+      },
+      {
+        "w": "san'atini",
+        "s": 12.61,
+        "e": 13.05
+      },
+      {
+        "w": "o'rganamiz.",
+        "s": 13.09,
+        "e": 13.57
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "intro",
+    "text": "FSD ning asosiy qoidasi: agar ikki slice birga ishlashi kerak bo'lsa, ularni gorizontal ulamaymiz, balki widgets yoki pages qatlamida yonma-yon jamlaymiz.",
+    "show": "FSD ning asosiy qoidasi: agar ikki slice birga ishlashi kerak bo'lsa, ularni gorizontal ulamaymiz, balki widgets yoki pages qatlamida yonma-yon jamlaymiz.",
+    "say": "Ef-es-di ning asosiy qoidasi: agar ikki slays birga ishlashi kerak bo'lsa, ularni gorizontal ulamaymiz, balki vijets yoki peyjiz qatlamida yonma-yon jamlaymiz.",
+    "a0": 13.99,
+    "a1": 25.3,
+    "words": [
+      {
+        "w": "Ef-es-di",
+        "s": 13.99,
+        "e": 14.43
+      },
+      {
+        "w": "ning",
+        "s": 14.49,
+        "e": 14.65
+      },
+      {
+        "w": "asosiy",
+        "s": 14.77,
+        "e": 15.21
+      },
+      {
+        "w": "qoidasi:",
+        "s": 15.31,
+        "e": 15.79
+      },
+      {
+        "w": "agar",
+        "s": 16.41,
+        "e": 16.69
+      },
+      {
+        "w": "ikki",
+        "s": 16.81,
+        "e": 17.01
+      },
+      {
+        "w": "slays",
+        "s": 17.07,
+        "e": 17.37
+      },
+      {
+        "w": "birga",
+        "s": 17.45,
+        "e": 17.69
+      },
+      {
+        "w": "ishlashi",
+        "s": 17.75,
+        "e": 18.09
+      },
+      {
+        "w": "kerak",
+        "s": 18.15,
+        "e": 18.43
+      },
+      {
+        "w": "bo'lsa,",
+        "s": 18.49,
+        "e": 18.87
+      },
+      {
+        "w": "ularni",
+        "s": 19.37,
+        "e": 19.73
+      },
+      {
+        "w": "gorizontal",
+        "s": 19.81,
+        "e": 20.45
+      },
+      {
+        "w": "ulamaymiz,",
+        "s": 20.57,
+        "e": 21.13
+      },
+      {
+        "w": "balki",
+        "s": 21.43,
+        "e": 21.75
+      },
+      {
+        "w": "vijets",
+        "s": 21.85,
+        "e": 22.33
+      },
+      {
+        "w": "yoki",
+        "s": 22.33,
+        "e": 22.68
+      },
+      {
+        "w": "peyjiz",
+        "s": 22.84,
+        "e": 23.18
+      },
+      {
+        "w": "qatlamida",
+        "s": 23.24,
+        "e": 23.76
+      },
+      {
+        "w": "yonma-yon",
+        "s": 24.16,
+        "e": 24.7
+      },
+      {
+        "w": "jamlaymiz.",
+        "s": 24.76,
+        "e": 25.3
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "ioc_tushunchasi",
+    "text": "Ushbu yondashuv Inversion of Control, ya'ni boshqaruvni teskari qilish deb ataladi. Slice o'z ichida nima ko'rsatilishini bilmaydi, faqat bo'sh joy qoldiradi.",
+    "show": "Ushbu yondashuv Inversion of Control, ya'ni boshqaruvni teskari qilish deb ataladi. Slice o'z ichida nima ko'rsatilishini bilmaydi, faqat bo'sh joy qoldiradi.",
+    "say": "Ushbu yondashuv Invershn of Kontrol, ya'ni boshqaruvni teskari qilish deb ataladi. Slays o'z ichida nima ko'rsatilishini bilmaydi, faqat bo'sh joy qoldiradi.",
+    "a0": 26.04,
+    "a1": 36.14,
+    "words": [
+      {
+        "w": "Ushbu",
+        "s": 26.04,
+        "e": 26.28
+      },
+      {
+        "w": "yondashuv",
+        "s": 26.3,
+        "e": 26.82
+      },
+      {
+        "w": "Invershn",
+        "s": 27.24,
+        "e": 27.74
+      },
+      {
+        "w": "of",
+        "s": 27.8,
+        "e": 27.88
+      },
+      {
+        "w": "Kontrol,",
+        "s": 27.94,
+        "e": 28.38
+      },
+      {
+        "w": "ya'ni",
+        "s": 28.78,
+        "e": 29.04
+      },
+      {
+        "w": "boshqaruvni",
+        "s": 29.16,
+        "e": 29.76
+      },
+      {
+        "w": "teskari",
+        "s": 29.84,
+        "e": 30.3
+      },
+      {
+        "w": "qilish",
+        "s": 30.38,
+        "e": 30.68
+      },
+      {
+        "w": "deb",
+        "s": 30.7,
+        "e": 30.84
+      },
+      {
+        "w": "ataladi.",
+        "s": 30.92,
+        "e": 31.32
+      },
+      {
+        "w": "Slays",
+        "s": 32.06,
+        "e": 32.42
+      },
+      {
+        "w": "o'z",
+        "s": 32.52,
+        "e": 32.62
+      },
+      {
+        "w": "ichida",
+        "s": 32.66,
+        "e": 32.92
+      },
+      {
+        "w": "nima",
+        "s": 33.0,
+        "e": 33.18
+      },
+      {
+        "w": "ko'rsatilishini",
+        "s": 33.24,
+        "e": 33.94
+      },
+      {
+        "w": "bilmaydi,",
+        "s": 34.0,
+        "e": 34.44
+      },
+      {
+        "w": "faqat",
+        "s": 34.78,
+        "e": 35.1
+      },
+      {
+        "w": "bo'sh",
+        "s": 35.2,
+        "e": 35.4
+      },
+      {
+        "w": "joy",
+        "s": 35.46,
+        "e": 35.62
+      },
+      {
+        "w": "qoldiradi.",
+        "s": 35.68,
+        "e": 36.14
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "ioc_tushunchasi",
+    "text": "Masalan, izohlar ro'yxati foydalanuvchi avatarini to'g'ridan chaqirmaydi, balki yuqori qatlam beradigan joy orqali qabul qiladi.",
+    "show": "Masalan, izohlar ro'yxati foydalanuvchi avatarini to'g'ridan chaqirmaydi, balki yuqori qatlam beradigan joy orqali qabul qiladi.",
+    "say": "Masalan, izohlar ro'yxati foydalanuvchi avatarini to'g'ridan chaqirmaydi, balki yuqori qatlam beradigan joy orqali qabul qiladi.",
+    "a0": 36.62,
+    "a1": 44.37,
+    "words": [
+      {
+        "w": "Masalan,",
+        "s": 36.62,
+        "e": 37.1
+      },
+      {
+        "w": "izohlar",
+        "s": 37.32,
+        "e": 37.79
+      },
+      {
+        "w": "ro'yxati",
+        "s": 37.85,
+        "e": 38.29
+      },
+      {
+        "w": "foydalanuvchi",
+        "s": 38.41,
+        "e": 39.11
+      },
+      {
+        "w": "avatarini",
+        "s": 39.21,
+        "e": 39.79
+      },
+      {
+        "w": "to'g'ridan",
+        "s": 39.85,
+        "e": 40.27
+      },
+      {
+        "w": "chaqirmaydi,",
+        "s": 40.31,
+        "e": 40.89
+      },
+      {
+        "w": "balki",
+        "s": 41.33,
+        "e": 41.63
+      },
+      {
+        "w": "yuqori",
+        "s": 41.73,
+        "e": 42.13
+      },
+      {
+        "w": "qatlam",
+        "s": 42.19,
+        "e": 42.53
+      },
+      {
+        "w": "beradigan",
+        "s": 42.55,
+        "e": 43.03
+      },
+      {
+        "w": "joy",
+        "s": 43.11,
+        "e": 43.31
+      },
+      {
+        "w": "orqali",
+        "s": 43.37,
+        "e": 43.69
+      },
+      {
+        "w": "qabul",
+        "s": 43.77,
+        "e": 44.03
+      },
+      {
+        "w": "qiladi.",
+        "s": 44.09,
+        "e": 44.37
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "slotlar_va_render_props",
+    "text": "React muhitida bu render props yoki children orqali, Vue da slotlar, Angular da esa content projection yordamida amalga oshiriladi.",
+    "show": "React muhitida bu render props yoki children orqali, Vue da slotlar, Angular da esa content projection yordamida amalga oshiriladi.",
+    "say": "React muhitida bu render props yoki children orqali, Vue da slotlar, Angular da esa kontent proyeksiyasi yordamida amalga oshiriladi.",
+    "a0": 44.95,
+    "a1": 53.08,
+    "words": [
+      {
+        "w": "React",
+        "s": 44.95,
+        "e": 45.25
+      },
+      {
+        "w": "muhitida",
+        "s": 45.31,
+        "e": 45.73
+      },
+      {
+        "w": "bu",
+        "s": 45.83,
+        "e": 45.91
+      },
+      {
+        "w": "render",
+        "s": 46.17,
+        "e": 46.49
+      },
+      {
+        "w": "props",
+        "s": 46.55,
+        "e": 46.89
+      },
+      {
+        "w": "yoki",
+        "s": 46.89,
+        "e": 47.21
+      },
+      {
+        "w": "children",
+        "s": 47.31,
+        "e": 47.71
+      },
+      {
+        "w": "orqali,",
+        "s": 47.75,
+        "e": 48.11
+      },
+      {
+        "w": "Vue",
+        "s": 48.55,
+        "e": 48.71
+      },
+      {
+        "w": "da",
+        "s": 48.79,
+        "e": 48.89
+      },
+      {
+        "w": "slotlar,",
+        "s": 48.97,
+        "e": 49.51
+      },
+      {
+        "w": "Angular",
+        "s": 49.83,
+        "e": 50.25
+      },
+      {
+        "w": "da",
+        "s": 50.29,
+        "e": 50.35
+      },
+      {
+        "w": "esa",
+        "s": 50.41,
+        "e": 50.57
+      },
+      {
+        "w": "kontent",
+        "s": 50.69,
+        "e": 51.09
+      },
+      {
+        "w": "proyeksiyasi",
+        "s": 51.13,
+        "e": 51.67
+      },
+      {
+        "w": "yordamida",
+        "s": 51.67,
+        "e": 52.17
+      },
+      {
+        "w": "amalga",
+        "s": 52.23,
+        "e": 52.56
+      },
+      {
+        "w": "oshiriladi.",
+        "s": 52.6,
+        "e": 53.08
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "slotlar_va_render_props",
+    "text": "Bitta mahsulot kartasi ProductCard actions nomli bo'sh joy qoldiradi, sahifa esa unga AddToCart tugmasini uzatadi.",
+    "show": "Bitta mahsulot kartasi ProductCard actions nomli bo'sh joy qoldiradi, sahifa esa unga AddToCart tugmasini uzatadi.",
+    "say": "Bitta mahsulot kartasi Prodakt Kard actions nomli bo'sh joy qoldiradi, sahifa esa unga Edd tu Kart tugmasini uzatadi.",
+    "a0": 53.84,
+    "a1": 61.06,
+    "words": [
+      {
+        "w": "Bitta",
+        "s": 53.84,
+        "e": 54.08
+      },
+      {
+        "w": "mahsulot",
+        "s": 54.14,
+        "e": 54.62
+      },
+      {
+        "w": "kartasi",
+        "s": 54.66,
+        "e": 55.16
+      },
+      {
+        "w": "Prodakt",
+        "s": 55.34,
+        "e": 55.78
+      },
+      {
+        "w": "Kard",
+        "s": 55.84,
+        "e": 56.08
+      },
+      {
+        "w": "actions",
+        "s": 56.24,
+        "e": 56.58
+      },
+      {
+        "w": "nomli",
+        "s": 56.64,
+        "e": 56.92
+      },
+      {
+        "w": "bo'sh",
+        "s": 57.02,
+        "e": 57.24
+      },
+      {
+        "w": "joy",
+        "s": 57.26,
+        "e": 57.42
+      },
+      {
+        "w": "qoldiradi,",
+        "s": 57.46,
+        "e": 57.92
+      },
+      {
+        "w": "sahifa",
+        "s": 58.38,
+        "e": 58.8
+      },
+      {
+        "w": "esa",
+        "s": 58.88,
+        "e": 59.06
+      },
+      {
+        "w": "unga",
+        "s": 59.16,
+        "e": 59.38
+      },
+      {
+        "w": "Edd",
+        "s": 59.58,
+        "e": 59.76
+      },
+      {
+        "w": "tu",
+        "s": 59.76,
+        "e": 59.84
+      },
+      {
+        "w": "Kart",
+        "s": 59.9,
+        "e": 60.16
+      },
+      {
+        "w": "tugmasini",
+        "s": 60.18,
+        "e": 60.6
+      },
+      {
+        "w": "uzatadi.",
+        "s": 60.64,
+        "e": 61.06
+      }
+    ]
+  },
+  {
+    "id": "L7",
+    "scene": "slotlar_va_render_props",
+    "text": "Natijada entities qatlamidagi ProductCard hech qanday feature'ga bog'lanmaydi va butun loyiha bo'ylab erkin qayta ishlatiladi.",
+    "show": "Natijada entities qatlamidagi ProductCard hech qanday feature'ga bog'lanmaydi va butun loyiha bo'ylab erkin qayta ishlatiladi.",
+    "say": "Natijada entitiz qatlamidagi Prodakt Kard hech qanday ficher'ga bog'lanmaydi va butun loyiha bo'ylab erkin qayta ishlatiladi.",
+    "a0": 61.82,
+    "a1": 69.59,
+    "words": [
+      {
+        "w": "Natijada",
+        "s": 61.82,
+        "e": 62.42
+      },
+      {
+        "w": "entitiz",
+        "s": 62.68,
+        "e": 63.12
+      },
+      {
+        "w": "qatlamidagi",
+        "s": 63.16,
+        "e": 63.78
+      },
+      {
+        "w": "Prodakt",
+        "s": 63.86,
+        "e": 64.28
+      },
+      {
+        "w": "Kard",
+        "s": 64.36,
+        "e": 64.6
+      },
+      {
+        "w": "hech",
+        "s": 64.88,
+        "e": 65.08
+      },
+      {
+        "w": "qanday",
+        "s": 65.12,
+        "e": 65.44
+      },
+      {
+        "w": "ficher'ga",
+        "s": 65.52,
+        "e": 65.94
+      },
+      {
+        "w": "bog'lanmaydi",
+        "s": 66.0,
+        "e": 66.6
+      },
+      {
+        "w": "va",
+        "s": 66.98,
+        "e": 67.06
+      },
+      {
+        "w": "butun",
+        "s": 67.18,
+        "e": 67.53
+      },
+      {
+        "w": "loyiha",
+        "s": 67.59,
+        "e": 67.87
+      },
+      {
+        "w": "bo'ylab",
+        "s": 67.95,
+        "e": 68.25
+      },
+      {
+        "w": "erkin",
+        "s": 68.39,
+        "e": 68.69
+      },
+      {
+        "w": "qayta",
+        "s": 68.77,
+        "e": 69.03
+      },
+      {
+        "w": "ishlatiladi.",
+        "s": 69.07,
+        "e": 69.59
+      }
+    ]
+  },
+  {
+    "id": "L8",
+    "scene": "hodisalar_va_callback",
+    "text": "Ikkinchi keng tarqalgan holat — bir slice'dagi amal tugagach, ikkinchisi yangilanishi kerak bo'lgan holatdir.",
+    "show": "Ikkinchi keng tarqalgan holat — bir slice'dagi amal tugagach, ikkinchisi yangilanishi kerak bo'lgan holatdir.",
+    "say": "Ikkinchi keng tarqalgan holat — bir slays'dagi amal tugagach, ikkinchisi yangilanishi kerak bo'lgan holatdir.",
+    "a0": 70.45,
+    "a1": 76.63,
+    "words": [
+      {
+        "w": "Ikkinchi",
+        "s": 70.45,
+        "e": 70.85
+      },
+      {
+        "w": "keng",
+        "s": 70.91,
+        "e": 71.11
+      },
+      {
+        "w": "tarqalgan",
+        "s": 71.13,
+        "e": 71.65
+      },
+      {
+        "w": "holat",
+        "s": 71.71,
+        "e": 72.13
+      },
+      {
+        "w": "—",
+        "s": 72.13,
+        "e": 72.13
+      },
+      {
+        "w": "bir",
+        "s": 72.37,
+        "e": 72.51
+      },
+      {
+        "w": "slays'dagi",
+        "s": 72.55,
+        "e": 73.11
+      },
+      {
+        "w": "amal",
+        "s": 73.17,
+        "e": 73.39
+      },
+      {
+        "w": "tugagach,",
+        "s": 73.45,
+        "e": 73.91
+      },
+      {
+        "w": "ikkinchisi",
+        "s": 74.25,
+        "e": 74.73
+      },
+      {
+        "w": "yangilanishi",
+        "s": 74.79,
+        "e": 75.39
+      },
+      {
+        "w": "kerak",
+        "s": 75.45,
+        "e": 75.69
+      },
+      {
+        "w": "bo'lgan",
+        "s": 75.75,
+        "e": 76.07
+      },
+      {
+        "w": "holatdir.",
+        "s": 76.13,
+        "e": 76.63
+      }
+    ]
+  },
+  {
+    "id": "L9",
+    "scene": "hodisalar_va_callback",
+    "text": "Masalan, promokod kiritilganda savatdagi jami summa qayta hisoblanishi lozim. Bu yerda ham feature'lar bir-birini bilmaydi.",
+    "show": "Masalan, promokod kiritilganda savatdagi jami summa qayta hisoblanishi lozim. Bu yerda ham feature'lar bir-birini bilmaydi.",
+    "say": "Masalan, promokod kiritilganda savatdagi jami summa qayta hisoblanishi lozim. Bu yerda ham ficher'lar bir-birini bilmaydi.",
+    "a0": 77.27,
+    "a1": 84.44,
+    "words": [
+      {
+        "w": "Masalan,",
+        "s": 77.27,
+        "e": 77.71
+      },
+      {
+        "w": "promokod",
+        "s": 77.77,
+        "e": 78.27
+      },
+      {
+        "w": "kiritilganda",
+        "s": 78.33,
+        "e": 79.01
+      },
+      {
+        "w": "savatdagi",
+        "s": 79.13,
+        "e": 79.69
+      },
+      {
+        "w": "jami",
+        "s": 79.77,
+        "e": 80.07
+      },
+      {
+        "w": "summa",
+        "s": 80.15,
+        "e": 80.41
+      },
+      {
+        "w": "qayta",
+        "s": 80.49,
+        "e": 80.77
+      },
+      {
+        "w": "hisoblanishi",
+        "s": 80.81,
+        "e": 81.39
+      },
+      {
+        "w": "lozim.",
+        "s": 81.43,
+        "e": 81.73
+      },
+      {
+        "w": "Bu",
+        "s": 82.31,
+        "e": 82.39
+      },
+      {
+        "w": "yerda",
+        "s": 82.47,
+        "e": 82.74
+      },
+      {
+        "w": "ham",
+        "s": 82.78,
+        "e": 82.94
+      },
+      {
+        "w": "ficher'lar",
+        "s": 83.0,
+        "e": 83.5
+      },
+      {
+        "w": "bir-birini",
+        "s": 83.58,
+        "e": 83.98
+      },
+      {
+        "w": "bilmaydi.",
+        "s": 84.02,
+        "e": 84.44
+      }
+    ]
+  },
+  {
+    "id": "L10",
+    "scene": "hodisalar_va_callback",
+    "text": "Promokod komponenti onApplied hodisasini chiqaradi, sahifa esa bu hodisani ushlab, savat summasini qayta yuklaydi.",
+    "show": "Promokod komponenti onApplied hodisasini chiqaradi, sahifa esa bu hodisani ushlab, savat summasini qayta yuklaydi.",
+    "say": "Promokod komponenti on eplayd hodisasini chiqaradi, sahifa esa bu hodisani ushlab, savat summasini qayta yuklaydi.",
+    "a0": 84.98,
+    "a1": 92.46,
+    "words": [
+      {
+        "w": "Promokod",
+        "s": 84.98,
+        "e": 85.46
+      },
+      {
+        "w": "komponenti",
+        "s": 85.52,
+        "e": 86.16
+      },
+      {
+        "w": "on",
+        "s": 86.38,
+        "e": 86.5
+      },
+      {
+        "w": "eplayd",
+        "s": 86.6,
+        "e": 87.02
+      },
+      {
+        "w": "hodisasini",
+        "s": 87.06,
+        "e": 87.64
+      },
+      {
+        "w": "chiqaradi,",
+        "s": 87.68,
+        "e": 88.1
+      },
+      {
+        "w": "sahifa",
+        "s": 88.56,
+        "e": 89.0
+      },
+      {
+        "w": "esa",
+        "s": 89.08,
+        "e": 89.26
+      },
+      {
+        "w": "bu",
+        "s": 89.36,
+        "e": 89.44
+      },
+      {
+        "w": "hodisani",
+        "s": 89.54,
+        "e": 89.98
+      },
+      {
+        "w": "ushlab,",
+        "s": 90.1,
+        "e": 90.46
+      },
+      {
+        "w": "savat",
+        "s": 90.78,
+        "e": 91.1
+      },
+      {
+        "w": "summasini",
+        "s": 91.14,
+        "e": 91.64
+      },
+      {
+        "w": "qayta",
+        "s": 91.72,
+        "e": 91.98
+      },
+      {
+        "w": "yuklaydi.",
+        "s": 92.04,
+        "e": 92.46
+      }
+    ]
+  },
+  {
+    "id": "L11",
+    "scene": "di_va_kontekst",
+    "text": "Agar kompozitsiya juda chuqur komponentlar daraxtiga tushib ketsa, prop drilling o'rniga Dependency Injection yoki kontekst ishlatiladi.",
+    "show": "Agar kompozitsiya juda chuqur komponentlar daraxtiga tushib ketsa, prop drilling o'rniga Dependency Injection yoki kontekst ishlatiladi.",
+    "say": "Agar kompozitsiya juda chuqur komponentlar daraxtiga tushib ketsa, prop drilling o'rniga Dependensi Injekshn yoki kontekst ishlatiladi.",
+    "a0": 93.24,
+    "a1": 100.97,
+    "words": [
+      {
+        "w": "Agar",
+        "s": 93.24,
+        "e": 93.46
+      },
+      {
+        "w": "kompozitsiya",
+        "s": 93.52,
+        "e": 94.18
+      },
+      {
+        "w": "juda",
+        "s": 94.26,
+        "e": 94.46
+      },
+      {
+        "w": "chuqur",
+        "s": 94.52,
+        "e": 94.78
+      },
+      {
+        "w": "komponentlar",
+        "s": 94.84,
+        "e": 95.5
+      },
+      {
+        "w": "daraxtiga",
+        "s": 95.54,
+        "e": 95.98
+      },
+      {
+        "w": "tushib",
+        "s": 96.02,
+        "e": 96.22
+      },
+      {
+        "w": "ketsa,",
+        "s": 96.24,
+        "e": 96.56
+      },
+      {
+        "w": "prop",
+        "s": 96.96,
+        "e": 97.18
+      },
+      {
+        "w": "drilling",
+        "s": 97.24,
+        "e": 97.61
+      },
+      {
+        "w": "o'rniga",
+        "s": 97.67,
+        "e": 98.01
+      },
+      {
+        "w": "Dependensi",
+        "s": 98.21,
+        "e": 98.83
+      },
+      {
+        "w": "Injekshn",
+        "s": 98.93,
+        "e": 99.47
+      },
+      {
+        "w": "yoki",
+        "s": 99.47,
+        "e": 99.81
+      },
+      {
+        "w": "kontekst",
+        "s": 99.91,
+        "e": 100.39
+      },
+      {
+        "w": "ishlatiladi.",
+        "s": 100.43,
+        "e": 100.97
+      }
+    ]
+  },
+  {
+    "id": "L12",
+    "scene": "di_va_kontekst",
+    "text": "Lekin ehtiyot bo'ling: global event bus ochish yoki feature'larga yashirin pub-sub signallarini kiritish qat'iyan tavsiya etilmaydi.",
+    "show": "Lekin ehtiyot bo'ling: global event bus ochish yoki feature'larga yashirin pub-sub signallarini kiritish qat'iyan tavsiya etilmaydi.",
+    "say": "Lekin ehtiyot bo'ling: global event bas ochish yoki ficher'larga yashirin pab-sab signallarini kiritish qat'iyan tavsiya etilmaydi.",
+    "a0": 101.77,
+    "a1": 109.47,
+    "words": [
+      {
+        "w": "Lekin",
+        "s": 101.77,
+        "e": 102.07
+      },
+      {
+        "w": "ehtiyot",
+        "s": 102.19,
+        "e": 102.55
+      },
+      {
+        "w": "bo'ling:",
+        "s": 102.61,
+        "e": 102.91
+      },
+      {
+        "w": "global",
+        "s": 103.27,
+        "e": 103.67
+      },
+      {
+        "w": "event",
+        "s": 103.77,
+        "e": 104.07
+      },
+      {
+        "w": "bas",
+        "s": 104.13,
+        "e": 104.33
+      },
+      {
+        "w": "ochish",
+        "s": 104.45,
+        "e": 104.79
+      },
+      {
+        "w": "yoki",
+        "s": 104.87,
+        "e": 105.09
+      },
+      {
+        "w": "ficher'larga",
+        "s": 105.19,
+        "e": 105.81
+      },
+      {
+        "w": "yashirin",
+        "s": 105.89,
+        "e": 106.27
+      },
+      {
+        "w": "pab-sab",
+        "s": 106.37,
+        "e": 106.79
+      },
+      {
+        "w": "signallarini",
+        "s": 106.85,
+        "e": 107.45
+      },
+      {
+        "w": "kiritish",
+        "s": 107.51,
+        "e": 107.89
+      },
+      {
+        "w": "qat'iyan",
+        "s": 107.99,
+        "e": 108.53
+      },
+      {
+        "w": "tavsiya",
+        "s": 108.57,
+        "e": 108.95
+      },
+      {
+        "w": "etilmaydi.",
+        "s": 108.99,
+        "e": 109.47
+      }
+    ]
+  },
+  {
+    "id": "L13",
+    "scene": "di_va_kontekst",
+    "text": "Yashirin bog'lanishlar loyihani tushunarsiz qiladi va xatolarni qidirishni ancha murakkablashtiradi.",
+    "show": "Yashirin bog'lanishlar loyihani tushunarsiz qiladi va xatolarni qidirishni ancha murakkablashtiradi.",
+    "say": "Yashirin bog'lanishlar loyihani tushunarsiz qiladi va xatolarni qidirishni ancha murakkablashtiradi.",
+    "a0": 110.07,
+    "a1": 115.48,
+    "words": [
+      {
+        "w": "Yashirin",
+        "s": 110.07,
+        "e": 110.45
+      },
+      {
+        "w": "bog'lanishlar",
+        "s": 110.51,
+        "e": 111.21
+      },
+      {
+        "w": "loyihani",
+        "s": 111.27,
+        "e": 111.71
+      },
+      {
+        "w": "tushunarsiz",
+        "s": 111.75,
+        "e": 112.31
+      },
+      {
+        "w": "qiladi",
+        "s": 112.37,
+        "e": 112.68
+      },
+      {
+        "w": "va",
+        "s": 112.88,
+        "e": 112.94
+      },
+      {
+        "w": "xatolarni",
+        "s": 113.04,
+        "e": 113.6
+      },
+      {
+        "w": "qidirishni",
+        "s": 113.66,
+        "e": 114.08
+      },
+      {
+        "w": "ancha",
+        "s": 114.24,
+        "e": 114.52
+      },
+      {
+        "w": "murakkablashtiradi.",
+        "s": 114.58,
+        "e": 115.48
+      }
+    ]
+  },
+  {
+    "id": "L14",
+    "scene": "steiger",
+    "text": "Steiger linteri slice'lar orasidagi noqonuniy ulanishlarni va to'g'ridan-to'g'ri importlarni doimiy nazorat qiladi.",
+    "show": "Steiger linteri slice'lar orasidagi noqonuniy ulanishlarni va to'g'ridan-to'g'ri importlarni doimiy nazorat qiladi.",
+    "say": "Stayger linteri slayslar orasidagi noqonuniy ulanishlarni va to'g'ridan-to'g'ri importlarni doimiy nazorat qiladi.",
+    "a0": 116.08,
+    "a1": 122.64,
+    "words": [
+      {
+        "w": "Stayger",
+        "s": 116.08,
+        "e": 116.54
+      },
+      {
+        "w": "linteri",
+        "s": 116.6,
+        "e": 117.02
+      },
+      {
+        "w": "slayslar",
+        "s": 117.08,
+        "e": 117.58
+      },
+      {
+        "w": "orasidagi",
+        "s": 117.66,
+        "e": 118.18
+      },
+      {
+        "w": "noqonuniy",
+        "s": 118.24,
+        "e": 118.9
+      },
+      {
+        "w": "ulanishlarni",
+        "s": 118.98,
+        "e": 119.68
+      },
+      {
+        "w": "va",
+        "s": 119.8,
+        "e": 119.86
+      },
+      {
+        "w": "to'g'ridan-to'g'ri",
+        "s": 120.0,
+        "e": 120.66
+      },
+      {
+        "w": "importlarni",
+        "s": 120.74,
+        "e": 121.32
+      },
+      {
+        "w": "doimiy",
+        "s": 121.42,
+        "e": 121.84
+      },
+      {
+        "w": "nazorat",
+        "s": 121.92,
+        "e": 122.32
+      },
+      {
+        "w": "qiladi.",
+        "s": 122.36,
+        "e": 122.64
+      }
+    ]
+  },
+  {
+    "id": "L15",
+    "scene": "steiger",
+    "text": "Kompozitsiya to'g'ri qo'llanilganda, linter barcha qatlamlarni toza va xatosiz holatda tasdiqlaydi.",
+    "show": "Kompozitsiya to'g'ri qo'llanilganda, linter barcha qatlamlarni toza va xatosiz holatda tasdiqlaydi.",
+    "say": "Kompozitsiya to'g'ri qo'llanilganda, linter barcha qatlamlarni toza va xatosiz holatda tasdiqlaydi.",
+    "a0": 123.36,
+    "a1": 129.01,
+    "words": [
+      {
+        "w": "Kompozitsiya",
+        "s": 123.36,
+        "e": 124.0
+      },
+      {
+        "w": "to'g'ri",
+        "s": 124.04,
+        "e": 124.32
+      },
+      {
+        "w": "qo'llanilganda,",
+        "s": 124.36,
+        "e": 125.12
+      },
+      {
+        "w": "linter",
+        "s": 125.34,
+        "e": 125.66
+      },
+      {
+        "w": "barcha",
+        "s": 125.75,
+        "e": 126.05
+      },
+      {
+        "w": "qatlamlarni",
+        "s": 126.09,
+        "e": 126.71
+      },
+      {
+        "w": "toza",
+        "s": 126.79,
+        "e": 127.15
+      },
+      {
+        "w": "va",
+        "s": 127.27,
+        "e": 127.35
+      },
+      {
+        "w": "xatosiz",
+        "s": 127.45,
+        "e": 127.93
+      },
+      {
+        "w": "holatda",
+        "s": 127.97,
+        "e": 128.37
+      },
+      {
+        "w": "tasdiqlaydi.",
+        "s": 128.43,
+        "e": 129.01
+      }
+    ]
+  },
+  {
+    "id": "L16",
+    "scene": "xulosa",
+    "text": "Xulosa qilsak: slice'larni pastda bir-biriga ulamang, yuqorida kompozitsiya qiling va doimo toza slotlardan foydalaning. Keyingi bobda desegmentatsiya va nomlashni o'rganamiz. Rahmat!",
+    "show": "Xulosa qilsak: slice'larni pastda bir-biriga ulamang, yuqorida kompozitsiya qiling va doimo toza slotlardan foydalaning. Keyingi bobda desegmentatsiya va nomlashni o'rganamiz. Rahmat!",
+    "say": "Xulosa qilsak: slays'larni pastda bir-biriga ulamang, yuqorida kompozitsiya qiling va doimo toza slotlardan foydalaning. Keyingi bobda desegmentatsiya va nomlashni o'rganamiz. Rahmat!",
+    "a0": 129.57,
+    "a1": 142.44,
+    "words": [
+      {
+        "w": "Xulosa",
+        "s": 129.57,
+        "e": 129.93
+      },
+      {
+        "w": "qilsak:",
+        "s": 129.97,
+        "e": 130.41
+      },
+      {
+        "w": "slays'larni",
+        "s": 130.79,
+        "e": 131.45
+      },
+      {
+        "w": "pastda",
+        "s": 131.53,
+        "e": 131.83
+      },
+      {
+        "w": "bir-biriga",
+        "s": 131.89,
+        "e": 132.35
+      },
+      {
+        "w": "ulamang,",
+        "s": 132.45,
+        "e": 132.89
+      },
+      {
+        "w": "yuqorida",
+        "s": 133.41,
+        "e": 133.89
+      },
+      {
+        "w": "kompozitsiya",
+        "s": 133.95,
+        "e": 134.61
+      },
+      {
+        "w": "qiling",
+        "s": 134.65,
+        "e": 134.93
+      },
+      {
+        "w": "va",
+        "s": 135.37,
+        "e": 135.43
+      },
+      {
+        "w": "doimo",
+        "s": 135.55,
+        "e": 135.97
+      },
+      {
+        "w": "toza",
+        "s": 136.17,
+        "e": 136.47
+      },
+      {
+        "w": "slotlardan",
+        "s": 136.53,
+        "e": 137.1
+      },
+      {
+        "w": "foydalaning.",
+        "s": 137.14,
+        "e": 137.7
+      },
+      {
+        "w": "Keyingi",
+        "s": 138.24,
+        "e": 138.6
+      },
+      {
+        "w": "bobda",
+        "s": 138.64,
+        "e": 138.94
+      },
+      {
+        "w": "desegmentatsiya",
+        "s": 139.1,
+        "e": 140.02
+      },
+      {
+        "w": "va",
+        "s": 140.1,
+        "e": 140.16
+      },
+      {
+        "w": "nomlashni",
+        "s": 140.26,
+        "e": 140.76
+      },
+      {
+        "w": "o'rganamiz.",
+        "s": 140.82,
+        "e": 141.32
+      },
+      {
+        "w": "Rahmat!",
+        "s": 142.08,
+        "e": 142.44
+      }
+    ]
+  }
+]
