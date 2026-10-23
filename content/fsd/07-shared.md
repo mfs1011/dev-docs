@@ -4,6 +4,14 @@
 
 ## Qisqacha
 
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/fsd/07-shared.jpg" src="/video/fsd/07-shared.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/fsd/07-shared.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/fsd/07-shared.uz.vtt">
+</video>
+<figcaption>Bob videoda: shared qatlami — poydevor, slice'larsiz to'g'ridan-to'g'ri segmentlar (api, ui, lib, config), erkin import qoidasi va Steiger tekshiruvi.</figcaption>
+</figure>
+
 `shared` — ilovaning **poydevori**: tashqi dunyo bilan aloqa (backend, uchinchi tomon kutubxonalari, muhit) va loyihaning o'z kichik kutubxonalari. U eng past qatlam: hamma uni import qiladi, u esa hech kimni (o'zidan tashqari). Slice'lari yo'q — to'g'ridan-to'g'ri segmentlar, va ular bir-birini erkin import qiladi.
 
 ## Qoida

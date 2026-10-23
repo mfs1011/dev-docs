@@ -1,0 +1,1304 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Salom! Bu FSD qo'llanmasining yettinchi bobi — shared qatlami. Shared — bu butun ilovaning poydevori.",
+    "show": "Salom! Bu FSD qo'llanmasining yettinchi bobi — shared qatlami. Shared — bu butun ilovaning poydevori.",
+    "say": "Salom! Bu Ef-es-di qo'llanmasining yettinchi bobi — sherd qatlami. Sherd — bu butun ilovaning poydevori.",
+    "a0": 0.26,
+    "a1": 7.79,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.26,
+        "e": 0.62
+      },
+      {
+        "w": "Bu",
+        "s": 1.08,
+        "e": 1.14
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 1.26,
+        "e": 1.66
+      },
+      {
+        "w": "qo'llanmasining",
+        "s": 1.76,
+        "e": 2.52
+      },
+      {
+        "w": "yettinchi",
+        "s": 2.58,
+        "e": 3.04
+      },
+      {
+        "w": "bobi",
+        "s": 3.1,
+        "e": 3.38
+      },
+      {
+        "w": "—",
+        "s": 3.38,
+        "e": 3.38
+      },
+      {
+        "w": "sherd",
+        "s": 3.84,
+        "e": 4.14
+      },
+      {
+        "w": "qatlami.",
+        "s": 4.2,
+        "e": 4.64
+      },
+      {
+        "w": "Sherd",
+        "s": 5.46,
+        "e": 5.8
+      },
+      {
+        "w": "—",
+        "s": 5.8,
+        "e": 5.8
+      },
+      {
+        "w": "bu",
+        "s": 5.98,
+        "e": 6.08
+      },
+      {
+        "w": "butun",
+        "s": 6.2,
+        "e": 6.5
+      },
+      {
+        "w": "ilovaning",
+        "s": 6.6,
+        "e": 7.14
+      },
+      {
+        "w": "poydevori.",
+        "s": 7.18,
+        "e": 7.79
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "poydevor",
+    "text": "Shared eng pastki qatlam: hamma uni import qilishi mumkin, lekin shared o'zidan yuqoridagi hech qaysi qatlamni ko'rmaydi.",
+    "show": "Shared eng pastki qatlam: hamma uni import qilishi mumkin, lekin shared o'zidan yuqoridagi hech qaysi qatlamni ko'rmaydi.",
+    "say": "Sherd eng pastki qatlam: hamma uni import qilishi mumkin, lekin sherd o'zidan yuqoridagi hech qaysi qatlamni ko'rmaydi.",
+    "a0": 8.81,
+    "a1": 15.91,
+    "words": [
+      {
+        "w": "Sherd",
+        "s": 8.81,
+        "e": 9.09
+      },
+      {
+        "w": "eng",
+        "s": 9.23,
+        "e": 9.37
+      },
+      {
+        "w": "pastki",
+        "s": 9.43,
+        "e": 9.77
+      },
+      {
+        "w": "qatlam:",
+        "s": 9.83,
+        "e": 10.21
+      },
+      {
+        "w": "hamma",
+        "s": 10.71,
+        "e": 10.99
+      },
+      {
+        "w": "uni",
+        "s": 11.07,
+        "e": 11.19
+      },
+      {
+        "w": "import",
+        "s": 11.25,
+        "e": 11.51
+      },
+      {
+        "w": "qilishi",
+        "s": 11.57,
+        "e": 11.85
+      },
+      {
+        "w": "mumkin,",
+        "s": 11.87,
+        "e": 12.19
+      },
+      {
+        "w": "lekin",
+        "s": 12.61,
+        "e": 12.87
+      },
+      {
+        "w": "sherd",
+        "s": 12.97,
+        "e": 13.23
+      },
+      {
+        "w": "o'zidan",
+        "s": 13.35,
+        "e": 13.67
+      },
+      {
+        "w": "yuqoridagi",
+        "s": 13.73,
+        "e": 14.29
+      },
+      {
+        "w": "hech",
+        "s": 14.37,
+        "e": 14.57
+      },
+      {
+        "w": "qaysi",
+        "s": 14.63,
+        "e": 14.87
+      },
+      {
+        "w": "qatlamni",
+        "s": 14.93,
+        "e": 15.37
+      },
+      {
+        "w": "ko'rmaydi.",
+        "s": 15.43,
+        "e": 15.91
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "poydevor",
+    "text": "Ushbu qatlamda boshqalardan farqli o'laroq slice'lar bo'lmaydi — faqat to'g'ridan-to'g'ri segmentlar joylashadi.",
+    "show": "Ushbu qatlamda boshqalardan farqli o'laroq slice'lar bo'lmaydi — faqat to'g'ridan-to'g'ri segmentlar joylashadi.",
+    "say": "Ushbu qatlamda boshqalardan farqli o'laroq slayslar bo'lmaydi — faqat to'g'ridan-to'g'ri segmentlar joylashadi.",
+    "a0": 16.83,
+    "a1": 23.06,
+    "words": [
+      {
+        "w": "Ushbu",
+        "s": 16.83,
+        "e": 17.05
+      },
+      {
+        "w": "qatlamda",
+        "s": 17.11,
+        "e": 17.57
+      },
+      {
+        "w": "boshqalardan",
+        "s": 17.65,
+        "e": 18.23
+      },
+      {
+        "w": "farqli",
+        "s": 18.31,
+        "e": 18.67
+      },
+      {
+        "w": "o'laroq",
+        "s": 18.81,
+        "e": 19.15
+      },
+      {
+        "w": "slayslar",
+        "s": 19.49,
+        "e": 19.93
+      },
+      {
+        "w": "bo'lmaydi",
+        "s": 19.99,
+        "e": 20.45
+      },
+      {
+        "w": "—",
+        "s": 20.45,
+        "e": 20.45
+      },
+      {
+        "w": "faqat",
+        "s": 20.87,
+        "e": 21.15
+      },
+      {
+        "w": "to'g'ridan-to'g'ri",
+        "s": 21.21,
+        "e": 21.93
+      },
+      {
+        "w": "segmentlar",
+        "s": 21.97,
+        "e": 22.49
+      },
+      {
+        "w": "joylashadi.",
+        "s": 22.54,
+        "e": 23.06
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "poydevor",
+    "text": "Shuningdek, shared ichidagi segmentlar bir-birini erkin va o'zaro import qilish huquqiga ega.",
+    "show": "Shuningdek, shared ichidagi segmentlar bir-birini erkin va o'zaro import qilish huquqiga ega.",
+    "say": "Shuningdek, sherd ichidagi segmentlar bir-birini erkin va o'zaro import qilish huquqiga ega.",
+    "a0": 23.82,
+    "a1": 28.82,
+    "words": [
+      {
+        "w": "Shuningdek,",
+        "s": 23.82,
+        "e": 24.3
+      },
+      {
+        "w": "sherd",
+        "s": 24.44,
+        "e": 24.74
+      },
+      {
+        "w": "ichidagi",
+        "s": 24.8,
+        "e": 25.16
+      },
+      {
+        "w": "segmentlar",
+        "s": 25.22,
+        "e": 25.8
+      },
+      {
+        "w": "bir-birini",
+        "s": 25.88,
+        "e": 26.3
+      },
+      {
+        "w": "erkin",
+        "s": 26.44,
+        "e": 26.78
+      },
+      {
+        "w": "va",
+        "s": 26.88,
+        "e": 26.94
+      },
+      {
+        "w": "o'zaro",
+        "s": 27.08,
+        "e": 27.4
+      },
+      {
+        "w": "import",
+        "s": 27.52,
+        "e": 27.8
+      },
+      {
+        "w": "qilish",
+        "s": 27.86,
+        "e": 28.1
+      },
+      {
+        "w": "huquqiga",
+        "s": 28.16,
+        "e": 28.56
+      },
+      {
+        "w": "ega.",
+        "s": 28.64,
+        "e": 28.82
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "segmentlar",
+    "text": "Standart segmentlar ilovaning barcha poydevor ehtiyojlarini to'liq qamrab oladi.",
+    "show": "Standart segmentlar ilovaning barcha poydevor ehtiyojlarini to'liq qamrab oladi.",
+    "say": "Standart segmentlar ilovaning barcha poydevor ehtiyojlarini to'liq qamrab oladi.",
+    "a0": 29.44,
+    "a1": 33.9,
+    "words": [
+      {
+        "w": "Standart",
+        "s": 29.44,
+        "e": 29.9
+      },
+      {
+        "w": "segmentlar",
+        "s": 30.0,
+        "e": 30.48
+      },
+      {
+        "w": "ilovaning",
+        "s": 30.56,
+        "e": 31.08
+      },
+      {
+        "w": "barcha",
+        "s": 31.14,
+        "e": 31.44
+      },
+      {
+        "w": "poydevor",
+        "s": 31.5,
+        "e": 31.98
+      },
+      {
+        "w": "ehtiyojlarini",
+        "s": 32.06,
+        "e": 32.82
+      },
+      {
+        "w": "to'liq",
+        "s": 32.9,
+        "e": 33.18
+      },
+      {
+        "w": "qamrab",
+        "s": 33.24,
+        "e": 33.58
+      },
+      {
+        "w": "oladi.",
+        "s": 33.62,
+        "e": 33.9
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "segmentlar",
+    "text": "Api segmenti — backend bilan muloqot qiluvchi klient, umumiy tiplar va so'rov funksiyalaridir.",
+    "show": "Api segmenti — backend bilan muloqot qiluvchi klient, umumiy tiplar va so'rov funksiyalaridir.",
+    "say": "Ey-pi-ay segmenti — bekend bilan muloqot qiluvchi klient, umumiy tiplar va so'rov funksiyalaridir.",
+    "a0": 34.82,
+    "a1": 40.85,
+    "words": [
+      {
+        "w": "Ey-pi-ay",
+        "s": 34.82,
+        "e": 35.26
+      },
+      {
+        "w": "segmenti",
+        "s": 35.32,
+        "e": 35.8
+      },
+      {
+        "w": "—",
+        "s": 35.8,
+        "e": 35.8
+      },
+      {
+        "w": "bekend",
+        "s": 36.24,
+        "e": 36.56
+      },
+      {
+        "w": "bilan",
+        "s": 36.58,
+        "e": 36.8
+      },
+      {
+        "w": "muloqot",
+        "s": 36.84,
+        "e": 37.22
+      },
+      {
+        "w": "qiluvchi",
+        "s": 37.26,
+        "e": 37.63
+      },
+      {
+        "w": "klient,",
+        "s": 37.67,
+        "e": 38.09
+      },
+      {
+        "w": "umumiy",
+        "s": 38.47,
+        "e": 38.79
+      },
+      {
+        "w": "tiplar",
+        "s": 38.87,
+        "e": 39.25
+      },
+      {
+        "w": "va",
+        "s": 39.59,
+        "e": 39.65
+      },
+      {
+        "w": "so'rov",
+        "s": 39.77,
+        "e": 40.03
+      },
+      {
+        "w": "funksiyalaridir.",
+        "s": 40.11,
+        "e": 40.85
+      }
+    ]
+  },
+  {
+    "id": "L7",
+    "scene": "segmentlar",
+    "text": "Ui segmenti — dasturning umumiy UI kit'i: tugmalar, modallar va karkas layoutlar, lekin bu yerda biznes mantiqi aslo bo'lmasligi shart.",
+    "show": "Ui segmenti — dasturning umumiy UI kit'i: tugmalar, modallar va karkas layoutlar, lekin bu yerda biznes mantiqi aslo bo'lmasligi shart.",
+    "say": "Yu-ay segmenti — dasturning umumiy yu-ay kit'i: tugmalar, modallar va karkas leyautlar, lekin bu yerda biznes mantiqi aslo bo'lmasligi shart.",
+    "a0": 41.79,
+    "a1": 51.51,
+    "words": [
+      {
+        "w": "Yu-ay",
+        "s": 41.79,
+        "e": 42.09
+      },
+      {
+        "w": "segmenti",
+        "s": 42.15,
+        "e": 42.63
+      },
+      {
+        "w": "—",
+        "s": 42.63,
+        "e": 42.63
+      },
+      {
+        "w": "dasturning",
+        "s": 43.01,
+        "e": 43.53
+      },
+      {
+        "w": "umumiy",
+        "s": 43.63,
+        "e": 43.99
+      },
+      {
+        "w": "yu-ay",
+        "s": 44.11,
+        "e": 44.41
+      },
+      {
+        "w": "kit'i:",
+        "s": 44.49,
+        "e": 44.77
+      },
+      {
+        "w": "tugmalar,",
+        "s": 45.23,
+        "e": 45.77
+      },
+      {
+        "w": "modallar",
+        "s": 46.09,
+        "e": 46.63
+      },
+      {
+        "w": "va",
+        "s": 46.91,
+        "e": 46.99
+      },
+      {
+        "w": "karkas",
+        "s": 47.11,
+        "e": 47.51
+      },
+      {
+        "w": "leyautlar,",
+        "s": 47.57,
+        "e": 48.13
+      },
+      {
+        "w": "lekin",
+        "s": 48.61,
+        "e": 48.87
+      },
+      {
+        "w": "bu",
+        "s": 48.91,
+        "e": 48.97
+      },
+      {
+        "w": "yerda",
+        "s": 49.05,
+        "e": 49.27
+      },
+      {
+        "w": "biznes",
+        "s": 49.35,
+        "e": 49.67
+      },
+      {
+        "w": "mantiqi",
+        "s": 49.71,
+        "e": 50.15
+      },
+      {
+        "w": "aslo",
+        "s": 50.35,
+        "e": 50.61
+      },
+      {
+        "w": "bo'lmasligi",
+        "s": 50.69,
+        "e": 51.21
+      },
+      {
+        "w": "shart.",
+        "s": 51.27,
+        "e": 51.51
+      }
+    ]
+  },
+  {
+    "id": "L8",
+    "scene": "lib_va_nomlar",
+    "text": "Lib segmenti — bu helpers yoki utils degan tartibsiz axlatxona emas.",
+    "show": "Lib segmenti — bu helpers yoki utils degan tartibsiz axlatxona emas.",
+    "say": "Lib segmenti — bu xelpers yoki yutils degan tartibsiz axlatxona emas.",
+    "a0": 52.21,
+    "a1": 56.68,
+    "words": [
+      {
+        "w": "Lib",
+        "s": 52.21,
+        "e": 52.37
+      },
+      {
+        "w": "segmenti",
+        "s": 52.43,
+        "e": 52.92
+      },
+      {
+        "w": "—",
+        "s": 52.92,
+        "e": 52.92
+      },
+      {
+        "w": "bu",
+        "s": 53.34,
+        "e": 53.42
+      },
+      {
+        "w": "xelpers",
+        "s": 53.54,
+        "e": 53.98
+      },
+      {
+        "w": "yoki",
+        "s": 53.98,
+        "e": 54.38
+      },
+      {
+        "w": "yutils",
+        "s": 54.48,
+        "e": 54.88
+      },
+      {
+        "w": "degan",
+        "s": 54.92,
+        "e": 55.2
+      },
+      {
+        "w": "tartibsiz",
+        "s": 55.26,
+        "e": 55.72
+      },
+      {
+        "w": "axlatxona",
+        "s": 55.8,
+        "e": 56.32
+      },
+      {
+        "w": "emas.",
+        "s": 56.4,
+        "e": 56.68
+      }
+    ]
+  },
+  {
+    "id": "L9",
+    "scene": "lib_va_nomlar",
+    "text": "Har bir kutubxona alohida papka va aniq maqsadga ega: masalan sana yoki pul formatlash, qat'iy README bilan.",
+    "show": "Har bir kutubxona alohida papka va aniq maqsadga ega: masalan sana yoki pul formatlash, qat'iy README bilan.",
+    "say": "Har bir kutubxona alohida papka va aniq maqsadga ega: masalan sana yoki pul formatlash, qat'iy ridmi bilan.",
+    "a0": 57.5,
+    "a1": 64.74,
+    "words": [
+      {
+        "w": "Har",
+        "s": 57.5,
+        "e": 57.66
+      },
+      {
+        "w": "bir",
+        "s": 57.72,
+        "e": 57.82
+      },
+      {
+        "w": "kutubxona",
+        "s": 57.86,
+        "e": 58.32
+      },
+      {
+        "w": "alohida",
+        "s": 58.44,
+        "e": 58.9
+      },
+      {
+        "w": "papka",
+        "s": 58.98,
+        "e": 59.3
+      },
+      {
+        "w": "va",
+        "s": 59.4,
+        "e": 59.48
+      },
+      {
+        "w": "aniq",
+        "s": 59.62,
+        "e": 59.84
+      },
+      {
+        "w": "maqsadga",
+        "s": 59.9,
+        "e": 60.38
+      },
+      {
+        "w": "ega:",
+        "s": 60.46,
+        "e": 60.64
+      },
+      {
+        "w": "masalan",
+        "s": 61.24,
+        "e": 61.6
+      },
+      {
+        "w": "sana",
+        "s": 61.68,
+        "e": 61.94
+      },
+      {
+        "w": "yoki",
+        "s": 62.0,
+        "e": 62.32
+      },
+      {
+        "w": "pul",
+        "s": 62.4,
+        "e": 62.58
+      },
+      {
+        "w": "formatlash,",
+        "s": 62.62,
+        "e": 63.18
+      },
+      {
+        "w": "qat'iy",
+        "s": 63.54,
+        "e": 63.9
+      },
+      {
+        "w": "ridmi",
+        "s": 64.1,
+        "e": 64.42
+      },
+      {
+        "w": "bilan.",
+        "s": 64.5,
+        "e": 64.74
+      }
+    ]
+  },
+  {
+    "id": "L10",
+    "scene": "lib_va_nomlar",
+    "text": "Segmentlarni components, hooks yoki types deb nomlash FSD tamoyillariga ziddir: nom doim maqsadni anglatsin.",
+    "show": "Segmentlarni components, hooks yoki types deb nomlash FSD tamoyillariga ziddir: nom doim maqsadni anglatsin.",
+    "say": "Segmentlarni komponents, xuks yoki tayps deb nomlash Ef-es-di tamoyillariga ziddir: nom doim maqsadni anglatsin.",
+    "a0": 65.52,
+    "a1": 73.25,
+    "words": [
+      {
+        "w": "Segmentlarni",
+        "s": 65.52,
+        "e": 66.2
+      },
+      {
+        "w": "komponents,",
+        "s": 66.3,
+        "e": 66.92
+      },
+      {
+        "w": "xuks",
+        "s": 67.24,
+        "e": 67.51
+      },
+      {
+        "w": "yoki",
+        "s": 67.57,
+        "e": 67.97
+      },
+      {
+        "w": "tayps",
+        "s": 68.11,
+        "e": 68.39
+      },
+      {
+        "w": "deb",
+        "s": 68.43,
+        "e": 68.55
+      },
+      {
+        "w": "nomlash",
+        "s": 68.61,
+        "e": 68.99
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 69.29,
+        "e": 69.69
+      },
+      {
+        "w": "tamoyillariga",
+        "s": 69.77,
+        "e": 70.47
+      },
+      {
+        "w": "ziddir:",
+        "s": 70.53,
+        "e": 70.85
+      },
+      {
+        "w": "nom",
+        "s": 71.53,
+        "e": 71.75
+      },
+      {
+        "w": "doim",
+        "s": 71.83,
+        "e": 72.19
+      },
+      {
+        "w": "maqsadni",
+        "s": 72.25,
+        "e": 72.73
+      },
+      {
+        "w": "anglatsin.",
+        "s": 72.77,
+        "e": 73.25
+      }
+    ]
+  },
+  {
+    "id": "L11",
+    "scene": "kod_misol",
+    "text": "Config va routes segmentlari ilovani mustahkam va tiplangan konstantalar bilan ta'minlaydi.",
+    "show": "Config va routes segmentlari ilovani mustahkam va tiplangan konstantalar bilan ta'minlaydi.",
+    "say": "Konfig va routs segmentlari ilovani mustahkam va tiplangan konstantalar bilan ta'minlaydi.",
+    "a0": 73.93,
+    "a1": 79.19,
+    "words": [
+      {
+        "w": "Konfig",
+        "s": 73.93,
+        "e": 74.33
+      },
+      {
+        "w": "va",
+        "s": 74.39,
+        "e": 74.45
+      },
+      {
+        "w": "routs",
+        "s": 74.55,
+        "e": 74.85
+      },
+      {
+        "w": "segmentlari",
+        "s": 74.99,
+        "e": 75.61
+      },
+      {
+        "w": "ilovani",
+        "s": 75.95,
+        "e": 76.37
+      },
+      {
+        "w": "mustahkam",
+        "s": 76.43,
+        "e": 76.97
+      },
+      {
+        "w": "va",
+        "s": 77.03,
+        "e": 77.09
+      },
+      {
+        "w": "tiplangan",
+        "s": 77.15,
+        "e": 77.65
+      },
+      {
+        "w": "konstantalar",
+        "s": 77.71,
+        "e": 78.35
+      },
+      {
+        "w": "bilan",
+        "s": 78.39,
+        "e": 78.57
+      },
+      {
+        "w": "ta'minlaydi.",
+        "s": 78.61,
+        "e": 79.19
+      }
+    ]
+  },
+  {
+    "id": "L12",
+    "scene": "kod_misol",
+    "text": "Env fayli muhit o'zgaruvchilarini bir joyda tekshirsa, routes obyekti barcha sahifalar URL manzillarini tartibga soladi.",
+    "show": "Env fayli muhit o'zgaruvchilarini bir joyda tekshirsa, routes obyekti barcha sahifalar URL manzillarini tartibga soladi.",
+    "say": "Env fayli muhit o'zgaruvchilarini bir joyda tekshirsa, routs obyekti barcha sahifalar yu-ar-el manzillarini tartibga soladi.",
+    "a0": 80.15,
+    "a1": 87.16,
+    "words": [
+      {
+        "w": "Env",
+        "s": 80.15,
+        "e": 80.33
+      },
+      {
+        "w": "fayli",
+        "s": 80.39,
+        "e": 80.77
+      },
+      {
+        "w": "muhit",
+        "s": 80.93,
+        "e": 81.19
+      },
+      {
+        "w": "o'zgaruvchilarini",
+        "s": 81.27,
+        "e": 82.05
+      },
+      {
+        "w": "bir",
+        "s": 82.13,
+        "e": 82.25
+      },
+      {
+        "w": "joyda",
+        "s": 82.31,
+        "e": 82.58
+      },
+      {
+        "w": "tekshirsa,",
+        "s": 82.62,
+        "e": 83.08
+      },
+      {
+        "w": "routs",
+        "s": 83.5,
+        "e": 83.8
+      },
+      {
+        "w": "obyekti",
+        "s": 83.88,
+        "e": 84.26
+      },
+      {
+        "w": "barcha",
+        "s": 84.36,
+        "e": 84.64
+      },
+      {
+        "w": "sahifalar",
+        "s": 84.7,
+        "e": 85.24
+      },
+      {
+        "w": "yu-ar-el",
+        "s": 85.3,
+        "e": 85.66
+      },
+      {
+        "w": "manzillarini",
+        "s": 85.7,
+        "e": 86.3
+      },
+      {
+        "w": "tartibga",
+        "s": 86.36,
+        "e": 86.76
+      },
+      {
+        "w": "soladi.",
+        "s": 86.82,
+        "e": 87.16
+      }
+    ]
+  },
+  {
+    "id": "L13",
+    "scene": "steiger",
+    "text": "Steiger linteri shared qoidalarini ham qat'iy nazorat qiladi.",
+    "show": "Steiger linteri shared qoidalarini ham qat'iy nazorat qiladi.",
+    "say": "Stayger linteri sherd qoidalarini ham qat'iy nazorat qiladi.",
+    "a0": 88.08,
+    "a1": 91.18,
+    "words": [
+      {
+        "w": "Stayger",
+        "s": 88.08,
+        "e": 88.46
+      },
+      {
+        "w": "linteri",
+        "s": 88.52,
+        "e": 88.88
+      },
+      {
+        "w": "sherd",
+        "s": 89.02,
+        "e": 89.28
+      },
+      {
+        "w": "qoidalarini",
+        "s": 89.34,
+        "e": 89.86
+      },
+      {
+        "w": "ham",
+        "s": 89.9,
+        "e": 90.08
+      },
+      {
+        "w": "qat'iy",
+        "s": 90.12,
+        "e": 90.38
+      },
+      {
+        "w": "nazorat",
+        "s": 90.46,
+        "e": 90.86
+      },
+      {
+        "w": "qiladi.",
+        "s": 90.9,
+        "e": 91.18
+      }
+    ]
+  },
+  {
+    "id": "L14",
+    "scene": "steiger",
+    "text": "Agar shared ichiga slice ochilsa yoki shared yuqori qatlamdan kod import qilsa, Steiger darhol xatolik beradi.",
+    "show": "Agar shared ichiga slice ochilsa yoki shared yuqori qatlamdan kod import qilsa, Steiger darhol xatolik beradi.",
+    "say": "Agar sherd ichiga slays ochilsa yoki sherd yuqori qatlamdan kod import qilsa, stayger darhol xatolik beradi.",
+    "a0": 92.0,
+    "a1": 98.57,
+    "words": [
+      {
+        "w": "Agar",
+        "s": 92.0,
+        "e": 92.24
+      },
+      {
+        "w": "sherd",
+        "s": 92.3,
+        "e": 92.56
+      },
+      {
+        "w": "ichiga",
+        "s": 92.62,
+        "e": 92.88
+      },
+      {
+        "w": "slays",
+        "s": 92.94,
+        "e": 93.24
+      },
+      {
+        "w": "ochilsa",
+        "s": 93.32,
+        "e": 93.7
+      },
+      {
+        "w": "yoki",
+        "s": 94.06,
+        "e": 94.28
+      },
+      {
+        "w": "sherd",
+        "s": 94.38,
+        "e": 94.66
+      },
+      {
+        "w": "yuqori",
+        "s": 94.7,
+        "e": 95.02
+      },
+      {
+        "w": "qatlamdan",
+        "s": 95.08,
+        "e": 95.58
+      },
+      {
+        "w": "kod",
+        "s": 95.68,
+        "e": 95.88
+      },
+      {
+        "w": "import",
+        "s": 95.96,
+        "e": 96.24
+      },
+      {
+        "w": "qilsa,",
+        "s": 96.28,
+        "e": 96.56
+      },
+      {
+        "w": "stayger",
+        "s": 96.94,
+        "e": 97.35
+      },
+      {
+        "w": "darhol",
+        "s": 97.43,
+        "e": 97.79
+      },
+      {
+        "w": "xatolik",
+        "s": 97.83,
+        "e": 98.21
+      },
+      {
+        "w": "beradi.",
+        "s": 98.25,
+        "e": 98.57
+      }
+    ]
+  },
+  {
+    "id": "L15",
+    "scene": "steiger",
+    "text": "Qoidalar to'g'ri bajarilganda esa arxitektura toza va barqaror deb tasdiqlanadi.",
+    "show": "Qoidalar to'g'ri bajarilganda esa arxitektura toza va barqaror deb tasdiqlanadi.",
+    "say": "Qoidalar to'g'ri bajarilganda esa arxitektura toza va barqaror deb tasdiqlanadi.",
+    "a0": 99.37,
+    "a1": 104.21,
+    "words": [
+      {
+        "w": "Qoidalar",
+        "s": 99.37,
+        "e": 99.87
+      },
+      {
+        "w": "to'g'ri",
+        "s": 99.93,
+        "e": 100.19
+      },
+      {
+        "w": "bajarilganda",
+        "s": 100.21,
+        "e": 100.87
+      },
+      {
+        "w": "esa",
+        "s": 100.93,
+        "e": 101.11
+      },
+      {
+        "w": "arxitektura",
+        "s": 101.49,
+        "e": 102.17
+      },
+      {
+        "w": "toza",
+        "s": 102.23,
+        "e": 102.57
+      },
+      {
+        "w": "va",
+        "s": 102.71,
+        "e": 102.77
+      },
+      {
+        "w": "barqaror",
+        "s": 102.85,
+        "e": 103.31
+      },
+      {
+        "w": "deb",
+        "s": 103.37,
+        "e": 103.49
+      },
+      {
+        "w": "tasdiqlanadi.",
+        "s": 103.53,
+        "e": 104.21
+      }
+    ]
+  },
+  {
+    "id": "L16",
+    "scene": "xulosa",
+    "text": "Xulosa qilsak: shared — poydevor, slice'siz erkin segmentlar va biznes mantiqisiz toza instrumentlar to'plamidir.",
+    "show": "Xulosa qilsak: shared — poydevor, slice'siz erkin segmentlar va biznes mantiqisiz toza instrumentlar to'plamidir.",
+    "say": "Xulosa qilsak: sherd — poydevor, slayssiz erkin segmentlar va biznes mantiqisiz toza instrumentlar to'plamidir.",
+    "a0": 105.11,
+    "a1": 112.22,
+    "words": [
+      {
+        "w": "Xulosa",
+        "s": 105.11,
+        "e": 105.43
+      },
+      {
+        "w": "qilsak:",
+        "s": 105.49,
+        "e": 105.83
+      },
+      {
+        "w": "sherd",
+        "s": 106.31,
+        "e": 106.63
+      },
+      {
+        "w": "—",
+        "s": 106.63,
+        "e": 106.63
+      },
+      {
+        "w": "poydevor,",
+        "s": 106.77,
+        "e": 107.37
+      },
+      {
+        "w": "slayssiz",
+        "s": 107.73,
+        "e": 108.15
+      },
+      {
+        "w": "erkin",
+        "s": 108.29,
+        "e": 108.55
+      },
+      {
+        "w": "segmentlar",
+        "s": 108.61,
+        "e": 109.15
+      },
+      {
+        "w": "va",
+        "s": 109.47,
+        "e": 109.55
+      },
+      {
+        "w": "biznes",
+        "s": 109.65,
+        "e": 109.99
+      },
+      {
+        "w": "mantiqisiz",
+        "s": 110.03,
+        "e": 110.65
+      },
+      {
+        "w": "toza",
+        "s": 110.71,
+        "e": 110.98
+      },
+      {
+        "w": "instrumentlar",
+        "s": 111.04,
+        "e": 111.66
+      },
+      {
+        "w": "to'plamidir.",
+        "s": 111.7,
+        "e": 112.22
+      }
+    ]
+  },
+  {
+    "id": "L17",
+    "scene": "xulosa",
+    "text": "Keyingi bobda entities qatlamiga qadam qo'yamiz. E'tiboringiz uchun rahmat!",
+    "show": "Keyingi bobda entities qatlamiga qadam qo'yamiz. E'tiboringiz uchun rahmat!",
+    "say": "Keyingi bobda entitiz qatlamiga qadam qo'yamiz. E'tiboringiz uchun rahmat!",
+    "a0": 113.08,
+    "a1": 117.66,
+    "words": [
+      {
+        "w": "Keyingi",
+        "s": 113.08,
+        "e": 113.4
+      },
+      {
+        "w": "bobda",
+        "s": 113.44,
+        "e": 113.72
+      },
+      {
+        "w": "entitiz",
+        "s": 114.1,
+        "e": 114.5
+      },
+      {
+        "w": "qatlamiga",
+        "s": 114.56,
+        "e": 115.04
+      },
+      {
+        "w": "qadam",
+        "s": 115.1,
+        "e": 115.34
+      },
+      {
+        "w": "qo'yamiz.",
+        "s": 115.4,
+        "e": 115.78
+      },
+      {
+        "w": "E'tiboringiz",
+        "s": 116.48,
+        "e": 117.04
+      },
+      {
+        "w": "uchun",
+        "s": 117.08,
+        "e": 117.26
+      },
+      {
+        "w": "rahmat!",
+        "s": 117.32,
+        "e": 117.66
+      }
+    ]
+  }
+]
