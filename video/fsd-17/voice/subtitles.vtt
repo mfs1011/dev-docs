@@ -1,0 +1,81 @@
+WEBVTT
+
+1
+00:01.420 --> 00:13.600
+Salom! Bu FSD qo'llanmasining o'n yettinchi bobi — Desegmentatsiya va to'g'ri nomlash. Bugun
+loyihalarda eng ko'p uchraydigan texnik ajratish tuzog'i va uni bartaraf etishni o'rganamiz.
+
+2
+00:14.970 --> 00:24.420
+Desegmentatsiya — bu fayllarni biznes sohasi bo'yicha emas, balki ularning texnik
+turi bo'yicha components, hooks yoki utils kabi papkalarga sochib tashlashdir.
+
+3
+00:26.240 --> 00:36.410
+Bir qarashda bu tartibli tuyulsa-da, amalda past bog'liqlik keltirib chiqaradi: bitta
+yetkazib berish mantiqini o'zgartirish uchun beshta alohida papkaga kirishga to'g'ri keladi.
+
+4
+00:36.840 --> 00:44.700
+Natijada komponentlar o'rtasida yashirin chigal bog'lanishlar paydo
+bo'ladi va kodni refaktoring qilish deyarli imkonsiz bo'lib qoladi.
+
+5
+00:48.170 --> 00:53.140
+FSD yondashuvi barcha bog'liq kodlarni
+bitta domen ostiga jamlashni talab qiladi.
+
+6
+00:53.570 --> 01:02.950
+Masalan, delivery slice'ida barcha interfeyslar ui papkasida, barcha
+hisob-kitoblar model papkasida, tarmoq so'rovlari esa api ichida saqlanadi.
+
+7
+01:03.380 --> 01:11.350
+Har qanday o'zgarish faqat bitta papka ichida amalga oshiriladi, bu esa
+loyihani tushunishni va rivojlantirishni bir necha barobar tezlashtiradi.
+
+8
+01:14.820 --> 01:21.680
+Nomlashda har doim o'zingizga savol bering: bu nom kod
+qanday yozilganini aytadimi yoki nima maqsadda yozilganini?
+
+9
+01:22.130 --> 01:34.570
+types.ts yoki utils.ts deb nomlash xatodir, chunki bu shunchaki fayl turini bildiradi.
+Buning o'rniga product.ts yoki format-price.ts kabi aniq domen nomlarini tanlang.
+
+10
+01:34.960 --> 01:42.070
+Slice ichida alohida types.ts ochish o'rniga, har bir tipni
+uni ishlatadigan biznes modeli bilan bir faylga joylang.
+
+11
+01:45.260 --> 01:54.840
+Istisno tariqasida, faqat shared qatlamida texnik guruhlash tabiiydir: chunki
+shared biznesga ega emas, unda umumiy tugmalar yoki sana kutubxonalari turadi.
+
+12
+01:55.170 --> 02:04.380
+Lekin shared ichida ham utils.ts nomli axlat qutisi yaratmang, balki
+lib date yoki lib money kabi aniq yo'nalishli modullarga ajrating.
+
+13
+02:04.820 --> 02:11.310
+Slice ichida ortiqcha ui components kabi ichma-ich papkalar
+ochish ham desegmentatsiyaning qaytishi hisoblanadi.
+
+14
+02:14.240 --> 02:21.310
+Steiger linteri slice ichidagi ortiqcha qatlamlarni va
+noto'g'ri segment nomlarini avtomatik tekshirib boradi.
+
+15
+02:21.570 --> 02:29.160
+Domen asosida tuzilgan papkalar tufayli linter to'liq
+yashil tasdiq beradi va arxitektura tozaligini saqlaydi.
+
+16
+02:32.330 --> 02:44.310
+Xulosa qilsak: kodni texnik turiga qarab sochmang, har doim domenga qarab jamlang va
+aniq nomlang. Keyingi bobda ortiqcha entity'lar muammosini ko'rib chiqamiz. Rahmat!

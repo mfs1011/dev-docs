@@ -4,6 +4,14 @@
 
 ## Qisqacha
 
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/fsd/17-desegmentatsiya.jpg" src="/video/fsd/17-desegmentatsiya.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/fsd/17-desegmentatsiya.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/fsd/17-desegmentatsiya.uz.vtt">
+</video>
+<figcaption>Bob videoda: desegmentatsiya va nomlash — texnik sochilish xatosi, domen bo'yicha guruhlash, nomlash qoidalari va Steiger nazorati.</figcaption>
+</figure>
+
 **Desegmentatsiya** (gorizontal bo'linish, "qatlam bo'yicha paketlash") — fayllarni biznes sohasi emas, **texnik roli** bo'yicha guruhlash: hamma komponentlar `components/`'da, hamma hook'lar `hooks/`'da, hamma tiplar `types.ts`'da. Next.js va Nuxt loyihalarida juda keng tarqalgan, chunki boshlash oson. FSD ichida ham uchraydi — `ui/components/`, `utils.ts` ko'rinishida. Yechim: bir domenga oid kodni bir joyda saqlang va nomlarni domendan oling.
 
 ## Qoida
