@@ -1,0 +1,22 @@
+WEBVTT
+
+00:00.000 --> 00:26.645
+Kirish: Cross-import va Gorizontal Bog‘liqlik
+
+00:26.645 --> 00:50.966
+Nega Cross-import Code Smell?
+
+00:50.966 --> 01:29.263
+Entities Qatlamida @x Belgisi
+
+01:29.263 --> 02:06.186
+Features Uchun A va B Strategiyalari
+
+02:06.186 --> 02:43.334
+C va D Strategiyalari: IoC va Public API
+
+02:43.334 --> 03:06.645
+Steiger Linteri va Qat’iy Chegaralar
+
+03:06.645 --> 03:24.600
+Xulosa va Keyingi Qadam
