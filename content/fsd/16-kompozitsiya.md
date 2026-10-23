@@ -4,6 +4,14 @@
 
 ## Qisqacha
 
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/fsd/16-kompozitsiya.jpg" src="/video/fsd/16-kompozitsiya.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/fsd/16-kompozitsiya.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/fsd/16-kompozitsiya.uz.vtt">
+</video>
+<figcaption>Bob videoda: yuqori qatlamda kompozitsiya — Inversion of Control, slotlar, render props, callback props va Steiger nazorati.</figcaption>
+</figure>
+
 Bir qatlamdagi ikki slice birga ishlashi kerak bo'lsa, ularni **bir-biriga ulamang** — yuqoriroq qatlamda (`widgets`, `pages`, `app`) **yonma-yon qo'ying**. Bir slice boshqasining UI'sini ko'rsatishi kerak bo'lsa, unga "bo'sh joy" qoldiring: React'da render props/`children`, Vue'da slot, Angular'da content projection. Bu — boshqaruvni teskari qilish (IoC): slice nima ko'rsatilishini bilmaydi, yuqori qatlam beradi.
 
 Rasmiy FAQ: "pages/features/entities'ni bir-biriga joylash mumkinmi? Ha, lekin bu **yuqori qatlamlarda** bo'lishi kerak."

@@ -1,0 +1,81 @@
+WEBVTT
+
+1
+00:01.420 --> 00:15.180
+Salom! Bu FSD qo'llanmasining o'n oltinchi bobi — Yuqori qatlamda kompozitsiya. Bugun bir qatlamdagi
+slice'larni o'zaro bog'lamasdan, toza kompozitsiya orqali birga ishlatish san'atini o'rganamiz.
+
+2
+00:15.950 --> 00:27.710
+FSD ning asosiy qoidasi: agar ikki slice birga ishlashi kerak bo'lsa, ularni
+gorizontal ulamaymiz, balki widgets yoki pages qatlamida yonma-yon jamlaymiz.
+
+3
+00:29.600 --> 00:40.150
+Ushbu yondashuv Inversion of Control, ya'ni boshqaruvni teskari qilish deb ataladi.
+Slice o'z ichida nima ko'rsatilishini bilmaydi, faqat bo'sh joy qoldiradi.
+
+4
+00:40.180 --> 00:48.380
+Masalan, izohlar ro'yxati foydalanuvchi avatarini to'g'ridan
+chaqirmaydi, balki yuqori qatlam beradigan joy orqali qabul qiladi.
+
+5
+00:51.310 --> 00:59.890
+React muhitida bu render props yoki children orqali, Vue da slotlar,
+Angular da esa content projection yordamida amalga oshiriladi.
+
+6
+01:00.200 --> 01:07.870
+Bitta mahsulot kartasi ProductCard actions nomli bo'sh joy
+qoldiradi, sahifa esa unga AddToCart tugmasini uzatadi.
+
+7
+01:08.180 --> 01:16.400
+Natijada entities qatlamidagi ProductCard hech qanday feature'ga
+bog'lanmaydi va butun loyiha bo'ylab erkin qayta ishlatiladi.
+
+8
+01:19.610 --> 01:26.240
+Ikkinchi keng tarqalgan holat — bir slice'dagi amal
+tugagach, ikkinchisi yangilanishi kerak bo'lgan holatdir.
+
+9
+01:26.430 --> 01:34.050
+Masalan, promokod kiritilganda savatdagi jami summa qayta
+hisoblanishi lozim. Bu yerda ham feature'lar bir-birini bilmaydi.
+
+10
+01:34.140 --> 01:42.070
+Promokod komponenti onApplied hodisasini chiqaradi, sahifa
+esa bu hodisani ushlab, savat summasini qayta yuklaydi.
+
+11
+01:45.200 --> 01:53.380
+Agar kompozitsiya juda chuqur komponentlar daraxtiga tushib ketsa,
+prop drilling o'rniga Dependency Injection yoki kontekst ishlatiladi.
+
+12
+01:53.730 --> 02:01.880
+Lekin ehtiyot bo'ling: global event bus ochish yoki feature'larga
+yashirin pub-sub signallarini kiritish qat'iyan tavsiya etilmaydi.
+
+13
+02:02.030 --> 02:07.890
+Yashirin bog'lanishlar loyihani tushunarsiz qiladi
+va xatolarni qidirishni ancha murakkablashtiradi.
+
+14
+02:10.840 --> 02:17.850
+Steiger linteri slice'lar orasidagi noqonuniy ulanishlarni
+va to'g'ridan-to'g'ri importlarni doimiy nazorat qiladi.
+
+15
+02:18.120 --> 02:24.220
+Kompozitsiya to'g'ri qo'llanilganda, linter barcha
+qatlamlarni toza va xatosiz holatda tasdiqlaydi.
+
+16
+02:27.130 --> 02:40.450
+Xulosa qilsak: slice'larni pastda bir-biriga ulamang, yuqorida kompozitsiya qiling va doimo
+toza slotlardan foydalaning. Keyingi bobda desegmentatsiya va nomlashni o'rganamiz. Rahmat!
