@@ -1,0 +1,81 @@
+WEBVTT
+
+1
+00:01.420 --> 00:14.760
+Salom! Bu FSD qo'llanmasining o'n beshinchi bobi — Cross-import va at x belgisi. Bugun bir
+qatlamdagi slice'larning o'zaro bog'lanishi va uni to'g'ri hal qilish usullarini o'rganamiz.
+
+2
+00:15.670 --> 00:25.890
+Masalan, cart feature'si mahsulot ma'lumotlarini olish uchun to'g'ridan-to'g'ri product
+feature'sini chaqirsa, bu gorizontal bog'lanish, ya'ni cross-import hisoblanadi.
+
+3
+00:27.760 --> 00:39.290
+FSD qoidalariga ko'ra cross-import jiddiy code smell hisoblanadi. Chunki kod egaligi xiralashadi,
+cart ustida ishlayotgan dasturchi product ichki tuzilishini ham bilishga majbur bo'ladi.
+
+4
+00:39.500 --> 00:48.940
+Eng xavflisi, alohida testlash qiyinlashadi va bir tomonlama chaqiruv vaqt o'tishi
+bilan ikki tomonlama, halokatli siklik bog'lanishga aylanib ketishi mumkin.
+
+5
+00:52.130 --> 01:01.950
+Lekin real hayotda obyektlar bir-birisiz yashay olmaydi. Masalan, qo'shiq
+entity'si ijrochi bilan, buyurtma esa mijoz modeli bilan chambarchas bog'liq.
+
+6
+01:02.140 --> 01:15.440
+Bunday muqarrar holatlar uchun FSD entities qatlamida maxsus at x, ya'ni kesishuv belgisini
+joriy qilgan. Bu papka boshqa aniq bir entity uchun mo'ljallangan maxsus public API hisoblanadi.
+
+7
+01:15.750 --> 01:27.280
+Muhim qoida: at x belgisini hech qachon features yoki widgets qatlamida ishlatib bo'lmaydi.
+U faqat domen obyektlari modellarini o'zaro ulashda oxirgi chora sifatida qo'llanadi.
+
+8
+01:30.350 --> 01:39.530
+Xo'sh, agar features yoki widgets ichida cross-import ehtiyoji tug'ilsa, qanday
+to'g'ri yo'l tutish kerak? Buning uchun to'rtta professional strategiya mavjud.
+
+9
+01:39.740 --> 01:51.320
+Birinchi strategiya — slice'larni birlashtirish. Agar profile va profile-settings doimo
+birga o'zgarib bir-biriga muhtoj bo'lsa, ularni yagona profile slice'iga jamlash lozim.
+
+10
+01:51.650 --> 02:04.210
+Ikkinchi strategiya — domen mantiqini pastga, entities qatlamiga tushirish. Agar bir nechta feature
+foydalanuvchi ma'lumotlarini ishlatsa, mantiq entities ichida saqlanadi, UI esa feature'da qoladi.
+
+11
+02:07.380 --> 02:18.710
+Uchinchi yo'l — yuqori qatlamda kompozitsiya qilish, ya'ni Inversion of Control. Bitta
+feature boshqasini chaqirmaydi, sahifa ularni slot yoki bolalar orqali bir-biriga uzatadi.
+
+12
+02:18.980 --> 02:31.740
+To'rtinchi chora — qat'iy public API. Boshqa iloj qolmaganda chaqiruvga ruxsat beriladi,
+biroq faqat ochiq eksportlar orqali, ichki fayllar va store'larga kirish mutlaqo taqiqlanadi.
+
+13
+02:32.190 --> 02:41.290
+Ushbu to'rtinchi holatda arxitektura qarori loyiha hujjatlarida yoki
+izohlarda aniq yozib qo'yilishi va keyinchalik refaktoring qilinishi shart.
+
+14
+02:44.440 --> 02:55.180
+Loyiha kattalashgani sari bunday noo'rin cross-importlarni ko'z bilan tutib qolish
+imkonsiz. Shu sababli Steiger linteri gorizontal importlarni avtomatik nazorat qiladi.
+
+15
+02:55.450 --> 03:04.600
+Steiger noqonuniy chaqiruvlarni va ichki fayllarga kirishlarni darhol
+belgilab beradi va arxitektura tozaligini saqlashga yordam beradi.
+
+16
+03:07.750 --> 03:20.850
+Xulosa qilsak: gorizontal bog'lanishlardan qoching, entities uchun zaruratda at x dan foydalaning va
+toza kompozitsiyani tanlang. Keyingi bobda yuqori qatlamda kompozitsiyani ko'rib chiqamiz. Rahmat!

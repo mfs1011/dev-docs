@@ -4,6 +4,14 @@
 
 ## Qisqacha
 
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/fsd/15-cross-import.jpg" src="/video/fsd/15-cross-import.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/fsd/15-cross-import.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/fsd/15-cross-import.uz.vtt">
+</video>
+<figcaption>Bob videoda: cross-import va @x — gorizontal bog'lanish muammosi, @x notation, 4 strategiya va Steiger nazorati.</figcaption>
+</figure>
+
 **Cross-import** — bir qatlamdagi ikki slice orasidagi import: `features/cart` → `features/product`, `widgets/header` → `widgets/sidebar`. Bu **code smell**: slice'lar bog'lanib borayotganining belgisi. Ba'zan undan qochish qiyin — lekin u har doim ongli, hujjatlangan qaror bo'lishi kerak. `entities` orasida buning uchun maxsus `@x` belgisi bor; `features` va `widgets`'da esa to'rtta strategiya.
 
 `shared` va `app` ichidagi importlar cross-import **emas** — ularda slice yo'q.

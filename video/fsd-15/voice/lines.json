@@ -1,0 +1,1883 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Salom! Bu FSD qo'llanmasining o'n beshinchi bobi — Cross-import va at x belgisi. Bugun bir qatlamdagi slice'larning o'zaro bog'lanishi va uni to'g'ri hal qilish usullarini o'rganamiz.",
+    "show": "Salom! Bu FSD qo'llanmasining o'n beshinchi bobi — Cross-import va at x belgisi. Bugun bir qatlamdagi slice'larning o'zaro bog'lanishi va uni to'g'ri hal qilish usullarini o'rganamiz.",
+    "say": "Salom! Bu Ef-es-di qo'llanmasining o'n beshinchi bobi — kross-import va et-iks belgisi. Bugun bir qatlamdagi slays'larning o'zaro bog'lanishi va uni to'g'ri hal qilish usullarini o'rganamiz.",
+    "a0": 0.32,
+    "a1": 13.21,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.32,
+        "e": 0.64
+      },
+      {
+        "w": "Bu",
+        "s": 1.06,
+        "e": 1.14
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 1.36,
+        "e": 1.78
+      },
+      {
+        "w": "qo'llanmasining",
+        "s": 1.88,
+        "e": 2.66
+      },
+      {
+        "w": "o'n",
+        "s": 2.8,
+        "e": 2.92
+      },
+      {
+        "w": "beshinchi",
+        "s": 2.96,
+        "e": 3.42
+      },
+      {
+        "w": "bobi",
+        "s": 3.46,
+        "e": 3.74
+      },
+      {
+        "w": "—",
+        "s": 3.74,
+        "e": 3.74
+      },
+      {
+        "w": "kross-import",
+        "s": 4.16,
+        "e": 4.98
+      },
+      {
+        "w": "va",
+        "s": 5.28,
+        "e": 5.38
+      },
+      {
+        "w": "et-iks",
+        "s": 5.62,
+        "e": 6.14
+      },
+      {
+        "w": "belgisi.",
+        "s": 6.22,
+        "e": 6.62
+      },
+      {
+        "w": "Bugun",
+        "s": 7.16,
+        "e": 7.42
+      },
+      {
+        "w": "bir",
+        "s": 7.69,
+        "e": 7.81
+      },
+      {
+        "w": "qatlamdagi",
+        "s": 7.87,
+        "e": 8.39
+      },
+      {
+        "w": "slays'larning",
+        "s": 8.43,
+        "e": 9.07
+      },
+      {
+        "w": "o'zaro",
+        "s": 9.41,
+        "e": 9.73
+      },
+      {
+        "w": "bog'lanishi",
+        "s": 9.85,
+        "e": 10.43
+      },
+      {
+        "w": "va",
+        "s": 10.87,
+        "e": 10.95
+      },
+      {
+        "w": "uni",
+        "s": 11.09,
+        "e": 11.25
+      },
+      {
+        "w": "to'g'ri",
+        "s": 11.33,
+        "e": 11.65
+      },
+      {
+        "w": "hal",
+        "s": 11.71,
+        "e": 11.87
+      },
+      {
+        "w": "qilish",
+        "s": 11.93,
+        "e": 12.15
+      },
+      {
+        "w": "usullarini",
+        "s": 12.19,
+        "e": 12.71
+      },
+      {
+        "w": "o'rganamiz.",
+        "s": 12.75,
+        "e": 13.21
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "intro",
+    "text": "Masalan, cart feature'si mahsulot ma'lumotlarini olish uchun to'g'ridan-to'g'ri product feature'sini chaqirsa, bu gorizontal bog'lanish, ya'ni cross-import hisoblanadi.",
+    "show": "Masalan, cart feature'si mahsulot ma'lumotlarini olish uchun to'g'ridan-to'g'ri product feature'sini chaqirsa, bu gorizontal bog'lanish, ya'ni cross-import hisoblanadi.",
+    "say": "Masalan, kart ficher'si mahsulot ma'lumotlarini olish uchun to'g'ridan-to'g'ri prodakt ficher'sini chaqirsa, bu gorizontal bog'lanish, ya'ni kross-import hisoblanadi.",
+    "a0": 13.77,
+    "a1": 23.54,
+    "words": [
+      {
+        "w": "Masalan,",
+        "s": 13.77,
+        "e": 14.19
+      },
+      {
+        "w": "kart",
+        "s": 14.59,
+        "e": 14.81
+      },
+      {
+        "w": "ficher'si",
+        "s": 14.87,
+        "e": 15.37
+      },
+      {
+        "w": "mahsulot",
+        "s": 15.69,
+        "e": 16.07
+      },
+      {
+        "w": "ma'lumotlarini",
+        "s": 16.13,
+        "e": 16.73
+      },
+      {
+        "w": "olish",
+        "s": 16.79,
+        "e": 16.97
+      },
+      {
+        "w": "uchun",
+        "s": 17.01,
+        "e": 17.21
+      },
+      {
+        "w": "to'g'ridan-to'g'ri",
+        "s": 17.51,
+        "e": 18.25
+      },
+      {
+        "w": "prodakt",
+        "s": 18.33,
+        "e": 18.73
+      },
+      {
+        "w": "ficher'sini",
+        "s": 18.77,
+        "e": 19.21
+      },
+      {
+        "w": "chaqirsa,",
+        "s": 19.27,
+        "e": 19.71
+      },
+      {
+        "w": "bu",
+        "s": 20.13,
+        "e": 20.23
+      },
+      {
+        "w": "gorizontal",
+        "s": 20.47,
+        "e": 21.09
+      },
+      {
+        "w": "bog'lanish,",
+        "s": 21.13,
+        "e": 21.65
+      },
+      {
+        "w": "ya'ni",
+        "s": 21.79,
+        "e": 22.01
+      },
+      {
+        "w": "kross-import",
+        "s": 22.21,
+        "e": 22.96
+      },
+      {
+        "w": "hisoblanadi.",
+        "s": 23.0,
+        "e": 23.54
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "code_smell",
+    "text": "FSD qoidalariga ko'ra cross-import jiddiy code smell hisoblanadi. Chunki kod egaligi xiralashadi, cart ustida ishlayotgan dasturchi product ichki tuzilishini ham bilishga majbur bo'ladi.",
+    "show": "FSD qoidalariga ko'ra cross-import jiddiy code smell hisoblanadi. Chunki kod egaligi xiralashadi, cart ustida ishlayotgan dasturchi product ichki tuzilishini ham bilishga majbur bo'ladi.",
+    "say": "Ef-es-di qoidalariga ko'ra kross-import jiddiy kod smel hisoblanadi. Chunki kod egaligi xiralashadi, kart ustida ishlayotgan dasturchi prodakt ichki tuzilishini ham bilishga majbur bo'ladi.",
+    "a0": 24.26,
+    "a1": 35.34,
+    "words": [
+      {
+        "w": "Ef-es-di",
+        "s": 24.26,
+        "e": 24.58
+      },
+      {
+        "w": "qoidalariga",
+        "s": 24.64,
+        "e": 25.16
+      },
+      {
+        "w": "ko'ra",
+        "s": 25.2,
+        "e": 25.4
+      },
+      {
+        "w": "kross-import",
+        "s": 25.74,
+        "e": 26.42
+      },
+      {
+        "w": "jiddiy",
+        "s": 26.48,
+        "e": 26.82
+      },
+      {
+        "w": "kod",
+        "s": 27.02,
+        "e": 27.24
+      },
+      {
+        "w": "smel",
+        "s": 27.32,
+        "e": 27.6
+      },
+      {
+        "w": "hisoblanadi.",
+        "s": 27.62,
+        "e": 28.16
+      },
+      {
+        "w": "Chunki",
+        "s": 28.68,
+        "e": 28.94
+      },
+      {
+        "w": "kod",
+        "s": 29.3,
+        "e": 29.5
+      },
+      {
+        "w": "egaligi",
+        "s": 29.6,
+        "e": 29.98
+      },
+      {
+        "w": "xiralashadi,",
+        "s": 30.06,
+        "e": 30.64
+      },
+      {
+        "w": "kart",
+        "s": 31.02,
+        "e": 31.26
+      },
+      {
+        "w": "ustida",
+        "s": 31.32,
+        "e": 31.56
+      },
+      {
+        "w": "ishlayotgan",
+        "s": 31.62,
+        "e": 32.1
+      },
+      {
+        "w": "dasturchi",
+        "s": 32.14,
+        "e": 32.6
+      },
+      {
+        "w": "prodakt",
+        "s": 32.88,
+        "e": 33.26
+      },
+      {
+        "w": "ichki",
+        "s": 33.32,
+        "e": 33.58
+      },
+      {
+        "w": "tuzilishini",
+        "s": 33.6,
+        "e": 34.04
+      },
+      {
+        "w": "ham",
+        "s": 34.08,
+        "e": 34.2
+      },
+      {
+        "w": "bilishga",
+        "s": 34.24,
+        "e": 34.54
+      },
+      {
+        "w": "majbur",
+        "s": 34.6,
+        "e": 34.98
+      },
+      {
+        "w": "bo'ladi.",
+        "s": 35.02,
+        "e": 35.34
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "code_smell",
+    "text": "Eng xavflisi, alohida testlash qiyinlashadi va bir tomonlama chaqiruv vaqt o'tishi bilan ikki tomonlama, halokatli siklik bog'lanishga aylanib ketishi mumkin.",
+    "show": "Eng xavflisi, alohida testlash qiyinlashadi va bir tomonlama chaqiruv vaqt o'tishi bilan ikki tomonlama, halokatli siklik bog'lanishga aylanib ketishi mumkin.",
+    "say": "Eng xavflisi, alohida testlash qiyinlashadi va bir tomonlama chaqiruv vaqt o'tishi bilan ikki tomonlama, halokatli siklik bog'lanishga aylanib ketishi mumkin.",
+    "a0": 36.0,
+    "a1": 44.99,
+    "words": [
+      {
+        "w": "Eng",
+        "s": 36.0,
+        "e": 36.14
+      },
+      {
+        "w": "xavflisi,",
+        "s": 36.2,
+        "e": 36.7
+      },
+      {
+        "w": "alohida",
+        "s": 37.1,
+        "e": 37.55
+      },
+      {
+        "w": "testlash",
+        "s": 37.63,
+        "e": 38.05
+      },
+      {
+        "w": "qiyinlashadi",
+        "s": 38.13,
+        "e": 38.79
+      },
+      {
+        "w": "va",
+        "s": 39.19,
+        "e": 39.29
+      },
+      {
+        "w": "bir",
+        "s": 39.47,
+        "e": 39.59
+      },
+      {
+        "w": "tomonlama",
+        "s": 39.63,
+        "e": 40.01
+      },
+      {
+        "w": "chaqiruv",
+        "s": 40.07,
+        "e": 40.45
+      },
+      {
+        "w": "vaqt",
+        "s": 40.53,
+        "e": 40.75
+      },
+      {
+        "w": "o'tishi",
+        "s": 40.81,
+        "e": 41.05
+      },
+      {
+        "w": "bilan",
+        "s": 41.09,
+        "e": 41.27
+      },
+      {
+        "w": "ikki",
+        "s": 41.41,
+        "e": 41.61
+      },
+      {
+        "w": "tomonlama,",
+        "s": 41.65,
+        "e": 42.07
+      },
+      {
+        "w": "halokatli",
+        "s": 42.41,
+        "e": 43.09
+      },
+      {
+        "w": "siklik",
+        "s": 43.23,
+        "e": 43.59
+      },
+      {
+        "w": "bog'lanishga",
+        "s": 43.65,
+        "e": 44.11
+      },
+      {
+        "w": "aylanib",
+        "s": 44.15,
+        "e": 44.41
+      },
+      {
+        "w": "ketishi",
+        "s": 44.43,
+        "e": 44.69
+      },
+      {
+        "w": "mumkin.",
+        "s": 44.71,
+        "e": 44.99
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "at_x_shablon",
+    "text": "Lekin real hayotda obyektlar bir-birisiz yashay olmaydi. Masalan, qo'shiq entity'si ijrochi bilan, buyurtma esa mijoz modeli bilan chambarchas bog'liq.",
+    "show": "Lekin real hayotda obyektlar bir-birisiz yashay olmaydi. Masalan, qo'shiq entity'si ijrochi bilan, buyurtma esa mijoz modeli bilan chambarchas bog'liq.",
+    "say": "Lekin real hayotda obyektlar bir-birisiz yashay olmaydi. Masalan, qo'shiq entiti'si ijrochi bilan, buyurtma esa mijoz modeli bilan chambarchas bog'liq.",
+    "a0": 45.83,
+    "a1": 55.2,
+    "words": [
+      {
+        "w": "Lekin",
+        "s": 45.83,
+        "e": 46.11
+      },
+      {
+        "w": "real",
+        "s": 46.49,
+        "e": 46.71
+      },
+      {
+        "w": "hayotda",
+        "s": 46.75,
+        "e": 47.09
+      },
+      {
+        "w": "obyektlar",
+        "s": 47.17,
+        "e": 47.65
+      },
+      {
+        "w": "bir-birisiz",
+        "s": 47.73,
+        "e": 48.27
+      },
+      {
+        "w": "yashay",
+        "s": 48.33,
+        "e": 48.61
+      },
+      {
+        "w": "olmaydi.",
+        "s": 48.69,
+        "e": 49.05
+      },
+      {
+        "w": "Masalan,",
+        "s": 49.49,
+        "e": 49.85
+      },
+      {
+        "w": "qo'shiq",
+        "s": 50.21,
+        "e": 50.51
+      },
+      {
+        "w": "entiti'si",
+        "s": 50.63,
+        "e": 51.11
+      },
+      {
+        "w": "ijrochi",
+        "s": 51.31,
+        "e": 51.73
+      },
+      {
+        "w": "bilan,",
+        "s": 51.77,
+        "e": 52.01
+      },
+      {
+        "w": "buyurtma",
+        "s": 52.37,
+        "e": 52.76
+      },
+      {
+        "w": "esa",
+        "s": 52.86,
+        "e": 53.04
+      },
+      {
+        "w": "mijoz",
+        "s": 53.26,
+        "e": 53.6
+      },
+      {
+        "w": "modeli",
+        "s": 53.66,
+        "e": 53.98
+      },
+      {
+        "w": "bilan",
+        "s": 54.0,
+        "e": 54.18
+      },
+      {
+        "w": "chambarchas",
+        "s": 54.26,
+        "e": 54.84
+      },
+      {
+        "w": "bog'liq.",
+        "s": 54.9,
+        "e": 55.2
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "at_x_shablon",
+    "text": "Bunday muqarrar holatlar uchun FSD entities qatlamida maxsus at x, ya'ni kesishuv belgisini joriy qilgan. Bu papka boshqa aniq bir entity uchun mo'ljallangan maxsus public API hisoblanadi.",
+    "show": "Bunday muqarrar holatlar uchun FSD entities qatlamida maxsus at x, ya'ni kesishuv belgisini joriy qilgan. Bu papka boshqa aniq bir entity uchun mo'ljallangan maxsus public API hisoblanadi.",
+    "say": "Bunday muqarrar holatlar uchun Ef-es-di entitiz qatlamida maxsus et-iks, ya'ni kesishuv belgisini joriy qilgan. Bu papka boshqa aniq bir entiti uchun mo'ljallangan maxsus public ey-pi-ay hisoblanadi.",
+    "a0": 55.84,
+    "a1": 68.69,
+    "words": [
+      {
+        "w": "Bunday",
+        "s": 55.84,
+        "e": 56.14
+      },
+      {
+        "w": "muqarrar",
+        "s": 56.2,
+        "e": 56.64
+      },
+      {
+        "w": "holatlar",
+        "s": 56.68,
+        "e": 57.14
+      },
+      {
+        "w": "uchun",
+        "s": 57.18,
+        "e": 57.38
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 57.74,
+        "e": 58.12
+      },
+      {
+        "w": "entitiz",
+        "s": 58.32,
+        "e": 58.68
+      },
+      {
+        "w": "qatlamida",
+        "s": 58.74,
+        "e": 59.18
+      },
+      {
+        "w": "maxsus",
+        "s": 59.26,
+        "e": 59.64
+      },
+      {
+        "w": "et-iks,",
+        "s": 60.02,
+        "e": 60.54
+      },
+      {
+        "w": "ya'ni",
+        "s": 60.78,
+        "e": 60.98
+      },
+      {
+        "w": "kesishuv",
+        "s": 61.3,
+        "e": 61.76
+      },
+      {
+        "w": "belgisini",
+        "s": 61.84,
+        "e": 62.28
+      },
+      {
+        "w": "joriy",
+        "s": 62.32,
+        "e": 62.6
+      },
+      {
+        "w": "qilgan.",
+        "s": 62.66,
+        "e": 62.96
+      },
+      {
+        "w": "Bu",
+        "s": 63.5,
+        "e": 63.58
+      },
+      {
+        "w": "papka",
+        "s": 63.7,
+        "e": 64.04
+      },
+      {
+        "w": "boshqa",
+        "s": 64.4,
+        "e": 64.72
+      },
+      {
+        "w": "aniq",
+        "s": 64.9,
+        "e": 65.14
+      },
+      {
+        "w": "bir",
+        "s": 65.2,
+        "e": 65.32
+      },
+      {
+        "w": "entiti",
+        "s": 65.42,
+        "e": 65.7
+      },
+      {
+        "w": "uchun",
+        "s": 65.78,
+        "e": 65.94
+      },
+      {
+        "w": "mo'ljallangan",
+        "s": 65.98,
+        "e": 66.6
+      },
+      {
+        "w": "maxsus",
+        "s": 66.7,
+        "e": 67.12
+      },
+      {
+        "w": "public",
+        "s": 67.26,
+        "e": 67.65
+      },
+      {
+        "w": "ey-pi-ay",
+        "s": 67.77,
+        "e": 68.13
+      },
+      {
+        "w": "hisoblanadi.",
+        "s": 68.17,
+        "e": 68.69
+      }
+    ]
+  },
+  {
+    "id": "L7",
+    "scene": "at_x_shablon",
+    "text": "Muhim qoida: at x belgisini hech qachon features yoki widgets qatlamida ishlatib bo'lmaydi. U faqat domen obyektlari modellarini o'zaro ulashda oxirgi chora sifatida qo'llanadi.",
+    "show": "Muhim qoida: at x belgisini hech qachon features yoki widgets qatlamida ishlatib bo'lmaydi. U faqat domen obyektlari modellarini o'zaro ulashda oxirgi chora sifatida qo'llanadi.",
+    "say": "Muhim qoida: et-iks belgisini hech qachon fichers yoki vijets qatlamida ishlatib bo'lmaydi. U faqat domen obyektlari modellarini o'zaro ulashda oxirgi chora sifatida qo'llanadi.",
+    "a0": 69.45,
+    "a1": 80.53,
+    "words": [
+      {
+        "w": "Muhim",
+        "s": 69.45,
+        "e": 69.73
+      },
+      {
+        "w": "qoida:",
+        "s": 69.79,
+        "e": 70.05
+      },
+      {
+        "w": "et-iks",
+        "s": 70.53,
+        "e": 70.91
+      },
+      {
+        "w": "belgisini",
+        "s": 70.95,
+        "e": 71.37
+      },
+      {
+        "w": "hech",
+        "s": 71.49,
+        "e": 71.71
+      },
+      {
+        "w": "qachon",
+        "s": 71.77,
+        "e": 72.07
+      },
+      {
+        "w": "fichers",
+        "s": 72.19,
+        "e": 72.55
+      },
+      {
+        "w": "yoki",
+        "s": 72.55,
+        "e": 72.81
+      },
+      {
+        "w": "vijets",
+        "s": 72.91,
+        "e": 73.23
+      },
+      {
+        "w": "qatlamida",
+        "s": 73.25,
+        "e": 73.67
+      },
+      {
+        "w": "ishlatib",
+        "s": 73.73,
+        "e": 74.09
+      },
+      {
+        "w": "bo'lmaydi.",
+        "s": 74.17,
+        "e": 74.65
+      },
+      {
+        "w": "U",
+        "s": 75.29,
+        "e": 75.31
+      },
+      {
+        "w": "faqat",
+        "s": 75.41,
+        "e": 75.73
+      },
+      {
+        "w": "domen",
+        "s": 76.05,
+        "e": 76.39
+      },
+      {
+        "w": "obyektlari",
+        "s": 76.51,
+        "e": 76.97
+      },
+      {
+        "w": "modellarini",
+        "s": 77.03,
+        "e": 77.59
+      },
+      {
+        "w": "o'zaro",
+        "s": 77.75,
+        "e": 78.05
+      },
+      {
+        "w": "ulashda",
+        "s": 78.15,
+        "e": 78.49
+      },
+      {
+        "w": "oxirgi",
+        "s": 78.93,
+        "e": 79.35
+      },
+      {
+        "w": "chora",
+        "s": 79.41,
+        "e": 79.65
+      },
+      {
+        "w": "sifatida",
+        "s": 79.69,
+        "e": 80.03
+      },
+      {
+        "w": "qo'llanadi.",
+        "s": 80.07,
+        "e": 80.53
+      }
+    ]
+  },
+  {
+    "id": "L8",
+    "scene": "strategiya_ab",
+    "text": "Xo'sh, agar features yoki widgets ichida cross-import ehtiyoji tug'ilsa, qanday to'g'ri yo'l tutish kerak? Buning uchun to'rtta professional strategiya mavjud.",
+    "show": "Xo'sh, agar features yoki widgets ichida cross-import ehtiyoji tug'ilsa, qanday to'g'ri yo'l tutish kerak? Buning uchun to'rtta professional strategiya mavjud.",
+    "say": "Xo'sh, agar fichers yoki vijets ichida kross-import ehtiyoji tug'ilsa, qanday to'g'ri yo'l tutish kerak? Buning uchun to'rtta professional strategiya mavjud.",
+    "a0": 81.25,
+    "a1": 89.98,
+    "words": [
+      {
+        "w": "Xo'sh,",
+        "s": 81.25,
+        "e": 81.51
+      },
+      {
+        "w": "agar",
+        "s": 81.81,
+        "e": 82.05
+      },
+      {
+        "w": "fichers",
+        "s": 82.17,
+        "e": 82.52
+      },
+      {
+        "w": "yoki",
+        "s": 82.52,
+        "e": 82.78
+      },
+      {
+        "w": "vijets",
+        "s": 82.88,
+        "e": 83.2
+      },
+      {
+        "w": "ichida",
+        "s": 83.28,
+        "e": 83.54
+      },
+      {
+        "w": "kross-import",
+        "s": 83.64,
+        "e": 84.26
+      },
+      {
+        "w": "ehtiyoji",
+        "s": 84.32,
+        "e": 84.72
+      },
+      {
+        "w": "tug'ilsa,",
+        "s": 84.76,
+        "e": 85.1
+      },
+      {
+        "w": "qanday",
+        "s": 85.44,
+        "e": 85.76
+      },
+      {
+        "w": "to'g'ri",
+        "s": 85.78,
+        "e": 86.0
+      },
+      {
+        "w": "yo'l",
+        "s": 86.02,
+        "e": 86.14
+      },
+      {
+        "w": "tutish",
+        "s": 86.16,
+        "e": 86.4
+      },
+      {
+        "w": "kerak?",
+        "s": 86.42,
+        "e": 86.68
+      },
+      {
+        "w": "Buning",
+        "s": 87.38,
+        "e": 87.6
+      },
+      {
+        "w": "uchun",
+        "s": 87.62,
+        "e": 87.82
+      },
+      {
+        "w": "to'rtta",
+        "s": 88.14,
+        "e": 88.52
+      },
+      {
+        "w": "professional",
+        "s": 88.56,
+        "e": 89.14
+      },
+      {
+        "w": "strategiya",
+        "s": 89.18,
+        "e": 89.66
+      },
+      {
+        "w": "mavjud.",
+        "s": 89.7,
+        "e": 89.98
+      }
+    ]
+  },
+  {
+    "id": "L9",
+    "scene": "strategiya_ab",
+    "text": "Birinchi strategiya — slice'larni birlashtirish. Agar profile va profile-settings doimo birga o'zgarib bir-biriga muhtoj bo'lsa, ularni yagona profile slice'iga jamlash lozim.",
+    "show": "Birinchi strategiya — slice'larni birlashtirish. Agar profile va profile-settings doimo birga o'zgarib bir-biriga muhtoj bo'lsa, ularni yagona profile slice'iga jamlash lozim.",
+    "say": "Birinchi strategiya — slays'larni birlashtirish. Agar profayl va profayl-settings doimo birga o'zgarib bir-biriga muhtoj bo'lsa, ularni yagona profayl slays'iga jamlash lozim.",
+    "a0": 90.64,
+    "a1": 101.77,
+    "words": [
+      {
+        "w": "Birinchi",
+        "s": 90.64,
+        "e": 90.94
+      },
+      {
+        "w": "strategiya",
+        "s": 90.98,
+        "e": 91.44
+      },
+      {
+        "w": "—",
+        "s": 91.44,
+        "e": 91.44
+      },
+      {
+        "w": "slays'larni",
+        "s": 91.8,
+        "e": 92.38
+      },
+      {
+        "w": "birlashtirish.",
+        "s": 92.5,
+        "e": 93.08
+      },
+      {
+        "w": "Agar",
+        "s": 93.76,
+        "e": 94.0
+      },
+      {
+        "w": "profayl",
+        "s": 94.26,
+        "e": 94.74
+      },
+      {
+        "w": "va",
+        "s": 94.8,
+        "e": 94.88
+      },
+      {
+        "w": "profayl-settings",
+        "s": 94.96,
+        "e": 95.88
+      },
+      {
+        "w": "doimo",
+        "s": 96.0,
+        "e": 96.38
+      },
+      {
+        "w": "birga",
+        "s": 96.48,
+        "e": 96.7
+      },
+      {
+        "w": "o'zgarib",
+        "s": 96.82,
+        "e": 97.2
+      },
+      {
+        "w": "bir-biriga",
+        "s": 97.53,
+        "e": 97.95
+      },
+      {
+        "w": "muhtoj",
+        "s": 98.03,
+        "e": 98.37
+      },
+      {
+        "w": "bo'lsa,",
+        "s": 98.43,
+        "e": 98.69
+      },
+      {
+        "w": "ularni",
+        "s": 99.03,
+        "e": 99.37
+      },
+      {
+        "w": "yagona",
+        "s": 99.57,
+        "e": 100.03
+      },
+      {
+        "w": "profayl",
+        "s": 100.11,
+        "e": 100.55
+      },
+      {
+        "w": "slays'iga",
+        "s": 100.61,
+        "e": 101.03
+      },
+      {
+        "w": "jamlash",
+        "s": 101.09,
+        "e": 101.49
+      },
+      {
+        "w": "lozim.",
+        "s": 101.53,
+        "e": 101.77
+      }
+    ]
+  },
+  {
+    "id": "L10",
+    "scene": "strategiya_ab",
+    "text": "Ikkinchi strategiya — domen mantiqini pastga, entities qatlamiga tushirish. Agar bir nechta feature foydalanuvchi ma'lumotlarini ishlatsa, mantiq entities ichida saqlanadi, UI esa feature'da qoladi.",
+    "show": "Ikkinchi strategiya — domen mantiqini pastga, entities qatlamiga tushirish. Agar bir nechta feature foydalanuvchi ma'lumotlarini ishlatsa, mantiq entities ichida saqlanadi, UI esa feature'da qoladi.",
+    "say": "Ikkinchi strategiya — domen mantiqini pastga, entitiz qatlamiga tushirish. Agar bir nechta ficher foydalanuvchi ma'lumotlarini ishlatsa, mantiq entitiz ichida saqlanadi, yu-ay esa ficher'da qoladi.",
+    "a0": 102.55,
+    "a1": 114.66,
+    "words": [
+      {
+        "w": "Ikkinchi",
+        "s": 102.55,
+        "e": 102.91
+      },
+      {
+        "w": "strategiya",
+        "s": 102.95,
+        "e": 103.43
+      },
+      {
+        "w": "—",
+        "s": 103.43,
+        "e": 103.43
+      },
+      {
+        "w": "domen",
+        "s": 103.83,
+        "e": 104.19
+      },
+      {
+        "w": "mantiqini",
+        "s": 104.23,
+        "e": 104.73
+      },
+      {
+        "w": "pastga,",
+        "s": 104.91,
+        "e": 105.33
+      },
+      {
+        "w": "entitiz",
+        "s": 105.75,
+        "e": 106.11
+      },
+      {
+        "w": "qatlamiga",
+        "s": 106.15,
+        "e": 106.57
+      },
+      {
+        "w": "tushirish.",
+        "s": 106.59,
+        "e": 106.95
+      },
+      {
+        "w": "Agar",
+        "s": 107.61,
+        "e": 107.85
+      },
+      {
+        "w": "bir",
+        "s": 108.17,
+        "e": 108.29
+      },
+      {
+        "w": "nechta",
+        "s": 108.35,
+        "e": 108.59
+      },
+      {
+        "w": "ficher",
+        "s": 108.65,
+        "e": 108.93
+      },
+      {
+        "w": "foydalanuvchi",
+        "s": 108.97,
+        "e": 109.51
+      },
+      {
+        "w": "ma'lumotlarini",
+        "s": 109.55,
+        "e": 110.15
+      },
+      {
+        "w": "ishlatsa,",
+        "s": 110.19,
+        "e": 110.55
+      },
+      {
+        "w": "mantiq",
+        "s": 110.91,
+        "e": 111.33
+      },
+      {
+        "w": "entitiz",
+        "s": 111.53,
+        "e": 111.91
+      },
+      {
+        "w": "ichida",
+        "s": 111.97,
+        "e": 112.19
+      },
+      {
+        "w": "saqlanadi,",
+        "s": 112.25,
+        "e": 112.7
+      },
+      {
+        "w": "yu-ay",
+        "s": 113.1,
+        "e": 113.4
+      },
+      {
+        "w": "esa",
+        "s": 113.44,
+        "e": 113.62
+      },
+      {
+        "w": "ficher'da",
+        "s": 113.92,
+        "e": 114.32
+      },
+      {
+        "w": "qoladi.",
+        "s": 114.36,
+        "e": 114.66
+      }
+    ]
+  },
+  {
+    "id": "L11",
+    "scene": "strategiya_cd",
+    "text": "Uchinchi yo'l — yuqori qatlamda kompozitsiya qilish, ya'ni Inversion of Control. Bitta feature boshqasini chaqirmaydi, sahifa ularni slot yoki bolalar orqali bir-biriga uzatadi.",
+    "show": "Uchinchi yo'l — yuqori qatlamda kompozitsiya qilish, ya'ni Inversion of Control. Bitta feature boshqasini chaqirmaydi, sahifa ularni slot yoki bolalar orqali bir-biriga uzatadi.",
+    "say": "Uchinchi yo'l — yuqori qatlamda kompozitsiya qilish, ya'ni Invershn of Kontrol. Bitta ficher boshqasini chaqirmaydi, sahifa ularni slot yoki bolalar orqali bir-biriga uzatadi.",
+    "a0": 115.48,
+    "a1": 126.36,
+    "words": [
+      {
+        "w": "Uchinchi",
+        "s": 115.48,
+        "e": 115.84
+      },
+      {
+        "w": "yo'l",
+        "s": 115.88,
+        "e": 116.04
+      },
+      {
+        "w": "—",
+        "s": 116.04,
+        "e": 116.04
+      },
+      {
+        "w": "yuqori",
+        "s": 116.36,
+        "e": 116.72
+      },
+      {
+        "w": "qatlamda",
+        "s": 116.76,
+        "e": 117.18
+      },
+      {
+        "w": "kompozitsiya",
+        "s": 117.28,
+        "e": 117.88
+      },
+      {
+        "w": "qilish,",
+        "s": 117.92,
+        "e": 118.18
+      },
+      {
+        "w": "ya'ni",
+        "s": 118.42,
+        "e": 118.64
+      },
+      {
+        "w": "Invershn",
+        "s": 118.98,
+        "e": 119.5
+      },
+      {
+        "w": "of",
+        "s": 119.62,
+        "e": 119.72
+      },
+      {
+        "w": "Kontrol.",
+        "s": 119.8,
+        "e": 120.18
+      },
+      {
+        "w": "Bitta",
+        "s": 120.66,
+        "e": 120.88
+      },
+      {
+        "w": "ficher",
+        "s": 120.94,
+        "e": 121.22
+      },
+      {
+        "w": "boshqasini",
+        "s": 121.44,
+        "e": 121.9
+      },
+      {
+        "w": "chaqirmaydi,",
+        "s": 121.94,
+        "e": 122.5
+      },
+      {
+        "w": "sahifa",
+        "s": 122.84,
+        "e": 123.24
+      },
+      {
+        "w": "ularni",
+        "s": 123.32,
+        "e": 123.64
+      },
+      {
+        "w": "slot",
+        "s": 123.7,
+        "e": 124.02
+      },
+      {
+        "w": "yoki",
+        "s": 124.04,
+        "e": 124.34
+      },
+      {
+        "w": "bolalar",
+        "s": 124.7,
+        "e": 125.12
+      },
+      {
+        "w": "orqali",
+        "s": 125.2,
+        "e": 125.5
+      },
+      {
+        "w": "bir-biriga",
+        "s": 125.56,
+        "e": 125.9
+      },
+      {
+        "w": "uzatadi.",
+        "s": 125.94,
+        "e": 126.36
+      }
+    ]
+  },
+  {
+    "id": "L12",
+    "scene": "strategiya_cd",
+    "text": "To'rtinchi chora — qat'iy public API. Boshqa iloj qolmaganda chaqiruvga ruxsat beriladi, biroq faqat ochiq eksportlar orqali, ichki fayllar va store'larga kirish mutlaqo taqiqlanadi.",
+    "show": "To'rtinchi chora — qat'iy public API. Boshqa iloj qolmaganda chaqiruvga ruxsat beriladi, biroq faqat ochiq eksportlar orqali, ichki fayllar va store'larga kirish mutlaqo taqiqlanadi.",
+    "say": "To'rtinchi chora — qat'iy public ey-pi-ay. Boshqa iloj qolmaganda chaqiruvga ruxsat beriladi, biroq faqat ochiq eksportlar orqali, ichki fayllar va storlarga kirish mutlaqo taqiqlanadi.",
+    "a0": 127.08,
+    "a1": 139.39,
+    "words": [
+      {
+        "w": "To'rtinchi",
+        "s": 127.08,
+        "e": 127.53
+      },
+      {
+        "w": "chora",
+        "s": 127.59,
+        "e": 127.89
+      },
+      {
+        "w": "—",
+        "s": 127.89,
+        "e": 127.89
+      },
+      {
+        "w": "qat'iy",
+        "s": 128.09,
+        "e": 128.49
+      },
+      {
+        "w": "public",
+        "s": 128.67,
+        "e": 129.03
+      },
+      {
+        "w": "ey-pi-ay.",
+        "s": 129.11,
+        "e": 129.47
+      },
+      {
+        "w": "Boshqa",
+        "s": 129.97,
+        "e": 130.23
+      },
+      {
+        "w": "iloj",
+        "s": 130.27,
+        "e": 130.47
+      },
+      {
+        "w": "qolmaganda",
+        "s": 130.53,
+        "e": 131.13
+      },
+      {
+        "w": "chaqiruvga",
+        "s": 131.23,
+        "e": 131.73
+      },
+      {
+        "w": "ruxsat",
+        "s": 131.77,
+        "e": 132.11
+      },
+      {
+        "w": "beriladi,",
+        "s": 132.15,
+        "e": 132.59
+      },
+      {
+        "w": "biroq",
+        "s": 132.67,
+        "e": 132.91
+      },
+      {
+        "w": "faqat",
+        "s": 133.21,
+        "e": 133.49
+      },
+      {
+        "w": "ochiq",
+        "s": 133.71,
+        "e": 134.01
+      },
+      {
+        "w": "eksportlar",
+        "s": 134.13,
+        "e": 134.65
+      },
+      {
+        "w": "orqali,",
+        "s": 134.77,
+        "e": 135.15
+      },
+      {
+        "w": "ichki",
+        "s": 135.45,
+        "e": 135.73
+      },
+      {
+        "w": "fayllar",
+        "s": 135.83,
+        "e": 136.35
+      },
+      {
+        "w": "va",
+        "s": 136.45,
+        "e": 136.53
+      },
+      {
+        "w": "storlarga",
+        "s": 136.69,
+        "e": 137.23
+      },
+      {
+        "w": "kirish",
+        "s": 137.29,
+        "e": 137.57
+      },
+      {
+        "w": "mutlaqo",
+        "s": 137.93,
+        "e": 138.53
+      },
+      {
+        "w": "taqiqlanadi.",
+        "s": 138.67,
+        "e": 139.39
+      }
+    ]
+  },
+  {
+    "id": "L13",
+    "scene": "strategiya_cd",
+    "text": "Ushbu to'rtinchi holatda arxitektura qarori loyiha hujjatlarida yoki izohlarda aniq yozib qo'yilishi va keyinchalik refaktoring qilinishi shart.",
+    "show": "Ushbu to'rtinchi holatda arxitektura qarori loyiha hujjatlarida yoki izohlarda aniq yozib qo'yilishi va keyinchalik refaktoring qilinishi shart.",
+    "say": "Ushbu to'rtinchi holatda arxitektura qarori loyiha hujjatlarida yoki izohlarda aniq yozib qo'yilishi va keyinchalik refaktoring qilinishi shart.",
+    "a0": 140.29,
+    "a1": 148.94,
+    "words": [
+      {
+        "w": "Ushbu",
+        "s": 140.29,
+        "e": 140.49
+      },
+      {
+        "w": "to'rtinchi",
+        "s": 140.55,
+        "e": 140.93
+      },
+      {
+        "w": "holatda",
+        "s": 140.97,
+        "e": 141.39
+      },
+      {
+        "w": "arxitektura",
+        "s": 141.53,
+        "e": 142.13
+      },
+      {
+        "w": "qarori",
+        "s": 142.21,
+        "e": 142.56
+      },
+      {
+        "w": "loyiha",
+        "s": 142.64,
+        "e": 142.94
+      },
+      {
+        "w": "hujjatlarida",
+        "s": 142.98,
+        "e": 143.66
+      },
+      {
+        "w": "yoki",
+        "s": 143.7,
+        "e": 144.02
+      },
+      {
+        "w": "izohlarda",
+        "s": 144.4,
+        "e": 144.9
+      },
+      {
+        "w": "aniq",
+        "s": 145.1,
+        "e": 145.38
+      },
+      {
+        "w": "yozib",
+        "s": 145.42,
+        "e": 145.74
+      },
+      {
+        "w": "qo'yilishi",
+        "s": 145.8,
+        "e": 146.24
+      },
+      {
+        "w": "va",
+        "s": 146.32,
+        "e": 146.4
+      },
+      {
+        "w": "keyinchalik",
+        "s": 146.76,
+        "e": 147.36
+      },
+      {
+        "w": "refaktoring",
+        "s": 147.44,
+        "e": 148.04
+      },
+      {
+        "w": "qilinishi",
+        "s": 148.06,
+        "e": 148.54
+      },
+      {
+        "w": "shart.",
+        "s": 148.66,
+        "e": 148.94
+      }
+    ]
+  },
+  {
+    "id": "L14",
+    "scene": "steiger",
+    "text": "Loyiha kattalashgani sari bunday noo'rin cross-importlarni ko'z bilan tutib qolish imkonsiz. Shu sababli Steiger linteri gorizontal importlarni avtomatik nazorat qiladi.",
+    "show": "Loyiha kattalashgani sari bunday noo'rin cross-importlarni ko'z bilan tutib qolish imkonsiz. Shu sababli Steiger linteri gorizontal importlarni avtomatik nazorat qiladi.",
+    "say": "Loyiha kattalashgani sari bunday noo'rin kross-importlarni ko'z bilan tutib qolish imkonsiz. Shu sababli stayger linteri gorizontal importlarni avtomatik nazorat qiladi.",
+    "a0": 149.74,
+    "a1": 160.03,
+    "words": [
+      {
+        "w": "Loyiha",
+        "s": 149.74,
+        "e": 150.06
+      },
+      {
+        "w": "kattalashgani",
+        "s": 150.06,
+        "e": 150.64
+      },
+      {
+        "w": "sari",
+        "s": 150.7,
+        "e": 150.92
+      },
+      {
+        "w": "bunday",
+        "s": 150.98,
+        "e": 151.28
+      },
+      {
+        "w": "noo'rin",
+        "s": 151.36,
+        "e": 151.8
+      },
+      {
+        "w": "kross-importlarni",
+        "s": 151.88,
+        "e": 152.78
+      },
+      {
+        "w": "ko'z",
+        "s": 153.08,
+        "e": 153.3
+      },
+      {
+        "w": "bilan",
+        "s": 153.34,
+        "e": 153.56
+      },
+      {
+        "w": "tutib",
+        "s": 153.6,
+        "e": 153.8
+      },
+      {
+        "w": "qolish",
+        "s": 153.82,
+        "e": 154.1
+      },
+      {
+        "w": "imkonsiz.",
+        "s": 154.18,
+        "e": 154.72
+      },
+      {
+        "w": "Shu",
+        "s": 155.12,
+        "e": 155.2
+      },
+      {
+        "w": "sababli",
+        "s": 155.28,
+        "e": 155.68
+      },
+      {
+        "w": "stayger",
+        "s": 155.76,
+        "e": 156.18
+      },
+      {
+        "w": "linteri",
+        "s": 156.28,
+        "e": 156.7
+      },
+      {
+        "w": "gorizontal",
+        "s": 157.06,
+        "e": 157.71
+      },
+      {
+        "w": "importlarni",
+        "s": 157.85,
+        "e": 158.45
+      },
+      {
+        "w": "avtomatik",
+        "s": 158.63,
+        "e": 159.27
+      },
+      {
+        "w": "nazorat",
+        "s": 159.33,
+        "e": 159.73
+      },
+      {
+        "w": "qiladi.",
+        "s": 159.77,
+        "e": 160.03
+      }
+    ]
+  },
+  {
+    "id": "L15",
+    "scene": "steiger",
+    "text": "Steiger noqonuniy chaqiruvlarni va ichki fayllarga kirishlarni darhol belgilab beradi va arxitektura tozaligini saqlashga yordam beradi.",
+    "show": "Steiger noqonuniy chaqiruvlarni va ichki fayllarga kirishlarni darhol belgilab beradi va arxitektura tozaligini saqlashga yordam beradi.",
+    "say": "Stayger noqonuniy chaqiruvlarni va ichki fayllarga kirishlarni darhol belgilab beradi va arxitektura tozaligini saqlashga yordam beradi.",
+    "a0": 160.75,
+    "a1": 169.45,
+    "words": [
+      {
+        "w": "Stayger",
+        "s": 160.75,
+        "e": 161.15
+      },
+      {
+        "w": "noqonuniy",
+        "s": 161.47,
+        "e": 162.09
+      },
+      {
+        "w": "chaqiruvlarni",
+        "s": 162.15,
+        "e": 162.81
+      },
+      {
+        "w": "va",
+        "s": 162.87,
+        "e": 162.93
+      },
+      {
+        "w": "ichki",
+        "s": 163.11,
+        "e": 163.43
+      },
+      {
+        "w": "fayllarga",
+        "s": 163.49,
+        "e": 164.01
+      },
+      {
+        "w": "kirishlarni",
+        "s": 164.07,
+        "e": 164.55
+      },
+      {
+        "w": "darhol",
+        "s": 164.95,
+        "e": 165.37
+      },
+      {
+        "w": "belgilab",
+        "s": 165.43,
+        "e": 165.83
+      },
+      {
+        "w": "beradi",
+        "s": 165.85,
+        "e": 166.17
+      },
+      {
+        "w": "va",
+        "s": 166.21,
+        "e": 166.31
+      },
+      {
+        "w": "arxitektura",
+        "s": 166.53,
+        "e": 167.17
+      },
+      {
+        "w": "tozaligini",
+        "s": 167.23,
+        "e": 167.77
+      },
+      {
+        "w": "saqlashga",
+        "s": 168.09,
+        "e": 168.63
+      },
+      {
+        "w": "yordam",
+        "s": 168.65,
+        "e": 169.09
+      },
+      {
+        "w": "beradi.",
+        "s": 169.13,
+        "e": 169.45
+      }
+    ]
+  },
+  {
+    "id": "L16",
+    "scene": "xulosa",
+    "text": "Xulosa qilsak: gorizontal bog'lanishlardan qoching, entities uchun zaruratda at x dan foydalaning va toza kompozitsiyani tanlang. Keyingi bobda yuqori qatlamda kompozitsiyani ko'rib chiqamiz. Rahmat!",
+    "show": "Xulosa qilsak: gorizontal bog'lanishlardan qoching, entities uchun zaruratda at x dan foydalaning va toza kompozitsiyani tanlang. Keyingi bobda yuqori qatlamda kompozitsiyani ko'rib chiqamiz. Rahmat!",
+    "say": "Xulosa qilsak: gorizontal bog'lanishlardan qoching, entitiz uchun zaruratda et-iks dan foydalaning va toza kompozitsiyani tanlang. Keyingi bobda yuqori qatlamda kompozitsiyani ko'rib chiqamiz. Rahmat!",
+    "a0": 170.25,
+    "a1": 182.9,
+    "words": [
+      {
+        "w": "Xulosa",
+        "s": 170.25,
+        "e": 170.61
+      },
+      {
+        "w": "qilsak:",
+        "s": 170.67,
+        "e": 171.09
+      },
+      {
+        "w": "gorizontal",
+        "s": 171.45,
+        "e": 172.01
+      },
+      {
+        "w": "bog'lanishlardan",
+        "s": 172.05,
+        "e": 172.8
+      },
+      {
+        "w": "qoching,",
+        "s": 172.9,
+        "e": 173.36
+      },
+      {
+        "w": "entitiz",
+        "s": 173.76,
+        "e": 174.16
+      },
+      {
+        "w": "uchun",
+        "s": 174.24,
+        "e": 174.44
+      },
+      {
+        "w": "zaruratda",
+        "s": 174.5,
+        "e": 175.06
+      },
+      {
+        "w": "et-iks",
+        "s": 175.24,
+        "e": 175.62
+      },
+      {
+        "w": "dan",
+        "s": 175.66,
+        "e": 175.8
+      },
+      {
+        "w": "foydalaning",
+        "s": 175.88,
+        "e": 176.48
+      },
+      {
+        "w": "va",
+        "s": 176.52,
+        "e": 176.6
+      },
+      {
+        "w": "toza",
+        "s": 176.98,
+        "e": 177.26
+      },
+      {
+        "w": "kompozitsiyani",
+        "s": 177.34,
+        "e": 178.06
+      },
+      {
+        "w": "tanlang.",
+        "s": 178.12,
+        "e": 178.5
+      },
+      {
+        "w": "Keyingi",
+        "s": 179.14,
+        "e": 179.44
+      },
+      {
+        "w": "bobda",
+        "s": 179.48,
+        "e": 179.76
+      },
+      {
+        "w": "yuqori",
+        "s": 179.84,
+        "e": 180.14
+      },
+      {
+        "w": "qatlamda",
+        "s": 180.18,
+        "e": 180.6
+      },
+      {
+        "w": "kompozitsiyani",
+        "s": 180.66,
+        "e": 181.41
+      },
+      {
+        "w": "ko'rib",
+        "s": 181.47,
+        "e": 181.69
+      },
+      {
+        "w": "chiqamiz.",
+        "s": 181.73,
+        "e": 182.09
+      },
+      {
+        "w": "Rahmat!",
+        "s": 182.5,
+        "e": 182.9
+      }
+    ]
+  }
+]
