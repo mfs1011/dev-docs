@@ -1,0 +1,1343 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Salom! Bu FSD qo'llanmasining o'n to'rtinchi bobi — Public API chuqur. Public API har bir slice va tashqi kod o'rtasidagi rasmiy shartnoma hamda mustahkam darvozadir.",
+    "show": "Salom! Bu FSD qo'llanmasining o'n to'rtinchi bobi — Public API chuqur. Public API har bir slice va tashqi kod o'rtasidagi rasmiy shartnoma hamda mustahkam darvozadir.",
+    "say": "Salom! Bu Ef-es-di qo'llanmasining o'n to'rtinchi bobi — Public ey-pi-ay chuqur. Public ey-pi-ay har bir slays va tashqi kod o'rtasidagi rasmiy shartnoma hamda mustahkam darvozadir.",
+    "a0": 0.42,
+    "a1": 12.89,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.42,
+        "e": 0.76
+      },
+      {
+        "w": "Bu",
+        "s": 1.22,
+        "e": 1.28
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 1.46,
+        "e": 1.88
+      },
+      {
+        "w": "qo'llanmasining",
+        "s": 2.0,
+        "e": 2.76
+      },
+      {
+        "w": "o'n",
+        "s": 2.9,
+        "e": 2.98
+      },
+      {
+        "w": "to'rtinchi",
+        "s": 3.06,
+        "e": 3.5
+      },
+      {
+        "w": "bobi",
+        "s": 3.56,
+        "e": 3.82
+      },
+      {
+        "w": "—",
+        "s": 3.82,
+        "e": 3.82
+      },
+      {
+        "w": "Public",
+        "s": 4.22,
+        "e": 4.58
+      },
+      {
+        "w": "ey-pi-ay",
+        "s": 4.7,
+        "e": 5.16
+      },
+      {
+        "w": "chuqur.",
+        "s": 5.26,
+        "e": 5.62
+      },
+      {
+        "w": "Public",
+        "s": 6.8,
+        "e": 7.12
+      },
+      {
+        "w": "ey-pi-ay",
+        "s": 7.22,
+        "e": 7.65
+      },
+      {
+        "w": "har",
+        "s": 7.79,
+        "e": 7.99
+      },
+      {
+        "w": "bir",
+        "s": 8.03,
+        "e": 8.15
+      },
+      {
+        "w": "slays",
+        "s": 8.25,
+        "e": 8.63
+      },
+      {
+        "w": "va",
+        "s": 8.71,
+        "e": 8.79
+      },
+      {
+        "w": "tashqi",
+        "s": 8.91,
+        "e": 9.25
+      },
+      {
+        "w": "kod",
+        "s": 9.33,
+        "e": 9.51
+      },
+      {
+        "w": "o'rtasidagi",
+        "s": 9.55,
+        "e": 10.07
+      },
+      {
+        "w": "rasmiy",
+        "s": 10.13,
+        "e": 10.43
+      },
+      {
+        "w": "shartnoma",
+        "s": 10.51,
+        "e": 10.99
+      },
+      {
+        "w": "hamda",
+        "s": 11.11,
+        "e": 11.39
+      },
+      {
+        "w": "mustahkam",
+        "s": 11.71,
+        "e": 12.25
+      },
+      {
+        "w": "darvozadir.",
+        "s": 12.31,
+        "e": 12.89
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "shartnoma_va_eksport",
+    "text": "Slice o'zining ichki tuzilishini index nuqtasi orqali berkitadi va faqat kerakli qismlarnigina tashqariga ochadi.",
+    "show": "Slice o'zining ichki tuzilishini index nuqtasi orqali berkitadi va faqat kerakli qismlarnigina tashqariga ochadi.",
+    "say": "Slice o'zining ichki tuzilishini index nuqtasi orqali berkitadi va faqat kerakli qismlarnigina tashqariga ochadi.",
+    "a0": 13.75,
+    "a1": 20.65,
+    "words": [
+      {
+        "w": "Slice",
+        "s": 13.75,
+        "e": 14.09
+      },
+      {
+        "w": "o'zining",
+        "s": 14.17,
+        "e": 14.49
+      },
+      {
+        "w": "ichki",
+        "s": 14.55,
+        "e": 14.77
+      },
+      {
+        "w": "tuzilishini",
+        "s": 14.81,
+        "e": 15.29
+      },
+      {
+        "w": "index",
+        "s": 15.69,
+        "e": 16.01
+      },
+      {
+        "w": "nuqtasi",
+        "s": 16.17,
+        "e": 16.61
+      },
+      {
+        "w": "orqali",
+        "s": 16.67,
+        "e": 16.95
+      },
+      {
+        "w": "berkitadi",
+        "s": 17.01,
+        "e": 17.49
+      },
+      {
+        "w": "va",
+        "s": 17.57,
+        "e": 17.65
+      },
+      {
+        "w": "faqat",
+        "s": 18.05,
+        "e": 18.35
+      },
+      {
+        "w": "kerakli",
+        "s": 18.45,
+        "e": 18.89
+      },
+      {
+        "w": "qismlarnigina",
+        "s": 19.01,
+        "e": 19.73
+      },
+      {
+        "w": "tashqariga",
+        "s": 19.81,
+        "e": 20.31
+      },
+      {
+        "w": "ochadi.",
+        "s": 20.37,
+        "e": 20.65
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "shartnoma_va_eksport",
+    "text": "Eng muhim qoida: eksport yulduzcha yozish taqiqlanadi — faqat aniq nomlangan eksportlar qo'llanilishi shart.",
+    "show": "Eng muhim qoida: eksport yulduzcha yozish taqiqlanadi — faqat aniq nomlangan eksportlar qo'llanilishi shart.",
+    "say": "Eng muhim qoida: eksport yulduzcha yozish taqiqlanadi — faqat aniq nomlangan eksportlar qo'llanilishi shart.",
+    "a0": 21.67,
+    "a1": 28.44,
+    "words": [
+      {
+        "w": "Eng",
+        "s": 21.67,
+        "e": 21.81
+      },
+      {
+        "w": "muhim",
+        "s": 21.85,
+        "e": 22.07
+      },
+      {
+        "w": "qoida:",
+        "s": 22.15,
+        "e": 22.43
+      },
+      {
+        "w": "eksport",
+        "s": 23.24,
+        "e": 23.7
+      },
+      {
+        "w": "yulduzcha",
+        "s": 23.84,
+        "e": 24.3
+      },
+      {
+        "w": "yozish",
+        "s": 24.3,
+        "e": 24.7
+      },
+      {
+        "w": "taqiqlanadi",
+        "s": 24.76,
+        "e": 25.46
+      },
+      {
+        "w": "—",
+        "s": 25.46,
+        "e": 25.46
+      },
+      {
+        "w": "faqat",
+        "s": 25.74,
+        "e": 26.02
+      },
+      {
+        "w": "aniq",
+        "s": 26.18,
+        "e": 26.42
+      },
+      {
+        "w": "nomlangan",
+        "s": 26.5,
+        "e": 26.98
+      },
+      {
+        "w": "eksportlar",
+        "s": 27.08,
+        "e": 27.52
+      },
+      {
+        "w": "qo'llanilishi",
+        "s": 27.58,
+        "e": 28.14
+      },
+      {
+        "w": "shart.",
+        "s": 28.2,
+        "e": 28.44
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "shartnoma_va_eksport",
+    "text": "Aks holda ichki yordamchi mantiq tasodifan tashqariga chiqib ketadi va kelajakda refaktoring qilish imkonsiz bo'lib qoladi.",
+    "show": "Aks holda ichki yordamchi mantiq tasodifan tashqariga chiqib ketadi va kelajakda refaktoring qilish imkonsiz bo'lib qoladi.",
+    "say": "Aks holda ichki yordamchi mantiq tasodifan tashqariga chiqib ketadi va kelajakda refaktoring qilish imkonsiz bo'lib qoladi.",
+    "a0": 29.24,
+    "a1": 35.6,
+    "words": [
+      {
+        "w": "Aks",
+        "s": 29.24,
+        "e": 29.4
+      },
+      {
+        "w": "holda",
+        "s": 29.46,
+        "e": 29.7
+      },
+      {
+        "w": "ichki",
+        "s": 30.04,
+        "e": 30.24
+      },
+      {
+        "w": "yordamchi",
+        "s": 30.24,
+        "e": 30.74
+      },
+      {
+        "w": "mantiq",
+        "s": 30.78,
+        "e": 31.08
+      },
+      {
+        "w": "tasodifan",
+        "s": 31.16,
+        "e": 31.7
+      },
+      {
+        "w": "tashqariga",
+        "s": 31.74,
+        "e": 32.14
+      },
+      {
+        "w": "chiqib",
+        "s": 32.18,
+        "e": 32.34
+      },
+      {
+        "w": "ketadi",
+        "s": 32.38,
+        "e": 32.66
+      },
+      {
+        "w": "va",
+        "s": 32.7,
+        "e": 32.76
+      },
+      {
+        "w": "kelajakda",
+        "s": 33.14,
+        "e": 33.62
+      },
+      {
+        "w": "refaktoring",
+        "s": 33.68,
+        "e": 34.28
+      },
+      {
+        "w": "qilish",
+        "s": 34.3,
+        "e": 34.52
+      },
+      {
+        "w": "imkonsiz",
+        "s": 34.64,
+        "e": 35.1
+      },
+      {
+        "w": "bo'lib",
+        "s": 35.14,
+        "e": 35.32
+      },
+      {
+        "w": "qoladi.",
+        "s": 35.34,
+        "e": 35.6
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "siklik_importlar",
+    "text": "Public API bilan bog'liq eng ko'p uchraydigan xato — bu slice ichida o'z index'idan import qilishdir.",
+    "show": "Public API bilan bog'liq eng ko'p uchraydigan xato — bu slice ichida o'z index'idan import qilishdir.",
+    "say": "Public ey-pi-ay bilan bog'liq eng ko'p uchraydigan xato — bu slays ichida o'z index'idan import qilishdir.",
+    "a0": 36.54,
+    "a1": 42.63,
+    "words": [
+      {
+        "w": "Public",
+        "s": 36.54,
+        "e": 36.88
+      },
+      {
+        "w": "ey-pi-ay",
+        "s": 37.0,
+        "e": 37.4
+      },
+      {
+        "w": "bilan",
+        "s": 37.44,
+        "e": 37.63
+      },
+      {
+        "w": "bog'liq",
+        "s": 37.67,
+        "e": 37.95
+      },
+      {
+        "w": "eng",
+        "s": 38.11,
+        "e": 38.25
+      },
+      {
+        "w": "ko'p",
+        "s": 38.27,
+        "e": 38.43
+      },
+      {
+        "w": "uchraydigan",
+        "s": 38.47,
+        "e": 38.95
+      },
+      {
+        "w": "xato",
+        "s": 39.01,
+        "e": 39.27
+      },
+      {
+        "w": "—",
+        "s": 39.27,
+        "e": 39.27
+      },
+      {
+        "w": "bu",
+        "s": 39.45,
+        "e": 39.53
+      },
+      {
+        "w": "slays",
+        "s": 39.97,
+        "e": 40.33
+      },
+      {
+        "w": "ichida",
+        "s": 40.41,
+        "e": 40.69
+      },
+      {
+        "w": "o'z",
+        "s": 40.93,
+        "e": 41.09
+      },
+      {
+        "w": "index'idan",
+        "s": 41.25,
+        "e": 41.83
+      },
+      {
+        "w": "import",
+        "s": 41.95,
+        "e": 42.25
+      },
+      {
+        "w": "qilishdir.",
+        "s": 42.29,
+        "e": 42.63
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "siklik_importlar",
+    "text": "Bitta slice ichidagi komponentlar bir-birini faqat to'liq nisbiy yo'l orqali chaqirishi shart.",
+    "show": "Bitta slice ichidagi komponentlar bir-birini faqat to'liq nisbiy yo'l orqali chaqirishi shart.",
+    "say": "Bitta slays ichidagi komponentlar bir-birini faqat to'liq nisbiy yo'l orqali chaqirishi shart.",
+    "a0": 43.47,
+    "a1": 48.37,
+    "words": [
+      {
+        "w": "Bitta",
+        "s": 43.47,
+        "e": 43.67
+      },
+      {
+        "w": "slays",
+        "s": 43.71,
+        "e": 43.97
+      },
+      {
+        "w": "ichidagi",
+        "s": 44.03,
+        "e": 44.39
+      },
+      {
+        "w": "komponentlar",
+        "s": 44.45,
+        "e": 45.05
+      },
+      {
+        "w": "bir-birini",
+        "s": 45.39,
+        "e": 45.79
+      },
+      {
+        "w": "faqat",
+        "s": 45.83,
+        "e": 46.09
+      },
+      {
+        "w": "to'liq",
+        "s": 46.19,
+        "e": 46.49
+      },
+      {
+        "w": "nisbiy",
+        "s": 46.61,
+        "e": 46.93
+      },
+      {
+        "w": "yo'l",
+        "s": 47.03,
+        "e": 47.21
+      },
+      {
+        "w": "orqali",
+        "s": 47.31,
+        "e": 47.61
+      },
+      {
+        "w": "chaqirishi",
+        "s": 47.67,
+        "e": 48.07
+      },
+      {
+        "w": "shart.",
+        "s": 48.13,
+        "e": 48.37
+      }
+    ]
+  },
+  {
+    "id": "L7",
+    "scene": "siklik_importlar",
+    "text": "Boshqa slice'lar esa har doim alias va index orqali kiradi — bu siklik bog'liqliklarni butunlay yo'q qiladi.",
+    "show": "Boshqa slice'lar esa har doim alias va index orqali kiradi — bu siklik bog'liqliklarni butunlay yo'q qiladi.",
+    "say": "Boshqa slayslar esa har doim alias va index orqali kiradi — bu siklik bog'liqliklarni butunlay yo'q qiladi.",
+    "a0": 49.13,
+    "a1": 55.22,
+    "words": [
+      {
+        "w": "Boshqa",
+        "s": 49.13,
+        "e": 49.39
+      },
+      {
+        "w": "slayslar",
+        "s": 49.43,
+        "e": 49.81
+      },
+      {
+        "w": "esa",
+        "s": 49.87,
+        "e": 50.01
+      },
+      {
+        "w": "har",
+        "s": 50.37,
+        "e": 50.53
+      },
+      {
+        "w": "doim",
+        "s": 50.57,
+        "e": 50.79
+      },
+      {
+        "w": "alias",
+        "s": 50.91,
+        "e": 51.27
+      },
+      {
+        "w": "va",
+        "s": 51.35,
+        "e": 51.41
+      },
+      {
+        "w": "index",
+        "s": 51.57,
+        "e": 51.81
+      },
+      {
+        "w": "orqali",
+        "s": 51.93,
+        "e": 52.21
+      },
+      {
+        "w": "kiradi",
+        "s": 52.25,
+        "e": 52.54
+      },
+      {
+        "w": "—",
+        "s": 52.54,
+        "e": 52.54
+      },
+      {
+        "w": "bu",
+        "s": 52.58,
+        "e": 52.66
+      },
+      {
+        "w": "siklik",
+        "s": 53.06,
+        "e": 53.4
+      },
+      {
+        "w": "bog'liqliklarni",
+        "s": 53.48,
+        "e": 54.2
+      },
+      {
+        "w": "butunlay",
+        "s": 54.3,
+        "e": 54.72
+      },
+      {
+        "w": "yo'q",
+        "s": 54.78,
+        "e": 54.92
+      },
+      {
+        "w": "qiladi.",
+        "s": 54.96,
+        "e": 55.22
+      }
+    ]
+  },
+  {
+    "id": "L8",
+    "scene": "tree_shaking",
+    "text": "Shared/ui qatlamida bitta umumiy index.ts ochish tree-shaking jarayonini buzishi mumkin.",
+    "show": "Shared/ui qatlamida bitta umumiy index.ts ochish tree-shaking jarayonini buzishi mumkin.",
+    "say": "Sherd/yu-ay qatlamida bitta umumiy index.ts ochish tree-shaking jarayonini buzishi mumkin.",
+    "a0": 55.3,
+    "a1": 62.14,
+    "words": [
+      {
+        "w": "Sherd/yu-ay",
+        "s": 55.3,
+        "e": 56.9
+      },
+      {
+        "w": "qatlamida",
+        "s": 56.9,
+        "e": 57.34
+      },
+      {
+        "w": "bitta",
+        "s": 57.4,
+        "e": 57.64
+      },
+      {
+        "w": "umumiy",
+        "s": 57.72,
+        "e": 58.04
+      },
+      {
+        "w": "index.ts",
+        "s": 58.04,
+        "e": 59.78
+      },
+      {
+        "w": "ochish",
+        "s": 59.78,
+        "e": 60.0
+      },
+      {
+        "w": "tree-shaking",
+        "s": 60.32,
+        "e": 60.94
+      },
+      {
+        "w": "jarayonini",
+        "s": 60.96,
+        "e": 61.46
+      },
+      {
+        "w": "buzishi",
+        "s": 61.54,
+        "e": 61.84
+      },
+      {
+        "w": "mumkin.",
+        "s": 61.88,
+        "e": 62.14
+      }
+    ]
+  },
+  {
+    "id": "L9",
+    "scene": "tree_shaking",
+    "text": "Shuning uchun shared/ui ichida har bir komponent o'zining mustaqil papkasiga ega bo'lishi tavsiya etiladi.",
+    "show": "Shuning uchun shared/ui ichida har bir komponent o'zining mustaqil papkasiga ega bo'lishi tavsiya etiladi.",
+    "say": "Shuning uchun sherd/yu-ay ichida har bir komponent o'zining mustaqil papkasiga ega bo'lishi tavsiya etiladi.",
+    "a0": 62.76,
+    "a1": 68.33,
+    "words": [
+      {
+        "w": "Shuning",
+        "s": 62.76,
+        "e": 62.98
+      },
+      {
+        "w": "uchun",
+        "s": 63.0,
+        "e": 63.18
+      },
+      {
+        "w": "sherd/yu-ay",
+        "s": 63.18,
+        "e": 64.26
+      },
+      {
+        "w": "ichida",
+        "s": 64.26,
+        "e": 64.52
+      },
+      {
+        "w": "har",
+        "s": 64.66,
+        "e": 64.84
+      },
+      {
+        "w": "bir",
+        "s": 64.9,
+        "e": 65.0
+      },
+      {
+        "w": "komponent",
+        "s": 65.04,
+        "e": 65.48
+      },
+      {
+        "w": "o'zining",
+        "s": 65.56,
+        "e": 65.84
+      },
+      {
+        "w": "mustaqil",
+        "s": 66.1,
+        "e": 66.52
+      },
+      {
+        "w": "papkasiga",
+        "s": 66.58,
+        "e": 67.04
+      },
+      {
+        "w": "ega",
+        "s": 67.14,
+        "e": 67.32
+      },
+      {
+        "w": "bo'lishi",
+        "s": 67.36,
+        "e": 67.63
+      },
+      {
+        "w": "tavsiya",
+        "s": 67.65,
+        "e": 67.97
+      },
+      {
+        "w": "etiladi.",
+        "s": 68.01,
+        "e": 68.33
+      }
+    ]
+  },
+  {
+    "id": "L10",
+    "scene": "tree_shaking",
+    "text": "Natijada oddiy Button chaqirilganda, sahifaga og'ir CodeEditor yoki begona kutubxonalar tushib qolmaydi.",
+    "show": "Natijada oddiy Button chaqirilganda, sahifaga og'ir CodeEditor yoki begona kutubxonalar tushib qolmaydi.",
+    "say": "Natijada oddiy Button chaqirilganda, sahifaga og'ir CodeEditor yoki begona kutubxonalar tushib qolmaydi.",
+    "a0": 69.03,
+    "a1": 75.45,
+    "words": [
+      {
+        "w": "Natijada",
+        "s": 69.03,
+        "e": 69.47
+      },
+      {
+        "w": "oddiy",
+        "s": 69.81,
+        "e": 70.03
+      },
+      {
+        "w": "Button",
+        "s": 70.19,
+        "e": 70.57
+      },
+      {
+        "w": "chaqirilganda,",
+        "s": 70.63,
+        "e": 71.25
+      },
+      {
+        "w": "sahifaga",
+        "s": 71.35,
+        "e": 71.81
+      },
+      {
+        "w": "og'ir",
+        "s": 72.15,
+        "e": 72.37
+      },
+      {
+        "w": "CodeEditor",
+        "s": 72.47,
+        "e": 73.17
+      },
+      {
+        "w": "yoki",
+        "s": 73.17,
+        "e": 73.47
+      },
+      {
+        "w": "begona",
+        "s": 73.83,
+        "e": 74.23
+      },
+      {
+        "w": "kutubxonalar",
+        "s": 74.27,
+        "e": 74.77
+      },
+      {
+        "w": "tushib",
+        "s": 74.81,
+        "e": 75.03
+      },
+      {
+        "w": "qolmaydi.",
+        "s": 75.05,
+        "e": 75.45
+      }
+    ]
+  },
+  {
+    "id": "L11",
+    "scene": "server_klient",
+    "text": "Next.js kabi zamonaviy freymvorklarda klient va server kodi aralashib ketmasligi uchun index.server nuqtasi ochiladi.",
+    "show": "Next.js kabi zamonaviy freymvorklarda klient va server kodi aralashib ketmasligi uchun index.server nuqtasi ochiladi.",
+    "say": "Next.js kabi zamonaviy freymvorklarda klient va server kodi aralashib ketmasligi uchun index.server nuqtasi ochiladi.",
+    "a0": 75.59,
+    "a1": 83.7,
+    "words": [
+      {
+        "w": "Next.js",
+        "s": 75.59,
+        "e": 77.03
+      },
+      {
+        "w": "kabi",
+        "s": 77.03,
+        "e": 77.27
+      },
+      {
+        "w": "zamonaviy",
+        "s": 77.35,
+        "e": 77.81
+      },
+      {
+        "w": "freymvorklarda",
+        "s": 77.89,
+        "e": 78.57
+      },
+      {
+        "w": "klient",
+        "s": 78.89,
+        "e": 79.33
+      },
+      {
+        "w": "va",
+        "s": 79.39,
+        "e": 79.47
+      },
+      {
+        "w": "server",
+        "s": 79.63,
+        "e": 79.97
+      },
+      {
+        "w": "kodi",
+        "s": 80.01,
+        "e": 80.23
+      },
+      {
+        "w": "aralashib",
+        "s": 80.31,
+        "e": 80.69
+      },
+      {
+        "w": "ketmasligi",
+        "s": 80.71,
+        "e": 81.17
+      },
+      {
+        "w": "uchun",
+        "s": 81.23,
+        "e": 81.41
+      },
+      {
+        "w": "index.server",
+        "s": 81.41,
+        "e": 83.0
+      },
+      {
+        "w": "nuqtasi",
+        "s": 83.0,
+        "e": 83.32
+      },
+      {
+        "w": "ochiladi.",
+        "s": 83.36,
+        "e": 83.7
+      }
+    ]
+  },
+  {
+    "id": "L12",
+    "scene": "server_klient",
+    "text": "Bu orqali maxfiy ma'lumotlar bazasi so'rovlari va server-only modullar brauzer paketiga tushishdan himoyalanadi.",
+    "show": "Bu orqali maxfiy ma'lumotlar bazasi so'rovlari va server-only modullar brauzer paketiga tushishdan himoyalanadi.",
+    "say": "Bu orqali maxfiy ma'lumotlar bazasi so'rovlari va server-only modullar brauzer paketiga tushishdan himoyalanadi.",
+    "a0": 84.4,
+    "a1": 90.68,
+    "words": [
+      {
+        "w": "Bu",
+        "s": 84.4,
+        "e": 84.44
+      },
+      {
+        "w": "orqali",
+        "s": 84.52,
+        "e": 84.82
+      },
+      {
+        "w": "maxfiy",
+        "s": 85.14,
+        "e": 85.48
+      },
+      {
+        "w": "ma'lumotlar",
+        "s": 85.58,
+        "e": 86.12
+      },
+      {
+        "w": "bazasi",
+        "s": 86.16,
+        "e": 86.52
+      },
+      {
+        "w": "so'rovlari",
+        "s": 86.58,
+        "e": 87.08
+      },
+      {
+        "w": "va",
+        "s": 87.16,
+        "e": 87.26
+      },
+      {
+        "w": "server-only",
+        "s": 87.62,
+        "e": 88.3
+      },
+      {
+        "w": "modullar",
+        "s": 88.4,
+        "e": 88.82
+      },
+      {
+        "w": "brauzer",
+        "s": 88.92,
+        "e": 89.3
+      },
+      {
+        "w": "paketiga",
+        "s": 89.32,
+        "e": 89.68
+      },
+      {
+        "w": "tushishdan",
+        "s": 89.72,
+        "e": 90.0
+      },
+      {
+        "w": "himoyalanadi.",
+        "s": 90.1,
+        "e": 90.68
+      }
+    ]
+  },
+  {
+    "id": "L13",
+    "scene": "steiger",
+    "text": "Steiger linterining public-api qoidasi slice ichiga to'g'ridan-to'g'ri bostirib kirishni va noto'g'ri eksportlarni doimiy nazorat qiladi.",
+    "show": "Steiger linterining public-api qoidasi slice ichiga to'g'ridan-to'g'ri bostirib kirishni va noto'g'ri eksportlarni doimiy nazorat qiladi.",
+    "say": "Stayger linterining public-ey-pi-ay qoidasi slays ichiga to'g'ridan-to'g'ri bostirib kirishni va noto'g'ri eksportlarni doimiy nazorat qiladi.",
+    "a0": 91.66,
+    "a1": 99.31,
+    "words": [
+      {
+        "w": "Stayger",
+        "s": 91.66,
+        "e": 92.04
+      },
+      {
+        "w": "linterining",
+        "s": 92.12,
+        "e": 92.64
+      },
+      {
+        "w": "public-ey-pi-ay",
+        "s": 92.8,
+        "e": 93.7
+      },
+      {
+        "w": "qoidasi",
+        "s": 93.78,
+        "e": 94.18
+      },
+      {
+        "w": "slays",
+        "s": 94.28,
+        "e": 94.56
+      },
+      {
+        "w": "ichiga",
+        "s": 94.62,
+        "e": 94.86
+      },
+      {
+        "w": "to'g'ridan-to'g'ri",
+        "s": 94.96,
+        "e": 95.7
+      },
+      {
+        "w": "bostirib",
+        "s": 95.76,
+        "e": 96.1
+      },
+      {
+        "w": "kirishni",
+        "s": 96.14,
+        "e": 96.44
+      },
+      {
+        "w": "va",
+        "s": 96.54,
+        "e": 96.62
+      },
+      {
+        "w": "noto'g'ri",
+        "s": 96.98,
+        "e": 97.42
+      },
+      {
+        "w": "eksportlarni",
+        "s": 97.53,
+        "e": 98.09
+      },
+      {
+        "w": "doimiy",
+        "s": 98.21,
+        "e": 98.57
+      },
+      {
+        "w": "nazorat",
+        "s": 98.65,
+        "e": 99.03
+      },
+      {
+        "w": "qiladi.",
+        "s": 99.07,
+        "e": 99.31
+      }
+    ]
+  },
+  {
+    "id": "L14",
+    "scene": "steiger",
+    "text": "Dasturchi chuqur fayllarni import qilib qo'yganida, linter uni darhol ogohlantirib, toza arxitekturani saqlaydi.",
+    "show": "Dasturchi chuqur fayllarni import qilib qo'yganida, linter uni darhol ogohlantirib, toza arxitekturani saqlaydi.",
+    "say": "Dasturchi chuqur fayllarni import qilib qo'yganida, linter uni darhol ogohlantirib, toza arxitekturani saqlaydi.",
+    "a0": 99.99,
+    "a1": 105.75,
+    "words": [
+      {
+        "w": "Dasturchi",
+        "s": 99.99,
+        "e": 100.43
+      },
+      {
+        "w": "chuqur",
+        "s": 100.49,
+        "e": 100.75
+      },
+      {
+        "w": "fayllarni",
+        "s": 100.83,
+        "e": 101.29
+      },
+      {
+        "w": "import",
+        "s": 101.39,
+        "e": 101.63
+      },
+      {
+        "w": "qilib",
+        "s": 101.65,
+        "e": 101.83
+      },
+      {
+        "w": "qo'yganida,",
+        "s": 101.85,
+        "e": 102.25
+      },
+      {
+        "w": "linter",
+        "s": 102.61,
+        "e": 102.91
+      },
+      {
+        "w": "uni",
+        "s": 102.99,
+        "e": 103.11
+      },
+      {
+        "w": "darhol",
+        "s": 103.25,
+        "e": 103.61
+      },
+      {
+        "w": "ogohlantirib,",
+        "s": 103.73,
+        "e": 104.29
+      },
+      {
+        "w": "toza",
+        "s": 104.37,
+        "e": 104.65
+      },
+      {
+        "w": "arxitekturani",
+        "s": 104.73,
+        "e": 105.33
+      },
+      {
+        "w": "saqlaydi.",
+        "s": 105.37,
+        "e": 105.75
+      }
+    ]
+  },
+  {
+    "id": "L15",
+    "scene": "xulosa",
+    "text": "Xulosa qilsak: toza Public API — aniq nomlangan eksportlar, ichki nisbiy importlar va kuchli modullik demakdir.",
+    "show": "Xulosa qilsak: toza Public API — aniq nomlangan eksportlar, ichki nisbiy importlar va kuchli modullik demakdir.",
+    "say": "Xulosa qilsak: toza Public ey-pi-ay — aniq nomlangan eksportlar, ichki nisbiy importlar va kuchli modullik demakdir.",
+    "a0": 106.45,
+    "a1": 113.5,
+    "words": [
+      {
+        "w": "Xulosa",
+        "s": 106.45,
+        "e": 106.77
+      },
+      {
+        "w": "qilsak:",
+        "s": 106.83,
+        "e": 107.13
+      },
+      {
+        "w": "toza",
+        "s": 107.47,
+        "e": 107.75
+      },
+      {
+        "w": "Public",
+        "s": 107.85,
+        "e": 108.19
+      },
+      {
+        "w": "ey-pi-ay",
+        "s": 108.29,
+        "e": 108.73
+      },
+      {
+        "w": "—",
+        "s": 108.73,
+        "e": 108.73
+      },
+      {
+        "w": "aniq",
+        "s": 109.09,
+        "e": 109.31
+      },
+      {
+        "w": "nomlangan",
+        "s": 109.37,
+        "e": 109.81
+      },
+      {
+        "w": "eksportlar,",
+        "s": 109.91,
+        "e": 110.39
+      },
+      {
+        "w": "ichki",
+        "s": 110.71,
+        "e": 110.93
+      },
+      {
+        "w": "nisbiy",
+        "s": 111.01,
+        "e": 111.31
+      },
+      {
+        "w": "importlar",
+        "s": 111.43,
+        "e": 111.89
+      },
+      {
+        "w": "va",
+        "s": 111.95,
+        "e": 112.03
+      },
+      {
+        "w": "kuchli",
+        "s": 112.19,
+        "e": 112.52
+      },
+      {
+        "w": "modullik",
+        "s": 112.64,
+        "e": 113.08
+      },
+      {
+        "w": "demakdir.",
+        "s": 113.12,
+        "e": 113.5
+      }
+    ]
+  },
+  {
+    "id": "L16",
+    "scene": "xulosa",
+    "text": "Keyingi bobda o'zaro cross-import muammosi va cross-export belgisini chuqurroq ko'rib chiqamiz. Rahmat!",
+    "show": "Keyingi bobda o'zaro cross-import muammosi va cross-export belgisini chuqurroq ko'rib chiqamiz. Rahmat!",
+    "say": "Keyingi bobda o'zaro cross-import muammosi va cross-export belgisini chuqurroq ko'rib chiqamiz. Rahmat!",
+    "a0": 114.26,
+    "a1": 120.47,
+    "words": [
+      {
+        "w": "Keyingi",
+        "s": 114.26,
+        "e": 114.6
+      },
+      {
+        "w": "bobda",
+        "s": 114.64,
+        "e": 114.92
+      },
+      {
+        "w": "o'zaro",
+        "s": 115.08,
+        "e": 115.38
+      },
+      {
+        "w": "cross-import",
+        "s": 115.68,
+        "e": 116.36
+      },
+      {
+        "w": "muammosi",
+        "s": 116.42,
+        "e": 116.92
+      },
+      {
+        "w": "va",
+        "s": 117.0,
+        "e": 117.08
+      },
+      {
+        "w": "cross-export",
+        "s": 117.2,
+        "e": 117.94
+      },
+      {
+        "w": "belgisini",
+        "s": 117.98,
+        "e": 118.42
+      },
+      {
+        "w": "chuqurroq",
+        "s": 118.5,
+        "e": 118.96
+      },
+      {
+        "w": "ko'rib",
+        "s": 119.02,
+        "e": 119.2
+      },
+      {
+        "w": "chiqamiz.",
+        "s": 119.24,
+        "e": 119.56
+      },
+      {
+        "w": "Rahmat!",
+        "s": 120.16,
+        "e": 120.47
+      }
+    ]
+  }
+]

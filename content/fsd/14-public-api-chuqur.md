@@ -4,6 +4,14 @@
 
 ## Qisqacha
 
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/fsd/14-public-api-chuqur.jpg" src="/video/fsd/14-public-api-chuqur.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/fsd/14-public-api-chuqur.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/fsd/14-public-api-chuqur.uz.vtt">
+</video>
+<figcaption>Bob videoda: public API chuqur — barrel fayllar, aniq nomlangan eksportlar, shared/ui tree-shaking va Steiger linteri.</figcaption>
+</figure>
+
 Public API — slice va uni ishlatadigan kod o'rtasidagi **shartnoma** va **darvoza**. Amalda u `index.ts` — qayta eksportlar fayli (barrel). Barrel'lar qulay, lekin to'rtta ma'lum muammosi bor: siklik importlar, `shared`'da tree-shaking buzilishi, chetlab o'tishdan haqiqiy himoya yo'qligi va katta loyihada bundler sekinlashuvi. Bu bob — har biriga aniq yechim.
 
 ## Qoida

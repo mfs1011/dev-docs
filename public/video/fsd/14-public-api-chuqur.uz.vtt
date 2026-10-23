@@ -1,0 +1,81 @@
+WEBVTT
+
+1
+00:01.420 --> 00:14.340
+Salom! Bu FSD qo'llanmasining o'n to'rtinchi bobi — Public API chuqur. Public API
+har bir slice va tashqi kod o'rtasidagi rasmiy shartnoma hamda mustahkam darvozadir.
+
+2
+00:17.150 --> 00:24.500
+Slice o'zining ichki tuzilishini index nuqtasi orqali
+berkitadi va faqat kerakli qismlarnigina tashqariga ochadi.
+
+3
+00:25.070 --> 00:32.290
+Eng muhim qoida: eksport yulduzcha yozish taqiqlanadi
+— faqat aniq nomlangan eksportlar qo'llanilishi shart.
+
+4
+00:32.640 --> 00:39.450
+Aks holda ichki yordamchi mantiq tasodifan tashqariga chiqib
+ketadi va kelajakda refaktoring qilish imkonsiz bo'lib qoladi.
+
+5
+00:42.740 --> 00:49.280
+Public API bilan bog'liq eng ko'p uchraydigan xato
+— bu slice ichida o'z index'idan import qilishdir.
+
+6
+00:49.670 --> 00:55.020
+Bitta slice ichidagi komponentlar bir-birini
+faqat to'liq nisbiy yo'l orqali chaqirishi shart.
+
+7
+00:55.330 --> 01:01.870
+Boshqa slice'lar esa har doim alias va index orqali
+kiradi — bu siklik bog'liqliklarni butunlay yo'q qiladi.
+
+8
+01:04.300 --> 01:11.590
+Shared/ui qatlamida bitta umumiy index.ts
+ochish tree-shaking jarayonini buzishi mumkin.
+
+9
+01:11.760 --> 01:17.780
+Shuning uchun shared/ui ichida har bir komponent o'zining
+mustaqil papkasiga ega bo'lishi tavsiya etiladi.
+
+10
+01:18.030 --> 01:24.900
+Natijada oddiy Button chaqirilganda, sahifaga og'ir
+CodeEditor yoki begona kutubxonalar tushib qolmaydi.
+
+11
+01:27.390 --> 01:35.950
+Next.js kabi zamonaviy freymvorklarda klient va server kodi
+aralashib ketmasligi uchun index.server nuqtasi ochiladi.
+
+12
+01:36.200 --> 01:42.930
+Bu orqali maxfiy ma'lumotlar bazasi so'rovlari va server-only
+modullar brauzer paketiga tushishdan himoyalanadi.
+
+13
+01:46.260 --> 01:54.360
+Steiger linterining public-api qoidasi slice ichiga to'g'ridan-to'g'ri
+bostirib kirishni va noto'g'ri eksportlarni doimiy nazorat qiladi.
+
+14
+01:54.590 --> 02:00.800
+Dasturchi chuqur fayllarni import qilib qo'yganida, linter
+uni darhol ogohlantirib, toza arxitekturani saqlaydi.
+
+15
+02:03.850 --> 02:11.350
+Xulosa qilsak: toza Public API — aniq nomlangan eksportlar,
+ichki nisbiy importlar va kuchli modullik demakdir.
+
+16
+02:11.660 --> 02:18.320
+Keyingi bobda o'zaro cross-import muammosi va
+cross-export belgisini chuqurroq ko'rib chiqamiz. Rahmat!
