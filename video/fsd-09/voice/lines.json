@@ -1,0 +1,1238 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Salom! Bu FSD qo'llanmasining to'qqizinchi bobi — features qatlami. Features — bu foydalanuvchiga real qiymat beruvchi asosiy harakatlar va amallardir.",
+    "show": "Salom! Bu FSD qo'llanmasining to'qqizinchi bobi — features qatlami. Features — bu foydalanuvchiga real qiymat beruvchi asosiy harakatlar va amallardir.",
+    "say": "Salom! Bu Ef-es-di qo'llanmasining to'qqizinchi bobi — fichers qatlami. Features — bu foydalanuvchiga real qiymat beruvchi asosiy harakatlar va amallardir.",
+    "a0": 0.26,
+    "a1": 10.13,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.26,
+        "e": 0.58
+      },
+      {
+        "w": "Bu",
+        "s": 1.0,
+        "e": 1.08
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 1.28,
+        "e": 1.68
+      },
+      {
+        "w": "qo'llanmasining",
+        "s": 1.76,
+        "e": 2.48
+      },
+      {
+        "w": "to'qqizinchi",
+        "s": 2.52,
+        "e": 3.08
+      },
+      {
+        "w": "bobi",
+        "s": 3.12,
+        "e": 3.38
+      },
+      {
+        "w": "—",
+        "s": 3.38,
+        "e": 3.38
+      },
+      {
+        "w": "fichers",
+        "s": 3.84,
+        "e": 4.2
+      },
+      {
+        "w": "qatlami.",
+        "s": 4.26,
+        "e": 4.62
+      },
+      {
+        "w": "Features",
+        "s": 5.36,
+        "e": 5.82
+      },
+      {
+        "w": "—",
+        "s": 5.82,
+        "e": 5.82
+      },
+      {
+        "w": "bu",
+        "s": 5.92,
+        "e": 6.0
+      },
+      {
+        "w": "foydalanuvchiga",
+        "s": 6.18,
+        "e": 6.96
+      },
+      {
+        "w": "real",
+        "s": 7.08,
+        "e": 7.38
+      },
+      {
+        "w": "qiymat",
+        "s": 7.44,
+        "e": 7.75
+      },
+      {
+        "w": "beruvchi",
+        "s": 7.79,
+        "e": 8.17
+      },
+      {
+        "w": "asosiy",
+        "s": 8.29,
+        "e": 8.71
+      },
+      {
+        "w": "harakatlar",
+        "s": 8.77,
+        "e": 9.33
+      },
+      {
+        "w": "va",
+        "s": 9.39,
+        "e": 9.45
+      },
+      {
+        "w": "amallardir.",
+        "s": 9.57,
+        "e": 10.13
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "entity_vs_feature",
+    "text": "Entity dastur ishlaydigan otlar bo'lsa, feature esa ular ustida bajariladigan aniq fe'llardir.",
+    "show": "Entity dastur ishlaydigan otlar bo'lsa, feature esa ular ustida bajariladigan aniq fe'llardir.",
+    "say": "Entity dastur ishlaydigan otlar bo'lsa, ficher esa ular ustida bajariladigan aniq fe'llardir.",
+    "a0": 10.97,
+    "a1": 16.61,
+    "words": [
+      {
+        "w": "Entity",
+        "s": 10.97,
+        "e": 11.33
+      },
+      {
+        "w": "dastur",
+        "s": 11.45,
+        "e": 11.77
+      },
+      {
+        "w": "ishlaydigan",
+        "s": 11.83,
+        "e": 12.33
+      },
+      {
+        "w": "otlar",
+        "s": 12.43,
+        "e": 12.73
+      },
+      {
+        "w": "bo'lsa,",
+        "s": 12.77,
+        "e": 13.13
+      },
+      {
+        "w": "ficher",
+        "s": 13.47,
+        "e": 13.81
+      },
+      {
+        "w": "esa",
+        "s": 13.87,
+        "e": 14.07
+      },
+      {
+        "w": "ular",
+        "s": 14.23,
+        "e": 14.45
+      },
+      {
+        "w": "ustida",
+        "s": 14.51,
+        "e": 14.79
+      },
+      {
+        "w": "bajariladigan",
+        "s": 14.83,
+        "e": 15.51
+      },
+      {
+        "w": "aniq",
+        "s": 15.69,
+        "e": 15.93
+      },
+      {
+        "w": "fe'llardir.",
+        "s": 16.03,
+        "e": 16.61
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "entity_vs_feature",
+    "text": "Masalan: mahsulot bu entity, uni savatga qo'shish yoki izoh qoldirish esa alohida feature hisoblanadi.",
+    "show": "Masalan: mahsulot bu entity, uni savatga qo'shish yoki izoh qoldirish esa alohida feature hisoblanadi.",
+    "say": "Masalan: mahsulot bu entiti, uni savatga qo'shish yoki izoh qoldirish esa alohida ficher hisoblanadi.",
+    "a0": 17.17,
+    "a1": 23.66,
+    "words": [
+      {
+        "w": "Masalan:",
+        "s": 17.17,
+        "e": 17.55
+      },
+      {
+        "w": "mahsulot",
+        "s": 17.91,
+        "e": 18.41
+      },
+      {
+        "w": "bu",
+        "s": 18.47,
+        "e": 18.55
+      },
+      {
+        "w": "entiti,",
+        "s": 18.71,
+        "e": 19.05
+      },
+      {
+        "w": "uni",
+        "s": 19.47,
+        "e": 19.61
+      },
+      {
+        "w": "savatga",
+        "s": 19.71,
+        "e": 20.13
+      },
+      {
+        "w": "qo'shish",
+        "s": 20.21,
+        "e": 20.51
+      },
+      {
+        "w": "yoki",
+        "s": 20.53,
+        "e": 20.79
+      },
+      {
+        "w": "izoh",
+        "s": 20.89,
+        "e": 21.19
+      },
+      {
+        "w": "qoldirish",
+        "s": 21.25,
+        "e": 21.65
+      },
+      {
+        "w": "esa",
+        "s": 21.69,
+        "e": 21.85
+      },
+      {
+        "w": "alohida",
+        "s": 22.25,
+        "e": 22.72
+      },
+      {
+        "w": "ficher",
+        "s": 22.78,
+        "e": 23.04
+      },
+      {
+        "w": "hisoblanadi.",
+        "s": 23.1,
+        "e": 23.66
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "entity_vs_feature",
+    "text": "Lekin eng muhim qoida: har qanday kichik amal ham feature bo'lavermaydi.",
+    "show": "Lekin eng muhim qoida: har qanday kichik amal ham feature bo'lavermaydi.",
+    "say": "Lekin eng muhim qoida: har qanday kichik amal ham ficher bo'lavermaydi.",
+    "a0": 24.36,
+    "a1": 28.94,
+    "words": [
+      {
+        "w": "Lekin",
+        "s": 24.36,
+        "e": 24.6
+      },
+      {
+        "w": "eng",
+        "s": 25.06,
+        "e": 25.26
+      },
+      {
+        "w": "muhim",
+        "s": 25.34,
+        "e": 25.62
+      },
+      {
+        "w": "qoida:",
+        "s": 25.7,
+        "e": 26.02
+      },
+      {
+        "w": "har",
+        "s": 26.52,
+        "e": 26.74
+      },
+      {
+        "w": "qanday",
+        "s": 26.82,
+        "e": 27.12
+      },
+      {
+        "w": "kichik",
+        "s": 27.16,
+        "e": 27.42
+      },
+      {
+        "w": "amal",
+        "s": 27.5,
+        "e": 27.72
+      },
+      {
+        "w": "ham",
+        "s": 27.76,
+        "e": 27.9
+      },
+      {
+        "w": "ficher",
+        "s": 27.96,
+        "e": 28.26
+      },
+      {
+        "w": "bo'lavermaydi.",
+        "s": 28.32,
+        "e": 28.94
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "qayta_ishlatish",
+    "text": "Harakat mustaqil feature bo'lishi uchun u bir nechta sahifada qayta ishlatilishi shart.",
+    "show": "Harakat mustaqil feature bo'lishi uchun u bir nechta sahifada qayta ishlatilishi shart.",
+    "say": "Harakat mustaqil ficher bo'lishi uchun u bir nechta sahifada qayta ishlatilishi shart.",
+    "a0": 29.64,
+    "a1": 34.08,
+    "words": [
+      {
+        "w": "Harakat",
+        "s": 29.64,
+        "e": 30.06
+      },
+      {
+        "w": "mustaqil",
+        "s": 30.1,
+        "e": 30.48
+      },
+      {
+        "w": "ficher",
+        "s": 30.5,
+        "e": 30.76
+      },
+      {
+        "w": "bo'lishi",
+        "s": 30.82,
+        "e": 31.12
+      },
+      {
+        "w": "uchun",
+        "s": 31.18,
+        "e": 31.4
+      },
+      {
+        "w": "u",
+        "s": 31.54,
+        "e": 31.56
+      },
+      {
+        "w": "bir",
+        "s": 31.78,
+        "e": 31.92
+      },
+      {
+        "w": "nechta",
+        "s": 32.0,
+        "e": 32.28
+      },
+      {
+        "w": "sahifada",
+        "s": 32.34,
+        "e": 32.82
+      },
+      {
+        "w": "qayta",
+        "s": 32.92,
+        "e": 33.18
+      },
+      {
+        "w": "ishlatilishi",
+        "s": 33.24,
+        "e": 33.76
+      },
+      {
+        "w": "shart.",
+        "s": 33.84,
+        "e": 34.08
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "qayta_ishlatish",
+    "text": "Faqat bitta sahifaga xos yagona amalni alohida feature qilish o'rniga, to'g'ridan-to'g'ri o'sha sahifaning o'zida qoldirish ma'qul.",
+    "show": "Faqat bitta sahifaga xos yagona amalni alohida feature qilish o'rniga, to'g'ridan-to'g'ri o'sha sahifaning o'zida qoldirish ma'qul.",
+    "say": "Faqat bitta sahifaga xos yagona amalni alohida ficher qilish o'rniga, to'g'ridan-to'g'ri o'sha sahifaning o'zida qoldirish ma'qul.",
+    "a0": 34.82,
+    "a1": 41.33,
+    "words": [
+      {
+        "w": "Faqat",
+        "s": 34.82,
+        "e": 35.06
+      },
+      {
+        "w": "bitta",
+        "s": 35.12,
+        "e": 35.32
+      },
+      {
+        "w": "sahifaga",
+        "s": 35.38,
+        "e": 35.84
+      },
+      {
+        "w": "xos",
+        "s": 35.9,
+        "e": 36.06
+      },
+      {
+        "w": "yagona",
+        "s": 36.12,
+        "e": 36.48
+      },
+      {
+        "w": "amalni",
+        "s": 36.54,
+        "e": 36.88
+      },
+      {
+        "w": "alohida",
+        "s": 37.0,
+        "e": 37.38
+      },
+      {
+        "w": "ficher",
+        "s": 37.42,
+        "e": 37.69
+      },
+      {
+        "w": "qilish",
+        "s": 37.73,
+        "e": 37.93
+      },
+      {
+        "w": "o'rniga,",
+        "s": 38.01,
+        "e": 38.31
+      },
+      {
+        "w": "to'g'ridan-to'g'ri",
+        "s": 38.65,
+        "e": 39.39
+      },
+      {
+        "w": "o'sha",
+        "s": 39.47,
+        "e": 39.65
+      },
+      {
+        "w": "sahifaning",
+        "s": 39.71,
+        "e": 40.23
+      },
+      {
+        "w": "o'zida",
+        "s": 40.35,
+        "e": 40.59
+      },
+      {
+        "w": "qoldirish",
+        "s": 40.65,
+        "e": 41.01
+      },
+      {
+        "w": "ma'qul.",
+        "s": 41.05,
+        "e": 41.33
+      }
+    ]
+  },
+  {
+    "id": "L7",
+    "scene": "qayta_ishlatish",
+    "text": "Yangi dasturchi pages va features ro'yxatiga qarab, loyiha nimalarga qodirligini bir qarashda tushunishi kerak.",
+    "show": "Yangi dasturchi pages va features ro'yxatiga qarab, loyiha nimalarga qodirligini bir qarashda tushunishi kerak.",
+    "say": "Yangi dasturchi peyjiz va fichers ro'yxatiga qarab, loyiha nimalarga qodirligini bir qarashda tushunishi kerak.",
+    "a0": 42.29,
+    "a1": 48.59,
+    "words": [
+      {
+        "w": "Yangi",
+        "s": 42.29,
+        "e": 42.53
+      },
+      {
+        "w": "dasturchi",
+        "s": 42.57,
+        "e": 43.05
+      },
+      {
+        "w": "peyjiz",
+        "s": 43.39,
+        "e": 43.79
+      },
+      {
+        "w": "va",
+        "s": 43.87,
+        "e": 43.95
+      },
+      {
+        "w": "fichers",
+        "s": 44.09,
+        "e": 44.43
+      },
+      {
+        "w": "ro'yxatiga",
+        "s": 44.49,
+        "e": 44.93
+      },
+      {
+        "w": "qarab,",
+        "s": 44.99,
+        "e": 45.23
+      },
+      {
+        "w": "loyiha",
+        "s": 45.59,
+        "e": 45.97
+      },
+      {
+        "w": "nimalarga",
+        "s": 46.05,
+        "e": 46.51
+      },
+      {
+        "w": "qodirligini",
+        "s": 46.59,
+        "e": 47.15
+      },
+      {
+        "w": "bir",
+        "s": 47.27,
+        "e": 47.41
+      },
+      {
+        "w": "qarashda",
+        "s": 47.49,
+        "e": 47.83
+      },
+      {
+        "w": "tushunishi",
+        "s": 47.87,
+        "e": 48.29
+      },
+      {
+        "w": "kerak.",
+        "s": 48.33,
+        "e": 48.59
+      }
+    ]
+  },
+  {
+    "id": "L8",
+    "scene": "segmentlar",
+    "text": "Har bir feature slice'i odatda harakat tugmasi yoki formasi, api so'rovlari va validatsiya modelidan tashkil topadi.",
+    "show": "Har bir feature slice'i odatda harakat tugmasi yoki formasi, api so'rovlari va validatsiya modelidan tashkil topadi.",
+    "say": "Har bir ficher slays'i odatda harakat tugmasi yoki formasi, ey-pi-ay so'rovlari va validatsiya modelidan tashkil topadi.",
+    "a0": 49.61,
+    "a1": 56.54,
+    "words": [
+      {
+        "w": "Har",
+        "s": 49.61,
+        "e": 49.75
+      },
+      {
+        "w": "bir",
+        "s": 49.79,
+        "e": 49.91
+      },
+      {
+        "w": "ficher",
+        "s": 49.95,
+        "e": 50.23
+      },
+      {
+        "w": "slays'i",
+        "s": 50.27,
+        "e": 50.63
+      },
+      {
+        "w": "odatda",
+        "s": 50.75,
+        "e": 51.13
+      },
+      {
+        "w": "harakat",
+        "s": 51.25,
+        "e": 51.67
+      },
+      {
+        "w": "tugmasi",
+        "s": 51.71,
+        "e": 52.11
+      },
+      {
+        "w": "yoki",
+        "s": 52.19,
+        "e": 52.41
+      },
+      {
+        "w": "formasi,",
+        "s": 52.49,
+        "e": 52.98
+      },
+      {
+        "w": "ey-pi-ay",
+        "s": 53.38,
+        "e": 53.76
+      },
+      {
+        "w": "so'rovlari",
+        "s": 53.8,
+        "e": 54.28
+      },
+      {
+        "w": "va",
+        "s": 54.34,
+        "e": 54.42
+      },
+      {
+        "w": "validatsiya",
+        "s": 54.78,
+        "e": 55.38
+      },
+      {
+        "w": "modelidan",
+        "s": 55.42,
+        "e": 55.88
+      },
+      {
+        "w": "tashkil",
+        "s": 55.9,
+        "e": 56.2
+      },
+      {
+        "w": "topadi.",
+        "s": 56.22,
+        "e": 56.54
+      }
+    ]
+  },
+  {
+    "id": "L9",
+    "scene": "segmentlar",
+    "text": "Ed-tu-kart tugmasi bosilganda serverga so'rov yuboriladi va kesh optimistik tarzda yangilanadi.",
+    "show": "Ed-tu-kart tugmasi bosilganda serverga so'rov yuboriladi va kesh optimistik tarzda yangilanadi.",
+    "say": "Ed-tu-kart tugmasi bosilganda serverga so'rov yuboriladi va kesh optimistik tarzda yangilanadi.",
+    "a0": 57.26,
+    "a1": 62.34,
+    "words": [
+      {
+        "w": "Ed-tu-kart",
+        "s": 57.26,
+        "e": 57.86
+      },
+      {
+        "w": "tugmasi",
+        "s": 57.88,
+        "e": 58.26
+      },
+      {
+        "w": "bosilganda",
+        "s": 58.28,
+        "e": 58.78
+      },
+      {
+        "w": "serverga",
+        "s": 59.12,
+        "e": 59.58
+      },
+      {
+        "w": "so'rov",
+        "s": 59.62,
+        "e": 59.9
+      },
+      {
+        "w": "yuboriladi",
+        "s": 59.94,
+        "e": 60.42
+      },
+      {
+        "w": "va",
+        "s": 60.46,
+        "e": 60.54
+      },
+      {
+        "w": "kesh",
+        "s": 60.64,
+        "e": 60.86
+      },
+      {
+        "w": "optimistik",
+        "s": 60.94,
+        "e": 61.48
+      },
+      {
+        "w": "tarzda",
+        "s": 61.52,
+        "e": 61.78
+      },
+      {
+        "w": "yangilanadi.",
+        "s": 61.82,
+        "e": 62.34
+      }
+    ]
+  },
+  {
+    "id": "L10",
+    "scene": "segmentlar",
+    "text": "Barcha bu mantiq ixcham index nuqtasi orqali bitta tayyor komponent sifatida tashqariga eksport qilinadi.",
+    "show": "Barcha bu mantiq ixcham index nuqtasi orqali bitta tayyor komponent sifatida tashqariga eksport qilinadi.",
+    "say": "Barcha bu mantiq ixcham index nuqtasi orqali bitta tayyor komponent sifatida tashqariga eksport qilinadi.",
+    "a0": 63.32,
+    "a1": 69.77,
+    "words": [
+      {
+        "w": "Barcha",
+        "s": 63.32,
+        "e": 63.66
+      },
+      {
+        "w": "bu",
+        "s": 63.72,
+        "e": 63.8
+      },
+      {
+        "w": "mantiq",
+        "s": 63.88,
+        "e": 64.28
+      },
+      {
+        "w": "ixcham",
+        "s": 64.48,
+        "e": 64.92
+      },
+      {
+        "w": "index",
+        "s": 65.18,
+        "e": 65.5
+      },
+      {
+        "w": "nuqtasi",
+        "s": 65.62,
+        "e": 66.02
+      },
+      {
+        "w": "orqali",
+        "s": 66.06,
+        "e": 66.38
+      },
+      {
+        "w": "bitta",
+        "s": 66.46,
+        "e": 66.74
+      },
+      {
+        "w": "tayyor",
+        "s": 66.8,
+        "e": 67.16
+      },
+      {
+        "w": "komponent",
+        "s": 67.22,
+        "e": 67.71
+      },
+      {
+        "w": "sifatida",
+        "s": 67.75,
+        "e": 68.11
+      },
+      {
+        "w": "tashqariga",
+        "s": 68.41,
+        "e": 68.93
+      },
+      {
+        "w": "eksport",
+        "s": 69.05,
+        "e": 69.37
+      },
+      {
+        "w": "qilinadi.",
+        "s": 69.41,
+        "e": 69.77
+      }
+    ]
+  },
+  {
+    "id": "L11",
+    "scene": "cross_import",
+    "text": "Xuddi entity'lardagi kabi, bitta feature ikkinchi feature'ni to'g'ridan-to'g'ri import qila olmaydi.",
+    "show": "Xuddi entity'lardagi kabi, bitta feature ikkinchi feature'ni to'g'ridan-to'g'ri import qila olmaydi.",
+    "say": "Xuddi entiti'lardagi kabi, bitta ficher ikkinchi ficher'ni to'g'ridan-to'g'ri import qila olmaydi.",
+    "a0": 70.51,
+    "a1": 75.69,
+    "words": [
+      {
+        "w": "Xuddi",
+        "s": 70.51,
+        "e": 70.77
+      },
+      {
+        "w": "entiti'lardagi",
+        "s": 71.15,
+        "e": 71.93
+      },
+      {
+        "w": "kabi,",
+        "s": 71.97,
+        "e": 72.17
+      },
+      {
+        "w": "bitta",
+        "s": 72.49,
+        "e": 72.73
+      },
+      {
+        "w": "ficher",
+        "s": 72.79,
+        "e": 73.09
+      },
+      {
+        "w": "ikkinchi",
+        "s": 73.25,
+        "e": 73.59
+      },
+      {
+        "w": "ficher'ni",
+        "s": 73.63,
+        "e": 74.01
+      },
+      {
+        "w": "to'g'ridan-to'g'ri",
+        "s": 74.11,
+        "e": 74.77
+      },
+      {
+        "w": "import",
+        "s": 74.85,
+        "e": 75.09
+      },
+      {
+        "w": "qila",
+        "s": 75.13,
+        "e": 75.27
+      },
+      {
+        "w": "olmaydi.",
+        "s": 75.33,
+        "e": 75.69
+      }
+    ]
+  },
+  {
+    "id": "L12",
+    "scene": "cross_import",
+    "text": "Masalan, add-to-cart va apply-promo-code faqat yuqoridagi widget yoki sahifa qatlamida o'zaro birlashtiriladi.",
+    "show": "Masalan, add-to-cart va apply-promo-code faqat yuqoridagi widget yoki sahifa qatlamida o'zaro birlashtiriladi.",
+    "say": "Masalan, add-to-cart va apply-promo-code faqat yuqoridagi vijet yoki sahifa qatlamida o'zaro birlashtiriladi.",
+    "a0": 76.33,
+    "a1": 82.96,
+    "words": [
+      {
+        "w": "Masalan,",
+        "s": 76.33,
+        "e": 76.67
+      },
+      {
+        "w": "add-to-cart",
+        "s": 77.05,
+        "e": 77.67
+      },
+      {
+        "w": "va",
+        "s": 77.75,
+        "e": 77.81
+      },
+      {
+        "w": "apply-promo-code",
+        "s": 77.97,
+        "e": 78.87
+      },
+      {
+        "w": "faqat",
+        "s": 78.93,
+        "e": 79.19
+      },
+      {
+        "w": "yuqoridagi",
+        "s": 79.25,
+        "e": 79.77
+      },
+      {
+        "w": "vijet",
+        "s": 80.13,
+        "e": 80.51
+      },
+      {
+        "w": "yoki",
+        "s": 80.53,
+        "e": 80.81
+      },
+      {
+        "w": "sahifa",
+        "s": 80.91,
+        "e": 81.31
+      },
+      {
+        "w": "qatlamida",
+        "s": 81.37,
+        "e": 81.81
+      },
+      {
+        "w": "o'zaro",
+        "s": 81.95,
+        "e": 82.23
+      },
+      {
+        "w": "birlashtiriladi.",
+        "s": 82.29,
+        "e": 82.96
+      }
+    ]
+  },
+  {
+    "id": "L13",
+    "scene": "steiger",
+    "text": "Steiger linteri feature slice'larining to'g'ri shakllanishini va taqiqlangan o'zaro importlarni doimiy tekshirib boradi.",
+    "show": "Steiger linteri feature slice'larining to'g'ri shakllanishini va taqiqlangan o'zaro importlarni doimiy tekshirib boradi.",
+    "say": "Stayger linteri ficher slays'larining to'g'ri shakllanishini va taqiqlangan o'zaro importlarni doimiy tekshirib boradi.",
+    "a0": 83.94,
+    "a1": 90.54,
+    "words": [
+      {
+        "w": "Stayger",
+        "s": 83.94,
+        "e": 84.34
+      },
+      {
+        "w": "linteri",
+        "s": 84.46,
+        "e": 84.86
+      },
+      {
+        "w": "ficher",
+        "s": 85.1,
+        "e": 85.4
+      },
+      {
+        "w": "slays'larining",
+        "s": 85.46,
+        "e": 86.1
+      },
+      {
+        "w": "to'g'ri",
+        "s": 86.16,
+        "e": 86.44
+      },
+      {
+        "w": "shakllanishini",
+        "s": 86.46,
+        "e": 87.18
+      },
+      {
+        "w": "va",
+        "s": 87.22,
+        "e": 87.3
+      },
+      {
+        "w": "taqiqlangan",
+        "s": 87.38,
+        "e": 88.0
+      },
+      {
+        "w": "o'zaro",
+        "s": 88.36,
+        "e": 88.68
+      },
+      {
+        "w": "importlarni",
+        "s": 88.84,
+        "e": 89.42
+      },
+      {
+        "w": "doimiy",
+        "s": 89.5,
+        "e": 89.86
+      },
+      {
+        "w": "tekshirib",
+        "s": 89.9,
+        "e": 90.24
+      },
+      {
+        "w": "boradi.",
+        "s": 90.26,
+        "e": 90.54
+      }
+    ]
+  },
+  {
+    "id": "L14",
+    "scene": "steiger",
+    "text": "Har bir harakat mustaqil qolganda tizimni kengaytirish va yangi sahifalarga ko'chirish osonlashadi.",
+    "show": "Har bir harakat mustaqil qolganda tizimni kengaytirish va yangi sahifalarga ko'chirish osonlashadi.",
+    "say": "Har bir harakat mustaqil qolganda tizimni kengaytirish va yangi sahifalarga ko'chirish osonlashadi.",
+    "a0": 91.44,
+    "a1": 96.95,
+    "words": [
+      {
+        "w": "Har",
+        "s": 91.44,
+        "e": 91.6
+      },
+      {
+        "w": "bir",
+        "s": 91.64,
+        "e": 91.74
+      },
+      {
+        "w": "harakat",
+        "s": 91.78,
+        "e": 92.16
+      },
+      {
+        "w": "mustaqil",
+        "s": 92.44,
+        "e": 92.86
+      },
+      {
+        "w": "qolganda",
+        "s": 92.9,
+        "e": 93.3
+      },
+      {
+        "w": "tizimni",
+        "s": 93.38,
+        "e": 93.72
+      },
+      {
+        "w": "kengaytirish",
+        "s": 93.78,
+        "e": 94.38
+      },
+      {
+        "w": "va",
+        "s": 94.4,
+        "e": 94.48
+      },
+      {
+        "w": "yangi",
+        "s": 94.82,
+        "e": 95.1
+      },
+      {
+        "w": "sahifalarga",
+        "s": 95.17,
+        "e": 95.79
+      },
+      {
+        "w": "ko'chirish",
+        "s": 95.85,
+        "e": 96.23
+      },
+      {
+        "w": "osonlashadi.",
+        "s": 96.33,
+        "e": 96.95
+      }
+    ]
+  },
+  {
+    "id": "L15",
+    "scene": "xulosa",
+    "text": "Xulosa qilsak: features — qiymat beruvchi takrorlanuvchi harakatlar, mustaqil slice'lar va aniq fe'llar qatlamidir.",
+    "show": "Xulosa qilsak: features — qiymat beruvchi takrorlanuvchi harakatlar, mustaqil slice'lar va aniq fe'llar qatlamidir.",
+    "say": "Xulosa qilsak: fichers — qiymat beruvchi takrorlanuvchi harakatlar, mustaqil slayslar va aniq fe'llar qatlamidir.",
+    "a0": 97.87,
+    "a1": 104.59,
+    "words": [
+      {
+        "w": "Xulosa",
+        "s": 97.87,
+        "e": 98.17
+      },
+      {
+        "w": "qilsak:",
+        "s": 98.23,
+        "e": 98.55
+      },
+      {
+        "w": "fichers",
+        "s": 98.87,
+        "e": 99.31
+      },
+      {
+        "w": "—",
+        "s": 99.31,
+        "e": 99.31
+      },
+      {
+        "w": "qiymat",
+        "s": 99.43,
+        "e": 99.75
+      },
+      {
+        "w": "beruvchi",
+        "s": 99.81,
+        "e": 100.21
+      },
+      {
+        "w": "takrorlanuvchi",
+        "s": 100.29,
+        "e": 101.03
+      },
+      {
+        "w": "harakatlar,",
+        "s": 101.05,
+        "e": 101.65
+      },
+      {
+        "w": "mustaqil",
+        "s": 101.97,
+        "e": 102.39
+      },
+      {
+        "w": "slayslar",
+        "s": 102.47,
+        "e": 103.01
+      },
+      {
+        "w": "va",
+        "s": 103.09,
+        "e": 103.15
+      },
+      {
+        "w": "aniq",
+        "s": 103.35,
+        "e": 103.59
+      },
+      {
+        "w": "fe'llar",
+        "s": 103.67,
+        "e": 104.03
+      },
+      {
+        "w": "qatlamidir.",
+        "s": 104.09,
+        "e": 104.59
+      }
+    ]
+  },
+  {
+    "id": "L16",
+    "scene": "xulosa",
+    "text": "Keyingi bobda yirik bloklarni birlashtiruvchi widgets qatlami bilan tanishamiz. Rahmat!",
+    "show": "Keyingi bobda yirik bloklarni birlashtiruvchi widgets qatlami bilan tanishamiz. Rahmat!",
+    "say": "Keyingi bobda yirik bloklarni birlashtiruvchi vijets qatlami bilan tanishamiz. Rahmat!",
+    "a0": 105.25,
+    "a1": 110.18,
+    "words": [
+      {
+        "w": "Keyingi",
+        "s": 105.25,
+        "e": 105.54
+      },
+      {
+        "w": "bobda",
+        "s": 105.58,
+        "e": 105.86
+      },
+      {
+        "w": "yirik",
+        "s": 106.24,
+        "e": 106.5
+      },
+      {
+        "w": "bloklarni",
+        "s": 106.56,
+        "e": 107.04
+      },
+      {
+        "w": "birlashtiruvchi",
+        "s": 107.06,
+        "e": 107.7
+      },
+      {
+        "w": "vijets",
+        "s": 107.84,
+        "e": 108.16
+      },
+      {
+        "w": "qatlami",
+        "s": 108.22,
+        "e": 108.56
+      },
+      {
+        "w": "bilan",
+        "s": 108.6,
+        "e": 108.78
+      },
+      {
+        "w": "tanishamiz.",
+        "s": 108.82,
+        "e": 109.3
+      },
+      {
+        "w": "Rahmat!",
+        "s": 109.9,
+        "e": 110.18
+      }
+    ]
+  }
+]

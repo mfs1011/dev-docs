@@ -4,6 +4,14 @@
 
 ## Qisqacha
 
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/fsd/09-features.jpg" src="/video/fsd/09-features.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/fsd/09-features.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/fsd/09-features.uz.vtt">
+</video>
+<figcaption>Bob videoda: features qatlami — foydalanuvchi amallari, qayta ishlatish qoidasi, slice segmentlari (ui, api, model), cross-import taqiqi va Steiger nazorati.</figcaption>
+</figure>
+
 `features` — foydalanuvchi **qilmoqchi bo'lgan** asosiy harakatlar: savatga qo'shish, izoh qoldirish, promo-kod qo'llash, kirish. Ular odatda entity'lar ustida ishlaydi. Eng muhim qoida — **hamma narsa feature emas**: harakat bir nechta sahifada qayta ishlatilsagina u feature bo'lishga loyiq.
 
 ## Qoida
