@@ -1,0 +1,81 @@
+WEBVTT
+
+1
+00:01.420 --> 00:12.040
+Salom! Bu FSD qo'llanmasining sakkizinchi bobi — entities qatlami.
+Entities — bu loyihadagi real dunyo tushunchalari va biznes modellari.
+
+2
+00:14.650 --> 00:23.880
+Biznes o'z mahsulotini tasvirlashda ishlatadigan otlar: user,
+product, order yoki post aynan shu qatlamda joylashadi.
+
+3
+00:24.250 --> 00:29.830
+Shared'dan farqli ravishda, bu yerda har bir
+entity mustaqil slice sifatida tashkil etiladi.
+
+4
+00:30.140 --> 00:35.690
+Har bir slice o'z modeliga, ko'rinishiga
+va public API darvozasiga ega bo'ladi.
+
+5
+00:38.900 --> 00:45.020
+Model segmenti — ma'lumot tiplari, validatsiya
+va ob'ektning sof biznes qoidalarini saqlaydi.
+
+6
+00:45.170 --> 00:51.040
+Ui segmenti esa qayta ishlatiladigan kartalar,
+avatarlar yoki qatorlarni o'z ichiga oladi.
+
+7
+00:51.470 --> 00:58.880
+Api segmentida esa faqat shu ob'ektga xos maxsus so'rovlar
+turadi, oddiy operatsiyalar esa shared'da qolgani ma'qul.
+
+8
+01:01.920 --> 01:07.290
+Entity UI o'zida harakat yoki mutatsiya
+tugmalarini qat'iy o'rnatmasligi kerak.
+
+9
+01:07.400 --> 01:14.430
+Masalan, Prodakt-kard savatga qo'shish tugmasini bilmaydi
+— tugma slot yoki props orqali tashqaridan uzatiladi.
+
+10
+01:14.760 --> 01:20.900
+Buning sharofati bilan bir xil karta do'konda ham,
+sevimlilar ro'yxatida ham erkin qayta ishlatiladi.
+
+11
+01:24.010 --> 01:30.460
+Entity'lar bir-birini to'g'ridan-to'g'ri import qila
+olmaydi: order bevosita product'ga bog'lanmasligi lozim.
+
+12
+01:30.830 --> 01:36.990
+Ular orasidagi o'zaro ta'sir yuqoriroq qatlamlarda
+— features yoki pages'da kompozitsiya qilinadi.
+
+13
+01:40.100 --> 01:47.390
+Steiger linteri no-cross-imports qoidasi orqali entity'lar
+o'rtasidagi to'g'ridan-to'g'ri bog'liqlikni darhol aniqlaydi.
+
+14
+01:47.620 --> 01:53.460
+Xatolik bartaraf etilgach, har bir entity boshqasiga
+qaram bo'lmagan mustaqil modulga aylanadi.
+
+15
+01:56.550 --> 02:04.260
+Xulosa qilsak: entities — biznes otlari, mustaqil
+slice'lar va harakatsiz toza ko'rinishlar qatlamidir.
+
+16
+02:04.620 --> 02:10.370
+Keyingi bobda foydalanuvchi harakatlarini boshqaruvchi
+features qatlamini ko'rib chiqamiz. Rahmat!

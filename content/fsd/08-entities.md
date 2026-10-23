@@ -4,6 +4,14 @@
 
 ## Qisqacha
 
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/fsd/08-entities.jpg" src="/video/fsd/08-entities.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/fsd/08-entities.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/fsd/08-entities.uz.vtt">
+</video>
+<figcaption>Bob videoda: entities qatlami — real dunyo tushunchalari, slice'lar, model/ui/api segmentlari, harakat tashqaridan qoidasi va cross-import taqiqi.</figcaption>
+</figure>
+
 `entities` — loyiha ishlaydigan **real dunyo tushunchalari**: biznes o'z mahsulotini tasvirlashda ishlatadigan otlar. Ijtimoiy tarmoqda — `user`, `post`, `group`; do'konda — `product`, `order`, `customer`. Entity slice'ida ma'lumot modeli, validatsiya sxemasi, shu obyektga oid so'rovlar va uning **ko'rinishi** (karta, qator, avatar) bo'lishi mumkin.
 
 Muhim: entity'lar — **majburiy emas**. v2.1 da ular kechiktirilib, faqat haqiqiy qayta ishlatish paydo bo'lganda yaratiladi (18-bob).
