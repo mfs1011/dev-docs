@@ -1,0 +1,81 @@
+WEBVTT
+
+1
+00:01.420 --> 00:14.760
+Salom! Bu FSD qo'llanmasining o'n ikkinchi bobi — app qatlami. App — bu arxitektura piramidasining
+eng yuqori cho'qqisi bo'lib, butun ilovani yig'uvchi va ishga tushiruvchi qatlamdir.
+
+2
+00:17.570 --> 00:25.380
+App qatlami ilovaning texnik sozlamalarini o'z ichiga oladi:
+kirish nuqtasi, marshrutlar, global stillar va provayderlar.
+
+3
+00:25.770 --> 00:33.210
+Shared qatlami kabi, app qatlami ham slice'larga bo'linmaydi — u
+to'g'ridan-to'g'ri vazifasiga ko'ra segmentlardan tashkil topadi.
+
+4
+00:33.600 --> 00:40.650
+Eng muhimi: app qatlami faqat yig'ish joyi bo'lib, unda
+biznes UI yoki murakkab biznes mantiqi yozilmaydi.
+
+5
+00:43.800 --> 00:49.920
+Asosiy segmentlar qatoriga entrypoint,
+routes, providers va global styles kiradi.
+
+6
+00:50.230 --> 00:56.780
+Providers segmentida TanStack Query mijozi, tema
+provayderi va xato chegaralari o'rnatiladi.
+
+7
+00:57.150 --> 01:03.170
+Routes segmentida esa sahifalar lazy loading
+bilan ulanib, markaziy router shakllantiriladi.
+
+8
+01:06.380 --> 01:11.870
+Router konfiguratsiyasida har bir URL
+sahifalarning index darvozasiga bog'lanadi.
+
+9
+01:12.200 --> 01:20.980
+Marshrut URL konstantalari esa app'da emas, balki shared qatlamida
+saqlanadi, toki barcha qatlamlar ulardan havola olishi mumkin bo'lsin.
+
+10
+01:21.350 --> 01:30.380
+Entrypoint nuqtasi, masalan main.tsx, provayderlar va
+routerni ildiz root elementiga ulab ilovani ishga tushiradi.
+
+11
+01:33.510 --> 01:42.030
+Arxitekturaning oltin qoidasi: app barcha pastki qatlamlarni import
+qila oladi, lekin hech bir quyi qatlam app'dan import qila olmaydi.
+
+12
+01:42.320 --> 01:50.400
+Masalan, biror sahifa yoki widget app'dan store yoki routerni
+import qilsa, bu qat'iy arxitektura buzilishi hisoblanadi.
+
+13
+01:53.530 --> 02:01.100
+Steiger linteri no-higher-layer-imports qoidasi orqali pastki
+qatlamlarning app'ga murojaat qilmasligini qat'iy tekshiradi.
+
+14
+02:01.490 --> 02:07.830
+App qatlami toza yig'uvchi bo'lib qolishi butun loyihaning
+barqaror va testlanuvchan bo'lishini ta'minlaydi.
+
+15
+02:10.920 --> 02:17.410
+Xulosa qilsak: app — butun loyihani ishga tushiruvchi
+boshqaruv pulti, provayderlar va kirish nuqtasidir.
+
+16
+02:17.640 --> 02:22.990
+Keyingi bobda yirik loyihalarni tartibga soluvchi
+slice guruhlari bilan tanishamiz. Rahmat!

@@ -4,6 +4,14 @@
 
 ## Qisqacha
 
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/fsd/12-app.jpg" src="/video/fsd/12-app.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/fsd/12-app.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/fsd/12-app.uz.vtt">
+</video>
+<figcaption>Bob videoda: app qatlami — arxitektura cho'qqisi, router va lazy loading, provayderlar, pastdan yuqoriga import taqiqi va Steiger nazorati.</figcaption>
+</figure>
+
 `app` — butun ilovaga tegishli hamma narsa: texnik ma'noda (provayderlar, router, entrypoint, global stil) va biznes ma'nosida (analitika). Bu eng yuqori qatlam: u hamma qatlamni import qila oladi, uni esa hech kim import qilmaydi. `shared` kabi slice'siz — to'g'ridan-to'g'ri segmentlar.
 
 ## Qoida
