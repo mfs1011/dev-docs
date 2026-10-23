@@ -1,0 +1,1398 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Salom! Bu FSD qo'llanmasining o'ninchi bobi — widgets qatlami. Widgets — bu butun bir foydalanish ssenariysini qamrab oluvchi, mustaqil va yirik interfeys bloklaridir.",
+    "show": "Salom! Bu FSD qo'llanmasining o'ninchi bobi — widgets qatlami. Widgets — bu butun bir foydalanish ssenariysini qamrab oluvchi, mustaqil va yirik interfeys bloklaridir.",
+    "say": "Salom! Bu Ef-es-di qo'llanmasining o'ninchi bobi — vijets qatlami. Widgets — bu butun bir foydalanish ssenariysini qamrab oluvchi, mustaqil va yirik interfeys bloklaridir.",
+    "a0": 0.24,
+    "a1": 11.55,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.24,
+        "e": 0.54
+      },
+      {
+        "w": "Bu",
+        "s": 1.04,
+        "e": 1.12
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 1.42,
+        "e": 1.82
+      },
+      {
+        "w": "qo'llanmasining",
+        "s": 1.88,
+        "e": 2.62
+      },
+      {
+        "w": "o'ninchi",
+        "s": 2.8,
+        "e": 3.22
+      },
+      {
+        "w": "bobi",
+        "s": 3.28,
+        "e": 3.56
+      },
+      {
+        "w": "—",
+        "s": 3.56,
+        "e": 3.56
+      },
+      {
+        "w": "vijets",
+        "s": 4.0,
+        "e": 4.46
+      },
+      {
+        "w": "qatlami.",
+        "s": 4.52,
+        "e": 4.94
+      },
+      {
+        "w": "Widgets",
+        "s": 5.84,
+        "e": 6.22
+      },
+      {
+        "w": "—",
+        "s": 6.22,
+        "e": 6.22
+      },
+      {
+        "w": "bu",
+        "s": 6.3,
+        "e": 6.38
+      },
+      {
+        "w": "butun",
+        "s": 6.64,
+        "e": 6.98
+      },
+      {
+        "w": "bir",
+        "s": 7.02,
+        "e": 7.12
+      },
+      {
+        "w": "foydalanish",
+        "s": 7.16,
+        "e": 7.73
+      },
+      {
+        "w": "ssenariysini",
+        "s": 7.75,
+        "e": 8.33
+      },
+      {
+        "w": "qamrab",
+        "s": 8.37,
+        "e": 8.69
+      },
+      {
+        "w": "oluvchi,",
+        "s": 8.75,
+        "e": 9.09
+      },
+      {
+        "w": "mustaqil",
+        "s": 9.33,
+        "e": 9.89
+      },
+      {
+        "w": "va",
+        "s": 9.99,
+        "e": 10.05
+      },
+      {
+        "w": "yirik",
+        "s": 10.17,
+        "e": 10.45
+      },
+      {
+        "w": "interfeys",
+        "s": 10.55,
+        "e": 10.97
+      },
+      {
+        "w": "bloklaridir.",
+        "s": 11.01,
+        "e": 11.55
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "kompozitsiya",
+    "text": "Widget alohida kichik element emas, balki bir nechta feature, entity va shared komponentlarini birlashtiruvchi kompozitsiya qatlamidir.",
+    "show": "Widget alohida kichik element emas, balki bir nechta feature, entity va shared komponentlarini birlashtiruvchi kompozitsiya qatlamidir.",
+    "say": "Widget alohida kichik element emas, balki bir nechta ficher, entiti va sherd komponentlarini birlashtiruvchi kompozitsiya qatlamidir.",
+    "a0": 12.25,
+    "a1": 19.71,
+    "words": [
+      {
+        "w": "Widget",
+        "s": 12.25,
+        "e": 12.57
+      },
+      {
+        "w": "alohida",
+        "s": 12.63,
+        "e": 12.99
+      },
+      {
+        "w": "kichik",
+        "s": 13.05,
+        "e": 13.29
+      },
+      {
+        "w": "element",
+        "s": 13.35,
+        "e": 13.67
+      },
+      {
+        "w": "emas,",
+        "s": 13.73,
+        "e": 13.97
+      },
+      {
+        "w": "balki",
+        "s": 14.05,
+        "e": 14.31
+      },
+      {
+        "w": "bir",
+        "s": 14.77,
+        "e": 14.93
+      },
+      {
+        "w": "nechta",
+        "s": 14.97,
+        "e": 15.23
+      },
+      {
+        "w": "ficher,",
+        "s": 15.33,
+        "e": 15.71
+      },
+      {
+        "w": "entiti",
+        "s": 16.03,
+        "e": 16.43
+      },
+      {
+        "w": "va",
+        "s": 16.51,
+        "e": 16.57
+      },
+      {
+        "w": "sherd",
+        "s": 16.73,
+        "e": 17.03
+      },
+      {
+        "w": "komponentlarini",
+        "s": 17.07,
+        "e": 17.73
+      },
+      {
+        "w": "birlashtiruvchi",
+        "s": 17.77,
+        "e": 18.37
+      },
+      {
+        "w": "kompozitsiya",
+        "s": 18.47,
+        "e": 19.15
+      },
+      {
+        "w": "qatlamidir.",
+        "s": 19.21,
+        "e": 19.71
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "kompozitsiya",
+    "text": "Masalan, sayt bosh qismi — Header widget'i: unda logo, qidiruv feature'i, savat hisoblagichi va profil menyusi jamlanadi.",
+    "show": "Masalan, sayt bosh qismi — Header widget'i: unda logo, qidiruv feature'i, savat hisoblagichi va profil menyusi jamlanadi.",
+    "say": "Masalan, sayt bosh qismi — Header vijet'i: unda logo, qidiruv ficher'i, savat hisoblagichi va profil menyusi jamlanadi.",
+    "a0": 20.29,
+    "a1": 27.84,
+    "words": [
+      {
+        "w": "Masalan,",
+        "s": 20.29,
+        "e": 20.67
+      },
+      {
+        "w": "sayt",
+        "s": 21.41,
+        "e": 21.65
+      },
+      {
+        "w": "bosh",
+        "s": 21.71,
+        "e": 21.89
+      },
+      {
+        "w": "qismi",
+        "s": 21.95,
+        "e": 22.19
+      },
+      {
+        "w": "—",
+        "s": 22.19,
+        "e": 22.19
+      },
+      {
+        "w": "Header",
+        "s": 22.45,
+        "e": 22.7
+      },
+      {
+        "w": "vijet'i:",
+        "s": 22.74,
+        "e": 23.04
+      },
+      {
+        "w": "unda",
+        "s": 23.48,
+        "e": 23.7
+      },
+      {
+        "w": "logo,",
+        "s": 23.96,
+        "e": 24.28
+      },
+      {
+        "w": "qidiruv",
+        "s": 24.42,
+        "e": 24.72
+      },
+      {
+        "w": "ficher'i,",
+        "s": 24.76,
+        "e": 25.12
+      },
+      {
+        "w": "savat",
+        "s": 25.46,
+        "e": 25.76
+      },
+      {
+        "w": "hisoblagichi",
+        "s": 25.78,
+        "e": 26.38
+      },
+      {
+        "w": "va",
+        "s": 26.42,
+        "e": 26.5
+      },
+      {
+        "w": "profil",
+        "s": 26.58,
+        "e": 26.94
+      },
+      {
+        "w": "menyusi",
+        "s": 26.98,
+        "e": 27.28
+      },
+      {
+        "w": "jamlanadi.",
+        "s": 27.32,
+        "e": 27.84
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "kompozitsiya",
+    "text": "Sahifa esa ushbu yirik bloklarni qulay joylashtirib, foydalanuvchiga to'liq ekran sifatida taqdim etadi.",
+    "show": "Sahifa esa ushbu yirik bloklarni qulay joylashtirib, foydalanuvchiga to'liq ekran sifatida taqdim etadi.",
+    "say": "Sahifa esa ushbu yirik bloklarni qulay joylashtirib, foydalanuvchiga to'liq ekran sifatida taqdim etadi.",
+    "a0": 28.48,
+    "a1": 34.52,
+    "words": [
+      {
+        "w": "Sahifa",
+        "s": 28.48,
+        "e": 28.9
+      },
+      {
+        "w": "esa",
+        "s": 29.04,
+        "e": 29.22
+      },
+      {
+        "w": "ushbu",
+        "s": 29.6,
+        "e": 29.82
+      },
+      {
+        "w": "yirik",
+        "s": 30.0,
+        "e": 30.2
+      },
+      {
+        "w": "bloklarni",
+        "s": 30.26,
+        "e": 30.74
+      },
+      {
+        "w": "qulay",
+        "s": 30.86,
+        "e": 31.14
+      },
+      {
+        "w": "joylashtirib,",
+        "s": 31.18,
+        "e": 31.76
+      },
+      {
+        "w": "foydalanuvchiga",
+        "s": 32.04,
+        "e": 32.72
+      },
+      {
+        "w": "to'liq",
+        "s": 32.82,
+        "e": 33.14
+      },
+      {
+        "w": "ekran",
+        "s": 33.2,
+        "e": 33.44
+      },
+      {
+        "w": "sifatida",
+        "s": 33.48,
+        "e": 33.84
+      },
+      {
+        "w": "taqdim",
+        "s": 33.9,
+        "e": 34.22
+      },
+      {
+        "w": "etadi.",
+        "s": 34.26,
+        "e": 34.52
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "qachon_ishlatish",
+    "text": "Widget qachon ochilishi kerak? Birinchidan, agar UI bloki bir nechta sahifada takrorlansa — masalan, Header yoki Footer.",
+    "show": "Widget qachon ochilishi kerak? Birinchidan, agar UI bloki bir nechta sahifada takrorlansa — masalan, Header yoki Footer.",
+    "say": "Widget qachon ochilishi kerak? Birinchidan, agar yu-ay bloki bir nechta sahifada takrorlansa — masalan, Header yoki Footer.",
+    "a0": 35.3,
+    "a1": 43.03,
+    "words": [
+      {
+        "w": "Widget",
+        "s": 35.3,
+        "e": 35.64
+      },
+      {
+        "w": "qachon",
+        "s": 35.72,
+        "e": 36.06
+      },
+      {
+        "w": "ochilishi",
+        "s": 36.12,
+        "e": 36.46
+      },
+      {
+        "w": "kerak?",
+        "s": 36.46,
+        "e": 36.72
+      },
+      {
+        "w": "Birinchidan,",
+        "s": 37.42,
+        "e": 37.89
+      },
+      {
+        "w": "agar",
+        "s": 38.33,
+        "e": 38.59
+      },
+      {
+        "w": "yu-ay",
+        "s": 38.73,
+        "e": 38.99
+      },
+      {
+        "w": "bloki",
+        "s": 39.05,
+        "e": 39.33
+      },
+      {
+        "w": "bir",
+        "s": 39.41,
+        "e": 39.53
+      },
+      {
+        "w": "nechta",
+        "s": 39.57,
+        "e": 39.77
+      },
+      {
+        "w": "sahifada",
+        "s": 39.81,
+        "e": 40.23
+      },
+      {
+        "w": "takrorlansa",
+        "s": 40.29,
+        "e": 40.89
+      },
+      {
+        "w": "—",
+        "s": 40.89,
+        "e": 40.89
+      },
+      {
+        "w": "masalan,",
+        "s": 41.19,
+        "e": 41.55
+      },
+      {
+        "w": "Header",
+        "s": 41.91,
+        "e": 42.29
+      },
+      {
+        "w": "yoki",
+        "s": 42.29,
+        "e": 42.63
+      },
+      {
+        "w": "Footer.",
+        "s": 42.71,
+        "e": 43.03
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "qachon_ishlatish",
+    "text": "Ikkinchidan, sahifa mustaqil katta qismlardan iborat bo'lsa: masalan, dashboard'dagi tahlil bloklari yoki filtrlar paneli.",
+    "show": "Ikkinchidan, sahifa mustaqil katta qismlardan iborat bo'lsa: masalan, dashboard'dagi tahlil bloklari yoki filtrlar paneli.",
+    "say": "Ikkinchidan, sahifa mustaqil katta qismlardan iborat bo'lsa: masalan, dashboard'dagi tahlil bloklari yoki filtrlar paneli.",
+    "a0": 43.53,
+    "a1": 50.85,
+    "words": [
+      {
+        "w": "Ikkinchidan,",
+        "s": 43.53,
+        "e": 43.97
+      },
+      {
+        "w": "sahifa",
+        "s": 44.35,
+        "e": 44.71
+      },
+      {
+        "w": "mustaqil",
+        "s": 44.77,
+        "e": 45.19
+      },
+      {
+        "w": "katta",
+        "s": 45.25,
+        "e": 45.49
+      },
+      {
+        "w": "qismlardan",
+        "s": 45.55,
+        "e": 46.09
+      },
+      {
+        "w": "iborat",
+        "s": 46.17,
+        "e": 46.53
+      },
+      {
+        "w": "bo'lsa:",
+        "s": 46.57,
+        "e": 46.85
+      },
+      {
+        "w": "masalan,",
+        "s": 47.23,
+        "e": 47.59
+      },
+      {
+        "w": "dashboard'dagi",
+        "s": 47.95,
+        "e": 48.55
+      },
+      {
+        "w": "tahlil",
+        "s": 48.61,
+        "e": 48.93
+      },
+      {
+        "w": "bloklari",
+        "s": 48.97,
+        "e": 49.43
+      },
+      {
+        "w": "yoki",
+        "s": 49.43,
+        "e": 49.83
+      },
+      {
+        "w": "filtrlar",
+        "s": 49.93,
+        "e": 50.39
+      },
+      {
+        "w": "paneli.",
+        "s": 50.45,
+        "e": 50.85
+      }
+    ]
+  },
+  {
+    "id": "L7",
+    "scene": "qachon_ishlatish",
+    "text": "Agar blok faqat bitta sahifada ishlatilsa va kichik bo'lsa, uni widget qilish shart emas — sahifaning o'zida qolishi to'g'ri.",
+    "show": "Agar blok faqat bitta sahifada ishlatilsa va kichik bo'lsa, uni widget qilish shart emas — sahifaning o'zida qolishi to'g'ri.",
+    "say": "Agar blok faqat bitta sahifada ishlatilsa va kichik bo'lsa, uni vijet qilish shart emas — sahifaning o'zida qolishi to'g'ri.",
+    "a0": 51.65,
+    "a1": 58.42,
+    "words": [
+      {
+        "w": "Agar",
+        "s": 51.65,
+        "e": 51.89
+      },
+      {
+        "w": "blok",
+        "s": 51.97,
+        "e": 52.19
+      },
+      {
+        "w": "faqat",
+        "s": 52.23,
+        "e": 52.52
+      },
+      {
+        "w": "bitta",
+        "s": 52.62,
+        "e": 52.88
+      },
+      {
+        "w": "sahifada",
+        "s": 52.94,
+        "e": 53.34
+      },
+      {
+        "w": "ishlatilsa",
+        "s": 53.38,
+        "e": 53.88
+      },
+      {
+        "w": "va",
+        "s": 53.94,
+        "e": 54.0
+      },
+      {
+        "w": "kichik",
+        "s": 54.1,
+        "e": 54.36
+      },
+      {
+        "w": "bo'lsa,",
+        "s": 54.42,
+        "e": 54.7
+      },
+      {
+        "w": "uni",
+        "s": 55.12,
+        "e": 55.28
+      },
+      {
+        "w": "vijet",
+        "s": 55.42,
+        "e": 55.68
+      },
+      {
+        "w": "qilish",
+        "s": 55.74,
+        "e": 55.96
+      },
+      {
+        "w": "shart",
+        "s": 55.98,
+        "e": 56.18
+      },
+      {
+        "w": "emas",
+        "s": 56.24,
+        "e": 56.48
+      },
+      {
+        "w": "—",
+        "s": 56.48,
+        "e": 56.48
+      },
+      {
+        "w": "sahifaning",
+        "s": 56.8,
+        "e": 57.36
+      },
+      {
+        "w": "o'zida",
+        "s": 57.48,
+        "e": 57.76
+      },
+      {
+        "w": "qolishi",
+        "s": 57.82,
+        "e": 58.12
+      },
+      {
+        "w": "to'g'ri.",
+        "s": 58.16,
+        "e": 58.42
+      }
+    ]
+  },
+  {
+    "id": "L8",
+    "scene": "segmentlar",
+    "text": "Har bir widget slice'i o'z ui papkasiga, kerak bo'lsa model va lib qismlariga ega bo'ladi.",
+    "show": "Har bir widget slice'i o'z ui papkasiga, kerak bo'lsa model va lib qismlariga ega bo'ladi.",
+    "say": "Har bir vijet slays'i o'z yu-ay papkasiga, kerak bo'lsa model va lib qismlariga ega bo'ladi.",
+    "a0": 59.24,
+    "a1": 64.9,
+    "words": [
+      {
+        "w": "Har",
+        "s": 59.24,
+        "e": 59.38
+      },
+      {
+        "w": "bir",
+        "s": 59.44,
+        "e": 59.54
+      },
+      {
+        "w": "vijet",
+        "s": 59.62,
+        "e": 60.04
+      },
+      {
+        "w": "slays'i",
+        "s": 60.04,
+        "e": 60.3
+      },
+      {
+        "w": "o'z",
+        "s": 60.68,
+        "e": 60.82
+      },
+      {
+        "w": "yu-ay",
+        "s": 60.9,
+        "e": 61.16
+      },
+      {
+        "w": "papkasiga,",
+        "s": 61.2,
+        "e": 61.72
+      },
+      {
+        "w": "kerak",
+        "s": 62.0,
+        "e": 62.22
+      },
+      {
+        "w": "bo'lsa",
+        "s": 62.26,
+        "e": 62.52
+      },
+      {
+        "w": "model",
+        "s": 62.9,
+        "e": 63.28
+      },
+      {
+        "w": "va",
+        "s": 63.34,
+        "e": 63.42
+      },
+      {
+        "w": "lib",
+        "s": 63.6,
+        "e": 63.76
+      },
+      {
+        "w": "qismlariga",
+        "s": 63.82,
+        "e": 64.34
+      },
+      {
+        "w": "ega",
+        "s": 64.4,
+        "e": 64.54
+      },
+      {
+        "w": "bo'ladi.",
+        "s": 64.58,
+        "e": 64.9
+      }
+    ]
+  },
+  {
+    "id": "L9",
+    "scene": "segmentlar",
+    "text": "Header misolida ko'rsak, u turli qatlamlardan kelgan komponentlarni bir joyga yig'adi va toza layout yaratadi.",
+    "show": "Header misolida ko'rsak, u turli qatlamlardan kelgan komponentlarni bir joyga yig'adi va toza layout yaratadi.",
+    "say": "Header misolida ko'rsak, u turli qatlamlardan kelgan komponentlarni bir joyga yig'adi va toza leyaut yaratadi.",
+    "a0": 65.74,
+    "a1": 72.11,
+    "words": [
+      {
+        "w": "Header",
+        "s": 65.74,
+        "e": 66.0
+      },
+      {
+        "w": "misolida",
+        "s": 66.04,
+        "e": 66.4
+      },
+      {
+        "w": "ko'rsak,",
+        "s": 66.44,
+        "e": 66.76
+      },
+      {
+        "w": "u",
+        "s": 67.14,
+        "e": 67.16
+      },
+      {
+        "w": "turli",
+        "s": 67.34,
+        "e": 67.61
+      },
+      {
+        "w": "qatlamlardan",
+        "s": 67.69,
+        "e": 68.27
+      },
+      {
+        "w": "kelgan",
+        "s": 68.33,
+        "e": 68.61
+      },
+      {
+        "w": "komponentlarni",
+        "s": 68.65,
+        "e": 69.37
+      },
+      {
+        "w": "bir",
+        "s": 69.47,
+        "e": 69.59
+      },
+      {
+        "w": "joyga",
+        "s": 69.65,
+        "e": 69.91
+      },
+      {
+        "w": "yig'adi",
+        "s": 69.97,
+        "e": 70.33
+      },
+      {
+        "w": "va",
+        "s": 70.39,
+        "e": 70.45
+      },
+      {
+        "w": "toza",
+        "s": 70.81,
+        "e": 71.15
+      },
+      {
+        "w": "leyaut",
+        "s": 71.25,
+        "e": 71.67
+      },
+      {
+        "w": "yaratadi.",
+        "s": 71.71,
+        "e": 72.11
+      }
+    ]
+  },
+  {
+    "id": "L10",
+    "scene": "segmentlar",
+    "text": "Barcha bu yaxlit blok tashqi olamga index nuqtasi orqali yagona Header sifatida eksport qilinadi.",
+    "show": "Barcha bu yaxlit blok tashqi olamga index nuqtasi orqali yagona Header sifatida eksport qilinadi.",
+    "say": "Barcha bu yaxlit blok tashqi olamga index nuqtasi orqali yagona Header sifatida eksport qilinadi.",
+    "a0": 72.93,
+    "a1": 79.15,
+    "words": [
+      {
+        "w": "Barcha",
+        "s": 72.93,
+        "e": 73.23
+      },
+      {
+        "w": "bu",
+        "s": 73.29,
+        "e": 73.35
+      },
+      {
+        "w": "yaxlit",
+        "s": 73.47,
+        "e": 73.81
+      },
+      {
+        "w": "blok",
+        "s": 73.87,
+        "e": 74.09
+      },
+      {
+        "w": "tashqi",
+        "s": 74.37,
+        "e": 74.65
+      },
+      {
+        "w": "olamga",
+        "s": 74.71,
+        "e": 75.05
+      },
+      {
+        "w": "index",
+        "s": 75.27,
+        "e": 75.57
+      },
+      {
+        "w": "nuqtasi",
+        "s": 75.69,
+        "e": 76.13
+      },
+      {
+        "w": "orqali",
+        "s": 76.19,
+        "e": 76.55
+      },
+      {
+        "w": "yagona",
+        "s": 76.85,
+        "e": 77.29
+      },
+      {
+        "w": "Header",
+        "s": 77.55,
+        "e": 77.89
+      },
+      {
+        "w": "sifatida",
+        "s": 77.93,
+        "e": 78.33
+      },
+      {
+        "w": "eksport",
+        "s": 78.45,
+        "e": 78.77
+      },
+      {
+        "w": "qilinadi.",
+        "s": 78.81,
+        "e": 79.15
+      }
+    ]
+  },
+  {
+    "id": "L11",
+    "scene": "cross_import",
+    "text": "FSD arxitekturasining qat'iy qoidasi: widget'lar bir-birini to'g'ridan-to'g'ri import qila olmaydi.",
+    "show": "FSD arxitekturasining qat'iy qoidasi: widget'lar bir-birini to'g'ridan-to'g'ri import qila olmaydi.",
+    "say": "Ef-es-di arxitekturasining qat'iy qoidasi: vijet'lar bir-birini to'g'ridan-to'g'ri import qila olmaydi.",
+    "a0": 79.91,
+    "a1": 85.12,
+    "words": [
+      {
+        "w": "Ef-es-di",
+        "s": 79.91,
+        "e": 80.27
+      },
+      {
+        "w": "arxitekturasining",
+        "s": 80.37,
+        "e": 81.17
+      },
+      {
+        "w": "qat'iy",
+        "s": 81.25,
+        "e": 81.55
+      },
+      {
+        "w": "qoidasi:",
+        "s": 81.65,
+        "e": 82.13
+      },
+      {
+        "w": "vijet'lar",
+        "s": 82.58,
+        "e": 83.04
+      },
+      {
+        "w": "bir-birini",
+        "s": 83.12,
+        "e": 83.48
+      },
+      {
+        "w": "to'g'ridan-to'g'ri",
+        "s": 83.52,
+        "e": 84.18
+      },
+      {
+        "w": "import",
+        "s": 84.26,
+        "e": 84.52
+      },
+      {
+        "w": "qila",
+        "s": 84.56,
+        "e": 84.7
+      },
+      {
+        "w": "olmaydi.",
+        "s": 84.74,
+        "e": 85.12
+      }
+    ]
+  },
+  {
+    "id": "L12",
+    "scene": "cross_import",
+    "text": "Masalan, header widget'i sidebar widget'ini import qila olmaydi; ularni sahifa yoki app qatlami o'zaro birlashtiradi.",
+    "show": "Masalan, header widget'i sidebar widget'ini import qila olmaydi; ularni sahifa yoki app qatlami o'zaro birlashtiradi.",
+    "say": "Masalan, header vijet'i sidebar vijet'ini import qila olmaydi; ularni sahifa yoki ep qatlami o'zaro birlashtiradi.",
+    "a0": 85.68,
+    "a1": 92.36,
+    "words": [
+      {
+        "w": "Masalan,",
+        "s": 85.68,
+        "e": 86.04
+      },
+      {
+        "w": "header",
+        "s": 86.36,
+        "e": 86.64
+      },
+      {
+        "w": "vijet'i",
+        "s": 86.7,
+        "e": 87.04
+      },
+      {
+        "w": "sidebar",
+        "s": 87.24,
+        "e": 87.66
+      },
+      {
+        "w": "vijet'ini",
+        "s": 87.7,
+        "e": 88.08
+      },
+      {
+        "w": "import",
+        "s": 88.14,
+        "e": 88.36
+      },
+      {
+        "w": "qila",
+        "s": 88.38,
+        "e": 88.52
+      },
+      {
+        "w": "olmaydi;",
+        "s": 88.52,
+        "e": 89.34
+      },
+      {
+        "w": "ularni",
+        "s": 89.34,
+        "e": 89.66
+      },
+      {
+        "w": "sahifa",
+        "s": 89.82,
+        "e": 90.24
+      },
+      {
+        "w": "yoki",
+        "s": 90.28,
+        "e": 90.58
+      },
+      {
+        "w": "ep",
+        "s": 90.78,
+        "e": 90.9
+      },
+      {
+        "w": "qatlami",
+        "s": 90.98,
+        "e": 91.36
+      },
+      {
+        "w": "o'zaro",
+        "s": 91.46,
+        "e": 91.74
+      },
+      {
+        "w": "birlashtiradi.",
+        "s": 91.78,
+        "e": 92.36
+      }
+    ]
+  },
+  {
+    "id": "L13",
+    "scene": "steiger",
+    "text": "Steiger linteri widget slice'larining o'zaro cross-import qilinmasligini va to'g'ri qatlamlardan foydalanishini nazorat qiladi.",
+    "show": "Steiger linteri widget slice'larining o'zaro cross-import qilinmasligini va to'g'ri qatlamlardan foydalanishini nazorat qiladi.",
+    "say": "Stayger linteri vijet slays'larining o'zaro cross-import qilinmasligini va to'g'ri qatlamlardan foydalanishini nazorat qiladi.",
+    "a0": 93.2,
+    "a1": 99.63,
+    "words": [
+      {
+        "w": "Stayger",
+        "s": 93.2,
+        "e": 93.58
+      },
+      {
+        "w": "linteri",
+        "s": 93.64,
+        "e": 93.96
+      },
+      {
+        "w": "vijet",
+        "s": 94.34,
+        "e": 94.64
+      },
+      {
+        "w": "slays'larining",
+        "s": 94.66,
+        "e": 95.3
+      },
+      {
+        "w": "o'zaro",
+        "s": 95.4,
+        "e": 95.68
+      },
+      {
+        "w": "cross-import",
+        "s": 95.78,
+        "e": 96.34
+      },
+      {
+        "w": "qilinmasligini",
+        "s": 96.38,
+        "e": 97.08
+      },
+      {
+        "w": "va",
+        "s": 97.18,
+        "e": 97.24
+      },
+      {
+        "w": "to'g'ri",
+        "s": 97.36,
+        "e": 97.63
+      },
+      {
+        "w": "qatlamlardan",
+        "s": 97.67,
+        "e": 98.25
+      },
+      {
+        "w": "foydalanishini",
+        "s": 98.29,
+        "e": 98.91
+      },
+      {
+        "w": "nazorat",
+        "s": 98.95,
+        "e": 99.33
+      },
+      {
+        "w": "qiladi.",
+        "s": 99.37,
+        "e": 99.63
+      }
+    ]
+  },
+  {
+    "id": "L14",
+    "scene": "steiger",
+    "text": "Har bir widget o'z chegarasida mustaqil qolganda, dizaynni o'zgartirish va boshqa sahifalarga ko'chirish oson kechadi.",
+    "show": "Har bir widget o'z chegarasida mustaqil qolganda, dizaynni o'zgartirish va boshqa sahifalarga ko'chirish oson kechadi.",
+    "say": "Har bir vijet o'z chegarasida mustaqil qolganda, dizaynni o'zgartirish va boshqa sahifalarga ko'chirish oson kechadi.",
+    "a0": 100.41,
+    "a1": 106.67,
+    "words": [
+      {
+        "w": "Har",
+        "s": 100.41,
+        "e": 100.57
+      },
+      {
+        "w": "bir",
+        "s": 100.61,
+        "e": 100.71
+      },
+      {
+        "w": "vijet",
+        "s": 100.77,
+        "e": 101.05
+      },
+      {
+        "w": "o'z",
+        "s": 101.39,
+        "e": 101.51
+      },
+      {
+        "w": "chegarasida",
+        "s": 101.53,
+        "e": 101.99
+      },
+      {
+        "w": "mustaqil",
+        "s": 102.05,
+        "e": 102.47
+      },
+      {
+        "w": "qolganda,",
+        "s": 102.51,
+        "e": 102.95
+      },
+      {
+        "w": "dizaynni",
+        "s": 103.29,
+        "e": 103.71
+      },
+      {
+        "w": "o'zgartirish",
+        "s": 103.81,
+        "e": 104.41
+      },
+      {
+        "w": "va",
+        "s": 104.45,
+        "e": 104.51
+      },
+      {
+        "w": "boshqa",
+        "s": 104.59,
+        "e": 104.85
+      },
+      {
+        "w": "sahifalarga",
+        "s": 104.89,
+        "e": 105.47
+      },
+      {
+        "w": "ko'chirish",
+        "s": 105.51,
+        "e": 105.89
+      },
+      {
+        "w": "oson",
+        "s": 106.01,
+        "e": 106.29
+      },
+      {
+        "w": "kechadi.",
+        "s": 106.33,
+        "e": 106.67
+      }
+    ]
+  },
+  {
+    "id": "L15",
+    "scene": "xulosa",
+    "text": "Xulosa qilsak: widgets — bu yirik mustaqil bloklar, bir nechta qatlamning kompozitsiyasi va qulay interfeys g'ishtchalaridir.",
+    "show": "Xulosa qilsak: widgets — bu yirik mustaqil bloklar, bir nechta qatlamning kompozitsiyasi va qulay interfeys g'ishtchalaridir.",
+    "say": "Xulosa qilsak: vijets — bu yirik mustaqil bloklar, bir nechta qatlamning kompozitsiyasi va qulay interfeys g'ishtchalaridir.",
+    "a0": 107.39,
+    "a1": 114.68,
+    "words": [
+      {
+        "w": "Xulosa",
+        "s": 107.39,
+        "e": 107.75
+      },
+      {
+        "w": "qilsak:",
+        "s": 107.81,
+        "e": 108.13
+      },
+      {
+        "w": "vijets",
+        "s": 108.61,
+        "e": 109.03
+      },
+      {
+        "w": "—",
+        "s": 109.03,
+        "e": 109.03
+      },
+      {
+        "w": "bu",
+        "s": 109.21,
+        "e": 109.29
+      },
+      {
+        "w": "yirik",
+        "s": 109.43,
+        "e": 109.75
+      },
+      {
+        "w": "mustaqil",
+        "s": 109.81,
+        "e": 110.23
+      },
+      {
+        "w": "bloklar,",
+        "s": 110.27,
+        "e": 110.73
+      },
+      {
+        "w": "bir",
+        "s": 111.09,
+        "e": 111.21
+      },
+      {
+        "w": "nechta",
+        "s": 111.25,
+        "e": 111.49
+      },
+      {
+        "w": "qatlamning",
+        "s": 111.55,
+        "e": 112.05
+      },
+      {
+        "w": "kompozitsiyasi",
+        "s": 112.09,
+        "e": 112.88
+      },
+      {
+        "w": "va",
+        "s": 112.94,
+        "e": 113.02
+      },
+      {
+        "w": "qulay",
+        "s": 113.14,
+        "e": 113.42
+      },
+      {
+        "w": "interfeys",
+        "s": 113.52,
+        "e": 114.0
+      },
+      {
+        "w": "g'ishtchalaridir.",
+        "s": 114.06,
+        "e": 114.68
+      }
+    ]
+  },
+  {
+    "id": "L16",
+    "scene": "xulosa",
+    "text": "Keyingi bobda marshrutlar va to'liq ekranlarni ifodalovchi pages qatlami bilan tanishamiz. Rahmat!",
+    "show": "Keyingi bobda marshrutlar va to'liq ekranlarni ifodalovchi pages qatlami bilan tanishamiz. Rahmat!",
+    "say": "Keyingi bobda marshrutlar va to'liq ekranlarni ifodalovchi peyjiz qatlami bilan tanishamiz. Rahmat!",
+    "a0": 115.4,
+    "a1": 121.03,
+    "words": [
+      {
+        "w": "Keyingi",
+        "s": 115.4,
+        "e": 115.68
+      },
+      {
+        "w": "bobda",
+        "s": 115.72,
+        "e": 115.98
+      },
+      {
+        "w": "marshrutlar",
+        "s": 116.32,
+        "e": 116.86
+      },
+      {
+        "w": "va",
+        "s": 116.92,
+        "e": 116.98
+      },
+      {
+        "w": "to'liq",
+        "s": 117.08,
+        "e": 117.34
+      },
+      {
+        "w": "ekranlarni",
+        "s": 117.4,
+        "e": 117.88
+      },
+      {
+        "w": "ifodalovchi",
+        "s": 117.92,
+        "e": 118.5
+      },
+      {
+        "w": "peyjiz",
+        "s": 118.72,
+        "e": 119.06
+      },
+      {
+        "w": "qatlami",
+        "s": 119.1,
+        "e": 119.44
+      },
+      {
+        "w": "bilan",
+        "s": 119.46,
+        "e": 119.64
+      },
+      {
+        "w": "tanishamiz.",
+        "s": 119.68,
+        "e": 120.14
+      },
+      {
+        "w": "Rahmat!",
+        "s": 120.69,
+        "e": 121.03
+      }
+    ]
+  }
+]

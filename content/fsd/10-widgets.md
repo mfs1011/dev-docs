@@ -4,6 +4,14 @@
 
 ## Qisqacha
 
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/fsd/10-widgets.jpg" src="/video/fsd/10-widgets.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/fsd/10-widgets.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/fsd/10-widgets.uz.vtt">
+</video>
+<figcaption>Bob videoda: widgets qatlami — katta va o'zi yetarli UI bloklari, qatlamlar kompozitsiyasi (features, entities, shared), Header misoli, cross-import taqiqi va Steiger nazorati.</figcaption>
+</figure>
+
 `widgets` — katta, **o'zi yetarli** UI bloklari: sarlavha (header), filtrlar paneli, savat xulosasi, izohlar bo'limi. Widget feature'lar, entity'lar va shared'ni birlashtirib, odatda butun bir foydalanish holatini yetkazadi. Widget eng foydali bo'ladi, agar u **bir necha sahifada** qayta ishlatilsa yoki sahifa bir nechta katta mustaqil bloklardan iborat bo'lsa.
 
 ## Qoida
