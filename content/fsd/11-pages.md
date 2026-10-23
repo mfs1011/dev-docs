@@ -4,6 +4,14 @@
 
 ## Qisqacha
 
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/fsd/11-pages.jpg" src="/video/fsd/11-pages.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/fsd/11-pages.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/fsd/11-pages.uz.vtt">
+</video>
+<figcaption>Bob videoda: pages qatlami — marshrut ekranlari, bitta sahifa — bitta slice qoidasi, sahifaga xos kod chegaralari, cross-import taqiqi va Steiger nazorati.</figcaption>
+</figure>
+
 `pages` — veb-sayt yoki ilovaning sahifalari (ekranlar). Odatda **bitta sahifa — bitta slice**. v2.1 da bu eng muhim qatlam: sahifaga xos UI, so'rovlar va kichik holat **sahifa ichida** yashaydi. Kodning qancha qismi sahifada bo'lishiga cheklov yo'q — jamoa uni oson aylana olsa, bas.
 
 ## Qoida
