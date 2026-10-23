@@ -1,0 +1,81 @@
+WEBVTT
+
+1
+00:01.420 --> 00:07.910
+Salom! Bu FSD qo'llanmasining o'n sakkizinchi bobi — Ortiqcha entity'lar. Bugun entities qatlamidan qachon
+va qanday to'g'ri foydalanishni, hamda keraksiz entity'lar yaratish tuzog'idan qochishni ko'rib chiqamiz.
+
+2
+00:08.300 --> 00:18.900
+Entities — FSD da eng keng ochiq qatlam: undan feature, widget va sahifalar to'g'ridan-to'g'ri
+foydalanishi mumkin, shu sababli bu yerdagi har bir xato butun loyihaga keng ta'sir qiladi.
+
+3
+00:20.630 --> 00:28.910
+Rasmiy FSD ning eng muhim nolinchi qoidasi shuki: loyihada umuman
+entities qatlami bo'lmasligi mutlaqo tabiiy va normal holatdir.
+
+4
+00:29.040 --> 00:38.570
+Ayniqsa admin panellar va oddiy ma'lumot ko'rsatuvchi yupqa klientlarda barcha
+CRUD so'rovlari shared orqali bajarilib, ortiqcha entity'larga ehtiyoj qolmaydi.
+
+5
+00:41.600 --> 00:49.320
+Birinchi qoida: kodni oldindan entity qilib ajratmang. Avval
+mantiqni uni ishlatayotgan sahifa yoki feature modelida yozing.
+
+6
+00:49.390 --> 00:57.640
+Qachonki ikkinchi bir sahifa ham xuddi shu hisob-kitob qoidasini so'rasagina,
+mantiqni sof TypeScript funksiyasi sifatida entities ga ko'chiring.
+
+7
+00:57.770 --> 01:05.490
+Bu kechiktirilgan dekompozitsiya usuli loyihani boshlang'ich kunda
+o'nlab bo'sh va foydasiz entity'lar bilan to'lib ketishidan asraydi.
+
+8
+01:08.460 --> 01:16.010
+Ikkinchi va uchinchi qoidalar: oddiy CRUD so'rovlari entity
+ichiga kiritilmaydi, ular shared/api papkasida saqlanadi.
+
+9
+01:16.180 --> 01:25.480
+To'rtinchi qoida esa autentifikatsiya bilan bog'liq: kirish tokeni va joriy
+foydalanuvchi ma'lumoti entities/user da emas, balki shared/auth da turishi shart.
+
+10
+01:25.690 --> 01:33.010
+Agar auth ma'lumoti entities ga qo'yilsa, shared qatlamining unga
+bog'lanishi yuzaga kelib, butun qatlamlar iyerarxiyasi buziladi.
+
+11
+01:36.000 --> 01:43.390
+Beshinchi qoida: entity'larni haddan tashqari maydalab, order,
+order-item va customer kabi bo'laklarga ajratib tashlamang.
+
+12
+01:43.460 --> 01:49.310
+Bunday maydalash ular o'rtasida ko'plab at x belgilarini
+talab qiladi va arxitekturani qotirib qo'yadi.
+
+13
+01:49.550 --> 01:57.120
+Buning o'rniga ularni yagona order-info domen kontekstiga jamlash
+orqali toza va oson boshqariladigan slice hosil qilinadi.
+
+14
+02:00.110 --> 02:06.520
+Steiger linteri entities qatlamidagi noo'rin bog'liqliklarni
+va arxitektura buzilishlarini avtomatik kuzatib boradi.
+
+15
+02:06.670 --> 02:13.270
+Entity'lar o'z o'rnida me'yorida qo'llanilganda,
+linter barcha qatlamlarni toza holatda tasdiqlaydi.
+
+16
+02:16.580 --> 02:29.270
+Xulosa qilsak: oldindan entity ochmang, CRUD va auth'ni shared ga qoldiring va me'yorni saqlang.
+Keyingi bobda kod qayerga borishini hal qiluvchi qaror daraxtini ko'rib chiqamiz. Rahmat!

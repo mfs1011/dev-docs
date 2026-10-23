@@ -1,0 +1,1593 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Salom! Bu FSD qo'llanmasining o'n sakkizinchi bobi — Ortiqcha entity'lar. Bugun entities qatlamidan qachon va qanday to'g'ri foydalanishni, hamda keraksiz entity'lar yaratish tuzog'idan qochishni ko'rib chiqamiz.",
+    "show": "Salom! Bu FSD qo'llanmasining o'n sakkizinchi bobi — Ortiqcha entity'lar. Bugun entities qatlamidan qachon va qanday to'g'ri foydalanishni, hamda keraksiz entity'lar yaratish tuzog'idan qochishni ko'rib chiqamiz.",
+    "say": "Salom! Bu Ef-es-di qo'llanmasining o'n sakkizinchi bobi — Ortiqcha entiti'lar. Bugun entitiz qatlamidan qachon va qanday to'g'ri foydalanishni, hamda keraksiz entiti'lar yaratish tuzog'idan qochishni ko'rib chiqamiz.",
+    "a0": 0.26,
+    "a1": 6.3,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.26,
+        "e": 0.58
+      },
+      {
+        "w": "Bu",
+        "s": 1.04,
+        "e": 1.14
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 1.4,
+        "e": 1.8
+      },
+      {
+        "w": "qo'llanmasining",
+        "s": 1.9,
+        "e": 2.64
+      },
+      {
+        "w": "o'n",
+        "s": 2.64,
+        "e": 2.7
+      },
+      {
+        "w": "sakkizinchi",
+        "s": 2.7,
+        "e": 2.96
+      },
+      {
+        "w": "bobi",
+        "s": 2.96,
+        "e": 3.04
+      },
+      {
+        "w": "—",
+        "s": 3.04,
+        "e": 3.04
+      },
+      {
+        "w": "Ortiqcha",
+        "s": 3.04,
+        "e": 3.26
+      },
+      {
+        "w": "entiti'lar.",
+        "s": 3.26,
+        "e": 3.46
+      },
+      {
+        "w": "Bugun",
+        "s": 3.46,
+        "e": 3.56
+      },
+      {
+        "w": "entitiz",
+        "s": 3.56,
+        "e": 3.72
+      },
+      {
+        "w": "qatlamidan",
+        "s": 3.72,
+        "e": 3.92
+      },
+      {
+        "w": "qachon",
+        "s": 3.92,
+        "e": 4.06
+      },
+      {
+        "w": "va",
+        "s": 4.1,
+        "e": 4.14
+      },
+      {
+        "w": "qanday",
+        "s": 4.14,
+        "e": 4.26
+      },
+      {
+        "w": "to'g'ri",
+        "s": 4.26,
+        "e": 4.44
+      },
+      {
+        "w": "foydalanishni,",
+        "s": 4.44,
+        "e": 4.74
+      },
+      {
+        "w": "hamda",
+        "s": 4.74,
+        "e": 4.84
+      },
+      {
+        "w": "keraksiz",
+        "s": 4.84,
+        "e": 5.06
+      },
+      {
+        "w": "entiti'lar",
+        "s": 5.06,
+        "e": 5.38
+      },
+      {
+        "w": "yaratish",
+        "s": 5.38,
+        "e": 5.54
+      },
+      {
+        "w": "tuzog'idan",
+        "s": 5.54,
+        "e": 5.74
+      },
+      {
+        "w": "qochishni",
+        "s": 5.74,
+        "e": 5.92
+      },
+      {
+        "w": "ko'rib",
+        "s": 5.92,
+        "e": 6.04
+      },
+      {
+        "w": "chiqamiz.",
+        "s": 6.06,
+        "e": 6.3
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "intro",
+    "text": "Entities — FSD da eng keng ochiq qatlam: undan feature, widget va sahifalar to'g'ridan-to'g'ri foydalanishi mumkin, shu sababli bu yerdagi har bir xato butun loyihaga keng ta'sir qiladi.",
+    "show": "Entities — FSD da eng keng ochiq qatlam: undan feature, widget va sahifalar to'g'ridan-to'g'ri foydalanishi mumkin, shu sababli bu yerdagi har bir xato butun loyihaga keng ta'sir qiladi.",
+    "say": "Entitiz — Ef-es-di da eng keng ochiq qatlam: undan ficher, vijet va sahifalar to'g'ridan-to'g'ri foydalanishi mumkin, shu sababli bu yerdagi har bir xato butun loyihaga keng ta'sir qiladi.",
+    "a0": 6.34,
+    "a1": 16.49,
+    "words": [
+      {
+        "w": "Entitiz",
+        "s": 6.34,
+        "e": 6.48
+      },
+      {
+        "w": "—",
+        "s": 6.48,
+        "e": 6.48
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 6.48,
+        "e": 6.68
+      },
+      {
+        "w": "da",
+        "s": 6.74,
+        "e": 6.82
+      },
+      {
+        "w": "eng",
+        "s": 6.96,
+        "e": 7.1
+      },
+      {
+        "w": "keng",
+        "s": 7.16,
+        "e": 7.38
+      },
+      {
+        "w": "ochiq",
+        "s": 7.46,
+        "e": 7.65
+      },
+      {
+        "w": "qatlam:",
+        "s": 7.69,
+        "e": 8.01
+      },
+      {
+        "w": "undan",
+        "s": 8.41,
+        "e": 8.67
+      },
+      {
+        "w": "ficher,",
+        "s": 8.73,
+        "e": 9.15
+      },
+      {
+        "w": "vijet",
+        "s": 9.23,
+        "e": 9.59
+      },
+      {
+        "w": "va",
+        "s": 9.65,
+        "e": 9.69
+      },
+      {
+        "w": "sahifalar",
+        "s": 9.75,
+        "e": 10.27
+      },
+      {
+        "w": "to'g'ridan-to'g'ri",
+        "s": 10.31,
+        "e": 11.01
+      },
+      {
+        "w": "foydalanishi",
+        "s": 11.05,
+        "e": 11.63
+      },
+      {
+        "w": "mumkin,",
+        "s": 11.65,
+        "e": 11.95
+      },
+      {
+        "w": "shu",
+        "s": 12.39,
+        "e": 12.47
+      },
+      {
+        "w": "sababli",
+        "s": 12.55,
+        "e": 12.93
+      },
+      {
+        "w": "bu",
+        "s": 12.97,
+        "e": 13.05
+      },
+      {
+        "w": "yerdagi",
+        "s": 13.11,
+        "e": 13.49
+      },
+      {
+        "w": "har",
+        "s": 13.57,
+        "e": 13.77
+      },
+      {
+        "w": "bir",
+        "s": 13.83,
+        "e": 13.95
+      },
+      {
+        "w": "xato",
+        "s": 13.99,
+        "e": 14.27
+      },
+      {
+        "w": "butun",
+        "s": 14.53,
+        "e": 14.89
+      },
+      {
+        "w": "loyihaga",
+        "s": 14.97,
+        "e": 15.49
+      },
+      {
+        "w": "keng",
+        "s": 15.57,
+        "e": 15.81
+      },
+      {
+        "w": "ta'sir",
+        "s": 15.85,
+        "e": 16.15
+      },
+      {
+        "w": "qiladi.",
+        "s": 16.19,
+        "e": 16.49
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "nolinchi_qoida",
+    "text": "Rasmiy FSD ning eng muhim nolinchi qoidasi shuki: loyihada umuman entities qatlami bo'lmasligi mutlaqo tabiiy va normal holatdir.",
+    "show": "Rasmiy FSD ning eng muhim nolinchi qoidasi shuki: loyihada umuman entities qatlami bo'lmasligi mutlaqo tabiiy va normal holatdir.",
+    "say": "Rasmiy Ef-es-di ning eng muhim nolinchi qoidasi shuki: loyihada umuman entitiz qatlami bo'lmasligi mutlaqo tabiiy va normal holatdir.",
+    "a0": 17.07,
+    "a1": 24.9,
+    "words": [
+      {
+        "w": "Rasmiy",
+        "s": 17.07,
+        "e": 17.37
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 17.45,
+        "e": 17.83
+      },
+      {
+        "w": "ning",
+        "s": 17.93,
+        "e": 18.07
+      },
+      {
+        "w": "eng",
+        "s": 18.23,
+        "e": 18.37
+      },
+      {
+        "w": "muhim",
+        "s": 18.43,
+        "e": 18.71
+      },
+      {
+        "w": "nolinchi",
+        "s": 18.77,
+        "e": 19.13
+      },
+      {
+        "w": "qoidasi",
+        "s": 19.19,
+        "e": 19.57
+      },
+      {
+        "w": "shuki:",
+        "s": 19.61,
+        "e": 20.03
+      },
+      {
+        "w": "loyihada",
+        "s": 20.41,
+        "e": 20.85
+      },
+      {
+        "w": "umuman",
+        "s": 21.01,
+        "e": 21.39
+      },
+      {
+        "w": "entitiz",
+        "s": 21.53,
+        "e": 21.93
+      },
+      {
+        "w": "qatlami",
+        "s": 21.97,
+        "e": 22.31
+      },
+      {
+        "w": "bo'lmasligi",
+        "s": 22.37,
+        "e": 22.88
+      },
+      {
+        "w": "mutlaqo",
+        "s": 22.94,
+        "e": 23.34
+      },
+      {
+        "w": "tabiiy",
+        "s": 23.42,
+        "e": 23.78
+      },
+      {
+        "w": "va",
+        "s": 23.86,
+        "e": 23.92
+      },
+      {
+        "w": "normal",
+        "s": 24.0,
+        "e": 24.36
+      },
+      {
+        "w": "holatdir.",
+        "s": 24.42,
+        "e": 24.9
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "nolinchi_qoida",
+    "text": "Ayniqsa admin panellar va oddiy ma'lumot ko'rsatuvchi yupqa klientlarda barcha CRUD so'rovlari shared orqali bajarilib, ortiqcha entity'larga ehtiyoj qolmaydi.",
+    "show": "Ayniqsa admin panellar va oddiy ma'lumot ko'rsatuvchi yupqa klientlarda barcha CRUD so'rovlari shared orqali bajarilib, ortiqcha entity'larga ehtiyoj qolmaydi.",
+    "say": "Ayniqsa admin panellar va oddiy ma'lumot ko'rsatuvchi yupqa klientlarda barcha krud so'rovlari sherd orqali bajarilib, ortiqcha entiti'larga ehtiyoj qolmaydi.",
+    "a0": 25.48,
+    "a1": 34.56,
+    "words": [
+      {
+        "w": "Ayniqsa",
+        "s": 25.48,
+        "e": 25.84
+      },
+      {
+        "w": "admin",
+        "s": 25.96,
+        "e": 26.24
+      },
+      {
+        "w": "panellar",
+        "s": 26.28,
+        "e": 26.76
+      },
+      {
+        "w": "va",
+        "s": 26.84,
+        "e": 26.9
+      },
+      {
+        "w": "oddiy",
+        "s": 27.06,
+        "e": 27.32
+      },
+      {
+        "w": "ma'lumot",
+        "s": 27.38,
+        "e": 27.76
+      },
+      {
+        "w": "ko'rsatuvchi",
+        "s": 27.78,
+        "e": 28.3
+      },
+      {
+        "w": "yupqa",
+        "s": 28.36,
+        "e": 28.62
+      },
+      {
+        "w": "klientlarda",
+        "s": 28.66,
+        "e": 29.22
+      },
+      {
+        "w": "barcha",
+        "s": 29.62,
+        "e": 29.94
+      },
+      {
+        "w": "krud",
+        "s": 30.04,
+        "e": 30.28
+      },
+      {
+        "w": "so'rovlari",
+        "s": 30.32,
+        "e": 30.82
+      },
+      {
+        "w": "sherd",
+        "s": 30.98,
+        "e": 31.26
+      },
+      {
+        "w": "orqali",
+        "s": 31.34,
+        "e": 31.64
+      },
+      {
+        "w": "bajarilib,",
+        "s": 31.68,
+        "e": 32.16
+      },
+      {
+        "w": "ortiqcha",
+        "s": 32.5,
+        "e": 32.86
+      },
+      {
+        "w": "entiti'larga",
+        "s": 32.94,
+        "e": 33.56
+      },
+      {
+        "w": "ehtiyoj",
+        "s": 33.68,
+        "e": 34.06
+      },
+      {
+        "w": "qolmaydi.",
+        "s": 34.14,
+        "e": 34.56
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "oldindan_bolmaslik",
+    "text": "Birinchi qoida: kodni oldindan entity qilib ajratmang. Avval mantiqni uni ishlatayotgan sahifa yoki feature modelida yozing.",
+    "show": "Birinchi qoida: kodni oldindan entity qilib ajratmang. Avval mantiqni uni ishlatayotgan sahifa yoki feature modelida yozing.",
+    "say": "Birinchi qoida: kodni oldindan entiti qilib ajratmang. Avval mantiqni uni ishlatayotgan sahifa yoki ficher modelida yozing.",
+    "a0": 35.24,
+    "a1": 42.51,
+    "words": [
+      {
+        "w": "Birinchi",
+        "s": 35.24,
+        "e": 35.52
+      },
+      {
+        "w": "qoida:",
+        "s": 35.56,
+        "e": 35.82
+      },
+      {
+        "w": "kodni",
+        "s": 36.32,
+        "e": 36.66
+      },
+      {
+        "w": "oldindan",
+        "s": 36.86,
+        "e": 37.34
+      },
+      {
+        "w": "entiti",
+        "s": 37.51,
+        "e": 37.85
+      },
+      {
+        "w": "qilib",
+        "s": 37.93,
+        "e": 38.13
+      },
+      {
+        "w": "ajratmang.",
+        "s": 38.19,
+        "e": 38.67
+      },
+      {
+        "w": "Avval",
+        "s": 39.05,
+        "e": 39.25
+      },
+      {
+        "w": "mantiqni",
+        "s": 39.31,
+        "e": 39.69
+      },
+      {
+        "w": "uni",
+        "s": 39.79,
+        "e": 39.91
+      },
+      {
+        "w": "ishlatayotgan",
+        "s": 39.95,
+        "e": 40.53
+      },
+      {
+        "w": "sahifa",
+        "s": 40.57,
+        "e": 40.99
+      },
+      {
+        "w": "yoki",
+        "s": 41.07,
+        "e": 41.29
+      },
+      {
+        "w": "ficher",
+        "s": 41.37,
+        "e": 41.71
+      },
+      {
+        "w": "modelida",
+        "s": 41.75,
+        "e": 42.17
+      },
+      {
+        "w": "yozing.",
+        "s": 42.21,
+        "e": 42.51
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "oldindan_bolmaslik",
+    "text": "Qachonki ikkinchi bir sahifa ham xuddi shu hisob-kitob qoidasini so'rasagina, mantiqni sof TypeScript funksiyasi sifatida entities ga ko'chiring.",
+    "show": "Qachonki ikkinchi bir sahifa ham xuddi shu hisob-kitob qoidasini so'rasagina, mantiqni sof TypeScript funksiyasi sifatida entities ga ko'chiring.",
+    "say": "Qachonki ikkinchi bir sahifa ham xuddi shu hisob-kitob qoidasini so'rasagina, mantiqni sof Taypskript funksiyasi sifatida entitiz ga ko'chiring.",
+    "a0": 43.03,
+    "a1": 50.83,
+    "words": [
+      {
+        "w": "Qachonki",
+        "s": 43.03,
+        "e": 43.43
+      },
+      {
+        "w": "ikkinchi",
+        "s": 43.57,
+        "e": 44.01
+      },
+      {
+        "w": "bir",
+        "s": 44.07,
+        "e": 44.15
+      },
+      {
+        "w": "sahifa",
+        "s": 44.19,
+        "e": 44.55
+      },
+      {
+        "w": "ham",
+        "s": 44.61,
+        "e": 44.75
+      },
+      {
+        "w": "xuddi",
+        "s": 44.85,
+        "e": 45.19
+      },
+      {
+        "w": "shu",
+        "s": 45.25,
+        "e": 45.33
+      },
+      {
+        "w": "hisob-kitob",
+        "s": 45.41,
+        "e": 45.91
+      },
+      {
+        "w": "qoidasini",
+        "s": 45.95,
+        "e": 46.37
+      },
+      {
+        "w": "so'rasagina,",
+        "s": 46.41,
+        "e": 46.93
+      },
+      {
+        "w": "mantiqni",
+        "s": 47.33,
+        "e": 47.81
+      },
+      {
+        "w": "sof",
+        "s": 47.95,
+        "e": 48.17
+      },
+      {
+        "w": "Taypskript",
+        "s": 48.27,
+        "e": 48.81
+      },
+      {
+        "w": "funksiyasi",
+        "s": 48.85,
+        "e": 49.31
+      },
+      {
+        "w": "sifatida",
+        "s": 49.35,
+        "e": 49.73
+      },
+      {
+        "w": "entitiz",
+        "s": 49.87,
+        "e": 50.31
+      },
+      {
+        "w": "ga",
+        "s": 50.33,
+        "e": 50.41
+      },
+      {
+        "w": "ko'chiring.",
+        "s": 50.45,
+        "e": 50.83
+      }
+    ]
+  },
+  {
+    "id": "L7",
+    "scene": "oldindan_bolmaslik",
+    "text": "Bu kechiktirilgan dekompozitsiya usuli loyihani boshlang'ich kunda o'nlab bo'sh va foydasiz entity'lar bilan to'lib ketishidan asraydi.",
+    "show": "Bu kechiktirilgan dekompozitsiya usuli loyihani boshlang'ich kunda o'nlab bo'sh va foydasiz entity'lar bilan to'lib ketishidan asraydi.",
+    "say": "Bu kechiktirilgan dekompozitsiya usuli loyihani boshlang'ich kunda o'nlab bo'sh va foydasiz entiti'lar bilan to'lib ketishidan asraydi.",
+    "a0": 51.41,
+    "a1": 58.68,
+    "words": [
+      {
+        "w": "Bu",
+        "s": 51.41,
+        "e": 51.47
+      },
+      {
+        "w": "kechiktirilgan",
+        "s": 51.71,
+        "e": 52.39
+      },
+      {
+        "w": "dekompozitsiya",
+        "s": 52.45,
+        "e": 53.26
+      },
+      {
+        "w": "usuli",
+        "s": 53.32,
+        "e": 53.66
+      },
+      {
+        "w": "loyihani",
+        "s": 54.02,
+        "e": 54.44
+      },
+      {
+        "w": "boshlang'ich",
+        "s": 54.5,
+        "e": 54.98
+      },
+      {
+        "w": "kunda",
+        "s": 55.02,
+        "e": 55.26
+      },
+      {
+        "w": "o'nlab",
+        "s": 55.42,
+        "e": 55.78
+      },
+      {
+        "w": "bo'sh",
+        "s": 55.86,
+        "e": 56.1
+      },
+      {
+        "w": "va",
+        "s": 56.18,
+        "e": 56.24
+      },
+      {
+        "w": "foydasiz",
+        "s": 56.3,
+        "e": 56.74
+      },
+      {
+        "w": "entiti'lar",
+        "s": 56.84,
+        "e": 57.34
+      },
+      {
+        "w": "bilan",
+        "s": 57.38,
+        "e": 57.52
+      },
+      {
+        "w": "to'lib",
+        "s": 57.56,
+        "e": 57.78
+      },
+      {
+        "w": "ketishidan",
+        "s": 57.8,
+        "e": 58.26
+      },
+      {
+        "w": "asraydi.",
+        "s": 58.28,
+        "e": 58.68
+      }
+    ]
+  },
+  {
+    "id": "L8",
+    "scene": "crud_va_auth",
+    "text": "Ikkinchi va uchinchi qoidalar: oddiy CRUD so'rovlari entity ichiga kiritilmaydi, ular shared/api papkasida saqlanadi.",
+    "show": "Ikkinchi va uchinchi qoidalar: oddiy CRUD so'rovlari entity ichiga kiritilmaydi, ular shared/api papkasida saqlanadi.",
+    "say": "Ikkinchi va uchinchi qoidalar: oddiy krud so'rovlari entiti ichiga kiritilmaydi, ular sherd/ey-pi-ay papkasida saqlanadi.",
+    "a0": 59.3,
+    "a1": 66.4,
+    "words": [
+      {
+        "w": "Ikkinchi",
+        "s": 59.3,
+        "e": 59.72
+      },
+      {
+        "w": "va",
+        "s": 59.82,
+        "e": 59.9
+      },
+      {
+        "w": "uchinchi",
+        "s": 60.02,
+        "e": 60.3
+      },
+      {
+        "w": "qoidalar:",
+        "s": 60.34,
+        "e": 60.74
+      },
+      {
+        "w": "oddiy",
+        "s": 61.22,
+        "e": 61.44
+      },
+      {
+        "w": "krud",
+        "s": 61.56,
+        "e": 61.78
+      },
+      {
+        "w": "so'rovlari",
+        "s": 61.82,
+        "e": 62.32
+      },
+      {
+        "w": "entiti",
+        "s": 62.46,
+        "e": 62.76
+      },
+      {
+        "w": "ichiga",
+        "s": 62.84,
+        "e": 63.1
+      },
+      {
+        "w": "kiritilmaydi,",
+        "s": 63.14,
+        "e": 63.74
+      },
+      {
+        "w": "ular",
+        "s": 64.14,
+        "e": 64.34
+      },
+      {
+        "w": "sherd/ey-pi-ay",
+        "s": 64.34,
+        "e": 65.4
+      },
+      {
+        "w": "papkasida",
+        "s": 65.4,
+        "e": 65.86
+      },
+      {
+        "w": "saqlanadi.",
+        "s": 65.92,
+        "e": 66.4
+      }
+    ]
+  },
+  {
+    "id": "L9",
+    "scene": "crud_va_auth",
+    "text": "To'rtinchi qoida esa autentifikatsiya bilan bog'liq: kirish tokeni va joriy foydalanuvchi ma'lumoti entities/user da emas, balki shared/auth da turishi shart.",
+    "show": "To'rtinchi qoida esa autentifikatsiya bilan bog'liq: kirish tokeni va joriy foydalanuvchi ma'lumoti entities/user da emas, balki shared/auth da turishi shart.",
+    "say": "To'rtinchi qoida esa autentifikatsiya bilan bog'liq: kirish tokeni va joriy foydalanuvchi ma'lumoti entitiz/yuzer da emas, balki sherd/os da turishi shart.",
+    "a0": 67.02,
+    "a1": 75.87,
+    "words": [
+      {
+        "w": "To'rtinchi",
+        "s": 67.02,
+        "e": 67.4
+      },
+      {
+        "w": "qoida",
+        "s": 67.42,
+        "e": 67.69
+      },
+      {
+        "w": "esa",
+        "s": 67.73,
+        "e": 67.89
+      },
+      {
+        "w": "autentifikatsiya",
+        "s": 68.27,
+        "e": 69.05
+      },
+      {
+        "w": "bilan",
+        "s": 69.09,
+        "e": 69.25
+      },
+      {
+        "w": "bog'liq:",
+        "s": 69.27,
+        "e": 69.57
+      },
+      {
+        "w": "kirish",
+        "s": 69.95,
+        "e": 70.23
+      },
+      {
+        "w": "tokeni",
+        "s": 70.27,
+        "e": 70.69
+      },
+      {
+        "w": "va",
+        "s": 70.81,
+        "e": 70.89
+      },
+      {
+        "w": "joriy",
+        "s": 71.01,
+        "e": 71.33
+      },
+      {
+        "w": "foydalanuvchi",
+        "s": 71.37,
+        "e": 71.97
+      },
+      {
+        "w": "ma'lumoti",
+        "s": 72.03,
+        "e": 72.49
+      },
+      {
+        "w": "entitiz/yuzer",
+        "s": 72.49,
+        "e": 73.45
+      },
+      {
+        "w": "da",
+        "s": 73.45,
+        "e": 73.53
+      },
+      {
+        "w": "emas,",
+        "s": 73.59,
+        "e": 73.81
+      },
+      {
+        "w": "balki",
+        "s": 74.09,
+        "e": 74.39
+      },
+      {
+        "w": "sherd/os",
+        "s": 74.39,
+        "e": 75.19
+      },
+      {
+        "w": "da",
+        "s": 75.19,
+        "e": 75.25
+      },
+      {
+        "w": "turishi",
+        "s": 75.31,
+        "e": 75.57
+      },
+      {
+        "w": "shart.",
+        "s": 75.63,
+        "e": 75.87
+      }
+    ]
+  },
+  {
+    "id": "L10",
+    "scene": "crud_va_auth",
+    "text": "Agar auth ma'lumoti entities ga qo'yilsa, shared qatlamining unga bog'lanishi yuzaga kelib, butun qatlamlar iyerarxiyasi buziladi.",
+    "show": "Agar auth ma'lumoti entities ga qo'yilsa, shared qatlamining unga bog'lanishi yuzaga kelib, butun qatlamlar iyerarxiyasi buziladi.",
+    "say": "Agar os ma'lumoti entitiz ga qo'yilsa, sherd qatlamining unga bog'lanishi yuzaga kelib, butun qatlamlar iyerarxiyasi buziladi.",
+    "a0": 76.53,
+    "a1": 83.4,
+    "words": [
+      {
+        "w": "Agar",
+        "s": 76.53,
+        "e": 76.75
+      },
+      {
+        "w": "os",
+        "s": 76.89,
+        "e": 77.01
+      },
+      {
+        "w": "ma'lumoti",
+        "s": 77.09,
+        "e": 77.53
+      },
+      {
+        "w": "entitiz",
+        "s": 77.65,
+        "e": 78.05
+      },
+      {
+        "w": "ga",
+        "s": 78.07,
+        "e": 78.15
+      },
+      {
+        "w": "qo'yilsa,",
+        "s": 78.21,
+        "e": 78.59
+      },
+      {
+        "w": "sherd",
+        "s": 78.79,
+        "e": 79.09
+      },
+      {
+        "w": "qatlamining",
+        "s": 79.13,
+        "e": 79.63
+      },
+      {
+        "w": "unga",
+        "s": 79.69,
+        "e": 79.87
+      },
+      {
+        "w": "bog'lanishi",
+        "s": 79.93,
+        "e": 80.43
+      },
+      {
+        "w": "yuzaga",
+        "s": 80.45,
+        "e": 80.77
+      },
+      {
+        "w": "kelib,",
+        "s": 80.81,
+        "e": 81.07
+      },
+      {
+        "w": "butun",
+        "s": 81.41,
+        "e": 81.71
+      },
+      {
+        "w": "qatlamlar",
+        "s": 81.77,
+        "e": 82.27
+      },
+      {
+        "w": "iyerarxiyasi",
+        "s": 82.35,
+        "e": 82.98
+      },
+      {
+        "w": "buziladi.",
+        "s": 83.0,
+        "e": 83.4
+      }
+    ]
+  },
+  {
+    "id": "L11",
+    "scene": "yagona_kontekst",
+    "text": "Beshinchi qoida: entity'larni haddan tashqari maydalab, order, order-item va customer kabi bo'laklarga ajratib tashlamang.",
+    "show": "Beshinchi qoida: entity'larni haddan tashqari maydalab, order, order-item va customer kabi bo'laklarga ajratib tashlamang.",
+    "say": "Beshinchi qoida: entiti'larni haddan tashqari maydalab, order, order-aytem va kastomer kabi bo'laklarga ajratib tashlamang.",
+    "a0": 84.04,
+    "a1": 90.98,
+    "words": [
+      {
+        "w": "Beshinchi",
+        "s": 84.04,
+        "e": 84.4
+      },
+      {
+        "w": "qoida:",
+        "s": 84.44,
+        "e": 84.7
+      },
+      {
+        "w": "entiti'larni",
+        "s": 85.2,
+        "e": 85.8
+      },
+      {
+        "w": "haddan",
+        "s": 85.86,
+        "e": 86.18
+      },
+      {
+        "w": "tashqari",
+        "s": 86.2,
+        "e": 86.56
+      },
+      {
+        "w": "maydalab,",
+        "s": 86.6,
+        "e": 87.04
+      },
+      {
+        "w": "order,",
+        "s": 87.44,
+        "e": 87.8
+      },
+      {
+        "w": "order-aytem",
+        "s": 88.0,
+        "e": 88.76
+      },
+      {
+        "w": "va",
+        "s": 88.84,
+        "e": 88.9
+      },
+      {
+        "w": "kastomer",
+        "s": 89.0,
+        "e": 89.44
+      },
+      {
+        "w": "kabi",
+        "s": 89.46,
+        "e": 89.64
+      },
+      {
+        "w": "bo'laklarga",
+        "s": 89.68,
+        "e": 90.12
+      },
+      {
+        "w": "ajratib",
+        "s": 90.18,
+        "e": 90.5
+      },
+      {
+        "w": "tashlamang.",
+        "s": 90.54,
+        "e": 90.98
+      }
+    ]
+  },
+  {
+    "id": "L12",
+    "scene": "yagona_kontekst",
+    "text": "Bunday maydalash ular o'rtasida ko'plab at x belgilarini talab qiladi va arxitekturani qotirib qo'yadi.",
+    "show": "Bunday maydalash ular o'rtasida ko'plab at x belgilarini talab qiladi va arxitekturani qotirib qo'yadi.",
+    "say": "Bunday maydalash ular o'rtasida ko'plab et-iks belgilarini talab qiladi va arxitekturani qotirib qo'yadi.",
+    "a0": 91.5,
+    "a1": 96.9,
+    "words": [
+      {
+        "w": "Bunday",
+        "s": 91.5,
+        "e": 91.8
+      },
+      {
+        "w": "maydalash",
+        "s": 91.84,
+        "e": 92.26
+      },
+      {
+        "w": "ular",
+        "s": 92.54,
+        "e": 92.74
+      },
+      {
+        "w": "o'rtasida",
+        "s": 92.8,
+        "e": 93.2
+      },
+      {
+        "w": "ko'plab",
+        "s": 93.28,
+        "e": 93.66
+      },
+      {
+        "w": "et-iks",
+        "s": 93.8,
+        "e": 94.12
+      },
+      {
+        "w": "belgilarini",
+        "s": 94.18,
+        "e": 94.68
+      },
+      {
+        "w": "talab",
+        "s": 94.72,
+        "e": 94.94
+      },
+      {
+        "w": "qiladi",
+        "s": 94.98,
+        "e": 95.26
+      },
+      {
+        "w": "va",
+        "s": 95.32,
+        "e": 95.38
+      },
+      {
+        "w": "arxitekturani",
+        "s": 95.5,
+        "e": 96.18
+      },
+      {
+        "w": "qotirib",
+        "s": 96.24,
+        "e": 96.54
+      },
+      {
+        "w": "qo'yadi.",
+        "s": 96.58,
+        "e": 96.9
+      }
+    ]
+  },
+  {
+    "id": "L13",
+    "scene": "yagona_kontekst",
+    "text": "Buning o'rniga ularni yagona order-info domen kontekstiga jamlash orqali toza va oson boshqariladigan slice hosil qilinadi.",
+    "show": "Buning o'rniga ularni yagona order-info domen kontekstiga jamlash orqali toza va oson boshqariladigan slice hosil qilinadi.",
+    "say": "Buning o'rniga ularni yagona order-info domen kontekstiga jamlash orqali toza va oson boshqariladigan slays hosil qilinadi.",
+    "a0": 97.59,
+    "a1": 104.71,
+    "words": [
+      {
+        "w": "Buning",
+        "s": 97.59,
+        "e": 97.81
+      },
+      {
+        "w": "o'rniga",
+        "s": 97.85,
+        "e": 98.15
+      },
+      {
+        "w": "ularni",
+        "s": 98.29,
+        "e": 98.59
+      },
+      {
+        "w": "yagona",
+        "s": 98.65,
+        "e": 99.05
+      },
+      {
+        "w": "order-info",
+        "s": 99.19,
+        "e": 99.83
+      },
+      {
+        "w": "domen",
+        "s": 99.87,
+        "e": 100.13
+      },
+      {
+        "w": "kontekstiga",
+        "s": 100.19,
+        "e": 100.75
+      },
+      {
+        "w": "jamlash",
+        "s": 100.81,
+        "e": 101.17
+      },
+      {
+        "w": "orqali",
+        "s": 101.23,
+        "e": 101.51
+      },
+      {
+        "w": "toza",
+        "s": 101.87,
+        "e": 102.21
+      },
+      {
+        "w": "va",
+        "s": 102.35,
+        "e": 102.41
+      },
+      {
+        "w": "oson",
+        "s": 102.61,
+        "e": 102.91
+      },
+      {
+        "w": "boshqariladigan",
+        "s": 102.97,
+        "e": 103.65
+      },
+      {
+        "w": "slays",
+        "s": 103.71,
+        "e": 103.99
+      },
+      {
+        "w": "hosil",
+        "s": 104.03,
+        "e": 104.29
+      },
+      {
+        "w": "qilinadi.",
+        "s": 104.33,
+        "e": 104.71
+      }
+    ]
+  },
+  {
+    "id": "L14",
+    "scene": "steiger",
+    "text": "Steiger linteri entities qatlamidagi noo'rin bog'liqliklarni va arxitektura buzilishlarini avtomatik kuzatib boradi.",
+    "show": "Steiger linteri entities qatlamidagi noo'rin bog'liqliklarni va arxitektura buzilishlarini avtomatik kuzatib boradi.",
+    "say": "Stayger linteri entitiz qatlamidagi noo'rin bog'liqliklarni va arxitektura buzilishlarini avtomatik kuzatib boradi.",
+    "a0": 105.35,
+    "a1": 111.31,
+    "words": [
+      {
+        "w": "Stayger",
+        "s": 105.35,
+        "e": 105.73
+      },
+      {
+        "w": "linteri",
+        "s": 105.79,
+        "e": 106.17
+      },
+      {
+        "w": "entitiz",
+        "s": 106.33,
+        "e": 106.69
+      },
+      {
+        "w": "qatlamidagi",
+        "s": 106.73,
+        "e": 107.25
+      },
+      {
+        "w": "noo'rin",
+        "s": 107.35,
+        "e": 107.77
+      },
+      {
+        "w": "bog'liqliklarni",
+        "s": 107.81,
+        "e": 108.57
+      },
+      {
+        "w": "va",
+        "s": 108.69,
+        "e": 108.75
+      },
+      {
+        "w": "arxitektura",
+        "s": 108.85,
+        "e": 109.41
+      },
+      {
+        "w": "buzilishlarini",
+        "s": 109.45,
+        "e": 110.05
+      },
+      {
+        "w": "avtomatik",
+        "s": 110.13,
+        "e": 110.61
+      },
+      {
+        "w": "kuzatib",
+        "s": 110.65,
+        "e": 110.97
+      },
+      {
+        "w": "boradi.",
+        "s": 110.99,
+        "e": 111.31
+      }
+    ]
+  },
+  {
+    "id": "L15",
+    "scene": "steiger",
+    "text": "Entity'lar o'z o'rnida me'yorida qo'llanilganda, linter barcha qatlamlarni toza holatda tasdiqlaydi.",
+    "show": "Entity'lar o'z o'rnida me'yorida qo'llanilganda, linter barcha qatlamlarni toza holatda tasdiqlaydi.",
+    "say": "Entiti'lar o'z o'rnida me'yorida qo'llanilganda, linter barcha qatlamlarni toza holatda tasdiqlaydi.",
+    "a0": 111.91,
+    "a1": 118.06,
+    "words": [
+      {
+        "w": "Entiti'lar",
+        "s": 111.91,
+        "e": 112.47
+      },
+      {
+        "w": "o'z",
+        "s": 112.62,
+        "e": 112.74
+      },
+      {
+        "w": "o'rnida",
+        "s": 112.86,
+        "e": 113.28
+      },
+      {
+        "w": "me'yorida",
+        "s": 113.46,
+        "e": 113.96
+      },
+      {
+        "w": "qo'llanilganda,",
+        "s": 114.02,
+        "e": 114.78
+      },
+      {
+        "w": "linter",
+        "s": 115.16,
+        "e": 115.5
+      },
+      {
+        "w": "barcha",
+        "s": 115.62,
+        "e": 115.92
+      },
+      {
+        "w": "qatlamlarni",
+        "s": 115.98,
+        "e": 116.6
+      },
+      {
+        "w": "toza",
+        "s": 116.72,
+        "e": 117.02
+      },
+      {
+        "w": "holatda",
+        "s": 117.08,
+        "e": 117.44
+      },
+      {
+        "w": "tasdiqlaydi.",
+        "s": 117.52,
+        "e": 118.06
+      }
+    ]
+  },
+  {
+    "id": "L16",
+    "scene": "xulosa",
+    "text": "Xulosa qilsak: oldindan entity ochmang, CRUD va auth'ni shared ga qoldiring va me'yorni saqlang. Keyingi bobda kod qayerga borishini hal qiluvchi qaror daraxtini ko'rib chiqamiz. Rahmat!",
+    "show": "Xulosa qilsak: oldindan entity ochmang, CRUD va auth'ni shared ga qoldiring va me'yorni saqlang. Keyingi bobda kod qayerga borishini hal qiluvchi qaror daraxtini ko'rib chiqamiz. Rahmat!",
+    "say": "Xulosa qilsak: oldindan entiti ochmang, krud va os'ni sherd ga qoldiring va me'yorni saqlang. Keyingi bobda kod qayerga borishini hal qiluvchi qaror daraxtini ko'rib chiqamiz. Rahmat!",
+    "a0": 119.02,
+    "a1": 131.26,
+    "words": [
+      {
+        "w": "Xulosa",
+        "s": 119.02,
+        "e": 119.36
+      },
+      {
+        "w": "qilsak:",
+        "s": 119.42,
+        "e": 119.84
+      },
+      {
+        "w": "oldindan",
+        "s": 120.18,
+        "e": 120.62
+      },
+      {
+        "w": "entiti",
+        "s": 120.76,
+        "e": 121.08
+      },
+      {
+        "w": "ochmang,",
+        "s": 121.26,
+        "e": 121.66
+      },
+      {
+        "w": "krud",
+        "s": 122.0,
+        "e": 122.36
+      },
+      {
+        "w": "va",
+        "s": 122.52,
+        "e": 122.6
+      },
+      {
+        "w": "os'ni",
+        "s": 122.82,
+        "e": 123.17
+      },
+      {
+        "w": "sherd",
+        "s": 123.41,
+        "e": 123.71
+      },
+      {
+        "w": "ga",
+        "s": 123.77,
+        "e": 123.83
+      },
+      {
+        "w": "qoldiring",
+        "s": 123.89,
+        "e": 124.29
+      },
+      {
+        "w": "va",
+        "s": 124.61,
+        "e": 124.67
+      },
+      {
+        "w": "me'yorni",
+        "s": 124.75,
+        "e": 125.21
+      },
+      {
+        "w": "saqlang.",
+        "s": 125.27,
+        "e": 125.67
+      },
+      {
+        "w": "Keyingi",
+        "s": 126.09,
+        "e": 126.37
+      },
+      {
+        "w": "bobda",
+        "s": 126.41,
+        "e": 126.69
+      },
+      {
+        "w": "kod",
+        "s": 127.05,
+        "e": 127.25
+      },
+      {
+        "w": "qayerga",
+        "s": 127.33,
+        "e": 127.65
+      },
+      {
+        "w": "borishini",
+        "s": 127.71,
+        "e": 128.09
+      },
+      {
+        "w": "hal",
+        "s": 128.15,
+        "e": 128.31
+      },
+      {
+        "w": "qiluvchi",
+        "s": 128.37,
+        "e": 128.78
+      },
+      {
+        "w": "qaror",
+        "s": 128.98,
+        "e": 129.34
+      },
+      {
+        "w": "daraxtini",
+        "s": 129.4,
+        "e": 129.84
+      },
+      {
+        "w": "ko'rib",
+        "s": 129.88,
+        "e": 130.1
+      },
+      {
+        "w": "chiqamiz.",
+        "s": 130.14,
+        "e": 130.48
+      },
+      {
+        "w": "Rahmat!",
+        "s": 130.92,
+        "e": 131.26
+      }
+    ]
+  }
+]
