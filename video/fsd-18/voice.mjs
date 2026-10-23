@@ -1,0 +1,180 @@
+// FSD (Kore). Ovoz: narration.js -> Gemini TTS -> voice/raw.wav + voice/lines.json
+import './narration.js';
+import fs from 'node:fs';
+
+const NR = globalThis.NR;
+const MODEL = process.env.GEMINI_TTS_MODEL ?? 'gemini-3.8-flash-tts';
+const ENDPOINT = 'https://generativelanguage.googleapis.com/v1beta/interactions';
+const VOICE = process.env.VOICE ?? 'Kore';
+const STYLE = 'warm, natural, conversational narration of a short educational explainer video, moderate pace, natural pauses between sentences';
+
+// FSD atamalari o'zbek dasturchilari aytgandek (faqat modelga ketadigan matnda)
+const SAY = [
+  [/\b2\.0\b/g, 'ikki nuqta nol'],
+  [/\b2\.1\b/g, 'ikki nuqta bir'],
+  [/\bShared\b/g, 'Sherd'],
+  [/\bshared\b/g, 'sherd'],
+  [/\bslice’lar\b/gi, 'slayslar'],
+  [/\bslice'lar\b/gi, 'slayslar'],
+  [/\bslice’siz\b/gi, 'slayssiz'],
+  [/\bslice'siz\b/gi, 'slayssiz'],
+  [/\bslice\b/gi, 'slays'],
+  [/\bentities\/user\b/gi, 'entitiz/yuzer'],
+  [/\bentities\b/gi, 'entitiz'],
+  [/\bentity\b/gi, 'entiti'],
+  [/\bfeatures\b/g, 'fichers'],
+  [/\bfeature\b/g, 'ficher'],
+  [/\bwidgets\b/g, 'vijets'],
+  [/\bwidget\b/g, 'vijet'],
+  [/\bpages\b/g, 'peyjiz'],
+  [/\bapp\b/g, 'ep'],
+  [/\bapi\b/gi, 'ey-pi-ay'],
+  [/\bui\b/gi, 'yu-ay'],
+  [/\blib\b/gi, 'lib'],
+  [/\bconfig\b/gi, 'konfig'],
+  [/\broutes\b/gi, 'routs'],
+  [/\btypes\.ts\b/gi, 'tayps nuqta te-es'],
+  [/\butils\.ts\b/gi, 'yutils nuqta te-es'],
+  [/\bproduct\.ts\b/gi, 'prodakt nuqta te-es'],
+  [/\bformat-price\.ts\b/gi, 'format-prays nuqta te-es'],
+  [/\bi18n\b/gi, 'ay-eytin-en'],
+  [/\bhelpers\b/gi, 'xelpers'],
+  [/\butils\b/gi, 'yutils'],
+  [/\bcomponents\b/gi, 'komponents'],
+  [/\bhooks\b/gi, 'xuks'],
+  [/\btypes\b/gi, 'tayps'],
+  [/\bbackend\b/gi, 'bekend'],
+  [/\blayoutlar\b/gi, 'leyautlar'],
+  [/\blayout\b/gi, 'leyaut'],
+  [/\burl\b/gi, 'yu-ar-el'],
+  [/\benv\b/gi, 'env'],
+  [/\bsteiger\b/gi, 'stayger'],
+  [/\blinteri\b/gi, 'linteri'],
+  [/\blinter\b/gi, 'linter'],
+  [/\bFSD\b/g, 'Ef-es-di'],
+  [/\bCRUD\b/g, 'krud'],
+  [/\bauth\b/gi, 'os'],
+  [/\bshared\/auth\b/gi, 'sherd/os'],
+  [/\bshared\/api\b/gi, 'sherd/ey-pi-ay'],
+  [/\bentities\/user\b/gi, 'entitiz/yuzer'],
+  [/\border-item\b/gi, 'order-aytem'],
+  [/\bcustomer\b/gi, 'kastomer'],
+  [/\bTypeScript\b/gi, 'Taypskript'],
+  [/\bDTO\b/gi, 'di-ti-o'],
+  [/\bdelivery\b/gi, 'deliveri'],
+  [/\blib date\b/gi, 'lib deyt'],
+  [/\blib money\b/gi, 'lib mani'],
+  [/\bui components\b/gi, 'yu-ay komponents'],
+  [/\bcross-import\w*/gi, (m) => m.toLowerCase().replace('cross-import', 'kross-import')],
+  [/\bpublic api\b/gi, 'pablik ey-pi-ay'],
+  [/\bInversion of Control\b/gi, 'Invershn of Kontrol'],
+  [/\brender props\b/gi, 'render props'],
+  [/\bcontent projection\b/gi, 'kontent proyeksiyasi'],
+  [/\bDependency Injection\b/gi, 'Dependensi Injekshn'],
+  [/\bprop drilling\b/gi, 'prop drilling'],
+  [/\bevent bus\b/gi, 'event bas'],
+  [/\bpub-sub\b/gi, 'pab-sab'],
+  [/\bProductCard\b/gi, 'Prodakt Kard'],
+  [/\bAddToCart\b/gi, 'Edd tu Kart'],
+  [/\bonApplied\b/gi, 'on eplayd'],
+  [/\bcallback\b/gi, 'kolbek'],
+  [/\bat x\b/gi, 'et-iks'],
+  [/\b@x\b/gi, 'et-iks'],
+  [/\bcart\b/gi, 'kart'],
+  [/\bproduct\b/gi, 'prodakt'],
+  [/\bprofile-settings\b/gi, 'profayl-settings'],
+  [/\bprofile\b/gi, 'profayl'],
+  [/\bstore'larga\b/gi, 'storlarga'],
+  [/\bstore'lar\b/gi, 'storlar'],
+  [/\bstore\b/gi, 'stor'],
+  [/\bInversion of Control\b/gi, 'Invershn of Kontrol'],
+  [/\bcode smell\b/gi, 'kod smel'],
+  [/\bslot\b/gi, 'slot'],
+  [/\bREADME\b/g, 'ridmi']
+];
+
+const toSay = (text) => SAY.reduce((s, [re, to]) => s.replace(re, to), text)
+  .replace(/(^|[.!?…]\s+)(\p{Ll})/gu, (m, p, c) => p + c.toUpperCase());
+
+const lines = NR.lines.map((l) => ({ ...l, show: l.text, say: toSay(l.text) }));
+fs.mkdirSync('voice', { recursive: true });
+fs.writeFileSync('voice/lines.json', JSON.stringify(lines, null, 2));
+const transcript = lines.map((l) => l.say).join('\n\n');
+
+if (process.argv.includes('--plan')) {
+  console.log(transcript);
+  console.log(`\n${lines.length} gap, ${transcript.split(/\s+/).length} so'z`);
+  process.exit(0);
+}
+
+// Kalitlarni yig'ish (.env dan barcha kalitlar, faol va kommentdagi)
+const keys = [];
+if (process.env.GEMINI_API_KEY) keys.push(process.env.GEMINI_API_KEY.trim());
+try {
+  const envStr = fs.readFileSync(new URL('../../.env', import.meta.url), 'utf8');
+  for (const m of envStr.matchAll(/^(?:#\s*)?GEMINI_API_KEY=(.+)$/gm)) {
+    const k = m[1].trim();
+    if (k && !keys.includes(k)) keys.push(k);
+  }
+} catch {}
+
+if (!keys.length) throw new Error('GEMINI_API_KEY yo\'q');
+
+const body = {
+  model: MODEL,
+  input: [{ type: 'user_input', content: [{ type: 'text', text: transcript, annotations: [{ type: 'speech_metadata', style: STYLE }] }] }],
+  response_format: { type: 'audio' },
+  generation_config: { speech_config: [{ voice: VOICE }] },
+};
+
+console.log(`TTS so'rovi yuborilmoqda: ${MODEL}, ovoz: ${VOICE}...`);
+console.log(`Matn uzunligi: ${transcript.length} belgi, ${lines.length} gap. Mavjud kalitlar: ${keys.length} ta.`);
+
+let lastError = null;
+let success = false;
+
+for (let kIdx = 0; kIdx < keys.length; kIdx++) {
+  const key = keys[kIdx];
+  console.log(`Kalit #${kIdx + 1} bilan urinish...`);
+
+  for (let attempt = 1; attempt <= 2; attempt++) {
+    try {
+      const response = await fetch(ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'x-goog-api-key': key },
+        body: JSON.stringify(body)
+      });
+
+      if (!response.ok) {
+        const errText = await response.text();
+        throw new Error(`HTTP ${response.status}: ${errText.slice(0, 300)}`);
+      }
+
+      const data = await response.json();
+      const audio = (data.steps ?? []).filter((s) => s.type === 'model_output').flatMap((s) => s.content ?? []).filter((c) => c.type === 'audio').at(-1);
+      if (!audio) throw new Error(`Audio yo'q, status: ${data.status}`);
+
+      const buf = Buffer.from(audio.data, 'base64');
+      fs.writeFileSync('voice/raw.wav', buf);
+      console.log(`voice/raw.wav muvaffaqiyatli yozildi (${(buf.length / 1024 / 1024).toFixed(2)} MB)`);
+      success = true;
+      break;
+    } catch (err) {
+      lastError = err;
+      console.warn(`Kalit #${kIdx + 1}, urinish ${attempt} xatosi: ${err.message}`);
+      if (err.message.includes('429')) {
+        break; // Rate limit, keyingi kalitga o'tish
+      }
+      if (attempt < 2) {
+        console.log('3 soniya kutilmoqda...');
+        await new Promise((r) => setTimeout(r, 3000));
+      }
+    }
+  }
+
+  if (success) break;
+}
+
+if (!success) {
+  throw lastError ?? new Error('Barcha kalitlar bilan audio olish muvaffaqiyatsiz bo\'ldi');
+}

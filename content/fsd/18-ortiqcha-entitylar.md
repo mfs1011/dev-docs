@@ -4,6 +4,14 @@
 
 ## Qisqacha
 
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/fsd/18-ortiqcha-entitylar.jpg" src="/video/fsd/18-ortiqcha-entitylar.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/fsd/18-ortiqcha-entitylar.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/fsd/18-ortiqcha-entitylar.uz.vtt">
+</video>
+<figcaption>Bob videoda: ortiqcha entity'lar — nolinchi qoida, kechiktirilgan dekompozitsiya, CRUD va Auth joylashuvi hamda Steiger nazorati.</figcaption>
+</figure>
+
 `entities` — pastki va **keng ochiq** qatlam: `shared`'dan tashqari hamma uni import qila oladi. Shuning uchun undagi o'zgarish keng ta'sir qiladi. Keraksiz entity'lar noaniqlik ("bu kod shu yerdami?"), bog'lanish va doimiy "qayerdan import qilay?" muammolarini tug'diradi. Rasmiy hujjatning beshta qoidasi va bitta "nolinchi" maslahati bor.
 
 ## Qoida
