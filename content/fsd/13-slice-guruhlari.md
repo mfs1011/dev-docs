@@ -4,6 +4,14 @@
 
 ## Qisqacha
 
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/fsd/13-slice-guruhlari.jpg" src="/video/fsd/13-slice-guruhlari.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/fsd/13-slice-guruhlari.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/fsd/13-slice-guruhlari.uz.vtt">
+</video>
+<figcaption>Bob videoda: slice guruhlari — yirik loyihalarda papkalarni tartibga solish, guruh slice emasligi, 3 oltin qoida va Steiger nazorati.</figcaption>
+</figure>
+
 Slice guruhi — bir qatlamdagi **bog'liq slice'larni bitta papkaga yig'ish**: `entities/payment/invoice`, `entities/payment/receipt`. Bu faqat **navigatsiya** uchun: bog'liqlik qoidalari o'zgarmaydi, guruh papkasi slice emas. Majburiy emas — slice'lar ko'payib, tekis ro'yxatni ko'zdan kechirish qiyinlashganda kiritiladi.
 
 ## Qoida

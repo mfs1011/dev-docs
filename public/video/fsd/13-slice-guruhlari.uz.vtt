@@ -1,0 +1,81 @@
+WEBVTT
+
+1
+00:01.420 --> 00:14.880
+Salom! Bu FSD qo'llanmasining o'n uchinchi bobi — slice guruhlari. Slice guruhlari yirik loyihalarda
+yuzlab slice'larni tartibga solish va fayl navigatsiyasini qulaylashtirish mexanizmidir.
+
+2
+00:17.790 --> 00:24.800
+Katta ilovalarda bitta qatlam ichida o'nlab slice'lar
+to'planganda, tekis ro'yxatni ko'zdan kechirish qiyinlashadi.
+
+3
+00:24.950 --> 00:32.850
+Masalan, payment mavzusiga oid invoice, receipt va transaction
+slice'larini bitta payment papkasi ichiga yig'ish mumkin.
+
+4
+00:33.180 --> 00:41.110
+Lekin eng asosiy narsa: guruh papkasi faqat vizual navigatsiya
+uchun bo'lib, u hech qachon alohida slice hisoblanmaydi.
+
+5
+00:44.190 --> 00:53.760
+Birinchi qoida: guruh papkasida index.ts public API bo'lishi
+mumkin emas — har bir slice faqat o'z index darvozasiga ega.
+
+6
+00:54.030 --> 01:02.410
+Ikkinchi qoida: guruh ichiga umumiy yordamchi kod yoki util
+fayllar qo'yilmaydi; umumiy narsalar quyi qatlamlarga chiqariladi.
+
+7
+01:02.640 --> 01:10.410
+Uchinchi qoida: guruh ichidagi slice'lar ham o'zaro to'g'ridan-to'g'ri
+import qila olmaydi — cross-import taqiqi to'liq saqlanadi.
+
+8
+01:13.540 --> 01:19.340
+Slice guruhlari ayniqsa entities va pages
+qatlamlarida juda tabiiy va qulay ishlaydi.
+
+9
+01:19.450 --> 01:28.160
+Masalan, pages/order ichida list, detail, create va edit
+sahifalarini jamlash fayl daraxtini juda tartibli qiladi.
+
+10
+01:28.390 --> 01:36.050
+Features qatlamida esa guruhlashdan ehtiyot bo'lish kerak, aks
+holda alohida harakatlar o'rniga soxta domen paydo bo'lib qoladi.
+
+11
+01:39.100 --> 01:47.010
+Guruh kiritilganda import yo'liga shunchaki papka
+nomi qo'shiladi, masalan: entities/payment/invoice.
+
+12
+01:46.560 --> 01:52.140
+Tashqi kod to'g'ridan-to'g'ri slice'ning o'ziga
+murojaat qiladi va arxitektura qoidalari buzilmaydi.
+
+13
+01:55.190 --> 02:03.740
+Steiger linteri guruh chuqurligini to'g'ri taniydi va guruh papkasida
+noto'g'ri index.ts yoki segmentlar paydo bo'lishini taqiqlaydi.
+
+14
+02:03.950 --> 02:10.510
+To'g'ri guruhlash navigatsiyani yengillashtiradi, lekin
+tizimning modullik chegaralarini qat'iy himoya qiladi.
+
+15
+02:13.600 --> 02:20.610
+Xulosa qilsak: slice guruhi — faqat navigatsiya
+papkasi, unda umumiy kod yoki public API bo'lmaydi.
+
+16
+02:20.810 --> 02:28.030
+Keyingi bobda loyihaning mustahkam darvozasi bo'lgan
+Public API mavzusini chuqurroq o'rganamiz. Rahmat!
