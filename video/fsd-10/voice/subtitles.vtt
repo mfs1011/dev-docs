@@ -1,0 +1,81 @@
+WEBVTT
+
+1
+00:01.420 --> 00:13.180
+Salom! Bu FSD qo'llanmasining o'ninchi bobi — widgets qatlami. Widgets — bu butun bir
+foydalanish ssenariysini qamrab oluvchi, mustaqil va yirik interfeys bloklaridir.
+
+2
+00:15.830 --> 00:23.740
+Widget alohida kichik element emas, balki bir nechta feature, entity
+va shared komponentlarini birlashtiruvchi kompozitsiya qatlamidir.
+
+3
+00:23.870 --> 00:31.870
+Masalan, sayt bosh qismi — Header widget'i: unda logo, qidiruv
+feature'i, savat hisoblagichi va profil menyusi jamlanadi.
+
+4
+00:32.060 --> 00:38.550
+Sahifa esa ushbu yirik bloklarni qulay joylashtirib,
+foydalanuvchiga to'liq ekran sifatida taqdim etadi.
+
+5
+00:41.680 --> 00:49.860
+Widget qachon ochilishi kerak? Birinchidan, agar UI bloki bir
+nechta sahifada takrorlansa — masalan, Header yoki Footer.
+
+6
+00:49.910 --> 00:57.680
+Ikkinchidan, sahifa mustaqil katta qismlardan iborat bo'lsa:
+masalan, dashboard'dagi tahlil bloklari yoki filtrlar paneli.
+
+7
+00:58.030 --> 01:05.250
+Agar blok faqat bitta sahifada ishlatilsa va kichik bo'lsa, uni
+widget qilish shart emas — sahifaning o'zida qolishi to'g'ri.
+
+8
+01:08.420 --> 01:14.530
+Har bir widget slice'i o'z ui papkasiga, kerak
+bo'lsa model va lib qismlariga ega bo'ladi.
+
+9
+01:14.920 --> 01:21.740
+Header misolida ko'rsak, u turli qatlamlardan kelgan
+komponentlarni bir joyga yig'adi va toza layout yaratadi.
+
+10
+01:22.110 --> 01:28.780
+Barcha bu yaxlit blok tashqi olamga index nuqtasi
+orqali yagona Header sifatida eksport qilinadi.
+
+11
+01:31.890 --> 01:37.550
+FSD arxitekturasining qat'iy qoidasi: widget'lar
+bir-birini to'g'ridan-to'g'ri import qila olmaydi.
+
+12
+01:37.660 --> 01:44.790
+Masalan, header widget'i sidebar widget'ini import qila
+olmaydi; ularni sahifa yoki app qatlami o'zaro birlashtiradi.
+
+13
+01:47.980 --> 01:54.860
+Steiger linteri widget slice'larining o'zaro cross-import
+qilinmasligini va to'g'ri qatlamlardan foydalanishini nazorat qiladi.
+
+14
+01:55.190 --> 02:01.900
+Har bir widget o'z chegarasida mustaqil qolganda, dizaynni
+o'zgartirish va boshqa sahifalarga ko'chirish oson kechadi.
+
+15
+02:04.970 --> 02:12.710
+Xulosa qilsak: widgets — bu yirik mustaqil bloklar, bir nechta
+qatlamning kompozitsiyasi va qulay interfeys g'ishtchalaridir.
+
+16
+02:12.980 --> 02:19.060
+Keyingi bobda marshrutlar va to'liq ekranlarni
+ifodalovchi pages qatlami bilan tanishamiz. Rahmat!
