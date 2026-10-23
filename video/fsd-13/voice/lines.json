@@ -1,0 +1,1368 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Salom! Bu FSD qo'llanmasining o'n uchinchi bobi — slice guruhlari. Slice guruhlari yirik loyihalarda yuzlab slice'larni tartibga solish va fayl navigatsiyasini qulaylashtirish mexanizmidir.",
+    "show": "Salom! Bu FSD qo'llanmasining o'n uchinchi bobi — slice guruhlari. Slice guruhlari yirik loyihalarda yuzlab slice'larni tartibga solish va fayl navigatsiyasini qulaylashtirish mexanizmidir.",
+    "say": "Salom! Bu Ef-es-di qo'llanmasining o'n uchinchi bobi — slays guruhlari. Slice guruhlari yirik loyihalarda yuzlab slays'larni tartibga solish va fayl navigatsiyasini qulaylashtirish mexanizmidir.",
+    "a0": 0.22,
+    "a1": 13.23,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.22,
+        "e": 0.54
+      },
+      {
+        "w": "Bu",
+        "s": 1.12,
+        "e": 1.2
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 1.42,
+        "e": 1.86
+      },
+      {
+        "w": "qo'llanmasining",
+        "s": 1.96,
+        "e": 2.76
+      },
+      {
+        "w": "o'n",
+        "s": 2.94,
+        "e": 3.06
+      },
+      {
+        "w": "uchinchi",
+        "s": 3.14,
+        "e": 3.46
+      },
+      {
+        "w": "bobi",
+        "s": 3.52,
+        "e": 3.8
+      },
+      {
+        "w": "—",
+        "s": 3.8,
+        "e": 3.8
+      },
+      {
+        "w": "slays",
+        "s": 4.18,
+        "e": 4.54
+      },
+      {
+        "w": "guruhlari.",
+        "s": 4.62,
+        "e": 5.1
+      },
+      {
+        "w": "Slice",
+        "s": 6.02,
+        "e": 6.4
+      },
+      {
+        "w": "guruhlari",
+        "s": 6.46,
+        "e": 6.92
+      },
+      {
+        "w": "yirik",
+        "s": 7.22,
+        "e": 7.51
+      },
+      {
+        "w": "loyihalarda",
+        "s": 7.59,
+        "e": 8.23
+      },
+      {
+        "w": "yuzlab",
+        "s": 8.33,
+        "e": 8.75
+      },
+      {
+        "w": "slays'larni",
+        "s": 8.81,
+        "e": 9.39
+      },
+      {
+        "w": "tartibga",
+        "s": 9.45,
+        "e": 9.85
+      },
+      {
+        "w": "solish",
+        "s": 9.89,
+        "e": 10.25
+      },
+      {
+        "w": "va",
+        "s": 10.35,
+        "e": 10.43
+      },
+      {
+        "w": "fayl",
+        "s": 10.59,
+        "e": 10.91
+      },
+      {
+        "w": "navigatsiyasini",
+        "s": 10.97,
+        "e": 11.79
+      },
+      {
+        "w": "qulaylashtirish",
+        "s": 11.87,
+        "e": 12.53
+      },
+      {
+        "w": "mexanizmidir.",
+        "s": 12.57,
+        "e": 13.23
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "tushuncha",
+    "text": "Katta ilovalarda bitta qatlam ichida o'nlab slice'lar to'planganda, tekis ro'yxatni ko'zdan kechirish qiyinlashadi.",
+    "show": "Katta ilovalarda bitta qatlam ichida o'nlab slice'lar to'planganda, tekis ro'yxatni ko'zdan kechirish qiyinlashadi.",
+    "say": "Katta ilovalarda bitta qatlam ichida o'nlab slayslar to'planganda, tekis ro'yxatni ko'zdan kechirish qiyinlashadi.",
+    "a0": 14.19,
+    "a1": 20.75,
+    "words": [
+      {
+        "w": "Katta",
+        "s": 14.19,
+        "e": 14.51
+      },
+      {
+        "w": "ilovalarda",
+        "s": 14.57,
+        "e": 15.13
+      },
+      {
+        "w": "bitta",
+        "s": 15.25,
+        "e": 15.53
+      },
+      {
+        "w": "qatlam",
+        "s": 15.59,
+        "e": 15.91
+      },
+      {
+        "w": "ichida",
+        "s": 16.01,
+        "e": 16.27
+      },
+      {
+        "w": "o'nlab",
+        "s": 16.45,
+        "e": 16.81
+      },
+      {
+        "w": "slayslar",
+        "s": 16.85,
+        "e": 17.27
+      },
+      {
+        "w": "to'planganda,",
+        "s": 17.31,
+        "e": 17.95
+      },
+      {
+        "w": "tekis",
+        "s": 18.37,
+        "e": 18.77
+      },
+      {
+        "w": "ro'yxatni",
+        "s": 18.83,
+        "e": 19.27
+      },
+      {
+        "w": "ko'zdan",
+        "s": 19.31,
+        "e": 19.61
+      },
+      {
+        "w": "kechirish",
+        "s": 19.65,
+        "e": 20.01
+      },
+      {
+        "w": "qiyinlashadi.",
+        "s": 20.09,
+        "e": 20.75
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "tushuncha",
+    "text": "Masalan, payment mavzusiga oid invoice, receipt va transaction slice'larini bitta payment papkasi ichiga yig'ish mumkin.",
+    "show": "Masalan, payment mavzusiga oid invoice, receipt va transaction slice'larini bitta payment papkasi ichiga yig'ish mumkin.",
+    "say": "Masalan, payment mavzusiga oid invoice, receipt va transaction slays'larini bitta payment papkasi ichiga yig'ish mumkin.",
+    "a0": 21.35,
+    "a1": 28.8,
+    "words": [
+      {
+        "w": "Masalan,",
+        "s": 21.35,
+        "e": 21.69
+      },
+      {
+        "w": "payment",
+        "s": 22.05,
+        "e": 22.45
+      },
+      {
+        "w": "mavzusiga",
+        "s": 22.52,
+        "e": 23.02
+      },
+      {
+        "w": "oid",
+        "s": 23.12,
+        "e": 23.3
+      },
+      {
+        "w": "invoice,",
+        "s": 23.46,
+        "e": 24.02
+      },
+      {
+        "w": "receipt",
+        "s": 24.22,
+        "e": 24.76
+      },
+      {
+        "w": "va",
+        "s": 24.86,
+        "e": 24.92
+      },
+      {
+        "w": "transaction",
+        "s": 25.04,
+        "e": 25.68
+      },
+      {
+        "w": "slays'larini",
+        "s": 25.72,
+        "e": 26.3
+      },
+      {
+        "w": "bitta",
+        "s": 26.7,
+        "e": 26.98
+      },
+      {
+        "w": "payment",
+        "s": 27.08,
+        "e": 27.46
+      },
+      {
+        "w": "papkasi",
+        "s": 27.5,
+        "e": 27.88
+      },
+      {
+        "w": "ichiga",
+        "s": 27.94,
+        "e": 28.14
+      },
+      {
+        "w": "yig'ish",
+        "s": 28.2,
+        "e": 28.48
+      },
+      {
+        "w": "mumkin.",
+        "s": 28.52,
+        "e": 28.8
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "tushuncha",
+    "text": "Lekin eng asosiy narsa: guruh papkasi faqat vizual navigatsiya uchun bo'lib, u hech qachon alohida slice hisoblanmaydi.",
+    "show": "Lekin eng asosiy narsa: guruh papkasi faqat vizual navigatsiya uchun bo'lib, u hech qachon alohida slice hisoblanmaydi.",
+    "say": "Lekin eng asosiy narsa: guruh papkasi faqat vizual navigatsiya uchun bo'lib, u hech qachon alohida slays hisoblanmaydi.",
+    "a0": 29.58,
+    "a1": 37.06,
+    "words": [
+      {
+        "w": "Lekin",
+        "s": 29.58,
+        "e": 29.84
+      },
+      {
+        "w": "eng",
+        "s": 30.04,
+        "e": 30.2
+      },
+      {
+        "w": "asosiy",
+        "s": 30.3,
+        "e": 30.72
+      },
+      {
+        "w": "narsa:",
+        "s": 30.78,
+        "e": 31.1
+      },
+      {
+        "w": "guruh",
+        "s": 31.4,
+        "e": 31.7
+      },
+      {
+        "w": "papkasi",
+        "s": 31.74,
+        "e": 32.16
+      },
+      {
+        "w": "faqat",
+        "s": 32.24,
+        "e": 32.52
+      },
+      {
+        "w": "vizual",
+        "s": 32.7,
+        "e": 33.12
+      },
+      {
+        "w": "navigatsiya",
+        "s": 33.16,
+        "e": 33.7
+      },
+      {
+        "w": "uchun",
+        "s": 33.74,
+        "e": 33.94
+      },
+      {
+        "w": "bo'lib,",
+        "s": 33.98,
+        "e": 34.24
+      },
+      {
+        "w": "u",
+        "s": 34.62,
+        "e": 34.64
+      },
+      {
+        "w": "hech",
+        "s": 34.8,
+        "e": 35.04
+      },
+      {
+        "w": "qachon",
+        "s": 35.1,
+        "e": 35.4
+      },
+      {
+        "w": "alohida",
+        "s": 35.58,
+        "e": 36.0
+      },
+      {
+        "w": "slays",
+        "s": 36.04,
+        "e": 36.32
+      },
+      {
+        "w": "hisoblanmaydi.",
+        "s": 36.36,
+        "e": 37.06
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "qoidalar",
+    "text": "Birinchi qoida: guruh papkasida index.ts public API bo'lishi mumkin emas — har bir slice faqat o'z index darvozasiga ega.",
+    "show": "Birinchi qoida: guruh papkasida index.ts public API bo'lishi mumkin emas — har bir slice faqat o'z index darvozasiga ega.",
+    "say": "Birinchi qoida: guruh papkasida index.ts public ey-pi-ay bo'lishi mumkin emas — har bir slays faqat o'z index darvozasiga ega.",
+    "a0": 37.79,
+    "a1": 46.91,
+    "words": [
+      {
+        "w": "Birinchi",
+        "s": 37.79,
+        "e": 38.09
+      },
+      {
+        "w": "qoida:",
+        "s": 38.13,
+        "e": 38.37
+      },
+      {
+        "w": "guruh",
+        "s": 38.83,
+        "e": 39.07
+      },
+      {
+        "w": "papkasida",
+        "s": 39.11,
+        "e": 39.65
+      },
+      {
+        "w": "index.ts",
+        "s": 39.65,
+        "e": 41.47
+      },
+      {
+        "w": "public",
+        "s": 41.47,
+        "e": 41.87
+      },
+      {
+        "w": "ey-pi-ay",
+        "s": 42.03,
+        "e": 42.43
+      },
+      {
+        "w": "bo'lishi",
+        "s": 42.49,
+        "e": 42.79
+      },
+      {
+        "w": "mumkin",
+        "s": 42.83,
+        "e": 43.09
+      },
+      {
+        "w": "emas",
+        "s": 43.15,
+        "e": 43.39
+      },
+      {
+        "w": "—",
+        "s": 43.39,
+        "e": 43.39
+      },
+      {
+        "w": "har",
+        "s": 44.01,
+        "e": 44.17
+      },
+      {
+        "w": "bir",
+        "s": 44.21,
+        "e": 44.33
+      },
+      {
+        "w": "slays",
+        "s": 44.39,
+        "e": 44.69
+      },
+      {
+        "w": "faqat",
+        "s": 44.79,
+        "e": 45.09
+      },
+      {
+        "w": "o'z",
+        "s": 45.25,
+        "e": 45.41
+      },
+      {
+        "w": "index",
+        "s": 45.61,
+        "e": 45.91
+      },
+      {
+        "w": "darvozasiga",
+        "s": 45.99,
+        "e": 46.61
+      },
+      {
+        "w": "ega.",
+        "s": 46.73,
+        "e": 46.91
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "qoidalar",
+    "text": "Ikkinchi qoida: guruh ichiga umumiy yordamchi kod yoki util fayllar qo'yilmaydi; umumiy narsalar quyi qatlamlarga chiqariladi.",
+    "show": "Ikkinchi qoida: guruh ichiga umumiy yordamchi kod yoki util fayllar qo'yilmaydi; umumiy narsalar quyi qatlamlarga chiqariladi.",
+    "say": "Ikkinchi qoida: guruh ichiga umumiy yordamchi kod yoki util fayllar qo'yilmaydi; umumiy narsalar quyi qatlamlarga chiqariladi.",
+    "a0": 47.63,
+    "a1": 55.56,
+    "words": [
+      {
+        "w": "Ikkinchi",
+        "s": 47.63,
+        "e": 47.97
+      },
+      {
+        "w": "qoida:",
+        "s": 48.01,
+        "e": 48.27
+      },
+      {
+        "w": "guruh",
+        "s": 48.73,
+        "e": 49.01
+      },
+      {
+        "w": "ichiga",
+        "s": 49.09,
+        "e": 49.37
+      },
+      {
+        "w": "umumiy",
+        "s": 49.55,
+        "e": 49.91
+      },
+      {
+        "w": "yordamchi",
+        "s": 49.93,
+        "e": 50.47
+      },
+      {
+        "w": "kod",
+        "s": 50.55,
+        "e": 50.77
+      },
+      {
+        "w": "yoki",
+        "s": 50.81,
+        "e": 51.13
+      },
+      {
+        "w": "util",
+        "s": 51.33,
+        "e": 51.67
+      },
+      {
+        "w": "fayllar",
+        "s": 51.73,
+        "e": 52.13
+      },
+      {
+        "w": "qo'yilmaydi;",
+        "s": 52.13,
+        "e": 53.18
+      },
+      {
+        "w": "umumiy",
+        "s": 53.18,
+        "e": 53.5
+      },
+      {
+        "w": "narsalar",
+        "s": 53.54,
+        "e": 53.98
+      },
+      {
+        "w": "quyi",
+        "s": 54.14,
+        "e": 54.36
+      },
+      {
+        "w": "qatlamlarga",
+        "s": 54.44,
+        "e": 55.0
+      },
+      {
+        "w": "chiqariladi.",
+        "s": 55.04,
+        "e": 55.56
+      }
+    ]
+  },
+  {
+    "id": "L7",
+    "scene": "qoidalar",
+    "text": "Uchinchi qoida: guruh ichidagi slice'lar ham o'zaro to'g'ridan-to'g'ri import qila olmaydi — cross-import taqiqi to'liq saqlanadi.",
+    "show": "Uchinchi qoida: guruh ichidagi slice'lar ham o'zaro to'g'ridan-to'g'ri import qila olmaydi — cross-import taqiqi to'liq saqlanadi.",
+    "say": "Uchinchi qoida: guruh ichidagi slayslar ham o'zaro to'g'ridan-to'g'ri import qila olmaydi — cross-import taqiqi to'liq saqlanadi.",
+    "a0": 56.24,
+    "a1": 63.56,
+    "words": [
+      {
+        "w": "Uchinchi",
+        "s": 56.24,
+        "e": 56.58
+      },
+      {
+        "w": "qoida:",
+        "s": 56.62,
+        "e": 56.88
+      },
+      {
+        "w": "guruh",
+        "s": 57.34,
+        "e": 57.6
+      },
+      {
+        "w": "ichidagi",
+        "s": 57.66,
+        "e": 58.06
+      },
+      {
+        "w": "slayslar",
+        "s": 58.1,
+        "e": 58.56
+      },
+      {
+        "w": "ham",
+        "s": 58.6,
+        "e": 58.74
+      },
+      {
+        "w": "o'zaro",
+        "s": 58.9,
+        "e": 59.22
+      },
+      {
+        "w": "to'g'ridan-to'g'ri",
+        "s": 59.34,
+        "e": 60.0
+      },
+      {
+        "w": "import",
+        "s": 60.18,
+        "e": 60.46
+      },
+      {
+        "w": "qila",
+        "s": 60.5,
+        "e": 60.64
+      },
+      {
+        "w": "olmaydi",
+        "s": 60.68,
+        "e": 61.02
+      },
+      {
+        "w": "—",
+        "s": 61.02,
+        "e": 61.02
+      },
+      {
+        "w": "cross-import",
+        "s": 61.42,
+        "e": 62.12
+      },
+      {
+        "w": "taqiqi",
+        "s": 62.18,
+        "e": 62.6
+      },
+      {
+        "w": "to'liq",
+        "s": 62.74,
+        "e": 63.02
+      },
+      {
+        "w": "saqlanadi.",
+        "s": 63.06,
+        "e": 63.56
+      }
+    ]
+  },
+  {
+    "id": "L8",
+    "scene": "qayerda_tabiiy",
+    "text": "Slice guruhlari ayniqsa entities va pages qatlamlarida juda tabiiy va qulay ishlaydi.",
+    "show": "Slice guruhlari ayniqsa entities va pages qatlamlarida juda tabiiy va qulay ishlaydi.",
+    "say": "Slice guruhlari ayniqsa entitiz va peyjiz qatlamlarida juda tabiiy va qulay ishlaydi.",
+    "a0": 64.34,
+    "a1": 69.69,
+    "words": [
+      {
+        "w": "Slice",
+        "s": 64.34,
+        "e": 64.7
+      },
+      {
+        "w": "guruhlari",
+        "s": 64.72,
+        "e": 65.18
+      },
+      {
+        "w": "ayniqsa",
+        "s": 65.34,
+        "e": 65.72
+      },
+      {
+        "w": "entitiz",
+        "s": 66.1,
+        "e": 66.62
+      },
+      {
+        "w": "va",
+        "s": 66.68,
+        "e": 66.76
+      },
+      {
+        "w": "peyjiz",
+        "s": 66.9,
+        "e": 67.28
+      },
+      {
+        "w": "qatlamlarida",
+        "s": 67.32,
+        "e": 67.91
+      },
+      {
+        "w": "juda",
+        "s": 67.97,
+        "e": 68.15
+      },
+      {
+        "w": "tabiiy",
+        "s": 68.27,
+        "e": 68.69
+      },
+      {
+        "w": "va",
+        "s": 68.77,
+        "e": 68.83
+      },
+      {
+        "w": "qulay",
+        "s": 68.97,
+        "e": 69.27
+      },
+      {
+        "w": "ishlaydi.",
+        "s": 69.31,
+        "e": 69.69
+      }
+    ]
+  },
+  {
+    "id": "L9",
+    "scene": "qayerda_tabiiy",
+    "text": "Masalan, pages/order ichida list, detail, create va edit sahifalarini jamlash fayl daraxtini juda tartibli qiladi.",
+    "show": "Masalan, pages/order ichida list, detail, create va edit sahifalarini jamlash fayl daraxtini juda tartibli qiladi.",
+    "say": "Masalan, peyjiz/order ichida list, detail, create va edit sahifalarini jamlash fayl daraxtini juda tartibli qiladi.",
+    "a0": 70.25,
+    "a1": 78.51,
+    "words": [
+      {
+        "w": "Masalan,",
+        "s": 70.25,
+        "e": 70.57
+      },
+      {
+        "w": "peyjiz/order",
+        "s": 70.57,
+        "e": 72.15
+      },
+      {
+        "w": "ichida",
+        "s": 72.15,
+        "e": 72.41
+      },
+      {
+        "w": "list,",
+        "s": 72.79,
+        "e": 73.11
+      },
+      {
+        "w": "detail,",
+        "s": 73.31,
+        "e": 73.81
+      },
+      {
+        "w": "create",
+        "s": 74.01,
+        "e": 74.55
+      },
+      {
+        "w": "va",
+        "s": 74.59,
+        "e": 74.67
+      },
+      {
+        "w": "edit",
+        "s": 74.91,
+        "e": 75.19
+      },
+      {
+        "w": "sahifalarini",
+        "s": 75.21,
+        "e": 75.85
+      },
+      {
+        "w": "jamlash",
+        "s": 75.89,
+        "e": 76.29
+      },
+      {
+        "w": "fayl",
+        "s": 76.61,
+        "e": 76.89
+      },
+      {
+        "w": "daraxtini",
+        "s": 76.93,
+        "e": 77.37
+      },
+      {
+        "w": "juda",
+        "s": 77.41,
+        "e": 77.59
+      },
+      {
+        "w": "tartibli",
+        "s": 77.71,
+        "e": 78.17
+      },
+      {
+        "w": "qiladi.",
+        "s": 78.23,
+        "e": 78.51
+      }
+    ]
+  },
+  {
+    "id": "L10",
+    "scene": "qayerda_tabiiy",
+    "text": "Features qatlamida esa guruhlashdan ehtiyot bo'lish kerak, aks holda alohida harakatlar o'rniga soxta domen paydo bo'lib qoladi.",
+    "show": "Features qatlamida esa guruhlashdan ehtiyot bo'lish kerak, aks holda alohida harakatlar o'rniga soxta domen paydo bo'lib qoladi.",
+    "say": "Features qatlamida esa guruhlashdan ehtiyot bo'lish kerak, aks holda alohida harakatlar o'rniga soxta domen paydo bo'lib qoladi.",
+    "a0": 79.19,
+    "a1": 86.4,
+    "words": [
+      {
+        "w": "Features",
+        "s": 79.19,
+        "e": 79.63
+      },
+      {
+        "w": "qatlamida",
+        "s": 79.67,
+        "e": 80.15
+      },
+      {
+        "w": "esa",
+        "s": 80.21,
+        "e": 80.37
+      },
+      {
+        "w": "guruhlashdan",
+        "s": 80.65,
+        "e": 81.23
+      },
+      {
+        "w": "ehtiyot",
+        "s": 81.37,
+        "e": 81.77
+      },
+      {
+        "w": "bo'lish",
+        "s": 81.81,
+        "e": 82.05
+      },
+      {
+        "w": "kerak,",
+        "s": 82.07,
+        "e": 82.31
+      },
+      {
+        "w": "aks",
+        "s": 82.7,
+        "e": 82.86
+      },
+      {
+        "w": "holda",
+        "s": 82.9,
+        "e": 83.16
+      },
+      {
+        "w": "alohida",
+        "s": 83.32,
+        "e": 83.72
+      },
+      {
+        "w": "harakatlar",
+        "s": 83.76,
+        "e": 84.26
+      },
+      {
+        "w": "o'rniga",
+        "s": 84.36,
+        "e": 84.68
+      },
+      {
+        "w": "soxta",
+        "s": 84.8,
+        "e": 85.12
+      },
+      {
+        "w": "domen",
+        "s": 85.22,
+        "e": 85.54
+      },
+      {
+        "w": "paydo",
+        "s": 85.6,
+        "e": 85.82
+      },
+      {
+        "w": "bo'lib",
+        "s": 85.88,
+        "e": 86.08
+      },
+      {
+        "w": "qoladi.",
+        "s": 86.1,
+        "e": 86.4
+      }
+    ]
+  },
+  {
+    "id": "L11",
+    "scene": "import_yoli",
+    "text": "Guruh kiritilganda import yo'liga shunchaki papka nomi qo'shiladi, masalan: entities/payment/invoice.",
+    "show": "Guruh kiritilganda import yo'liga shunchaki papka nomi qo'shiladi, masalan: entities/payment/invoice.",
+    "say": "Guruh kiritilganda import yo'liga shunchaki papka nomi qo'shiladi, masalan: entitiz/payment/invoice.",
+    "a0": 87.1,
+    "a1": 94.56,
+    "words": [
+      {
+        "w": "Guruh",
+        "s": 87.1,
+        "e": 87.4
+      },
+      {
+        "w": "kiritilganda",
+        "s": 87.44,
+        "e": 88.06
+      },
+      {
+        "w": "import",
+        "s": 88.24,
+        "e": 88.54
+      },
+      {
+        "w": "yo'liga",
+        "s": 88.6,
+        "e": 88.88
+      },
+      {
+        "w": "shunchaki",
+        "s": 88.98,
+        "e": 89.34
+      },
+      {
+        "w": "papka",
+        "s": 89.46,
+        "e": 89.74
+      },
+      {
+        "w": "nomi",
+        "s": 89.8,
+        "e": 90.0
+      },
+      {
+        "w": "qo'shiladi,",
+        "s": 90.06,
+        "e": 90.5
+      },
+      {
+        "w": "masalan:",
+        "s": 90.8,
+        "e": 91.14
+      },
+      {
+        "w": "entitiz/payment/invoice.",
+        "s": 91.14,
+        "e": 94.56
+      }
+    ]
+  },
+  {
+    "id": "L12",
+    "scene": "import_yoli",
+    "text": "Tashqi kod to'g'ridan-to'g'ri slice'ning o'ziga murojaat qiladi va arxitektura qoidalari buzilmaydi.",
+    "show": "Tashqi kod to'g'ridan-to'g'ri slice'ning o'ziga murojaat qiladi va arxitektura qoidalari buzilmaydi.",
+    "say": "Tashqi kod to'g'ridan-to'g'ri slays'ning o'ziga murojaat qiladi va arxitektura qoidalari buzilmaydi.",
+    "a0": 94.56,
+    "a1": 99.69,
+    "words": [
+      {
+        "w": "Tashqi",
+        "s": 94.56,
+        "e": 94.88
+      },
+      {
+        "w": "kod",
+        "s": 94.94,
+        "e": 95.12
+      },
+      {
+        "w": "to'g'ridan-to'g'ri",
+        "s": 95.18,
+        "e": 95.82
+      },
+      {
+        "w": "slays'ning",
+        "s": 95.88,
+        "e": 96.3
+      },
+      {
+        "w": "o'ziga",
+        "s": 96.46,
+        "e": 96.74
+      },
+      {
+        "w": "murojaat",
+        "s": 96.8,
+        "e": 97.2
+      },
+      {
+        "w": "qiladi",
+        "s": 97.24,
+        "e": 97.53
+      },
+      {
+        "w": "va",
+        "s": 97.83,
+        "e": 97.89
+      },
+      {
+        "w": "arxitektura",
+        "s": 98.03,
+        "e": 98.67
+      },
+      {
+        "w": "qoidalari",
+        "s": 98.71,
+        "e": 99.17
+      },
+      {
+        "w": "buzilmaydi.",
+        "s": 99.19,
+        "e": 99.69
+      }
+    ]
+  },
+  {
+    "id": "L13",
+    "scene": "steiger",
+    "text": "Steiger linteri guruh chuqurligini to'g'ri taniydi va guruh papkasida noto'g'ri index.ts yoki segmentlar paydo bo'lishini taqiqlaydi.",
+    "show": "Steiger linteri guruh chuqurligini to'g'ri taniydi va guruh papkasida noto'g'ri index.ts yoki segmentlar paydo bo'lishini taqiqlaydi.",
+    "say": "Stayger linteri guruh chuqurligini to'g'ri taniydi va guruh papkasida noto'g'ri index.ts yoki segmentlar paydo bo'lishini taqiqlaydi.",
+    "a0": 100.39,
+    "a1": 108.49,
+    "words": [
+      {
+        "w": "Stayger",
+        "s": 100.39,
+        "e": 100.79
+      },
+      {
+        "w": "linteri",
+        "s": 100.85,
+        "e": 101.23
+      },
+      {
+        "w": "guruh",
+        "s": 101.29,
+        "e": 101.55
+      },
+      {
+        "w": "chuqurligini",
+        "s": 101.59,
+        "e": 102.09
+      },
+      {
+        "w": "to'g'ri",
+        "s": 102.13,
+        "e": 102.41
+      },
+      {
+        "w": "taniydi",
+        "s": 102.45,
+        "e": 102.79
+      },
+      {
+        "w": "va",
+        "s": 103.11,
+        "e": 103.17
+      },
+      {
+        "w": "guruh",
+        "s": 103.25,
+        "e": 103.49
+      },
+      {
+        "w": "papkasida",
+        "s": 103.51,
+        "e": 104.01
+      },
+      {
+        "w": "noto'g'ri",
+        "s": 104.17,
+        "e": 104.65
+      },
+      {
+        "w": "index.ts",
+        "s": 104.65,
+        "e": 105.71
+      },
+      {
+        "w": "yoki",
+        "s": 105.71,
+        "e": 106.39
+      },
+      {
+        "w": "segmentlar",
+        "s": 106.61,
+        "e": 107.13
+      },
+      {
+        "w": "paydo",
+        "s": 107.17,
+        "e": 107.43
+      },
+      {
+        "w": "bo'lishini",
+        "s": 107.49,
+        "e": 107.85
+      },
+      {
+        "w": "taqiqlaydi.",
+        "s": 107.91,
+        "e": 108.49
+      }
+    ]
+  },
+  {
+    "id": "L14",
+    "scene": "steiger",
+    "text": "To'g'ri guruhlash navigatsiyani yengillashtiradi, lekin tizimning modullik chegaralarini qat'iy himoya qiladi.",
+    "show": "To'g'ri guruhlash navigatsiyani yengillashtiradi, lekin tizimning modullik chegaralarini qat'iy himoya qiladi.",
+    "say": "To'g'ri guruhlash navigatsiyani yengillashtiradi, lekin tizimning modullik chegaralarini qat'iy himoya qiladi.",
+    "a0": 109.15,
+    "a1": 115.26,
+    "words": [
+      {
+        "w": "To'g'ri",
+        "s": 109.15,
+        "e": 109.43
+      },
+      {
+        "w": "guruhlash",
+        "s": 109.47,
+        "e": 109.89
+      },
+      {
+        "w": "navigatsiyani",
+        "s": 110.15,
+        "e": 110.83
+      },
+      {
+        "w": "yengillashtiradi,",
+        "s": 110.89,
+        "e": 111.69
+      },
+      {
+        "w": "lekin",
+        "s": 111.99,
+        "e": 112.21
+      },
+      {
+        "w": "tizimning",
+        "s": 112.27,
+        "e": 112.74
+      },
+      {
+        "w": "modullik",
+        "s": 112.9,
+        "e": 113.36
+      },
+      {
+        "w": "chegaralarini",
+        "s": 113.4,
+        "e": 113.98
+      },
+      {
+        "w": "qat'iy",
+        "s": 114.12,
+        "e": 114.52
+      },
+      {
+        "w": "himoya",
+        "s": 114.6,
+        "e": 114.92
+      },
+      {
+        "w": "qiladi.",
+        "s": 114.98,
+        "e": 115.26
+      }
+    ]
+  },
+  {
+    "id": "L15",
+    "scene": "xulosa",
+    "text": "Xulosa qilsak: slice guruhi — faqat navigatsiya papkasi, unda umumiy kod yoki public API bo'lmaydi.",
+    "show": "Xulosa qilsak: slice guruhi — faqat navigatsiya papkasi, unda umumiy kod yoki public API bo'lmaydi.",
+    "say": "Xulosa qilsak: slays guruhi — faqat navigatsiya papkasi, unda umumiy kod yoki public ey-pi-ay bo'lmaydi.",
+    "a0": 116.0,
+    "a1": 122.56,
+    "words": [
+      {
+        "w": "Xulosa",
+        "s": 116.0,
+        "e": 116.36
+      },
+      {
+        "w": "qilsak:",
+        "s": 116.42,
+        "e": 116.72
+      },
+      {
+        "w": "slays",
+        "s": 117.06,
+        "e": 117.38
+      },
+      {
+        "w": "guruhi",
+        "s": 117.46,
+        "e": 117.76
+      },
+      {
+        "w": "—",
+        "s": 117.76,
+        "e": 117.76
+      },
+      {
+        "w": "faqat",
+        "s": 117.86,
+        "e": 118.14
+      },
+      {
+        "w": "navigatsiya",
+        "s": 118.26,
+        "e": 118.84
+      },
+      {
+        "w": "papkasi,",
+        "s": 118.88,
+        "e": 119.3
+      },
+      {
+        "w": "unda",
+        "s": 119.68,
+        "e": 119.86
+      },
+      {
+        "w": "umumiy",
+        "s": 120.04,
+        "e": 120.38
+      },
+      {
+        "w": "kod",
+        "s": 120.46,
+        "e": 120.7
+      },
+      {
+        "w": "yoki",
+        "s": 120.74,
+        "e": 121.02
+      },
+      {
+        "w": "public",
+        "s": 121.18,
+        "e": 121.54
+      },
+      {
+        "w": "ey-pi-ay",
+        "s": 121.66,
+        "e": 122.04
+      },
+      {
+        "w": "bo'lmaydi.",
+        "s": 122.1,
+        "e": 122.56
+      }
+    ]
+  },
+  {
+    "id": "L16",
+    "scene": "xulosa",
+    "text": "Keyingi bobda loyihaning mustahkam darvozasi bo'lgan Public API mavzusini chuqurroq o'rganamiz. Rahmat!",
+    "show": "Keyingi bobda loyihaning mustahkam darvozasi bo'lgan Public API mavzusini chuqurroq o'rganamiz. Rahmat!",
+    "say": "Keyingi bobda loyihaning mustahkam darvozasi bo'lgan Public ey-pi-ay mavzusini chuqurroq o'rganamiz. Rahmat!",
+    "a0": 123.21,
+    "a1": 129.98,
+    "words": [
+      {
+        "w": "Keyingi",
+        "s": 123.21,
+        "e": 123.51
+      },
+      {
+        "w": "bobda",
+        "s": 123.55,
+        "e": 123.81
+      },
+      {
+        "w": "loyihaning",
+        "s": 124.13,
+        "e": 124.67
+      },
+      {
+        "w": "mustahkam",
+        "s": 124.69,
+        "e": 125.23
+      },
+      {
+        "w": "darvozasi",
+        "s": 125.29,
+        "e": 125.79
+      },
+      {
+        "w": "bo'lgan",
+        "s": 125.83,
+        "e": 126.13
+      },
+      {
+        "w": "Public",
+        "s": 126.41,
+        "e": 126.81
+      },
+      {
+        "w": "ey-pi-ay",
+        "s": 126.95,
+        "e": 127.37
+      },
+      {
+        "w": "mavzusini",
+        "s": 127.41,
+        "e": 127.9
+      },
+      {
+        "w": "chuqurroq",
+        "s": 127.98,
+        "e": 128.42
+      },
+      {
+        "w": "o'rganamiz.",
+        "s": 128.5,
+        "e": 128.96
+      },
+      {
+        "w": "Rahmat!",
+        "s": 129.68,
+        "e": 129.98
+      }
+    ]
+  }
+]
