@@ -1,0 +1,1473 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Salom! Bu FSD qo'llanmasining yigirmanchi bobi — API so'rovlari arxitekturasi. Bugun backend bilan frontend o'rtasidagi ma'lumotlar almashinuvini FSD qoidalariga mos ravishda to'g'ri tashkil qilishni o'rganamiz.",
+    "show": "Salom! Bu FSD qo'llanmasining yigirmanchi bobi — API so'rovlari arxitekturasi. Bugun backend bilan frontend o'rtasidagi ma'lumotlar almashinuvini FSD qoidalariga mos ravishda to'g'ri tashkil qilishni o'rganamiz.",
+    "say": "Salom! Bu Ef-es-di qo'llanmasining yigirmanchi bobi — ey-pi-ay so'rovlari arxitekturasi. Bugun bekend bilan frontend o'rtasidagi ma'lumotlar almashinuvini Ef-es-di qoidalariga mos ravishda to'g'ri tashkil qilishni o'rganamiz.",
+    "a0": 0.18,
+    "a1": 14.01,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.18,
+        "e": 0.5
+      },
+      {
+        "w": "Bu",
+        "s": 1.18,
+        "e": 1.26
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 1.44,
+        "e": 1.84
+      },
+      {
+        "w": "qo'llanmasining",
+        "s": 1.92,
+        "e": 2.64
+      },
+      {
+        "w": "yigirmanchi",
+        "s": 2.7,
+        "e": 3.26
+      },
+      {
+        "w": "bobi",
+        "s": 3.32,
+        "e": 3.6
+      },
+      {
+        "w": "—",
+        "s": 3.6,
+        "e": 3.6
+      },
+      {
+        "w": "ey-pi-ay",
+        "s": 4.16,
+        "e": 4.56
+      },
+      {
+        "w": "so'rovlari",
+        "s": 4.64,
+        "e": 5.12
+      },
+      {
+        "w": "arxitekturasi.",
+        "s": 5.22,
+        "e": 6.04
+      },
+      {
+        "w": "Bugun",
+        "s": 6.9,
+        "e": 7.14
+      },
+      {
+        "w": "bekend",
+        "s": 7.22,
+        "e": 7.59
+      },
+      {
+        "w": "bilan",
+        "s": 7.63,
+        "e": 7.83
+      },
+      {
+        "w": "frontend",
+        "s": 7.89,
+        "e": 8.33
+      },
+      {
+        "w": "o'rtasidagi",
+        "s": 8.39,
+        "e": 8.85
+      },
+      {
+        "w": "ma'lumotlar",
+        "s": 8.89,
+        "e": 9.43
+      },
+      {
+        "w": "almashinuvini",
+        "s": 9.51,
+        "e": 10.17
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 10.63,
+        "e": 11.07
+      },
+      {
+        "w": "qoidalariga",
+        "s": 11.17,
+        "e": 11.73
+      },
+      {
+        "w": "mos",
+        "s": 11.81,
+        "e": 12.01
+      },
+      {
+        "w": "ravishda",
+        "s": 12.05,
+        "e": 12.41
+      },
+      {
+        "w": "to'g'ri",
+        "s": 12.53,
+        "e": 12.83
+      },
+      {
+        "w": "tashkil",
+        "s": 12.85,
+        "e": 13.17
+      },
+      {
+        "w": "qilishni",
+        "s": 13.19,
+        "e": 13.47
+      },
+      {
+        "w": "o'rganamiz.",
+        "s": 13.53,
+        "e": 14.01
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "intro",
+    "text": "Har bir komponent ichida tarqoq fetch yozish o'rniga, markazlashgan va qatlamli API strukturasi loyiha barqarorligining mustahkam kafolatidir.",
+    "show": "Har bir komponent ichida tarqoq fetch yozish o'rniga, markazlashgan va qatlamli API strukturasi loyiha barqarorligining mustahkam kafolatidir.",
+    "say": "Har bir komponent ichida tarqoq fech yozish o'rniga, markazlashgan va qatlamli ey-pi-ay strukturasi loyiha barqarorligining mustahkam kafolatidir.",
+    "a0": 14.87,
+    "a1": 23.34,
+    "words": [
+      {
+        "w": "Har",
+        "s": 14.87,
+        "e": 15.03
+      },
+      {
+        "w": "bir",
+        "s": 15.07,
+        "e": 15.17
+      },
+      {
+        "w": "komponent",
+        "s": 15.21,
+        "e": 15.69
+      },
+      {
+        "w": "ichida",
+        "s": 15.77,
+        "e": 16.01
+      },
+      {
+        "w": "tarqoq",
+        "s": 16.13,
+        "e": 16.53
+      },
+      {
+        "w": "fech",
+        "s": 16.61,
+        "e": 16.83
+      },
+      {
+        "w": "yozish",
+        "s": 16.87,
+        "e": 17.15
+      },
+      {
+        "w": "o'rniga,",
+        "s": 17.23,
+        "e": 17.59
+      },
+      {
+        "w": "markazlashgan",
+        "s": 17.97,
+        "e": 18.75
+      },
+      {
+        "w": "va",
+        "s": 18.83,
+        "e": 18.89
+      },
+      {
+        "w": "qatlamli",
+        "s": 18.97,
+        "e": 19.43
+      },
+      {
+        "w": "ey-pi-ay",
+        "s": 19.55,
+        "e": 19.93
+      },
+      {
+        "w": "strukturasi",
+        "s": 19.99,
+        "e": 20.63
+      },
+      {
+        "w": "loyiha",
+        "s": 20.93,
+        "e": 21.27
+      },
+      {
+        "w": "barqarorligining",
+        "s": 21.31,
+        "e": 22.07
+      },
+      {
+        "w": "mustahkam",
+        "s": 22.11,
+        "e": 22.64
+      },
+      {
+        "w": "kafolatidir.",
+        "s": 22.7,
+        "e": 23.34
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "shared_api_va_klient",
+    "text": "Barcha umumiy so'rov mantiqi shared/api qatlamidan boshlanadi: HTTP klient, asosiy URL, sarlavhalar, sessiya cookie va xatoliklar modeli.",
+    "show": "Barcha umumiy so'rov mantiqi shared/api qatlamidan boshlanadi: HTTP klient, asosiy URL, sarlavhalar, sessiya cookie va xatoliklar modeli.",
+    "say": "Barcha umumiy so'rov mantiqi sherd/ey-pi-ay qatlamidan boshlanadi: HTTP klient, asosiy yu-ar-el, sarlavhalar, sessiya cookie va xatoliklar modeli.",
+    "a0": 24.14,
+    "a1": 34.5,
+    "words": [
+      {
+        "w": "Barcha",
+        "s": 24.14,
+        "e": 24.4
+      },
+      {
+        "w": "umumiy",
+        "s": 24.48,
+        "e": 24.78
+      },
+      {
+        "w": "so'rov",
+        "s": 24.84,
+        "e": 25.1
+      },
+      {
+        "w": "mantiqi",
+        "s": 25.12,
+        "e": 25.6
+      },
+      {
+        "w": "sherd/ey-pi-ay",
+        "s": 25.6,
+        "e": 26.78
+      },
+      {
+        "w": "qatlamidan",
+        "s": 26.78,
+        "e": 27.28
+      },
+      {
+        "w": "boshlanadi:",
+        "s": 27.32,
+        "e": 27.82
+      },
+      {
+        "w": "HTTP",
+        "s": 28.54,
+        "e": 28.86
+      },
+      {
+        "w": "klient,",
+        "s": 29.0,
+        "e": 29.44
+      },
+      {
+        "w": "asosiy",
+        "s": 29.82,
+        "e": 30.2
+      },
+      {
+        "w": "yu-ar-el,",
+        "s": 30.3,
+        "e": 30.8
+      },
+      {
+        "w": "sarlavhalar,",
+        "s": 31.1,
+        "e": 31.82
+      },
+      {
+        "w": "sessiya",
+        "s": 32.18,
+        "e": 32.54
+      },
+      {
+        "w": "cookie",
+        "s": 32.62,
+        "e": 33.02
+      },
+      {
+        "w": "va",
+        "s": 33.32,
+        "e": 33.4
+      },
+      {
+        "w": "xatoliklar",
+        "s": 33.48,
+        "e": 34.08
+      },
+      {
+        "w": "modeli.",
+        "s": 34.14,
+        "e": 34.5
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "shared_api_va_klient",
+    "text": "client.ts har qanday so'rovni yagona nuqtadan o'tkazib, autentifikatsiya va global xatolarni ishonchli ushlaydi.",
+    "show": "client.ts har qanday so'rovni yagona nuqtadan o'tkazib, autentifikatsiya va global xatolarni ishonchli ushlaydi.",
+    "say": "Klient nuqta te-es har qanday so'rovni yagona nuqtadan o'tkazib, autentifikatsiya va global xatolarni ishonchli ushlaydi.",
+    "a0": 35.14,
+    "a1": 42.09,
+    "words": [
+      {
+        "w": "Klient",
+        "s": 35.14,
+        "e": 35.5
+      },
+      {
+        "w": "nuqta",
+        "s": 35.54,
+        "e": 35.78
+      },
+      {
+        "w": "te-es",
+        "s": 35.84,
+        "e": 36.1
+      },
+      {
+        "w": "har",
+        "s": 36.4,
+        "e": 36.54
+      },
+      {
+        "w": "qanday",
+        "s": 36.6,
+        "e": 36.84
+      },
+      {
+        "w": "so'rovni",
+        "s": 36.9,
+        "e": 37.26
+      },
+      {
+        "w": "yagona",
+        "s": 37.32,
+        "e": 37.75
+      },
+      {
+        "w": "nuqtadan",
+        "s": 37.81,
+        "e": 38.21
+      },
+      {
+        "w": "o'tkazib,",
+        "s": 38.33,
+        "e": 38.77
+      },
+      {
+        "w": "autentifikatsiya",
+        "s": 39.11,
+        "e": 40.01
+      },
+      {
+        "w": "va",
+        "s": 40.05,
+        "e": 40.09
+      },
+      {
+        "w": "global",
+        "s": 40.17,
+        "e": 40.51
+      },
+      {
+        "w": "xatolarni",
+        "s": 40.55,
+        "e": 41.09
+      },
+      {
+        "w": "ishonchli",
+        "s": 41.19,
+        "e": 41.65
+      },
+      {
+        "w": "ushlaydi.",
+        "s": 41.69,
+        "e": 42.09
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "endpoints_segmentatsiyasi",
+    "text": "Barcha endpointlarni bitta ulkan faylga yig'ish — desegmentatsiya xatosidir. Ularni resurslar bo'yicha shared/api/endpoints katalogiga bo'ling.",
+    "show": "Barcha endpointlarni bitta ulkan faylga yig'ish — desegmentatsiya xatosidir. Ularni resurslar bo'yicha shared/api/endpoints katalogiga bo'ling.",
+    "say": "Barcha endpoyntlarni bitta ulkan faylga yig'ish — desegmentatsiya xatosidir. Ularni resurslar bo'yicha sherd/ey-pi-ay/endpoynts katalogiga bo'ling.",
+    "a0": 42.83,
+    "a1": 52.13,
+    "words": [
+      {
+        "w": "Barcha",
+        "s": 42.83,
+        "e": 43.11
+      },
+      {
+        "w": "endpoyntlarni",
+        "s": 43.17,
+        "e": 43.83
+      },
+      {
+        "w": "bitta",
+        "s": 44.15,
+        "e": 44.43
+      },
+      {
+        "w": "ulkan",
+        "s": 44.51,
+        "e": 44.83
+      },
+      {
+        "w": "faylga",
+        "s": 44.89,
+        "e": 45.25
+      },
+      {
+        "w": "yig'ish",
+        "s": 45.31,
+        "e": 45.61
+      },
+      {
+        "w": "—",
+        "s": 45.61,
+        "e": 45.61
+      },
+      {
+        "w": "desegmentatsiya",
+        "s": 45.95,
+        "e": 46.81
+      },
+      {
+        "w": "xatosidir.",
+        "s": 46.83,
+        "e": 47.39
+      },
+      {
+        "w": "Ularni",
+        "s": 48.05,
+        "e": 48.41
+      },
+      {
+        "w": "resurslar",
+        "s": 48.71,
+        "e": 49.21
+      },
+      {
+        "w": "bo'yicha",
+        "s": 49.27,
+        "e": 49.61
+      },
+      {
+        "w": "sherd/ey-pi-ay/endpoynts",
+        "s": 49.61,
+        "e": 51.17
+      },
+      {
+        "w": "katalogiga",
+        "s": 51.17,
+        "e": 51.75
+      },
+      {
+        "w": "bo'ling.",
+        "s": 51.83,
+        "e": 52.13
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "endpoints_segmentatsiyasi",
+    "text": "Masalan, product.ts, order.ts va auth.ts har biri o'zining so'rov funksiyalari va DTO tiplariga ega bo'ladi.",
+    "show": "Masalan, product.ts, order.ts va auth.ts har biri o'zining so'rov funksiyalari va DTO tiplariga ega bo'ladi.",
+    "say": "Masalan, prodakt nuqta te-es, order nuqta te-es va os.ts har biri o'zining so'rov funksiyalari va di-ti-o tiplariga ega bo'ladi.",
+    "a0": 52.78,
+    "a1": 61.14,
+    "words": [
+      {
+        "w": "Masalan,",
+        "s": 52.78,
+        "e": 53.18
+      },
+      {
+        "w": "prodakt",
+        "s": 53.44,
+        "e": 53.9
+      },
+      {
+        "w": "nuqta",
+        "s": 53.96,
+        "e": 54.22
+      },
+      {
+        "w": "te-es,",
+        "s": 54.3,
+        "e": 54.64
+      },
+      {
+        "w": "order",
+        "s": 55.04,
+        "e": 55.34
+      },
+      {
+        "w": "nuqta",
+        "s": 55.4,
+        "e": 55.66
+      },
+      {
+        "w": "te-es",
+        "s": 55.72,
+        "e": 56.0
+      },
+      {
+        "w": "va",
+        "s": 56.3,
+        "e": 56.38
+      },
+      {
+        "w": "os.ts",
+        "s": 56.38,
+        "e": 57.5
+      },
+      {
+        "w": "har",
+        "s": 57.5,
+        "e": 57.66
+      },
+      {
+        "w": "biri",
+        "s": 57.72,
+        "e": 57.86
+      },
+      {
+        "w": "o'zining",
+        "s": 57.98,
+        "e": 58.28
+      },
+      {
+        "w": "so'rov",
+        "s": 58.32,
+        "e": 58.62
+      },
+      {
+        "w": "funksiyalari",
+        "s": 58.68,
+        "e": 59.22
+      },
+      {
+        "w": "va",
+        "s": 59.28,
+        "e": 59.34
+      },
+      {
+        "w": "di-ti-o",
+        "s": 59.66,
+        "e": 59.96
+      },
+      {
+        "w": "tiplariga",
+        "s": 60.08,
+        "e": 60.52
+      },
+      {
+        "w": "ega",
+        "s": 60.62,
+        "e": 60.78
+      },
+      {
+        "w": "bo'ladi.",
+        "s": 60.84,
+        "e": 61.14
+      }
+    ]
+  },
+  {
+    "id": "L7",
+    "scene": "endpoints_segmentatsiyasi",
+    "text": "Bu yondashuv kodni toza, o'qilishi oson va jamoada o'zaro to'qnashuvlarsiz saqlaydi.",
+    "show": "Bu yondashuv kodni toza, o'qilishi oson va jamoada o'zaro to'qnashuvlarsiz saqlaydi.",
+    "say": "Bu yondashuv kodni toza, o'qilishi oson va jamoada o'zaro to'qnashuvlarsiz saqlaydi.",
+    "a0": 61.94,
+    "a1": 67.04,
+    "words": [
+      {
+        "w": "Bu",
+        "s": 61.94,
+        "e": 62.0
+      },
+      {
+        "w": "yondashuv",
+        "s": 62.04,
+        "e": 62.54
+      },
+      {
+        "w": "kodni",
+        "s": 62.6,
+        "e": 62.88
+      },
+      {
+        "w": "toza,",
+        "s": 62.96,
+        "e": 63.3
+      },
+      {
+        "w": "o'qilishi",
+        "s": 63.7,
+        "e": 64.08
+      },
+      {
+        "w": "oson",
+        "s": 64.24,
+        "e": 64.58
+      },
+      {
+        "w": "va",
+        "s": 64.64,
+        "e": 64.7
+      },
+      {
+        "w": "jamoada",
+        "s": 64.78,
+        "e": 65.22
+      },
+      {
+        "w": "o'zaro",
+        "s": 65.4,
+        "e": 65.7
+      },
+      {
+        "w": "to'qnashuvlarsiz",
+        "s": 65.76,
+        "e": 66.54
+      },
+      {
+        "w": "saqlaydi.",
+        "s": 66.58,
+        "e": 67.04
+      }
+    ]
+  },
+  {
+    "id": "L8",
+    "scene": "lokal_sorovlar",
+    "text": "Agar so'rov faqat bitta sahifa yoki feature'ga kerak bo'lsa-chi? Masalan, bir martalik OTP kodi yoki maxsus tekshiruv.",
+    "show": "Agar so'rov faqat bitta sahifa yoki feature'ga kerak bo'lsa-chi? Masalan, bir martalik OTP kodi yoki maxsus tekshiruv.",
+    "say": "Agar so'rov faqat bitta sahifa yoki ficher'ga kerak bo'lsa-chi? Masalan, bir martalik o-te-pe kodi yoki maxsus tekshiruv.",
+    "a0": 67.67,
+    "a1": 74.79,
+    "words": [
+      {
+        "w": "Agar",
+        "s": 67.67,
+        "e": 67.93
+      },
+      {
+        "w": "so'rov",
+        "s": 67.97,
+        "e": 68.21
+      },
+      {
+        "w": "faqat",
+        "s": 68.25,
+        "e": 68.51
+      },
+      {
+        "w": "bitta",
+        "s": 68.57,
+        "e": 68.81
+      },
+      {
+        "w": "sahifa",
+        "s": 68.85,
+        "e": 69.27
+      },
+      {
+        "w": "yoki",
+        "s": 69.33,
+        "e": 69.63
+      },
+      {
+        "w": "ficher'ga",
+        "s": 69.71,
+        "e": 70.11
+      },
+      {
+        "w": "kerak",
+        "s": 70.17,
+        "e": 70.41
+      },
+      {
+        "w": "bo'lsa-chi?",
+        "s": 70.45,
+        "e": 70.85
+      },
+      {
+        "w": "Masalan,",
+        "s": 71.39,
+        "e": 71.75
+      },
+      {
+        "w": "bir",
+        "s": 72.01,
+        "e": 72.11
+      },
+      {
+        "w": "martalik",
+        "s": 72.15,
+        "e": 72.61
+      },
+      {
+        "w": "o-te-pe",
+        "s": 72.79,
+        "e": 73.17
+      },
+      {
+        "w": "kodi",
+        "s": 73.29,
+        "e": 73.55
+      },
+      {
+        "w": "yoki",
+        "s": 73.59,
+        "e": 73.89
+      },
+      {
+        "w": "maxsus",
+        "s": 73.97,
+        "e": 74.35
+      },
+      {
+        "w": "tekshiruv.",
+        "s": 74.39,
+        "e": 74.79
+      }
+    ]
+  },
+  {
+    "id": "L9",
+    "scene": "lokal_sorovlar",
+    "text": "Uni shared'ga chiqarish shart emas! To'g'ridan-to'g'ri o'sha sahifaning api katalogida yozing va public API'dan yashiring.",
+    "show": "Uni shared'ga chiqarish shart emas! To'g'ridan-to'g'ri o'sha sahifaning api katalogida yozing va public API'dan yashiring.",
+    "say": "Uni sherd'ga chiqarish shart emas! To'g'ridan-to'g'ri o'sha sahifaning ey-pi-ay katalogida yozing va public ey-pi-ay'dan yashiring.",
+    "a0": 75.47,
+    "a1": 82.82,
+    "words": [
+      {
+        "w": "Uni",
+        "s": 75.47,
+        "e": 75.63
+      },
+      {
+        "w": "sherd'ga",
+        "s": 75.71,
+        "e": 76.05
+      },
+      {
+        "w": "chiqarish",
+        "s": 76.11,
+        "e": 76.47
+      },
+      {
+        "w": "shart",
+        "s": 76.51,
+        "e": 76.75
+      },
+      {
+        "w": "emas!",
+        "s": 76.81,
+        "e": 77.05
+      },
+      {
+        "w": "To'g'ridan-to'g'ri",
+        "s": 77.61,
+        "e": 78.29
+      },
+      {
+        "w": "o'sha",
+        "s": 78.37,
+        "e": 78.55
+      },
+      {
+        "w": "sahifaning",
+        "s": 78.59,
+        "e": 79.13
+      },
+      {
+        "w": "ey-pi-ay",
+        "s": 79.45,
+        "e": 79.85
+      },
+      {
+        "w": "katalogida",
+        "s": 79.91,
+        "e": 80.43
+      },
+      {
+        "w": "yozing",
+        "s": 80.43,
+        "e": 80.87
+      },
+      {
+        "w": "va",
+        "s": 81.13,
+        "e": 81.21
+      },
+      {
+        "w": "public",
+        "s": 81.35,
+        "e": 81.69
+      },
+      {
+        "w": "ey-pi-ay'dan",
+        "s": 81.77,
+        "e": 82.31
+      },
+      {
+        "w": "yashiring.",
+        "s": 82.37,
+        "e": 82.82
+      }
+    ]
+  },
+  {
+    "id": "L10",
+    "scene": "lokal_sorovlar",
+    "text": "FSD ning lokallik tamoyili bu yerda ham to'liq kuchga ega.",
+    "show": "FSD ning lokallik tamoyili bu yerda ham to'liq kuchga ega.",
+    "say": "Ef-es-di ning lokallik tamoyili bu yerda ham to'liq kuchga ega.",
+    "a0": 83.5,
+    "a1": 86.8,
+    "words": [
+      {
+        "w": "Ef-es-di",
+        "s": 83.5,
+        "e": 83.86
+      },
+      {
+        "w": "ning",
+        "s": 83.92,
+        "e": 84.06
+      },
+      {
+        "w": "lokallik",
+        "s": 84.14,
+        "e": 84.56
+      },
+      {
+        "w": "tamoyili",
+        "s": 84.6,
+        "e": 85.04
+      },
+      {
+        "w": "bu",
+        "s": 85.34,
+        "e": 85.42
+      },
+      {
+        "w": "yerda",
+        "s": 85.48,
+        "e": 85.72
+      },
+      {
+        "w": "ham",
+        "s": 85.76,
+        "e": 85.9
+      },
+      {
+        "w": "to'liq",
+        "s": 85.98,
+        "e": 86.24
+      },
+      {
+        "w": "kuchga",
+        "s": 86.32,
+        "e": 86.58
+      },
+      {
+        "w": "ega.",
+        "s": 86.64,
+        "e": 86.8
+      }
+    ]
+  },
+  {
+    "id": "L11",
+    "scene": "openapi_va_qalin_klient",
+    "text": "Katta loyihalarda backend'dan OpenAPI sxemasi orqali avtomatik klient generatsiya qilish eng yaxshi amaliyotdir.",
+    "show": "Katta loyihalarda backend'dan OpenAPI sxemasi orqali avtomatik klient generatsiya qilish eng yaxshi amaliyotdir.",
+    "say": "Katta loyihalarda bekend'dan Open ey-pi-ay sxemasi orqali avtomatik klient generatsiya qilish eng yaxshi amaliyotdir.",
+    "a0": 87.52,
+    "a1": 94.26,
+    "words": [
+      {
+        "w": "Katta",
+        "s": 87.52,
+        "e": 87.78
+      },
+      {
+        "w": "loyihalarda",
+        "s": 87.84,
+        "e": 88.44
+      },
+      {
+        "w": "bekend'dan",
+        "s": 88.76,
+        "e": 89.32
+      },
+      {
+        "w": "Open",
+        "s": 89.52,
+        "e": 89.8
+      },
+      {
+        "w": "ey-pi-ay",
+        "s": 90.0,
+        "e": 90.32
+      },
+      {
+        "w": "sxemasi",
+        "s": 90.36,
+        "e": 90.78
+      },
+      {
+        "w": "orqali",
+        "s": 90.82,
+        "e": 91.14
+      },
+      {
+        "w": "avtomatik",
+        "s": 91.46,
+        "e": 92.0
+      },
+      {
+        "w": "klient",
+        "s": 92.04,
+        "e": 92.36
+      },
+      {
+        "w": "generatsiya",
+        "s": 92.42,
+        "e": 92.9
+      },
+      {
+        "w": "qilish",
+        "s": 92.92,
+        "e": 93.14
+      },
+      {
+        "w": "eng",
+        "s": 93.28,
+        "e": 93.4
+      },
+      {
+        "w": "yaxshi",
+        "s": 93.44,
+        "e": 93.66
+      },
+      {
+        "w": "amaliyotdir.",
+        "s": 93.72,
+        "e": 94.26
+      }
+    ]
+  },
+  {
+    "id": "L12",
+    "scene": "openapi_va_qalin_klient",
+    "text": "Generatsiya qilingan kod shared/api/openapi katalogida saqlanadi va uni hech qachon qo'lda tahrirlamaslik kerak.",
+    "show": "Generatsiya qilingan kod shared/api/openapi katalogida saqlanadi va uni hech qachon qo'lda tahrirlamaslik kerak.",
+    "say": "Generatsiya qilingan kod sherd/ey-pi-ay/Open ey-pi-ay katalogida saqlanadi va uni hech qachon qo'lda tahrirlamaslik kerak.",
+    "a0": 95.04,
+    "a1": 101.93,
+    "words": [
+      {
+        "w": "Generatsiya",
+        "s": 95.04,
+        "e": 95.56
+      },
+      {
+        "w": "qilingan",
+        "s": 95.58,
+        "e": 95.96
+      },
+      {
+        "w": "kod",
+        "s": 96.04,
+        "e": 96.2
+      },
+      {
+        "w": "sherd/ey-pi-ay/Open",
+        "s": 96.2,
+        "e": 97.85
+      },
+      {
+        "w": "ey-pi-ay",
+        "s": 97.85,
+        "e": 98.21
+      },
+      {
+        "w": "katalogida",
+        "s": 98.27,
+        "e": 98.79
+      },
+      {
+        "w": "saqlanadi",
+        "s": 98.85,
+        "e": 99.35
+      },
+      {
+        "w": "va",
+        "s": 99.63,
+        "e": 99.69
+      },
+      {
+        "w": "uni",
+        "s": 99.81,
+        "e": 99.95
+      },
+      {
+        "w": "hech",
+        "s": 100.01,
+        "e": 100.23
+      },
+      {
+        "w": "qachon",
+        "s": 100.27,
+        "e": 100.53
+      },
+      {
+        "w": "qo'lda",
+        "s": 100.61,
+        "e": 100.83
+      },
+      {
+        "w": "tahrirlamaslik",
+        "s": 100.89,
+        "e": 101.65
+      },
+      {
+        "w": "kerak.",
+        "s": 101.69,
+        "e": 101.93
+      }
+    ]
+  },
+  {
+    "id": "L13",
+    "scene": "openapi_va_qalin_klient",
+    "text": "DTO larni esa entities ga erta tiqmasdan, frontend domen modeli bilan backend o'rtasida mapper'lardan foydalaning.",
+    "show": "DTO larni esa entities ga erta tiqmasdan, frontend domen modeli bilan backend o'rtasida mapper'lardan foydalaning.",
+    "say": "Di-ti-o larni esa entitiz ga erta tiqmasdan, frontend domen modeli bilan bekend o'rtasida mepperlardan foydalaning.",
+    "a0": 102.71,
+    "a1": 109.47,
+    "words": [
+      {
+        "w": "Di-ti-o",
+        "s": 102.71,
+        "e": 103.05
+      },
+      {
+        "w": "larni",
+        "s": 103.13,
+        "e": 103.39
+      },
+      {
+        "w": "esa",
+        "s": 103.45,
+        "e": 103.61
+      },
+      {
+        "w": "entitiz",
+        "s": 103.99,
+        "e": 104.39
+      },
+      {
+        "w": "ga",
+        "s": 104.43,
+        "e": 104.49
+      },
+      {
+        "w": "erta",
+        "s": 104.63,
+        "e": 104.85
+      },
+      {
+        "w": "tiqmasdan,",
+        "s": 104.91,
+        "e": 105.45
+      },
+      {
+        "w": "frontend",
+        "s": 105.73,
+        "e": 106.17
+      },
+      {
+        "w": "domen",
+        "s": 106.21,
+        "e": 106.49
+      },
+      {
+        "w": "modeli",
+        "s": 106.53,
+        "e": 106.83
+      },
+      {
+        "w": "bilan",
+        "s": 106.85,
+        "e": 107.05
+      },
+      {
+        "w": "bekend",
+        "s": 107.13,
+        "e": 107.49
+      },
+      {
+        "w": "o'rtasida",
+        "s": 107.53,
+        "e": 107.91
+      },
+      {
+        "w": "mepperlardan",
+        "s": 108.23,
+        "e": 108.89
+      },
+      {
+        "w": "foydalaning.",
+        "s": 108.93,
+        "e": 109.47
+      }
+    ]
+  },
+  {
+    "id": "L14",
+    "scene": "tipik_xatolar",
+    "text": "Tipik xatolar: komponent ichida to'g'ridan-to'g'ri fetch chaqirish, barcha so'rovlarni bitta faylga tiqish yoki lokal so'rovni tashqariga eksport qilish.",
+    "show": "Tipik xatolar: komponent ichida to'g'ridan-to'g'ri fetch chaqirish, barcha so'rovlarni bitta faylga tiqish yoki lokal so'rovni tashqariga eksport qilish.",
+    "say": "Tipik xatolar: komponent ichida to'g'ridan-to'g'ri fech chaqirish, barcha so'rovlarni bitta faylga tiqish yoki lokal so'rovni tashqariga eksport qilish.",
+    "a0": 110.09,
+    "a1": 118.82,
+    "words": [
+      {
+        "w": "Tipik",
+        "s": 110.09,
+        "e": 110.41
+      },
+      {
+        "w": "xatolar:",
+        "s": 110.45,
+        "e": 110.91
+      },
+      {
+        "w": "komponent",
+        "s": 111.53,
+        "e": 111.99
+      },
+      {
+        "w": "ichida",
+        "s": 112.03,
+        "e": 112.25
+      },
+      {
+        "w": "to'g'ridan-to'g'ri",
+        "s": 112.31,
+        "e": 113.0
+      },
+      {
+        "w": "fech",
+        "s": 113.08,
+        "e": 113.3
+      },
+      {
+        "w": "chaqirish,",
+        "s": 113.32,
+        "e": 113.74
+      },
+      {
+        "w": "barcha",
+        "s": 114.24,
+        "e": 114.5
+      },
+      {
+        "w": "so'rovlarni",
+        "s": 114.56,
+        "e": 115.1
+      },
+      {
+        "w": "bitta",
+        "s": 115.18,
+        "e": 115.44
+      },
+      {
+        "w": "faylga",
+        "s": 115.48,
+        "e": 115.8
+      },
+      {
+        "w": "tiqish",
+        "s": 115.88,
+        "e": 116.2
+      },
+      {
+        "w": "yoki",
+        "s": 116.22,
+        "e": 116.7
+      },
+      {
+        "w": "lokal",
+        "s": 116.8,
+        "e": 117.1
+      },
+      {
+        "w": "so'rovni",
+        "s": 117.14,
+        "e": 117.5
+      },
+      {
+        "w": "tashqariga",
+        "s": 117.54,
+        "e": 118.0
+      },
+      {
+        "w": "eksport",
+        "s": 118.16,
+        "e": 118.52
+      },
+      {
+        "w": "qilish.",
+        "s": 118.56,
+        "e": 118.82
+      }
+    ]
+  },
+  {
+    "id": "L15",
+    "scene": "tipik_xatolar",
+    "text": "Steiger linteri va toza arxitektura orqali bu muammolarni osongina oldini olish mumkin.",
+    "show": "Steiger linteri va toza arxitektura orqali bu muammolarni osongina oldini olish mumkin.",
+    "say": "Stayger linteri va toza arxitektura orqali bu muammolarni osongina oldini olish mumkin.",
+    "a0": 119.58,
+    "a1": 124.72,
+    "words": [
+      {
+        "w": "Stayger",
+        "s": 119.58,
+        "e": 119.94
+      },
+      {
+        "w": "linteri",
+        "s": 120.04,
+        "e": 120.42
+      },
+      {
+        "w": "va",
+        "s": 120.68,
+        "e": 120.76
+      },
+      {
+        "w": "toza",
+        "s": 120.86,
+        "e": 121.12
+      },
+      {
+        "w": "arxitektura",
+        "s": 121.18,
+        "e": 121.74
+      },
+      {
+        "w": "orqali",
+        "s": 121.8,
+        "e": 122.1
+      },
+      {
+        "w": "bu",
+        "s": 122.4,
+        "e": 122.46
+      },
+      {
+        "w": "muammolarni",
+        "s": 122.54,
+        "e": 123.18
+      },
+      {
+        "w": "osongina",
+        "s": 123.34,
+        "e": 123.8
+      },
+      {
+        "w": "oldini",
+        "s": 123.9,
+        "e": 124.14
+      },
+      {
+        "w": "olish",
+        "s": 124.2,
+        "e": 124.4
+      },
+      {
+        "w": "mumkin.",
+        "s": 124.42,
+        "e": 124.72
+      }
+    ]
+  },
+  {
+    "id": "L16",
+    "scene": "xulosa",
+    "text": "Xulosa: umumiy klient va endpointlarni shared/api da saqlang, lokalini sahifada qoldiring va generatsiyani qo'lda buzmang. Keyingi bobda Server holati — TanStack Query'ni ko'rib chiqamiz. Rahmat!",
+    "show": "Xulosa: umumiy klient va endpointlarni shared/api da saqlang, lokalini sahifada qoldiring va generatsiyani qo'lda buzmang. Keyingi bobda Server holati — TanStack Query'ni ko'rib chiqamiz. Rahmat!",
+    "say": "Xulosa: umumiy klient va endpoyntlarni sherd/ey-pi-ay da saqlang, lokalini sahifada qoldiring va generatsiyani qo'lda buzmang. Keyingi bobda Server holati — Ten-stek kveri'ni ko'rib chiqamiz. Rahmat!",
+    "a0": 125.39,
+    "a1": 139.86,
+    "words": [
+      {
+        "w": "Xulosa:",
+        "s": 125.39,
+        "e": 125.81
+      },
+      {
+        "w": "umumiy",
+        "s": 126.19,
+        "e": 126.53
+      },
+      {
+        "w": "klient",
+        "s": 126.63,
+        "e": 127.09
+      },
+      {
+        "w": "va",
+        "s": 127.17,
+        "e": 127.23
+      },
+      {
+        "w": "endpoyntlarni",
+        "s": 127.39,
+        "e": 128.25
+      },
+      {
+        "w": "sherd/ey-pi-ay",
+        "s": 128.25,
+        "e": 129.75
+      },
+      {
+        "w": "da",
+        "s": 129.75,
+        "e": 129.81
+      },
+      {
+        "w": "saqlang,",
+        "s": 129.87,
+        "e": 130.27
+      },
+      {
+        "w": "lokalini",
+        "s": 130.69,
+        "e": 131.17
+      },
+      {
+        "w": "sahifada",
+        "s": 131.31,
+        "e": 131.77
+      },
+      {
+        "w": "qoldiring",
+        "s": 131.83,
+        "e": 132.23
+      },
+      {
+        "w": "va",
+        "s": 132.59,
+        "e": 132.65
+      },
+      {
+        "w": "generatsiyani",
+        "s": 132.77,
+        "e": 133.45
+      },
+      {
+        "w": "qo'lda",
+        "s": 133.61,
+        "e": 133.93
+      },
+      {
+        "w": "buzmang.",
+        "s": 134.03,
+        "e": 134.43
+      },
+      {
+        "w": "Keyingi",
+        "s": 134.95,
+        "e": 135.28
+      },
+      {
+        "w": "bobda",
+        "s": 135.32,
+        "e": 135.64
+      },
+      {
+        "w": "Server",
+        "s": 135.98,
+        "e": 136.36
+      },
+      {
+        "w": "holati",
+        "s": 136.42,
+        "e": 136.86
+      },
+      {
+        "w": "—",
+        "s": 136.86,
+        "e": 136.86
+      },
+      {
+        "w": "Ten-stek",
+        "s": 137.28,
+        "e": 137.76
+      },
+      {
+        "w": "kveri'ni",
+        "s": 137.8,
+        "e": 138.24
+      },
+      {
+        "w": "ko'rib",
+        "s": 138.3,
+        "e": 138.54
+      },
+      {
+        "w": "chiqamiz.",
+        "s": 138.56,
+        "e": 138.92
+      },
+      {
+        "w": "Rahmat!",
+        "s": 139.5,
+        "e": 139.86
+      }
+    ]
+  }
+]

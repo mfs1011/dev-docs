@@ -4,6 +4,14 @@
 
 ## Qisqacha
 
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/fsd/20-api-sorovlari.jpg" src="/video/fsd/20-api-sorovlari.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/fsd/20-api-sorovlari.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/fsd/20-api-sorovlari.uz.vtt">
+</video>
+<figcaption>Bob videoda: API so'rovlari arxitekturasi — shared/api, markaziy HTTP klient, endpoints segmentatsiyasi, lokal so'rovlar va OpenAPI.</figcaption>
+</figure>
+
 Umumiy so'rov mantiqini `shared/api`'dan boshlang: HTTP klient (`client.ts`) va endpoint bo'yicha guruhlangan so'rov funksiyalari. Ko'p loyiha uchun shu yetarli. Agar so'rov faqat bitta sahifa yoki feature'ga kerak bo'lsa — u o'sha slice'ning `api` segmentida. So'rovlarni va javob tiplarini `entities`'ga **erta** qo'ymang: backend javobi frontend'ga kerak shakldan farq qilishi mumkin.
 
 ## Qoida

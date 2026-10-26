@@ -1,0 +1,22 @@
+WEBVTT
+
+00:00.000 --> 00:26.683
+Kirish: API So'rovlari Arxitekturasi
+
+00:26.683 --> 00:48.192
+shared/api va Markaziy HTTP Klient
+
+00:48.192 --> 01:15.900
+Endpoints: Resurslar Bo'yicha Taqsimlash
+
+01:15.900 --> 01:38.495
+Lokal So'rovlar: Sahifaning O'z APIsi
+
+01:38.495 --> 02:03.911
+OpenAPI Generatsiyasi va DTO Mapper
+
+02:03.911 --> 02:21.960
+Eng Ko'p Uchraydigan Xatolar
+
+02:21.960 --> 02:41.700
+Xulosa va Keyingi Qadam
