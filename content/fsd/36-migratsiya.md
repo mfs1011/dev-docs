@@ -4,6 +4,14 @@
 
 ## Qisqacha
 
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/fsd/36-migratsiya.jpg" src="/video/fsd/36-migratsiya.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/fsd/36-migratsiya.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/fsd/36-migratsiya.uz.vtt">
+</video>
+<figcaption>Bob videoda: Migratsiya — mavjud loyihalarni bosqichma-bosqich FSD ga o'tkazishning 8 qadami, Steiger linterini sozlash va tipik xatolar.</figcaption>
+</figure>
+
 Mavjud loyihani FSD'ga **bosqichma-bosqich** o'tkazish mumkin — yangi funksiyalarni to'xtatmasdan. Rasmiy yo'l: avval `@` alias, keyin kodni **sahifalarga** bo'lish, qolganini `shared` va `app`'ga ajratish, sahifalararo importlarni yo'qotish, `shared`'ni "ochish" va oxirida segmentlarga tartiblash. `entities`/`features` — ixtiyoriy, eng oxirida. Lekin eng muhim savol undan oldin: **bu sizga rostdan kerakmi?**
 
 ## Qoida: boshlashdan oldin
