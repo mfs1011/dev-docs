@@ -1,0 +1,81 @@
+WEBVTT
+
+1
+00:01.420 --> 00:16.200
+Salom! Bu FSD qo'llanmasining o'n to'qqizinchi bobi — Qaror daraxti: kod qayerga boradi? Bugun yangi
+yozilgan har qanday kodni qaysi qatlamga qo'yishni bir necha soniyada aniqlash algoritmini o'rganamiz.
+
+2
+00:17.450 --> 00:27.530
+FSD me'moriyatida eng ko'p beriladigan savol — bu yangi komponent yoki
+funksiyaning joyini tanlashdir. Buning uchun aniq va sodda qaror daraxti mavjud.
+
+3
+00:29.460 --> 00:38.370
+Boshlang'ich qoida: kod ilovani ishga tushirish, sozlash yoki
+routerga tegishlimi? Ha bo'lsa — to'g'ridan-to'g'ri app qatlamiga.
+
+4
+00:38.720 --> 00:48.080
+Agar kod loyihadan tashqarida ham ma'noga ega bo'lgan sof texnik element
+bo'lsa, masalan tugma yoki sana formati — u shared poydevoriga boradi.
+
+5
+00:51.210 --> 01:01.250
+Uchinchi va eng muhim savol: bu kod faqat bitta sahifada ishlatiladimi?
+Agar javob ha bo'lsa — ikkilanmasdan joriy pages qatlamida qoldiring.
+
+6
+01:01.580 --> 01:10.510
+FSD ning oltin tamoyili — doimo eng lokal joydan boshlashdir. Kodni
+oldindan umumiy qatlamlarga tushirish chalkashliklarga olib keladi.
+
+7
+01:10.860 --> 01:18.220
+Qachonki haqiqiy ikkinchi sahifa xuddi shu kodga muhtoj
+bo'lsagina, uni pastroq qatlamlarga ko'chirish tavsiya etiladi.
+
+8
+01:21.350 --> 01:29.700
+Agar kod bir nechta joyda ishlatilsa: u katta mustaqil blok
+bo'lsa — widgets, masalan header yoki filtrlar paneli.
+
+9
+01:30.050 --> 01:37.010
+Agar u foydalanuvchining aniq bir harakati bo'lsa —
+features, masalan savatga qo'shish yoki sharh yuborish.
+
+10
+01:37.360 --> 01:45.970
+Agar u shunchaki biznes obyekti, uning ko'rinishi yoki qoidasi bo'lsa
+— entities, masalan mahsulot kartasi yoki foydalanuvchi ma'lumoti.
+
+11
+01:49.240 --> 01:59.820
+Keling, mahsulot reytingi hayotini ko'rib chiqamiz: dastlab u faqat mahsulot
+sahifasida turadi, keyin esa katalog kartasiga ham kerak bo'lib entities ga o'tadi.
+
+12
+02:00.170 --> 02:08.570
+Vaqt o'tib foydalanuvchi baholashi qo'shilgach — u rate-product
+feature'siga aylanadi, to'liq sharhlar bloki esa widget ga jamlanadi.
+
+13
+02:08.880 --> 02:13.870
+Shunday qilib, loyiha o'sgani sari kodning
+o'rni tabiiy ravishda kengayib boradi.
+
+14
+02:16.980 --> 02:24.560
+Steiger linteri loyihangizdagi har bir import yo'nalishini tekshirib,
+qatlamlar iyerarxiyasiga to'liq rioya qilinishini nazorat qiladi.
+
+15
+02:24.710 --> 02:31.440
+Qaror daraxtiga qat'iy amal qilinganda, linter
+barcha modullarni yashil tasdiq bilan qabul qiladi.
+
+16
+02:34.710 --> 02:48.110
+Xulosa qilsak: doimo sahifadan boshlang, fe'llarni features ga, otlarni entities ga bering va
+qaror daraxtidan foydalaning. Keyingi bobda API so'rovlari arxitekturasini o'rganamiz. Rahmat!
