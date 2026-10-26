@@ -1,0 +1,81 @@
+WEBVTT
+
+1
+00:01.420 --> 00:17.860
+Salom! Bu FSD qo'llanmasining yigirma to'rtinchi bobi — Layout'lar arxitekturasi. Bugun ilova karkaslari,
+umumiy sarlavhalar va yon panellarni FSD qoidalariga zid kelmagan holda to'g'ri joylashtirishni o'rganamiz.
+
+2
+00:19.530 --> 00:25.710
+Layout bir nechta sahifa umumiy tuzilmaga
+ega bo'lganda paydo bo'ladigan karkasdir.
+
+3
+00:27.780 --> 00:39.050
+Agar layout faqat sof markup, CSS to'ri va tema almashtirish kabi
+UI mantiqidan iborat bo'lsa — u shared/ui/layout ichida yaratiladi.
+
+4
+00:39.600 --> 00:49.080
+Bunday PageShell komponenti hech qanday biznes widget'larini
+bilmaydi, faqat slot yoki render props orqali joylarni taqdim etadi.
+
+5
+00:52.590 --> 01:00.750
+FSD da eng ko'p uchraydigan qoidabuzarlik — shared layout
+ichiga widgets/header'ni to'g'ridan-to'g'ri import qilishdir.
+
+6
+01:01.180 --> 01:08.730
+Bu shared qatlamidan yuqoriga noqonuniy bog'lanish
+yaratadi va Steiger linteri tomonidan qat'iy to'xtatiladi.
+
+7
+01:09.200 --> 01:14.500
+Shared hech qachon o'zidan yuqoridagi widget
+yoki sahifalarni bilishi mumkin emas.
+
+8
+01:17.770 --> 01:26.180
+Xo'sh, ichida widget'lari bor to'liq layoutni qayerda
+yig'ish kerak? Eng ideal joy — app/layouts katalogidir.
+
+9
+01:26.590 --> 01:35.730
+App qatlami eng yuqorida turgani sababli, u header, sidebar va
+PageShell'ni bemalol import qilib, bitta karkasga birlashtiradi.
+
+10
+01:36.000 --> 01:42.770
+So'ngra router konfiguratsiyasida MainLayout asosiy
+o'ram sifatida barcha sahifalarga qo'llanadi.
+
+11
+01:46.320 --> 01:51.840
+Yangi loyihalarda eng birinchi
+beriladigan savol: layout umuman kerakmi?
+
+12
+01:52.150 --> 02:01.380
+Agar karkas atigi ikki-uch qatordan iborat bo'lsa, uni har bir
+sahifada takrorlash sun'iy abstraksiyadan ancha arzon va qulayroqdir.
+
+13
+02:01.730 --> 02:06.030
+Nusxa ko'chirish sahifalarning bir-biriga
+bog'lanib qolmasligini ta'minlaydi.
+
+14
+02:09.380 --> 02:20.070
+Tipik xatolar: shared layout'ga widget import qilish, layout ichida sahifaga
+xos ma'lumotlarni yuklash yoki widgets ichida sahifalarni import qilish.
+
+15
+02:20.540 --> 02:26.160
+Router orqali sahifalarni Outlet bilan
+ulash har doim toza va xavfsiz yo'ldir.
+
+16
+02:29.230 --> 02:45.130
+Xulosa: karkasni shared/ui/layout da, yig'ilganini app/layouts da saqlang va teskari import
+qilmang. Keyingi bobda Assetlar, stillar va i18n arxitekturasini o'rganamiz. Rahmat!

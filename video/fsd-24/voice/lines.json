@@ -1,0 +1,1393 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Salom! Bu FSD qo'llanmasining yigirma to'rtinchi bobi — Layout'lar arxitekturasi. Bugun ilova karkaslari, umumiy sarlavhalar va yon panellarni FSD qoidalariga zid kelmagan holda to'g'ri joylashtirishni o'rganamiz.",
+    "show": "Salom! Bu FSD qo'llanmasining yigirma to'rtinchi bobi — Layout'lar arxitekturasi. Bugun ilova karkaslari, umumiy sarlavhalar va yon panellarni FSD qoidalariga zid kelmagan holda to'g'ri joylashtirishni o'rganamiz.",
+    "say": "Salom! Bu Ef-es-di qo'llanmasining yigirma to'rtinchi bobi — leyaut'lar arxitekturasi. Bugun ilova karkaslari, umumiy sarlavhalar va yon panellarni Ef-es-di qoidalariga zid kelmagan holda to'g'ri joylashtirishni o'rganamiz.",
+    "a0": 0.16,
+    "a1": 16.15,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.16,
+        "e": 0.48
+      },
+      {
+        "w": "Bu",
+        "s": 1.24,
+        "e": 1.3
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 1.58,
+        "e": 1.94
+      },
+      {
+        "w": "qo'llanmasining",
+        "s": 2.04,
+        "e": 2.78
+      },
+      {
+        "w": "yigirma",
+        "s": 2.9,
+        "e": 3.3
+      },
+      {
+        "w": "to'rtinchi",
+        "s": 3.36,
+        "e": 3.82
+      },
+      {
+        "w": "bobi",
+        "s": 3.86,
+        "e": 4.12
+      },
+      {
+        "w": "—",
+        "s": 4.12,
+        "e": 4.12
+      },
+      {
+        "w": "leyaut'lar",
+        "s": 4.42,
+        "e": 5.12
+      },
+      {
+        "w": "arxitekturasi.",
+        "s": 5.26,
+        "e": 6.12
+      },
+      {
+        "w": "Bugun",
+        "s": 7.14,
+        "e": 7.4
+      },
+      {
+        "w": "ilova",
+        "s": 7.55,
+        "e": 7.85
+      },
+      {
+        "w": "karkaslari,",
+        "s": 7.93,
+        "e": 8.61
+      },
+      {
+        "w": "umumiy",
+        "s": 8.95,
+        "e": 9.31
+      },
+      {
+        "w": "sarlavhalar",
+        "s": 9.41,
+        "e": 10.17
+      },
+      {
+        "w": "va",
+        "s": 10.25,
+        "e": 10.33
+      },
+      {
+        "w": "yon",
+        "s": 10.77,
+        "e": 10.99
+      },
+      {
+        "w": "panellarni",
+        "s": 11.09,
+        "e": 11.79
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 12.03,
+        "e": 12.41
+      },
+      {
+        "w": "qoidalariga",
+        "s": 12.51,
+        "e": 13.05
+      },
+      {
+        "w": "zid",
+        "s": 13.15,
+        "e": 13.31
+      },
+      {
+        "w": "kelmagan",
+        "s": 13.37,
+        "e": 13.83
+      },
+      {
+        "w": "holda",
+        "s": 13.89,
+        "e": 14.19
+      },
+      {
+        "w": "to'g'ri",
+        "s": 14.55,
+        "e": 14.93
+      },
+      {
+        "w": "joylashtirishni",
+        "s": 14.97,
+        "e": 15.61
+      },
+      {
+        "w": "o'rganamiz.",
+        "s": 15.67,
+        "e": 16.15
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "intro",
+    "text": "Layout bir nechta sahifa umumiy tuzilmaga ega bo'lganda paydo bo'ladigan karkasdir.",
+    "show": "Layout bir nechta sahifa umumiy tuzilmaga ega bo'lganda paydo bo'ladigan karkasdir.",
+    "say": "Leyaut bir nechta sahifa umumiy tuzilmaga ega bo'lganda paydo bo'ladigan karkasdir.",
+    "a0": 17.47,
+    "a1": 23.2,
+    "words": [
+      {
+        "w": "Leyaut",
+        "s": 17.47,
+        "e": 18.01
+      },
+      {
+        "w": "bir",
+        "s": 18.27,
+        "e": 18.41
+      },
+      {
+        "w": "nechta",
+        "s": 18.49,
+        "e": 18.81
+      },
+      {
+        "w": "sahifa",
+        "s": 18.89,
+        "e": 19.37
+      },
+      {
+        "w": "umumiy",
+        "s": 19.61,
+        "e": 19.99
+      },
+      {
+        "w": "tuzilmaga",
+        "s": 20.07,
+        "e": 20.57
+      },
+      {
+        "w": "ega",
+        "s": 20.69,
+        "e": 20.87
+      },
+      {
+        "w": "bo'lganda",
+        "s": 20.91,
+        "e": 21.37
+      },
+      {
+        "w": "paydo",
+        "s": 21.55,
+        "e": 21.83
+      },
+      {
+        "w": "bo'ladigan",
+        "s": 21.91,
+        "e": 22.41
+      },
+      {
+        "w": "karkasdir.",
+        "s": 22.58,
+        "e": 23.2
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "shared_ui_layout_va_slot",
+    "text": "Agar layout faqat sof markup, CSS to'ri va tema almashtirish kabi UI mantiqidan iborat bo'lsa — u shared/ui/layout ichida yaratiladi.",
+    "show": "Agar layout faqat sof markup, CSS to'ri va tema almashtirish kabi UI mantiqidan iborat bo'lsa — u shared/ui/layout ichida yaratiladi.",
+    "say": "Agar leyaut faqat sof markap, Si-Es-Es to'ri va tema almashtirish kabi yu-ay mantiqidan iborat bo'lsa — u sherd/yu-ay/leyaut ichida yaratiladi.",
+    "a0": 24.12,
+    "a1": 34.94,
+    "words": [
+      {
+        "w": "Agar",
+        "s": 24.12,
+        "e": 24.4
+      },
+      {
+        "w": "leyaut",
+        "s": 24.6,
+        "e": 25.04
+      },
+      {
+        "w": "faqat",
+        "s": 25.14,
+        "e": 25.46
+      },
+      {
+        "w": "sof",
+        "s": 25.54,
+        "e": 25.78
+      },
+      {
+        "w": "markap,",
+        "s": 25.9,
+        "e": 26.4
+      },
+      {
+        "w": "Si-Es-Es",
+        "s": 26.72,
+        "e": 27.24
+      },
+      {
+        "w": "to'ri",
+        "s": 27.3,
+        "e": 27.56
+      },
+      {
+        "w": "va",
+        "s": 27.7,
+        "e": 27.78
+      },
+      {
+        "w": "tema",
+        "s": 28.16,
+        "e": 28.46
+      },
+      {
+        "w": "almashtirish",
+        "s": 28.54,
+        "e": 29.1
+      },
+      {
+        "w": "kabi",
+        "s": 29.14,
+        "e": 29.36
+      },
+      {
+        "w": "yu-ay",
+        "s": 29.74,
+        "e": 29.98
+      },
+      {
+        "w": "mantiqidan",
+        "s": 30.08,
+        "e": 30.62
+      },
+      {
+        "w": "iborat",
+        "s": 30.72,
+        "e": 31.04
+      },
+      {
+        "w": "bo'lsa",
+        "s": 31.08,
+        "e": 31.38
+      },
+      {
+        "w": "—",
+        "s": 31.38,
+        "e": 31.38
+      },
+      {
+        "w": "u",
+        "s": 31.8,
+        "e": 31.82
+      },
+      {
+        "w": "sherd/yu-ay/leyaut",
+        "s": 31.82,
+        "e": 34.08
+      },
+      {
+        "w": "ichida",
+        "s": 34.08,
+        "e": 34.34
+      },
+      {
+        "w": "yaratiladi.",
+        "s": 34.42,
+        "e": 34.94
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "shared_ui_layout_va_slot",
+    "text": "Bunday PageShell komponenti hech qanday biznes widget'larini bilmaydi, faqat slot yoki render props orqali joylarni taqdim etadi.",
+    "show": "Bunday PageShell komponenti hech qanday biznes widget'larini bilmaydi, faqat slot yoki render props orqali joylarni taqdim etadi.",
+    "say": "Bunday Peyj Shell komponenti hech qanday biznes vijet'larini bilmaydi, faqat slot yoki render props orqali joylarni taqdim etadi.",
+    "a0": 35.94,
+    "a1": 44.97,
+    "words": [
+      {
+        "w": "Bunday",
+        "s": 35.94,
+        "e": 36.36
+      },
+      {
+        "w": "Peyj",
+        "s": 36.62,
+        "e": 36.92
+      },
+      {
+        "w": "Shell",
+        "s": 37.02,
+        "e": 37.24
+      },
+      {
+        "w": "komponenti",
+        "s": 37.3,
+        "e": 37.97
+      },
+      {
+        "w": "hech",
+        "s": 38.19,
+        "e": 38.39
+      },
+      {
+        "w": "qanday",
+        "s": 38.45,
+        "e": 38.79
+      },
+      {
+        "w": "biznes",
+        "s": 38.91,
+        "e": 39.27
+      },
+      {
+        "w": "vijet'larini",
+        "s": 39.31,
+        "e": 39.85
+      },
+      {
+        "w": "bilmaydi,",
+        "s": 39.89,
+        "e": 40.31
+      },
+      {
+        "w": "faqat",
+        "s": 40.69,
+        "e": 40.97
+      },
+      {
+        "w": "slot",
+        "s": 41.33,
+        "e": 41.73
+      },
+      {
+        "w": "yoki",
+        "s": 41.77,
+        "e": 42.13
+      },
+      {
+        "w": "render",
+        "s": 42.45,
+        "e": 42.77
+      },
+      {
+        "w": "props",
+        "s": 42.85,
+        "e": 43.13
+      },
+      {
+        "w": "orqali",
+        "s": 43.21,
+        "e": 43.55
+      },
+      {
+        "w": "joylarni",
+        "s": 43.79,
+        "e": 44.29
+      },
+      {
+        "w": "taqdim",
+        "s": 44.35,
+        "e": 44.67
+      },
+      {
+        "w": "etadi.",
+        "s": 44.71,
+        "e": 44.97
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "teskari_import_xatosi",
+    "text": "FSD da eng ko'p uchraydigan qoidabuzarlik — shared layout ichiga widgets/header'ni to'g'ridan-to'g'ri import qilishdir.",
+    "show": "FSD da eng ko'p uchraydigan qoidabuzarlik — shared layout ichiga widgets/header'ni to'g'ridan-to'g'ri import qilishdir.",
+    "say": "Ef-es-di da eng ko'p uchraydigan qoidabuzarlik — sherd leyaut ichiga vijets/xeder'ni to'g'ridan-to'g'ri import qilishdir.",
+    "a0": 46.13,
+    "a1": 53.84,
+    "words": [
+      {
+        "w": "Ef-es-di",
+        "s": 46.13,
+        "e": 46.49
+      },
+      {
+        "w": "da",
+        "s": 46.55,
+        "e": 46.65
+      },
+      {
+        "w": "eng",
+        "s": 46.87,
+        "e": 47.05
+      },
+      {
+        "w": "ko'p",
+        "s": 47.09,
+        "e": 47.25
+      },
+      {
+        "w": "uchraydigan",
+        "s": 47.31,
+        "e": 47.85
+      },
+      {
+        "w": "qoidabuzarlik",
+        "s": 47.91,
+        "e": 48.71
+      },
+      {
+        "w": "—",
+        "s": 48.71,
+        "e": 48.71
+      },
+      {
+        "w": "sherd",
+        "s": 49.07,
+        "e": 49.45
+      },
+      {
+        "w": "leyaut",
+        "s": 49.61,
+        "e": 50.03
+      },
+      {
+        "w": "ichiga",
+        "s": 50.09,
+        "e": 50.37
+      },
+      {
+        "w": "vijets/xeder'ni",
+        "s": 50.37,
+        "e": 52.15
+      },
+      {
+        "w": "to'g'ridan-to'g'ri",
+        "s": 52.15,
+        "e": 53.04
+      },
+      {
+        "w": "import",
+        "s": 53.14,
+        "e": 53.44
+      },
+      {
+        "w": "qilishdir.",
+        "s": 53.48,
+        "e": 53.84
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "teskari_import_xatosi",
+    "text": "Bu shared qatlamidan yuqoriga noqonuniy bog'lanish yaratadi va Steiger linteri tomonidan qat'iy to'xtatiladi.",
+    "show": "Bu shared qatlamidan yuqoriga noqonuniy bog'lanish yaratadi va Steiger linteri tomonidan qat'iy to'xtatiladi.",
+    "say": "Bu sherd qatlamidan yuqoriga noqonuniy bog'lanish yaratadi va stayger linteri tomonidan qat'iy to'xtatiladi.",
+    "a0": 54.72,
+    "a1": 61.82,
+    "words": [
+      {
+        "w": "Bu",
+        "s": 54.72,
+        "e": 54.8
+      },
+      {
+        "w": "sherd",
+        "s": 55.16,
+        "e": 55.48
+      },
+      {
+        "w": "qatlamidan",
+        "s": 55.54,
+        "e": 56.08
+      },
+      {
+        "w": "yuqoriga",
+        "s": 56.26,
+        "e": 56.76
+      },
+      {
+        "w": "noqonuniy",
+        "s": 56.84,
+        "e": 57.5
+      },
+      {
+        "w": "bog'lanish",
+        "s": 57.56,
+        "e": 58.02
+      },
+      {
+        "w": "yaratadi",
+        "s": 58.04,
+        "e": 58.44
+      },
+      {
+        "w": "va",
+        "s": 58.8,
+        "e": 58.9
+      },
+      {
+        "w": "stayger",
+        "s": 59.16,
+        "e": 59.6
+      },
+      {
+        "w": "linteri",
+        "s": 59.68,
+        "e": 60.0
+      },
+      {
+        "w": "tomonidan",
+        "s": 60.08,
+        "e": 60.52
+      },
+      {
+        "w": "qat'iy",
+        "s": 60.74,
+        "e": 61.12
+      },
+      {
+        "w": "to'xtatiladi.",
+        "s": 61.22,
+        "e": 61.82
+      }
+    ]
+  },
+  {
+    "id": "L7",
+    "scene": "teskari_import_xatosi",
+    "text": "Shared hech qachon o'zidan yuqoridagi widget yoki sahifalarni bilishi mumkin emas.",
+    "show": "Shared hech qachon o'zidan yuqoridagi widget yoki sahifalarni bilishi mumkin emas.",
+    "say": "Sherd hech qachon o'zidan yuqoridagi vijet yoki sahifalarni bilishi mumkin emas.",
+    "a0": 62.74,
+    "a1": 67.59,
+    "words": [
+      {
+        "w": "Sherd",
+        "s": 62.74,
+        "e": 63.04
+      },
+      {
+        "w": "hech",
+        "s": 63.18,
+        "e": 63.4
+      },
+      {
+        "w": "qachon",
+        "s": 63.44,
+        "e": 63.72
+      },
+      {
+        "w": "o'zidan",
+        "s": 63.82,
+        "e": 64.14
+      },
+      {
+        "w": "yuqoridagi",
+        "s": 64.2,
+        "e": 64.76
+      },
+      {
+        "w": "vijet",
+        "s": 64.98,
+        "e": 65.3
+      },
+      {
+        "w": "yoki",
+        "s": 65.32,
+        "e": 65.58
+      },
+      {
+        "w": "sahifalarni",
+        "s": 65.66,
+        "e": 66.32
+      },
+      {
+        "w": "bilishi",
+        "s": 66.62,
+        "e": 66.94
+      },
+      {
+        "w": "mumkin",
+        "s": 66.98,
+        "e": 67.3
+      },
+      {
+        "w": "emas.",
+        "s": 67.34,
+        "e": 67.59
+      }
+    ]
+  },
+  {
+    "id": "L8",
+    "scene": "app_layouts_yechimi",
+    "text": "Xo'sh, ichida widget'lari bor to'liq layoutni qayerda yig'ish kerak? Eng ideal joy — app/layouts katalogidir.",
+    "show": "Xo'sh, ichida widget'lari bor to'liq layoutni qayerda yig'ish kerak? Eng ideal joy — app/layouts katalogidir.",
+    "say": "Xo'sh, ichida vijet'lari bor to'liq layoutni qayerda yig'ish kerak? Eng ideal joy — ep/layouts katalogidir.",
+    "a0": 68.51,
+    "a1": 76.47,
+    "words": [
+      {
+        "w": "Xo'sh,",
+        "s": 68.51,
+        "e": 68.87
+      },
+      {
+        "w": "ichida",
+        "s": 69.25,
+        "e": 69.49
+      },
+      {
+        "w": "vijet'lari",
+        "s": 69.57,
+        "e": 70.03
+      },
+      {
+        "w": "bor",
+        "s": 70.07,
+        "e": 70.25
+      },
+      {
+        "w": "to'liq",
+        "s": 70.39,
+        "e": 70.69
+      },
+      {
+        "w": "layoutni",
+        "s": 70.77,
+        "e": 71.31
+      },
+      {
+        "w": "qayerda",
+        "s": 71.45,
+        "e": 71.85
+      },
+      {
+        "w": "yig'ish",
+        "s": 71.91,
+        "e": 72.15
+      },
+      {
+        "w": "kerak?",
+        "s": 72.17,
+        "e": 72.43
+      },
+      {
+        "w": "Eng",
+        "s": 73.29,
+        "e": 73.45
+      },
+      {
+        "w": "ideal",
+        "s": 73.57,
+        "e": 73.91
+      },
+      {
+        "w": "joy",
+        "s": 73.99,
+        "e": 74.23
+      },
+      {
+        "w": "—",
+        "s": 74.23,
+        "e": 74.23
+      },
+      {
+        "w": "ep/layouts",
+        "s": 74.23,
+        "e": 75.85
+      },
+      {
+        "w": "katalogidir.",
+        "s": 75.85,
+        "e": 76.47
+      }
+    ]
+  },
+  {
+    "id": "L9",
+    "scene": "app_layouts_yechimi",
+    "text": "App qatlami eng yuqorida turgani sababli, u header, sidebar va PageShell'ni bemalol import qilib, bitta karkasga birlashtiradi.",
+    "show": "App qatlami eng yuqorida turgani sababli, u header, sidebar va PageShell'ni bemalol import qilib, bitta karkasga birlashtiradi.",
+    "say": "App qatlami eng yuqorida turgani sababli, u xeder, sidebar va Peyj Shell'ni bemalol import qilib, bitta karkasga birlashtiradi.",
+    "a0": 77.33,
+    "a1": 86.02,
+    "words": [
+      {
+        "w": "App",
+        "s": 77.33,
+        "e": 77.47
+      },
+      {
+        "w": "qatlami",
+        "s": 77.55,
+        "e": 77.97
+      },
+      {
+        "w": "eng",
+        "s": 78.23,
+        "e": 78.39
+      },
+      {
+        "w": "yuqorida",
+        "s": 78.45,
+        "e": 78.91
+      },
+      {
+        "w": "turgani",
+        "s": 78.97,
+        "e": 79.29
+      },
+      {
+        "w": "sababli,",
+        "s": 79.35,
+        "e": 79.73
+      },
+      {
+        "w": "u",
+        "s": 79.97,
+        "e": 79.99
+      },
+      {
+        "w": "xeder,",
+        "s": 80.41,
+        "e": 80.89
+      },
+      {
+        "w": "sidebar",
+        "s": 81.05,
+        "e": 81.63
+      },
+      {
+        "w": "va",
+        "s": 81.71,
+        "e": 81.79
+      },
+      {
+        "w": "Peyj",
+        "s": 82.19,
+        "e": 82.47
+      },
+      {
+        "w": "Shell'ni",
+        "s": 82.56,
+        "e": 82.94
+      },
+      {
+        "w": "bemalol",
+        "s": 83.16,
+        "e": 83.58
+      },
+      {
+        "w": "import",
+        "s": 83.7,
+        "e": 84.0
+      },
+      {
+        "w": "qilib,",
+        "s": 84.04,
+        "e": 84.26
+      },
+      {
+        "w": "bitta",
+        "s": 84.54,
+        "e": 84.86
+      },
+      {
+        "w": "karkasga",
+        "s": 84.92,
+        "e": 85.38
+      },
+      {
+        "w": "birlashtiradi.",
+        "s": 85.42,
+        "e": 86.02
+      }
+    ]
+  },
+  {
+    "id": "L10",
+    "scene": "app_layouts_yechimi",
+    "text": "So'ngra router konfiguratsiyasida MainLayout asosiy o'ram sifatida barcha sahifalarga qo'llanadi.",
+    "show": "So'ngra router konfiguratsiyasida MainLayout asosiy o'ram sifatida barcha sahifalarga qo'llanadi.",
+    "say": "So'ngra router konfiguratsiyasida Meyn Leyaut asosiy o'ram sifatida barcha sahifalarga qo'llanadi.",
+    "a0": 86.74,
+    "a1": 93.06,
+    "words": [
+      {
+        "w": "So'ngra",
+        "s": 86.74,
+        "e": 87.02
+      },
+      {
+        "w": "router",
+        "s": 87.42,
+        "e": 87.72
+      },
+      {
+        "w": "konfiguratsiyasida",
+        "s": 87.76,
+        "e": 88.66
+      },
+      {
+        "w": "Meyn",
+        "s": 88.94,
+        "e": 89.2
+      },
+      {
+        "w": "Leyaut",
+        "s": 89.28,
+        "e": 89.7
+      },
+      {
+        "w": "asosiy",
+        "s": 89.84,
+        "e": 90.3
+      },
+      {
+        "w": "o'ram",
+        "s": 90.4,
+        "e": 90.62
+      },
+      {
+        "w": "sifatida",
+        "s": 90.68,
+        "e": 91.06
+      },
+      {
+        "w": "barcha",
+        "s": 91.44,
+        "e": 91.78
+      },
+      {
+        "w": "sahifalarga",
+        "s": 91.84,
+        "e": 92.48
+      },
+      {
+        "w": "qo'llanadi.",
+        "s": 92.56,
+        "e": 93.06
+      }
+    ]
+  },
+  {
+    "id": "L11",
+    "scene": "layout_kerakmi",
+    "text": "Yangi loyihalarda eng birinchi beriladigan savol: layout umuman kerakmi?",
+    "show": "Yangi loyihalarda eng birinchi beriladigan savol: layout umuman kerakmi?",
+    "say": "Yangi loyihalarda eng birinchi beriladigan savol: leyaut umuman kerakmi?",
+    "a0": 94.26,
+    "a1": 99.33,
+    "words": [
+      {
+        "w": "Yangi",
+        "s": 94.26,
+        "e": 94.56
+      },
+      {
+        "w": "loyihalarda",
+        "s": 94.62,
+        "e": 95.22
+      },
+      {
+        "w": "eng",
+        "s": 95.54,
+        "e": 95.72
+      },
+      {
+        "w": "birinchi",
+        "s": 95.78,
+        "e": 96.12
+      },
+      {
+        "w": "beriladigan",
+        "s": 96.16,
+        "e": 96.72
+      },
+      {
+        "w": "savol:",
+        "s": 96.78,
+        "e": 97.1
+      },
+      {
+        "w": "leyaut",
+        "s": 97.69,
+        "e": 98.15
+      },
+      {
+        "w": "umuman",
+        "s": 98.39,
+        "e": 98.83
+      },
+      {
+        "w": "kerakmi?",
+        "s": 98.89,
+        "e": 99.33
+      }
+    ]
+  },
+  {
+    "id": "L12",
+    "scene": "layout_kerakmi",
+    "text": "Agar karkas atigi ikki-uch qatordan iborat bo'lsa, uni har bir sahifada takrorlash sun'iy abstraksiyadan ancha arzon va qulayroqdir.",
+    "show": "Agar karkas atigi ikki-uch qatordan iborat bo'lsa, uni har bir sahifada takrorlash sun'iy abstraksiyadan ancha arzon va qulayroqdir.",
+    "say": "Agar karkas atigi ikki-uch qatordan iborat bo'lsa, uni har bir sahifada takrorlash sun'iy abstraksiyadan ancha arzon va qulayroqdir.",
+    "a0": 100.09,
+    "a1": 108.87,
+    "words": [
+      {
+        "w": "Agar",
+        "s": 100.09,
+        "e": 100.33
+      },
+      {
+        "w": "karkas",
+        "s": 100.39,
+        "e": 100.75
+      },
+      {
+        "w": "atigi",
+        "s": 100.89,
+        "e": 101.19
+      },
+      {
+        "w": "ikki-uch",
+        "s": 101.57,
+        "e": 102.07
+      },
+      {
+        "w": "qatordan",
+        "s": 102.15,
+        "e": 102.59
+      },
+      {
+        "w": "iborat",
+        "s": 102.67,
+        "e": 102.99
+      },
+      {
+        "w": "bo'lsa,",
+        "s": 103.01,
+        "e": 103.31
+      },
+      {
+        "w": "uni",
+        "s": 103.45,
+        "e": 103.59
+      },
+      {
+        "w": "har",
+        "s": 103.95,
+        "e": 104.15
+      },
+      {
+        "w": "bir",
+        "s": 104.23,
+        "e": 104.33
+      },
+      {
+        "w": "sahifada",
+        "s": 104.41,
+        "e": 104.87
+      },
+      {
+        "w": "takrorlash",
+        "s": 104.93,
+        "e": 105.51
+      },
+      {
+        "w": "sun'iy",
+        "s": 105.71,
+        "e": 106.07
+      },
+      {
+        "w": "abstraksiyadan",
+        "s": 106.21,
+        "e": 106.93
+      },
+      {
+        "w": "ancha",
+        "s": 107.15,
+        "e": 107.47
+      },
+      {
+        "w": "arzon",
+        "s": 107.61,
+        "e": 108.01
+      },
+      {
+        "w": "va",
+        "s": 108.09,
+        "e": 108.15
+      },
+      {
+        "w": "qulayroqdir.",
+        "s": 108.27,
+        "e": 108.87
+      }
+    ]
+  },
+  {
+    "id": "L13",
+    "scene": "layout_kerakmi",
+    "text": "Nusxa ko'chirish sahifalarning bir-biriga bog'lanib qolmasligini ta'minlaydi.",
+    "show": "Nusxa ko'chirish sahifalarning bir-biriga bog'lanib qolmasligini ta'minlaydi.",
+    "say": "Nusxa ko'chirish sahifalarning bir-biriga bog'lanib qolmasligini ta'minlaydi.",
+    "a0": 109.67,
+    "a1": 113.52,
+    "words": [
+      {
+        "w": "Nusxa",
+        "s": 109.67,
+        "e": 109.93
+      },
+      {
+        "w": "ko'chirish",
+        "s": 109.99,
+        "e": 110.43
+      },
+      {
+        "w": "sahifalarning",
+        "s": 110.55,
+        "e": 111.23
+      },
+      {
+        "w": "bir-biriga",
+        "s": 111.29,
+        "e": 111.73
+      },
+      {
+        "w": "bog'lanib",
+        "s": 111.81,
+        "e": 112.21
+      },
+      {
+        "w": "qolmasligini",
+        "s": 112.27,
+        "e": 112.88
+      },
+      {
+        "w": "ta'minlaydi.",
+        "s": 112.94,
+        "e": 113.52
+      }
+    ]
+  },
+  {
+    "id": "L14",
+    "scene": "tipik_xatolar",
+    "text": "Tipik xatolar: shared layout'ga widget import qilish, layout ichida sahifaga xos ma'lumotlarni yuklash yoki widgets ichida sahifalarni import qilish.",
+    "show": "Tipik xatolar: shared layout'ga widget import qilish, layout ichida sahifaga xos ma'lumotlarni yuklash yoki widgets ichida sahifalarni import qilish.",
+    "say": "Tipik xatolar: sherd leyaut'ga vijet import qilish, leyaut ichida sahifaga xos ma'lumotlarni yuklash yoki vijets ichida sahifalarni import qilish.",
+    "a0": 114.52,
+    "a1": 124.76,
+    "words": [
+      {
+        "w": "Tipik",
+        "s": 114.52,
+        "e": 114.84
+      },
+      {
+        "w": "xatolar:",
+        "s": 114.9,
+        "e": 115.4
+      },
+      {
+        "w": "sherd",
+        "s": 115.78,
+        "e": 116.12
+      },
+      {
+        "w": "leyaut'ga",
+        "s": 116.22,
+        "e": 116.78
+      },
+      {
+        "w": "vijet",
+        "s": 117.06,
+        "e": 117.36
+      },
+      {
+        "w": "import",
+        "s": 117.48,
+        "e": 117.76
+      },
+      {
+        "w": "qilish,",
+        "s": 117.82,
+        "e": 118.08
+      },
+      {
+        "w": "leyaut",
+        "s": 118.7,
+        "e": 119.08
+      },
+      {
+        "w": "ichida",
+        "s": 119.16,
+        "e": 119.42
+      },
+      {
+        "w": "sahifaga",
+        "s": 119.62,
+        "e": 120.1
+      },
+      {
+        "w": "xos",
+        "s": 120.16,
+        "e": 120.36
+      },
+      {
+        "w": "ma'lumotlarni",
+        "s": 120.44,
+        "e": 121.08
+      },
+      {
+        "w": "yuklash",
+        "s": 121.14,
+        "e": 121.56
+      },
+      {
+        "w": "yoki",
+        "s": 121.82,
+        "e": 122.06
+      },
+      {
+        "w": "vijets",
+        "s": 122.46,
+        "e": 122.82
+      },
+      {
+        "w": "ichida",
+        "s": 122.9,
+        "e": 123.18
+      },
+      {
+        "w": "sahifalarni",
+        "s": 123.36,
+        "e": 124.0
+      },
+      {
+        "w": "import",
+        "s": 124.18,
+        "e": 124.46
+      },
+      {
+        "w": "qilish.",
+        "s": 124.52,
+        "e": 124.76
+      }
+    ]
+  },
+  {
+    "id": "L15",
+    "scene": "tipik_xatolar",
+    "text": "Router orqali sahifalarni Outlet bilan ulash har doim toza va xavfsiz yo'ldir.",
+    "show": "Router orqali sahifalarni Outlet bilan ulash har doim toza va xavfsiz yo'ldir.",
+    "say": "Router orqali sahifalarni Autlet bilan ulash har doim toza va xavfsiz yo'ldir.",
+    "a0": 125.68,
+    "a1": 130.85,
+    "words": [
+      {
+        "w": "Router",
+        "s": 125.68,
+        "e": 126.0
+      },
+      {
+        "w": "orqali",
+        "s": 126.1,
+        "e": 126.44
+      },
+      {
+        "w": "sahifalarni",
+        "s": 126.62,
+        "e": 127.29
+      },
+      {
+        "w": "Autlet",
+        "s": 127.53,
+        "e": 127.95
+      },
+      {
+        "w": "bilan",
+        "s": 127.99,
+        "e": 128.19
+      },
+      {
+        "w": "ulash",
+        "s": 128.27,
+        "e": 128.55
+      },
+      {
+        "w": "har",
+        "s": 128.81,
+        "e": 128.97
+      },
+      {
+        "w": "doim",
+        "s": 129.01,
+        "e": 129.27
+      },
+      {
+        "w": "toza",
+        "s": 129.37,
+        "e": 129.69
+      },
+      {
+        "w": "va",
+        "s": 129.93,
+        "e": 129.99
+      },
+      {
+        "w": "xavfsiz",
+        "s": 130.09,
+        "e": 130.51
+      },
+      {
+        "w": "yo'ldir.",
+        "s": 130.55,
+        "e": 130.85
+      }
+    ]
+  },
+  {
+    "id": "L16",
+    "scene": "xulosa",
+    "text": "Xulosa: karkasni shared/ui/layout da, yig'ilganini app/layouts da saqlang va teskari import qilmang. Keyingi bobda Assetlar, stillar va i18n arxitekturasini o'rganamiz. Rahmat!",
+    "show": "Xulosa: karkasni shared/ui/layout da, yig'ilganini app/layouts da saqlang va teskari import qilmang. Keyingi bobda Assetlar, stillar va i18n arxitekturasini o'rganamiz. Rahmat!",
+    "say": "Xulosa: karkasni sherd/yu-ay/leyaut da, yig'ilganini ep/layouts da saqlang va teskari import qilmang. Keyingi bobda Assetlar, stillar va ay-eytin-en arxitekturasini o'rganamiz. Rahmat!",
+    "a0": 131.57,
+    "a1": 147.02,
+    "words": [
+      {
+        "w": "Xulosa:",
+        "s": 131.57,
+        "e": 131.95
+      },
+      {
+        "w": "karkasni",
+        "s": 132.41,
+        "e": 132.97
+      },
+      {
+        "w": "sherd/yu-ay/leyaut",
+        "s": 132.97,
+        "e": 135.09
+      },
+      {
+        "w": "da,",
+        "s": 135.09,
+        "e": 135.19
+      },
+      {
+        "w": "yig'ilganini",
+        "s": 135.63,
+        "e": 136.27
+      },
+      {
+        "w": "ep/layouts",
+        "s": 136.27,
+        "e": 137.91
+      },
+      {
+        "w": "da",
+        "s": 137.91,
+        "e": 137.97
+      },
+      {
+        "w": "saqlang",
+        "s": 138.03,
+        "e": 138.43
+      },
+      {
+        "w": "va",
+        "s": 138.75,
+        "e": 138.83
+      },
+      {
+        "w": "teskari",
+        "s": 139.03,
+        "e": 139.45
+      },
+      {
+        "w": "import",
+        "s": 139.55,
+        "e": 139.83
+      },
+      {
+        "w": "qilmang.",
+        "s": 139.89,
+        "e": 140.23
+      },
+      {
+        "w": "Keyingi",
+        "s": 141.02,
+        "e": 141.34
+      },
+      {
+        "w": "bobda",
+        "s": 141.36,
+        "e": 141.66
+      },
+      {
+        "w": "Assetlar,",
+        "s": 142.04,
+        "e": 142.7
+      },
+      {
+        "w": "stillar",
+        "s": 142.9,
+        "e": 143.36
+      },
+      {
+        "w": "va",
+        "s": 143.42,
+        "e": 143.5
+      },
+      {
+        "w": "ay-eytin-en",
+        "s": 143.92,
+        "e": 144.86
+      },
+      {
+        "w": "arxitekturasini",
+        "s": 144.98,
+        "e": 145.78
+      },
+      {
+        "w": "o'rganamiz.",
+        "s": 145.84,
+        "e": 146.3
+      },
+      {
+        "w": "Rahmat!",
+        "s": 146.7,
+        "e": 147.02
+      }
+    ]
+  }
+]
