@@ -1,0 +1,81 @@
+WEBVTT
+
+1
+00:01.420 --> 00:11.200
+Salom! Bu FSD qo'llanmasining o'ttiz to'qqizinchi bobi — dasturchilar
+tomonidan eng ko'p beriladigan qiyin savollar va ularning rasmiy yechimlari.
+
+2
+00:12.530 --> 00:20.840
+Yangi loyiha boshlashda yoki arxitekturani tekshirishda ikkilanmaslik
+uchun barcha muhim savollarni beshta asosiy guruhga ajratamiz.
+
+3
+00:22.790 --> 00:30.890
+Birinchi guruh — asoslar: barcha qatlamlar shartmi? Yo'q,
+ko'pincha faqat app, pages va shared yetarli bo'ladi.
+
+4
+00:31.220 --> 00:39.530
+processes qatlami eskirgan deb topilgan, o'zboshimchalik bilan
+core yoki modules kabi yangi qatlamlar ochish esa taqiqlanadi.
+
+5
+00:42.680 --> 00:51.040
+Ikkinchi guruh — qatlam tanlash: fe'l harakatlar features
+qatlamiga, ot biznes modellari entities qatlamiga joylashadi.
+
+6
+00:51.410 --> 00:59.930
+Bitta sahifada ishlatiladigan komponent sahifa ichida qoladi,
+tokenlar esa sahifada emas, shared auth yoki api da saqlanadi.
+
+7
+01:00.320 --> 01:07.790
+Agar loyihada hozircha entities bo'lmasa — bu xato emas,
+FSD entity bo'lmagan holatda ham to'liq ishlayveradi.
+
+8
+01:11.040 --> 01:19.880
+Uchinchi guruh — chegaralar: bir feature boshqa feature bilan bevosita
+bog'lanmaydi, faqat yuqori qatlamda slot va prop bilan birlashadi.
+
+9
+01:20.230 --> 01:28.180
+Ikki entity bir-biriga muhtoj bo'lsa, @x cross-import standarti
+qo'llaniladi yoki ular bitta umumiy slice ga birlashtiriladi.
+
+10
+01:31.490 --> 01:40.470
+To'rtinchi guruh — asboblar: Stayger rasmiy linter bo'lib, importlarni
+tahlil qilish uchun tsconfig dagi paths ga to'g'ri bog'lanishi shart.
+
+11
+01:40.860 --> 01:49.210
+Barrel fayllar katta loyihalarda sekinlashsa, shared da segment
+emas, balki komponent darajasidagi index fayllaridan foydalaniladi.
+
+12
+01:52.410 --> 02:03.120
+Beshinchi guruh — freymvorklar: Next.js da to'qnashuvni oldini olish
+uchun _app va _pages prefiksi hamda ildizda re-eksport ishlatiladi.
+
+13
+02:03.550 --> 02:11.790
+Vue va Pinia da stores yoki composables degan papka ochilmaydi,
+ularning o'rniga slice ichida model segmenti qo'llaniladi.
+
+14
+02:15.020 --> 02:23.700
+Xulosa: FSD qoidalari qotib qolgan dogma emas, balki jamoaviy
+barqarorlik va mustaqil rivojlanish uchun aniq kelishuvdir.
+
+15
+02:24.010 --> 02:30.440
+Keyingi qirqinchi bobda FSD qo'llanmasining yakuniy
+konspekti va to'liq shpargalkasini jamlaymiz.
+
+16
+02:30.650 --> 02:36.510
+E'tiboringiz uchun rahmat, savollarga to'g'ri
+arxitektura bilan javob berishda davom eting!
