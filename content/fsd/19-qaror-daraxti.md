@@ -4,6 +4,14 @@
 
 ## Qisqacha
 
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/fsd/19-qaror-daraxti.jpg" src="/video/fsd/19-qaror-daraxti.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/fsd/19-qaror-daraxti.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/fsd/19-qaror-daraxti.uz.vtt">
+</video>
+<figcaption>Bob videoda: qaror daraxti — yangi kodni qaysi qatlamga qo'yish algoritmi, ProductRating evolyutsiyasi va Steiger nazorati.</figcaption>
+</figure>
+
 FSD bilan ishlashdagi eng ko'p savol: **"bu fayl qayerga boradi?"** Bu bob — bitta diagramma va 30 ta tipik holat uchun tayyor javob. Asosiy tamoyil: **eng lokal joydan boshlang**, qayta ishlatish paydo bo'lgandagina pastga tushiring.
 
 ## Qoida: diagramma
