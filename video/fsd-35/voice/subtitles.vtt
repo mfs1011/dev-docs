@@ -1,0 +1,81 @@
+WEBVTT
+
+1
+00:01.420 --> 00:10.780
+Salom! Bu FSD qo'llanmasining o'ttiz beshinchi bobi — FSD arxitekturasida
+unit, komponent va integratsion testlarni to'g'ri tashkil qilish.
+
+2
+00:11.970 --> 00:19.360
+Asosiy tamoyil: test har doim o'zi tekshiradigan kod yonida
+turishi kerak; slice ko'chsa, testlar ham u bilan birga ko'chadi.
+
+3
+00:21.350 --> 00:28.410
+Sof biznes funksiyalari lib papkasida format-prays nuqta
+test nuqta te-es kabi birlik testlar bilan qamrab olinadi.
+
+4
+00:28.700 --> 00:35.650
+Komponent testlari bevosita komponent yonida, sahifa
+integratsiyasi esa slice ichidagi test papkasida saqlanadi.
+
+5
+00:36.000 --> 00:43.400
+Butun tizimni tekshiruvchi Playwright E2E testlari esa
+src dan tashqarida, ildizdagi e2e papkasida yashaydi.
+
+6
+00:46.610 --> 00:54.880
+API soxtalari va MSW serveri uchun shared testing alohida
+segmenti ochiladi va public API orqali eksport qilinadi.
+
+7
+00:55.030 --> 01:03.010
+Diqqat: shared api mocks yoki fixtures deb nomlash qat'iyan
+taqiqlanadi, chunki Steiger bu nomlarni rad etadi.
+
+8
+01:06.160 --> 01:12.910
+Stayger test fayllarini oddiy dastur kodi kabi to'liq tahlil
+qiladi va qatlamlar chegarasini qat'iy nazorat qiladi.
+
+9
+01:13.220 --> 01:20.560
+Bir slice testi boshqa slicening ichki fayliga kirsa yoki
+boshqa sahifani import qilsa, linter darhol xatolik chiqaradi.
+
+10
+01:23.510 --> 01:30.600
+Komponent testida server shared testing dan public API
+orqali, komponent esa nisbiy yo'l bilan import qilinadi.
+
+11
+01:31.010 --> 01:38.530
+Vitest va Testing Library yordamida tugma bosilganda soxta
+tarmoq so'rovi yuborilishi va holat yangilanishi tekshiriladi.
+
+12
+01:41.460 --> 01:49.110
+Tipik xatolar — barcha testlarni bitta global tests papkasiga
+to'plash va testlar ichida public API ni chetlab o'tishdir.
+
+13
+01:49.420 --> 01:56.620
+Shuningdek, faqat E2E testlariga suyanib, tezkor va arzon
+unit hamda komponent testlariga e'tibor bermaslik xatodir.
+
+14
+01:59.610 --> 02:07.180
+Xulosa: To'g'ri izolyatsiya qilingan FSD slicelari testlarni
+barqaror, oson va ishonchli yozish imkonini beradi.
+
+15
+02:07.370 --> 02:14.090
+Keyingi o'ttiz oltinchi bobda mavjud loyihalarni FSD ga
+xavfsiz va bosqichma-bosqich migratsiya qilishni ko'ramiz.
+
+16
+02:14.260 --> 02:18.010
+E'tiboringiz uchun rahmat, sifatli
+testlar yozishda davom eting!

@@ -4,6 +4,14 @@
 
 ## Qisqacha
 
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/fsd/35-testlash.jpg" src="/video/fsd/35-testlash.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/fsd/35-testlash.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/fsd/35-testlash.uz.vtt">
+</video>
+<figcaption>Bob videoda: FSD da testlash — testlarni kod yonida joylashtirish (co-location), shared/testing MSW serveri, Vitest va Steiger tekshiruvi.</figcaption>
+</figure>
+
 Rasmiy FSD hujjatida testlar uchun alohida qoida yo'q — faqat slice'lar izolyatsiyasi ularni mustaqil test qilishga imkon berishi aytiladi. Bu bobdagi joylashuv qoidalari — amaliy tavsiya, lekin har biri Steiger va Vitest bilan real loyihada sinab ko'rilgan. Asosiy g'oya: **test — u tekshiradigan kod yonida**. Slice o'z testlari bilan birga ko'chadi, o'chiriladi va o'zgaradi.
 
 ## Qoida
