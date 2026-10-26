@@ -1,0 +1,1468 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Salom! Bu FSD qo'llanmasining yigirma yettinchi bobi — React va Vite uchun to'liq ishlab chiqarish shabloni. Bugun React 19, Vite, TanStack Query va React Router asosida Steiger linteridan to'liq o'tuvchi FSD loyihasini noldan yig'amiz.",
+    "show": "Salom! Bu FSD qo'llanmasining yigirma yettinchi bobi — React va Vite uchun to'liq ishlab chiqarish shabloni. Bugun React 19, Vite, TanStack Query va React Router asosida Steiger linteridan to'liq o'tuvchi FSD loyihasini noldan yig'amiz.",
+    "say": "Salom! Bu Ef-es-di qo'llanmasining yigirma yettinchi bobi — React va Vite uchun to'liq ishlab chiqarish shabloni. Bugun React 19, Vite, Ten-stek kveri va React Router asosida stayger linteridan to'liq o'tuvchi Ef-es-di loyihasini noldan yig'amiz.",
+    "a0": 0.28,
+    "a1": 19.09,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.28,
+        "e": 0.62
+      },
+      {
+        "w": "Bu",
+        "s": 1.36,
+        "e": 1.44
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 1.72,
+        "e": 2.18
+      },
+      {
+        "w": "qo'llanmasining",
+        "s": 2.32,
+        "e": 3.12
+      },
+      {
+        "w": "yigirma",
+        "s": 3.28,
+        "e": 3.66
+      },
+      {
+        "w": "yettinchi",
+        "s": 3.76,
+        "e": 4.24
+      },
+      {
+        "w": "bobi",
+        "s": 4.3,
+        "e": 4.54
+      },
+      {
+        "w": "—",
+        "s": 4.54,
+        "e": 4.54
+      },
+      {
+        "w": "React",
+        "s": 5.32,
+        "e": 5.68
+      },
+      {
+        "w": "va",
+        "s": 5.76,
+        "e": 5.84
+      },
+      {
+        "w": "Vite",
+        "s": 6.12,
+        "e": 6.36
+      },
+      {
+        "w": "uchun",
+        "s": 6.42,
+        "e": 6.64
+      },
+      {
+        "w": "to'liq",
+        "s": 6.72,
+        "e": 7.0
+      },
+      {
+        "w": "ishlab",
+        "s": 7.1,
+        "e": 7.36
+      },
+      {
+        "w": "chiqarish",
+        "s": 7.4,
+        "e": 7.77
+      },
+      {
+        "w": "shabloni.",
+        "s": 7.81,
+        "e": 8.29
+      },
+      {
+        "w": "Bugun",
+        "s": 9.33,
+        "e": 9.59
+      },
+      {
+        "w": "React",
+        "s": 10.01,
+        "e": 10.29
+      },
+      {
+        "w": "19,",
+        "s": 10.29,
+        "e": 10.29
+      },
+      {
+        "w": "Vite,",
+        "s": 11.29,
+        "e": 11.63
+      },
+      {
+        "w": "Ten-stek",
+        "s": 11.85,
+        "e": 12.33
+      },
+      {
+        "w": "kveri",
+        "s": 12.39,
+        "e": 12.77
+      },
+      {
+        "w": "va",
+        "s": 12.97,
+        "e": 13.07
+      },
+      {
+        "w": "React",
+        "s": 13.35,
+        "e": 13.65
+      },
+      {
+        "w": "Router",
+        "s": 13.71,
+        "e": 14.01
+      },
+      {
+        "w": "asosida",
+        "s": 14.09,
+        "e": 14.55
+      },
+      {
+        "w": "stayger",
+        "s": 14.95,
+        "e": 15.39
+      },
+      {
+        "w": "linteridan",
+        "s": 15.49,
+        "e": 15.99
+      },
+      {
+        "w": "to'liq",
+        "s": 16.13,
+        "e": 16.45
+      },
+      {
+        "w": "o'tuvchi",
+        "s": 16.53,
+        "e": 16.89
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 17.01,
+        "e": 17.47
+      },
+      {
+        "w": "loyihasini",
+        "s": 17.49,
+        "e": 18.03
+      },
+      {
+        "w": "noldan",
+        "s": 18.27,
+        "e": 18.67
+      },
+      {
+        "w": "yig'amiz.",
+        "s": 18.73,
+        "e": 19.09
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "intro",
+    "text": "Ushbu shablon 2026-yil talablariga mos keluvchi zamonaviy instrumentlar bilan to'liq tekshirib chiqilgan.",
+    "show": "Ushbu shablon 2026-yil talablariga mos keluvchi zamonaviy instrumentlar bilan to'liq tekshirib chiqilgan.",
+    "say": "Ushbu shablon 2026-yil talablariga mos keluvchi zamonaviy instrumentlar bilan to'liq tekshirib chiqilgan.",
+    "a0": 20.01,
+    "a1": 26.4,
+    "words": [
+      {
+        "w": "Ushbu",
+        "s": 20.01,
+        "e": 20.21
+      },
+      {
+        "w": "shablon",
+        "s": 20.27,
+        "e": 20.63
+      },
+      {
+        "w": "2026-yil",
+        "s": 22.03,
+        "e": 22.13
+      },
+      {
+        "w": "talablariga",
+        "s": 22.17,
+        "e": 22.72
+      },
+      {
+        "w": "mos",
+        "s": 22.8,
+        "e": 23.02
+      },
+      {
+        "w": "keluvchi",
+        "s": 23.06,
+        "e": 23.46
+      },
+      {
+        "w": "zamonaviy",
+        "s": 23.6,
+        "e": 24.18
+      },
+      {
+        "w": "instrumentlar",
+        "s": 24.3,
+        "e": 24.92
+      },
+      {
+        "w": "bilan",
+        "s": 24.96,
+        "e": 25.16
+      },
+      {
+        "w": "to'liq",
+        "s": 25.28,
+        "e": 25.58
+      },
+      {
+        "w": "tekshirib",
+        "s": 25.66,
+        "e": 26.02
+      },
+      {
+        "w": "chiqilgan.",
+        "s": 26.04,
+        "e": 26.4
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "yaratish_va_sozlash",
+    "text": "Birinchi qadam — create-vite yordamida react-ts shablonini yuklab, standart fayllarni FSD qatlamlariga almashtirishdir.",
+    "show": "Birinchi qadam — create-vite yordamida react-ts shablonini yuklab, standart fayllarni FSD qatlamlariga almashtirishdir.",
+    "say": "Birinchi qadam — krieyt-vayt yordamida riakt-te-es shablonini yuklab, standart fayllarni Ef-es-di qatlamlariga almashtirishdir.",
+    "a0": 27.46,
+    "a1": 34.76,
+    "words": [
+      {
+        "w": "Birinchi",
+        "s": 27.46,
+        "e": 27.74
+      },
+      {
+        "w": "qadam",
+        "s": 27.78,
+        "e": 28.04
+      },
+      {
+        "w": "—",
+        "s": 28.04,
+        "e": 28.04
+      },
+      {
+        "w": "krieyt-vayt",
+        "s": 28.38,
+        "e": 28.94
+      },
+      {
+        "w": "yordamida",
+        "s": 29.0,
+        "e": 29.5
+      },
+      {
+        "w": "riakt-te-es",
+        "s": 29.72,
+        "e": 30.52
+      },
+      {
+        "w": "shablonini",
+        "s": 30.58,
+        "e": 31.1
+      },
+      {
+        "w": "yuklab,",
+        "s": 31.18,
+        "e": 31.56
+      },
+      {
+        "w": "standart",
+        "s": 31.84,
+        "e": 32.26
+      },
+      {
+        "w": "fayllarni",
+        "s": 32.3,
+        "e": 32.8
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 32.92,
+        "e": 33.3
+      },
+      {
+        "w": "qatlamlariga",
+        "s": 33.38,
+        "e": 33.96
+      },
+      {
+        "w": "almashtirishdir.",
+        "s": 34.1,
+        "e": 34.76
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "yaratish_va_sozlash",
+    "text": "Boshlang'ich index nuqta html faylida skript yo'li to'g'ridan-to'g'ri src app entrypoint main nuqta te-iks ga qaratiladi.",
+    "show": "Boshlang'ich index nuqta html faylida skript yo'li to'g'ridan-to'g'ri src app entrypoint main nuqta te-iks ga qaratiladi.",
+    "say": "Boshlang'ich index nuqta html faylida skript yo'li to'g'ridan-to'g'ri src ep entrypoint meyn nuqta te-iks ga qaratiladi.",
+    "a0": 35.58,
+    "a1": 44.05,
+    "words": [
+      {
+        "w": "Boshlang'ich",
+        "s": 35.58,
+        "e": 36.14
+      },
+      {
+        "w": "index",
+        "s": 36.3,
+        "e": 36.58
+      },
+      {
+        "w": "nuqta",
+        "s": 36.68,
+        "e": 36.96
+      },
+      {
+        "w": "html",
+        "s": 37.24,
+        "e": 37.67
+      },
+      {
+        "w": "faylida",
+        "s": 37.73,
+        "e": 38.13
+      },
+      {
+        "w": "skript",
+        "s": 38.25,
+        "e": 38.55
+      },
+      {
+        "w": "yo'li",
+        "s": 38.59,
+        "e": 38.81
+      },
+      {
+        "w": "to'g'ridan-to'g'ri",
+        "s": 38.89,
+        "e": 39.61
+      },
+      {
+        "w": "src",
+        "s": 40.15,
+        "e": 40.41
+      },
+      {
+        "w": "ep",
+        "s": 40.79,
+        "e": 40.95
+      },
+      {
+        "w": "entrypoint",
+        "s": 41.13,
+        "e": 41.77
+      },
+      {
+        "w": "meyn",
+        "s": 41.97,
+        "e": 42.19
+      },
+      {
+        "w": "nuqta",
+        "s": 42.25,
+        "e": 42.53
+      },
+      {
+        "w": "te-iks",
+        "s": 42.67,
+        "e": 43.39
+      },
+      {
+        "w": "ga",
+        "s": 43.45,
+        "e": 43.51
+      },
+      {
+        "w": "qaratiladi.",
+        "s": 43.57,
+        "e": 44.05
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "yaratish_va_sozlash",
+    "text": "Shuningdek, vite konfig va te-es-konfig fayllarida et belgisi src katalogiga alias qilib ulanadi.",
+    "show": "Shuningdek, vite konfig va te-es-konfig fayllarida et belgisi src katalogiga alias qilib ulanadi.",
+    "say": "Shuningdek, vayt konfig va te-es konfig fayllarida et belgisi src katalogiga alias qilib ulanadi.",
+    "a0": 44.73,
+    "a1": 51.17,
+    "words": [
+      {
+        "w": "Shuningdek,",
+        "s": 44.73,
+        "e": 45.15
+      },
+      {
+        "w": "vayt",
+        "s": 45.37,
+        "e": 45.59
+      },
+      {
+        "w": "konfig",
+        "s": 45.69,
+        "e": 46.09
+      },
+      {
+        "w": "va",
+        "s": 46.17,
+        "e": 46.25
+      },
+      {
+        "w": "te-es",
+        "s": 46.45,
+        "e": 46.73
+      },
+      {
+        "w": "konfig",
+        "s": 46.79,
+        "e": 47.11
+      },
+      {
+        "w": "fayllarida",
+        "s": 47.15,
+        "e": 47.67
+      },
+      {
+        "w": "et",
+        "s": 48.09,
+        "e": 48.21
+      },
+      {
+        "w": "belgisi",
+        "s": 48.27,
+        "e": 48.71
+      },
+      {
+        "w": "src",
+        "s": 49.03,
+        "e": 49.25
+      },
+      {
+        "w": "katalogiga",
+        "s": 49.39,
+        "e": 49.97
+      },
+      {
+        "w": "alias",
+        "s": 50.15,
+        "e": 50.49
+      },
+      {
+        "w": "qilib",
+        "s": 50.53,
+        "e": 50.71
+      },
+      {
+        "w": "ulanadi.",
+        "s": 50.79,
+        "e": 51.17
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "steiger_linteri",
+    "text": "Loyiha intizomini saqlash uchun steiger konfig faylida rasmiy FSD plagini ulanadi.",
+    "show": "Loyiha intizomini saqlash uchun steiger konfig faylida rasmiy FSD plagini ulanadi.",
+    "say": "Loyiha intizomini saqlash uchun stayger konfig faylida rasmiy Ef-es-di plagini ulanadi.",
+    "a0": 52.25,
+    "a1": 57.0,
+    "words": [
+      {
+        "w": "Loyiha",
+        "s": 52.25,
+        "e": 52.54
+      },
+      {
+        "w": "intizomini",
+        "s": 52.6,
+        "e": 53.08
+      },
+      {
+        "w": "saqlash",
+        "s": 53.12,
+        "e": 53.46
+      },
+      {
+        "w": "uchun",
+        "s": 53.5,
+        "e": 53.7
+      },
+      {
+        "w": "stayger",
+        "s": 53.8,
+        "e": 54.16
+      },
+      {
+        "w": "konfig",
+        "s": 54.24,
+        "e": 54.58
+      },
+      {
+        "w": "faylida",
+        "s": 54.62,
+        "e": 55.0
+      },
+      {
+        "w": "rasmiy",
+        "s": 55.1,
+        "e": 55.44
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 55.6,
+        "e": 55.98
+      },
+      {
+        "w": "plagini",
+        "s": 56.06,
+        "e": 56.48
+      },
+      {
+        "w": "ulanadi.",
+        "s": 56.58,
+        "e": 57.0
+      }
+    ]
+  },
+  {
+    "id": "L7",
+    "scene": "steiger_linteri",
+    "text": "App qatlamidagi maxsus provayderlar segmenti uchun esa segments-by-purpose qoidasiga istisno beriladi.",
+    "show": "App qatlamidagi maxsus provayderlar segmenti uchun esa segments-by-purpose qoidasiga istisno beriladi.",
+    "say": "App qatlamidagi maxsus provayderlar segmenti uchun esa segments bay porpos qoidasiga istisno beriladi.",
+    "a0": 57.7,
+    "a1": 63.5,
+    "words": [
+      {
+        "w": "App",
+        "s": 57.7,
+        "e": 57.8
+      },
+      {
+        "w": "qatlamidagi",
+        "s": 57.86,
+        "e": 58.44
+      },
+      {
+        "w": "maxsus",
+        "s": 58.5,
+        "e": 58.84
+      },
+      {
+        "w": "provayderlar",
+        "s": 58.9,
+        "e": 59.54
+      },
+      {
+        "w": "segmenti",
+        "s": 59.6,
+        "e": 59.96
+      },
+      {
+        "w": "uchun",
+        "s": 60.04,
+        "e": 60.22
+      },
+      {
+        "w": "esa",
+        "s": 60.28,
+        "e": 60.44
+      },
+      {
+        "w": "segments",
+        "s": 60.82,
+        "e": 61.26
+      },
+      {
+        "w": "bay",
+        "s": 61.32,
+        "e": 61.48
+      },
+      {
+        "w": "porpos",
+        "s": 61.56,
+        "e": 61.88
+      },
+      {
+        "w": "qoidasiga",
+        "s": 61.96,
+        "e": 62.44
+      },
+      {
+        "w": "istisno",
+        "s": 62.6,
+        "e": 63.0
+      },
+      {
+        "w": "beriladi.",
+        "s": 63.1,
+        "e": 63.5
+      }
+    ]
+  },
+  {
+    "id": "L8",
+    "scene": "app_va_provayderlar",
+    "text": "Ilovaning kirish nuqtasi bo'lgan main nuqta te-iks butun tizimni QueryProvider va RouterProvider bilan o'rab oladi.",
+    "show": "Ilovaning kirish nuqtasi bo'lgan main nuqta te-iks butun tizimni QueryProvider va RouterProvider bilan o'rab oladi.",
+    "say": "Ilovaning kirish nuqtasi bo'lgan meyn nuqta te-iks butun tizimni Kveri Provayder va Ruter Provayder bilan o'rab oladi.",
+    "a0": 64.56,
+    "a1": 71.53,
+    "words": [
+      {
+        "w": "Ilovaning",
+        "s": 64.56,
+        "e": 65.04
+      },
+      {
+        "w": "kirish",
+        "s": 65.08,
+        "e": 65.3
+      },
+      {
+        "w": "nuqtasi",
+        "s": 65.34,
+        "e": 65.7
+      },
+      {
+        "w": "bo'lgan",
+        "s": 65.74,
+        "e": 66.1
+      },
+      {
+        "w": "meyn",
+        "s": 66.34,
+        "e": 66.6
+      },
+      {
+        "w": "nuqta",
+        "s": 66.64,
+        "e": 66.94
+      },
+      {
+        "w": "te-iks",
+        "s": 67.04,
+        "e": 67.81
+      },
+      {
+        "w": "butun",
+        "s": 67.99,
+        "e": 68.25
+      },
+      {
+        "w": "tizimni",
+        "s": 68.29,
+        "e": 68.65
+      },
+      {
+        "w": "Kveri",
+        "s": 68.73,
+        "e": 69.03
+      },
+      {
+        "w": "Provayder",
+        "s": 69.07,
+        "e": 69.55
+      },
+      {
+        "w": "va",
+        "s": 69.63,
+        "e": 69.71
+      },
+      {
+        "w": "Ruter",
+        "s": 69.91,
+        "e": 70.21
+      },
+      {
+        "w": "Provayder",
+        "s": 70.27,
+        "e": 70.69
+      },
+      {
+        "w": "bilan",
+        "s": 70.71,
+        "e": 70.89
+      },
+      {
+        "w": "o'rab",
+        "s": 71.03,
+        "e": 71.25
+      },
+      {
+        "w": "oladi.",
+        "s": 71.29,
+        "e": 71.53
+      }
+    ]
+  },
+  {
+    "id": "L9",
+    "scene": "app_va_provayderlar",
+    "text": "QueryProvider ichida TanStack Query mijozi o'ttiz soniyalik staleTime kesh sozlamasi bilan ishga tushiriladi.",
+    "show": "QueryProvider ichida TanStack Query mijozi o'ttiz soniyalik staleTime kesh sozlamasi bilan ishga tushiriladi.",
+    "say": "Kveri Provayder ichida Ten-stek kveri mijozi o'ttiz soniyalik steyl taym kesh sozlamasi bilan ishga tushiriladi.",
+    "a0": 72.31,
+    "a1": 78.31,
+    "words": [
+      {
+        "w": "Kveri",
+        "s": 72.31,
+        "e": 72.59
+      },
+      {
+        "w": "Provayder",
+        "s": 72.63,
+        "e": 73.05
+      },
+      {
+        "w": "ichida",
+        "s": 73.09,
+        "e": 73.37
+      },
+      {
+        "w": "Ten-stek",
+        "s": 73.53,
+        "e": 73.95
+      },
+      {
+        "w": "kveri",
+        "s": 74.01,
+        "e": 74.27
+      },
+      {
+        "w": "mijozi",
+        "s": 74.33,
+        "e": 74.77
+      },
+      {
+        "w": "o'ttiz",
+        "s": 74.93,
+        "e": 75.23
+      },
+      {
+        "w": "soniyalik",
+        "s": 75.27,
+        "e": 75.77
+      },
+      {
+        "w": "steyl",
+        "s": 75.95,
+        "e": 76.23
+      },
+      {
+        "w": "taym",
+        "s": 76.29,
+        "e": 76.49
+      },
+      {
+        "w": "kesh",
+        "s": 76.57,
+        "e": 76.77
+      },
+      {
+        "w": "sozlamasi",
+        "s": 76.81,
+        "e": 77.27
+      },
+      {
+        "w": "bilan",
+        "s": 77.29,
+        "e": 77.47
+      },
+      {
+        "w": "ishga",
+        "s": 77.59,
+        "e": 77.83
+      },
+      {
+        "w": "tushiriladi.",
+        "s": 77.87,
+        "e": 78.31
+      }
+    ]
+  },
+  {
+    "id": "L10",
+    "scene": "app_va_provayderlar",
+    "text": "Router konfiguratsiyasida esa har bir sahifa mustaqil chunk sifatida faqat o'zining public API faylidan lazy import qilinadi.",
+    "show": "Router konfiguratsiyasida esa har bir sahifa mustaqil chunk sifatida faqat o'zining public API faylidan lazy import qilinadi.",
+    "say": "Router konfiguratsiyasida esa har bir sahifa mustaqil chank sifatida faqat o'zining public ey-pi-ay faylidan leyzi import qilinadi.",
+    "a0": 79.05,
+    "a1": 86.52,
+    "words": [
+      {
+        "w": "Router",
+        "s": 79.05,
+        "e": 79.39
+      },
+      {
+        "w": "konfiguratsiyasida",
+        "s": 79.43,
+        "e": 80.27
+      },
+      {
+        "w": "esa",
+        "s": 80.31,
+        "e": 80.49
+      },
+      {
+        "w": "har",
+        "s": 80.59,
+        "e": 80.81
+      },
+      {
+        "w": "bir",
+        "s": 80.87,
+        "e": 80.97
+      },
+      {
+        "w": "sahifa",
+        "s": 81.01,
+        "e": 81.41
+      },
+      {
+        "w": "mustaqil",
+        "s": 81.53,
+        "e": 81.95
+      },
+      {
+        "w": "chank",
+        "s": 82.03,
+        "e": 82.27
+      },
+      {
+        "w": "sifatida",
+        "s": 82.31,
+        "e": 82.7
+      },
+      {
+        "w": "faqat",
+        "s": 82.76,
+        "e": 83.02
+      },
+      {
+        "w": "o'zining",
+        "s": 83.12,
+        "e": 83.4
+      },
+      {
+        "w": "public",
+        "s": 83.68,
+        "e": 84.04
+      },
+      {
+        "w": "ey-pi-ay",
+        "s": 84.2,
+        "e": 84.62
+      },
+      {
+        "w": "faylidan",
+        "s": 84.7,
+        "e": 85.16
+      },
+      {
+        "w": "leyzi",
+        "s": 85.38,
+        "e": 85.7
+      },
+      {
+        "w": "import",
+        "s": 85.82,
+        "e": 86.1
+      },
+      {
+        "w": "qilinadi.",
+        "s": 86.14,
+        "e": 86.52
+      }
+    ]
+  },
+  {
+    "id": "L11",
+    "scene": "kompozitsiya_amalda",
+    "text": "Bosh sahifada to'liq kompozitsiya amalga oshadi: product entity'si kartochkani chizadi, savat feature'si esa unga tugmani joylaydi.",
+    "show": "Bosh sahifada to'liq kompozitsiya amalga oshadi: product entity'si kartochkani chizadi, savat feature'si esa unga tugmani joylaydi.",
+    "say": "Bosh sahifada to'liq kompozitsiya amalga oshadi: prodakt entiti'si kartochkani chizadi, savat ficher'si esa unga tugmani joylaydi.",
+    "a0": 87.58,
+    "a1": 95.28,
+    "words": [
+      {
+        "w": "Bosh",
+        "s": 87.58,
+        "e": 87.78
+      },
+      {
+        "w": "sahifada",
+        "s": 87.8,
+        "e": 88.32
+      },
+      {
+        "w": "to'liq",
+        "s": 88.46,
+        "e": 88.76
+      },
+      {
+        "w": "kompozitsiya",
+        "s": 88.82,
+        "e": 89.42
+      },
+      {
+        "w": "amalga",
+        "s": 89.46,
+        "e": 89.74
+      },
+      {
+        "w": "oshadi:",
+        "s": 89.8,
+        "e": 90.0
+      },
+      {
+        "w": "prodakt",
+        "s": 90.64,
+        "e": 91.04
+      },
+      {
+        "w": "entiti'si",
+        "s": 91.16,
+        "e": 91.68
+      },
+      {
+        "w": "kartochkani",
+        "s": 91.8,
+        "e": 92.34
+      },
+      {
+        "w": "chizadi,",
+        "s": 92.38,
+        "e": 92.74
+      },
+      {
+        "w": "savat",
+        "s": 93.12,
+        "e": 93.4
+      },
+      {
+        "w": "ficher'si",
+        "s": 93.46,
+        "e": 93.86
+      },
+      {
+        "w": "esa",
+        "s": 93.9,
+        "e": 94.08
+      },
+      {
+        "w": "unga",
+        "s": 94.2,
+        "e": 94.4
+      },
+      {
+        "w": "tugmani",
+        "s": 94.48,
+        "e": 94.86
+      },
+      {
+        "w": "joylaydi.",
+        "s": 94.9,
+        "e": 95.28
+      }
+    ]
+  },
+  {
+    "id": "L12",
+    "scene": "kompozitsiya_amalda",
+    "text": "Bunday arxitekturada entity hech qachon feature'ni bilmaydi, barcha munosabatlar sahifa qatlamida slot orqali birlashadi.",
+    "show": "Bunday arxitekturada entity hech qachon feature'ni bilmaydi, barcha munosabatlar sahifa qatlamida slot orqali birlashadi.",
+    "say": "Bunday arxitekturada entiti hech qachon ficher'ni bilmaydi, barcha munosabatlar sahifa qatlamida slot orqali birlashadi.",
+    "a0": 95.92,
+    "a1": 102.93,
+    "words": [
+      {
+        "w": "Bunday",
+        "s": 95.92,
+        "e": 96.2
+      },
+      {
+        "w": "arxitekturada",
+        "s": 96.26,
+        "e": 96.98
+      },
+      {
+        "w": "entiti",
+        "s": 97.16,
+        "e": 97.51
+      },
+      {
+        "w": "hech",
+        "s": 97.65,
+        "e": 97.89
+      },
+      {
+        "w": "qachon",
+        "s": 97.93,
+        "e": 98.21
+      },
+      {
+        "w": "ficher'ni",
+        "s": 98.27,
+        "e": 98.67
+      },
+      {
+        "w": "bilmaydi,",
+        "s": 98.73,
+        "e": 99.13
+      },
+      {
+        "w": "barcha",
+        "s": 99.49,
+        "e": 99.75
+      },
+      {
+        "w": "munosabatlar",
+        "s": 99.79,
+        "e": 100.41
+      },
+      {
+        "w": "sahifa",
+        "s": 100.45,
+        "e": 100.81
+      },
+      {
+        "w": "qatlamida",
+        "s": 100.89,
+        "e": 101.35
+      },
+      {
+        "w": "slot",
+        "s": 101.69,
+        "e": 101.97
+      },
+      {
+        "w": "orqali",
+        "s": 102.03,
+        "e": 102.35
+      },
+      {
+        "w": "birlashadi.",
+        "s": 102.43,
+        "e": 102.93
+      }
+    ]
+  },
+  {
+    "id": "L13",
+    "scene": "tipik_xatolar",
+    "text": "Eng katta xatolar — eski main nuqta te-iks va App nuqta te-iks fayllarini ildizda qoldirish yoki te-es-konfig'da paths ni unutishdir.",
+    "show": "Eng katta xatolar — eski main nuqta te-iks va App nuqta te-iks fayllarini ildizda qoldirish yoki te-es-konfig'da paths ni unutishdir.",
+    "say": "Eng katta xatolar — eski meyn nuqta te-iks va Ep nuqta te-iks fayllarini ildizda qoldirish yoki te-es konfig'da paslarni unutishdir.",
+    "a0": 103.95,
+    "a1": 112.39,
+    "words": [
+      {
+        "w": "Eng",
+        "s": 103.95,
+        "e": 104.11
+      },
+      {
+        "w": "katta",
+        "s": 104.15,
+        "e": 104.41
+      },
+      {
+        "w": "xatolar",
+        "s": 104.47,
+        "e": 104.93
+      },
+      {
+        "w": "—",
+        "s": 104.93,
+        "e": 104.93
+      },
+      {
+        "w": "eski",
+        "s": 105.35,
+        "e": 105.65
+      },
+      {
+        "w": "meyn",
+        "s": 105.79,
+        "e": 105.99
+      },
+      {
+        "w": "nuqta",
+        "s": 106.05,
+        "e": 106.35
+      },
+      {
+        "w": "te-iks",
+        "s": 106.45,
+        "e": 106.91
+      },
+      {
+        "w": "va",
+        "s": 107.03,
+        "e": 107.11
+      },
+      {
+        "w": "Ep",
+        "s": 107.35,
+        "e": 107.45
+      },
+      {
+        "w": "nuqta",
+        "s": 107.53,
+        "e": 107.81
+      },
+      {
+        "w": "te-iks",
+        "s": 107.89,
+        "e": 108.23
+      },
+      {
+        "w": "fayllarini",
+        "s": 108.29,
+        "e": 108.81
+      },
+      {
+        "w": "ildizda",
+        "s": 108.93,
+        "e": 109.29
+      },
+      {
+        "w": "qoldirish",
+        "s": 109.39,
+        "e": 109.81
+      },
+      {
+        "w": "yoki",
+        "s": 110.11,
+        "e": 110.37
+      },
+      {
+        "w": "te-es",
+        "s": 110.51,
+        "e": 110.75
+      },
+      {
+        "w": "konfig'da",
+        "s": 110.83,
+        "e": 111.29
+      },
+      {
+        "w": "paslarni",
+        "s": 111.37,
+        "e": 111.83
+      },
+      {
+        "w": "unutishdir.",
+        "s": 111.93,
+        "e": 112.39
+      }
+    ]
+  },
+  {
+    "id": "L14",
+    "scene": "tipik_xatolar",
+    "text": "Shuningdek, src assets papkasini qoldirish linter nazoratidan chetda qoladigan tartibsiz axlatxonani vujudga keltiradi.",
+    "show": "Shuningdek, src assets papkasini qoldirish linter nazoratidan chetda qoladigan tartibsiz axlatxonani vujudga keltiradi.",
+    "say": "Shuningdek, src assets papkasini qoldirish linter nazoratidan chetda qoladigan tartibsiz axlatxonani vujudga keltiradi.",
+    "a0": 113.08,
+    "a1": 119.6,
+    "words": [
+      {
+        "w": "Shuningdek,",
+        "s": 113.08,
+        "e": 113.52
+      },
+      {
+        "w": "src",
+        "s": 113.78,
+        "e": 114.02
+      },
+      {
+        "w": "assets",
+        "s": 114.24,
+        "e": 114.56
+      },
+      {
+        "w": "papkasini",
+        "s": 114.62,
+        "e": 115.08
+      },
+      {
+        "w": "qoldirish",
+        "s": 115.14,
+        "e": 115.54
+      },
+      {
+        "w": "linter",
+        "s": 115.86,
+        "e": 116.16
+      },
+      {
+        "w": "nazoratidan",
+        "s": 116.2,
+        "e": 116.78
+      },
+      {
+        "w": "chetda",
+        "s": 116.82,
+        "e": 117.08
+      },
+      {
+        "w": "qoladigan",
+        "s": 117.14,
+        "e": 117.56
+      },
+      {
+        "w": "tartibsiz",
+        "s": 117.62,
+        "e": 118.08
+      },
+      {
+        "w": "axlatxonani",
+        "s": 118.16,
+        "e": 118.74
+      },
+      {
+        "w": "vujudga",
+        "s": 118.78,
+        "e": 119.12
+      },
+      {
+        "w": "keltiradi.",
+        "s": 119.18,
+        "e": 119.6
+      }
+    ]
+  },
+  {
+    "id": "L15",
+    "scene": "xulosa",
+    "text": "Xulosa qilib aytganda, React va Vite loyihasini FSD ga moslash orqali millionlab satr kodda ham boshqariladigan mustahkam arxitekturaga ega bo'lasiz.",
+    "show": "Xulosa qilib aytganda, React va Vite loyihasini FSD ga moslash orqali millionlab satr kodda ham boshqariladigan mustahkam arxitekturaga ega bo'lasiz.",
+    "say": "Xulosa qilib aytganda, React va Vite loyihasini Ef-es-di ga moslash orqali millionlab satr kodda ham boshqariladigan mustahkam arxitekturaga ega bo'lasiz.",
+    "a0": 120.44,
+    "a1": 129.29,
+    "words": [
+      {
+        "w": "Xulosa",
+        "s": 120.44,
+        "e": 120.74
+      },
+      {
+        "w": "qilib",
+        "s": 120.76,
+        "e": 120.94
+      },
+      {
+        "w": "aytganda,",
+        "s": 120.98,
+        "e": 121.38
+      },
+      {
+        "w": "React",
+        "s": 121.8,
+        "e": 122.12
+      },
+      {
+        "w": "va",
+        "s": 122.18,
+        "e": 122.26
+      },
+      {
+        "w": "Vite",
+        "s": 122.52,
+        "e": 122.74
+      },
+      {
+        "w": "loyihasini",
+        "s": 122.78,
+        "e": 123.32
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 123.46,
+        "e": 123.84
+      },
+      {
+        "w": "ga",
+        "s": 123.88,
+        "e": 123.96
+      },
+      {
+        "w": "moslash",
+        "s": 124.02,
+        "e": 124.38
+      },
+      {
+        "w": "orqali",
+        "s": 124.43,
+        "e": 124.75
+      },
+      {
+        "w": "millionlab",
+        "s": 125.07,
+        "e": 125.61
+      },
+      {
+        "w": "satr",
+        "s": 125.67,
+        "e": 125.91
+      },
+      {
+        "w": "kodda",
+        "s": 125.99,
+        "e": 126.27
+      },
+      {
+        "w": "ham",
+        "s": 126.31,
+        "e": 126.45
+      },
+      {
+        "w": "boshqariladigan",
+        "s": 126.49,
+        "e": 127.17
+      },
+      {
+        "w": "mustahkam",
+        "s": 127.25,
+        "e": 127.75
+      },
+      {
+        "w": "arxitekturaga",
+        "s": 127.83,
+        "e": 128.53
+      },
+      {
+        "w": "ega",
+        "s": 128.67,
+        "e": 128.83
+      },
+      {
+        "w": "bo'lasiz.",
+        "s": 128.89,
+        "e": 129.29
+      }
+    ]
+  },
+  {
+    "id": "L16",
+    "scene": "xulosa",
+    "text": "Keyingi bobda Next.js va server komponentlarida FSD shablonini qanday to'g'ri qo'llashni o'rganamiz. Rahmat!",
+    "show": "Keyingi bobda Next.js va server komponentlarida FSD shablonini qanday to'g'ri qo'llashni o'rganamiz. Rahmat!",
+    "say": "Keyingi bobda Next.js va server komponentlarida Ef-es-di shablonini qanday to'g'ri qo'llashni o'rganamiz. Rahmat!",
+    "a0": 129.83,
+    "a1": 137.28,
+    "words": [
+      {
+        "w": "Keyingi",
+        "s": 129.83,
+        "e": 130.15
+      },
+      {
+        "w": "bobda",
+        "s": 130.19,
+        "e": 130.49
+      },
+      {
+        "w": "Next.js",
+        "s": 130.49,
+        "e": 131.61
+      },
+      {
+        "w": "va",
+        "s": 131.61,
+        "e": 131.69
+      },
+      {
+        "w": "server",
+        "s": 131.97,
+        "e": 132.31
+      },
+      {
+        "w": "komponentlarida",
+        "s": 132.37,
+        "e": 133.15
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 133.44,
+        "e": 133.94
+      },
+      {
+        "w": "shablonini",
+        "s": 134.04,
+        "e": 134.54
+      },
+      {
+        "w": "qanday",
+        "s": 134.66,
+        "e": 135.02
+      },
+      {
+        "w": "to'g'ri",
+        "s": 135.08,
+        "e": 135.34
+      },
+      {
+        "w": "qo'llashni",
+        "s": 135.38,
+        "e": 135.84
+      },
+      {
+        "w": "o'rganamiz.",
+        "s": 135.88,
+        "e": 136.36
+      },
+      {
+        "w": "Rahmat!",
+        "s": 136.92,
+        "e": 137.28
+      }
+    ]
+  }
+]
