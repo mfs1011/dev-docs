@@ -4,6 +4,14 @@
 
 ## Qisqacha
 
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/fsd/32-monorepo.jpg" src="/video/fsd/32-monorepo.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/fsd/32-monorepo.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/fsd/32-monorepo.uz.vtt">
+</video>
+<figcaption>Bob videoda: Monorepo va ko'p ildizli FSD — har paket mustaqil FSD ildizi, package.json exports intizomi, shared orqali o'rash va Steiger tekshiruvi.</figcaption>
+</figure>
+
 Juda katta frontend bir nechta katta, deyarli mustaqil qismga bo'linadi: Google Docs'da hujjat muharriri va fayl brauzeri butunlay boshqa mas'uliyatlar. Bunday holatda rasmiy tavsiya — **monorepo, har paket alohida FSD ildizi** o'z qatlamlari bilan. Ba'zi paketlarda faqat `shared` va `entities` bo'ladi, boshqalarida faqat `pages` va `app`, uchinchilarida o'zining kichik `shared`'i va yana boshqa paketdagi katta `shared` ham.
 
 ## Qoida

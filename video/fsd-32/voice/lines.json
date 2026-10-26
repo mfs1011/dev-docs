@@ -1,0 +1,1418 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Salom! Bu FSD qo'llanmasining o'ttiz ikkinchi bobi — Monorepo arxitekturasi va bitta omborda bir nechta FSD ildizlari bilan ishlash strategiyasi.",
+    "show": "Salom! Bu FSD qo'llanmasining o'ttiz ikkinchi bobi — Monorepo arxitekturasi va bitta omborda bir nechta FSD ildizlari bilan ishlash strategiyasi.",
+    "say": "Salom! Bu Ef-es-di qo'llanmasining o'ttiz ikkinchi bobi — Monorepo arxitekturasi va bitta omborda bir nechta Ef-es-di ildizlari bilan ishlash strategiyasi.",
+    "a0": 0.2,
+    "a1": 10.53,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.2,
+        "e": 0.52
+      },
+      {
+        "w": "Bu",
+        "s": 0.96,
+        "e": 1.04
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 1.48,
+        "e": 1.92
+      },
+      {
+        "w": "qo'llanmasining",
+        "s": 2.0,
+        "e": 2.76
+      },
+      {
+        "w": "o'ttiz",
+        "s": 3.02,
+        "e": 3.32
+      },
+      {
+        "w": "ikkinchi",
+        "s": 3.42,
+        "e": 3.8
+      },
+      {
+        "w": "bobi",
+        "s": 3.84,
+        "e": 4.08
+      },
+      {
+        "w": "—",
+        "s": 4.08,
+        "e": 4.08
+      },
+      {
+        "w": "Monorepo",
+        "s": 4.58,
+        "e": 5.1
+      },
+      {
+        "w": "arxitekturasi",
+        "s": 5.18,
+        "e": 5.96
+      },
+      {
+        "w": "va",
+        "s": 6.04,
+        "e": 6.12
+      },
+      {
+        "w": "bitta",
+        "s": 6.58,
+        "e": 6.9
+      },
+      {
+        "w": "omborda",
+        "s": 7.0,
+        "e": 7.4
+      },
+      {
+        "w": "bir",
+        "s": 7.57,
+        "e": 7.71
+      },
+      {
+        "w": "nechta",
+        "s": 7.77,
+        "e": 8.09
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 8.19,
+        "e": 8.59
+      },
+      {
+        "w": "ildizlari",
+        "s": 8.69,
+        "e": 9.13
+      },
+      {
+        "w": "bilan",
+        "s": 9.15,
+        "e": 9.33
+      },
+      {
+        "w": "ishlash",
+        "s": 9.39,
+        "e": 9.73
+      },
+      {
+        "w": "strategiyasi.",
+        "s": 9.85,
+        "e": 10.53
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "intro",
+    "text": "Katta korxona tizimlarida storefront, admin paneli va umumiy domen alohida FSD ildizlari sifatida monorepoga birlashtiriladi.",
+    "show": "Katta korxona tizimlarida storefront, admin paneli va umumiy domen alohida FSD ildizlari sifatida monorepoga birlashtiriladi.",
+    "say": "Katta korxona tizimlarida stor-front, admin paneli va umumiy domen alohida Ef-es-di ildizlari sifatida monorepoga birlashtiriladi.",
+    "a0": 11.35,
+    "a1": 19.71,
+    "words": [
+      {
+        "w": "Katta",
+        "s": 11.35,
+        "e": 11.65
+      },
+      {
+        "w": "korxona",
+        "s": 11.71,
+        "e": 12.11
+      },
+      {
+        "w": "tizimlarida",
+        "s": 12.17,
+        "e": 12.73
+      },
+      {
+        "w": "stor-front,",
+        "s": 13.11,
+        "e": 13.73
+      },
+      {
+        "w": "admin",
+        "s": 14.05,
+        "e": 14.33
+      },
+      {
+        "w": "paneli",
+        "s": 14.39,
+        "e": 14.71
+      },
+      {
+        "w": "va",
+        "s": 14.77,
+        "e": 14.83
+      },
+      {
+        "w": "umumiy",
+        "s": 15.19,
+        "e": 15.57
+      },
+      {
+        "w": "domen",
+        "s": 15.67,
+        "e": 15.99
+      },
+      {
+        "w": "alohida",
+        "s": 16.15,
+        "e": 16.61
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 16.75,
+        "e": 17.15
+      },
+      {
+        "w": "ildizlari",
+        "s": 17.25,
+        "e": 17.67
+      },
+      {
+        "w": "sifatida",
+        "s": 17.71,
+        "e": 18.09
+      },
+      {
+        "w": "monorepoga",
+        "s": 18.39,
+        "e": 19.01
+      },
+      {
+        "w": "birlashtiriladi.",
+        "s": 19.05,
+        "e": 19.71
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "ildiz_tamoyili",
+    "text": "Monorepoda har bir paket o'zining to'liq yoki qisqartirilgan FSD qatlamlariga va mustaqil public API siga ega bo'ladi.",
+    "show": "Monorepoda har bir paket o'zining to'liq yoki qisqartirilgan FSD qatlamlariga va mustaqil public API siga ega bo'ladi.",
+    "say": "Monorepoda har bir paket o'zining to'liq yoki qisqartirilgan Ef-es-di qatlamlariga va mustaqil public ey-pi-ay siga ega bo'ladi.",
+    "a0": 20.47,
+    "a1": 28.26,
+    "words": [
+      {
+        "w": "Monorepoda",
+        "s": 20.47,
+        "e": 21.05
+      },
+      {
+        "w": "har",
+        "s": 21.37,
+        "e": 21.55
+      },
+      {
+        "w": "bir",
+        "s": 21.59,
+        "e": 21.71
+      },
+      {
+        "w": "paket",
+        "s": 21.75,
+        "e": 22.05
+      },
+      {
+        "w": "o'zining",
+        "s": 22.19,
+        "e": 22.52
+      },
+      {
+        "w": "to'liq",
+        "s": 22.62,
+        "e": 23.04
+      },
+      {
+        "w": "yoki",
+        "s": 23.14,
+        "e": 23.38
+      },
+      {
+        "w": "qisqartirilgan",
+        "s": 23.68,
+        "e": 24.44
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 24.6,
+        "e": 25.0
+      },
+      {
+        "w": "qatlamlariga",
+        "s": 25.08,
+        "e": 25.7
+      },
+      {
+        "w": "va",
+        "s": 25.98,
+        "e": 26.04
+      },
+      {
+        "w": "mustaqil",
+        "s": 26.12,
+        "e": 26.6
+      },
+      {
+        "w": "public",
+        "s": 26.7,
+        "e": 27.04
+      },
+      {
+        "w": "ey-pi-ay",
+        "s": 27.18,
+        "e": 27.52
+      },
+      {
+        "w": "siga",
+        "s": 27.52,
+        "e": 27.68
+      },
+      {
+        "w": "ega",
+        "s": 27.78,
+        "e": 27.92
+      },
+      {
+        "w": "bo'ladi.",
+        "s": 27.96,
+        "e": 28.26
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "ildiz_tamoyili",
+    "text": "Masalan, storefront barcha qatlamlarni saqlasa, katalog paketi faqat entitiz va sherd qatlamlari bilan ixcham FSD ildizi bo'ladi.",
+    "show": "Masalan, storefront barcha qatlamlarni saqlasa, katalog paketi faqat entitiz va sherd qatlamlari bilan ixcham FSD ildizi bo'ladi.",
+    "say": "Masalan, stor-front barcha qatlamlarni saqlasa, katalog paketi faqat entitiz va sherd qatlamlari bilan ixcham Ef-es-di ildizi bo'ladi.",
+    "a0": 28.82,
+    "a1": 37.36,
+    "words": [
+      {
+        "w": "Masalan,",
+        "s": 28.82,
+        "e": 29.24
+      },
+      {
+        "w": "stor-front",
+        "s": 29.58,
+        "e": 30.16
+      },
+      {
+        "w": "barcha",
+        "s": 30.3,
+        "e": 30.62
+      },
+      {
+        "w": "qatlamlarni",
+        "s": 30.66,
+        "e": 31.2
+      },
+      {
+        "w": "saqlasa,",
+        "s": 31.26,
+        "e": 31.7
+      },
+      {
+        "w": "katalog",
+        "s": 32.22,
+        "e": 32.64
+      },
+      {
+        "w": "paketi",
+        "s": 32.68,
+        "e": 33.0
+      },
+      {
+        "w": "faqat",
+        "s": 33.04,
+        "e": 33.3
+      },
+      {
+        "w": "entitiz",
+        "s": 33.66,
+        "e": 34.12
+      },
+      {
+        "w": "va",
+        "s": 34.22,
+        "e": 34.3
+      },
+      {
+        "w": "sherd",
+        "s": 34.6,
+        "e": 34.86
+      },
+      {
+        "w": "qatlamlari",
+        "s": 34.9,
+        "e": 35.4
+      },
+      {
+        "w": "bilan",
+        "s": 35.42,
+        "e": 35.6
+      },
+      {
+        "w": "ixcham",
+        "s": 35.78,
+        "e": 36.14
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 36.28,
+        "e": 36.66
+      },
+      {
+        "w": "ildizi",
+        "s": 36.74,
+        "e": 37.02
+      },
+      {
+        "w": "bo'ladi.",
+        "s": 37.04,
+        "e": 37.36
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "ildiz_tamoyili",
+    "text": "Paketlararo import tashqi kutubxona sifatida ko'riladi va pekej jeyson dagi exports orqali qat'iy nazorat qilinadi.",
+    "show": "Paketlararo import tashqi kutubxona sifatida ko'riladi va pekej jeyson dagi exports orqali qat'iy nazorat qilinadi.",
+    "say": "Paketlararo import tashqi kutubxona sifatida ko'riladi va pekej jeyson dagi eksports orqali qat'iy nazorat qilinadi.",
+    "a0": 38.13,
+    "a1": 45.01,
+    "words": [
+      {
+        "w": "Paketlararo",
+        "s": 38.13,
+        "e": 38.79
+      },
+      {
+        "w": "import",
+        "s": 38.91,
+        "e": 39.19
+      },
+      {
+        "w": "tashqi",
+        "s": 39.25,
+        "e": 39.51
+      },
+      {
+        "w": "kutubxona",
+        "s": 39.57,
+        "e": 39.97
+      },
+      {
+        "w": "sifatida",
+        "s": 40.03,
+        "e": 40.37
+      },
+      {
+        "w": "ko'riladi",
+        "s": 40.43,
+        "e": 40.81
+      },
+      {
+        "w": "va",
+        "s": 40.87,
+        "e": 40.93
+      },
+      {
+        "w": "pekej",
+        "s": 41.31,
+        "e": 41.63
+      },
+      {
+        "w": "jeyson",
+        "s": 41.77,
+        "e": 42.15
+      },
+      {
+        "w": "dagi",
+        "s": 42.21,
+        "e": 42.43
+      },
+      {
+        "w": "eksports",
+        "s": 42.85,
+        "e": 43.25
+      },
+      {
+        "w": "orqali",
+        "s": 43.33,
+        "e": 43.65
+      },
+      {
+        "w": "qat'iy",
+        "s": 43.79,
+        "e": 44.13
+      },
+      {
+        "w": "nazorat",
+        "s": 44.21,
+        "e": 44.61
+      },
+      {
+        "w": "qilinadi.",
+        "s": 44.65,
+        "e": 45.01
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "paketlarni_ulash",
+    "text": "Tashqi umumiy dizayn tizimi yoki api-klient paketlarini ilova ichidagi sherd segmentlarida o'rash eng qulay usuldir.",
+    "show": "Tashqi umumiy dizayn tizimi yoki api-klient paketlarini ilova ichidagi sherd segmentlarida o'rash eng qulay usuldir.",
+    "say": "Tashqi umumiy dizayn tizimi yoki ey-pi-ay-klient paketlarini ilova ichidagi sherd segmentlarida o'rash eng qulay usuldir.",
+    "a0": 45.83,
+    "a1": 52.96,
+    "words": [
+      {
+        "w": "Tashqi",
+        "s": 45.83,
+        "e": 46.17
+      },
+      {
+        "w": "umumiy",
+        "s": 46.27,
+        "e": 46.59
+      },
+      {
+        "w": "dizayn",
+        "s": 46.65,
+        "e": 46.99
+      },
+      {
+        "w": "tizimi",
+        "s": 47.03,
+        "e": 47.35
+      },
+      {
+        "w": "yoki",
+        "s": 47.45,
+        "e": 47.69
+      },
+      {
+        "w": "ey-pi-ay-klient",
+        "s": 48.09,
+        "e": 48.87
+      },
+      {
+        "w": "paketlarini",
+        "s": 48.91,
+        "e": 49.47
+      },
+      {
+        "w": "ilova",
+        "s": 49.79,
+        "e": 50.13
+      },
+      {
+        "w": "ichidagi",
+        "s": 50.17,
+        "e": 50.53
+      },
+      {
+        "w": "sherd",
+        "s": 50.65,
+        "e": 50.87
+      },
+      {
+        "w": "segmentlarida",
+        "s": 50.93,
+        "e": 51.55
+      },
+      {
+        "w": "o'rash",
+        "s": 51.61,
+        "e": 51.83
+      },
+      {
+        "w": "eng",
+        "s": 52.03,
+        "e": 52.17
+      },
+      {
+        "w": "qulay",
+        "s": 52.23,
+        "e": 52.47
+      },
+      {
+        "w": "usuldir.",
+        "s": 52.56,
+        "e": 52.96
+      }
+    ]
+  },
+  {
+    "id": "L7",
+    "scene": "paketlarni_ulash",
+    "text": "Bu yondashuv orqali tashqi kutubxonalarni yangilash yoki almashtirish butun ilovani buzmasdan, faqat sherd da amalga oshadi.",
+    "show": "Bu yondashuv orqali tashqi kutubxonalarni yangilash yoki almashtirish butun ilovani buzmasdan, faqat sherd da amalga oshadi.",
+    "say": "Bu yondashuv orqali tashqi kutubxonalarni yangilash yoki almashtirish butun ilovani buzmasdan, faqat sherd da amalga oshadi.",
+    "a0": 53.72,
+    "a1": 61.16,
+    "words": [
+      {
+        "w": "Bu",
+        "s": 53.72,
+        "e": 53.8
+      },
+      {
+        "w": "yondashuv",
+        "s": 53.88,
+        "e": 54.32
+      },
+      {
+        "w": "orqali",
+        "s": 54.34,
+        "e": 54.7
+      },
+      {
+        "w": "tashqi",
+        "s": 55.06,
+        "e": 55.34
+      },
+      {
+        "w": "kutubxonalarni",
+        "s": 55.4,
+        "e": 56.1
+      },
+      {
+        "w": "yangilash",
+        "s": 56.16,
+        "e": 56.68
+      },
+      {
+        "w": "yoki",
+        "s": 56.74,
+        "e": 56.94
+      },
+      {
+        "w": "almashtirish",
+        "s": 57.04,
+        "e": 57.62
+      },
+      {
+        "w": "butun",
+        "s": 57.92,
+        "e": 58.2
+      },
+      {
+        "w": "ilovani",
+        "s": 58.32,
+        "e": 58.72
+      },
+      {
+        "w": "buzmasdan,",
+        "s": 58.76,
+        "e": 59.3
+      },
+      {
+        "w": "faqat",
+        "s": 59.56,
+        "e": 59.88
+      },
+      {
+        "w": "sherd",
+        "s": 60.08,
+        "e": 60.34
+      },
+      {
+        "w": "da",
+        "s": 60.38,
+        "e": 60.46
+      },
+      {
+        "w": "amalga",
+        "s": 60.5,
+        "e": 60.78
+      },
+      {
+        "w": "oshadi.",
+        "s": 60.84,
+        "e": 61.16
+      }
+    ]
+  },
+  {
+    "id": "L8",
+    "scene": "steiger_intizomi",
+    "text": "Stayger linteri monorepo ildizidan emas, har bir paketning o'z katalogida alohida ishga tushirilishi kerak.",
+    "show": "Stayger linteri monorepo ildizidan emas, har bir paketning o'z katalogida alohida ishga tushirilishi kerak.",
+    "say": "Stayger linteri monorepo ildizidan emas, har bir paketning o'z katalogida alohida ishga tushirilishi kerak.",
+    "a0": 61.9,
+    "a1": 67.63,
+    "words": [
+      {
+        "w": "Stayger",
+        "s": 61.9,
+        "e": 62.3
+      },
+      {
+        "w": "linteri",
+        "s": 62.36,
+        "e": 62.74
+      },
+      {
+        "w": "monorepo",
+        "s": 62.82,
+        "e": 63.3
+      },
+      {
+        "w": "ildizidan",
+        "s": 63.36,
+        "e": 63.82
+      },
+      {
+        "w": "emas,",
+        "s": 63.86,
+        "e": 64.1
+      },
+      {
+        "w": "har",
+        "s": 64.36,
+        "e": 64.54
+      },
+      {
+        "w": "bir",
+        "s": 64.58,
+        "e": 64.68
+      },
+      {
+        "w": "paketning",
+        "s": 64.72,
+        "e": 65.18
+      },
+      {
+        "w": "o'z",
+        "s": 65.34,
+        "e": 65.48
+      },
+      {
+        "w": "katalogida",
+        "s": 65.54,
+        "e": 66.06
+      },
+      {
+        "w": "alohida",
+        "s": 66.22,
+        "e": 66.64
+      },
+      {
+        "w": "ishga",
+        "s": 66.7,
+        "e": 66.86
+      },
+      {
+        "w": "tushirilishi",
+        "s": 66.88,
+        "e": 67.34
+      },
+      {
+        "w": "kerak.",
+        "s": 67.36,
+        "e": 67.63
+      }
+    ]
+  },
+  {
+    "id": "L9",
+    "scene": "steiger_intizomi",
+    "text": "Shunda har bir FSD ildizining stayger konfig sozlamalari va istisnolari to'liq inobatga olinadi.",
+    "show": "Shunda har bir FSD ildizining stayger konfig sozlamalari va istisnolari to'liq inobatga olinadi.",
+    "say": "Shunda har bir Ef-es-di ildizining stayger konfig sozlamalari va istisnolari to'liq inobatga olinadi.",
+    "a0": 68.25,
+    "a1": 73.81,
+    "words": [
+      {
+        "w": "Shunda",
+        "s": 68.25,
+        "e": 68.49
+      },
+      {
+        "w": "har",
+        "s": 68.61,
+        "e": 68.77
+      },
+      {
+        "w": "bir",
+        "s": 68.83,
+        "e": 68.93
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 69.03,
+        "e": 69.41
+      },
+      {
+        "w": "ildizining",
+        "s": 69.47,
+        "e": 69.91
+      },
+      {
+        "w": "stayger",
+        "s": 69.97,
+        "e": 70.31
+      },
+      {
+        "w": "konfig",
+        "s": 70.35,
+        "e": 70.67
+      },
+      {
+        "w": "sozlamalari",
+        "s": 70.71,
+        "e": 71.29
+      },
+      {
+        "w": "va",
+        "s": 71.35,
+        "e": 71.41
+      },
+      {
+        "w": "istisnolari",
+        "s": 71.81,
+        "e": 72.47
+      },
+      {
+        "w": "to'liq",
+        "s": 72.59,
+        "e": 72.87
+      },
+      {
+        "w": "inobatga",
+        "s": 72.95,
+        "e": 73.39
+      },
+      {
+        "w": "olinadi.",
+        "s": 73.45,
+        "e": 73.81
+      }
+    ]
+  },
+  {
+    "id": "L10",
+    "scene": "steiger_intizomi",
+    "text": "npm ning vorkspeysis buyrug'i barcha FSD paketlarini birvarakay va toza tekshirib chiqish imkonini beradi.",
+    "show": "npm ning vorkspeysis buyrug'i barcha FSD paketlarini birvarakay va toza tekshirib chiqish imkonini beradi.",
+    "say": "Npm ning vorkspeysis buyrug'i barcha Ef-es-di paketlarini birvarakay va toza tekshirib chiqish imkonini beradi.",
+    "a0": 74.69,
+    "a1": 80.87,
+    "words": [
+      {
+        "w": "Npm",
+        "s": 74.69,
+        "e": 75.01
+      },
+      {
+        "w": "ning",
+        "s": 75.05,
+        "e": 75.19
+      },
+      {
+        "w": "vorkspeysis",
+        "s": 75.31,
+        "e": 75.95
+      },
+      {
+        "w": "buyrug'i",
+        "s": 76.01,
+        "e": 76.37
+      },
+      {
+        "w": "barcha",
+        "s": 76.49,
+        "e": 76.81
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 76.93,
+        "e": 77.27
+      },
+      {
+        "w": "paketlarini",
+        "s": 77.33,
+        "e": 77.89
+      },
+      {
+        "w": "birvarakay",
+        "s": 78.19,
+        "e": 78.77
+      },
+      {
+        "w": "va",
+        "s": 78.85,
+        "e": 78.93
+      },
+      {
+        "w": "toza",
+        "s": 79.09,
+        "e": 79.37
+      },
+      {
+        "w": "tekshirib",
+        "s": 79.43,
+        "e": 79.79
+      },
+      {
+        "w": "chiqish",
+        "s": 79.81,
+        "e": 80.05
+      },
+      {
+        "w": "imkonini",
+        "s": 80.09,
+        "e": 80.53
+      },
+      {
+        "w": "beradi.",
+        "s": 80.57,
+        "e": 80.87
+      }
+    ]
+  },
+  {
+    "id": "L11",
+    "scene": "ajratish_mezonlari",
+    "text": "Monorepoga faqat jamoalar mustaqil reliz qilganda yoki do'kon va admin kabi alohida ilovalar bitta dizayn tizimidan foydalanganda bo'linadi.",
+    "show": "Monorepoga faqat jamoalar mustaqil reliz qilganda yoki do'kon va admin kabi alohida ilovalar bitta dizayn tizimidan foydalanganda bo'linadi.",
+    "say": "Monorepoga faqat jamoalar mustaqil reliz qilganda yoki do'kon va admin kabi alohida ilovalar bitta dizayn tizimidan foydalanganda bo'linadi.",
+    "a0": 81.59,
+    "a1": 90.12,
+    "words": [
+      {
+        "w": "Monorepoga",
+        "s": 81.59,
+        "e": 82.23
+      },
+      {
+        "w": "faqat",
+        "s": 82.41,
+        "e": 82.7
+      },
+      {
+        "w": "jamoalar",
+        "s": 82.76,
+        "e": 83.24
+      },
+      {
+        "w": "mustaqil",
+        "s": 83.32,
+        "e": 83.8
+      },
+      {
+        "w": "reliz",
+        "s": 83.88,
+        "e": 84.14
+      },
+      {
+        "w": "qilganda",
+        "s": 84.18,
+        "e": 84.64
+      },
+      {
+        "w": "yoki",
+        "s": 85.02,
+        "e": 85.28
+      },
+      {
+        "w": "do'kon",
+        "s": 85.48,
+        "e": 85.86
+      },
+      {
+        "w": "va",
+        "s": 85.96,
+        "e": 86.02
+      },
+      {
+        "w": "admin",
+        "s": 86.16,
+        "e": 86.42
+      },
+      {
+        "w": "kabi",
+        "s": 86.48,
+        "e": 86.68
+      },
+      {
+        "w": "alohida",
+        "s": 86.84,
+        "e": 87.28
+      },
+      {
+        "w": "ilovalar",
+        "s": 87.36,
+        "e": 87.82
+      },
+      {
+        "w": "bitta",
+        "s": 87.92,
+        "e": 88.18
+      },
+      {
+        "w": "dizayn",
+        "s": 88.24,
+        "e": 88.56
+      },
+      {
+        "w": "tizimidan",
+        "s": 88.58,
+        "e": 88.98
+      },
+      {
+        "w": "foydalanganda",
+        "s": 89.02,
+        "e": 89.68
+      },
+      {
+        "w": "bo'linadi.",
+        "s": 89.72,
+        "e": 90.12
+      }
+    ]
+  },
+  {
+    "id": "L12",
+    "scene": "ajratish_mezonlari",
+    "text": "Shunchaki papkalar ko'paygani uchun monorepo ochish behuda murakkablik va ortiqcha xarajat olib keladi.",
+    "show": "Shunchaki papkalar ko'paygani uchun monorepo ochish behuda murakkablik va ortiqcha xarajat olib keladi.",
+    "say": "Shunchaki papkalar ko'paygani uchun monorepo ochish behuda murakkablik va ortiqcha xarajat olib keladi.",
+    "a0": 90.88,
+    "a1": 96.66,
+    "words": [
+      {
+        "w": "Shunchaki",
+        "s": 90.88,
+        "e": 91.3
+      },
+      {
+        "w": "papkalar",
+        "s": 91.36,
+        "e": 91.78
+      },
+      {
+        "w": "ko'paygani",
+        "s": 91.82,
+        "e": 92.32
+      },
+      {
+        "w": "uchun",
+        "s": 92.38,
+        "e": 92.6
+      },
+      {
+        "w": "monorepo",
+        "s": 92.88,
+        "e": 93.4
+      },
+      {
+        "w": "ochish",
+        "s": 93.44,
+        "e": 93.68
+      },
+      {
+        "w": "behuda",
+        "s": 93.76,
+        "e": 94.16
+      },
+      {
+        "w": "murakkablik",
+        "s": 94.22,
+        "e": 94.84
+      },
+      {
+        "w": "va",
+        "s": 94.92,
+        "e": 94.98
+      },
+      {
+        "w": "ortiqcha",
+        "s": 95.34,
+        "e": 95.7
+      },
+      {
+        "w": "xarajat",
+        "s": 95.76,
+        "e": 96.12
+      },
+      {
+        "w": "olib",
+        "s": 96.18,
+        "e": 96.32
+      },
+      {
+        "w": "keladi.",
+        "s": 96.36,
+        "e": 96.66
+      }
+    ]
+  },
+  {
+    "id": "L13",
+    "scene": "tipik_xatolar",
+    "text": "Tipik xatolar — umumiy paket ichidagi fayllarga chuqur import qilish va ilovalarning bir-birini to'g'ridan import qilishidir.",
+    "show": "Tipik xatolar — umumiy paket ichidagi fayllarga chuqur import qilish va ilovalarning bir-birini to'g'ridan import qilishidir.",
+    "say": "Tipik xatolar — umumiy paket ichidagi fayllarga chuqur import qilish va ilovalarning bir-birini to'g'ridan import qilishidir.",
+    "a0": 97.4,
+    "a1": 104.57,
+    "words": [
+      {
+        "w": "Tipik",
+        "s": 97.4,
+        "e": 97.75
+      },
+      {
+        "w": "xatolar",
+        "s": 97.81,
+        "e": 98.27
+      },
+      {
+        "w": "—",
+        "s": 98.27,
+        "e": 98.27
+      },
+      {
+        "w": "umumiy",
+        "s": 98.65,
+        "e": 98.99
+      },
+      {
+        "w": "paket",
+        "s": 99.07,
+        "e": 99.37
+      },
+      {
+        "w": "ichidagi",
+        "s": 99.43,
+        "e": 99.75
+      },
+      {
+        "w": "fayllarga",
+        "s": 99.83,
+        "e": 100.33
+      },
+      {
+        "w": "chuqur",
+        "s": 100.39,
+        "e": 100.69
+      },
+      {
+        "w": "import",
+        "s": 100.83,
+        "e": 101.11
+      },
+      {
+        "w": "qilish",
+        "s": 101.15,
+        "e": 101.43
+      },
+      {
+        "w": "va",
+        "s": 101.71,
+        "e": 101.79
+      },
+      {
+        "w": "ilovalarning",
+        "s": 101.95,
+        "e": 102.65
+      },
+      {
+        "w": "bir-birini",
+        "s": 102.73,
+        "e": 103.17
+      },
+      {
+        "w": "to'g'ridan",
+        "s": 103.27,
+        "e": 103.75
+      },
+      {
+        "w": "import",
+        "s": 103.87,
+        "e": 104.13
+      },
+      {
+        "w": "qilishidir.",
+        "s": 104.17,
+        "e": 104.57
+      }
+    ]
+  },
+  {
+    "id": "L14",
+    "scene": "tipik_xatolar",
+    "text": "Shuningdek, sherd-yutils kabi axlat qutilari yaratish va faqat bitta ilovaga kerakli kodni shoshilib paketga chiqarish taqiqlanadi.",
+    "show": "Shuningdek, sherd-yutils kabi axlat qutilari yaratish va faqat bitta ilovaga kerakli kodni shoshilib paketga chiqarish taqiqlanadi.",
+    "say": "Shuningdek, sherd yutils kabi axlat qutilari yaratish va faqat bitta ilovaga kerakli kodni shoshilib paketga chiqarish taqiqlanadi.",
+    "a0": 105.25,
+    "a1": 112.78,
+    "words": [
+      {
+        "w": "Shuningdek,",
+        "s": 105.25,
+        "e": 105.71
+      },
+      {
+        "w": "sherd",
+        "s": 106.11,
+        "e": 106.39
+      },
+      {
+        "w": "yutils",
+        "s": 106.47,
+        "e": 106.83
+      },
+      {
+        "w": "kabi",
+        "s": 106.85,
+        "e": 107.07
+      },
+      {
+        "w": "axlat",
+        "s": 107.21,
+        "e": 107.49
+      },
+      {
+        "w": "qutilari",
+        "s": 107.53,
+        "e": 107.91
+      },
+      {
+        "w": "yaratish",
+        "s": 107.95,
+        "e": 108.39
+      },
+      {
+        "w": "va",
+        "s": 108.69,
+        "e": 108.75
+      },
+      {
+        "w": "faqat",
+        "s": 108.85,
+        "e": 109.13
+      },
+      {
+        "w": "bitta",
+        "s": 109.23,
+        "e": 109.51
+      },
+      {
+        "w": "ilovaga",
+        "s": 109.59,
+        "e": 110.01
+      },
+      {
+        "w": "kerakli",
+        "s": 110.07,
+        "e": 110.43
+      },
+      {
+        "w": "kodni",
+        "s": 110.49,
+        "e": 110.79
+      },
+      {
+        "w": "shoshilib",
+        "s": 110.91,
+        "e": 111.31
+      },
+      {
+        "w": "paketga",
+        "s": 111.35,
+        "e": 111.73
+      },
+      {
+        "w": "chiqarish",
+        "s": 111.77,
+        "e": 112.11
+      },
+      {
+        "w": "taqiqlanadi.",
+        "s": 112.13,
+        "e": 112.78
+      }
+    ]
+  },
+  {
+    "id": "L15",
+    "scene": "xulosa",
+    "text": "Xulosa: To'g'ri tashkil etilgan monorepo FSD intizomini buzmasdan, ulkan tizimlarni erkin masshtablash imkonini beradi.",
+    "show": "Xulosa: To'g'ri tashkil etilgan monorepo FSD intizomini buzmasdan, ulkan tizimlarni erkin masshtablash imkonini beradi.",
+    "say": "Xulosa: To'g'ri tashkil etilgan monorepo Ef-es-di intizomini buzmasdan, ulkan tizimlarni erkin masshtablash imkonini beradi.",
+    "a0": 113.48,
+    "a1": 120.92,
+    "words": [
+      {
+        "w": "Xulosa:",
+        "s": 113.48,
+        "e": 113.86
+      },
+      {
+        "w": "To'g'ri",
+        "s": 114.4,
+        "e": 114.68
+      },
+      {
+        "w": "tashkil",
+        "s": 114.72,
+        "e": 115.0
+      },
+      {
+        "w": "etilgan",
+        "s": 115.04,
+        "e": 115.36
+      },
+      {
+        "w": "monorepo",
+        "s": 115.38,
+        "e": 115.86
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 116.24,
+        "e": 116.64
+      },
+      {
+        "w": "intizomini",
+        "s": 116.76,
+        "e": 117.3
+      },
+      {
+        "w": "buzmasdan,",
+        "s": 117.34,
+        "e": 117.86
+      },
+      {
+        "w": "ulkan",
+        "s": 118.22,
+        "e": 118.56
+      },
+      {
+        "w": "tizimlarni",
+        "s": 118.6,
+        "e": 119.1
+      },
+      {
+        "w": "erkin",
+        "s": 119.28,
+        "e": 119.6
+      },
+      {
+        "w": "masshtablash",
+        "s": 119.64,
+        "e": 120.12
+      },
+      {
+        "w": "imkonini",
+        "s": 120.16,
+        "e": 120.58
+      },
+      {
+        "w": "beradi.",
+        "s": 120.62,
+        "e": 120.92
+      }
+    ]
+  },
+  {
+    "id": "L16",
+    "scene": "xulosa",
+    "text": "Keyingi o'ttiz uchinchi bobda Steiger linterining chuqur imkoniyatlari va arxitektura qoidalarini avtomatlashtirishni ko'ramiz. Rahmat!",
+    "show": "Keyingi o'ttiz uchinchi bobda Steiger linterining chuqur imkoniyatlari va arxitektura qoidalarini avtomatlashtirishni ko'ramiz. Rahmat!",
+    "say": "Keyingi o'ttiz uchinchi bobda stayger linterining chuqur imkoniyatlari va arxitektura qoidalarini avtomatlashtirishni ko'ramiz. Rahmat!",
+    "a0": 121.5,
+    "a1": 130.26,
+    "words": [
+      {
+        "w": "Keyingi",
+        "s": 121.5,
+        "e": 121.88
+      },
+      {
+        "w": "o'ttiz",
+        "s": 121.96,
+        "e": 122.22
+      },
+      {
+        "w": "uchinchi",
+        "s": 122.26,
+        "e": 122.6
+      },
+      {
+        "w": "bobda",
+        "s": 122.65,
+        "e": 122.99
+      },
+      {
+        "w": "stayger",
+        "s": 123.13,
+        "e": 123.61
+      },
+      {
+        "w": "linterining",
+        "s": 123.69,
+        "e": 124.25
+      },
+      {
+        "w": "chuqur",
+        "s": 124.35,
+        "e": 124.67
+      },
+      {
+        "w": "imkoniyatlari",
+        "s": 124.77,
+        "e": 125.57
+      },
+      {
+        "w": "va",
+        "s": 125.99,
+        "e": 126.09
+      },
+      {
+        "w": "arxitektura",
+        "s": 126.23,
+        "e": 126.93
+      },
+      {
+        "w": "qoidalarini",
+        "s": 126.99,
+        "e": 127.57
+      },
+      {
+        "w": "avtomatlashtirishni",
+        "s": 127.71,
+        "e": 128.58
+      },
+      {
+        "w": "ko'ramiz.",
+        "s": 128.62,
+        "e": 128.98
+      },
+      {
+        "w": "Rahmat!",
+        "s": 129.88,
+        "e": 130.26
+      }
+    ]
+  }
+]

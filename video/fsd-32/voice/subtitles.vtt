@@ -1,0 +1,81 @@
+WEBVTT
+
+1
+00:01.420 --> 00:12.200
+Salom! Bu FSD qo'llanmasining o'ttiz ikkinchi bobi — Monorepo arxitekturasi
+va bitta omborda bir nechta FSD ildizlari bilan ishlash strategiyasi.
+
+2
+00:13.370 --> 00:22.180
+Katta korxona tizimlarida storefront, admin paneli va umumiy
+domen alohida FSD ildizlari sifatida monorepoga birlashtiriladi.
+
+3
+00:24.090 --> 00:32.330
+Monorepoda har bir paket o'zining to'liq yoki qisqartirilgan
+FSD qatlamlariga va mustaqil public API siga ega bo'ladi.
+
+4
+00:32.440 --> 00:41.430
+Masalan, storefront barcha qatlamlarni saqlasa, katalog paketi
+faqat entitiz va sherd qatlamlari bilan ixcham FSD ildizi bo'ladi.
+
+5
+00:41.750 --> 00:49.080
+Paketlararo import tashqi kutubxona sifatida ko'riladi va
+pekej jeyson dagi exports orqali qat'iy nazorat qilinadi.
+
+6
+00:52.250 --> 00:59.830
+Tashqi umumiy dizayn tizimi yoki api-klient paketlarini
+ilova ichidagi sherd segmentlarida o'rash eng qulay usuldir.
+
+7
+01:00.140 --> 01:08.030
+Bu yondashuv orqali tashqi kutubxonalarni yangilash yoki
+almashtirish butun ilovani buzmasdan, faqat sherd da amalga oshadi.
+
+8
+01:11.120 --> 01:17.300
+Stayger linteri monorepo ildizidan emas, har bir paketning
+o'z katalogida alohida ishga tushirilishi kerak.
+
+9
+01:17.470 --> 01:23.480
+Shunda har bir FSD ildizining stayger konfig
+sozlamalari va istisnolari to'liq inobatga olinadi.
+
+10
+01:23.910 --> 01:30.540
+npm ning vorkspeysis buyrug'i barcha FSD paketlarini
+birvarakay va toza tekshirib chiqish imkonini beradi.
+
+11
+01:33.610 --> 01:42.590
+Monorepoga faqat jamoalar mustaqil reliz qilganda yoki do'kon va admin
+kabi alohida ilovalar bitta dizayn tizimidan foydalanganda bo'linadi.
+
+12
+01:42.900 --> 01:49.130
+Shunchaki papkalar ko'paygani uchun monorepo ochish
+behuda murakkablik va ortiqcha xarajat olib keladi.
+
+13
+01:52.220 --> 01:59.840
+Tipik xatolar — umumiy paket ichidagi fayllarga chuqur import
+qilish va ilovalarning bir-birini to'g'ridan import qilishidir.
+
+14
+02:00.070 --> 02:08.050
+Shuningdek, sherd-yutils kabi axlat qutilari yaratish va faqat bitta
+ilovaga kerakli kodni shoshilib paketga chiqarish taqiqlanadi.
+
+15
+02:11.100 --> 02:18.990
+Xulosa: To'g'ri tashkil etilgan monorepo FSD intizomini
+buzmasdan, ulkan tizimlarni erkin masshtablash imkonini beradi.
+
+16
+02:19.120 --> 02:28.330
+Keyingi o'ttiz uchinchi bobda Steiger linterining chuqur imkoniyatlari
+va arxitektura qoidalarini avtomatlashtirishni ko'ramiz. Rahmat!
