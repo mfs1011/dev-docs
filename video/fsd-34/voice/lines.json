@@ -1,0 +1,1343 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Salom! Bu FSD qo'llanmasining o'ttiz to'rtinchi bobi — ESLint, TypeScript va aliaslar yordamida FSD arxitekturasini IDE darajasida himoya qilish.",
+    "show": "Salom! Bu FSD qo'llanmasining o'ttiz to'rtinchi bobi — ESLint, TypeScript va aliaslar yordamida FSD arxitekturasini IDE darajasida himoya qilish.",
+    "say": "Salom! Bu Ef-es-di qo'llanmasining o'ttiz to'rtinchi bobi — ESLint, Taypskript va aliaslar yordamida Ef-es-di arxitekturasini IDE darajasida himoya qilish.",
+    "a0": 0.22,
+    "a1": 10.11,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.22,
+        "e": 0.56
+      },
+      {
+        "w": "Bu",
+        "s": 1.0,
+        "e": 1.06
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 1.24,
+        "e": 1.66
+      },
+      {
+        "w": "qo'llanmasining",
+        "s": 1.74,
+        "e": 2.38
+      },
+      {
+        "w": "o'ttiz",
+        "s": 2.54,
+        "e": 2.78
+      },
+      {
+        "w": "to'rtinchi",
+        "s": 2.82,
+        "e": 3.24
+      },
+      {
+        "w": "bobi",
+        "s": 3.28,
+        "e": 3.52
+      },
+      {
+        "w": "—",
+        "s": 3.52,
+        "e": 3.52
+      },
+      {
+        "w": "ESLint,",
+        "s": 3.96,
+        "e": 4.5
+      },
+      {
+        "w": "Taypskript",
+        "s": 4.66,
+        "e": 5.3
+      },
+      {
+        "w": "va",
+        "s": 5.38,
+        "e": 5.44
+      },
+      {
+        "w": "aliaslar",
+        "s": 5.64,
+        "e": 6.18
+      },
+      {
+        "w": "yordamida",
+        "s": 6.24,
+        "e": 6.68
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 6.88,
+        "e": 7.26
+      },
+      {
+        "w": "arxitekturasini",
+        "s": 7.34,
+        "e": 8.13
+      },
+      {
+        "w": "IDE",
+        "s": 8.43,
+        "e": 8.81
+      },
+      {
+        "w": "darajasida",
+        "s": 8.91,
+        "e": 9.43
+      },
+      {
+        "w": "himoya",
+        "s": 9.47,
+        "e": 9.79
+      },
+      {
+        "w": "qilish.",
+        "s": 9.85,
+        "e": 10.11
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "intro",
+    "text": "Steiger butun arxitekturani CI da tekshirsa, ESLint kod yozish paytida IDE da xatolarni darhol qizil bilan ko'rsatib beradi.",
+    "show": "Steiger butun arxitekturani CI da tekshirsa, ESLint kod yozish paytida IDE da xatolarni darhol qizil bilan ko'rsatib beradi.",
+    "say": "Stayger butun arxitekturani CI da tekshirsa, ESLint kod yozish paytida IDE da xatolarni darhol qizil bilan ko'rsatib beradi.",
+    "a0": 11.15,
+    "a1": 19.17,
+    "words": [
+      {
+        "w": "Stayger",
+        "s": 11.15,
+        "e": 11.53
+      },
+      {
+        "w": "butun",
+        "s": 11.63,
+        "e": 11.91
+      },
+      {
+        "w": "arxitekturani",
+        "s": 12.03,
+        "e": 12.77
+      },
+      {
+        "w": "CI",
+        "s": 12.95,
+        "e": 13.33
+      },
+      {
+        "w": "da",
+        "s": 13.37,
+        "e": 13.43
+      },
+      {
+        "w": "tekshirsa,",
+        "s": 13.49,
+        "e": 13.91
+      },
+      {
+        "w": "ESLint",
+        "s": 14.33,
+        "e": 14.81
+      },
+      {
+        "w": "kod",
+        "s": 14.95,
+        "e": 15.17
+      },
+      {
+        "w": "yozish",
+        "s": 15.23,
+        "e": 15.49
+      },
+      {
+        "w": "paytida",
+        "s": 15.53,
+        "e": 15.89
+      },
+      {
+        "w": "IDE",
+        "s": 16.21,
+        "e": 16.55
+      },
+      {
+        "w": "da",
+        "s": 16.63,
+        "e": 16.71
+      },
+      {
+        "w": "xatolarni",
+        "s": 16.77,
+        "e": 17.33
+      },
+      {
+        "w": "darhol",
+        "s": 17.41,
+        "e": 17.81
+      },
+      {
+        "w": "qizil",
+        "s": 17.91,
+        "e": 18.15
+      },
+      {
+        "w": "bilan",
+        "s": 18.19,
+        "e": 18.39
+      },
+      {
+        "w": "ko'rsatib",
+        "s": 18.47,
+        "e": 18.85
+      },
+      {
+        "w": "beradi.",
+        "s": 18.89,
+        "e": 19.17
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "alias_sozlamalari",
+    "text": "Barcha freymvorklarda et belgisi src katalogiga to'g'ri ulanishi va te-es-konfig da paths ko'rsatilishi shart.",
+    "show": "Barcha freymvorklarda et belgisi src katalogiga to'g'ri ulanishi va te-es-konfig da paths ko'rsatilishi shart.",
+    "say": "Barcha freymvorklarda et belgisi src katalogiga to'g'ri ulanishi va te-es konfig da paslar ko'rsatilishi shart.",
+    "a0": 20.11,
+    "a1": 27.16,
+    "words": [
+      {
+        "w": "Barcha",
+        "s": 20.11,
+        "e": 20.39
+      },
+      {
+        "w": "freymvorklarda",
+        "s": 20.43,
+        "e": 21.15
+      },
+      {
+        "w": "et",
+        "s": 21.45,
+        "e": 21.59
+      },
+      {
+        "w": "belgisi",
+        "s": 21.67,
+        "e": 22.11
+      },
+      {
+        "w": "src",
+        "s": 22.33,
+        "e": 22.6
+      },
+      {
+        "w": "katalogiga",
+        "s": 22.66,
+        "e": 23.22
+      },
+      {
+        "w": "to'g'ri",
+        "s": 23.32,
+        "e": 23.62
+      },
+      {
+        "w": "ulanishi",
+        "s": 23.66,
+        "e": 24.08
+      },
+      {
+        "w": "va",
+        "s": 24.46,
+        "e": 24.54
+      },
+      {
+        "w": "te-es",
+        "s": 24.78,
+        "e": 25.06
+      },
+      {
+        "w": "konfig",
+        "s": 25.12,
+        "e": 25.48
+      },
+      {
+        "w": "da",
+        "s": 25.52,
+        "e": 25.6
+      },
+      {
+        "w": "paslar",
+        "s": 25.86,
+        "e": 26.3
+      },
+      {
+        "w": "ko'rsatilishi",
+        "s": 26.34,
+        "e": 26.86
+      },
+      {
+        "w": "shart.",
+        "s": 26.92,
+        "e": 27.16
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "alias_sozlamalari",
+    "text": "Masalan, Next.js dagi sukut bo'yicha beriladigan nuqta yulduzcha yo'lini darhol nuqta src yulduzchaga o'zgartirish kerak.",
+    "show": "Masalan, Next.js dagi sukut bo'yicha beriladigan nuqta yulduzcha yo'lini darhol nuqta src yulduzchaga o'zgartirish kerak.",
+    "say": "Masalan, Nekst jey-es dagi sukut bo'yicha beriladigan nuqta yulduzcha yo'lini darhol nuqta src yulduzchaga o'zgartirish kerak.",
+    "a0": 27.74,
+    "a1": 35.7,
+    "words": [
+      {
+        "w": "Masalan,",
+        "s": 27.74,
+        "e": 28.08
+      },
+      {
+        "w": "Nekst",
+        "s": 28.3,
+        "e": 28.54
+      },
+      {
+        "w": "jey-es",
+        "s": 28.6,
+        "e": 28.86
+      },
+      {
+        "w": "dagi",
+        "s": 28.9,
+        "e": 29.1
+      },
+      {
+        "w": "sukut",
+        "s": 29.24,
+        "e": 29.5
+      },
+      {
+        "w": "bo'yicha",
+        "s": 29.54,
+        "e": 29.8
+      },
+      {
+        "w": "beriladigan",
+        "s": 29.84,
+        "e": 30.36
+      },
+      {
+        "w": "nuqta",
+        "s": 30.7,
+        "e": 31.04
+      },
+      {
+        "w": "yulduzcha",
+        "s": 31.12,
+        "e": 31.6
+      },
+      {
+        "w": "yo'lini",
+        "s": 31.66,
+        "e": 31.96
+      },
+      {
+        "w": "darhol",
+        "s": 32.12,
+        "e": 32.54
+      },
+      {
+        "w": "nuqta",
+        "s": 32.68,
+        "e": 33.04
+      },
+      {
+        "w": "src",
+        "s": 33.44,
+        "e": 34.04
+      },
+      {
+        "w": "yulduzchaga",
+        "s": 34.24,
+        "e": 34.8
+      },
+      {
+        "w": "o'zgartirish",
+        "s": 34.92,
+        "e": 35.42
+      },
+      {
+        "w": "kerak.",
+        "s": 35.44,
+        "e": 35.7
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "alias_sozlamalari",
+    "text": "Taypskript oltida baseUrl shart emas, barcha linterlar va IDE lar paths orqali public API larni aniq tushunadi.",
+    "show": "Taypskript oltida baseUrl shart emas, barcha linterlar va IDE lar paths orqali public API larni aniq tushunadi.",
+    "say": "Taypskript oltida baseUrl shart emas, barcha linterlar va IDE lar paslar orqali public ey-pi-ay larni aniq tushunadi.",
+    "a0": 36.86,
+    "a1": 44.37,
+    "words": [
+      {
+        "w": "Taypskript",
+        "s": 36.86,
+        "e": 37.4
+      },
+      {
+        "w": "oltida",
+        "s": 37.57,
+        "e": 37.93
+      },
+      {
+        "w": "baseUrl",
+        "s": 38.23,
+        "e": 38.93
+      },
+      {
+        "w": "shart",
+        "s": 38.99,
+        "e": 39.23
+      },
+      {
+        "w": "emas,",
+        "s": 39.29,
+        "e": 39.49
+      },
+      {
+        "w": "barcha",
+        "s": 39.89,
+        "e": 40.17
+      },
+      {
+        "w": "linterlar",
+        "s": 40.23,
+        "e": 40.69
+      },
+      {
+        "w": "va",
+        "s": 40.75,
+        "e": 40.81
+      },
+      {
+        "w": "IDE",
+        "s": 41.03,
+        "e": 41.31
+      },
+      {
+        "w": "lar",
+        "s": 41.39,
+        "e": 41.55
+      },
+      {
+        "w": "paslar",
+        "s": 41.71,
+        "e": 42.09
+      },
+      {
+        "w": "orqali",
+        "s": 42.15,
+        "e": 42.47
+      },
+      {
+        "w": "public",
+        "s": 42.57,
+        "e": 42.93
+      },
+      {
+        "w": "ey-pi-ay",
+        "s": 43.03,
+        "e": 43.39
+      },
+      {
+        "w": "larni",
+        "s": 43.43,
+        "e": 43.67
+      },
+      {
+        "w": "aniq",
+        "s": 43.79,
+        "e": 43.97
+      },
+      {
+        "w": "tushunadi.",
+        "s": 44.01,
+        "e": 44.37
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "no_restricted_imports",
+    "text": "IDE larning avto-importi ko'pincha public API o'rniga eng chuqur ichki fayllarni tanlab yuboradi.",
+    "show": "IDE larning avto-importi ko'pincha public API o'rniga eng chuqur ichki fayllarni tanlab yuboradi.",
+    "say": "IDE larning avto-importi ko'pincha public ey-pi-ay o'rniga eng chuqur ichki fayllarni tanlab yuboradi.",
+    "a0": 45.43,
+    "a1": 51.13,
+    "words": [
+      {
+        "w": "IDE",
+        "s": 45.43,
+        "e": 45.71
+      },
+      {
+        "w": "larning",
+        "s": 45.81,
+        "e": 46.13
+      },
+      {
+        "w": "avto-importi",
+        "s": 46.25,
+        "e": 46.93
+      },
+      {
+        "w": "ko'pincha",
+        "s": 47.23,
+        "e": 47.59
+      },
+      {
+        "w": "public",
+        "s": 47.67,
+        "e": 47.97
+      },
+      {
+        "w": "ey-pi-ay",
+        "s": 48.07,
+        "e": 48.41
+      },
+      {
+        "w": "o'rniga",
+        "s": 48.47,
+        "e": 48.77
+      },
+      {
+        "w": "eng",
+        "s": 48.97,
+        "e": 49.11
+      },
+      {
+        "w": "chuqur",
+        "s": 49.17,
+        "e": 49.45
+      },
+      {
+        "w": "ichki",
+        "s": 49.57,
+        "e": 49.79
+      },
+      {
+        "w": "fayllarni",
+        "s": 49.83,
+        "e": 50.35
+      },
+      {
+        "w": "tanlab",
+        "s": 50.41,
+        "e": 50.69
+      },
+      {
+        "w": "yuboradi.",
+        "s": 50.73,
+        "e": 51.13
+      }
+    ]
+  },
+  {
+    "id": "L7",
+    "scene": "no_restricted_imports",
+    "text": "ESLint ning no-restricted-imports qoidasi va regex shabloni orqali slice ichki fayllariga to'g'ridan kirish darhol taqiqlanadi.",
+    "show": "ESLint ning no-restricted-imports qoidasi va regex shabloni orqali slice ichki fayllariga to'g'ridan kirish darhol taqiqlanadi.",
+    "say": "ESLint ning no-restriktid-imports qoidasi va regeks shabloni orqali slays ichki fayllariga to'g'ridan kirish darhol taqiqlanadi.",
+    "a0": 51.79,
+    "a1": 59.7,
+    "words": [
+      {
+        "w": "ESLint",
+        "s": 51.79,
+        "e": 52.23
+      },
+      {
+        "w": "ning",
+        "s": 52.29,
+        "e": 52.43
+      },
+      {
+        "w": "no-restriktid-imports",
+        "s": 52.68,
+        "e": 53.86
+      },
+      {
+        "w": "qoidasi",
+        "s": 53.92,
+        "e": 54.36
+      },
+      {
+        "w": "va",
+        "s": 54.52,
+        "e": 54.6
+      },
+      {
+        "w": "regeks",
+        "s": 54.82,
+        "e": 55.18
+      },
+      {
+        "w": "shabloni",
+        "s": 55.24,
+        "e": 55.62
+      },
+      {
+        "w": "orqali",
+        "s": 55.68,
+        "e": 56.0
+      },
+      {
+        "w": "slays",
+        "s": 56.36,
+        "e": 56.7
+      },
+      {
+        "w": "ichki",
+        "s": 56.8,
+        "e": 57.02
+      },
+      {
+        "w": "fayllariga",
+        "s": 57.08,
+        "e": 57.6
+      },
+      {
+        "w": "to'g'ridan",
+        "s": 57.72,
+        "e": 58.2
+      },
+      {
+        "w": "kirish",
+        "s": 58.26,
+        "e": 58.5
+      },
+      {
+        "w": "darhol",
+        "s": 58.68,
+        "e": 59.04
+      },
+      {
+        "w": "taqiqlanadi.",
+        "s": 59.08,
+        "e": 59.7
+      }
+    ]
+  },
+  {
+    "id": "L8",
+    "scene": "boundaries_plagini",
+    "text": "Boundaries plaginining yettinchi versiyasi qatlamlar yo'nalishini va cross-importlarni to'liq nazorat qiladi.",
+    "show": "Boundaries plaginining yettinchi versiyasi qatlamlar yo'nalishini va cross-importlarni to'liq nazorat qiladi.",
+    "say": "Baundriz plaginining yettinchi versiyasi qatlamlar yo'nalishini va kross-importlarni to'liq nazorat qiladi.",
+    "a0": 60.76,
+    "a1": 66.64,
+    "words": [
+      {
+        "w": "Baundriz",
+        "s": 60.76,
+        "e": 61.22
+      },
+      {
+        "w": "plaginining",
+        "s": 61.26,
+        "e": 61.82
+      },
+      {
+        "w": "yettinchi",
+        "s": 62.0,
+        "e": 62.46
+      },
+      {
+        "w": "versiyasi",
+        "s": 62.48,
+        "e": 62.96
+      },
+      {
+        "w": "qatlamlar",
+        "s": 63.24,
+        "e": 63.74
+      },
+      {
+        "w": "yo'nalishini",
+        "s": 63.78,
+        "e": 64.36
+      },
+      {
+        "w": "va",
+        "s": 64.42,
+        "e": 64.48
+      },
+      {
+        "w": "kross-importlarni",
+        "s": 64.6,
+        "e": 65.5
+      },
+      {
+        "w": "to'liq",
+        "s": 65.6,
+        "e": 65.9
+      },
+      {
+        "w": "nazorat",
+        "s": 65.96,
+        "e": 66.32
+      },
+      {
+        "w": "qiladi.",
+        "s": 66.36,
+        "e": 66.64
+      }
+    ]
+  },
+  {
+    "id": "L9",
+    "scene": "boundaries_plagini",
+    "text": "Har bir qatlam faqat o'zidan pastdagilarni ko'radi, features dan features ga yoki entities dan yuqoriga import qilish qat'iy to'xtatiladi.",
+    "show": "Har bir qatlam faqat o'zidan pastdagilarni ko'radi, features dan features ga yoki entities dan yuqoriga import qilish qat'iy to'xtatiladi.",
+    "say": "Har bir qatlam faqat o'zidan pastdagilarni ko'radi, fichers dan fichers ga yoki entitiz dan yuqoriga import qilish qat'iy to'xtatiladi.",
+    "a0": 67.22,
+    "a1": 74.63,
+    "words": [
+      {
+        "w": "Har",
+        "s": 67.22,
+        "e": 67.36
+      },
+      {
+        "w": "bir",
+        "s": 67.4,
+        "e": 67.48
+      },
+      {
+        "w": "qatlam",
+        "s": 67.55,
+        "e": 67.85
+      },
+      {
+        "w": "faqat",
+        "s": 67.89,
+        "e": 68.17
+      },
+      {
+        "w": "o'zidan",
+        "s": 68.29,
+        "e": 68.59
+      },
+      {
+        "w": "pastdagilarni",
+        "s": 68.67,
+        "e": 69.31
+      },
+      {
+        "w": "ko'radi,",
+        "s": 69.37,
+        "e": 69.67
+      },
+      {
+        "w": "fichers",
+        "s": 70.13,
+        "e": 70.47
+      },
+      {
+        "w": "dan",
+        "s": 70.49,
+        "e": 70.61
+      },
+      {
+        "w": "fichers",
+        "s": 70.67,
+        "e": 71.01
+      },
+      {
+        "w": "ga",
+        "s": 71.05,
+        "e": 71.13
+      },
+      {
+        "w": "yoki",
+        "s": 71.23,
+        "e": 71.47
+      },
+      {
+        "w": "entitiz",
+        "s": 71.63,
+        "e": 72.07
+      },
+      {
+        "w": "dan",
+        "s": 72.09,
+        "e": 72.23
+      },
+      {
+        "w": "yuqoriga",
+        "s": 72.29,
+        "e": 72.75
+      },
+      {
+        "w": "import",
+        "s": 72.91,
+        "e": 73.17
+      },
+      {
+        "w": "qilish",
+        "s": 73.21,
+        "e": 73.47
+      },
+      {
+        "w": "qat'iy",
+        "s": 73.61,
+        "e": 73.99
+      },
+      {
+        "w": "to'xtatiladi.",
+        "s": 74.05,
+        "e": 74.63
+      }
+    ]
+  },
+  {
+    "id": "L10",
+    "scene": "natijalar_va_ide",
+    "text": "Dasturchi xato import yozgan soniyadayoq IDE da qizil chiziq paydo bo'ladi va sababi tushuntiriladi.",
+    "show": "Dasturchi xato import yozgan soniyadayoq IDE da qizil chiziq paydo bo'ladi va sababi tushuntiriladi.",
+    "say": "Dasturchi xato import yozgan soniyadayoq IDE da qizil chiziq paydo bo'ladi va sababi tushuntiriladi.",
+    "a0": 75.69,
+    "a1": 81.57,
+    "words": [
+      {
+        "w": "Dasturchi",
+        "s": 75.69,
+        "e": 76.15
+      },
+      {
+        "w": "xato",
+        "s": 76.21,
+        "e": 76.43
+      },
+      {
+        "w": "import",
+        "s": 76.59,
+        "e": 76.85
+      },
+      {
+        "w": "yozgan",
+        "s": 76.89,
+        "e": 77.25
+      },
+      {
+        "w": "soniyadayoq",
+        "s": 77.29,
+        "e": 77.95
+      },
+      {
+        "w": "IDE",
+        "s": 78.35,
+        "e": 78.67
+      },
+      {
+        "w": "da",
+        "s": 78.75,
+        "e": 78.83
+      },
+      {
+        "w": "qizil",
+        "s": 78.95,
+        "e": 79.21
+      },
+      {
+        "w": "chiziq",
+        "s": 79.27,
+        "e": 79.51
+      },
+      {
+        "w": "paydo",
+        "s": 79.57,
+        "e": 79.81
+      },
+      {
+        "w": "bo'ladi",
+        "s": 79.89,
+        "e": 80.17
+      },
+      {
+        "w": "va",
+        "s": 80.37,
+        "e": 80.45
+      },
+      {
+        "w": "sababi",
+        "s": 80.53,
+        "e": 80.87
+      },
+      {
+        "w": "tushuntiriladi.",
+        "s": 80.93,
+        "e": 81.57
+      }
+    ]
+  },
+  {
+    "id": "L11",
+    "scene": "natijalar_va_ide",
+    "text": "Bu esa xatolarni CI ga yetib bormasdan, kod yozish jarayonining o'zidayoq bartaraf etishni ta'minlaydi.",
+    "show": "Bu esa xatolarni CI ga yetib bormasdan, kod yozish jarayonining o'zidayoq bartaraf etishni ta'minlaydi.",
+    "say": "Bu esa xatolarni CI ga yetib bormasdan, kod yozish jarayonining o'zidayoq bartaraf etishni ta'minlaydi.",
+    "a0": 82.07,
+    "a1": 87.94,
+    "words": [
+      {
+        "w": "Bu",
+        "s": 82.07,
+        "e": 82.15
+      },
+      {
+        "w": "esa",
+        "s": 82.23,
+        "e": 82.41
+      },
+      {
+        "w": "xatolarni",
+        "s": 82.47,
+        "e": 83.04
+      },
+      {
+        "w": "CI",
+        "s": 83.24,
+        "e": 83.34
+      },
+      {
+        "w": "ga",
+        "s": 83.58,
+        "e": 83.66
+      },
+      {
+        "w": "yetib",
+        "s": 83.74,
+        "e": 83.98
+      },
+      {
+        "w": "bormasdan,",
+        "s": 84.02,
+        "e": 84.54
+      },
+      {
+        "w": "kod",
+        "s": 84.82,
+        "e": 85.02
+      },
+      {
+        "w": "yozish",
+        "s": 85.06,
+        "e": 85.36
+      },
+      {
+        "w": "jarayonining",
+        "s": 85.38,
+        "e": 85.96
+      },
+      {
+        "w": "o'zidayoq",
+        "s": 86.12,
+        "e": 86.6
+      },
+      {
+        "w": "bartaraf",
+        "s": 86.66,
+        "e": 87.02
+      },
+      {
+        "w": "etishni",
+        "s": 87.08,
+        "e": 87.36
+      },
+      {
+        "w": "ta'minlaydi.",
+        "s": 87.4,
+        "e": 87.94
+      }
+    ]
+  },
+  {
+    "id": "L12",
+    "scene": "tipik_xatolar",
+    "text": "Tipik xatolar — faqat bandler aliasini sozlab, te-es-konfig dagi paths ni unutish va eski boundaries sintaksisidan nusxa olishdir.",
+    "show": "Tipik xatolar — faqat bandler aliasini sozlab, te-es-konfig dagi paths ni unutish va eski boundaries sintaksisidan nusxa olishdir.",
+    "say": "Tipik xatolar — faqat bandler aliasini sozlab, te-es konfig dagi paslarni unutish va eski Baundriz sintaksisidan nusxa olishdir.",
+    "a0": 89.1,
+    "a1": 96.8,
+    "words": [
+      {
+        "w": "Tipik",
+        "s": 89.1,
+        "e": 89.38
+      },
+      {
+        "w": "xatolar",
+        "s": 89.42,
+        "e": 89.84
+      },
+      {
+        "w": "—",
+        "s": 89.84,
+        "e": 89.84
+      },
+      {
+        "w": "faqat",
+        "s": 90.18,
+        "e": 90.46
+      },
+      {
+        "w": "bandler",
+        "s": 90.64,
+        "e": 91.02
+      },
+      {
+        "w": "aliasini",
+        "s": 91.16,
+        "e": 91.64
+      },
+      {
+        "w": "sozlab,",
+        "s": 91.68,
+        "e": 92.02
+      },
+      {
+        "w": "te-es",
+        "s": 92.28,
+        "e": 92.56
+      },
+      {
+        "w": "konfig",
+        "s": 92.6,
+        "e": 92.94
+      },
+      {
+        "w": "dagi",
+        "s": 92.96,
+        "e": 93.16
+      },
+      {
+        "w": "paslarni",
+        "s": 93.22,
+        "e": 93.68
+      },
+      {
+        "w": "unutish",
+        "s": 93.74,
+        "e": 94.1
+      },
+      {
+        "w": "va",
+        "s": 94.4,
+        "e": 94.48
+      },
+      {
+        "w": "eski",
+        "s": 94.64,
+        "e": 94.86
+      },
+      {
+        "w": "Baundriz",
+        "s": 94.94,
+        "e": 95.36
+      },
+      {
+        "w": "sintaksisidan",
+        "s": 95.4,
+        "e": 96.1
+      },
+      {
+        "w": "nusxa",
+        "s": 96.14,
+        "e": 96.4
+      },
+      {
+        "w": "olishdir.",
+        "s": 96.4,
+        "e": 96.8
+      }
+    ]
+  },
+  {
+    "id": "L13",
+    "scene": "tipik_xatolar",
+    "text": "Shuningdek, te-es resolverni o'rnatmaslik tufayli ESLint ning et belgisi bilan boshlangan yo'llarni taniy olmasligidir.",
+    "show": "Shuningdek, te-es resolverni o'rnatmaslik tufayli ESLint ning et belgisi bilan boshlangan yo'llarni taniy olmasligidir.",
+    "say": "Shuningdek, te-es rizolverni o'rnatmaslik tufayli ESLint ning et belgisi bilan boshlangan yo'llarni taniy olmasligidir.",
+    "a0": 97.34,
+    "a1": 103.83,
+    "words": [
+      {
+        "w": "Shuningdek,",
+        "s": 97.34,
+        "e": 97.77
+      },
+      {
+        "w": "te-es",
+        "s": 97.91,
+        "e": 98.21
+      },
+      {
+        "w": "rizolverni",
+        "s": 98.29,
+        "e": 98.85
+      },
+      {
+        "w": "o'rnatmaslik",
+        "s": 98.93,
+        "e": 99.49
+      },
+      {
+        "w": "tufayli",
+        "s": 99.53,
+        "e": 99.83
+      },
+      {
+        "w": "ESLint",
+        "s": 100.19,
+        "e": 100.67
+      },
+      {
+        "w": "ning",
+        "s": 100.73,
+        "e": 100.87
+      },
+      {
+        "w": "et",
+        "s": 101.07,
+        "e": 101.19
+      },
+      {
+        "w": "belgisi",
+        "s": 101.27,
+        "e": 101.63
+      },
+      {
+        "w": "bilan",
+        "s": 101.65,
+        "e": 101.83
+      },
+      {
+        "w": "boshlangan",
+        "s": 101.87,
+        "e": 102.31
+      },
+      {
+        "w": "yo'llarni",
+        "s": 102.35,
+        "e": 102.77
+      },
+      {
+        "w": "taniy",
+        "s": 102.85,
+        "e": 103.11
+      },
+      {
+        "w": "olmasligidir.",
+        "s": 103.21,
+        "e": 103.83
+      }
+    ]
+  },
+  {
+    "id": "L14",
+    "scene": "xulosa",
+    "text": "Xulosa: Steiger va ESLint birgalikda FSD intizomini ham tahrirlashda, ham CI da yuz foiz kafolatlaydi.",
+    "show": "Xulosa: Steiger va ESLint birgalikda FSD intizomini ham tahrirlashda, ham CI da yuz foiz kafolatlaydi.",
+    "say": "Xulosa: stayger va ESLint birgalikda Ef-es-di intizomini ham tahrirlashda, ham CI da yuz foiz kafolatlaydi.",
+    "a0": 104.65,
+    "a1": 111.73,
+    "words": [
+      {
+        "w": "Xulosa:",
+        "s": 104.65,
+        "e": 105.03
+      },
+      {
+        "w": "stayger",
+        "s": 105.49,
+        "e": 105.89
+      },
+      {
+        "w": "va",
+        "s": 105.95,
+        "e": 106.01
+      },
+      {
+        "w": "ESLint",
+        "s": 106.15,
+        "e": 106.59
+      },
+      {
+        "w": "birgalikda",
+        "s": 106.69,
+        "e": 107.19
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 107.35,
+        "e": 107.73
+      },
+      {
+        "w": "intizomini",
+        "s": 107.77,
+        "e": 108.25
+      },
+      {
+        "w": "ham",
+        "s": 108.53,
+        "e": 108.71
+      },
+      {
+        "w": "tahrirlashda,",
+        "s": 108.77,
+        "e": 109.43
+      },
+      {
+        "w": "ham",
+        "s": 109.61,
+        "e": 109.77
+      },
+      {
+        "w": "CI",
+        "s": 109.85,
+        "e": 110.13
+      },
+      {
+        "w": "da",
+        "s": 110.17,
+        "e": 110.25
+      },
+      {
+        "w": "yuz",
+        "s": 110.49,
+        "e": 110.69
+      },
+      {
+        "w": "foiz",
+        "s": 110.75,
+        "e": 111.03
+      },
+      {
+        "w": "kafolatlaydi.",
+        "s": 111.07,
+        "e": 111.73
+      }
+    ]
+  },
+  {
+    "id": "L15",
+    "scene": "xulosa",
+    "text": "Keyingi o'ttiz beshinchi bobda FSD arxitekturasida testlash strategiyasini o'rganamiz.",
+    "show": "Keyingi o'ttiz beshinchi bobda FSD arxitekturasida testlash strategiyasini o'rganamiz.",
+    "say": "Keyingi o'ttiz beshinchi bobda Ef-es-di arxitekturasida testlash strategiyasini o'rganamiz.",
+    "a0": 112.35,
+    "a1": 117.12,
+    "words": [
+      {
+        "w": "Keyingi",
+        "s": 112.35,
+        "e": 112.66
+      },
+      {
+        "w": "o'ttiz",
+        "s": 112.84,
+        "e": 113.06
+      },
+      {
+        "w": "beshinchi",
+        "s": 113.12,
+        "e": 113.48
+      },
+      {
+        "w": "bobda",
+        "s": 113.52,
+        "e": 113.8
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 114.14,
+        "e": 114.5
+      },
+      {
+        "w": "arxitekturasida",
+        "s": 114.58,
+        "e": 115.38
+      },
+      {
+        "w": "testlash",
+        "s": 115.5,
+        "e": 115.96
+      },
+      {
+        "w": "strategiyasini",
+        "s": 115.96,
+        "e": 116.6
+      },
+      {
+        "w": "o'rganamiz.",
+        "s": 116.64,
+        "e": 117.12
+      }
+    ]
+  },
+  {
+    "id": "L16",
+    "scene": "xulosa",
+    "text": "E'tiboringiz uchun rahmat, bilim olishdan to'xtamang!",
+    "show": "E'tiboringiz uchun rahmat, bilim olishdan to'xtamang!",
+    "say": "E'tiboringiz uchun rahmat, bilim olishdan to'xtamang!",
+    "a0": 117.52,
+    "a1": 120.0,
+    "words": [
+      {
+        "w": "E'tiboringiz",
+        "s": 117.52,
+        "e": 118.02
+      },
+      {
+        "w": "uchun",
+        "s": 118.04,
+        "e": 118.24
+      },
+      {
+        "w": "rahmat,",
+        "s": 118.32,
+        "e": 118.68
+      },
+      {
+        "w": "bilim",
+        "s": 118.88,
+        "e": 119.1
+      },
+      {
+        "w": "olishdan",
+        "s": 119.16,
+        "e": 119.52
+      },
+      {
+        "w": "to'xtamang!",
+        "s": 119.6,
+        "e": 120.0
+      }
+    ]
+  }
+]
