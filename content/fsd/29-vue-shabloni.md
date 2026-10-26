@@ -4,6 +4,14 @@
 
 ## Qisqacha
 
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/fsd/29-vue-shabloni.jpg" src="/video/fsd/29-vue-shabloni.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/fsd/29-vue-shabloni.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/fsd/29-vue-shabloni.uz.vtt">
+</video>
+<figcaption>Bob videoda: Vue 3 + Vite ishlab chiqarish shabloni — Vue 3.5, Pinia 4, TanStack Vue Query, SFC public API va slotlar orqali kompozitsiya.</figcaption>
+</figure>
+
 Vue 3 + Vite + Vue Router + Pinia + TanStack Vue Query uchun **tayyor FSD shabloni**. 2026-yil oktabrda `npm create vue@latest` bilan yaratilgan haqiqiy loyihada qurildi: `npm run build` (`vue-tsc --build` + Vite build) va `npx steiger src` xatosiz o'tdi. Steiger `.vue` fayllar ichidagi importlarni ham tekshiradi — cross-import va public API'ni chetlab o'tish ushlanishi sinab ko'rildi.
 
 | Paket | Versiya |

@@ -1,0 +1,1588 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Salom! Bu FSD qo'llanmasining yigirma to'qqizinchi bobi — Vue 3 va Vite uchun to'liq ishlab chiqarish shabloni. Bugun Vue 3, Pinia, TanStack Vue Query va Vue Router asosida Steiger linteridan to'liq o'tuvchi FSD loyihasini quramiz.",
+    "show": "Salom! Bu FSD qo'llanmasining yigirma to'qqizinchi bobi — Vue 3 va Vite uchun to'liq ishlab chiqarish shabloni. Bugun Vue 3, Pinia, TanStack Vue Query va Vue Router asosida Steiger linteridan to'liq o'tuvchi FSD loyihasini quramiz.",
+    "say": "Salom! Bu Ef-es-di qo'llanmasining yigirma to'qqizinchi bobi — Vue 3 va Vite uchun to'liq ishlab chiqarish shabloni. Bugun Vue 3, Piniya, TanStack Vue kveri va Vue Router asosida stayger linteridan to'liq o'tuvchi Ef-es-di loyihasini quramiz.",
+    "a0": 0.34,
+    "a1": 15.75,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.34,
+        "e": 0.64
+      },
+      {
+        "w": "Bu",
+        "s": 1.12,
+        "e": 1.2
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 1.32,
+        "e": 1.7
+      },
+      {
+        "w": "qo'llanmasining",
+        "s": 1.8,
+        "e": 2.46
+      },
+      {
+        "w": "yigirma",
+        "s": 2.5,
+        "e": 2.8
+      },
+      {
+        "w": "to'qqizinchi",
+        "s": 2.84,
+        "e": 3.42
+      },
+      {
+        "w": "bobi",
+        "s": 3.5,
+        "e": 3.74
+      },
+      {
+        "w": "—",
+        "s": 3.74,
+        "e": 3.74
+      },
+      {
+        "w": "Vue",
+        "s": 4.18,
+        "e": 4.36
+      },
+      {
+        "w": "3",
+        "s": 4.36,
+        "e": 4.36
+      },
+      {
+        "w": "va",
+        "s": 4.76,
+        "e": 4.82
+      },
+      {
+        "w": "Vite",
+        "s": 4.92,
+        "e": 5.08
+      },
+      {
+        "w": "uchun",
+        "s": 5.16,
+        "e": 5.38
+      },
+      {
+        "w": "to'liq",
+        "s": 5.48,
+        "e": 5.76
+      },
+      {
+        "w": "ishlab",
+        "s": 5.86,
+        "e": 6.12
+      },
+      {
+        "w": "chiqarish",
+        "s": 6.16,
+        "e": 6.56
+      },
+      {
+        "w": "shabloni.",
+        "s": 6.58,
+        "e": 7.02
+      },
+      {
+        "w": "Bugun",
+        "s": 7.81,
+        "e": 8.09
+      },
+      {
+        "w": "Vue",
+        "s": 8.23,
+        "e": 8.41
+      },
+      {
+        "w": "3,",
+        "s": 8.41,
+        "e": 8.41
+      },
+      {
+        "w": "Piniya,",
+        "s": 8.99,
+        "e": 9.39
+      },
+      {
+        "w": "TanStack",
+        "s": 9.65,
+        "e": 10.13
+      },
+      {
+        "w": "Vue",
+        "s": 10.19,
+        "e": 10.33
+      },
+      {
+        "w": "kveri",
+        "s": 10.41,
+        "e": 10.69
+      },
+      {
+        "w": "va",
+        "s": 10.79,
+        "e": 10.85
+      },
+      {
+        "w": "Vue",
+        "s": 10.93,
+        "e": 11.09
+      },
+      {
+        "w": "Router",
+        "s": 11.19,
+        "e": 11.51
+      },
+      {
+        "w": "asosida",
+        "s": 11.57,
+        "e": 12.01
+      },
+      {
+        "w": "stayger",
+        "s": 12.37,
+        "e": 12.83
+      },
+      {
+        "w": "linteridan",
+        "s": 12.91,
+        "e": 13.43
+      },
+      {
+        "w": "to'liq",
+        "s": 13.53,
+        "e": 13.83
+      },
+      {
+        "w": "o'tuvchi",
+        "s": 13.91,
+        "e": 14.29
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 14.39,
+        "e": 14.77
+      },
+      {
+        "w": "loyihasini",
+        "s": 14.85,
+        "e": 15.35
+      },
+      {
+        "w": "quramiz.",
+        "s": 15.39,
+        "e": 15.75
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "intro",
+    "text": "Ushbu shablon create-vue asosida qurilgan bo'lib, barcha Single File Component lar ichidagi importlar Steiger tomonidan to'liq tekshiriladi.",
+    "show": "Ushbu shablon create-vue asosida qurilgan bo'lib, barcha Single File Component lar ichidagi importlar Steiger tomonidan to'liq tekshiriladi.",
+    "say": "Ushbu shablon krieyt-vyu asosida qurilgan bo'lib, barcha Singl Fayl Komponentlar ichidagi importlar stayger tomonidan to'liq tekshiriladi.",
+    "a0": 16.75,
+    "a1": 24.12,
+    "words": [
+      {
+        "w": "Ushbu",
+        "s": 16.75,
+        "e": 16.97
+      },
+      {
+        "w": "shablon",
+        "s": 17.03,
+        "e": 17.43
+      },
+      {
+        "w": "krieyt-vyu",
+        "s": 17.51,
+        "e": 18.05
+      },
+      {
+        "w": "asosida",
+        "s": 18.15,
+        "e": 18.51
+      },
+      {
+        "w": "qurilgan",
+        "s": 18.55,
+        "e": 18.95
+      },
+      {
+        "w": "bo'lib,",
+        "s": 18.99,
+        "e": 19.21
+      },
+      {
+        "w": "barcha",
+        "s": 19.47,
+        "e": 19.75
+      },
+      {
+        "w": "Singl",
+        "s": 19.93,
+        "e": 20.21
+      },
+      {
+        "w": "Fayl",
+        "s": 20.27,
+        "e": 20.51
+      },
+      {
+        "w": "Komponentlar",
+        "s": 20.55,
+        "e": 21.15
+      },
+      {
+        "w": "ichidagi",
+        "s": 21.21,
+        "e": 21.55
+      },
+      {
+        "w": "importlar",
+        "s": 21.61,
+        "e": 22.03
+      },
+      {
+        "w": "stayger",
+        "s": 22.29,
+        "e": 22.7
+      },
+      {
+        "w": "tomonidan",
+        "s": 22.74,
+        "e": 23.2
+      },
+      {
+        "w": "to'liq",
+        "s": 23.26,
+        "e": 23.52
+      },
+      {
+        "w": "tekshiriladi.",
+        "s": 23.56,
+        "e": 24.12
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "yaratish_va_tuzilma",
+    "text": "create-vue buyrug'i yordamida loyiha yaratiladi va undagi eski views, components va stores papkalari to'liq o'chiriladi.",
+    "show": "create-vue buyrug'i yordamida loyiha yaratiladi va undagi eski views, components va stores papkalari to'liq o'chiriladi.",
+    "say": "Krieyt-vyu buyrug'i yordamida loyiha yaratiladi va undagi eski views, komponents va stores papkalari to'liq o'chiriladi.",
+    "a0": 24.94,
+    "a1": 31.64,
+    "words": [
+      {
+        "w": "Krieyt-vyu",
+        "s": 24.94,
+        "e": 25.46
+      },
+      {
+        "w": "buyrug'i",
+        "s": 25.52,
+        "e": 25.84
+      },
+      {
+        "w": "yordamida",
+        "s": 25.84,
+        "e": 26.34
+      },
+      {
+        "w": "loyiha",
+        "s": 26.44,
+        "e": 26.72
+      },
+      {
+        "w": "yaratiladi",
+        "s": 26.78,
+        "e": 27.3
+      },
+      {
+        "w": "va",
+        "s": 27.38,
+        "e": 27.44
+      },
+      {
+        "w": "undagi",
+        "s": 27.54,
+        "e": 27.86
+      },
+      {
+        "w": "eski",
+        "s": 27.96,
+        "e": 28.22
+      },
+      {
+        "w": "views,",
+        "s": 28.4,
+        "e": 28.8
+      },
+      {
+        "w": "komponents",
+        "s": 28.98,
+        "e": 29.62
+      },
+      {
+        "w": "va",
+        "s": 29.68,
+        "e": 29.74
+      },
+      {
+        "w": "stores",
+        "s": 29.84,
+        "e": 30.14
+      },
+      {
+        "w": "papkalari",
+        "s": 30.2,
+        "e": 30.64
+      },
+      {
+        "w": "to'liq",
+        "s": 30.72,
+        "e": 31.02
+      },
+      {
+        "w": "o'chiriladi.",
+        "s": 31.12,
+        "e": 31.64
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "yaratish_va_tuzilma",
+    "text": "Buning o'rniga FSD ning qat'iy olti qatlami barpo etilib, App nuqta vue fayli to'g'ridan-to'g'ri src app ichiga ko'chiriladi.",
+    "show": "Buning o'rniga FSD ning qat'iy olti qatlami barpo etilib, App nuqta vue fayli to'g'ridan-to'g'ri src app ichiga ko'chiriladi.",
+    "say": "Buning o'rniga Ef-es-di ning qat'iy olti qatlami barpo etilib, Ep nuqta vyu fayli to'g'ridan-to'g'ri src ep ichiga ko'chiriladi.",
+    "a0": 32.54,
+    "a1": 39.51,
+    "words": [
+      {
+        "w": "Buning",
+        "s": 32.54,
+        "e": 32.76
+      },
+      {
+        "w": "o'rniga",
+        "s": 32.8,
+        "e": 33.12
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 33.2,
+        "e": 33.56
+      },
+      {
+        "w": "ning",
+        "s": 33.62,
+        "e": 33.76
+      },
+      {
+        "w": "qat'iy",
+        "s": 33.82,
+        "e": 34.14
+      },
+      {
+        "w": "olti",
+        "s": 34.32,
+        "e": 34.56
+      },
+      {
+        "w": "qatlami",
+        "s": 34.62,
+        "e": 35.0
+      },
+      {
+        "w": "barpo",
+        "s": 35.06,
+        "e": 35.32
+      },
+      {
+        "w": "etilib,",
+        "s": 35.42,
+        "e": 35.7
+      },
+      {
+        "w": "Ep",
+        "s": 36.02,
+        "e": 36.12
+      },
+      {
+        "w": "nuqta",
+        "s": 36.2,
+        "e": 36.46
+      },
+      {
+        "w": "vyu",
+        "s": 36.52,
+        "e": 36.68
+      },
+      {
+        "w": "fayli",
+        "s": 36.74,
+        "e": 37.04
+      },
+      {
+        "w": "to'g'ridan-to'g'ri",
+        "s": 37.08,
+        "e": 37.75
+      },
+      {
+        "w": "src",
+        "s": 37.97,
+        "e": 38.19
+      },
+      {
+        "w": "ep",
+        "s": 38.45,
+        "e": 38.57
+      },
+      {
+        "w": "ichiga",
+        "s": 38.65,
+        "e": 38.91
+      },
+      {
+        "w": "ko'chiriladi.",
+        "s": 38.97,
+        "e": 39.51
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "yaratish_va_tuzilma",
+    "text": "create-vue da et belgisi uchun alias allaqachon sozlangan bo'lib, faqat index nuqta html da skript yo'lini main nuqta te-es ga yo'naltirish kifoya.",
+    "show": "create-vue da et belgisi uchun alias allaqachon sozlangan bo'lib, faqat index nuqta html da skript yo'lini main nuqta te-es ga yo'naltirish kifoya.",
+    "say": "Krieyt-vyu da et belgisi uchun alias allaqachon sozlangan bo'lib, faqat index nuqta html da skript yo'lini meyn nuqta te-es ga yo'naltirish kifoya.",
+    "a0": 40.43,
+    "a1": 48.77,
+    "words": [
+      {
+        "w": "Krieyt-vyu",
+        "s": 40.43,
+        "e": 40.95
+      },
+      {
+        "w": "da",
+        "s": 41.03,
+        "e": 41.11
+      },
+      {
+        "w": "et",
+        "s": 41.27,
+        "e": 41.39
+      },
+      {
+        "w": "belgisi",
+        "s": 41.43,
+        "e": 41.77
+      },
+      {
+        "w": "uchun",
+        "s": 41.83,
+        "e": 42.05
+      },
+      {
+        "w": "alias",
+        "s": 42.17,
+        "e": 42.51
+      },
+      {
+        "w": "allaqachon",
+        "s": 42.61,
+        "e": 43.09
+      },
+      {
+        "w": "sozlangan",
+        "s": 43.13,
+        "e": 43.63
+      },
+      {
+        "w": "bo'lib,",
+        "s": 43.65,
+        "e": 43.87
+      },
+      {
+        "w": "faqat",
+        "s": 44.11,
+        "e": 44.39
+      },
+      {
+        "w": "index",
+        "s": 44.51,
+        "e": 44.83
+      },
+      {
+        "w": "nuqta",
+        "s": 44.93,
+        "e": 45.19
+      },
+      {
+        "w": "html",
+        "s": 45.43,
+        "e": 45.79
+      },
+      {
+        "w": "da",
+        "s": 45.85,
+        "e": 45.93
+      },
+      {
+        "w": "skript",
+        "s": 46.05,
+        "e": 46.37
+      },
+      {
+        "w": "yo'lini",
+        "s": 46.43,
+        "e": 46.73
+      },
+      {
+        "w": "meyn",
+        "s": 46.85,
+        "e": 47.09
+      },
+      {
+        "w": "nuqta",
+        "s": 47.15,
+        "e": 47.41
+      },
+      {
+        "w": "te-es",
+        "s": 47.47,
+        "e": 47.73
+      },
+      {
+        "w": "ga",
+        "s": 47.77,
+        "e": 47.85
+      },
+      {
+        "w": "yo'naltirish",
+        "s": 47.91,
+        "e": 48.39
+      },
+      {
+        "w": "kifoya.",
+        "s": 48.41,
+        "e": 48.77
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "pinia_va_composablelar",
+    "text": "Eng muhim qoida: alohida markaziy stores yoki composables papkalari taqiqlanadi, chunki ular arxitektura yaxlitligini buzadi.",
+    "show": "Eng muhim qoida: alohida markaziy stores yoki composables papkalari taqiqlanadi, chunki ular arxitektura yaxlitligini buzadi.",
+    "say": "Eng muhim qoida: alohida markaziy stores yoki composables papkalari taqiqlanadi, chunki ular arxitektura yaxlitligini buzadi.",
+    "a0": 49.81,
+    "a1": 56.98,
+    "words": [
+      {
+        "w": "Eng",
+        "s": 49.81,
+        "e": 49.93
+      },
+      {
+        "w": "muhim",
+        "s": 49.97,
+        "e": 50.21
+      },
+      {
+        "w": "qoida:",
+        "s": 50.29,
+        "e": 50.59
+      },
+      {
+        "w": "alohida",
+        "s": 51.01,
+        "e": 51.43
+      },
+      {
+        "w": "markaziy",
+        "s": 51.49,
+        "e": 51.91
+      },
+      {
+        "w": "stores",
+        "s": 52.01,
+        "e": 52.35
+      },
+      {
+        "w": "yoki",
+        "s": 52.39,
+        "e": 52.6
+      },
+      {
+        "w": "composables",
+        "s": 52.66,
+        "e": 53.28
+      },
+      {
+        "w": "papkalari",
+        "s": 53.32,
+        "e": 53.76
+      },
+      {
+        "w": "taqiqlanadi,",
+        "s": 53.8,
+        "e": 54.44
+      },
+      {
+        "w": "chunki",
+        "s": 54.72,
+        "e": 54.96
+      },
+      {
+        "w": "ular",
+        "s": 55.02,
+        "e": 55.22
+      },
+      {
+        "w": "arxitektura",
+        "s": 55.34,
+        "e": 55.96
+      },
+      {
+        "w": "yaxlitligini",
+        "s": 56.02,
+        "e": 56.6
+      },
+      {
+        "w": "buzadi.",
+        "s": 56.64,
+        "e": 56.98
+      }
+    ]
+  },
+  {
+    "id": "L7",
+    "scene": "pinia_va_composablelar",
+    "text": "Har bir Pinia store va composable funksiya o'ziga tegishli slice'ning model yoki lib segmenti ichida saqlanadi.",
+    "show": "Har bir Pinia store va composable funksiya o'ziga tegishli slice'ning model yoki lib segmenti ichida saqlanadi.",
+    "say": "Har bir Piniya stor va composable funksiya o'ziga tegishli slays'ning model yoki lib segmenti ichida saqlanadi.",
+    "a0": 57.84,
+    "a1": 64.08,
+    "words": [
+      {
+        "w": "Har",
+        "s": 57.84,
+        "e": 58.0
+      },
+      {
+        "w": "bir",
+        "s": 58.04,
+        "e": 58.16
+      },
+      {
+        "w": "Piniya",
+        "s": 58.22,
+        "e": 58.54
+      },
+      {
+        "w": "stor",
+        "s": 58.64,
+        "e": 58.96
+      },
+      {
+        "w": "va",
+        "s": 59.02,
+        "e": 59.08
+      },
+      {
+        "w": "composable",
+        "s": 59.16,
+        "e": 59.74
+      },
+      {
+        "w": "funksiya",
+        "s": 59.76,
+        "e": 60.1
+      },
+      {
+        "w": "o'ziga",
+        "s": 60.44,
+        "e": 60.68
+      },
+      {
+        "w": "tegishli",
+        "s": 60.74,
+        "e": 61.1
+      },
+      {
+        "w": "slays'ning",
+        "s": 61.18,
+        "e": 61.68
+      },
+      {
+        "w": "model",
+        "s": 61.88,
+        "e": 62.16
+      },
+      {
+        "w": "yoki",
+        "s": 62.18,
+        "e": 62.46
+      },
+      {
+        "w": "lib",
+        "s": 62.66,
+        "e": 62.82
+      },
+      {
+        "w": "segmenti",
+        "s": 62.88,
+        "e": 63.28
+      },
+      {
+        "w": "ichida",
+        "s": 63.32,
+        "e": 63.54
+      },
+      {
+        "w": "saqlanadi.",
+        "s": 63.6,
+        "e": 64.08
+      }
+    ]
+  },
+  {
+    "id": "L8",
+    "scene": "public_api_va_main",
+    "text": "Vue komponentlari default eksport qilingani sababli, public API faylida export default as ProductCard ko'rinishida nomlanadi.",
+    "show": "Vue komponentlari default eksport qilingani sababli, public API faylida export default as ProductCard ko'rinishida nomlanadi.",
+    "say": "Vue komponentlari default eksport qilingani sababli, public ey-pi-ay faylida export default as Prodakt Kard ko'rinishida nomlanadi.",
+    "a0": 64.98,
+    "a1": 71.95,
+    "words": [
+      {
+        "w": "Vue",
+        "s": 64.98,
+        "e": 65.14
+      },
+      {
+        "w": "komponentlari",
+        "s": 65.22,
+        "e": 65.9
+      },
+      {
+        "w": "default",
+        "s": 65.98,
+        "e": 66.32
+      },
+      {
+        "w": "eksport",
+        "s": 66.38,
+        "e": 66.68
+      },
+      {
+        "w": "qilingani",
+        "s": 66.7,
+        "e": 67.08
+      },
+      {
+        "w": "sababli,",
+        "s": 67.14,
+        "e": 67.53
+      },
+      {
+        "w": "public",
+        "s": 67.63,
+        "e": 67.97
+      },
+      {
+        "w": "ey-pi-ay",
+        "s": 68.03,
+        "e": 68.37
+      },
+      {
+        "w": "faylida",
+        "s": 68.41,
+        "e": 68.81
+      },
+      {
+        "w": "export",
+        "s": 69.15,
+        "e": 69.51
+      },
+      {
+        "w": "default",
+        "s": 69.55,
+        "e": 69.95
+      },
+      {
+        "w": "as",
+        "s": 70.05,
+        "e": 70.19
+      },
+      {
+        "w": "Prodakt",
+        "s": 70.27,
+        "e": 70.67
+      },
+      {
+        "w": "Kard",
+        "s": 70.73,
+        "e": 70.91
+      },
+      {
+        "w": "ko'rinishida",
+        "s": 70.95,
+        "e": 71.41
+      },
+      {
+        "w": "nomlanadi.",
+        "s": 71.47,
+        "e": 71.95
+      }
+    ]
+  },
+  {
+    "id": "L9",
+    "scene": "public_api_va_main",
+    "text": "Kirish nuqtasi bo'lgan main nuqta te-es da Pinia, VueQueryPlugin va router ilovaga ulanadi va mount qilinadi.",
+    "show": "Kirish nuqtasi bo'lgan main nuqta te-es da Pinia, VueQueryPlugin va router ilovaga ulanadi va mount qilinadi.",
+    "say": "Kirish nuqtasi bo'lgan meyn nuqta te-es da Piniya, Vyu Kveri Plagin va router ilovaga ulanadi va mount qilinadi.",
+    "a0": 72.93,
+    "a1": 79.15,
+    "words": [
+      {
+        "w": "Kirish",
+        "s": 72.93,
+        "e": 73.17
+      },
+      {
+        "w": "nuqtasi",
+        "s": 73.19,
+        "e": 73.57
+      },
+      {
+        "w": "bo'lgan",
+        "s": 73.61,
+        "e": 73.95
+      },
+      {
+        "w": "meyn",
+        "s": 74.01,
+        "e": 74.23
+      },
+      {
+        "w": "nuqta",
+        "s": 74.27,
+        "e": 74.53
+      },
+      {
+        "w": "te-es",
+        "s": 74.59,
+        "e": 74.85
+      },
+      {
+        "w": "da",
+        "s": 74.91,
+        "e": 74.99
+      },
+      {
+        "w": "Piniya,",
+        "s": 75.13,
+        "e": 75.53
+      },
+      {
+        "w": "Vyu",
+        "s": 75.81,
+        "e": 75.97
+      },
+      {
+        "w": "Kveri",
+        "s": 76.05,
+        "e": 76.31
+      },
+      {
+        "w": "Plagin",
+        "s": 76.37,
+        "e": 76.81
+      },
+      {
+        "w": "va",
+        "s": 76.87,
+        "e": 76.95
+      },
+      {
+        "w": "router",
+        "s": 77.03,
+        "e": 77.37
+      },
+      {
+        "w": "ilovaga",
+        "s": 77.43,
+        "e": 77.79
+      },
+      {
+        "w": "ulanadi",
+        "s": 77.85,
+        "e": 78.23
+      },
+      {
+        "w": "va",
+        "s": 78.29,
+        "e": 78.35
+      },
+      {
+        "w": "mount",
+        "s": 78.45,
+        "e": 78.71
+      },
+      {
+        "w": "qilinadi.",
+        "s": 78.77,
+        "e": 79.15
+      }
+    ]
+  },
+  {
+    "id": "L10",
+    "scene": "public_api_va_main",
+    "text": "Router konfiguratsiyasida esa sahifalar alohida chunk bo'lib yuklanishi uchun dinamik import orqali public API dan olinadi.",
+    "show": "Router konfiguratsiyasida esa sahifalar alohida chunk bo'lib yuklanishi uchun dinamik import orqali public API dan olinadi.",
+    "say": "Router konfiguratsiyasida esa sahifalar alohida chank bo'lib yuklanishi uchun dinamik import orqali public ey-pi-ay dan olinadi.",
+    "a0": 80.01,
+    "a1": 86.52,
+    "words": [
+      {
+        "w": "Router",
+        "s": 80.01,
+        "e": 80.29
+      },
+      {
+        "w": "konfiguratsiyasida",
+        "s": 80.33,
+        "e": 81.11
+      },
+      {
+        "w": "esa",
+        "s": 81.15,
+        "e": 81.33
+      },
+      {
+        "w": "sahifalar",
+        "s": 81.43,
+        "e": 81.97
+      },
+      {
+        "w": "alohida",
+        "s": 82.07,
+        "e": 82.45
+      },
+      {
+        "w": "chank",
+        "s": 82.54,
+        "e": 82.76
+      },
+      {
+        "w": "bo'lib",
+        "s": 82.82,
+        "e": 83.02
+      },
+      {
+        "w": "yuklanishi",
+        "s": 83.04,
+        "e": 83.48
+      },
+      {
+        "w": "uchun",
+        "s": 83.52,
+        "e": 83.72
+      },
+      {
+        "w": "dinamik",
+        "s": 84.04,
+        "e": 84.46
+      },
+      {
+        "w": "import",
+        "s": 84.54,
+        "e": 84.82
+      },
+      {
+        "w": "orqali",
+        "s": 84.86,
+        "e": 85.18
+      },
+      {
+        "w": "public",
+        "s": 85.26,
+        "e": 85.6
+      },
+      {
+        "w": "ey-pi-ay",
+        "s": 85.66,
+        "e": 85.96
+      },
+      {
+        "w": "dan",
+        "s": 86.0,
+        "e": 86.12
+      },
+      {
+        "w": "olinadi.",
+        "s": 86.2,
+        "e": 86.52
+      }
+    ]
+  },
+  {
+    "id": "L11",
+    "scene": "slotlar_va_reaktivlik",
+    "text": "Bosh sahifada ProductCard komponenti slotlar bilan to'ldiriladi: savatga qo'shish tugmasi actions slotiga uzatiladi.",
+    "show": "Bosh sahifada ProductCard komponenti slotlar bilan to'ldiriladi: savatga qo'shish tugmasi actions slotiga uzatiladi.",
+    "say": "Bosh sahifada Prodakt Kard komponenti slotlar bilan to'ldiriladi: savatga qo'shish tugmasi ekshns slotiga uzatiladi.",
+    "a0": 87.4,
+    "a1": 93.76,
+    "words": [
+      {
+        "w": "Bosh",
+        "s": 87.4,
+        "e": 87.58
+      },
+      {
+        "w": "sahifada",
+        "s": 87.6,
+        "e": 88.1
+      },
+      {
+        "w": "Prodakt",
+        "s": 88.18,
+        "e": 88.6
+      },
+      {
+        "w": "Kard",
+        "s": 88.66,
+        "e": 88.84
+      },
+      {
+        "w": "komponenti",
+        "s": 88.88,
+        "e": 89.4
+      },
+      {
+        "w": "slotlar",
+        "s": 89.48,
+        "e": 89.86
+      },
+      {
+        "w": "bilan",
+        "s": 89.9,
+        "e": 90.0
+      },
+      {
+        "w": "to'ldiriladi:",
+        "s": 90.12,
+        "e": 90.66
+      },
+      {
+        "w": "savatga",
+        "s": 91.28,
+        "e": 91.64
+      },
+      {
+        "w": "qo'shish",
+        "s": 91.7,
+        "e": 92.0
+      },
+      {
+        "w": "tugmasi",
+        "s": 92.02,
+        "e": 92.42
+      },
+      {
+        "w": "ekshns",
+        "s": 92.58,
+        "e": 92.88
+      },
+      {
+        "w": "slotiga",
+        "s": 92.9,
+        "e": 93.26
+      },
+      {
+        "w": "uzatiladi.",
+        "s": 93.28,
+        "e": 93.76
+      }
+    ]
+  },
+  {
+    "id": "L12",
+    "scene": "slotlar_va_reaktivlik",
+    "text": "URL parametrlari o'zgarganda so'rov avtomatik yangilanishi uchun Vue Query kalitlari albatta computed bilan o'ralishi lozim.",
+    "show": "URL parametrlari o'zgarganda so'rov avtomatik yangilanishi uchun Vue Query kalitlari albatta computed bilan o'ralishi lozim.",
+    "say": "Yu-ar-el parametrlari o'zgarganda so'rov avtomatik yangilanishi uchun Vue kveri kalitlari albatta kompyutid bilan o'ralishi lozim.",
+    "a0": 94.62,
+    "a1": 101.39,
+    "words": [
+      {
+        "w": "Yu-ar-el",
+        "s": 94.62,
+        "e": 94.96
+      },
+      {
+        "w": "parametrlari",
+        "s": 95.0,
+        "e": 95.64
+      },
+      {
+        "w": "o'zgarganda",
+        "s": 95.7,
+        "e": 96.24
+      },
+      {
+        "w": "so'rov",
+        "s": 96.34,
+        "e": 96.6
+      },
+      {
+        "w": "avtomatik",
+        "s": 96.68,
+        "e": 97.16
+      },
+      {
+        "w": "yangilanishi",
+        "s": 97.2,
+        "e": 97.73
+      },
+      {
+        "w": "uchun",
+        "s": 97.79,
+        "e": 98.01
+      },
+      {
+        "w": "Vue",
+        "s": 98.31,
+        "e": 98.47
+      },
+      {
+        "w": "kveri",
+        "s": 98.53,
+        "e": 98.81
+      },
+      {
+        "w": "kalitlari",
+        "s": 98.85,
+        "e": 99.31
+      },
+      {
+        "w": "albatta",
+        "s": 99.43,
+        "e": 99.81
+      },
+      {
+        "w": "kompyutid",
+        "s": 99.89,
+        "e": 100.39
+      },
+      {
+        "w": "bilan",
+        "s": 100.43,
+        "e": 100.61
+      },
+      {
+        "w": "o'ralishi",
+        "s": 100.69,
+        "e": 101.07
+      },
+      {
+        "w": "lozim.",
+        "s": 101.11,
+        "e": 101.39
+      }
+    ]
+  },
+  {
+    "id": "L13",
+    "scene": "tipik_xatolar",
+    "text": "Tipik xatolar — eski stores va views papkalarini qoldirish, public API da yulduzcha bilan eksport qilish va App nuqta vue ni ildizda qoldirishdir.",
+    "show": "Tipik xatolar — eski stores va views papkalarini qoldirish, public API da yulduzcha bilan eksport qilish va App nuqta vue ni ildizda qoldirishdir.",
+    "say": "Tipik xatolar — eski stores va views papkalarini qoldirish, public ey-pi-ay da yulduzcha bilan eksport qilish va Ep nuqta vyu ni ildizda qoldirishdir.",
+    "a0": 102.25,
+    "a1": 109.93,
+    "words": [
+      {
+        "w": "Tipik",
+        "s": 102.25,
+        "e": 102.53
+      },
+      {
+        "w": "xatolar",
+        "s": 102.57,
+        "e": 103.01
+      },
+      {
+        "w": "—",
+        "s": 103.01,
+        "e": 103.01
+      },
+      {
+        "w": "eski",
+        "s": 103.15,
+        "e": 103.39
+      },
+      {
+        "w": "stores",
+        "s": 103.49,
+        "e": 103.81
+      },
+      {
+        "w": "va",
+        "s": 103.89,
+        "e": 103.95
+      },
+      {
+        "w": "views",
+        "s": 104.01,
+        "e": 104.25
+      },
+      {
+        "w": "papkalarini",
+        "s": 104.29,
+        "e": 104.81
+      },
+      {
+        "w": "qoldirish,",
+        "s": 104.87,
+        "e": 105.37
+      },
+      {
+        "w": "public",
+        "s": 105.63,
+        "e": 105.95
+      },
+      {
+        "w": "ey-pi-ay",
+        "s": 106.01,
+        "e": 106.35
+      },
+      {
+        "w": "da",
+        "s": 106.39,
+        "e": 106.45
+      },
+      {
+        "w": "yulduzcha",
+        "s": 106.53,
+        "e": 106.95
+      },
+      {
+        "w": "bilan",
+        "s": 106.99,
+        "e": 107.17
+      },
+      {
+        "w": "eksport",
+        "s": 107.27,
+        "e": 107.57
+      },
+      {
+        "w": "qilish",
+        "s": 107.61,
+        "e": 107.83
+      },
+      {
+        "w": "va",
+        "s": 107.87,
+        "e": 107.93
+      },
+      {
+        "w": "Ep",
+        "s": 108.09,
+        "e": 108.21
+      },
+      {
+        "w": "nuqta",
+        "s": 108.27,
+        "e": 108.53
+      },
+      {
+        "w": "vyu",
+        "s": 108.59,
+        "e": 108.75
+      },
+      {
+        "w": "ni",
+        "s": 108.81,
+        "e": 108.89
+      },
+      {
+        "w": "ildizda",
+        "s": 109.01,
+        "e": 109.35
+      },
+      {
+        "w": "qoldirishdir.",
+        "s": 109.41,
+        "e": 109.93
+      }
+    ]
+  },
+  {
+    "id": "L14",
+    "scene": "tipik_xatolar",
+    "text": "Shuningdek, unplugin auto-import plaginlari importlarni yashirib qo'ygani sababli, FSD intizomida aniq importlar tavsiya etiladi.",
+    "show": "Shuningdek, unplugin auto-import plaginlari importlarni yashirib qo'ygani sababli, FSD intizomida aniq importlar tavsiya etiladi.",
+    "say": "Shuningdek, anplagin avto import plaginlari importlarni yashirib qo'ygani sababli, Ef-es-di intizomida aniq importlar tavsiya etiladi.",
+    "a0": 110.69,
+    "a1": 117.38,
+    "words": [
+      {
+        "w": "Shuningdek,",
+        "s": 110.69,
+        "e": 111.07
+      },
+      {
+        "w": "anplagin",
+        "s": 111.17,
+        "e": 111.67
+      },
+      {
+        "w": "avto",
+        "s": 111.71,
+        "e": 111.91
+      },
+      {
+        "w": "import",
+        "s": 111.97,
+        "e": 112.19
+      },
+      {
+        "w": "plaginlari",
+        "s": 112.23,
+        "e": 112.78
+      },
+      {
+        "w": "importlarni",
+        "s": 112.88,
+        "e": 113.4
+      },
+      {
+        "w": "yashirib",
+        "s": 113.44,
+        "e": 113.76
+      },
+      {
+        "w": "qo'ygani",
+        "s": 113.78,
+        "e": 114.12
+      },
+      {
+        "w": "sababli,",
+        "s": 114.16,
+        "e": 114.52
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 114.82,
+        "e": 115.18
+      },
+      {
+        "w": "intizomida",
+        "s": 115.26,
+        "e": 115.78
+      },
+      {
+        "w": "aniq",
+        "s": 115.94,
+        "e": 116.16
+      },
+      {
+        "w": "importlar",
+        "s": 116.24,
+        "e": 116.64
+      },
+      {
+        "w": "tavsiya",
+        "s": 116.68,
+        "e": 117.0
+      },
+      {
+        "w": "etiladi.",
+        "s": 117.02,
+        "e": 117.38
+      }
+    ]
+  },
+  {
+    "id": "L15",
+    "scene": "xulosa",
+    "text": "Xulosa: Vue 3 loyihangizni FSD ga moslab, reaktivlik va modullilik uyg'unligidagi mustahkam arxitekturaga ega bo'ling.",
+    "show": "Xulosa: Vue 3 loyihangizni FSD ga moslab, reaktivlik va modullilik uyg'unligidagi mustahkam arxitekturaga ega bo'ling.",
+    "say": "Xulosa: Vue 3 loyihangizni Ef-es-di ga moslab, reaktivlik va modullilik uyg'unligidagi mustahkam arxitekturaga ega bo'ling.",
+    "a0": 118.0,
+    "a1": 127.47,
+    "words": [
+      {
+        "w": "Xulosa:",
+        "s": 118.0,
+        "e": 118.46
+      },
+      {
+        "w": "Vue",
+        "s": 119.2,
+        "e": 119.38
+      },
+      {
+        "w": "3",
+        "s": 119.38,
+        "e": 119.38
+      },
+      {
+        "w": "loyihangizni",
+        "s": 119.8,
+        "e": 120.54
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 120.9,
+        "e": 121.34
+      },
+      {
+        "w": "ga",
+        "s": 121.42,
+        "e": 121.48
+      },
+      {
+        "w": "moslab,",
+        "s": 121.56,
+        "e": 122.04
+      },
+      {
+        "w": "reaktivlik",
+        "s": 122.36,
+        "e": 123.12
+      },
+      {
+        "w": "va",
+        "s": 123.2,
+        "e": 123.28
+      },
+      {
+        "w": "modullilik",
+        "s": 123.38,
+        "e": 124.04
+      },
+      {
+        "w": "uyg'unligidagi",
+        "s": 124.15,
+        "e": 124.91
+      },
+      {
+        "w": "mustahkam",
+        "s": 125.29,
+        "e": 125.95
+      },
+      {
+        "w": "arxitekturaga",
+        "s": 126.05,
+        "e": 126.85
+      },
+      {
+        "w": "ega",
+        "s": 126.95,
+        "e": 127.13
+      },
+      {
+        "w": "bo'ling.",
+        "s": 127.19,
+        "e": 127.47
+      }
+    ]
+  },
+  {
+    "id": "L16",
+    "scene": "xulosa",
+    "text": "Keyingi bobda Nuxt frameworki va uning server imkoniyatlarida FSD shablonini tahlil qilamiz. Rahmat!",
+    "show": "Keyingi bobda Nuxt frameworki va uning server imkoniyatlarida FSD shablonini tahlil qilamiz. Rahmat!",
+    "say": "Keyingi bobda Nuxt frameworki va uning server imkoniyatlarida Ef-es-di shablonini tahlil qilamiz. Rahmat!",
+    "a0": 128.25,
+    "a1": 135.92,
+    "words": [
+      {
+        "w": "Keyingi",
+        "s": 128.25,
+        "e": 128.61
+      },
+      {
+        "w": "bobda",
+        "s": 128.65,
+        "e": 128.99
+      },
+      {
+        "w": "Nuxt",
+        "s": 129.43,
+        "e": 129.79
+      },
+      {
+        "w": "frameworki",
+        "s": 129.87,
+        "e": 130.45
+      },
+      {
+        "w": "va",
+        "s": 130.55,
+        "e": 130.61
+      },
+      {
+        "w": "uning",
+        "s": 130.75,
+        "e": 130.99
+      },
+      {
+        "w": "server",
+        "s": 131.29,
+        "e": 131.65
+      },
+      {
+        "w": "imkoniyatlarida",
+        "s": 131.75,
+        "e": 132.6
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 133.02,
+        "e": 133.52
+      },
+      {
+        "w": "shablonini",
+        "s": 133.64,
+        "e": 134.2
+      },
+      {
+        "w": "tahlil",
+        "s": 134.26,
+        "e": 134.62
+      },
+      {
+        "w": "qilamiz.",
+        "s": 134.68,
+        "e": 135.04
+      },
+      {
+        "w": "Rahmat!",
+        "s": 135.54,
+        "e": 135.92
+      }
+    ]
+  }
+]
