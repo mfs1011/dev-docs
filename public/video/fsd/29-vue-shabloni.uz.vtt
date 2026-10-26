@@ -1,0 +1,81 @@
+WEBVTT
+
+1
+00:01.420 --> 00:17.280
+Salom! Bu FSD qo'llanmasining yigirma to'qqizinchi bobi — Vue 3 va Vite uchun to'liq ishlab chiqarish shabloni. Bugun
+Vue 3, Pinia, TanStack Vue Query va Vue Router asosida Steiger linteridan to'liq o'tuvchi FSD loyihasini quramiz.
+
+2
+00:18.630 --> 00:26.450
+Ushbu shablon create-vue asosida qurilgan bo'lib, barcha Single File
+Component lar ichidagi importlar Steiger tomonidan to'liq tekshiriladi.
+
+3
+00:28.420 --> 00:35.570
+create-vue buyrug'i yordamida loyiha yaratiladi va undagi eski
+views, components va stores papkalari to'liq o'chiriladi.
+
+4
+00:36.020 --> 00:43.440
+Buning o'rniga FSD ning qat'iy olti qatlami barpo etilib, App
+nuqta vue fayli to'g'ridan-to'g'ri src app ichiga ko'chiriladi.
+
+5
+00:43.910 --> 00:52.700
+create-vue da et belgisi uchun alias allaqachon sozlangan bo'lib, faqat
+index nuqta html da skript yo'lini main nuqta te-es ga yo'naltirish kifoya.
+
+6
+00:56.090 --> 01:03.710
+Eng muhim qoida: alohida markaziy stores yoki composables papkalari
+taqiqlanadi, chunki ular arxitektura yaxlitligini buzadi.
+
+7
+01:04.120 --> 01:10.810
+Har bir Pinia store va composable funksiya o'ziga tegishli
+slice'ning model yoki lib segmenti ichida saqlanadi.
+
+8
+01:14.060 --> 01:21.480
+Vue komponentlari default eksport qilingani sababli, public API
+faylida export default as ProductCard ko'rinishida nomlanadi.
+
+9
+01:22.010 --> 01:28.680
+Kirish nuqtasi bo'lgan main nuqta te-es da Pinia,
+VueQueryPlugin va router ilovaga ulanadi va mount qilinadi.
+
+10
+01:29.090 --> 01:36.050
+Router konfiguratsiyasida esa sahifalar alohida chunk bo'lib
+yuklanishi uchun dinamik import orqali public API dan olinadi.
+
+11
+01:39.280 --> 01:46.090
+Bosh sahifada ProductCard komponenti slotlar bilan to'ldiriladi:
+savatga qo'shish tugmasi actions slotiga uzatiladi.
+
+12
+01:46.500 --> 01:53.720
+URL parametrlari o'zgarganda so'rov avtomatik yangilanishi uchun
+Vue Query kalitlari albatta computed bilan o'ralishi lozim.
+
+13
+01:56.930 --> 02:05.060
+Tipik xatolar — eski stores va views papkalarini qoldirish, public API da
+yulduzcha bilan eksport qilish va App nuqta vue ni ildizda qoldirishdir.
+
+14
+02:05.370 --> 02:12.510
+Shuningdek, unplugin auto-import plaginlari importlarni yashirib
+qo'ygani sababli, FSD intizomida aniq importlar tavsiya etiladi.
+
+15
+02:15.480 --> 02:25.400
+Xulosa: Vue 3 loyihangizni FSD ga moslab, reaktivlik va
+modullilik uyg'unligidagi mustahkam arxitekturaga ega bo'ling.
+
+16
+02:25.730 --> 02:33.850
+Keyingi bobda Nuxt frameworki va uning server
+imkoniyatlarida FSD shablonini tahlil qilamiz. Rahmat!
