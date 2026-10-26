@@ -1,0 +1,81 @@
+WEBVTT
+
+1
+00:01.420 --> 00:10.160
+Salom! Bu Feature-Sliced Design qo'llanmasining qirqinchi, yakuniy
+bobi — butun metodologiyaning yagona, to'liq shpargalkasi.
+
+2
+00:11.490 --> 00:19.100
+Ushbu shpargalka loyihangizda har kuni foydalanish yoki sun'iy
+intellekt yordamchilariga qoidalar sifatida berish uchun mo'ljallangan.
+
+3
+00:21.210 --> 00:30.230
+Arxitektura oltita qatlamdan iborat: eng yuqorida app va sahifalar,
+o'rtada widgets, features va entities, poydevorda esa shared.
+
+4
+00:30.460 --> 00:38.810
+Zamonaviy FSD da sahifalardan boshlanadi; app va shared slayssiz
+bo'lib, o'rtadagi barcha qatlamlar biznes slayslariga bo'linadi.
+
+5
+00:42.280 --> 00:49.860
+Birinchi oltin qonun: importlar har doim faqat pastga yo'naladi;
+bitta qatlamdagi slayslar bir-birini mutlaqo bilmaydi.
+
+6
+00:50.470 --> 00:58.560
+Ikkinchi oltin qonun: har bir slays tashqariga faqat o'zining indeks
+te-es dagi public API si orqali aniq nomlar bilan eksport qiladi.
+
+7
+01:02.020 --> 01:10.710
+Kod qayerga joylashadi: bitta sahifa kodi sahifada, umumiy
+harakatlar features da, biznes modellari esa entities da yashaydi.
+
+8
+01:11.180 --> 01:19.560
+Agar biror kodning joyiga shubhangiz bo'lsa, uni eng lokal joyda qoldiring;
+keyinroq pastga tushirish xatoni orqaga qaytarishdan osonroqdir.
+
+9
+01:22.930 --> 01:32.120
+Segment nomlari texnik bo'lishi taqiqlanadi: helpers yoki
+utils o'rniga faqat ui, model, api, lib va konfig ishlatiladi.
+
+10
+01:32.690 --> 01:40.090
+Stayger linteri barcha qoidalarni avtomatik nazorat qiladi va
+doimiy ravishda loyihaning si-ay tizimida ishlab turishi shart.
+
+11
+01:43.480 --> 01:52.410
+Eng xavfli xatolar — birinchi kunda barcha qatlamlarni ochish, entity
+ichida feature harakatini import qilish va tokenlarni sahifada saqlashdir.
+
+12
+01:52.970 --> 02:00.160
+Qatlamlararo aloqani faqat yuqorida slot va prop orqali
+bog'lash hamda doimo domen tili bo'yicha nomlash lozim.
+
+13
+02:03.490 --> 02:10.040
+Mana, qirqta bobdan iborat ulkan Feature-Sliced
+Design video qo'llanmasini to'liq yakunladik!
+
+14
+02:10.680 --> 02:18.550
+Siz endi har qanday murakkablikdagi frontend ilovalarni toza,
+tushunarli va yillar davomida barqaror arxitekturada qura olasiz.
+
+15
+02:19.180 --> 02:26.800
+Bilimlaringizni amaliyotda qo'llang, jamoangiz bilan toza kod
+madaniyatini rivojlantiring va FSD tamoyillariga sodiq qoling.
+
+16
+02:27.290 --> 02:31.930
+Katta rahmat va yangi buyuk
+loyihalaringizda omad yor bo'lsin!

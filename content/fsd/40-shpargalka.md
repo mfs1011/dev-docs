@@ -4,6 +4,14 @@
 
 ## Qisqacha
 
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/fsd/40-shpargalka.jpg" src="/video/fsd/40-shpargalka.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/fsd/40-shpargalka.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/fsd/40-shpargalka.uz.vtt">
+</video>
+<figcaption>Bob videoda: FSD Shpargalka — oltita qatlam, ikki asosiy qonun, qarorlar xaritasi, standart segmentlar va butun kurs yakuni.</figcaption>
+</figure>
+
 Butun qo'llanma bir sahifada. Chop eting yoki loyihangizning `AGENTS.md`/`CLAUDE.md` fayliga qo'shing — AI yordamchisi ham shu qoidalar bo'yicha yozsin.
 
 ## Qoida: tuzilma
