@@ -4,6 +4,14 @@
 
 ## Qisqacha
 
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/fsd/38-review-checklist.jpg" src="/video/fsd/38-review-checklist.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/fsd/38-review-checklist.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/fsd/38-review-checklist.uz.vtt">
+</video>
+<figcaption>Bob videoda: Code review checklist — PR ko'rigida avtomatik darvoza, insoniy tekshiruv savollari, domen bo'yicha nomlash va PR shabloni.</figcaption>
+</figure>
+
 Steiger va ESLint mexanik qoidalarni ushlaydi: yuqoriga import, chuqur import, taqiqlangan nomlar. Lekin "bu kod to'g'ri qatlamdami?", "bu slice kerakmi?", "nomi biznesni aks ettiradimi?" — bu savollarga faqat odam javob beradi. Bu ro'yxat — PR ko'rigida aynan shular uchun. Har band yonida — batafsil bob.
 
 ## Qoida: avtomatik darvoza (odamdan oldin)

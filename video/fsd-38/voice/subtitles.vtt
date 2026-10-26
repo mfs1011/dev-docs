@@ -1,0 +1,81 @@
+WEBVTT
+
+1
+00:01.420 --> 00:10.340
+Salom! Bu FSD qo'llanmasining o'ttiz sakkizinchi bobi — pull
+requestlarni ko'rib chiqishda FSD arxitekturasini tekshirish cheklisti.
+
+2
+00:11.610 --> 00:20.540
+Stayger va linterlar mexanik xatolarni ushlasa-da, kodning ma'nosi,
+to'g'ri qatlami va arxitektura tozaligini faqat inson baholay oladi.
+
+3
+00:22.390 --> 00:31.310
+Birinchi qoida — avtomatik darvoza: Stayger, ESLint, TypeScript
+tekshiruvi va testlar to'liq yashil bo'lmasa, revyuni boshlamang.
+
+4
+00:31.380 --> 00:38.510
+Linter ushlay oladigan sintaksis yoki taqiqlangan importlarni
+muhokama qilish dasturchilar vaqtini bekorga sarflaydi.
+
+5
+00:41.720 --> 00:51.500
+Inson tekshiradigan asosiy savol — kod eng lokal joydami: bitta sahifa kodi
+sahifa ichida, ikkitadan ko'p joy ishlatsa pastki qatlamda bo'lishi shart.
+
+6
+00:51.790 --> 01:01.330
+Fe'l harakatlar features qatlamiga, ot biznes modellari entities qatlamiga,
+qatlamlararo aloqa esa faqat kompozitsiya orqali ulanishi kerak.
+
+7
+01:01.660 --> 01:08.670
+Entity komponenti hech qachon feature harakatini o'zi
+import qilmasligi, slot va prop orqali qabul qilishi shart.
+
+8
+01:11.820 --> 01:19.420
+Public API da faqat tashqariga kerakli belgilar eksport
+qilinishi, eksport asterisk esa qat'iyan ishlatilmasligi kerak.
+
+9
+01:19.810 --> 01:29.720
+Nomlashda texnik so'zlar emas, domen biznes tili ustuvor: forms yoki
+modals emas, add-to-cart yoki order kabi aniq nomlar tanlanadi.
+
+10
+01:32.870 --> 01:42.570
+Jamoada har bir pull request uchun FSD shabloni joriy etiladi: yangi
+slice sababi, pastga tushirilgan kod va public API o'zgarishi yoziladi.
+
+11
+01:42.880 --> 01:51.740
+Bahsli arxitektura savollari har PR da qayta tortishilmaydi, balki
+arxitektura qarorlari yozuvi ya'ni ADR da mustahkamlab qo'yiladi.
+
+12
+01:54.770 --> 02:02.660
+Tipik xatolar — "keyin to'g'rilaymiz" deb noto'g'ri qatlamni
+tasdiqlash hamda har bir PR da noldan falsafiy bahslarga kirishishdir.
+
+13
+02:02.870 --> 02:09.090
+Vaqt o'tishi bilan bunday murosalar arxitektura
+eroziyasiga va butun tizimning ifloslanishiga olib keladi.
+
+14
+02:12.100 --> 02:19.710
+Xulosa: qat'iy avtomatika va ongli inson ko'rigi uyg'unligi
+loyihani yillar davomida toza va barqaror saqlaydi.
+
+15
+02:20.000 --> 02:26.980
+Keyingi o'ttiz to'qqizinchi bobda FSD bo'yicha eng ko'p
+beriladigan qiyin savollarga aniq javoblarni ko'rib chiqamiz.
+
+16
+02:27.110 --> 02:32.750
+E'tiboringiz uchun rahmat, sifatli va
+hushyor kod-revyu o'tkazishda davom eting!
