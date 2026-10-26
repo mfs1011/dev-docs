@@ -1,0 +1,1648 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Salom! Bu FSD qo'llanmasining yigirma oltinchi bobi — Marshrutlash va lazy loading strategiyalari. Bugun marshrutlar daraxti, URL konstantalari, navigatsiya guardlari va sahifalarni alohida chunk sifatida yuklashni o'rganamiz.",
+    "show": "Salom! Bu FSD qo'llanmasining yigirma oltinchi bobi — Marshrutlash va lazy loading strategiyalari. Bugun marshrutlar daraxti, URL konstantalari, navigatsiya guardlari va sahifalarni alohida chunk sifatida yuklashni o'rganamiz.",
+    "say": "Salom! Bu Ef-es-di qo'llanmasining yigirma oltinchi bobi — Marshrutlash va leyzi louding strategiyalari. Bugun marshrutlar daraxti, yu-ar-el konstantalari, navigatsiya gardlari va sahifalarni alohida chank sifatida yuklashni o'rganamiz.",
+    "a0": 0.28,
+    "a1": 16.91,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.28,
+        "e": 0.62
+      },
+      {
+        "w": "Bu",
+        "s": 1.22,
+        "e": 1.3
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 1.66,
+        "e": 2.08
+      },
+      {
+        "w": "qo'llanmasining",
+        "s": 2.2,
+        "e": 2.96
+      },
+      {
+        "w": "yigirma",
+        "s": 3.06,
+        "e": 3.38
+      },
+      {
+        "w": "oltinchi",
+        "s": 3.44,
+        "e": 3.82
+      },
+      {
+        "w": "bobi",
+        "s": 3.86,
+        "e": 4.1
+      },
+      {
+        "w": "—",
+        "s": 4.1,
+        "e": 4.1
+      },
+      {
+        "w": "Marshrutlash",
+        "s": 4.62,
+        "e": 5.36
+      },
+      {
+        "w": "va",
+        "s": 5.54,
+        "e": 5.62
+      },
+      {
+        "w": "leyzi",
+        "s": 5.96,
+        "e": 6.3
+      },
+      {
+        "w": "louding",
+        "s": 6.4,
+        "e": 6.76
+      },
+      {
+        "w": "strategiyalari.",
+        "s": 6.8,
+        "e": 7.59
+      },
+      {
+        "w": "Bugun",
+        "s": 8.49,
+        "e": 8.79
+      },
+      {
+        "w": "marshrutlar",
+        "s": 8.85,
+        "e": 9.41
+      },
+      {
+        "w": "daraxti,",
+        "s": 9.45,
+        "e": 9.95
+      },
+      {
+        "w": "yu-ar-el",
+        "s": 10.33,
+        "e": 10.71
+      },
+      {
+        "w": "konstantalari,",
+        "s": 10.77,
+        "e": 11.57
+      },
+      {
+        "w": "navigatsiya",
+        "s": 12.03,
+        "e": 12.61
+      },
+      {
+        "w": "gardlari",
+        "s": 12.67,
+        "e": 13.17
+      },
+      {
+        "w": "va",
+        "s": 13.27,
+        "e": 13.37
+      },
+      {
+        "w": "sahifalarni",
+        "s": 13.65,
+        "e": 14.39
+      },
+      {
+        "w": "alohida",
+        "s": 14.53,
+        "e": 15.01
+      },
+      {
+        "w": "chank",
+        "s": 15.23,
+        "e": 15.49
+      },
+      {
+        "w": "sifatida",
+        "s": 15.57,
+        "e": 15.97
+      },
+      {
+        "w": "yuklashni",
+        "s": 16.01,
+        "e": 16.43
+      },
+      {
+        "w": "o'rganamiz.",
+        "s": 16.47,
+        "e": 16.91
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "intro",
+    "text": "FSD da marshrutlash tizimi qatlamlar intizomiga qat'iy rioya qiladi va ikki asosiy markazga bo'linadi.",
+    "show": "FSD da marshrutlash tizimi qatlamlar intizomiga qat'iy rioya qiladi va ikki asosiy markazga bo'linadi.",
+    "say": "Ef-es-di da marshrutlash tizimi qatlamlar intizomiga qat'iy rioya qiladi va ikki asosiy markazga bo'linadi.",
+    "a0": 17.49,
+    "a1": 24.0,
+    "words": [
+      {
+        "w": "Ef-es-di",
+        "s": 17.49,
+        "e": 17.89
+      },
+      {
+        "w": "da",
+        "s": 17.97,
+        "e": 18.05
+      },
+      {
+        "w": "marshrutlash",
+        "s": 18.17,
+        "e": 18.79
+      },
+      {
+        "w": "tizimi",
+        "s": 18.81,
+        "e": 19.15
+      },
+      {
+        "w": "qatlamlar",
+        "s": 19.27,
+        "e": 19.77
+      },
+      {
+        "w": "intizomiga",
+        "s": 19.85,
+        "e": 20.41
+      },
+      {
+        "w": "qat'iy",
+        "s": 20.49,
+        "e": 20.83
+      },
+      {
+        "w": "rioya",
+        "s": 20.91,
+        "e": 21.21
+      },
+      {
+        "w": "qiladi",
+        "s": 21.29,
+        "e": 21.59
+      },
+      {
+        "w": "va",
+        "s": 21.89,
+        "e": 21.97
+      },
+      {
+        "w": "ikki",
+        "s": 22.27,
+        "e": 22.54
+      },
+      {
+        "w": "asosiy",
+        "s": 22.68,
+        "e": 23.06
+      },
+      {
+        "w": "markazga",
+        "s": 23.14,
+        "e": 23.54
+      },
+      {
+        "w": "bo'linadi.",
+        "s": 23.58,
+        "e": 24.0
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "app_va_shared_routes",
+    "text": "Birinchi markaz — app/routes. Bu yerda to'liq router daraxti, sahifalarni bog'lash va navigatsiya guardlari konfiguratsiya qilinadi, chunki faqat app barcha sahifalarni biladi.",
+    "show": "Birinchi markaz — app/routes. Bu yerda to'liq router daraxti, sahifalarni bog'lash va navigatsiya guardlari konfiguratsiya qilinadi, chunki faqat app barcha sahifalarni biladi.",
+    "say": "Birinchi markaz — ep/routs. Bu yerda to'liq router daraxti, sahifalarni bog'lash va navigatsiya gardlari konfiguratsiya qilinadi, chunki faqat ep barcha sahifalarni biladi.",
+    "a0": 24.72,
+    "a1": 36.64,
+    "words": [
+      {
+        "w": "Birinchi",
+        "s": 24.72,
+        "e": 25.08
+      },
+      {
+        "w": "markaz",
+        "s": 25.12,
+        "e": 25.58
+      },
+      {
+        "w": "—",
+        "s": 25.58,
+        "e": 25.58
+      },
+      {
+        "w": "ep/routs.",
+        "s": 25.58,
+        "e": 27.68
+      },
+      {
+        "w": "Bu",
+        "s": 27.68,
+        "e": 27.76
+      },
+      {
+        "w": "yerda",
+        "s": 27.84,
+        "e": 28.12
+      },
+      {
+        "w": "to'liq",
+        "s": 28.24,
+        "e": 28.52
+      },
+      {
+        "w": "router",
+        "s": 28.74,
+        "e": 29.1
+      },
+      {
+        "w": "daraxti,",
+        "s": 29.14,
+        "e": 29.58
+      },
+      {
+        "w": "sahifalarni",
+        "s": 30.0,
+        "e": 30.54
+      },
+      {
+        "w": "bog'lash",
+        "s": 30.62,
+        "e": 31.08
+      },
+      {
+        "w": "va",
+        "s": 31.16,
+        "e": 31.22
+      },
+      {
+        "w": "navigatsiya",
+        "s": 31.5,
+        "e": 32.04
+      },
+      {
+        "w": "gardlari",
+        "s": 32.1,
+        "e": 32.54
+      },
+      {
+        "w": "konfiguratsiya",
+        "s": 32.6,
+        "e": 33.26
+      },
+      {
+        "w": "qilinadi,",
+        "s": 33.28,
+        "e": 33.64
+      },
+      {
+        "w": "chunki",
+        "s": 34.0,
+        "e": 34.24
+      },
+      {
+        "w": "faqat",
+        "s": 34.32,
+        "e": 34.62
+      },
+      {
+        "w": "ep",
+        "s": 34.98,
+        "e": 35.16
+      },
+      {
+        "w": "barcha",
+        "s": 35.42,
+        "e": 35.7
+      },
+      {
+        "w": "sahifalarni",
+        "s": 35.74,
+        "e": 36.32
+      },
+      {
+        "w": "biladi.",
+        "s": 36.36,
+        "e": 36.64
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "app_va_shared_routes",
+    "text": "Ikkinchi markaz — shared/routes. Pastki qatlamlardagi widget, feature yoki entity'lar havola berish yoki redirect qilish uchun URL manzillariga muhtoj.",
+    "show": "Ikkinchi markaz — shared/routes. Pastki qatlamlardagi widget, feature yoki entity'lar havola berish yoki redirect qilish uchun URL manzillariga muhtoj.",
+    "say": "Ikkinchi markaz — sherd/routs. Pastki qatlamlardagi vijet, ficher yoki entiti'lar havola berish yoki redirect qilish uchun yu-ar-el manzillariga muhtoj.",
+    "a0": 37.34,
+    "a1": 48.15,
+    "words": [
+      {
+        "w": "Ikkinchi",
+        "s": 37.34,
+        "e": 37.69
+      },
+      {
+        "w": "markaz",
+        "s": 37.73,
+        "e": 38.17
+      },
+      {
+        "w": "—",
+        "s": 38.17,
+        "e": 38.17
+      },
+      {
+        "w": "sherd/routs.",
+        "s": 38.17,
+        "e": 40.53
+      },
+      {
+        "w": "Pastki",
+        "s": 40.53,
+        "e": 40.83
+      },
+      {
+        "w": "qatlamlardagi",
+        "s": 40.89,
+        "e": 41.65
+      },
+      {
+        "w": "vijet,",
+        "s": 41.79,
+        "e": 42.25
+      },
+      {
+        "w": "ficher",
+        "s": 42.47,
+        "e": 42.89
+      },
+      {
+        "w": "yoki",
+        "s": 42.89,
+        "e": 43.17
+      },
+      {
+        "w": "entiti'lar",
+        "s": 43.35,
+        "e": 43.91
+      },
+      {
+        "w": "havola",
+        "s": 44.23,
+        "e": 44.61
+      },
+      {
+        "w": "berish",
+        "s": 44.67,
+        "e": 44.99
+      },
+      {
+        "w": "yoki",
+        "s": 45.05,
+        "e": 45.27
+      },
+      {
+        "w": "redirect",
+        "s": 45.49,
+        "e": 45.91
+      },
+      {
+        "w": "qilish",
+        "s": 45.97,
+        "e": 46.19
+      },
+      {
+        "w": "uchun",
+        "s": 46.23,
+        "e": 46.45
+      },
+      {
+        "w": "yu-ar-el",
+        "s": 46.75,
+        "e": 47.11
+      },
+      {
+        "w": "manzillariga",
+        "s": 47.17,
+        "e": 47.73
+      },
+      {
+        "w": "muhtoj.",
+        "s": 47.79,
+        "e": 48.15
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "app_va_shared_routes",
+    "text": "Ular app qatlamidan import qila olmagani sababli, barcha URL konstantalari va marshrut yasovchi funksiyalar shared/routes ichiga joylashtiriladi.",
+    "show": "Ular app qatlamidan import qila olmagani sababli, barcha URL konstantalari va marshrut yasovchi funksiyalar shared/routes ichiga joylashtiriladi.",
+    "say": "Ular ep qatlamidan import qila olmagani sababli, barcha yu-ar-el konstantalari va marshrut yasovchi funksiyalar sherd/routs ichiga joylashtiriladi.",
+    "a0": 48.81,
+    "a1": 58.1,
+    "words": [
+      {
+        "w": "Ular",
+        "s": 48.81,
+        "e": 49.03
+      },
+      {
+        "w": "ep",
+        "s": 49.29,
+        "e": 49.41
+      },
+      {
+        "w": "qatlamidan",
+        "s": 49.47,
+        "e": 50.01
+      },
+      {
+        "w": "import",
+        "s": 50.15,
+        "e": 50.39
+      },
+      {
+        "w": "qila",
+        "s": 50.45,
+        "e": 50.59
+      },
+      {
+        "w": "olmagani",
+        "s": 50.67,
+        "e": 51.07
+      },
+      {
+        "w": "sababli,",
+        "s": 51.13,
+        "e": 51.53
+      },
+      {
+        "w": "barcha",
+        "s": 51.95,
+        "e": 52.27
+      },
+      {
+        "w": "yu-ar-el",
+        "s": 52.33,
+        "e": 52.68
+      },
+      {
+        "w": "konstantalari",
+        "s": 52.72,
+        "e": 53.48
+      },
+      {
+        "w": "va",
+        "s": 53.6,
+        "e": 53.66
+      },
+      {
+        "w": "marshrut",
+        "s": 53.78,
+        "e": 54.22
+      },
+      {
+        "w": "yasovchi",
+        "s": 54.26,
+        "e": 54.62
+      },
+      {
+        "w": "funksiyalar",
+        "s": 54.68,
+        "e": 55.22
+      },
+      {
+        "w": "sherd/routs",
+        "s": 55.22,
+        "e": 57.08
+      },
+      {
+        "w": "ichiga",
+        "s": 57.08,
+        "e": 57.32
+      },
+      {
+        "w": "joylashtiriladi.",
+        "s": 57.36,
+        "e": 58.1
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "guard_va_auth",
+    "text": "Sahifalarni himoyalovchi guard mantiqi shared/auth yoki entities/session qatlamida qayta ishlatiladigan sof funksiya sifatida yoziladi.",
+    "show": "Sahifalarni himoyalovchi guard mantiqi shared/auth yoki entities/session qatlamida qayta ishlatiladigan sof funksiya sifatida yoziladi.",
+    "say": "Sahifalarni himoyalovchi gard mantiqi sherd/os yoki entitiz/seshn qatlamida qayta ishlatiladigan sof funksiya sifatida yoziladi.",
+    "a0": 58.9,
+    "a1": 68.27,
+    "words": [
+      {
+        "w": "Sahifalarni",
+        "s": 58.9,
+        "e": 59.54
+      },
+      {
+        "w": "himoyalovchi",
+        "s": 59.62,
+        "e": 60.18
+      },
+      {
+        "w": "gard",
+        "s": 60.28,
+        "e": 60.5
+      },
+      {
+        "w": "mantiqi",
+        "s": 60.56,
+        "e": 60.98
+      },
+      {
+        "w": "sherd/os",
+        "s": 60.98,
+        "e": 62.36
+      },
+      {
+        "w": "yoki",
+        "s": 62.36,
+        "e": 63.1
+      },
+      {
+        "w": "entitiz/seshn",
+        "s": 63.1,
+        "e": 64.88
+      },
+      {
+        "w": "qatlamida",
+        "s": 64.88,
+        "e": 65.34
+      },
+      {
+        "w": "qayta",
+        "s": 65.64,
+        "e": 65.94
+      },
+      {
+        "w": "ishlatiladigan",
+        "s": 65.98,
+        "e": 66.62
+      },
+      {
+        "w": "sof",
+        "s": 66.74,
+        "e": 66.96
+      },
+      {
+        "w": "funksiya",
+        "s": 67.02,
+        "e": 67.36
+      },
+      {
+        "w": "sifatida",
+        "s": 67.4,
+        "e": 67.77
+      },
+      {
+        "w": "yoziladi.",
+        "s": 67.77,
+        "e": 68.27
+      }
+    ]
+  },
+  {
+    "id": "L7",
+    "scene": "guard_va_auth",
+    "text": "Masalan, tizimga kirmagan foydalanuvchi checkout sahifasiga o'tsa, guard uni returnTo parametri bilan birga avtorizatsiya sahifasiga yo'naltiradi.",
+    "show": "Masalan, tizimga kirmagan foydalanuvchi checkout sahifasiga o'tsa, guard uni returnTo parametri bilan birga avtorizatsiya sahifasiga yo'naltiradi.",
+    "say": "Masalan, tizimga kirmagan foydalanuvchi checkout sahifasiga o'tsa, gard uni ritorn-tu parametri bilan birga avtorizatsiya sahifasiga yo'naltiradi.",
+    "a0": 68.85,
+    "a1": 77.81,
+    "words": [
+      {
+        "w": "Masalan,",
+        "s": 68.85,
+        "e": 69.23
+      },
+      {
+        "w": "tizimga",
+        "s": 69.59,
+        "e": 69.97
+      },
+      {
+        "w": "kirmagan",
+        "s": 70.03,
+        "e": 70.45
+      },
+      {
+        "w": "foydalanuvchi",
+        "s": 70.49,
+        "e": 71.15
+      },
+      {
+        "w": "checkout",
+        "s": 71.33,
+        "e": 71.77
+      },
+      {
+        "w": "sahifasiga",
+        "s": 71.79,
+        "e": 72.39
+      },
+      {
+        "w": "o'tsa,",
+        "s": 72.51,
+        "e": 72.79
+      },
+      {
+        "w": "gard",
+        "s": 73.23,
+        "e": 73.49
+      },
+      {
+        "w": "uni",
+        "s": 73.61,
+        "e": 73.77
+      },
+      {
+        "w": "ritorn-tu",
+        "s": 74.03,
+        "e": 74.61
+      },
+      {
+        "w": "parametri",
+        "s": 74.71,
+        "e": 75.21
+      },
+      {
+        "w": "bilan",
+        "s": 75.23,
+        "e": 75.43
+      },
+      {
+        "w": "birga",
+        "s": 75.47,
+        "e": 75.71
+      },
+      {
+        "w": "avtorizatsiya",
+        "s": 75.91,
+        "e": 76.57
+      },
+      {
+        "w": "sahifasiga",
+        "s": 76.63,
+        "e": 77.19
+      },
+      {
+        "w": "yo'naltiradi.",
+        "s": 77.25,
+        "e": 77.81
+      }
+    ]
+  },
+  {
+    "id": "L8",
+    "scene": "lazy_loading_va_public_api",
+    "text": "Ilovaning dastlabki yuklanish tezligini oshirish uchun deyarli barcha sahifalar alohida chunk sifatida lazy import qilinishi shart.",
+    "show": "Ilovaning dastlabki yuklanish tezligini oshirish uchun deyarli barcha sahifalar alohida chunk sifatida lazy import qilinishi shart.",
+    "say": "Ilovaning dastlabki yuklanish tezligini oshirish uchun deyarli barcha sahifalar alohida chank sifatida leyzi import qilinishi shart.",
+    "a0": 78.53,
+    "a1": 85.96,
+    "words": [
+      {
+        "w": "Ilovaning",
+        "s": 78.53,
+        "e": 79.09
+      },
+      {
+        "w": "dastlabki",
+        "s": 79.13,
+        "e": 79.61
+      },
+      {
+        "w": "yuklanish",
+        "s": 79.65,
+        "e": 80.07
+      },
+      {
+        "w": "tezligini",
+        "s": 80.09,
+        "e": 80.53
+      },
+      {
+        "w": "oshirish",
+        "s": 80.61,
+        "e": 80.95
+      },
+      {
+        "w": "uchun",
+        "s": 80.99,
+        "e": 81.23
+      },
+      {
+        "w": "deyarli",
+        "s": 81.29,
+        "e": 81.65
+      },
+      {
+        "w": "barcha",
+        "s": 81.77,
+        "e": 82.07
+      },
+      {
+        "w": "sahifalar",
+        "s": 82.13,
+        "e": 82.68
+      },
+      {
+        "w": "alohida",
+        "s": 83.02,
+        "e": 83.46
+      },
+      {
+        "w": "chank",
+        "s": 83.56,
+        "e": 83.8
+      },
+      {
+        "w": "sifatida",
+        "s": 83.86,
+        "e": 84.28
+      },
+      {
+        "w": "leyzi",
+        "s": 84.52,
+        "e": 84.86
+      },
+      {
+        "w": "import",
+        "s": 84.98,
+        "e": 85.24
+      },
+      {
+        "w": "qilinishi",
+        "s": 85.3,
+        "e": 85.68
+      },
+      {
+        "w": "shart.",
+        "s": 85.74,
+        "e": 85.96
+      }
+    ]
+  },
+  {
+    "id": "L9",
+    "scene": "lazy_loading_va_public_api",
+    "text": "Bu yerda eng muhim qoida: sahifa faqat o'zining index nuqta ts public API fayli orqali lazy import qilinishi kerak.",
+    "show": "Bu yerda eng muhim qoida: sahifa faqat o'zining index nuqta ts public API fayli orqali lazy import qilinishi kerak.",
+    "say": "Bu yerda eng muhim qoida: sahifa faqat o'zining index nuqta ts public ey-pi-ay fayli orqali leyzi import qilinishi kerak.",
+    "a0": 86.62,
+    "a1": 94.82,
+    "words": [
+      {
+        "w": "Bu",
+        "s": 86.62,
+        "e": 86.68
+      },
+      {
+        "w": "yerda",
+        "s": 86.72,
+        "e": 86.98
+      },
+      {
+        "w": "eng",
+        "s": 87.16,
+        "e": 87.3
+      },
+      {
+        "w": "muhim",
+        "s": 87.34,
+        "e": 87.58
+      },
+      {
+        "w": "qoida:",
+        "s": 87.66,
+        "e": 88.0
+      },
+      {
+        "w": "sahifa",
+        "s": 88.38,
+        "e": 88.8
+      },
+      {
+        "w": "faqat",
+        "s": 88.9,
+        "e": 89.18
+      },
+      {
+        "w": "o'zining",
+        "s": 89.28,
+        "e": 89.64
+      },
+      {
+        "w": "index",
+        "s": 89.86,
+        "e": 90.14
+      },
+      {
+        "w": "nuqta",
+        "s": 90.28,
+        "e": 90.54
+      },
+      {
+        "w": "ts",
+        "s": 90.62,
+        "e": 91.08
+      },
+      {
+        "w": "public",
+        "s": 91.4,
+        "e": 91.74
+      },
+      {
+        "w": "ey-pi-ay",
+        "s": 91.88,
+        "e": 92.32
+      },
+      {
+        "w": "fayli",
+        "s": 92.38,
+        "e": 92.7
+      },
+      {
+        "w": "orqali",
+        "s": 92.76,
+        "e": 93.08
+      },
+      {
+        "w": "leyzi",
+        "s": 93.42,
+        "e": 93.74
+      },
+      {
+        "w": "import",
+        "s": 93.84,
+        "e": 94.12
+      },
+      {
+        "w": "qilinishi",
+        "s": 94.16,
+        "e": 94.5
+      },
+      {
+        "w": "kerak.",
+        "s": 94.56,
+        "e": 94.82
+      }
+    ]
+  },
+  {
+    "id": "L10",
+    "scene": "lazy_loading_va_public_api",
+    "text": "Ichki ui qismiga to'g'ridan-to'g'ri chuqur yo'l bilan kirish public API ni chetlab o'tish hisoblanadi va qat'iyan taqiqlanadi.",
+    "show": "Ichki ui qismiga to'g'ridan-to'g'ri chuqur yo'l bilan kirish public API ni chetlab o'tish hisoblanadi va qat'iyan taqiqlanadi.",
+    "say": "Ichki yu-ay qismiga to'g'ridan-to'g'ri chuqur yo'l bilan kirish public ey-pi-ay ni chetlab o'tish hisoblanadi va qat'iyan taqiqlanadi.",
+    "a0": 95.56,
+    "a1": 103.09,
+    "words": [
+      {
+        "w": "Ichki",
+        "s": 95.56,
+        "e": 95.84
+      },
+      {
+        "w": "yu-ay",
+        "s": 95.92,
+        "e": 96.16
+      },
+      {
+        "w": "qismiga",
+        "s": 96.22,
+        "e": 96.58
+      },
+      {
+        "w": "to'g'ridan-to'g'ri",
+        "s": 96.68,
+        "e": 97.44
+      },
+      {
+        "w": "chuqur",
+        "s": 97.75,
+        "e": 98.09
+      },
+      {
+        "w": "yo'l",
+        "s": 98.13,
+        "e": 98.31
+      },
+      {
+        "w": "bilan",
+        "s": 98.35,
+        "e": 98.55
+      },
+      {
+        "w": "kirish",
+        "s": 98.59,
+        "e": 98.85
+      },
+      {
+        "w": "public",
+        "s": 99.13,
+        "e": 99.49
+      },
+      {
+        "w": "ey-pi-ay",
+        "s": 99.61,
+        "e": 99.99
+      },
+      {
+        "w": "ni",
+        "s": 100.05,
+        "e": 100.11
+      },
+      {
+        "w": "chetlab",
+        "s": 100.17,
+        "e": 100.53
+      },
+      {
+        "w": "o'tish",
+        "s": 100.57,
+        "e": 100.79
+      },
+      {
+        "w": "hisoblanadi",
+        "s": 100.83,
+        "e": 101.37
+      },
+      {
+        "w": "va",
+        "s": 101.65,
+        "e": 101.73
+      },
+      {
+        "w": "qat'iyan",
+        "s": 101.87,
+        "e": 102.43
+      },
+      {
+        "w": "taqiqlanadi.",
+        "s": 102.47,
+        "e": 103.09
+      }
+    ]
+  },
+  {
+    "id": "L11",
+    "scene": "kod_namunalari",
+    "text": "React va Vue loyihalarida router dinamik import va loader orqali sahifani chaqiradi, Angular da esa loadComponent va funksional guard ishlatiladi.",
+    "show": "React va Vue loyihalarida router dinamik import va loader orqali sahifani chaqiradi, Angular da esa loadComponent va funksional guard ishlatiladi.",
+    "say": "React va Vue loyihalarida router dinamik import va loader orqali sahifani chaqiradi, Angular da esa loud komponent va funksional gard ishlatiladi.",
+    "a0": 103.83,
+    "a1": 113.3,
+    "words": [
+      {
+        "w": "React",
+        "s": 103.83,
+        "e": 104.15
+      },
+      {
+        "w": "va",
+        "s": 104.21,
+        "e": 104.29
+      },
+      {
+        "w": "Vue",
+        "s": 104.39,
+        "e": 104.59
+      },
+      {
+        "w": "loyihalarida",
+        "s": 104.65,
+        "e": 105.29
+      },
+      {
+        "w": "router",
+        "s": 105.53,
+        "e": 105.93
+      },
+      {
+        "w": "dinamik",
+        "s": 106.05,
+        "e": 106.47
+      },
+      {
+        "w": "import",
+        "s": 106.59,
+        "e": 106.89
+      },
+      {
+        "w": "va",
+        "s": 106.97,
+        "e": 107.03
+      },
+      {
+        "w": "loader",
+        "s": 107.29,
+        "e": 107.61
+      },
+      {
+        "w": "orqali",
+        "s": 107.71,
+        "e": 108.01
+      },
+      {
+        "w": "sahifani",
+        "s": 108.09,
+        "e": 108.55
+      },
+      {
+        "w": "chaqiradi,",
+        "s": 108.59,
+        "e": 109.01
+      },
+      {
+        "w": "Angular",
+        "s": 109.65,
+        "e": 110.05
+      },
+      {
+        "w": "da",
+        "s": 110.09,
+        "e": 110.15
+      },
+      {
+        "w": "esa",
+        "s": 110.21,
+        "e": 110.43
+      },
+      {
+        "w": "loud",
+        "s": 110.71,
+        "e": 110.93
+      },
+      {
+        "w": "komponent",
+        "s": 111.01,
+        "e": 111.55
+      },
+      {
+        "w": "va",
+        "s": 111.61,
+        "e": 111.69
+      },
+      {
+        "w": "funksional",
+        "s": 111.89,
+        "e": 112.37
+      },
+      {
+        "w": "gard",
+        "s": 112.45,
+        "e": 112.68
+      },
+      {
+        "w": "ishlatiladi.",
+        "s": 112.78,
+        "e": 113.3
+      }
+    ]
+  },
+  {
+    "id": "L12",
+    "scene": "kod_namunalari",
+    "text": "Bosh sahifa tezkor chiqishi uchun eager, qolgan ikkinchi darajali barcha sahifalar esa faqat URL ga kirilganda yuklanadi.",
+    "show": "Bosh sahifa tezkor chiqishi uchun eager, qolgan ikkinchi darajali barcha sahifalar esa faqat URL ga kirilganda yuklanadi.",
+    "say": "Bosh sahifa tezkor chiqishi uchun i-gir, qolgan ikkinchi darajali barcha sahifalar esa faqat yu-ar-el ga kirilganda yuklanadi.",
+    "a0": 114.06,
+    "a1": 121.08,
+    "words": [
+      {
+        "w": "Bosh",
+        "s": 114.06,
+        "e": 114.28
+      },
+      {
+        "w": "sahifa",
+        "s": 114.32,
+        "e": 114.7
+      },
+      {
+        "w": "tezkor",
+        "s": 114.78,
+        "e": 115.16
+      },
+      {
+        "w": "chiqishi",
+        "s": 115.2,
+        "e": 115.48
+      },
+      {
+        "w": "uchun",
+        "s": 115.54,
+        "e": 115.78
+      },
+      {
+        "w": "i-gir,",
+        "s": 116.04,
+        "e": 116.34
+      },
+      {
+        "w": "qolgan",
+        "s": 116.56,
+        "e": 116.92
+      },
+      {
+        "w": "ikkinchi",
+        "s": 117.04,
+        "e": 117.36
+      },
+      {
+        "w": "darajali",
+        "s": 117.4,
+        "e": 117.84
+      },
+      {
+        "w": "barcha",
+        "s": 117.9,
+        "e": 118.14
+      },
+      {
+        "w": "sahifalar",
+        "s": 118.2,
+        "e": 118.7
+      },
+      {
+        "w": "esa",
+        "s": 118.76,
+        "e": 118.92
+      },
+      {
+        "w": "faqat",
+        "s": 119.24,
+        "e": 119.52
+      },
+      {
+        "w": "yu-ar-el",
+        "s": 119.6,
+        "e": 119.94
+      },
+      {
+        "w": "ga",
+        "s": 119.96,
+        "e": 120.0
+      },
+      {
+        "w": "kirilganda",
+        "s": 120.1,
+        "e": 120.58
+      },
+      {
+        "w": "yuklanadi.",
+        "s": 120.62,
+        "e": 121.08
+      }
+    ]
+  },
+  {
+    "id": "L13",
+    "scene": "tipik_xatolar",
+    "text": "Tipik xatolar: sahifa public API sini chetlab o'tish, URL satrlarini komponentlar ichida hardcode qilish va feature lardan app/routes ga teskari import qilishdir.",
+    "show": "Tipik xatolar: sahifa public API sini chetlab o'tish, URL satrlarini komponentlar ichida hardcode qilish va feature lardan app/routes ga teskari import qilishdir.",
+    "say": "Tipik xatolar: sahifa public ey-pi-ay sini chetlab o'tish, yu-ar-el satrlarini komponentlar ichida xardkoud qilish va ficher lardan ep/routs ga teskari import qilishdir.",
+    "a0": 121.74,
+    "a1": 132.65,
+    "words": [
+      {
+        "w": "Tipik",
+        "s": 121.74,
+        "e": 122.06
+      },
+      {
+        "w": "xatolar:",
+        "s": 122.12,
+        "e": 122.64
+      },
+      {
+        "w": "sahifa",
+        "s": 122.98,
+        "e": 123.36
+      },
+      {
+        "w": "public",
+        "s": 123.44,
+        "e": 123.76
+      },
+      {
+        "w": "ey-pi-ay",
+        "s": 123.86,
+        "e": 124.2
+      },
+      {
+        "w": "sini",
+        "s": 124.24,
+        "e": 124.42
+      },
+      {
+        "w": "chetlab",
+        "s": 124.46,
+        "e": 124.8
+      },
+      {
+        "w": "o'tish,",
+        "s": 124.9,
+        "e": 125.28
+      },
+      {
+        "w": "yu-ar-el",
+        "s": 125.66,
+        "e": 126.02
+      },
+      {
+        "w": "satrlarini",
+        "s": 126.06,
+        "e": 126.62
+      },
+      {
+        "w": "komponentlar",
+        "s": 126.68,
+        "e": 127.28
+      },
+      {
+        "w": "ichida",
+        "s": 127.34,
+        "e": 127.61
+      },
+      {
+        "w": "xardkoud",
+        "s": 127.69,
+        "e": 128.17
+      },
+      {
+        "w": "qilish",
+        "s": 128.23,
+        "e": 128.51
+      },
+      {
+        "w": "va",
+        "s": 128.59,
+        "e": 128.67
+      },
+      {
+        "w": "ficher",
+        "s": 129.07,
+        "e": 129.39
+      },
+      {
+        "w": "lardan",
+        "s": 129.45,
+        "e": 129.77
+      },
+      {
+        "w": "ep/routs",
+        "s": 129.77,
+        "e": 131.15
+      },
+      {
+        "w": "ga",
+        "s": 131.15,
+        "e": 131.25
+      },
+      {
+        "w": "teskari",
+        "s": 131.37,
+        "e": 131.83
+      },
+      {
+        "w": "import",
+        "s": 131.95,
+        "e": 132.21
+      },
+      {
+        "w": "qilishdir.",
+        "s": 132.27,
+        "e": 132.65
+      }
+    ]
+  },
+  {
+    "id": "L14",
+    "scene": "tipik_xatolar",
+    "text": "Shuningdek, frontend dagi navigatsiya guardlari faqat foydalanuvchi qulayligi uchun, haqiqiy ma'lumot xavfsizligi esa har doim backend da tekshiriladi.",
+    "show": "Shuningdek, frontend dagi navigatsiya guardlari faqat foydalanuvchi qulayligi uchun, haqiqiy ma'lumot xavfsizligi esa har doim backend da tekshiriladi.",
+    "say": "Shuningdek, frontend dagi navigatsiya gardlari faqat foydalanuvchi qulayligi uchun, haqiqiy ma'lumot xavfsizligi esa har doim bekend da tekshiriladi.",
+    "a0": 133.21,
+    "a1": 142.9,
+    "words": [
+      {
+        "w": "Shuningdek,",
+        "s": 133.21,
+        "e": 133.75
+      },
+      {
+        "w": "frontend",
+        "s": 134.09,
+        "e": 134.63
+      },
+      {
+        "w": "dagi",
+        "s": 134.65,
+        "e": 134.87
+      },
+      {
+        "w": "navigatsiya",
+        "s": 134.91,
+        "e": 135.49
+      },
+      {
+        "w": "gardlari",
+        "s": 135.53,
+        "e": 136.01
+      },
+      {
+        "w": "faqat",
+        "s": 136.31,
+        "e": 136.63
+      },
+      {
+        "w": "foydalanuvchi",
+        "s": 136.71,
+        "e": 137.37
+      },
+      {
+        "w": "qulayligi",
+        "s": 137.43,
+        "e": 137.89
+      },
+      {
+        "w": "uchun,",
+        "s": 137.95,
+        "e": 138.21
+      },
+      {
+        "w": "haqiqiy",
+        "s": 138.81,
+        "e": 139.29
+      },
+      {
+        "w": "ma'lumot",
+        "s": 139.39,
+        "e": 139.85
+      },
+      {
+        "w": "xavfsizligi",
+        "s": 139.89,
+        "e": 140.41
+      },
+      {
+        "w": "esa",
+        "s": 140.49,
+        "e": 140.67
+      },
+      {
+        "w": "har",
+        "s": 141.03,
+        "e": 141.29
+      },
+      {
+        "w": "doim",
+        "s": 141.35,
+        "e": 141.67
+      },
+      {
+        "w": "bekend",
+        "s": 141.79,
+        "e": 142.15
+      },
+      {
+        "w": "da",
+        "s": 142.17,
+        "e": 142.25
+      },
+      {
+        "w": "tekshiriladi.",
+        "s": 142.31,
+        "e": 142.9
+      }
+    ]
+  },
+  {
+    "id": "L15",
+    "scene": "xulosa",
+    "text": "Xulosa: router konfiguratsiyasini app da, URL konstantalarini shared da saqlang va sahifalarni faqat public API orqali lazy yuklang.",
+    "show": "Xulosa: router konfiguratsiyasini app da, URL konstantalarini shared da saqlang va sahifalarni faqat public API orqali lazy yuklang.",
+    "say": "Xulosa: router konfiguratsiyasini ep da, yu-ar-el konstantalarini sherd da saqlang va sahifalarni faqat public ey-pi-ay orqali leyzi yuklang.",
+    "a0": 143.88,
+    "a1": 154.13,
+    "words": [
+      {
+        "w": "Xulosa:",
+        "s": 143.88,
+        "e": 144.28
+      },
+      {
+        "w": "router",
+        "s": 145.08,
+        "e": 145.4
+      },
+      {
+        "w": "konfiguratsiyasini",
+        "s": 145.46,
+        "e": 146.38
+      },
+      {
+        "w": "ep",
+        "s": 146.62,
+        "e": 146.74
+      },
+      {
+        "w": "da,",
+        "s": 146.88,
+        "e": 146.96
+      },
+      {
+        "w": "yu-ar-el",
+        "s": 147.58,
+        "e": 147.98
+      },
+      {
+        "w": "konstantalarini",
+        "s": 148.06,
+        "e": 148.84
+      },
+      {
+        "w": "sherd",
+        "s": 149.1,
+        "e": 149.44
+      },
+      {
+        "w": "da",
+        "s": 149.52,
+        "e": 149.58
+      },
+      {
+        "w": "saqlang",
+        "s": 149.66,
+        "e": 150.0
+      },
+      {
+        "w": "va",
+        "s": 150.44,
+        "e": 150.48
+      },
+      {
+        "w": "sahifalarni",
+        "s": 150.54,
+        "e": 151.22
+      },
+      {
+        "w": "faqat",
+        "s": 151.3,
+        "e": 151.6
+      },
+      {
+        "w": "public",
+        "s": 151.76,
+        "e": 152.12
+      },
+      {
+        "w": "ey-pi-ay",
+        "s": 152.26,
+        "e": 152.66
+      },
+      {
+        "w": "orqali",
+        "s": 152.72,
+        "e": 153.06
+      },
+      {
+        "w": "leyzi",
+        "s": 153.36,
+        "e": 153.71
+      },
+      {
+        "w": "yuklang.",
+        "s": 153.77,
+        "e": 154.13
+      }
+    ]
+  },
+  {
+    "id": "L16",
+    "scene": "xulosa",
+    "text": "Keyingi bobda FSD arxitekturasining React va Vite uchun ishlab chiqilgan tayyor ishlab chiqarish shablonini ko'rib chiqamiz. Rahmat!",
+    "show": "Keyingi bobda FSD arxitekturasining React va Vite uchun ishlab chiqilgan tayyor ishlab chiqarish shablonini ko'rib chiqamiz. Rahmat!",
+    "say": "Keyingi bobda Ef-es-di arxitekturasining React va Vite uchun ishlab chiqilgan tayyor ishlab chiqarish shablonini ko'rib chiqamiz. Rahmat!",
+    "a0": 154.99,
+    "a1": 163.34,
+    "words": [
+      {
+        "w": "Keyingi",
+        "s": 154.99,
+        "e": 155.29
+      },
+      {
+        "w": "bobda",
+        "s": 155.33,
+        "e": 155.63
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 155.95,
+        "e": 156.27
+      },
+      {
+        "w": "arxitekturasining",
+        "s": 156.33,
+        "e": 157.19
+      },
+      {
+        "w": "React",
+        "s": 157.53,
+        "e": 157.87
+      },
+      {
+        "w": "va",
+        "s": 157.93,
+        "e": 157.99
+      },
+      {
+        "w": "Vite",
+        "s": 158.09,
+        "e": 158.27
+      },
+      {
+        "w": "uchun",
+        "s": 158.35,
+        "e": 158.55
+      },
+      {
+        "w": "ishlab",
+        "s": 158.67,
+        "e": 158.93
+      },
+      {
+        "w": "chiqilgan",
+        "s": 158.97,
+        "e": 159.37
+      },
+      {
+        "w": "tayyor",
+        "s": 159.65,
+        "e": 160.07
+      },
+      {
+        "w": "ishlab",
+        "s": 160.19,
+        "e": 160.48
+      },
+      {
+        "w": "chiqarish",
+        "s": 160.52,
+        "e": 160.86
+      },
+      {
+        "w": "shablonini",
+        "s": 160.88,
+        "e": 161.44
+      },
+      {
+        "w": "ko'rib",
+        "s": 161.48,
+        "e": 161.68
+      },
+      {
+        "w": "chiqamiz.",
+        "s": 161.7,
+        "e": 162.06
+      },
+      {
+        "w": "Rahmat!",
+        "s": 162.96,
+        "e": 163.34
+      }
+    ]
+  }
+]
