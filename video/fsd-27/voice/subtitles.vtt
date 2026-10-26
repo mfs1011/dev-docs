@@ -1,0 +1,81 @@
+WEBVTT
+
+1
+00:01.420 --> 00:20.680
+Salom! Bu FSD qo'llanmasining yigirma yettinchi bobi — React va Vite uchun to'liq ishlab chiqarish shabloni. Bugun React
+19, Vite, TanStack Query va React Router asosida Steiger linteridan to'liq o'tuvchi FSD loyihasini noldan yig'amiz.
+
+2
+00:21.950 --> 00:28.790
+Ushbu shablon 2026-yil talablariga mos keluvchi zamonaviy
+instrumentlar bilan to'liq tekshirib chiqilgan.
+
+3
+00:31.000 --> 00:38.750
+Birinchi qadam — create-vite yordamida react-ts shablonini
+yuklab, standart fayllarni FSD qatlamlariga almashtirishdir.
+
+4
+00:39.120 --> 00:48.040
+Boshlang'ich index nuqta html faylida skript yo'li to'g'ridan-to'g'ri
+src app entrypoint main nuqta te-iks ga qaratiladi.
+
+5
+00:48.270 --> 00:55.160
+Shuningdek, vite konfig va te-es-konfig fayllarida
+et belgisi src katalogiga alias qilib ulanadi.
+
+6
+00:58.590 --> 01:03.790
+Loyiha intizomini saqlash uchun steiger
+konfig faylida rasmiy FSD plagini ulanadi.
+
+7
+01:04.040 --> 01:10.290
+App qatlamidagi maxsus provayderlar segmenti uchun
+esa segments-by-purpose qoidasiga istisno beriladi.
+
+8
+01:13.700 --> 01:21.120
+Ilovaning kirish nuqtasi bo'lgan main nuqta te-iks butun
+tizimni QueryProvider va RouterProvider bilan o'rab oladi.
+
+9
+01:21.450 --> 01:27.900
+QueryProvider ichida TanStack Query mijozi o'ttiz soniyalik
+staleTime kesh sozlamasi bilan ishga tushiriladi.
+
+10
+01:28.190 --> 01:36.110
+Router konfiguratsiyasida esa har bir sahifa mustaqil chunk
+sifatida faqat o'zining public API faylidan lazy import qilinadi.
+
+11
+01:39.520 --> 01:47.670
+Bosh sahifada to'liq kompozitsiya amalga oshadi: product entity'si
+kartochkani chizadi, savat feature'si esa unga tugmani joylaydi.
+
+12
+01:47.860 --> 01:55.320
+Bunday arxitekturada entity hech qachon feature'ni bilmaydi,
+barcha munosabatlar sahifa qatlamida slot orqali birlashadi.
+
+13
+01:58.690 --> 02:07.580
+Eng katta xatolar — eski main nuqta te-iks va App nuqta te-iks
+fayllarini ildizda qoldirish yoki te-es-konfig'da paths ni unutishdir.
+
+14
+02:07.820 --> 02:14.790
+Shuningdek, src assets papkasini qoldirish linter nazoratidan
+chetda qoladigan tartibsiz axlatxonani vujudga keltiradi.
+
+15
+02:17.980 --> 02:27.280
+Xulosa qilib aytganda, React va Vite loyihasini FSD ga moslash orqali
+millionlab satr kodda ham boshqariladigan mustahkam arxitekturaga ega bo'lasiz.
+
+16
+02:27.370 --> 02:35.270
+Keyingi bobda Next.js va server komponentlarida FSD
+shablonini qanday to'g'ri qo'llashni o'rganamiz. Rahmat!

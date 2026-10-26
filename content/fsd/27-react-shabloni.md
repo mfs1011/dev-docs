@@ -4,6 +4,14 @@
 
 ## Qisqacha
 
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/fsd/27-react-shabloni.jpg" src="/video/fsd/27-react-shabloni.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/fsd/27-react-shabloni.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/fsd/27-react-shabloni.uz.vtt">
+</video>
+<figcaption>Bob videoda: React + Vite ishlab chiqarish shabloni — React 19, Vite, TanStack Query, React Router, Steiger sozlamalari va kompozitsiya.</figcaption>
+</figure>
+
 React + Vite + React Router + TanStack Query uchun **tayyor FSD shabloni**. Bu tuzilma 2026-yil oktabrda `npm create vite@latest` bilan yaratilgan haqiqiy loyihada qurildi: `npm run build` (TypeScript tekshiruvi + Vite build) va `npx steiger src` xatosiz o'tdi.
 
 | Paket | Versiya |
