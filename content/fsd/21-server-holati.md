@@ -4,6 +4,14 @@
 
 ## Qisqacha
 
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/fsd/21-server-holati.jpg" src="/video/fsd/21-server-holati.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/fsd/21-server-holati.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/fsd/21-server-holati.uz.vtt">
+</video>
+<figcaption>Bob videoda: Server holati — TanStack Query, query factory kesh daraxti, nozik invalidatsiya va yagona QueryClient.</figcaption>
+</figure>
+
 Server holati kutubxonalari (TanStack Query, Pinia Colada, Angular `resource`/`httpResource`) bilan ishlaganda asosiy savol — **kesh kalitlari va query'lar qayerda**. Rasmiy tavsiya: kalitlarni **query factory**'da yig'ing va uni `shared/api`'da (yoki loyihada entity'lar bo'lsa — `entities/<x>/api`'da) saqlang. Mutatsiyalarni query'lar bilan aralashtirmang — ularni ishlatiladigan joy yonida (`api` segmentida) yoki `mutationFn` sifatida `shared`/`entities`'da saqlang.
 
 ## Qoida

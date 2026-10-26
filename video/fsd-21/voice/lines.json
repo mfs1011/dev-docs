@@ -1,0 +1,1488 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Salom! Bu FSD qo'llanmasining yigirma birinchi bobi — Server holati va kesh boshqaruvi. Bugun TanStack Query, Pinia Colada yoki Angular resurslari bilan ishlashda kesh kalitlari va so'rovlarni qatlamlarda qanday joylashtirishni ko'rib chiqamiz.",
+    "show": "Salom! Bu FSD qo'llanmasining yigirma birinchi bobi — Server holati va kesh boshqaruvi. Bugun TanStack Query, Pinia Colada yoki Angular resurslari bilan ishlashda kesh kalitlari va so'rovlarni qatlamlarda qanday joylashtirishni ko'rib chiqamiz.",
+    "say": "Salom! Bu Ef-es-di qo'llanmasining yigirma birinchi bobi — Server holati va kesh boshqaruvi. Bugun Ten-stek kveri, Piniya Kolada yoki Angular resurslari bilan ishlashda kesh kalitlari va so'rovlarni qatlamlarda qanday joylashtirishni ko'rib chiqamiz.",
+    "a0": 0.26,
+    "a1": 15.27,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.26,
+        "e": 0.58
+      },
+      {
+        "w": "Bu",
+        "s": 1.0,
+        "e": 1.08
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 1.32,
+        "e": 1.72
+      },
+      {
+        "w": "qo'llanmasining",
+        "s": 1.8,
+        "e": 2.54
+      },
+      {
+        "w": "yigirma",
+        "s": 2.6,
+        "e": 2.92
+      },
+      {
+        "w": "birinchi",
+        "s": 2.96,
+        "e": 3.26
+      },
+      {
+        "w": "bobi",
+        "s": 3.3,
+        "e": 3.54
+      },
+      {
+        "w": "—",
+        "s": 3.54,
+        "e": 3.54
+      },
+      {
+        "w": "Server",
+        "s": 4.04,
+        "e": 4.42
+      },
+      {
+        "w": "holati",
+        "s": 4.46,
+        "e": 4.9
+      },
+      {
+        "w": "va",
+        "s": 5.12,
+        "e": 5.18
+      },
+      {
+        "w": "kesh",
+        "s": 5.32,
+        "e": 5.56
+      },
+      {
+        "w": "boshqaruvi.",
+        "s": 5.62,
+        "e": 6.1
+      },
+      {
+        "w": "Bugun",
+        "s": 6.58,
+        "e": 6.88
+      },
+      {
+        "w": "Ten-stek",
+        "s": 6.96,
+        "e": 7.4
+      },
+      {
+        "w": "kveri,",
+        "s": 7.44,
+        "e": 7.81
+      },
+      {
+        "w": "Piniya",
+        "s": 8.23,
+        "e": 8.51
+      },
+      {
+        "w": "Kolada",
+        "s": 8.59,
+        "e": 8.97
+      },
+      {
+        "w": "yoki",
+        "s": 9.05,
+        "e": 9.29
+      },
+      {
+        "w": "Angular",
+        "s": 9.49,
+        "e": 9.89
+      },
+      {
+        "w": "resurslari",
+        "s": 9.91,
+        "e": 10.43
+      },
+      {
+        "w": "bilan",
+        "s": 10.45,
+        "e": 10.63
+      },
+      {
+        "w": "ishlashda",
+        "s": 10.65,
+        "e": 11.01
+      },
+      {
+        "w": "kesh",
+        "s": 11.41,
+        "e": 11.67
+      },
+      {
+        "w": "kalitlari",
+        "s": 11.75,
+        "e": 12.25
+      },
+      {
+        "w": "va",
+        "s": 12.31,
+        "e": 12.35
+      },
+      {
+        "w": "so'rovlarni",
+        "s": 12.43,
+        "e": 12.95
+      },
+      {
+        "w": "qatlamlarda",
+        "s": 13.01,
+        "e": 13.55
+      },
+      {
+        "w": "qanday",
+        "s": 13.63,
+        "e": 13.97
+      },
+      {
+        "w": "joylashtirishni",
+        "s": 14.01,
+        "e": 14.63
+      },
+      {
+        "w": "ko'rib",
+        "s": 14.67,
+        "e": 14.87
+      },
+      {
+        "w": "chiqamiz.",
+        "s": 14.91,
+        "e": 15.27
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "intro",
+    "text": "Serverdan kelgan ma'lumotlar oddiy holat emas, u keshlanishi, yangilanishi va aniq boshqarilishi lozim bo'lgan server holatidir.",
+    "show": "Serverdan kelgan ma'lumotlar oddiy holat emas, u keshlanishi, yangilanishi va aniq boshqarilishi lozim bo'lgan server holatidir.",
+    "say": "Serverdan kelgan ma'lumotlar oddiy holat emas, u keshlanishi, yangilanishi va aniq boshqarilishi lozim bo'lgan server holatidir.",
+    "a0": 16.01,
+    "a1": 23.8,
+    "words": [
+      {
+        "w": "Serverdan",
+        "s": 16.01,
+        "e": 16.57
+      },
+      {
+        "w": "kelgan",
+        "s": 16.61,
+        "e": 16.91
+      },
+      {
+        "w": "ma'lumotlar",
+        "s": 16.93,
+        "e": 17.43
+      },
+      {
+        "w": "oddiy",
+        "s": 17.59,
+        "e": 17.83
+      },
+      {
+        "w": "holat",
+        "s": 17.89,
+        "e": 18.19
+      },
+      {
+        "w": "emas,",
+        "s": 18.23,
+        "e": 18.43
+      },
+      {
+        "w": "u",
+        "s": 18.85,
+        "e": 18.87
+      },
+      {
+        "w": "keshlanishi,",
+        "s": 18.99,
+        "e": 19.61
+      },
+      {
+        "w": "yangilanishi",
+        "s": 20.01,
+        "e": 20.65
+      },
+      {
+        "w": "va",
+        "s": 20.75,
+        "e": 20.83
+      },
+      {
+        "w": "aniq",
+        "s": 21.03,
+        "e": 21.27
+      },
+      {
+        "w": "boshqarilishi",
+        "s": 21.33,
+        "e": 21.93
+      },
+      {
+        "w": "lozim",
+        "s": 21.97,
+        "e": 22.23
+      },
+      {
+        "w": "bo'lgan",
+        "s": 22.25,
+        "e": 22.56
+      },
+      {
+        "w": "server",
+        "s": 22.88,
+        "e": 23.24
+      },
+      {
+        "w": "holatidir.",
+        "s": 23.3,
+        "e": 23.8
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "query_factory",
+    "text": "Eng muhim qoida: kesh kalitlarini har bir komponentda qo'lda yozmasdan, query factory orqali iyerarxik daraxt ko'rinishida tuzing.",
+    "show": "Eng muhim qoida: kesh kalitlarini har bir komponentda qo'lda yozmasdan, query factory orqali iyerarxik daraxt ko'rinishida tuzing.",
+    "say": "Eng muhim qoida: kesh kalitlarini har bir komponentda qo'lda yozmasdan, kveri fektori orqali iyerarxik daraxt ko'rinishida tuzing.",
+    "a0": 24.58,
+    "a1": 31.8,
+    "words": [
+      {
+        "w": "Eng",
+        "s": 24.58,
+        "e": 24.76
+      },
+      {
+        "w": "muhim",
+        "s": 24.8,
+        "e": 25.02
+      },
+      {
+        "w": "qoida:",
+        "s": 25.08,
+        "e": 25.38
+      },
+      {
+        "w": "kesh",
+        "s": 25.78,
+        "e": 26.02
+      },
+      {
+        "w": "kalitlarini",
+        "s": 26.06,
+        "e": 26.6
+      },
+      {
+        "w": "har",
+        "s": 26.68,
+        "e": 26.88
+      },
+      {
+        "w": "bir",
+        "s": 26.94,
+        "e": 27.04
+      },
+      {
+        "w": "komponentda",
+        "s": 27.08,
+        "e": 27.64
+      },
+      {
+        "w": "qo'lda",
+        "s": 27.74,
+        "e": 28.0
+      },
+      {
+        "w": "yozmasdan,",
+        "s": 28.06,
+        "e": 28.54
+      },
+      {
+        "w": "kveri",
+        "s": 28.84,
+        "e": 29.18
+      },
+      {
+        "w": "fektori",
+        "s": 29.26,
+        "e": 29.6
+      },
+      {
+        "w": "orqali",
+        "s": 29.7,
+        "e": 29.98
+      },
+      {
+        "w": "iyerarxik",
+        "s": 30.18,
+        "e": 30.7
+      },
+      {
+        "w": "daraxt",
+        "s": 30.76,
+        "e": 31.04
+      },
+      {
+        "w": "ko'rinishida",
+        "s": 31.08,
+        "e": 31.5
+      },
+      {
+        "w": "tuzing.",
+        "s": 31.54,
+        "e": 31.8
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "query_factory",
+    "text": "Masalan, shared/api yoki entities ichidagi queries katalogida all, lists, list va detail metodlarini bitta zavodga birlashtiring.",
+    "show": "Masalan, shared/api yoki entities ichidagi queries katalogida all, lists, list va detail metodlarini bitta zavodga birlashtiring.",
+    "say": "Masalan, sherd/ey-pi-ay yoki entitiz ichidagi kveriz katalogida all, lists, list va detail metodlarini bitta zavodga birlashtiring.",
+    "a0": 32.38,
+    "a1": 41.93,
+    "words": [
+      {
+        "w": "Masalan,",
+        "s": 32.38,
+        "e": 32.74
+      },
+      {
+        "w": "sherd/ey-pi-ay",
+        "s": 32.74,
+        "e": 34.3
+      },
+      {
+        "w": "yoki",
+        "s": 34.3,
+        "e": 34.8
+      },
+      {
+        "w": "entitiz",
+        "s": 35.0,
+        "e": 35.44
+      },
+      {
+        "w": "ichidagi",
+        "s": 35.54,
+        "e": 35.94
+      },
+      {
+        "w": "kveriz",
+        "s": 36.04,
+        "e": 36.46
+      },
+      {
+        "w": "katalogida",
+        "s": 36.5,
+        "e": 37.02
+      },
+      {
+        "w": "all,",
+        "s": 37.48,
+        "e": 37.67
+      },
+      {
+        "w": "lists,",
+        "s": 38.11,
+        "e": 38.45
+      },
+      {
+        "w": "list",
+        "s": 38.81,
+        "e": 39.07
+      },
+      {
+        "w": "va",
+        "s": 39.13,
+        "e": 39.21
+      },
+      {
+        "w": "detail",
+        "s": 39.43,
+        "e": 39.89
+      },
+      {
+        "w": "metodlarini",
+        "s": 39.99,
+        "e": 40.57
+      },
+      {
+        "w": "bitta",
+        "s": 40.67,
+        "e": 40.97
+      },
+      {
+        "w": "zavodga",
+        "s": 41.03,
+        "e": 41.39
+      },
+      {
+        "w": "birlashtiring.",
+        "s": 41.43,
+        "e": 41.93
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "kesh_invalidatsiyasi",
+    "text": "Bunday iyerarxiya keshni nozik boshqarish imkonini beradi: all kaliti butun resursni, lists esa faqat ro'yxat keshini yangilaydi.",
+    "show": "Bunday iyerarxiya keshni nozik boshqarish imkonini beradi: all kaliti butun resursni, lists esa faqat ro'yxat keshini yangilaydi.",
+    "say": "Bunday iyerarxiya keshni nozik boshqarish imkonini beradi: all kaliti butun resursni, lists esa faqat ro'yxat keshini yangilaydi.",
+    "a0": 42.63,
+    "a1": 50.31,
+    "words": [
+      {
+        "w": "Bunday",
+        "s": 42.63,
+        "e": 42.93
+      },
+      {
+        "w": "iyerarxiya",
+        "s": 42.97,
+        "e": 43.47
+      },
+      {
+        "w": "keshni",
+        "s": 43.79,
+        "e": 44.11
+      },
+      {
+        "w": "nozik",
+        "s": 44.19,
+        "e": 44.49
+      },
+      {
+        "w": "boshqarish",
+        "s": 44.55,
+        "e": 44.95
+      },
+      {
+        "w": "imkonini",
+        "s": 44.99,
+        "e": 45.41
+      },
+      {
+        "w": "beradi:",
+        "s": 45.43,
+        "e": 45.71
+      },
+      {
+        "w": "all",
+        "s": 46.21,
+        "e": 46.33
+      },
+      {
+        "w": "kaliti",
+        "s": 46.41,
+        "e": 46.73
+      },
+      {
+        "w": "butun",
+        "s": 47.05,
+        "e": 47.31
+      },
+      {
+        "w": "resursni,",
+        "s": 47.39,
+        "e": 47.79
+      },
+      {
+        "w": "lists",
+        "s": 48.13,
+        "e": 48.41
+      },
+      {
+        "w": "esa",
+        "s": 48.47,
+        "e": 48.63
+      },
+      {
+        "w": "faqat",
+        "s": 48.75,
+        "e": 49.05
+      },
+      {
+        "w": "ro'yxat",
+        "s": 49.17,
+        "e": 49.47
+      },
+      {
+        "w": "keshini",
+        "s": 49.53,
+        "e": 49.81
+      },
+      {
+        "w": "yangilaydi.",
+        "s": 49.85,
+        "e": 50.31
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "kesh_invalidatsiyasi",
+    "text": "Bitta mahsulot yangilanganda butun ilovani qayta yuklash shart emas, faqat tegishli query kalitini invalidate qilish kifoya.",
+    "show": "Bitta mahsulot yangilanganda butun ilovani qayta yuklash shart emas, faqat tegishli query kalitini invalidate qilish kifoya.",
+    "say": "Bitta mahsulot yangilanganda butun ilovani qayta yuklash shart emas, faqat tegishli kveri kalitini invalideyt qilish kifoya.",
+    "a0": 51.03,
+    "a1": 58.16,
+    "words": [
+      {
+        "w": "Bitta",
+        "s": 51.03,
+        "e": 51.31
+      },
+      {
+        "w": "mahsulot",
+        "s": 51.37,
+        "e": 51.81
+      },
+      {
+        "w": "yangilanganda",
+        "s": 51.85,
+        "e": 52.47
+      },
+      {
+        "w": "butun",
+        "s": 52.8,
+        "e": 53.06
+      },
+      {
+        "w": "ilovani",
+        "s": 53.16,
+        "e": 53.58
+      },
+      {
+        "w": "qayta",
+        "s": 53.64,
+        "e": 53.88
+      },
+      {
+        "w": "yuklash",
+        "s": 53.92,
+        "e": 54.24
+      },
+      {
+        "w": "shart",
+        "s": 54.26,
+        "e": 54.44
+      },
+      {
+        "w": "emas,",
+        "s": 54.5,
+        "e": 54.7
+      },
+      {
+        "w": "faqat",
+        "s": 55.02,
+        "e": 55.36
+      },
+      {
+        "w": "tegishli",
+        "s": 55.42,
+        "e": 55.8
+      },
+      {
+        "w": "kveri",
+        "s": 55.9,
+        "e": 56.2
+      },
+      {
+        "w": "kalitini",
+        "s": 56.26,
+        "e": 56.66
+      },
+      {
+        "w": "invalideyt",
+        "s": 56.96,
+        "e": 57.46
+      },
+      {
+        "w": "qilish",
+        "s": 57.54,
+        "e": 57.76
+      },
+      {
+        "w": "kifoya.",
+        "s": 57.78,
+        "e": 58.16
+      }
+    ]
+  },
+  {
+    "id": "L7",
+    "scene": "kesh_invalidatsiyasi",
+    "text": "Bu tarmoq trafigini keskin kamaytirib, ilova tezligini sezilarli darajada oshiradi.",
+    "show": "Bu tarmoq trafigini keskin kamaytirib, ilova tezligini sezilarli darajada oshiradi.",
+    "say": "Bu tarmoq trafigini keskin kamaytirib, ilova tezligini sezilarli darajada oshiradi.",
+    "a0": 58.9,
+    "a1": 63.26,
+    "words": [
+      {
+        "w": "Bu",
+        "s": 58.9,
+        "e": 58.98
+      },
+      {
+        "w": "tarmoq",
+        "s": 59.1,
+        "e": 59.42
+      },
+      {
+        "w": "trafigini",
+        "s": 59.48,
+        "e": 59.9
+      },
+      {
+        "w": "keskin",
+        "s": 59.94,
+        "e": 60.28
+      },
+      {
+        "w": "kamaytirib,",
+        "s": 60.32,
+        "e": 60.76
+      },
+      {
+        "w": "ilova",
+        "s": 61.08,
+        "e": 61.38
+      },
+      {
+        "w": "tezligini",
+        "s": 61.42,
+        "e": 61.86
+      },
+      {
+        "w": "sezilarli",
+        "s": 61.9,
+        "e": 62.42
+      },
+      {
+        "w": "darajada",
+        "s": 62.48,
+        "e": 62.84
+      },
+      {
+        "w": "oshiradi.",
+        "s": 62.9,
+        "e": 63.26
+      }
+    ]
+  },
+  {
+    "id": "L8",
+    "scene": "mutatsiyalar_joyi",
+    "text": "Mutatsiyalarni query factory bilan aralashtirmang! Yaratish, yangilash yoki o'chirish harakatlari o'ziga xos mantiqqa ega.",
+    "show": "Mutatsiyalarni query factory bilan aralashtirmang! Yaratish, yangilash yoki o'chirish harakatlari o'ziga xos mantiqqa ega.",
+    "say": "Mutatsiyalarni kveri fektori bilan aralashtirmang! Yaratish, yangilash yoki o'chirish harakatlari o'ziga xos mantiqqa ega.",
+    "a0": 63.92,
+    "a1": 70.91,
+    "words": [
+      {
+        "w": "Mutatsiyalarni",
+        "s": 63.92,
+        "e": 64.64
+      },
+      {
+        "w": "kveri",
+        "s": 64.72,
+        "e": 65.02
+      },
+      {
+        "w": "fektori",
+        "s": 65.06,
+        "e": 65.4
+      },
+      {
+        "w": "bilan",
+        "s": 65.44,
+        "e": 65.62
+      },
+      {
+        "w": "aralashtirmang!",
+        "s": 65.72,
+        "e": 66.34
+      },
+      {
+        "w": "Yaratish,",
+        "s": 66.8,
+        "e": 67.28
+      },
+      {
+        "w": "yangilash",
+        "s": 67.53,
+        "e": 68.05
+      },
+      {
+        "w": "yoki",
+        "s": 68.07,
+        "e": 68.35
+      },
+      {
+        "w": "o'chirish",
+        "s": 68.51,
+        "e": 68.85
+      },
+      {
+        "w": "harakatlari",
+        "s": 68.87,
+        "e": 69.39
+      },
+      {
+        "w": "o'ziga",
+        "s": 69.71,
+        "e": 70.01
+      },
+      {
+        "w": "xos",
+        "s": 70.07,
+        "e": 70.23
+      },
+      {
+        "w": "mantiqqa",
+        "s": 70.27,
+        "e": 70.69
+      },
+      {
+        "w": "ega.",
+        "s": 70.75,
+        "e": 70.91
+      }
+    ]
+  },
+  {
+    "id": "L9",
+    "scene": "mutatsiyalar_joyi",
+    "text": "Mutatsiya hook'i yoki funksiyasi aynan u ishlatiladigan joyda — sahifa yoki feature'ning api segmentida saqlanadi.",
+    "show": "Mutatsiya hook'i yoki funksiyasi aynan u ishlatiladigan joyda — sahifa yoki feature'ning api segmentida saqlanadi.",
+    "say": "Mutatsiya hook'i yoki funksiyasi aynan u ishlatiladigan joyda — sahifa yoki ficher'ning ey-pi-ay segmentida saqlanadi.",
+    "a0": 71.57,
+    "a1": 78.65,
+    "words": [
+      {
+        "w": "Mutatsiya",
+        "s": 71.57,
+        "e": 72.05
+      },
+      {
+        "w": "hook'i",
+        "s": 72.11,
+        "e": 72.45
+      },
+      {
+        "w": "yoki",
+        "s": 72.45,
+        "e": 72.95
+      },
+      {
+        "w": "funksiyasi",
+        "s": 73.01,
+        "e": 73.57
+      },
+      {
+        "w": "aynan",
+        "s": 73.77,
+        "e": 74.07
+      },
+      {
+        "w": "u",
+        "s": 74.19,
+        "e": 74.21
+      },
+      {
+        "w": "ishlatiladigan",
+        "s": 74.33,
+        "e": 74.95
+      },
+      {
+        "w": "joyda",
+        "s": 74.99,
+        "e": 75.25
+      },
+      {
+        "w": "—",
+        "s": 75.25,
+        "e": 75.25
+      },
+      {
+        "w": "sahifa",
+        "s": 75.69,
+        "e": 76.13
+      },
+      {
+        "w": "yoki",
+        "s": 76.19,
+        "e": 76.53
+      },
+      {
+        "w": "ficher'ning",
+        "s": 76.63,
+        "e": 77.13
+      },
+      {
+        "w": "ey-pi-ay",
+        "s": 77.23,
+        "e": 77.59
+      },
+      {
+        "w": "segmentida",
+        "s": 77.63,
+        "e": 78.13
+      },
+      {
+        "w": "saqlanadi.",
+        "s": 78.17,
+        "e": 78.65
+      }
+    ]
+  },
+  {
+    "id": "L10",
+    "scene": "mutatsiyalar_joyi",
+    "text": "Va uning onSuccess hodisasida markaziy query factory kaliti orqali kesh yangilanadi.",
+    "show": "Va uning onSuccess hodisasida markaziy query factory kaliti orqali kesh yangilanadi.",
+    "say": "Va uning on sakses hodisasida markaziy kveri fektori kaliti orqali kesh yangilanadi.",
+    "a0": 79.29,
+    "a1": 84.24,
+    "words": [
+      {
+        "w": "Va",
+        "s": 79.29,
+        "e": 79.37
+      },
+      {
+        "w": "uning",
+        "s": 79.45,
+        "e": 79.69
+      },
+      {
+        "w": "on",
+        "s": 79.83,
+        "e": 79.93
+      },
+      {
+        "w": "sakses",
+        "s": 80.01,
+        "e": 80.37
+      },
+      {
+        "w": "hodisasida",
+        "s": 80.43,
+        "e": 80.99
+      },
+      {
+        "w": "markaziy",
+        "s": 81.33,
+        "e": 81.75
+      },
+      {
+        "w": "kveri",
+        "s": 81.85,
+        "e": 82.17
+      },
+      {
+        "w": "fektori",
+        "s": 82.23,
+        "e": 82.58
+      },
+      {
+        "w": "kaliti",
+        "s": 82.64,
+        "e": 82.92
+      },
+      {
+        "w": "orqali",
+        "s": 82.98,
+        "e": 83.3
+      },
+      {
+        "w": "kesh",
+        "s": 83.42,
+        "e": 83.66
+      },
+      {
+        "w": "yangilanadi.",
+        "s": 83.7,
+        "e": 84.24
+      }
+    ]
+  },
+  {
+    "id": "L11",
+    "scene": "yagona_query_klient",
+    "text": "QueryClient instance'i ilovada faqat bitta bo'lishi shart va u app/providers qatlamida yaratilib, butun daraxtga ulash lozim.",
+    "show": "QueryClient instance'i ilovada faqat bitta bo'lishi shart va u app/providers qatlamida yaratilib, butun daraxtga ulash lozim.",
+    "say": "Kveri Klayent instance'i ilovada faqat bitta bo'lishi shart va u ep/providers qatlamida yaratilib, butun daraxtga ulash lozim.",
+    "a0": 84.84,
+    "a1": 92.34,
+    "words": [
+      {
+        "w": "Kveri",
+        "s": 84.84,
+        "e": 85.18
+      },
+      {
+        "w": "Klayent",
+        "s": 85.26,
+        "e": 85.62
+      },
+      {
+        "w": "instance'i",
+        "s": 85.76,
+        "e": 86.22
+      },
+      {
+        "w": "ilovada",
+        "s": 86.38,
+        "e": 86.76
+      },
+      {
+        "w": "faqat",
+        "s": 86.82,
+        "e": 87.06
+      },
+      {
+        "w": "bitta",
+        "s": 87.12,
+        "e": 87.38
+      },
+      {
+        "w": "bo'lishi",
+        "s": 87.42,
+        "e": 87.72
+      },
+      {
+        "w": "shart",
+        "s": 87.76,
+        "e": 87.98
+      },
+      {
+        "w": "va",
+        "s": 88.34,
+        "e": 88.4
+      },
+      {
+        "w": "u",
+        "s": 88.52,
+        "e": 88.54
+      },
+      {
+        "w": "ep/providers",
+        "s": 88.54,
+        "e": 90.02
+      },
+      {
+        "w": "qatlamida",
+        "s": 90.02,
+        "e": 90.36
+      },
+      {
+        "w": "yaratilib,",
+        "s": 90.42,
+        "e": 90.8
+      },
+      {
+        "w": "butun",
+        "s": 91.08,
+        "e": 91.36
+      },
+      {
+        "w": "daraxtga",
+        "s": 91.42,
+        "e": 91.78
+      },
+      {
+        "w": "ulash",
+        "s": 91.84,
+        "e": 92.06
+      },
+      {
+        "w": "lozim.",
+        "s": 92.08,
+        "e": 92.34
+      }
+    ]
+  },
+  {
+    "id": "L12",
+    "scene": "yagona_query_klient",
+    "text": "Slicelar ichida yangi QueryClient yaratish har xil keshlar va sinxronizatsiya buzilishlariga olib keladi.",
+    "show": "Slicelar ichida yangi QueryClient yaratish har xil keshlar va sinxronizatsiya buzilishlariga olib keladi.",
+    "say": "Slicelar ichida yangi Kveri Klayent yaratish har xil keshlar va sinxronizatsiya buzilishlariga olib keladi.",
+    "a0": 92.92,
+    "a1": 98.45,
+    "words": [
+      {
+        "w": "Slicelar",
+        "s": 92.92,
+        "e": 93.38
+      },
+      {
+        "w": "ichida",
+        "s": 93.46,
+        "e": 93.72
+      },
+      {
+        "w": "yangi",
+        "s": 93.84,
+        "e": 94.08
+      },
+      {
+        "w": "Kveri",
+        "s": 94.14,
+        "e": 94.46
+      },
+      {
+        "w": "Klayent",
+        "s": 94.5,
+        "e": 94.82
+      },
+      {
+        "w": "yaratish",
+        "s": 94.86,
+        "e": 95.22
+      },
+      {
+        "w": "har",
+        "s": 95.46,
+        "e": 95.68
+      },
+      {
+        "w": "xil",
+        "s": 95.72,
+        "e": 95.86
+      },
+      {
+        "w": "keshlar",
+        "s": 95.92,
+        "e": 96.36
+      },
+      {
+        "w": "va",
+        "s": 96.42,
+        "e": 96.5
+      },
+      {
+        "w": "sinxronizatsiya",
+        "s": 96.62,
+        "e": 97.34
+      },
+      {
+        "w": "buzilishlariga",
+        "s": 97.38,
+        "e": 97.93
+      },
+      {
+        "w": "olib",
+        "s": 97.99,
+        "e": 98.15
+      },
+      {
+        "w": "keladi.",
+        "s": 98.17,
+        "e": 98.45
+      }
+    ]
+  },
+  {
+    "id": "L13",
+    "scene": "yagona_query_klient",
+    "text": "Shuningdek, server ma'lumotlarini Redux yoki Pinia'ga qo'shimcha nusxalab o'tirmang — keshning o'zi yagona haqiqat manbaidir.",
+    "show": "Shuningdek, server ma'lumotlarini Redux yoki Pinia'ga qo'shimcha nusxalab o'tirmang — keshning o'zi yagona haqiqat manbaidir.",
+    "say": "Shuningdek, server ma'lumotlarini Redaks yoki Piniyaga qo'shimcha nusxalab o'tirmang — keshning o'zi yagona haqiqat manbaidir.",
+    "a0": 99.11,
+    "a1": 106.21,
+    "words": [
+      {
+        "w": "Shuningdek,",
+        "s": 99.11,
+        "e": 99.53
+      },
+      {
+        "w": "server",
+        "s": 99.83,
+        "e": 100.17
+      },
+      {
+        "w": "ma'lumotlarini",
+        "s": 100.21,
+        "e": 100.83
+      },
+      {
+        "w": "Redaks",
+        "s": 100.93,
+        "e": 101.33
+      },
+      {
+        "w": "yoki",
+        "s": 101.35,
+        "e": 101.61
+      },
+      {
+        "w": "Piniyaga",
+        "s": 101.67,
+        "e": 102.09
+      },
+      {
+        "w": "qo'shimcha",
+        "s": 102.15,
+        "e": 102.51
+      },
+      {
+        "w": "nusxalab",
+        "s": 102.55,
+        "e": 102.93
+      },
+      {
+        "w": "o'tirmang",
+        "s": 103.01,
+        "e": 103.37
+      },
+      {
+        "w": "—",
+        "s": 103.37,
+        "e": 103.37
+      },
+      {
+        "w": "keshning",
+        "s": 103.71,
+        "e": 104.13
+      },
+      {
+        "w": "o'zi",
+        "s": 104.29,
+        "e": 104.51
+      },
+      {
+        "w": "yagona",
+        "s": 104.67,
+        "e": 105.13
+      },
+      {
+        "w": "haqiqat",
+        "s": 105.21,
+        "e": 105.67
+      },
+      {
+        "w": "manbaidir.",
+        "s": 105.73,
+        "e": 106.21
+      }
+    ]
+  },
+  {
+    "id": "L14",
+    "scene": "tipik_xatolar",
+    "text": "Tipik xatolar: kalit satrlarini har joyda qo'lda yozish, keshni qo'lda setState bilan yangilash yoki mutatsiyani noto'g'ri joylashtirish.",
+    "show": "Tipik xatolar: kalit satrlarini har joyda qo'lda yozish, keshni qo'lda setState bilan yangilash yoki mutatsiyani noto'g'ri joylashtirish.",
+    "say": "Tipik xatolar: kalit satrlarini har joyda qo'lda yozish, keshni qo'lda set steyt bilan yangilash yoki mutatsiyani noto'g'ri joylashtirish.",
+    "a0": 106.83,
+    "a1": 115.0,
+    "words": [
+      {
+        "w": "Tipik",
+        "s": 106.83,
+        "e": 107.17
+      },
+      {
+        "w": "xatolar:",
+        "s": 107.23,
+        "e": 107.65
+      },
+      {
+        "w": "kalit",
+        "s": 108.11,
+        "e": 108.39
+      },
+      {
+        "w": "satrlarini",
+        "s": 108.43,
+        "e": 108.95
+      },
+      {
+        "w": "har",
+        "s": 109.03,
+        "e": 109.25
+      },
+      {
+        "w": "joyda",
+        "s": 109.29,
+        "e": 109.53
+      },
+      {
+        "w": "qo'lda",
+        "s": 109.59,
+        "e": 109.85
+      },
+      {
+        "w": "yozish,",
+        "s": 109.85,
+        "e": 110.21
+      },
+      {
+        "w": "keshni",
+        "s": 110.69,
+        "e": 111.01
+      },
+      {
+        "w": "qo'lda",
+        "s": 111.07,
+        "e": 111.33
+      },
+      {
+        "w": "set",
+        "s": 111.45,
+        "e": 111.67
+      },
+      {
+        "w": "steyt",
+        "s": 111.71,
+        "e": 111.93
+      },
+      {
+        "w": "bilan",
+        "s": 111.97,
+        "e": 112.17
+      },
+      {
+        "w": "yangilash",
+        "s": 112.23,
+        "e": 112.66
+      },
+      {
+        "w": "yoki",
+        "s": 112.68,
+        "e": 113.3
+      },
+      {
+        "w": "mutatsiyani",
+        "s": 113.4,
+        "e": 113.96
+      },
+      {
+        "w": "noto'g'ri",
+        "s": 114.02,
+        "e": 114.44
+      },
+      {
+        "w": "joylashtirish.",
+        "s": 114.46,
+        "e": 115.0
+      }
+    ]
+  },
+  {
+    "id": "L15",
+    "scene": "tipik_xatolar",
+    "text": "Query factory va toza FSD qoidalari orqali kesh chalkashliklaridan butunlay qutulasiz.",
+    "show": "Query factory va toza FSD qoidalari orqali kesh chalkashliklaridan butunlay qutulasiz.",
+    "say": "Kveri fektori va toza Ef-es-di qoidalari orqali kesh chalkashliklaridan butunlay qutulasiz.",
+    "a0": 115.6,
+    "a1": 120.92,
+    "words": [
+      {
+        "w": "Kveri",
+        "s": 115.6,
+        "e": 115.92
+      },
+      {
+        "w": "fektori",
+        "s": 115.98,
+        "e": 116.36
+      },
+      {
+        "w": "va",
+        "s": 116.6,
+        "e": 116.66
+      },
+      {
+        "w": "toza",
+        "s": 116.78,
+        "e": 117.06
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 117.22,
+        "e": 117.58
+      },
+      {
+        "w": "qoidalari",
+        "s": 117.68,
+        "e": 118.08
+      },
+      {
+        "w": "orqali",
+        "s": 118.14,
+        "e": 118.46
+      },
+      {
+        "w": "kesh",
+        "s": 118.76,
+        "e": 118.98
+      },
+      {
+        "w": "chalkashliklaridan",
+        "s": 119.02,
+        "e": 119.8
+      },
+      {
+        "w": "butunlay",
+        "s": 119.92,
+        "e": 120.36
+      },
+      {
+        "w": "qutulasiz.",
+        "s": 120.44,
+        "e": 120.92
+      }
+    ]
+  },
+  {
+    "id": "L16",
+    "scene": "xulosa",
+    "text": "Xulosa: kalitlarni query factory'ga yig'ing, mutatsiyani slice api'sida tuting va QueryClient'ni faqat app'da ishga tushiring. Keyingi bobda Autentifikatsiya arxitekturasini o'rganamiz. Rahmat!",
+    "show": "Xulosa: kalitlarni query factory'ga yig'ing, mutatsiyani slice api'sida tuting va QueryClient'ni faqat app'da ishga tushiring. Keyingi bobda Autentifikatsiya arxitekturasini o'rganamiz. Rahmat!",
+    "say": "Xulosa: kalitlarni kveri fektoriga yig'ing, mutatsiyani slays ey-pi-ay'sida tuting va Kveri Klayent'ni faqat ep'da ishga tushiring. Keyingi bobda Autentifikatsiya arxitekturasini o'rganamiz. Rahmat!",
+    "a0": 121.58,
+    "a1": 135.4,
+    "words": [
+      {
+        "w": "Xulosa:",
+        "s": 121.58,
+        "e": 122.0
+      },
+      {
+        "w": "kalitlarni",
+        "s": 122.52,
+        "e": 123.2
+      },
+      {
+        "w": "kveri",
+        "s": 123.32,
+        "e": 123.64
+      },
+      {
+        "w": "fektoriga",
+        "s": 123.7,
+        "e": 124.25
+      },
+      {
+        "w": "yig'ing,",
+        "s": 124.33,
+        "e": 124.73
+      },
+      {
+        "w": "mutatsiyani",
+        "s": 125.11,
+        "e": 125.71
+      },
+      {
+        "w": "slays",
+        "s": 125.79,
+        "e": 126.11
+      },
+      {
+        "w": "ey-pi-ay'sida",
+        "s": 126.23,
+        "e": 126.89
+      },
+      {
+        "w": "tuting",
+        "s": 126.95,
+        "e": 127.31
+      },
+      {
+        "w": "va",
+        "s": 127.63,
+        "e": 127.69
+      },
+      {
+        "w": "Kveri",
+        "s": 127.79,
+        "e": 128.11
+      },
+      {
+        "w": "Klayent'ni",
+        "s": 128.17,
+        "e": 128.69
+      },
+      {
+        "w": "faqat",
+        "s": 128.79,
+        "e": 129.15
+      },
+      {
+        "w": "ep'da",
+        "s": 129.29,
+        "e": 129.57
+      },
+      {
+        "w": "ishga",
+        "s": 129.69,
+        "e": 129.95
+      },
+      {
+        "w": "tushiring.",
+        "s": 129.99,
+        "e": 130.37
+      },
+      {
+        "w": "Keyingi",
+        "s": 130.89,
+        "e": 131.25
+      },
+      {
+        "w": "bobda",
+        "s": 131.29,
+        "e": 131.61
+      },
+      {
+        "w": "Autentifikatsiya",
+        "s": 132.0,
+        "e": 132.88
+      },
+      {
+        "w": "arxitekturasini",
+        "s": 133.02,
+        "e": 133.82
+      },
+      {
+        "w": "o'rganamiz.",
+        "s": 133.86,
+        "e": 134.34
+      },
+      {
+        "w": "Rahmat!",
+        "s": 135.04,
+        "e": 135.4
+      }
+    ]
+  }
+]
