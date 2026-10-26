@@ -4,6 +4,14 @@
 
 ## Qisqacha
 
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/fsd/37-amaliy-loyiha.jpg" src="/video/fsd/37-amaliy-loyiha.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/fsd/37-amaliy-loyiha.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/fsd/37-amaliy-loyiha.uz.vtt">
+</video>
+<figcaption>Bob videoda: Amaliy loyiha: do'kon frontendi — "Bozor" do'koni misolida sahifalardan boshlab qatlamlarni ehtiyojga ko'ra kengaytirish, kompozitsiya va Steiger nazorati.</figcaption>
+</figure>
+
 Bu bob — butun qo'llanmani bitta loyihada qo'llash: **"Bozor"** onlayn do'konining frontendi (Arxitektura qo'llanmasining 103-bobidagi keys bilan bir xil mahsulot). Maqsad — tayyor kod emas, **qarorlar ketma-ketligi**: v2.1 tamoyiliga ko'ra sahifalardan boshlaymiz va qatlamlarni faqat haqiqiy qayta ishlatish paydo bo'lganda qo'shamiz. Har bosqichda Steiger nima deyishi — 27–31-bob shablonlarida olingan haqiqiy xabarlar.
 
 ## Qoida: bosqichlar
