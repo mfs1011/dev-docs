@@ -1,0 +1,22 @@
+WEBVTT
+
+00:00.000 --> 00:22.305
+Kirish: ESLint, TypeScript va Steiger Uyg'unligi
+
+00:22.305 --> 00:50.293
+tsconfig va Bundler Aliaslar Intizomi
+
+00:50.293 --> 01:08.444
+Public API Himoyasi: no-restricted-imports
+
+01:08.444 --> 01:26.149
+eslint-plugin-boundaries va Qatlamlar Ierarxiyasi
+
+01:26.149 --> 01:42.406
+IDE da Real Vaqtli Himoya va Natijalar
+
+01:42.406 --> 02:01.002
+Alias va ESLint dagi Tipik Xatolar
+
+02:01.002 --> 02:21.800
+Xulosa va Keyingi Qadam

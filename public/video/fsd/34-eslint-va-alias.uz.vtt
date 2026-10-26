@@ -1,0 +1,80 @@
+WEBVTT
+
+1
+00:01.420 --> 00:11.760
+Salom! Bu FSD qo'llanmasining o'ttiz to'rtinchi bobi — ESLint, TypeScript
+va aliaslar yordamida FSD arxitekturasini IDE darajasida himoya qilish.
+
+2
+00:13.150 --> 00:21.620
+Steiger butun arxitekturani CI da tekshirsa, ESLint kod yozish
+paytida IDE da xatolarni darhol qizil bilan ko'rsatib beradi.
+
+3
+00:23.710 --> 00:31.210
+Barcha freymvorklarda et belgisi src katalogiga to'g'ri
+ulanishi va te-es-konfig da paths ko'rsatilishi shart.
+
+4
+00:31.340 --> 00:39.750
+Masalan, Next.js dagi sukut bo'yicha beriladigan nuqta yulduzcha
+yo'lini darhol nuqta src yulduzchaga o'zgartirish kerak.
+
+5
+00:40.460 --> 00:48.420
+Taypskript oltida baseUrl shart emas, barcha linterlar
+va IDE lar paths orqali public API larni aniq tushunadi.
+
+6
+00:51.830 --> 00:57.980
+IDE larning avto-importi ko'pincha public API
+o'rniga eng chuqur ichki fayllarni tanlab yuboradi.
+
+7
+00:58.190 --> 01:06.550
+ESLint ning no-restricted-imports qoidasi va regex shabloni orqali
+slice ichki fayllariga to'g'ridan kirish darhol taqiqlanadi.
+
+8
+01:09.960 --> 01:16.290
+Boundaries plaginining yettinchi versiyasi qatlamlar
+yo'nalishini va cross-importlarni to'liq nazorat qiladi.
+
+9
+01:16.420 --> 01:24.280
+Har bir qatlam faqat o'zidan pastdagilarni ko'radi, features dan features
+ga yoki entities dan yuqoriga import qilish qat'iy to'xtatiladi.
+
+10
+01:27.690 --> 01:34.020
+Dasturchi xato import yozgan soniyadayoq IDE da
+qizil chiziq paydo bo'ladi va sababi tushuntiriladi.
+
+11
+01:34.070 --> 01:40.390
+Bu esa xatolarni CI ga yetib bormasdan, kod yozish
+jarayonining o'zidayoq bartaraf etishni ta'minlaydi.
+
+12
+01:43.900 --> 01:52.050
+Tipik xatolar — faqat bandler aliasini sozlab, te-es-konfig dagi
+paths ni unutish va eski boundaries sintaksisidan nusxa olishdir.
+
+13
+01:52.140 --> 01:59.080
+Shuningdek, te-es resolverni o'rnatmaslik tufayli ESLint ning
+et belgisi bilan boshlangan yo'llarni taniy olmasligidir.
+
+14
+02:02.250 --> 02:09.780
+Xulosa: Steiger va ESLint birgalikda FSD intizomini
+ham tahrirlashda, ham CI da yuz foiz kafolatlaydi.
+
+15
+02:09.950 --> 02:15.170
+Keyingi o'ttiz beshinchi bobda FSD arxitekturasida
+testlash strategiyasini o'rganamiz.
+
+16
+02:15.120 --> 02:18.050
+E'tiboringiz uchun rahmat, bilim olishdan to'xtamang!

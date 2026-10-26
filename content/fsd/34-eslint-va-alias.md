@@ -4,6 +4,14 @@
 
 ## Qisqacha
 
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/fsd/34-eslint-va-alias.jpg" src="/video/fsd/34-eslint-va-alias.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/fsd/34-eslint-va-alias.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/fsd/34-eslint-va-alias.uz.vtt">
+</video>
+<figcaption>Bob videoda: ESLint, TypeScript va aliaslar — IDE da real-time public API himoyasi, eslint-plugin-boundaries 7 va tsconfig paths intizomi.</figcaption>
+</figure>
+
 Steiger butun loyiha tuzilmasini tekshiradi — CI uchun ideal. ESLint esa **tahrirlash paytida**, IDE'da darhol qizil chiziq beradi: dasturchi chuqur importni yozayotgan paytda ko'radi. Ikkalasi bir-birini to'ldiradi. Bu bobda ikki tekshirilgan ESLint sozlamasi (ESLint 9, flat config): core'dagi `no-restricted-imports` bilan public API himoyasi va `eslint-plugin-boundaries` 7 bilan qatlam yo'nalishi. Ikkalasi ham Next.js 16 shablonida (28-bob) real buzilishlarni ushlashi sinaldi.
 
 ## Qoida
