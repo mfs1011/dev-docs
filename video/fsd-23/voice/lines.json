@@ -1,0 +1,1358 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Salom! Bu FSD qo'llanmasining yigirma uchinchi bobi — Tiplar va validatsiya arxitekturasi. Bugun TypeScript tiplari va Zod sxemalarini loyihada to'g'ri taqsimlash tamoyillarini o'rganamiz.",
+    "show": "Salom! Bu FSD qo'llanmasining yigirma uchinchi bobi — Tiplar va validatsiya arxitekturasi. Bugun TypeScript tiplari va Zod sxemalarini loyihada to'g'ri taqsimlash tamoyillarini o'rganamiz.",
+    "say": "Salom! Bu Ef-es-di qo'llanmasining yigirma uchinchi bobi — Tiplar va validatsiya arxitekturasi. Bugun Taypskript tiplari va Zod sxemalarini loyihada to'g'ri taqsimlash tamoyillarini o'rganamiz.",
+    "a0": 0.3,
+    "a1": 13.25,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.3,
+        "e": 0.66
+      },
+      {
+        "w": "Bu",
+        "s": 1.0,
+        "e": 1.1
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 1.4,
+        "e": 1.84
+      },
+      {
+        "w": "qo'llanmasining",
+        "s": 1.94,
+        "e": 2.72
+      },
+      {
+        "w": "yigirma",
+        "s": 2.84,
+        "e": 3.18
+      },
+      {
+        "w": "uchinchi",
+        "s": 3.22,
+        "e": 3.56
+      },
+      {
+        "w": "bobi",
+        "s": 3.62,
+        "e": 3.9
+      },
+      {
+        "w": "—",
+        "s": 3.9,
+        "e": 3.9
+      },
+      {
+        "w": "Tiplar",
+        "s": 4.32,
+        "e": 4.8
+      },
+      {
+        "w": "va",
+        "s": 4.94,
+        "e": 5.04
+      },
+      {
+        "w": "validatsiya",
+        "s": 5.22,
+        "e": 5.84
+      },
+      {
+        "w": "arxitekturasi.",
+        "s": 5.9,
+        "e": 6.76
+      },
+      {
+        "w": "Bugun",
+        "s": 7.44,
+        "e": 7.75
+      },
+      {
+        "w": "Taypskript",
+        "s": 7.87,
+        "e": 8.45
+      },
+      {
+        "w": "tiplari",
+        "s": 8.47,
+        "e": 8.91
+      },
+      {
+        "w": "va",
+        "s": 9.03,
+        "e": 9.09
+      },
+      {
+        "w": "Zod",
+        "s": 9.25,
+        "e": 9.45
+      },
+      {
+        "w": "sxemalarini",
+        "s": 9.51,
+        "e": 10.17
+      },
+      {
+        "w": "loyihada",
+        "s": 10.55,
+        "e": 11.05
+      },
+      {
+        "w": "to'g'ri",
+        "s": 11.15,
+        "e": 11.43
+      },
+      {
+        "w": "taqsimlash",
+        "s": 11.49,
+        "e": 12.01
+      },
+      {
+        "w": "tamoyillarini",
+        "s": 12.03,
+        "e": 12.67
+      },
+      {
+        "w": "o'rganamiz.",
+        "s": 12.75,
+        "e": 13.25
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "intro",
+    "text": "FSD'da asosiy qoida: tiplar ham koddir, va ular faqat o'zlari ishlatiladigan joy yonida yashashi lozim.",
+    "show": "FSD'da asosiy qoida: tiplar ham koddir, va ular faqat o'zlari ishlatiladigan joy yonida yashashi lozim.",
+    "say": "Ef-es-di'da asosiy qoida: tiplar ham koddir, va ular faqat o'zlari ishlatiladigan joy yonida yashashi lozim.",
+    "a0": 14.03,
+    "a1": 21.05,
+    "words": [
+      {
+        "w": "Ef-es-di'da",
+        "s": 14.03,
+        "e": 14.61
+      },
+      {
+        "w": "asosiy",
+        "s": 14.77,
+        "e": 15.17
+      },
+      {
+        "w": "qoida:",
+        "s": 15.27,
+        "e": 15.63
+      },
+      {
+        "w": "tiplar",
+        "s": 16.07,
+        "e": 16.45
+      },
+      {
+        "w": "ham",
+        "s": 16.51,
+        "e": 16.67
+      },
+      {
+        "w": "koddir,",
+        "s": 16.77,
+        "e": 17.17
+      },
+      {
+        "w": "va",
+        "s": 17.63,
+        "e": 17.71
+      },
+      {
+        "w": "ular",
+        "s": 17.87,
+        "e": 18.07
+      },
+      {
+        "w": "faqat",
+        "s": 18.15,
+        "e": 18.49
+      },
+      {
+        "w": "o'zlari",
+        "s": 18.61,
+        "e": 18.93
+      },
+      {
+        "w": "ishlatiladigan",
+        "s": 18.99,
+        "e": 19.67
+      },
+      {
+        "w": "joy",
+        "s": 19.73,
+        "e": 19.93
+      },
+      {
+        "w": "yonida",
+        "s": 19.95,
+        "e": 20.29
+      },
+      {
+        "w": "yashashi",
+        "s": 20.35,
+        "e": 20.69
+      },
+      {
+        "w": "lozim.",
+        "s": 20.73,
+        "e": 21.05
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "shared_types_xatosi",
+    "text": "Eng katta xato — loyihada shared/types papkasi yoki har bir slice ichida types segmenti yaratishdir.",
+    "show": "Eng katta xato — loyihada shared/types papkasi yoki har bir slice ichida types segmenti yaratishdir.",
+    "say": "Eng katta xato — loyihada sherd/tayps papkasi yoki har bir slays ichida tayps segmenti yaratishdir.",
+    "a0": 21.87,
+    "a1": 28.96,
+    "words": [
+      {
+        "w": "Eng",
+        "s": 21.87,
+        "e": 22.01
+      },
+      {
+        "w": "katta",
+        "s": 22.07,
+        "e": 22.37
+      },
+      {
+        "w": "xato",
+        "s": 22.43,
+        "e": 22.72
+      },
+      {
+        "w": "—",
+        "s": 22.72,
+        "e": 22.72
+      },
+      {
+        "w": "loyihada",
+        "s": 22.96,
+        "e": 23.52
+      },
+      {
+        "w": "sherd/tayps",
+        "s": 23.52,
+        "e": 24.92
+      },
+      {
+        "w": "papkasi",
+        "s": 24.92,
+        "e": 25.4
+      },
+      {
+        "w": "yoki",
+        "s": 25.4,
+        "e": 26.06
+      },
+      {
+        "w": "har",
+        "s": 26.24,
+        "e": 26.44
+      },
+      {
+        "w": "bir",
+        "s": 26.48,
+        "e": 26.6
+      },
+      {
+        "w": "slays",
+        "s": 26.66,
+        "e": 26.96
+      },
+      {
+        "w": "ichida",
+        "s": 27.04,
+        "e": 27.32
+      },
+      {
+        "w": "tayps",
+        "s": 27.58,
+        "e": 27.9
+      },
+      {
+        "w": "segmenti",
+        "s": 27.96,
+        "e": 28.42
+      },
+      {
+        "w": "yaratishdir.",
+        "s": 28.46,
+        "e": 28.96
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "shared_types_xatosi",
+    "text": "'Tip bo'lish' — bu kodni guruhlash uchun yetarli xususiyat emas, xuddi barcha funksiyalarni bitta papkaga yig'maganimiz kabi.",
+    "show": "'Tip bo'lish' — bu kodni guruhlash uchun yetarli xususiyat emas, xuddi barcha funksiyalarni bitta papkaga yig'maganimiz kabi.",
+    "say": "'Tip bo'lish' — bu kodni guruhlash uchun yetarli xususiyat emas, xuddi barcha funksiyalarni bitta papkaga yig'maganimiz kabi.",
+    "a0": 29.64,
+    "a1": 36.24,
+    "words": [
+      {
+        "w": "'Tip",
+        "s": 29.64,
+        "e": 30.02
+      },
+      {
+        "w": "bo'lish'",
+        "s": 30.02,
+        "e": 30.34
+      },
+      {
+        "w": "—",
+        "s": 30.34,
+        "e": 30.34
+      },
+      {
+        "w": "bu",
+        "s": 30.56,
+        "e": 30.64
+      },
+      {
+        "w": "kodni",
+        "s": 30.72,
+        "e": 30.98
+      },
+      {
+        "w": "guruhlash",
+        "s": 31.02,
+        "e": 31.42
+      },
+      {
+        "w": "uchun",
+        "s": 31.46,
+        "e": 31.64
+      },
+      {
+        "w": "yetarli",
+        "s": 31.74,
+        "e": 32.12
+      },
+      {
+        "w": "xususiyat",
+        "s": 32.18,
+        "e": 32.62
+      },
+      {
+        "w": "emas,",
+        "s": 32.7,
+        "e": 32.94
+      },
+      {
+        "w": "xuddi",
+        "s": 33.3,
+        "e": 33.58
+      },
+      {
+        "w": "barcha",
+        "s": 33.64,
+        "e": 33.92
+      },
+      {
+        "w": "funksiyalarni",
+        "s": 33.98,
+        "e": 34.58
+      },
+      {
+        "w": "bitta",
+        "s": 34.66,
+        "e": 34.9
+      },
+      {
+        "w": "papkaga",
+        "s": 34.94,
+        "e": 35.3
+      },
+      {
+        "w": "yig'maganimiz",
+        "s": 35.36,
+        "e": 35.96
+      },
+      {
+        "w": "kabi.",
+        "s": 36.0,
+        "e": 36.24
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "dto_mapper_va_domen",
+    "text": "Backend javob tiplari, ya'ni DTO lar, ularni qabul qiluvchi so'rov funksiyasi yonida turadi.",
+    "show": "Backend javob tiplari, ya'ni DTO lar, ularni qabul qiluvchi so'rov funksiyasi yonida turadi.",
+    "say": "Bekend javob tiplari, ya'ni di-ti-o lar, ularni qabul qiluvchi so'rov funksiyasi yonida turadi.",
+    "a0": 37.08,
+    "a1": 42.81,
+    "words": [
+      {
+        "w": "Bekend",
+        "s": 37.08,
+        "e": 37.48
+      },
+      {
+        "w": "javob",
+        "s": 37.55,
+        "e": 37.83
+      },
+      {
+        "w": "tiplari,",
+        "s": 37.87,
+        "e": 38.35
+      },
+      {
+        "w": "ya'ni",
+        "s": 38.67,
+        "e": 38.93
+      },
+      {
+        "w": "di-ti-o",
+        "s": 39.17,
+        "e": 39.61
+      },
+      {
+        "w": "lar,",
+        "s": 39.69,
+        "e": 39.85
+      },
+      {
+        "w": "ularni",
+        "s": 40.05,
+        "e": 40.41
+      },
+      {
+        "w": "qabul",
+        "s": 40.55,
+        "e": 40.83
+      },
+      {
+        "w": "qiluvchi",
+        "s": 40.91,
+        "e": 41.25
+      },
+      {
+        "w": "so'rov",
+        "s": 41.31,
+        "e": 41.57
+      },
+      {
+        "w": "funksiyasi",
+        "s": 41.63,
+        "e": 42.07
+      },
+      {
+        "w": "yonida",
+        "s": 42.07,
+        "e": 42.45
+      },
+      {
+        "w": "turadi.",
+        "s": 42.51,
+        "e": 42.81
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "dto_mapper_va_domen",
+    "text": "Zod sxemasi orqali backend ma'lumotlari parse qilinadi va mapper funksiyasi orqali toza frontend domen modeliga o'giriladi.",
+    "show": "Zod sxemasi orqali backend ma'lumotlari parse qilinadi va mapper funksiyasi orqali toza frontend domen modeliga o'giriladi.",
+    "say": "Zod sxemasi orqali bekend ma'lumotlari parse qilinadi va mepper funksiyasi orqali toza frontend domen modeliga o'giriladi.",
+    "a0": 43.49,
+    "a1": 51.17,
+    "words": [
+      {
+        "w": "Zod",
+        "s": 43.49,
+        "e": 43.69
+      },
+      {
+        "w": "sxemasi",
+        "s": 43.73,
+        "e": 44.21
+      },
+      {
+        "w": "orqali",
+        "s": 44.29,
+        "e": 44.65
+      },
+      {
+        "w": "bekend",
+        "s": 44.87,
+        "e": 45.19
+      },
+      {
+        "w": "ma'lumotlari",
+        "s": 45.27,
+        "e": 45.85
+      },
+      {
+        "w": "parse",
+        "s": 46.01,
+        "e": 46.33
+      },
+      {
+        "w": "qilinadi",
+        "s": 46.33,
+        "e": 46.77
+      },
+      {
+        "w": "va",
+        "s": 47.13,
+        "e": 47.21
+      },
+      {
+        "w": "mepper",
+        "s": 47.43,
+        "e": 47.81
+      },
+      {
+        "w": "funksiyasi",
+        "s": 47.87,
+        "e": 48.31
+      },
+      {
+        "w": "orqali",
+        "s": 48.37,
+        "e": 48.71
+      },
+      {
+        "w": "toza",
+        "s": 48.87,
+        "e": 49.17
+      },
+      {
+        "w": "frontend",
+        "s": 49.25,
+        "e": 49.73
+      },
+      {
+        "w": "domen",
+        "s": 49.77,
+        "e": 50.09
+      },
+      {
+        "w": "modeliga",
+        "s": 50.17,
+        "e": 50.59
+      },
+      {
+        "w": "o'giriladi.",
+        "s": 50.67,
+        "e": 51.17
+      }
+    ]
+  },
+  {
+    "id": "L7",
+    "scene": "dto_mapper_va_domen",
+    "text": "Bu backend o'zgarganda butun interfeys buzilib ketishining oldini oladi.",
+    "show": "Bu backend o'zgarganda butun interfeys buzilib ketishining oldini oladi.",
+    "say": "Bu bekend o'zgarganda butun interfeys buzilib ketishining oldini oladi.",
+    "a0": 51.89,
+    "a1": 55.86,
+    "words": [
+      {
+        "w": "Bu",
+        "s": 51.89,
+        "e": 51.99
+      },
+      {
+        "w": "bekend",
+        "s": 52.25,
+        "e": 52.6
+      },
+      {
+        "w": "o'zgarganda",
+        "s": 52.7,
+        "e": 53.26
+      },
+      {
+        "w": "butun",
+        "s": 53.38,
+        "e": 53.7
+      },
+      {
+        "w": "interfeys",
+        "s": 53.82,
+        "e": 54.32
+      },
+      {
+        "w": "buzilib",
+        "s": 54.38,
+        "e": 54.7
+      },
+      {
+        "w": "ketishining",
+        "s": 54.74,
+        "e": 55.16
+      },
+      {
+        "w": "oldini",
+        "s": 55.24,
+        "e": 55.52
+      },
+      {
+        "w": "oladi.",
+        "s": 55.58,
+        "e": 55.86
+      }
+    ]
+  },
+  {
+    "id": "L8",
+    "scene": "forma_va_props_tiplari",
+    "text": "Foydalanuvchi kiritadigan formalar validatsiyasi esa aynan o'sha forma turgan joyda — sahifa yoki feature modelida saqlanadi.",
+    "show": "Foydalanuvchi kiritadigan formalar validatsiyasi esa aynan o'sha forma turgan joyda — sahifa yoki feature modelida saqlanadi.",
+    "say": "Foydalanuvchi kiritadigan formalar validatsiyasi esa aynan o'sha forma turgan joyda — sahifa yoki ficher modelida saqlanadi.",
+    "a0": 56.6,
+    "a1": 64.36,
+    "words": [
+      {
+        "w": "Foydalanuvchi",
+        "s": 56.6,
+        "e": 57.28
+      },
+      {
+        "w": "kiritadigan",
+        "s": 57.32,
+        "e": 57.86
+      },
+      {
+        "w": "formalar",
+        "s": 57.94,
+        "e": 58.42
+      },
+      {
+        "w": "validatsiyasi",
+        "s": 58.54,
+        "e": 59.24
+      },
+      {
+        "w": "esa",
+        "s": 59.3,
+        "e": 59.48
+      },
+      {
+        "w": "aynan",
+        "s": 60.02,
+        "e": 60.18
+      },
+      {
+        "w": "o'sha",
+        "s": 60.28,
+        "e": 60.46
+      },
+      {
+        "w": "forma",
+        "s": 60.52,
+        "e": 60.82
+      },
+      {
+        "w": "turgan",
+        "s": 60.86,
+        "e": 61.16
+      },
+      {
+        "w": "joyda",
+        "s": 61.22,
+        "e": 61.52
+      },
+      {
+        "w": "—",
+        "s": 61.52,
+        "e": 61.52
+      },
+      {
+        "w": "sahifa",
+        "s": 61.9,
+        "e": 62.4
+      },
+      {
+        "w": "yoki",
+        "s": 62.44,
+        "e": 62.9
+      },
+      {
+        "w": "ficher",
+        "s": 63.0,
+        "e": 63.32
+      },
+      {
+        "w": "modelida",
+        "s": 63.38,
+        "e": 63.8
+      },
+      {
+        "w": "saqlanadi.",
+        "s": 63.84,
+        "e": 64.36
+      }
+    ]
+  },
+  {
+    "id": "L9",
+    "scene": "forma_va_props_tiplari",
+    "text": "Komponent props va context tiplari esa to'g'ridan-to'g'ri komponentning o'z faylida e'lon qilinadi.",
+    "show": "Komponent props va context tiplari esa to'g'ridan-to'g'ri komponentning o'z faylida e'lon qilinadi.",
+    "say": "Komponent props va kontekst tiplari esa to'g'ridan-to'g'ri komponentning o'z faylida e'lon qilinadi.",
+    "a0": 65.04,
+    "a1": 70.59,
+    "words": [
+      {
+        "w": "Komponent",
+        "s": 65.04,
+        "e": 65.58
+      },
+      {
+        "w": "props",
+        "s": 65.66,
+        "e": 65.98
+      },
+      {
+        "w": "va",
+        "s": 66.06,
+        "e": 66.14
+      },
+      {
+        "w": "kontekst",
+        "s": 66.24,
+        "e": 66.7
+      },
+      {
+        "w": "tiplari",
+        "s": 66.76,
+        "e": 67.16
+      },
+      {
+        "w": "esa",
+        "s": 67.22,
+        "e": 67.4
+      },
+      {
+        "w": "to'g'ridan-to'g'ri",
+        "s": 67.51,
+        "e": 68.25
+      },
+      {
+        "w": "komponentning",
+        "s": 68.33,
+        "e": 69.03
+      },
+      {
+        "w": "o'z",
+        "s": 69.17,
+        "e": 69.29
+      },
+      {
+        "w": "faylida",
+        "s": 69.37,
+        "e": 69.75
+      },
+      {
+        "w": "e'lon",
+        "s": 69.85,
+        "e": 70.11
+      },
+      {
+        "w": "qilinadi.",
+        "s": 70.17,
+        "e": 70.59
+      }
+    ]
+  },
+  {
+    "id": "L10",
+    "scene": "forma_va_props_tiplari",
+    "text": "Ularni sun'iy ravishda tashqariga chiqarish — kodni o'qishni qiyinlashtiradi.",
+    "show": "Ularni sun'iy ravishda tashqariga chiqarish — kodni o'qishni qiyinlashtiradi.",
+    "say": "Ularni sun'iy ravishda tashqariga chiqarish — kodni o'qishni qiyinlashtiradi.",
+    "a0": 71.25,
+    "a1": 75.25,
+    "words": [
+      {
+        "w": "Ularni",
+        "s": 71.25,
+        "e": 71.61
+      },
+      {
+        "w": "sun'iy",
+        "s": 71.79,
+        "e": 72.09
+      },
+      {
+        "w": "ravishda",
+        "s": 72.17,
+        "e": 72.51
+      },
+      {
+        "w": "tashqariga",
+        "s": 72.57,
+        "e": 73.05
+      },
+      {
+        "w": "chiqarish",
+        "s": 73.09,
+        "e": 73.47
+      },
+      {
+        "w": "—",
+        "s": 73.47,
+        "e": 73.47
+      },
+      {
+        "w": "kodni",
+        "s": 73.75,
+        "e": 74.09
+      },
+      {
+        "w": "o'qishni",
+        "s": 74.15,
+        "e": 74.47
+      },
+      {
+        "w": "qiyinlashtiradi.",
+        "s": 74.53,
+        "e": 75.25
+      }
+    ]
+  },
+  {
+    "id": "L11",
+    "scene": "utility_va_ambient_tiplar",
+    "text": "Loyiha bo'ylab qayta ishlatiladigan yordamchi utility tiplar shared/lib ostida jamlanadi.",
+    "show": "Loyiha bo'ylab qayta ishlatiladigan yordamchi utility tiplar shared/lib ostida jamlanadi.",
+    "say": "Loyiha bo'ylab qayta ishlatiladigan yordamchi yutility tiplar sherd/lib ostida jamlanadi.",
+    "a0": 75.99,
+    "a1": 81.87,
+    "words": [
+      {
+        "w": "Loyiha",
+        "s": 75.99,
+        "e": 76.37
+      },
+      {
+        "w": "bo'ylab",
+        "s": 76.43,
+        "e": 76.75
+      },
+      {
+        "w": "qayta",
+        "s": 76.81,
+        "e": 77.07
+      },
+      {
+        "w": "ishlatiladigan",
+        "s": 77.11,
+        "e": 77.79
+      },
+      {
+        "w": "yordamchi",
+        "s": 77.79,
+        "e": 78.45
+      },
+      {
+        "w": "yutility",
+        "s": 78.59,
+        "e": 79.13
+      },
+      {
+        "w": "tiplar",
+        "s": 79.21,
+        "e": 79.57
+      },
+      {
+        "w": "sherd/lib",
+        "s": 79.57,
+        "e": 80.95
+      },
+      {
+        "w": "ostida",
+        "s": 80.95,
+        "e": 81.25
+      },
+      {
+        "w": "jamlanadi.",
+        "s": 81.31,
+        "e": 81.87
+      }
+    ]
+  },
+  {
+    "id": "L12",
+    "scene": "utility_va_ambient_tiplar",
+    "text": "Tipsiz tashqi kutubxonalar uchun ambient d-t-s fayllari shared/lib/untyped-packages papkasida bo'sh index.ts bilan saqlanadi.",
+    "show": "Tipsiz tashqi kutubxonalar uchun ambient d-t-s fayllari shared/lib/untyped-packages papkasida bo'sh index.ts bilan saqlanadi.",
+    "say": "Tipsiz tashqi kutubxonalar uchun embient di-ti-es fayllari sherd/lib/untyped-packages papkasida bo'sh indeks nuqta te-es bilan saqlanadi.",
+    "a0": 82.58,
+    "a1": 92.02,
+    "words": [
+      {
+        "w": "Tipsiz",
+        "s": 82.58,
+        "e": 82.98
+      },
+      {
+        "w": "tashqi",
+        "s": 83.02,
+        "e": 83.28
+      },
+      {
+        "w": "kutubxonalar",
+        "s": 83.34,
+        "e": 83.92
+      },
+      {
+        "w": "uchun",
+        "s": 83.96,
+        "e": 84.2
+      },
+      {
+        "w": "embient",
+        "s": 84.42,
+        "e": 84.88
+      },
+      {
+        "w": "di-ti-es",
+        "s": 85.06,
+        "e": 85.58
+      },
+      {
+        "w": "fayllari",
+        "s": 85.64,
+        "e": 86.1
+      },
+      {
+        "w": "sherd/lib/untyped-packages",
+        "s": 86.1,
+        "e": 88.98
+      },
+      {
+        "w": "papkasida",
+        "s": 88.98,
+        "e": 89.48
+      },
+      {
+        "w": "bo'sh",
+        "s": 89.84,
+        "e": 90.08
+      },
+      {
+        "w": "indeks",
+        "s": 90.22,
+        "e": 90.56
+      },
+      {
+        "w": "nuqta",
+        "s": 90.62,
+        "e": 90.88
+      },
+      {
+        "w": "te-es",
+        "s": 90.94,
+        "e": 91.24
+      },
+      {
+        "w": "bilan",
+        "s": 91.28,
+        "e": 91.46
+      },
+      {
+        "w": "saqlanadi.",
+        "s": 91.52,
+        "e": 92.02
+      }
+    ]
+  },
+  {
+    "id": "L13",
+    "scene": "utility_va_ambient_tiplar",
+    "text": "Bu Steiger linterining har bir shared slice'idan public API talab qilish qoidasiga to'liq javob beradi.",
+    "show": "Bu Steiger linterining har bir shared slice'idan public API talab qilish qoidasiga to'liq javob beradi.",
+    "say": "Bu stayger linterining har bir sherd slays'idan public ey-pi-ay talab qilish qoidasiga to'liq javob beradi.",
+    "a0": 92.82,
+    "a1": 98.89,
+    "words": [
+      {
+        "w": "Bu",
+        "s": 92.82,
+        "e": 92.88
+      },
+      {
+        "w": "stayger",
+        "s": 93.14,
+        "e": 93.54
+      },
+      {
+        "w": "linterining",
+        "s": 93.62,
+        "e": 94.18
+      },
+      {
+        "w": "har",
+        "s": 94.3,
+        "e": 94.5
+      },
+      {
+        "w": "bir",
+        "s": 94.54,
+        "e": 94.66
+      },
+      {
+        "w": "sherd",
+        "s": 94.74,
+        "e": 95.02
+      },
+      {
+        "w": "slays'idan",
+        "s": 95.06,
+        "e": 95.6
+      },
+      {
+        "w": "public",
+        "s": 95.78,
+        "e": 96.14
+      },
+      {
+        "w": "ey-pi-ay",
+        "s": 96.24,
+        "e": 96.62
+      },
+      {
+        "w": "talab",
+        "s": 96.68,
+        "e": 96.92
+      },
+      {
+        "w": "qilish",
+        "s": 96.96,
+        "e": 97.2
+      },
+      {
+        "w": "qoidasiga",
+        "s": 97.24,
+        "e": 97.75
+      },
+      {
+        "w": "to'liq",
+        "s": 97.89,
+        "e": 98.19
+      },
+      {
+        "w": "javob",
+        "s": 98.27,
+        "e": 98.55
+      },
+      {
+        "w": "beradi.",
+        "s": 98.57,
+        "e": 98.89
+      }
+    ]
+  },
+  {
+    "id": "L14",
+    "scene": "tipik_xatolar",
+    "text": "Tipik xatolar: shared/types axlatxonasini yaratish, backend javobini tekshiruvsiz as kalit so'zi bilan kasting qilish yoki DTO larni UI ga yoyish.",
+    "show": "Tipik xatolar: shared/types axlatxonasini yaratish, backend javobini tekshiruvsiz as kalit so'zi bilan kasting qilish yoki DTO larni UI ga yoyish.",
+    "say": "Tipik xatolar: sherd/tayps axlatxonasini yaratish, bekend javobini tekshiruvsiz as kalit so'zi bilan kasting qilish yoki di-ti-o larni yu-ay ga yoyish.",
+    "a0": 99.57,
+    "a1": 109.39,
+    "words": [
+      {
+        "w": "Tipik",
+        "s": 99.57,
+        "e": 99.91
+      },
+      {
+        "w": "xatolar:",
+        "s": 99.95,
+        "e": 100.43
+      },
+      {
+        "w": "sherd/tayps",
+        "s": 100.43,
+        "e": 101.83
+      },
+      {
+        "w": "axlatxonasini",
+        "s": 101.83,
+        "e": 102.53
+      },
+      {
+        "w": "yaratish,",
+        "s": 102.59,
+        "e": 103.05
+      },
+      {
+        "w": "bekend",
+        "s": 103.47,
+        "e": 103.81
+      },
+      {
+        "w": "javobini",
+        "s": 103.83,
+        "e": 104.29
+      },
+      {
+        "w": "tekshiruvsiz",
+        "s": 104.33,
+        "e": 104.93
+      },
+      {
+        "w": "as",
+        "s": 105.13,
+        "e": 105.27
+      },
+      {
+        "w": "kalit",
+        "s": 105.33,
+        "e": 105.61
+      },
+      {
+        "w": "so'zi",
+        "s": 105.63,
+        "e": 105.87
+      },
+      {
+        "w": "bilan",
+        "s": 105.89,
+        "e": 106.11
+      },
+      {
+        "w": "kasting",
+        "s": 106.21,
+        "e": 106.65
+      },
+      {
+        "w": "qilish",
+        "s": 106.67,
+        "e": 106.93
+      },
+      {
+        "w": "yoki",
+        "s": 106.97,
+        "e": 107.53
+      },
+      {
+        "w": "di-ti-o",
+        "s": 107.65,
+        "e": 108.05
+      },
+      {
+        "w": "larni",
+        "s": 108.13,
+        "e": 108.39
+      },
+      {
+        "w": "yu-ay",
+        "s": 108.61,
+        "e": 108.87
+      },
+      {
+        "w": "ga",
+        "s": 108.93,
+        "e": 109.01
+      },
+      {
+        "w": "yoyish.",
+        "s": 109.01,
+        "e": 109.39
+      }
+    ]
+  },
+  {
+    "id": "L15",
+    "scene": "tipik_xatolar",
+    "text": "Sxema validatsiyasi va qatlamli tiplar loyihangizni yashirin run-time xatolardan asraydi.",
+    "show": "Sxema validatsiyasi va qatlamli tiplar loyihangizni yashirin run-time xatolardan asraydi.",
+    "say": "Sxema validatsiyasi va qatlamli tiplar loyihangizni yashirin ran-taym xatolardan asraydi.",
+    "a0": 110.15,
+    "a1": 115.68,
+    "words": [
+      {
+        "w": "Sxema",
+        "s": 110.15,
+        "e": 110.51
+      },
+      {
+        "w": "validatsiyasi",
+        "s": 110.57,
+        "e": 111.31
+      },
+      {
+        "w": "va",
+        "s": 111.37,
+        "e": 111.43
+      },
+      {
+        "w": "qatlamli",
+        "s": 111.51,
+        "e": 111.97
+      },
+      {
+        "w": "tiplar",
+        "s": 112.05,
+        "e": 112.41
+      },
+      {
+        "w": "loyihangizni",
+        "s": 112.72,
+        "e": 113.38
+      },
+      {
+        "w": "yashirin",
+        "s": 113.46,
+        "e": 113.92
+      },
+      {
+        "w": "ran-taym",
+        "s": 114.06,
+        "e": 114.5
+      },
+      {
+        "w": "xatolardan",
+        "s": 114.56,
+        "e": 115.16
+      },
+      {
+        "w": "asraydi.",
+        "s": 115.26,
+        "e": 115.68
+      }
+    ]
+  },
+  {
+    "id": "L16",
+    "scene": "xulosa",
+    "text": "Xulosa: tiplarni ishlatiladigan joy yonida saqlang, DTO ni mapper bilan o'giring va shared/types ochmang. Keyingi bobda Layout'lar arxitekturasini ko'rib chiqamiz. Rahmat!",
+    "show": "Xulosa: tiplarni ishlatiladigan joy yonida saqlang, DTO ni mapper bilan o'giring va shared/types ochmang. Keyingi bobda Layout'lar arxitekturasini ko'rib chiqamiz. Rahmat!",
+    "say": "Xulosa: tiplarni ishlatiladigan joy yonida saqlang, di-ti-o ni mepper bilan o'giring va sherd/tayps ochmang. Keyingi bobda leyaut'lar arxitekturasini ko'rib chiqamiz. Rahmat!",
+    "a0": 116.44,
+    "a1": 128.58,
+    "words": [
+      {
+        "w": "Xulosa:",
+        "s": 116.44,
+        "e": 116.84
+      },
+      {
+        "w": "tiplarni",
+        "s": 117.3,
+        "e": 117.76
+      },
+      {
+        "w": "ishlatiladigan",
+        "s": 117.82,
+        "e": 118.5
+      },
+      {
+        "w": "joy",
+        "s": 118.54,
+        "e": 118.72
+      },
+      {
+        "w": "yonida",
+        "s": 118.74,
+        "e": 119.06
+      },
+      {
+        "w": "saqlang,",
+        "s": 119.12,
+        "e": 119.52
+      },
+      {
+        "w": "di-ti-o",
+        "s": 120.02,
+        "e": 120.38
+      },
+      {
+        "w": "ni",
+        "s": 120.48,
+        "e": 120.56
+      },
+      {
+        "w": "mepper",
+        "s": 120.76,
+        "e": 121.14
+      },
+      {
+        "w": "bilan",
+        "s": 121.18,
+        "e": 121.42
+      },
+      {
+        "w": "o'giring",
+        "s": 121.54,
+        "e": 121.88
+      },
+      {
+        "w": "va",
+        "s": 122.23,
+        "e": 122.31
+      },
+      {
+        "w": "sherd/tayps",
+        "s": 122.31,
+        "e": 123.51
+      },
+      {
+        "w": "ochmang.",
+        "s": 123.51,
+        "e": 123.89
+      },
+      {
+        "w": "Keyingi",
+        "s": 124.53,
+        "e": 124.87
+      },
+      {
+        "w": "bobda",
+        "s": 124.91,
+        "e": 125.23
+      },
+      {
+        "w": "leyaut'lar",
+        "s": 125.43,
+        "e": 125.97
+      },
+      {
+        "w": "arxitekturasini",
+        "s": 126.05,
+        "e": 126.88
+      },
+      {
+        "w": "ko'rib",
+        "s": 126.92,
+        "e": 127.14
+      },
+      {
+        "w": "chiqamiz.",
+        "s": 127.16,
+        "e": 127.54
+      },
+      {
+        "w": "Rahmat!",
+        "s": 128.2,
+        "e": 128.58
+      }
+    ]
+  }
+]

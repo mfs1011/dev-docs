@@ -1,0 +1,22 @@
+WEBVTT
+
+00:00.000 --> 00:24.265
+Kirish: Tiplar va Validatsiya
+
+00:24.265 --> 00:42.245
+shared/types Axlatxonasidan Saqlaning
+
+00:42.245 --> 01:04.643
+DTO, Zod Sxemasi va Mapper
+
+01:04.643 --> 01:26.843
+Forma Sxemasi va Props Tiplari
+
+01:26.843 --> 01:53.275
+Utility Tiplar va Ambient .d.ts
+
+01:53.275 --> 02:12.844
+Tiplar Boshqaruvidagi Tipik Xatolar
+
+02:12.844 --> 02:30.260
+Xulosa va Keyingi Qadam

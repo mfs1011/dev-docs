@@ -4,6 +4,14 @@
 
 ## Qisqacha
 
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/fsd/23-tiplar.jpg" src="/video/fsd/23-tiplar.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/fsd/23-tiplar.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/fsd/23-tiplar.uz.vtt">
+</video>
+<figcaption>Bob videoda: Tiplar va validatsiya — DTO, Zod sxemalari, mapper funksiyalari va lokal tiplar joylashuvi.</figcaption>
+</figure>
+
 Tiplar ham kod — ular ham **ishlatiladigan joy yonida** yashaydi. `shared/types` papkasi yoki `types` segmenti yaratmang: "tip bo'lish" — kodni qidirishda foydasiz xususiyat (xuddi `components`, `hooks` kabi). Backend javob tiplari (DTO) — so'rov funksiyasi yonida; mapper'lar — DTO yonida; forma sxemalari — forma yonida; props tiplari — komponent faylida.
 
 ## Qoida

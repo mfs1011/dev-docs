@@ -1,0 +1,81 @@
+WEBVTT
+
+1
+00:01.420 --> 00:14.820
+Salom! Bu FSD qo'llanmasining yigirma uchinchi bobi — Tiplar va validatsiya arxitekturasi. Bugun
+TypeScript tiplari va Zod sxemalarini loyihada to'g'ri taqsimlash tamoyillarini o'rganamiz.
+
+2
+00:15.950 --> 00:23.420
+FSD'da asosiy qoida: tiplar ham koddir, va ular faqat
+o'zlari ishlatiladigan joy yonida yashashi lozim.
+
+3
+00:25.390 --> 00:32.930
+Eng katta xato — loyihada shared/types papkasi yoki
+har bir slice ichida types segmenti yaratishdir.
+
+4
+00:33.160 --> 00:40.210
+'Tip bo'lish' — bu kodni guruhlash uchun yetarli xususiyat emas,
+xuddi barcha funksiyalarni bitta papkaga yig'maganimiz kabi.
+
+5
+00:43.400 --> 00:49.580
+Backend javob tiplari, ya'ni DTO lar, ularni
+qabul qiluvchi so'rov funksiyasi yonida turadi.
+
+6
+00:49.810 --> 00:57.940
+Zod sxemasi orqali backend ma'lumotlari parse qilinadi va mapper
+funksiyasi orqali toza frontend domen modeliga o'giriladi.
+
+7
+00:58.210 --> 01:02.630
+Bu backend o'zgarganda butun interfeys
+buzilib ketishining oldini oladi.
+
+8
+01:05.720 --> 01:13.930
+Foydalanuvchi kiritadigan formalar validatsiyasi esa aynan o'sha
+forma turgan joyda — sahifa yoki feature modelida saqlanadi.
+
+9
+01:14.160 --> 01:20.160
+Komponent props va context tiplari esa to'g'ridan-to'g'ri
+komponentning o'z faylida e'lon qilinadi.
+
+10
+01:20.370 --> 01:24.820
+Ularni sun'iy ravishda tashqariga chiqarish
+— kodni o'qishni qiyinlashtiradi.
+
+11
+01:27.910 --> 01:34.240
+Loyiha bo'ylab qayta ishlatiladigan yordamchi
+utility tiplar shared/lib ostida jamlanadi.
+
+12
+01:34.500 --> 01:44.390
+Tipsiz tashqi kutubxonalar uchun ambient d-t-s fayllari
+shared/lib/untyped-packages papkasida bo'sh index.ts bilan saqlanadi.
+
+13
+01:44.740 --> 01:51.260
+Bu Steiger linterining har bir shared slice'idan
+public API talab qilish qoidasiga to'liq javob beradi.
+
+14
+01:54.290 --> 02:04.560
+Tipik xatolar: shared/types axlatxonasini yaratish, backend javobini
+tekshiruvsiz as kalit so'zi bilan kasting qilish yoki DTO larni UI ga yoyish.
+
+15
+02:04.870 --> 02:10.850
+Sxema validatsiyasi va qatlamli tiplar
+loyihangizni yashirin run-time xatolardan asraydi.
+
+16
+02:13.960 --> 02:26.550
+Xulosa: tiplarni ishlatiladigan joy yonida saqlang, DTO ni mapper bilan o'giring va
+shared/types ochmang. Keyingi bobda Layout'lar arxitekturasini ko'rib chiqamiz. Rahmat!
