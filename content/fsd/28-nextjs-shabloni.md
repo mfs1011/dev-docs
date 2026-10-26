@@ -4,6 +4,14 @@
 
 ## Qisqacha
 
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/fsd/28-nextjs-shabloni.jpg" src="/video/fsd/28-nextjs-shabloni.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/fsd/28-nextjs-shabloni.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/fsd/28-nextjs-shabloni.uz.vtt">
+</video>
+<figcaption>Bob videoda: Next.js va App Router shabloni — ildizda re-export, src/_app va src/_pages qatlamlari, Next 16 va index.server.ts.</figcaption>
+</figure>
+
 Next.js'ning fayl asosidagi routeri `app/` (App Router) va `pages/` (Pages Router) papkalarini band qiladi — aynan FSD qatlamlari nomlari. Rasmiy yechim: Next papkalari **loyiha ildizida** qoladi va faqat **re-export** qiladi, FSD esa `src/` ichida yashaydi va to'qnashadigan qatlamlar `_app` va `_pages` deb nomlanadi. Bu bob 2026-yil oktabrda `create-next-app` bilan yaratilgan **Next.js 16.3.8** loyihasida tekshirildi: `next build` (Turbopack) va `npx steiger src` xatosiz o'tdi.
 
 ## Qoida

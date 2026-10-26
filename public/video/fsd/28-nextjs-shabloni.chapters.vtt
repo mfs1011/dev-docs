@@ -1,0 +1,22 @@
+WEBVTT
+
+00:00.000 --> 00:27.497
+Kirish: Next.js va FSD Arxitekturasi
+
+00:27.497 --> 00:57.097
+Papka To'qnashuvi va _app / _pages Yechimi
+
+00:57.097 --> 01:18.347
+Steiger Linteri va Typo Qoidasini Sozlash
+
+01:18.347 --> 01:44.978
+Ildizda Re-export va Next 16 Xususiyatlari
+
+01:44.978 --> 02:04.232
+Server va Klient Chegarasi: index.server.ts
+
+02:04.232 --> 02:26.454
+Next.js FSD da Tipik Xatolar
+
+02:26.454 --> 02:54.140
+Xulosa va Keyingi Qadam
