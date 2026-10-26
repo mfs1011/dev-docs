@@ -1,0 +1,1473 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Salom! Bu FSD qo'llanmasining o'ttiz oltinchi bobi — mavjud loyihalarni yangi funksiyalarni to'xtatmasdan FSD ga bosqichma-bosqich migratsiya qilish.",
+    "show": "Salom! Bu FSD qo'llanmasining o'ttiz oltinchi bobi — mavjud loyihalarni yangi funksiyalarni to'xtatmasdan FSD ga bosqichma-bosqich migratsiya qilish.",
+    "say": "Salom! Bu Ef-es-di qo'llanmasining o'ttiz oltinchi bobi — mavjud loyihalarni yangi funksiyalarni to'xtatmasdan Ef-es-di ga bosqichma-bosqich migratsiya qilish.",
+    "a0": 0.38,
+    "a1": 9.75,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.38,
+        "e": 0.72
+      },
+      {
+        "w": "Bu",
+        "s": 1.34,
+        "e": 1.42
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 1.6,
+        "e": 2.0
+      },
+      {
+        "w": "qo'llanmasining",
+        "s": 2.1,
+        "e": 2.82
+      },
+      {
+        "w": "o'ttiz",
+        "s": 2.98,
+        "e": 3.28
+      },
+      {
+        "w": "oltinchi",
+        "s": 3.4,
+        "e": 3.76
+      },
+      {
+        "w": "bobi",
+        "s": 3.8,
+        "e": 4.08
+      },
+      {
+        "w": "—",
+        "s": 4.08,
+        "e": 4.08
+      },
+      {
+        "w": "mavjud",
+        "s": 4.62,
+        "e": 5.02
+      },
+      {
+        "w": "loyihalarni",
+        "s": 5.06,
+        "e": 5.64
+      },
+      {
+        "w": "yangi",
+        "s": 5.74,
+        "e": 6.0
+      },
+      {
+        "w": "funksiyalarni",
+        "s": 6.06,
+        "e": 6.64
+      },
+      {
+        "w": "to'xtatmasdan",
+        "s": 6.68,
+        "e": 7.32
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 7.46,
+        "e": 7.83
+      },
+      {
+        "w": "ga",
+        "s": 7.91,
+        "e": 7.99
+      },
+      {
+        "w": "bosqichma-bosqich",
+        "s": 8.11,
+        "e": 8.97
+      },
+      {
+        "w": "migratsiya",
+        "s": 9.03,
+        "e": 9.47
+      },
+      {
+        "w": "qilish.",
+        "s": 9.49,
+        "e": 9.75
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "intro",
+    "text": "Migratsiyani boshlashdan oldin jamoa roziligi va biznes asoslash muhim: katta portlash usulida qayta yozish emas, asta-sekin yaxshilash kerak.",
+    "show": "Migratsiyani boshlashdan oldin jamoa roziligi va biznes asoslash muhim: katta portlash usulida qayta yozish emas, asta-sekin yaxshilash kerak.",
+    "say": "Migratsiyani boshlashdan oldin jamoa roziligi va biznes asoslash muhim: katta portlash usulida qayta yozish emas, asta-sekin yaxshilash kerak.",
+    "a0": 10.77,
+    "a1": 18.37,
+    "words": [
+      {
+        "w": "Migratsiyani",
+        "s": 10.77,
+        "e": 11.27
+      },
+      {
+        "w": "boshlashdan",
+        "s": 11.31,
+        "e": 11.79
+      },
+      {
+        "w": "oldin",
+        "s": 11.91,
+        "e": 12.17
+      },
+      {
+        "w": "jamoa",
+        "s": 12.25,
+        "e": 12.59
+      },
+      {
+        "w": "roziligi",
+        "s": 12.67,
+        "e": 13.09
+      },
+      {
+        "w": "va",
+        "s": 13.17,
+        "e": 13.25
+      },
+      {
+        "w": "biznes",
+        "s": 13.41,
+        "e": 13.75
+      },
+      {
+        "w": "asoslash",
+        "s": 13.81,
+        "e": 14.25
+      },
+      {
+        "w": "muhim:",
+        "s": 14.29,
+        "e": 14.53
+      },
+      {
+        "w": "katta",
+        "s": 14.83,
+        "e": 15.09
+      },
+      {
+        "w": "portlash",
+        "s": 15.15,
+        "e": 15.53
+      },
+      {
+        "w": "usulida",
+        "s": 15.57,
+        "e": 15.93
+      },
+      {
+        "w": "qayta",
+        "s": 16.01,
+        "e": 16.25
+      },
+      {
+        "w": "yozish",
+        "s": 16.29,
+        "e": 16.57
+      },
+      {
+        "w": "emas,",
+        "s": 16.61,
+        "e": 16.85
+      },
+      {
+        "w": "asta-sekin",
+        "s": 17.05,
+        "e": 17.61
+      },
+      {
+        "w": "yaxshilash",
+        "s": 17.67,
+        "e": 18.11
+      },
+      {
+        "w": "kerak.",
+        "s": 18.13,
+        "e": 18.37
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "sakkiz_qadam",
+    "text": "Rasmiy shablon sakkiz qadamdan iborat: avval et aliyasini sozlash, so'ngra kodni sahifalarga bo'lish va qolganini app hamda shared ga ajratish.",
+    "show": "Rasmiy shablon sakkiz qadamdan iborat: avval et aliyasini sozlash, so'ngra kodni sahifalarga bo'lish va qolganini app hamda shared ga ajratish.",
+    "say": "Rasmiy shablon sakkiz qadamdan iborat: avval et aliyasini sozlash, so'ngra kodni sahifalarga bo'lish va qolganini ep hamda sherd ga ajratish.",
+    "a0": 18.99,
+    "a1": 27.12,
+    "words": [
+      {
+        "w": "Rasmiy",
+        "s": 18.99,
+        "e": 19.27
+      },
+      {
+        "w": "shablon",
+        "s": 19.31,
+        "e": 19.67
+      },
+      {
+        "w": "sakkiz",
+        "s": 19.71,
+        "e": 20.03
+      },
+      {
+        "w": "qadamdan",
+        "s": 20.07,
+        "e": 20.51
+      },
+      {
+        "w": "iborat:",
+        "s": 20.53,
+        "e": 20.87
+      },
+      {
+        "w": "avval",
+        "s": 21.27,
+        "e": 21.57
+      },
+      {
+        "w": "et",
+        "s": 21.97,
+        "e": 22.09
+      },
+      {
+        "w": "aliyasini",
+        "s": 22.25,
+        "e": 22.74
+      },
+      {
+        "w": "sozlash,",
+        "s": 22.8,
+        "e": 23.2
+      },
+      {
+        "w": "so'ngra",
+        "s": 23.22,
+        "e": 23.5
+      },
+      {
+        "w": "kodni",
+        "s": 23.58,
+        "e": 23.86
+      },
+      {
+        "w": "sahifalarga",
+        "s": 23.92,
+        "e": 24.52
+      },
+      {
+        "w": "bo'lish",
+        "s": 24.58,
+        "e": 24.84
+      },
+      {
+        "w": "va",
+        "s": 24.88,
+        "e": 24.94
+      },
+      {
+        "w": "qolganini",
+        "s": 25.04,
+        "e": 25.54
+      },
+      {
+        "w": "ep",
+        "s": 25.7,
+        "e": 25.82
+      },
+      {
+        "w": "hamda",
+        "s": 25.88,
+        "e": 26.14
+      },
+      {
+        "w": "sherd",
+        "s": 26.24,
+        "e": 26.56
+      },
+      {
+        "w": "ga",
+        "s": 26.58,
+        "e": 26.64
+      },
+      {
+        "w": "ajratish.",
+        "s": 26.7,
+        "e": 27.12
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "sakkiz_qadam",
+    "text": "Sahifalararo importlar yo'qotiladi, shared ga faqat umumiy kod qoldirilib, bitta sahifaga tegishli reducers va actions o'sha sahifaga ko'chiriladi.",
+    "show": "Sahifalararo importlar yo'qotiladi, shared ga faqat umumiy kod qoldirilib, bitta sahifaga tegishli reducers va actions o'sha sahifaga ko'chiriladi.",
+    "say": "Sahifalararo importlar yo'qotiladi, sherd ga faqat umumiy kod qoldirilib, bitta sahifaga tegishli redyuserlar va ekshnlar o'sha sahifaga ko'chiriladi.",
+    "a0": 27.88,
+    "a1": 36.52,
+    "words": [
+      {
+        "w": "Sahifalararo",
+        "s": 27.88,
+        "e": 28.74
+      },
+      {
+        "w": "importlar",
+        "s": 28.92,
+        "e": 29.38
+      },
+      {
+        "w": "yo'qotiladi,",
+        "s": 29.42,
+        "e": 29.96
+      },
+      {
+        "w": "sherd",
+        "s": 30.26,
+        "e": 30.6
+      },
+      {
+        "w": "ga",
+        "s": 30.64,
+        "e": 30.7
+      },
+      {
+        "w": "faqat",
+        "s": 30.76,
+        "e": 31.02
+      },
+      {
+        "w": "umumiy",
+        "s": 31.12,
+        "e": 31.44
+      },
+      {
+        "w": "kod",
+        "s": 31.54,
+        "e": 31.72
+      },
+      {
+        "w": "qoldirilib,",
+        "s": 31.78,
+        "e": 32.22
+      },
+      {
+        "w": "bitta",
+        "s": 32.56,
+        "e": 32.78
+      },
+      {
+        "w": "sahifaga",
+        "s": 32.84,
+        "e": 33.34
+      },
+      {
+        "w": "tegishli",
+        "s": 33.4,
+        "e": 33.76
+      },
+      {
+        "w": "redyuserlar",
+        "s": 33.84,
+        "e": 34.44
+      },
+      {
+        "w": "va",
+        "s": 34.5,
+        "e": 34.56
+      },
+      {
+        "w": "ekshnlar",
+        "s": 34.74,
+        "e": 35.18
+      },
+      {
+        "w": "o'sha",
+        "s": 35.28,
+        "e": 35.46
+      },
+      {
+        "w": "sahifaga",
+        "s": 35.5,
+        "e": 36.0
+      },
+      {
+        "w": "ko'chiriladi.",
+        "s": 36.04,
+        "e": 36.52
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "sakkiz_qadam",
+    "text": "Oxirgi ixtiyoriy bosqichda bir nechta sahifa ishlatadigan modullar entities va features qatlamlariga ajratiladi.",
+    "show": "Oxirgi ixtiyoriy bosqichda bir nechta sahifa ishlatadigan modullar entities va features qatlamlariga ajratiladi.",
+    "say": "Oxirgi ixtiyoriy bosqichda bir nechta sahifa ishlatadigan modullar entitiz va fichers qatlamlariga ajratiladi.",
+    "a0": 37.22,
+    "a1": 43.29,
+    "words": [
+      {
+        "w": "Oxirgi",
+        "s": 37.22,
+        "e": 37.63
+      },
+      {
+        "w": "ixtiyoriy",
+        "s": 37.73,
+        "e": 38.19
+      },
+      {
+        "w": "bosqichda",
+        "s": 38.25,
+        "e": 38.71
+      },
+      {
+        "w": "bir",
+        "s": 38.85,
+        "e": 38.97
+      },
+      {
+        "w": "nechta",
+        "s": 39.03,
+        "e": 39.27
+      },
+      {
+        "w": "sahifa",
+        "s": 39.31,
+        "e": 39.67
+      },
+      {
+        "w": "ishlatadigan",
+        "s": 39.73,
+        "e": 40.27
+      },
+      {
+        "w": "modullar",
+        "s": 40.35,
+        "e": 40.81
+      },
+      {
+        "w": "entitiz",
+        "s": 41.03,
+        "e": 41.45
+      },
+      {
+        "w": "va",
+        "s": 41.53,
+        "e": 41.61
+      },
+      {
+        "w": "fichers",
+        "s": 41.77,
+        "e": 42.15
+      },
+      {
+        "w": "qatlamlariga",
+        "s": 42.19,
+        "e": 42.73
+      },
+      {
+        "w": "ajratiladi.",
+        "s": 42.77,
+        "e": 43.29
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "sahifalar_va_reexport",
+    "text": "Birinchi amaliy qadamda routes papkasidagi fayllar faqat re-eksport vazifasini bajaradi, haqiqiy UI esa pages ga ko'chadi.",
+    "show": "Birinchi amaliy qadamda routes papkasidagi fayllar faqat re-eksport vazifasini bajaradi, haqiqiy UI esa pages ga ko'chadi.",
+    "say": "Birinchi amaliy qadamda routs papkasidagi fayllar faqat re-eksport vazifasini bajaradi, haqiqiy yu-ay esa peyjiz ga ko'chadi.",
+    "a0": 44.41,
+    "a1": 51.31,
+    "words": [
+      {
+        "w": "Birinchi",
+        "s": 44.41,
+        "e": 44.73
+      },
+      {
+        "w": "amaliy",
+        "s": 44.79,
+        "e": 45.05
+      },
+      {
+        "w": "qadamda",
+        "s": 45.09,
+        "e": 45.49
+      },
+      {
+        "w": "routs",
+        "s": 45.77,
+        "e": 46.07
+      },
+      {
+        "w": "papkasidagi",
+        "s": 46.11,
+        "e": 46.63
+      },
+      {
+        "w": "fayllar",
+        "s": 46.69,
+        "e": 47.09
+      },
+      {
+        "w": "faqat",
+        "s": 47.13,
+        "e": 47.41
+      },
+      {
+        "w": "re-eksport",
+        "s": 47.55,
+        "e": 48.13
+      },
+      {
+        "w": "vazifasini",
+        "s": 48.17,
+        "e": 48.65
+      },
+      {
+        "w": "bajaradi,",
+        "s": 48.69,
+        "e": 49.07
+      },
+      {
+        "w": "haqiqiy",
+        "s": 49.31,
+        "e": 49.73
+      },
+      {
+        "w": "yu-ay",
+        "s": 49.81,
+        "e": 50.15
+      },
+      {
+        "w": "esa",
+        "s": 50.19,
+        "e": 50.35
+      },
+      {
+        "w": "peyjiz",
+        "s": 50.49,
+        "e": 50.85
+      },
+      {
+        "w": "ga",
+        "s": 50.87,
+        "e": 50.95
+      },
+      {
+        "w": "ko'chadi.",
+        "s": 50.99,
+        "e": 51.31
+      }
+    ]
+  },
+  {
+    "id": "L7",
+    "scene": "sahifalar_va_reexport",
+    "text": "Re-akt, Vue yoki Angular bo'lishidan qat'i nazar, marshrutlar faqat sahifaning public API sidan komponentni olib beradi.",
+    "show": "Re-akt, Vue yoki Angular bo'lishidan qat'i nazar, marshrutlar faqat sahifaning public API sidan komponentni olib beradi.",
+    "say": "Re-akt, Vue yoki Angular bo'lishidan qat'i nazar, marshrutlar faqat sahifaning public ey-pi-ay sidan komponentni olib beradi.",
+    "a0": 52.05,
+    "a1": 58.76,
+    "words": [
+      {
+        "w": "Re-akt,",
+        "s": 52.05,
+        "e": 52.43
+      },
+      {
+        "w": "Vue",
+        "s": 52.62,
+        "e": 52.76
+      },
+      {
+        "w": "yoki",
+        "s": 52.82,
+        "e": 53.14
+      },
+      {
+        "w": "Angular",
+        "s": 53.34,
+        "e": 53.68
+      },
+      {
+        "w": "bo'lishidan",
+        "s": 53.74,
+        "e": 54.16
+      },
+      {
+        "w": "qat'i",
+        "s": 54.22,
+        "e": 54.48
+      },
+      {
+        "w": "nazar,",
+        "s": 54.56,
+        "e": 54.84
+      },
+      {
+        "w": "marshrutlar",
+        "s": 55.2,
+        "e": 55.7
+      },
+      {
+        "w": "faqat",
+        "s": 55.76,
+        "e": 56.0
+      },
+      {
+        "w": "sahifaning",
+        "s": 56.02,
+        "e": 56.56
+      },
+      {
+        "w": "public",
+        "s": 56.62,
+        "e": 56.96
+      },
+      {
+        "w": "ey-pi-ay",
+        "s": 57.04,
+        "e": 57.34
+      },
+      {
+        "w": "sidan",
+        "s": 57.38,
+        "e": 57.6
+      },
+      {
+        "w": "komponentni",
+        "s": 57.68,
+        "e": 58.24
+      },
+      {
+        "w": "olib",
+        "s": 58.3,
+        "e": 58.46
+      },
+      {
+        "w": "beradi.",
+        "s": 58.48,
+        "e": 58.76
+      }
+    ]
+  },
+  {
+    "id": "L8",
+    "scene": "steiger_bosqichlari",
+    "text": "Mavjud eski loyihaga Stayger integratsiyasida barcha qoidalar bir vaqtda yoqilmaydi, avval faqat ignor-vornings bilan xatolar tekshiriladi.",
+    "show": "Mavjud eski loyihaga Stayger integratsiyasida barcha qoidalar bir vaqtda yoqilmaydi, avval faqat ignor-vornings bilan xatolar tekshiriladi.",
+    "say": "Mavjud eski loyihaga Stayger integratsiyasida barcha qoidalar bir vaqtda yoqilmaydi, avval faqat ignor vorningz bilan xatolar tekshiriladi.",
+    "a0": 59.62,
+    "a1": 67.63,
+    "words": [
+      {
+        "w": "Mavjud",
+        "s": 59.62,
+        "e": 59.98
+      },
+      {
+        "w": "eski",
+        "s": 60.1,
+        "e": 60.32
+      },
+      {
+        "w": "loyihaga",
+        "s": 60.36,
+        "e": 60.82
+      },
+      {
+        "w": "Stayger",
+        "s": 60.98,
+        "e": 61.52
+      },
+      {
+        "w": "integratsiyasida",
+        "s": 61.6,
+        "e": 62.34
+      },
+      {
+        "w": "barcha",
+        "s": 62.46,
+        "e": 62.74
+      },
+      {
+        "w": "qoidalar",
+        "s": 62.78,
+        "e": 63.22
+      },
+      {
+        "w": "bir",
+        "s": 63.28,
+        "e": 63.4
+      },
+      {
+        "w": "vaqtda",
+        "s": 63.44,
+        "e": 63.68
+      },
+      {
+        "w": "yoqilmaydi,",
+        "s": 63.68,
+        "e": 64.26
+      },
+      {
+        "w": "avval",
+        "s": 64.58,
+        "e": 64.88
+      },
+      {
+        "w": "faqat",
+        "s": 64.92,
+        "e": 65.2
+      },
+      {
+        "w": "ignor",
+        "s": 65.58,
+        "e": 65.9
+      },
+      {
+        "w": "vorningz",
+        "s": 65.98,
+        "e": 66.4
+      },
+      {
+        "w": "bilan",
+        "s": 66.44,
+        "e": 66.62
+      },
+      {
+        "w": "xatolar",
+        "s": 66.68,
+        "e": 67.1
+      },
+      {
+        "w": "tekshiriladi.",
+        "s": 67.12,
+        "e": 67.63
+      }
+    ]
+  },
+  {
+    "id": "L9",
+    "scene": "steiger_bosqichlari",
+    "text": "Bosqichma-bosqich avval taqiqlangan importlar va pablik api, so'ngra mayda slice va segment qoidalari yoqiladi.",
+    "show": "Bosqichma-bosqich avval taqiqlangan importlar va pablik api, so'ngra mayda slice va segment qoidalari yoqiladi.",
+    "say": "Bosqichma-bosqich avval taqiqlangan importlar va pablik ey-pi-ay, so'ngra mayda slays va segment qoidalari yoqiladi.",
+    "a0": 68.35,
+    "a1": 74.97,
+    "words": [
+      {
+        "w": "Bosqichma-bosqich",
+        "s": 68.35,
+        "e": 69.15
+      },
+      {
+        "w": "avval",
+        "s": 69.45,
+        "e": 69.71
+      },
+      {
+        "w": "taqiqlangan",
+        "s": 69.75,
+        "e": 70.37
+      },
+      {
+        "w": "importlar",
+        "s": 70.53,
+        "e": 70.99
+      },
+      {
+        "w": "va",
+        "s": 71.05,
+        "e": 71.11
+      },
+      {
+        "w": "pablik",
+        "s": 71.25,
+        "e": 71.57
+      },
+      {
+        "w": "ey-pi-ay,",
+        "s": 71.67,
+        "e": 72.05
+      },
+      {
+        "w": "so'ngra",
+        "s": 72.37,
+        "e": 72.67
+      },
+      {
+        "w": "mayda",
+        "s": 72.87,
+        "e": 73.15
+      },
+      {
+        "w": "slays",
+        "s": 73.21,
+        "e": 73.51
+      },
+      {
+        "w": "va",
+        "s": 73.55,
+        "e": 73.61
+      },
+      {
+        "w": "segment",
+        "s": 73.69,
+        "e": 74.05
+      },
+      {
+        "w": "qoidalari",
+        "s": 74.09,
+        "e": 74.53
+      },
+      {
+        "w": "yoqiladi.",
+        "s": 74.53,
+        "e": 74.97
+      }
+    ]
+  },
+  {
+    "id": "L10",
+    "scene": "versiyalar_evolyutsiyasi",
+    "text": "FSD versiyalariga nazar tashlasak: birinchi versiyadan ikkinchi versiyaga o'tishda shared, entities va qatlamlar qat'iy standartlashtirildi.",
+    "show": "FSD versiyalariga nazar tashlasak: birinchi versiyadan ikkinchi versiyaga o'tishda shared, entities va qatlamlar qat'iy standartlashtirildi.",
+    "say": "Ef-es-di versiyalariga nazar tashlasak: birinchi versiyadan ikkinchi versiyaga o'tishda sherd, entitiz va qatlamlar qat'iy standartlashtirildi.",
+    "a0": 75.61,
+    "a1": 83.14,
+    "words": [
+      {
+        "w": "Ef-es-di",
+        "s": 75.61,
+        "e": 75.99
+      },
+      {
+        "w": "versiyalariga",
+        "s": 76.07,
+        "e": 76.67
+      },
+      {
+        "w": "nazar",
+        "s": 76.75,
+        "e": 77.03
+      },
+      {
+        "w": "tashlasak:",
+        "s": 77.09,
+        "e": 77.51
+      },
+      {
+        "w": "birinchi",
+        "s": 77.85,
+        "e": 78.13
+      },
+      {
+        "w": "versiyadan",
+        "s": 78.17,
+        "e": 78.59
+      },
+      {
+        "w": "ikkinchi",
+        "s": 78.67,
+        "e": 78.99
+      },
+      {
+        "w": "versiyaga",
+        "s": 79.03,
+        "e": 79.39
+      },
+      {
+        "w": "o'tishda",
+        "s": 79.45,
+        "e": 79.75
+      },
+      {
+        "w": "sherd,",
+        "s": 80.15,
+        "e": 80.51
+      },
+      {
+        "w": "entitiz",
+        "s": 80.67,
+        "e": 81.05
+      },
+      {
+        "w": "va",
+        "s": 81.11,
+        "e": 81.17
+      },
+      {
+        "w": "qatlamlar",
+        "s": 81.27,
+        "e": 81.73
+      },
+      {
+        "w": "qat'iy",
+        "s": 81.83,
+        "e": 82.17
+      },
+      {
+        "w": "standartlashtirildi.",
+        "s": 82.23,
+        "e": 83.14
+      }
+    ]
+  },
+  {
+    "id": "L11",
+    "scene": "versiyalar_evolyutsiyasi",
+    "text": "Ikki nuqta noldan ikki nuqta birga o'tishda esa pages-first tamoyili mustahkamlandi, cross-importlar joriy etildi va processes bekor qilindi.",
+    "show": "Ikki nuqta noldan ikki nuqta birga o'tishda esa pages-first tamoyili mustahkamlandi, cross-importlar joriy etildi va processes bekor qilindi.",
+    "say": "Ikki nuqta noldan ikki nuqta birga o'tishda esa peyjiz-first tamoyili mustahkamlandi, kross importlar joriy etildi va prosesis bekor qilindi.",
+    "a0": 83.76,
+    "a1": 91.1,
+    "words": [
+      {
+        "w": "Ikki",
+        "s": 83.76,
+        "e": 83.94
+      },
+      {
+        "w": "nuqta",
+        "s": 83.98,
+        "e": 84.22
+      },
+      {
+        "w": "noldan",
+        "s": 84.28,
+        "e": 84.62
+      },
+      {
+        "w": "ikki",
+        "s": 84.78,
+        "e": 84.98
+      },
+      {
+        "w": "nuqta",
+        "s": 85.02,
+        "e": 85.26
+      },
+      {
+        "w": "birga",
+        "s": 85.32,
+        "e": 85.54
+      },
+      {
+        "w": "o'tishda",
+        "s": 85.6,
+        "e": 85.88
+      },
+      {
+        "w": "esa",
+        "s": 85.94,
+        "e": 86.12
+      },
+      {
+        "w": "peyjiz-first",
+        "s": 86.3,
+        "e": 86.94
+      },
+      {
+        "w": "tamoyili",
+        "s": 86.96,
+        "e": 87.32
+      },
+      {
+        "w": "mustahkamlandi,",
+        "s": 87.36,
+        "e": 88.04
+      },
+      {
+        "w": "kross",
+        "s": 88.28,
+        "e": 88.52
+      },
+      {
+        "w": "importlar",
+        "s": 88.62,
+        "e": 89.04
+      },
+      {
+        "w": "joriy",
+        "s": 89.08,
+        "e": 89.36
+      },
+      {
+        "w": "etildi",
+        "s": 89.38,
+        "e": 89.66
+      },
+      {
+        "w": "va",
+        "s": 89.72,
+        "e": 89.8
+      },
+      {
+        "w": "prosesis",
+        "s": 89.92,
+        "e": 90.42
+      },
+      {
+        "w": "bekor",
+        "s": 90.5,
+        "e": 90.76
+      },
+      {
+        "w": "qilindi.",
+        "s": 90.8,
+        "e": 91.1
+      }
+    ]
+  },
+  {
+    "id": "L12",
+    "scene": "tipik_xatolar",
+    "text": "Eng xavfli xato — loyihani bitta ulkan pul-rikvestda to'liq qayta yozishga urinish yoki jamoa xohishiga qarshi majburlashdir.",
+    "show": "Eng xavfli xato — loyihani bitta ulkan pul-rikvestda to'liq qayta yozishga urinish yoki jamoa xohishiga qarshi majburlashdir.",
+    "say": "Eng xavfli xato — loyihani bitta ulkan pul rekvestda to'liq qayta yozishga urinish yoki jamoa xohishiga qarshi majburlashdir.",
+    "a0": 91.88,
+    "a1": 98.93,
+    "words": [
+      {
+        "w": "Eng",
+        "s": 91.88,
+        "e": 92.04
+      },
+      {
+        "w": "xavfli",
+        "s": 92.1,
+        "e": 92.42
+      },
+      {
+        "w": "xato",
+        "s": 92.52,
+        "e": 92.78
+      },
+      {
+        "w": "—",
+        "s": 92.78,
+        "e": 92.78
+      },
+      {
+        "w": "loyihani",
+        "s": 93.08,
+        "e": 93.52
+      },
+      {
+        "w": "bitta",
+        "s": 93.64,
+        "e": 93.96
+      },
+      {
+        "w": "ulkan",
+        "s": 94.06,
+        "e": 94.4
+      },
+      {
+        "w": "pul",
+        "s": 94.48,
+        "e": 94.66
+      },
+      {
+        "w": "rekvestda",
+        "s": 94.72,
+        "e": 95.14
+      },
+      {
+        "w": "to'liq",
+        "s": 95.26,
+        "e": 95.54
+      },
+      {
+        "w": "qayta",
+        "s": 95.58,
+        "e": 95.82
+      },
+      {
+        "w": "yozishga",
+        "s": 95.82,
+        "e": 96.22
+      },
+      {
+        "w": "urinish",
+        "s": 96.3,
+        "e": 96.64
+      },
+      {
+        "w": "yoki",
+        "s": 96.7,
+        "e": 96.94
+      },
+      {
+        "w": "jamoa",
+        "s": 97.08,
+        "e": 97.46
+      },
+      {
+        "w": "xohishiga",
+        "s": 97.51,
+        "e": 97.89
+      },
+      {
+        "w": "qarshi",
+        "s": 97.95,
+        "e": 98.19
+      },
+      {
+        "w": "majburlashdir.",
+        "s": 98.25,
+        "e": 98.93
+      }
+    ]
+  },
+  {
+    "id": "L13",
+    "scene": "tipik_xatolar",
+    "text": "Shuningdek, birinchi kundan boshlab sun'iy entities va features qidirish hamda framework yangilash bilan FSD ni bir vaqtda boshlash tavsiya etilmaydi.",
+    "show": "Shuningdek, birinchi kundan boshlab sun'iy entities va features qidirish hamda framework yangilash bilan FSD ni bir vaqtda boshlash tavsiya etilmaydi.",
+    "say": "Shuningdek, birinchi kundan boshlab sun'iy entitiz va fichers qidirish hamda framework yangilash bilan Ef-es-di ni bir vaqtda boshlash tavsiya etilmaydi.",
+    "a0": 99.63,
+    "a1": 107.35,
+    "words": [
+      {
+        "w": "Shuningdek,",
+        "s": 99.63,
+        "e": 100.09
+      },
+      {
+        "w": "birinchi",
+        "s": 100.19,
+        "e": 100.49
+      },
+      {
+        "w": "kundan",
+        "s": 100.53,
+        "e": 100.81
+      },
+      {
+        "w": "boshlab",
+        "s": 100.85,
+        "e": 101.17
+      },
+      {
+        "w": "sun'iy",
+        "s": 101.25,
+        "e": 101.63
+      },
+      {
+        "w": "entitiz",
+        "s": 101.81,
+        "e": 102.21
+      },
+      {
+        "w": "va",
+        "s": 102.29,
+        "e": 102.35
+      },
+      {
+        "w": "fichers",
+        "s": 102.49,
+        "e": 102.85
+      },
+      {
+        "w": "qidirish",
+        "s": 102.89,
+        "e": 103.21
+      },
+      {
+        "w": "hamda",
+        "s": 103.25,
+        "e": 103.51
+      },
+      {
+        "w": "framework",
+        "s": 103.61,
+        "e": 104.07
+      },
+      {
+        "w": "yangilash",
+        "s": 104.13,
+        "e": 104.53
+      },
+      {
+        "w": "bilan",
+        "s": 104.55,
+        "e": 104.75
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 105.11,
+        "e": 105.47
+      },
+      {
+        "w": "ni",
+        "s": 105.55,
+        "e": 105.61
+      },
+      {
+        "w": "bir",
+        "s": 105.73,
+        "e": 105.87
+      },
+      {
+        "w": "vaqtda",
+        "s": 105.93,
+        "e": 106.19
+      },
+      {
+        "w": "boshlash",
+        "s": 106.23,
+        "e": 106.55
+      },
+      {
+        "w": "tavsiya",
+        "s": 106.57,
+        "e": 106.87
+      },
+      {
+        "w": "etilmaydi.",
+        "s": 106.93,
+        "e": 107.35
+      }
+    ]
+  },
+  {
+    "id": "L14",
+    "scene": "xulosa",
+    "text": "Xulosa: FSD ga o'tish — tizimli, xavfsiz va boshqariladigan jarayon bo'lib, loyihaning kelajakdagi barqarorligini ta'minlaydi.",
+    "show": "Xulosa: FSD ga o'tish — tizimli, xavfsiz va boshqariladigan jarayon bo'lib, loyihaning kelajakdagi barqarorligini ta'minlaydi.",
+    "say": "Xulosa: Ef-es-di ga o'tish — tizimli, xavfsiz va boshqariladigan jarayon bo'lib, loyihaning kelajakdagi barqarorligini ta'minlaydi.",
+    "a0": 107.97,
+    "a1": 115.14,
+    "words": [
+      {
+        "w": "Xulosa:",
+        "s": 107.97,
+        "e": 108.39
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 108.81,
+        "e": 109.17
+      },
+      {
+        "w": "ga",
+        "s": 109.23,
+        "e": 109.31
+      },
+      {
+        "w": "o'tish",
+        "s": 109.39,
+        "e": 109.69
+      },
+      {
+        "w": "—",
+        "s": 109.69,
+        "e": 109.69
+      },
+      {
+        "w": "tizimli,",
+        "s": 109.85,
+        "e": 110.29
+      },
+      {
+        "w": "xavfsiz",
+        "s": 110.45,
+        "e": 110.83
+      },
+      {
+        "w": "va",
+        "s": 110.87,
+        "e": 110.93
+      },
+      {
+        "w": "boshqariladigan",
+        "s": 111.03,
+        "e": 111.69
+      },
+      {
+        "w": "jarayon",
+        "s": 111.73,
+        "e": 112.09
+      },
+      {
+        "w": "bo'lib,",
+        "s": 112.13,
+        "e": 112.35
+      },
+      {
+        "w": "loyihaning",
+        "s": 112.68,
+        "e": 113.18
+      },
+      {
+        "w": "kelajakdagi",
+        "s": 113.2,
+        "e": 113.78
+      },
+      {
+        "w": "barqarorligini",
+        "s": 113.86,
+        "e": 114.58
+      },
+      {
+        "w": "ta'minlaydi.",
+        "s": 114.62,
+        "e": 115.14
+      }
+    ]
+  },
+  {
+    "id": "L15",
+    "scene": "xulosa",
+    "text": "Keyingi o'ttiz yettinchi bobda ushbu bilimlarni real internet do'koni frontend loyihasiga amaliy tatbiq qilamiz.",
+    "show": "Keyingi o'ttiz yettinchi bobda ushbu bilimlarni real internet do'koni frontend loyihasiga amaliy tatbiq qilamiz.",
+    "say": "Keyingi o'ttiz yettinchi bobda ushbu bilimlarni real internet do'koni frontend loyihasiga amaliy tatbiq qilamiz.",
+    "a0": 115.78,
+    "a1": 122.99,
+    "words": [
+      {
+        "w": "Keyingi",
+        "s": 115.78,
+        "e": 116.14
+      },
+      {
+        "w": "o'ttiz",
+        "s": 116.26,
+        "e": 116.5
+      },
+      {
+        "w": "yettinchi",
+        "s": 116.54,
+        "e": 116.96
+      },
+      {
+        "w": "bobda",
+        "s": 117.02,
+        "e": 117.38
+      },
+      {
+        "w": "ushbu",
+        "s": 117.82,
+        "e": 118.08
+      },
+      {
+        "w": "bilimlarni",
+        "s": 118.18,
+        "e": 118.72
+      },
+      {
+        "w": "real",
+        "s": 118.92,
+        "e": 119.2
+      },
+      {
+        "w": "internet",
+        "s": 119.34,
+        "e": 119.76
+      },
+      {
+        "w": "do'koni",
+        "s": 119.8,
+        "e": 120.2
+      },
+      {
+        "w": "frontend",
+        "s": 120.46,
+        "e": 120.96
+      },
+      {
+        "w": "loyihasiga",
+        "s": 121.0,
+        "e": 121.6
+      },
+      {
+        "w": "amaliy",
+        "s": 121.82,
+        "e": 122.18
+      },
+      {
+        "w": "tatbiq",
+        "s": 122.26,
+        "e": 122.57
+      },
+      {
+        "w": "qilamiz.",
+        "s": 122.61,
+        "e": 122.99
+      }
+    ]
+  },
+  {
+    "id": "L16",
+    "scene": "xulosa",
+    "text": "E'tiboringiz uchun rahmat, arxitekturani bosqichma-bosqich yuksaltirishda davom eting!",
+    "show": "E'tiboringiz uchun rahmat, arxitekturani bosqichma-bosqich yuksaltirishda davom eting!",
+    "say": "E'tiboringiz uchun rahmat, arxitekturani bosqichma-bosqich yuksaltirishda davom eting!",
+    "a0": 123.73,
+    "a1": 128.92,
+    "words": [
+      {
+        "w": "E'tiboringiz",
+        "s": 123.73,
+        "e": 124.35
+      },
+      {
+        "w": "uchun",
+        "s": 124.39,
+        "e": 124.59
+      },
+      {
+        "w": "rahmat,",
+        "s": 124.65,
+        "e": 125.05
+      },
+      {
+        "w": "arxitekturani",
+        "s": 125.51,
+        "e": 126.37
+      },
+      {
+        "w": "bosqichma-bosqich",
+        "s": 126.57,
+        "e": 127.52
+      },
+      {
+        "w": "yuksaltirishda",
+        "s": 127.6,
+        "e": 128.3
+      },
+      {
+        "w": "davom",
+        "s": 128.36,
+        "e": 128.64
+      },
+      {
+        "w": "eting!",
+        "s": 128.68,
+        "e": 128.92
+      }
+    ]
+  }
+]

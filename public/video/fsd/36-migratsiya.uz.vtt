@@ -1,0 +1,81 @@
+WEBVTT
+
+1
+00:01.420 --> 00:11.240
+Salom! Bu FSD qo'llanmasining o'ttiz oltinchi bobi — mavjud loyihalarni yangi
+funksiyalarni to'xtatmasdan FSD ga bosqichma-bosqich migratsiya qilish.
+
+2
+00:12.610 --> 00:20.660
+Migratsiyani boshlashdan oldin jamoa roziligi va biznes asoslash muhim:
+katta portlash usulida qayta yozish emas, asta-sekin yaxshilash kerak.
+
+3
+00:22.430 --> 00:31.010
+Rasmiy shablon sakkiz qadamdan iborat: avval et aliyasini sozlash, so'ngra
+kodni sahifalarga bo'lish va qolganini app hamda shared ga ajratish.
+
+4
+00:31.320 --> 00:40.410
+Sahifalararo importlar yo'qotiladi, shared ga faqat umumiy kod qoldirilib,
+bitta sahifaga tegishli reducers va actions o'sha sahifaga ko'chiriladi.
+
+5
+00:40.660 --> 00:47.180
+Oxirgi ixtiyoriy bosqichda bir nechta sahifa ishlatadigan
+modullar entities va features qatlamlariga ajratiladi.
+
+6
+00:50.650 --> 00:58.000
+Birinchi amaliy qadamda routes papkasidagi fayllar faqat
+re-eksport vazifasini bajaradi, haqiqiy UI esa pages ga ko'chadi.
+
+7
+00:58.290 --> 01:05.450
+Re-akt, Vue yoki Angular bo'lishidan qat'i nazar, marshrutlar
+faqat sahifaning public API sidan komponentni olib beradi.
+
+8
+01:08.660 --> 01:17.120
+Mavjud eski loyihaga Stayger integratsiyasida barcha qoidalar bir vaqtda
+yoqilmaydi, avval faqat ignor-vornings bilan xatolar tekshiriladi.
+
+9
+01:17.390 --> 01:24.460
+Bosqichma-bosqich avval taqiqlangan importlar va pablik
+api, so'ngra mayda slice va segment qoidalari yoqiladi.
+
+10
+01:27.450 --> 01:35.430
+FSD versiyalariga nazar tashlasak: birinchi versiyadan ikkinchi versiyaga
+o'tishda shared, entities va qatlamlar qat'iy standartlashtirildi.
+
+11
+01:35.600 --> 01:43.390
+Ikki nuqta noldan ikki nuqta birga o'tishda esa pages-first tamoyili
+mustahkamlandi, cross-importlar joriy etildi va processes bekor qilindi.
+
+12
+01:46.520 --> 01:54.020
+Eng xavfli xato — loyihani bitta ulkan pul-rikvestda to'liq qayta
+yozishga urinish yoki jamoa xohishiga qarshi majburlashdir.
+
+13
+01:54.270 --> 02:02.440
+Shuningdek, birinchi kundan boshlab sun'iy entities va features qidirish
+hamda framework yangilash bilan FSD ni bir vaqtda boshlash tavsiya etilmaydi.
+
+14
+02:05.410 --> 02:13.030
+Xulosa: FSD ga o'tish — tizimli, xavfsiz va boshqariladigan
+jarayon bo'lib, loyihaning kelajakdagi barqarorligini ta'minlaydi.
+
+15
+02:13.220 --> 02:20.880
+Keyingi o'ttiz yettinchi bobda ushbu bilimlarni real
+internet do'koni frontend loyihasiga amaliy tatbiq qilamiz.
+
+16
+02:21.170 --> 02:26.810
+E'tiboringiz uchun rahmat, arxitekturani
+bosqichma-bosqich yuksaltirishda davom eting!
