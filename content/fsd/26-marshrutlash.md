@@ -4,6 +4,14 @@
 
 ## Qisqacha
 
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/fsd/26-marshrutlash.jpg" src="/video/fsd/26-marshrutlash.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/fsd/26-marshrutlash.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/fsd/26-marshrutlash.uz.vtt">
+</video>
+<figcaption>Bob videoda: Marshrutlash va lazy loading — app/routes konfiguratsiyasi, shared/routes konstantalari, guardlar va public API orqali lazy import.</figcaption>
+</figure>
+
 FSD'da marshrutlash ikki joyga bo'linadi: **router konfiguratsiyasi** (qaysi URL — qaysi sahifa, layout, guard) — `app/routes`; **marshrut konstantalari** (URL shablonlari, `product(id)` kabi funksiyalar) — `shared/routes`, chunki ularni pastki qatlamlar ham ishlatadi (havola, redirect). Sahifalar public API orqali **lazy** yuklanadi — har sahifa alohida chunk.
 
 Rasmiy hujjat bu yerda faqat segment nomlarini beradi (`app/routes`, `shared/routes`); quyidagi guard va lazy loading naqshlari — amaliy tavsiya.

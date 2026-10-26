@@ -1,0 +1,81 @@
+WEBVTT
+
+1
+00:01.420 --> 00:18.500
+Salom! Bu FSD qo'llanmasining yigirma oltinchi bobi — Marshrutlash va lazy loading strategiyalari. Bugun marshrutlar
+daraxti, URL konstantalari, navigatsiya guardlari va sahifalarni alohida chunk sifatida yuklashni o'rganamiz.
+
+2
+00:19.430 --> 00:26.390
+FSD da marshrutlash tizimi qatlamlar intizomiga qat'iy
+rioya qiladi va ikki asosiy markazga bo'linadi.
+
+3
+00:28.260 --> 00:40.630
+Birinchi markaz — app/routes. Bu yerda to'liq router daraxti, sahifalarni bog'lash va
+navigatsiya guardlari konfiguratsiya qilinadi, chunki faqat app barcha sahifalarni biladi.
+
+4
+00:40.880 --> 00:52.140
+Ikkinchi markaz — shared/routes. Pastki qatlamlardagi widget, feature yoki
+entity'lar havola berish yoki redirect qilish uchun URL manzillariga muhtoj.
+
+5
+00:52.350 --> 01:02.090
+Ular app qatlamidan import qila olmagani sababli, barcha URL konstantalari
+va marshrut yasovchi funksiyalar shared/routes ichiga joylashtiriladi.
+
+6
+01:05.240 --> 01:15.060
+Sahifalarni himoyalovchi guard mantiqi shared/auth yoki entities/session
+qatlamida qayta ishlatiladigan sof funksiya sifatida yoziladi.
+
+7
+01:15.190 --> 01:24.600
+Masalan, tizimga kirmagan foydalanuvchi checkout sahifasiga o'tsa, guard
+uni returnTo parametri bilan birga avtorizatsiya sahifasiga yo'naltiradi.
+
+8
+01:27.670 --> 01:35.550
+Ilovaning dastlabki yuklanish tezligini oshirish uchun deyarli
+barcha sahifalar alohida chunk sifatida lazy import qilinishi shart.
+
+9
+01:35.760 --> 01:44.410
+Bu yerda eng muhim qoida: sahifa faqat o'zining index nuqta
+ts public API fayli orqali lazy import qilinishi kerak.
+
+10
+01:44.700 --> 01:52.680
+Ichki ui qismiga to'g'ridan-to'g'ri chuqur yo'l bilan kirish
+public API ni chetlab o'tish hisoblanadi va qat'iyan taqiqlanadi.
+
+11
+01:55.770 --> 02:05.690
+React va Vue loyihalarida router dinamik import va loader orqali sahifani
+chaqiradi, Angular da esa loadComponent va funksional guard ishlatiladi.
+
+12
+02:06.000 --> 02:13.470
+Bosh sahifa tezkor chiqishi uchun eager, qolgan ikkinchi
+darajali barcha sahifalar esa faqat URL ga kirilganda yuklanadi.
+
+13
+02:16.480 --> 02:27.840
+Tipik xatolar: sahifa public API sini chetlab o'tish, URL satrlarini komponentlar
+ichida hardcode qilish va feature lardan app/routes ga teskari import qilishdir.
+
+14
+02:27.950 --> 02:38.090
+Shuningdek, frontend dagi navigatsiya guardlari faqat foydalanuvchi qulayligi
+uchun, haqiqiy ma'lumot xavfsizligi esa har doim backend da tekshiriladi.
+
+15
+02:41.420 --> 02:52.120
+Xulosa: router konfiguratsiyasini app da, URL konstantalarini shared
+da saqlang va sahifalarni faqat public API orqali lazy yuklang.
+
+16
+02:52.530 --> 03:01.330
+Keyingi bobda FSD arxitekturasining React va Vite uchun ishlab
+chiqilgan tayyor ishlab chiqarish shablonini ko'rib chiqamiz. Rahmat!
