@@ -4,6 +4,14 @@
 
 ## Qisqacha
 
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/fsd/25-assetlar-va-i18n.jpg" src="/video/fsd/25-assetlar-va-i18n.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/fsd/25-assetlar-va-i18n.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/fsd/25-assetlar-va-i18n.uz.vtt">
+</video>
+<figcaption>Bob videoda: Assetlar, stillar va i18n — turi bo'yicha emas, ishlatilishi bo'yicha kod yonida joylashtirish, global va lokal tarjimalar.</figcaption>
+</figure>
+
 Assetlar (rasmlar, ikonkalar, shriftlar, PDF shablonlar) ham kod kabi joylashtiriladi: **turi bo'yicha emas, ishlatilishi bo'yicha**, ularni ishlatadigan kod yonida. Bitta sahifaning rasmi — o'sha sahifa `ui`'da; qayta ishlatiladigan ikonka — `shared/ui`; global stil va shriftlar — `app`. Umumiy `assets/` segmenti **tavsiya etilmaydi**.
 
 ## Qoida

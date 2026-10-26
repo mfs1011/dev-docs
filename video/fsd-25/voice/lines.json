@@ -1,0 +1,1628 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Salom! Bu FSD qo'llanmasining yigirma beshinchi bobi — Assetlar, stillar va i18n tizimi. Bugun rasmlar, ikonkalar, shriftlar, PDF shablonlar va ko'p tillilik sozlamalarini FSD da to'g'ri joylashtirishni o'rganamiz.",
+    "show": "Salom! Bu FSD qo'llanmasining yigirma beshinchi bobi — Assetlar, stillar va i18n tizimi. Bugun rasmlar, ikonkalar, shriftlar, PDF shablonlar va ko'p tillilik sozlamalarini FSD da to'g'ri joylashtirishni o'rganamiz.",
+    "say": "Salom! Bu Ef-es-di qo'llanmasining yigirma beshinchi bobi — Assetlar, stillar va ay-eytin-en tizimi. Bugun rasmlar, ikonkalar, shriftlar, PDF shablonlar va ko'p tillilik sozlamalarini Ef-es-di da to'g'ri joylashtirishni o'rganamiz.",
+    "a0": 0.18,
+    "a1": 15.85,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.18,
+        "e": 0.5
+      },
+      {
+        "w": "Bu",
+        "s": 0.9,
+        "e": 0.98
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 1.24,
+        "e": 1.66
+      },
+      {
+        "w": "qo'llanmasining",
+        "s": 1.74,
+        "e": 2.52
+      },
+      {
+        "w": "yigirma",
+        "s": 2.6,
+        "e": 2.94
+      },
+      {
+        "w": "beshinchi",
+        "s": 3.0,
+        "e": 3.46
+      },
+      {
+        "w": "bobi",
+        "s": 3.52,
+        "e": 3.78
+      },
+      {
+        "w": "—",
+        "s": 3.78,
+        "e": 3.78
+      },
+      {
+        "w": "Assetlar,",
+        "s": 4.22,
+        "e": 4.76
+      },
+      {
+        "w": "stillar",
+        "s": 5.04,
+        "e": 5.5
+      },
+      {
+        "w": "va",
+        "s": 5.62,
+        "e": 5.7
+      },
+      {
+        "w": "ay-eytin-en",
+        "s": 5.96,
+        "e": 6.82
+      },
+      {
+        "w": "tizimi.",
+        "s": 6.88,
+        "e": 7.2
+      },
+      {
+        "w": "Bugun",
+        "s": 8.11,
+        "e": 8.35
+      },
+      {
+        "w": "rasmlar,",
+        "s": 8.41,
+        "e": 8.93
+      },
+      {
+        "w": "ikonkalar,",
+        "s": 9.07,
+        "e": 9.67
+      },
+      {
+        "w": "shriftlar,",
+        "s": 9.89,
+        "e": 10.43
+      },
+      {
+        "w": "PDF",
+        "s": 10.69,
+        "e": 11.07
+      },
+      {
+        "w": "shablonlar",
+        "s": 11.13,
+        "e": 11.69
+      },
+      {
+        "w": "va",
+        "s": 11.77,
+        "e": 11.83
+      },
+      {
+        "w": "ko'p",
+        "s": 11.97,
+        "e": 12.19
+      },
+      {
+        "w": "tillilik",
+        "s": 12.25,
+        "e": 12.69
+      },
+      {
+        "w": "sozlamalarini",
+        "s": 12.73,
+        "e": 13.47
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 13.65,
+        "e": 14.05
+      },
+      {
+        "w": "da",
+        "s": 14.13,
+        "e": 14.21
+      },
+      {
+        "w": "to'g'ri",
+        "s": 14.35,
+        "e": 14.67
+      },
+      {
+        "w": "joylashtirishni",
+        "s": 14.69,
+        "e": 15.35
+      },
+      {
+        "w": "o'rganamiz.",
+        "s": 15.37,
+        "e": 15.85
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "intro",
+    "text": "Assetlar va stillar qaysi qatlamda turishi kerak? Asosiy qoida: turi bo'yicha emas, balki ishlatilishi bo'yicha!",
+    "show": "Assetlar va stillar qaysi qatlamda turishi kerak? Asosiy qoida: turi bo'yicha emas, balki ishlatilishi bo'yicha!",
+    "say": "Assetlar va stillar qaysi qatlamda turishi kerak? Asosiy qoida: turi bo'yicha emas, balki ishlatilishi bo'yicha!",
+    "a0": 16.63,
+    "a1": 23.64,
+    "words": [
+      {
+        "w": "Assetlar",
+        "s": 16.63,
+        "e": 17.07
+      },
+      {
+        "w": "va",
+        "s": 17.13,
+        "e": 17.19
+      },
+      {
+        "w": "stillar",
+        "s": 17.25,
+        "e": 17.67
+      },
+      {
+        "w": "qaysi",
+        "s": 17.77,
+        "e": 18.07
+      },
+      {
+        "w": "qatlamda",
+        "s": 18.13,
+        "e": 18.55
+      },
+      {
+        "w": "turishi",
+        "s": 18.59,
+        "e": 18.87
+      },
+      {
+        "w": "kerak?",
+        "s": 18.91,
+        "e": 19.19
+      },
+      {
+        "w": "Asosiy",
+        "s": 19.75,
+        "e": 20.13
+      },
+      {
+        "w": "qoida:",
+        "s": 20.21,
+        "e": 20.61
+      },
+      {
+        "w": "turi",
+        "s": 20.97,
+        "e": 21.19
+      },
+      {
+        "w": "bo'yicha",
+        "s": 21.23,
+        "e": 21.59
+      },
+      {
+        "w": "emas,",
+        "s": 21.65,
+        "e": 21.95
+      },
+      {
+        "w": "balki",
+        "s": 22.13,
+        "e": 22.45
+      },
+      {
+        "w": "ishlatilishi",
+        "s": 22.62,
+        "e": 23.24
+      },
+      {
+        "w": "bo'yicha!",
+        "s": 23.28,
+        "e": 23.64
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "oltin_qoida",
+    "text": "Ko'plab an'anaviy loyihalarda barcha rasm va ikonkalarni bitta umumiy assets papkasiga tiqib qo'yishadi. FSD da esa bu usul qat'iyan tavsiya etilmaydi.",
+    "show": "Ko'plab an'anaviy loyihalarda barcha rasm va ikonkalarni bitta umumiy assets papkasiga tiqib qo'yishadi. FSD da esa bu usul qat'iyan tavsiya etilmaydi.",
+    "say": "Ko'plab an'anaviy loyihalarda barcha rasm va ikonkalarni bitta umumiy assets papkasiga tiqib qo'yishadi. Ef-es-di da esa bu usul qat'iyan tavsiya etilmaydi.",
+    "a0": 24.8,
+    "a1": 34.22,
+    "words": [
+      {
+        "w": "Ko'plab",
+        "s": 24.8,
+        "e": 25.12
+      },
+      {
+        "w": "an'anaviy",
+        "s": 25.16,
+        "e": 25.58
+      },
+      {
+        "w": "loyihalarda",
+        "s": 25.64,
+        "e": 26.22
+      },
+      {
+        "w": "barcha",
+        "s": 26.32,
+        "e": 26.66
+      },
+      {
+        "w": "rasm",
+        "s": 26.72,
+        "e": 27.04
+      },
+      {
+        "w": "va",
+        "s": 27.1,
+        "e": 27.18
+      },
+      {
+        "w": "ikonkalarni",
+        "s": 27.24,
+        "e": 27.9
+      },
+      {
+        "w": "bitta",
+        "s": 28.0,
+        "e": 28.3
+      },
+      {
+        "w": "umumiy",
+        "s": 28.4,
+        "e": 28.8
+      },
+      {
+        "w": "assets",
+        "s": 29.08,
+        "e": 29.42
+      },
+      {
+        "w": "papkasiga",
+        "s": 29.46,
+        "e": 29.96
+      },
+      {
+        "w": "tiqib",
+        "s": 30.02,
+        "e": 30.22
+      },
+      {
+        "w": "qo'yishadi.",
+        "s": 30.26,
+        "e": 30.68
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 31.3,
+        "e": 31.66
+      },
+      {
+        "w": "da",
+        "s": 31.72,
+        "e": 31.8
+      },
+      {
+        "w": "esa",
+        "s": 31.88,
+        "e": 32.08
+      },
+      {
+        "w": "bu",
+        "s": 32.2,
+        "e": 32.28
+      },
+      {
+        "w": "usul",
+        "s": 32.42,
+        "e": 32.64
+      },
+      {
+        "w": "qat'iyan",
+        "s": 32.78,
+        "e": 33.32
+      },
+      {
+        "w": "tavsiya",
+        "s": 33.36,
+        "e": 33.7
+      },
+      {
+        "w": "etilmaydi.",
+        "s": 33.74,
+        "e": 34.22
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "oltin_qoida",
+    "text": "Asosiy tamoyil: asset qayerda ishlatilsa, aynan o'sha kod yonida turishi lozim. Masalan, faqat Bosh sahifaga tegishli banner pages/home/ui ichida saqlanadi.",
+    "show": "Asosiy tamoyil: asset qayerda ishlatilsa, aynan o'sha kod yonida turishi lozim. Masalan, faqat Bosh sahifaga tegishli banner pages/home/ui ichida saqlanadi.",
+    "say": "Asosiy tamoyil: asset qayerda ishlatilsa, aynan o'sha kod yonida turishi lozim. Masalan, faqat Bosh sahifaga tegishli banner peyjiz/home/yu-ay ichida saqlanadi.",
+    "a0": 35.12,
+    "a1": 46.21,
+    "words": [
+      {
+        "w": "Asosiy",
+        "s": 35.12,
+        "e": 35.44
+      },
+      {
+        "w": "tamoyil:",
+        "s": 35.5,
+        "e": 35.94
+      },
+      {
+        "w": "asset",
+        "s": 36.34,
+        "e": 36.66
+      },
+      {
+        "w": "qayerda",
+        "s": 36.74,
+        "e": 37.16
+      },
+      {
+        "w": "ishlatilsa,",
+        "s": 37.22,
+        "e": 37.77
+      },
+      {
+        "w": "aynan",
+        "s": 38.19,
+        "e": 38.53
+      },
+      {
+        "w": "o'sha",
+        "s": 38.69,
+        "e": 38.91
+      },
+      {
+        "w": "kod",
+        "s": 38.99,
+        "e": 39.17
+      },
+      {
+        "w": "yonida",
+        "s": 39.21,
+        "e": 39.53
+      },
+      {
+        "w": "turishi",
+        "s": 39.57,
+        "e": 39.83
+      },
+      {
+        "w": "lozim.",
+        "s": 39.89,
+        "e": 40.17
+      },
+      {
+        "w": "Masalan,",
+        "s": 40.73,
+        "e": 41.11
+      },
+      {
+        "w": "faqat",
+        "s": 41.59,
+        "e": 41.87
+      },
+      {
+        "w": "Bosh",
+        "s": 41.95,
+        "e": 42.13
+      },
+      {
+        "w": "sahifaga",
+        "s": 42.15,
+        "e": 42.61
+      },
+      {
+        "w": "tegishli",
+        "s": 42.65,
+        "e": 43.03
+      },
+      {
+        "w": "banner",
+        "s": 43.15,
+        "e": 43.51
+      },
+      {
+        "w": "peyjiz/home/yu-ay",
+        "s": 43.51,
+        "e": 45.41
+      },
+      {
+        "w": "ichida",
+        "s": 45.41,
+        "e": 45.65
+      },
+      {
+        "w": "saqlanadi.",
+        "s": 45.71,
+        "e": 46.21
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "oltin_qoida",
+    "text": "Agar rasm yoki ikonka bir nechta mustaqil joyda qayta ishlatilsa — u shared/ui papkasiga ko'chiriladi.",
+    "show": "Agar rasm yoki ikonka bir nechta mustaqil joyda qayta ishlatilsa — u shared/ui papkasiga ko'chiriladi.",
+    "say": "Agar rasm yoki ikonka bir nechta mustaqil joyda qayta ishlatilsa — u sherd/yu-ay papkasiga ko'chiriladi.",
+    "a0": 47.11,
+    "a1": 53.6,
+    "words": [
+      {
+        "w": "Agar",
+        "s": 47.11,
+        "e": 47.35
+      },
+      {
+        "w": "rasm",
+        "s": 47.41,
+        "e": 47.81
+      },
+      {
+        "w": "yoki",
+        "s": 47.83,
+        "e": 48.15
+      },
+      {
+        "w": "ikonka",
+        "s": 48.19,
+        "e": 48.57
+      },
+      {
+        "w": "bir",
+        "s": 48.65,
+        "e": 48.77
+      },
+      {
+        "w": "nechta",
+        "s": 48.81,
+        "e": 49.09
+      },
+      {
+        "w": "mustaqil",
+        "s": 49.15,
+        "e": 49.59
+      },
+      {
+        "w": "joyda",
+        "s": 49.63,
+        "e": 49.91
+      },
+      {
+        "w": "qayta",
+        "s": 50.03,
+        "e": 50.35
+      },
+      {
+        "w": "ishlatilsa",
+        "s": 50.39,
+        "e": 50.97
+      },
+      {
+        "w": "—",
+        "s": 50.97,
+        "e": 50.97
+      },
+      {
+        "w": "u",
+        "s": 51.41,
+        "e": 51.43
+      },
+      {
+        "w": "sherd/yu-ay",
+        "s": 51.43,
+        "e": 52.54
+      },
+      {
+        "w": "papkasiga",
+        "s": 52.54,
+        "e": 53.0
+      },
+      {
+        "w": "ko'chiriladi.",
+        "s": 53.04,
+        "e": 53.6
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "joylashuv_xaritasi",
+    "text": "Fayllar xaritasiga nazar solsak: Bosh sahifada hero nuqta jpg, billing modelida invoice-template nuqta pdf, shared da esa umumiy chevron svg ikonkalari turadi.",
+    "show": "Fayllar xaritasiga nazar solsak: Bosh sahifada hero nuqta jpg, billing modelida invoice-template nuqta pdf, shared da esa umumiy chevron svg ikonkalari turadi.",
+    "say": "Fayllar xaritasiga nazar solsak: Bosh sahifada xiro nuqta jey-peg, billing modelida invoys-templeyt nuqta pe-de-ef, sherd da esa umumiy shevron es-ve-ge ikonkalari turadi.",
+    "a0": 54.3,
+    "a1": 66.44,
+    "words": [
+      {
+        "w": "Fayllar",
+        "s": 54.3,
+        "e": 54.72
+      },
+      {
+        "w": "xaritasiga",
+        "s": 54.74,
+        "e": 55.26
+      },
+      {
+        "w": "nazar",
+        "s": 55.32,
+        "e": 55.6
+      },
+      {
+        "w": "solsak:",
+        "s": 55.66,
+        "e": 56.08
+      },
+      {
+        "w": "Bosh",
+        "s": 56.32,
+        "e": 56.56
+      },
+      {
+        "w": "sahifada",
+        "s": 56.6,
+        "e": 57.16
+      },
+      {
+        "w": "xiro",
+        "s": 57.52,
+        "e": 57.84
+      },
+      {
+        "w": "nuqta",
+        "s": 57.92,
+        "e": 58.26
+      },
+      {
+        "w": "jey-peg,",
+        "s": 58.52,
+        "e": 58.88
+      },
+      {
+        "w": "billing",
+        "s": 59.34,
+        "e": 59.66
+      },
+      {
+        "w": "modelida",
+        "s": 59.68,
+        "e": 60.12
+      },
+      {
+        "w": "invoys-templeyt",
+        "s": 60.5,
+        "e": 61.42
+      },
+      {
+        "w": "nuqta",
+        "s": 61.46,
+        "e": 61.76
+      },
+      {
+        "w": "pe-de-ef,",
+        "s": 61.9,
+        "e": 62.32
+      },
+      {
+        "w": "sherd",
+        "s": 62.84,
+        "e": 63.16
+      },
+      {
+        "w": "da",
+        "s": 63.18,
+        "e": 63.26
+      },
+      {
+        "w": "esa",
+        "s": 63.34,
+        "e": 63.52
+      },
+      {
+        "w": "umumiy",
+        "s": 63.9,
+        "e": 64.28
+      },
+      {
+        "w": "shevron",
+        "s": 64.56,
+        "e": 65.0
+      },
+      {
+        "w": "es-ve-ge",
+        "s": 65.12,
+        "e": 65.52
+      },
+      {
+        "w": "ikonkalari",
+        "s": 65.56,
+        "e": 66.12
+      },
+      {
+        "w": "turadi.",
+        "s": 66.14,
+        "e": 66.44
+      }
+    ]
+  },
+  {
+    "id": "L7",
+    "scene": "joylashuv_xaritasi",
+    "text": "Global stillar va reset qoidalari app/styles da, umumiy shriftlar esa app/fonts yoki public katalogida joylashadi.",
+    "show": "Global stillar va reset qoidalari app/styles da, umumiy shriftlar esa app/fonts yoki public katalogida joylashadi.",
+    "say": "Global stillar va reset qoidalari ep/styles da, umumiy shriftlar esa ep/fonts yoki public katalogida joylashadi.",
+    "a0": 67.08,
+    "a1": 75.21,
+    "words": [
+      {
+        "w": "Global",
+        "s": 67.08,
+        "e": 67.4
+      },
+      {
+        "w": "stillar",
+        "s": 67.48,
+        "e": 67.91
+      },
+      {
+        "w": "va",
+        "s": 67.99,
+        "e": 68.07
+      },
+      {
+        "w": "reset",
+        "s": 68.21,
+        "e": 68.53
+      },
+      {
+        "w": "qoidalari",
+        "s": 68.59,
+        "e": 69.15
+      },
+      {
+        "w": "ep/styles",
+        "s": 69.15,
+        "e": 70.45
+      },
+      {
+        "w": "da,",
+        "s": 70.45,
+        "e": 70.55
+      },
+      {
+        "w": "umumiy",
+        "s": 70.91,
+        "e": 71.19
+      },
+      {
+        "w": "shriftlar",
+        "s": 71.23,
+        "e": 71.63
+      },
+      {
+        "w": "esa",
+        "s": 71.69,
+        "e": 71.87
+      },
+      {
+        "w": "ep/fonts",
+        "s": 71.87,
+        "e": 73.13
+      },
+      {
+        "w": "yoki",
+        "s": 73.13,
+        "e": 73.49
+      },
+      {
+        "w": "public",
+        "s": 73.73,
+        "e": 74.09
+      },
+      {
+        "w": "katalogida",
+        "s": 74.11,
+        "e": 74.63
+      },
+      {
+        "w": "joylashadi.",
+        "s": 74.69,
+        "e": 75.21
+      }
+    ]
+  },
+  {
+    "id": "L8",
+    "scene": "i18n_arxitekturasi",
+    "text": "Ko'p tillilik, ya'ni i18n tizimi ham qatlamlarga bo'linadi. Kutubxona sozlamasi va barcha uchun umumiy satrlar shared/i18n da saqlanadi.",
+    "show": "Ko'p tillilik, ya'ni i18n tizimi ham qatlamlarga bo'linadi. Kutubxona sozlamasi va barcha uchun umumiy satrlar shared/i18n da saqlanadi.",
+    "say": "Ko'p tillilik, ya'ni ay-eytin-en tizimi ham qatlamlarga bo'linadi. Kutubxona sozlamasi va barcha uchun umumiy satrlar sherd/ay-eytin-en da saqlanadi.",
+    "a0": 76.13,
+    "a1": 86.12,
+    "words": [
+      {
+        "w": "Ko'p",
+        "s": 76.13,
+        "e": 76.31
+      },
+      {
+        "w": "tillilik,",
+        "s": 76.37,
+        "e": 76.87
+      },
+      {
+        "w": "ya'ni",
+        "s": 77.11,
+        "e": 77.39
+      },
+      {
+        "w": "ay-eytin-en",
+        "s": 77.63,
+        "e": 78.53
+      },
+      {
+        "w": "tizimi",
+        "s": 78.57,
+        "e": 78.87
+      },
+      {
+        "w": "ham",
+        "s": 78.91,
+        "e": 79.05
+      },
+      {
+        "w": "qatlamlarga",
+        "s": 79.15,
+        "e": 79.77
+      },
+      {
+        "w": "bo'linadi.",
+        "s": 79.81,
+        "e": 80.23
+      },
+      {
+        "w": "Kutubxona",
+        "s": 81.01,
+        "e": 81.39
+      },
+      {
+        "w": "sozlamasi",
+        "s": 81.43,
+        "e": 82.05
+      },
+      {
+        "w": "va",
+        "s": 82.15,
+        "e": 82.21
+      },
+      {
+        "w": "barcha",
+        "s": 82.31,
+        "e": 82.58
+      },
+      {
+        "w": "uchun",
+        "s": 82.64,
+        "e": 82.86
+      },
+      {
+        "w": "umumiy",
+        "s": 82.96,
+        "e": 83.3
+      },
+      {
+        "w": "satrlar",
+        "s": 83.38,
+        "e": 83.9
+      },
+      {
+        "w": "sherd/ay-eytin-en",
+        "s": 83.9,
+        "e": 85.5
+      },
+      {
+        "w": "da",
+        "s": 85.5,
+        "e": 85.58
+      },
+      {
+        "w": "saqlanadi.",
+        "s": 85.62,
+        "e": 86.12
+      }
+    ]
+  },
+  {
+    "id": "L9",
+    "scene": "i18n_arxitekturasi",
+    "text": "Sahifaga xos maxsus tarjimalar esa o'sha sahifa ichida, masalan pages/checkout/i18n papkasida joylashtirilib, sahifa ochilgandagina lazy usulda yuklanadi.",
+    "show": "Sahifaga xos maxsus tarjimalar esa o'sha sahifa ichida, masalan pages/checkout/i18n papkasida joylashtirilib, sahifa ochilgandagina lazy usulda yuklanadi.",
+    "say": "Sahifaga xos maxsus tarjimalar esa o'sha sahifa ichida, masalan peyjiz/checkout/ay-eytin-en papkasida joylashtirilib, sahifa ochilgandagina leyzi usulda yuklanadi.",
+    "a0": 86.96,
+    "a1": 97.87,
+    "words": [
+      {
+        "w": "Sahifaga",
+        "s": 86.96,
+        "e": 87.38
+      },
+      {
+        "w": "xos",
+        "s": 87.44,
+        "e": 87.64
+      },
+      {
+        "w": "maxsus",
+        "s": 87.72,
+        "e": 88.1
+      },
+      {
+        "w": "tarjimalar",
+        "s": 88.12,
+        "e": 88.66
+      },
+      {
+        "w": "esa",
+        "s": 88.7,
+        "e": 88.88
+      },
+      {
+        "w": "o'sha",
+        "s": 89.22,
+        "e": 89.42
+      },
+      {
+        "w": "sahifa",
+        "s": 89.5,
+        "e": 89.86
+      },
+      {
+        "w": "ichida,",
+        "s": 90.02,
+        "e": 90.3
+      },
+      {
+        "w": "masalan",
+        "s": 90.56,
+        "e": 90.94
+      },
+      {
+        "w": "peyjiz/checkout/ay-eytin-en",
+        "s": 90.94,
+        "e": 93.5
+      },
+      {
+        "w": "papkasida",
+        "s": 93.5,
+        "e": 93.96
+      },
+      {
+        "w": "joylashtirilib,",
+        "s": 94.02,
+        "e": 94.66
+      },
+      {
+        "w": "sahifa",
+        "s": 94.98,
+        "e": 95.38
+      },
+      {
+        "w": "ochilgandagina",
+        "s": 95.54,
+        "e": 96.4
+      },
+      {
+        "w": "leyzi",
+        "s": 96.68,
+        "e": 96.94
+      },
+      {
+        "w": "usulda",
+        "s": 97.0,
+        "e": 97.34
+      },
+      {
+        "w": "yuklanadi.",
+        "s": 97.38,
+        "e": 97.87
+      }
+    ]
+  },
+  {
+    "id": "L10",
+    "scene": "i18n_arxitekturasi",
+    "text": "I18n provayderi esa butun ilovani o'rab turishi uchun eng yuqoridagi app/providers qatlamida ulanadi.",
+    "show": "I18n provayderi esa butun ilovani o'rab turishi uchun eng yuqoridagi app/providers qatlamida ulanadi.",
+    "say": "Ay-eytin-en provayderi esa butun ilovani o'rab turishi uchun eng yuqoridagi ep/providers qatlamida ulanadi.",
+    "a0": 98.89,
+    "a1": 105.51,
+    "words": [
+      {
+        "w": "Ay-eytin-en",
+        "s": 98.89,
+        "e": 99.53
+      },
+      {
+        "w": "provayderi",
+        "s": 99.57,
+        "e": 100.07
+      },
+      {
+        "w": "esa",
+        "s": 100.11,
+        "e": 100.31
+      },
+      {
+        "w": "butun",
+        "s": 100.39,
+        "e": 100.69
+      },
+      {
+        "w": "ilovani",
+        "s": 100.77,
+        "e": 101.19
+      },
+      {
+        "w": "o'rab",
+        "s": 101.31,
+        "e": 101.53
+      },
+      {
+        "w": "turishi",
+        "s": 101.57,
+        "e": 101.87
+      },
+      {
+        "w": "uchun",
+        "s": 101.93,
+        "e": 102.15
+      },
+      {
+        "w": "eng",
+        "s": 102.53,
+        "e": 102.65
+      },
+      {
+        "w": "yuqoridagi",
+        "s": 102.69,
+        "e": 103.33
+      },
+      {
+        "w": "ep/providers",
+        "s": 103.33,
+        "e": 104.65
+      },
+      {
+        "w": "qatlamida",
+        "s": 104.65,
+        "e": 105.07
+      },
+      {
+        "w": "ulanadi.",
+        "s": 105.11,
+        "e": 105.51
+      }
+    ]
+  },
+  {
+    "id": "L11",
+    "scene": "kod_va_import",
+    "text": "Komponentlarda rasmlar to'g'ridan-to'g'ri nisbiy yo'l orqali import qilinadi: masalan, import heroUrl from './hero.jpg'.",
+    "show": "Komponentlarda rasmlar to'g'ridan-to'g'ri nisbiy yo'l orqali import qilinadi: masalan, import heroUrl from './hero.jpg'.",
+    "say": "Komponentlarda rasmlar to'g'ridan-to'g'ri nisbiy yo'l orqali import qilinadi: masalan, import heroUrl from './hero.jpg'.",
+    "a0": 106.07,
+    "a1": 115.88,
+    "words": [
+      {
+        "w": "Komponentlarda",
+        "s": 106.07,
+        "e": 106.83
+      },
+      {
+        "w": "rasmlar",
+        "s": 106.91,
+        "e": 107.39
+      },
+      {
+        "w": "to'g'ridan-to'g'ri",
+        "s": 107.47,
+        "e": 108.29
+      },
+      {
+        "w": "nisbiy",
+        "s": 108.37,
+        "e": 108.69
+      },
+      {
+        "w": "yo'l",
+        "s": 108.75,
+        "e": 108.93
+      },
+      {
+        "w": "orqali",
+        "s": 108.99,
+        "e": 109.31
+      },
+      {
+        "w": "import",
+        "s": 109.41,
+        "e": 109.65
+      },
+      {
+        "w": "qilinadi:",
+        "s": 109.69,
+        "e": 110.09
+      },
+      {
+        "w": "masalan,",
+        "s": 110.51,
+        "e": 110.89
+      },
+      {
+        "w": "import",
+        "s": 111.29,
+        "e": 111.67
+      },
+      {
+        "w": "heroUrl",
+        "s": 111.87,
+        "e": 112.56
+      },
+      {
+        "w": "from",
+        "s": 112.6,
+        "e": 112.86
+      },
+      {
+        "w": "'./hero.jpg'.",
+        "s": 112.86,
+        "e": 115.88
+      }
+    ]
+  },
+  {
+    "id": "L12",
+    "scene": "kod_va_import",
+    "text": "Angular loyihalarida esa slice rasmlari angular.json dagi assets glob orqali yoki esbuild file loader vositasida build natijasiga nusxalanadi.",
+    "show": "Angular loyihalarida esa slice rasmlari angular.json dagi assets glob orqali yoki esbuild file loader vositasida build natijasiga nusxalanadi.",
+    "say": "Angular loyihalarida esa slays rasmlari angular nuqta jeyson dagi assets glob orqali yoki es-bild fayl loudir vositasida build natijasiga nusxalanadi.",
+    "a0": 115.88,
+    "a1": 125.58,
+    "words": [
+      {
+        "w": "Angular",
+        "s": 115.88,
+        "e": 116.24
+      },
+      {
+        "w": "loyihalarida",
+        "s": 116.3,
+        "e": 116.84
+      },
+      {
+        "w": "esa",
+        "s": 116.9,
+        "e": 117.08
+      },
+      {
+        "w": "slays",
+        "s": 117.14,
+        "e": 117.4
+      },
+      {
+        "w": "rasmlari",
+        "s": 117.48,
+        "e": 118.0
+      },
+      {
+        "w": "angular",
+        "s": 118.22,
+        "e": 118.6
+      },
+      {
+        "w": "nuqta",
+        "s": 118.66,
+        "e": 118.9
+      },
+      {
+        "w": "jeyson",
+        "s": 118.98,
+        "e": 119.34
+      },
+      {
+        "w": "dagi",
+        "s": 119.38,
+        "e": 119.6
+      },
+      {
+        "w": "assets",
+        "s": 120.02,
+        "e": 120.32
+      },
+      {
+        "w": "glob",
+        "s": 120.38,
+        "e": 120.64
+      },
+      {
+        "w": "orqali",
+        "s": 120.72,
+        "e": 121.06
+      },
+      {
+        "w": "yoki",
+        "s": 121.36,
+        "e": 121.62
+      },
+      {
+        "w": "es-bild",
+        "s": 122.1,
+        "e": 122.52
+      },
+      {
+        "w": "fayl",
+        "s": 122.62,
+        "e": 122.88
+      },
+      {
+        "w": "loudir",
+        "s": 122.96,
+        "e": 123.22
+      },
+      {
+        "w": "vositasida",
+        "s": 123.26,
+        "e": 123.88
+      },
+      {
+        "w": "build",
+        "s": 124.12,
+        "e": 124.34
+      },
+      {
+        "w": "natijasiga",
+        "s": 124.38,
+        "e": 124.92
+      },
+      {
+        "w": "nusxalanadi.",
+        "s": 124.98,
+        "e": 125.58
+      }
+    ]
+  },
+  {
+    "id": "L13",
+    "scene": "tipik_xatolar",
+    "text": "Tipik xatolar: barcha rasmlarni bitta src/assets ga jamlash, sahifa stillarini app/styles ga tiqish va barcha tarjimalarni bitta ulkan faylda saqlashdir.",
+    "show": "Tipik xatolar: barcha rasmlarni bitta src/assets ga jamlash, sahifa stillarini app/styles ga tiqish va barcha tarjimalarni bitta ulkan faylda saqlashdir.",
+    "say": "Tipik xatolar: barcha rasmlarni bitta es-er-si assets ga jamlash, sahifa stillarini ep/styles ga tiqish va barcha tarjimalarni bitta ulkan faylda saqlashdir.",
+    "a0": 126.12,
+    "a1": 136.85,
+    "words": [
+      {
+        "w": "Tipik",
+        "s": 126.12,
+        "e": 126.42
+      },
+      {
+        "w": "xatolar:",
+        "s": 126.48,
+        "e": 126.94
+      },
+      {
+        "w": "barcha",
+        "s": 127.32,
+        "e": 127.61
+      },
+      {
+        "w": "rasmlarni",
+        "s": 127.65,
+        "e": 128.19
+      },
+      {
+        "w": "bitta",
+        "s": 128.27,
+        "e": 128.59
+      },
+      {
+        "w": "es-er-si",
+        "s": 128.83,
+        "e": 129.29
+      },
+      {
+        "w": "assets",
+        "s": 129.51,
+        "e": 129.81
+      },
+      {
+        "w": "ga",
+        "s": 129.85,
+        "e": 129.91
+      },
+      {
+        "w": "jamlash,",
+        "s": 129.97,
+        "e": 130.37
+      },
+      {
+        "w": "sahifa",
+        "s": 130.81,
+        "e": 131.13
+      },
+      {
+        "w": "stillarini",
+        "s": 131.21,
+        "e": 131.75
+      },
+      {
+        "w": "ep/styles",
+        "s": 131.75,
+        "e": 132.83
+      },
+      {
+        "w": "ga",
+        "s": 132.83,
+        "e": 132.91
+      },
+      {
+        "w": "tiqish",
+        "s": 132.95,
+        "e": 133.25
+      },
+      {
+        "w": "va",
+        "s": 133.57,
+        "e": 133.65
+      },
+      {
+        "w": "barcha",
+        "s": 133.75,
+        "e": 134.05
+      },
+      {
+        "w": "tarjimalarni",
+        "s": 134.09,
+        "e": 134.73
+      },
+      {
+        "w": "bitta",
+        "s": 135.07,
+        "e": 135.39
+      },
+      {
+        "w": "ulkan",
+        "s": 135.55,
+        "e": 135.89
+      },
+      {
+        "w": "faylda",
+        "s": 135.97,
+        "e": 136.29
+      },
+      {
+        "w": "saqlashdir.",
+        "s": 136.35,
+        "e": 136.85
+      }
+    ]
+  },
+  {
+    "id": "L14",
+    "scene": "tipik_xatolar",
+    "text": "Markazlashtirilgan katta assets papkasi vaqt o'tishi bilan o'lik fayllar qabristoniga aylanadi, chunki ularni qaysi sahifa ishlatishini aniqlash qiyinlashadi.",
+    "show": "Markazlashtirilgan katta assets papkasi vaqt o'tishi bilan o'lik fayllar qabristoniga aylanadi, chunki ularni qaysi sahifa ishlatishini aniqlash qiyinlashadi.",
+    "say": "Markazlashtirilgan katta assets papkasi vaqt o'tishi bilan o'lik fayllar qabristoniga aylanadi, chunki ularni qaysi sahifa ishlatishini aniqlash qiyinlashadi.",
+    "a0": 137.49,
+    "a1": 147.66,
+    "words": [
+      {
+        "w": "Markazlashtirilgan",
+        "s": 137.49,
+        "e": 138.51
+      },
+      {
+        "w": "katta",
+        "s": 138.63,
+        "e": 139.03
+      },
+      {
+        "w": "assets",
+        "s": 139.23,
+        "e": 139.59
+      },
+      {
+        "w": "papkasi",
+        "s": 139.63,
+        "e": 140.11
+      },
+      {
+        "w": "vaqt",
+        "s": 140.51,
+        "e": 140.75
+      },
+      {
+        "w": "o'tishi",
+        "s": 140.81,
+        "e": 141.07
+      },
+      {
+        "w": "bilan",
+        "s": 141.11,
+        "e": 141.39
+      },
+      {
+        "w": "o'lik",
+        "s": 141.61,
+        "e": 141.87
+      },
+      {
+        "w": "fayllar",
+        "s": 141.95,
+        "e": 142.41
+      },
+      {
+        "w": "qabristoniga",
+        "s": 142.47,
+        "e": 143.1
+      },
+      {
+        "w": "aylanadi,",
+        "s": 143.14,
+        "e": 143.56
+      },
+      {
+        "w": "chunki",
+        "s": 143.96,
+        "e": 144.24
+      },
+      {
+        "w": "ularni",
+        "s": 144.34,
+        "e": 144.74
+      },
+      {
+        "w": "qaysi",
+        "s": 144.98,
+        "e": 145.3
+      },
+      {
+        "w": "sahifa",
+        "s": 145.34,
+        "e": 145.74
+      },
+      {
+        "w": "ishlatishini",
+        "s": 145.8,
+        "e": 146.28
+      },
+      {
+        "w": "aniqlash",
+        "s": 146.4,
+        "e": 146.92
+      },
+      {
+        "w": "qiyinlashadi.",
+        "s": 147.0,
+        "e": 147.66
+      }
+    ]
+  },
+  {
+    "id": "L15",
+    "scene": "xulosa",
+    "text": "Xulosa: assetlarni ularni ishlatadigan kod yonida saqlang, global stillarni app qatlamiga bering, i18n ni esa shared va slice larda taqsimlang.",
+    "show": "Xulosa: assetlarni ularni ishlatadigan kod yonida saqlang, global stillarni app qatlamiga bering, i18n ni esa shared va slice larda taqsimlang.",
+    "say": "Xulosa: assetlarni ularni ishlatadigan kod yonida saqlang, global stillarni ep qatlamiga bering, ay-eytin-en ni esa sherd va slays larda taqsimlang.",
+    "a0": 148.34,
+    "a1": 158.91,
+    "words": [
+      {
+        "w": "Xulosa:",
+        "s": 148.34,
+        "e": 148.74
+      },
+      {
+        "w": "assetlarni",
+        "s": 149.42,
+        "e": 150.08
+      },
+      {
+        "w": "ularni",
+        "s": 150.28,
+        "e": 150.58
+      },
+      {
+        "w": "ishlatadigan",
+        "s": 150.66,
+        "e": 151.32
+      },
+      {
+        "w": "kod",
+        "s": 151.44,
+        "e": 151.66
+      },
+      {
+        "w": "yonida",
+        "s": 151.68,
+        "e": 152.1
+      },
+      {
+        "w": "saqlang,",
+        "s": 152.16,
+        "e": 152.56
+      },
+      {
+        "w": "global",
+        "s": 153.1,
+        "e": 153.46
+      },
+      {
+        "w": "stillarni",
+        "s": 153.52,
+        "e": 154.06
+      },
+      {
+        "w": "ep",
+        "s": 154.34,
+        "e": 154.46
+      },
+      {
+        "w": "qatlamiga",
+        "s": 154.52,
+        "e": 154.99
+      },
+      {
+        "w": "bering,",
+        "s": 155.03,
+        "e": 155.33
+      },
+      {
+        "w": "ay-eytin-en",
+        "s": 155.77,
+        "e": 156.57
+      },
+      {
+        "w": "ni",
+        "s": 156.61,
+        "e": 156.67
+      },
+      {
+        "w": "esa",
+        "s": 156.71,
+        "e": 156.93
+      },
+      {
+        "w": "sherd",
+        "s": 157.21,
+        "e": 157.53
+      },
+      {
+        "w": "va",
+        "s": 157.59,
+        "e": 157.65
+      },
+      {
+        "w": "slays",
+        "s": 157.75,
+        "e": 158.07
+      },
+      {
+        "w": "larda",
+        "s": 158.13,
+        "e": 158.35
+      },
+      {
+        "w": "taqsimlang.",
+        "s": 158.39,
+        "e": 158.91
+      }
+    ]
+  },
+  {
+    "id": "L16",
+    "scene": "xulosa",
+    "text": "Keyingi bobda FSD arxitekturasida marshrutlash va sahifalarni lazy loading qilish strategiyalarini batafsil o'rganamiz. Rahmat!",
+    "show": "Keyingi bobda FSD arxitekturasida marshrutlash va sahifalarni lazy loading qilish strategiyalarini batafsil o'rganamiz. Rahmat!",
+    "say": "Keyingi bobda Ef-es-di arxitekturasida marshrutlash va sahifalarni leyzi louding qilish strategiyalarini batafsil o'rganamiz. Rahmat!",
+    "a0": 159.51,
+    "a1": 168.58,
+    "words": [
+      {
+        "w": "Keyingi",
+        "s": 159.51,
+        "e": 159.89
+      },
+      {
+        "w": "bobda",
+        "s": 159.95,
+        "e": 160.31
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 160.55,
+        "e": 160.93
+      },
+      {
+        "w": "arxitekturasida",
+        "s": 161.01,
+        "e": 161.85
+      },
+      {
+        "w": "marshrutlash",
+        "s": 162.11,
+        "e": 162.87
+      },
+      {
+        "w": "va",
+        "s": 163.19,
+        "e": 163.27
+      },
+      {
+        "w": "sahifalarni",
+        "s": 163.43,
+        "e": 164.13
+      },
+      {
+        "w": "leyzi",
+        "s": 164.42,
+        "e": 164.74
+      },
+      {
+        "w": "louding",
+        "s": 164.82,
+        "e": 165.2
+      },
+      {
+        "w": "qilish",
+        "s": 165.22,
+        "e": 165.44
+      },
+      {
+        "w": "strategiyalarini",
+        "s": 165.48,
+        "e": 166.26
+      },
+      {
+        "w": "batafsil",
+        "s": 166.56,
+        "e": 167.02
+      },
+      {
+        "w": "o'rganamiz.",
+        "s": 167.06,
+        "e": 167.54
+      },
+      {
+        "w": "Rahmat!",
+        "s": 168.22,
+        "e": 168.58
+      }
+    ]
+  }
+]
