@@ -1,0 +1,81 @@
+WEBVTT
+
+1
+00:01.420 --> 00:10.860
+Salom! Bu FSD qo'llanmasining o'ttiz uchinchi bobi — FSD ning
+rasmiy arxitektura linteri Steiger haqida to'liq amaliy qo'llanma.
+
+2
+00:12.130 --> 00:20.580
+Qoidalar faqat kelishuvda qolsa, loyiha bir oyda buziladi; Steiger
+ularni tekshirishni CI tizimida majburiy va qat'iy qiladi.
+
+3
+00:22.370 --> 00:30.810
+Steiger va uning rasmiy plaginini o'rnatib, src papkasi ustida
+oddiy buyruq bilan bir marta yoki watch rejimida yurgizish mumkin.
+
+4
+00:30.820 --> 00:39.530
+Fiks bayrog'i yetishmayotgan public API larni avtomatik tuzatadi,
+reporter jeyson esa CI uchun mashina tushunadigan hisobot beradi.
+
+5
+00:39.620 --> 00:47.480
+Agar bitta xato topilsa ham, Steiger birinchi chiqish kodi
+bilan tugaydi va CI da nosoz pull requestni darhol to'xtatadi.
+
+6
+00:50.370 --> 00:57.940
+Tavsiya etilgan to'plamdagi o'n yetti qoida yuqoriga import,
+cross-import va public API ni chetlab o'tishni to'liq ushlaydi.
+
+7
+00:58.090 --> 01:05.870
+Segments-by-purpose qoidasi esa components, utils yoki
+services kabi eski tur nomlarini keskin taqiqlaydi.
+
+8
+01:08.760 --> 01:16.090
+Loyiha ildizidagi stayger konfig faylida qoidalarga ESLint
+flat konfig kabi fayllar bo'yicha istisno berish mumkin.
+
+9
+01:16.020 --> 01:24.440
+Masalan, app qatlamidagi providers papkasi yoki Next.js dagi pastki
+chiziqli qatlamlar uchun qoidani asoslangan holda o'chiramiz.
+
+10
+01:27.470 --> 01:34.540
+GitHub Actions da lint fsd skripti npm ci dan so'ng
+darhol ishga tushib, kod sifatini nazorat qiladi.
+
+11
+01:34.720 --> 01:42.490
+Katta loyihalarga kiritishda avval ignore-warnings bilan faqat
+xatolarni ko'rib, bosqichma-bosqich bartaraf etish tavsiya qilinadi.
+
+12
+01:45.480 --> 01:54.220
+Tipik xatolar — Steigerni faqat lokalda ushlab, CI ga qo'shmaslik va
+xatolarni tahlil qilmasdan qoidalarni shunchaki o'chirib tashlashdir.
+
+13
+01:54.230 --> 02:01.360
+Shuningdek, te-es-konfig da et aliasi noto'g'ri sozlansa,
+Steiger importlarni topolmay, soxta xatolar chiqaradi.
+
+14
+02:04.250 --> 02:12.270
+Xulosa: Steiger — jamoada FSD intizomini saqlash va arxitektura
+buzilishining oldini olish uchun eng ishonchli vositadir.
+
+15
+02:12.380 --> 02:19.210
+Keyingi o'ttiz to'rtinchi bobda ESLint, TypeScript va aliaslar
+sozlamalarini Steiger bilan birga integratsiya qilamiz.
+
+16
+02:19.350 --> 02:24.530
+E'tiboringiz uchun rahmat, FSD arxitekturasini
+mustahkam o'rganishda davom eting!

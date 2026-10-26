@@ -4,6 +4,14 @@
 
 ## Qisqacha
 
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/fsd/33-steiger.jpg" src="/video/fsd/33-steiger.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/fsd/33-steiger.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/fsd/33-steiger.uz.vtt">
+</video>
+<figcaption>Bob videoda: Steiger linteri — 17 ta qat'iy FSD qoidasi, CLI bayroqlari, steiger.config.ts istisnolari va CI integratsiyasi.</figcaption>
+</figure>
+
 **Steiger** — FSD'ning rasmiy arxitektura linteri. U papka tuzilmasini va importlarni o'qib, FSD qoidalari buzilganini topadi: yuqoriga import, cross-import, public API'ni chetlab o'tish, noto'g'ri segment nomlari, bir marta ishlatilgan slice'lar. FSD qoidalari faqat kelishuvda qolsa — bir oyda buziladi; Steiger ularni CI'da majburiy qiladi. Bu bobdagi hamma xabar va raqam **steiger 0.7.0 + @feature-sliced/steiger-plugin 0.8.0** bilan real loyihalarda olingan.
 
 ## Qoida: o'rnatish va ishga tushirish
