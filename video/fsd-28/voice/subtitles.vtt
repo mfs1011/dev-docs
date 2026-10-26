@@ -1,0 +1,81 @@
+WEBVTT
+
+1
+00:01.420 --> 00:17.320
+Salom! Bu FSD qo'llanmasining yigirma sakkizinchi bobi — Next.js va App Router uchun ishlab chiqarish shabloni.
+Bugun Next.js 16, server komponentlari va Turbopack muhitida FSD qatlamlarini to'g'ri tashkil etishni o'rganamiz.
+
+2
+00:18.290 --> 00:26.850
+Next.js ning fayl asosidagi marshrutlash tizimi FSD qatlam nomlari bilan
+to'qnashadi, lekin buni hal qilishning juda oson rasmiy usuli bor.
+
+3
+00:28.740 --> 00:37.050
+Next.js loyiha ildizidagi app va pages kataloglarini router
+uchun band qiladi. FSD da esa bu nomlar asosiy qatlamlardir.
+
+4
+00:37.360 --> 00:46.760
+Rasmiy yechim quyidagicha: ildizdagi app katalogi faqat re-export
+vazifasini bajaradi, butun dastur kodi esa src papkasida yashaydi.
+
+5
+00:46.910 --> 00:55.300
+Nomlar chalkashmasligi uchun src ichida app va pages
+qatlamlari tag chiziq bilan _app va _pages deb nomlanadi.
+
+6
+00:58.310 --> 01:07.790
+Steiger linteri _app va _pages nomlarini xato deb hisoblamasligi
+uchun steiger konfig faylida typo-in-layer-name qoidasi o'chiriladi.
+
+7
+01:07.920 --> 01:16.520
+Muhimi, linter boshqa barcha FSD qoidalarini, jumladan qatlamlar
+ierarxiyasi va taqiqlangan kross-importlarni to'liq nazorat qiladi.
+
+8
+01:19.690 --> 01:28.560
+Ildizdagi app page nuqta te-iks sahifa kodi va metama'lumotlarni
+_pages home dan olib to'g'ridan-to'g'ri re-export qiladi.
+
+9
+01:29.070 --> 01:36.090
+Next 16 versiyasida eski middleware o'rniga proxy nuqta
+te-es kiritilgan bo'lib, u loyiha ildizida joylashadi.
+
+10
+01:36.160 --> 01:43.070
+Shuningdek, dinamik marshrutlarda sahifa parametrlari endilikda
+Promise ko'rinishida keladi va await orqali o'qiladi.
+
+11
+01:46.280 --> 01:54.620
+Server komponentlari xavfsizligi uchun maxsus server-only funksiyalar
+slice ichida index nuqta server nuqta te-es faylida eksport qilinadi.
+
+12
+01:54.750 --> 02:02.420
+Klient komponentlar esa umumiy index nuqta te-es dan foydalanadi, bu
+esa maxfiy server kodining brauzerga sizib chiqishini to'xtatadi.
+
+13
+02:05.510 --> 02:13.710
+Eng katta xato — ildizdagi app page nuqta te-iks ichiga yuzlab
+qator komponent kodini yozib, FSD nazoratidan chiqib ketishdir.
+
+14
+02:13.920 --> 02:24.380
+Yana bir xato — tsconfig da et belgisini src ga yo'naltirmaslik
+yoki server kodlarini klient public API siga aralashtirishdir.
+
+15
+02:28.130 --> 02:41.670
+Xulosa: Next.js ildizini faqat re-export uchun qoldiring, kodni _app va
+_pages orqali modullashtiring hamda server chegaralarini qat'iy saqlang.
+
+16
+02:42.420 --> 02:50.390
+Keyingi bobda Vue 3 va Vite uchun FSD ishlab
+chiqarish shablonini batafsil tahlil qilamiz. Rahmat!
