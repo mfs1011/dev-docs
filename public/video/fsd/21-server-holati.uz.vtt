@@ -1,0 +1,81 @@
+WEBVTT
+
+1
+00:01.420 --> 00:16.880
+Salom! Bu FSD qo'llanmasining yigirma birinchi bobi — Server holati va kesh boshqaruvi. Bugun TanStack Query, Pinia Colada
+yoki Angular resurslari bilan ishlashda kesh kalitlari va so'rovlarni qatlamlarda qanday joylashtirishni ko'rib chiqamiz.
+
+2
+00:17.970 --> 00:26.210
+Serverdan kelgan ma'lumotlar oddiy holat emas, u keshlanishi,
+yangilanishi va aniq boshqarilishi lozim bo'lgan server holatidir.
+
+3
+00:28.140 --> 00:35.810
+Eng muhim qoida: kesh kalitlarini har bir komponentda qo'lda
+yozmasdan, query factory orqali iyerarxik daraxt ko'rinishida tuzing.
+
+4
+00:35.940 --> 00:45.940
+Masalan, shared/api yoki entities ichidagi queries katalogida all,
+lists, list va detail metodlarini bitta zavodga birlashtiring.
+
+5
+00:48.990 --> 00:57.120
+Bunday iyerarxiya keshni nozik boshqarish imkonini beradi: all
+kaliti butun resursni, lists esa faqat ro'yxat keshini yangilaydi.
+
+6
+00:57.390 --> 01:04.970
+Bitta mahsulot yangilanganda butun ilovani qayta yuklash shart
+emas, faqat tegishli query kalitini invalidate qilish kifoya.
+
+7
+01:05.260 --> 01:10.070
+Bu tarmoq trafigini keskin kamaytirib, ilova
+tezligini sezilarli darajada oshiradi.
+
+8
+01:13.080 --> 01:20.520
+Mutatsiyalarni query factory bilan aralashtirmang! Yaratish,
+yangilash yoki o'chirish harakatlari o'ziga xos mantiqqa ega.
+
+9
+01:20.730 --> 01:28.260
+Mutatsiya hook'i yoki funksiyasi aynan u ishlatiladigan
+joyda — sahifa yoki feature'ning api segmentida saqlanadi.
+
+10
+01:28.450 --> 01:33.850
+Va uning onSuccess hodisasida markaziy query
+factory kaliti orqali kesh yangilanadi.
+
+11
+01:36.800 --> 01:44.750
+QueryClient instance'i ilovada faqat bitta bo'lishi shart va u
+app/providers qatlamida yaratilib, butun daraxtga ulash lozim.
+
+12
+01:44.880 --> 01:50.860
+Slicelar ichida yangi QueryClient yaratish har xil
+keshlar va sinxronizatsiya buzilishlariga olib keladi.
+
+13
+01:51.070 --> 01:58.620
+Shuningdek, server ma'lumotlarini Redux yoki Pinia'ga qo'shimcha
+nusxalab o'tirmang — keshning o'zi yagona haqiqat manbaidir.
+
+14
+02:01.590 --> 02:10.210
+Tipik xatolar: kalit satrlarini har joyda qo'lda yozish, keshni qo'lda
+setState bilan yangilash yoki mutatsiyani noto'g'ri joylashtirish.
+
+15
+02:10.360 --> 02:16.130
+Query factory va toza FSD qoidalari orqali
+kesh chalkashliklaridan butunlay qutulasiz.
+
+16
+02:19.140 --> 02:33.410
+Xulosa: kalitlarni query factory'ga yig'ing, mutatsiyani slice api'sida tuting va QueryClient'ni
+faqat app'da ishga tushiring. Keyingi bobda Autentifikatsiya arxitekturasini o'rganamiz. Rahmat!
