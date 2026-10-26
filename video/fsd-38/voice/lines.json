@@ -1,0 +1,1483 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Salom! Bu FSD qo'llanmasining o'ttiz sakkizinchi bobi — pull requestlarni ko'rib chiqishda FSD arxitekturasini tekshirish cheklisti.",
+    "show": "Salom! Bu FSD qo'llanmasining o'ttiz sakkizinchi bobi — pull requestlarni ko'rib chiqishda FSD arxitekturasini tekshirish cheklisti.",
+    "say": "Salom! Bu Ef-es-di qo'llanmasining o'ttiz sakkizinchi bobi — pul rekvestlarni ko'rib chiqishda Ef-es-di arxitekturasini tekshirish cheklisti.",
+    "a0": 0.32,
+    "a1": 8.79,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.32,
+        "e": 0.64
+      },
+      {
+        "w": "Bu",
+        "s": 1.22,
+        "e": 1.3
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 1.58,
+        "e": 2.0
+      },
+      {
+        "w": "qo'llanmasining",
+        "s": 2.08,
+        "e": 2.8
+      },
+      {
+        "w": "o'ttiz",
+        "s": 2.94,
+        "e": 3.16
+      },
+      {
+        "w": "sakkizinchi",
+        "s": 3.2,
+        "e": 3.76
+      },
+      {
+        "w": "bobi",
+        "s": 3.82,
+        "e": 4.06
+      },
+      {
+        "w": "—",
+        "s": 4.06,
+        "e": 4.06
+      },
+      {
+        "w": "pul",
+        "s": 4.6,
+        "e": 4.78
+      },
+      {
+        "w": "rekvestlarni",
+        "s": 4.86,
+        "e": 5.46
+      },
+      {
+        "w": "ko'rib",
+        "s": 5.5,
+        "e": 5.7
+      },
+      {
+        "w": "chiqishda",
+        "s": 5.72,
+        "e": 6.08
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 6.3,
+        "e": 6.7
+      },
+      {
+        "w": "arxitekturasini",
+        "s": 6.78,
+        "e": 7.57
+      },
+      {
+        "w": "tekshirish",
+        "s": 7.61,
+        "e": 8.07
+      },
+      {
+        "w": "cheklisti.",
+        "s": 8.25,
+        "e": 8.79
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "intro",
+    "text": "Stayger va linterlar mexanik xatolarni ushlasa-da, kodning ma'nosi, to'g'ri qatlami va arxitektura tozaligini faqat inson baholay oladi.",
+    "show": "Stayger va linterlar mexanik xatolarni ushlasa-da, kodning ma'nosi, to'g'ri qatlami va arxitektura tozaligini faqat inson baholay oladi.",
+    "say": "Stayger va linterlar mexanik xatolarni ushlasa-da, kodning ma'nosi, to'g'ri qatlami va arxitektura tozaligini faqat inson baholay oladi.",
+    "a0": 9.71,
+    "a1": 18.19,
+    "words": [
+      {
+        "w": "Stayger",
+        "s": 9.71,
+        "e": 10.19
+      },
+      {
+        "w": "va",
+        "s": 10.25,
+        "e": 10.33
+      },
+      {
+        "w": "linterlar",
+        "s": 10.49,
+        "e": 10.97
+      },
+      {
+        "w": "mexanik",
+        "s": 11.03,
+        "e": 11.51
+      },
+      {
+        "w": "xatolarni",
+        "s": 11.55,
+        "e": 12.03
+      },
+      {
+        "w": "ushlasa-da,",
+        "s": 12.07,
+        "e": 12.55
+      },
+      {
+        "w": "kodning",
+        "s": 12.91,
+        "e": 13.27
+      },
+      {
+        "w": "ma'nosi,",
+        "s": 13.31,
+        "e": 13.85
+      },
+      {
+        "w": "to'g'ri",
+        "s": 14.05,
+        "e": 14.33
+      },
+      {
+        "w": "qatlami",
+        "s": 14.39,
+        "e": 14.83
+      },
+      {
+        "w": "va",
+        "s": 14.95,
+        "e": 15.03
+      },
+      {
+        "w": "arxitektura",
+        "s": 15.21,
+        "e": 15.81
+      },
+      {
+        "w": "tozaligini",
+        "s": 15.89,
+        "e": 16.41
+      },
+      {
+        "w": "faqat",
+        "s": 16.45,
+        "e": 16.75
+      },
+      {
+        "w": "inson",
+        "s": 17.07,
+        "e": 17.43
+      },
+      {
+        "w": "baholay",
+        "s": 17.47,
+        "e": 17.89
+      },
+      {
+        "w": "oladi.",
+        "s": 17.93,
+        "e": 18.19
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "avtomatik_darvoza",
+    "text": "Birinchi qoida — avtomatik darvoza: Stayger, ESLint, TypeScript tekshiruvi va testlar to'liq yashil bo'lmasa, revyuni boshlamang.",
+    "show": "Birinchi qoida — avtomatik darvoza: Stayger, ESLint, TypeScript tekshiruvi va testlar to'liq yashil bo'lmasa, revyuni boshlamang.",
+    "say": "Birinchi qoida — avtomatik darvoza: Stayger, ESLint, Taypskript tekshiruvi va testlar to'liq yashil bo'lmasa, revyuni boshlamang.",
+    "a0": 18.89,
+    "a1": 27.36,
+    "words": [
+      {
+        "w": "Birinchi",
+        "s": 18.89,
+        "e": 19.17
+      },
+      {
+        "w": "qoida",
+        "s": 19.21,
+        "e": 19.49
+      },
+      {
+        "w": "—",
+        "s": 19.49,
+        "e": 19.49
+      },
+      {
+        "w": "avtomatik",
+        "s": 19.95,
+        "e": 20.47
+      },
+      {
+        "w": "darvoza:",
+        "s": 20.55,
+        "e": 20.99
+      },
+      {
+        "w": "Stayger,",
+        "s": 21.67,
+        "e": 22.13
+      },
+      {
+        "w": "ESLint,",
+        "s": 22.39,
+        "e": 22.98
+      },
+      {
+        "w": "Taypskript",
+        "s": 23.2,
+        "e": 23.72
+      },
+      {
+        "w": "tekshiruvi",
+        "s": 23.74,
+        "e": 24.2
+      },
+      {
+        "w": "va",
+        "s": 24.26,
+        "e": 24.32
+      },
+      {
+        "w": "testlar",
+        "s": 24.46,
+        "e": 24.86
+      },
+      {
+        "w": "to'liq",
+        "s": 24.96,
+        "e": 25.26
+      },
+      {
+        "w": "yashil",
+        "s": 25.34,
+        "e": 25.62
+      },
+      {
+        "w": "bo'lmasa,",
+        "s": 25.66,
+        "e": 26.04
+      },
+      {
+        "w": "revyuni",
+        "s": 26.38,
+        "e": 26.78
+      },
+      {
+        "w": "boshlamang.",
+        "s": 26.84,
+        "e": 27.36
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "avtomatik_darvoza",
+    "text": "Linter ushlay oladigan sintaksis yoki taqiqlangan importlarni muhokama qilish dasturchilar vaqtini bekorga sarflaydi.",
+    "show": "Linter ushlay oladigan sintaksis yoki taqiqlangan importlarni muhokama qilish dasturchilar vaqtini bekorga sarflaydi.",
+    "say": "Linter ushlay oladigan sintaksis yoki taqiqlangan importlarni muhokama qilish dasturchilar vaqtini bekorga sarflaydi.",
+    "a0": 27.88,
+    "a1": 34.56,
+    "words": [
+      {
+        "w": "Linter",
+        "s": 27.88,
+        "e": 28.2
+      },
+      {
+        "w": "ushlay",
+        "s": 28.26,
+        "e": 28.54
+      },
+      {
+        "w": "oladigan",
+        "s": 28.58,
+        "e": 28.96
+      },
+      {
+        "w": "sintaksis",
+        "s": 29.02,
+        "e": 29.64
+      },
+      {
+        "w": "yoki",
+        "s": 29.66,
+        "e": 29.94
+      },
+      {
+        "w": "taqiqlangan",
+        "s": 30.28,
+        "e": 30.96
+      },
+      {
+        "w": "importlarni",
+        "s": 31.08,
+        "e": 31.62
+      },
+      {
+        "w": "muhokama",
+        "s": 31.66,
+        "e": 32.1
+      },
+      {
+        "w": "qilish",
+        "s": 32.16,
+        "e": 32.4
+      },
+      {
+        "w": "dasturchilar",
+        "s": 32.62,
+        "e": 33.16
+      },
+      {
+        "w": "vaqtini",
+        "s": 33.2,
+        "e": 33.52
+      },
+      {
+        "w": "bekorga",
+        "s": 33.58,
+        "e": 34.04
+      },
+      {
+        "w": "sarflaydi.",
+        "s": 34.08,
+        "e": 34.56
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "joylashuv_va_chegaralar",
+    "text": "Inson tekshiradigan asosiy savol — kod eng lokal joydami: bitta sahifa kodi sahifa ichida, ikkitadan ko'p joy ishlatsa pastki qatlamda bo'lishi shart.",
+    "show": "Inson tekshiradigan asosiy savol — kod eng lokal joydami: bitta sahifa kodi sahifa ichida, ikkitadan ko'p joy ishlatsa pastki qatlamda bo'lishi shart.",
+    "say": "Inson tekshiradigan asosiy savol — kod eng lokal joydami: bitta sahifa kodi sahifa ichida, ikkitadan ko'p joy ishlatsa pastki qatlamda bo'lishi shart.",
+    "a0": 35.42,
+    "a1": 44.75,
+    "words": [
+      {
+        "w": "Inson",
+        "s": 35.42,
+        "e": 35.7
+      },
+      {
+        "w": "tekshiradigan",
+        "s": 35.74,
+        "e": 36.32
+      },
+      {
+        "w": "asosiy",
+        "s": 36.46,
+        "e": 36.86
+      },
+      {
+        "w": "savol",
+        "s": 36.94,
+        "e": 37.3
+      },
+      {
+        "w": "—",
+        "s": 37.3,
+        "e": 37.3
+      },
+      {
+        "w": "kod",
+        "s": 37.65,
+        "e": 37.87
+      },
+      {
+        "w": "eng",
+        "s": 38.05,
+        "e": 38.21
+      },
+      {
+        "w": "lokal",
+        "s": 38.29,
+        "e": 38.65
+      },
+      {
+        "w": "joydami:",
+        "s": 38.69,
+        "e": 39.11
+      },
+      {
+        "w": "bitta",
+        "s": 39.59,
+        "e": 39.85
+      },
+      {
+        "w": "sahifa",
+        "s": 39.91,
+        "e": 40.25
+      },
+      {
+        "w": "kodi",
+        "s": 40.33,
+        "e": 40.57
+      },
+      {
+        "w": "sahifa",
+        "s": 40.65,
+        "e": 41.05
+      },
+      {
+        "w": "ichida,",
+        "s": 41.09,
+        "e": 41.37
+      },
+      {
+        "w": "ikkitadan",
+        "s": 41.77,
+        "e": 42.17
+      },
+      {
+        "w": "ko'p",
+        "s": 42.23,
+        "e": 42.39
+      },
+      {
+        "w": "joy",
+        "s": 42.43,
+        "e": 42.61
+      },
+      {
+        "w": "ishlatsa",
+        "s": 42.67,
+        "e": 43.09
+      },
+      {
+        "w": "pastki",
+        "s": 43.25,
+        "e": 43.59
+      },
+      {
+        "w": "qatlamda",
+        "s": 43.63,
+        "e": 44.03
+      },
+      {
+        "w": "bo'lishi",
+        "s": 44.07,
+        "e": 44.39
+      },
+      {
+        "w": "shart.",
+        "s": 44.49,
+        "e": 44.75
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "joylashuv_va_chegaralar",
+    "text": "Fe'l harakatlar features qatlamiga, ot biznes modellari entities qatlamiga, qatlamlararo aloqa esa faqat kompozitsiya orqali ulanishi kerak.",
+    "show": "Fe'l harakatlar features qatlamiga, ot biznes modellari entities qatlamiga, qatlamlararo aloqa esa faqat kompozitsiya orqali ulanishi kerak.",
+    "say": "Fe'l harakatlar fichers qatlamiga, ot biznes modellari entitiz qatlamiga, qatlamlararo aloqa esa faqat kompozitsiya orqali ulanishi kerak.",
+    "a0": 45.49,
+    "a1": 54.58,
+    "words": [
+      {
+        "w": "Fe'l",
+        "s": 45.49,
+        "e": 45.71
+      },
+      {
+        "w": "harakatlar",
+        "s": 45.79,
+        "e": 46.35
+      },
+      {
+        "w": "fichers",
+        "s": 46.45,
+        "e": 46.83
+      },
+      {
+        "w": "qatlamiga,",
+        "s": 46.89,
+        "e": 47.43
+      },
+      {
+        "w": "ot",
+        "s": 47.97,
+        "e": 48.13
+      },
+      {
+        "w": "biznes",
+        "s": 48.25,
+        "e": 48.59
+      },
+      {
+        "w": "modellari",
+        "s": 48.65,
+        "e": 49.13
+      },
+      {
+        "w": "entitiz",
+        "s": 49.49,
+        "e": 49.93
+      },
+      {
+        "w": "qatlamiga,",
+        "s": 49.99,
+        "e": 50.47
+      },
+      {
+        "w": "qatlamlararo",
+        "s": 51.01,
+        "e": 51.71
+      },
+      {
+        "w": "aloqa",
+        "s": 51.89,
+        "e": 52.21
+      },
+      {
+        "w": "esa",
+        "s": 52.27,
+        "e": 52.45
+      },
+      {
+        "w": "faqat",
+        "s": 52.52,
+        "e": 52.82
+      },
+      {
+        "w": "kompozitsiya",
+        "s": 52.9,
+        "e": 53.54
+      },
+      {
+        "w": "orqali",
+        "s": 53.58,
+        "e": 53.88
+      },
+      {
+        "w": "ulanishi",
+        "s": 53.94,
+        "e": 54.3
+      },
+      {
+        "w": "kerak.",
+        "s": 54.32,
+        "e": 54.58
+      }
+    ]
+  },
+  {
+    "id": "L7",
+    "scene": "joylashuv_va_chegaralar",
+    "text": "Entity komponenti hech qachon feature harakatini o'zi import qilmasligi, slot va prop orqali qabul qilishi shart.",
+    "show": "Entity komponenti hech qachon feature harakatini o'zi import qilmasligi, slot va prop orqali qabul qilishi shart.",
+    "say": "Entiti komponenti hech qachon ficher harakatini o'zi import qilmasligi, slot va prop orqali qabul qilishi shart.",
+    "a0": 55.36,
+    "a1": 61.92,
+    "words": [
+      {
+        "w": "Entiti",
+        "s": 55.36,
+        "e": 55.72
+      },
+      {
+        "w": "komponenti",
+        "s": 55.78,
+        "e": 56.34
+      },
+      {
+        "w": "hech",
+        "s": 56.44,
+        "e": 56.64
+      },
+      {
+        "w": "qachon",
+        "s": 56.7,
+        "e": 57.02
+      },
+      {
+        "w": "ficher",
+        "s": 57.14,
+        "e": 57.46
+      },
+      {
+        "w": "harakatini",
+        "s": 57.5,
+        "e": 58.02
+      },
+      {
+        "w": "o'zi",
+        "s": 58.14,
+        "e": 58.3
+      },
+      {
+        "w": "import",
+        "s": 58.4,
+        "e": 58.68
+      },
+      {
+        "w": "qilmasligi,",
+        "s": 58.74,
+        "e": 59.34
+      },
+      {
+        "w": "slot",
+        "s": 59.72,
+        "e": 59.98
+      },
+      {
+        "w": "va",
+        "s": 60.08,
+        "e": 60.14
+      },
+      {
+        "w": "prop",
+        "s": 60.3,
+        "e": 60.54
+      },
+      {
+        "w": "orqali",
+        "s": 60.6,
+        "e": 60.92
+      },
+      {
+        "w": "qabul",
+        "s": 61.02,
+        "e": 61.28
+      },
+      {
+        "w": "qilishi",
+        "s": 61.34,
+        "e": 61.6
+      },
+      {
+        "w": "shart.",
+        "s": 61.68,
+        "e": 61.92
+      }
+    ]
+  },
+  {
+    "id": "L8",
+    "scene": "public_api_va_nomlash",
+    "text": "Public API da faqat tashqariga kerakli belgilar eksport qilinishi, eksport asterisk esa qat'iyan ishlatilmasligi kerak.",
+    "show": "Public API da faqat tashqariga kerakli belgilar eksport qilinishi, eksport asterisk esa qat'iyan ishlatilmasligi kerak.",
+    "say": "Public ey-pi-ay da faqat tashqariga kerakli belgilar eksport qilinishi, eksport asterisk esa qat'iyan ishlatilmasligi kerak.",
+    "a0": 62.72,
+    "a1": 69.87,
+    "words": [
+      {
+        "w": "Public",
+        "s": 62.72,
+        "e": 63.06
+      },
+      {
+        "w": "ey-pi-ay",
+        "s": 63.16,
+        "e": 63.48
+      },
+      {
+        "w": "da",
+        "s": 63.52,
+        "e": 63.6
+      },
+      {
+        "w": "faqat",
+        "s": 63.68,
+        "e": 64.0
+      },
+      {
+        "w": "tashqariga",
+        "s": 64.06,
+        "e": 64.5
+      },
+      {
+        "w": "kerakli",
+        "s": 64.56,
+        "e": 64.92
+      },
+      {
+        "w": "belgilar",
+        "s": 65.0,
+        "e": 65.4
+      },
+      {
+        "w": "eksport",
+        "s": 65.52,
+        "e": 65.86
+      },
+      {
+        "w": "qilinishi,",
+        "s": 65.9,
+        "e": 66.34
+      },
+      {
+        "w": "eksport",
+        "s": 66.78,
+        "e": 67.16
+      },
+      {
+        "w": "asterisk",
+        "s": 67.26,
+        "e": 67.73
+      },
+      {
+        "w": "esa",
+        "s": 67.81,
+        "e": 67.97
+      },
+      {
+        "w": "qat'iyan",
+        "s": 68.11,
+        "e": 68.67
+      },
+      {
+        "w": "ishlatilmasligi",
+        "s": 68.77,
+        "e": 69.53
+      },
+      {
+        "w": "kerak.",
+        "s": 69.57,
+        "e": 69.87
+      }
+    ]
+  },
+  {
+    "id": "L9",
+    "scene": "public_api_va_nomlash",
+    "text": "Nomlashda texnik so'zlar emas, domen biznes tili ustuvor: forms yoki modals emas, add-to-cart yoki order kabi aniq nomlar tanlanadi.",
+    "show": "Nomlashda texnik so'zlar emas, domen biznes tili ustuvor: forms yoki modals emas, add-to-cart yoki order kabi aniq nomlar tanlanadi.",
+    "say": "Nomlashda texnik so'zlar emas, domen biznes tili ustuvor: forms yoki modals emas, add-to-kart yoki order kabi aniq nomlar tanlanadi.",
+    "a0": 70.71,
+    "a1": 80.17,
+    "words": [
+      {
+        "w": "Nomlashda",
+        "s": 70.71,
+        "e": 71.23
+      },
+      {
+        "w": "texnik",
+        "s": 71.43,
+        "e": 71.77
+      },
+      {
+        "w": "so'zlar",
+        "s": 71.81,
+        "e": 72.11
+      },
+      {
+        "w": "emas,",
+        "s": 72.17,
+        "e": 72.39
+      },
+      {
+        "w": "domen",
+        "s": 72.69,
+        "e": 73.05
+      },
+      {
+        "w": "biznes",
+        "s": 73.31,
+        "e": 73.65
+      },
+      {
+        "w": "tili",
+        "s": 73.71,
+        "e": 73.89
+      },
+      {
+        "w": "ustuvor:",
+        "s": 73.97,
+        "e": 74.37
+      },
+      {
+        "w": "forms",
+        "s": 74.89,
+        "e": 75.33
+      },
+      {
+        "w": "yoki",
+        "s": 75.47,
+        "e": 75.73
+      },
+      {
+        "w": "modals",
+        "s": 75.97,
+        "e": 76.37
+      },
+      {
+        "w": "emas,",
+        "s": 76.43,
+        "e": 76.67
+      },
+      {
+        "w": "add-to-kart",
+        "s": 77.01,
+        "e": 77.65
+      },
+      {
+        "w": "yoki",
+        "s": 77.83,
+        "e": 78.09
+      },
+      {
+        "w": "order",
+        "s": 78.33,
+        "e": 78.61
+      },
+      {
+        "w": "kabi",
+        "s": 78.65,
+        "e": 78.87
+      },
+      {
+        "w": "aniq",
+        "s": 79.09,
+        "e": 79.33
+      },
+      {
+        "w": "nomlar",
+        "s": 79.39,
+        "e": 79.69
+      },
+      {
+        "w": "tanlanadi.",
+        "s": 79.73,
+        "e": 80.17
+      }
+    ]
+  },
+  {
+    "id": "L10",
+    "scene": "pr_shabloni_va_adr",
+    "text": "Jamoada har bir pull request uchun FSD shabloni joriy etiladi: yangi slice sababi, pastga tushirilgan kod va public API o'zgarishi yoziladi.",
+    "show": "Jamoada har bir pull request uchun FSD shabloni joriy etiladi: yangi slice sababi, pastga tushirilgan kod va public API o'zgarishi yoziladi.",
+    "say": "Jamoada har bir pul rekvest uchun Ef-es-di shabloni joriy etiladi: yangi slays sababi, pastga tushirilgan kod va public ey-pi-ay o'zgarishi yoziladi.",
+    "a0": 80.97,
+    "a1": 90.22,
+    "words": [
+      {
+        "w": "Jamoada",
+        "s": 80.97,
+        "e": 81.41
+      },
+      {
+        "w": "har",
+        "s": 81.55,
+        "e": 81.75
+      },
+      {
+        "w": "bir",
+        "s": 81.81,
+        "e": 81.93
+      },
+      {
+        "w": "pul",
+        "s": 82.01,
+        "e": 82.17
+      },
+      {
+        "w": "rekvest",
+        "s": 82.23,
+        "e": 82.6
+      },
+      {
+        "w": "uchun",
+        "s": 82.64,
+        "e": 82.88
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 83.18,
+        "e": 83.56
+      },
+      {
+        "w": "shabloni",
+        "s": 83.66,
+        "e": 84.06
+      },
+      {
+        "w": "joriy",
+        "s": 84.14,
+        "e": 84.44
+      },
+      {
+        "w": "etiladi:",
+        "s": 84.5,
+        "e": 84.84
+      },
+      {
+        "w": "yangi",
+        "s": 85.34,
+        "e": 85.6
+      },
+      {
+        "w": "slays",
+        "s": 85.66,
+        "e": 85.92
+      },
+      {
+        "w": "sababi,",
+        "s": 85.98,
+        "e": 86.42
+      },
+      {
+        "w": "pastga",
+        "s": 86.74,
+        "e": 87.02
+      },
+      {
+        "w": "tushirilgan",
+        "s": 87.06,
+        "e": 87.6
+      },
+      {
+        "w": "kod",
+        "s": 87.72,
+        "e": 87.98
+      },
+      {
+        "w": "va",
+        "s": 88.24,
+        "e": 88.32
+      },
+      {
+        "w": "public",
+        "s": 88.48,
+        "e": 88.82
+      },
+      {
+        "w": "ey-pi-ay",
+        "s": 88.92,
+        "e": 89.26
+      },
+      {
+        "w": "o'zgarishi",
+        "s": 89.36,
+        "e": 89.76
+      },
+      {
+        "w": "yoziladi.",
+        "s": 89.8,
+        "e": 90.22
+      }
+    ]
+  },
+  {
+    "id": "L11",
+    "scene": "pr_shabloni_va_adr",
+    "text": "Bahsli arxitektura savollari har PR da qayta tortishilmaydi, balki arxitektura qarorlari yozuvi ya'ni ADR da mustahkamlab qo'yiladi.",
+    "show": "Bahsli arxitektura savollari har PR da qayta tortishilmaydi, balki arxitektura qarorlari yozuvi ya'ni ADR da mustahkamlab qo'yiladi.",
+    "say": "Bahsli arxitektura savollari har pi-ar da qayta tortishilmaydi, balki arxitektura qarorlari yozuvi ya'ni Ey-di-ar da mustahkamlab qo'yiladi.",
+    "a0": 90.98,
+    "a1": 99.39,
+    "words": [
+      {
+        "w": "Bahsli",
+        "s": 90.98,
+        "e": 91.34
+      },
+      {
+        "w": "arxitektura",
+        "s": 91.46,
+        "e": 92.02
+      },
+      {
+        "w": "savollari",
+        "s": 92.08,
+        "e": 92.58
+      },
+      {
+        "w": "har",
+        "s": 92.86,
+        "e": 93.06
+      },
+      {
+        "w": "pi-ar",
+        "s": 93.14,
+        "e": 93.4
+      },
+      {
+        "w": "da",
+        "s": 93.44,
+        "e": 93.5
+      },
+      {
+        "w": "qayta",
+        "s": 93.6,
+        "e": 93.86
+      },
+      {
+        "w": "tortishilmaydi,",
+        "s": 93.9,
+        "e": 94.56
+      },
+      {
+        "w": "balki",
+        "s": 94.84,
+        "e": 95.12
+      },
+      {
+        "w": "arxitektura",
+        "s": 95.26,
+        "e": 95.84
+      },
+      {
+        "w": "qarorlari",
+        "s": 95.9,
+        "e": 96.38
+      },
+      {
+        "w": "yozuvi",
+        "s": 96.46,
+        "e": 96.82
+      },
+      {
+        "w": "ya'ni",
+        "s": 96.98,
+        "e": 97.22
+      },
+      {
+        "w": "Ey-di-ar",
+        "s": 97.61,
+        "e": 98.01
+      },
+      {
+        "w": "da",
+        "s": 98.07,
+        "e": 98.15
+      },
+      {
+        "w": "mustahkamlab",
+        "s": 98.25,
+        "e": 98.95
+      },
+      {
+        "w": "qo'yiladi.",
+        "s": 98.99,
+        "e": 99.39
+      }
+    ]
+  },
+  {
+    "id": "L12",
+    "scene": "tipik_xatolar",
+    "text": "Tipik xatolar — \"keyin to'g'rilaymiz\" deb noto'g'ri qatlamni tasdiqlash hamda har bir PR da noldan falsafiy bahslarga kirishishdir.",
+    "show": "Tipik xatolar — \"keyin to'g'rilaymiz\" deb noto'g'ri qatlamni tasdiqlash hamda har bir PR da noldan falsafiy bahslarga kirishishdir.",
+    "say": "Tipik xatolar — \"keyin to'g'rilaymiz\" deb noto'g'ri qatlamni tasdiqlash hamda har bir pi-ar da noldan falsafiy bahslarga kirishishdir.",
+    "a0": 100.07,
+    "a1": 107.51,
+    "words": [
+      {
+        "w": "Tipik",
+        "s": 100.07,
+        "e": 100.37
+      },
+      {
+        "w": "xatolar",
+        "s": 100.41,
+        "e": 100.85
+      },
+      {
+        "w": "—",
+        "s": 100.85,
+        "e": 100.85
+      },
+      {
+        "w": "\"keyin",
+        "s": 100.85,
+        "e": 101.19
+      },
+      {
+        "w": "to'g'rilaymiz\"",
+        "s": 101.21,
+        "e": 102.27
+      },
+      {
+        "w": "deb",
+        "s": 102.27,
+        "e": 102.41
+      },
+      {
+        "w": "noto'g'ri",
+        "s": 102.49,
+        "e": 102.87
+      },
+      {
+        "w": "qatlamni",
+        "s": 102.93,
+        "e": 103.35
+      },
+      {
+        "w": "tasdiqlash",
+        "s": 103.39,
+        "e": 103.99
+      },
+      {
+        "w": "hamda",
+        "s": 104.23,
+        "e": 104.49
+      },
+      {
+        "w": "har",
+        "s": 104.65,
+        "e": 104.83
+      },
+      {
+        "w": "bir",
+        "s": 104.87,
+        "e": 104.99
+      },
+      {
+        "w": "pi-ar",
+        "s": 105.05,
+        "e": 105.29
+      },
+      {
+        "w": "da",
+        "s": 105.33,
+        "e": 105.39
+      },
+      {
+        "w": "noldan",
+        "s": 105.51,
+        "e": 105.95
+      },
+      {
+        "w": "falsafiy",
+        "s": 106.03,
+        "e": 106.43
+      },
+      {
+        "w": "bahslarga",
+        "s": 106.49,
+        "e": 106.89
+      },
+      {
+        "w": "kirishishdir.",
+        "s": 106.97,
+        "e": 107.51
+      }
+    ]
+  },
+  {
+    "id": "L13",
+    "scene": "tipik_xatolar",
+    "text": "Vaqt o'tishi bilan bunday murosalar arxitektura eroziyasiga va butun tizimning ifloslanishiga olib keladi.",
+    "show": "Vaqt o'tishi bilan bunday murosalar arxitektura eroziyasiga va butun tizimning ifloslanishiga olib keladi.",
+    "say": "Vaqt o'tishi bilan bunday murosalar arxitektura eroziyasiga va butun tizimning ifloslanishiga olib keladi.",
+    "a0": 108.17,
+    "a1": 113.94,
+    "words": [
+      {
+        "w": "Vaqt",
+        "s": 108.17,
+        "e": 108.43
+      },
+      {
+        "w": "o'tishi",
+        "s": 108.47,
+        "e": 108.71
+      },
+      {
+        "w": "bilan",
+        "s": 108.73,
+        "e": 108.93
+      },
+      {
+        "w": "bunday",
+        "s": 109.01,
+        "e": 109.29
+      },
+      {
+        "w": "murosalar",
+        "s": 109.33,
+        "e": 109.87
+      },
+      {
+        "w": "arxitektura",
+        "s": 110.13,
+        "e": 110.73
+      },
+      {
+        "w": "eroziyasiga",
+        "s": 110.87,
+        "e": 111.55
+      },
+      {
+        "w": "va",
+        "s": 111.65,
+        "e": 111.73
+      },
+      {
+        "w": "butun",
+        "s": 111.87,
+        "e": 112.21
+      },
+      {
+        "w": "tizimning",
+        "s": 112.25,
+        "e": 112.66
+      },
+      {
+        "w": "ifloslanishiga",
+        "s": 112.7,
+        "e": 113.38
+      },
+      {
+        "w": "olib",
+        "s": 113.46,
+        "e": 113.62
+      },
+      {
+        "w": "keladi.",
+        "s": 113.66,
+        "e": 113.94
+      }
+    ]
+  },
+  {
+    "id": "L14",
+    "scene": "xulosa",
+    "text": "Xulosa: qat'iy avtomatika va ongli inson ko'rigi uyg'unligi loyihani yillar davomida toza va barqaror saqlaydi.",
+    "show": "Xulosa: qat'iy avtomatika va ongli inson ko'rigi uyg'unligi loyihani yillar davomida toza va barqaror saqlaydi.",
+    "say": "Xulosa: qat'iy avtomatika va ongli inson ko'rigi uyg'unligi loyihani yillar davomida toza va barqaror saqlaydi.",
+    "a0": 114.6,
+    "a1": 121.76,
+    "words": [
+      {
+        "w": "Xulosa:",
+        "s": 114.6,
+        "e": 114.98
+      },
+      {
+        "w": "qat'iy",
+        "s": 115.38,
+        "e": 115.74
+      },
+      {
+        "w": "avtomatika",
+        "s": 115.88,
+        "e": 116.5
+      },
+      {
+        "w": "va",
+        "s": 116.58,
+        "e": 116.66
+      },
+      {
+        "w": "ongli",
+        "s": 116.84,
+        "e": 117.08
+      },
+      {
+        "w": "inson",
+        "s": 117.2,
+        "e": 117.5
+      },
+      {
+        "w": "ko'rigi",
+        "s": 117.56,
+        "e": 117.86
+      },
+      {
+        "w": "uyg'unligi",
+        "s": 117.92,
+        "e": 118.42
+      },
+      {
+        "w": "loyihani",
+        "s": 118.76,
+        "e": 119.22
+      },
+      {
+        "w": "yillar",
+        "s": 119.3,
+        "e": 119.68
+      },
+      {
+        "w": "davomida",
+        "s": 119.72,
+        "e": 120.1
+      },
+      {
+        "w": "toza",
+        "s": 120.2,
+        "e": 120.52
+      },
+      {
+        "w": "va",
+        "s": 120.6,
+        "e": 120.68
+      },
+      {
+        "w": "barqaror",
+        "s": 120.8,
+        "e": 121.3
+      },
+      {
+        "w": "saqlaydi.",
+        "s": 121.34,
+        "e": 121.76
+      }
+    ]
+  },
+  {
+    "id": "L15",
+    "scene": "xulosa",
+    "text": "Keyingi o'ttiz to'qqizinchi bobda FSD bo'yicha eng ko'p beriladigan qiyin savollarga aniq javoblarni ko'rib chiqamiz.",
+    "show": "Keyingi o'ttiz to'qqizinchi bobda FSD bo'yicha eng ko'p beriladigan qiyin savollarga aniq javoblarni ko'rib chiqamiz.",
+    "say": "Keyingi o'ttiz to'qqizinchi bobda Ef-es-di bo'yicha eng ko'p beriladigan qiyin savollarga aniq javoblarni ko'rib chiqamiz.",
+    "a0": 122.5,
+    "a1": 129.03,
+    "words": [
+      {
+        "w": "Keyingi",
+        "s": 122.5,
+        "e": 122.9
+      },
+      {
+        "w": "o'ttiz",
+        "s": 123.08,
+        "e": 123.34
+      },
+      {
+        "w": "to'qqizinchi",
+        "s": 123.36,
+        "e": 123.91
+      },
+      {
+        "w": "bobda",
+        "s": 123.95,
+        "e": 124.25
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 124.59,
+        "e": 124.95
+      },
+      {
+        "w": "bo'yicha",
+        "s": 125.03,
+        "e": 125.31
+      },
+      {
+        "w": "eng",
+        "s": 125.49,
+        "e": 125.63
+      },
+      {
+        "w": "ko'p",
+        "s": 125.67,
+        "e": 125.83
+      },
+      {
+        "w": "beriladigan",
+        "s": 125.87,
+        "e": 126.41
+      },
+      {
+        "w": "qiyin",
+        "s": 126.51,
+        "e": 126.79
+      },
+      {
+        "w": "savollarga",
+        "s": 126.83,
+        "e": 127.35
+      },
+      {
+        "w": "aniq",
+        "s": 127.57,
+        "e": 127.79
+      },
+      {
+        "w": "javoblarni",
+        "s": 127.85,
+        "e": 128.37
+      },
+      {
+        "w": "ko'rib",
+        "s": 128.41,
+        "e": 128.63
+      },
+      {
+        "w": "chiqamiz.",
+        "s": 128.65,
+        "e": 129.03
+      }
+    ]
+  },
+  {
+    "id": "L16",
+    "scene": "xulosa",
+    "text": "E'tiboringiz uchun rahmat, sifatli va hushyor kod-revyu o'tkazishda davom eting!",
+    "show": "E'tiboringiz uchun rahmat, sifatli va hushyor kod-revyu o'tkazishda davom eting!",
+    "say": "E'tiboringiz uchun rahmat, sifatli va hushyor kod revyu o'tkazishda davom eting!",
+    "a0": 129.61,
+    "a1": 134.8,
+    "words": [
+      {
+        "w": "E'tiboringiz",
+        "s": 129.61,
+        "e": 130.23
+      },
+      {
+        "w": "uchun",
+        "s": 130.29,
+        "e": 130.49
+      },
+      {
+        "w": "rahmat,",
+        "s": 130.55,
+        "e": 130.91
+      },
+      {
+        "w": "sifatli",
+        "s": 131.46,
+        "e": 131.96
+      },
+      {
+        "w": "va",
+        "s": 132.34,
+        "e": 132.42
+      },
+      {
+        "w": "hushyor",
+        "s": 132.54,
+        "e": 132.98
+      },
+      {
+        "w": "kod",
+        "s": 133.1,
+        "e": 133.32
+      },
+      {
+        "w": "revyu",
+        "s": 133.38,
+        "e": 133.62
+      },
+      {
+        "w": "o'tkazishda",
+        "s": 133.68,
+        "e": 134.22
+      },
+      {
+        "w": "davom",
+        "s": 134.26,
+        "e": 134.52
+      },
+      {
+        "w": "eting!",
+        "s": 134.58,
+        "e": 134.8
+      }
+    ]
+  }
+]
