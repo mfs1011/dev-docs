@@ -1,0 +1,22 @@
+WEBVTT
+
+00:00.000 --> 00:22.729
+Kirish: "Bozor" Do'koni Frontendi va Bosqichli Yondashuv
+
+00:22.729 --> 00:43.179
+1-Bosqich: Boshlanishida Faqat Uch Qatlam (app, pages, shared)
+
+00:43.179 --> 01:08.967
+2 va 3-Bosqichlar: Takrorlanish va Kompozitsiya (Slot/Prop)
+
+01:08.967 --> 01:26.472
+4 va 5-Bosqichlar: Header Widget va Admin Slice Guruhi
+
+01:26.472 --> 01:44.927
+Steiger Nazorati: insignificant-slice va excessive-slicing
+
+01:44.927 --> 02:03.670
+Loyihani Shakllantirishdagi Tipik Xatolar
+
+02:03.670 --> 02:28.660
+Xulosa va Keyingi Qadam

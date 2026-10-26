@@ -1,0 +1,1358 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Salom! Bu FSD qo'llanmasining o'ttiz yettinchi bobi — butun FSD nazariyasini \"Bozor\" onlayn do'koni frontendida bosqichma-bosqich qo'llash.",
+    "show": "Salom! Bu FSD qo'llanmasining o'ttiz yettinchi bobi — butun FSD nazariyasini \"Bozor\" onlayn do'koni frontendida bosqichma-bosqich qo'llash.",
+    "say": "Salom! Bu Ef-es-di qo'llanmasining o'ttiz yettinchi bobi — butun Ef-es-di nazariyasini \"Bozor\" onlayn do'koni frontendida bosqichma-bosqich qo'llash.",
+    "a0": 0.28,
+    "a1": 11.07,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.28,
+        "e": 0.66
+      },
+      {
+        "w": "Bu",
+        "s": 1.2,
+        "e": 1.3
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 1.82,
+        "e": 2.24
+      },
+      {
+        "w": "qo'llanmasining",
+        "s": 2.32,
+        "e": 3.24
+      },
+      {
+        "w": "o'ttiz",
+        "s": 3.46,
+        "e": 3.88
+      },
+      {
+        "w": "yettinchi",
+        "s": 3.96,
+        "e": 4.46
+      },
+      {
+        "w": "bobi",
+        "s": 4.52,
+        "e": 4.78
+      },
+      {
+        "w": "—",
+        "s": 4.78,
+        "e": 4.78
+      },
+      {
+        "w": "butun",
+        "s": 5.32,
+        "e": 5.62
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 5.7,
+        "e": 6.12
+      },
+      {
+        "w": "nazariyasini",
+        "s": 6.2,
+        "e": 6.94
+      },
+      {
+        "w": "\"Bozor\"",
+        "s": 6.94,
+        "e": 7.91
+      },
+      {
+        "w": "onlayn",
+        "s": 7.91,
+        "e": 8.35
+      },
+      {
+        "w": "do'koni",
+        "s": 8.41,
+        "e": 8.79
+      },
+      {
+        "w": "frontendida",
+        "s": 8.83,
+        "e": 9.49
+      },
+      {
+        "w": "bosqichma-bosqich",
+        "s": 9.63,
+        "e": 10.61
+      },
+      {
+        "w": "qo'llash.",
+        "s": 10.65,
+        "e": 11.07
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "intro",
+    "text": "Asosiy falsafa: loyihani birinchi kundan yigirma beshta bo'sh papka bilan emas, ehtiyojga qarab bosqichma-bosqich kengaytirish kerak.",
+    "show": "Asosiy falsafa: loyihani birinchi kundan yigirma beshta bo'sh papka bilan emas, ehtiyojga qarab bosqichma-bosqich kengaytirish kerak.",
+    "say": "Asosiy falsafa: loyihani birinchi kundan yigirma beshta bo'sh papka bilan emas, ehtiyojga qarab bosqichma-bosqich kengaytirish kerak.",
+    "a0": 12.05,
+    "a1": 19.51,
+    "words": [
+      {
+        "w": "Asosiy",
+        "s": 12.05,
+        "e": 12.47
+      },
+      {
+        "w": "falsafa:",
+        "s": 12.55,
+        "e": 13.01
+      },
+      {
+        "w": "loyihani",
+        "s": 13.55,
+        "e": 13.97
+      },
+      {
+        "w": "birinchi",
+        "s": 14.03,
+        "e": 14.33
+      },
+      {
+        "w": "kundan",
+        "s": 14.37,
+        "e": 14.69
+      },
+      {
+        "w": "yigirma",
+        "s": 14.75,
+        "e": 15.03
+      },
+      {
+        "w": "beshta",
+        "s": 15.11,
+        "e": 15.39
+      },
+      {
+        "w": "bo'sh",
+        "s": 15.45,
+        "e": 15.63
+      },
+      {
+        "w": "papka",
+        "s": 15.65,
+        "e": 15.93
+      },
+      {
+        "w": "bilan",
+        "s": 15.97,
+        "e": 16.13
+      },
+      {
+        "w": "emas,",
+        "s": 16.19,
+        "e": 16.43
+      },
+      {
+        "w": "ehtiyojga",
+        "s": 16.83,
+        "e": 17.31
+      },
+      {
+        "w": "qarab",
+        "s": 17.39,
+        "e": 17.65
+      },
+      {
+        "w": "bosqichma-bosqich",
+        "s": 17.73,
+        "e": 18.61
+      },
+      {
+        "w": "kengaytirish",
+        "s": 18.65,
+        "e": 19.21
+      },
+      {
+        "w": "kerak.",
+        "s": 19.23,
+        "e": 19.51
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "bosqich1_uch_qatlam",
+    "text": "Birinchi bosqichda faqat uchta qatlam ochiladi: app, pages va shared; katalog, mahsulot, savat va checkout sahifalari quriladi.",
+    "show": "Birinchi bosqichda faqat uchta qatlam ochiladi: app, pages va shared; katalog, mahsulot, savat va checkout sahifalari quriladi.",
+    "say": "Birinchi bosqichda faqat uchta qatlam ochiladi: ep, peyjiz va sherd; katalog, mahsulot, savat va checkout sahifalari quriladi.",
+    "a0": 20.27,
+    "a1": 29.5,
+    "words": [
+      {
+        "w": "Birinchi",
+        "s": 20.27,
+        "e": 20.63
+      },
+      {
+        "w": "bosqichda",
+        "s": 20.69,
+        "e": 21.15
+      },
+      {
+        "w": "faqat",
+        "s": 21.23,
+        "e": 21.55
+      },
+      {
+        "w": "uchta",
+        "s": 21.67,
+        "e": 21.91
+      },
+      {
+        "w": "qatlam",
+        "s": 21.97,
+        "e": 22.29
+      },
+      {
+        "w": "ochiladi:",
+        "s": 22.31,
+        "e": 22.72
+      },
+      {
+        "w": "ep,",
+        "s": 23.42,
+        "e": 23.66
+      },
+      {
+        "w": "peyjiz",
+        "s": 24.1,
+        "e": 24.52
+      },
+      {
+        "w": "va",
+        "s": 24.62,
+        "e": 24.7
+      },
+      {
+        "w": "sherd;",
+        "s": 24.7,
+        "e": 25.72
+      },
+      {
+        "w": "katalog,",
+        "s": 25.72,
+        "e": 26.28
+      },
+      {
+        "w": "mahsulot,",
+        "s": 26.52,
+        "e": 27.1
+      },
+      {
+        "w": "savat",
+        "s": 27.44,
+        "e": 27.8
+      },
+      {
+        "w": "va",
+        "s": 27.86,
+        "e": 27.92
+      },
+      {
+        "w": "checkout",
+        "s": 28.02,
+        "e": 28.5
+      },
+      {
+        "w": "sahifalari",
+        "s": 28.5,
+        "e": 29.04
+      },
+      {
+        "w": "quriladi.",
+        "s": 29.1,
+        "e": 29.5
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "bosqich1_uch_qatlam",
+    "text": "Mahsulot kartasi hozircha katalog sahifasi ichida turadi; uni oldindan entities ga chiqarish Steiger da xatolik beradi.",
+    "show": "Mahsulot kartasi hozircha katalog sahifasi ichida turadi; uni oldindan entities ga chiqarish Steiger da xatolik beradi.",
+    "say": "Mahsulot kartasi hozircha katalog sahifasi ichida turadi; uni oldindan entitiz ga chiqarish stayger da xatolik beradi.",
+    "a0": 30.22,
+    "a1": 37.18,
+    "words": [
+      {
+        "w": "Mahsulot",
+        "s": 30.22,
+        "e": 30.66
+      },
+      {
+        "w": "kartasi",
+        "s": 30.7,
+        "e": 31.1
+      },
+      {
+        "w": "hozircha",
+        "s": 31.14,
+        "e": 31.54
+      },
+      {
+        "w": "katalog",
+        "s": 31.6,
+        "e": 32.02
+      },
+      {
+        "w": "sahifasi",
+        "s": 32.06,
+        "e": 32.54
+      },
+      {
+        "w": "ichida",
+        "s": 32.58,
+        "e": 32.82
+      },
+      {
+        "w": "turadi;",
+        "s": 32.82,
+        "e": 33.74
+      },
+      {
+        "w": "uni",
+        "s": 33.74,
+        "e": 33.88
+      },
+      {
+        "w": "oldindan",
+        "s": 34.02,
+        "e": 34.46
+      },
+      {
+        "w": "entitiz",
+        "s": 34.6,
+        "e": 35.0
+      },
+      {
+        "w": "ga",
+        "s": 35.04,
+        "e": 35.12
+      },
+      {
+        "w": "chiqarish",
+        "s": 35.16,
+        "e": 35.54
+      },
+      {
+        "w": "stayger",
+        "s": 35.8,
+        "e": 36.24
+      },
+      {
+        "w": "da",
+        "s": 36.28,
+        "e": 36.34
+      },
+      {
+        "w": "xatolik",
+        "s": 36.4,
+        "e": 36.82
+      },
+      {
+        "w": "beradi.",
+        "s": 36.86,
+        "e": 37.18
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "bosqich2_3_takrorlanish",
+    "text": "Ikkinchi bosqichda qidiruv sahifasi ham mahsulot kartasini so'raganida, u entities product ga olib chiqiladi.",
+    "show": "Ikkinchi bosqichda qidiruv sahifasi ham mahsulot kartasini so'raganida, u entities product ga olib chiqiladi.",
+    "say": "Ikkinchi bosqichda qidiruv sahifasi ham mahsulot kartasini so'raganida, u entitiz prodakt ga olib chiqiladi.",
+    "a0": 37.99,
+    "a1": 44.11,
+    "words": [
+      {
+        "w": "Ikkinchi",
+        "s": 37.99,
+        "e": 38.33
+      },
+      {
+        "w": "bosqichda",
+        "s": 38.39,
+        "e": 38.83
+      },
+      {
+        "w": "qidiruv",
+        "s": 38.89,
+        "e": 39.21
+      },
+      {
+        "w": "sahifasi",
+        "s": 39.25,
+        "e": 39.75
+      },
+      {
+        "w": "ham",
+        "s": 39.77,
+        "e": 39.91
+      },
+      {
+        "w": "mahsulot",
+        "s": 40.21,
+        "e": 40.71
+      },
+      {
+        "w": "kartasini",
+        "s": 40.75,
+        "e": 41.25
+      },
+      {
+        "w": "so'raganida,",
+        "s": 41.29,
+        "e": 41.81
+      },
+      {
+        "w": "u",
+        "s": 41.99,
+        "e": 42.01
+      },
+      {
+        "w": "entitiz",
+        "s": 42.45,
+        "e": 42.91
+      },
+      {
+        "w": "prodakt",
+        "s": 42.95,
+        "e": 43.33
+      },
+      {
+        "w": "ga",
+        "s": 43.37,
+        "e": 43.45
+      },
+      {
+        "w": "olib",
+        "s": 43.53,
+        "e": 43.69
+      },
+      {
+        "w": "chiqiladi.",
+        "s": 43.71,
+        "e": 44.11
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "bosqich2_3_takrorlanish",
+    "text": "Uchinchi bosqichda bir nechta sahifada savatga qo'shish harakati paydo bo'lgach, features add-to-cart komponenti yaratiladi.",
+    "show": "Uchinchi bosqichda bir nechta sahifada savatga qo'shish harakati paydo bo'lgach, features add-to-cart komponenti yaratiladi.",
+    "say": "Uchinchi bosqichda bir nechta sahifada savatga qo'shish harakati paydo bo'lgach, fichers add-to-kart komponenti yaratiladi.",
+    "a0": 44.93,
+    "a1": 51.65,
+    "words": [
+      {
+        "w": "Uchinchi",
+        "s": 44.93,
+        "e": 45.29
+      },
+      {
+        "w": "bosqichda",
+        "s": 45.33,
+        "e": 45.77
+      },
+      {
+        "w": "bir",
+        "s": 45.83,
+        "e": 45.95
+      },
+      {
+        "w": "nechta",
+        "s": 45.99,
+        "e": 46.25
+      },
+      {
+        "w": "sahifada",
+        "s": 46.31,
+        "e": 46.83
+      },
+      {
+        "w": "savatga",
+        "s": 47.21,
+        "e": 47.65
+      },
+      {
+        "w": "qo'shish",
+        "s": 47.71,
+        "e": 48.03
+      },
+      {
+        "w": "harakati",
+        "s": 48.05,
+        "e": 48.47
+      },
+      {
+        "w": "paydo",
+        "s": 48.51,
+        "e": 48.75
+      },
+      {
+        "w": "bo'lgach,",
+        "s": 48.83,
+        "e": 49.21
+      },
+      {
+        "w": "fichers",
+        "s": 49.51,
+        "e": 49.91
+      },
+      {
+        "w": "add-to-kart",
+        "s": 50.03,
+        "e": 50.55
+      },
+      {
+        "w": "komponenti",
+        "s": 50.57,
+        "e": 51.11
+      },
+      {
+        "w": "yaratiladi.",
+        "s": 51.13,
+        "e": 51.65
+      }
+    ]
+  },
+  {
+    "id": "L7",
+    "scene": "bosqich2_3_takrorlanish",
+    "text": "Diqqat: entity hech qachon feature ni import qilmaydi, tugma kartaga actions sloti yoki prop orqali uzatiladi.",
+    "show": "Diqqat: entity hech qachon feature ni import qilmaydi, tugma kartaga actions sloti yoki prop orqali uzatiladi.",
+    "say": "Diqqat: entiti hech qachon ficher ni import qilmaydi, tugma kartaga ekshnlar sloti yoki prop orqali uzatiladi.",
+    "a0": 52.47,
+    "a1": 60.0,
+    "words": [
+      {
+        "w": "Diqqat:",
+        "s": 52.47,
+        "e": 52.88
+      },
+      {
+        "w": "entiti",
+        "s": 53.38,
+        "e": 53.76
+      },
+      {
+        "w": "hech",
+        "s": 53.88,
+        "e": 54.08
+      },
+      {
+        "w": "qachon",
+        "s": 54.12,
+        "e": 54.4
+      },
+      {
+        "w": "ficher",
+        "s": 54.48,
+        "e": 54.78
+      },
+      {
+        "w": "ni",
+        "s": 54.82,
+        "e": 54.88
+      },
+      {
+        "w": "import",
+        "s": 55.0,
+        "e": 55.26
+      },
+      {
+        "w": "qilmaydi,",
+        "s": 55.3,
+        "e": 55.68
+      },
+      {
+        "w": "tugma",
+        "s": 56.22,
+        "e": 56.54
+      },
+      {
+        "w": "kartaga",
+        "s": 56.66,
+        "e": 57.1
+      },
+      {
+        "w": "ekshnlar",
+        "s": 57.46,
+        "e": 57.96
+      },
+      {
+        "w": "sloti",
+        "s": 58.0,
+        "e": 58.34
+      },
+      {
+        "w": "yoki",
+        "s": 58.36,
+        "e": 58.66
+      },
+      {
+        "w": "prop",
+        "s": 58.94,
+        "e": 59.2
+      },
+      {
+        "w": "orqali",
+        "s": 59.26,
+        "e": 59.58
+      },
+      {
+        "w": "uzatiladi.",
+        "s": 59.62,
+        "e": 60.0
+      }
+    ]
+  },
+  {
+    "id": "L8",
+    "scene": "bosqich4_5_header_admin",
+    "text": "To'rtinchi bosqichda barcha sahifalar uchun umumiy bo'lgan widgets header va asosiy layout shakllantiriladi.",
+    "show": "To'rtinchi bosqichda barcha sahifalar uchun umumiy bo'lgan widgets header va asosiy layout shakllantiriladi.",
+    "say": "To'rtinchi bosqichda barcha sahifalar uchun umumiy bo'lgan vijets xeder va asosiy leyaut shakllantiriladi.",
+    "a0": 60.86,
+    "a1": 67.16,
+    "words": [
+      {
+        "w": "To'rtinchi",
+        "s": 60.86,
+        "e": 61.36
+      },
+      {
+        "w": "bosqichda",
+        "s": 61.42,
+        "e": 61.86
+      },
+      {
+        "w": "barcha",
+        "s": 61.98,
+        "e": 62.3
+      },
+      {
+        "w": "sahifalar",
+        "s": 62.34,
+        "e": 62.9
+      },
+      {
+        "w": "uchun",
+        "s": 62.94,
+        "e": 63.12
+      },
+      {
+        "w": "umumiy",
+        "s": 63.28,
+        "e": 63.64
+      },
+      {
+        "w": "bo'lgan",
+        "s": 63.74,
+        "e": 64.08
+      },
+      {
+        "w": "vijets",
+        "s": 64.44,
+        "e": 64.8
+      },
+      {
+        "w": "xeder",
+        "s": 64.88,
+        "e": 65.2
+      },
+      {
+        "w": "va",
+        "s": 65.26,
+        "e": 65.32
+      },
+      {
+        "w": "asosiy",
+        "s": 65.44,
+        "e": 65.88
+      },
+      {
+        "w": "leyaut",
+        "s": 65.96,
+        "e": 66.3
+      },
+      {
+        "w": "shakllantiriladi.",
+        "s": 66.34,
+        "e": 67.16
+      }
+    ]
+  },
+  {
+    "id": "L9",
+    "scene": "bosqich4_5_header_admin",
+    "text": "Beshinchi bosqichda admin paneli buyurtmalari uchun pages admin-order slice guruhi ochilib, tartibsizlik oldi olinadi.",
+    "show": "Beshinchi bosqichda admin paneli buyurtmalari uchun pages admin-order slice guruhi ochilib, tartibsizlik oldi olinadi.",
+    "say": "Beshinchi bosqichda admin paneli buyurtmalari uchun peyjiz admin-order slays guruhi ochilib, tartibsizlik oldi olinadi.",
+    "a0": 67.99,
+    "a1": 74.85,
+    "words": [
+      {
+        "w": "Beshinchi",
+        "s": 67.99,
+        "e": 68.41
+      },
+      {
+        "w": "bosqichda",
+        "s": 68.47,
+        "e": 68.91
+      },
+      {
+        "w": "admin",
+        "s": 69.09,
+        "e": 69.37
+      },
+      {
+        "w": "paneli",
+        "s": 69.41,
+        "e": 69.71
+      },
+      {
+        "w": "buyurtmalari",
+        "s": 69.75,
+        "e": 70.31
+      },
+      {
+        "w": "uchun",
+        "s": 70.35,
+        "e": 70.55
+      },
+      {
+        "w": "peyjiz",
+        "s": 70.87,
+        "e": 71.25
+      },
+      {
+        "w": "admin-order",
+        "s": 71.41,
+        "e": 72.13
+      },
+      {
+        "w": "slays",
+        "s": 72.21,
+        "e": 72.49
+      },
+      {
+        "w": "guruhi",
+        "s": 72.55,
+        "e": 72.83
+      },
+      {
+        "w": "ochilib,",
+        "s": 72.85,
+        "e": 73.21
+      },
+      {
+        "w": "tartibsizlik",
+        "s": 73.47,
+        "e": 74.17
+      },
+      {
+        "w": "oldi",
+        "s": 74.27,
+        "e": 74.43
+      },
+      {
+        "w": "olinadi.",
+        "s": 74.47,
+        "e": 74.85
+      }
+    ]
+  },
+  {
+    "id": "L10",
+    "scene": "steiger_metrikalari",
+    "text": "Stayger loyihani har bosqichda tekshirib boradi: agar bitta joyda ishlatilgan slice bo'lsa insignificant-slice xatosi chiqadi.",
+    "show": "Stayger loyihani har bosqichda tekshirib boradi: agar bitta joyda ishlatilgan slice bo'lsa insignificant-slice xatosi chiqadi.",
+    "say": "Stayger loyihani har bosqichda tekshirib boradi: agar bitta joyda ishlatilgan slays bo'lsa insignificant-slays xatosi chiqadi.",
+    "a0": 75.61,
+    "a1": 82.86,
+    "words": [
+      {
+        "w": "Stayger",
+        "s": 75.61,
+        "e": 76.03
+      },
+      {
+        "w": "loyihani",
+        "s": 76.09,
+        "e": 76.51
+      },
+      {
+        "w": "har",
+        "s": 76.61,
+        "e": 76.79
+      },
+      {
+        "w": "bosqichda",
+        "s": 76.85,
+        "e": 77.25
+      },
+      {
+        "w": "tekshirib",
+        "s": 77.29,
+        "e": 77.67
+      },
+      {
+        "w": "boradi:",
+        "s": 77.69,
+        "e": 77.99
+      },
+      {
+        "w": "agar",
+        "s": 78.63,
+        "e": 78.87
+      },
+      {
+        "w": "bitta",
+        "s": 78.93,
+        "e": 79.17
+      },
+      {
+        "w": "joyda",
+        "s": 79.23,
+        "e": 79.45
+      },
+      {
+        "w": "ishlatilgan",
+        "s": 79.51,
+        "e": 80.01
+      },
+      {
+        "w": "slays",
+        "s": 80.05,
+        "e": 80.35
+      },
+      {
+        "w": "bo'lsa",
+        "s": 80.39,
+        "e": 80.67
+      },
+      {
+        "w": "insignificant-slays",
+        "s": 81.07,
+        "e": 82.09
+      },
+      {
+        "w": "xatosi",
+        "s": 82.13,
+        "e": 82.49
+      },
+      {
+        "w": "chiqadi.",
+        "s": 82.54,
+        "e": 82.86
+      }
+    ]
+  },
+  {
+    "id": "L11",
+    "scene": "steiger_metrikalari",
+    "text": "Agar qatlamda yigirmadan ortiq bo'linmagan slice to'planib qolsa, Stayger excessive-slicing orqali guruhlashni talab qiladi.",
+    "show": "Agar qatlamda yigirmadan ortiq bo'linmagan slice to'planib qolsa, Stayger excessive-slicing orqali guruhlashni talab qiladi.",
+    "say": "Agar qatlamda yigirmadan ortiq bo'linmagan slays to'planib qolsa, Stayger ekssesiv slaysing orqali guruhlashni talab qiladi.",
+    "a0": 83.64,
+    "a1": 90.52,
+    "words": [
+      {
+        "w": "Agar",
+        "s": 83.64,
+        "e": 83.86
+      },
+      {
+        "w": "qatlamda",
+        "s": 83.92,
+        "e": 84.36
+      },
+      {
+        "w": "yigirmadan",
+        "s": 84.66,
+        "e": 85.2
+      },
+      {
+        "w": "ortiq",
+        "s": 85.34,
+        "e": 85.58
+      },
+      {
+        "w": "bo'linmagan",
+        "s": 85.64,
+        "e": 86.16
+      },
+      {
+        "w": "slays",
+        "s": 86.2,
+        "e": 86.46
+      },
+      {
+        "w": "to'planib",
+        "s": 86.48,
+        "e": 86.9
+      },
+      {
+        "w": "qolsa,",
+        "s": 86.92,
+        "e": 87.2
+      },
+      {
+        "w": "Stayger",
+        "s": 87.54,
+        "e": 87.96
+      },
+      {
+        "w": "ekssesiv",
+        "s": 88.12,
+        "e": 88.6
+      },
+      {
+        "w": "slaysing",
+        "s": 88.64,
+        "e": 89.06
+      },
+      {
+        "w": "orqali",
+        "s": 89.1,
+        "e": 89.4
+      },
+      {
+        "w": "guruhlashni",
+        "s": 89.44,
+        "e": 89.92
+      },
+      {
+        "w": "talab",
+        "s": 89.94,
+        "e": 90.2
+      },
+      {
+        "w": "qiladi.",
+        "s": 90.24,
+        "e": 90.52
+      }
+    ]
+  },
+  {
+    "id": "L12",
+    "scene": "tipik_xatolar",
+    "text": "Tipik xatolar — birinchi kunda barcha qatlamlarni sun'iy yaratish hamda mahsulot kartasi ichida savat tugmasini qattiq import qilishdir.",
+    "show": "Tipik xatolar — birinchi kunda barcha qatlamlarni sun'iy yaratish hamda mahsulot kartasi ichida savat tugmasini qattiq import qilishdir.",
+    "say": "Tipik xatolar — birinchi kunda barcha qatlamlarni sun'iy yaratish hamda mahsulot kartasi ichida savat tugmasini qattiq import qilishdir.",
+    "a0": 91.2,
+    "a1": 99.11,
+    "words": [
+      {
+        "w": "Tipik",
+        "s": 91.2,
+        "e": 91.54
+      },
+      {
+        "w": "xatolar",
+        "s": 91.6,
+        "e": 92.12
+      },
+      {
+        "w": "—",
+        "s": 92.12,
+        "e": 92.12
+      },
+      {
+        "w": "birinchi",
+        "s": 92.66,
+        "e": 92.96
+      },
+      {
+        "w": "kunda",
+        "s": 93.0,
+        "e": 93.26
+      },
+      {
+        "w": "barcha",
+        "s": 93.34,
+        "e": 93.62
+      },
+      {
+        "w": "qatlamlarni",
+        "s": 93.66,
+        "e": 94.22
+      },
+      {
+        "w": "sun'iy",
+        "s": 94.34,
+        "e": 94.68
+      },
+      {
+        "w": "yaratish",
+        "s": 94.76,
+        "e": 95.24
+      },
+      {
+        "w": "hamda",
+        "s": 95.48,
+        "e": 95.74
+      },
+      {
+        "w": "mahsulot",
+        "s": 95.82,
+        "e": 96.26
+      },
+      {
+        "w": "kartasi",
+        "s": 96.3,
+        "e": 96.68
+      },
+      {
+        "w": "ichida",
+        "s": 96.72,
+        "e": 96.94
+      },
+      {
+        "w": "savat",
+        "s": 97.02,
+        "e": 97.3
+      },
+      {
+        "w": "tugmasini",
+        "s": 97.32,
+        "e": 97.79
+      },
+      {
+        "w": "qattiq",
+        "s": 97.91,
+        "e": 98.29
+      },
+      {
+        "w": "import",
+        "s": 98.41,
+        "e": 98.67
+      },
+      {
+        "w": "qilishdir.",
+        "s": 98.73,
+        "e": 99.11
+      }
+    ]
+  },
+  {
+    "id": "L13",
+    "scene": "tipik_xatolar",
+    "text": "Shuningdek, admin sahifalarini guruhsiz tekis tashlab qo'yish va Stayger ogohlantirishlarini e'tiborsiz qoldirish xatodir.",
+    "show": "Shuningdek, admin sahifalarini guruhsiz tekis tashlab qo'yish va Stayger ogohlantirishlarini e'tiborsiz qoldirish xatodir.",
+    "say": "Shuningdek, admin sahifalarini guruhsiz tekis tashlab qo'yish va Stayger ogohlantirishlarini e'tiborsiz qoldirish xatodir.",
+    "a0": 99.83,
+    "a1": 106.47,
+    "words": [
+      {
+        "w": "Shuningdek,",
+        "s": 99.83,
+        "e": 100.27
+      },
+      {
+        "w": "admin",
+        "s": 100.59,
+        "e": 100.89
+      },
+      {
+        "w": "sahifalarini",
+        "s": 100.93,
+        "e": 101.57
+      },
+      {
+        "w": "guruhsiz",
+        "s": 101.61,
+        "e": 102.01
+      },
+      {
+        "w": "tekis",
+        "s": 102.07,
+        "e": 102.39
+      },
+      {
+        "w": "tashlab",
+        "s": 102.41,
+        "e": 102.73
+      },
+      {
+        "w": "qo'yish",
+        "s": 102.77,
+        "e": 103.07
+      },
+      {
+        "w": "va",
+        "s": 103.11,
+        "e": 103.17
+      },
+      {
+        "w": "Stayger",
+        "s": 103.49,
+        "e": 103.89
+      },
+      {
+        "w": "ogohlantirishlarini",
+        "s": 103.99,
+        "e": 104.87
+      },
+      {
+        "w": "e'tiborsiz",
+        "s": 105.01,
+        "e": 105.57
+      },
+      {
+        "w": "qoldirish",
+        "s": 105.61,
+        "e": 106.03
+      },
+      {
+        "w": "xatodir.",
+        "s": 106.05,
+        "e": 106.47
+      }
+    ]
+  },
+  {
+    "id": "L14",
+    "scene": "xulosa",
+    "text": "Xulosa: FSD da arxitektura oldindan bashorat qilinmaydi, balki haqiqiy biznes takrorlanishlari asosida tabiiy o'sib boradi.",
+    "show": "Xulosa: FSD da arxitektura oldindan bashorat qilinmaydi, balki haqiqiy biznes takrorlanishlari asosida tabiiy o'sib boradi.",
+    "say": "Xulosa: Ef-es-di da arxitektura oldindan bashorat qilinmaydi, balki haqiqiy biznes takrorlanishlari asosida tabiiy o'sib boradi.",
+    "a0": 107.17,
+    "a1": 115.46,
+    "words": [
+      {
+        "w": "Xulosa:",
+        "s": 107.17,
+        "e": 107.63
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 108.21,
+        "e": 108.63
+      },
+      {
+        "w": "da",
+        "s": 108.69,
+        "e": 108.77
+      },
+      {
+        "w": "arxitektura",
+        "s": 108.87,
+        "e": 109.53
+      },
+      {
+        "w": "oldindan",
+        "s": 109.69,
+        "e": 110.13
+      },
+      {
+        "w": "bashorat",
+        "s": 110.17,
+        "e": 110.57
+      },
+      {
+        "w": "qilinmaydi,",
+        "s": 110.61,
+        "e": 111.09
+      },
+      {
+        "w": "balki",
+        "s": 111.63,
+        "e": 111.91
+      },
+      {
+        "w": "haqiqiy",
+        "s": 112.21,
+        "e": 112.68
+      },
+      {
+        "w": "biznes",
+        "s": 112.78,
+        "e": 113.08
+      },
+      {
+        "w": "takrorlanishlari",
+        "s": 113.1,
+        "e": 113.84
+      },
+      {
+        "w": "asosida",
+        "s": 113.9,
+        "e": 114.32
+      },
+      {
+        "w": "tabiiy",
+        "s": 114.4,
+        "e": 114.8
+      },
+      {
+        "w": "o'sib",
+        "s": 114.9,
+        "e": 115.12
+      },
+      {
+        "w": "boradi.",
+        "s": 115.14,
+        "e": 115.46
+      }
+    ]
+  },
+  {
+    "id": "L15",
+    "scene": "xulosa",
+    "text": "Keyingi o'ttiz sakkizinchi bobda FSD arxitekturasini kod-revyu qilish bo'yicha to'liq cheklistni ko'rib chiqamiz.",
+    "show": "Keyingi o'ttiz sakkizinchi bobda FSD arxitekturasini kod-revyu qilish bo'yicha to'liq cheklistni ko'rib chiqamiz.",
+    "say": "Keyingi o'ttiz sakkizinchi bobda Ef-es-di arxitekturasini kod revyu qilish bo'yicha to'liq cheklistni ko'rib chiqamiz.",
+    "a0": 116.22,
+    "a1": 122.23,
+    "words": [
+      {
+        "w": "Keyingi",
+        "s": 116.22,
+        "e": 116.58
+      },
+      {
+        "w": "o'ttiz",
+        "s": 116.72,
+        "e": 116.96
+      },
+      {
+        "w": "sakkizinchi",
+        "s": 117.0,
+        "e": 117.48
+      },
+      {
+        "w": "bobda",
+        "s": 117.52,
+        "e": 117.8
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 118.16,
+        "e": 118.54
+      },
+      {
+        "w": "arxitekturasini",
+        "s": 118.62,
+        "e": 119.48
+      },
+      {
+        "w": "kod",
+        "s": 119.58,
+        "e": 119.76
+      },
+      {
+        "w": "revyu",
+        "s": 119.82,
+        "e": 120.06
+      },
+      {
+        "w": "qilish",
+        "s": 120.12,
+        "e": 120.34
+      },
+      {
+        "w": "bo'yicha",
+        "s": 120.38,
+        "e": 120.66
+      },
+      {
+        "w": "to'liq",
+        "s": 120.8,
+        "e": 121.1
+      },
+      {
+        "w": "cheklistni",
+        "s": 121.16,
+        "e": 121.6
+      },
+      {
+        "w": "ko'rib",
+        "s": 121.64,
+        "e": 121.85
+      },
+      {
+        "w": "chiqamiz.",
+        "s": 121.87,
+        "e": 122.23
+      }
+    ]
+  },
+  {
+    "id": "L16",
+    "scene": "xulosa",
+    "text": "E'tiboringiz uchun rahmat, amaliyotda toza va barqaror tizimlar quring!",
+    "show": "E'tiboringiz uchun rahmat, amaliyotda toza va barqaror tizimlar quring!",
+    "say": "E'tiboringiz uchun rahmat, amaliyotda toza va barqaror tizimlar quring!",
+    "a0": 122.91,
+    "a1": 126.92,
+    "words": [
+      {
+        "w": "E'tiboringiz",
+        "s": 122.91,
+        "e": 123.51
+      },
+      {
+        "w": "uchun",
+        "s": 123.55,
+        "e": 123.73
+      },
+      {
+        "w": "rahmat,",
+        "s": 123.79,
+        "e": 124.13
+      },
+      {
+        "w": "amaliyotda",
+        "s": 124.69,
+        "e": 125.21
+      },
+      {
+        "w": "toza",
+        "s": 125.31,
+        "e": 125.6
+      },
+      {
+        "w": "va",
+        "s": 125.68,
+        "e": 125.74
+      },
+      {
+        "w": "barqaror",
+        "s": 125.8,
+        "e": 126.22
+      },
+      {
+        "w": "tizimlar",
+        "s": 126.26,
+        "e": 126.64
+      },
+      {
+        "w": "quring!",
+        "s": 126.68,
+        "e": 126.92
+      }
+    ]
+  }
+]

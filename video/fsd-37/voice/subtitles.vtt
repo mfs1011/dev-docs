@@ -1,0 +1,81 @@
+WEBVTT
+
+1
+00:01.420 --> 00:12.660
+Salom! Bu FSD qo'llanmasining o'ttiz yettinchi bobi — butun FSD
+nazariyasini "Bozor" onlayn do'koni frontendida bosqichma-bosqich qo'llash.
+
+2
+00:13.990 --> 00:21.900
+Asosiy falsafa: loyihani birinchi kundan yigirma beshta bo'sh papka
+bilan emas, ehtiyojga qarab bosqichma-bosqich kengaytirish kerak.
+
+3
+00:23.810 --> 00:33.490
+Birinchi bosqichda faqat uchta qatlam ochiladi: app, pages va
+shared; katalog, mahsulot, savat va checkout sahifalari quriladi.
+
+4
+00:33.760 --> 00:41.170
+Mahsulot kartasi hozircha katalog sahifasi ichida turadi; uni
+oldindan entities ga chiqarish Steiger da xatolik beradi.
+
+5
+00:44.330 --> 00:50.900
+Ikkinchi bosqichda qidiruv sahifasi ham mahsulot kartasini
+so'raganida, u entities product ga olib chiqiladi.
+
+6
+00:51.270 --> 00:58.440
+Uchinchi bosqichda bir nechta sahifada savatga qo'shish harakati
+paydo bo'lgach, features add-to-cart komponenti yaratiladi.
+
+7
+00:58.810 --> 01:06.790
+Diqqat: entity hech qachon feature ni import qilmaydi,
+tugma kartaga actions sloti yoki prop orqali uzatiladi.
+
+8
+01:10.000 --> 01:16.750
+To'rtinchi bosqichda barcha sahifalar uchun umumiy
+bo'lgan widgets header va asosiy layout shakllantiriladi.
+
+9
+01:17.130 --> 01:24.440
+Beshinchi bosqichda admin paneli buyurtmalari uchun pages
+admin-order slice guruhi ochilib, tartibsizlik oldi olinadi.
+
+10
+01:27.550 --> 01:35.250
+Stayger loyihani har bosqichda tekshirib boradi: agar bitta joyda
+ishlatilgan slice bo'lsa insignificant-slice xatosi chiqadi.
+
+11
+01:35.580 --> 01:42.910
+Agar qatlamda yigirmadan ortiq bo'linmagan slice to'planib qolsa,
+Stayger excessive-slicing orqali guruhlashni talab qiladi.
+
+12
+01:45.940 --> 01:54.300
+Tipik xatolar — birinchi kunda barcha qatlamlarni sun'iy yaratish
+hamda mahsulot kartasi ichida savat tugmasini qattiq import qilishdir.
+
+13
+01:54.570 --> 02:01.660
+Shuningdek, admin sahifalarini guruhsiz tekis tashlab qo'yish
+va Stayger ogohlantirishlarini e'tiborsiz qoldirish xatodir.
+
+14
+02:04.710 --> 02:13.450
+Xulosa: FSD da arxitektura oldindan bashorat qilinmaydi, balki
+haqiqiy biznes takrorlanishlari asosida tabiiy o'sib boradi.
+
+15
+02:13.760 --> 02:20.220
+Keyingi o'ttiz sakkizinchi bobda FSD arxitekturasini
+kod-revyu qilish bo'yicha to'liq cheklistni ko'rib chiqamiz.
+
+16
+02:20.450 --> 02:24.910
+E'tiboringiz uchun rahmat, amaliyotda
+toza va barqaror tizimlar quring!
