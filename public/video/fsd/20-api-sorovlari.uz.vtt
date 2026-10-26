@@ -1,0 +1,80 @@
+WEBVTT
+
+1
+00:01.420 --> 00:15.700
+Salom! Bu FSD qo'llanmasining yigirmanchi bobi — API so'rovlari arxitekturasi. Bugun backend bilan frontend
+o'rtasidagi ma'lumotlar almashinuvini FSD qoidalariga mos ravishda to'g'ri tashkil qilishni o'rganamiz.
+
+2
+00:16.910 --> 00:25.830
+Har bir komponent ichida tarqoq fetch yozish o'rniga, markazlashgan va
+qatlamli API strukturasi loyiha barqarorligining mustahkam kafolatidir.
+
+3
+00:27.780 --> 00:38.590
+Barcha umumiy so'rov mantiqi shared/api qatlamidan boshlanadi: HTTP
+klient, asosiy URL, sarlavhalar, sessiya cookie va xatoliklar modeli.
+
+4
+00:38.780 --> 00:46.180
+client.ts har qanday so'rovni yagona nuqtadan o'tkazib,
+autentifikatsiya va global xatolarni ishonchli ushlaydi.
+
+5
+00:49.270 --> 00:59.020
+Barcha endpointlarni bitta ulkan faylga yig'ish — desegmentatsiya xatosidir.
+Ularni resurslar bo'yicha shared/api/endpoints katalogiga bo'ling.
+
+6
+00:59.220 --> 01:08.030
+Masalan, product.ts, order.ts va auth.ts har biri o'zining
+so'rov funksiyalari va DTO tiplariga ega bo'ladi.
+
+7
+01:08.380 --> 01:13.930
+Bu yondashuv kodni toza, o'qilishi oson va
+jamoada o'zaro to'qnashuvlarsiz saqlaydi.
+
+8
+01:16.910 --> 01:24.480
+Agar so'rov faqat bitta sahifa yoki feature'ga kerak bo'lsa-chi?
+Masalan, bir martalik OTP kodi yoki maxsus tekshiruv.
+
+9
+01:24.710 --> 01:32.510
+Uni shared'ga chiqarish shart emas! To'g'ridan-to'g'ri o'sha
+sahifaning api katalogida yozing va public API'dan yashiring.
+
+10
+01:32.740 --> 01:36.490
+FSD ning lokallik tamoyili bu yerda ham to'liq kuchga ega.
+
+11
+01:39.560 --> 01:46.750
+Katta loyihalarda backend'dan OpenAPI sxemasi orqali
+avtomatik klient generatsiya qilish eng yaxshi amaliyotdir.
+
+12
+01:47.080 --> 01:54.420
+Generatsiya qilingan kod shared/api/openapi katalogida
+saqlanadi va uni hech qachon qo'lda tahrirlamaslik kerak.
+
+13
+01:54.750 --> 02:01.960
+DTO larni esa entities ga erta tiqmasdan, frontend domen
+modeli bilan backend o'rtasida mapper'lardan foydalaning.
+
+14
+02:04.930 --> 02:14.110
+Tipik xatolar: komponent ichida to'g'ridan-to'g'ri fetch chaqirish, barcha
+so'rovlarni bitta faylga tiqish yoki lokal so'rovni tashqariga eksport qilish.
+
+15
+02:14.420 --> 02:20.010
+Steiger linteri va toza arxitektura orqali
+bu muammolarni osongina oldini olish mumkin.
+
+16
+02:23.030 --> 02:37.950
+Xulosa: umumiy klient va endpointlarni shared/api da saqlang, lokalini sahifada qoldiring va
+generatsiyani qo'lda buzmang. Keyingi bobda Server holati — TanStack Query'ni ko'rib chiqamiz. Rahmat!
