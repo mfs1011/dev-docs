@@ -1,0 +1,1463 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Salom! Bu FSD qo'llanmasining o'ttiz uchinchi bobi — FSD ning rasmiy arxitektura linteri Steiger haqida to'liq amaliy qo'llanma.",
+    "show": "Salom! Bu FSD qo'llanmasining o'ttiz uchinchi bobi — FSD ning rasmiy arxitektura linteri Steiger haqida to'liq amaliy qo'llanma.",
+    "say": "Salom! Bu Ef-es-di qo'llanmasining o'ttiz uchinchi bobi — Ef-es-di ning rasmiy arxitektura linteri stayger haqida to'liq amaliy qo'llanma.",
+    "a0": 0.3,
+    "a1": 9.29,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.3,
+        "e": 0.66
+      },
+      {
+        "w": "Bu",
+        "s": 1.1,
+        "e": 1.18
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 1.42,
+        "e": 1.82
+      },
+      {
+        "w": "qo'llanmasining",
+        "s": 1.9,
+        "e": 2.68
+      },
+      {
+        "w": "o'ttiz",
+        "s": 2.82,
+        "e": 3.12
+      },
+      {
+        "w": "uchinchi",
+        "s": 3.16,
+        "e": 3.5
+      },
+      {
+        "w": "bobi",
+        "s": 3.56,
+        "e": 3.84
+      },
+      {
+        "w": "—",
+        "s": 3.84,
+        "e": 3.84
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 4.38,
+        "e": 4.76
+      },
+      {
+        "w": "ning",
+        "s": 4.86,
+        "e": 5.0
+      },
+      {
+        "w": "rasmiy",
+        "s": 5.04,
+        "e": 5.38
+      },
+      {
+        "w": "arxitektura",
+        "s": 5.5,
+        "e": 6.14
+      },
+      {
+        "w": "linteri",
+        "s": 6.2,
+        "e": 6.62
+      },
+      {
+        "w": "stayger",
+        "s": 6.82,
+        "e": 7.28
+      },
+      {
+        "w": "haqida",
+        "s": 7.34,
+        "e": 7.69
+      },
+      {
+        "w": "to'liq",
+        "s": 7.89,
+        "e": 8.25
+      },
+      {
+        "w": "amaliy",
+        "s": 8.39,
+        "e": 8.73
+      },
+      {
+        "w": "qo'llanma.",
+        "s": 8.81,
+        "e": 9.29
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "intro",
+    "text": "Qoidalar faqat kelishuvda qolsa, loyiha bir oyda buziladi; Steiger ularni tekshirishni CI tizimida majburiy va qat'iy qiladi.",
+    "show": "Qoidalar faqat kelishuvda qolsa, loyiha bir oyda buziladi; Steiger ularni tekshirishni CI tizimida majburiy va qat'iy qiladi.",
+    "say": "Qoidalar faqat kelishuvda qolsa, loyiha bir oyda buziladi; stayger ularni tekshirishni CI tizimida majburiy va qat'iy qiladi.",
+    "a0": 10.21,
+    "a1": 18.21,
+    "words": [
+      {
+        "w": "Qoidalar",
+        "s": 10.21,
+        "e": 10.69
+      },
+      {
+        "w": "faqat",
+        "s": 10.73,
+        "e": 11.01
+      },
+      {
+        "w": "kelishuvda",
+        "s": 11.07,
+        "e": 11.53
+      },
+      {
+        "w": "qolsa,",
+        "s": 11.59,
+        "e": 11.91
+      },
+      {
+        "w": "loyiha",
+        "s": 12.17,
+        "e": 12.55
+      },
+      {
+        "w": "bir",
+        "s": 12.69,
+        "e": 12.83
+      },
+      {
+        "w": "oyda",
+        "s": 12.95,
+        "e": 13.19
+      },
+      {
+        "w": "buziladi;",
+        "s": 13.19,
+        "e": 14.13
+      },
+      {
+        "w": "stayger",
+        "s": 14.13,
+        "e": 14.59
+      },
+      {
+        "w": "ularni",
+        "s": 14.67,
+        "e": 14.99
+      },
+      {
+        "w": "tekshirishni",
+        "s": 15.03,
+        "e": 15.59
+      },
+      {
+        "w": "CI",
+        "s": 15.83,
+        "e": 15.93
+      },
+      {
+        "w": "tizimida",
+        "s": 16.19,
+        "e": 16.57
+      },
+      {
+        "w": "majburiy",
+        "s": 16.63,
+        "e": 17.19
+      },
+      {
+        "w": "va",
+        "s": 17.29,
+        "e": 17.35
+      },
+      {
+        "w": "qat'iy",
+        "s": 17.45,
+        "e": 17.79
+      },
+      {
+        "w": "qiladi.",
+        "s": 17.89,
+        "e": 18.21
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "ornatish_va_bayroqlar",
+    "text": "Steiger va uning rasmiy plaginini o'rnatib, src papkasi ustida oddiy buyruq bilan bir marta yoki watch rejimida yurgizish mumkin.",
+    "show": "Steiger va uning rasmiy plaginini o'rnatib, src papkasi ustida oddiy buyruq bilan bir marta yoki watch rejimida yurgizish mumkin.",
+    "say": "Stayger va uning rasmiy plaginini o'rnatib, src papkasi ustida oddiy buyruq bilan bir marta yoki voch rejimida yurgizish mumkin.",
+    "a0": 18.85,
+    "a1": 26.84,
+    "words": [
+      {
+        "w": "Stayger",
+        "s": 18.85,
+        "e": 19.29
+      },
+      {
+        "w": "va",
+        "s": 19.35,
+        "e": 19.43
+      },
+      {
+        "w": "uning",
+        "s": 19.49,
+        "e": 19.71
+      },
+      {
+        "w": "rasmiy",
+        "s": 19.75,
+        "e": 20.07
+      },
+      {
+        "w": "plaginini",
+        "s": 20.15,
+        "e": 20.69
+      },
+      {
+        "w": "o'rnatib,",
+        "s": 20.73,
+        "e": 21.19
+      },
+      {
+        "w": "src",
+        "s": 21.65,
+        "e": 21.87
+      },
+      {
+        "w": "papkasi",
+        "s": 22.03,
+        "e": 22.43
+      },
+      {
+        "w": "ustida",
+        "s": 22.47,
+        "e": 22.78
+      },
+      {
+        "w": "oddiy",
+        "s": 22.94,
+        "e": 23.2
+      },
+      {
+        "w": "buyruq",
+        "s": 23.28,
+        "e": 23.54
+      },
+      {
+        "w": "bilan",
+        "s": 23.6,
+        "e": 23.84
+      },
+      {
+        "w": "bir",
+        "s": 24.0,
+        "e": 24.14
+      },
+      {
+        "w": "marta",
+        "s": 24.2,
+        "e": 24.5
+      },
+      {
+        "w": "yoki",
+        "s": 24.54,
+        "e": 24.88
+      },
+      {
+        "w": "voch",
+        "s": 25.26,
+        "e": 25.5
+      },
+      {
+        "w": "rejimida",
+        "s": 25.58,
+        "e": 26.0
+      },
+      {
+        "w": "yurgizish",
+        "s": 26.04,
+        "e": 26.48
+      },
+      {
+        "w": "mumkin.",
+        "s": 26.52,
+        "e": 26.84
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "ornatish_va_bayroqlar",
+    "text": "Fiks bayrog'i yetishmayotgan public API larni avtomatik tuzatadi, reporter jeyson esa CI uchun mashina tushunadigan hisobot beradi.",
+    "show": "Fiks bayrog'i yetishmayotgan public API larni avtomatik tuzatadi, reporter jeyson esa CI uchun mashina tushunadigan hisobot beradi.",
+    "say": "Fiks bayrog'i yetishmayotgan public ey-pi-ay larni avtomatik tuzatadi, riporter jeyson esa CI uchun mashina tushunadigan hisobot beradi.",
+    "a0": 27.3,
+    "a1": 35.56,
+    "words": [
+      {
+        "w": "Fiks",
+        "s": 27.3,
+        "e": 27.56
+      },
+      {
+        "w": "bayrog'i",
+        "s": 27.62,
+        "e": 28.02
+      },
+      {
+        "w": "yetishmayotgan",
+        "s": 28.1,
+        "e": 28.74
+      },
+      {
+        "w": "public",
+        "s": 28.82,
+        "e": 29.18
+      },
+      {
+        "w": "ey-pi-ay",
+        "s": 29.28,
+        "e": 29.62
+      },
+      {
+        "w": "larni",
+        "s": 29.66,
+        "e": 29.9
+      },
+      {
+        "w": "avtomatik",
+        "s": 30.02,
+        "e": 30.52
+      },
+      {
+        "w": "tuzatadi,",
+        "s": 30.54,
+        "e": 31.02
+      },
+      {
+        "w": "riporter",
+        "s": 31.44,
+        "e": 31.9
+      },
+      {
+        "w": "jeyson",
+        "s": 31.98,
+        "e": 32.36
+      },
+      {
+        "w": "esa",
+        "s": 32.42,
+        "e": 32.6
+      },
+      {
+        "w": "CI",
+        "s": 32.94,
+        "e": 33.0
+      },
+      {
+        "w": "uchun",
+        "s": 33.24,
+        "e": 33.48
+      },
+      {
+        "w": "mashina",
+        "s": 33.66,
+        "e": 34.08
+      },
+      {
+        "w": "tushunadigan",
+        "s": 34.12,
+        "e": 34.66
+      },
+      {
+        "w": "hisobot",
+        "s": 34.74,
+        "e": 35.18
+      },
+      {
+        "w": "beradi.",
+        "s": 35.24,
+        "e": 35.56
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "ornatish_va_bayroqlar",
+    "text": "Agar bitta xato topilsa ham, Steiger birinchi chiqish kodi bilan tugaydi va CI da nosoz pull requestni darhol to'xtatadi.",
+    "show": "Agar bitta xato topilsa ham, Steiger birinchi chiqish kodi bilan tugaydi va CI da nosoz pull requestni darhol to'xtatadi.",
+    "say": "Agar bitta xato topilsa ham, stayger birinchi chiqish kodi bilan tugaydi va CI da nosoz pul rekvestni darhol to'xtatadi.",
+    "a0": 36.1,
+    "a1": 43.51,
+    "words": [
+      {
+        "w": "Agar",
+        "s": 36.1,
+        "e": 36.36
+      },
+      {
+        "w": "bitta",
+        "s": 36.48,
+        "e": 36.74
+      },
+      {
+        "w": "xato",
+        "s": 36.8,
+        "e": 37.0
+      },
+      {
+        "w": "topilsa",
+        "s": 37.08,
+        "e": 37.46
+      },
+      {
+        "w": "ham,",
+        "s": 37.53,
+        "e": 37.67
+      },
+      {
+        "w": "stayger",
+        "s": 37.99,
+        "e": 38.43
+      },
+      {
+        "w": "birinchi",
+        "s": 38.53,
+        "e": 38.89
+      },
+      {
+        "w": "chiqish",
+        "s": 38.93,
+        "e": 39.19
+      },
+      {
+        "w": "kodi",
+        "s": 39.25,
+        "e": 39.45
+      },
+      {
+        "w": "bilan",
+        "s": 39.49,
+        "e": 39.69
+      },
+      {
+        "w": "tugaydi",
+        "s": 39.73,
+        "e": 40.11
+      },
+      {
+        "w": "va",
+        "s": 40.15,
+        "e": 40.23
+      },
+      {
+        "w": "CI",
+        "s": 40.57,
+        "e": 40.89
+      },
+      {
+        "w": "da",
+        "s": 40.93,
+        "e": 41.03
+      },
+      {
+        "w": "nosoz",
+        "s": 41.25,
+        "e": 41.69
+      },
+      {
+        "w": "pul",
+        "s": 41.75,
+        "e": 41.91
+      },
+      {
+        "w": "rekvestni",
+        "s": 41.97,
+        "e": 42.47
+      },
+      {
+        "w": "darhol",
+        "s": 42.61,
+        "e": 42.99
+      },
+      {
+        "w": "to'xtatadi.",
+        "s": 43.03,
+        "e": 43.51
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "asosiy_qoidalar",
+    "text": "Tavsiya etilgan to'plamdagi o'n yetti qoida yuqoriga import, cross-import va public API ni chetlab o'tishni to'liq ushlaydi.",
+    "show": "Tavsiya etilgan to'plamdagi o'n yetti qoida yuqoriga import, cross-import va public API ni chetlab o'tishni to'liq ushlaydi.",
+    "say": "Tavsiya etilgan to'plamdagi o'n yetti qoida yuqoriga import, kross-import va public ey-pi-ay ni chetlab o'tishni to'liq ushlaydi.",
+    "a0": 44.05,
+    "a1": 51.17,
+    "words": [
+      {
+        "w": "Tavsiya",
+        "s": 44.05,
+        "e": 44.39
+      },
+      {
+        "w": "etilgan",
+        "s": 44.45,
+        "e": 44.79
+      },
+      {
+        "w": "to'plamdagi",
+        "s": 44.83,
+        "e": 45.41
+      },
+      {
+        "w": "o'n",
+        "s": 45.59,
+        "e": 45.71
+      },
+      {
+        "w": "yetti",
+        "s": 45.79,
+        "e": 46.07
+      },
+      {
+        "w": "qoida",
+        "s": 46.13,
+        "e": 46.47
+      },
+      {
+        "w": "yuqoriga",
+        "s": 46.57,
+        "e": 47.03
+      },
+      {
+        "w": "import,",
+        "s": 47.17,
+        "e": 47.53
+      },
+      {
+        "w": "kross-import",
+        "s": 47.69,
+        "e": 48.37
+      },
+      {
+        "w": "va",
+        "s": 48.43,
+        "e": 48.49
+      },
+      {
+        "w": "public",
+        "s": 48.55,
+        "e": 48.91
+      },
+      {
+        "w": "ey-pi-ay",
+        "s": 49.01,
+        "e": 49.33
+      },
+      {
+        "w": "ni",
+        "s": 49.39,
+        "e": 49.45
+      },
+      {
+        "w": "chetlab",
+        "s": 49.49,
+        "e": 49.83
+      },
+      {
+        "w": "o'tishni",
+        "s": 49.87,
+        "e": 50.19
+      },
+      {
+        "w": "to'liq",
+        "s": 50.37,
+        "e": 50.65
+      },
+      {
+        "w": "ushlaydi.",
+        "s": 50.75,
+        "e": 51.17
+      }
+    ]
+  },
+  {
+    "id": "L7",
+    "scene": "asosiy_qoidalar",
+    "text": "Segments-by-purpose qoidasi esa components, utils yoki services kabi eski tur nomlarini keskin taqiqlaydi.",
+    "show": "Segments-by-purpose qoidasi esa components, utils yoki services kabi eski tur nomlarini keskin taqiqlaydi.",
+    "say": "Segments bay porpos qoidasi esa komponents, yutils yoki services kabi eski tur nomlarini keskin taqiqlaydi.",
+    "a0": 51.77,
+    "a1": 59.1,
+    "words": [
+      {
+        "w": "Segments",
+        "s": 51.77,
+        "e": 52.21
+      },
+      {
+        "w": "bay",
+        "s": 52.29,
+        "e": 52.43
+      },
+      {
+        "w": "porpos",
+        "s": 52.49,
+        "e": 52.86
+      },
+      {
+        "w": "qoidasi",
+        "s": 52.9,
+        "e": 53.32
+      },
+      {
+        "w": "esa",
+        "s": 53.38,
+        "e": 53.56
+      },
+      {
+        "w": "komponents,",
+        "s": 53.9,
+        "e": 54.56
+      },
+      {
+        "w": "yutils",
+        "s": 54.78,
+        "e": 55.22
+      },
+      {
+        "w": "yoki",
+        "s": 55.32,
+        "e": 55.52
+      },
+      {
+        "w": "services",
+        "s": 55.86,
+        "e": 56.36
+      },
+      {
+        "w": "kabi",
+        "s": 56.4,
+        "e": 56.64
+      },
+      {
+        "w": "eski",
+        "s": 56.82,
+        "e": 57.08
+      },
+      {
+        "w": "tur",
+        "s": 57.16,
+        "e": 57.3
+      },
+      {
+        "w": "nomlarini",
+        "s": 57.36,
+        "e": 57.88
+      },
+      {
+        "w": "keskin",
+        "s": 58.04,
+        "e": 58.46
+      },
+      {
+        "w": "taqiqlaydi.",
+        "s": 58.52,
+        "e": 59.1
+      }
+    ]
+  },
+  {
+    "id": "L8",
+    "scene": "konfiguratsiya_va_istisnolar",
+    "text": "Loyiha ildizidagi stayger konfig faylida qoidalarga ESLint flat konfig kabi fayllar bo'yicha istisno berish mumkin.",
+    "show": "Loyiha ildizidagi stayger konfig faylida qoidalarga ESLint flat konfig kabi fayllar bo'yicha istisno berish mumkin.",
+    "say": "Loyiha ildizidagi stayger konfig faylida qoidalarga ESLint flet konfig kabi fayllar bo'yicha istisno berish mumkin.",
+    "a0": 59.64,
+    "a1": 66.52,
+    "words": [
+      {
+        "w": "Loyiha",
+        "s": 59.64,
+        "e": 60.04
+      },
+      {
+        "w": "ildizidagi",
+        "s": 60.04,
+        "e": 60.54
+      },
+      {
+        "w": "stayger",
+        "s": 60.64,
+        "e": 61.06
+      },
+      {
+        "w": "konfig",
+        "s": 61.12,
+        "e": 61.5
+      },
+      {
+        "w": "faylida",
+        "s": 61.54,
+        "e": 61.94
+      },
+      {
+        "w": "qoidalarga",
+        "s": 62.1,
+        "e": 62.66
+      },
+      {
+        "w": "ESLint",
+        "s": 63.14,
+        "e": 63.5
+      },
+      {
+        "w": "flet",
+        "s": 63.54,
+        "e": 63.8
+      },
+      {
+        "w": "konfig",
+        "s": 63.86,
+        "e": 64.24
+      },
+      {
+        "w": "kabi",
+        "s": 64.28,
+        "e": 64.5
+      },
+      {
+        "w": "fayllar",
+        "s": 64.56,
+        "e": 64.94
+      },
+      {
+        "w": "bo'yicha",
+        "s": 65.0,
+        "e": 65.28
+      },
+      {
+        "w": "istisno",
+        "s": 65.4,
+        "e": 65.84
+      },
+      {
+        "w": "berish",
+        "s": 65.9,
+        "e": 66.18
+      },
+      {
+        "w": "mumkin.",
+        "s": 66.2,
+        "e": 66.52
+      }
+    ]
+  },
+  {
+    "id": "L9",
+    "scene": "konfiguratsiya_va_istisnolar",
+    "text": "Masalan, app qatlamidagi providers papkasi yoki Next.js dagi pastki chiziqli qatlamlar uchun qoidani asoslangan holda o'chiramiz.",
+    "show": "Masalan, app qatlamidagi providers papkasi yoki Next.js dagi pastki chiziqli qatlamlar uchun qoidani asoslangan holda o'chiramiz.",
+    "say": "Masalan, ep qatlamidagi providers papkasi yoki Nekst jey-es dagi pastki chiziqli qatlamlar uchun qoidani asoslangan holda o'chiramiz.",
+    "a0": 66.9,
+    "a1": 74.87,
+    "words": [
+      {
+        "w": "Masalan,",
+        "s": 66.9,
+        "e": 67.36
+      },
+      {
+        "w": "ep",
+        "s": 67.57,
+        "e": 67.71
+      },
+      {
+        "w": "qatlamidagi",
+        "s": 67.79,
+        "e": 68.39
+      },
+      {
+        "w": "providers",
+        "s": 68.45,
+        "e": 69.01
+      },
+      {
+        "w": "papkasi",
+        "s": 69.05,
+        "e": 69.49
+      },
+      {
+        "w": "yoki",
+        "s": 69.57,
+        "e": 69.83
+      },
+      {
+        "w": "Nekst",
+        "s": 70.07,
+        "e": 70.37
+      },
+      {
+        "w": "jey-es",
+        "s": 70.39,
+        "e": 70.67
+      },
+      {
+        "w": "dagi",
+        "s": 70.71,
+        "e": 70.91
+      },
+      {
+        "w": "pastki",
+        "s": 71.03,
+        "e": 71.33
+      },
+      {
+        "w": "chiziqli",
+        "s": 71.37,
+        "e": 71.75
+      },
+      {
+        "w": "qatlamlar",
+        "s": 71.81,
+        "e": 72.29
+      },
+      {
+        "w": "uchun",
+        "s": 72.33,
+        "e": 72.53
+      },
+      {
+        "w": "qoidani",
+        "s": 72.61,
+        "e": 73.03
+      },
+      {
+        "w": "asoslangan",
+        "s": 73.39,
+        "e": 74.07
+      },
+      {
+        "w": "holda",
+        "s": 74.13,
+        "e": 74.39
+      },
+      {
+        "w": "o'chiramiz.",
+        "s": 74.43,
+        "e": 74.87
+      }
+    ]
+  },
+  {
+    "id": "L10",
+    "scene": "ci_va_katta_loyihalar",
+    "text": "GitHub Actions da lint fsd skripti npm ci dan so'ng darhol ishga tushib, kod sifatini nazorat qiladi.",
+    "show": "GitHub Actions da lint fsd skripti npm ci dan so'ng darhol ishga tushib, kod sifatini nazorat qiladi.",
+    "say": "GitHub Actions da lint ef-es-di skripti npm ci dan so'ng darhol ishga tushib, kod sifatini nazorat qiladi.",
+    "a0": 75.55,
+    "a1": 82.17,
+    "words": [
+      {
+        "w": "GitHub",
+        "s": 75.55,
+        "e": 75.93
+      },
+      {
+        "w": "Actions",
+        "s": 76.03,
+        "e": 76.35
+      },
+      {
+        "w": "da",
+        "s": 76.39,
+        "e": 76.49
+      },
+      {
+        "w": "lint",
+        "s": 76.77,
+        "e": 77.01
+      },
+      {
+        "w": "ef-es-di",
+        "s": 77.11,
+        "e": 77.51
+      },
+      {
+        "w": "skripti",
+        "s": 77.57,
+        "e": 77.99
+      },
+      {
+        "w": "npm",
+        "s": 78.29,
+        "e": 78.59
+      },
+      {
+        "w": "ci",
+        "s": 78.65,
+        "e": 78.89
+      },
+      {
+        "w": "dan",
+        "s": 78.95,
+        "e": 79.09
+      },
+      {
+        "w": "so'ng",
+        "s": 79.15,
+        "e": 79.35
+      },
+      {
+        "w": "darhol",
+        "s": 79.43,
+        "e": 79.81
+      },
+      {
+        "w": "ishga",
+        "s": 79.83,
+        "e": 80.03
+      },
+      {
+        "w": "tushib,",
+        "s": 80.09,
+        "e": 80.35
+      },
+      {
+        "w": "kod",
+        "s": 80.63,
+        "e": 80.81
+      },
+      {
+        "w": "sifatini",
+        "s": 80.85,
+        "e": 81.31
+      },
+      {
+        "w": "nazorat",
+        "s": 81.37,
+        "e": 81.83
+      },
+      {
+        "w": "qiladi.",
+        "s": 81.87,
+        "e": 82.17
+      }
+    ]
+  },
+  {
+    "id": "L11",
+    "scene": "ci_va_katta_loyihalar",
+    "text": "Katta loyihalarga kiritishda avval ignore-warnings bilan faqat xatolarni ko'rib, bosqichma-bosqich bartaraf etish tavsiya qilinadi.",
+    "show": "Katta loyihalarga kiritishda avval ignore-warnings bilan faqat xatolarni ko'rib, bosqichma-bosqich bartaraf etish tavsiya qilinadi.",
+    "say": "Katta loyihalarga kiritishda avval ignor vorningz bilan faqat xatolarni ko'rib, bosqichma-bosqich bartaraf etish tavsiya qilinadi.",
+    "a0": 82.8,
+    "a1": 90.12,
+    "words": [
+      {
+        "w": "Katta",
+        "s": 82.8,
+        "e": 83.1
+      },
+      {
+        "w": "loyihalarga",
+        "s": 83.14,
+        "e": 83.7
+      },
+      {
+        "w": "kiritishda",
+        "s": 83.76,
+        "e": 84.24
+      },
+      {
+        "w": "avval",
+        "s": 84.42,
+        "e": 84.72
+      },
+      {
+        "w": "ignor",
+        "s": 84.86,
+        "e": 85.18
+      },
+      {
+        "w": "vorningz",
+        "s": 85.26,
+        "e": 85.68
+      },
+      {
+        "w": "bilan",
+        "s": 85.72,
+        "e": 85.94
+      },
+      {
+        "w": "faqat",
+        "s": 86.08,
+        "e": 86.36
+      },
+      {
+        "w": "xatolarni",
+        "s": 86.44,
+        "e": 87.02
+      },
+      {
+        "w": "ko'rib,",
+        "s": 87.08,
+        "e": 87.38
+      },
+      {
+        "w": "bosqichma-bosqich",
+        "s": 87.66,
+        "e": 88.56
+      },
+      {
+        "w": "bartaraf",
+        "s": 88.62,
+        "e": 89.06
+      },
+      {
+        "w": "etish",
+        "s": 89.12,
+        "e": 89.34
+      },
+      {
+        "w": "tavsiya",
+        "s": 89.36,
+        "e": 89.7
+      },
+      {
+        "w": "qilinadi.",
+        "s": 89.74,
+        "e": 90.12
+      }
+    ]
+  },
+  {
+    "id": "L12",
+    "scene": "tipik_xatolar",
+    "text": "Tipik xatolar — Steigerni faqat lokalda ushlab, CI ga qo'shmaslik va xatolarni tahlil qilmasdan qoidalarni shunchaki o'chirib tashlashdir.",
+    "show": "Tipik xatolar — Steigerni faqat lokalda ushlab, CI ga qo'shmaslik va xatolarni tahlil qilmasdan qoidalarni shunchaki o'chirib tashlashdir.",
+    "say": "Tipik xatolar — Steigerni faqat lokalda ushlab, CI ga qo'shmaslik va xatolarni tahlil qilmasdan qoidalarni shunchaki o'chirib tashlashdir.",
+    "a0": 90.76,
+    "a1": 99.05,
+    "words": [
+      {
+        "w": "Tipik",
+        "s": 90.76,
+        "e": 91.12
+      },
+      {
+        "w": "xatolar",
+        "s": 91.18,
+        "e": 91.68
+      },
+      {
+        "w": "—",
+        "s": 91.68,
+        "e": 91.68
+      },
+      {
+        "w": "Steigerni",
+        "s": 92.04,
+        "e": 92.56
+      },
+      {
+        "w": "faqat",
+        "s": 92.64,
+        "e": 92.94
+      },
+      {
+        "w": "lokalda",
+        "s": 93.04,
+        "e": 93.44
+      },
+      {
+        "w": "ushlab,",
+        "s": 93.5,
+        "e": 93.82
+      },
+      {
+        "w": "CI",
+        "s": 93.94,
+        "e": 94.02
+      },
+      {
+        "w": "ga",
+        "s": 94.24,
+        "e": 94.32
+      },
+      {
+        "w": "qo'shmaslik",
+        "s": 94.4,
+        "e": 95.0
+      },
+      {
+        "w": "va",
+        "s": 95.26,
+        "e": 95.34
+      },
+      {
+        "w": "xatolarni",
+        "s": 95.4,
+        "e": 95.96
+      },
+      {
+        "w": "tahlil",
+        "s": 96.02,
+        "e": 96.34
+      },
+      {
+        "w": "qilmasdan",
+        "s": 96.36,
+        "e": 96.82
+      },
+      {
+        "w": "qoidalarni",
+        "s": 96.88,
+        "e": 97.46
+      },
+      {
+        "w": "shunchaki",
+        "s": 97.57,
+        "e": 98.01
+      },
+      {
+        "w": "o'chirib",
+        "s": 98.17,
+        "e": 98.49
+      },
+      {
+        "w": "tashlashdir.",
+        "s": 98.51,
+        "e": 99.05
+      }
+    ]
+  },
+  {
+    "id": "L13",
+    "scene": "tipik_xatolar",
+    "text": "Shuningdek, te-es-konfig da et aliasi noto'g'ri sozlansa, Steiger importlarni topolmay, soxta xatolar chiqaradi.",
+    "show": "Shuningdek, te-es-konfig da et aliasi noto'g'ri sozlansa, Steiger importlarni topolmay, soxta xatolar chiqaradi.",
+    "say": "Shuningdek, te-es konfig da et aliasi noto'g'ri sozlansa, stayger importlarni topolmay, soxta xatolar chiqaradi.",
+    "a0": 99.51,
+    "a1": 106.19,
+    "words": [
+      {
+        "w": "Shuningdek,",
+        "s": 99.51,
+        "e": 99.93
+      },
+      {
+        "w": "te-es",
+        "s": 100.09,
+        "e": 100.37
+      },
+      {
+        "w": "konfig",
+        "s": 100.41,
+        "e": 100.75
+      },
+      {
+        "w": "da",
+        "s": 100.79,
+        "e": 100.87
+      },
+      {
+        "w": "et",
+        "s": 101.27,
+        "e": 101.39
+      },
+      {
+        "w": "aliasi",
+        "s": 101.51,
+        "e": 101.93
+      },
+      {
+        "w": "noto'g'ri",
+        "s": 101.99,
+        "e": 102.43
+      },
+      {
+        "w": "sozlansa,",
+        "s": 102.47,
+        "e": 102.93
+      },
+      {
+        "w": "stayger",
+        "s": 103.25,
+        "e": 103.65
+      },
+      {
+        "w": "importlarni",
+        "s": 103.75,
+        "e": 104.29
+      },
+      {
+        "w": "topolmay,",
+        "s": 104.35,
+        "e": 104.85
+      },
+      {
+        "w": "soxta",
+        "s": 104.93,
+        "e": 105.23
+      },
+      {
+        "w": "xatolar",
+        "s": 105.29,
+        "e": 105.75
+      },
+      {
+        "w": "chiqaradi.",
+        "s": 105.79,
+        "e": 106.19
+      }
+    ]
+  },
+  {
+    "id": "L14",
+    "scene": "xulosa",
+    "text": "Xulosa: Steiger — jamoada FSD intizomini saqlash va arxitektura buzilishining oldini olish uchun eng ishonchli vositadir.",
+    "show": "Xulosa: Steiger — jamoada FSD intizomini saqlash va arxitektura buzilishining oldini olish uchun eng ishonchli vositadir.",
+    "say": "Xulosa: stayger — jamoada Ef-es-di intizomini saqlash va arxitektura buzilishining oldini olish uchun eng ishonchli vositadir.",
+    "a0": 106.73,
+    "a1": 114.3,
+    "words": [
+      {
+        "w": "Xulosa:",
+        "s": 106.73,
+        "e": 107.19
+      },
+      {
+        "w": "stayger",
+        "s": 107.63,
+        "e": 108.09
+      },
+      {
+        "w": "—",
+        "s": 108.09,
+        "e": 108.09
+      },
+      {
+        "w": "jamoada",
+        "s": 108.25,
+        "e": 108.71
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 108.87,
+        "e": 109.27
+      },
+      {
+        "w": "intizomini",
+        "s": 109.33,
+        "e": 109.83
+      },
+      {
+        "w": "saqlash",
+        "s": 109.87,
+        "e": 110.29
+      },
+      {
+        "w": "va",
+        "s": 110.35,
+        "e": 110.41
+      },
+      {
+        "w": "arxitektura",
+        "s": 110.59,
+        "e": 111.19
+      },
+      {
+        "w": "buzilishining",
+        "s": 111.23,
+        "e": 111.75
+      },
+      {
+        "w": "oldini",
+        "s": 111.85,
+        "e": 112.13
+      },
+      {
+        "w": "olish",
+        "s": 112.19,
+        "e": 112.39
+      },
+      {
+        "w": "uchun",
+        "s": 112.43,
+        "e": 112.66
+      },
+      {
+        "w": "eng",
+        "s": 112.92,
+        "e": 113.06
+      },
+      {
+        "w": "ishonchli",
+        "s": 113.16,
+        "e": 113.64
+      },
+      {
+        "w": "vositadir.",
+        "s": 113.72,
+        "e": 114.3
+      }
+    ]
+  },
+  {
+    "id": "L15",
+    "scene": "xulosa",
+    "text": "Keyingi o'ttiz to'rtinchi bobda ESLint, TypeScript va aliaslar sozlamalarini Steiger bilan birga integratsiya qilamiz.",
+    "show": "Keyingi o'ttiz to'rtinchi bobda ESLint, TypeScript va aliaslar sozlamalarini Steiger bilan birga integratsiya qilamiz.",
+    "say": "Keyingi o'ttiz to'rtinchi bobda ESLint, Taypskript va aliaslar sozlamalarini stayger bilan birga integratsiya qilamiz.",
+    "a0": 114.86,
+    "a1": 121.24,
+    "words": [
+      {
+        "w": "Keyingi",
+        "s": 114.86,
+        "e": 115.22
+      },
+      {
+        "w": "o'ttiz",
+        "s": 115.28,
+        "e": 115.5
+      },
+      {
+        "w": "to'rtinchi",
+        "s": 115.54,
+        "e": 115.94
+      },
+      {
+        "w": "bobda",
+        "s": 115.98,
+        "e": 116.28
+      },
+      {
+        "w": "ESLint,",
+        "s": 116.58,
+        "e": 117.02
+      },
+      {
+        "w": "Taypskript",
+        "s": 117.16,
+        "e": 117.74
+      },
+      {
+        "w": "va",
+        "s": 117.82,
+        "e": 117.88
+      },
+      {
+        "w": "aliaslar",
+        "s": 118.02,
+        "e": 118.46
+      },
+      {
+        "w": "sozlamalarini",
+        "s": 118.5,
+        "e": 119.14
+      },
+      {
+        "w": "stayger",
+        "s": 119.24,
+        "e": 119.66
+      },
+      {
+        "w": "bilan",
+        "s": 119.7,
+        "e": 119.9
+      },
+      {
+        "w": "birga",
+        "s": 119.92,
+        "e": 120.14
+      },
+      {
+        "w": "integratsiya",
+        "s": 120.26,
+        "e": 120.84
+      },
+      {
+        "w": "qilamiz.",
+        "s": 120.88,
+        "e": 121.24
+      }
+    ]
+  },
+  {
+    "id": "L16",
+    "scene": "xulosa",
+    "text": "E'tiboringiz uchun rahmat, FSD arxitekturasini mustahkam o'rganishda davom eting!",
+    "show": "E'tiboringiz uchun rahmat, FSD arxitekturasini mustahkam o'rganishda davom eting!",
+    "say": "E'tiboringiz uchun rahmat, Ef-es-di arxitekturasini mustahkam o'rganishda davom eting!",
+    "a0": 121.83,
+    "a1": 126.56,
+    "words": [
+      {
+        "w": "E'tiboringiz",
+        "s": 121.83,
+        "e": 122.43
+      },
+      {
+        "w": "uchun",
+        "s": 122.47,
+        "e": 122.67
+      },
+      {
+        "w": "rahmat,",
+        "s": 122.71,
+        "e": 123.07
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 123.41,
+        "e": 123.77
+      },
+      {
+        "w": "arxitekturasini",
+        "s": 123.83,
+        "e": 124.65
+      },
+      {
+        "w": "mustahkam",
+        "s": 124.79,
+        "e": 125.34
+      },
+      {
+        "w": "o'rganishda",
+        "s": 125.38,
+        "e": 125.88
+      },
+      {
+        "w": "davom",
+        "s": 125.94,
+        "e": 126.26
+      },
+      {
+        "w": "eting!",
+        "s": 126.3,
+        "e": 126.56
+      }
+    ]
+  }
+]
