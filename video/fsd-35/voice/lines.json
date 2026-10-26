@@ -1,0 +1,1408 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Salom! Bu FSD qo'llanmasining o'ttiz beshinchi bobi — FSD arxitekturasida unit, komponent va integratsion testlarni to'g'ri tashkil qilish.",
+    "show": "Salom! Bu FSD qo'llanmasining o'ttiz beshinchi bobi — FSD arxitekturasida unit, komponent va integratsion testlarni to'g'ri tashkil qilish.",
+    "say": "Salom! Bu Ef-es-di qo'llanmasining o'ttiz beshinchi bobi — Ef-es-di arxitekturasida unit, komponent va integratsion testlarni to'g'ri tashkil qilish.",
+    "a0": 0.26,
+    "a1": 9.17,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.26,
+        "e": 0.56
+      },
+      {
+        "w": "Bu",
+        "s": 0.92,
+        "e": 0.98
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 1.12,
+        "e": 1.46
+      },
+      {
+        "w": "qo'llanmasining",
+        "s": 1.56,
+        "e": 2.24
+      },
+      {
+        "w": "o'ttiz",
+        "s": 2.4,
+        "e": 2.6
+      },
+      {
+        "w": "beshinchi",
+        "s": 2.64,
+        "e": 3.02
+      },
+      {
+        "w": "bobi",
+        "s": 3.08,
+        "e": 3.34
+      },
+      {
+        "w": "—",
+        "s": 3.34,
+        "e": 3.34
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 3.82,
+        "e": 4.18
+      },
+      {
+        "w": "arxitekturasida",
+        "s": 4.28,
+        "e": 5.14
+      },
+      {
+        "w": "unit,",
+        "s": 5.5,
+        "e": 5.76
+      },
+      {
+        "w": "komponent",
+        "s": 6.06,
+        "e": 6.6
+      },
+      {
+        "w": "va",
+        "s": 6.68,
+        "e": 6.76
+      },
+      {
+        "w": "integratsion",
+        "s": 6.96,
+        "e": 7.53
+      },
+      {
+        "w": "testlarni",
+        "s": 7.57,
+        "e": 8.07
+      },
+      {
+        "w": "to'g'ri",
+        "s": 8.21,
+        "e": 8.51
+      },
+      {
+        "w": "tashkil",
+        "s": 8.55,
+        "e": 8.87
+      },
+      {
+        "w": "qilish.",
+        "s": 8.93,
+        "e": 9.17
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "intro",
+    "text": "Asosiy tamoyil: test har doim o'zi tekshiradigan kod yonida turishi kerak; slice ko'chsa, testlar ham u bilan birga ko'chadi.",
+    "show": "Asosiy tamoyil: test har doim o'zi tekshiradigan kod yonida turishi kerak; slice ko'chsa, testlar ham u bilan birga ko'chadi.",
+    "say": "Asosiy tamoyil: test har doim o'zi tekshiradigan kod yonida turishi kerak; slays ko'chsa, testlar ham u bilan birga ko'chadi.",
+    "a0": 10.01,
+    "a1": 16.95,
+    "words": [
+      {
+        "w": "Asosiy",
+        "s": 10.01,
+        "e": 10.35
+      },
+      {
+        "w": "tamoyil:",
+        "s": 10.39,
+        "e": 10.81
+      },
+      {
+        "w": "test",
+        "s": 11.13,
+        "e": 11.37
+      },
+      {
+        "w": "har",
+        "s": 11.41,
+        "e": 11.59
+      },
+      {
+        "w": "doim",
+        "s": 11.65,
+        "e": 11.89
+      },
+      {
+        "w": "o'zi",
+        "s": 12.01,
+        "e": 12.19
+      },
+      {
+        "w": "tekshiradigan",
+        "s": 12.23,
+        "e": 12.85
+      },
+      {
+        "w": "kod",
+        "s": 12.93,
+        "e": 13.11
+      },
+      {
+        "w": "yonida",
+        "s": 13.11,
+        "e": 13.49
+      },
+      {
+        "w": "turishi",
+        "s": 13.53,
+        "e": 13.77
+      },
+      {
+        "w": "kerak;",
+        "s": 13.77,
+        "e": 14.47
+      },
+      {
+        "w": "slays",
+        "s": 14.47,
+        "e": 14.77
+      },
+      {
+        "w": "ko'chsa,",
+        "s": 14.81,
+        "e": 15.19
+      },
+      {
+        "w": "testlar",
+        "s": 15.41,
+        "e": 15.77
+      },
+      {
+        "w": "ham",
+        "s": 15.81,
+        "e": 15.95
+      },
+      {
+        "w": "u",
+        "s": 16.03,
+        "e": 16.05
+      },
+      {
+        "w": "bilan",
+        "s": 16.09,
+        "e": 16.29
+      },
+      {
+        "w": "birga",
+        "s": 16.33,
+        "e": 16.55
+      },
+      {
+        "w": "ko'chadi.",
+        "s": 16.59,
+        "e": 16.95
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "test_turlari_va_joylashuv",
+    "text": "Sof biznes funksiyalari lib papkasida format-prays nuqta test nuqta te-es kabi birlik testlar bilan qamrab olinadi.",
+    "show": "Sof biznes funksiyalari lib papkasida format-prays nuqta test nuqta te-es kabi birlik testlar bilan qamrab olinadi.",
+    "say": "Sof biznes funksiyalari lib papkasida format-prays nuqta test nuqta te-es kabi birlik testlar bilan qamrab olinadi.",
+    "a0": 17.79,
+    "a1": 24.4,
+    "words": [
+      {
+        "w": "Sof",
+        "s": 17.79,
+        "e": 17.99
+      },
+      {
+        "w": "biznes",
+        "s": 18.09,
+        "e": 18.41
+      },
+      {
+        "w": "funksiyalari",
+        "s": 18.45,
+        "e": 19.05
+      },
+      {
+        "w": "lib",
+        "s": 19.25,
+        "e": 19.41
+      },
+      {
+        "w": "papkasida",
+        "s": 19.45,
+        "e": 20.01
+      },
+      {
+        "w": "format-prays",
+        "s": 20.27,
+        "e": 21.01
+      },
+      {
+        "w": "nuqta",
+        "s": 21.07,
+        "e": 21.33
+      },
+      {
+        "w": "test",
+        "s": 21.45,
+        "e": 21.69
+      },
+      {
+        "w": "nuqta",
+        "s": 21.73,
+        "e": 21.99
+      },
+      {
+        "w": "te-es",
+        "s": 22.09,
+        "e": 22.39
+      },
+      {
+        "w": "kabi",
+        "s": 22.43,
+        "e": 22.68
+      },
+      {
+        "w": "birlik",
+        "s": 22.76,
+        "e": 23.04
+      },
+      {
+        "w": "testlar",
+        "s": 23.08,
+        "e": 23.42
+      },
+      {
+        "w": "bilan",
+        "s": 23.44,
+        "e": 23.62
+      },
+      {
+        "w": "qamrab",
+        "s": 23.7,
+        "e": 24.02
+      },
+      {
+        "w": "olinadi.",
+        "s": 24.08,
+        "e": 24.4
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "test_turlari_va_joylashuv",
+    "text": "Komponent testlari bevosita komponent yonida, sahifa integratsiyasi esa slice ichidagi test papkasida saqlanadi.",
+    "show": "Komponent testlari bevosita komponent yonida, sahifa integratsiyasi esa slice ichidagi test papkasida saqlanadi.",
+    "say": "Komponent testlari bevosita komponent yonida, sahifa integratsiyasi esa slays ichidagi test papkasida saqlanadi.",
+    "a0": 25.14,
+    "a1": 31.64,
+    "words": [
+      {
+        "w": "Komponent",
+        "s": 25.14,
+        "e": 25.62
+      },
+      {
+        "w": "testlari",
+        "s": 25.64,
+        "e": 26.08
+      },
+      {
+        "w": "bevosita",
+        "s": 26.2,
+        "e": 26.72
+      },
+      {
+        "w": "komponent",
+        "s": 26.76,
+        "e": 27.24
+      },
+      {
+        "w": "yonida,",
+        "s": 27.26,
+        "e": 27.68
+      },
+      {
+        "w": "sahifa",
+        "s": 28.04,
+        "e": 28.38
+      },
+      {
+        "w": "integratsiyasi",
+        "s": 28.44,
+        "e": 29.06
+      },
+      {
+        "w": "esa",
+        "s": 29.12,
+        "e": 29.28
+      },
+      {
+        "w": "slays",
+        "s": 29.48,
+        "e": 29.78
+      },
+      {
+        "w": "ichidagi",
+        "s": 29.82,
+        "e": 30.2
+      },
+      {
+        "w": "test",
+        "s": 30.34,
+        "e": 30.56
+      },
+      {
+        "w": "papkasida",
+        "s": 30.6,
+        "e": 31.08
+      },
+      {
+        "w": "saqlanadi.",
+        "s": 31.14,
+        "e": 31.64
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "test_turlari_va_joylashuv",
+    "text": "Butun tizimni tekshiruvchi Playwright E2E testlari esa src dan tashqarida, ildizdagi e2e papkasida yashaydi.",
+    "show": "Butun tizimni tekshiruvchi Playwright E2E testlari esa src dan tashqarida, ildizdagi e2e papkasida yashaydi.",
+    "say": "Butun tizimni tekshiruvchi Pleyrayt I-tu-i testlari esa src dan tashqarida, ildizdagi i-tu-i papkasida yashaydi.",
+    "a0": 32.44,
+    "a1": 39.39,
+    "words": [
+      {
+        "w": "Butun",
+        "s": 32.44,
+        "e": 32.68
+      },
+      {
+        "w": "tizimni",
+        "s": 32.72,
+        "e": 33.04
+      },
+      {
+        "w": "tekshiruvchi",
+        "s": 33.08,
+        "e": 33.64
+      },
+      {
+        "w": "Pleyrayt",
+        "s": 33.84,
+        "e": 34.36
+      },
+      {
+        "w": "I-tu-i",
+        "s": 34.48,
+        "e": 34.84
+      },
+      {
+        "w": "testlari",
+        "s": 34.94,
+        "e": 35.34
+      },
+      {
+        "w": "esa",
+        "s": 35.38,
+        "e": 35.58
+      },
+      {
+        "w": "src",
+        "s": 35.92,
+        "e": 36.14
+      },
+      {
+        "w": "dan",
+        "s": 36.28,
+        "e": 36.42
+      },
+      {
+        "w": "tashqarida,",
+        "s": 36.46,
+        "e": 36.94
+      },
+      {
+        "w": "ildizdagi",
+        "s": 37.3,
+        "e": 37.85
+      },
+      {
+        "w": "i-tu-i",
+        "s": 38.03,
+        "e": 38.39
+      },
+      {
+        "w": "papkasida",
+        "s": 38.49,
+        "e": 38.99
+      },
+      {
+        "w": "yashaydi.",
+        "s": 39.03,
+        "e": 39.39
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "soxtalar_va_shared_testing",
+    "text": "API soxtalari va MSW serveri uchun shared testing alohida segmenti ochiladi va public API orqali eksport qilinadi.",
+    "show": "API soxtalari va MSW serveri uchun shared testing alohida segmenti ochiladi va public API orqali eksport qilinadi.",
+    "say": "Ey-pi-ay soxtalari va Em-es-dablyu serveri uchun sherd testing alohida segmenti ochiladi va public ey-pi-ay orqali eksport qilinadi.",
+    "a0": 40.25,
+    "a1": 48.07,
+    "words": [
+      {
+        "w": "Ey-pi-ay",
+        "s": 40.25,
+        "e": 40.57
+      },
+      {
+        "w": "soxtalari",
+        "s": 40.61,
+        "e": 41.09
+      },
+      {
+        "w": "va",
+        "s": 41.23,
+        "e": 41.31
+      },
+      {
+        "w": "Em-es-dablyu",
+        "s": 41.49,
+        "e": 42.11
+      },
+      {
+        "w": "serveri",
+        "s": 42.19,
+        "e": 42.57
+      },
+      {
+        "w": "uchun",
+        "s": 42.63,
+        "e": 42.87
+      },
+      {
+        "w": "sherd",
+        "s": 43.11,
+        "e": 43.51
+      },
+      {
+        "w": "testing",
+        "s": 43.81,
+        "e": 44.21
+      },
+      {
+        "w": "alohida",
+        "s": 44.27,
+        "e": 44.65
+      },
+      {
+        "w": "segmenti",
+        "s": 44.71,
+        "e": 45.11
+      },
+      {
+        "w": "ochiladi",
+        "s": 45.15,
+        "e": 45.55
+      },
+      {
+        "w": "va",
+        "s": 45.71,
+        "e": 45.77
+      },
+      {
+        "w": "public",
+        "s": 45.99,
+        "e": 46.33
+      },
+      {
+        "w": "ey-pi-ay",
+        "s": 46.43,
+        "e": 46.77
+      },
+      {
+        "w": "orqali",
+        "s": 46.87,
+        "e": 47.19
+      },
+      {
+        "w": "eksport",
+        "s": 47.35,
+        "e": 47.67
+      },
+      {
+        "w": "qilinadi.",
+        "s": 47.71,
+        "e": 48.07
+      }
+    ]
+  },
+  {
+    "id": "L7",
+    "scene": "soxtalar_va_shared_testing",
+    "text": "Diqqat: shared api mocks yoki fixtures deb nomlash qat'iyan taqiqlanadi, chunki Steiger bu nomlarni rad etadi.",
+    "show": "Diqqat: shared api mocks yoki fixtures deb nomlash qat'iyan taqiqlanadi, chunki Steiger bu nomlarni rad etadi.",
+    "say": "Diqqat: sherd ey-pi-ay moks yoki fikschers deb nomlash qat'iyan taqiqlanadi, chunki stayger bu nomlarni rad etadi.",
+    "a0": 48.67,
+    "a1": 56.2,
+    "words": [
+      {
+        "w": "Diqqat:",
+        "s": 48.67,
+        "e": 49.03
+      },
+      {
+        "w": "sherd",
+        "s": 49.49,
+        "e": 49.81
+      },
+      {
+        "w": "ey-pi-ay",
+        "s": 49.89,
+        "e": 50.33
+      },
+      {
+        "w": "moks",
+        "s": 50.63,
+        "e": 50.95
+      },
+      {
+        "w": "yoki",
+        "s": 51.01,
+        "e": 51.45
+      },
+      {
+        "w": "fikschers",
+        "s": 51.69,
+        "e": 52.17
+      },
+      {
+        "w": "deb",
+        "s": 52.21,
+        "e": 52.35
+      },
+      {
+        "w": "nomlash",
+        "s": 52.39,
+        "e": 52.74
+      },
+      {
+        "w": "qat'iyan",
+        "s": 52.82,
+        "e": 53.34
+      },
+      {
+        "w": "taqiqlanadi,",
+        "s": 53.36,
+        "e": 54.0
+      },
+      {
+        "w": "chunki",
+        "s": 54.26,
+        "e": 54.52
+      },
+      {
+        "w": "stayger",
+        "s": 54.6,
+        "e": 54.98
+      },
+      {
+        "w": "bu",
+        "s": 55.04,
+        "e": 55.12
+      },
+      {
+        "w": "nomlarni",
+        "s": 55.2,
+        "e": 55.64
+      },
+      {
+        "w": "rad",
+        "s": 55.72,
+        "e": 55.9
+      },
+      {
+        "w": "etadi.",
+        "s": 55.94,
+        "e": 56.2
+      }
+    ]
+  },
+  {
+    "id": "L8",
+    "scene": "steiger_testlarda",
+    "text": "Stayger test fayllarini oddiy dastur kodi kabi to'liq tahlil qiladi va qatlamlar chegarasini qat'iy nazorat qiladi.",
+    "show": "Stayger test fayllarini oddiy dastur kodi kabi to'liq tahlil qiladi va qatlamlar chegarasini qat'iy nazorat qiladi.",
+    "say": "Stayger test fayllarini oddiy dastur kodi kabi to'liq tahlil qiladi va qatlamlar chegarasini qat'iy nazorat qiladi.",
+    "a0": 57.0,
+    "a1": 63.3,
+    "words": [
+      {
+        "w": "Stayger",
+        "s": 57.0,
+        "e": 57.38
+      },
+      {
+        "w": "test",
+        "s": 57.44,
+        "e": 57.62
+      },
+      {
+        "w": "fayllarini",
+        "s": 57.66,
+        "e": 58.18
+      },
+      {
+        "w": "oddiy",
+        "s": 58.38,
+        "e": 58.64
+      },
+      {
+        "w": "dastur",
+        "s": 58.7,
+        "e": 59.04
+      },
+      {
+        "w": "kodi",
+        "s": 59.1,
+        "e": 59.3
+      },
+      {
+        "w": "kabi",
+        "s": 59.34,
+        "e": 59.54
+      },
+      {
+        "w": "to'liq",
+        "s": 59.62,
+        "e": 59.88
+      },
+      {
+        "w": "tahlil",
+        "s": 59.92,
+        "e": 60.24
+      },
+      {
+        "w": "qiladi",
+        "s": 60.28,
+        "e": 60.58
+      },
+      {
+        "w": "va",
+        "s": 60.96,
+        "e": 61.02
+      },
+      {
+        "w": "qatlamlar",
+        "s": 61.12,
+        "e": 61.56
+      },
+      {
+        "w": "chegarasini",
+        "s": 61.6,
+        "e": 62.12
+      },
+      {
+        "w": "qat'iy",
+        "s": 62.22,
+        "e": 62.54
+      },
+      {
+        "w": "nazorat",
+        "s": 62.6,
+        "e": 63.0
+      },
+      {
+        "w": "qiladi.",
+        "s": 63.04,
+        "e": 63.3
+      }
+    ]
+  },
+  {
+    "id": "L9",
+    "scene": "steiger_testlarda",
+    "text": "Bir slice testi boshqa slicening ichki fayliga kirsa yoki boshqa sahifani import qilsa, linter darhol xatolik chiqaradi.",
+    "show": "Bir slice testi boshqa slicening ichki fayliga kirsa yoki boshqa sahifani import qilsa, linter darhol xatolik chiqaradi.",
+    "say": "Bir slays testi boshqa slicening ichki fayliga kirsa yoki boshqa sahifani import qilsa, linter darhol xatolik chiqaradi.",
+    "a0": 64.06,
+    "a1": 70.95,
+    "words": [
+      {
+        "w": "Bir",
+        "s": 64.06,
+        "e": 64.18
+      },
+      {
+        "w": "slays",
+        "s": 64.22,
+        "e": 64.5
+      },
+      {
+        "w": "testi",
+        "s": 64.54,
+        "e": 64.86
+      },
+      {
+        "w": "boshqa",
+        "s": 64.98,
+        "e": 65.24
+      },
+      {
+        "w": "slicening",
+        "s": 65.28,
+        "e": 65.72
+      },
+      {
+        "w": "ichki",
+        "s": 65.78,
+        "e": 66.02
+      },
+      {
+        "w": "fayliga",
+        "s": 66.06,
+        "e": 66.46
+      },
+      {
+        "w": "kirsa",
+        "s": 66.54,
+        "e": 66.86
+      },
+      {
+        "w": "yoki",
+        "s": 67.14,
+        "e": 67.36
+      },
+      {
+        "w": "boshqa",
+        "s": 67.44,
+        "e": 67.73
+      },
+      {
+        "w": "sahifani",
+        "s": 67.77,
+        "e": 68.23
+      },
+      {
+        "w": "import",
+        "s": 68.35,
+        "e": 68.63
+      },
+      {
+        "w": "qilsa,",
+        "s": 68.67,
+        "e": 68.93
+      },
+      {
+        "w": "linter",
+        "s": 69.31,
+        "e": 69.63
+      },
+      {
+        "w": "darhol",
+        "s": 69.75,
+        "e": 70.11
+      },
+      {
+        "w": "xatolik",
+        "s": 70.15,
+        "e": 70.53
+      },
+      {
+        "w": "chiqaradi.",
+        "s": 70.55,
+        "e": 70.95
+      }
+    ]
+  },
+  {
+    "id": "L10",
+    "scene": "komponent_testi_misoli",
+    "text": "Komponent testida server shared testing dan public API orqali, komponent esa nisbiy yo'l bilan import qilinadi.",
+    "show": "Komponent testida server shared testing dan public API orqali, komponent esa nisbiy yo'l bilan import qilinadi.",
+    "say": "Komponent testida server sherd testing dan public ey-pi-ay orqali, komponent esa nisbiy yo'l bilan import qilinadi.",
+    "a0": 71.55,
+    "a1": 78.19,
+    "words": [
+      {
+        "w": "Komponent",
+        "s": 71.55,
+        "e": 72.01
+      },
+      {
+        "w": "testida",
+        "s": 72.03,
+        "e": 72.41
+      },
+      {
+        "w": "server",
+        "s": 72.57,
+        "e": 72.97
+      },
+      {
+        "w": "sherd",
+        "s": 73.15,
+        "e": 73.45
+      },
+      {
+        "w": "testing",
+        "s": 73.49,
+        "e": 73.85
+      },
+      {
+        "w": "dan",
+        "s": 73.87,
+        "e": 74.03
+      },
+      {
+        "w": "public",
+        "s": 74.13,
+        "e": 74.45
+      },
+      {
+        "w": "ey-pi-ay",
+        "s": 74.55,
+        "e": 74.89
+      },
+      {
+        "w": "orqali,",
+        "s": 74.95,
+        "e": 75.29
+      },
+      {
+        "w": "komponent",
+        "s": 75.67,
+        "e": 76.13
+      },
+      {
+        "w": "esa",
+        "s": 76.19,
+        "e": 76.39
+      },
+      {
+        "w": "nisbiy",
+        "s": 76.59,
+        "e": 76.91
+      },
+      {
+        "w": "yo'l",
+        "s": 76.99,
+        "e": 77.19
+      },
+      {
+        "w": "bilan",
+        "s": 77.23,
+        "e": 77.43
+      },
+      {
+        "w": "import",
+        "s": 77.53,
+        "e": 77.79
+      },
+      {
+        "w": "qilinadi.",
+        "s": 77.83,
+        "e": 78.19
+      }
+    ]
+  },
+  {
+    "id": "L11",
+    "scene": "komponent_testi_misoli",
+    "text": "Vitest va Testing Library yordamida tugma bosilganda soxta tarmoq so'rovi yuborilishi va holat yangilanishi tekshiriladi.",
+    "show": "Vitest va Testing Library yordamida tugma bosilganda soxta tarmoq so'rovi yuborilishi va holat yangilanishi tekshiriladi.",
+    "say": "Vaytest va Testing Laybrari yordamida tugma bosilganda soxta tarmoq so'rovi yuborilishi va holat yangilanishi tekshiriladi.",
+    "a0": 79.05,
+    "a1": 86.12,
+    "words": [
+      {
+        "w": "Vaytest",
+        "s": 79.05,
+        "e": 79.53
+      },
+      {
+        "w": "va",
+        "s": 79.61,
+        "e": 79.67
+      },
+      {
+        "w": "Testing",
+        "s": 79.95,
+        "e": 80.31
+      },
+      {
+        "w": "Laybrari",
+        "s": 80.37,
+        "e": 80.71
+      },
+      {
+        "w": "yordamida",
+        "s": 80.71,
+        "e": 81.27
+      },
+      {
+        "w": "tugma",
+        "s": 81.57,
+        "e": 81.81
+      },
+      {
+        "w": "bosilganda",
+        "s": 81.87,
+        "e": 82.41
+      },
+      {
+        "w": "soxta",
+        "s": 82.49,
+        "e": 82.78
+      },
+      {
+        "w": "tarmoq",
+        "s": 82.82,
+        "e": 83.14
+      },
+      {
+        "w": "so'rovi",
+        "s": 83.18,
+        "e": 83.5
+      },
+      {
+        "w": "yuborilishi",
+        "s": 83.56,
+        "e": 84.16
+      },
+      {
+        "w": "va",
+        "s": 84.38,
+        "e": 84.46
+      },
+      {
+        "w": "holat",
+        "s": 84.58,
+        "e": 84.9
+      },
+      {
+        "w": "yangilanishi",
+        "s": 84.94,
+        "e": 85.5
+      },
+      {
+        "w": "tekshiriladi.",
+        "s": 85.54,
+        "e": 86.12
+      }
+    ]
+  },
+  {
+    "id": "L12",
+    "scene": "tipik_xatolar",
+    "text": "Tipik xatolar — barcha testlarni bitta global tests papkasiga to'plash va testlar ichida public API ni chetlab o'tishdir.",
+    "show": "Tipik xatolar — barcha testlarni bitta global tests papkasiga to'plash va testlar ichida public API ni chetlab o'tishdir.",
+    "say": "Tipik xatolar — barcha testlarni bitta global tests papkasiga to'plash va testlar ichida public ey-pi-ay ni chetlab o'tishdir.",
+    "a0": 86.7,
+    "a1": 93.9,
+    "words": [
+      {
+        "w": "Tipik",
+        "s": 86.7,
+        "e": 86.98
+      },
+      {
+        "w": "xatolar",
+        "s": 87.04,
+        "e": 87.46
+      },
+      {
+        "w": "—",
+        "s": 87.46,
+        "e": 87.46
+      },
+      {
+        "w": "barcha",
+        "s": 88.04,
+        "e": 88.26
+      },
+      {
+        "w": "testlarni",
+        "s": 88.3,
+        "e": 88.76
+      },
+      {
+        "w": "bitta",
+        "s": 88.9,
+        "e": 89.16
+      },
+      {
+        "w": "global",
+        "s": 89.22,
+        "e": 89.6
+      },
+      {
+        "w": "tests",
+        "s": 89.74,
+        "e": 90.06
+      },
+      {
+        "w": "papkasiga",
+        "s": 90.1,
+        "e": 90.58
+      },
+      {
+        "w": "to'plash",
+        "s": 90.62,
+        "e": 91.04
+      },
+      {
+        "w": "va",
+        "s": 91.22,
+        "e": 91.28
+      },
+      {
+        "w": "testlar",
+        "s": 91.42,
+        "e": 91.78
+      },
+      {
+        "w": "ichida",
+        "s": 91.82,
+        "e": 92.06
+      },
+      {
+        "w": "public",
+        "s": 92.2,
+        "e": 92.54
+      },
+      {
+        "w": "ey-pi-ay",
+        "s": 92.62,
+        "e": 92.96
+      },
+      {
+        "w": "ni",
+        "s": 93.02,
+        "e": 93.08
+      },
+      {
+        "w": "chetlab",
+        "s": 93.16,
+        "e": 93.5
+      },
+      {
+        "w": "o'tishdir.",
+        "s": 93.54,
+        "e": 93.9
+      }
+    ]
+  },
+  {
+    "id": "L13",
+    "scene": "tipik_xatolar",
+    "text": "Shuningdek, faqat E2E testlariga suyanib, tezkor va arzon unit hamda komponent testlariga e'tibor bermaslik xatodir.",
+    "show": "Shuningdek, faqat E2E testlariga suyanib, tezkor va arzon unit hamda komponent testlariga e'tibor bermaslik xatodir.",
+    "say": "Shuningdek, faqat I-tu-i testlariga suyanib, tezkor va arzon unit hamda komponent testlariga e'tibor bermaslik xatodir.",
+    "a0": 94.66,
+    "a1": 101.41,
+    "words": [
+      {
+        "w": "Shuningdek,",
+        "s": 94.66,
+        "e": 95.08
+      },
+      {
+        "w": "faqat",
+        "s": 95.16,
+        "e": 95.46
+      },
+      {
+        "w": "I-tu-i",
+        "s": 95.6,
+        "e": 95.98
+      },
+      {
+        "w": "testlariga",
+        "s": 96.08,
+        "e": 96.54
+      },
+      {
+        "w": "suyanib,",
+        "s": 96.6,
+        "e": 96.98
+      },
+      {
+        "w": "tezkor",
+        "s": 97.24,
+        "e": 97.67
+      },
+      {
+        "w": "va",
+        "s": 97.73,
+        "e": 97.79
+      },
+      {
+        "w": "arzon",
+        "s": 97.95,
+        "e": 98.29
+      },
+      {
+        "w": "unit",
+        "s": 98.47,
+        "e": 98.71
+      },
+      {
+        "w": "hamda",
+        "s": 98.75,
+        "e": 99.01
+      },
+      {
+        "w": "komponent",
+        "s": 99.07,
+        "e": 99.53
+      },
+      {
+        "w": "testlariga",
+        "s": 99.55,
+        "e": 99.99
+      },
+      {
+        "w": "e'tibor",
+        "s": 100.09,
+        "e": 100.39
+      },
+      {
+        "w": "bermaslik",
+        "s": 100.43,
+        "e": 100.89
+      },
+      {
+        "w": "xatodir.",
+        "s": 100.99,
+        "e": 101.41
+      }
+    ]
+  },
+  {
+    "id": "L14",
+    "scene": "xulosa",
+    "text": "Xulosa: To'g'ri izolyatsiya qilingan FSD slicelari testlarni barqaror, oson va ishonchli yozish imkonini beradi.",
+    "show": "Xulosa: To'g'ri izolyatsiya qilingan FSD slicelari testlarni barqaror, oson va ishonchli yozish imkonini beradi.",
+    "say": "Xulosa: To'g'ri izolyatsiya qilingan Ef-es-di slicelari testlarni barqaror, oson va ishonchli yozish imkonini beradi.",
+    "a0": 102.05,
+    "a1": 109.17,
+    "words": [
+      {
+        "w": "Xulosa:",
+        "s": 102.05,
+        "e": 102.43
+      },
+      {
+        "w": "To'g'ri",
+        "s": 103.13,
+        "e": 103.39
+      },
+      {
+        "w": "izolyatsiya",
+        "s": 103.45,
+        "e": 103.89
+      },
+      {
+        "w": "qilingan",
+        "s": 103.93,
+        "e": 104.31
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 104.41,
+        "e": 104.75
+      },
+      {
+        "w": "slicelari",
+        "s": 104.83,
+        "e": 105.37
+      },
+      {
+        "w": "testlarni",
+        "s": 105.69,
+        "e": 106.15
+      },
+      {
+        "w": "barqaror,",
+        "s": 106.23,
+        "e": 106.75
+      },
+      {
+        "w": "oson",
+        "s": 106.99,
+        "e": 107.33
+      },
+      {
+        "w": "va",
+        "s": 107.39,
+        "e": 107.47
+      },
+      {
+        "w": "ishonchli",
+        "s": 107.59,
+        "e": 107.99
+      },
+      {
+        "w": "yozish",
+        "s": 107.99,
+        "e": 108.35
+      },
+      {
+        "w": "imkonini",
+        "s": 108.41,
+        "e": 108.85
+      },
+      {
+        "w": "beradi.",
+        "s": 108.87,
+        "e": 109.17
+      }
+    ]
+  },
+  {
+    "id": "L15",
+    "scene": "xulosa",
+    "text": "Keyingi o'ttiz oltinchi bobda mavjud loyihalarni FSD ga xavfsiz va bosqichma-bosqich migratsiya qilishni ko'ramiz.",
+    "show": "Keyingi o'ttiz oltinchi bobda mavjud loyihalarni FSD ga xavfsiz va bosqichma-bosqich migratsiya qilishni ko'ramiz.",
+    "say": "Keyingi o'ttiz oltinchi bobda mavjud loyihalarni Ef-es-di ga xavfsiz va bosqichma-bosqich migratsiya qilishni ko'ramiz.",
+    "a0": 109.81,
+    "a1": 116.08,
+    "words": [
+      {
+        "w": "Keyingi",
+        "s": 109.81,
+        "e": 110.13
+      },
+      {
+        "w": "o'ttiz",
+        "s": 110.29,
+        "e": 110.55
+      },
+      {
+        "w": "oltinchi",
+        "s": 110.63,
+        "e": 110.97
+      },
+      {
+        "w": "bobda",
+        "s": 110.99,
+        "e": 111.27
+      },
+      {
+        "w": "mavjud",
+        "s": 111.71,
+        "e": 112.03
+      },
+      {
+        "w": "loyihalarni",
+        "s": 112.05,
+        "e": 112.62
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 112.78,
+        "e": 113.12
+      },
+      {
+        "w": "ga",
+        "s": 113.18,
+        "e": 113.26
+      },
+      {
+        "w": "xavfsiz",
+        "s": 113.34,
+        "e": 113.76
+      },
+      {
+        "w": "va",
+        "s": 113.84,
+        "e": 113.9
+      },
+      {
+        "w": "bosqichma-bosqich",
+        "s": 114.02,
+        "e": 114.86
+      },
+      {
+        "w": "migratsiya",
+        "s": 114.92,
+        "e": 115.36
+      },
+      {
+        "w": "qilishni",
+        "s": 115.4,
+        "e": 115.7
+      },
+      {
+        "w": "ko'ramiz.",
+        "s": 115.72,
+        "e": 116.08
+      }
+    ]
+  },
+  {
+    "id": "L16",
+    "scene": "xulosa",
+    "text": "E'tiboringiz uchun rahmat, sifatli testlar yozishda davom eting!",
+    "show": "E'tiboringiz uchun rahmat, sifatli testlar yozishda davom eting!",
+    "say": "E'tiboringiz uchun rahmat, sifatli testlar yozishda davom eting!",
+    "a0": 116.7,
+    "a1": 120.0,
+    "words": [
+      {
+        "w": "E'tiboringiz",
+        "s": 116.7,
+        "e": 117.22
+      },
+      {
+        "w": "uchun",
+        "s": 117.26,
+        "e": 117.44
+      },
+      {
+        "w": "rahmat,",
+        "s": 117.5,
+        "e": 117.84
+      },
+      {
+        "w": "sifatli",
+        "s": 118.26,
+        "e": 118.64
+      },
+      {
+        "w": "testlar",
+        "s": 118.7,
+        "e": 119.02
+      },
+      {
+        "w": "yozishda",
+        "s": 119.04,
+        "e": 119.42
+      },
+      {
+        "w": "davom",
+        "s": 119.5,
+        "e": 119.78
+      },
+      {
+        "w": "eting!",
+        "s": 119.82,
+        "e": 120.0
+      }
+    ]
+  }
+]
