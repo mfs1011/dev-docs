@@ -4,6 +4,14 @@
 
 ## Qisqacha
 
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/fsd/24-layoutlar.jpg" src="/video/fsd/24-layoutlar.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/fsd/24-layoutlar.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/fsd/24-layoutlar.uz.vtt">
+</video>
+<figcaption>Bob videoda: Layout'lar — shared/ui/layout slotlari, teskari import taqiqlari va app/layouts arxitekturasi.</figcaption>
+</figure>
+
 Layout — bir nechta sahifa umumiy tuzilmaga ega bo'lib, faqat asosiy mazmuni farq qilganda paydo bo'ladigan abstraksiya (header, sidebar, footer + o'rtada sahifa). **Oddiy layout** (faqat markup va UI mantiqi: tema almashtirish) — `shared/ui/layout`. **Ichida biznes widget'lari bor layout** — `shared`'da bo'lolmaydi (import qoidasi): uni `app`'da saqlang yoki widget'larni slot/render props bilan bering. Va eng avval so'rang: layout umuman kerakmi?
 
 ## Qoida

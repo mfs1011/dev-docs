@@ -1,0 +1,22 @@
+WEBVTT
+
+00:00.000 --> 00:26.397
+Kirish: Layout'lar Arxitekturasi
+
+00:26.397 --> 00:50.984
+shared/ui/layout va PageShell Slotlari
+
+00:50.984 --> 01:16.593
+Teskari Import Xatosi (shared → widgets)
+
+01:16.593 --> 01:44.725
+app/layouts: Widgetlarni Birlashtirish
+
+01:44.725 --> 02:07.944
+Layout Umuman Kerakmi? Oddiylik Qoidasi
+
+02:07.944 --> 02:28.094
+Layout Boshqaruvidagi Tipik Xatolar
+
+02:28.094 --> 02:48.880
+Xulosa va Keyingi Qadam
