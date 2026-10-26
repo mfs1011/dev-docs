@@ -4,6 +4,14 @@
 
 ## Qisqacha
 
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/fsd/39-faq.jpg" src="/video/fsd/39-faq.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/fsd/39-faq.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/fsd/39-faq.uz.vtt">
+</video>
+<figcaption>Bob videoda: Tez-tez beriladigan savollar — FSD amaliyotidagi eng ko'p bahsli savollar, qatlam tanlash, @x cross-importlar va freymvorklar bo'yicha rasmiy yechimlar.</figcaption>
+</figure>
+
 FSD bilan ishlashda eng ko'p takrorlanadigan savollar va qisqa javoblar. Har javob yonida — batafsil bob. Rasmiy FAQ'dagi savollar ham shu yerda.
 
 ## Asoslar

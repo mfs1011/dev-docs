@@ -1,0 +1,1483 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Salom! Bu FSD qo'llanmasining o'ttiz to'qqizinchi bobi — dasturchilar tomonidan eng ko'p beriladigan qiyin savollar va ularning rasmiy yechimlari.",
+    "show": "Salom! Bu FSD qo'llanmasining o'ttiz to'qqizinchi bobi — dasturchilar tomonidan eng ko'p beriladigan qiyin savollar va ularning rasmiy yechimlari.",
+    "say": "Salom! Bu Ef-es-di qo'llanmasining o'ttiz to'qqizinchi bobi — dasturchilar tomonidan eng ko'p beriladigan qiyin savollar va ularning rasmiy yechimlari.",
+    "a0": 0.38,
+    "a1": 9.71,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.38,
+        "e": 0.7
+      },
+      {
+        "w": "Bu",
+        "s": 1.16,
+        "e": 1.24
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 1.56,
+        "e": 1.98
+      },
+      {
+        "w": "qo'llanmasining",
+        "s": 2.1,
+        "e": 2.78
+      },
+      {
+        "w": "o'ttiz",
+        "s": 2.96,
+        "e": 3.24
+      },
+      {
+        "w": "to'qqizinchi",
+        "s": 3.28,
+        "e": 3.8
+      },
+      {
+        "w": "bobi",
+        "s": 3.84,
+        "e": 4.1
+      },
+      {
+        "w": "—",
+        "s": 4.1,
+        "e": 4.1
+      },
+      {
+        "w": "dasturchilar",
+        "s": 4.56,
+        "e": 5.12
+      },
+      {
+        "w": "tomonidan",
+        "s": 5.16,
+        "e": 5.6
+      },
+      {
+        "w": "eng",
+        "s": 5.78,
+        "e": 5.94
+      },
+      {
+        "w": "ko'p",
+        "s": 6.0,
+        "e": 6.2
+      },
+      {
+        "w": "beriladigan",
+        "s": 6.2,
+        "e": 6.74
+      },
+      {
+        "w": "qiyin",
+        "s": 6.84,
+        "e": 7.12
+      },
+      {
+        "w": "savollar",
+        "s": 7.2,
+        "e": 7.73
+      },
+      {
+        "w": "va",
+        "s": 8.11,
+        "e": 8.19
+      },
+      {
+        "w": "ularning",
+        "s": 8.37,
+        "e": 8.77
+      },
+      {
+        "w": "rasmiy",
+        "s": 8.83,
+        "e": 9.15
+      },
+      {
+        "w": "yechimlari.",
+        "s": 9.21,
+        "e": 9.71
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "intro",
+    "text": "Yangi loyiha boshlashda yoki arxitekturani tekshirishda ikkilanmaslik uchun barcha muhim savollarni beshta asosiy guruhga ajratamiz.",
+    "show": "Yangi loyiha boshlashda yoki arxitekturani tekshirishda ikkilanmaslik uchun barcha muhim savollarni beshta asosiy guruhga ajratamiz.",
+    "say": "Yangi loyiha boshlashda yoki arxitekturani tekshirishda ikkilanmaslik uchun barcha muhim savollarni beshta asosiy guruhga ajratamiz.",
+    "a0": 10.69,
+    "a1": 18.55,
+    "words": [
+      {
+        "w": "Yangi",
+        "s": 10.69,
+        "e": 10.95
+      },
+      {
+        "w": "loyiha",
+        "s": 11.01,
+        "e": 11.29
+      },
+      {
+        "w": "boshlashda",
+        "s": 11.35,
+        "e": 11.85
+      },
+      {
+        "w": "yoki",
+        "s": 12.01,
+        "e": 12.27
+      },
+      {
+        "w": "arxitekturani",
+        "s": 12.61,
+        "e": 13.33
+      },
+      {
+        "w": "tekshirishda",
+        "s": 13.37,
+        "e": 13.85
+      },
+      {
+        "w": "ikkilanmaslik",
+        "s": 13.95,
+        "e": 14.59
+      },
+      {
+        "w": "uchun",
+        "s": 14.61,
+        "e": 14.81
+      },
+      {
+        "w": "barcha",
+        "s": 15.19,
+        "e": 15.53
+      },
+      {
+        "w": "muhim",
+        "s": 15.61,
+        "e": 15.87
+      },
+      {
+        "w": "savollarni",
+        "s": 15.93,
+        "e": 16.51
+      },
+      {
+        "w": "beshta",
+        "s": 16.75,
+        "e": 17.11
+      },
+      {
+        "w": "asosiy",
+        "s": 17.23,
+        "e": 17.59
+      },
+      {
+        "w": "guruhga",
+        "s": 17.65,
+        "e": 17.95
+      },
+      {
+        "w": "ajratamiz.",
+        "s": 18.03,
+        "e": 18.55
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "asoslar_faq",
+    "text": "Birinchi guruh — asoslar: barcha qatlamlar shartmi? Yo'q, ko'pincha faqat app, pages va shared yetarli bo'ladi.",
+    "show": "Birinchi guruh — asoslar: barcha qatlamlar shartmi? Yo'q, ko'pincha faqat app, pages va shared yetarli bo'ladi.",
+    "say": "Birinchi guruh — asoslar: barcha qatlamlar shartmi? Yo'q, ko'pincha faqat ep, peyjiz va sherd yetarli bo'ladi.",
+    "a0": 19.35,
+    "a1": 27.0,
+    "words": [
+      {
+        "w": "Birinchi",
+        "s": 19.35,
+        "e": 19.65
+      },
+      {
+        "w": "guruh",
+        "s": 19.71,
+        "e": 19.95
+      },
+      {
+        "w": "—",
+        "s": 19.95,
+        "e": 19.95
+      },
+      {
+        "w": "asoslar:",
+        "s": 20.05,
+        "e": 20.55
+      },
+      {
+        "w": "barcha",
+        "s": 21.19,
+        "e": 21.49
+      },
+      {
+        "w": "qatlamlar",
+        "s": 21.55,
+        "e": 22.01
+      },
+      {
+        "w": "shartmi?",
+        "s": 22.05,
+        "e": 22.39
+      },
+      {
+        "w": "Yo'q,",
+        "s": 23.02,
+        "e": 23.22
+      },
+      {
+        "w": "ko'pincha",
+        "s": 23.56,
+        "e": 23.96
+      },
+      {
+        "w": "faqat",
+        "s": 24.04,
+        "e": 24.32
+      },
+      {
+        "w": "ep,",
+        "s": 24.54,
+        "e": 24.72
+      },
+      {
+        "w": "peyjiz",
+        "s": 24.98,
+        "e": 25.42
+      },
+      {
+        "w": "va",
+        "s": 25.52,
+        "e": 25.6
+      },
+      {
+        "w": "sherd",
+        "s": 25.84,
+        "e": 26.2
+      },
+      {
+        "w": "yetarli",
+        "s": 26.26,
+        "e": 26.64
+      },
+      {
+        "w": "bo'ladi.",
+        "s": 26.7,
+        "e": 27.0
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "asoslar_faq",
+    "text": "processes qatlami eskirgan deb topilgan, o'zboshimchalik bilan core yoki modules kabi yangi qatlamlar ochish esa taqiqlanadi.",
+    "show": "processes qatlami eskirgan deb topilgan, o'zboshimchalik bilan core yoki modules kabi yangi qatlamlar ochish esa taqiqlanadi.",
+    "say": "Prosesis qatlami eskirgan deb topilgan, o'zboshimchalik bilan core yoki modules kabi yangi qatlamlar ochish esa taqiqlanadi.",
+    "a0": 27.78,
+    "a1": 35.64,
+    "words": [
+      {
+        "w": "Prosesis",
+        "s": 27.78,
+        "e": 28.28
+      },
+      {
+        "w": "qatlami",
+        "s": 28.34,
+        "e": 28.74
+      },
+      {
+        "w": "eskirgan",
+        "s": 28.92,
+        "e": 29.42
+      },
+      {
+        "w": "deb",
+        "s": 29.46,
+        "e": 29.58
+      },
+      {
+        "w": "topilgan,",
+        "s": 29.62,
+        "e": 30.0
+      },
+      {
+        "w": "o'zboshimchalik",
+        "s": 30.48,
+        "e": 31.14
+      },
+      {
+        "w": "bilan",
+        "s": 31.16,
+        "e": 31.38
+      },
+      {
+        "w": "core",
+        "s": 31.56,
+        "e": 31.98
+      },
+      {
+        "w": "yoki",
+        "s": 31.98,
+        "e": 32.36
+      },
+      {
+        "w": "modules",
+        "s": 32.62,
+        "e": 33.0
+      },
+      {
+        "w": "kabi",
+        "s": 33.04,
+        "e": 33.26
+      },
+      {
+        "w": "yangi",
+        "s": 33.34,
+        "e": 33.62
+      },
+      {
+        "w": "qatlamlar",
+        "s": 33.68,
+        "e": 34.1
+      },
+      {
+        "w": "ochish",
+        "s": 34.16,
+        "e": 34.38
+      },
+      {
+        "w": "esa",
+        "s": 34.44,
+        "e": 34.6
+      },
+      {
+        "w": "taqiqlanadi.",
+        "s": 34.96,
+        "e": 35.64
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "qatlam_tanlash_faq",
+    "text": "Ikkinchi guruh — qatlam tanlash: fe'l harakatlar features qatlamiga, ot biznes modellari entities qatlamiga joylashadi.",
+    "show": "Ikkinchi guruh — qatlam tanlash: fe'l harakatlar features qatlamiga, ot biznes modellari entities qatlamiga joylashadi.",
+    "say": "Ikkinchi guruh — qatlam tanlash: fe'l harakatlar fichers qatlamiga, ot biznes modellari entitiz qatlamiga joylashadi.",
+    "a0": 36.44,
+    "a1": 44.35,
+    "words": [
+      {
+        "w": "Ikkinchi",
+        "s": 36.44,
+        "e": 36.78
+      },
+      {
+        "w": "guruh",
+        "s": 36.82,
+        "e": 37.06
+      },
+      {
+        "w": "—",
+        "s": 37.06,
+        "e": 37.06
+      },
+      {
+        "w": "qatlam",
+        "s": 37.36,
+        "e": 37.73
+      },
+      {
+        "w": "tanlash:",
+        "s": 37.81,
+        "e": 38.19
+      },
+      {
+        "w": "fe'l",
+        "s": 38.87,
+        "e": 39.07
+      },
+      {
+        "w": "harakatlar",
+        "s": 39.13,
+        "e": 39.75
+      },
+      {
+        "w": "fichers",
+        "s": 39.93,
+        "e": 40.29
+      },
+      {
+        "w": "qatlamiga,",
+        "s": 40.33,
+        "e": 40.83
+      },
+      {
+        "w": "ot",
+        "s": 41.47,
+        "e": 41.61
+      },
+      {
+        "w": "biznes",
+        "s": 41.69,
+        "e": 41.97
+      },
+      {
+        "w": "modellari",
+        "s": 42.01,
+        "e": 42.51
+      },
+      {
+        "w": "entitiz",
+        "s": 42.89,
+        "e": 43.31
+      },
+      {
+        "w": "qatlamiga",
+        "s": 43.37,
+        "e": 43.81
+      },
+      {
+        "w": "joylashadi.",
+        "s": 43.85,
+        "e": 44.35
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "qatlam_tanlash_faq",
+    "text": "Bitta sahifada ishlatiladigan komponent sahifa ichida qoladi, tokenlar esa sahifada emas, shared auth yoki api da saqlanadi.",
+    "show": "Bitta sahifada ishlatiladigan komponent sahifa ichida qoladi, tokenlar esa sahifada emas, shared auth yoki api da saqlanadi.",
+    "say": "Bitta sahifada ishlatiladigan komponent sahifa ichida qoladi, tokenlar esa sahifada emas, sherd os yoki ey-pi-ay da saqlanadi.",
+    "a0": 45.17,
+    "a1": 53.24,
+    "words": [
+      {
+        "w": "Bitta",
+        "s": 45.17,
+        "e": 45.39
+      },
+      {
+        "w": "sahifada",
+        "s": 45.43,
+        "e": 45.85
+      },
+      {
+        "w": "ishlatiladigan",
+        "s": 45.91,
+        "e": 46.51
+      },
+      {
+        "w": "komponent",
+        "s": 46.57,
+        "e": 47.05
+      },
+      {
+        "w": "sahifa",
+        "s": 47.33,
+        "e": 47.67
+      },
+      {
+        "w": "ichida",
+        "s": 47.75,
+        "e": 47.95
+      },
+      {
+        "w": "qoladi,",
+        "s": 48.01,
+        "e": 48.31
+      },
+      {
+        "w": "tokenlar",
+        "s": 48.79,
+        "e": 49.27
+      },
+      {
+        "w": "esa",
+        "s": 49.35,
+        "e": 49.51
+      },
+      {
+        "w": "sahifada",
+        "s": 49.83,
+        "e": 50.29
+      },
+      {
+        "w": "emas,",
+        "s": 50.37,
+        "e": 50.61
+      },
+      {
+        "w": "sherd",
+        "s": 50.95,
+        "e": 51.33
+      },
+      {
+        "w": "os",
+        "s": 51.53,
+        "e": 51.71
+      },
+      {
+        "w": "yoki",
+        "s": 51.73,
+        "e": 52.03
+      },
+      {
+        "w": "ey-pi-ay",
+        "s": 52.21,
+        "e": 52.6
+      },
+      {
+        "w": "da",
+        "s": 52.64,
+        "e": 52.7
+      },
+      {
+        "w": "saqlanadi.",
+        "s": 52.76,
+        "e": 53.24
+      }
+    ]
+  },
+  {
+    "id": "L7",
+    "scene": "qatlam_tanlash_faq",
+    "text": "Agar loyihada hozircha entities bo'lmasa — bu xato emas, FSD entity bo'lmagan holatda ham to'liq ishlayveradi.",
+    "show": "Agar loyihada hozircha entities bo'lmasa — bu xato emas, FSD entity bo'lmagan holatda ham to'liq ishlayveradi.",
+    "say": "Agar loyihada hozircha entitiz bo'lmasa — bu xato emas, Ef-es-di entiti bo'lmagan holatda ham to'liq ishlayveradi.",
+    "a0": 54.08,
+    "a1": 61.1,
+    "words": [
+      {
+        "w": "Agar",
+        "s": 54.08,
+        "e": 54.3
+      },
+      {
+        "w": "loyihada",
+        "s": 54.36,
+        "e": 54.74
+      },
+      {
+        "w": "hozircha",
+        "s": 54.78,
+        "e": 55.2
+      },
+      {
+        "w": "entitiz",
+        "s": 55.34,
+        "e": 55.74
+      },
+      {
+        "w": "bo'lmasa",
+        "s": 55.8,
+        "e": 56.18
+      },
+      {
+        "w": "—",
+        "s": 56.18,
+        "e": 56.18
+      },
+      {
+        "w": "bu",
+        "s": 56.58,
+        "e": 56.66
+      },
+      {
+        "w": "xato",
+        "s": 56.76,
+        "e": 57.0
+      },
+      {
+        "w": "emas,",
+        "s": 57.16,
+        "e": 57.4
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 57.84,
+        "e": 58.24
+      },
+      {
+        "w": "entiti",
+        "s": 58.48,
+        "e": 58.8
+      },
+      {
+        "w": "bo'lmagan",
+        "s": 58.88,
+        "e": 59.26
+      },
+      {
+        "w": "holatda",
+        "s": 59.34,
+        "e": 59.76
+      },
+      {
+        "w": "ham",
+        "s": 59.8,
+        "e": 59.94
+      },
+      {
+        "w": "to'liq",
+        "s": 60.22,
+        "e": 60.5
+      },
+      {
+        "w": "ishlayveradi.",
+        "s": 60.54,
+        "e": 61.1
+      }
+    ]
+  },
+  {
+    "id": "L8",
+    "scene": "chegaralar_faq",
+    "text": "Uchinchi guruh — chegaralar: bir feature boshqa feature bilan bevosita bog'lanmaydi, faqat yuqori qatlamda slot va prop bilan birlashadi.",
+    "show": "Uchinchi guruh — chegaralar: bir feature boshqa feature bilan bevosita bog'lanmaydi, faqat yuqori qatlamda slot va prop bilan birlashadi.",
+    "say": "Uchinchi guruh — chegaralar: bir ficher boshqa ficher bilan bevosita bog'lanmaydi, faqat yuqori qatlamda slot va prop bilan birlashadi.",
+    "a0": 62.0,
+    "a1": 70.39,
+    "words": [
+      {
+        "w": "Uchinchi",
+        "s": 62.0,
+        "e": 62.34
+      },
+      {
+        "w": "guruh",
+        "s": 62.4,
+        "e": 62.64
+      },
+      {
+        "w": "—",
+        "s": 62.64,
+        "e": 62.64
+      },
+      {
+        "w": "chegaralar:",
+        "s": 62.68,
+        "e": 63.24
+      },
+      {
+        "w": "bir",
+        "s": 63.88,
+        "e": 64.0
+      },
+      {
+        "w": "ficher",
+        "s": 64.06,
+        "e": 64.4
+      },
+      {
+        "w": "boshqa",
+        "s": 64.5,
+        "e": 64.78
+      },
+      {
+        "w": "ficher",
+        "s": 64.86,
+        "e": 65.16
+      },
+      {
+        "w": "bilan",
+        "s": 65.2,
+        "e": 65.4
+      },
+      {
+        "w": "bevosita",
+        "s": 65.48,
+        "e": 66.04
+      },
+      {
+        "w": "bog'lanmaydi,",
+        "s": 66.08,
+        "e": 66.72
+      },
+      {
+        "w": "faqat",
+        "s": 67.08,
+        "e": 67.36
+      },
+      {
+        "w": "yuqori",
+        "s": 67.44,
+        "e": 67.81
+      },
+      {
+        "w": "qatlamda",
+        "s": 67.85,
+        "e": 68.31
+      },
+      {
+        "w": "slot",
+        "s": 68.63,
+        "e": 68.97
+      },
+      {
+        "w": "va",
+        "s": 69.09,
+        "e": 69.17
+      },
+      {
+        "w": "prop",
+        "s": 69.37,
+        "e": 69.61
+      },
+      {
+        "w": "bilan",
+        "s": 69.67,
+        "e": 69.87
+      },
+      {
+        "w": "birlashadi.",
+        "s": 69.91,
+        "e": 70.39
+      }
+    ]
+  },
+  {
+    "id": "L9",
+    "scene": "chegaralar_faq",
+    "text": "Ikki entity bir-biriga muhtoj bo'lsa, @x cross-import standarti qo'llaniladi yoki ular bitta umumiy slice ga birlashtiriladi.",
+    "show": "Ikki entity bir-biriga muhtoj bo'lsa, @x cross-import standarti qo'llaniladi yoki ular bitta umumiy slice ga birlashtiriladi.",
+    "say": "Ikki entiti bir-biriga muhtoj bo'lsa, @x kross-import standarti qo'llaniladi yoki ular bitta umumiy slays ga birlashtiriladi.",
+    "a0": 71.19,
+    "a1": 78.69,
+    "words": [
+      {
+        "w": "Ikki",
+        "s": 71.19,
+        "e": 71.43
+      },
+      {
+        "w": "entiti",
+        "s": 71.55,
+        "e": 71.89
+      },
+      {
+        "w": "bir-biriga",
+        "s": 71.97,
+        "e": 72.35
+      },
+      {
+        "w": "muhtoj",
+        "s": 72.41,
+        "e": 72.71
+      },
+      {
+        "w": "bo'lsa,",
+        "s": 72.77,
+        "e": 73.03
+      },
+      {
+        "w": "@x",
+        "s": 73.03,
+        "e": 73.93
+      },
+      {
+        "w": "kross-import",
+        "s": 73.93,
+        "e": 74.63
+      },
+      {
+        "w": "standarti",
+        "s": 74.67,
+        "e": 75.13
+      },
+      {
+        "w": "qo'llaniladi",
+        "s": 75.17,
+        "e": 75.75
+      },
+      {
+        "w": "yoki",
+        "s": 75.75,
+        "e": 76.33
+      },
+      {
+        "w": "ular",
+        "s": 76.51,
+        "e": 76.71
+      },
+      {
+        "w": "bitta",
+        "s": 76.87,
+        "e": 77.15
+      },
+      {
+        "w": "umumiy",
+        "s": 77.25,
+        "e": 77.53
+      },
+      {
+        "w": "slays",
+        "s": 77.59,
+        "e": 77.85
+      },
+      {
+        "w": "ga",
+        "s": 77.89,
+        "e": 77.95
+      },
+      {
+        "w": "birlashtiriladi.",
+        "s": 77.99,
+        "e": 78.69
+      }
+    ]
+  },
+  {
+    "id": "L10",
+    "scene": "steiger_va_asboblar_faq",
+    "text": "To'rtinchi guruh — asboblar: Stayger rasmiy linter bo'lib, importlarni tahlil qilish uchun tsconfig dagi paths ga to'g'ri bog'lanishi shart.",
+    "show": "To'rtinchi guruh — asboblar: Stayger rasmiy linter bo'lib, importlarni tahlil qilish uchun tsconfig dagi paths ga to'g'ri bog'lanishi shart.",
+    "say": "To'rtinchi guruh — asboblar: Stayger rasmiy linter bo'lib, importlarni tahlil qilish uchun tsconfig dagi paslar ga to'g'ri bog'lanishi shart.",
+    "a0": 79.65,
+    "a1": 88.18,
+    "words": [
+      {
+        "w": "To'rtinchi",
+        "s": 79.65,
+        "e": 80.11
+      },
+      {
+        "w": "guruh",
+        "s": 80.15,
+        "e": 80.39
+      },
+      {
+        "w": "—",
+        "s": 80.39,
+        "e": 80.39
+      },
+      {
+        "w": "asboblar:",
+        "s": 80.69,
+        "e": 81.23
+      },
+      {
+        "w": "Stayger",
+        "s": 81.79,
+        "e": 82.35
+      },
+      {
+        "w": "rasmiy",
+        "s": 82.54,
+        "e": 82.84
+      },
+      {
+        "w": "linter",
+        "s": 82.92,
+        "e": 83.22
+      },
+      {
+        "w": "bo'lib,",
+        "s": 83.26,
+        "e": 83.5
+      },
+      {
+        "w": "importlarni",
+        "s": 83.84,
+        "e": 84.38
+      },
+      {
+        "w": "tahlil",
+        "s": 84.44,
+        "e": 84.74
+      },
+      {
+        "w": "qilish",
+        "s": 84.78,
+        "e": 84.98
+      },
+      {
+        "w": "uchun",
+        "s": 85.02,
+        "e": 85.2
+      },
+      {
+        "w": "tsconfig",
+        "s": 85.48,
+        "e": 86.14
+      },
+      {
+        "w": "dagi",
+        "s": 86.2,
+        "e": 86.38
+      },
+      {
+        "w": "paslar",
+        "s": 86.46,
+        "e": 86.8
+      },
+      {
+        "w": "ga",
+        "s": 86.86,
+        "e": 86.92
+      },
+      {
+        "w": "to'g'ri",
+        "s": 87.06,
+        "e": 87.36
+      },
+      {
+        "w": "bog'lanishi",
+        "s": 87.42,
+        "e": 87.86
+      },
+      {
+        "w": "shart.",
+        "s": 87.92,
+        "e": 88.18
+      }
+    ]
+  },
+  {
+    "id": "L11",
+    "scene": "steiger_va_asboblar_faq",
+    "text": "Barrel fayllar katta loyihalarda sekinlashsa, shared da segment emas, balki komponent darajasidagi index fayllaridan foydalaniladi.",
+    "show": "Barrel fayllar katta loyihalarda sekinlashsa, shared da segment emas, balki komponent darajasidagi index fayllaridan foydalaniladi.",
+    "say": "Barrel fayllar katta loyihalarda sekinlashsa, sherd da segment emas, balki komponent darajasidagi index fayllaridan foydalaniladi.",
+    "a0": 89.02,
+    "a1": 96.92,
+    "words": [
+      {
+        "w": "Barrel",
+        "s": 89.02,
+        "e": 89.34
+      },
+      {
+        "w": "fayllar",
+        "s": 89.38,
+        "e": 89.78
+      },
+      {
+        "w": "katta",
+        "s": 89.84,
+        "e": 90.08
+      },
+      {
+        "w": "loyihalarda",
+        "s": 90.12,
+        "e": 90.62
+      },
+      {
+        "w": "sekinlashsa,",
+        "s": 90.66,
+        "e": 91.18
+      },
+      {
+        "w": "sherd",
+        "s": 91.54,
+        "e": 91.88
+      },
+      {
+        "w": "da",
+        "s": 91.94,
+        "e": 92.02
+      },
+      {
+        "w": "segment",
+        "s": 92.22,
+        "e": 92.62
+      },
+      {
+        "w": "emas,",
+        "s": 92.68,
+        "e": 92.92
+      },
+      {
+        "w": "balki",
+        "s": 93.2,
+        "e": 93.48
+      },
+      {
+        "w": "komponent",
+        "s": 93.62,
+        "e": 94.18
+      },
+      {
+        "w": "darajasidagi",
+        "s": 94.2,
+        "e": 94.86
+      },
+      {
+        "w": "index",
+        "s": 95.22,
+        "e": 95.48
+      },
+      {
+        "w": "fayllaridan",
+        "s": 95.6,
+        "e": 96.18
+      },
+      {
+        "w": "foydalaniladi.",
+        "s": 96.24,
+        "e": 96.92
+      }
+    ]
+  },
+  {
+    "id": "L12",
+    "scene": "frameworklar_faq",
+    "text": "Beshinchi guruh — freymvorklar: Next.js da to'qnashuvni oldini olish uchun _app va _pages prefiksi hamda ildizda re-eksport ishlatiladi.",
+    "show": "Beshinchi guruh — freymvorklar: Next.js da to'qnashuvni oldini olish uchun _app va _pages prefiksi hamda ildizda re-eksport ishlatiladi.",
+    "say": "Beshinchi guruh — freymvorklar: Nekst jey-es da to'qnashuvni oldini olish uchun tag chiziq ep va tag chiziq peyjiz prefiksi hamda ildizda re-eksport ishlatiladi.",
+    "a0": 97.77,
+    "a1": 108.03,
+    "words": [
+      {
+        "w": "Beshinchi",
+        "s": 97.77,
+        "e": 98.17
+      },
+      {
+        "w": "guruh",
+        "s": 98.23,
+        "e": 98.47
+      },
+      {
+        "w": "—",
+        "s": 98.47,
+        "e": 98.47
+      },
+      {
+        "w": "freymvorklar:",
+        "s": 98.71,
+        "e": 99.47
+      },
+      {
+        "w": "Nekst",
+        "s": 100.13,
+        "e": 100.39
+      },
+      {
+        "w": "jey-es",
+        "s": 100.45,
+        "e": 100.73
+      },
+      {
+        "w": "da",
+        "s": 100.77,
+        "e": 100.85
+      },
+      {
+        "w": "to'qnashuvni",
+        "s": 100.95,
+        "e": 101.47
+      },
+      {
+        "w": "oldini",
+        "s": 101.59,
+        "e": 101.85
+      },
+      {
+        "w": "olish",
+        "s": 101.91,
+        "e": 102.11
+      },
+      {
+        "w": "uchun",
+        "s": 102.15,
+        "e": 102.35
+      },
+      {
+        "w": "tag",
+        "s": 102.61,
+        "e": 102.79
+      },
+      {
+        "w": "chiziq",
+        "s": 102.85,
+        "e": 103.13
+      },
+      {
+        "w": "ep",
+        "s": 103.33,
+        "e": 103.47
+      },
+      {
+        "w": "va",
+        "s": 103.79,
+        "e": 103.87
+      },
+      {
+        "w": "tag",
+        "s": 104.03,
+        "e": 104.21
+      },
+      {
+        "w": "chiziq",
+        "s": 104.25,
+        "e": 104.51
+      },
+      {
+        "w": "peyjiz",
+        "s": 104.63,
+        "e": 104.99
+      },
+      {
+        "w": "prefiksi",
+        "s": 105.03,
+        "e": 105.53
+      },
+      {
+        "w": "hamda",
+        "s": 105.87,
+        "e": 106.15
+      },
+      {
+        "w": "ildizda",
+        "s": 106.31,
+        "e": 106.73
+      },
+      {
+        "w": "re-eksport",
+        "s": 106.97,
+        "e": 107.47
+      },
+      {
+        "w": "ishlatiladi.",
+        "s": 107.51,
+        "e": 108.03
+      }
+    ]
+  },
+  {
+    "id": "L13",
+    "scene": "frameworklar_faq",
+    "text": "Vue va Pinia da stores yoki composables degan papka ochilmaydi, ularning o'rniga slice ichida model segmenti qo'llaniladi.",
+    "show": "Vue va Pinia da stores yoki composables degan papka ochilmaydi, ularning o'rniga slice ichida model segmenti qo'llaniladi.",
+    "say": "Vue va Piniya da storz yoki kompouzeblz degan papka ochilmaydi, ularning o'rniga slays ichida model segmenti qo'llaniladi.",
+    "a0": 108.91,
+    "a1": 116.7,
+    "words": [
+      {
+        "w": "Vue",
+        "s": 108.91,
+        "e": 109.11
+      },
+      {
+        "w": "va",
+        "s": 109.23,
+        "e": 109.33
+      },
+      {
+        "w": "Piniya",
+        "s": 109.45,
+        "e": 109.77
+      },
+      {
+        "w": "da",
+        "s": 109.83,
+        "e": 109.91
+      },
+      {
+        "w": "storz",
+        "s": 110.17,
+        "e": 110.57
+      },
+      {
+        "w": "yoki",
+        "s": 110.57,
+        "e": 110.87
+      },
+      {
+        "w": "kompouzeblz",
+        "s": 110.97,
+        "e": 111.63
+      },
+      {
+        "w": "degan",
+        "s": 111.67,
+        "e": 111.87
+      },
+      {
+        "w": "papka",
+        "s": 111.93,
+        "e": 112.17
+      },
+      {
+        "w": "ochilmaydi,",
+        "s": 112.25,
+        "e": 112.78
+      },
+      {
+        "w": "ularning",
+        "s": 113.22,
+        "e": 113.58
+      },
+      {
+        "w": "o'rniga",
+        "s": 113.64,
+        "e": 113.98
+      },
+      {
+        "w": "slays",
+        "s": 114.3,
+        "e": 114.62
+      },
+      {
+        "w": "ichida",
+        "s": 114.66,
+        "e": 114.9
+      },
+      {
+        "w": "model",
+        "s": 115.24,
+        "e": 115.56
+      },
+      {
+        "w": "segmenti",
+        "s": 115.62,
+        "e": 116.04
+      },
+      {
+        "w": "qo'llaniladi.",
+        "s": 116.1,
+        "e": 116.7
+      }
+    ]
+  },
+  {
+    "id": "L14",
+    "scene": "xulosa",
+    "text": "Xulosa: FSD qoidalari qotib qolgan dogma emas, balki jamoaviy barqarorlik va mustaqil rivojlanish uchun aniq kelishuvdir.",
+    "show": "Xulosa: FSD qoidalari qotib qolgan dogma emas, balki jamoaviy barqarorlik va mustaqil rivojlanish uchun aniq kelishuvdir.",
+    "say": "Xulosa: Ef-es-di qoidalari qotib qolgan dogma emas, balki jamoaviy barqarorlik va mustaqil rivojlanish uchun aniq kelishuvdir.",
+    "a0": 117.58,
+    "a1": 125.81,
+    "words": [
+      {
+        "w": "Xulosa:",
+        "s": 117.58,
+        "e": 117.98
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 118.44,
+        "e": 118.82
+      },
+      {
+        "w": "qoidalari",
+        "s": 118.92,
+        "e": 119.4
+      },
+      {
+        "w": "qotib",
+        "s": 119.5,
+        "e": 119.76
+      },
+      {
+        "w": "qolgan",
+        "s": 119.8,
+        "e": 120.12
+      },
+      {
+        "w": "dogma",
+        "s": 120.16,
+        "e": 120.44
+      },
+      {
+        "w": "emas,",
+        "s": 120.56,
+        "e": 120.82
+      },
+      {
+        "w": "balki",
+        "s": 121.14,
+        "e": 121.42
+      },
+      {
+        "w": "jamoaviy",
+        "s": 121.58,
+        "e": 122.06
+      },
+      {
+        "w": "barqarorlik",
+        "s": 122.14,
+        "e": 122.8
+      },
+      {
+        "w": "va",
+        "s": 123.06,
+        "e": 123.12
+      },
+      {
+        "w": "mustaqil",
+        "s": 123.32,
+        "e": 123.76
+      },
+      {
+        "w": "rivojlanish",
+        "s": 123.82,
+        "e": 124.32
+      },
+      {
+        "w": "uchun",
+        "s": 124.34,
+        "e": 124.54
+      },
+      {
+        "w": "aniq",
+        "s": 124.91,
+        "e": 125.17
+      },
+      {
+        "w": "kelishuvdir.",
+        "s": 125.27,
+        "e": 125.81
+      }
+    ]
+  },
+  {
+    "id": "L15",
+    "scene": "xulosa",
+    "text": "Keyingi qirqinchi bobda FSD qo'llanmasining yakuniy konspekti va to'liq shpargalkasini jamlaymiz.",
+    "show": "Keyingi qirqinchi bobda FSD qo'llanmasining yakuniy konspekti va to'liq shpargalkasini jamlaymiz.",
+    "say": "Keyingi qirqinchi bobda Ef-es-di qo'llanmasining yakuniy konspekti va to'liq shpargalkasini jamlaymiz.",
+    "a0": 126.57,
+    "a1": 132.55,
+    "words": [
+      {
+        "w": "Keyingi",
+        "s": 126.57,
+        "e": 126.89
+      },
+      {
+        "w": "qirqinchi",
+        "s": 126.97,
+        "e": 127.41
+      },
+      {
+        "w": "bobda",
+        "s": 127.47,
+        "e": 127.77
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 128.15,
+        "e": 128.53
+      },
+      {
+        "w": "qo'llanmasining",
+        "s": 128.65,
+        "e": 129.31
+      },
+      {
+        "w": "yakuniy",
+        "s": 129.37,
+        "e": 129.77
+      },
+      {
+        "w": "konspekti",
+        "s": 129.81,
+        "e": 130.37
+      },
+      {
+        "w": "va",
+        "s": 130.69,
+        "e": 130.75
+      },
+      {
+        "w": "to'liq",
+        "s": 130.91,
+        "e": 131.21
+      },
+      {
+        "w": "shpargalkasini",
+        "s": 131.27,
+        "e": 132.01
+      },
+      {
+        "w": "jamlaymiz.",
+        "s": 132.05,
+        "e": 132.55
+      }
+    ]
+  },
+  {
+    "id": "L16",
+    "scene": "xulosa",
+    "text": "E'tiboringiz uchun rahmat, savollarga to'g'ri arxitektura bilan javob berishda davom eting!",
+    "show": "E'tiboringiz uchun rahmat, savollarga to'g'ri arxitektura bilan javob berishda davom eting!",
+    "say": "E'tiboringiz uchun rahmat, savollarga to'g'ri arxitektura bilan javob berishda davom eting!",
+    "a0": 133.21,
+    "a1": 138.62,
+    "words": [
+      {
+        "w": "E'tiboringiz",
+        "s": 133.21,
+        "e": 133.85
+      },
+      {
+        "w": "uchun",
+        "s": 133.91,
+        "e": 134.11
+      },
+      {
+        "w": "rahmat,",
+        "s": 134.2,
+        "e": 134.72
+      },
+      {
+        "w": "savollarga",
+        "s": 135.16,
+        "e": 135.74
+      },
+      {
+        "w": "to'g'ri",
+        "s": 135.86,
+        "e": 136.22
+      },
+      {
+        "w": "arxitektura",
+        "s": 136.34,
+        "e": 137.08
+      },
+      {
+        "w": "bilan",
+        "s": 137.12,
+        "e": 137.32
+      },
+      {
+        "w": "javob",
+        "s": 137.36,
+        "e": 137.64
+      },
+      {
+        "w": "berishda",
+        "s": 137.68,
+        "e": 138.0
+      },
+      {
+        "w": "davom",
+        "s": 138.06,
+        "e": 138.32
+      },
+      {
+        "w": "eting!",
+        "s": 138.36,
+        "e": 138.62
+      }
+    ]
+  }
+]
