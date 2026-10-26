@@ -1,0 +1,1528 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Salom! Bu FSD qo'llanmasining o'ttiz birinchi bobi — zamonaviy Angular 22 uchun to'liq ishlab chiqarish shabloni. Bugun standalone komponentlar, signallar va Steiger linteri asosida mustahkam Angular FSD loyihasini quramiz.",
+    "show": "Salom! Bu FSD qo'llanmasining o'ttiz birinchi bobi — zamonaviy Angular 22 uchun to'liq ishlab chiqarish shabloni. Bugun standalone komponentlar, signallar va Steiger linteri asosida mustahkam Angular FSD loyihasini quramiz.",
+    "say": "Salom! Bu Ef-es-di qo'llanmasining o'ttiz birinchi bobi — zamonaviy Angular yigirma ikki uchun to'liq ishlab chiqarish shabloni. Bugun stend-elon komponentlar, signallar va stayger linteri asosida mustahkam Angular Ef-es-di loyihasini quramiz.",
+    "a0": 0.28,
+    "a1": 16.79,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.28,
+        "e": 0.58
+      },
+      {
+        "w": "Bu",
+        "s": 1.1,
+        "e": 1.18
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 1.46,
+        "e": 1.86
+      },
+      {
+        "w": "qo'llanmasining",
+        "s": 1.94,
+        "e": 2.74
+      },
+      {
+        "w": "o'ttiz",
+        "s": 2.9,
+        "e": 3.18
+      },
+      {
+        "w": "birinchi",
+        "s": 3.22,
+        "e": 3.58
+      },
+      {
+        "w": "bobi",
+        "s": 3.62,
+        "e": 3.86
+      },
+      {
+        "w": "—",
+        "s": 3.86,
+        "e": 3.86
+      },
+      {
+        "w": "zamonaviy",
+        "s": 4.48,
+        "e": 5.06
+      },
+      {
+        "w": "Angular",
+        "s": 5.34,
+        "e": 5.76
+      },
+      {
+        "w": "yigirma",
+        "s": 5.82,
+        "e": 6.2
+      },
+      {
+        "w": "ikki",
+        "s": 6.2,
+        "e": 6.4
+      },
+      {
+        "w": "uchun",
+        "s": 6.48,
+        "e": 6.72
+      },
+      {
+        "w": "to'liq",
+        "s": 6.86,
+        "e": 7.22
+      },
+      {
+        "w": "ishlab",
+        "s": 7.36,
+        "e": 7.67
+      },
+      {
+        "w": "chiqarish",
+        "s": 7.73,
+        "e": 8.05
+      },
+      {
+        "w": "shabloni.",
+        "s": 8.05,
+        "e": 8.47
+      },
+      {
+        "w": "Bugun",
+        "s": 8.95,
+        "e": 9.27
+      },
+      {
+        "w": "stend-elon",
+        "s": 9.49,
+        "e": 10.07
+      },
+      {
+        "w": "komponentlar,",
+        "s": 10.13,
+        "e": 10.87
+      },
+      {
+        "w": "signallar",
+        "s": 11.11,
+        "e": 11.69
+      },
+      {
+        "w": "va",
+        "s": 12.07,
+        "e": 12.13
+      },
+      {
+        "w": "stayger",
+        "s": 12.35,
+        "e": 12.79
+      },
+      {
+        "w": "linteri",
+        "s": 12.85,
+        "e": 13.19
+      },
+      {
+        "w": "asosida",
+        "s": 13.23,
+        "e": 13.71
+      },
+      {
+        "w": "mustahkam",
+        "s": 14.07,
+        "e": 14.69
+      },
+      {
+        "w": "Angular",
+        "s": 14.89,
+        "e": 15.29
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 15.43,
+        "e": 15.81
+      },
+      {
+        "w": "loyihasini",
+        "s": 15.91,
+        "e": 16.39
+      },
+      {
+        "w": "quramiz.",
+        "s": 16.43,
+        "e": 16.79
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "intro",
+    "text": "Angular CLI yaratadigan src app qatlami FSD bilan ajoyib tarzda mos keladi va NgModule siz mustaqil modulli arxitektura beradi.",
+    "show": "Angular CLI yaratadigan src app qatlami FSD bilan ajoyib tarzda mos keladi va NgModule siz mustaqil modulli arxitektura beradi.",
+    "say": "Angular CLI yaratadigan src ep qatlami Ef-es-di bilan ajoyib tarzda mos keladi va En-ji-modyulsiz mustaqil modulli arxitektura beradi.",
+    "a0": 17.37,
+    "a1": 26.84,
+    "words": [
+      {
+        "w": "Angular",
+        "s": 17.37,
+        "e": 17.79
+      },
+      {
+        "w": "CLI",
+        "s": 17.85,
+        "e": 18.17
+      },
+      {
+        "w": "yaratadigan",
+        "s": 18.29,
+        "e": 18.91
+      },
+      {
+        "w": "src",
+        "s": 19.41,
+        "e": 19.69
+      },
+      {
+        "w": "ep",
+        "s": 19.99,
+        "e": 20.11
+      },
+      {
+        "w": "qatlami",
+        "s": 20.21,
+        "e": 20.63
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 21.05,
+        "e": 21.39
+      },
+      {
+        "w": "bilan",
+        "s": 21.45,
+        "e": 21.67
+      },
+      {
+        "w": "ajoyib",
+        "s": 21.81,
+        "e": 22.25
+      },
+      {
+        "w": "tarzda",
+        "s": 22.29,
+        "e": 22.6
+      },
+      {
+        "w": "mos",
+        "s": 22.64,
+        "e": 22.78
+      },
+      {
+        "w": "keladi",
+        "s": 22.84,
+        "e": 23.14
+      },
+      {
+        "w": "va",
+        "s": 23.64,
+        "e": 23.72
+      },
+      {
+        "w": "En-ji-modyulsiz",
+        "s": 23.94,
+        "e": 24.8
+      },
+      {
+        "w": "mustaqil",
+        "s": 24.86,
+        "e": 25.34
+      },
+      {
+        "w": "modulli",
+        "s": 25.44,
+        "e": 25.86
+      },
+      {
+        "w": "arxitektura",
+        "s": 25.96,
+        "e": 26.54
+      },
+      {
+        "w": "beradi.",
+        "s": 26.56,
+        "e": 26.84
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "loyiha_tuzilmasi",
+    "text": "Loyiha ildizida angular nuqta json brauzer kirish nuqtasini src app entrypoint main nuqta te-es ga yo'naltiradi.",
+    "show": "Loyiha ildizida angular nuqta json brauzer kirish nuqtasini src app entrypoint main nuqta te-es ga yo'naltiradi.",
+    "say": "Loyiha ildizida angular nuqta json brauzer kirish nuqtasini src ep entrypoint meyn nuqta te-es ga yo'naltiradi.",
+    "a0": 27.5,
+    "a1": 34.86,
+    "words": [
+      {
+        "w": "Loyiha",
+        "s": 27.5,
+        "e": 27.82
+      },
+      {
+        "w": "ildizida",
+        "s": 27.9,
+        "e": 28.32
+      },
+      {
+        "w": "angular",
+        "s": 28.8,
+        "e": 29.18
+      },
+      {
+        "w": "nuqta",
+        "s": 29.22,
+        "e": 29.46
+      },
+      {
+        "w": "json",
+        "s": 29.52,
+        "e": 29.92
+      },
+      {
+        "w": "brauzer",
+        "s": 30.26,
+        "e": 30.66
+      },
+      {
+        "w": "kirish",
+        "s": 30.72,
+        "e": 30.94
+      },
+      {
+        "w": "nuqtasini",
+        "s": 30.98,
+        "e": 31.46
+      },
+      {
+        "w": "src",
+        "s": 31.74,
+        "e": 31.98
+      },
+      {
+        "w": "ep",
+        "s": 32.26,
+        "e": 32.4
+      },
+      {
+        "w": "entrypoint",
+        "s": 32.6,
+        "e": 33.22
+      },
+      {
+        "w": "meyn",
+        "s": 33.3,
+        "e": 33.56
+      },
+      {
+        "w": "nuqta",
+        "s": 33.6,
+        "e": 33.84
+      },
+      {
+        "w": "te-es",
+        "s": 33.92,
+        "e": 34.18
+      },
+      {
+        "w": "ga",
+        "s": 34.22,
+        "e": 34.28
+      },
+      {
+        "w": "yo'naltiradi.",
+        "s": 34.32,
+        "e": 34.86
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "loyiha_tuzilmasi",
+    "text": "Te-es-konfig da et belgisi orqali butun src papkasi xaritalanadi, barcha FSD qatlamlari uning ichida tartibli joylashadi.",
+    "show": "Te-es-konfig da et belgisi orqali butun src papkasi xaritalanadi, barcha FSD qatlamlari uning ichida tartibli joylashadi.",
+    "say": "Te-es konfig da et belgisi orqali butun src papkasi xaritalanadi, barcha Ef-es-di qatlamlari uning ichida tartibli joylashadi.",
+    "a0": 35.24,
+    "a1": 42.81,
+    "words": [
+      {
+        "w": "Te-es",
+        "s": 35.24,
+        "e": 35.5
+      },
+      {
+        "w": "konfig",
+        "s": 35.54,
+        "e": 35.88
+      },
+      {
+        "w": "da",
+        "s": 35.94,
+        "e": 36.02
+      },
+      {
+        "w": "et",
+        "s": 36.5,
+        "e": 36.62
+      },
+      {
+        "w": "belgisi",
+        "s": 36.68,
+        "e": 37.02
+      },
+      {
+        "w": "orqali",
+        "s": 37.06,
+        "e": 37.4
+      },
+      {
+        "w": "butun",
+        "s": 37.48,
+        "e": 37.79
+      },
+      {
+        "w": "src",
+        "s": 38.01,
+        "e": 38.23
+      },
+      {
+        "w": "papkasi",
+        "s": 38.37,
+        "e": 38.73
+      },
+      {
+        "w": "xaritalanadi,",
+        "s": 38.77,
+        "e": 39.39
+      },
+      {
+        "w": "barcha",
+        "s": 39.91,
+        "e": 40.19
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 40.29,
+        "e": 40.61
+      },
+      {
+        "w": "qatlamlari",
+        "s": 40.67,
+        "e": 41.21
+      },
+      {
+        "w": "uning",
+        "s": 41.33,
+        "e": 41.53
+      },
+      {
+        "w": "ichida",
+        "s": 41.57,
+        "e": 41.79
+      },
+      {
+        "w": "tartibli",
+        "s": 41.87,
+        "e": 42.29
+      },
+      {
+        "w": "joylashadi.",
+        "s": 42.35,
+        "e": 42.81
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "loyiha_tuzilmasi",
+    "text": "Steiger linteri Angular te-es fayllaridagi cross-import va public API buzilishlarini to'liq va avtomatik aniqlaydi.",
+    "show": "Steiger linteri Angular te-es fayllaridagi cross-import va public API buzilishlarini to'liq va avtomatik aniqlaydi.",
+    "say": "Stayger linteri Angular te-es fayllaridagi kross-import va public ey-pi-ay buzilishlarini to'liq va avtomatik aniqlaydi.",
+    "a0": 43.41,
+    "a1": 50.19,
+    "words": [
+      {
+        "w": "Stayger",
+        "s": 43.41,
+        "e": 43.83
+      },
+      {
+        "w": "linteri",
+        "s": 43.89,
+        "e": 44.25
+      },
+      {
+        "w": "Angular",
+        "s": 44.41,
+        "e": 44.77
+      },
+      {
+        "w": "te-es",
+        "s": 44.85,
+        "e": 45.09
+      },
+      {
+        "w": "fayllaridagi",
+        "s": 45.13,
+        "e": 45.79
+      },
+      {
+        "w": "kross-import",
+        "s": 45.85,
+        "e": 46.55
+      },
+      {
+        "w": "va",
+        "s": 46.61,
+        "e": 46.67
+      },
+      {
+        "w": "public",
+        "s": 46.79,
+        "e": 47.11
+      },
+      {
+        "w": "ey-pi-ay",
+        "s": 47.23,
+        "e": 47.59
+      },
+      {
+        "w": "buzilishlarini",
+        "s": 47.63,
+        "e": 48.27
+      },
+      {
+        "w": "to'liq",
+        "s": 48.63,
+        "e": 48.95
+      },
+      {
+        "w": "va",
+        "s": 49.01,
+        "e": 49.07
+      },
+      {
+        "w": "avtomatik",
+        "s": 49.21,
+        "e": 49.73
+      },
+      {
+        "w": "aniqlaydi.",
+        "s": 49.77,
+        "e": 50.19
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "app_qatlami",
+    "text": "Entrypoint papkasidagi main nuqta te-es bootstrapApplication funksiyasi bilan App karkasini ishga tushiradi.",
+    "show": "Entrypoint papkasidagi main nuqta te-es bootstrapApplication funksiyasi bilan App karkasini ishga tushiradi.",
+    "say": "Entrypoint papkasidagi meyn nuqta te-es butstrap aplikeyshn funksiyasi bilan App karkasini ishga tushiradi.",
+    "a0": 50.85,
+    "a1": 56.74,
+    "words": [
+      {
+        "w": "Entrypoint",
+        "s": 50.85,
+        "e": 51.39
+      },
+      {
+        "w": "papkasidagi",
+        "s": 51.43,
+        "e": 52.01
+      },
+      {
+        "w": "meyn",
+        "s": 52.07,
+        "e": 52.31
+      },
+      {
+        "w": "nuqta",
+        "s": 52.33,
+        "e": 52.6
+      },
+      {
+        "w": "te-es",
+        "s": 52.68,
+        "e": 52.94
+      },
+      {
+        "w": "butstrap",
+        "s": 53.28,
+        "e": 53.76
+      },
+      {
+        "w": "aplikeyshn",
+        "s": 53.86,
+        "e": 54.42
+      },
+      {
+        "w": "funksiyasi",
+        "s": 54.48,
+        "e": 54.9
+      },
+      {
+        "w": "bilan",
+        "s": 54.92,
+        "e": 55.12
+      },
+      {
+        "w": "App",
+        "s": 55.38,
+        "e": 55.5
+      },
+      {
+        "w": "karkasini",
+        "s": 55.56,
+        "e": 56.04
+      },
+      {
+        "w": "ishga",
+        "s": 56.14,
+        "e": 56.36
+      },
+      {
+        "w": "tushiradi.",
+        "s": 56.4,
+        "e": 56.74
+      }
+    ]
+  },
+  {
+    "id": "L7",
+    "scene": "app_qatlami",
+    "text": "app nuqta konfig router, http klient va inyekt tokenlarini tayyorlasa, app routes da sahifalar loadComponent bilan chaqiriladi.",
+    "show": "app nuqta konfig router, http klient va inyekt tokenlarini tayyorlasa, app routes da sahifalar loadComponent bilan chaqiriladi.",
+    "say": "Ep nuqta konfig router, http klient va injekt tokenlarini tayyorlasa, ep routs da sahifalar loud komponent bilan chaqiriladi.",
+    "a0": 57.32,
+    "a1": 64.98,
+    "words": [
+      {
+        "w": "Ep",
+        "s": 57.32,
+        "e": 57.44
+      },
+      {
+        "w": "nuqta",
+        "s": 57.5,
+        "e": 57.76
+      },
+      {
+        "w": "konfig",
+        "s": 57.82,
+        "e": 58.16
+      },
+      {
+        "w": "router,",
+        "s": 58.54,
+        "e": 58.92
+      },
+      {
+        "w": "http",
+        "s": 59.32,
+        "e": 59.58
+      },
+      {
+        "w": "klient",
+        "s": 59.7,
+        "e": 60.1
+      },
+      {
+        "w": "va",
+        "s": 60.16,
+        "e": 60.22
+      },
+      {
+        "w": "injekt",
+        "s": 60.42,
+        "e": 60.68
+      },
+      {
+        "w": "tokenlarini",
+        "s": 60.7,
+        "e": 61.24
+      },
+      {
+        "w": "tayyorlasa,",
+        "s": 61.28,
+        "e": 61.76
+      },
+      {
+        "w": "ep",
+        "s": 62.18,
+        "e": 62.3
+      },
+      {
+        "w": "routs",
+        "s": 62.38,
+        "e": 62.66
+      },
+      {
+        "w": "da",
+        "s": 62.7,
+        "e": 62.78
+      },
+      {
+        "w": "sahifalar",
+        "s": 62.84,
+        "e": 63.38
+      },
+      {
+        "w": "loud",
+        "s": 63.58,
+        "e": 63.8
+      },
+      {
+        "w": "komponent",
+        "s": 63.84,
+        "e": 64.28
+      },
+      {
+        "w": "bilan",
+        "s": 64.3,
+        "e": 64.46
+      },
+      {
+        "w": "chaqiriladi.",
+        "s": 64.5,
+        "e": 64.98
+      }
+    ]
+  },
+  {
+    "id": "L8",
+    "scene": "sahifa_va_komponentlar",
+    "text": "Mahsulot sahifasi withComponentInputBinding orqali marshrut parametridan id ni qabul qiladi va httpResource bilan ma'lumotni yuklaydi.",
+    "show": "Mahsulot sahifasi withComponentInputBinding orqali marshrut parametridan id ni qabul qiladi va httpResource bilan ma'lumotni yuklaydi.",
+    "say": "Mahsulot sahifasi viz komponent input baynding orqali marshrut parametridan id ni qabul qiladi va eych-ti-ti-pi resurs bilan ma'lumotni yuklaydi.",
+    "a0": 65.66,
+    "a1": 74.11,
+    "words": [
+      {
+        "w": "Mahsulot",
+        "s": 65.66,
+        "e": 66.16
+      },
+      {
+        "w": "sahifasi",
+        "s": 66.18,
+        "e": 66.76
+      },
+      {
+        "w": "viz",
+        "s": 67.12,
+        "e": 67.3
+      },
+      {
+        "w": "komponent",
+        "s": 67.34,
+        "e": 67.81
+      },
+      {
+        "w": "input",
+        "s": 67.91,
+        "e": 68.17
+      },
+      {
+        "w": "baynding",
+        "s": 68.21,
+        "e": 68.59
+      },
+      {
+        "w": "orqali",
+        "s": 68.61,
+        "e": 68.93
+      },
+      {
+        "w": "marshrut",
+        "s": 69.23,
+        "e": 69.61
+      },
+      {
+        "w": "parametridan",
+        "s": 69.65,
+        "e": 70.31
+      },
+      {
+        "w": "id",
+        "s": 70.55,
+        "e": 70.63
+      },
+      {
+        "w": "ni",
+        "s": 70.75,
+        "e": 70.81
+      },
+      {
+        "w": "qabul",
+        "s": 70.87,
+        "e": 71.11
+      },
+      {
+        "w": "qiladi",
+        "s": 71.15,
+        "e": 71.41
+      },
+      {
+        "w": "va",
+        "s": 71.75,
+        "e": 71.81
+      },
+      {
+        "w": "eych-ti-ti-pi",
+        "s": 72.09,
+        "e": 72.57
+      },
+      {
+        "w": "resurs",
+        "s": 72.63,
+        "e": 72.93
+      },
+      {
+        "w": "bilan",
+        "s": 72.95,
+        "e": 73.15
+      },
+      {
+        "w": "ma'lumotni",
+        "s": 73.21,
+        "e": 73.69
+      },
+      {
+        "w": "yuklaydi.",
+        "s": 73.73,
+        "e": 74.11
+      }
+    ]
+  },
+  {
+    "id": "L9",
+    "scene": "sahifa_va_komponentlar",
+    "text": "Savatga qo'shish tugmasi feature qatlamida turib, injekt orqali savat servisi va api bilan mustaqil bog'lanadi.",
+    "show": "Savatga qo'shish tugmasi feature qatlamida turib, injekt orqali savat servisi va api bilan mustaqil bog'lanadi.",
+    "say": "Savatga qo'shish tugmasi ficher qatlamida turib, injekt orqali savat servisi va ey-pi-ay bilan mustaqil bog'lanadi.",
+    "a0": 74.75,
+    "a1": 80.91,
+    "words": [
+      {
+        "w": "Savatga",
+        "s": 74.75,
+        "e": 75.15
+      },
+      {
+        "w": "qo'shish",
+        "s": 75.21,
+        "e": 75.51
+      },
+      {
+        "w": "tugmasi",
+        "s": 75.55,
+        "e": 75.93
+      },
+      {
+        "w": "ficher",
+        "s": 76.25,
+        "e": 76.53
+      },
+      {
+        "w": "qatlamida",
+        "s": 76.59,
+        "e": 77.01
+      },
+      {
+        "w": "turib,",
+        "s": 77.07,
+        "e": 77.29
+      },
+      {
+        "w": "injekt",
+        "s": 77.67,
+        "e": 78.01
+      },
+      {
+        "w": "orqali",
+        "s": 78.05,
+        "e": 78.37
+      },
+      {
+        "w": "savat",
+        "s": 78.45,
+        "e": 78.73
+      },
+      {
+        "w": "servisi",
+        "s": 78.77,
+        "e": 79.15
+      },
+      {
+        "w": "va",
+        "s": 79.19,
+        "e": 79.27
+      },
+      {
+        "w": "ey-pi-ay",
+        "s": 79.41,
+        "e": 79.75
+      },
+      {
+        "w": "bilan",
+        "s": 79.79,
+        "e": 79.99
+      },
+      {
+        "w": "mustaqil",
+        "s": 80.03,
+        "e": 80.43
+      },
+      {
+        "w": "bog'lanadi.",
+        "s": 80.47,
+        "e": 80.91
+      }
+    ]
+  },
+  {
+    "id": "L10",
+    "scene": "sahifa_va_komponentlar",
+    "text": "Mahsulot kartasi esa entity qatlamida joylashib, ng-content proyeksiyasi orqali harakat tugmalarini tashqaridan qabul qiladi.",
+    "show": "Mahsulot kartasi esa entity qatlamida joylashib, ng-content proyeksiyasi orqali harakat tugmalarini tashqaridan qabul qiladi.",
+    "say": "Mahsulot kartasi esa entiti qatlamida joylashib, en-ji kontent proyeksiyasi orqali harakat tugmalarini tashqaridan qabul qiladi.",
+    "a0": 81.61,
+    "a1": 88.3,
+    "words": [
+      {
+        "w": "Mahsulot",
+        "s": 81.61,
+        "e": 82.09
+      },
+      {
+        "w": "kartasi",
+        "s": 82.11,
+        "e": 82.47
+      },
+      {
+        "w": "esa",
+        "s": 82.54,
+        "e": 82.68
+      },
+      {
+        "w": "entiti",
+        "s": 83.08,
+        "e": 83.38
+      },
+      {
+        "w": "qatlamida",
+        "s": 83.42,
+        "e": 83.84
+      },
+      {
+        "w": "joylashib,",
+        "s": 83.9,
+        "e": 84.3
+      },
+      {
+        "w": "en-ji",
+        "s": 84.64,
+        "e": 84.86
+      },
+      {
+        "w": "kontent",
+        "s": 84.94,
+        "e": 85.32
+      },
+      {
+        "w": "proyeksiyasi",
+        "s": 85.34,
+        "e": 85.84
+      },
+      {
+        "w": "orqali",
+        "s": 85.88,
+        "e": 86.18
+      },
+      {
+        "w": "harakat",
+        "s": 86.26,
+        "e": 86.66
+      },
+      {
+        "w": "tugmalarini",
+        "s": 86.68,
+        "e": 87.2
+      },
+      {
+        "w": "tashqaridan",
+        "s": 87.24,
+        "e": 87.72
+      },
+      {
+        "w": "qabul",
+        "s": 87.78,
+        "e": 88.02
+      },
+      {
+        "w": "qiladi.",
+        "s": 88.04,
+        "e": 88.3
+      }
+    ]
+  },
+  {
+    "id": "L11",
+    "scene": "rasmlar_va_aktivlar",
+    "text": "Slicelardagi rasmlar uchun ikki usul mavjud: angular nuqta json dagi asset glob yoki esbuild fayl loaderi.",
+    "show": "Slicelardagi rasmlar uchun ikki usul mavjud: angular nuqta json dagi asset glob yoki esbuild fayl loaderi.",
+    "say": "Slicelardagi rasmlar uchun ikki usul mavjud: angular nuqta json dagi asset glob yoki es-bild fayl loaderi.",
+    "a0": 88.86,
+    "a1": 95.5,
+    "words": [
+      {
+        "w": "Slicelardagi",
+        "s": 88.86,
+        "e": 89.56
+      },
+      {
+        "w": "rasmlar",
+        "s": 89.6,
+        "e": 89.94
+      },
+      {
+        "w": "uchun",
+        "s": 90.04,
+        "e": 90.18
+      },
+      {
+        "w": "ikki",
+        "s": 90.36,
+        "e": 90.56
+      },
+      {
+        "w": "usul",
+        "s": 90.6,
+        "e": 90.84
+      },
+      {
+        "w": "mavjud:",
+        "s": 90.88,
+        "e": 91.2
+      },
+      {
+        "w": "angular",
+        "s": 91.66,
+        "e": 92.0
+      },
+      {
+        "w": "nuqta",
+        "s": 92.04,
+        "e": 92.28
+      },
+      {
+        "w": "json",
+        "s": 92.34,
+        "e": 92.68
+      },
+      {
+        "w": "dagi",
+        "s": 92.72,
+        "e": 92.92
+      },
+      {
+        "w": "asset",
+        "s": 93.1,
+        "e": 93.42
+      },
+      {
+        "w": "glob",
+        "s": 93.46,
+        "e": 93.68
+      },
+      {
+        "w": "yoki",
+        "s": 93.7,
+        "e": 94.2
+      },
+      {
+        "w": "es-bild",
+        "s": 94.4,
+        "e": 94.8
+      },
+      {
+        "w": "fayl",
+        "s": 94.88,
+        "e": 95.14
+      },
+      {
+        "w": "loaderi.",
+        "s": 95.18,
+        "e": 95.5
+      }
+    ]
+  },
+  {
+    "id": "L12",
+    "scene": "rasmlar_va_aktivlar",
+    "text": "Esbuild loaderi import qilingan fayl nomiga xesh qo'shadi, bu esa brauzer keshini boshqarish uchun eng qulay yondashuvdir.",
+    "show": "Esbuild loaderi import qilingan fayl nomiga xesh qo'shadi, bu esa brauzer keshini boshqarish uchun eng qulay yondashuvdir.",
+    "say": "Es-bild loaderi import qilingan fayl nomiga xesh qo'shadi, bu esa brauzer keshini boshqarish uchun eng qulay yondashuvdir.",
+    "a0": 96.06,
+    "a1": 102.17,
+    "words": [
+      {
+        "w": "Es-bild",
+        "s": 96.06,
+        "e": 96.44
+      },
+      {
+        "w": "loaderi",
+        "s": 96.52,
+        "e": 96.88
+      },
+      {
+        "w": "import",
+        "s": 97.02,
+        "e": 97.28
+      },
+      {
+        "w": "qilingan",
+        "s": 97.3,
+        "e": 97.69
+      },
+      {
+        "w": "fayl",
+        "s": 97.75,
+        "e": 97.99
+      },
+      {
+        "w": "nomiga",
+        "s": 98.03,
+        "e": 98.33
+      },
+      {
+        "w": "xesh",
+        "s": 98.41,
+        "e": 98.61
+      },
+      {
+        "w": "qo'shadi,",
+        "s": 98.63,
+        "e": 98.97
+      },
+      {
+        "w": "bu",
+        "s": 99.31,
+        "e": 99.37
+      },
+      {
+        "w": "esa",
+        "s": 99.43,
+        "e": 99.59
+      },
+      {
+        "w": "brauzer",
+        "s": 99.67,
+        "e": 100.03
+      },
+      {
+        "w": "keshini",
+        "s": 100.07,
+        "e": 100.37
+      },
+      {
+        "w": "boshqarish",
+        "s": 100.39,
+        "e": 100.79
+      },
+      {
+        "w": "uchun",
+        "s": 100.79,
+        "e": 100.99
+      },
+      {
+        "w": "eng",
+        "s": 101.17,
+        "e": 101.31
+      },
+      {
+        "w": "qulay",
+        "s": 101.35,
+        "e": 101.59
+      },
+      {
+        "w": "yondashuvdir.",
+        "s": 101.61,
+        "e": 102.17
+      }
+    ]
+  },
+  {
+    "id": "L13",
+    "scene": "tipik_xatolar",
+    "text": "Tipik xatolar — kodni services, pipes yoki components kabi eski papkalarga ajratish va public API ni chetlab o'tishdir.",
+    "show": "Tipik xatolar — kodni services, pipes yoki components kabi eski papkalarga ajratish va public API ni chetlab o'tishdir.",
+    "say": "Tipik xatolar — kodni services, pipes yoki komponents kabi eski papkalarga ajratish va public ey-pi-ay ni chetlab o'tishdir.",
+    "a0": 102.71,
+    "a1": 109.75,
+    "words": [
+      {
+        "w": "Tipik",
+        "s": 102.71,
+        "e": 103.03
+      },
+      {
+        "w": "xatolar",
+        "s": 103.09,
+        "e": 103.57
+      },
+      {
+        "w": "—",
+        "s": 103.57,
+        "e": 103.57
+      },
+      {
+        "w": "kodni",
+        "s": 103.83,
+        "e": 104.15
+      },
+      {
+        "w": "services,",
+        "s": 104.27,
+        "e": 104.77
+      },
+      {
+        "w": "pipes",
+        "s": 104.95,
+        "e": 105.25
+      },
+      {
+        "w": "yoki",
+        "s": 105.25,
+        "e": 105.51
+      },
+      {
+        "w": "komponents",
+        "s": 105.59,
+        "e": 106.11
+      },
+      {
+        "w": "kabi",
+        "s": 106.13,
+        "e": 106.33
+      },
+      {
+        "w": "eski",
+        "s": 106.51,
+        "e": 106.71
+      },
+      {
+        "w": "papkalarga",
+        "s": 106.77,
+        "e": 107.25
+      },
+      {
+        "w": "ajratish",
+        "s": 107.31,
+        "e": 107.73
+      },
+      {
+        "w": "va",
+        "s": 107.99,
+        "e": 108.05
+      },
+      {
+        "w": "public",
+        "s": 108.15,
+        "e": 108.47
+      },
+      {
+        "w": "ey-pi-ay",
+        "s": 108.61,
+        "e": 108.93
+      },
+      {
+        "w": "ni",
+        "s": 108.97,
+        "e": 109.03
+      },
+      {
+        "w": "chetlab",
+        "s": 109.07,
+        "e": 109.41
+      },
+      {
+        "w": "o'tishdir.",
+        "s": 109.43,
+        "e": 109.75
+      }
+    ]
+  },
+  {
+    "id": "L14",
+    "scene": "tipik_xatolar",
+    "text": "Shuningdek, interceptorlarni feature ichiga tiqish yoki butun servislarni root tarzida shared da to'plash qat'iyan taqiqlanadi.",
+    "show": "Shuningdek, interceptorlarni feature ichiga tiqish yoki butun servislarni root tarzida shared da to'plash qat'iyan taqiqlanadi.",
+    "say": "Shuningdek, interceptorlarni ficher ichiga tiqish yoki butun servislarni root tarzida sherd da to'plash qat'iyan taqiqlanadi.",
+    "a0": 110.15,
+    "a1": 116.7,
+    "words": [
+      {
+        "w": "Shuningdek,",
+        "s": 110.15,
+        "e": 110.61
+      },
+      {
+        "w": "interceptorlarni",
+        "s": 110.75,
+        "e": 111.63
+      },
+      {
+        "w": "ficher",
+        "s": 111.69,
+        "e": 111.95
+      },
+      {
+        "w": "ichiga",
+        "s": 112.01,
+        "e": 112.25
+      },
+      {
+        "w": "tiqish",
+        "s": 112.29,
+        "e": 112.54
+      },
+      {
+        "w": "yoki",
+        "s": 112.6,
+        "e": 112.8
+      },
+      {
+        "w": "butun",
+        "s": 112.86,
+        "e": 113.12
+      },
+      {
+        "w": "servislarni",
+        "s": 113.2,
+        "e": 113.8
+      },
+      {
+        "w": "root",
+        "s": 113.88,
+        "e": 114.04
+      },
+      {
+        "w": "tarzida",
+        "s": 114.1,
+        "e": 114.48
+      },
+      {
+        "w": "sherd",
+        "s": 114.8,
+        "e": 115.12
+      },
+      {
+        "w": "da",
+        "s": 115.16,
+        "e": 115.22
+      },
+      {
+        "w": "to'plash",
+        "s": 115.28,
+        "e": 115.62
+      },
+      {
+        "w": "qat'iyan",
+        "s": 115.68,
+        "e": 116.08
+      },
+      {
+        "w": "taqiqlanadi.",
+        "s": 116.12,
+        "e": 116.7
+      }
+    ]
+  },
+  {
+    "id": "L15",
+    "scene": "xulosa",
+    "text": "Xulosa: Angular 22 ning zoneless va signal imkoniyatlari FSD qatlamlari bilan mukammal darajada birlashadi.",
+    "show": "Xulosa: Angular 22 ning zoneless va signal imkoniyatlari FSD qatlamlari bilan mukammal darajada birlashadi.",
+    "say": "Xulosa: Angular yigirma ikki ning zoun-les va signal imkoniyatlari Ef-es-di qatlamlari bilan mukammal darajada birlashadi.",
+    "a0": 117.28,
+    "a1": 124.17,
+    "words": [
+      {
+        "w": "Xulosa:",
+        "s": 117.28,
+        "e": 117.66
+      },
+      {
+        "w": "Angular",
+        "s": 118.3,
+        "e": 118.66
+      },
+      {
+        "w": "yigirma",
+        "s": 118.7,
+        "e": 119.02
+      },
+      {
+        "w": "ikki",
+        "s": 119.04,
+        "e": 119.22
+      },
+      {
+        "w": "ning",
+        "s": 119.26,
+        "e": 119.38
+      },
+      {
+        "w": "zoun-les",
+        "s": 119.46,
+        "e": 119.96
+      },
+      {
+        "w": "va",
+        "s": 120.04,
+        "e": 120.1
+      },
+      {
+        "w": "signal",
+        "s": 120.22,
+        "e": 120.56
+      },
+      {
+        "w": "imkoniyatlari",
+        "s": 120.62,
+        "e": 121.26
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 121.62,
+        "e": 121.98
+      },
+      {
+        "w": "qatlamlari",
+        "s": 122.04,
+        "e": 122.56
+      },
+      {
+        "w": "bilan",
+        "s": 122.58,
+        "e": 122.78
+      },
+      {
+        "w": "mukammal",
+        "s": 122.84,
+        "e": 123.33
+      },
+      {
+        "w": "darajada",
+        "s": 123.37,
+        "e": 123.69
+      },
+      {
+        "w": "birlashadi.",
+        "s": 123.73,
+        "e": 124.17
+      }
+    ]
+  },
+  {
+    "id": "L16",
+    "scene": "xulosa",
+    "text": "Keyingi o'ttiz ikkinchi bobda monorepo va bir nechta FSD ildizlari bilan ishlashni o'rganamiz. Rahmat!",
+    "show": "Keyingi o'ttiz ikkinchi bobda monorepo va bir nechta FSD ildizlari bilan ishlashni o'rganamiz. Rahmat!",
+    "say": "Keyingi o'ttiz ikkinchi bobda monorepo va bir nechta Ef-es-di ildizlari bilan ishlashni o'rganamiz. Rahmat!",
+    "a0": 124.71,
+    "a1": 131.86,
+    "words": [
+      {
+        "w": "Keyingi",
+        "s": 124.71,
+        "e": 125.11
+      },
+      {
+        "w": "o'ttiz",
+        "s": 125.35,
+        "e": 125.63
+      },
+      {
+        "w": "ikkinchi",
+        "s": 125.67,
+        "e": 126.05
+      },
+      {
+        "w": "bobda",
+        "s": 126.09,
+        "e": 126.43
+      },
+      {
+        "w": "monorepo",
+        "s": 126.87,
+        "e": 127.41
+      },
+      {
+        "w": "va",
+        "s": 127.51,
+        "e": 127.59
+      },
+      {
+        "w": "bir",
+        "s": 127.71,
+        "e": 127.85
+      },
+      {
+        "w": "nechta",
+        "s": 127.89,
+        "e": 128.21
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 128.37,
+        "e": 128.97
+      },
+      {
+        "w": "ildizlari",
+        "s": 129.09,
+        "e": 129.58
+      },
+      {
+        "w": "bilan",
+        "s": 129.62,
+        "e": 129.8
+      },
+      {
+        "w": "ishlashni",
+        "s": 129.9,
+        "e": 130.34
+      },
+      {
+        "w": "o'rganamiz.",
+        "s": 130.4,
+        "e": 130.9
+      },
+      {
+        "w": "Rahmat!",
+        "s": 131.4,
+        "e": 131.86
+      }
+    ]
+  }
+]

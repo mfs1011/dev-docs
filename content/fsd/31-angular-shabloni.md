@@ -4,6 +4,14 @@
 
 ## Qisqacha
 
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/fsd/31-angular-shabloni.jpg" src="/video/fsd/31-angular-shabloni.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/fsd/31-angular-shabloni.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/fsd/31-angular-shabloni.uz.vtt">
+</video>
+<figcaption>Bob videoda: Angular 22 shabloni — standalone komponentlar, zoneless signals, angular.json sozlamalari, loadComponent va Steiger arxitektura tekshiruvi.</figcaption>
+</figure>
+
 Rasmiy FSD hujjatida Angular uchun alohida qo'llanma **yo'q** — bu shablon shu bo'shliqni to'ldiradi. Angular'da qulay tasodif bor: CLI allaqachon `src/app/` yaratadi, va u FSD'ning `app` qatlamiga to'g'ri keladi. Qolgan qatlamlar `src/` ichida uning yonida turadi, `@/` yo'li `tsconfig.json`'dagi `paths` orqali beriladi. Standalone komponentlar, `inject()` va signallar FSD bilan tabiiy ishlaydi: har komponent o'z importlarini o'zi e'lon qiladi, NgModule'lar yo'q.
 
 2026-yil oktabrda `ng new` bilan yaratilgan **Angular 22.2** (zoneless, TypeScript 6.0) loyihasida tekshirildi: `ng build` ✅, `npx steiger src` ✅. Steiger Angular `.ts` fayllaridagi cross-import va public API'ni chetlab o'tishni ham ushlaydi — sinaldi.
