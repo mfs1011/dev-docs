@@ -4,6 +4,14 @@
 
 ## Qisqacha
 
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/fsd/22-autentifikatsiya.jpg" src="/video/fsd/22-autentifikatsiya.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/fsd/22-autentifikatsiya.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/fsd/22-autentifikatsiya.uz.vtt">
+</video>
+<figcaption>Bob videoda: Autentifikatsiya — login sahifasi va dialogi, shared/auth da token saqlash, refresh va xavfsiz tozalash.</figcaption>
+</figure>
+
 Autentifikatsiya uch qadam: foydalanuvchidan ma'lumot olish → backend'ga yuborish → keyingi so'rovlar uchun tokenni saqlash. FSD'da: login **sahifasi** — `pages/sign-in` (har joydan ochiladigan **dialog** bo'lsa — widget); so'rovlar — `shared/api` yoki sahifa `api`'da; token — `shared` yoki `entities`'da, **hech qachon** sahifa yoki widget'da emas. Eng yaxshi saqlash joyi — **cookie**: frontend arxitekturasi uchun deyarli hech narsa talab qilmaydi.
 
 ## Qoida

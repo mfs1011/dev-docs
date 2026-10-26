@@ -1,0 +1,1413 @@
+[
+  {
+    "id": "L1",
+    "scene": "intro",
+    "text": "Salom! Bu FSD qo'llanmasining yigirma ikkinchi bobi — Autentifikatsiya arxitekturasi. Bugun kirish, ro'yxatdan o'tish, tokenlarni saqlash va sessiyani boshqarishni FSD qatlamlarida to'g'ri tashkil qilishni o'rganamiz.",
+    "show": "Salom! Bu FSD qo'llanmasining yigirma ikkinchi bobi — Autentifikatsiya arxitekturasi. Bugun kirish, ro'yxatdan o'tish, tokenlarni saqlash va sessiyani boshqarishni FSD qatlamlarida to'g'ri tashkil qilishni o'rganamiz.",
+    "say": "Salom! Bu Ef-es-di qo'llanmasining yigirma ikkinchi bobi — Autentifikatsiya arxitekturasi. Bugun kirish, ro'yxatdan o'tish, tokenlarni saqlash va sessiyani boshqarishni Ef-es-di qatlamlarida to'g'ri tashkil qilishni o'rganamiz.",
+    "a0": 0.22,
+    "a1": 17.11,
+    "words": [
+      {
+        "w": "Salom!",
+        "s": 0.22,
+        "e": 0.54
+      },
+      {
+        "w": "Bu",
+        "s": 1.4,
+        "e": 1.5
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 1.88,
+        "e": 2.32
+      },
+      {
+        "w": "qo'llanmasining",
+        "s": 2.44,
+        "e": 3.3
+      },
+      {
+        "w": "yigirma",
+        "s": 3.38,
+        "e": 3.74
+      },
+      {
+        "w": "ikkinchi",
+        "s": 3.8,
+        "e": 4.16
+      },
+      {
+        "w": "bobi",
+        "s": 4.2,
+        "e": 4.5
+      },
+      {
+        "w": "—",
+        "s": 4.5,
+        "e": 4.5
+      },
+      {
+        "w": "Autentifikatsiya",
+        "s": 5.12,
+        "e": 6.06
+      },
+      {
+        "w": "arxitekturasi.",
+        "s": 6.12,
+        "e": 7.0
+      },
+      {
+        "w": "Bugun",
+        "s": 7.79,
+        "e": 8.11
+      },
+      {
+        "w": "kirish,",
+        "s": 8.23,
+        "e": 8.67
+      },
+      {
+        "w": "ro'yxatdan",
+        "s": 9.21,
+        "e": 9.75
+      },
+      {
+        "w": "o'tish,",
+        "s": 9.91,
+        "e": 10.37
+      },
+      {
+        "w": "tokenlarni",
+        "s": 10.83,
+        "e": 11.45
+      },
+      {
+        "w": "saqlash",
+        "s": 11.51,
+        "e": 12.05
+      },
+      {
+        "w": "va",
+        "s": 12.41,
+        "e": 12.49
+      },
+      {
+        "w": "sessiyani",
+        "s": 12.61,
+        "e": 13.05
+      },
+      {
+        "w": "boshqarishni",
+        "s": 13.09,
+        "e": 13.71
+      },
+      {
+        "w": "Ef-es-di",
+        "s": 13.91,
+        "e": 14.33
+      },
+      {
+        "w": "qatlamlarida",
+        "s": 14.41,
+        "e": 15.09
+      },
+      {
+        "w": "to'g'ri",
+        "s": 15.23,
+        "e": 15.59
+      },
+      {
+        "w": "tashkil",
+        "s": 15.65,
+        "e": 16.03
+      },
+      {
+        "w": "qilishni",
+        "s": 16.09,
+        "e": 16.45
+      },
+      {
+        "w": "o'rganamiz.",
+        "s": 16.57,
+        "e": 17.11
+      }
+    ]
+  },
+  {
+    "id": "L2",
+    "scene": "intro",
+    "text": "Autentifikatsiya uch asosiy qadamdan iborat: foydalanuvchidan ma'lumot olish, backend'ga yuborish va kelgan tokenni to'g'ri qatlamda saqlash.",
+    "show": "Autentifikatsiya uch asosiy qadamdan iborat: foydalanuvchidan ma'lumot olish, backend'ga yuborish va kelgan tokenni to'g'ri qatlamda saqlash.",
+    "say": "Autentifikatsiya uch asosiy qadamdan iborat: foydalanuvchidan ma'lumot olish, bekend'ga yuborish va kelgan tokenni to'g'ri qatlamda saqlash.",
+    "a0": 18.07,
+    "a1": 28.14,
+    "words": [
+      {
+        "w": "Autentifikatsiya",
+        "s": 18.07,
+        "e": 18.99
+      },
+      {
+        "w": "uch",
+        "s": 19.19,
+        "e": 19.35
+      },
+      {
+        "w": "asosiy",
+        "s": 19.49,
+        "e": 19.91
+      },
+      {
+        "w": "qadamdan",
+        "s": 19.99,
+        "e": 20.43
+      },
+      {
+        "w": "iborat:",
+        "s": 20.55,
+        "e": 20.97
+      },
+      {
+        "w": "foydalanuvchidan",
+        "s": 21.71,
+        "e": 22.49
+      },
+      {
+        "w": "ma'lumot",
+        "s": 22.56,
+        "e": 23.04
+      },
+      {
+        "w": "olish,",
+        "s": 23.12,
+        "e": 23.36
+      },
+      {
+        "w": "bekend'ga",
+        "s": 24.02,
+        "e": 24.52
+      },
+      {
+        "w": "yuborish",
+        "s": 24.6,
+        "e": 25.1
+      },
+      {
+        "w": "va",
+        "s": 25.64,
+        "e": 25.72
+      },
+      {
+        "w": "kelgan",
+        "s": 25.8,
+        "e": 26.16
+      },
+      {
+        "w": "tokenni",
+        "s": 26.22,
+        "e": 26.7
+      },
+      {
+        "w": "to'g'ri",
+        "s": 26.8,
+        "e": 27.14
+      },
+      {
+        "w": "qatlamda",
+        "s": 27.2,
+        "e": 27.66
+      },
+      {
+        "w": "saqlash.",
+        "s": 27.72,
+        "e": 28.14
+      }
+    ]
+  },
+  {
+    "id": "L3",
+    "scene": "login_sahifasi_va_dialog",
+    "text": "Birinchi qadam — UI joylashuvi: to'liq login yoki ikki bosqichli tasdiqlash sahifasi pages/sign-in qatlamida joylashadi.",
+    "show": "Birinchi qadam — UI joylashuvi: to'liq login yoki ikki bosqichli tasdiqlash sahifasi pages/sign-in qatlamida joylashadi.",
+    "say": "Birinchi qadam — yu-ay joylashuvi: to'liq login yoki ikki bosqichli tasdiqlash sahifasi peyjiz/sayn-in qatlamida joylashadi.",
+    "a0": 29.06,
+    "a1": 38.65,
+    "words": [
+      {
+        "w": "Birinchi",
+        "s": 29.06,
+        "e": 29.36
+      },
+      {
+        "w": "qadam",
+        "s": 29.42,
+        "e": 29.7
+      },
+      {
+        "w": "—",
+        "s": 29.7,
+        "e": 29.7
+      },
+      {
+        "w": "yu-ay",
+        "s": 30.28,
+        "e": 30.58
+      },
+      {
+        "w": "joylashuvi:",
+        "s": 30.62,
+        "e": 31.2
+      },
+      {
+        "w": "to'liq",
+        "s": 32.06,
+        "e": 32.4
+      },
+      {
+        "w": "login",
+        "s": 32.52,
+        "e": 32.9
+      },
+      {
+        "w": "yoki",
+        "s": 32.9,
+        "e": 33.3
+      },
+      {
+        "w": "ikki",
+        "s": 33.52,
+        "e": 33.74
+      },
+      {
+        "w": "bosqichli",
+        "s": 33.78,
+        "e": 34.26
+      },
+      {
+        "w": "tasdiqlash",
+        "s": 34.32,
+        "e": 34.8
+      },
+      {
+        "w": "sahifasi",
+        "s": 34.82,
+        "e": 35.42
+      },
+      {
+        "w": "peyjiz/sayn-in",
+        "s": 35.42,
+        "e": 37.61
+      },
+      {
+        "w": "qatlamida",
+        "s": 37.61,
+        "e": 38.05
+      },
+      {
+        "w": "joylashadi.",
+        "s": 38.11,
+        "e": 38.65
+      }
+    ]
+  },
+  {
+    "id": "L4",
+    "scene": "login_sahifasi_va_dialog",
+    "text": "Agar login shakli har qanday sahifadan ochiladigan modal dialog bo'lsa — u widgets/login-dialog sifatida yaratiladi.",
+    "show": "Agar login shakli har qanday sahifadan ochiladigan modal dialog bo'lsa — u widgets/login-dialog sifatida yaratiladi.",
+    "say": "Agar login shakli har qanday sahifadan ochiladigan modal dialog bo'lsa — u vijets/login-dialog sifatida yaratiladi.",
+    "a0": 39.51,
+    "a1": 48.13,
+    "words": [
+      {
+        "w": "Agar",
+        "s": 39.51,
+        "e": 39.77
+      },
+      {
+        "w": "login",
+        "s": 39.99,
+        "e": 40.29
+      },
+      {
+        "w": "shakli",
+        "s": 40.35,
+        "e": 40.67
+      },
+      {
+        "w": "har",
+        "s": 40.79,
+        "e": 40.99
+      },
+      {
+        "w": "qanday",
+        "s": 41.05,
+        "e": 41.35
+      },
+      {
+        "w": "sahifadan",
+        "s": 41.39,
+        "e": 41.95
+      },
+      {
+        "w": "ochiladigan",
+        "s": 42.07,
+        "e": 42.63
+      },
+      {
+        "w": "modal",
+        "s": 43.03,
+        "e": 43.39
+      },
+      {
+        "w": "dialog",
+        "s": 43.45,
+        "e": 43.81
+      },
+      {
+        "w": "bo'lsa",
+        "s": 43.87,
+        "e": 44.19
+      },
+      {
+        "w": "—",
+        "s": 44.19,
+        "e": 44.19
+      },
+      {
+        "w": "u",
+        "s": 44.69,
+        "e": 44.71
+      },
+      {
+        "w": "vijets/login-dialog",
+        "s": 44.71,
+        "e": 47.13
+      },
+      {
+        "w": "sifatida",
+        "s": 47.13,
+        "e": 47.53
+      },
+      {
+        "w": "yaratiladi.",
+        "s": 47.59,
+        "e": 48.13
+      }
+    ]
+  },
+  {
+    "id": "L5",
+    "scene": "token_qayerda_saqlanadi",
+    "text": "Eng ko'p xato qilinadigan joy — tokenni pages ichida saqlashdir. Boshqa sahifalar unga yeta olmaydi va cross-import taqiqlangan.",
+    "show": "Eng ko'p xato qilinadigan joy — tokenni pages ichida saqlashdir. Boshqa sahifalar unga yeta olmaydi va cross-import taqiqlangan.",
+    "say": "Eng ko'p xato qilinadigan joy — tokenni peyjiz ichida saqlashdir. Boshqa sahifalar unga yeta olmaydi va kross-import taqiqlangan.",
+    "a0": 49.03,
+    "a1": 57.92,
+    "words": [
+      {
+        "w": "Eng",
+        "s": 49.03,
+        "e": 49.25
+      },
+      {
+        "w": "ko'p",
+        "s": 49.29,
+        "e": 49.47
+      },
+      {
+        "w": "xato",
+        "s": 49.51,
+        "e": 49.77
+      },
+      {
+        "w": "qilinadigan",
+        "s": 49.85,
+        "e": 50.39
+      },
+      {
+        "w": "joy",
+        "s": 50.45,
+        "e": 50.65
+      },
+      {
+        "w": "—",
+        "s": 50.65,
+        "e": 50.65
+      },
+      {
+        "w": "tokenni",
+        "s": 51.01,
+        "e": 51.53
+      },
+      {
+        "w": "peyjiz",
+        "s": 51.67,
+        "e": 52.07
+      },
+      {
+        "w": "ichida",
+        "s": 52.17,
+        "e": 52.43
+      },
+      {
+        "w": "saqlashdir.",
+        "s": 52.49,
+        "e": 53.04
+      },
+      {
+        "w": "Boshqa",
+        "s": 53.84,
+        "e": 54.12
+      },
+      {
+        "w": "sahifalar",
+        "s": 54.18,
+        "e": 54.72
+      },
+      {
+        "w": "unga",
+        "s": 54.82,
+        "e": 55.0
+      },
+      {
+        "w": "yeta",
+        "s": 55.08,
+        "e": 55.28
+      },
+      {
+        "w": "olmaydi",
+        "s": 55.4,
+        "e": 55.82
+      },
+      {
+        "w": "va",
+        "s": 56.16,
+        "e": 56.24
+      },
+      {
+        "w": "kross-import",
+        "s": 56.42,
+        "e": 57.16
+      },
+      {
+        "w": "taqiqlangan.",
+        "s": 57.22,
+        "e": 57.92
+      }
+    ]
+  },
+  {
+    "id": "L6",
+    "scene": "token_qayerda_saqlanadi",
+    "text": "Token va joriy foydalanuvchi holati shared/auth yoki alohida entities/session qatlamida saqlanishi shart.",
+    "show": "Token va joriy foydalanuvchi holati shared/auth yoki alohida entities/session qatlamida saqlanishi shart.",
+    "say": "Token va joriy foydalanuvchi holati sherd/os yoki alohida entitiz/seshn qatlamida saqlanishi shart.",
+    "a0": 58.74,
+    "a1": 66.62,
+    "words": [
+      {
+        "w": "Token",
+        "s": 58.74,
+        "e": 59.12
+      },
+      {
+        "w": "va",
+        "s": 59.2,
+        "e": 59.28
+      },
+      {
+        "w": "joriy",
+        "s": 59.4,
+        "e": 59.72
+      },
+      {
+        "w": "foydalanuvchi",
+        "s": 59.76,
+        "e": 60.34
+      },
+      {
+        "w": "holati",
+        "s": 60.38,
+        "e": 60.82
+      },
+      {
+        "w": "sherd/os",
+        "s": 60.82,
+        "e": 62.46
+      },
+      {
+        "w": "yoki",
+        "s": 62.46,
+        "e": 63.04
+      },
+      {
+        "w": "alohida",
+        "s": 63.22,
+        "e": 63.7
+      },
+      {
+        "w": "entitiz/seshn",
+        "s": 63.7,
+        "e": 65.32
+      },
+      {
+        "w": "qatlamida",
+        "s": 65.32,
+        "e": 65.76
+      },
+      {
+        "w": "saqlanishi",
+        "s": 65.82,
+        "e": 66.3
+      },
+      {
+        "w": "shart.",
+        "s": 66.36,
+        "e": 66.62
+      }
+    ]
+  },
+  {
+    "id": "L7",
+    "scene": "token_qayerda_saqlanadi",
+    "text": "Eng xavfsiz va qulay usul — HttpOnly cookie bo'lib, u frontend kodini ortiqcha token boshqaruvidan butunlay ozod qiladi.",
+    "show": "Eng xavfsiz va qulay usul — HttpOnly cookie bo'lib, u frontend kodini ortiqcha token boshqaruvidan butunlay ozod qiladi.",
+    "say": "Eng xavfsiz va qulay usul — Eych-ti-ti-pi Onli kuki bo'lib, u frontend kodini ortiqcha token boshqaruvidan butunlay ozod qiladi.",
+    "a0": 67.53,
+    "a1": 76.07,
+    "words": [
+      {
+        "w": "Eng",
+        "s": 67.53,
+        "e": 67.71
+      },
+      {
+        "w": "xavfsiz",
+        "s": 67.77,
+        "e": 68.19
+      },
+      {
+        "w": "va",
+        "s": 68.23,
+        "e": 68.31
+      },
+      {
+        "w": "qulay",
+        "s": 68.39,
+        "e": 68.65
+      },
+      {
+        "w": "usul",
+        "s": 68.75,
+        "e": 69.07
+      },
+      {
+        "w": "—",
+        "s": 69.07,
+        "e": 69.07
+      },
+      {
+        "w": "Eych-ti-ti-pi",
+        "s": 69.53,
+        "e": 70.17
+      },
+      {
+        "w": "Onli",
+        "s": 70.39,
+        "e": 70.65
+      },
+      {
+        "w": "kuki",
+        "s": 70.71,
+        "e": 70.99
+      },
+      {
+        "w": "bo'lib,",
+        "s": 71.07,
+        "e": 71.33
+      },
+      {
+        "w": "u",
+        "s": 71.73,
+        "e": 71.75
+      },
+      {
+        "w": "frontend",
+        "s": 71.91,
+        "e": 72.39
+      },
+      {
+        "w": "kodini",
+        "s": 72.47,
+        "e": 72.79
+      },
+      {
+        "w": "ortiqcha",
+        "s": 72.99,
+        "e": 73.39
+      },
+      {
+        "w": "token",
+        "s": 73.47,
+        "e": 73.79
+      },
+      {
+        "w": "boshqaruvidan",
+        "s": 73.83,
+        "e": 74.49
+      },
+      {
+        "w": "butunlay",
+        "s": 74.85,
+        "e": 75.35
+      },
+      {
+        "w": "ozod",
+        "s": 75.47,
+        "e": 75.73
+      },
+      {
+        "w": "qiladi.",
+        "s": 75.79,
+        "e": 76.07
+      }
+    ]
+  },
+  {
+    "id": "L8",
+    "scene": "auth_sorovlari_va_refresh",
+    "text": "Login, logout va refresh so'rovlari shared/api/endpoints/auth katalogida markazlashgan holda yoziladi.",
+    "show": "Login, logout va refresh so'rovlari shared/api/endpoints/auth katalogida markazlashgan holda yoziladi.",
+    "say": "Login, logout va refresh so'rovlari sherd/ey-pi-ay/endpoynts/os katalogida markazlashgan holda yoziladi.",
+    "a0": 76.97,
+    "a1": 85.62,
+    "words": [
+      {
+        "w": "Login,",
+        "s": 76.97,
+        "e": 77.41
+      },
+      {
+        "w": "logout",
+        "s": 77.73,
+        "e": 78.29
+      },
+      {
+        "w": "va",
+        "s": 78.41,
+        "e": 78.49
+      },
+      {
+        "w": "refresh",
+        "s": 78.63,
+        "e": 78.99
+      },
+      {
+        "w": "so'rovlari",
+        "s": 79.03,
+        "e": 79.55
+      },
+      {
+        "w": "sherd/ey-pi-ay/endpoynts/os",
+        "s": 79.55,
+        "e": 83.48
+      },
+      {
+        "w": "katalogida",
+        "s": 83.48,
+        "e": 84.04
+      },
+      {
+        "w": "markazlashgan",
+        "s": 84.1,
+        "e": 84.78
+      },
+      {
+        "w": "holda",
+        "s": 84.84,
+        "e": 85.08
+      },
+      {
+        "w": "yoziladi.",
+        "s": 85.1,
+        "e": 85.62
+      }
+    ]
+  },
+  {
+    "id": "L9",
+    "scene": "auth_sorovlari_va_refresh",
+    "text": "To'rt yuz bir xatosi yuz berganda, client.ts middleware'i yangi access token olish uchun avtomatik ravishda refresh chaqiradi.",
+    "show": "To'rt yuz bir xatosi yuz berganda, client.ts middleware'i yangi access token olish uchun avtomatik ravishda refresh chaqiradi.",
+    "say": "To'rt yuz bir xatosi yuz berganda, klient nuqta te-es midlveri yangi akses token olish uchun avtomatik ravishda refresh chaqiradi.",
+    "a0": 86.38,
+    "a1": 94.32,
+    "words": [
+      {
+        "w": "To'rt",
+        "s": 86.38,
+        "e": 86.62
+      },
+      {
+        "w": "yuz",
+        "s": 86.66,
+        "e": 86.8
+      },
+      {
+        "w": "bir",
+        "s": 86.86,
+        "e": 86.96
+      },
+      {
+        "w": "xatosi",
+        "s": 87.02,
+        "e": 87.4
+      },
+      {
+        "w": "yuz",
+        "s": 87.44,
+        "e": 87.58
+      },
+      {
+        "w": "berganda,",
+        "s": 87.62,
+        "e": 88.1
+      },
+      {
+        "w": "klient",
+        "s": 88.5,
+        "e": 88.9
+      },
+      {
+        "w": "nuqta",
+        "s": 88.96,
+        "e": 89.22
+      },
+      {
+        "w": "te-es",
+        "s": 89.32,
+        "e": 89.58
+      },
+      {
+        "w": "midlveri",
+        "s": 89.66,
+        "e": 90.26
+      },
+      {
+        "w": "yangi",
+        "s": 90.4,
+        "e": 90.74
+      },
+      {
+        "w": "akses",
+        "s": 90.86,
+        "e": 91.2
+      },
+      {
+        "w": "token",
+        "s": 91.24,
+        "e": 91.54
+      },
+      {
+        "w": "olish",
+        "s": 91.64,
+        "e": 91.86
+      },
+      {
+        "w": "uchun",
+        "s": 91.88,
+        "e": 92.1
+      },
+      {
+        "w": "avtomatik",
+        "s": 92.46,
+        "e": 93.02
+      },
+      {
+        "w": "ravishda",
+        "s": 93.06,
+        "e": 93.44
+      },
+      {
+        "w": "refresh",
+        "s": 93.5,
+        "e": 93.86
+      },
+      {
+        "w": "chaqiradi.",
+        "s": 93.88,
+        "e": 94.32
+      }
+    ]
+  },
+  {
+    "id": "L10",
+    "scene": "auth_sorovlari_va_refresh",
+    "text": "Agar sessiya muddati tugagan bo'lsa, foydalanuvchi to'g'ridan-to'g'ri login sahifasiga yo'naltiriladi.",
+    "show": "Agar sessiya muddati tugagan bo'lsa, foydalanuvchi to'g'ridan-to'g'ri login sahifasiga yo'naltiriladi.",
+    "say": "Agar sessiya muddati tugagan bo'lsa, foydalanuvchi to'g'ridan-to'g'ri login sahifasiga yo'naltiriladi.",
+    "a0": 95.12,
+    "a1": 100.57,
+    "words": [
+      {
+        "w": "Agar",
+        "s": 95.12,
+        "e": 95.34
+      },
+      {
+        "w": "sessiya",
+        "s": 95.4,
+        "e": 95.7
+      },
+      {
+        "w": "muddati",
+        "s": 95.74,
+        "e": 96.1
+      },
+      {
+        "w": "tugagan",
+        "s": 96.14,
+        "e": 96.56
+      },
+      {
+        "w": "bo'lsa,",
+        "s": 96.6,
+        "e": 96.88
+      },
+      {
+        "w": "foydalanuvchi",
+        "s": 97.22,
+        "e": 97.89
+      },
+      {
+        "w": "to'g'ridan-to'g'ri",
+        "s": 97.97,
+        "e": 98.73
+      },
+      {
+        "w": "login",
+        "s": 98.87,
+        "e": 99.19
+      },
+      {
+        "w": "sahifasiga",
+        "s": 99.23,
+        "e": 99.83
+      },
+      {
+        "w": "yo'naltiriladi.",
+        "s": 99.89,
+        "e": 100.57
+      }
+    ]
+  },
+  {
+    "id": "L11",
+    "scene": "logout_va_tozalash",
+    "text": "Chiqish tugmasi va uning mantiqi odatda uni ko'rsatuvchi widget'da, masalan header modelida saqlanadi.",
+    "show": "Chiqish tugmasi va uning mantiqi odatda uni ko'rsatuvchi widget'da, masalan header modelida saqlanadi.",
+    "say": "Chiqish tugmasi va uning mantiqi odatda uni ko'rsatuvchi vijet'da, masalan xeder modelida saqlanadi.",
+    "a0": 101.33,
+    "a1": 107.67,
+    "words": [
+      {
+        "w": "Chiqish",
+        "s": 101.33,
+        "e": 101.65
+      },
+      {
+        "w": "tugmasi",
+        "s": 101.67,
+        "e": 102.19
+      },
+      {
+        "w": "va",
+        "s": 102.35,
+        "e": 102.41
+      },
+      {
+        "w": "uning",
+        "s": 102.55,
+        "e": 102.77
+      },
+      {
+        "w": "mantiqi",
+        "s": 102.81,
+        "e": 103.31
+      },
+      {
+        "w": "odatda",
+        "s": 103.45,
+        "e": 103.85
+      },
+      {
+        "w": "uni",
+        "s": 104.01,
+        "e": 104.15
+      },
+      {
+        "w": "ko'rsatuvchi",
+        "s": 104.19,
+        "e": 104.73
+      },
+      {
+        "w": "vijet'da,",
+        "s": 104.79,
+        "e": 105.25
+      },
+      {
+        "w": "masalan",
+        "s": 105.59,
+        "e": 106.03
+      },
+      {
+        "w": "xeder",
+        "s": 106.29,
+        "e": 106.61
+      },
+      {
+        "w": "modelida",
+        "s": 106.65,
+        "e": 107.09
+      },
+      {
+        "w": "saqlanadi.",
+        "s": 107.15,
+        "e": 107.67
+      }
+    ]
+  },
+  {
+    "id": "L12",
+    "scene": "logout_va_tozalash",
+    "text": "Oltin qoida: backend logout so'rovi xato bilan tugasa ham, finally blokida mahalliy sessiya va tokenlar darhol tozalanishi kerak.",
+    "show": "Oltin qoida: backend logout so'rovi xato bilan tugasa ham, finally blokida mahalliy sessiya va tokenlar darhol tozalanishi kerak.",
+    "say": "Oltin qoida: bekend logout so'rovi xato bilan tugasa ham, faynalli blokida mahalliy sessiya va tokenlar darhol tozalanishi kerak.",
+    "a0": 108.53,
+    "a1": 117.08,
+    "words": [
+      {
+        "w": "Oltin",
+        "s": 108.53,
+        "e": 108.83
+      },
+      {
+        "w": "qoida:",
+        "s": 108.91,
+        "e": 109.27
+      },
+      {
+        "w": "bekend",
+        "s": 110.05,
+        "e": 110.45
+      },
+      {
+        "w": "logout",
+        "s": 110.59,
+        "e": 110.99
+      },
+      {
+        "w": "so'rovi",
+        "s": 111.03,
+        "e": 111.39
+      },
+      {
+        "w": "xato",
+        "s": 111.47,
+        "e": 111.71
+      },
+      {
+        "w": "bilan",
+        "s": 111.79,
+        "e": 111.99
+      },
+      {
+        "w": "tugasa",
+        "s": 112.01,
+        "e": 112.33
+      },
+      {
+        "w": "ham,",
+        "s": 112.39,
+        "e": 112.56
+      },
+      {
+        "w": "faynalli",
+        "s": 112.94,
+        "e": 113.36
+      },
+      {
+        "w": "blokida",
+        "s": 113.42,
+        "e": 113.8
+      },
+      {
+        "w": "mahalliy",
+        "s": 113.88,
+        "e": 114.32
+      },
+      {
+        "w": "sessiya",
+        "s": 114.42,
+        "e": 114.78
+      },
+      {
+        "w": "va",
+        "s": 114.82,
+        "e": 114.88
+      },
+      {
+        "w": "tokenlar",
+        "s": 114.98,
+        "e": 115.48
+      },
+      {
+        "w": "darhol",
+        "s": 115.72,
+        "e": 116.18
+      },
+      {
+        "w": "tozalanishi",
+        "s": 116.24,
+        "e": 116.78
+      },
+      {
+        "w": "kerak.",
+        "s": 116.82,
+        "e": 117.08
+      }
+    ]
+  },
+  {
+    "id": "L13",
+    "scene": "logout_va_tozalash",
+    "text": "Shuningdek, joriy foydalanuvchini boshqa oddiy user entity'lari bilan aralashtirmaslik lozim.",
+    "show": "Shuningdek, joriy foydalanuvchini boshqa oddiy user entity'lari bilan aralashtirmaslik lozim.",
+    "say": "Shuningdek, joriy foydalanuvchini boshqa oddiy user entiti'lari bilan aralashtirmaslik lozim.",
+    "a0": 117.86,
+    "a1": 123.28,
+    "words": [
+      {
+        "w": "Shuningdek,",
+        "s": 117.86,
+        "e": 118.28
+      },
+      {
+        "w": "joriy",
+        "s": 118.64,
+        "e": 118.96
+      },
+      {
+        "w": "foydalanuvchini",
+        "s": 119.0,
+        "e": 119.74
+      },
+      {
+        "w": "boshqa",
+        "s": 119.84,
+        "e": 120.18
+      },
+      {
+        "w": "oddiy",
+        "s": 120.38,
+        "e": 120.78
+      },
+      {
+        "w": "user",
+        "s": 120.84,
+        "e": 121.06
+      },
+      {
+        "w": "entiti'lari",
+        "s": 121.16,
+        "e": 121.72
+      },
+      {
+        "w": "bilan",
+        "s": 121.74,
+        "e": 121.94
+      },
+      {
+        "w": "aralashtirmaslik",
+        "s": 122.08,
+        "e": 122.9
+      },
+      {
+        "w": "lozim.",
+        "s": 122.96,
+        "e": 123.28
+      }
+    ]
+  },
+  {
+    "id": "L14",
+    "scene": "tipik_xatolar",
+    "text": "Tipik xatolar: tokenni sahifa modelida qoldirish, logout xatosida sessiyani tozalashni unutish yoki localStorage'dan o'rinsiz foydalanish.",
+    "show": "Tipik xatolar: tokenni sahifa modelida qoldirish, logout xatosida sessiyani tozalashni unutish yoki localStorage'dan o'rinsiz foydalanish.",
+    "say": "Tipik xatolar: tokenni sahifa modelida qoldirish, logout xatosida sessiyani tozalashni unutish yoki lokal storejdan o'rinsiz foydalanish.",
+    "a0": 124.04,
+    "a1": 134.27,
+    "words": [
+      {
+        "w": "Tipik",
+        "s": 124.04,
+        "e": 124.4
+      },
+      {
+        "w": "xatolar:",
+        "s": 124.46,
+        "e": 124.98
+      },
+      {
+        "w": "tokenni",
+        "s": 125.68,
+        "e": 126.16
+      },
+      {
+        "w": "sahifa",
+        "s": 126.24,
+        "e": 126.62
+      },
+      {
+        "w": "modelida",
+        "s": 126.7,
+        "e": 127.12
+      },
+      {
+        "w": "qoldirish,",
+        "s": 127.18,
+        "e": 127.69
+      },
+      {
+        "w": "logout",
+        "s": 128.37,
+        "e": 128.75
+      },
+      {
+        "w": "xatosida",
+        "s": 128.79,
+        "e": 129.27
+      },
+      {
+        "w": "sessiyani",
+        "s": 129.39,
+        "e": 129.83
+      },
+      {
+        "w": "tozalashni",
+        "s": 129.87,
+        "e": 130.37
+      },
+      {
+        "w": "unutish",
+        "s": 130.45,
+        "e": 130.91
+      },
+      {
+        "w": "yoki",
+        "s": 130.99,
+        "e": 131.89
+      },
+      {
+        "w": "lokal",
+        "s": 132.13,
+        "e": 132.47
+      },
+      {
+        "w": "storejdan",
+        "s": 132.53,
+        "e": 133.07
+      },
+      {
+        "w": "o'rinsiz",
+        "s": 133.25,
+        "e": 133.67
+      },
+      {
+        "w": "foydalanish.",
+        "s": 133.71,
+        "e": 134.27
+      }
+    ]
+  },
+  {
+    "id": "L15",
+    "scene": "tipik_xatolar",
+    "text": "Toza arxitektura orqali autentifikatsiya xavfsiz, barqaror va qulay ishlaydi.",
+    "show": "Toza arxitektura orqali autentifikatsiya xavfsiz, barqaror va qulay ishlaydi.",
+    "say": "Toza arxitektura orqali autentifikatsiya xavfsiz, barqaror va qulay ishlaydi.",
+    "a0": 135.03,
+    "a1": 140.17,
+    "words": [
+      {
+        "w": "Toza",
+        "s": 135.03,
+        "e": 135.29
+      },
+      {
+        "w": "arxitektura",
+        "s": 135.43,
+        "e": 136.07
+      },
+      {
+        "w": "orqali",
+        "s": 136.17,
+        "e": 136.55
+      },
+      {
+        "w": "autentifikatsiya",
+        "s": 136.71,
+        "e": 137.61
+      },
+      {
+        "w": "xavfsiz,",
+        "s": 137.69,
+        "e": 138.19
+      },
+      {
+        "w": "barqaror",
+        "s": 138.59,
+        "e": 139.17
+      },
+      {
+        "w": "va",
+        "s": 139.25,
+        "e": 139.33
+      },
+      {
+        "w": "qulay",
+        "s": 139.45,
+        "e": 139.73
+      },
+      {
+        "w": "ishlaydi.",
+        "s": 139.75,
+        "e": 140.17
+      }
+    ]
+  },
+  {
+    "id": "L16",
+    "scene": "xulosa",
+    "text": "Xulosa: sahifani pages ga, tokenni shared/auth ga qo'ying, logoutda sessiyani tozalang va cookie'dan foydalaning. Keyingi bobda Tiplar va validatsiyani ko'rib chiqamiz. Rahmat!",
+    "show": "Xulosa: sahifani pages ga, tokenni shared/auth ga qo'ying, logoutda sessiyani tozalang va cookie'dan foydalaning. Keyingi bobda Tiplar va validatsiyani ko'rib chiqamiz. Rahmat!",
+    "say": "Xulosa: sahifani peyjiz ga, tokenni sherd/os ga qo'ying, logoutda sessiyani tozalang va kuki'dan foydalaning. Keyingi bobda Tiplar va validatsiyani ko'rib chiqamiz. Rahmat!",
+    "a0": 140.99,
+    "a1": 154.02,
+    "words": [
+      {
+        "w": "Xulosa:",
+        "s": 140.99,
+        "e": 141.41
+      },
+      {
+        "w": "sahifani",
+        "s": 142.03,
+        "e": 142.58
+      },
+      {
+        "w": "peyjiz",
+        "s": 142.66,
+        "e": 143.02
+      },
+      {
+        "w": "ga,",
+        "s": 143.06,
+        "e": 143.16
+      },
+      {
+        "w": "tokenni",
+        "s": 143.64,
+        "e": 144.14
+      },
+      {
+        "w": "sherd/os",
+        "s": 144.14,
+        "e": 144.86
+      },
+      {
+        "w": "ga",
+        "s": 144.86,
+        "e": 144.94
+      },
+      {
+        "w": "qo'ying,",
+        "s": 145.02,
+        "e": 145.32
+      },
+      {
+        "w": "logoutda",
+        "s": 145.94,
+        "e": 146.48
+      },
+      {
+        "w": "sessiyani",
+        "s": 146.58,
+        "e": 147.0
+      },
+      {
+        "w": "tozalang",
+        "s": 147.06,
+        "e": 147.5
+      },
+      {
+        "w": "va",
+        "s": 147.76,
+        "e": 147.86
+      },
+      {
+        "w": "kuki'dan",
+        "s": 148.04,
+        "e": 148.56
+      },
+      {
+        "w": "foydalaning.",
+        "s": 148.6,
+        "e": 149.18
+      },
+      {
+        "w": "Keyingi",
+        "s": 149.74,
+        "e": 150.1
+      },
+      {
+        "w": "bobda",
+        "s": 150.14,
+        "e": 150.46
+      },
+      {
+        "w": "Tiplar",
+        "s": 150.82,
+        "e": 151.27
+      },
+      {
+        "w": "va",
+        "s": 151.35,
+        "e": 151.41
+      },
+      {
+        "w": "validatsiyani",
+        "s": 151.51,
+        "e": 152.15
+      },
+      {
+        "w": "ko'rib",
+        "s": 152.19,
+        "e": 152.39
+      },
+      {
+        "w": "chiqamiz.",
+        "s": 152.43,
+        "e": 152.81
+      },
+      {
+        "w": "Rahmat!",
+        "s": 153.68,
+        "e": 154.02
+      }
+    ]
+  }
+]
