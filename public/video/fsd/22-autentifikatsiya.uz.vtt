@@ -1,0 +1,81 @@
+WEBVTT
+
+1
+00:01.420 --> 00:18.760
+Salom! Bu FSD qo'llanmasining yigirma ikkinchi bobi — Autentifikatsiya arxitekturasi. Bugun kirish, ro'yxatdan
+o'tish, tokenlarni saqlash va sessiyani boshqarishni FSD qatlamlarida to'g'ri tashkil qilishni o'rganamiz.
+
+2
+00:20.070 --> 00:30.590
+Autentifikatsiya uch asosiy qadamdan iborat: foydalanuvchidan ma'lumot
+olish, backend'ga yuborish va kelgan tokenni to'g'ri qatlamda saqlash.
+
+3
+00:32.660 --> 00:42.700
+Birinchi qadam — UI joylashuvi: to'liq login yoki ikki bosqichli
+tasdiqlash sahifasi pages/sign-in qatlamida joylashadi.
+
+4
+00:43.110 --> 00:52.180
+Agar login shakli har qanday sahifadan ochiladigan modal
+dialog bo'lsa — u widgets/login-dialog sifatida yaratiladi.
+
+5
+00:55.430 --> 01:04.770
+Eng ko'p xato qilinadigan joy — tokenni pages ichida saqlashdir.
+Boshqa sahifalar unga yeta olmaydi va cross-import taqiqlangan.
+
+6
+01:05.140 --> 01:13.470
+Token va joriy foydalanuvchi holati shared/auth yoki
+alohida entities/session qatlamida saqlanishi shart.
+
+7
+01:13.930 --> 01:22.920
+Eng xavfsiz va qulay usul — HttpOnly cookie bo'lib, u frontend
+kodini ortiqcha token boshqaruvidan butunlay ozod qiladi.
+
+8
+01:26.170 --> 01:35.270
+Login, logout va refresh so'rovlari shared/api/endpoints/auth
+katalogida markazlashgan holda yoziladi.
+
+9
+01:35.580 --> 01:43.970
+To'rt yuz bir xatosi yuz berganda, client.ts middleware'i yangi
+access token olish uchun avtomatik ravishda refresh chaqiradi.
+
+10
+01:44.320 --> 01:50.220
+Agar sessiya muddati tugagan bo'lsa, foydalanuvchi
+to'g'ridan-to'g'ri login sahifasiga yo'naltiriladi.
+
+11
+01:53.330 --> 02:00.120
+Chiqish tugmasi va uning mantiqi odatda uni ko'rsatuvchi
+widget'da, masalan header modelida saqlanadi.
+
+12
+02:00.530 --> 02:09.530
+Oltin qoida: backend logout so'rovi xato bilan tugasa ham, finally
+blokida mahalliy sessiya va tokenlar darhol tozalanishi kerak.
+
+13
+02:09.860 --> 02:15.730
+Shuningdek, joriy foydalanuvchini boshqa oddiy
+user entity'lari bilan aralashtirmaslik lozim.
+
+14
+02:18.840 --> 02:29.520
+Tipik xatolar: tokenni sahifa modelida qoldirish, logout xatosida
+sessiyani tozalashni unutish yoki localStorage'dan o'rinsiz foydalanish.
+
+15
+02:29.830 --> 02:35.420
+Toza arxitektura orqali autentifikatsiya
+xavfsiz, barqaror va qulay ishlaydi.
+
+16
+02:38.590 --> 02:52.070
+Xulosa: sahifani pages ga, tokenni shared/auth ga qo'ying, logoutda sessiyani tozalang va
+cookie'dan foydalaning. Keyingi bobda Tiplar va validatsiyani ko'rib chiqamiz. Rahmat!

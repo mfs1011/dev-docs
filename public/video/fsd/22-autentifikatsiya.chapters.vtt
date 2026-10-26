@@ -1,0 +1,22 @@
+WEBVTT
+
+00:00.000 --> 00:31.526
+Kirish: Autentifikatsiya Arxitekturasi
+
+00:31.526 --> 00:54.278
+Login Sahifasi yoki Widget Dialogi
+
+00:54.278 --> 01:24.984
+Token va Sessiya Qayerda Saqlanadi?
+
+01:24.984 --> 01:52.269
+Auth So'rovlari va Token Refresh
+
+01:52.269 --> 02:17.755
+Logout va Sessiyani Xavfsiz Tozalash
+
+02:17.755 --> 02:37.454
+Eng Ko'p Uchraydigan Auth Xatolari
+
+02:37.454 --> 02:55.820
+Xulosa va Keyingi Qadam
