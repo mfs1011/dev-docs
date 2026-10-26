@@ -1,0 +1,22 @@
+WEBVTT
+
+00:00.000 --> 00:27.786
+Kirish: Nuxt 4 va Universal FSD Shabloni
+
+00:27.786 --> 00:53.567
+Nuxt 4 da Qatlamlar To'qnashuvi va Yechim
+
+00:53.567 --> 01:11.365
+nuxt.config.ts va Aliaslar Intizomi
+
+01:11.365 --> 01:34.497
+Marshrut Qobig'i: app/ va Re-export Mexanizmi
+
+01:34.497 --> 01:51.531
+FSD Sahifasida useAsyncData va 404 Boshqaruvi
+
+01:51.531 --> 02:11.846
+Nuxt FSD Shabloni Tipik Xatolari
+
+02:11.846 --> 02:34.760
+Xulosa va Keyingi Qadam

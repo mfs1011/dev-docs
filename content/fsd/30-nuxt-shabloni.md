@@ -4,6 +4,14 @@
 
 ## Qisqacha
 
+<figure class="video">
+<video controls preload="metadata" playsinline poster="/video/fsd/30-nuxt-shabloni.jpg" src="/video/fsd/30-nuxt-shabloni.mp4">
+<track kind="chapters" srclang="uz" label="Bo'limlar" src="/video/fsd/30-nuxt-shabloni.chapters.vtt" default>
+<track kind="subtitles" srclang="uz" label="O'zbekcha" src="/video/fsd/30-nuxt-shabloni.uz.vtt">
+</video>
+<figcaption>Bob videoda: Nuxt 4 shabloni — marshrut qobig'i, src/ FSD qatlamlari, nuxt.config alias sozlamalari va SSR ma'lumot yuklash.</figcaption>
+</figure>
+
 Nuxt'ning fayl asosidagi routeri `pages/` papkasini band qiladi, Nuxt 4 esa butun ilova kodini sukut bo'yicha ildizdagi `app/` papkasida kutadi — ikkalasi ham FSD qatlamlari nomlari. Bu shablonning yechimi Next.js bilan bir xil g'oya: **Nuxt'ning `app/` papkasi faqat marshrut qobig'i** (`app.vue`, `layouts/`, `pages/*.vue` — har biri FSD'dan bitta komponentni import qiladi), **FSD esa `src/` ichida standart nomlar bilan** yashaydi va `@` alias'i `src/`'ga qaraydi.
 
 2026-yil oktabrda **Nuxt 4.5.2** loyihasida tekshirildi: `nuxt build` ✅, SSR sahifalar va 404 ✅, `nuxi typecheck` ✅, `npx steiger src` ✅ (cross-import va public API'ni chetlab o'tish ushlanishi ham sinaldi).
