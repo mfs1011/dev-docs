@@ -1131,6 +1131,8 @@ diff --git c/README.md i/README.md
 
 ## Amaliyot
 
+> **Trenajorda sinab ko'ring:** [diff: nimani nima bilan solishtiradi](/git/trenajor?mashq=diff). Brauzerda tayyor repo ochiladi: buyruqlarni qadamma-qadam yozasiz, yonida graf va `.git` papka o'zgarib boradi.
+
 1. Vaqtinchalik repo'da faylni commit qiling. Uni o'zgartiring, `git add` qiling, yana o'zgartiring. `git diff`, `git diff --staged`, `git diff HEAD` natijalarini va `git status --short` dagi `MM`ni solishtiring. Har diff'dagi `index` qatoridagi hash'larni `git rev-parse HEAD:<fayl>`, `git ls-files -s`, `git hash-object <fayl>` bilan tekshiring.
 2. Funksiyalari bor fayl yarating va funksiya o'rtasida bitta qatorni o'zgartiring. `-U0`, `-U1`, standart va `-W` natijalarini solishtiring. Hunk sarlavhasidagi funksiya nomi nega shunday tanlanganini tushuntiring.
 3. Markdown faylda bitta paragrafning bir nechta so'zini o'zgartiring. `--word-diff`, `--word-diff=porcelain`, `--color-words` va `--word-diff-regex=.` natijalarini ko'ring.

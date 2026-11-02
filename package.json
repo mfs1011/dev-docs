@@ -13,13 +13,19 @@
     "tts": "node scripts/tts.mjs",
     "tts:navbat": "node scripts/tts.mjs --books react,nextjs,vue,angular,git,arxitektura,symfony,laravel",
     "tts:align": ".venv-align/bin/python scripts/align.py",
-    "tts:publish": "node scripts/tts-publish.mjs"
+    "tts:publish": "node scripts/tts-publish.mjs",
+    "trenajor:rootfs": "python3 trenajor/scripts/rootfs.py && rm -rf public/trenajor/fs && python3 trenajor/scripts/fsjson.py",
+    "trenajor:test": "node trenajor/test/boot.mjs && node trenajor/test/mashqlar.mjs && node trenajor/test/graf.mjs",
+    "trenajor:havolalar": "node trenajor/scripts/havolalar.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.117.2",
+    "@xterm/addon-fit": "0.11.0",
+    "@xterm/xterm": "6.0.0",
     "highlight.js": "^11.11.1",
     "markdown-it": "^14.1.0",
     "markdown-it-anchor": "^9.2.0",
+    "v86": "0.5.473",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"
   },

@@ -557,6 +557,8 @@ Git 2.51 relizida `switch` va `restore` rasman "eksperimental emas" deb e'lon qi
 
 ## Amaliyot
 
+> **Trenajorda sinab ko'ring:** [Branch — bu bitta fayl](/git/trenajor?mashq=branch). Brauzerda tayyor repo ochiladi: buyruqlarni qadamma-qadam yozasiz, yonida graf va `.git` papka o'zgarib boradi.
+
 1. Yangi repo yarating, uchta fayl bilan birinchi commit qiling. `find .git/objects -type f` bilan beshta obyekt borligini, `git cat-file -t` bilan har birining turini tekshiring.
 2. `git branch testing` dan oldin va keyin `ls .git/refs/heads` va `cat .git/HEAD` ni solishtiring. Qaysi fayl paydo bo'ldi, qaysi biri o'zgarmadi?
 3. `testing`ga o'ting, commit qiling. Ikkala branch faylini `cat` bilan o'qing va qaysi biri siljiganini tushuntiring.

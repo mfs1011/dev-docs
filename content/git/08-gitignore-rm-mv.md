@@ -681,6 +681,8 @@ Shuning uchun:
 
 ## Amaliyot
 
+> **Trenajorda sinab ko'ring:** [.gitignore va git rm --cached](/git/trenajor?mashq=gitignore). Brauzerda tayyor repo ochiladi: buyruqlarni qadamma-qadam yozasiz, yonida graf va `.git` papka o'zgarib boradi.
+
 1. Vaqtinchalik repo'da `src/a.o`, `src/a.c`, `build/x`, `sub/build/y`, `TODO`, `sub/TODO` fayllarini yarating. `.gitignore`ni shunday yozingki, faqat `src/a.c` va `sub/TODO` ko'rinsin. Har natijani `git check-ignore -v` bilan tekshiring.
 2. `logs/` papkasidagi hamma faylni chiqarib, faqat `logs/.gitkeep`ni kuzatadigan qoida yozing. Avval `logs/` + `!logs/.gitkeep` bilan sinang va nega ishlamasligini `check-ignore -v` bilan ko'rsating.
 3. `.git/info/exclude`ga va global ignore'ga (`git -c core.excludesFile=...`) bitta-bitta pattern qo'shing. Uchala manbada bir xil fayl uchun qarama-qarshi patternlar yozib, qaysi biri yutishini tekshiring.

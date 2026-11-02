@@ -984,6 +984,8 @@ Chap ustundagilarning hammasi `packed-refs` yoki `reftable`da noto'g'ri natija b
 
 ## Amaliyot
 
+> **Trenajorda sinab ko'ring:** [Detached HEAD](/git/trenajor?mashq=detached). Brauzerda tayyor repo ochiladi: buyruqlarni qadamma-qadam yozasiz, yonida graf va `.git` papka o'zgarib boradi.
+
 1. Yangi repo'da birinchi commit'dan oldin va keyin `find .git/refs -type f`, `cat .git/HEAD`, `git rev-parse HEAD` ni solishtiring. Nega `symbolic-ref HEAD` commit'dan oldin ham ishlaydi?
 2. Uchta commit qiling. `echo <to'liq hash> > .git/refs/heads/a` va `git update-ref refs/heads/b <hash>` bilan ikki branch yarating. `.git/logs/refs/heads/` dagi farqni tushuntiring. Keyin `a` fayliga qisqa hash yozib, nima bo'lishini ko'ring.
 3. `git update-ref` ning uchinchi argumentini sinang: noto'g'ri eski qiymat bilan rad etilishini va bo'sh `''` bilan "faqat yangi bo'lsa" shartini ko'rsating.

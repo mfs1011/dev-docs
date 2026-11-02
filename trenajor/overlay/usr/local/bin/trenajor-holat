@@ -1,0 +1,29 @@
+#!/bin/bash
+# Har prompt oldidan (PROMPT_COMMAND): repo holatini haqiqiy git'dan so'rab, bo'limlarga yig'adi
+# va base64 qilib ko'rinmas OSC 7771 ketma-ketligi bilan terminalga chiqaradi. Sahifa shundan rasm chizadi.
+out=/tmp/.trenajor-holat
+{
+  echo "@cwd"; pwd
+  top=$(git rev-parse --show-toplevel 2>/dev/null)
+  if [ -n "$top" ]; then
+    gd=$(git rev-parse --absolute-git-dir)
+    echo "@top"; echo "$top"
+    echo "@gitdir"; echo "$gd"
+    echo "@head"; cat "$gd/HEAD"
+    echo "@refs"; git for-each-ref --format='%(refname)%09%(objectname)'
+    # branch qachon yaratilgan: reflog'ining birinchi qatoridagi vaqt (graf yo'laklari tartibi uchun)
+    echo "@born"; git for-each-ref --format='%(refname)' refs/heads | while read -r r; do
+      t=$(head -1 "$gd/logs/$r" 2>/dev/null | sed -n 's/.*> \([0-9][0-9]*\) [-+][0-9]*	.*/\1/p')
+      [ -n "$t" ] && printf '%s\t%s\n' "$r" "$t"
+    done
+    echo "@reachable"; git rev-list --exclude=refs/stash --all 2>/dev/null | head -400
+    reflog=$(git rev-parse -q --verify HEAD >/dev/null && git log -g --format=%H HEAD 2>/dev/null | head -100)
+    echo "@commits"; git log --date-order --exclude=refs/stash --all $reflog --format='%H%x09%P%x09%at%x09%an%x09%s' 2>/dev/null | head -400
+    echo "@status"; git status --porcelain=v1 --untracked-files=all 2>/dev/null
+    echo "@headfiles"; git ls-tree -r --name-only HEAD 2>/dev/null | head -200
+    echo "@op"; for f in rebase-merge rebase-apply MERGE_HEAD CHERRY_PICK_HEAD REVERT_HEAD BISECT_LOG; do [ -e "$gd/$f" ] && echo "$f"; done
+    echo "@stash"; git stash list --format='%H%x09%gs' 2>/dev/null
+    echo "@files"; (cd "$gd" && find . -type f -exec stat -c '%s %Y %n' {} + 2>/dev/null) | head -800
+  fi
+} > "$out" 2>/dev/null
+printf '\e]7771;%s\a' "$(base64 -w0 "$out")"

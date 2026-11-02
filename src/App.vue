@@ -47,7 +47,7 @@ onUnmounted(() => window.removeEventListener('keydown', onKeydown))
             <div class="topbar-inner">
                 <div class="topbar-left">
                     <button
-                        v-if="activeBook"
+                        v-if="activeBook && !route.meta.full"
                         type="button"
                         class="menu-button"
                         aria-label="Menyu"
@@ -92,7 +92,7 @@ onUnmounted(() => window.removeEventListener('keydown', onKeydown))
             </div>
         </header>
 
-        <div v-if="activeBook" class="shell">
+        <div v-if="activeBook && !route.meta.full" class="shell">
             <AppSidebar :book-id="activeBookId" :open="sidebarOpen" @navigate="sidebarOpen = false" />
             <div v-if="sidebarOpen" class="sidebar-backdrop" @click="sidebarOpen = false" />
             <RouterView :key="route.path" />

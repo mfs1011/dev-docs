@@ -769,6 +769,8 @@ Tiklashni boshlashdan oldin ikki odat:
 
 ## Amaliyot
 
+> **Trenajorda sinab ko'ring:** [O'chirilgan branch'ni reflog bilan tiklash](/git/trenajor?mashq=reflog). Brauzerda tayyor repo ochiladi: buyruqlarni qadamma-qadam yozasiz, yonida graf va `.git` papka o'zgarib boradi.
+
 1. Vaqtinchalik repo'da 5 ta commit qiling, `git reset --hard HEAD~3` bilan orqaga qayting. `git reflog` dan yo'qolgan uchni toping va uni `qutqar` branch'iga tiklang.
 2. `git log -g` va `git reflog --date=iso` chiqishlarini solishtiring. `.git/logs/HEAD` faylini oching va har ustun nima ekanini aniqlang.
 3. Yangi branch'da ikki commit qiling, `main` ga qayting, branch'ni `-D` bilan o'chiring. `git reflog exists refs/heads/<nom>` nima qaytarishini ko'ring, keyin branch'ni `HEAD` reflog'idan tiklang.

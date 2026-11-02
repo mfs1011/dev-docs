@@ -47,3 +47,7 @@ video/*/*/voice/*.wav
 video/*/*/*.mp4
 video/*/*/*.png
 video/*/*/*.jpg
+
+# Git trenajori: rootfs yig'ish oralig'i va sinov skrinshotlari
+trenajor/build/
+trenajor/test/shots/

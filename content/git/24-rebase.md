@@ -957,6 +957,8 @@ Rebase boshlanishidan oldin `pre-rebase` hook'i ishga tushadi ([47-bob](47-hookl
 
 ## Amaliyot
 
+> **Trenajorda sinab ko'ring:** [Rebase: commit'larni yangi asosga ko'chirish](/git/trenajor?mashq=rebase) va [Rebase paytidagi konflikt](/git/trenajor?mashq=rebase-konflikt). Brauzerda tayyor repo ochiladi: buyruqlarni qadamma-qadam yozasiz, yonida graf va `.git` papka o'zgarib boradi.
+
 1. Ayri tarix yarating (`main`da bitta, `feature`da ikkita commit). Rebase'dan oldin va keyin `git rev-parse feature~1 feature` ni yozib oling. `git cat-file -p` bilan eski va yangi commit'ni solishtiring: qaysi qatorlar o'zgardi, qaysilari o'zgarmadi va nega?
 2. O'sha repo'da `git merge` va `git rebase` bilan ikki variantni yasang. `^{tree}` hash'lari bir xilligini tekshiring va tarix grafigini solishtiring.
 3. Ikkinchi commit'da konflikt beradigan rebase yasang. To'xtagan paytda `.git/rebase-merge/` dagi `git-rebase-todo`, `done`, `onto`, `orig-head`, `rewritten-list` ni o'qing va har biri nimani bildirishini o'z so'zingiz bilan yozing. Keyin `git status` chiqishi shu fayllardan qanday tuzilganini ko'rsating.

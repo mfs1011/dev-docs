@@ -271,6 +271,8 @@ export const books = [
     accentText: '#c4271b',
     versionLabel: 'Git',
     versionRow: /^\|\s*Git\s*\|\s*([^|]+)\|/m,
+    // Kitob yonidagi interaktiv sahifalar (sidebar'da boblardan oldin chiqadi)
+    tools: [{ label: 'Git trenajori', route: '/git/trenajor', note: 'Brauzerda haqiqiy git' }],
     groups: [
       { title: 'I — Boshlash', from: 1, to: 5 },
       { title: 'II — Kundalik ish', from: 6, to: 12 },

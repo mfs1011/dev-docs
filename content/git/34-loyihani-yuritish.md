@@ -1209,6 +1209,8 @@ e06df87
 
 ## Amaliyot
 
+> **Trenajorda sinab ko'ring:** [cherry-pick: bitta commit'ni ko'chirish](/git/trenajor?mashq=cherry-pick). Brauzerda tayyor repo ochiladi: buyruqlarni qadamma-qadam yozasiz, yonida graf va `.git` papka o'zgarib boradi.
+
 1. Bare server va ikki klon yarating. Ikkinchi klonda ikkita faylni o'zgartirib `git diff > x.patch` qiling. Birinchi klonda topic branch ochib, `git apply --stat`, `--check`, keyin qo'llang va `--author` bilan commit qiling. `git log --pretty=fuller -1` dagi `AuthorDate` qayerdan olinganini tushuntiring.
 2. Xuddi shu patch'ni `main`da o'sha qatorlar o'zgargan branch'da qo'llang: oddiy `apply` (working tree o'zgardimi?), `--reject` (`.rej` fayl), `-3` (konflikt belgilari, `git status` dagi ikki ustun). Har birining chiqish kodini yozing.
 3. Ikki commit'li seriyani `format-patch` qiling, ularni bitta mbox'ga birlashtiring va `git am -i` bilan birinchisini qabul qilib, ikkinchisini rad eting. `git log --pretty=fuller` bilan muallif va commit qiluvchini solishtiring; patch fayldagi `From <hash>` va yangi commit hash'i nega farq qilishini tushuntiring.

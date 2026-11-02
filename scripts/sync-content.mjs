@@ -282,6 +282,7 @@ async function collectBook(book, staging) {
     accentText: book.accentText ?? null,
     accentTextDark: book.accentTextDark ?? null,
     variants: book.variants ?? null,
+    tools: book.tools ?? [],
     versionLabel: book.versionLabel ?? book.title,
     version: await readVersion(book, sourceDir),
     chapterCount: pages.filter((page) => page.chapter !== null && !page.path.includes('/')).length,

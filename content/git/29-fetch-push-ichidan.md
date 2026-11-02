@@ -878,6 +878,8 @@ Katta monorepo'larda yuzlab branch bo'ladi. Har `fetch` da hammasini olish — v
 
 ## Amaliyot
 
+> **Trenajorda sinab ko'ring:** [Push rad etildi: pull --rebase](/git/trenajor?mashq=push-rad). Brauzerda tayyor repo ochiladi: buyruqlarni qadamma-qadam yozasiz, yonida graf va `.git` papka o'zgarib boradi.
+
 1. Bare server va ikki klon yarating. Ikkinchi klonda `remote.origin.fetch` ni faqat `main` va `qa/*` ni oladigan qilib o'zgartiring. Serverga besh xil nomli branch push qilib, `git fetch` dan keyin `git branch -r` ni tekshiring.
 2. `^refs/heads/dev-*` inkor refspec'ini qo'shing. `dev-` bilan boshlanadigan branch'lar olinmasligini, lekin `git fetch origin dev-x` buyrug'i bilan aniq so'ralganda `FETCH_HEAD` ga tushishini ko'rsating.
 3. Serverda bir branch'ni majburlab qayta yozing. Ikkinchi klonda `git fetch origin <branch>:refs/remotes/origin/nusxa` ni `+` siz va `+` bilan ishlating — chiqishdagi belgilarni (`!`, `+`, `*`) izohlang.

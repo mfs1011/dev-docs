@@ -834,6 +834,8 @@ Qaror qilish uchun:
 
 ## Amaliyot
 
+> **Trenajorda sinab ko'ring:** [reset: --soft, --mixed, --hard](/git/trenajor?mashq=reset). Brauzerda tayyor repo ochiladi: buyruqlarni qadamma-qadam yozasiz, yonida graf va `.git` papka o'zgarib boradi.
+
 1. Uch commit'li (`v1`, `v2`, `v3`) repo yarating. `reset --soft HEAD~`, `reset HEAD~`, `reset --hard HEAD~` ning har biridan keyin `git rev-parse HEAD`, `git ls-files -s`, `cat file.txt` natijalarini yozib boring va har birini `ORIG_HEAD` bilan qaytaring.
 2. Faylni stage qilib, `git reset file.txt` va `git restore --staged file.txt` natijasi bir xil ekanini `git ls-files -s` bilan tasdiqlang. Keyin `git reset <birinchi-commit> -- file.txt` dan so'ng `git diff --cached` va `git diff` nima ko'rsatishini oldindan ayting, keyin tekshiring.
 3. `MM` holatini yarating: mixed reset qiling, keyin `git reset --soft ORIG_HEAD`. Nega `status -s` da ikki `M` chiqishini uch daraxt orqali tushuntiring.

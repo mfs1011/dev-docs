@@ -1,0 +1,13 @@
+#!/bin/sh
+# PID 1: tizimni ko'taradi va ttyS0 da bash'ni qayta-qayta ochadi (xterm.js shu portga ulangan)
+mount -t proc proc /proc
+mount -t sysfs sys /sys
+mount -t devtmpfs dev /dev 2>/dev/null
+mkdir -p /dev/pts /dev/shm && mount -t devpts devpts /dev/pts
+mount -t tmpfs tmp /tmp
+hostname trenajor
+export HOME=/root TERM=xterm-256color LANG=C.UTF-8 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+cd /root
+while true; do
+  setsid sh -c 'exec bash -l <>/dev/ttyS0 >&0 2>&1'
+done

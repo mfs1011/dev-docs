@@ -871,6 +871,8 @@ Amaliy xulosalar:
 
 ## Amaliyot
 
+> **Trenajorda sinab ko'ring:** [Teglar: oddiy va annotatsiyali](/git/trenajor?mashq=teg). Brauzerda tayyor repo ochiladi: buyruqlarni qadamma-qadam yozasiz, yonida graf va `.git` papka o'zgarib boradi.
+
 1. Uch commit'li repo yarating. Oxirgisiga lightweight `tez`, birinchisiga annotated `v0.1` teg qo'ying. `git cat-file -t` va `cat .git/refs/tags/*` bilan farqini ko'rsating.
 2. `git tag -m "..." nom` qaysi turdagi teg yaratishini oldindan ayting, keyin `git cat-file -t nom` bilan tekshiring.
 3. `v1.2`, `v1.10`, `v1.9`, `v2.0-beta`, `v2.0` teglarini yarating. Alifbo, `--sort=v:refname` va `versionsort.suffix=-beta` bilan ro'yxatlarni solishtiring.

@@ -90,6 +90,22 @@ watch(() => route.path, () => revealActive())
                 />
             </div>
 
+            <nav v-if="book?.tools?.length" class="sidebar-tools" aria-label="Interaktiv">
+                <RouterLink
+                    v-for="tool in book.tools"
+                    :key="tool.route"
+                    :to="tool.route"
+                    class="sidebar-tool"
+                    @click="emit('navigate')"
+                >
+                    <span class="sidebar-tool-icon" aria-hidden="true">&gt;_</span>
+                    <span class="sidebar-tool-text">
+                        <strong>{{ tool.label }}</strong>
+                        <small v-if="tool.note">{{ tool.note }}</small>
+                    </span>
+                </RouterLink>
+            </nav>
+
             <div class="sidebar-filter">
                 <input
                     v-model="filter"

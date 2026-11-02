@@ -10,6 +10,8 @@ const router = createRouter({
     { path: '/', name: 'home', component: HomePage },
     { path: '/kirish', name: 'login', component: LoginPage },
     { path: '/profil', name: 'profile', component: ProfilePage },
+    // Brauzerdagi Linux + git: og'ir (v86, xterm) — faqat shu sahifa ochilganda yuklanadi
+    { path: '/git/trenajor', name: 'git-trenajor', component: () => import('./views/TrenajorPage.vue'), meta: { full: true } },
     { path: '/:pathMatch(.*)*', name: 'doc', component: DocPage },
   ],
   scrollBehavior(to, from, savedPosition) {

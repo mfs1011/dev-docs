@@ -931,6 +931,8 @@ Kod ko'rib chiqish, CI yoki release paytida savol: "serverdagi holat qaysi?" Jav
 
 ## Amaliyot
 
+> **Trenajorda sinab ko'ring:** [fetch: hamkasb ishini olish](/git/trenajor?mashq=fetch). Brauzerda tayyor repo ochiladi: buyruqlarni qadamma-qadam yozasiz, yonida graf va `.git` papka o'zgarib boradi.
+
 1. `server.git`, `ali/` (`remote add` + `push -u`) va `vali/` (`clone`) yarating. Ikkalasida `find .git/refs -type f`, `cat .git/packed-refs` va `.git/config` dagi `[branch "main"]` bo'limini solishtiring. `origin/HEAD` qaysi birida va qachon paydo bo'ldi?
 2. `push.autoSetupRemote` ni yoqib, yangi branch'ni argumentsiz `git push` qiling. Push'dan oldin va keyin `.git/config` va `.git/refs/remotes/origin/` ni ko'ring.
 3. Ikkinchi klonda `git switch <nom>` (taxmin), `git switch -c boshqa origin/<nom>` va `git branch --no-track` bilan uch branch oching. `git branch -vv` natijasini tushuntiring. Keyin `--unset-upstream` va `-u` bilan upstream'larni almashtiring, bittasiga lokal `main`ni upstream qiling va config'dagi `remote = .` ni toping.

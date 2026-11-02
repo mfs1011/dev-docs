@@ -771,6 +771,8 @@ error: failed to push some refs to '../ish-papka'
 
 ## Amaliyot
 
+> **Trenajorda sinab ko'ring:** [Remote: commit va push](/git/trenajor?mashq=push). Brauzerda tayyor repo ochiladi: buyruqlarni qadamma-qadam yozasiz, yonida graf va `.git` papka o'zgarib boradi.
+
 1. `server.git` (bare), `ali/` va `vali/` repo'larini yarating. Ali'da `git remote add`, Vali'da `git clone` ishlating. Ikkalasining `.git/config` dagi `[remote "origin"]` bo'limini solishtiring.
 2. Vali commit qilib push qilsin. Ali'da `fetch` dan oldin va keyin `cat .git/refs/remotes/origin/main`, `git count-objects -v` va `cat .git/FETCH_HEAD` ni yozib oling. Qaysi obyektlar kelganini `git cat-file -t` bilan aniqlang.
 3. Ikkalangiz bir vaqtda commit qiling, keyin ikkinchi push'ning rad etilishini ko'ring. Bir nusxada `pull --no-rebase`, ikkinchisida `pull --rebase` qilib, `git log --graph` natijalarini solishtiring.
