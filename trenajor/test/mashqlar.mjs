@@ -37,6 +37,7 @@ const prompt = () => new Promise((r) => { waiter = r; });
 const run = async (cmd) => { out = ""; vm.serial0_send(cmd + "\n"); await prompt(); return out; };
 
 await prompt();
+await run(" stty cols 120 rows 40"); // sahifa kabi: busiz uzun qatorlar buziladi
 let fail = 0;
 for (const m of list) {
   // /tmp — VM ichida tmpfs, 9p orqali yozilgan fayl u yerda ko'rinmaydi; nom har safar yangi (9p keshi)
