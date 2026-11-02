@@ -5,8 +5,9 @@ const COLORS = Array.from({ length: 8 }, (_, i) => `var(--lane-${i})`)
 const NEUTRAL = 'var(--text-subtle)'
 // branch rangi bir marta beriladi va o'zgarmaydi (yangi branch qo'shilsa ham eski ranglar siljimaydi)
 const branchColor = new Map([['refs/heads/main', COLORS[0]], ['refs/heads/master', COLORS[0]]])
+// main rangi (0) faqat main/master niki: aylanishda u o'tkazib yuboriladi
 const colorOf = (name) => {
-  if (!branchColor.has(name)) branchColor.set(name, COLORS[(branchColor.size - 1) % COLORS.length])
+  if (!branchColor.has(name)) branchColor.set(name, COLORS[1 + ((branchColor.size - 2) % (COLORS.length - 1))])
   return branchColor.get(name)
 }
 // bir soniyada yaratilgan branch'lar uchun: sahifada birinchi ko'ringan tartibi
@@ -63,14 +64,35 @@ export function grafLayout(h, diff) {
   for (const c of h.commits) {
     for (const p of c.parents.slice(1)) {
       const sg = segOf.get(p)
-      if (sg && segOf.get(c.hash) !== sg) sg.b = Math.max(sg.b, col.get(c.hash))
+      if (sg && segOf.get(c.hash) !== sg) {
+        sg.b = Math.max(sg.b, col.get(c.hash))
+        ;(sg.outs ??= []).push({ x0: col.get(p), x1: col.get(c.hash), to: c.hash })
+      }
     }
   }
   // 3) yo'lak tanlash: ota bo'lak yo'lagiga eng yaqini (+1, −1, +2, −2 …). Shartlar:
   //    yo'lakning o'zi shu oraliqda bo'sh va oradagi yo'laklar ajralish joyida bo'sh — chiziq hech narsani kesmaydi
+  // joylash tartibi: bo'laklar daraxti bo'ylab (avval ota, keyin uning bolalari va ularning bolalari).
+  // Bitta bo'lakdan ajralganlar orasida KEYINROQ ajralgani birinchi joylanadi — u ota qatorga yaqin turadi,
+  // ertaroq ajralganlar tashqariga suriladi: ularning ajralish chizig'i hali hech narsa boshlanmagan joydan o'tadi
+  const kids = new Map()
+  for (const sg of segs) if (sg.from) { const ps = segOf.get(sg.from); kids.set(ps, [...(kids.get(ps) ?? []), sg]) }
+  const order = []
+  const visit = (sg) => {
+    order.push(sg)
+    // bir joydan ajralganlar orasida qisqarog'i (ertaroq tugaydigan / merge bo'ladigani) ichkarida,
+    // uzunrog'i uni tashqaridan aylanib o'tadi — oraliqlar ichma-ich joylashadi, chiziqlar kesishmaydi
+    const ks = (kids.get(sg) ?? []).map((k, i) => [k, i])
+      .sort(([x, i], [y, j]) => y.a - x.a || x.b - y.b || i - j).map(([k]) => k)
+    ks.forEach(visit)
+  }
+  segs.filter((sg) => !sg.from).forEach(visit)
   const busy = new Map() // yo'lak -> [{ a, b, from }, ...]
   // uchlari tegib turishi ham band: bir qatorda biri tugab, ikkinchisi boshlansa — bitta zanjirdek o'qiladi
-  const free = (l, a, b, sib) => !(busy.get(l) ?? []).some((r) => a <= r.b && r.a <= b && !(sib && r.from === sib))
+  const free = (l, a, b) => !(busy.get(l) ?? []).some((r) => a <= r.b && r.a <= b)
+  // oradagi qator: ajralish chizig'i u yerni faqat (a, first) oralig'ida kesib o'tadi; shu commit'dan
+  // ajralgan aka-uka branch'lar chizig'i bir nuqtadan tarqaladi — bu kesishish emas
+  const pass = (l, a, first, sib) => !(busy.get(l) ?? []).some((r) => r.a < first && a < r.b && r.from !== sib)
   const take = (l, a, b, from) => busy.set(l, [...(busy.get(l) ?? []), { a, b, from }])
   const pick = (sg, strict) => {
     const base = sg.from ? lane.get(sg.from) : 0
@@ -83,13 +105,20 @@ export function grafLayout(h, diff) {
         // shu commit'dan ajralgan aka-uka branch'lar chizig'i bir nuqtadan tarqaladi — bu kesishish emas
         const step = l > base ? 1 : -1
         let ok = true
-        for (let m = base + step; ok && m !== l; m += step) ok = free(m, sg.a, first, sg.from)
+        for (let m = base + step; ok && m !== l; m += step) ok = pass(m, sg.a, first, sg.from)
+        // merge chizig'i: joylangan maqsad qatorigacha oradagi qatorlar burilish oralig'ida bo'sh bo'lsin
+        for (const o of sg.outs ?? []) {
+          const t = lane.get(o.to)
+          if (t == null || t === l) continue
+          const st = t > l ? 1 : -1
+          for (let m = l + st; ok && m !== t; m += st) ok = pass(m, o.x1 - 1, o.x1, null)
+        }
         if (ok) return l
       }
     }
     return null
   }
-  for (const sg of segs) {
+  for (const sg of order) {
     // kesishsiz joy topilmasa — hech bo'lmasa o'zi bo'sh yo'lak (commit'lar ustma-ust tushmaydi)
     const chosen = !sg.from && !busy.size ? 0 : pick(sg, true) ?? pick(sg, false)
     take(chosen, sg.a, sg.b, sg.from)
