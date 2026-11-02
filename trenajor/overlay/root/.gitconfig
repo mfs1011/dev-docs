@@ -1,0 +1,7 @@
+[user]
+	name = O'quvchi
+	email = oquvchi@trenajor.uz
+[init]
+	defaultBranch = main
+[core]
+	editor = nano

@@ -1129,6 +1129,8 @@ Qoidalar:
 
 ## Amaliyot
 
+> **Trenajorda sinab ko'ring:** [pre-commit hook](/git/trenajor?mashq=hook). Brauzerda tayyor repo ochiladi: buyruqlarni qadamma-qadam yozasiz, yonida graf va `.git` papka o'zgarib boradi.
+
 1. Yangi repo'da "josus" hook yozing va uni `post-rewrite`, `pre-rebase`, `post-checkout` ga bog'lang. Ikki commit'li branch'ni `main` dagi yangi commit ustiga `git rebase` qiling: `post-rewrite rebase` stdin'ida nechta qator keldi? Keyin `git rebase -i` bilan ikki commit'ni `squash` qiling va ma'lumotnomadagi "bir xil yangi commit'li bir necha qator" holatini kuzating.
 2. `pre-commit` yozing: stage qilingan har `.json` fayl to'g'ri JSON bo'lsin (`git show :fayl | python3 -m json.tool`). Faylni to'g'ri holatda stage qilib, keyin working tree'da buzing — hook nima deydi va nega?
 3. `prepare-commit-msg` ni kengaytiring: manba `merge` yoki `commit` bo'lsa, hech narsa qilmasin; `-t shablon.txt` bilan commit qilib `$2` qiymatini ko'ring.

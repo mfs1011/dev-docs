@@ -1,0 +1,8 @@
+#!/bin/sh
+# Terminal ochilganda ko'rinadigan salom matni (erkin rejim: ~/loyiha — bo'sh papka, hali repo emas)
+printf '\033[1;32mGit trenajori\033[0m — %s, brauzerdagi Linux ichida.\n\n' "$(git --version)"
+printf 'Siz bo'"'"'sh \033[36m~/loyiha\033[0m papkasidasiz, u hali repo emas.\n\n'
+printf 'Boshlash:  \033[36mgit init\033[0m\n'
+printf 'Fayl:      \033[36mecho salom > a.txt\033[0m yoki \033[36mnano a.txt\033[0m\n'
+printf 'Maslahat:  xira matn — \033[1mTab\033[0m tanlaydi, \033[1m↑↓\033[0m boshqasi\n'
+printf 'Mashqlar:  tepadagi \033[1mMashq\033[0m ro'"'"'yxatida\n\n'

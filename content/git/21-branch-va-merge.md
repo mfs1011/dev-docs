@@ -1072,6 +1072,8 @@ Bob davomida ko'rgan "merge ichida nima o'zgaradi" xulosasi:
 
 ## Amaliyot
 
+> **Trenajorda sinab ko'ring:** [Fast-forward merge](/git/trenajor?mashq=fast-forward) va [Uch tomonlama merge](/git/trenajor?mashq=merge). Brauzerda tayyor repo ochiladi: buyruqlarni qadamma-qadam yozasiz, yonida graf va `.git` papka o'zgarib boradi.
+
 1. Pro Git ssenariysini takrorlang: `main`da 3 commit, `iss53` va `hotfix` branch'lari. `hotfix`ni merge qilishdan oldin va keyin `cat .git/refs/heads/main`, `git count-objects` va `cat .git/ORIG_HEAD` natijalarini yozib qo'ying. Nima o'zgardi, nima o'zgarmadi?
 2. Merge'dan oldin `git merge-base --is-ancestor main <branch>; echo $?` bilan merge turi fast-forward bo'lishini oldindan ayting, keyin tekshiring.
 3. `iss53`ni merge qiling. `git cat-file -p HEAD` dagi ikkala `parent`ni `HEAD^1` va `HEAD^2` bilan solishtiring. Har fayl uchun `git rev-parse HEAD:<fayl> HEAD^1:<fayl> HEAD^2:<fayl>` bilan blob qaysi tomondan olinganini aniqlang.

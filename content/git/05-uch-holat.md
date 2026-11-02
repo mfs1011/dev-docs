@@ -642,6 +642,8 @@ true
 
 ## Amaliyot
 
+> **Trenajorda sinab ko'ring:** [Uch hudud: add va commit](/git/trenajor?mashq=uch-hudud). Brauzerda tayyor repo ochiladi: buyruqlarni qadamma-qadam yozasiz, yonida graf va `.git` papka o'zgarib boradi.
+
 1. Yangi repo yarating. `git add`dan oldin va keyin `ls .git/index` va `find .git/objects -type f` natijalarini solishtiring. Blob qachon paydo bo'ldi — `add`dami yoki `commit`dami?
 2. Bitta faylni `MM` holatiga keltiring. `git show HEAD:<fayl>`, `git show :<fayl>` va `cat <fayl>` bilan uch versiyani chiqaring va `git rev-parse` bilan ularning hash'larini oling. Qaysi hash bazada yo'q va nega?
 3. `MM` holatida `git commit` qiling. `git show HEAD:<fayl>` bilan aynan qaysi versiya yozilganini tekshiring va natijani uch hudud modeli bilan tushuntiring.

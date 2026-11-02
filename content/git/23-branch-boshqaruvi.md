@@ -867,6 +867,8 @@ Shu sababli skriptlarda `.git/refs` fayllarini qo'lda o'chirish yoki ko'chirish 
 
 ## Amaliyot
 
+> **Trenajorda sinab ko'ring:** [Branch'larni boshqarish: -d, -D, -m](/git/trenajor?mashq=branch-boshqaruv). Brauzerda tayyor repo ochiladi: buyruqlarni qadamma-qadam yozasiz, yonida graf va `.git` papka o'zgarib boradi.
+
 1. To'rtta branch'li repo yarating: biri merge qilingan, ikkitasi qo'shilmagan, biri `main` bilan bir joyda. `git branch --merged` va `--no-merged` natijasini oldindan qog'ozga yozing, keyin tekshiring. Nega "bir joyda" turgan branch `--merged`da?
 2. Qo'shilmagan branch'ni `-d` bilan o'chirib ko'ring, keyin `-D` bilan o'chiring. `ls .git/refs/heads .git/logs/refs/heads` bilan nima yo'qolganini ko'ring. Branch'ni faqat `git reflog` dan topilgan hash bilan tiklang.
 3. Branch'ga `--edit-description` bilan tavsif yozing, keyin uni `-m` bilan qayta nomlang. `.git/config`, ref fayli va reflog'dagi o'zgarishlarni jadvalga yozing. `-c` bilan nusxalang va farqni oddiy `git branch yangi eski` bilan solishtiring.

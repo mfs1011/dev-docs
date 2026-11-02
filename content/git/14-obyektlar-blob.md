@@ -556,6 +556,8 @@ Oxirgi qator muhim: `gitdatamodel` hujjati aytadiki, Git commit uchun diff'ni sa
 
 ## Amaliyot
 
+> **Trenajorda sinab ko'ring:** [Ichkaridan: commit, tree, blob](/git/trenajor?mashq=obyektlar). Brauzerda tayyor repo ochiladi: buyruqlarni qadamma-qadam yozasiz, yonida graf va `.git` papka o'zgarib boradi.
+
 1. Yangi repo yarating va `find .git/objects -type f` bo'sh ekanini tekshiring. `echo 'salom' | git hash-object -w --stdin` dan keyin qaysi papka va fayl paydo bo'lganini toping.
 2. O'sha hash'ni `printf 'blob 6\0salom\n' | shasum` bilan qo'lda hisoblang. Nega hajm 6?
 3. Uch xil nomli, lekin bir xil mazmunli fayl yarating va `git hash-object --stdin-paths` bilan hammasining hash'ini oling. Nechta obyekt yaratilishini oldindan ayting, keyin `-w` bilan tekshiring.

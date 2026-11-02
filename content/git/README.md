@@ -16,6 +16,8 @@ Boshlashdan oldin — Git'ning umumiy manzarasi 3,5 daqiqada:
 
 Videodagi har mavzu keyin alohida bobda chuqur ochiladi: [uch hudud](05-uch-holat.md), [commit ichida nima bor](16-commit-obyekti.md), [branch — bu ref](20-branch-bu-ref.md), [merge](21-branch-va-merge.md), [konfliktlar](22-konfliktlar.md), [remote](27-remote.md).
 
+Buyruqlarni o'qish bilan birga qo'lda sinab ko'rish uchun — **[Git trenajori](/git/trenajor)**. Brauzer ichida kichik Linux ishga tushadi va unda haqiqiy Git turadi, hech narsa o'rnatish shart emas. Terminalga buyruq yozasiz, yonida esa natija ko'rinib boradi: commit grafi chiziladi, fayllar uch hudud bo'ylab ko'chadi, `.git` papkasida yangi obyektlar paydo bo'ladi. Mavzular bo'yicha tayyor mashqlar ham bor (rebase, konflikt, reset, reflog va boshqalar): ular tegishli boblarning "Amaliyot" bo'limida. Trenajordagi Git versiyasi — 2.54 (Alpine Linux 3.24 paketi), qo'llanma esa 2.56 bo'yicha yozilgan.
+
 Manbalar va versiyalar (2026-yil oktabr):
 
 | Narsa | Versiya | Qayerdan olindi |

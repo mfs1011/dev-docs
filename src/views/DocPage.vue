@@ -116,6 +116,17 @@ function enhanceLinks(container, currentPage) {
       continue
     }
 
+    // Sayt ichidagi boshqa sahifa (masalan, `/git/trenajor`): GitHub Pages'da BASE_URL ostida turadi
+    const appRoute = /^\/(?!\/)/.test(href) ? router.resolve(href) : null
+    if (appRoute && appRoute.name !== 'doc') {
+      link.setAttribute('href', appRoute.href)
+      link.addEventListener('click', (event) => {
+        event.preventDefault()
+        router.push(href)
+      })
+      continue
+    }
+
     const resolved = resolveDocLink(href, currentPage)
     if (!resolved) continue
 

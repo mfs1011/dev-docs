@@ -1073,6 +1073,8 @@ Ya'ni konfliktni bir marta to'g'ri tushunsangiz, hamma joyda ishlata olasiz. Bit
 
 ## Amaliyot
 
+> **Trenajorda sinab ko'ring:** [Merge konflikti](/git/trenajor?mashq=konflikt) va [Konfliktdan chiqish: merge --abort](/git/trenajor?mashq=merge-abort). Brauzerda tayyor repo ochiladi: buyruqlarni qadamma-qadam yozasiz, yonida graf va `.git` papka o'zgarib boradi.
+
 1. Uch commit'li repo yarating va bob boshidagi kabi bir qatorni ikki branch'da har xil o'zgartiring. Merge qiling, `git status -s` va `cat` bilan konflikt belgilarini ko'ring. Qaysi qatorlar Git tomonidan avtomatik hal qilinganini aniqlang.
 2. Konflikt holatida `git ls-files -s` chiqishidagi uchta hash'ni `git merge-base`, `git rev-parse HEAD:<fayl>` va `git rev-parse MERGE_HEAD:<fayl>` bilan solishtiring. Har bosqich qaysi commit'dan kelganini isbotlang.
 3. Konflikt holatida `ls .git` qiling. `MERGE_HEAD`, `MERGE_MSG`, `ORIG_HEAD`, `AUTO_MERGE` ichini o'qing. Keyin `git merge --abort` qiling va qaysilari yo'qolganini tekshiring.

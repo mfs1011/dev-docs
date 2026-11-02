@@ -891,6 +891,8 @@ Bular [49-bobda](49-worktree-va-katta-repo.md) `scalar` bilan birga ko'riladi.
 
 ## Amaliyot
 
+> **Trenajorda sinab ko'ring:** [Packfile: git gc nima qiladi](/git/trenajor?mashq=gc). Brauzerda tayyor repo ochiladi: buyruqlarni qadamma-qadam yozasiz, yonida graf va `.git` papka o'zgarib boradi.
+
 1. Yangi repo'da 20 ta kichik fayl commit qiling. `git count-objects -v` dagi `size` ni `cat .git/objects/??/* | wc -c` bilan solishtiring. Farq qayerdan?
 2. 20–30 KB matnli fayl yarating, commit qiling, oxiriga bitta qator qo'shib yana commit qiling. Ikkala blob'ning loose hajmini `wc -c` bilan o'lchang. `git gc` dan keyin `git verify-pack -v` da qaysi versiya to'liq, qaysi biri delta? `cat-file --batch-check` dagi `%(objectsize)` va `%(objectsize:disk)` ni solishtiring.
 3. `.pack` faylining birinchi 12 baytini `xxd` bilan o'qing: imzo, versiya, obyektlar soni. `.idx` ning oxirgi 40 baytidan pack nomini toping.

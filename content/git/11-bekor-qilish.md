@@ -652,6 +652,8 @@ Ma'lumotnomadagi uch o'xshash nom farqi (`git help git`, "Reset, restore and rev
 
 ## Amaliyot
 
+> **Trenajorda sinab ko'ring:** [Oxirgi commit'ni tuzatish (--amend)](/git/trenajor?mashq=amend), [restore: o'zgarishni bekor qilish](/git/trenajor?mashq=restore) va [revert: commit'ni teskari commit bilan bekor qilish](/git/trenajor?mashq=revert). Brauzerda tayyor repo ochiladi: buyruqlarni qadamma-qadam yozasiz, yonida graf va `.git` papka o'zgarib boradi.
+
 1. Commit qiling, keyin yangi faylni qo'shishni unutganingizni "kashf eting" va `git add` + `git commit --amend --no-edit` bilan tuzating. Amend'dan oldin va keyin `git cat-file -p HEAD` ni solishtiring: qaysi maydonlar o'zgardi, qaysilari yo'q?
 2. Faqat xabarni `--amend -m` bilan o'zgartiring va `git rev-parse HEAD^{tree} HEAD@{1}^{tree}` bilan tree o'zgarmaganini, `git rev-parse HEAD HEAD@{1}` bilan commit hash'i o'zgarganini tasdiqlang.
 3. Index'ga boshqa faylni stage qilib qo'yib, oxirgi commit xabarini `--amend --only` bilan tuzating. `git status` va `git show --stat` bilan stage qilingan fayl commit'ga tushmaganini tekshiring.

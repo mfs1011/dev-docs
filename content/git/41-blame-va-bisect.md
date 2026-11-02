@@ -740,6 +740,8 @@ Amaliy tavsiyalar:
 
 ## Amaliyot
 
+> **Trenajorda sinab ko'ring:** [bisect: xato qaysi commit'da paydo bo'ldi](/git/trenajor?mashq=bisect). Brauzerda tayyor repo ochiladi: buyruqlarni qadamma-qadam yozasiz, yonida graf va `.git` papka o'zgarib boradi.
+
 1. Istalgan repo'da bitta fayl uchun `git blame` va `git blame -w` chiqishini solishtiring. Qaysi qatorlarning egasi o'zgardi va nega?
 2. `git blame -L :<funksiya> <fayl>` bilan bitta funksiyani izohlang, so'ng shu funksiyani `git log -L :<funksiya>:<fayl>` bilan ([40-bob](40-qidiruv.md)) solishtiring — biri "hozirgi holat egalari"ni, ikkinchisi "o'zgarishlar tarixi"ni ko'rsatishini tushuntiring.
 3. Repo'da faqat indentatsiyani o'zgartiradigan commit qiling, uning to'liq hash'ini `.git-blame-ignore-revs` ga yozing va `blame.ignoreRevsFile` ni sozlang. `blame.markIgnoredLines` ni yoqib, `?` belgisini ko'ring.

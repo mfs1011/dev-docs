@@ -944,6 +944,8 @@ Bu ikkisi birga ishlatilganda saqlanmagan **hamma narsa** yo'qoladi: `reset --ha
 
 ## Amaliyot
 
+> **Trenajorda sinab ko'ring:** [Stash: ishni vaqtincha chetga qo'yish](/git/trenajor?mashq=stash). Brauzerda tayyor repo ochiladi: buyruqlarni qadamma-qadam yozasiz, yonida graf va `.git` papka o'zgarib boradi.
+
 1. Sinov repo'sida ikki faylni o'zgartiring, birini stage qiling, `git stash` qiling. `git stash apply` va `git stash apply --index` natijalarini `git status -s` bilan solishtiring.
 2. `git cat-file -p stash`, `git cat-file -p stash^2` bilan stash'ning ikki ota-onasini toping. `git show stash^2:<fayl>` va `git show stash:<fayl>` farqini tushuntiring.
 3. Uchta stash'ni `-m` bilan yarating. O'rtadagisini `git stash show -p 1` bilan ko'ring va faqat uni `pop` qiling. Qolganlarining raqamlari qanday o'zgardi?
