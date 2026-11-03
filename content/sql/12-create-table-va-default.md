@@ -473,6 +473,8 @@ CREATE TABLE arzon(id INT,nom TEXT,narx NUM)
 
 ## Amaliyot
 
+> **Trenajorda sinab ko'ring:** [CREATE TABLE: yangi jadval](/sql/trenajor?mashq=create-table). Brauzerda haqiqiy PostgreSQL va SQLite ochiladi: so'rovni o'zingiz yozasiz, natija tekshiriladi, yonida ER diagramma va so'rov rejasi ko'rinadi.
+
 1. PostgreSQL'da `buyurtmalar` jadvalini yarating: `id`, `mijoz`, `summa` (sukut bo'yicha 0), `holat` (sukut bo'yicha `'yangi'`), `yaratilgan` (sukut bo'yicha joriy vaqt). Faqat `id` va `mijoz` bilan qator qo'shib, natijani ko'ring.
 2. Bir qatorni uch marta `UPDATE` qiling va har safar `ctid` va `xmin` ni yozib boring.
 3. `CREATE TABLE b (LIKE buyurtmalar INCLUDING ALL);` va `INCLUDING` siz variantni `\d` bilan solishtiring.

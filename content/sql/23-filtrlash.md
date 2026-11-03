@@ -380,6 +380,8 @@ SQLite-3.54 memory-> SELECT id FROM mijozlar WHERE shahar IS NOT 'Toshkent';
 
 ## Amaliyot
 
+> **Trenajorda sinab ko'ring:** [WHERE: qatorlarni filtrlash](/sql/trenajor?mashq=where). Brauzerda haqiqiy PostgreSQL va SQLite ochiladi: so'rovni o'zingiz yozasiz, natija tekshiriladi, yonida ER diagramma va so'rov rejasi ko'rinadi.
+
 1. 25 yoshdan 35 yoshgacha bo'lgan, shahri Toshkent yoki Samarqand bo'lgan mijozlarni toping. Shartni `IN` va `BETWEEN` bilan yozing.
 2. `WHERE shahar NOT IN ('Toshkent')` va `WHERE shahar NOT IN ('Toshkent', NULL)` natijalarini solishtiring va farqni haqiqat jadvali bilan tushuntiring.
 3. Ismi `a` harfi bilan tugaydigan mijozlarni `LIKE` bilan toping. Keyin katta-kichik harfga e'tibor bermasdan qidiring (`ILIKE`, MySQL collation, SQLite).

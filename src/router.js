@@ -12,6 +12,8 @@ const router = createRouter({
     { path: '/profil', name: 'profile', component: ProfilePage },
     // Brauzerdagi Linux + git: og'ir (v86, xterm) — faqat shu sahifa ochilganda yuklanadi
     { path: '/git/trenajor', name: 'git-trenajor', component: () => import('./views/TrenajorPage.vue'), meta: { full: true } },
+    // Brauzerdagi PostgreSQL (PGlite) va SQLite (WASM) — faqat shu sahifada yuklanadi
+    { path: '/sql/trenajor', name: 'sql-trenajor', component: () => import('./views/SqlTrenajorPage.vue'), meta: { full: true } },
     { path: '/:pathMatch(.*)*', name: 'doc', component: DocPage },
   ],
   scrollBehavior(to, from, savedPosition) {

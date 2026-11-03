@@ -461,6 +461,8 @@ Hujjatga ko'ra SQL standarti window funksiyalarni `UPDATE`/`DELETE` da qatorlarn
 
 ## Amaliyot
 
+> **Trenajorda sinab ko'ring:** [Window funksiyalar](/sql/trenajor?mashq=window). Brauzerda haqiqiy PostgreSQL va SQLite ochiladi: so'rovni o'zingiz yozasiz, natija tekshiriladi, yonida ER diagramma va so'rov rejasi ko'rinadi.
+
 1. Har xodim yonida bo'lim jami maoshi va maoshining bo'lim jamiga ulushini (foizda) chiqaring.
 2. Har bo'limdagi eng kam maoshli xodimni `row_number` bilan toping (teng maoshlilar bo'lsa, `empno` kichigi).
 3. Barcha xodimlarni maosh bo'yicha tartiblab, har qatorda o'zidan oldingi xodimdan qancha ko'p olishini chiqaring.

@@ -453,6 +453,8 @@ Hujjatga ko'ra ko'p ustunli subquery — "qator qiymati" (row value) subquery'si
 
 ## Amaliyot
 
+> **Trenajorda sinab ko'ring:** [Subquery: so'rov ichida so'rov](/sql/trenajor?mashq=subquery). Brauzerda haqiqiy PostgreSQL va SQLite ochiladi: so'rovni o'zingiz yozasiz, natija tekshiriladi, yonida ER diagramma va so'rov rejasi ko'rinadi.
+
 1. Eng yuqori ballni olgan talaba(lar)ni skalyar subquery bilan toping.
 2. Har talaba yonida uning guruhining o'rtacha balini korrelyatsiyalangan subquery bilan chiqaring.
 3. Talabasi yo'q guruhlarni uch xil usulda toping: `NOT IN`, `NOT EXISTS`, `LEFT JOIN … IS NULL` (25-bob). `baholar` ga yana bitta `guruh_id = NULL` qator qo'shib, qaysi usul buzilganini tekshiring.

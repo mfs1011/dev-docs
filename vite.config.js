@@ -172,8 +172,8 @@ export default defineConfig({
   // GitHub Pages uchun: BASE_PATH=/docs-web/ npm run build
   base: process.env.BASE_PATH ?? '/',
   plugins: [vue(), markdownWatcher(), audioDevServer(), pwa()],
-  // v86 o'z .wasm faylini o'zi yuklaydi (public/trenajor/v86.wasm) — oldindan bundle qilinmaydi
-  optimizeDeps: { exclude: ['v86'] },
+  // v86, PGlite va SQLite o'z .wasm fayllarini o'zi yuklaydi — oldindan bundle qilinmaydi
+  optimizeDeps: { exclude: ['v86', '@electric-sql/pglite', '@sqlite.org/sqlite-wasm'] },
   build: {
     rollupOptions: {
       output: {

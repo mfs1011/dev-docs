@@ -327,6 +327,8 @@ Hujjatga ko'ra `LIMIT` manfiy son bo'lsa, qatorlar soniga **chegara yo'q**.
 
 ## Amaliyot
 
+> **Trenajorda sinab ko'ring:** [ORDER BY va LIMIT](/sql/trenajor?mashq=order-limit). Brauzerda haqiqiy PostgreSQL va SQLite ochiladi: so'rovni o'zingiz yozasiz, natija tekshiriladi, yonida ER diagramma va so'rov rejasi ko'rinadi.
+
 1. Talabalarni guruh bo'yicha o'sish, ball bo'yicha kamayish, teng ballda ism bo'yicha alifbo tartibida saralang.
 2. `ball` ustunida `NULL` bo'lgan holda "eng past 2 ball"ni uchala tizimda toping. `NULL` qayerga tushdi?
 3. PostgreSQL'da `FETCH FIRST 1 ROW WITH TIES` bilan eng yuqori ballni olgan **hamma** talabani toping.
