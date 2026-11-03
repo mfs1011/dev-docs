@@ -334,6 +334,8 @@ Natijadagi `784.00000000000011` — `summa * 1.12` hisobi taqribiy `REAL` da baj
 
 ## Amaliyot
 
+> **Trenajorda sinab ko'ring:** [SELECT: kerakli ustunlar](/sql/trenajor?mashq=select). Brauzerda haqiqiy PostgreSQL va SQLite ochiladi: so'rovni o'zingiz yozasiz, natija tekshiriladi, yonida ER diagramma va so'rov rejasi ko'rinadi.
+
 1. `sotuvlar` jadvalidan har shahar bo'yicha jami savdoni chiqaring, faqat jami 500 dan oshganlarini, kamayish tartibida. So'rovni yozishdan oldin har band qaysi bosqichda bajarilishini yozib chiqing.
 2. Xuddi shu so'rovni aliasni `HAVING` da ishlatib, uchala tizimda bajaring. Natijalarni solishtiring.
 3. `DISTINCT ON` bilan har shahardagi eng kichik savdoni toping. Keyin `ORDER BY` dagi ikkinchi ustunni olib tashlab, natijani kuzating.

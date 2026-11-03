@@ -1,10 +1,16 @@
 <script setup>
 // Mashq tanlash: kitob qismlari bo'yicha guruhlangan ro'yxat, bob raqami, bajarilganlar belgisi va qidiruv.
 import { computed, nextTick, onBeforeUnmount, ref, watch } from 'vue'
-import { MASHQLAR, bobRaqami } from './mashqlar.js'
+import { MASHQLAR as GIT_MASHQLAR } from './mashqlar.js'
 import { findPage } from '@/docs'
 
-const props = defineProps({ modelValue: String, done: Set, disabled: Boolean })
+// mashqlar va erkin rejimlar tashqaridan beriladi (SQL trenajori ham shu oynani ishlatadi); standart — git
+const props = defineProps({
+  modelValue: String, done: Set, disabled: Boolean,
+  mashqlar: { type: Array, default: () => GIT_MASHQLAR },
+  erkin: { type: Array, default: () => [{ id: '', title: 'Erkin rejim', note: 'bo‘sh ~/loyiha papkasi, hech narsa tayyorlanmaydi' }] },
+})
+const bobRaqami = (m) => +m.bob.match(/\/(\d+)-/)[1]
 const emit = defineEmits(['update:modelValue'])
 
 const open = ref(false)
@@ -14,14 +20,13 @@ const root = ref(null)
 const input = ref(null)
 const list = ref(null)
 
-const FREE = { id: '', title: 'Erkin rejim', note: 'bo‘sh ~/loyiha papkasi, hech narsa tayyorlanmaydi' }
-const current = computed(() => MASHQLAR.find((m) => m.id === props.modelValue) ?? FREE)
+const current = computed(() => [...props.erkin, ...props.mashqlar].find((m) => m.id === props.modelValue) ?? props.erkin[0])
 
 // qidiruvdan o'tganlar, kitob bo'limlari bo'yicha
 const groups = computed(() => {
   const t = q.value.trim().toLowerCase()
   const out = []
-  for (const m of MASHQLAR) {
+  for (const m of props.mashqlar) {
     const page = findPage(m.bob)
     const hay = `${m.title} ${m.id} ${page?.title ?? ''}`.toLowerCase()
     if (t && !hay.includes(t)) continue
@@ -32,8 +37,8 @@ const groups = computed(() => {
   }
   return out
 })
-const flat = computed(() => [...(q.value.trim() ? [] : [FREE]), ...groups.value.flatMap((g) => g.items)])
-const doneCount = computed(() => MASHQLAR.filter((m) => props.done?.has(m.id)).length)
+const flat = computed(() => [...(q.value.trim() ? [] : props.erkin), ...groups.value.flatMap((g) => g.items)])
+const doneCount = computed(() => props.mashqlar.filter((m) => props.done?.has(m.id)).length)
 
 function toggle() {
   if (props.disabled) return
@@ -84,13 +89,18 @@ const idx = (m) => flat.value.findIndex((x) => x.id === m.id)
     <div v-if="open" class="pop" role="dialog" aria-label="Mashq tanlash" @keydown="onKey">
       <div class="head">
         <input ref="input" v-model="q" type="search" placeholder="Mashq yoki mavzu qidirish…" aria-label="Mashqlarni qidirish">
-        <span class="count">{{ doneCount }}/{{ MASHQLAR.length }} bajarildi</span>
+        <span class="count">{{ doneCount }}/{{ mashqlar.length }} bajarildi</span>
       </div>
       <div ref="list" class="list">
-        <button v-if="!q.trim()" type="button" class="item free" :class="{ on: active === 0, cur: !modelValue }" @mouseenter="active = 0" @click="pick(FREE)">
-          <span class="num">~</span>
-          <span class="txt"><strong>{{ FREE.title }}</strong><small>{{ FREE.note }}</small></span>
-        </button>
+        <template v-if="!q.trim()">
+          <button
+            v-for="(f, i) in erkin" :key="f.id" type="button" class="item free"
+            :class="{ on: active === i, cur: modelValue === f.id }" @mouseenter="active = i" @click="pick(f)"
+          >
+            <span class="num">~</span>
+            <span class="txt"><strong>{{ f.title }}</strong><small>{{ f.note }}</small></span>
+          </button>
+        </template>
         <section v-for="g in groups" :key="g.title">
           <p class="group">{{ g.title }}</p>
           <button

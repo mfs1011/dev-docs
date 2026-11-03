@@ -426,6 +426,8 @@ PostgreSQL bunday tashqi kalitni `CREATE TABLE` paytidayoq rad etadi: `there is 
 
 ## Amaliyot
 
+> **Trenajorda sinab ko'ring:** [INSERT va tashqi kalit](/sql/trenajor?mashq=insert-fk). Brauzerda haqiqiy PostgreSQL va SQLite ochiladi: so'rovni o'zingiz yozasiz, natija tekshiriladi, yonida ER diagramma va so'rov rejasi ko'rinadi.
+
 1. `talabalar` va `kurslar` uchun M:N aloqani quring: oraliq jadvalda yozilgan sana va baho bo'lsin. Har kursdagi talabalar sonini va har talabaning o'rtacha bahosini chiqaring.
 2. Har aloqa uchun `ON DELETE` ni tanlang va asoslang: kurs o'chirilsa? talaba o'chirilsa?
 3. `xodimlar` uchun 1:1 `xodim_pasport` jadvalini yarating. Ikki xil yo'l bilan: (a) `pasport.xodim_id` — `PRIMARY KEY`; (b) alohida `id` + `xodim_id UNIQUE`. Farqini tushuntiring.

@@ -506,6 +506,8 @@ Yo'q narsalar: `any_value` (`no such function: any_value`), `ROLLUP`/`CUBE`/`GRO
 
 ## Amaliyot
 
+> **Trenajorda sinab ko'ring:** [GROUP BY va agregatlar](/sql/trenajor?mashq=group-by). Brauzerda haqiqiy PostgreSQL va SQLite ochiladi: so'rovni o'zingiz yozasiz, natija tekshiriladi, yonida ER diagramma va so'rov rejasi ko'rinadi.
+
 1. Har guruh uchun talabalar soni, baholangan talabalar soni va o'rtacha ballni chiqaring. `C` guruhi ham 0 bilan chiqsin.
 2. O'rtacha bali 87 dan yuqori guruhlarni toping. Shartni `WHERE` ga yozishga urinib ko'ring — nima bo'ldi?
 3. Bitta so'rovda: jami talabalar, 88 va undan yuqori ball olganlar, bahosi yo'qlar soni. PostgreSQL/SQLite'da `FILTER`, MySQL'da `CASE` bilan.

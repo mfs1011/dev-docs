@@ -16,9 +16,13 @@
     "tts:publish": "node scripts/tts-publish.mjs",
     "trenajor:rootfs": "python3 trenajor/scripts/rootfs.py && rm -rf public/trenajor/fs && python3 trenajor/scripts/fsjson.py",
     "trenajor:test": "node trenajor/test/boot.mjs && node trenajor/test/mashqlar.mjs && node trenajor/test/graf.mjs",
-    "trenajor:havolalar": "node trenajor/scripts/havolalar.mjs"
+    "trenajor:havolalar": "node trenajor/scripts/havolalar.mjs",
+    "sql-trenajor:test": "node sql-trenajor/test/mashqlar.mjs",
+    "sql-trenajor:havolalar": "node sql-trenajor/havolalar.mjs"
   },
   "dependencies": {
+    "@electric-sql/pglite": "0.5.14",
+    "@sqlite.org/sqlite-wasm": "3.54.1-build1",
     "@supabase/supabase-js": "^2.117.2",
     "@xterm/addon-fit": "0.11.0",
     "@xterm/xterm": "6.0.0",

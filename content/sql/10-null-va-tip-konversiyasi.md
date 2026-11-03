@@ -494,6 +494,8 @@ Parse error near line 3: unknown datatype for r.n: "VARCHAR(10)"
 
 ## Amaliyot
 
+> **Trenajorda sinab ko'ring:** [NULL — «qiymat yo'q»](/sql/trenajor?mashq=null). Brauzerda haqiqiy PostgreSQL va SQLite ochiladi: so'rovni o'zingiz yozasiz, natija tekshiriladi, yonida ER diagramma va so'rov rejasi ko'rinadi.
+
 1. Haqiqat jadvalini o'zingiz tekshiring: `SELECT a, b, a AND b, a OR b FROM (VALUES (TRUE), (FALSE), (NULL)) x(a), (VALUES (TRUE), (FALSE), (NULL)) y(b);`.
 2. `telefonlar` jadvalida "telefoni yo'q yoki noma'lum" bo'lganlarni bitta so'rov bilan toping.
 3. PostgreSQL'da `SELECT NULL IS UNKNOWN;` va `SELECT 1 IS UNKNOWN;` ni bajaring. Nega ikkinchisi xato beradi? Hujjatdagi `IS UNKNOWN` tavsifi bilan solishtiring.

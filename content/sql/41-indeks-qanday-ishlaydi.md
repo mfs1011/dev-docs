@@ -371,6 +371,8 @@ buyurtmalar|buyurtmalar_mijoz_idx|200000 10
 
 ## Amaliyot
 
+> **Trenajorda sinab ko'ring:** [Indeks va EXPLAIN](/sql/trenajor?mashq=indeks). Brauzerda haqiqiy PostgreSQL va SQLite ochiladi: so'rovni o'zingiz yozasiz, natija tekshiriladi, yonida ER diagramma va so'rov rejasi ko'rinadi.
+
 1. `buyurtmalar` jadvalida `summa > 99000` va `summa > 1000` shartlari uchun `summa` ga indeks qo'yib, rejalarni solishtiring. Qaysi foizdan keyin rejalashtiruvchi indeksdan voz kechadi?
 2. `SELECT mijoz_id, count(*) FROM buyurtmalar GROUP BY mijoz_id` ni indeks bilan va usiz `EXPLAIN` qiling.
 3. PostgreSQL'da `SET enable_seqscan = off` bilan `'yopilgan'` so'rovini `EXPLAIN ANALYZE` qiling va vaqtni oddiy reja bilan solishtiring. Hujjat bu sinov haqida nima deydi?

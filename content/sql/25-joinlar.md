@@ -472,6 +472,8 @@ Parse error near line 8: near "SELECT": syntax error
 
 ## Amaliyot
 
+> **Trenajorda sinab ko'ring:** [JOIN: jadvallarni bog'lash](/sql/trenajor?mashq=join). Brauzerda haqiqiy PostgreSQL va SQLite ochiladi: so'rovni o'zingiz yozasiz, natija tekshiriladi, yonida ER diagramma va so'rov rejasi ko'rinadi.
+
 1. `t1` va `t2` uchun `CROSS`, `INNER`, `LEFT`, `RIGHT`, `FULL` natijalarini qatorlar soni bo'yicha oldindan hisoblang, keyin uchala tizimda tekshiring.
 2. `t2` ga `name` ustuni qo'shing (`ALTER TABLE`, 16-bob). `NATURAL JOIN` natijasi qanday o'zgardi? `USING (num)` nimani berdi?
 3. "`t2` da bor, `t1` da yo'q" qatorlarni `RIGHT JOIN` bilan, keyin `LEFT JOIN` bilan (jadvallar o'rnini almashtirib) toping.

@@ -243,6 +243,7 @@ export const books = [
     accentDark: '#699eca',
     versionLabel: 'PostgreSQL',
     versionRow: /^\|\s*PostgreSQL\s*\|\s*([^|]+)\|/m,
+    tools: [{ label: 'SQL trenajori', route: '/sql/trenajor', note: 'Brauzerda PostgreSQL va SQLite' }],
     groups: [
       { title: 'I — Kirish va muhit', from: 1, to: 5 },
       { title: 'II — Ma\'lumot tiplari', from: 6, to: 11 },

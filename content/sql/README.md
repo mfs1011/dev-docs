@@ -16,6 +16,8 @@ Boshlashdan oldin — SQL'ning umumiy manzarasi 5 daqiqada:
 
 Videodagi har mavzu keyin alohida bobda chuqur ochiladi: [jadval va relyatsion model](01-relyatsion-model.md), [kalitlar va cheklovlar](14-cheklovlar.md), [tashqi kalit](37-aloqalar-va-tashqi-kalitlar.md), [`SELECT` bajarilish tartibi](22-select-anatomiyasi.md), [JOIN](25-joinlar.md), [GROUP BY](26-agregatsiya.md), [INSERT, UPDATE, DELETE](18-insert-update-delete.md), [indeks](41-indeks-qanday-ishlaydi.md), [uch tizim](02-uch-tizim.md).
 
+So'rovlarni o'qish bilan birga qo'lda yozib ko'rish uchun — **[SQL trenajori](/sql/trenajor)**. Brauzer ichida haqiqiy PostgreSQL 18.6 (PGlite) va SQLite 3.54.1 ishlaydi, hech narsa o'rnatish shart emas. Tayyor do'kon bazasida so'rov yozasiz: natija psql uslubidagi matn yoki jadval bo'lib chiqadi, jadvallar va tashqi kalitlar ER diagrammada ko'rinadi, `EXPLAIN` rejasi daraxt bo'lib chiziladi. Boblarga bog'langan mashqlar ham bor — ular tegishli bobning "Amaliyot" bo'limida. MySQL hozircha trenajorda yo'q: uning brauzerda ishlaydigan rasmiy versiyasi mavjud emas.
+
 Mundarija rasmiy hujjatlar tuzilmasiga solishtirib tuzilgan. Har bob yonida u tayanadigan rasmiy sahifalar ko'rsatilgan. Har bobni yozishdan oldin shu sahifalar qayta o'qiladi. Kod misollari real bazada ishga tushirib tekshiriladi.
 
 Manbalar va versiyalar (2026-10-10 da tekshirilgan):
