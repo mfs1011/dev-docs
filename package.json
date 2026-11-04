@@ -20,7 +20,8 @@
     "sql-trenajor:test": "node sql-trenajor/test/mashqlar.mjs",
     "sql-trenajor:havolalar": "node sql-trenajor/havolalar.mjs",
     "komponent-trenajor:test": "node komponent-trenajor/test/mashqlar.mjs",
-    "fsd-trenajor:test": "node fsd-tekshiruvchi/test/steiger.mjs"
+    "fsd-trenajor:test": "node fsd-tekshiruvchi/test/steiger.mjs",
+    "arxitektura-trenajor:test": "node arxitektura-simulyator/test/mashqlar.mjs"
   },
   "dependencies": {
     "@electric-sql/pglite": "0.5.14",
