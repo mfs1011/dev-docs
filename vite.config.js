@@ -150,6 +150,8 @@ function pwa() {
         'pwa/*.{png,svg}',
       ],
       navigateFallback: 'index.html',
+      // komponent trenajorining natija oynalari (iframe) — alohida HTML sahifa, SPA emas
+      navigateFallbackDenylist: [/\/lab\//],
       cleanupOutdatedCaches: true,
       runtimeCaching: [
         {
@@ -168,14 +170,51 @@ function pwa() {
   })
 }
 
+/**
+ * Komponent trenajori: Pinia va Vue Router (`vue-router-lab` — Vue Router 5, sayt o'zi 4-versiyada) natija
+ * oynasidagi Vue dev build bilan ishlashi kerak — ular import qilgan `vue` shu nusxaga yo'naltiriladi.
+ */
+function labVue() {
+  const LAB = /\/node_modules\/(pinia|vue-router-lab)\//
+  const VUE_LAB = resolve(APP_ROOT, 'src/komponent/runner/vue-lab.js')
+  const VUE_DEV = resolve(APP_ROOT, 'src/komponent/runner/vue-dev.js')
+  const STUB = resolve(APP_ROOT, 'src/komponent/runner/devtools-stub.js')
+  return {
+    name: 'lab-vue',
+    enforce: 'pre',
+    resolveId(id, importer) {
+      if (!importer || !LAB.test(importer)) return null
+      // Pinia getter'lari kuzatiladi (vue-lab), router'ning ichki computed'lari — yo'q (to'g'ridan dev build)
+      if (id === 'vue') return importer.includes('/node_modules/pinia/') ? VUE_LAB : VUE_DEV
+      if (id === '@vue/devtools-api') return STUB
+      return null
+    },
+  }
+}
+
 export default defineConfig({
   // GitHub Pages uchun: BASE_PATH=/docs-web/ npm run build
   base: process.env.BASE_PATH ?? '/',
-  plugins: [vue(), markdownWatcher(), audioDevServer(), pwa()],
+  plugins: [labVue(), vue(), markdownWatcher(), audioDevServer(), pwa()],
   // v86, PGlite va SQLite o'z .wasm fayllarini o'zi yuklaydi — oldindan bundle qilinmaydi
-  optimizeDeps: { exclude: ['v86', '@electric-sql/pglite', '@sqlite.org/sqlite-wasm'] },
+  optimizeDeps: {
+    // pinia va vue-router-lab — labVue plugin ular import qilgan `vue` ni almashtiradi, oldindan bundle qilinmaydi
+    exclude: ['v86', '@electric-sql/pglite', '@sqlite.org/sqlite-wasm', 'pinia', 'vue-router-lab'],
+    // komponent trenajori iframe'i: dev'da birinchi ochilishda qayta yuklanmasligi uchun oldindan
+    include: ['sucrase', 'react', 'react/jsx-runtime', 'react-dom', 'react-dom/client', 'zustand', 'zustand/react/shallow', '@tanstack/react-query', 'nostics'],
+  },
   build: {
     rollupOptions: {
+      // komponent trenajorining natija oynalari — o'z Vue (dev build) / React nusxasi bilan alohida sahifa
+      input: {
+        main: resolve(APP_ROOT, 'index.html'),
+        'lab-vue': resolve(APP_ROOT, 'lab/vue.html'),
+        'lab-react': resolve(APP_ROOT, 'lab/react.html'),
+      },
+      // TanStack Query fayllaridagi "use client" (React Server Components belgisi) — oddiy bundle'da ma'nosiz
+      onwarn(w, warn) {
+        if (w.code !== 'MODULE_LEVEL_DIRECTIVE') warn(w)
+      },
       output: {
         // Supabase SDK faqat akkaunt kerak bo'lganda yuklanadi — `index-*` nomini olsa precache'ga tushib qolardi
         manualChunks: (id) => (id.includes('/node_modules/@supabase/') ? 'supabase' : undefined),

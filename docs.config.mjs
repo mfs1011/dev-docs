@@ -74,6 +74,7 @@ export const books = [
         { value: 'options', label: 'Options', title: 'Options API: export default { data, methods }' },
       ],
     },
+    tools: [{ label: 'Vue trenajori', route: '/vue/trenajor', note: 'Reaktivlik va render jonli' }],
     groups: [
       { title: 'I — Poydevor', from: 1, to: 7 },
       { title: 'II — Shablon va reaktivlik', from: 8, to: 17 },
@@ -107,6 +108,7 @@ export const books = [
         { value: 'js', label: 'JavaScript', title: 'Oddiy JavaScript bilan' },
       ],
     },
+    tools: [{ label: 'React trenajori', route: '/react/trenajor', note: 'Render va qayta render jonli' }],
     groups: [
       { title: 'I — Poydevor', from: 1, to: 7 },
       { title: 'II — JSX va komponentlar', from: 8, to: 15 },
