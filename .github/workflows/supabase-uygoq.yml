@@ -1,0 +1,28 @@
+name: Supabase'ni uyg'oq saqlash
+
+# Bepul tarifda 7 kun faolligi kam loyiha to'xtatiladi — har kuni bazaga bitta haqiqiy so'rov
+# (public.keep_alive(), supabase/migrations/20261104000000_keep_alive.sql). So'rov o'tmasa workflow
+# qizil bo'ladi — loyiha to'xtab qolganini birinchi bo'lib shu yerda ko'rasiz.
+
+on:
+  schedule:
+    - cron: '17 3 * * *' # har kuni 03:17 UTC
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Bazaga so'rov
+        env:
+          # deploy.yml bilan bir xil ochiq kalitlar (Settings → Secrets and variables → Actions → Variables)
+          SUPABASE_URL: ${{ vars.VITE_SUPABASE_URL }}
+          SUPABASE_KEY: ${{ vars.VITE_SUPABASE_ANON_KEY }}
+        run: |
+          code=$(curl -sS -o javob.txt -w '%{http_code}' --max-time 30 \
+            -X POST "$SUPABASE_URL/rest/v1/rpc/keep_alive" \
+            -H "apikey: $SUPABASE_KEY" -H 'Content-Type: application/json' -d '{}')
+          echo "HTTP $code: $(cat javob.txt)"
+          test "$code" = 200
