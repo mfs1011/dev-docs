@@ -224,6 +224,7 @@ export const books = [
         { value: 'angular', label: 'Angular', title: 'Angular misollari' },
       ],
     },
+    tools: [{ label: 'FSD trenajori', route: '/fsd/trenajor', note: 'Qatlam qoidalari, haqiqiy Steiger' }],
     groups: [
       { title: 'I — Asoslar', from: 1, to: 6 },
       { title: 'II — Qatlamlar chuqur', from: 7, to: 13 },

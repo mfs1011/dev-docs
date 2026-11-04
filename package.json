@@ -20,10 +20,12 @@
     "sql-trenajor:test": "node sql-trenajor/test/mashqlar.mjs",
     "sql-trenajor:havolalar": "node sql-trenajor/havolalar.mjs",
     "komponent-trenajor:test": "node komponent-trenajor/test/mashqlar.mjs",
+    "fsd-trenajor:test": "node fsd-tekshiruvchi/test/steiger.mjs",
     "arxitektura-trenajor:test": "node arxitektura-simulyator/test/mashqlar.mjs"
   },
   "dependencies": {
     "@electric-sql/pglite": "0.5.14",
+    "@feature-sliced/steiger-plugin": "0.8.0",
     "@sqlite.org/sqlite-wasm": "3.54.1-build1",
     "@supabase/supabase-js": "^2.117.2",
     "@tanstack/react-query": "5.105.3",
@@ -44,6 +46,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.2.1",
+    "steiger": "0.7.0",
     "vite": "^6.0.7",
     "vite-plugin-pwa": "^1.3.0"
   },

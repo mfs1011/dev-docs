@@ -17,6 +17,8 @@ const router = createRouter({
     // Brauzerda haqiqiy Vue/React (iframe, lab/*.html): render va reaktivlik jonli ko'rinadi
     { path: '/vue/trenajor', name: 'vue-trenajor', component: () => import('./views/KomponentTrenajorPage.vue'), meta: { full: true, fw: 'vue' } },
     { path: '/react/trenajor', name: 'react-trenajor', component: () => import('./views/KomponentTrenajorPage.vue'), meta: { full: true, fw: 'react' } },
+    // FSD: loyiha fayllari brauzerda, haqiqiy Steiger tekshiradi (src/fsd)
+    { path: '/fsd/trenajor', name: 'fsd-trenajor', component: () => import('./views/FsdTrenajorPage.vue'), meta: { full: true } },
     // Tizim dizayni simulyatori: taxminiy model, komponentlar va yuklama (src/arxitektura)
     { path: '/arxitektura/trenajor', name: 'arxitektura-trenajor', component: () => import('./views/ArxitekturaTrenajorPage.vue'), meta: { full: true } },
     { path: '/:pathMatch(.*)*', name: 'doc', component: DocPage },
