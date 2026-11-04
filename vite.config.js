@@ -150,6 +150,8 @@ function pwa() {
         'pwa/*.{png,svg}',
       ],
       navigateFallback: 'index.html',
+      // komponent trenajorining natija oynalari (iframe) — alohida HTML sahifa, SPA emas
+      navigateFallbackDenylist: [/\/lab\//],
       cleanupOutdatedCaches: true,
       runtimeCaching: [
         {
@@ -166,6 +168,28 @@ function pwa() {
     },
     devOptions: { enabled: false },
   })
+}
+
+/**
+ * Komponent trenajori: Pinia va Vue Router (`vue-router-lab` — Vue Router 5, sayt o'zi 4-versiyada) natija
+ * oynasidagi Vue dev build bilan ishlashi kerak — ular import qilgan `vue` shu nusxaga yo'naltiriladi.
+ */
+function labVue() {
+  const LAB = /\/node_modules\/(pinia|vue-router-lab)\//
+  const VUE_LAB = resolve(APP_ROOT, 'src/komponent/runner/vue-lab.js')
+  const VUE_DEV = resolve(APP_ROOT, 'src/komponent/runner/vue-dev.js')
+  const STUB = resolve(APP_ROOT, 'src/komponent/runner/devtools-stub.js')
+  return {
+    name: 'lab-vue',
+    enforce: 'pre',
+    resolveId(id, importer) {
+      if (!importer || !LAB.test(importer)) return null
+      // Pinia getter'lari kuzatiladi (vue-lab), router'ning ichki computed'lari — yo'q (to'g'ridan dev build)
+      if (id === 'vue') return importer.includes('/node_modules/pinia/') ? VUE_LAB : VUE_DEV
+      if (id === '@vue/devtools-api') return STUB
+      return null
+    },
+  }
 }
 
 /**
@@ -212,15 +236,27 @@ globalThis.__steigerTayyor = (async () => {
 export default defineConfig({
   // GitHub Pages uchun: BASE_PATH=/docs-web/ npm run build
   base: process.env.BASE_PATH ?? '/',
-  plugins: [labFsd(), vue(), markdownWatcher(), audioDevServer(), pwa()],
+  plugins: [labFsd(), labVue(), vue(), markdownWatcher(), audioDevServer(), pwa()],
   // v86, PGlite va SQLite o'z .wasm fayllarini o'zi yuklaydi — oldindan bundle qilinmaydi
   optimizeDeps: {
-    // Steiger va uning bog'liqliklari — labFsd plugin ularning Node importlarini almashtiradi, oldindan bundle qilinmaydi
-    exclude: ['v86', '@electric-sql/pglite', '@sqlite.org/sqlite-wasm', '@feature-sliced/steiger-plugin', '@feature-sliced/filesystem', 'tsconfck', 'web-tree-sitter'],
-    include: ['typescript', 'lodash-es', 'pluralize', 'fastest-levenshtein'],
+    // pinia va vue-router-lab — labVue, Steiger va uning bog'liqliklari — labFsd plugin importlarini almashtiradi,
+    // shuning uchun oldindan bundle qilinmaydi
+    exclude: ['v86', '@electric-sql/pglite', '@sqlite.org/sqlite-wasm', 'pinia', 'vue-router-lab', '@feature-sliced/steiger-plugin', '@feature-sliced/filesystem', 'tsconfck', 'web-tree-sitter'],
+    // komponent trenajori iframe'i va Steiger bog'liqliklari: dev'da birinchi ochilishda qayta yuklanmasligi uchun oldindan
+    include: ['sucrase', 'react', 'react/jsx-runtime', 'react-dom', 'react-dom/client', 'zustand', 'zustand/react/shallow', '@tanstack/react-query', 'nostics', 'typescript', 'lodash-es', 'pluralize', 'fastest-levenshtein'],
   },
   build: {
     rollupOptions: {
+      // komponent trenajorining natija oynalari — o'z Vue (dev build) / React nusxasi bilan alohida sahifa
+      input: {
+        main: resolve(APP_ROOT, 'index.html'),
+        'lab-vue': resolve(APP_ROOT, 'lab/vue.html'),
+        'lab-react': resolve(APP_ROOT, 'lab/react.html'),
+      },
+      // TanStack Query fayllaridagi "use client" (React Server Components belgisi) — oddiy bundle'da ma'nosiz
+      onwarn(w, warn) {
+        if (w.code !== 'MODULE_LEVEL_DIRECTIVE') warn(w)
+      },
       output: {
         // Supabase SDK va trenajorlar kutubxonalari faqat kerak bo'lganda yuklanadi — `index-*` nomini olsa
         // PWA precache'ga (globPatterns: assets/index-*) tushib, har bir foydalanuvchiga oldindan yuklanardi

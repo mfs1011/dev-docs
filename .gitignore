@@ -51,3 +51,4 @@ video/*/*/*.jpg
 # Git trenajori: rootfs yig'ish oralig'i va sinov skrinshotlari
 trenajor/build/
 trenajor/test/shots/
+komponent-trenajor/test/shots/
