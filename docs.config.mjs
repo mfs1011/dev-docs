@@ -185,6 +185,7 @@ export const books = [
     accentDark: '#a99bff',
     versionLabel: 'Arxitektura',
     // Bu kitob texnologiyaga bog'liq emas — versiya qatori yo'q
+    tools: [{ label: 'Tizim dizayni simulyatori', route: '/arxitektura/trenajor', note: 'Server, kesh, replika, CDN — yuklama ostida' }],
     groups: [
       { title: 'I — Arxitektura nima', from: 1, to: 7 },
       { title: 'II — Umumiy tamoyillar', from: 8, to: 18 },

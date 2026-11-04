@@ -18,7 +18,8 @@
     "trenajor:test": "node trenajor/test/boot.mjs && node trenajor/test/mashqlar.mjs && node trenajor/test/graf.mjs",
     "trenajor:havolalar": "node trenajor/scripts/havolalar.mjs",
     "sql-trenajor:test": "node sql-trenajor/test/mashqlar.mjs",
-    "sql-trenajor:havolalar": "node sql-trenajor/havolalar.mjs"
+    "sql-trenajor:havolalar": "node sql-trenajor/havolalar.mjs",
+    "arxitektura-trenajor:test": "node arxitektura-simulyator/test/mashqlar.mjs"
   },
   "dependencies": {
     "@electric-sql/pglite": "0.5.14",
