@@ -143,6 +143,9 @@ function pwa() {
       globPatterns: [
         'index.html',
         'assets/index-*.{js,css}',
+        // bir nechta kirish nuqtasi (main + lab/*.html) bo'lgani uchun asosiy ilova `main-*` deb nomlanadi
+        'assets/main-*.{js,css}',
+        'assets/yordamchi-*.js',
         'assets/search-index-*.js',
         'favicon*.svg',
         'marks/*.svg',
@@ -261,10 +264,15 @@ export default defineConfig({
         // Supabase SDK va trenajorlar kutubxonalari faqat kerak bo'lganda yuklanadi — `index-*` nomini olsa
         // PWA precache'ga (globPatterns: assets/index-*) tushib, har bir foydalanuvchiga oldindan yuklanardi
         manualChunks: (id) => {
+          // Vite/Rollup yordamchilari (__vitePreload, CommonJS interop) hamma joyda kerak — alohida kichik chunk.
+          // Aks holda Rollup ularni birinchi qo'lda ajratilgan chunk'ka (pglite, steiger) qo'shib yuboradi va
+          // asosiy sahifa o'sha og'ir chunk'larni modulepreload qiladi.
+          if (id.includes('vite/preload-helper') || id.includes('commonjsHelpers') || id.includes('modulepreload-polyfill')) return 'yordamchi'
           if (id.includes('/node_modules/@supabase/')) return 'supabase'
           if (id.includes('/node_modules/@electric-sql/pglite/')) return 'pglite'
           if (id.includes('/node_modules/@sqlite.org/sqlite-wasm/')) return 'sqlite'
           if (/\/node_modules\/(typescript|@feature-sliced|web-tree-sitter|tsconfck)\//.test(id)) return 'steiger'
+          if (/\/node_modules\/(react|react-dom|scheduler|use-sync-external-store|zustand|@tanstack)\//.test(id)) return 'react-lab'
           return undefined
         },
       },
