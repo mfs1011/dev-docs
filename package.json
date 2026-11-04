@@ -18,10 +18,12 @@
     "trenajor:test": "node trenajor/test/boot.mjs && node trenajor/test/mashqlar.mjs && node trenajor/test/graf.mjs",
     "trenajor:havolalar": "node trenajor/scripts/havolalar.mjs",
     "sql-trenajor:test": "node sql-trenajor/test/mashqlar.mjs",
-    "sql-trenajor:havolalar": "node sql-trenajor/havolalar.mjs"
+    "sql-trenajor:havolalar": "node sql-trenajor/havolalar.mjs",
+    "fsd-trenajor:test": "node fsd-tekshiruvchi/test/steiger.mjs"
   },
   "dependencies": {
     "@electric-sql/pglite": "0.5.14",
+    "@feature-sliced/steiger-plugin": "0.8.0",
     "@sqlite.org/sqlite-wasm": "3.54.1-build1",
     "@supabase/supabase-js": "^2.117.2",
     "@xterm/addon-fit": "0.11.0",
@@ -35,6 +37,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.2.1",
+    "steiger": "0.7.0",
     "vite": "^6.0.7",
     "vite-plugin-pwa": "^1.3.0"
   }

@@ -168,17 +168,69 @@ function pwa() {
   })
 }
 
+/**
+ * FSD tekshiruvchisi: haqiqiy Steiger qoidalari (@feature-sliced/steiger-plugin) brauzerda. Node modullari
+ * (fs, path, url, module) xotiradagi fayl tizimi bilan almashtiriladi (src/fsd/shim), plugin'ning modul
+ * darajasidagi `await` (tree-sitter yuklash) esa `globalThis.__steigerTayyor` promise'iga aylantiriladi.
+ */
+function labFsd() {
+  const LIB = /\/node_modules\/(@feature-sliced|tsconfck|web-tree-sitter)\//
+  const SHIM = {
+    fs: 'fs.js', 'node:fs': 'fs.js', 'fs/promises': 'fs.js', 'node:fs/promises': 'fs.js',
+    path: 'path.js', 'node:path': 'path.js',
+    url: 'node.js', 'node:url': 'node.js', module: 'node.js', 'node:module': 'node.js',
+  }
+  const PARSERS = resolve(APP_ROOT, 'node_modules/@feature-sliced/steiger-plugin/dist/parsers')
+  return {
+    name: 'lab-fsd',
+    enforce: 'pre',
+    resolveId(id, importer) {
+      if (importer && LIB.test(importer) && SHIM[id]) return resolve(APP_ROOT, 'src/fsd/shim', SHIM[id])
+      return null
+    },
+    transform(code, id) {
+      if (!id.includes('/@feature-sliced/steiger-plugin/dist/index.js')) return null
+      const bosh = code.indexOf('var __dirname = dirname(fileURLToPath(import.meta.url));')
+      const ext = code.indexOf('var extractors = [', bosh)
+      const oxir = code.indexOf('\n];\n', ext) + 4
+      if (bosh < 0 || ext < 0 || oxir < 4) throw new Error('steiger-plugin: kutilgan kod topilmadi (versiya o\'zgarganmi?)')
+      const massiv = code.slice(ext + 'var extractors = '.length, oxir - 2)
+      const imp = ['web-tree-sitter.wasm', 'tree-sitter-tsx.wasm', 'tree-sitter-svelte.wasm', 'tree-sitter-astro.wasm', 'tree-sitter-vue.wasm']
+        .map((f, i) => `import __w${i} from ${JSON.stringify((i ? resolve(PARSERS, f) : resolve(APP_ROOT, 'node_modules/web-tree-sitter', f)) + '?url')};`).join('\n')
+      const yangi = `var tsx, svelte, astro, vue, extractors;
+globalThis.__steigerTayyor = (async () => {
+  await Parser.init({ locateFile: () => __w0 });
+  [tsx, svelte, astro, vue] = await Promise.all([__w1, __w2, __w3, __w4].map((u) => Language.load(u)));
+  extractors = ${massiv};
+})();
+`
+      return { code: imp + '\n' + code.slice(0, bosh) + yangi + code.slice(oxir), map: null }
+    },
+  }
+}
+
 export default defineConfig({
   // GitHub Pages uchun: BASE_PATH=/docs-web/ npm run build
   base: process.env.BASE_PATH ?? '/',
-  plugins: [vue(), markdownWatcher(), audioDevServer(), pwa()],
+  plugins: [labFsd(), vue(), markdownWatcher(), audioDevServer(), pwa()],
   // v86, PGlite va SQLite o'z .wasm fayllarini o'zi yuklaydi — oldindan bundle qilinmaydi
-  optimizeDeps: { exclude: ['v86', '@electric-sql/pglite', '@sqlite.org/sqlite-wasm'] },
+  optimizeDeps: {
+    // Steiger va uning bog'liqliklari — labFsd plugin ularning Node importlarini almashtiradi, oldindan bundle qilinmaydi
+    exclude: ['v86', '@electric-sql/pglite', '@sqlite.org/sqlite-wasm', '@feature-sliced/steiger-plugin', '@feature-sliced/filesystem', 'tsconfck', 'web-tree-sitter'],
+    include: ['typescript', 'lodash-es', 'pluralize', 'fastest-levenshtein'],
+  },
   build: {
     rollupOptions: {
       output: {
-        // Supabase SDK faqat akkaunt kerak bo'lganda yuklanadi — `index-*` nomini olsa precache'ga tushib qolardi
-        manualChunks: (id) => (id.includes('/node_modules/@supabase/') ? 'supabase' : undefined),
+        // Supabase SDK va trenajorlar kutubxonalari faqat kerak bo'lganda yuklanadi — `index-*` nomini olsa
+        // PWA precache'ga (globPatterns: assets/index-*) tushib, har bir foydalanuvchiga oldindan yuklanardi
+        manualChunks: (id) => {
+          if (id.includes('/node_modules/@supabase/')) return 'supabase'
+          if (id.includes('/node_modules/@electric-sql/pglite/')) return 'pglite'
+          if (id.includes('/node_modules/@sqlite.org/sqlite-wasm/')) return 'sqlite'
+          if (/\/node_modules\/(typescript|@feature-sliced|web-tree-sitter|tsconfck)\//.test(id)) return 'steiger'
+          return undefined
+        },
       },
     },
   },
