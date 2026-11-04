@@ -5,7 +5,7 @@
 import { computed } from 'vue'
 
 const props = defineProps({ m: Object, c: Object, tanlangan: String })
-const emit = defineEmits(['server', 'tanla'])
+const emit = defineEmits(['server', 'tanla', 'ustida'])
 
 const W = 820
 const BW = 146, BH = 54
@@ -80,6 +80,9 @@ const nuqta = (o) => (o <= 0.5 ? 0 : Math.max(1, Math.min(8, Math.round((o / Mat
         class="tugun"
         :class="[t.tur, t.band != null && rang(t.band), { yiqilgan: t.yiqilgan, on: tanlangan === t.id, tiqildi: t.band >= 1 }]"
         :transform="`translate(${t.x} ${t.y})`"
+        :data-t="t.tur === 'server' ? (t.i === 0 ? 'server' : null) : t.tur"
+        @mouseenter="emit('ustida', t.id)"
+        @mouseleave="emit('ustida', null)"
         @click="t.tur === 'server' ? emit('server', t.i) : emit('tanla', t.id)"
       >
         <title>{{ t.tur === 'server' ? 'Bosing — serverni yiqitish yoki tiklash' : t.nom }}</title>

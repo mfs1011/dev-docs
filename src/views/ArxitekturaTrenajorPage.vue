@@ -5,6 +5,8 @@
 import { computed, onBeforeUnmount, ref, shallowRef, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import Sxema from '@/arxitektura/Sxema.vue'
+import Tanishtiruv from '@/arxitektura/Tanishtiruv.vue'
+import { TANISHTIRUV, komponentIzohi } from '@/arxitektura/izoh.js'
 import MashqTanlash from '@/trenajor/MashqTanlash.vue'
 import { BOSHLANGICH, TAXMIN, qadam, yangiHolat } from '@/arxitektura/model.js'
 import { hikoya } from '@/arxitektura/hikoya.js'
@@ -29,6 +31,21 @@ const ochiq = ref(new Set())
 const finished = computed(() => mashq.value && cur.value >= mashq.value.steps.length)
 const nextMashq = computed(() => { const i = MASHQLAR.findIndex((x) => x.id === mashqId.value); return i >= 0 ? MASHQLAR[i + 1] ?? null : null })
 const bobTitle = computed(() => findPage(mashq.value?.bob)?.title ?? '')
+
+// ── tanishtiruv: birinchi kirishda o'zi ochiladi (mashq havolasi bilan kelinsa — yo'q), keyin — tugma bilan ──
+const TANISH_KEY = 'arxitektura-trenajor:tanishtirildi'
+const tanishtiruv = ref(false)
+const ustida = ref(null)
+const izohMatn = computed(() => komponentIzohi(ustida.value, c.value, m.value))
+function tanishtir() {
+  if (mashqId.value) mashqId.value = ''
+  else boshla()
+  tanishtiruv.value = true
+}
+function tanishtiruvTugadi() {
+  tanishtiruv.value = false
+  try { localStorage.setItem(TANISH_KEY, '1') } catch {}
+}
 
 const DONE_KEY = 'arxitektura-trenajor:bajarilgan'
 const done = ref(new Set())
@@ -105,6 +122,7 @@ watch(mashqId, (id) => {
   boshla()
 })
 boshla()
+try { if (!mashqId.value && !localStorage.getItem(TANISH_KEY)) tanishtiruv.value = true } catch {}
 
 // ── ko'rsatkichlar ────────────────────────────────────────────────────────────────────────────
 const holatRang = (p95, xato) => (xato >= 0.05 || p95 >= 1000 ? 'yomon' : xato >= 0.01 || p95 >= 400 ? 'ortacha' : 'yaxshi')
@@ -125,6 +143,7 @@ const son = (n) => Math.round(n).toLocaleString('uz')
       </div>
       <MashqTanlash v-model="mashqId" class="pick" :mashqlar="MASHQLAR" :erkin="ERKIN" :done="done" />
       <button type="button" class="btn" title="Boshlang‘ich holatga qaytarish" @click="boshla">Qaytadan</button>
+      <button type="button" class="btn" title="Simulyator bilan qadamma-qadam tanishuv" @click="tanishtir">🎓 Tanishtiruv</button>
       <RouterLink to="/arxitektura" class="back">← Qo‘llanmaga qaytish</RouterLink>
     </header>
     <main v-if="m">
@@ -137,12 +156,12 @@ const son = (n) => Math.round(n).toLocaleString('uz')
               <input v-model.number="c.oqim" type="range" min="100" max="20000" step="100" />
             </label>
             <div class="tez">
-              <button type="button" @click="c.oqim = Math.min(20000, c.oqim * 3)">Cho‘qqi vaqti ×3</button>
+              <button type="button" data-t="chooqi" @click="c.oqim = Math.min(20000, c.oqim * 3)">Cho‘qqi vaqti ×3</button>
               <button type="button" @click="c.oqim = Math.max(100, Math.round(c.oqim / 300) * 100)">Tinch vaqt ÷3</button>
             </div>
             <label class="sl"><span>📖 O‘qish ulushi <b>{{ Math.round(c.oqishUlushi * 100) }}%</b></span><input v-model.number="c.oqishUlushi" type="range" min="0.1" max="0.99" step="0.01" /></label>
             <label class="sl"><span>🖼️ Statik fayllar <b>{{ Math.round(c.statikUlushi * 100) }}%</b></span><input v-model.number="c.statikUlushi" type="range" min="0" max="0.8" step="0.05" /></label>
-            <div class="qator"><span>🖥️ Serverlar</span><div class="son"><button type="button" @click="server(-1)">−</button><b>{{ c.serverlar.length }}</b><button type="button" @click="server(1)">+ Server</button></div></div>
+            <div class="qator" data-t="server-qosh"><span>🖥️ Serverlar</span><div class="son"><button type="button" @click="server(-1)">−</button><b>{{ c.serverlar.length }}</b><button type="button" @click="server(1)">+ Server</button></div></div>
             <label class="qator"><span>🔀 Load balancer</span><input v-model="c.lb" type="checkbox" class="sw" /></label>
             <label class="qator"><span>⚡ Kesh</span><input v-model="c.kesh" type="checkbox" class="sw" /></label>
             <label v-if="c.kesh" class="sl ich"><span>keshda topilish <b>{{ Math.round(c.keshHit * 100) }}%</b></span><input v-model.number="c.keshHit" type="range" min="0.5" max="0.95" step="0.05" /></label>
@@ -164,7 +183,7 @@ const son = (n) => Math.round(n).toLocaleString('uz')
         </div>
       </div>
       <div class="orta">
-        <div class="metrik">
+        <div class="metrik" data-t="metrik">
           <div class="karta" :class="holatRang(m.p95, 0)">
             <small>Javob vaqti (p95)</small><b>{{ son(m.p95) }} <i>ms</i></b><small>o‘rtacha {{ son(m.ortacha) }} ms</small>
             <svg viewBox="0 0 200 40" preserveAspectRatio="none"><polyline :points="chiziq('p95', 3000)" /></svg>
@@ -177,13 +196,14 @@ const son = (n) => Math.round(n).toLocaleString('uz')
             <small>Bajarildi</small><b>{{ son(m.bajarildi) }} <i>/s</i></b><small>{{ c.serverlar.filter(Boolean).length + c.replikalar + 1 + (c.kesh ? 1 : 0) }} ta mashina ishlayapti</small>
           </div>
         </div>
-        <div class="panel sx">
+        <div class="panel sx" data-t="sxema">
           <h2>Sxema <span class="muted">— serverni bosing: yiqiladi / tiklanadi · boshqa komponentni bosing: tanlanadi</span></h2>
-          <Sxema :m="m" :c="c" :tanlangan="tanlangan" @server="yiqit" @tanla="(id) => (tanlangan = id)" />
+          <p class="bu-nima" :class="{ bosh: !izohMatn }">{{ izohMatn ?? 'Qutiga sichqonchani olib boring — u nima ekani va hozir qanchalik bandligi shu yerda yoziladi.' }}</p>
+          <Sxema :m="m" :c="c" :tanlangan="tanlangan" @server="yiqit" @tanla="(id) => (tanlangan = id)" @ustida="(id) => (ustida = id)" />
         </div>
       </div>
       <div class="ung">
-        <div class="panel">
+        <div class="panel" data-t="hikoya">
           <h2>Nima bo‘ldi?</h2>
           <ol :key="takror" class="hikoya">
             <li v-for="(q, i) in qadamlar" :key="i" :class="{ yashil: q.yashil, ogoh: q.ogoh }" :style="{ animationDelay: `${i * 0.3}s` }">
@@ -228,6 +248,7 @@ const son = (n) => Math.round(n).toLocaleString('uz')
         </div>
       </div>
     </main>
+    <Tanishtiruv v-if="tanishtiruv && m" :qadamlar="TANISHTIRUV" :holat="{ c, m }" @yop="tanishtiruvTugadi" />
   </div>
 </template>
 
@@ -246,7 +267,10 @@ main { flex: 1; min-height: 0; display: grid; grid-template-columns: minmax(260p
 .orta { grid-template-rows: auto 1fr; }
 .ung { grid-template-rows: 1.15fr 1fr; }
 .panel { display: flex; flex-direction: column; min-height: 0; overflow: hidden; border: 1px solid var(--border); border-radius: var(--radius); background: var(--bg-elevated); box-shadow: var(--shadow-sm); }
-.panel > :not(h2) { flex: 1; min-height: 0; }
+.panel > :not(h2):not(.bu-nima) { flex: 1; min-height: 0; }
+/* qat'iy balandlik: matn o'zgarsa ham sxema surilmasin (aks holda sichqoncha qutidan «chiqib» qoladi) */
+.bu-nima { height: 58px; margin: 0; padding: 8px 14px; overflow-y: auto; border-bottom: 1px solid var(--border); background: var(--bg-sunken); color: var(--text); font-size: 13px; line-height: 1.5; box-sizing: border-box; }
+.bu-nima.bosh { color: var(--text-subtle); }
 h2 { margin: 0; padding: 8px 14px; border-bottom: 1px solid var(--border); color: var(--text-subtle); font: 700 11px var(--font-sans); letter-spacing: .08em; text-transform: uppercase; }
 .ichi { overflow: auto; padding: 10px 14px; }
 .sl { display: grid; gap: 4px; margin-bottom: 10px; font-size: 13px; }
