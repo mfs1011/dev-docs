@@ -1,5 +1,5 @@
 <script setup>
-import { computed, nextTick, onBeforeUnmount, ref, shallowRef, watch } from 'vue'
+import { computed, createApp, nextTick, onBeforeUnmount, ref, shallowRef, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import ListenPlayer from '@/components/ListenPlayer.vue'
 import PageToc from '@/components/PageToc.vue'
@@ -160,6 +160,32 @@ function enhanceTerminalBlocks(container) {
     run.title = buyruqlar.length > 1 ? `${buyruqlar.length} ta buyruqni terminalda bajarish` : 'Terminalda bajarish'
     run.addEventListener('click', () => terminalniOch(buyruqlar))
     block.querySelector('.code-copy')?.before(run)
+  }
+}
+
+/**
+ * Bobdagi animatsiyalar: markdown'da `<div data-animatsiya="nom"></div>` — shu joyga Vue komponenti o'rnatiladi.
+ * Komponentlar faqat kerak bo'lganda yuklanadi; sahifa almashganda o'chiriladi.
+ */
+const ANIMATSIYALAR = {
+  inode: () => import('@/animatsiya/InodeAnim.vue'),
+  ruxsat: () => import('@/animatsiya/RuxsatAnim.vue'),
+}
+let animatsiyaIlovalari = []
+
+function animatsiyalarniTozala() {
+  animatsiyaIlovalari.forEach((app) => app.unmount())
+  animatsiyaIlovalari = []
+}
+
+function enhanceAnimations(container) {
+  for (const el of container.querySelectorAll('[data-animatsiya]')) {
+    ANIMATSIYALAR[el.dataset.animatsiya]?.().then(({ default: komponent }) => {
+      if (!el.isConnected) return
+      const app = createApp(komponent)
+      app.mount(el)
+      animatsiyaIlovalari.push(app)
+    })
   }
 }
 
@@ -424,6 +450,7 @@ function afterScrollSettles(callback) {
 }
 
 async function load() {
+  animatsiyalarniTozala()
   stopTracking()
   layoutObserver?.disconnect()
   error.value = ''
@@ -471,6 +498,7 @@ async function load() {
   enhanceCodeBlocks(container)
   if (TERMINAL_KITOBLARI.includes(current.book)) enhanceTerminalBlocks(container)
   enhanceVideos(container)
+  enhanceAnimations(container)
 
   setupMarkers(container, current)
 
@@ -508,6 +536,7 @@ async function isReachable() {
 watch(() => route.path, load, { immediate: true })
 
 onBeforeUnmount(() => {
+  animatsiyalarniTozala()
   stopTracking()
   layoutObserver?.disconnect()
   clearTimeout(flashTimer)

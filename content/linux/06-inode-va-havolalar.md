@@ -21,16 +21,8 @@ Debian Reference'ga ko'ra tizimdagi har bir fayl, papka, nomli pipe va qurilmani
 
 Inode'da faylning **nomi yo'q**. Nom papkada turadi: papka — bu "nom → inode raqami" juftliklari ro'yxati.
 
-```text
- papka /tmp/havola              inode 11                      ma'lumot bloklari
-┌──────────────┬──────┐        ┌───────────────────────┐      ┌──────────────┐
-│ foo          │  11 ─┼───────►│ turi: oddiy fayl      │─────►│ "Asl matn\n" │
-│ bar          │  11 ─┼───────►│ ruxsat: rw-r--r--     │      └──────────────┘
-│ baz          │  12  │        │ egasi: root           │
-└──────────────┴──────┘        │ havolalar soni: 2     │
-                               │ hajmi: 9 bayt, vaqtlar│
-                               └───────────────────────┘
-```
+<div data-animatsiya="inode"></div>
+
 
 GNU Coreutils qo'llanmasi buni qisqa aytadi: inode faylning barcha ma'lumotini saqlaydi, shuning uchun "inode — bu faylning o'zi" desa ham xato bo'lmaydi.
 

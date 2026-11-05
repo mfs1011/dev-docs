@@ -115,11 +115,7 @@ Misollar: `chmod u+x skript.sh`, `chmod go-w fayl`, `chmod o= maxfiy` (boshqalar
 
 Har bir huquqning qiymati bor: `r=4`, `w=2`, `x=1`. Ular har toifa uchun qo'shiladi:
 
-```text
-   rw-   r--   ---
-   4+2   4     0
-    6     4     0    →  chmod 640
-```
+<div data-animatsiya="ruxsat"></div>
 
 | Son | Huquq | Odatiy ishlatilishi |
 | --- | --- | --- |

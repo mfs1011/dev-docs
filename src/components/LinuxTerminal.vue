@@ -238,7 +238,8 @@ onBeforeUnmount(() => {
                 <button v-if="!sahifada" type="button" title="Yashirish (tizim ishlab turadi)" aria-label="Yashirish" @click="yop">—</button>
             </span>
         </header>
-        <div v-if="terminal.faol" class="lt-body">
+        <!-- g'ildirak terminalni suradi (xterm o'zi), sahifaga o'tib ketmasin — chegaraga yetganda ham -->
+        <div v-if="terminal.faol" class="lt-body" @wheel.prevent>
             <Terminal ref="term" @send="send" @prompt="onPrompt" @holat="onHolat" />
             <div v-if="!tayyor" class="lt-boot">
                 <div class="lt-spin" />
@@ -318,7 +319,7 @@ onBeforeUnmount(() => {
 }
 .lt-actions button:hover,
 .lt-actions a:hover { color: #fff; background: rgba(255, 255, 255, .08); }
-.lt-body { position: relative; flex: 1; min-height: 0; display: flex; }
+.lt-body { position: relative; flex: 1; min-height: 0; display: flex; overscroll-behavior: contain; }
 .lt-body > :first-child { flex: 1; min-width: 0; }
 .lt-boot {
     position: absolute;
