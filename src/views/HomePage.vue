@@ -164,7 +164,7 @@ onBeforeUnmount(() => clearTimeout(typeTimer))
                             <BookMark :book="book.id" :size="34" />
                         </span>
 
-                        <span v-if="book.version" class="book-card-version">{{ book.version }}</span>
+                        <span v-if="book.badge || book.version" class="book-card-version">{{ book.badge ?? book.version }}</span>
                         <span v-else-if="isDraft(book)" class="book-card-version is-soon">tayyorlanmoqda</span>
                     </span>
 

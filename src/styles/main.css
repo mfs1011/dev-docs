@@ -108,6 +108,8 @@ html {
 
 body {
     margin: 0;
+    /* Linux kitobidagi pastki terminal paneli ochiq bo'lsa, sahifa oxiri uning ostida qolmasin */
+    padding-bottom: var(--linux-terminal-h, 0px);
     background: var(--bg);
     color: var(--text);
     font-family: var(--font-sans);
@@ -1189,6 +1191,24 @@ a.home-account:hover { border-color: var(--border-strong); text-decoration: none
     cursor: pointer;
 }
 .code-copy:hover { background: rgba(255, 255, 255, .08); color: #fff; }
+
+/* Linux kitobi: kod blokidagi buyruqlarni pastki terminalda bajarish */
+.code-run {
+    margin-left: auto;
+    margin-right: 6px;
+    padding: 3px 10px;
+    border: 1px solid rgba(126, 231, 135, .35);
+    border-radius: 5px;
+    background: rgba(126, 231, 135, .08);
+    color: #7ee787;
+    font: inherit;
+    font-size: 11.5px;
+    cursor: pointer;
+}
+.code-run:hover { background: rgba(126, 231, 135, .18); color: #a6f0ad; }
+/* qaysi tizimda olingan: Debian (logo qizili #D70A53) va Ubuntu (brend to'q sarig'i #E95420) — to'q fonda ochroq */
+.code-lang.env-debian { color: #ff5c8f; }
+.code-lang.env-ubuntu { color: #f2783f; }
 
 .code-block pre {
     margin: 0;

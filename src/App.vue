@@ -1,5 +1,5 @@
 <script setup>
-import { computed, onMounted, onUnmounted, ref, watch } from 'vue'
+import { computed, defineAsyncComponent, onMounted, onUnmounted, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import AccountButton from '@/components/AccountButton.vue'
 import AppSidebar from '@/components/AppSidebar.vue'
@@ -7,7 +7,11 @@ import BookMark from '@/components/BookMark.vue'
 import SearchDialog from '@/components/SearchDialog.vue'
 import ThemeToggle from '@/components/ThemeToggle.vue'
 import UpdatePrompt from '@/components/UpdatePrompt.vue'
+import { terminal, TERMINAL_KITOBLARI } from '@/trenajor/linuxTerminal'
 import { applyBookFavicon, applyBookTheme, bookIdFromRoute, docsUpdatedAt, findBook, formatDate } from '@/docs'
+
+// v86 va xterm og'ir — faqat Linux kitobi ochilganda yuklanadi
+const LinuxTerminal = defineAsyncComponent(() => import('@/components/LinuxTerminal.vue'))
 
 const route = useRoute()
 const sidebarOpen = ref(false)
@@ -15,6 +19,7 @@ const searchOpen = ref(false)
 
 const activeBookId = computed(() => bookIdFromRoute(route.path))
 const activeBook = computed(() => findBook(activeBookId.value))
+const terminalKitobida = computed(() => TERMINAL_KITOBLARI.includes(activeBookId.value))
 const updatedLabel = computed(() => formatDate(activeBook.value?.updatedAt ?? docsUpdatedAt))
 
 watch(
@@ -65,11 +70,11 @@ onUnmounted(() => window.removeEventListener('keydown', onKeydown))
                     </RouterLink>
 
                     <span
-                        v-if="activeBook?.version"
+                        v-if="activeBook?.badge || activeBook?.version"
                         class="version-badge"
-                        :title="`${activeBook.versionLabel} ${activeBook.version} bo'yicha yozilgan`"
+                        :title="`${activeBook.badge ?? `${activeBook.versionLabel} ${activeBook.version}`} bo'yicha yozilgan`"
                     >
-                        v{{ activeBook.version }}
+                        {{ activeBook.badge ?? `v${activeBook.version}` }}
                     </span>
                 </div>
 
@@ -99,6 +104,9 @@ onUnmounted(() => window.removeEventListener('keydown', onKeydown))
         </div>
 
         <RouterView v-else :key="route.path" />
+
+        <!-- Linux kitobidagi terminal: boblar orasida o'tganda ham VM saqlanadi -->
+        <LinuxTerminal v-if="terminalKitobida || terminal.faol" :korinadi="terminalKitobida && route.name !== 'linux-trenajor'" />
 
         <SearchDialog :open="searchOpen" :book-id="activeBookId" @close="searchOpen = false" />
         <UpdatePrompt />

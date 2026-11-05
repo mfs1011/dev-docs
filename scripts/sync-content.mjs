@@ -285,6 +285,8 @@ async function collectBook(book, staging) {
     tools: book.tools ?? [],
     versionLabel: book.versionLabel ?? book.title,
     version: await readVersion(book, sourceDir),
+    // bir nechta tizimda sinaladigan kitob: `v<versiya>` o'rniga shu matn (masalan, Linux: Debian va Ubuntu)
+    badge: book.badge ?? null,
     chapterCount: pages.filter((page) => page.chapter !== null && !page.path.includes('/')).length,
     pageCount: pages.length,
     updatedAt,
