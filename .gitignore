@@ -52,3 +52,7 @@ video/*/*/*.jpg
 trenajor/build/
 trenajor/test/shots/
 komponent-trenajor/test/shots/
+
+# Linux trenajori: yig'ilgan tizim (katta, qayta yasaladi)
+linux-trenajor/build/
+public/linux-trenajor
