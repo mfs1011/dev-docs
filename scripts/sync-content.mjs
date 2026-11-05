@@ -3,7 +3,7 @@ import { existsSync } from 'node:fs'
 import { execFileSync } from 'node:child_process'
 import { dirname, join, relative, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
-import { books, contentRoot } from '../docs.config.mjs'
+import { books, contentRoot, yonalishlar } from '../docs.config.mjs'
 import { segmentsHash, segmentsToText, toSegments } from './segments.mjs'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
@@ -211,6 +211,23 @@ function buildSections(book, pages) {
  * macOS'da rm va rename orasida papkani boshqa protsess (Spotlight, muharrir, watcher)
  * qayta yaratib qo'yishi mumkin — u holda rename ENOTEMPTY beradi. Shuning uchun qayta urinamiz.
  */
+/**
+ * Yo'nalishlar (docs.config.mjs): har kitob aynan bitta yo'nalishda bo'lishi kerak — aks holda bosh sahifada
+ * ko'rinmay qoladi yoki ikki marta chiqadi. Kontenti topilmagan kitob (DOCS_SOURCE boshqa bo'lsa) qadamdan tushadi.
+ */
+function tekshirYonalishlar(collected) {
+  const bor = new Set(collected.map((book) => book.id))
+  const ishlatilgan = yonalishlar.flatMap((y) => y.qadamlar.filter((q) => q.kitob).map((q) => q.kitob))
+  const xatolar = [
+    ...books.map((b) => b.id).filter((id) => !ishlatilgan.includes(id)).map((id) => `"${id}" hech bir yo'nalishda yo'q`),
+    ...ishlatilgan.filter((id, i) => ishlatilgan.indexOf(id) !== i).map((id) => `"${id}" ikki yo'nalishda`),
+    ...ishlatilgan.filter((id) => !books.some((b) => b.id === id)).map((id) => `"${id}" — bunday kitob yo'q`),
+  ]
+  if (xatolar.length) throw new Error(`Yo'nalishlar (docs.config.mjs): ${xatolar.join('; ')}`)
+
+  return yonalishlar.map((y) => ({ ...y, qadamlar: y.qadamlar.filter((q) => !q.kitob || bor.has(q.kitob)) }))
+}
+
 async function swapIntoPlace(staging, target, attempts = 5) {
   for (let attempt = 1; attempt <= attempts; attempt += 1) {
     try {
@@ -285,6 +302,8 @@ async function collectBook(book, staging) {
     tools: book.tools ?? [],
     versionLabel: book.versionLabel ?? book.title,
     version: await readVersion(book, sourceDir),
+    // bir nechta tizimda sinaladigan kitob: `v<versiya>` o'rniga shu matn (masalan, Linux: Debian va Ubuntu)
+    badge: book.badge ?? null,
     chapterCount: pages.filter((page) => page.chapter !== null && !page.path.includes('/')).length,
     pageCount: pages.length,
     updatedAt,
@@ -391,6 +410,7 @@ async function main() {
     generatedAt: new Date().toISOString(),
     updatedAt: collected.map((book) => book.updatedAt).filter(Boolean).sort().at(-1) ?? null,
     books: collected,
+    yonalishlar: tekshirYonalishlar(collected),
   }
 
   // Qidiruv indeksi alohida fayl: asosiy bundle'ga kirmaydi, qidiruv birinchi ochilganda yuklanadi

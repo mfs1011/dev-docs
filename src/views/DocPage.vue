@@ -7,6 +7,7 @@ import { renderMarkdown, sectionKindFor } from '@/markdown'
 import { enhanceVideos } from '@/video-player'
 import { findBook, findPage, formatDate, loadSource, neighbours, resolveDocLink } from '@/docs'
 import { clearMark, excerptOf, isRead, markFor, setMark, setRead } from '@/progress'
+import { buyruqlarniOl, terminalniOch, TERMINAL_KITOBLARI } from '@/trenajor/linuxTerminal'
 
 const route = useRoute()
 const router = useRouter()
@@ -135,6 +136,30 @@ function enhanceLinks(container, currentPage) {
       event.preventDefault()
       router.push(resolved)
     })
+  }
+}
+
+/**
+ * Linux kitobi: `$ buyruq` qatorlari bor kod blokiga "▶ Trenajorda" tugmasi — buyruqlar pastki terminalda
+ * birma-bir bajariladi. VPS'da olingan chiqishlar (```text vps) faqat belgilanadi: ular trenajorda boshqacha chiqadi.
+ */
+function enhanceTerminalBlocks(container) {
+  for (const block of container.querySelectorAll('.code-block')) {
+    const label = block.querySelector('.code-lang')
+    if (block.dataset.env === 'vps') {
+      if (label) { label.textContent = 'VPS · Ubuntu 26.04'; label.classList.add('env-ubuntu') }
+      continue
+    }
+    const buyruqlar = buyruqlarniOl(block.querySelector('code')?.textContent ?? '')
+    if (!buyruqlar.length) continue
+    if (label) { label.textContent = 'Trenajor · Debian 12'; label.classList.add('env-debian') }
+    const run = document.createElement('button')
+    run.type = 'button'
+    run.className = 'code-run'
+    run.textContent = '▶ Trenajorda'
+    run.title = buyruqlar.length > 1 ? `${buyruqlar.length} ta buyruqni terminalda bajarish` : 'Terminalda bajarish'
+    run.addEventListener('click', () => terminalniOch(buyruqlar))
+    block.querySelector('.code-copy')?.before(run)
   }
 }
 
@@ -417,7 +442,7 @@ async function load() {
   page.value = current
   const book = findBook(current.book)
   bookTitle.value = book?.title ?? ''
-  bookVersion.value = book?.version ?? ''
+  bookVersion.value = book?.badge ?? book?.version ?? ''
   document.title = `${current.title} — ${book?.title ?? ''} qo'llanma`
 
   try {
@@ -444,6 +469,7 @@ async function load() {
   enhanceNavLines(container)
   enhanceLinks(container, current)
   enhanceCodeBlocks(container)
+  if (TERMINAL_KITOBLARI.includes(current.book)) enhanceTerminalBlocks(container)
   enhanceVideos(container)
 
   setupMarkers(container, current)

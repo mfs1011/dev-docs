@@ -1,0 +1,23 @@
+[1;32mLinux trenajori[0m · Debian 12 + systemd
+[2m──────────────────────────────────────[0m
+Brauzeringiz ichida haqiqiy Debian
+ishlayapti. Bemalol sinab ko'ring: bu
+yerdagi hech narsa kompyuteringizga
+yoki serverga ta'sir qilmaydi.
+
+[1;33mIshlaydi[0m
+  fayllar, ruxsatlar, foydalanuvchilar,
+  jarayonlar, systemd, journalctl, cron,
+  bash skriptlar, nano, vim, man
+
+[1;33mCheklangan[0m
+  [1minternet yo'q[0m: apt install, curl,
+    ssh ishlamaydi (boblarda VPS'dan
+    olingan chiqishlar bor)
+  [1msaqlanmaydi[0m: sahifa yangilansa yoki
+    «Qayta boshlash» bosilsa, hammasi
+    boshidan boshlanadi
+  [1m256 MB xotira[0m, 32-bitli protsessor
+  [1msiz root'siz[0m (#): serverda bu xavfli
+
+[2mBu matn /etc/motd faylida turibdi[0m

@@ -292,6 +292,37 @@ export const books = [
     folders: [],
   },
   {
+    id: 'linux',
+    title: 'Linux',
+    subtitle: 'dasturchi uchun server asoslari',
+    dir: 'linux',
+    logo: 'linux',
+    // Debian logosi rangi (debian.org) #D70A53; qorong'i fonda — ochroq variant
+    accent: '#d70a53',
+    accentDark: '#ff5c8f',
+    versionLabel: 'Ubuntu',
+    versionRow: /^\|\s*Ubuntu\s*\|\s*([^|(]+)/m,
+    // boblar ikki muhitda sinaladi: trenajor (Debian 12) va VPS (Ubuntu 26.04)
+    badge: 'Debian 12 · Ubuntu 26.04',
+    // tezkor terminal — boblardagi pastki panel (">_ Terminal" tugmasi); bu yerda — alohida trenajor sahifasi
+    tools: [{ label: 'Linux trenajori', route: '/linux/trenajor', note: 'Brauzerda Debian 12 + systemd' }],
+    groups: [
+      { title: 'I — Kirish', from: 1, to: 3 },
+      { title: 'II — Fayl tizimi', from: 4, to: 10 },
+      { title: 'III — Qobiq', from: 11, to: 16 },
+      { title: 'IV — Matn va loglar', from: 17, to: 21 },
+      { title: 'V — Foydalanuvchilar', from: 22, to: 23 },
+      { title: 'VI — Paketlar', from: 24, to: 27 },
+      { title: 'VII — Jarayonlar', from: 28, to: 32 },
+      { title: 'VIII — systemd', from: 33, to: 39 },
+      { title: 'IX — Tarmoq', from: 40, to: 44 },
+      { title: 'X — SSH', from: 45, to: 47 },
+      { title: 'XI — Bash skriptlar', from: 48, to: 51 },
+      { title: 'XII — Muammoni topish', from: 52, to: 54 },
+    ],
+    folders: [],
+  },
+  {
     id: 'docker',
     title: 'Docker',
     subtitle: 'konteynerlar, Compose va deploy',
@@ -340,5 +371,76 @@ export const books = [
       { title: 'XV — Parallellik', from: 101, to: 102 },
     ],
     folders: [],
+  },
+]
+
+/**
+ * Yo'nalishlar — bir-biriga bog'liq kitoblar guruhi. Har yo'nalishda qadamlar o'qish tartibida:
+ * `{ kitob: 'id', nega }` — mavjud kitob, `{ rejada: 'Nomi', nega }` — hali yozilmagan (bosh sahifa va
+ * yo'l xaritasida «rejada» deb ko'rinadi). Har kitob aynan bitta yo'nalishda bo'lishi kerak — sync tekshiradi.
+ */
+export const yonalishlar = [
+  {
+    id: 'poydevor',
+    title: 'Poydevor',
+    izoh: 'Har qanday dasturchi uchun: kod tarixini boshqarish va til asoslari',
+    qadamlar: [
+      { kitob: 'git', nega: 'Har loyiha Git’da saqlanadi: commit, branch, jamoa bilan ishlash' },
+      { kitob: 'javascript', nega: 'Brauzer va Node tili — barcha frontend kitoblar shunga tayanadi' },
+      { rejada: 'Web asoslari', nega: 'HTTP, DNS, cookie, CORS, HTTPS — sayt qanday ishlashi' },
+    ],
+  },
+  {
+    id: 'frontend',
+    title: 'Frontend',
+    izoh: 'Brauzerdagi ilova: komponentlar, holat, marshrutlash va ularni tartibli tuzish',
+    qadamlar: [
+      { kitob: 'vue', nega: 'Reaktivlik va komponentlar — eng yumshoq kirish' },
+      { kitob: 'react', nega: 'Eng keng tarqalgan kutubxona: render modeli, hook’lar' },
+      { kitob: 'nextjs', nega: 'React ustida to‘liq framework: server komponentlari, SSR' },
+      { kitob: 'angular', nega: 'Katta korporativ ilovalar: DI, signal’lar, RxJS' },
+      { kitob: 'fsd', nega: 'Qaysi framework bo‘lmasin — loyihani qatlamlarga bo‘lish' },
+    ],
+  },
+  {
+    id: 'backend',
+    title: 'Backend',
+    izoh: 'Serverdagi ilova: HTTP, ma’lumotlar bazasi, API, fon ishlari',
+    qadamlar: [
+      { kitob: 'symfony', nega: 'PHP’ning tizimli framework’i: HTTP qatlami, Doctrine, API' },
+      { kitob: 'laravel', nega: 'Tez ishlab chiqish: Eloquent, navbatlar, ekotizim' },
+    ],
+  },
+  {
+    id: 'malumot',
+    title: 'Ma’lumot va xabarlar',
+    izoh: 'Ma’lumotni saqlash, keshlash va servislar o‘rtasida xabar almashish',
+    qadamlar: [
+      { kitob: 'sql', nega: 'Hamma narsa bazadan boshlanadi: so‘rovlar, indekslar, tranzaksiyalar' },
+      { rejada: 'Redis', nega: 'Kesh, sessiya, rate limit, navbat — xotiradagi tezkor ombor' },
+      { rejada: 'Xabar tizimlari', nega: 'Navbat nima uchun kerak, yetkazish kafolatlari, qaysi asbobni tanlash' },
+      { rejada: 'RabbitMQ', nega: 'Klassik xabar brokeri: exchange, navbat, tasdiqlash' },
+      { rejada: 'Kafka', nega: 'Hodisalar oqimi: partition, consumer group, saqlash muddati' },
+    ],
+  },
+  {
+    id: 'server',
+    title: 'Server va deploy',
+    izoh: 'Loyihani serverga chiqarish: Linux, veb-server, xavfsizlik, konteynerlar',
+    qadamlar: [
+      { kitob: 'linux', nega: 'Serverlarning deyarli hammasi Linux: fayllar, huquqlar, servislar, SSH' },
+      { rejada: 'Nginx va HTTPS', nega: 'Reverse proxy, statik fayllar, SSL sertifikati' },
+      { rejada: 'Server xavfsizligi', nega: 'Firewall, SSH’ni mustahkamlash, yangilanishlar, zaxira nusxa' },
+      { kitob: 'docker', nega: 'Ilovani muhiti bilan birga konteynerga joylash' },
+      { rejada: 'Deploy amaliyoti', nega: 'Hammasini bog‘lash: domen → server → CI/CD → nol to‘xtovli deploy' },
+    ],
+  },
+  {
+    id: 'arxitektura',
+    title: 'Arxitektura',
+    izoh: 'Katta rasm: chegaralar, kelishuvlar, masshtab va tizim dizayni',
+    qadamlar: [
+      { kitob: 'arxitektura', nega: 'Qarorlar nega shunday qabul qilinadi — frontend’dan tizim dizaynigacha' },
+    ],
   },
 ]

@@ -3,6 +3,10 @@ import manifest from './manifest.json'
 const sources = import.meta.glob('./content/**/*.md', { query: '?raw', import: 'default' })
 
 export const books = manifest.books
+// Yo'nalishlar (docs.config.mjs): qadamlar o'qish tartibida; `kitob` — mavjud kitob id'si, `rejada` — hali yozilmagan
+export const yonalishlar = manifest.yonalishlar ?? []
+export const findYonalish = (id) => yonalishlar.find((y) => y.id === id) ?? null
+export const yonalishOf = (bookId) => yonalishlar.find((y) => y.qadamlar.some((q) => q.kitob === bookId)) ?? null
 export const docsUpdatedAt = manifest.updatedAt
 
 export const pages = books.flatMap((book) =>

@@ -11,6 +11,7 @@ const router = createRouter({
     { path: '/kirish', name: 'login', component: LoginPage },
     { path: '/profil', name: 'profile', component: ProfilePage },
     // Brauzerdagi Linux + git: og'ir (v86, xterm) — faqat shu sahifa ochilganda yuklanadi
+    { path: '/linux/trenajor', name: 'linux-trenajor', component: () => import('./views/LinuxTrenajorPage.vue'), meta: { full: true } },
     { path: '/git/trenajor', name: 'git-trenajor', component: () => import('./views/TrenajorPage.vue'), meta: { full: true } },
     // Brauzerdagi PostgreSQL (PGlite) va SQLite (WASM) — faqat shu sahifada yuklanadi
     { path: '/sql/trenajor', name: 'sql-trenajor', component: () => import('./views/SqlTrenajorPage.vue'), meta: { full: true } },
@@ -21,6 +22,8 @@ const router = createRouter({
     { path: '/fsd/trenajor', name: 'fsd-trenajor', component: () => import('./views/FsdTrenajorPage.vue'), meta: { full: true } },
     // Tizim dizayni simulyatori: taxminiy model, komponentlar va yuklama (src/arxitektura)
     { path: '/arxitektura/trenajor', name: 'arxitektura-trenajor', component: () => import('./views/ArxitekturaTrenajorPage.vue'), meta: { full: true } },
+    // Yo'nalish — bog'liq kitoblar guruhi va o'qish tartibi (docs.config.mjs → yonalishlar)
+    { path: '/yonalish/:id', name: 'yonalish', component: () => import('./views/YonalishPage.vue') },
     { path: '/:pathMatch(.*)*', name: 'doc', component: DocPage },
   ],
   scrollBehavior(to, from, savedPosition) {

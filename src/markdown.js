@@ -83,7 +83,9 @@ const md = new MarkdownIt({
   html: true,
   linkify: true,
   typographer: false,
-  highlight(code, language) {
+  highlight(code, language, attrs) {
+    // ```text vps — VPS'da olingan chiqish (Linux kitobi): trenajorda ishga tushirish tugmasi qo'yilmaydi
+    const env = /(^|\s)vps(\s|$)/.test(attrs ?? '') ? ' data-env="vps"' : ''
     const lang = language && hljs.getLanguage(language) ? language : 'plaintext'
     const label = LANGUAGE_LABELS[language] ?? (language ? language.toUpperCase() : 'KOD')
 
@@ -95,7 +97,7 @@ const md = new MarkdownIt({
     }
 
     return (
-      `<figure class="code-block" data-language="${md.utils.escapeHtml(label)}">` +
+      `<figure class="code-block" data-language="${md.utils.escapeHtml(label)}"${env}>` +
       `<figcaption><span class="code-lang">${md.utils.escapeHtml(label)}</span>` +
       `<button type="button" class="code-copy" aria-label="Nusxa olish">Nusxa olish</button></figcaption>` +
       `<pre class="hljs"><code>${highlighted}</code></pre>` +
@@ -212,8 +214,8 @@ md.use(anchor, {
 // `highlight` tayyor `<figure>` qaytaradi — markdown-it uni yana <pre><code> ichiga o'ramasin.
 md.renderer.rules.fence = (tokens, idx, options) => {
   const token = tokens[idx]
-  const language = token.info.trim().split(/\s+/)[0]
-  const html = options.highlight(token.content, language)
+  const [language, ...attrs] = token.info.trim().split(/\s+/)
+  const html = options.highlight(token.content, language, attrs.join(' '))
 
   if (!token.map) return html
 

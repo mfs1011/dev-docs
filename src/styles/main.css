@@ -108,6 +108,8 @@ html {
 
 body {
     margin: 0;
+    /* Linux kitobidagi pastki terminal paneli ochiq bo'lsa, sahifa oxiri uning ostida qolmasin */
+    padding-bottom: var(--linux-terminal-h, 0px);
     background: var(--bg);
     color: var(--text);
     font-family: var(--font-sans);
@@ -632,6 +634,13 @@ a.home-account:hover { border-color: var(--border-strong); text-decoration: none
 .sidebar-variants .api-switch-item { flex: 1; text-align: center; padding: 5px 8px; }
 
 /* Kitob yonidagi interaktiv sahifalar (masalan, Git trenajori) */
+.sidebar-yonalish { display: grid; gap: 6px; padding: 0 6px 14px; }
+.sidebar-yonalish-title { color: var(--text-subtle); font-family: var(--font-mono); font-size: 11.5px; font-weight: 600; letter-spacing: .04em; text-decoration: none; text-transform: uppercase; }
+.sidebar-yonalish-title:hover { color: var(--accent-text); }
+.sidebar-yonalish-kitoblar { display: flex; flex-wrap: wrap; gap: 4px; }
+.sidebar-yonalish-kitoblar a { padding: 2px 9px; border: 1px solid var(--border); border-radius: 999px; color: var(--text-muted); font-size: 12.5px; text-decoration: none; }
+.sidebar-yonalish-kitoblar a:hover { border-color: var(--accent); color: var(--text); }
+.sidebar-yonalish-kitoblar a.is-active { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 10%, transparent); color: var(--accent-text); font-weight: 600; }
 .sidebar-tools { display: grid; gap: 6px; padding: 0 6px 14px; }
 .sidebar-tool {
     display: flex;
@@ -1189,6 +1198,24 @@ a.home-account:hover { border-color: var(--border-strong); text-decoration: none
     cursor: pointer;
 }
 .code-copy:hover { background: rgba(255, 255, 255, .08); color: #fff; }
+
+/* Linux kitobi: kod blokidagi buyruqlarni pastki terminalda bajarish */
+.code-run {
+    margin-left: auto;
+    margin-right: 6px;
+    padding: 3px 10px;
+    border: 1px solid rgba(126, 231, 135, .35);
+    border-radius: 5px;
+    background: rgba(126, 231, 135, .08);
+    color: #7ee787;
+    font: inherit;
+    font-size: 11.5px;
+    cursor: pointer;
+}
+.code-run:hover { background: rgba(126, 231, 135, .18); color: #a6f0ad; }
+/* qaysi tizimda olingan: Debian (logo qizili #D70A53) va Ubuntu (brend to'q sarig'i #E95420) — to'q fonda ochroq */
+.code-lang.env-debian { color: #ff5c8f; }
+.code-lang.env-ubuntu { color: #f2783f; }
 
 .code-block pre {
     margin: 0;
@@ -1814,6 +1841,30 @@ a.home-account:hover { border-color: var(--border-strong); text-decoration: none
 }
 
 .home-section-title::before { content: '// '; opacity: .6; }
+
+/* ---- yo'nalishlar ---- */
+
+.home-yonalish { margin-bottom: 40px; }
+.home-yonalish-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 4px 14px;
+    margin-bottom: 16px;
+}
+.home-yonalish-head .home-section-title { margin: 0; color: var(--text); font-size: 13px; }
+.home-yonalish-izoh { flex: 1 1 260px; margin: 0; color: var(--text-subtle); font-size: 13px; }
+.home-yonalish-link { color: var(--accent-text); font-family: var(--font-mono); font-size: 12px; text-decoration: none; white-space: nowrap; }
+.home-yonalish-link:hover { text-decoration: underline; }
+
+/* hali yozilmagan kitob: havolasiz, chiziqli ramka */
+.book-card-reja {
+    border-style: dashed;
+    background: transparent;
+    box-shadow: none;
+    cursor: default;
+}
+.book-card-reja .book-card-title { color: var(--text-muted); }
 
 /* ---- kartalar ---- */
 
