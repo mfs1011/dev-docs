@@ -31,6 +31,22 @@ jobs:
 
       - run: npm ci
 
+      # Linux trenajori (~95 MB) git'da saqlanmaydi: Debian paketlaridan shu yerda yig'iladi (~6 daqiqa).
+      # Yig'ish skriptlari o'zgarmasa — keshdan olinadi.
+      - name: Linux trenajori keshi
+        id: linux-trenajor
+        uses: actions/cache@v4
+        with:
+          path: linux-trenajor/build/web
+          key: linux-trenajor-${{ hashFiles('linux-trenajor/scripts/**', 'public/trenajor/v86.wasm', 'package-lock.json') }}
+
+      - name: Linux trenajorini yig'ish
+        if: steps.linux-trenajor.outputs.cache-hit != 'true'
+        run: sh linux-trenajor/scripts/yigish.sh
+
+      - name: Linux trenajorini saytga qo'shish
+        run: rm -rf public/linux-trenajor && cp -r linux-trenajor/build/web public/linux-trenajor
+
       - name: Build
         env:
           BASE_PATH: /${{ github.event.repository.name }}/
