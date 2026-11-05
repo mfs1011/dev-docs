@@ -2,7 +2,7 @@
 import { computed, nextTick, onMounted, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import VariantToggle from '@/components/VariantToggle.vue'
-import { findBook } from '@/docs'
+import { findBook, yonalishOf } from '@/docs'
 import { bookProgress, isRead, markFor } from '@/progress'
 import { account, syncEnabled } from '@/sync'
 
@@ -18,6 +18,9 @@ const filter = ref('')
 
 const book = computed(() => findBook(props.bookId))
 const sections = computed(() => book.value?.sections ?? [])
+// shu kitobning yo'nalishi va undagi boshqa kitoblar (o'qish tartibida)
+const yonalish = computed(() => yonalishOf(props.bookId))
+const qoshnilar = computed(() => (yonalish.value?.qadamlar ?? []).filter((q) => q.kitob).map((q) => findBook(q.kitob)).filter(Boolean))
 
 const visibleSections = computed(() => {
   const term = filter.value.trim().toLowerCase()
@@ -89,6 +92,22 @@ watch(() => route.path, () => revealActive())
                     :label="book.variants.label"
                 />
             </div>
+
+            <nav v-if="yonalish && qoshnilar.length > 1" class="sidebar-yonalish" aria-label="Yo'nalish">
+                <RouterLink :to="`/yonalish/${yonalish.id}`" class="sidebar-yonalish-title" @click="emit('navigate')">
+                    {{ yonalish.title }} <span aria-hidden="true">→</span>
+                </RouterLink>
+                <div class="sidebar-yonalish-kitoblar">
+                    <RouterLink
+                        v-for="k in qoshnilar"
+                        :key="k.id"
+                        :to="`/${k.id}`"
+                        :class="{ 'is-active': k.id === bookId }"
+                        :aria-current="k.id === bookId ? 'page' : null"
+                        @click="emit('navigate')"
+                    >{{ k.title }}</RouterLink>
+                </div>
+            </nav>
 
             <nav v-if="book?.tools?.length" class="sidebar-tools" aria-label="Interaktiv">
                 <RouterLink
