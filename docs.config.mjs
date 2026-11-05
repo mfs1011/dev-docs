@@ -292,6 +292,37 @@ export const books = [
     folders: [],
   },
   {
+    id: 'linux',
+    title: 'Linux',
+    subtitle: 'dasturchi uchun server asoslari',
+    dir: 'linux',
+    logo: 'linux',
+    // Debian logosi rangi (debian.org) #D70A53; qorong'i fonda — ochroq variant
+    accent: '#d70a53',
+    accentDark: '#ff5c8f',
+    versionLabel: 'Ubuntu',
+    versionRow: /^\|\s*Ubuntu\s*\|\s*([^|(]+)/m,
+    // boblar ikki muhitda sinaladi: trenajor (Debian 12) va VPS (Ubuntu 26.04)
+    badge: 'Debian 12 · Ubuntu 26.04',
+    // tezkor terminal — boblardagi pastki panel (">_ Terminal" tugmasi); bu yerda — alohida trenajor sahifasi
+    tools: [{ label: 'Linux trenajori', route: '/linux/trenajor', note: 'Brauzerda Debian 12 + systemd' }],
+    groups: [
+      { title: 'I — Kirish', from: 1, to: 3 },
+      { title: 'II — Fayl tizimi', from: 4, to: 10 },
+      { title: 'III — Qobiq', from: 11, to: 16 },
+      { title: 'IV — Matn va loglar', from: 17, to: 21 },
+      { title: 'V — Foydalanuvchilar', from: 22, to: 23 },
+      { title: 'VI — Paketlar', from: 24, to: 27 },
+      { title: 'VII — Jarayonlar', from: 28, to: 32 },
+      { title: 'VIII — systemd', from: 33, to: 39 },
+      { title: 'IX — Tarmoq', from: 40, to: 44 },
+      { title: 'X — SSH', from: 45, to: 47 },
+      { title: 'XI — Bash skriptlar', from: 48, to: 51 },
+      { title: 'XII — Muammoni topish', from: 52, to: 54 },
+    ],
+    folders: [],
+  },
+  {
     id: 'docker',
     title: 'Docker',
     subtitle: 'konteynerlar, Compose va deploy',
