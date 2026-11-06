@@ -1,6 +1,6 @@
 # 27 — Avtomatik yangilanishlar
 
-[← Oldingi: Tashqi repozitoriy](26-tashqi-repozitoriy.md) · [Mundarija](README.md)
+[← Oldingi: Tashqi repozitoriy](26-tashqi-repozitoriy.md) · [Mundarija](README.md) · [Keyingi: Jarayon nima →](28-jarayon.md)
 
 ## Tushuncha
 

@@ -995,6 +995,51 @@ export const LINUX_MASHQLAR = [
       },
     ],
   },
+  {
+    id: '28-jarayon',
+    title: 'Jarayonlar oilasi',
+    bob: '/linux/28-jarayon',
+    intro: 'Jarayonlarni topasiz, kim kimni yaratganini aniqlaysiz va `/proc` dan jarayon haqida o‘qiysiz.',
+    setup: 'pkill -x sleep 2>/dev/null || true',
+    steps: [
+      {
+        cmd: 'ps -o pid,ppid,user,stat,cmd',
+        text: 'Terminalingizdagi jarayonlarni PID, PPID, egasi va holati bilan chiqaring.',
+        ran: /^ps\s+-o\s+\S*pid\S*ppid/,
+        natija: '`ps` ning otasi — sizning bash’ingiz, bash’ning otasi — `login`.',
+      },
+      {
+        cmd: 'pstree -p',
+        text: 'Butun jarayon daraxtini PID’lar bilan ko‘ring.',
+        ran: /^pstree\b.*-\w*p/,
+        natija: 'Hammasi `systemd(1)` dan o‘sib chiqadi.',
+      },
+      {
+        cmd: 'sleep 1000 &',
+        text: '`sleep 1000` ni fonda ishga tushiring.',
+        check: 'pgrep -x sleep',
+        natija: 'bash fork qildi: `sleep` — yangi PID, otasi bash.',
+      },
+      {
+        cmd: 'grep PPid /proc/$!/status',
+        text: '`/proc` orqali `sleep` ning otasini toping (`$!` — oxirgi fon jarayonining PID’i).',
+        ran: /\/proc\/(\$!|\d+)\/status/,
+        natija: '`PPid` — `echo $$` bilan bir xil: bu sizning bash’ingiz.',
+      },
+      {
+        cmd: 'readlink /proc/$!/exe',
+        text: '`sleep` jarayoni qaysi dastur faylidan ishlayotganini toping.',
+        ran: /readlink\s+\/proc\/(\$!|\d+)\/exe/,
+        natija: '`/usr/bin/sleep` — jarayon shu dasturning ishlab turgan nusxasi.',
+      },
+      {
+        cmd: 'kill %1',
+        text: 'Fondagi `sleep` ni to‘xtating (29-bobda batafsil).',
+        check: '! pgrep -x sleep',
+        natija: 'Jarayon tugadi. `jobs` bo‘sh.',
+      },
+    ],
+  },
 ]
 
 /** VM ichida `source` qilinadigan skript: papka, setup va har prompt oldidan qadamlarni tekshiradigan funksiya */

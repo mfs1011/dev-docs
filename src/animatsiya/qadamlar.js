@@ -363,4 +363,35 @@ export const QADAMLI = {
       },
     ],
   },
+
+  // 28-bob: fork va exec — jarayon daraxti qanday o'sadi (trenajor; har qadam alohida ishga tushirishdan, PID'lar shundan farq qiladi)
+  'fork-exec': {
+    panel: 'jarayon daraxti',
+    qadamlar: [
+      {
+        cmd: ['ps -o pid,ppid,user,stat,cmd'],
+        chiqish: '  PID  PPID USER     STAT CMD\n  157     1 root     Ss   /bin/login -f\n  167   157 root     S    -bash\n  185   167 root     R+   ps -o pid,ppid,user,stat,cmd',
+        holat: [{ k: 'l', yol: 'login (157)', qiymat: 'ota: systemd (1)' }, { k: 'b', yol: 'bash (167)', qiymat: 'ota: login (157)' }, { k: 'p', yol: 'ps (185)', qiymat: 'ota: bash (167)', belgi: 'yangi' }],
+        izoh: 'Siz yozgan buyruq ham jarayon: `ps` bash’ning bolasi (PPID 167) bo‘lib ishladi va tugadi.',
+      },
+      {
+        cmd: ['sleep 300 &', 'ps -o pid,ppid,stat,cmd'],
+        chiqish: '  PID  PPID STAT CMD\n  157     1 Ss   /bin/login -f\n  167   157 S    -bash\n  194   167 S    sleep 300\n  195   167 R+   ps -o pid,ppid,stat,cmd',
+        holat: [{ k: 'b', yol: 'bash (167)', qiymat: 'ota' }, { k: 's', yol: 'sleep (194)', qiymat: 'bola, fonda kutyapti (S)', belgi: 'yangi' }, { k: 'p', yol: 'ps (195)', qiymat: 'bola, ishlayapti (R+)', belgi: 'yangi' }],
+        izoh: 'bash har buyruq uchun o‘zidan nusxa oladi (fork): yangi PID, ota — bash. Bola nusxa keyin kerakli dasturga aylanadi (exec).',
+      },
+      {
+        cmd: [`bash -c 'echo "bash PID: $$"; ps -o pid,ppid,cmd --ppid $$; true'`],
+        chiqish: 'bash PID: 177\n  PID  PPID CMD\n  178   177 ps -o pid,ppid,cmd --ppid 177',
+        holat: [{ k: 'b2', yol: 'bash -c (177)', qiymat: 'yangi bash — bola' }, { k: 'p', yol: 'ps (178)', qiymat: 'uning bolasi: fork → yangi PID', belgi: 'yangi' }],
+        izoh: 'fork(2): "chaqirgan jarayonni nusxalab, yangi jarayon yaratadi". Bolaning PID’i yangi, PPID’i — otaniki.',
+      },
+      {
+        cmd: [`bash -c 'echo "bash PID: $$"; exec ps -o pid,ppid,cmd -p $$'`],
+        chiqish: 'bash PID: 284\n  PID  PPID CMD\n  284   167 ps -o pid,ppid,cmd -p 284',
+        holat: [{ k: 'b2', yol: 'PID 284', qiymat: 'avval bash edi → endi ps', belgi: 'ochiq' }],
+        izoh: '`exec` fork qilmaydi: jarayonning o‘zida dastur almashadi. execve(2): dastur yangisiga almashtiriladi, PID esa o‘zgarmaydi — 284 avval bash, keyin ps.',
+      },
+    ],
+  },
 }
