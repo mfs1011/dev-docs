@@ -1,6 +1,6 @@
 # 16 — Matn muharriri
 
-[← Oldingi: Bash'ni sozlash](15-bash-sozlash.md) · [Mundarija](README.md)
+[← Oldingi: Bash'ni sozlash](15-bash-sozlash.md) · [Mundarija](README.md) · [Keyingi: Faylni ko'rish →](17-faylni-korish.md)
 
 ## Tushuncha
 

@@ -62,7 +62,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - Veb-server va HTTPS — **"Nginx"** kitobida.
 - Konteynerlar, namespace va cgroup — **"Docker"** kitobida.
 
-> **Holat.** Qo'llanma yozilmoqda: 16/54 bob tayyor. Havolasi borlari — tayyor boblar. Har bobning "Amaliyot" bo'limida trenajordagi mashqqa havola bor.
+> **Holat.** Qo'llanma yozilmoqda: 23/54 bob tayyor. Havolasi borlari — tayyor boblar. Har bobning "Amaliyot" bo'limida trenajordagi mashqqa havola bor.
 
 ---
 
@@ -113,18 +113,18 @@ Bu qo'llanmaga kirmaydigan mavzular:
 
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
-| 17 | Faylni ko'rish | `cat`, `less`, `head`, `tail -f`, `wc`; katta logni ochish; `less` ichida qidirish | T | [DR 1.4.5](https://www.debian.org/doc/manuals/debian-reference/ch01.en.html#_the_pager) · [GNU Coreutils](https://www.gnu.org/software/coreutils/manual/coreutils.html) |
-| 18 | grep va regex | `grep` (`-i`, `-r`, `-n`, `-v`, `-E`, `-o`); oddiy va kengaytirilgan regex (BRE va ERE) | T | [GNU grep](https://www.gnu.org/software/grep/manual/grep.html) · [DR 1.6.2](https://www.debian.org/doc/manuals/debian-reference/ch01.en.html#_regular_expressions) · [MAN regex(7)](https://man7.org/linux/man-pages/man7/regex.7.html) |
-| 19 | find va xargs | Nomi, turi, hajmi, vaqti bo'yicha qidirish; `-exec` va `xargs`; probelli nomlar (`-print0`, `-0`) | T | [GNU findutils](https://www.gnu.org/software/findutils/manual/find.html) · [DR 9.4.9](https://www.debian.org/doc/manuals/debian-reference/ch09.en.html#_repeating_a_command_looping_over_files) |
-| 20 | Matnni o'zgartirish | `sed` (almashtirish, `-i`); `cut`, `sort`, `uniq -c`, `tr`; `awk` bilan ustunlarni olish | T | [GNU sed](https://www.gnu.org/software/sed/manual/sed.html) · [GNU gawk](https://www.gnu.org/software/gawk/manual/gawk.html) · [DR 1.6.3–1.6.6](https://www.debian.org/doc/manuals/debian-reference/ch01.en.html#_replacement_expressions) |
-| 21 | Amaliy: log tahlili | Kirish logidan eng ko'p so'rov yuborgan IP, xato kodlari soni, vaqt oralig'ini kesib olish — 17–20-boblarni birlashtirish | T | [DR 1.6.5–1.6.6](https://www.debian.org/doc/manuals/debian-reference/ch01.en.html#_extracting_data_from_text_file_table) |
+| 17 | [Faylni ko'rish](17-faylni-korish.md) | `cat`, `less`, `head`, `tail -f`, `wc`; katta logni ochish; `less` ichida qidirish | T | [DR 1.4.5](https://www.debian.org/doc/manuals/debian-reference/ch01.en.html#_the_pager) · [GNU Coreutils](https://www.gnu.org/software/coreutils/manual/coreutils.html) |
+| 18 | [grep va regex](18-grep-va-regex.md) | `grep` (`-i`, `-r`, `-n`, `-v`, `-E`, `-o`); oddiy va kengaytirilgan regex (BRE va ERE) | T | [GNU grep](https://www.gnu.org/software/grep/manual/grep.html) · [DR 1.6.2](https://www.debian.org/doc/manuals/debian-reference/ch01.en.html#_regular_expressions) · [MAN regex(7)](https://man7.org/linux/man-pages/man7/regex.7.html) |
+| 19 | [find va xargs](19-find-va-xargs.md) | Nomi, turi, hajmi, vaqti bo'yicha qidirish; `-exec` va `xargs`; probelli nomlar (`-print0`, `-0`) | T | [GNU findutils](https://www.gnu.org/software/findutils/manual/find.html) · [DR 9.4.9](https://www.debian.org/doc/manuals/debian-reference/ch09.en.html#_repeating_a_command_looping_over_files) |
+| 20 | [Matnni o'zgartirish](20-matnni-ozgartirish.md) | `sed` (almashtirish, `-i`); `cut`, `sort`, `uniq -c`, `tr`; `awk` bilan ustunlarni olish | T | [GNU sed](https://www.gnu.org/software/sed/manual/sed.html) · [GNU gawk](https://www.gnu.org/software/gawk/manual/gawk.html) · [DR 1.6.3–1.6.6](https://www.debian.org/doc/manuals/debian-reference/ch01.en.html#_replacement_expressions) |
+| 21 | [Amaliy: log tahlili](21-log-tahlili.md) | Kirish logidan eng ko'p so'rov yuborgan IP, xato kodlari soni, vaqt oralig'ini kesib olish — 17–20-boblarni birlashtirish | T | [DR 1.6.5–1.6.6](https://www.debian.org/doc/manuals/debian-reference/ch01.en.html#_extracting_data_from_text_file_table) |
 
 ## V qism — Foydalanuvchilar (22–23)
 
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
-| 22 | Foydalanuvchi va guruh | `/etc/passwd`, `/etc/group`, `/etc/shadow`; `adduser`, `usermod -aG`, `deluser`; tizim (servis) foydalanuvchisi; `id`, `groups`; guruh o'zgarishi qachon kuchga kiradi | T+V | [DR 4.1–4.2](https://www.debian.org/doc/manuals/debian-reference/ch04.en.html#_normal_unix_authentication) · [UB User management](https://ubuntu.com/server/docs/how-to/security/user-management/) · [DM adduser(8)](https://manpages.debian.org/bookworm/adduser/adduser.8.en.html) |
-| 23 | sudo | `sudo` va `su` farqi; `sudoers`, `visudo`, `/etc/sudoers.d/`; `sudo -i`, `sudo -u`; sudo-rs (Ubuntu 26.04) va sudo farqi | T+V | [DR 1.1.12](https://www.debian.org/doc/manuals/debian-reference/ch01.en.html#_sudo_configuration) · [DR 4.7.2](https://www.debian.org/doc/manuals/debian-reference/ch04.en.html#_sudo) · [UB sudo-rs](https://ubuntu.com/server/docs/reference/other-tools/sudo-rs/) · [DM sudoers(5)](https://manpages.debian.org/bookworm/sudo/sudoers.5.en.html) |
+| 22 | [Foydalanuvchi va guruh](22-foydalanuvchi-va-guruh.md) | `/etc/passwd`, `/etc/group`, `/etc/shadow`; `adduser`, `usermod -aG`, `deluser`; tizim (servis) foydalanuvchisi; `id`, `groups`; guruh o'zgarishi qachon kuchga kiradi | T+V | [DR 4.1–4.2](https://www.debian.org/doc/manuals/debian-reference/ch04.en.html#_normal_unix_authentication) · [UB User management](https://ubuntu.com/server/docs/how-to/security/user-management/) · [DM adduser(8)](https://manpages.debian.org/bookworm/adduser/adduser.8.en.html) |
+| 23 | [sudo](23-sudo.md) | `sudo` va `su` farqi; `sudoers`, `visudo`, `/etc/sudoers.d/`; `sudo -i`, `sudo -u`; sudo-rs (Ubuntu 26.04) va sudo farqi | T+V | [DR 1.1.12](https://www.debian.org/doc/manuals/debian-reference/ch01.en.html#_sudo_configuration) · [DR 4.7.2](https://www.debian.org/doc/manuals/debian-reference/ch04.en.html#_sudo) · [UB sudo-rs](https://ubuntu.com/server/docs/reference/other-tools/sudo-rs/) · [DM sudoers(5)](https://manpages.debian.org/bookworm/sudo/sudoers.5.en.html) |
 
 ## VI qism — Paketlar (24–27)
 

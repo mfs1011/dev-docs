@@ -118,4 +118,150 @@ export const QADAMLI = {
       },
     ],
   },
+
+  // 17-bob: log aylantirilganda tail -f eski faylda qoladi, tail -F yangisiga o'tadi (trenajordagi sinov, sleep'lar tushirilgan)
+  'tail-f': {
+    panel: 'kuzatuvchi qayerga qarab turibdi',
+    qadamlar: [
+      {
+        cmd: ['echo bir > f.log; tail -f f.log > f.txt &', 'echo bir > F.log; tail -F F.log > F.txt &', 'echo ikki >> f.log; echo ikki >> F.log'],
+        holat: [{ k: 'f', yol: 'tail -f', qiymat: '→ f.log (faylning o‘zi)', belgi: 'ochiq' }, { k: 'F', yol: 'tail -F', qiymat: '→ "F.log" nomi', belgi: 'ochiq' }],
+        izoh: 'Hozircha ikkalasi bir xil: `bir` va `ikki` darhol ko‘rinadi.',
+      },
+      {
+        cmd: ['mv f.log f.log.1; echo yangi > f.log', 'mv F.log F.log.1; echo yangi > F.log'],
+        holat: [{ k: 'f', yol: 'tail -f', qiymat: '→ f.log.1 (eski faylda qoldi)', belgi: 'xato' }, { k: 'F', yol: 'tail -F', qiymat: '→ yangi F.log', belgi: 'yangi' }],
+        izoh: 'Log aylantirildi: eski fayl `.1` bo‘ldi, o‘rniga yangisi yaratildi. `-f` fayl deskriptorini kuzatadi, shuning uchun qayta nomlangan eski faylda qoladi. `-F` nomni kuzatadi va yangi faylga o‘tadi.',
+      },
+      {
+        cmd: ['echo eski-faylga >> f.log.1; echo eski-faylga >> F.log.1', 'cat F.txt'],
+        chiqish: "bir\nikki\ntail: 'F.log' has become inaccessible: No such file or directory\ntail: 'F.log' has appeared;  following new file\nyangi",
+        holat: [{ k: 'F', yol: 'tail -F', qiymat: '"yangi" ko‘rindi', belgi: 'yangi' }],
+        izoh: '`-F` eski fayl yo‘qolganini va yangisi paydo bo‘lganini aytdi, keyin `yangi` ni ko‘rsatdi. Eski faylga yozilgan qator uni qiziqtirmaydi.',
+      },
+      {
+        cmd: ['cat f.txt'],
+        chiqish: 'bir\nikki\neski-faylga',
+        holat: [{ k: 'f', yol: 'tail -f', qiymat: '"yangi" ko‘rinmadi', belgi: 'xato' }],
+        izoh: '`-f` faqat eski faylga yozilgan qatorni ko‘rdi. Servis endi yangi logga yozadi, siz esa hech narsa ko‘rmaysiz. Aylantiriladigan logni `tail -F` bilan kuzating.',
+      },
+    ],
+  },
+
+  // 19-bob: xargs nomlarni probel bo'yicha bo'ladi; -print0/-0 va -exec {} +
+  xargs: {
+    panel: 'wc qanday argumentlar oldi',
+    qadamlar: [
+      {
+        cmd: ["find logs -name '*.log'"],
+        chiqish: 'logs/eski yozuv.log\nlogs/app-20.log\nlogs/app-10.log\nlogs/app-5.log\nlogs/app-1.log',
+        holat: [{ yol: 'logs/eski yozuv.log', qiymat: 'nomida probel', belgi: 'ochiq' }, { yol: 'logs/app-*.log', qiymat: '4 ta oddiy nom' }],
+        izoh: '`find` har nomni alohida qatorga chiqardi. Birinchi nomda probel bor.',
+      },
+      {
+        cmd: ["find logs -name '*.log' | xargs wc -l"],
+        chiqish: 'wc: logs/eski: No such file or directory\nwc: yozuv.log: No such file or directory\n 1 logs/app-20.log\n 1 logs/app-10.log\n 1 logs/app-5.log\n 1 logs/app-1.log\n 4 total',
+        holat: [{ k: 'a', yol: 'logs/eski', qiymat: 'bunday fayl yo‘q', belgi: 'xato' }, { k: 'b', yol: 'yozuv.log', qiymat: 'bunday fayl yo‘q', belgi: 'xato' }, { yol: 'logs/app-*.log', qiymat: '4 ta — to‘g‘ri' }],
+        izoh: '`xargs` nomlarni probel va yangi qator bo‘yicha bo‘ladi: bitta nom ikki argumentga aylandi. `wc` o‘rnida `rm` bo‘lsa, boshqa fayl o‘chishi mumkin edi.',
+      },
+      {
+        cmd: ["find logs -name '*.log' -print0 | xargs -0 wc -l"],
+        chiqish: ' 1 logs/eski yozuv.log\n 1 logs/app-20.log\n 1 logs/app-10.log\n 1 logs/app-5.log\n 1 logs/app-1.log\n 5 total',
+        holat: [{ k: 'a', yol: 'logs/eski yozuv.log', qiymat: 'bitta argument', belgi: 'yangi' }, { yol: 'logs/app-*.log', qiymat: '4 ta' }],
+        izoh: '`-print0` nomlarni null belgisi bilan ajratadi, `xargs -0` faqat shu belgi bo‘yicha bo‘ladi. Probel endi nomning bir qismi.',
+      },
+      {
+        cmd: ["find logs -name 'app-*' -exec echo chaqiruv: {} \\;"],
+        chiqish: 'chaqiruv: logs/app-20.log\nchaqiruv: logs/app-10.log\nchaqiruv: logs/app-5.log\nchaqiruv: logs/app-1.log',
+        holat: [{ yol: 'echo', qiymat: '4 marta ishga tushdi', belgi: 'ochiq' }],
+        izoh: '`xargs` siz ham bo‘ladi. `-exec ... \\;` — har fayl uchun alohida jarayon.',
+      },
+      {
+        cmd: ["find logs -name 'app-*' -exec echo chaqiruv: {} +"],
+        chiqish: 'chaqiruv: logs/app-20.log logs/app-10.log logs/app-5.log logs/app-1.log',
+        holat: [{ yol: 'echo', qiymat: '1 marta, 4 argument bilan', belgi: 'yangi' }],
+        izoh: '`+` bilan `find` nomlarni o‘zi yig‘ib beradi, `xargs` kabi. Nomlar hech qachon bo‘linmaydi.',
+      },
+    ],
+  },
+
+  // 20-bob: cut | sort | uniq -c | sort -rn — har bosqichdagi oqim (trenajor chiqishi)
+  quvur: {
+    panel: 'oqimdagi ma’lumot',
+    qadamlar: [
+      {
+        cmd: ["cut -d' ' -f1 access.log"],
+        chiqish: '10.0.0.5\n10.0.0.7\n10.0.0.5\n192.168.1.20\n10.0.0.7',
+        holat: [{ yol: 'cut', qiymat: '5 qator → 5 ta IP', belgi: 'yangi' }],
+        izoh: '`cut` har qatordan 1-ustunni (IP) kesib oldi. Takrorlar bor, lekin ular yonma-yon emas.',
+      },
+      {
+        cmd: ["cut -d' ' -f1 access.log | uniq -c"],
+        chiqish: '      1 10.0.0.5\n      1 10.0.0.7\n      1 10.0.0.5\n      1 192.168.1.20\n      1 10.0.0.7',
+        holat: [{ yol: 'cut', qiymat: '5 ta IP' }, { yol: 'uniq -c', qiymat: 'hammasi 1 — xato', belgi: 'xato' }],
+        izoh: '`uniq` faqat yonma-yon turgan bir xil qatorlarni birlashtiradi. Bu yerda hech bir takror yonma-yon emas.',
+      },
+      {
+        cmd: ["cut -d' ' -f1 access.log | sort"],
+        chiqish: '10.0.0.5\n10.0.0.5\n10.0.0.7\n10.0.0.7\n192.168.1.20',
+        holat: [{ yol: 'cut', qiymat: '5 ta IP' }, { yol: 'sort', qiymat: 'bir xillar yonma-yon', belgi: 'yangi' }],
+        izoh: '`sort` dan keyin bir xil IP’lar ketma-ket turibdi.',
+      },
+      {
+        cmd: ["cut -d' ' -f1 access.log | sort | uniq -c"],
+        chiqish: '      2 10.0.0.5\n      2 10.0.0.7\n      1 192.168.1.20',
+        holat: [{ yol: 'cut', qiymat: '5 ta IP' }, { yol: 'sort', qiymat: 'yonma-yon' }, { yol: 'uniq -c', qiymat: '3 ta noyob, soni bilan', belgi: 'yangi' }],
+        izoh: 'Endi `uniq -c` har IP necha marta uchraganini to‘g‘ri sanadi.',
+      },
+      {
+        cmd: ["cut -d' ' -f1 access.log | sort | uniq -c | sort -rn"],
+        chiqish: '      2 10.0.0.7\n      2 10.0.0.5\n      1 192.168.1.20',
+        holat: [{ yol: 'cut', qiymat: '5 ta IP' }, { yol: 'sort', qiymat: 'yonma-yon' }, { yol: 'uniq -c', qiymat: 'sanaldi' }, { yol: 'sort -rn', qiymat: 'ko‘pidan ozigacha', belgi: 'yangi' }],
+        izoh: 'Oxirgi `sort -rn` son bo‘yicha teskari saraladi: eng faol IP tepada. Katta logda `| head` qo‘shib, "top 10" olinadi.',
+      },
+    ],
+  },
+
+  // 23-bob: sudo so'rovni qanday hal qiladi (trenajor, sudo 1.9.13; parol — trenajordagi sinov qiymati)
+  sudo: {
+    panel: 'sudo nimaga qaradi',
+    qadamlar: [
+      {
+        cmd: ['echo PAROL | runuser -u ali -- sudo -S true'],
+        chiqish: '[sudo] password for ali: ali is not in the sudoers file.',
+        holat: [{ yol: 'parol', qiymat: 'ali’ning O‘Z paroli — to‘g‘ri' }, { yol: '/etc/sudoers', qiymat: 'ali uchun qoida yo‘q', belgi: 'xato' }],
+        izoh: 'Parol to‘g‘ri bo‘lsa ham, `sudoers` da `ali` ga ruxsat yo‘q — rad etildi.',
+      },
+      {
+        cmd: ['adduser ali sudo', 'echo PAROL | runuser -u ali -- sudo -S whoami'],
+        chiqish: '[sudo] password for ali: root',
+        holat: [{ yol: '%sudo ALL=(ALL:ALL) ALL', qiymat: 'sudo guruhiga hamma narsa', belgi: 'yangi' }, { yol: 'ali', qiymat: 'sudo guruhida', belgi: 'yangi' }],
+        izoh: '`/etc/sudoers` dagi `%sudo` qatori guruhga ruxsat beradi. `ali` endi root nomidan istalgan buyruqni bajaradi.',
+      },
+      {
+        cmd: ['runuser -u ali -- sudo -n whoami'],
+        chiqish: 'root',
+        holat: [{ yol: 'vaqt belgisi', qiymat: 'parol yaqinda kiritilgan', belgi: 'ochiq' }],
+        izoh: 'Parol qayta so‘ralmadi: sudo uni bir muddat eslab qoladi (sudoers man: standart 15 daqiqa). `sudo -k` bu belgini o‘chiradi.',
+      },
+      {
+        cmd: ["echo 'deploy ALL=(root) NOPASSWD: /usr/bin/systemctl restart cron' > /tmp/deploy", 'visudo -cf /tmp/deploy && install -m 0440 /tmp/deploy /etc/sudoers.d/deploy', 'runuser -u deploy -- sudo -n systemctl restart cron; echo "kod: $?"'],
+        chiqish: '/tmp/deploy: parsed OK\nkod: 0',
+        holat: [{ yol: '/etc/sudoers.d/deploy', qiymat: 'faqat bitta buyruq, parolsiz', belgi: 'yangi' }],
+        izoh: '`deploy` — deploy skripti uchun foydalanuvchi. Unga faqat servisni qayta ishga tushirish ruxsat etildi.',
+      },
+      {
+        cmd: ['runuser -u deploy -- sudo -n systemctl stop cron; echo "kod: $?"'],
+        chiqish: 'sudo: a password is required\nkod: 1',
+        holat: [{ yol: '/etc/sudoers.d/deploy', qiymat: 'stop ro‘yxatda yo‘q', belgi: 'xato' }],
+        izoh: 'Qoidada aynan `restart cron` yozilgan. Boshqa buyruq uchun qoida yo‘q, parol ham yo‘q — rad.',
+      },
+      {
+        cmd: ["echo 'deploy ALL=(ALL) NOPASSWD: ALL' > /etc/sudoers.d/hamma.conf && chmod 440 /etc/sudoers.d/hamma.conf", 'sudo -l -U deploy | tail -2'],
+        chiqish: 'User deploy may run the following commands on trenajor:\n    (root) NOPASSWD: /usr/bin/systemctl restart cron',
+        holat: [{ yol: '/etc/sudoers.d/hamma.conf', qiymat: 'nomida nuqta — O‘QILMADI', belgi: 'yoq' }],
+        izoh: '`/etc/sudoers.d` dagi nomida `.` bor yoki `~` bilan tugagan fayllar o‘qilmaydi. `deploy.conf` kabi nom qo‘ysangiz, qoidangiz jimgina ishlamaydi.',
+      },
+    ],
+  },
 }
