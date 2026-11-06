@@ -181,6 +181,7 @@ const ANIMATSIYALAR = {
   daraxt: () => import('@/animatsiya/DaraxtAnim.vue'),
   regex: () => import('@/animatsiya/RegexAnim.vue'),
   hisob: () => import('@/animatsiya/HisobAnim.vue'),
+  konffayl: () => import('@/animatsiya/KonffaylAnim.vue'),
 }
 let animatsiyaIlovalari = []
 
