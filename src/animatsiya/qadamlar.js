@@ -264,4 +264,103 @@ export const QADAMLI = {
       },
     ],
   },
+
+  // 24-bob: bog'liqliklar, "auto" belgisi va autoremove (Ubuntu 26.04 VPS, jq)
+  'apt-bogliq': {
+    panel: 'serverdagi paketlar',
+    qadamlar: [
+      {
+        cmd: ['apt show jq | grep Depends'],
+        chiqish: 'Depends: libjq1 (= 1.8.1-4ubuntu2), libc6 (>= 2.38), libonig5 (>= 6.8.1)',
+        holat: [{ yol: 'libc6', qiymat: 'allaqachon bor' }],
+        izoh: '`jq` ishlashi uchun uchta kutubxona kerak. `libc6` serverda bor, qolgan ikkitasi yo‘q.',
+      },
+      {
+        cmd: ['apt install -y jq'],
+        chiqish: 'Installing:\n  jq\n\nInstalling dependencies:\n  libjq1  libonig5',
+        holat: [{ k: 'jq', yol: 'jq', qiymat: 'siz so‘radingiz — manual', belgi: 'yangi' }, { k: 'l1', yol: 'libjq1', qiymat: 'bog‘liqlik — auto', belgi: 'yangi' }, { k: 'l2', yol: 'libonig5', qiymat: 'bog‘liqlik — auto', belgi: 'yangi' }, { yol: 'libc6', qiymat: 'allaqachon bor' }],
+        izoh: 'apt bog‘liqliklarni o‘zi qo‘shdi va ularni "avtomatik o‘rnatilgan" deb belgiladi.',
+      },
+      {
+        cmd: ['apt-mark showauto libjq1 libonig5 jq', 'apt-mark showmanual jq'],
+        chiqish: 'libjq1\nlibonig5\njq',
+        holat: [{ k: 'jq', yol: 'jq', qiymat: 'manual', belgi: 'ochiq' }, { k: 'l1', yol: 'libjq1', qiymat: 'auto' }, { k: 'l2', yol: 'libonig5', qiymat: 'auto' }],
+        izoh: 'Belgi muhim: apt "auto" paketlarni keyinchalik kerak bo‘lmay qolsa, o‘chirishni taklif qiladi.',
+      },
+      {
+        cmd: ['apt remove -y jq'],
+        chiqish: "The following packages were automatically installed and are no longer required:\n  libjq1  libonig5\nUse 'apt autoremove' to remove them.\n\nREMOVING:\n  jq",
+        holat: [{ k: 'jq', yol: 'jq', qiymat: 'o‘chirildi', belgi: 'yoq' }, { k: 'l1', yol: 'libjq1', qiymat: 'auto — endi hech kimga kerak emas', belgi: 'xato' }, { k: 'l2', yol: 'libonig5', qiymat: 'auto — endi hech kimga kerak emas', belgi: 'xato' }],
+        izoh: '`remove` faqat so‘ralgan paketni o‘chirdi. Bog‘liqliklar qoldi — apt ular haqida eslatdi.',
+      },
+      {
+        cmd: ['apt autoremove -y'],
+        chiqish: 'REMOVING:\n  libjq1  libonig5',
+        holat: [{ k: 'l1', yol: 'libjq1', qiymat: 'o‘chirildi', belgi: 'yoq' }, { k: 'l2', yol: 'libonig5', qiymat: 'o‘chirildi', belgi: 'yoq' }, { yol: 'libc6', qiymat: 'boshqalarga kerak — qoldi' }],
+        izoh: '`autoremove` "auto" belgili va hech bir paket talab qilmaydigan paketlarni o‘chiradi. `libc6` boshqa paketlarga kerak, unga tegilmadi.',
+      },
+    ],
+  },
+
+  // 26-bob: tashqi repo Ubuntu paketini "yutib" oladi; pinning qaytaradi (VPS, PostgreSQL rasmiy repo'si, o'rnatilmagan)
+  pin: {
+    panel: 'apt install nimani tanlaydi',
+    qadamlar: [
+      {
+        cmd: ['apt policy postgresql   # faqat Ubuntu manbalari'],
+        chiqish: 'postgresql:\n  Installed: (none)\n  Candidate: 18+290ubuntu1\n  Version table:\n     18+290ubuntu1 500\n        500 http://mirror.hoztnode.net/ubuntu resolute/main amd64 Packages',
+        holat: [{ k: 'ub', yol: 'Ubuntu: 18+290ubuntu1', qiymat: 'ustuvorlik 500 — tanlanadi', belgi: 'yangi' }],
+        izoh: 'Hozircha yagona manba — Ubuntu arxivi.',
+      },
+      {
+        cmd: ['# pgdg.sources qo‘shildi', 'apt update', 'apt policy postgresql | head -n 3'],
+        chiqish: 'postgresql:\n  Installed: (none)\n  Candidate: 18+293.pgdg26.04+1',
+        holat: [{ k: 'pg', yol: 'pgdg: 18+293.pgdg26.04+1', qiymat: '500, versiya kattaroq — tanlanadi', belgi: 'xato' }, { k: 'ub', yol: 'Ubuntu: 18+290ubuntu1', qiymat: '500' }],
+        izoh: 'Ustuvorlik teng (500) bo‘lsa, apt eng katta versiyani oladi. Tashqi repo endi Ubuntu’ning o‘z paketini ham almashtiradi. `postgresql-18` da ham shunday: nomzod `18.6-1.pgdg26.04+2`.',
+      },
+      {
+        cmd: ['cat /etc/apt/preferences.d/pgdg', 'apt policy postgresql-18 | head -n 3'],
+        chiqish: 'Package: *\nPin: origin apt.postgresql.org\nPin-Priority: 100\npostgresql-18:\n  Installed: (none)\n  Candidate: 18.6-0ubuntu0.26.04.1',
+        holat: [{ k: 'pg', yol: 'pgdg: 18.6-1.pgdg26.04+2', qiymat: 'ustuvorlik 100' }, { k: 'ub', yol: 'Ubuntu: 18.6-0ubuntu0.26.04.1', qiymat: '500 — tanlanadi', belgi: 'yangi' }],
+        izoh: 'Pinning tashqi repo ustuvorligini 100 ga tushirdi. Ikkalasida bor paketda (`postgresql-18`) Ubuntu versiyasi g‘olib.',
+      },
+      {
+        cmd: ['apt-get -s install postgresql-17 | grep "^Inst postgresql-17 "'],
+        chiqish: 'Inst postgresql-17 (17.11-1.pgdg26.04+2 PostgreSQL for Debian/Ubuntu repository:resolute-pgdg [amd64])',
+        holat: [{ k: 'p17', yol: 'postgresql-17', qiymat: 'faqat pgdg’da — baribir o‘rnatiladi', belgi: 'yangi' }],
+        izoh: 'Ubuntu’da yo‘q paket esa tashqi repodan o‘rnatilaveradi. Repo aynan shu uchun qo‘shilgan edi.',
+      },
+    ],
+  },
+
+  // 27-bob: avtomatik yangilanish kuni (Ubuntu 26.04 VPS, 2026-11-06 — haqiqiy log va holat)
+  avto: {
+    panel: 'server holati',
+    qadamlar: [
+      {
+        cmd: ['cat /etc/apt/apt.conf.d/20auto-upgrades'],
+        chiqish: 'APT::Periodic::Update-Package-Lists "1";\nAPT::Periodic::Unattended-Upgrade "1";',
+        holat: [{ yol: 'apt-daily.timer', qiymat: 'kuniga: apt update' }, { yol: 'apt-daily-upgrade.timer', qiymat: 'kuniga: unattended-upgrade' }],
+        izoh: '`1` — har kuni. Ikkita systemd timer ishni tasodifiy kechikish bilan boshlaydi.',
+      },
+      {
+        cmd: ['tail -n 6 /var/log/unattended-upgrades/unattended-upgrades.log'],
+        chiqish: '2026-11-06 06:16:03,349 INFO Packages that will be upgraded: apt apt-utils bind9-dnsutils bind9-host bind9-libs ca-certificates libapt-pkg7.0 libpcre2-8-0 linux-image-virtual\n2026-11-06 06:16:22,673 WARNING package linux-image-virtual upgradable but fails to be marked for upgrade (E:Unable to correct problems, you have held broken packages.)\n2026-11-06 06:17:17,718 INFO All upgrades installed',
+        holat: [{ yol: '06:16', qiymat: '8 paket yangilandi', belgi: 'yangi' }, { yol: 'linux-image-virtual', qiymat: 'o‘tkazib yuborildi (24-bob)', belgi: 'ochiq' }],
+        izoh: 'Ertalab 06:16 da hech kim aralashmasdan xavfsizlik yangilanishlari o‘rnatildi.',
+      },
+      {
+        cmd: ['ls -l /var/run/reboot-required /var/run/reboot-required.pkgs', 'cat /var/run/reboot-required.pkgs', 'uname -r'],
+        chiqish: '-rw-r--r-- 1 root root  0 Nov  6 06:17 /var/run/reboot-required\n-rw-r--r-- 1 root root 29 Nov  6 06:17 /var/run/reboot-required.pkgs\nlinux-image-7.0.0-42-generic\n7.0.0-38-generic',
+        holat: [{ yol: 'o‘rnatilgan yadro', qiymat: '7.0.0-42' }, { yol: 'ishlab turgan yadro', qiymat: '7.0.0-38 — eski', belgi: 'xato' }],
+        izoh: 'Yangi yadro diskda, lekin u faqat qayta yonganda ishlaydi. `Automatic-Reboot` o‘chiq (standart), shuning uchun server o‘zi qayta yonmadi.',
+      },
+      {
+        cmd: ['needrestart -b -r l'],
+        chiqish: 'NEEDRESTART-KCUR: 7.0.0-38-generic\nNEEDRESTART-KEXP: 7.0.0-42-generic\nNEEDRESTART-KSTA: 3\nNEEDRESTART-SVC: dbus.service\nNEEDRESTART-SVC: systemd-logind.service\nNEEDRESTART-SVC: unattended-upgrades.service',
+        holat: [{ yol: 'KSTA: 3', qiymat: 'yadro versiyasi yangilangan — reboot kerak', belgi: 'xato' }, { yol: '3 ta servis', qiymat: 'eski kutubxonalar bilan ishlayapti', belgi: 'ochiq' }],
+        izoh: '`needrestart` ham buni tasdiqlaydi va qaysi servislarni qayta ishga tushirish kerakligini aytadi. Qachon qayta yondirishni administrator rejalashtiradi.',
+      },
+    ],
+  },
 }

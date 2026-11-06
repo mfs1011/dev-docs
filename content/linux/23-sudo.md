@@ -1,6 +1,6 @@
 # 23 — sudo
 
-[← Oldingi: Foydalanuvchi va guruh](22-foydalanuvchi-va-guruh.md) · [Mundarija](README.md)
+[← Oldingi: Foydalanuvchi va guruh](22-foydalanuvchi-va-guruh.md) · [Mundarija](README.md) · [Keyingi: apt →](24-apt.md)
 
 ## Tushuncha
 

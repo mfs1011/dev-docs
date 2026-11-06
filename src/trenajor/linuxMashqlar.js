@@ -956,6 +956,45 @@ export const LINUX_MASHQLAR = [
       },
     ],
   },
+  {
+    id: '25-dpkg',
+    title: 'Paket tergovi',
+    bob: '/linux/25-paket-ichida',
+    intro: 'Serverda kimdir `cron` sozlamasini o‘zgartirgan. Fayllar qaysi paketdan ekanini topasiz, o‘zgarishni aniqlaysiz va paketni yangilanishdan ushlab turasiz. Oxirida hold’ni olib tashlang.',
+    setup: 'apt-mark unhold cron >/dev/null 2>&1 || true; grep -q "EXTRA_OPTS=\"-L 15\"" /etc/default/cron || echo "EXTRA_OPTS=\"-L 15\"" >> /etc/default/cron',
+    steps: [
+      {
+        cmd: 'dpkg -S /usr/bin/crontab',
+        text: '`/usr/bin/crontab` qaysi paketdan ekanini toping.',
+        ran: /^dpkg\s+(-S|--search)\s+\/usr\/bin\/crontab\s*$/,
+        natija: '`cron: /usr/bin/crontab`.',
+      },
+      {
+        cmd: "dpkg-query -W -f='${Conffiles}\\n' cron",
+        text: '`cron` paketining conffile’larini chiqaring.',
+        ran: /^dpkg-query\s+(-W|--show)\s+-f=?\s*'?\$\{Conffiles\}/,
+        natija: 'Uchta conffile: `/etc/default/cron`, `/etc/init.d/cron`, `/etc/pam.d/cron`.',
+      },
+      {
+        cmd: 'dpkg --verify cron | grep -v missing',
+        text: 'Qaysi fayl o‘zgartirilganini toping (`missing` qatorlari — trenajorda o‘rnatilmagan hujjatlar).',
+        ran: /^dpkg\s+(-V|--verify)\s+cron/,
+        natija: '`??5?????? c /etc/default/cron` — conffile o‘zgargan. Yangilanishda bu o‘zgarish himoyalanadi.',
+      },
+      {
+        cmd: 'apt-mark hold cron',
+        text: '`cron` ni yangilanishdan ushlab turing.',
+        check: 'apt-mark showhold | grep -qx cron',
+        natija: '`dpkg -l cron` endi `hi` deb ko‘rsatadi.',
+      },
+      {
+        cmd: 'apt-mark unhold cron',
+        text: 'Hold’ni olib tashlang — aks holda xavfsizlik yangilanishlari ham kelmaydi.',
+        check: '! apt-mark showhold | grep -qx cron && [ -n "$(history 1 | grep unhold)" ]',
+        natija: '`apt-mark showhold` bo‘sh.',
+      },
+    ],
+  },
 ]
 
 /** VM ichida `source` qilinadigan skript: papka, setup va har prompt oldidan qadamlarni tekshiradigan funksiya */

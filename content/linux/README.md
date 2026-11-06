@@ -62,7 +62,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - Veb-server va HTTPS — **"Nginx"** kitobida.
 - Konteynerlar, namespace va cgroup — **"Docker"** kitobida.
 
-> **Holat.** Qo'llanma yozilmoqda: 23/54 bob tayyor. Havolasi borlari — tayyor boblar. Har bobning "Amaliyot" bo'limida trenajordagi mashqqa havola bor.
+> **Holat.** Qo'llanma yozilmoqda: 27/54 bob tayyor. Havolasi borlari — tayyor boblar. Har bobning "Amaliyot" bo'limida trenajordagi mashqqa havola bor.
 
 ---
 
@@ -130,10 +130,10 @@ Bu qo'llanmaga kirmaydigan mavzular:
 
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
-| 24 | apt | `apt update`, `upgrade`, `full-upgrade`, `install`, `remove`, `purge`, `autoremove`, `search`, `show`; bog'liqliklar | V | [UB Managing your software](https://ubuntu.com/server/docs/tutorial/managing-software/) · [DR 2.2](https://www.debian.org/doc/manuals/debian-reference/ch02.en.html) · [DM apt(8)](https://manpages.debian.org/bookworm/apt/apt.8.en.html) |
-| 25 | Paket ichida nima bor | `dpkg -l`, `-L`, `-S`; conffile va yangilanishda konfiguratsiya fayli nima bo'ladi; `apt-mark hold`; repozitoriy, seriya, pocket, komponent | T+V | [UB Managing your software](https://ubuntu.com/server/docs/tutorial/managing-software/) · [UB Changing package files](https://ubuntu.com/server/docs/explanation/software/changing-package-files/) · [DR 2.5](https://www.debian.org/doc/manuals/debian-reference/ch02.en.html) · [DM dpkg(1)](https://manpages.debian.org/bookworm/dpkg/dpkg.1.en.html) |
-| 26 | Tashqi repozitoriy | Distributiv paketi, tashqi repozitoriy (masalan, Node.js yoki PostgreSQL rasmiy repo'si) va snap — qachon qaysi biri; `.sources` (deb822) fayli; `signed-by` kaliti | V | [UB Third party repository usage](https://ubuntu.com/server/docs/explanation/software/third-party-repository-usage/) · [DM sources.list(5)](https://manpages.debian.org/bookworm/apt/sources.list.5.en.html) |
-| 27 | Avtomatik yangilanishlar | `unattended-upgrades`; Ubuntu'ning bosqichma-bosqich yangilanishi (phased updates); yangilanishdan keyin qayta ishga tushirish kerakmi | V | [UB Automatic updates](https://ubuntu.com/server/docs/how-to/software/automatic-updates/) · [UB About apt upgrade and phased updates](https://ubuntu.com/server/docs/explanation/software/about-apt-upgrade-and-phased-updates/) |
+| 24 | [apt](24-apt.md) | `apt update`, `upgrade`, `full-upgrade`, `install`, `remove`, `purge`, `autoremove`, `search`, `show`; bog'liqliklar | V | [UB Managing your software](https://ubuntu.com/server/docs/tutorial/managing-software/) · [DR 2.2](https://www.debian.org/doc/manuals/debian-reference/ch02.en.html) · [DM apt(8)](https://manpages.debian.org/bookworm/apt/apt.8.en.html) |
+| 25 | [Paket ichida nima bor](25-paket-ichida.md) | `dpkg -l`, `-L`, `-S`; conffile va yangilanishda konfiguratsiya fayli nima bo'ladi; `apt-mark hold`; repozitoriy, seriya, pocket, komponent | T+V | [UB Managing your software](https://ubuntu.com/server/docs/tutorial/managing-software/) · [UB Changing package files](https://ubuntu.com/server/docs/explanation/software/changing-package-files/) · [DR 2.5](https://www.debian.org/doc/manuals/debian-reference/ch02.en.html) · [DM dpkg(1)](https://manpages.debian.org/bookworm/dpkg/dpkg.1.en.html) |
+| 26 | [Tashqi repozitoriy](26-tashqi-repozitoriy.md) | Distributiv paketi, tashqi repozitoriy (masalan, Node.js yoki PostgreSQL rasmiy repo'si) va snap — qachon qaysi biri; `.sources` (deb822) fayli; `signed-by` kaliti | V | [UB Third party repository usage](https://ubuntu.com/server/docs/explanation/software/third-party-repository-usage/) · [DM sources.list(5)](https://manpages.debian.org/bookworm/apt/sources.list.5.en.html) |
+| 27 | [Avtomatik yangilanishlar](27-avtomatik-yangilanish.md) | `unattended-upgrades`; Ubuntu'ning bosqichma-bosqich yangilanishi (phased updates); yangilanishdan keyin qayta ishga tushirish kerakmi | V | [UB Automatic updates](https://ubuntu.com/server/docs/how-to/software/automatic-updates/) · [UB About apt upgrade and phased updates](https://ubuntu.com/server/docs/explanation/software/about-apt-upgrade-and-phased-updates/) |
 
 ## VII qism — Jarayonlar (28–32)
 
