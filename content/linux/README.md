@@ -62,7 +62,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - Veb-server va HTTPS — **"Nginx"** kitobida.
 - Konteynerlar, namespace va cgroup — **"Docker"** kitobida.
 
-> **Holat.** Qo'llanma yozilmoqda: 27/54 bob tayyor. Havolasi borlari — tayyor boblar. Har bobning "Amaliyot" bo'limida trenajordagi mashqqa havola bor.
+> **Holat.** Qo'llanma yozilmoqda: 28/54 bob tayyor. Havolasi borlari — tayyor boblar. Har bobning "Amaliyot" bo'limida trenajordagi mashqqa havola bor.
 
 ---
 
@@ -139,7 +139,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
-| 28 | Jarayon nima | Dastur va jarayon; PID va PPID; jarayon daraxti (`ps`, `pstree`); jarayon qanday tug'iladi (fork va exec); `/proc/<pid>` | T | [DR 9.4.3](https://www.debian.org/doc/manuals/debian-reference/ch09.en.html#_the_ps_command) · [MAN ps(1)](https://man7.org/linux/man-pages/man1/ps.1.html) · [MAN proc(5)](https://man7.org/linux/man-pages/man5/proc.5.html) · [MAN credentials(7)](https://man7.org/linux/man-pages/man7/credentials.7.html) |
+| 28 | [Jarayon nima](28-jarayon.md) | Dastur va jarayon; PID va PPID; jarayon daraxti (`ps`, `pstree`); jarayon qanday tug'iladi (fork va exec); `/proc/<pid>` | T | [DR 9.4.3](https://www.debian.org/doc/manuals/debian-reference/ch09.en.html#_the_ps_command) · [MAN ps(1)](https://man7.org/linux/man-pages/man1/ps.1.html) · [MAN proc(5)](https://man7.org/linux/man-pages/man5/proc.5.html) · [MAN credentials(7)](https://man7.org/linux/man-pages/man7/credentials.7.html) |
 | 29 | Signallar | `kill`, `pkill`; SIGTERM, SIGKILL, SIGHUP, SIGINT (Ctrl+C); ilova to'xtatilganda ishini tugatib chiqishi (graceful shutdown) | T | [MAN signal(7)](https://man7.org/linux/man-pages/man7/signal.7.html) · [DR 9.4.12](https://www.debian.org/doc/manuals/debian-reference/ch09.en.html#_killing_a_process) · [GNU Bash: Signals](https://www.gnu.org/software/bash/manual/bash.html#Signals) |
 | 30 | Fon rejimi | `&`, `jobs`, `fg`, `bg`, Ctrl+Z; SSH uzilganda jarayon nima bo'ladi; `nohup`, `tmux`, systemd servisi — qiyos | T+V | [GNU Bash: Job Control](https://www.gnu.org/software/bash/manual/bash.html#Job-Control) · [UB Terminal multiplexers](https://ubuntu.com/server/docs/reference/other-tools/terminal-multiplexers/) · [DR 9.1.2](https://www.debian.org/doc/manuals/debian-reference/ch09.en.html#_the_screen_program) |
 | 31 | Resurslar | `top`, `free`, `uptime` va yuklama (load average); `nice`; xotira tugaganda (OOM) nima bo'ladi | T+V | [DR 9.4.2, 9.4.4](https://www.debian.org/doc/manuals/debian-reference/ch09.en.html#_the_top_command) · [DR 9.5.9](https://www.debian.org/doc/manuals/debian-reference/ch09.en.html#_memory_usage) · [MAN free(1)](https://man7.org/linux/man-pages/man1/free.1.html) · [MAN proc(5)](https://man7.org/linux/man-pages/man5/proc.5.html) |
