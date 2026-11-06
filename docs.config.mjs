@@ -309,7 +309,7 @@ export const books = [
     groups: [
       { title: 'I — Kirish', from: 1, to: 3 },
       { title: 'II — Fayl tizimi', from: 4, to: 10 },
-      { title: 'III — Qobiq', from: 11, to: 16 },
+      { title: 'III — Qobiq (shell)', from: 11, to: 16 },
       { title: 'IV — Matn va loglar', from: 17, to: 21 },
       { title: 'V — Foydalanuvchilar', from: 22, to: 23 },
       { title: 'VI — Paketlar', from: 24, to: 27 },

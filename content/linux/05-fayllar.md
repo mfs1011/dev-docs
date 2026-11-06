@@ -122,6 +122,8 @@ birinchi
 
 `yangi.txt` dagi "ikkinchi" so'zi hech qanday savolsiz yo'qoldi. (`echo ... >` faylga matn yozadi, 11-bob. `cat` faylni ekranga chiqaradi.)
 
+<div data-animatsiya="qadamli" data-nom="cp-mv"></div>
+
 Himoyalanish yo'llari:
 
 | Yo'l | Nima qiladi | Qachon |

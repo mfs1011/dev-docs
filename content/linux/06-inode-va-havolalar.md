@@ -121,7 +121,7 @@ $ readlink -f /bin/sh
 /usr/bin/dash
 ```
 
-Debian'da `sh` — bu `dash` qobig'i (48-bob).
+Debian'da `sh` — bu `dash` qobig'i (shell) (48-bob).
 
 ### Hard link cheklovlari
 
@@ -149,6 +149,8 @@ drwxr-xr-x 3 root root 60 Nov  5 11:21 papka
 ## Dasturchi uchun: deploy'da `current` havolasi
 
 Ko'p deploy usullari har bir versiyani alohida papkaga qo'yadi. Ishlab turgan versiyani esa `current` symlink'i ko'rsatadi. Yangi versiyaga o'tish uchun faqat havola almashtiriladi:
+
+<div data-animatsiya="qadamli" data-nom="current"></div>
 
 ```text
 $ mkdir -p releases/v1 releases/v2

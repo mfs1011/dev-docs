@@ -1,35 +1,35 @@
-# 02 — Terminal va qobiq
+# 02 — Terminal va qobiq (shell)
 
 [← Oldingi: Linux, Debian va Ubuntu](01-linux-debian-ubuntu.md) · [Mundarija](README.md) · [Keyingi: Yordamni topish →](03-yordam.md)
 
 ## Tushuncha
 
-Serverda grafik oyna, sichqoncha va tugmalar odatda bo'lmaydi. Ubuntu hujjati sababini shunday tushuntiradi: qobiq grafik interfeysdan ancha kam resurs talab qiladi va tezroq ishlaydi, chunki rasm chizishga hisoblash sarflamaydi. Shuning uchun serverlarga grafik interfeys deyarli o'rnatilmaydi. Server bilan matn orqali gaplashiladi: siz buyruq yozasiz, u javobni matn qilib qaytaradi.
+Serverda grafik oyna, sichqoncha va tugmalar odatda bo'lmaydi. Ubuntu hujjati sababini shunday tushuntiradi: qobiq (shell) grafik interfeysdan ancha kam resurs talab qiladi va tezroq ishlaydi, chunki rasm chizishga hisoblash sarflamaydi. Shuning uchun serverlarga grafik interfeys deyarli o'rnatilmaydi. Server bilan matn orqali gaplashiladi: siz buyruq yozasiz, u javobni matn qilib qaytaradi.
 
 Bunda ikki narsa ishtirok etadi va ularni ajratish foydali:
 
 - **Terminal** — matn kiritiladigan va chiqadigan **oyna**. Noutbukingizdagi "Terminal" dasturi, SSH ulanish oynasi yoki shu sahifadagi trenajor oynasi.
-- **Qobiq** (shell) — oyna ichida ishlaydigan **dastur**. U siz yozgan qatorni o'qiydi, tushunadi va bajaradi. Debian va Ubuntu'da standart qobiq — **bash**.
+- **Qobiq** (shell) — oyna ichida ishlaydigan **dastur**. U siz yozgan qatorni o'qiydi, tushunadi va bajaradi. Debian va Ubuntu'da standart qobiq (shell) — **bash**.
 
-Bash qo'llanmasi qobiqni ikki tomonlama ta'riflaydi:
+Bash qo'llanmasi qobiqni (shell) ikki tomonlama ta'riflaydi:
 
 - **Buyruq tarjimoni** (command interpreter). Siz yozgan buyruqni ishga tushiradi.
 - **Dasturlash tili.** Buyruqlarni birlashtirib, faylga yozib, yangi buyruq yasash mumkin. Bu skriptlar, ularga XI qism bag'ishlangan.
 
-Qobiq ikki rejimda ishlaydi. **Interaktiv** rejimda klaviaturadan yozilganini o'qiydi: siz hozir shu rejimdasiz. **Interaktiv bo'lmagan** rejimda esa fayldagi buyruqlarni bajaradi.
+Qobiq (shell) ikki rejimda ishlaydi. **Interaktiv** rejimda klaviaturadan yozilganini o'qiydi: siz hozir shu rejimdasiz. **Interaktiv bo'lmagan** rejimda esa fayldagi buyruqlarni bajaradi.
 
-Qaysi qobiqda ekaningizni tekshiring:
+Qaysi qobiqda (shell) ekaningizni tekshiring:
 
 ```text
 $ echo $SHELL
 /bin/bash
 ```
 
-`echo` — berilgan matnni ekranga chiqaradi. `$SHELL` — foydalanuvchining qobig'i yozilgan o'zgaruvchi (o'zgaruvchilar 13-bobda).
+`echo` — berilgan matnni ekranga chiqaradi. `$SHELL` — foydalanuvchining qobig'i (shell) yozilgan o'zgaruvchi (o'zgaruvchilar 13-bobda).
 
 ## Prompt: buyruq qayerga yoziladi
 
-Terminal ochilganda qobiq **prompt** (taklif belgisi) chiqarib, sizdan buyruq kutadi. Trenajorda u shunday:
+Terminal ochilganda qobiq (shell) **prompt** (taklif belgisi) chiqarib, sizdan buyruq kutadi. Trenajorda u shunday:
 
 ```text
 root@trenajor:~#
@@ -169,7 +169,7 @@ $ ls
 
 ### Probel — so'zlarni ajratadi
 
-Qobiq qatorni probellar bo'yicha so'zlarga bo'ladi. Shuning uchun probelli nom **qo'shtirnoq** ichida yoziladi:
+Qobiq (shell) qatorni probellar bo'yicha so'zlarga bo'ladi. Shuning uchun probelli nom **qo'shtirnoq** ichida yoziladi:
 
 ```text
 $ mkdir mening papkam
@@ -193,7 +193,7 @@ $ LS
 
 ## Buyruq qayerdan keladi
 
-Ba'zi buyruqlar alohida dastur fayli, ba'zilari esa qobiqning o'z ichida. `type` buni aytadi:
+Ba'zi buyruqlar alohida dastur fayli, ba'zilari esa qobiqning (shell) o'z ichida. `type` buni aytadi:
 
 ```text
 $ type cd
@@ -205,13 +205,13 @@ type is a shell builtin
 ```
 
 - `ls` — `/usr/bin/ls` faylidagi alohida dastur.
-- `cd` — qobiqning **ichki buyrug'i** (builtin).
+- `cd` — qobiqning (shell) **ichki buyrug'i** (builtin).
 
-Bash qo'llanmasi buning sababini aytadi: `cd` qobiqning o'zini (uning joriy papkasini) o'zgartiradi, shuning uchun uni qobiqdan tashqarida yozib bo'lmaydi.
+Bash qo'llanmasi buning sababini aytadi: `cd` qobiqning (shell) o'zini (uning joriy papkasini) o'zgartiradi, shuning uchun uni qobiqdan (shell) tashqarida yozib bo'lmaydi.
 
 ### Topilmagan buyruq va chiqish kodi
 
-Har buyruq tugaganda qobiqqa **chiqish kodi** (exit status) qaytaradi. Oxirgisini `$?` saqlaydi:
+Har buyruq tugaganda qobiqqa (shell) **chiqish kodi** (exit status) qaytaradi. Oxirgisini `$?` saqlaydi:
 
 ```text
 $ salom
@@ -242,7 +242,7 @@ Debian Reference'dagi bash tugmalari ro'yxatidan eng kerakli qismi:
 | `↑` / `↓` | Oldingi buyruqlar tarixi bo'ylab yurish |
 | `Ctrl+R` | Tarixdan so'z bo'yicha qidirish |
 | `Ctrl+C` | Ishlayotgan dasturni to'xtatish |
-| `Ctrl+D` | Kiritishni tugatish. Bo'sh qatorda bosilsa, qobiqdan chiqadi |
+| `Ctrl+D` | Kiritishni tugatish. Bo'sh qatorda bosilsa, qobiqdan (shell) chiqadi |
 | `Ctrl+U` | Kursordan oldingi qismni o'chirish |
 | `Ctrl+Z` | Dasturni vaqtincha to'xtatib, fonga o'tkazish (30-bob) |
 | `Ctrl+S` / `Ctrl+Q` | Ekranga chiqishni to'xtatish / davom ettirish. Terminal "qotib qolsa", avval `Ctrl+Q` ni bosib ko'ring |

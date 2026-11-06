@@ -1,6 +1,6 @@
 # 01 — Linux, Debian va Ubuntu
 
-[Mundarija](README.md) · [Keyingi: Terminal va qobiq →](02-terminal-va-qobiq.md)
+[Mundarija](README.md) · [Keyingi: Terminal va qobiq (shell) →](02-terminal-va-qobiq.md)
 
 ## Tushuncha
 

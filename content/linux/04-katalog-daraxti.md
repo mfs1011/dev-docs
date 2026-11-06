@@ -68,6 +68,8 @@ Quyidagi tavsiflar file-hierarchy(7) (Debian 12 dagi systemd 252 versiyasi) va F
 | `/dev`, `/proc`, `/sys` | Qurilmalar, jarayonlar va yadro ma'lumoti | Diskdagi papka emas, yadro yaratadigan maxsus fayl tizimlari (9-bob) |
 | `/media`, `/mnt` | Disklarni ulash joyi | `/media` — almashtiriladigan disklar, `/mnt` — vaqtincha qo'lda ulash |
 
+<div data-animatsiya="daraxt"></div>
+
 Buni o'zingiz tekshiring:
 
 ```text

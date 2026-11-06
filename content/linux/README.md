@@ -25,7 +25,7 @@ Manbalar va versiyalar (2026-11-05 da tekshirilgan):
 
 Muhit tanlovi haqida:
 
-- **Trenajor nega Debian 12.** Brauzerdagi emulyator (v86) 32-bitli protsessorni emulyatsiya qiladi. Debian 13 da i386 uchun yadro (kernel) yo'q, Debian 12 da bor. Debian 12 ning oddiy qo'llab-quvvatlashi 2026-07-11 da tugagan, LTS 2028-06-30 gacha davom etadi. Qo'llanmadagi asosiy mavzular (fayllar, ruxsatlar, qobiq, jarayonlar, systemd) 12 va 13 da bir xil. Farq chiqqan joyda bobda alohida aytiladi.
+- **Trenajor nega Debian 12.** Brauzerdagi emulyator (v86) 32-bitli protsessorni emulyatsiya qiladi. Debian 13 da i386 uchun yadro (kernel) yo'q, Debian 12 da bor. Debian 12 ning oddiy qo'llab-quvvatlashi 2026-07-11 da tugagan, LTS 2028-06-30 gacha davom etadi. Qo'llanmadagi asosiy mavzular (fayllar, ruxsatlar, qobiq (shell), jarayonlar, systemd) 12 va 13 da bir xil. Farq chiqqan joyda bobda alohida aytiladi.
 - **Ubuntu 26.04 dagi yangi vositalar.** Rasmiy reliz izohlariga ko'ra:
   - Asosiy utilitalar (`ls`, `cat`, `sort` va boshqalar) endi Rust'da qayta yozilgan **uutils** (rust-coreutils) dan keladi. "Hal qilinmagan xatolar sababli" `cp`, `mv` va `rm` hali GNU'niki. VPS'da `df` ham GNU'niki (`readlink -f $(command -v df)` → `/usr/bin/gnudf`). GNU versiyasini `gnu` prefiksi bilan chaqirish mumkin (`gnuls`).
   - `sudo` o'rnida **sudo-rs** turadi, asl sudo esa `sudo.ws` deb qayta nomlangan.
@@ -62,7 +62,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - Veb-server va HTTPS — **"Nginx"** kitobida.
 - Konteynerlar, namespace va cgroup — **"Docker"** kitobida.
 
-> **Holat.** Qo'llanma yozilmoqda: 10/54 bob tayyor. Havolasi borlari — tayyor boblar. Har bobning "Amaliyot" bo'limida trenajordagi mashqqa havola bor.
+> **Holat.** Qo'llanma yozilmoqda: 16/54 bob tayyor. Havolasi borlari — tayyor boblar. Har bobning "Amaliyot" bo'limida trenajordagi mashqqa havola bor.
 
 ---
 
@@ -83,7 +83,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
 | 01 | [Linux, Debian va Ubuntu](01-linux-debian-ubuntu.md) | Yadro va distributiv; Debian relizlari (stable, oldstable, LTS); Ubuntu LTS sikli; Ubuntu Debian'dan nimasi bilan farq qiladi; serverda qaysi versiya ekanini aniqlash (`/etc/os-release`, `uname -r`) | T+V | [DR "What is Debian"](https://www.debian.org/doc/manuals/debian-reference/pr01.en.html) · [Debian releases](https://www.debian.org/releases/) · [Ubuntu release cycle](https://ubuntu.com/about/release-cycle) · [Ubuntu 26.04 summary](https://documentation.ubuntu.com/release-notes/26.04/summary-for-lts-users/) |
-| 02 | [Terminal va qobiq](02-terminal-va-qobiq.md) | Terminal, qobiq (shell), prompt; buyruq, parametr va argument; oddiy foydalanuvchi va root; `exit`, sessiyadan chiqish; buzilgan konsolni tiklash (`reset`) | T | [DR 1.1](https://www.debian.org/doc/manuals/debian-reference/ch01.en.html#_console_basics) · [UB Welcome to the terminal](https://ubuntu.com/server/docs/tutorial/welcome-to-the-terminal/) · [GNU Bash: Introduction](https://www.gnu.org/software/bash/manual/bash.html#Introduction) |
+| 02 | [Terminal va qobiq (shell)](02-terminal-va-qobiq.md) | Terminal, qobiq (shell), prompt; buyruq, parametr va argument; oddiy foydalanuvchi va root; `exit`, sessiyadan chiqish; buzilgan konsolni tiklash (`reset`) | T | [DR 1.1](https://www.debian.org/doc/manuals/debian-reference/ch01.en.html#_console_basics) · [UB Welcome to the terminal](https://ubuntu.com/server/docs/tutorial/welcome-to-the-terminal/) · [GNU Bash: Introduction](https://www.gnu.org/software/bash/manual/bash.html#Introduction) |
 | 03 | [Yordamni topish](03-yordam.md) | `man` (bo'limlar 1/5/8), `--help`, `whatis`, `apropos`, `type`, `help` (bash ichki buyruqlari); man sahifasini o'qish tartibi | T | [DR 1.4.10](https://www.debian.org/doc/manuals/debian-reference/ch01.en.html#_basic_unix_commands) · [UB Getting help](https://ubuntu.com/server/docs/tutorial/welcome-to-the-terminal/) · [DM man(1)](https://manpages.debian.org/bookworm/man-db/man.1.en.html) |
 
 ## II qism — Fayl tizimi (4–10)
@@ -98,16 +98,16 @@ Bu qo'llanmaga kirmaydigan mavzular:
 | 09 | [Hamma narsa — fayl](09-hamma-narsa-fayl.md) | Qurilma fayllari (`/dev/null`, `/dev/zero`, `/dev/urandom`); socket va nomli pipe; `/proc` va `/sys`; tmpfs | T | [DR 1.2.8–1.2.13](https://www.debian.org/doc/manuals/debian-reference/ch01.en.html#_device_files) · [MAN proc(5)](https://man7.org/linux/man-pages/man5/proc.5.html) |
 | 10 | [Disk va mount](10-disk-va-mount.md) | `df`, `du`, `lsblk`, `findmnt`, `mount`; `/etc/fstab` va UUID; "disk to'la, lekin fayl topilmaydi" — o'chirilgan, lekin ochiq fayl | T+V | [DR 9.6.1](https://www.debian.org/doc/manuals/debian-reference/ch09.en.html#_disk_space_usage) · [DR 9.6.3](https://www.debian.org/doc/manuals/debian-reference/ch09.en.html#_accessing_partition_using_uuid) · [DR 9.8.12](https://www.debian.org/doc/manuals/debian-reference/ch09.en.html#_invisible_disk_space_consumption) · [DM lsblk(8)](https://manpages.debian.org/bookworm/util-linux/lsblk.8.en.html) |
 
-## III qism — Qobiq (11–16)
+## III qism — Qobiq (shell) (11–16)
 
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
-| 11 | Standart oqimlar | stdin, stdout, stderr; `>`, `>>`, `2>`, `2>&1`, `<`; here-document; `/dev/null` ga yo'naltirish; yo'naltirish tartibi nega muhim | T | [UB Standard streams](https://ubuntu.com/server/docs/tutorial/cli-in-depth/) · [GNU Bash: Redirections](https://www.gnu.org/software/bash/manual/bash.html#Redirections) · [DR 1.5.8](https://www.debian.org/doc/manuals/debian-reference/ch01.en.html#_typical_command_sequences_and_shell_redirection) |
-| 12 | Pipe va buyruqlar zanjiri | `\|`, `;`, `&&`, `\|\|`; chiqish kodi (`$?`); `pipefail`; `tee` | T | [UB Pipes, Chaining commands](https://ubuntu.com/server/docs/tutorial/cli-in-depth/) · [GNU Bash: Pipelines, Lists](https://www.gnu.org/software/bash/manual/bash.html#Pipelines) · [DR 1.5.7](https://www.debian.org/doc/manuals/debian-reference/ch01.en.html#_return_value_of_the_command) |
-| 13 | O'zgaruvchilar va muhit | Qobiq o'zgaruvchisi va muhit o'zgaruvchisi; `export`, `env`, `unset`; `PATH`, `HOME`, `LANG`; buyruq qayerdan topiladi (`command -v`, `type`) | T | [UB Shell environment variables](https://ubuntu.com/server/docs/tutorial/cli-in-depth/) · [DR 1.5.1–1.5.4](https://www.debian.org/doc/manuals/debian-reference/ch01.en.html#_command_execution_and_environment_variable) · [MAN environ(7)](https://man7.org/linux/man-pages/man7/environ.7.html) |
-| 14 | Kengaytmalar va qo'shtirnoq | Qobiq buyruqni qanday o'qiydi (bosqichma-bosqich); tilde, `$var`, `$(...)`, `$((...))`, `{a,b}`, glob (`*`, `?`, `[...]`); bitta va qo'sh qo'shtirnoq; probelli fayl nomlari | T | [UB Shell expansion](https://ubuntu.com/server/docs/tutorial/cli-in-depth/) · [GNU Bash: Shell Expansions, Quoting](https://www.gnu.org/software/bash/manual/bash.html#Shell-Expansions) · [DR 12.1.6](https://www.debian.org/doc/manuals/debian-reference/ch12.en.html#_the_shell_command_line_processing_sequence) · [MAN glob(7)](https://man7.org/linux/man-pages/man7/glob.7.html) |
-| 15 | Bash'ni sozlash | Login va interaktiv qobiq; `.profile`, `.bashrc` qachon o'qiladi; `alias`; tarix (`history`, Ctrl+R); foydali tugmalar | T | [DR 1.4.1–1.4.3](https://www.debian.org/doc/manuals/debian-reference/ch01.en.html#_the_login_shell) · [DR 1.5.9](https://www.debian.org/doc/manuals/debian-reference/ch01.en.html#_command_alias) · [GNU Bash: Bash Startup Files](https://www.gnu.org/software/bash/manual/bash.html#Bash-Startup-Files) |
-| 16 | Matn muharriri | Serverda faylni tahrirlash: `nano` va `vim` asoslari; `EDITOR`/`VISUAL`; `update-alternatives` bilan standart muharrirni tanlash; nano va vim qiyosi | T | [DR 1.4.6–1.4.7](https://www.debian.org/doc/manuals/debian-reference/ch01.en.html#_the_text_editor) · [DM nano(1)](https://manpages.debian.org/bookworm/nano/nano.1.en.html) |
+| 11 | [Standart oqimlar](11-standart-oqimlar.md) | stdin, stdout, stderr; `>`, `>>`, `2>`, `2>&1`, `<`; here-document; `/dev/null` ga yo'naltirish; yo'naltirish tartibi nega muhim | T | [UB Standard streams](https://ubuntu.com/server/docs/tutorial/cli-in-depth/) · [GNU Bash: Redirections](https://www.gnu.org/software/bash/manual/bash.html#Redirections) · [DR 1.5.8](https://www.debian.org/doc/manuals/debian-reference/ch01.en.html#_typical_command_sequences_and_shell_redirection) |
+| 12 | [Pipe va buyruqlar zanjiri](12-pipe.md) | `\|`, `;`, `&&`, `\|\|`; chiqish kodi (`$?`); `pipefail`; `tee` | T | [UB Pipes, Chaining commands](https://ubuntu.com/server/docs/tutorial/cli-in-depth/) · [GNU Bash: Pipelines, Lists](https://www.gnu.org/software/bash/manual/bash.html#Pipelines) · [DR 1.5.7](https://www.debian.org/doc/manuals/debian-reference/ch01.en.html#_return_value_of_the_command) |
+| 13 | [O'zgaruvchilar va muhit](13-ozgaruvchilar.md) | Qobiq (shell) o'zgaruvchisi va muhit o'zgaruvchisi; `export`, `env`, `unset`; `PATH`, `HOME`, `LANG`; buyruq qayerdan topiladi (`command -v`, `type`) | T | [UB Shell environment variables](https://ubuntu.com/server/docs/tutorial/cli-in-depth/) · [DR 1.5.1–1.5.4](https://www.debian.org/doc/manuals/debian-reference/ch01.en.html#_command_execution_and_environment_variable) · [MAN environ(7)](https://man7.org/linux/man-pages/man7/environ.7.html) |
+| 14 | [Kengaytmalar va qo'shtirnoq](14-kengaytmalar.md) | Qobiq (shell) buyruqni qanday o'qiydi (bosqichma-bosqich); tilde, `$var`, `$(...)`, `$((...))`, `{a,b}`, glob (`*`, `?`, `[...]`); bitta va qo'sh qo'shtirnoq; probelli fayl nomlari | T | [UB Shell expansion](https://ubuntu.com/server/docs/tutorial/cli-in-depth/) · [GNU Bash: Shell Expansions, Quoting](https://www.gnu.org/software/bash/manual/bash.html#Shell-Expansions) · [DR 12.1.6](https://www.debian.org/doc/manuals/debian-reference/ch12.en.html#_the_shell_command_line_processing_sequence) · [MAN glob(7)](https://man7.org/linux/man-pages/man7/glob.7.html) |
+| 15 | [Bash'ni sozlash](15-bash-sozlash.md) | Login va interaktiv qobiq (shell); `.profile`, `.bashrc` qachon o'qiladi; `alias`; tarix (`history`, Ctrl+R); foydali tugmalar | T | [DR 1.4.1–1.4.3](https://www.debian.org/doc/manuals/debian-reference/ch01.en.html#_the_login_shell) · [DR 1.5.9](https://www.debian.org/doc/manuals/debian-reference/ch01.en.html#_command_alias) · [GNU Bash: Bash Startup Files](https://www.gnu.org/software/bash/manual/bash.html#Bash-Startup-Files) |
+| 16 | [Matn muharriri](16-matn-muharriri.md) | Serverda faylni tahrirlash: `nano` va `vim` asoslari; `EDITOR`/`VISUAL`; `update-alternatives` bilan standart muharrirni tanlash; nano va vim qiyosi | T | [DR 1.4.6–1.4.7](https://www.debian.org/doc/manuals/debian-reference/ch01.en.html#_the_text_editor) · [DM nano(1)](https://manpages.debian.org/bookworm/nano/nano.1.en.html) |
 
 ## IV qism — Matn va loglar bilan ishlash (17–21)
 
@@ -203,7 +203,7 @@ Bu qismdagi tekshiruv tartibi (qaysi buyruq qaysi ketma-ketlikda) rasmiy hujjatl
 | 06 | Nom → inode → ma'lumot bloklari; hard link va symlink o'chirilganda nima qoladi |
 | 07 | `rwx` bitlari → sonli yozuv (`754`); katalogda `x` nima uchun kerak |
 | 11 | Uchta oqim va fayl deskriptorlari; `2>&1` tartibi |
-| 14 | Qobiq bir qatorni qadam-baqadam kengaytiradi: tilde → o'zgaruvchi → `$()` → so'zlarga bo'lish → glob |
+| 14 | Qobiq (shell) bir qatorni qadam-baqadam kengaytiradi: tilde → o'zgaruvchi → `$()` → so'zlarga bo'lish → glob |
 | 28 | `fork` va `exec`: bash ichidan buyruq ishga tushganda jarayon daraxti qanday o'sadi |
 | 29 | Signal yuborilishi: SIGTERM — ilova ishini tugatadi, SIGKILL — yadro darhol to'xtatadi |
 | 33 | Yonish bosqichlari va systemd unit'lari bog'liqlik grafi |

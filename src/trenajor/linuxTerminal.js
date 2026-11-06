@@ -48,7 +48,17 @@ export function terminalniOch(buyruqlar = []) {
   terminal.navbat.push(...buyruqlar)
 }
 
-/** Kod blokidagi `$ buyruq` qatorlari; `$` siz qatorlar — chiqish, ular yuborilmaydi */
+/**
+ * Kod blokidagi `$ buyruq` qatorlari; `$` siz qatorlar — chiqish, ular yuborilmaydi.
+ * Buyruqdan keyingi `> ...` qatorlar — qobiqning davom etish satri (here-document): buyruqqa qo'shiladi.
+ */
 export function buyruqlarniOl(matn) {
-  return matn.split('\n').filter((q) => q.startsWith('$ ')).map((q) => q.slice(2))
+  const natija = []
+  let davom = false
+  for (const q of matn.split('\n')) {
+    if (q.startsWith('$ ')) { natija.push(q.slice(2)); davom = true }
+    else if (davom && q.startsWith('> ')) natija[natija.length - 1] += '\n' + q.slice(2)
+    else davom = false
+  }
+  return natija
 }

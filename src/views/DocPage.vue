@@ -170,6 +170,15 @@ function enhanceTerminalBlocks(container) {
 const ANIMATSIYALAR = {
   inode: () => import('@/animatsiya/InodeAnim.vue'),
   ruxsat: () => import('@/animatsiya/RuxsatAnim.vue'),
+  oqim: () => import('@/animatsiya/OqimAnim.vue'),
+  zanjir: () => import('@/animatsiya/ZanjirAnim.vue'),
+  muhit: () => import('@/animatsiya/MuhitAnim.vue'),
+  kengaytma: () => import('@/animatsiya/KengaytmaAnim.vue'),
+  'bash-fayllar': () => import('@/animatsiya/BashFayllarAnim.vue'),
+  vim: () => import('@/animatsiya/VimAnim.vue'),
+  qadamli: () => import('@/animatsiya/QadamliAnim.vue'),
+  acl: () => import('@/animatsiya/AclAnim.vue'),
+  daraxt: () => import('@/animatsiya/DaraxtAnim.vue'),
 }
 let animatsiyaIlovalari = []
 
@@ -182,7 +191,9 @@ function enhanceAnimations(container) {
   for (const el of container.querySelectorAll('[data-animatsiya]')) {
     ANIMATSIYALAR[el.dataset.animatsiya]?.().then(({ default: komponent }) => {
       if (!el.isConnected) return
-      const app = createApp(komponent)
+      // data-* atributlar (masalan, data-nom) komponentga props bo'lib beriladi
+      const { animatsiya, ...props } = el.dataset
+      const app = createApp(komponent, props)
       app.mount(el)
       animatsiyaIlovalari.push(app)
     })
