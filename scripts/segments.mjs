@@ -87,19 +87,87 @@ function keepFirstVariant(markdown) {
 function inlineText(token) {
   if (!token?.children) return token?.content ?? ''
 
-  return token.children
-    .map((child) => {
-      if (child.type === 'text' || child.type === 'code_inline') return child.content
-      if (child.type === 'softbreak' || child.type === 'hardbreak') return ' '
+  const parts = []
+  const children = token.children
+  for (let i = 0; i < children.length; i += 1) {
+    const child = children[i]
 
-      return ''
-    })
-    .join('')
+    if (child.type === 'link_open') {
+      const href = child.attrGet('href') || ''
+      let linkText = ''
+      let j = i + 1
+
+      while (j < children.length && children[j].type !== 'link_close') {
+        if (children[j].type === 'text' || children[j].type === 'code_inline') {
+          linkText += children[j].content
+        }
+        j += 1
+      }
+
+      if (/^(havola|link|url)$/i.test(linkText.trim()) && href.startsWith('http')) {
+        parts.push(href)
+        i = j
+        continue
+      }
+    }
+
+    if (child.type === 'text' || child.type === 'code_inline') parts.push(child.content)
+    if (child.type === 'softbreak' || child.type === 'hardbreak') parts.push(' ')
+  }
+
+  return parts.join('')
+}
+
+const CASE_MAP = {
+  da: 'havolasida',
+  ga: 'havolasiga',
+  ka: 'havolasiga',
+  qa: 'havolasiga',
+  dan: 'havolasidan',
+  ni: 'havolasini',
+  ning: 'havolasining',
+  dagi: 'havolasidagi',
+}
+
+function spokenDomain(host) {
+  return host.replace(/^www\./i, '').split('.').join(' nuqta ')
+}
+
+function convertLinksAndUrls(text) {
+  // 1. URLs (https://... or http://...)
+  let res = text.replace(/https?:\/\/([^\s\)\"\>]+)(?:[\s\x27`-]*\b(da|ga|ka|qa|dan|ni|ning|dagi)\b|\s+havolasi(da|ga|dan|ni|ning|dagi)?\b)?/gi,
+    (match, urlPath, directSuffix, havolaSuffix) => {
+      const domain = urlPath.split('/')[0].split('?')[0].split('#')[0]
+      const spoken = spokenDomain(domain)
+      if (directSuffix) {
+        return `${spoken} ${CASE_MAP[directSuffix.toLowerCase()]}`
+      }
+      if (havolaSuffix !== undefined) {
+        return `${spoken} havolasi${havolaSuffix}`
+      }
+      return `${spoken} havolasi`
+    },
+  )
+
+  // 2. Domain names (google.com, debian.org, manpages.ubuntu.com, etc.)
+  const domainPattern = /\b((?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+(?:com|org|net|io|dev|edu|gov|uz))\b(?:[\s\x27`-]*\b(da|ga|ka|qa|dan|ni|ning|dagi)\b|\s+havolasi(da|ga|dan|ni|ning|dagi)?\b)?/gi
+
+  res = res.replace(domainPattern, (match, domain, directSuffix, havolaSuffix) => {
+    const spoken = spokenDomain(domain)
+    if (directSuffix) {
+      return `${spoken} ${CASE_MAP[directSuffix.toLowerCase()]}`
+    }
+    if (havolaSuffix !== undefined) {
+      return `${spoken} havolasi${havolaSuffix}`
+    }
+    return spoken
+  })
+
+  return res
 }
 
 function cleanText(text) {
-  return String(text)
-    .replace(/https?:\/\/\S+/g, 'havola')
+  return convertLinksAndUrls(String(text))
     .replace(/[←→↑↓⇄]/g, ' ')
     .replace(/[*_#>|]/g, ' ')
     .replace(/\s+/g, ' ')

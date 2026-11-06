@@ -38,7 +38,7 @@ const ENDPOINT = 'https://generativelanguage.googleapis.com/v1beta/interactions'
  * O'qish uslubi — transkriptga QO'SHILMAYDI (aks holda model uni ham ovoz chiqarib o'qiydi).
  * Rasmiy tavsiya: qisqa ibora; uzun "Director's notes" ovozni buzadi.
  */
-const STYLE = 'calm, clear and natural narration of an educational audiobook, moderate pace'
+const STYLE = 'calm, clear and natural narration of an educational audiobook, moderate pace. English technical terms, software names, and domains are pronounced with accurate, natural English pronunciation.'
 
 /** Bepul tarif limitlari (AI Studio, 2026-10-09): 3 so'rov/daq, 10 000 kirish tokeni/daq, 10 so'rov/kun */
 const LIMITS = { rpm: 3, tpm: 10_000, rpd: 10 }
