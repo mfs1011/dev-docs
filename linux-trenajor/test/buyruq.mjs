@@ -37,12 +37,13 @@ vm.add_listener('emulator-ready', async () => {
     await kut(() => buf.includes(BELGI), 10000)
     for (const q of buyruqlar) {
       buf = ''
-      vm.serial0_send(q + '\n')
+      // ko'p qatorli buyruq (here-document va h.k.): kirish faylida qatorlar ⏎ bilan ajratiladi
+      vm.serial0_send(q.split('⏎').join('\n') + '\n')
       await kut(() => buf.includes(BELGI), 120000)
       const chiqish = toza(buf.slice(0, buf.indexOf(BELGI)))
       // birinchi qator — terminal qaytargan buyruqning o'zi (echo), oxirgisi — keyingi prompt (belgi prompt oxirida)
       const qatorlar = chiqish.split('\n').slice(1, -1)
-      console.log(`# ${q}`)
+      console.log(`# ${q.split('⏎')[0]}`)
       if (qatorlar.length) console.log(qatorlar.join('\n'))
     }
   } catch (e) {
