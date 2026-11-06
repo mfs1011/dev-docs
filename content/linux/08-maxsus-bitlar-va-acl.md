@@ -39,6 +39,8 @@ $ touch f && chmod u+s f && ls -l f
 
 Sonli yozuvda ular to'rtinchi (eng chap) raqam bo'ladi: setuid `4`, setgid `2`, sticky `1`. Masalan, `chmod 2775`, `chmod 1777`.
 
+<div data-animatsiya="qadamli" data-nom="sticky"></div>
+
 ### Sticky bit: `/tmp`
 
 ```text
@@ -161,6 +163,8 @@ cat: sir.txt: Permission denied
 ```
 
 `user:vali:r--` yozuvi turibdi, lekin `#effective:---`: mask uni hech narsaga cheklab qo'ydi. ACL ishlatilgan faylda ruxsatni `chmod` bilan emas, `setfacl` bilan o'zgartiring.
+
+<div data-animatsiya="acl"></div>
 
 ### Default ACL: yangi fayllar uchun
 

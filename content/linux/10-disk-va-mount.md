@@ -1,6 +1,6 @@
 # 10 — Disk va mount
 
-[← Oldingi: Hamma narsa — fayl](09-hamma-narsa-fayl.md) · [Mundarija](README.md)
+[← Oldingi: Hamma narsa — fayl](09-hamma-narsa-fayl.md) · [Mundarija](README.md) · [Keyingi: Standart oqimlar →](11-standart-oqimlar.md)
 
 ## Tushuncha
 
@@ -150,6 +150,8 @@ $ du -h --max-depth=1 /var | sort -h | tail -5
 Debian Reference bu holatni alohida ko'rsatadi: **o'chirilgan, lekin ochiq turgan** fayllar diskda joy egallayveradi, oddiy `du` esa ularni ko'rmaydi.
 
 6-bobdan eslang: `rm` faylni emas, nomni o'chiradi. Ma'lumot oxirgi nom **va** faylni ochib turgan oxirgi jarayon yo'qolganda o'chadi. Odatiy misol: ilova log faylga yozib turibdi, kimdir joy bo'shatish uchun logni `rm` qildi. Ilova esa faylni hali ochiq tutib turibdi.
+
+<div data-animatsiya="qadamli" data-nom="ochiq-fayl"></div>
 
 Trenajorda shu holatni yaratamiz. `tail -f` faylni ochiq tutib turadi (fonda, `&`):
 

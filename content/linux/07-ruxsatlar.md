@@ -227,7 +227,7 @@ $ umask 022
 | `002` | `rw-rw-r--` | `rwxrwxr-x` | Guruh birga ishlaydi |
 | `077` | `rw-------` | `rwx------` | Maxfiy ma'lumot bilan ishlaydigan servis |
 
-Debian har bir foydalanuvchiga uning nomidagi shaxsiy guruhni yaratadi (user private group). Debian Reference'ga ko'ra shu sababli `002` ham xavfsiz bo'ladi: har kimning guruhida faqat o'zi bor. `umask` buyrug'i faqat joriy qobiqqa ta'sir qiladi. Doimiy qilish uchun u `~/.bashrc` ga yoziladi (15-bob), servis uchun esa systemd'dagi `UMask=` (39-bob).
+Debian har bir foydalanuvchiga uning nomidagi shaxsiy guruhni yaratadi (user private group). Debian Reference'ga ko'ra shu sababli `002` ham xavfsiz bo'ladi: har kimning guruhida faqat o'zi bor. `umask` buyrug'i faqat joriy qobiqqa (shell) ta'sir qiladi. Doimiy qilish uchun u `~/.bashrc` ga yoziladi (15-bob), servis uchun esa systemd'dagi `UMask=` (39-bob).
 
 ## Debian va Ubuntu
 

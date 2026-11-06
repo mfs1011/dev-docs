@@ -1,6 +1,6 @@
 # 03 — Yordamni topish
 
-[← Oldingi: Terminal va qobiq](02-terminal-va-qobiq.md) · [Mundarija](README.md)
+[← Oldingi: Terminal va qobiq (shell)](02-terminal-va-qobiq.md) · [Mundarija](README.md)
 
 ## Tushuncha
 
@@ -15,7 +15,7 @@ Bu bobda to'rt vosita bor. Ular bitta savolga turli chuqurlikda javob beradi:
 | Hamma tafsilot kerak | `man buyruq` | To'liq qo'llanma sahifasi |
 | Qaysi buyruq kerakligini bilmayman | `apropos` (`man -k`) | Tavsifida so'z uchragan barcha buyruqlar |
 
-Qobiqning ichki buyruqlari (`cd`, `type` va boshqalar) uchun esa bash'ning `help` buyrug'i bor.
+Qobiqning (shell) ichki buyruqlari (`cd`, `type` va boshqalar) uchun esa bash'ning `help` buyrug'i bor.
 
 ## `man` — qo'llanma sahifasi
 
@@ -83,7 +83,7 @@ Qo'llanma raqamlangan **bo'limlarga** bo'lingan. Raqam sahifa sarlavhasida turad
 
 | Bo'lim | Nima bor |
 | --- | --- |
-| **1** | Bajariladigan dasturlar va qobiq buyruqlari |
+| **1** | Bajariladigan dasturlar va qobiq (shell) buyruqlari |
 | 2 | Tizim chaqiruvlari (yadro beradigan funksiyalar) |
 | 3 | Kutubxona funksiyalari |
 | 4 | Maxsus fayllar (odatda `/dev` da) |
@@ -196,7 +196,7 @@ $ echo $?
 
 `man(1)` ning `EXIT STATUS` bo'limiga ko'ra `16` — "kamida bitta sahifa, fayl yoki kalit so'z topilmadi".
 
-## `help` va `type` — qobiqning ichki buyruqlari
+## `help` va `type` — qobiqning (shell) ichki buyruqlari
 
 2-bobdan eslang: `cd` alohida dastur emas, bash'ning ichki buyrug'i. Ichki buyruqlar haqida ma'lumot `help` bilan olinadi. Bash qo'llanmasiga ko'ra `-d` opsiyasi qisqa tavsif beradi:
 

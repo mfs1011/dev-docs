@@ -91,7 +91,7 @@ Xato xabari ekranga chiqmadi, chiqish kodi esa qoldi. `/dev/full` dasturingiz "d
 
 ## Nomli pipe (FIFO)
 
-Debian Reference'ga ko'ra nomli pipe — pipe kabi ishlaydigan fayl. Bir tomondan yozilgani ikkinchi tomondan chiqadi: birinchi kirgan birinchi chiqadi (FIFO, First-In-First-Out). Uning hajmi doim `0`: u ma'lumotni saqlamaydi, faqat ikki jarayonni bog'laydi. Qobiqdagi `|` dan (12-bob) farqi: uning nomi bor. Shuning uchun ikki jarayon bitta buyruq qatorida, hatto bitta foydalanuvchi nomidan ishlashi shart emas.
+Debian Reference'ga ko'ra nomli pipe — pipe kabi ishlaydigan fayl. Bir tomondan yozilgani ikkinchi tomondan chiqadi: birinchi kirgan birinchi chiqadi (FIFO, First-In-First-Out). Uning hajmi doim `0`: u ma'lumotni saqlamaydi, faqat ikki jarayonni bog'laydi. Qobiqdagi (shell) `|` dan (12-bob) farqi: uning nomi bor. Shuning uchun ikki jarayon bitta buyruq qatorida, hatto bitta foydalanuvchi nomidan ishlashi shart emas.
 
 ```text
 $ cd /tmp && mkfifo quvur
