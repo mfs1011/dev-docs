@@ -1216,6 +1216,8 @@ a.home-account:hover { border-color: var(--border-strong); text-decoration: none
 /* qaysi tizimda olingan: Debian (logo qizili #D70A53) va Ubuntu (brend to'q sarig'i #E95420) — to'q fonda ochroq */
 .code-lang.env-debian { color: #ff5c8f; }
 .code-lang.env-ubuntu { color: #f2783f; }
+/* serverga tashqaridan yuborilgan so'rov (noutbuk) — neytral ko'k */
+.code-lang.env-tashqi { color: #79c0ff; }
 
 .code-block pre {
     margin: 0;

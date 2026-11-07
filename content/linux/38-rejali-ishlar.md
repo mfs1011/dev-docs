@@ -1,6 +1,6 @@
 # 38 — Rejali ishlar
 
-[← Oldingi: Loglar: journalctl](37-journalctl.md) · [Mundarija](README.md)
+[← Oldingi: Loglar: journalctl](37-journalctl.md) · [Mundarija](README.md) · [Keyingi: Servisni cheklash →](39-servisni-cheklash.md)
 
 ## Tushuncha
 

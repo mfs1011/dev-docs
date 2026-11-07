@@ -1,12 +1,13 @@
 # Ish holati (boshqa kompyuterda davom ettirish uchun)
 
-Oxirgi yangilanish: 2026-11-07. Yangi kompyuterda ishni boshlashdan oldin shu faylni, `CLAUDE.md` ni va `docs/tts.md` ni o'qing.
+Oxirgi yangilanish: 2026-11-07 (kechqurun). Yangi kompyuterda ishni boshlashdan oldin shu faylni, `CLAUDE.md` ni va `docs/tts.md` ni o'qing.
 
 ## Linux kitobi (`content/linux/`)
 
 - Mundarija: `content/linux/README.md` — 12 qism, 54 bob, har bob yonida rasmiy manba.
-- Tayyor: **1–38-boblar** (I–VII qismlar va VIII qismning 33–38-boblari).
-- **Keyingi: 39-bob — Servisni cheklash**, keyin IX Tarmoq (40–44), X SSH (45–47), XI Bash skriptlar (48–51), XII Muammoni topish (52–54).
+- Tayyor: **1–47-boblar** (I–X qismlar).
+- **Keyingi: 48-bob — Birinchi skript**, keyin XI Bash skriptlar (48–51, trenajorda) va XII Muammoni topish (52–54, trenajor va VPS). Mundarijadagi qatorlar va manbalar: `content/linux/README.md`.
+- Oxirgi sessiya (2026-11-07) nima qilgani va yangi qoidalar — pastdagi "2026-11-07 sessiyasi" bo'limida.
 - Rasmiy manbalar: Debian Reference, Ubuntu Server docs, man sahifalari (trenajorda `MANWIDTH=100 man X | col -b`), GNU qo'llanmalari. gnu.org avtomatik so'rovlarga ko'pincha 403/429 qaytaradi — o'sha paytda man sahifalari trenajordan olinadi.
 
 ### Har bobning qoidalari
@@ -27,6 +28,29 @@ Oxirgi yangilanish: 2026-11-07. Yangi kompyuterda ishni boshlashdan oldin shu fa
 - `bob.mjs` node'da (fayllar diskdan) ishlaydi, o'quvchi esa **brauzerda** (fayllar serverdan bittalab yuklanadi). Og'ir systemd buyruqlari brauzerda sekin yoki ishlamaydi: `systemctl list-unit-files` 25 soniyadan keyin `Connection timed out`, `systemd-analyze` birinchi marta ~14 s. Shunday buyruqlarni brauzerda alohida sinang (`/linux/trenajor`, Playwright).
 - systemd buyruqlariga trenajorda `--no-pager`.
 
+### Bob yozish tartibi (2026-11-07 dagi amaliyot)
+
+1. Mundarija qatoridagi rasmiy sahifalarni o'qish: trenajorda `MANWIDTH=100 man X | col -bx`, VPS'da ham shunday; veb-sahifalar — `linux-trenajor/asboblar/sahifa.py URL h|a|t [naqsh]`.
+2. Buyruqlarni avval sinash: trenajorda `node linux-trenajor/test/buyruq.mjs fayl.txt`, VPS'da `linux-trenajor/asboblar/vps.sh`.
+3. Bobni yozish: trenajor bloklarida faqat `$ buyruq`, VPS bloklarida (` ```text vps `) va noutbuk bloklarida (` ```text tashqi `) yozib olingan haqiqiy chiqish.
+4. `node linux-trenajor/test/bob.mjs content/linux/NN-....md` — trenajor chiqishlarini to'ldiradi; chiqishlarni o'qib, matnni ularga moslash.
+5. `python3 linux-trenajor/asboblar/chiqish_tekshir.py bob.md yozuv.txt` — VPS/tashqi bloklardagi har qator yozuvda bormi (0 bo'lishi shart).
+6. Animatsiya (`src/animatsiya/qadamlar.js`, qadamli) — buyruq va chiqishlar **to'liq va aynan**, `...` bilan qisqartirmasdan.
+7. Mashq: `python3 linux-trenajor/asboblar/mashq_qosh.py m48.js`, test: `node linux-trenajor/test/mashqlar.mjs 48-...`.
+8. `python3 linux-trenajor/asboblar/bob_ulash.py 48 48-fayl.md "Mundarijadagi nom"` — oldingi bobga "Keyingi", README qatori, `NN/54` sanog'i.
+9. `linux-trenajor/asboblar/havola.sh bob.md` — barcha havolalar 200; Playwright bilan sahifani ochib, konsol xatosi yo'qligini tekshirish.
+
+### Maxfiylik (VPS va noutbuk chiqishlari)
+
+- VPS'ning ochiq IP manzili chiqishlarda va ko'rsatilgan buyruqlarda `203.0.113.10` bilan almashtiriladi, noutbukning ochiq IP'si (server loglarida) `198.51.100.20` bilan (RFC 5737). Bobda bu ochiq aytiladi (40, 43, 45–47-boblardagi kabi). `vps.sh` buni o'zi qiladi.
+- `hostnamectl` — `grep -vE 'Machine ID|Boot ID|Product UUID'` bilan (machine-id(5): maxfiy).
+- VPS host kalitining fingerprint'i va `known_hosts` mazmuni chiqarilmaydi: ular orqali server manzilini topish mumkin.
+- Server loglaridagi admin kaliti fingerprint'i chiqarilmaydi (log `grep` bilan filtrlanadi).
+
+### Trenajorda yo'q vositalar
+
+`ssh`, `scp`, `rsync`, `curl`, `dig`, `nft`/`iptables`/`ufw`, ifupdown, Netplan, `resolvectl` yo'q; tarmoq faqat `lo`. Shunday boblar VPS va noutbukda sinaladi, mashqsiz (41, 43, 45–47). `systemd-analyze security` trenajorda 20+ soniya — VPS'da ko'rsatiladi.
+
 ### Mashq yozish qoidalari
 
 - `setup` `( set -e ... )` ichida bajariladi: xato qaytarishi mumkin bo'lgan har buyruqqa `|| true`.
@@ -43,6 +67,8 @@ Oxirgi yangilanish: 2026-11-07. Yangi kompyuterda ishni boshlashdan oldin shu fa
 | Animatsiyalar | `src/animatsiya/*.vue`, qadamli animatsiyalar ma'lumoti `src/animatsiya/qadamlar.js`; markdown'da `<div data-animatsiya="nom" data-nom="..."></div>`, ro'yxat `src/views/DocPage.vue` (`ANIMATSIYALAR`) |
 | Trenajor sahifasi va pastki terminal | `src/views/LinuxTrenajorPage.vue`, `src/components/LinuxTerminal.vue`, `src/trenajor/linuxTerminal.js` |
 | Trenajor tasvirini yig'ish | `linux-trenajor/scripts/yigish.sh` (Debian 12 i386 + systemd, v86) |
+| Bob yozish yordamchilari | `linux-trenajor/asboblar/`: `sahifa.py`, `vps.sh`, `chiqish_tekshir.py`, `mashq_qosh.py`, `bob_ulash.py`, `havola.sh` |
+| Kod bloki muhiti | ` ```text vps ` — VPS chiqishi, ` ```text tashqi ` — noutbukdan serverga so'rov (macOS); ikkalasida trenajor tugmasi yo'q (`src/markdown.js`, `src/views/DocPage.vue`) |
 | Ovozli o'qish talaffuzlari | `scripts/talaffuz.json` (batafsil `docs/tts.md`) |
 
 ### Trenajorni lokal yig'ish va sinash
@@ -73,8 +99,10 @@ node linux-trenajor/test/mashqlar.mjs          # barcha mashqlarni brauzerda tek
 - 2026-11-07 dan egasi qo'llanma uchun **to'liq ruxsat** bergan: qayta yondirish, SSH'ni mustahkamlash, firewall, sinov servislari — har o'zgarish bobda hujjatlanadi.
 - Hozirgi holat (2026-11-07):
   - VPS qayta yondirildi, yadro 7.0.0-42 (33–34-boblar);
-  - `lsof`, `psmisc`, `tmux` o'rnatildi (30, 32-boblar);
-  - `salom.service` (`python3 -m http.server`, 127.0.0.1:8000, `/srv/salom`, `/etc/salom.env`, `salom` foydalanuvchisi) — 35–39-boblar uchun; **39-bob tugagach o'chiriladi**;
+  - `lsof`, `psmisc`, `tmux` (30, 32-boblar) va `rsync` 3.4.1 (46-bob) o'rnatildi;
+  - `salom.service` va unga tegishli hamma narsa 39-bobdan keyin o'chirildi; 43–47-boblardagi sinov servislari, `demo` foydalanuvchisi va vaqtinchalik ufw qoidalari ham o'chirilgan;
+  - ufw yoqilgan: standart holatda `deny (incoming)`, provayder qoidalari 80, 443, 22 va 1500/tcp (ispmanager, unda hech narsa tinglamaydi);
+  - vaqt zonasi `Europe/Moscow` (provayder), vaqtni chrony sinxronlaydi;
   - ochiq masala: provayder apt manbalarida `trusted: yes` va `http://` mirror (26-bob);
   - provayder shabloni: Netplan yo'q (ifupdown), cron yo'q, snap yo'q.
 
@@ -89,6 +117,20 @@ Birinchi noutbukda disk kam va Docker yo'q. Sinov VPS'ida 2 GB xotira bor: `MemT
 
 Ikkinchi noutbukda boshlashdan oldin shu faylni, `CLAUDE.md` ni va kitobning `README.md` sini (mundarija, versiyalar jadvali) o'qing. Versiyalarni yozishdan oldin qayta tekshiring.
 
+## 2026-11-07 sessiyasi (birinchi noutbuk)
+
+- **PR #197** (29–38-boblar) va **PR #198** (rejadagi 8 kitob mundarijasi: Web asoslari, Redis, Xabar tizimlari, RabbitMQ, Kafka, Nginx va HTTPS, Server xavfsizligi, Deploy amaliyoti — saytga "tayyorlanmoqda" holatida, logolar bilan) merge qilingan.
+- Linux **39–47**-boblar yozildi (shu PR): servisni cheklash, IP/interfeys/marshrut, tarmoq boshqaruvchilari, DNS, port va ulanish, vaqt va xost nomi, SSH, fayl ko'chirish, SSH tunnel. Mashqlar: `39-cheklov`, `40-ip`, `42-hosts`, `44-vaqt`. Animatsiyalar: `bind`, `nom`, `port`, `ssh`, `tunnel`.
+- Kuzatuv (rasmiy manbada mexanizmi topilmadi, bobda "kuzatildi" deb yozilgan): systemd-resolved stub'i `/etc/hosts` dagi yangi yozuvni ~3 soniyadan keyin ko'radi (42-bob).
+- Rejadagi kitoblar bo'yicha egasining qarori kutilmoqda: HTTPS boblari uchun domen; RabbitMQ/Redis misollari tili (hozir Node.js, PHP muqobil); Deploy kitobidagi GitHub Actions uchun sinov repozitoriysi.
+
+## Egasining doimiy ko'rsatmalari (birinchi noutbukdagi xotiradan)
+
+- Haftalik limit: 90% gacha ishlash. 90% ga yetsa — joriy bobni tugatib, commit + push + PR, keyin to'xtash (chala qoldirmaslik). Boblar orasida limitni tekshirish.
+- VPS: qo'llanma uchun to'liq ruxsat (qayta yondirish, SSH, firewall, sinov servislari); har o'zgarish bobda hujjatlanadi, vaqtinchaliklari tozalanadi.
+- Kafka va Docker — ikkinchi noutbukda (yuqoridagi bo'lim).
+- Javoblar o'zbek tilida, qisqa.
+
 ## Ish tartibi
 
 - Har vazifa `main` dan alohida branch, PR `main` ga, merge'ni egasi qiladi. Force push yo'q.
@@ -96,12 +138,20 @@ Ikkinchi noutbukda boshlashdan oldin shu faylni, `CLAUDE.md` ni va kitobning `RE
 - Commit/push/PR faqat egasi so'raganda.
 - Uzoq yozish ishlarida 5 soatlik limitni bob oralarida tekshirish; egasi aytgan chegarada joriy bobni tugatib to'xtash.
 
+## Ikkinchi noutbukda Linux kitobini davom ettirish
+
+1. `git fetch origin`. Linux PR'i (39–47) merge bo'lgan bo'lsa — `git switch -c docs/linux-48-54 origin/main`; bo'lmagan bo'lsa — `docs/linux-qism-8-12` ni olib, o'sha yerdan davom etish.
+2. `npm ci`, `sh linux-trenajor/scripts/yigish.sh`, keyin `npx vite --port 5182` (trenajor testlari shu portga ulanadi).
+3. VPS: kalitni xavfsiz yo'l bilan ko'chirish, `~/.ssh/config` ga `Host lab` (HostName, `User root`, IdentityFile, `IdentitiesOnly yes`), `export VPS_IP=...` — `linux-trenajor/asboblar/vps.sh` shularni ishlatadi.
+4. `content/linux/README.md` dagi 48-qatordan boshlab, yuqoridagi "Bob yozish tartibi" bo'yicha.
+
 ## Git'da yo'q, qo'lda ko'chiriladiganlar
 
 | Nima | Izoh |
 | --- | --- |
 | `.env` (`GEMINI_API_KEY`) | Faqat xavfsiz yo'l bilan |
 | VPS SSH kaliti | Faqat xavfsiz yo'l bilan |
+| VPS manzili | `~/.ssh/config` dagi `Host lab` va `VPS_IP` muhit o'zgaruvchisi — har kompyuterda alohida |
 | `audio/`, `segments/` | `docs/tts.md` ga qarang |
 | `*-REJA.md` (boshqa kitoblar rejalari) | `.gitignore` da, lokal fayllar |
 | `video/REACT-VIDEO-USLUBI.md`, `video/VUE-VIDEO-USLUBI.md` | Hali commit qilinmagan |

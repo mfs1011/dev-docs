@@ -693,4 +693,195 @@ export const QADAMLI = {
       },
     ],
   },
+
+  // 40-bob: 127.0.0.1 va 0.0.0.0 — trenajor (haqiqiy chiqishlar)
+  bind: {
+    panel: 'Kompyuter manzillari va kutayotgan servislar',
+    qadamlar: [
+      {
+        cmd: ['ip addr add 192.0.2.10/32 dev lo'],
+        chiqish: '',
+        holat: [{ k: 'a', yol: '127.0.0.1', qiymat: 'loopback' }, { k: 'b', yol: '192.0.2.10', qiymat: 'qo‘shildi', belgi: 'yangi' }],
+        izoh: 'Kompyuterda endi ikkita IPv4 manzil bor. Haqiqiy serverda ikkinchisi — internetdagi ochiq IP.',
+      },
+      {
+        cmd: ['systemd-socket-activate -l 127.0.0.1:8081 -a --inetd cat 2>/dev/null &', 'systemd-socket-activate -l 0.0.0.0:8082 -a --inetd cat 2>/dev/null &', 'ss -tln'],
+        chiqish: 'LISTEN     0          0                    0.0.0.0:8082                0.0.0.0:*                    \nLISTEN     0          0                  127.0.0.1:8081                0.0.0.0:*                    ',
+        holat: [{ k: 'a', yol: '127.0.0.1', qiymat: 'loopback' }, { k: 'b', yol: '192.0.2.10', qiymat: 'ikkinchi manzil' }, { k: 's1', yol: '127.0.0.1:8081', qiymat: 'faqat loopback’da kutadi', belgi: 'yangi' }, { k: 's2', yol: '0.0.0.0:8082', qiymat: 'barcha manzillarda kutadi', belgi: 'yangi' }],
+        izoh: 'Ikkita servis: biri faqat 127.0.0.1 da, ikkinchisi kompyuterning barcha manzillarida (0.0.0.0).',
+      },
+      {
+        cmd: ['echo salom > /dev/tcp/192.0.2.10/8082 && echo ulandi'],
+        chiqish: 'ulandi',
+        holat: [{ k: 's1', yol: '127.0.0.1:8081', qiymat: 'faqat loopback’da kutadi' }, { k: 's2', yol: '0.0.0.0:8082', qiymat: '192.0.2.10 orqali ulandi', belgi: 'yangi' }],
+        izoh: '0.0.0.0 — kompyuterning har qanday manzili, jumladan 192.0.2.10.',
+      },
+      {
+        cmd: ['echo salom > /dev/tcp/192.0.2.10/8081 && echo ulandi'],
+        chiqish: '-bash: connect: Connection refused\n-bash: /dev/tcp/192.0.2.10/8081: Connection refused',
+        holat: [{ k: 's1', yol: '127.0.0.1:8081', qiymat: '192.0.2.10 orqali — rad etildi', belgi: 'xato' }, { k: 's2', yol: '0.0.0.0:8082', qiymat: '192.0.2.10 orqali ulandi' }],
+        izoh: '127.0.0.1 dagi servis boshqa manzilga kelgan ulanishni qabul qilmaydi. Ichki servislar (baza, Redis) aynan shunday bo‘lishi kerak.',
+      },
+    ],
+  },
+
+  // 42-bob: nom aniqlash zanjiri — VPS tajribasi (haqiqiy chiqishlar; hosts: files dns, resolv.conf → 127.0.0.53)
+  nom: {
+    panel: 'sinov.lan nomi qayerdan topiladi',
+    qadamlar: [
+      {
+        cmd: ["echo '192.0.2.30 sinov.lan' >> /etc/hosts"],
+        chiqish: '',
+        holat: [{ k: 'f', yol: '/etc/hosts', qiymat: 'sinov.lan → 192.0.2.30', belgi: 'yangi' }, { k: 'r', yol: 'systemd-resolved (127.0.0.53)', qiymat: 'o‘zgarishni hali ko‘rmagan' }, { k: 't', yol: 'tashqi DNS (1.1.1.1)', qiymat: '/etc/hosts ni bilmaydi' }],
+        izoh: 'Faylga yozuv qo‘shildi.',
+      },
+      {
+        cmd: ['getent hosts sinov.lan'],
+        chiqish: '192.0.2.30      sinov.lan',
+        holat: [{ k: 'f', yol: '/etc/hosts', qiymat: 'sinov.lan → 192.0.2.30 — topildi', belgi: 'yangi' }, { k: 'r', yol: 'systemd-resolved (127.0.0.53)', qiymat: 'so‘ralmadi' }, { k: 't', yol: 'tashqi DNS (1.1.1.1)', qiymat: 'so‘ralmadi' }],
+        izoh: 'NSS tartibi: files birinchi. Fayl darhol o‘qiladi — DNS’ga ehtiyoj yo‘q.',
+      },
+      {
+        cmd: ['dig +short sinov.lan'],
+        chiqish: '',
+        holat: [{ k: 'f', yol: '/etc/hosts', qiymat: 'sinov.lan → 192.0.2.30' }, { k: 'r', yol: 'systemd-resolved (127.0.0.53)', qiymat: 'hali ko‘rmagan — bo‘sh javob', belgi: 'xato' }, { k: 't', yol: 'tashqi DNS (1.1.1.1)', qiymat: 'so‘ralmadi' }],
+        izoh: 'dig NSS’ni emas, DNS’ni so‘raydi: so‘rov 127.0.0.53 ga ketdi.',
+      },
+      {
+        cmd: ['sleep 3', 'dig +short sinov.lan'],
+        chiqish: '192.0.2.30',
+        holat: [{ k: 'f', yol: '/etc/hosts', qiymat: 'sinov.lan → 192.0.2.30' }, { k: 'r', yol: 'systemd-resolved (127.0.0.53)', qiymat: 'endi /etc/hosts dan beradi', belgi: 'yangi' }, { k: 't', yol: 'tashqi DNS (1.1.1.1)', qiymat: 'so‘ralmadi' }],
+        izoh: 'systemd-resolved /etc/hosts yozuvlarini ham beradi; biz sinaganda bir necha soniyadan keyin.',
+      },
+      {
+        cmd: ['dig @1.1.1.1 sinov.lan | grep status'],
+        chiqish: ';; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 39526',
+        holat: [{ k: 'f', yol: '/etc/hosts', qiymat: 'sinov.lan → 192.0.2.30' }, { k: 'r', yol: 'systemd-resolved (127.0.0.53)', qiymat: 'chetlab o‘tildi' }, { k: 't', yol: 'tashqi DNS (1.1.1.1)', qiymat: 'NXDOMAIN — bunday nom yo‘q', belgi: 'xato' }],
+        izoh: 'Tashqi server bizning faylimizni bilmaydi.',
+      },
+      {
+        cmd: ["sed -i '/sinov\\.lan/d' /etc/hosts", 'getent hosts sinov.lan'],
+        chiqish: '192.0.2.30      sinov.lan',
+        holat: [{ k: 'f', yol: '/etc/hosts', qiymat: 'o‘chirildi — topilmadi', belgi: 'xato' }, { k: 'r', yol: 'systemd-resolved (127.0.0.53)', qiymat: 'hali eski javobni beradi', belgi: 'yangi' }, { k: 't', yol: 'tashqi DNS (1.1.1.1)', qiymat: 'so‘ralmadi' }],
+        izoh: 'files’da yo‘q → navbat dns’ga → 127.0.0.53 hali o‘zgarishni ko‘rmagan.',
+      },
+      {
+        cmd: ['sleep 3', 'getent hosts sinov.lan; echo "kod: $?"'],
+        chiqish: 'kod: 2',
+        holat: [{ k: 'f', yol: '/etc/hosts', qiymat: 'yo‘q' }, { k: 'r', yol: 'systemd-resolved (127.0.0.53)', qiymat: 'yo‘q' }, { k: 't', yol: 'tashqi DNS (1.1.1.1)', qiymat: 'NXDOMAIN' }],
+        izoh: 'Endi hech qayerda yo‘q: getent 2 kodini qaytardi.',
+      },
+    ],
+  },
+
+  // 43-bob: firewall va servis — VPS + tashqi kompyuter tajribasi (haqiqiy chiqishlar; IP 203.0.113.10 bilan yashirilgan)
+  port: {
+    panel: 'Tashqaridan VPS:8080 ga ulanish',
+    qadamlar: [
+      {
+        cmd: ["curl -sS -o /dev/null -w '%{http_code}\\n' --max-time 5 http://203.0.113.10:8080/"],
+        chiqish: 'curl: (28) Connection timed out after 5001 milliseconds\n000',
+        holat: [{ k: 'f', yol: 'firewall (ufw)', qiymat: '8080 — deny (standart)', belgi: 'xato' }, { k: 's', yol: 'servis (ss -tln)', qiymat: '0.0.0.0:8080 — ishlayapti' }, { k: 'n', yol: 'natija', qiymat: 'javob yo‘q → 5 s kutib, kod 28', belgi: 'xato' }],
+        izoh: 'deny paketni jim tashlab yuboradi: mijoz javob kutib qoladi.',
+      },
+      {
+        cmd: ['ufw allow 8080/tcp', "curl -sS -o /dev/null -w '%{http_code}\\n' --max-time 5 http://203.0.113.10:8080/"],
+        chiqish: '200',
+        holat: [{ k: 'f', yol: 'firewall (ufw)', qiymat: '8080 — allow', belgi: 'yangi' }, { k: 's', yol: 'servis (ss -tln)', qiymat: '0.0.0.0:8080 — ishlayapti' }, { k: 'n', yol: 'natija', qiymat: '200 — ishladi', belgi: 'yangi' }],
+        izoh: 'Port ochildi, servis ishlayapti — so‘rov o‘tdi.',
+      },
+      {
+        cmd: ['systemctl stop sinov8080', "curl -sS -o /dev/null -w '%{http_code}\\n' --max-time 5 http://203.0.113.10:8080/"],
+        chiqish: "curl: (7) Failed to connect to 203.0.113.10 port 8080 after 55 ms: Couldn't connect to server\n000",
+        holat: [{ k: 'f', yol: 'firewall (ufw)', qiymat: '8080 — allow' }, { k: 's', yol: 'servis (ss -tln)', qiymat: '8080 yo‘q — to‘xtatildi', belgi: 'xato' }, { k: 'n', yol: 'natija', qiymat: '55 ms da rad etildi, kod 7', belgi: 'xato' }],
+        izoh: 'Portda hech kim kutmayapti: server darhol rad etadi.',
+      },
+      {
+        cmd: ['ufw delete allow 8080/tcp', 'ufw reject 8080/tcp', 'systemd-run --unit=sinov8080 -p User=nobody python3 -m http.server 8080 --directory /srv/bosh', "curl -sS -o /dev/null -w '%{http_code}\\n' --max-time 5 http://203.0.113.10:8080/"],
+        chiqish: "curl: (7) Failed to connect to 203.0.113.10 port 8080 after 54 ms: Couldn't connect to server\n000",
+        holat: [{ k: 'f', yol: 'firewall (ufw)', qiymat: '8080 — reject', belgi: 'xato' }, { k: 's', yol: 'servis (ss -tln)', qiymat: '0.0.0.0:8080 — ishlayapti', belgi: 'yangi' }, { k: 'n', yol: 'natija', qiymat: '54 ms da rad etildi, kod 7 — 3-holatdan farqi yo‘q', belgi: 'xato' }],
+        izoh: 'reject ham darhol rad etadi. Tashqaridan "servis yo‘q" bilan farqlab bo‘lmaydi — serverda ss -tln kerak.',
+      },
+    ],
+  },
+
+  // 45-bob: SSH kalit bilan kirish — noutbuk (macOS) → VPS tajribasi (haqiqiy chiqishlar; IP'lar RFC 5737 manzillari bilan)
+  ssh: {
+    panel: 'Noutbuk → VPS: SSH kalit bilan',
+    qadamlar: [
+      {
+        cmd: ['ls -l sinov_key sinov_key.pub'],
+        chiqish: '-rw-------@ 1 mfsv  wheel  399 Nov  7 15:51 sinov_key\n-rw-r--r--@ 1 mfsv  wheel   93 Nov  7 15:51 sinov_key.pub',
+        holat: [{ k: 'p', yol: 'noutbuk: sinov_key', qiymat: 'shaxsiy kalit (600) — hech qayerga bermaydi', belgi: 'yangi' }, { k: 'o', yol: 'noutbuk: sinov_key.pub', qiymat: 'ochiq kalit', belgi: 'yangi' }],
+        izoh: 'ssh-keygen yaratgan juftlik: shaxsiy kalit (600) noutbukda qoladi, ochig‘i serverga boradi.',
+      },
+      {
+        cmd: ['ls -la /home/demo/.ssh'],
+        chiqish: 'total 12\ndrwx------ 2 demo demo 4096 Nov  7 13:51 .\ndrwxr-x--- 3 demo demo 4096 Nov  7 13:51 ..\n-rw------- 1 demo demo   93 Nov  7 13:51 authorized_keys',
+        holat: [{ k: 'p', yol: 'noutbuk: sinov_key', qiymat: 'shaxsiy kalit' }, { k: 'a', yol: 'server: ~demo/.ssh/authorized_keys', qiymat: 'ochiq kalit qo‘yildi (600)', belgi: 'yangi' }],
+        izoh: 'Ochiq kalit authorized_keys ga yozildi: .ssh — 700, fayl — 600. Server endi shu kalit egasini taniydi.',
+      },
+      {
+        cmd: ["ssh -i sinov_key -o UserKnownHostsFile=./known_hosts -o StrictHostKeyChecking=accept-new demo@203.0.113.10 'whoami; hostname'"],
+        chiqish: "Warning: Permanently added '203.0.113.10' (ED25519) to the list of known hosts.\ndemo\nlab",
+        holat: [{ k: 'k', yol: 'noutbuk: known_hosts', qiymat: 'server kaliti yozildi', belgi: 'yangi' }, { k: 'a', yol: 'server: authorized_keys', qiymat: 'kalit mos keldi — kirildi', belgi: 'yangi' }],
+        izoh: 'Ikki tomonlama tekshiruv: noutbuk serverni known_hosts bilan, server noutbukni authorized_keys bilan taniydi.',
+      },
+      {
+        cmd: ['chmod 777 /home/demo/.ssh', "ssh -F config sinov 'whoami'"],
+        chiqish: 'demo@203.0.113.10: Permission denied (publickey,password).',
+        holat: [{ k: 'd', yol: 'server: ~demo/.ssh', qiymat: '777 — har kim yoza oladi', belgi: 'xato' }, { k: 'a', yol: 'server: authorized_keys', qiymat: 'ishonchsiz — rad etildi', belgi: 'xato' }],
+        izoh: 'StrictModes: katalogga har kim yoza olsa, authorized_keys ga ham begona kalit qo‘shilishi mumkin edi.',
+      },
+      {
+        cmd: ["journalctl -u ssh --since '-1min' --no-pager -o cat | grep demo"],
+        chiqish: 'Accepted publickey for demo from 198.51.100.20 port 54272 ssh2: ED25519 SHA256:+n9d0gkib560HIfx3gTGw8di7ze+anYeSYeRO5WXzp8\npam_unix(sshd:session): session opened for user demo(uid=1000) by demo(uid=0)\npam_unix(sshd:session): session closed for user demo\nAccepted publickey for demo from 198.51.100.20 port 54273 ssh2: ED25519 SHA256:+n9d0gkib560HIfx3gTGw8di7ze+anYeSYeRO5WXzp8\npam_unix(sshd:session): session opened for user demo(uid=1000) by demo(uid=0)\npam_unix(sshd:session): session closed for user demo\nAccepted publickey for demo from 198.51.100.20 port 54274 ssh2: ED25519 SHA256:+n9d0gkib560HIfx3gTGw8di7ze+anYeSYeRO5WXzp8\npam_unix(sshd:session): session opened for user demo(uid=1000) by demo(uid=0)\npam_unix(sshd:session): session closed for user demo\nAuthentication refused: bad ownership or modes for directory /home/demo/.ssh\nConnection closed by authenticating user demo 198.51.100.20 port 54276 [preauth]',
+        holat: [{ k: 'd', yol: 'server: ~demo/.ssh', qiymat: '777', belgi: 'xato' }, { k: 'l', yol: 'server logi', qiymat: 'sababi yozilgan', belgi: 'yangi' }],
+        izoh: 'Mijoz faqat "rad etildi" deydi, sababi server logida.',
+      },
+      {
+        cmd: ['chmod 700 /home/demo/.ssh', "ssh -F config sinov 'whoami'"],
+        chiqish: 'demo',
+        holat: [{ k: 'd', yol: 'server: ~demo/.ssh', qiymat: '700 — faqat egasi', belgi: 'yangi' }, { k: 'a', yol: 'server: authorized_keys', qiymat: 'kirildi', belgi: 'yangi' }],
+        izoh: 'Ruxsat tuzatildi — kalit yana qabul qilindi.',
+      },
+    ],
+  },
+
+  // 47-bob: ssh -L tunnel — noutbuk (macOS) → VPS tajribasi (haqiqiy chiqishlar; VPS IP 203.0.113.10)
+  tunnel: {
+    panel: 'Noutbuk:9090 → SSH → VPS 127.0.0.1:8090',
+    qadamlar: [
+      {
+        cmd: ['ss -tln | grep 8090'],
+        chiqish: 'LISTEN 0      5          127.0.0.1:8090      0.0.0.0:*   ',
+        holat: [{ k: 's', yol: 'VPS: ichki servis', qiymat: '127.0.0.1:8090 — faqat serverning o‘zidan', belgi: 'yangi' }, { k: 'n', yol: 'noutbuk: 9090', qiymat: 'yopiq' }],
+        izoh: 'Servis faqat loopback’da kutadi — internetdan ko‘rinmaydi (VPS’da bajarildi).',
+      },
+      {
+        cmd: ['curl -sS --max-time 5 http://203.0.113.10:8090/; echo "kod: $?"'],
+        chiqish: 'curl: (28) Connection timed out after 5006 milliseconds\nkod: 28',
+        holat: [{ k: 's', yol: 'VPS: ichki servis', qiymat: '127.0.0.1:8090' }, { k: 'n', yol: 'noutbuk → VPS:8090', qiymat: 'yetib bo‘lmaydi', belgi: 'xato' }],
+        izoh: 'Noutbukdan to‘g‘ridan-to‘g‘ri ulanib bo‘lmaydi.',
+      },
+      {
+        cmd: ['ssh -F config -f -N -L 9090:127.0.0.1:8090 lab', 'lsof -nP -iTCP:9090 -sTCP:LISTEN'],
+        chiqish: 'COMMAND   PID USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME\nssh     39786 mfsv    5u  IPv6 0xb93896751b1ac09f      0t0  TCP [::1]:9090 (LISTEN)\nssh     39786 mfsv    6u  IPv4 0xd60de3454a668c6d      0t0  TCP 127.0.0.1:9090 (LISTEN)',
+        holat: [{ k: 'n', yol: 'noutbuk: 9090', qiymat: 'ssh tinglayapti', belgi: 'yangi' }, { k: 't', yol: 'SSH kanali', qiymat: 'noutbuk ⇄ VPS:22 (shifrlangan)', belgi: 'yangi' }, { k: 's', yol: 'VPS: ichki servis', qiymat: '127.0.0.1:8090' }],
+        izoh: 'Noutbukdagi 9090 ga kelgan ulanish SSH ichidan o‘tib, server tomonda 127.0.0.1:8090 ga ochiladi.',
+      },
+      {
+        cmd: ['curl -s http://127.0.0.1:9090/'],
+        chiqish: 'ichki servis',
+        holat: [{ k: 'n', yol: 'noutbuk: 9090', qiymat: 'so‘rov qabul qilindi' }, { k: 't', yol: 'SSH kanali', qiymat: 'uzatdi' }, { k: 's', yol: 'VPS: ichki servis', qiymat: 'javob berdi', belgi: 'yangi' }],
+        izoh: 'Yopiq servisga ulanildi, lekin uning porti internetga ochilmadi.',
+      },
+      {
+        cmd: ["pkill -f 'ssh -F config -f -N -L 9090'", 'curl -sS http://127.0.0.1:9090/; echo "kod: $?"'],
+        chiqish: "curl: (7) Failed to connect to 127.0.0.1 port 9090 after 1 ms: Couldn't connect to server\nkod: 7",
+        holat: [{ k: 'n', yol: 'noutbuk: 9090', qiymat: 'yopildi', belgi: 'xato' }, { k: 't', yol: 'SSH kanali', qiymat: 'yo‘q' }],
+        izoh: 'Tunnel yopildi — port ham yo‘qoldi.',
+      },
+    ],
+  },
 }

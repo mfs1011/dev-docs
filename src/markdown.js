@@ -84,8 +84,10 @@ const md = new MarkdownIt({
   linkify: true,
   typographer: false,
   highlight(code, language, attrs) {
-    // ```text vps — VPS'da olingan chiqish (Linux kitobi): trenajorda ishga tushirish tugmasi qo'yilmaydi
-    const env = /(^|\s)vps(\s|$)/.test(attrs ?? '') ? ' data-env="vps"' : ''
+    // ```text vps — VPS'da olingan chiqish (Linux kitobi): trenajorda ishga tushirish tugmasi qo'yilmaydi.
+    // ```text tashqi — serverga tashqi kompyuterdan (muallifning noutbukidan) yuborilgan so'rov: tugma ham yo'q
+    const envNom = /(^|\s)(vps|tashqi)(\s|$)/.exec(attrs ?? '')?.[2]
+    const env = envNom ? ` data-env="${envNom}"` : ''
     const lang = language && hljs.getLanguage(language) ? language : 'plaintext'
     const label = LANGUAGE_LABELS[language] ?? (language ? language.toUpperCase() : 'KOD')
 
