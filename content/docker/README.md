@@ -42,7 +42,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - Nuxt — Docker hujjatida u uchun qo'llanma yo'q; Node.js va Next.js qo'llanmalaridagi tamoyillar unga ham taalluqli.
 - Serverni himoyalash (SSH, firewall, fail2ban) — **"Server xavfsizligi"** kitobida; Docker portlari va firewall bog'liqligi esa shu kitobning 5-bobida.
 
-> **Holat.** Qo'llanma yozilmoqda: 22/28 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 23/28 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -98,7 +98,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 | --- | --- | --- | --- | --- |
 | 21 | [PHP: Laravel va Symfony](21-php-laravel-symfony.md) | PHP-FPM image, kengaytmalar, development va production bosqichlari; Symfony'ning o'z Docker yondashuvi | V | [GD PHP](https://docs.docker.com/guides/php/) · [GD Laravel](https://docs.docker.com/guides/laravel/) · [Symfony: Using Docker](https://symfony.com/doc/current/setup/docker.html) |
 | 22 | [Node.js va Next.js](22-node-va-nextjs.md) | Node API'ni konteynerga joylash, ma'lumotlar bazasi bilan; Next.js `standalone` build | V | [GD Node.js](https://docs.docker.com/guides/nodejs/) · [GD Next.js](https://docs.docker.com/guides/nextjs/) |
-| 23 | SPA: React, Vue, Angular | Statik build + Nginx; SPA marshrutlari uchun fallback | V | [GD React.js](https://docs.docker.com/guides/reactjs/) · [GD Vue.js](https://docs.docker.com/guides/vuejs/) · [GD Angular](https://docs.docker.com/guides/angular/) |
+| 23 | [SPA: React, Vue, Angular](23-spa.md) | Statik build + Nginx; SPA marshrutlari uchun fallback | V | [GD React.js](https://docs.docker.com/guides/reactjs/) · [GD Vue.js](https://docs.docker.com/guides/vuejs/) · [GD Angular](https://docs.docker.com/guides/angular/) |
 | 24 | Ma'lumotlar bazasi konteynerda | Rasmiy DB image'lari, volume, boshlang'ich ma'lumot (pre-seeding); zaxira va tiklash | V | [GD Databases](https://docs.docker.com/guides/databases/) · [GD Pre-seeding](https://docs.docker.com/guides/pre-seeding/) · [EN Volumes: back up, restore](https://docs.docker.com/engine/storage/volumes/#back-up-restore-or-migrate-data-volumes) |
 
 ## V qism — Production (25–28)

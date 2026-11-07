@@ -1,6 +1,6 @@
 # 22 — Node.js va Next.js
 
-[← Oldingi: PHP: Laravel va Symfony](21-php-laravel-symfony.md) · [Mundarija](README.md)
+[← Oldingi: PHP: Laravel va Symfony](21-php-laravel-symfony.md) · [Mundarija](README.md) · [Keyingi: SPA: React, Vue, Angular →](23-spa.md)
 
 ## Tushuncha
 
