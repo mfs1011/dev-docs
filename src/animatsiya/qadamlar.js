@@ -400,7 +400,7 @@ export const QADAMLI = {
     panel: 'jarayon va tozalash',
     qadamlar: [
       {
-        cmd: ['/tmp/ilova.sh &', 'cat /tmp/ish.txt'],
+        cmd: ['/tmp/ilova.sh &', 'sleep 1', 'cat /tmp/ish.txt'],
         chiqish: '[1] 178\nishlayapman',
         holat: [
           { k: 'p', yol: 'ilova (PID 178)', qiymat: 'ishlayapti (S)', belgi: 'yangi' },
@@ -410,7 +410,7 @@ export const QADAMLI = {
         izoh: 'Ilova ishga tushdi: o‘z PID’ini yozdi va fonda kutyapti.',
       },
       {
-        cmd: ['kill -TERM 178', 'cat /tmp/ish.txt'],
+        cmd: ['sleep 1', 'kill -TERM $!', 'sleep 1', 'cat /tmp/ish.txt'],
         chiqish: '[1]+  Done                    /tmp/ilova.sh\ntozalash',
         holat: [
           { k: 'p', yol: 'ilova (PID 178)', qiymat: 'to‘xtadi (kod 0)', belgi: 'ochiq' },
@@ -430,7 +430,7 @@ export const QADAMLI = {
         izoh: 'Ilova yana fonda ishga tushirildi.',
       },
       {
-        cmd: ['kill -KILL 186', 'cat /tmp/ish.txt', 'cat /tmp/ish.pid'],
+        cmd: ['sleep 1', 'kill -KILL $!', 'sleep 1', 'cat /tmp/ish.txt', 'cat /tmp/ish.pid'],
         chiqish: '[1]+  Killed                  /tmp/ilova.sh\nishlayapman\n186',
         holat: [
           { k: 'p', yol: 'ilova (PID 186)', qiymat: 'yadro darhol to‘xtatdi', belgi: 'xato' },
@@ -438,6 +438,258 @@ export const QADAMLI = {
           { k: 'd', yol: '/tmp/ish.pid', qiymat: '186 — O‘CHIRILMADI', belgi: 'xato' },
         ],
         izoh: 'SIGKILL ni ushlab bo‘lmaydi: yadro ilovani darhol to‘xtatdi. Tozalash kodi ishlamadi, qoldiq fayllar qoldi.',
+      },
+    ],
+  },
+
+  // 30-bob: ish holatlari (trenajor, bob bloklaridagi chiqishlar). Ctrl+Z o'rniga kill -TSTP (stty: susp = SIGTSTP)
+  ishlar: {
+    panel: 'qobiq (shell) ishlar jadvali',
+    qadamlar: [
+      {
+        cmd: ['sleep 100 &', 'sleep 200 &', 'jobs -l'],
+        chiqish: '[1]-   179 Running                 sleep 100 &\n[2]+   180 Running                 sleep 200 &',
+        holat: [{ k: '1', yol: '%1  sleep 100', qiymat: 'Running — fonda' }, { k: '2', yol: '%2  sleep 200', qiymat: 'Running — fonda (+ joriy)' }, { k: 't', yol: 'terminal', qiymat: 'bo‘sh — buyruq yozish mumkin', belgi: 'yangi' }],
+        izoh: '`&` bilan ishga tushgan buyruqlar fonda ishlaydi, terminal darhol bo‘shaydi.',
+      },
+      {
+        cmd: ['kill -TSTP %1   # terminalda: Ctrl+Z'],
+        chiqish: '[1]+  Stopped                 sleep 100',
+        holat: [{ k: '1', yol: '%1  sleep 100', qiymat: 'Stopped — ps’da T', belgi: 'ochiq' }, { k: '2', yol: '%2  sleep 200', qiymat: 'Running' }],
+        izoh: 'SIGTSTP ishni to‘xtatib turadi: jarayon tirik, lekin hech narsa qilmayapti.',
+      },
+      {
+        cmd: ['bg %1'],
+        chiqish: '[1]+ sleep 100 &',
+        holat: [{ k: '1', yol: '%1  sleep 100', qiymat: 'Running — yana fonda', belgi: 'yangi' }, { k: '2', yol: '%2  sleep 200', qiymat: 'Running' }],
+        izoh: '`bg` to‘xtatilgan ishni fonda davom ettiradi.',
+      },
+      {
+        cmd: ['kill %1 %2', 'sleep 3 &', 'fg'],
+        chiqish: '[3] 191\n[1]   Terminated              sleep 100\n[2]   Terminated              sleep 200\nsleep 3',
+        holat: [{ k: '1', yol: '%1, %2', qiymat: 'Terminated', belgi: 'yoq' }, { k: '3', yol: '%3  sleep 3', qiymat: 'oldingi planda', belgi: 'ochiq' }, { k: 't', yol: 'terminal', qiymat: 'band — sleep tugashini kutyapti', belgi: 'xato' }],
+        izoh: '`fg` ishni oldingi planga oladi: u tugaguncha terminal band, Ctrl+C unga yetadi.',
+      },
+    ],
+  },
+
+  // 30-bob: SSH to'satdan uzilganda va oddiy exit'da qaysi jarayonlar qoladi (Ubuntu 26.04 VPS tajribasi)
+  uzilish: {
+    panel: 'VPS’dagi jarayonlar',
+    qadamlar: [
+      {
+        cmd: ['sleep 1001 &', 'nohup sleep 1002 >/dev/null 2>&1 &', 'sleep 1003 &', 'disown', 'tmux new-session -d -s ish "sleep 1004"'],
+        holat: [{ k: 'a', yol: 'sleep 1001', qiymat: 'oddiy fon ishi' }, { k: 'b', yol: 'sleep 1002', qiymat: 'nohup: SIGHUP e’tiborsiz' }, { k: 'c', yol: 'sleep 1003', qiymat: 'disown: jadvaldan chiqarilgan' }, { k: 'd', yol: 'sleep 1004', qiymat: 'tmux sessiyasida' }],
+        izoh: 'Bitta SSH sessiyada to‘rt xil usulda ishga tushirdik.',
+      },
+      {
+        cmd: ['# ulanish to‘satdan uzildi (noutbukda ssh: kill -9)'],
+        holat: [{ k: 's', yol: 'login qobig‘i (shell)', qiymat: 'SIGHUP oldi → barcha ishlariga yubordi', belgi: 'ochiq' }],
+        izoh: 'Terminal yo‘qoldi. bash SIGHUP oladi va chiqishdan oldin uni o‘zining ishlar jadvalidagi har bir ishga qayta yuboradi.',
+      },
+      {
+        cmd: ['ps -o pid,stat,cmd -C sleep; tmux ls'],
+        chiqish: '    PID STAT CMD\n  70219 S    sleep 1002\n  70223 S    sleep 1003\n  70233 Ss+  sleep 1004\nish: 1 windows (created Sat Nov  7 07:29:51 2026)',
+        holat: [{ k: 'a', yol: 'sleep 1001', qiymat: 'SIGHUP → tugadi', belgi: 'xato' }, { k: 'b', yol: 'sleep 1002', qiymat: 'nohup — tirik', belgi: 'yangi' }, { k: 'c', yol: 'sleep 1003', qiymat: 'disown — tirik', belgi: 'yangi' }, { k: 'd', yol: 'sleep 1004', qiymat: 'tmux — tirik', belgi: 'yangi' }],
+        izoh: 'Faqat oddiy `&` bilan ishga tushgani to‘xtadi.',
+      },
+      {
+        cmd: ['# xuddi shu, lekin oddiy exit bilan', 'ps -o pid,stat,cmd -C sleep'],
+        chiqish: '    PID STAT CMD\n  70317 S    sleep 1001\n  70321 S    sleep 1002\n  70325 S    sleep 1003\n  70335 Ss+  sleep 1004',
+        holat: [{ k: 'a', yol: 'sleep 1001', qiymat: 'tirik — huponexit off', belgi: 'ochiq' }, { k: 'b', yol: 'sleep 1002', qiymat: 'tirik' }, { k: 'c', yol: 'sleep 1003', qiymat: 'tirik' }, { k: 'd', yol: 'sleep 1004', qiymat: 'tirik' }],
+        izoh: 'Oddiy `exit` da SIGHUP yuborilmadi (`huponexit` o‘chiq, logind `KillUserProcesses=no`). Lekin ulanish qachon uzilishini bilmaysiz — uzoq ishni nohup, tmux yoki systemd bilan ishga tushiring.',
+      },
+    ],
+  },
+
+  // 31-bob: cgroup xotira cheklovida OOM (trenajor, bob blokidagi haqiqiy chiqishlar)
+  oom: {
+    panel: 'ochkoz.service (MemoryMax=50M)',
+    qadamlar: [
+      {
+        cmd: [`systemd-run --wait --unit=ochkoz -p MemoryMax=50M perl -e 'my @a; while (1) { push @a, "a" x (1024*1024) }'`],
+        chiqish: 'Running as unit: ochkoz.service',
+        holat: [{ k: 'm', yol: 'xotira', qiymat: '1 MB … 10 MB … 30 MB … — o‘syapti', belgi: 'ochiq' }, { k: 'l', yol: 'chegara', qiymat: 'MemoryMax=50M' }],
+        izoh: 'Dastur xotirani to‘xtamay egallaydi. systemd uni 50 MB cheklangan guruhda (cgroup) ishga tushirdi — server xavfsiz.',
+      },
+      {
+        cmd: ['# xotira chegaraga yetdi'],
+        chiqish: '[   69.861790] Memory cgroup out of memory: Killed process 246 (perl) total-vm:59900kB, anon-rss:51032kB, file-rss:2076kB, shmem-rss:0kB, UID:0 pgtables:72kB oom_score_adj:0',
+        holat: [{ k: 'm', yol: 'xotira', qiymat: 'anon-rss ≈ 51 MB — chegaradan oshdi', belgi: 'xato' }, { k: 'o', yol: 'OOM killer', qiymat: 'perl’ni tanladi → SIGKILL', belgi: 'xato' }],
+        izoh: 'Yadro xotirani bo‘shata olmadi va OOM killer’ni ishga tushirdi: cheklov doirasidagi jarayon SIGKILL bilan o‘ldirildi.',
+      },
+      {
+        cmd: ['# systemd natijani yozdi'],
+        chiqish: 'Finished with result: oom-kill\nMain processes terminated with: code=killed/status=KILL',
+        holat: [{ k: 's', yol: 'ochkoz.service', qiymat: "Failed with result 'oom-kill'", belgi: 'xato' }, { k: 'k', yol: 'chiqish', qiymat: 'status=9/KILL → kod 137 (29-bob)' }],
+        izoh: 'Ilova "o‘zi o‘chib qolgandek" ko‘rinadi. Sababini systemd va yadro jurnali aytib turibdi.',
+      },
+      {
+        cmd: ["journalctl -k --no-pager -o cat | grep 'out of memory'"],
+        chiqish: 'Memory cgroup out of memory: Killed process 246 (perl) total-vm:59900kB, anon-rss:51032kB, file-rss:2076kB, shmem-rss:0kB, UID:0 pgtables:72kB oom_score_adj:0',
+        holat: [{ k: 'j', yol: 'yadro jurnali', qiymat: 'OOM izi saqlandi', belgi: 'yangi' }],
+        izoh: 'Ilova kutilmaganda to‘xtasa, birinchi tekshiriladigan joy — `journalctl -k`.',
+      },
+    ],
+  },
+
+  // 33-bob: VPS yonish bosqichlari (Ubuntu 26.04; qayta yondirishdan keyingi haqiqiy chiqishlar)
+  yonish: {
+    panel: 'boshqaruv kimda',
+    qadamlar: [
+      {
+        cmd: ['[ -d /sys/firmware/efi ] && echo UEFI || echo "BIOS (legacy)"'],
+        chiqish: 'UEFI',
+        holat: [{ k: '1', yol: '1. Mikrodastur', qiymat: 'UEFI — NVRAM’dagi sozlama bo‘yicha yuklovchini topadi', belgi: 'ochiq' }, { k: '2', yol: '2. Yuklovchi', qiymat: 'kutmoqda' }, { k: '3', yol: '3. initramfs', qiymat: 'kutmoqda' }, { k: '4', yol: '4. systemd', qiymat: 'kutmoqda' }],
+        izoh: 'Tok berildi. UEFI ishga tushadi va yuklovchini (GRUB) ishga tushiradi.',
+      },
+      {
+        cmd: ['cat /proc/cmdline'],
+        chiqish: 'BOOT_IMAGE=/boot/vmlinuz-7.0.0-42-generic root=UUID=caaa98a8-869e-4008-a15d-d75d96af40f7 ro console=tty1',
+        holat: [{ k: '1', yol: '1. Mikrodastur', qiymat: 'tugadi' }, { k: '2', yol: '2. GRUB', qiymat: 'vmlinuz va initrd.img’ni xotiraga yukladi', belgi: 'ochiq' }, { k: '3', yol: '3. initramfs', qiymat: 'kutmoqda' }, { k: '4', yol: '4. systemd', qiymat: 'kutmoqda' }],
+        izoh: 'GRUB yadroni qaysi parametrlar bilan ishga tushirganini yadro `/proc/cmdline` da saqlaydi: qaysi yadro, asosiy disk qaysi.',
+      },
+      {
+        cmd: ['systemd-analyze'],
+        chiqish: 'Startup finished in 1.408s (kernel) + 2.882s (initrd) + 6.857s (userspace) = 11.148s \nmulti-user.target reached after 6.784s in userspace.',
+        holat: [{ k: '2', yol: '2. GRUB', qiymat: 'tugadi' }, { k: '3', yol: '3. yadro + initramfs', qiymat: '1.4 s + 2.9 s — asosiy diskni topib, ulashga tayyorladi', belgi: 'ochiq' }, { k: '4', yol: '4. systemd (PID 1)', qiymat: '6.9 s — unit’larni parallel ishga tushirdi', belgi: 'yangi' }],
+        izoh: '`systemd-analyze` uch bosqich vaqtini alohida ko‘rsatadi: kernel, initrd, userspace.',
+      },
+      {
+        cmd: ['systemd-analyze critical-chain --no-pager | head -n 7'],
+        chiqish: 'multi-user.target @6.784s\n└─tuned.service @6.062s +720ms\n  └─polkit.service @6.732s +123ms\n    └─basic.target @4.110s\n      └─sockets.target @4.107s',
+        holat: [{ k: '4', yol: '4. systemd', qiymat: 'multi-user.target — tizim tayyor', belgi: 'yangi' }, { k: 't', yol: 'default.target', qiymat: '→ multi-user.target (/etc dagi havola)' }],
+        izoh: 'systemd `default.target` ga yetguncha unit’larni bog‘liqliklari bo‘yicha ishga tushiradi. Server ishga tayyor.',
+      },
+    ],
+  },
+
+  // 34-bob: enable va start farqi — VPS'da tuned bilan, qayta yondirish orqali (haqiqiy chiqishlar)
+  'enable-start': {
+    panel: 'tuned.service',
+    qadamlar: [
+      {
+        cmd: ['systemctl is-enabled tuned', 'systemctl is-active tuned'],
+        chiqish: 'enabled\nactive',
+        holat: [{ k: 'h', yol: 'hozir', qiymat: 'active — ishlayapti', belgi: 'yangi' }, { k: 'y', yol: 'yonishda', qiymat: 'enabled — havola bor', belgi: 'yangi' }],
+        izoh: 'Odatiy holat: servis ishlayapti va yonishda ishga tushadi.',
+      },
+      {
+        cmd: ['systemctl disable tuned', 'systemctl is-active tuned'],
+        chiqish: "Removed '/etc/systemd/system/multi-user.target.wants/tuned.service'.\nactive",
+        holat: [{ k: 'h', yol: 'hozir', qiymat: 'active — hali ishlayapti!', belgi: 'ochiq' }, { k: 'y', yol: 'yonishda', qiymat: 'disabled — havola o‘chirildi', belgi: 'xato' }],
+        izoh: '`disable` faqat havolani o‘chirdi. Servis to‘xtamadi — tashqaridan hammasi joyida ko‘rinadi.',
+      },
+      {
+        cmd: ['systemctl reboot', '# ... qayta yongandan keyin:', 'systemctl is-active tuned'],
+        chiqish: 'inactive',
+        holat: [{ k: 'h', yol: 'hozir', qiymat: 'inactive — ishga tushmadi', belgi: 'xato' }, { k: 'y', yol: 'yonishda', qiymat: 'disabled' }],
+        izoh: 'Server qayta yondi: multi-user.target tuned’ni so‘ramadi — servis ishlamayapti. "O‘zi o‘chib qoldi" deyiladigan holat shu.',
+      },
+      {
+        cmd: ['systemctl enable --now tuned'],
+        chiqish: "Created symlink '/etc/systemd/system/multi-user.target.wants/tuned.service' → '/usr/lib/systemd/system/tuned.service'.",
+        holat: [{ k: 'h', yol: 'hozir', qiymat: 'active', belgi: 'yangi' }, { k: 'y', yol: 'yonishda', qiymat: 'enabled', belgi: 'yangi' }],
+        izoh: '`enable --now` — ikkalasi birga: havola yaratildi va servis darhol ishga tushdi.',
+      },
+    ],
+  },
+
+  // 35-bob: VPS'dagi salom.service hayoti (haqiqiy chiqishlar)
+  servis: {
+    panel: 'salom.service',
+    qadamlar: [
+      {
+        cmd: ['systemctl daemon-reload', 'systemctl enable --now salom'],
+        chiqish: "Created symlink '/etc/systemd/system/multi-user.target.wants/salom.service' → '/etc/systemd/system/salom.service'.",
+        holat: [{ k: 'f', yol: '/etc/systemd/system/salom.service', qiymat: 'unit fayli o‘qildi' }, { k: 'y', yol: 'yonishda', qiymat: 'enabled', belgi: 'yangi' }, { k: 'p', yol: 'jarayon', qiymat: 'python3 … 8000 — ishga tushdi', belgi: 'yangi' }],
+        izoh: 'systemd yangi unit’ni o‘qidi, yonishga qo‘shdi va darhol ishga tushirdi.',
+      },
+      {
+        cmd: ['ps -o user,pid,cmd -p $(systemctl show -p MainPID --value salom)'],
+        chiqish: 'USER         PID CMD\nsalom       1380 /usr/bin/python3 -m http.server 8000 --bind 127.0.0.1',
+        holat: [{ k: 'p', yol: 'jarayon (PID 1380)', qiymat: 'salom foydalanuvchisi nomidan', belgi: 'yangi' }, { k: 'e', yol: '${PORT}', qiymat: '8000 — /etc/salom.env dan' }],
+        izoh: '`User=` va `EnvironmentFile=` ishladi: ilova root emas, `salom` nomidan, port fayldagi sozlamadan.',
+      },
+      {
+        cmd: ['kill -9 $(systemctl show -p MainPID --value salom)'],
+        chiqish: "salom.service: Main process exited, code=killed, status=9/KILL\nsalom.service: Failed with result 'signal'.\nsalom.service: Scheduled restart job, restart counter is at 1.",
+        holat: [{ k: 'p', yol: 'jarayon (PID 1380)', qiymat: 'SIGKILL — o‘ldi', belgi: 'xato' }, { k: 'r', yol: 'Restart=on-failure', qiymat: 'qayta ishga tushirish rejalashtirildi', belgi: 'ochiq' }],
+        izoh: 'Ilova kutilmaganda o‘ldi. `Restart=on-failure` buni xato deb bildi.',
+      },
+      {
+        cmd: ['curl -s http://127.0.0.1:8000/'],
+        chiqish: '<h1>Salom, systemd!</h1>',
+        holat: [{ k: 'p', yol: 'jarayon (PID 1393)', qiymat: 'yangi — sahifani beryapti', belgi: 'yangi' }, { k: 'r', yol: 'restart counter', qiymat: '1' }],
+        izoh: 'Hech kim aralashmasdan ilova qaytdi. `nohup` bilan ishga tushirilganida u yiqilganicha qolardi.',
+      },
+    ],
+  },
+
+  // 36-bob: drop-in qatlamlari (trenajor, cron; bob bloklaridagi haqiqiy chiqishlar)
+  'drop-in': {
+    panel: 'systemd nimani o‘qiydi',
+    qadamlar: [
+      {
+        cmd: ['ps -o pid,ni,cmd -C cron'],
+        chiqish: '  PID  NI CMD\n  151   0 /usr/sbin/cron -f',
+        holat: [{ k: 'a', yol: '/lib/systemd/system/cron.service', qiymat: 'paketniki — tegmaymiz' }, { k: 'n', yol: 'natija', qiymat: 'Nice: 0' }],
+        izoh: 'Faqat paket bergan unit fayli bor.',
+      },
+      {
+        cmd: ["printf '[Service]\\nNice=10\\n' > /etc/systemd/system/cron.service.d/override.conf", 'systemctl daemon-reload', 'systemctl restart cron', 'ps -o pid,ni,cmd -C cron'],
+        chiqish: '  PID  NI CMD\n  205  10 /usr/sbin/cron -f',
+        holat: [{ k: 'a', yol: '/lib/systemd/system/cron.service', qiymat: '1. asosiy fayl' }, { k: 'o', yol: 'cron.service.d/override.conf', qiymat: '2. ustiga: Nice=10', belgi: 'yangi' }, { k: 'n', yol: 'natija', qiymat: 'Nice: 10', belgi: 'yangi' }],
+        izoh: 'Drop-in asosiy fayldan KEYIN o‘qiladi va Nice= ni almashtiradi. Asosiy faylga tegilmadi.',
+      },
+      {
+        cmd: ["printf '[Service]\\nExecStart=/usr/sbin/cron -f -L 15\\n' > .../buyruq.conf", 'systemctl daemon-reload', 'systemctl restart cron'],
+        chiqish: 'Failed to restart cron.service: Unit cron.service has a bad unit file setting.',
+        holat: [{ k: 'a', yol: 'cron.service', qiymat: 'ExecStart #1' }, { k: 'b', yol: 'buyruq.conf', qiymat: 'ExecStart #2 — QO‘SHILDI', belgi: 'xato' }, { k: 'n', yol: 'natija', qiymat: 'ikkita ExecStart — rad etildi', belgi: 'xato' }],
+        izoh: 'ExecStart= ro‘yxat: drop-in’dagi qiymat almashtirmaydi, qo‘shiladi.',
+      },
+      {
+        cmd: ["printf '[Service]\\nExecStart=\\nExecStart=/usr/sbin/cron -f -L 15\\n' > .../buyruq.conf", 'systemctl daemon-reload', 'systemctl restart cron', 'ps -o pid,ni,cmd -C cron'],
+        chiqish: '  PID  NI CMD\n  292  10 /usr/sbin/cron -f -L 15',
+        holat: [{ k: 'a', yol: 'cron.service', qiymat: 'ExecStart #1' }, { k: 'b', yol: 'buyruq.conf', qiymat: 'ExecStart= (tozalash) + yangi', belgi: 'yangi' }, { k: 'n', yol: 'natija', qiymat: 'cron -f -L 15, Nice: 10', belgi: 'yangi' }],
+        izoh: 'Bo‘sh ExecStart= ro‘yxatni tozaladi. Ikkala drop-in ham ishlayapti.',
+      },
+      {
+        cmd: ['systemctl revert cron', 'systemctl restart cron'],
+        chiqish: '  PID  NI CMD\n  311   0 /usr/sbin/cron -f',
+        holat: [{ k: 'a', yol: '/lib/systemd/system/cron.service', qiymat: 'yana yolg‘iz' }, { k: 'n', yol: 'natija', qiymat: 'Nice: 0 — paket holati' }],
+        izoh: '`revert` drop-in papkasini o‘chirdi — hammasi paket bergan holatga qaytdi.',
+      },
+    ],
+  },
+
+  // 38-bob: Persistent=true — VPS tajribasi (eslatma.timer, OnCalendar=*:0/2; haqiqiy chiqishlar)
+  persistent: {
+    panel: 'eslatma.timer (har 2 daqiqada)',
+    qadamlar: [
+      {
+        cmd: ['systemctl enable --now eslatma.timer', 'cat /var/log/eslatma.log'],
+        chiqish: '08:54:00 ishladi',
+        holat: [{ k: 't', yol: 'timer', qiymat: 'yoqilgan', belgi: 'yangi' }, { k: 'a', yol: '08:54:00', qiymat: 'ishladi', belgi: 'yangi' }, { k: 'b', yol: '08:56:00', qiymat: 'kutilmoqda' }],
+        izoh: 'Timer vaqtida ishladi. Oxirgi ishga tushish vaqti diskda saqlandi (Persistent=true).',
+      },
+      {
+        cmd: ['systemctl stop eslatma.timer', 'date +%T'],
+        chiqish: '08:54:01',
+        holat: [{ k: 't', yol: 'timer', qiymat: 'to‘xtatildi — server o‘chganga o‘xshash', belgi: 'xato' }, { k: 'a', yol: '08:54:00', qiymat: 'ishladi' }, { k: 'b', yol: '08:56:00', qiymat: 'kutilmoqda' }],
+        izoh: 'Timer o‘chiq — xuddi server o‘chiq yoki qayta yonayotgandek.',
+      },
+      {
+        cmd: ['sleep 150', 'date +%T', 'cat /var/log/eslatma.log'],
+        chiqish: '08:56:31\n08:54:00 ishladi',
+        holat: [{ k: 't', yol: 'timer', qiymat: 'o‘chiq' }, { k: 'a', yol: '08:54:00', qiymat: 'ishladi' }, { k: 'b', yol: '08:56:00', qiymat: 'O‘TIB KETDI — bajarilmadi', belgi: 'xato' }],
+        izoh: '08:56:00 dagi ish vaqti o‘tdi, lekin timer o‘chiq edi — hech narsa bo‘lmadi.',
+      },
+      {
+        cmd: ['systemctl start eslatma.timer', 'cat /var/log/eslatma.log'],
+        chiqish: '08:54:00 ishladi\n08:56:31 ishladi',
+        holat: [{ k: 't', yol: 'timer', qiymat: 'yoqildi', belgi: 'yangi' }, { k: 'a', yol: '08:54:00', qiymat: 'ishladi' }, { k: 'b', yol: '08:56:00', qiymat: '08:56:31 da DARHOL bajarildi', belgi: 'yangi' }],
+        izoh: 'Timer yoqilishi bilan systemd o‘tkazib yuborilgan ishni bajardi. Persistent=false bo‘lsa, keyingi navbatni (08:58) kutardi.',
       },
     ],
   },

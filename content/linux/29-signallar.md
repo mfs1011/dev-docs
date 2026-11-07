@@ -1,14 +1,24 @@
 # 29 — Signallar
 
-[← Oldingi: Jarayon nima](28-jarayon.md) · [Mundarija](README.md)
+[← Oldingi: Jarayon nima](28-jarayon.md) · [Mundarija](README.md) · [Keyingi: Fon rejimi →](30-fon-rejimi.md)
 
 ## Tushuncha
 
-28-bobda har bir jarayonning o'z PID raqami borligini ko'rdik. Agar jarayon qotib qolsa, ortiqcha resurs yesa yoki uning ishini to'xtatish kerak bo'lsa, operatsion tizim unga **signal** yuboradi.
+Ishlab turgan jarayonga "to'xta", "to'xtab tur", "davom et" deyish kerak bo'ladi. Buning yo'li — **signal**: jarayonga yuboriladigan raqamli xabar. Signalni boshqa jarayon (masalan, siz `kill` buyrug'i bilan), terminal (Ctrl+C) yoki yadro yuboradi.
 
-**Signal** — operatsion tizim yadrosi (kernel) yoki boshqa jarayon tomonidan yuboriladigan qisqa asinxron xabarnoma. signal(7) man sahifasiga ko'ra, har bir signal jarayonga yetib borganida uning o'ziga xos standart harakati (disposition/action) bo'ladi: jarayonni tugatish (Term), e'tiborsiz qoldirish (Ign), xotira nusxasini yozib tugatish (Core), to'xtatib muzlatish (Stop) yoki davom ettirish (Cont).
+signal(7) ga ko'ra har bir signalning **standart harakati** (default disposition) bor:
 
-Tizimdagi barcha signallar ro'yxati va ularning raqamlarini `kill -l` bilan ko'rish mumkin:
+| Harakat | Ma'nosi |
+| --- | --- |
+| Term | Jarayonni tugatish |
+| Ign | E'tiborsiz qoldirish |
+| Core | Tugatish va xotira nusxasini (core dump) yozish |
+| Stop | To'xtatib turish (muzlatish) |
+| Cont | To'xtatilgan bo'lsa, davom ettirish |
+
+Jarayon bu harakatni o'zgartira oladi: signalni e'tiborsiz qoldirishi yoki **ushlab** (catch), o'z ishlovchisini (signal handler) ishga tushirishi mumkin. Ilovaning "to'xtashdan oldin ishini tugatib chiqishi" (graceful shutdown) shunga asoslanadi.
+
+Signallar ro'yxati:
 
 ```text
 $ kill -l | head -n 2
@@ -21,158 +31,192 @@ $ kill -l TERM; kill -l KILL; kill -l HUP; kill -l INT
 2
 ```
 
-signal(7) va Debian Reference (9.4.12) da keltirilgan eng asosiy signallar:
+Eng ko'p ishlatiladiganlari (signal(7) jadvali va Debian Reference 9.4.12):
 
-| Raqam | Nom | Standart harakat | Tavsif va qachon yuboriladi |
+| Raqam | Nom | Harakat | Qachon |
 | --- | --- | --- | --- |
-| **1** | `SIGHUP` | Term | Aloqa uzildi (hangup): boshqaruvchi terminal uzilganda |
-| **2** | `SIGINT` | Term | Klaviaturadan uzish (Interrupt). Terminalda Ctrl+C bosilganda oldingi plandagi (foreground) jarayonga yuboriladi |
-| **3** | `SIGQUIT` | Core | Klaviaturadan chiqish. Ctrl+\ bosilganda yuboriladi va xotira nusxasi (core dump) qoldiradi |
-| **9** | `SIGKILL` | Term | Darhol o'ldirish. Yadro tomonidan bajariladi; uni ushlab, bloklab yoki e'tiborsiz qoldirib bo'lmaydi |
-| **10** | `SIGUSR1` | Term | Foydalanuvchi belgilaydigan signal 1: ma'nosini dastur o'zi belgilaydi |
-| **12** | `SIGUSR2` | Term | Foydalanuvchi belgilaydigan signal 2 |
-| **15** | `SIGTERM` | Term | To'xtatish (Termination). `kill` ning standart signali; ilova uni kutib olib, toza chiqishi (graceful shutdown) mumkin |
-| **17** | `SIGCHLD` | Ign | Bola jarayon to'xtaganda yoki tugaganda ota jarayonga yuboriladi |
-| **18** | `SIGCONT` | Cont | To'xtatilgan (muzlatilgan) jarayon ishini davom ettirish |
-| **19** | `SIGSTOP` | Stop | Jarayonni to'xtatish (muzlatish). Buni ham ushlab yoki bloklab bo'lmaydi |
-| **20** | `SIGTSTP` | Stop | Terminaldan to'xtatish. Terminalda Ctrl+Z bosilganda yuboriladi (30-bob) |
+| 1 | `SIGHUP` | Term | Boshqaruvchi terminal uzildi (hangup) |
+| 2 | `SIGINT` | Term | Klaviaturadan uzish: Ctrl+C |
+| 3 | `SIGQUIT` | Core | Klaviaturadan chiqish: Ctrl+\ |
+| 9 | `SIGKILL` | Term | Majburiy to'xtatish |
+| 15 | `SIGTERM` | Term | To'xtatish so'rovi — `kill` ning standart signali |
+| 10 | `SIGUSR1` | Term | Ma'nosini dasturning o'zi belgilaydi |
+| 17 | `SIGCHLD` | Ign | Bola jarayon to'xtadi yoki tugadi |
+| 18 | `SIGCONT` | Cont | To'xtatilgan jarayonni davom ettirish |
+| 19 | `SIGSTOP` | Stop | To'xtatib turish |
+| 20 | `SIGTSTP` | Stop | Terminaldan to'xtatish: Ctrl+Z (30-bob) |
 
-signal(7) man sahifasida alohida ta'kidlanadi: `SIGKILL` va `SIGSTOP` signallarini ushlab bo'lmaydi, bloklab bo'lmaydi va e'tiborsiz qoldirib bo'lmaydi (*"cannot be caught, blocked, or ignored"*).
+signal(7) dagi eng muhim qoida: **`SIGKILL` va `SIGSTOP` ni ushlab, bloklab yoki e'tiborsiz qoldirib bo'lmaydi.**
 
-## Jarayonga signal yuborish: `kill`
+> Raqamlar arxitekturaga bog'liq. signal(7) jadvaliga ko'ra 1, 2, 3, 9, 15 hamma joyda bir xil, `SIGUSR1`, `SIGCHLD`, `SIGCONT`, `SIGSTOP`, `SIGTSTP` esa, masalan, Alpha, SPARC va MIPS'da boshqacha. Yuqoridagi qiymatlar — x86 va ARM uchun (trenajor ham, VPS ham x86). Skriptlarda raqam emas, **nom** yozing: `kill -TERM`, `kill -USR1`.
 
-`kill` nomi qo'rqinchli eshitilsa-da, uning vazifasi faqat o'ldirish emas, balki jarayonga ixtiyoriy signal jo'natishdir (kill(2)).
+## `kill`: signal yuborish
 
-Bash muhitida `kill` ichki buyruq (builtin) hisoblanadi (`type kill`). Shuningdek tizimda `/bin/kill` utilitasi ham mavjud. Agar signal ko'rsatilmasa, sukut bo'yicha **15 (SIGTERM)** yuboriladi:
+Nomi "o'ldirish" bo'lsa ham, `kill` istalgan signalni yuboradi. U ikki xil bo'ladi:
+
+```text
+$ type -a kill
+kill is a shell builtin
+kill is /usr/bin/kill
+kill is /bin/kill
+$ help kill | head -n 6
+kill: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+    Send a signal to a job.
+    
+    Send the processes identified by PID or JOBSPEC the signal named by
+    SIGSPEC or SIGNUM.  If neither SIGSPEC nor SIGNUM is present, then
+    SIGTERM is assumed.
+```
+
+- bash'ning ichki buyrug'i (builtin) — terminalda aynan shu ishlaydi;
+- `/usr/bin/kill` — procps paketidagi alohida dastur.
+
+`help kill` ga ko'ra signal ko'rsatilmasa, **`SIGTERM`** yuboriladi:
 
 ```text
 $ sleep 300 &
-[1] 179
+[1] 181
 $ kill $!
 $ sleep 1
 [1]+  Terminated              sleep 300
 $ sleep 300 &
-[1] 191
-$ kill -TERM $!
+[1] 183
+$ kill -KILL $!
 $ sleep 1
-[1]+  Terminated              sleep 300
-$ sleep 300 &
-[1] 204
-$ kill -9 $!
 [1]+  Killed                  sleep 300
-$ sleep 1
 ```
 
-- `kill $!` va `kill -TERM $!` bir xil: ikkalasi ham SIGTERM yuboradi va jarayon `Terminated` holati bilan tugaydi.
-- `kill -9 $!` esa SIGKILL yuboradi va natijada `Killed` xabari chiqadi.
-- Signalni nom bilan (`-TERM`, `-KILL`, `-HUP`, `-INT`) yoki raqam bilan (`-15`, `-9`, `-1`, `-2`) ko'rsatish mumkin.
+`$!` — oxirgi fon jarayonining PID'i (13-bob). Signal nom (`-TERM`, `-KILL`, `-HUP`) yoki raqam (`-15`, `-9`, `-1`) bilan beriladi. bash fon ishining qanday tugaganini yozadi: `Terminated` (SIGTERM) yoki `Killed` (SIGKILL).
 
-## Nom bo'yicha topish va to'xtatish: `pgrep` va `pkill`
+## Nom bo'yicha: `pgrep` va `pkill`
 
-Har doim PID raqamini qidirib o'tirmaslik uchun procps to'plamida `pgrep` (jarayonlarni qidirish) va `pkill` (jarayonlarga nomi bo'yicha signal yuborish) vositalari bor.
+PID'ni qidirib o'tirmaslik uchun procps paketida `pgrep` (qidirish) va `pkill` (nom bo'yicha signal yuborish) bor:
 
 ```text
 $ sleep 300 &
-[1] 177
+[1] 185
 $ sleep 301 &
-[2] 178
+[2] 186
 $ pgrep -a sleep
-177 sleep 300
-178 sleep 301
-$ pkill -f 300
+185 sleep 300
+186 sleep 301
+$ pkill -f 'sleep 300'
 [1]-  Terminated              sleep 300
+$ sleep 1
 $ pgrep -a sleep
-178 sleep 301
+186 sleep 301
 $ pkill -x sleep
 [2]+  Terminated              sleep 301
-$ pgrep -a sleep || echo "hamma sleep to'xtatildi"
-hamma sleep to'xtatildi
+$ sleep 1
+$ pgrep -a sleep || echo "sleep qolmadi"
+sleep qolmadi
 ```
 
-Foydali parametrlar:
-- `pgrep -a` — PID bilan birga to'liq buyruq qatorini chiqaradi.
-- `pkill -x` — faqat jarayon nomi **aniq** mos kelgandagina to'xtatadi. Bu tasodifiy boshqa jarayonlarga tegib ketishdan saqlaydi.
-- `pkill -f` — nafaqat jarayon nomi, balki uning barcha argumentlari (`cmdline`) ichidan qidiradi.
+| Bayroq | Ma'nosi |
+| --- | --- |
+| `-a` | PID bilan birga to'liq buyruq qatori |
+| `-x` | Jarayon nomi **aynan** mos kelishi kerak |
+| `-f` | Faqat nomdan emas, **butun buyruq qatoridan** qidirish |
+| `-u ali` | Faqat `ali` ning jarayonlari |
 
-### `pkill -f` ning xavfi
+### `pkill -f` xavfi
 
-`pkill -f` juda ehtiyotkorlikni talab qiladi. U butun buyruq qatorini tekshirgani uchun, kutilmagan boshqa jarayonlarga ham signal yuborishi mumkin:
+`-f` buyruq qatorining istalgan joyidagi moslikni oladi. Qidiruv so'zi qisqa bo'lsa, kutilmagan jarayonlar ham tushadi. VPS'da `sh` so'zini qidiramiz:
+
+```text vps
+$ pgrep -a -f sh
+7 [kworker/R-slub_flushwq]
+731 /bin/sh /usr/lib/systemd/scripts/chronyd-starter.sh -n -F 1
+987 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+1135 sshd-session: root [priv]
+1175 sshd-session: root@pts/0
+1176 -bash
+30495 sshd: /usr/sbin/sshd -D [listener] 1 of 10-100 startups
+```
+
+`pkill -f sh` bularning hammasiga SIGTERM yuboradi. Ular orasida `sshd` ning asosiy jarayoni (`[listener]`) bor: u to'xtasa, serverga **yangi SSH ulanish** qilib bo'lmaydi.
+
+O'zingizning qobig'ingiz (shell) esa omon qoladi. bash qo'llanmasiga ko'ra interaktiv bash, `trap` o'rnatilmagan bo'lsa, SIGTERM'ni e'tiborsiz qoldiradi. Trenajorda tekshiramiz:
 
 ```text
-$ pgrep -a -f bash
+$ kill -TERM $$; echo "qobiq hali tirik: $$"
+qobiq hali tirik: 167
+$ sh -c 'sleep 1000' &
+[1] 194
+$ pgrep -a -f sh
+5 [slub_flushwq]
+58 [zswap-shrink]
+167 -bash
+194 sh -c sleep 1000
+$ pkill -f sh; sleep 1
+[1]+  Terminated              sh -c 'sleep 1000'
+$ pgrep -a -f sh
+5 [slub_flushwq]
+58 [zswap-shrink]
 167 -bash
 ```
 
-Agar siz `pkill -f bash` yoki bexosdan qisqa so'z bilan `pkill -f sh` deb yuborsangiz, o'zingiz ishlab turgan qobiq (shell) sessiyasi ham to'xtab, serverdan uzilib qolasiz. Shuning uchun qoida: **avval `pgrep -a -f <qidiruv>` bilan kimlar mos kelishini ko'ring, faqat ishonch hosil qilgach `pkill` ishlating**.
+`sh -c 'sleep 1000'` to'xtadi, `-bash` qoldi. Kvadrat qavsdagilar yadro oqimlari (28-bob) — ular ham ro'yxatga tushdi, lekin signal ularga ta'sir qilmadi.
 
-## SIGTERM va SIGKILL farqi
+Qoida: **avval `pgrep -a -f ...` bilan nima tushishini ko'ring**, keyin aynan o'sha so'z bilan `pkill`. Imkon bo'lsa — `-x` yoki PID.
 
-Dasturchi uchun eng muhim farq — dasturning xavfsiz to'xtashi (graceful shutdown).
+## SIGTERM va SIGKILL
 
-Ilova ishlab turganda ochiq ma'lumotlar bazasi ulanishlari, yozilayotgan fayllar, keshlar yoki diskdagi PID faylga ega bo'ladi.
-- **SIGTERM (15)** yuborilganda, ilova uni qabul qiladi. Maxsus signal tutuvchi funksiya (`trap`) ishga tushadi: ulanishlarni yopadi, vaqtinchalik fayllarni tozalaydi va xavfsiz chiqadi.
-- **SIGKILL (9)** esa to'g'ridan-to'g'ri operatsion tizim yadrosi tomonidan bajariladi. Dastur kodiga umuman navbat berilmaydi. Hech qanday tozalash kodi ishlamaydi, ma'lumotlar chala yozilganicha qolishi mumkin.
+| | SIGTERM (15) | SIGKILL (9) |
+| --- | --- | --- |
+| Ma'nosi | "Iltimos, to'xta" | Majburiy to'xtatish |
+| Ilova ushlay oladimi | Ha: ishlovchi ishga tushadi, ilova ishini tugatib chiqadi | Yo'q (signal(7)) |
+| Ilova ushlamasa | Standart harakat — Term: darhol tugaydi | — |
 
-Trenajorda ikkala holatni sinab ko'ramiz. Kichik skript tuzamiz: u ishga tushganda o'z PID faylini yaratadi, `trap` orqali SIGTERM kelganda "tozalayapman" deb faylni o'chiradi:
+Trenajorda ikkalasini bir xil skriptda sinaymiz. Skript ishga tushganda PID faylini yozadi. `trap` (50-bob) bilan SIGTERM kelganda "tozalayapman" deb, faylni o'chirib chiqadi:
 
 ```text
 $ printf '#!/bin/sh\ntrap "echo tozalayapman; rm -f /tmp/app.pid; exit 0" TERM\necho $$ > /tmp/app.pid\nwhile true; do sleep 1; done\n' > /tmp/app.sh
 $ chmod +x /tmp/app.sh
 $ /tmp/app.sh &
-[1] 178
+[1] 201
 $ sleep 1
 $ cat /tmp/app.pid
-178
+201
 $ kill -TERM $!
 $ sleep 1
 tozalayapman
 [1]+  Done                    /tmp/app.sh
-$ ls -l /tmp/app.pid 2>/dev/null || echo "fayl ochirildi (tozalash ishladi)"
-fayl ochirildi (tozalash ishladi)
+$ ls /tmp/app.pid 2>/dev/null || echo "fayl o'chirildi: tozalash ishladi"
+fayl o'chirildi: tozalash ishladi
 ```
 
-SIGTERM yuborilganda `trap` ishladi, `tozalayapman` yozuvi chiqdi, PID fayl o'chirildi va jarayon xatosiz (`Done`) yakunlandi.
-
-Endi xuddi shu skriptga SIGKILL yuboramiz:
+Endi xuddi shu skriptga SIGKILL:
 
 ```text
 $ /tmp/app.sh &
-[1] 178
+[1] 209
 $ sleep 1
-$ cat /tmp/app.pid
-178
 $ kill -KILL $!
 $ sleep 1
 [1]+  Killed                  /tmp/app.sh
-$ ls -l /tmp/app.pid 2>/dev/null && echo "fayl qoldi (tozalash ishlamadi)"
--rw-r--r-- 1 root root 4 Nov  7 03:56 /tmp/app.pid
-fayl qoldi (tozalash ishlamadi)
+$ ls /tmp/app.pid 2>/dev/null && echo "fayl qoldi: tozalash ishlamadi"
+/tmp/app.pid
+fayl qoldi: tozalash ishlamadi
 ```
 
-Natija aniq: `Killed` xabari chiqdi, lekin tozalash kodi ishlamadi — `/tmp/app.pid` fayli diskda qolib ketdi.
+SIGKILL ilovaga hech qanday imkon bermadi: `trap` bajarilmadi, PID fayli diskda qoldi. Haqiqiy ilovada bu tugallanmagan yozuv, yopilmagan ulanish yoki "ilova allaqachon ishlayapti" deb xato beradigan eski PID fayli bo'lishi mumkin.
 
 Bosqichma-bosqich:
 
 <div data-animatsiya="qadamli" data-nom="signal"></div>
 
-## Boshqa keng tarqalgan signallar
+## SIGINT va SIGHUP
 
-### Ctrl+C va SIGINT
+**SIGINT** — Ctrl+C. Debian Reference jadvaliga ko'ra Ctrl+C bosilganda oldingi plandagi (foreground) jarayonga SIGINT, Ctrl+\ bosilganda SIGQUIT yuboriladi.
 
-Debian Reference jadvaliga ko'ra Ctrl+C bosilganda oldingi plandagi jarayonga **SIGINT (2)** yuboriladi, Ctrl+\ — **SIGQUIT (3)**. Signal bilan tugagan jarayonning chiqish kodi quyida, "128 + N" bo'limida.
+**SIGHUP** — "aloqa uzildi". signal(7) ga ko'ra u boshqaruvchi terminal uzilganda keladi. bash qo'llanmasiga ko'ra qobiq (shell) SIGHUP olsa chiqib ketadi. Interaktiv qobiq esa chiqishdan oldin SIGHUP ni o'zining barcha ishlariga (jobs) — ishlayotgan va to'xtatilganlariga — qayta yuboradi. SSH uzilganda fon jarayonlari nega to'xtashi va buning oldini olish (`nohup`, `disown`, `tmux`) — 30-bobda, VPS'da sinab ko'riladi.
 
+## `exec` va signallar
 
-### SIGHUP va terminal uzilishi
+28-bobda ishga tushirish skriptlarida `exec` nega yozilishini signallar bilan ko'rsatishni va'da qilgandik.
 
-**SIGHUP (1)** — "aloqa uzildi" (hangup). signal(7) ga ko'ra u boshqaruvchi terminal uzilganda yuboriladi. GNU Bash qo'llanmasiga ko'ra qobiq (shell) SIGHUP olganda chiqib ketadi, chiqishdan oldin esa interaktiv qobiq SIGHUP ni o'zining barcha ishlariga (jobs) — ishlayotgan va to'xtatilganlariga — qayta yuboradi. Shuning uchun SSH uzilsa, terminaldan ishga tushirilgan buyruqlar odatda to'xtaydi.
-
-SSH uzilsa ham jarayon ishlab qolishi uchun `nohup` yoki `tmux` ishlatiladi — bu mavzuni 30-bobda batafsil ko'ramiz.
-
-## `exec` nega muhim: 28-bobdagi va'da namoyishi
-
-28-bobda dasturlarni ishga tushirish skriptlarida (entrypoint) nega `exec` yozilishi signallar bilan bog'liqligi aytilgan edi.
-
-Faraz qiling, skript ilovani oddiy usulda chaqiradi. Trenajorda buni sinaymiz:
+Skript ilovani oddiy chaqiradi (`exec` siz). Ilova o'zi SIGTERM'ni ushlaydi:
 
 ```text
 $ printf '#!/bin/sh\ntrap "echo ilova: TERM oldim, tozalayapman; exit 0" TERM\necho "ilova: ishga tushdim, PID=$$"\nwhile true; do sleep 1; done\n' > /tmp/ilova.sh
@@ -180,95 +224,133 @@ $ chmod +x /tmp/ilova.sh
 $ printf '#!/bin/sh\necho "skript: ishga tushdim, PID=$$"\n/tmp/ilova.sh\n' > /tmp/oddiy.sh
 $ chmod +x /tmp/oddiy.sh
 $ /tmp/oddiy.sh &
-[1] 179
+[1] 231
 $ sleep 1
-skript: ishga tushdim, PID=179
-ilova: ishga tushdim, PID=181
+skript: ishga tushdim, PID=231
+ilova: ishga tushdim, PID=234
 $ pgrep -a -f 'ilova.sh|oddiy.sh'
-179 /bin/sh /tmp/oddiy.sh
-181 /bin/sh /tmp/ilova.sh
+231 /bin/sh /tmp/oddiy.sh
+234 /bin/sh /tmp/ilova.sh
 $ kill -TERM $!
 $ sleep 1
 [1]+  Terminated              /tmp/oddiy.sh
-$ pgrep -a -f 'ilova.sh' || echo "ilova tugagan"
-181 /bin/sh /tmp/ilova.sh
+$ pgrep -a -f ilova.sh || echo "ilova tugagan"
+234 /bin/sh /tmp/ilova.sh
 ```
 
-Nima sodir bo'ldi:
-1. Skript (PID 179) ishga tushdi va ilovani (PID 181) alohida bola jarayon qilib yaratdi.
-2. Biz skriptga `kill -TERM 179` yubordik.
-3. Skript to'xtadi (`Terminated`).
-4. **Lekin ilova (PID 181) to'xtamadi!** Signal faqat skriptga bordi, skript esa uni bolasiga uzatmadi. Servisni to'xtatish signali skriptga yuborilsa, ilova uni eshitmaydi va ishlashda davom etadi.
+Skript (`$!`) to'xtadi, ilova esa **ishlashda davom etdi**: signal faqat skriptga bordi, skript uni bolasiga uzatmadi.
 
-Endi skript ichida `exec` ishlatamiz:
+Endi `exec` bilan:
 
 ```text
 $ pkill -f ilova.sh
 $ printf '#!/bin/sh\necho "skript: ishga tushdim, PID=$$"\nexec /tmp/ilova.sh\n' > /tmp/exec-bilan.sh
 $ chmod +x /tmp/exec-bilan.sh
 $ /tmp/exec-bilan.sh &
-[1] 180
+[1] 281
 $ sleep 1
-skript: ishga tushdim, PID=180
-ilova: ishga tushdim, PID=180
+skript: ishga tushdim, PID=281
+ilova: ishga tushdim, PID=281
+ilova: TERM oldim, tozalayapman
 $ pgrep -a -f 'ilova.sh|exec-bilan.sh'
-180 /bin/sh /tmp/ilova.sh
+281 /bin/sh /tmp/ilova.sh
 $ kill -TERM $!
 $ sleep 1
 ilova: TERM oldim, tozalayapman
 [1]+  Done                    /tmp/exec-bilan.sh
-$ pgrep -a -f 'ilova.sh' || echo "ilova tugagan"
+$ pgrep -a -f ilova.sh || echo "ilova tugagan"
 ilova tugagan
 ```
 
-`exec` bilan natija butunlay boshqacha bo'ldi:
-- Ilova yangi jarayon yaratmadi, balki skriptning o'rnini egalladi: PID o'sha-o'sha qoldi.
-- `kill -TERM` to'g'ridan-to'g'ri ilovaga yetib bordi.
-- Ilova `trap` orqali xavfsiz tozalashni bajardi va toza chiqdi.
+Birinchi `ilova: TERM oldim` qatori — oldingi misoldan qolgan ilova: blok boshidagi `pkill -f ilova.sh` uni to'xtatdi.
 
-## Chiqish kodi: 128 + N qoidasi
+Yangi ilova skriptning o'rnini egalladi — PID o'sha-o'sha (28-bob, execve). `kill -TERM $!` to'g'ridan-to'g'ri ilovaga yetdi, u tozalab chiqdi.
 
-GNU Bash qo'llanmasining "Exit Status" bo'limida shunday qoida yozilgan: agar buyruq yoki jarayon biror halokatli signal `N` ta'sirida to'xtatilsa, qobiq (shell) uning chiqish kodi (`$?`) sifatida **`128 + N`** qiymatini qaytaradi.
+### systemd'da-chi?
 
-Buni trenajorda turli signallar bilan tekshirib ko'ramiz:
+systemd servisni boshqacha to'xtatadi. systemd.kill(5) ga ko'ra:
+
+- `KillMode=` standart holatda `control-group`: unit to'xtatilganda uning **barcha** jarayonlari to'xtatiladi;
+- avval `KillSignal=` (standart — SIGTERM) yuboriladi;
+- jarayonlar `TimeoutStopSec=` vaqtida tugamasa, SIGKILL yuboriladi (`SendSIGKILL=yes`).
+
+`exec` siz o'sha skriptni vaqtinchalik servis qilib ishga tushirib, to'xtatamiz:
+
+```text
+$ systemd-run --unit=sinov /tmp/oddiy.sh
+Running as unit: sinov.service
+$ sleep 1
+$ systemctl show -p KillMode -p KillSignal sinov
+KillMode=control-group
+KillSignal=15
+$ systemd-cgls --no-pager -u sinov.service
+Unit sinov.service (/system.slice/sinov.service):
+├─289 /bin/sh /tmp/oddiy.sh
+├─290 /bin/sh /tmp/ilova.sh
+└─297 sleep 1
+$ systemctl stop sinov
+$ pgrep -a -f 'ilova.sh|oddiy.sh' || echo "hammasi to'xtadi"
+hammasi to'xtadi
+$ journalctl -u sinov --no-pager -o cat
+Started sinov.service - /tmp/oddiy.sh.
+skript: ishga tushdim, PID=289
+ilova: ishga tushdim, PID=290
+Terminated
+ilova: TERM oldim, tozalayapman
+Stopping sinov.service - /tmp/oddiy.sh...
+sinov.service: Deactivated successfully.
+Stopped sinov.service - /tmp/oddiy.sh.
+```
+
+systemd SIGTERM'ni unit guruhidagi har ikkala jarayonga yubordi: ilova ham `TERM oldim` dedi. Demak:
+
+| Kim to'xtatadi | `exec` siz skript |
+| --- | --- |
+| systemd (`systemctl stop`) | Muammo yo'q: standart `KillMode=control-group` hammaga yuboradi |
+| Qo'lda `kill PID` | Signal faqat skriptga boradi, ilova qoladi |
+| Konteyner (`docker stop`) | Docker hujjatiga ko'ra signalni konteynerning **asosiy jarayoni** oladi, 10 soniyadan keyin SIGKILL. Asosiy jarayon `exec` siz skript bo'lsa, ilova SIGTERM'ni olmaydi va tozalashsiz o'ldiriladi |
+
+`exec` — eng ishonchli yo'l: kim to'xtatmasin, signal ilovaning o'ziga boradi.
+
+## Chiqish kodi: 128 + N
+
+bash qo'llanmasiga ko'ra buyruq `N` raqamli signal bilan tugasa, chiqish kodi **128 + N** bo'ladi:
 
 ```text
 $ sleep 300 &
-[1] 177
+[1] 302
 $ kill -TERM $!
-$ wait $!
+$ wait $!; echo "SIGTERM: $?"
 [1]+  Terminated              sleep 300
-$ echo "SIGTERM: $?"
 SIGTERM: 143
 $ sleep 300 &
-[1] 178
+[1] 303
 $ kill -KILL $!
-$ wait $!
+$ wait $!; echo "SIGKILL: $?"
 [1]+  Killed                  sleep 300
-$ echo "SIGKILL: $?"
 SIGKILL: 137
 $ sleep 300 &
-[1] 179
+[1] 304
 $ kill -INT $!
-$ wait $!
+$ wait $!; echo "SIGINT: $?"
 [1]+  Interrupt               sleep 300
-$ echo "SIGINT: $?"
 SIGINT: 130
 ```
 
-Matematikasi:
-- **SIGINT (2)**: 128 + 2 = 130
-- **SIGKILL (9)**: 128 + 9 = 137
-- **SIGTERM (15)**: 128 + 15 = 143
+| Kod | Hisob | Signal |
+| --- | --- | --- |
+| 130 | 128 + 2 | SIGINT |
+| 137 | 128 + 9 | SIGKILL |
+| 143 | 128 + 15 | SIGTERM |
 
-Logda dastur `137` kodi bilan tugaganini ko'rsangiz — unga SIGKILL (9) kelgan; `143` — SIGTERM (15). Kim yuborganini log va jurnaldan qidirasiz (xotira tugashi holati — 31-bob).
+Logda yoki CI'da `137` ko'rsangiz — jarayon SIGKILL bilan o'ldirilgan; `143` — SIGTERM bilan to'xtatilgan. Kim yuborganini jurnaldan qidirasiz (37-bob); xotira tugaganda yadro o'ldirishi — 31-bobda.
 
 ## Debian va Ubuntu
 
-| Xususiyat | Debian 12 (trenajor) | Ubuntu 26.04 (VPS) |
+| | Debian 12 (trenajor) | Ubuntu 26.04 (VPS) |
 | --- | --- | --- |
-| `kill` (qobiq ichki buyrug'i) | bash 5.2.15 | bash 5.3.9 |
-| `pkill` / `pgrep` | procps-ng 4.0.2 | procps-ng 4.0.4 |
+| bash (`kill` builtin) | 5.2.15 | 5.3.9 |
+| procps-ng (`pgrep`, `pkill`, `/usr/bin/kill`) | 4.0.2 | 4.0.4 |
 
 ```text vps
 $ bash --version | head -1
@@ -279,55 +361,55 @@ $ type kill
 kill is a shell builtin
 ```
 
-`pgrep`/`pkill` ikkala tizimda ham procps-ng'dan: rust-coreutils ularga tegishli emas.
+`pgrep`/`pkill` rust-coreutils'ga kirmaydi: ikkala tizimda ham procps-ng.
 
 ## Tipik xatolar
 
-**1. Har qanday jarayonga darhol `kill -9` yuborish.**
-Eng keng tarqalgan va zararli odat. SIGKILL jarayonga hech qanday tozalash imkonini bermaydi. Natijada vaqtinchalik fayllar qoladi, diskdagi qulf (lock) fayllar sabab keyingi safar ilova yonmasligi mumkin, tranzaksiyalar chala qoladi.
-To'g'risi: avval oddiy `kill PID` (SIGTERM) yuboriladi. Agar ilova bir necha soniya davomida javob bermasa va to'xtamasa, shundagina oxirgi chora sifatida `kill -9` ishlatiladi.
+**1. Darhol `kill -9`.**
+SIGKILL tozalashga imkon bermaydi (yuqoridagi PID fayli). systemd ham avval SIGTERM yuboradi va faqat `TimeoutStopSec` o'tgach SIGKILL ishlatadi.
+To'g'risi: avval `kill PID`, bir oz kuting (`pgrep` bilan tekshiring), kerak bo'lsagina `kill -KILL`.
 
-**2. `pkill -f` bilan barcha o'xshash jarayonlarni qirib tashlash.**
-`pkill -f py` yoki `pkill -f test` kabi umumiy so'zlar buyruq qatorida shu harflar qatnashgan barcha boshqa dasturlarni (jumladan muharrir yoki terminal sessiyangizni) o'ldiradi.
-To'g'risi: signal yuborishdan oldin `pgrep -a -f <qidiruv>` bilan aniq qaysi jarayonlar topilishini ko'rish.
+**2. `pkill -f` ni qisqa so'z bilan.**
+`pkill -f sh` serverda `sshd` ni ham to'xtatadi.
+To'g'risi: avval `pgrep -a -f`; imkon bo'lsa `pkill -x` yoki PID.
 
-**3. Zombi jarayonni `kill` bilan o'ldirishga urinish.**
-28-bobda ko'rganimizdek, zombi (`STAT Z`) — allaqachon o'lgan jarayon. U xotirada kod sifatida mavjud emas, faqat jarayonlar jadvalida yozuv sifatida turibdi. Unga yuborilgan har qanday signal e'tiborsiz qoladi.
-To'g'risi: Debian Reference'ga ko'ra zombining ota jarayonini (PPID) to'xtatish.
+**3. Zombini `kill` bilan "o'ldirish".**
+Zombi allaqachon tugagan (ps(1)), signal unga ta'sir qilmaydi.
+To'g'risi: Debian Reference'ga ko'ra uning otasini (PPID) to'xtatish.
 
-**4. Ishga tushirish skriptlarida `exec` ni unutish.**
-Skript orqali ilovani boshqarganda `exec` qo'yilmasa, konteyner yoki tizim bergan SIGTERM faqat skriptga boradi, ichki ilova esa yopilmay osilib qoladi.
-To'g'risi: skriptning oxirgi chaqiruvida `exec ilova-buyrug'i` deb yozish.
+**4. Ishga tushirish skriptida `exec` ni unutish.**
+Qo'lda `kill` yoki `docker stop` signali ilovaga yetmaydi.
+To'g'risi: skript oxirida `exec ilova ...`.
 
 ## Amaliyot
 
-**[Mashqni boshlash →](/linux/trenajor?mashq=29-signal)** "Jarayonni to'xtatish": fondagi jarayonlarni `pgrep` bilan topasiz, `pkill` va `kill` bilan to'xtatasiz hamda `trap` bilan xavfsiz chiqishni (graceful shutdown) tekshirasiz.
+**[Mashqni boshlash →](/linux/trenajor?mashq=29-signal)** "Jarayonni to'xtatish": jarayonlarni `pgrep` bilan topasiz, `pkill` va `kill` bilan to'xtatasiz va `trap` bilan tozalab chiqishni tekshirasiz.
 
 Savollar:
 
-1. `kill 1234` buyrug'i sukut bo'yicha qaysi signalni yuboradi?
-2. SIGTERM va SIGKILL signallarining asosiy farqi nima? Qaysi birini ilova ushlab qola olmaydi?
-3. Jarayonning chiqish kodi (`$?`) 137 ga teng bo'lsa, u qanday sabab bilan tugagan?
-4. Nega `pkill -f` buyrug'ini ishlatishdan oldin `pgrep -a -f` qilish tavsiya etiladi?
-5. Ishga tushirish skriptida `exec node app.js` yozish nega muhim?
+1. `kill 1234` qaysi signalni yuboradi?
+2. Ilova qaysi signalni ushlay oladi: SIGTERM'nimi, SIGKILL'nimi?
+3. Jarayonning chiqish kodi 137. Nima bo'lgan?
+4. Nega `pkill -f sh` serverda xavfli?
+5. `exec` siz ishga tushirish skripti `systemctl stop` da muammo beradimi? `docker stop` da-chi?
 
 <details>
 <summary>Javoblar</summary>
 
-1. Standart bo'yicha **SIGTERM (15)** signali yuboriladi.
-2. SIGTERM dasturga tozalash ishlarini bajarib xavfsiz chiqish (graceful shutdown) imkonini beradi. SIGKILL esa operatsion tizim yadrosi tomonidan darhol to'xtatiladi; uni hech qanday dastur ushlab, bloklab yoki e'tiborsiz qoldira olmaydi.
-3. GNU Bash 128+N qoidasiga ko'ra 137 − 128 = 9, ya'ni jarayon **SIGKILL (9)** bilan to'xtatilgan.
-4. `-f` parametri buyruq qatoridagi barcha argumentlar bo'yicha qidiradi. Kutilmaganda o'xshash nomli boshqa jarayonlar yoki o'zingizning terminalingiz ham mos kelib qolib, to'xtab ketishining oldini olish uchun avval ro'yxat tekshiriladi.
-5. `exec` ishlatilganda yangi bola jarayon yaratilmaydi, ilova skriptning PID raqamini egallaydi. Natijada tashqaridan kelgan to'xtatish signallari (SIGTERM) to'g'ridan-to'g'ri ilovaga yetib boradi.
+1. SIGTERM (`help kill`: signal ko'rsatilmasa).
+2. SIGTERM'ni. SIGKILL'ni ushlab, bloklab yoki e'tiborsiz qoldirib bo'lmaydi.
+3. 137 − 128 = 9: jarayon SIGKILL bilan o'ldirilgan.
+4. `-f` butun buyruq qatoridan qidiradi: `sshd`, `chronyd-starter.sh` kabi jarayonlar ham tushadi.
+5. `systemctl stop` da yo'q: standart `KillMode=control-group` signalni hamma jarayonga yuboradi. `docker stop` da ha: signalni faqat asosiy jarayon oladi.
 
 </details>
 
 ## Rasmiy hujjat
 
-- [Debian Reference 9.4.12 — Killing a process](https://www.debian.org/doc/manuals/debian-reference/ch09.en.html#_killing_a_process)
 - [signal(7) — man7.org](https://man7.org/linux/man-pages/man7/signal.7.html)
-- [kill(1) — man7.org](https://man7.org/linux/man-pages/man1/kill.1.html)
-- [pgrep(1) / pkill(1) — man7.org](https://man7.org/linux/man-pages/man1/pgrep.1.html)
-- [GNU Bash: Signals](https://www.gnu.org/software/bash/manual/bash.html#Signals)
-- [GNU Bash: Exit Status](https://www.gnu.org/software/bash/manual/bash.html#Exit-Status)
-- Trenajorda: `man 7 signal`, `man kill`, `man pkill`, `help trap`
+- [Debian Reference 9.4.12 — Killing a process](https://www.debian.org/doc/manuals/debian-reference/ch09.en.html#_killing_a_process)
+- [GNU Bash: Signals](https://www.gnu.org/software/bash/manual/bash.html#Signals), [Exit Status](https://www.gnu.org/software/bash/manual/bash.html#Exit-Status)
+- [pgrep(1), pkill(1) — man7.org](https://man7.org/linux/man-pages/man1/pgrep.1.html)
+- [systemd.kill(5)](https://www.freedesktop.org/software/systemd/man/latest/systemd.kill.html)
+- [docker container stop — Docker Docs](https://docs.docker.com/reference/cli/docker/container/stop/)
+- Trenajorda: `man 7 signal`, `help kill`, `man pkill`, `man bash` (SIGNALS bo'limi)
