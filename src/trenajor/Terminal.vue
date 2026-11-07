@@ -6,9 +6,10 @@ import { onMounted, onBeforeUnmount, reactive, ref } from 'vue'
 import { Terminal } from '@xterm/xterm'
 import { FitAddon } from '@xterm/addon-fit'
 import '@xterm/xterm/css/xterm.css'
-import { suggest } from './maslahat.js'
+import { suggest as gitSuggest } from './maslahat.js'
 
-const props = defineProps({ holat: Object })
+// suggest — maslahat funksiyasi (line, holat) => [{ add, full, d }]; standart — Git trenajoriniki
+const props = defineProps({ holat: Object, suggest: { type: Function, default: gitSuggest } })
 const emit = defineEmits(['send', 'holat', 'command', 'prompt'])
 
 const box = ref(null)
@@ -47,7 +48,7 @@ function cellSize() {
 
 function render() {
   const line = currentLine()
-  const items = line == null ? [] : suggest(line, props.holat)
+  const items = line == null ? [] : props.suggest(line, props.holat)
   if (!items.length) { ghost.show = false; return }
   if (ghost.sel >= items.length) ghost.sel = 0
   const { cw, ch, ox, oy } = cellSize()

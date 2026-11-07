@@ -19,7 +19,7 @@ Ubuntu Server hujjati ("Backup with shell scripts") yondashuvi: skript `tar` bil
 | Qism | Qaysi bobdan |
 | --- | --- |
 | `set -euo pipefail`, `${1:-/etc}` | 48 |
-| `[ -d … ]`, `${o'zgaruvchi#naqsh}` | 49 |
+| `[ -d … ]`, `${o'zgaruvchi#naqsh}` (boshidan olib tashlash) | 49 |
 | funksiya, `exit 1`, `mktemp`, `trap … EXIT` | 50 |
 | `find -mtime +N -delete` | 19 |
 | `.service` + `.timer`, `Persistent=true` | 35, 38 |
