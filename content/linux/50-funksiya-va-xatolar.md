@@ -1,6 +1,6 @@
 # 50 — Funksiya va xatolar
 
-[← Oldingi: Shart va sikl](49-shart-va-sikl.md) · [Mundarija](README.md)
+[← Oldingi: Shart va sikl](49-shart-va-sikl.md) · [Mundarija](README.md) · [Keyingi: Amaliy: zaxira skripti →](51-zaxira-skripti.md)
 
 ## Tushuncha
 

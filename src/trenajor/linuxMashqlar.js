@@ -1831,6 +1831,51 @@ export const LINUX_MASHQLAR = [
       },
     ],
   },
+  {
+    id: '51-zaxira',
+    title: 'Zaxira skripti',
+    bob: '/linux/51-zaxira-skripti',
+    intro: 'Papkada bobdagi `zaxira.sh` skripti tayyor (zaxiralar `/var/backups/mashq51` ga yoziladi). Uni ishga tushirasiz, arxivdan bitta faylni tiklab solishtirasiz, keyin zaxirani "eskirtirib", skript uni o‘chirishini tekshirasiz.',
+    setup: 'rm -rf /var/backups/mashq51; echo IyEvYmluL2Jhc2gKIyBQYXBrYW5pIHNhbmFsaSAudGFyLmd6IGFyeGl2Z2EgemF4aXJhbGF5ZGkgdmEgZXNraSBhcnhpdmxhcm5pIG8nY2hpcmFkaS4KIyAgIHpheGlyYS5zaCBbUEFQS0FdICAgIChzdGFuZGFydDogL2V0YykKc2V0IC1ldW8gcGlwZWZhaWwKCm1hbmJhPSR7MTotL2V0Y30KZGVzdD0vdmFyL2JhY2t1cHMvbWFzaHE1MQpzYXFsYXNoX2t1bj03Cgp4YXRvKCkgewogIGVjaG8gInhhdG86ICQqIiA+JjIKICBleGl0IDEKfQoKWyAtZCAiJG1hbmJhIiBdIHx8IHhhdG8gInBhcGthIHlvJ3E6ICRtYW5iYSIKbWtkaXIgLXAgIiRkZXN0IgoKbm9tPSIkKGhvc3RuYW1lIC1zKS0kKGJhc2VuYW1lICIkbWFuYmEiKS0kKGRhdGUgKyVGXyVIJU0lUykudGFyLmd6Igp5YXJpbT0kKG1rdGVtcCAiJGRlc3QvLnlhcmltLlhYWFhYWCIpCnRyYXAgJ3JtIC1mICIkeWFyaW0iJyBFWElUCgp0YXIgLWN6ZiAiJHlhcmltIiAtQyAvICIke21hbmJhIy99IgptdiAiJHlhcmltIiAiJGRlc3QvJG5vbSIKZWNobyAiemF4aXJhOiAkZGVzdC8kbm9tICgkKHN0YXQgLWMgJXMgIiRkZXN0LyRub20iKSBiYXl0KSIKCmZpbmQgIiRkZXN0IiAtbmFtZSAnKi50YXIuZ3onIC1tdGltZSArIiRzYXFsYXNoX2t1biIgLXByaW50ZiAibydjaGlyaWxkaTogJXBcbiIgLWRlbGV0ZQo= | base64 -d > zaxira.sh; chmod 755 zaxira.sh',
+    steps: [
+      {
+        cmd: './zaxira.sh',
+        text: 'Skriptni ishga tushiring (standart holatda `/etc` ni zaxiralaydi).',
+        check: 'ls /var/backups/mashq51/*.tar.gz',
+        natija: 'Sanali arxiv yaratildi.',
+      },
+      {
+        cmd: 'tar -tzf /var/backups/mashq51/*.tar.gz | head',
+        text: 'Arxiv ichidagilar ro‘yxatini ko‘ring.',
+        ran: /^tar\s+-?t\w*\s/,
+        natija: 'Yo‘llar `/` siz: `etc/...`.',
+      },
+      {
+        cmd: 'mkdir -p tiklash && tar -xzf /var/backups/mashq51/*.tar.gz -C tiklash etc/hostname',
+        text: 'Arxivdan faqat `etc/hostname` ni `tiklash` papkasiga chiqaring.',
+        check: '[ -f "$MASHQ/tiklash/etc/hostname" ]',
+        natija: 'tar papka tuzilmasini qayta yaratdi: `tiklash/etc/hostname`.',
+      },
+      {
+        cmd: 'diff /etc/hostname tiklash/etc/hostname && echo "bir xil"',
+        text: 'Tiklangan faylni asli bilan solishtiring.',
+        ran: /^diff\s+\/etc\/hostname\s+\S*tiklash\/etc\/hostname/,
+        natija: '`bir xil` — zaxira ishlaydi.',
+      },
+      {
+        cmd: "touch -d '10 days ago' /var/backups/mashq51/*.tar.gz",
+        text: 'Zaxirani 10 kun oldingi qilib ko‘rsating (`touch -d`).',
+        check: 'find /var/backups/mashq51 -name "*.tar.gz" -mtime +7 | grep -q .',
+        natija: 'Endi u 7 kundan eski.',
+      },
+      {
+        cmd: './zaxira.sh',
+        text: 'Skriptni yana ishga tushiring.',
+        check: '[ -z "$(find /var/backups/mashq51 -name "*.tar.gz" -mtime +7)" ] && [ "$(ls /var/backups/mashq51/*.tar.gz | wc -l)" = 1 ]',
+        natija: 'Yangi zaxira olindi, eskisi `o‘chirildi`.',
+      },
+    ],
+  },
 ]
 
 /** VM ichida `source` qilinadigan skript: papka, setup va har prompt oldidan qadamlarni tekshiradigan funksiya */
