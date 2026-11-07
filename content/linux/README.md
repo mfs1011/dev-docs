@@ -62,7 +62,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - Veb-server va HTTPS — **"Nginx"** kitobida.
 - Konteynerlar, namespace va cgroup — **"Docker"** kitobida.
 
-> **Holat.** Qo'llanma yozilmoqda: 51/54 bob tayyor. Havolasi borlari — tayyor boblar. Har bobning "Amaliyot" bo'limida trenajordagi mashqqa havola bor.
+> **Holat.** Qo'llanma tayyor: 54/54 bob. Har bobning "Amaliyot" bo'limida trenajordagi mashqqa havola bor.
 
 ---
 
@@ -190,24 +190,63 @@ Bu qismdagi tekshiruv tartibi (qaysi buyruq qaysi ketma-ketlikda) rasmiy hujjatl
 
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
-| 52 | ⚑ Servis ishlamayapti | `systemctl status` → `journalctl -u` → port (`ss`) → ruxsatlar → konfiguratsiya sintaksisi; trenajorda ataylab buzilgan servislar | T+V | [DR 6.7](https://www.debian.org/doc/manuals/debian-reference/ch06.en.html#_the_diagnosis_of_the_system_daemons) · [SD systemctl(1)](https://www.freedesktop.org/software/systemd/man/latest/systemctl.html) · [SD journalctl(1)](https://www.freedesktop.org/software/systemd/man/latest/journalctl.html) |
-| 53 | ⚑ Server sekin | Yuklama, CPU, xotira va swap, disk I/O — qaysi biri sabab ekanini aniqlash | T+V | [DR 3.7](https://www.debian.org/doc/manuals/debian-reference/ch03.en.html#_other_system_monitors) · [DR 9.4](https://www.debian.org/doc/manuals/debian-reference/ch09.en.html#_monitoring_controlling_and_starting_program_activities) · [MAN proc(5)](https://man7.org/linux/man-pages/man5/proc.5.html) |
-| 54 | ⚑ Disk to'ldi | `df` va `du`; o'chirilgan, lekin ochiq fayl; journal hajmi (`journalctl --vacuum-size`); eski yadrolar va apt keshi | T+V | [DR 9.8.12](https://www.debian.org/doc/manuals/debian-reference/ch09.en.html#_invisible_disk_space_consumption) · [SD journalctl(1)](https://www.freedesktop.org/software/systemd/man/latest/journalctl.html) · [DM df(1)](https://manpages.debian.org/bookworm/coreutils/df.1.en.html) |
+| 52 | [⚑ Servis ishlamayapti](52-servis-ishlamayapti.md) | `systemctl status` → `journalctl -u` → port (`ss`) → ruxsatlar → konfiguratsiya sintaksisi; trenajorda ataylab buzilgan servislar | T+V | [DR 6.7](https://www.debian.org/doc/manuals/debian-reference/ch06.en.html#_the_diagnosis_of_the_system_daemons) · [SD systemctl(1)](https://www.freedesktop.org/software/systemd/man/latest/systemctl.html) · [SD journalctl(1)](https://www.freedesktop.org/software/systemd/man/latest/journalctl.html) |
+| 53 | [⚑ Server sekin](53-server-sekin.md) | Yuklama, CPU, xotira va swap, disk I/O — qaysi biri sabab ekanini aniqlash | T+V | [DR 3.7](https://www.debian.org/doc/manuals/debian-reference/ch03.en.html#_other_system_monitors) · [DR 9.4](https://www.debian.org/doc/manuals/debian-reference/ch09.en.html#_monitoring_controlling_and_starting_program_activities) · [MAN proc(5)](https://man7.org/linux/man-pages/man5/proc.5.html) |
+| 54 | [⚑ Disk to'ldi](54-disk-toldi.md) | `df` va `du`; o'chirilgan, lekin ochiq fayl; journal hajmi (`journalctl --vacuum-size`); eski yadrolar va apt keshi | T+V | [DR 9.8.12](https://www.debian.org/doc/manuals/debian-reference/ch09.en.html#_invisible_disk_space_consumption) · [SD journalctl(1)](https://www.freedesktop.org/software/systemd/man/latest/journalctl.html) · [DM df(1)](https://manpages.debian.org/bookworm/coreutils/df.1.en.html) |
 
 ---
 
 ## Animatsiyalar (qiyin tushunchalar)
 
+Qiyin joylarga animatsiya qo'yilgan, jami 45 ta. Ko'pchiligi qadamli: buyruq, uning haqiqiy chiqishi (trenajor yoki VPS) va nima o'zgargani. Ba'zilari interaktiv: masalan, 07-bobda bitlarni bosib, `chmod` sonini ko'rasiz.
+
 | Bob | Nimani ko'rsatadi |
 | --- | --- |
-| 06 | Nom → inode → ma'lumot bloklari; hard link va symlink o'chirilganda nima qoladi |
-| 07 | `rwx` bitlari → sonli yozuv (`754`); katalogda `x` nima uchun kerak |
-| 11 | Uchta oqim va fayl deskriptorlari; `2>&1` tartibi |
-| 14 | Qobiq (shell) bir qatorni qadam-baqadam kengaytiradi: tilde → o'zgaruvchi → `$()` → so'zlarga bo'lish → glob |
-| 28 | `fork` va `exec`: bash ichidan buyruq ishga tushganda jarayon daraxti qanday o'sadi |
-| 29 | Signal yuborilishi: SIGTERM — ilova ishini tugatadi, SIGKILL — yadro darhol to'xtatadi |
-| 33 | Yonish bosqichlari va systemd unit'lari bog'liqlik grafi |
-| 47 | SSH tunnel: so'rov noutbukdan server ichidagi portga qanday yetadi |
+| [04 — Katalog daraxti](04-katalog-daraxti.md) | Katalog daraxti bo‘ylab yurish: har papka nima uchun |
+| [05 — Fayllar bilan ishlash](05-fayllar.md) | `cp` so‘ramasdan ustidan yozadi, `--backup`; `mv` — ko‘chirish va nom o‘zgartirish |
+| [06 — Inode va havolalar](06-inode-va-havolalar.md) | Nom → inode → ma’lumot; hard link va symlink o‘chirilganda nima qoladi |
+| [06 — Inode va havolalar](06-inode-va-havolalar.md) | Deploy’dagi `current` havolasi: `ln -sf` va `-n` farqi |
+| [07 — Ruxsatlar](07-ruxsatlar.md) | `rwx` bitlari ↔ sonli yozuv (`754`): bitni bosib yoqish/o‘chirish |
+| [08 — Maxsus bitlar va ACL](08-maxsus-bitlar-va-acl.md) | Sticky bit va setgid papka |
+| [08 — Maxsus bitlar va ACL](08-maxsus-bitlar-va-acl.md) | ACL mask nomlangan yozuvlarni qanday cheklaydi |
+| [10 — Disk va mount](10-disk-va-mount.md) | O‘chirilgan, lekin ochiq fayl: `du` ko‘rmaydi, `df` ko‘radi |
+| [11 — Standart oqimlar](11-standart-oqimlar.md) | Uchta oqim va yo‘naltirish; `2>&1` tartibi |
+| [12 — Pipe va buyruqlar zanjiri](12-pipe.md) | `;`, `&&`, `\|\|` qaysi buyruqni ishga tushiradi |
+| [13 — O'zgaruvchilar va muhit](13-ozgaruvchilar.md) | Qobiq o‘zgaruvchisi va muhit: bola jarayon faqat `export` qilinganlarni oladi |
+| [14 — Kengaytmalar va qo'shtirnoq](14-kengaytmalar.md) | Bash bitta qatorni qadam-baqadam kengaytiradi |
+| [15 — Bash'ni sozlash](15-bash-sozlash.md) | Bash qaysi sozlama fayllarini o‘qiydi |
+| [16 — Matn muharriri](16-matn-muharriri.md) | vim rejimlari |
+| [17 — Faylni ko'rish](17-faylni-korish.md) | Log aylantirilganda `tail -f` eski faylda qoladi, `tail -F` yangisiga o‘tadi |
+| [18 — grep va regex](18-grep-va-regex.md) | Regex qatorning qaysi qismini tutadi |
+| [19 — find va xargs](19-find-va-xargs.md) | `xargs` nomlarni probeldan bo‘ladi; `-print0`/`-0` va `-exec {} +` |
+| [20 — Matnni o'zgartirish](20-matnni-ozgartirish.md) | `cut \| sort \| uniq -c \| sort -rn` — har bosqichdagi oqim |
+| [22 — Foydalanuvchi va guruh](22-foydalanuvchi-va-guruh.md) | Foydalanuvchi hisobi uch faylda: `/etc/passwd`, `/etc/shadow`, `/etc/group` |
+| [23 — sudo](23-sudo.md) | `sudo` so‘rovni qanday hal qiladi |
+| [24 — apt](24-apt.md) | Bog‘liqliklar, "auto" belgisi va `autoremove` |
+| [25 — Paket ichida nima bor](25-paket-ichida.md) | Paket yangilanganda sozlama fayli (conffile) bilan nima bo‘ladi |
+| [26 — Tashqi repozitoriy](26-tashqi-repozitoriy.md) | Tashqi repozitoriy Ubuntu paketini "yutib" oladi; pinning qaytaradi |
+| [27 — Avtomatik yangilanishlar](27-avtomatik-yangilanish.md) | Avtomatik yangilanish kuni: haqiqiy log va holat |
+| [28 — Jarayon nima](28-jarayon.md) | `fork` va `exec`: jarayon daraxti qanday o‘sadi |
+| [29 — Signallar](29-signallar.md) | SIGTERM va SIGKILL farqi |
+| [30 — Fon rejimi](30-fon-rejimi.md) | Ishlar: `&`, to‘xtatish, `bg`, `fg` |
+| [30 — Fon rejimi](30-fon-rejimi.md) | SSH uzilganda va oddiy `exit` da qaysi jarayonlar qoladi |
+| [31 — Resurslar](31-resurslar.md) | Xotira cheklovida OOM killer |
+| [33 — Server qanday yonadi](33-server-qanday-yonadi.md) | Server yonish bosqichlari: UEFI → GRUB → yadro → systemd |
+| [34 — systemctl](34-systemctl.md) | `enable` va `start` farqi — qayta yondirish bilan |
+| [35 — O'z servisingiz](35-oz-servisingiz.md) | `salom.service`: `User=`, `EnvironmentFile=`, yiqilganda `Restart=on-failure` |
+| [36 — Unit'ni o'zgartirish](36-unitni-ozgartirish.md) | Drop-in: `Nice=` almashtiriladi, `ExecStart=` qo‘shiladi, `revert` |
+| [38 — Rejali ishlar](38-rejali-ishlar.md) | `Persistent=true`: o‘chiq paytda o‘tib ketgan ish |
+| [40 — IP, interfeys va marshrut](40-ip-interfeys-marshrut.md) | `127.0.0.1` va `0.0.0.0` da tinglash farqi |
+| [42 — DNS va nom aniqlash](42-dns-va-nom-aniqlash.md) | Nom aniqlash zanjiri: `/etc/hosts` → systemd-resolved → DNS |
+| [43 — Port va ulanishni tekshirish](43-port-va-ulanishni-tekshirish.md) | Firewall `deny`/`reject` va servis yo‘qligi tashqaridan qanday ko‘rinadi |
+| [45 — SSH bilan ulanish](45-ssh-bilan-ulanish.md) | SSH kalit bilan kirish: noutbuk → VPS |
+| [47 — SSH tunnel](47-ssh-tunnel.md) | SSH tunnel: so‘rov noutbukdan server ichidagi portga qanday yetadi |
+| [48 — Birinchi skript](48-birinchi-skript.md) | `set -e` siz skript xatodan keyin davom etib, boshqa papkani o‘chiradi |
+| [49 — Shart va sikl](49-shart-va-sikl.md) | Glob va `$(ls)`: bo‘sh joyli fayl nomlari |
+| [50 — Funksiya va xatolar](50-funksiya-va-xatolar.md) | `trap … EXIT`: skript yiqilsa ham vaqtinchalik fayl o‘chadi |
+| [52 — Servis ishlamayapti](52-servis-ishlamayapti.md) | Bir servis — besh xil buzilish: kod bir xil, sabab jurnalda |
+| [53 — Server sekin](53-server-sekin.md) | CPU, xotira, disk: `vmstat` va bosimdagi belgilar |
+| [54 — Disk to'ldi](54-disk-toldi.md) | Joy bor, inode tugagan: `df -i` va `du --inodes` |
 
 ## Trenajor
 

@@ -12,7 +12,7 @@ const qismlar = (s) => s.split('`').map((t, k) => ({ t, code: k % 2 === 1 }))
 </script>
 
 <template>
-  <div v-if="d" class="qadamli-anim">
+  <div v-if="d" class="qadamli-anim" :class="{ keng: d.keng }">
     <div class="qa-ustun">
       <div class="qa-terminal">
         <div v-for="(c, k) in q.cmd" :key="'c' + i + k" class="qa-cmd"><span>$</span> {{ c }}</div>
@@ -44,6 +44,9 @@ const qismlar = (s) => s.split('`').map((t, k) => ({ t, code: k % 2 === 1 }))
 .qa-cmd { color: #7ee787; white-space: pre-wrap; word-break: break-word; animation: qa-kir .4s ease; }
 .qa-cmd span { color: #6b7689; margin-right: 6px; }
 .qa-chiqish { margin: 4px 0 0; color: #d7dde8; font: inherit; white-space: pre-wrap; word-break: break-word; animation: qa-kir .5s ease; }
+/* keng: true — keng chiqishli (vmstat kabi) animatsiyalar: terminal butun kenglikda, qatorlar bo'linmaydi */
+.keng .qa-ustun { grid-template-columns: minmax(0, 1fr); }
+.keng .qa-chiqish { white-space: pre; word-break: normal; overflow-x: auto; font-size: 12.5px; }
 .qa-panel { padding: 10px 12px; border: 1px solid var(--border); border-radius: var(--radius-sm); background: var(--bg); }
 .qa-sar { margin-bottom: 8px; font: 600 11px var(--font-sans); letter-spacing: .08em; text-transform: uppercase; color: var(--text-subtle); }
 .qa-panel ul { display: grid; gap: 6px; margin: 0; padding: 0; list-style: none; }

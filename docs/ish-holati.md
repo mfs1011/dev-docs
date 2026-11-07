@@ -5,8 +5,8 @@ Oxirgi yangilanish: 2026-11-07 (tun, ikkinchi noutbuk). Yangi kompyuterda ishni 
 ## Linux kitobi (`content/linux/`)
 
 - Mundarija: `content/linux/README.md` — 12 qism, 54 bob, har bob yonida rasmiy manba.
-- Tayyor: **1–51-boblar** (I–XI qismlar).
-- **Keyingi: 52-bob — Servis ishlamayapti**, keyin XII Muammoni topish (52–54, trenajor va VPS). Mundarijadagi qatorlar va manbalar: `content/linux/README.md`.
+- **Kitob tayyor: 1–54-boblar** (I–XII qismlar).
+- Keyingi ishlar — boshqa kitoblar (pastdagi "Ikkinchi noutbukda qilinadigan ishlar" va rejadagi kitoblar). Mundarijadagi qatorlar va manbalar: `content/linux/README.md`.
 - Oxirgi sessiyalar nima qilgani va yangi qoidalar — pastdagi "2026-11-07 sessiyasi" bo'limlarida.
 - Rasmiy manbalar: Debian Reference, Ubuntu Server docs, man sahifalari (trenajorda `MANWIDTH=100 man X | col -b`), GNU qo'llanmalari. gnu.org avtomatik so'rovlarga ko'pincha 403/429 qaytaradi — o'sha paytda man sahifalari trenajordan olinadi.
 
@@ -105,6 +105,7 @@ node linux-trenajor/test/mashqlar.mjs          # barcha mashqlarni brauzerda tek
   - VPS qayta yondirildi, yadro 7.0.0-42 (33–34-boblar);
   - `lsof`, `psmisc`, `tmux` (30, 32-boblar), `rsync` 3.4.1 (46-bob) va `shellcheck` 0.11.0 (50–51-boblar) o'rnatildi;
   - 51-bobdagi `zaxira` timer'i, skripti va `/var/backups/zaxira` sinovdan keyin o'chirilgan;
+  - 54-bob uchun: `journalctl --vacuum-size=50M` (jurnal 116M → 32M) va `apt-get clean` bajarilgan; eski yadro `7.0.0-38` ataylab qoldirilgan ("qo'lda" belgilangan, zaxira yadro);
   - `salom.service` va unga tegishli hamma narsa 39-bobdan keyin o'chirildi; 43–47-boblardagi sinov servislari, `demo` foydalanuvchisi va vaqtinchalik ufw qoidalari ham o'chirilgan;
   - ufw yoqilgan: standart holatda `deny (incoming)`, provayder qoidalari 80, 443, 22 va 1500/tcp (ispmanager, unda hech narsa tinglamaydi);
   - vaqt zonasi `Europe/Moscow` (provayder), vaqtni chrony sinxronlaydi;
@@ -150,6 +151,10 @@ Ikkinchi noutbukda boshlashdan oldin shu faylni, `CLAUDE.md` ni va kitobning `RE
 - Topilgan farq: Ubuntu 26.04 dash'i `set -o pipefail` ni qabul qiladi, Debian 12 dash'i (0.5.12-2) — `Illegal option` (48-bob).
 - Kuzatuv (rasmiy manbada tavsifi topilmadi, bobda "kuzatildi" deb yozilgan): `TERM` signali kelganda dash `EXIT` trap'ini bajarmaydi, bash bajaradi; dash'da `trap 'exit 143' TERM` kerak (50-bob).
 - Trenajorda `du` 9p fayl tizimida hajmni noto'g'ri ko'rsatadi (122 KB fayl uchun `512`) — hajm uchun `stat -c %s` (51-bob).
+
+- Linux **52–54**-boblar (XII qism, `docs/linux-52-54`): servis ishlamayapti, server sekin, disk to'ldi. Mashqlar: `52-servis`, `53-sekin`, `54-disk`. Animatsiyalar: `servis`, `sekin`, `disk`. `QadamliAnim` ga `keng: true` qo'shildi (keng chiqishli animatsiyalar uchun: terminal butun kenglikda, qatorlar bo'linmaydi).
+- Kuzatuvlar: trenajorda disk I/O (`wa`, `bi/bo`) ko'rinmaydi — 9p blokli qurilma emas, disk tajribalari VPS'da; `journalctl --vacuum-*` chiqishida jurnal papkasi nomi = machine-id — `sed` bilan yashiriladi.
+- TTS (ovoz) ishlari — birinchi noutbukda (egasining qarori, 2026-11-07).
 
 ## Ikkinchi noutbukda Linux kitobini davom ettirish
 
