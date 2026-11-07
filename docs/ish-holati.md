@@ -1,12 +1,12 @@
 # Ish holati (boshqa kompyuterda davom ettirish uchun)
 
-Oxirgi yangilanish: 2026-11-06. Yangi kompyuterda ishni boshlashdan oldin shu faylni, `CLAUDE.md` ni va `docs/tts.md` ni o'qing.
+Oxirgi yangilanish: 2026-11-07. Yangi kompyuterda ishni boshlashdan oldin shu faylni, `CLAUDE.md` ni va `docs/tts.md` ni o'qing.
 
 ## Linux kitobi (`content/linux/`)
 
 - Mundarija: `content/linux/README.md` — 12 qism, 54 bob, har bob yonida rasmiy manba.
-- Tayyor: **I–VI qismlar, 1–27-boblar**.
-- **Keyingi: VII qism — Jarayonlar (28–32)**, keyin VIII systemd (33–39) va hokazo.
+- Tayyor: **1–38-boblar** (I–VII qismlar va VIII qismning 33–38-boblari).
+- **Keyingi: 39-bob — Servisni cheklash**, keyin IX Tarmoq (40–44), X SSH (45–47), XI Bash skriptlar (48–51), XII Muammoni topish (52–54).
 - Rasmiy manbalar: Debian Reference, Ubuntu Server docs, man sahifalari (trenajorda `MANWIDTH=100 man X | col -b`), GNU qo'llanmalari. gnu.org avtomatik so'rovlarga ko'pincha 403/429 qaytaradi — o'sha paytda man sahifalari trenajordan olinadi.
 
 ### Har bobning qoidalari
@@ -19,6 +19,21 @@ Oxirgi yangilanish: 2026-11-06. Yangi kompyuterda ishni boshlashdan oldin shu fa
 - Har bob tuzilishi: Tushuncha → mavzular → Debian va Ubuntu → Tipik xatolar → Amaliyot (mashq havolasi + savollar/javoblar) → Rasmiy hujjat.
 - "qobiq" so'zi doim "qobiq (shell)" ko'rinishida.
 - Qiyin joyga animatsiya; trenajorda bajarib bo'ladigan bobga mashq.
+
+### Chiqishlarni olish va tekshirish
+
+- Bobda trenajor bloklariga **faqat `$ buyruq` qatorlarini** yozing (heredoc'ning `> ` davom qatorlari ham bo'ladi), keyin:
+  `node linux-trenajor/test/bob.mjs content/linux/NN-....md` — u bobdagi barcha trenajor bloklarini o'quvchi qanday bajarsa shunday, **bitta sessiyada ketma-ket** bajarib, chiqishlarni haqiqiysi bilan almashtiradi (`--tekshir` — faylga tegmasdan farqni ko'rsatadi). Keyin chiqishlarni o'qib, matnni ularga moslang.
+- `bob.mjs` node'da (fayllar diskdan) ishlaydi, o'quvchi esa **brauzerda** (fayllar serverdan bittalab yuklanadi). Og'ir systemd buyruqlari brauzerda sekin yoki ishlamaydi: `systemctl list-unit-files` 25 soniyadan keyin `Connection timed out`, `systemd-analyze` birinchi marta ~14 s. Shunday buyruqlarni brauzerda alohida sinang (`/linux/trenajor`, Playwright).
+- systemd buyruqlariga trenajorda `--no-pager`.
+
+### Mashq yozish qoidalari
+
+- `setup` `( set -e ... )` ichida bajariladi: xato qaytarishi mumkin bo'lgan har buyruqqa `|| true`.
+- Ichida `!` bor matnni qo'sh qo'shtirnoqqa olmang (bash history expansion) — `printf '%s\n' '...'`.
+- `check` lar **har prompt oldidan** bajariladi — og'ir buyruq (`systemctl list-unit-files`, `journalctl` va h.k.) ishlatmang; arzon tekshiruv: fayl bormi, `pgrep`, `[ -L .../x.service ]`. Kerakli qiymatni `setup` da faylga hisoblab qo'ying.
+- Fondagi server kabi kechikib tayyor bo'ladigan qadamda testga `sinov: [buyruq, 'sleep 1']`.
+- Test: `node linux-trenajor/test/mashqlar.mjs <id>` (qadam kutish vaqti 45 s).
 
 ### Kod tuzilishi
 
@@ -54,11 +69,13 @@ node linux-trenajor/test/mashqlar.mjs          # barcha mashqlarni brauzerda tek
 
 - Ubuntu 26.04, faqat kitob sinovlari uchun ajratilgan. Kirish — SSH kalit bilan, root.
 - **Manzil va kalit git'ga yozilmaydi** — ular egasida.
-- Sinov qilib bo'lgach VPS asl holiga qaytariladi (o'rnatilgan paketlar, foydalanuvchilar, repo'lar o'chiriladi).
-- Xavfsizlik sozlamalari (yangi sudo foydalanuvchi, root/parol bilan kirishni yopish, firewall) — faqat egasining roziligi bilan.
-- Ochiq kuzatuvlar (2026-11-06, hal qilinmagan, egasi qaror qiladi):
-  - yangi yadro o'rnatilgan, server qayta yondirilmagan (`/var/run/reboot-required`);
-  - provayder apt manbalarida `trusted: yes` va `http://` mirror (26-bob);
+- Vaqtinchalik sinov narsalari bob tugagach o'chiriladi.
+- 2026-11-07 dan egasi qo'llanma uchun **to'liq ruxsat** bergan: qayta yondirish, SSH'ni mustahkamlash, firewall, sinov servislari — har o'zgarish bobda hujjatlanadi.
+- Hozirgi holat (2026-11-07):
+  - VPS qayta yondirildi, yadro 7.0.0-42 (33–34-boblar);
+  - `lsof`, `psmisc`, `tmux` o'rnatildi (30, 32-boblar);
+  - `salom.service` (`python3 -m http.server`, 127.0.0.1:8000, `/srv/salom`, `/etc/salom.env`, `salom` foydalanuvchisi) — 35–39-boblar uchun; **39-bob tugagach o'chiriladi**;
+  - ochiq masala: provayder apt manbalarida `trusted: yes` va `http://` mirror (26-bob);
   - provayder shabloni: Netplan yo'q (ifupdown), cron yo'q, snap yo'q.
 
 ## Ish tartibi

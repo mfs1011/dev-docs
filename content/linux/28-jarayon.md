@@ -1,6 +1,6 @@
 # 28 — Jarayon nima
 
-[← Oldingi: Avtomatik yangilanishlar](27-avtomatik-yangilanish.md) · [Mundarija](README.md)
+[← Oldingi: Avtomatik yangilanishlar](27-avtomatik-yangilanish.md) · [Mundarija](README.md) · [Keyingi: Signallar →](29-signallar.md)
 
 ## Tushuncha
 

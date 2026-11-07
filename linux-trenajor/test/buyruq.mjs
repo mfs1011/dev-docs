@@ -3,6 +3,7 @@
 //   echo 'ls /' | node test/buyruq.mjs -
 // Prompt oxiridagi OSC 7770 belgisi buyruq tugaganini bildiradi (Terminal.vue ham shunga qaraydi).
 import { V86 } from 'v86'
+import { symlinkTuzat } from '../scripts/v86-tuzat.mjs'
 import fs from 'node:fs'
 import path from 'node:path'
 import url from 'node:url'
@@ -19,6 +20,8 @@ const vm = new V86({
   initial_state: { url: path.join(web, 'holat.zst') },
   memory_size: 256 << 20, autostart: true, disable_keyboard: true, disable_mouse: true,
 })
+// brauzerdagi terminal (LinuxTerminal.vue) bilan bir xil: 9p'dagi simvolik havolalar huquqini to'g'rilash
+symlinkTuzat(vm)
 let buf = ''
 vm.add_listener('serial0-output-byte', (b) => { buf += String.fromCharCode(b) })
 
@@ -28,7 +31,9 @@ const kut = (shart, ms) => new Promise((ok, xato) => {
   tek()
 })
 const toza = (s) => Buffer.from(s, 'latin1').toString('utf8')
-  .replace(/\x1b\][^\x07]*\x07/g, '').replace(/\x1b\[[0-9;?]*[a-zA-Z]/g, '').replace(/\r/g, '')
+  .replace(/\x1b\][^\x07]*\x07/g, '').replace(/\x1b\[[0-9;?]*[a-zA-Z]/g, '')
+  // less (pager) yuboradigan klaviatura rejimi (ESC = / ESC >) va belgi to'plami (ESC ( B) ketma-ketliklari
+  .replace(/\x1b[=>]/g, '').replace(/\x1b[()][0-9A-Za-z]/g, '').replace(/\r/g, '')
 
 vm.add_listener('emulator-ready', async () => {
   try {

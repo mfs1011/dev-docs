@@ -23,7 +23,7 @@ for (const m of LINUX_MASHQLAR.filter((x) => !tanlangan.length || tanlangan.incl
       await p.waitForTimeout(400)
     }
     try {
-      await p.waitForFunction((n) => document.querySelectorAll('.side .steps li.ok').length >= n, i + 1, { timeout: 15000 })
+      await p.waitForFunction((n) => document.querySelectorAll('.side .steps li.ok').length >= n, i + 1, { timeout: 45000 }) // brauzerda systemd buyruqlari birinchi marta sekin
       console.log(`  ✓ ${m.id} ${i + 1}. ${q.cmd}`)
     } catch {
       yiqildi++
