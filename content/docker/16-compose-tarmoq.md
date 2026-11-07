@@ -1,6 +1,6 @@
 # 16 — Compose'da tarmoq
 
-[← Oldingi: Compose asoslari](15-compose-asoslari.md) · [Mundarija](README.md)
+[← Oldingi: Compose asoslari](15-compose-asoslari.md) · [Mundarija](README.md) · [Keyingi: Ishga tushish tartibi va healthcheck →](17-healthcheck.md)
 
 ## Tushuncha
 

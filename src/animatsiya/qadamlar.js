@@ -1344,4 +1344,34 @@ export const QADAMLI = {
       },
     ],
   },
+  // Docker 17-bob: depends_on + healthcheck (redis 5 soniya kechikib ishga tushadi; VPS, haqiqiy chiqishlar)
+  sogliq: {
+    panel: 'redis 5 s kech tayyor bo‘ladi',
+    qadamlar: [
+      {
+        cmd: ["docker compose up -d 2>&1 | grep Started", "sleep 8; docker compose ps -a --format \"table {{.Service}}\\t{{.Status}}\""],
+        chiqish: " Container s17-web-1 Started \n Container s17-redis-1 Started \nSERVICE   STATUS\nredis     Up 9 seconds\nweb       Exited (1) 7 seconds ago",
+        holat: [{ k: "r", yol: "redis", qiymat: "Up — lekin hali qabul qilmaydi", belgi: "ochiq" }, { k: "w", yol: "web", qiymat: "Exited (1)", belgi: "xato" }],
+        izoh: "depends_on yo‘q: ikkalasi birga ishga tushdi, web Redis’ga ulanolmay yiqildi.",
+      },
+      {
+        cmd: ["sleep 8; docker compose logs web | grep -m1 Error"],
+        chiqish: "web-1  | Error: connect ECONNREFUSED 172.18.0.3:6379",
+        holat: [{ k: "w", yol: "web", qiymat: "ECONNREFUSED", belgi: "xato" }],
+        izoh: "Sabab — loglarda: Redis porti hali yopiq edi.",
+      },
+      {
+        cmd: ["time docker compose -f compose.healthy.yaml up -d 2>&1 | grep -E \"Waiting|Healthy|Started\""],
+        chiqish: " Container s17-redis-1 Started \n Container s17-redis-1 Waiting \n Container s17-redis-1 Healthy \n Container s17-web-1 Started \n\nreal\t0m7.823s\nuser\t0m0.144s\nsys\t0m0.047s",
+        holat: [{ k: "r", yol: "redis", qiymat: "Started → Waiting → Healthy", belgi: "yangi" }, { k: "w", yol: "web", qiymat: "faqat Healthy’dan keyin Started", belgi: "yangi" }],
+        izoh: "condition: service_healthy — Compose healthcheck o‘tishini kutdi (~7.8 s).",
+      },
+      {
+        cmd: ["docker compose -f compose.healthy.yaml ps --format \"table {{.Service}}\\t{{.Status}}\"", "sleep 2; curl -s http://127.0.0.1:3000/"],
+        chiqish: "SERVICE   STATUS\nredis     Up 7 seconds (healthy)\nweb       Up Less than a second\nSalom! Bu sahifa 1 marta ochildi.",
+        holat: [{ k: "r", yol: "redis", qiymat: "Up (healthy)", belgi: "yangi" }, { k: "w", yol: "web", qiymat: "ishlayapti", belgi: "yangi" }],
+        izoh: "Endi web Redis tayyor bo‘lganda ishga tushdi.",
+      },
+    ],
+  },
 }
