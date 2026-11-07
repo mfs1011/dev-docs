@@ -1,6 +1,6 @@
 # 23 — SPA: React, Vue, Angular
 
-[← Oldingi: Node.js va Next.js](22-node-va-nextjs.md) · [Mundarija](README.md)
+[← Oldingi: Node.js va Next.js](22-node-va-nextjs.md) · [Mundarija](README.md) · [Keyingi: Ma'lumotlar bazasi konteynerda →](24-malumotlar-bazasi.md)
 
 ## Tushuncha
 
