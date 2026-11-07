@@ -1,6 +1,6 @@
 # 04 — Konteynerlar bilan ishlash
 
-[← Oldingi: Image'lar](03-imagelar.md) · [Mundarija](README.md)
+[← Oldingi: Image'lar](03-imagelar.md) · [Mundarija](README.md) · [Keyingi: Tarmoq, portlar va firewall →](05-tarmoq-va-portlar.md)
 
 ## Tushuncha
 

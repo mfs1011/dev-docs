@@ -1168,4 +1168,40 @@ export const QADAMLI = {
       },
     ],
   },
+  // Docker 05-bob: -p ufw'ni chetlab o'tadi; 127.0.0.1 bilan yopiq (VPS + noutbuk, haqiqiy chiqishlar, IP 203.0.113.10)
+  'docker-port': {
+    panel: 'VPS: ufw va 8080-port',
+    qadamlar: [
+      {
+        cmd: ["ufw status | grep -E \"Status|8080\""],
+        chiqish: "Status: active",
+        holat: [{ k: "u", yol: "ufw", qiymat: "active, 8080 uchun qoida yo‘q" }, { k: "p", yol: "8080", qiymat: "?" }],
+        izoh: "Firewall yoqilgan, 8080-port uchun ruxsat yo‘q.",
+      },
+      {
+        cmd: ["docker run -d --name veb -p 8080:80 nginx:1.29 >/dev/null && echo ishga tushdi", "docker port veb"],
+        chiqish: "Unable to find image 'nginx:1.29' locally\n1.29: Pulling from library/nginx\n8e9b53b630de: Pulling fs layer\n57fb71246055: Pulling fs layer\n38a7e44929f3: Pulling fs layer\n6e9f32fdbd61: Pulling fs layer\n382a36159731: Pulling fs layer\n20d41cd6829d: Pulling fs layer\n83742381311a: Pulling fs layer\n8e9b53b630de: Download complete\n83742381311a: Download complete\n6e9f32fdbd61: Download complete\n382a36159731: Download complete\n20d41cd6829d: Download complete\n57fb71246055: Download complete\n46ca9676efb5: Download complete\n94a543ead0f2: Download complete\n38a7e44929f3: Download complete\n57fb71246055: Pull complete\n38a7e44929f3: Pull complete\n83742381311a: Pull complete\n6e9f32fdbd61: Pull complete\n382a36159731: Pull complete\n20d41cd6829d: Pull complete\n8e9b53b630de: Pull complete\nDigest: sha256:1881968aff6f7cdcc4b888c00a11f4ce241ad7ec957e0cb4a9e19e93a3ff87ea\nStatus: Downloaded newer image for nginx:1.29\nishga tushdi\n80/tcp -> 0.0.0.0:8080\n80/tcp -> [::]:8080",
+        holat: [{ k: "u", yol: "ufw", qiymat: "active, 8080 uchun qoida yo‘q" }, { k: "p", yol: "8080", qiymat: "0.0.0.0 va [::] — barcha manzillar", belgi: "ochiq" }],
+        izoh: "Port barcha manzillarda publish qilindi.",
+      },
+      {
+        cmd: ["curl -sS --max-time 5 -o /dev/null -w \"%{http_code}\\n\" http://203.0.113.10:8080/"],
+        chiqish: "200",
+        holat: [{ k: "u", yol: "ufw", qiymat: "chetlab o‘tildi", belgi: "xato" }, { k: "p", yol: "8080", qiymat: "internetdan ochiq", belgi: "xato" }],
+        izoh: "Noutbukdan: 200. Docker’ning nat qoidasi ufw’dan oldin ishladi.",
+      },
+      {
+        cmd: ["docker rm -f veb >/dev/null", "docker run -d --name veb -p 127.0.0.1:8080:80 nginx:1.29 >/dev/null && echo ishga tushdi", "docker port veb", "curl -sS -o /dev/null -w \"%{http_code}\\n\" http://127.0.0.1:8080/"],
+        chiqish: "ishga tushdi\n80/tcp -> 127.0.0.1:8080\n200",
+        holat: [{ k: "u", yol: "ufw", qiymat: "active" }, { k: "p", yol: "8080", qiymat: "faqat 127.0.0.1", belgi: "yangi" }],
+        izoh: "Qayta: faqat loopback’da. Serverning o‘zidan — 200.",
+      },
+      {
+        cmd: ["curl -sS --max-time 5 -o /dev/null -w \"%{http_code}\\n\" http://203.0.113.10:8080/"],
+        chiqish: "curl: (28) Operation timed out after 5004 milliseconds with 0 bytes received\n000",
+        holat: [{ k: "u", yol: "ufw", qiymat: "active" }, { k: "p", yol: "8080", qiymat: "tashqaridan yopiq", belgi: "yangi" }],
+        izoh: "Noutbukdan javob yo‘q — port faqat serverning ichida.",
+      },
+    ],
+  },
 }
