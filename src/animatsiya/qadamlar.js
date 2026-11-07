@@ -1283,4 +1283,29 @@ export const QADAMLI = {
       },
     ],
   },
+  // Docker 14-bob: keyingi qatlamda o'chirish image'ni kichraytirmaydi (VPS, haqiqiy chiqishlar)
+  qatlam: {
+    keng: true,
+    panel: 'curl:yomon qatlamlari (pastdan yuqoriga)',
+    qadamlar: [
+      {
+        cmd: ["docker image history curl:yomon | head -4"],
+        chiqish: "IMAGE          CREATED          CREATED BY                                      SIZE      COMMENT\n5c1d0aef9b71   23 seconds ago   RUN /bin/sh -c rm -rf /var/lib/apt/lists/* #…   20.5kB    buildkit.dockerfile.v0\n<missing>      24 seconds ago   RUN /bin/sh -c apt-get install -y curl # bui…   21.5MB    buildkit.dockerfile.v0\n<missing>      38 seconds ago   RUN /bin/sh -c apt-get update # buildkit        21.7MB    buildkit.dockerfile.v0",
+        holat: [{ k: "u", yol: "RUN apt-get update", qiymat: "21.7MB — paketlar ro‘yxati", belgi: "ochiq" }, { k: "i", yol: "RUN apt-get install -y curl", qiymat: "21.5MB — curl va tavsiya etilganlar" }, { k: "r", yol: "RUN rm -rf /var/lib/apt/lists/*", qiymat: "20.5kB" }],
+        izoh: "Har RUN — alohida qatlam. Uchinchisi ro‘yxatni o‘chirdi...",
+      },
+      {
+        cmd: ["docker image ls curl"],
+        chiqish: "IMAGE         ID             DISK USAGE   CONTENT SIZE   EXTRA\ncurl:yaxshi   9e6b2a33ec84        136MB         34.9MB        \ncurl:yomon    5c1d0aef9b71        184MB         53.4MB        ",
+        holat: [{ k: "u", yol: "RUN apt-get update", qiymat: "21.7MB — baribir image’da qoldi", belgi: "xato" }, { k: "r", yol: "RUN rm …", qiymat: "faqat “o‘chirildi” belgisi qo‘shdi", belgi: "xato" }, { k: "s", yol: "curl:yomon", qiymat: "184MB", belgi: "xato" }],
+        izoh: "...lekin pastdagi qatlam o‘zgarmas: fayllar unda qoladi, yuqori qatlam ularni faqat yashiradi.",
+      },
+      {
+        cmd: ["docker image history curl:yaxshi | head -2"],
+        chiqish: "IMAGE          CREATED         CREATED BY                                      SIZE      COMMENT\n9e6b2a33ec84   2 seconds ago   RUN /bin/sh -c apt-get update && apt-get ins…   13.4MB    buildkit.dockerfile.v0",
+        holat: [{ k: "a", yol: "RUN update && install && rm", qiymat: "13.4MB — bitta qatlam", belgi: "yangi" }, { k: "s", yol: "curl:yaxshi", qiymat: "136MB", belgi: "yangi" }],
+        izoh: "Bitta RUN ichida o‘chirilgan fayl hech qachon qatlamga yozilmaydi.",
+      },
+    ],
+  },
 }

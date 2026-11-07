@@ -1,6 +1,6 @@
 # 13 — BuildKit imkoniyatlari
 
-[← Oldingi: Xavfsiz va to'g'ri image](12-xavfsiz-image.md) · [Mundarija](README.md)
+[← Oldingi: Xavfsiz va to'g'ri image](12-xavfsiz-image.md) · [Mundarija](README.md) · [Keyingi: Image hajmini kamaytirish →](14-image-hajmi.md)
 
 ## Tushuncha
 
