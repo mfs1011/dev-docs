@@ -1,6 +1,6 @@
 # 20 — Tipik stack: Nginx + PHP-FPM + PostgreSQL + Redis
 
-[← Oldingi: Profillar va bir nechta fayl](19-profillar-va-fayllar.md) · [Mundarija](README.md)
+[← Oldingi: Profillar va bir nechta fayl](19-profillar-va-fayllar.md) · [Mundarija](README.md) · [Keyingi: PHP: Laravel va Symfony →](21-php-laravel-symfony.md)
 
 ## Tushuncha
 
