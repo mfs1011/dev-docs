@@ -78,6 +78,17 @@ node linux-trenajor/test/mashqlar.mjs          # barcha mashqlarni brauzerda tek
   - ochiq masala: provayder apt manbalarida `trusted: yes` va `http://` mirror (26-bob);
   - provayder shabloni: Netplan yo'q (ifupdown), cron yo'q, snap yo'q.
 
+## Ikkinchi noutbukda qilinadigan ishlar
+
+Birinchi noutbukda disk kam va Docker yo'q. Sinov VPS'ida 2 GB xotira bor: `MemTotal` 1,75 GiB, 2026-11-07 da bo'sh qismi ~1,3 GiB. Shuning uchun quyidagilar **ikkinchi noutbukda** qilinadi (xotira va disk ko'proq, Docker bor):
+
+| Ish | Sabab | Muhit |
+| --- | --- | --- |
+| **Kafka** qo'llanmasi: boblar va misollar; "Xabar tizimlari"ning Kafka misollari | Broker'ni ishga tushirish skripti `kafka-server-start.sh` Java uchun standartda `-Xmx1G -Xms1G` (1 GB heap) ajratadi. VPS'dagi bo'sh xotiraga bu sig'maydi | Docker: Kafka'ning rasmiy Quick Start'idagi `apache/kafka` image. Versiya: `content/kafka/README.md` |
+| **Docker** qo'llanmasi | Birinchi noutbukda Docker o'rnatib bo'lmaydi (disk) | Docker Engine yoki Desktop |
+
+Ikkinchi noutbukda boshlashdan oldin shu faylni, `CLAUDE.md` ni va kitobning `README.md` sini (mundarija, versiyalar jadvali) o'qing. Versiyalarni yozishdan oldin qayta tekshiring.
+
 ## Ish tartibi
 
 - Har vazifa `main` dan alohida branch, PR `main` ga, merge'ni egasi qiladi. Force push yo'q.
