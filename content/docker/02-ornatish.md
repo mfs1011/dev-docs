@@ -1,6 +1,6 @@
 # 02 — O'rnatish
 
-[← Oldingi: Konteyner nima](01-konteyner-nima.md) · [Mundarija](README.md)
+[← Oldingi: Konteyner nima](01-konteyner-nima.md) · [Mundarija](README.md) · [Keyingi: Image'lar →](03-imagelar.md)
 
 ## Tushuncha
 
