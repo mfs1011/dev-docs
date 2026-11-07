@@ -1735,6 +1735,51 @@ export const LINUX_MASHQLAR = [
       },
     ],
   },
+  {
+    id: '49-sikl',
+    title: 'Shart va sikl',
+    bob: '/linux/49-shart-va-sikl',
+    intro: 'Papkada uchta `.log` fayl bor, ikkitasining nomida bo‘sh joy. Glob va `$(ls)` bilan sikl farqini ko‘rasiz, `case` bilan fayllarni turlarga ajratasiz, `.log` larni `.txt` ga qayta nomlaysiz va ro‘yxatni `while read` bilan o‘qiysiz.',
+    setup: 'touch a.log "b c.log" "d e f.log" eski.txt',
+    steps: [
+      {
+        cmd: 'for f in *.log; do echo "[$f]"; done',
+        text: '`.log` fayllar ustida glob bilan sikl qiling.',
+        ran: /^for\s+\w+\s+in\s+\*\.log\s*;/,
+        natija: 'Uchta aylanish — har fayl nomi butun.',
+      },
+      {
+        cmd: 'for f in $(ls *.log); do echo "[$f]"; done',
+        text: 'Endi xuddi shuni `$(ls *.log)` bilan.',
+        ran: /^for\s+\w+\s+in\s+\$\(ls/,
+        natija: 'Olti “fayl”: nomlar bo‘sh joydan bo‘linib ketdi.',
+      },
+      {
+        cmd: 'for f in *; do case "$f" in *.log) echo "log: $f" ;; *) echo "boshqa: $f" ;; esac; done',
+        text: 'Hamma fayllarni `case` bilan ajrating: `*.log` — "log", qolgani — "boshqa".',
+        ran: /^for\b.*\bcase\b.*\besac\b/,
+        natija: 'Birinchi mos kelgan naqsh tanlandi: `eski.txt` — `*)` ga tushdi.',
+      },
+      {
+        cmd: 'for f in *.log; do mv -- "$f" "${f%.log}.txt"; done',
+        text: 'Barcha `.log` larni `.txt` ga qayta nomlang (`${f%.log}`).',
+        check: '[ ! -e "$MASHQ/a.log" ] && [ -f "$MASHQ/a.txt" ] && [ -f "$MASHQ/b c.txt" ] && [ -f "$MASHQ/d e f.txt" ]',
+        natija: 'Bo‘sh joyli nomlar ham to‘g‘ri qayta nomlandi.',
+      },
+      {
+        cmd: 'ls > royxat.txt',
+        text: 'Fayllar ro‘yxatini `royxat.txt` ga yozing.',
+        check: 'grep -qx "d e f.txt" "$MASHQ/royxat.txt"',
+        natija: 'Har nom alohida qatorda.',
+      },
+      {
+        cmd: 'while IFS= read -r q; do [ -f "$q" ] && echo "bor: $q"; done < royxat.txt',
+        text: 'Ro‘yxatni `while IFS= read -r` bilan o‘qib, har nom fayl ekanini tekshiring.',
+        ran: /^while\s+IFS=\s+read\s+-r\b.*<\s*royxat\.txt/,
+        natija: 'Har qator butunligicha o‘qildi — bo‘sh joyli nomlar ham topildi.',
+      },
+    ],
+  },
 ]
 
 /** VM ichida `source` qilinadigan skript: papka, setup va har prompt oldidan qadamlarni tekshiradigan funksiya */

@@ -1,6 +1,6 @@
 # 48 — Birinchi skript
 
-[← Oldingi: SSH tunnel](47-ssh-tunnel.md) · [Mundarija](README.md)
+[← Oldingi: SSH tunnel](47-ssh-tunnel.md) · [Mundarija](README.md) · [Keyingi: Shart va sikl →](49-shart-va-sikl.md)
 
 ## Tushuncha
 

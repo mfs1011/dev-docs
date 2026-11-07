@@ -920,4 +920,40 @@ export const QADAMLI = {
       },
     ],
   },
+  // 49-bob: glob har fayl nomini bitta so'z qiladi, $(ls) esa bo'sh joydan bo'ladi; mos fayl bo'lmasa glob o'zgarmaydi
+  sikl: {
+    panel: 'sikl qaysi qiymatlarni oldi',
+    qadamlar: [
+      {
+        cmd: ['touch a.log "b c.log" eski.txt', 'ls'],
+        chiqish: " a.log\t'b c.log'   eski.txt",
+        holat: [{ k: '1', yol: 'a.log', qiymat: 'fayl' }, { k: '2', yol: 'b c.log', qiymat: 'bitta fayl, nomida bo‘sh joy' }],
+        izoh: 'Ikkita `.log` fayl. Ikkinchisining nomida bo‘sh joy bor.',
+      },
+      {
+        cmd: ['for f in *.log; do echo "[$f]"; done'],
+        chiqish: '[a.log]\n[b c.log]',
+        holat: [{ k: '1', yol: '1-aylanish', qiymat: 'a.log', belgi: 'yangi' }, { k: '2', yol: '2-aylanish', qiymat: 'b c.log', belgi: 'yangi' }],
+        izoh: 'Glob: qobiq har fayl nomini butunligicha bitta so‘z qilib berdi — 2 ta aylanish.',
+      },
+      {
+        cmd: ['for f in $(ls *.log); do echo "[$f]"; done'],
+        chiqish: '[a.log]\n[b]\n[c.log]',
+        holat: [{ k: '1', yol: '1-aylanish', qiymat: 'a.log' }, { k: '2', yol: '2-aylanish', qiymat: 'b — bunday fayl yo‘q', belgi: 'xato' }, { k: '3', yol: '3-aylanish', qiymat: 'c.log — bunday fayl yo‘q', belgi: 'xato' }],
+        izoh: '`$(ls)` — matn. Qobiq uni bo‘sh joydan bo‘ldi: 3 ta aylanish, ikkitasi mavjud bo‘lmagan nomlar.',
+      },
+      {
+        cmd: ['for f in *.csv; do echo "[$f]"; done'],
+        chiqish: '[*.csv]',
+        holat: [{ k: '1', yol: '1-aylanish', qiymat: '*.csv — naqshning o‘zi', belgi: 'xato' }],
+        izoh: 'Mos fayl yo‘q — glob o‘zgarmay qoldi va sikl bir marta “*.csv” bilan aylandi.',
+      },
+      {
+        cmd: ['for f in *.csv; do [ -e "$f" ] || continue; echo "[$f]"; done'],
+        chiqish: '',
+        holat: [{ k: '1', yol: '1-aylanish', qiymat: '[ -e ] → yo‘q → continue', belgi: 'yoq' }],
+        izoh: 'Fayl bor-yo‘qligini tekshirib, yo‘q bo‘lsa keyingi aylanishga o‘tamiz — hech narsa bajarilmadi.',
+      },
+    ],
+  },
 }
