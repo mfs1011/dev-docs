@@ -1,6 +1,6 @@
 # 25 — Registry va teglash
 
-[← Oldingi: Ma'lumotlar bazasi konteynerda](24-malumotlar-bazasi.md) · [Mundarija](README.md)
+[← Oldingi: Ma'lumotlar bazasi konteynerda](24-malumotlar-bazasi.md) · [Mundarija](README.md) · [Keyingi: CI'da Docker →](26-ci.md)
 
 ## Tushuncha
 
