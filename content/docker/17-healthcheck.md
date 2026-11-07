@@ -1,6 +1,6 @@
 # 17 — Ishga tushish tartibi va healthcheck
 
-[← Oldingi: Compose'da tarmoq](16-compose-tarmoq.md) · [Mundarija](README.md)
+[← Oldingi: Compose'da tarmoq](16-compose-tarmoq.md) · [Mundarija](README.md) · [Keyingi: Lokal ishlab chiqish muhiti →](18-lokal-muhit.md)
 
 ## Tushuncha
 
