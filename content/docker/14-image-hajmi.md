@@ -1,6 +1,6 @@
 # 14 — Image hajmini kamaytirish
 
-[← Oldingi: BuildKit imkoniyatlari](13-buildkit.md) · [Mundarija](README.md)
+[← Oldingi: BuildKit imkoniyatlari](13-buildkit.md) · [Mundarija](README.md) · [Keyingi: Compose asoslari →](15-compose-asoslari.md)
 
 ## Tushuncha
 
