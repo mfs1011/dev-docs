@@ -1022,4 +1022,35 @@ export const QADAMLI = {
       },
     ],
   },
+  // 53-bob: VPS'da uch resursni bo'g'ib, vmstat va PSI'dagi belgilar (haqiqiy VPS chiqishlari)
+  sekin: {
+    keng: true,
+    panel: 'qaysi resurs? (VPS, 1 CPU)',
+    qadamlar: [
+      {
+        cmd: ['vmstat 2 3'],
+        chiqish: "procs -----------memory---------- ---swap-- -----io---- -system-- -------cpu-------\n r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st gu\n 0  0      0 802064  42776 638904    0    0    10    23  140    0  1  0 99  0  0  0\n 0  0      0 802064  42776 638944    0    0     0     0  135   66  0  1 99  0  0  0\n 0  0      0 802064  42776 638944    0    0     0     0  123   60  0  0 100  0  0  0",
+        holat: [{ k: 'c', yol: 'CPU', qiymat: 'id 99 — bo‘sh' }, { k: 'm', yol: 'xotira', qiymat: 'swap faol emas (si/so 0)' }, { k: 'd', yol: 'disk', qiymat: 'wa 0, b 0' }],
+        izoh: 'Tinch holat. Birinchi qator — yonganidan beri o‘rtacha, keyingilariga qarang.',
+      },
+      {
+        cmd: ['yes > /dev/null & yes > /dev/null &', 'vmstat 2 3', 'cat /proc/pressure/cpu'],
+        chiqish: "procs -----------memory---------- ---swap-- -----io---- -system-- -------cpu-------\n r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st gu\n 3  0      0 785180  42792 638952    0    0    10    23  141    0  1  1 99  0  0  0\n 2  0      0 787336  42792 638952    0    0     0     0 1089 1050  3 97  0  0  0  0\n 2  0      0 787376  42792 638952    0    0     0   492 1155 1052  3 98  0  0  0  0\nsome avg10=84.83 avg60=27.24 avg300=6.44 total=162364679\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0",
+        holat: [{ k: 'c', yol: 'CPU', qiymat: 'r 2 > 1 CPU, id 0, cpu some 85%', belgi: 'xato' }, { k: 'm', yol: 'xotira', qiymat: 'normal' }, { k: 'd', yol: 'disk', qiymat: 'wa 0' }],
+        izoh: 'CPU yetmayapti: ishga tayyor jarayonlar CPU sonidan ko‘p, bo‘sh vaqt yo‘q.',
+      },
+      {
+        cmd: ['python3 -c "import time; a = bytearray(1300 * 1024 * 1024); time.sleep(40)" &', 'vmstat 2 4', 'cat /proc/pressure/memory'],
+        chiqish: "procs -----------memory---------- ---swap-- -----io---- -system-- -------cpu-------\n r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st gu\n 1  0   1136 1269396    372 212348    0    0    10    23  141    0  1  1 99  0  0  0\n 0  0 109620 203052    196  75884   48 24742    80 24742  968  244 10 77 13  0  0  0\n 0  0 109492 203052    204  75936   66    0    96     0  129   66  0  0 100  0  0  0\n 0  0 109492 203052    212  75936    0    0     0    10  128   70  0  0 100  0  0  0\nsome avg10=4.51 avg60=1.33 avg300=0.34 total=1049811\nfull avg10=2.85 avg60=0.79 avg300=0.19 total=606252",
+        holat: [{ k: 'c', yol: 'CPU', qiymat: 'normal' }, { k: 'm', yol: 'xotira', qiymat: 'so 24742 — swap’ga chiqarildi, kesh 76 MiB, memory full > 0', belgi: 'xato' }, { k: 'd', yol: 'disk', qiymat: 'wa 0' }],
+        izoh: 'Xotira yetmayapti: yadro sahifalarni swap’ga chiqarib, keshni tashladi.',
+      },
+      {
+        cmd: ['dd if=/dev/zero of=/root/katta bs=4k count=5000 oflag=dsync status=none &', 'vmstat 2 3', 'cat /proc/pressure/io'],
+        chiqish: "procs -----------memory---------- ---swap-- -----io---- -system-- -------cpu-------\n r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st gu\n 0  1  46856 1378264   6560 129376    0    1    12    73  141    0  1  1 99  0  0  0\n 0  1  46856 1370452  13900 133076    0    0     0 11368 3251 6553  1  8  0 91  0  0\n 0  1  46856 1363396  15344 137296    0    0     2 12660 3593 7460  0 10  0 90  0  0\nsome avg10=40.06 avg60=9.42 avg300=2.13 total=21838295\nfull avg10=38.29 avg60=8.47 avg300=1.87 total=18312013",
+        holat: [{ k: 'c', yol: 'CPU', qiymat: 'us+sy 9 — CPU ishlamayapti, kutyapti' }, { k: 'm', yol: 'xotira', qiymat: 'normal' }, { k: 'd', yol: 'disk', qiymat: 'b 1, wa 91, io full 38%', belgi: 'xato' }],
+        izoh: 'Disk: CPU vaqtining 91% i disk javobini kutish. Yuklama o‘sadi, CPU esa bo‘sh.',
+      },
+    ],
+  },
 }

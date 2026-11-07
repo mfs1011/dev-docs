@@ -1,6 +1,6 @@
 # 52 — Servis ishlamayapti
 
-[← Oldingi: Amaliy: zaxira skripti](51-zaxira-skripti.md) · [Mundarija](README.md)
+[← Oldingi: Amaliy: zaxira skripti](51-zaxira-skripti.md) · [Mundarija](README.md) · [Keyingi: ⚑ Server sekin →](53-server-sekin.md)
 
 > ⚑ Bu qismdagi tekshiruv **tartibi** rasmiy hujjatlarda bitta joyda yozilmagan. Har buyruq rasmiy manbadan olingan, ketma-ketlik esa trenajor va VPS'da sinalgan amaliyot.
 

@@ -1928,6 +1928,51 @@ export const LINUX_MASHQLAR = [
       },
     ],
   },
+  {
+    id: '53-sekin',
+    title: 'Server sekin',
+    bob: '/linux/53-server-sekin',
+    intro: 'Trenajor sekinlashdi: nimadir CPU’ni yeb qo‘ygan. `vmstat` va bosimdan belgini toping, `top` bilan aybdor jarayonni, `systemctl status PID` bilan uning servisini aniqlang va to‘xtating.',
+    setup: `systemctl stop hisobot53 >/dev/null 2>&1 || true; systemctl reset-failed hisobot53 >/dev/null 2>&1 || true; systemd-run --unit=hisobot53 --quiet -p Description="Kunlik hisobot generatori" sh -c 'while :; do :; done'`,
+    steps: [
+      {
+        cmd: 'vmstat 2 3',
+        text: '`vmstat` bilan umumiy holatni ko‘ring (birinchi qatorni hisobga olmang).',
+        ran: /^vmstat\b/,
+        natija: '`r` 1 dan katta, `id` 0 ga yaqin — CPU band.',
+      },
+      {
+        cmd: 'cat /proc/pressure/cpu',
+        text: 'CPU bosimini tekshiring.',
+        ran: /\/proc\/pressure\/cpu/,
+        natija: '`some` o‘sgan: jarayonlar CPU navbatida turibdi.',
+      },
+      {
+        cmd: 'top -b -n 1 | head -12',
+        text: '`top` bilan eng ko‘p CPU yeyayotgan jarayonni toping.',
+        ran: /^top\b/,
+        natija: 'Birinchi qatorda `sh` — u qayerdan kelgani noma’lum.',
+      },
+      {
+        cmd: "systemctl status $(pgrep -f 'while :') --no-pager -n 0",
+        text: 'Shu jarayon qaysi servisga tegishli ekanini aniqlang (`systemctl status PID`).',
+        ran: /^systemctl\s+status\s+(\$\(pgrep|\d+)/,
+        natija: '`hisobot53.service` — "Kunlik hisobot generatori".',
+      },
+      {
+        cmd: 'systemctl stop hisobot53',
+        text: 'Servisni to‘xtating.',
+        check: '! pgrep -f "while :"',
+        natija: 'Aybdor to‘xtadi.',
+      },
+      {
+        cmd: 'vmstat 2 3',
+        text: 'Yana `vmstat` — natijani tekshiring.',
+        ran: /^vmstat\b/,
+        natija: '`id` yana ~100: CPU bo‘shadi.',
+      },
+    ],
+  },
 ]
 
 /** VM ichida `source` qilinadigan skript: papka, setup va har prompt oldidan qadamlarni tekshiradigan funksiya */
