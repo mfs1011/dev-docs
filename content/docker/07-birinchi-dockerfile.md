@@ -1,6 +1,6 @@
 # 07 — Birinchi Dockerfile
 
-[← Oldingi: Ma'lumot saqlash](06-malumot-saqlash.md) · [Mundarija](README.md)
+[← Oldingi: Ma'lumot saqlash](06-malumot-saqlash.md) · [Mundarija](README.md) · [Keyingi: `CMD` va `ENTRYPOINT` →](08-cmd-va-entrypoint.md)
 
 ## Tushuncha
 

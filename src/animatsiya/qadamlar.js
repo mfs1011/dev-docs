@@ -1234,4 +1234,34 @@ export const QADAMLI = {
       },
     ],
   },
+  // Docker 08-bob: PID 1 va SIGTERM — to'rt variantda docker stop (VPS, haqiqiy chiqishlar)
+  pid1: {
+    panel: 'docker stop: SIGTERM kimga yetadi',
+    qadamlar: [
+      {
+        cmd: ["docker exec s4 cat /proc/1/cmdline | tr '\\0' ' '; echo"],
+        chiqish: "/bin/sh -c node server.js ",
+        holat: [{ k: "p", yol: "PID 1", qiymat: "/bin/sh -c node server.js" }, { k: "n", yol: "node", qiymat: "sh ning bolasi — SIGTERM yetmaydi", belgi: "xato" }],
+        izoh: "Shell shakli (node:26-slim): PID 1 — qobiq, u signalni uzatmaydi. stop — 10 soniya.",
+      },
+      {
+        cmd: ["docker exec s1 ps", "time docker stop s1", "docker ps -a --filter name=s1 --format \"{{.Names}} {{.Status}}\""],
+        chiqish: "PID   USER     TIME  COMMAND\n    1 root      0:00 {node-MainThread} node server.js\n   13 root      0:00 ps\ns1\n\nreal\t0m10.241s\nuser\t0m0.018s\nsys\t0m0.014s\ns1 Exited (137) Less than a second ago",
+        holat: [{ k: "p", yol: "PID 1", qiymat: "node (exec shakli)" }, { k: "n", yol: "SIGTERM", qiymat: "ishlovchi yo‘q — PID 1 e’tiborsiz qoldiradi", belgi: "xato" }, { k: "r", yol: "natija", qiymat: "10 s, Exited (137) — SIGKILL", belgi: "xato" }],
+        izoh: "Exec shakli, lekin ilovada SIGTERM ishlovchisi yo‘q.",
+      },
+      {
+        cmd: ["docker exec s2 ps", "time docker stop s2", "docker ps -a --filter name=s2 --format \"{{.Names}} {{.Status}}\""],
+        chiqish: "PID   USER     TIME  COMMAND\n    1 root      0:00 /sbin/docker-init -- docker-entrypoint.sh node server.js\n    7 root      0:00 {node-MainThread} node server.js\n   14 root      0:00 ps\ns2\n\nreal\t0m0.246s\nuser\t0m0.017s\nsys\t0m0.016s\ns2 Exited (143) Less than a second ago",
+        holat: [{ k: "p", yol: "PID 1", qiymat: "docker-init (tini)", belgi: "yangi" }, { k: "n", yol: "node", qiymat: "7-PID — SIGTERM’ning standart amali ishlaydi" }, { k: "r", yol: "natija", qiymat: "0.25 s, Exited (143) — SIGTERM", belgi: "yangi" }],
+        izoh: "--init: init jarayoni PID 1 bo‘ldi va signalni uzatdi.",
+      },
+      {
+        cmd: ["sleep 1; time docker stop s5", "docker logs s5", "docker ps -a --filter name=s5 --format \"{{.Names}} {{.Status}}\""],
+        chiqish: "s5\n\nreal\t0m0.202s\nuser\t0m0.021s\nsys\t0m0.014s\nTinglayapti: 3000\nSIGTERM keldi, yopilmoqda\ns5 Exited (0) Less than a second ago",
+        holat: [{ k: "p", yol: "PID 1", qiymat: "node" }, { k: "n", yol: "SIGTERM", qiymat: "ilova o‘zi ushladi: server.close()", belgi: "yangi" }, { k: "r", yol: "natija", qiymat: "0.2 s, Exited (0) — toza yopildi", belgi: "yangi" }],
+        izoh: "Eng yaxshisi: ilova SIGTERM’ni o‘zi ishlaydi va toza tugaydi.",
+      },
+    ],
+  },
 }
