@@ -11,7 +11,7 @@ Manbalar va versiyalar (2026-11-07 da tekshirilgan):
 | Docker Engine | 29.9.3 (2026-11-03) | <https://docs.docker.com/engine/release-notes/> |
 | Docker Desktop | 4.98.0 (2026-11-03) | <https://docs.docker.com/desktop/release-notes/> |
 | Docker Compose | v5.7.0 (2026-11-02) | <https://github.com/docker/compose/releases> |
-| Buildx | v0.38.2 (2026-11-03) | <https://github.com/docker/buildx/releases> |
+| Buildx | v0.38.2 (2026-11-03); Ubuntu apt repozitoriysida hozircha 0.38.1 | <https://github.com/docker/buildx/releases> |
 | Ubuntu (VPS) | 26.04 LTS — Docker Engine o'rnatish hujjatida qo'llab-quvvatlanadigan versiyalar ro'yxatida bor | <https://docs.docker.com/engine/install/ubuntu/> |
 
 Muhit tanlovi haqida:
@@ -41,7 +41,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - Nuxt — Docker hujjatida u uchun qo'llanma yo'q; Node.js va Next.js qo'llanmalaridagi tamoyillar unga ham taalluqli.
 - Serverni himoyalash (SSH, firewall, fail2ban) — **"Server xavfsizligi"** kitobida; Docker portlari va firewall bog'liqligi esa shu kitobning 5-bobida.
 
-> **Holat.** Qo'llanma yozilmoqda: 1/28 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 2/28 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -61,7 +61,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
 | 01 | [Konteyner nima](01-konteyner-nima.md) | Konteyner va virtual mashina farqi; image, konteyner, registry; Docker arxitekturasi: klient, daemon (`dockerd`), registry | — | [GS Docker overview](https://docs.docker.com/get-started/docker-overview/) · [GS What is a container](https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-a-container/) · [GS What is an image](https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-an-image/) · [GS What is a registry](https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-a-registry/) |
-| 02 | O'rnatish | macOS'da Docker Desktop; Ubuntu'da Docker Engine (rasmiy apt repozitoriy); o'rnatishdan keyin: `docker` guruhi va u root huquqiga teng ekani; birinchi `docker run hello-world`; `docker version`, `docker info` | M+V | [Install Desktop on Mac](https://docs.docker.com/desktop/setup/install/mac-install/) · [EN Install on Ubuntu](https://docs.docker.com/engine/install/ubuntu/) · [EN Linux post-installation](https://docs.docker.com/engine/install/linux-postinstall/) |
+| 02 | [O'rnatish](02-ornatish.md) | macOS'da Docker Desktop; Ubuntu'da Docker Engine (rasmiy apt repozitoriy); o'rnatishdan keyin: `docker` guruhi va u root huquqiga teng ekani; birinchi `docker run hello-world`; `docker version`, `docker info` | M+V | [Install Desktop on Mac](https://docs.docker.com/desktop/setup/install/mac-install/) · [EN Install on Ubuntu](https://docs.docker.com/engine/install/ubuntu/) · [EN Linux post-installation](https://docs.docker.com/engine/install/linux-postinstall/) |
 | 03 | Image'lar | Registry va Docker Hub; repozitoriy, teg, digest; qatlamlar (layers); `pull`, `images`, `image history`, `image inspect` | V | [GS Understanding image layers](https://docs.docker.com/get-started/docker-concepts/building-images/understanding-image-layers/) · [GS What is a registry](https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-a-registry/) · [Docker Hub](https://docs.docker.com/docker-hub/) |
 | 04 | Konteynerlar bilan ishlash | `run` (`-d`, `--name`, `--rm`, `-it`), `ps`, `exec`, `stop`, `start`, `rm`; konteyner hayot sikli; standart qiymatlarni almashtirish: buyruq, muhit o'zgaruvchilari (`-e`, `--env-file`); loglar: `docker logs` — STDOUT va STDERR | V | [RF docker container run](https://docs.docker.com/reference/cli/docker/container/run/) · [EN Running containers](https://docs.docker.com/engine/containers/run/) · [GS Overriding container defaults](https://docs.docker.com/get-started/docker-concepts/running-containers/overriding-container-defaults/) · [EN Logging](https://docs.docker.com/engine/logging/) |
 | 05 | Tarmoq, portlar va firewall | Standart `bridge` tarmog'i va o'z tarmog'ingiz: konteynerlar bir-birini nom bilan faqat o'z (user-defined) tarmog'ida topadi; `-p` (va `127.0.0.1:` bilan cheklash); Docker ochgan port `ufw` qoidalarini chetlab o'tadi — `DOCKER-USER` zanjiri | V | [EN Networking overview](https://docs.docker.com/engine/network/) · [GS Publishing ports](https://docs.docker.com/get-started/docker-concepts/running-containers/publishing-ports/) · [EN Port publishing](https://docs.docker.com/engine/network/port-publishing/) · [EN Packet filtering and firewalls](https://docs.docker.com/engine/network/packet-filtering-firewalls/) |

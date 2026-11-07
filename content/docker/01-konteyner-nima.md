@@ -1,6 +1,6 @@
 # 01 — Konteyner nima
 
-[← Mundarija](README.md)
+[← Mundarija](README.md) · [Keyingi: O'rnatish →](02-ornatish.md)
 
 ## Tushuncha
 
