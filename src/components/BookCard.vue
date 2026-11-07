@@ -28,8 +28,9 @@ const bookMark = (book) => markFor(book.id)
                     <BookMark :book="book.id" :size="34" />
                 </span>
 
-                <span v-if="book.badge || book.version" class="book-card-version">{{ book.badge ?? book.version }}</span>
-                <span v-else-if="isDraft(book)" class="book-card-version is-soon">tayyorlanmoqda</span>
+                <!-- Boblari yo'q kitobda versiya bo'lsa ham "tayyorlanmoqda": versiya mundarijadagi jadvalda turadi -->
+                <span v-if="isDraft(book)" class="book-card-version is-soon">tayyorlanmoqda</span>
+                <span v-else-if="book.badge || book.version" class="book-card-version">{{ book.badge ?? book.version }}</span>
             </span>
 
             <h3 class="book-card-title">{{ book.title }}</h3>

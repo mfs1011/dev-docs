@@ -1590,6 +1590,9 @@ a.home-account:hover { border-color: var(--border-strong); text-decoration: none
 .next-mark .next-mark-glyph { fill: #fff; }
 :root[data-theme="dark"] .next-mark .next-mark-disc { fill: #fff; }
 :root[data-theme="dark"] .next-mark .next-mark-glyph { fill: #000; }
+.kafka-mark { flex: none; display: block; }
+.kafka-mark .kafka-mark-glyph { fill: #231f20; }
+:root[data-theme="dark"] .kafka-mark .kafka-mark-glyph { fill: #fff; }
 
 .vue-mark { flex: none; display: block; }
 .vue-mark .vue-mark-leaf { fill: #42b883; }
