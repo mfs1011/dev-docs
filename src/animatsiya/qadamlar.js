@@ -884,4 +884,100 @@ export const QADAMLI = {
       },
     ],
   },
+  // 48-bob: set -e siz skript cd xatosidan keyin davom etib, boshqa papkadagi "eski" ni o'chiradi
+  'set-e': {
+    panel: 'eski papkalar',
+    qadamlar: [
+      {
+        cmd: ['mkdir eski'],
+        chiqish: '',
+        holat: [{ k: 'r', yol: '/root/eski', qiymat: 'yaratildi', belgi: 'yangi' }, { k: 's', yol: '/srv/ilova', qiymat: 'mavjud emas', belgi: 'yoq' }],
+        izoh: 'Joriy papkada `eski` bor. Skript esa `/srv/ilova/eski` ni tozalashi kerak.',
+      },
+      {
+        cmd: ['./tozala.sh'],
+        chiqish: "./tozala.sh: 2: cd: can't cd to /srv/ilova\ntozalandi",
+        holat: [{ k: 'r', yol: '/root/eski', qiymat: 'o‘chdi — noto‘g‘ri papka!', belgi: 'xato' }, { k: 's', yol: '/srv/ilova', qiymat: 'mavjud emas', belgi: 'yoq' }],
+        izoh: '`cd` yiqildi, lekin skript davom etdi: `rm -rf eski` joriy papkada bajarildi va oxirida `tozalandi` deb yolg‘on xabar berdi.',
+      },
+      {
+        cmd: ['ls -d eski'],
+        chiqish: "ls: cannot access 'eski': No such file or directory",
+        holat: [{ k: 'r', yol: '/root/eski', qiymat: 'yo‘q', belgi: 'xato' }],
+        izoh: 'Kerakli papka emas, boshqasi o‘chib ketdi.',
+      },
+      {
+        cmd: ['mkdir eski', "sed -i '2i set -e' tozala.sh", './tozala.sh; echo "kod: $?"'],
+        chiqish: "./tozala.sh: 3: cd: can't cd to /srv/ilova\nkod: 2",
+        holat: [{ k: 'r', yol: '/root/eski', qiymat: 'tegilmadi', belgi: 'yangi' }, { k: 's', yol: '/srv/ilova', qiymat: 'mavjud emas', belgi: 'yoq' }],
+        izoh: '`set -e` bilan qobiq birinchi xatoda chiqdi: `rm` gacha yetmadi, chiqish kodi — `cd` niki (2).',
+      },
+      {
+        cmd: ['ls -d eski'],
+        chiqish: 'eski',
+        holat: [{ k: 'r', yol: '/root/eski', qiymat: 'joyida', belgi: 'yangi' }],
+        izoh: 'Papka saqlanib qoldi.',
+      },
+    ],
+  },
+  // 49-bob: glob har fayl nomini bitta so'z qiladi, $(ls) esa bo'sh joydan bo'ladi; mos fayl bo'lmasa glob o'zgarmaydi
+  sikl: {
+    panel: 'sikl qaysi qiymatlarni oldi',
+    qadamlar: [
+      {
+        cmd: ['touch a.log "b c.log" eski.txt', 'ls'],
+        chiqish: " a.log\t'b c.log'   eski.txt",
+        holat: [{ k: '1', yol: 'a.log', qiymat: 'fayl' }, { k: '2', yol: 'b c.log', qiymat: 'bitta fayl, nomida bo‘sh joy' }],
+        izoh: 'Ikkita `.log` fayl. Ikkinchisining nomida bo‘sh joy bor.',
+      },
+      {
+        cmd: ['for f in *.log; do echo "[$f]"; done'],
+        chiqish: '[a.log]\n[b c.log]',
+        holat: [{ k: '1', yol: '1-aylanish', qiymat: 'a.log', belgi: 'yangi' }, { k: '2', yol: '2-aylanish', qiymat: 'b c.log', belgi: 'yangi' }],
+        izoh: 'Glob: qobiq har fayl nomini butunligicha bitta so‘z qilib berdi — 2 ta aylanish.',
+      },
+      {
+        cmd: ['for f in $(ls *.log); do echo "[$f]"; done'],
+        chiqish: '[a.log]\n[b]\n[c.log]',
+        holat: [{ k: '1', yol: '1-aylanish', qiymat: 'a.log' }, { k: '2', yol: '2-aylanish', qiymat: 'b — bunday fayl yo‘q', belgi: 'xato' }, { k: '3', yol: '3-aylanish', qiymat: 'c.log — bunday fayl yo‘q', belgi: 'xato' }],
+        izoh: '`$(ls)` — matn. Qobiq uni bo‘sh joydan bo‘ldi: 3 ta aylanish, ikkitasi mavjud bo‘lmagan nomlar.',
+      },
+      {
+        cmd: ['for f in *.csv; do echo "[$f]"; done'],
+        chiqish: '[*.csv]',
+        holat: [{ k: '1', yol: '1-aylanish', qiymat: '*.csv — naqshning o‘zi', belgi: 'xato' }],
+        izoh: 'Mos fayl yo‘q — glob o‘zgarmay qoldi va sikl bir marta “*.csv” bilan aylandi.',
+      },
+      {
+        cmd: ['for f in *.csv; do [ -e "$f" ] || continue; echo "[$f]"; done'],
+        chiqish: '',
+        holat: [{ k: '1', yol: '1-aylanish', qiymat: '[ -e ] → yo‘q → continue', belgi: 'yoq' }],
+        izoh: 'Fayl bor-yo‘qligini tekshirib, yo‘q bo‘lsa keyingi aylanishga o‘tamiz — hech narsa bajarilmadi.',
+      },
+    ],
+  },
+  // 50-bob: set -e skriptni cp xatosida to'xtatadi, EXIT trap'i baribir vaqtinchalik faylni o'chiradi
+  trap: {
+    panel: 'vaqtincha.sh ichida nima bo‘ldi',
+    qadamlar: [
+      {
+        cmd: ['chmod +x vaqtincha.sh'],
+        chiqish: '',
+        holat: [{ k: 'm', yol: 't=$(mktemp)', qiymat: '/tmp/tmp.XXXXXXXXXX yaratadi' }, { k: 't', yol: "trap '…' EXIT", qiymat: 'chiqishda: rm -f "$t"' }, { k: 'c', yol: 'cp "$t" /yoq/papka/', qiymat: 'bunday papka yo‘q' }, { k: 'e', yol: 'set -e', qiymat: 'birinchi xatoda chiqadi' }],
+        izoh: 'Skriptdagi asosiy qatorlar. Trap fayl yaratilgan zahoti qo‘yiladi — tozalash qayerda chiqilsa ham ishlashi uchun.',
+      },
+      {
+        cmd: ['./vaqtincha.sh; echo "kod: $?"'],
+        chiqish: "vaqtinchalik fayl: 1 qator\ncp: cannot create regular file '/yoq/papka/': No such file or directory\ntozalandi\nkod: 1",
+        holat: [{ k: 'm', yol: 't=$(mktemp)', qiymat: 'fayl yaratildi, 1 qator yozildi', belgi: 'yangi' }, { k: 'c', yol: 'cp "$t" /yoq/papka/', qiymat: 'xato — kod 1', belgi: 'xato' }, { k: 'e', yol: 'set -e', qiymat: 'skript to‘xtadi, oxirgi echo bajarilmadi', belgi: 'xato' }, { k: 't', yol: "trap '…' EXIT", qiymat: 'chiqishda ishladi: fayl o‘chirildi', belgi: 'yangi' }],
+        izoh: '`cp` yiqildi → `set -e` chiqishni boshladi → chiqishdan oldin `EXIT` trap’i ishladi. Kod — `cp` niki (1).',
+      },
+      {
+        cmd: ['ls /tmp/tmp.*'],
+        chiqish: "ls: cannot access '/tmp/tmp.*': No such file or directory",
+        holat: [{ k: 'm', yol: '/tmp/tmp.*', qiymat: 'qolmadi', belgi: 'yoq' }],
+        izoh: 'Skript yarim yo‘lda yiqilgan bo‘lsa ham, `/tmp` da axlat qolmadi.',
+      },
+    ],
+  },
 }

@@ -1,13 +1,13 @@
 # Ish holati (boshqa kompyuterda davom ettirish uchun)
 
-Oxirgi yangilanish: 2026-11-07 (kechqurun). Yangi kompyuterda ishni boshlashdan oldin shu faylni, `CLAUDE.md` ni va `docs/tts.md` ni o'qing.
+Oxirgi yangilanish: 2026-11-07 (tun, ikkinchi noutbuk). Yangi kompyuterda ishni boshlashdan oldin shu faylni, `CLAUDE.md` ni va `docs/tts.md` ni o'qing.
 
 ## Linux kitobi (`content/linux/`)
 
 - Mundarija: `content/linux/README.md` — 12 qism, 54 bob, har bob yonida rasmiy manba.
-- Tayyor: **1–47-boblar** (I–X qismlar).
-- **Keyingi: 48-bob — Birinchi skript**, keyin XI Bash skriptlar (48–51, trenajorda) va XII Muammoni topish (52–54, trenajor va VPS). Mundarijadagi qatorlar va manbalar: `content/linux/README.md`.
-- Oxirgi sessiya (2026-11-07) nima qilgani va yangi qoidalar — pastdagi "2026-11-07 sessiyasi" bo'limida.
+- Tayyor: **1–51-boblar** (I–XI qismlar).
+- **Keyingi: 52-bob — Servis ishlamayapti**, keyin XII Muammoni topish (52–54, trenajor va VPS). Mundarijadagi qatorlar va manbalar: `content/linux/README.md`.
+- Oxirgi sessiyalar nima qilgani va yangi qoidalar — pastdagi "2026-11-07 sessiyasi" bo'limlarida.
 - Rasmiy manbalar: Debian Reference, Ubuntu Server docs, man sahifalari (trenajorda `MANWIDTH=100 man X | col -b`), GNU qo'llanmalari. gnu.org avtomatik so'rovlarga ko'pincha 403/429 qaytaradi — o'sha paytda man sahifalari trenajordan olinadi.
 
 ### Har bobning qoidalari
@@ -80,8 +80,12 @@ npm ci
 sh linux-trenajor/scripts/yigish.sh        # python3, node >= 22.15, zstd kerak; birinchi marta uzoq
 npx vite --port 5182                       # boshqa terminalda
 node linux-trenajor/test/buyruq.mjs fayl.txt   # buyruqlarni trenajorda bajarib, haqiqiy chiqishni beradi
+rm -rf public/linux-trenajor && cp -r linux-trenajor/build/web public/linux-trenajor   # sayt trenajorni shu yerdan oladi (CI ham shunday qiladi)
 node linux-trenajor/test/mashqlar.mjs          # barcha mashqlarni brauzerda tekshiradi (yoki: ... 25-dpkg)
 ```
+
+- `mashqlar.mjs` uchun `playwright-core` kerak, u `package.json` da yo'q: `npm i --no-save playwright-core && npx playwright-core install chromium-headless-shell`.
+- python.org'dan o'rnatilgan Python'da `yigish.sh` `CERTIFICATE_VERIFY_FAILED` bilan yiqilsa: `SSL_CERT_FILE=/etc/ssl/cert.pem sh linux-trenajor/scripts/yigish.sh`.
 
 `buyruq.mjs` ga UTF-8 belgilar (`‘` kabi) buzilib boradi — sinov buyruqlarida ASCII ishlating. Har ishga tushirish trenajorni toza holatdan boshlaydi.
 
@@ -99,7 +103,8 @@ node linux-trenajor/test/mashqlar.mjs          # barcha mashqlarni brauzerda tek
 - 2026-11-07 dan egasi qo'llanma uchun **to'liq ruxsat** bergan: qayta yondirish, SSH'ni mustahkamlash, firewall, sinov servislari — har o'zgarish bobda hujjatlanadi.
 - Hozirgi holat (2026-11-07):
   - VPS qayta yondirildi, yadro 7.0.0-42 (33–34-boblar);
-  - `lsof`, `psmisc`, `tmux` (30, 32-boblar) va `rsync` 3.4.1 (46-bob) o'rnatildi;
+  - `lsof`, `psmisc`, `tmux` (30, 32-boblar), `rsync` 3.4.1 (46-bob) va `shellcheck` 0.11.0 (50–51-boblar) o'rnatildi;
+  - 51-bobdagi `zaxira` timer'i, skripti va `/var/backups/zaxira` sinovdan keyin o'chirilgan;
   - `salom.service` va unga tegishli hamma narsa 39-bobdan keyin o'chirildi; 43–47-boblardagi sinov servislari, `demo` foydalanuvchisi va vaqtinchalik ufw qoidalari ham o'chirilgan;
   - ufw yoqilgan: standart holatda `deny (incoming)`, provayder qoidalari 80, 443, 22 va 1500/tcp (ispmanager, unda hech narsa tinglamaydi);
   - vaqt zonasi `Europe/Moscow` (provayder), vaqtni chrony sinxronlaydi;
@@ -138,12 +143,20 @@ Ikkinchi noutbukda boshlashdan oldin shu faylni, `CLAUDE.md` ni va kitobning `RE
 - Commit/push/PR faqat egasi so'raganda.
 - Uzoq yozish ishlarida 5 soatlik limitni bob oralarida tekshirish; egasi aytgan chegarada joriy bobni tugatib to'xtash.
 
+## 2026-11-07 sessiyasi (ikkinchi noutbuk)
+
+- Noutbuk sozlandi: VPS uchun alohida kalit `~/.ssh/lab_ed25519` (git'da yo'q), `Host lab` va `VPS_IP` (`~/.zshrc`); trenajor yig'ildi.
+- Linux **48–51**-boblar yozildi (PR #200, `docs/linux-48-54`): birinchi skript, shart va sikl, funksiya va xatolar, zaxira skripti. Mashqlar: `48-skript`, `49-sikl`, `50-funksiya`, `51-zaxira`. Animatsiyalar: `set-e`, `sikl`, `trap`.
+- Topilgan farq: Ubuntu 26.04 dash'i `set -o pipefail` ni qabul qiladi, Debian 12 dash'i (0.5.12-2) — `Illegal option` (48-bob).
+- Kuzatuv (rasmiy manbada tavsifi topilmadi, bobda "kuzatildi" deb yozilgan): `TERM` signali kelganda dash `EXIT` trap'ini bajarmaydi, bash bajaradi; dash'da `trap 'exit 143' TERM` kerak (50-bob).
+- Trenajorda `du` 9p fayl tizimida hajmni noto'g'ri ko'rsatadi (122 KB fayl uchun `512`) — hajm uchun `stat -c %s` (51-bob).
+
 ## Ikkinchi noutbukda Linux kitobini davom ettirish
 
-1. `git fetch origin`. Linux PR'i (39–47) merge bo'lgan bo'lsa — `git switch -c docs/linux-48-54 origin/main`; bo'lmagan bo'lsa — `docs/linux-qism-8-12` ni olib, o'sha yerdan davom etish.
+1. `git fetch origin`. PR #200 (48–51) merge bo'lgan bo'lsa — `git switch -c docs/linux-52-54 origin/main`; bo'lmagan bo'lsa — `docs/linux-48-54` ni olib, o'sha yerdan davom etish.
 2. `npm ci`, `sh linux-trenajor/scripts/yigish.sh`, keyin `npx vite --port 5182` (trenajor testlari shu portga ulanadi).
 3. VPS: kalitni xavfsiz yo'l bilan ko'chirish, `~/.ssh/config` ga `Host lab` (HostName, `User root`, IdentityFile, `IdentitiesOnly yes`), `export VPS_IP=...` — `linux-trenajor/asboblar/vps.sh` shularni ishlatadi.
-4. `content/linux/README.md` dagi 48-qatordan boshlab, yuqoridagi "Bob yozish tartibi" bo'yicha.
+4. `content/linux/README.md` dagi 52-qatordan boshlab, yuqoridagi "Bob yozish tartibi" bo'yicha.
 
 ## Git'da yo'q, qo'lda ko'chiriladiganlar
 
