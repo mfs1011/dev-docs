@@ -1,6 +1,6 @@
 # 18 — Lokal ishlab chiqish muhiti
 
-[← Oldingi: Ishga tushish tartibi va healthcheck](17-healthcheck.md) · [Mundarija](README.md)
+[← Oldingi: Ishga tushish tartibi va healthcheck](17-healthcheck.md) · [Mundarija](README.md) · [Keyingi: Profillar va bir nechta fayl →](19-profillar-va-fayllar.md)
 
 ## Tushuncha
 

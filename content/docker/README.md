@@ -42,7 +42,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - Nuxt — Docker hujjatida u uchun qo'llanma yo'q; Node.js va Next.js qo'llanmalaridagi tamoyillar unga ham taalluqli.
 - Serverni himoyalash (SSH, firewall, fail2ban) — **"Server xavfsizligi"** kitobida; Docker portlari va firewall bog'liqligi esa shu kitobning 5-bobida.
 
-> **Holat.** Qo'llanma yozilmoqda: 18/28 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 19/28 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -89,7 +89,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 | 16 | [Compose'da tarmoq](16-compose-tarmoq.md) | Servislar bir-biriga nom bilan ulanadi; standart tarmoq; o'z tarmoqlari; bridge drayveri | V | [CO Networking](https://docs.docker.com/compose/how-tos/networking/) · [EN Networking overview](https://docs.docker.com/engine/network/) · [EN Bridge driver](https://docs.docker.com/engine/network/drivers/bridge/) · [RF Networks](https://docs.docker.com/reference/compose-file/networks/) |
 | 17 | [Ishga tushish tartibi va healthcheck](17-healthcheck.md) | `depends_on` faqat tartib beradi, tayyorlikni emas; `healthcheck` va `condition: service_healthy` | V | [CO Startup order](https://docs.docker.com/compose/how-tos/startup-order/) · [RF Services: healthcheck](https://docs.docker.com/reference/compose-file/services/#healthcheck) |
 | 18 | [Lokal ishlab chiqish muhiti](18-lokal-muhit.md) | Bind mount bilan kodni ulash; `compose watch` (sync, rebuild); `.env` va o'zgaruvchilar | V | [CO File watch](https://docs.docker.com/compose/how-tos/file-watch/) · [CO Environment variables](https://docs.docker.com/compose/how-tos/environment-variables/) · [RF Develop](https://docs.docker.com/reference/compose-file/develop/) |
-| 19 | Profillar va bir nechta fayl | `profiles`; `compose.override.yaml`; `-f` bilan birlashtirish; `include`, `extends` | V | [CO Profiles](https://docs.docker.com/compose/how-tos/profiles/) · [CO Multiple Compose files](https://docs.docker.com/compose/how-tos/multiple-compose-files/) · [CO Merge](https://docs.docker.com/compose/how-tos/multiple-compose-files/merge/) |
+| 19 | [Profillar va bir nechta fayl](19-profillar-va-fayllar.md) | `profiles`; `compose.override.yaml`; `-f` bilan birlashtirish; `include`, `extends` | V | [CO Profiles](https://docs.docker.com/compose/how-tos/profiles/) · [CO Multiple Compose files](https://docs.docker.com/compose/how-tos/multiple-compose-files/) · [CO Merge](https://docs.docker.com/compose/how-tos/multiple-compose-files/merge/) |
 | 20 | Tipik stack: Nginx + PHP-FPM + PostgreSQL + Redis | Docker'ning Laravel qo'llanmasidagi to'plam qismma-qism: har servis nima uchun, ular qanday bog'lanadi, ma'lumot qayerda saqlanadi | V | [GD Laravel](https://docs.docker.com/guides/laravel/) · [GD Databases](https://docs.docker.com/guides/databases/) |
 
 ## IV qism — Framework'lar uchun (21–24)
