@@ -1,6 +1,6 @@
 # 49 — Shart va sikl
 
-[← Oldingi: Birinchi skript](48-birinchi-skript.md) · [Mundarija](README.md)
+[← Oldingi: Birinchi skript](48-birinchi-skript.md) · [Mundarija](README.md) · [Keyingi: Funksiya va xatolar →](50-funksiya-va-xatolar.md)
 
 ## Tushuncha
 

@@ -1780,6 +1780,57 @@ export const LINUX_MASHQLAR = [
       },
     ],
   },
+  {
+    id: '50-funksiya',
+    title: 'Funksiya va trap',
+    bob: '/linux/50-funksiya-va-xatolar',
+    intro: 'Funksiya tashqi o‘zgaruvchini qanday buzishini va `local` buni qanday oldini olishini ko‘rasiz, kod qaytaradigan funksiya yozasiz. Keyin tayyor `t.sh` skripti yiqilganda `/tmp` da axlat qoldirishini ko‘rib, `trap` bilan tuzatasiz.',
+    setup: `rm -f /tmp/m50.*; printf '%s\\n' '#!/bin/sh' 'set -e' 't=$(mktemp /tmp/m50.XXXXXX)' "# trap 'rm -f \\"\\$t\\"' EXIT" 'echo salom > "$t"' 'cp "$t" /yoq/papka/' > t.sh`,
+    steps: [
+      {
+        cmd: 'ism=Ali; f() { ism=Vali; }; f; echo "$ism"',
+        text: '`ism=Ali`, uni o‘zgartiradigan `f` funksiyasi, chaqiring va `$ism` ni chiqaring.',
+        ran: /^ism=Ali;\s*f\s*\(\)\s*\{\s*ism=Vali;\s*\};\s*f;\s*echo/,
+        natija: '`Vali`: funksiya tashqi o‘zgaruvchini o‘zgartirdi.',
+      },
+      {
+        cmd: 'ism=Ali; g() { local ism=Vali; }; g; echo "$ism"',
+        text: 'Endi `local` bilan.',
+        ran: /^ism=Ali;\s*g\s*\(\)\s*\{\s*local\s+ism=Vali;\s*\};\s*g;\s*echo/,
+        natija: '`Ali`: `local` o‘zgaruvchi faqat funksiya ichida yashadi.',
+      },
+      {
+        cmd: 'bormi() { [ -e "$1" ] || return 3; echo "bor: $1"; }',
+        text: 'Fayl bo‘lmasa `3` qaytaradigan `bormi` funksiyasini e’lon qiling.',
+        ran: /^bormi\s*\(\)\s*\{.*return\s+3/,
+        natija: 'Funksiya joriy qobiqda saqlandi.',
+      },
+      {
+        cmd: 'bormi /yoq; echo "kod: $?"',
+        text: 'Mavjud bo‘lmagan fayl bilan chaqirib, kodni ko‘ring.',
+        ran: /^bormi\s+\/yoq\b.*\$\?/,
+        natija: '`kod: 3` — `return 3`.',
+      },
+      {
+        cmd: 'cat t.sh; sh t.sh; ls /tmp/m50.*',
+        text: 'Tayyor `t.sh` ni ko‘ring, ishga tushiring va `/tmp/m50.*` ni tekshiring.',
+        ran: /\bsh\s+t\.sh\b.*ls\s+\/tmp\/m50/,
+        natija: '`cp` yiqildi, `set -e` skriptni to‘xtatdi va vaqtinchalik fayl qoldi: trap qatori izohda (`#`).',
+      },
+      {
+        cmd: "rm -f /tmp/m50.* && sed -i 's/^# trap/trap/' t.sh",
+        text: 'Qoldiqni o‘chiring va `t.sh` dagi `trap` qatoridan `# ` ni olib tashlang.',
+        check: 'grep -q "^trap " "$MASHQ/t.sh" && ! ls /tmp/m50.* >/dev/null 2>&1',
+        natija: 'Trap endi ishlaydi.',
+      },
+      {
+        cmd: 'sh t.sh; ls /tmp/m50.*',
+        text: 'Yana ishga tushirib, `/tmp/m50.*` ni tekshiring.',
+        ran: /^sh\s+t\.sh\s*;\s*ls\s+\/tmp\/m50/,
+        natija: '`No such file or directory`: skript yiqilsa ham, `EXIT` trap’i faylni o‘chirdi.',
+      },
+    ],
+  },
 ]
 
 /** VM ichida `source` qilinadigan skript: papka, setup va har prompt oldidan qadamlarni tekshiradigan funksiya */

@@ -956,4 +956,28 @@ export const QADAMLI = {
       },
     ],
   },
+  // 50-bob: set -e skriptni cp xatosida to'xtatadi, EXIT trap'i baribir vaqtinchalik faylni o'chiradi
+  trap: {
+    panel: 'vaqtincha.sh ichida nima bo‘ldi',
+    qadamlar: [
+      {
+        cmd: ['chmod +x vaqtincha.sh'],
+        chiqish: '',
+        holat: [{ k: 'm', yol: 't=$(mktemp)', qiymat: '/tmp/tmp.XXXXXXXXXX yaratadi' }, { k: 't', yol: "trap '…' EXIT", qiymat: 'chiqishda: rm -f "$t"' }, { k: 'c', yol: 'cp "$t" /yoq/papka/', qiymat: 'bunday papka yo‘q' }, { k: 'e', yol: 'set -e', qiymat: 'birinchi xatoda chiqadi' }],
+        izoh: 'Skriptdagi asosiy qatorlar. Trap fayl yaratilgan zahoti qo‘yiladi — tozalash qayerda chiqilsa ham ishlashi uchun.',
+      },
+      {
+        cmd: ['./vaqtincha.sh; echo "kod: $?"'],
+        chiqish: "vaqtinchalik fayl: 1 qator\ncp: cannot create regular file '/yoq/papka/': No such file or directory\ntozalandi\nkod: 1",
+        holat: [{ k: 'm', yol: 't=$(mktemp)', qiymat: 'fayl yaratildi, 1 qator yozildi', belgi: 'yangi' }, { k: 'c', yol: 'cp "$t" /yoq/papka/', qiymat: 'xato — kod 1', belgi: 'xato' }, { k: 'e', yol: 'set -e', qiymat: 'skript to‘xtadi, oxirgi echo bajarilmadi', belgi: 'xato' }, { k: 't', yol: "trap '…' EXIT", qiymat: 'chiqishda ishladi: fayl o‘chirildi', belgi: 'yangi' }],
+        izoh: '`cp` yiqildi → `set -e` chiqishni boshladi → chiqishdan oldin `EXIT` trap’i ishladi. Kod — `cp` niki (1).',
+      },
+      {
+        cmd: ['ls /tmp/tmp.*'],
+        chiqish: "ls: cannot access '/tmp/tmp.*': No such file or directory",
+        holat: [{ k: 'm', yol: '/tmp/tmp.*', qiymat: 'qolmadi', belgi: 'yoq' }],
+        izoh: 'Skript yarim yo‘lda yiqilgan bo‘lsa ham, `/tmp` da axlat qolmadi.',
+      },
+    ],
+  },
 }
