@@ -42,7 +42,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - Nuxt — Docker hujjatida u uchun qo'llanma yo'q; Node.js va Next.js qo'llanmalaridagi tamoyillar unga ham taalluqli.
 - Serverni himoyalash (SSH, firewall, fail2ban) — **"Server xavfsizligi"** kitobida; Docker portlari va firewall bog'liqligi esa shu kitobning 5-bobida.
 
-> **Holat.** Qo'llanma yozilmoqda: 11/28 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 12/28 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -77,7 +77,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 | 09 | [Build kesh](09-build-kesh.md) | Qatlam keshi qanday ishlaydi va qachon buziladi; instruksiyalar tartibi; `.dockerignore` | V | [GS Using the build cache](https://docs.docker.com/get-started/docker-concepts/building-images/using-the-build-cache/) · [BD Cache invalidation](https://docs.docker.com/build/cache/invalidation/) · [BD Optimize cache usage](https://docs.docker.com/build/cache/optimize/) · [BD Build context: .dockerignore](https://docs.docker.com/build/concepts/context/#dockerignore-files) |
 | 10 | [Multi-stage build](10-multi-stage.md) | Build bosqichi va yakuniy bosqich; `COPY --from`; `--target` | V | [GS Multi-stage builds](https://docs.docker.com/get-started/docker-concepts/building-images/multi-stage-builds/) · [BD Multi-stage](https://docs.docker.com/build/building/multi-stage/) |
 | 11 | [Base image tanlash](11-base-image.md) | Rasmiy (Docker Official) image'lar; `alpine` va `slim`; distroless; o'z base image'ingiz | V | [BD Base images](https://docs.docker.com/build/building/base-images/) · [BD Best practices](https://docs.docker.com/build/building/best-practices/) · [DHI: distroless](https://docs.docker.com/dhi/explore/security-concepts/distroless/) |
-| 12 | Xavfsiz va to'g'ri image | Root'siz foydalanuvchi (`USER`); sirlarni build'ga qo'shmaslik — secret mount; Dockerfile'ni build'dan oldin tekshirish (build checks, `docker build --check`); zaifliklarni skanerlash (Docker Scout) | V | [BD Best practices: USER](https://docs.docker.com/build/building/best-practices/#user) · [BD Build secrets](https://docs.docker.com/build/building/secrets/) · [BD Build checks](https://docs.docker.com/build/checks/) · [Docker Scout quickstart](https://docs.docker.com/scout/quickstart/) |
+| 12 | [Xavfsiz va to'g'ri image](12-xavfsiz-image.md) | Root'siz foydalanuvchi (`USER`); sirlarni build'ga qo'shmaslik — secret mount; Dockerfile'ni build'dan oldin tekshirish (build checks, `docker build --check`); zaifliklarni skanerlash (Docker Scout) | V | [BD Best practices: USER](https://docs.docker.com/build/building/best-practices/#user) · [BD Build secrets](https://docs.docker.com/build/building/secrets/) · [BD Build checks](https://docs.docker.com/build/checks/) · [Docker Scout quickstart](https://docs.docker.com/scout/quickstart/) |
 | 13 | BuildKit imkoniyatlari | Builder'lar; cache mount (`RUN --mount=type=cache`); multi-platform image (`amd64` + `arm64`) va `buildx` | V | [BD BuildKit](https://docs.docker.com/build/buildkit/) · [BD Optimize cache usage](https://docs.docker.com/build/cache/optimize/) · [BD Multi-platform](https://docs.docker.com/build/building/multi-platform/) · [BD Builders](https://docs.docker.com/build/builders/) |
 | 14 | Image hajmini kamaytirish | O'lchash: `docker images`, `image history`; choralar: multi-stage, kichik base, keraksiz fayllar, qatlamlarni birlashtirish | V | [BD Best practices](https://docs.docker.com/build/building/best-practices/) · [RF docker image history](https://docs.docker.com/reference/cli/docker/image/history/) |
 

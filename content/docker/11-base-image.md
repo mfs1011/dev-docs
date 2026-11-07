@@ -1,6 +1,6 @@
 # 11 — Base image tanlash
 
-[← Oldingi: Multi-stage build](10-multi-stage.md) · [Mundarija](README.md)
+[← Oldingi: Multi-stage build](10-multi-stage.md) · [Mundarija](README.md) · [Keyingi: Xavfsiz va to'g'ri image →](12-xavfsiz-image.md)
 
 ## Tushuncha
 
