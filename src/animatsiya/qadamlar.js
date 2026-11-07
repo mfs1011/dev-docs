@@ -980,4 +980,46 @@ export const QADAMLI = {
       },
     ],
   },
+  // 52-bob: bir servis — besh xil buzilish; status kodi bir xil bo'lishi mumkin, sabab jurnalda
+  servis: {
+    panel: 'ilova.service: kod → sabab',
+    qadamlar: [
+      {
+        cmd: ["sed -i 's|ishga.sh|isga.sh|' /etc/systemd/system/ilova.service", 'systemctl daemon-reload', 'systemctl restart ilova; echo "kod: $?"'],
+        chiqish: 'kod: 0',
+        holat: [{ k: 'r', yol: 'systemctl restart', qiymat: 'kod 0 — lekin bu hech narsani isbotlamaydi', belgi: 'xato' }, { k: 's', yol: 'status', qiymat: 'failed, status=203/EXEC', belgi: 'xato' }],
+        izoh: '`Type=simple`: systemd jarayon yaratilishi bilan qaytdi. Haqiqiy holat — `status` da.',
+      },
+      {
+        cmd: ['journalctl -u ilova -n 4 --no-pager -o cat'],
+        chiqish: 'ilova.service: Failed to locate executable /opt/ilova/isga.sh: No such file or directory\nilova.service: Failed at step EXEC spawning /opt/ilova/isga.sh: No such file or directory\nilova.service: Main process exited, code=exited, status=203/EXEC\nilova.service: Failed with result \'exit-code\'.',
+        holat: [{ k: 's', yol: 'status', qiymat: '203/EXEC' }, { k: 'j', yol: 'sabab (jurnal)', qiymat: 'fayl yo‘q: isga.sh', belgi: 'yangi' }],
+        izoh: 'Jurnal aniq aytdi: yo‘lda harf xato.',
+      },
+      {
+        cmd: ['chmod 644 /opt/ilova/ishga.sh', 'systemctl restart ilova', 'journalctl -u ilova -n 3 --no-pager -o cat'],
+        chiqish: 'ilova.service: Failed at step EXEC spawning /opt/ilova/ishga.sh: Permission denied\nilova.service: Main process exited, code=exited, status=203/EXEC\nilova.service: Failed with result \'exit-code\'.',
+        holat: [{ k: 's', yol: 'status', qiymat: '203/EXEC — avvalgidek' }, { k: 'j', yol: 'sabab (jurnal)', qiymat: 'Permission denied: x ruxsati yo‘q', belgi: 'yangi' }],
+        izoh: 'Kod bir xil, sabab boshqa. Shuning uchun jurnalsiz xulosa qilib bo‘lmaydi.',
+      },
+      {
+        cmd: ['chmod 600 /etc/ilova.conf', 'systemctl restart ilova', 'journalctl -u ilova -n 3 --no-pager -o cat'],
+        chiqish: '/opt/ilova/ishga.sh: 3: .: cannot open /etc/ilova.conf: Permission denied\nilova.service: Main process exited, code=exited, status=2/INVALIDARGUMENT\nilova.service: Failed with result \'exit-code\'.',
+        holat: [{ k: 's', yol: 'status', qiymat: '2 — skriptning o‘z kodi' }, { k: 'j', yol: 'sabab (jurnal)', qiymat: 'User=ilova faylni o‘qiy olmaydi (600, root)', belgi: 'yangi' }],
+        izoh: 'Servis root emas, `User=ilova` nomidan ishlaydi — ruxsatni shu foydalanuvchi uchun tekshiring.',
+      },
+      {
+        cmd: ["echo 'PORT = 8080' > /etc/ilova.conf", 'systemctl restart ilova', 'journalctl -u ilova -n 3 --no-pager -o cat'],
+        chiqish: '/opt/ilova/ishga.sh: 1: /etc/ilova.conf: PORT: not found\nilova.service: Main process exited, code=exited, status=127/n/a\nilova.service: Failed with result \'exit-code\'.',
+        holat: [{ k: 's', yol: 'status', qiymat: '127 — buyruq topilmadi' }, { k: 'j', yol: 'sabab (jurnal)', qiymat: 'sozlamada sintaksis xatosi: PORT = 8080', belgi: 'yangi' }],
+        izoh: '`=` atrofidagi bo‘sh joy `PORT` ni buyruqqa aylantirdi.',
+      },
+      {
+        cmd: ['systemd-socket-activate -l 8080 cat >/dev/null 2>&1 &', 'systemctl restart ilova', 'journalctl -u ilova -n 3 --no-pager -o cat'],
+        chiqish: "Failed to open '8080': Address already in use\nilova.service: Main process exited, code=exited, status=1/FAILURE\nilova.service: Failed with result 'exit-code'.",
+        holat: [{ k: 's', yol: 'status', qiymat: '1' }, { k: 'j', yol: 'sabab (jurnal)', qiymat: 'port band → ss -tlnp kimligini ko‘rsatadi', belgi: 'yangi' }],
+        izoh: 'Port boshqa jarayonda. Keyingi qadam — `ss -tlnp | grep 8080`.',
+      },
+    ],
+  },
 }

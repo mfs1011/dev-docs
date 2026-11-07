@@ -1876,6 +1876,58 @@ export const LINUX_MASHQLAR = [
       },
     ],
   },
+  {
+    id: '52-servis',
+    title: 'Servis ishlamayapti',
+    bob: '/linux/52-servis-ishlamayapti',
+    intro: '`ilova` servisi 8081-portda `salom` deb javob berishi kerak, lekin ishlamayapti. Sababni `status` va jurnaldan topib tuzatasiz — keyin yana bitta sabab chiqadi.',
+    setup: `id ilova >/dev/null 2>&1 || adduser --system --group --no-create-home ilova >/dev/null 2>&1 || true; mkdir -p /opt/ilova; printf '%s\\n' '#!/bin/sh' 'set -eu' '. /etc/ilova.conf' 'echo "port: $PORT"' 'exec systemd-socket-activate -l "$PORT" -a --inetd /opt/ilova/javob.sh' > /opt/ilova/ishga.sh; printf '%s\\n' '#!/bin/sh' 'echo salom' > /opt/ilova/javob.sh; chmod 644 /opt/ilova/ishga.sh; chmod 755 /opt/ilova/javob.sh; echo PORT=8081 > /etc/ilova.conf; chmod 600 /etc/ilova.conf; printf '%s\\n' '[Unit]' 'Description=Sinov ilovasi (mashq)' '[Service]' 'User=ilova' 'ExecStart=/opt/ilova/ishga.sh' > /etc/systemd/system/ilova.service; systemctl daemon-reload; systemctl reset-failed ilova >/dev/null 2>&1 || true; systemctl restart ilova || true`,
+    steps: [
+      {
+        cmd: 'systemctl status ilova --no-pager -n 0',
+        text: 'Servis holatini ko‘ring.',
+        ran: /^systemctl\s+status\s+ilova/,
+        natija: '`failed`, `status=203/EXEC`: jarayon ishga tushmadi. Sababi — jurnalda.',
+      },
+      {
+        cmd: 'journalctl -u ilova -n 3 --no-pager -o cat',
+        text: 'Servis jurnalining oxirgi qatorlarini o‘qing.',
+        ran: /^journalctl\b.*-u\s*ilova/,
+        natija: '`Permission denied`: `ishga.sh` da bajarish ruxsati yo‘q.',
+      },
+      {
+        cmd: 'chmod 755 /opt/ilova/ishga.sh',
+        text: 'Skriptga bajarish ruxsatini bering.',
+        check: '[ -x /opt/ilova/ishga.sh ]',
+        natija: 'Birinchi sabab tuzatildi.',
+      },
+      {
+        cmd: 'systemctl restart ilova; journalctl -u ilova -n 3 --no-pager -o cat',
+        text: 'Qayta ishga tushirib, jurnalga yana qarang.',
+        ran: /^systemctl\s+restart\s+ilova\b.*journalctl/,
+        natija: '`cannot open /etc/ilova.conf: Permission denied` — servis `ilova` nomidan ishlaydi, fayl esa faqat root uchun.',
+      },
+      {
+        cmd: 'chmod 644 /etc/ilova.conf',
+        text: 'Sozlama faylini o‘qiladigan qiling.',
+        check: '[ "$(stat -c %a /etc/ilova.conf)" = 644 ] || { [ "$(stat -c %a /etc/ilova.conf)" = 640 ] && [ "$(stat -c %G /etc/ilova.conf)" = ilova ]; }',
+        natija: 'Endi `ilova` faylni o‘qiy oladi.',
+      },
+      {
+        cmd: 'systemctl restart ilova',
+        text: 'Servisni qayta ishga tushiring.',
+        check: 'pgrep -f "systemd-socket-activate -l 8081"',
+        sinov: ['systemctl restart ilova', 'sleep 1'],
+        natija: 'Servis ishlayapti, 8081 tinglanmoqda.',
+      },
+      {
+        cmd: 'exec 3<>/dev/tcp/127.0.0.1/8081; cat <&3; exec 3<&-',
+        text: 'Portga ulanib, javobni tekshiring.',
+        ran: /\/dev\/tcp\/127\.0\.0\.1\/8081/,
+        natija: '`salom` — servis tuzaldi.',
+      },
+    ],
+  },
 ]
 
 /** VM ichida `source` qilinadigan skript: papka, setup va har prompt oldidan qadamlarni tekshiradigan funksiya */
