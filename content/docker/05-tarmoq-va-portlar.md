@@ -1,6 +1,6 @@
 # 05 — Tarmoq, portlar va firewall
 
-[← Oldingi: Konteynerlar bilan ishlash](04-konteynerlar.md) · [Mundarija](README.md)
+[← Oldingi: Konteynerlar bilan ishlash](04-konteynerlar.md) · [Mundarija](README.md) · [Keyingi: Ma'lumot saqlash →](06-malumot-saqlash.md)
 
 ## Tushuncha
 

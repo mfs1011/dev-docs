@@ -1204,4 +1204,34 @@ export const QADAMLI = {
       },
     ],
   },
+  // Docker 06-bob: yoziladigan qatlam konteyner bilan o'ladi, volume — qoladi (VPS, haqiqiy chiqishlar)
+  volume: {
+    panel: 'ma’lumot qayerda',
+    qadamlar: [
+      {
+        cmd: ["docker run --name v1 alpine sh -c 'echo salom > /fayl.txt; cat /fayl.txt'"],
+        chiqish: "salom",
+        holat: [{ k: "c", yol: "konteyner v1", qiymat: "yozdi: /fayl.txt (yoziladigan qatlam)", belgi: "yangi" }],
+        izoh: "Fayl konteynerning yoziladigan qatlamida.",
+      },
+      {
+        cmd: ["docker rm v1", "docker run --rm alpine cat /fayl.txt"],
+        chiqish: "v1\ncat: can't open '/fayl.txt': No such file or directory",
+        holat: [{ k: "c", yol: "konteyner v1", qiymat: "o‘chirildi — qatlami bilan", belgi: "yoq" }, { k: "f", yol: "/fayl.txt", qiymat: "yo‘q", belgi: "xato" }],
+        izoh: "Yangi konteyner image’dan toza boshlanadi — fayl yo‘qoldi.",
+      },
+      {
+        cmd: ["docker volume create malumot", "docker run --rm -v malumot:/data alpine sh -c 'echo \"1-konteyner yozdi\" > /data/eslatma.txt'"],
+        chiqish: "malumot",
+        holat: [{ k: "v", yol: "volume: malumot", qiymat: "eslatma.txt yozildi", belgi: "yangi" }],
+        izoh: "Volume — konteynerdan tashqarida, Docker boshqaradi.",
+      },
+      {
+        cmd: ["docker run --rm -v malumot:/data alpine cat /data/eslatma.txt"],
+        chiqish: "1-konteyner yozdi",
+        holat: [{ k: "v", yol: "volume: malumot", qiymat: "eslatma.txt — joyida", belgi: "yangi" }, { k: "c", yol: "1-konteyner", qiymat: "allaqachon o‘chgan (--rm)", belgi: "yoq" }],
+        izoh: "Boshqa konteyner o‘sha volume’ni uladi — ma’lumot saqlanib qolgan.",
+      },
+    ],
+  },
 }

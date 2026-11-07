@@ -41,7 +41,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - Nuxt — Docker hujjatida u uchun qo'llanma yo'q; Node.js va Next.js qo'llanmalaridagi tamoyillar unga ham taalluqli.
 - Serverni himoyalash (SSH, firewall, fail2ban) — **"Server xavfsizligi"** kitobida; Docker portlari va firewall bog'liqligi esa shu kitobning 5-bobida.
 
-> **Holat.** Qo'llanma yozilmoqda: 5/28 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 6/28 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -65,7 +65,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 | 03 | [Image'lar](03-imagelar.md) | Registry va Docker Hub; repozitoriy, teg, digest; qatlamlar (layers); `pull`, `images`, `image history`, `image inspect` | V | [GS Understanding image layers](https://docs.docker.com/get-started/docker-concepts/building-images/understanding-image-layers/) · [GS What is a registry](https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-a-registry/) · [Docker Hub](https://docs.docker.com/docker-hub/) |
 | 04 | [Konteynerlar bilan ishlash](04-konteynerlar.md) | `run` (`-d`, `--name`, `--rm`, `-it`), `ps`, `exec`, `stop`, `start`, `rm`; konteyner hayot sikli; standart qiymatlarni almashtirish: buyruq, muhit o'zgaruvchilari (`-e`, `--env-file`); loglar: `docker logs` — STDOUT va STDERR | V | [RF docker container run](https://docs.docker.com/reference/cli/docker/container/run/) · [EN Running containers](https://docs.docker.com/engine/containers/run/) · [GS Overriding container defaults](https://docs.docker.com/get-started/docker-concepts/running-containers/overriding-container-defaults/) · [EN Logging](https://docs.docker.com/engine/logging/) |
 | 05 | [Tarmoq, portlar va firewall](05-tarmoq-va-portlar.md) | Standart `bridge` tarmog'i va o'z tarmog'ingiz: konteynerlar bir-birini nom bilan faqat o'z (user-defined) tarmog'ida topadi; `-p` (va `127.0.0.1:` bilan cheklash); Docker ochgan port `ufw` qoidalarini chetlab o'tadi — `DOCKER-USER` zanjiri | V | [EN Networking overview](https://docs.docker.com/engine/network/) · [GS Publishing ports](https://docs.docker.com/get-started/docker-concepts/running-containers/publishing-ports/) · [EN Port publishing](https://docs.docker.com/engine/network/port-publishing/) · [EN Packet filtering and firewalls](https://docs.docker.com/engine/network/packet-filtering-firewalls/) |
-| 06 | Ma'lumot saqlash | Konteyner o'chsa ma'lumot yo'qoladi; volume, bind mount, tmpfs — qachon qaysi; `docker volume` | V | [GS Persisting container data](https://docs.docker.com/get-started/docker-concepts/running-containers/persisting-container-data/) · [GS Sharing local files](https://docs.docker.com/get-started/docker-concepts/running-containers/sharing-local-files/) · [EN Volumes](https://docs.docker.com/engine/storage/volumes/) · [EN Bind mounts](https://docs.docker.com/engine/storage/bind-mounts/) · [EN tmpfs](https://docs.docker.com/engine/storage/tmpfs/) |
+| 06 | [Ma'lumot saqlash](06-malumot-saqlash.md) | Konteyner o'chsa ma'lumot yo'qoladi; volume, bind mount, tmpfs — qachon qaysi; `docker volume` | V | [GS Persisting container data](https://docs.docker.com/get-started/docker-concepts/running-containers/persisting-container-data/) · [GS Sharing local files](https://docs.docker.com/get-started/docker-concepts/running-containers/sharing-local-files/) · [EN Volumes](https://docs.docker.com/engine/storage/volumes/) · [EN Bind mounts](https://docs.docker.com/engine/storage/bind-mounts/) · [EN tmpfs](https://docs.docker.com/engine/storage/tmpfs/) |
 
 ## II qism — Dockerfile (7–14)
 
