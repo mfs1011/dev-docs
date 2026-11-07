@@ -1308,4 +1308,40 @@ export const QADAMLI = {
       },
     ],
   },
+  // Docker 16-bob: frontend/backend tarmoqlari, internal: true (VPS, haqiqiy chiqishlar)
+  tarmoq: {
+    panel: 'proxy [frontend] · web [frontend, backend] · redis [backend, internal]',
+    qadamlar: [
+      {
+        cmd: ["docker compose exec proxy getent hosts web"],
+        chiqish: "172.19.0.2      web",
+        holat: [{ k: "a", yol: "proxy → web", qiymat: "frontend’da birga: topildi", belgi: "yangi" }],
+        izoh: "Umumiy tarmoqdagi servis nomi DNS orqali topiladi.",
+      },
+      {
+        cmd: ["docker compose exec proxy getent hosts redis; echo \"kod: $?\""],
+        chiqish: "kod: 2",
+        holat: [{ k: "a", yol: "proxy → web", qiymat: "topildi" }, { k: "b", yol: "proxy → redis", qiymat: "umumiy tarmoq yo‘q: nom topilmadi", belgi: "xato" }],
+        izoh: "proxy backend’da yo‘q — redis uning uchun mavjud emas.",
+      },
+      {
+        cmd: ["sleep 2; docker compose exec proxy curl -s http://web:3000/"],
+        chiqish: "Salom! Bu sahifa 1 marta ochildi.",
+        holat: [{ k: "b", yol: "proxy → redis", qiymat: "yopiq" }, { k: "c", yol: "proxy → web → redis", qiymat: "web ikkala tarmoqda: so‘rov yetdi", belgi: "yangi" }],
+        izoh: "Faqat web ikki dunyoni bog‘laydi.",
+      },
+      {
+        cmd: ["docker compose exec web wget -qO- -T 5 https://registry.npmjs.org/ > /dev/null && echo \"web: internet bor\""],
+        chiqish: "web: internet bor",
+        holat: [{ k: "d", yol: "web → internet", qiymat: "frontend oddiy tarmoq: chiqish bor", belgi: "yangi" }],
+        izoh: "web frontend orqali internetga chiqa oladi.",
+      },
+      {
+        cmd: ["docker compose exec redis wget -qO- -T 5 https://registry.npmjs.org/ > /dev/null; echo \"redis kod: $?\""],
+        chiqish: "wget: bad address 'registry.npmjs.org'\nredis kod: 1",
+        holat: [{ k: "e", yol: "redis → internet", qiymat: "backend internal: tashqi aloqa yo‘q", belgi: "xato" }],
+        izoh: "internal: true — bu tarmoqdan tashqariga yo‘l yo‘q, DNS ham tashqi nomlarni bermaydi.",
+      },
+    ],
+  },
 }

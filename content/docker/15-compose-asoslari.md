@@ -1,6 +1,6 @@
 # 15 — Compose asoslari
 
-[← Oldingi: Image hajmini kamaytirish](14-image-hajmi.md) · [Mundarija](README.md)
+[← Oldingi: Image hajmini kamaytirish](14-image-hajmi.md) · [Mundarija](README.md) · [Keyingi: Compose'da tarmoq →](16-compose-tarmoq.md)
 
 ## Tushuncha
 
