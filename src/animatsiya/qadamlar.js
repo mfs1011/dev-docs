@@ -394,4 +394,51 @@ export const QADAMLI = {
       },
     ],
   },
+
+  // 29-bob: SIGTERM va SIGKILL farqi
+  signal: {
+    panel: 'jarayon va tozalash',
+    qadamlar: [
+      {
+        cmd: ['/tmp/ilova.sh &', 'cat /tmp/ish.txt'],
+        chiqish: '[1] 178\nishlayapman',
+        holat: [
+          { k: 'p', yol: 'ilova (PID 178)', qiymat: 'ishlayapti (S)', belgi: 'yangi' },
+          { k: 'f', yol: '/tmp/ish.txt', qiymat: '"ishlayapman"', belgi: 'yangi' },
+          { k: 'd', yol: '/tmp/ish.pid', qiymat: '178', belgi: 'yangi' },
+        ],
+        izoh: 'Ilova ishga tushdi: o‘z PID’ini yozdi va fonda kutyapti.',
+      },
+      {
+        cmd: ['kill -TERM 178', 'cat /tmp/ish.txt'],
+        chiqish: '[1]+  Done                    /tmp/ilova.sh\ntozalash',
+        holat: [
+          { k: 'p', yol: 'ilova (PID 178)', qiymat: 'to‘xtadi (kod 0)', belgi: 'ochiq' },
+          { k: 'f', yol: '/tmp/ish.txt', qiymat: '"tozalash" — trap ishladi', belgi: 'yangi' },
+          { k: 'd', yol: '/tmp/ish.pid', belgi: 'yoq' },
+        ],
+        izoh: 'SIGTERM yetib bordi: ilova `trap` bilan tozalash kodini bajardi va xavfsiz chiqdi (graceful shutdown).',
+      },
+      {
+        cmd: ['/tmp/ilova.sh &'],
+        chiqish: '[1] 186',
+        holat: [
+          { k: 'p', yol: 'ilova (PID 186)', qiymat: 'qayta ishga tushdi', belgi: 'yangi' },
+          { k: 'f', yol: '/tmp/ish.txt', qiymat: '"ishlayapman"', belgi: 'yangi' },
+          { k: 'd', yol: '/tmp/ish.pid', qiymat: '186', belgi: 'yangi' },
+        ],
+        izoh: 'Ilova yana fonda ishga tushirildi.',
+      },
+      {
+        cmd: ['kill -KILL 186', 'cat /tmp/ish.txt', 'cat /tmp/ish.pid'],
+        chiqish: '[1]+  Killed                  /tmp/ilova.sh\nishlayapman\n186',
+        holat: [
+          { k: 'p', yol: 'ilova (PID 186)', qiymat: 'yadro darhol to‘xtatdi', belgi: 'xato' },
+          { k: 'f', yol: '/tmp/ish.txt', qiymat: '"ishlayapman" — O‘ZGARMADI', belgi: 'xato' },
+          { k: 'd', yol: '/tmp/ish.pid', qiymat: '186 — O‘CHIRILMADI', belgi: 'xato' },
+        ],
+        izoh: 'SIGKILL ni ushlab bo‘lmaydi: yadro ilovani darhol to‘xtatdi. Tozalash kodi ishlamadi, qoldiq fayllar qoldi.',
+      },
+    ],
+  },
 }
