@@ -1,6 +1,6 @@
 # 21 — PHP: Laravel va Symfony
 
-[← Oldingi: Tipik stack: Nginx + PHP-FPM + PostgreSQL + Redis](20-tipik-stack.md) · [Mundarija](README.md)
+[← Oldingi: Tipik stack: Nginx + PHP-FPM + PostgreSQL + Redis](20-tipik-stack.md) · [Mundarija](README.md) · [Keyingi: Node.js va Next.js →](22-node-va-nextjs.md)
 
 ## Tushuncha
 
