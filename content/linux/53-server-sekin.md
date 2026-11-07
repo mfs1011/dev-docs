@@ -1,6 +1,6 @@
 # 53 — Server sekin
 
-[← Oldingi: ⚑ Servis ishlamayapti](52-servis-ishlamayapti.md) · [Mundarija](README.md)
+[← Oldingi: ⚑ Servis ishlamayapti](52-servis-ishlamayapti.md) · [Mundarija](README.md) · [Keyingi: ⚑ Disk to'ldi →](54-disk-toldi.md)
 
 > ⚑ Bu qismdagi tekshiruv **tartibi** rasmiy hujjatlarda bitta joyda yozilmagan. Har buyruq rasmiy manbadan olingan, ketma-ketlik esa trenajor va VPS'da sinalgan amaliyot.
 

@@ -1053,4 +1053,41 @@ export const QADAMLI = {
       },
     ],
   },
+  // 54-bob: joy bor, lekin inode tugagan — df -h aldaydi, df -i va du --inodes haqiqatni ko'rsatadi
+  disk: {
+    keng: true,
+    panel: '/mnt/kichik: 4 MB, 64 inode',
+    qadamlar: [
+      {
+        cmd: ['touch /mnt/kichik/yana'],
+        chiqish: "touch: cannot touch '/mnt/kichik/yana': No space left on device",
+        holat: [{ k: 'j', yol: 'joy (df -h)', qiymat: '?' }, { k: 'i', yol: 'inode (df -i)', qiymat: '?' }, { k: 'x', yol: 'fayl yaratish', qiymat: 'No space left on device', belgi: 'xato' }],
+        izoh: 'Fayl yaratib bo‘lmayapti. Birinchi savol: nima tugagan?',
+      },
+      {
+        cmd: ['df -h /mnt/kichik'],
+        chiqish: 'Filesystem      Size  Used Avail Use% Mounted on\nsinov           4.0M     0  4.0M   0% /mnt/kichik',
+        holat: [{ k: 'j', yol: 'joy (df -h)', qiymat: '0% band — joy bor' }, { k: 'i', yol: 'inode (df -i)', qiymat: '?' }, { k: 'x', yol: 'fayl yaratish', qiymat: 'No space left on device', belgi: 'xato' }],
+        izoh: '`df -h` bo‘yicha disk bo‘m-bo‘sh. Xato esa “joy yo‘q” deydi.',
+      },
+      {
+        cmd: ['df -i /mnt/kichik'],
+        chiqish: 'Filesystem     Inodes IUsed IFree IUse% Mounted on\nsinov              64    64     0  100% /mnt/kichik',
+        holat: [{ k: 'j', yol: 'joy (df -h)', qiymat: '0% band' }, { k: 'i', yol: 'inode (df -i)', qiymat: '64/64 — 100%', belgi: 'xato' }, { k: 'x', yol: 'fayl yaratish', qiymat: 'inode yo‘q' }],
+        izoh: 'Sabab: inode’lar tugagan. Har fayl, bo‘sh bo‘lsa ham, bitta inode oladi.',
+      },
+      {
+        cmd: ['du --inodes -x /mnt/kichik | sort -n'],
+        chiqish: '63\t/mnt/kichik/kesh\n64\t/mnt/kichik',
+        holat: [{ k: 'k', yol: '/mnt/kichik/kesh', qiymat: '63 inode — aybdor', belgi: 'xato' }, { k: 'i', yol: 'inode (df -i)', qiymat: '100%' }],
+        izoh: '`du --inodes` qaysi papka inode yeganini ko‘rsatdi.',
+      },
+      {
+        cmd: ['rm -r /mnt/kichik/kesh', 'df -i /mnt/kichik'],
+        chiqish: 'Filesystem     Inodes IUsed IFree IUse% Mounted on\nsinov              64     1    63    2% /mnt/kichik',
+        holat: [{ k: 'k', yol: '/mnt/kichik/kesh', belgi: 'yoq' }, { k: 'i', yol: 'inode (df -i)', qiymat: '1/64 — 2%', belgi: 'yangi' }, { k: 'x', yol: 'fayl yaratish', qiymat: 'yana mumkin', belgi: 'yangi' }],
+        izoh: 'Mayda fayllar o‘chdi — inode’lar qaytdi.',
+      },
+    ],
+  },
 }

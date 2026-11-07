@@ -1973,6 +1973,51 @@ export const LINUX_MASHQLAR = [
       },
     ],
   },
+  {
+    id: '54-disk',
+    title: 'Disk to‘ldi',
+    bob: '/linux/54-disk-toldi',
+    intro: '`/mnt/m54` ga fayl yozib bo‘lmayapti: `No space left on device`. Lekin `df -h` joy bor deydi. Sababni topib, aybdor papkani aniqlang va tozalang.',
+    setup: `umount /mnt/m54 >/dev/null 2>&1 || true; mkdir -p /mnt/m54; mount -t tmpfs -o size=4M,nr_inodes=64 m54 /mnt/m54; head -c 1M /dev/zero > /mnt/m54/baza.dat; mkdir /mnt/m54/sessiyalar /mnt/m54/log; for i in $(seq 1 100); do touch /mnt/m54/sessiyalar/s$i 2>/dev/null || break; done`,
+    steps: [
+      {
+        cmd: 'echo test > /mnt/m54/log/yangi.txt',
+        text: '`/mnt/m54/log` ga fayl yozib ko‘ring.',
+        ran: /^echo\b.*>\s*\/mnt\/m54\//,
+        natija: '`No space left on device`.',
+      },
+      {
+        cmd: 'df -h /mnt/m54',
+        text: 'Joyni tekshiring.',
+        ran: /^df\s+-h\b.*\/mnt\/m54/,
+        natija: '`Use%` 25% — joy bor. Demak sabab boshqa.',
+      },
+      {
+        cmd: 'df -i /mnt/m54',
+        text: 'Inode’larni tekshiring.',
+        ran: /^df\s+-i\b.*\/mnt\/m54/,
+        natija: '`IUse%` 100% — inode’lar tugagan.',
+      },
+      {
+        cmd: 'du --inodes -x /mnt/m54 | sort -n',
+        text: 'Inode’larni qaysi papka yeganini toping.',
+        ran: /^du\b.*--inodes/,
+        natija: '`/mnt/m54/sessiyalar` — deyarli hamma inode shu yerda.',
+      },
+      {
+        cmd: 'rm -r /mnt/m54/sessiyalar',
+        text: 'Eski sessiya fayllarini o‘chiring.',
+        check: '[ ! -e /mnt/m54/sessiyalar ] && [ -f /mnt/m54/baza.dat ]',
+        natija: 'Inode’lar bo‘shadi; `baza.dat` joyida.',
+      },
+      {
+        cmd: 'echo test > /mnt/m54/log/yangi.txt',
+        text: 'Yana yozib ko‘ring.',
+        check: 'grep -qx test /mnt/m54/log/yangi.txt',
+        natija: 'Yozildi — muammo hal.',
+      },
+    ],
+  },
 ]
 
 /** VM ichida `source` qilinadigan skript: papka, setup va har prompt oldidan qadamlarni tekshiradigan funksiya */
