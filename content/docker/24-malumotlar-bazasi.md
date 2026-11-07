@@ -1,6 +1,6 @@
 # 24 — Ma'lumotlar bazasi konteynerda
 
-[← Oldingi: SPA: React, Vue, Angular](23-spa.md) · [Mundarija](README.md)
+[← Oldingi: SPA: React, Vue, Angular](23-spa.md) · [Mundarija](README.md) · [Keyingi: Registry va teglash →](25-registry.md)
 
 ## Tushuncha
 

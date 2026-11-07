@@ -42,7 +42,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - Nuxt — Docker hujjatida u uchun qo'llanma yo'q; Node.js va Next.js qo'llanmalaridagi tamoyillar unga ham taalluqli.
 - Serverni himoyalash (SSH, firewall, fail2ban) — **"Server xavfsizligi"** kitobida; Docker portlari va firewall bog'liqligi esa shu kitobning 5-bobida.
 
-> **Holat.** Qo'llanma yozilmoqda: 24/28 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 25/28 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -105,7 +105,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
-| 25 | Registry va teglash | Docker Hub va GitHub Container Registry (GHCR); `tag`, `push`; teg strategiyasi | V | [GS Build, tag, and publish](https://docs.docker.com/get-started/docker-concepts/building-images/build-tag-and-publish-an-image/) · [Docker Hub: Push images](https://docs.docker.com/docker-hub/repos/manage/hub-images/push/) · [Docker Hub: Tags](https://docs.docker.com/docker-hub/repos/manage/hub-images/tags/) · [GitHub: Container registry](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry) |
+| 25 | [Registry va teglash](25-registry.md) | Docker Hub va GitHub Container Registry (GHCR); `tag`, `push`; teg strategiyasi | V | [GS Build, tag, and publish](https://docs.docker.com/get-started/docker-concepts/building-images/build-tag-and-publish-an-image/) · [Docker Hub: Push images](https://docs.docker.com/docker-hub/repos/manage/hub-images/push/) · [Docker Hub: Tags](https://docs.docker.com/docker-hub/repos/manage/hub-images/tags/) · [GitHub: Container registry](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry) |
 | 26 | CI'da Docker | GitHub Actions: build, kesh, teg va label'lar, push; push'dan oldin test | — | [BD GitHub Actions](https://docs.docker.com/build/ci/github-actions/) · [BD GHA: Cache](https://docs.docker.com/build/ci/github-actions/cache/) · [BD GHA: Tags and labels](https://docs.docker.com/build/ci/github-actions/manage-tags-labels/) · [BD GHA: Test before push](https://docs.docker.com/build/ci/github-actions/test-before-push/) |
 | 27 | Serverga deploy | Bitta serverda Compose; restart policy; resurs cheklovlari; loglar va ularning hajmi; Compose production uchun | V | [CO Use Compose in production](https://docs.docker.com/compose/how-tos/production/) · [EN Start containers automatically](https://docs.docker.com/engine/containers/start-containers-automatically/) · [EN Resource constraints](https://docs.docker.com/engine/containers/resource_constraints/) · [EN Configure logging drivers](https://docs.docker.com/engine/logging/configure/) |
 | 28 | Muammolarni topish va tozalash | `inspect`, `logs`, `stats`, `exec`; disk joyi — `system df`, `prune`; daemon muammolari | V | [RF docker container inspect](https://docs.docker.com/reference/cli/docker/container/inspect/) · [RF docker container stats](https://docs.docker.com/reference/cli/docker/container/stats/) · [RF docker system df](https://docs.docker.com/reference/cli/docker/system/df/) · [EN Prune](https://docs.docker.com/engine/manage-resources/pruning/) · [EN Troubleshoot the daemon](https://docs.docker.com/engine/daemon/troubleshoot/) |
