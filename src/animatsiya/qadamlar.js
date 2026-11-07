@@ -884,4 +884,40 @@ export const QADAMLI = {
       },
     ],
   },
+  // 48-bob: set -e siz skript cd xatosidan keyin davom etib, boshqa papkadagi "eski" ni o'chiradi
+  'set-e': {
+    panel: 'eski papkalar',
+    qadamlar: [
+      {
+        cmd: ['mkdir eski'],
+        chiqish: '',
+        holat: [{ k: 'r', yol: '/root/eski', qiymat: 'yaratildi', belgi: 'yangi' }, { k: 's', yol: '/srv/ilova', qiymat: 'mavjud emas', belgi: 'yoq' }],
+        izoh: 'Joriy papkada `eski` bor. Skript esa `/srv/ilova/eski` ni tozalashi kerak.',
+      },
+      {
+        cmd: ['./tozala.sh'],
+        chiqish: "./tozala.sh: 2: cd: can't cd to /srv/ilova\ntozalandi",
+        holat: [{ k: 'r', yol: '/root/eski', qiymat: 'o‘chdi — noto‘g‘ri papka!', belgi: 'xato' }, { k: 's', yol: '/srv/ilova', qiymat: 'mavjud emas', belgi: 'yoq' }],
+        izoh: '`cd` yiqildi, lekin skript davom etdi: `rm -rf eski` joriy papkada bajarildi va oxirida `tozalandi` deb yolg‘on xabar berdi.',
+      },
+      {
+        cmd: ['ls -d eski'],
+        chiqish: "ls: cannot access 'eski': No such file or directory",
+        holat: [{ k: 'r', yol: '/root/eski', qiymat: 'yo‘q', belgi: 'xato' }],
+        izoh: 'Kerakli papka emas, boshqasi o‘chib ketdi.',
+      },
+      {
+        cmd: ['mkdir eski', "sed -i '2i set -e' tozala.sh", './tozala.sh; echo "kod: $?"'],
+        chiqish: "./tozala.sh: 3: cd: can't cd to /srv/ilova\nkod: 2",
+        holat: [{ k: 'r', yol: '/root/eski', qiymat: 'tegilmadi', belgi: 'yangi' }, { k: 's', yol: '/srv/ilova', qiymat: 'mavjud emas', belgi: 'yoq' }],
+        izoh: '`set -e` bilan qobiq birinchi xatoda chiqdi: `rm` gacha yetmadi, chiqish kodi — `cd` niki (2).',
+      },
+      {
+        cmd: ['ls -d eski'],
+        chiqish: 'eski',
+        holat: [{ k: 'r', yol: '/root/eski', qiymat: 'joyida', belgi: 'yangi' }],
+        izoh: 'Papka saqlanib qoldi.',
+      },
+    ],
+  },
 }

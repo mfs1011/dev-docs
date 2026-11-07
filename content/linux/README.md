@@ -62,7 +62,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - Veb-server va HTTPS — **"Nginx"** kitobida.
 - Konteynerlar, namespace va cgroup — **"Docker"** kitobida.
 
-> **Holat.** Qo'llanma yozilmoqda: 47/54 bob tayyor. Havolasi borlari — tayyor boblar. Har bobning "Amaliyot" bo'limida trenajordagi mashqqa havola bor.
+> **Holat.** Qo'llanma yozilmoqda: 48/54 bob tayyor. Havolasi borlari — tayyor boblar. Har bobning "Amaliyot" bo'limida trenajordagi mashqqa havola bor.
 
 ---
 
@@ -179,7 +179,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
-| 48 | Birinchi skript | Shebang, bajarish ruxsati; parametrlar (`$1`, `$@`, `$#`); `sh` (Debian'da dash) va `bash` farqi; `set -e`, `-u`, `-o pipefail` — foydasi va tuzoqlari | T | [DR 12.1.1–12.1.2](https://www.debian.org/doc/manuals/debian-reference/ch12.en.html#_posix_shell_compatibility) · [GNU Bash: Shell Scripts](https://www.gnu.org/software/bash/manual/bash.html#Shell-Scripts) · [GNU Bash: The Set Builtin](https://www.gnu.org/software/bash/manual/bash.html#The-Set-Builtin) |
+| 48 | [Birinchi skript](48-birinchi-skript.md) | Shebang, bajarish ruxsati; parametrlar (`$1`, `$@`, `$#`); `sh` (Debian'da dash) va `bash` farqi; `set -e`, `-u`, `-o pipefail` — foydasi va tuzoqlari | T | [DR 12.1.1–12.1.2](https://www.debian.org/doc/manuals/debian-reference/ch12.en.html#_posix_shell_compatibility) · [GNU Bash: Shell Scripts](https://www.gnu.org/software/bash/manual/bash.html#Shell-Scripts) · [GNU Bash: The Set Builtin](https://www.gnu.org/software/bash/manual/bash.html#The-Set-Builtin) |
 | 49 | Shart va sikl | `if`, `test`/`[ ]`/`[[ ]]`, `case`; `for`, `while read`; fayllarni xavfsiz aylanish | T | [DR 12.1.3–12.1.4](https://www.debian.org/doc/manuals/debian-reference/ch12.en.html#_shell_conditionals) · [GNU Bash: Conditional Constructs, Looping Constructs](https://www.gnu.org/software/bash/manual/bash.html#Conditional-Constructs) |
 | 50 | Funksiya va xatolar | Funksiya, `local`, `return`; chiqish kodlari; `trap` bilan vaqtinchalik fayllarni tozalash; `shellcheck` | T | [GNU Bash: Shell Functions](https://www.gnu.org/software/bash/manual/bash.html#Shell-Functions) · [GNU Bash: Bourne Shell Builtins (trap)](https://www.gnu.org/software/bash/manual/bash.html#Bourne-Shell-Builtins) · [DR 12.4](https://www.debian.org/doc/manuals/debian-reference/ch12.en.html#_static_code_analysis_tools) |
 | 51 | Amaliy: zaxira skripti | `tar` + siqish, sanali nom, eski nusxalarni o'chirish, systemd timer bilan har kuni ishga tushirish | T+V | [UB Backup with shell scripts](https://ubuntu.com/server/docs/how-to/backups/back-up-using-shell-scripts/) · [DR 10.1–10.2](https://www.debian.org/doc/manuals/debian-reference/ch10.en.html) · [DM tar(1)](https://manpages.debian.org/bookworm/tar/tar.1.en.html) |

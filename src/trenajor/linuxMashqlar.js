@@ -1672,6 +1672,69 @@ export const LINUX_MASHQLAR = [
       },
     ],
   },
+  {
+    id: '48-skript',
+    title: 'Birinchi skript',
+    bob: '/linux/48-birinchi-skript',
+    intro: 'Parametr oladigan `salom.sh` skriptini yozasiz, unga bajarish ruxsatini berasiz va ishga tushirasiz. Keyin `set -u` berilmagan parametrni qanday ushlashini ko‘rib, `${1:-mehmon}` bilan standart qiymat berasiz.',
+    setup: 'rm -f salom.sh',
+    steps: [
+      {
+        cmd: `printf '%s\\n' '#!/bin/sh' 'echo "Salom, $1!"' > salom.sh`,
+        text: 'Ikki qatorli `salom.sh` yarating: shebang `#!/bin/sh` va `echo "Salom, $1!"`.',
+        check: '[ "$(head -1 "$MASHQ/salom.sh")" = "#!/bin/sh" ] && grep -qF \'$1\' "$MASHQ/salom.sh"',
+        natija: 'Skript tayyor, lekin hali bajarish ruxsati yo‘q.',
+      },
+      {
+        cmd: './salom.sh Aziz',
+        text: 'Uni `./salom.sh Aziz` bilan ishga tushirib ko‘ring.',
+        ran: /^\.\/salom\.sh\b/,
+        natija: '`Permission denied`: faylda `x` ruxsati yo‘q.',
+      },
+      {
+        cmd: 'chmod +x salom.sh',
+        text: 'Bajarish ruxsatini bering.',
+        check: '[ -x "$MASHQ/salom.sh" ]',
+        natija: 'Endi `ls -l` da `-rwxr-xr-x`.',
+      },
+      {
+        cmd: './salom.sh Aziz',
+        text: 'Yana `./salom.sh Aziz`.',
+        ran: /^\.\/salom\.sh\s+\S/,
+        natija: '`Salom, Aziz!` — `$1` o‘rniga birinchi argument qo‘yildi.',
+      },
+      {
+        cmd: './salom.sh',
+        text: 'Endi argumentsiz ishga tushiring.',
+        ran: /^\.\/salom\.sh\s*$/,
+        natija: '`Salom, !` — berilmagan `$1` jimgina bo‘sh qatorga aylandi.',
+      },
+      {
+        cmd: "sed -i '2i set -u' salom.sh",
+        text: 'Skriptning 2-qatoriga `set -u` qo‘shing.',
+        check: '[ "$(sed -n 2p "$MASHQ/salom.sh")" = "set -u" ]',
+        natija: 'Endi berilmagan o‘zgaruvchi — xato.',
+      },
+      {
+        cmd: './salom.sh',
+        text: 'Argumentsiz yana ishga tushiring.',
+        ran: /^\.\/salom\.sh\s*$/,
+        natija: '`1: parameter not set` — skript xato bilan to‘xtadi.',
+      },
+      {
+        cmd: "sed -i 's/\\$1/${1:-mehmon}/' salom.sh",
+        text: '`$1` ni `${1:-mehmon}` ga almashtiring.',
+        check: 'grep -qF \'${1:-mehmon}\' "$MASHQ/salom.sh"',
+        natija: 'Argument berilmasa, `mehmon` olinadi.',
+      },
+      {
+        cmd: './salom.sh',
+        text: 'Argumentsiz oxirgi marta ishga tushiring.',
+        ran: /^\.\/salom\.sh\s*$/,
+        natija: '`Salom, mehmon!` — `set -u` bilan ham ishlaydi.',
+      },
+    ],
+  },
 ]
 
 /** VM ichida `source` qilinadigan skript: papka, setup va har prompt oldidan qadamlarni tekshiradigan funksiya */

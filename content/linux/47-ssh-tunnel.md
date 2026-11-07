@@ -1,6 +1,6 @@
 # 47 — SSH tunnel
 
-[← Oldingi: Fayl ko'chirish](46-fayl-kochirish.md) · [Mundarija](README.md)
+[← Oldingi: Fayl ko'chirish](46-fayl-kochirish.md) · [Mundarija](README.md) · [Keyingi: Birinchi skript →](48-birinchi-skript.md)
 
 ## Tushuncha
 
