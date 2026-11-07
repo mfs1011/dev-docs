@@ -1264,4 +1264,23 @@ export const QADAMLI = {
       },
     ],
   },
+  // Docker 09-bob: server.js o'zgarganda qaysi qatlamlar qayta quriladi — ikki tartib (VPS, haqiqiy chiqishlar)
+  kesh: {
+    keng: true,
+    panel: 'qatlamlar: server.js o‘zgardi',
+    qadamlar: [
+      {
+        cmd: ["echo '// 1-ozgarish' >> server.js", "docker build --progress=plain -t kesh:yomon -f Dockerfile.yomon . 2>&1 | grep -E '^#[0-9]+ (\\[[0-9]/[0-9]\\]|CACHED|DONE)|transferring context:'"],
+        chiqish: "#1 DONE 0.0s\n#2 DONE 0.1s\n#3 transferring context:\n#3 transferring context: 2B done\n#3 DONE 0.0s\n#4 [1/4] FROM docker.io/library/node:26-alpine@sha256:8996bb5821d62a8fd9bb27c1cb07462f3fdce6e47d640c6a881ead0b064ce216\n#4 DONE 0.1s\n#5 transferring context: 39.65kB 0.1s done\n#5 DONE 0.1s\n#6 [2/4] WORKDIR /app\n#6 CACHED\n#7 [3/4] COPY . .\n#7 DONE 0.3s\n#8 [4/4] RUN npm ci --omit=dev\n#8 DONE 6.4s\n#9 DONE 1.6s",
+        holat: [{ k: "a", yol: "WORKDIR /app", qiymat: "CACHED" }, { k: "b", yol: "COPY . .", qiymat: "server.js o‘zgardi → qayta", belgi: "xato" }, { k: "c", yol: "RUN npm ci", qiymat: "oldingisi buzildi → qayta (6.4s)", belgi: "xato" }],
+        izoh: "Yomon tartib: kod bilan birga bog‘liqliklar ham har safar qayta o‘rnatiladi.",
+      },
+      {
+        cmd: ["echo '// 2-ozgarish' >> server.js", "docker build --progress=plain -t kesh:yaxshi . 2>&1 | grep -E '^#[0-9]+ (\\[[0-9]/[0-9]\\]|CACHED|DONE)|transferring context:'"],
+        chiqish: "#1 DONE 0.0s\n#2 DONE 0.0s\n#3 transferring context: 2B done\n#3 DONE 0.0s\n#4 transferring context: 39.66kB 0.1s done\n#4 DONE 0.1s\n#5 [1/5] FROM docker.io/library/node:26-alpine@sha256:8996bb5821d62a8fd9bb27c1cb07462f3fdce6e47d640c6a881ead0b064ce216\n#5 DONE 0.1s\n#6 [2/5] WORKDIR /app\n#6 CACHED\n#7 [3/5] COPY package.json package-lock.json ./\n#7 CACHED\n#8 [4/5] RUN npm ci --omit=dev\n#8 CACHED\n#9 [5/5] COPY . .\n#9 DONE 0.4s\n#10 DONE 0.7s",
+        holat: [{ k: "a", yol: "WORKDIR /app", qiymat: "CACHED" }, { k: "p", yol: "COPY package*.json", qiymat: "o‘zgarmagan → CACHED", belgi: "yangi" }, { k: "c", yol: "RUN npm ci", qiymat: "CACHED", belgi: "yangi" }, { k: "b", yol: "COPY . .", qiymat: "server.js o‘zgardi → qayta (0.4s)", belgi: "ochiq" }],
+        izoh: "Yaxshi tartib: faqat oxirgi qatlam qayta qurildi, npm ci keshdan.",
+      },
+    ],
+  },
 }

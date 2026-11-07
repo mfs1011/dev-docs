@@ -1,6 +1,6 @@
 # 08 — CMD va ENTRYPOINT
 
-[← Oldingi: Birinchi Dockerfile](07-birinchi-dockerfile.md) · [Mundarija](README.md)
+[← Oldingi: Birinchi Dockerfile](07-birinchi-dockerfile.md) · [Mundarija](README.md) · [Keyingi: Build kesh →](09-build-kesh.md)
 
 ## Tushuncha
 
