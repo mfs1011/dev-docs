@@ -150,6 +150,10 @@ function enhanceTerminalBlocks(container) {
       if (label) { label.textContent = 'VPS · Ubuntu 26.04'; label.classList.add('env-ubuntu') }
       continue
     }
+    if (block.dataset.env === 'tashqi') {
+      if (label) { label.textContent = 'Tashqi kompyuter · macOS'; label.classList.add('env-tashqi') }
+      continue
+    }
     const buyruqlar = buyruqlarniOl(block.querySelector('code')?.textContent ?? '')
     if (!buyruqlar.length) continue
     if (label) { label.textContent = 'Trenajor · Debian 12'; label.classList.add('env-debian') }
