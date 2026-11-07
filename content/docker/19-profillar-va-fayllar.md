@@ -1,6 +1,6 @@
 # 19 — Profillar va bir nechta fayl
 
-[← Oldingi: Lokal ishlab chiqish muhiti](18-lokal-muhit.md) · [Mundarija](README.md)
+[← Oldingi: Lokal ishlab chiqish muhiti](18-lokal-muhit.md) · [Mundarija](README.md) · [Keyingi: Tipik stack: Nginx + PHP-FPM + PostgreSQL + Redis →](20-tipik-stack.md)
 
 ## Tushuncha
 
