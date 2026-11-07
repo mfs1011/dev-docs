@@ -1,6 +1,6 @@
 # 12 — Xavfsiz va to'g'ri image
 
-[← Oldingi: Base image tanlash](11-base-image.md) · [Mundarija](README.md)
+[← Oldingi: Base image tanlash](11-base-image.md) · [Mundarija](README.md) · [Keyingi: BuildKit imkoniyatlari →](13-buildkit.md)
 
 ## Tushuncha
 

@@ -169,7 +169,7 @@ $ docker build --progress=plain -t kesh:yaxshi . 2>&1 | grep 'transferring conte
 - Image'ga `Dockerfile` va `Dockerfile.yomon` ham tushib qolgan — ular ilovaga kerak emas.
 - Kontekst — 2.38MB: serverdagi `node_modules` ham builder'ga yuborildi, keyin `COPY . .` uni image'dagi `npm ci` o'rnatganining **ustiga** yozdi.
 
-(Kontekst hajmini ko'rish uchun avval build keshini tozaladik — `docker builder prune -af`. Kuzatildi: keshli qayta build'larda `transferring context` atigi 39kB ko'rsatgan edi, kesh tozalangandan keyin — 2.38MB.)
+(Kontekst hajmini ko'rish uchun avval build keshini tozaladik — `docker builder prune -af`. Docker hujjati (BuildKit): BuildKit build'lar orasida kontekstdagi faqat **o'zgargan** fayllarni uzatadi — shuning uchun keshli qayta build'larda `transferring context` atigi 39kB edi, kesh tozalangandan keyin — 2.38MB.)
 
 Docker hujjati (Build context): `.dockerignore` fayli kontekstdan fayl va papkalarni chiqarib tashlaydi — keraksiz narsa builder'ga yuborilmaydi va build tezlashadi. U `.gitignore` ga o'xshash ishlaydi va kontekstning barcha ichki papkalariga ta'sir qiladi:
 
@@ -241,5 +241,5 @@ Savollar:
 - [Build cache invalidation](https://docs.docker.com/build/cache/invalidation/)
 - [Optimize cache usage in builds](https://docs.docker.com/build/cache/optimize/) — qatlamlar tartibi, kontekstni kichik tutish
 - [Build context: .dockerignore](https://docs.docker.com/build/concepts/context/#dockerignore-files) — sintaksis, Dockerfile'ni chiqarib tashlash
-- [docker builder prune](https://docs.docker.com/reference/cli/docker/builder/prune/)
+- [docker builder prune](https://docs.docker.com/reference/cli/docker/builder/prune/) · [BuildKit](https://docs.docker.com/build/buildkit/) — kontekstni qisman uzatish
 - [npm ci](https://docs.npmjs.com/cli/v11/commands/npm-ci) — lock fayl bo'yicha o'rnatish
