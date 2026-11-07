@@ -1,6 +1,6 @@
 # 10 — Multi-stage build
 
-[← Oldingi: Build kesh](09-build-kesh.md) · [Mundarija](README.md)
+[← Oldingi: Build kesh](09-build-kesh.md) · [Mundarija](README.md) · [Keyingi: Base image tanlash →](11-base-image.md)
 
 ## Tushuncha
 
