@@ -1040,6 +1040,45 @@ export const LINUX_MASHQLAR = [
       },
     ],
   },
+  {
+    id: '29-signal',
+    title: 'Jarayonni to‘xtatish',
+    bob: '/linux/29-signallar',
+    intro: 'Fondagi jarayonlarni `pgrep` bilan topasiz, `pkill` va `kill` bilan to‘xtatasiz hamda `trap` bilan xavfsiz chiqishni (graceful shutdown) tekshirasiz.',
+    setup: 'pkill -x sleep 2>/dev/null || true\npkill -f ishchi.sh 2>/dev/null || true\nprintf \'#!/bin/sh\\necho $$ > ish.pid; trap "echo tozalash > tozalash.txt; rm -f ish.pid; exit 0" TERM\\ntail -f /dev/null &\\nwait $!\\n\' > ishchi.sh && chmod +x ishchi.sh\n./ishchi.sh </dev/null >/dev/null 2>&1 &\nsleep 500 </dev/null >/dev/null 2>&1 &',
+    steps: [
+      {
+        cmd: 'pgrep -a sleep',
+        text: 'Fondagi `sleep` jarayonining PID va buyruq qatorini ko‘ring.',
+        ran: /^pgrep\s+.*sleep/,
+        natija: '`pgrep -a` PID bilan birga to‘liq buyruq qatorini chiqardi.',
+      },
+      {
+        cmd: 'pkill -x sleep',
+        text: '`sleep` jarayonini nomi bo‘yicha to‘xtating (`-x` faqat aniq mos nomga ta’sir qiladi).',
+        check: '! pgrep -x sleep',
+        natija: '`pkill -x` faqat aniq nomli jarayonga SIGTERM yubordi va uni to‘xtatdi.',
+      },
+      {
+        cmd: 'pgrep -a -f ishchi',
+        text: 'Mashq papkasidagi `ishchi.sh` jarayonini toping (`-f` buyruq qatoridan qidiradi).',
+        ran: /^pgrep\s+.*ishchi/,
+        natija: '`ishchi.sh` topildi. U o‘z PID’ini `ish.pid` fayliga yozgan va SIGTERM kutyapti.',
+      },
+      {
+        cmd: 'kill -TERM $(cat ish.pid)',
+        text: '`ishchi.sh` ga `kill -TERM` signali yuboring.',
+        check: '! pgrep -f ishchi.sh',
+        natija: '`kill` SIGTERM yubordi. Skript signalni qabul qilib, o‘z ishini yakunladi.',
+      },
+      {
+        cmd: 'cat tozalash.txt',
+        text: 'Skript `trap` orqali tozalash bajarganini tekshiring.',
+        ran: /^cat\s+.*tozalash\.txt/,
+        natija: '`tozalash` — SIGTERM yetib borganda skript `trap` dagi tozalash kodini bajardi va tizimdan toza chiqdi.',
+      },
+    ],
+  },
 ]
 
 /** VM ichida `source` qilinadigan skript: papka, setup va har prompt oldidan qadamlarni tekshiradigan funksiya */
