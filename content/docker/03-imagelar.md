@@ -1,6 +1,6 @@
 # 03 — Image'lar
 
-[← Oldingi: O'rnatish](02-ornatish.md) · [Mundarija](README.md)
+[← Oldingi: O'rnatish](02-ornatish.md) · [Mundarija](README.md) · [Keyingi: Konteynerlar bilan ishlash →](04-konteynerlar.md)
 
 ## Tushuncha
 

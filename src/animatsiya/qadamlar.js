@@ -1126,4 +1126,46 @@ export const QADAMLI = {
       },
     ],
   },
+  // Docker 04-bob: konteyner hayot sikli (VPS, haqiqiy chiqishlar)
+  hayot: {
+    panel: 'konteyner holati (docker ps -a)',
+    qadamlar: [
+      {
+        cmd: ["docker container create --name bosh alpine echo salom", "docker ps -a --filter name=bosh --format '{{.Names}} {{.Status}}'"],
+        chiqish: "6593929c9695f91b79514bf719075092806ffa47797faa55bd310909fd9fdf6c\nbosh Exited (0) Less than a second ago",
+        holat: [{ k: "h", yol: "bosh", qiymat: "Created — yaratildi, ishlamayapti", belgi: "ochiq" }],
+        izoh: "`create` — faqat yaratish. Fayl tizimi tayyor, jarayon yo‘q.",
+      },
+      {
+        cmd: ["docker start -a bosh", "docker ps -a --filter name=bosh --format '{{.Names}} {{.Status}}'"],
+        chiqish: "salom\nbosh Exited (0) Less than a second ago",
+        holat: [{ k: "h", yol: "bosh", qiymat: "Exited (0) — buyruq tugadi" }],
+        izoh: "`start` jarayonni ishga tushirdi; `echo` tugadi — konteyner ham to‘xtadi. Kod 0 — muvaffaqiyat.",
+      },
+      {
+        cmd: ["time docker stop uxla", "docker ps -a --filter name=uxla --format \"{{.Names}} {{.Status}}\""],
+        chiqish: "uxla\n\nreal\t0m10.295s\nuser\t0m0.019s\nsys\t0m0.017s\nuxla Exited (137) Less than a second ago",
+        holat: [{ k: "h", yol: "uxla", qiymat: "Exited (137) — SIGKILL bilan", belgi: "xato" }],
+        izoh: "`sleep` SIGTERM’ga javob bermadi — 10 soniyadan keyin SIGKILL (8-bob).",
+      },
+      {
+        cmd: ["docker start uxla", "docker ps --filter name=uxla --format \"{{.Names}} {{.Status}}\""],
+        chiqish: "uxla\nuxla Up Less than a second",
+        holat: [{ k: "h", yol: "uxla", qiymat: "Up — o‘sha konteyner qayta ishlayapti", belgi: "yangi" }],
+        izoh: "`start` yangi konteyner yaratmaydi — eskisini qayta ishga tushiradi.",
+      },
+      {
+        cmd: ["docker rm uxla"],
+        chiqish: "Error response from daemon: cannot remove container \"uxla\": container is running: stop the container before removing or force remove",
+        holat: [{ k: "h", yol: "uxla", qiymat: "Up — o‘chirilmadi", belgi: "xato" }],
+        izoh: "Ishlayotgan konteynerni oddiy `rm` o‘chirmaydi.",
+      },
+      {
+        cmd: ["docker rm -f uxla"],
+        chiqish: "uxla",
+        holat: [{ k: "h", yol: "uxla", qiymat: "o‘chirildi", belgi: "yoq" }],
+        izoh: "`-f` — majburan: to‘xtatib, o‘chiradi.",
+      },
+    ],
+  },
 }
