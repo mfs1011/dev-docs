@@ -1090,4 +1090,40 @@ export const QADAMLI = {
       },
     ],
   },
+  // Docker 01-bob: docker run ichida nima bo'ladi — Docker hujjati ("What is Docker?") dagi 6 qadam; buyruq bajarilmagan, chiqish yo'q
+  'docker-run': {
+    panel: 'docker run -i -t ubuntu /bin/bash',
+    qadamlar: [
+      {
+        cmd: ['docker run -i -t ubuntu /bin/bash'],
+        holat: [{ k: 'i', yol: 'image: ubuntu', qiymat: 'registry’dan yuklandi (docker pull kabi)', belgi: 'yangi' }],
+        izoh: '1. Image kompyuterda bo‘lmasa, Docker uni sozlangan registry’dan yuklaydi.',
+      },
+      {
+        cmd: ['docker run -i -t ubuntu /bin/bash'],
+        holat: [{ k: 'i', yol: 'image: ubuntu', qiymat: 'faqat o‘qish uchun' }, { k: 'c', yol: 'konteyner', qiymat: 'yaratildi (docker container create kabi)', belgi: 'yangi' }],
+        izoh: '2. Image’dan yangi konteyner yaratiladi.',
+      },
+      {
+        cmd: ['docker run -i -t ubuntu /bin/bash'],
+        holat: [{ k: 'i', yol: 'image: ubuntu', qiymat: 'faqat o‘qish uchun' }, { k: 'c', yol: 'konteyner', qiymat: 'yaratildi' }, { k: 'f', yol: 'yoziladigan qatlam', qiymat: 'konteyner o‘zgarishlari shu yerga', belgi: 'yangi' }],
+        izoh: '3. Konteynerga oxirgi qatlam sifatida yoziladigan fayl tizimi ajratiladi — image o‘zgarmaydi.',
+      },
+      {
+        cmd: ['docker run -i -t ubuntu /bin/bash'],
+        holat: [{ k: 'c', yol: 'konteyner', qiymat: 'yaratildi' }, { k: 'f', yol: 'yoziladigan qatlam', qiymat: 'tayyor' }, { k: 'n', yol: 'tarmoq', qiymat: 'standart tarmoqqa ulandi, IP berildi', belgi: 'yangi' }],
+        izoh: '4. Tarmoq interfeysi yaratiladi: konteyner standart tarmoqqa ulanadi va IP oladi.',
+      },
+      {
+        cmd: ['docker run -i -t ubuntu /bin/bash'],
+        holat: [{ k: 'c', yol: 'konteyner', qiymat: 'ishlayapti: /bin/bash', belgi: 'yangi' }, { k: 't', yol: 'terminal (-i -t)', qiymat: 'klaviatura konteynerga ulangan', belgi: 'yangi' }],
+        izoh: '5. Konteyner ishga tushadi va /bin/bash bajariladi; -i va -t tufayli u terminalingizga ulangan.',
+      },
+      {
+        cmd: ['exit'],
+        holat: [{ k: 'c', yol: 'konteyner', qiymat: 'to‘xtadi, lekin o‘chirilmadi', belgi: 'ochiq' }, { k: 'i', yol: 'image: ubuntu', qiymat: 'o‘zgarmagan' }],
+        izoh: '6. /bin/bash tugadi — konteyner to‘xtadi, lekin o‘chirilmadi: uni qayta ishga tushirish yoki o‘chirish mumkin.',
+      },
+    ],
+  },
 }

@@ -42,7 +42,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - Nuxt — Docker hujjatida u uchun qo'llanma yo'q; Node.js va Next.js qo'llanmalaridagi tamoyillar unga ham taalluqli.
 - Serverni himoyalash (SSH, firewall, fail2ban) — **"Server xavfsizligi"** kitobida; Docker portlari va firewall bog'liqligi esa shu kitobning 5-bobida.
 
-> **Holat.** Qo'llanma tayyorlanmoqda — quyida rejalashtirilgan mundarija.
+> **Holat.** Qo'llanma yozilmoqda: 1/28 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -61,7 +61,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
-| 01 | Konteyner nima | Konteyner va virtual mashina farqi; image, konteyner, registry; Docker arxitekturasi: klient, daemon (`dockerd`), registry | — | [GS Docker overview](https://docs.docker.com/get-started/docker-overview/) · [GS What is a container](https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-a-container/) · [GS What is an image](https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-an-image/) · [GS What is a registry](https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-a-registry/) |
+| 01 | [Konteyner nima](01-konteyner-nima.md) | Konteyner va virtual mashina farqi; image, konteyner, registry; Docker arxitekturasi: klient, daemon (`dockerd`), registry | — | [GS Docker overview](https://docs.docker.com/get-started/docker-overview/) · [GS What is a container](https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-a-container/) · [GS What is an image](https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-an-image/) · [GS What is a registry](https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-a-registry/) |
 | 02 | O'rnatish | macOS'da Docker Desktop; Ubuntu'da Docker Engine (rasmiy apt repozitoriy); o'rnatishdan keyin: `docker` guruhi va u root huquqiga teng ekani; birinchi `docker run hello-world`; `docker version`, `docker info` | M+V | [Install Desktop on Mac](https://docs.docker.com/desktop/setup/install/mac-install/) · [EN Install on Ubuntu](https://docs.docker.com/engine/install/ubuntu/) · [EN Linux post-installation](https://docs.docker.com/engine/install/linux-postinstall/) |
 | 03 | Image'lar | Registry va Docker Hub; repozitoriy, teg, digest; qatlamlar (layers); `pull`, `images`, `image history`, `image inspect` | M | [GS Understanding image layers](https://docs.docker.com/get-started/docker-concepts/building-images/understanding-image-layers/) · [GS What is a registry](https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-a-registry/) · [Docker Hub](https://docs.docker.com/docker-hub/) |
 | 04 | Konteynerlar bilan ishlash | `run` (`-d`, `--name`, `--rm`, `-it`), `ps`, `logs`, `exec`, `stop`, `start`, `rm`; konteyner hayot sikli; standart qiymatlarni almashtirish | M | [RF docker container run](https://docs.docker.com/reference/cli/docker/container/run/) · [EN Running containers](https://docs.docker.com/engine/containers/run/) · [GS Overriding container defaults](https://docs.docker.com/get-started/docker-concepts/running-containers/overriding-container-defaults/) |
