@@ -981,7 +981,7 @@ export const QADAMLI = {
     ],
   },
   // 52-bob: bir servis — besh xil buzilish; status kodi bir xil bo'lishi mumkin, sabab jurnalda
-  servis: {
+  'servis-xato': {
     panel: 'ilova.service: kod → sabab',
     qadamlar: [
       {

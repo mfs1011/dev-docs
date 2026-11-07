@@ -241,7 +241,7 @@ Unit ilova.service has a bad unit file setting.
 
 Unit faylini o'zgartirgandan keyin `daemon-reload` dan oldin `verify` qilish odat bo'lsin.
 
-<div data-animatsiya="qadamli" data-nom="servis"></div>
+<div data-animatsiya="qadamli" data-nom="servis-xato"></div>
 
 Tozalash:
 
