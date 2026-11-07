@@ -92,7 +92,7 @@ node linux-trenajor/test/mashqlar.mjs          # barcha mashqlarni brauzerda tek
 ### Trenajor cheklovlari (boblarda aytilgan)
 
 - Internet yo'q: `apt update/install` ishlamaydi (24, 26, 27-boblar VPS'da).
-- `/usr/share/doc`, man tarjimalari o'rnatilmagan; `perl` yo'q (`deluser --remove-home` ishlamaydi).
+- `/usr/share/doc`, man tarjimalari o'rnatilmagan; to'liq `perl` paketi yo'q, faqat `perl-base` (`deluser --remove-home` ishlamaydi, `perl -e` ishlaydi).
 - 32-bitli (i386).
 
 ## Sinov VPS

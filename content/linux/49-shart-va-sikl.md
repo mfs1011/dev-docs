@@ -191,7 +191,7 @@ qadam 2
 qadam 3
 ```
 
-Sikl va 48-bobdagi `${o'zgaruvchi%naqsh}` (oxiridan eng qisqa mosni olib tashlash, Debian Reference 12.1.2) birga — fayllarni ommaviy qayta nomlash:
+Sikl va `${o'zgaruvchi%naqsh}` (Debian Reference 12.1.2: o'zgaruvchi qiymatining oxiridan naqshga mos eng qisqa qismni olib tashlash; `#` — xuddi shu, boshidan) birga — fayllarni ommaviy qayta nomlash:
 
 ```text
 $ for f in *.log; do mv -- "$f" "${f%.log}.txt"; done

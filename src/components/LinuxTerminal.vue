@@ -11,6 +11,7 @@ import Terminal from '@/trenajor/Terminal.vue'
 import { symlinkTuzat } from '../../linux-trenajor/scripts/v86-tuzat.mjs'
 import { bajarildi, boshqaruv, terminal, terminalniOch } from '@/trenajor/linuxTerminal'
 import { LINUX_MASHQLAR, mashqSkripti } from '@/trenajor/linuxMashqlar'
+import { linuxSuggest } from '@/trenajor/linuxMaslahat'
 
 const props = defineProps({
   /** Linux kitobi sahifasidami — boshqa kitobda panel yashirinadi va VM to'xtatiladi */
@@ -240,7 +241,7 @@ onBeforeUnmount(() => {
         </header>
         <!-- g'ildirak terminalni suradi (xterm o'zi), sahifaga o'tib ketmasin — chegaraga yetganda ham -->
         <div v-if="terminal.faol" class="lt-body" @wheel.prevent>
-            <Terminal ref="term" @send="send" @prompt="onPrompt" @holat="onHolat" />
+            <Terminal ref="term" :suggest="linuxSuggest" @send="send" @prompt="onPrompt" @holat="onHolat" />
             <div v-if="!tayyor" class="lt-boot">
                 <div class="lt-spin" />
                 <p>Debian yuklanmoqda…</p>

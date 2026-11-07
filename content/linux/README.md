@@ -252,4 +252,12 @@ Qiyin joylarga animatsiya qo'yilgan, jami 45 ta. Ko'pchiligi qadamli: buyruq, un
 
 Trenajorga boblar uchun kerakli paketlar qo'shilgan: `cron` (38-bob), `lsof` (32), `tmux` (30), `vim-tiny` (16), `acl` (08), `neofetch`. Trenajorda tarmoq yo'q, shuning uchun `dig` (42-bob) va boshqa tarmoq mavzulari VPS'da sinaladi.
 
-Trenajor terminali hozircha Git trenajorining buyruq tavsiyalaridan foydalanadi. Ular Linux buyruqlariga almashtiriladi.
+Trenajor terminali yozayotganingizga qarab xira maslahat ko'rsatadi: buyruq nomi va uning qisqa izohi, `systemctl` va `apt` uchun esa qism buyruqlari (`status`, `restart`, `install`, …). Maslahatni Tab bilan tanlaysiz. Ro'yxatda faqat shu kitobdagi va trenajorda haqiqatan o'rnatilgan buyruqlar bor.
+
+Trenajorning cheklovlari (boblarda ham aytilgan):
+
+- Internet yo'q: `apt update`/`install` ishlamaydi — bunday boblar VPS'da (24, 26, 27).
+- 32-bitli (i386), 256 MB xotira, bitta CPU, swap yo'q.
+- Fayl tizimi brauzerdagi 9p: disk yuklamasi (`wa`, `bi/bo`) ko'rinmaydi va diskni to'ldirib bo'lmaydi (53, 54-boblar).
+- `/usr/share/doc` va man tarjimalari o'rnatilmagan; to'liq `perl` paketi yo'q (faqat `perl-base`), shuning uchun `deluser --remove-home` ishlamaydi.
+- Hech narsa saqlanmaydi: sahifa yangilansa yoki "↺ Qayta boshlash" bosilsa, trenajor toza holatdan boshlanadi.
