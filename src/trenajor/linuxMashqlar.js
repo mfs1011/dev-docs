@@ -1876,6 +1876,148 @@ export const LINUX_MASHQLAR = [
       },
     ],
   },
+  {
+    id: '52-servis',
+    title: 'Servis ishlamayapti',
+    bob: '/linux/52-servis-ishlamayapti',
+    intro: '`ilova` servisi 8081-portda `salom` deb javob berishi kerak, lekin ishlamayapti. Sababni `status` va jurnaldan topib tuzatasiz — keyin yana bitta sabab chiqadi.',
+    setup: `id ilova >/dev/null 2>&1 || adduser --system --group --no-create-home ilova >/dev/null 2>&1 || true; mkdir -p /opt/ilova; printf '%s\\n' '#!/bin/sh' 'set -eu' '. /etc/ilova.conf' 'echo "port: $PORT"' 'exec systemd-socket-activate -l "$PORT" -a --inetd /opt/ilova/javob.sh' > /opt/ilova/ishga.sh; printf '%s\\n' '#!/bin/sh' 'echo salom' > /opt/ilova/javob.sh; chmod 644 /opt/ilova/ishga.sh; chmod 755 /opt/ilova/javob.sh; echo PORT=8081 > /etc/ilova.conf; chmod 600 /etc/ilova.conf; printf '%s\\n' '[Unit]' 'Description=Sinov ilovasi (mashq)' '[Service]' 'User=ilova' 'ExecStart=/opt/ilova/ishga.sh' > /etc/systemd/system/ilova.service; systemctl daemon-reload; systemctl reset-failed ilova >/dev/null 2>&1 || true; systemctl restart ilova || true`,
+    steps: [
+      {
+        cmd: 'systemctl status ilova --no-pager -n 0',
+        text: 'Servis holatini ko‘ring.',
+        ran: /^systemctl\s+status\s+ilova/,
+        natija: '`failed`, `status=203/EXEC`: jarayon ishga tushmadi. Sababi — jurnalda.',
+      },
+      {
+        cmd: 'journalctl -u ilova -n 3 --no-pager -o cat',
+        text: 'Servis jurnalining oxirgi qatorlarini o‘qing.',
+        ran: /^journalctl\b.*-u\s*ilova/,
+        natija: '`Permission denied`: `ishga.sh` da bajarish ruxsati yo‘q.',
+      },
+      {
+        cmd: 'chmod 755 /opt/ilova/ishga.sh',
+        text: 'Skriptga bajarish ruxsatini bering.',
+        check: '[ -x /opt/ilova/ishga.sh ]',
+        natija: 'Birinchi sabab tuzatildi.',
+      },
+      {
+        cmd: 'systemctl restart ilova; journalctl -u ilova -n 3 --no-pager -o cat',
+        text: 'Qayta ishga tushirib, jurnalga yana qarang.',
+        ran: /^systemctl\s+restart\s+ilova\b.*journalctl/,
+        natija: '`cannot open /etc/ilova.conf: Permission denied` — servis `ilova` nomidan ishlaydi, fayl esa faqat root uchun.',
+      },
+      {
+        cmd: 'chmod 644 /etc/ilova.conf',
+        text: 'Sozlama faylini o‘qiladigan qiling.',
+        check: '[ "$(stat -c %a /etc/ilova.conf)" = 644 ] || { [ "$(stat -c %a /etc/ilova.conf)" = 640 ] && [ "$(stat -c %G /etc/ilova.conf)" = ilova ]; }',
+        natija: 'Endi `ilova` faylni o‘qiy oladi.',
+      },
+      {
+        cmd: 'systemctl restart ilova',
+        text: 'Servisni qayta ishga tushiring.',
+        check: 'pgrep -f "systemd-socket-activate -l 8081"',
+        sinov: ['systemctl restart ilova', 'sleep 1'],
+        natija: 'Servis ishlayapti, 8081 tinglanmoqda.',
+      },
+      {
+        cmd: 'exec 3<>/dev/tcp/127.0.0.1/8081; cat <&3; exec 3<&-',
+        text: 'Portga ulanib, javobni tekshiring.',
+        ran: /\/dev\/tcp\/127\.0\.0\.1\/8081/,
+        natija: '`salom` — servis tuzaldi.',
+      },
+    ],
+  },
+  {
+    id: '53-sekin',
+    title: 'Server sekin',
+    bob: '/linux/53-server-sekin',
+    intro: 'Trenajor sekinlashdi: nimadir CPU’ni yeb qo‘ygan. `vmstat` va bosimdan belgini toping, `top` bilan aybdor jarayonni, `systemctl status PID` bilan uning servisini aniqlang va to‘xtating.',
+    setup: `systemctl stop hisobot53 >/dev/null 2>&1 || true; systemctl reset-failed hisobot53 >/dev/null 2>&1 || true; systemd-run --unit=hisobot53 --quiet -p Description="Kunlik hisobot generatori" sh -c 'while :; do :; done'`,
+    steps: [
+      {
+        cmd: 'vmstat 2 3',
+        text: '`vmstat` bilan umumiy holatni ko‘ring (birinchi qatorni hisobga olmang).',
+        ran: /^vmstat\b/,
+        natija: '`r` 1 dan katta, `id` 0 ga yaqin — CPU band.',
+      },
+      {
+        cmd: 'cat /proc/pressure/cpu',
+        text: 'CPU bosimini tekshiring.',
+        ran: /\/proc\/pressure\/cpu/,
+        natija: '`some` o‘sgan: jarayonlar CPU navbatida turibdi.',
+      },
+      {
+        cmd: 'top -b -n 1 | head -12',
+        text: '`top` bilan eng ko‘p CPU yeyayotgan jarayonni toping.',
+        ran: /^top\b/,
+        natija: 'Birinchi qatorda `sh` — u qayerdan kelgani noma’lum.',
+      },
+      {
+        cmd: "systemctl status $(pgrep -f 'while :') --no-pager -n 0",
+        text: 'Shu jarayon qaysi servisga tegishli ekanini aniqlang (`systemctl status PID`).',
+        ran: /^systemctl\s+status\s+(\$\(pgrep|\d+)/,
+        natija: '`hisobot53.service` — "Kunlik hisobot generatori".',
+      },
+      {
+        cmd: 'systemctl stop hisobot53',
+        text: 'Servisni to‘xtating.',
+        check: '! pgrep -f "while :"',
+        natija: 'Aybdor to‘xtadi.',
+      },
+      {
+        cmd: 'vmstat 2 3',
+        text: 'Yana `vmstat` — natijani tekshiring.',
+        ran: /^vmstat\b/,
+        natija: '`id` yana ~100: CPU bo‘shadi.',
+      },
+    ],
+  },
+  {
+    id: '54-disk',
+    title: 'Disk to‘ldi',
+    bob: '/linux/54-disk-toldi',
+    intro: '`/mnt/m54` ga fayl yozib bo‘lmayapti: `No space left on device`. Lekin `df -h` joy bor deydi. Sababni topib, aybdor papkani aniqlang va tozalang.',
+    setup: `umount /mnt/m54 >/dev/null 2>&1 || true; mkdir -p /mnt/m54; mount -t tmpfs -o size=4M,nr_inodes=64 m54 /mnt/m54; head -c 1M /dev/zero > /mnt/m54/baza.dat; mkdir /mnt/m54/sessiyalar /mnt/m54/log; for i in $(seq 1 100); do touch /mnt/m54/sessiyalar/s$i 2>/dev/null || break; done`,
+    steps: [
+      {
+        cmd: 'echo test > /mnt/m54/log/yangi.txt',
+        text: '`/mnt/m54/log` ga fayl yozib ko‘ring.',
+        ran: /^echo\b.*>\s*\/mnt\/m54\//,
+        natija: '`No space left on device`.',
+      },
+      {
+        cmd: 'df -h /mnt/m54',
+        text: 'Joyni tekshiring.',
+        ran: /^df\s+-h\b.*\/mnt\/m54/,
+        natija: '`Use%` 25% — joy bor. Demak sabab boshqa.',
+      },
+      {
+        cmd: 'df -i /mnt/m54',
+        text: 'Inode’larni tekshiring.',
+        ran: /^df\s+-i\b.*\/mnt\/m54/,
+        natija: '`IUse%` 100% — inode’lar tugagan.',
+      },
+      {
+        cmd: 'du --inodes -x /mnt/m54 | sort -n',
+        text: 'Inode’larni qaysi papka yeganini toping.',
+        ran: /^du\b.*--inodes/,
+        natija: '`/mnt/m54/sessiyalar` — deyarli hamma inode shu yerda.',
+      },
+      {
+        cmd: 'rm -r /mnt/m54/sessiyalar',
+        text: 'Eski sessiya fayllarini o‘chiring.',
+        check: '[ ! -e /mnt/m54/sessiyalar ] && [ -f /mnt/m54/baza.dat ]',
+        natija: 'Inode’lar bo‘shadi; `baza.dat` joyida.',
+      },
+      {
+        cmd: 'echo test > /mnt/m54/log/yangi.txt',
+        text: 'Yana yozib ko‘ring.',
+        check: 'grep -qx test /mnt/m54/log/yangi.txt',
+        natija: 'Yozildi — muammo hal.',
+      },
+    ],
+  },
 ]
 
 /** VM ichida `source` qilinadigan skript: papka, setup va har prompt oldidan qadamlarni tekshiradigan funksiya */

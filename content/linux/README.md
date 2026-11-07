@@ -62,7 +62,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - Veb-server va HTTPS — **"Nginx"** kitobida.
 - Konteynerlar, namespace va cgroup — **"Docker"** kitobida.
 
-> **Holat.** Qo'llanma yozilmoqda: 51/54 bob tayyor. Havolasi borlari — tayyor boblar. Har bobning "Amaliyot" bo'limida trenajordagi mashqqa havola bor.
+> **Holat.** Qo'llanma tayyor: 54/54 bob. Har bobning "Amaliyot" bo'limida trenajordagi mashqqa havola bor.
 
 ---
 
@@ -190,9 +190,9 @@ Bu qismdagi tekshiruv tartibi (qaysi buyruq qaysi ketma-ketlikda) rasmiy hujjatl
 
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
-| 52 | ⚑ Servis ishlamayapti | `systemctl status` → `journalctl -u` → port (`ss`) → ruxsatlar → konfiguratsiya sintaksisi; trenajorda ataylab buzilgan servislar | T+V | [DR 6.7](https://www.debian.org/doc/manuals/debian-reference/ch06.en.html#_the_diagnosis_of_the_system_daemons) · [SD systemctl(1)](https://www.freedesktop.org/software/systemd/man/latest/systemctl.html) · [SD journalctl(1)](https://www.freedesktop.org/software/systemd/man/latest/journalctl.html) |
-| 53 | ⚑ Server sekin | Yuklama, CPU, xotira va swap, disk I/O — qaysi biri sabab ekanini aniqlash | T+V | [DR 3.7](https://www.debian.org/doc/manuals/debian-reference/ch03.en.html#_other_system_monitors) · [DR 9.4](https://www.debian.org/doc/manuals/debian-reference/ch09.en.html#_monitoring_controlling_and_starting_program_activities) · [MAN proc(5)](https://man7.org/linux/man-pages/man5/proc.5.html) |
-| 54 | ⚑ Disk to'ldi | `df` va `du`; o'chirilgan, lekin ochiq fayl; journal hajmi (`journalctl --vacuum-size`); eski yadrolar va apt keshi | T+V | [DR 9.8.12](https://www.debian.org/doc/manuals/debian-reference/ch09.en.html#_invisible_disk_space_consumption) · [SD journalctl(1)](https://www.freedesktop.org/software/systemd/man/latest/journalctl.html) · [DM df(1)](https://manpages.debian.org/bookworm/coreutils/df.1.en.html) |
+| 52 | [⚑ Servis ishlamayapti](52-servis-ishlamayapti.md) | `systemctl status` → `journalctl -u` → port (`ss`) → ruxsatlar → konfiguratsiya sintaksisi; trenajorda ataylab buzilgan servislar | T+V | [DR 6.7](https://www.debian.org/doc/manuals/debian-reference/ch06.en.html#_the_diagnosis_of_the_system_daemons) · [SD systemctl(1)](https://www.freedesktop.org/software/systemd/man/latest/systemctl.html) · [SD journalctl(1)](https://www.freedesktop.org/software/systemd/man/latest/journalctl.html) |
+| 53 | [⚑ Server sekin](53-server-sekin.md) | Yuklama, CPU, xotira va swap, disk I/O — qaysi biri sabab ekanini aniqlash | T+V | [DR 3.7](https://www.debian.org/doc/manuals/debian-reference/ch03.en.html#_other_system_monitors) · [DR 9.4](https://www.debian.org/doc/manuals/debian-reference/ch09.en.html#_monitoring_controlling_and_starting_program_activities) · [MAN proc(5)](https://man7.org/linux/man-pages/man5/proc.5.html) |
+| 54 | [⚑ Disk to'ldi](54-disk-toldi.md) | `df` va `du`; o'chirilgan, lekin ochiq fayl; journal hajmi (`journalctl --vacuum-size`); eski yadrolar va apt keshi | T+V | [DR 9.8.12](https://www.debian.org/doc/manuals/debian-reference/ch09.en.html#_invisible_disk_space_consumption) · [SD journalctl(1)](https://www.freedesktop.org/software/systemd/man/latest/journalctl.html) · [DM df(1)](https://manpages.debian.org/bookworm/coreutils/df.1.en.html) |
 
 ---
 

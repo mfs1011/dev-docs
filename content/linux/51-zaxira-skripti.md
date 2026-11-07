@@ -1,6 +1,6 @@
 # 51 — Amaliy: zaxira skripti
 
-[← Oldingi: Funksiya va xatolar](50-funksiya-va-xatolar.md) · [Mundarija](README.md)
+[← Oldingi: Funksiya va xatolar](50-funksiya-va-xatolar.md) · [Mundarija](README.md) · [Keyingi: ⚑ Servis ishlamayapti →](52-servis-ishlamayapti.md)
 
 ## Tushuncha
 
