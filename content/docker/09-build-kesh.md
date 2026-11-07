@@ -1,6 +1,6 @@
 # 09 — Build kesh
 
-[← Oldingi: CMD va ENTRYPOINT](08-cmd-va-entrypoint.md) · [Mundarija](README.md)
+[← Oldingi: CMD va ENTRYPOINT](08-cmd-va-entrypoint.md) · [Mundarija](README.md) · [Keyingi: Multi-stage build →](10-multi-stage.md)
 
 ## Tushuncha
 
