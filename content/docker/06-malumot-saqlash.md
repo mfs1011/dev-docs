@@ -1,6 +1,6 @@
 # 06 — Ma'lumot saqlash
 
-[← Oldingi: Tarmoq, portlar va firewall](05-tarmoq-va-portlar.md) · [Mundarija](README.md)
+[← Oldingi: Tarmoq, portlar va firewall](05-tarmoq-va-portlar.md) · [Mundarija](README.md) · [Keyingi: Birinchi Dockerfile →](07-birinchi-dockerfile.md)
 
 ## Tushuncha
 

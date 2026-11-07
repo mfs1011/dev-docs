@@ -12,6 +12,7 @@ Manbalar va versiyalar (2026-11-07 da tekshirilgan):
 | Docker Desktop | 4.98.0 (2026-11-03) | <https://docs.docker.com/desktop/release-notes/> |
 | Docker Compose | v5.7.0 (2026-11-02) | <https://github.com/docker/compose/releases> |
 | Buildx | v0.38.2 (2026-11-03); Ubuntu apt repozitoriysida hozircha 0.38.1 | <https://github.com/docker/buildx/releases> |
+| Node.js (misollar) | 26 — 2026-10-28 dan Active LTS; `node:26-alpine` image'i | <https://nodejs.org/en/about/previous-releases> |
 | Ubuntu (VPS) | 26.04 LTS — Docker Engine o'rnatish hujjatida qo'llab-quvvatlanadigan versiyalar ro'yxatida bor | <https://docs.docker.com/engine/install/ubuntu/> |
 
 Muhit tanlovi haqida:
@@ -41,7 +42,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - Nuxt — Docker hujjatida u uchun qo'llanma yo'q; Node.js va Next.js qo'llanmalaridagi tamoyillar unga ham taalluqli.
 - Serverni himoyalash (SSH, firewall, fail2ban) — **"Server xavfsizligi"** kitobida; Docker portlari va firewall bog'liqligi esa shu kitobning 5-bobida.
 
-> **Holat.** Qo'llanma yozilmoqda: 6/28 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 7/28 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -71,7 +72,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
-| 07 | Birinchi Dockerfile | `FROM`, `WORKDIR`, `COPY`, `RUN`, `EXPOSE`, `CMD`; build konteksti; `docker build -t`; build → run | V | [GS Writing a Dockerfile](https://docs.docker.com/get-started/docker-concepts/building-images/writing-a-dockerfile/) · [GS Build, tag, and publish](https://docs.docker.com/get-started/docker-concepts/building-images/build-tag-and-publish-an-image/) · [BD Build context](https://docs.docker.com/build/concepts/context/) · [RF Dockerfile](https://docs.docker.com/reference/dockerfile/) |
+| 07 | [Birinchi Dockerfile](07-birinchi-dockerfile.md) | `FROM`, `WORKDIR`, `COPY`, `RUN`, `EXPOSE`, `CMD`; build konteksti; `docker build -t`; build → run | V | [GS Writing a Dockerfile](https://docs.docker.com/get-started/docker-concepts/building-images/writing-a-dockerfile/) · [GS Build, tag, and publish](https://docs.docker.com/get-started/docker-concepts/building-images/build-tag-and-publish-an-image/) · [BD Build context](https://docs.docker.com/build/concepts/context/) · [RF Dockerfile](https://docs.docker.com/reference/dockerfile/) |
 | 08 | `CMD` va `ENTRYPOINT` | Exec va shell shakllari; ikkalasi birga; signallar va PID 1 — nega shell shaklida `docker stop` 10 soniya kutadi | V | [RF Dockerfile: CMD, ENTRYPOINT](https://docs.docker.com/reference/dockerfile/#entrypoint) · [BD Best practices](https://docs.docker.com/build/building/best-practices/) |
 | 09 | Build kesh | Qatlam keshi qanday ishlaydi va qachon buziladi; instruksiyalar tartibi; `.dockerignore` | V | [GS Using the build cache](https://docs.docker.com/get-started/docker-concepts/building-images/using-the-build-cache/) · [BD Cache invalidation](https://docs.docker.com/build/cache/invalidation/) · [BD Optimize cache usage](https://docs.docker.com/build/cache/optimize/) · [BD Build context: .dockerignore](https://docs.docker.com/build/concepts/context/#dockerignore-files) |
 | 10 | Multi-stage build | Build bosqichi va yakuniy bosqich; `COPY --from`; `--target` | V | [GS Multi-stage builds](https://docs.docker.com/get-started/docker-concepts/building-images/multi-stage-builds/) · [BD Multi-stage](https://docs.docker.com/build/building/multi-stage/) |
