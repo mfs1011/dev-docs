@@ -1,6 +1,6 @@
 # 54 — Deadlock va qayta urinish
 
-[← Oldingi: Qulflar](53-qulflar.md) · [Mundarija](README.md)
+[← Oldingi: Qulflar](53-qulflar.md) · [Mundarija](README.md) · [Keyingi: Ilova darajasida izchillik →](55-ilova-darajasida-izchillik.md)
 
 ## Tushuncha
 
