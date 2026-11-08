@@ -216,7 +216,7 @@ Ikkinchi noutbukda boshlashdan oldin shu faylni, `CLAUDE.md` ni va kitobning `RE
 
 ## Redis kitobi (`content/redis/`)
 
-- Branch `docs/redis-2` (1-qism — `docs/redis-1`, merge qilingan). Tayyor: 1–19, 25–34-boblar (2026-11-09). Ilova misollari Node.js va PHP'da: VPS'da Node.js 26.13.0 (`/opt/node`, rasmiy binar), Composer 2.11.1 (`/usr/local/bin/composer`), loyiha `/root/redis-ilova` (`redis@6.3.1`, `predis/predis` 3.7.1). (1-qism) VPS'ga Redis 8.10.3 rasmiy APT omboridan (`packages.redis.io`, `resolute`) o'rnatildi, servis `redis-server`, faqat `127.0.0.1`/`::1:6379`.
+- Branch `docs/redis-2` (1-qism — `docs/redis-1`, merge qilingan). Tayyor: 1–20, 25–34-boblar (2026-11-09). Ilova misollari Node.js va PHP'da: VPS'da Node.js 26.13.0 (`/opt/node`, rasmiy binar), Composer 2.11.1 (`/usr/local/bin/composer`), loyiha `/root/redis-ilova` (`redis@6.3.1`, `predis/predis` 3.7.1). (1-qism) VPS'ga Redis 8.10.3 rasmiy APT omboridan (`packages.redis.io`, `resolute`) o'rnatildi, servis `redis-server`, faqat `127.0.0.1`/`::1:6379`.
 - Manba: `raw.githubusercontent.com/redis/docs/main/content/...` (markdown). Hujjat `main` tarmog'ida hali chiqmagan imkoniyatlar bo'lishi mumkin (masalan, Arrays turi, 8.12 RC) — har bobda o'rnatilgan 8.10.3 da tekshiriladi.
 - Navbat: avval `redis-cli` bilan (V) boblar — 3–12, 15, 25–34; Node.js (V+N) boblari — misollar tili bo'yicha egasining qarori kutilmoqda (README'da hozir Node.js).
 
