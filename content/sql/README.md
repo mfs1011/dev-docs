@@ -42,7 +42,7 @@ Qisqartmalar:
 - **MY** — MySQL 9.7 qo'llanmasi.
 - **SL** — SQLite hujjati.
 
-> **Holat.** Qo'llanma yozilmoqda: 53/70 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 54/70 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -157,7 +157,7 @@ Bu qismga ma'lumotlar bazasi hujjatlarida yozilgan narsalargina kiritildi.
 | 51 | [Izolyatsiya darajalari](51-izolyatsiya-darajalari.md) | Dirty read, phantom, serialization anomaly; sukut bo'yicha: PG — Read Committed, InnoDB — Repeatable Read, SQLite — serializable | [PG transaction-iso](https://www.postgresql.org/docs/18/transaction-iso.html) · [MY innodb-transaction-isolation-levels](https://dev.mysql.com/doc/refman/9.7/en/innodb-transaction-isolation-levels.html) · [SL isolation](https://www.sqlite.org/isolation.html) |
 | 52 | [MVCC](52-mvcc.md) | PG'da qator versiyalari (`xmin`/`xmax`); InnoDB undo log; SQLite WAL snapshot'lari | [PG mvcc-intro](https://www.postgresql.org/docs/18/mvcc-intro.html) · [PG storage-page-layout](https://www.postgresql.org/docs/18/storage-page-layout.html) · [MY innodb-multi-versioning](https://dev.mysql.com/doc/refman/9.7/en/innodb-multi-versioning.html) · [SL wal](https://www.sqlite.org/wal.html) |
 | 53 | [Qulflar](53-qulflar.md) | Jadval va qator qulflari, `FOR UPDATE`/`NO KEY UPDATE`/`SHARE`/`KEY SHARE`, `NOWAIT`, `SKIP LOCKED`; InnoDB record, gap va next-key qulflari; SQLite fayl qulflari | [PG explicit-locking](https://www.postgresql.org/docs/18/explicit-locking.html) · [MY innodb-locking](https://dev.mysql.com/doc/refman/9.7/en/innodb-locking.html) · [MY innodb-locking-reads](https://dev.mysql.com/doc/refman/9.7/en/innodb-locking-reads.html) · [SL lockingv3](https://www.sqlite.org/lockingv3.html) |
-| 54 | Deadlock va qayta urinish *(tayyorlanmoqda)* | Serialization failure (40001, 40P01) va retry; advisory qulflar, MySQL `GET_LOCK`; InnoDB deadlock aniqlash | [PG mvcc-serialization-failure-handling](https://www.postgresql.org/docs/18/mvcc-serialization-failure-handling.html) · [PG explicit-locking](https://www.postgresql.org/docs/18/explicit-locking.html) · [MY innodb-deadlocks-handling](https://dev.mysql.com/doc/refman/9.7/en/innodb-deadlocks-handling.html) · [MY locking-functions](https://dev.mysql.com/doc/refman/9.7/en/locking-functions.html) |
+| 54 | [Deadlock va qayta urinish](54-deadlock-va-qayta-urinish.md) | Serialization failure (40001, 40P01) va retry; advisory qulflar, MySQL `GET_LOCK`; InnoDB deadlock aniqlash | [PG mvcc-serialization-failure-handling](https://www.postgresql.org/docs/18/mvcc-serialization-failure-handling.html) · [PG explicit-locking](https://www.postgresql.org/docs/18/explicit-locking.html) · [MY innodb-deadlocks-handling](https://dev.mysql.com/doc/refman/9.7/en/innodb-deadlocks-handling.html) · [MY locking-functions](https://dev.mysql.com/doc/refman/9.7/en/locking-functions.html) |
 | 55 | Ilova darajasida izchillik *(tayyorlanmoqda)* | Serializable tranzaksiyalar va aniq qulflar bilan izchillikni ta'minlash | [PG applevel-consistency](https://www.postgresql.org/docs/18/applevel-consistency.html) |
 
 ## X qism — Server tomonida dasturlash (56–59)

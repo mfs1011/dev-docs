@@ -1,6 +1,6 @@
 # 53 — Qulflar
 
-[← Oldingi: MVCC](52-mvcc.md) · [Mundarija](README.md)
+[← Oldingi: MVCC](52-mvcc.md) · [Mundarija](README.md) · [Keyingi: Deadlock va qayta urinish →](54-deadlock-va-qayta-urinish.md)
 
 ## Tushuncha
 
