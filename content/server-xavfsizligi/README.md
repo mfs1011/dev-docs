@@ -45,7 +45,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - Ma'lumotlar bazasining zaxirasi — **"SQL"** kitobida.
 - Server buzilganda nima qilish (incident response): Debian'ning shu mavzudagi "Securing Debian Manual" qo'llanmasi debian.org'da endi yo'q, boshqa joriy rasmiy manba topilmadi. Shu sababli bu mavzu kiritilmadi.
 
-> **Holat.** Qo'llanma tayyorlanmoqda — quyida rejalashtirilgan mundarija.
+> **Holat.** Qo'llanma yozilmoqda: 13/24 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -64,24 +64,24 @@ Bu qo'llanmaga kirmaydigan mavzular:
 
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
-| 01 | Server nimadan himoyalanadi | Internetga ochiq server: portlarni skanerlash, parol terib ko'rish urinishlari. Hujum yuzasi (attack surface) — tashqaridan kirish mumkin bo'lgan joylar. Himoya qatlamlari: yangilanish, kirish nazorati, tarmoq, zaxira | — | [UB Security suggestions](https://ubuntu.com/server/docs/explanation/security/security_suggestions/) · [UB Introduction to security](https://ubuntu.com/server/docs/explanation/intro-to/security/) |
-| 02 | ⚑ Boshlang'ich holatni tekshirish | Qaysi portlar ochiq (`ss`), qaysi servislar ishlaydi, kim kira oladi (`sshd -T`), oxirgi yangilanish qachon bo'lgan | V | [UB Security suggestions](https://ubuntu.com/server/docs/explanation/security/security_suggestions/) · [UM ss(8)](https://manpages.ubuntu.com/manpages/resolute/man8/ss.8.html) · [SSH sshd(8)](https://man.openbsd.org/sshd.8) |
+| 01 | [Server nimadan himoyalanadi](01-nimadan-himoya.md) | Internetga ochiq server: portlarni skanerlash, parol terib ko'rish urinishlari. Hujum yuzasi (attack surface) — tashqaridan kirish mumkin bo'lgan joylar. Himoya qatlamlari: yangilanish, kirish nazorati, tarmoq, zaxira | — | [UB Security suggestions](https://ubuntu.com/server/docs/explanation/security/security_suggestions/) · [UB Introduction to security](https://ubuntu.com/server/docs/explanation/intro-to/security/) |
+| 02 | [⚑ Boshlang'ich holatni tekshirish](02-boshlangich-holat.md) | Qaysi portlar ochiq (`ss`), qaysi servislar ishlaydi, kim kira oladi (`sshd -T`), oxirgi yangilanish qachon bo'lgan | V | [UB Security suggestions](https://ubuntu.com/server/docs/explanation/security/security_suggestions/) · [UM ss(8)](https://manpages.ubuntu.com/manpages/resolute/man8/ss.8.html) · [SSH sshd(8)](https://man.openbsd.org/sshd.8) |
 
 ## II qism — Yangilanishlar (3–6)
 
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
-| 03 | Paketlarni yangilash | `apt update` va `apt upgrade`. Bosqichma-bosqich yangilanishlar (phased updates). Keraksiz paketlarni olib tashlash. Uchinchi tomon omborlarining xavfi | V | [UB Security suggestions](https://ubuntu.com/server/docs/explanation/security/security_suggestions/) · [UB About apt upgrade and phased updates](https://ubuntu.com/server/docs/explanation/software/about-apt-upgrade-and-phased-updates/) · [UB Package management](https://ubuntu.com/server/docs/how-to/software/package-management/) |
-| 04 | Avtomatik yangilanishlar | `unattended-upgrades`: sozlama fayllari, qaysi omborlardan, paketni istisno qilish, natija haqida xabar | V | [UB Automatic updates](https://ubuntu.com/server/docs/how-to/software/automatic-updates/) · [UM unattended-upgrade(8)](https://manpages.ubuntu.com/manpages/resolute/man8/unattended-upgrade.8.html) |
-| 05 | Qayta ishga tushirish | Yangilangan kutubxonadan foydalanayotgan servislarni qayta ishga tushirish (`needrestart`). Yadro yangilanganda reboot. Avtomatik reboot sozlamasi | V | [UB Automatic updates](https://ubuntu.com/server/docs/how-to/software/automatic-updates/) (Reboots, Service restarts) |
-| 06 | Qo'llab-quvvatlash muddati | LTS muddati. Ubuntu Pro: ESM (10 yil) va Livepatch (yadroni rebootsiz yamash). Keyingi LTS'ga o'tish | V | [UB Security suggestions](https://ubuntu.com/server/docs/explanation/security/security_suggestions/) · [US ESM](https://documentation.ubuntu.com/security/security-updates/esm/) · [UB Upgrade your release](https://ubuntu.com/server/docs/how-to/software/upgrade-your-release/) |
+| 03 | [Paketlarni yangilash](03-paket-yangilash.md) | `apt update` va `apt upgrade`. Bosqichma-bosqich yangilanishlar (phased updates). Keraksiz paketlarni olib tashlash. Uchinchi tomon omborlarining xavfi | V | [UB Security suggestions](https://ubuntu.com/server/docs/explanation/security/security_suggestions/) · [UB About apt upgrade and phased updates](https://ubuntu.com/server/docs/explanation/software/about-apt-upgrade-and-phased-updates/) · [UB Package management](https://ubuntu.com/server/docs/how-to/software/package-management/) |
+| 04 | [Avtomatik yangilanishlar](04-avto-yangilash.md) | `unattended-upgrades`: sozlama fayllari, qaysi omborlardan, paketni istisno qilish, natija haqida xabar | V | [UB Automatic updates](https://ubuntu.com/server/docs/how-to/software/automatic-updates/) · [UM unattended-upgrade(8)](https://manpages.ubuntu.com/manpages/resolute/man8/unattended-upgrade.8.html) |
+| 05 | [Qayta ishga tushirish](05-qayta-ishga-tushirish.md) | Yangilangan kutubxonadan foydalanayotgan servislarni qayta ishga tushirish (`needrestart`). Yadro yangilanganda reboot. Avtomatik reboot sozlamasi | V | [UB Automatic updates](https://ubuntu.com/server/docs/how-to/software/automatic-updates/) (Reboots, Service restarts) |
+| 06 | [Qo'llab-quvvatlash muddati](06-qollab-muddati.md) | LTS muddati. Ubuntu Pro: ESM (10 yil) va Livepatch (yadroni rebootsiz yamash). Keyingi LTS'ga o'tish | V | [UB Security suggestions](https://ubuntu.com/server/docs/explanation/security/security_suggestions/) · [US ESM](https://documentation.ubuntu.com/security/security-updates/esm/) · [UB Upgrade your release](https://ubuntu.com/server/docs/how-to/software/upgrade-your-release/) |
 
 ## III qism — Foydalanuvchilar va dasturlar (7–8)
 
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
-| 07 | Root emas, sudo foydalanuvchi | Eng kam huquq tamoyili (least privilege). Admin uchun alohida foydalanuvchi. `sudo-rs` (Ubuntu 26.04). Root parolini o'chirish. Parol siyosati | V | [UB User management](https://ubuntu.com/server/docs/how-to/security/user-management/) · [UB Security suggestions](https://ubuntu.com/server/docs/explanation/security/security_suggestions/) |
-| 08 | AppArmor | Dastur qila oladigan ishni profil bilan cheklash. `enforce` va `complain` rejimlari. `aa-status`. Rad etishlarni logdan topish | V | [UB AppArmor](https://ubuntu.com/server/docs/how-to/security/apparmor/) · [US AppArmor](https://documentation.ubuntu.com/security/security-features/privilege-restriction/apparmor/) |
+| 07 | [Root emas, sudo foydalanuvchi](07-sudo-foydalanuvchi.md) | Eng kam huquq tamoyili (least privilege). Admin uchun alohida foydalanuvchi. `sudo-rs` (Ubuntu 26.04). Root parolini o'chirish. Parol siyosati | V | [UB User management](https://ubuntu.com/server/docs/how-to/security/user-management/) · [UB Security suggestions](https://ubuntu.com/server/docs/explanation/security/security_suggestions/) |
+| 08 | [AppArmor](08-apparmor.md) | Dastur qila oladigan ishni profil bilan cheklash. `enforce` va `complain` rejimlari. `aa-status`. Rad etishlarni logdan topish | V | [UB AppArmor](https://ubuntu.com/server/docs/how-to/security/apparmor/) · [US AppArmor](https://documentation.ubuntu.com/security/security-features/privilege-restriction/apparmor/) |
 
 ## IV qism — SSH (9–13)
 
@@ -107,16 +107,16 @@ Bu qo'llanmaga kirmaydigan mavzular:
 
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
-| 19 | Shell skript bilan zaxira | Ubuntu hujjatidagi `tar` skripti, eski arxivlarni aylantirish (rotation), arxivdan tiklash. Rejali ishga tushirish | V | [UB Backup with shell scripts](https://ubuntu.com/server/docs/how-to/backups/back-up-using-shell-scripts/) · [UB Backups and version control](https://ubuntu.com/server/docs/how-to/backups/) |
-| 20 | restic | Shifrlangan va takrorlarni bir marta saqlaydigan zaxira. Ombor yaratish, zaxira, snapshot'lar, eskilarini o'chirish (`forget`, `prune`). Boshqa serverdagi omborga (SFTP) | V | [RS Documentation](https://restic.readthedocs.io/en/stable/) |
-| 21 | Zaxiradan tiklash | Tiklashni sinab ko'rish: `restic restore`, faylni alohida tiklash, zaxira butunligini tekshirish (`restic check`) | V | [RS Documentation](https://restic.readthedocs.io/en/stable/) |
-| 22 | `/etc` ni git bilan kuzatish | `etckeeper`: sozlama fayllaridagi har o'zgarish tarixi | V | [UB etckeeper](https://ubuntu.com/server/docs/how-to/backups/install-etckeeper/) |
+| 19 | [Shell skript bilan zaxira](19-shell-zaxira.md) | Ubuntu hujjatidagi `tar` skripti, eski arxivlarni aylantirish (rotation), arxivdan tiklash. Rejali ishga tushirish | V | [UB Backup with shell scripts](https://ubuntu.com/server/docs/how-to/backups/back-up-using-shell-scripts/) · [UB Backups and version control](https://ubuntu.com/server/docs/how-to/backups/) |
+| 20 | [restic](20-restic.md) | Shifrlangan va takrorlarni bir marta saqlaydigan zaxira. Ombor yaratish, zaxira, snapshot'lar, eskilarini o'chirish (`forget`, `prune`). Boshqa serverdagi omborga (SFTP) | V | [RS Documentation](https://restic.readthedocs.io/en/stable/) |
+| 21 | [Zaxiradan tiklash](21-tiklash.md) | Tiklashni sinab ko'rish: `restic restore`, faylni alohida tiklash, zaxira butunligini tekshirish (`restic check`) | V | [RS Documentation](https://restic.readthedocs.io/en/stable/) |
+| 22 | [`/etc` ni git bilan kuzatish](22-etckeeper.md) | `etckeeper`: sozlama fayllaridagi har o'zgarish tarixi | V | [UB etckeeper](https://ubuntu.com/server/docs/how-to/backups/install-etckeeper/) |
 
 ## VII qism — Kuzatish (23–24)
 
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
-| 23 | Kim kirdi | SSH loglari (`journalctl -u ssh`). Kirishlar tarixi: Ubuntu 26.04 da `last` buyrug'i `wtmpdb` paketidan keladi (bizning VPS shablonida o'rnatilmagan). sshd'ning `LogLevel` sozlamasi | V | [UM journalctl(1)](https://manpages.ubuntu.com/manpages/resolute/man1/journalctl.1.html) · [UM wtmpdb (last)](https://manpages.ubuntu.com/manpages/resolute/man1/last.1.html) · [SSH sshd_config(5)](https://man.openbsd.org/sshd_config) |
+| 23 | [Kim kirdi](23-kim-kirdi.md) | SSH loglari (`journalctl -u ssh`). Kirishlar tarixi: Ubuntu 26.04 da `last` buyrug'i `wtmpdb` paketidan keladi (bizning VPS shablonida o'rnatilmagan). sshd'ning `LogLevel` sozlamasi | V | [UM journalctl(1)](https://manpages.ubuntu.com/manpages/resolute/man1/journalctl.1.html) · [UM wtmpdb (last)](https://manpages.ubuntu.com/manpages/resolute/man1/last.1.html) · [SSH sshd_config(5)](https://man.openbsd.org/sshd_config) |
 | 24 | ⚑ Yakuniy tekshiruv ro'yxati | Yangilanishlar, foydalanuvchilar, SSH, firewall, ochiq portlar, zaxira — butun kitob bo'yicha bitta ro'yxat | V | [UB Security suggestions](https://ubuntu.com/server/docs/explanation/security/security_suggestions/) |
 
 ---
