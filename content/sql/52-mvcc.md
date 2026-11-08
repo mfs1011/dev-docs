@@ -1,6 +1,6 @@
 # 52 — MVCC
 
-[← Oldingi: Izolyatsiya darajalari](51-izolyatsiya-darajalari.md) · [Mundarija](README.md)
+[← Oldingi: Izolyatsiya darajalari](51-izolyatsiya-darajalari.md) · [Mundarija](README.md) · [Keyingi: Qulflar →](53-qulflar.md)
 
 ## Tushuncha
 
