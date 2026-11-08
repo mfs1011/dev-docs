@@ -45,7 +45,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - nginx'da HTTPS'ni sozlash va sertifikat olish — **"Nginx va HTTPS"** kitobida.
 - Frontend framework'larda so'rov yuborish — framework kitoblarida.
 
-> **Holat.** Qo'llanma yozilmoqda: 8/30 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 9/30 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -77,7 +77,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 | 06 | [HTTP xabarlari](06-http-xabarlari.md) | So'rov qatori, header'lar, tana (body). Javobning holat qatori. `curl -v` bilan ko'rish | V | [MDN HTTP messages](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Messages) · [MDN A typical HTTP session](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Session) · [RFC 9112](https://www.rfc-editor.org/rfc/rfc9112) |
 | 07 | [Metodlar](07-metodlar.md) | `GET`, `POST`, `PUT`, `PATCH`, `DELETE`, `HEAD`, `OPTIONS`. Xavfsiz (safe) va idempotent (necha marta yuborilsa ham natija bir xil) metodlar | V | [MDN HTTP request methods](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods) · [RFC 9110 §9](https://www.rfc-editor.org/rfc/rfc9110#name-methods) |
 | 08 | [Holat kodlari](08-holat-kodlari.md) | 1xx–5xx guruhlari va eng ko'p uchraydiganlari: 200, 201, 204, 304, 400, 401, 403, 404, 409, 429, 500, 502, 503, 504 | V | [MDN HTTP response status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status) · [RFC 9110 §15](https://www.rfc-editor.org/rfc/rfc9110#name-status-codes) · [RFC 6585](https://www.rfc-editor.org/rfc/rfc6585) |
-| 09 | Header'lar va kontent turi | `Content-Type` va MIME turlari, `Content-Length`. Mijoz va server qaysi formatni tanlashi (content negotiation) | V | [MDN HTTP headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers) · [MDN MIME types](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/MIME_types) · [MDN Content negotiation](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Content_negotiation) |
+| 09 | [Header'lar va kontent turi](09-headerlar-kontent-turi.md) | `Content-Type` va MIME turlari, `Content-Length`. Mijoz va server qaysi formatni tanlashi (content negotiation) | V | [MDN HTTP headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers) · [MDN MIME types](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/MIME_types) · [MDN Content negotiation](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Content_negotiation) |
 | 10 | Redirect'lar | 301, 302, 303, 307, 308 farqi. `Location` header'i | V | [MDN Redirections in HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Redirections) · [RFC 9110 §15.4](https://www.rfc-editor.org/rfc/rfc9110#name-redirection-3xx) |
 | 11 | HTTP keshlash | `Cache-Control` (`max-age`, `no-cache`, `no-store`). `ETag` va `Last-Modified`. Shartli so'rov va 304 javobi | B+V | [MDN HTTP caching](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Caching) · [MDN HTTP conditional requests](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Conditional_requests) · [RFC 9111](https://www.rfc-editor.org/rfc/rfc9111) |
 | 12 | Siqish va qismli yuklash | `Accept-Encoding` va `Content-Encoding`. Faylning bir qismini so'rash (`Range`, 206) | V | [MDN Compression in HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Compression) · [MDN HTTP range requests](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Range_requests) |
