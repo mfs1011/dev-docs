@@ -231,3 +231,9 @@ Ikkinchi noutbukda boshlashdan oldin shu faylni, `CLAUDE.md` ni va kitobning `RE
 - VPS'ga RabbitMQ 4.4.0 va Erlang/OTP 27.3.4.19 Team RabbitMQ apt omboridan o'rnatildi (`/etc/apt/sources.list.d/rabbitmq.list` — noble ombori, hujjatdagi "Ubuntu 26.04 and 24.04" skripti; Erlang pinning `/etc/apt/preferences.d/erlang`, `Pin: origin RabbitMQ`, 1001). Servis `rabbitmq-server` — active/enabled; 5672, 25672, 4369 portlari barcha interfeyslarda, ufw ularni ruxsat etmagan — tashqaridan AMQP javobi yo'q (tekshirildi). Faqat `guest` foydalanuvchi (faqat localhost).
 - 2-bob sinovi bajarilgan, matn yozilmagan. Kuzatildi: kompyuterdagi `nc -z` VPS'dagi istalgan portni "ochiq" deb ko'rsatadi (lokal tarmoq ulanishni o'zi qabul qiladi) — tashqi tekshiruv faqat protokol javobi bilan (AMQP sarlavhasi).
 - Navbat: V-boblar (2, 4, 6, 10–14, 16, 17, 21, 25–34) — `rabbitmqctl`/`rabbitmqadmin` bilan; V+N — misollar tili qarori kutilmoqda.
+
+## Egasining qarorlari (2026-11-09)
+
+- **Domen: `kamgapir.uz`** — `kamgapir.uz` va `www.kamgapir.uz` A yozuvlari VPS'ga yo'naltirilgan (tekshirildi; NS — ahost.uz; AAAA yo'q). Nginx 19–25, Deploy 02, 04 shu domen bilan.
+- **Misollar tili: Node.js va PHP — ikkalasi.** Redis va RabbitMQ'ning kod yoziladigan boblarida har misol ikki tilda (RabbitMQ: `amqplib` va `php-amqplib`, rasmiy qo'llanmalardagi kabi). Deploy 06 — `npm ci` va `composer install` ikkalasi.
+- Kutilmoqda: Deploy 03 va Server xavfsizligi 9–18 uchun provayder konsoli tayyorligi; GitHub Actions boblari uchun sinov repozitoriysi (egasi ochadi).
