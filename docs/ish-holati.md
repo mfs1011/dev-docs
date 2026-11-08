@@ -125,6 +125,15 @@ node linux-trenajor/test/mashqlar.mjs          # barcha mashqlarni brauzerda tek
 - Kuzatuvlar: `pkill -f "<matn>"` SSH ichidagi o'z qobig'ini ham o'ldiradi — `[d]ocker` kabi shablon ishlating; noutbuk–VPS SSH ulanishi vaqti-vaqti bilan uziladi.
 - Avtomatik ruxsat tekshiruvi uchinchi tomon repozitoriysini (dockersamples/laravel-docker-examples) VPS'da yig'ishga ruxsat bermadi — 20-bob o'z kodimiz va rasmiy image'lar bilan qurildi.
 
+## Web asoslari kitobi (`content/web-asoslari/`)
+
+- Branch `docs/web-asoslari-1`. **Tayyor: 30/30 bob** (2026-11-08). IV qism (xavfsizlik) — faqat himoya tomoni, hujum yuklamasi (payload) ko'rsatilmagan.
+- README'dagi "Animatsiyalar" jadvali (01, 04, 11, 19, 20) hali bajarilmagan — video/animatsiya ishlari bilan alohida.
+- HTTP/3 sinovi (13-bob) noutbukdagi Homebrew curl 8.23.0 bilan. Lokal HTTPS sinovlari (23, 27-boblar) — o'z-o'zidan imzolangan sertifikat; 27-bobda Chromium'ga `--ignore-certificate-errors-spki-list` bilan (HSTS faqat xatosiz TLS'da qabul qilinadi).
+- Manbalar: MDN markdown manbasi (`raw.githubusercontent.com/mdn/content/main/files/en-us/...`), RFC'lar (`rfc-editor.org/rfc/rfcNNNN.txt`), WHATWG (URL, Fetch). Bo'lim raqamlari RFC matnidan tekshiriladi.
+- Muhit: VPS'da `curl` 8.18.0, `dig` 9.20.24, `tcpdump` 4.99.6 (o'rnatildi), nginx — Docker `nginx:1.30.6` (`--network host`), kichik Python serverlar (`http.server`); brauzer — lokal Chromium 158 (`playwright-core`, lokal Python server).
+- Kuzatuvlar: Chromium `HTTP/1.0` javobdagi `ETag` bilan shartli so'rov yubormadi (11-bob) — test serverlarida `protocol_version = 'HTTP/1.1'`. VPS'da IPv6 ulanish yo'q (`curl -6` — 7-xato). Ubuntu `curl` HTTP/3 siz yig'ilgan. VPS skriptida `wait` fon serverini ham kutib qoladi — ishlatmang.
+
 ## Ikkinchi noutbukda qilinadigan ishlar
 
 Birinchi noutbukda disk kam va Docker yo'q. Sinov VPS'ida 2 GB xotira bor: `MemTotal` 1,75 GiB, 2026-11-07 da bo'sh qismi ~1,3 GiB. Shuning uchun quyidagilar **ikkinchi noutbukda** qilinadi (xotira va disk ko'proq, Docker bor):
