@@ -42,7 +42,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - Domen, CI/CD va nol to'xtovli deploy — **"Deploy amaliyoti"** kitobida.
 - Pochta proksi (mail), TCP/UDP proksi (stream), njs skriptlari — hujjatda: [NG docs](https://nginx.org/en/docs/).
 
-> **Holat.** Qo'llanma yozilmoqda: 21/30 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 22/30 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -110,7 +110,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 | 27 | [Kirishni cheklash](27-kirish-cheklash.md) | IP bo'yicha `allow`/`deny`. Parol bilan kirish (basic auth, `htpasswd`) | V | [NG access module](https://nginx.org/en/docs/http/ngx_http_access_module.html) · [NG auth_basic module](https://nginx.org/en/docs/http/ngx_http_auth_basic_module.html) · [NA HTTP Basic Authentication](https://docs.nginx.com/nginx/admin-guide/security-controls/configuring-http-basic-authentication/) |
 | 28 | [Backend bilan shifrlangan ulanish](28-backend-tls.md) | Proxy'dan orqadagi serverga TLS: `proxy_ssl_*`, sertifikatni tekshirish | V | [NA Securing HTTP Traffic to Upstream Servers](https://docs.nginx.com/nginx/admin-guide/security-controls/securing-http-traffic-upstream/) · [NG proxy module](https://nginx.org/en/docs/http/ngx_http_proxy_module.html) |
 | 29 | [Holat va muammolarni topish](29-holat-muammo.md) | `stub_status`. Debug log. `nginx -T` bilan to'liq konfiguratsiyani ko'rish. 413, 502, 504 kodlarining sabablari | V | [NG stub_status module](https://nginx.org/en/docs/http/ngx_http_stub_status_module.html) · [NG A debugging log](https://nginx.org/en/docs/debugging_log.html) · [NA Debugging NGINX](https://docs.nginx.com/nginx/admin-guide/monitoring/debugging/) |
-| 30 | Ishlash sozlamalari | `worker_processes`, `worker_connections`, `keepalive_timeout`, `sendfile`. Ulanishlarni qayta ishlash usullari | V | [NG core functionality](https://nginx.org/en/docs/ngx_core_module.html) · [NG Connection processing methods](https://nginx.org/en/docs/events.html) · [NG core module](https://nginx.org/en/docs/http/ngx_http_core_module.html) |
+| 30 | [Ishlash sozlamalari](30-ishlash-sozlamalari.md) | `worker_processes`, `worker_connections`, `keepalive_timeout`, `sendfile`. Ulanishlarni qayta ishlash usullari | V | [NG core functionality](https://nginx.org/en/docs/ngx_core_module.html) · [NG Connection processing methods](https://nginx.org/en/docs/events.html) · [NG core module](https://nginx.org/en/docs/http/ngx_http_core_module.html) |
 
 ---
 
