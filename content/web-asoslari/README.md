@@ -45,7 +45,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - nginx'da HTTPS'ni sozlash va sertifikat olish — **"Nginx va HTTPS"** kitobida.
 - Frontend framework'larda so'rov yuborish — framework kitoblarida.
 
-> **Holat.** Qo'llanma yozilmoqda: 21/30 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 22/30 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -100,7 +100,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 | 19 | [CORS](19-cors.md) | Server boshqa origin'ga ruxsat beradi: `Access-Control-Allow-Origin`. Oldindan tekshiruv so'rovi (preflight, `OPTIONS`). Cookie bilan so'rov (credentials). Konsoldagi CORS xatosini o'qish | B+V | [MDN CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS) · [MDN CORS configuration](https://developer.mozilla.org/en-US/docs/Web/Security/Practical_implementation_guides/CORS) · [WHATWG Fetch → CORS protocol](https://fetch.spec.whatwg.org/#http-cors-protocol) |
 | 20 | [CSRF](20-csrf.md) | Foydalanuvchi nomidan soxta so'rov. Himoya: `SameSite` cookie, CSRF token | B | [MDN CSRF](https://developer.mozilla.org/en-US/docs/Web/Security/Attacks/CSRF) |
 | 21 | [XSS va CSP](21-xss-csp.md) | Sahifaga begona skript kiritish (XSS). `Content-Security-Policy` bilan cheklash | B | [MDN XSS](https://developer.mozilla.org/en-US/docs/Web/Security/Attacks/XSS) · [MDN CSP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP) |
-| 22 | Clickjacking va himoya header'lari | Sahifani ko'rinmas freym ichiga olish. `frame-ancestors`, `Referrer-Policy`, `X-Content-Type-Options` | B+V | [MDN Clickjacking](https://developer.mozilla.org/en-US/docs/Web/Security/Attacks/Clickjacking) · [MDN Referrer policy configuration](https://developer.mozilla.org/en-US/docs/Web/Security/Practical_implementation_guides/Referrer_policy) · [MDN MIME type verification](https://developer.mozilla.org/en-US/docs/Web/Security/Practical_implementation_guides/MIME_types) |
+| 22 | [Clickjacking va himoya header'lari](22-clickjacking-headerlar.md) | Sahifani ko'rinmas freym ichiga olish. `frame-ancestors`, `Referrer-Policy`, `X-Content-Type-Options` | B+V | [MDN Clickjacking](https://developer.mozilla.org/en-US/docs/Web/Security/Attacks/Clickjacking) · [MDN Referrer policy configuration](https://developer.mozilla.org/en-US/docs/Web/Security/Practical_implementation_guides/Referrer_policy) · [MDN MIME type verification](https://developer.mozilla.org/en-US/docs/Web/Security/Practical_implementation_guides/MIME_types) |
 | 23 | Aralash kontent va xavfsiz kontekst | HTTPS sahifadagi HTTP resurs. Faqat HTTPS'da ishlaydigan brauzer imkoniyatlari | B | [MDN Mixed content](https://developer.mozilla.org/en-US/docs/Web/Security/Defenses/Mixed_content) · [MDN Secure contexts](https://developer.mozilla.org/en-US/docs/Web/Security/Defenses/Secure_Contexts) |
 | 24 | Subresource Integrity | Boshqa saytdan (CDN) yuklangan skript o'zgartirilmaganini `integrity` bilan tekshirish | B | [MDN Subresource Integrity](https://developer.mozilla.org/en-US/docs/Web/Security/Defenses/Subresource_Integrity) |
 
