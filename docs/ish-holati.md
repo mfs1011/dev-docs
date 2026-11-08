@@ -207,6 +207,13 @@ Ikkinchi noutbukda boshlashdan oldin shu faylni, `CLAUDE.md` ni va kitobning `RE
 - Bob ulash: oldingi bobga "Keyingi", README qatori havolaga, `NN/70` — Linux'dagi `bob_ulash.py` ning SQL varianti (scratchpad'da edi).
 - dev.mysql.com havolalari `havola.sh` da 403 qaytaradi (HEAD so'roviga), sahifalar `GET` bilan ochiladi.
 
+## Nginx kitobi (`content/nginx/`)
+
+- Branch `docs/nginx-1`. Tayyor: 1–18, 26–30-boblar (2026-11-08). VPS'ga nginx 1.31.8 (mainline) rasmiy nginx.org omboridan o'rnatildi (`/etc/apt/sources.list.d/nginx.list`, pinning `/etc/apt/preferences.d/99nginx`), servis `nginx`, 80-port.
+- Navbat: domen talab qilmaydigan V-boblar — 3–17, 26–30. HTTPS boblari (19–25, V+D) — domen bo'yicha egasining qarori kutilmoqda (Let's Encrypt `shortlived` profili IP sertifikatni ham beradi, lekin bu VPS IP'sini ochiq CT jurnallariga yozadi — qarorsiz ishlatilmaydi).
+- Manba: nginx.org HTML sahifalari (`h2t.py` bilan matnga) va docs.nginx.com (markdown manbasi: `raw.githubusercontent.com/nginx/documentation/main/content/nginx/...`).
+- Proksi boblarida backend — Python standart kutubxonasidagi kichik server (Node.js VPS'da yo'q; misollar tili qarori Redis/RabbitMQ bilan birga kutilmoqda). README 11-bob qatoridagi "Node.js" so'zi "orqadagi ilova"ga o'zgartirildi.
+
 ## Server xavfsizligi kitobi (`content/server-xavfsizligi/`)
 
 - Branch `docs/server-xavfsizligi-1`. Tayyor: 1–8-boblar (2026-11-09; apparmor-utils o'rnatildi; admin foydalanuvchi `boshqaruv` (sudo, root kalitlari bilan; paroli `/root/boshqaruv-parol`); ubuntu-pro-client o'rnatildi, Pro'ga ulanmagan; VPS yadrosi 7.0.0-43 ga yangilanib qayta ishga tushirildi). Manba: `raw.githubusercontent.com/canonical/ubuntu-server-documentation/main/docs/...`.
