@@ -186,3 +186,9 @@ Ikkinchi noutbukda boshlashdan oldin shu faylni, `CLAUDE.md` ni va kitobning `RE
 | `audio/`, `segments/` | `docs/tts.md` ga qarang |
 | `*-REJA.md` (boshqa kitoblar rejalari) | `.gitignore` da, lokal fayllar |
 | `video/REACT-VIDEO-USLUBI.md`, `video/VUE-VIDEO-USLUBI.md` | Hali commit qilinmagan |
+
+## Redis kitobi (`content/redis/`)
+
+- Branch `docs/redis-1`. Tayyor: 1–2-boblar (2026-11-08). VPS'ga Redis 8.10.3 rasmiy APT omboridan (`packages.redis.io`, `resolute`) o'rnatildi, servis `redis-server`, faqat `127.0.0.1`/`::1:6379`.
+- Manba: `raw.githubusercontent.com/redis/docs/main/content/...` (markdown). Hujjat `main` tarmog'ida hali chiqmagan imkoniyatlar bo'lishi mumkin (masalan, Arrays turi, 8.12 RC) — har bobda o'rnatilgan 8.10.3 da tekshiriladi.
+- Navbat: avval `redis-cli` bilan (V) boblar — 3–12, 15, 25–34; Node.js (V+N) boblari — misollar tili bo'yicha egasining qarori kutilmoqda (README'da hozir Node.js).
