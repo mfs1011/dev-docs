@@ -42,7 +42,7 @@ Qisqartmalar:
 - **MY** — MySQL 9.7 qo'llanmasi.
 - **SL** — SQLite hujjati.
 
-> **Holat.** Qo'llanma yozilmoqda: 55/70 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 56/70 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -164,7 +164,7 @@ Bu qismga ma'lumotlar bazasi hujjatlarida yozilgan narsalargina kiritildi.
 
 | # | Bob | Mazmun | Rasmiy manba |
 | --- | --- | --- | --- |
-| 56 | Funksiya va protseduralar *(tayyorlanmoqda)* | SQL funksiyalar, PL/pgSQL, `CREATE PROCEDURE`; MySQL stored routine'lar va JavaScript stored program'lar | [PG xfunc](https://www.postgresql.org/docs/18/xfunc.html) · [PG plpgsql](https://www.postgresql.org/docs/18/plpgsql.html) · [MY stored-routines](https://dev.mysql.com/doc/refman/9.7/en/stored-routines.html) · [MY stored-routines-js](https://dev.mysql.com/doc/refman/9.7/en/stored-routines-js.html) |
+| 56 | [Funksiya va protseduralar](56-funksiya-va-protseduralar.md) | SQL funksiyalar, PL/pgSQL, `CREATE PROCEDURE`; MySQL stored routine'lar va JavaScript stored program'lar | [PG xfunc](https://www.postgresql.org/docs/18/xfunc.html) · [PG plpgsql](https://www.postgresql.org/docs/18/plpgsql.html) · [MY stored-routines](https://dev.mysql.com/doc/refman/9.7/en/stored-routines.html) · [MY stored-routines-js](https://dev.mysql.com/doc/refman/9.7/en/stored-routines-js.html) |
 | 57 | Triggerlar *(tayyorlanmoqda)* | PG: BEFORE/AFTER/INSTEAD OF, qator va statement darajasi, transition jadvallari; MySQL: faqat BEFORE/AFTER va `FOR EACH ROW`; SQLite: view'da INSTEAD OF, faqat `FOR EACH ROW` | [PG trigger-definition](https://www.postgresql.org/docs/18/trigger-definition.html) · [PG sql-createtrigger](https://www.postgresql.org/docs/18/sql-createtrigger.html) · [MY create-trigger](https://dev.mysql.com/doc/refman/9.7/en/create-trigger.html) · [SL lang_createtrigger](https://www.sqlite.org/lang_createtrigger.html) |
 | 58 | Partitioning *(tayyorlanmoqda)* | range/list/hash, partition pruning; unique kalit partition kalitini o'z ichiga olishi shart (PG va MySQL) | [PG ddl-partitioning](https://www.postgresql.org/docs/18/ddl-partitioning.html) · [MY partitioning-types](https://dev.mysql.com/doc/refman/9.7/en/partitioning-types.html) · [MY partitioning-pruning](https://dev.mysql.com/doc/refman/9.7/en/partitioning-pruning.html) · [MY partitioning-limitations-partitioning-keys-unique-keys](https://dev.mysql.com/doc/refman/9.7/en/partitioning-limitations-partitioning-keys-unique-keys.html) |
 | 59 | Katalog va metadata *(tayyorlanmoqda)* | `information_schema`, `pg_catalog`; SQLite `sqlite_schema` va `PRAGMA table_info` | [PG information-schema](https://www.postgresql.org/docs/18/information-schema.html) · [PG catalogs](https://www.postgresql.org/docs/18/catalogs.html) · [MY information-schema](https://dev.mysql.com/doc/refman/9.7/en/information-schema.html) · [SL schematab](https://www.sqlite.org/schematab.html) |

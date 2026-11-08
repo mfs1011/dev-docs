@@ -1,6 +1,6 @@
 # 55 — Ilova darajasida izchillik
 
-[← Oldingi: Deadlock va qayta urinish](54-deadlock-va-qayta-urinish.md) · [Mundarija](README.md)
+[← Oldingi: Deadlock va qayta urinish](54-deadlock-va-qayta-urinish.md) · [Mundarija](README.md) · [Keyingi: Funksiya va protseduralar →](56-funksiya-va-protseduralar.md)
 
 ## Tushuncha
 
