@@ -45,7 +45,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - nginx'da HTTPS'ni sozlash va sertifikat olish — **"Nginx va HTTPS"** kitobida.
 - Frontend framework'larda so'rov yuborish — framework kitoblarida.
 
-> **Holat.** Qo'llanma yozilmoqda: 15/30 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 16/30 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -89,7 +89,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 | --- | --- | --- | --- | --- |
 | 14 | [Cookie](14-cookie.md) | `Set-Cookie` va `Cookie`. Atributlar: `Expires`/`Max-Age`, `Domain`, `Path`, `Secure`, `HttpOnly`, `SameSite` | B+V | [MDN Using HTTP cookies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Cookies) · [MDN Secure cookie configuration](https://developer.mozilla.org/en-US/docs/Web/Security/Practical_implementation_guides/Cookies) · [RFC 6265](https://www.rfc-editor.org/rfc/rfc6265) |
 | 15 | [Sessiya](15-sessiya.md) | Serverdagi sessiya va cookie'dagi uning identifikatori. Sessiyani xavfsiz boshqarish | B+V | [MDN Session management](https://developer.mozilla.org/en-US/docs/Web/Security/Authentication/Session_management) |
-| 16 | HTTP autentifikatsiyasi | `Authorization` header'i. Basic va Bearer token. 401 javobi va `WWW-Authenticate` | V | [MDN HTTP authentication](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Authentication) · [RFC 9110 §11](https://www.rfc-editor.org/rfc/rfc9110#name-http-authentication) · [RFC 6750](https://www.rfc-editor.org/rfc/rfc6750) |
+| 16 | [HTTP autentifikatsiyasi](16-http-autentifikatsiya.md) | `Authorization` header'i. Basic va Bearer token. 401 javobi va `WWW-Authenticate` | V | [MDN HTTP authentication](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Authentication) · [RFC 9110 §11](https://www.rfc-editor.org/rfc/rfc9110#name-http-authentication) · [RFC 6750](https://www.rfc-editor.org/rfc/rfc6750) |
 | 17 | Parol, bir martalik kod va passkey | Foydalanuvchini tanish usullari va har birining zaif tomoni | — | [MDN Passwords](https://developer.mozilla.org/en-US/docs/Web/Security/Authentication/Passwords) · [MDN One-time passwords](https://developer.mozilla.org/en-US/docs/Web/Security/Authentication/OTP) · [MDN Passkeys](https://developer.mozilla.org/en-US/docs/Web/Security/Authentication/Passkeys) |
 
 ## IV qism — Brauzer xavfsizligi (18–24)
