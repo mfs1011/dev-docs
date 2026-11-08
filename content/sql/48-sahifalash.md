@@ -1,6 +1,6 @@
 # 48 — Sahifalash
 
-[← Oldingi: Sekin so'rovlar](47-sekin-sorovlar.md) · [Mundarija](README.md)
+[← Oldingi: Sekin so'rovlar](47-sekin-sorovlar.md) · [Mundarija](README.md) · [Keyingi: To'liq matnli qidiruv →](49-toliq-matnli-qidiruv.md)
 
 ## Tushuncha
 
