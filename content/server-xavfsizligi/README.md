@@ -45,7 +45,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - Ma'lumotlar bazasining zaxirasi — **"SQL"** kitobida.
 - Server buzilganda nima qilish (incident response): Debian'ning shu mavzudagi "Securing Debian Manual" qo'llanmasi debian.org'da endi yo'q, boshqa joriy rasmiy manba topilmadi. Shu sababli bu mavzu kiritilmadi.
 
-> **Holat.** Qo'llanma yozilmoqda: 5/24 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 6/24 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -74,7 +74,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 | 03 | [Paketlarni yangilash](03-paket-yangilash.md) | `apt update` va `apt upgrade`. Bosqichma-bosqich yangilanishlar (phased updates). Keraksiz paketlarni olib tashlash. Uchinchi tomon omborlarining xavfi | V | [UB Security suggestions](https://ubuntu.com/server/docs/explanation/security/security_suggestions/) · [UB About apt upgrade and phased updates](https://ubuntu.com/server/docs/explanation/software/about-apt-upgrade-and-phased-updates/) · [UB Package management](https://ubuntu.com/server/docs/how-to/software/package-management/) |
 | 04 | [Avtomatik yangilanishlar](04-avto-yangilash.md) | `unattended-upgrades`: sozlama fayllari, qaysi omborlardan, paketni istisno qilish, natija haqida xabar | V | [UB Automatic updates](https://ubuntu.com/server/docs/how-to/software/automatic-updates/) · [UM unattended-upgrade(8)](https://manpages.ubuntu.com/manpages/resolute/man8/unattended-upgrade.8.html) |
 | 05 | [Qayta ishga tushirish](05-qayta-ishga-tushirish.md) | Yangilangan kutubxonadan foydalanayotgan servislarni qayta ishga tushirish (`needrestart`). Yadro yangilanganda reboot. Avtomatik reboot sozlamasi | V | [UB Automatic updates](https://ubuntu.com/server/docs/how-to/software/automatic-updates/) (Reboots, Service restarts) |
-| 06 | Qo'llab-quvvatlash muddati | LTS muddati. Ubuntu Pro: ESM (10 yil) va Livepatch (yadroni rebootsiz yamash). Keyingi LTS'ga o'tish | V | [UB Security suggestions](https://ubuntu.com/server/docs/explanation/security/security_suggestions/) · [US ESM](https://documentation.ubuntu.com/security/security-updates/esm/) · [UB Upgrade your release](https://ubuntu.com/server/docs/how-to/software/upgrade-your-release/) |
+| 06 | [Qo'llab-quvvatlash muddati](06-qollab-muddati.md) | LTS muddati. Ubuntu Pro: ESM (10 yil) va Livepatch (yadroni rebootsiz yamash). Keyingi LTS'ga o'tish | V | [UB Security suggestions](https://ubuntu.com/server/docs/explanation/security/security_suggestions/) · [US ESM](https://documentation.ubuntu.com/security/security-updates/esm/) · [UB Upgrade your release](https://ubuntu.com/server/docs/how-to/software/upgrade-your-release/) |
 
 ## III qism — Foydalanuvchilar va dasturlar (7–8)
 
