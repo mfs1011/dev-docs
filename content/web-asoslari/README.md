@@ -45,7 +45,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - nginx'da HTTPS'ni sozlash va sertifikat olish — **"Nginx va HTTPS"** kitobida.
 - Frontend framework'larda so'rov yuborish — framework kitoblarida.
 
-> **Holat.** Qo'llanma yozilmoqda: 24/30 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 25/30 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -108,7 +108,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
-| 25 | TLS nima beradi | Shifrlash, server haqiqiyligini tekshirish, ma'lumot o'zgarmaganini kafolatlash. TLS 1.3 da ulanish qanday o'rnatiladi (handshake) | V | [MDN Transport Layer Security](https://developer.mozilla.org/en-US/docs/Web/Security/Defenses/Transport_Layer_Security) · [RFC 9846](https://www.rfc-editor.org/rfc/rfc9846) |
+| 25 | [TLS nima beradi](25-tls.md) | Shifrlash, server haqiqiyligini tekshirish, ma'lumot o'zgarmaganini kafolatlash. TLS 1.3 da ulanish qanday o'rnatiladi (handshake) | V | [MDN Transport Layer Security](https://developer.mozilla.org/en-US/docs/Web/Security/Defenses/Transport_Layer_Security) · [RFC 9846](https://www.rfc-editor.org/rfc/rfc9846) |
 | 26 | Sertifikatlar | Sertifikat va tasdiqlovchi markaz (CA), sertifikatlar zanjiri, domen nomi mosligi. `openssl s_client` bilan ko'rish. Certificate Transparency | V | [MDN TLS configuration](https://developer.mozilla.org/en-US/docs/Web/Security/Practical_implementation_guides/TLS) · [MDN Certificate Transparency](https://developer.mozilla.org/en-US/docs/Web/Security/Defenses/Certificate_Transparency) |
 | 27 | HSTS | `Strict-Transport-Security`: brauzer saytga keyingi safar faqat HTTPS orqali kiradi | B+V | [MDN Strict-Transport-Security](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Strict-Transport-Security) · [RFC 6797](https://www.rfc-editor.org/rfc/rfc6797) |
 | 28 | O'rtadagi odam hujumi | Tarmoq yo'lidagi kimdir so'rovni o'qishi yoki o'zgartirishi (MITM). HTTPS bunga qanday to'sqinlik qiladi | — | [MDN Manipulator in the Middle](https://developer.mozilla.org/en-US/docs/Web/Security/Attacks/MITM) |
