@@ -213,3 +213,9 @@ Ikkinchi noutbukda boshlashdan oldin shu faylni, `CLAUDE.md` ni va kitobning `RE
 - Navbat: domen talab qilmaydigan V-boblar — 3–17, 26–30. HTTPS boblari (19–25, V+D) — domen bo'yicha egasining qarori kutilmoqda (Let's Encrypt `shortlived` profili IP sertifikatni ham beradi, lekin bu VPS IP'sini ochiq CT jurnallariga yozadi — qarorsiz ishlatilmaydi).
 - Manba: nginx.org HTML sahifalari (`h2t.py` bilan matnga) va docs.nginx.com (markdown manbasi: `raw.githubusercontent.com/nginx/documentation/main/content/nginx/...`).
 - Proksi boblarida backend — Python standart kutubxonasidagi kichik server (Node.js VPS'da yo'q; misollar tili qarori Redis/RabbitMQ bilan birga kutilmoqda). README 11-bob qatoridagi "Node.js" so'zi "orqadagi ilova"ga o'zgartirildi.
+
+## Redis kitobi (`content/redis/`)
+
+- Branch `docs/redis-1`. Tayyor: 1–12, 15, 25–34-boblar (2026-11-08). VPS'ga Redis 8.10.3 rasmiy APT omboridan (`packages.redis.io`, `resolute`) o'rnatildi, servis `redis-server`, faqat `127.0.0.1`/`::1:6379`.
+- Manba: `raw.githubusercontent.com/redis/docs/main/content/...` (markdown). Hujjat `main` tarmog'ida hali chiqmagan imkoniyatlar bo'lishi mumkin (masalan, Arrays turi, 8.12 RC) — har bobda o'rnatilgan 8.10.3 da tekshiriladi.
+- Navbat: avval `redis-cli` bilan (V) boblar — 3–12, 15, 25–34; Node.js (V+N) boblari — misollar tili bo'yicha egasining qarori kutilmoqda (README'da hozir Node.js).
