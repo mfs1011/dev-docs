@@ -209,7 +209,7 @@ Ikkinchi noutbukda boshlashdan oldin shu faylni, `CLAUDE.md` ni va kitobning `RE
 
 ## Nginx kitobi (`content/nginx/`)
 
-- Branch `docs/nginx-1`. Tayyor: 1–17, 26–27-boblar (2026-11-08). VPS'ga nginx 1.31.8 (mainline) rasmiy nginx.org omboridan o'rnatildi (`/etc/apt/sources.list.d/nginx.list`, pinning `/etc/apt/preferences.d/99nginx`), servis `nginx`, 80-port.
+- Branch `docs/nginx-1`. Tayyor: 1–17, 26–28-boblar (2026-11-08). VPS'ga nginx 1.31.8 (mainline) rasmiy nginx.org omboridan o'rnatildi (`/etc/apt/sources.list.d/nginx.list`, pinning `/etc/apt/preferences.d/99nginx`), servis `nginx`, 80-port.
 - Navbat: domen talab qilmaydigan V-boblar — 3–17, 26–30. HTTPS boblari (19–25, V+D) — domen bo'yicha egasining qarori kutilmoqda (Let's Encrypt `shortlived` profili IP sertifikatni ham beradi, lekin bu VPS IP'sini ochiq CT jurnallariga yozadi — qarorsiz ishlatilmaydi).
 - Manba: nginx.org HTML sahifalari (`h2t.py` bilan matnga) va docs.nginx.com (markdown manbasi: `raw.githubusercontent.com/nginx/documentation/main/content/nginx/...`).
 - Proksi boblarida backend — Python standart kutubxonasidagi kichik server (Node.js VPS'da yo'q; misollar tili qarori Redis/RabbitMQ bilan birga kutilmoqda). README 11-bob qatoridagi "Node.js" so'zi "orqadagi ilova"ga o'zgartirildi.
