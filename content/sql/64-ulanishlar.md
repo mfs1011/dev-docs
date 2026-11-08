@@ -1,6 +1,6 @@
 # 64 — Ulanishlar
 
-[← Oldingi: Sxemani xavfsiz o'zgartirish](63-sxemani-xavfsiz-ozgartirish.md) · [Mundarija](README.md)
+[← Oldingi: Sxemani xavfsiz o'zgartirish](63-sxemani-xavfsiz-ozgartirish.md) · [Mundarija](README.md) · [Keyingi: Texnik xizmat →](65-texnik-xizmat.md)
 
 ## Tushuncha
 
