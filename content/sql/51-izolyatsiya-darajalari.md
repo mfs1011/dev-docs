@@ -1,6 +1,6 @@
 # 51 — Izolyatsiya darajalari
 
-[← Oldingi: Tranzaksiya](50-tranzaksiya.md) · [Mundarija](README.md)
+[← Oldingi: Tranzaksiya](50-tranzaksiya.md) · [Mundarija](README.md) · [Keyingi: MVCC →](52-mvcc.md)
 
 ## Tushuncha
 
