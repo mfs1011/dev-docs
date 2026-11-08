@@ -42,7 +42,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - Domen, CI/CD va nol to'xtovli deploy — **"Deploy amaliyoti"** kitobida.
 - Pochta proksi (mail), TCP/UDP proksi (stream), njs skriptlari — hujjatda: [NG docs](https://nginx.org/en/docs/).
 
-> **Holat.** Qo'llanma yozilmoqda: 6/30 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 7/30 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -72,7 +72,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 | --- | --- | --- | --- | --- |
 | 05 | [Statik sayt](05-statik-sayt.md) | `root` va `alias` farqi, `index`, `try_files` | V | [NA Serve Static Content](https://docs.nginx.com/nginx/admin-guide/web-server/serving-static-content/) · [NG core module](https://nginx.org/en/docs/http/ngx_http_core_module.html) · [NG index module](https://nginx.org/en/docs/http/ngx_http_index_module.html) |
 | 06 | [So'rov qaysi server'ga tushadi](06-server-tanlash.md) | `listen` va `server_name` bo'yicha tanlash, `default_server`. `location` turlari (`=`, `^~`, `~`, prefiks) va tanlash tartibi | V | [NG How nginx processes a request](https://nginx.org/en/docs/http/request_processing.html) · [NG Server names](https://nginx.org/en/docs/http/server_names.html) · [NG core module → location](https://nginx.org/en/docs/http/ngx_http_core_module.html#location) |
-| 07 | Redirect va rewrite | `return 301`, `rewrite`. Regex'dagi guruhlarni ishlatish | V | [NG rewrite module](https://nginx.org/en/docs/http/ngx_http_rewrite_module.html) · [NG Converting rewrite rules](https://nginx.org/en/docs/http/converting_rewrite_rules.html) · [NG Regular expression captures](https://nginx.org/en/docs/regex_captures.html) |
+| 07 | [Redirect va rewrite](07-redirect-rewrite.md) | `return 301`, `rewrite`. Regex'dagi guruhlarni ishlatish | V | [NG rewrite module](https://nginx.org/en/docs/http/ngx_http_rewrite_module.html) · [NG Converting rewrite rules](https://nginx.org/en/docs/http/converting_rewrite_rules.html) · [NG Regular expression captures](https://nginx.org/en/docs/regex_captures.html) |
 | 08 | Siqish | `gzip`, `gzip_types`, oldindan siqilgan fayllar (`gzip_static`) | V | [NA Compression and Decompression](https://docs.nginx.com/nginx/admin-guide/web-server/compression/) · [NG gzip module](https://nginx.org/en/docs/http/ngx_http_gzip_module.html) · [NG gzip_static module](https://nginx.org/en/docs/http/ngx_http_gzip_static_module.html) |
 | 09 | Javob header'lari va keshlash muddati | `add_header`, `expires` (`Cache-Control`). `always` parametri | V | [NG headers module](https://nginx.org/en/docs/http/ngx_http_headers_module.html) |
 | 10 | Loglar | `access_log` va `log_format`, `error_log` darajalari, syslog'ga yozish | V | [NA Configuring Logging](https://docs.nginx.com/nginx/admin-guide/monitoring/logging/) · [NG log module](https://nginx.org/en/docs/http/ngx_http_log_module.html) · [NG Logging to syslog](https://nginx.org/en/docs/syslog.html) |
