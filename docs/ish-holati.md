@@ -219,3 +219,8 @@ Ikkinchi noutbukda boshlashdan oldin shu faylni, `CLAUDE.md` ni va kitobning `RE
 - Branch `docs/redis-1`. Tayyor: 1–12, 15, 25–34-boblar (2026-11-08). VPS'ga Redis 8.10.3 rasmiy APT omboridan (`packages.redis.io`, `resolute`) o'rnatildi, servis `redis-server`, faqat `127.0.0.1`/`::1:6379`.
 - Manba: `raw.githubusercontent.com/redis/docs/main/content/...` (markdown). Hujjat `main` tarmog'ida hali chiqmagan imkoniyatlar bo'lishi mumkin (masalan, Arrays turi, 8.12 RC) — har bobda o'rnatilgan 8.10.3 da tekshiriladi.
 - Navbat: avval `redis-cli` bilan (V) boblar — 3–12, 15, 25–34; Node.js (V+N) boblari — misollar tili bo'yicha egasining qarori kutilmoqda (README'da hozir Node.js).
+
+## Server xavfsizligi kitobi (`content/server-xavfsizligi/`)
+
+- Branch `docs/server-xavfsizligi-1`. Tayyor: 1–8, 19–23-boblar (2026-11-09; wtmpdb + libpam-wtmpdb o'rnatildi (`last`); 24-bob (yakuniy ro'yxat) 9–18-boblardan keyin; etckeeper o'rnatildi (`/etc/.git`); restic 0.18.1, sinov ombori `/var/backups/restic` (paroli `/root/.restic-parol`; 21-bob uchun); 20-bobda SFTP sinovi qilinmadi — SSH kalit qo'shish ruxsat so'raydi; cron o'rnatildi; apparmor-utils o'rnatildi; admin foydalanuvchi `boshqaruv` (sudo, root kalitlari bilan; paroli `/root/boshqaruv-parol`); ubuntu-pro-client o'rnatildi, Pro'ga ulanmagan; VPS yadrosi 7.0.0-43 ga yangilanib qayta ishga tushirildi). Manba: `raw.githubusercontent.com/canonical/ubuntu-server-documentation/main/docs/...`.
+- Navbat: VPS'ga kirishni xavf ostiga qo'ymaydigan boblar — 2–8, 19–24. SSH/firewall boblari (9–18) — provayder konsoli tayyorligi bo'yicha egasining tasdig'i kerak.
