@@ -10,13 +10,14 @@ Manbalar va versiyalar (2026-11-07 da tekshirilgan):
 | --- | --- | --- |
 | Redis Open Source | 8.10.3 (2026-10-26). Hujjat eng so'nggi versiyani ishlatishni qat'iy tavsiya qiladi | <https://redis.io/docs/latest/operate/oss_and_stack/install/version-mgmt/> · <https://github.com/redis/redis/releases> |
 | O'rnatish | Redis'ning rasmiy APT ombori (`packages.redis.io`), unda Ubuntu 26.04 uchun 8.10.3 bor. Ubuntu'ning o'z paketi — 8.0.5 (universe), Redis 8.0 seriyasining qo'llab-quvvatlashi 2026-12-01 da tugaydi | <https://redis.io/docs/latest/operate/oss_and_stack/install/install-stack/apt/> · VPS: `apt-cache policy redis-server` |
-| Node.js klienti | `node-redis` (npm'da `redis`), 6.3.1 | <https://redis.io/docs/latest/develop/clients/nodejs/> · <https://www.npmjs.com/package/redis> |
+| Node.js klienti | `node-redis` (npm'da `redis`), 6.3.1; Node.js 26.13.0 LTS (2026-11-09 da tekshirilgan) | <https://redis.io/docs/latest/develop/clients/nodejs/> · <https://www.npmjs.com/package/redis> · <https://nodejs.org/dist/index.json> |
+| PHP klienti | `Predis` (Packagist'da `predis/predis`), 3.7.1 (2026-11-03); PHP 8.5.4, Composer 2.11.1. Hujjat Predis'ni PHP uchun tavsiya etilgan klient deydi (u Redis tomonidan emas, uchinchi tomon tomonidan ishlab chiqiladi) | <https://redis.io/docs/latest/develop/clients/php/> · <https://packagist.org/packages/predis/predis> |
 | Sinov VPS | Ubuntu 26.04 LTS | — |
 
 Muhit tanlovi haqida:
 
 - **Versiya.** Redis'ning versiyalar siyosatiga ko'ra oraliq (standard) relizlar keyingi reliz chiqqandan keyin 6 oy, uzaytirilgan (extended) relizlar esa 5 yil xavfsizlik tuzatishlarini oladi. Hujjat eng so'nggisini tavsiya qiladi, shuning uchun qo'llanma 8.10 ga tayanadi.
-- **Nega Node.js.** Hujjatdagi amaliy naqshlar (Use cases) har biri bir nechta tilda yozilgan, ular orasida Node.js (`node-redis`) va PHP ham bor. Saytda JavaScript kitobi bor, shuning uchun ilova kodi Node.js'da.
+- **Nega Node.js va PHP.** Hujjatdagi amaliy naqshlar (Use cases) har biri bir nechta tilda yozilgan, ular orasida Node.js (`node-redis`) va PHP (`Predis`) ham bor. Saytda JavaScript va Laravel/Symfony kitoblari bor, shuning uchun har misol ikki tilda beriladi.
 
 Qisqartmalar:
 
@@ -25,7 +26,7 @@ Qisqartmalar:
 "Muhit" ustunida:
 
 - **V** — VPS'da, `redis-cli` bilan.
-- **V+N** — VPS'dagi Redis va Node.js'dagi ilova kodi (`node-redis`).
+- **V+N** — VPS'dagi Redis va ilova kodi: Node.js (`node-redis`) va PHP (`Predis`).
 - **—** — tushuncha bobi, buyruqsiz.
 
 Bu qo'llanmaga kirmaydigan mavzular:
@@ -33,7 +34,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - Navbat va hodisalar oqimi tizimlarini taqqoslash (Redis, RabbitMQ, Kafka) — **"Xabar tizimlari"** kitobida.
 - Qidiruv (Query Engine), vektorlar va sun'iy intellekt uchun imkoniyatlar, Redis Cloud va Redis Software (pullik mahsulotlar) — hujjatda: [RD Search and query](https://redis.io/docs/latest/develop/ai/search-and-query/).
 
-> **Holat.** Qo'llanma yozilmoqda: 23/34 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 24/34 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -74,7 +75,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
-| 13 | Node.js'dan ulanish | `node-redis`: ulanish, buyruq yuborish, xatolarni ushlash | V+N | [RD node-redis](https://redis.io/docs/latest/develop/clients/nodejs/) · [RD Connect (Node.js)](https://redis.io/docs/latest/develop/clients/nodejs/connect/) · [RD Error handling (Node.js)](https://redis.io/docs/latest/develop/clients/nodejs/error-handling/) |
+| 13 | [Ilovadan ulanish](13-ilovadan-ulanish.md) | `node-redis` va `Predis`: ulanish, buyruq yuborish, xatolarni ushlash | V+N | [RD node-redis](https://redis.io/docs/latest/develop/clients/nodejs/) · [RD Connect (Node.js)](https://redis.io/docs/latest/develop/clients/nodejs/connect/) · [RD Error handling (Node.js)](https://redis.io/docs/latest/develop/clients/nodejs/error-handling/) · [RD Predis guide (PHP)](https://redis.io/docs/latest/develop/clients/php/) · [RD Error handling (PHP)](https://redis.io/docs/latest/develop/clients/php/error-handling/) |
 | 14 | Pipeline va tranzaksiya | Pipeline: ko'p buyruqni bitta borib-kelishda yuborish. `MULTI`/`EXEC`. `WATCH` bilan optimistik qulf | V+N | [RD Pipelining](https://redis.io/docs/latest/develop/using-commands/pipelining/) · [RD Transactions](https://redis.io/docs/latest/develop/using-commands/transactions/) · [RD Pipelines and transactions (Node.js)](https://redis.io/docs/latest/develop/clients/nodejs/transpipe/) |
 | 15 | [Lua skriptlar va funksiyalar](15-lua.md) | `EVAL`: bir nechta qadamni server ichida bitta atomik amal qilib bajarish. Redis Functions | V | [RD Scripting with Lua](https://redis.io/docs/latest/develop/programmability/eval-intro/) · [RD Functions](https://redis.io/docs/latest/develop/programmability/functions-intro/) |
 | 16 | Production'da klient | Ulanish, timeout va qayta ulanish sozlamalari | V+N | [RD Production usage (Node.js)](https://redis.io/docs/latest/develop/clients/nodejs/produsage/) |
