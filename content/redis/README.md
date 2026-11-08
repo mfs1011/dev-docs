@@ -33,7 +33,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - Navbat va hodisalar oqimi tizimlarini taqqoslash (Redis, RabbitMQ, Kafka) — **"Xabar tizimlari"** kitobida.
 - Qidiruv (Query Engine), vektorlar va sun'iy intellekt uchun imkoniyatlar, Redis Cloud va Redis Software (pullik mahsulotlar) — hujjatda: [RD Search and query](https://redis.io/docs/latest/develop/ai/search-and-query/).
 
-> **Holat.** Qo'llanma yozilmoqda: 17/34 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 18/34 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -100,7 +100,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 | 26 | [Konfiguratsiya](26-konfiguratsiya.md) | `redis.conf`. Ishlab turgan serverda `CONFIG GET`/`CONFIG SET` | V | [RD Configuration](https://redis.io/docs/latest/operate/oss_and_stack/management/config/) |
 | 27 | [Xotira chegarasi va evikt](27-xotira-evikt.md) | `maxmemory`. Xotira to'lganda qaysi kalit o'chiriladi (eviction policy). Xotirani tejash | V | [RD Key eviction](https://redis.io/docs/latest/develop/reference/eviction/) · [RD Memory optimization](https://redis.io/docs/latest/operate/oss_and_stack/management/optimization/memory-optimization/) |
 | 28 | [Diskka saqlash](28-diskka-saqlash.md) | RDB (snapshot) va AOF (har yozuv jurnali), ikkalasi birga. Qayta yonganda tiklash. Qaysi biri qachon | V | [RD Persistence](https://redis.io/docs/latest/operate/oss_and_stack/management/persistence/) |
-| 29 | Xavfsizlik | Himoyalangan rejim (protected mode), `bind`, parol. ACL foydalanuvchilari. TLS | V | [RD Security](https://redis.io/docs/latest/operate/oss_and_stack/management/security/) · [RD ACL](https://redis.io/docs/latest/operate/oss_and_stack/management/security/acl/) · [RD TLS](https://redis.io/docs/latest/operate/oss_and_stack/management/security/encryption/) |
+| 29 | [Xavfsizlik](29-xavfsizlik.md) | Himoyalangan rejim (protected mode), `bind`, parol. ACL foydalanuvchilari. TLS | V | [RD Security](https://redis.io/docs/latest/operate/oss_and_stack/management/security/) · [RD ACL](https://redis.io/docs/latest/operate/oss_and_stack/management/security/acl/) · [RD TLS](https://redis.io/docs/latest/operate/oss_and_stack/management/security/encryption/) |
 | 30 | Replikatsiya | Asosiy server va replika. Asinxron nusxalash. Replika faqat o'qish uchun | V | [RD Replication](https://redis.io/docs/latest/operate/oss_and_stack/management/replication/) |
 | 31 | Sentinel | Asosiy server ishdan chiqsa, replikani avtomatik asosiyga aylantirish (failover) | V | [RD Sentinel](https://redis.io/docs/latest/operate/oss_and_stack/management/sentinel/) |
 | 32 | Cluster | Ma'lumotni bir nechta serverga bo'lish (sharding), hash slot'lar. Hujjatdagi kabi bitta mashinada 6 tugun | V | [RD Scale with Redis Cluster](https://redis.io/docs/latest/operate/oss_and_stack/management/scaling/) |
