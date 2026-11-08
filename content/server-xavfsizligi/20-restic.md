@@ -88,7 +88,7 @@ Added to the repository: 62.675 KiB (12.835 KiB stored)
 snapshot 52068e4c saved
 ```
 
-813 fayl `unmodified` — qayta yozilmadi; omborga atigi 12.8 KiB qo'shildi. Har zaxira — to'liq holat (snapshot), lekin joy faqat o'zgarishga ketadi. (Sinovdan keyin `/etc/motd` asl holiga qaytarildi.)
+813 fayl `unmodified` — qayta yozilmadi; omborga atigi 12.8 KiB qo'shildi. Har zaxira — to'liq holat (snapshot), lekin joy faqat o'zgarishga ketadi. (Sinovgacha `/etc/motd` bo'sh edi; sinovdan keyin yana bo'shatildi.)
 
 ### Ombor ichi — shifrlangan
 
