@@ -33,7 +33,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - Navbat va hodisalar oqimi tizimlarini taqqoslash (Redis, RabbitMQ, Kafka) — **"Xabar tizimlari"** kitobida.
 - Qidiruv (Query Engine), vektorlar va sun'iy intellekt uchun imkoniyatlar, Redis Cloud va Redis Software (pullik mahsulotlar) — hujjatda: [RD Search and query](https://redis.io/docs/latest/develop/ai/search-and-query/).
 
-> **Holat.** Qo'llanma yozilmoqda: 2/34 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 3/34 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -54,7 +54,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 | --- | --- | --- | --- | --- |
 | 01 | [Redis nima](01-redis-nima.md) | Ma'lumotni xotirada (in-memory) saqlaydigan kalit-qiymat ombori. Ma'lumot turlari. Qayerda ishlatiladi: kesh, sessiya, navbat, hisoblagich, reyting | V | [RD Redis as an in-memory data structure store](https://redis.io/docs/latest/develop/get-started/data-store/) · [RD Use cases](https://redis.io/docs/latest/develop/use-cases/) |
 | 02 | [O'rnatish](02-ornatish.md) | Rasmiy APT omboridan o'rnatish, servis, `redis-cli ping`. Ubuntu paketi va versiyalar siyosati | V | [RD Install on Ubuntu/Debian (APT)](https://redis.io/docs/latest/operate/oss_and_stack/install/install-stack/apt/) · [RD Version management](https://redis.io/docs/latest/operate/oss_and_stack/install/version-mgmt/) |
-| 03 | redis-cli | Interaktiv rejim, bitta buyruqni bajarish, kalitlarni ko'rib chiqish (`--scan`), chiqish formatlari | V | [RD Redis CLI](https://redis.io/docs/latest/develop/tools/cli/) |
+| 03 | [redis-cli](03-redis-cli.md) | Interaktiv rejim, bitta buyruqni bajarish, kalitlarni ko'rib chiqish (`--scan`), chiqish formatlari | V | [RD Redis CLI](https://redis.io/docs/latest/develop/tools/cli/) |
 | 04 | Kalitlar va muddat | Kalit nomlash. `EXISTS`, `DEL`, `TYPE`. Hamma kalitni ko'rish uchun `SCAN` (production'da `KEYS` emas). Muddat: `EXPIRE`, `TTL`, `PERSIST` | V | [RD Keys and values](https://redis.io/docs/latest/develop/using-commands/keyspace/) · [RD SCAN](https://redis.io/docs/latest/commands/scan/) · [RD KEYS](https://redis.io/docs/latest/commands/keys/) |
 
 ## II qism — Ma'lumot turlari (5–12)
