@@ -45,7 +45,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - Ma'lumotlar bazasining zaxirasi — **"SQL"** kitobida.
 - Server buzilganda nima qilish (incident response): Debian'ning shu mavzudagi "Securing Debian Manual" qo'llanmasi debian.org'da endi yo'q, boshqa joriy rasmiy manba topilmadi. Shu sababli bu mavzu kiritilmadi.
 
-> **Holat.** Qo'llanma yozilmoqda: 8/24 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 9/24 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -107,7 +107,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
-| 19 | Shell skript bilan zaxira | Ubuntu hujjatidagi `tar` skripti, eski arxivlarni aylantirish (rotation), arxivdan tiklash. Rejali ishga tushirish | V | [UB Backup with shell scripts](https://ubuntu.com/server/docs/how-to/backups/back-up-using-shell-scripts/) · [UB Backups and version control](https://ubuntu.com/server/docs/how-to/backups/) |
+| 19 | [Shell skript bilan zaxira](19-shell-zaxira.md) | Ubuntu hujjatidagi `tar` skripti, eski arxivlarni aylantirish (rotation), arxivdan tiklash. Rejali ishga tushirish | V | [UB Backup with shell scripts](https://ubuntu.com/server/docs/how-to/backups/back-up-using-shell-scripts/) · [UB Backups and version control](https://ubuntu.com/server/docs/how-to/backups/) |
 | 20 | restic | Shifrlangan va takrorlarni bir marta saqlaydigan zaxira. Ombor yaratish, zaxira, snapshot'lar, eskilarini o'chirish (`forget`, `prune`). Boshqa serverdagi omborga (SFTP) | V | [RS Documentation](https://restic.readthedocs.io/en/stable/) |
 | 21 | Zaxiradan tiklash | Tiklashni sinab ko'rish: `restic restore`, faylni alohida tiklash, zaxira butunligini tekshirish (`restic check`) | V | [RS Documentation](https://restic.readthedocs.io/en/stable/) |
 | 22 | `/etc` ni git bilan kuzatish | `etckeeper`: sozlama fayllaridagi har o'zgarish tarixi | V | [UB etckeeper](https://ubuntu.com/server/docs/how-to/backups/install-etckeeper/) |
