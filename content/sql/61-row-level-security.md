@@ -1,6 +1,6 @@
 # 61 — Row Level Security (PG)
 
-[← Oldingi: Rollar va huquqlar](60-rollar-va-huquqlar.md) · [Mundarija](README.md)
+[← Oldingi: Rollar va huquqlar](60-rollar-va-huquqlar.md) · [Mundarija](README.md) · [Keyingi: Sxemani xavfsiz o'zgartirish →](63-sxemani-xavfsiz-ozgartirish.md)
 
 ## Tushuncha
 
