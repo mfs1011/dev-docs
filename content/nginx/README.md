@@ -42,7 +42,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - Domen, CI/CD va nol to'xtovli deploy — **"Deploy amaliyoti"** kitobida.
 - Pochta proksi (mail), TCP/UDP proksi (stream), njs skriptlari — hujjatda: [NG docs](https://nginx.org/en/docs/).
 
-> **Holat.** Qo'llanma tayyorlanmoqda — quyida rejalashtirilgan mundarija.
+> **Holat.** Qo'llanma yozilmoqda: 2/30 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -61,8 +61,8 @@ Bu qo'llanmaga kirmaydigan mavzular:
 
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
-| 01 | nginx nima qiladi | Veb-server, reverse proxy (so'rovni orqadagi ilovaga uzatuvchi), yuklamani taqsimlovchi, HTTPS'ni tugatuvchi. Master va worker jarayonlar | — | [NG Beginner's Guide](https://nginx.org/en/docs/beginners_guide.html) · [NA Web Server](https://docs.nginx.com/nginx/admin-guide/web-server/web-server/) |
-| 02 | O'rnatish | Rasmiy nginx ombori (mainline), Ubuntu paketi bilan farqi. Servis, `nginx -v` va `nginx -V` | V | [NG Linux packages](https://nginx.org/en/linux_packages.html) · [NA Installing NGINX Open Source](https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-open-source/) |
+| 01 | [nginx nima qiladi](01-nginx-nima.md) | Veb-server, reverse proxy (so'rovni orqadagi ilovaga uzatuvchi), yuklamani taqsimlovchi, HTTPS'ni tugatuvchi. Master va worker jarayonlar | — | [NG Beginner's Guide](https://nginx.org/en/docs/beginners_guide.html) · [NA Web Server](https://docs.nginx.com/nginx/admin-guide/web-server/web-server/) |
+| 02 | [O'rnatish](02-ornatish.md) | Rasmiy nginx ombori (mainline), Ubuntu paketi bilan farqi. Servis, `nginx -v` va `nginx -V` | V | [NG Linux packages](https://nginx.org/en/linux_packages.html) · [NA Installing NGINX Open Source](https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-open-source/) |
 | 03 | Konfiguratsiya tuzilishi | Direktivalar va bloklar: `events`, `http`, `server`, `location`. `include`. `nginx -t` bilan tekshirish | V | [NG Beginner's Guide](https://nginx.org/en/docs/beginners_guide.html) · [NA Configuration Files](https://docs.nginx.com/nginx/admin-guide/basic-functionality/managing-configuration-files/) |
 | 04 | nginx'ni boshqarish | Signallar. `nginx -s reload`: yangi worker'lar yangi sozlama bilan ishga tushadi, eskilari ulanishlarni tugatib chiqadi. Loglarni qayta ochish (USR1). systemd bilan | V | [NG Controlling nginx](https://nginx.org/en/docs/control.html) · [NG Command-line parameters](https://nginx.org/en/docs/switches.html) · [NA Runtime Control](https://docs.nginx.com/nginx/admin-guide/basic-functionality/runtime-control/) |
 
