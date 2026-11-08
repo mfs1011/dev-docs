@@ -45,7 +45,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - nginx'da HTTPS'ni sozlash va sertifikat olish — **"Nginx va HTTPS"** kitobida.
 - Frontend framework'larda so'rov yuborish — framework kitoblarida.
 
-> **Holat.** Qo'llanma yozilmoqda: 17/30 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 18/30 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -96,7 +96,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
-| 18 | Same-origin siyosati | Sahifa boshqa origin'dagi ma'lumotni nega o'qiy olmaydi. Nima mumkin va nima mumkin emas | B | [MDN Same-origin policy](https://developer.mozilla.org/en-US/docs/Web/Security/Defenses/Same-origin_policy) |
+| 18 | [Same-origin siyosati](18-same-origin.md) | Sahifa boshqa origin'dagi ma'lumotni nega o'qiy olmaydi. Nima mumkin va nima mumkin emas | B | [MDN Same-origin policy](https://developer.mozilla.org/en-US/docs/Web/Security/Defenses/Same-origin_policy) |
 | 19 | CORS | Server boshqa origin'ga ruxsat beradi: `Access-Control-Allow-Origin`. Oldindan tekshiruv so'rovi (preflight, `OPTIONS`). Cookie bilan so'rov (credentials). Konsoldagi CORS xatosini o'qish | B+V | [MDN CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS) · [MDN CORS configuration](https://developer.mozilla.org/en-US/docs/Web/Security/Practical_implementation_guides/CORS) · [WHATWG Fetch → CORS protocol](https://fetch.spec.whatwg.org/#http-cors-protocol) |
 | 20 | CSRF | Foydalanuvchi nomidan soxta so'rov. Himoya: `SameSite` cookie, CSRF token | B | [MDN CSRF](https://developer.mozilla.org/en-US/docs/Web/Security/Attacks/CSRF) |
 | 21 | XSS va CSP | Sahifaga begona skript kiritish (XSS). `Content-Security-Policy` bilan cheklash | B | [MDN XSS](https://developer.mozilla.org/en-US/docs/Web/Security/Attacks/XSS) · [MDN CSP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP) |
