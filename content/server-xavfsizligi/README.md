@@ -45,7 +45,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - Ma'lumotlar bazasining zaxirasi — **"SQL"** kitobida.
 - Server buzilganda nima qilish (incident response): Debian'ning shu mavzudagi "Securing Debian Manual" qo'llanmasi debian.org'da endi yo'q, boshqa joriy rasmiy manba topilmadi. Shu sababli bu mavzu kiritilmadi.
 
-> **Holat.** Qo'llanma yozilmoqda: 12/24 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 13/24 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -116,7 +116,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
-| 23 | Kim kirdi | SSH loglari (`journalctl -u ssh`). Kirishlar tarixi: Ubuntu 26.04 da `last` buyrug'i `wtmpdb` paketidan keladi (bizning VPS shablonida o'rnatilmagan). sshd'ning `LogLevel` sozlamasi | V | [UM journalctl(1)](https://manpages.ubuntu.com/manpages/resolute/man1/journalctl.1.html) · [UM wtmpdb (last)](https://manpages.ubuntu.com/manpages/resolute/man1/last.1.html) · [SSH sshd_config(5)](https://man.openbsd.org/sshd_config) |
+| 23 | [Kim kirdi](23-kim-kirdi.md) | SSH loglari (`journalctl -u ssh`). Kirishlar tarixi: Ubuntu 26.04 da `last` buyrug'i `wtmpdb` paketidan keladi (bizning VPS shablonida o'rnatilmagan). sshd'ning `LogLevel` sozlamasi | V | [UM journalctl(1)](https://manpages.ubuntu.com/manpages/resolute/man1/journalctl.1.html) · [UM wtmpdb (last)](https://manpages.ubuntu.com/manpages/resolute/man1/last.1.html) · [SSH sshd_config(5)](https://man.openbsd.org/sshd_config) |
 | 24 | ⚑ Yakuniy tekshiruv ro'yxati | Yangilanishlar, foydalanuvchilar, SSH, firewall, ochiq portlar, zaxira — butun kitob bo'yicha bitta ro'yxat | V | [UB Security suggestions](https://ubuntu.com/server/docs/explanation/security/security_suggestions/) |
 
 ---
