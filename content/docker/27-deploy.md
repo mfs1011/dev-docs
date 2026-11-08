@@ -1,6 +1,6 @@
 # 27 — Serverga deploy
 
-[← Oldingi: CI'da Docker](26-ci.md) · [Mundarija](README.md)
+[← Oldingi: CI'da Docker](26-ci.md) · [Mundarija](README.md) · [Keyingi: Muammolarni topish va tozalash →](28-muammolar-va-tozalash.md)
 
 ## Tushuncha
 

@@ -105,7 +105,7 @@ node linux-trenajor/test/mashqlar.mjs          # barcha mashqlarni brauzerda tek
   - VPS qayta yondirildi, yadro 7.0.0-42 (33–34-boblar);
   - `lsof`, `psmisc`, `tmux` (30, 32-boblar), `rsync` 3.4.1 (46-bob) va `shellcheck` 0.11.0 (50–51-boblar) o'rnatildi;
   - 51-bobdagi `zaxira` timer'i, skripti va `/var/backups/zaxira` sinovdan keyin o'chirilgan;
-  - Docker Engine 29.9.3 o'rnatilgan (Docker kitobi uchun, rasmiy apt repozitoriy); sinov image'lari, `/root/` dagi sinov papkalari (`hisob`, `kesh`, `ms`, `s8`–`s19`, `stack`, `salom-ilova`); konteynerlar ishlamaydi;
+  - Docker Engine 29.9.3 o'rnatilgan (Docker kitobi uchun, rasmiy apt repozitoriy); sinov image'lari, `/root/` dagi sinov papkalari (`hisob`, `kesh`, `ms`, `s8`–`s19`, `stack`, `salom-ilova`, `next`, `spa`, `db`, `reg`, `deploy`, `tash`); 28-bobda `image prune -a` va `builder prune -a` qilingan; ishlab turgan: `registry` (127.0.0.1:5000, unless-stopped) va `deploy-web-1` (127.0.0.1:8085) — kerak bo'lmasa `docker rm -f registry` va `cd /root/deploy && docker compose down`;
   - 54-bob uchun: `journalctl --vacuum-size=50M` (jurnal 116M → 32M) va `apt-get clean` bajarilgan; eski yadro `7.0.0-38` ataylab qoldirilgan ("qo'lda" belgilangan, zaxira yadro);
   - `salom.service` va unga tegishli hamma narsa 39-bobdan keyin o'chirildi; 43–47-boblardagi sinov servislari, `demo` foydalanuvchisi va vaqtinchalik ufw qoidalari ham o'chirilgan;
   - ufw yoqilgan: standart holatda `deny (incoming)`, provayder qoidalari 80, 443, 22 va 1500/tcp (ispmanager, unda hech narsa tinglamaydi);
@@ -117,7 +117,9 @@ node linux-trenajor/test/mashqlar.mjs          # barcha mashqlarni brauzerda tek
 
 - Mundarija rasmiy hujjatga (docs.docker.com) solishtirib qayta tuzilgan: har bob yonida manba, versiyalar jadvali (Engine 29.9.3, Desktop 4.98.0, Compose v5.7.0, Node.js 26).
 - Misollar **VPS'dagi Docker Engine 29.9.3** da (noutbukdagi Docker Desktop eski — 4.35.1; yangilanmaguncha macOS chiqishlari olinmaydi). 2-bobdagi Desktop qismi rasmiy hujjat asosida.
-- Tayyor: **1–20-boblar** (I–III qismlar), branch `docs/docker-qism-1`. Keyingi: 21-bob (PHP: Laravel va Symfony).
+- **Tayyor: 28/28 bob** (2026-11-08), branch `docs/docker-qism-1`.
+- GitHub'da sinalmagan (hisob/repo kerak, bobda ochiq belgilangan): 25-bobdagi Docker Hub/GHCR `login`/`push`, 26-bobdagi workflow fayllari (rasmiy hujjat misollari). Teglash/push/kesh mexanikasi VPS'dagi lokal `registry:3` da sinalgan.
+- Noutbuk Docker Desktop yangilansa — 2-bobga macOS chiqishlari qo'shilishi mumkin.
 - Bob yozish tartibi Linux kitobidagidek: rasmiy sahifa (`raw.githubusercontent.com/docker/docs/main/content/...` — manba markdown), VPS'da sinash, chiqishni yozib olish, `chiqish_tekshir.py`, havolalar, Playwright bilan sahifa.
 - Yordamchilar (scratchpad'da edi, kerak bo'lsa qayta yoziladi): VPS'da buyruqlar ro'yxatini `nohup` bilan bajarib, `$ buyruq` + chiqish qaytaradigan skript (SSH uzilishlariga chidamli); `docker_ulash.py` — bobni README va oldingi bobga ulash (`N/28`).
 - Kuzatuvlar: `pkill -f "<matn>"` SSH ichidagi o'z qobig'ini ham o'ldiradi — `[d]ocker` kabi shablon ishlating; noutbuk–VPS SSH ulanishi vaqti-vaqti bilan uziladi.
