@@ -34,7 +34,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - Navbat va hodisalar oqimi tizimlarini taqqoslash (Redis, RabbitMQ, Kafka) — **"Xabar tizimlari"** kitobida.
 - Qidiruv (Query Engine), vektorlar va sun'iy intellekt uchun imkoniyatlar, Redis Cloud va Redis Software (pullik mahsulotlar) — hujjatda: [RD Search and query](https://redis.io/docs/latest/develop/ai/search-and-query/).
 
-> **Holat.** Qo'llanma yozilmoqda: 28/34 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 29/34 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -86,7 +86,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 | --- | --- | --- | --- | --- |
 | 17 | [Kesh: cache-aside](17-cache-aside.md) | Bazadan o'qishni keshlash. TTL bilan eskirishni cheklash. Ma'lumot o'zgarganda keshni yangilash | V+N | [RD Cache-aside](https://redis.io/docs/latest/develop/use-cases/cache-aside/) · [RD Cache-aside (node-redis)](https://redis.io/docs/latest/develop/use-cases/cache-aside/nodejs/) · [(Predis)](https://redis.io/docs/latest/develop/use-cases/cache-aside/php/) |
 | 18 | [Oldindan yuklangan kesh](18-prefetch.md) | Ma'lumotni oldindan yuklab qo'yish (prefetch): har o'qish keshdan | V+N | [RD Prefetch cache](https://redis.io/docs/latest/develop/use-cases/prefetch-cache/) · [RD Prefetch cache (node-redis)](https://redis.io/docs/latest/develop/use-cases/prefetch-cache/nodejs/) · [(Predis)](https://redis.io/docs/latest/develop/use-cases/prefetch-cache/php/) |
-| 19 | Sessiyalar | Veb-sessiyalarni Redis'da saqlash va muddatini boshqarish | V+N | [RD Session store](https://redis.io/docs/latest/develop/use-cases/session-store/) |
+| 19 | [Sessiyalar](19-sessiyalar.md) | Veb-sessiyalarni Redis'da saqlash va muddatini boshqarish | V+N | [RD Session store](https://redis.io/docs/latest/develop/use-cases/session-store/) · [RD Session store (node-redis)](https://redis.io/docs/latest/develop/use-cases/session-store/nodejs/) · [(Predis)](https://redis.io/docs/latest/develop/use-cases/session-store/php/) |
 | 20 | Rate limiter | So'rovlar sonini cheklash: qat'iy oyna (fixed window), suriluvchi oyna (sliding window), token bucket | V+N | [RD Rate limiter](https://redis.io/docs/latest/develop/use-cases/rate-limiter/) |
 | 21 | Fon ishlari navbati | Ishonchli navbat (`BLMOVE`). Kechiktirilgan ishlar (sorted set) | V+N | [RD Job queue](https://redis.io/docs/latest/develop/use-cases/job-queue/) · [RD Lists](https://redis.io/docs/latest/develop/data-types/lists/) |
 | 22 | Pub/Sub | Kanallar va obunachilar. Yetkazish "ko'pi bilan bir marta" (at-most-once): o'sha payt ulanmagan obunachi xabarni olmaydi. Kalit o'zgarishlari haqida xabar (keyspace notifications) | V+N | [RD Pub/sub](https://redis.io/docs/latest/develop/pubsub/) · [RD Pub/sub messaging](https://redis.io/docs/latest/develop/use-cases/pub-sub/) · [RD Keyspace notifications](https://redis.io/docs/latest/develop/pubsub/keyspace-notifications/) |
