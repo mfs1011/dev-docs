@@ -42,7 +42,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - Domen, CI/CD va nol to'xtovli deploy — **"Deploy amaliyoti"** kitobida.
 - Pochta proksi (mail), TCP/UDP proksi (stream), njs skriptlari — hujjatda: [NG docs](https://nginx.org/en/docs/).
 
-> **Holat.** Qo'llanma yozilmoqda: 16/30 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 17/30 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -87,7 +87,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 | 14 | [Timeout va bufer](14-timeout-bufer.md) | `proxy_connect_timeout`, `proxy_read_timeout`, `proxy_buffering`. 502 va 504 qayerdan chiqadi | V | [NG proxy module](https://nginx.org/en/docs/http/ngx_http_proxy_module.html) · [NA Reverse Proxy](https://docs.nginx.com/nginx/admin-guide/web-server/reverse-proxy/) |
 | 15 | [Yuklamani taqsimlash](15-yuklama.md) | `upstream`. Round-robin, `least_conn`, `ip_hash`, `hash`. Og'irlik (`weight`). Ishdan chiqqan serverni passiv aniqlash (`max_fails`, `fail_timeout`). `backup` server | V | [NG Using nginx as HTTP load balancer](https://nginx.org/en/docs/http/load_balancing.html) · [NG upstream module](https://nginx.org/en/docs/http/ngx_http_upstream_module.html) · [NA HTTP Load Balancing](https://docs.nginx.com/nginx/admin-guide/load-balancer/http-load-balancer/) |
 | 16 | [Proxy kesh](16-proxy-kesh.md) | `proxy_cache_path`, `proxy_cache`, `proxy_cache_valid`. Backend ishlamaganda eski javobni berish (`proxy_cache_use_stale`) | V | [NA Content Caching](https://docs.nginx.com/nginx/admin-guide/content-cache/content-caching/) · [NG proxy module](https://nginx.org/en/docs/http/ngx_http_proxy_module.html) |
-| 17 | Mijozning haqiqiy IP manzili | Boshqa proxy yoki CDN ortida: `set_real_ip_from`, `real_ip_header` | V | [NG realip module](https://nginx.org/en/docs/http/ngx_http_realip_module.html) |
+| 17 | [Mijozning haqiqiy IP manzili](17-haqiqiy-ip.md) | Boshqa proxy yoki CDN ortida: `set_real_ip_from`, `real_ip_header` | V | [NG realip module](https://nginx.org/en/docs/http/ngx_http_realip_module.html) |
 
 ## IV qism — HTTPS (18–25)
 
