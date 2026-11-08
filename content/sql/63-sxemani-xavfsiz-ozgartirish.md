@@ -1,6 +1,6 @@
 # 63 — Sxemani xavfsiz o'zgartirish
 
-[← Oldingi: Row Level Security (PG)](61-row-level-security.md) · [Mundarija](README.md)
+[← Oldingi: Row Level Security (PG)](61-row-level-security.md) · [Mundarija](README.md) · [Keyingi: Ulanishlar →](64-ulanishlar.md)
 
 ## Tushuncha
 
