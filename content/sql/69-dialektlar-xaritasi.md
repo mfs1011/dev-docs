@@ -1,6 +1,6 @@
 # 69 — Dialektlar xaritasi
 
-[← Oldingi: Replikatsiya va monitoring](67-replikatsiya-va-monitoring.md) · [Mundarija](README.md)
+[← Oldingi: Replikatsiya va monitoring](67-replikatsiya-va-monitoring.md) · [Mundarija](README.md) · [Keyingi: Amaliy loyiha →](70-amaliy-loyiha.md)
 
 ## Tushuncha
 
