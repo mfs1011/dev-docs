@@ -33,7 +33,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - Navbat va hodisalar oqimi tizimlarini taqqoslash (Redis, RabbitMQ, Kafka) — **"Xabar tizimlari"** kitobida.
 - Qidiruv (Query Engine), vektorlar va sun'iy intellekt uchun imkoniyatlar, Redis Cloud va Redis Software (pullik mahsulotlar) — hujjatda: [RD Search and query](https://redis.io/docs/latest/develop/ai/search-and-query/).
 
-> **Holat.** Qo'llanma yozilmoqda: 11/34 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 12/34 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -68,7 +68,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 | 09 | [Sorted set](09-sorted-set.md) | Ball (score) bo'yicha tartiblangan to'plam: `ZADD`, `ZRANGE`, `ZRANK` | V | [RD Sorted sets](https://redis.io/docs/latest/develop/data-types/sorted-sets/) |
 | 10 | [Stream](10-stream.md) | Faqat oxiriga yoziladigan jurnal: `XADD`, `XRANGE`, `XREAD`. Consumer group: `XREADGROUP`, `XACK`, kutilayotgan yozuvlar (pending) | V | [RD Streams](https://redis.io/docs/latest/develop/data-types/streams/) |
 | 11 | [JSON](11-json.md) | Redis Open Source'dagi JSON turi: `JSON.SET`, `JSON.GET`, yo'l (path) bilan ishlash | V | [RD JSON](https://redis.io/docs/latest/develop/data-types/json/) |
-| 12 | Qaysi turni tanlash | Geo-ma'lumotlar, ehtimollik tuzilmalari (HyperLogLog, Bloom filter) qisqacha. Turlarni taqqoslash | V | [RD Compare data types](https://redis.io/docs/latest/develop/data-types/compare-data-types/) · [RD Geospatial](https://redis.io/docs/latest/develop/data-types/geospatial/) · [RD Probabilistic](https://redis.io/docs/latest/develop/data-types/probabilistic/) |
+| 12 | [Qaysi turni tanlash](12-turni-tanlash.md) | Geo-ma'lumotlar, ehtimollik tuzilmalari (HyperLogLog, Bloom filter) qisqacha. Turlarni taqqoslash | V | [RD Compare data types](https://redis.io/docs/latest/develop/data-types/compare-data-types/) · [RD Geospatial](https://redis.io/docs/latest/develop/data-types/geospatial/) · [RD Probabilistic](https://redis.io/docs/latest/develop/data-types/probabilistic/) |
 
 ## III qism — Ilovadan foydalanish (13–16)
 
