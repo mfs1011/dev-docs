@@ -1,6 +1,6 @@
 # 66 — Zaxira va tiklash
 
-[← Oldingi: Texnik xizmat](65-texnik-xizmat.md) · [Mundarija](README.md)
+[← Oldingi: Texnik xizmat](65-texnik-xizmat.md) · [Mundarija](README.md) · [Keyingi: Replikatsiya va monitoring →](67-replikatsiya-va-monitoring.md)
 
 ## Tushuncha
 

@@ -42,7 +42,7 @@ Qisqartmalar:
 - **MY** — MySQL 9.7 qo'llanmasi.
 - **SL** — SQLite hujjati.
 
-> **Holat.** Qo'llanma yozilmoqda: 65/70 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 66/70 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -180,7 +180,7 @@ Bu qismga ma'lumotlar bazasi hujjatlarida yozilgan narsalargina kiritildi.
 | 64 | [Ulanishlar](64-ulanishlar.md) | `max_connections`, tashqi connection pool (PG hujjati tavsiyasi), PgBouncer rejimlari; MySQL "Too many connections" | [PG runtime-config-connection](https://www.postgresql.org/docs/18/runtime-config-connection.html) · [PG kernel-resources](https://www.postgresql.org/docs/18/kernel-resources.html) · [PgBouncer usage](https://www.pgbouncer.org/usage.html) · [MY too-many-connections](https://dev.mysql.com/doc/refman/9.7/en/too-many-connections.html) |
 | 65 | [Texnik xizmat](65-texnik-xizmat.md) | `VACUUM`, autovacuum, bloat, `REINDEX`; MySQL `OPTIMIZE TABLE`; SQLite `VACUUM`; PG 19 `REPACK` (beta, izoh sifatida) | [PG routine-vacuuming](https://www.postgresql.org/docs/18/routine-vacuuming.html) · [PG routine-reindex](https://www.postgresql.org/docs/18/routine-reindex.html) · [MY optimize-table](https://dev.mysql.com/doc/refman/9.7/en/optimize-table.html) · [SL lang_vacuum](https://www.sqlite.org/lang_vacuum.html) |
 | 66 | [Zaxira va tiklash](66-zaxira-va-tiklash.md) | `pg_dump`/`pg_restore`, WAL arxivlash va PITR; `mysqldump` va MySQL Shell dump utilitlari; SQLite backup API, `VACUUM INTO`, `.backup` | [PG backup](https://www.postgresql.org/docs/18/backup.html) · [PG continuous-archiving](https://www.postgresql.org/docs/18/continuous-archiving.html) · [MY backup-methods](https://dev.mysql.com/doc/refman/9.7/en/backup-methods.html) · [MY mysqldump](https://dev.mysql.com/doc/refman/9.7/en/mysqldump.html) · [SL backup](https://www.sqlite.org/backup.html) |
-| 67 | Replikatsiya va monitoring *(tayyorlanmoqda)* | Streaming va logical replikatsiya, `pg_stat_statements`, statistika view'lari; MySQL binlog va GTID, slow query log, Performance Schema, sys schema | [PG warm-standby](https://www.postgresql.org/docs/18/warm-standby.html) · [PG logical-replication](https://www.postgresql.org/docs/18/logical-replication.html) · [PG pgstatstatements](https://www.postgresql.org/docs/18/pgstatstatements.html) · [MY replication](https://dev.mysql.com/doc/refman/9.7/en/replication.html) · [MY slow-query-log](https://dev.mysql.com/doc/refman/9.7/en/slow-query-log.html) · [MY performance-schema](https://dev.mysql.com/doc/refman/9.7/en/performance-schema.html) |
+| 67 | [Replikatsiya va monitoring](67-replikatsiya-va-monitoring.md) | Streaming va logical replikatsiya, `pg_stat_statements`, statistika view'lari; MySQL binlog va GTID, slow query log, Performance Schema, sys schema | [PG warm-standby](https://www.postgresql.org/docs/18/warm-standby.html) · [PG logical-replication](https://www.postgresql.org/docs/18/logical-replication.html) · [PG pgstatstatements](https://www.postgresql.org/docs/18/pgstatstatements.html) · [MY replication](https://dev.mysql.com/doc/refman/9.7/en/replication.html) · [MY slow-query-log](https://dev.mysql.com/doc/refman/9.7/en/slow-query-log.html) · [MY performance-schema](https://dev.mysql.com/doc/refman/9.7/en/performance-schema.html) |
 
 ## XII qism — Amaliyot (68–70)
 
