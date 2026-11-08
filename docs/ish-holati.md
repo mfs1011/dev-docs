@@ -176,7 +176,10 @@ Ikkinchi noutbukda boshlashdan oldin shu faylni, `CLAUDE.md` ni va kitobning `RE
 
 ## SQL kitobi — 47-bobdan davomi (branch `docs/sql-47-70`)
 
-- 2026-11-08: 47–54-boblar yozildi (matn; video darslar yo'q — ular TTS bilan boshqa noutbukda qilinadi).
+- 2026-11-08: **47–61, 63–67, 69, 70-boblar yozildi** (68/70; matn, video darslar yo'q — ular TTS bilan boshqa noutbukda qilinadi).
+- Qolgan: **62** (SQL injection va parametrlar) — hujum namunasini jonli ko'rsatish urinishi to'xtatildi; faqat himoya tomoni (parametrli so'rov, `PREPARE`, `EXECUTE … USING`, `format('%I')`) bilan yozish kerak — egasi bilan kelishib. **68** (ORM ortidagi SQL) — Laravel/Prisma o'rnatish kerak (tashqi paketlar), egasi bilan kelishib.
+- 63- va 69-boblar oldingi bob yo'qligi sababli qo'lda ulangan (61 → 63, 67 → 69); 62 va 68 yozilganda navigatsiyani to'g'rilash kerak.
+- Qo'shimcha sinov asboblari (Homebrew): `pgbouncer` (64-bob). PITR va replikatsiya sinovlari — `~/sql-sinov/66/pitr`, `~/sql-sinov/67/standby` (to'xtatilgan).
 - Sinov muhiti (README'dagi "Sinov muhiti (47-bobdan)" qatori): PG 18.6 — Homebrew `postgresql@18` (`~/sql-sinov/pgdata`, `pg_ctl ... start`); MySQL 9.7.2 — rasmiy Docker image (`docker run -d --name mysql97 -e MYSQL_ROOT_PASSWORD=sinov -p 127.0.0.1:3306:3306 mysql:9.7.2`; Homebrew'da `mysql@9.7` endi 9.7.4); SQLite 3.54.1 — Homebrew `sqlite`.
 - Ikki seansli misollar (50–54-boblar) — kichik Python skripti: buyruqlarni A/B seanslarga navbatma-navbat yuboradi va chiqishni seans nomi bilan yozadi (`~/sql-sinov/ikki.py`, git'da yo'q). Bloklangan buyruq javobi keyingi buyruq ostida chiqadi — boblarda izohlangan.
 - Bob ulash: oldingi bobga "Keyingi", README qatori havolaga, `NN/70` — Linux'dagi `bob_ulash.py` ning SQL varianti (scratchpad'da edi).
