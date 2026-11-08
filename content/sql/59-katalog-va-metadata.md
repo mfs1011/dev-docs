@@ -1,6 +1,6 @@
 # 59 — Katalog va metadata
 
-[← Oldingi: Partitioning](58-partitioning.md) · [Mundarija](README.md)
+[← Oldingi: Partitioning](58-partitioning.md) · [Mundarija](README.md) · [Keyingi: Rollar va huquqlar →](60-rollar-va-huquqlar.md)
 
 ## Tushuncha
 
