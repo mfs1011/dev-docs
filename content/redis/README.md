@@ -33,7 +33,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - Navbat va hodisalar oqimi tizimlarini taqqoslash (Redis, RabbitMQ, Kafka) — **"Xabar tizimlari"** kitobida.
 - Qidiruv (Query Engine), vektorlar va sun'iy intellekt uchun imkoniyatlar, Redis Cloud va Redis Software (pullik mahsulotlar) — hujjatda: [RD Search and query](https://redis.io/docs/latest/develop/ai/search-and-query/).
 
-> **Holat.** Qo'llanma yozilmoqda: 19/34 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 20/34 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -102,7 +102,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 | 28 | [Diskka saqlash](28-diskka-saqlash.md) | RDB (snapshot) va AOF (har yozuv jurnali), ikkalasi birga. Qayta yonganda tiklash. Qaysi biri qachon | V | [RD Persistence](https://redis.io/docs/latest/operate/oss_and_stack/management/persistence/) |
 | 29 | [Xavfsizlik](29-xavfsizlik.md) | Himoyalangan rejim (protected mode), `bind`, parol. ACL foydalanuvchilari. TLS | V | [RD Security](https://redis.io/docs/latest/operate/oss_and_stack/management/security/) · [RD ACL](https://redis.io/docs/latest/operate/oss_and_stack/management/security/acl/) · [RD TLS](https://redis.io/docs/latest/operate/oss_and_stack/management/security/encryption/) |
 | 30 | [Replikatsiya](30-replikatsiya.md) | Asosiy server va replika. Asinxron nusxalash. Replika faqat o'qish uchun | V | [RD Replication](https://redis.io/docs/latest/operate/oss_and_stack/management/replication/) |
-| 31 | Sentinel | Asosiy server ishdan chiqsa, replikani avtomatik asosiyga aylantirish (failover) | V | [RD Sentinel](https://redis.io/docs/latest/operate/oss_and_stack/management/sentinel/) |
+| 31 | [Sentinel](31-sentinel.md) | Asosiy server ishdan chiqsa, replikani avtomatik asosiyga aylantirish (failover) | V | [RD Sentinel](https://redis.io/docs/latest/operate/oss_and_stack/management/sentinel/) |
 | 32 | Cluster | Ma'lumotni bir nechta serverga bo'lish (sharding), hash slot'lar. Hujjatdagi kabi bitta mashinada 6 tugun | V | [RD Scale with Redis Cluster](https://redis.io/docs/latest/operate/oss_and_stack/management/scaling/) |
 | 33 | Kuzatish va kechikish | `INFO`, `SLOWLOG`, kechikish monitori. Kechikish sabablari. Administrator maslahatlari | V | [RD Latency](https://redis.io/docs/latest/operate/oss_and_stack/management/optimization/latency/) · [RD Latency monitor](https://redis.io/docs/latest/operate/oss_and_stack/management/optimization/latency-monitor/) · [RD Administration](https://redis.io/docs/latest/operate/oss_and_stack/management/admin/) · [RD Troubleshooting](https://redis.io/docs/latest/operate/oss_and_stack/management/troubleshooting/) |
 | 34 | Yangilash | Bitta serverni yangilash tartibi. Versiyalar siyosati | V | [RD Upgrade a standalone instance](https://redis.io/docs/latest/operate/oss_and_stack/install/upgrade/standalone/) · [RD Version management](https://redis.io/docs/latest/operate/oss_and_stack/install/version-mgmt/) |
