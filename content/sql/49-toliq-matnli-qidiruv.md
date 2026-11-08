@@ -1,6 +1,6 @@
 # 49 — To'liq matnli qidiruv
 
-[← Oldingi: Sahifalash](48-sahifalash.md) · [Mundarija](README.md)
+[← Oldingi: Sahifalash](48-sahifalash.md) · [Mundarija](README.md) · [Keyingi: Tranzaksiya →](50-tranzaksiya.md)
 
 ## Tushuncha
 
