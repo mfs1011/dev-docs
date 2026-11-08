@@ -209,5 +209,5 @@ Ikkinchi noutbukda boshlashdan oldin shu faylni, `CLAUDE.md` ni va kitobning `RE
 
 ## Server xavfsizligi kitobi (`content/server-xavfsizligi/`)
 
-- Branch `docs/server-xavfsizligi-1`. Tayyor: 1–3-boblar (2026-11-09). Manba: `raw.githubusercontent.com/canonical/ubuntu-server-documentation/main/docs/...`.
+- Branch `docs/server-xavfsizligi-1`. Tayyor: 1–4-boblar (2026-11-09). Manba: `raw.githubusercontent.com/canonical/ubuntu-server-documentation/main/docs/...`.
 - Navbat: VPS'ga kirishni xavf ostiga qo'ymaydigan boblar — 2–8, 19–24. SSH/firewall boblari (9–18) — provayder konsoli tayyorligi bo'yicha egasining tasdig'i kerak.
