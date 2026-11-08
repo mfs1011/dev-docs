@@ -45,7 +45,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - Ma'lumotlar bazasining zaxirasi — **"SQL"** kitobida.
 - Server buzilganda nima qilish (incident response): Debian'ning shu mavzudagi "Securing Debian Manual" qo'llanmasi debian.org'da endi yo'q, boshqa joriy rasmiy manba topilmadi. Shu sababli bu mavzu kiritilmadi.
 
-> **Holat.** Qo'llanma yozilmoqda: 7/24 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 8/24 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -81,7 +81,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
 | 07 | [Root emas, sudo foydalanuvchi](07-sudo-foydalanuvchi.md) | Eng kam huquq tamoyili (least privilege). Admin uchun alohida foydalanuvchi. `sudo-rs` (Ubuntu 26.04). Root parolini o'chirish. Parol siyosati | V | [UB User management](https://ubuntu.com/server/docs/how-to/security/user-management/) · [UB Security suggestions](https://ubuntu.com/server/docs/explanation/security/security_suggestions/) |
-| 08 | AppArmor | Dastur qila oladigan ishni profil bilan cheklash. `enforce` va `complain` rejimlari. `aa-status`. Rad etishlarni logdan topish | V | [UB AppArmor](https://ubuntu.com/server/docs/how-to/security/apparmor/) · [US AppArmor](https://documentation.ubuntu.com/security/security-features/privilege-restriction/apparmor/) |
+| 08 | [AppArmor](08-apparmor.md) | Dastur qila oladigan ishni profil bilan cheklash. `enforce` va `complain` rejimlari. `aa-status`. Rad etishlarni logdan topish | V | [UB AppArmor](https://ubuntu.com/server/docs/how-to/security/apparmor/) · [US AppArmor](https://documentation.ubuntu.com/security/security-features/privilege-restriction/apparmor/) |
 
 ## IV qism — SSH (9–13)
 
