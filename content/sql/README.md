@@ -42,7 +42,7 @@ Qisqartmalar:
 - **MY** — MySQL 9.7 qo'llanmasi.
 - **SL** — SQLite hujjati.
 
-> **Holat.** Qo'llanma yozilmoqda: 60/70 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 61/70 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -174,7 +174,7 @@ Bu qismga ma'lumotlar bazasi hujjatlarida yozilgan narsalargina kiritildi.
 | # | Bob | Mazmun | Rasmiy manba |
 | --- | --- | --- | --- |
 | 60 | [Rollar va huquqlar](60-rollar-va-huquqlar.md) | `GRANT`/`REVOKE`, tayyor rollar (`pg_read_all_data`, `pg_maintain`…); MySQL hisoblari va rollari; SQLite'da `GRANT` yo'q | [PG user-manag](https://www.postgresql.org/docs/18/user-manag.html) · [PG predefined-roles](https://www.postgresql.org/docs/18/predefined-roles.html) · [MY roles](https://dev.mysql.com/doc/refman/9.7/en/roles.html) · [SL omitted](https://www.sqlite.org/omitted.html) |
-| 61 | Row Level Security (PG) *(tayyorlanmoqda)* | Policy'lar, `ENABLE`/`FORCE`, `BYPASSRLS` | [PG ddl-rowsecurity](https://www.postgresql.org/docs/18/ddl-rowsecurity.html) · [PG sql-createpolicy](https://www.postgresql.org/docs/18/sql-createpolicy.html) |
+| 61 | [Row Level Security (PG)](61-row-level-security.md) | Policy'lar, `ENABLE`/`FORCE`, `BYPASSRLS` | [PG ddl-rowsecurity](https://www.postgresql.org/docs/18/ddl-rowsecurity.html) · [PG sql-createpolicy](https://www.postgresql.org/docs/18/sql-createpolicy.html) |
 | 62 | SQL injection va parametrlar *(tayyorlanmoqda)* | Parametrli so'rov, prepared statement, escape funksiyalari, dinamik SQL (`EXECUTE … USING`) | [PG libpq-exec](https://www.postgresql.org/docs/18/libpq-exec.html) · [PG sql-prepare](https://www.postgresql.org/docs/18/sql-prepare.html) · [PG plpgsql-statements](https://www.postgresql.org/docs/18/plpgsql-statements.html) · [MY secure-client-programming](https://dev.mysql.com/doc/refman/9.7/en/secure-client-programming.html) · [MY sql-prepared-statements](https://dev.mysql.com/doc/refman/9.7/en/sql-prepared-statements.html) |
 | 63 | Sxemani xavfsiz o'zgartirish *(tayyorlanmoqda)* | `ALTER TABLE` qulf darajalari, `NOT VALID` cheklovlar, `CREATE INDEX CONCURRENTLY`; MySQL online DDL (`INSTANT`/`INPLACE`/`COPY`); SQLite 12 qadamli usul | [PG sql-altertable](https://www.postgresql.org/docs/18/sql-altertable.html) · [PG sql-createindex](https://www.postgresql.org/docs/18/sql-createindex.html) · [MY innodb-online-ddl-operations](https://dev.mysql.com/doc/refman/9.7/en/innodb-online-ddl-operations.html) · [SL lang_altertable](https://www.sqlite.org/lang_altertable.html) |
 | 64 | Ulanishlar *(tayyorlanmoqda)* | `max_connections`, tashqi connection pool (PG hujjati tavsiyasi), PgBouncer rejimlari; MySQL "Too many connections" | [PG runtime-config-connection](https://www.postgresql.org/docs/18/runtime-config-connection.html) · [PG kernel-resources](https://www.postgresql.org/docs/18/kernel-resources.html) · [PgBouncer usage](https://www.pgbouncer.org/usage.html) · [MY too-many-connections](https://dev.mysql.com/doc/refman/9.7/en/too-many-connections.html) |

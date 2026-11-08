@@ -1,6 +1,6 @@
 # 60 — Rollar va huquqlar
 
-[← Oldingi: Katalog va metadata](59-katalog-va-metadata.md) · [Mundarija](README.md)
+[← Oldingi: Katalog va metadata](59-katalog-va-metadata.md) · [Mundarija](README.md) · [Keyingi: Row Level Security (PG) →](61-row-level-security.md)
 
 ## Tushuncha
 
