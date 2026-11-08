@@ -213,3 +213,9 @@ Ikkinchi noutbukda boshlashdan oldin shu faylni, `CLAUDE.md` ni va kitobning `RE
 - Navbat: domen talab qilmaydigan V-boblar — 3–17, 26–30. HTTPS boblari (19–25, V+D) — domen bo'yicha egasining qarori kutilmoqda (Let's Encrypt `shortlived` profili IP sertifikatni ham beradi, lekin bu VPS IP'sini ochiq CT jurnallariga yozadi — qarorsiz ishlatilmaydi).
 - Manba: nginx.org HTML sahifalari (`h2t.py` bilan matnga) va docs.nginx.com (markdown manbasi: `raw.githubusercontent.com/nginx/documentation/main/content/nginx/...`).
 - Proksi boblarida backend — Python standart kutubxonasidagi kichik server (Node.js VPS'da yo'q; misollar tili qarori Redis/RabbitMQ bilan birga kutilmoqda). README 11-bob qatoridagi "Node.js" so'zi "orqadagi ilova"ga o'zgartirildi.
+
+## Deploy amaliyoti kitobi (`content/deploy-amaliyoti/`)
+
+- Branch `docs/deploy-1`. Tayyor: 1-bob (2026-11-09).
+- Navbat: til va domen talab qilmaydigan V-boblar — 5, 7, 8, 16–18 (ilova — Python standart kutubxonasidagi kichik server, Nginx kitobidagi kabi). 3-bob (deploy foydalanuvchisi, SSH kalit, firewall) — VPS'ga kirishni o'zgartiradi, egasining tasdig'i kerak. 2, 4 (domen), 6 (Node.js/PHP — misollar tili qarori), 9–15, 19, 21–22 (GitHub sinov repozitoriysi) — egasining qarori kutilmoqda.
+- Manba: GitHub hujjati — `raw.githubusercontent.com/github/docs/main/content/actions/...` (markdown).
