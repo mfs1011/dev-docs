@@ -46,7 +46,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - Kubernetes va bulut platformalari (AWS, GCP, Azure) — alohida katta mavzu.
 - Docker'ning o'zi — **"Docker"** kitobida.
 
-> **Holat.** Qo'llanma yozilmoqda: 5/22 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 6/22 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -96,7 +96,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
 | 16 | [⚑ To'xtash qayerdan keladi](16-toxtash.md) | Ilova qayta ishga tushayotganda kelgan so'rovlar: 502 xatosi. Uni o'lchash: deploy paytida uzluksiz so'rovlar yuborib, javoblarni sanash | V | [NG proxy module](https://nginx.org/en/docs/http/ngx_http_proxy_module.html) · [SD systemctl(1)](https://www.freedesktop.org/software/systemd/man/latest/systemctl.html) |
-| 17 | ⚑ Ikki nusxa va nginx | Ilovaning ikki nusxasi ikki portda. Yangisi tayyor ekanini tekshirib, nginx `upstream` ni almashtirish va reload qilish | V | [NG upstream module](https://nginx.org/en/docs/http/ngx_http_upstream_module.html) · [NG Using nginx as HTTP load balancer](https://nginx.org/en/docs/http/load_balancing.html) · [NG Controlling nginx](https://nginx.org/en/docs/control.html) |
+| 17 | [⚑ Ikki nusxa va nginx](17-ikki-nusxa.md) | Ilovaning ikki nusxasi ikki portda. Yangisi tayyor ekanini tekshirib, nginx `upstream` ni almashtirish va reload qilish | V | [NG upstream module](https://nginx.org/en/docs/http/ngx_http_upstream_module.html) · [NG Using nginx as HTTP load balancer](https://nginx.org/en/docs/http/load_balancing.html) · [NG Controlling nginx](https://nginx.org/en/docs/control.html) |
 | 18 | systemd socket activation | Portni systemd ochib turadi, ilova qayta ishga tushganda yangi ulanishlar kutib turadi. `daemon(7)`: holatsiz protokollarda bunday servis bitta so'rovni ham yo'qotmasdan qayta ishga tushishi mumkin. HTTP'da sinab ko'ramiz | V | [SD systemd.socket(5)](https://www.freedesktop.org/software/systemd/man/latest/systemd.socket.html) · [SD daemon(7)](https://www.freedesktop.org/software/systemd/man/latest/daemon.html) · [SD sd_listen_fds(3)](https://www.freedesktop.org/software/systemd/man/latest/sd_listen_fds.html) |
 | 19 | Docker Compose bilan deploy | Image'ni CI'da yig'ib, GitHub Container Registry'ga yuklash. Serverda `docker compose up --no-deps -d`: hujjatga ko'ra bu servisni to'xtatib, qayta yaratadi — qisqa to'xtash shundan | G+V | [DK Use Compose in production](https://docs.docker.com/compose/how-tos/production/) · [GH Publishing Docker images](https://docs.github.com/en/actions/tutorials/publish-packages/publish-docker-images) · [GH Container registry](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry) |
 | 20 | ⚑ Orqaga qaytarish | `current` symlink'ni oldingi release'ga qaytarish, oldingi image tegi. Nima qaytmaydi: bazadagi o'zgarishlar | V | [MAN rename(2)](https://man7.org/linux/man-pages/man2/rename.2.html) · [GH View deployment history](https://docs.github.com/en/actions/how-tos/deploy/configure-and-manage-deployments/view-deployment-history) |
