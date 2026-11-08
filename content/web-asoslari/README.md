@@ -45,7 +45,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - nginx'da HTTPS'ni sozlash va sertifikat olish — **"Nginx va HTTPS"** kitobida.
 - Frontend framework'larda so'rov yuborish — framework kitoblarida.
 
-> **Holat.** Qo'llanma yozilmoqda: 5/30 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 6/30 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -74,7 +74,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
 | 05 | [HTTP'ga umumiy nazar](05-http-umumiy.md) | So'rov va javob. HTTP holatni eslab qolmaydi (stateless). HTTP versiyalarining tarixi | V | [MDN Overview of HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Overview) · [MDN Evolution of HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Evolution_of_HTTP) · [RFC 9110](https://www.rfc-editor.org/rfc/rfc9110) |
-| 06 | HTTP xabarlari | So'rov qatori, header'lar, tana (body). Javobning holat qatori. `curl -v` bilan ko'rish | V | [MDN HTTP messages](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Messages) · [MDN A typical HTTP session](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Session) · [RFC 9112](https://www.rfc-editor.org/rfc/rfc9112) |
+| 06 | [HTTP xabarlari](06-http-xabarlari.md) | So'rov qatori, header'lar, tana (body). Javobning holat qatori. `curl -v` bilan ko'rish | V | [MDN HTTP messages](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Messages) · [MDN A typical HTTP session](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Session) · [RFC 9112](https://www.rfc-editor.org/rfc/rfc9112) |
 | 07 | Metodlar | `GET`, `POST`, `PUT`, `PATCH`, `DELETE`, `HEAD`, `OPTIONS`. Xavfsiz (safe) va idempotent (necha marta yuborilsa ham natija bir xil) metodlar | V | [MDN HTTP request methods](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods) · [RFC 9110 §9](https://www.rfc-editor.org/rfc/rfc9110#name-methods) |
 | 08 | Holat kodlari | 1xx–5xx guruhlari va eng ko'p uchraydiganlari: 200, 201, 204, 304, 400, 401, 403, 404, 409, 429, 500, 502, 503, 504 | V | [MDN HTTP response status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status) · [RFC 9110 §15](https://www.rfc-editor.org/rfc/rfc9110#name-status-codes) · [RFC 6585](https://www.rfc-editor.org/rfc/rfc6585) |
 | 09 | Header'lar va kontent turi | `Content-Type` va MIME turlari, `Content-Length`. Mijoz va server qaysi formatni tanlashi (content negotiation) | V | [MDN HTTP headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers) · [MDN MIME types](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/MIME_types) · [MDN Content negotiation](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Content_negotiation) |
