@@ -34,7 +34,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - Navbat va hodisalar oqimi tizimlarini taqqoslash (Redis, RabbitMQ, Kafka) — **"Xabar tizimlari"** kitobida.
 - Qidiruv (Query Engine), vektorlar va sun'iy intellekt uchun imkoniyatlar, Redis Cloud va Redis Software (pullik mahsulotlar) — hujjatda: [RD Search and query](https://redis.io/docs/latest/develop/ai/search-and-query/).
 
-> **Holat.** Qo'llanma yozilmoqda: 26/34 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 27/34 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -84,7 +84,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
-| 17 | Kesh: cache-aside | Bazadan o'qishni keshlash. TTL bilan eskirishni cheklash. Ma'lumot o'zgarganda keshni yangilash | V+N | [RD Cache-aside](https://redis.io/docs/latest/develop/use-cases/cache-aside/) |
+| 17 | [Kesh: cache-aside](17-cache-aside.md) | Bazadan o'qishni keshlash. TTL bilan eskirishni cheklash. Ma'lumot o'zgarganda keshni yangilash | V+N | [RD Cache-aside](https://redis.io/docs/latest/develop/use-cases/cache-aside/) · [RD Cache-aside (node-redis)](https://redis.io/docs/latest/develop/use-cases/cache-aside/nodejs/) · [(Predis)](https://redis.io/docs/latest/develop/use-cases/cache-aside/php/) |
 | 18 | Oldindan yuklangan kesh | Ma'lumotni oldindan yuklab qo'yish (prefetch): har o'qish keshdan | V+N | [RD Prefetch cache](https://redis.io/docs/latest/develop/use-cases/prefetch-cache/) |
 | 19 | Sessiyalar | Veb-sessiyalarni Redis'da saqlash va muddatini boshqarish | V+N | [RD Session store](https://redis.io/docs/latest/develop/use-cases/session-store/) |
 | 20 | Rate limiter | So'rovlar sonini cheklash: qat'iy oyna (fixed window), suriluvchi oyna (sliding window), token bucket | V+N | [RD Rate limiter](https://redis.io/docs/latest/develop/use-cases/rate-limiter/) |
