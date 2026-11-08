@@ -33,7 +33,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - Navbat va hodisalar oqimi tizimlarini taqqoslash (Redis, RabbitMQ, Kafka) — **"Xabar tizimlari"** kitobida.
 - Qidiruv (Query Engine), vektorlar va sun'iy intellekt uchun imkoniyatlar, Redis Cloud va Redis Software (pullik mahsulotlar) — hujjatda: [RD Search and query](https://redis.io/docs/latest/develop/ai/search-and-query/).
 
-> **Holat.** Qo'llanma yozilmoqda: 5/34 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 6/34 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -62,7 +62,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
 | 05 | [String](05-string.md) | `SET` va `GET`, `NX`/`XX`/`EX` parametrlari. `INCR` bilan hisoblagich | V | [RD Strings](https://redis.io/docs/latest/develop/data-types/strings/) |
-| 06 | Hash | Obyekt maydonlari: `HSET`, `HGET`, `HGETALL`. Alohida maydonga muddat (`HEXPIRE`) | V | [RD Hashes](https://redis.io/docs/latest/develop/data-types/hashes/) |
+| 06 | [Hash](06-hash.md) | Obyekt maydonlari: `HSET`, `HGET`, `HGETALL`. Alohida maydonga muddat (`HEXPIRE`) | V | [RD Hashes](https://redis.io/docs/latest/develop/data-types/hashes/) |
 | 07 | List | `LPUSH`/`RPUSH`, `LPOP`/`RPOP`. Kutib turuvchi (blocking) `BLPOP`. `LMOVE`. Navbat va stek | V | [RD Lists](https://redis.io/docs/latest/develop/data-types/lists/) |
 | 08 | Set | Takrorlanmaydigan qiymatlar to'plami: `SADD`, `SISMEMBER`, `SINTER` | V | [RD Sets](https://redis.io/docs/latest/develop/data-types/sets/) |
 | 09 | Sorted set | Ball (score) bo'yicha tartiblangan to'plam: `ZADD`, `ZRANGE`, `ZRANK` | V | [RD Sorted sets](https://redis.io/docs/latest/develop/data-types/sorted-sets/) |
