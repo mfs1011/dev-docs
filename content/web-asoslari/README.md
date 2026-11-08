@@ -45,7 +45,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - nginx'da HTTPS'ni sozlash va sertifikat olish — **"Nginx va HTTPS"** kitobida.
 - Frontend framework'larda so'rov yuborish — framework kitoblarida.
 
-> **Holat.** Qo'llanma yozilmoqda: 23/30 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 24/30 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -102,7 +102,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 | 21 | [XSS va CSP](21-xss-csp.md) | Sahifaga begona skript kiritish (XSS). `Content-Security-Policy` bilan cheklash | B | [MDN XSS](https://developer.mozilla.org/en-US/docs/Web/Security/Attacks/XSS) · [MDN CSP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP) |
 | 22 | [Clickjacking va himoya header'lari](22-clickjacking-headerlar.md) | Sahifani ko'rinmas freym ichiga olish. `frame-ancestors`, `Referrer-Policy`, `X-Content-Type-Options` | B+V | [MDN Clickjacking](https://developer.mozilla.org/en-US/docs/Web/Security/Attacks/Clickjacking) · [MDN Referrer policy configuration](https://developer.mozilla.org/en-US/docs/Web/Security/Practical_implementation_guides/Referrer_policy) · [MDN MIME type verification](https://developer.mozilla.org/en-US/docs/Web/Security/Practical_implementation_guides/MIME_types) |
 | 23 | [Aralash kontent va xavfsiz kontekst](23-aralash-kontent.md) | HTTPS sahifadagi HTTP resurs. Faqat HTTPS'da ishlaydigan brauzer imkoniyatlari | B | [MDN Mixed content](https://developer.mozilla.org/en-US/docs/Web/Security/Defenses/Mixed_content) · [MDN Secure contexts](https://developer.mozilla.org/en-US/docs/Web/Security/Defenses/Secure_Contexts) |
-| 24 | Subresource Integrity | Boshqa saytdan (CDN) yuklangan skript o'zgartirilmaganini `integrity` bilan tekshirish | B | [MDN Subresource Integrity](https://developer.mozilla.org/en-US/docs/Web/Security/Defenses/Subresource_Integrity) |
+| 24 | [Subresource Integrity](24-subresource-integrity.md) | Boshqa saytdan (CDN) yuklangan skript o'zgartirilmaganini `integrity` bilan tekshirish | B | [MDN Subresource Integrity](https://developer.mozilla.org/en-US/docs/Web/Security/Defenses/Subresource_Integrity) |
 
 ## V qism — HTTPS (25–28)
 
