@@ -45,7 +45,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - nginx'da HTTPS'ni sozlash va sertifikat olish — **"Nginx va HTTPS"** kitobida.
 - Frontend framework'larda so'rov yuborish — framework kitoblarida.
 
-> **Holat.** Qo'llanma yozilmoqda: 29/30 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma tayyor: 30/30 bob (2026-11-08).
 
 ---
 
@@ -118,7 +118,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
 | 29 | [Brauzerning Network paneli](29-network-paneli.md) | So'rovlar ro'yxati, header'lar, vaqt diagrammasi (waterfall), kesh, so'rovni qayta yuborish | B | [Chrome DevTools: Network](https://developer.chrome.com/docs/devtools/network) · [Firefox: Network Monitor](https://firefox-source-docs.mozilla.org/devtools-user/network_monitor/) |
-| 30 | ⚑ Sayt ochilmayapti | Bosqichma-bosqich: DNS → port va ulanish → TLS → HTTP holat kodi → brauzer konsoli (CORS, aralash kontent) | B+V | Oldingi boblardagi manbalar |
+| 30 | [⚑ Sayt ochilmayapti](30-sayt-ochilmayapti.md) | Bosqichma-bosqich: DNS → port va ulanish → TLS → HTTP holat kodi → brauzer konsoli (CORS, aralash kontent) | B+V | Oldingi boblardagi manbalar |
 
 ---
 
