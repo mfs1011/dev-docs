@@ -42,7 +42,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - Domen, CI/CD va nol to'xtovli deploy — **"Deploy amaliyoti"** kitobida.
 - Pochta proksi (mail), TCP/UDP proksi (stream), njs skriptlari — hujjatda: [NG docs](https://nginx.org/en/docs/).
 
-> **Holat.** Qo'llanma yozilmoqda: 12/30 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 13/30 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -83,7 +83,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 | --- | --- | --- | --- | --- |
 | 11 | [Reverse proxy](11-reverse-proxy.md) | `proxy_pass` bilan orqadagi ilovaga uzatish. URI oxiridagi `/` farqi. `Host`, `X-Forwarded-For`, `X-Forwarded-Proto` header'lari | V | [NA Reverse Proxy](https://docs.nginx.com/nginx/admin-guide/web-server/reverse-proxy/) · [NG proxy module](https://nginx.org/en/docs/http/ngx_http_proxy_module.html) |
 | 12 | [PHP-FPM bilan](12-php-fpm.md) | `fastcgi_pass` (Unix socket yoki port), `SCRIPT_FILENAME`, `fastcgi_params` | V | [NG fastcgi module](https://nginx.org/en/docs/http/ngx_http_fastcgi_module.html) |
-| 13 | WebSocket | `Upgrade` va `Connection` header'larini uzatish, `proxy_http_version 1.1` | V | [NG WebSocket proxying](https://nginx.org/en/docs/http/websocket.html) |
+| 13 | [WebSocket](13-websocket.md) | `Upgrade` va `Connection` header'larini uzatish, `proxy_http_version 1.1` | V | [NG WebSocket proxying](https://nginx.org/en/docs/http/websocket.html) |
 | 14 | Timeout va bufer | `proxy_connect_timeout`, `proxy_read_timeout`, `proxy_buffering`. 502 va 504 qayerdan chiqadi | V | [NG proxy module](https://nginx.org/en/docs/http/ngx_http_proxy_module.html) · [NA Reverse Proxy](https://docs.nginx.com/nginx/admin-guide/web-server/reverse-proxy/) |
 | 15 | Yuklamani taqsimlash | `upstream`. Round-robin, `least_conn`, `ip_hash`, `hash`. Og'irlik (`weight`). Ishdan chiqqan serverni passiv aniqlash (`max_fails`, `fail_timeout`). `backup` server | V | [NG Using nginx as HTTP load balancer](https://nginx.org/en/docs/http/load_balancing.html) · [NG upstream module](https://nginx.org/en/docs/http/ngx_http_upstream_module.html) · [NA HTTP Load Balancing](https://docs.nginx.com/nginx/admin-guide/load-balancer/http-load-balancer/) |
 | 16 | Proxy kesh | `proxy_cache_path`, `proxy_cache`, `proxy_cache_valid`. Backend ishlamaganda eski javobni berish (`proxy_cache_use_stale`) | V | [NA Content Caching](https://docs.nginx.com/nginx/admin-guide/content-cache/content-caching/) · [NG proxy module](https://nginx.org/en/docs/http/ngx_http_proxy_module.html) |
