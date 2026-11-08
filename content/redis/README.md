@@ -34,7 +34,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - Navbat va hodisalar oqimi tizimlarini taqqoslash (Redis, RabbitMQ, Kafka) — **"Xabar tizimlari"** kitobida.
 - Qidiruv (Query Engine), vektorlar va sun'iy intellekt uchun imkoniyatlar, Redis Cloud va Redis Software (pullik mahsulotlar) — hujjatda: [RD Search and query](https://redis.io/docs/latest/develop/ai/search-and-query/).
 
-> **Holat.** Qo'llanma yozilmoqda: 24/34 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 25/34 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -76,7 +76,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
 | 13 | [Ilovadan ulanish](13-ilovadan-ulanish.md) | `node-redis` va `Predis`: ulanish, buyruq yuborish, xatolarni ushlash | V+N | [RD node-redis](https://redis.io/docs/latest/develop/clients/nodejs/) · [RD Connect (Node.js)](https://redis.io/docs/latest/develop/clients/nodejs/connect/) · [RD Error handling (Node.js)](https://redis.io/docs/latest/develop/clients/nodejs/error-handling/) · [RD Predis guide (PHP)](https://redis.io/docs/latest/develop/clients/php/) · [RD Error handling (PHP)](https://redis.io/docs/latest/develop/clients/php/error-handling/) |
-| 14 | Pipeline va tranzaksiya | Pipeline: ko'p buyruqni bitta borib-kelishda yuborish. `MULTI`/`EXEC`. `WATCH` bilan optimistik qulf | V+N | [RD Pipelining](https://redis.io/docs/latest/develop/using-commands/pipelining/) · [RD Transactions](https://redis.io/docs/latest/develop/using-commands/transactions/) · [RD Pipelines and transactions (Node.js)](https://redis.io/docs/latest/develop/clients/nodejs/transpipe/) |
+| 14 | [Pipeline va tranzaksiya](14-pipeline-tranzaksiya.md) | Pipeline: ko'p buyruqni bitta borib-kelishda yuborish. `MULTI`/`EXEC`. `WATCH` bilan optimistik qulf | V+N | [RD Pipelining](https://redis.io/docs/latest/develop/using-commands/pipelining/) · [RD Transactions](https://redis.io/docs/latest/develop/using-commands/transactions/) · [RD Pipelines and transactions (Node.js)](https://redis.io/docs/latest/develop/clients/nodejs/transpipe/) · [RD Pipelines and transactions (PHP)](https://redis.io/docs/latest/develop/clients/php/transpipe/) |
 | 15 | [Lua skriptlar va funksiyalar](15-lua.md) | `EVAL`: bir nechta qadamni server ichida bitta atomik amal qilib bajarish. Redis Functions | V | [RD Scripting with Lua](https://redis.io/docs/latest/develop/programmability/eval-intro/) · [RD Functions](https://redis.io/docs/latest/develop/programmability/functions-intro/) |
 | 16 | Production'da klient | Ulanish, timeout va qayta ulanish sozlamalari | V+N | [RD Production usage (Node.js)](https://redis.io/docs/latest/develop/clients/nodejs/produsage/) |
 
