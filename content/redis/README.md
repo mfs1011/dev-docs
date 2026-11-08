@@ -33,7 +33,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - Navbat va hodisalar oqimi tizimlarini taqqoslash (Redis, RabbitMQ, Kafka) — **"Xabar tizimlari"** kitobida.
 - Qidiruv (Query Engine), vektorlar va sun'iy intellekt uchun imkoniyatlar, Redis Cloud va Redis Software (pullik mahsulotlar) — hujjatda: [RD Search and query](https://redis.io/docs/latest/develop/ai/search-and-query/).
 
-> **Holat.** Qo'llanma yozilmoqda: 13/34 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 14/34 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -91,7 +91,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 | 22 | Pub/Sub | Kanallar va obunachilar. Yetkazish "ko'pi bilan bir marta" (at-most-once): o'sha payt ulanmagan obunachi xabarni olmaydi. Kalit o'zgarishlari haqida xabar (keyspace notifications) | V+N | [RD Pub/sub](https://redis.io/docs/latest/develop/pubsub/) · [RD Pub/sub messaging](https://redis.io/docs/latest/develop/use-cases/pub-sub/) · [RD Keyspace notifications](https://redis.io/docs/latest/develop/pubsub/keyspace-notifications/) |
 | 23 | Hodisalar oqimi | Stream va consumer group: tartib, qayta o'qish, saqlash hajmi | V+N | [RD Streaming](https://redis.io/docs/latest/develop/use-cases/streaming/) · [RD Streams](https://redis.io/docs/latest/develop/data-types/streams/) |
 | 24 | Reyting jadvali | Sorted set bilan reyting (leaderboard) va foydalanuvchi ma'lumotlari | V+N | [RD Leaderboard](https://redis.io/docs/latest/develop/use-cases/leaderboard/) |
-| 25 | Taqsimlangan qulf | Bitta Redis bilan to'g'ri qulf (`SET ... NX PX`). Redlock algoritmi va hujjatda aytilgan xavfsizlik shartlari | V | [RD Distributed locks](https://redis.io/docs/latest/develop/clients/patterns/distributed-locks/) |
+| 25 | [Taqsimlangan qulf](25-qulf.md) | Bitta Redis bilan to'g'ri qulf (`SET ... NX PX`). Redlock algoritmi va hujjatda aytilgan xavfsizlik shartlari | V | [RD Distributed locks](https://redis.io/docs/latest/develop/clients/patterns/distributed-locks/) |
 
 ## V qism — Server (26–34)
 
