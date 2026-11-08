@@ -45,7 +45,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - nginx'da HTTPS'ni sozlash va sertifikat olish — **"Nginx va HTTPS"** kitobida.
 - Frontend framework'larda so'rov yuborish — framework kitoblarida.
 
-> **Holat.** Qo'llanma tayyorlanmoqda — quyida rejalashtirilgan mundarija.
+> **Holat.** Qo'llanma yozilmoqda: 1/30 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -64,7 +64,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
-| 01 | Veb qanday ishlaydi | Mijoz (brauzer) va server. Manzil kiritilgandan sahifa chizilguncha: DNS → ulanish → TLS → HTTP → sahifani yig'ish | — | [MDN How the web works](https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works) · [MDN How browsers load websites](https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_browsers_load_websites) · [MDN What is a web server?](https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Web_mechanics/What_is_a_web_server) |
+| 01 | [Veb qanday ishlaydi](01-veb-qanday-ishlaydi.md) | Mijoz (brauzer) va server. Manzil kiritilgandan sahifa chizilguncha: DNS → ulanish → TLS → HTTP → sahifani yig'ish | — | [MDN How the web works](https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works) · [MDN How browsers load websites](https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_browsers_load_websites) · [MDN What is a web server?](https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Web_mechanics/What_is_a_web_server) |
 | 02 | URL | Sxema, xost, port, yo'l, so'rov qatori (query), fragment. Maxsus belgilarni kodlash. Origin — sxema, xost va port uchligi | B+V | [MDN What is a URL?](https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Web_mechanics/What_is_a_URL) · [MDN Origin](https://developer.mozilla.org/en-US/docs/Glossary/Origin) · [WHATWG URL Standard](https://url.spec.whatwg.org/) |
 | 03 | IP, port va TCP | IP manzil (IPv4, IPv6), port, TCP ulanish. Internet tarmoqlar tarmog'i sifatida | V | [MDN How does the Internet work?](https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Web_mechanics/How_does_the_Internet_work) · [MDN IP Address](https://developer.mozilla.org/en-US/docs/Glossary/IP_Address) · [MDN Port](https://developer.mozilla.org/en-US/docs/Glossary/Port) · [MDN TCP](https://developer.mozilla.org/en-US/docs/Glossary/TCP) |
 | 04 | Domen va DNS | Domen nomining tuzilishi. DNS nomni IP'ga qanday aylantiradi. Yozuv turlari (A, AAAA, CNAME, MX, TXT, NS) va TTL. `dig` bilan ko'rish | V | [MDN What is a Domain Name?](https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Web_mechanics/What_is_a_domain_name) · [MDN DNS](https://developer.mozilla.org/en-US/docs/Glossary/DNS) · [RFC 1034](https://www.rfc-editor.org/rfc/rfc1034) · [RFC 1035](https://www.rfc-editor.org/rfc/rfc1035) |
