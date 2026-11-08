@@ -219,3 +219,10 @@ Ikkinchi noutbukda boshlashdan oldin shu faylni, `CLAUDE.md` ni va kitobning `RE
 - Branch `docs/redis-1`. Tayyor: 1–12, 15, 25–34-boblar (2026-11-08). VPS'ga Redis 8.10.3 rasmiy APT omboridan (`packages.redis.io`, `resolute`) o'rnatildi, servis `redis-server`, faqat `127.0.0.1`/`::1:6379`.
 - Manba: `raw.githubusercontent.com/redis/docs/main/content/...` (markdown). Hujjat `main` tarmog'ida hali chiqmagan imkoniyatlar bo'lishi mumkin (masalan, Arrays turi, 8.12 RC) — har bobda o'rnatilgan 8.10.3 da tekshiriladi.
 - Navbat: avval `redis-cli` bilan (V) boblar — 3–12, 15, 25–34; Node.js (V+N) boblari — misollar tili bo'yicha egasining qarori kutilmoqda (README'da hozir Node.js).
+
+## RabbitMQ kitobi (`content/rabbitmq/`)
+
+- Branch `docs/rabbitmq-1`. Hali bob yozilmagan (2026-11-09).
+- VPS'ga RabbitMQ 4.4.0 va Erlang/OTP 27.3.4.19 Team RabbitMQ apt omboridan o'rnatildi (`/etc/apt/sources.list.d/rabbitmq.list` — noble ombori, hujjatdagi "Ubuntu 26.04 and 24.04" skripti; Erlang pinning `/etc/apt/preferences.d/erlang`, `Pin: origin RabbitMQ`, 1001). Servis `rabbitmq-server` — active/enabled; 5672, 25672, 4369 portlari barcha interfeyslarda, ufw ularni ruxsat etmagan — tashqaridan AMQP javobi yo'q (tekshirildi). Faqat `guest` foydalanuvchi (faqat localhost).
+- 2-bob sinovi bajarilgan, matn yozilmagan. Kuzatildi: kompyuterdagi `nc -z` VPS'dagi istalgan portni "ochiq" deb ko'rsatadi (lokal tarmoq ulanishni o'zi qabul qiladi) — tashqi tekshiruv faqat protokol javobi bilan (AMQP sarlavhasi).
+- Navbat: V-boblar (2, 4, 6, 10–14, 16, 17, 21, 25–34) — `rabbitmqctl`/`rabbitmqadmin` bilan; V+N — misollar tili qarori kutilmoqda.
