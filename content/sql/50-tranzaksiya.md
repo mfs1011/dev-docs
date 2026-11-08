@@ -1,6 +1,6 @@
 # 50 — Tranzaksiya
 
-[← Oldingi: To'liq matnli qidiruv](49-toliq-matnli-qidiruv.md) · [Mundarija](README.md)
+[← Oldingi: To'liq matnli qidiruv](49-toliq-matnli-qidiruv.md) · [Mundarija](README.md) · [Keyingi: Izolyatsiya darajalari →](51-izolyatsiya-darajalari.md)
 
 ## Tushuncha
 
