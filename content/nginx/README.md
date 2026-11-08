@@ -42,7 +42,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - Domen, CI/CD va nol to'xtovli deploy — **"Deploy amaliyoti"** kitobida.
 - Pochta proksi (mail), TCP/UDP proksi (stream), njs skriptlari — hujjatda: [NG docs](https://nginx.org/en/docs/).
 
-> **Holat.** Qo'llanma yozilmoqda: 22/30 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 23/30 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -93,7 +93,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
-| 18 | Sertifikat qanday olinadi | Let's Encrypt qanday ishlaydi: ACME protokoli, domen egasi ekanini isbotlash (challenge: HTTP-01, DNS-01). Sinov muhiti (staging) | — | [LE How It Works](https://letsencrypt.org/how-it-works/) · [LE Challenge Types](https://letsencrypt.org/docs/challenge-types/) · [LE Staging Environment](https://letsencrypt.org/docs/staging-environment/) |
+| 18 | [Sertifikat qanday olinadi](18-sertifikat-olish.md) | Let's Encrypt qanday ishlaydi: ACME protokoli, domen egasi ekanini isbotlash (challenge: HTTP-01, DNS-01). Sinov muhiti (staging) | — | [LE How It Works](https://letsencrypt.org/how-it-works/) · [LE Challenge Types](https://letsencrypt.org/docs/challenge-types/) · [LE Staging Environment](https://letsencrypt.org/docs/staging-environment/) |
 | 19 | Certbot | Snap bilan o'rnatish. `certbot --nginx` va `certbot certonly --webroot`. Avtomatik yangilanishni tekshirish (`renew --dry-run`) | V+D | [LE Getting Started](https://letsencrypt.org/getting-started/) · [CB Install](https://eff-certbot.readthedocs.io/en/stable/install.html) · [CB User Guide](https://eff-certbot.readthedocs.io/en/stable/using.html) |
 | 20 | nginx'ning ACME moduli | `nginx-module-acme` paketi. `acme_issuer` va `acme_certificate`: sertifikatni nginx o'zi oladi va yangilaydi | V+D | [NG acme module](https://nginx.org/en/docs/http/ngx_http_acme_module.html) · [NA ACME](https://docs.nginx.com/nginx/admin-guide/dynamic-modules/acme/) |
 | 21 | HTTPS server | `listen 443 ssl`, `ssl_certificate`, `ssl_certificate_key`. Sertifikat zanjiri. Bir nechta domen bitta IP'da (SNI). HTTP'dan HTTPS'ga yo'naltirish | V+D | [NG Configuring HTTPS servers](https://nginx.org/en/docs/http/configuring_https_servers.html) · [NG ssl module](https://nginx.org/en/docs/http/ngx_http_ssl_module.html) |
