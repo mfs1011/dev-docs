@@ -1,6 +1,6 @@
 # 47 — Sekin so'rovlar
 
-[← Oldingi: Planner va statistika](46-planner-va-statistika.md) · [Mundarija](README.md)
+[← Oldingi: Planner va statistika](46-planner-va-statistika.md) · [Mundarija](README.md) · [Keyingi: Sahifalash →](48-sahifalash.md)
 
 ## Tushuncha
 

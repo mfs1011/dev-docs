@@ -28,6 +28,7 @@ Manbalar va versiyalar (2026-10-10 da tekshirilgan):
 | MySQL | 9.7 LTS | <https://dev.mysql.com/doc/refman/9.7/en/> — eng yangi LTS ("8.4.x LTS to 9.7.x LTS", MySQL Releases sahifasi) |
 | SQLite | 3.54.0 | <https://www.sqlite.org/docs.html> — 2026-10-09 relizi |
 | Sinov muhiti | PG 18.6, MySQL 9.7.2, SQLite 3.54.0 | macOS. PG va MySQL — Homebrew (`postgresql@18`, `mysql@9.7`); SQLite — rasmiy manba kodidan (`sqlite-autoconf-3540000`, SHA3-256 tekshirilgan) `./configure && make` bilan yig'ilgan |
+| Sinov muhiti (47-bobdan) | PG 18.6, MySQL 9.7.2, SQLite 3.54.1 | macOS (boshqa noutbuk). PG — Homebrew `postgresql@18`; MySQL — rasmiy Docker image `mysql:9.7.2` (Homebrew'da `mysql@9.7` endi 9.7.4); SQLite — Homebrew `sqlite` 3.54.1 (trenajordagi bilan bir xil versiya) |
 | SQL standarti | SQL:2023 | PostgreSQL hujjatining D ilovasi (<https://www.postgresql.org/docs/18/features.html>) va SQL buyruqlari sahifalaridagi "Compatibility" bo'limlari |
 
 Versiya tanlovi haqida:
@@ -41,7 +42,7 @@ Qisqartmalar:
 - **MY** — MySQL 9.7 qo'llanmasi.
 - **SL** — SQLite hujjati.
 
-> **Holat.** Qo'llanma yozilmoqda: 47/70 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 48/70 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -145,7 +146,7 @@ Bu qismga ma'lumotlar bazasi hujjatlarida yozilgan narsalargina kiritildi.
 | 45 | [`EXPLAIN`](45-explain.md) | Rejani o'qish; PG `EXPLAIN ANALYZE` (PG 18 da BUFFERS avtomatik); MySQL `EXPLAIN ANALYZE`, `FORMAT=TREE/JSON`; SQLite `EXPLAIN QUERY PLAN` | [PG using-explain](https://www.postgresql.org/docs/18/using-explain.html) · [PG sql-explain](https://www.postgresql.org/docs/18/sql-explain.html) · [MY explain](https://dev.mysql.com/doc/refman/9.7/en/explain.html) · [MY explain-output](https://dev.mysql.com/doc/refman/9.7/en/explain-output.html) · [SL eqp](https://www.sqlite.org/eqp.html) |
 | 46 | [Planner va statistika](46-planner-va-statistika.md) | `ANALYZE`, `pg_stats`, kengaytirilgan statistika; PG'da hint yo'q, `enable_*` sozlamalari; MySQL histogrammalari va optimizer hint'lari; SQLite `sqlite_stat1`, `PRAGMA optimize` | [PG planner-stats](https://www.postgresql.org/docs/18/planner-stats.html) · [PG sql-createstatistics](https://www.postgresql.org/docs/18/sql-createstatistics.html) · [MY optimizer-statistics](https://dev.mysql.com/doc/refman/9.7/en/optimizer-statistics.html) · [MY optimizer-hints](https://dev.mysql.com/doc/refman/9.7/en/optimizer-hints.html) · [SL lang_analyze](https://www.sqlite.org/lang_analyze.html) |
 | 47 | [Sekin so'rovlar](47-sekin-sorovlar.md) | Ustun funksiya ichida bo'lsa indeks ishlamaydi; yashirin konversiya (`str_col = 1`); `OR` va index merge; `COUNT(*)` jadval hajmiga proporsional | [PG indexes-expressional](https://www.postgresql.org/docs/18/indexes-expressional.html) · [PG indexes-bitmap-scans](https://www.postgresql.org/docs/18/indexes-bitmap-scans.html) · [MY type-conversion](https://dev.mysql.com/doc/refman/9.7/en/type-conversion.html) · [MY index-merge-optimization](https://dev.mysql.com/doc/refman/9.7/en/index-merge-optimization.html) · [SL optoverview](https://www.sqlite.org/optoverview.html) |
-| 48 | Sahifalash *(tayyorlanmoqda)* | Katta `OFFSET` nega sekin; keyset sahifalash va qator konstruktori bilan taqqoslash `(a, b) > (?, ?)` | [PG queries-limit](https://www.postgresql.org/docs/18/queries-limit.html) · [PG functions-comparisons](https://www.postgresql.org/docs/18/functions-comparisons.html) · [SL rowvalue §3.1](https://www.sqlite.org/rowvalue.html) |
+| 48 | [Sahifalash](48-sahifalash.md) | Katta `OFFSET` nega sekin; keyset sahifalash va qator konstruktori bilan taqqoslash `(a, b) > (?, ?)` | [PG queries-limit](https://www.postgresql.org/docs/18/queries-limit.html) · [PG functions-comparisons](https://www.postgresql.org/docs/18/functions-comparisons.html) · [SL rowvalue §3.1](https://www.sqlite.org/rowvalue.html) |
 | 49 | To'liq matnli qidiruv *(tayyorlanmoqda)* | `tsvector`, `tsquery`, `pg_trgm`; MySQL FULLTEXT va ngram; SQLite FTS5 | [PG textsearch-intro](https://www.postgresql.org/docs/18/textsearch-intro.html) · [PG pgtrgm](https://www.postgresql.org/docs/18/pgtrgm.html) · [MY fulltext-search](https://dev.mysql.com/doc/refman/9.7/en/fulltext-search.html) · [SL fts5](https://www.sqlite.org/fts5.html) |
 
 ## IX qism — Tranzaksiyalar va parallellik (50–55)
