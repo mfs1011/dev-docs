@@ -1090,4 +1090,288 @@ export const QADAMLI = {
       },
     ],
   },
+  // Docker 01-bob: docker run ichida nima bo'ladi — Docker hujjati ("What is Docker?") dagi 6 qadam; buyruq bajarilmagan, chiqish yo'q
+  'docker-run': {
+    panel: 'docker run -i -t ubuntu /bin/bash',
+    qadamlar: [
+      {
+        cmd: ['docker run -i -t ubuntu /bin/bash'],
+        holat: [{ k: 'i', yol: 'image: ubuntu', qiymat: 'registry’dan yuklandi (docker pull kabi)', belgi: 'yangi' }],
+        izoh: '1. Image kompyuterda bo‘lmasa, Docker uni sozlangan registry’dan yuklaydi.',
+      },
+      {
+        cmd: ['docker run -i -t ubuntu /bin/bash'],
+        holat: [{ k: 'i', yol: 'image: ubuntu', qiymat: 'faqat o‘qish uchun' }, { k: 'c', yol: 'konteyner', qiymat: 'yaratildi (docker container create kabi)', belgi: 'yangi' }],
+        izoh: '2. Image’dan yangi konteyner yaratiladi.',
+      },
+      {
+        cmd: ['docker run -i -t ubuntu /bin/bash'],
+        holat: [{ k: 'i', yol: 'image: ubuntu', qiymat: 'faqat o‘qish uchun' }, { k: 'c', yol: 'konteyner', qiymat: 'yaratildi' }, { k: 'f', yol: 'yoziladigan qatlam', qiymat: 'konteyner o‘zgarishlari shu yerga', belgi: 'yangi' }],
+        izoh: '3. Konteynerga oxirgi qatlam sifatida yoziladigan fayl tizimi ajratiladi — image o‘zgarmaydi.',
+      },
+      {
+        cmd: ['docker run -i -t ubuntu /bin/bash'],
+        holat: [{ k: 'c', yol: 'konteyner', qiymat: 'yaratildi' }, { k: 'f', yol: 'yoziladigan qatlam', qiymat: 'tayyor' }, { k: 'n', yol: 'tarmoq', qiymat: 'standart tarmoqqa ulandi, IP berildi', belgi: 'yangi' }],
+        izoh: '4. Tarmoq interfeysi yaratiladi: konteyner standart tarmoqqa ulanadi va IP oladi.',
+      },
+      {
+        cmd: ['docker run -i -t ubuntu /bin/bash'],
+        holat: [{ k: 'c', yol: 'konteyner', qiymat: 'ishlayapti: /bin/bash', belgi: 'yangi' }, { k: 't', yol: 'terminal (-i -t)', qiymat: 'klaviatura konteynerga ulangan', belgi: 'yangi' }],
+        izoh: '5. Konteyner ishga tushadi va /bin/bash bajariladi; -i va -t tufayli u terminalingizga ulangan.',
+      },
+      {
+        cmd: ['exit'],
+        holat: [{ k: 'c', yol: 'konteyner', qiymat: 'to‘xtadi, lekin o‘chirilmadi', belgi: 'ochiq' }, { k: 'i', yol: 'image: ubuntu', qiymat: 'o‘zgarmagan' }],
+        izoh: '6. /bin/bash tugadi — konteyner to‘xtadi, lekin o‘chirilmadi: uni qayta ishga tushirish yoki o‘chirish mumkin.',
+      },
+    ],
+  },
+  // Docker 04-bob: konteyner hayot sikli (VPS, haqiqiy chiqishlar)
+  hayot: {
+    panel: 'konteyner holati (docker ps -a)',
+    qadamlar: [
+      {
+        cmd: ["docker container create --name bosh alpine echo salom", "docker ps -a --filter name=bosh --format '{{.Names}} {{.Status}}'"],
+        chiqish: "6593929c9695f91b79514bf719075092806ffa47797faa55bd310909fd9fdf6c\nbosh Exited (0) Less than a second ago",
+        holat: [{ k: "h", yol: "bosh", qiymat: "Created — yaratildi, ishlamayapti", belgi: "ochiq" }],
+        izoh: "`create` — faqat yaratish. Fayl tizimi tayyor, jarayon yo‘q.",
+      },
+      {
+        cmd: ["docker start -a bosh", "docker ps -a --filter name=bosh --format '{{.Names}} {{.Status}}'"],
+        chiqish: "salom\nbosh Exited (0) Less than a second ago",
+        holat: [{ k: "h", yol: "bosh", qiymat: "Exited (0) — buyruq tugadi" }],
+        izoh: "`start` jarayonni ishga tushirdi; `echo` tugadi — konteyner ham to‘xtadi. Kod 0 — muvaffaqiyat.",
+      },
+      {
+        cmd: ["time docker stop uxla", "docker ps -a --filter name=uxla --format \"{{.Names}} {{.Status}}\""],
+        chiqish: "uxla\n\nreal\t0m10.295s\nuser\t0m0.019s\nsys\t0m0.017s\nuxla Exited (137) Less than a second ago",
+        holat: [{ k: "h", yol: "uxla", qiymat: "Exited (137) — SIGKILL bilan", belgi: "xato" }],
+        izoh: "`sleep` SIGTERM’ga javob bermadi — 10 soniyadan keyin SIGKILL (8-bob).",
+      },
+      {
+        cmd: ["docker start uxla", "docker ps --filter name=uxla --format \"{{.Names}} {{.Status}}\""],
+        chiqish: "uxla\nuxla Up Less than a second",
+        holat: [{ k: "h", yol: "uxla", qiymat: "Up — o‘sha konteyner qayta ishlayapti", belgi: "yangi" }],
+        izoh: "`start` yangi konteyner yaratmaydi — eskisini qayta ishga tushiradi.",
+      },
+      {
+        cmd: ["docker rm uxla"],
+        chiqish: "Error response from daemon: cannot remove container \"uxla\": container is running: stop the container before removing or force remove",
+        holat: [{ k: "h", yol: "uxla", qiymat: "Up — o‘chirilmadi", belgi: "xato" }],
+        izoh: "Ishlayotgan konteynerni oddiy `rm` o‘chirmaydi.",
+      },
+      {
+        cmd: ["docker rm -f uxla"],
+        chiqish: "uxla",
+        holat: [{ k: "h", yol: "uxla", qiymat: "o‘chirildi", belgi: "yoq" }],
+        izoh: "`-f` — majburan: to‘xtatib, o‘chiradi.",
+      },
+    ],
+  },
+  // Docker 05-bob: -p ufw'ni chetlab o'tadi; 127.0.0.1 bilan yopiq (VPS + noutbuk, haqiqiy chiqishlar, IP 203.0.113.10)
+  'docker-port': {
+    panel: 'VPS: ufw va 8080-port',
+    qadamlar: [
+      {
+        cmd: ["ufw status | grep -E \"Status|8080\""],
+        chiqish: "Status: active",
+        holat: [{ k: "u", yol: "ufw", qiymat: "active, 8080 uchun qoida yo‘q" }, { k: "p", yol: "8080", qiymat: "?" }],
+        izoh: "Firewall yoqilgan, 8080-port uchun ruxsat yo‘q.",
+      },
+      {
+        cmd: ["docker run -d --name veb -p 8080:80 nginx:1.29 >/dev/null && echo ishga tushdi", "docker port veb"],
+        chiqish: "Unable to find image 'nginx:1.29' locally\n1.29: Pulling from library/nginx\n8e9b53b630de: Pulling fs layer\n57fb71246055: Pulling fs layer\n38a7e44929f3: Pulling fs layer\n6e9f32fdbd61: Pulling fs layer\n382a36159731: Pulling fs layer\n20d41cd6829d: Pulling fs layer\n83742381311a: Pulling fs layer\n8e9b53b630de: Download complete\n83742381311a: Download complete\n6e9f32fdbd61: Download complete\n382a36159731: Download complete\n20d41cd6829d: Download complete\n57fb71246055: Download complete\n46ca9676efb5: Download complete\n94a543ead0f2: Download complete\n38a7e44929f3: Download complete\n57fb71246055: Pull complete\n38a7e44929f3: Pull complete\n83742381311a: Pull complete\n6e9f32fdbd61: Pull complete\n382a36159731: Pull complete\n20d41cd6829d: Pull complete\n8e9b53b630de: Pull complete\nDigest: sha256:1881968aff6f7cdcc4b888c00a11f4ce241ad7ec957e0cb4a9e19e93a3ff87ea\nStatus: Downloaded newer image for nginx:1.29\nishga tushdi\n80/tcp -> 0.0.0.0:8080\n80/tcp -> [::]:8080",
+        holat: [{ k: "u", yol: "ufw", qiymat: "active, 8080 uchun qoida yo‘q" }, { k: "p", yol: "8080", qiymat: "0.0.0.0 va [::] — barcha manzillar", belgi: "ochiq" }],
+        izoh: "Port barcha manzillarda publish qilindi.",
+      },
+      {
+        cmd: ["curl -sS --max-time 5 -o /dev/null -w \"%{http_code}\\n\" http://203.0.113.10:8080/"],
+        chiqish: "200",
+        holat: [{ k: "u", yol: "ufw", qiymat: "chetlab o‘tildi", belgi: "xato" }, { k: "p", yol: "8080", qiymat: "internetdan ochiq", belgi: "xato" }],
+        izoh: "Noutbukdan: 200. Docker’ning nat qoidasi ufw’dan oldin ishladi.",
+      },
+      {
+        cmd: ["docker rm -f veb >/dev/null", "docker run -d --name veb -p 127.0.0.1:8080:80 nginx:1.29 >/dev/null && echo ishga tushdi", "docker port veb", "curl -sS -o /dev/null -w \"%{http_code}\\n\" http://127.0.0.1:8080/"],
+        chiqish: "ishga tushdi\n80/tcp -> 127.0.0.1:8080\n200",
+        holat: [{ k: "u", yol: "ufw", qiymat: "active" }, { k: "p", yol: "8080", qiymat: "faqat 127.0.0.1", belgi: "yangi" }],
+        izoh: "Qayta: faqat loopback’da. Serverning o‘zidan — 200.",
+      },
+      {
+        cmd: ["curl -sS --max-time 5 -o /dev/null -w \"%{http_code}\\n\" http://203.0.113.10:8080/"],
+        chiqish: "curl: (28) Operation timed out after 5004 milliseconds with 0 bytes received\n000",
+        holat: [{ k: "u", yol: "ufw", qiymat: "active" }, { k: "p", yol: "8080", qiymat: "tashqaridan yopiq", belgi: "yangi" }],
+        izoh: "Noutbukdan javob yo‘q — port faqat serverning ichida.",
+      },
+    ],
+  },
+  // Docker 06-bob: yoziladigan qatlam konteyner bilan o'ladi, volume — qoladi (VPS, haqiqiy chiqishlar)
+  volume: {
+    panel: 'ma’lumot qayerda',
+    qadamlar: [
+      {
+        cmd: ["docker run --name v1 alpine sh -c 'echo salom > /fayl.txt; cat /fayl.txt'"],
+        chiqish: "salom",
+        holat: [{ k: "c", yol: "konteyner v1", qiymat: "yozdi: /fayl.txt (yoziladigan qatlam)", belgi: "yangi" }],
+        izoh: "Fayl konteynerning yoziladigan qatlamida.",
+      },
+      {
+        cmd: ["docker rm v1", "docker run --rm alpine cat /fayl.txt"],
+        chiqish: "v1\ncat: can't open '/fayl.txt': No such file or directory",
+        holat: [{ k: "c", yol: "konteyner v1", qiymat: "o‘chirildi — qatlami bilan", belgi: "yoq" }, { k: "f", yol: "/fayl.txt", qiymat: "yo‘q", belgi: "xato" }],
+        izoh: "Yangi konteyner image’dan toza boshlanadi — fayl yo‘qoldi.",
+      },
+      {
+        cmd: ["docker volume create malumot", "docker run --rm -v malumot:/data alpine sh -c 'echo \"1-konteyner yozdi\" > /data/eslatma.txt'"],
+        chiqish: "malumot",
+        holat: [{ k: "v", yol: "volume: malumot", qiymat: "eslatma.txt yozildi", belgi: "yangi" }],
+        izoh: "Volume — konteynerdan tashqarida, Docker boshqaradi.",
+      },
+      {
+        cmd: ["docker run --rm -v malumot:/data alpine cat /data/eslatma.txt"],
+        chiqish: "1-konteyner yozdi",
+        holat: [{ k: "v", yol: "volume: malumot", qiymat: "eslatma.txt — joyida", belgi: "yangi" }, { k: "c", yol: "1-konteyner", qiymat: "allaqachon o‘chgan (--rm)", belgi: "yoq" }],
+        izoh: "Boshqa konteyner o‘sha volume’ni uladi — ma’lumot saqlanib qolgan.",
+      },
+    ],
+  },
+  // Docker 08-bob: PID 1 va SIGTERM — to'rt variantda docker stop (VPS, haqiqiy chiqishlar)
+  pid1: {
+    panel: 'docker stop: SIGTERM kimga yetadi',
+    qadamlar: [
+      {
+        cmd: ["docker exec s4 cat /proc/1/cmdline | tr '\\0' ' '; echo"],
+        chiqish: "/bin/sh -c node server.js ",
+        holat: [{ k: "p", yol: "PID 1", qiymat: "/bin/sh -c node server.js" }, { k: "n", yol: "node", qiymat: "sh ning bolasi — SIGTERM yetmaydi", belgi: "xato" }],
+        izoh: "Shell shakli (node:26-slim): PID 1 — qobiq, u signalni uzatmaydi. stop — 10 soniya.",
+      },
+      {
+        cmd: ["docker exec s1 ps", "time docker stop s1", "docker ps -a --filter name=s1 --format \"{{.Names}} {{.Status}}\""],
+        chiqish: "PID   USER     TIME  COMMAND\n    1 root      0:00 {node-MainThread} node server.js\n   13 root      0:00 ps\ns1\n\nreal\t0m10.241s\nuser\t0m0.018s\nsys\t0m0.014s\ns1 Exited (137) Less than a second ago",
+        holat: [{ k: "p", yol: "PID 1", qiymat: "node (exec shakli)" }, { k: "n", yol: "SIGTERM", qiymat: "ishlovchi yo‘q — PID 1 e’tiborsiz qoldiradi", belgi: "xato" }, { k: "r", yol: "natija", qiymat: "10 s, Exited (137) — SIGKILL", belgi: "xato" }],
+        izoh: "Exec shakli, lekin ilovada SIGTERM ishlovchisi yo‘q.",
+      },
+      {
+        cmd: ["docker exec s2 ps", "time docker stop s2", "docker ps -a --filter name=s2 --format \"{{.Names}} {{.Status}}\""],
+        chiqish: "PID   USER     TIME  COMMAND\n    1 root      0:00 /sbin/docker-init -- docker-entrypoint.sh node server.js\n    7 root      0:00 {node-MainThread} node server.js\n   14 root      0:00 ps\ns2\n\nreal\t0m0.246s\nuser\t0m0.017s\nsys\t0m0.016s\ns2 Exited (143) Less than a second ago",
+        holat: [{ k: "p", yol: "PID 1", qiymat: "docker-init (tini)", belgi: "yangi" }, { k: "n", yol: "node", qiymat: "7-PID — SIGTERM’ning standart amali ishlaydi" }, { k: "r", yol: "natija", qiymat: "0.25 s, Exited (143) — SIGTERM", belgi: "yangi" }],
+        izoh: "--init: init jarayoni PID 1 bo‘ldi va signalni uzatdi.",
+      },
+      {
+        cmd: ["sleep 1; time docker stop s5", "docker logs s5", "docker ps -a --filter name=s5 --format \"{{.Names}} {{.Status}}\""],
+        chiqish: "s5\n\nreal\t0m0.202s\nuser\t0m0.021s\nsys\t0m0.014s\nTinglayapti: 3000\nSIGTERM keldi, yopilmoqda\ns5 Exited (0) Less than a second ago",
+        holat: [{ k: "p", yol: "PID 1", qiymat: "node" }, { k: "n", yol: "SIGTERM", qiymat: "ilova o‘zi ushladi: server.close()", belgi: "yangi" }, { k: "r", yol: "natija", qiymat: "0.2 s, Exited (0) — toza yopildi", belgi: "yangi" }],
+        izoh: "Eng yaxshisi: ilova SIGTERM’ni o‘zi ishlaydi va toza tugaydi.",
+      },
+    ],
+  },
+  // Docker 09-bob: server.js o'zgarganda qaysi qatlamlar qayta quriladi — ikki tartib (VPS, haqiqiy chiqishlar)
+  kesh: {
+    keng: true,
+    panel: 'qatlamlar: server.js o‘zgardi',
+    qadamlar: [
+      {
+        cmd: ["echo '// 1-ozgarish' >> server.js", "docker build --progress=plain -t kesh:yomon -f Dockerfile.yomon . 2>&1 | grep -E '^#[0-9]+ (\\[[0-9]/[0-9]\\]|CACHED|DONE)|transferring context:'"],
+        chiqish: "#1 DONE 0.0s\n#2 DONE 0.1s\n#3 transferring context:\n#3 transferring context: 2B done\n#3 DONE 0.0s\n#4 [1/4] FROM docker.io/library/node:26-alpine@sha256:8996bb5821d62a8fd9bb27c1cb07462f3fdce6e47d640c6a881ead0b064ce216\n#4 DONE 0.1s\n#5 transferring context: 39.65kB 0.1s done\n#5 DONE 0.1s\n#6 [2/4] WORKDIR /app\n#6 CACHED\n#7 [3/4] COPY . .\n#7 DONE 0.3s\n#8 [4/4] RUN npm ci --omit=dev\n#8 DONE 6.4s\n#9 DONE 1.6s",
+        holat: [{ k: "a", yol: "WORKDIR /app", qiymat: "CACHED" }, { k: "b", yol: "COPY . .", qiymat: "server.js o‘zgardi → qayta", belgi: "xato" }, { k: "c", yol: "RUN npm ci", qiymat: "oldingisi buzildi → qayta (6.4s)", belgi: "xato" }],
+        izoh: "Yomon tartib: kod bilan birga bog‘liqliklar ham har safar qayta o‘rnatiladi.",
+      },
+      {
+        cmd: ["echo '// 2-ozgarish' >> server.js", "docker build --progress=plain -t kesh:yaxshi . 2>&1 | grep -E '^#[0-9]+ (\\[[0-9]/[0-9]\\]|CACHED|DONE)|transferring context:'"],
+        chiqish: "#1 DONE 0.0s\n#2 DONE 0.0s\n#3 transferring context: 2B done\n#3 DONE 0.0s\n#4 transferring context: 39.66kB 0.1s done\n#4 DONE 0.1s\n#5 [1/5] FROM docker.io/library/node:26-alpine@sha256:8996bb5821d62a8fd9bb27c1cb07462f3fdce6e47d640c6a881ead0b064ce216\n#5 DONE 0.1s\n#6 [2/5] WORKDIR /app\n#6 CACHED\n#7 [3/5] COPY package.json package-lock.json ./\n#7 CACHED\n#8 [4/5] RUN npm ci --omit=dev\n#8 CACHED\n#9 [5/5] COPY . .\n#9 DONE 0.4s\n#10 DONE 0.7s",
+        holat: [{ k: "a", yol: "WORKDIR /app", qiymat: "CACHED" }, { k: "p", yol: "COPY package*.json", qiymat: "o‘zgarmagan → CACHED", belgi: "yangi" }, { k: "c", yol: "RUN npm ci", qiymat: "CACHED", belgi: "yangi" }, { k: "b", yol: "COPY . .", qiymat: "server.js o‘zgardi → qayta (0.4s)", belgi: "ochiq" }],
+        izoh: "Yaxshi tartib: faqat oxirgi qatlam qayta qurildi, npm ci keshdan.",
+      },
+    ],
+  },
+  // Docker 14-bob: keyingi qatlamda o'chirish image'ni kichraytirmaydi (VPS, haqiqiy chiqishlar)
+  qatlam: {
+    keng: true,
+    panel: 'curl:yomon qatlamlari (pastdan yuqoriga)',
+    qadamlar: [
+      {
+        cmd: ["docker image history curl:yomon | head -4"],
+        chiqish: "IMAGE          CREATED          CREATED BY                                      SIZE      COMMENT\n5c1d0aef9b71   23 seconds ago   RUN /bin/sh -c rm -rf /var/lib/apt/lists/* #…   20.5kB    buildkit.dockerfile.v0\n<missing>      24 seconds ago   RUN /bin/sh -c apt-get install -y curl # bui…   21.5MB    buildkit.dockerfile.v0\n<missing>      38 seconds ago   RUN /bin/sh -c apt-get update # buildkit        21.7MB    buildkit.dockerfile.v0",
+        holat: [{ k: "u", yol: "RUN apt-get update", qiymat: "21.7MB — paketlar ro‘yxati", belgi: "ochiq" }, { k: "i", yol: "RUN apt-get install -y curl", qiymat: "21.5MB — curl va tavsiya etilganlar" }, { k: "r", yol: "RUN rm -rf /var/lib/apt/lists/*", qiymat: "20.5kB" }],
+        izoh: "Har RUN — alohida qatlam. Uchinchisi ro‘yxatni o‘chirdi...",
+      },
+      {
+        cmd: ["docker image ls curl"],
+        chiqish: "IMAGE         ID             DISK USAGE   CONTENT SIZE   EXTRA\ncurl:yaxshi   9e6b2a33ec84        136MB         34.9MB        \ncurl:yomon    5c1d0aef9b71        184MB         53.4MB        ",
+        holat: [{ k: "u", yol: "RUN apt-get update", qiymat: "21.7MB — baribir image’da qoldi", belgi: "xato" }, { k: "r", yol: "RUN rm …", qiymat: "faqat “o‘chirildi” belgisi qo‘shdi", belgi: "xato" }, { k: "s", yol: "curl:yomon", qiymat: "184MB", belgi: "xato" }],
+        izoh: "...lekin pastdagi qatlam o‘zgarmas: fayllar unda qoladi, yuqori qatlam ularni faqat yashiradi.",
+      },
+      {
+        cmd: ["docker image history curl:yaxshi | head -2"],
+        chiqish: "IMAGE          CREATED         CREATED BY                                      SIZE      COMMENT\n9e6b2a33ec84   2 seconds ago   RUN /bin/sh -c apt-get update && apt-get ins…   13.4MB    buildkit.dockerfile.v0",
+        holat: [{ k: "a", yol: "RUN update && install && rm", qiymat: "13.4MB — bitta qatlam", belgi: "yangi" }, { k: "s", yol: "curl:yaxshi", qiymat: "136MB", belgi: "yangi" }],
+        izoh: "Bitta RUN ichida o‘chirilgan fayl hech qachon qatlamga yozilmaydi.",
+      },
+    ],
+  },
+  // Docker 16-bob: frontend/backend tarmoqlari, internal: true (VPS, haqiqiy chiqishlar)
+  tarmoq: {
+    panel: 'proxy [frontend] · web [frontend, backend] · redis [backend, internal]',
+    qadamlar: [
+      {
+        cmd: ["docker compose exec proxy getent hosts web"],
+        chiqish: "172.19.0.2      web",
+        holat: [{ k: "a", yol: "proxy → web", qiymat: "frontend’da birga: topildi", belgi: "yangi" }],
+        izoh: "Umumiy tarmoqdagi servis nomi DNS orqali topiladi.",
+      },
+      {
+        cmd: ["docker compose exec proxy getent hosts redis; echo \"kod: $?\""],
+        chiqish: "kod: 2",
+        holat: [{ k: "a", yol: "proxy → web", qiymat: "topildi" }, { k: "b", yol: "proxy → redis", qiymat: "umumiy tarmoq yo‘q: nom topilmadi", belgi: "xato" }],
+        izoh: "proxy backend’da yo‘q — redis uning uchun mavjud emas.",
+      },
+      {
+        cmd: ["sleep 2; docker compose exec proxy curl -s http://web:3000/"],
+        chiqish: "Salom! Bu sahifa 1 marta ochildi.",
+        holat: [{ k: "b", yol: "proxy → redis", qiymat: "yopiq" }, { k: "c", yol: "proxy → web → redis", qiymat: "web ikkala tarmoqda: so‘rov yetdi", belgi: "yangi" }],
+        izoh: "Faqat web ikki dunyoni bog‘laydi.",
+      },
+      {
+        cmd: ["docker compose exec web wget -qO- -T 5 https://registry.npmjs.org/ > /dev/null && echo \"web: internet bor\""],
+        chiqish: "web: internet bor",
+        holat: [{ k: "d", yol: "web → internet", qiymat: "frontend oddiy tarmoq: chiqish bor", belgi: "yangi" }],
+        izoh: "web frontend orqali internetga chiqa oladi.",
+      },
+      {
+        cmd: ["docker compose exec redis wget -qO- -T 5 https://registry.npmjs.org/ > /dev/null; echo \"redis kod: $?\""],
+        chiqish: "wget: bad address 'registry.npmjs.org'\nredis kod: 1",
+        holat: [{ k: "e", yol: "redis → internet", qiymat: "backend internal: tashqi aloqa yo‘q", belgi: "xato" }],
+        izoh: "internal: true — bu tarmoqdan tashqariga yo‘l yo‘q, DNS ham tashqi nomlarni bermaydi.",
+      },
+    ],
+  },
+  // Docker 17-bob: depends_on + healthcheck (redis 5 soniya kechikib ishga tushadi; VPS, haqiqiy chiqishlar)
+  sogliq: {
+    panel: 'redis 5 s kech tayyor bo‘ladi',
+    qadamlar: [
+      {
+        cmd: ["docker compose up -d 2>&1 | grep Started", "sleep 8; docker compose ps -a --format \"table {{.Service}}\\t{{.Status}}\""],
+        chiqish: " Container s17-web-1 Started \n Container s17-redis-1 Started \nSERVICE   STATUS\nredis     Up 9 seconds\nweb       Exited (1) 7 seconds ago",
+        holat: [{ k: "r", yol: "redis", qiymat: "Up — lekin hali qabul qilmaydi", belgi: "ochiq" }, { k: "w", yol: "web", qiymat: "Exited (1)", belgi: "xato" }],
+        izoh: "depends_on yo‘q: ikkalasi birga ishga tushdi, web Redis’ga ulanolmay yiqildi.",
+      },
+      {
+        cmd: ["sleep 8; docker compose logs web | grep -m1 Error"],
+        chiqish: "web-1  | Error: connect ECONNREFUSED 172.18.0.3:6379",
+        holat: [{ k: "w", yol: "web", qiymat: "ECONNREFUSED", belgi: "xato" }],
+        izoh: "Sabab — loglarda: Redis porti hali yopiq edi.",
+      },
+      {
+        cmd: ["time docker compose -f compose.healthy.yaml up -d 2>&1 | grep -E \"Waiting|Healthy|Started\""],
+        chiqish: " Container s17-redis-1 Started \n Container s17-redis-1 Waiting \n Container s17-redis-1 Healthy \n Container s17-web-1 Started \n\nreal\t0m7.823s\nuser\t0m0.144s\nsys\t0m0.047s",
+        holat: [{ k: "r", yol: "redis", qiymat: "Started → Waiting → Healthy", belgi: "yangi" }, { k: "w", yol: "web", qiymat: "faqat Healthy’dan keyin Started", belgi: "yangi" }],
+        izoh: "condition: service_healthy — Compose healthcheck o‘tishini kutdi (~7.8 s).",
+      },
+      {
+        cmd: ["docker compose -f compose.healthy.yaml ps --format \"table {{.Service}}\\t{{.Status}}\"", "sleep 2; curl -s http://127.0.0.1:3000/"],
+        chiqish: "SERVICE   STATUS\nredis     Up 7 seconds (healthy)\nweb       Up Less than a second\nSalom! Bu sahifa 1 marta ochildi.",
+        holat: [{ k: "r", yol: "redis", qiymat: "Up (healthy)", belgi: "yangi" }, { k: "w", yol: "web", qiymat: "ishlayapti", belgi: "yangi" }],
+        izoh: "Endi web Redis tayyor bo‘lganda ishga tushdi.",
+      },
+    ],
+  },
 }
