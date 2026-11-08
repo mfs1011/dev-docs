@@ -1,6 +1,6 @@
 # 67 — Replikatsiya va monitoring
 
-[← Oldingi: Zaxira va tiklash](66-zaxira-va-tiklash.md) · [Mundarija](README.md)
+[← Oldingi: Zaxira va tiklash](66-zaxira-va-tiklash.md) · [Mundarija](README.md) · [Keyingi: Dialektlar xaritasi →](69-dialektlar-xaritasi.md)
 
 ## Tushuncha
 

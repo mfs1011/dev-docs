@@ -42,7 +42,7 @@ Qisqartmalar:
 - **MY** — MySQL 9.7 qo'llanmasi.
 - **SL** — SQLite hujjati.
 
-> **Holat.** Qo'llanma yozilmoqda: 66/70 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 67/70 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -187,5 +187,5 @@ Bu qismga ma'lumotlar bazasi hujjatlarida yozilgan narsalargina kiritildi.
 | # | Bob | Mazmun | Rasmiy manba |
 | --- | --- | --- | --- |
 | 68 | ORM ortidagi SQL *(tayyorlanmoqda)* | ORM yuborgan SQL'ni ko'rish: Laravel (`dumpRawSql`, `DB::listen`), Doctrine DBAL logging, Prisma `log`; N+1 muammosi (Laravel va Prisma hujjatlaridan) | [Laravel queries](https://laravel.com/framework/docs/13.x/queries) · [Laravel database](https://laravel.com/framework/docs/13.x/database) · [Laravel eloquent-relationships](https://laravel.com/framework/docs/13.x/eloquent-relationships) · [Doctrine DBAL architecture](https://www.doctrine-project.org/projects/doctrine-dbal/en/latest/reference/architecture.html) · [Prisma logging](https://www.prisma.io/docs/orm/prisma-client/observability-and-logging/logging) |
-| 69 | Dialektlar xaritasi *(tayyorlanmoqda)* | Oldingi boblardagi "Dialektlar" bo'limlarining yig'ma jadvali: PG ↔ MySQL ↔ SQLite | Oldingi boblarning manbalari · [SL quirks](https://www.sqlite.org/quirks.html) · [MY differences-from-ansi](https://dev.mysql.com/doc/refman/9.7/en/differences-from-ansi.html) |
+| 69 | [Dialektlar xaritasi](69-dialektlar-xaritasi.md) | Oldingi boblardagi "Dialektlar" bo'limlarining yig'ma jadvali: PG ↔ MySQL ↔ SQLite | Oldingi boblarning manbalari · [SL quirks](https://www.sqlite.org/quirks.html) · [MY differences-from-ansi](https://dev.mysql.com/doc/refman/9.7/en/differences-from-ansi.html) |
 | 70 | Amaliy loyiha *(tayyorlanmoqda)* | Do'kon bazasi noldan: sxema, so'rovlar, indekslar, migratsiya — faqat oldingi boblarda o'rganilgan narsalar bilan | Oldingi boblarning manbalari |
