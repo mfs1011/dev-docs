@@ -1,6 +1,6 @@
 # 56 — Funksiya va protseduralar
 
-[← Oldingi: Ilova darajasida izchillik](55-ilova-darajasida-izchillik.md) · [Mundarija](README.md)
+[← Oldingi: Ilova darajasida izchillik](55-ilova-darajasida-izchillik.md) · [Mundarija](README.md) · [Keyingi: Triggerlar →](57-triggerlar.md)
 
 ## Tushuncha
 
