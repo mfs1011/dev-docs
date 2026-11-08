@@ -206,3 +206,8 @@ Ikkinchi noutbukda boshlashdan oldin shu faylni, `CLAUDE.md` ni va kitobning `RE
 - Ikki seansli misollar (50–54-boblar) — kichik Python skripti: buyruqlarni A/B seanslarga navbatma-navbat yuboradi va chiqishni seans nomi bilan yozadi (`~/sql-sinov/ikki.py`, git'da yo'q). Bloklangan buyruq javobi keyingi buyruq ostida chiqadi — boblarda izohlangan.
 - Bob ulash: oldingi bobga "Keyingi", README qatori havolaga, `NN/70` — Linux'dagi `bob_ulash.py` ning SQL varianti (scratchpad'da edi).
 - dev.mysql.com havolalari `havola.sh` da 403 qaytaradi (HEAD so'roviga), sahifalar `GET` bilan ochiladi.
+
+## Server xavfsizligi kitobi (`content/server-xavfsizligi/`)
+
+- Branch `docs/server-xavfsizligi-1`. Tayyor: 1-bob (2026-11-08). Manba: `raw.githubusercontent.com/canonical/ubuntu-server-documentation/main/docs/...`.
+- Navbat: VPS'ga kirishni xavf ostiga qo'ymaydigan boblar — 2–8, 19–24. SSH/firewall boblari (9–18) — provayder konsoli tayyorligi bo'yicha egasining tasdig'i kerak.

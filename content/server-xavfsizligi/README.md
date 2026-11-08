@@ -45,7 +45,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - Ma'lumotlar bazasining zaxirasi — **"SQL"** kitobida.
 - Server buzilganda nima qilish (incident response): Debian'ning shu mavzudagi "Securing Debian Manual" qo'llanmasi debian.org'da endi yo'q, boshqa joriy rasmiy manba topilmadi. Shu sababli bu mavzu kiritilmadi.
 
-> **Holat.** Qo'llanma tayyorlanmoqda — quyida rejalashtirilgan mundarija.
+> **Holat.** Qo'llanma yozilmoqda: 1/24 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -64,7 +64,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
-| 01 | Server nimadan himoyalanadi | Internetga ochiq server: portlarni skanerlash, parol terib ko'rish urinishlari. Hujum yuzasi (attack surface) — tashqaridan kirish mumkin bo'lgan joylar. Himoya qatlamlari: yangilanish, kirish nazorati, tarmoq, zaxira | — | [UB Security suggestions](https://ubuntu.com/server/docs/explanation/security/security_suggestions/) · [UB Introduction to security](https://ubuntu.com/server/docs/explanation/intro-to/security/) |
+| 01 | [Server nimadan himoyalanadi](01-nimadan-himoya.md) | Internetga ochiq server: portlarni skanerlash, parol terib ko'rish urinishlari. Hujum yuzasi (attack surface) — tashqaridan kirish mumkin bo'lgan joylar. Himoya qatlamlari: yangilanish, kirish nazorati, tarmoq, zaxira | — | [UB Security suggestions](https://ubuntu.com/server/docs/explanation/security/security_suggestions/) · [UB Introduction to security](https://ubuntu.com/server/docs/explanation/intro-to/security/) |
 | 02 | ⚑ Boshlang'ich holatni tekshirish | Qaysi portlar ochiq (`ss`), qaysi servislar ishlaydi, kim kira oladi (`sshd -T`), oxirgi yangilanish qachon bo'lgan | V | [UB Security suggestions](https://ubuntu.com/server/docs/explanation/security/security_suggestions/) · [UM ss(8)](https://manpages.ubuntu.com/manpages/resolute/man8/ss.8.html) · [SSH sshd(8)](https://man.openbsd.org/sshd.8) |
 
 ## II qism — Yangilanishlar (3–6)
