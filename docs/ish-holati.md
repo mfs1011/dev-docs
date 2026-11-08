@@ -224,3 +224,9 @@ Ikkinchi noutbukda boshlashdan oldin shu faylni, `CLAUDE.md` ni va kitobning `RE
 
 - Branch `docs/server-xavfsizligi-1`. Tayyor: 1–8, 19–23-boblar (2026-11-09; wtmpdb + libpam-wtmpdb o'rnatildi (`last`); 24-bob (yakuniy ro'yxat) 9–18-boblardan keyin; etckeeper o'rnatildi (`/etc/.git`); restic 0.18.1, sinov ombori `/var/backups/restic` (paroli `/root/.restic-parol`; 21-bob uchun); 20-bobda SFTP sinovi qilinmadi — SSH kalit qo'shish ruxsat so'raydi; cron o'rnatildi; apparmor-utils o'rnatildi; admin foydalanuvchi `boshqaruv` (sudo, root kalitlari bilan; paroli `/root/boshqaruv-parol`); ubuntu-pro-client o'rnatildi, Pro'ga ulanmagan; VPS yadrosi 7.0.0-43 ga yangilanib qayta ishga tushirildi). Manba: `raw.githubusercontent.com/canonical/ubuntu-server-documentation/main/docs/...`.
 - Navbat: VPS'ga kirishni xavf ostiga qo'ymaydigan boblar — 2–8, 19–24. SSH/firewall boblari (9–18) — provayder konsoli tayyorligi bo'yicha egasining tasdig'i kerak.
+
+## Deploy amaliyoti kitobi (`content/deploy-amaliyoti/`)
+
+- Branch `docs/deploy-1`. Tayyor: 1, 5, 7, 8, 16–18, 20-boblar (20-bobda image tegi va GitHub deploy tarixi qismi — 19-bob va III qism bilan qo'shiladi) (2026-11-09; VPS'ga `strace` o'rnatildi).
+- Navbat: til va domen talab qilmaydigan V-boblar — 5, 7, 8, 16–18 (ilova — Python standart kutubxonasidagi kichik server, Nginx kitobidagi kabi). 3-bob (deploy foydalanuvchisi, SSH kalit, firewall) — VPS'ga kirishni o'zgartiradi, egasining tasdig'i kerak. 2, 4 (domen), 6 (Node.js/PHP — misollar tili qarori), 9–15, 19, 21–22 (GitHub sinov repozitoriysi) — egasining qarori kutilmoqda.
+- Manba: GitHub hujjati — `raw.githubusercontent.com/github/docs/main/content/actions/...` (markdown).

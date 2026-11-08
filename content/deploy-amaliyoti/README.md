@@ -46,7 +46,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - Kubernetes va bulut platformalari (AWS, GCP, Azure) — alohida katta mavzu.
 - Docker'ning o'zi — **"Docker"** kitobida.
 
-> **Holat.** Qo'llanma tayyorlanmoqda — quyida rejalashtirilgan mundarija.
+> **Holat.** Qo'llanma yozilmoqda: 8/22 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -65,7 +65,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
-| 01 | Deploy nima | Kodni repozitoriydan serverga yetkazish, ishga tushirish va eski versiyani almashtirish. Qo'lda deploy va uzluksiz deploy (continuous deployment). "Nol to'xtovli" nimani anglatadi | — | [GH Continuous deployment](https://docs.github.com/en/actions/get-started/continuous-deployment) · [GH Understand GitHub Actions](https://docs.github.com/en/actions/get-started/understand-github-actions) |
+| 01 | [Deploy nima](01-deploy-nima.md) | Kodni repozitoriydan serverga yetkazish, ishga tushirish va eski versiyani almashtirish. Qo'lda deploy va uzluksiz deploy (continuous deployment). "Nol to'xtovli" nimani anglatadi | — | [GH Continuous deployment](https://docs.github.com/en/actions/get-started/continuous-deployment) · [GH Understand GitHub Actions](https://docs.github.com/en/actions/get-started/understand-github-actions) |
 | 02 | ⚑ Domenni serverga ulash | Domen sotuvchisining (registrar) panelida A va AAAA yozuvlari, TTL. `dig` bilan yozuv tarqalganini tekshirish | V+D | [MDN What is a Domain Name?](https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Web_mechanics/What_is_a_domain_name) · [RFC 1035](https://www.rfc-editor.org/rfc/rfc1035) |
 | 03 | ⚑ Serverni tayyorlash | Deploy uchun alohida foydalanuvchi, SSH kalit, firewall'da 22, 80 va 443-portlar | V | [UB User management](https://ubuntu.com/server/docs/how-to/security/user-management/) · [UB OpenSSH server](https://ubuntu.com/server/docs/how-to/security/openssh-server/) · [UB Firewalls](https://ubuntu.com/server/docs/how-to/security/firewalls/) |
 | 04 | ⚑ Birinchi deploy qo'lda | Repozitoriyni deploy key bilan olish, bog'liqliklarni o'rnatish, ilovani systemd servisi qilish, nginx ortiga qo'yish va HTTPS'ni yoqish | V+D | [GH Managing deploy keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/managing-deploy-keys) · [SD systemd.service(5)](https://www.freedesktop.org/software/systemd/man/latest/systemd.service.html) · [NG proxy module](https://nginx.org/en/docs/http/ngx_http_proxy_module.html) |
@@ -74,10 +74,10 @@ Bu qo'llanmaga kirmaydigan mavzular:
 
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
-| 05 | ⚑ Release papkalari va symlink | Har versiya alohida papkada, `current` — oxirgisiga symlink. Symlink'ni atomik almashtirish: `rename(2)` mavjud nomni bir zumda almashtiradi, oraliq holat bo'lmaydi (`mv -T`). Eski release'larni tozalash | V | [MAN rename(2)](https://man7.org/linux/man-pages/man2/rename.2.html) · [GNU mv invocation](https://www.gnu.org/software/coreutils/manual/html_node/mv-invocation.html) |
+| 05 | [⚑ Release papkalari va symlink](05-release-symlink.md) | Har versiya alohida papkada, `current` — oxirgisiga symlink. Symlink'ni atomik almashtirish: `rename(2)` mavjud nomni bir zumda almashtiradi, oraliq holat bo'lmaydi (`mv -T`). Eski release'larni tozalash | V | [MAN rename(2)](https://man7.org/linux/man-pages/man2/rename.2.html) · [GNU mv invocation](https://www.gnu.org/software/coreutils/manual/html_node/mv-invocation.html) |
 | 06 | Bog'liqliklar va build | `npm ci` (lock-fayldan aniq o'rnatish), `composer install --no-dev`. Build serverda yoki CI'da; tayyor natijani (artifact) uzatish | V | [npm ci](https://docs.npmjs.com/cli/commands/npm-ci) · [Composer CLI → install](https://getcomposer.org/doc/03-cli.md#install-i) · [GH Workflow artifacts](https://docs.github.com/en/actions/concepts/workflows-and-actions/workflow-artifacts) |
-| 07 | Konfiguratsiya va sirlar | `.env` serverda turadi, repozitoriyda emas. `EnvironmentFile=` va fayl ruxsatlari | V | [SD systemd.exec(5)](https://www.freedesktop.org/software/systemd/man/latest/systemd.exec.html) · [GH Secrets](https://docs.github.com/en/actions/concepts/security/secrets) |
-| 08 | Restart va reload | `systemctl restart` va `reload` farqi. nginx'ning `HUP` signali: yangi worker'lar yangi sozlama bilan ishga tushadi, eskilari ishini tugatib chiqadi | V | [NG Controlling nginx](https://nginx.org/en/docs/control.html) · [SD systemctl(1)](https://www.freedesktop.org/software/systemd/man/latest/systemctl.html) |
+| 07 | [Konfiguratsiya va sirlar](07-sozlama-sirlar.md) | `.env` serverda turadi, repozitoriyda emas. `EnvironmentFile=` va fayl ruxsatlari | V | [SD systemd.exec(5)](https://www.freedesktop.org/software/systemd/man/latest/systemd.exec.html) · [GH Secrets](https://docs.github.com/en/actions/concepts/security/secrets) |
+| 08 | [Restart va reload](08-restart-reload.md) | `systemctl restart` va `reload` farqi. nginx'ning `HUP` signali: yangi worker'lar yangi sozlama bilan ishga tushadi, eskilari ishini tugatib chiqadi | V | [NG Controlling nginx](https://nginx.org/en/docs/control.html) · [SD systemctl(1)](https://www.freedesktop.org/software/systemd/man/latest/systemctl.html) |
 
 ## III qism — GitHub Actions (9–15)
 
@@ -95,11 +95,11 @@ Bu qo'llanmaga kirmaydigan mavzular:
 
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
-| 16 | ⚑ To'xtash qayerdan keladi | Ilova qayta ishga tushayotganda kelgan so'rovlar: 502 xatosi. Uni o'lchash: deploy paytida uzluksiz so'rovlar yuborib, javoblarni sanash | V | [NG proxy module](https://nginx.org/en/docs/http/ngx_http_proxy_module.html) · [SD systemctl(1)](https://www.freedesktop.org/software/systemd/man/latest/systemctl.html) |
-| 17 | ⚑ Ikki nusxa va nginx | Ilovaning ikki nusxasi ikki portda. Yangisi tayyor ekanini tekshirib, nginx `upstream` ni almashtirish va reload qilish | V | [NG upstream module](https://nginx.org/en/docs/http/ngx_http_upstream_module.html) · [NG Using nginx as HTTP load balancer](https://nginx.org/en/docs/http/load_balancing.html) · [NG Controlling nginx](https://nginx.org/en/docs/control.html) |
-| 18 | systemd socket activation | Portni systemd ochib turadi, ilova qayta ishga tushganda yangi ulanishlar kutib turadi. `daemon(7)`: holatsiz protokollarda bunday servis bitta so'rovni ham yo'qotmasdan qayta ishga tushishi mumkin. HTTP'da sinab ko'ramiz | V | [SD systemd.socket(5)](https://www.freedesktop.org/software/systemd/man/latest/systemd.socket.html) · [SD daemon(7)](https://www.freedesktop.org/software/systemd/man/latest/daemon.html) · [SD sd_listen_fds(3)](https://www.freedesktop.org/software/systemd/man/latest/sd_listen_fds.html) |
+| 16 | [⚑ To'xtash qayerdan keladi](16-toxtash.md) | Ilova qayta ishga tushayotganda kelgan so'rovlar: 502 xatosi. Uni o'lchash: deploy paytida uzluksiz so'rovlar yuborib, javoblarni sanash | V | [NG proxy module](https://nginx.org/en/docs/http/ngx_http_proxy_module.html) · [SD systemctl(1)](https://www.freedesktop.org/software/systemd/man/latest/systemctl.html) |
+| 17 | [⚑ Ikki nusxa va nginx](17-ikki-nusxa.md) | Ilovaning ikki nusxasi ikki portda. Yangisi tayyor ekanini tekshirib, nginx `upstream` ni almashtirish va reload qilish | V | [NG upstream module](https://nginx.org/en/docs/http/ngx_http_upstream_module.html) · [NG Using nginx as HTTP load balancer](https://nginx.org/en/docs/http/load_balancing.html) · [NG Controlling nginx](https://nginx.org/en/docs/control.html) |
+| 18 | [systemd socket activation](18-socket-activation.md) | Portni systemd ochib turadi, ilova qayta ishga tushganda yangi ulanishlar kutib turadi. `daemon(7)`: holatsiz protokollarda bunday servis bitta so'rovni ham yo'qotmasdan qayta ishga tushishi mumkin. HTTP'da sinab ko'ramiz | V | [SD systemd.socket(5)](https://www.freedesktop.org/software/systemd/man/latest/systemd.socket.html) · [SD daemon(7)](https://www.freedesktop.org/software/systemd/man/latest/daemon.html) · [SD sd_listen_fds(3)](https://www.freedesktop.org/software/systemd/man/latest/sd_listen_fds.html) |
 | 19 | Docker Compose bilan deploy | Image'ni CI'da yig'ib, GitHub Container Registry'ga yuklash. Serverda `docker compose up --no-deps -d`: hujjatga ko'ra bu servisni to'xtatib, qayta yaratadi — qisqa to'xtash shundan | G+V | [DK Use Compose in production](https://docs.docker.com/compose/how-tos/production/) · [GH Publishing Docker images](https://docs.github.com/en/actions/tutorials/publish-packages/publish-docker-images) · [GH Container registry](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry) |
-| 20 | ⚑ Orqaga qaytarish | `current` symlink'ni oldingi release'ga qaytarish, oldingi image tegi. Nima qaytmaydi: bazadagi o'zgarishlar | V | [MAN rename(2)](https://man7.org/linux/man-pages/man2/rename.2.html) · [GH View deployment history](https://docs.github.com/en/actions/how-tos/deploy/configure-and-manage-deployments/view-deployment-history) |
+| 20 | [⚑ Orqaga qaytarish](20-orqaga-qaytarish.md) | `current` symlink'ni oldingi release'ga qaytarish, oldingi image tegi. Nima qaytmaydi: bazadagi o'zgarishlar | V | [MAN rename(2)](https://man7.org/linux/man-pages/man2/rename.2.html) · [GH View deployment history](https://docs.github.com/en/actions/how-tos/deploy/configure-and-manage-deployments/view-deployment-history) |
 
 ## V qism — Deploydan keyin (21–22)
 
