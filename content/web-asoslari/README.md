@@ -45,7 +45,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - nginx'da HTTPS'ni sozlash va sertifikat olish — **"Nginx va HTTPS"** kitobida.
 - Frontend framework'larda so'rov yuborish — framework kitoblarida.
 
-> **Holat.** Qo'llanma yozilmoqda: 10/30 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 11/30 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -79,7 +79,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 | 08 | [Holat kodlari](08-holat-kodlari.md) | 1xx–5xx guruhlari va eng ko'p uchraydiganlari: 200, 201, 204, 304, 400, 401, 403, 404, 409, 429, 500, 502, 503, 504 | V | [MDN HTTP response status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status) · [RFC 9110 §15](https://www.rfc-editor.org/rfc/rfc9110#name-status-codes) · [RFC 6585](https://www.rfc-editor.org/rfc/rfc6585) |
 | 09 | [Header'lar va kontent turi](09-headerlar-kontent-turi.md) | `Content-Type` va MIME turlari, `Content-Length`. Mijoz va server qaysi formatni tanlashi (content negotiation) | V | [MDN HTTP headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers) · [MDN MIME types](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/MIME_types) · [MDN Content negotiation](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Content_negotiation) |
 | 10 | [Redirect'lar](10-redirectlar.md) | 301, 302, 303, 307, 308 farqi. `Location` header'i | B+V | [MDN Redirections in HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Redirections) · [RFC 9110 §15.4](https://www.rfc-editor.org/rfc/rfc9110#name-redirection-3xx) |
-| 11 | HTTP keshlash | `Cache-Control` (`max-age`, `no-cache`, `no-store`). `ETag` va `Last-Modified`. Shartli so'rov va 304 javobi | B+V | [MDN HTTP caching](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Caching) · [MDN HTTP conditional requests](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Conditional_requests) · [RFC 9111](https://www.rfc-editor.org/rfc/rfc9111) |
+| 11 | [HTTP keshlash](11-http-keshlash.md) | `Cache-Control` (`max-age`, `no-cache`, `no-store`). `ETag` va `Last-Modified`. Shartli so'rov va 304 javobi | B+V | [MDN HTTP caching](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Caching) · [MDN HTTP conditional requests](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Conditional_requests) · [RFC 9111](https://www.rfc-editor.org/rfc/rfc9111) |
 | 12 | Siqish va qismli yuklash | `Accept-Encoding` va `Content-Encoding`. Faylning bir qismini so'rash (`Range`, 206) | V | [MDN Compression in HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Compression) · [MDN HTTP range requests](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Range_requests) |
 | 13 | HTTP/1.1, HTTP/2 va HTTP/3 | Ulanishni qayta ishlatish (keep-alive). HTTP/2 da bitta ulanishda parallel so'rovlar. HTTP/3 va QUIC (UDP ustida) | V | [MDN Connection management in HTTP/1.x](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Connection_management_in_HTTP_1.x) · [RFC 9113](https://www.rfc-editor.org/rfc/rfc9113) · [RFC 9114](https://www.rfc-editor.org/rfc/rfc9114) · [RFC 9000](https://www.rfc-editor.org/rfc/rfc9000) |
 
