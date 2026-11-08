@@ -1,6 +1,6 @@
 # 46 — Planner va statistika
 
-[← Oldingi: `EXPLAIN`](45-explain.md) · [Mundarija](README.md)
+[← Oldingi: `EXPLAIN`](45-explain.md) · [Mundarija](README.md) · [Keyingi: Sekin so'rovlar →](47-sekin-sorovlar.md)
 
 ## Tushuncha
 
