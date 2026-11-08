@@ -173,3 +173,11 @@ Ikkinchi noutbukda boshlashdan oldin shu faylni, `CLAUDE.md` ni va kitobning `RE
 | `audio/`, `segments/` | `docs/tts.md` ga qarang |
 | `*-REJA.md` (boshqa kitoblar rejalari) | `.gitignore` da, lokal fayllar |
 | `video/REACT-VIDEO-USLUBI.md`, `video/VUE-VIDEO-USLUBI.md` | Hali commit qilinmagan |
+
+## SQL kitobi — 47-bobdan davomi (branch `docs/sql-47-70`)
+
+- 2026-11-08: 47–54-boblar yozildi (matn; video darslar yo'q — ular TTS bilan boshqa noutbukda qilinadi).
+- Sinov muhiti (README'dagi "Sinov muhiti (47-bobdan)" qatori): PG 18.6 — Homebrew `postgresql@18` (`~/sql-sinov/pgdata`, `pg_ctl ... start`); MySQL 9.7.2 — rasmiy Docker image (`docker run -d --name mysql97 -e MYSQL_ROOT_PASSWORD=sinov -p 127.0.0.1:3306:3306 mysql:9.7.2`; Homebrew'da `mysql@9.7` endi 9.7.4); SQLite 3.54.1 — Homebrew `sqlite`.
+- Ikki seansli misollar (50–54-boblar) — kichik Python skripti: buyruqlarni A/B seanslarga navbatma-navbat yuboradi va chiqishni seans nomi bilan yozadi (`~/sql-sinov/ikki.py`, git'da yo'q). Bloklangan buyruq javobi keyingi buyruq ostida chiqadi — boblarda izohlangan.
+- Bob ulash: oldingi bobga "Keyingi", README qatori havolaga, `NN/70` — Linux'dagi `bob_ulash.py` ning SQL varianti (scratchpad'da edi).
+- dev.mysql.com havolalari `havola.sh` da 403 qaytaradi (HEAD so'roviga), sahifalar `GET` bilan ochiladi.
