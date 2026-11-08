@@ -1,6 +1,6 @@
 # 58 — Partitioning
 
-[← Oldingi: Triggerlar](57-triggerlar.md) · [Mundarija](README.md)
+[← Oldingi: Triggerlar](57-triggerlar.md) · [Mundarija](README.md) · [Keyingi: Katalog va metadata →](59-katalog-va-metadata.md)
 
 ## Tushuncha
 
