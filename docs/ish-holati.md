@@ -125,6 +125,15 @@ node linux-trenajor/test/mashqlar.mjs          # barcha mashqlarni brauzerda tek
 - Kuzatuvlar: `pkill -f "<matn>"` SSH ichidagi o'z qobig'ini ham o'ldiradi — `[d]ocker` kabi shablon ishlating; noutbuk–VPS SSH ulanishi vaqti-vaqti bilan uziladi.
 - Avtomatik ruxsat tekshiruvi uchinchi tomon repozitoriysini (dockersamples/laravel-docker-examples) VPS'da yig'ishga ruxsat bermadi — 20-bob o'z kodimiz va rasmiy image'lar bilan qurildi.
 
+## Web asoslari kitobi (`content/web-asoslari/`)
+
+- Branch `docs/web-asoslari-1`. **Tayyor: 30/30 bob** (2026-11-08). IV qism (xavfsizlik) — faqat himoya tomoni, hujum yuklamasi (payload) ko'rsatilmagan.
+- README'dagi "Animatsiyalar" jadvali (01, 04, 11, 19, 20) hali bajarilmagan — video/animatsiya ishlari bilan alohida.
+- HTTP/3 sinovi (13-bob) noutbukdagi Homebrew curl 8.23.0 bilan. Lokal HTTPS sinovlari (23, 27-boblar) — o'z-o'zidan imzolangan sertifikat; 27-bobda Chromium'ga `--ignore-certificate-errors-spki-list` bilan (HSTS faqat xatosiz TLS'da qabul qilinadi).
+- Manbalar: MDN markdown manbasi (`raw.githubusercontent.com/mdn/content/main/files/en-us/...`), RFC'lar (`rfc-editor.org/rfc/rfcNNNN.txt`), WHATWG (URL, Fetch). Bo'lim raqamlari RFC matnidan tekshiriladi.
+- Muhit: VPS'da `curl` 8.18.0, `dig` 9.20.24, `tcpdump` 4.99.6 (o'rnatildi), nginx — Docker `nginx:1.30.6` (`--network host`), kichik Python serverlar (`http.server`); brauzer — lokal Chromium 158 (`playwright-core`, lokal Python server).
+- Kuzatuvlar: Chromium `HTTP/1.0` javobdagi `ETag` bilan shartli so'rov yubormadi (11-bob) — test serverlarida `protocol_version = 'HTTP/1.1'`. VPS'da IPv6 ulanish yo'q (`curl -6` — 7-xato). Ubuntu `curl` HTTP/3 siz yig'ilgan. VPS skriptida `wait` fon serverini ham kutib qoladi — ishlatmang.
+
 ## Ikkinchi noutbukda qilinadigan ishlar
 
 Birinchi noutbukda disk kam va Docker yo'q. Sinov VPS'ida 2 GB xotira bor: `MemTotal` 1,75 GiB, 2026-11-07 da bo'sh qismi ~1,3 GiB. Shuning uchun quyidagilar **ikkinchi noutbukda** qilinadi (xotira va disk ko'proq, Docker bor):
@@ -186,6 +195,24 @@ Ikkinchi noutbukda boshlashdan oldin shu faylni, `CLAUDE.md` ni va kitobning `RE
 | `audio/`, `segments/` | `docs/tts.md` ga qarang |
 | `*-REJA.md` (boshqa kitoblar rejalari) | `.gitignore` da, lokal fayllar |
 | `video/REACT-VIDEO-USLUBI.md`, `video/VUE-VIDEO-USLUBI.md` | Hali commit qilinmagan |
+
+## SQL kitobi — 47-bobdan davomi (branch `docs/sql-47-70`)
+
+- 2026-11-08: **47–61, 63–67, 69, 70-boblar yozildi** (68/70; matn, video darslar yo'q — ular TTS bilan boshqa noutbukda qilinadi).
+- Qolgan: **62** (SQL injection va parametrlar) — hujum namunasini jonli ko'rsatish urinishi to'xtatildi; faqat himoya tomoni (parametrli so'rov, `PREPARE`, `EXECUTE … USING`, `format('%I')`) bilan yozish kerak — egasi bilan kelishib. **68** (ORM ortidagi SQL) — Laravel/Prisma o'rnatish kerak (tashqi paketlar), egasi bilan kelishib.
+- 63- va 69-boblar oldingi bob yo'qligi sababli qo'lda ulangan (61 → 63, 67 → 69); 62 va 68 yozilganda navigatsiyani to'g'rilash kerak.
+- Qo'shimcha sinov asboblari (Homebrew): `pgbouncer` (64-bob). PITR va replikatsiya sinovlari — `~/sql-sinov/66/pitr`, `~/sql-sinov/67/standby` (to'xtatilgan).
+- Sinov muhiti (README'dagi "Sinov muhiti (47-bobdan)" qatori): PG 18.6 — Homebrew `postgresql@18` (`~/sql-sinov/pgdata`, `pg_ctl ... start`); MySQL 9.7.2 — rasmiy Docker image (`docker run -d --name mysql97 -e MYSQL_ROOT_PASSWORD=sinov -p 127.0.0.1:3306:3306 mysql:9.7.2`; Homebrew'da `mysql@9.7` endi 9.7.4); SQLite 3.54.1 — Homebrew `sqlite`.
+- Ikki seansli misollar (50–54-boblar) — kichik Python skripti: buyruqlarni A/B seanslarga navbatma-navbat yuboradi va chiqishni seans nomi bilan yozadi (`~/sql-sinov/ikki.py`, git'da yo'q). Bloklangan buyruq javobi keyingi buyruq ostida chiqadi — boblarda izohlangan.
+- Bob ulash: oldingi bobga "Keyingi", README qatori havolaga, `NN/70` — Linux'dagi `bob_ulash.py` ning SQL varianti (scratchpad'da edi).
+- dev.mysql.com havolalari `havola.sh` da 403 qaytaradi (HEAD so'roviga), sahifalar `GET` bilan ochiladi.
+
+## Nginx kitobi (`content/nginx/`)
+
+- Branch `docs/nginx-1`. Tayyor: 1–18, 26–30-boblar (2026-11-08). VPS'ga nginx 1.31.8 (mainline) rasmiy nginx.org omboridan o'rnatildi (`/etc/apt/sources.list.d/nginx.list`, pinning `/etc/apt/preferences.d/99nginx`), servis `nginx`, 80-port.
+- Navbat: domen talab qilmaydigan V-boblar — 3–17, 26–30. HTTPS boblari (19–25, V+D) — domen bo'yicha egasining qarori kutilmoqda (Let's Encrypt `shortlived` profili IP sertifikatni ham beradi, lekin bu VPS IP'sini ochiq CT jurnallariga yozadi — qarorsiz ishlatilmaydi).
+- Manba: nginx.org HTML sahifalari (`h2t.py` bilan matnga) va docs.nginx.com (markdown manbasi: `raw.githubusercontent.com/nginx/documentation/main/content/nginx/...`).
+- Proksi boblarida backend — Python standart kutubxonasidagi kichik server (Node.js VPS'da yo'q; misollar tili qarori Redis/RabbitMQ bilan birga kutilmoqda). README 11-bob qatoridagi "Node.js" so'zi "orqadagi ilova"ga o'zgartirildi.
 
 ## Redis kitobi (`content/redis/`)
 
