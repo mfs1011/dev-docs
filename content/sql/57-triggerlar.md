@@ -1,6 +1,6 @@
 # 57 — Triggerlar
 
-[← Oldingi: Funksiya va protseduralar](56-funksiya-va-protseduralar.md) · [Mundarija](README.md)
+[← Oldingi: Funksiya va protseduralar](56-funksiya-va-protseduralar.md) · [Mundarija](README.md) · [Keyingi: Partitioning →](58-partitioning.md)
 
 ## Tushuncha
 
