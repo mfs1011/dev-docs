@@ -214,7 +214,7 @@ Hi Sam, this instance is empty or is using very little memory, my issues detecto
 | Production'da `KEYS` | Server bloklanadi (sinovda 0,25 s) — RD: eng keng tarqalgan sabab | `SCAN` |
 | Latency monitor'ni yoqmaslik | Standart o'chiq — kechikish sababi noma'lum qoladi | `latency-monitor-threshold` (masalan, 100) |
 | Kechikishni faqat ilova tomonidan o'lchash | Tarmoq va muhit kechikishi aralashadi | `--intrinsic-latency` (serverda), `--latency`, `SLOWLOG` |
-| Ko'p kalitga bir xil muddat berish | Bir soniyada ommaviy tozalash — kechikish (sinovda 25 ms) | Muddatga tasodifiy qo'shimcha (jitter) |
+| Ko'p kalitga bir xil muddat berish | Bir soniyada ommaviy tozalash — kechikish (sinovda 25 ms) | Muddatlarni bitta soniyaga to'plamaslik |
 | `overcommit_memory = 0` | Fon saqlash/replikatsiya xatosi mumkin (Redis ogohlantiradi) | `vm.overcommit_memory = 1` |
 | THP yoqilgan | `fork` dan keyin katta kechikish va xotira (RD) | `never` |
 | Swap'siz server | Xotira tugasa — qulash yoki OOM killer (RD) | Swap ≈ RAM, `maxmemory` |
