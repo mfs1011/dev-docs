@@ -1,6 +1,6 @@
 # 65 — Texnik xizmat
 
-[← Oldingi: Ulanishlar](64-ulanishlar.md) · [Mundarija](README.md)
+[← Oldingi: Ulanishlar](64-ulanishlar.md) · [Mundarija](README.md) · [Keyingi: Zaxira va tiklash →](66-zaxira-va-tiklash.md)
 
 ## Tushuncha
 
