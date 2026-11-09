@@ -1,6 +1,6 @@
 # 69 — Dialektlar xaritasi
 
-[← Oldingi: Replikatsiya va monitoring](67-replikatsiya-va-monitoring.md) · [Mundarija](README.md) · [Keyingi: Amaliy loyiha →](70-amaliy-loyiha.md)
+[← Oldingi: ORM ortidagi SQL](68-orm-ortidagi-sql.md) · [Mundarija](README.md) · [Keyingi: Amaliy loyiha →](70-amaliy-loyiha.md)
 
 ## Tushuncha
 
