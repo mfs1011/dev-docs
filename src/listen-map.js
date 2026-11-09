@@ -103,15 +103,27 @@ export function mapWords(element, items, doc) {
   const list = tokensIn(element, doc)
   const codeLine = element.matches?.('figure.code-block') ? firstCodeLine(element, doc) : null
   let cursor = 0
+  let lastRange = null
 
   for (const item of items) {
     const token = normalizeWord(item.word)
-    if (!token) continue
+    if (!token) {
+      if (lastRange) mapped.set(item.w, lastRange)
+      continue
+    }
 
     let range = null
 
     for (let index = cursor; index < Math.min(list.length, cursor + LOOKAHEAD); index += 1) {
-      if (list[index].token === token) {
+      const entryToken = list[index].token
+      const matched = entryToken === token ||
+        (token.length >= 4 && entryToken.length >= 4 && (
+          entryToken.startsWith(token) ||
+          token.startsWith(entryToken) ||
+          (token.slice(0, 4) === entryToken.slice(0, 4) && Math.abs(token.length - entryToken.length) <= 3)
+        ))
+
+      if (matched) {
         range = list[index].range
         cursor = index + 1
         break
@@ -120,7 +132,12 @@ export function mapWords(element, items, doc) {
 
     // "Kod misoli." — kod blokining birinchi qatori (blok ichida, sakrash yo'q)
     if (!range && codeLine) range = codeLine
-    if (range) mapped.set(item.w, range)
+    if (range) {
+      lastRange = range
+      mapped.set(item.w, range)
+    } else if (lastRange) {
+      mapped.set(item.w, lastRange)
+    }
   }
 
   return mapped
