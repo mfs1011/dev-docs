@@ -1,0 +1,650 @@
+[
+  {
+    "scene": "offset_va_uning_narxi",
+    "id": "l1",
+    "text": "Katta hajmdagi ma'lumotlarni qismlarga bo'lib ko'rsatishda ofset va limit eng ko'p ishlatiladigan usuldir.",
+    "show": "Katta hajmdagi ma'lumotlarni qismlarga bo'lib ko'rsatishda ofset va limit eng ko'p ishlatiladigan usuldir.",
+    "say": "Katta hajmdagi ma'lumotlarni qismlarga bo'lib ko'rsatishda ofset va limit eng ko'p ishlatiladigan usuldir.",
+    "a0": 0.22,
+    "a1": 6.2,
+    "words": [
+      {
+        "w": "Katta",
+        "s": 0.22,
+        "e": 0.56
+      },
+      {
+        "w": "hajmdagi",
+        "s": 0.52,
+        "e": 1.06
+      },
+      {
+        "w": "ma'lumotlarni",
+        "s": 1.02,
+        "e": 1.78
+      },
+      {
+        "w": "qismlarga",
+        "s": 1.76,
+        "e": 2.32
+      },
+      {
+        "w": "bo'lib",
+        "s": 2.28,
+        "e": 2.58
+      },
+      {
+        "w": "ko'rsatishda",
+        "s": 2.52,
+        "e": 3.14
+      },
+      {
+        "w": "ofset",
+        "s": 3.52,
+        "e": 3.98
+      },
+      {
+        "w": "va",
+        "s": 3.98,
+        "e": 4.12
+      },
+      {
+        "w": "limit",
+        "s": 4.18,
+        "e": 4.56
+      },
+      {
+        "w": "eng",
+        "s": 4.66,
+        "e": 4.88
+      },
+      {
+        "w": "ko'p",
+        "s": 4.82,
+        "e": 5.06
+      },
+      {
+        "w": "ishlatiladigan",
+        "s": 5.02,
+        "e": 5.72
+      },
+      {
+        "w": "usuldir.",
+        "s": 5.74,
+        "e": 6.2
+      }
+    ]
+  },
+  {
+    "scene": "offset_va_uning_narxi",
+    "id": "l2",
+    "text": "Biroq ofset chuqurlashgan sari server barcha o'tkazib yuborilgan qatorlarni ham o'qib chiqishga majbur bo'ladi.",
+    "show": "Biroq ofset chuqurlashgan sari server barcha o'tkazib yuborilgan qatorlarni ham o'qib chiqishga majbur bo'ladi.",
+    "say": "Biroq ofset chuqurlashgan sari server barcha o'tkazib yuborilgan qatorlarni ham o'qib chiqishga majbur bo'ladi.",
+    "a0": 6.56,
+    "a1": 12.65,
+    "words": [
+      {
+        "w": "Biroq",
+        "s": 6.56,
+        "e": 6.86
+      },
+      {
+        "w": "ofset",
+        "s": 6.88,
+        "e": 7.28
+      },
+      {
+        "w": "chuqurlashgan",
+        "s": 7.26,
+        "e": 7.91
+      },
+      {
+        "w": "sari",
+        "s": 7.87,
+        "e": 8.15
+      },
+      {
+        "w": "server",
+        "s": 8.49,
+        "e": 8.91
+      },
+      {
+        "w": "barcha",
+        "s": 8.91,
+        "e": 9.27
+      },
+      {
+        "w": "o'tkazib",
+        "s": 9.27,
+        "e": 9.71
+      },
+      {
+        "w": "yuborilgan",
+        "s": 9.67,
+        "e": 10.19
+      },
+      {
+        "w": "qatorlarni",
+        "s": 10.17,
+        "e": 10.79
+      },
+      {
+        "w": "ham",
+        "s": 10.73,
+        "e": 10.97
+      },
+      {
+        "w": "o'qib",
+        "s": 11.25,
+        "e": 11.53
+      },
+      {
+        "w": "chiqishga",
+        "s": 11.47,
+        "e": 11.91
+      },
+      {
+        "w": "majbur",
+        "s": 11.91,
+        "e": 12.33
+      },
+      {
+        "w": "bo'ladi.",
+        "s": 12.27,
+        "e": 12.65
+      }
+    ]
+  },
+  {
+    "scene": "yagona_tartib_va_kompozit_kalit",
+    "id": "l3",
+    "text": "Tartiblashda vaqt bir xil bo'lgan qatorlar uchrasa, natija tartibi buzilmasligi uchun ay-di kabi yagona ustun qo'shiladi.",
+    "show": "Tartiblashda vaqt bir xil bo'lgan qatorlar uchrasa, natija tartibi buzilmasligi uchun ay-di kabi yagona ustun qo'shiladi.",
+    "say": "Tartiblashda vaqt bir xil bo'lgan qatorlar uchrasa, natija tartibi buzilmasligi uchun ay-di kabi yagona ustun qo'shiladi.",
+    "a0": 12.95,
+    "a1": 20.01,
+    "words": [
+      {
+        "w": "Tartiblashda",
+        "s": 12.95,
+        "e": 13.63
+      },
+      {
+        "w": "vaqt",
+        "s": 13.73,
+        "e": 14.07
+      },
+      {
+        "w": "bir",
+        "s": 14.09,
+        "e": 14.29
+      },
+      {
+        "w": "xil",
+        "s": 14.25,
+        "e": 14.47
+      },
+      {
+        "w": "bo'lgan",
+        "s": 14.45,
+        "e": 14.83
+      },
+      {
+        "w": "qatorlar",
+        "s": 14.81,
+        "e": 15.31
+      },
+      {
+        "w": "uchrasa,",
+        "s": 15.27,
+        "e": 15.71
+      },
+      {
+        "w": "natija",
+        "s": 15.97,
+        "e": 16.41
+      },
+      {
+        "w": "tartibi",
+        "s": 16.39,
+        "e": 16.85
+      },
+      {
+        "w": "buzilmasligi",
+        "s": 16.83,
+        "e": 17.53
+      },
+      {
+        "w": "uchun",
+        "s": 17.51,
+        "e": 17.79
+      },
+      {
+        "w": "ay-di",
+        "s": 18.11,
+        "e": 18.43
+      },
+      {
+        "w": "kabi",
+        "s": 18.43,
+        "e": 18.75
+      },
+      {
+        "w": "yagona",
+        "s": 18.77,
+        "e": 19.23
+      },
+      {
+        "w": "ustun",
+        "s": 19.23,
+        "e": 19.55
+      },
+      {
+        "w": "qo'shiladi.",
+        "s": 19.51,
+        "e": 20.01
+      }
+    ]
+  },
+  {
+    "scene": "yagona_tartib_va_kompozit_kalit",
+    "id": "l4",
+    "text": "Aynan sana va ay-di kompozit kaliti qator konstruktori orqali aniq leksikografik ketma-ketlikni ta'minlaydi.",
+    "show": "Aynan sana va ay-di kompozit kaliti qator konstruktori orqali aniq leksikografik ketma-ketlikni ta'minlaydi.",
+    "say": "Aynan sana va ay-di kompozit kaliti qator konstruktori orqali aniq leksikografik ketma-ketlikni ta'minlaydi.",
+    "a0": 20.41,
+    "a1": 27.42,
+    "words": [
+      {
+        "w": "Aynan",
+        "s": 20.41,
+        "e": 20.75
+      },
+      {
+        "w": "sana",
+        "s": 21.05,
+        "e": 21.35
+      },
+      {
+        "w": "va",
+        "s": 21.35,
+        "e": 21.51
+      },
+      {
+        "w": "ay-di",
+        "s": 21.63,
+        "e": 21.93
+      },
+      {
+        "w": "kompozit",
+        "s": 21.99,
+        "e": 22.56
+      },
+      {
+        "w": "kaliti",
+        "s": 22.54,
+        "e": 23.0
+      },
+      {
+        "w": "qator",
+        "s": 23.22,
+        "e": 23.58
+      },
+      {
+        "w": "konstruktori",
+        "s": 23.54,
+        "e": 24.18
+      },
+      {
+        "w": "orqali",
+        "s": 24.18,
+        "e": 24.56
+      },
+      {
+        "w": "aniq",
+        "s": 24.94,
+        "e": 25.24
+      },
+      {
+        "w": "leksikografik",
+        "s": 25.28,
+        "e": 26.08
+      },
+      {
+        "w": "ketma-ketlikni",
+        "s": 26.04,
+        "e": 26.8
+      },
+      {
+        "w": "ta'minlaydi.",
+        "s": 26.76,
+        "e": 27.42
+      }
+    ]
+  },
+  {
+    "scene": "keyset_sahifalash_mexanizmi",
+    "id": "l5",
+    "text": "Keyset sahifalash usulida sahifa raqami emas, balki oldingi sahifaning oxirgi qatori eslab qolinadi.",
+    "show": "Keyset sahifalash usulida sahifa raqami emas, balki oldingi sahifaning oxirgi qatori eslab qolinadi.",
+    "say": "Keyset sahifalash usulida sahifa raqami emas, balki oldingi sahifaning oxirgi qatori eslab qolinadi.",
+    "a0": 27.86,
+    "a1": 33.96,
+    "words": [
+      {
+        "w": "Keyset",
+        "s": 27.86,
+        "e": 28.28
+      },
+      {
+        "w": "sahifalash",
+        "s": 28.24,
+        "e": 28.84
+      },
+      {
+        "w": "usulida",
+        "s": 28.82,
+        "e": 29.3
+      },
+      {
+        "w": "sahifa",
+        "s": 29.36,
+        "e": 29.8
+      },
+      {
+        "w": "raqami",
+        "s": 29.76,
+        "e": 30.14
+      },
+      {
+        "w": "emas,",
+        "s": 30.16,
+        "e": 30.48
+      },
+      {
+        "w": "balki",
+        "s": 30.52,
+        "e": 30.84
+      },
+      {
+        "w": "oldingi",
+        "s": 31.16,
+        "e": 31.64
+      },
+      {
+        "w": "sahifaning",
+        "s": 31.62,
+        "e": 32.26
+      },
+      {
+        "w": "oxirgi",
+        "s": 32.36,
+        "e": 32.8
+      },
+      {
+        "w": "qatori",
+        "s": 32.78,
+        "e": 33.18
+      },
+      {
+        "w": "eslab",
+        "s": 33.22,
+        "e": 33.54
+      },
+      {
+        "w": "qolinadi.",
+        "s": 33.5,
+        "e": 33.96
+      }
+    ]
+  },
+  {
+    "scene": "keyset_sahifalash_mexanizmi",
+    "id": "l6",
+    "text": "B-tri indeksi to'g'ridan-to'g'ri o'sha nuqtaga sakrab, to'qsoninchi ming sahifada ham bir zumda yigirmata qatorni o'qiydi.",
+    "show": "B-tri indeksi to'g'ridan-to'g'ri o'sha nuqtaga sakrab, to'qsoninchi ming sahifada ham bir zumda yigirmata qatorni o'qiydi.",
+    "say": "B-tri indeksi to'g'ridan-to'g'ri o'sha nuqtaga sakrab, to'qsoninchi ming sahifada ham bir zumda yigirmata qatorni o'qiydi.",
+    "a0": 34.66,
+    "a1": 41.05,
+    "words": [
+      {
+        "w": "B-tri",
+        "s": 34.66,
+        "e": 35.06
+      },
+      {
+        "w": "indeksi",
+        "s": 35.1,
+        "e": 35.56
+      },
+      {
+        "w": "to'g'ridan-to'g'ri",
+        "s": 35.54,
+        "e": 36.24
+      },
+      {
+        "w": "o'sha",
+        "s": 36.49,
+        "e": 36.75
+      },
+      {
+        "w": "nuqtaga",
+        "s": 36.71,
+        "e": 37.11
+      },
+      {
+        "w": "sakrab,",
+        "s": 37.09,
+        "e": 37.47
+      },
+      {
+        "w": "to'qsoninchi",
+        "s": 37.65,
+        "e": 38.31
+      },
+      {
+        "w": "ming",
+        "s": 38.27,
+        "e": 38.49
+      },
+      {
+        "w": "sahifada",
+        "s": 38.47,
+        "e": 38.99
+      },
+      {
+        "w": "ham",
+        "s": 38.93,
+        "e": 39.15
+      },
+      {
+        "w": "bir",
+        "s": 39.19,
+        "e": 39.43
+      },
+      {
+        "w": "zumda",
+        "s": 39.43,
+        "e": 39.79
+      },
+      {
+        "w": "yigirmata",
+        "s": 39.83,
+        "e": 40.33
+      },
+      {
+        "w": "qatorni",
+        "s": 40.29,
+        "e": 40.73
+      },
+      {
+        "w": "o'qiydi.",
+        "s": 40.69,
+        "e": 41.05
+      }
+    ]
+  },
+  {
+    "scene": "offset_va_drift_muammosi",
+    "id": "l7",
+    "text": "Yangi yozuvlar qo'shilganda ofset qatorlarni surib yuborib dublikat keltirsa, keyset barqaror qiymat bo'yicha ishlaydi.",
+    "show": "Yangi yozuvlar qo'shilganda ofset qatorlarni surib yuborib dublikat keltirsa, keyset barqaror qiymat bo'yicha ishlaydi.",
+    "say": "Yangi yozuvlar qo'shilganda ofset qatorlarni surib yuborib dublikat keltirsa, keyset barqaror qiymat bo'yicha ishlaydi.",
+    "a0": 41.61,
+    "a1": 47.93,
+    "words": [
+      {
+        "w": "Yangi",
+        "s": 41.61,
+        "e": 41.93
+      },
+      {
+        "w": "yozuvlar",
+        "s": 41.89,
+        "e": 42.37
+      },
+      {
+        "w": "qo'shilganda",
+        "s": 42.33,
+        "e": 42.93
+      },
+      {
+        "w": "ofset",
+        "s": 43.07,
+        "e": 43.45
+      },
+      {
+        "w": "qatorlarni",
+        "s": 43.45,
+        "e": 44.05
+      },
+      {
+        "w": "surib",
+        "s": 44.03,
+        "e": 44.31
+      },
+      {
+        "w": "yuborib",
+        "s": 44.27,
+        "e": 44.69
+      },
+      {
+        "w": "dublikat",
+        "s": 44.69,
+        "e": 45.21
+      },
+      {
+        "w": "keltirsa,",
+        "s": 45.17,
+        "e": 45.65
+      },
+      {
+        "w": "keyset",
+        "s": 45.93,
+        "e": 46.39
+      },
+      {
+        "w": "barqaror",
+        "s": 46.45,
+        "e": 46.97
+      },
+      {
+        "w": "qiymat",
+        "s": 46.93,
+        "e": 47.29
+      },
+      {
+        "w": "bo'yicha",
+        "s": 47.25,
+        "e": 47.57
+      },
+      {
+        "w": "ishlaydi.",
+        "s": 47.53,
+        "e": 47.93
+      }
+    ]
+  },
+  {
+    "scene": "offset_va_drift_muammosi",
+    "id": "l8",
+    "text": "Shuning uchun zamonaviy cheksiz lentalar va API'larda ofset o'rniga kursorli keyset sahifalash tavsiya etiladi.",
+    "show": "Shuning uchun zamonaviy cheksiz lentalar va API'larda ofset o'rniga kursorli keyset sahifalash tavsiya etiladi.",
+    "say": "Shuning uchun zamonaviy cheksiz lentalar va API'larda ofset o'rniga kursorli keyset sahifalash tavsiya etiladi.",
+    "a0": 48.27,
+    "a1": 55.1,
+    "words": [
+      {
+        "w": "Shuning",
+        "s": 48.27,
+        "e": 48.57
+      },
+      {
+        "w": "uchun",
+        "s": 48.51,
+        "e": 48.79
+      },
+      {
+        "w": "zamonaviy",
+        "s": 49.04,
+        "e": 49.58
+      },
+      {
+        "w": "cheksiz",
+        "s": 49.6,
+        "e": 50.0
+      },
+      {
+        "w": "lentalar",
+        "s": 50.02,
+        "e": 50.5
+      },
+      {
+        "w": "va",
+        "s": 50.48,
+        "e": 50.64
+      },
+      {
+        "w": "API'larda",
+        "s": 50.74,
+        "e": 51.44
+      },
+      {
+        "w": "ofset",
+        "s": 51.72,
+        "e": 52.12
+      },
+      {
+        "w": "o'rniga",
+        "s": 52.1,
+        "e": 52.48
+      },
+      {
+        "w": "kursorli",
+        "s": 52.54,
+        "e": 53.16
+      },
+      {
+        "w": "keyset",
+        "s": 53.16,
+        "e": 53.62
+      },
+      {
+        "w": "sahifalash",
+        "s": 53.56,
+        "e": 54.2
+      },
+      {
+        "w": "tavsiya",
+        "s": 54.3,
+        "e": 54.72
+      },
+      {
+        "w": "etiladi.",
+        "s": 54.7,
+        "e": 55.1
+      }
+    ]
+  }
+]

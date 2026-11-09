@@ -1,0 +1,41 @@
+WEBVTT
+
+1
+00:01.420 --> 00:07.850
+Katta hajmdagi ma'lumotlarni qismlarga bo'lib ko'rsatishda
+ofset va limit eng ko'p ishlatiladigan usuldir.
+
+2
+00:07.760 --> 00:14.300
+Biroq ofset chuqurlashgan sari server barcha o'tkazib
+yuborilgan qatorlarni ham o'qib chiqishga majbur bo'ladi.
+
+3
+00:16.750 --> 00:24.260
+Tartiblashda vaqt bir xil bo'lgan qatorlar uchrasa, natija
+tartibi buzilmasligi uchun ay-di kabi yagona ustun qo'shiladi.
+
+4
+00:24.210 --> 00:31.670
+Aynan sana va ay-di kompozit kaliti qator konstruktori
+orqali aniq leksikografik ketma-ketlikni ta'minlaydi.
+
+5
+00:34.260 --> 00:40.810
+Keyset sahifalash usulida sahifa raqami emas, balki
+oldingi sahifaning oxirgi qatori eslab qolinadi.
+
+6
+00:41.060 --> 00:47.900
+B-tri indeksi to'g'ridan-to'g'ri o'sha nuqtaga sakrab, to'qsoninchi
+ming sahifada ham bir zumda yigirmata qatorni o'qiydi.
+
+7
+00:50.610 --> 00:57.380
+Yangi yozuvlar qo'shilganda ofset qatorlarni surib yuborib
+dublikat keltirsa, keyset barqaror qiymat bo'yicha ishlaydi.
+
+8
+00:57.270 --> 01:04.550
+Shuning uchun zamonaviy cheksiz lentalar va API'larda
+ofset o'rniga kursorli keyset sahifalash tavsiya etiladi.
