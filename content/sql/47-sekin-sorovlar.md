@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/47-1-tushuncha.jpg">
+    <source src="/video/sql/47-1-tushuncha.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/47-1-tushuncha.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/47-1-tushuncha.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+</figure>
+
 Indeks bor, lekin so'rov sekin — bu bobda shunday holatning eng ko'p uchraydigan to'rt sababini ko'ramiz. Ularning umumiy jihati bitta: shart shunday yozilganki, rejalashtiruvchi indeksdan **foydalana olmaydi** yoki foydalanish uchun butun indeksni o'qishi kerak.
 
 | Sabab | Misol | Nima uchun indeks yordam bermaydi |
@@ -62,6 +70,14 @@ MySQL hujjati (Aggregate Function Descriptions): InnoDB jadvaldagi qatorlar soni
 PostgreSQL'da taxminiy son — `pg_class.reltuples` (46-bob): hujjatga ko'ra u rejalashtiruvchi uchun **taxmin**, `VACUUM`/`ANALYZE` yangilaydi.
 
 ## Kod
+
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/47-2-kod.jpg">
+    <source src="/video/sql/47-2-kod.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/47-2-kod.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/47-2-kod.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+</figure>
 
 Misollar PostgreSQL 18.6, MySQL 9.7.2 va SQLite 3.54.1 da ishga tushirilgan.
 
@@ -232,6 +248,14 @@ SELECT reltuples FROM pg_class WHERE relname = 'mijozlar';
 - `reltuples` darhol javob beradi, lekin **taxmin** (46-bob).
 
 ## Dialektlar
+
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/47-3-dialektlar.jpg">
+    <source src="/video/sql/47-3-dialektlar.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/47-3-dialektlar.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/47-3-dialektlar.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+</figure>
 
 ### MySQL
 
