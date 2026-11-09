@@ -1,0 +1,13 @@
+WEBVTT
+
+00:00.000 --> 00:19.651
+PostgreSQL: OFFSET 0 va OFFSET 900000
+
+00:19.651 --> 00:36.957
+Keyset va Qator Konstruktori
+
+00:36.957 --> 00:55.241
+PostgreSQL da OR Yozuvi: 29 ms Filter
+
+00:55.241 --> 01:14.850
+Yangi Qator Qo'shilganda Drift Sinovi
