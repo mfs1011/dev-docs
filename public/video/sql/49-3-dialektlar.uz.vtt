@@ -1,0 +1,41 @@
+WEBVTT
+
+1
+00:01.300 --> 00:08.150
+May es-kyu-elda to'liq matnli qidiruv varcha yoki
+tekst ustunlarida ful-tekst indeksi orqali ishlaydi.
+
+2
+00:08.260 --> 00:17.480
+Metch egenst sintaksisida oddiy qidiruv moslik bo'yicha saralansa,
+bulien rejimida plyus, minus va yulduzcha operatorlari qo'llaniladi.
+
+3
+00:20.570 --> 00:27.090
+Inno-de-be minimal token uzunligi uch belgidan
+qisqa bo'lgan va kabi so'zlarni indeksga olmaydi.
+
+4
+00:27.220 --> 00:34.150
+So'z o'rtasidagi bo'laklar uchun esa matnni ikki belgili
+bo'laklarga ajratuvchi engrem parseridan foydalaniladi.
+
+5
+00:37.220 --> 00:43.590
+Es-kyu-laytda to'liq matnli qidiruv alohida
+ef-ti-es-besh virtual jadvali yordamida tashkil etiladi.
+
+6
+00:43.830 --> 00:51.240
+Qidiruv natijalari be-em-yigirma-besh reytingi bo'yicha saralanib,
+qiymat qancha kichik bo'lsa, moslik shuncha yuqori hisoblanadi.
+
+7
+00:54.110 --> 01:01.670
+Postgresda ti-es-vektor va trigramma, May es-kyu-elda
+ful-tekst, Es-kyu-laytda esa ef-ti-es-besh mos keladi.
+
+8
+01:01.940 --> 01:08.630
+O'zbek tilida aniq qidiruv uchun har uchala tizimda ham
+prefiks yulduzchasidan foydalanish eng to'g'ri amaliyotdir.

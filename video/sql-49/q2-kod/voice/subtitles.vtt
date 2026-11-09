@@ -1,0 +1,41 @@
+WEBVTT
+
+1
+00:01.420 --> 00:06.410
+Postgresda to'liq matnli qidiruv matnni
+ti-es-vektor turiga aylantirishdan boshlanadi.
+
+2
+00:06.560 --> 00:14.840
+Simpl konfiguratsiyasida so'zlar kichik harf va o'rni bilan saqlansa,
+inglizcha lug'atda qo'shimchalar olib tashlanib to'xtash so'zlari tashlanadi.
+
+3
+00:17.530 --> 00:22.980
+Ti-es-kveri bilan aynan konteyner so'zi
+qidirilganda konteynerda so'zi tushib qoladi.
+
+4
+00:23.030 --> 00:29.110
+So'z oxiriga ikki nuqta yulduzcha prefiksi qo'shilganda
+esa qo'shimchasi bor barcha maqolalar to'liq topiladi.
+
+5
+00:31.660 --> 00:38.010
+Ti-es-rank funksiyasi so'zlar necha marta va qanday tartibda
+kelganiga qarab natijalarni o'xshashlik bo'yicha saralaydi.
+
+6
+00:38.100 --> 00:43.500
+Veb-syorch funksiyasi esa qidiruv tizimlaridagi kabi
+minus belgili so'rovlarni xatosiz qabul qiladi.
+
+7
+00:46.170 --> 00:53.740
+Yuz ming qatorli jadvalda oddiy layk besh millisekund vaqt olsa,
+jin indeksi atigi nol butun yuzdan uch millisekundda ishlaydi.
+
+8
+00:53.610 --> 01:00.270
+Trigramma kengaytmasi esa imlo xatolarini topish va layk
+so'rovlarini bir yuz o'ttiz baravar tezlashtirish imkonini beradi.

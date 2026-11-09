@@ -1,0 +1,41 @@
+WEBVTT
+
+1
+00:01.380 --> 00:06.530
+Matnlar ichidan ma'lumot izlashda oddiy layk
+operatori ko'pincha yetarli bo'lmay qoladi.
+
+2
+00:06.420 --> 00:14.140
+Chunki layk til grammatikasini bilmaydi, natijalarni moslik
+bo'yicha tartiblamaydi va bi-tri indeksidan foydalana olmaydi.
+
+3
+00:17.510 --> 00:23.840
+To'liq matnli qidiruv matnni avval tokenlarga bo'lib,
+to'xtash so'zlarini tashlaydi va leksemalarga aylantiradi.
+
+4
+00:23.810 --> 00:29.070
+Hosil bo'lgan leksemalar ro'yxati va ularning
+o'rni teskari indeks tuzilmasida saqlanadi.
+
+5
+00:31.920 --> 00:37.150
+Postgresda o'zbek tili uchun alohida lug'at yo'qligi
+sababli simpl konfiguratsiyasi ishlatiladi.
+
+6
+00:37.200 --> 00:42.460
+Qo'shimchalarni hisobga olish uchun so'z oxiriga
+ikki nuqta yulduzcha prefiksi qo'shib qidiriladi.
+
+7
+00:45.410 --> 00:51.740
+Imlo xatolari va so'z o'rtasidagi bo'laklarni topish uchun
+esa uchtalik harflardan iborat trigramma ishlatiladi.
+
+8
+00:51.890 --> 00:58.370
+Trigramma jin indeksi yordamida hatto xato yozilgan
+so'rovlarda ham kerakli satrlar bir zumda topiladi.
