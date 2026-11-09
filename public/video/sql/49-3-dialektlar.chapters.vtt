@@ -1,0 +1,13 @@
+WEBVTT
+
+00:00.000 --> 00:19.426
+MySQL: FULLTEXT va Boolean Rejimi
+
+00:19.426 --> 00:36.070
+MySQL: Minimal Token va ngram Parser
+
+00:36.070 --> 00:53.119
+SQLite: FTS5 Virtual Jadvali va bm25
+
+00:53.119 --> 01:13.080
+PostgreSQL, MySQL va SQLite Taqqosi

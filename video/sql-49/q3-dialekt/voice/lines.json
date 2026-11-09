@@ -1,0 +1,625 @@
+[
+  {
+    "scene": "mysql_fulltext_rejimlari",
+    "id": "l1",
+    "text": "May es-kyu-elda to'liq matnli qidiruv varcha yoki tekst ustunlarida ful-tekst indeksi orqali ishlaydi.",
+    "show": "May es-kyu-elda to'liq matnli qidiruv varcha yoki tekst ustunlarida ful-tekst indeksi orqali ishlaydi.",
+    "say": "May es-kyu-elda to'liq matnli qidiruv varcha yoki tekst ustunlarida ful-tekst indeksi orqali ishlaydi.",
+    "a0": 0.0,
+    "a1": 6.4,
+    "words": [
+      {
+        "w": "May",
+        "s": 0.0,
+        "e": 0.26
+      },
+      {
+        "w": "es-kyu-elda",
+        "s": 0.22,
+        "e": 0.84
+      },
+      {
+        "w": "to'liq",
+        "s": 0.88,
+        "e": 1.22
+      },
+      {
+        "w": "matnli",
+        "s": 1.2,
+        "e": 1.62
+      },
+      {
+        "w": "qidiruv",
+        "s": 1.6,
+        "e": 1.98
+      },
+      {
+        "w": "varcha",
+        "s": 2.34,
+        "e": 2.84
+      },
+      {
+        "w": "yoki",
+        "s": 2.82,
+        "e": 3.32
+      },
+      {
+        "w": "tekst",
+        "s": 3.42,
+        "e": 3.8
+      },
+      {
+        "w": "ustunlarida",
+        "s": 3.78,
+        "e": 4.44
+      },
+      {
+        "w": "ful-tekst",
+        "s": 4.66,
+        "e": 5.26
+      },
+      {
+        "w": "indeksi",
+        "s": 5.28,
+        "e": 5.72
+      },
+      {
+        "w": "orqali",
+        "s": 5.68,
+        "e": 6.04
+      },
+      {
+        "w": "ishlaydi.",
+        "s": 6.02,
+        "e": 6.4
+      }
+    ]
+  },
+  {
+    "scene": "mysql_fulltext_rejimlari",
+    "id": "l2",
+    "text": "Metch egenst sintaksisida oddiy qidiruv moslik bo'yicha saralansa, bulien rejimida plyus, minus va yulduzcha operatorlari qo'llaniladi.",
+    "show": "Metch egenst sintaksisida oddiy qidiruv moslik bo'yicha saralansa, bulien rejimida plyus, minus va yulduzcha operatorlari qo'llaniladi.",
+    "say": "Metch egenst sintaksisida oddiy qidiruv moslik bo'yicha saralansa, bulien rejimida plyus, minus va yulduzcha operatorlari qo'llaniladi.",
+    "a0": 6.96,
+    "a1": 15.73,
+    "words": [
+      {
+        "w": "Metch",
+        "s": 6.96,
+        "e": 7.28
+      },
+      {
+        "w": "egenst",
+        "s": 7.34,
+        "e": 7.81
+      },
+      {
+        "w": "sintaksisida",
+        "s": 7.79,
+        "e": 8.59
+      },
+      {
+        "w": "oddiy",
+        "s": 8.89,
+        "e": 9.21
+      },
+      {
+        "w": "qidiruv",
+        "s": 9.21,
+        "e": 9.61
+      },
+      {
+        "w": "moslik",
+        "s": 9.73,
+        "e": 10.21
+      },
+      {
+        "w": "bo'yicha",
+        "s": 10.19,
+        "e": 10.51
+      },
+      {
+        "w": "saralansa,",
+        "s": 10.49,
+        "e": 11.07
+      },
+      {
+        "w": "bulien",
+        "s": 11.43,
+        "e": 11.87
+      },
+      {
+        "w": "rejimida",
+        "s": 11.87,
+        "e": 12.39
+      },
+      {
+        "w": "plyus,",
+        "s": 12.63,
+        "e": 13.07
+      },
+      {
+        "w": "minus",
+        "s": 13.27,
+        "e": 13.73
+      },
+      {
+        "w": "va",
+        "s": 13.83,
+        "e": 13.97
+      },
+      {
+        "w": "yulduzcha",
+        "s": 13.99,
+        "e": 14.53
+      },
+      {
+        "w": "operatorlari",
+        "s": 14.49,
+        "e": 15.11
+      },
+      {
+        "w": "qo'llaniladi.",
+        "s": 15.07,
+        "e": 15.73
+      }
+    ]
+  },
+  {
+    "scene": "mysql_min_token_va_ngram",
+    "id": "l3",
+    "text": "Inno-de-be minimal token uzunligi uch belgidan qisqa bo'lgan va kabi so'zlarni indeksga olmaydi.",
+    "show": "Inno-de-be minimal token uzunligi uch belgidan qisqa bo'lgan va kabi so'zlarni indeksga olmaydi.",
+    "say": "Inno-de-be minimal token uzunligi uch belgidan qisqa bo'lgan va kabi so'zlarni indeksga olmaydi.",
+    "a0": 16.67,
+    "a1": 22.74,
+    "words": [
+      {
+        "w": "Inno-de-be",
+        "s": 16.67,
+        "e": 17.27
+      },
+      {
+        "w": "minimal",
+        "s": 17.37,
+        "e": 17.81
+      },
+      {
+        "w": "token",
+        "s": 17.79,
+        "e": 18.15
+      },
+      {
+        "w": "uzunligi",
+        "s": 18.11,
+        "e": 18.61
+      },
+      {
+        "w": "uch",
+        "s": 18.77,
+        "e": 18.97
+      },
+      {
+        "w": "belgidan",
+        "s": 18.95,
+        "e": 19.43
+      },
+      {
+        "w": "qisqa",
+        "s": 19.41,
+        "e": 19.73
+      },
+      {
+        "w": "bo'lgan",
+        "s": 19.69,
+        "e": 20.09
+      },
+      {
+        "w": "va",
+        "s": 20.47,
+        "e": 20.65
+      },
+      {
+        "w": "kabi",
+        "s": 20.81,
+        "e": 21.09
+      },
+      {
+        "w": "so'zlarni",
+        "s": 21.05,
+        "e": 21.59
+      },
+      {
+        "w": "indeksga",
+        "s": 21.67,
+        "e": 22.23
+      },
+      {
+        "w": "olmaydi.",
+        "s": 22.27,
+        "e": 22.74
+      }
+    ]
+  },
+  {
+    "scene": "mysql_min_token_va_ngram",
+    "id": "l4",
+    "text": "So'z o'rtasidagi bo'laklar uchun esa matnni ikki belgili bo'laklarga ajratuvchi engrem parseridan foydalaniladi.",
+    "show": "So'z o'rtasidagi bo'laklar uchun esa matnni ikki belgili bo'laklarga ajratuvchi engrem parseridan foydalaniladi.",
+    "say": "So'z o'rtasidagi bo'laklar uchun esa matnni ikki belgili bo'laklarga ajratuvchi engrem parseridan foydalaniladi.",
+    "a0": 23.32,
+    "a1": 29.8,
+    "words": [
+      {
+        "w": "So'z",
+        "s": 23.32,
+        "e": 23.58
+      },
+      {
+        "w": "o'rtasidagi",
+        "s": 23.58,
+        "e": 24.16
+      },
+      {
+        "w": "bo'laklar",
+        "s": 24.14,
+        "e": 24.6
+      },
+      {
+        "w": "uchun",
+        "s": 24.58,
+        "e": 24.8
+      },
+      {
+        "w": "esa",
+        "s": 24.76,
+        "e": 24.98
+      },
+      {
+        "w": "matnni",
+        "s": 25.26,
+        "e": 25.76
+      },
+      {
+        "w": "ikki",
+        "s": 25.82,
+        "e": 26.14
+      },
+      {
+        "w": "belgili",
+        "s": 26.1,
+        "e": 26.56
+      },
+      {
+        "w": "bo'laklarga",
+        "s": 26.54,
+        "e": 27.1
+      },
+      {
+        "w": "ajratuvchi",
+        "s": 27.08,
+        "e": 27.66
+      },
+      {
+        "w": "engrem",
+        "s": 27.96,
+        "e": 28.5
+      },
+      {
+        "w": "parseridan",
+        "s": 28.5,
+        "e": 29.1
+      },
+      {
+        "w": "foydalaniladi.",
+        "s": 29.08,
+        "e": 29.8
+      }
+    ]
+  },
+  {
+    "scene": "sqlite_fts5_virtual_jadval",
+    "id": "l5",
+    "text": "Es-kyu-laytda to'liq matnli qidiruv alohida ef-ti-es-besh virtual jadvali yordamida tashkil etiladi.",
+    "show": "Es-kyu-laytda to'liq matnli qidiruv alohida ef-ti-es-besh virtual jadvali yordamida tashkil etiladi.",
+    "say": "Es-kyu-laytda to'liq matnli qidiruv alohida ef-ti-es-besh virtual jadvali yordamida tashkil etiladi.",
+    "a0": 30.72,
+    "a1": 36.64,
+    "words": [
+      {
+        "w": "Es-kyu-laytda",
+        "s": 30.72,
+        "e": 31.54
+      },
+      {
+        "w": "to'liq",
+        "s": 31.62,
+        "e": 31.96
+      },
+      {
+        "w": "matnli",
+        "s": 31.94,
+        "e": 32.36
+      },
+      {
+        "w": "qidiruv",
+        "s": 32.36,
+        "e": 32.7
+      },
+      {
+        "w": "alohida",
+        "s": 32.96,
+        "e": 33.5
+      },
+      {
+        "w": "ef-ti-es-besh",
+        "s": 33.62,
+        "e": 34.5
+      },
+      {
+        "w": "virtual",
+        "s": 34.5,
+        "e": 35.0
+      },
+      {
+        "w": "jadvali",
+        "s": 34.96,
+        "e": 35.4
+      },
+      {
+        "w": "yordamida",
+        "s": 35.34,
+        "e": 35.84
+      },
+      {
+        "w": "tashkil",
+        "s": 35.88,
+        "e": 36.28
+      },
+      {
+        "w": "etiladi.",
+        "s": 36.24,
+        "e": 36.64
+      }
+    ]
+  },
+  {
+    "scene": "sqlite_fts5_virtual_jadval",
+    "id": "l6",
+    "text": "Qidiruv natijalari be-em-yigirma-besh reytingi bo'yicha saralanib, qiymat qancha kichik bo'lsa, moslik shuncha yuqori hisoblanadi.",
+    "show": "Qidiruv natijalari be-em-yigirma-besh reytingi bo'yicha saralanib, qiymat qancha kichik bo'lsa, moslik shuncha yuqori hisoblanadi.",
+    "say": "Qidiruv natijalari be-em-yigirma-besh reytingi bo'yicha saralanib, qiymat qancha kichik bo'lsa, moslik shuncha yuqori hisoblanadi.",
+    "a0": 37.33,
+    "a1": 44.29,
+    "words": [
+      {
+        "w": "Qidiruv",
+        "s": 37.33,
+        "e": 37.69
+      },
+      {
+        "w": "natijalari",
+        "s": 37.65,
+        "e": 38.27
+      },
+      {
+        "w": "be-em-yigirma-besh",
+        "s": 38.53,
+        "e": 39.49
+      },
+      {
+        "w": "reytingi",
+        "s": 39.47,
+        "e": 39.87
+      },
+      {
+        "w": "bo'yicha",
+        "s": 39.83,
+        "e": 40.19
+      },
+      {
+        "w": "saralanib,",
+        "s": 40.17,
+        "e": 40.73
+      },
+      {
+        "w": "qiymat",
+        "s": 40.95,
+        "e": 41.37
+      },
+      {
+        "w": "qancha",
+        "s": 41.37,
+        "e": 41.77
+      },
+      {
+        "w": "kichik",
+        "s": 41.75,
+        "e": 42.07
+      },
+      {
+        "w": "bo'lsa,",
+        "s": 42.07,
+        "e": 42.45
+      },
+      {
+        "w": "moslik",
+        "s": 42.63,
+        "e": 43.07
+      },
+      {
+        "w": "shuncha",
+        "s": 43.07,
+        "e": 43.43
+      },
+      {
+        "w": "yuqori",
+        "s": 43.39,
+        "e": 43.77
+      },
+      {
+        "w": "hisoblanadi.",
+        "s": 43.73,
+        "e": 44.29
+      }
+    ]
+  },
+  {
+    "scene": "uch_tizim_qiyosiy_xulosasi",
+    "id": "l7",
+    "text": "Postgresda ti-es-vektor va trigramma, May es-kyu-elda ful-tekst, Es-kyu-laytda esa ef-ti-es-besh mos keladi.",
+    "show": "Postgresda ti-es-vektor va trigramma, May es-kyu-elda ful-tekst, Es-kyu-laytda esa ef-ti-es-besh mos keladi.",
+    "say": "Postgresda ti-es-vektor va trigramma, May es-kyu-elda ful-tekst, Es-kyu-laytda esa ef-ti-es-besh mos keladi.",
+    "a0": 45.01,
+    "a1": 52.12,
+    "words": [
+      {
+        "w": "Postgresda",
+        "s": 45.01,
+        "e": 45.71
+      },
+      {
+        "w": "ti-es-vektor",
+        "s": 45.83,
+        "e": 46.67
+      },
+      {
+        "w": "va",
+        "s": 46.63,
+        "e": 46.77
+      },
+      {
+        "w": "trigramma,",
+        "s": 46.79,
+        "e": 47.41
+      },
+      {
+        "w": "May",
+        "s": 47.81,
+        "e": 48.03
+      },
+      {
+        "w": "es-kyu-elda",
+        "s": 47.99,
+        "e": 48.51
+      },
+      {
+        "w": "ful-tekst,",
+        "s": 48.57,
+        "e": 49.25
+      },
+      {
+        "w": "Es-kyu-laytda",
+        "s": 49.63,
+        "e": 50.33
+      },
+      {
+        "w": "esa",
+        "s": 50.29,
+        "e": 50.57
+      },
+      {
+        "w": "ef-ti-es-besh",
+        "s": 50.67,
+        "e": 51.47
+      },
+      {
+        "w": "mos",
+        "s": 51.49,
+        "e": 51.75
+      },
+      {
+        "w": "keladi.",
+        "s": 51.71,
+        "e": 52.12
+      }
+    ]
+  },
+  {
+    "scene": "uch_tizim_qiyosiy_xulosasi",
+    "id": "l8",
+    "text": "O'zbek tilida aniq qidiruv uchun har uchala tizimda ham prefiks yulduzchasidan foydalanish eng to'g'ri amaliyotdir.",
+    "show": "O'zbek tilida aniq qidiruv uchun har uchala tizimda ham prefiks yulduzchasidan foydalanish eng to'g'ri amaliyotdir.",
+    "say": "O'zbek tilida aniq qidiruv uchun har uchala tizimda ham prefiks yulduzchasidan foydalanish eng to'g'ri amaliyotdir.",
+    "a0": 52.84,
+    "a1": 59.08,
+    "words": [
+      {
+        "w": "O'zbek",
+        "s": 52.84,
+        "e": 53.2
+      },
+      {
+        "w": "tilida",
+        "s": 53.14,
+        "e": 53.5
+      },
+      {
+        "w": "aniq",
+        "s": 53.58,
+        "e": 53.88
+      },
+      {
+        "w": "qidiruv",
+        "s": 53.88,
+        "e": 54.26
+      },
+      {
+        "w": "uchun",
+        "s": 54.22,
+        "e": 54.5
+      },
+      {
+        "w": "har",
+        "s": 54.72,
+        "e": 55.0
+      },
+      {
+        "w": "uchala",
+        "s": 54.96,
+        "e": 55.3
+      },
+      {
+        "w": "tizimda",
+        "s": 55.26,
+        "e": 55.68
+      },
+      {
+        "w": "ham",
+        "s": 55.64,
+        "e": 55.86
+      },
+      {
+        "w": "prefiks",
+        "s": 56.04,
+        "e": 56.62
+      },
+      {
+        "w": "yulduzchasidan",
+        "s": 56.6,
+        "e": 57.34
+      },
+      {
+        "w": "foydalanish",
+        "s": 57.3,
+        "e": 57.92
+      },
+      {
+        "w": "eng",
+        "s": 58.04,
+        "e": 58.26
+      },
+      {
+        "w": "to'g'ri",
+        "s": 58.22,
+        "e": 58.54
+      },
+      {
+        "w": "amaliyotdir.",
+        "s": 58.5,
+        "e": 59.08
+      }
+    ]
+  }
+]
