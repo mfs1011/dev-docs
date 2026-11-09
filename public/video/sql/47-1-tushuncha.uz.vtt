@@ -1,0 +1,41 @@
+WEBVTT
+
+1
+00:01.420 --> 00:08.250
+Jadvalda indeks bo'lsa ham, agar ustun funksiya ichiga
+o'rab qo'yilsa, rejalashtiruvchi undan foydalana olmaydi.
+
+2
+00:08.300 --> 00:15.860
+Bunday vaziyatda yo maxsus ifoda indeksi yaratiladi, yoki
+sana misolidek shart oraliq ko'rinishida qayta yoziladi.
+
+3
+00:18.850 --> 00:26.020
+Ikkinchi xavfli xato bu yashirin turni o'zgartirish, ya'ni
+matnli ustunni tasodifan raqam bilan solishtirishdir.
+
+4
+00:26.320 --> 00:33.750
+Postgresda bu darhol xato bersa, May es-kyu-elda har bir
+satrni songa aylantirib, yuz minglab qatorni behuda elaydi.
+
+5
+00:36.720 --> 00:43.750
+Turli ustunlar o'rtasidagi o-er sharti bitta indeks bilan
+cheklana olmaydi va alohida skanerlashni talab qiladi.
+
+6
+00:44.150 --> 00:52.200
+Bazada har bir ustun bo'yicha bitlar xaritasi yasalib birlashtiriladi,
+lekin bitta ustunda indeks bo'lmasa butun jadval o'qiladi.
+
+7
+00:55.170 --> 01:03.770
+Ko'p foydalanuvchili bazalarda tranzaksiyalar turli qatorlarni
+ko'rgani sababli, kaunt yulduzcha doim jadval hajmiga proporsionaldir.
+
+8
+01:03.960 --> 01:11.630
+Shuning uchun katta jadvallarda aniq sanash o'rniga reltyupls
+kabi taxminiy ko'rsatkich yoki hisoblagich kesh ishlatiladi.

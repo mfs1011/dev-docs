@@ -1,0 +1,690 @@
+[
+  {
+    "scene": "mysql_collation_va_functional_keys",
+    "id": "l1",
+    "text": "May es-kyu-elda standart kollatsiya registrga befarq bo'lgani sababli, ko'pincha louer funksiyasini ishlatish shart emas.",
+    "show": "May es-kyu-elda standart kollatsiya registrga befarq bo'lgani sababli, ko'pincha louer funksiyasini ishlatish shart emas.",
+    "say": "May es-kyu-elda standart kollatsiya registrga befarq bo'lgani sababli, ko'pincha louer funksiyasini ishlatish shart emas.",
+    "a0": 0.28,
+    "a1": 6.76,
+    "words": [
+      {
+        "w": "May",
+        "s": 0.28,
+        "e": 0.46
+      },
+      {
+        "w": "es-kyu-elda",
+        "s": 0.58,
+        "e": 1.16
+      },
+      {
+        "w": "standart",
+        "s": 1.38,
+        "e": 1.84
+      },
+      {
+        "w": "kollatsiya",
+        "s": 1.9,
+        "e": 2.4
+      },
+      {
+        "w": "registrga",
+        "s": 2.5,
+        "e": 2.98
+      },
+      {
+        "w": "befarq",
+        "s": 3.06,
+        "e": 3.42
+      },
+      {
+        "w": "bo'lgani",
+        "s": 3.46,
+        "e": 3.78
+      },
+      {
+        "w": "sababli,",
+        "s": 3.82,
+        "e": 4.2
+      },
+      {
+        "w": "ko'pincha",
+        "s": 4.38,
+        "e": 4.78
+      },
+      {
+        "w": "louer",
+        "s": 4.98,
+        "e": 5.3
+      },
+      {
+        "w": "funksiyasini",
+        "s": 5.34,
+        "e": 5.86
+      },
+      {
+        "w": "ishlatish",
+        "s": 5.92,
+        "e": 6.3
+      },
+      {
+        "w": "shart",
+        "s": 6.34,
+        "e": 6.54
+      },
+      {
+        "w": "emas.",
+        "s": 6.56,
+        "e": 6.76
+      }
+    ]
+  },
+  {
+    "scene": "mysql_collation_va_functional_keys",
+    "id": "l2",
+    "text": "Agar ifoda indeksi zarur bo'lsa, May es-kyu-elda funksiya ikkita qavs ichida ko'rsatilishi talab etiladi.",
+    "show": "Agar ifoda indeksi zarur bo'lsa, May es-kyu-elda funksiya ikkita qavs ichida ko'rsatilishi talab etiladi.",
+    "say": "Agar ifoda indeksi zarur bo'lsa, May es-kyu-elda funksiya ikkita qavs ichida ko'rsatilishi talab etiladi.",
+    "a0": 7.26,
+    "a1": 12.87,
+    "words": [
+      {
+        "w": "Agar",
+        "s": 7.26,
+        "e": 7.53
+      },
+      {
+        "w": "ifoda",
+        "s": 7.65,
+        "e": 7.95
+      },
+      {
+        "w": "indeksi",
+        "s": 8.03,
+        "e": 8.39
+      },
+      {
+        "w": "zarur",
+        "s": 8.45,
+        "e": 8.73
+      },
+      {
+        "w": "bo'lsa,",
+        "s": 8.79,
+        "e": 9.07
+      },
+      {
+        "w": "May",
+        "s": 9.47,
+        "e": 9.61
+      },
+      {
+        "w": "es-kyu-elda",
+        "s": 9.67,
+        "e": 10.15
+      },
+      {
+        "w": "funksiya",
+        "s": 10.25,
+        "e": 10.63
+      },
+      {
+        "w": "ikkita",
+        "s": 10.77,
+        "e": 11.07
+      },
+      {
+        "w": "qavs",
+        "s": 11.13,
+        "e": 11.35
+      },
+      {
+        "w": "ichida",
+        "s": 11.43,
+        "e": 11.65
+      },
+      {
+        "w": "ko'rsatilishi",
+        "s": 11.71,
+        "e": 12.23
+      },
+      {
+        "w": "talab",
+        "s": 12.27,
+        "e": 12.49
+      },
+      {
+        "w": "etiladi.",
+        "s": 12.55,
+        "e": 12.87
+      }
+    ]
+  },
+  {
+    "scene": "mysql_implicit_conversion_ogohlantirish",
+    "id": "l3",
+    "text": "Biroq matn ustunini son bilan solishtirganda May es-kyu-el xato bermaydi, balki bir ming yetti yuz o'ttiz to'qqizinchi ogohlantirish bilan butun indeksni elaydi.",
+    "show": "Biroq matn ustunini son bilan solishtirganda May es-kyu-el xato bermaydi, balki bir ming yetti yuz o'ttiz to'qqizinchi ogohlantirish bilan butun indeksni elaydi.",
+    "say": "Biroq matn ustunini son bilan solishtirganda May es-kyu-el xato bermaydi, balki bir ming yetti yuz o'ttiz to'qqizinchi ogohlantirish bilan butun indeksni elaydi.",
+    "a0": 13.39,
+    "a1": 21.97,
+    "words": [
+      {
+        "w": "Biroq",
+        "s": 13.39,
+        "e": 13.61
+      },
+      {
+        "w": "matn",
+        "s": 13.77,
+        "e": 14.07
+      },
+      {
+        "w": "ustunini",
+        "s": 14.13,
+        "e": 14.53
+      },
+      {
+        "w": "son",
+        "s": 14.63,
+        "e": 14.79
+      },
+      {
+        "w": "bilan",
+        "s": 14.83,
+        "e": 15.01
+      },
+      {
+        "w": "solishtirganda",
+        "s": 15.05,
+        "e": 15.67
+      },
+      {
+        "w": "May",
+        "s": 15.97,
+        "e": 16.11
+      },
+      {
+        "w": "es-kyu-el",
+        "s": 16.17,
+        "e": 16.57
+      },
+      {
+        "w": "xato",
+        "s": 16.67,
+        "e": 16.91
+      },
+      {
+        "w": "bermaydi,",
+        "s": 16.99,
+        "e": 17.45
+      },
+      {
+        "w": "balki",
+        "s": 17.71,
+        "e": 17.97
+      },
+      {
+        "w": "bir",
+        "s": 18.27,
+        "e": 18.37
+      },
+      {
+        "w": "ming",
+        "s": 18.41,
+        "e": 18.57
+      },
+      {
+        "w": "yetti",
+        "s": 18.61,
+        "e": 18.85
+      },
+      {
+        "w": "yuz",
+        "s": 18.89,
+        "e": 19.01
+      },
+      {
+        "w": "o'ttiz",
+        "s": 19.11,
+        "e": 19.31
+      },
+      {
+        "w": "to'qqizinchi",
+        "s": 19.35,
+        "e": 19.79
+      },
+      {
+        "w": "ogohlantirish",
+        "s": 19.87,
+        "e": 20.45
+      },
+      {
+        "w": "bilan",
+        "s": 20.49,
+        "e": 20.67
+      },
+      {
+        "w": "butun",
+        "s": 20.79,
+        "e": 21.07
+      },
+      {
+        "w": "indeksni",
+        "s": 21.19,
+        "e": 21.59
+      },
+      {
+        "w": "elaydi.",
+        "s": 21.67,
+        "e": 21.97
+      }
+    ]
+  },
+  {
+    "scene": "mysql_implicit_conversion_ogohlantirish",
+    "id": "l4",
+    "text": "Natijada so'rov vaqti nol butun mingdan to'rt millisekunddan o'n millisekundgacha keskin sekinlashadi.",
+    "show": "Natijada so'rov vaqti nol butun mingdan to'rt millisekunddan o'n millisekundgacha keskin sekinlashadi.",
+    "say": "Natijada so'rov vaqti nol butun mingdan to'rt millisekunddan o'n millisekundgacha keskin sekinlashadi.",
+    "a0": 22.64,
+    "a1": 28.26,
+    "words": [
+      {
+        "w": "Natijada",
+        "s": 22.64,
+        "e": 23.06
+      },
+      {
+        "w": "so'rov",
+        "s": 23.16,
+        "e": 23.4
+      },
+      {
+        "w": "vaqti",
+        "s": 23.44,
+        "e": 23.7
+      },
+      {
+        "w": "nol",
+        "s": 24.06,
+        "e": 24.26
+      },
+      {
+        "w": "butun",
+        "s": 24.3,
+        "e": 24.52
+      },
+      {
+        "w": "mingdan",
+        "s": 24.58,
+        "e": 24.88
+      },
+      {
+        "w": "to'rt",
+        "s": 24.98,
+        "e": 25.22
+      },
+      {
+        "w": "millisekunddan",
+        "s": 25.28,
+        "e": 26.02
+      },
+      {
+        "w": "o'n",
+        "s": 26.38,
+        "e": 26.52
+      },
+      {
+        "w": "millisekundgacha",
+        "s": 26.56,
+        "e": 27.28
+      },
+      {
+        "w": "keskin",
+        "s": 27.34,
+        "e": 27.66
+      },
+      {
+        "w": "sekinlashadi.",
+        "s": 27.7,
+        "e": 28.26
+      }
+    ]
+  },
+  {
+    "scene": "sqlite_type_affinity_mojizasi",
+    "id": "l5",
+    "text": "Es-kyu-laytda esa tayp affiniti, ya'ni turga moyillik qoidasi sababli son matnga aylanib indeksli qidiruv saqlanib qoladi.",
+    "show": "Es-kyu-laytda esa tayp affiniti, ya'ni turga moyillik qoidasi sababli son matnga aylanib indeksli qidiruv saqlanib qoladi.",
+    "say": "Es-kyu-laytda esa tayp affiniti, ya'ni turga moyillik qoidasi sababli son matnga aylanib indeksli qidiruv saqlanib qoladi.",
+    "a0": 28.96,
+    "a1": 35.84,
+    "words": [
+      {
+        "w": "Es-kyu-laytda",
+        "s": 28.96,
+        "e": 29.64
+      },
+      {
+        "w": "esa",
+        "s": 29.72,
+        "e": 29.9
+      },
+      {
+        "w": "tayp",
+        "s": 30.04,
+        "e": 30.26
+      },
+      {
+        "w": "affiniti,",
+        "s": 30.34,
+        "e": 30.78
+      },
+      {
+        "w": "ya'ni",
+        "s": 31.0,
+        "e": 31.22
+      },
+      {
+        "w": "turga",
+        "s": 31.34,
+        "e": 31.62
+      },
+      {
+        "w": "moyillik",
+        "s": 31.72,
+        "e": 32.16
+      },
+      {
+        "w": "qoidasi",
+        "s": 32.24,
+        "e": 32.58
+      },
+      {
+        "w": "sababli",
+        "s": 32.6,
+        "e": 32.96
+      },
+      {
+        "w": "son",
+        "s": 33.26,
+        "e": 33.46
+      },
+      {
+        "w": "matnga",
+        "s": 33.62,
+        "e": 33.96
+      },
+      {
+        "w": "aylanib",
+        "s": 34.0,
+        "e": 34.32
+      },
+      {
+        "w": "indeksli",
+        "s": 34.5,
+        "e": 34.88
+      },
+      {
+        "w": "qidiruv",
+        "s": 34.94,
+        "e": 35.2
+      },
+      {
+        "w": "saqlanib",
+        "s": 35.22,
+        "e": 35.56
+      },
+      {
+        "w": "qoladi.",
+        "s": 35.6,
+        "e": 35.84
+      }
+    ]
+  },
+  {
+    "scene": "sqlite_type_affinity_mojizasi",
+    "id": "l6",
+    "text": "Shuningdek, Es-kyu-layt multi indeks o-er mexanizmi orqali turli ustunlardagi shartlarni alohida qidirib birlashtiradi.",
+    "show": "Shuningdek, Es-kyu-layt multi indeks o-er mexanizmi orqali turli ustunlardagi shartlarni alohida qidirib birlashtiradi.",
+    "say": "Shuningdek, Es-kyu-layt multi indeks o-er mexanizmi orqali turli ustunlardagi shartlarni alohida qidirib birlashtiradi.",
+    "a0": 36.42,
+    "a1": 42.55,
+    "words": [
+      {
+        "w": "Shuningdek,",
+        "s": 36.42,
+        "e": 36.82
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 36.94,
+        "e": 37.49
+      },
+      {
+        "w": "multi",
+        "s": 37.75,
+        "e": 37.99
+      },
+      {
+        "w": "indeks",
+        "s": 38.05,
+        "e": 38.39
+      },
+      {
+        "w": "o-er",
+        "s": 38.53,
+        "e": 38.85
+      },
+      {
+        "w": "mexanizmi",
+        "s": 38.89,
+        "e": 39.33
+      },
+      {
+        "w": "orqali",
+        "s": 39.37,
+        "e": 39.65
+      },
+      {
+        "w": "turli",
+        "s": 39.79,
+        "e": 40.07
+      },
+      {
+        "w": "ustunlardagi",
+        "s": 40.15,
+        "e": 40.73
+      },
+      {
+        "w": "shartlarni",
+        "s": 40.77,
+        "e": 41.21
+      },
+      {
+        "w": "alohida",
+        "s": 41.31,
+        "e": 41.67
+      },
+      {
+        "w": "qidirib",
+        "s": 41.73,
+        "e": 41.99
+      },
+      {
+        "w": "birlashtiradi.",
+        "s": 42.01,
+        "e": 42.55
+      }
+    ]
+  },
+  {
+    "scene": "uch_tizim_taqqoslash_jadvali",
+    "id": "l7",
+    "text": "Uchala tizimni solishtirsak, xatoni darhol to'xtatishda Postgres, qulay kollatsiyada May es-kyu-el, moslashuvchanlikda Es-kyu-layt ajralib turadi.",
+    "show": "Uchala tizimni solishtirsak, xatoni darhol to'xtatishda Postgres, qulay kollatsiyada May es-kyu-el, moslashuvchanlikda Es-kyu-layt ajralib turadi.",
+    "say": "Uchala tizimni solishtirsak, xatoni darhol to'xtatishda Postgres, qulay kollatsiyada May es-kyu-el, moslashuvchanlikda Es-kyu-layt ajralib turadi.",
+    "a0": 43.19,
+    "a1": 51.11,
+    "words": [
+      {
+        "w": "Uchala",
+        "s": 43.19,
+        "e": 43.47
+      },
+      {
+        "w": "tizimni",
+        "s": 43.51,
+        "e": 43.83
+      },
+      {
+        "w": "solishtirsak,",
+        "s": 43.87,
+        "e": 44.45
+      },
+      {
+        "w": "xatoni",
+        "s": 44.77,
+        "e": 45.11
+      },
+      {
+        "w": "darhol",
+        "s": 45.19,
+        "e": 45.53
+      },
+      {
+        "w": "to'xtatishda",
+        "s": 45.55,
+        "e": 46.03
+      },
+      {
+        "w": "Postgres,",
+        "s": 46.17,
+        "e": 46.65
+      },
+      {
+        "w": "qulay",
+        "s": 46.93,
+        "e": 47.17
+      },
+      {
+        "w": "kollatsiyada",
+        "s": 47.21,
+        "e": 47.73
+      },
+      {
+        "w": "May",
+        "s": 47.93,
+        "e": 48.11
+      },
+      {
+        "w": "es-kyu-el,",
+        "s": 48.13,
+        "e": 48.57
+      },
+      {
+        "w": "moslashuvchanlikda",
+        "s": 48.91,
+        "e": 49.73
+      },
+      {
+        "w": "Es-kyu-layt",
+        "s": 49.93,
+        "e": 50.45
+      },
+      {
+        "w": "ajralib",
+        "s": 50.51,
+        "e": 50.85
+      },
+      {
+        "w": "turadi.",
+        "s": 50.87,
+        "e": 51.11
+      }
+    ]
+  },
+  {
+    "scene": "uch_tizim_taqqoslash_jadvali",
+    "id": "l8",
+    "text": "Lekin barcha bazalarda umumiy qoida bitta: ustunlarni funksiyasiz qoldiring va parametrlarni to'g'ri turda uzating.",
+    "show": "Lekin barcha bazalarda umumiy qoida bitta: ustunlarni funksiyasiz qoldiring va parametrlarni to'g'ri turda uzating.",
+    "say": "Lekin barcha bazalarda umumiy qoida bitta: ustunlarni funksiyasiz qoldiring va parametrlarni to'g'ri turda uzating.",
+    "a0": 51.74,
+    "a1": 58.2,
+    "words": [
+      {
+        "w": "Lekin",
+        "s": 51.74,
+        "e": 52.0
+      },
+      {
+        "w": "barcha",
+        "s": 52.16,
+        "e": 52.48
+      },
+      {
+        "w": "bazalarda",
+        "s": 52.54,
+        "e": 53.02
+      },
+      {
+        "w": "umumiy",
+        "s": 53.16,
+        "e": 53.42
+      },
+      {
+        "w": "qoida",
+        "s": 53.48,
+        "e": 53.74
+      },
+      {
+        "w": "bitta:",
+        "s": 53.78,
+        "e": 54.06
+      },
+      {
+        "w": "ustunlarni",
+        "s": 54.56,
+        "e": 55.12
+      },
+      {
+        "w": "funksiyasiz",
+        "s": 55.2,
+        "e": 55.7
+      },
+      {
+        "w": "qoldiring",
+        "s": 55.76,
+        "e": 56.16
+      },
+      {
+        "w": "va",
+        "s": 56.34,
+        "e": 56.4
+      },
+      {
+        "w": "parametrlarni",
+        "s": 56.48,
+        "e": 57.16
+      },
+      {
+        "w": "to'g'ri",
+        "s": 57.3,
+        "e": 57.58
+      },
+      {
+        "w": "turda",
+        "s": 57.62,
+        "e": 57.82
+      },
+      {
+        "w": "uzating.",
+        "s": 57.88,
+        "e": 58.2
+      }
+    ]
+  }
+]
