@@ -186,6 +186,8 @@ ok
 
 ## Amaliyot
 
+**[Mashqni boshlash →](/nginx/trenajor?mashq=ng-05-statik-sayt)** "Birinchi sayt va server tanlash": brauzerdagi haqiqiy nginx'da qadamma-qadam bajarasiz, har so'rov "So'rov yo'li" sxemasida chiziladi.
+
 1. `root /var/www;` bilan `/img/a.png` so'rovi qaysi faylni qidiradi?
 2. `location /i/ { alias /data/img/; }` bilan `/i/a.png` qaysi fayl?
 3. Xuddi shu holatda `alias` o'rniga `root /data/img/;` bo'lsa-chi?

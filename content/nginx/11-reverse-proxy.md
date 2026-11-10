@@ -258,6 +258,8 @@ ok
 
 ## Amaliyot
 
+**[Mashqni boshlash →](/nginx/trenajor?mashq=ng-11-reverse-proxy)** "Reverse proxy: so‘rovni backend’ga uzatish": brauzerdagi haqiqiy nginx'da qadamma-qadam bajarasiz, har so'rov "So'rov yo'li" sxemasida chiziladi.
+
 1. `location /api/ { proxy_pass http://127.0.0.1:3000/; }` — `/api/users?id=1` backend'ga qanday boradi?
 2. Xuddi shu, lekin `proxy_pass http://127.0.0.1:3000;` bo'lsa-chi?
 3. Standart holatda backend `Host` header'ida nimani ko'radi?

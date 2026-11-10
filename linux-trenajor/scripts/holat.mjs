@@ -10,8 +10,14 @@ import zlib from 'node:zlib'
 
 const ROOT = path.join(path.dirname(url.fileURLToPath(import.meta.url)), '..')
 const pub = path.join(ROOT, '..', 'public', 'trenajor')
-const build = path.join(ROOT, 'build')
+// profil (deb.py bilan bir xil): TRENAJOR_PROFIL=nginx -> nginx-trenajor/build
+const build = process.env.TRENAJOR_PROFIL ? path.join(ROOT, '..', `${process.env.TRENAJOR_PROFIL}-trenajor`, 'build') : path.join(ROOT, 'build')
 const web = path.join(build, 'web')
+// profil.json dagi "vm": v86 ga qo'shimcha parametrlar (masalan, uart1 — sahifa uchun ikkinchi serial kanal).
+// Holatda saqlangan qurilmalar brauzerdagi bilan bir xil bo'lishi kerak.
+const profilVm = process.env.TRENAJOR_PROFIL
+  ? (JSON.parse(fs.readFileSync(path.join(build, '..', 'profil.json'), 'utf8')).vm ?? {})
+  : {}
 const t0 = Date.now()
 const vm = new V86({
   wasm_path: path.join(pub, 'v86.wasm'),
@@ -25,6 +31,7 @@ const vm = new V86({
   autostart: true,
   disable_keyboard: true,
   disable_mouse: true,
+  ...profilVm,
 })
 symlinkTuzat(vm)
 

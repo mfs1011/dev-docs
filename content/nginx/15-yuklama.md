@@ -232,6 +232,8 @@ ok
 
 ## Amaliyot
 
+**[Mashqni boshlash →](/nginx/trenajor?mashq=ng-15-yuklama)** "Yuklamani uch backend orasida taqsimlash": brauzerdagi haqiqiy nginx'da qadamma-qadam bajarasiz, har so'rov "So'rov yo'li" sxemasida chiziladi.
+
 1. Standart taqsimlash usuli qaysi?
 2. `weight=3` bilan uch serverda 5 so'rov qanday taqsimlanadi?
 3. `least_conn` qachon round-robin'dan yaxshi?

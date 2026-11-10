@@ -9,7 +9,8 @@ import url from 'node:url'
 
 const ROOT = path.join(path.dirname(url.fileURLToPath(import.meta.url)), '..')
 const pub = path.join(ROOT, '..', 'public', 'trenajor')
-const build = path.join(ROOT, 'build')
+// profil (deb.py bilan bir xil): TRENAJOR_PROFIL=nginx -> nginx-trenajor/build
+const build = process.env.TRENAJOR_PROFIL ? path.join(ROOT, '..', `${process.env.TRENAJOR_PROFIL}-trenajor`, 'build') : path.join(ROOT, 'build')
 const t0 = Date.now()
 const vm = new V86({
   wasm_path: path.join(pub, 'v86.wasm'),

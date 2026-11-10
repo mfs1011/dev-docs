@@ -9,11 +9,12 @@ yig'iladi: u modullarni yuklab, ildiz fayl tizimini 9p orqali ulaydi va /sbin/in
 """
 import gzip, io, lzma, os, re
 
-from deb import MIRROR, ROOT, deb_data, fetch, paketlar
+from deb import BUILD, MIRROR, ROOT, deb_data, fetch, paketlar
 
 # 9p ildiz fayl tizimi uchun kerakli modullar (bog'liqliklari .modinfo dan topiladi)
 MODULLAR = ["9p", "9pnet_virtio", "virtio_pci"]
-OUT = os.path.join(ROOT, "build")
+OUT = BUILD
+os.makedirs(OUT, exist_ok=True)
 
 
 def modinfo(ko):
