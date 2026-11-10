@@ -35,7 +35,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - Docker'ning o'zi — **"Docker"** kitobida.
 - Tiered storage (eski ma'lumotni arzon omborga ko'chirish), klasterlar orasida nusxalash (MirrorMaker 2) — katta klasterlar mavzusi, hujjatda: [KD Tiered Storage](https://kafka.apache.org/44/operations/tiered-storage/), [KD Geo-Replication](https://kafka.apache.org/44/operations/geo-replication-cross-cluster-data-mirroring/).
 
-> **Holat.** Qo'llanma yozilmoqda: 26/35 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 27/35 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -105,7 +105,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 | --- | --- | --- | --- | --- |
 | 25 | [Kafka Connect](25-connect.md) | Tashqi tizimlardan ma'lumot olish (source) va ularga yozish (sink) konnektorlari. Standalone va distributed rejimlar. Fayl konnektori bilan import va eksport | D | [KD Quick Start](https://kafka.apache.org/44/getting-started/quickstart/) (6-qadam) · [KD Connect Overview](https://kafka.apache.org/44/kafka-connect/overview/) · [KD Connect User Guide](https://kafka.apache.org/44/kafka-connect/user-guide/) |
 | 26 | [Connect: transformatsiya va xatolar](26-connect-smt-xatolar.md) | Single Message Transforms (har hodisani yo'lda o'zgartirish). REST API. Xatolarni boshqarish va dead letter queue topic | D | [KD Connect User Guide](https://kafka.apache.org/44/kafka-connect/user-guide/) |
-| 27 | Kafka Streams asoslari | Oqimni qayta ishlovchi ilova. Topologiya. KStream va KTable. WordCount namunasi | D+J | [KD Streams Introduction](https://kafka.apache.org/44/streams/introduction/) · [KD Streams Quick Start](https://kafka.apache.org/44/streams/quickstart/) · [KD Streams Core Concepts](https://kafka.apache.org/44/streams/core-concepts/) |
+| 27 | [Kafka Streams asoslari](27-streams.md) | Oqimni qayta ishlovchi ilova. Topologiya. KStream va KTable. WordCount namunasi | D+J | [KD Streams Introduction](https://kafka.apache.org/44/streams/introduction/) · [KD Streams Quick Start](https://kafka.apache.org/44/streams/quickstart/) · [KD Streams Core Concepts](https://kafka.apache.org/44/streams/core-concepts/) |
 | 28 | Holat, vaqt va oynalar | State store (holat ombori). Vaqt turlari. Oynalar (windowing) va agregatsiya. Qayta ishlash kafolatlari | D+J | [KD Streams Core Concepts](https://kafka.apache.org/44/streams/core-concepts/) · [KD Streams DSL API](https://kafka.apache.org/44/streams/developer-guide/dsl-api/) |
 
 ## VII qism — Ekspluatatsiya (29–35)
