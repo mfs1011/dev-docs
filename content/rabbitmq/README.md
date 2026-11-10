@@ -36,7 +36,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - MQTT, STOMP, Federation va Shovel plaginlari, Kubernetes, OAuth 2 va LDAP — maxsus holatlar, hujjatda: [RQ Plugins](https://www.rabbitmq.com/docs/plugins).
 - Symfony Messenger va Laravel navbatlari bilan ulash — shu framework'lar kitoblarida.
 
-> **Holat.** Qo'llanma yozilmoqda: 5/34 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 6/34 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -65,7 +65,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
 | 05 | [Ishni worker'larga bo'lish](05-worker-navbat.md) | Work queue: bir nechta worker'ga navbat bilan (round-robin) taqsimlash. Xabarni tasdiqlash (ack). Server qayta yonganda saqlanadigan (durable) navbat va doimiy (persistent) xabar. `prefetch=1` bilan adolatli taqsimlash | V+N | [RT 2. Work Queues](https://www.rabbitmq.com/tutorials/tutorial-two-javascript) · [RT (PHP)](https://www.rabbitmq.com/tutorials/tutorial-two-php) |
-| 06 | Exchange turlari | `direct`, `fanout`, `topic`, `headers`. Standart (default) exchange. Binding va routing key | V | [RQ Exchanges](https://www.rabbitmq.com/docs/exchanges) · [RT AMQP 0-9-1 Model Explained](https://www.rabbitmq.com/tutorials/amqp-concepts) |
+| 06 | [Exchange turlari](06-exchange-turlari.md) | `direct`, `fanout`, `topic`, `headers`. Standart (default) exchange. Binding va routing key | V | [RQ Exchanges](https://www.rabbitmq.com/docs/exchanges) · [RT AMQP 0-9-1 Model Explained](https://www.rabbitmq.com/tutorials/amqp-concepts) |
 | 07 | Hammaga tarqatish | Publish/Subscribe: `fanout` exchange. Vaqtinchalik (exclusive) navbatlar | V+N | [RT 3. Publish/Subscribe](https://www.rabbitmq.com/tutorials/tutorial-three-javascript) |
 | 08 | Tanlab yuborish | `direct` exchange bilan routing. `topic` exchange va shablonlar (`*`, `#`) | V+N | [RT 4. Routing](https://www.rabbitmq.com/tutorials/tutorial-four-javascript) · [RT 5. Topics](https://www.rabbitmq.com/tutorials/tutorial-five-javascript) |
 | 09 | So'rov va javob (RPC) | `reply_to` va `correlation_id`. Direct Reply-To | V+N | [RT 6. RPC](https://www.rabbitmq.com/tutorials/tutorial-six-javascript) · [RQ Direct Reply-To](https://www.rabbitmq.com/docs/direct-reply-to) |
