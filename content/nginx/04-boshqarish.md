@@ -176,6 +176,8 @@ Sinov fayllari o'chirildi, nginx qayta ishga tushirildi.
 
 ## Amaliyot
 
+**[Mashqni boshlash →](/nginx/trenajor?mashq=ng-01-tanishuv)** "Ishlab turgan nginx bilan tanishuv": brauzerdagi haqiqiy nginx'da qadamma-qadam bajarasiz, har so'rov "So'rov yo'li" sxemasida chiziladi.
+
 1. `reload` paytida eski worker'lar nima qiladi?
 2. Yangi konfiguratsiyada xato bo'lsa, `nginx -s reload` va `kill -HUP` qanday farq qildi?
 3. Jurnalni qanday to'g'ri almashtirish kerak? Nega `reopen` siz ishlamaydi?

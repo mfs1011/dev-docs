@@ -1493,4 +1493,34 @@ export const QADAMLI = {
       },
     ],
   },
+  // Xabar tizimlari 02-bob: bitta xabar — ish navbatida bitta ishchiga, pub/sub'da hammaga, jurnalda saqlanib qoladi (RabbitMQ, VPS)
+  'uch-model': {
+    panel: 'xabar qayerda',
+    qadamlar: [
+      {
+        cmd: ['rabbitmqadmin publish message --routing-key ishlar --payload "buyurtma #1"'],
+        chiqish: 'Message published and routed successfully',
+        holat: [{ k: 'n', yol: 'ishlar (navbat)', qiymat: '1 xabar', belgi: 'yangi' }],
+        izoh: 'Ish navbati: xabar navbatga tushdi.',
+      },
+      {
+        cmd: ['rabbitmqadmin get messages --queue ishlar …   # 1-ishchi', 'rabbitmqadmin get messages --queue ishlar …   # 2-ishchi'],
+        chiqish: "buyurtma #1\n2-ishchi: bo'sh",
+        holat: [{ k: 'n', yol: 'ishlar (navbat)', qiymat: "bo'sh — xabar olindi va o'chdi", belgi: 'yoq' }, { k: 'w1', yol: '1-ishchi', qiymat: 'buyurtma #1', belgi: 'yangi' }, { k: 'w2', yol: '2-ishchi', qiymat: 'hech narsa', belgi: 'xato' }],
+        izoh: 'Har ishni BITTA ishchi oladi: ikkinchisiga qolmadi.',
+      },
+      {
+        cmd: ['rabbitmqadmin publish message --exchange hodisa --routing-key "" --payload "buyurtma #1"', 'rabbitmqctl -q list_queues name messages'],
+        chiqish: 'Message published and routed successfully\nname\tmessages\nxat\t1\nanalitika\t1',
+        holat: [{ k: 'x', yol: 'xat (obunachi)', qiymat: '1 nusxa', belgi: 'yangi' }, { k: 'a', yol: 'analitika (obunachi)', qiymat: '1 nusxa', belgi: 'yangi' }],
+        izoh: 'Pub/sub (fanout exchange): bitta yuborish — har obunachiga o‘z nusxasi.',
+      },
+      {
+        cmd: ['rabbitmqadmin publish message --routing-key tarix --payload "buyurtma #1"', "node jurnal.js \"1-o'quvchi\"", "node jurnal.js \"2-o'quvchi (keyinroq)\""],
+        chiqish: "Message published and routed successfully\n1-o'quvchi: buyurtma #1\n2-o'quvchi (keyinroq): buyurtma #1",
+        holat: [{ k: 's', yol: 'tarix (stream)', qiymat: 'buyurtma #1 — saqlanib qoldi', belgi: 'yangi' }, { k: 'o1', yol: "1-o'quvchi", qiymat: 'o‘qidi' }, { k: 'o2', yol: "2-o'quvchi", qiymat: 'keyinroq ham o‘qidi', belgi: 'yangi' }],
+        izoh: 'Jurnal (stream): o‘qish xabarni o‘chirmaydi — keyin kelgan o‘quvchi ham boshidan o‘qiy oladi.',
+      },
+    ],
+  },
 }

@@ -215,6 +215,8 @@ ok
 
 ## Amaliyot
 
+**[Mashqni boshlash →](/nginx/trenajor?mashq=ng-16-kesh)** "Proxy kesh: MISS va HIT": brauzerdagi haqiqiy nginx'da qadamma-qadam bajarasiz, har so'rov "So'rov yo'li" sxemasida chiziladi.
+
 1. `keys_zone` va `max_size` farqi nima?
 2. Standart kesh kaliti qanday?
 3. `proxy_cache_valid 5m;` qaysi kodlarni keshlaydi?

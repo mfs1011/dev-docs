@@ -7,9 +7,9 @@ qo'yiladi. 2-bosqich (stage2.sh) emulyator ichida haqiqiy dpkg bilan paketlarni 
 
   python3 linux-trenajor/scripts/rootfs.py   ->  linux-trenajor/build/stage1.tar
 """
-import fnmatch, io, os, sys, tarfile
+import fnmatch, io, json, os, sys, tarfile
 
-from deb import MIRROR, ROOT, deb_data, fetch, paketlar, yech
+from deb import BUILD, MIRROR, PROFIL, PROFIL_DIR, ROOT, deb_data, fetch, paketlar, yech
 
 # Priority: required dan tashqari — trenajor mavzulari uchun (servislar, tarmoq, foydalanuvchilar, tahrirlash)
 QOSHIMCHA = [
@@ -59,13 +59,16 @@ def birlashtir(nom):
     return "usr/" + nom if bosh in BIRLASHGAN else nom
 # debootstrap kabi: shular birinchi o'rnatiladi (qolganlarining maintainer skriptlari ularga tayanadi)
 BIRINCHI = ["base-passwd", "base-files", "dpkg", "libc6", "libc-bin", "debianutils", "bash", "dash", "coreutils", "diffutils", "sed", "grep", "tar", "gzip", "mawk"]
-OUT = os.path.join(ROOT, "build", "stage1.tar")
+OUT = os.path.join(BUILD, "stage1.tar")
+# Profil (deb.py): profil.json — {"paketlar": [...], "arxivlar": ["build/nginx-…-i386.tar.gz"]}; ildiz/ — fayllar.
+# Arxivlar va ildiz/ dagi fayllar Debian paketlaridan keyin qo'shiladi (bir xil yo'lni almashtiradi).
+PROFIL_SOZ = json.load(open(os.path.join(PROFIL_DIR, "profil.json"))) if PROFIL else {}
 
 
 def main():
     p = paketlar()
     talab = sorted(n for n, f in p.items() if f.get("Priority") == "required")
-    hammasi = yech(p, talab + QOSHIMCHA, AFZAL)
+    hammasi = yech(p, talab + QOSHIMCHA + PROFIL_SOZ.get("paketlar", []), AFZAL)
     hajm = sum(int(p[n].get("Size", 0)) for n in hammasi)
     print(f"{len(hammasi)} ta paket, yuklanadi {hajm / 1048576:.1f} MB")
     if "--faqat-hisob" in sys.argv:
@@ -86,6 +89,26 @@ def main():
             if m.islnk():
                 m.linkname = birlashtir(m.linkname.lstrip("./"))
             fayllar[nom] = (m, t.extractfile(m).read() if m.isfile() else None)
+
+    # profil: tayyor arxivlar (masalan, i386 uchun yig'ilgan nginx) va ildiz/ papkasi
+    for a in PROFIL_SOZ.get("arxivlar", []):
+        with tarfile.open(os.path.join(PROFIL_DIR, a)) as t:
+            for m in t.getmembers():
+                nom = birlashtir(m.name.lstrip("./").rstrip("/"))
+                if not nom or nom in BIRLASHGAN:
+                    continue
+                m.name, m.uid, m.gid, m.uname, m.gname = nom, 0, 0, "root", "root"
+                fayllar[nom] = (m, t.extractfile(m).read() if m.isfile() else None)
+    ildiz = os.path.join(PROFIL_DIR, "ildiz") if PROFIL else ""
+    if ildiz and os.path.isdir(ildiz):
+        for papka_, _, fl in os.walk(ildiz):
+            for f in fl:
+                yol = os.path.join(papka_, f)
+                nom = birlashtir(os.path.relpath(yol, ildiz))
+                ti = tarfile.TarInfo(nom)
+                data = open(yol, "rb").read()
+                ti.size, ti.mode = len(data), 0o755 if os.access(yol, os.X_OK) else 0o644
+                fayllar[nom] = (ti, data)
 
     def papka(nom):
         ti = tarfile.TarInfo(nom)

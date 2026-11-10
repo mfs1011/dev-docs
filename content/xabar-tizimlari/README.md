@@ -35,7 +35,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 
 - Ma'lumotlar bazasiga yozish va xabar yuborishni bitta atomik amalga birlashtirish (transactional outbox) va bazadagi o'zgarishlarni oqimga uzatish (CDC). Bular uch asbobning birortasining rasmiy hujjatida yoritilmagan, shuning uchun kiritilmadi.
 
-> **Holat.** Qo'llanma tayyorlanmoqda — quyida rejalashtirilgan mundarija.
+> **Holat.** Qo'llanma yozilmoqda: 4/15 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -53,9 +53,9 @@ Bu qo'llanmaga kirmaydigan mavzular:
 
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
-| 01 | Nega navbat | Og'ir ishni so'rov ichida bajarib, foydalanuvchini kuttirmaslik: ishni xabar qilib navbatga qo'yish va keyin bajarish. Yuboruvchini qabul qiluvchidan ajratish, ishlanmagan xabarlarni yig'ib turish (bufer) | — | [RT 2. Work Queues](https://www.rabbitmq.com/tutorials/tutorial-two-javascript) · [KD Use Cases → Messaging](https://kafka.apache.org/44/getting-started/uses/) · [RD Job queue](https://redis.io/docs/latest/develop/use-cases/job-queue/) |
-| 02 | Uch model | Ish navbati: har ishni bitta ishchi oladi. Pub/sub: har obunachiga nusxa. Hodisalar jurnali (log, stream): yozuvlar saqlanadi va qayta o'qiladi | — | [RT 3. Publish/Subscribe](https://www.rabbitmq.com/tutorials/tutorial-three-javascript) · [RQ Streams](https://www.rabbitmq.com/docs/streams) · [KD Introduction](https://kafka.apache.org/44/getting-started/introduction/) · [RD Pub/sub](https://redis.io/docs/latest/develop/pubsub/) |
-| 03 | Uch asbob bir qarashda | Redis: list, stream, pub/sub. RabbitMQ: exchange va navbat, quorum navbat, stream. Kafka: partition'larga bo'lingan jurnal, consumer group, share group | — | [RD Streams](https://redis.io/docs/latest/develop/data-types/streams/) · [RT AMQP 0-9-1 Model Explained](https://www.rabbitmq.com/tutorials/amqp-concepts) · [KD Introduction](https://kafka.apache.org/44/getting-started/introduction/) |
+| 01 | [Nega navbat](01-nega-navbat.md) | Og'ir ishni so'rov ichida bajarib, foydalanuvchini kuttirmaslik: ishni xabar qilib navbatga qo'yish va keyin bajarish. Yuboruvchini qabul qiluvchidan ajratish, ishlanmagan xabarlarni yig'ib turish (bufer) | — | [RT 2. Work Queues](https://www.rabbitmq.com/tutorials/tutorial-two-javascript) · [KD Use Cases → Messaging](https://kafka.apache.org/44/getting-started/uses/) · [RD Job queue](https://redis.io/docs/latest/develop/use-cases/job-queue/) |
+| 02 | [Uch model](02-uch-model.md) | Ish navbati: har ishni bitta ishchi oladi. Pub/sub: har obunachiga nusxa. Hodisalar jurnali (log, stream): yozuvlar saqlanadi va qayta o'qiladi | V | [RT 3. Publish/Subscribe](https://www.rabbitmq.com/tutorials/tutorial-three-javascript) · [RQ Streams](https://www.rabbitmq.com/docs/streams) · [KD Introduction](https://kafka.apache.org/44/getting-started/introduction/) · [RD Pub/sub](https://redis.io/docs/latest/develop/pubsub/) |
+| 03 | [Uch asbob bir qarashda](03-uch-asbob.md) | Redis: list, stream, pub/sub. RabbitMQ: exchange va navbat, quorum navbat, stream. Kafka: partition'larga bo'lingan jurnal, consumer group, share group | — | [RD Streams](https://redis.io/docs/latest/develop/data-types/streams/) · [RT AMQP 0-9-1 Model Explained](https://www.rabbitmq.com/tutorials/amqp-concepts) · [KD Introduction](https://kafka.apache.org/44/getting-started/introduction/) |
 
 ## II qism — Kafolatlar (4–9)
 
@@ -81,7 +81,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
-| 14 | ⚑ Qaysi asbobni tanlash | Holatlar jadvali: allaqachon bor Redis'dagi oddiy fon ishi; xabar darajasidagi boshqaruv va murakkab marshrutlash; hodisalar tarixini saqlash va qayta o'qish, katta oqim. RabbitMQ'ning Kafka bilan taqqoslashi va Kafka'ning foydalanish holatlari — har biri o'z nuqtai nazaridan | — | [RQ Compare RabbitMQ and Kafka](https://www.rabbitmq.com/docs/compare/kafka) · [KD Use Cases](https://kafka.apache.org/44/getting-started/uses/) · [RD Use cases](https://redis.io/docs/latest/develop/use-cases/) |
+| 14 | [⚑ Qaysi asbobni tanlash](14-tanlash.md) | Holatlar jadvali: allaqachon bor Redis'dagi oddiy fon ishi; xabar darajasidagi boshqaruv va murakkab marshrutlash; hodisalar tarixini saqlash va qayta o'qish, katta oqim. RabbitMQ'ning Kafka bilan taqqoslashi va Kafka'ning foydalanish holatlari — har biri o'z nuqtai nazaridan | — | [RQ Compare RabbitMQ and Kafka](https://www.rabbitmq.com/docs/compare/kafka) · [KD Use Cases](https://kafka.apache.org/44/getting-started/uses/) · [RD Use cases](https://redis.io/docs/latest/develop/use-cases/) |
 | 15 | ⚑ Bitta vazifa uch tizimda | "Buyurtma yaratildi" hodisasi Redis stream, RabbitMQ va Kafka bilan: kod, nosozlikdagi xatti-harakat va tartib farqi | V+D | Oldingi boblardagi manbalar |
 
 ---

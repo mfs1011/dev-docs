@@ -220,6 +220,12 @@ Ikkinchi noutbukda boshlashdan oldin shu faylni, `CLAUDE.md` ni va kitobning `RE
 - Manba: nginx.org HTML sahifalari (`h2t.py` bilan matnga) va docs.nginx.com (markdown manbasi: `raw.githubusercontent.com/nginx/documentation/main/content/nginx/...`).
 - Proksi boblarida backend — Python standart kutubxonasidagi kichik server (Node.js VPS'da yo'q; misollar tili qarori Redis/RabbitMQ bilan birga kutilmoqda). README 11-bob qatoridagi "Node.js" so'zi "orqadagi ilova"ga o'zgartirildi.
 
+## Yangi trenajorlar (2026-11-10)
+
+- Egasi kitoblarga o'ziga xos trenajor so'radi: ham haqiqiy sinab ko'rish, ham vizual. Tartib: **Nginx → Web asoslari → Redis**, keyin Server xavfsizligi. Docker keyinga qoldirildi: simulyator kerak emas, real sinab ko'rish yo'li izlanadi.
+- **Nginx trenajori** (`/nginx/trenajor`, branch `feat/nginx-trenajor`): haqiqiy nginx 1.31.8 va "So'rov yo'li" sxemasi, 7 ta mashq. Tafsilot — `nginx-trenajor/README.md`. Linux trenajori yig'ish skriptlariga profil qo'shildi (`TRENAJOR_PROFIL`), Linux tasviri o'zgarmagan (160 paket, mashqlar o'tadi).
+- O'rganilgan: v86 da ikkinchi serial port (`uart1`) ishlaydi. Kanal "to'xtab qolgani" UART emas, `grep` binary rejimi ekan (`grep -a`).
+
 ## Redis kitobi (`content/redis/`)
 
 - Branch `docs/redis-2` (1-qism — `docs/redis-1`, merge qilingan). **Redis kitobi tayyor: 34/34** (2026-11-10). Ilova misollari Node.js va PHP'da: VPS'da Node.js 26.13.0 (`/opt/node`, rasmiy binar), Composer 2.11.1 (`/usr/local/bin/composer`), loyiha `/root/redis-ilova` (`redis@6.3.1`, `predis/predis` 3.7.1). (1-qism) VPS'ga Redis 8.10.3 rasmiy APT omboridan (`packages.redis.io`, `resolute`) o'rnatildi, servis `redis-server`, faqat `127.0.0.1`/`::1:6379`.
@@ -233,7 +239,7 @@ Ikkinchi noutbukda boshlashdan oldin shu faylni, `CLAUDE.md` ni va kitobning `RE
 
 ## Deploy amaliyoti kitobi (`content/deploy-amaliyoti/`)
 
-- Branch `docs/deploy-1`. Tayyor: 1, 5, 7, 8, 16–18, 20-boblar (20-bobda image tegi va GitHub deploy tarixi qismi — 19-bob va III qism bilan qo'shiladi) (2026-11-09; VPS'ga `strace` o'rnatildi).
+- Branch `docs/deploy-2` (`docs/deploy-1` — PR #210 merge qilingan). 2 va 6-boblar tayyor (2026-11-10; 2 — `kamgapir.uz` DNS `dig` bilan, `www` — CNAME; 6 — npm ci / composer install / artifact). 4-bob deploy key uchun GitHub sinov repozitoriysini kutadi. Oldin tayyor: 1, 5, 7, 8, 16–18, 20-boblar (20-bobda image tegi va GitHub deploy tarixi qismi — 19-bob va III qism bilan qo'shiladi) (2026-11-09; VPS'ga `strace` o'rnatildi).
 - Navbat: til va domen talab qilmaydigan V-boblar — 5, 7, 8, 16–18 (ilova — Python standart kutubxonasidagi kichik server, Nginx kitobidagi kabi). 3-bob (deploy foydalanuvchisi, SSH kalit, firewall) — VPS'ga kirishni o'zgartiradi, egasining tasdig'i kerak. 2, 4 (domen), 6 (Node.js/PHP — misollar tili qarori), 9–15, 19, 21–22 (GitHub sinov repozitoriysi) — egasining qarori kutilmoqda.
 - Manba: GitHub hujjati — `raw.githubusercontent.com/github/docs/main/content/actions/...` (markdown).
 
@@ -242,3 +248,28 @@ Ikkinchi noutbukda boshlashdan oldin shu faylni, `CLAUDE.md` ni va kitobning `RE
 - **Egasining qarori (2026-11-10): Kafka VPS'da.** `apache/kafka:4.4.0` konteyneri `kafka` (`docker run -d --name kafka -p 127.0.0.1:9092:9092 -e KAFKA_HEAP_OPTS="-Xmx256m -Xms256m" --restart unless-stopped`). Port faqat 127.0.0.1 da (Docker ufw'ni chetlab o'tadi — tashqariga ochilmasin). Konteyner ~330 MB xotira.
 - Branch `docs/kafka-1`. Tayyor: 1–19-boblar (2026-11-10; Java misollari `/root/kafka-java/`, `java -cp '/opt/kafka-tgz/kafka_2.13-4.4.0/libs/*' X.java`; 6 — `kalit-partition` animatsiyasi). VPS'ga `openjdk-25-jdk-headless` o'rnatildi; arxiv `/opt/kafka-tgz/kafka_2.13-4.4.0` (CLI vositalari uchun ham).
 - Xabar tizimlari'ning V+D boblari ham shu VPS Kafka'si bilan qilinadi.
+
+## Xabar tizimlari kitobi (`content/xabar-tizimlari/`)
+
+- Branch `docs/xabar-tizimlari-1`. Tayyor: 1–3, 14-boblar (2026-11-10). Qolgan 4–13, 15 — V+D (Kafka endi VPS'da, Kafka kitobi bo'limiga qarang). 2-bobda uch model RabbitMQ'da VPS'da ko'rsatildi (README'da "Muhit" — V) va `uch-model` qadamli animatsiyasi (`src/animatsiya/qadamlar.js`) qo'shildi.
+
+## RabbitMQ kitobi (`content/rabbitmq/`)
+
+- Branch `docs/rabbitmq-1`. Tayyor: 34/34 (2026-11-10). VPS: `disk_free_limit` 2GB, anonim kirish o'chirilgan, `LimitNOFILE=64000` (systemd override). 32-bobdagi sinov klasteri (n1, n2) olib tashlangan; stream coordinator `force_shrink` bilan tiklangan, tugun yana yakka. `rabbitmq_prometheus` yoqilgan (15692). TLS yoqilgan: 5671 (mTLS, TLSv1.2/1.3), sertifikatlar `/etc/rabbitmq/tls/`, klient sertifikati `/root/tls-gen/basic/result/`. Stream plagini yoqilgan (5552), `/etc/rabbitmq/rabbitmq.conf`: `stream.advertised_host = localhost`; `rabbitmq-stream-js-client` 1.1.0. Management plagini yoqilgan (15672, ufw yopiq), `rabbitmqadmin` 2.35.0 — `/usr/local/bin`. Loyiha `/root/rabbit-ilova` (`amqplib` 2.3.1, `php-amqplib` 3.7.5). Misollar Node.js (`amqplib`) va PHP (`php-amqplib`).
+- VPS'ga RabbitMQ 4.4.0 va Erlang/OTP 27.3.4.19 Team RabbitMQ apt omboridan o'rnatildi (`/etc/apt/sources.list.d/rabbitmq.list` — noble ombori, hujjatdagi "Ubuntu 26.04 and 24.04" skripti; Erlang pinning `/etc/apt/preferences.d/erlang`, `Pin: origin RabbitMQ`, 1001). Servis `rabbitmq-server` — active/enabled; 5672, 25672, 4369 portlari barcha interfeyslarda, ufw ularni ruxsat etmagan — tashqaridan AMQP javobi yo'q (tekshirildi). Faqat `guest` foydalanuvchi (faqat localhost).
+- 2-bob sinovi bajarilgan, matn yozilmagan. Kuzatildi: kompyuterdagi `nc -z` VPS'dagi istalgan portni "ochiq" deb ko'rsatadi (lokal tarmoq ulanishni o'zi qabul qiladi) — tashqi tekshiruv faqat protokol javobi bilan (AMQP sarlavhasi).
+- Navbat: V-boblar (2, 4, 6, 10–14, 16, 17, 21, 25–34) — `rabbitmqctl`/`rabbitmqadmin` bilan; V+N — misollar tili qarori kutilmoqda.
+
+## Egasining qarorlari (2026-11-09)
+
+- **Domen: `kamgapir.uz`** — `kamgapir.uz` va `www.kamgapir.uz` A yozuvlari VPS'ga yo'naltirilgan (tekshirildi; NS — ahost.uz; AAAA yo'q). Nginx 19–25, Deploy 02, 04 shu domen bilan.
+- **Misollar tili: Node.js va PHP — ikkalasi.** Redis va RabbitMQ'ning kod yoziladigan boblarida har misol ikki tilda (RabbitMQ: `amqplib` va `php-amqplib`, rasmiy qo'llanmalardagi kabi). Deploy 06 — `npm ci` va `composer install` ikkalasi.
+- Kutilmoqda: Deploy 03 va Server xavfsizligi 9–18 uchun provayder konsoli tayyorligi; GitHub Actions boblari uchun sinov repozitoriysi (egasi ochadi).
+
+## Video darslar — VPS'dan (2026-11-10)
+
+- GitHub Pages sayti 1 GB chegarasidan oshdi (artifact ~1.8 GB, `public/video` ~1.4 GB) — deploy `syncing_files` da vaqt tugab yiqildi. Egasining qarori: videolar **VPS'dan** beriladi (bepul, qo'shimcha to'lovsiz).
+- VPS: `/srv/dev-docs-video` — repodan faqat `public/video` (sparse, `--depth 1`). `dev-docs-video.timer` har 15 daqiqada `git fetch`+`reset` qiladi — yangi video main'ga merge qilingach o'zi chiqadi.
+- nginx: `/etc/nginx/conf.d/sayt.conf` da `location /video/` (`alias`, mp4/vtt/jpg turlari, `Access-Control-Allow-Origin: *`, `Cache-Control: public, max-age=3600`). Zaxira — `/root/sayt.conf.zaxira`.
+- Sayt: `src/markdown.js` — `VITE_VIDEO_BASE_URL` bo'lsa `/video/…` shu manzilga, `<video>` ga `crossorigin="anonymous"`. `deploy.yml` — `rm -rf public/video`, `VITE_VIDEO_BASE_URL: https://kamgapir.uz/video/`. Dev'da (o'zgaruvchisiz) — avvalgidek `public/video/`.
+- Videolar git'da qoladi (manba). VPS trafik limiti — provayder tarifida tekshirilsin.

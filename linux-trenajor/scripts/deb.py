@@ -6,6 +6,12 @@ MIRROR = "https://deb.debian.org/debian"
 SUITE = "bookworm"
 ARCH = "i386"
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# Profil: bir xil quvur boshqa trenajor tasvirini yig'adi (masalan, TRENAJOR_PROFIL=nginx -> nginx-trenajor/).
+# Profil papkasida profil.json (qo'shimcha paketlar, arxivlar) va ildiz/ (fayl tizimiga qo'shiladigan fayllar).
+PROFIL = os.environ.get("TRENAJOR_PROFIL", "")
+PROFIL_DIR = os.path.join(os.path.dirname(ROOT), f"{PROFIL}-trenajor") if PROFIL else ""
+BUILD = os.path.join(PROFIL_DIR, "build") if PROFIL else os.path.join(ROOT, "build")
+# .deb keshi profillar uchun umumiy
 CACHE = os.path.join(ROOT, "build", "cache")
 os.makedirs(CACHE, exist_ok=True)
 

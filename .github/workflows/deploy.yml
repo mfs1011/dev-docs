@@ -47,8 +47,32 @@ jobs:
       - name: Linux trenajorini saytga qo'shish
         run: rm -rf public/linux-trenajor && cp -r linux-trenajor/build/web public/linux-trenajor
 
+      # Nginx trenajori: Linux trenajori quvurining "nginx" profili (linux-trenajor/scripts, TRENAJOR_PROFIL=nginx).
+      # nginx 1.31.8 i386 uchun Docker'da (debian:bookworm, linux/386) nginx.org manba arxividan yig'iladi.
+      - name: Nginx trenajori keshi
+        id: nginx-trenajor
+        uses: actions/cache@v4
+        with:
+          path: nginx-trenajor/build/web
+          key: nginx-trenajor-${{ hashFiles('nginx-trenajor/**', 'linux-trenajor/scripts/**', 'public/trenajor/v86.wasm', 'package-lock.json') }}
+
+      - name: Nginx trenajorini yig'ish
+        if: steps.nginx-trenajor.outputs.cache-hit != 'true'
+        run: |
+          sh nginx-trenajor/scripts/nginx-yigish.sh
+          TRENAJOR_PROFIL=nginx sh linux-trenajor/scripts/yigish.sh
+
+      - name: Nginx trenajorini saytga qo'shish
+        run: rm -rf public/nginx-trenajor && cp -r nginx-trenajor/build/web public/nginx-trenajor
+
+      # Video darslar (~1.4 GB) saytga qo'shilmaydi: ular VPS'dan beriladi (https://kamgapir.uz/video/,
+      # VPS repodan faqat public/video ni sparse checkout qilib, har 15 daqiqada yangilaydi — docs/ish-holati.md).
+      - name: Videolarni artifact'dan chiqarish
+        run: rm -rf public/video
+
       - name: Build
         env:
+          VITE_VIDEO_BASE_URL: https://kamgapir.uz/video/
           BASE_PATH: /${{ github.event.repository.name }}/
           # Settings → Secrets and variables → Actions → Variables (ochiq kalitlar, secret emas)
           VITE_SUPABASE_URL: ${{ vars.VITE_SUPABASE_URL }}

@@ -1,0 +1,23 @@
+[1;32mNginx trenajori[0m · nginx 1.31.8
+[2m──────────────────────────────────────[0m
+Brauzeringiz ichida haqiqiy Debian va
+nginx ishlayapti. Har so'rov yonidagi
+"So'rov yo'li" sxemasida chiziladi.
+
+[1;33mBoshlash[0m
+  curl -i http://localhost/
+  ls /etc/nginx/conf.d/
+  nginx -t && nginx -s reload
+
+[1;33mBackend ("ilova")[0m
+  127.0.0.1:8081, :8082, :8083
+
+[1;33mCheklangan[0m
+  [1minternet yo'q[0m: faqat shu kompyuter
+    ichidagi saytlar (localhost)
+  [1msaqlanmaydi[0m: sahifa yangilansa,
+    hammasi boshidan boshlanadi
+  [1mHTTPS/HTTP3 yo'q[0m: sertifikat boblari
+    VPS'dagi chiqishlar bilan
+
+[2mBu matn /etc/motd faylida turibdi[0m

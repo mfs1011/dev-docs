@@ -56,3 +56,8 @@ komponent-trenajor/test/shots/
 # Linux trenajori: yig'ilgan tizim (katta, qayta yasaladi)
 linux-trenajor/build/
 public/linux-trenajor
+
+# Nginx trenajori: yig'ilgan tizim va i386 nginx arxivi (qayta yasaladi)
+nginx-trenajor/build/
+public/nginx-trenajor
+nginx-trenajor/test/shots/
