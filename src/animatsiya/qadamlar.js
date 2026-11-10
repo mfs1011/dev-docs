@@ -1374,4 +1374,28 @@ export const QADAMLI = {
       },
     ],
   },
+  // Kafka 06-bob: kalit xeshi bo'yicha partition; partition qo'shilgach o'sha kalit boshqa partition'ga tushadi (VPS, Kafka 4.4.0)
+  'kalit-partition': {
+    panel: 'tolovlar topic',
+    qadamlar: [
+      {
+        cmd: ['kafka-topics.sh --create --topic tolovlar --partitions 3'],
+        chiqish: 'Created topic tolovlar.',
+        holat: [{ k: 'p0', yol: 'partition 0', qiymat: "bo'sh" }, { k: 'p1', yol: 'partition 1', qiymat: "bo'sh" }, { k: 'p2', yol: 'partition 2', qiymat: "bo'sh" }],
+        izoh: '3 partition’li topic.',
+      },
+      {
+        cmd: ['printf "ali:1 vali:1 soli:1 ali:2 vali:2 ali:3" | kafka-console-producer.sh … parse.key=true'],
+        chiqish: 'tolovlar:0:5\ntolovlar:1:0\ntolovlar:2:1',
+        holat: [{ k: 'p0', yol: 'partition 0', qiymat: 'ali ×3, vali ×2 — yozilgan tartibda', belgi: 'yangi' }, { k: 'p1', yol: 'partition 1', qiymat: "bo'sh" }, { k: 'p2', yol: 'partition 2', qiymat: 'soli ×1', belgi: 'yangi' }],
+        izoh: 'Kalit xeshi partition’ni tanlaydi: bir xil kalit — doim bir xil partition, tartib saqlanadi. Taqsimot teng bo‘lishi shart emas.',
+      },
+      {
+        cmd: ['kafka-topics.sh --alter --topic tolovlar --partitions 6', 'printf "ali:4 vali:3 soli:2" | kafka-console-producer.sh …'],
+        chiqish: 'Partition:3\tOffset:0\tali\t4-tolov\nPartition:3\tOffset:1\tvali\t3-tolov\nPartition:5\tOffset:0\tsoli\t2-tolov',
+        holat: [{ k: 'p0', yol: 'partition 0', qiymat: 'ali 1–3, vali 1–2 (eski)' }, { k: 'p2', yol: 'partition 2', qiymat: 'soli 1 (eski)' }, { k: 'p3', yol: 'partition 3', qiymat: 'ali 4, vali 3 — YANGI joy', belgi: 'xato' }, { k: 'p5', yol: 'partition 5', qiymat: 'soli 2 — YANGI joy', belgi: 'xato' }],
+        izoh: 'Partition soni o‘zgardi — xesh boshqa partition’ga olib bordi. Bitta mijozning hodisalari endi ikki partition’da: ular orasida tartib kafolati yo‘q.',
+      },
+    ],
+  },
 }
