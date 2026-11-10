@@ -97,7 +97,7 @@ Har bob batafsil yoziladi: tushuncha, ichki mexanizm (spetsifikatsiya darajasida
 | # | Bob | Mazmun | Rasmiy asos | javascript.info |
 | --- | --- | --- | --- | --- |
 | 40 | [Execution context va call stack](40-execution-context.md) | Global va funksiya konteksti, stek, kontekst nimadan iborat (spetsifikatsiya bo'yicha) | ECMA-262 *Execution Contexts*; MDN *Execution model* ("Stack and execution contexts") | — |
-| 41 | Rekursiya va stek | Rekursiya stekda qanday ko'rinadi, chuqurlik chegarasi, rekursiv tuzilmalar | MDN *Functions* ("Recursion"), *Execution model* | `/recursion` |
+| 41 | [Rekursiya va stek](41-rekursiya.md) | Rekursiya stekda qanday ko'rinadi, chuqurlik chegarasi, rekursiv tuzilmalar | MDN *Functions* ("Recursion"), *Execution model* | `/recursion` |
 | 42 | Rest va spread | `...args`, `arguments` obyekti, spread massiv va obyektda | MDN *Rest parameters*, *Spread syntax* | `/rest-parameters-spread` |
 | 43 | Leksik muhit va closure | Environment Record, `[[Environment]]`, closure qanday hosil bo'ladi, sikldagi klassik xato | ECMA-262 *Environment Records*; MDN *Closures* | `/closure` |
 | 44 | Eski `var` | Funksiya scope, hoisting, IIFE, nega endi ishlatilmaydi | MDN `var` | `/var` |
