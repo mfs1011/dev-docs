@@ -13,7 +13,7 @@
 | Node.js | `global` | `global` (Node: *Legacy*, o'rniga `globalThis`) |
 | **Istalgan muhit** | — | **`globalThis`** |
 
-`globalThis` (ES2020) — MDN: global `this` qiymatini, demak global obyektni **barcha muhitlarda bir xil** olishning standart yo'li. Undan oldin muhitni aniqlab, har birida boshqa nom ishlatish kerak edi.
+`globalThis` — MDN: global `this` qiymatini, demak global obyektni **barcha muhitlarda bir xil** olishning standart yo'li. Undan oldin muhitni aniqlab, har birida boshqa nom ishlatish kerak edi.
 
 ### Global obyekt nimani saqlaydi
 
