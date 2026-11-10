@@ -35,7 +35,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 
 - Ma'lumotlar bazasiga yozish va xabar yuborishni bitta atomik amalga birlashtirish (transactional outbox) va bazadagi o'zgarishlarni oqimga uzatish (CDC). Bular uch asbobning birortasining rasmiy hujjatida yoritilmagan, shuning uchun kiritilmadi.
 
-> **Holat.** Qo'llanma yozilmoqda: 15/15 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma tayyor: 15/15 bob.
 
 ---
 
