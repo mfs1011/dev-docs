@@ -90,3 +90,6 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          # Sayt ~1.7 GB (Linux va nginx trenajorlari): fayllarni sinxronlash standart 10 daqiqadan oshib ketdi
+          timeout: 1800000
