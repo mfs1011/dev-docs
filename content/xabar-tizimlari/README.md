@@ -35,7 +35,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 
 - Ma'lumotlar bazasiga yozish va xabar yuborishni bitta atomik amalga birlashtirish (transactional outbox) va bazadagi o'zgarishlarni oqimga uzatish (CDC). Bular uch asbobning birortasining rasmiy hujjatida yoritilmagan, shuning uchun kiritilmadi.
 
-> **Holat.** Qo'llanma yozilmoqda: 14/15 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 15/15 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -82,7 +82,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
 | 14 | [⚑ Qaysi asbobni tanlash](14-tanlash.md) | Holatlar jadvali: allaqachon bor Redis'dagi oddiy fon ishi; xabar darajasidagi boshqaruv va murakkab marshrutlash; hodisalar tarixini saqlash va qayta o'qish, katta oqim. RabbitMQ'ning Kafka bilan taqqoslashi va Kafka'ning foydalanish holatlari — har biri o'z nuqtai nazaridan | — | [RQ Compare RabbitMQ and Kafka](https://www.rabbitmq.com/docs/compare/kafka) · [KD Use Cases](https://kafka.apache.org/44/getting-started/uses/) · [RD Use cases](https://redis.io/docs/latest/develop/use-cases/) |
-| 15 | ⚑ Bitta vazifa uch tizimda | "Buyurtma yaratildi" hodisasi Redis stream, RabbitMQ va Kafka bilan: kod, nosozlikdagi xatti-harakat va tartib farqi | V+D | Oldingi boblardagi manbalar |
+| 15 | [⚑ Bitta vazifa uch tizimda](15-bitta-vazifa.md) | "Buyurtma yaratildi" hodisasi Redis stream, RabbitMQ va Kafka bilan: kod, nosozlikdagi xatti-harakat va tartib farqi | V+D | Oldingi boblardagi manbalar |
 
 ---
 
