@@ -36,7 +36,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - MQTT, STOMP, Federation va Shovel plaginlari, Kubernetes, OAuth 2 va LDAP — maxsus holatlar, hujjatda: [RQ Plugins](https://www.rabbitmq.com/docs/plugins).
 - Symfony Messenger va Laravel navbatlari bilan ulash — shu framework'lar kitoblarida.
 
-> **Holat.** Qo'llanma yozilmoqda: 22/34 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 23/34 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -97,7 +97,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
-| 23 | Stream nima | Faqat oxiriga yoziladigan (append-only) log: xabar o'qilgandan keyin ham qoladi va qayta o'qiladi. Stream va navbat farqi | V+N | [RQ Streams](https://www.rabbitmq.com/docs/streams) · [RT Stream 1. "Hello World!"](https://www.rabbitmq.com/tutorials/tutorial-one-javascript-stream) |
+| 23 | [Stream nima](23-stream.md) | Faqat oxiriga yoziladigan (append-only) log: xabar o'qilgandan keyin ham qoladi va qayta o'qiladi. Stream va navbat farqi | V+N | [RQ Streams](https://www.rabbitmq.com/docs/streams) · [RT Stream 1. "Hello World!"](https://www.rabbitmq.com/tutorials/tutorial-one-javascript-stream) |
 | 24 | Offset va filtrlash | Qayerdan o'qishni boshlash (offset) va uni eslab qolish. Stream filtrlash | V+N | [RT Stream 2. Offset Tracking](https://www.rabbitmq.com/tutorials/tutorial-two-javascript-stream) · [RQ Stream Filtering](https://www.rabbitmq.com/docs/stream-filtering) |
 
 ## VI qism — Boshqaruv va xavfsizlik (25–29)
