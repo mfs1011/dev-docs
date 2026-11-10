@@ -233,7 +233,7 @@ Ikkinchi noutbukda boshlashdan oldin shu faylni, `CLAUDE.md` ni va kitobning `RE
 
 ## Deploy amaliyoti kitobi (`content/deploy-amaliyoti/`)
 
-- Branch `docs/deploy-1`. Tayyor: 1, 5, 7, 8, 16–18, 20-boblar (20-bobda image tegi va GitHub deploy tarixi qismi — 19-bob va III qism bilan qo'shiladi) (2026-11-09; VPS'ga `strace` o'rnatildi).
+- Branch `docs/deploy-2` (`docs/deploy-1` — PR #210 merge qilingan). 2 va 6-boblar tayyor (2026-11-10; 2 — `kamgapir.uz` DNS `dig` bilan, `www` — CNAME; 6 — npm ci / composer install / artifact). 4-bob deploy key uchun GitHub sinov repozitoriysini kutadi. Oldin tayyor: 1, 5, 7, 8, 16–18, 20-boblar (20-bobda image tegi va GitHub deploy tarixi qismi — 19-bob va III qism bilan qo'shiladi) (2026-11-09; VPS'ga `strace` o'rnatildi).
 - Navbat: til va domen talab qilmaydigan V-boblar — 5, 7, 8, 16–18 (ilova — Python standart kutubxonasidagi kichik server, Nginx kitobidagi kabi). 3-bob (deploy foydalanuvchisi, SSH kalit, firewall) — VPS'ga kirishni o'zgartiradi, egasining tasdig'i kerak. 2, 4 (domen), 6 (Node.js/PHP — misollar tili qarori), 9–15, 19, 21–22 (GitHub sinov repozitoriysi) — egasining qarori kutilmoqda.
 - Manba: GitHub hujjati — `raw.githubusercontent.com/github/docs/main/content/actions/...` (markdown).
 
