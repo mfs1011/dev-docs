@@ -35,7 +35,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - Docker'ning o'zi — **"Docker"** kitobida.
 - Tiered storage (eski ma'lumotni arzon omborga ko'chirish), klasterlar orasida nusxalash (MirrorMaker 2) — katta klasterlar mavzusi, hujjatda: [KD Tiered Storage](https://kafka.apache.org/44/operations/tiered-storage/), [KD Geo-Replication](https://kafka.apache.org/44/operations/geo-replication-cross-cluster-data-mirroring/).
 
-> **Holat.** Qo'llanma yozilmoqda: 8/35 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 9/35 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -67,7 +67,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 | 06 | [Partition va kalit](06-partition-kalit.md) | Hodisa qaysi partition'ga tushadi: kalit xeshi bo'yicha. Tartib faqat bitta partition ichida saqlanadi. Partition soni oshirilsa, bir xil kalitli hodisalar boshqa partition'ga tusha boshlaydi | D | [KD Introduction](https://kafka.apache.org/44/getting-started/introduction/) · [KD Design → The Producer](https://kafka.apache.org/44/design/design/) · [KD Basic Operations](https://kafka.apache.org/44/operations/basic-kafka-operations/) |
 | 07 | [Log va offset](07-log-offset.md) | Partition — faqat oxiriga yoziladigan log (jurnal). Offset — hodisaning partition ichidagi tartib raqami. Segment fayllar va indekslar. Consumer o'z joyini offset bilan eslab qoladi | D | [KD Design → Persistence, The Consumer](https://kafka.apache.org/44/design/design/) · [KD Implementation → Log](https://kafka.apache.org/44/implementation/log/) |
 | 08 | [Saqlash muddati](08-saqlash-muddati.md) | Hodisa o'qilgani uchun emas, muddati o'tgani uchun o'chiriladi. `retention.ms`, `retention.bytes`, segment sozlamalari, `cleanup.policy=delete` | D | [KD Introduction](https://kafka.apache.org/44/getting-started/introduction/) · [KD Topic Configs](https://kafka.apache.org/44/configuration/topic-configs/) · [KD Implementation → Log](https://kafka.apache.org/44/implementation/log/) |
-| 09 | Log compaction | `cleanup.policy=compact`: har kalitning oxirgi qiymati qoladi. Tombstone (qiymati bo'sh hodisa) bilan kalitni o'chirish. Qachon kerak: holatni tiklash | D | [KD Design → Log Compaction](https://kafka.apache.org/44/design/design/) · [KD Topic Configs](https://kafka.apache.org/44/configuration/topic-configs/) |
+| 09 | [Log compaction](09-log-compaction.md) | `cleanup.policy=compact`: har kalitning oxirgi qiymati qoladi. Tombstone (qiymati bo'sh hodisa) bilan kalitni o'chirish. Qachon kerak: holatni tiklash | D | [KD Design → Log Compaction](https://kafka.apache.org/44/design/design/) · [KD Topic Configs](https://kafka.apache.org/44/configuration/topic-configs/) |
 
 ## III qism — Producer (10–13)
 
