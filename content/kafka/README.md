@@ -35,7 +35,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - Docker'ning o'zi — **"Docker"** kitobida.
 - Tiered storage (eski ma'lumotni arzon omborga ko'chirish), klasterlar orasida nusxalash (MirrorMaker 2) — katta klasterlar mavzusi, hujjatda: [KD Tiered Storage](https://kafka.apache.org/44/operations/tiered-storage/), [KD Geo-Replication](https://kafka.apache.org/44/operations/geo-replication-cross-cluster-data-mirroring/).
 
-> **Holat.** Qo'llanma yozilmoqda: 17/35 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 18/35 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -86,7 +86,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 | 15 | [Consumer group](15-consumer-group.md) | Har partition guruh ichida bir vaqtda faqat bitta consumer'ga beriladi. Consumer qo'shilganda yoki chiqqanda partition'lar qayta taqsimlanadi (rebalance). Yangi `consumer` protokoli va eski `classic` protokol (yangisi standartda yoqilmagan) | D | [KD Design → The Consumer](https://kafka.apache.org/44/design/design/) · [KD Consumer Rebalance Protocol](https://kafka.apache.org/44/operations/consumer-rebalance-protocol/) |
 | 16 | [Offset commit](16-offset-commit.md) | Avtomatik (`enable.auto.commit`) va qo'lda commit. "Ko'pi bilan bir marta" (at-most-once) va "kamida bir marta" (at-least-once) qayerdan kelib chiqadi. Takror ishlovga tayyor bo'lish | D+J | [KD Design → Message Delivery Semantics](https://kafka.apache.org/44/design/design/) · [KD Consumer Configs](https://kafka.apache.org/44/configuration/consumer-configs/) |
 | 17 | [Guruhlarni kuzatish](17-guruh-kuzatish.md) | `kafka-consumer-groups.sh`: a'zolar, offset'lar, lag (consumer qancha orqada qolgani). Offset'ni qayta o'rnatish (reset) | D | [KD Basic Operations](https://kafka.apache.org/44/operations/basic-kafka-operations/) (Checking consumer position, Managing consumer groups) |
-| 18 | Java'dan o'qish | Consumer API: `KafkaConsumer`, `subscribe`, `poll`, `commitSync`. Deserializer'lar. Consumer'ni to'g'ri to'xtatish | D+J | [KD APIs → Consumer API](https://kafka.apache.org/44/apis/) · [KD Consumer Configs](https://kafka.apache.org/44/configuration/consumer-configs/) |
+| 18 | [Java'dan o'qish](18-java-consumer.md) | Consumer API: `KafkaConsumer`, `subscribe`, `poll`, `commitSync`. Deserializer'lar. Consumer'ni to'g'ri to'xtatish | D+J | [KD APIs → Consumer API](https://kafka.apache.org/44/apis/) · [KD Consumer Configs](https://kafka.apache.org/44/configuration/consumer-configs/) |
 | 19 | Share group: navbat rejimi | Bitta partition'ni bir nechta consumer birga o'qiydi, consumer soni partition sonidan ko'p bo'lishi mumkin. Har hodisa alohida tasdiqlanadi (acknowledge). Yetkazish urinishlari sanaladi; ishlov berib bo'lmagan hodisa uchun dead-letter queue (DLQ) | D+J | [KD Design → The Share Consumer](https://kafka.apache.org/44/design/design/) · [KD APIs → Share Consumer API](https://kafka.apache.org/44/apis/) · [KD Basic Operations](https://kafka.apache.org/44/operations/basic-kafka-operations/) (Managing share groups, DLQ) |
 
 ## V qism — Klaster va ishonchlilik (20–24)
