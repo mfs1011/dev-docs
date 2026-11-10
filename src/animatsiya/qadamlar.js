@@ -1523,4 +1523,34 @@ export const QADAMLI = {
       },
     ],
   },
+  // Kafka 20-bob: broker tushganda ISR qisqaradi va yetakchi ISR'dagi boshqa replikaga o'tadi (3 tugunli klaster, VPS)
+  'isr-leader': {
+    panel: 'buyurtmalar: 3 partition, RF 3, min ISR 2',
+    qadamlar: [
+      {
+        cmd: ['kafka-topics.sh --describe --topic buyurtmalar'],
+        chiqish: 'Partition: 0\tLeader: 3\tReplicas: 3,1,2\tIsr: 3,1,2\nPartition: 1\tLeader: 1\tReplicas: 1,2,3\tIsr: 1,2,3\nPartition: 2\tLeader: 2\tReplicas: 2,3,1\tIsr: 2,3,1',
+        holat: [{ k: 'p0', yol: 'partition 0', qiymat: 'yetakchi 3, ISR 3,1,2' }, { k: 'p1', yol: 'partition 1', qiymat: 'yetakchi 1, ISR 1,2,3' }, { k: 'p2', yol: 'partition 2', qiymat: 'yetakchi 2, ISR 2,3,1' }],
+        izoh: 'Yetakchilar uchala brokerga teng taqsimlangan. Hamma replika sinxron.',
+      },
+      {
+        cmd: ['docker compose stop kafka-2'],
+        chiqish: 'Partition: 0\tLeader: 3\tReplicas: 3,1,2\tIsr: 3,1\nPartition: 1\tLeader: 1\tReplicas: 1,2,3\tIsr: 1,3\nPartition: 2\tLeader: 3\tReplicas: 2,3,1\tIsr: 3,1',
+        holat: [{ k: 'p0', yol: 'partition 0', qiymat: 'ISR 3,1 — 2 chiqdi', belgi: 'ochiq' }, { k: 'p1', yol: 'partition 1', qiymat: 'ISR 1,3 — 2 chiqdi', belgi: 'ochiq' }, { k: 'p2', yol: 'partition 2', qiymat: 'yetakchi 2 → 3 (ISR’dan)', belgi: 'xato' }],
+        izoh: '2-broker tushdi: u hamma ISR’dan chiqarildi. U yetakchi bo‘lgan partition 2 da yangi yetakchi — ISR’dagi 3. Yozish davom etadi: ISR 2 ≥ min ISR 2.',
+      },
+      {
+        cmd: ['docker compose start kafka-2'],
+        chiqish: 'Partition: 2\tLeader: 3\tReplicas: 2,3,1\tIsr: 1,2,3',
+        holat: [{ k: 'p2', yol: 'partition 2', qiymat: 'ISR to‘ldi, yetakchi hali 3', belgi: 'yangi' }],
+        izoh: 'Qaytgan broker yetakchidan qolgan yozuvlarni olib, ISR’ga qaytdi. Yetakchilik o‘zi qaytmadi.',
+      },
+      {
+        cmd: ['kafka-leader-election.sh --election-type preferred --all-topic-partitions'],
+        chiqish: 'Successfully completed leader election (PREFERRED) for partitions buyurtmalar-2\nPartition: 2\tLeader: 2\tReplicas: 2,3,1\tIsr: 1,2,3',
+        holat: [{ k: 'p2', yol: 'partition 2', qiymat: 'yetakchi 2 — afzal replika', belgi: 'yangi' }],
+        izoh: 'Afzal (preferred) yetakchi — Replicas ro‘yxatidagi birinchisi. Saylov yuklamani yana teng taqsimladi.',
+      },
+    ],
+  },
 }
