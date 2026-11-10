@@ -36,7 +36,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - MQTT, STOMP, Federation va Shovel plaginlari, Kubernetes, OAuth 2 va LDAP — maxsus holatlar, hujjatda: [RQ Plugins](https://www.rabbitmq.com/docs/plugins).
 - Symfony Messenger va Laravel navbatlari bilan ulash — shu framework'lar kitoblarida.
 
-> **Holat.** Qo'llanma yozilmoqda: 9/34 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 10/34 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -69,7 +69,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 | 07 | [Hammaga tarqatish](07-hammaga-tarqatish.md) | Publish/Subscribe: `fanout` exchange. Vaqtinchalik (exclusive) navbatlar | V+N | [RT 3. Publish/Subscribe](https://www.rabbitmq.com/tutorials/tutorial-three-javascript) · [RT (PHP)](https://www.rabbitmq.com/tutorials/tutorial-three-php) |
 | 08 | [Tanlab yuborish](08-tanlab-yuborish.md) | `direct` exchange bilan routing. `topic` exchange va shablonlar (`*`, `#`) | V+N | [RT 4. Routing](https://www.rabbitmq.com/tutorials/tutorial-four-javascript) · [RT 5. Topics](https://www.rabbitmq.com/tutorials/tutorial-five-javascript) · [RT 4 (PHP)](https://www.rabbitmq.com/tutorials/tutorial-four-php) · [RT 5 (PHP)](https://www.rabbitmq.com/tutorials/tutorial-five-php) |
 | 09 | [So'rov va javob (RPC)](09-rpc.md) | `reply_to` va `correlation_id`. Direct Reply-To | V+N | [RT 6. RPC](https://www.rabbitmq.com/tutorials/tutorial-six-javascript) · [RQ Direct Reply-To](https://www.rabbitmq.com/docs/direct-reply-to) · [RT 6 (PHP)](https://www.rabbitmq.com/tutorials/tutorial-six-php) |
-| 10 | Qo'shimcha marshrutlash | Alternate exchange — yo'nalish topilmagan xabarlar uchun. Exchange'ni exchange'ga bog'lash | V | [RQ Alternate Exchanges](https://www.rabbitmq.com/docs/ae) · [RQ Exchange to Exchange Bindings](https://www.rabbitmq.com/docs/e2e) |
+| 10 | [Qo'shimcha marshrutlash](10-qoshimcha-marshrut.md) | Alternate exchange — yo'nalish topilmagan xabarlar uchun. Exchange'ni exchange'ga bog'lash | V | [RQ Alternate Exchanges](https://www.rabbitmq.com/docs/ae) · [RQ Exchange to Exchange Bindings](https://www.rabbitmq.com/docs/e2e) |
 
 ## III qism — Navbatlar (11–17)
 
