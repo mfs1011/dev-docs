@@ -17,21 +17,5 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # VAQTINCHA: runner'da i386 konteyner DNS muammosini aniqlash
-      - name: Tashxis
-        continue-on-error: true
-        run: |
-          set -x
-          uname -a
-          docker version --format '{{.Server.Version}}'
-          cat /etc/resolv.conf
-          t() { echo "=== $*"; timeout 30 docker run --rm "$@" debian:bookworm getent hosts deb.debian.org && echo OK || echo XATO; }
-          t
-          t --platform linux/386
-          t --platform linux/386 --network host
-          t --platform linux/386 --security-opt seccomp=unconfined
-          t --platform linux/386 --network host --security-opt seccomp=unconfined
-          docker run --rm --platform linux/386 debian:bookworm sh -c 'cat /etc/resolv.conf; uname -m; dpkg --print-architecture'
-
       - name: nginx'ni yig'ish (i386)
         run: sh nginx-trenajor/scripts/nginx-yigish.sh
