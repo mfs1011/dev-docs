@@ -35,7 +35,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 
 - Ma'lumotlar bazasiga yozish va xabar yuborishni bitta atomik amalga birlashtirish (transactional outbox) va bazadagi o'zgarishlarni oqimga uzatish (CDC). Bular uch asbobning birortasining rasmiy hujjatida yoritilmagan, shuning uchun kiritilmadi.
 
-> **Holat.** Qo'llanma yozilmoqda: 2/15 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 3/15 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -55,7 +55,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 | --- | --- | --- | --- | --- |
 | 01 | [Nega navbat](01-nega-navbat.md) | Og'ir ishni so'rov ichida bajarib, foydalanuvchini kuttirmaslik: ishni xabar qilib navbatga qo'yish va keyin bajarish. Yuboruvchini qabul qiluvchidan ajratish, ishlanmagan xabarlarni yig'ib turish (bufer) | — | [RT 2. Work Queues](https://www.rabbitmq.com/tutorials/tutorial-two-javascript) · [KD Use Cases → Messaging](https://kafka.apache.org/44/getting-started/uses/) · [RD Job queue](https://redis.io/docs/latest/develop/use-cases/job-queue/) |
 | 02 | [Uch model](02-uch-model.md) | Ish navbati: har ishni bitta ishchi oladi. Pub/sub: har obunachiga nusxa. Hodisalar jurnali (log, stream): yozuvlar saqlanadi va qayta o'qiladi | V | [RT 3. Publish/Subscribe](https://www.rabbitmq.com/tutorials/tutorial-three-javascript) · [RQ Streams](https://www.rabbitmq.com/docs/streams) · [KD Introduction](https://kafka.apache.org/44/getting-started/introduction/) · [RD Pub/sub](https://redis.io/docs/latest/develop/pubsub/) |
-| 03 | Uch asbob bir qarashda | Redis: list, stream, pub/sub. RabbitMQ: exchange va navbat, quorum navbat, stream. Kafka: partition'larga bo'lingan jurnal, consumer group, share group | — | [RD Streams](https://redis.io/docs/latest/develop/data-types/streams/) · [RT AMQP 0-9-1 Model Explained](https://www.rabbitmq.com/tutorials/amqp-concepts) · [KD Introduction](https://kafka.apache.org/44/getting-started/introduction/) |
+| 03 | [Uch asbob bir qarashda](03-uch-asbob.md) | Redis: list, stream, pub/sub. RabbitMQ: exchange va navbat, quorum navbat, stream. Kafka: partition'larga bo'lingan jurnal, consumer group, share group | — | [RD Streams](https://redis.io/docs/latest/develop/data-types/streams/) · [RT AMQP 0-9-1 Model Explained](https://www.rabbitmq.com/tutorials/amqp-concepts) · [KD Introduction](https://kafka.apache.org/44/getting-started/introduction/) |
 
 ## II qism — Kafolatlar (4–9)
 
