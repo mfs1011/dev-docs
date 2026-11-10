@@ -15,7 +15,7 @@ import hashlib, json, os, subprocess, sys, tarfile
 from concurrent.futures import ThreadPoolExecutor
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-TAR = os.path.join(ROOT, sys.argv[1])
+TAR = os.path.join(ROOT, sys.argv[1])  # nisbiy yo'l linux-trenajor/ ga nisbatan; mutlaq yo'l ham bo'ladi
 OUT = os.path.join(ROOT, sys.argv[2])
 S_IFREG, S_IFDIR, S_IFLNK = 0x8000, 0x4000, 0xA000
 HASH_LENGTH = 10

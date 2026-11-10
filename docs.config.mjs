@@ -493,6 +493,7 @@ export const books = [
     accentTextDark: '#5ee38f',
     versionLabel: 'nginx',
     versionRow: /^\|\s*nginx\s*\|\s*Mainline\s*([^|(]+)/m,
+    tools: [{ label: 'Nginx trenajori', route: '/nginx/trenajor', note: 'Haqiqiy nginx: so‘rov yo‘li jonli' }],
     groups: [
       { title: 'I — Kirish', from: 1, to: 4 },
       { title: 'II — Veb-server', from: 5, to: 10 },

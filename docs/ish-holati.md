@@ -220,6 +220,12 @@ Ikkinchi noutbukda boshlashdan oldin shu faylni, `CLAUDE.md` ni va kitobning `RE
 - Manba: nginx.org HTML sahifalari (`h2t.py` bilan matnga) va docs.nginx.com (markdown manbasi: `raw.githubusercontent.com/nginx/documentation/main/content/nginx/...`).
 - Proksi boblarida backend — Python standart kutubxonasidagi kichik server (Node.js VPS'da yo'q; misollar tili qarori Redis/RabbitMQ bilan birga kutilmoqda). README 11-bob qatoridagi "Node.js" so'zi "orqadagi ilova"ga o'zgartirildi.
 
+## Yangi trenajorlar (2026-11-10)
+
+- Egasi kitoblarga o'ziga xos trenajor so'radi: ham haqiqiy sinab ko'rish, ham vizual. Tartib: **Nginx → Web asoslari → Redis**, keyin Server xavfsizligi. Docker keyinga qoldirildi: simulyator kerak emas, real sinab ko'rish yo'li izlanadi.
+- **Nginx trenajori** (`/nginx/trenajor`, branch `feat/nginx-trenajor`): haqiqiy nginx 1.31.8 va "So'rov yo'li" sxemasi, 7 ta mashq. Tafsilot — `nginx-trenajor/README.md`. Linux trenajori yig'ish skriptlariga profil qo'shildi (`TRENAJOR_PROFIL`), Linux tasviri o'zgarmagan (160 paket, mashqlar o'tadi).
+- O'rganilgan: v86 da ikkinchi serial port (`uart1`) ishlaydi. Kanal "to'xtab qolgani" UART emas, `grep` binary rejimi ekan (`grep -a`).
+
 ## Redis kitobi (`content/redis/`)
 
 - Branch `docs/redis-2` (1-qism — `docs/redis-1`, merge qilingan). **Redis kitobi tayyor: 34/34** (2026-11-10). Ilova misollari Node.js va PHP'da: VPS'da Node.js 26.13.0 (`/opt/node`, rasmiy binar), Composer 2.11.1 (`/usr/local/bin/composer`), loyiha `/root/redis-ilova` (`redis@6.3.1`, `predis/predis` 3.7.1). (1-qism) VPS'ga Redis 8.10.3 rasmiy APT omboridan (`packages.redis.io`, `resolute`) o'rnatildi, servis `redis-server`, faqat `127.0.0.1`/`::1:6379`.

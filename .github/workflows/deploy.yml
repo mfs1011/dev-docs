@@ -47,6 +47,24 @@ jobs:
       - name: Linux trenajorini saytga qo'shish
         run: rm -rf public/linux-trenajor && cp -r linux-trenajor/build/web public/linux-trenajor
 
+      # Nginx trenajori: Linux trenajori quvurining "nginx" profili (linux-trenajor/scripts, TRENAJOR_PROFIL=nginx).
+      # nginx 1.31.8 i386 uchun Docker'da (debian:bookworm, linux/386) nginx.org manba arxividan yig'iladi.
+      - name: Nginx trenajori keshi
+        id: nginx-trenajor
+        uses: actions/cache@v4
+        with:
+          path: nginx-trenajor/build/web
+          key: nginx-trenajor-${{ hashFiles('nginx-trenajor/**', 'linux-trenajor/scripts/**', 'public/trenajor/v86.wasm', 'package-lock.json') }}
+
+      - name: Nginx trenajorini yig'ish
+        if: steps.nginx-trenajor.outputs.cache-hit != 'true'
+        run: |
+          sh nginx-trenajor/scripts/nginx-yigish.sh
+          TRENAJOR_PROFIL=nginx sh linux-trenajor/scripts/yigish.sh
+
+      - name: Nginx trenajorini saytga qo'shish
+        run: rm -rf public/nginx-trenajor && cp -r nginx-trenajor/build/web public/nginx-trenajor
+
       - name: Build
         env:
           BASE_PATH: /${{ github.event.repository.name }}/

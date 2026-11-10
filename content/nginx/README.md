@@ -15,6 +15,9 @@ Manbalar va versiyalar (2026-11-07 da tekshirilgan):
 | Certbot | 5.9.0 (2026-10-29). O'rnatishning tavsiya etilgan yo'li — snap. Ubuntu 26.04 omboridagi paket — 4.0.0 (universe) | <https://github.com/certbot/certbot/releases> · <https://eff-certbot.readthedocs.io/en/stable/install.html> |
 | Let's Encrypt | Standart (`classic`) profil — 90 kunlik sertifikat. 2028-yil fevralgacha maksimal muddat 45 kunga tushiriladi. `shortlived` profili — 160 soatlik sertifikat, domen nomidan tashqari IP manzil uchun ham | <https://letsencrypt.org/docs/profiles/> · <https://letsencrypt.org/docs/cert-lifetimes/> |
 | Sinov VPS | Ubuntu 26.04 LTS | — |
+| Trenajor | nginx 1.31.8 (nginx.org manba arxividan i386 uchun yig'ilgan, paketdagi parametrlar, `--with-control-api` siz, `--with-debug` bilan), Debian 12 | `nginx-trenajor/` |
+
+Buyruqlarni o'qish bilan birga qo'lda sinab ko'rish uchun — **[Nginx trenajori](/nginx/trenajor)**. Brauzer ichida haqiqiy Debian va nginx 1.31.8 ishga tushadi, hech narsa o'rnatish shart emas. Konfiguratsiyani yozasiz, `nginx -t` va `reload` qilasiz, `curl` bilan so'raysiz. Yonidagi "So'rov yo'li" sxemasida har so'rov chiziladi: qaysi `server` qabul qildi, nginx qaysi `location`'larni qaysi tartibda sinadi va nega aynan shunisini tanladi, so'rov qaysi backend'ga ketdi, keshdan berildimi yoki `limit_req` uni to'xtatdimi. Bu ma'lumot nginx'ning o'z debug log'idan olinadi, taxmin qilinmaydi. Trenajorda internet yo'q, shuning uchun HTTPS boblari (18–25) VPS'dagi chiqishlar bilan. Mavzular bo'yicha mashqlar tegishli boblarning "Amaliyot" bo'limida.
 
 Muhit tanlovi haqida:
 
