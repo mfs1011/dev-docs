@@ -229,7 +229,22 @@ md.renderer.rules.fence = (tokens, idx, options) => {
  * yoziladi; GitHub Pages'da sayt `/dev-docs/` ostida turadi — yo'lga BASE_URL qo'shiladi.
  */
 const BASE = (import.meta.env?.BASE_URL ?? '/').replace(/\/?$/, '/')
-const withBase = (html) => html.replace(/\b(src|poster)="\/(?!\/)/g, `$1="${BASE}`)
+
+/**
+ * Video darslar GitHub Pages'da emas (sayt 1 GB chegarasidan oshib ketdi): production'da ular
+ * `VITE_VIDEO_BASE_URL` dan (VPS: https://kamgapir.uz/video/) beriladi. Boshqa domendagi
+ * `<track>` subtitrlari ishlashi uchun `<video>` ga `crossorigin="anonymous"` qo'shiladi
+ * (server CORS sarlavhasini beradi). O'zgaruvchi bo'lmasa (dev) — avvalgidek `public/video/`.
+ */
+const VIDEO = (import.meta.env?.VITE_VIDEO_BASE_URL ?? '').replace(/\/?$/, '/')
+const withVideo = (html) =>
+  VIDEO === '/'
+    ? html
+    : html
+        .replace(/\b(src|poster)="\/video\//g, `$1="${VIDEO}`)
+        .replace(/<video\b(?![^>]*\bcrossorigin\b)/g, '<video crossorigin="anonymous"')
+
+const withBase = (html) => withVideo(html).replace(/\b(src|poster)="\/(?!\/)/g, `$1="${BASE}`)
 
 for (const rule of ['html_block', 'html_inline']) {
   const original = md.renderer.rules[rule]

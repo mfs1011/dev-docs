@@ -260,3 +260,11 @@ Ikkinchi noutbukda boshlashdan oldin shu faylni, `CLAUDE.md` ni va kitobning `RE
 - **Domen: `kamgapir.uz`** — `kamgapir.uz` va `www.kamgapir.uz` A yozuvlari VPS'ga yo'naltirilgan (tekshirildi; NS — ahost.uz; AAAA yo'q). Nginx 19–25, Deploy 02, 04 shu domen bilan.
 - **Misollar tili: Node.js va PHP — ikkalasi.** Redis va RabbitMQ'ning kod yoziladigan boblarida har misol ikki tilda (RabbitMQ: `amqplib` va `php-amqplib`, rasmiy qo'llanmalardagi kabi). Deploy 06 — `npm ci` va `composer install` ikkalasi.
 - Kutilmoqda: Deploy 03 va Server xavfsizligi 9–18 uchun provayder konsoli tayyorligi; GitHub Actions boblari uchun sinov repozitoriysi (egasi ochadi).
+
+## Video darslar — VPS'dan (2026-11-10)
+
+- GitHub Pages sayti 1 GB chegarasidan oshdi (artifact ~1.8 GB, `public/video` ~1.4 GB) — deploy `syncing_files` da vaqt tugab yiqildi. Egasining qarori: videolar **VPS'dan** beriladi (bepul, qo'shimcha to'lovsiz).
+- VPS: `/srv/dev-docs-video` — repodan faqat `public/video` (sparse, `--depth 1`). `dev-docs-video.timer` har 15 daqiqada `git fetch`+`reset` qiladi — yangi video main'ga merge qilingach o'zi chiqadi.
+- nginx: `/etc/nginx/conf.d/sayt.conf` da `location /video/` (`alias`, mp4/vtt/jpg turlari, `Access-Control-Allow-Origin: *`, `Cache-Control: public, max-age=3600`). Zaxira — `/root/sayt.conf.zaxira`.
+- Sayt: `src/markdown.js` — `VITE_VIDEO_BASE_URL` bo'lsa `/video/…` shu manzilga, `<video>` ga `crossorigin="anonymous"`. `deploy.yml` — `rm -rf public/video`, `VITE_VIDEO_BASE_URL: https://kamgapir.uz/video/`. Dev'da (o'zgaruvchisiz) — avvalgidek `public/video/`.
+- Videolar git'da qoladi (manba). VPS trafik limiti — provayder tarifida tekshirilsin.
