@@ -251,6 +251,12 @@ Ikkinchi noutbukda boshlashdan oldin shu faylni, `CLAUDE.md` ni va kitobning `RE
 - 30–31-boblar: alohida TLS/SASL/ACL broker `/root/kafka-xavfsiz/` (sinov CA, keystore, SCRAM; to'xtatilgan). 33-bob JMX va 35-bob yangilash sinovlari vaqtinchalik broker'larda qilinib, o'chirildi (4.3.2 arxivi ham o'chirildi).
 - 20–24-boblar uchun 3 tugunli klaster: `/root/kafka-klaster/compose.yaml` (KR combined/plaintext asosida, heap 256 MB, 127.0.0.1:29092/39092/49092). Bu vaqtda yakka `kafka` konteyneri to'xtatilgan va **RabbitMQ (`rabbitmq-server`) vaqtincha to'xtatilgan** (xotira). 2026-11-10: klaster boblari (20–24) tugadi — klaster o'chirildi (`compose.yaml` qoldi), yakka `kafka` va RabbitMQ qayta ishga tushirildi.
 
+## JavaScript kitobi (`content/javascript/`)
+
+- 1–39-boblar 2026-10-15 da yozilgan (merge qilingan). Davomi — branch `docs/javascript-40` (2026-11-11): 40-bobdan.
+- Misollar VPS'da (`/root/js`, Node 26.13.0) ishga tushiriladi — stack trace'dagi yo'llarda mahalliy foydalanuvchi nomi chiqmasligi uchun.
+- Tayyor: 1–40-boblar.
+
 ## Xabar tizimlari kitobi (`content/xabar-tizimlari/`)
 
 - Branch `docs/xabar-tizimlari-1`. Tayyor: 1–3, 14-boblar (2026-11-10). Qolgan 4–13, 15 — V+D (Kafka endi VPS'da, Kafka kitobi bo'limiga qarang). 2-bobda uch model RabbitMQ'da VPS'da ko'rsatildi (README'da "Muhit" — V) va `uch-model` qadamli animatsiyasi (`src/animatsiya/qadamlar.js`) qo'shildi.
