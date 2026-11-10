@@ -1398,4 +1398,40 @@ export const QADAMLI = {
       },
     ],
   },
+  // Kafka 15-bob: consumer group'ga a'zo qo'shilganda va chiqqanda partition'lar qayta taqsimlanadi (consumer protokoli, VPS)
+  'consumer-group': {
+    panel: 'hisobot guruhi (3 partition)',
+    qadamlar: [
+      {
+        cmd: ['java … Azo.java A consumer 75'],
+        chiqish: '20:54:55 A: berildi [0, 1, 2]',
+        holat: [{ k: 'a', yol: 'A', qiymat: 'partition 0, 1, 2', belgi: 'yangi' }],
+        izoh: 'Guruhda yagona a’zo — hamma partition unga.',
+      },
+      {
+        cmd: ['java … Azo.java B consumer 30'],
+        chiqish: '20:55:15 A: olindi [2]\n20:55:15 B: berildi [2]',
+        holat: [{ k: 'a', yol: 'A', qiymat: 'partition 0, 1' }, { k: 'b', yol: 'B', qiymat: 'partition 2', belgi: 'yangi' }],
+        izoh: 'B qo‘shildi: A dan faqat bitta partition olindi. A ning qolganlari to‘xtamadi — inkremental rebalance.',
+      },
+      {
+        cmd: ['java … Azo.java C consumer 45'],
+        chiqish: '20:55:30 A: olindi [1]\n20:55:32 C: berildi [1]',
+        holat: [{ k: 'a', yol: 'A', qiymat: 'partition 0' }, { k: 'b', yol: 'B', qiymat: 'partition 2' }, { k: 'c', yol: 'C', qiymat: 'partition 1', belgi: 'yangi' }],
+        izoh: '3 a’zo, 3 partition — har biriga bittadan.',
+      },
+      {
+        cmd: ['# B ishini tugatdi'],
+        chiqish: '20:55:36 B: chiqdi, oxirida [2]\n20:55:37 C: berildi [2]',
+        holat: [{ k: 'a', yol: 'A', qiymat: 'partition 0' }, { k: 'b', yol: 'B', qiymat: 'chiqdi', belgi: 'yoq' }, { k: 'c', yol: 'C', qiymat: 'partition 1, 2', belgi: 'yangi' }],
+        izoh: 'B ning partition’i qolgan a’zoga o‘tdi — hodisalar o‘qilmay qolmaydi.',
+      },
+      {
+        cmd: ['java … Azo.java D consumer 30'],
+        chiqish: '20:55:48 C: olindi [2]\n20:55:51 D: berildi [2]',
+        holat: [{ k: 'a', yol: 'A', qiymat: 'partition 0' }, { k: 'c', yol: 'C', qiymat: 'partition 1' }, { k: 'd', yol: 'D', qiymat: 'partition 2', belgi: 'yangi' }],
+        izoh: 'Yangi a’zo D — yana teng taqsimot.',
+      },
+    ],
+  },
 }
