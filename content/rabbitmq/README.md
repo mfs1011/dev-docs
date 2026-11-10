@@ -10,13 +10,14 @@ Manbalar va versiyalar (2026-11-07 da tekshirilgan):
 | --- | --- | --- |
 | RabbitMQ | 4.4.0 (2026-10-20), hamjamiyat qo'llab-quvvatlashi 2027-07-31 gacha. 4.3.x — 2027-01-31 gacha. Bu sanada hamjamiyat qo'llab-quvvatlashi faqat shu ikki seriyada davom etmoqda | <https://www.rabbitmq.com/release-information> (sana va muddatlar sayt manbasidagi `docusaurus.config.js` dan) |
 | Erlang | RabbitMQ Erlang'da yozilgan. 4.4.0 uchun Erlang 27, 28 va 29 qo'llab-quvvatlanadi | <https://www.rabbitmq.com/docs/which-erlang> |
+| Klient kutubxonalari | `amqplib` 2.3.1 (npm, 2026-11-08), `php-amqplib` 3.7.5 (Packagist, 2026-09-28), `rabbitmq-stream-js-client` 1.1.0 (npm). Node.js 26.13.0 LTS, PHP 8.5.4 (2026-11-10 da tekshirilgan) | <https://www.npmjs.com/package/amqplib> · <https://packagist.org/packages/php-amqplib/php-amqplib> · <https://www.npmjs.com/package/rabbitmq-stream-js-client> |
 | O'rnatish | Team RabbitMQ'ning apt omborlari. Ubuntu 26.04 uchun Ubuntu 24.04 (Noble) ombori ishlatiladi. Ubuntu'ning o'z paketi — 4.0.5, u eskirgan | <https://www.rabbitmq.com/docs/install-debian> · VPS: `apt-cache policy rabbitmq-server` |
 | Sinov VPS | Ubuntu 26.04 LTS | — |
 
 Muhit tanlovi haqida:
 
 - **Nega Ubuntu'ning paketi emas.** Hujjatga ko'ra standart Debian va Ubuntu omborlaridagi Erlang/OTP odatda eski bo'ladi. Ubuntu 26.04 dagi `rabbitmq-server` 4.0.5, 4.0 seriyasi esa hamjamiyat tomonidan qo'llab-quvvatlanmaydi. Shuning uchun RabbitMQ va Erlang hujjatda tavsiya etilgan Team RabbitMQ omborlaridan o'rnatiladi.
-- **Nega Node.js.** Rasmiy qo'llanmalar ko'p tilda yozilgan. Saytda JavaScript kitobi bor, shuning uchun ilova kodi Node.js'da: navbat misollari — qo'llanmalardagi `amqplib` kutubxonasi bilan, stream misollari — qo'llanmalardagi `rabbitmq-stream-js-client` bilan. PHP'da ham rasmiy qo'llanmalar bor (1–7, `php-amqplib`).
+- **Nega Node.js va PHP.** Rasmiy qo'llanmalar ko'p tilda yozilgan, ular orasida JavaScript (`amqplib`) va PHP (`php-amqplib`) ham bor. Saytda JavaScript va Laravel/Symfony kitoblari bor, shuning uchun navbat misollari ikki tilda beriladi. Stream misollari — faqat Node.js (`rabbitmq-stream-js-client`): stream qo'llanmalari PHP uchun yozilmagan. Publisher confirms qo'llanmasi (7) aksincha faqat PHP uchun bor; Node.js tomoni hujjatdagi API bo'yicha.
 
 Qisqartmalar:
 
@@ -26,7 +27,7 @@ Qisqartmalar:
 "Muhit" ustunida:
 
 - **V** — VPS'da: `rabbitmqctl`, `rabbitmq-diagnostics`, `rabbitmqadmin` va boshqaruv paneli bilan.
-- **V+N** — VPS'dagi RabbitMQ va Node.js'dagi ilova kodi.
+- **V+N** — VPS'dagi RabbitMQ va ilova kodi: Node.js va PHP.
 - **—** — tushuncha bobi, buyruqsiz.
 
 Bu qo'llanmaga kirmaydigan mavzular:
@@ -35,7 +36,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - MQTT, STOMP, Federation va Shovel plaginlari, Kubernetes, OAuth 2 va LDAP — maxsus holatlar, hujjatda: [RQ Plugins](https://www.rabbitmq.com/docs/plugins).
 - Symfony Messenger va Laravel navbatlari bilan ulash — shu framework'lar kitoblarida.
 
-> **Holat.** Qo'llanma tayyorlanmoqda — quyida rejalashtirilgan mundarija.
+> **Holat.** Qo'llanma yozilmoqda: 1/34 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -54,7 +55,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
-| 01 | Xabar brokeri nima | Broker — xabarlarni qabul qilib, kerakli joyga yetkazuvchi server. Yuboruvchi (publisher), qabul qiluvchi (consumer), navbat (queue), exchange va binding. AMQP 0-9-1 modeli; RabbitMQ qo'llaydigan boshqa protokollar (AMQP 1.0, Stream) | — | [RT AMQP 0-9-1 Model Explained](https://www.rabbitmq.com/tutorials/amqp-concepts) · [RQ Protocols](https://www.rabbitmq.com/docs/protocols) |
+| 01 | [Xabar brokeri nima](01-broker-nima.md) | Broker — xabarlarni qabul qilib, kerakli joyga yetkazuvchi server. Yuboruvchi (publisher), qabul qiluvchi (consumer), navbat (queue), exchange va binding. AMQP 0-9-1 modeli; RabbitMQ qo'llaydigan boshqa protokollar (AMQP 1.0, Stream) | — | [RT AMQP 0-9-1 Model Explained](https://www.rabbitmq.com/tutorials/amqp-concepts) · [RQ Protocols](https://www.rabbitmq.com/docs/protocols) |
 | 02 | O'rnatish | Team RabbitMQ apt omborlari va Erlang. Servis, portlar (5672, 15672 va boshqalar), log fayllari. Ubuntu paketi nega mos emas | V | [RQ Debian and Ubuntu](https://www.rabbitmq.com/docs/install-debian) · [RQ Erlang Version Requirements](https://www.rabbitmq.com/docs/which-erlang) · [RQ Networking](https://www.rabbitmq.com/docs/networking) |
 | 03 | Birinchi xabar | "Hello World": navbatni e'lon qilish, xabar yuborish va olish | V+N | [RT 1. "Hello World!"](https://www.rabbitmq.com/tutorials/tutorial-one-javascript) |
 | 04 | Boshqaruv vositalari | `rabbitmqctl`, `rabbitmq-diagnostics`, `rabbitmq-plugins`. Boshqaruv paneli (management plugin). `rabbitmqadmin` v2 | V | [RQ CLI](https://www.rabbitmq.com/docs/cli) · [RQ Management Plugin](https://www.rabbitmq.com/docs/management) · [RQ rabbitmqadmin v2](https://www.rabbitmq.com/docs/management-cli) |
