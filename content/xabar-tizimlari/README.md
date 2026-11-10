@@ -11,7 +11,7 @@ Manbalar va versiyalar (2026-11-07 da tekshirilgan):
 | Redis | 8.10 | `content/redis/README.md` |
 | RabbitMQ | 4.4 | `content/rabbitmq/README.md` |
 | Kafka | 4.4 | `content/kafka/README.md` |
-| Sinov muhiti | VPS (Ubuntu 26.04): Redis va RabbitMQ. Ikkinchi noutbuk (Docker): Kafka | `docs/ish-holati.md` |
+| Sinov muhiti | VPS (Ubuntu 26.04): Redis, RabbitMQ va Kafka (Docker, `apache/kafka:4.4.0`) | `docs/ish-holati.md` |
 
 Muhit tanlovi haqida:
 
@@ -26,7 +26,7 @@ Qisqartmalar:
 "Muhit" ustunida:
 
 - **V** — VPS'da: Redis va RabbitMQ.
-- **V+D** — VPS va ikkinchi noutbukdagi Kafka (Docker).
+- **V+D** — VPS: Redis, RabbitMQ va Docker'dagi Kafka (2026-11-10 dan Kafka ham VPS'da).
 - **—** — tushuncha bobi, buyruqsiz.
 
 ⚑ belgisi: bobdagi har bir fakt rasmiy manbadan olingan, lekin taqqoslash jadvali yoki ketma-ketlik bizniki — rasmiy hujjatda bitta joyda yozilmagan.
@@ -35,7 +35,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 
 - Ma'lumotlar bazasiga yozish va xabar yuborishni bitta atomik amalga birlashtirish (transactional outbox) va bazadagi o'zgarishlarni oqimga uzatish (CDC). Bular uch asbobning birortasining rasmiy hujjatida yoritilmagan, shuning uchun kiritilmadi.
 
-> **Holat.** Qo'llanma yozilmoqda: 4/15 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 5/15 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -61,7 +61,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
-| 04 | Yetkazish kafolatlari | "Ko'pi bilan bir marta" (at-most-once), "kamida bir marta" (at-least-once), "aynan bir marta" (exactly-once) ta'riflari. Redis pub/sub — ko'pi bilan bir marta, Redis stream — ikkalasi ham. RabbitMQ va Kafka'da qaysi sozlama qaysi kafolatni beradi | V+D | [KD Design → Message Delivery Semantics](https://kafka.apache.org/44/design/design/) · [RQ Reliability Guide](https://www.rabbitmq.com/docs/reliability) · [RD Pub/sub](https://redis.io/docs/latest/develop/pubsub/) |
+| 04 | [Yetkazish kafolatlari](04-kafolatlar.md) | "Ko'pi bilan bir marta" (at-most-once), "kamida bir marta" (at-least-once), "aynan bir marta" (exactly-once) ta'riflari. Redis pub/sub — ko'pi bilan bir marta, Redis stream — ikkalasi ham. RabbitMQ va Kafka'da qaysi sozlama qaysi kafolatni beradi | V+D | [KD Design → Message Delivery Semantics](https://kafka.apache.org/44/design/design/) · [RQ Reliability Guide](https://www.rabbitmq.com/docs/reliability) · [RD Pub/sub](https://redis.io/docs/latest/develop/pubsub/) |
 | 05 | Qabul qiluvchining tasdig'i | Xabar qachon "ishlangan" hisoblanadi. Tasdiqlamay o'chgan consumer'ning xabari qayta beriladi. RabbitMQ'da ack, Kafka'da offset commit, Redis stream'da `XACK` | V+D | [RQ Consumer Acknowledgements and Publisher Confirms](https://www.rabbitmq.com/docs/confirms) · [KD Design → The Consumer](https://kafka.apache.org/44/design/design/) · [RD Streams](https://redis.io/docs/latest/develop/data-types/streams/) |
 | 06 | Yuboruvchining kafolati | Broker xabarni haqiqatan saqladimi: RabbitMQ'da publisher confirms, Kafka'da `acks=all` va `min.insync.replicas`. Redis replikatsiyasi standartda asinxron | V+D | [RQ Consumer Acknowledgements and Publisher Confirms](https://www.rabbitmq.com/docs/confirms) · [KD Design → Replication](https://kafka.apache.org/44/design/design/) · [RD Replication](https://redis.io/docs/latest/operate/oss_and_stack/management/replication/) |
 | 07 | Takror xabar va idempotentlik | "Kamida bir marta" takror xabarni ham anglatadi. RabbitMQ hujjati consumer'ni idempotent (takror ishlov natijani o'zgartirmaydigan) qilib yozishni tavsiya qiladi; `redelivered` belgisi. Kafka'da idempotent producer | V+D | [RQ Reliability Guide](https://www.rabbitmq.com/docs/reliability) · [KD Design → Message Delivery Semantics](https://kafka.apache.org/44/design/design/) |
