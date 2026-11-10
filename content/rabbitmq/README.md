@@ -36,7 +36,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - MQTT, STOMP, Federation va Shovel plaginlari, Kubernetes, OAuth 2 va LDAP — maxsus holatlar, hujjatda: [RQ Plugins](https://www.rabbitmq.com/docs/plugins).
 - Symfony Messenger va Laravel navbatlari bilan ulash — shu framework'lar kitoblarida.
 
-> **Holat.** Qo'llanma yozilmoqda: 1/34 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 2/34 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -56,7 +56,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
 | 01 | [Xabar brokeri nima](01-broker-nima.md) | Broker — xabarlarni qabul qilib, kerakli joyga yetkazuvchi server. Yuboruvchi (publisher), qabul qiluvchi (consumer), navbat (queue), exchange va binding. AMQP 0-9-1 modeli; RabbitMQ qo'llaydigan boshqa protokollar (AMQP 1.0, Stream) | — | [RT AMQP 0-9-1 Model Explained](https://www.rabbitmq.com/tutorials/amqp-concepts) · [RQ Protocols](https://www.rabbitmq.com/docs/protocols) |
-| 02 | O'rnatish | Team RabbitMQ apt omborlari va Erlang. Servis, portlar (5672, 15672 va boshqalar), log fayllari. Ubuntu paketi nega mos emas | V | [RQ Debian and Ubuntu](https://www.rabbitmq.com/docs/install-debian) · [RQ Erlang Version Requirements](https://www.rabbitmq.com/docs/which-erlang) · [RQ Networking](https://www.rabbitmq.com/docs/networking) |
+| 02 | [O'rnatish](02-ornatish.md) | Team RabbitMQ apt omborlari va Erlang. Servis, portlar (5672, 15672 va boshqalar), log fayllari. Ubuntu paketi nega mos emas | V | [RQ Debian and Ubuntu](https://www.rabbitmq.com/docs/install-debian) · [RQ Erlang Version Requirements](https://www.rabbitmq.com/docs/which-erlang) · [RQ Networking](https://www.rabbitmq.com/docs/networking) |
 | 03 | Birinchi xabar | "Hello World": navbatni e'lon qilish, xabar yuborish va olish | V+N | [RT 1. "Hello World!"](https://www.rabbitmq.com/tutorials/tutorial-one-javascript) |
 | 04 | Boshqaruv vositalari | `rabbitmqctl`, `rabbitmq-diagnostics`, `rabbitmq-plugins`. Boshqaruv paneli (management plugin). `rabbitmqadmin` v2 | V | [RQ CLI](https://www.rabbitmq.com/docs/cli) · [RQ Management Plugin](https://www.rabbitmq.com/docs/management) · [RQ rabbitmqadmin v2](https://www.rabbitmq.com/docs/management-cli) |
 
