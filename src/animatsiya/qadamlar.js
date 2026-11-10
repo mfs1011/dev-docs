@@ -1464,4 +1464,33 @@ export const QADAMLI = {
       },
     ],
   },
+  // Kafka 19-bob: share group — bitta partition'ni bir nechta a'zo birga o'qiydi, har yozuv alohida tasdiqlanadi (VPS)
+  'share-group': {
+    panel: 'vazifalar: 1 partition, 3 a’zo (A, B, C)',
+    qadamlar: [
+      {
+        cmd: ['java … Ulush.java A|B|C 60   # uchala a’zo bitta partition’ga'],
+        holat: [{ k: 'a', yol: 'A', qiymat: 'kutmoqda' }, { k: 'b', yol: 'B', qiymat: 'kutmoqda' }, { k: 'c', yol: 'C', qiymat: 'kutmoqda' }],
+        izoh: 'Consumer group’da bitta partition faqat bitta a’zoga berilardi. Share group’da hammasi bitta partition’dan o‘qiy oladi.',
+      },
+      {
+        cmd: ['# 18 ta vazifa yozildi'],
+        chiqish: '21:19:48 C: p0@0 v1, urinish 1 -> ACCEPT\n…\n21:19:50 C: p0@5 xato-6, urinish 1 -> release',
+        holat: [{ k: 'c', yol: 'C', qiymat: 'yozuvlarni qulf bilan oldi, har birini alohida tasdiqlaydi', belgi: 'yangi' }, { k: 'x', yol: 'xato-6', qiymat: 'RELEASE — qayta urinishga qaytdi', belgi: 'ochiq' }],
+        izoh: 'C bir yo‘la ko‘p yozuvni oldi (qulf bilan). xato-6 ishlanmadi — RELEASE: u boshqa yetkazish uchun bo‘shatildi.',
+      },
+      {
+        cmd: ['# xato-6 yana yetkazildi'],
+        chiqish: '21:19:54 B: p0@5 xato-6, urinish 2 -> release\n21:19:54 B: p0@5 xato-6, urinish 3 -> reject',
+        holat: [{ k: 'b', yol: 'B', qiymat: 'xato-6 ni oldi — urinish 2, 3', belgi: 'yangi' }, { k: 'x', yol: 'xato-6', qiymat: 'REJECT — boshqa yetkazilmaydi', belgi: 'xato' }],
+        izoh: 'Qaytarilgan yozuv boshqa a’zoga (B) berildi: urinishlar sanaldi. 3-urinishda REJECT.',
+      },
+      {
+        cmd: ['kafka-console-consumer.sh --topic dlq.vazifalar …'],
+        chiqish: '__dlq.errors.offset:5\n__dlq.errors.delivery.count:3\n__dlq.errors.message:Offset rejected by client.\nxato-6',
+        holat: [{ k: 'd', yol: 'dlq.vazifalar', qiymat: 'xato-6 + manbasi va urinishlar soni', belgi: 'yangi' }],
+        izoh: 'Rad etilgan yozuv dead-letter topic’ga tushdi — keyin tekshirish uchun.',
+      },
+    ],
+  },
 }
