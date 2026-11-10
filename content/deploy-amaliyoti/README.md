@@ -48,7 +48,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - Kubernetes va bulut platformalari (AWS, GCP, Azure) — alohida katta mavzu.
 - Docker'ning o'zi — **"Docker"** kitobida.
 
-> **Holat.** Qo'llanma yozilmoqda: 9/22 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 10/22 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -68,7 +68,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
 | 01 | [Deploy nima](01-deploy-nima.md) | Kodni repozitoriydan serverga yetkazish, ishga tushirish va eski versiyani almashtirish. Qo'lda deploy va uzluksiz deploy (continuous deployment). "Nol to'xtovli" nimani anglatadi | — | [GH Continuous deployment](https://docs.github.com/en/actions/get-started/continuous-deployment) · [GH Understand GitHub Actions](https://docs.github.com/en/actions/get-started/understand-github-actions) |
-| 02 | ⚑ Domenni serverga ulash | Domen sotuvchisining (registrar) panelida A va AAAA yozuvlari, TTL. `dig` bilan yozuv tarqalganini tekshirish | V+D | [MDN What is a Domain Name?](https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Web_mechanics/What_is_a_domain_name) · [RFC 1035](https://www.rfc-editor.org/rfc/rfc1035) |
+| 02 | [⚑ Domenni serverga ulash](02-domen.md) | Domen sotuvchisining (registrar) panelida A va AAAA yozuvlari, TTL. `dig` bilan yozuv tarqalganini tekshirish | V+D | [MDN What is a Domain Name?](https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Web_mechanics/What_is_a_domain_name) · [RFC 1035](https://www.rfc-editor.org/rfc/rfc1035) |
 | 03 | ⚑ Serverni tayyorlash | Deploy uchun alohida foydalanuvchi, SSH kalit, firewall'da 22, 80 va 443-portlar | V | [UB User management](https://ubuntu.com/server/docs/how-to/security/user-management/) · [UB OpenSSH server](https://ubuntu.com/server/docs/how-to/security/openssh-server/) · [UB Firewalls](https://ubuntu.com/server/docs/how-to/security/firewalls/) |
 | 04 | ⚑ Birinchi deploy qo'lda | Repozitoriyni deploy key bilan olish, bog'liqliklarni o'rnatish, ilovani systemd servisi qilish, nginx ortiga qo'yish va HTTPS'ni yoqish | V+D | [GH Managing deploy keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/managing-deploy-keys) · [SD systemd.service(5)](https://www.freedesktop.org/software/systemd/man/latest/systemd.service.html) · [NG proxy module](https://nginx.org/en/docs/http/ngx_http_proxy_module.html) |
 
