@@ -36,7 +36,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - MQTT, STOMP, Federation va Shovel plaginlari, Kubernetes, OAuth 2 va LDAP — maxsus holatlar, hujjatda: [RQ Plugins](https://www.rabbitmq.com/docs/plugins).
 - Symfony Messenger va Laravel navbatlari bilan ulash — shu framework'lar kitoblarida.
 
-> **Holat.** Qo'llanma yozilmoqda: 29/34 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 30/34 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -114,7 +114,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
-| 30 | Xotira va disk chegaralari | Xotira yoki disk chegarasiga yetganda RabbitMQ yuboruvchilarni to'xtatib turadi (alarm). Xotira qayerga ketayotganini ko'rish | V | [RQ Memory and Disk Alarms](https://www.rabbitmq.com/docs/alarms) · [RQ Memory Alarms](https://www.rabbitmq.com/docs/memory) · [RQ Disk Alarms](https://www.rabbitmq.com/docs/disk-alarms) · [RQ Memory Use](https://www.rabbitmq.com/docs/memory-use) |
+| 30 | [Xotira va disk chegaralari](30-xotira-disk.md) | Xotira yoki disk chegarasiga yetganda RabbitMQ yuboruvchilarni to'xtatib turadi (alarm). Xotira qayerga ketayotganini ko'rish | V | [RQ Memory and Disk Alarms](https://www.rabbitmq.com/docs/alarms) · [RQ Memory Alarms](https://www.rabbitmq.com/docs/memory) · [RQ Disk Alarms](https://www.rabbitmq.com/docs/disk-alarms) · [RQ Memory Use](https://www.rabbitmq.com/docs/memory-use) |
 | 31 | Monitoring | `rabbitmq-diagnostics` bilan tekshiruvlar. HTTP API. Prometheus plagini | V | [RQ Monitoring](https://www.rabbitmq.com/docs/monitoring) · [RQ Prometheus and Grafana](https://www.rabbitmq.com/docs/prometheus) |
 | 32 | Klaster | Bir nechta tugunni klasterga birlashtirish. Bitta mashinada klaster (hujjatda tajriba uchun ko'rsatilgan). Tarmoq bo'linib qolganda (network partition) nima bo'ladi | V | [RQ Clustering](https://www.rabbitmq.com/docs/clustering) · [RQ Cluster Formation](https://www.rabbitmq.com/docs/cluster-formation) · [RQ Network Partitions](https://www.rabbitmq.com/docs/partitions) |
 | 33 | Yangilash | Tugunlarni birma-bir yangilash (rolling upgrade). Blue-green usuli. Feature flag'lar | V | [RQ Upgrade](https://www.rabbitmq.com/docs/upgrade) · [RQ Rolling Upgrade](https://www.rabbitmq.com/docs/rolling-upgrade) · [RQ Blue-Green Deployment](https://www.rabbitmq.com/docs/blue-green-upgrade) · [RQ Feature Flags](https://www.rabbitmq.com/docs/feature-flags) |
