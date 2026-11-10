@@ -35,7 +35,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 
 - Ma'lumotlar bazasiga yozish va xabar yuborishni bitta atomik amalga birlashtirish (transactional outbox) va bazadagi o'zgarishlarni oqimga uzatish (CDC). Bular uch asbobning birortasining rasmiy hujjatida yoritilmagan, shuning uchun kiritilmadi.
 
-> **Holat.** Qo'llanma yozilmoqda: 9/15 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 10/15 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -66,7 +66,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 | 06 | [Yuboruvchining kafolati](06-yuboruvchi.md) | Broker xabarni haqiqatan saqladimi: RabbitMQ'da publisher confirms, Kafka'da `acks=all` va `min.insync.replicas`. Redis replikatsiyasi standartda asinxron | V+D | [RQ Consumer Acknowledgements and Publisher Confirms](https://www.rabbitmq.com/docs/confirms) · [KD Design → Replication](https://kafka.apache.org/44/design/design/) · [RD Replication](https://redis.io/docs/latest/operate/oss_and_stack/management/replication/) |
 | 07 | [Takror xabar va idempotentlik](07-idempotentlik.md) | "Kamida bir marta" takror xabarni ham anglatadi. RabbitMQ hujjati consumer'ni idempotent (takror ishlov natijani o'zgartirmaydigan) qilib yozishni tavsiya qiladi; `redelivered` belgisi. Kafka'da idempotent producer | V+D | [RQ Reliability Guide](https://www.rabbitmq.com/docs/reliability) · [KD Design → Message Delivery Semantics](https://kafka.apache.org/44/design/design/) |
 | 08 | [Tartib](08-tartib.md) | RabbitMQ: bitta kanal, exchange, navbat va consumer bo'ylab tartib saqlanadi; qayta navbatga qaytgan xabar tartibni o'zgartiradi. Kafka: tartib faqat partition ichida. Redis stream: yozuv ID'lari tartibi. Parallel consumer'lar tartibga qanday ta'sir qiladi | V+D | [RQ Broker Semantics](https://www.rabbitmq.com/docs/semantics) · [KD Introduction](https://kafka.apache.org/44/getting-started/introduction/) · [RD Streams](https://redis.io/docs/latest/develop/data-types/streams/) |
-| 09 | Ishlab bo'lmaydigan xabarlar | Qayta urinish va uning chegarasi. RabbitMQ'da dead letter exchange, Kafka share group'larida DLQ, Redis job queue'da muvaffaqiyatsiz ishlar | V+D | [RQ Dead Letter Exchanges](https://www.rabbitmq.com/docs/dlx) · [RQ Reliability Guide](https://www.rabbitmq.com/docs/reliability) · [KD Basic Operations](https://kafka.apache.org/44/operations/basic-kafka-operations/) · [RD Job queue](https://redis.io/docs/latest/develop/use-cases/job-queue/) |
+| 09 | [Ishlab bo'lmaydigan xabarlar](09-ishlanmaydigan.md) | Qayta urinish va uning chegarasi. RabbitMQ'da dead letter exchange, Kafka share group'larida DLQ, Redis job queue'da muvaffaqiyatsiz ishlar | V+D | [RQ Dead Letter Exchanges](https://www.rabbitmq.com/docs/dlx) · [RQ Reliability Guide](https://www.rabbitmq.com/docs/reliability) · [KD Basic Operations](https://kafka.apache.org/44/operations/basic-kafka-operations/) · [RD Job queue](https://redis.io/docs/latest/develop/use-cases/job-queue/) |
 
 ## III qism — Saqlash va masshtab (10–13)
 
