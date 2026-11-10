@@ -12,9 +12,10 @@ mkdir -p build
 cd build
 [ -f nginx-$V.tar.gz ] || curl -fsSLO https://nginx.org/download/nginx-$V.tar.gz
 echo "$SHA256  nginx-$V.tar.gz" | sha256sum -c -
-docker run --rm --platform linux/386 -v "$PWD:/w" -w /w debian:bookworm setarch i686 sh -euc "
+# --network host: konteyner host DNS'idan foydalanadi (GitHub Actions'da standart bridge tarmog'ida DNS topilmadi)
+docker run --rm --network host --platform linux/386 -v "$PWD:/w" -w /w debian:bookworm setarch i686 sh -euc "
   export DEBIAN_FRONTEND=noninteractive
-  apt-get update -qq && apt-get install -y -qq build-essential libpcre2-dev libssl-dev zlib1g-dev > /dev/null
+  apt-get -o Acquire::Retries=3 update -qq && apt-get -o Acquire::Retries=3 install -y -qq build-essential libpcre2-dev libssl-dev zlib1g-dev > /dev/null
   rm -rf /tmp/b && mkdir /tmp/b && tar -xzf nginx-$V.tar.gz -C /tmp/b && cd /tmp/b/nginx-$V
   ./configure --prefix=/etc/nginx --sbin-path=/usr/sbin/nginx --modules-path=/usr/lib/nginx/modules \
     --conf-path=/etc/nginx/nginx.conf --error-log-path=/var/log/nginx/error.log --http-log-path=/var/log/nginx/access.log \
