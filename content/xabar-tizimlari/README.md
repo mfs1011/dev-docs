@@ -35,7 +35,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 
 - Ma'lumotlar bazasiga yozish va xabar yuborishni bitta atomik amalga birlashtirish (transactional outbox) va bazadagi o'zgarishlarni oqimga uzatish (CDC). Bular uch asbobning birortasining rasmiy hujjatida yoritilmagan, shuning uchun kiritilmadi.
 
-> **Holat.** Qo'llanma yozilmoqda: 5/15 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 6/15 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -62,7 +62,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
 | 04 | [Yetkazish kafolatlari](04-kafolatlar.md) | "Ko'pi bilan bir marta" (at-most-once), "kamida bir marta" (at-least-once), "aynan bir marta" (exactly-once) ta'riflari. Redis pub/sub — ko'pi bilan bir marta, Redis stream — ikkalasi ham. RabbitMQ va Kafka'da qaysi sozlama qaysi kafolatni beradi | V+D | [KD Design → Message Delivery Semantics](https://kafka.apache.org/44/design/design/) · [RQ Reliability Guide](https://www.rabbitmq.com/docs/reliability) · [RD Pub/sub](https://redis.io/docs/latest/develop/pubsub/) |
-| 05 | Qabul qiluvchining tasdig'i | Xabar qachon "ishlangan" hisoblanadi. Tasdiqlamay o'chgan consumer'ning xabari qayta beriladi. RabbitMQ'da ack, Kafka'da offset commit, Redis stream'da `XACK` | V+D | [RQ Consumer Acknowledgements and Publisher Confirms](https://www.rabbitmq.com/docs/confirms) · [KD Design → The Consumer](https://kafka.apache.org/44/design/design/) · [RD Streams](https://redis.io/docs/latest/develop/data-types/streams/) |
+| 05 | [Qabul qiluvchining tasdig'i](05-tasdiq.md) | Xabar qachon "ishlangan" hisoblanadi. Tasdiqlamay o'chgan consumer'ning xabari qayta beriladi. RabbitMQ'da ack, Kafka'da offset commit, Redis stream'da `XACK` | V+D | [RQ Consumer Acknowledgements and Publisher Confirms](https://www.rabbitmq.com/docs/confirms) · [KD Design → The Consumer](https://kafka.apache.org/44/design/design/) · [RD Streams](https://redis.io/docs/latest/develop/data-types/streams/) |
 | 06 | Yuboruvchining kafolati | Broker xabarni haqiqatan saqladimi: RabbitMQ'da publisher confirms, Kafka'da `acks=all` va `min.insync.replicas`. Redis replikatsiyasi standartda asinxron | V+D | [RQ Consumer Acknowledgements and Publisher Confirms](https://www.rabbitmq.com/docs/confirms) · [KD Design → Replication](https://kafka.apache.org/44/design/design/) · [RD Replication](https://redis.io/docs/latest/operate/oss_and_stack/management/replication/) |
 | 07 | Takror xabar va idempotentlik | "Kamida bir marta" takror xabarni ham anglatadi. RabbitMQ hujjati consumer'ni idempotent (takror ishlov natijani o'zgartirmaydigan) qilib yozishni tavsiya qiladi; `redelivered` belgisi. Kafka'da idempotent producer | V+D | [RQ Reliability Guide](https://www.rabbitmq.com/docs/reliability) · [KD Design → Message Delivery Semantics](https://kafka.apache.org/44/design/design/) |
 | 08 | Tartib | RabbitMQ: bitta kanal, exchange, navbat va consumer bo'ylab tartib saqlanadi; qayta navbatga qaytgan xabar tartibni o'zgartiradi. Kafka: tartib faqat partition ichida. Redis stream: yozuv ID'lari tartibi. Parallel consumer'lar tartibga qanday ta'sir qiladi | V+D | [RQ Broker Semantics](https://www.rabbitmq.com/docs/semantics) · [KD Introduction](https://kafka.apache.org/44/getting-started/introduction/) · [RD Streams](https://redis.io/docs/latest/develop/data-types/streams/) |

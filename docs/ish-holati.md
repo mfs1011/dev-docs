@@ -252,7 +252,7 @@ Ikkinchi noutbukda boshlashdan oldin shu faylni, `CLAUDE.md` ni va kitobning `RE
 
 ## Xabar tizimlari kitobi (`content/xabar-tizimlari/`)
 
-- Branch `docs/xabar-tizimlari-1` (PR #220 merge qilingan), davomi — `docs/xabar-tizimlari-2`. Tayyor: 1–4, 14-boblar (2026-11-11). Qolgan 4–13, 15 — V+D (Kafka endi VPS'da, Kafka kitobi bo'limiga qarang). 2-bobda uch model RabbitMQ'da VPS'da ko'rsatildi (README'da "Muhit" — V) va `uch-model` qadamli animatsiyasi (`src/animatsiya/qadamlar.js`) qo'shildi.
+- Branch `docs/xabar-tizimlari-1` (PR #220 merge qilingan), davomi — `docs/xabar-tizimlari-2`. Tayyor: 1–5, 14-boblar (2026-11-11). Qolgan 4–13, 15 — V+D (Kafka endi VPS'da, Kafka kitobi bo'limiga qarang). 2-bobda uch model RabbitMQ'da VPS'da ko'rsatildi (README'da "Muhit" — V) va `uch-model` qadamli animatsiyasi (`src/animatsiya/qadamlar.js`) qo'shildi.
 
 ## RabbitMQ kitobi (`content/rabbitmq/`)
 
