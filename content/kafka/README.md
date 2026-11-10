@@ -15,7 +15,7 @@ Manbalar va versiyalar (2026-11-07 da tekshirilgan):
 
 Muhit tanlovi haqida:
 
-- **Nega Docker va ikkinchi noutbuk.** Broker'ni ishga tushirish skripti `kafka-server-start.sh` Java uchun standartda 1 GB xotira (heap) ajratadi (`-Xmx1G -Xms1G`). Sinov VPS'ida (2 GB) bunga joy yetmaydi. Shuning uchun misollar ikkinchi noutbukda, rasmiy Docker image'da sinaladi (`docs/ish-holati.md`).
+- **Nega Docker va xotira (heap) cheklovi.** Broker'ni ishga tushirish skripti `kafka-server-start.sh` Java uchun standartda 1 GB xotira (heap) ajratadi (`-Xmx1G -Xms1G`, `KAFKA_HEAP_OPTS` bo'sh bo'lsa). Sinov VPS'ida (2 GB) bunga joy yetmaydi. Shuning uchun misollar VPS'da rasmiy Docker image'da, `KAFKA_HEAP_OPTS="-Xmx256m -Xms256m"` bilan sinaladi (egasining qarori, 2026-11-10; `docs/ish-holati.md`).
 - **Nega Java.** Hujjatga ko'ra Kafka tilga bog'liq bo'lmagan protokol orqali ishlaydi va ko'p tillarda klientlar bor, lekin Kafka loyihasining o'zi faqat Java klientlarini yuritadi. Boshqa tillar (Node.js, PHP, Python) klientlari — mustaqil loyihalar ([KD APIs](https://kafka.apache.org/44/apis/)). Shuning uchun ilova kodi Java'da, boshqa hamma narsa Kafka bilan birga keladigan `kafka-*.sh` buyruqlari orqali ko'rsatiladi.
 
 Qisqartmalar:
@@ -35,7 +35,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - Docker'ning o'zi — **"Docker"** kitobida.
 - Tiered storage (eski ma'lumotni arzon omborga ko'chirish), klasterlar orasida nusxalash (MirrorMaker 2) — katta klasterlar mavzusi, hujjatda: [KD Tiered Storage](https://kafka.apache.org/44/operations/tiered-storage/), [KD Geo-Replication](https://kafka.apache.org/44/operations/geo-replication-cross-cluster-data-mirroring/).
 
-> **Holat.** Qo'llanma tayyorlanmoqda — quyida rejalashtirilgan mundarija.
+> **Holat.** Qo'llanma yozilmoqda: 2/35 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -54,8 +54,8 @@ Bu qo'llanmaga kirmaydigan mavzular:
 
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
-| 01 | Hodisalar oqimi nima | Hodisa (event) — "nima bo'ldi" degan yozuv. Hodisalar oqimi (event streaming) nima. Kafka qayerda ishlatiladi: xabar almashish, sayt faolligini kuzatish, metrikalar, log yig'ish, oqimni qayta ishlash, event sourcing | — | [KD Introduction](https://kafka.apache.org/44/getting-started/introduction/) · [KD Use Cases](https://kafka.apache.org/44/getting-started/uses/) |
-| 02 | Asosiy tushunchalar | Hodisa tarkibi: kalit, qiymat, vaqt belgisi (timestamp), sarlavhalar (headers). Producer va consumer, topic, partition, replika, broker va klaster. Kafka API'lari: Producer, Consumer, Share Consumer, Streams, Connect, Admin | — | [KD Introduction](https://kafka.apache.org/44/getting-started/introduction/) · [KD APIs](https://kafka.apache.org/44/apis/) |
+| 01 | [Hodisalar oqimi nima](01-hodisalar-oqimi.md) | Hodisa (event) — "nima bo'ldi" degan yozuv. Hodisalar oqimi (event streaming) nima. Kafka qayerda ishlatiladi: xabar almashish, sayt faolligini kuzatish, metrikalar, log yig'ish, oqimni qayta ishlash, event sourcing | — | [KD Introduction](https://kafka.apache.org/44/getting-started/introduction/) · [KD Use Cases](https://kafka.apache.org/44/getting-started/uses/) |
+| 02 | [Asosiy tushunchalar](02-asosiy-tushunchalar.md) | Hodisa tarkibi: kalit, qiymat, vaqt belgisi (timestamp), sarlavhalar (headers). Producer va consumer, topic, partition, replika, broker va klaster. Kafka API'lari: Producer, Consumer, Share Consumer, Streams, Connect, Admin | — | [KD Introduction](https://kafka.apache.org/44/getting-started/introduction/) · [KD APIs](https://kafka.apache.org/44/apis/) |
 | 03 | Kafka'ni ishga tushirish | Docker'da bitta tugun (node). KRaft rejimi. Arxiv (tgz) varianti va Java 17+ talabi. To'xtatish va ma'lumotni tozalash | D | [KD Quick Start](https://kafka.apache.org/44/getting-started/quickstart/) · [KD Docker](https://kafka.apache.org/44/getting-started/docker/) |
 | 04 | Birinchi topic | `kafka-topics.sh` bilan topic yaratish va ko'rish. `kafka-console-producer.sh` va `kafka-console-consumer.sh`. Hodisalar o'qilgandan keyin ham saqlanib turadi: ularni xohlagancha qayta o'qish mumkin | D | [KD Quick Start](https://kafka.apache.org/44/getting-started/quickstart/) (3–5-qadamlar) |
 

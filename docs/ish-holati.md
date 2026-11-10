@@ -236,3 +236,9 @@ Ikkinchi noutbukda boshlashdan oldin shu faylni, `CLAUDE.md` ni va kitobning `RE
 - Branch `docs/deploy-1`. Tayyor: 1, 5, 7, 8, 16–18, 20-boblar (20-bobda image tegi va GitHub deploy tarixi qismi — 19-bob va III qism bilan qo'shiladi) (2026-11-09; VPS'ga `strace` o'rnatildi).
 - Navbat: til va domen talab qilmaydigan V-boblar — 5, 7, 8, 16–18 (ilova — Python standart kutubxonasidagi kichik server, Nginx kitobidagi kabi). 3-bob (deploy foydalanuvchisi, SSH kalit, firewall) — VPS'ga kirishni o'zgartiradi, egasining tasdig'i kerak. 2, 4 (domen), 6 (Node.js/PHP — misollar tili qarori), 9–15, 19, 21–22 (GitHub sinov repozitoriysi) — egasining qarori kutilmoqda.
 - Manba: GitHub hujjati — `raw.githubusercontent.com/github/docs/main/content/actions/...` (markdown).
+
+## Kafka kitobi (`content/kafka/`)
+
+- **Egasining qarori (2026-11-10): Kafka VPS'da.** `apache/kafka:4.4.0` konteyneri `kafka` (`docker run -d --name kafka -p 127.0.0.1:9092:9092 -e KAFKA_HEAP_OPTS="-Xmx256m -Xms256m" --restart unless-stopped`). Port faqat 127.0.0.1 da (Docker ufw'ni chetlab o'tadi — tashqariga ochilmasin). Konteyner ~330 MB xotira.
+- Branch `docs/kafka-1`. Tayyor: 1, 2-boblar (2026-11-10).
+- Xabar tizimlari'ning V+D boblari ham shu VPS Kafka'si bilan qilinadi.
