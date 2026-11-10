@@ -1434,4 +1434,34 @@ export const QADAMLI = {
       },
     ],
   },
+  // Kafka 16-bob: offset commit ishlovdan oldin (yo'qotish) yoki keyin (takror) — "qulash" bilan (VPS)
+  'offset-commit': {
+    panel: 'tolovlar: 5 hodisa',
+    qadamlar: [
+      {
+        cmd: ['java … Ishlov.java oldin tolov-3'],
+        chiqish: 'ishlandi: tolov-1 (offset 0)\nishlandi: tolov-2 (offset 1)\nQULADI: tolov-3 ishlanmadi',
+        holat: [{ k: 'c', yol: 'saqlangan offset', qiymat: '3 — tolov-3 "o‘qildi" deb belgilangan', belgi: 'ochiq' }, { k: 'i', yol: 'ishlangan', qiymat: 'tolov-1, tolov-2' }],
+        izoh: 'Avval commit, keyin ishlov: tolov-3 belgilandi, lekin ishlanmasdan jarayon quladi.',
+      },
+      {
+        cmd: ['java … Ishlov.java oldin'],
+        chiqish: 'ishlandi: tolov-4 (offset 3)\nishlandi: tolov-5 (offset 4)',
+        holat: [{ k: 'i', yol: 'ishlangan', qiymat: 'tolov-1, 2, 4, 5' }, { k: 'y', yol: 'tolov-3', qiymat: 'YO‘QOLDI', belgi: 'xato' }],
+        izoh: 'Qayta ishga tushgan consumer saqlangan joydan (3) davom etdi — tolov-3 hech qachon ishlanmadi: ko‘pi bilan bir marta.',
+      },
+      {
+        cmd: ['java … Ishlov.java keyin tolov-3'],
+        chiqish: 'ishlandi: tolov-1 (offset 0)\nishlandi: tolov-2 (offset 1)\nishlandi: tolov-3 (offset 2)\nQULADI: tolov-3 commit qilinmadi',
+        holat: [{ k: 'c', yol: 'saqlangan offset', qiymat: '2 — tolov-3 hali belgilanmagan', belgi: 'ochiq' }, { k: 'i', yol: 'ishlangan', qiymat: 'tolov-1, 2, 3' }],
+        izoh: 'Avval ishlov, keyin commit: tolov-3 ishlandi, lekin belgilanmasdan quladi.',
+      },
+      {
+        cmd: ['java … Ishlov.java keyin'],
+        chiqish: 'ishlandi: tolov-3 (offset 2)\nishlandi: tolov-4 (offset 3)\nishlandi: tolov-5 (offset 4)',
+        holat: [{ k: 'i', yol: 'ishlangan', qiymat: 'tolov-1, 2, 3, 4, 5' }, { k: 'y', yol: 'tolov-3', qiymat: 'IKKI MARTA ishlandi', belgi: 'xato' }],
+        izoh: 'Hech narsa yo‘qolmadi, lekin tolov-3 takrorlandi: kamida bir marta. Ishlov idempotent bo‘lishi kerak.',
+      },
+    ],
+  },
 }
