@@ -36,7 +36,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - MQTT, STOMP, Federation va Shovel plaginlari, Kubernetes, OAuth 2 va LDAP — maxsus holatlar, hujjatda: [RQ Plugins](https://www.rabbitmq.com/docs/plugins).
 - Symfony Messenger va Laravel navbatlari bilan ulash — shu framework'lar kitoblarida.
 
-> **Holat.** Qo'llanma yozilmoqda: 17/34 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 18/34 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -87,7 +87,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
-| 18 | Consumer tasdig'i | Avtomatik va qo'lda tasdiqlash (ack). `nack` va `reject`. Qayta yetkazilgan xabar (`redelivered`) | V+N | [RQ Consumer Acknowledgements and Publisher Confirms](https://www.rabbitmq.com/docs/confirms) · [RQ Negative Acknowledgements](https://www.rabbitmq.com/docs/nack) · [RQ Consumers](https://www.rabbitmq.com/docs/consumers) |
+| 18 | [Consumer tasdig'i](18-consumer-tasdigi.md) | Avtomatik va qo'lda tasdiqlash (ack). `nack` va `reject`. Qayta yetkazilgan xabar (`redelivered`) | V+N | [RQ Consumer Acknowledgements and Publisher Confirms](https://www.rabbitmq.com/docs/confirms) · [RQ Negative Acknowledgements](https://www.rabbitmq.com/docs/nack) · [RQ Consumers](https://www.rabbitmq.com/docs/consumers) |
 | 19 | Prefetch | Consumer'ga tasdiqlanmagan nechta xabar beriladi. Xotira va tezlik o'rtasidagi muvozanat | V+N | [RQ Consumer Prefetch](https://www.rabbitmq.com/docs/consumer-prefetch) |
 | 20 | Publisher confirms | Broker xabarni qabul qilganini yuboruvchiga tasdiqlaydi. Tasdiqni kutish strategiyalari | V+N | [RQ Consumer Acknowledgements and Publisher Confirms](https://www.rabbitmq.com/docs/confirms) · [RT 7. Publisher Confirms](https://www.rabbitmq.com/tutorials/tutorial-seven-php) |
 | 21 | Xabar qayerda yo'qolishi mumkin | Tarmoq, broker va consumer nosozliklari. Takror xabar va idempotentlik. Heartbeat'lar | V | [RQ Reliability Guide](https://www.rabbitmq.com/docs/reliability) · [RQ Heartbeats](https://www.rabbitmq.com/docs/heartbeats) |
