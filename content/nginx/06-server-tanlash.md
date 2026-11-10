@@ -199,6 +199,8 @@ ok
 
 ## Amaliyot
 
+**[Mashqni boshlash →](/nginx/trenajor?mashq=ng-06-location)** "nginx location’ni qanday tanlaydi": brauzerdagi haqiqiy nginx'da qadamma-qadam bajarasiz, har so'rov "So'rov yo'li" sxemasida chiziladi.
+
 1. nginx server tanlashda nimalarga qaraydi va qaysi tartibda?
 2. Standart server qaysi? Uni qanday aniq belgilaysiz?
 3. `server_name` turlari qaysi tartibda tekshiriladi?

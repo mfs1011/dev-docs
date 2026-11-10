@@ -1,0 +1,10 @@
+[Unit]
+Description=Nginx trenajori: sxema uchun log kuzatuvchisi (ttyS1)
+After=nginx.service
+
+[Service]
+ExecStart=/usr/local/sbin/nginx-kuzatuv
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

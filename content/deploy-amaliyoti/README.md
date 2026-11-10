@@ -12,6 +12,8 @@ Manbalar va versiyalar (2026-11-07 da tekshirilgan):
 | nginx | Mainline 1.31.8 | `content/nginx/README.md` |
 | systemd | VPS'da 259 | `content/linux/README.md` |
 | Docker | Ubuntu 26.04 da `docker.io` 29.1.3, `docker-compose-v2` 2.40.3 (universe). Rasmiy versiyalar "Docker" kitobida tekshiriladi | VPS: `apt-cache policy docker.io docker-compose-v2` |
+| Node.js / npm | VPS'da 26.13.0 / 11.20.0 (2026-11-10) | VPS: `node -v`, `npm -v` |
+| PHP / Composer | VPS'da 8.5.4 / 2.11.1 (2026-11-10) | VPS: `php -v`, `composer --version` |
 | Sinov VPS | Ubuntu 26.04 LTS | — |
 
 Muhit tanlovi haqida:
@@ -46,7 +48,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - Kubernetes va bulut platformalari (AWS, GCP, Azure) — alohida katta mavzu.
 - Docker'ning o'zi — **"Docker"** kitobida.
 
-> **Holat.** Qo'llanma yozilmoqda: 8/22 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 10/22 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -66,7 +68,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
 | 01 | [Deploy nima](01-deploy-nima.md) | Kodni repozitoriydan serverga yetkazish, ishga tushirish va eski versiyani almashtirish. Qo'lda deploy va uzluksiz deploy (continuous deployment). "Nol to'xtovli" nimani anglatadi | — | [GH Continuous deployment](https://docs.github.com/en/actions/get-started/continuous-deployment) · [GH Understand GitHub Actions](https://docs.github.com/en/actions/get-started/understand-github-actions) |
-| 02 | ⚑ Domenni serverga ulash | Domen sotuvchisining (registrar) panelida A va AAAA yozuvlari, TTL. `dig` bilan yozuv tarqalganini tekshirish | V+D | [MDN What is a Domain Name?](https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Web_mechanics/What_is_a_domain_name) · [RFC 1035](https://www.rfc-editor.org/rfc/rfc1035) |
+| 02 | [⚑ Domenni serverga ulash](02-domen.md) | Domen sotuvchisining (registrar) panelida A va AAAA yozuvlari, TTL. `dig` bilan yozuv tarqalganini tekshirish | V+D | [MDN What is a Domain Name?](https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Web_mechanics/What_is_a_domain_name) · [RFC 1035](https://www.rfc-editor.org/rfc/rfc1035) |
 | 03 | ⚑ Serverni tayyorlash | Deploy uchun alohida foydalanuvchi, SSH kalit, firewall'da 22, 80 va 443-portlar | V | [UB User management](https://ubuntu.com/server/docs/how-to/security/user-management/) · [UB OpenSSH server](https://ubuntu.com/server/docs/how-to/security/openssh-server/) · [UB Firewalls](https://ubuntu.com/server/docs/how-to/security/firewalls/) |
 | 04 | ⚑ Birinchi deploy qo'lda | Repozitoriyni deploy key bilan olish, bog'liqliklarni o'rnatish, ilovani systemd servisi qilish, nginx ortiga qo'yish va HTTPS'ni yoqish | V+D | [GH Managing deploy keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/managing-deploy-keys) · [SD systemd.service(5)](https://www.freedesktop.org/software/systemd/man/latest/systemd.service.html) · [NG proxy module](https://nginx.org/en/docs/http/ngx_http_proxy_module.html) |
 
@@ -75,7 +77,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
 | 05 | [⚑ Release papkalari va symlink](05-release-symlink.md) | Har versiya alohida papkada, `current` — oxirgisiga symlink. Symlink'ni atomik almashtirish: `rename(2)` mavjud nomni bir zumda almashtiradi, oraliq holat bo'lmaydi (`mv -T`). Eski release'larni tozalash | V | [MAN rename(2)](https://man7.org/linux/man-pages/man2/rename.2.html) · [GNU mv invocation](https://www.gnu.org/software/coreutils/manual/html_node/mv-invocation.html) |
-| 06 | Bog'liqliklar va build | `npm ci` (lock-fayldan aniq o'rnatish), `composer install --no-dev`. Build serverda yoki CI'da; tayyor natijani (artifact) uzatish | V | [npm ci](https://docs.npmjs.com/cli/commands/npm-ci) · [Composer CLI → install](https://getcomposer.org/doc/03-cli.md#install-i) · [GH Workflow artifacts](https://docs.github.com/en/actions/concepts/workflows-and-actions/workflow-artifacts) |
+| 06 | [Bog'liqliklar va build](06-boglanish-build.md) | `npm ci` (lock-fayldan aniq o'rnatish), `composer install --no-dev`. Build serverda yoki CI'da; tayyor natijani (artifact) uzatish | V | [npm ci](https://docs.npmjs.com/cli/commands/npm-ci) · [Composer CLI → install](https://getcomposer.org/doc/03-cli.md#install-i) · [GH Workflow artifacts](https://docs.github.com/en/actions/concepts/workflows-and-actions/workflow-artifacts) |
 | 07 | [Konfiguratsiya va sirlar](07-sozlama-sirlar.md) | `.env` serverda turadi, repozitoriyda emas. `EnvironmentFile=` va fayl ruxsatlari | V | [SD systemd.exec(5)](https://www.freedesktop.org/software/systemd/man/latest/systemd.exec.html) · [GH Secrets](https://docs.github.com/en/actions/concepts/security/secrets) |
 | 08 | [Restart va reload](08-restart-reload.md) | `systemctl restart` va `reload` farqi. nginx'ning `HUP` signali: yangi worker'lar yangi sozlama bilan ishga tushadi, eskilari ishini tugatib chiqadi | V | [NG Controlling nginx](https://nginx.org/en/docs/control.html) · [SD systemctl(1)](https://www.freedesktop.org/software/systemd/man/latest/systemctl.html) |
 

@@ -1,0 +1,13 @@
+[Unit]
+Description=Trenajor backend ilovasi (8081-8083)
+After=network.target
+
+[Service]
+Type=forking
+PIDFile=/run/ilova.pid
+ExecStart=/usr/sbin/nginx -c /etc/ilova/nginx.conf
+ExecReload=/bin/kill -s HUP $MAINPID
+ExecStop=/bin/kill -s QUIT $MAINPID
+
+[Install]
+WantedBy=multi-user.target

@@ -37,6 +37,11 @@ passwd -d root > /dev/null
 mkdir -p /etc/systemd/system/serial-getty@ttyS0.service.d
 printf '[Service]\nExecStart=\nExecStart=-/sbin/agetty --autologin root --noclear --keep-baud 115200,38400,9600 %%I $TERM\n' \
   > /etc/systemd/system/serial-getty@ttyS0.service.d/autologin.conf
+# profil (deb.py): trenajorning o'z sozlamalari (masalan, nginx foydalanuvchisi va servisi)
+if [ -x /linux-trenajor/qoshimcha.sh ]; then
+  /linux-trenajor/qoshimcha.sh > /tmp/qoshimcha.txt 2>&1 || { echo "[stage2] qoshimcha.sh: xato"; tail -10 /tmp/qoshimcha.txt | sed 's/^/[stage2]   /'; }
+  echo "[stage2] qoshimcha.sh bajarildi"
+fi
 
 cd /
 # katta faylni emulyatordan bir urinishda o'qib bo'lmaydi — 48 MB'lik bo'laklar

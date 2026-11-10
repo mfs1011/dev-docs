@@ -1,0 +1,16 @@
+#!/bin/sh
+# Nginx trenajori: debug va trenajor access log'idan sxema uchun kerakli qatorlarni ikkinchi serial portga
+# (/dev/ttyS1) uzatadi. Sahifa ularni terminaldan alohida o'qiydi. Debug log tez o'sadi — 2 MB dan oshsa tozalanadi.
+D=/run/nginx-kuzatuv
+mkdir -p $D
+touch $D/debug.log $D/access.log
+stty -F /dev/ttyS1 raw -echo 115200 2>/dev/null
+(
+  while sleep 20; do
+    [ "$(stat -c %s $D/debug.log)" -gt 2097152 ] && : > $D/debug.log
+  done
+) &
+# grep -a: debug log'da ba'zan xom (NUL) baytlar bo'ladi — -a siz grep "binary file matches" deb qolgan qatorlarni chiqarmaydi
+tail -q -n 0 -F $D/debug.log $D/access.log 2>/dev/null \
+  | grep -a --line-buffered -E '^\{"c"|\*[0-9]+ (accept: |http request line|http header: "User-Agent: |test location|using configuration|http upstream cache:|connect to [0-9]|http proxy status|limiting requests|delaying request|http finalize request: |http next upstream|upstream timed out|connect\(\) failed|http script rewrite|rewritten)' \
+  | sed -u -E 's/^[0-9\/]+ [0-9:]+ \[[a-z]+\] [0-9]+#[0-9]+: //' > /dev/ttyS1

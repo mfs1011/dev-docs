@@ -147,6 +147,8 @@ ok
 
 ## Amaliyot
 
+**[Mashqni boshlash →](/nginx/trenajor?mashq=ng-26-cheklash)** "limit_req va return tuzog‘i": brauzerdagi haqiqiy nginx'da qadamma-qadam bajarasiz, har so'rov "So'rov yo'li" sxemasida chiziladi.
+
 1. `limit_req` qaysi algoritmga asoslangan?
 2. `$binary_remote_addr` nega `$remote_addr` dan yaxshiroq?
 3. `burst=3` va `burst=3 nodelay` farqi nima? Sinovda nima bo'ldi?
