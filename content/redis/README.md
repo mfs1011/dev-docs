@@ -34,7 +34,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - Navbat va hodisalar oqimi tizimlarini taqqoslash (Redis, RabbitMQ, Kafka) — **"Xabar tizimlari"** kitobida.
 - Qidiruv (Query Engine), vektorlar va sun'iy intellekt uchun imkoniyatlar, Redis Cloud va Redis Software (pullik mahsulotlar) — hujjatda: [RD Search and query](https://redis.io/docs/latest/develop/ai/search-and-query/).
 
-> **Holat.** Qo'llanma yozilmoqda: 30/34 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 31/34 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -88,7 +88,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 | 18 | [Oldindan yuklangan kesh](18-prefetch.md) | Ma'lumotni oldindan yuklab qo'yish (prefetch): har o'qish keshdan | V+N | [RD Prefetch cache](https://redis.io/docs/latest/develop/use-cases/prefetch-cache/) · [RD Prefetch cache (node-redis)](https://redis.io/docs/latest/develop/use-cases/prefetch-cache/nodejs/) · [(Predis)](https://redis.io/docs/latest/develop/use-cases/prefetch-cache/php/) |
 | 19 | [Sessiyalar](19-sessiyalar.md) | Veb-sessiyalarni Redis'da saqlash va muddatini boshqarish | V+N | [RD Session store](https://redis.io/docs/latest/develop/use-cases/session-store/) · [RD Session store (node-redis)](https://redis.io/docs/latest/develop/use-cases/session-store/nodejs/) · [(Predis)](https://redis.io/docs/latest/develop/use-cases/session-store/php/) |
 | 20 | [Rate limiter](20-rate-limiter.md) | So'rovlar sonini cheklash: qat'iy oyna (fixed window), suriluvchi oyna (sliding window), token bucket | V+N | [RD Rate limiter](https://redis.io/docs/latest/develop/use-cases/rate-limiter/) · [RD Rate limiter (node-redis)](https://redis.io/docs/latest/develop/use-cases/rate-limiter/nodejs/) · [(Predis)](https://redis.io/docs/latest/develop/use-cases/rate-limiter/php/) |
-| 21 | Fon ishlari navbati | Ishonchli navbat (`BLMOVE`). Kechiktirilgan ishlar (sorted set) | V+N | [RD Job queue](https://redis.io/docs/latest/develop/use-cases/job-queue/) · [RD Lists](https://redis.io/docs/latest/develop/data-types/lists/) |
+| 21 | [Fon ishlari navbati](21-ishlar-navbati.md) | Ishonchli navbat (`BLMOVE`). Kechiktirilgan ishlar (sorted set) | V+N | [RD Job queue](https://redis.io/docs/latest/develop/use-cases/job-queue/) · [RD Lists](https://redis.io/docs/latest/develop/data-types/lists/) · [RD Job queue (node-redis)](https://redis.io/docs/latest/develop/use-cases/job-queue/nodejs/) · [(Predis)](https://redis.io/docs/latest/develop/use-cases/job-queue/php/) |
 | 22 | Pub/Sub | Kanallar va obunachilar. Yetkazish "ko'pi bilan bir marta" (at-most-once): o'sha payt ulanmagan obunachi xabarni olmaydi. Kalit o'zgarishlari haqida xabar (keyspace notifications) | V+N | [RD Pub/sub](https://redis.io/docs/latest/develop/pubsub/) · [RD Pub/sub messaging](https://redis.io/docs/latest/develop/use-cases/pub-sub/) · [RD Keyspace notifications](https://redis.io/docs/latest/develop/pubsub/keyspace-notifications/) |
 | 23 | Hodisalar oqimi | Stream va consumer group: tartib, qayta o'qish, saqlash hajmi | V+N | [RD Streaming](https://redis.io/docs/latest/develop/use-cases/streaming/) · [RD Streams](https://redis.io/docs/latest/develop/data-types/streams/) |
 | 24 | Reyting jadvali | Sorted set bilan reyting (leaderboard) va foydalanuvchi ma'lumotlari | V+N | [RD Leaderboard](https://redis.io/docs/latest/develop/use-cases/leaderboard/) |
