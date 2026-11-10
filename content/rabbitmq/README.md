@@ -36,7 +36,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - MQTT, STOMP, Federation va Shovel plaginlari, Kubernetes, OAuth 2 va LDAP — maxsus holatlar, hujjatda: [RQ Plugins](https://www.rabbitmq.com/docs/plugins).
 - Symfony Messenger va Laravel navbatlari bilan ulash — shu framework'lar kitoblarida.
 
-> **Holat.** Qo'llanma yozilmoqda: 28/34 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 29/34 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -108,7 +108,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 | 26 | [Foydalanuvchilar va ruxsatlar](26-ruxsatlar.md) | `configure`, `write`, `read` ruxsatlari. `guest` foydalanuvchisi standartda faqat localhost'dan ulana oladi. Parollar | V | [RQ Access Control](https://www.rabbitmq.com/docs/access-control) · [RQ Credentials and Passwords](https://www.rabbitmq.com/docs/passwords) |
 | 27 | [Konfiguratsiya va loglar](27-konfiguratsiya.md) | `rabbitmq.conf` va `advanced.config`. Fayl va kataloglar joyi. Loglash | V | [RQ Configuration](https://www.rabbitmq.com/docs/configure) · [RQ File and Directory Locations](https://www.rabbitmq.com/docs/relocate) · [RQ Logging](https://www.rabbitmq.com/docs/logging) |
 | 28 | [TLS](28-tls.md) | Shifrlangan ulanish (port 5671). Sertifikatlar. TLS muammolarini tekshirish | V | [RQ TLS Support](https://www.rabbitmq.com/docs/ssl) · [RQ Troubleshooting TLS](https://www.rabbitmq.com/docs/troubleshooting-ssl) |
-| 29 | Definitions va zaxira | Navbat, exchange, foydalanuvchi va policy'larni eksport/import qilish (schema definitions). Zaxira nusxa va tiklash | V | [RQ Schema Definitions](https://www.rabbitmq.com/docs/definitions) · [RQ Backup and Restore](https://www.rabbitmq.com/docs/backup) |
+| 29 | [Definitions va zaxira](29-definitions-zaxira.md) | Navbat, exchange, foydalanuvchi va policy'larni eksport/import qilish (schema definitions). Zaxira nusxa va tiklash | V | [RQ Schema Definitions](https://www.rabbitmq.com/docs/definitions) · [RQ Backup and Restore](https://www.rabbitmq.com/docs/backup) |
 
 ## VII qism — Ekspluatatsiya (30–34)
 
