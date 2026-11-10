@@ -65,8 +65,14 @@ jobs:
       - name: Nginx trenajorini saytga qo'shish
         run: rm -rf public/nginx-trenajor && cp -r nginx-trenajor/build/web public/nginx-trenajor
 
+      # Video darslar (~1.4 GB) saytga qo'shilmaydi: ular VPS'dan beriladi (https://kamgapir.uz/video/,
+      # VPS repodan faqat public/video ni sparse checkout qilib, har 15 daqiqada yangilaydi — docs/ish-holati.md).
+      - name: Videolarni artifact'dan chiqarish
+        run: rm -rf public/video
+
       - name: Build
         env:
+          VITE_VIDEO_BASE_URL: https://kamgapir.uz/video/
           BASE_PATH: /${{ github.event.repository.name }}/
           # Settings → Secrets and variables → Actions → Variables (ochiq kalitlar, secret emas)
           VITE_SUPABASE_URL: ${{ vars.VITE_SUPABASE_URL }}
