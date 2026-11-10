@@ -35,7 +35,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - Docker'ning o'zi — **"Docker"** kitobida.
 - Tiered storage (eski ma'lumotni arzon omborga ko'chirish), klasterlar orasida nusxalash (MirrorMaker 2) — katta klasterlar mavzusi, hujjatda: [KD Tiered Storage](https://kafka.apache.org/44/operations/tiered-storage/), [KD Geo-Replication](https://kafka.apache.org/44/operations/geo-replication-cross-cluster-data-mirroring/).
 
-> **Holat.** Qo'llanma yozilmoqda: 13/35 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 14/35 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -82,7 +82,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
-| 14 | Consumer qanday o'qiydi | Pull modeli: consumer hodisalarni o'zi so'rab oladi (`poll`). Consumer pozitsiyasi (position). `auto.offset.reset` | D+J | [KD Design → The Consumer](https://kafka.apache.org/44/design/design/) · [KD Consumer Configs](https://kafka.apache.org/44/configuration/consumer-configs/) |
+| 14 | [Consumer qanday o'qiydi](14-consumer.md) | Pull modeli: consumer hodisalarni o'zi so'rab oladi (`poll`). Consumer pozitsiyasi (position). `auto.offset.reset` | D+J | [KD Design → The Consumer](https://kafka.apache.org/44/design/design/) · [KD Consumer Configs](https://kafka.apache.org/44/configuration/consumer-configs/) |
 | 15 | Consumer group | Har partition guruh ichida bir vaqtda faqat bitta consumer'ga beriladi. Consumer qo'shilganda yoki chiqqanda partition'lar qayta taqsimlanadi (rebalance). Yangi `consumer` protokoli va eski `classic` protokol (yangisi standartda yoqilmagan) | D | [KD Design → The Consumer](https://kafka.apache.org/44/design/design/) · [KD Consumer Rebalance Protocol](https://kafka.apache.org/44/operations/consumer-rebalance-protocol/) |
 | 16 | Offset commit | Avtomatik (`enable.auto.commit`) va qo'lda commit. "Ko'pi bilan bir marta" (at-most-once) va "kamida bir marta" (at-least-once) qayerdan kelib chiqadi. Takror ishlovga tayyor bo'lish | D+J | [KD Design → Message Delivery Semantics](https://kafka.apache.org/44/design/design/) · [KD Consumer Configs](https://kafka.apache.org/44/configuration/consumer-configs/) |
 | 17 | Guruhlarni kuzatish | `kafka-consumer-groups.sh`: a'zolar, offset'lar, lag (consumer qancha orqada qolgani). Offset'ni qayta o'rnatish (reset) | D | [KD Basic Operations](https://kafka.apache.org/44/operations/basic-kafka-operations/) (Checking consumer position, Managing consumer groups) |
