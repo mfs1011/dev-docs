@@ -12,8 +12,10 @@ mkdir -p build
 cd build
 [ -f nginx-$V.tar.gz ] || curl -fsSLO https://nginx.org/download/nginx-$V.tar.gz
 echo "$SHA256  nginx-$V.tar.gz" | sha256sum -c -
-# --network host: konteyner host DNS'idan foydalanadi (GitHub Actions'da standart bridge tarmog'ida DNS topilmadi)
-docker run --rm --network host --platform linux/386 -v "$PWD:/w" -w /w debian:bookworm setarch i686 sh -euc "
+# seccomp=unconfined: GitHub Actions runner'ida (Docker 29.4, Azure 7.0 yadro) standart seccomp profili i386 konteynerda
+# DNS'ni ishlatmaydi ("Temporary failure resolving") — amd64 konteynerda ishlaydi, i386 da faqat seccomp'siz.
+# Konteyner faqat Debian paketlari bilan nginx'ni yig'adi.
+docker run --rm --security-opt seccomp=unconfined --platform linux/386 -v "$PWD:/w" -w /w debian:bookworm setarch i686 sh -euc "
   export DEBIAN_FRONTEND=noninteractive
   apt-get -o Acquire::Retries=3 update -qq && apt-get -o Acquire::Retries=3 install -y -qq build-essential libpcre2-dev libssl-dev zlib1g-dev > /dev/null
   rm -rf /tmp/b && mkdir /tmp/b && tar -xzf nginx-$V.tar.gz -C /tmp/b && cd /tmp/b/nginx-$V

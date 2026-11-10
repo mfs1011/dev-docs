@@ -1,0 +1,21 @@
+# Trenajor yig'ish skriptlari o'zgargan PR'da nginx'ni GitHub runner'ida yig'ib ko'radi (saytga deploy qilmaydi).
+# Deploy (deploy.yml) faqat main'da ishlaydi — bu tekshiruv xatoni merge'dan oldin ko'rsatadi.
+name: Trenajor tekshiruvi
+
+on:
+  pull_request:
+    paths:
+      - 'nginx-trenajor/**'
+      - '.github/workflows/trenajor-tekshiruv.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  nginx:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: nginx'ni yig'ish (i386)
+        run: sh nginx-trenajor/scripts/nginx-yigish.sh
