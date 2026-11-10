@@ -35,7 +35,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - Docker'ning o'zi — **"Docker"** kitobida.
 - Tiered storage (eski ma'lumotni arzon omborga ko'chirish), klasterlar orasida nusxalash (MirrorMaker 2) — katta klasterlar mavzusi, hujjatda: [KD Tiered Storage](https://kafka.apache.org/44/operations/tiered-storage/), [KD Geo-Replication](https://kafka.apache.org/44/operations/geo-replication-cross-cluster-data-mirroring/).
 
-> **Holat.** Qo'llanma yozilmoqda: 9/35 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 10/35 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -73,7 +73,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
-| 10 | Producer qanday yuboradi | Hodisalarni to'plab (batch) yuborish: `batch.size`, `linger.ms`. Siqish (`compression.type`). Asinxron yuborish | D+J | [KD Design → Efficiency, The Producer](https://kafka.apache.org/44/design/design/) · [KD Producer Configs](https://kafka.apache.org/44/configuration/producer-configs/) |
+| 10 | [Producer qanday yuboradi](10-producer.md) | Hodisalarni to'plab (batch) yuborish: `batch.size`, `linger.ms`. Siqish (`compression.type`). Asinxron yuborish | D+J | [KD Design → Efficiency, The Producer](https://kafka.apache.org/44/design/design/) · [KD Producer Configs](https://kafka.apache.org/44/configuration/producer-configs/) |
 | 11 | Ishonchli yuborish | `acks` (0, 1, all) va `min.insync.replicas`. Qayta urinish takror hodisa berishi mumkin. Idempotent producer (`enable.idempotence`) takrorni yo'qotadi | D+J | [KD Design → Message Delivery Semantics, Replication](https://kafka.apache.org/44/design/design/) · [KD Producer Configs](https://kafka.apache.org/44/configuration/producer-configs/) |
 | 12 | Java'dan hodisa yuborish | Producer API: `KafkaProducer`, `ProducerRecord`, callback. Serializer'lar. Producer'ni to'g'ri yopish | D+J | [KD APIs → Producer API](https://kafka.apache.org/44/apis/) · [KD Producer Configs](https://kafka.apache.org/44/configuration/producer-configs/) |
 | 13 | Tranzaksiyalar va exactly-once | `transactional.id`. Bir nechta topic'ga bir yo'la (atomik) yozish. O'qish → ishlash → yozish zanjiri. Consumer'da `isolation.level=read_committed` | D+J | [KD Design → Using Transactions](https://kafka.apache.org/44/design/design/) · [KD Transaction Protocol](https://kafka.apache.org/44/operations/transaction-protocol/) |
