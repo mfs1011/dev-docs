@@ -35,7 +35,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 
 - Ma'lumotlar bazasiga yozish va xabar yuborishni bitta atomik amalga birlashtirish (transactional outbox) va bazadagi o'zgarishlarni oqimga uzatish (CDC). Bular uch asbobning birortasining rasmiy hujjatida yoritilmagan, shuning uchun kiritilmadi.
 
-> **Holat.** Qo'llanma yozilmoqda: 13/15 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 14/15 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -75,7 +75,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 | 10 | [Xabar qancha saqlanadi](10-saqlash.md) | Navbatda xabar tasdiqlangach o'chadi. Stream va jurnalda — muddat yoki hajm chegarasigacha qoladi va qayta o'qiladi. Redis stream'ni qisqartirish (`XTRIM`) | V+D | [RQ Streams](https://www.rabbitmq.com/docs/streams) · [KD Topic Configs](https://kafka.apache.org/44/configuration/topic-configs/) · [RD Streams](https://redis.io/docs/latest/develop/data-types/streams/) |
 | 11 | [Ishni ko'p consumer'ga bo'lish](11-bolish.md) | RabbitMQ: navbatdagi consumer'lar va prefetch. Kafka: consumer group'da har partition bitta consumer'ga beriladi; share group'da bu cheklov yo'q. Redis stream'da consumer group | V+D | [RQ Consumer Prefetch](https://www.rabbitmq.com/docs/consumer-prefetch) · [KD Design → The Consumer, The Share Consumer](https://kafka.apache.org/44/design/design/) · [RD Streams](https://redis.io/docs/latest/develop/data-types/streams/) |
 | 12 | [Consumer ulgurmasa](12-ulgurmasa.md) | RabbitMQ'da flow control va xotira/disk ogohlantirishlari. Kafka'da consumer lag'ni kuzatish. Redis'da xotira chegarasi | V+D | [RQ Flow Control](https://www.rabbitmq.com/docs/flow-control) · [RQ Memory and Disk Alarms](https://www.rabbitmq.com/docs/alarms) · [KD Basic Operations](https://kafka.apache.org/44/operations/basic-kafka-operations/) · [RD Key eviction](https://redis.io/docs/latest/develop/reference/eviction/) |
-| 13 | Server o'chsa nima yo'qoladi | RabbitMQ'da quorum navbat (Raft), Kafka'da replikatsiya (ISR), Redis'da asinxron replika va Sentinel. Har birida nosozlikda qaysi xabar yo'qolishi mumkin | V+D | [RQ Quorum Queues](https://www.rabbitmq.com/docs/quorum-queues) · [KD Design → Replication](https://kafka.apache.org/44/design/design/) · [RD Replication](https://redis.io/docs/latest/operate/oss_and_stack/management/replication/) · [RD Sentinel](https://redis.io/docs/latest/operate/oss_and_stack/management/sentinel/) |
+| 13 | [Server o'chsa nima yo'qoladi](13-server-ochsa.md) | RabbitMQ'da quorum navbat (Raft), Kafka'da replikatsiya (ISR), Redis'da asinxron replika va Sentinel. Har birida nosozlikda qaysi xabar yo'qolishi mumkin | V+D | [RQ Quorum Queues](https://www.rabbitmq.com/docs/quorum-queues) · [KD Design → Replication](https://kafka.apache.org/44/design/design/) · [RD Replication](https://redis.io/docs/latest/operate/oss_and_stack/management/replication/) · [RD Sentinel](https://redis.io/docs/latest/operate/oss_and_stack/management/sentinel/) |
 
 ## IV qism — Tanlash (14–15)
 
