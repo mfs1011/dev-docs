@@ -1374,6 +1374,125 @@ export const QADAMLI = {
       },
     ],
   },
+  // Kafka 06-bob: kalit xeshi bo'yicha partition; partition qo'shilgach o'sha kalit boshqa partition'ga tushadi (VPS, Kafka 4.4.0)
+  'kalit-partition': {
+    panel: 'tolovlar topic',
+    qadamlar: [
+      {
+        cmd: ['kafka-topics.sh --create --topic tolovlar --partitions 3'],
+        chiqish: 'Created topic tolovlar.',
+        holat: [{ k: 'p0', yol: 'partition 0', qiymat: "bo'sh" }, { k: 'p1', yol: 'partition 1', qiymat: "bo'sh" }, { k: 'p2', yol: 'partition 2', qiymat: "bo'sh" }],
+        izoh: '3 partition’li topic.',
+      },
+      {
+        cmd: ['printf "ali:1 vali:1 soli:1 ali:2 vali:2 ali:3" | kafka-console-producer.sh … parse.key=true'],
+        chiqish: 'tolovlar:0:5\ntolovlar:1:0\ntolovlar:2:1',
+        holat: [{ k: 'p0', yol: 'partition 0', qiymat: 'ali ×3, vali ×2 — yozilgan tartibda', belgi: 'yangi' }, { k: 'p1', yol: 'partition 1', qiymat: "bo'sh" }, { k: 'p2', yol: 'partition 2', qiymat: 'soli ×1', belgi: 'yangi' }],
+        izoh: 'Kalit xeshi partition’ni tanlaydi: bir xil kalit — doim bir xil partition, tartib saqlanadi. Taqsimot teng bo‘lishi shart emas.',
+      },
+      {
+        cmd: ['kafka-topics.sh --alter --topic tolovlar --partitions 6', 'printf "ali:4 vali:3 soli:2" | kafka-console-producer.sh …'],
+        chiqish: 'Partition:3\tOffset:0\tali\t4-tolov\nPartition:3\tOffset:1\tvali\t3-tolov\nPartition:5\tOffset:0\tsoli\t2-tolov',
+        holat: [{ k: 'p0', yol: 'partition 0', qiymat: 'ali 1–3, vali 1–2 (eski)' }, { k: 'p2', yol: 'partition 2', qiymat: 'soli 1 (eski)' }, { k: 'p3', yol: 'partition 3', qiymat: 'ali 4, vali 3 — YANGI joy', belgi: 'xato' }, { k: 'p5', yol: 'partition 5', qiymat: 'soli 2 — YANGI joy', belgi: 'xato' }],
+        izoh: 'Partition soni o‘zgardi — xesh boshqa partition’ga olib bordi. Bitta mijozning hodisalari endi ikki partition’da: ular orasida tartib kafolati yo‘q.',
+      },
+    ],
+  },
+  // Kafka 15-bob: consumer group'ga a'zo qo'shilganda va chiqqanda partition'lar qayta taqsimlanadi (consumer protokoli, VPS)
+  'consumer-group': {
+    panel: 'hisobot guruhi (3 partition)',
+    qadamlar: [
+      {
+        cmd: ['java … Azo.java A consumer 75'],
+        chiqish: '20:54:55 A: berildi [0, 1, 2]',
+        holat: [{ k: 'a', yol: 'A', qiymat: 'partition 0, 1, 2', belgi: 'yangi' }],
+        izoh: 'Guruhda yagona a’zo — hamma partition unga.',
+      },
+      {
+        cmd: ['java … Azo.java B consumer 30'],
+        chiqish: '20:55:15 A: olindi [2]\n20:55:15 B: berildi [2]',
+        holat: [{ k: 'a', yol: 'A', qiymat: 'partition 0, 1' }, { k: 'b', yol: 'B', qiymat: 'partition 2', belgi: 'yangi' }],
+        izoh: 'B qo‘shildi: A dan faqat bitta partition olindi. A ning qolganlari to‘xtamadi — inkremental rebalance.',
+      },
+      {
+        cmd: ['java … Azo.java C consumer 45'],
+        chiqish: '20:55:30 A: olindi [1]\n20:55:32 C: berildi [1]',
+        holat: [{ k: 'a', yol: 'A', qiymat: 'partition 0' }, { k: 'b', yol: 'B', qiymat: 'partition 2' }, { k: 'c', yol: 'C', qiymat: 'partition 1', belgi: 'yangi' }],
+        izoh: '3 a’zo, 3 partition — har biriga bittadan.',
+      },
+      {
+        cmd: ['# B ishini tugatdi'],
+        chiqish: '20:55:36 B: chiqdi, oxirida [2]\n20:55:37 C: berildi [2]',
+        holat: [{ k: 'a', yol: 'A', qiymat: 'partition 0' }, { k: 'b', yol: 'B', qiymat: 'chiqdi', belgi: 'yoq' }, { k: 'c', yol: 'C', qiymat: 'partition 1, 2', belgi: 'yangi' }],
+        izoh: 'B ning partition’i qolgan a’zoga o‘tdi — hodisalar o‘qilmay qolmaydi.',
+      },
+      {
+        cmd: ['java … Azo.java D consumer 30'],
+        chiqish: '20:55:48 C: olindi [2]\n20:55:51 D: berildi [2]',
+        holat: [{ k: 'a', yol: 'A', qiymat: 'partition 0' }, { k: 'c', yol: 'C', qiymat: 'partition 1' }, { k: 'd', yol: 'D', qiymat: 'partition 2', belgi: 'yangi' }],
+        izoh: 'Yangi a’zo D — yana teng taqsimot.',
+      },
+    ],
+  },
+  // Kafka 16-bob: offset commit ishlovdan oldin (yo'qotish) yoki keyin (takror) — "qulash" bilan (VPS)
+  'offset-commit': {
+    panel: 'tolovlar: 5 hodisa',
+    qadamlar: [
+      {
+        cmd: ['java … Ishlov.java oldin tolov-3'],
+        chiqish: 'ishlandi: tolov-1 (offset 0)\nishlandi: tolov-2 (offset 1)\nQULADI: tolov-3 ishlanmadi',
+        holat: [{ k: 'c', yol: 'saqlangan offset', qiymat: '3 — tolov-3 "o‘qildi" deb belgilangan', belgi: 'ochiq' }, { k: 'i', yol: 'ishlangan', qiymat: 'tolov-1, tolov-2' }],
+        izoh: 'Avval commit, keyin ishlov: tolov-3 belgilandi, lekin ishlanmasdan jarayon quladi.',
+      },
+      {
+        cmd: ['java … Ishlov.java oldin'],
+        chiqish: 'ishlandi: tolov-4 (offset 3)\nishlandi: tolov-5 (offset 4)',
+        holat: [{ k: 'i', yol: 'ishlangan', qiymat: 'tolov-1, 2, 4, 5' }, { k: 'y', yol: 'tolov-3', qiymat: 'YO‘QOLDI', belgi: 'xato' }],
+        izoh: 'Qayta ishga tushgan consumer saqlangan joydan (3) davom etdi — tolov-3 hech qachon ishlanmadi: ko‘pi bilan bir marta.',
+      },
+      {
+        cmd: ['java … Ishlov.java keyin tolov-3'],
+        chiqish: 'ishlandi: tolov-1 (offset 0)\nishlandi: tolov-2 (offset 1)\nishlandi: tolov-3 (offset 2)\nQULADI: tolov-3 commit qilinmadi',
+        holat: [{ k: 'c', yol: 'saqlangan offset', qiymat: '2 — tolov-3 hali belgilanmagan', belgi: 'ochiq' }, { k: 'i', yol: 'ishlangan', qiymat: 'tolov-1, 2, 3' }],
+        izoh: 'Avval ishlov, keyin commit: tolov-3 ishlandi, lekin belgilanmasdan quladi.',
+      },
+      {
+        cmd: ['java … Ishlov.java keyin'],
+        chiqish: 'ishlandi: tolov-3 (offset 2)\nishlandi: tolov-4 (offset 3)\nishlandi: tolov-5 (offset 4)',
+        holat: [{ k: 'i', yol: 'ishlangan', qiymat: 'tolov-1, 2, 3, 4, 5' }, { k: 'y', yol: 'tolov-3', qiymat: 'IKKI MARTA ishlandi', belgi: 'xato' }],
+        izoh: 'Hech narsa yo‘qolmadi, lekin tolov-3 takrorlandi: kamida bir marta. Ishlov idempotent bo‘lishi kerak.',
+      },
+    ],
+  },
+  // Kafka 19-bob: share group — bitta partition'ni bir nechta a'zo birga o'qiydi, har yozuv alohida tasdiqlanadi (VPS)
+  'share-group': {
+    panel: 'vazifalar: 1 partition, 3 a’zo (A, B, C)',
+    qadamlar: [
+      {
+        cmd: ['java … Ulush.java A|B|C 60   # uchala a’zo bitta partition’ga'],
+        holat: [{ k: 'a', yol: 'A', qiymat: 'kutmoqda' }, { k: 'b', yol: 'B', qiymat: 'kutmoqda' }, { k: 'c', yol: 'C', qiymat: 'kutmoqda' }],
+        izoh: 'Consumer group’da bitta partition faqat bitta a’zoga berilardi. Share group’da hammasi bitta partition’dan o‘qiy oladi.',
+      },
+      {
+        cmd: ['# 18 ta vazifa yozildi'],
+        chiqish: '21:19:48 C: p0@0 v1, urinish 1 -> ACCEPT\n…\n21:19:50 C: p0@5 xato-6, urinish 1 -> release',
+        holat: [{ k: 'c', yol: 'C', qiymat: 'yozuvlarni qulf bilan oldi, har birini alohida tasdiqlaydi', belgi: 'yangi' }, { k: 'x', yol: 'xato-6', qiymat: 'RELEASE — qayta urinishga qaytdi', belgi: 'ochiq' }],
+        izoh: 'C bir yo‘la ko‘p yozuvni oldi (qulf bilan). xato-6 ishlanmadi — RELEASE: u boshqa yetkazish uchun bo‘shatildi.',
+      },
+      {
+        cmd: ['# xato-6 yana yetkazildi'],
+        chiqish: '21:19:54 B: p0@5 xato-6, urinish 2 -> release\n21:19:54 B: p0@5 xato-6, urinish 3 -> reject',
+        holat: [{ k: 'b', yol: 'B', qiymat: 'xato-6 ni oldi — urinish 2, 3', belgi: 'yangi' }, { k: 'x', yol: 'xato-6', qiymat: 'REJECT — boshqa yetkazilmaydi', belgi: 'xato' }],
+        izoh: 'Qaytarilgan yozuv boshqa a’zoga (B) berildi: urinishlar sanaldi. 3-urinishda REJECT.',
+      },
+      {
+        cmd: ['kafka-console-consumer.sh --topic dlq.vazifalar …'],
+        chiqish: '__dlq.errors.offset:5\n__dlq.errors.delivery.count:3\n__dlq.errors.message:Offset rejected by client.\nxato-6',
+        holat: [{ k: 'd', yol: 'dlq.vazifalar', qiymat: 'xato-6 + manbasi va urinishlar soni', belgi: 'yangi' }],
+        izoh: 'Rad etilgan yozuv dead-letter topic’ga tushdi — keyin tekshirish uchun.',
+      },
+    ],
+  },
   // Xabar tizimlari 02-bob: bitta xabar — ish navbatida bitta ishchiga, pub/sub'da hammaga, jurnalda saqlanib qoladi (RabbitMQ, VPS)
   'uch-model': {
     panel: 'xabar qayerda',
@@ -1401,6 +1520,36 @@ export const QADAMLI = {
         chiqish: "Message published and routed successfully\n1-o'quvchi: buyurtma #1\n2-o'quvchi (keyinroq): buyurtma #1",
         holat: [{ k: 's', yol: 'tarix (stream)', qiymat: 'buyurtma #1 — saqlanib qoldi', belgi: 'yangi' }, { k: 'o1', yol: "1-o'quvchi", qiymat: 'o‘qidi' }, { k: 'o2', yol: "2-o'quvchi", qiymat: 'keyinroq ham o‘qidi', belgi: 'yangi' }],
         izoh: 'Jurnal (stream): o‘qish xabarni o‘chirmaydi — keyin kelgan o‘quvchi ham boshidan o‘qiy oladi.',
+      },
+    ],
+  },
+  // Kafka 20-bob: broker tushganda ISR qisqaradi va yetakchi ISR'dagi boshqa replikaga o'tadi (3 tugunli klaster, VPS)
+  'isr-leader': {
+    panel: 'buyurtmalar: 3 partition, RF 3, min ISR 2',
+    qadamlar: [
+      {
+        cmd: ['kafka-topics.sh --describe --topic buyurtmalar'],
+        chiqish: 'Partition: 0\tLeader: 3\tReplicas: 3,1,2\tIsr: 3,1,2\nPartition: 1\tLeader: 1\tReplicas: 1,2,3\tIsr: 1,2,3\nPartition: 2\tLeader: 2\tReplicas: 2,3,1\tIsr: 2,3,1',
+        holat: [{ k: 'p0', yol: 'partition 0', qiymat: 'yetakchi 3, ISR 3,1,2' }, { k: 'p1', yol: 'partition 1', qiymat: 'yetakchi 1, ISR 1,2,3' }, { k: 'p2', yol: 'partition 2', qiymat: 'yetakchi 2, ISR 2,3,1' }],
+        izoh: 'Yetakchilar uchala brokerga teng taqsimlangan. Hamma replika sinxron.',
+      },
+      {
+        cmd: ['docker compose stop kafka-2'],
+        chiqish: 'Partition: 0\tLeader: 3\tReplicas: 3,1,2\tIsr: 3,1\nPartition: 1\tLeader: 1\tReplicas: 1,2,3\tIsr: 1,3\nPartition: 2\tLeader: 3\tReplicas: 2,3,1\tIsr: 3,1',
+        holat: [{ k: 'p0', yol: 'partition 0', qiymat: 'ISR 3,1 — 2 chiqdi', belgi: 'ochiq' }, { k: 'p1', yol: 'partition 1', qiymat: 'ISR 1,3 — 2 chiqdi', belgi: 'ochiq' }, { k: 'p2', yol: 'partition 2', qiymat: 'yetakchi 2 → 3 (ISR’dan)', belgi: 'xato' }],
+        izoh: '2-broker tushdi: u hamma ISR’dan chiqarildi. U yetakchi bo‘lgan partition 2 da yangi yetakchi — ISR’dagi 3. Yozish davom etadi: ISR 2 ≥ min ISR 2.',
+      },
+      {
+        cmd: ['docker compose start kafka-2'],
+        chiqish: 'Partition: 2\tLeader: 3\tReplicas: 2,3,1\tIsr: 1,2,3',
+        holat: [{ k: 'p2', yol: 'partition 2', qiymat: 'ISR to‘ldi, yetakchi hali 3', belgi: 'yangi' }],
+        izoh: 'Qaytgan broker yetakchidan qolgan yozuvlarni olib, ISR’ga qaytdi. Yetakchilik o‘zi qaytmadi.',
+      },
+      {
+        cmd: ['kafka-leader-election.sh --election-type preferred --all-topic-partitions'],
+        chiqish: 'Successfully completed leader election (PREFERRED) for partitions buyurtmalar-2\nPartition: 2\tLeader: 2\tReplicas: 2,3,1\tIsr: 1,2,3',
+        holat: [{ k: 'p2', yol: 'partition 2', qiymat: 'yetakchi 2 — afzal replika', belgi: 'yangi' }],
+        izoh: 'Afzal (preferred) yetakchi — Replicas ro‘yxatidagi birinchisi. Saylov yuklamani yana teng taqsimladi.',
       },
     ],
   },
