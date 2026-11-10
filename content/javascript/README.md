@@ -100,7 +100,7 @@ Har bob batafsil yoziladi: tushuncha, ichki mexanizm (spetsifikatsiya darajasida
 | 41 | [Rekursiya va stek](41-rekursiya.md) | Rekursiya stekda qanday ko'rinadi, chuqurlik chegarasi, rekursiv tuzilmalar | MDN *Functions* ("Recursion"), *Execution model* | `/recursion` |
 | 42 | [Rest va spread](42-rest-spread.md) | `...args`, `arguments` obyekti, spread massiv va obyektda | MDN *Rest parameters*, *Spread syntax* | `/rest-parameters-spread` |
 | 43 | [Leksik muhit va closure](43-closure.md) | Environment Record, `[[Environment]]`, closure qanday hosil bo'ladi, sikldagi klassik xato | ECMA-262 *Environment Records*; MDN *Closures* | `/closure` |
-| 44 | Eski `var` | Funksiya scope, hoisting, IIFE, nega endi ishlatilmaydi | MDN `var` | `/var` |
+| 44 | [Eski `var`](44-var.md) | Funksiya scope, hoisting, IIFE, nega endi ishlatilmaydi | MDN `var` | `/var` |
 | 45 | Global obyekt | `globalThis`, `window`, Node'da `global`, global o'zgaruvchilar | MDN `globalThis` | `/global-object` |
 | 46 | Funksiya obyekti | `name`, `length`, xossalar, Named Function Expression | MDN `Function` | `/function-object` |
 | 47 | `new Function` va `eval` | Satrdan kod, closure'siz scope, xavfsizlik | MDN `Function()` konstruktori, `eval()` | `/new-function`, `/eval` |

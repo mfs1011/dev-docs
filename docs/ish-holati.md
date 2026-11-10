@@ -255,7 +255,7 @@ Ikkinchi noutbukda boshlashdan oldin shu faylni, `CLAUDE.md` ni va kitobning `RE
 
 - 1–39-boblar 2026-10-15 da yozilgan (merge qilingan). Davomi — branch `docs/javascript-40` (2026-11-11): 40-bobdan.
 - Misollar VPS'da (`/root/js`, Node 26.13.0) ishga tushiriladi — stack trace'dagi yo'llarda mahalliy foydalanuvchi nomi chiqmasligi uchun.
-- Tayyor: 1–43-boblar.
+- Tayyor: 1–44-boblar.
 
 ## Xabar tizimlari kitobi (`content/xabar-tizimlari/`)
 
