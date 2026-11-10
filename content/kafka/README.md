@@ -35,7 +35,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - Docker'ning o'zi — **"Docker"** kitobida.
 - Tiered storage (eski ma'lumotni arzon omborga ko'chirish), klasterlar orasida nusxalash (MirrorMaker 2) — katta klasterlar mavzusi, hujjatda: [KD Tiered Storage](https://kafka.apache.org/44/operations/tiered-storage/), [KD Geo-Replication](https://kafka.apache.org/44/operations/geo-replication-cross-cluster-data-mirroring/).
 
-> **Holat.** Qo'llanma yozilmoqda: 35/35 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma tayyor: 35/35 bob.
 
 ---
 
