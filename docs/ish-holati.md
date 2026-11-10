@@ -243,6 +243,11 @@ Ikkinchi noutbukda boshlashdan oldin shu faylni, `CLAUDE.md` ni va kitobning `RE
 - Navbat: til va domen talab qilmaydigan V-boblar — 5, 7, 8, 16–18 (ilova — Python standart kutubxonasidagi kichik server, Nginx kitobidagi kabi). 3-bob (deploy foydalanuvchisi, SSH kalit, firewall) — VPS'ga kirishni o'zgartiradi, egasining tasdig'i kerak. 2, 4 (domen), 6 (Node.js/PHP — misollar tili qarori), 9–15, 19, 21–22 (GitHub sinov repozitoriysi) — egasining qarori kutilmoqda.
 - Manba: GitHub hujjati — `raw.githubusercontent.com/github/docs/main/content/actions/...` (markdown).
 
+## Xabar tizimlari kitobi (`content/xabar-tizimlari/`)
+
+- Branch `docs/xabar-tizimlari-1`. Tayyor: 1–3, 14-boblar (2026-11-10). Qolgan 4–13, 15 — V+D (Kafka ikkinchi noutbukda). 2-bobda uch model RabbitMQ'da VPS'da ko'rsatildi (README'da "Muhit" — V) va `uch-model` qadamli animatsiyasi (`src/animatsiya/qadamlar.js`) qo'shildi.
+- Kafka qismlari (V+D boblar) — ikkinchi noutbukda (Docker). Bu kompyuterda: tushuncha boblari (1–3, 14) va Redis/RabbitMQ qismlari.
+
 ## RabbitMQ kitobi (`content/rabbitmq/`)
 
 - Branch `docs/rabbitmq-1`. Tayyor: 34/34 (2026-11-10). VPS: `disk_free_limit` 2GB, anonim kirish o'chirilgan, `LimitNOFILE=64000` (systemd override). 32-bobdagi sinov klasteri (n1, n2) olib tashlangan; stream coordinator `force_shrink` bilan tiklangan, tugun yana yakka. `rabbitmq_prometheus` yoqilgan (15692). TLS yoqilgan: 5671 (mTLS, TLSv1.2/1.3), sertifikatlar `/etc/rabbitmq/tls/`, klient sertifikati `/root/tls-gen/basic/result/`. Stream plagini yoqilgan (5552), `/etc/rabbitmq/rabbitmq.conf`: `stream.advertised_host = localhost`; `rabbitmq-stream-js-client` 1.1.0. Management plagini yoqilgan (15672, ufw yopiq), `rabbitmqadmin` 2.35.0 — `/usr/local/bin`. Loyiha `/root/rabbit-ilova` (`amqplib` 2.3.1, `php-amqplib` 3.7.5). Misollar Node.js (`amqplib`) va PHP (`php-amqplib`).
