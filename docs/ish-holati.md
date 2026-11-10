@@ -240,5 +240,5 @@ Ikkinchi noutbukda boshlashdan oldin shu faylni, `CLAUDE.md` ni va kitobning `RE
 ## Kafka kitobi (`content/kafka/`)
 
 - **Egasining qarori (2026-11-10): Kafka VPS'da.** `apache/kafka:4.4.0` konteyneri `kafka` (`docker run -d --name kafka -p 127.0.0.1:9092:9092 -e KAFKA_HEAP_OPTS="-Xmx256m -Xms256m" --restart unless-stopped`). Port faqat 127.0.0.1 da (Docker ufw'ni chetlab o'tadi — tashqariga ochilmasin). Konteyner ~330 MB xotira.
-- Branch `docs/kafka-1`. Tayyor: 1–10-boblar (2026-11-10; Java misollari `/root/kafka-java/`, `java -cp '/opt/kafka-tgz/kafka_2.13-4.4.0/libs/*' X.java`; 6 — `kalit-partition` animatsiyasi). VPS'ga `openjdk-25-jdk-headless` o'rnatildi; arxiv `/opt/kafka-tgz/kafka_2.13-4.4.0` (CLI vositalari uchun ham).
+- Branch `docs/kafka-1`. Tayyor: 1–11-boblar (2026-11-10; Java misollari `/root/kafka-java/`, `java -cp '/opt/kafka-tgz/kafka_2.13-4.4.0/libs/*' X.java`; 6 — `kalit-partition` animatsiyasi). VPS'ga `openjdk-25-jdk-headless` o'rnatildi; arxiv `/opt/kafka-tgz/kafka_2.13-4.4.0` (CLI vositalari uchun ham).
 - Xabar tizimlari'ning V+D boblari ham shu VPS Kafka'si bilan qilinadi.
