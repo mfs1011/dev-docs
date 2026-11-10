@@ -35,7 +35,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - Docker'ning o'zi — **"Docker"** kitobida.
 - Tiered storage (eski ma'lumotni arzon omborga ko'chirish), klasterlar orasida nusxalash (MirrorMaker 2) — katta klasterlar mavzusi, hujjatda: [KD Tiered Storage](https://kafka.apache.org/44/operations/tiered-storage/), [KD Geo-Replication](https://kafka.apache.org/44/operations/geo-replication-cross-cluster-data-mirroring/).
 
-> **Holat.** Qo'llanma yozilmoqda: 20/35 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 21/35 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -94,7 +94,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
 | 20 | [Replikatsiya](20-replikatsiya.md) | Leader va follower replikalar. ISR (in-sync replicas) — leader'dan orqada qolmagan replikalar. `replication.factor` va `min.insync.replicas` birga qanday ishlaydi | D | [KD Design → Replication](https://kafka.apache.org/44/design/design/) |
-| 21 | KRaft: controller'lar | `process.roles` (broker, controller). Controller kvorumi metadata'ni saqlaydi. Tugunni formatlash (`kafka-storage.sh`). `kafka-metadata-quorum.sh` | D | [KD KRaft](https://kafka.apache.org/44/operations/kraft/) |
+| 21 | [KRaft: controller'lar](21-kraft.md) | `process.roles` (broker, controller). Controller kvorumi metadata'ni saqlaydi. Tugunni formatlash (`kafka-storage.sh`). `kafka-metadata-quorum.sh` | D | [KD KRaft](https://kafka.apache.org/44/operations/kraft/) |
 | 22 | Uch tugunli klaster | Rasmiy Docker Compose misollari: combined (broker va controller bitta jarayonda) va isolated (alohida) rejimlar. Topic'ni 3 ta replika bilan yaratish | D | [KD Docker](https://kafka.apache.org/44/getting-started/docker/) · [KR docker/examples](https://github.com/apache/kafka/tree/trunk/docker/examples) |
 | 23 | Tugun ishdan chiqsa | Yangi leader saylanadi. Unclean leader election va ma'lumot yo'qotish xavfi. Tugunni to'g'ri o'chirish (graceful shutdown). Eligible Leader Replicas | D | [KD Design → Replication](https://kafka.apache.org/44/design/design/) · [KD Basic Operations](https://kafka.apache.org/44/operations/basic-kafka-operations/) · [KD Eligible Leader Replicas](https://kafka.apache.org/44/operations/eligible-leader-replicas/) |
 | 24 | Klasterni kengaytirish | Yangi broker o'z-o'zidan partition olmaydi. Partition'larni ko'chirish (`kafka-reassign-partitions.sh`). Replikatsiya faktorini oshirish. Ko'chirish paytida tarmoqni cheklash | D | [KD Basic Operations](https://kafka.apache.org/44/operations/basic-kafka-operations/) (Expanding your cluster, Increasing replication factor) |

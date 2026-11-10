@@ -132,7 +132,7 @@ acks=all: xabar 3 -> offset 2
 $ docker exec kafka /opt/kafka/bin/kafka-topics.sh --bootstrap-server localhost:9092 --delete --topic ikki-nusxa-kerak
 ```
 
-Kuzatildi: topic'da `min.insync.replicas=2`, lekin replika va ISR — 1 ta. Shunga qaramay `acks=all` yozuvlari muvaffaqiyatli o'tdi. KD qoidasiga ko'ra `NotEnoughReplicas` kutilgan edi. Bu xatti-harakatning sababini rasmiy hujjatda topa olmadik. 4.x'dagi Eligible Leader Replicas (ELR) o'zgarishlari ham buni tushuntirmaydi. Shuning uchun `min.insync.replicas` ni **ko'p tugunli** klasterda sinash kerak (22–23-boblar), bitta tugunda emas.
+Kuzatildi: topic'da `min.insync.replicas=2`, lekin replika va ISR — 1 ta. Shunga qaramay `acks=all` yozuvlari muvaffaqiyatli o'tdi. KD qoidasiga ko'ra `NotEnoughReplicas` kutilgan edi. Bu xatti-harakatning sababini rasmiy hujjatda topa olmadik. 4.x'dagi Eligible Leader Replicas (ELR) o'zgarishlari ham buni tushuntirmaydi. Shuning uchun `min.insync.replicas` ni **ko'p tugunli** klasterda sinash kerak, bitta tugunda emas: 20-bobda 3 tugunli klasterda `NotEnoughReplicasException` kutilganidek chiqdi.
 
 ## Variantlar
 
