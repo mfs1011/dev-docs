@@ -35,7 +35,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - Docker'ning o'zi — **"Docker"** kitobida.
 - Tiered storage (eski ma'lumotni arzon omborga ko'chirish), klasterlar orasida nusxalash (MirrorMaker 2) — katta klasterlar mavzusi, hujjatda: [KD Tiered Storage](https://kafka.apache.org/44/operations/tiered-storage/), [KD Geo-Replication](https://kafka.apache.org/44/operations/geo-replication-cross-cluster-data-mirroring/).
 
-> **Holat.** Qo'llanma yozilmoqda: 34/35 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 35/35 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -118,7 +118,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 | 32 | [Kvotalar va bir nechta jamoa](32-kvotalar.md) | Producer va consumer tezligini cheklash (kvota). Topic nomlari bilan jamoalarni ajratish (multi-tenancy) | D | [KD Design → Quotas](https://kafka.apache.org/44/design/design/) · [KD Basic Operations](https://kafka.apache.org/44/operations/basic-kafka-operations/) (Setting quotas) · [KD Multi-Tenancy](https://kafka.apache.org/44/operations/multi-tenancy/) |
 | 33 | [Monitoring](33-monitoring.md) | JMX metrikalari. Broker, producer va consumer'ning asosiy metrikalari. Consumer lag | D | [KD Monitoring](https://kafka.apache.org/44/operations/monitoring/) |
 | 34 | [Server, disk va Java](34-server-disk-java.md) | Kafka xotira o'rniga OS'ning sahifa keshiga (page cache) tayanadi. Disk va fayl tizimi (XFS, ext4). Java versiyasi va JVM sozlamalari | D | [KD Hardware and OS](https://kafka.apache.org/44/operations/hardware-and-os/) · [KD Java Version](https://kafka.apache.org/44/operations/java-version/) · [KD Design → Persistence](https://kafka.apache.org/44/design/design/) |
-| 35 | Yangilash | Tugunlarni birma-bir yangilash (rolling upgrade). Dastur va metadata versiyalari. Klient va broker mosligi | D | [KD Upgrading](https://kafka.apache.org/44/getting-started/upgrade/) · [KD Compatibility](https://kafka.apache.org/44/getting-started/compatibility/) |
+| 35 | [Yangilash](35-yangilash.md) | Tugunlarni birma-bir yangilash (rolling upgrade). Dastur va metadata versiyalari. Klient va broker mosligi | D | [KD Upgrading](https://kafka.apache.org/44/getting-started/upgrade/) · [KD Compatibility](https://kafka.apache.org/44/getting-started/compatibility/) |
 
 ---
 
