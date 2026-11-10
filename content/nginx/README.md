@@ -18,7 +18,7 @@ Manbalar va versiyalar (2026-11-07 da tekshirilgan):
 
 Muhit tanlovi haqida:
 
-- **HTTPS boblari uchun domen kerak.** Let's Encrypt standart holatda sertifikatni domen nomiga beradi va domen VPS'ga yo'naltirilgan bo'lishi kerak. Domen bo'lmasa, `shortlived` profili IP manzilga qisqa muddatli sertifikat beradi. Qaysi ACME klienti buni qo'llashi bobni yozishda tekshiriladi.
+- **HTTPS boblari uchun domen kerak.** Let's Encrypt standart holatda sertifikatni domen nomiga beradi va domen VPS'ga yo'naltirilgan bo'lishi kerak. Domen bo'lmasa, `shortlived` profili IP manzilga qisqa muddatli sertifikat beradi. 19–25-boblar haqiqiy domen bilan sinalgan (chiqishlarda `example.com`).
 - **Sertifikatning ikki yo'li.** Let's Encrypt ko'pchilik uchun Certbot'ni tavsiya qiladi. nginx'ning o'zida ham ACME moduli bor (`ngx_http_acme_module`, nginx ombordagi `nginx-module-acme` paketi). Ikkalasi alohida boblarda ko'rsatiladi.
 - **NGINX Plus.** NGINX Admin Guide pullik NGINX Plus'ni ham yoritadi. Faqat Plus'da bor imkoniyatlar (faol health check, API orqali dinamik sozlash va boshqalar) bu qo'llanmaga kirmaydi.
 
@@ -42,7 +42,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - Domen, CI/CD va nol to'xtovli deploy — **"Deploy amaliyoti"** kitobida.
 - Pochta proksi (mail), TCP/UDP proksi (stream), njs skriptlari — hujjatda: [NG docs](https://nginx.org/en/docs/).
 
-> **Holat.** Qo'llanma yozilmoqda: 23/30 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma tayyor: 30/30 bob. HTTPS boblari (19–25) haqiqiy domen va Let's Encrypt sertifikati bilan sinalgan; chiqishlarda domen `example.com` bilan almashtirilgan.
 
 ---
 
@@ -94,13 +94,13 @@ Bu qo'llanmaga kirmaydigan mavzular:
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
 | 18 | [Sertifikat qanday olinadi](18-sertifikat-olish.md) | Let's Encrypt qanday ishlaydi: ACME protokoli, domen egasi ekanini isbotlash (challenge: HTTP-01, DNS-01). Sinov muhiti (staging) | — | [LE How It Works](https://letsencrypt.org/how-it-works/) · [LE Challenge Types](https://letsencrypt.org/docs/challenge-types/) · [LE Staging Environment](https://letsencrypt.org/docs/staging-environment/) |
-| 19 | Certbot | Snap bilan o'rnatish. `certbot --nginx` va `certbot certonly --webroot`. Avtomatik yangilanishni tekshirish (`renew --dry-run`) | V+D | [LE Getting Started](https://letsencrypt.org/getting-started/) · [CB Install](https://eff-certbot.readthedocs.io/en/stable/install.html) · [CB User Guide](https://eff-certbot.readthedocs.io/en/stable/using.html) |
-| 20 | nginx'ning ACME moduli | `nginx-module-acme` paketi. `acme_issuer` va `acme_certificate`: sertifikatni nginx o'zi oladi va yangilaydi | V+D | [NG acme module](https://nginx.org/en/docs/http/ngx_http_acme_module.html) · [NA ACME](https://docs.nginx.com/nginx/admin-guide/dynamic-modules/acme/) |
-| 21 | HTTPS server | `listen 443 ssl`, `ssl_certificate`, `ssl_certificate_key`. Sertifikat zanjiri. Bir nechta domen bitta IP'da (SNI). HTTP'dan HTTPS'ga yo'naltirish | V+D | [NG Configuring HTTPS servers](https://nginx.org/en/docs/http/configuring_https_servers.html) · [NG ssl module](https://nginx.org/en/docs/http/ngx_http_ssl_module.html) |
-| 22 | TLS sozlamalari | `ssl_protocols`, `ssl_ciphers`, sessiya keshi (`ssl_session_cache`) | V+D | [NG Configuring HTTPS servers](https://nginx.org/en/docs/http/configuring_https_servers.html) · [NG ssl module](https://nginx.org/en/docs/http/ngx_http_ssl_module.html) |
-| 23 | HSTS | `Strict-Transport-Security` header'i: brauzer saytga faqat HTTPS orqali kiradi. Xavfi va to'g'ri yoqish | V+D | [NG headers module](https://nginx.org/en/docs/http/ngx_http_headers_module.html) · [RFC 6797](https://www.rfc-editor.org/rfc/rfc6797) |
-| 24 | HTTP/2 va HTTP/3 | `http2 on`. QUIC va HTTP/3 (`listen ... quic`), UDP porti | V+D | [NG v2 module](https://nginx.org/en/docs/http/ngx_http_v2_module.html) · [NG QUIC and HTTP/3](https://nginx.org/en/docs/quic.html) · [NG v3 module](https://nginx.org/en/docs/http/ngx_http_v3_module.html) |
-| 25 | Sertifikat muammolari | Muddati o'tgan, zanjiri to'liq bo'lmagan yoki nomi mos kelmaydigan sertifikat. `openssl s_client` bilan tekshirish. Let's Encrypt chegaralari (rate limits). 80-port nega ochiq turishi kerak | V+D | [NG Configuring HTTPS servers](https://nginx.org/en/docs/http/configuring_https_servers.html) · [LE Rate Limits](https://letsencrypt.org/docs/rate-limits/) · [LE Keep Port 80 Open](https://letsencrypt.org/docs/allow-port-80/) |
+| 19 | [Certbot](19-certbot.md) | Snap bilan o'rnatish. `certbot --nginx` va `certbot certonly --webroot`. Avtomatik yangilanishni tekshirish (`renew --dry-run`) | V+D | [LE Getting Started](https://letsencrypt.org/getting-started/) · [CB Install](https://eff-certbot.readthedocs.io/en/stable/install.html) · [CB User Guide](https://eff-certbot.readthedocs.io/en/stable/using.html) |
+| 20 | [nginx'ning ACME moduli](20-acme-moduli.md) | `nginx-module-acme` paketi. `acme_issuer` va `acme_certificate`: sertifikatni nginx o'zi oladi va yangilaydi | V+D | [NG acme module](https://nginx.org/en/docs/http/ngx_http_acme_module.html) · [NA ACME](https://docs.nginx.com/nginx/admin-guide/dynamic-modules/acme/) |
+| 21 | [HTTPS server](21-https-server.md) | `listen 443 ssl`, `ssl_certificate`, `ssl_certificate_key`. Sertifikat zanjiri. Bir nechta domen bitta IP'da (SNI). HTTP'dan HTTPS'ga yo'naltirish | V+D | [NG Configuring HTTPS servers](https://nginx.org/en/docs/http/configuring_https_servers.html) · [NG ssl module](https://nginx.org/en/docs/http/ngx_http_ssl_module.html) |
+| 22 | [TLS sozlamalari](22-tls-sozlamalari.md) | `ssl_protocols`, `ssl_ciphers`, sessiya keshi (`ssl_session_cache`) | V+D | [NG Configuring HTTPS servers](https://nginx.org/en/docs/http/configuring_https_servers.html) · [NG ssl module](https://nginx.org/en/docs/http/ngx_http_ssl_module.html) |
+| 23 | [HSTS](23-hsts.md) | `Strict-Transport-Security` header'i: brauzer saytga faqat HTTPS orqali kiradi. Xavfi va to'g'ri yoqish | V+D | [NG headers module](https://nginx.org/en/docs/http/ngx_http_headers_module.html) · [RFC 6797](https://www.rfc-editor.org/rfc/rfc6797) |
+| 24 | [HTTP/2 va HTTP/3](24-http2-http3.md) | `http2 on`. QUIC va HTTP/3 (`listen ... quic`), UDP porti | V+D | [NG v2 module](https://nginx.org/en/docs/http/ngx_http_v2_module.html) · [NG QUIC and HTTP/3](https://nginx.org/en/docs/quic.html) · [NG v3 module](https://nginx.org/en/docs/http/ngx_http_v3_module.html) |
+| 25 | [Sertifikat muammolari](25-sertifikat-muammolari.md) | Muddati o'tgan, zanjiri to'liq bo'lmagan yoki nomi mos kelmaydigan sertifikat. `openssl s_client` bilan tekshirish. Let's Encrypt chegaralari (rate limits). 80-port nega ochiq turishi kerak | V+D | [NG Configuring HTTPS servers](https://nginx.org/en/docs/http/configuring_https_servers.html) · [LE Rate Limits](https://letsencrypt.org/docs/rate-limits/) · [LE Keep Port 80 Open](https://letsencrypt.org/docs/allow-port-80/) |
 
 ## V qism — Himoya va kuzatish (26–30)
 
