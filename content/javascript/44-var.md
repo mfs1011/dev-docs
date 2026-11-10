@@ -193,6 +193,7 @@ Bir xil kod skriptda ishlab, modulda `SyntaxError` berishi mumkin (sinovda). Esk
 
 - MDN — `var`: <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var>
 - MDN Glossary — *IIFE*: <https://developer.mozilla.org/en-US/docs/Glossary/IIFE>
+- ESLint — `no-var` qoidasi: <https://eslint.org/docs/latest/rules/no-var>
 - ECMA-262 — *8.2.4 Static Semantics: LexicallyDeclaredNames*: <https://tc39.es/ecma262/2026/multipage/syntax-directed-operations.html#sec-static-semantics-lexicallydeclarednames>
 - ECMA-262 — *16.2.1.1 Modules: Static Semantics: Early Errors*: <https://tc39.es/ecma262/2026/multipage/ecmascript-language-scripts-and-modules.html#sec-module-semantics-static-semantics-early-errors>
 - Node.js — *VM* (`vm.runInThisContext()`): <https://nodejs.org/api/vm.html>
