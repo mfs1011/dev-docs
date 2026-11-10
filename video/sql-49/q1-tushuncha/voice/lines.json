@@ -1,0 +1,590 @@
+[
+  {
+    "scene": "like_kamchiliklari",
+    "id": "l1",
+    "text": "Matnlar ichidan ma'lumot izlashda oddiy layk operatori ko'pincha yetarli bo'lmay qoladi.",
+    "show": "Matnlar ichidan ma'lumot izlashda oddiy layk operatori ko'pincha yetarli bo'lmay qoladi.",
+    "say": "Matnlar ichidan ma'lumot izlashda oddiy layk operatori ko'pincha yetarli bo'lmay qoladi.",
+    "a0": 0.08,
+    "a1": 4.78,
+    "words": [
+      {
+        "w": "Matnlar",
+        "s": 0.08,
+        "e": 0.6
+      },
+      {
+        "w": "ichidan",
+        "s": 0.56,
+        "e": 0.92
+      },
+      {
+        "w": "ma'lumot",
+        "s": 0.88,
+        "e": 1.32
+      },
+      {
+        "w": "izlashda",
+        "s": 1.28,
+        "e": 1.76
+      },
+      {
+        "w": "oddiy",
+        "s": 1.88,
+        "e": 2.22
+      },
+      {
+        "w": "layk",
+        "s": 2.36,
+        "e": 2.7
+      },
+      {
+        "w": "operatori",
+        "s": 2.68,
+        "e": 3.26
+      },
+      {
+        "w": "ko'pincha",
+        "s": 3.34,
+        "e": 3.8
+      },
+      {
+        "w": "yetarli",
+        "s": 3.76,
+        "e": 4.18
+      },
+      {
+        "w": "bo'lmay",
+        "s": 4.14,
+        "e": 4.48
+      },
+      {
+        "w": "qoladi.",
+        "s": 4.42,
+        "e": 4.78
+      }
+    ]
+  },
+  {
+    "scene": "like_kamchiliklari",
+    "id": "l2",
+    "text": "Chunki layk til grammatikasini bilmaydi, natijalarni moslik bo'yicha tartiblamaydi va bi-tri indeksidan foydalana olmaydi.",
+    "show": "Chunki layk til grammatikasini bilmaydi, natijalarni moslik bo'yicha tartiblamaydi va bi-tri indeksidan foydalana olmaydi.",
+    "say": "Chunki layk til grammatikasini bilmaydi, natijalarni moslik bo'yicha tartiblamaydi va bi-tri indeksidan foydalana olmaydi.",
+    "a0": 5.12,
+    "a1": 12.39,
+    "words": [
+      {
+        "w": "Chunki",
+        "s": 5.12,
+        "e": 5.44
+      },
+      {
+        "w": "layk",
+        "s": 5.48,
+        "e": 5.8
+      },
+      {
+        "w": "til",
+        "s": 5.88,
+        "e": 6.1
+      },
+      {
+        "w": "grammatikasini",
+        "s": 6.1,
+        "e": 6.94
+      },
+      {
+        "w": "bilmaydi,",
+        "s": 6.9,
+        "e": 7.34
+      },
+      {
+        "w": "natijalarni",
+        "s": 7.67,
+        "e": 8.35
+      },
+      {
+        "w": "moslik",
+        "s": 8.37,
+        "e": 8.79
+      },
+      {
+        "w": "bo'yicha",
+        "s": 8.77,
+        "e": 9.09
+      },
+      {
+        "w": "tartiblamaydi",
+        "s": 9.05,
+        "e": 9.75
+      },
+      {
+        "w": "va",
+        "s": 10.01,
+        "e": 10.17
+      },
+      {
+        "w": "bi-tri",
+        "s": 10.45,
+        "e": 10.93
+      },
+      {
+        "w": "indeksidan",
+        "s": 10.97,
+        "e": 11.55
+      },
+      {
+        "w": "foydalana",
+        "s": 11.51,
+        "e": 11.99
+      },
+      {
+        "w": "olmaydi.",
+        "s": 11.95,
+        "e": 12.39
+      }
+    ]
+  },
+  {
+    "scene": "fts_arxitekturasi",
+    "id": "l3",
+    "text": "To'liq matnli qidiruv matnni avval tokenlarga bo'lib, to'xtash so'zlarini tashlaydi va leksemalarga aylantiradi.",
+    "show": "To'liq matnli qidiruv matnni avval tokenlarga bo'lib, to'xtash so'zlarini tashlaydi va leksemalarga aylantiradi.",
+    "say": "To'liq matnli qidiruv matnni avval tokenlarga bo'lib, to'xtash so'zlarini tashlaydi va leksemalarga aylantiradi.",
+    "a0": 13.61,
+    "a1": 19.49,
+    "words": [
+      {
+        "w": "To'liq",
+        "s": 13.61,
+        "e": 13.93
+      },
+      {
+        "w": "matnli",
+        "s": 13.89,
+        "e": 14.29
+      },
+      {
+        "w": "qidiruv",
+        "s": 14.27,
+        "e": 14.61
+      },
+      {
+        "w": "matnni",
+        "s": 14.71,
+        "e": 15.13
+      },
+      {
+        "w": "avval",
+        "s": 15.11,
+        "e": 15.45
+      },
+      {
+        "w": "tokenlarga",
+        "s": 15.43,
+        "e": 16.05
+      },
+      {
+        "w": "bo'lib,",
+        "s": 16.01,
+        "e": 16.29
+      },
+      {
+        "w": "to'xtash",
+        "s": 16.43,
+        "e": 16.87
+      },
+      {
+        "w": "so'zlarini",
+        "s": 16.79,
+        "e": 17.29
+      },
+      {
+        "w": "tashlaydi",
+        "s": 17.25,
+        "e": 17.75
+      },
+      {
+        "w": "va",
+        "s": 17.93,
+        "e": 18.09
+      },
+      {
+        "w": "leksemalarga",
+        "s": 18.25,
+        "e": 19.01
+      },
+      {
+        "w": "aylantiradi.",
+        "s": 18.97,
+        "e": 19.49
+      }
+    ]
+  },
+  {
+    "scene": "fts_arxitekturasi",
+    "id": "l4",
+    "text": "Hosil bo'lgan leksemalar ro'yxati va ularning o'rni teskari indeks tuzilmasida saqlanadi.",
+    "show": "Hosil bo'lgan leksemalar ro'yxati va ularning o'rni teskari indeks tuzilmasida saqlanadi.",
+    "say": "Hosil bo'lgan leksemalar ro'yxati va ularning o'rni teskari indeks tuzilmasida saqlanadi.",
+    "a0": 19.91,
+    "a1": 24.72,
+    "words": [
+      {
+        "w": "Hosil",
+        "s": 19.91,
+        "e": 20.25
+      },
+      {
+        "w": "bo'lgan",
+        "s": 20.21,
+        "e": 20.55
+      },
+      {
+        "w": "leksemalar",
+        "s": 20.51,
+        "e": 21.07
+      },
+      {
+        "w": "ro'yxati",
+        "s": 21.03,
+        "e": 21.49
+      },
+      {
+        "w": "va",
+        "s": 21.69,
+        "e": 21.83
+      },
+      {
+        "w": "ularning",
+        "s": 21.81,
+        "e": 22.25
+      },
+      {
+        "w": "o'rni",
+        "s": 22.29,
+        "e": 22.64
+      },
+      {
+        "w": "teskari",
+        "s": 22.82,
+        "e": 23.34
+      },
+      {
+        "w": "indeks",
+        "s": 23.34,
+        "e": 23.7
+      },
+      {
+        "w": "tuzilmasida",
+        "s": 23.64,
+        "e": 24.22
+      },
+      {
+        "w": "saqlanadi.",
+        "s": 24.18,
+        "e": 24.72
+      }
+    ]
+  },
+  {
+    "scene": "ozbek_tili_va_prefiks",
+    "id": "l5",
+    "text": "Postgresda o'zbek tili uchun alohida lug'at yo'qligi sababli simpl konfiguratsiyasi ishlatiladi.",
+    "show": "Postgresda o'zbek tili uchun alohida lug'at yo'qligi sababli simpl konfiguratsiyasi ishlatiladi.",
+    "say": "Postgresda o'zbek tili uchun alohida lug'at yo'qligi sababli simpl konfiguratsiyasi ishlatiladi.",
+    "a0": 25.42,
+    "a1": 30.2,
+    "words": [
+      {
+        "w": "Postgresda",
+        "s": 25.42,
+        "e": 26.06
+      },
+      {
+        "w": "o'zbek",
+        "s": 26.12,
+        "e": 26.44
+      },
+      {
+        "w": "tili",
+        "s": 26.38,
+        "e": 26.6
+      },
+      {
+        "w": "uchun",
+        "s": 26.56,
+        "e": 26.84
+      },
+      {
+        "w": "alohida",
+        "s": 26.84,
+        "e": 27.26
+      },
+      {
+        "w": "lug'at",
+        "s": 27.22,
+        "e": 27.52
+      },
+      {
+        "w": "yo'qligi",
+        "s": 27.5,
+        "e": 27.92
+      },
+      {
+        "w": "sababli",
+        "s": 27.88,
+        "e": 28.3
+      },
+      {
+        "w": "simpl",
+        "s": 28.56,
+        "e": 28.96
+      },
+      {
+        "w": "konfiguratsiyasi",
+        "s": 28.92,
+        "e": 29.68
+      },
+      {
+        "w": "ishlatiladi.",
+        "s": 29.66,
+        "e": 30.2
+      }
+    ]
+  },
+  {
+    "scene": "ozbek_tili_va_prefiks",
+    "id": "l6",
+    "text": "Qo'shimchalarni hisobga olish uchun so'z oxiriga ikki nuqta yulduzcha prefiksi qo'shib qidiriladi.",
+    "show": "Qo'shimchalarni hisobga olish uchun so'z oxiriga ikki nuqta yulduzcha prefiksi qo'shib qidiriladi.",
+    "say": "Qo'shimchalarni hisobga olish uchun so'z oxiriga ikki nuqta yulduzcha prefiksi qo'shib qidiriladi.",
+    "a0": 30.7,
+    "a1": 35.51,
+    "words": [
+      {
+        "w": "Qo'shimchalarni",
+        "s": 30.7,
+        "e": 31.36
+      },
+      {
+        "w": "hisobga",
+        "s": 31.3,
+        "e": 31.66
+      },
+      {
+        "w": "olish",
+        "s": 31.64,
+        "e": 31.9
+      },
+      {
+        "w": "uchun",
+        "s": 31.86,
+        "e": 32.1
+      },
+      {
+        "w": "so'z",
+        "s": 32.32,
+        "e": 32.58
+      },
+      {
+        "w": "oxiriga",
+        "s": 32.58,
+        "e": 33.0
+      },
+      {
+        "w": "ikki",
+        "s": 33.12,
+        "e": 33.42
+      },
+      {
+        "w": "nuqta",
+        "s": 33.38,
+        "e": 33.7
+      },
+      {
+        "w": "yulduzcha",
+        "s": 33.7,
+        "e": 34.2
+      },
+      {
+        "w": "prefiksi",
+        "s": 34.2,
+        "e": 34.72
+      },
+      {
+        "w": "qo'shib",
+        "s": 34.69,
+        "e": 35.03
+      },
+      {
+        "w": "qidiriladi.",
+        "s": 34.97,
+        "e": 35.51
+      }
+    ]
+  },
+  {
+    "scene": "trigramma_va_oxshashlik",
+    "id": "l7",
+    "text": "Imlo xatolari va so'z o'rtasidagi bo'laklarni topish uchun esa uchtalik harflardan iborat trigramma ishlatiladi.",
+    "show": "Imlo xatolari va so'z o'rtasidagi bo'laklarni topish uchun esa uchtalik harflardan iborat trigramma ishlatiladi.",
+    "say": "Imlo xatolari va so'z o'rtasidagi bo'laklarni topish uchun esa uchtalik harflardan iborat trigramma ishlatiladi.",
+    "a0": 36.31,
+    "a1": 42.19,
+    "words": [
+      {
+        "w": "Imlo",
+        "s": 36.31,
+        "e": 36.61
+      },
+      {
+        "w": "xatolari",
+        "s": 36.59,
+        "e": 37.13
+      },
+      {
+        "w": "va",
+        "s": 37.11,
+        "e": 37.25
+      },
+      {
+        "w": "so'z",
+        "s": 37.35,
+        "e": 37.61
+      },
+      {
+        "w": "o'rtasidagi",
+        "s": 37.63,
+        "e": 38.21
+      },
+      {
+        "w": "bo'laklarni",
+        "s": 38.17,
+        "e": 38.71
+      },
+      {
+        "w": "topish",
+        "s": 38.67,
+        "e": 38.97
+      },
+      {
+        "w": "uchun",
+        "s": 38.93,
+        "e": 39.17
+      },
+      {
+        "w": "esa",
+        "s": 39.15,
+        "e": 39.37
+      },
+      {
+        "w": "uchtalik",
+        "s": 39.65,
+        "e": 40.13
+      },
+      {
+        "w": "harflardan",
+        "s": 40.07,
+        "e": 40.63
+      },
+      {
+        "w": "iborat",
+        "s": 40.61,
+        "e": 41.01
+      },
+      {
+        "w": "trigramma",
+        "s": 41.03,
+        "e": 41.69
+      },
+      {
+        "w": "ishlatiladi.",
+        "s": 41.65,
+        "e": 42.19
+      }
+    ]
+  },
+  {
+    "scene": "trigramma_va_oxshashlik",
+    "id": "l8",
+    "text": "Trigramma jin indeksi yordamida hatto xato yozilgan so'rovlarda ham kerakli satrlar bir zumda topiladi.",
+    "show": "Trigramma jin indeksi yordamida hatto xato yozilgan so'rovlarda ham kerakli satrlar bir zumda topiladi.",
+    "say": "Trigramma jin indeksi yordamida hatto xato yozilgan so'rovlarda ham kerakli satrlar bir zumda topiladi.",
+    "a0": 42.79,
+    "a1": 48.82,
+    "words": [
+      {
+        "w": "Trigramma",
+        "s": 42.79,
+        "e": 43.43
+      },
+      {
+        "w": "jin",
+        "s": 43.65,
+        "e": 43.89
+      },
+      {
+        "w": "indeksi",
+        "s": 43.89,
+        "e": 44.32
+      },
+      {
+        "w": "yordamida",
+        "s": 44.24,
+        "e": 44.76
+      },
+      {
+        "w": "hatto",
+        "s": 44.94,
+        "e": 45.28
+      },
+      {
+        "w": "xato",
+        "s": 45.32,
+        "e": 45.64
+      },
+      {
+        "w": "yozilgan",
+        "s": 45.62,
+        "e": 46.08
+      },
+      {
+        "w": "so'rovlarda",
+        "s": 46.04,
+        "e": 46.6
+      },
+      {
+        "w": "ham",
+        "s": 46.56,
+        "e": 46.78
+      },
+      {
+        "w": "kerakli",
+        "s": 46.92,
+        "e": 47.36
+      },
+      {
+        "w": "satrlar",
+        "s": 47.32,
+        "e": 47.82
+      },
+      {
+        "w": "bir",
+        "s": 47.94,
+        "e": 48.14
+      },
+      {
+        "w": "zumda",
+        "s": 48.12,
+        "e": 48.42
+      },
+      {
+        "w": "topiladi.",
+        "s": 48.36,
+        "e": 48.82
+      }
+    ]
+  }
+]

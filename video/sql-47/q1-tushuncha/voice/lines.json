@@ -1,0 +1,695 @@
+[
+  {
+    "scene": "funksiya_va_ifoda_indeksi",
+    "id": "l1",
+    "text": "Jadvalda indeks bo'lsa ham, agar ustun funksiya ichiga o'rab qo'yilsa, rejalashtiruvchi undan foydalana olmaydi.",
+    "show": "Jadvalda indeks bo'lsa ham, agar ustun funksiya ichiga o'rab qo'yilsa, rejalashtiruvchi undan foydalana olmaydi.",
+    "say": "Jadvalda indeks bo'lsa ham, agar ustun funksiya ichiga o'rab qo'yilsa, rejalashtiruvchi undan foydalana olmaydi.",
+    "a0": 0.36,
+    "a1": 6.74,
+    "words": [
+      {
+        "w": "Jadvalda",
+        "s": 0.36,
+        "e": 0.76
+      },
+      {
+        "w": "indeks",
+        "s": 0.88,
+        "e": 1.2
+      },
+      {
+        "w": "bo'lsa",
+        "s": 1.26,
+        "e": 1.5
+      },
+      {
+        "w": "ham,",
+        "s": 1.56,
+        "e": 1.72
+      },
+      {
+        "w": "agar",
+        "s": 2.08,
+        "e": 2.36
+      },
+      {
+        "w": "ustun",
+        "s": 2.5,
+        "e": 2.84
+      },
+      {
+        "w": "funksiya",
+        "s": 2.94,
+        "e": 3.32
+      },
+      {
+        "w": "ichiga",
+        "s": 3.36,
+        "e": 3.6
+      },
+      {
+        "w": "o'rab",
+        "s": 3.68,
+        "e": 3.9
+      },
+      {
+        "w": "qo'yilsa,",
+        "s": 3.94,
+        "e": 4.3
+      },
+      {
+        "w": "rejalashtiruvchi",
+        "s": 4.78,
+        "e": 5.52
+      },
+      {
+        "w": "undan",
+        "s": 5.64,
+        "e": 5.88
+      },
+      {
+        "w": "foydalana",
+        "s": 5.94,
+        "e": 6.36
+      },
+      {
+        "w": "olmaydi.",
+        "s": 6.4,
+        "e": 6.74
+      }
+    ]
+  },
+  {
+    "scene": "funksiya_va_ifoda_indeksi",
+    "id": "l2",
+    "text": "Bunday vaziyatda yo maxsus ifoda indeksi yaratiladi, yoki sana misolidek shart oraliq ko'rinishida qayta yoziladi.",
+    "show": "Bunday vaziyatda yo maxsus ifoda indeksi yaratiladi, yoki sana misolidek shart oraliq ko'rinishida qayta yoziladi.",
+    "say": "Bunday vaziyatda yo maxsus ifoda indeksi yaratiladi, yoki sana misolidek shart oraliq ko'rinishida qayta yoziladi.",
+    "a0": 7.24,
+    "a1": 14.35,
+    "words": [
+      {
+        "w": "Bunday",
+        "s": 7.24,
+        "e": 7.51
+      },
+      {
+        "w": "vaziyatda",
+        "s": 7.55,
+        "e": 7.99
+      },
+      {
+        "w": "yo",
+        "s": 8.03,
+        "e": 8.57
+      },
+      {
+        "w": "maxsus",
+        "s": 8.67,
+        "e": 9.01
+      },
+      {
+        "w": "ifoda",
+        "s": 9.15,
+        "e": 9.47
+      },
+      {
+        "w": "indeksi",
+        "s": 9.53,
+        "e": 9.85
+      },
+      {
+        "w": "yaratiladi,",
+        "s": 9.87,
+        "e": 10.33
+      },
+      {
+        "w": "yoki",
+        "s": 10.33,
+        "e": 11.03
+      },
+      {
+        "w": "sana",
+        "s": 11.19,
+        "e": 11.41
+      },
+      {
+        "w": "misolidek",
+        "s": 11.47,
+        "e": 11.99
+      },
+      {
+        "w": "shart",
+        "s": 12.25,
+        "e": 12.51
+      },
+      {
+        "w": "oraliq",
+        "s": 12.69,
+        "e": 12.99
+      },
+      {
+        "w": "ko'rinishida",
+        "s": 13.05,
+        "e": 13.51
+      },
+      {
+        "w": "qayta",
+        "s": 13.65,
+        "e": 13.91
+      },
+      {
+        "w": "yoziladi.",
+        "s": 13.91,
+        "e": 14.35
+      }
+    ]
+  },
+  {
+    "scene": "yashirin_tur_ozgarishi",
+    "id": "l3",
+    "text": "Ikkinchi xavfli xato bu yashirin turni o'zgartirish, ya'ni matnli ustunni tasodifan raqam bilan solishtirishdir.",
+    "show": "Ikkinchi xavfli xato bu yashirin turni o'zgartirish, ya'ni matnli ustunni tasodifan raqam bilan solishtirishdir.",
+    "say": "Ikkinchi xavfli xato bu yashirin turni o'zgartirish, ya'ni matnli ustunni tasodifan raqam bilan solishtirishdir.",
+    "a0": 15.19,
+    "a1": 21.91,
+    "words": [
+      {
+        "w": "Ikkinchi",
+        "s": 15.19,
+        "e": 15.51
+      },
+      {
+        "w": "xavfli",
+        "s": 15.57,
+        "e": 15.83
+      },
+      {
+        "w": "xato",
+        "s": 15.91,
+        "e": 16.15
+      },
+      {
+        "w": "bu",
+        "s": 16.55,
+        "e": 16.63
+      },
+      {
+        "w": "yashirin",
+        "s": 16.75,
+        "e": 17.19
+      },
+      {
+        "w": "turni",
+        "s": 17.25,
+        "e": 17.51
+      },
+      {
+        "w": "o'zgartirish,",
+        "s": 17.57,
+        "e": 18.11
+      },
+      {
+        "w": "ya'ni",
+        "s": 18.45,
+        "e": 18.65
+      },
+      {
+        "w": "matnli",
+        "s": 19.03,
+        "e": 19.45
+      },
+      {
+        "w": "ustunni",
+        "s": 19.53,
+        "e": 19.95
+      },
+      {
+        "w": "tasodifan",
+        "s": 20.07,
+        "e": 20.65
+      },
+      {
+        "w": "raqam",
+        "s": 20.77,
+        "e": 21.07
+      },
+      {
+        "w": "bilan",
+        "s": 21.11,
+        "e": 21.29
+      },
+      {
+        "w": "solishtirishdir.",
+        "s": 21.33,
+        "e": 21.91
+      }
+    ]
+  },
+  {
+    "scene": "yashirin_tur_ozgarishi",
+    "id": "l4",
+    "text": "Postgresda bu darhol xato bersa, May es-kyu-elda har bir satrni songa aylantirib, yuz minglab qatorni behuda elaydi.",
+    "show": "Postgresda bu darhol xato bersa, May es-kyu-elda har bir satrni songa aylantirib, yuz minglab qatorni behuda elaydi.",
+    "say": "Postgresda bu darhol xato bersa, May es-kyu-elda har bir satrni songa aylantirib, yuz minglab qatorni behuda elaydi.",
+    "a0": 22.66,
+    "a1": 29.64,
+    "words": [
+      {
+        "w": "Postgresda",
+        "s": 22.66,
+        "e": 23.22
+      },
+      {
+        "w": "bu",
+        "s": 23.32,
+        "e": 23.38
+      },
+      {
+        "w": "darhol",
+        "s": 23.56,
+        "e": 23.96
+      },
+      {
+        "w": "xato",
+        "s": 24.02,
+        "e": 24.24
+      },
+      {
+        "w": "bersa,",
+        "s": 24.3,
+        "e": 24.58
+      },
+      {
+        "w": "May",
+        "s": 25.02,
+        "e": 25.2
+      },
+      {
+        "w": "es-kyu-elda",
+        "s": 25.2,
+        "e": 25.66
+      },
+      {
+        "w": "har",
+        "s": 25.82,
+        "e": 26.02
+      },
+      {
+        "w": "bir",
+        "s": 26.1,
+        "e": 26.2
+      },
+      {
+        "w": "satrni",
+        "s": 26.24,
+        "e": 26.62
+      },
+      {
+        "w": "songa",
+        "s": 26.68,
+        "e": 26.94
+      },
+      {
+        "w": "aylantirib,",
+        "s": 26.98,
+        "e": 27.4
+      },
+      {
+        "w": "yuz",
+        "s": 27.76,
+        "e": 27.94
+      },
+      {
+        "w": "minglab",
+        "s": 28.0,
+        "e": 28.32
+      },
+      {
+        "w": "qatorni",
+        "s": 28.36,
+        "e": 28.76
+      },
+      {
+        "w": "behuda",
+        "s": 28.88,
+        "e": 29.28
+      },
+      {
+        "w": "elaydi.",
+        "s": 29.34,
+        "e": 29.64
+      }
+    ]
+  },
+  {
+    "scene": "or_sharti_va_bitmap",
+    "id": "l5",
+    "text": "Turli ustunlar o'rtasidagi o-er sharti bitta indeks bilan cheklana olmaydi va alohida skanerlashni talab qiladi.",
+    "show": "Turli ustunlar o'rtasidagi o-er sharti bitta indeks bilan cheklana olmaydi va alohida skanerlashni talab qiladi.",
+    "say": "Turli ustunlar o'rtasidagi o-er sharti bitta indeks bilan cheklana olmaydi va alohida skanerlashni talab qiladi.",
+    "a0": 30.46,
+    "a1": 37.04,
+    "words": [
+      {
+        "w": "Turli",
+        "s": 30.46,
+        "e": 30.74
+      },
+      {
+        "w": "ustunlar",
+        "s": 30.86,
+        "e": 31.3
+      },
+      {
+        "w": "o'rtasidagi",
+        "s": 31.38,
+        "e": 31.96
+      },
+      {
+        "w": "o-er",
+        "s": 32.2,
+        "e": 32.32
+      },
+      {
+        "w": "sharti",
+        "s": 32.38,
+        "e": 32.72
+      },
+      {
+        "w": "bitta",
+        "s": 33.12,
+        "e": 33.4
+      },
+      {
+        "w": "indeks",
+        "s": 33.46,
+        "e": 33.76
+      },
+      {
+        "w": "bilan",
+        "s": 33.78,
+        "e": 33.96
+      },
+      {
+        "w": "cheklana",
+        "s": 34.0,
+        "e": 34.36
+      },
+      {
+        "w": "olmaydi",
+        "s": 34.4,
+        "e": 34.74
+      },
+      {
+        "w": "va",
+        "s": 35.0,
+        "e": 35.06
+      },
+      {
+        "w": "alohida",
+        "s": 35.26,
+        "e": 35.72
+      },
+      {
+        "w": "skanerlashni",
+        "s": 35.82,
+        "e": 36.48
+      },
+      {
+        "w": "talab",
+        "s": 36.54,
+        "e": 36.74
+      },
+      {
+        "w": "qiladi.",
+        "s": 36.78,
+        "e": 37.04
+      }
+    ]
+  },
+  {
+    "scene": "or_sharti_va_bitmap",
+    "id": "l6",
+    "text": "Bazada har bir ustun bo'yicha bitlar xaritasi yasalib birlashtiriladi, lekin bitta ustunda indeks bo'lmasa butun jadval o'qiladi.",
+    "show": "Bazada har bir ustun bo'yicha bitlar xaritasi yasalib birlashtiriladi, lekin bitta ustunda indeks bo'lmasa butun jadval o'qiladi.",
+    "say": "Bazada har bir ustun bo'yicha bitlar xaritasi yasalib birlashtiriladi, lekin bitta ustunda indeks bo'lmasa butun jadval o'qiladi.",
+    "a0": 37.89,
+    "a1": 45.49,
+    "words": [
+      {
+        "w": "Bazada",
+        "s": 37.89,
+        "e": 38.27
+      },
+      {
+        "w": "har",
+        "s": 38.47,
+        "e": 38.67
+      },
+      {
+        "w": "bir",
+        "s": 38.71,
+        "e": 38.81
+      },
+      {
+        "w": "ustun",
+        "s": 38.85,
+        "e": 39.09
+      },
+      {
+        "w": "bo'yicha",
+        "s": 39.11,
+        "e": 39.43
+      },
+      {
+        "w": "bitlar",
+        "s": 39.57,
+        "e": 39.93
+      },
+      {
+        "w": "xaritasi",
+        "s": 39.97,
+        "e": 40.41
+      },
+      {
+        "w": "yasalib",
+        "s": 40.45,
+        "e": 40.79
+      },
+      {
+        "w": "birlashtiriladi,",
+        "s": 40.83,
+        "e": 41.51
+      },
+      {
+        "w": "lekin",
+        "s": 41.85,
+        "e": 42.09
+      },
+      {
+        "w": "bitta",
+        "s": 42.45,
+        "e": 42.73
+      },
+      {
+        "w": "ustunda",
+        "s": 42.77,
+        "e": 43.11
+      },
+      {
+        "w": "indeks",
+        "s": 43.21,
+        "e": 43.53
+      },
+      {
+        "w": "bo'lmasa",
+        "s": 43.59,
+        "e": 44.01
+      },
+      {
+        "w": "butun",
+        "s": 44.39,
+        "e": 44.67
+      },
+      {
+        "w": "jadval",
+        "s": 44.75,
+        "e": 45.11
+      },
+      {
+        "w": "o'qiladi.",
+        "s": 45.15,
+        "e": 45.49
+      }
+    ]
+  },
+  {
+    "scene": "count_star_va_mvcc",
+    "id": "l7",
+    "text": "Ko'p foydalanuvchili bazalarda tranzaksiyalar turli qatorlarni ko'rgani sababli, kaunt yulduzcha doim jadval hajmiga proporsionaldir.",
+    "show": "Ko'p foydalanuvchili bazalarda tranzaksiyalar turli qatorlarni ko'rgani sababli, kaunt yulduzcha doim jadval hajmiga proporsionaldir.",
+    "say": "Ko'p foydalanuvchili bazalarda tranzaksiyalar turli qatorlarni ko'rgani sababli, kaunt yulduzcha doim jadval hajmiga proporsionaldir.",
+    "a0": 46.31,
+    "a1": 54.46,
+    "words": [
+      {
+        "w": "Ko'p",
+        "s": 46.31,
+        "e": 46.47
+      },
+      {
+        "w": "foydalanuvchili",
+        "s": 46.51,
+        "e": 47.19
+      },
+      {
+        "w": "bazalarda",
+        "s": 47.27,
+        "e": 47.79
+      },
+      {
+        "w": "tranzaksiyalar",
+        "s": 47.97,
+        "e": 48.73
+      },
+      {
+        "w": "turli",
+        "s": 48.87,
+        "e": 49.17
+      },
+      {
+        "w": "qatorlarni",
+        "s": 49.29,
+        "e": 49.83
+      },
+      {
+        "w": "ko'rgani",
+        "s": 49.87,
+        "e": 50.21
+      },
+      {
+        "w": "sababli,",
+        "s": 50.25,
+        "e": 50.63
+      },
+      {
+        "w": "kaunt",
+        "s": 51.17,
+        "e": 51.49
+      },
+      {
+        "w": "yulduzcha",
+        "s": 51.57,
+        "e": 52.01
+      },
+      {
+        "w": "doim",
+        "s": 52.45,
+        "e": 52.78
+      },
+      {
+        "w": "jadval",
+        "s": 52.86,
+        "e": 53.16
+      },
+      {
+        "w": "hajmiga",
+        "s": 53.2,
+        "e": 53.58
+      },
+      {
+        "w": "proporsionaldir.",
+        "s": 53.68,
+        "e": 54.46
+      }
+    ]
+  },
+  {
+    "scene": "count_star_va_mvcc",
+    "id": "l8",
+    "text": "Shuning uchun katta jadvallarda aniq sanash o'rniga reltyupls kabi taxminiy ko'rsatkich yoki hisoblagich kesh ishlatiladi.",
+    "show": "Shuning uchun katta jadvallarda aniq sanash o'rniga reltyupls kabi taxminiy ko'rsatkich yoki hisoblagich kesh ishlatiladi.",
+    "say": "Shuning uchun katta jadvallarda aniq sanash o'rniga rel-tyupls kabi taxminiy ko'rsatkich yoki hisoblagich kesh ishlatiladi.",
+    "a0": 55.1,
+    "a1": 62.32,
+    "words": [
+      {
+        "w": "Shuning",
+        "s": 55.1,
+        "e": 55.32
+      },
+      {
+        "w": "uchun",
+        "s": 55.32,
+        "e": 55.52
+      },
+      {
+        "w": "katta",
+        "s": 55.84,
+        "e": 56.12
+      },
+      {
+        "w": "jadvallarda",
+        "s": 56.16,
+        "e": 56.76
+      },
+      {
+        "w": "aniq",
+        "s": 56.96,
+        "e": 57.16
+      },
+      {
+        "w": "sanash",
+        "s": 57.22,
+        "e": 57.52
+      },
+      {
+        "w": "o'rniga",
+        "s": 57.56,
+        "e": 57.86
+      },
+      {
+        "w": "rel-tyupls",
+        "s": 58.28,
+        "e": 58.96
+      },
+      {
+        "w": "kabi",
+        "s": 59.0,
+        "e": 59.2
+      },
+      {
+        "w": "taxminiy",
+        "s": 59.26,
+        "e": 59.72
+      },
+      {
+        "w": "ko'rsatkich",
+        "s": 59.76,
+        "e": 60.24
+      },
+      {
+        "w": "yoki",
+        "s": 60.34,
+        "e": 60.56
+      },
+      {
+        "w": "hisoblagich",
+        "s": 60.89,
+        "e": 61.51
+      },
+      {
+        "w": "kesh",
+        "s": 61.57,
+        "e": 61.79
+      },
+      {
+        "w": "ishlatiladi.",
+        "s": 61.81,
+        "e": 62.32
+      }
+    ]
+  }
+]

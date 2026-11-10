@@ -1,0 +1,41 @@
+WEBVTT
+
+1
+00:01.380 --> 00:09.340
+Postgresda bir million qatorli buyurtmalar jadvalida ofset nol
+bilan birinchi sahifa nol butun yuzdan uch millisekundda o'qiladi.
+
+2
+00:09.490 --> 00:17.860
+Biroq to'qson minginchi sahifada server to'qqiz yuz mingta yozuvni
+behuda elab, bajarilish vaqti o'ttiz olti millisekundgacha cho'ziladi.
+
+3
+00:20.650 --> 00:28.670
+Keyset so'rovida qator konstruktori orqali sana va ay-di berilganda,
+rejalashtiruvchi indeks shartini aynan kerakli nuqtadan boshlaydi.
+
+4
+00:28.700 --> 00:35.110
+Natijada bor-yo'g'i yigirmata qator o'qilib, birinchi
+sahifadek nol butun yuzdan ikki millisekundda yakunlanadi.
+
+5
+00:38.000 --> 00:47.340
+Agar xuddi shu shartni o-er mantiqiy amali bilan yozsak, Postgres uni indeks
+sharti emas, balki filtr sifatida bajarib yigirma to'qqiz millisekund sarflaydi.
+
+6
+00:47.350 --> 00:53.380
+Shuning uchun Postgresda keyset pagination uchun
+doim qator konstruktori yozuvidan foydalanish lozim.
+
+7
+00:56.410 --> 01:03.790
+Jonli sinovda birinchi sahifadan keyin yangi buyurtma qo'shilganda,
+ofset uchinchi qatorni ikkinchi sahifada yana takror ko'rsatdi.
+
+8
+01:03.820 --> 01:10.400
+Keyset esa oxirgi qatordan keyingi haqiqiy yangi
+yozuvlarni aniq topib, ma'lumot surilishining oldini oldi.

@@ -1,0 +1,725 @@
+[
+  {
+    "scene": "pg_offset_0_va_900k",
+    "id": "l1",
+    "text": "Postgresda bir million qatorli buyurtmalar jadvalida ofset nol bilan birinchi sahifa nol butun yuzdan uch millisekundda o'qiladi.",
+    "show": "Postgresda bir million qatorli buyurtmalar jadvalida ofset nol bilan birinchi sahifa nol butun yuzdan uch millisekundda o'qiladi.",
+    "say": "Postgresda bir million qatorli buyurtmalar jadvalida ofset nol bilan birinchi sahifa nol butun yuzdan uch millisekundda o'qiladi.",
+    "a0": 0.08,
+    "a1": 7.59,
+    "words": [
+      {
+        "w": "Postgresda",
+        "s": 0.08,
+        "e": 0.76
+      },
+      {
+        "w": "bir",
+        "s": 0.82,
+        "e": 1.02
+      },
+      {
+        "w": "million",
+        "s": 0.98,
+        "e": 1.28
+      },
+      {
+        "w": "qatorli",
+        "s": 1.22,
+        "e": 1.68
+      },
+      {
+        "w": "buyurtmalar",
+        "s": 1.7,
+        "e": 2.28
+      },
+      {
+        "w": "jadvalida",
+        "s": 2.24,
+        "e": 2.82
+      },
+      {
+        "w": "ofset",
+        "s": 3.24,
+        "e": 3.64
+      },
+      {
+        "w": "nol",
+        "s": 3.66,
+        "e": 3.9
+      },
+      {
+        "w": "bilan",
+        "s": 3.86,
+        "e": 4.16
+      },
+      {
+        "w": "birinchi",
+        "s": 4.14,
+        "e": 4.52
+      },
+      {
+        "w": "sahifa",
+        "s": 4.46,
+        "e": 4.92
+      },
+      {
+        "w": "nol",
+        "s": 5.3,
+        "e": 5.58
+      },
+      {
+        "w": "butun",
+        "s": 5.54,
+        "e": 5.88
+      },
+      {
+        "w": "yuzdan",
+        "s": 5.86,
+        "e": 6.22
+      },
+      {
+        "w": "uch",
+        "s": 6.3,
+        "e": 6.48
+      },
+      {
+        "w": "millisekundda",
+        "s": 6.46,
+        "e": 7.2
+      },
+      {
+        "w": "o'qiladi.",
+        "s": 7.16,
+        "e": 7.59
+      }
+    ]
+  },
+  {
+    "scene": "pg_offset_0_va_900k",
+    "id": "l2",
+    "text": "Biroq to'qson minginchi sahifada server to'qqiz yuz mingta yozuvni behuda elab, bajarilish vaqti o'ttiz olti millisekundgacha cho'ziladi.",
+    "show": "Biroq to'qson minginchi sahifada server to'qqiz yuz mingta yozuvni behuda elab, bajarilish vaqti o'ttiz olti millisekundgacha cho'ziladi.",
+    "say": "Biroq to'qson minginchi sahifada server to'qqiz yuz mingta yozuvni behuda elab, bajarilish vaqti o'ttiz olti millisekundgacha cho'ziladi.",
+    "a0": 8.19,
+    "a1": 16.11,
+    "words": [
+      {
+        "w": "Biroq",
+        "s": 8.19,
+        "e": 8.51
+      },
+      {
+        "w": "to'qson",
+        "s": 8.59,
+        "e": 9.03
+      },
+      {
+        "w": "minginchi",
+        "s": 8.99,
+        "e": 9.43
+      },
+      {
+        "w": "sahifada",
+        "s": 9.39,
+        "e": 9.97
+      },
+      {
+        "w": "server",
+        "s": 10.31,
+        "e": 10.77
+      },
+      {
+        "w": "to'qqiz",
+        "s": 10.81,
+        "e": 11.29
+      },
+      {
+        "w": "yuz",
+        "s": 11.25,
+        "e": 11.45
+      },
+      {
+        "w": "mingta",
+        "s": 11.41,
+        "e": 11.73
+      },
+      {
+        "w": "yozuvni",
+        "s": 11.67,
+        "e": 12.17
+      },
+      {
+        "w": "behuda",
+        "s": 12.21,
+        "e": 12.69
+      },
+      {
+        "w": "elab,",
+        "s": 12.67,
+        "e": 12.95
+      },
+      {
+        "w": "bajarilish",
+        "s": 13.25,
+        "e": 13.81
+      },
+      {
+        "w": "vaqti",
+        "s": 13.77,
+        "e": 14.11
+      },
+      {
+        "w": "o'ttiz",
+        "s": 14.23,
+        "e": 14.59
+      },
+      {
+        "w": "olti",
+        "s": 14.57,
+        "e": 14.85
+      },
+      {
+        "w": "millisekundgacha",
+        "s": 14.85,
+        "e": 15.65
+      },
+      {
+        "w": "cho'ziladi.",
+        "s": 15.61,
+        "e": 16.11
+      }
+    ]
+  },
+  {
+    "scene": "pg_keyset_row_constructor",
+    "id": "l3",
+    "text": "Keyset so'rovida qator konstruktori orqali sana va ay-di berilganda, rejalashtiruvchi indeks shartini aynan kerakli nuqtadan boshlaydi.",
+    "show": "Keyset so'rovida qator konstruktori orqali sana va ay-di berilganda, rejalashtiruvchi indeks shartini aynan kerakli nuqtadan boshlaydi.",
+    "say": "Keyset so'rovida qator konstruktori orqali sana va ay-di berilganda, rejalashtiruvchi indeks shartini aynan kerakli nuqtadan boshlaydi.",
+    "a0": 16.75,
+    "a1": 24.32,
+    "words": [
+      {
+        "w": "Keyset",
+        "s": 16.75,
+        "e": 17.19
+      },
+      {
+        "w": "so'rovida",
+        "s": 17.13,
+        "e": 17.55
+      },
+      {
+        "w": "qator",
+        "s": 17.57,
+        "e": 17.91
+      },
+      {
+        "w": "konstruktori",
+        "s": 17.85,
+        "e": 18.43
+      },
+      {
+        "w": "orqali",
+        "s": 18.39,
+        "e": 18.75
+      },
+      {
+        "w": "sana",
+        "s": 19.07,
+        "e": 19.39
+      },
+      {
+        "w": "va",
+        "s": 19.43,
+        "e": 19.57
+      },
+      {
+        "w": "ay-di",
+        "s": 19.67,
+        "e": 19.97
+      },
+      {
+        "w": "berilganda,",
+        "s": 19.97,
+        "e": 20.55
+      },
+      {
+        "w": "rejalashtiruvchi",
+        "s": 20.85,
+        "e": 21.59
+      },
+      {
+        "w": "indeks",
+        "s": 21.59,
+        "e": 21.97
+      },
+      {
+        "w": "shartini",
+        "s": 21.91,
+        "e": 22.35
+      },
+      {
+        "w": "aynan",
+        "s": 22.54,
+        "e": 22.92
+      },
+      {
+        "w": "kerakli",
+        "s": 22.92,
+        "e": 23.42
+      },
+      {
+        "w": "nuqtadan",
+        "s": 23.42,
+        "e": 23.92
+      },
+      {
+        "w": "boshlaydi.",
+        "s": 23.86,
+        "e": 24.32
+      }
+    ]
+  },
+  {
+    "scene": "pg_keyset_row_constructor",
+    "id": "l4",
+    "text": "Natijada bor-yo'g'i yigirmata qator o'qilib, birinchi sahifadek nol butun yuzdan ikki millisekundda yakunlanadi.",
+    "show": "Natijada bor-yo'g'i yigirmata qator o'qilib, birinchi sahifadek nol butun yuzdan ikki millisekundda yakunlanadi.",
+    "say": "Natijada bor-yo'g'i yigirmata qator o'qilib, birinchi sahifadek nol butun yuzdan ikki millisekundda yakunlanadi.",
+    "a0": 24.8,
+    "a1": 30.76,
+    "words": [
+      {
+        "w": "Natijada",
+        "s": 24.8,
+        "e": 25.3
+      },
+      {
+        "w": "bor-yo'g'i",
+        "s": 25.54,
+        "e": 25.98
+      },
+      {
+        "w": "yigirmata",
+        "s": 25.96,
+        "e": 26.46
+      },
+      {
+        "w": "qator",
+        "s": 26.42,
+        "e": 26.74
+      },
+      {
+        "w": "o'qilib,",
+        "s": 26.72,
+        "e": 27.06
+      },
+      {
+        "w": "birinchi",
+        "s": 27.3,
+        "e": 27.66
+      },
+      {
+        "w": "sahifadek",
+        "s": 27.6,
+        "e": 28.2
+      },
+      {
+        "w": "nol",
+        "s": 28.44,
+        "e": 28.72
+      },
+      {
+        "w": "butun",
+        "s": 28.68,
+        "e": 29.0
+      },
+      {
+        "w": "yuzdan",
+        "s": 28.98,
+        "e": 29.34
+      },
+      {
+        "w": "ikki",
+        "s": 29.38,
+        "e": 29.68
+      },
+      {
+        "w": "millisekundda",
+        "s": 29.64,
+        "e": 30.26
+      },
+      {
+        "w": "yakunlanadi.",
+        "s": 30.22,
+        "e": 30.76
+      }
+    ]
+  },
+  {
+    "scene": "pg_or_yozuvi_xatosi",
+    "id": "l5",
+    "text": "Agar xuddi shu shartni o-er mantiqiy amali bilan yozsak, Postgres uni indeks sharti emas, balki filtr sifatida bajarib yigirma to'qqiz millisekund sarflaydi.",
+    "show": "Agar xuddi shu shartni o-er mantiqiy amali bilan yozsak, Postgres uni indeks sharti emas, balki filtr sifatida bajarib yigirma to'qqiz millisekund sarflaydi.",
+    "say": "Agar xuddi shu shartni o-er mantiqiy amali bilan yozsak, Postgres uni indeks sharti emas, balki filtr sifatida bajarib yigirma to'qqiz millisekund sarflaydi.",
+    "a0": 31.5,
+    "a1": 40.39,
+    "words": [
+      {
+        "w": "Agar",
+        "s": 31.5,
+        "e": 31.8
+      },
+      {
+        "w": "xuddi",
+        "s": 32.02,
+        "e": 32.36
+      },
+      {
+        "w": "shu",
+        "s": 32.32,
+        "e": 32.48
+      },
+      {
+        "w": "shartni",
+        "s": 32.48,
+        "e": 32.92
+      },
+      {
+        "w": "o-er",
+        "s": 33.12,
+        "e": 33.34
+      },
+      {
+        "w": "mantiqiy",
+        "s": 33.34,
+        "e": 33.82
+      },
+      {
+        "w": "amali",
+        "s": 33.82,
+        "e": 34.14
+      },
+      {
+        "w": "bilan",
+        "s": 34.08,
+        "e": 34.32
+      },
+      {
+        "w": "yozsak,",
+        "s": 34.32,
+        "e": 34.68
+      },
+      {
+        "w": "Postgres",
+        "s": 34.92,
+        "e": 35.42
+      },
+      {
+        "w": "uni",
+        "s": 35.42,
+        "e": 35.62
+      },
+      {
+        "w": "indeks",
+        "s": 35.66,
+        "e": 36.04
+      },
+      {
+        "w": "sharti",
+        "s": 36.0,
+        "e": 36.32
+      },
+      {
+        "w": "emas,",
+        "s": 36.28,
+        "e": 36.58
+      },
+      {
+        "w": "balki",
+        "s": 36.84,
+        "e": 37.18
+      },
+      {
+        "w": "filtr",
+        "s": 37.3,
+        "e": 37.71
+      },
+      {
+        "w": "sifatida",
+        "s": 37.67,
+        "e": 38.05
+      },
+      {
+        "w": "bajarib",
+        "s": 37.99,
+        "e": 38.39
+      },
+      {
+        "w": "yigirma",
+        "s": 38.61,
+        "e": 39.01
+      },
+      {
+        "w": "to'qqiz",
+        "s": 38.99,
+        "e": 39.41
+      },
+      {
+        "w": "millisekund",
+        "s": 39.39,
+        "e": 39.97
+      },
+      {
+        "w": "sarflaydi.",
+        "s": 39.91,
+        "e": 40.39
+      }
+    ]
+  },
+  {
+    "scene": "pg_or_yozuvi_xatosi",
+    "id": "l6",
+    "text": "Shuning uchun Postgresda keyset pagination uchun doim qator konstruktori yozuvidan foydalanish lozim.",
+    "show": "Shuning uchun Postgresda keyset pagination uchun doim qator konstruktori yozuvidan foydalanish lozim.",
+    "say": "Shuning uchun Postgresda keyset sahifalash uchun doim qator konstruktori yozuvidan foydalanish lozim.",
+    "a0": 40.85,
+    "a1": 46.43,
+    "words": [
+      {
+        "w": "Shuning",
+        "s": 40.85,
+        "e": 41.15
+      },
+      {
+        "w": "uchun",
+        "s": 41.07,
+        "e": 41.35
+      },
+      {
+        "w": "Postgresda",
+        "s": 41.57,
+        "e": 42.19
+      },
+      {
+        "w": "keyset",
+        "s": 42.29,
+        "e": 42.79
+      },
+      {
+        "w": "sahifalash",
+        "s": 42.75,
+        "e": 43.31
+      },
+      {
+        "w": "uchun",
+        "s": 43.25,
+        "e": 43.51
+      },
+      {
+        "w": "doim",
+        "s": 43.83,
+        "e": 44.25
+      },
+      {
+        "w": "qator",
+        "s": 44.27,
+        "e": 44.65
+      },
+      {
+        "w": "konstruktori",
+        "s": 44.61,
+        "e": 45.21
+      },
+      {
+        "w": "yozuvidan",
+        "s": 45.13,
+        "e": 45.63
+      },
+      {
+        "w": "foydalanish",
+        "s": 45.59,
+        "e": 46.15
+      },
+      {
+        "w": "lozim.",
+        "s": 46.11,
+        "e": 46.43
+      }
+    ]
+  },
+  {
+    "scene": "pg_drift_jonli_sinov",
+    "id": "l7",
+    "text": "Jonli sinovda birinchi sahifadan keyin yangi buyurtma qo'shilganda, ofset uchinchi qatorni ikkinchi sahifada yana takror ko'rsatdi.",
+    "show": "Jonli sinovda birinchi sahifadan keyin yangi buyurtma qo'shilganda, ofset uchinchi qatorni ikkinchi sahifada yana takror ko'rsatdi.",
+    "say": "Jonli sinovda birinchi sahifadan keyin yangi buyurtma qo'shilganda, ofset uchinchi qatorni ikkinchi sahifada yana takror ko'rsatdi.",
+    "a0": 47.31,
+    "a1": 54.24,
+    "words": [
+      {
+        "w": "Jonli",
+        "s": 47.31,
+        "e": 47.59
+      },
+      {
+        "w": "sinovda",
+        "s": 47.55,
+        "e": 47.93
+      },
+      {
+        "w": "birinchi",
+        "s": 47.93,
+        "e": 48.25
+      },
+      {
+        "w": "sahifadan",
+        "s": 48.17,
+        "e": 48.71
+      },
+      {
+        "w": "keyin",
+        "s": 48.67,
+        "e": 48.95
+      },
+      {
+        "w": "yangi",
+        "s": 49.27,
+        "e": 49.61
+      },
+      {
+        "w": "buyurtma",
+        "s": 49.57,
+        "e": 49.99
+      },
+      {
+        "w": "qo'shilganda,",
+        "s": 49.97,
+        "e": 50.61
+      },
+      {
+        "w": "ofset",
+        "s": 50.93,
+        "e": 51.35
+      },
+      {
+        "w": "uchinchi",
+        "s": 51.37,
+        "e": 51.77
+      },
+      {
+        "w": "qatorni",
+        "s": 51.71,
+        "e": 52.21
+      },
+      {
+        "w": "ikkinchi",
+        "s": 52.29,
+        "e": 52.74
+      },
+      {
+        "w": "sahifada",
+        "s": 52.68,
+        "e": 53.24
+      },
+      {
+        "w": "yana",
+        "s": 53.24,
+        "e": 53.48
+      },
+      {
+        "w": "takror",
+        "s": 53.44,
+        "e": 53.82
+      },
+      {
+        "w": "ko'rsatdi.",
+        "s": 53.76,
+        "e": 54.24
+      }
+    ]
+  },
+  {
+    "scene": "pg_drift_jonli_sinov",
+    "id": "l8",
+    "text": "Keyset esa oxirgi qatordan keyingi haqiqiy yangi yozuvlarni aniq topib, ma'lumot surilishining oldini oldi.",
+    "show": "Keyset esa oxirgi qatordan keyingi haqiqiy yangi yozuvlarni aniq topib, ma'lumot surilishining oldini oldi.",
+    "say": "Keyset esa oxirgi qatordan keyingi haqiqiy yangi yozuvlarni aniq topib, ma'lumot surilishining oldini oldi.",
+    "a0": 54.72,
+    "a1": 60.85,
+    "words": [
+      {
+        "w": "Keyset",
+        "s": 54.72,
+        "e": 55.14
+      },
+      {
+        "w": "esa",
+        "s": 55.1,
+        "e": 55.34
+      },
+      {
+        "w": "oxirgi",
+        "s": 55.62,
+        "e": 56.02
+      },
+      {
+        "w": "qatordan",
+        "s": 55.98,
+        "e": 56.48
+      },
+      {
+        "w": "keyingi",
+        "s": 56.46,
+        "e": 56.82
+      },
+      {
+        "w": "haqiqiy",
+        "s": 56.86,
+        "e": 57.36
+      },
+      {
+        "w": "yangi",
+        "s": 57.32,
+        "e": 57.62
+      },
+      {
+        "w": "yozuvlarni",
+        "s": 57.56,
+        "e": 58.14
+      },
+      {
+        "w": "aniq",
+        "s": 58.24,
+        "e": 58.5
+      },
+      {
+        "w": "topib,",
+        "s": 58.48,
+        "e": 58.84
+      },
+      {
+        "w": "ma'lumot",
+        "s": 59.12,
+        "e": 59.6
+      },
+      {
+        "w": "surilishining",
+        "s": 59.56,
+        "e": 60.14
+      },
+      {
+        "w": "oldini",
+        "s": 60.27,
+        "e": 60.61
+      },
+      {
+        "w": "oldi.",
+        "s": 60.57,
+        "e": 60.85
+      }
+    ]
+  }
+]

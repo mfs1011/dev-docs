@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/48-1-tushuncha.jpg">
+    <source src="/video/sql/48-1-tushuncha.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/48-1-tushuncha.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/48-1-tushuncha.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+</figure>
+
 **Sahifalash** (pagination) — katta natijani bo'laklab ko'rsatish: 1-sahifa — birinchi 20 ta, 2-sahifa — keyingi 20 ta va hokazo. Ikki usul bor:
 
 | Usul | So'rov | Keyingi sahifa uchun eslab qolinadi |
@@ -47,6 +55,14 @@ sana > x OR (sana = x AND id > y)
 Keyset'ning cheklovi: "15-sahifaga o'tish" bo'lmaydi — faqat keyingi/oldingi. Cheksiz lenta, "Yana yuklash" tugmasi, API'dagi kursor uchun bu odatda yetarli.
 
 ## Kod
+
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/48-2-kod.jpg">
+    <source src="/video/sql/48-2-kod.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/48-2-kod.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/48-2-kod.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+</figure>
 
 Misollar PostgreSQL 18.6, MySQL 9.7.2 va SQLite 3.54.1 da ishga tushirilgan.
 
@@ -194,6 +210,14 @@ WHERE (sana, id) < (timestamp '2025-08-20 11:32:00', 999998) ORDER BY sana DESC,
 - Keyset (`<`, chunki tartib `DESC`) — `999997` dan, to'g'ri davom: u **o'rin** emas, **qiymat** bo'yicha ishlaydi.
 
 ## Dialektlar
+
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/48-3-dialektlar.jpg">
+    <source src="/video/sql/48-3-dialektlar.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/48-3-dialektlar.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/48-3-dialektlar.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+</figure>
 
 ### MySQL
 

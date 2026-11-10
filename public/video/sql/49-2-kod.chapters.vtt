@@ -1,0 +1,13 @@
+WEBVTT
+
+00:00.000 --> 00:16.613
+PostgreSQL: tsvector va Lug'atlar
+
+00:16.613 --> 00:30.805
+Qidiruv va Prefiks (:*) Sintaksisi
+
+00:30.805 --> 00:45.238
+ts_rank va websearch_to_tsquery
+
+00:45.238 --> 01:04.680
+GIN va pg_trgm Benchmarklari

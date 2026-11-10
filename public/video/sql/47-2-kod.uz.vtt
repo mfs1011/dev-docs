@@ -1,0 +1,41 @@
+WEBVTT
+
+1
+00:01.420 --> 00:09.820
+Postgresda yuz ming qatorli mijozlar jadvalida louer imeyl so'rovi
+oddiy indeks borligiga qaramay to'liq skanerlashga tushadi.
+
+2
+00:10.090 --> 00:19.620
+Ammo louer ifodasi bo'yicha indeks yaratilgach, bajarilish vaqti o'n millisekunddan
+nol butun yuzdan ikki millisekundga, ya'ni to'rt yuz baravarga tezlashadi.
+
+3
+00:22.930 --> 00:29.490
+Sana bo'yicha yildan ajratish so'rovida esa rejalashtiruvchi
+ellik to'rt baravar adashib yetmish uch ming qatorni elaydi.
+
+4
+00:29.680 --> 00:36.410
+Shartni sana oralig'iga o'zgartirish esa bi-tri indeksini
+to'liq ishga solib, vaqtni bir millisekundga tushiradi.
+
+5
+00:39.360 --> 00:45.620
+Matnli telefon ustunini raqam bilan so'raganimizda
+Postgres operator topilmadi deb darhol xato qaytaradi.
+
+6
+00:45.890 --> 00:50.960
+To'g'ri satr uzatilganda esa telefon indeksi
+orqali bir zumda qidiruv amalga oshiriladi.
+
+7
+00:53.810 --> 01:01.580
+Turli ustunlardagi o-er shartida bitmep-or har ikkala indeks
+xaritasini birlashtirib bir millisekunddan kam vaqt sarflaydi.
+
+8
+01:02.160 --> 01:10.100
+Jadval qatorlarini sanash esa doim to'liq skan talab qiladi, shuning
+uchun tezkor hisobda reltyupls qiymatidan foydalanish lozim.

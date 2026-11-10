@@ -1,0 +1,705 @@
+[
+  {
+    "scene": "pg_lower_va_ifoda_indeksi",
+    "id": "l1",
+    "text": "Postgresda yuz ming qatorli mijozlar jadvalida louer imeyl so'rovi oddiy indeks borligiga qaramay to'liq skanerlashga tushadi.",
+    "show": "Postgresda yuz ming qatorli mijozlar jadvalida louer imeyl so'rovi oddiy indeks borligiga qaramay to'liq skanerlashga tushadi.",
+    "say": "Postgresda yuz ming qatorli mijozlar jadvalida louer imeyl so'rovi oddiy indeks borligiga qaramay to'liq skanerlashga tushadi.",
+    "a0": 0.14,
+    "a1": 8.09,
+    "words": [
+      {
+        "w": "Postgresda",
+        "s": 0.14,
+        "e": 0.8
+      },
+      {
+        "w": "yuz",
+        "s": 1.12,
+        "e": 1.32
+      },
+      {
+        "w": "ming",
+        "s": 1.36,
+        "e": 1.52
+      },
+      {
+        "w": "qatorli",
+        "s": 1.54,
+        "e": 1.98
+      },
+      {
+        "w": "mijozlar",
+        "s": 2.12,
+        "e": 2.56
+      },
+      {
+        "w": "jadvalida",
+        "s": 2.62,
+        "e": 3.12
+      },
+      {
+        "w": "louer",
+        "s": 3.48,
+        "e": 3.82
+      },
+      {
+        "w": "imeyl",
+        "s": 3.96,
+        "e": 4.32
+      },
+      {
+        "w": "so'rovi",
+        "s": 4.38,
+        "e": 4.74
+      },
+      {
+        "w": "oddiy",
+        "s": 5.06,
+        "e": 5.34
+      },
+      {
+        "w": "indeks",
+        "s": 5.5,
+        "e": 5.76
+      },
+      {
+        "w": "borligiga",
+        "s": 5.82,
+        "e": 6.26
+      },
+      {
+        "w": "qaramay",
+        "s": 6.32,
+        "e": 6.68
+      },
+      {
+        "w": "to'liq",
+        "s": 6.88,
+        "e": 7.16
+      },
+      {
+        "w": "skanerlashga",
+        "s": 7.2,
+        "e": 7.79
+      },
+      {
+        "w": "tushadi.",
+        "s": 7.83,
+        "e": 8.09
+      }
+    ]
+  },
+  {
+    "scene": "pg_lower_va_ifoda_indeksi",
+    "id": "l2",
+    "text": "Ammo louer ifodasi bo'yicha indeks yaratilgach, bajarilish vaqti o'n millisekunddan nol butun yuzdan ikki millisekundga, ya'ni to'rt yuz baravarga tezlashadi.",
+    "show": "Ammo louer ifodasi bo'yicha indeks yaratilgach, bajarilish vaqti o'n millisekunddan nol butun yuzdan ikki millisekundga, ya'ni to'rt yuz baravarga tezlashadi.",
+    "say": "Ammo louer ifodasi bo'yicha indeks yaratilgach, bajarilish vaqti o'n millisekunddan nol butun yuzdan ikki millisekundga, ya'ni to'rt yuz baravarga tezlashadi.",
+    "a0": 8.81,
+    "a1": 17.89,
+    "words": [
+      {
+        "w": "Ammo",
+        "s": 8.81,
+        "e": 8.99
+      },
+      {
+        "w": "louer",
+        "s": 9.37,
+        "e": 9.67
+      },
+      {
+        "w": "ifodasi",
+        "s": 9.75,
+        "e": 10.15
+      },
+      {
+        "w": "bo'yicha",
+        "s": 10.19,
+        "e": 10.41
+      },
+      {
+        "w": "indeks",
+        "s": 10.47,
+        "e": 10.73
+      },
+      {
+        "w": "yaratilgach,",
+        "s": 10.79,
+        "e": 11.31
+      },
+      {
+        "w": "bajarilish",
+        "s": 11.67,
+        "e": 12.19
+      },
+      {
+        "w": "vaqti",
+        "s": 12.25,
+        "e": 12.53
+      },
+      {
+        "w": "o'n",
+        "s": 12.83,
+        "e": 12.97
+      },
+      {
+        "w": "millisekunddan",
+        "s": 13.03,
+        "e": 13.75
+      },
+      {
+        "w": "nol",
+        "s": 13.95,
+        "e": 14.13
+      },
+      {
+        "w": "butun",
+        "s": 14.21,
+        "e": 14.43
+      },
+      {
+        "w": "yuzdan",
+        "s": 14.49,
+        "e": 14.81
+      },
+      {
+        "w": "ikki",
+        "s": 14.95,
+        "e": 15.15
+      },
+      {
+        "w": "millisekundga,",
+        "s": 15.19,
+        "e": 15.77
+      },
+      {
+        "w": "ya'ni",
+        "s": 16.09,
+        "e": 16.29
+      },
+      {
+        "w": "to'rt",
+        "s": 16.55,
+        "e": 16.79
+      },
+      {
+        "w": "yuz",
+        "s": 16.83,
+        "e": 16.97
+      },
+      {
+        "w": "baravarga",
+        "s": 17.03,
+        "e": 17.41
+      },
+      {
+        "w": "tezlashadi.",
+        "s": 17.43,
+        "e": 17.89
+      }
+    ]
+  },
+  {
+    "scene": "pg_sana_extract_va_oraliq",
+    "id": "l3",
+    "text": "Sana bo'yicha yildan ajratish so'rovida esa rejalashtiruvchi ellik to'rt baravar adashib yetmish uch ming qatorni elaydi.",
+    "show": "Sana bo'yicha yildan ajratish so'rovida esa rejalashtiruvchi ellik to'rt baravar adashib yetmish uch ming qatorni elaydi.",
+    "say": "Sana bo'yicha yildan ajratish so'rovida esa rejalashtiruvchi ellik to'rt baravar adashib yetmish uch ming qatorni elaydi.",
+    "a0": 19.05,
+    "a1": 25.16,
+    "words": [
+      {
+        "w": "Sana",
+        "s": 19.05,
+        "e": 19.25
+      },
+      {
+        "w": "bo'yicha",
+        "s": 19.29,
+        "e": 19.61
+      },
+      {
+        "w": "yildan",
+        "s": 19.81,
+        "e": 20.13
+      },
+      {
+        "w": "ajratish",
+        "s": 20.21,
+        "e": 20.61
+      },
+      {
+        "w": "so'rovida",
+        "s": 20.63,
+        "e": 20.99
+      },
+      {
+        "w": "esa",
+        "s": 21.05,
+        "e": 21.23
+      },
+      {
+        "w": "rejalashtiruvchi",
+        "s": 21.47,
+        "e": 22.17
+      },
+      {
+        "w": "ellik",
+        "s": 22.39,
+        "e": 22.64
+      },
+      {
+        "w": "to'rt",
+        "s": 22.68,
+        "e": 22.86
+      },
+      {
+        "w": "baravar",
+        "s": 22.88,
+        "e": 23.18
+      },
+      {
+        "w": "adashib",
+        "s": 23.24,
+        "e": 23.58
+      },
+      {
+        "w": "yetmish",
+        "s": 23.76,
+        "e": 24.1
+      },
+      {
+        "w": "uch",
+        "s": 24.18,
+        "e": 24.3
+      },
+      {
+        "w": "ming",
+        "s": 24.34,
+        "e": 24.48
+      },
+      {
+        "w": "qatorni",
+        "s": 24.52,
+        "e": 24.88
+      },
+      {
+        "w": "elaydi.",
+        "s": 24.9,
+        "e": 25.16
+      }
+    ]
+  },
+  {
+    "scene": "pg_sana_extract_va_oraliq",
+    "id": "l4",
+    "text": "Shartni sana oralig'iga o'zgartirish esa bi-tri indeksini to'liq ishga solib, vaqtni bir millisekundga tushiradi.",
+    "show": "Shartni sana oralig'iga o'zgartirish esa bi-tri indeksini to'liq ishga solib, vaqtni bir millisekundga tushiradi.",
+    "say": "Shartni sana oralig'iga o'zgartirish esa bi-tri indeksini to'liq ishga solib, vaqtni bir millisekundga tushiradi.",
+    "a0": 25.8,
+    "a1": 32.08,
+    "words": [
+      {
+        "w": "Shartni",
+        "s": 25.8,
+        "e": 26.22
+      },
+      {
+        "w": "sana",
+        "s": 26.44,
+        "e": 26.68
+      },
+      {
+        "w": "oralig'iga",
+        "s": 26.76,
+        "e": 27.18
+      },
+      {
+        "w": "o'zgartirish",
+        "s": 27.24,
+        "e": 27.74
+      },
+      {
+        "w": "esa",
+        "s": 27.78,
+        "e": 27.96
+      },
+      {
+        "w": "bi-tri",
+        "s": 28.24,
+        "e": 28.62
+      },
+      {
+        "w": "indeksini",
+        "s": 28.7,
+        "e": 29.14
+      },
+      {
+        "w": "to'liq",
+        "s": 29.24,
+        "e": 29.52
+      },
+      {
+        "w": "ishga",
+        "s": 29.58,
+        "e": 29.78
+      },
+      {
+        "w": "solib,",
+        "s": 29.82,
+        "e": 30.06
+      },
+      {
+        "w": "vaqtni",
+        "s": 30.38,
+        "e": 30.74
+      },
+      {
+        "w": "bir",
+        "s": 31.0,
+        "e": 31.12
+      },
+      {
+        "w": "millisekundga",
+        "s": 31.18,
+        "e": 31.72
+      },
+      {
+        "w": "tushiradi.",
+        "s": 31.76,
+        "e": 32.08
+      }
+    ]
+  },
+  {
+    "scene": "pg_telefon_tip_xatosi",
+    "id": "l5",
+    "text": "Matnli telefon ustunini raqam bilan so'raganimizda Postgres operator topilmadi deb darhol xato qaytaradi.",
+    "show": "Matnli telefon ustunini raqam bilan so'raganimizda Postgres operator topilmadi deb darhol xato qaytaradi.",
+    "say": "Matnli telefon ustunini raqam bilan so'raganimizda Postgres operator topilmadi deb darhol xato qaytaradi.",
+    "a0": 32.88,
+    "a1": 38.69,
+    "words": [
+      {
+        "w": "Matnli",
+        "s": 32.88,
+        "e": 33.28
+      },
+      {
+        "w": "telefon",
+        "s": 33.48,
+        "e": 33.84
+      },
+      {
+        "w": "ustunini",
+        "s": 33.92,
+        "e": 34.36
+      },
+      {
+        "w": "raqam",
+        "s": 34.46,
+        "e": 34.76
+      },
+      {
+        "w": "bilan",
+        "s": 34.82,
+        "e": 35.0
+      },
+      {
+        "w": "so'raganimizda",
+        "s": 35.04,
+        "e": 35.66
+      },
+      {
+        "w": "Postgres",
+        "s": 35.88,
+        "e": 36.34
+      },
+      {
+        "w": "operator",
+        "s": 36.44,
+        "e": 36.84
+      },
+      {
+        "w": "topilmadi",
+        "s": 36.88,
+        "e": 37.32
+      },
+      {
+        "w": "deb",
+        "s": 37.36,
+        "e": 37.51
+      },
+      {
+        "w": "darhol",
+        "s": 37.61,
+        "e": 37.99
+      },
+      {
+        "w": "xato",
+        "s": 38.03,
+        "e": 38.23
+      },
+      {
+        "w": "qaytaradi.",
+        "s": 38.29,
+        "e": 38.69
+      }
+    ]
+  },
+  {
+    "scene": "pg_telefon_tip_xatosi",
+    "id": "l6",
+    "text": "To'g'ri satr uzatilganda esa telefon indeksi orqali bir zumda qidiruv amalga oshiriladi.",
+    "show": "To'g'ri satr uzatilganda esa telefon indeksi orqali bir zumda qidiruv amalga oshiriladi.",
+    "say": "To'g'ri satr uzatilganda esa telefon indeksi orqali bir zumda qidiruv amalga oshiriladi.",
+    "a0": 39.41,
+    "a1": 44.03,
+    "words": [
+      {
+        "w": "To'g'ri",
+        "s": 39.41,
+        "e": 39.67
+      },
+      {
+        "w": "satr",
+        "s": 39.71,
+        "e": 39.95
+      },
+      {
+        "w": "uzatilganda",
+        "s": 39.99,
+        "e": 40.55
+      },
+      {
+        "w": "esa",
+        "s": 40.61,
+        "e": 40.77
+      },
+      {
+        "w": "telefon",
+        "s": 41.13,
+        "e": 41.51
+      },
+      {
+        "w": "indeksi",
+        "s": 41.59,
+        "e": 41.89
+      },
+      {
+        "w": "orqali",
+        "s": 41.95,
+        "e": 42.25
+      },
+      {
+        "w": "bir",
+        "s": 42.49,
+        "e": 42.61
+      },
+      {
+        "w": "zumda",
+        "s": 42.67,
+        "e": 42.91
+      },
+      {
+        "w": "qidiruv",
+        "s": 42.95,
+        "e": 43.23
+      },
+      {
+        "w": "amalga",
+        "s": 43.29,
+        "e": 43.55
+      },
+      {
+        "w": "oshiriladi.",
+        "s": 43.59,
+        "e": 44.03
+      }
+    ]
+  },
+  {
+    "scene": "pg_or_va_count_amalda",
+    "id": "l7",
+    "text": "Turli ustunlardagi o-er shartida bitmep-or har ikkala indeks xaritasini birlashtirib bir millisekunddan kam vaqt sarflaydi.",
+    "show": "Turli ustunlardagi o-er shartida bitmep-or har ikkala indeks xaritasini birlashtirib bir millisekunddan kam vaqt sarflaydi.",
+    "say": "Turli ustunlardagi o-er shartida bitmep-or har ikkala indeks xaritasini birlashtirib bir millisekunddan kam vaqt sarflaydi.",
+    "a0": 44.73,
+    "a1": 52.05,
+    "words": [
+      {
+        "w": "Turli",
+        "s": 44.73,
+        "e": 44.99
+      },
+      {
+        "w": "ustunlardagi",
+        "s": 45.07,
+        "e": 45.71
+      },
+      {
+        "w": "o-er",
+        "s": 45.99,
+        "e": 46.17
+      },
+      {
+        "w": "shartida",
+        "s": 46.25,
+        "e": 46.67
+      },
+      {
+        "w": "bitmep-or",
+        "s": 47.09,
+        "e": 47.69
+      },
+      {
+        "w": "har",
+        "s": 47.85,
+        "e": 48.07
+      },
+      {
+        "w": "ikkala",
+        "s": 48.15,
+        "e": 48.45
+      },
+      {
+        "w": "indeks",
+        "s": 48.53,
+        "e": 48.81
+      },
+      {
+        "w": "xaritasini",
+        "s": 48.83,
+        "e": 49.35
+      },
+      {
+        "w": "birlashtirib",
+        "s": 49.39,
+        "e": 49.91
+      },
+      {
+        "w": "bir",
+        "s": 50.23,
+        "e": 50.35
+      },
+      {
+        "w": "millisekunddan",
+        "s": 50.41,
+        "e": 51.09
+      },
+      {
+        "w": "kam",
+        "s": 51.19,
+        "e": 51.37
+      },
+      {
+        "w": "vaqt",
+        "s": 51.43,
+        "e": 51.61
+      },
+      {
+        "w": "sarflaydi.",
+        "s": 51.63,
+        "e": 52.05
+      }
+    ]
+  },
+  {
+    "scene": "pg_or_va_count_amalda",
+    "id": "l8",
+    "text": "Jadval qatorlarini sanash esa doim to'liq skan talab qiladi, shuning uchun tezkor hisobda reltyupls qiymatidan foydalanish lozim.",
+    "show": "Jadval qatorlarini sanash esa doim to'liq skan talab qiladi, shuning uchun tezkor hisobda reltyupls qiymatidan foydalanish lozim.",
+    "say": "Jadval qatorlarini sanash esa doim to'liq skan talab qiladi, shuning uchun tezkor hisobda rel-tyupls qiymatidan foydalanish lozim.",
+    "a0": 53.08,
+    "a1": 60.57,
+    "words": [
+      {
+        "w": "Jadval",
+        "s": 53.08,
+        "e": 53.38
+      },
+      {
+        "w": "qatorlarini",
+        "s": 53.42,
+        "e": 53.98
+      },
+      {
+        "w": "sanash",
+        "s": 54.04,
+        "e": 54.32
+      },
+      {
+        "w": "esa",
+        "s": 54.36,
+        "e": 54.54
+      },
+      {
+        "w": "doim",
+        "s": 54.82,
+        "e": 55.18
+      },
+      {
+        "w": "to'liq",
+        "s": 55.3,
+        "e": 55.58
+      },
+      {
+        "w": "skan",
+        "s": 55.66,
+        "e": 55.88
+      },
+      {
+        "w": "talab",
+        "s": 55.94,
+        "e": 56.16
+      },
+      {
+        "w": "qiladi,",
+        "s": 56.18,
+        "e": 56.44
+      },
+      {
+        "w": "shuning",
+        "s": 56.74,
+        "e": 56.96
+      },
+      {
+        "w": "uchun",
+        "s": 56.98,
+        "e": 57.18
+      },
+      {
+        "w": "tezkor",
+        "s": 57.36,
+        "e": 57.74
+      },
+      {
+        "w": "hisobda",
+        "s": 57.76,
+        "e": 58.18
+      },
+      {
+        "w": "rel-tyupls",
+        "s": 58.52,
+        "e": 59.18
+      },
+      {
+        "w": "qiymatidan",
+        "s": 59.2,
+        "e": 59.68
+      },
+      {
+        "w": "foydalanish",
+        "s": 59.72,
+        "e": 60.23
+      },
+      {
+        "w": "lozim.",
+        "s": 60.27,
+        "e": 60.57
+      }
+    ]
+  }
+]
