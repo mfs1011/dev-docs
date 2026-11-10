@@ -36,7 +36,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - MQTT, STOMP, Federation va Shovel plaginlari, Kubernetes, OAuth 2 va LDAP — maxsus holatlar, hujjatda: [RQ Plugins](https://www.rabbitmq.com/docs/plugins).
 - Symfony Messenger va Laravel navbatlari bilan ulash — shu framework'lar kitoblarida.
 
-> **Holat.** Qo'llanma yozilmoqda: 13/34 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 14/34 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -78,7 +78,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 | 11 | [Navbat xususiyatlari](11-navbat-xususiyatlari.md) | `durable`, `exclusive`, `auto-delete`. Navbat argumentlari. Navbat turlari: classic, quorum, stream | V | [RQ Queues](https://www.rabbitmq.com/docs/queues) |
 | 12 | [Quorum navbatlar](12-quorum.md) | Bir nechta tugunda nusxasi saqlanadigan xavfsiz navbat. Qachon classic, qachon quorum | V | [RQ Quorum Queues](https://www.rabbitmq.com/docs/quorum-queues) · [RQ Classic Queues](https://www.rabbitmq.com/docs/classic-queues) |
 | 13 | [Xabar va navbat muddati](13-ttl.md) | TTL (time-to-live): xabarning yashash muddati. Ishlatilmayotgan navbatning o'chishi | V | [RQ Time-to-Live and Expiration](https://www.rabbitmq.com/docs/ttl) |
-| 14 | Navbat uzunligi chegarasi | `max-length`, `max-length-bytes`. Chegaradan oshganda nima bo'ladi (`overflow`) | V | [RQ Queue Length Limit](https://www.rabbitmq.com/docs/maxlength) |
+| 14 | [Navbat uzunligi chegarasi](14-uzunlik-chegarasi.md) | `max-length`, `max-length-bytes`. Chegaradan oshganda nima bo'ladi (`overflow`) | V | [RQ Queue Length Limit](https://www.rabbitmq.com/docs/maxlength) |
 | 15 | Dead lettering | Rad etilgan, muddati o'tgan yoki chegaradan oshgan xabar boshqa exchange'ga (DLX) o'tadi. Quorum navbatlarda "kamida bir marta" (at-least-once) dead lettering | V+N | [RQ Dead Letter Exchanges](https://www.rabbitmq.com/docs/dlx) |
 | 16 | Ustuvor navbatlar | Muhimroq xabarni oldinroq berish (priority) | V | [RQ Priority Queues](https://www.rabbitmq.com/docs/priority) |
 | 17 | Policy'lar | Navbat sozlamalarini kodda emas, server tomonda policy bilan berish. Operator policy'lari | V | [RQ Policies](https://www.rabbitmq.com/docs/policies) |
