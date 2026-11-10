@@ -35,7 +35,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - Docker'ning o'zi — **"Docker"** kitobida.
 - Tiered storage (eski ma'lumotni arzon omborga ko'chirish), klasterlar orasida nusxalash (MirrorMaker 2) — katta klasterlar mavzusi, hujjatda: [KD Tiered Storage](https://kafka.apache.org/44/operations/tiered-storage/), [KD Geo-Replication](https://kafka.apache.org/44/operations/geo-replication-cross-cluster-data-mirroring/).
 
-> **Holat.** Qo'llanma yozilmoqda: 2/35 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 3/35 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -56,7 +56,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 | --- | --- | --- | --- | --- |
 | 01 | [Hodisalar oqimi nima](01-hodisalar-oqimi.md) | Hodisa (event) — "nima bo'ldi" degan yozuv. Hodisalar oqimi (event streaming) nima. Kafka qayerda ishlatiladi: xabar almashish, sayt faolligini kuzatish, metrikalar, log yig'ish, oqimni qayta ishlash, event sourcing | — | [KD Introduction](https://kafka.apache.org/44/getting-started/introduction/) · [KD Use Cases](https://kafka.apache.org/44/getting-started/uses/) |
 | 02 | [Asosiy tushunchalar](02-asosiy-tushunchalar.md) | Hodisa tarkibi: kalit, qiymat, vaqt belgisi (timestamp), sarlavhalar (headers). Producer va consumer, topic, partition, replika, broker va klaster. Kafka API'lari: Producer, Consumer, Share Consumer, Streams, Connect, Admin | — | [KD Introduction](https://kafka.apache.org/44/getting-started/introduction/) · [KD APIs](https://kafka.apache.org/44/apis/) |
-| 03 | Kafka'ni ishga tushirish | Docker'da bitta tugun (node). KRaft rejimi. Arxiv (tgz) varianti va Java 17+ talabi. To'xtatish va ma'lumotni tozalash | D | [KD Quick Start](https://kafka.apache.org/44/getting-started/quickstart/) · [KD Docker](https://kafka.apache.org/44/getting-started/docker/) |
+| 03 | [Kafka'ni ishga tushirish](03-ishga-tushirish.md) | Docker'da bitta tugun (node). KRaft rejimi. Arxiv (tgz) varianti va Java 17+ talabi. To'xtatish va ma'lumotni tozalash | D | [KD Quick Start](https://kafka.apache.org/44/getting-started/quickstart/) · [KD Docker](https://kafka.apache.org/44/getting-started/docker/) |
 | 04 | Birinchi topic | `kafka-topics.sh` bilan topic yaratish va ko'rish. `kafka-console-producer.sh` va `kafka-console-consumer.sh`. Hodisalar o'qilgandan keyin ham saqlanib turadi: ularni xohlagancha qayta o'qish mumkin | D | [KD Quick Start](https://kafka.apache.org/44/getting-started/quickstart/) (3–5-qadamlar) |
 
 ## II qism — Topic va partition (5–9)
