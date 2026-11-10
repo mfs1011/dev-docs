@@ -35,7 +35,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - Docker'ning o'zi — **"Docker"** kitobida.
 - Tiered storage (eski ma'lumotni arzon omborga ko'chirish), klasterlar orasida nusxalash (MirrorMaker 2) — katta klasterlar mavzusi, hujjatda: [KD Tiered Storage](https://kafka.apache.org/44/operations/tiered-storage/), [KD Geo-Replication](https://kafka.apache.org/44/operations/geo-replication-cross-cluster-data-mirroring/).
 
-> **Holat.** Qo'llanma yozilmoqda: 29/35 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 30/35 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -113,7 +113,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
 | 29 | [Muhim sozlamalar](29-sozlamalar.md) | Broker: `log.dirs`, `listeners` va `advertised.listeners`, `num.partitions`, `default.replication.factor`. Topic darajasidagi sozlamalar. Admin API | D | [KD Broker Configs](https://kafka.apache.org/44/configuration/broker-configs/) · [KD Topic Configs](https://kafka.apache.org/44/configuration/topic-configs/) · [KD APIs → Admin API](https://kafka.apache.org/44/apis/) |
-| 30 | Xavfsizlik: TLS va SASL | Listener'lar va protokollar (PLAINTEXT, SSL, SASL_SSL). TLS bilan shifrlash. SASL bilan autentifikatsiya. Rasmiy Docker misollari | D | [KD Security Overview](https://kafka.apache.org/44/security/security-overview/) · [KD Listener Configuration](https://kafka.apache.org/44/security/listener-configuration/) · [KD SSL](https://kafka.apache.org/44/security/encryption-and-authentication-using-ssl/) · [KD SASL](https://kafka.apache.org/44/security/authentication-using-sasl/) |
+| 30 | [Xavfsizlik: TLS va SASL](30-tls-sasl.md) | Listener'lar va protokollar (PLAINTEXT, SSL, SASL_SSL). TLS bilan shifrlash. SASL bilan autentifikatsiya. Rasmiy Docker misollari | D | [KD Security Overview](https://kafka.apache.org/44/security/security-overview/) · [KD Listener Configuration](https://kafka.apache.org/44/security/listener-configuration/) · [KD SSL](https://kafka.apache.org/44/security/encryption-and-authentication-using-ssl/) · [KD SASL](https://kafka.apache.org/44/security/authentication-using-sasl/) |
 | 31 | Ruxsatlar: ACL | `kafka-acls.sh`: kim qaysi topic va guruhga nima qila oladi | D | [KD Authorization and ACLs](https://kafka.apache.org/44/security/authorization-and-acls/) |
 | 32 | Kvotalar va bir nechta jamoa | Producer va consumer tezligini cheklash (kvota). Topic nomlari bilan jamoalarni ajratish (multi-tenancy) | D | [KD Design → Quotas](https://kafka.apache.org/44/design/design/) · [KD Basic Operations](https://kafka.apache.org/44/operations/basic-kafka-operations/) (Setting quotas) · [KD Multi-Tenancy](https://kafka.apache.org/44/operations/multi-tenancy/) |
 | 33 | Monitoring | JMX metrikalari. Broker, producer va consumer'ning asosiy metrikalari. Consumer lag | D | [KD Monitoring](https://kafka.apache.org/44/operations/monitoring/) |
