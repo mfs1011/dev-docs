@@ -36,7 +36,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - MQTT, STOMP, Federation va Shovel plaginlari, Kubernetes, OAuth 2 va LDAP — maxsus holatlar, hujjatda: [RQ Plugins](https://www.rabbitmq.com/docs/plugins).
 - Symfony Messenger va Laravel navbatlari bilan ulash — shu framework'lar kitoblarida.
 
-> **Holat.** Qo'llanma yozilmoqda: 24/34 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma yozilmoqda: 25/34 bob tayyor. Havolasi borlari — tayyor boblar.
 
 ---
 
@@ -104,7 +104,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
-| 25 | Virtual host'lar | Bitta server ichida bir-biridan ajratilgan muhitlar (vhost) | V | [RQ Virtual Hosts](https://www.rabbitmq.com/docs/vhosts) |
+| 25 | [Virtual host'lar](25-vhost.md) | Bitta server ichida bir-biridan ajratilgan muhitlar (vhost) | V | [RQ Virtual Hosts](https://www.rabbitmq.com/docs/vhosts) |
 | 26 | Foydalanuvchilar va ruxsatlar | `configure`, `write`, `read` ruxsatlari. `guest` foydalanuvchisi standartda faqat localhost'dan ulana oladi. Parollar | V | [RQ Access Control](https://www.rabbitmq.com/docs/access-control) · [RQ Credentials and Passwords](https://www.rabbitmq.com/docs/passwords) |
 | 27 | Konfiguratsiya va loglar | `rabbitmq.conf` va `advanced.config`. Fayl va kataloglar joyi. Loglash | V | [RQ Configuration](https://www.rabbitmq.com/docs/configure) · [RQ File and Directory Locations](https://www.rabbitmq.com/docs/relocate) · [RQ Logging](https://www.rabbitmq.com/docs/logging) |
 | 28 | TLS | Shifrlangan ulanish (port 5671). Sertifikatlar. TLS muammolarini tekshirish | V | [RQ TLS Support](https://www.rabbitmq.com/docs/ssl) · [RQ Troubleshooting TLS](https://www.rabbitmq.com/docs/troubleshooting-ssl) |
