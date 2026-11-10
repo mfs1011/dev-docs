@@ -10,13 +10,14 @@ Manbalar va versiyalar (2026-11-07 da tekshirilgan):
 | --- | --- | --- |
 | Redis Open Source | 8.10.3 (2026-10-26). Hujjat eng so'nggi versiyani ishlatishni qat'iy tavsiya qiladi | <https://redis.io/docs/latest/operate/oss_and_stack/install/version-mgmt/> · <https://github.com/redis/redis/releases> |
 | O'rnatish | Redis'ning rasmiy APT ombori (`packages.redis.io`), unda Ubuntu 26.04 uchun 8.10.3 bor. Ubuntu'ning o'z paketi — 8.0.5 (universe), Redis 8.0 seriyasining qo'llab-quvvatlashi 2026-12-01 da tugaydi | <https://redis.io/docs/latest/operate/oss_and_stack/install/install-stack/apt/> · VPS: `apt-cache policy redis-server` |
-| Node.js klienti | `node-redis` (npm'da `redis`), 6.3.1 | <https://redis.io/docs/latest/develop/clients/nodejs/> · <https://www.npmjs.com/package/redis> |
+| Node.js klienti | `node-redis` (npm'da `redis`), 6.3.1; Node.js 26.13.0 LTS (2026-11-09 da tekshirilgan) | <https://redis.io/docs/latest/develop/clients/nodejs/> · <https://www.npmjs.com/package/redis> · <https://nodejs.org/dist/index.json> |
+| PHP klienti | `Predis` (Packagist'da `predis/predis`), 3.7.1 (2026-11-03); PHP 8.5.4, Composer 2.11.1. Hujjat Predis'ni PHP uchun tavsiya etilgan klient deydi (u Redis tomonidan emas, uchinchi tomon tomonidan ishlab chiqiladi) | <https://redis.io/docs/latest/develop/clients/php/> · <https://packagist.org/packages/predis/predis> |
 | Sinov VPS | Ubuntu 26.04 LTS | — |
 
 Muhit tanlovi haqida:
 
 - **Versiya.** Redis'ning versiyalar siyosatiga ko'ra oraliq (standard) relizlar keyingi reliz chiqqandan keyin 6 oy, uzaytirilgan (extended) relizlar esa 5 yil xavfsizlik tuzatishlarini oladi. Hujjat eng so'nggisini tavsiya qiladi, shuning uchun qo'llanma 8.10 ga tayanadi.
-- **Nega Node.js.** Hujjatdagi amaliy naqshlar (Use cases) har biri bir nechta tilda yozilgan, ular orasida Node.js (`node-redis`) va PHP ham bor. Saytda JavaScript kitobi bor, shuning uchun ilova kodi Node.js'da.
+- **Nega Node.js va PHP.** Hujjatdagi amaliy naqshlar (Use cases) har biri bir nechta tilda yozilgan, ular orasida Node.js (`node-redis`) va PHP (`Predis`) ham bor. Saytda JavaScript va Laravel/Symfony kitoblari bor, shuning uchun har misol ikki tilda beriladi.
 
 Qisqartmalar:
 
@@ -25,7 +26,7 @@ Qisqartmalar:
 "Muhit" ustunida:
 
 - **V** — VPS'da, `redis-cli` bilan.
-- **V+N** — VPS'dagi Redis va Node.js'dagi ilova kodi (`node-redis`).
+- **V+N** — VPS'dagi Redis va ilova kodi: Node.js (`node-redis`) va PHP (`Predis`).
 - **—** — tushuncha bobi, buyruqsiz.
 
 Bu qo'llanmaga kirmaydigan mavzular:
@@ -33,7 +34,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 - Navbat va hodisalar oqimi tizimlarini taqqoslash (Redis, RabbitMQ, Kafka) — **"Xabar tizimlari"** kitobida.
 - Qidiruv (Query Engine), vektorlar va sun'iy intellekt uchun imkoniyatlar, Redis Cloud va Redis Software (pullik mahsulotlar) — hujjatda: [RD Search and query](https://redis.io/docs/latest/develop/ai/search-and-query/).
 
-> **Holat.** Qo'llanma yozilmoqda: 23/34 bob tayyor. Havolasi borlari — tayyor boblar.
+> **Holat.** Qo'llanma tayyor: 34/34 bob.
 
 ---
 
@@ -74,23 +75,23 @@ Bu qo'llanmaga kirmaydigan mavzular:
 
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
-| 13 | Node.js'dan ulanish | `node-redis`: ulanish, buyruq yuborish, xatolarni ushlash | V+N | [RD node-redis](https://redis.io/docs/latest/develop/clients/nodejs/) · [RD Connect (Node.js)](https://redis.io/docs/latest/develop/clients/nodejs/connect/) · [RD Error handling (Node.js)](https://redis.io/docs/latest/develop/clients/nodejs/error-handling/) |
-| 14 | Pipeline va tranzaksiya | Pipeline: ko'p buyruqni bitta borib-kelishda yuborish. `MULTI`/`EXEC`. `WATCH` bilan optimistik qulf | V+N | [RD Pipelining](https://redis.io/docs/latest/develop/using-commands/pipelining/) · [RD Transactions](https://redis.io/docs/latest/develop/using-commands/transactions/) · [RD Pipelines and transactions (Node.js)](https://redis.io/docs/latest/develop/clients/nodejs/transpipe/) |
+| 13 | [Ilovadan ulanish](13-ilovadan-ulanish.md) | `node-redis` va `Predis`: ulanish, buyruq yuborish, xatolarni ushlash | V+N | [RD node-redis](https://redis.io/docs/latest/develop/clients/nodejs/) · [RD Connect (Node.js)](https://redis.io/docs/latest/develop/clients/nodejs/connect/) · [RD Error handling (Node.js)](https://redis.io/docs/latest/develop/clients/nodejs/error-handling/) · [RD Predis guide (PHP)](https://redis.io/docs/latest/develop/clients/php/) · [RD Error handling (PHP)](https://redis.io/docs/latest/develop/clients/php/error-handling/) |
+| 14 | [Pipeline va tranzaksiya](14-pipeline-tranzaksiya.md) | Pipeline: ko'p buyruqni bitta borib-kelishda yuborish. `MULTI`/`EXEC`. `WATCH` bilan optimistik qulf | V+N | [RD Pipelining](https://redis.io/docs/latest/develop/using-commands/pipelining/) · [RD Transactions](https://redis.io/docs/latest/develop/using-commands/transactions/) · [RD Pipelines and transactions (Node.js)](https://redis.io/docs/latest/develop/clients/nodejs/transpipe/) · [RD Pipelines and transactions (PHP)](https://redis.io/docs/latest/develop/clients/php/transpipe/) |
 | 15 | [Lua skriptlar va funksiyalar](15-lua.md) | `EVAL`: bir nechta qadamni server ichida bitta atomik amal qilib bajarish. Redis Functions | V | [RD Scripting with Lua](https://redis.io/docs/latest/develop/programmability/eval-intro/) · [RD Functions](https://redis.io/docs/latest/develop/programmability/functions-intro/) |
-| 16 | Production'da klient | Ulanish, timeout va qayta ulanish sozlamalari | V+N | [RD Production usage (Node.js)](https://redis.io/docs/latest/develop/clients/nodejs/produsage/) |
+| 16 | [Production'da klient](16-production-klient.md) | Ulanish, timeout va qayta ulanish sozlamalari | V+N | [RD Production usage (Node.js)](https://redis.io/docs/latest/develop/clients/nodejs/produsage/) · [node-redis Command options](https://github.com/redis/node-redis/blob/master/docs/command-options.md) · [RD Error handling (PHP)](https://redis.io/docs/latest/develop/clients/php/error-handling/) · [Predis README](https://github.com/predis/predis/blob/v3.7.1/README.md) |
 
 ## IV qism — Amaliy naqshlar (17–25)
 
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
-| 17 | Kesh: cache-aside | Bazadan o'qishni keshlash. TTL bilan eskirishni cheklash. Ma'lumot o'zgarganda keshni yangilash | V+N | [RD Cache-aside](https://redis.io/docs/latest/develop/use-cases/cache-aside/) |
-| 18 | Oldindan yuklangan kesh | Ma'lumotni oldindan yuklab qo'yish (prefetch): har o'qish keshdan | V+N | [RD Prefetch cache](https://redis.io/docs/latest/develop/use-cases/prefetch-cache/) |
-| 19 | Sessiyalar | Veb-sessiyalarni Redis'da saqlash va muddatini boshqarish | V+N | [RD Session store](https://redis.io/docs/latest/develop/use-cases/session-store/) |
-| 20 | Rate limiter | So'rovlar sonini cheklash: qat'iy oyna (fixed window), suriluvchi oyna (sliding window), token bucket | V+N | [RD Rate limiter](https://redis.io/docs/latest/develop/use-cases/rate-limiter/) |
-| 21 | Fon ishlari navbati | Ishonchli navbat (`BLMOVE`). Kechiktirilgan ishlar (sorted set) | V+N | [RD Job queue](https://redis.io/docs/latest/develop/use-cases/job-queue/) · [RD Lists](https://redis.io/docs/latest/develop/data-types/lists/) |
-| 22 | Pub/Sub | Kanallar va obunachilar. Yetkazish "ko'pi bilan bir marta" (at-most-once): o'sha payt ulanmagan obunachi xabarni olmaydi. Kalit o'zgarishlari haqida xabar (keyspace notifications) | V+N | [RD Pub/sub](https://redis.io/docs/latest/develop/pubsub/) · [RD Pub/sub messaging](https://redis.io/docs/latest/develop/use-cases/pub-sub/) · [RD Keyspace notifications](https://redis.io/docs/latest/develop/pubsub/keyspace-notifications/) |
-| 23 | Hodisalar oqimi | Stream va consumer group: tartib, qayta o'qish, saqlash hajmi | V+N | [RD Streaming](https://redis.io/docs/latest/develop/use-cases/streaming/) · [RD Streams](https://redis.io/docs/latest/develop/data-types/streams/) |
-| 24 | Reyting jadvali | Sorted set bilan reyting (leaderboard) va foydalanuvchi ma'lumotlari | V+N | [RD Leaderboard](https://redis.io/docs/latest/develop/use-cases/leaderboard/) |
+| 17 | [Kesh: cache-aside](17-cache-aside.md) | Bazadan o'qishni keshlash. TTL bilan eskirishni cheklash. Ma'lumot o'zgarganda keshni yangilash | V+N | [RD Cache-aside](https://redis.io/docs/latest/develop/use-cases/cache-aside/) · [RD Cache-aside (node-redis)](https://redis.io/docs/latest/develop/use-cases/cache-aside/nodejs/) · [(Predis)](https://redis.io/docs/latest/develop/use-cases/cache-aside/php/) |
+| 18 | [Oldindan yuklangan kesh](18-prefetch.md) | Ma'lumotni oldindan yuklab qo'yish (prefetch): har o'qish keshdan | V+N | [RD Prefetch cache](https://redis.io/docs/latest/develop/use-cases/prefetch-cache/) · [RD Prefetch cache (node-redis)](https://redis.io/docs/latest/develop/use-cases/prefetch-cache/nodejs/) · [(Predis)](https://redis.io/docs/latest/develop/use-cases/prefetch-cache/php/) |
+| 19 | [Sessiyalar](19-sessiyalar.md) | Veb-sessiyalarni Redis'da saqlash va muddatini boshqarish | V+N | [RD Session store](https://redis.io/docs/latest/develop/use-cases/session-store/) · [RD Session store (node-redis)](https://redis.io/docs/latest/develop/use-cases/session-store/nodejs/) · [(Predis)](https://redis.io/docs/latest/develop/use-cases/session-store/php/) |
+| 20 | [Rate limiter](20-rate-limiter.md) | So'rovlar sonini cheklash: qat'iy oyna (fixed window), suriluvchi oyna (sliding window), token bucket | V+N | [RD Rate limiter](https://redis.io/docs/latest/develop/use-cases/rate-limiter/) · [RD Rate limiter (node-redis)](https://redis.io/docs/latest/develop/use-cases/rate-limiter/nodejs/) · [(Predis)](https://redis.io/docs/latest/develop/use-cases/rate-limiter/php/) |
+| 21 | [Fon ishlari navbati](21-ishlar-navbati.md) | Ishonchli navbat (`BLMOVE`). Kechiktirilgan ishlar (sorted set) | V+N | [RD Job queue](https://redis.io/docs/latest/develop/use-cases/job-queue/) · [RD Lists](https://redis.io/docs/latest/develop/data-types/lists/) · [RD Job queue (node-redis)](https://redis.io/docs/latest/develop/use-cases/job-queue/nodejs/) · [(Predis)](https://redis.io/docs/latest/develop/use-cases/job-queue/php/) |
+| 22 | [Pub/Sub](22-pubsub.md) | Kanallar va obunachilar. Yetkazish "ko'pi bilan bir marta" (at-most-once): o'sha payt ulanmagan obunachi xabarni olmaydi. Kalit o'zgarishlari haqida xabar (keyspace notifications) | V+N | [RD Pub/sub](https://redis.io/docs/latest/develop/pubsub/) · [RD Pub/sub messaging](https://redis.io/docs/latest/develop/use-cases/pub-sub/) · [RD Keyspace notifications](https://redis.io/docs/latest/develop/pubsub/keyspace-notifications/) · [node-redis Pub/Sub](https://github.com/redis/node-redis/blob/master/docs/pub-sub.md) · [Predis pubsub_consumer.php](https://github.com/predis/predis/blob/v3.7.1/examples/pubsub_consumer.php) |
+| 23 | [Hodisalar oqimi](23-hodisalar-oqimi.md) | Stream va consumer group: tartib, qayta o'qish, saqlash hajmi | V+N | [RD Streaming](https://redis.io/docs/latest/develop/use-cases/streaming/) · [RD Streams](https://redis.io/docs/latest/develop/data-types/streams/) · [RD Streaming (node-redis)](https://redis.io/docs/latest/develop/use-cases/streaming/nodejs/) · [(Predis)](https://redis.io/docs/latest/develop/use-cases/streaming/php/) |
+| 24 | [Reyting jadvali](24-reyting.md) | Sorted set bilan reyting (leaderboard) va foydalanuvchi ma'lumotlari | V+N | [RD Leaderboard](https://redis.io/docs/latest/develop/use-cases/leaderboard/) · [RD Leaderboard (node-redis)](https://redis.io/docs/latest/develop/use-cases/leaderboard/nodejs/) · [(Predis)](https://redis.io/docs/latest/develop/use-cases/leaderboard/php/) |
 | 25 | [Taqsimlangan qulf](25-qulf.md) | Bitta Redis bilan to'g'ri qulf (`SET ... NX PX`). Redlock algoritmi va hujjatda aytilgan xavfsizlik shartlari | V | [RD Distributed locks](https://redis.io/docs/latest/develop/clients/patterns/distributed-locks/) |
 
 ## V qism — Server (26–34)
