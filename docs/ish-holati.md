@@ -151,7 +151,7 @@ Ikkinchi noutbukda boshlashdan oldin shu faylni, `CLAUDE.md` ni va kitobning `RE
 - **PR #197** (29–38-boblar) va **PR #198** (rejadagi 8 kitob mundarijasi: Web asoslari, Redis, Xabar tizimlari, RabbitMQ, Kafka, Nginx va HTTPS, Server xavfsizligi, Deploy amaliyoti — saytga "tayyorlanmoqda" holatida, logolar bilan) merge qilingan.
 - Linux **39–47**-boblar yozildi (shu PR): servisni cheklash, IP/interfeys/marshrut, tarmoq boshqaruvchilari, DNS, port va ulanish, vaqt va xost nomi, SSH, fayl ko'chirish, SSH tunnel. Mashqlar: `39-cheklov`, `40-ip`, `42-hosts`, `44-vaqt`. Animatsiyalar: `bind`, `nom`, `port`, `ssh`, `tunnel`.
 - Kuzatuv (rasmiy manbada mexanizmi topilmadi, bobda "kuzatildi" deb yozilgan): systemd-resolved stub'i `/etc/hosts` dagi yangi yozuvni ~3 soniyadan keyin ko'radi (42-bob).
-- Rejadagi kitoblar bo'yicha egasining qarori kutilmoqda: HTTPS boblari uchun domen; RabbitMQ/Redis misollari tili (hozir Node.js, PHP muqobil); Deploy kitobidagi GitHub Actions uchun sinov repozitoriysi.
+- Rejadagi kitoblar bo'yicha egasining qarori kutilmoqda: ~~HTTPS boblari uchun domen~~ (2026-11-09: domen berildi, Nginx 19–25 yozildi; Deploy kitobining domen boblari ham shu domen bilan qilinishi mumkin); RabbitMQ/Redis misollari tili (hozir Node.js, PHP muqobil); Deploy kitobidagi GitHub Actions uchun sinov repozitoriysi.
 
 ## Egasining doimiy ko'rsatmalari (birinchi noutbukdagi xotiradan)
 
@@ -213,8 +213,10 @@ Ikkinchi noutbukda boshlashdan oldin shu faylni, `CLAUDE.md` ni va kitobning `RE
 
 ## Nginx kitobi (`content/nginx/`)
 
-- Branch `docs/nginx-1`. Tayyor: 1–18, 26–30-boblar (2026-11-08). VPS'ga nginx 1.31.8 (mainline) rasmiy nginx.org omboridan o'rnatildi (`/etc/apt/sources.list.d/nginx.list`, pinning `/etc/apt/preferences.d/99nginx`), servis `nginx`, 80-port.
-- Navbat: domen talab qilmaydigan V-boblar — 3–17, 26–30. HTTPS boblari (19–25, V+D) — domen bo'yicha egasining qarori kutilmoqda (Let's Encrypt `shortlived` profili IP sertifikatni ham beradi, lekin bu VPS IP'sini ochiq CT jurnallariga yozadi — qarorsiz ishlatilmaydi).
+- Branch `docs/nginx-1`. Tayyor: 1–30 (1–18, 26–30 — 2026-11-08; 19–25 — 2026-11-09, branch `docs/nginx-https`). VPS'ga nginx 1.31.8 (mainline) rasmiy nginx.org omboridan o'rnatildi (`/etc/apt/sources.list.d/nginx.list`, pinning `/etc/apt/preferences.d/99nginx`), servis `nginx`, 80-port.
+- **2026-11-09:** HTTPS boblari 19–25 yozildi — kitob 30/30. Egasi domen berdi (DNS'da `@`, `www` (CNAME) va `lab` VPS IP'siga yo'naltirilgan) va Let's Encrypt hisobiga o'z emailini ishlatishga ruxsat berdi. **Domen, email va VPS IP repo'ga yozilmaydi**: chiqishlarda `example.com`, `admin@example.com`, `203.0.113.10` (`sed` bilan almashtiriladi); haqiqiy sertifikat seriya raqami ham yashirilgan.
+- VPS'dagi HTTPS holati: snapd + Certbot 5.9.0 (snap, `snap.certbot.renew.timer`), sertifikat `example.com`+`www` (`certonly --webroot -w /var/www/sayt`), deploy hook `/etc/letsencrypt/renewal-hooks/deploy/nginx-reload.sh`. `conf.d/sayt.conf` — 80→301, 443 `ssl` + `quic reuseport`, `http2 on`, HSTS `max-age=300` (sinov uchun qisqa), `Alt-Svc`, `add_header_inherit merge`. `conf.d/acme.conf` — `nginx-module-acme` (`load_module` `nginx.conf` boshida), issuer `letsencrypt`, `lab` subdomeni, `state_path /var/cache/nginx/acme-letsencrypt`, `resolver 127.0.0.53 ipv6=off`. `conf.d/tls.conf` — `ssl_session_cache shared:SSL:10m`.
+- Kuzatilgan: modulni birinchi yuklashdagi `nginx -s reload` master jarayonni SEGV bilan qulatdi (20-bobda yozilgan) — `load_module` o'zgarsa `systemctl restart`. HTTP/3 mijozi — noutbukdagi Homebrew curl (`/opt/homebrew/opt/curl/bin/curl`, ngtcp2).
 - Manba: nginx.org HTML sahifalari (`h2t.py` bilan matnga) va docs.nginx.com (markdown manbasi: `raw.githubusercontent.com/nginx/documentation/main/content/nginx/...`).
 - Proksi boblarida backend — Python standart kutubxonasidagi kichik server (Node.js VPS'da yo'q; misollar tili qarori Redis/RabbitMQ bilan birga kutilmoqda). README 11-bob qatoridagi "Node.js" so'zi "orqadagi ilova"ga o'zgartirildi.
 
