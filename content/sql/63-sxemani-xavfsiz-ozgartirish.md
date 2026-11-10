@@ -1,6 +1,6 @@
 # 63 — Sxemani xavfsiz o'zgartirish
 
-[← Oldingi: Row Level Security (PG)](61-row-level-security.md) · [Mundarija](README.md) · [Keyingi: Ulanishlar →](64-ulanishlar.md)
+[← Oldingi: SQL injection va parametrlar](62-sql-injection-va-parametrlar.md) · [Mundarija](README.md) · [Keyingi: Ulanishlar →](64-ulanishlar.md)
 
 ## Tushuncha
 

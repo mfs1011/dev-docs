@@ -142,21 +142,43 @@ function wordsOf(line) {
   return mapped
 }
 
+/** Ovoz va ko'rish idroki sinxron bo'lishi uchun oldinga siljish (MMS FA CTC cho'qqisi va brauzer audio buferi kechikishi) */
+const LEAD_TIME = 0.12
+
 function highlightWord(time) {
   if (!supportsWordHighlight || !words.length) return
 
   const index = wordAt(time)
   const word = words[index]
 
+  if (!word) {
+    if (activeWord !== -1) {
+      CSS.highlights.delete(WORD_HIGHLIGHT)
+      activeWord = -1
+      activeLine = null
+    }
+    return
+  }
+
+  // Uzoq pauzada (gaplar yoki paragraflar orasidagi jimlik > 400ms) belgi o'chsin
+  if (time > word.e + 0.4) {
+    const nextWord = words[index + 1]
+    if (!nextWord || nextWord.s > time) {
+      CSS.highlights.delete(WORD_HIGHLIGHT)
+      activeWord = -1
+      return
+    }
+  }
+
   if (index === activeWord) return
   activeWord = index
 
-  const range = word ? wordsOf(word.line).get(word.w) : null
+  const range = wordsOf(word.line).get(word.w)
 
   // Mos joyi yo'q so'z (model o'qimagan raqam, kod) — oldingi belgi o'z segmenti ichida turadi,
   // keyingi so'zgacha; boshqa joyga sakramaydi va o'chib-yonmaydi
   if (!range) {
-    if (!word || word.line !== activeLine) {
+    if (word.line !== activeLine) {
       CSS.highlights.delete(WORD_HIGHLIGHT)
       activeLine = null
     }
@@ -171,8 +193,9 @@ function highlightWord(time) {
 function tick() {
   if (!audio || audio.paused) return
 
-  highlightWord(audio.currentTime)
-  if (words.length) highlight(audio.currentTime)
+  const syncTime = audio.currentTime + LEAD_TIME * (audio.playbackRate || 1)
+  highlightWord(syncTime)
+  if (words.length) highlight(syncTime)
   frame = requestAnimationFrame(tick)
 }
 
@@ -235,7 +258,11 @@ function start() {
       cancelAnimationFrame(frame)
       frame = requestAnimationFrame(tick)
     })
-    audio.addEventListener('seeked', () => highlightWord(audio.currentTime))
+    audio.addEventListener('seeked', () => {
+      const syncTime = audio.currentTime + LEAD_TIME * (audio.playbackRate || 1)
+      highlightWord(syncTime)
+      if (words.length) highlight(syncTime)
+    })
     audio.addEventListener('pause', () => { playing.value = false })
     audio.addEventListener('ended', () => {
       playing.value = false

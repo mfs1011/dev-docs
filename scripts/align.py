@@ -46,11 +46,44 @@ PRONUNCIATION = [
 ]
 
 
+UNITS_UZ = {
+    0: "nol", 1: "bir", 2: "ikki", 3: "uch", 4: "to'rt",
+    5: "besh", 6: "olti", 7: "yetti", 8: "sakkiz", 9: "to'qqiz"
+}
+TENS_UZ = {
+    10: "o'n", 20: "yigirma", 30: "o'ttiz", 40: "qirq",
+    50: "ellik", 60: "oltmish", 70: "yetmish", 80: "sakson", 90: "to'qson"
+}
+
+
+def number_to_uzbek(n: int) -> str:
+    if n < 0:
+        return "minus " + number_to_uzbek(-n)
+    if n < 10:
+        return UNITS_UZ[n]
+    if n < 100:
+        ten, unit = divmod(n, 10)
+        return (TENS_UZ[ten * 10] + (" " + UNITS_UZ[unit] if unit else "")).strip()
+    if n < 1000:
+        hundred, rest = divmod(n, 100)
+        prefix = ("yuz" if hundred == 1 else UNITS_UZ[hundred] + " yuz")
+        return (prefix + (" " + number_to_uzbek(rest) if rest else "")).strip()
+    if n < 1000000:
+        thousand, rest = divmod(n, 1000)
+        prefix = ("ming" if thousand == 1 else number_to_uzbek(thousand) + " ming")
+        return (prefix + (" " + number_to_uzbek(rest) if rest else "")).strip()
+    return str(n)
+
+
+NUMBER_PATTERN = re.compile(r"\b\d+\b")
+
+
 def pronounce(word: str) -> str:
-    """tts.mjs dagi bilan bir xil lug'at: audio'da aytilgan shakl"""
+    """tts.mjs dagi bilan bir xil lug'at: audio'da aytilgan shakl (raqamlar ham o'zbekcha so'zga aylanadi)"""
     for pattern, spoken in PRONUNCIATION:
         word = pattern.sub(spoken, word)
 
+    word = NUMBER_PATTERN.sub(lambda m: number_to_uzbek(int(m.group(0))), word)
     return word
 
 
@@ -199,7 +232,8 @@ def align(model, tokenizer, aligner, audio_path: Path, words):
     for (position, _), span in zip(units, spans):
         if position is None:
             continue
-        start, end = at(span[0].start), at(span[-1].end)
+        # CTC cho'qqisi fonema ichida bo'ladi; akustik boshlanishga moslash uchun -0.08 s
+        start, end = max(0.0, at(span[0].start) - 0.08), at(span[-1].end)
         previous = times.get(position)
         times[position] = (min(start, previous[0]), max(end, previous[1])) if previous else (start, end)
 
@@ -210,13 +244,26 @@ def align(model, tokenizer, aligner, audio_path: Path, words):
         if item["line"] is None:
             continue
 
-        # Raqam/belgidan iborat so'z — oldingi so'z oxiridan keyingi so'z boshigacha
-        start, end = times.get(position, (last_end, last_end))
+        if position in times:
+            start, end = times[position]
+        else:
+            # Modelga kirmagan so'z/belgi: oldingi va keyingi so'z oralig'ida taqsimlanadi (0 s qotib qolmasin)
+            next_start = None
+            for next_pos in range(position + 1, len(words)):
+                if next_pos in times:
+                    next_start = times[next_pos][0]
+                    break
+            start = last_end
+            if next_start is not None and next_start > last_end:
+                end = min(last_end + 0.35, next_start)
+            else:
+                end = last_end + 0.15
+
         entry = {"line": item["line"], "w": item["w"], "word": item["word"], "s": round(start, 2), "e": round(end, 2)}
         if "r" in item:
             entry["r"] = item["r"]
         result.append(entry)
-        last_end = end
+        last_end = max(last_end, end)
 
     return result, extras
 

@@ -1,0 +1,41 @@
+WEBVTT
+
+1
+00:01.420 --> 00:08.350
+May es-kyu-elda standart kollatsiya registrga befarq bo'lgani
+sababli, ko'pincha louer funksiyasini ishlatish shart emas.
+
+2
+00:08.400 --> 00:14.460
+Agar ifoda indeksi zarur bo'lsa, May es-kyu-elda
+funksiya ikkita qavs ichida ko'rsatilishi talab etiladi.
+
+3
+00:17.130 --> 00:26.160
+Biroq matn ustunini son bilan solishtirganda May es-kyu-el xato bermaydi, balki
+bir ming yetti yuz o'ttiz to'qqizinchi ogohlantirish bilan butun indeksni elaydi.
+
+4
+00:26.380 --> 00:32.450
+Natijada so'rov vaqti nol butun mingdan to'rt
+millisekunddan o'n millisekundgacha keskin sekinlashadi.
+
+5
+00:35.300 --> 00:42.630
+Es-kyu-laytda esa tayp affiniti, ya'ni turga moyillik qoidasi
+sababli son matnga aylanib indeksli qidiruv saqlanib qoladi.
+
+6
+00:42.760 --> 00:49.340
+Shuningdek, Es-kyu-layt multi indeks o-er mexanizmi orqali
+turli ustunlardagi shartlarni alohida qidirib birlashtiradi.
+
+7
+00:52.130 --> 01:00.500
+Uchala tizimni solishtirsak, xatoni darhol to'xtatishda Postgres, qulay
+kollatsiyada May es-kyu-el, moslashuvchanlikda Es-kyu-layt ajralib turadi.
+
+8
+01:00.680 --> 01:07.590
+Lekin barcha bazalarda umumiy qoida bitta: ustunlarni
+funksiyasiz qoldiring va parametrlarni to'g'ri turda uzating.

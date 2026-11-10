@@ -1,0 +1,41 @@
+WEBVTT
+
+1
+00:01.420 --> 00:07.810
+May es-kyu-elda ham to'qqiz yuz minginchi ofset yetmish uch
+millisekund vaqt olib, deyarli bir million yozuvni o'qiydi.
+
+2
+00:07.860 --> 00:15.400
+Biroq qator konstruktori berilganda May es-kyu-el undan indeks orqali
+foydalana olmay, to'qson millisekundlik to'liq skanga tushadi.
+
+3
+00:18.570 --> 00:27.690
+Aksincha, shartni o-er amali bilan teng ifodaga aylantirganimizda oraliq
+qidiruvi ishga tushib, vaqt nol butun ellik sakkiz millisekundga qisqaradi.
+
+4
+00:28.120 --> 00:34.550
+Bu Postgresga mutlaqo teskari natija bo'lib, May es-kyu-el
+hujjatida ham shartni o-er bilan yozish tavsiya qilingan.
+
+5
+00:37.480 --> 00:43.830
+Es-kyu-laytda esa rou valyus mexanizmi xuddi Postgres kabi
+mukammal ishlaydi va indeksli qidiruvni faollashtiradi.
+
+6
+00:44.050 --> 00:50.960
+Sinovimizda ofset yetti millisekund olgan bo'lsa, kursorli
+qidiruv atigi nol butun yuzdan uch millisekundda bajarildi.
+
+7
+00:53.970 --> 01:01.650
+Xulosa qilib aytganda, Postgres va Es-kyu-laytda qator konstruktori,
+May es-kyu-elda esa o-er sharti eng tezkor natija beradi.
+
+8
+01:01.900 --> 01:08.830
+Ilovangiz bir nechta bazani qo'llasa, sahifalash so'rovlarini
+har bir tizimning ekspleyn rejasi bilan alohida tekshiring.

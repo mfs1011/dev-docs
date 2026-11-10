@@ -4,6 +4,14 @@
 
 ## Tushuncha
 
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/49-1-tushuncha.jpg">
+    <source src="/video/sql/49-1-tushuncha.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/49-1-tushuncha.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/49-1-tushuncha.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+</figure>
+
 "Konteyner haqidagi maqolalarni top" — oddiy `LIKE '%konteyner%'` bilan ham bo'ladi. PostgreSQL hujjati (12.1. Introduction, Full Text Search) `LIKE` va regulyar ifodalarning kamchiliklarini sanaydi:
 
 - **Til bilmaydi.** `satisfies` va `satisfy` — bir so'zning shakllari, lekin `LIKE` uchun boshqa satrlar. Barcha shakllarni `OR` bilan yozish zerikarli va xatoga moyil.
@@ -55,6 +63,14 @@ So'zlar orasida ajratgich bo'lmagan tillar (xitoy, yapon, koreys) uchun MySQL **
 SQLite hujjati (FTS5 Extension): to'liq matnli qidiruv — **virtual jadval**: `CREATE VIRTUAL TABLE … USING fts5(ustunlar)`, qidiruv — `WHERE jadval MATCH 'so'rov'`, tartib — `ORDER BY rank`. Reyting — `bm25()`: moslik qanchalik yaxshi bo'lsa, qiymat **shunchalik kichik** (manfiy) — shuning uchun o'sish tartibi. Tokenizator tanlanadi: `unicode61` (standart), `porter` (ingliz tili qo'shimchalari), `trigram` (ixtiyoriy satr bo'lagi bo'yicha, `LIKE`/`GLOB` bilan ham).
 
 ## Kod
+
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/49-2-kod.jpg">
+    <source src="/video/sql/49-2-kod.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/49-2-kod.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/49-2-kod.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+</figure>
 
 Misollar PostgreSQL 18.6, MySQL 9.7.2 va SQLite 3.54.1 da ishga tushirilgan.
 
@@ -229,6 +245,14 @@ EXPLAIN (ANALYZE, TIMING OFF, BUFFERS OFF) SELECT count(*) FROM katta WHERE matn
 O'sha `LIKE '%konteyner%'` — endi `Bitmap Index Scan on katta_trgm`, **0.038 ms** (oldin 4.9 ms). So'rovni o'zgartirish shart emas — faqat indeks.
 
 ## Dialektlar
+
+<figure class="video">
+  <video controls preload="metadata" poster="/video/sql/49-3-dialektlar.jpg">
+    <source src="/video/sql/49-3-dialektlar.mp4" type="video/mp4">
+    <track kind="subtitles" src="/video/sql/49-3-dialektlar.uz.vtt" srclang="uz" label="O'zbekcha" default>
+    <track kind="chapters" src="/video/sql/49-3-dialektlar.chapters.vtt" srclang="uz" label="Bo'limlar">
+  </video>
+</figure>
 
 ### MySQL
 

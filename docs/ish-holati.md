@@ -110,6 +110,7 @@ node linux-trenajor/test/mashqlar.mjs          # barcha mashqlarni brauzerda tek
   - `salom.service` va unga tegishli hamma narsa 39-bobdan keyin o'chirildi; 43–47-boblardagi sinov servislari, `demo` foydalanuvchisi va vaqtinchalik ufw qoidalari ham o'chirilgan;
   - ufw yoqilgan: standart holatda `deny (incoming)`, provayder qoidalari 80, 443, 22 va 1500/tcp (ispmanager, unda hech narsa tinglamaydi);
   - vaqt zonasi `Europe/Moscow` (provayder), vaqtni chrony sinxronlaydi;
+  - 2026-11-09 (SQL 68-bob): PHP 8.5.4 + kengaytmalar, Composer 2.11.1, PostgreSQL 18.6 o'rnatildi; `dasturchi` foydalanuvchisi, uning uyida `orm-laravel` (Laravel 13.40.0) va `orm-symfony` (Symfony 8.1.11, Doctrine ORM 3.7.6) loyihalari; PG'da `orm` roli (parol loyihalarning `.env`/`.env.local` ida), `orm` va `orm_symfony` bazalari — Laravel/Symfony kitoblari uchun ham qayta ishlatsa bo'ladi;
   - ochiq masala: provayder apt manbalarida `trusted: yes` va `http://` mirror (26-bob);
   - provayder shabloni: Netplan yo'q (ifupdown), cron yo'q, snap yo'q.
 
@@ -206,6 +207,9 @@ Ikkinchi noutbukda boshlashdan oldin shu faylni, `CLAUDE.md` ni va kitobning `RE
 - Ikki seansli misollar (50–54-boblar) — kichik Python skripti: buyruqlarni A/B seanslarga navbatma-navbat yuboradi va chiqishni seans nomi bilan yozadi (`~/sql-sinov/ikki.py`, git'da yo'q). Bloklangan buyruq javobi keyingi buyruq ostida chiqadi — boblarda izohlangan.
 - Bob ulash: oldingi bobga "Keyingi", README qatori havolaga, `NN/70` — Linux'dagi `bob_ulash.py` ning SQL varianti (scratchpad'da edi).
 - dev.mysql.com havolalari `havola.sh` da 403 qaytaradi (HEAD so'roviga), sahifalar `GET` bilan ochiladi.
+- **2026-11-09: 62 va 68 yozildi — SQL kitobi 70/70 tayyor.** 61 → 62 → 63 va 67 → 68 → 69 navigatsiyasi tuzatildi.
+  - 62 (SQL injection): egasi qarori — haqiqiy hujumlar ham ko'rsatiladi. Birinchi noutbukdagi `sql-sinov` (PG 18.6, MySQL 9.7.2, SQLite 3.54.0) + noutbuk PHP 8.5.11; `hujum` bazasi, skriptlar `sql-sinov/62/` (git'da yo'q). Hujumlar PHP qo'llanmasidagi misollarga tayanadi.
+  - 68 (ORM ortidagi SQL): egasi qarori — Laravel (Eloquent) va Symfony (Doctrine); Prisma keyinroq NestJS kitobi bilan. Sinov VPS'da (egasi: "nima o'rnatish kerak bo'lsa VPS ga").
 
 ## Nginx kitobi (`content/nginx/`)
 
@@ -224,6 +228,12 @@ Ikkinchi noutbukda boshlashdan oldin shu faylni, `CLAUDE.md` ni va kitobning `RE
 
 - Branch `docs/server-xavfsizligi-1`. Tayyor: 1–8, 19–23-boblar (2026-11-09; wtmpdb + libpam-wtmpdb o'rnatildi (`last`); 24-bob (yakuniy ro'yxat) 9–18-boblardan keyin; etckeeper o'rnatildi (`/etc/.git`); restic 0.18.1, sinov ombori `/var/backups/restic` (paroli `/root/.restic-parol`; 21-bob uchun); 20-bobda SFTP sinovi qilinmadi — SSH kalit qo'shish ruxsat so'raydi; cron o'rnatildi; apparmor-utils o'rnatildi; admin foydalanuvchi `boshqaruv` (sudo, root kalitlari bilan; paroli `/root/boshqaruv-parol`); ubuntu-pro-client o'rnatildi, Pro'ga ulanmagan; VPS yadrosi 7.0.0-43 ga yangilanib qayta ishga tushirildi). Manba: `raw.githubusercontent.com/canonical/ubuntu-server-documentation/main/docs/...`.
 - Navbat: VPS'ga kirishni xavf ostiga qo'ymaydigan boblar — 2–8, 19–24. SSH/firewall boblari (9–18) — provayder konsoli tayyorligi bo'yicha egasining tasdig'i kerak.
+
+## Deploy amaliyoti kitobi (`content/deploy-amaliyoti/`)
+
+- Branch `docs/deploy-1`. Tayyor: 1, 5, 7, 8, 16–18, 20-boblar (20-bobda image tegi va GitHub deploy tarixi qismi — 19-bob va III qism bilan qo'shiladi) (2026-11-09; VPS'ga `strace` o'rnatildi).
+- Navbat: til va domen talab qilmaydigan V-boblar — 5, 7, 8, 16–18 (ilova — Python standart kutubxonasidagi kichik server, Nginx kitobidagi kabi). 3-bob (deploy foydalanuvchisi, SSH kalit, firewall) — VPS'ga kirishni o'zgartiradi, egasining tasdig'i kerak. 2, 4 (domen), 6 (Node.js/PHP — misollar tili qarori), 9–15, 19, 21–22 (GitHub sinov repozitoriysi) — egasining qarori kutilmoqda.
+- Manba: GitHub hujjati — `raw.githubusercontent.com/github/docs/main/content/actions/...` (markdown).
 
 ## RabbitMQ kitobi (`content/rabbitmq/`)
 
