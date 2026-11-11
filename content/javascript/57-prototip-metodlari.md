@@ -116,7 +116,7 @@ TypeError: Cyclic __proto__ value
 
 ## Nega shunday
 
-Prototip — obyektning asosiy tuzilma xossasi, shuning uchun uni o'qish va o'rnatish uchun aniq API kerak: `getPrototypeOf`, `create`, `setPrototypeOf`. `__proto__` tarixan brauzerlarda paydo bo'lib, keyin faqat moslik uchun standartlashtirilgan (MDN). U har obyektda ham bo'lavermaydi (prototipsiz obyektda yo'q), kalit nomi sifatida ham xavfli.
+Prototip — obyektning asosiy tuzilma xossasi, shuning uchun uni o'qish va o'rnatish uchun aniq API kerak: `getPrototypeOf`, `create`, `setPrototypeOf`. `__proto__` esa faqat veb moslik uchun eski (legacy) imkoniyat sifatida standartlashtirilgan (MDN). U har obyektda ham bo'lavermaydi (prototipsiz obyektda yo'q), kalit nomi sifatida ham xavfli.
 
 ## Muhandislik nuqtai nazari
 
