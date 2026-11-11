@@ -117,7 +117,7 @@ Har bob batafsil yoziladi: tushuncha, ichki mexanizm (spetsifikatsiya darajasida
 | 53 | [Getter va setter](53-getter-setter.md) | Accessor xossalar, aqlli getter/setter, moslik uchun | MDN `get`, `set` | `/property-accessors` |
 | 54 | [Prototip merosi](54-prototip-merosi.md) | `[[Prototype]]`, `__proto__`, `this` prototipda, `for...in` va meros | MDN *Inheritance and the prototype chain* | `/prototype-inheritance` |
 | 55 | [`F.prototype`](55-f-prototype.md) | Konstruktor funksiyaning `prototype` xossasi, `constructor` | MDN *Inheritance and the prototype chain* | `/function-prototype` |
-| 56 | Native prototiplar | `Object.prototype`, built-in prototiplar, ularni o'zgartirish xavfi | MDN *Inheritance and the prototype chain* | `/native-prototypes` |
+| 56 | [Native prototiplar](56-native-prototiplar.md) | `Object.prototype`, built-in prototiplar, ularni o'zgartirish xavfi | MDN *Inheritance and the prototype chain* | `/native-prototypes` |
 | 57 | Prototip metodlari | `Object.create`, `getPrototypeOf`/`setPrototypeOf`, `__proto__`siz "toza" obyekt | MDN `Object.create` | `/prototype-methods` |
 | 58 | Sanaluvchanlik va egalik | Own va meros xossalar, qaysi metod nimani ko'radi (jadval) | MDN *Enumerability and ownership of properties* | — |
 
