@@ -103,7 +103,7 @@ Har bob batafsil yoziladi: tushuncha, ichki mexanizm (spetsifikatsiya darajasida
 | 44 | [Eski `var`](44-var.md) | Funksiya scope, hoisting, IIFE, nega endi ishlatilmaydi | MDN `var` | `/var` |
 | 45 | [Global obyekt](45-global-obyekt.md) | `globalThis`, `window`, Node'da `global`, global o'zgaruvchilar | MDN `globalThis` | `/global-object` |
 | 46 | [Funksiya obyekti](46-funksiya-obyekti.md) | `name`, `length`, xossalar, Named Function Expression | MDN `Function` | `/function-object` |
-| 47 | `new Function` va `eval` | Satrdan kod, closure'siz scope, xavfsizlik | MDN `Function()` konstruktori, `eval()` | `/new-function`, `/eval` |
+| 47 | [`new Function` va `eval`](47-new-function-eval.md) | Satrdan kod, closure'siz scope, xavfsizlik | MDN `Function()` konstruktori, `eval()` | `/new-function`, `/eval` |
 | 48 | `setTimeout` va `setInterval` | Rejalashtirish, nolinchi kechikish, ichma-ich `setTimeout`, brauzer va Node farqi | WHATWG HTML *Timers*; Node.js *Timers* | `/settimeout-setinterval` |
 | 49 | Dekoratorlar va `call`/`apply` | Wrapper funksiyalar, kesh dekoratori, kontekstni uzatish | MDN `Function.prototype.call`, `apply` | `/call-apply-decorators` |
 | 50 | `bind` va partial | Kontekstni bog'lash, qisman qo'llash (partial application), currying | MDN `Function.prototype.bind` | `/bind`, `/currying-partials` |
