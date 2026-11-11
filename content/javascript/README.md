@@ -126,7 +126,7 @@ Har bob batafsil yoziladi: tushuncha, ichki mexanizm (spetsifikatsiya darajasida
 | # | Bob | Mazmun | Rasmiy asos | javascript.info |
 | --- | --- | --- | --- | --- |
 | 59 | [Klass sintaksisi](59-klass-sintaksisi.md) | Klass — funksiya, metodlar prototipda, maydonlar, getter/setter | MDN *Using classes*, *Classes* | `/class` |
-| 60 | Klass merosi | `extends`, `super`, konstruktorni almashtirish, `[[HomeObject]]` | MDN `extends`, `super` | `/class-inheritance` |
+| 60 | [Klass merosi](60-klass-merosi.md) | `extends`, `super`, konstruktorni almashtirish, `[[HomeObject]]` | MDN `extends`, `super` | `/class-inheritance` |
 | 61 | Static | Statik metod va xossalar, static blok, statik meros | MDN `static`, *Static initialization blocks* | `/static-properties-methods` |
 | 62 | Private va protected | `#private` maydon va metodlar, `#x in obj`, "protected" kelishuvi | MDN *Private elements* | `/private-protected-properties-methods` |
 | 63 | Built-in klasslarni kengaytirish | `Array`, `Error`, `Map` dan meros, `Symbol.species` | MDN `extends`, `Symbol.species` | `/extend-natives` |
