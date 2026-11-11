@@ -223,6 +223,9 @@ Ikkinchi noutbukda boshlashdan oldin shu faylni, `CLAUDE.md` ni va kitobning `RE
 ## Yangi trenajorlar (2026-11-10)
 
 - Egasi kitoblarga o'ziga xos trenajor so'radi: ham haqiqiy sinab ko'rish, ham vizual. Tartib: **Nginx → Web asoslari → Redis**, keyin Server xavfsizligi. Docker keyinga qoldirildi: simulyator kerak emas, real sinab ko'rish yo'li izlanadi.
+- **Navbat (egasining qarori, 2026-11-11):** Web asoslari → Redis → Server xavfsizligi → **RabbitMQ**. Docker — keyinga qoldirilgan (avvalgidek).
+- **RabbitMQ trenajori talabi:** haqiqiy RabbitMQ (fake/simulyator emas). Brokerning barcha imkoniyatlari UI'dan boshqariladi va vizual ko'rinadi: exchange, navbat, bog'lanish, xabar oqimi, ack/nack, DLX, prefetch va boshqalar. Egasi shunday trenajorni boshqa joyda ko'rgan, bizniki real bo'lgani uchun undan ham kuchli bo'lishi kerak.
+- JavaScript kitobi to'xtatildi (egasi: tushunish qiyin, kerak emas). Main'da 1–56-boblar; 57–60 `docs/javascript-40` branch'ida qolgan, main'ga kirmagan.
 - **Nginx trenajori** (`/nginx/trenajor`, branch `feat/nginx-trenajor`): haqiqiy nginx 1.31.8 va "So'rov yo'li" sxemasi, 7 ta mashq. Tafsilot — `nginx-trenajor/README.md`. Linux trenajori yig'ish skriptlariga profil qo'shildi (`TRENAJOR_PROFIL`), Linux tasviri o'zgarmagan (160 paket, mashqlar o'tadi).
 - O'rganilgan: v86 da ikkinchi serial port (`uart1`) ishlaydi. Kanal "to'xtab qolgani" UART emas, `grep` binary rejimi ekan (`grep -a`).
 
