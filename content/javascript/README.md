@@ -106,7 +106,7 @@ Har bob batafsil yoziladi: tushuncha, ichki mexanizm (spetsifikatsiya darajasida
 | 47 | [`new Function` va `eval`](47-new-function-eval.md) | Satrdan kod, closure'siz scope, xavfsizlik | MDN `Function()` konstruktori, `eval()` | `/new-function`, `/eval` |
 | 48 | [`setTimeout` va `setInterval`](48-taymerlar.md) | Rejalashtirish, nolinchi kechikish, ichma-ich `setTimeout`, brauzer va Node farqi | WHATWG HTML *Timers*; Node.js *Timers* | `/settimeout-setinterval` |
 | 49 | [Dekoratorlar va `call`/`apply`](49-dekoratorlar.md) | Wrapper funksiyalar, kesh dekoratori, kontekstni uzatish | MDN `Function.prototype.call`, `apply` | `/call-apply-decorators` |
-| 50 | `bind` va partial | Kontekstni bog'lash, qisman qo'llash (partial application), currying | MDN `Function.prototype.bind` | `/bind`, `/currying-partials` |
+| 50 | [`bind` va partial](50-bind.md) | Kontekstni bog'lash, qisman qo'llash (partial application), currying | MDN `Function.prototype.bind` | `/bind`, `/currying-partials` |
 | 51 | Arrow funksiyalar chuqur | O'z `this`, `arguments`, `super`, `new` yo'qligi va bundan foyda | MDN *Arrow function expressions* | `/arrow-functions` |
 
 ## VI qism — Xossalar va prototiplar (52–58)
