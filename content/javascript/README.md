@@ -119,7 +119,7 @@ Har bob batafsil yoziladi: tushuncha, ichki mexanizm (spetsifikatsiya darajasida
 | 55 | [`F.prototype`](55-f-prototype.md) | Konstruktor funksiyaning `prototype` xossasi, `constructor` | MDN *Inheritance and the prototype chain* | `/function-prototype` |
 | 56 | [Native prototiplar](56-native-prototiplar.md) | `Object.prototype`, built-in prototiplar, ularni o'zgartirish xavfi | MDN *Inheritance and the prototype chain* | `/native-prototypes` |
 | 57 | [Prototip metodlari](57-prototip-metodlari.md) | `Object.create`, `getPrototypeOf`/`setPrototypeOf`, `__proto__`siz "toza" obyekt | MDN `Object.create` | `/prototype-methods` |
-| 58 | Sanaluvchanlik va egalik | Own va meros xossalar, qaysi metod nimani ko'radi (jadval) | MDN *Enumerability and ownership of properties* | — |
+| 58 | [Sanaluvchanlik va egalik](58-sanaluvchanlik.md) | Own va meros xossalar, qaysi metod nimani ko'radi (jadval) | MDN *Enumerability and ownership of properties* | — |
 
 ## VII qism — Klasslar (59–65)
 
