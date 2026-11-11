@@ -96,37 +96,37 @@ Har bob batafsil yoziladi: tushuncha, ichki mexanizm (spetsifikatsiya darajasida
 
 | # | Bob | Mazmun | Rasmiy asos | javascript.info |
 | --- | --- | --- | --- | --- |
-| 40 | Execution context va call stack | Global va funksiya konteksti, stek, kontekst nimadan iborat (spetsifikatsiya bo'yicha) | ECMA-262 *Execution Contexts*; MDN *Execution model* ("Stack and execution contexts") | — |
-| 41 | Rekursiya va stek | Rekursiya stekda qanday ko'rinadi, chuqurlik chegarasi, rekursiv tuzilmalar | MDN *Functions* ("Recursion"), *Execution model* | `/recursion` |
-| 42 | Rest va spread | `...args`, `arguments` obyekti, spread massiv va obyektda | MDN *Rest parameters*, *Spread syntax* | `/rest-parameters-spread` |
-| 43 | Leksik muhit va closure | Environment Record, `[[Environment]]`, closure qanday hosil bo'ladi, sikldagi klassik xato | ECMA-262 *Environment Records*; MDN *Closures* | `/closure` |
-| 44 | Eski `var` | Funksiya scope, hoisting, IIFE, nega endi ishlatilmaydi | MDN `var` | `/var` |
-| 45 | Global obyekt | `globalThis`, `window`, Node'da `global`, global o'zgaruvchilar | MDN `globalThis` | `/global-object` |
-| 46 | Funksiya obyekti | `name`, `length`, xossalar, Named Function Expression | MDN `Function` | `/function-object` |
-| 47 | `new Function` va `eval` | Satrdan kod, closure'siz scope, xavfsizlik | MDN `Function()` konstruktori, `eval()` | `/new-function`, `/eval` |
-| 48 | `setTimeout` va `setInterval` | Rejalashtirish, nolinchi kechikish, ichma-ich `setTimeout`, brauzer va Node farqi | WHATWG HTML *Timers*; Node.js *Timers* | `/settimeout-setinterval` |
-| 49 | Dekoratorlar va `call`/`apply` | Wrapper funksiyalar, kesh dekoratori, kontekstni uzatish | MDN `Function.prototype.call`, `apply` | `/call-apply-decorators` |
-| 50 | `bind` va partial | Kontekstni bog'lash, qisman qo'llash (partial application), currying | MDN `Function.prototype.bind` | `/bind`, `/currying-partials` |
-| 51 | Arrow funksiyalar chuqur | O'z `this`, `arguments`, `super`, `new` yo'qligi va bundan foyda | MDN *Arrow function expressions* | `/arrow-functions` |
+| 40 | [Execution context va call stack](40-execution-context.md) | Global va funksiya konteksti, stek, kontekst nimadan iborat (spetsifikatsiya bo'yicha) | ECMA-262 *Execution Contexts*; MDN *Execution model* ("Stack and execution contexts") | — |
+| 41 | [Rekursiya va stek](41-rekursiya.md) | Rekursiya stekda qanday ko'rinadi, chuqurlik chegarasi, rekursiv tuzilmalar | MDN *Functions* ("Recursion"), *Execution model* | `/recursion` |
+| 42 | [Rest va spread](42-rest-spread.md) | `...args`, `arguments` obyekti, spread massiv va obyektda | MDN *Rest parameters*, *Spread syntax* | `/rest-parameters-spread` |
+| 43 | [Leksik muhit va closure](43-closure.md) | Environment Record, `[[Environment]]`, closure qanday hosil bo'ladi, sikldagi klassik xato | ECMA-262 *Environment Records*; MDN *Closures* | `/closure` |
+| 44 | [Eski `var`](44-var.md) | Funksiya scope, hoisting, IIFE, nega endi ishlatilmaydi | MDN `var` | `/var` |
+| 45 | [Global obyekt](45-global-obyekt.md) | `globalThis`, `window`, Node'da `global`, global o'zgaruvchilar | MDN `globalThis` | `/global-object` |
+| 46 | [Funksiya obyekti](46-funksiya-obyekti.md) | `name`, `length`, xossalar, Named Function Expression | MDN `Function` | `/function-object` |
+| 47 | [`new Function` va `eval`](47-new-function-eval.md) | Satrdan kod, closure'siz scope, xavfsizlik | MDN `Function()` konstruktori, `eval()` | `/new-function`, `/eval` |
+| 48 | [`setTimeout` va `setInterval`](48-taymerlar.md) | Rejalashtirish, nolinchi kechikish, ichma-ich `setTimeout`, brauzer va Node farqi | WHATWG HTML *Timers*; Node.js *Timers* | `/settimeout-setinterval` |
+| 49 | [Dekoratorlar va `call`/`apply`](49-dekoratorlar.md) | Wrapper funksiyalar, kesh dekoratori, kontekstni uzatish | MDN `Function.prototype.call`, `apply` | `/call-apply-decorators` |
+| 50 | [`bind` va partial](50-bind.md) | Kontekstni bog'lash, qisman qo'llash (partial application), currying | MDN `Function.prototype.bind` | `/bind`, `/currying-partials` |
+| 51 | [Arrow funksiyalar chuqur](51-arrow.md) | O'z `this`, `arguments`, `super`, `new` yo'qligi va bundan foyda | MDN *Arrow function expressions* | `/arrow-functions` |
 
 ## VI qism — Xossalar va prototiplar (52–58)
 
 | # | Bob | Mazmun | Rasmiy asos | javascript.info |
 | --- | --- | --- | --- | --- |
-| 52 | Property flag'lari va descriptor'lar | `writable`, `enumerable`, `configurable`, `defineProperty`, `freeze`/`seal` | MDN `Object.defineProperty` | `/property-descriptors` |
-| 53 | Getter va setter | Accessor xossalar, aqlli getter/setter, moslik uchun | MDN `get`, `set` | `/property-accessors` |
-| 54 | Prototip merosi | `[[Prototype]]`, `__proto__`, `this` prototipda, `for...in` va meros | MDN *Inheritance and the prototype chain* | `/prototype-inheritance` |
-| 55 | `F.prototype` | Konstruktor funksiyaning `prototype` xossasi, `constructor` | MDN *Inheritance and the prototype chain* | `/function-prototype` |
-| 56 | Native prototiplar | `Object.prototype`, built-in prototiplar, ularni o'zgartirish xavfi | MDN *Inheritance and the prototype chain* | `/native-prototypes` |
-| 57 | Prototip metodlari | `Object.create`, `getPrototypeOf`/`setPrototypeOf`, `__proto__`siz "toza" obyekt | MDN `Object.create` | `/prototype-methods` |
-| 58 | Sanaluvchanlik va egalik | Own va meros xossalar, qaysi metod nimani ko'radi (jadval) | MDN *Enumerability and ownership of properties* | — |
+| 52 | [Property flag'lari va descriptor'lar](52-property-flaglari.md) | `writable`, `enumerable`, `configurable`, `defineProperty`, `freeze`/`seal` | MDN `Object.defineProperty` | `/property-descriptors` |
+| 53 | [Getter va setter](53-getter-setter.md) | Accessor xossalar, aqlli getter/setter, moslik uchun | MDN `get`, `set` | `/property-accessors` |
+| 54 | [Prototip merosi](54-prototip-merosi.md) | `[[Prototype]]`, `__proto__`, `this` prototipda, `for...in` va meros | MDN *Inheritance and the prototype chain* | `/prototype-inheritance` |
+| 55 | [`F.prototype`](55-f-prototype.md) | Konstruktor funksiyaning `prototype` xossasi, `constructor` | MDN *Inheritance and the prototype chain* | `/function-prototype` |
+| 56 | [Native prototiplar](56-native-prototiplar.md) | `Object.prototype`, built-in prototiplar, ularni o'zgartirish xavfi | MDN *Inheritance and the prototype chain* | `/native-prototypes` |
+| 57 | [Prototip metodlari](57-prototip-metodlari.md) | `Object.create`, `getPrototypeOf`/`setPrototypeOf`, `__proto__`siz "toza" obyekt | MDN `Object.create` | `/prototype-methods` |
+| 58 | [Sanaluvchanlik va egalik](58-sanaluvchanlik.md) | Own va meros xossalar, qaysi metod nimani ko'radi (jadval) | MDN *Enumerability and ownership of properties* | — |
 
 ## VII qism — Klasslar (59–65)
 
 | # | Bob | Mazmun | Rasmiy asos | javascript.info |
 | --- | --- | --- | --- | --- |
-| 59 | Klass sintaksisi | Klass — funksiya, metodlar prototipda, maydonlar, getter/setter | MDN *Using classes*, *Classes* | `/class` |
-| 60 | Klass merosi | `extends`, `super`, konstruktorni almashtirish, `[[HomeObject]]` | MDN `extends`, `super` | `/class-inheritance` |
+| 59 | [Klass sintaksisi](59-klass-sintaksisi.md) | Klass — funksiya, metodlar prototipda, maydonlar, getter/setter | MDN *Using classes*, *Classes* | `/class` |
+| 60 | [Klass merosi](60-klass-merosi.md) | `extends`, `super`, konstruktorni almashtirish, `[[HomeObject]]` | MDN `extends`, `super` | `/class-inheritance` |
 | 61 | Static | Statik metod va xossalar, static blok, statik meros | MDN `static`, *Static initialization blocks* | `/static-properties-methods` |
 | 62 | Private va protected | `#private` maydon va metodlar, `#x in obj`, "protected" kelishuvi | MDN *Private elements* | `/private-protected-properties-methods` |
 | 63 | Built-in klasslarni kengaytirish | `Array`, `Error`, `Map` dan meros, `Symbol.species` | MDN `extends`, `Symbol.species` | `/extend-natives` |
