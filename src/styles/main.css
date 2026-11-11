@@ -715,6 +715,30 @@ a.home-account:hover { border-color: var(--border-strong); text-decoration: none
 .sidebar-empty { padding: 8px; color: var(--text-subtle); font-size: 13px; }
 .sidebar-backdrop { display: none; }
 
+/* ---------- footer ---------- */
+
+.site-footer { border-top: 1px solid var(--border); color: var(--text-subtle); font-size: 13px; line-height: 1.6; }
+
+.site-footer-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px 32px;
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 22px 24px 28px;
+}
+
+.site-footer-about { max-width: 520px; margin: 0; }
+
+.site-footer-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 18px; }
+.site-footer a { color: var(--text-muted); }
+.site-footer a:hover { color: var(--accent-text); }
+
+.site-footer-author { display: inline-flex; align-items: center; gap: 5px; font-weight: 600; }
+.site-footer-author .provider-icon { width: 14px; height: 14px; }
+
 /* ---------- content ---------- */
 
 .content {

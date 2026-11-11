@@ -5,6 +5,7 @@ import AccountButton from '@/components/AccountButton.vue'
 import AppSidebar from '@/components/AppSidebar.vue'
 import BookMark from '@/components/BookMark.vue'
 import SearchDialog from '@/components/SearchDialog.vue'
+import SiteFooter from '@/components/SiteFooter.vue'
 import ThemeToggle from '@/components/ThemeToggle.vue'
 import UpdatePrompt from '@/components/UpdatePrompt.vue'
 import { terminal, TERMINAL_KITOBLARI } from '@/trenajor/linuxTerminal'
@@ -103,7 +104,11 @@ onUnmounted(() => window.removeEventListener('keydown', onKeydown))
             <RouterView :key="route.path" />
         </div>
 
-        <RouterView v-else :key="route.path" />
+        <template v-else>
+            <RouterView :key="route.path" />
+            <!-- footer faqat sidebar'siz sahifalarda; trenajorlar butun ekranni egallaydi — ularda ham yo'q -->
+            <SiteFooter v-if="!route.meta.full" />
+        </template>
 
         <!-- Linux kitobidagi terminal: boblar orasida o'tganda ham VM saqlanadi -->
         <LinuxTerminal v-if="terminalKitobida || terminal.faol" :korinadi="terminalKitobida && route.name !== 'linux-trenajor'" />
