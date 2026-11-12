@@ -381,6 +381,7 @@ export const books = [
     // Brendi yo'q — sayt palitrasidan (teal)
     accent: '#0f766e',
     accentDark: '#5eead4',
+    tools: [{ label: 'HTTP laboratoriyasi', route: '/web-asoslari/trenajor', note: 'Haqiqiy nginx va curl: so‘rov yo‘li jonli' }],
     versionLabel: 'Web',
     // Standartlarga tayanadi (RFC, WHATWG) — bitta versiya qatori yo'q
     groups: [
