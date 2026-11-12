@@ -55,7 +55,7 @@ vm.add_listener('emulator-ready', async () => {
       if (q.kut) { await kut(q.kut); continue }
       const { op, ...m } = q
       const s = Date.now()
-      try { const j = await kanal.buyruq(op, m); console.log(vaqt(), 'OK', op, `${Date.now() - s}ms`, JSON.stringify(j)) }
+      try { const j = await kanal.buyruq(op, m, { kutish: 240000 }); console.log(vaqt(), 'OK', op, `${Date.now() - s}ms`, JSON.stringify(j)) }
       catch (e) { console.log(vaqt(), 'XATO', op, `${Date.now() - s}ms`, e.message) }
     }
     await kut(3000)

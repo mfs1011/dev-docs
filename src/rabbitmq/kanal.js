@@ -72,13 +72,13 @@ export function yangiKanal(yuborBayt) {
       qator(m)
     },
     /** Buyruq yuborish; javob kelganda resolve, xato bo'lsa reject (RabbitMQ'ning o'z xabari bilan) */
-    buyruq(op, maydonlar = {}) {
+    buyruq(op, maydonlar = {}, { kutish = 30000 } = {}) {
       const bid = ++id
       const p = new Promise((resolve, reject) => {
         kutilmoqda.set(bid, { resolve, reject })
         setTimeout(() => {
-          if (kutilmoqda.delete(bid)) reject(new Error('javob kelmadi (30 s)'))
-        }, 30000)
+          if (kutilmoqda.delete(bid)) reject(new Error(`javob kelmadi (${kutish / 1000} s)`))
+        }, kutish)
       })
       yuborBayt(new TextEncoder().encode(JSON.stringify({ id: bid, op, ...maydonlar }) + '\n'))
       return p

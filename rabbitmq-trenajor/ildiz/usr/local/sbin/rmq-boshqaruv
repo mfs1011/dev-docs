@@ -15,6 +15,7 @@ import base64
 import json
 import os
 import queue
+import subprocess
 import threading
 import time
 import urllib.error
@@ -59,7 +60,11 @@ def q(nom):
 
 # ---------------------------------------------------------------- consumer'lar
 class Consumer(threading.Thread):
-    """Haqiqiy AMQP consumer. xulq: ack | nack | reject | crash (ack'siz ulanishni uzadi)."""
+    """Haqiqiy AMQP consumer. xulq: ack | nack | reject | crash (ack'siz ulanishni uzadi).
+
+    Xabar header'i "x-trenajor" consumer xulqini shu xabar uchun o'zgartiradi (sahifadagi "Test" tugmalari):
+    "xato"   — birinchi urinishda ishlov xatosi: nack + requeue, qayta kelganda (redelivered) ack;
+    "poison" — har safar reject (requeue=False): navbatda DLX bo'lsa, xabar o'lik xatlar navbatiga ketadi."""
 
     def __init__(self, cid, navbat, prefetch, avto_ack, kechikish_ms, xulq):
         super().__init__(daemon=True)
@@ -87,35 +92,60 @@ class Consumer(threading.Thread):
                 if self.kechikish:
                     time.sleep(self.kechikish)
                 self.ishlandi += 1
+                sinov = str((xossa.headers or {}).get("x-trenajor") or "")
+                xulq = self.xulq
+                if sinov == "xato":
+                    xulq = "ack" if metod.redelivered else "nack"
+                elif sinov == "poison":
+                    xulq = "reject"
                 yubor({"t": "ishlov", "consumer": self.cid, "navbat": self.navbat, "tana": tana.decode("utf-8", "replace")[:200],
-                       "redelivered": metod.redelivered, "xulq": "auto" if self.avto_ack else self.xulq})
+                       "redelivered": metod.redelivered, "xulq": "auto" if self.avto_ack else xulq, "sinov": sinov or None})
                 if self.avto_ack:
                     continue
-                if self.xulq == "ack":
+                if xulq == "ack":
                     kanal.basic_ack(metod.delivery_tag)
-                elif self.xulq == "nack":
+                elif xulq == "nack":
                     kanal.basic_nack(metod.delivery_tag, requeue=True)
-                elif self.xulq == "reject":
+                elif xulq == "reject":
                     kanal.basic_reject(metod.delivery_tag, requeue=False)
-                elif self.xulq == "crash":
+                elif xulq == "crash":
                     ulanish.close()          # tasdiqsiz o'ldi — xabar navbatga qaytadi
                     return
             kanal.cancel()
             ulanish.close()
         except Exception as e:  # noqa: BLE001 — sahifaga sababini ko'rsatish uchun
             self.xato = str(e)
-            yubor({"t": "consumer-xato", "consumer": self.cid, "xato": self.xato})
+            if not self.toxta.is_set():
+                yubor({"t": "consumer-xato", "consumer": self.cid, "xato": self.xato})
         finally:
-            CONSUMERLAR.pop(self.cid, None)
+            if CONSUMERLAR.get(self.cid) is self:
+                CONSUMERLAR.pop(self.cid, None)
+
+    def sozlama(self):
+        return {"navbat": self.navbat, "prefetch": self.prefetch, "avto_ack": self.avto_ack,
+                "kechikish_ms": int(self.kechikish * 1000), "xulq": self.xulq, "nom": self.cid}
 
 
 CONSUMERLAR = {}
 _sanoq = 0
 
 
+def consumer_boshla(b):
+    """Consumer oqimini ishga tushiradi. "nom" berilsa (masalan "SMS Worker 1"), id shu bo'ladi."""
+    global _sanoq
+    cid = (b.get("nom") or "").strip()[:40]
+    if not cid or cid in CONSUMERLAR:
+        _sanoq += 1
+        cid = f"{cid} ({_sanoq})" if cid else f"c{_sanoq}"
+    c = Consumer(cid, b["navbat"], int(b.get("prefetch", 1)), bool(b.get("avto_ack", False)),
+                 int(b.get("kechikish_ms", 0)), b.get("xulq", "ack"))
+    CONSUMERLAR[cid] = c
+    c.start()
+    return cid
+
+
 # ---------------------------------------------------------------- buyruqlar
 def bajar(b):
-    global _sanoq
     op = b["op"]
     if op == "exchange.declare":
         api("PUT", f"/exchanges/{VHOST}/{q(b['nom'])}",
@@ -143,17 +173,33 @@ def bajar(b):
                          "properties": b.get("xossalar", {"delivery_mode": 2})})
         return {"routed": bool(javob and javob.get("routed"))}
     elif op == "consumer.start":
-        _sanoq += 1
-        cid = f"c{_sanoq}"
-        c = Consumer(cid, b["navbat"], int(b.get("prefetch", 1)), bool(b.get("avto_ack", False)),
-                     int(b.get("kechikish_ms", 0)), b.get("xulq", "ack"))
-        CONSUMERLAR[cid] = c
-        c.start()
-        return {"consumer": cid}
+        return {"consumer": consumer_boshla(b)}
     elif op == "consumer.stop":
         c = CONSUMERLAR.get(b["consumer"])
         if c:
             c.toxta.set()
+            CONSUMERLAR.pop(c.cid, None)
+    elif op == "broker.restart":
+        # Haqiqiy qayta ishga tushirish: RabbitMQ ilovasi to'xtaydi va qayta ko'tariladi (Erlang tugun ishlab turadi).
+        # Consumer ilovalari ulanish uzilgach qayta ulanadi — shu yerda xuddi shunday: avvalgi sozlama bilan.
+        eski = [c.sozlama() for c in list(CONSUMERLAR.values())]
+        for c in list(CONSUMERLAR.values()):
+            c.toxta.set()
+        CONSUMERLAR.clear()
+        for amal in ("stop_app", "start_app"):
+            r = subprocess.run(["/opt/rabbitmq/sbin/rabbitmqctl", amal], capture_output=True, text=True, timeout=240,
+                               env={**os.environ, "HOME": "/root"})   # rabbitmqctl .erlang.cookie ni HOME'dan oladi
+            if r.returncode != 0:
+                raise RuntimeError(f"rabbitmqctl {amal}: {(r.stderr or r.stdout).strip()[-300:]}")
+        for _ in range(120):
+            try:
+                api("GET", "/overview")
+                break
+            except Exception:  # noqa: BLE001
+                time.sleep(1)
+        for z in eski:
+            consumer_boshla(z)
+        return {"consumerlar": len(eski)}
     elif op == "policy.set":
         api("PUT", f"/policies/{VHOST}/{q(b['nom'])}",
             {"pattern": b["pattern"], "definition": b["ta'rif"], "apply-to": b.get("apply_to", "queues"), "priority": 0})
@@ -162,6 +208,7 @@ def bajar(b):
     elif op == "tozala":
         for c in list(CONSUMERLAR.values()):
             c.toxta.set()
+        CONSUMERLAR.clear()
         for nv in api("GET", f"/queues/{VHOST}?columns=name") or []:
             if nv["name"] != TRACE_Q:
                 api("DELETE", f"/queues/{VHOST}/{q(nv['name'])}")
@@ -278,9 +325,12 @@ def kuzatuv():
                 tur, _, nom = metod.routing_key.partition(".")
                 if nom == TRACE_Q:
                     continue
+                asl = h.get("properties") or {}          # firehose: asl xabar xossalari shu header ichida
                 yubor({"t": "oqim", "tur": tur, "nom": nom, "exchange": h.get("exchange_name"),
                        "kalitlar": h.get("routing_keys"), "redelivered": h.get("redelivered"),
-                       "navbatlar": h.get("routed_queues"),
+                       "navbatlar": h.get("routed_queues"), "ilova": asl.get("app_id"),
+                       "persistent": asl.get("delivery_mode") == 2,
+                       "sinov": (asl.get("headers") or {}).get("x-trenajor"),
                        "tana": tana.decode("utf-8", "replace")[:120]})
         except Exception:  # noqa: BLE001 — RabbitMQ hali tayyor bo'lmasa, qayta urinish
             time.sleep(2)

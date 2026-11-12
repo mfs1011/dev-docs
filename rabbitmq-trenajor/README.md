@@ -18,9 +18,17 @@ Simulyator emas — har tugma brokerda haqiqiy amal bajaradi, sxemadagi har hara
   - VM ichida `rmq-boshqaruv` (Python 3 + pika 1.2) buyruqni HTTP API (127.0.0.1:15672) yoki AMQP orqali bajaradi;
   - VM → sahifa: `holat` (har soniyada topologiya va hisoblagichlar), `oqim` (firehose — `amq.rabbitmq.trace`,
     `routed_queues` bilan), `ishlov` (consumer xabarni ishladi), `javob`.
-- **Sahifa** — `src/views/RabbitmqTrenajorPage.vue`: sxema (`Sxema.vue`), boshqaruv paneli (`Boshqaruv.vue`),
-  hodisalar jurnali (`Jurnal.vue`), terminal (`rabbitmqctl` …), mashqlar (`mashqlar.js` — tekshiruv brokerning
-  haqiqiy holati va hodisalariga qarab).
+- **Sahifa** — `src/views/RabbitmqTrenajorPage.vue`:
+  - erkin rejimda bo'sh brokerda namuna topologiya quriladi (`namuna.js`): `buyurtmalar` (alternate-exchange →
+    `olik-xatlar`), `email` / `sms` (3 worker) / `audit` navbatlari (DLX → `olik-xatlar`), `olik-xatlar-navbati`;
+  - tez panel (`TezPanel.vue`): exchange turi (o'chirib qayta e'lon qilinadi), routing key / header'lar, body,
+    ack rejimi, test xabarlari (`x-trenajor: xato|poison` header'i — consumer nack yoki reject qiladi),
+    persistent, consumer offline, broker restart (`rabbitmqctl stop_app/start_app`), navbat + worker qo'shish, auto-demo;
+  - xabar oqimi (`Sxema.vue`): producer'lar (xabar `app_id` xossasi — firehose'dan o'qiladi), exchange, navbat,
+    consumer, pastda DLX/AE → DLQ; xat belgisi haqiqiy yo'l bo'ylab yuradi;
+  - jarayon qadamlari (`Jarayon.vue`), metrikalar (`Metrikalar.vue`), Python (pika) kodi — VM terminalida ishga
+    tushiriladi (`Kod.vue`), batafsil panel (`Boshqaruv.vue`: TTL, DLX, quorum, stream, policy), hodisalar
+    (`Jurnal.vue`), terminal, mashqlar (`mashqlar.js` — tekshiruv brokerning haqiqiy holati va hodisalariga qarab).
 
 ## Yig'ish va tekshirish
 
