@@ -1,0 +1,19 @@
+[1;32mRabbitMQ trenajori[0m · RabbitMQ 4.4.0
+[2m──────────────────────────────────────[0m
+Brauzeringiz ichida haqiqiy RabbitMQ
+ishlayapti (Erlang/OTP 28, Debian 12).
+Hech narsa kompyuteringizga yoki
+serverga ta'sir qilmaydi.
+
+Panel tugmalari va bu terminal — bitta
+broker: o'zgarishlar ikkalasida ko'rinadi.
+
+Buyruqlar
+  rabbitmqctl list_queues name messages
+  rabbitmqctl list_exchanges
+  rabbitmqctl list_bindings
+  rabbitmq-diagnostics status
+
+Cheklangan: internet yo'q, saqlanmaydi
+(Qayta boshlash — hammasi boshidan),
+512 MB xotira, 32-bitli protsessor.
