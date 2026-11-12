@@ -1,0 +1,276 @@
+#!/usr/bin/python3
+"""RabbitMQ trenajori: sahifa <-> haqiqiy RabbitMQ kanali (ikkinchi serial port, /dev/ttyS1).
+
+Sahifa har qatorda bitta JSON buyruq yuboradi: {"id": 7, "op": "queue.declare", ...}.
+Xizmat buyruqni RabbitMQ'ning HTTP API'si (management plagini, 127.0.0.1:15672) yoki AMQP (pika) orqali bajaradi va
+javob qaytaradi: {"t": "javob", "id": 7, "ok": true} yoki {"t": "javob", "id": 7, "ok": false, "xato": "..."}.
+
+Sahifaga yana ikki xil xabar boradi:
+- {"t": "holat", ...} — har soniyada: exchange'lar, navbatlar (soni, unacked, consumer'lar), bog'lanishlar, consumer'lar;
+- {"t": "oqim", ...} — firehose tracer'dan (amq.rabbitmq.trace): har publish va har deliver — haqiqiy broker hodisasi.
+
+Consumer'lar shu jarayon ichidagi oqimlar (pika): prefetch, ack rejimi, ishlov vaqti va xatti-harakat sahifadan beriladi.
+"""
+import base64
+import json
+import os
+import queue
+import threading
+import time
+import urllib.error
+import urllib.parse
+import urllib.request
+
+import pika
+
+API = "http://127.0.0.1:15672/api"
+AUTH = "Basic " + base64.b64encode(b"guest:guest").decode()
+TTY = "/dev/ttyS1"
+TRACE_Q = "trenajor.kuzatuv"          # firehose nusxalari shu navbatga; sahifada ko'rsatilmaydi
+VHOST = "%2F"
+
+chiqish = queue.Queue()               # ttyS1 ga yoziladigan qatorlar (bitta yozuvchi oqim)
+
+
+def yubor(obj):
+    chiqish.put(json.dumps(obj, ensure_ascii=False, separators=(",", ":")))
+
+
+def api(metod, yol, tana=None):
+    req = urllib.request.Request(API + yol, method=metod,
+                                 data=None if tana is None else json.dumps(tana).encode(),
+                                 headers={"Authorization": AUTH, "Content-Type": "application/json"})
+    try:
+        with urllib.request.urlopen(req, timeout=10) as r:
+            matn = r.read()
+            return json.loads(matn) if matn else None
+    except urllib.error.HTTPError as e:
+        try:
+            sabab = json.loads(e.read()).get("reason", str(e))
+        except Exception:
+            sabab = str(e)
+        raise RuntimeError(sabab) from None
+
+
+def q(nom):
+    return urllib.parse.quote(nom, safe="")
+
+
+# ---------------------------------------------------------------- consumer'lar
+class Consumer(threading.Thread):
+    """Haqiqiy AMQP consumer. xulq: ack | nack | reject | crash (ack'siz ulanishni uzadi)."""
+
+    def __init__(self, cid, navbat, prefetch, avto_ack, kechikish_ms, xulq):
+        super().__init__(daemon=True)
+        self.cid, self.navbat, self.prefetch = cid, navbat, prefetch
+        self.avto_ack, self.kechikish, self.xulq = avto_ack, kechikish_ms / 1000, xulq
+        self.toxta = threading.Event()
+        self.ishlandi = 0
+        self.xato = None
+
+    def run(self):
+        try:
+            ulanish = pika.BlockingConnection(pika.ConnectionParameters("127.0.0.1", heartbeat=30))
+            kanal = ulanish.channel()
+            if self.prefetch:
+                kanal.basic_qos(prefetch_count=self.prefetch)
+            # stream'ni boshidan o'qish (aks holda consumer faqat yangi xabarlarni oladi)
+            tur = (api("GET", f"/queues/{VHOST}/{q(self.navbat)}?columns=type") or {}).get("type")
+            arg = {"x-stream-offset": "first"} if tur == "stream" else None
+            for metod, xossa, tana in kanal.consume(self.navbat, auto_ack=self.avto_ack, inactivity_timeout=0.2,
+                                                     arguments=arg):
+                if self.toxta.is_set():
+                    break
+                if metod is None:
+                    continue
+                if self.kechikish:
+                    time.sleep(self.kechikish)
+                self.ishlandi += 1
+                yubor({"t": "ishlov", "consumer": self.cid, "navbat": self.navbat, "tana": tana.decode("utf-8", "replace")[:200],
+                       "redelivered": metod.redelivered, "xulq": "auto" if self.avto_ack else self.xulq})
+                if self.avto_ack:
+                    continue
+                if self.xulq == "ack":
+                    kanal.basic_ack(metod.delivery_tag)
+                elif self.xulq == "nack":
+                    kanal.basic_nack(metod.delivery_tag, requeue=True)
+                elif self.xulq == "reject":
+                    kanal.basic_reject(metod.delivery_tag, requeue=False)
+                elif self.xulq == "crash":
+                    ulanish.close()          # tasdiqsiz o'ldi — xabar navbatga qaytadi
+                    return
+            kanal.cancel()
+            ulanish.close()
+        except Exception as e:  # noqa: BLE001 — sahifaga sababini ko'rsatish uchun
+            self.xato = str(e)
+            yubor({"t": "consumer-xato", "consumer": self.cid, "xato": self.xato})
+        finally:
+            CONSUMERLAR.pop(self.cid, None)
+
+
+CONSUMERLAR = {}
+_sanoq = 0
+
+
+# ---------------------------------------------------------------- buyruqlar
+def bajar(b):
+    global _sanoq
+    op = b["op"]
+    if op == "exchange.declare":
+        api("PUT", f"/exchanges/{VHOST}/{q(b['nom'])}",
+            {"type": b.get("tur", "direct"), "durable": b.get("durable", True), "arguments": b.get("args", {})})
+    elif op == "exchange.delete":
+        api("DELETE", f"/exchanges/{VHOST}/{q(b['nom'])}")
+    elif op == "queue.declare":
+        api("PUT", f"/queues/{VHOST}/{q(b['nom'])}", {"durable": b.get("durable", True), "arguments": b.get("args", {})})
+    elif op == "queue.delete":
+        api("DELETE", f"/queues/{VHOST}/{q(b['nom'])}")
+    elif op == "queue.purge":
+        api("DELETE", f"/queues/{VHOST}/{q(b['nom'])}/contents")
+    elif op == "bind":
+        api("POST", f"/bindings/{VHOST}/e/{q(b['exchange'])}/q/{q(b['navbat'])}",
+            {"routing_key": b.get("kalit", ""), "arguments": b.get("args", {})})
+    elif op == "unbind":
+        api("DELETE", f"/bindings/{VHOST}/e/{q(b['exchange'])}/q/{q(b['navbat'])}/{q(b.get('props', '~'))}")
+    elif op == "publish":
+        sonlar = max(1, min(int(b.get("soni", 1)), 200))
+        javob = None
+        for i in range(sonlar):
+            tana = b.get("tana", "") if sonlar == 1 else f"{b.get('tana', '')} #{i + 1}"
+            javob = api("POST", f"/exchanges/{VHOST}/{q(b.get('exchange', '') or 'amq.default')}/publish",
+                        {"routing_key": b.get("kalit", ""), "payload": tana, "payload_encoding": "string",
+                         "properties": b.get("xossalar", {"delivery_mode": 2})})
+        return {"routed": bool(javob and javob.get("routed"))}
+    elif op == "consumer.start":
+        _sanoq += 1
+        cid = f"c{_sanoq}"
+        c = Consumer(cid, b["navbat"], int(b.get("prefetch", 1)), bool(b.get("avto_ack", False)),
+                     int(b.get("kechikish_ms", 0)), b.get("xulq", "ack"))
+        CONSUMERLAR[cid] = c
+        c.start()
+        return {"consumer": cid}
+    elif op == "consumer.stop":
+        c = CONSUMERLAR.get(b["consumer"])
+        if c:
+            c.toxta.set()
+    elif op == "policy.set":
+        api("PUT", f"/policies/{VHOST}/{q(b['nom'])}",
+            {"pattern": b["pattern"], "definition": b["ta'rif"], "apply-to": b.get("apply_to", "queues"), "priority": 0})
+    elif op == "policy.delete":
+        api("DELETE", f"/policies/{VHOST}/{q(b['nom'])}")
+    elif op == "tozala":
+        for c in list(CONSUMERLAR.values()):
+            c.toxta.set()
+        for nv in api("GET", f"/queues/{VHOST}?columns=name") or []:
+            if nv["name"] != TRACE_Q:
+                api("DELETE", f"/queues/{VHOST}/{q(nv['name'])}")
+        for ex in api("GET", f"/exchanges/{VHOST}?columns=name") or []:
+            if ex["name"] and not ex["name"].startswith("amq."):
+                api("DELETE", f"/exchanges/{VHOST}/{q(ex['name'])}")
+        for p in api("GET", f"/policies/{VHOST}") or []:
+            api("DELETE", f"/policies/{VHOST}/{q(p['name'])}")
+    else:
+        raise RuntimeError(f"noma'lum buyruq: {op}")
+    return None
+
+
+def kiruvchi():
+    """ttyS1 dan buyruqlarni o'qish."""
+    with open(TTY, "rb", buffering=0) as f:
+        bufer = b""
+        while True:
+            parcha = f.read(1)
+            if not parcha:
+                time.sleep(0.05)
+                continue
+            if parcha != b"\n":
+                bufer += parcha
+                continue
+            qator, bufer = bufer.decode("utf-8", "replace").strip(), b""
+            if not qator:
+                continue
+            try:
+                b = json.loads(qator)
+            except ValueError:
+                continue
+            try:
+                natija = bajar(b)
+                yubor({"t": "javob", "id": b.get("id"), "ok": True, **(natija or {})})
+            except Exception as e:  # noqa: BLE001
+                yubor({"t": "javob", "id": b.get("id"), "ok": False, "xato": str(e)})
+
+
+def chiquvchi():
+    with open(TTY, "w", buffering=1, encoding="utf-8") as f:
+        while True:
+            f.write(chiqish.get() + "\n")
+
+
+def holat_tsikli():
+    """Har soniyada topologiya va hisoblagichlar (HTTP API)."""
+    while True:
+        try:
+            navbatlar = [
+                {"nom": n["name"], "tur": n.get("type"), "tayyor": n.get("messages_ready", 0),
+                 "unacked": n.get("messages_unacknowledged", 0), "consumerlar": n.get("consumers", 0),
+                 "args": n.get("arguments", {}), "policy": n.get("effective_policy_definition") or {}}
+                for n in api("GET", f"/queues/{VHOST}?columns=name,type,messages_ready,messages_unacknowledged,"
+                                    "consumers,arguments,effective_policy_definition") or []
+                if n["name"] != TRACE_Q]
+            exchangelar = [{"nom": e["name"], "tur": e["type"], "args": e.get("arguments", {})}
+                           for e in api("GET", f"/exchanges/{VHOST}?columns=name,type,arguments") or []
+                           if e["name"] != "amq.rabbitmq.trace"]
+            boglanishlar = [{"exchange": x["source"], "navbat": x["destination"], "kalit": x["routing_key"],
+                             "props": x["properties_key"], "args": x.get("arguments", {})}
+                            for x in api("GET", f"/bindings/{VHOST}") or []
+                            if x["destination_type"] == "queue" and x["source"] and x["destination"] != TRACE_Q]
+            consumerlar = [{"id": c.cid, "navbat": c.navbat, "prefetch": c.prefetch, "avto_ack": c.avto_ack,
+                            "kechikish_ms": int(c.kechikish * 1000), "xulq": c.xulq, "ishlandi": c.ishlandi}
+                           for c in list(CONSUMERLAR.values())]
+            yubor({"t": "holat", "navbatlar": navbatlar, "exchangelar": exchangelar, "boglanishlar": boglanishlar,
+                   "consumerlar": consumerlar})
+        except Exception as e:  # noqa: BLE001
+            yubor({"t": "holat-xato", "xato": str(e)})
+        time.sleep(1)
+
+
+def kuzatuv():
+    """Firehose: amq.rabbitmq.trace dagi har publish/deliver nusxasi — sahifadagi animatsiya uchun."""
+    while True:
+        try:
+            ulanish = pika.BlockingConnection(pika.ConnectionParameters("127.0.0.1", heartbeat=30))
+            kanal = ulanish.channel()
+            kanal.queue_declare(TRACE_Q, durable=True, arguments={"x-max-length": 1000})
+            kanal.queue_bind(TRACE_Q, "amq.rabbitmq.trace", "#")
+            for metod, xossa, tana in kanal.consume(TRACE_Q, auto_ack=True):
+                h = xossa.headers or {}
+                tur, _, nom = metod.routing_key.partition(".")
+                if nom == TRACE_Q:
+                    continue
+                yubor({"t": "oqim", "tur": tur, "nom": nom, "exchange": h.get("exchange_name"),
+                       "kalitlar": h.get("routing_keys"), "redelivered": h.get("redelivered"),
+                       "navbatlar": h.get("routed_queues"),
+                       "tana": tana.decode("utf-8", "replace")[:120]})
+        except Exception:  # noqa: BLE001 — RabbitMQ hali tayyor bo'lmasa, qayta urinish
+            time.sleep(2)
+
+
+def main():
+    os.system(f"stty -F {TTY} raw -echo 115200 2>/dev/null")
+    threading.Thread(target=chiquvchi, daemon=True).start()
+    # RabbitMQ va HTTP API tayyor bo'lguncha kutish, keyin firehose'ni yoqish
+    while True:
+        try:
+            api("GET", "/overview")
+            break
+        except Exception:  # noqa: BLE001
+            time.sleep(2)
+    api("PUT", f"/vhosts/{VHOST}", {"tracing": True})          # firehose (rabbitmqctl trace_on bilan bir xil)
+    yubor({"t": "tayyor"})
+    threading.Thread(target=holat_tsikli, daemon=True).start()
+    threading.Thread(target=kuzatuv, daemon=True).start()
+    kiruvchi()
+
+
+if __name__ == "__main__":
+    main()

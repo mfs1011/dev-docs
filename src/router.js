@@ -15,6 +15,7 @@ const router = createRouter({
     { path: '/git/trenajor', name: 'git-trenajor', component: () => import('./views/TrenajorPage.vue'), meta: { full: true } },
     // Brauzerdagi PostgreSQL (PGlite) va SQLite (WASM) — faqat shu sahifada yuklanadi
     { path: '/nginx/trenajor', name: 'nginx-trenajor', component: () => import('./views/NginxTrenajorPage.vue'), meta: { full: true } },
+    { path: '/rabbitmq/trenajor', name: 'rabbitmq-trenajor', component: () => import('./views/RabbitmqTrenajorPage.vue'), meta: { full: true } },
     { path: '/sql/trenajor', name: 'sql-trenajor', component: () => import('./views/SqlTrenajorPage.vue'), meta: { full: true } },
     // Brauzerda haqiqiy Vue/React (iframe, lab/*.html): render va reaktivlik jonli ko'rinadi
     { path: '/vue/trenajor', name: 'vue-trenajor', component: () => import('./views/KomponentTrenajorPage.vue'), meta: { full: true, fw: 'vue' } },

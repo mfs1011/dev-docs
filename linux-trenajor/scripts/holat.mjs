@@ -15,9 +15,16 @@ const build = process.env.TRENAJOR_PROFIL ? path.join(ROOT, '..', `${process.env
 const web = path.join(build, 'web')
 // profil.json dagi "vm": v86 ga qo'shimcha parametrlar (masalan, uart1 — sahifa uchun ikkinchi serial kanal).
 // Holatda saqlangan qurilmalar brauzerdagi bilan bir xil bo'lishi kerak.
-const profilVm = process.env.TRENAJOR_PROFIL
-  ? (JSON.parse(fs.readFileSync(path.join(build, '..', 'profil.json'), 'utf8')).vm ?? {})
+const profilSoz = process.env.TRENAJOR_PROFIL
+  ? JSON.parse(fs.readFileSync(path.join(build, '..', 'profil.json'), 'utf8'))
   : {}
+const profilVm = profilSoz.vm ?? {}
+// profil.json dagi "holatKutish": holatni saqlashdan oldin ikkinchi serial portda (uart1) shu matn chiqishini kutish
+// (masalan, RabbitMQ ko'tarilib, boshqaruv xizmati "tayyor" degach — sahifa ishlab turgan broker bilan ochiladi)
+const holatKutish = profilSoz.holatKutish ?? null
+let kanalTayyor = !holatKutish
+let kanalBuf = ''
+const kanalKutuvchilar = []
 const t0 = Date.now()
 const vm = new V86({
   wasm_path: path.join(pub, 'v86.wasm'),
@@ -34,6 +41,17 @@ const vm = new V86({
   ...profilVm,
 })
 symlinkTuzat(vm)
+if (holatKutish) {
+  vm.add_listener('serial1-output-byte', (b) => {
+    if (kanalTayyor) return
+    kanalBuf = (kanalBuf + String.fromCharCode(b)).slice(-4096)
+    if (kanalBuf.includes(holatKutish)) {
+      kanalTayyor = true
+      console.log(`kanal tayyor: ${((Date.now() - t0) / 1000).toFixed(1)}s`)
+      kanalKutuvchilar.splice(0).forEach((r) => r())
+    }
+  })
+}
 
 // OSC 7770 — prompt belgisi (Terminal.vue shu bilan foydalanuvchi qayerdan yozishini biladi)
 // prompt oxirida ko'rinmas OSC 7770 — Terminal.vue joriy qatorni (buyruq maslahati uchun) shu nuqtadan o'qiydi
@@ -50,10 +68,12 @@ const SOZLASH = [
 
 let buf = ''
 vm.add_listener('serial0-output-byte', async (b) => {
+  if (process.env.HOLAT_DEBUG) process.stderr.write(String.fromCharCode(b))
   buf += String.fromCharCode(b)
   if (!/root@trenajor:[^#]*# $/.test(buf)) return
   buf = ''
   console.log(`yuklandi: ${((Date.now() - t0) / 1000).toFixed(1)}s`)
+  if (!kanalTayyor) await new Promise((r) => kanalKutuvchilar.push(r))
   vm.serial0_send(SOZLASH + '\n')
   await new Promise((r) => setTimeout(r, 3000)) // read kutib qolguncha
   const state = Buffer.from(await vm.save_state())

@@ -1,0 +1,22 @@
+[Unit]
+Description=RabbitMQ (trenajor, generic UNIX arxivi)
+After=network.target
+
+[Service]
+Type=notify
+NotifyAccess=all
+User=rabbitmq
+Group=rabbitmq
+Environment=HOME=/var/lib/rabbitmq
+Environment=PATH=/usr/local/bin:/usr/bin:/bin
+Environment=RABBITMQ_MNESIA_BASE=/var/lib/rabbitmq/mnesia
+Environment=RABBITMQ_LOG_BASE=/var/log/rabbitmq
+# 32-bit VM, bitta CPU: Erlang oqimlari kam (aks holda "Failed to create dirty cpu scheduler thread")
+Environment="RABBITMQ_SERVER_ADDITIONAL_ERL_ARGS=+S 1:1 +SDcpu 1:1 +SDio 4 +A 8"
+ExecStart=/opt/rabbitmq/sbin/rabbitmq-server
+ExecStop=/opt/rabbitmq/sbin/rabbitmqctl shutdown
+TimeoutStartSec=600
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

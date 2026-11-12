@@ -445,6 +445,7 @@ export const books = [
     accentTextDark: '#ffa36b',
     versionLabel: 'RabbitMQ',
     versionRow: /^\|\s*RabbitMQ\s*\|\s*([^|(]+)/m,
+    tools: [{ label: 'RabbitMQ trenajori', route: '/rabbitmq/trenajor', note: 'Haqiqiy RabbitMQ 4.4: oqim jonli' }],
     groups: [
       { title: 'I — Kirish', from: 1, to: 4 },
       { title: 'II — Exchange va marshrutlash', from: 5, to: 10 },
