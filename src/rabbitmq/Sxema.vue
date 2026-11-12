@@ -169,6 +169,42 @@ function exYoz(ex, matn, ms) {
   taymerlar.push(setTimeout(() => { if (exXabar[ex] === matn) delete exXabar[ex] }, ms / Math.max(0.5, props.tezlik)))
 }
 
+// Ketma-ketlik: xat avval navbatga yetadi, keyin consumer'ga o'tadi. Broker xabarni consumer'ga animatsiyadan ancha
+// tez beradi (ishlov hodisasi xat hali yo'lda bo'lganda keladi), shuning uchun vaqt jadvali yuritiladi:
+// qYetish[navbat] — shu navbatga yo'ldagi oxirgi xat yetadigan payt, conBand[consumer] — consumer'ning oldingi
+// animatsiyasi tugaydigan payt. Ishlov animatsiyasi ikkalasidan keyin boshlanadi.
+const MS_YOL = 750, MS_CON = 600, ORALIQ = 120, MAX_KECH = 5000
+const izla = (tur, m) => { if (import.meta.env.DEV && window.__rmqIz) window.__rmqIz.push({ t: performance.now(), tur, ...m }) }
+const qYetish = {}
+const conBand = {}
+// nvBand[navbat] — navbatga tegadigan oxirgi rejalashtirilgan animatsiya payti. Navbatdagi sonlar (brokerdan darhol
+// keladi) shu paytgacha eski holicha ko'rsatiladi — son xat yetib kelganda o'zgaradi.
+const nvBand = {}
+const band = (q, t) => { nvBand[q] = Math.max(nvBand[q] ?? 0, t) }
+// yolda[navbat] — shu navbatga hali yetib kelmagan xatlar (publish, nack bilan qaytish, reject → DLQ).
+// Vaqt rejasi sahifa band bo'lsa kechikishi mumkin, shuning uchun son haqiqiy yetib kelishni ham kutadi.
+const yolda = {}
+const yolgaChiqdi = (q) => { yolda[q] = (yolda[q] ?? 0) + 1 }
+const yetdi = (q) => { yolda[q] = Math.max(0, (yolda[q] ?? 0) - 1); sonYangila() }
+const korsat = reactive({})
+const sonTaymer = {}
+function sonYangila() {
+  const now = performance.now()
+  for (const n of props.holat.navbatlar) {
+    const b = nvBand[n.nom] ?? 0
+    // xavfsizlik: xat 3 s dan ortiq "yo'lda" qolsa (masalan, sxema qayta chizilgan), son baribir yangilanadi
+    if (now >= b && (!yolda[n.nom] || now > b + 3000)) {
+      const eski = korsat[n.nom]
+      if (eski && n.tayyor > eski.tayyor) izla('son', { q: n.nom, tayyor: n.tayyor })
+      korsat[n.nom] = { tayyor: n.tayyor, unacked: n.unacked }
+    } else if (!sonTaymer[n.nom]) {
+      sonTaymer[n.nom] = setTimeout(() => { sonTaymer[n.nom] = 0; sonYangila() }, Math.max(b - now, 0) + (yolda[n.nom] ? 3030 : 30))
+    }
+  }
+}
+watch(() => props.holat.navbatlar, () => sonYangila(), { immediate: true })
+const son = (n) => korsat[n.nom] ?? n
+
 function publish(x) {
   const ex = x.nom ?? ''
   if (ex === '' && !defaultKorsat.value) defaultKorindi.value = true
@@ -176,6 +212,16 @@ function publish(x) {
   if (manba === 'p:boshqa') boshqaKorindi.value = true
   const rang = ILOVALAR.find((i) => i.nom === x.ilova)?.rang ?? '#64748b'
   const qlar = x.navbatlar ?? []
+  // har navbatga yetish paytini oldindan hisoblash (exchange'gacha 1 bo'lak, keyin 1 yoki AE orqali 2 bo'lak)
+  const t0 = performance.now(), bolak = MS_YOL / props.tezlik
+  for (const q of qlar) {
+    const togri = ex === '' || props.holat.boglanishlar.some((b) => b.exchange === ex && b.navbat === q)
+    const yetish = t0 + bolak * (togri || !ae(exTopi(ex)) ? 2 : 3)
+    qYetish[q] = Math.max(qYetish[q] ?? 0, yetish)
+    band(q, yetish)
+    yolgaChiqdi(q)
+  }
+  izla('publish', { qlar })
   nextTick(() => {
     olcha()
     yondir(manba, 'ok', 700)
@@ -197,7 +243,7 @@ function publish(x) {
             ? [seg(R['e:' + ex], R['q:' + q])]
             : [seg(R['e:' + ex], R['e:' + a]), seg(R['e:' + a], R['q:' + q])]
           if (!togri && a) exYoz(ex, `binding mos kelmadi → AE ${a}`, 2200)
-          uchir(yol, togri ? rang : 'var(--rmq-xato)', { tugadi: () => yondir('q:' + q, togri ? 'ok' : 'xato') })
+          uchir(yol, togri ? rang : 'var(--rmq-xato)', { tugadi: () => { yondir('q:' + q, togri ? 'ok' : 'xato'); izla('navbatga-yetdi', { q }); yetdi(q) } })
         }
       },
     })
@@ -209,21 +255,51 @@ const NATIJA = {
   nack: ['↺ ishlov xatosi: nack → navbatga qaytdi', 'qayt'], reject: ['✗ reject → DLX', 'xato'], crash: ['☠ ack’siz o‘ldi → navbatga qaytdi', 'xato'],
 }
 function ishlov(x) {
+  const now = performance.now()
+  const boshi = Math.min(now + MAX_KECH, Math.max(now, (qYetish[x.navbat] ?? 0) + ORALIQ, conBand[x.consumer] ?? 0))
+  let oxiri = boshi + MS_CON / props.tezlik
+  band(x.navbat, boshi)
+  if (x.xulq === 'nack' || x.xulq === 'crash') {
+    // qaytgan xat navbatga yetmaguncha uni qayta olish (redelivered) chizilmaydi
+    oxiri += MS_YOL / props.tezlik
+    qYetish[x.navbat] = Math.max(qYetish[x.navbat] ?? 0, oxiri)
+    band(x.navbat, oxiri)
+    yolgaChiqdi(x.navbat)
+  }
+  if (x.xulq === 'reject') {
+    // reject → DLX → DLQ: o'lik xatlar navbatidagi son ham xat yetganda o'zgarsin
+    const n = nvTopi(x.navbat), d = n && dlx(n)
+    if (d != null) {
+      const yetish = oxiri + (2 * MS_YOL) / props.tezlik
+      for (const b of props.holat.boglanishlar) {
+        if (b.exchange === d) { qYetish[b.navbat] = Math.max(qYetish[b.navbat] ?? 0, yetish); band(b.navbat, yetish); yolgaChiqdi(b.navbat) }
+      }
+    }
+  }
+  conBand[x.consumer] = oxiri + ORALIQ
+  taymerlar.push(setTimeout(() => ishlovChiz(x), boshi - now))
+}
+
+function ishlovChiz(x) {
   const q = 'q:' + x.navbat, c = 'c:' + x.consumer
+  izla('consumerga', { q: x.navbat, c: x.consumer, xulq: x.xulq })
   conHolat[x.consumer] = { matn: 'ishlov berilmoqda…', tur: 'ish', tana: x.tana }
   uchir([seg(R[q], R[c])], 'var(--rmq-q)', {
-    ms: 600,
+    ms: MS_CON,
     tugadi: () => {
       const [matn, tur] = NATIJA[x.xulq] ?? [x.xulq, 'ok']
       conHolat[x.consumer] = { matn: (x.redelivered ? '(qayta keldi) ' : '') + matn, tur, tana: x.tana }
       yondir(c, tur === 'ok' ? 'ok' : tur === 'qayt' ? 'qayt' : 'xato')
-      if (x.xulq === 'nack' || x.xulq === 'crash') uchir([seg(R[c], R[q])], 'var(--rmq-qayt)', { tugadi: () => yondir(q, 'qayt') })
+      if (x.xulq === 'nack' || x.xulq === 'crash') {
+        uchir([seg(R[c], R[q])], 'var(--rmq-qayt)', { tugadi: () => { yondir(q, 'qayt'); izla('qaytdi', { q: x.navbat }); yetdi(x.navbat) } })
+      }
       if (x.xulq === 'reject') {
         const n = nvTopi(x.navbat), d = n && dlx(n)
-        if (d != null && R['e:' + d]) {
+        if (d != null) {
           const dlq = props.holat.boglanishlar.filter((b) => b.exchange === d).map((b) => b.navbat)
           for (const t of dlq) {
-            uchir([seg(R[q], R['e:' + d]), seg(R['e:' + d], R['q:' + t])], 'var(--rmq-xato)', { tugadi: () => yondir('q:' + t, 'xato') })
+            // uchir yo'l chizib bo'lmasa ham tugadi'ni chaqiradi — "yo'lda" sanog'i albatta kamayadi
+            uchir([seg(R[q], R['e:' + d]), seg(R['e:' + d], R['q:' + t])], 'var(--rmq-xato)', { tugadi: () => { yondir('q:' + t, 'xato'); izla('navbatga-yetdi', { q: t }); yetdi(t) } })
           }
         }
       }
@@ -237,7 +313,7 @@ function hodisa(x) {
 }
 let bekor
 onMounted(() => { bekor = props.tingla(hodisa) })
-onBeforeUnmount(() => { bekor?.(); ro?.disconnect(); taymerlar.forEach(clearTimeout); cancelAnimationFrame(rafId) })
+onBeforeUnmount(() => { bekor?.(); ro?.disconnect(); taymerlar.forEach(clearTimeout); Object.values(sonTaymer).forEach(clearTimeout); cancelAnimationFrame(rafId) })
 
 const CHEGARA = 14
 const xatSoni = (n) => Math.min(n ?? 0, CHEGARA)
@@ -296,7 +372,7 @@ const xatSoni = (n) => Math.min(n ?? 0, CHEGARA)
                 <div v-for="n in asosiyNv" :key="n.nom" class="karta nv" :class="yonish['q:' + n.nom]" :data-tugun="'q:' + n.nom">
                     <div class="nv-bosh">
                         <span class="ikon">☰</span>
-                        <span class="son-katta" :class="{ bor: n.tayyor }">{{ n.tayyor }}</span>
+                        <span class="son-katta" :class="{ bor: son(n).tayyor }">{{ son(n).tayyor }}</span>
                     </div>
                     <small>NAVBAT</small>
                     <b>{{ n.nom }} <em class="tur">{{ n.tur }}</em></b>
@@ -306,11 +382,11 @@ const xatSoni = (n) => Math.min(n ?? 0, CHEGARA)
                         <span v-if="tashqi(n)" class="tashqi">+{{ tashqi(n) }} tashqi consumer</span>
                     </div>
                     <div class="xatlar">
-                        <i v-for="i in xatSoni(n.tayyor)" :key="'r' + i" class="tayyor" />
-                        <i v-for="i in xatSoni(n.unacked)" :key="'u' + i" class="unacked" />
-                        <span v-if="n.tayyor > CHEGARA || n.unacked > CHEGARA" class="kop">…</span>
+                        <i v-for="i in xatSoni(son(n).tayyor)" :key="'r' + i" class="tayyor" />
+                        <i v-for="i in xatSoni(son(n).unacked)" :key="'u' + i" class="unacked" />
+                        <span v-if="son(n).tayyor > CHEGARA || son(n).unacked > CHEGARA" class="kop">…</span>
                     </div>
-                    <span class="son">tayyor {{ n.tayyor }} · unacked {{ n.unacked }}</span>
+                    <span class="son">tayyor {{ son(n).tayyor }} · unacked {{ son(n).unacked }}</span>
                 </div>
             </section>
 
@@ -350,13 +426,13 @@ const xatSoni = (n) => Math.min(n ?? 0, CHEGARA)
                     <div v-for="n in dlqlar" :key="n.nom" class="karta nv olik" :class="yonish['q:' + n.nom]" :data-tugun="'q:' + n.nom">
                         <div class="nv-bosh">
                             <span class="ikon">☠</span>
-                            <span class="son-katta" :class="{ bor: n.tayyor }">{{ n.tayyor }}</span>
+                            <span class="son-katta" :class="{ bor: son(n).tayyor }">{{ son(n).tayyor }}</span>
                         </div>
                         <small>O‘LIK XABARLAR NAVBATI (DLQ)</small>
                         <b>{{ n.nom }}</b>
                         <p>oladi: <code>reject</code> + <code>yo‘naltirilmagan</code></p>
                         <div class="xatlar">
-                            <i v-for="i in xatSoni(n.tayyor)" :key="'r' + i" class="tayyor olik" />
+                            <i v-for="i in xatSoni(son(n).tayyor)" :key="'r' + i" class="tayyor olik" />
                         </div>
                     </div>
                 </section>
