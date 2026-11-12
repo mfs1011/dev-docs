@@ -170,7 +170,7 @@ const dur = computed(() => 0.7 / props.tezlik)
 .trassa { position: relative; height: 54px; }
 .trassa::before, .trassa::after { content: ''; position: absolute; left: 0; right: 0; height: 2px; background: var(--border); }
 .trassa::before { top: 16px; } .trassa::after { top: 38px; }
-.xat { position: absolute; padding: 1px 7px; border-radius: 6px; font: 700 11px var(--font-mono); color: #fff; white-space: nowrap; opacity: 0; }
+.xat { position: absolute; z-index: 1; padding: 1px 7px; border-radius: 6px; font: 700 11px var(--font-mono); color: #fff; white-space: nowrap; opacity: 0; }
 .xat.bor { top: 7px; left: 0; background: var(--accent); animation: borish var(--dur) ease-in-out forwards; animation-delay: var(--kech); }
 .xat.qayt { top: 29px; right: 0; background: var(--r, #64748b); animation: qaytish var(--dur) ease-in-out forwards; animation-delay: calc(var(--kech) + var(--dur)); }
 .xat.ok { --r: var(--ok); } .xat.yonalish { --r: var(--yonalish); } .xat.mijoz { --r: var(--mijoz); } .xat.server, .xat.xato { --r: var(--server); }
