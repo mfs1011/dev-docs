@@ -65,6 +65,26 @@ jobs:
       - name: Nginx trenajorini saytga qo'shish
         run: rm -rf public/nginx-trenajor && cp -r nginx-trenajor/build/web public/nginx-trenajor
 
+      # RabbitMQ trenajori: Linux trenajori quvurining "rabbitmq" profili. Erlang/OTP 28 i386 uchun Docker'da
+      # (debian:bookworm, linux/386) erlang/otp manba arxividan yig'iladi; RabbitMQ 4.4.0 — rasmiy generic UNIX
+      # arxivi (GPG imzosi tekshiriladi). Holat surati RabbitMQ ishlab turgan paytda olinadi (profil.json: holatKutish).
+      - name: RabbitMQ trenajori keshi
+        id: rabbitmq-trenajor
+        uses: actions/cache@v4
+        with:
+          path: rabbitmq-trenajor/build/web
+          key: rabbitmq-trenajor-${{ hashFiles('rabbitmq-trenajor/**', 'linux-trenajor/scripts/**', 'public/trenajor/v86.wasm', 'package-lock.json') }}
+
+      - name: RabbitMQ trenajorini yig'ish
+        if: steps.rabbitmq-trenajor.outputs.cache-hit != 'true'
+        run: |
+          sh rabbitmq-trenajor/scripts/erlang-yigish.sh
+          sh rabbitmq-trenajor/scripts/rabbitmq-arxiv.sh
+          TRENAJOR_PROFIL=rabbitmq sh linux-trenajor/scripts/yigish.sh
+
+      - name: RabbitMQ trenajorini saytga qo'shish
+        run: rm -rf public/rabbitmq-trenajor && cp -r rabbitmq-trenajor/build/web public/rabbitmq-trenajor
+
       # Video darslar (~1.4 GB) saytga qo'shilmaydi: ular VPS'dan beriladi (https://kamgapir.uz/video/,
       # VPS repodan faqat public/video ni sparse checkout qilib, har 15 daqiqada yangilaydi — docs/ish-holati.md).
       - name: Videolarni artifact'dan chiqarish

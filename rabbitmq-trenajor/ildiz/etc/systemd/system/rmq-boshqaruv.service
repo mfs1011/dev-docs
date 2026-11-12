@@ -1,0 +1,12 @@
+[Unit]
+Description=RabbitMQ trenajori: sahifa bilan kanal (ttyS1)
+After=rabbitmq-server.service
+Requires=rabbitmq-server.service
+
+[Service]
+ExecStart=/usr/bin/python3 -u /usr/local/sbin/rmq-boshqaruv
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target

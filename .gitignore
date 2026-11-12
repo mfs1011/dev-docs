@@ -61,4 +61,9 @@ public/linux-trenajor
 nginx-trenajor/build/
 public/nginx-trenajor
 nginx-trenajor/test/shots/
+
+# RabbitMQ trenajori: yig'ilgan tizim, i386 Erlang va RabbitMQ arxivlari (qayta yasaladi)
+rabbitmq-trenajor/build/
+public/rabbitmq-trenajor
+rabbitmq-trenajor/test/shots/
 web-trenajor/test/shots/
