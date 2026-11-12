@@ -30,6 +30,7 @@ TRACE_Q = "trenajor.kuzatuv"          # firehose nusxalari shu navbatga; sahifad
 VHOST = "%2F"
 
 chiqish = queue.Queue()               # ttyS1 ga yoziladigan qatorlar (bitta yozuvchi oqim)
+uygot = threading.Event()             # buyruqdan keyin holatni kutmasdan yuborish
 
 
 def yubor(obj):
@@ -196,6 +197,7 @@ def kiruvchi():
             try:
                 natija = bajar(b)
                 yubor({"t": "javob", "id": b.get("id"), "ok": True, **(natija or {})})
+                uygot.set()
             except Exception as e:  # noqa: BLE001
                 yubor({"t": "javob", "id": b.get("id"), "ok": False, "xato": str(e)})
 
@@ -206,9 +208,33 @@ def chiquvchi():
             f.write(chiqish.get() + "\n")
 
 
+class Sanagich:
+    """Navbatdagi tayyor xabarlar sonini AMQP passive queue.declare bilan oladi — management statistikasidan farqli,
+    real vaqtdagi qiymat (statistika collect_statistics_interval bilan kechikadi)."""
+
+    def __init__(self):
+        self.ulanish = None
+
+    def soni(self, nom):
+        try:
+            if not self.ulanish or self.ulanish.is_closed:
+                self.ulanish = pika.BlockingConnection(pika.ConnectionParameters("127.0.0.1", heartbeat=30))
+            kanal = self.ulanish.channel()
+            try:
+                return kanal.queue_declare(nom, passive=True).method.message_count
+            finally:
+                if kanal.is_open:
+                    kanal.close()
+        except Exception:  # noqa: BLE001 — navbat o'chirilgan bo'lsa yoki ulanish uzilsa, HTTP API qiymati qoladi
+            self.ulanish = None
+            return None
+
+
 def holat_tsikli():
-    """Har soniyada topologiya va hisoblagichlar (HTTP API)."""
+    """Har soniyada (va har buyruqdan keyin darhol) topologiya va hisoblagichlar."""
+    sanagich = Sanagich()
     while True:
+        uygot.clear()
         try:
             navbatlar = [
                 {"nom": n["name"], "tur": n.get("type"), "tayyor": n.get("messages_ready", 0),
@@ -217,6 +243,11 @@ def holat_tsikli():
                 for n in api("GET", f"/queues/{VHOST}?columns=name,type,messages_ready,messages_unacknowledged,"
                                     "consumers,arguments,effective_policy_definition") or []
                 if n["name"] != TRACE_Q]
+            for n in navbatlar:
+                if n["tur"] != "stream":
+                    son = sanagich.soni(n["nom"])
+                    if son is not None:
+                        n["tayyor"] = son
             exchangelar = [{"nom": e["name"], "tur": e["type"], "args": e.get("arguments", {})}
                            for e in api("GET", f"/exchanges/{VHOST}?columns=name,type,arguments") or []
                            if e["name"] != "amq.rabbitmq.trace"]
@@ -231,7 +262,7 @@ def holat_tsikli():
                    "consumerlar": consumerlar})
         except Exception as e:  # noqa: BLE001
             yubor({"t": "holat-xato", "xato": str(e)})
-        time.sleep(1)
+        uygot.wait(1)
 
 
 def kuzatuv():

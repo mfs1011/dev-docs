@@ -12,7 +12,7 @@ const p = await b.newPage({ viewport: { width: 1500, height: 1000 } })
 const xatolar = []
 p.on('pageerror', (e) => xatolar.push(e.message))
 await p.goto(URL)
-await p.waitForSelector('svg.sxema', { timeout: 240000 })
+await p.waitForSelector('.oqim', { timeout: 240000 })
 await p.waitForTimeout(1500)
 const tab = (t) => p.click(`.tablar button:has-text("${t}")`)
 const asosiy = async () => { await p.click('form .asosiy'); await p.waitForSelector('.panel .natija'); await p.waitForTimeout(1300) }

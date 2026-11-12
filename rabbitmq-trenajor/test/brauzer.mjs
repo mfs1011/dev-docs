@@ -14,7 +14,7 @@ p.on('console', (m) => { if (m.type() === 'error') xatolar.push(m.text()) })
 const t0 = Date.now()
 await p.goto(URL)
 await p.waitForSelector('.boot', { state: 'detached', timeout: 240000 })
-await p.waitForSelector('svg.sxema', { timeout: 120000 })
+await p.waitForSelector('.oqim', { timeout: 120000 })
 console.log('ochildi:', ((Date.now() - t0) / 1000).toFixed(1), 's')
 const tab = (t) => p.click(`.tablar button:has-text("${t}")`)
 const natija = async () => { await p.waitForSelector('.natija', { timeout: 30000 }); return p.textContent('.natija') }

@@ -205,9 +205,9 @@ header { display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; pa
 main { flex: 1; display: grid; gap: 12px; padding: 14px 18px 18px;
   grid-template-columns: minmax(0, 1fr) minmax(300px, 360px);
   grid-template-areas: "sxema panel" "jurnal panel" "term term"; }
-.sxema-quti { grid-area: sxema; min-height: 260px; }
+.sxema-quti { grid-area: sxema; min-height: 260px; align-self: start; }
 .panel-quti { grid-area: panel; }
-.jurnal-quti { grid-area: jurnal; max-height: 240px; overflow: auto; }
+.jurnal-quti { grid-area: jurnal; max-height: 260px; overflow: auto; align-self: start; }
 .term { grid-area: term; position: relative; height: 340px; display: flex; flex-direction: column; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; background: var(--code-bg); }
 .term > :first-child { flex: 1; min-height: 0; }
 .sxema-quti, .panel-quti, .jurnal-quti { padding: 12px 14px; background: var(--bg-elevated); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow-sm); }
