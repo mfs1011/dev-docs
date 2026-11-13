@@ -1,6 +1,6 @@
 # Keyingi ishlar va hozirgi holat
 
-Oxirgi yangilanish: **2026-11-13**. Bu fayl — ishga qaytganda (yoki yangi sessiya / boshqa kompyuterda) hozirgi holatga tez kirish
+Oxirgi yangilanish: **2026-11-13** (kechqurun). Bu fayl — ishga qaytganda (yoki yangi sessiya / boshqa kompyuterda) hozirgi holatga tez kirish
 uchun. Avval shu faylni, keyin `CLAUDE.md` va `docs/ish-holati.md` ni o'qing. Kitoblar bo'yicha batafsil tarix —
 `docs/ish-holati.md` da; bu yerda — hozir nima bor, nima ochiq qoldi, qaror kutayotganlar va keyingi rejalar.
 
@@ -13,8 +13,11 @@ uchun. Avval shu faylni, keyin `CLAUDE.md` va `docs/ish-holati.md` ni o'qing. Ki
   - Deploy amaliyoti — bir qator boblar egasining qarorini kutadi (3-bo'limga qarang).
 - **Trenajorlar:** 2026-11-12..13 da uchta yangi trenajor yozildi va saytga chiqdi — **RabbitMQ**, **HTTP laboratoriyasi**
   (Web asoslari), **Redis**. Hammasi brauzerda (v86) haqiqiy dastur bilan ishlaydi, simulyator emas.
-- **CI/deploy:** trenajor tasvirini yig'ishdagi tasodifiy xato topildi va tuzatildi (4-bo'lim). Oxirgi deploy (#234) muvaffaqiyatli,
-  qolgan ikki tuzatish — **PR #235** (merge kutilmoqda).
+- **CI/deploy:** trenajor tasvirini yig'ishdagi tasodifiy xato topildi va to'liq tuzatildi (#234, #235, #237 — 4-bo'lim).
+  #238 deploy'i (2026-11-13) barcha trenajorlarni noldan yig'di — muvaffaqiyatli.
+- **Flutter kitobi** (yangi, "Mobil" yo'nalishi): mundarija (47 bob, Flutter 3.50.0 / Dart 3.14.0) merge qilingan (#238);
+  1-bob va Dart qismi (5–12) yozilgan — VPS'da Dart SDK 3.14.0 (`/opt/dart-sdk`) bilan sinalgan. Qolgan boblar emulyator
+  talab qiladi (3.1-bo'lim).
 
 ## 2. Saytdagi trenajorlar
 
@@ -73,8 +76,8 @@ uchun. Avval shu faylni, keyin `CLAUDE.md` va `docs/ish-holati.md` ni o'qing. Ki
 
 ### 3.1. Egasidan kutilayotgan qarorlar
 
-1. **PR #235 ni merge qilish** — stage2'ning asl sababini tuzatadi (4-bo'lim). Usiz chala tasvir yana tasodifan chiqishi
-   mumkin (#234 uni faqat ushlab, deploy'ni to'xtatadi).
+1. **Flutter: sinov kompyuteriga o'rnatish ruxsati** — Flutter SDK, Android Studio (emulyator bilan) va Xcode (~25–30 GB)
+   yoki faqat Android (~10 GB). Usiz 2–4 va 13–47-boblar (E) yozilmaydi.
 2. **Server xavfsizligi trenajori** — A yoki B (3.3-bo'lim).
 3. **"Pastga qarab" seriya** — tajriba zanjirini boshlashmi (5-bo'lim).
 4. **Deploy amaliyoti:** Deploy 03 va Server xavfsizligi 9–18 uchun provayder konsoli (VNC/rescue) tayyorligini tasdiqlash;
@@ -118,6 +121,9 @@ Barcha VM trenajorlari bitta quvur bilan yig'iladi: `TRENAJOR_PROFIL=<nom> sh li
      faylni qayta o'qib bo'lmaydi → `segfault ... in libc.so.6 (deleted)`. Tuzatish (#235): arxivlash `exec` bilan yangi jarayonda.
   2. ~330 MB arxivni 9p (`cache=loose`) orqali yozishda 512 MB VM xotirasi tugaydi → `tar: Cannot savedir: Cannot allocate
      memory`. Tuzatish (#235): stage2 VM — 1 GB, har 48 MB bo'lakdan keyin `sync`.
+  2b. stage2.sh — PID 1 (init); libc almashtirilgach init ham SIGBUS bilan o'lishi mumkin ("Kernel panic - Attempted to kill
+     init! exitcode=0x00000007", #236 deploy'i). Tuzatish (#237): init boshidanoq `/run` dagi sh/ld.so/libc nusxalari bilan
+     qayta ishga tushadi (`ld-linux.so.2 --library-path /run/sabit`).
   3. `tar` xatosi tekshirilmagan edi → chala tasvir → servis ishga tushmaydi → `holat.mjs` "tayyor"ni abadiy kutadi (#232
      deploy'i 6 soatlik limitda bekor qilingan). Tuzatish (#234): `tar` kodi tekshiriladi, 3 marta qayta urinish, so'ng
      `TAR_XATO` — yig'ish to'xtaydi.
