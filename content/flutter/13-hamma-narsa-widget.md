@@ -44,7 +44,7 @@ FD (User interface) Flutter UI qatlamini ikki pog'onaga ajratadi:
 ### `MaterialApp` va `Scaffold`
 
 - **`MaterialApp`** (FD): ilova ildizida bir qator foydali widget'larni quradi, jumladan ekranlar orasida o'tishni
-  boshqaradigan `Navigator` ni (29-bob). Ko'p Material widget'lari mavzu (theme) ma'lumotini olish uchun `MaterialApp`
+  boshqaradigan `Navigator` ni (23-bob). Ko'p Material widget'lari mavzu (theme) ma'lumotini olish uchun `MaterialApp`
   ichida bo'lishi kerak. Matn yo'nalishi (`Directionality`) ham shu yerda beriladi.
 - **`Scaffold`** (FD): ekran karkasi. Turli widget'larni nomli argument sifatida oladi (`appBar`, `body`,
   `floatingActionButton` …) va har birini o'z joyiga qo'yadi.
