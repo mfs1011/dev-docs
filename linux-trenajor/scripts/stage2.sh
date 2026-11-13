@@ -15,7 +15,7 @@ if [ "${1:-}" != sabit ]; then
   cp -L /bin/sh /lib/ld-linux.so.2 /lib/i386-linux-gnu/libc.so.6 /run/sabit/
   exec /run/sabit/ld-linux.so.2 --library-path /run/sabit /run/sabit/sh "$0" sabit
 fi
-echo "[stage2] boshlandi (init: $(readlink /proc/self/exe 2>/dev/null; readlink /proc/1/exe))"
+echo "[stage2] boshlandi (init: $(readlink /proc/1/exe))"
 
 # o'rnatish paytida servislar ishga tushmasin (debootstrap ham shunday qiladi)
 printf '#!/bin/sh\nexit 101\n' > /usr/sbin/policy-rc.d && chmod +x /usr/sbin/policy-rc.d
