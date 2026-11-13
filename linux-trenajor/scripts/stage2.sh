@@ -44,25 +44,33 @@ if [ -x /linux-trenajor/qoshimcha.sh ]; then
 fi
 
 cd /
+# Arxivlash yangi jarayonda: dpkg shu skript ishlayotganda libc6'ni yangilagan — bu shell va undan ochilgan subshell'lar
+# eski, o'chirilgan libc.so.6 bilan ishlaydi. 9p'da o'chirilgan faylni qayta o'qib bo'lmaydi: sahifalari keshdan
+# chiqsa, jarayon yiqiladi (CI'da: "stage2.sh: segfault ... in libc.so.6 (deleted)"; tar "Exiting with failure status",
+# chala tasvir). exec bilan yangi sh joriy libc'ni yuklaydi.
+cat > /run/arxiv.sh <<'ARXIV'
 # katta faylni emulyatordan bir urinishda o'qib bo'lmaydi — 48 MB'lik bo'laklar
 mkdir -p /natija
-# tar xatosi tekshiriladi: CI'da (sekin protsessor, 512 MB) yadro xotira bosimida xato berib, tar ba'zi fayllarni
-# o'tkazib yuborgan ("Exiting with failure status due to previous errors") — chala tasvirda servis ishga tushmay,
-# holat.mjs soatlab kutib qolgan. Endi: kesh tozalanib qayta urinish, uch marta ham bo'lmasa — TAR_XATO.
+cd /
+# tar natijasi tekshiriladi va 3 martagacha qayta uriniladi; bo'lmasa TAR_XATO — stage2.mjs yig'ishni to'xtatadi
 urinish=1
 while :; do
   rm -f /natija/qism.*
+  # endi yangi jarayondamiz — keshni tozalash xavfsiz (CI'da 512 MB'da "Cannot savedir: Cannot allocate memory" bo'lgan)
   sync; echo 3 > /proc/sys/vm/drop_caches
   { tar --numeric-owner -cf - --exclude=./proc --exclude=./sys --exclude=./dev --exclude=./run \
-      --exclude=./natija --exclude=./linux-trenajor --exclude=./tmp/xato.txt --exclude=./tmp/tar-xato.txt . \
-      2> /tmp/tar-xato.txt; echo $? > /tmp/tar-kod; } | split -b 48M - /natija/qism.
-  # 9p cache=loose: yozilgan ma'lumot avval VM keshida turadi — host o'qishidan oldin sync shart
+      --exclude=./natija --exclude=./linux-trenajor --exclude=./tmp/xato.txt . \
+      2> /run/tar-xato.txt; echo $? > /run/tar-kod; } | split -b 48M --filter='cat > $FILE && sync' - /natija/qism.
+  # 9p cache=loose: yozilgan ma'lumot avval VM keshida (xotirada) turadi — har bo'lakdan keyin va oxirida sync:
+  # xotira to'lmaydi va host o'qishidan oldin hammasi diskda bo'ladi
   sync
-  [ "$(cat /tmp/tar-kod)" = 0 ] && break
-  echo "[stage2] tar xatosi (urinish $urinish, kod $(cat /tmp/tar-kod)):"
-  head -15 /tmp/tar-xato.txt | sed 's/^/[stage2]   /'
+  [ "$(cat /run/tar-kod)" = 0 ] && break
+  echo "[stage2] tar xatosi (urinish $urinish, kod $(cat /run/tar-kod)):"
+  head -15 /run/tar-xato.txt | sed 's/^/[stage2]   /'
   urinish=$((urinish + 1))
   if [ $urinish -gt 3 ]; then echo "[stage2] TAR_XATO"; while true; do sleep 3600; done; fi
 done
 echo "[stage2] TAR_TAYYOR $(cat /natija/qism.* | wc -c) $(cd /natija && echo qism.*)"
 while true; do sleep 3600; done
+ARXIV
+exec /bin/sh /run/arxiv.sh
