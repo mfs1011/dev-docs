@@ -416,6 +416,29 @@ export const books = [
     folders: [],
   },
   {
+    id: 'flutter',
+    title: 'Flutter',
+    subtitle: 'bitta koddan Android, iOS va web',
+    dir: 'flutter',
+    logo: 'flutter',
+    // Rasmiy Flutter logosi (flutter/website → branding/flutter/logo/default.svg) ranglari: #03569B, qorong'i fonda #39CEFD
+    accent: '#03569b',
+    accentDark: '#39cefd',
+    versionLabel: 'Flutter',
+    versionRow: /^\|\s*Flutter SDK\s*\|\s*([^|]+)\|/m,
+    groups: [
+      { title: 'I — Kirish', from: 1, to: 4 },
+      { title: 'II — Dart tili', from: 5, to: 12 },
+      { title: 'III — Widget\'lar va ekran', from: 13, to: 20 },
+      { title: 'IV — Foydalanuvchi bilan ishlash', from: 21, to: 27 },
+      { title: 'V — Ma\'lumot, holat va arxitektura', from: 28, to: 34 },
+      { title: 'VI — Platforma va paketlar', from: 35, to: 38 },
+      { title: 'VII — Sifat', from: 39, to: 43 },
+      { title: 'VIII — Chiqarish', from: 44, to: 47 },
+    ],
+    folders: [],
+  },
+  {
     id: 'xabar-tizimlari',
     title: 'Xabar tizimlari',
     subtitle: 'navbat, kafolat va asbob tanlash',
@@ -609,6 +632,14 @@ export const yonalishlar = [
       { kitob: 'server-xavfsizligi', nega: 'Firewall, SSH’ni mustahkamlash, yangilanishlar, zaxira nusxa' },
       { kitob: 'docker', nega: 'Ilovani muhiti bilan birga konteynerga joylash' },
       { kitob: 'deploy-amaliyoti', nega: 'Hammasini bog‘lash: domen → server → CI/CD → nol to‘xtovli deploy' },
+    ],
+  },
+  {
+    id: 'mobil',
+    title: 'Mobil',
+    izoh: 'Telefon ilovalari: bitta koddan Android va iOS',
+    qadamlar: [
+      { kitob: 'flutter', nega: 'Dart tili, widget’lar, holat, test va do‘konga chiqarish' },
     ],
   },
   {
