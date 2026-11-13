@@ -1,0 +1,392 @@
+#!/usr/bin/python3
+"""Redis trenajori: sahifa <-> haqiqiy Redis kanali (ikkinchi serial port, /dev/ttyS1).
+
+Sahifa har qatorda bitta JSON buyruq yuboradi: {"id": 7, "op": "buyruq", "qator": "LPUSH ishlar a"}.
+Javob: {"t": "javob", "id": 7, "ok": true, "natija": ...} yoki {"ok": false, "xato": "..."} (Redis'ning o'z xabari).
+
+Sahifaga yana:
+- {"t": "holat", ...}   — kalitlar (turi, PTTL, qiymat qisqacha), INFO ko'rsatkichlari, Pub/Sub obunachilari;
+- {"t": "buyruq", ...}  — MONITOR: serverga kelgan har buyruq (terminaldagi redis-cli'dan ham), mijoz nomi bilan;
+- {"t": "hodisa", ...}  — keyspace bildirishnomalari (__keyevent@0__:*): expired, evicted, del, lpush …;
+- {"t": "pubsub", ...}  — sahifadan yaratilgan obunachi PUBLISH qilingan xabarni oldi.
+
+Xizmatning o'z ulanishlari "trenajor-ichki" nomi bilan — ularning buyruqlari MONITOR'da ko'rsatilmaydi.
+"""
+import json
+import os
+import queue
+import re
+import shlex
+import threading
+import time
+
+import redis
+
+TTY = "/dev/ttyS1"
+ICHKI = "trenajor-ichki"
+KALIT_CHEGARA = 60       # sxemada ko'rsatiladigan kalitlar
+QIYMAT_CHEGARA = 24      # har kalitdan nechta element
+
+chiqish = queue.Queue()
+uygot = threading.Event()
+
+
+def yubor(obj):
+    chiqish.put(json.dumps(obj, ensure_ascii=False, separators=(",", ":"), default=str))
+
+
+def ulan(nom=ICHKI):
+    r = redis.Redis(host="127.0.0.1", port=6379, decode_responses=True, client_name=nom)
+    r.ping()
+    return r
+
+
+# ---------------------------------------------------------------- javobni redis-cli ko'rinishiga
+def cli_korinish(v, chuqur=0):
+    """redis-cli'ning odatiy chiqishiga yaqin matn: (integer) 3, "matn", (nil), 1) ..."""
+    ichki = "   " * chuqur
+    if v is None:
+        return "(nil)"
+    if isinstance(v, bool):
+        return "(integer) " + ("1" if v else "0")
+    if isinstance(v, int):
+        return f"(integer) {v}"
+    if isinstance(v, float):
+        return f'"{v:g}"'
+    if isinstance(v, (bytes, bytearray)):
+        v = v.decode("utf-8", "replace")
+    if isinstance(v, str):
+        return v if v in HOLAT_JAVOBLARI and chuqur == 0 else json.dumps(v, ensure_ascii=False)
+    if isinstance(v, dict):
+        v = [x for kv in v.items() for x in kv]
+    if isinstance(v, (list, tuple, set)):
+        v = list(v)
+        if not v:
+            return "(empty array)"
+        en = len(str(len(v)))
+        qatorlar = []
+        for i, x in enumerate(v, 1):
+            ichi = cli_korinish(x, chuqur + 1)
+            qatorlar.append(f"{ichki if i > 1 else ''}{str(i).rjust(en)}) {ichi}")
+        return "\n".join(qatorlar)
+    return str(v)
+
+
+# ---------------------------------------------------------------- Pub/Sub obunachilari (sahifadan)
+class Obunachi(threading.Thread):
+    def __init__(self, nom, kanallar, naqshlar):
+        super().__init__(daemon=True)
+        self.nom, self.kanallar, self.naqshlar = nom, kanallar, naqshlar
+        self.toxta = threading.Event()
+        self.olindi = 0
+
+    def run(self):
+        try:
+            r = redis.Redis(host="127.0.0.1", port=6379, decode_responses=True, client_name=self.nom)
+            ps = r.pubsub()
+            if self.kanallar:
+                ps.subscribe(*self.kanallar)
+            if self.naqshlar:
+                ps.psubscribe(*self.naqshlar)
+            while not self.toxta.is_set():
+                m = ps.get_message(ignore_subscribe_messages=True, timeout=0.3)
+                if m and m["type"] in ("message", "pmessage"):
+                    self.olindi += 1
+                    yubor({"t": "pubsub", "obunachi": self.nom, "kanal": m["channel"], "naqsh": m.get("pattern"),
+                           "xabar": str(m["data"])[:200]})
+            ps.close()
+        except Exception as e:  # noqa: BLE001
+            yubor({"t": "xato", "xato": f"{self.nom}: {e}"})
+        finally:
+            if OBUNACHILAR.get(self.nom) is self:
+                OBUNACHILAR.pop(self.nom, None)
+
+
+OBUNACHILAR = {}
+
+
+# ---------------------------------------------------------------- buyruqlar
+PANEL = None
+HOLAT_JAVOBLARI = {"OK", "QUEUED", "PONG"}   # redis-cli bularni qo'shtirnoqsiz ko'rsatadi (status javoblar)
+
+
+def panel_ulan():
+    """Panel ulanishi: redis-py javoblarni o'zgartirmaydi (response_callbacks bo'sh) — natija redis-cli'dagidek xom.
+    Aks holda, masalan, XPENDING'ning kengaytirilgan shakli qisqa shakl deb o'qilib, xato beradi."""
+    r = redis.Redis(host="127.0.0.1", port=6379, decode_responses=True, client_name="panel")
+    r.response_callbacks.clear()
+    return r
+
+
+def bajar(b, ichki):
+    global PANEL
+    op = b["op"]
+    if op == "buyruq":
+        qism = shlex.split(b["qator"])
+        if not qism:
+            raise RuntimeError("bo'sh buyruq")
+        if qism[0].upper() in ("MONITOR", "SUBSCRIBE", "PSUBSCRIBE", "SSUBSCRIBE"):
+            raise RuntimeError(f"{qism[0].upper()} ulanishni band qiladi — Pub/Sub uchun “Obunachi qo‘shish”dan foydalaning")
+        if PANEL is None:
+            PANEL = panel_ulan()
+        try:
+            natija = PANEL.execute_command(*qism)
+        except redis.exceptions.ConnectionError:
+            PANEL = panel_ulan()
+            natija = PANEL.execute_command(*qism)
+        return {"natija": cli_korinish(natija)}
+    if op == "obuna":
+        nom = (b.get("nom") or "").strip()[:30] or f"obunachi-{len(OBUNACHILAR) + 1}"
+        if nom in OBUNACHILAR:
+            raise RuntimeError(f"“{nom}” allaqachon bor")
+        o = Obunachi(nom, b.get("kanallar") or [], b.get("naqshlar") or [])
+        OBUNACHILAR[nom] = o
+        o.start()
+        time.sleep(0.2)
+        return {"obunachi": nom}
+    if op == "obuna.stop":
+        o = OBUNACHILAR.pop(b["nom"], None)
+        if o:
+            o.toxta.set()
+        return None
+    if op == "tozala":
+        for o in list(OBUNACHILAR.values()):
+            o.toxta.set()
+        OBUNACHILAR.clear()
+        ichki.flushall()
+        ichki.config_set("maxmemory-policy", "noeviction")
+        ichki.config_set("maxmemory", "64mb")
+        ichki.config_resetstat()
+        return None
+    raise RuntimeError(f"noma'lum buyruq: {op}")
+
+
+def kiruvchi():
+    ichki = ulan()
+    with open(TTY, "rb", buffering=0) as f:
+        bufer = b""
+        while True:
+            parcha = f.read(1)
+            if not parcha:
+                time.sleep(0.05)
+                continue
+            if parcha != b"\n":
+                bufer += parcha
+                continue
+            qator, bufer = bufer.decode("utf-8", "replace").strip(), b""
+            if not qator:
+                continue
+            try:
+                b = json.loads(qator)
+            except ValueError:
+                continue
+            try:
+                natija = bajar(b, ichki)
+                yubor({"t": "javob", "id": b.get("id"), "ok": True, **(natija or {})})
+            except redis.exceptions.ResponseError as e:
+                yubor({"t": "javob", "id": b.get("id"), "ok": False, "xato": f"(error) {e}"})
+            except Exception as e:  # noqa: BLE001
+                yubor({"t": "javob", "id": b.get("id"), "ok": False, "xato": str(e)})
+            uygot.set()
+
+
+def chiquvchi():
+    with open(TTY, "w", buffering=1, encoding="utf-8") as f:
+        while True:
+            f.write(chiqish.get() + "\n")
+
+
+# ---------------------------------------------------------------- holat
+def qiymat(r, k, tur):
+    n = QIYMAT_CHEGARA
+    if tur == "string":
+        v = r.getrange(k, 0, 199)
+        return {"qiymat": v, "uzunlik": r.strlen(k)}
+    if tur == "list":
+        return {"qiymat": r.lrange(k, 0, n - 1), "uzunlik": r.llen(k)}
+    if tur == "hash":
+        _, v = r.hscan(k, 0, count=n)
+        return {"qiymat": dict(list(v.items())[:n]), "uzunlik": r.hlen(k)}
+    if tur == "set":
+        _, v = r.sscan(k, 0, count=n)
+        return {"qiymat": sorted(v)[:n], "uzunlik": r.scard(k)}
+    if tur == "zset":
+        return {"qiymat": r.zrange(k, 0, n - 1, withscores=True), "uzunlik": r.zcard(k)}
+    if tur == "stream":
+        yozuvlar = r.xrevrange(k, count=10)[::-1]
+        try:
+            guruhlar = [{"nom": g["name"], "oxirgi": g["last-delivered-id"], "pending": g["pending"],
+                         "consumerlar": g["consumers"], "lag": g.get("lag")} for g in r.xinfo_groups(k)]
+        except redis.exceptions.ResponseError:
+            guruhlar = []
+        return {"qiymat": yozuvlar, "uzunlik": r.xlen(k), "guruhlar": guruhlar}
+    return {"qiymat": None, "uzunlik": None}
+
+
+class Chegara:
+    """Soniyasiga ko'pi bilan N ta xabar: Lua yoki ko'p kalit yozilganda serial kanal tiqilmasin.
+    Ortiqchasi sanaladi va keyingi soniyada bitta "N ta ko'rsatilmadi" xabari bilan aytiladi."""
+
+    def __init__(self, tur, n=40):
+        self.tur, self.n, self.soniya, self.son, self.tashlandi = tur, n, 0, 0, 0
+
+    def mumkin(self):
+        hozir = int(time.time())
+        if hozir != self.soniya:
+            if self.tashlandi:
+                yubor({"t": "tashlandi", "tur": self.tur, "soni": self.tashlandi})
+            self.soniya, self.son, self.tashlandi = hozir, 0, 0
+        self.son += 1
+        if self.son > self.n:
+            self.tashlandi += 1
+            return False
+        return True
+
+
+ICHKI_MANZIL = set()
+MIJOZ_NOMI = {}
+
+
+def holat_tsikli():
+    r = ulan()
+    while True:
+        uygot.clear()
+        try:
+            kalitlar = []
+            for k in r.scan_iter(count=200):
+                kalitlar.append(k)
+                if len(kalitlar) >= KALIT_CHEGARA:
+                    break
+            kalitlar.sort()
+            l = []
+            for k in kalitlar:
+                tur = r.type(k)
+                if tur == "none":
+                    continue
+                l.append({"nom": k, "tur": tur, "pttl": r.pttl(k), **qiymat(r, k, tur)})
+            info = r.info()
+            # MONITOR'dagi manzilni mijoz nomiga bog'lash (terminal, panel, obunachilar)
+            mijozlar = r.client_list()
+            ICHKI_MANZIL.clear()
+            MIJOZ_NOMI.clear()
+            for c in mijozlar:
+                if c.get("name") == ICHKI:
+                    ICHKI_MANZIL.add(c["addr"])
+                MIJOZ_NOMI[c["addr"]] = c.get("name") or ""
+            yubor({"t": "holat", "kalitlar": l, "jami": info.get("db0", {}).get("keys", 0),
+                   "info": {x: info.get(x) for x in ("used_memory", "used_memory_human", "maxmemory", "maxmemory_human",
+                                                    "maxmemory_policy", "keyspace_hits", "keyspace_misses",
+                                                    "expired_keys", "evicted_keys", "total_commands_processed",
+                                                    "connected_clients", "instantaneous_ops_per_sec")},
+                   "obunachilar": [{"nom": o.nom, "kanallar": o.kanallar, "naqshlar": o.naqshlar, "olindi": o.olindi}
+                                   for o in list(OBUNACHILAR.values())],
+                   "kanallar": r.pubsub_numsub(*r.pubsub_channels()) if r.pubsub_channels() else []})
+        except Exception as e:  # noqa: BLE001
+            yubor({"t": "holat-xato", "xato": str(e)})
+            try:
+                r = ulan()
+            except Exception:  # noqa: BLE001
+                time.sleep(1)
+        uygot.wait(0.7)
+
+
+MONITOR_QATOR = re.compile(r'^\S+ \[\d+ ([^\]]+)\] (.*)$')
+ARGUMENT = re.compile(r'"((?:[^"\\]|\\.)*)"')
+QOCHISH = re.compile(r'\\(x[0-9a-fA-F]{2}|.)')
+
+
+def ochish(x):
+    """MONITOR argumentidagi qochirishlar: \\" \\\\ \\n \\xNN (redis sdscatrepr)."""
+    def f(m):
+        c = m.group(1)
+        if c.startswith("x") and len(c) == 3:
+            return chr(int(c[1:], 16))
+        return {"n": "\n", "r": "\r", "t": "\t", "a": "\a", "b": "\b"}.get(c, c)
+    return QOCHISH.sub(f, x)
+
+
+def monitor():
+    """Serverga kelgan har buyruq (redis-cli terminaldan ham). Xom qator o'qiladi: redis-py'ning monitor() i
+    argumentlarni probel bilan qo'shib yuboradi va "ism familiya" bilan ism familiya farqi yo'qoladi.
+    Xizmatning o'z ulanishlari (trenajor-ichki) va ulanish boshidagi CLIENT SETNAME/PING tashlab ketiladi."""
+    chegara = Chegara("buyruq")
+    while True:
+        try:
+            r = ulan()
+            royxat = ulan()
+            ulanish = r.connection_pool.get_connection("MONITOR")
+            ulanish.send_command("MONITOR")
+            ulanish.read_response()
+            while True:
+                xom = ulanish.read_response()
+                if isinstance(xom, bytes):
+                    xom = xom.decode("utf-8", "replace")
+                m = MONITOR_QATOR.match(xom or "")
+                if not m:
+                    continue
+                manzil, qolgan = m.group(1), m.group(2)
+                lua = manzil == "lua"
+                if manzil in ICHKI_MANZIL:
+                    continue
+                if not lua and manzil not in MIJOZ_NOMI:
+                    for c in royxat.client_list():
+                        MIJOZ_NOMI[c["addr"]] = c.get("name") or ""
+                        if c.get("name") == ICHKI:
+                            ICHKI_MANZIL.add(c["addr"])
+                nom = MIJOZ_NOMI.get(manzil, "")
+                if nom == ICHKI or manzil in ICHKI_MANZIL:
+                    continue
+                args = [ochish(x) for x in ARGUMENT.findall(qolgan)]
+                if not args:
+                    continue
+                if nom and nom != "redis-cli" and (args[:2] == ["CLIENT", "SETNAME"] or args == ["PING"]):
+                    continue
+                if not chegara.mumkin():
+                    continue
+                yubor({"t": "buyruq", "args": args[:40], "qator": " ".join(korinadigan(a) for a in args)[:300],
+                       "mijoz": "lua" if lua else (nom or "redis-cli"), "lua": lua})
+                uygot.set()
+        except Exception:  # noqa: BLE001
+            time.sleep(1)
+
+
+def korinadigan(a):
+    return json.dumps(a, ensure_ascii=False) if (not a or any(c.isspace() or c == '"' for c in a)) else a
+
+
+def hodisalar():
+    """Keyspace bildirishnomalari: __keyevent@0__:<hodisa> kanalida kalit nomi keladi."""
+    chegara = Chegara("hodisa")
+    while True:
+        try:
+            r = ulan()
+            ps = r.pubsub()
+            ps.psubscribe("__keyevent@0__:*")
+            for m in ps.listen():
+                if m["type"] != "pmessage" or not chegara.mumkin():
+                    continue
+                yubor({"t": "hodisa", "tur": m["channel"].split(":", 1)[1], "kalit": m["data"]})
+                uygot.set()
+        except Exception:  # noqa: BLE001
+            time.sleep(1)
+
+
+def main():
+    os.system(f"stty -F {TTY} raw -echo 115200 2>/dev/null")
+    threading.Thread(target=chiquvchi, daemon=True).start()
+    while True:
+        try:
+            ulan()
+            break
+        except Exception:  # noqa: BLE001
+            time.sleep(1)
+    threading.Thread(target=holat_tsikli, daemon=True).start()
+    threading.Thread(target=monitor, daemon=True).start()
+    threading.Thread(target=hodisalar, daemon=True).start()
+    time.sleep(0.5)
+    yubor({"t": "tayyor"})
+    kiruvchi()
+
+
+if __name__ == "__main__":
+    main()

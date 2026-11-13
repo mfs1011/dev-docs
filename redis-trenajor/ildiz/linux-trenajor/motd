@@ -1,0 +1,18 @@
+[1;31mRedis trenajori · Redis 8.10.3[0m
+──────────────────────────────────
+Brauzeringiz ichida haqiqiy Redis
+ishlayapti (Debian 12). Hech narsa
+kompyuteringizga yoki serverga
+ta'sir qilmaydi.
+
+Panel va bu terminal — bitta server:
+o'zgarishlar ikkalasida ko'rinadi.
+
+Buyruqlar
+  redis-cli
+  redis-cli SET salom dunyo
+  redis-cli --scan
+  redis-cli INFO keyspace
+
+Cheklangan: internet yo'q, saqlanmaydi
+(Qayta boshlash — hammasi boshidan).

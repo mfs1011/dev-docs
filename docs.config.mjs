@@ -402,6 +402,7 @@ export const books = [
     // Redis kubi (redis/docs → assets/icons/redis-cube.svg) asosiy rangi #DC382C; qorong'i fonda — ochroq variant
     accent: '#dc382c',
     accentDark: '#ff7a6e',
+    tools: [{ label: 'Redis trenajori', route: '/redis/trenajor', note: 'Haqiqiy Redis 8.10: kalitlar jonli' }],
     versionLabel: 'Redis',
     versionRow: /^\|\s*Redis Open Source\s*\|\s*([^|(]+)/m,
     groups: [

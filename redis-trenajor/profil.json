@@ -1,0 +1,15 @@
+{
+  "paketlar": [
+    "python3",
+    "python3-redis",
+    "ca-certificates"
+  ],
+  "arxivlar": [
+    "build/redis-8.10.3-i386.tar.gz"
+  ],
+  "vm": {
+    "uart1": true,
+    "memory_size": 268435456
+  },
+  "holatKutish": "{\"t\":\"tayyor\"}"
+}

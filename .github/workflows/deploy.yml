@@ -85,6 +85,25 @@ jobs:
       - name: RabbitMQ trenajorini saytga qo'shish
         run: rm -rf public/rabbitmq-trenajor && cp -r rabbitmq-trenajor/build/web public/rabbitmq-trenajor
 
+      # Redis trenajori: Linux trenajori quvurining "redis" profili. Redis 8.10.3 i386 uchun Docker'da (debian:bookworm,
+      # linux/386) rasmiy manba arxividan yig'iladi (SHA256 — redis-hashes). Holat surati Redis va boshqaruv xizmati
+      # ishlab turgan paytda olinadi (profil.json: holatKutish).
+      - name: Redis trenajori keshi
+        id: redis-trenajor
+        uses: actions/cache@v4
+        with:
+          path: redis-trenajor/build/web
+          key: redis-trenajor-${{ hashFiles('redis-trenajor/**', 'linux-trenajor/scripts/**', 'public/trenajor/v86.wasm', 'package-lock.json') }}
+
+      - name: Redis trenajorini yig'ish
+        if: steps.redis-trenajor.outputs.cache-hit != 'true'
+        run: |
+          sh redis-trenajor/scripts/redis-yigish.sh
+          TRENAJOR_PROFIL=redis sh linux-trenajor/scripts/yigish.sh
+
+      - name: Redis trenajorini saytga qo'shish
+        run: rm -rf public/redis-trenajor && cp -r redis-trenajor/build/web public/redis-trenajor
+
       # Video darslar (~1.4 GB) saytga qo'shilmaydi: ular VPS'dan beriladi (https://kamgapir.uz/video/,
       # VPS repodan faqat public/video ni sparse checkout qilib, har 15 daqiqada yangilaydi — docs/ish-holati.md).
       - name: Videolarni artifact'dan chiqarish
