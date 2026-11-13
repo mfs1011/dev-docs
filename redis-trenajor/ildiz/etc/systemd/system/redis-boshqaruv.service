@@ -1,0 +1,12 @@
+[Unit]
+Description=Redis trenajori: sahifa bilan kanal (ttyS1)
+After=redis-server.service
+Requires=redis-server.service
+
+[Service]
+ExecStart=/usr/bin/python3 -u /usr/local/sbin/redis-boshqaruv
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target
