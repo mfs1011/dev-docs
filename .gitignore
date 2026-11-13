@@ -66,6 +66,7 @@ nginx-trenajor/test/shots/
 rabbitmq-trenajor/build/
 public/rabbitmq-trenajor
 rabbitmq-trenajor/test/shots/
+web-trenajor/test/shots/
 
 # Redis trenajori: yig'ilgan tizim va i386 Redis arxivi (qayta yasaladi)
 redis-trenajor/build/

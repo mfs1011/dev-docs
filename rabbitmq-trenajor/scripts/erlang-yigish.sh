@@ -25,6 +25,9 @@ docker run --rm --security-opt seccomp=unconfined --platform linux/386 -v "$PWD:
   find /tmp/out -name '*.so' -exec strip --strip-unneeded {} + 2>/dev/null || true
   find /tmp/out/usr/local/lib/erlang/erts-*/bin -type f -exec strip {} + 2>/dev/null || true
   tar -czf /w/otp-$V-i386.tar.gz -C /tmp/out usr
-  /tmp/out/usr/local/bin/erl -noshell -eval 'io:format(\"OTP ~s, so'\''z hajmi ~p bit~n\", [erlang:system_info(otp_release), erlang:system_info(wordsize)*8]), halt().'
+  # tekshiruv: erl o'zini --prefix (/usr/local) dan qidiradi — DESTDIR ichidan ishlamaydi, shuning uchun konteynerning
+  # o'ziga ko'chirib ishga tushiriladi (konteyner --rm, arxivga ta'sir qilmaydi)
+  cp -a /tmp/out/usr/local/. /usr/local/
+  /usr/local/bin/erl -noshell -eval 'io:format(\"OTP ~s, so'\''z hajmi ~p bit~n\", [erlang:system_info(otp_release), erlang:system_info(wordsize)*8]), halt().'
 "
 ls -l otp-$V-i386.tar.gz
