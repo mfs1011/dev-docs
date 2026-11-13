@@ -46,9 +46,23 @@ fi
 cd /
 # katta faylni emulyatordan bir urinishda o'qib bo'lmaydi — 48 MB'lik bo'laklar
 mkdir -p /natija
-tar --numeric-owner -cf - --exclude=./proc --exclude=./sys --exclude=./dev --exclude=./run \
-  --exclude=./natija --exclude=./linux-trenajor --exclude=./tmp/xato.txt . | split -b 48M - /natija/qism.
-# 9p cache=loose: yozilgan ma'lumot avval VM keshida turadi — host o'qishidan oldin sync shart
-sync
+# tar xatosi tekshiriladi: CI'da (sekin protsessor, 512 MB) yadro xotira bosimida xato berib, tar ba'zi fayllarni
+# o'tkazib yuborgan ("Exiting with failure status due to previous errors") — chala tasvirda servis ishga tushmay,
+# holat.mjs soatlab kutib qolgan. Endi: kesh tozalanib qayta urinish, uch marta ham bo'lmasa — TAR_XATO.
+urinish=1
+while :; do
+  rm -f /natija/qism.*
+  sync; echo 3 > /proc/sys/vm/drop_caches
+  { tar --numeric-owner -cf - --exclude=./proc --exclude=./sys --exclude=./dev --exclude=./run \
+      --exclude=./natija --exclude=./linux-trenajor --exclude=./tmp/xato.txt --exclude=./tmp/tar-xato.txt . \
+      2> /tmp/tar-xato.txt; echo $? > /tmp/tar-kod; } | split -b 48M - /natija/qism.
+  # 9p cache=loose: yozilgan ma'lumot avval VM keshida turadi — host o'qishidan oldin sync shart
+  sync
+  [ "$(cat /tmp/tar-kod)" = 0 ] && break
+  echo "[stage2] tar xatosi (urinish $urinish, kod $(cat /tmp/tar-kod)):"
+  head -15 /tmp/tar-xato.txt | sed 's/^/[stage2]   /'
+  urinish=$((urinish + 1))
+  if [ $urinish -gt 3 ]; then echo "[stage2] TAR_XATO"; while true; do sleep 3600; done; fi
+done
 echo "[stage2] TAR_TAYYOR $(cat /natija/qism.* | wc -c) $(cd /natija && echo qism.*)"
 while true; do sleep 3600; done

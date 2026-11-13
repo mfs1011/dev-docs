@@ -32,6 +32,7 @@ vm.add_listener('serial0-output-byte', async (b) => {
   const c = String.fromCharCode(b)
   if (c !== '\n') return void (qator += c)
   if (process.env.HAMMASI || qator.includes('[stage2]') || /error|xato|panic/i.test(qator)) console.log(vaqt(), qator.trim())
+  if (qator.includes('TAR_XATO')) { console.log(vaqt(), 'XATO: tizimni arxivlab bo\'lmadi (tar), tasvir chala bo\'ladi'); process.exit(1) }
   if (qator.includes('TAR_TAYYOR')) {
     // «TAR_TAYYOR <jami bayt> qism.aa qism.ab …» — bo'laklar birma-bir o'qiladi va hajmi tekshiriladi
     const [, jami, ...qismlar] = qator.trim().split(/\s+/).slice(qator.trim().split(/\s+/).indexOf('TAR_TAYYOR'))
