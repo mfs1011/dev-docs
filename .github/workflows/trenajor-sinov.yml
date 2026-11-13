@@ -1,0 +1,29 @@
+name: Trenajor sinovi (deploy'siz)
+
+# Og'ir trenajor tasvirlarini CI muhitida sinash uchun: faqat sinov/** branch'lariga push qilinganda ishlaydi,
+# saytga hech narsa chiqarmaydi. Snapshot "tayyor" signalini olmasa, holat.mjs VM ichidagi holatni log'ga chiqaradi.
+on:
+  push:
+    branches: ['sinov/**']
+
+jobs:
+  rabbitmq:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Protsessor
+        run: nproc; grep -m1 'model name' /proc/cpuinfo; free -m
+      - name: RabbitMQ trenajorini yig'ish
+        run: |
+          sh rabbitmq-trenajor/scripts/erlang-yigish.sh
+          sh rabbitmq-trenajor/scripts/rabbitmq-arxiv.sh
+          TRENAJOR_PROFIL=rabbitmq sh linux-trenajor/scripts/yigish.sh
+      - name: Yig'ish jurnallari
+        if: always()
+        run: tail -40 rabbitmq-trenajor/build/stage2.log 2>/dev/null || true
