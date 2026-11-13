@@ -66,6 +66,31 @@ const SOZLASH = [
   ' stty -echo; read -r t c r; date -s @$t > /dev/null; stty cols $c rows $r echo; clear; cat /etc/motd; history -c',
 ].join('; ')
 
+// Kutish chegaralari: CI soatlab osilib qolmasin (bir marta 6 soatlik limitgacha qotgan). Yuklanish yoki "tayyor"
+// signali chegaradan oshsa — VM ichidagi xizmatlar holati va jurnali chiqariladi, jarayon xato bilan tugaydi.
+const YUKLASH_MS = Number(process.env.HOLAT_YUKLASH_MS ?? 15 * 60000)
+const KANAL_MS = Number(process.env.HOLAT_KANAL_MS ?? 20 * 60000)
+let konsol = ''   // oxirgi konsol chiqishi (diagnostika uchun)
+vm.add_listener('serial0-output-byte', (b) => { konsol = (konsol + String.fromCharCode(b)).slice(-20000) })
+const yuklashTaymer = setTimeout(() => {
+  console.error(`XATO: ${YUKLASH_MS / 60000} daqiqada login so'rovi chiqmadi. Konsol oxiri:\n${konsol.slice(-4000)}`)
+  process.exit(1)
+}, YUKLASH_MS)
+async function kanalniKut() {
+  const ok = await Promise.race([
+    new Promise((r) => kanalKutuvchilar.push(() => r(true))),
+    new Promise((r) => setTimeout(() => r(false), KANAL_MS)),
+  ])
+  if (ok) return true
+  console.error(`XATO: ${KANAL_MS / 60000} daqiqada ikkinchi serial portdan ${JSON.stringify(holatKutish)} kelmadi. VM ichidagi holat:`)
+  konsol = ''
+  vm.serial0_send(' systemctl --no-pager --failed; systemctl --no-pager list-units --type=service --state=activating,running | tail -25;'
+    + ' journalctl --no-pager -b -p warning -o short-monotonic | tail -40; free -m; uptime\n')
+  await new Promise((r) => setTimeout(r, 90000))
+  console.error(konsol.replace(/\x1b\[[0-9;?]*[a-zA-Z]/g, '').slice(-12000))
+  process.exit(1)
+}
+
 let buf = ''
 vm.add_listener('serial0-output-byte', async (b) => {
   if (process.env.HOLAT_DEBUG) process.stderr.write(String.fromCharCode(b))
@@ -73,7 +98,8 @@ vm.add_listener('serial0-output-byte', async (b) => {
   if (!/root@trenajor:[^#]*# $/.test(buf)) return
   buf = ''
   console.log(`yuklandi: ${((Date.now() - t0) / 1000).toFixed(1)}s`)
-  if (!kanalTayyor) await new Promise((r) => kanalKutuvchilar.push(r))
+  clearTimeout(yuklashTaymer)
+  if (!kanalTayyor && !(await kanalniKut())) return
   vm.serial0_send(SOZLASH + '\n')
   await new Promise((r) => setTimeout(r, 3000)) // read kutib qolguncha
   const state = Buffer.from(await vm.save_state())
