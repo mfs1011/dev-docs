@@ -85,8 +85,10 @@ async function kanalniKut() {
   console.error(`XATO: ${KANAL_MS / 60000} daqiqada ikkinchi serial portdan ${JSON.stringify(holatKutish)} kelmadi. VM ichidagi holat:`)
   konsol = ''
   vm.serial0_send(' systemctl --no-pager --failed; systemctl --no-pager list-units --type=service --state=activating,running | tail -25;'
-    + ' journalctl --no-pager -b -p warning -o short-monotonic | tail -40; free -m; uptime\n')
-  await new Promise((r) => setTimeout(r, 90000))
+    + ' for u in $(systemctl list-units --type=service --state=failed,activating --no-legend --plain | cut -d" " -f1);'
+    + ' do echo "== $u"; journalctl --no-pager -u $u -n 30 -o cat | grep -v "^Started\\|^Stopp\\|Scheduled restart"; done;'
+    + ' free -m; uptime\n')
+  await new Promise((r) => setTimeout(r, 120000))
   console.error(konsol.replace(/\x1b\[[0-9;?]*[a-zA-Z]/g, '').slice(-12000))
   process.exit(1)
 }
