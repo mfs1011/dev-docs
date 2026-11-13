@@ -53,7 +53,7 @@ Bu qo'llanmaga kirmaydigan mavzular (rasmiy hujjatda bor, lekin mobil ilova asos
 - Desktop ilovalar (Windows, Linux, macOS) va mavjud native ilovaga Flutter qo'shish ("Add to an existing app").
 - Boshqa platformadan o'tuvchilar uchun sahifalar ("Flutter for Android/SwiftUI/React Native devs") — tegishli boblarda faqat havola.
 
-> **Holat.** Tayyor: 1, 5–10-boblar (2026-11-13). Dart qismi (5–12) VPS'da `dart` bilan sinaladi. Emulyator talab qiladigan
+> **Holat.** Tayyor: 1, 5–11-boblar (2026-11-13). Dart qismi (5–12) VPS'da `dart` bilan sinaladi. Emulyator talab qiladigan
 > boblar (E) uchun sinov kompyuteriga Flutter SDK, Android Studio va Xcode o'rnatish — egasining ruxsati kerak.
 
 ---
@@ -88,7 +88,7 @@ Bu qo'llanmaga kirmaydigan mavzular (rasmiy hujjatda bor, lekin mobil ilova asos
 | 08 | [Kolleksiyalar, record va pattern](08-kolleksiyalar.md) | `List`, `Set`, `Map`, collection `if`/`for`. Record (bir nechta qiymat qaytarish). Pattern matching va destructuring | D | [DD Collections](https://dart.dev/language/collections) · [DD Records](https://dart.dev/language/records) · [DD Patterns](https://dart.dev/language/patterns) · [DD Iterable collections](https://dart.dev/libraries/collections/iterables) |
 | 09 | [Klass va konstruktor](09-klass-konstruktor.md) | Klass, maydon, metod. Konstruktor turlari: oddiy, nomli, `const`, factory. Getter/setter | D | [DD Classes](https://dart.dev/language/classes) · [DD Constructors](https://dart.dev/language/constructors) · [DD Methods](https://dart.dev/language/methods) |
 | 10 | [Meros, mixin, enum va extension](10-meros-mixin-enum.md) | `extends`, `abstract`, `implements`, `mixin`. Kengaytirilgan `enum`. Extension metodlar. Klass modifikatorlari (`sealed`, `final`) | D | [DD Extend a class](https://dart.dev/language/extend) · [DD Mixins](https://dart.dev/language/mixins) · [DD Enums](https://dart.dev/language/enums) · [DD Extension methods](https://dart.dev/language/extension-methods) · [DD Class modifiers](https://dart.dev/language/class-modifiers) |
-| 11 | Asinxronlik | `Future`, `async`/`await`, `Stream`. Event loop. Isolate — og'ir ishni alohida bajarish | D | [DD Concurrency](https://dart.dev/language/concurrency) · [DD Asynchronous programming](https://dart.dev/language/async) · [DD Async/await tutorial](https://dart.dev/libraries/async/async-await) · [DD Using streams](https://dart.dev/libraries/async/using-streams) · [DD Isolates](https://dart.dev/language/isolates) |
+| 11 | [Asinxronlik](11-asinxronlik.md) | `Future`, `async`/`await`, `Stream`. Event loop. Isolate — og'ir ishni alohida bajarish | D | [DD Concurrency](https://dart.dev/language/concurrency) · [DD Asynchronous programming](https://dart.dev/language/async) · [DD Async/await tutorial](https://dart.dev/libraries/async/async-await) · [DD Using streams](https://dart.dev/libraries/async/using-streams) · [DD Isolates](https://dart.dev/language/isolates) |
 | 12 | Xatolar, kutubxonalar va paketlar | `try`/`catch`, istisnolar. `import`, kutubxonalar. `pub` va `pubspec.yaml`. Effective Dart'dan asosiy qoidalar | D | [DD Error handling](https://dart.dev/language/error-handling) · [DD Libraries & imports](https://dart.dev/language/libraries) · [DD How to use packages](https://dart.dev/tools/pub/packages) · [DD Effective Dart](https://dart.dev/effective-dart) |
 
 ## III qism — Widget'lar va ekran tuzish (13–20)
