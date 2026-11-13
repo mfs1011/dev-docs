@@ -53,8 +53,8 @@ Bu qo'llanmaga kirmaydigan mavzular (rasmiy hujjatda bor, lekin mobil ilova asos
 - Desktop ilovalar (Windows, Linux, macOS) va mavjud native ilovaga Flutter qo'shish ("Add to an existing app").
 - Boshqa platformadan o'tuvchilar uchun sahifalar ("Flutter for Android/SwiftUI/React Native devs") — tegishli boblarda faqat havola.
 
-> **Holat.** Mundarija — egasining ko'rib chiqishi uchun (2026-11-13). Boblar hali yozilmagan. Yozishdan oldin sinov
-> kompyuteriga Flutter SDK, Android Studio (emulyator bilan) va Xcode o'rnatish uchun egasining ruxsati kerak.
+> **Holat.** Tayyor: 1-bob (2026-11-13). Dart qismi (5–12) VPS'da `dart` bilan sinaladi. Emulyator talab qiladigan
+> boblar (E) uchun sinov kompyuteriga Flutter SDK, Android Studio va Xcode o'rnatish — egasining ruxsati kerak.
 
 ---
 
@@ -73,7 +73,7 @@ Bu qo'llanmaga kirmaydigan mavzular (rasmiy hujjatda bor, lekin mobil ilova asos
 
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
-| 01 | Flutter nima | Bitta koddan bir nechta platforma. Deklarativ UI: ekran — holatning funksiyasi. Flutter qatlamlari: framework (Dart), engine, embedder. Flutter nima emas | — | [FD Architectural overview](https://docs.flutter.dev/resources/architectural-overview) · [FD Introduction to declarative UI](https://docs.flutter.dev/flutter-for/declarative) · [FD Supported platforms](https://docs.flutter.dev/reference/supported-platforms) |
+| 01 | [Flutter nima](01-flutter-nima.md) | Bitta koddan bir nechta platforma. Deklarativ UI: ekran — holatning funksiyasi. Flutter qatlamlari: framework (Dart), engine, embedder. Flutter nima emas | — | [FD Architectural overview](https://docs.flutter.dev/resources/architectural-overview) · [FD Introduction to declarative UI](https://docs.flutter.dev/flutter-for/declarative) · [FD Supported platforms](https://docs.flutter.dev/reference/supported-platforms) |
 | 02 | O'rnatish | Flutter SDK (stable), `PATH`, `flutter doctor`. Android Studio va emulyator, Xcode va simulyator. Kanallar va yangilash | E | [FD Install](https://docs.flutter.dev/install) · [FD Quick install](https://docs.flutter.dev/learn/pathway/quick-install) · [FD SDK archive (kanallar)](https://docs.flutter.dev/install/archive) · [FD Upgrade](https://docs.flutter.dev/install/upgrade) · [FD Android setup](https://docs.flutter.dev/platform-integration/android/setup) · [FD iOS setup](https://docs.flutter.dev/platform-integration/ios/setup) |
 | 03 | Birinchi ilova | `flutter create`, loyiha tuzilishi (`lib/`, `pubspec.yaml`, `android/`, `ios/`), emulyatorda ishga tushirish. Hot reload va hot restart | E | [FD Create an app](https://docs.flutter.dev/learn/pathway/tutorial/create-an-app) · [FD Hot reload](https://docs.flutter.dev/tools/hot-reload) · [FD SDK overview](https://docs.flutter.dev/tools/sdk) |
 | 04 | Muharrir va DevTools | VS Code va Android Studio'dagi Flutter vositalari. DevTools: widget daraxti (Inspector), log'lar. Kodni formatlash va avtomatik tuzatish | E | [FD VS Code](https://docs.flutter.dev/tools/vs-code) · [FD Android Studio & IntelliJ](https://docs.flutter.dev/tools/android-studio) · [FD DevTools](https://docs.flutter.dev/tools/devtools) · [FD Code formatting](https://docs.flutter.dev/tools/formatting) · [FD Automated fixes](https://docs.flutter.dev/tools/flutter-fix) |
