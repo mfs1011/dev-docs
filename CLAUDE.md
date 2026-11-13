@@ -46,6 +46,7 @@ Har bir video generatsiyasida quyidagi xatoliklarga yo'l qo'yish qat'iyan taqiql
 
 ## Ish tartibi
 
+- **Hozirgi holat, ochiq ishlar, kutilayotgan qarorlar va keyingi rejalar:** [docs/keyingi-ishlar.md](docs/keyingi-ishlar.md) — ishni boshlashdan oldin birinchi shuni o'qing.
 - **Joriy holat va qaysi ish qaysi kompyuterda** (Kafka va Docker — ikkinchi noutbukda): [docs/ish-holati.md](docs/ish-holati.md) — ishni boshlashdan oldin o'qing.
 - Har vazifa — `main` dan alohida branch; PR `main` ga (repo'da `dev` yo'q). Merge'ni egasi qiladi.
 - Commit/PR matnida AI atributsiyasi yo'q.

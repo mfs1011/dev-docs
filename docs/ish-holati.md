@@ -2,6 +2,8 @@
 
 Oxirgi yangilanish: 2026-11-07 (tun, ikkinchi noutbuk). Yangi kompyuterda ishni boshlashdan oldin shu faylni, `CLAUDE.md` ni va `docs/tts.md` ni o'qing.
 
+> **Eng so'nggi holat, ochiq ishlar va qaror kutayotganlar — [docs/keyingi-ishlar.md](keyingi-ishlar.md)** (2026-11-13). Avval shuni o'qing.
+
 ## Linux kitobi (`content/linux/`)
 
 - Mundarija: `content/linux/README.md` — 12 qism, 54 bob, har bob yonida rasmiy manba.
