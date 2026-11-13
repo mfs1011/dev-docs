@@ -2,11 +2,20 @@
 # 2-bosqich (emulyator ichida, PID 1 sifatida): debootstrap --second-stage kabi — haqiqiy dpkg paketlarni
 # o'rnatadi va maintainer skriptlarini bajaradi. Oxirida tayyor tizim /natija.tar ga yoziladi.
 export PATH=/usr/sbin:/usr/bin:/sbin:/bin DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true LC_ALL=C
-mount -t proc proc /proc
-mount -t sysfs sys /sys
-mountpoint -q /dev || mount -t devtmpfs dev /dev
-mount -t tmpfs tmpfs /run
-echo "[stage2] boshlandi"
+# Bu skript PID 1. dpkg ish davomida libc6'ni (bir necha marta) almashtiradi; eski libc.so.6 o'chiriladi, 9p esa
+# o'chirilgan faylning hali yuklanmagan sahifalarini bera olmaydi — init SIGBUS bilan o'ladi ("Kernel panic -
+# Attempted to kill init! exitcode=0x00000007", CI'da tasodifan). Shuning uchun init o'zini tmpfs'dagi (/run) sh, ld.so
+# va libc nusxalari bilan qayta ishga tushiradi: dpkg ularga tegmaydi. Bolalar (dpkg va boshqalar) tizimnikini ishlatadi.
+if [ "${1:-}" != sabit ]; then
+  mount -t proc proc /proc
+  mount -t sysfs sys /sys
+  mountpoint -q /dev || mount -t devtmpfs dev /dev
+  mount -t tmpfs tmpfs /run
+  mkdir -p /run/sabit
+  cp -L /bin/sh /lib/ld-linux.so.2 /lib/i386-linux-gnu/libc.so.6 /run/sabit/
+  exec /run/sabit/ld-linux.so.2 --library-path /run/sabit /run/sabit/sh "$0" sabit
+fi
+echo "[stage2] boshlandi (init: $(readlink /proc/self/exe 2>/dev/null; readlink /proc/1/exe))"
 
 # o'rnatish paytida servislar ishga tushmasin (debootstrap ham shunday qiladi)
 printf '#!/bin/sh\nexit 101\n' > /usr/sbin/policy-rc.d && chmod +x /usr/sbin/policy-rc.d
