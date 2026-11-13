@@ -28,6 +28,8 @@ const FILE_MARKS = {
   rabbitmq: { file: 'rabbitmq.svg', alt: 'RabbitMQ' },
   // nginx logosining olti burchakli belgisi — github.com/nginx/nginx.org → img/nginx_logo.svg
   nginx: { file: 'nginx.svg', alt: 'nginx' },
+  // Flutter logosi — github.com/flutter/website → sites/docs/web/assets/images/branding/flutter/logo/default.svg
+  flutter: { file: 'flutter.svg', alt: 'Flutter' },
   // Brendi yo'q kitoblar — sayt uchun chizilgan oddiy belgilar
   'web-asoslari': { file: 'web-asoslari.svg', alt: 'Web asoslari' },
   'xabar-tizimlari': { file: 'xabar-tizimlari.svg', alt: 'Xabar tizimlari' },
