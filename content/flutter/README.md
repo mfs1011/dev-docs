@@ -53,7 +53,7 @@ Bu qo'llanmaga kirmaydigan mavzular (rasmiy hujjatda bor, lekin mobil ilova asos
 - Desktop ilovalar (Windows, Linux, macOS) va mavjud native ilovaga Flutter qo'shish ("Add to an existing app").
 - Boshqa platformadan o'tuvchilar uchun sahifalar ("Flutter for Android/SwiftUI/React Native devs") — tegishli boblarda faqat havola.
 
-> **Holat.** Tayyor: 1-bob (2026-11-13). Dart qismi (5–12) VPS'da `dart` bilan sinaladi. Emulyator talab qiladigan
+> **Holat.** Tayyor: 1, 5-boblar (2026-11-13). Dart qismi (5–12) VPS'da `dart` bilan sinaladi. Emulyator talab qiladigan
 > boblar (E) uchun sinov kompyuteriga Flutter SDK, Android Studio va Xcode o'rnatish — egasining ruxsati kerak.
 
 ---
@@ -82,7 +82,7 @@ Bu qo'llanmaga kirmaydigan mavzular (rasmiy hujjatda bor, lekin mobil ilova asos
 
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
-| 05 | O'zgaruvchilar va turlar | `var`, `final`, `const`, tur xulosasi (type inference). Sonlar, satrlar, bool. Operatorlar | D | [DD Variables](https://dart.dev/language/variables) · [DD Built-in types](https://dart.dev/language/built-in-types) · [DD Operators](https://dart.dev/language/operators) |
+| 05 | [O'zgaruvchilar va turlar](05-ozgaruvchilar-turlar.md) | `var`, `final`, `const`, tur xulosasi (type inference). Sonlar, satrlar, bool. Operatorlar | D | [DD Variables](https://dart.dev/language/variables) · [DD Built-in types](https://dart.dev/language/built-in-types) · [DD Operators](https://dart.dev/language/operators) |
 | 06 | Null safety | Nullable va non-nullable turlar, `?`, `!`, `??`, `late`. Nega bu xatolarning katta qismini kompilyatsiyada ushlaydi | D | [DD Sound null safety](https://dart.dev/null-safety) · [DD Understanding null safety](https://dart.dev/null-safety/understanding-null-safety) |
 | 07 | Funksiyalar va boshqaruv oqimi | Nomli va ixtiyoriy parametrlar, anonim funksiya, `=>`. `if`, `switch`, sikllar | D | [DD Functions](https://dart.dev/language/functions) · [DD Branches](https://dart.dev/language/branches) · [DD Loops](https://dart.dev/language/loops) |
 | 08 | Kolleksiyalar, record va pattern | `List`, `Set`, `Map`, collection `if`/`for`. Record (bir nechta qiymat qaytarish). Pattern matching va destructuring | D | [DD Collections](https://dart.dev/language/collections) · [DD Records](https://dart.dev/language/records) · [DD Patterns](https://dart.dev/language/patterns) · [DD Iterable collections](https://dart.dev/libraries/collections/iterables) |
