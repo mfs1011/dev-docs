@@ -56,10 +56,13 @@ cd /
 urinish=1
 while :; do
   rm -f /natija/qism.*
+  # endi yangi jarayondamiz — keshni tozalash xavfsiz (CI'da 512 MB'da "Cannot savedir: Cannot allocate memory" bo'lgan)
+  sync; echo 3 > /proc/sys/vm/drop_caches
   { tar --numeric-owner -cf - --exclude=./proc --exclude=./sys --exclude=./dev --exclude=./run \
       --exclude=./natija --exclude=./linux-trenajor --exclude=./tmp/xato.txt . \
-      2> /run/tar-xato.txt; echo $? > /run/tar-kod; } | split -b 48M - /natija/qism.
-  # 9p cache=loose: yozilgan ma'lumot avval VM keshida turadi — host o'qishidan oldin sync shart
+      2> /run/tar-xato.txt; echo $? > /run/tar-kod; } | split -b 48M --filter='cat > $FILE && sync' - /natija/qism.
+  # 9p cache=loose: yozilgan ma'lumot avval VM keshida (xotirada) turadi — har bo'lakdan keyin va oxirida sync:
+  # xotira to'lmaydi va host o'qishidan oldin hammasi diskda bo'ladi
   sync
   [ "$(cat /run/tar-kod)" = 0 ] && break
   echo "[stage2] tar xatosi (urinish $urinish, kod $(cat /run/tar-kod)):"

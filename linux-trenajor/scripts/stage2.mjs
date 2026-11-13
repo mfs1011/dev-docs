@@ -20,7 +20,8 @@ const vm = new V86({
   initrd: { url: path.join(build, 'initrd.img') },
   filesystem: { basefs: path.join(build, 'fs-stage1/fs.json'), baseurl: path.join(build, 'fs-stage1/base/') },
   cmdline: 'console=ttyS0 rw init=/linux-trenajor/stage2.sh tsc=reliable mitigations=off',
-  memory_size: 512 * 1024 * 1024,
+  // 1 GB: arxivlash (tar, 330 MB gacha) 9p keshida xotira talab qiladi — 512 MB'da CI'da "Cannot allocate memory"
+  memory_size: 1024 * 1024 * 1024,
   autostart: true,
   disable_keyboard: true,
   disable_mouse: true,
