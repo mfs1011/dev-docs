@@ -53,7 +53,7 @@ Bu qo'llanmaga kirmaydigan mavzular (rasmiy hujjatda bor, lekin mobil ilova asos
 - Desktop ilovalar (Windows, Linux, macOS) va mavjud native ilovaga Flutter qo'shish ("Add to an existing app").
 - Boshqa platformadan o'tuvchilar uchun sahifalar ("Flutter for Android/SwiftUI/React Native devs") — tegishli boblarda faqat havola.
 
-> **Holat.** Tayyor: 1, 5–14-boblar (2026-11-13). Dart qismi VPS'da Dart 3.14.0 bilan; Flutter boblari VPS'da Flutter 3.50.0 bilan (`flutter test`, `flutter build web` va brauzerda skrinshot). Emulyator talab qiladigan
+> **Holat.** Tayyor: 1, 5–15-boblar (2026-11-13). Dart qismi VPS'da Dart 3.14.0 bilan; Flutter boblari VPS'da Flutter 3.50.0 bilan (`flutter test`, `flutter build web` va brauzerda skrinshot). Emulyator talab qiladigan
 > boblar (E) uchun sinov kompyuteriga Flutter SDK, Android Studio va Xcode o'rnatish — egasining ruxsati kerak.
 
 ---
@@ -97,7 +97,7 @@ Bu qo'llanmaga kirmaydigan mavzular (rasmiy hujjatda bor, lekin mobil ilova asos
 | --- | --- | --- | --- | --- |
 | 13 | [Hamma narsa — widget](13-hamma-narsa-widget.md) | Widget daraxti, `build()`, `MaterialApp`, `Scaffold`. Widget, element va render obyekti farqi (qisqacha) | E | [FD User interface](https://docs.flutter.dev/ui) · [FD Widget fundamentals](https://docs.flutter.dev/learn/pathway/tutorial/widget-fundamentals) · [FD Widget catalog](https://docs.flutter.dev/ui/widgets) |
 | 14 | [Stateless va Stateful](14-stateless-stateful.md) | `StatelessWidget`, `StatefulWidget`, `setState`. Widget hayot sikli | E | [FD Stateful widget](https://docs.flutter.dev/learn/pathway/tutorial/stateful-widget) · [FD Add interactivity](https://docs.flutter.dev/ui/interactivity) |
-| 15 | Layout: Row, Column, Stack | Asosiy layout widget'lari, `Expanded`, `Padding`, `Container`. Ekranni bo'laklab qurish | E | [FD Layout](https://docs.flutter.dev/ui/layout) · [FD Build a layout](https://docs.flutter.dev/ui/layout/tutorial) · [FD Layout (tutorial)](https://docs.flutter.dev/learn/pathway/tutorial/layout) |
+| 15 | [Layout: Row, Column, Stack](15-layout.md) | Asosiy layout widget'lari, `Expanded`, `Padding`, `Container`. Ekranni bo'laklab qurish | E | [FD Layout](https://docs.flutter.dev/ui/layout) · [FD Build a layout](https://docs.flutter.dev/ui/layout/tutorial) · [FD Layout (tutorial)](https://docs.flutter.dev/learn/pathway/tutorial/layout) |
 | 16 | Cheklovlar qanday ishlaydi | "Constraints go down. Sizes go up. Parent sets position." Overflow xatolari va ularni tuzatish | E | [FD Understanding constraints](https://docs.flutter.dev/ui/layout/constraints) · [FD Common Flutter errors](https://docs.flutter.dev/testing/common-errors) |
 | 17 | Ro'yxat va grid | `ListView`, `ListView.builder` (uzun ro'yxat), `GridView`, turli elementli ro'yxat | E | [FD Lists & grids](https://docs.flutter.dev/ui/layout/lists) · [FD Work with long lists](https://docs.flutter.dev/cookbook/lists/long-lists) · [FD Create a grid view](https://docs.flutter.dev/cookbook/lists/grid-lists) |
 | 18 | Scroll va sliver | `CustomScrollView`, sliver'lar, suzuvchi app bar | E | [FD Scrolling](https://docs.flutter.dev/ui/layout/scrolling) · [FD Slivers](https://docs.flutter.dev/ui/layout/scrolling/slivers) · [FD Slivers (tutorial)](https://docs.flutter.dev/learn/pathway/tutorial/slivers) |
