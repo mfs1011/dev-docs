@@ -1600,4 +1600,45 @@ export const QADAMLI = {
       },
     ],
   },
+  // ai-agentlar 08-bob: Stop hook — haqiqiy `claude -p` sessiyasi (Claude Code 2.1.325). Agentga npm test ruxsati berilmagan,
+  // tekshiruvni faqat hook bajaradi; biznes qoidasi test/qoidalar.test.js da (so'rovda aytilmagan)
+  'stop-hook': {
+    panel: 'tekshiruv holati',
+    keng: true,
+    qadamlar: [
+      {
+        cmd: ['claude -p "narx.js ga yetkazish(summa) funksiyasini qo\'sh: summa 200000 va undan ko\'p bo\'lsa o\'zi qaytadi, aks holda 15000 qo\'shiladi."'],
+        holat: [{ k: 'kod', yol: 'narx.js', qiymat: 'o‘zgarmagan' }, { k: 'agent', yol: 'agent tekshiruvi', qiymat: 'npm test ruxsati yo‘q', belgi: 'yoq' }, { k: 'hook', yol: 'Stop hook', qiymat: 'npm test --silent 1>&2 || exit 2' }],
+        izoh: '`.claude/settings.json` da Stop hook bor: agent to‘xtamoqchi bo‘lganda testlar ishga tushadi. `test/qoidalar.test.js` dagi qoida so‘rovda aytilmagan.',
+      },
+      {
+        cmd: ['[Read] narx.js', '[Read] narx.test.js', '[Edit] narx.js: + yetkazish(summa)', '[Edit] narx.test.js: + 2 ta test'],
+        holat: [{ k: 'kod', yol: 'narx.js', qiymat: 'yetkazish qo‘shildi', belgi: 'yangi' }, { k: 'agent', yol: 'agent tekshiruvi', qiymat: 'npm test ruxsati yo‘q', belgi: 'yoq' }, { k: 'hook', yol: 'Stop hook', qiymat: 'kutmoqda' }],
+        izoh: 'Agent kodni o‘qidi va funksiyani yozdi. Faqat ildizdagi ikki faylni ko‘rdi — `test/` papkasiga qaramadi.',
+      },
+      {
+        cmd: ['[Bash] npm test'],
+        chiqish: 'This command requires approval',
+        holat: [{ k: 'kod', yol: 'narx.js', qiymat: 'yetkazish qo‘shildi', belgi: 'yangi' }, { k: 'agent', yol: 'agent tekshiruvi', qiymat: 'rad etildi', belgi: 'xato' }, { k: 'hook', yol: 'Stop hook', qiymat: 'kutmoqda' }],
+        izoh: 'Agent testni o‘zi ishga tushirmoqchi bo‘ldi, lekin bu buyruqqa ruxsat yo‘q. U "o‘zgarishlar hali tekshirilmagan" deb yozib, ishni tugatmoqchi bo‘ldi.',
+      },
+      {
+        cmd: ['[Stop hook] npm test --silent 1>&2 || exit 2'],
+        chiqish: '✖ qoida: bo\'sh savatda yetkazish haqi olinmaydi\nℹ pass 4\nℹ fail 1\n  15000 !== 0\nexit 2',
+        holat: [{ k: 'kod', yol: 'narx.js', qiymat: 'yetkazish(0) → 15000', belgi: 'xato' }, { k: 'agent', yol: 'agent tekshiruvi', qiymat: 'rad etildi', belgi: 'xato' }, { k: 'hook', yol: 'Stop hook', qiymat: 'exit 2 — to‘xtash bloklandi', belgi: 'ochiq' }],
+        izoh: 'Harness hook’ni ishga tushirdi. `exit 2` — to‘xtashga ruxsat yo‘q. stderr dagi test chiqishi agentga "Stop hook feedback" bo‘lib qaytdi.',
+      },
+      {
+        cmd: ['[Read] test/qoidalar.test.js', '[Edit] narx.js: summa === 0 || summa >= 200000', '[Edit] narx.test.js: + bo‘sh savat testi'],
+        holat: [{ k: 'kod', yol: 'narx.js', qiymat: 'yetkazish(0) → 0', belgi: 'yangi' }, { k: 'agent', yol: 'agent tekshiruvi', qiymat: 'rad etildi', belgi: 'xato' }, { k: 'hook', yol: 'Stop hook', qiymat: 'qayta ishlaydi' }],
+        izoh: 'Agent yiqilgan testni o‘qidi, "buxgalteriya bilan kelishilgan" qoidani ko‘rdi va kodni moslashtirdi.',
+      },
+      {
+        cmd: ['[Stop hook] npm test --silent 1>&2 || exit 2'],
+        chiqish: '✔ qoida: bo\'sh savatda yetkazish haqi olinmaydi\nℹ tests 6\nℹ pass 6\nℹ fail 0\nexit 0',
+        holat: [{ k: 'kod', yol: 'narx.js', qiymat: 'yetkazish(0) → 0', belgi: 'yangi' }, { k: 'agent', yol: 'agent tekshiruvi', qiymat: 'rad etildi', belgi: 'xato' }, { k: 'hook', yol: 'Stop hook', qiymat: 'exit 0 — navbat tugadi', belgi: 'yangi' }],
+        izoh: 'Testlar o‘tdi, hook to‘xtashga ruxsat berdi. Agent o‘zi tekshira olmagan bo‘lsa ham, "tayyor"ni harness tasdiqladi.',
+      },
+    ],
+  },
 }
