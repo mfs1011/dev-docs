@@ -571,6 +571,31 @@ export const books = [
     ],
     folders: [],
   },
+  {
+    id: 'ai-agentlar',
+    title: 'AI agentlar',
+    subtitle: 'AI bilan dasturlash: vazifa, kontekst, tekshiruv',
+    dir: 'ai-agentlar',
+    logo: 'ai-agentlar',
+    // Brendi yo'q — sayt uchun chizilgan belgi (public/marks/ai-agentlar.svg), rang sayt palitrasidan (amber)
+    accent: '#d97706',
+    accentDark: '#fbbf24',
+    versionLabel: 'Claude Code',
+    versionRow: /^\|\s*Claude Code\s*\|\s*([^|]+)\|/m,
+    groups: [
+      { title: 'I — Asoslar', from: 1, to: 5 },
+      { title: 'II — Vazifa berish', from: 6, to: 11 },
+      { title: 'III — Kontekst va xotira', from: 12, to: 16 },
+      { title: 'IV — Kundalik ish', from: 17, to: 23 },
+      { title: 'V — Kengaytirish', from: 24, to: 29 },
+      { title: 'VI — Parallel va avtonom', from: 30, to: 34 },
+      { title: 'VII — Xavfsizlik', from: 35, to: 39 },
+      { title: 'VIII — Xarajat', from: 40, to: 42 },
+      { title: 'IX — Dasturchi va AI', from: 43, to: 45 },
+      { title: 'X — O\'z agentingizni yasash', from: 46, to: 47 },
+    ],
+    folders: [],
+  },
 ]
 
 /**
@@ -648,6 +673,14 @@ export const yonalishlar = [
     izoh: 'Katta rasm: chegaralar, kelishuvlar, masshtab va tizim dizayni',
     qadamlar: [
       { kitob: 'arxitektura', nega: 'Qarorlar nega shunday qabul qilinadi — frontend’dan tizim dizaynigacha' },
+    ],
+  },
+  {
+    id: 'ai',
+    title: 'AI bilan ishlash',
+    izoh: 'AI agentni dasturlashda samarali va xavfsiz ishlatish',
+    qadamlar: [
+      { kitob: 'ai-agentlar', nega: 'Vazifa berish, kontekst, tekshiruv, kengaytmalar, xavfsizlik va xarajat' },
     ],
   },
 ]
