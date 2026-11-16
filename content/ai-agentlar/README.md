@@ -72,7 +72,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 
 ---
 
-> **Holat.** Tayyor: 1–11-boblar (2026-11-16). Amaliy misollar Claude Code 2.1.325 bilan sinov kompyuterida (macOS) haqiqiy sessiyada olingan.
+> **Holat.** Tayyor: 1–16-boblar (2026-11-16). Amaliy misollar Claude Code 2.1.325 bilan sinov kompyuterida (macOS) haqiqiy sessiyada olingan.
 
 ---
 
@@ -112,11 +112,11 @@ Bu qo'llanmaga kirmaydigan mavzular:
 
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
-| 12 | Kontekst oynasi amalda | Sessiya boshida nima yuklanadi, har fayl o'qilganda nima qo'shiladi. `/context` bilan ko'rish. Kontekst — cheklangan resurs: kam, lekin aniq ma'lumot | L | [CC Explore the context window](https://code.claude.com/docs/en/context-window) · [AE Effective context engineering](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) |
-| 13 | CLAUDE.md va AGENTS.md | Loyiha "xotirasi": buyruqlar, konvensiyalar, tuzoqlar. Nima yoziladi va nima yozilmaydi; qisqa saqlash (200 qatorgacha). AGENTS.md — ko'p vosita tushunadigan ochiq format; eng yaqin fayl ustun. Ko'rsatma — iltimos, kafolat emas | L | [CC How Claude remembers your project](https://code.claude.com/docs/en/memory) · [CC Best practices — Keep CLAUDE.md short](https://code.claude.com/docs/en/best-practices) · [AGENTS.md](https://agents.md/) · [CX AGENTS.md](https://learn.chatgpt.com/codex/agent-configuration/agents-md) |
-| 14 | Qoidalarni bo'laklash va auto memory | `.claude/rules/` va `paths:` bilan faqat kerakli papkada yuklanadigan qoidalar; ichma-ich CLAUDE.md. Auto memory — agent o'zi yozadigan eslatmalar: qanday ko'rish va tozalash | L | [CC Memory — rules, auto memory](https://code.claude.com/docs/en/memory) · [CC Explore the .claude directory](https://code.claude.com/docs/en/claude-directory) |
-| 15 | Uzun sessiya: kompaktlash, tozalash, davom ettirish | Avtomatik kompaktlash (compaction) va undan keyin nima saqlanadi. `/compact` yo'nalish bilan, `/clear` vazifalar orasida. `--continue`, `--resume`, sessiyani ayirish (fork) | L | [CC Context window — What survives compaction](https://code.claude.com/docs/en/context-window) · [CC Manage sessions](https://code.claude.com/docs/en/sessions) · [CC How it works — Work with sessions](https://code.claude.com/docs/en/how-claude-code-works) |
-| 16 | Katta kod bazasi va monorepo | Kod navigatsiyasi plaginlari (LSP): grep o'rniga "definition'ga o'tish". Monorepo'da sozlash. Agentga qidiruvni qisqartiradigan ma'lumot berish | L | [CC Large codebases](https://code.claude.com/docs/en/large-codebases) · [CC Code intelligence plugins](https://code.claude.com/docs/en/plugins/code-intelligence) |
+| 12 | [Kontekst oynasi amalda](12-kontekst-amalda.md) | Sessiya boshida nima yuklanadi, har fayl o'qilganda nima qo'shiladi. `/context` bilan ko'rish. Kontekst — cheklangan resurs: kam, lekin aniq ma'lumot | L | [CC Explore the context window](https://code.claude.com/docs/en/context-window) · [AE Effective context engineering](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) |
+| 13 | [CLAUDE.md va AGENTS.md](13-claude-md-agents-md.md) | Loyiha "xotirasi": buyruqlar, konvensiyalar, tuzoqlar. Nima yoziladi va nima yozilmaydi; qisqa saqlash (200 qatorgacha). AGENTS.md — ko'p vosita tushunadigan ochiq format; eng yaqin fayl ustun. Ko'rsatma — iltimos, kafolat emas | L | [CC How Claude remembers your project](https://code.claude.com/docs/en/memory) · [CC Best practices — Keep CLAUDE.md short](https://code.claude.com/docs/en/best-practices) · [AGENTS.md](https://agents.md/) · [CX AGENTS.md](https://learn.chatgpt.com/codex/agent-configuration/agents-md) |
+| 14 | [Qoidalarni bo'laklash va auto memory](14-qoidalar-auto-memory.md) | `.claude/rules/` va `paths:` bilan faqat kerakli papkada yuklanadigan qoidalar; ichma-ich CLAUDE.md. Auto memory — agent o'zi yozadigan eslatmalar: qanday ko'rish va tozalash | L | [CC Memory — rules, auto memory](https://code.claude.com/docs/en/memory) · [CC Explore the .claude directory](https://code.claude.com/docs/en/claude-directory) |
+| 15 | [Uzun sessiya: kompaktlash, tozalash, davom ettirish](15-uzun-sessiya.md) | Avtomatik kompaktlash (compaction) va undan keyin nima saqlanadi. `/compact` yo'nalish bilan, `/clear` vazifalar orasida. `--continue`, `--resume`, sessiyani ayirish (fork) | L | [CC Context window — What survives compaction](https://code.claude.com/docs/en/context-window) · [CC Manage sessions](https://code.claude.com/docs/en/sessions) · [CC How it works — Work with sessions](https://code.claude.com/docs/en/how-claude-code-works) |
+| 16 | [Katta kod bazasi va monorepo](16-katta-kod-bazasi.md) | Kod navigatsiyasi plaginlari (LSP): grep o'rniga "definition'ga o'tish". Monorepo'da sozlash. Agentga qidiruvni qisqartiradigan ma'lumot berish | L | [CC Large codebases](https://code.claude.com/docs/en/large-codebases) · [CC Code intelligence plugins](https://code.claude.com/docs/en/plugins/code-intelligence) |
 
 ## IV qism — Kundalik ish oqimlari (17–23)
 
