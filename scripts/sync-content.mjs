@@ -300,6 +300,7 @@ async function collectBook(book, staging) {
     accentTextDark: book.accentTextDark ?? null,
     variants: book.variants ?? null,
     tools: book.tools ?? [],
+    qisqartmalar: book.qisqartmalar ?? null,
     versionLabel: book.versionLabel ?? book.title,
     version: await readVersion(book, sourceDir),
     // bir nechta tizimda sinaladigan kitob: `v<versiya>` o'rniga shu matn (masalan, Linux: Debian va Ubuntu)

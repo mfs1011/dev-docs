@@ -238,6 +238,12 @@ export const books = [
   },
   {
     id: 'sql',
+    // Manba qisqartmalari — matnda tooltip (src/markdown.js, src/qisqartma.js); README'dagi ro'yxat bilan bir xil
+    qisqartmalar: {
+      PG: { tip: 'PostgreSQL (18-versiya hujjati: postgresql.org/docs/18)', faqatManba: true },
+      MY: { tip: 'MySQL (9.7 qo\'llanmasi: dev.mysql.com/doc)', faqatManba: true },
+      SL: { tip: 'SQLite (hujjati: sqlite.org/docs.html)', faqatManba: true },
+    },
     title: 'SQL',
     subtitle: 'standart, PostgreSQL, MySQL va SQLite',
     dir: 'sql',
@@ -293,6 +299,17 @@ export const books = [
   },
   {
     id: 'linux',
+    // Manba qisqartmalari — matnda tooltip (src/markdown.js, src/qisqartma.js); README'dagi ro'yxat bilan bir xil
+    qisqartmalar: {
+      DR: 'Debian Reference',
+      UB: 'Ubuntu Server hujjati',
+      SD: 'systemd man sahifalari (freedesktop.org)',
+      MAN: 'Linux man-pages (man7.org)',
+      GNU: { tip: 'GNU qo\'llanmalari (Bash, Coreutils, grep, sed, gawk, findutils)', faqatManba: true },
+      SSH: { tip: 'OpenSSH qo\'llanmalari (man.openbsd.org)', faqatManba: true },
+      DM: 'Debian man sahifalari (manpages.debian.org)',
+      FHS: 'Filesystem Hierarchy Standard 3.0',
+    },
     title: 'Linux',
     subtitle: 'dasturchi uchun server asoslari',
     dir: 'linux',
@@ -324,6 +341,15 @@ export const books = [
   },
   {
     id: 'docker',
+    // Manba qisqartmalari — matnda tooltip (src/markdown.js, src/qisqartma.js); README'dagi ro'yxat bilan bir xil
+    qisqartmalar: {
+      GS: 'Get started: Docker concepts (docs.docker.com/get-started)',
+      EN: { tip: 'Docker Engine qo\'llanmasi (docs.docker.com/engine)', faqatManba: true },
+      BD: 'Docker Build qo\'llanmasi (docs.docker.com/build)',
+      CO: { tip: 'Docker Compose qo\'llanmasi (docs.docker.com/compose)', faqatManba: true },
+      RF: { tip: 'Ma\'lumotnoma (reference): Dockerfile, Compose fayli, CLI', faqatManba: true },
+      GD: 'Docker Guides (docs.docker.com/guides)',
+    },
     title: 'Docker',
     subtitle: 'konteynerlar, Compose va deploy',
     dir: 'docker',
@@ -374,6 +400,11 @@ export const books = [
   },
   {
     id: 'web-asoslari',
+    // Manba qisqartmalari — matnda tooltip (src/markdown.js, src/qisqartma.js); README'dagi ro'yxat bilan bir xil
+    qisqartmalar: {
+      MDN: 'MDN Web Docs (developer.mozilla.org)',
+      RFC: 'IETF standartlari (rfc-editor.org)',
+    },
     title: 'Web asoslari',
     subtitle: 'HTTP, DNS, cookie, CORS va HTTPS',
     dir: 'web-asoslari',
@@ -396,6 +427,10 @@ export const books = [
   },
   {
     id: 'redis',
+    // Manba qisqartmalari — matnda tooltip (src/markdown.js, src/qisqartma.js); README'dagi ro'yxat bilan bir xil
+    qisqartmalar: {
+      RD: 'Redis rasmiy hujjati (redis.io/docs/latest)',
+    },
     title: 'Redis',
     subtitle: 'xotiradagi tezkor ombor',
     dir: 'redis',
@@ -417,6 +452,12 @@ export const books = [
   },
   {
     id: 'flutter',
+    // Manba qisqartmalari — matnda tooltip (src/markdown.js, src/qisqartma.js); README'dagi ro'yxat bilan bir xil
+    qisqartmalar: {
+      FD: 'Flutter rasmiy hujjati (docs.flutter.dev)',
+      DD: 'Dart rasmiy hujjati (dart.dev)',
+      API: { tip: 'Flutter API ma\'lumotnomasi (api.flutter.dev)', faqatManba: true },
+    },
     title: 'Flutter',
     subtitle: 'bitta koddan Android, iOS va web',
     dir: 'flutter',
@@ -440,6 +481,13 @@ export const books = [
   },
   {
     id: 'xabar-tizimlari',
+    // Manba qisqartmalari — matnda tooltip (src/markdown.js, src/qisqartma.js); README'dagi ro'yxat bilan bir xil
+    qisqartmalar: {
+      RD: 'Redis hujjati (redis.io/docs/latest)',
+      RQ: 'RabbitMQ hujjati (rabbitmq.com/docs)',
+      RT: 'RabbitMQ qo\'llanmalari (rabbitmq.com/tutorials)',
+      KD: 'Kafka hujjati, 4.4 (kafka.apache.org/44)',
+    },
     title: 'Xabar tizimlari',
     subtitle: 'navbat, kafolat va asbob tanlash',
     dir: 'xabar-tizimlari',
@@ -459,6 +507,11 @@ export const books = [
   },
   {
     id: 'rabbitmq',
+    // Manba qisqartmalari — matnda tooltip (src/markdown.js, src/qisqartma.js); README'dagi ro'yxat bilan bir xil
+    qisqartmalar: {
+      RQ: 'RabbitMQ rasmiy hujjati (rabbitmq.com/docs)',
+      RT: 'RabbitMQ rasmiy qo\'llanmalari (rabbitmq.com/tutorials)',
+    },
     title: 'RabbitMQ',
     subtitle: 'xabar brokeri',
     dir: 'rabbitmq',
@@ -484,6 +537,11 @@ export const books = [
   },
   {
     id: 'kafka',
+    // Manba qisqartmalari — matnda tooltip (src/markdown.js, src/qisqartma.js); README'dagi ro'yxat bilan bir xil
+    qisqartmalar: {
+      KD: 'Kafka rasmiy hujjati, 4.4 versiyasi (kafka.apache.org/44)',
+      KR: 'Kafka\'ning rasmiy repozitoriysi (github.com/apache/kafka)',
+    },
     title: 'Kafka',
     subtitle: 'hodisalar oqimi',
     dir: 'kafka',
@@ -508,6 +566,13 @@ export const books = [
   },
   {
     id: 'nginx',
+    // Manba qisqartmalari — matnda tooltip (src/markdown.js, src/qisqartma.js); README'dagi ro'yxat bilan bir xil
+    qisqartmalar: {
+      NG: 'nginx.org rasmiy hujjati',
+      NA: 'NGINX Admin Guide (docs.nginx.com)',
+      LE: 'Let\'s Encrypt hujjati',
+      CB: 'Certbot hujjati',
+    },
     title: 'Nginx va HTTPS',
     subtitle: 'veb-server, reverse proxy va sertifikat',
     dir: 'nginx',
@@ -531,6 +596,15 @@ export const books = [
   },
   {
     id: 'server-xavfsizligi',
+    // Manba qisqartmalari — matnda tooltip (src/markdown.js, src/qisqartma.js); README'dagi ro'yxat bilan bir xil
+    qisqartmalar: {
+      UB: 'Ubuntu Server hujjati (ubuntu.com/server/docs)',
+      US: 'Ubuntu Security hujjati (documentation.ubuntu.com/security)',
+      UM: 'Ubuntu 26.04 man sahifalari (manpages.ubuntu.com)',
+      SSH: { tip: 'OpenSSH qo\'llanmalari (man.openbsd.org)', faqatManba: true },
+      DK: 'Docker hujjati',
+      RS: 'restic hujjati (restic.readthedocs.io)',
+    },
     title: 'Server xavfsizligi',
     subtitle: 'yangilanish, SSH, firewall va zaxira',
     dir: 'server-xavfsizligi',
@@ -553,6 +627,16 @@ export const books = [
   },
   {
     id: 'deploy-amaliyoti',
+    // Manba qisqartmalari — matnda tooltip (src/markdown.js, src/qisqartma.js); README'dagi ro'yxat bilan bir xil
+    qisqartmalar: {
+      GH: 'GitHub hujjati (docs.github.com)',
+      SD: 'systemd man sahifalari (freedesktop.org)',
+      NG: 'nginx.org hujjati',
+      DK: 'Docker hujjati',
+      SSH: { tip: 'OpenSSH qo\'llanmalari (man.openbsd.org)', faqatManba: true },
+      MAN: 'Linux man-pages (man7.org)',
+      GNU: { tip: 'GNU Coreutils qo\'llanmasi', faqatManba: true },
+    },
     title: 'Deploy amaliyoti',
     subtitle: 'domendan nol to\'xtovli deploy\'gacha',
     dir: 'deploy-amaliyoti',
@@ -582,6 +666,16 @@ export const books = [
     accentDark: '#fbbf24',
     versionLabel: 'Claude Code',
     versionRow: /^\|\s*Claude Code\s*\|\s*([^|]+)\|/m,
+    // Bob matnidagi manba qisqartmalari: matnda tooltip bo'lib to'liq nomi ko'rinadi (src/markdown.js)
+    qisqartmalar: {
+      CC: 'Claude Code rasmiy hujjati (code.claude.com/docs)',
+      CP: 'Claude Platform hujjati (platform.claude.com/docs)',
+      AE: 'Anthropic muhandislik maqolalari va tadqiqotlari (anthropic.com/engineering, anthropic.com/research)',
+      MCP: 'Model Context Protocol: AI ilovalarni tashqi tizimlarga ulash standarti (modelcontextprotocol.io)',
+      CX: 'OpenAI Codex hujjati (learn.chatgpt.com/codex)',
+      GH: 'GitHub Copilot hujjati (docs.github.com/en/copilot)',
+      OW: 'OWASP GenAI Security Project (genai.owasp.org)',
+    },
     groups: [
       { title: 'I — Asoslar', from: 1, to: 5 },
       { title: 'II — Vazifa berish', from: 6, to: 11 },

@@ -26,6 +26,12 @@ Biror qo'llanma (mundarija yoki bob) yozishga buyruq berilsa:
 - **Versiya** rasmiy relizlar sahifasidan tekshiriladi va qo'llanma README'sida jadval sifatida yoziladi (sana bilan). Versiya tanlovi ham hujjatdagi mezonga tayanadi (masalan, LTS), "keng tarqalgan" kabi tekshirilmagan gaplarga emas.
 - **Til** — tushunarli o'zbek tili: har yangi atama birinchi uchraganda oddiy so'z bilan izohlanadi; atamaning inglizcha asli qavsda.
 - Tekshirib bo'lmagan narsa bo'lsa — yozilmaydi va foydalanuvchiga aytiladi.
+- **Manba qisqartmalari** (CC, FD, KD, NG …) ishlatilsa — README'dagi ro'yxat bilan bir xil qilib `docs.config.mjs` dagi kitobning `qisqartmalar` maydoniga ham yoziladi: matnda ustiga kelganda/bosilganda to'liq nomi tooltip bo'lib chiqadi (`src/markdown.js`, `src/qisqartma.js`). Oddiy so'z yoki atama ta'rifi bo'lib ham keladigan qisqartma (`SSH`, `API`, `GNU`) — `{ tip, faqatManba: true }`: faqat `X:` va `(X)` shaklida o'raladi. Bir harfli belgilar (muhit kodlari L/C/V) qo'shilmaydi.
+
+## Sayt UI qoidasi
+
+- Ochiladigan har qanday element (tooltip, popover, menyu) kichik ekranda (360–420 px) **ekran chetidan chiqmasligi** kerak: `position: fixed` + ko'rinadigan maydonga qisish (clamp), pastda joy bo'lmasa tepaga — namuna `src/qisqartma.js`. CSS `::after` + `translateX(-50%)` bilan markazlash ishlatilmaydi (chetdagi elementda kesilib qoladi).
+- Yangi UI elementi brauzerda telefon kengligida ham sinab ko'riladi (chap va o'ng chetdagi holat bilan).
 
 ## Video darsliklar tayyorlash qoidalari (Sifat nazorati)
 

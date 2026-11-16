@@ -44,7 +44,7 @@ Vosita tanlovi haqida:
 - **Codex va Copilot** — faqat rasmiy hujjat bo'yicha, ⚑ belgisi bilan. Ularni ham sinash uchun hisob kerak bo'ladi
   (egasining qarori).
 
-Qisqartmalar:
+Qisqartmalar (bob matnida qisqartma ustiga sichqonchani olib borsangiz yoki uni bossangiz, to'liq nomi chiqadi):
 
 - **CC** — Claude Code rasmiy hujjati (code.claude.com/docs).
 - **CP** — Claude Platform hujjati (platform.claude.com/docs).
