@@ -1553,4 +1553,51 @@ export const QADAMLI = {
       },
     ],
   },
+  // ai-agentlar 03-bob: agentik sikl — haqiqiy `claude -p` sessiyasi (Claude Code 2.1.325, stream-json'dan olingan qadamlar)
+  'agent-sikli': {
+    panel: 'agentik sikl',
+    keng: true,
+    qadamlar: [
+      {
+        cmd: ['claude -p "Testlar yiqilyapti. Sababini topib tuzat, keyin testlarni qayta ishga tushirib tekshir."'],
+        holat: [{ k: 'k', yol: 'kontekst yig‘ish', qiymat: 'kutmoqda' }, { k: 'h', yol: 'harakat', qiymat: 'kutmoqda' }, { k: 't', yol: 'tekshirish', qiymat: 'kutmoqda' }, { k: 'test', yol: 'npm test', qiymat: '2 ta test yiqilgan', belgi: 'xato' }],
+        izoh: 'Vazifa: maqsad ("testlar o‘tsin") va tekshiruv ("qayta ishga tushir"). Qaysi faylni o‘qish yoki qaysi buyruqni yozish aytilmagan — buni agent o‘zi tanlaydi.',
+      },
+      {
+        cmd: ['[Bash] ls -la; git ls-files | head -50'],
+        chiqish: 'narx.js\nnarx.test.js\npackage.json',
+        holat: [{ k: 'k', yol: 'kontekst yig‘ish', qiymat: 'loyihada qanday fayllar bor', belgi: 'ochiq' }, { k: 'h', yol: 'harakat', qiymat: 'kutmoqda' }, { k: 't', yol: 'tekshirish', qiymat: 'kutmoqda' }, { k: 'test', yol: 'npm test', qiymat: '2 ta test yiqilgan', belgi: 'xato' }],
+        izoh: 'Birinchi tool chaqiruvi — atrofni ko‘rish. Natija kontekstga qo‘shiladi va keyingi qadamni belgilaydi.',
+      },
+      {
+        cmd: ['[Bash] cat narx.js narx.test.js package.json; npm test 2>&1 | tail -30'],
+        chiqish: '    actual: 5000,\n    expected: 25000,\n✖ chegirma: 10 foiz\n  -225000 !== 22500',
+        holat: [{ k: 'k', yol: 'kontekst yig‘ish', qiymat: 'kod + testning haqiqiy xatosi', belgi: 'ochiq' }, { k: 'h', yol: 'harakat', qiymat: 'kutmoqda' }, { k: 't', yol: 'tekshirish', qiymat: 'kutmoqda' }, { k: 'test', yol: 'npm test', qiymat: '2 ta test yiqilgan', belgi: 'xato' }],
+        izoh: 'Agent kodni o‘qidi va testni o‘zi ishga tushirib, xatoni "eslab" emas, haqiqiy chiqishdan ko‘rdi.',
+      },
+      {
+        cmd: [],
+        chiqish: 'Ikki xato: sikl 1 dan boshlanyapti (birinchi mahsulot tashlab ketilyapti),\nchegirma esa foizni 100 ga bo‘lmayapti.',
+        holat: [{ k: 'k', yol: 'kontekst yig‘ish', qiymat: 'yetarli', belgi: 'yangi' }, { k: 'h', yol: 'harakat', qiymat: 'reja tayyor', belgi: 'ochiq' }, { k: 't', yol: 'tekshirish', qiymat: 'kutmoqda' }, { k: 'test', yol: 'npm test', qiymat: '2 ta test yiqilgan', belgi: 'xato' }],
+        izoh: 'Model to‘plangan kontekstdan sababni chiqardi. Bu matn — tool emas, modelning o‘z xulosasi.',
+      },
+      {
+        cmd: ['[Edit] narx.js: "let i = 1;" → "let i = 0;"', '[Edit] narx.js: "summa * foiz" → "summa * foiz / 100"'],
+        holat: [{ k: 'k', yol: 'kontekst yig‘ish', qiymat: 'yetarli', belgi: 'yangi' }, { k: 'h', yol: 'harakat', qiymat: 'narx.js — 2 ta tahrir', belgi: 'ochiq' }, { k: 't', yol: 'tekshirish', qiymat: 'kutmoqda' }, { k: 'test', yol: 'npm test', qiymat: 'hali ishga tushirilmagan' }],
+        izoh: 'Harakat: ikkita aniq tahrir. Tahrirdan oldin Claude Code faylning nusxasini saqlaydi (checkpoint, 9-bob).',
+      },
+      {
+        cmd: ['[Bash] npm test 2>&1 | tail -12'],
+        chiqish: '✔ jami: hamma mahsulot hisoblanadi (0.299875ms)\n✔ chegirma: 10 foiz (0.064416ms)\nℹ tests 2\nℹ pass 2\nℹ fail 0',
+        holat: [{ k: 'k', yol: 'kontekst yig‘ish', qiymat: 'yetarli', belgi: 'yangi' }, { k: 'h', yol: 'harakat', qiymat: 'bajarildi', belgi: 'yangi' }, { k: 't', yol: 'tekshirish', qiymat: 'testlar qayta ishga tushirildi', belgi: 'ochiq' }, { k: 'test', yol: 'npm test', qiymat: '2/2 o‘tdi', belgi: 'yangi' }],
+        izoh: 'Tekshirish: agent "tuzatdim" deb to‘xtamadi, natijani testning o‘zidan oldi. Yiqilsa, sikl yana harakatga qaytardi.',
+      },
+      {
+        cmd: [],
+        chiqish: 'Testlar endi o‘tyapti. Qayta ishga tushirganda ikkalasi ham o‘tdi (2/2).\n...\nO‘zgarishlar hali commit qilinmagan.',
+        holat: [{ k: 'k', yol: 'kontekst yig‘ish', qiymat: 'yetarli', belgi: 'yangi' }, { k: 'h', yol: 'harakat', qiymat: 'bajarildi', belgi: 'yangi' }, { k: 't', yol: 'tekshirish', qiymat: 'o‘tdi', belgi: 'yangi' }, { k: 'test', yol: 'npm test', qiymat: '2/2 o‘tdi', belgi: 'yangi' }],
+        izoh: 'Yakun: 5 ta tool chaqiruvi, taxminan 16 soniya. Endi navbat sizda — diff’ni ko‘rib, qabul qilish yoki qaytarish.',
+      },
+    ],
+  },
 }

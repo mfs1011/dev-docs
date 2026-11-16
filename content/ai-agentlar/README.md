@@ -72,6 +72,10 @@ Bu qo'llanmaga kirmaydigan mavzular:
 
 ---
 
+> **Holat.** Tayyor: 1–5-boblar (2026-11-16). Amaliy misollar Claude Code 2.1.325 bilan sinov kompyuterida (macOS) haqiqiy sessiyada olingan.
+
+---
+
 ## Har bobning skeleti
 
 - **Tushuncha** — mavzu nima, oddiy so'zlar bilan. Qiyin joy animatsiya bilan.
@@ -87,11 +91,11 @@ Bu qo'llanmaga kirmaydigan mavzular:
 
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
-| 01 | AI dasturchiga nima beradi | AI bilan ishlashning uch ko'rinishi: avtoto'ldirish (inline suggestions), chat va agent. AI nimada kuchli (testlar, takroriy kod, tushuntirish, debug) va nimada zaif. Javobgarlik dasturchida qoladi | — | [GH Best practices](https://docs.github.com/en/copilot/get-started/best-practices) · [CC Overview](https://code.claude.com/docs/en/overview) · [CX Working with agents](https://learn.chatgpt.com/codex/working-with-agents) |
-| 02 | Model qanday ishlaydi | Model (LLM), token, kontekst oynasi (context window) — oddiy so'zlar bilan. Nega model ishonch bilan noto'g'ri gapirishi mumkin (gallyutsinatsiya). Kontekst to'lgani sari aniqlik pasayishi (context rot) | — | [CC Explore the context window](https://code.claude.com/docs/en/context-window) · [AE Effective context engineering](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) · [CP Prompting best practices — Minimizing hallucinations](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices) |
-| 03 | Agent nima | Agentik sikl: kontekst yig'ish → harakat → tekshirish. Model fikrlaydi, tool'lar harakat qiladi, harness (o'rab turuvchi dastur) ularni bog'laydi. Workflow (oldindan yozilgan yo'l) va agent (yo'lni o'zi tanlaydi) farqi | — | [CC How Claude Code works](https://code.claude.com/docs/en/how-claude-code-works) · [AE Building effective agents](https://www.anthropic.com/research/building-effective-agents) · [CC Glossary](https://code.claude.com/docs/en/glossary) |
-| 04 | Vositalar xaritasi | Agent qayerda ishlaydi: lokal (terminal, IDE), bulutda (cloud), CI'da. Claude Code, Codex, Copilot cloud agent — imkoniyatlar va cheklovlar jadvali (faqat hujjatdagi faktlar). Qachon qaysi muhit | — ⚑ | [CC How it works — Environments](https://code.claude.com/docs/en/how-claude-code-works) · [CC Platforms](https://code.claude.com/docs/en/platforms) · [CX Docs](https://learn.chatgpt.com/docs) · [GH About Copilot cloud agent](https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-coding-agent) |
-| 05 | O'rnatish va birinchi sessiya | Claude Code'ni o'rnatish, kirish, papkaga ishonch (trust) oynasi, birinchi savol. `/init` bilan boshlang'ich CLAUDE.md. `/doctor`, `/help` | L | [CC Quickstart](https://code.claude.com/docs/en/quickstart) · [CC Advanced setup](https://code.claude.com/docs/en/setup) · [CC Authentication](https://code.claude.com/docs/en/authentication) |
+| 01 | [AI dasturchiga nima beradi](01-ai-nima-beradi.md) | AI bilan ishlashning uch ko'rinishi: avtoto'ldirish (inline suggestions), chat va agent. AI nimada kuchli (testlar, takroriy kod, tushuntirish, debug) va nimada zaif. Javobgarlik dasturchida qoladi | — | [GH Best practices](https://docs.github.com/en/copilot/get-started/best-practices) · [CC Overview](https://code.claude.com/docs/en/overview) · [CX Working with agents](https://learn.chatgpt.com/codex/working-with-agents) |
+| 02 | [Model qanday ishlaydi](02-model-qanday-ishlaydi.md) | Model (LLM), token, kontekst oynasi (context window) — oddiy so'zlar bilan. Nega model ishonch bilan noto'g'ri gapirishi mumkin (gallyutsinatsiya). Kontekst to'lgani sari aniqlik pasayishi (context rot) | — | [CC Explore the context window](https://code.claude.com/docs/en/context-window) · [AE Effective context engineering](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) · [CP Prompting best practices — Minimizing hallucinations](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices) |
+| 03 | [Agent nima](03-agent-nima.md) | Agentik sikl: kontekst yig'ish → harakat → tekshirish. Model fikrlaydi, tool'lar harakat qiladi, harness (o'rab turuvchi dastur) ularni bog'laydi. Workflow (oldindan yozilgan yo'l) va agent (yo'lni o'zi tanlaydi) farqi | — | [CC How Claude Code works](https://code.claude.com/docs/en/how-claude-code-works) · [AE Building effective agents](https://www.anthropic.com/research/building-effective-agents) · [CC Glossary](https://code.claude.com/docs/en/glossary) |
+| 04 | [Vositalar xaritasi](04-vositalar-xaritasi.md) | Agent qayerda ishlaydi: lokal (terminal, IDE), bulutda (cloud), CI'da. Claude Code, Codex, Copilot cloud agent — imkoniyatlar va cheklovlar jadvali (faqat hujjatdagi faktlar). Qachon qaysi muhit | — ⚑ | [CC How it works — Environments](https://code.claude.com/docs/en/how-claude-code-works) · [CC Platforms](https://code.claude.com/docs/en/platforms) · [CX Docs](https://learn.chatgpt.com/docs) · [GH About Copilot cloud agent](https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-coding-agent) |
+| 05 | [O'rnatish va birinchi sessiya](05-ornatish-birinchi-sessiya.md) | Claude Code'ni o'rnatish, kirish, papkaga ishonch (trust) oynasi, birinchi savol. `/init` bilan boshlang'ich CLAUDE.md. `/doctor`, `/help` | L | [CC Quickstart](https://code.claude.com/docs/en/quickstart) · [CC Advanced setup](https://code.claude.com/docs/en/setup) · [CC Authentication](https://code.claude.com/docs/en/authentication) |
 
 ## II qism — Agentga vazifa berish (6–11)
 
