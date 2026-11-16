@@ -492,7 +492,7 @@ async function load() {
 
   try {
     const source = await loadSource(current)
-    html.value = renderMarkdown(source)
+    html.value = renderMarkdown(source, { qisqartmalar: book?.qisqartmalar })
   } catch (cause) {
     const isChunkError = CHUNK_ERROR.test(String(cause?.message))
     // Offline va bob hali keshda yo'q / onlayn, lekin fayl serverda yo'q (yangi deploy) / boshqa

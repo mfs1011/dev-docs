@@ -251,8 +251,73 @@ for (const rule of ['html_block', 'html_inline']) {
   md.renderer.rules[rule] = (tokens, idx, options, env, self) => withBase(original(tokens, idx, options, env, self))
 }
 
-export function renderMarkdown(source) {
-  return md.render(source)
+/**
+ * Kitob qisqartmalari (docs.config.mjs → `qisqartmalar`): matndagi `CC`, `FD` kabi so'zlar
+ * `<abbr class="qisqartma">` ga o'raladi, to'liq nomi tooltip bo'lib ko'rinadi (src/qisqartma.js).
+ * Qiymat satr bo'lsa — matnning istalgan joyida. `{ tip, faqatManba: true }` bo'lsa — faqat manba
+ * shaklida: `X:` (havolada `[SSH: …]`) yoki qavs ichida `(X)`, `(X,` (masalan `SSH`, `API` oddiy so'z yoki
+ * atama ta'rifi `SSH (Secure Shell)` bo'lib ham kelgani uchun).
+ * Faqat oddiy matn tokenlari o'zgaradi: `code`, kod bloklari va HTML'ga tegilmaydi.
+ */
+const QISQ_CHEGARA = '[\\p{L}\\p{N}_]'
+const qisqRegex = (keys, faqatManba) =>
+  new RegExp(
+    faqatManba
+      ? `(?<!${QISQ_CHEGARA})(${keys.join('|')})(?=:)|(?<=\\()(${keys.join('|')})(?=[),])`
+      : `(?<!${QISQ_CHEGARA})(${keys.join('|')})(?!${QISQ_CHEGARA})`,
+    'gu',
+  )
+
+md.core.ruler.push('qisqartma', (state) => {
+  const map = state.env?.qisqartmalar
+  if (!map) return
+  const tipOf = (k) => (typeof map[k] === 'string' ? map[k] : map[k]?.tip)
+  const keys = (manba) => Object.keys(map).filter((k) => tipOf(k) && Boolean(map[k]?.faqatManba) === manba)
+  const res = [keys(false), keys(true)].map((k, i) => (k.length ? qisqRegex(k, i === 1) : null)).filter(Boolean)
+  if (!res.length) return
+
+  for (const block of state.tokens) {
+    if (block.type !== 'inline' || !block.children) continue
+    const out = []
+    for (const token of block.children) {
+      if (token.type !== 'text') {
+        out.push(token)
+        continue
+      }
+      const hits = res
+        .flatMap((re) => [...token.content.matchAll(re)])
+        .map((m) => ({ index: m.index, key: m[1] ?? m[2] }))
+        .sort((x, y) => x.index - y.index)
+      if (!hits.length) {
+        out.push(token)
+        continue
+      }
+      let last = 0
+      for (const { index, key } of hits) {
+        if (index < last) continue
+        if (index > last) {
+          const t = new state.Token('text', '', 0)
+          t.content = token.content.slice(last, index)
+          out.push(t)
+        }
+        const tip = md.utils.escapeHtml(`${key} — ${tipOf(key)}`)
+        const h = new state.Token('html_inline', '', 0)
+        h.content = `<abbr class="qisqartma" tabindex="0" data-tip="${tip}" aria-label="${tip}">${key}</abbr>`
+        out.push(h)
+        last = index + key.length
+      }
+      if (last < token.content.length) {
+        const t = new state.Token('text', '', 0)
+        t.content = token.content.slice(last)
+        out.push(t)
+      }
+    }
+    block.children = out
+  }
+})
+
+export function renderMarkdown(source, env = {}) {
+  return md.render(source, env)
 }
 
 /**
