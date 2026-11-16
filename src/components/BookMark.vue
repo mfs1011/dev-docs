@@ -35,6 +35,7 @@ const FILE_MARKS = {
   'xabar-tizimlari': { file: 'xabar-tizimlari.svg', alt: 'Xabar tizimlari' },
   'server-xavfsizligi': { file: 'server-xavfsizligi.svg', alt: 'Server xavfsizligi' },
   'deploy-amaliyoti': { file: 'deploy-amaliyoti.svg', alt: 'Deploy amaliyoti' },
+  'ai-agentlar': { file: 'ai-agentlar.svg', alt: 'AI agentlar' },
 }
 const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`
 </script>
