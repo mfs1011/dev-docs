@@ -53,7 +53,7 @@ Bu qo'llanmaga kirmaydigan mavzular (rasmiy hujjatda bor, lekin mobil ilova asos
 - Desktop ilovalar (Windows, Linux, macOS) va mavjud native ilovaga Flutter qo'shish ("Add to an existing app").
 - Boshqa platformadan o'tuvchilar uchun sahifalar ("Flutter for Android/SwiftUI/React Native devs") — tegishli boblarda faqat havola.
 
-> **Holat.** Tayyor: 1, 5–20-boblar (2026-11-17). Dart qismi VPS'da Dart 3.14.0 bilan; Flutter boblari VPS'da Flutter 3.50.0 bilan (`flutter test`, `flutter build web` va brauzerda skrinshot). Emulyator talab qiladigan
+> **Holat.** Tayyor: 1, 5–21-boblar (2026-11-17). Dart qismi VPS'da Dart 3.14.0 bilan; Flutter boblari VPS'da Flutter 3.50.0 bilan (`flutter test`, `flutter build web` va brauzerda skrinshot). Emulyator talab qiladigan
 > boblar (E) uchun sinov kompyuteriga Flutter SDK, Android Studio va Xcode o'rnatish — egasining ruxsati kerak.
 
 ---
@@ -108,7 +108,7 @@ Bu qo'llanmaga kirmaydigan mavzular (rasmiy hujjatda bor, lekin mobil ilova asos
 
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
-| 21 | Bosish va imo-ishoralar | `GestureDetector`, `InkWell`, surib o'chirish (`Dismissible`), sudrab olib borish | E | [FD Gestures](https://docs.flutter.dev/ui/interactivity/gestures) · [FD Handle taps](https://docs.flutter.dev/cookbook/gestures/handling-taps) · [FD Swipe to dismiss](https://docs.flutter.dev/cookbook/gestures/dismissible) |
+| 21 | [Bosish va imo-ishoralar](21-bosish-imo-ishora.md) | `GestureDetector`, `InkWell`, surib o'chirish (`Dismissible`), sudrab olib borish | E | [FD Gestures](https://docs.flutter.dev/ui/interactivity/gestures) · [FD Handle taps](https://docs.flutter.dev/cookbook/gestures/handling-taps) · [FD Swipe to dismiss](https://docs.flutter.dev/cookbook/gestures/dismissible) |
 | 22 | Formalar va validatsiya | `TextField`, `TextEditingController`, fokus, `Form` va tekshirish, snackbar | E | [FD Input & forms](https://docs.flutter.dev/ui/interactivity/input) · [FD Build a form with validation](https://docs.flutter.dev/cookbook/forms/validation) · [FD Manage focus](https://docs.flutter.dev/cookbook/forms/focus) · [FD Display a snackbar](https://docs.flutter.dev/cookbook/design/snackbars) |
 | 23 | Navigatsiya | `Navigator`, ekranlar orasida o'tish, ma'lumot yuborish va qaytarish, tab va drawer | E | [FD Navigation & routing](https://docs.flutter.dev/ui/navigation) · [FD Navigation basics](https://docs.flutter.dev/cookbook/navigation/navigation-basics) · [FD Send data](https://docs.flutter.dev/cookbook/navigation/passing-data) · [FD Return data](https://docs.flutter.dev/cookbook/navigation/returning-data) · [FD Navigation (tutorial)](https://docs.flutter.dev/learn/pathway/tutorial/navigation) |
 | 24 | Deep link va URL | Havoladan ilovaning kerakli ekraniga ochish: Android App Links, iOS Universal Links, web URL strategiyasi | E W ⚑ | [FD Deep linking](https://docs.flutter.dev/ui/navigation/deep-linking) · [FD App links (Android)](https://docs.flutter.dev/cookbook/navigation/set-up-app-links) · [FD Universal links (iOS)](https://docs.flutter.dev/cookbook/navigation/set-up-universal-links) · [FD URL strategies](https://docs.flutter.dev/ui/navigation/url-strategies) |
