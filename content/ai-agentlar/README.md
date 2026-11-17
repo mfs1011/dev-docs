@@ -28,6 +28,7 @@ Manbalar va versiyalar (2026-11-16 da tekshirilgan):
 | Narsa | Versiya | Qayerdan olindi |
 | --- | --- | --- |
 | Claude Code | **2.1.325** (npm, 2026-11-13) | `npm view @anthropic-ai/claude-code` · <https://code.claude.com/docs/en/changelog> |
+| Claude Agent SDK (TypeScript) | **0.3.326** (npm, 2026-11-16; 46–47-boblar) | `npm view @anthropic-ai/claude-agent-sdk` |
 | MCP spetsifikatsiyasi | **2026-07-28** — "current" holatdagi versiya | <https://modelcontextprotocol.io/specification/versioning> |
 | AGENTS.md | versiyasiz ochiq format; "stewarded by the Agentic AI Foundation under the Linux Foundation" | <https://agents.md/> |
 | OWASP Top 10 for LLM Applications | **2025** nashri | <https://genai.owasp.org/llm-top-10/> |
@@ -72,7 +73,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 
 ---
 
-> **Holat.** Tayyor: 1–39-boblar (2026-11-16). ⚑ belgili boblarning sinab bo'lmagan qismlari hujjat asosida (bob boshida aytilgan). 22-bobning CI qismi hujjat asosida (⚑). Amaliy misollar Claude Code 2.1.325 bilan sinov kompyuterida (macOS) haqiqiy sessiyada olingan.
+> **Holat.** Tayyor: barcha 47 bob (2026-11-17). ⚑ belgili boblarning sinab bo'lmagan qismlari hujjat asosida (bob boshida aytilgan). 22-bobning CI qismi hujjat asosida (⚑). Amaliy misollar Claude Code 2.1.325 bilan sinov kompyuterida (macOS) haqiqiy sessiyada olingan.
 
 ---
 
@@ -165,24 +166,24 @@ Bu qo'llanmaga kirmaydigan mavzular:
 
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
-| 40 | Model va fikrlash darajasini tanlash | Modellar farqi (kuch, tezlik, narx), effort darajasi, qachon kuchli model kerak. Subagentga arzonroq model | L | [CC Model configuration](https://code.claude.com/docs/en/model-config) · [CC Costs — Choose the right model, Adjust extended thinking](https://code.claude.com/docs/en/costs) · [CC Best practices — Change the model and effort](https://code.claude.com/docs/en/best-practices) |
-| 41 | Token va xarajatni boshqarish | Xarajat nimadan iborat, `/usage`, prompt cache. Uzun sessiya nega qimmatlashadi. Tejash: `/clear`, aniq so'rov, CLAUDE.md'ni skill'larga bo'lish, hook bilan chiqishni qisqartirish | L | [CC Manage costs effectively](https://code.claude.com/docs/en/costs) · [CC Prompt caching](https://code.claude.com/docs/en/prompt-caching) |
-| 42 | Natijani o'lchash | Nimani o'lchash mumkin: `/insights` hisoboti (qayerda tushunmovchilik bo'ldi), jamoa analitikasi, OpenTelemetry. Samaradorlik haqidagi umumiy raqamlarga nega ehtiyot bo'lish kerak | L ⚑ | [CC Costs — Analyze your usage patterns](https://code.claude.com/docs/en/costs) · [CC Track team usage with analytics](https://code.claude.com/docs/en/analytics) · [CC Monitoring](https://code.claude.com/docs/en/monitoring-usage) |
+| 40 | [Model va fikrlash darajasini tanlash](40-model-va-effort.md) | Modellar farqi (kuch, tezlik, narx), effort darajasi, qachon kuchli model kerak. Subagentga arzonroq model | L | [CC Model configuration](https://code.claude.com/docs/en/model-config) · [CC Costs — Choose the right model, Adjust extended thinking](https://code.claude.com/docs/en/costs) · [CC Best practices — Change the model and effort](https://code.claude.com/docs/en/best-practices) |
+| 41 | [Token va xarajatni boshqarish](41-token-va-xarajat.md) | Xarajat nimadan iborat, `/usage`, prompt cache. Uzun sessiya nega qimmatlashadi. Tejash: `/clear`, aniq so'rov, CLAUDE.md'ni skill'larga bo'lish, hook bilan chiqishni qisqartirish | L | [CC Manage costs effectively](https://code.claude.com/docs/en/costs) · [CC Prompt caching](https://code.claude.com/docs/en/prompt-caching) |
+| 42 | [Natijani o'lchash](42-natijani-olchash.md) | Nimani o'lchash mumkin: `/insights` hisoboti (qayerda tushunmovchilik bo'ldi), jamoa analitikasi, OpenTelemetry. Samaradorlik haqidagi umumiy raqamlarga nega ehtiyot bo'lish kerak | L ⚑ | [CC Costs — Analyze your usage patterns](https://code.claude.com/docs/en/costs) · [CC Track team usage with analytics](https://code.claude.com/docs/en/analytics) · [CC Monitoring](https://code.claude.com/docs/en/monitoring-usage) |
 
 ## IX qism — Dasturchi va AI (43–45)
 
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
-| 43 | AI bilan o'rganish va ko'nikmani saqlash | Anthropic tadqiqoti (2026-01-29, 52 dasturchi): AI bilan yangi kutubxona o'rganganlar testda 50%, qo'lda yozganlar 67%; eng katta farq debugging'da. Bilimni saqlagan usullar: kod so'rab, keyin tushunish uchun savol berish; faqat tushuncha so'rash. Learning va Explanatory uslublari (output style) | L ⚑ | [AE AI assistance and coding skills](https://www.anthropic.com/research/AI-assistance-coding-skills) · [CC Output styles — Learning, Explanatory](https://code.claude.com/docs/en/output-styles) |
-| 44 | Jamoada AI bilan ishlash | Umumiy sozlamalarni git'da saqlash (CLAUDE.md, ruxsatlar, skill'lar), tashkilot siyosati (managed settings), review madaniyati, xavfsizlik bo'yicha o'qitish. Jamoaga joriy qilish | — ⚑ | [CC Security — Team security](https://code.claude.com/docs/en/security) · [CC Settings](https://code.claude.com/docs/en/settings) · [CC Champion kit](https://code.claude.com/docs/en/champion-kit) · [CC Communications kit](https://code.claude.com/docs/en/communications-kit) |
-| 45 | Shaxsiy ish tartibi | Butun qo'llanmaning amaliy yakuni: har kungi ro'yxat (vazifa → reja → tekshiruv → review), sozlamani asta-sekin qurish, nimani qilishni to'xtatsa bo'ladi | — | [CC Best practices — What you can stop doing](https://code.claude.com/docs/en/best-practices) · [CC Extend — Build your setup over time](https://code.claude.com/docs/en/features-overview) |
+| 43 | [AI bilan o'rganish va ko'nikmani saqlash](43-organish-konikma.md) | Anthropic tadqiqoti (2026-01-29, 52 dasturchi): AI bilan yangi kutubxona o'rganganlar testda 50%, qo'lda yozganlar 67%; eng katta farq debugging'da. Bilimni saqlagan usullar: kod so'rab, keyin tushunish uchun savol berish; faqat tushuncha so'rash. Learning va Explanatory uslublari (output style) | L ⚑ | [AE AI assistance and coding skills](https://www.anthropic.com/research/AI-assistance-coding-skills) · [CC Output styles — Learning, Explanatory](https://code.claude.com/docs/en/output-styles) |
+| 44 | [Jamoada AI bilan ishlash](44-jamoada-ishlash.md) | Umumiy sozlamalarni git'da saqlash (CLAUDE.md, ruxsatlar, skill'lar), tashkilot siyosati (managed settings), review madaniyati, xavfsizlik bo'yicha o'qitish. Jamoaga joriy qilish | — ⚑ | [CC Security — Team security](https://code.claude.com/docs/en/security) · [CC Settings](https://code.claude.com/docs/en/settings) · [CC Champion kit](https://code.claude.com/docs/en/champion-kit) · [CC Communications kit](https://code.claude.com/docs/en/communications-kit) |
+| 45 | [Shaxsiy ish tartibi](45-shaxsiy-ish-tartibi.md) | Butun qo'llanmaning amaliy yakuni: har kungi ro'yxat (vazifa → reja → tekshiruv → review), sozlamani asta-sekin qurish, nimani qilishni to'xtatsa bo'ladi | — | [CC Best practices — What you can stop doing](https://code.claude.com/docs/en/best-practices) · [CC Extend — Build your setup over time](https://code.claude.com/docs/en/features-overview) |
 
 ## X qism — O'z agentingizni yasash (46–47)
 
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
-| 46 | Agent ichidan qaraganda | Agent sikli kod darajasida: model → tool chaqiruvi → natija → keyingi qadam. Eng oddiy yechimdan boshlash; framework yashiradigan narsalar | L | [CC Agent SDK — How the agent loop works](https://code.claude.com/docs/en/agent-sdk/agent-loop) · [AE Building effective agents — When and how to use frameworks](https://www.anthropic.com/research/building-effective-agents) |
-| 47 | Agent SDK bilan kichik agent | Loyiha uchun kichik agent (masalan, PR tavsifini tekshiruvchi): o'z tool'i, ruxsatlar, xarajatni kuzatish, xavfsiz joylash | L | [CC Agent SDK overview](https://code.claude.com/docs/en/agent-sdk/overview) · [CC Agent SDK quickstart](https://code.claude.com/docs/en/agent-sdk/quickstart) · [CC Give Claude custom tools](https://code.claude.com/docs/en/agent-sdk/custom-tools) · [CC Securely deploying AI agents](https://code.claude.com/docs/en/agent-sdk/secure-deployment) |
+| 46 | [Agent ichidan qaraganda](46-agent-ichidan.md) | Agent sikli kod darajasida: model → tool chaqiruvi → natija → keyingi qadam. Eng oddiy yechimdan boshlash; framework yashiradigan narsalar | L | [CC Agent SDK — How the agent loop works](https://code.claude.com/docs/en/agent-sdk/agent-loop) · [AE Building effective agents — When and how to use frameworks](https://www.anthropic.com/research/building-effective-agents) |
+| 47 | [Agent SDK bilan kichik agent](47-sdk-kichik-agent.md) | Loyiha uchun kichik agent (masalan, PR tavsifini tekshiruvchi): o'z tool'i, ruxsatlar, xarajatni kuzatish, xavfsiz joylash | L | [CC Agent SDK overview](https://code.claude.com/docs/en/agent-sdk/overview) · [CC Agent SDK quickstart](https://code.claude.com/docs/en/agent-sdk/quickstart) · [CC Give Claude custom tools](https://code.claude.com/docs/en/agent-sdk/custom-tools) · [CC Securely deploying AI agents](https://code.claude.com/docs/en/agent-sdk/secure-deployment) |
 
 ---
 
