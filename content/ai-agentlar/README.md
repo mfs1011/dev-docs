@@ -72,7 +72,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 
 ---
 
-> **Holat.** Tayyor: 1–42-boblar (2026-11-17). ⚑ belgili boblarning sinab bo'lmagan qismlari hujjat asosida (bob boshida aytilgan). 22-bobning CI qismi hujjat asosida (⚑). Amaliy misollar Claude Code 2.1.325 bilan sinov kompyuterida (macOS) haqiqiy sessiyada olingan.
+> **Holat.** Tayyor: 1–45-boblar (2026-11-17). ⚑ belgili boblarning sinab bo'lmagan qismlari hujjat asosida (bob boshida aytilgan). 22-bobning CI qismi hujjat asosida (⚑). Amaliy misollar Claude Code 2.1.325 bilan sinov kompyuterida (macOS) haqiqiy sessiyada olingan.
 
 ---
 
@@ -173,9 +173,9 @@ Bu qo'llanmaga kirmaydigan mavzular:
 
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
-| 43 | AI bilan o'rganish va ko'nikmani saqlash | Anthropic tadqiqoti (2026-01-29, 52 dasturchi): AI bilan yangi kutubxona o'rganganlar testda 50%, qo'lda yozganlar 67%; eng katta farq debugging'da. Bilimni saqlagan usullar: kod so'rab, keyin tushunish uchun savol berish; faqat tushuncha so'rash. Learning va Explanatory uslublari (output style) | L ⚑ | [AE AI assistance and coding skills](https://www.anthropic.com/research/AI-assistance-coding-skills) · [CC Output styles — Learning, Explanatory](https://code.claude.com/docs/en/output-styles) |
-| 44 | Jamoada AI bilan ishlash | Umumiy sozlamalarni git'da saqlash (CLAUDE.md, ruxsatlar, skill'lar), tashkilot siyosati (managed settings), review madaniyati, xavfsizlik bo'yicha o'qitish. Jamoaga joriy qilish | — ⚑ | [CC Security — Team security](https://code.claude.com/docs/en/security) · [CC Settings](https://code.claude.com/docs/en/settings) · [CC Champion kit](https://code.claude.com/docs/en/champion-kit) · [CC Communications kit](https://code.claude.com/docs/en/communications-kit) |
-| 45 | Shaxsiy ish tartibi | Butun qo'llanmaning amaliy yakuni: har kungi ro'yxat (vazifa → reja → tekshiruv → review), sozlamani asta-sekin qurish, nimani qilishni to'xtatsa bo'ladi | — | [CC Best practices — What you can stop doing](https://code.claude.com/docs/en/best-practices) · [CC Extend — Build your setup over time](https://code.claude.com/docs/en/features-overview) |
+| 43 | [AI bilan o'rganish va ko'nikmani saqlash](43-organish-konikma.md) | Anthropic tadqiqoti (2026-01-29, 52 dasturchi): AI bilan yangi kutubxona o'rganganlar testda 50%, qo'lda yozganlar 67%; eng katta farq debugging'da. Bilimni saqlagan usullar: kod so'rab, keyin tushunish uchun savol berish; faqat tushuncha so'rash. Learning va Explanatory uslublari (output style) | L ⚑ | [AE AI assistance and coding skills](https://www.anthropic.com/research/AI-assistance-coding-skills) · [CC Output styles — Learning, Explanatory](https://code.claude.com/docs/en/output-styles) |
+| 44 | [Jamoada AI bilan ishlash](44-jamoada-ishlash.md) | Umumiy sozlamalarni git'da saqlash (CLAUDE.md, ruxsatlar, skill'lar), tashkilot siyosati (managed settings), review madaniyati, xavfsizlik bo'yicha o'qitish. Jamoaga joriy qilish | — ⚑ | [CC Security — Team security](https://code.claude.com/docs/en/security) · [CC Settings](https://code.claude.com/docs/en/settings) · [CC Champion kit](https://code.claude.com/docs/en/champion-kit) · [CC Communications kit](https://code.claude.com/docs/en/communications-kit) |
+| 45 | [Shaxsiy ish tartibi](45-shaxsiy-ish-tartibi.md) | Butun qo'llanmaning amaliy yakuni: har kungi ro'yxat (vazifa → reja → tekshiruv → review), sozlamani asta-sekin qurish, nimani qilishni to'xtatsa bo'ladi | — | [CC Best practices — What you can stop doing](https://code.claude.com/docs/en/best-practices) · [CC Extend — Build your setup over time](https://code.claude.com/docs/en/features-overview) |
 
 ## X qism — O'z agentingizni yasash (46–47)
 
