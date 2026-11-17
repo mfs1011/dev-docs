@@ -145,6 +145,7 @@ Birinchi noutbukda disk kam va Docker yo'q. Sinov VPS'ida 2 GB xotira bor: `MemT
 | --- | --- | --- |
 | **Kafka** qo'llanmasi: boblar va misollar; "Xabar tizimlari"ning Kafka misollari | Broker'ni ishga tushirish skripti `kafka-server-start.sh` Java uchun standartda `-Xmx1G -Xms1G` (1 GB heap) ajratadi. VPS'dagi bo'sh xotiraga bu sig'maydi | Docker: Kafka'ning rasmiy Quick Start'idagi `apache/kafka` image. Versiya: `content/kafka/README.md` |
 | **Docker** qo'llanmasi | Birinchi noutbukda Docker o'rnatib bo'lmaydi (disk) | Docker Engine yoki Desktop |
+| **AI agentlar: XII qism (53–56) va 57-bob** — ixtiyoriy amaliy sinov | 2026-11-17 da boblar rasmiy hujjat asosida (⚑) yozildi. Birinchi noutbukda diskda ~1.4 GB bo'sh — Ollama va model sig'maydi | Ollama (docs.ollama.com), Claude Code. 56-bobdagi o'lchash rejasi bo'yicha sinab, natijalarni boblarga qo'shish; ⚑ ni olib tashlash |
 
 Ikkinchi noutbukda boshlashdan oldin shu faylni, `CLAUDE.md` ni va kitobning `README.md` sini (mundarija, versiyalar jadvali) o'qing. Versiyalarni yozishdan oldin qayta tekshiring.
 
