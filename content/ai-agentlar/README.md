@@ -72,7 +72,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 
 ---
 
-> **Holat.** Tayyor: 1–39-boblar (2026-11-16). ⚑ belgili boblarning sinab bo'lmagan qismlari hujjat asosida (bob boshida aytilgan). 22-bobning CI qismi hujjat asosida (⚑). Amaliy misollar Claude Code 2.1.325 bilan sinov kompyuterida (macOS) haqiqiy sessiyada olingan.
+> **Holat.** Tayyor: 1–42-boblar (2026-11-17). ⚑ belgili boblarning sinab bo'lmagan qismlari hujjat asosida (bob boshida aytilgan). 22-bobning CI qismi hujjat asosida (⚑). Amaliy misollar Claude Code 2.1.325 bilan sinov kompyuterida (macOS) haqiqiy sessiyada olingan.
 
 ---
 
@@ -165,9 +165,9 @@ Bu qo'llanmaga kirmaydigan mavzular:
 
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
-| 40 | Model va fikrlash darajasini tanlash | Modellar farqi (kuch, tezlik, narx), effort darajasi, qachon kuchli model kerak. Subagentga arzonroq model | L | [CC Model configuration](https://code.claude.com/docs/en/model-config) · [CC Costs — Choose the right model, Adjust extended thinking](https://code.claude.com/docs/en/costs) · [CC Best practices — Change the model and effort](https://code.claude.com/docs/en/best-practices) |
-| 41 | Token va xarajatni boshqarish | Xarajat nimadan iborat, `/usage`, prompt cache. Uzun sessiya nega qimmatlashadi. Tejash: `/clear`, aniq so'rov, CLAUDE.md'ni skill'larga bo'lish, hook bilan chiqishni qisqartirish | L | [CC Manage costs effectively](https://code.claude.com/docs/en/costs) · [CC Prompt caching](https://code.claude.com/docs/en/prompt-caching) |
-| 42 | Natijani o'lchash | Nimani o'lchash mumkin: `/insights` hisoboti (qayerda tushunmovchilik bo'ldi), jamoa analitikasi, OpenTelemetry. Samaradorlik haqidagi umumiy raqamlarga nega ehtiyot bo'lish kerak | L ⚑ | [CC Costs — Analyze your usage patterns](https://code.claude.com/docs/en/costs) · [CC Track team usage with analytics](https://code.claude.com/docs/en/analytics) · [CC Monitoring](https://code.claude.com/docs/en/monitoring-usage) |
+| 40 | [Model va fikrlash darajasini tanlash](40-model-va-effort.md) | Modellar farqi (kuch, tezlik, narx), effort darajasi, qachon kuchli model kerak. Subagentga arzonroq model | L | [CC Model configuration](https://code.claude.com/docs/en/model-config) · [CC Costs — Choose the right model, Adjust extended thinking](https://code.claude.com/docs/en/costs) · [CC Best practices — Change the model and effort](https://code.claude.com/docs/en/best-practices) |
+| 41 | [Token va xarajatni boshqarish](41-token-va-xarajat.md) | Xarajat nimadan iborat, `/usage`, prompt cache. Uzun sessiya nega qimmatlashadi. Tejash: `/clear`, aniq so'rov, CLAUDE.md'ni skill'larga bo'lish, hook bilan chiqishni qisqartirish | L | [CC Manage costs effectively](https://code.claude.com/docs/en/costs) · [CC Prompt caching](https://code.claude.com/docs/en/prompt-caching) |
+| 42 | [Natijani o'lchash](42-natijani-olchash.md) | Nimani o'lchash mumkin: `/insights` hisoboti (qayerda tushunmovchilik bo'ldi), jamoa analitikasi, OpenTelemetry. Samaradorlik haqidagi umumiy raqamlarga nega ehtiyot bo'lish kerak | L ⚑ | [CC Costs — Analyze your usage patterns](https://code.claude.com/docs/en/costs) · [CC Track team usage with analytics](https://code.claude.com/docs/en/analytics) · [CC Monitoring](https://code.claude.com/docs/en/monitoring-usage) |
 
 ## IX qism — Dasturchi va AI (43–45)
 
