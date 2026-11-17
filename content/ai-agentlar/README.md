@@ -28,6 +28,7 @@ Manbalar va versiyalar (2026-11-16 da tekshirilgan):
 | Narsa | Versiya | Qayerdan olindi |
 | --- | --- | --- |
 | Claude Code | **2.1.325** (npm, 2026-11-13) | `npm view @anthropic-ai/claude-code` · <https://code.claude.com/docs/en/changelog> |
+| Claude Agent SDK (TypeScript) | **0.3.326** (npm, 2026-11-16; 46–47-boblar) | `npm view @anthropic-ai/claude-agent-sdk` |
 | MCP spetsifikatsiyasi | **2026-07-28** — "current" holatdagi versiya | <https://modelcontextprotocol.io/specification/versioning> |
 | AGENTS.md | versiyasiz ochiq format; "stewarded by the Agentic AI Foundation under the Linux Foundation" | <https://agents.md/> |
 | OWASP Top 10 for LLM Applications | **2025** nashri | <https://genai.owasp.org/llm-top-10/> |
@@ -72,7 +73,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 
 ---
 
-> **Holat.** Tayyor: 1–45-boblar (2026-11-17). ⚑ belgili boblarning sinab bo'lmagan qismlari hujjat asosida (bob boshida aytilgan). 22-bobning CI qismi hujjat asosida (⚑). Amaliy misollar Claude Code 2.1.325 bilan sinov kompyuterida (macOS) haqiqiy sessiyada olingan.
+> **Holat.** Tayyor: barcha 47 bob (2026-11-17). ⚑ belgili boblarning sinab bo'lmagan qismlari hujjat asosida (bob boshida aytilgan). 22-bobning CI qismi hujjat asosida (⚑). Amaliy misollar Claude Code 2.1.325 bilan sinov kompyuterida (macOS) haqiqiy sessiyada olingan.
 
 ---
 
@@ -181,8 +182,8 @@ Bu qo'llanmaga kirmaydigan mavzular:
 
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
-| 46 | Agent ichidan qaraganda | Agent sikli kod darajasida: model → tool chaqiruvi → natija → keyingi qadam. Eng oddiy yechimdan boshlash; framework yashiradigan narsalar | L | [CC Agent SDK — How the agent loop works](https://code.claude.com/docs/en/agent-sdk/agent-loop) · [AE Building effective agents — When and how to use frameworks](https://www.anthropic.com/research/building-effective-agents) |
-| 47 | Agent SDK bilan kichik agent | Loyiha uchun kichik agent (masalan, PR tavsifini tekshiruvchi): o'z tool'i, ruxsatlar, xarajatni kuzatish, xavfsiz joylash | L | [CC Agent SDK overview](https://code.claude.com/docs/en/agent-sdk/overview) · [CC Agent SDK quickstart](https://code.claude.com/docs/en/agent-sdk/quickstart) · [CC Give Claude custom tools](https://code.claude.com/docs/en/agent-sdk/custom-tools) · [CC Securely deploying AI agents](https://code.claude.com/docs/en/agent-sdk/secure-deployment) |
+| 46 | [Agent ichidan qaraganda](46-agent-ichidan.md) | Agent sikli kod darajasida: model → tool chaqiruvi → natija → keyingi qadam. Eng oddiy yechimdan boshlash; framework yashiradigan narsalar | L | [CC Agent SDK — How the agent loop works](https://code.claude.com/docs/en/agent-sdk/agent-loop) · [AE Building effective agents — When and how to use frameworks](https://www.anthropic.com/research/building-effective-agents) |
+| 47 | [Agent SDK bilan kichik agent](47-sdk-kichik-agent.md) | Loyiha uchun kichik agent (masalan, PR tavsifini tekshiruvchi): o'z tool'i, ruxsatlar, xarajatni kuzatish, xavfsiz joylash | L | [CC Agent SDK overview](https://code.claude.com/docs/en/agent-sdk/overview) · [CC Agent SDK quickstart](https://code.claude.com/docs/en/agent-sdk/quickstart) · [CC Give Claude custom tools](https://code.claude.com/docs/en/agent-sdk/custom-tools) · [CC Securely deploying AI agents](https://code.claude.com/docs/en/agent-sdk/secure-deployment) |
 
 ---
 
