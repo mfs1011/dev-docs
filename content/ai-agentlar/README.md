@@ -28,6 +28,7 @@ Manbalar va versiyalar (2026-11-16 da tekshirilgan):
 | Narsa | Versiya | Qayerdan olindi |
 | --- | --- | --- |
 | Claude Code | **2.1.325** (npm, 2026-11-13) | `npm view @anthropic-ai/claude-code` · <https://code.claude.com/docs/en/changelog> |
+| Ollama | **v0.40.16** (2026-11-09; 53–56-boblar) | <https://github.com/ollama/ollama/releases> |
 | Claude Agent SDK (TypeScript) | **0.3.326** (npm, 2026-11-16; 46–47-boblar) | `npm view @anthropic-ai/claude-agent-sdk` |
 | MCP spetsifikatsiyasi | **2026-07-28** — "current" holatdagi versiya | <https://modelcontextprotocol.io/specification/versioning> |
 | AGENTS.md | versiyasiz ochiq format; "stewarded by the Agentic AI Foundation under the Linux Foundation" | <https://agents.md/> |
@@ -59,7 +60,8 @@ Qisqartmalar (bob matnida qisqartma ustiga sichqonchani olib borsangiz yoki uni 
 
 - **L** — lokal: sinov kompyuterida (macOS) Claude Code bilan, alohida sinov repozitoriysida; terminal chiqishi va skrinshot.
 - **C** — CI: GitHub Actions'da, sinov repozitoriysida.
-- **V** — sinov VPS'ida (Ubuntu 26.04): sandbox, konteyner, skriptdan ishga tushirish.
+- **V** — sinov VPS'ida (Ubuntu 26.04): sandbox, konteyner, skriptdan ishga tushirish, deploy.
+- **L2** — ikkinchi noutbukda (lokal modellar, IDE): bu kompyuterda diskda joy yetmaydi.
 - **—** — tushuncha bobi, buyruqsiz.
 
 ⚑ belgisi: bobning bir qismi to'liq sinab bo'lmaydi yoki asosi faqat tadqiqot/maqola (hujjat emas) — bobda bu ochiq
@@ -73,7 +75,7 @@ Bu qo'llanmaga kirmaydigan mavzular:
 
 ---
 
-> **Holat.** Tayyor: barcha 47 bob (2026-11-17). ⚑ belgili boblarning sinab bo'lmagan qismlari hujjat asosida (bob boshida aytilgan). 22-bobning CI qismi hujjat asosida (⚑). Amaliy misollar Claude Code 2.1.325 bilan sinov kompyuterida (macOS) haqiqiy sessiyada olingan.
+> **Holat.** Tayyor: barcha 63 bob (2026-11-17). 51, 53–58-boblar rasmiy hujjat asosida (⚑). ⚑ belgili boblarning sinab bo'lmagan qismlari hujjat asosida (bob boshida aytilgan). 22-bobning CI qismi hujjat asosida (⚑). Amaliy misollar Claude Code 2.1.325 bilan sinov kompyuterida (macOS) haqiqiy sessiyada olingan.
 
 ---
 
@@ -185,6 +187,52 @@ Bu qo'llanmaga kirmaydigan mavzular:
 | 46 | [Agent ichidan qaraganda](46-agent-ichidan.md) | Agent sikli kod darajasida: model → tool chaqiruvi → natija → keyingi qadam. Eng oddiy yechimdan boshlash; framework yashiradigan narsalar | L | [CC Agent SDK — How the agent loop works](https://code.claude.com/docs/en/agent-sdk/agent-loop) · [AE Building effective agents — When and how to use frameworks](https://www.anthropic.com/research/building-effective-agents) |
 | 47 | [Agent SDK bilan kichik agent](47-sdk-kichik-agent.md) | Loyiha uchun kichik agent (masalan, PR tavsifini tekshiruvchi): o'z tool'i, ruxsatlar, xarajatni kuzatish, xavfsiz joylash | L | [CC Agent SDK overview](https://code.claude.com/docs/en/agent-sdk/overview) · [CC Agent SDK quickstart](https://code.claude.com/docs/en/agent-sdk/quickstart) · [CC Give Claude custom tools](https://code.claude.com/docs/en/agent-sdk/custom-tools) · [CC Securely deploying AI agents](https://code.claude.com/docs/en/agent-sdk/secure-deployment) |
 
+## XI qism — Amaliy loyiha: boshidan oxirigacha (48–52)
+
+Bitta kichik ilova (bo'lib to'lash kalkulyatori: API + veb-sahifa) qo'llanmadagi usullar bilan noldan production'gacha. Kod ochiq sinov
+repozitoriysida, deploy — sinov serveriga.
+
+| # | Bob | Mazmun | Muhit | Rasmiy manba |
+| --- | --- | --- | --- | --- |
+| 48 | [Loyihani boshlash](48-loyihani-boshlash.md) | Bo'sh repo, birinchi CLAUDE.md, reja rejimida arxitektura, vazifani bo'laklash | L | [CC Common workflows](https://code.claude.com/docs/en/common-workflows) · [CC Best practices](https://code.claude.com/docs/en/best-practices) |
+| 49 | [Funksiyani test bilan qurish](49-test-bilan-qurish.md) | Avval test, keyin kod; API va veb-sahifa; brauzerda tekshirish; yashirin tekshiruv | L | [CC Best practices — Give Claude a check to run](https://code.claude.com/docs/en/best-practices) · [CC Common workflows](https://code.claude.com/docs/en/common-workflows) |
+| 50 | [Review, xavfsizlik va PR](50-review-va-pr.md) | `/code-review`, `/security-review`, commit va PR tavsifi, 47-bobdagi PR tekshiruvchi | L | [CC Commands](https://code.claude.com/docs/en/commands) · [CC Security guidance plugin](https://code.claude.com/docs/en/security-guidance) |
+| 51 | [PR'da AI review: CodeRabbit kabi](51-pr-review-ci.md) | Code Review (CodeRabbit kabi): `REVIEW.md`, `@claude review` buyruqlari, narx. GitHub Actions'da review workflow'i va o'z skill'ingiz; tokensiz `/code-review --comment`, ultrareview; faqat testlar uchun CI | — ⚑ | [CC Code Review](https://code.claude.com/docs/en/code-review) · [CC Claude Code GitHub Actions](https://code.claude.com/docs/en/github-actions) · [CC Review locally with /code-review](https://code.claude.com/docs/en/code-review-local) |
+| 52 | [Deploy va ishlab turgan ilova](52-deploy.md) | Sinov serveriga chiqarish (systemd, Nginx — Linux va Nginx kitoblariga tayanib), xato hisobotidan tuzatishgacha | L V | [CC Common workflows](https://code.claude.com/docs/en/common-workflows) · Linux va Nginx qo'llanmalaridagi rasmiy manbalar |
+
+## XII qism — Lokal va o'z serveringizdagi modellar (53–56)
+
+> Bu qism rasmiy hujjatlar (Claude Code, Ollama) asosida yozilgan (⚑): lokal model bu kompyuterda sinalmadi (diskda joy yo'q).
+
+| # | Bob | Mazmun | Muhit | Rasmiy manba |
+| --- | --- | --- | --- | --- |
+| 53 | [Lokal model qachon kerak](53-lokal-model-qachon.md) | Maxfiylik, narx, internet, apparat talabi; bulut modeli bilan farqi. Ma'lumot qayerga ketadi (38-bob) | — ⚑ | [CC LLM gateways](https://code.claude.com/docs/en/llm-gateway) · [CC Data usage](https://code.claude.com/docs/en/data-usage) |
+| 54 | [Model serverini ko'tarish](54-model-server.md) | Ollama'ni o'rnatish, model tanlash va yuklab olish, xotira va kontekst hajmi | — ⚑ | [Ollama docs](https://docs.ollama.com/) |
+| 55 | [Agentni lokal modelga ulash](55-agentni-lokal-modelga.md) | Anthropic API bilan mos interfeys, `ANTHROPIC_BASE_URL`; Claude Code'ni lokal model bilan ishga tushirish va cheklovlar | — ⚑ | [Ollama — Claude Code integration](https://docs.ollama.com/integrations/claude-code) · [Ollama — Anthropic compatibility](https://docs.ollama.com/api/anthropic-compatibility) · [CC Gateway compatibility guide](https://code.claude.com/docs/en/llm-gateway-protocol) |
+| 56 | [Lokal modelni o'zingiz baholash](56-lokal-modelni-baholash.md) | 40-bobdagi vazifa va yashirin tekshiruv lokal modellarda; tezlik, sifat, tool chaqiruvlari | — ⚑ | 40-bobdagi usul |
+
+## XIII qism — IDE va boshqa platformalar (57–58)
+
+| # | Bob | Mazmun | Muhit | Rasmiy manba |
+| --- | --- | --- | --- | --- |
+| 57 | [VS Code va JetBrains](57-vscode-jetbrains.md) | Kengaytma, diff ko'rish, tanlangan kodni kontekstga berish, terminal bilan farqi | — ⚑ | [CC Use Claude Code in VS Code](https://code.claude.com/docs/en/vs-code) · [CC JetBrains IDEs](https://code.claude.com/docs/en/jetbrains) |
+| 58 | [Desktop, veb va telefon](58-platformalar.md) | Qayerda ishga tushirish: CLI, Desktop, bulut sessiyalari, Remote Control; nima qayerda ishlaydi | L ⚑ | [CC Platforms and integrations](https://code.claude.com/docs/en/platforms) · [CC Claude Code in the cloud](https://code.claude.com/docs/en/web-quickstart) · [CC Desktop](https://code.claude.com/docs/en/desktop) |
+
+## XIV qism — Agentni sinash (59–60)
+
+| # | Bob | Mazmun | Muhit | Rasmiy manba |
+| --- | --- | --- | --- | --- |
+| 59 | [Muvaffaqiyat mezoni va sinov to'plami](59-sinov-toplami.md) | Agent "yaxshi ishladi" degani nima: o'lchanadigan mezonlar, sinov holatlari, avtomatik baholash. 47-bobdagi agent uchun to'plam | L | [Claude Platform: Define success criteria and build evaluations](https://platform.claude.com/docs/en/test-and-evaluate/develop-tests) |
+| 60 | [O'zgarishdan keyin regressiya](60-regressiya.md) | Prompt, model yoki tool o'zgarganda natijani solishtirish; CI'da sinov to'plami | L C | [Claude Platform: Define success criteria and build evaluations](https://platform.claude.com/docs/en/test-and-evaluate/develop-tests) |
+
+## XV qism — Ma'lumotnoma (61–63)
+
+| # | Bob | Mazmun | Muhit | Rasmiy manba |
+| --- | --- | --- | --- | --- |
+| 61 | [Buyruqlar va sozlamalar](61-buyruqlar-sozlamalar.md) | Eng kerakli buyruqlar, CLI bayroqlari, klaviatura, sozlama kalitlari — bir sahifada, har biri tegishli bobga havola | — | [CC Commands](https://code.claude.com/docs/en/commands) · [CC CLI reference](https://code.claude.com/docs/en/cli-reference) · [CC Settings](https://code.claude.com/docs/en/settings) |
+| 62 | [Muammolar va yechimlar](62-muammolar-yechimlar.md) | O'rnatish va kirish, sekinlik, keng tarqalgan xato xabarlari va ularning ma'nosi | — | [CC Troubleshoot installation and login](https://code.claude.com/docs/en/troubleshoot-install) · [CC Troubleshooting](https://code.claude.com/docs/en/troubleshooting) · [CC Error reference](https://code.claude.com/docs/en/errors) |
+| 63 | [Lug'at](63-lugat.md) | Qo'llanmadagi atamalar: o'zbekcha nomi, inglizcha asli, qisqa ta'rifi va bob | — | [CC Glossary](https://code.claude.com/docs/en/glossary) |
+
 ---
 
 ## Egasining qarorini kutayotgan savollar
@@ -192,4 +240,5 @@ Bu qo'llanmaga kirmaydigan mavzular:
 1. **Codex va Copilot'ni ham amalda sinash** — buning uchun ularning hisobi kerak. Hisobsiz bu vositalar faqat hujjat
    bo'yicha, ⚑ belgisi bilan beriladi.
 2. **X qism (o'z agentingizni yasash)** — qo'llanmada qoladimi yoki alohida kitobga chiqariladimi.
-3. **CI boblari (22, 33)** — sinov uchun alohida GitHub repozitoriysi kerak (Deploy amaliyoti kitobidagi savol bilan bir xil).
+3. ~~CI boblari uchun GitHub repozitoriysi~~ — hal bo'ldi (2026-11-17): ochiq sinov repozitoriysi `mfs1011/ai-agentlar-sinov` (XI qism).
+   Egasining qarori: ochiq repo'ga hech qanday token yoki secret qo'yilmaydi — `claude-code-action` va Code Review qismlari hujjat asosida (⚑).
