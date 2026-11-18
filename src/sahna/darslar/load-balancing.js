@@ -76,11 +76,11 @@ export default {
   },
   afsona: [{ k: 'sorov', nom: 'so‘rov' }, { k: 'ogir', nom: 'og‘ir so‘rov' }, { k: 'xato', nom: 'xato' }],
   tugunlar: {
-    users: { ikonka: 'foydalanuvchilar', nom: 'Foydalanuvchilar', izoh: 'yuklama skripti', x: 120, y: 310 },
-    lb: { ikonka: 'lb', nom: 'Load balancer', izoh: 'nginx 1.30', x: 420, y: 310 },
-    a: { ikonka: 'server', nom: 'Server A', izoh: '10.70.0.11', x: 760, y: 150 },
-    b: { ikonka: 'server', nom: 'Server B', izoh: '10.70.0.12', x: 760, y: 310 },
-    c: { ikonka: 'server', nom: 'Server C', izoh: '10.70.0.13', x: 760, y: 470 },
+    users: { ikonka: 'foydalanuvchilar', nom: 'Foydalanuvchilar', izoh: 'yuklama skripti', x: 60, y: 330 },
+    lb: { ikonka: 'lb', nom: 'Load balancer', izoh: 'nginx 1.30', x: 400, y: 330 },
+    a: { ikonka: 'server', nom: 'Server A', izoh: '10.70.0.11', x: 800, y: 80 },
+    b: { ikonka: 'server', nom: 'Server B', izoh: '10.70.0.12', x: 800, y: 330 },
+    c: { ikonka: 'server', nom: 'Server C', izoh: '10.70.0.13', x: 800, y: 580 },
   },
   chiziqlar: [['users', 'a'], ['users', 'lb'], ['lb', 'a'], ['lb', 'b'], ['lb', 'c']],
   qadamlar: [

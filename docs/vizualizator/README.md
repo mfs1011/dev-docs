@@ -196,8 +196,11 @@ olmaydigan o'quvchi uchun).
   - sahna shu holatda ham to'liq tushunarli bo'lishi kerak.
 - **Sahna ustidagi kartalar** ("hisob", "vaqt qayerga ketdi") — `--bg-elevated` karta, mono raqamlar.
 
-> Ochiq savol (egasiga): tekis 2D uslubmi yoki o'zimizning yengil izometriyamizmi? Tavsiya — **tekis 2D**. Sabablari:
-> saytdagi boshqa animatsiyalar bilan bir xil ko'rinadi, mobilda o'qilishi oson, chizish arzon.
+> **Qaror (egasi, 2026-11-19): izometrik 3D**, ranglar va stilistika saytnikiday. Amalda: `src/sahna/izo.js` —
+> pol tekisligi proyeksiyasi va o'zimiz chizgan bloklar (server qutisi tirqishlari bilan, baza silindri, noutbuk,
+> router antennasi bilan, odamlar platformasi); yuzalar `--*-soft` rangda, chegara to'q tokenda, yon yuzalar shaffof
+> qora qatlam bilan soyalanadi; ust yuzada ikonka; nom yorlig'i blok ostida. Tor (tik) ekranda oqim yuqoridan pastga
+> yo'naladi.
 
 ### 3.4. Sahifa joylashuvi
 

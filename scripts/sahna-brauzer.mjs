@@ -38,7 +38,7 @@ for (const tema of ['light', 'dark']) {
         await p.waitForTimeout(900)
         const nom = `${d.yol.split('/').pop()} q${q} ${w}px ${tema}`
         const r = await p.evaluate(() => {
-          const kartalar = [...document.querySelectorAll('.sahna-svg .tugun .karta')].map((e) => e.getBoundingClientRect())
+          const kartalar = [...document.querySelectorAll('.sahna-svg .tugun .yorliq-fon')].map((e) => e.getBoundingClientRect())
           let kesish = 0
           for (let i = 0; i < kartalar.length; i++) for (let j = i + 1; j < kartalar.length; j++) {
             const a = kartalar[i], c = kartalar[j]
