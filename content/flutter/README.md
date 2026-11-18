@@ -41,6 +41,7 @@ Qisqartmalar:
 - **D** — Dart dasturi (`dart run`), emulyator kerak emas.
 - **E** — Android emulyatori va iOS simulyatori (sinov kompyuteri), skrinshot bilan.
 - **T** — testlar (`flutter test`), emulyatorsiz.
+- **L** — Linux desktop ilovasi (sinov VPS'ida, virtual ekran `xvfb` bilan).
 - **W** — brauzerda (Flutter web).
 - **—** — tushuncha bobi, buyruqsiz.
 
@@ -53,7 +54,7 @@ Bu qo'llanmaga kirmaydigan mavzular (rasmiy hujjatda bor, lekin mobil ilova asos
 - Desktop ilovalar (Windows, Linux, macOS) va mavjud native ilovaga Flutter qo'shish ("Add to an existing app").
 - Boshqa platformadan o'tuvchilar uchun sahifalar ("Flutter for Android/SwiftUI/React Native devs") — tegishli boblarda faqat havola.
 
-> **Holat.** Tayyor: 1, 5–34-boblar (2026-11-18). Dart qismi VPS'da Dart 3.14.0 bilan; Flutter boblari VPS'da Flutter 3.50.0 bilan (`flutter test`, `flutter build web` va brauzerda skrinshot). Emulyator talab qiladigan
+> **Holat.** Tayyor: 1, 5–34, 39–43-boblar (2026-11-18). Dart qismi VPS'da Dart 3.14.0 bilan; Flutter boblari VPS'da Flutter 3.50.0 bilan (`flutter test`, `flutter build web` va brauzerda skrinshot). Emulyator talab qiladigan
 > boblar (E) uchun sinov kompyuteriga Flutter SDK, Android Studio va Xcode o'rnatish — egasining ruxsati kerak.
 
 ---
@@ -141,11 +142,11 @@ Bu qo'llanmaga kirmaydigan mavzular (rasmiy hujjatda bor, lekin mobil ilova asos
 
 | # | Bob | Mazmun | Muhit | Rasmiy manba |
 | --- | --- | --- | --- | --- |
-| 39 | Unit test | `test` paketi, mock bilan bog'liqlikni almashtirish | T | [FD Testing overview](https://docs.flutter.dev/testing/overview) · [FD Unit testing](https://docs.flutter.dev/cookbook/testing/unit/introduction) |
-| 40 | Widget test | `WidgetTester`, `find`, bosish va yozishni simulyatsiya qilish | T | [FD Widget testing](https://docs.flutter.dev/cookbook/testing/widget/introduction) |
-| 41 | Integration test | Butun ilovani emulyatorda avtomatik sinash | E | [FD Integration testing](https://docs.flutter.dev/cookbook/testing/integration/introduction) |
-| 42 | Debug va xatolar | DevTools debugger, `debugPrint`, layout xatolarini topish, xatolarni ushlash (`FlutterError.onError`) | E | [FD Debugging tools](https://docs.flutter.dev/testing/debugging) · [FD Debug programmatically](https://docs.flutter.dev/testing/code-debugging) · [FD Common Flutter errors](https://docs.flutter.dev/testing/common-errors) · [FD Handle errors](https://docs.flutter.dev/testing/errors) |
-| 43 | Ishlash tezligi | Build rejimlari (debug/profile/release), tavsiyalar, render tezligi, profil olish, isolate, ilova hajmi | E | [FD Build modes](https://docs.flutter.dev/testing/build-modes) · [FD Performance best practices](https://docs.flutter.dev/perf/best-practices) · [FD Rendering performance](https://docs.flutter.dev/perf/rendering-performance) · [FD Performance profiling](https://docs.flutter.dev/perf/ui-performance) · [FD Isolates](https://docs.flutter.dev/perf/isolates) · [FD App size](https://docs.flutter.dev/perf/app-size) |
+| 39 | [Unit test](39-unit-test.md) | `test` paketi, mock bilan bog'liqlikni almashtirish | T | [FD Testing overview](https://docs.flutter.dev/testing/overview) · [FD Unit testing](https://docs.flutter.dev/cookbook/testing/unit/introduction) |
+| 40 | [Widget test](40-widget-test.md) | `WidgetTester`, `find`, bosish va yozishni simulyatsiya qilish | T | [FD Widget testing](https://docs.flutter.dev/cookbook/testing/widget/introduction) |
+| 41 | [Integration test](41-integration-test.md) | Butun ilovani avtomatik sinash: Linux desktop'da (`xvfb`); Android/iOS qurilma va web — hujjat asosida | L ⚑ | [FD Integration testing](https://docs.flutter.dev/cookbook/testing/integration/introduction) |
+| 42 | [Debug va xatolar](42-debug-xatolar.md) | DevTools debugger, `debugPrint`, layout xatolarini topish, xatolarni ushlash (`FlutterError.onError`) | T W ⚑ | [FD Debugging tools](https://docs.flutter.dev/testing/debugging) · [FD Debug programmatically](https://docs.flutter.dev/testing/code-debugging) · [FD Common Flutter errors](https://docs.flutter.dev/testing/common-errors) · [FD Handle errors](https://docs.flutter.dev/testing/errors) |
+| 43 | [Ishlash tezligi](43-ishlash-tezligi.md) | Build rejimlari (debug/profile/release), tavsiyalar, render tezligi, profil olish, isolate, ilova hajmi | T W ⚑ | [FD Build modes](https://docs.flutter.dev/testing/build-modes) · [FD Performance best practices](https://docs.flutter.dev/perf/best-practices) · [FD Rendering performance](https://docs.flutter.dev/perf/rendering-performance) · [FD Performance profiling](https://docs.flutter.dev/perf/ui-performance) · [FD Isolates](https://docs.flutter.dev/perf/isolates) · [FD App size](https://docs.flutter.dev/perf/app-size) |
 
 ## VIII qism — Chiqarish (44–47)
 
