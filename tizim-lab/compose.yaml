@@ -1,0 +1,16 @@
+# Tizim dizayni laboratoriyasi (docs/vizualizator/tizim-dizayni.md 3): nginx LB + 3 ilova + yuklama generatori.
+name: tizimlab
+networks:
+  lab:
+    internal: true
+    ipam: { config: [{ subnet: 10.70.0.0/24 }] }
+services:
+  a1: { build: ilova, environment: { NOM: A }, networks: { lab: { ipv4_address: 10.70.0.11 } } }
+  a2: { build: ilova, environment: { NOM: B }, networks: { lab: { ipv4_address: 10.70.0.12 } } }
+  a3: { build: ilova, environment: { NOM: C }, networks: { lab: { ipv4_address: 10.70.0.13 } } }
+  lb:
+    image: nginx:1.30.6
+    volumes: ['./lb/nginx.conf:/etc/nginx/nginx.conf:ro']
+    networks: { lab: { ipv4_address: 10.70.0.2 } }
+    depends_on: [a1, a2, a3]
+  yuk: { build: yuk, networks: { lab: { ipv4_address: 10.70.0.100 } } }

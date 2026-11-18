@@ -182,6 +182,14 @@ Reja (hali kod yo'q, egasining javobini kutmoqda): [docs/vizualizator/README.md]
 paketma-paket (VPS'dagi haqiqiy `tcpdump` yozuvi); [tizim-dizayni.md](vizualizator/tizim-dizayni.md) — qadamli
 tizim dizayni darslari (o'lchangan yoki ochiq belgilangan model metrikalar).
 
+**MVP (2026-11-18, `feat/sahna-mvp`)** — egasi ko'rib baho beradi:
+
+- Dvigatel `src/sahna/`, sahifa `src/views/SahnaPage.vue`; marshrutlar `/paketlar/<dars>?q=<qadam>` va
+  `/arxitektura/darslar/<dars>?q=<qadam>` (qadam query'da — `App.vue` RouterView'ni yo'l bo'yicha qayta yaratadi).
+- Darslar: `http-1-1` (haqiqiy yozuv, `paket-lab/`) va `load-balancing` (nginx o'lchovi, `tizim-lab/`).
+- Ovoz hali yo'q (reja 5-bo'lim) — keyingi bosqich.
+- Test: `node scripts/sahna-brauzer.mjs` (dev server 5182 da).
+
 ## 6. Sinov VPS va lokal artefaktlar
 
 - VPS'dagi yig'ish papkalari (kerak bo'lmasa o'chirsa bo'ladi; arxivlar qayta yasaladi):
