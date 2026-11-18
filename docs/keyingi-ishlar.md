@@ -174,6 +174,14 @@ fizika → matematika. Har qatlam yuqoridagi savolga javob beradi.
   egasi o'qib baho beradi. Keyin **C tili** kitobi (ISO C23, trenajorda `gcc` bor), so'ng "Kompyuter qanday ishlaydi"
   (C → Assembly → protsessor → xotira). Elektronika/fizika/matematika — oxirida, alohida qoidalar bilan.
 
+## 5a. Vizualizatorlar — reja (2026-11-18)
+
+Egasining g'oyasi: Protocol Explorer va Designed to Scale kabi vizual darslar, lekin bizning dizaynda va ovozli.
+Reja (hali kod yo'q, egasining javobini kutmoqda): [docs/vizualizator/README.md](vizualizator/README.md) — umumiy
+"Sahna" dvigateli, ovoz, testlar va ochiq savollar; [paket-yoli.md](vizualizator/paket-yoli.md) — protokollar
+paketma-paket (VPS'dagi haqiqiy `tcpdump` yozuvi); [tizim-dizayni.md](vizualizator/tizim-dizayni.md) — qadamli
+tizim dizayni darslari (o'lchangan yoki ochiq belgilangan model metrikalar).
+
 ## 6. Sinov VPS va lokal artefaktlar
 
 - VPS'dagi yig'ish papkalari (kerak bo'lmasa o'chirsa bo'ladi; arxivlar qayta yasaladi):
