@@ -164,8 +164,8 @@ watch(() => props.jonli && props.oqimlar.length > 0, (on) => {
 }, { immediate: true })
 watch(() => props.oqimlar, () => { nuqtalar.value = []; hisob.clear() })
 onBeforeUnmount(() => { cancelAnimationFrame(oqimRaf); cancelAnimationFrame(kameraRaf) })
-// nuqta polda emas, biroz ko'tarilgan (chiziq ustida "uchadi")
-const nuqtaPos = (d) => ({ x: T(d.a).x + (T(d.b).x - T(d.a).x) * d.t, y: T(d.a).y + (T(d.b).y - T(d.a).y) * d.t - 10 })
+// nuqta aynan chiziq ustida: ko'tarilsa, izometrik ko'rinishda chiziq yonidan yurgandek ko'rinadi
+const nuqtaPos = (d) => ({ x: T(d.a).x + (T(d.b).x - T(d.a).x) * d.t, y: T(d.a).y + (T(d.b).y - T(d.a).y) * d.t })
 
 const tegRang = { ok: 'ok', ogoh: 'ogoh', xato: 'xato', info: 'info', insight: 'insight' }
 const bandRang = (b) => (b >= 0.9 ? 'xato' : b >= 0.7 ? 'ogoh' : 'ok')
@@ -187,7 +187,6 @@ const ariaMatn = computed(() => props.korinadi.map((id) => T(id)?.nom).filter(Bo
 
     <g class="nuqtalar">
       <g v-for="d in nuqtalar" :key="d.id" :transform="`translate(${nuqtaPos(d).x} ${nuqtaPos(d).y})`" :class="['oq', d.tur]">
-        <ellipse class="soya" cx="0" cy="10" rx="5" ry="2.5" />
         <rect v-if="d.tur === 'ogir'" x="-6" y="-6" width="12" height="12" rx="2.5" />
         <path v-else-if="d.tur === 'xato'" d="M-5 -5 5 5 M5 -5 -5 5" />
         <circle v-else :r="d.tur === 'tekshiruv' ? 5 : 5" />
