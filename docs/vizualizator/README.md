@@ -139,7 +139,8 @@ Muallif o'sha. Shiori: "each idea is an animated diagram you step through".
 
 - Kod, rasm, ikonka, matn, shrift tanlovi, rang palitrasi **ko'chirilmaydi**. Biz faqat g'oya va UX naqshlarini olamiz
   (qadamli ijro, paket inspektori, metrikalar qatori) — bular umumiy naqshlar.
-- Izometrik 3D "o'yinchoq" uslubi — namunalarning tanib olinadigan belgisi. Biz o'z uslubimizni qilamiz (3-bo'lim).
+- Izometrik 3D uslubi olinadi (egasi qarori, 3.3), lekin bloklar, ikonkalar va odamchalar o'zimizniki, ranglar faqat
+  sayt tokenlaridan — ularning rasmlari ko'chirilmaydi.
 - Ularning dars matnlari va misollari tarjima qilinmaydi. Bizning matn kitoblarimizdan va rasmiy manbalardan (RFC,
   rasmiy hujjat) yoziladi, `CLAUDE.md` qoidasi bo'yicha.
 

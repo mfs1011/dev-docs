@@ -187,6 +187,9 @@ tizim dizayni darslari (o'lchangan yoki ochiq belgilangan model metrikalar).
 - Dvigatel `src/sahna/`, sahifa `src/views/SahnaPage.vue`; marshrutlar `/paketlar/<dars>?q=<qadam>` va
   `/arxitektura/darslar/<dars>?q=<qadam>` (qadam query'da — `App.vue` RouterView'ni yo'l bo'yicha qayta yaratadi).
 - Darslar: `http-1-1` (haqiqiy yozuv, `paket-lab/`) va `load-balancing` (nginx o'lchovi, `tizim-lab/`).
+- **Izometrik 3D sahna** (egasi so'rovi, 2026-11-19): `src/sahna/izo.js` (proyeksiya, har tur bloki) va
+  `src/sahna/SahnaSvg.vue`. Bloklar o'zimiz chizgan (server tirqishli quti, baza silindr, noutbuk, antennali router,
+  odamlar platformasi), ranglar `--*-soft` tokenlari — kitob rangi va qorong'i tema ishlaydi; telefonda oqim tepadan pastga.
 - Ovoz hali yo'q (reja 5-bo'lim) — keyingi bosqich.
 - Test: `node scripts/sahna-brauzer.mjs` (dev server 5182 da).
 
