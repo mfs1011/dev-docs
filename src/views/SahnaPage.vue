@@ -386,4 +386,32 @@ a.d-q:hover { background: var(--surface-hover); }
   .s-karta.past-ong, .s-karta.past-chap { bottom: 52px; }
 }
 @media (prefers-reduced-motion: reduce) { .chap { transition: none; } }
+
+/* ── Tungi rejim: ko'zga yumshoq ──
+   Qoida: urg'u rangi faqat JORIY narsada (joriy qadam, Ijro). O'tilganlar — neytral.
+   Kitob urg'usi (masalan, binafsha #a99bff) qorong'i fonda juda yorqin — kulrangga aralashtirib xiralashtiramiz.
+   O'z-o'ziga havola (cycle) bo'lmasligi uchun: asl rang .sahna-app da, yangisi uning bolalarida. */
+:root[data-theme="dark"] .sahna-app {
+  --urgu-asl: var(--accent);
+  --text: #d5dae3;
+}
+:root[data-theme="dark"] .sahna-app > * {
+  --accent: color-mix(in srgb, var(--urgu-asl) 72%, #7c8597);
+  --accent-text: color-mix(in srgb, var(--urgu-asl) 78%, #a3acbb);
+  --accent-soft: color-mix(in srgb, var(--urgu-asl) 12%, var(--bg-elevated));
+}
+/* O'tilgan qadamlar va belgilangan maqsadlar — neytral */
+:root[data-theme="dark"] .qadam-royxat li.otgan:not(.joriy) .qn,
+:root[data-theme="dark"] .org li.ok .cb { border-color: var(--border-strong); background: none; color: var(--text-muted); }
+:root[data-theme="dark"] .sahna-app :deep(.otgan:not(.joriy) .r-n) { border-color: var(--border-strong); background: var(--bg-elevated); color: var(--text-muted); }
+:root[data-theme="dark"] .sahna-app :deep(li.otgan + li::before) { background: var(--border-strong); }
+:root[data-theme="dark"] .sahna-app :deep(li.joriy::before) { background: var(--border-strong); }
+:root[data-theme="dark"] .sahna-app :deep(.joriy .r-n) { box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 16%, transparent); }
+/* Ijro: to'liq bo'yalgan emas — yumshoq fon, rangli chegara va matn */
+:root[data-theme="dark"] .sahna-app :deep(.i-t.asosiy) { background: var(--accent-soft); color: var(--accent-text); }
+/* Metrikalar: holat rangi bor, lekin xira va ingichka */
+:root[data-theme="dark"] .sahna-app :deep(.mk) { border-left-width: 3px; }
+:root[data-theme="dark"] .sahna-app :deep(.mk.ok) { border-left-color: color-mix(in srgb, var(--success) 55%, var(--border)); }
+:root[data-theme="dark"] .sahna-app :deep(.mk.ogoh) { border-left-color: color-mix(in srgb, var(--warning) 55%, var(--border)); }
+:root[data-theme="dark"] .sahna-app :deep(.mk.xato) { border-left-color: color-mix(in srgb, var(--danger) 60%, var(--border)); }
 </style>

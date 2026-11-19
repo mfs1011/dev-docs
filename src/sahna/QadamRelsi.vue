@@ -20,7 +20,8 @@ const emit = defineEmits(['tanla'])
 li { flex: 1 0 74px; position: relative; }
 li + li::before { content: ''; position: absolute; top: 13px; left: -50%; width: 100%; height: 2px; background: var(--border); }
 li.otgan + li::before, li.joriy::before { background: var(--accent); }
-button { position: relative; display: grid; justify-items: center; gap: 4px; width: 100%; padding: 0 2px; border: 0; background: none; color: var(--text-muted); font: inherit; cursor: pointer; }
+/* z-index: qo'shni qadamning bog'lovchi chizig'i (li + li::before) aylana ustidan o'tmasin */
+button { position: relative; z-index: 1; display: grid; justify-items: center; gap: 4px; width: 100%; padding: 0 2px; border: 0; background: none; color: var(--text-muted); font: inherit; cursor: pointer; }
 .r-n { display: grid; place-items: center; width: 26px; height: 26px; border: 1.5px solid var(--border-strong); border-radius: 50%; background: var(--bg-elevated); font: 700 11.5px var(--font-mono); }
 .otgan .r-n { border-color: var(--accent); background: var(--accent-soft); color: var(--accent-text); }
 .joriy .r-n { border-color: var(--accent); background: var(--accent); color: var(--bg); box-shadow: 0 0 0 4px var(--accent-soft); }

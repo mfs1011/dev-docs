@@ -187,7 +187,10 @@ export const books = [
     accentDark: '#a99bff',
     versionLabel: 'Arxitektura',
     // Bu kitob texnologiyaga bog'liq emas — versiya qatori yo'q
-    tools: [{ label: 'Tizim dizayni simulyatori', route: '/arxitektura/trenajor', note: 'Server, kesh, replika, CDN — yuklama ostida' }],
+    tools: [
+      { label: 'Tizim dizayni simulyatori', route: '/arxitektura/trenajor', note: 'Server, kesh, replika, CDN — yuklama ostida' },
+      { label: 'Tizim dizayni darslari', route: '/arxitektura/darslar', note: 'Qadamli vizual dars: load balancing, o‘lchangan raqamlar' },
+    ],
     groups: [
       { title: 'I — Arxitektura nima', from: 1, to: 7 },
       { title: 'II — Umumiy tamoyillar', from: 8, to: 18 },
@@ -412,7 +415,10 @@ export const books = [
     // Brendi yo'q — sayt palitrasidan (teal)
     accent: '#0f766e',
     accentDark: '#5eead4',
-    tools: [{ label: 'HTTP laboratoriyasi', route: '/web-asoslari/trenajor', note: 'Haqiqiy nginx va curl: so‘rov yo‘li jonli' }],
+    tools: [
+      { label: 'HTTP laboratoriyasi', route: '/web-asoslari/trenajor', note: 'Haqiqiy nginx va curl: so‘rov yo‘li jonli' },
+      { label: 'Paket yo‘li', route: '/paketlar', note: 'HTTP/1.1 paketma-paket — haqiqiy yozuvdan' },
+    ],
     versionLabel: 'Web',
     // Standartlarga tayanadi (RFC, WHATWG) — bitta versiya qatori yo'q
     groups: [
