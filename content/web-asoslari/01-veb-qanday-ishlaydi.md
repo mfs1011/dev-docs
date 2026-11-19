@@ -61,6 +61,8 @@ MDN (What is a web server?): "veb-server" deganda **apparat**, **dastur** yoki i
 | **Statik** | Kompyuter + HTTP server | Fayllarni **o'zgartirmasdan** yuboradi |
 | **Dinamik** | Statik server + **ilova serveri** va odatda **baza** | Javobni yuborishdan oldin **yasaydi** (masalan, HTML shablonni bazadagi ma'lumot bilan to'ldiradi) |
 
+**[Vizual dars: HTTP/1.1 paketma-paket →](/paketlar/http-1-1)** — shu bobdagi yo'lni haqiqiy yozuv bilan qadamma-qadam ko'ring: DNS, TCP ulanish, `GET` va `200 OK`; har paketni bosib, baytlarini va maydonlar izohini ochasiz.
+
 ## Ko'rib chiqamiz
 
 ### Bitta so'rovning bosqichlari

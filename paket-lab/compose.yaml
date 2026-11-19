@@ -1,0 +1,37 @@
+# Paket yo'li laboratoriyasi: internetdan ajratilgan tarmoqlar, hujjatlar uchun ajratilgan manzillar.
+# docs/vizualizator/paket-yoli.md 3.1
+name: paketlab
+networks:
+  uy:
+    internal: true
+    driver_opts: { com.docker.network.bridge.name: pl-uy }
+    ipam: { config: [{ subnet: 192.168.1.0/24, gateway: 192.168.1.200 }] }
+  internet:
+    internal: true
+    driver_opts: { com.docker.network.bridge.name: pl-net }
+    ipam: { config: [{ subnet: 203.0.113.0/24, gateway: 203.0.113.200 }] }
+services:
+  router:
+    build: router
+    cap_add: [NET_ADMIN]
+    sysctls: { net.ipv4.ip_forward: 1, net.ipv6.conf.all.disable_ipv6: 1 }
+    networks:
+      uy: { ipv4_address: 192.168.1.1, mac_address: "02:00:00:00:01:01" }
+      internet: { ipv4_address: 203.0.113.1, mac_address: "02:00:00:00:02:01" }
+  dns:
+    build: dns
+    sysctls: { net.ipv6.conf.all.disable_ipv6: 1 }
+    networks:
+      internet: { ipv4_address: 203.0.113.53, mac_address: "02:00:00:00:02:53" }
+  veb:
+    build: veb
+    sysctls: { net.ipv6.conf.all.disable_ipv6: 1 }
+    networks:
+      internet: { ipv4_address: 203.0.113.10, mac_address: "02:00:00:00:02:10" }
+  klient:
+    build: klient
+    cap_add: [NET_ADMIN, NET_RAW]
+    sysctls: { net.ipv6.conf.all.disable_ipv6: 1 }
+    depends_on: [router, dns, veb]
+    networks:
+      uy: { ipv4_address: 192.168.1.10, mac_address: "02:00:00:00:01:10" }

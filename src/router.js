@@ -25,6 +25,8 @@ const router = createRouter({
     // FSD: loyiha fayllari brauzerda, haqiqiy Steiger tekshiradi (src/fsd)
     { path: '/fsd/trenajor', name: 'fsd-trenajor', component: () => import('./views/FsdTrenajorPage.vue'), meta: { full: true } },
     // Tizim dizayni simulyatori: taxminiy model, komponentlar va yuklama (src/arxitektura)
+    { path: '/paketlar/:dars?', name: 'paketlar', component: () => import('./views/SahnaPage.vue'), meta: { full: true, sahna: 'paket' } },
+    { path: '/arxitektura/darslar/:dars?', name: 'tizim-darslar', component: () => import('./views/SahnaPage.vue'), meta: { full: true, sahna: 'tizim' } },
     { path: '/arxitektura/trenajor', name: 'arxitektura-trenajor', component: () => import('./views/ArxitekturaTrenajorPage.vue'), meta: { full: true } },
     // Yo'nalish — bog'liq kitoblar guruhi va o'qish tartibi (docs.config.mjs → yonalishlar)
     { path: '/yonalish/:id', name: 'yonalish', component: () => import('./views/YonalishPage.vue') },

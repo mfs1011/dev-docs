@@ -139,7 +139,8 @@ Muallif o'sha. Shiori: "each idea is an animated diagram you step through".
 
 - Kod, rasm, ikonka, matn, shrift tanlovi, rang palitrasi **ko'chirilmaydi**. Biz faqat g'oya va UX naqshlarini olamiz
   (qadamli ijro, paket inspektori, metrikalar qatori) — bular umumiy naqshlar.
-- Izometrik 3D "o'yinchoq" uslubi — namunalarning tanib olinadigan belgisi. Biz o'z uslubimizni qilamiz (3-bo'lim).
+- Izometrik 3D uslubi olinadi (egasi qarori, 3.3), lekin bloklar, ikonkalar va odamchalar o'zimizniki, ranglar faqat
+  sayt tokenlaridan — ularning rasmlari ko'chirilmaydi.
 - Ularning dars matnlari va misollari tarjima qilinmaydi. Bizning matn kitoblarimizdan va rasmiy manbalardan (RFC,
   rasmiy hujjat) yoziladi, `CLAUDE.md` qoidasi bo'yicha.
 
@@ -196,8 +197,11 @@ olmaydigan o'quvchi uchun).
   - sahna shu holatda ham to'liq tushunarli bo'lishi kerak.
 - **Sahna ustidagi kartalar** ("hisob", "vaqt qayerga ketdi") — `--bg-elevated` karta, mono raqamlar.
 
-> Ochiq savol (egasiga): tekis 2D uslubmi yoki o'zimizning yengil izometriyamizmi? Tavsiya — **tekis 2D**. Sabablari:
-> saytdagi boshqa animatsiyalar bilan bir xil ko'rinadi, mobilda o'qilishi oson, chizish arzon.
+> **Qaror (egasi, 2026-11-19): izometrik 3D**, ranglar va stilistika saytnikiday. Amalda: `src/sahna/izo.js` —
+> pol tekisligi proyeksiyasi va o'zimiz chizgan bloklar (server qutisi tirqishlari bilan, baza silindri, noutbuk,
+> router antennasi bilan, odamlar platformasi); yuzalar `--*-soft` rangda, chegara to'q tokenda, yon yuzalar shaffof
+> qora qatlam bilan soyalanadi; ust yuzada ikonka; nom yorlig'i blok ostida. Tor (tik) ekranda oqim yuqoridan pastga
+> yo'naladi.
 
 ### 3.4. Sahifa joylashuvi
 

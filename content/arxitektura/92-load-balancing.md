@@ -87,6 +87,8 @@ NGINX hujjati: round-robin va least-connected'da klientning har keyingi so'rovi 
 
 Lekin 91-bobda ko'rilganidek, Twelve-Factor sticky session'ga **tayanishni** taqiqlaydi. To'g'ri yo'l — holatni tashqariga chiqarish, shunda istalgan algoritm ishlaydi.
 
+**[Vizual dars: Load balancing →](/arxitektura/darslar/load-balancing)** — bitta serverdan load balancer'gacha qadamma-qadam: round robin, og'ir so'rovlar, `least_conn`, server yiqilishi. Raqamlar VPS'dagi nginx laboratoriyasida o'lchangan.
+
 ## Nega shunday
 
 Balanser — gorizontal masshtabning "kirish eshigi". U noto'g'ri sozlansa, nusxalar qo'shish yordam bermaydi:
