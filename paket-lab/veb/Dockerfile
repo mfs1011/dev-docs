@@ -7,3 +7,5 @@ RUN echo 'include /etc/nginx/tls/*.conf;' > /etc/nginx/conf.d/tls.conf
 # Siqish darsi: gzip (text/html doim siqiladi) va Vary: Accept-Encoding. Faqat so'rovda Accept-Encoding: gzip bo'lsa
 # siqadi — boshqa darslardagi curl uni yubormaydi; ulardagi farq: javobda Vary sarlavhasi.
 RUN printf 'gzip on;\ngzip_vary on;\n' > /etc/nginx/conf.d/siqish.conf
+# Cookie darsi: hisob.sayt.test (alohida nom, sayt.test ga ta'sir qilmaydi)
+COPY cookie.conf /etc/nginx/conf.d/cookie.conf

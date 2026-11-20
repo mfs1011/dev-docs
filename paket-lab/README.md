@@ -51,6 +51,10 @@ HTTP/2 darsi (`http2`): `tls/sayt.conf` da `http2 on;` (ALPN'da `h2`); `--http1.
 `veb/` ga ikki kichik fayl (`uslub.css`, `ilova.js`) — `curl --http2 -Z` uchalasini bitta ulanishda parallel so'raydi.
 Kadrlar shifrlangan, shuning uchun ssenariy ham `SSLKEYLOGFILE` yozadi.
 
+Cookie darsi (`cookie`): `veb/cookie.conf` — alohida nom `hisob.sayt.test` (sayt.test javoblari o'zgarmaydi). `/kirish`
+uchta `Set-Cookie` beradi (sessiya qiymati — nginx'ning `$request_id`), `/profil` server ko'rgan `Cookie` ni qaytaradi,
+`/chiqish` — `Max-Age=0`. curl cookie faylini `-c`/`-b` bilan yuritadi.
+
 DNS darsi: yozuv rezolverning interfeysida olinadi (klient so'rovi ham, iyerarxiya bo'ylab so'rovlar ham ko'rinadi):
 
 ```bash

@@ -187,6 +187,10 @@ export const MAYDONLAR = {
   'http.chunk_boundary': { nom: 'Bo‘lak oxiri', izoh: 'CRLF (0d0a) — bo‘lakdan keyingi ajratgich.', manba: RFC(9112, '7.1') },
   'http.range': { nom: 'Range', izoh: 'Klient resursning faqat bir qismini so‘raydi: bytes=0-99 — dastlabki 100 bayt.', manba: RFC(9110, '14.2'), misol: true },
   'http.content_range': { nom: 'Content-Range', izoh: 'Yuborilgan qism to‘liq resursning qayeri: bytes 0-99/5686 — 0–99-baytlar, butun fayl 5686 bayt.', manba: RFC(9110, '14.4'), misol: true },
+  // Cookie (RFC 6265)
+  'http.set_cookie': { nom: 'Set-Cookie', izoh: 'Server klientga cookie beradi: nom=qiymat, keyin ; bilan atributlar (Path, Max-Age, HttpOnly…). Har cookie — alohida Set-Cookie.', manba: RFC(6265, '4.1') },
+  'http.cookie': { nom: 'Cookie', izoh: 'Klient saqlagan cookie’larni qaytaradi — faqat nom=qiymat, atributlarsiz. Qaysilari yuborilishini atributlar (Path, muddat…) hal qiladi.', manba: RFC(6265, '4.2'), misol: true },
+  'http.cookie_pair': { nom: 'Cookie juftligi', izoh: 'Cookie sarlavhasidagi bitta nom=qiymat (tshark ajratib ko‘rsatgan).', manba: RFC(6265, '4.2.1'), misol: true },
   // HTTP/2 (RFC 9113) va HPACK (RFC 7541)
   'http2.magic': { nom: 'Muqaddima', izoh: 'Klientning birinchi 24 bayti: “PRI * HTTP/2.0…”. HTTP/2 ishlatilishini tasdiqlaydi; shunday tanlangan-ki, ko‘p HTTP/1.1 serverlar undan keyingi kadrlarni o‘qishga urinmaydi.', manba: RFC(9113, '3.4') },
   'http2.stream': { nom: 'Kadr', izoh: 'Bitta HTTP/2 kadri: turi, oqim raqami va uzunligi. Bitta TLS yozuvida bir nechta kadr bo‘lishi mumkin.', manba: RFC(9113, '4.1') },
