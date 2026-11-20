@@ -21,6 +21,7 @@ export const DARSLAR = [
   { id: 'dns', tur: 'paket', guruh: 'Web', sarlavha: 'DNS', izoh: 'Rezolver → ildiz → TLD → domen serveri, kesh', yukla: () => import('./dns.js') },
   { id: 'tcp', tur: 'paket', guruh: 'Web', sarlavha: 'TCP', izoh: 'Uch qadamli kelishuv, tasdiq, yopish, RST', yukla: () => import('./tcp.js') },
   { id: 'tls-1-3', tur: 'paket', guruh: 'Web', sarlavha: 'TLS 1.3', izoh: 'Handshake, sertifikat zanjiri, kalit bilan ochish', yukla: () => import('./tls.js') },
+  { id: 'redirect', tur: 'paket', guruh: 'Web', sarlavha: 'Redirect', izoh: 'http → https: 301, yangi ulanish va TLS', yukla: () => import('./redirect.js') },
   { id: 'kesh-304', tur: 'paket', guruh: 'Web', sarlavha: 'Kesh va 304', izoh: 'ETag va shartli so‘rov', reja: true },
   { id: 'cors', tur: 'paket', guruh: 'Web', sarlavha: 'CORS preflight', izoh: 'OPTIONS va ruxsat sarlavhalari', reja: true },
   { id: 'reverse-proxy', tur: 'paket', guruh: 'Server', sarlavha: 'Reverse proxy', izoh: 'Ikki ulanish, X-Forwarded-For', reja: true },
