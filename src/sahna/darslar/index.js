@@ -43,7 +43,7 @@ export const DARSLAR = [
 
   { id: 'load-balancing', tur: 'tizim', guruh: 'Masshtab', sarlavha: 'Load balancing', izoh: 'Bitta eshik, ko‘p server — nginx bilan o‘lchangan', yukla: () => import('./load-balancing.js') },
   { id: 'sorov-yoli', tur: 'tizim', guruh: 'Poydevor', sarlavha: 'So‘rov yo‘li va vaqt byudjeti', izoh: 'Vaqt qayerga ketadi', reja: true },
-  { id: 'kesh', tur: 'tizim', guruh: 'Masshtab', sarlavha: 'Kesh', izoh: 'Redis va topish ulushi', reja: true },
+  { id: 'kesh', tur: 'tizim', guruh: 'Masshtab', sarlavha: 'Kesh', izoh: 'Redis cache-aside, invalidatsiya, bo‘ron va qulf', yukla: () => import('./kesh.js') },
   { id: 'replikatsiya', tur: 'tizim', guruh: 'Ma’lumot', sarlavha: 'Replikatsiya', izoh: 'Asosiy va replika, kechikish', reja: true },
   { id: 'navbat', tur: 'tizim', guruh: 'Aloqa', sarlavha: 'Navbat va fon ishlari', izoh: 'RabbitMQ, worker’lar', reja: true },
   { id: 'rate-limiting', tur: 'tizim', guruh: 'Ishonchlilik', sarlavha: 'Rate limiting', izoh: 'Bot va foydalanuvchi: limit_req, 429, burst', yukla: () => import('./rate-limiting.js') },

@@ -32,3 +32,19 @@ Ikki yuklama generatori turli IP'dan bir vaqtda: `yuk` (10.70.0.100, foydalanuvc
 
 Saboq: `yuk.py` 400 ta ishchi oqim bilan ishlaydi — 400 tadan ortiq javob kutilayotgan bo'lsa, keyingi so'rovlar
 ishchi bo'shaguncha kutadi. Ya'ni juda katta tezlikda generator to'liq "ochiq tsikl" emas; darsda bu aytiladi.
+
+## Kesh darsi
+
+```bash
+./olchov-kesh.sh   # profil "kesh": PostgreSQL 18.6 + Redis 8.10 + do'kon ilovasi → chiqish/kesh/*
+rsync -az --exclude '*.vaqt.jsonl' lab:/root/tizim-lab/chiqish/kesh/ src/sahna/tizim/olchovlar/kesh/
+```
+
+`dokon/app.py` — cache-aside (Redis), `/sozla` bilan rejim (keshsiz, TTL, qulf), `/statistika` — DB, hit, miss hisoblagichlari.
+`dokon/boshlash.sql` — 1000 mahsulot, 500 000 sharh; `sharh.mahsulot_id` da indeks ataylab yo'q (og'ir so'rov o'rnida).
+
+Saboqlar:
+- `generate_series` formulasida `i * 7919` `int` ga sig'madi (`integer out of range`) — baza bo'sh qoldi, skript uni cheksiz
+  kutdi. Endi formula `bigint`, kutish esa 3 daqiqa bilan cheklangan.
+- Ketma-ket o'lchovlar bir-birini buzadi: keshsiz yuklamadan keyin bazada navbatdagi so'rovlar qoladi. Har o'lchovdan
+  oldin `pg_stat_activity` bo'shaguncha kutiladi.

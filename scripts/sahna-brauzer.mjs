@@ -37,6 +37,7 @@ const DARSLAR = [
   { yol: '/paketlar/aralash', qadamlar: 6, paket: true },
   { yol: '/arxitektura/darslar/load-balancing', qadamlar: 8 },
   { yol: '/arxitektura/darslar/rate-limiting', qadamlar: 7 },
+  { yol: '/arxitektura/darslar/kesh', qadamlar: 7 },
 ]
 const KENGLIK = [[1440, 900], [1024, 768], [390, 844]]
 let xato = 0

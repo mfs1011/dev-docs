@@ -1,0 +1,5 @@
+sana: 2026-11-20
+postgres (PostgreSQL) 18.6 (Debian 18.6-1.pgdg13+2)
+Redis server v=8.10.3
+Python 3.13.18 · psycopg 3.2.13 · redis-py 6.4.0
+vCPU: 1
