@@ -95,6 +95,10 @@ o'chiradi; `/tashqi` — hech narsa tinglamayotgan portga proxy (502). Fayllar k
 "Sayt ochilmayapti" darsi (`ochilmayapti`): router `start.sh` da iptables `FORWARD` qoidasi veb-serverning 8081-portiga
 ketgan paketlarni DROP qiladi (javobsiz kutish); 8080-portda dastur yo'q (RST). Boshqa portlarga ta'sir qilmaydi.
 
+CSRF darsi (`csrf`, profil `brauzer`): `tls/sayt.conf` da `/csrf/kirish` (ikki cookie: `SameSite=Lax` va `None`) va
+`/csrf/otkazma` (server ko'rgan Cookie va Sec-Fetch-Site'ni qaytaradi — haqiqiy amal yo'q); `veb/yomon.conf` — boshqa sayt
+`yomon.test` va uning avtomatik forma sahifasi. Chromium laboratoriya CA'siga leaf SPKI bilan ishonadi.
+
 DNS darsi: yozuv rezolverning interfeysida olinadi (klient so'rovi ham, iyerarxiya bo'ylab so'rovlar ham ko'rinadi):
 
 ```bash

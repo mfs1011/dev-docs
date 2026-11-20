@@ -29,6 +29,7 @@ export const DARSLAR = [
   { id: 'http2', tur: 'paket', guruh: 'Web', sarlavha: 'HTTP/2', izoh: 'ALPN h2, oqimlar, SETTINGS, HPACK', yukla: () => import('./http2.js') },
   { id: 'cookie', tur: 'paket', guruh: 'Web', sarlavha: 'Cookie', izoh: 'Set-Cookie → Cookie, Path, Max-Age=0', yukla: () => import('./cookie.js') },
   { id: 'cors', tur: 'paket', guruh: 'Web', sarlavha: 'CORS preflight', izoh: 'OPTIONS va ruxsat sarlavhalari — haqiqiy brauzerda', yukla: () => import('./cors.js') },
+  { id: 'csrf', tur: 'paket', guruh: 'Web', sarlavha: 'CSRF va SameSite', izoh: 'Boshqa saytdan forma: Lax va None cookie, Sec-Fetch-Site', yukla: () => import('./csrf.js') },
   { id: 'http-auth', tur: 'paket', guruh: 'Web', sarlavha: 'HTTP autentifikatsiya', izoh: '401, WWW-Authenticate, Basic — base64 shifr emas', yukla: () => import('./auth.js') },
   { id: 'mitm', tur: 'paket', guruh: 'Web', sarlavha: 'Yo‘ldagi kuzatuvchi', izoh: 'HTTP va HTTPS routerdan qaraganda; HSTS', yukla: () => import('./mitm.js') },
   { id: 'http3', tur: 'paket', guruh: 'Web', sarlavha: 'HTTP/3 (QUIC)', izoh: 'UDP, Initial, oqimlar 0/4/8, QPACK — haqiqiy brauzerda', yukla: () => import('./http3.js') },

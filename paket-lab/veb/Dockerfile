@@ -28,3 +28,6 @@ COPY h3.html /usr/share/nginx/html/h3.html
 # Metodlar va holat kodlari darsi: fayl.sayt.test — WebDAV (PUT, DELETE), yoziladigan papka nginx foydalanuvchisiga
 COPY fayl.conf /etc/nginx/conf.d/fayl.conf
 RUN mkdir -p /var/lib/nginx-dav /var/lib/nginx-dav-tmp && chown nginx:nginx /var/lib/nginx-dav /var/lib/nginx-dav-tmp
+# CSRF darsi: boshqa sayt (yomon.test) va uning hujum sahifasi
+COPY yomon.conf /etc/nginx/conf.d/yomon.conf
+COPY yomon/ /usr/share/nginx/yomon/

