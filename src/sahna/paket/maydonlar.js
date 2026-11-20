@@ -200,7 +200,7 @@ export const MAYDONLAR = {
   'http.request.line:Origin': { nom: 'Origin', izoh: 'Brauzer qo‘shadi: so‘rov qaysi manbadagi (sxema + xost + port) sahifadan. Server ruxsatni shunga qarab beradi.', manba: FETCH('http-requests', '3.3.2') },
   'http.request.line:Access-Control-Request-Method': { nom: 'Access-Control-Request-Method', izoh: 'Preflight’da: asosiy so‘rov qaysi metod bilan bo‘ladi.', manba: FETCH('http-requests', '3.3.2') },
   'http.request.line:Access-Control-Request-Headers': { nom: 'Access-Control-Request-Headers', izoh: 'Preflight’da: asosiy so‘rovdagi “xavfsiz ro‘yxat”dan tashqari sarlavhalar (kichik harfda).', manba: FETCH('http-requests', '3.3.2') },
-  'http.request.line:Sec-Fetch-Mode': { nom: 'Sec-Fetch-Mode', izoh: 'Brauzer qo‘shadi: so‘rov rejimi. cors — boshqa manbaga CORS qoidasi bilan.', manba: { nom: 'Fetch Metadata', url: 'https://w3c.github.io/webappsec-fetch-metadata/#sec-fetch-mode-header' } },
+  'http.request.line:Sec-Fetch-Mode': { nom: 'Sec-Fetch-Mode', izoh: 'Brauzer qo‘shadi: so‘rov rejimi. cors — boshqa manbaga CORS qoidasi bilan.', manba: { nom: 'W3C — Fetch Metadata', url: 'https://www.w3.org/TR/fetch-metadata/' } },
   'http.response.line:Access-Control-Allow-Origin': { nom: 'Access-Control-Allow-Origin', izoh: 'Server: shu manbadagi sahifa javobni o‘qiy oladi. Mos kelmasa — brauzer javobni JavaScript’ga bermaydi.', manba: FETCH('http-responses', '3.3.3') },
   'http.response.line:Access-Control-Allow-Methods': { nom: 'Access-Control-Allow-Methods', izoh: 'Preflight javobi: ruxsat etilgan metodlar. So‘ralgani ro‘yxatda bo‘lmasa, asosiy so‘rov yuborilmaydi.', manba: FETCH('http-responses', '3.3.3') },
   'http.response.line:Access-Control-Allow-Headers': { nom: 'Access-Control-Allow-Headers', izoh: 'Preflight javobi: ruxsat etilgan sarlavhalar.', manba: FETCH('http-responses', '3.3.3') },
@@ -241,6 +241,10 @@ export const MAYDONLAR = {
   'http3.headers.authority': { nom: ':authority', izoh: 'Psevdo-sarlavha: xost nomi.', manba: RFC(9114, '4.3.1') },
   'http3.headers.status': { nom: ':status', izoh: 'Psevdo-sarlavha: javob kodi.', manba: RFC(9114, '4.3.2') },
   'http3.qpack.encoder': { nom: 'QPACK enkoder oqimi', izoh: 'Sarlavhalarni dinamik jadvalga yozish buyruqlari — alohida oqimda; so‘rovlar keyin jadvalga raqam bilan murojaat qiladi.', manba: RFC(9204, '4.2') },
+  // CSP va freym himoyasi
+  'http.response.line:Content-Security-Policy': { nom: 'Content-Security-Policy', izoh: 'Brauzerga sahifa qaysi manbalardan skript, rasm, freym va h.k. yuklashi mumkinligini aytadi. Ro‘yxatda yo‘q — bloklanadi.', manba: { nom: 'W3C — CSP Level 3', url: 'https://www.w3.org/TR/CSP3/' } },
+  'http.response.line:X-Frame-Options': { nom: 'X-Frame-Options', izoh: 'DENY — sahifa hech qanday freymda ko‘rsatilmaydi; SAMEORIGIN — faqat o‘z origin’idagi sahifalarda. frame-ancestors’ni biladigan brauzer unga qaraydi.', manba: RFC(7034) },
+  'media.type': { nom: 'Tana turi', izoh: 'tshark ajratmagan tana — Content-Type bo‘yicha. application/csp-report — CSP buzilish hisoboti (JSON).', manba: null },
   // HTTP/2 (RFC 9113) va HPACK (RFC 7541)
   'http2.magic': { nom: 'Muqaddima', izoh: 'Klientning birinchi 24 bayti: “PRI * HTTP/2.0…”. HTTP/2 ishlatilishini tasdiqlaydi; shunday tanlangan-ki, ko‘p HTTP/1.1 serverlar undan keyingi kadrlarni o‘qishga urinmaydi.', manba: RFC(9113, '3.4') },
   'http2.stream': { nom: 'Kadr', izoh: 'Bitta HTTP/2 kadri: turi, oqim raqami va uzunligi. Bitta TLS yozuvida bir nechta kadr bo‘lishi mumkin.', manba: RFC(9113, '4.1') },

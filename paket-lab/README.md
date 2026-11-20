@@ -86,6 +86,27 @@ bilan `--ignore-certificate-errors-spki-list`. Kalitlar jurnali `KIM` konteyneri
 PROFIL=brauzer KIM=brauzer QAYERDA=brauzer ./yoz.sh http3
 ```
 
+HTTPS darsi (`https`): `tls/sayt.conf` da `ssl_protocols TLSv1.2 TLSv1.3` — TLS 1.2 faqat solishtirish uchun, boshqa darslar
+`--tlsv1.3` bilan so'raydi. Ssenariy nomni laboratoriya DNS'idan oladi (`--resolve` yo'q).
+
+Metodlar darsi (`metodlar`): `veb/fayl.conf` — `fayl.sayt.test`, nginx WebDAV moduli (`dav_methods PUT DELETE`) fayl yaratadi va
+o'chiradi; `/tashqi` — hech narsa tinglamayotgan portga proxy (502). Fayllar konteyner ichida, har ishga tushishda bo'sh.
+
+"Sayt ochilmayapti" darsi (`ochilmayapti`): router `start.sh` da iptables `FORWARD` qoidasi veb-serverning 8081-portiga
+ketgan paketlarni DROP qiladi (javobsiz kutish); 8080-portda dastur yo'q (RST). Boshqa portlarga ta'sir qilmaydi.
+
+CSRF darsi (`csrf`, profil `brauzer`): `tls/sayt.conf` da `/csrf/kirish` (ikki cookie: `SameSite=Lax` va `None`) va
+`/csrf/otkazma` (server ko'rgan Cookie va Sec-Fetch-Site'ni qaytaradi — haqiqiy amal yo'q); `veb/yomon.conf` — boshqa sayt
+`yomon.test` va uning avtomatik forma sahifasi. Chromium laboratoriya CA'siga leaf SPKI bilan ishonadi.
+
+CSP va clickjacking darsi (`csp`, profil `brauzer`): `veb/himoya.conf` — `himoya.sayt.test`: `csp.html` (faqat nonce'li
+skript, hisobot `/hisobot` ga; nonce doimiy — faqat laboratoriya uchun), `panel.html` (`X-Frame-Options: DENY`,
+`frame-ancestors 'none'`); `yomon.test` da `tashqi.js` va `ramka.html`. Brauzer konsoli `--enable-logging` bilan jurnalga.
+
+Aralash kontent va SRI darsi (`aralash`, profil `brauzer`): `veb/aralash.html` — HTTPS sahifada `http://` rasm va skript,
+`integrity` (ilova.js ning SHA-384 xeshi) bilan `ilova.js` va `ozgartirilgan.js`. `ilova.js` o'zgarsa, xeshni qayta hisoblang:
+`openssl dgst -sha384 -binary veb/ilova.js | openssl base64 -A`.
+
 DNS darsi: yozuv rezolverning interfeysida olinadi (klient so'rovi ham, iyerarxiya bo'ylab so'rovlar ham ko'rinadi):
 
 ```bash

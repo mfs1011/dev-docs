@@ -8,4 +8,7 @@ ethtool -K "$WAN" gro off gso off tso off 2>/dev/null || true
 ethtool -K "$LAN" gro off gso off tso off 2>/dev/null || true
 tc qdisc add dev "$WAN" root netem delay 10ms
 tc qdisc add dev "$LAN" root netem delay 10ms
+# "Sayt ochilmayapti" darsi: xavfsizlik devori veb-serverning 8081-portiga ketgan paketlarni jim tashlaydi (DROP) —
+# klient javob olmaydi, faqat kutadi. Boshqa portlar va darslar bunga tushmaydi.
+iptables-legacy -A FORWARD -d 203.0.113.10 -p tcp --dport 8081 -j DROP 2>/dev/null || iptables -A FORWARD -d 203.0.113.10 -p tcp --dport 8081 -j DROP
 exec sleep infinity

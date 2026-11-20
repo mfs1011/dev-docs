@@ -29,6 +29,12 @@ const DARSLAR = [
   { yol: '/paketlar/http-auth', qadamlar: 5, paket: true },
   { yol: '/paketlar/mitm', qadamlar: 6, paket: true },
   { yol: '/paketlar/http3', qadamlar: 7, paket: true },
+  { yol: '/paketlar/https', qadamlar: 6, paket: true },
+  { yol: '/paketlar/metodlar', qadamlar: 7, paket: true },
+  { yol: '/paketlar/ochilmayapti', qadamlar: 6, paket: true },
+  { yol: '/paketlar/csrf', qadamlar: 6, paket: true },
+  { yol: '/paketlar/csp', qadamlar: 6, paket: true },
+  { yol: '/paketlar/aralash', qadamlar: 6, paket: true },
   { yol: '/arxitektura/darslar/load-balancing', qadamlar: 8 },
 ]
 const KENGLIK = [[1440, 900], [1024, 768], [390, 844]]
