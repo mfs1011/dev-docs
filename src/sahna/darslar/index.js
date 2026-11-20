@@ -21,6 +21,7 @@ export const DARSLAR = [
   { id: 'dns', tur: 'paket', guruh: 'Web', sarlavha: 'DNS', izoh: 'Rezolver → ildiz → TLD → domen serveri, kesh', yukla: () => import('./dns.js') },
   { id: 'tcp', tur: 'paket', guruh: 'Web', sarlavha: 'TCP', izoh: 'Uch qadamli kelishuv, tasdiq, yopish, RST', yukla: () => import('./tcp.js') },
   { id: 'tls-1-3', tur: 'paket', guruh: 'Web', sarlavha: 'TLS 1.3', izoh: 'Handshake, sertifikat zanjiri, kalit bilan ochish', yukla: () => import('./tls.js') },
+  { id: 'metodlar', tur: 'paket', guruh: 'Web', sarlavha: 'Metodlar va holat kodlari', izoh: 'GET, PUT, HEAD, POST, DELETE → 201, 204, 404, 405, 502', yukla: () => import('./metodlar.js') },
   { id: 'https', tur: 'paket', guruh: 'Web', sarlavha: 'HTTPS: vaqt qayerda', izoh: 'DNS, TCP, TLS 1.2 va 1.3, HTTP — millisekundlarda', yukla: () => import('./https.js') },
   { id: 'redirect', tur: 'paket', guruh: 'Web', sarlavha: 'Redirect', izoh: 'http → https: 301, yangi ulanish va TLS', yukla: () => import('./redirect.js') },
   { id: 'kesh-304', tur: 'paket', guruh: 'Web', sarlavha: 'Kesh va 304', izoh: 'ETag va shartli so‘rov', yukla: () => import('./kesh-304.js') },

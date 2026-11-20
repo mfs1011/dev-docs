@@ -86,6 +86,12 @@ bilan `--ignore-certificate-errors-spki-list`. Kalitlar jurnali `KIM` konteyneri
 PROFIL=brauzer KIM=brauzer QAYERDA=brauzer ./yoz.sh http3
 ```
 
+HTTPS darsi (`https`): `tls/sayt.conf` da `ssl_protocols TLSv1.2 TLSv1.3` — TLS 1.2 faqat solishtirish uchun, boshqa darslar
+`--tlsv1.3` bilan so'raydi. Ssenariy nomni laboratoriya DNS'idan oladi (`--resolve` yo'q).
+
+Metodlar darsi (`metodlar`): `veb/fayl.conf` — `fayl.sayt.test`, nginx WebDAV moduli (`dav_methods PUT DELETE`) fayl yaratadi va
+o'chiradi; `/tashqi` — hech narsa tinglamayotgan portga proxy (502). Fayllar konteyner ichida, har ishga tushishda bo'sh.
+
 DNS darsi: yozuv rezolverning interfeysida olinadi (klient so'rovi ham, iyerarxiya bo'ylab so'rovlar ham ko'rinadi):
 
 ```bash

@@ -25,3 +25,6 @@ COPY kirish.inc /etc/nginx/kirish.inc
 RUN sed -i -E 's|^( *listen +80 default_server;)|\1\n    include /etc/nginx/kirish.inc;|' /etc/nginx/conf.d/default.conf
 # HTTP/3 darsi: uslub va skriptni chaqiradigan sahifa — bitta QUIC ulanishda uch oqim
 COPY h3.html /usr/share/nginx/html/h3.html
+# Metodlar va holat kodlari darsi: fayl.sayt.test — WebDAV (PUT, DELETE), yoziladigan papka nginx foydalanuvchisiga
+COPY fayl.conf /etc/nginx/conf.d/fayl.conf
+RUN mkdir -p /var/lib/nginx-dav /var/lib/nginx-dav-tmp && chown nginx:nginx /var/lib/nginx-dav /var/lib/nginx-dav-tmp
