@@ -1,4 +1,7 @@
 FROM nginx:1.30.6
+# 80-portdagi asosiy server — rasmdagi default.conf (sayt.test, IP bilan so'rovlar). Boshqa nomli server'lar (cookie, api)
+# conf.d da alifbo bo'yicha oldin kelsa ham, ular asosiy bo'lib qolmasin
+RUN sed -i -E 's/^( *listen +)80;/\180 default_server;/' /etc/nginx/conf.d/default.conf
 COPY index.html /usr/share/nginx/html/index.html
 # HTTP/2 darsi: sahifa bilan birga so'raladigan ikki kichik fayl
 COPY uslub.css ilova.js /usr/share/nginx/html/
