@@ -74,6 +74,7 @@ services:
   brauzer:
     profiles: [brauzer]
     build: brauzer
+    volumes: ["./tls/sinov:/tls:ro"]
     cap_add: [NET_ADMIN, NET_RAW]
     sysctls: { net.ipv6.conf.all.disable_ipv6: 1 }
     depends_on: [router, dns, veb]
