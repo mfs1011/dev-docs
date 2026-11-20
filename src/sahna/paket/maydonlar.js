@@ -2,6 +2,7 @@
 // Izohlar standartdan (RFC) — `manba` aniq bo'lim. `misol: true` — har yozuvda boshqacha bo'ladigan qiymat.
 // docs/vizualizator/paket-yoli.md 2-bo'lim
 
+const FETCH = (id, nom) => ({ nom: `Fetch standarti — ${nom}`, url: `https://fetch.spec.whatwg.org/#${id}` })
 const RFC = (n, bolim) => ({ nom: `RFC ${n}${bolim ? ', ' + bolim : ''}`, url: `https://www.rfc-editor.org/rfc/rfc${n}${bolim ? '#section-' + bolim : ''}` })
 
 export const QATLAMLAR = {
@@ -14,6 +15,7 @@ export const QATLAMLAR = {
   'x509sat.uTF8String': { nom: 'Matn', izoh: 'Nom qismi (tashkilot yoki umumiy nom).', manba: RFC(5280, '4.1.2.4') },
   http: { nom: 'HTTP/1.1', izoh: 'So‘rov va javob — oddiy matn: birinchi qator, sarlavhalar, bo‘sh qator, tana.', manba: RFC(9112) },
   http2: { nom: 'HTTP/2', izoh: 'Ikkilik kadrlar: har kadrda turi va oqim raqami. Bitta ulanishda bir nechta so‘rov-javob parallel ketadi.', manba: RFC(9113) },
+  json: { nom: 'JSON', izoh: 'Javob tanasi JSON formatida — tshark uni ochib, kalit va qiymatlarini ko‘rsatgan.', manba: RFC(8259) },
   'data-text-lines': { nom: 'Tana (HTML)', izoh: 'Javobning tanasi — sahifaning o‘zi.', manba: RFC(9110, '6.4') },
   data: { nom: 'Ma’lumot', izoh: 'Bu paketdagi baytlar oldingi paketning davomi.', manba: RFC(9293, '3.4') },
 }
@@ -191,6 +193,18 @@ export const MAYDONLAR = {
   'http.set_cookie': { nom: 'Set-Cookie', izoh: 'Server klientga cookie beradi: nom=qiymat, keyin ; bilan atributlar (Path, Max-Age, HttpOnly…). Har cookie — alohida Set-Cookie.', manba: RFC(6265, '4.1') },
   'http.cookie': { nom: 'Cookie', izoh: 'Klient saqlagan cookie’larni qaytaradi — faqat nom=qiymat, atributlarsiz. Qaysilari yuborilishini atributlar (Path, muddat…) hal qiladi.', manba: RFC(6265, '4.2'), misol: true },
   'http.cookie_pair': { nom: 'Cookie juftligi', izoh: 'Cookie sarlavhasidagi bitta nom=qiymat (tshark ajratib ko‘rsatgan).', manba: RFC(6265, '4.2.1'), misol: true },
+  // CORS (Fetch standarti)
+  'http.request.line:Origin': { nom: 'Origin', izoh: 'Brauzer qo‘shadi: so‘rov qaysi manbadagi (sxema + xost + port) sahifadan. Server ruxsatni shunga qarab beradi.', manba: FETCH('http-requests', '3.3.2') },
+  'http.request.line:Access-Control-Request-Method': { nom: 'Access-Control-Request-Method', izoh: 'Preflight’da: asosiy so‘rov qaysi metod bilan bo‘ladi.', manba: FETCH('http-requests', '3.3.2') },
+  'http.request.line:Access-Control-Request-Headers': { nom: 'Access-Control-Request-Headers', izoh: 'Preflight’da: asosiy so‘rovdagi “xavfsiz ro‘yxat”dan tashqari sarlavhalar (kichik harfda).', manba: FETCH('http-requests', '3.3.2') },
+  'http.request.line:Sec-Fetch-Mode': { nom: 'Sec-Fetch-Mode', izoh: 'Brauzer qo‘shadi: so‘rov rejimi. cors — boshqa manbaga CORS qoidasi bilan.', manba: { nom: 'Fetch Metadata', url: 'https://w3c.github.io/webappsec-fetch-metadata/#sec-fetch-mode-header' } },
+  'http.response.line:Access-Control-Allow-Origin': { nom: 'Access-Control-Allow-Origin', izoh: 'Server: shu manbadagi sahifa javobni o‘qiy oladi. Mos kelmasa — brauzer javobni JavaScript’ga bermaydi.', manba: FETCH('http-responses', '3.3.3') },
+  'http.response.line:Access-Control-Allow-Methods': { nom: 'Access-Control-Allow-Methods', izoh: 'Preflight javobi: ruxsat etilgan metodlar. So‘ralgani ro‘yxatda bo‘lmasa, asosiy so‘rov yuborilmaydi.', manba: FETCH('http-responses', '3.3.3') },
+  'http.response.line:Access-Control-Allow-Headers': { nom: 'Access-Control-Allow-Headers', izoh: 'Preflight javobi: ruxsat etilgan sarlavhalar.', manba: FETCH('http-responses', '3.3.3') },
+  'http.response.line:Access-Control-Max-Age': { nom: 'Access-Control-Max-Age', izoh: 'Preflight natijasini brauzer necha soniya eslab qolsin — shu vaqt ichida shu metod uchun qayta OPTIONS yo‘q.', manba: FETCH('http-responses', '3.3.3') },
+  'http.request.line:Upgrade-Insecure-Requests': { nom: 'Upgrade-Insecure-Requests', izoh: 'Brauzer: “imkon bo‘lsa, https manzilni afzal ko‘raman”.', manba: { nom: 'W3C Upgrade Insecure Requests', url: 'https://www.w3.org/TR/upgrade-insecure-requests/' } },
+  'http.referer': { nom: 'Referer', izoh: 'So‘rov qaysi sahifadan ketgani (brauzer qo‘shadi; Referrer-Policy qisqartirishi mumkin).', manba: RFC(9110, '10.1.3') },
+  'http.accept_language': { nom: 'Accept-Language', izoh: 'Brauzer qaysi tillarni afzal ko‘rishi.', manba: RFC(9110, '12.5.4') },
   // HTTP/2 (RFC 9113) va HPACK (RFC 7541)
   'http2.magic': { nom: 'Muqaddima', izoh: 'Klientning birinchi 24 bayti: “PRI * HTTP/2.0…”. HTTP/2 ishlatilishini tasdiqlaydi; shunday tanlangan-ki, ko‘p HTTP/1.1 serverlar undan keyingi kadrlarni o‘qishga urinmaydi.', manba: RFC(9113, '3.4') },
   'http2.stream': { nom: 'Kadr', izoh: 'Bitta HTTP/2 kadri: turi, oqim raqami va uzunligi. Bitta TLS yozuvida bir nechta kadr bo‘lishi mumkin.', manba: RFC(9113, '4.1') },

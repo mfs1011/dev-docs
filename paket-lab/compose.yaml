@@ -69,3 +69,13 @@ services:
     networks:
       internet: { ipv4_address: 203.0.113.103, mac_address: "02:00:00:00:02:67" }
 
+
+  # ── Haqiqiy brauzer (profil "brauzer": PROFIL=brauzer KIM=brauzer QAYERDA=brauzer ./yoz.sh cors) ──
+  brauzer:
+    profiles: [brauzer]
+    build: brauzer
+    cap_add: [NET_ADMIN, NET_RAW]
+    sysctls: { net.ipv6.conf.all.disable_ipv6: 1 }
+    depends_on: [router, dns, veb]
+    networks:
+      uy: { ipv4_address: 192.168.1.20, mac_address: "02:00:00:00:01:20" }

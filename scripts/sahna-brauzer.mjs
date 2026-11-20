@@ -25,6 +25,7 @@ const DARSLAR = [
   { yol: '/paketlar/siqish', qadamlar: 5, paket: true },
   { yol: '/paketlar/http2', qadamlar: 7, paket: true },
   { yol: '/paketlar/cookie', qadamlar: 5, paket: true },
+  { yol: '/paketlar/cors', qadamlar: 6, paket: true },
   { yol: '/arxitektura/darslar/load-balancing', qadamlar: 8 },
 ]
 const KENGLIK = [[1440, 900], [1024, 768], [390, 844]]

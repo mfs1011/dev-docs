@@ -12,3 +12,6 @@ RUN echo 'include /etc/nginx/tls/*.conf;' > /etc/nginx/conf.d/tls.conf
 RUN printf 'gzip on;\ngzip_vary on;\n' > /etc/nginx/conf.d/siqish.conf
 # Cookie darsi: hisob.sayt.test (alohida nom, sayt.test ga ta'sir qilmaydi)
 COPY cookie.conf /etc/nginx/conf.d/cookie.conf
+# CORS darsi: API (api.sayt.test) va uni chaqiradigan sahifa (sayt.test/cors.html)
+COPY api.conf /etc/nginx/conf.d/api.conf
+COPY cors.html /usr/share/nginx/html/cors.html
