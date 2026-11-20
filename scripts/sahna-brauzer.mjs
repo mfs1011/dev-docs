@@ -31,6 +31,7 @@ const DARSLAR = [
   { yol: '/paketlar/http3', qadamlar: 7, paket: true },
   { yol: '/paketlar/https', qadamlar: 6, paket: true },
   { yol: '/paketlar/metodlar', qadamlar: 7, paket: true },
+  { yol: '/paketlar/ochilmayapti', qadamlar: 6, paket: true },
   { yol: '/arxitektura/darslar/load-balancing', qadamlar: 8 },
 ]
 const KENGLIK = [[1440, 900], [1024, 768], [390, 844]]

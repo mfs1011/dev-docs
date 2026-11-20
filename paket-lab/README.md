@@ -92,6 +92,9 @@ HTTPS darsi (`https`): `tls/sayt.conf` da `ssl_protocols TLSv1.2 TLSv1.3` — TL
 Metodlar darsi (`metodlar`): `veb/fayl.conf` — `fayl.sayt.test`, nginx WebDAV moduli (`dav_methods PUT DELETE`) fayl yaratadi va
 o'chiradi; `/tashqi` — hech narsa tinglamayotgan portga proxy (502). Fayllar konteyner ichida, har ishga tushishda bo'sh.
 
+"Sayt ochilmayapti" darsi (`ochilmayapti`): router `start.sh` da iptables `FORWARD` qoidasi veb-serverning 8081-portiga
+ketgan paketlarni DROP qiladi (javobsiz kutish); 8080-portda dastur yo'q (RST). Boshqa portlarga ta'sir qilmaydi.
+
 DNS darsi: yozuv rezolverning interfeysida olinadi (klient so'rovi ham, iyerarxiya bo'ylab so'rovlar ham ko'rinadi):
 
 ```bash
