@@ -47,6 +47,10 @@ Siqish darsi (`siqish`): `veb/Dockerfile` nginx'ga `gzip on; gzip_vary on;` qo's
 `Accept-Encoding: gzip` bo'lsa ishlaydi — boshqa darslardagi curl uni yubormaydi; qayta yozilsa ularning javobida faqat
 `Vary: Accept-Encoding` sarlavhasi ortadi. Ssenariy bitta `curl` da uch so'rov (`--next` — ulanish qayta ishlatiladi).
 
+HTTP/2 darsi (`http2`): `tls/sayt.conf` da `http2 on;` (ALPN'da `h2`); `--http1.1` bilan so'raydigan TLS darsi o'zgarmaydi.
+`veb/` ga ikki kichik fayl (`uslub.css`, `ilova.js`) — `curl --http2 -Z` uchalasini bitta ulanishda parallel so'raydi.
+Kadrlar shifrlangan, shuning uchun ssenariy ham `SSLKEYLOGFILE` yozadi.
+
 DNS darsi: yozuv rezolverning interfeysida olinadi (klient so'rovi ham, iyerarxiya bo'ylab so'rovlar ham ko'rinadi):
 
 ```bash

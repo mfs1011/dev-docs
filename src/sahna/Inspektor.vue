@@ -134,7 +134,7 @@ const qatlamFoiz = (q) => `${Math.max(6, (q.len / jami.value) * 100)}%`
 .qc span { overflow: hidden; font: 700 11px var(--font-mono); text-overflow: ellipsis; white-space: nowrap; }
 .qc small { color: var(--text-subtle); font: 500 10.5px var(--font-mono); }
 .qc.eth { border-color: var(--text-subtle); } .qc.ip { border-color: var(--info); } .qc.tcp, .qc.udp { border-color: var(--insight); }
-.qc.dns, .qc.http, .qc.tls { border-color: var(--warning); } .qc.data-text-lines, .qc.data { border-color: var(--success); }
+.qc.dns, .qc.http, .qc.http2, .qc.tls { border-color: var(--warning); } .qc.data-text-lines, .qc.data { border-color: var(--success); }
 .qc.tanlangan { background: var(--accent-soft); }
 .i-tana { flex: 1; min-height: 0; display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); }
 .daraxt { margin: 0; padding: 8px 6px; overflow: auto; border-right: 1px solid var(--border); }

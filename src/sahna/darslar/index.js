@@ -24,6 +24,7 @@ export const DARSLAR = [
   { id: 'redirect', tur: 'paket', guruh: 'Web', sarlavha: 'Redirect', izoh: 'http → https: 301, yangi ulanish va TLS', yukla: () => import('./redirect.js') },
   { id: 'kesh-304', tur: 'paket', guruh: 'Web', sarlavha: 'Kesh va 304', izoh: 'ETag va shartli so‘rov', yukla: () => import('./kesh-304.js') },
   { id: 'siqish', tur: 'paket', guruh: 'Web', sarlavha: 'Siqish va qism', izoh: 'gzip, chunked, Range → 206', yukla: () => import('./siqish.js') },
+  { id: 'http2', tur: 'paket', guruh: 'Web', sarlavha: 'HTTP/2', izoh: 'ALPN h2, oqimlar, SETTINGS, HPACK', yukla: () => import('./http2.js') },
   { id: 'cors', tur: 'paket', guruh: 'Web', sarlavha: 'CORS preflight', izoh: 'OPTIONS va ruxsat sarlavhalari', reja: true },
   { id: 'reverse-proxy', tur: 'paket', guruh: 'Server', sarlavha: 'Reverse proxy', izoh: 'Ikki ulanish, X-Forwarded-For', reja: true },
   { id: 'ssh', tur: 'paket', guruh: 'Server', sarlavha: 'SSH', izoh: 'Kalit almashinuvi va shifrlash', reja: true },
