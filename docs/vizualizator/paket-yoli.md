@@ -166,6 +166,10 @@ yopadi, shuning uchun Unbound'da `local-zone: "test." nodefault`.
 
 - o'zimizning sinov CA'si: ildiz → oraliq → `sayt.test` sertifikati. Zanjir darsda to'liq ko'rinadi;
 - klient `SSLKEYLOGFILE` bilan ishga tushadi: curl/OpenSSL kalitlarni faylga yozadi, tshark shu fayl bilan ochadi.
+- Qilindi (2026-11-20): `paket-lab/tls/yarat.sh` (ECDSA P-256 zanjir, bir marta, `tls/sinov/` — git'da yo'q), nginx 443 faqat
+  TLS 1.3. `eksport.sh` kalitlar jurnali bo'lsa `.ochiq.pdml` ni TCP qayta yig'ish **yoqilgan** holda chiqaradi — bir nechta
+  segmentga bo'lingan yozuv (HTTP javobi) oxirgi segmentida ochiladi. `aylantir.mjs` farq qilgan paketlarga `ochiq` qo'shadi;
+  inspektordagi "Kalit bilan ochish" shuni ko'rsatadi (ochilgan maydonlar hex ustida belgilanmaydi).
 
 **Qolganlari:**
 
@@ -239,7 +243,7 @@ raqami `content/*/README.md` dan 2026-11-18 holatida.
 | 1 | **Sahifa ochilishi: HTTP/1.1** | manzil yozildi → DNS → TCP ulanish → GET → 200 OK (bir necha segment) → sahifa | 01, 05, 06 | RFC 9110, 9112 |
 | 2 | **DNS: nomdan manzilgacha** ✅ | klient → rezolver → root → `.test` TLD → domen serveri → javob → keyingi so'rov keshdan (paket yo'q!) | 04 | RFC 1034, 1035 |
 | 3 | **TCP ulanishi** ✅ | SYN → SYN-ACK → ACK → ma'lumot + ACK → FIN/ACK; yopiq port → RST | 03 | RFC 9293 |
-| 4 | **TLS 1.3** | ClientHello (SNI, kalit ulushi) → ServerHello → shifrlangan: sertifikat, tekshiruv, Finished → zanjir tekshiruvi → "kalit bilan ochish" | 25, 26 | RFC 8446 |
+| 4 | **TLS 1.3** ✅ | ClientHello (SNI, kalit ulushi) → ServerHello → shifrlangan: sertifikat, tekshiruv, Finished → zanjir tekshiruvi → "kalit bilan ochish" | 25, 26 | RFC 8446 |
 | 5 | **HTTPS so'rovi** | TCP + TLS + HTTP birga, vaqt qayerga ketgani (har bosqich ms) | 25 | RFC 9110, 8446 |
 | 6 | **Redirect** | `http://` → 301 `Location: https://…` → yangi ulanish | 10 | RFC 9110 §15.4 |
 | 7 | **Kesh va 304** | 1-so'rov 200 + `ETag` → `If-None-Match` → 304 (tana yo'q, hajmni solishtirish) | 11 | RFC 9111 |

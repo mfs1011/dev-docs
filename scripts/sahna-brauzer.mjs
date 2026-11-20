@@ -19,6 +19,7 @@ const DARSLAR = [
   { yol: '/paketlar/http-1-1', qadamlar: 7, paket: true },
   { yol: '/paketlar/tcp', qadamlar: 7, paket: true },
   { yol: '/paketlar/dns', qadamlar: 8, paket: true },
+  { yol: '/paketlar/tls-1-3', qadamlar: 8, paket: true },
   { yol: '/arxitektura/darslar/load-balancing', qadamlar: 8 },
 ]
 const KENGLIK = [[1440, 900], [1024, 768], [390, 844]]
