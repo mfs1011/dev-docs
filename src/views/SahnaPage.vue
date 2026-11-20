@@ -212,7 +212,7 @@ onBeforeUnmount(() => document.removeEventListener('visibilitychange', oynaKo))
       <section class="orta">
         <Metrikalar v-if="tur === 'tizim'" :royxat="dars.metrikaRoyxat" :qiymatlar="metrikalar" :manba="dars.metrikaManba" />
         <div ref="sahnaPanel" class="panel sahna-panel">
-          <Inspektor v-if="inspektorPaket" :paket="inspektorPaket" :yorliq="inspektorHodisa?.yorliq" :rang="inspektorHodisa?.rang"
+          <Inspektor v-if="inspektorPaket" :paket="inspektorPaket" :yozuv-nuqta="dars.yozuvNuqta" :yorliq="inspektorHodisa?.yorliq" :rang="inspektorHodisa?.rang"
                      :bor="{ oldingi: inspektorQator.i > 0, keyingi: inspektorQator.i < inspektorQator.ns.length - 1 }"
                      @yop="tanlanganPaket = null" @oldingi="paketQadam(-1)" @keyingi="paketQadam(1)" />
           <KetmaKetlik v-else-if="tur === 'paket' && korinish === 'ketma'" :dars="dars" :yozuv="yozuv" :qatorlar="paketlar" :tanlangan="tanlanganPaket" @tanla="paketOch" />
@@ -265,7 +265,7 @@ onBeforeUnmount(() => document.removeEventListener('visibilitychange', oynaKo))
             <li v-for="m in dars.manba" :key="m.url"><a :href="m.url" target="_blank" rel="noopener">{{ m.nom }} ↗</a></li>
             <li v-for="b in dars.kitob" :key="b.yol"><RouterLink :to="b.yol">{{ b.nom }}</RouterLink></li>
           </ul>
-          <p class="sinov">{{ dars.sinov }}</p>
+          <p class="sinov" v-html="mini(dars.sinov)" />
           <RouterLink v-if="dars.trenajor" class="sina" :to="dars.trenajor.yol">{{ dars.trenajor.nom }} →</RouterLink>
         </div>
       </aside>

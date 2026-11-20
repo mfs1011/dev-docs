@@ -25,12 +25,14 @@ services:
       internet: { ipv4_address: 203.0.113.53, mac_address: "02:00:00:00:02:53" }
   veb:
     build: veb
+    volumes: ["./tls/sinov:/etc/nginx/tls:ro"]
     sysctls: { net.ipv6.conf.all.disable_ipv6: 1 }
     networks:
       internet: { ipv4_address: 203.0.113.10, mac_address: "02:00:00:00:02:10" }
   klient:
     build: klient
     cap_add: [NET_ADMIN, NET_RAW]
+    volumes: ["./tls/sinov:/tls:ro"]
     sysctls: { net.ipv6.conf.all.disable_ipv6: 1 }
     depends_on: [router, dns, veb]
     networks:

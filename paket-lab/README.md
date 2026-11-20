@@ -30,6 +30,19 @@ rsync -az lab:/root/paket-lab/chiqish/ <papka>/
 TAQIQ="<vps-ip>,…" node scripts/paket/aylantir.mjs <papka> http-1-1   # → src/sahna/paket/yozuvlar/http-1-1.json
 ```
 
+TLS darsi: `yoz.sh` har safar `tls/yarat.sh` ni chaqiradi — sinov CA zanjiri (ildiz → oraliq → `sayt.test`) faqat bir marta
+`tls/sinov/` ga yaratiladi (git'da yo'q), `veb` (nginx 443, faqat TLS 1.3) va `klient` (`/tls/ildiz.pem`) ga ulanadi. Klient
+ssenariysi `SSLKEYLOGFILE` ga kalitlarni yozsa, `yoz.sh` ularni `chiqish/<dars>.keys` ga oladi, `eksport.sh` esa kalit bilan
+ochilgan ko'rinishni (`.ochiq.pdml`, `.ochiq.cols`) chiqaradi. Kalitlar fayli repo'ga tushmaydi — faqat ochilgan daraxt.
+
+```bash
+./yoz.sh tls && ./eksport.sh tls
+```
+
+`tls/sayt.conf` da yana: `www.sayt.test` (80) → `301 https://sayt.test$request_uri` — redirect darsi uchun. Boshqa darslar
+`sayt.test` yoki IP bilan so'raydi, ularga ta'sir qilmaydi. Kesh darsi (`kesh-304`) qo'shimcha sozlamasiz: nginx statik faylga
+`ETag` va `Last-Modified` ni o'zi qo'shadi.
+
 DNS darsi: yozuv rezolverning interfeysida olinadi (klient so'rovi ham, iyerarxiya bo'ylab so'rovlar ham ko'rinadi):
 
 ```bash
@@ -44,4 +57,6 @@ Saboqlar:
 - dnsmasq'da `--local=/test/` bo'lmasa AAAA so'roviga `REFUSED` qaytadi; bilan — NODATA (to'g'ri javob).
 - Unbound `.test` ni sukut bo'yicha o'zi NXDOMAIN bilan yopadi (RFC 6761 6.2) — `local-zone: "test." nodefault` kerak.
 - Unbound QNAME minimisation (RFC 9156) bilan ishlaydi: ildizga to'liq nom emas, faqat `test` so'raladi.
+- tshark kalit bilan ochganda qayta yig'ish kerak: aks holda bir nechta segmentdagi TLS yozuvi ochilmaydi.
+- `eksport.sh` da `TZ=UTC` — aks holda tshark sertifikat vaqtlarini VPS'ning mahalliy zonasida ko'rsatadi.
 - tshark `/root` dagi faylni o'qishni rad etdi ("permission") — fayl stdin orqali beriladi (`tshark -r - < fayl`).
