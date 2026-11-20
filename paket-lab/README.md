@@ -77,6 +77,15 @@ MITM darsi (`mitm`): yozuv routerda — `QAYERDA=router ./yoz.sh mitm`. `yoz.sh`
 (192.168.1.x) interfeysida ishga tushiradi: klientda u yagona, routerda — Wi-Fi tomoni. Login formasi `/kirish` —
 ochiq HTTP'da `veb/kirish.inc` (default.conf ga qo'shiladi), HTTPS'da `tls/sayt.conf` (u yerda HSTS sarlavhasi ham).
 
+HTTP/3 darsi (`http3`): Debian'dagi curl (va `curlimages/curl` 8.18.0) HTTP/3 siz yig'ilgan, shuning uchun brauzer — Chromium.
+nginx'da `listen 443 quic` (`tls/sayt.conf`), sahifa `veb/h3.html` uslub va skriptni chaqiradi. Laboratoriya CA'si bilan
+QUIC uchun Chromium hujjati ("Playing with QUIC") talab qilganidek: `--origin-to-force-quic-on` va leaf sertifikat SPKI'si
+bilan `--ignore-certificate-errors-spki-list`. Kalitlar jurnali `KIM` konteyneridan olinadi:
+
+```bash
+PROFIL=brauzer KIM=brauzer QAYERDA=brauzer ./yoz.sh http3
+```
+
 DNS darsi: yozuv rezolverning interfeysida olinadi (klient so'rovi ham, iyerarxiya bo'ylab so'rovlar ham ko'rinadi):
 
 ```bash

@@ -29,6 +29,7 @@ export const DARSLAR = [
   { id: 'cors', tur: 'paket', guruh: 'Web', sarlavha: 'CORS preflight', izoh: 'OPTIONS va ruxsat sarlavhalari — haqiqiy brauzerda', yukla: () => import('./cors.js') },
   { id: 'http-auth', tur: 'paket', guruh: 'Web', sarlavha: 'HTTP autentifikatsiya', izoh: '401, WWW-Authenticate, Basic — base64 shifr emas', yukla: () => import('./auth.js') },
   { id: 'mitm', tur: 'paket', guruh: 'Web', sarlavha: 'Yo‘ldagi kuzatuvchi', izoh: 'HTTP va HTTPS routerdan qaraganda; HSTS', yukla: () => import('./mitm.js') },
+  { id: 'http3', tur: 'paket', guruh: 'Web', sarlavha: 'HTTP/3 (QUIC)', izoh: 'UDP, Initial, oqimlar 0/4/8, QPACK — haqiqiy brauzerda', yukla: () => import('./http3.js') },
   { id: 'reverse-proxy', tur: 'paket', guruh: 'Server', sarlavha: 'Reverse proxy', izoh: 'Ikki ulanish, X-Forwarded-For', reja: true },
   { id: 'ssh', tur: 'paket', guruh: 'Server', sarlavha: 'SSH', izoh: 'Kalit almashinuvi va shifrlash', reja: true },
   { id: 'postgres', tur: 'paket', guruh: 'Ma’lumot', sarlavha: 'PostgreSQL', izoh: 'Ulanish, SCRAM, so‘rov', reja: true },

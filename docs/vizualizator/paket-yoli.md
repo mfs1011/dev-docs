@@ -253,7 +253,7 @@ raqami `content/*/README.md` dan 2026-11-18 holatida.
 | 11 | **CORS preflight** ✅ | `OPTIONS` + `Origin` → `Access-Control-Allow-*` → asl so'rov | 19 | Fetch standarti |
 | 12 | **HTTP autentifikatsiya** ✅ | 401 + `WWW-Authenticate` → `Authorization: Basic` (base64 — shifr emas!) | 16 | RFC 9110 §11 |
 | 13 | **Yo'ldagi kuzatuvchi (MITM)** ✅ | bitta login HTTP va HTTPS'da; router nuqtasidan: HTTP'da parol ochiq ko'rinadi, HTTPS'da — faqat SNI va hajmlar. Mavzu himoya uchun: "nega HTTPS va HSTS kerak" | 27, 28 | RFC 8446, 6797 |
-| — | ⚑ **HTTP/3 (QUIC)** | VPS'dagi curl va nginx QUIC qo'llashi tekshiriladi. Bo'lmasa — yozilmaydi, egasiga aytiladi | 13 | RFC 9000, 9114 |
+| — | ⚑ **HTTP/3 (QUIC)** ✅ | VPS'dagi curl va nginx QUIC qo'llashi tekshiriladi. Bo'lmasa — yozilmaydi, egasiga aytiladi | 13 | RFC 9000, 9114 |
 
 ### 4.2. 2-to'lqin — Server tomoni (Nginx, Linux, Server xavfsizligi, Docker)
 

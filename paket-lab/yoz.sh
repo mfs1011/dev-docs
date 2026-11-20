@@ -16,7 +16,7 @@ sleep 2
 docker compose $PROFIL_ARG exec -T "$QAYERDA" sh -c 'I=$(ip -o -4 addr show | grep " inet 192.168.1." | cut -d" " -f2); rm -f /tmp/y.pcap; tcpdump -Z root -i "$I" -n -w /tmp/y.pcap -U not arp and not ip6 >/dev/null 2>&1 & echo $! > /tmp/td.pid; sleep 1'
 docker compose $PROFIL_ARG exec -T "$KIM" sh -s < "ssenariy/$DARS.sh" > "chiqish/$DARS.log" 2>&1 || true
 # TLS kalitlari (bo'lsa): tshark yozuvni shu bilan ochadi
-docker compose exec -T klient sh -c 'cat /tmp/kalitlar.log 2>/dev/null; rm -f /tmp/kalitlar.log' > "chiqish/$DARS.keys"
+docker compose $PROFIL_ARG exec -T "$KIM" sh -c 'cat /tmp/kalitlar.log 2>/dev/null; rm -f /tmp/kalitlar.log' > "chiqish/$DARS.keys"
 [ -s "chiqish/$DARS.keys" ] && chmod 644 "chiqish/$DARS.keys" || rm -f "chiqish/$DARS.keys"
 sleep 1
 docker compose $PROFIL_ARG exec -T "$QAYERDA" sh -c 'kill -INT $(cat /tmp/td.pid); sleep 1'
