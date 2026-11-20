@@ -1,0 +1,8 @@
+; ".test" TLD zonasi: "sayt.test." ni domen serveriga topshiradi
+$ORIGIN test.
+$TTL 86400
+@        IN SOA ns.test. hostmaster.test. 1 1800 900 604800 86400
+@        IN NS  ns.test.
+ns       IN A   203.0.113.102
+sayt     IN NS  ns.sayt.test.
+ns.sayt  IN A   203.0.113.103

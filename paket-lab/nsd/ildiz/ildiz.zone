@@ -1,0 +1,8 @@
+; Laboratoriya ildiz zonasi: "test." zonasini TLD serveriga topshiradi (delegatsiya)
+$ORIGIN .
+$TTL 86400
+@         IN SOA ildiz. hostmaster.ildiz. 1 1800 900 604800 86400
+@         IN NS  ildiz.
+ildiz.    IN A   203.0.113.101
+test.     IN NS  ns.test.
+ns.test.  IN A   203.0.113.102
