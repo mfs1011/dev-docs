@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="uz">
+<head><meta charset="utf-8"><title>CSP sinovi</title></head>
+<body>
+  <p id="natija">boshlandi</p>
+  <!-- 1) nonce bor — ruxsat -->
+  <script nonce="lab123">document.getElementById('natija').textContent += ' | nonce-li skript ishladi'</script>
+  <!-- 2) nonce yo'q ichki skript — XSS'da kiritilgan kod shunday ko'rinadi -->
+  <script>document.getElementById('natija').textContent += ' | ICHKI SKRIPT ISHLADI'</script>
+  <!-- 3) boshqa origin'dagi fayl -->
+  <script src="http://yomon.test/tashqi.js"></script>
+  <!-- keyin clickjacking sinovi sahifasiga -->
+  <script nonce="lab123">setTimeout(() => { location = 'http://yomon.test/ramka.html' }, 1500)</script>
+</body>
+</html>

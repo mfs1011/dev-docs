@@ -31,3 +31,6 @@ RUN mkdir -p /var/lib/nginx-dav /var/lib/nginx-dav-tmp && chown nginx:nginx /var
 # CSRF darsi: boshqa sayt (yomon.test) va uning hujum sahifasi
 COPY yomon.conf /etc/nginx/conf.d/yomon.conf
 COPY yomon/ /usr/share/nginx/yomon/
+# CSP va clickjacking darsi: himoya.sayt.test
+COPY himoya.conf /etc/nginx/conf.d/himoya.conf
+COPY himoya/ /usr/share/nginx/himoya/

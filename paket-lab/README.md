@@ -99,6 +99,10 @@ CSRF darsi (`csrf`, profil `brauzer`): `tls/sayt.conf` da `/csrf/kirish` (ikki c
 `/csrf/otkazma` (server ko'rgan Cookie va Sec-Fetch-Site'ni qaytaradi — haqiqiy amal yo'q); `veb/yomon.conf` — boshqa sayt
 `yomon.test` va uning avtomatik forma sahifasi. Chromium laboratoriya CA'siga leaf SPKI bilan ishonadi.
 
+CSP va clickjacking darsi (`csp`, profil `brauzer`): `veb/himoya.conf` — `himoya.sayt.test`: `csp.html` (faqat nonce'li
+skript, hisobot `/hisobot` ga; nonce doimiy — faqat laboratoriya uchun), `panel.html` (`X-Frame-Options: DENY`,
+`frame-ancestors 'none'`); `yomon.test` da `tashqi.js` va `ramka.html`. Brauzer konsoli `--enable-logging` bilan jurnalga.
+
 DNS darsi: yozuv rezolverning interfeysida olinadi (klient so'rovi ham, iyerarxiya bo'ylab so'rovlar ham ko'rinadi):
 
 ```bash
