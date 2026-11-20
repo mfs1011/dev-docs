@@ -15,3 +15,8 @@ COPY cookie.conf /etc/nginx/conf.d/cookie.conf
 # CORS darsi: API (api.sayt.test) va uni chaqiradigan sahifa (sayt.test/cors.html)
 COPY api.conf /etc/nginx/conf.d/api.conf
 COPY cors.html /usr/share/nginx/html/cors.html
+# HTTP autentifikatsiya darsi: panel.sayt.test, Basic. Sinov foydalanuvchisi lab / sinov-parol (faqat laboratoriya uchun);
+# parol fayli build paytida openssl passwd -apr1 bilan yaratiladi (nginx hujjati: auth_basic_user_file)
+COPY panel.conf /etc/nginx/conf.d/panel.conf
+COPY panel/ /usr/share/nginx/panel/
+RUN printf 'lab:%s\n' "$(openssl passwd -apr1 sinov-parol)" > /etc/nginx/panel.htpasswd

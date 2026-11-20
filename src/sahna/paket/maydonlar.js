@@ -205,6 +205,10 @@ export const MAYDONLAR = {
   'http.request.line:Upgrade-Insecure-Requests': { nom: 'Upgrade-Insecure-Requests', izoh: 'Brauzer: “imkon bo‘lsa, https manzilni afzal ko‘raman”.', manba: { nom: 'W3C Upgrade Insecure Requests', url: 'https://www.w3.org/TR/upgrade-insecure-requests/' } },
   'http.referer': { nom: 'Referer', izoh: 'So‘rov qaysi sahifadan ketgani (brauzer qo‘shadi; Referrer-Policy qisqartirishi mumkin).', manba: RFC(9110, '10.1.3') },
   'http.accept_language': { nom: 'Accept-Language', izoh: 'Brauzer qaysi tillarni afzal ko‘rishi.', manba: RFC(9110, '12.5.4') },
+  // HTTP autentifikatsiya (RFC 9110, 11; Basic — RFC 7617)
+  'http.www_authenticate': { nom: 'WWW-Authenticate', izoh: 'Server chaqiruvi: qaysi usul (sxema) bilan kirish kerak va qaysi soha (realm). 401 javobida bo‘ladi.', manba: RFC(9110, '11.6.1') },
+  'http.authorization': { nom: 'Authorization', izoh: 'Klient ma’lumotlari. Basic’da — base64(login:parol): bu kodlash, shifr emas.', manba: RFC(9110, '11.6.2'), misol: true },
+  'http.authbasic': { nom: 'Ochilgan ma’lumot', izoh: 'tshark base64’ni o‘zi ochdi: login va parol. Yozuvni ko‘rgan har kim shuni ko‘radi.', manba: RFC(7617, '2'), misol: true },
   // HTTP/2 (RFC 9113) va HPACK (RFC 7541)
   'http2.magic': { nom: 'Muqaddima', izoh: 'Klientning birinchi 24 bayti: “PRI * HTTP/2.0…”. HTTP/2 ishlatilishini tasdiqlaydi; shunday tanlangan-ki, ko‘p HTTP/1.1 serverlar undan keyingi kadrlarni o‘qishga urinmaydi.', manba: RFC(9113, '3.4') },
   'http2.stream': { nom: 'Kadr', izoh: 'Bitta HTTP/2 kadri: turi, oqim raqami va uzunligi. Bitta TLS yozuvida bir nechta kadr bo‘lishi mumkin.', manba: RFC(9113, '4.1') },

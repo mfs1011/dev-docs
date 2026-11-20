@@ -69,6 +69,10 @@ PROFIL=brauzer KIM=brauzer QAYERDA=brauzer ./yoz.sh cors
 
 `KIM` — ssenariy qaysi konteynerda ishlaydi (standart `klient`).
 
+HTTP autentifikatsiya darsi (`auth`): `veb/panel.conf` — `panel.sayt.test`, `auth_basic`. Sinov foydalanuvchisi
+`lab` / `sinov-parol` (faqat laboratoriya); parol fayli build paytida `openssl passwd -apr1` bilan yaratiladi. Kontent
+fayldan — himoyalangan joyda `return` `auth_basic` ni chetlab o'tadi.
+
 DNS darsi: yozuv rezolverning interfeysida olinadi (klient so'rovi ham, iyerarxiya bo'ylab so'rovlar ham ko'rinadi):
 
 ```bash
