@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="uz">
+<head><meta charset="utf-8"><title>CORS sinovi</title></head>
+<body>
+  <h1>sayt.test → api.sayt.test</h1>
+  <pre id="natija">kutilmoqda…</pre>
+  <script>
+    // Uch so'rov boshqa manbaga (api.sayt.test): oddiy GET, JSON bilan PUT (preflight bo'ladi), DELETE (ruxsat yo'q)
+    const API = 'http://api.sayt.test/narx'
+    const sinovlar = [
+      ['GET', {}],
+      ['PUT', { method: 'PUT', headers: { 'Content-Type': 'application/json' }, body: '{"narx": 45000}' }],
+      ['DELETE', { method: 'DELETE' }],
+    ]
+    ;(async () => {
+      const qatorlar = []
+      for (const [nom, sozlama] of sinovlar) {
+        try {
+          const javob = await fetch(API, sozlama)
+          qatorlar.push(`${nom}: ${javob.status} ${(await javob.text()).trim()}`)
+        } catch (e) {
+          qatorlar.push(`${nom}: ${e.name}: ${e.message}`)
+        }
+      }
+      document.getElementById('natija').textContent = qatorlar.join('\n')
+    })()
+  </script>
+</body>
+</html>

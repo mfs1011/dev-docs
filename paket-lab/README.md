@@ -55,6 +55,28 @@ Cookie darsi (`cookie`): `veb/cookie.conf` — alohida nom `hisob.sayt.test` (sa
 uchta `Set-Cookie` beradi (sessiya qiymati — nginx'ning `$request_id`), `/profil` server ko'rgan `Cookie` ni qaytaradi,
 `/chiqish` — `Max-Age=0`. curl cookie faylini `-c`/`-b` bilan yuritadi.
 
+nginx'da 80-portning asosiy serveri — rasmdagi `default.conf` (`veb/Dockerfile` unga `default_server` qo'shadi). Busiz
+`conf.d` dagi alifbo bo'yicha birinchi fayl (`api.conf`, `cookie.conf`) asosiy bo'lib qoladi va `sayt.test` ga 404 beradi.
+
+CORS darsi (`cors`): CORS'ni faqat brauzer qo'llaydi, shuning uchun ssenariyni haqiqiy headless Chromium bajaradi —
+profil `brauzer` (uy tarmog'ida 192.168.1.20). `veb/api.conf` — `api.sayt.test` (ruxsat faqat `http://sayt.test` ga,
+GET va PUT), `veb/cors.html` — uch `fetch` (GET, JSON bilan PUT, DELETE). Nomlar `--host-resolver-rules` bilan, qolgan
+hamma nom topilmaydi va fon xizmatlari o'chirilgan — yozuvda faqat dars paketlari:
+
+```bash
+PROFIL=brauzer KIM=brauzer QAYERDA=brauzer ./yoz.sh cors
+```
+
+`KIM` — ssenariy qaysi konteynerda ishlaydi (standart `klient`).
+
+HTTP autentifikatsiya darsi (`auth`): `veb/panel.conf` — `panel.sayt.test`, `auth_basic`. Sinov foydalanuvchisi
+`lab` / `sinov-parol` (faqat laboratoriya); parol fayli build paytida `openssl passwd -apr1` bilan yaratiladi. Kontent
+fayldan — himoyalangan joyda `return` `auth_basic` ni chetlab o'tadi.
+
+MITM darsi (`mitm`): yozuv routerda — `QAYERDA=router ./yoz.sh mitm`. `yoz.sh` tcpdump'ni konteynerning uy tarmog'i
+(192.168.1.x) interfeysida ishga tushiradi: klientda u yagona, routerda — Wi-Fi tomoni. Login formasi `/kirish` —
+ochiq HTTP'da `veb/kirish.inc` (default.conf ga qo'shiladi), HTTPS'da `tls/sayt.conf` (u yerda HSTS sarlavhasi ham).
+
 DNS darsi: yozuv rezolverning interfeysida olinadi (klient so'rovi ham, iyerarxiya bo'ylab so'rovlar ham ko'rinadi):
 
 ```bash
