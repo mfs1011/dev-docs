@@ -247,7 +247,7 @@ raqami `content/*/README.md` dan 2026-11-18 holatida.
 | 5 | **HTTPS so'rovi** | TCP + TLS + HTTP birga, vaqt qayerga ketgani (har bosqich ms) | 25 | RFC 9110, 8446 |
 | 6 | **Redirect** ✅ | `http://` → 301 `Location: https://…` → yangi ulanish | 10 | RFC 9110 §15.4 |
 | 7 | **Kesh va 304** ✅ | 1-so'rov 200 + `ETag` → `If-None-Match` → 304 (tana yo'q, hajmni solishtirish) | 11 | RFC 9111 |
-| 8 | **Siqish va qism** | `Accept-Encoding: gzip` → `Content-Encoding` (hajm farqi); `Range` → 206 | 12 | RFC 9110 |
+| 8 | **Siqish va qism** ✅ | `Accept-Encoding: gzip` → `Content-Encoding` (hajm farqi); `Range` → 206 | 12 | RFC 9110 |
 | 9 | **HTTP/2** | ALPN `h2` → SETTINGS → bitta ulanishda bir nechta oqim (stream ID), HPACK | 13 | RFC 9113 |
 | 10 | **Cookie va sessiya** | `Set-Cookie` → keyingi so'rovda `Cookie`; atributlar | 14, 15 | RFC 6265 |
 | 11 | **CORS preflight** | `OPTIONS` + `Origin` → `Access-Control-Allow-*` → asl so'rov | 19 | Fetch standarti |

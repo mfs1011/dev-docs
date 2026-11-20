@@ -43,6 +43,10 @@ ochilgan ko'rinishni (`.ochiq.pdml`, `.ochiq.cols`) chiqaradi. Kalitlar fayli re
 `sayt.test` yoki IP bilan so'raydi, ularga ta'sir qilmaydi. Kesh darsi (`kesh-304`) qo'shimcha sozlamasiz: nginx statik faylga
 `ETag` va `Last-Modified` ni o'zi qo'shadi.
 
+Siqish darsi (`siqish`): `veb/Dockerfile` nginx'ga `gzip on; gzip_vary on;` qo'shadi. Siqish faqat so'rovda
+`Accept-Encoding: gzip` bo'lsa ishlaydi — boshqa darslardagi curl uni yubormaydi; qayta yozilsa ularning javobida faqat
+`Vary: Accept-Encoding` sarlavhasi ortadi. Ssenariy bitta `curl` da uch so'rov (`--next` — ulanish qayta ishlatiladi).
+
 DNS darsi: yozuv rezolverning interfeysida olinadi (klient so'rovi ham, iyerarxiya bo'ylab so'rovlar ham ko'rinadi):
 
 ```bash
