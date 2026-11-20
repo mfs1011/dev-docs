@@ -1,13 +1,13 @@
 <script setup>
 // Inspektordagi maydonlar daraxtining bitta qatori (ichma-ich). Nom — o'zbekcha (maydonlar.js), qiymat — tshark.
 import { computed, ref } from 'vue'
-import { MAYDONLAR } from './paket/maydonlar.js'
+import { maydonIzohi } from './paket/maydonlar.js'
 
 defineOptions({ name: 'MaydonQator' })
 const props = defineProps({ f: Object, tanlangan: Object, chuqurlik: { type: Number, default: 0 } })
 const emit = defineEmits(['tanla', 'ustida'])
 const ochiq = ref(props.chuqurlik < 1)
-const izoh = computed(() => MAYDONLAR[props.f.k])
+const izoh = computed(() => maydonIzohi(props.f))
 const qiymat = computed(() => {
   const s = props.f.s ?? ''
   const i = s.indexOf(': ')

@@ -1,26 +1,33 @@
 <script setup>
 // Paket inspektori: qatlamlar chizig'i, maydonlar daraxti (o'zbekcha izoh + RFC havolasi), hex dump + ASCII.
 // Maydon ustiga kelinsa — baytlari belgilanadi; baytni bosish — uni o'z ichiga olgan eng ichki maydon.
+// "Kalit bilan ochish" (TLS): paketda `ochiq` bo'lsa — almashtirgich; yoqilganda daraxt laboratoriya kaliti bilan ochilgan
+// ko'rinishga o'tadi. Ochilgan maydonlar shifrlangan baytlarga mos kelmaydi — hex ustida belgilanmaydi.
 // docs/vizualizator/paket-yoli.md 1.5
 import { computed, ref, watch } from 'vue'
 import MaydonQator from './MaydonQator.vue'
-import { MAYDONLAR, QATLAMLAR } from './paket/maydonlar.js'
+import { maydonIzohi, QATLAMLAR } from './paket/maydonlar.js'
 
-const props = defineProps({ paket: Object, yorliq: String, rang: String, bor: { type: Object, default: () => ({}) } })
+const props = defineProps({ paket: Object, yorliq: String, rang: String, yozuvNuqta: String, bor: { type: Object, default: () => ({}) } })
 const emit = defineEmits(['yop', 'oldingi', 'keyingi'])
 
 const tanlangan = ref(null)
 const ustida = ref(null)
-watch(() => props.paket?.n, () => { tanlangan.value = props.paket?.qatlamlar?.[props.paket.qatlamlar.length - 1] ?? null; ustida.value = null }, { immediate: true })
+// paketdan paketga o'tganda ham saqlanadi
+const ochiqRejim = ref(false)
+const ochiq = computed(() => ochiqRejim.value && !!props.paket?.ochiq)
+const daraxt = computed(() => (ochiq.value ? props.paket.ochiq.qatlamlar : props.paket?.qatlamlar) ?? [])
+watch(() => [props.paket?.n, ochiq.value], () => { tanlangan.value = daraxt.value[daraxt.value.length - 1] ?? null; ustida.value = null }, { immediate: true })
 
 const baytlar = computed(() => (props.paket?.hex ?? '').match(/../g)?.map((h) => parseInt(h, 16)) ?? [])
-const qatlamlar = computed(() => (props.paket?.qatlamlar ?? []).map((q) => ({ ...q, info: QATLAMLAR[q.k] })))
+const qatlamlar = computed(() => daraxt.value.map((q) => ({ ...q, info: QATLAMLAR[q.k] })))
 const jami = computed(() => baytlar.value.length || 1)
 
 const belgi = computed(() => ustida.value ?? tanlangan.value)
-const ichida = (i) => belgi.value && belgi.value.len > 0 && i >= belgi.value.pos && i < belgi.value.pos + belgi.value.len
+const ichida = (i) => !ochiq.value && belgi.value && belgi.value.len > 0 && i >= belgi.value.pos && i < belgi.value.pos + belgi.value.len
 
 function engIchki(i) {
+  if (ochiq.value) return tanlangan.value
   let topildi = null
   const yur = (f) => {
     if (f.len > 0 && i >= f.pos && i < f.pos + f.len) { topildi = f; (f.m ?? []).forEach(yur) }
@@ -39,7 +46,7 @@ const asc = (b) => (b >= 32 && b < 127 ? String.fromCharCode(b) : '·')
 const izoh = computed(() => {
   const f = tanlangan.value
   if (!f) return null
-  return MAYDONLAR[f.k] ?? QATLAMLAR[f.k] ?? null
+  return maydonIzohi(f) ?? QATLAMLAR[f.k] ?? null
 })
 const qatlamFoiz = (q) => `${Math.max(6, (q.len / jami.value) * 100)}%`
 </script>
@@ -49,7 +56,7 @@ const qatlamFoiz = (q) => `${Math.max(6, (q.len / jami.value) * 100)}%`
     <header class="i-bosh">
       <span :class="['rn', rang ?? 'boshqa']">{{ paket.n }}</span>
       <div class="i-sar">
-        <strong>{{ yorliq || paket.info }}</strong>
+        <strong>{{ yorliq || (ochiq ? paket.ochiq.info : paket.info) }}</strong>
         <span class="mono">{{ paket.t.toFixed(3) }} s · {{ paket.src }} → {{ paket.dst }} · {{ paket.proto }} · {{ paket.len }} B</span>
       </div>
       <div class="i-tug">
@@ -59,18 +66,23 @@ const qatlamFoiz = (q) => `${Math.max(6, (q.len / jami.value) * 100)}%`
       </div>
     </header>
 
-    <div class="yozuv-nuqta">Klient tomonida yozilgan (uy tarmog‘i) · har bayt haqiqiy yozuvdan</div>
+    <div class="yozuv-nuqta">{{ yozuvNuqta ?? 'Klient tomonida yozilgan (uy tarmog‘i)' }} · har bayt haqiqiy yozuvdan</div>
+    <div v-if="paket.ochiq" :class="['kalit', { yoqiq: ochiq }]">
+      <label><input v-model="ochiqRejim" type="checkbox" /> <strong>Kalit bilan ochish</strong></label>
+      <span v-if="ochiq">Bu kalit faqat shu laboratoriya yozuvida saqlangan (klient uni <code>SSLKEYLOGFILE</code> ga yozdi). Tarmoqdagi boshqa odamda u yo‘q — u faqat shifrlangan baytlarni ko‘radi.</span>
+      <span v-else>Hozir — tarmoqdagi kuzatuvchi ko‘radigan holat: mazmun shifrlangan.</span>
+    </div>
     <div class="qatlam-chiziq">
       <button v-for="q in qatlamlar" :key="q.k + q.pos" :style="{ width: qatlamFoiz(q) }" :class="['qc', q.k, { tanlangan: tanlangan === q }]"
-              @click="tanlangan = paket.qatlamlar.find((x) => x.k === q.k && x.pos === q.pos)"
-              @mouseenter="ustida = paket.qatlamlar.find((x) => x.k === q.k && x.pos === q.pos)" @mouseleave="ustida = null">
+              @click="tanlangan = daraxt.find((x) => x.k === q.k && x.pos === q.pos)"
+              @mouseenter="ustida = daraxt.find((x) => x.k === q.k && x.pos === q.pos)" @mouseleave="ustida = null">
         <span>{{ q.info?.nom ?? q.k }}</span><small>{{ q.len }} B</small>
       </button>
     </div>
 
     <div class="i-tana">
       <ul class="daraxt">
-        <MaydonQator v-for="(q, i) in paket.qatlamlar" :key="i" :f="q" :tanlangan="tanlangan" @tanla="tanlangan = $event" @ustida="ustida = $event" />
+        <MaydonQator v-for="(q, i) in daraxt" :key="i" :f="q" :tanlangan="tanlangan" @tanla="tanlangan = $event" @ustida="ustida = $event" />
       </ul>
       <div class="o-ustun">
         <div class="izoh-quti">
@@ -85,6 +97,7 @@ const qatlamFoiz = (q) => `${Math.max(6, (q.len / jami.value) * 100)}%`
         </div>
         <div class="hex" aria-label="Baytlar">
           <div class="hex-sar"><span>BAYTLAR</span><span class="muted">{{ baytlar.length }} bayt</span></div>
+          <p v-if="ochiq" class="hex-izoh">Simdagi baytlar shifrlangan holicha — ochilgan maydonlar ularga to‘g‘ridan-to‘g‘ri mos kelmaydi.</p>
           <div v-for="o in qatorlar" :key="o" class="hq">
             <span class="ofs">{{ o.toString(16).padStart(4, '0') }}</span>
             <span class="hh">
@@ -111,12 +124,17 @@ const qatlamFoiz = (q) => `${Math.max(6, (q.len / jami.value) * 100)}%`
 .kv:disabled { opacity: .4; cursor: default; }
 .kv:not(:disabled):hover { border-color: var(--accent); color: var(--accent-text); }
 .yozuv-nuqta { padding: 6px 14px 0; color: var(--text-subtle); font-size: 11.5px; }
+.kalit { display: grid; gap: 2px; margin: 6px 14px 0; padding: 6px 10px; border: 1px dashed var(--border-strong); border-radius: var(--radius-sm); font-size: 12px; color: var(--text-muted); }
+.kalit label { display: flex; align-items: center; gap: 6px; color: var(--text); cursor: pointer; }
+.kalit.yoqiq { border-style: solid; border-color: var(--warning); background: color-mix(in srgb, var(--warning) 8%, transparent); }
+.kalit code { font-size: 11px; }
+.hex-izoh { margin: 0 0 6px; color: var(--warning); font: 12px var(--font-sans); }
 .qatlam-chiziq { display: flex; gap: 3px; padding: 6px 14px 10px; border-bottom: 1px solid var(--border); }
 .qc { display: grid; min-width: 0; padding: 4px 6px; border: 0; border-top: 4px solid var(--border-strong); background: none; color: var(--text); text-align: left; cursor: pointer; }
 .qc span { overflow: hidden; font: 700 11px var(--font-mono); text-overflow: ellipsis; white-space: nowrap; }
 .qc small { color: var(--text-subtle); font: 500 10.5px var(--font-mono); }
 .qc.eth { border-color: var(--text-subtle); } .qc.ip { border-color: var(--info); } .qc.tcp, .qc.udp { border-color: var(--insight); }
-.qc.dns, .qc.http { border-color: var(--warning); } .qc.data-text-lines, .qc.data { border-color: var(--success); }
+.qc.dns, .qc.http, .qc.tls { border-color: var(--warning); } .qc.data-text-lines, .qc.data { border-color: var(--success); }
 .qc.tanlangan { background: var(--accent-soft); }
 .i-tana { flex: 1; min-height: 0; display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); }
 .daraxt { margin: 0; padding: 8px 6px; overflow: auto; border-right: 1px solid var(--border); }

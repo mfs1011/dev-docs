@@ -56,6 +56,7 @@ export default {
   daraja: 'boshlang‘ich',
   daqiqa: 8,
   yozuv,
+  yozuvNuqta: 'Rezolver tomonida yozilgan (uy tarmog‘i)',
   kitob: [
     { yol: '/web-asoslari/04-domen-dns', nom: 'Web asoslari, 04: Domen va DNS' },
     { yol: '/web-asoslari/01-veb-qanday-ishlaydi', nom: 'Web asoslari, 01: Veb qanday ishlaydi' },
