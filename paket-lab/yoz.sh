@@ -7,10 +7,14 @@ QAYERDA=${QAYERDA:-klient}
 PROFIL_ARG=${PROFIL:+--profile $PROFIL}
 cd "$(dirname "$0")"
 mkdir -p chiqish
+sh tls/yarat.sh >/dev/null
 docker compose $PROFIL_ARG up -d --build --quiet-pull >/dev/null
 sleep 2
 docker compose exec -T "$QAYERDA" sh -c 'rm -f /tmp/y.pcap; tcpdump -Z root -i eth0 -n -w /tmp/y.pcap -U not arp and not ip6 >/dev/null 2>&1 & echo $! > /tmp/td.pid; sleep 1'
 docker compose exec -T klient sh -s < "ssenariy/$DARS.sh" > "chiqish/$DARS.log" 2>&1 || true
+# TLS kalitlari (bo'lsa): tshark yozuvni shu bilan ochadi
+docker compose exec -T klient sh -c 'cat /tmp/kalitlar.log 2>/dev/null; rm -f /tmp/kalitlar.log' > "chiqish/$DARS.keys"
+[ -s "chiqish/$DARS.keys" ] && chmod 644 "chiqish/$DARS.keys" || rm -f "chiqish/$DARS.keys"
 sleep 1
 docker compose exec -T "$QAYERDA" sh -c 'kill -INT $(cat /tmp/td.pid); sleep 1'
 docker compose cp "$QAYERDA":/tmp/y.pcap "chiqish/$DARS.pcap"
@@ -19,6 +23,8 @@ chmod 644 "chiqish/$DARS.pcap"
   echo "sana: $(date -u +%F)"
   docker compose exec -T klient sh -c 'curl --version | head -1; tcpdump --version 2>&1 | head -1'
   docker compose exec -T veb nginx -v 2>&1
+  docker compose exec -T veb sh -c 'nginx -V 2>&1 | grep -o "built with OpenSSL [0-9.]*"'
+  echo "sinov CA: $(openssl version)"
   docker compose exec -T dns dnsmasq --version | head -1
   if [ -n "${PROFIL:-}" ]; then
     echo "unbound $(docker compose $PROFIL_ARG exec -T rezolver unbound -V | head -1)"

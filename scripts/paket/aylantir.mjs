@@ -14,7 +14,7 @@
  * Maxfiylik: TAQIQ muhit o'zgaruvchisidagi qatorlar (vergul bilan; masalan, VPS'ning haqiqiy IP'si) natijada
  * uchrasa — xato, fayl yozilmaydi.
  */
-import { readFileSync, writeFileSync, mkdirSync } from 'node:fs'
+import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs'
 import { join, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
@@ -74,6 +74,29 @@ const paketlar = cols.map(([n, t, src, dst, proto, info, len], i) => ({
   hex: hex[n],
   qatlamlar: pd[i].protos.filter((p) => !OTKAZ.has(p.k)).map(tozala),
 }))
+// tshark ba'zi paketga info yozmaydi (masalan, bir nechta segmentga bo'lingan TLS yozuvining boshi) — o'rniga
+// eng ichki qatlamning oxirgi maydoni matni (tshark'ning o'zidan, masalan "TLS segment data (1448 bytes)")
+for (const p of paketlar) {
+  if (p.info) continue
+  const q = p.qatlamlar[p.qatlamlar.length - 1]
+  p.info = q?.m?.[q.m.length - 1]?.s ?? q?.s ?? ''
+}
+
+// TLS: kalit bilan ochilgan ko'rinish (eksport.sh: <dars>.ochiq.pdml, .ochiq.cols). Faqat farq qilgan paketlarga
+// `ochiq: { proto, info, qatlamlar }` qo'shiladi. Ochilgan maydonlarning pos/len shifrlangan baytlarga emas, ochilgan
+// matnga tegishli — inspektor ularni hex ustida belgilamaydi.
+if (existsSync(join(papka, `${dars}.ochiq.pdml`))) {
+  const opd = pdml(readFileSync(join(papka, `${dars}.ochiq.pdml`), 'utf8'))
+  const ocols = Object.fromEntries(readFileSync(join(papka, `${dars}.ochiq.cols`), 'utf8').trim().split('\n').map((q) => q.split('\t')).map(([n, proto, info]) => [n, { proto, info }]))
+  let soni = 0
+  paketlar.forEach((p, i) => {
+    const q = opd[i].protos.filter((x) => !OTKAZ.has(x.k)).map(tozala)
+    if (JSON.stringify(q) === JSON.stringify(p.qatlamlar)) return
+    p.ochiq = { ...ocols[p.n], qatlamlar: q }
+    soni++
+  })
+  console.log(`kalit bilan ochilgan: ${soni} paket`)
+}
 
 const natija = { dars, versiyalar, paketlar }
 const matn = JSON.stringify(natija)
