@@ -4,7 +4,7 @@ set -eu
 cd "$(dirname "$0")"
 O=chiqish/load-balancing; mkdir -p "$O"
 upstream() {
-  sed "s|__UPSTREAM__|$1|" lb/nginx.conf.tmpl > lb/nginx.conf
+  sed "s|__UPSTREAM__|$1|; s|__ZONA__||; s|__LIMIT__||" lb/nginx.conf.tmpl > lb/nginx.conf
   docker compose up -d --build --quiet-pull >/dev/null 2>&1
   docker compose exec -T lb nginx -s reload >/dev/null 2>&1 || true
   sleep 2

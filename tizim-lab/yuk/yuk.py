@@ -14,12 +14,12 @@ def sorov(i, yol, t0):
         c = http.client.HTTPConnection(host, int(port), timeout=10)
         c.request('GET', '/' + yol)
         r = c.getresponse(); r.read()
-        kod, server = r.status, r.getheader('X-Upstream', '?')
+        kod, server, retry = r.status, r.getheader('X-Upstream', '?'), r.getheader('Retry-After')
         c.close()
     except Exception as e:
-        kod, server = 0, 'xato'
+        kod, server, retry = 0, 'xato', None
     with qulf:
-        natija.append({'i': i, 'yol': yol, 'kod': kod, 'server': server, 'ms': (time.monotonic() - bosh) * 1000, 'at': bosh - t0})
+        natija.append({'i': i, 'yol': yol, 'kod': kod, 'server': server, 'retry': retry, 'ms': (time.monotonic() - bosh) * 1000, 'at': bosh - t0})
 
 t0 = time.monotonic()
 with ThreadPoolExecutor(max_workers=400) as ex:
@@ -45,5 +45,7 @@ print(json.dumps({
     'xato': len(natija) - len(ok), 'xato_foiz': round(100 * (len(natija) - len(ok)) / max(1, len(natija)), 2),
     'serverlar': serverlar, 'ogir_serverlar': ogir,
     'ketma': [x['server'] for x in natija[:12]],
-    'har_soniya': [{'s': s, 'p95': foiz([x['ms'] for x in ok if s <= x['at'] < s + 1], .95), 'xato': sum(1 for x in natija if s <= x['at'] < s + 1 and x['kod'] != 200)} for s in range(int(davom))],
+    'kodlar': {str(k): sum(1 for x in natija if x['kod'] == k) for k in sorted({x['kod'] for x in natija})},
+    'retry_after': next((x.get('retry') for x in natija if x.get('retry')), None),
+    'har_soniya': [{'s': s, 'p95': foiz([x['ms'] for x in ok if s <= x['at'] < s + 1], .95), 'xato': sum(1 for x in natija if s <= x['at'] < s + 1 and x['kod'] != 200), 'ok': sum(1 for x in natija if s <= x['at'] < s + 1 and x['kod'] == 200)} for s in range(int(davom))],
 }))

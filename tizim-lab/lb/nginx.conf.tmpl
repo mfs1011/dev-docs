@@ -3,16 +3,24 @@
 events { worker_connections 4096; }
 http {
   access_log /dev/stdout combined;
+  __ZONA__
   upstream ilovalar {
     __UPSTREAM__
   }
   server {
     listen 80;
     location / {
+      __LIMIT__
       proxy_pass http://ilovalar;
       proxy_http_version 1.1;
       proxy_set_header Connection "";
       add_header X-Upstream $upstream_addr always;
+    }
+    # rate limiting darsi: 429 javobiga Retry-After (nginx uni o'zi qo'shmaydi)
+    error_page 429 = @cheklandi;
+    location @cheklandi {
+      add_header Retry-After 1 always;
+      return 429;
     }
   }
 }

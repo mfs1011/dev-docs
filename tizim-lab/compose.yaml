@@ -14,3 +14,5 @@ services:
     networks: { lab: { ipv4_address: 10.70.0.2 } }
     depends_on: [a1, a2, a3]
   yuk: { build: yuk, networks: { lab: { ipv4_address: 10.70.0.100 } } }
+  # rate limiting darsi: ikkinchi manba (boshqa IP) — "bot"
+  yuk2: { build: yuk, networks: { lab: { ipv4_address: 10.70.0.101 } } }
