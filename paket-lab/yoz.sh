@@ -12,7 +12,8 @@ mkdir -p chiqish
 sh tls/yarat.sh >/dev/null
 docker compose $PROFIL_ARG up -d --build --quiet-pull >/dev/null
 sleep 2
-docker compose $PROFIL_ARG exec -T "$QAYERDA" sh -c 'rm -f /tmp/y.pcap; tcpdump -Z root -i eth0 -n -w /tmp/y.pcap -U not arp and not ip6 >/dev/null 2>&1 & echo $! > /tmp/td.pid; sleep 1'
+# interfeys — uy tarmog'idagisi (192.168.1.x): klientda yagona, routerda — Wi-Fi tomoni (MITM darsi)
+docker compose $PROFIL_ARG exec -T "$QAYERDA" sh -c 'I=$(ip -o -4 addr show | grep " inet 192.168.1." | cut -d" " -f2); rm -f /tmp/y.pcap; tcpdump -Z root -i "$I" -n -w /tmp/y.pcap -U not arp and not ip6 >/dev/null 2>&1 & echo $! > /tmp/td.pid; sleep 1'
 docker compose $PROFIL_ARG exec -T "$KIM" sh -s < "ssenariy/$DARS.sh" > "chiqish/$DARS.log" 2>&1 || true
 # TLS kalitlari (bo'lsa): tshark yozuvni shu bilan ochadi
 docker compose exec -T klient sh -c 'cat /tmp/kalitlar.log 2>/dev/null; rm -f /tmp/kalitlar.log' > "chiqish/$DARS.keys"

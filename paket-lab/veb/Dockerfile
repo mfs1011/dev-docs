@@ -20,3 +20,6 @@ COPY cors.html /usr/share/nginx/html/cors.html
 COPY panel.conf /etc/nginx/conf.d/panel.conf
 COPY panel/ /usr/share/nginx/panel/
 RUN printf 'lab:%s\n' "$(openssl passwd -apr1 sinov-parol)" > /etc/nginx/panel.htpasswd
+# MITM darsi: sayt.test:80 da ham /kirish (login formasi qabul qiladigan joy) — ochiq HTTP holati uchun
+COPY kirish.inc /etc/nginx/kirish.inc
+RUN sed -i -E 's|^( *listen +80 default_server;)|\1\n    include /etc/nginx/kirish.inc;|' /etc/nginx/conf.d/default.conf

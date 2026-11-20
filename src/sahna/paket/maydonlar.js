@@ -16,6 +16,7 @@ export const QATLAMLAR = {
   http: { nom: 'HTTP/1.1', izoh: 'So‘rov va javob — oddiy matn: birinchi qator, sarlavhalar, bo‘sh qator, tana.', manba: RFC(9112) },
   http2: { nom: 'HTTP/2', izoh: 'Ikkilik kadrlar: har kadrda turi va oqim raqami. Bitta ulanishda bir nechta so‘rov-javob parallel ketadi.', manba: RFC(9113) },
   json: { nom: 'JSON', izoh: 'Javob tanasi JSON formatida — tshark uni ochib, kalit va qiymatlarini ko‘rsatgan.', manba: RFC(8259) },
+  'urlencoded-form': { nom: 'Forma ma’lumoti', izoh: 'HTML forma yuborgan maydonlar: nom=qiymat&nom=qiymat (application/x-www-form-urlencoded).', manba: { nom: 'WHATWG URL — application/x-www-form-urlencoded', url: 'https://url.spec.whatwg.org/#application/x-www-form-urlencoded' } },
   'data-text-lines': { nom: 'Tana (HTML)', izoh: 'Javobning tanasi — sahifaning o‘zi.', manba: RFC(9110, '6.4') },
   data: { nom: 'Ma’lumot', izoh: 'Bu paketdagi baytlar oldingi paketning davomi.', manba: RFC(9293, '3.4') },
 }
@@ -209,6 +210,10 @@ export const MAYDONLAR = {
   'http.www_authenticate': { nom: 'WWW-Authenticate', izoh: 'Server chaqiruvi: qaysi usul (sxema) bilan kirish kerak va qaysi soha (realm). 401 javobida bo‘ladi.', manba: RFC(9110, '11.6.1') },
   'http.authorization': { nom: 'Authorization', izoh: 'Klient ma’lumotlari. Basic’da — base64(login:parol): bu kodlash, shifr emas.', manba: RFC(9110, '11.6.2'), misol: true },
   'http.authbasic': { nom: 'Ochilgan ma’lumot', izoh: 'tshark base64’ni o‘zi ochdi: login va parol. Yozuvni ko‘rgan har kim shuni ko‘radi.', manba: RFC(7617, '2'), misol: true },
+  // Forma va HSTS
+  'urlencoded-form.key': { nom: 'Maydon nomi', izoh: 'Forma maydonining nomi (input name).', manba: { nom: 'WHATWG URL — application/x-www-form-urlencoded', url: 'https://url.spec.whatwg.org/#application/x-www-form-urlencoded' } },
+  'urlencoded-form.value': { nom: 'Maydon qiymati', izoh: 'Foydalanuvchi kiritgan qiymat — ochiq HTTP’da tarmoqda shu holicha ketadi.', manba: { nom: 'WHATWG URL — application/x-www-form-urlencoded', url: 'https://url.spec.whatwg.org/#application/x-www-form-urlencoded' }, misol: true },
+  'http.response.line:Strict-Transport-Security': { nom: 'Strict-Transport-Security', izoh: 'HSTS: brauzer bu saytga max-age soniya davomida faqat HTTPS bilan kirsin — http:// yozilsa ham. Faqat HTTPS javobida hisobga olinadi.', manba: RFC(6797, '6.1') },
   // HTTP/2 (RFC 9113) va HPACK (RFC 7541)
   'http2.magic': { nom: 'Muqaddima', izoh: 'Klientning birinchi 24 bayti: “PRI * HTTP/2.0…”. HTTP/2 ishlatilishini tasdiqlaydi; shunday tanlangan-ki, ko‘p HTTP/1.1 serverlar undan keyingi kadrlarni o‘qishga urinmaydi.', manba: RFC(9113, '3.4') },
   'http2.stream': { nom: 'Kadr', izoh: 'Bitta HTTP/2 kadri: turi, oqim raqami va uzunligi. Bitta TLS yozuvida bir nechta kadr bo‘lishi mumkin.', manba: RFC(9113, '4.1') },

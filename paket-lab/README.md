@@ -73,6 +73,10 @@ HTTP autentifikatsiya darsi (`auth`): `veb/panel.conf` — `panel.sayt.test`, `a
 `lab` / `sinov-parol` (faqat laboratoriya); parol fayli build paytida `openssl passwd -apr1` bilan yaratiladi. Kontent
 fayldan — himoyalangan joyda `return` `auth_basic` ni chetlab o'tadi.
 
+MITM darsi (`mitm`): yozuv routerda — `QAYERDA=router ./yoz.sh mitm`. `yoz.sh` tcpdump'ni konteynerning uy tarmog'i
+(192.168.1.x) interfeysida ishga tushiradi: klientda u yagona, routerda — Wi-Fi tomoni. Login formasi `/kirish` —
+ochiq HTTP'da `veb/kirish.inc` (default.conf ga qo'shiladi), HTTPS'da `tls/sayt.conf` (u yerda HSTS sarlavhasi ham).
+
 DNS darsi: yozuv rezolverning interfeysida olinadi (klient so'rovi ham, iyerarxiya bo'ylab so'rovlar ham ko'rinadi):
 
 ```bash
