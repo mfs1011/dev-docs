@@ -34,3 +34,5 @@ COPY yomon/ /usr/share/nginx/yomon/
 # CSP va clickjacking darsi: himoya.sayt.test
 COPY himoya.conf /etc/nginx/conf.d/himoya.conf
 COPY himoya/ /usr/share/nginx/himoya/
+# Aralash kontent va SRI darsi: HTTPS sahifa (http:// rasm va skript, integrity'li ikki skript)
+COPY aralash.html ozgartirilgan.js rasm.svg /usr/share/nginx/html/

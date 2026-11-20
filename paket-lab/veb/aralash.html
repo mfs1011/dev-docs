@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="uz">
+<head><meta charset="utf-8"><title>Aralash kontent va SRI</title></head>
+<body>
+  <pre id="natija"></pre>
+  <script>const yoz = (s) => { document.getElementById('natija').textContent += s + '\n' }</script>
+  <!-- Aralash kontent: HTTPS sahifada http:// resurslar -->
+  <img src="http://sayt.test/rasm.svg" onload="yoz('rasm (http): yuklandi ' + this.currentSrc)" onerror="yoz('rasm (http): rad')">
+  <script src="http://sayt.test/ilova.js" onload="yoz('skript (http): yuklandi')" onerror="yoz('skript (http): rad')"></script>
+  <!-- SRI: integrity — ilova.js ning SHA-384 xeshi (openssl dgst -sha384 -binary ilova.js | openssl base64 -A) -->
+  <script src="https://sayt.test/ilova.js" integrity="sha384-ifCAgrVyEw0peKYMQ3gNRzs+vhjuP0jiJ2NlUYGEYacw97Ah1/gCFXex8ViXjheU" crossorigin="anonymous"
+          onload="yoz('ilova.js (xesh mos): yuklandi')" onerror="yoz('ilova.js (xesh mos): rad')"></script>
+  <script src="https://sayt.test/ozgartirilgan.js" integrity="sha384-ifCAgrVyEw0peKYMQ3gNRzs+vhjuP0jiJ2NlUYGEYacw97Ah1/gCFXex8ViXjheU" crossorigin="anonymous"
+          onload="yoz('ozgartirilgan.js (xesh mos emas): yuklandi')" onerror="yoz('ozgartirilgan.js (xesh mos emas): rad')"></script>
+</body>
+</html>

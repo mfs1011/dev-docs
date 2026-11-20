@@ -103,6 +103,10 @@ CSP va clickjacking darsi (`csp`, profil `brauzer`): `veb/himoya.conf` — `himo
 skript, hisobot `/hisobot` ga; nonce doimiy — faqat laboratoriya uchun), `panel.html` (`X-Frame-Options: DENY`,
 `frame-ancestors 'none'`); `yomon.test` da `tashqi.js` va `ramka.html`. Brauzer konsoli `--enable-logging` bilan jurnalga.
 
+Aralash kontent va SRI darsi (`aralash`, profil `brauzer`): `veb/aralash.html` — HTTPS sahifada `http://` rasm va skript,
+`integrity` (ilova.js ning SHA-384 xeshi) bilan `ilova.js` va `ozgartirilgan.js`. `ilova.js` o'zgarsa, xeshni qayta hisoblang:
+`openssl dgst -sha384 -binary veb/ilova.js | openssl base64 -A`.
+
 DNS darsi: yozuv rezolverning interfeysida olinadi (klient so'rovi ham, iyerarxiya bo'ylab so'rovlar ham ko'rinadi):
 
 ```bash
