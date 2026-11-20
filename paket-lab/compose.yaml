@@ -35,3 +35,35 @@ services:
     depends_on: [router, dns, veb]
     networks:
       uy: { ipv4_address: 192.168.1.10, mac_address: "02:00:00:00:01:10" }
+
+  # ── DNS iyerarxiyasi (profil "dns": PROFIL=dns ./yoz.sh dns). Mavjud darslarga ta'sir qilmaydi ──
+  rezolver:
+    profiles: [dns]
+    build: rezolver
+    cap_add: [NET_ADMIN, NET_RAW]
+    sysctls: { net.ipv6.conf.all.disable_ipv6: 1 }
+    depends_on: [router]
+    networks:
+      uy: { ipv4_address: 192.168.1.53, mac_address: "02:00:00:00:01:53" }
+  ildiz:
+    profiles: [dns]
+    build: nsd
+    volumes: ["./nsd/ildiz:/etc/nsd/lab:ro"]
+    sysctls: { net.ipv6.conf.all.disable_ipv6: 1 }
+    networks:
+      internet: { ipv4_address: 203.0.113.101, mac_address: "02:00:00:00:02:65" }
+  tld:
+    profiles: [dns]
+    build: nsd
+    volumes: ["./nsd/tld:/etc/nsd/lab:ro"]
+    sysctls: { net.ipv6.conf.all.disable_ipv6: 1 }
+    networks:
+      internet: { ipv4_address: 203.0.113.102, mac_address: "02:00:00:00:02:66" }
+  domen:
+    profiles: [dns]
+    build: nsd
+    volumes: ["./nsd/domen:/etc/nsd/lab:ro"]
+    sysctls: { net.ipv6.conf.all.disable_ipv6: 1 }
+    networks:
+      internet: { ipv4_address: 203.0.113.103, mac_address: "02:00:00:00:02:67" }
+

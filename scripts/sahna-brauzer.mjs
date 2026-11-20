@@ -17,6 +17,8 @@ const asos = process.argv[2] ?? 'http://localhost:5182'
 const papka = process.argv[3]
 const DARSLAR = [
   { yol: '/paketlar/http-1-1', qadamlar: 7, paket: true },
+  { yol: '/paketlar/tcp', qadamlar: 7, paket: true },
+  { yol: '/paketlar/dns', qadamlar: 8, paket: true },
   { yol: '/arxitektura/darslar/load-balancing', qadamlar: 8 },
 ]
 const KENGLIK = [[1440, 900], [1024, 768], [390, 844]]
@@ -71,5 +73,5 @@ for (const tema of ['light', 'dark']) {
   }
 }
 await b.close()
-console.log(xato ? `\n${xato} ta muammo` : '\nhammasi joyida: 2 dars × qadamlar × 3 kenglik × 2 tema')
+console.log(xato ? `\n${xato} ta muammo` : `\nhammasi joyida: ${DARSLAR.length} dars × qadamlar × 3 kenglik × 2 tema`)
 process.exit(xato ? 1 : 0)

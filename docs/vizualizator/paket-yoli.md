@@ -156,9 +156,11 @@ niqoblanadigan narsa deyarli qolmaydi:
   shuning uchun vaqtlar ~0,1 ms bo'lib qoladi. Kechikish qo'yilsa, vaqtlar real internetga yaqin bo'ladi.
 - Kechikish qiymati darsda ochiq yoziladi: "bu yozuvda klient va server orasiga 20 ms kechikish qo'yilgan".
 
-**DNS iyerarxiyasi** — o'zimizning root zonasi, `.test` TLD va `sayt.test` domen serveri (BIND). Rezolver (unbound)
-`root-hints` sifatida bizning root'ni ko'radi. Natijada "rezolver → root → TLD → domen serveri" yo'li **haqiqiy so'rovlar
-bilan** ko'rinadi. `.test` — sinov uchun ajratilgan domen (RFC 2606).
+**DNS iyerarxiyasi** (qilindi, 2026-11-19; compose profili `dns`) — o'zimizning root zonasi, `.test` TLD va `sayt.test`
+domen serveri (uchalasi NSD 4.6.1). Rezolver (Unbound 1.17.1, 192.168.1.53 — uy tarmog'ida) `root-hints` sifatida bizning
+root'ni ko'radi. Natijada "rezolver → root → TLD → domen serveri" yo'li **haqiqiy so'rovlar bilan** ko'rinadi. `.test` —
+sinov uchun ajratilgan domen (RFC 2606); RFC 6761 6.2 bo'yicha keshlovchi rezolver uni sukut bo'yicha o'zi NXDOMAIN bilan
+yopadi, shuning uchun Unbound'da `local-zone: "test." nodefault`.
 
 **TLS:**
 
@@ -235,8 +237,8 @@ raqami `content/*/README.md` dan 2026-11-18 holatida.
 | # | Dars | Qadamlar (taxminiy) | Bob | Standart |
 | --- | --- | --- | --- | --- |
 | 1 | **Sahifa ochilishi: HTTP/1.1** | manzil yozildi → DNS → TCP ulanish → GET → 200 OK (bir necha segment) → sahifa | 01, 05, 06 | RFC 9110, 9112 |
-| 2 | **DNS: nomdan manzilgacha** | klient → rezolver → root → `.test` TLD → domen serveri → javob → keyingi so'rov keshdan (paket yo'q!) | 04 | RFC 1034, 1035 |
-| 3 | **TCP ulanishi** | SYN → SYN-ACK → ACK → ma'lumot + ACK → FIN/ACK; yopiq port → RST | 03 | RFC 9293 |
+| 2 | **DNS: nomdan manzilgacha** ✅ | klient → rezolver → root → `.test` TLD → domen serveri → javob → keyingi so'rov keshdan (paket yo'q!) | 04 | RFC 1034, 1035 |
+| 3 | **TCP ulanishi** ✅ | SYN → SYN-ACK → ACK → ma'lumot + ACK → FIN/ACK; yopiq port → RST | 03 | RFC 9293 |
 | 4 | **TLS 1.3** | ClientHello (SNI, kalit ulushi) → ServerHello → shifrlangan: sertifikat, tekshiruv, Finished → zanjir tekshiruvi → "kalit bilan ochish" | 25, 26 | RFC 8446 |
 | 5 | **HTTPS so'rovi** | TCP + TLS + HTTP birga, vaqt qayerga ketgani (har bosqich ms) | 25 | RFC 9110, 8446 |
 | 6 | **Redirect** | `http://` → 301 `Location: https://…` → yangi ulanish | 10 | RFC 9110 §15.4 |

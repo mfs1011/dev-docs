@@ -1,0 +1,7 @@
+; "sayt.test" domen zonasi: yakuniy javob shu yerda
+$ORIGIN sayt.test.
+$TTL 300
+@   IN SOA ns.sayt.test. hostmaster.sayt.test. 1 1800 900 604800 300
+@   IN NS  ns
+ns  IN A   203.0.113.103
+@   IN A   203.0.113.10

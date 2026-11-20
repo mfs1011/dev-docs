@@ -71,8 +71,9 @@ function maqsadVb(ids) {
   if (y1 - y0 < minH) { const c = (y0 + y1) / 2; y0 = c - minH / 2; y1 = c + minH / 2 }
   return [x0, y0, x1 - x0, y1 - y0]
 }
+// kamera doim hamma ko'rinadigan tugunni oladi — sahifa to'g'ridan-to'g'ri qadamga ochilganda ham, qadamdan qadamga o'tganda ham bir xil
 const kameraIds = () => props.korinadi
-const vb = ref(maqsadVb(props.kamera))
+const vb = ref(maqsadVb(kameraIds()))
 let kameraRaf = 0
 watch(() => kameraIds().join(',') + tik.value, () => {
   const dan = [...vb.value], ga = maqsadVb(kameraIds())
