@@ -368,6 +368,8 @@ export const books = [
       { title: 'IV — Framework\'lar uchun', from: 21, to: 24 },
       { title: 'V — Production', from: 25, to: 28 },
     ],
+    // simulyator: brauzerda haqiqiy Docker ishlamaydi — chiqishlar sinov VPS'idagi Docker 29.9.3 yozuvlaridan (docker-trenajor/)
+    tools: [{ label: 'Docker trenajori', route: '/docker/trenajor', note: 'Simulyator: konteyner, tarmoq, volume jonli' }],
     folders: [],
   },
   {

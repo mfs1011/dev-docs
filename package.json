@@ -21,7 +21,10 @@
     "sql-trenajor:havolalar": "node sql-trenajor/havolalar.mjs",
     "komponent-trenajor:test": "node komponent-trenajor/test/mashqlar.mjs",
     "fsd-trenajor:test": "node fsd-tekshiruvchi/test/steiger.mjs",
-    "arxitektura-trenajor:test": "node arxitektura-simulyator/test/mashqlar.mjs"
+    "arxitektura-trenajor:test": "node arxitektura-simulyator/test/mashqlar.mjs",
+    "docker-trenajor:tayyorla": "node docker-trenajor/scripts/tayyorla.mjs",
+    "docker-trenajor:test": "node docker-trenajor/test/moslik.mjs && node docker-trenajor/test/mashqlar.mjs",
+    "docker-trenajor:havolalar": "node docker-trenajor/scripts/havolalar.mjs"
   },
   "dependencies": {
     "@electric-sql/pglite": "0.5.14",
