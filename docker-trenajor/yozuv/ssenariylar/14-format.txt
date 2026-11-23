@@ -1,0 +1,23 @@
+# quvurga (TTY emas) chiqish va hajmlar
+#! tayyor alpine:latest nginx:1.29 hello-world:latest busybox:1.37 debian:trixie
+$ docker run -d --name veb nginx:1.29 >/dev/null; docker run --name a1 alpine true; docker run -d --name s1 alpine sleep 600 >/dev/null; docker run --name h1 hello-world >/dev/null; docker run --name b1 busybox:1.37 true; docker run --name d1 debian:trixie true
+$ docker image ls | cat
+$ docker image ls -a | cat
+$ docker ps -a -s
+$ docker ps -a | cat
+$ docker system df
+$ docker system df -v
+$ docker container prune -f
+$ docker system df
+$ docker pull alpine:latest 2>&1 | cat
+$ docker rmi -f busybox:1.37 >/dev/null; docker pull busybox:1.37 | cat
+$ docker stats --no-stream veb s1
+$ docker top veb
+$ docker port veb 80
+$ docker inspect -f '{{.State.Status}}' veb s1
+$ docker inspect veb s1 --format '{{.Name}}'
+$ docker container ls --format 'table {{.ID}}\t{{.Names}}\t{{.RunningFor}}'
+$ docker images --format 'table {{.Repository}}\t{{.Tag}}\t{{.ID}}\t{{.Size}}'
+$ docker volume ls --format json
+$ docker network ls --format '{{.Name}}: {{.Driver}}'
+$ docker rm -f veb s1

@@ -72,6 +72,9 @@ web-trenajor/test/shots/
 redis-trenajor/build/
 public/redis-trenajor
 redis-trenajor/test/shots/
+# Docker trenajori: skrinshotlar va xom fayl tizimlari (public/docker-trenajor/fs da nusxasi bor)
+docker-trenajor/test/shots/
+docker-trenajor/yozuv/natija/fs/
 paket-lab/chiqish/
 tizim-lab/chiqish/
 tizim-lab/lb/nginx.conf

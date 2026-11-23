@@ -1,0 +1,318 @@
+{
+ "docker": "29.9.3",
+ "sana": "2026-11-23",
+ "terminal": [
+  100,
+  30
+ ],
+ "ssenariylar": [
+  {
+   "ssenariy": "08-xatolar.txt",
+   "buyruqlar": [
+    {
+     "direktiva": "tayyor alpine:latest nginx:1.29"
+    },
+    {
+     "cmd": "docker",
+     "out": "Usage:  docker [OPTIONS] COMMAND\r\n\r\nA self-sufficient runtime for containers\r\n\r\nCommon Commands:\r\n  run         Create and run a new container from an image\r\n  exec        Execute a command in a running container\r\n  ps          List containers\r\n  build       Build an image from a Dockerfile\r\n  bake        Build from a file\r\n  pull        Download an image from a registry\r\n  push        Upload an image to a registry\r\n  images      List images\r\n  login       Authenticate to a registry\r\n  logout      Log out from a registry\r\n  search      Search Docker Hub for images\r\n  version     Show the Docker version information\r\n  info        Display system-wide information\r\n\r\nManagement Commands:\r\n  builder     Manage builds\r\n  buildx*     Docker Buildx\r\n  compose*    Docker Compose\r\n  container   Manage containers\r\n  context     Manage contexts\r\n  image       Manage images\r\n  manifest    Manage Docker image manifests and manifest lists\r\n  network     Manage networks\r\n  plugin      Manage plugins\r\n  system      Manage Docker\r\n  volume      Manage volumes\r\n\r\nSwarm Commands:\r\n  swarm       Manage Swarm\r\n\r\nCommands:\r\n  attach      Attach local standard input, output, and error streams to a running container\r\n  commit      Create a new image from a container's changes\r\n  cp          Copy files/folders between a container and the local filesystem\r\n  create      Create a new container\r\n  diff        Inspect changes to files or directories on a container's filesystem\r\n  events      Get real time events from the server\r\n  export      Export a container's filesystem as a tar archive\r\n  history     Show the history of an image\r\n  import      Import the contents from a tarball to create a filesystem image\r\n  inspect     Return low-level information on Docker objects\r\n  kill        Kill one or more running containers\r\n  load        Load an image from a tar archive or STDIN\r\n  logs        Fetch the logs of a container\r\n  pause       Pause all processes within one or more containers\r\n  port        List port mappings or a specific mapping for the container\r\n  rename      Rename a container\r\n  restart     Restart one or more containers\r\n  rm          Remove one or more containers\r\n  rmi         Remove one or more images\r\n  save        Save one or more images to a tar archive (streamed to STDOUT by default)\r\n  start       Start one or more stopped containers\r\n  stats       Display a live stream of container(s) resource usage statistics\r\n  stop        Stop one or more running containers\r\n  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE\r\n  top         Display the running processes of a container\r\n  unpause     Unpause all processes within one or more containers\r\n  update      Update configuration of one or more containers\r\n  wait        Block until one or more containers stop, then print their exit codes\r\n\r\nGlobal Options:\r\n      --config string      Location of client config files (default \"/root/.docker\")\r\n  -c, --context string     Name of the context to use to connect to the daemon (overrides\r\n                           DOCKER_HOST env var and default context set with \"docker context use\")\r\n  -D, --debug              Enable debug mode\r\n  -H, --host string        Daemon socket to connect to\r\n  -l, --log-level string   Set the logging level (\"debug\", \"info\", \"warn\", \"error\", \"fatal\")\r\n                           (default \"info\")\r\n      --tls                Use TLS; implied by --tlsverify\r\n      --tlscacert string   Trust certs signed only by this CA (default \"/root/.docker/ca.pem\")\r\n      --tlscert string     Path to TLS certificate file (default \"/root/.docker/cert.pem\")\r\n      --tlskey string      Path to TLS key file (default \"/root/.docker/key.pem\")\r\n      --tlsverify          Use TLS and verify the remote\r\n  -v, --version            Print version information and quit\r\n\r\nRun 'docker COMMAND --help' for more information on a command.\r\n\r\nFor more help on how to use Docker, head to https://docs.docker.com/go/guides/\r\n",
+     "kod": 0,
+     "ms": 361
+    },
+    {
+     "cmd": "docker foo",
+     "out": "docker: unknown command: docker foo\r\n\r\nRun 'docker --help' for more information\r\n",
+     "kod": 1,
+     "ms": 143
+    },
+    {
+     "cmd": "docker run",
+     "out": "docker: 'docker run' requires at least 1 argument\r\n\r\nUsage:  docker run [OPTIONS] IMAGE [COMMAND] [ARG...]\r\n\r\nSee 'docker run --help' for more information\r\n",
+     "kod": 1,
+     "ms": 145
+    },
+    {
+     "cmd": "docker ps --yoq",
+     "out": "unknown flag: --yoq\r\n\r\nUsage:  docker ps [OPTIONS]\r\n\r\nRun 'docker ps --help' for more information\r\n",
+     "kod": 125,
+     "ms": 187
+    },
+    {
+     "cmd": "docker stop yoq",
+     "out": "Error response from daemon: No such container: yoq\r\n",
+     "kod": 1,
+     "ms": 155
+    },
+    {
+     "cmd": "docker rm yoq",
+     "out": "Error response from daemon: No such container: yoq\r\n",
+     "kod": 1,
+     "ms": 149
+    },
+    {
+     "cmd": "docker logs yoq",
+     "out": "Error response from daemon: No such container: yoq\r\n",
+     "kod": 1,
+     "ms": 144
+    },
+    {
+     "cmd": "docker exec yoq ls",
+     "out": "Error response from daemon: No such container: yoq\r\n",
+     "kod": 1,
+     "ms": 218
+    },
+    {
+     "cmd": "docker inspect yoq",
+     "out": "[]\r\nerror: no such object: yoq\r\n",
+     "kod": 1,
+     "ms": 183
+    },
+    {
+     "cmd": "docker start yoq",
+     "out": "Error response from daemon: No such container: yoq\r\nfailed to start containers: yoq\r\n",
+     "kod": 1,
+     "ms": 131
+    },
+    {
+     "cmd": "docker image rm yoq",
+     "out": "Error response from daemon: No such image: yoq:latest\r\n",
+     "kod": 1,
+     "ms": 128
+    },
+    {
+     "cmd": "docker network rm yoq",
+     "out": "Error response from daemon: network yoq not found\r\nexit status 1\r\n",
+     "kod": 1,
+     "ms": 128
+    },
+    {
+     "cmd": "docker volume rm yoq",
+     "out": "Error response from daemon: get yoq: no such volume\r\n",
+     "kod": 1,
+     "ms": 150
+    },
+    {
+     "cmd": "docker run --name \"yomon nom\" alpine true",
+     "out": "docker: Error response from daemon: invalid container name (yomon nom): only [a-zA-Z0-9][a-zA-Z0-9_.-] are allowed\r\n\r\nRun 'docker run --help' for more information\r\n",
+     "kod": 125,
+     "ms": 142
+    },
+    {
+     "cmd": "docker run alpine:yoqteg true",
+     "out": "Unable to find image 'alpine:yoqteg' locally\r\ndocker: Error response from daemon: unknown: failed to resolve reference \"docker.io/library/alpine:yoqteg\": unexpected status from HEAD request to https://registry-1.docker.io/v2/library/alpine/manifests/yoqteg: 429 Too Many Requests\r\n\r\nRun 'docker run --help' for more information\r\n",
+     "kod": 125,
+     "ms": 1711,
+     "bolaklar": [
+      [
+       123,
+       "Unable to find image 'alpine:yoqteg' locally\r\n"
+      ],
+      [
+       1696,
+       "docker: Error response from daemon: unknown: failed to resolve reference \"docker.io/library/alpine:yoqteg\": unexpected status from HEAD request to https://registry-1.docker.io/v2/library/alpine/manifests/yoqteg: 429 Too Many Requests\r\n\r\nRun 'docker run --help' for more information\r\n"
+      ]
+     ]
+    },
+    {
+     "cmd": "docker run -p 99999:80 nginx:1.29",
+     "out": "docker: invalid hostPort: 99999\r\n\r\nRun 'docker run --help' for more information\r\n",
+     "kod": 125,
+     "ms": 186
+    },
+    {
+     "cmd": "docker run -p abc nginx:1.29",
+     "out": "docker: invalid containerPort: abc\r\n\r\nRun 'docker run --help' for more information\r\n",
+     "kod": 125,
+     "ms": 213
+    },
+    {
+     "cmd": "docker run -e alpine",
+     "out": "docker: 'docker run' requires at least 1 argument\r\n\r\nUsage:  docker run [OPTIONS] IMAGE [COMMAND] [ARG...]\r\n\r\nSee 'docker run --help' for more information\r\n",
+     "kod": 1,
+     "ms": 141
+    },
+    {
+     "cmd": "docker run -d --name ish alpine sleep 300",
+     "out": "15520106838c922de6d86d675ca461d3c78dbdd57225f37d7850bf7877a9fb99\r\n",
+     "kod": 0,
+     "ms": 627
+    },
+    {
+     "cmd": "docker rm ish",
+     "out": "Error response from daemon: cannot remove container \"ish\": container is running: stop the container before removing or force remove\r\n",
+     "kod": 1,
+     "ms": 142
+    },
+    {
+     "cmd": "docker exec ish yoqbuyruq; echo \"kod: $?\"",
+     "out": "OCI runtime exec failed: exec failed: unable to start container process: exec: \"yoqbuyruq\": executable file not found in $PATH\r\r\nkod: 127\r\n",
+     "kod": 0,
+     "ms": 241
+    },
+    {
+     "cmd": "docker stop ish",
+     "out": "ish\r\n",
+     "kod": 0,
+     "ms": 10321
+    },
+    {
+     "cmd": "docker exec ish ls",
+     "out": "Error response from daemon: container 15520106838c922de6d86d675ca461d3c78dbdd57225f37d7850bf7877a9fb99 is not running\r\n",
+     "kod": 1,
+     "ms": 171
+    },
+    {
+     "cmd": "docker start ish ish",
+     "out": "ish\r\nish\r\n",
+     "kod": 0,
+     "ms": 433,
+     "bolaklar": [
+      [
+       419,
+       "ish\r\n"
+      ],
+      [
+       420,
+       "ish\r\n"
+      ]
+     ]
+    },
+    {
+     "cmd": "docker stop -t 0 ish",
+     "out": "ish\r\n",
+     "kod": 0,
+     "ms": 360
+    },
+    {
+     "cmd": "docker rm ish",
+     "out": "ish\r\n",
+     "kod": 0,
+     "ms": 231
+    },
+    {
+     "cmd": "docker run -d alpine sleep 5 >/dev/null; docker ps --format \"{{.Names}}\" | wc -l",
+     "out": "1\r\n",
+     "kod": 0,
+     "ms": 583
+    },
+    {
+     "cmd": "docker ps -q | wc -l",
+     "out": "1\r\n",
+     "kod": 0,
+     "ms": 162
+    },
+    {
+     "cmd": "docker ps -aq | wc -c",
+     "out": "13\r\n",
+     "kod": 0,
+     "ms": 176
+    },
+    {
+     "cmd": "docker rm -f $(docker ps -aq) >/dev/null; docker ps -a",
+     "out": "CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES\r\n",
+     "kod": 0,
+     "ms": 417
+    },
+    {
+     "cmd": "docker run --rm alpine sh -c 'echo xato >&2; echo yaxshi'",
+     "out": "yaxshi\r\nxato\r\n",
+     "kod": 0,
+     "ms": 610
+    },
+    {
+     "cmd": "docker run --rm alpine sh -c 'echo xato >&2' 2>/dev/null; echo \"kod: $?\"",
+     "out": "kod: 0\r\n",
+     "kod": 0,
+     "ms": 624
+    },
+    {
+     "cmd": "docker run --rm alpine ls -z",
+     "out": "ls: unrecognized option: z\r\nBusyBox v1.37.0 (2026-01-10 15:38:28 UTC) multi-call binary.\r\n\r\nUsage: ls [-1AaCxdLHRFplinshrSXvctu] [-w WIDTH] [FILE]...\r\n\r\nList directory contents\r\n\r\n\t-1\tOne column output\r\n\t-a\tInclude names starting with .\r\n\t-A\tLike -a, but exclude . and ..\r\n\t-x\tList by lines\r\n\t-d\tList directory names, not contents\r\n\t-L\tFollow symlinks\r\n\t-H\tFollow symlinks on command line\r\n\t-R\tRecurse\r\n\t-p\tAppend / to directory names\r\n\t-F\tAppend indicator (one of */=@|) to names\r\n\t-l\tLong format\r\n\t-i\tList inode numbers\r\n\t-n\tList numeric UIDs and GIDs instead of names\r\n\t-s\tList allocated blocks\r\n\t-lc\tList ctime\r\n\t-lu\tList atime\r\n\t--full-time\tList full date/time\r\n\t-h\tHuman readable sizes (1K 243M 2G)\r\n\t--group-directories-first\r\n\t-S\tSort by size\r\n\t-X\tSort by extension\r\n\t-v\tSort by version\r\n\t-t\tSort by mtime\r\n\t-tc\tSort by ctime\r\n\t-tu\tSort by atime\r\n\t-r\tReverse sort order\r\n\t-w N\tFormat N columns wide\r\n\t--color[={always,never,auto}]\r\n",
+     "kod": 1,
+     "ms": 632,
+     "bolaklar": [
+      [
+       454,
+       "ls: unrecognized option: z\r\n"
+      ],
+      [
+       461,
+       "BusyBox v1.37.0 (2026-01-10 15:38:28 UTC) multi-call binary.\r\n\r\nUsage: ls [-1AaCxdLHRFplinshrSXvctu] [-w WIDTH] [FILE]...\r\n\r\nList directory contents\r\n\r\n\t-1\tOne column output\r\n\t-a\tInclude names starting with .\r\n\t-A\tLike -a, but exclude . and ..\r\n\t-x\tList by lines\r\n\t-d\tList directory names, not contents\r\n\t-L\tFollow symlinks\r\n\t-H\tFollow symlinks on command line\r\n\t-R\tRecurse\r\n\t-p\tAppend / to directory names\r\n\t-F\tAppend indicator (one of */=@|) to names\r\n\t-l\tLong format\r\n\t-i\tList inode numbers\r\n\t-n\tList numeric UIDs and GIDs instead of names\r\n\t-s\tList allocated blocks\r\n\t-lc\tList ctime\r\n\t-lu\tList atime\r\n\t--full-time\tList full date/time\r\n\t-h\tHuman readable sizes (1K 243M 2G)\r\n\t--group-directories-first\r\n\t-S\tSort by size\r\n\t-X\tSort by extension\r\n\t-v\tSort by version\r\n\t-t\tSort by mtime\r\n\t-tc\tSort by ctime\r\n\t-tu\tSort by atime\r\n\t-r\tReverse sort order\r\n\t-w N\tFormat N columns wide\r\n\t--color[={always,never,auto}]\r\n"
+      ]
+     ]
+    },
+    {
+     "cmd": "docker run --rm -w /etc alpine pwd",
+     "out": "/etc\r\n",
+     "kod": 0,
+     "ms": 560
+    },
+    {
+     "cmd": "docker run --rm --entrypoint echo alpine salom",
+     "out": "salom\r\n",
+     "kod": 0,
+     "ms": 489
+    },
+    {
+     "cmd": "docker run --rm --user 1000:1000 alpine id",
+     "out": "uid=1000 gid=1000 groups=1000\r\n",
+     "kod": 0,
+     "ms": 477
+    },
+    {
+     "cmd": "docker run --rm --hostname mehmon alpine hostname",
+     "out": "mehmon\r\n",
+     "kod": 0,
+     "ms": 540
+    },
+    {
+     "cmd": "docker run --rm -m 6m alpine true",
+     "out": "",
+     "kod": 0,
+     "ms": 520
+    },
+    {
+     "cmd": "docker run --rm -m 64m --cpus 0.5 alpine cat /sys/fs/cgroup/memory.max",
+     "out": "67108864\r\n",
+     "kod": 0,
+     "ms": 474
+    },
+    {
+     "cmd": "docker network create ilova-tarmoq",
+     "out": "f70a972d4efdc7d19bc19e0d6f7b0dc36cb86fbca036f2d2edb58113cbe79caf\r\n",
+     "kod": 0,
+     "ms": 169
+    },
+    {
+     "cmd": "docker network create ilova-tarmoq",
+     "out": "Error response from daemon: network with name ilova-tarmoq already exists\r\n",
+     "kod": 1,
+     "ms": 128
+    },
+    {
+     "cmd": "docker network rm ilova-tarmoq",
+     "out": "ilova-tarmoq\r\n",
+     "kod": 0,
+     "ms": 172
+    },
+    {
+     "cmd": "docker volume create v",
+     "out": "Error response from daemon: create v: volume name is too short, names should be at least two alphanumeric characters\r\n",
+     "kod": 1,
+     "ms": 122
+    },
+    {
+     "cmd": "docker volume create v",
+     "out": "Error response from daemon: create v: volume name is too short, names should be at least two alphanumeric characters\r\n",
+     "kod": 1,
+     "ms": 128
+    },
+    {
+     "cmd": "docker volume rm v",
+     "out": "Error response from daemon: get v: no such volume\r\n",
+     "kod": 1,
+     "ms": 129
+    }
+   ]
+  }
+ ]
+}

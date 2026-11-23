@@ -1,0 +1,1473 @@
+{
+ "docker": "29.9.3",
+ "sana": "2026-11-23",
+ "terminal": [
+  100,
+  30
+ ],
+ "ssenariylar": [
+  {
+   "ssenariy": "03-pull-noldan.txt",
+   "buyruqlar": [
+    {
+     "cmd": "docker run --rm busybox:1.37 echo salom",
+     "out": "Unable to find image 'busybox:1.37' locally\r\n1.37: Pulling from library/busybox\r\n\r\n\u001b[1A\u001b[2K\r68fe9bff2ad4: Pulling fs layer \r\u001b[1B\u001b[1A\u001b[2K\r68fe9bff2ad4: Downloading  1.049MB/2.212MB\r\u001b[1B\u001b[1A\u001b[2K\r68fe9bff2ad4: Download complete \r\u001b[1B\r\n\u001b[1A\u001b[2K\r9177639ff916: Download complete \r\u001b[1B\u001b[2A\u001b[2K\r68fe9bff2ad4: Extracting 1 s\r\u001b[2B\u001b[2A\u001b[2K\r68fe9bff2ad4: Extracting 1 s\r\u001b[2B\u001b[2A\u001b[2K\r68fe9bff2ad4: Pull complete \r\u001b[2BDigest: sha256:a7dbc319b1438115a207e11930dc4bb3e643dcb3ec0bdd694bb36cd8fad289ec\r\nStatus: Downloaded newer image for busybox:1.37\r\nsalom\r\n",
+     "kod": 0,
+     "ms": 2758,
+     "bolaklar": [
+      [
+       115,
+       "Unable to find image 'busybox:1.37' locally\r\n"
+      ],
+      [
+       1108,
+       "1.37: Pulling from library/busybox\r\n"
+      ],
+      [
+       1512,
+       "\r\n\u001b[1A\u001b[2K\r68fe9bff2ad4: Pulling fs layer \r\u001b[1B"
+      ],
+      [
+       1925,
+       "\u001b[1A\u001b[2K\r68fe9bff2ad4: Downloading  1.049MB/2.212MB\r\u001b[1B"
+      ],
+      [
+       2039,
+       "\u001b[1A\u001b[2K"
+      ],
+      [
+       2040,
+       "\r68fe9bff2ad4: Download complete \r\u001b[1B"
+      ],
+      [
+       2047,
+       "\r\n"
+      ],
+      [
+       2047,
+       "\u001b[1A"
+      ],
+      [
+       2047,
+       "\u001b[2K\r9177639ff916: Download complete \r"
+      ],
+      [
+       2048,
+       "\u001b[1B"
+      ],
+      [
+       2050,
+       "\u001b[2A"
+      ],
+      [
+       2050,
+       "\u001b[2K"
+      ],
+      [
+       2050,
+       "\r68fe9bff2ad4: Extracting 1 s\r\u001b[2B"
+      ],
+      [
+       2124,
+       "\u001b[2A\u001b[2K"
+      ],
+      [
+       2124,
+       "\r"
+      ],
+      [
+       2125,
+       "68fe9bff2ad4: "
+      ],
+      [
+       2125,
+       "Extracting 1 s\r"
+      ],
+      [
+       2125,
+       "\u001b[2B"
+      ],
+      [
+       2176,
+       "\u001b[2A"
+      ],
+      [
+       2176,
+       "\u001b[2K\r"
+      ],
+      [
+       2176,
+       "68fe9bff2ad4: "
+      ],
+      [
+       2176,
+       "Pull complete \r\u001b[2B"
+      ],
+      [
+       2177,
+       "Digest: sha256:a7dbc319b1438115a207e11930dc4bb3e643dcb3ec0bdd694bb36cd8fad289ec\r\n"
+      ],
+      [
+       2178,
+       "Status: Downloaded newer image for busybox:1.37\r\n"
+      ],
+      [
+       2614,
+       "salom\r\n"
+      ]
+     ]
+    },
+    {
+     "cmd": "docker run -d --name veb nginx:1.29",
+     "out": "Unable to find image 'nginx:1.29' locally\r\n1.29: Pulling from library/nginx\r\n\r\n\u001b[1A\u001b[2K\r8e9b53b630de: Pulling fs layer \r\u001b[1B\r\n\u001b[1A\u001b[2K\r57fb71246055: Pulling fs layer \r\u001b[1B\r\n\u001b[1A\u001b[2K\r38a7e44929f3: Pulling fs layer \r\u001b[1B\r\n\u001b[1A\u001b[2K\r6e9f32fdbd61: Pulling fs layer \r\u001b[1B\r\n\u001b[1A\u001b[2K\r382a36159731: Pulling fs layer \r\u001b[1B\r\n\u001b[1A\u001b[2K\r20d41cd6829d: Pulling fs layer \r\u001b[1B\r\n\u001b[1A\u001b[2K\r83742381311a: Pulling fs layer \r\u001b[1B\u001b[1A\u001b[2K\r83742381311a: Download complete \r\u001b[1B\u001b[7A\u001b[2K\r8e9b53b630de: Download complete \r\u001b[7B\u001b[6A\u001b[2K\r57fb71246055: Downloading  1.049MB/29.78MB\r\u001b[6B\u001b[2A\u001b[2K\r20d41cd6829d: Download complete \r\u001b[2B\u001b[6A\u001b[2K\r57fb71246055: Downloading  1.049MB/29.78MB\r\u001b[6B\u001b[4A\u001b[2K\r6e9f32fdbd61: Download complete \r\u001b[4B\u001b[5A\u001b[2K\r38a7e44929f3: Downloading  1.049MB/33.16MB\r\u001b[5B\u001b[3A\u001b[2K\r382a36159731: Downloading     956B/956B\r\u001b[3B\u001b[6A\u001b[2K\r57fb71246055: Downloading  1.049MB/29.78MB\r\u001b[6B\u001b[6A\u001b[2K\r57fb71246055: Downloading  2.097MB/29.78MB\r\u001b[6B\u001b[5A\u001b[2K\r38a7e44929f3: Downloading  2.097MB/33.16MB\r\u001b[5B\u001b[3A\u001b[2K\r382a36159731: Download complete \r\u001b[3B\u001b[5A\u001b[2K\r38a7e44929f3: Downloading  2.097MB/33.16MB\r\u001b[5B\u001b[6A\u001b[2K\r57fb71246055: Downloading  3.146MB/29.78MB\r\u001b[6B\u001b[6A\u001b[2K\r57fb71246055: Downloading  3.146MB/29.78MB\r\u001b[6B\u001b[5A\u001b[2K\r38a7e44929f3: Downloading  3.146MB/33.16MB\r\u001b[5B\u001b[6A\u001b[2K\r57fb71246055: Downloading  4.194MB/29.78MB\r\u001b[6B\u001b[5A\u001b[2K\r38a7e44929f3: Downloading  3.146MB/33.16MB\r\u001b[5B\u001b[6A\u001b[2K\r57fb71246055: Downloading  4.194MB/29.78MB\r\u001b[6B\u001b[5A\u001b[2K\r38a7e44929f3: Downloading  4.194MB/33.16MB\r\u001b[5B\r\n\u001b[1A\u001b[2K\r46ca9676efb5: Downloading  1.049MB/2.817MB\r\u001b[1B\u001b[7A\u001b[2K\r57fb71246055: Downloading  5.243MB/29.78MB\r\u001b[7B\u001b[6A\u001b[2K\r38a7e44929f3: Downloading  4.194MB/33.16MB\r\u001b[6B\u001b[6A\u001b[2K\r38a7e44929f3: Downloading  4.194MB/33.16MB\r\u001b[6B\u001b[1A\u001b[2K\r46ca9676efb5: Downloading  1.049MB/2.817MB\r\u001b[1B\u001b[7A\u001b[2K\r57fb71246055: Downloading  5.243MB/29.78MB\r\u001b[7B\u001b[1A\u001b[2K\r46ca9676efb5: Downloading  1.049MB/2.817MB\r\u001b[1B\u001b[7A\u001b[2K\r57fb71246055: Downloading  6.291MB/29.78MB\r\u001b[7B\u001b[6A\u001b[2K\r38a7e44929f3: Downloading  5.243MB/33.16MB\r\u001b[6B\u001b[7A\u001b[2K\r57fb71246055: Downloading  6.291MB/29.78MB\r\u001b[7B\u001b[6A\u001b[2K\r38a7e44929f3: Downloading  5.243MB/33.16MB\r\u001b[6B\u001b[1A\u001b[2K\r46ca9676efb5: Downloading  2.097MB/2.817MB\r\u001b[1B\u001b[7A\u001b[2K\r57fb71246055: Downloading  6.291MB/29.78MB\r\u001b[7B\u001b[6A\u001b[2K\r38a7e44929f3: Downloading  6.291MB/33.16MB\r\u001b[6B\u001b[1A\u001b[2K\r46ca9676efb5: Downloading  2.097MB/2.817MB\r\u001b[1B\u001b[7A\u001b[2K\r57fb71246055: Downloading   7.34MB/29.78MB\r\u001b[7B\u001b[6A\u001b[2K\r38a7e44929f3: Downloading  6.291MB/33.16MB\r\u001b[6B\u001b[1A\u001b[2K\r46ca9676efb5: Download complete \r\u001b[1B\u001b[7A\u001b[2K\r57fb71246055: Downloading  8.389MB/29.78MB\r\u001b[7B\u001b[6A\u001b[2K\r38a7e44929f3: Downloading   7.34MB/33.16MB\r\u001b[6B\r\n\u001b[1A\u001b[2K\r94a543ead0f2: Download complete \r\u001b[1B\u001b[8A\u001b[2K\r57fb71246055: Downloading  9.437MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading   7.34MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Downloading  9.437MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  8.389MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Downloading  10.49MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  8.389MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Downloading  10.49MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  9.437MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Downloading  11.53MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  10.49MB/33.16MB\r\u001b[7B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  10.49MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Downloading  11.53MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  11.53MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Downloading  12.58MB/29.78MB\r\u001b[8B\u001b[8A\u001b[2K\r57fb71246055: Downloading  13.63MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  11.53MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Downloading  13.63MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  12.58MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Downloading  14.68MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  13.63MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Downloading  14.68MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  13.63MB/33.16MB\r\u001b[7B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  14.68MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Downloading  15.73MB/29.78MB\r\u001b[8B\u001b[8A\u001b[2K\r57fb71246055: Downloading  15.73MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  14.68MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Downloading  16.78MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  15.73MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Downloading  17.83MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  15.73MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Downloading  17.83MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  16.78MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Downloading  18.87MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  17.83MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Downloading  18.87MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  17.83MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Downloading  19.92MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  18.87MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Downloading  19.92MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  18.87MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Downloading  20.97MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  19.92MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Downloading  22.02MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  19.92MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Downloading  22.02MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  20.97MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Downloading  23.07MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  22.02MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Downloading  23.07MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  22.02MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Downloading  24.12MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  23.07MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Downloading  25.17MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  23.07MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Downloading  25.17MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  24.12MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Downloading  26.21MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  25.17MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Downloading  26.21MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  25.17MB/33.16MB\r\u001b[7B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  26.21MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Downloading  27.26MB/29.78MB\r\u001b[8B\u001b[8A\u001b[2K\r57fb71246055: Downloading  28.31MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  26.21MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Downloading  28.31MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  27.26MB/33.16MB\r\u001b[7B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  27.26MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Downloading  29.36MB/29.78MB\r\u001b[8B\u001b[8A\u001b[2K\r57fb71246055: Download complete \r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  28.31MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Extracting 1 s\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  29.36MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Extracting 1 s\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  30.41MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Extracting 1 s\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  31.46MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Extracting 1 s\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  33.16MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Extracting 1 s\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Download complete \r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Extracting 1 s\r\u001b[8B\u001b[8A\u001b[2K\r57fb71246055: Extracting 1 s\r\u001b[8B\u001b[8A\u001b[2K\r57fb71246055: Extracting 1 s\r\u001b[8B\u001b[8A\u001b[2K\r57fb71246055: Extracting 1 s\r\u001b[8B\u001b[8A\u001b[2K\r57fb71246055: Extracting 1 s\r\u001b[8B\u001b[8A\u001b[2K\r57fb71246055: Extracting 1 s\r\u001b[8B\u001b[8A\u001b[2K\r57fb71246055: Extracting 2 s\r\u001b[8B\u001b[8A\u001b[2K\r57fb71246055: Extracting 2 s\r\u001b[8B\u001b[8A\u001b[2K\r57fb71246055: Extracting 2 s\r\u001b[8B\u001b[8A\u001b[2K\r57fb71246055: Extracting 2 s\r\u001b[8B\u001b[8A\u001b[2K\r57fb71246055: Extracting 2 s\r\u001b[8B\u001b[8A\u001b[2K\r57fb71246055: Extracting 2 s\r\u001b[8B\u001b[8A\u001b[2K\r57fb71246055: Extracting 2 s\r\u001b[8B\u001b[8A\u001b[2K\r57fb71246055: Extracting 2 s\r\u001b[8B\u001b[8A\u001b[2K\r57fb71246055: Pull complete \r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Extracting 1 s\r\u001b[7B\u001b[7A\u001b[2K\r38a7e44929f3: Extracting 1 s\r\u001b[7B\u001b[7A\u001b[2K\r38a7e44929f3: Extracting 1 s\r\u001b[7B\u001b[7A\u001b[2K\r38a7e44929f3: Extracting 1 s\r\u001b[7B\u001b[7A\u001b[2K\r38a7e44929f3: Extracting 1 s\r\u001b[7B\u001b[7A\u001b[2K\r38a7e44929f3: Extracting 1 s\r\u001b[7B\u001b[7A\u001b[2K\r38a7e44929f3: Extracting 1 s\r\u001b[7B\u001b[7A\u001b[2K\r38a7e44929f3: Extracting 1 s\r\u001b[7B\u001b[7A\u001b[2K\r38a7e44929f3: Extracting 1 s\r\u001b[7B\u001b[7A\u001b[2K\r38a7e44929f3: Extracting 1 s\r\u001b[7B\u001b[7A\u001b[2K\r38a7e44929f3: Extracting 1 s\r\u001b[7B\u001b[7A\u001b[2K\r38a7e44929f3: Extracting 2 s\r\u001b[7B\u001b[7A\u001b[2K\r38a7e44929f3: Extracting 2 s\r\u001b[7B\u001b[7A\u001b[2K\r38a7e44929f3: Extracting 2 s\r\u001b[7B\u001b[7A\u001b[2K\r38a7e44929f3: Extracting 2 s\r\u001b[7B\u001b[7A\u001b[2K\r38a7e44929f3: Extracting 2 s\r\u001b[7B\u001b[7A\u001b[2K\r38a7e44929f3: Extracting 2 s\r\u001b[7B\u001b[7A\u001b[2K\r38a7e44929f3: Extracting 2 s\r\u001b[7B\u001b[7A\u001b[2K\r38a7e44929f3: Extracting 2 s\r\u001b[7B\u001b[7A\u001b[2K\r38a7e44929f3: Pull complete \r\u001b[7B\u001b[3A\u001b[2K\r83742381311a: Pull complete \r\u001b[3B\u001b[4A\u001b[2K\r20d41cd6829d: Pull complete \r\u001b[4B\u001b[6A\u001b[2K\r6e9f32fdbd61: Pull complete \r\u001b[6B\u001b[5A\u001b[2K\r382a36159731: Pull complete \r\u001b[5B\u001b[9A\u001b[2K\r8e9b53b630de: Pull complete \r\u001b[9BDigest: sha256:1881968aff6f7cdcc4b888c00a11f4ce241ad7ec957e0cb4a9e19e93a3ff87ea\r\nStatus: Downloaded newer image for nginx:1.29\r\n59e8b9b9b9a12a83b98e0489cba9a1b8325c3ceaa0b52d8b1e44329868af8429\r\n",
+     "kod": 0,
+     "ms": 11409,
+     "bolaklar": [
+      [
+       140,
+       "Unable to find image 'nginx:1.29' locally\r\n"
+      ],
+      [
+       1091,
+       "1.29: Pulling from library/nginx\r\n"
+      ],
+      [
+       1504,
+       "\r\n\u001b[1A\u001b[2K"
+      ],
+      [
+       1504,
+       "\r8e9b53b630de: Pulling fs layer \r\u001b[1B"
+      ],
+      [
+       1506,
+       "\r\n"
+      ],
+      [
+       1506,
+       "\u001b[1A\u001b[2K\r57fb71246055: Pulling fs layer \r\u001b[1B\r\n\u001b[1A\u001b[2K\r38a7e44929f3: Pulling fs layer \r\u001b[1B\r\n\u001b[1A\u001b[2K\r6e9f32fdbd61: Pulling fs layer \r\u001b[1B\r\n\u001b[1A\u001b[2K\r382a36159731: Pulling fs layer \r\u001b[1B\r\n\u001b[1A\u001b[2K\r20d41cd6829d: Pulling fs layer \r\u001b[1B\r\n\u001b[1A\u001b[2K\r83742381311a: Pulling fs layer \r\u001b[1B"
+      ],
+      [
+       1747,
+       "\u001b[1A\u001b[2K\r83742381311a: Download complete \r\u001b[1B"
+      ],
+      [
+       1847,
+       "\u001b[7A"
+      ],
+      [
+       1848,
+       "\u001b[2K\r8e9b53b630de: "
+      ],
+      [
+       1848,
+       "Download complete \r"
+      ],
+      [
+       1848,
+       "\u001b[7B"
+      ],
+      [
+       2049,
+       "\u001b[6A\u001b[2K\r57fb71246055: Downloading  1.049MB/29.78MB\r"
+      ],
+      [
+       2049,
+       "\u001b[6B\u001b[2A\u001b[2K\r20d41cd6829d: Download complete \r\u001b[2B"
+      ],
+      [
+       2152,
+       "\u001b[6A\u001b[2K\r57fb71246055: Downloading  1.049MB/29.78MB\r\u001b[6B"
+      ],
+      [
+       2155,
+       "\u001b[4A\u001b[2K\r6e9f32fdbd61: Download complete \r\u001b[4B"
+      ],
+      [
+       2250,
+       "\u001b[5A\u001b[2K\r38a7e44929f3: Downloading  1.049MB/33.16MB\r\u001b[5B"
+      ],
+      [
+       2251,
+       "\u001b[3A"
+      ],
+      [
+       2251,
+       "\u001b[2K\r382a36159731: Downloading     956B/956B\r\u001b[3B"
+      ],
+      [
+       2251,
+       "\u001b[6A\u001b[2K"
+      ],
+      [
+       2251,
+       "\r"
+      ],
+      [
+       2252,
+       "57fb71246055: "
+      ],
+      [
+       2252,
+       "Downloading  1.049MB/29.78MB\r\u001b[6B"
+      ],
+      [
+       2348,
+       "\u001b[6A\u001b[2K\r57fb71246055: Downloading  2.097MB/29.78MB\r\u001b[6B"
+      ],
+      [
+       2349,
+       "\u001b[5A\u001b[2K\r38a7e44929f3: Downloading  2.097MB/33.16MB\r\u001b[5B\u001b[3A\u001b[2K\r382a36159731: Download complete \r\u001b[3B"
+      ],
+      [
+       2447,
+       "\u001b[5A"
+      ],
+      [
+       2447,
+       "\u001b[2K"
+      ],
+      [
+       2447,
+       "\r38a7e44929f3: Downloading  2.097MB/33.16MB\r\u001b[5B"
+      ],
+      [
+       2449,
+       "\u001b[6A\u001b[2K\r57fb71246055: Downloading  3.146MB/29.78MB\r\u001b[6B"
+      ],
+      [
+       2547,
+       "\u001b[6A\u001b[2K\r57fb71246055: Downloading  3.146MB/29.78MB\r\u001b[6B"
+      ],
+      [
+       2548,
+       "\u001b[5A"
+      ],
+      [
+       2548,
+       "\u001b[2K"
+      ],
+      [
+       2548,
+       "\r38a7e44929f3: Downloading  3.146MB/33.16MB\r"
+      ],
+      [
+       2548,
+       "\u001b[5B"
+      ],
+      [
+       2647,
+       "\u001b[6A\u001b[2K\r"
+      ],
+      [
+       2648,
+       "57fb71246055: Downloading  4.194MB/29.78MB\r\u001b[6B"
+      ],
+      [
+       2648,
+       "\u001b[5A\u001b[2K\r"
+      ],
+      [
+       2649,
+       "38a7e44929f3: Downloading  3.146MB/33.16MB\r\u001b[5B"
+      ],
+      [
+       2754,
+       "\u001b[6A\u001b[2K\r57fb71246055: Downloading  4.194MB/29.78MB\r\u001b[6B"
+      ],
+      [
+       2755,
+       "\u001b[5A\u001b[2K\r38a7e44929f3: Downloading  4.194MB/33.16MB\r\u001b[5B"
+      ],
+      [
+       2858,
+       "\r\n"
+      ],
+      [
+       2858,
+       "\u001b[1A"
+      ],
+      [
+       2859,
+       "\u001b[2K\r"
+      ],
+      [
+       2859,
+       "46ca9676efb5: "
+      ],
+      [
+       2860,
+       "Downloading  1.049MB/2.817MB\r\u001b[1B\u001b[7A"
+      ],
+      [
+       2860,
+       "\u001b[2K\r57fb71246055: Downloading  5.243MB/29.78MB\r\u001b[7B"
+      ],
+      [
+       2861,
+       "\u001b[6A\u001b[2K\r"
+      ],
+      [
+       2861,
+       "38a7e44929f3: Downloading  4.194MB/33.16MB\r\u001b[6B"
+      ],
+      [
+       2948,
+       "\u001b[6A"
+      ],
+      [
+       2948,
+       "\u001b[2K\r"
+      ],
+      [
+       2949,
+       "38a7e44929f3: "
+      ],
+      [
+       2949,
+       "Downloading  4.194MB/33.16MB\r"
+      ],
+      [
+       2950,
+       "\u001b[6B"
+      ],
+      [
+       2951,
+       "\u001b[1A"
+      ],
+      [
+       2953,
+       "\u001b[2K\r46ca9676efb5: Downloading  1.049MB/2.817MB\r\u001b[1B"
+      ],
+      [
+       2953,
+       "\u001b[7A"
+      ],
+      [
+       2954,
+       "\u001b[2K"
+      ],
+      [
+       2954,
+       "\r57fb71246055: Downloading  5.243MB/29.78MB\r\u001b[7B"
+      ],
+      [
+       3047,
+       "\u001b[1A"
+      ],
+      [
+       3048,
+       "\u001b[2K"
+      ],
+      [
+       3048,
+       "\r"
+      ],
+      [
+       3048,
+       "46ca9676efb5: "
+      ],
+      [
+       3049,
+       "Downloading  1.049MB/2.817MB\r"
+      ],
+      [
+       3049,
+       "\u001b[1B"
+      ],
+      [
+       3050,
+       "\u001b[7A\u001b[2K\r57fb71246055: Downloading  6.291MB/29.78MB\r\u001b[7B\u001b[6A"
+      ],
+      [
+       3050,
+       "\u001b[2K\r"
+      ],
+      [
+       3051,
+       "38a7e44929f3: Downloading  5.243MB/33.16MB\r\u001b[6B"
+      ],
+      [
+       3147,
+       "\u001b[7A\u001b[2K\r57fb71246055: Downloading  6.291MB/29.78MB\r\u001b[7B\u001b[6A\u001b[2K\r38a7e44929f3: "
+      ],
+      [
+       3148,
+       "Downloading  5.243MB/33.16MB\r\u001b[6B\u001b[1A\u001b[2K"
+      ],
+      [
+       3148,
+       "\r46ca9676efb5: Downloading  2.097MB/2.817MB\r\u001b[1B"
+      ],
+      [
+       3247,
+       "\u001b[7A\u001b[2K\r57fb71246055: Downloading  6.291MB/29.78MB\r\u001b[7B"
+      ],
+      [
+       3248,
+       "\u001b[6A\u001b[2K\r38a7e44929f3: "
+      ],
+      [
+       3248,
+       "Downloading  6.291MB/33.16MB\r\u001b[6B"
+      ],
+      [
+       3249,
+       "\u001b[1A"
+      ],
+      [
+       3249,
+       "\u001b[2K\r46ca9676efb5: "
+      ],
+      [
+       3249,
+       "Downloading  2.097MB/2.817MB\r"
+      ],
+      [
+       3250,
+       "\u001b[1B"
+      ],
+      [
+       3346,
+       "\u001b[7A\u001b[2K\r57fb71246055: Downloading   7.34MB/29.78MB\r\u001b[7B"
+      ],
+      [
+       3348,
+       "\u001b[6A\u001b[2K\r38a7e44929f3: "
+      ],
+      [
+       3348,
+       "Downloading  6.291MB/33.16MB\r\u001b[6B"
+      ],
+      [
+       3350,
+       "\u001b[1A"
+      ],
+      [
+       3350,
+       "\u001b[2K\r46ca9676efb5: Download complete \r\u001b[1B"
+      ],
+      [
+       3447,
+       "\u001b[7A\u001b[2K\r57fb71246055: Downloading  8.389MB/29.78MB\r\u001b[7B"
+      ],
+      [
+       3448,
+       "\u001b[6A"
+      ],
+      [
+       3448,
+       "\u001b[2K\r38a7e44929f3: "
+      ],
+      [
+       3449,
+       "Downloading   7.34MB/33.16MB\r"
+      ],
+      [
+       3450,
+       "\u001b[6B"
+      ],
+      [
+       3450,
+       "\r\n"
+      ],
+      [
+       3451,
+       "\u001b[1A\u001b[2K\r94a543ead0f2: Download complete \r\u001b[1B"
+      ],
+      [
+       3551,
+       "\u001b[8A\u001b[2K\r57fb71246055: Downloading  9.437MB/29.78MB\r\u001b[8B"
+      ],
+      [
+       3552,
+       "\u001b[7A\u001b[2K\r38a7e44929f3: Downloading   7.34MB/33.16MB\r\u001b[7B"
+      ],
+      [
+       3647,
+       "\u001b[8A\u001b[2K\r57fb71246055: Downloading  9.437MB/29.78MB\r\u001b[8B"
+      ],
+      [
+       3648,
+       "\u001b[7A"
+      ],
+      [
+       3648,
+       "\u001b[2K\r38a7e44929f3: Downloading  8.389MB/33.16MB\r"
+      ],
+      [
+       3648,
+       "\u001b[7B"
+      ],
+      [
+       3748,
+       "\u001b[8A"
+      ],
+      [
+       3748,
+       "\u001b[2K"
+      ],
+      [
+       3748,
+       "\r57fb71246055: Downloading  10.49MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  8.389MB/33.16MB\r\u001b[7B"
+      ],
+      [
+       3846,
+       "\u001b[8A"
+      ],
+      [
+       3847,
+       "\u001b[2K\r57fb71246055: Downloading  10.49MB/29.78MB\r"
+      ],
+      [
+       3847,
+       "\u001b[8B"
+      ],
+      [
+       3848,
+       "\u001b[7A"
+      ],
+      [
+       3849,
+       "\u001b[2K"
+      ],
+      [
+       3849,
+       "\r38a7e44929f3: Downloading  9.437MB/33.16MB\r\u001b[7B"
+      ],
+      [
+       3946,
+       "\u001b[8A"
+      ],
+      [
+       3947,
+       "\u001b[2K\r57fb71246055: Downloading  11.53MB/29.78MB\r"
+      ],
+      [
+       3947,
+       "\u001b[8B"
+      ],
+      [
+       3948,
+       "\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  10.49MB/33.16MB\r"
+      ],
+      [
+       3948,
+       "\u001b[7B"
+      ],
+      [
+       4047,
+       "\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  10.49MB/33.16MB\r\u001b[7B"
+      ],
+      [
+       4048,
+       "\u001b[8A\u001b[2K\r57fb71246055: "
+      ],
+      [
+       4048,
+       "Downloading  11.53MB/29.78MB\r\u001b[8B"
+      ],
+      [
+       4146,
+       "\u001b[7A"
+      ],
+      [
+       4147,
+       "\u001b[2K\r38a7e44929f3: Downloading  11.53MB/33.16MB\r\u001b[7B"
+      ],
+      [
+       4147,
+       "\u001b[8A"
+      ],
+      [
+       4148,
+       "\u001b[2K"
+      ],
+      [
+       4148,
+       "\r57fb71246055: "
+      ],
+      [
+       4149,
+       "Downloading  12.58MB/29.78MB\r"
+      ],
+      [
+       4149,
+       "\u001b[8B"
+      ],
+      [
+       4246,
+       "\u001b[8A\u001b[2K\r57fb71246055: Downloading  13.63MB/29.78MB\r\u001b[8B"
+      ],
+      [
+       4248,
+       "\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  11.53MB/33.16MB\r\u001b[7B"
+      ],
+      [
+       4348,
+       "\u001b[8A\u001b[2K\r57fb71246055: Downloading  13.63MB/29.78MB\r\u001b[8B"
+      ],
+      [
+       4351,
+       "\u001b[7A"
+      ],
+      [
+       4352,
+       "\u001b[2K\r"
+      ],
+      [
+       4355,
+       "38a7e44929f3: "
+      ],
+      [
+       4355,
+       "Downloading  12.58MB/33.16MB\r"
+      ],
+      [
+       4356,
+       "\u001b[7B"
+      ],
+      [
+       4451,
+       "\u001b[8A\u001b[2K\r57fb71246055: Downloading  14.68MB/29.78MB\r\u001b[8B"
+      ],
+      [
+       4452,
+       "\u001b[7A"
+      ],
+      [
+       4452,
+       "\u001b[2K\r"
+      ],
+      [
+       4452,
+       "38a7e44929f3: Downloading  13.63MB/33.16MB\r"
+      ],
+      [
+       4453,
+       "\u001b[7B"
+      ],
+      [
+       4546,
+       "\u001b[8A\u001b[2K\r57fb71246055: Downloading  14.68MB/29.78MB\r"
+      ],
+      [
+       4546,
+       "\u001b[8B\u001b[7A"
+      ],
+      [
+       4547,
+       "\u001b[2K\r38a7e44929f3: Downloading  13.63MB/33.16MB\r\u001b[7B"
+      ],
+      [
+       4646,
+       "\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  14.68MB/33.16MB\r\u001b[7B"
+      ],
+      [
+       4647,
+       "\u001b[8A"
+      ],
+      [
+       4648,
+       "\u001b[2K\r57fb71246055: "
+      ],
+      [
+       4648,
+       "Downloading  15.73MB/29.78MB\r\u001b[8B"
+      ],
+      [
+       4747,
+       "\u001b[8A\u001b[2K\r57fb71246055: Downloading  15.73MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  14.68MB/33.16MB\r\u001b[7B"
+      ],
+      [
+       4846,
+       "\u001b[8A"
+      ],
+      [
+       4847,
+       "\u001b[2K\r57fb71246055: Downloading  16.78MB/29.78MB\r\u001b[8B"
+      ],
+      [
+       4847,
+       "\u001b[7A"
+      ],
+      [
+       4848,
+       "\u001b[2K\r38a7e44929f3: Downloading  15.73MB/33.16MB\r"
+      ],
+      [
+       4848,
+       "\u001b[7B"
+      ],
+      [
+       4946,
+       "\u001b[8A"
+      ],
+      [
+       4946,
+       "\u001b[2K\r57fb71246055: "
+      ],
+      [
+       4947,
+       "Downloading  17.83MB/29.78MB\r"
+      ],
+      [
+       4947,
+       "\u001b[8B"
+      ],
+      [
+       4948,
+       "\u001b[7A\u001b[2K\r38a7e44929f3: "
+      ],
+      [
+       4949,
+       "Downloading  15.73MB/33.16MB\r\u001b[7B"
+      ],
+      [
+       5046,
+       "\u001b[8A\u001b[2K\r57fb71246055: Downloading  17.83MB/29.78MB\r\u001b[8B"
+      ],
+      [
+       5048,
+       "\u001b[7A"
+      ],
+      [
+       5049,
+       "\u001b[2K\r38a7e44929f3: Downloading  16.78MB/33.16MB\r\u001b[7B"
+      ],
+      [
+       5146,
+       "\u001b[8A\u001b[2K\r57fb71246055: Downloading  18.87MB/29.78MB\r\u001b[8B"
+      ],
+      [
+       5147,
+       "\u001b[7A"
+      ],
+      [
+       5147,
+       "\u001b[2K\r38a7e44929f3: Downloading  17.83MB/33.16MB\r"
+      ],
+      [
+       5148,
+       "\u001b[7B"
+      ],
+      [
+       5247,
+       "\u001b[8A\u001b[2K\r57fb71246055: Downloading  18.87MB/29.78MB\r\u001b[8B"
+      ],
+      [
+       5247,
+       "\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  17.83MB/33.16MB\r\u001b[7B"
+      ],
+      [
+       5348,
+       "\u001b[8A\u001b[2K\r57fb71246055: Downloading  19.92MB/29.78MB\r\u001b[8B"
+      ],
+      [
+       5348,
+       "\u001b[7A"
+      ],
+      [
+       5348,
+       "\u001b[2K"
+      ],
+      [
+       5349,
+       "\r"
+      ],
+      [
+       5349,
+       "38a7e44929f3: "
+      ],
+      [
+       5349,
+       "Downloading  18.87MB/33.16MB\r\u001b[7B"
+      ],
+      [
+       5446,
+       "\u001b[8A\u001b[2K\r57fb71246055: Downloading  19.92MB/29.78MB\r\u001b[8B"
+      ],
+      [
+       5447,
+       "\u001b[7A\u001b[2K\r38a7e44929f3: "
+      ],
+      [
+       5447,
+       "Downloading  18.87MB/33.16MB\r"
+      ],
+      [
+       5447,
+       "\u001b[7B"
+      ],
+      [
+       5546,
+       "\u001b[8A\u001b[2K"
+      ],
+      [
+       5547,
+       "\r57fb71246055: Downloading  20.97MB/29.78MB\r\u001b[8B"
+      ],
+      [
+       5547,
+       "\u001b[7A"
+      ],
+      [
+       5548,
+       "\u001b[2K"
+      ],
+      [
+       5548,
+       "\r38a7e44929f3: Downloading  19.92MB/33.16MB\r\u001b[7B"
+      ],
+      [
+       5647,
+       "\u001b[8A\u001b[2K\r57fb71246055: Downloading  22.02MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  19.92MB/33.16MB\r\u001b[7B"
+      ],
+      [
+       5747,
+       "\u001b[8A\u001b[2K\r57fb71246055: Downloading  22.02MB/29.78MB\r\u001b[8B"
+      ],
+      [
+       5748,
+       "\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  20.97MB/33.16MB\r"
+      ],
+      [
+       5748,
+       "\u001b[7B"
+      ],
+      [
+       5846,
+       "\u001b[8A\u001b[2K\r57fb71246055: Downloading  23.07MB/29.78MB\r\u001b[8B"
+      ],
+      [
+       5847,
+       "\u001b[7A"
+      ],
+      [
+       5847,
+       "\u001b[2K\r38a7e44929f3: Downloading  22.02MB/33.16MB\r\u001b[7B"
+      ],
+      [
+       5947,
+       "\u001b[8A\u001b[2K\r57fb71246055: Downloading  23.07MB/29.78MB\r\u001b[8B"
+      ],
+      [
+       5949,
+       "\u001b[7A"
+      ],
+      [
+       5949,
+       "\u001b[2K"
+      ],
+      [
+       5950,
+       "\r"
+      ],
+      [
+       5950,
+       "38a7e44929f3: "
+      ],
+      [
+       5951,
+       "Downloading  22.02MB/33.16MB\r\u001b[7B"
+      ],
+      [
+       6046,
+       "\u001b[8A\u001b[2K"
+      ],
+      [
+       6047,
+       "\r"
+      ],
+      [
+       6047,
+       "57fb71246055: Downloading  24.12MB/29.78MB\r"
+      ],
+      [
+       6047,
+       "\u001b[8B"
+      ],
+      [
+       6048,
+       "\u001b[7A"
+      ],
+      [
+       6048,
+       "\u001b[2K\r"
+      ],
+      [
+       6048,
+       "38a7e44929f3: Downloading  23.07MB/33.16MB\r\u001b[7B"
+      ],
+      [
+       6146,
+       "\u001b[8A\u001b[2K\r57fb71246055: Downloading  25.17MB/29.78MB\r\u001b[8B"
+      ],
+      [
+       6147,
+       "\u001b[7A"
+      ],
+      [
+       6147,
+       "\u001b[2K\r38a7e44929f3: Downloading  23.07MB/33.16MB\r\u001b[7B"
+      ],
+      [
+       6247,
+       "\u001b[8A\u001b[2K\r57fb71246055: Downloading  25.17MB/29.78MB\r\u001b[8B"
+      ],
+      [
+       6247,
+       "\u001b[7A"
+      ],
+      [
+       6248,
+       "\u001b[2K\r38a7e44929f3: Downloading  24.12MB/33.16MB\r\u001b[7B"
+      ],
+      [
+       6347,
+       "\u001b[8A\u001b[2K\r57fb71246055: Downloading  26.21MB/29.78MB\r\u001b[8B"
+      ],
+      [
+       6348,
+       "\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  25.17MB/33.16MB\r\u001b[7B"
+      ],
+      [
+       6446,
+       "\u001b[8A"
+      ],
+      [
+       6447,
+       "\u001b[2K\r57fb71246055: "
+      ],
+      [
+       6447,
+       "Downloading  26.21MB/29.78MB\r"
+      ],
+      [
+       6447,
+       "\u001b[8B"
+      ],
+      [
+       6448,
+       "\u001b[7A"
+      ],
+      [
+       6448,
+       "\u001b[2K"
+      ],
+      [
+       6448,
+       "\r38a7e44929f3: "
+      ],
+      [
+       6448,
+       "Downloading  25.17MB/33.16MB\r\u001b[7B"
+      ],
+      [
+       6546,
+       "\u001b[7A"
+      ],
+      [
+       6547,
+       "\u001b[2K\r38a7e44929f3: Downloading  26.21MB/33.16MB\r\u001b[7B"
+      ],
+      [
+       6548,
+       "\u001b[8A"
+      ],
+      [
+       6548,
+       "\u001b[2K"
+      ],
+      [
+       6548,
+       "\r"
+      ],
+      [
+       6549,
+       "57fb71246055: Downloading  27.26MB/29.78MB\r"
+      ],
+      [
+       6549,
+       "\u001b[8B"
+      ],
+      [
+       6647,
+       "\u001b[8A\u001b[2K\r57fb71246055: Downloading  28.31MB/29.78MB\r\u001b[8B"
+      ],
+      [
+       6648,
+       "\u001b[7A"
+      ],
+      [
+       6648,
+       "\u001b[2K\r38a7e44929f3: Downloading  26.21MB/33.16MB\r\u001b[7B"
+      ],
+      [
+       6746,
+       "\u001b[8A"
+      ],
+      [
+       6747,
+       "\u001b[2K\r57fb71246055: Downloading  28.31MB/29.78MB\r\u001b[8B"
+      ],
+      [
+       6748,
+       "\u001b[7A"
+      ],
+      [
+       6748,
+       "\u001b[2K\r38a7e44929f3: Downloading  27.26MB/33.16MB\r"
+      ],
+      [
+       6748,
+       "\u001b[7B"
+      ],
+      [
+       6848,
+       "\u001b[7A"
+      ],
+      [
+       6849,
+       "\u001b[2K"
+      ],
+      [
+       6849,
+       "\r38a7e44929f3: "
+      ],
+      [
+       6849,
+       "Downloading  27.26MB/33.16MB\r"
+      ],
+      [
+       6850,
+       "\u001b[7B"
+      ],
+      [
+       6852,
+       "\u001b[8A"
+      ],
+      [
+       6853,
+       "\u001b[2K"
+      ],
+      [
+       6853,
+       "\r"
+      ],
+      [
+       6853,
+       "57fb71246055: "
+      ],
+      [
+       6854,
+       "Downloading  29.36MB/29.78MB\r"
+      ],
+      [
+       6854,
+       "\u001b[8B"
+      ],
+      [
+       6949,
+       "\u001b[8A\u001b[2K\r57fb71246055: Download complete \r\u001b[8B"
+      ],
+      [
+       6950,
+       "\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  28.31MB/33.16MB\r\u001b[7B"
+      ],
+      [
+       6971,
+       "\u001b[8A"
+      ],
+      [
+       6972,
+       "\u001b[2K\r57fb71246055: Extracting 1 s\r\u001b[8B"
+      ],
+      [
+       7048,
+       "\u001b[7A"
+      ],
+      [
+       7048,
+       "\u001b[2K"
+      ],
+      [
+       7049,
+       "\r38a7e44929f3: Downloading  29.36MB/33.16MB\r\u001b[7B"
+      ],
+      [
+       7051,
+       "\u001b[8A\u001b[2K\r57fb71246055: "
+      ],
+      [
+       7051,
+       "Extracting 1 s\r"
+      ],
+      [
+       7052,
+       "\u001b[8B"
+      ],
+      [
+       7149,
+       "\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  30.41MB/33.16MB\r\u001b[7B"
+      ],
+      [
+       7153,
+       "\u001b[8A\u001b[2K\r57fb71246055: "
+      ],
+      [
+       7153,
+       "Extracting 1 s\r\u001b[8B"
+      ],
+      [
+       7246,
+       "\u001b[7A"
+      ],
+      [
+       7246,
+       "\u001b[2K\r38a7e44929f3: Downloading  31.46MB/33.16MB\r\u001b[7B"
+      ],
+      [
+       7249,
+       "\u001b[8A\u001b[2K\r57fb71246055: Extracting 1 s\r\u001b[8B"
+      ],
+      [
+       7356,
+       "\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  33.16MB/33.16MB\r\u001b[7B"
+      ],
+      [
+       7359,
+       "\u001b[8A"
+      ],
+      [
+       7359,
+       "\u001b[2K\r57fb71246055: Extracting 1 s\r\u001b[8B"
+      ],
+      [
+       7447,
+       "\u001b[7A\u001b[2K\r38a7e44929f3: Download complete \r\u001b[7B"
+      ],
+      [
+       7456,
+       "\u001b[8A\u001b[2K\r57fb71246055: Extracting 1 s\r\u001b[8B"
+      ],
+      [
+       7552,
+       "\u001b[8A"
+      ],
+      [
+       7552,
+       "\u001b[2K\r57fb71246055: Extracting 1 s\r\u001b[8B"
+      ],
+      [
+       7650,
+       "\u001b[8A"
+      ],
+      [
+       7651,
+       "\u001b[2K"
+      ],
+      [
+       7651,
+       "\r57fb71246055: Extracting 1 s\r\u001b[8B"
+      ],
+      [
+       7749,
+       "\u001b[8A"
+      ],
+      [
+       7749,
+       "\u001b[2K"
+      ],
+      [
+       7749,
+       "\r57fb71246055: Extracting 1 s\r\u001b[8B"
+      ],
+      [
+       7848,
+       "\u001b[8A"
+      ],
+      [
+       7848,
+       "\u001b[2K\r57fb71246055: Extracting 1 s\r\u001b[8B"
+      ],
+      [
+       7958,
+       "\u001b[8A\u001b[2K\r57fb71246055: Extracting 1 s\r\u001b[8B"
+      ],
+      [
+       8048,
+       "\u001b[8A"
+      ],
+      [
+       8048,
+       "\u001b[2K"
+      ],
+      [
+       8048,
+       "\r57fb71246055: Extracting 2 s\r"
+      ],
+      [
+       8049,
+       "\u001b[8B"
+      ],
+      [
+       8149,
+       "\u001b[8A"
+      ],
+      [
+       8149,
+       "\u001b[2K\r57fb71246055: Extracting 2 s\r\u001b[8B"
+      ],
+      [
+       8248,
+       "\u001b[8A"
+      ],
+      [
+       8248,
+       "\u001b[2K\r"
+      ],
+      [
+       8248,
+       "57fb71246055: Extracting 2 s\r\u001b[8B"
+      ],
+      [
+       8347,
+       "\u001b[8A\u001b[2K\r57fb71246055: Extracting 2 s\r\u001b[8B"
+      ],
+      [
+       8453,
+       "\u001b[8A\u001b[2K\r57fb71246055: Extracting 2 s\r\u001b[8B"
+      ],
+      [
+       8557,
+       "\u001b[8A\u001b[2K\r57fb71246055: Extracting 2 s\r\u001b[8B"
+      ],
+      [
+       8682,
+       "\u001b[8A\u001b[2K\r57fb71246055: Extracting 2 s\r\u001b[8B"
+      ],
+      [
+       8757,
+       "\u001b[8A\u001b[2K\r57fb71246055: Extracting 2 s\r\u001b[8B"
+      ],
+      [
+       8850,
+       "\u001b[8A\u001b[2K\r57fb71246055: Pull complete \r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Extracting 1 s\r\u001b[7B"
+      ],
+      [
+       8949,
+       "\u001b[7A\u001b[2K\r38a7e44929f3: "
+      ],
+      [
+       8950,
+       "Extracting 1 s\r"
+      ],
+      [
+       8950,
+       "\u001b[7B"
+      ],
+      [
+       9050,
+       "\u001b[7A"
+      ],
+      [
+       9050,
+       "\u001b[2K\r38a7e44929f3: Extracting 1 s\r\u001b[7B"
+      ],
+      [
+       9151,
+       "\u001b[7A\u001b[2K\r38a7e44929f3: Extracting 1 s\r\u001b[7B"
+      ],
+      [
+       9251,
+       "\u001b[7A\u001b[2K\r38a7e44929f3: Extracting 1 s\r\u001b[7B"
+      ],
+      [
+       9354,
+       "\u001b[7A\u001b[2K\r38a7e44929f3: Extracting 1 s\r\u001b[7B"
+      ],
+      [
+       9466,
+       "\u001b[7A"
+      ],
+      [
+       9467,
+       "\u001b[2K\r38a7e44929f3: Extracting 1 s\r\u001b[7B"
+      ],
+      [
+       9570,
+       "\u001b[7A\u001b[2K\r38a7e44929f3: Extracting 1 s\r\u001b[7B"
+      ],
+      [
+       9649,
+       "\u001b[7A"
+      ],
+      [
+       9650,
+       "\u001b[2K"
+      ],
+      [
+       9650,
+       "\r38a7e44929f3: Extracting 1 s\r"
+      ],
+      [
+       9650,
+       "\u001b[7B"
+      ],
+      [
+       9750,
+       "\u001b[7A"
+      ],
+      [
+       9750,
+       "\u001b[2K\r38a7e44929f3: Extracting 1 s\r\u001b[7B"
+      ],
+      [
+       9849,
+       "\u001b[7A\u001b[2K\r38a7e44929f3: Extracting 1 s\r\u001b[7B"
+      ],
+      [
+       9950,
+       "\u001b[7A"
+      ],
+      [
+       9951,
+       "\u001b[2K\r"
+      ],
+      [
+       9951,
+       "38a7e44929f3: "
+      ],
+      [
+       9952,
+       "Extracting 2 s\r\u001b[7B"
+      ],
+      [
+       10050,
+       "\u001b[7A\u001b[2K\r38a7e44929f3: Extracting 2 s\r\u001b[7B"
+      ],
+      [
+       10172,
+       "\u001b[7A"
+      ],
+      [
+       10173,
+       "\u001b[2K\r38a7e44929f3: Extracting 2 s\r\u001b[7B"
+      ],
+      [
+       10259,
+       "\u001b[7A"
+      ],
+      [
+       10259,
+       "\u001b[2K"
+      ],
+      [
+       10259,
+       "\r"
+      ],
+      [
+       10259,
+       "38a7e44929f3: "
+      ],
+      [
+       10259,
+       "Extracting 2 s\r\u001b[7B"
+      ],
+      [
+       10367,
+       "\u001b[7A"
+      ],
+      [
+       10369,
+       "\u001b[2K\r38a7e44929f3: Extracting 2 s\r\u001b[7B"
+      ],
+      [
+       10463,
+       "\u001b[7A\u001b[2K\r38a7e44929f3: Extracting 2 s\r\u001b[7B"
+      ],
+      [
+       10548,
+       "\u001b[7A"
+      ],
+      [
+       10548,
+       "\u001b[2K\r38a7e44929f3: Extracting 2 s\r\u001b[7B"
+      ],
+      [
+       10649,
+       "\u001b[7A"
+      ],
+      [
+       10649,
+       "\u001b[2K"
+      ],
+      [
+       10650,
+       "\r"
+      ],
+      [
+       10650,
+       "38a7e44929f3: "
+      ],
+      [
+       10650,
+       "Extracting 2 s\r\u001b[7B"
+      ],
+      [
+       10749,
+       "\u001b[7A\u001b[2K\r38a7e44929f3: Pull complete \r\u001b[7B"
+      ],
+      [
+       10849,
+       "\u001b[3A\u001b[2K\r83742381311a: Pull complete \r\u001b[3B\u001b[4A\u001b[2K\r20d41cd6829d: Pull complete \r\u001b[4B"
+      ],
+      [
+       10849,
+       "\u001b[6A\u001b[2K\r6e9f32fdbd61: Pull complete \r\u001b[6B"
+      ],
+      [
+       10851,
+       "\u001b[5A\u001b[2K\r"
+      ],
+      [
+       10852,
+       "382a36159731: "
+      ],
+      [
+       10852,
+       "Pull complete \r"
+      ],
+      [
+       10852,
+       "\u001b[5B"
+      ],
+      [
+       10918,
+       "\u001b[9A\u001b[2K\r8e9b53b630de: Pull complete \r\u001b[9B"
+      ],
+      [
+       10921,
+       "Digest: sha256:1881968aff6f7cdcc4b888c00a11f4ce241ad7ec957e0cb4a9e19e93a3ff87ea\r\n"
+      ],
+      [
+       10921,
+       "Status: Downloaded newer image for nginx:1.29\r\n"
+      ],
+      [
+       11118,
+       "59e8b9b9b9a12a83b98e0489cba9a1b8325c3ceaa0b52d8b1e44329868af8429\r\n"
+      ]
+     ]
+    },
+    {
+     "cmd": "docker ps",
+     "out": "CONTAINER ID   IMAGE        COMMAND                  CREATED                  STATUS                  PORTS     NAMES\r\n59e8b9b9b9a1   nginx:1.29   \"/docker-entrypoint.…\"   Less than a second ago   Up Less than a second   80/tcp    veb\r\n",
+     "kod": 0,
+     "ms": 269
+    }
+   ]
+  }
+ ]
+}

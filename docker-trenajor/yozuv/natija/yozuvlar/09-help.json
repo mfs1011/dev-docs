@@ -1,0 +1,303 @@
+{
+ "docker": "29.9.3",
+ "sana": "2026-11-23",
+ "terminal": [
+  100,
+  30
+ ],
+ "ssenariylar": [
+  {
+   "ssenariy": "09-help.txt",
+   "buyruqlar": [
+    {
+     "cmd": "docker --help",
+     "out": "Usage:  docker [OPTIONS] COMMAND\r\n\r\nA self-sufficient runtime for containers\r\n\r\nCommon Commands:\r\n  run         Create and run a new container from an image\r\n  exec        Execute a command in a running container\r\n  ps          List containers\r\n  build       Build an image from a Dockerfile\r\n  bake        Build from a file\r\n  pull        Download an image from a registry\r\n  push        Upload an image to a registry\r\n  images      List images\r\n  login       Authenticate to a registry\r\n  logout      Log out from a registry\r\n  search      Search Docker Hub for images\r\n  version     Show the Docker version information\r\n  info        Display system-wide information\r\n\r\nManagement Commands:\r\n  builder     Manage builds\r\n  buildx*     Docker Buildx\r\n  compose*    Docker Compose\r\n  container   Manage containers\r\n  context     Manage contexts\r\n  image       Manage images\r\n  manifest    Manage Docker image manifests and manifest lists\r\n  network     Manage networks\r\n  plugin      Manage plugins\r\n  system      Manage Docker\r\n  volume      Manage volumes\r\n\r\nSwarm Commands:\r\n  swarm       Manage Swarm\r\n\r\nCommands:\r\n  attach      Attach local standard input, output, and error streams to a running container\r\n  commit      Create a new image from a container's changes\r\n  cp          Copy files/folders between a container and the local filesystem\r\n  create      Create a new container\r\n  diff        Inspect changes to files or directories on a container's filesystem\r\n  events      Get real time events from the server\r\n  export      Export a container's filesystem as a tar archive\r\n  history     Show the history of an image\r\n  import      Import the contents from a tarball to create a filesystem image\r\n  inspect     Return low-level information on Docker objects\r\n  kill        Kill one or more running containers\r\n  load        Load an image from a tar archive or STDIN\r\n  logs        Fetch the logs of a container\r\n  pause       Pause all processes within one or more containers\r\n  port        List port mappings or a specific mapping for the container\r\n  rename      Rename a container\r\n  restart     Restart one or more containers\r\n  rm          Remove one or more containers\r\n  rmi         Remove one or more images\r\n  save        Save one or more images to a tar archive (streamed to STDOUT by default)\r\n  start       Start one or more stopped containers\r\n  stats       Display a live stream of container(s) resource usage statistics\r\n  stop        Stop one or more running containers\r\n  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE\r\n  top         Display the running processes of a container\r\n  unpause     Unpause all processes within one or more containers\r\n  update      Update configuration of one or more containers\r\n  wait        Block until one or more containers stop, then print their exit codes\r\n\r\nGlobal Options:\r\n      --config string      Location of client config files (default \"/root/.docker\")\r\n  -c, --context string     Name of the context to use to connect to the daemon (overrides\r\n                           DOCKER_HOST env var and default context set with \"docker context use\")\r\n  -D, --debug              Enable debug mode\r\n  -H, --host string        Daemon socket to connect to\r\n  -l, --log-level string   Set the logging level (\"debug\", \"info\", \"warn\", \"error\", \"fatal\")\r\n                           (default \"info\")\r\n      --tls                Use TLS; implied by --tlsverify\r\n      --tlscacert string   Trust certs signed only by this CA (default \"/root/.docker/ca.pem\")\r\n      --tlscert string     Path to TLS certificate file (default \"/root/.docker/cert.pem\")\r\n      --tlskey string      Path to TLS key file (default \"/root/.docker/key.pem\")\r\n      --tlsverify          Use TLS and verify the remote\r\n  -v, --version            Print version information and quit\r\n\r\nRun 'docker COMMAND --help' for more information on a command.\r\n\r\nFor more help on how to use Docker, head to https://docs.docker.com/go/guides/\r\n",
+     "kod": 0,
+     "ms": 238
+    },
+    {
+     "cmd": "docker run --help",
+     "out": "Usage:  docker run [OPTIONS] IMAGE [COMMAND] [ARG...]\r\n\r\nCreate and run a new container from an image\r\n\r\nAliases:\r\n  docker container run, docker run\r\n\r\nOptions:\r\n      --add-host list                    Add a custom host-to-IP mapping (host:ip)\r\n      --annotation map                   Add an annotation to the container (passed through\r\n                                         to the OCI runtime) (default map[])\r\n  -a, --attach list                      Attach to STDIN, STDOUT or STDERR\r\n      --blkio-weight uint16              Block IO (relative weight), between 10 and 1000, or\r\n                                         0 to disable (default 0)\r\n      --blkio-weight-device list         Block IO weight (relative device weight) (default [])\r\n      --cap-add list                     Add Linux capabilities\r\n      --cap-drop list                    Drop Linux capabilities\r\n      --cgroup-parent string             Optional parent cgroup for the container\r\n      --cgroupns string                  Cgroup namespace to use (host|private)\r\n                                         'host':    Run the container in the Docker host's\r\n                                         cgroup namespace\r\n                                         'private': Run the container in its own private\r\n                                         cgroup namespace\r\n                                         '':        Use the cgroup namespace as configured by\r\n                                         the\r\n                                                    default-cgroupns-mode option on the\r\n                                         daemon (default)\r\n      --cidfile string                   Write the container ID to the file\r\n      --cpu-period int                   Limit CPU CFS (Completely Fair Scheduler) period\r\n      --cpu-quota int                    Limit CPU CFS (Completely Fair Scheduler) quota\r\n      --cpu-rt-period int                Limit CPU real-time period in microseconds\r\n      --cpu-rt-runtime int               Limit CPU real-time runtime in microseconds\r\n  -c, --cpu-shares int                   CPU shares (relative weight)\r\n      --cpus decimal                     Number of CPUs\r\n      --cpuset-cpus string               CPUs in which to allow execution (0-3, 0,1)\r\n      --cpuset-mems string               MEMs in which to allow execution (0-3, 0,1)\r\n  -d, --detach                           Run container in background and print container ID\r\n      --detach-keys string               Override the key sequence for detaching a container\r\n      --device list                      Add a host device to the container\r\n      --device-cgroup-rule list          Add a rule to the cgroup allowed devices list\r\n      --device-read-bps list             Limit read rate (bytes per second) from a device\r\n                                         (default [])\r\n      --device-read-iops list            Limit read rate (IO per second) from a device\r\n                                         (default [])\r\n      --device-write-bps list            Limit write rate (bytes per second) to a device\r\n                                         (default [])\r\n      --device-write-iops list           Limit write rate (IO per second) to a device (default [])\r\n      --dns list                         Set custom DNS servers\r\n      --dns-option list                  Set DNS options\r\n      --dns-search list                  Set custom DNS search domains\r\n      --domainname string                Container NIS domain name\r\n      --entrypoint string                Overwrite the default ENTRYPOINT of the image\r\n  -e, --env list                         Set environment variables\r\n      --env-file list                    Read in a file of environment variables\r\n      --expose list                      Expose a port or a range of ports\r\n      --gpus gpu-request                 GPU devices to add to the container ('all' to pass\r\n                                         all GPUs)\r\n      --group-add list                   Add additional groups to join\r\n      --health-cmd string                Command to run to check health\r\n      --health-interval duration         Time between running the check (ms|s|m|h) (default 0s)\r\n      --health-retries int               Consecutive failures needed to report unhealthy\r\n      --health-start-interval duration   Time between running the check during the start\r\n                                         period (ms|s|m|h) (default 0s)\r\n      --health-start-period duration     Start period for the container to initialize before\r\n                                         starting health-retries countdown (ms|s|m|h) (default 0s)\r\n      --health-timeout duration          Maximum time to allow one check to run (ms|s|m|h)\r\n                                         (default 0s)\r\n      --help                             Print usage\r\n  -h, --hostname string                  Container host name\r\n      --init                             Run an init inside the container that forwards\r\n                                         signals and reaps processes\r\n  -i, --interactive                      Keep STDIN open even if not attached\r\n      --ip ip                            IPv4 address (e.g., 172.30.100.104)\r\n      --ip6 ip                           IPv6 address (e.g., 2001:db8::33)\r\n      --ipc string                       IPC mode to use\r\n      --isolation string                 Container isolation technology\r\n  -l, --label list                       Set meta data on a container\r\n      --label-file list                  Read in a line delimited file of labels\r\n      --link list                        Add link to another container\r\n      --link-local-ip list               Container IPv4/IPv6 link-local addresses\r\n      --log-driver string                Logging driver for the container\r\n      --log-opt list                     Log driver options\r\n      --mac-address string               Container MAC address (e.g., 92:d0:c6:0a:29:33)\r\n  -m, --memory bytes                     Memory limit\r\n      --memory-reservation bytes         Memory soft limit\r\n      --memory-swap bytes                Swap limit equal to memory plus swap: '-1' to enable\r\n                                         unlimited swap\r\n      --memory-swappiness int            Tune container memory swappiness (0 to 100) (default -1)\r\n      --mount mount                      Attach a filesystem mount to the container\r\n      --name string                      Assign a name to the container\r\n      --network network                  Connect a container to a network\r\n      --network-alias list               Add network-scoped alias for the container\r\n      --no-healthcheck                   Disable any container-specified HEALTHCHECK\r\n      --oom-kill-disable                 Disable OOM Killer\r\n      --oom-score-adj int                Tune host's OOM preferences (-1000 to 1000)\r\n      --pid string                       PID namespace to use\r\n      --pids-limit int                   Tune container pids limit (set -1 for unlimited)\r\n      --platform string                  Set platform if server is multi-platform capable\r\n      --privileged                       Give extended privileges to this container\r\n  -p, --publish list                     Publish a container's port(s) to the host\r\n  -P, --publish-all                      Publish all exposed ports to random ports\r\n      --pull string                      Pull image before running (\"always\", \"missing\",\r\n                                         \"never\") (default \"missing\")\r\n  -q, --quiet                            Suppress the pull output\r\n      --read-only                        Mount the container's root filesystem as read only\r\n      --restart string                   Restart policy to apply when a container exits\r\n                                         (default \"no\")\r\n      --rm                               Automatically remove the container and its\r\n                                         associated anonymous volumes when it exits\r\n      --runtime string                   Runtime to use for this container\r\n      --security-opt list                Security Options\r\n      --shm-size bytes                   Size of /dev/shm\r\n      --sig-proxy                        Proxy received signals to the process (default true)\r\n      --stop-signal string               Signal to stop the container\r\n      --stop-timeout int                 Timeout (in seconds) to stop a container\r\n      --storage-opt list                 Storage driver options for the container\r\n      --sysctl map                       Sysctl options (default map[])\r\n      --tmpfs list                       Mount a tmpfs directory\r\n  -t, --tty                              Allocate a pseudo-TTY\r\n      --ulimit ulimit                    Ulimit options (default [])\r\n      --umask umask                      Set umask for the container\r\n      --use-api-socket                   Bind mount Docker API socket and required auth\r\n  -u, --user string                      Username or UID (format: <name|uid>[:<group|gid>])\r\n      --userns string                    User namespace to use\r\n      --uts string                       UTS namespace to use\r\n  -v, --volume list                      Bind mount a volume\r\n      --volume-driver string             Optional volume driver for the container\r\n      --volumes-from list                Mount volumes from the specified container(s)\r\n  -w, --workdir string                   Working directory inside the container\r\n",
+     "kod": 0,
+     "ms": 210
+    },
+    {
+     "cmd": "docker ps --help",
+     "out": "Usage:  docker ps [OPTIONS]\r\n\r\nList containers\r\n\r\nAliases:\r\n  docker container ls, docker container list, docker container ps, docker ps\r\n\r\nOptions:\r\n  -a, --all             Show all containers (default shows just running)\r\n  -f, --filter filter   Filter output based on conditions provided\r\n      --format string   Format output using a custom template:\r\n                        'table':            Print output in table format with column headers\r\n                        (default)\r\n                        'table TEMPLATE':   Print output in table format using the given Go\r\n                        template\r\n                        'json':             Print in JSON format\r\n                        'TEMPLATE':         Print output using the given Go template.\r\n                        Refer to https://docs.docker.com/go/formatting/ for more information\r\n                        about formatting output with templates\r\n  -n, --last int        Show n last created containers (includes all states) (default -1)\r\n  -l, --latest          Show the latest created container (includes all states)\r\n      --no-trunc        Don't truncate output\r\n  -q, --quiet           Only display container IDs\r\n  -s, --size            Display total file sizes\r\n",
+     "kod": 0,
+     "ms": 209
+    },
+    {
+     "cmd": "docker images --help",
+     "out": "Usage:  docker images [OPTIONS] [REPOSITORY[:TAG]]\r\n\r\nList images\r\n\r\nAliases:\r\n  docker image ls, docker image list, docker images\r\n\r\nOptions:\r\n  -a, --all             Show all images (default hides intermediate and dangling images)\r\n      --digests         Show digests\r\n  -f, --filter filter   Filter output based on conditions provided\r\n      --format string   Format output using a custom template:\r\n                        'table':            Print output in table format with column headers\r\n                        (default)\r\n                        'table TEMPLATE':   Print output in table format using the given Go\r\n                        template\r\n                        'json':             Print in JSON format\r\n                        'TEMPLATE':         Print output using the given Go template.\r\n                        Refer to https://docs.docker.com/go/formatting/ for more information\r\n                        about formatting output with templates\r\n      --no-trunc        Don't truncate output\r\n  -q, --quiet           Only show image IDs\r\n      --tree            List multi-platform images as a tree (EXPERIMENTAL)\r\n",
+     "kod": 0,
+     "ms": 203
+    },
+    {
+     "cmd": "docker image --help",
+     "out": "Usage:  docker image COMMAND\r\n\r\nManage images\r\n\r\nCommands:\r\n  build       Build an image from a Dockerfile\r\n  history     Show the history of an image\r\n  import      Import the contents from a tarball to create a filesystem image\r\n  inspect     Display detailed information on one or more images\r\n  load        Load an image from a tar archive or STDIN\r\n  ls          List images\r\n  prune       Remove unused images\r\n  pull        Download an image from a registry\r\n  push        Upload an image to a registry\r\n  rm          Remove one or more images\r\n  save        Save one or more images to a tar archive (streamed to STDOUT by default)\r\n  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE\r\n\r\nRun 'docker image COMMAND --help' for more information on a command.\r\n",
+     "kod": 0,
+     "ms": 224
+    },
+    {
+     "cmd": "docker image ls --help",
+     "out": "Usage:  docker image ls [OPTIONS] [REPOSITORY[:TAG]]\r\n\r\nList images\r\n\r\nAliases:\r\n  docker image ls, docker image list, docker images\r\n\r\nOptions:\r\n  -a, --all             Show all images (default hides intermediate and dangling images)\r\n      --digests         Show digests\r\n  -f, --filter filter   Filter output based on conditions provided\r\n      --format string   Format output using a custom template:\r\n                        'table':            Print output in table format with column headers\r\n                        (default)\r\n                        'table TEMPLATE':   Print output in table format using the given Go\r\n                        template\r\n                        'json':             Print in JSON format\r\n                        'TEMPLATE':         Print output using the given Go template.\r\n                        Refer to https://docs.docker.com/go/formatting/ for more information\r\n                        about formatting output with templates\r\n      --no-trunc        Don't truncate output\r\n  -q, --quiet           Only show image IDs\r\n      --tree            List multi-platform images as a tree (EXPERIMENTAL)\r\n",
+     "kod": 0,
+     "ms": 234
+    },
+    {
+     "cmd": "docker container --help",
+     "out": "Usage:  docker container COMMAND\r\n\r\nManage containers\r\n\r\nCommands:\r\n  attach      Attach local standard input, output, and error streams to a running container\r\n  commit      Create a new image from a container's changes\r\n  cp          Copy files/folders between a container and the local filesystem\r\n  create      Create a new container\r\n  diff        Inspect changes to files or directories on a container's filesystem\r\n  exec        Execute a command in a running container\r\n  export      Export a container's filesystem as a tar archive\r\n  inspect     Display detailed information on one or more containers\r\n  kill        Kill one or more running containers\r\n  logs        Fetch the logs of a container\r\n  ls          List containers\r\n  pause       Pause all processes within one or more containers\r\n  port        List port mappings or a specific mapping for the container\r\n  prune       Remove all stopped containers\r\n  rename      Rename a container\r\n  restart     Restart one or more containers\r\n  rm          Remove one or more containers\r\n  run         Create and run a new container from an image\r\n  start       Start one or more stopped containers\r\n  stats       Display a live stream of container(s) resource usage statistics\r\n  stop        Stop one or more running containers\r\n  top         Display the running processes of a container\r\n  unpause     Unpause all processes within one or more containers\r\n  update      Update configuration of one or more containers\r\n  wait        Block until one or more containers stop, then print their exit codes\r\n\r\nRun 'docker container COMMAND --help' for more information on a command.\r\n",
+     "kod": 0,
+     "ms": 215
+    },
+    {
+     "cmd": "docker pull --help",
+     "out": "Usage:  docker pull [OPTIONS] NAME[:TAG|@DIGEST]\r\n\r\nDownload an image from a registry\r\n\r\nAliases:\r\n  docker image pull, docker pull\r\n\r\nOptions:\r\n  -a, --all-tags          Download all tagged images in the repository\r\n      --platform string   Set platform if server is multi-platform capable\r\n  -q, --quiet             Suppress verbose output\r\n",
+     "kod": 0,
+     "ms": 226
+    },
+    {
+     "cmd": "docker exec --help",
+     "out": "Usage:  docker exec [OPTIONS] CONTAINER COMMAND [ARG...]\r\n\r\nExecute a command in a running container\r\n\r\nAliases:\r\n  docker container exec, docker exec\r\n\r\nOptions:\r\n  -d, --detach               Detached mode: run command in the background\r\n      --detach-keys string   Override the key sequence for detaching a container\r\n  -e, --env list             Set environment variables\r\n      --env-file list        Read in a file of environment variables\r\n  -i, --interactive          Keep STDIN open even if not attached\r\n      --privileged           Give extended privileges to the command\r\n  -t, --tty                  Allocate a pseudo-TTY\r\n  -u, --user string          Username or UID (format: \"<name|uid>[:<group|gid>]\")\r\n  -w, --workdir string       Working directory inside the container\r\n",
+     "kod": 0,
+     "ms": 233
+    },
+    {
+     "cmd": "docker logs --help",
+     "out": "Usage:  docker logs [OPTIONS] CONTAINER\r\n\r\nFetch the logs of a container\r\n\r\nAliases:\r\n  docker container logs, docker logs\r\n\r\nOptions:\r\n      --details        Show extra details provided to logs\r\n  -f, --follow         Follow log output\r\n      --since string   Show logs since timestamp (e.g. \"2013-01-02T13:23:37Z\") or relative\r\n                       (e.g. \"42m\" for 42 minutes)\r\n  -n, --tail string    Number of lines to show from the end of the logs (default \"all\")\r\n  -t, --timestamps     Show timestamps\r\n      --until string   Show logs before a timestamp (e.g. \"2013-01-02T13:23:37Z\") or relative\r\n                       (e.g. \"42m\" for 42 minutes)\r\n",
+     "kod": 0,
+     "ms": 226
+    },
+    {
+     "cmd": "docker stop --help",
+     "out": "Usage:  docker stop [OPTIONS] CONTAINER [CONTAINER...]\r\n\r\nStop one or more running containers\r\n\r\nAliases:\r\n  docker container stop, docker stop\r\n\r\nOptions:\r\n  -s, --signal string   Signal to send to the container\r\n  -t, --timeout int     Seconds to wait before killing the container\r\n",
+     "kod": 0,
+     "ms": 221
+    },
+    {
+     "cmd": "docker start --help",
+     "out": "Usage:  docker start [OPTIONS] CONTAINER [CONTAINER...]\r\n\r\nStart one or more stopped containers\r\n\r\nAliases:\r\n  docker container start, docker start\r\n\r\nOptions:\r\n  -a, --attach               Attach STDOUT/STDERR and forward signals\r\n      --detach-keys string   Override the key sequence for detaching a container\r\n  -i, --interactive          Attach container's STDIN\r\n",
+     "kod": 0,
+     "ms": 260
+    },
+    {
+     "cmd": "docker rm --help",
+     "out": "Usage:  docker rm [OPTIONS] CONTAINER [CONTAINER...]\r\n\r\nRemove one or more containers\r\n\r\nAliases:\r\n  docker container rm, docker container remove, docker rm\r\n\r\nOptions:\r\n  -f, --force     Force the removal of a running container (uses SIGKILL)\r\n  -l, --link      Remove the specified link\r\n  -v, --volumes   Remove anonymous volumes associated with the container\r\n",
+     "kod": 0,
+     "ms": 218
+    },
+    {
+     "cmd": "docker rmi --help",
+     "out": "Usage:  docker rmi [OPTIONS] IMAGE [IMAGE...]\r\n\r\nRemove one or more images\r\n\r\nAliases:\r\n  docker image rm, docker image remove, docker rmi\r\n\r\nOptions:\r\n  -f, --force              Force removal of the image\r\n      --no-prune           Do not delete untagged parents\r\n      --platform strings   Remove only the given platform variant. Formatted as\r\n                           \"os[/arch[/variant]]\" (e.g., \"linux/amd64\")\r\n",
+     "kod": 0,
+     "ms": 234
+    },
+    {
+     "cmd": "docker inspect --help",
+     "out": "Usage:  docker inspect [OPTIONS] NAME|ID [NAME|ID...]\r\n\r\nReturn low-level information on Docker objects\r\n\r\nOptions:\r\n  -f, --format string   Format output using a custom template:\r\n                        'json':             Print in JSON format\r\n                        'TEMPLATE':         Print output using the given Go template.\r\n                        Refer to https://docs.docker.com/go/formatting/ for more information\r\n                        about formatting output with templates\r\n  -s, --size            Display total file sizes if the type is container\r\n      --type string     Only inspect objects of the given type\r\n",
+     "kod": 0,
+     "ms": 250
+    },
+    {
+     "cmd": "docker network --help",
+     "out": "Usage:  docker network COMMAND\r\n\r\nManage networks\r\n\r\nCommands:\r\n  connect     Connect a container to a network\r\n  create      Create a network\r\n  disconnect  Disconnect a container from a network\r\n  inspect     Display detailed information on one or more networks\r\n  ls          List networks\r\n  prune       Remove all unused networks\r\n  rm          Remove one or more networks\r\n\r\nRun 'docker network COMMAND --help' for more information on a command.\r\n",
+     "kod": 0,
+     "ms": 236
+    },
+    {
+     "cmd": "docker network ls --help",
+     "out": "Usage:  docker network ls [OPTIONS]\r\n\r\nList networks\r\n\r\nAliases:\r\n  docker network ls, docker network list\r\n\r\nOptions:\r\n  -f, --filter filter   Provide filter values (e.g. \"driver=bridge\")\r\n      --format string   Format output using a custom template:\r\n                        'table':            Print output in table format with column headers\r\n                        (default)\r\n                        'table TEMPLATE':   Print output in table format using the given Go\r\n                        template\r\n                        'json':             Print in JSON format\r\n                        'TEMPLATE':         Print output using the given Go template.\r\n                        Refer to https://docs.docker.com/go/formatting/ for more information\r\n                        about formatting output with templates\r\n      --no-trunc        Do not truncate the output\r\n  -q, --quiet           Only display network IDs\r\n",
+     "kod": 0,
+     "ms": 211
+    },
+    {
+     "cmd": "docker network create --help",
+     "out": "Usage:  docker network create [OPTIONS] NETWORK\r\n\r\nCreate a network\r\n\r\nOptions:\r\n      --attachable            Enable manual container attachment\r\n      --aux-address map       Auxiliary IPv4 or IPv6 addresses used by Network driver\r\n                              (default map[])\r\n      --config-from string    The network from which to copy the configuration\r\n      --config-only           Create a configuration only network\r\n  -d, --driver string         Driver to manage the Network (default \"bridge\")\r\n      --gateway ipSlice       IPv4 or IPv6 Gateway for the master subnet (default [])\r\n      --ingress               Create swarm routing-mesh network\r\n      --internal              Restrict external access to the network\r\n      --ip-range ipNetSlice   Allocate container ip from a sub-range (default [])\r\n      --ipam-driver string    IP Address Management Driver (default \"default\")\r\n      --ipam-opt map          Set IPAM driver specific options (default map[])\r\n      --ipv4                  Enable or disable IPv4 address assignment (default true)\r\n      --ipv6                  Enable or disable IPv6 address assignment\r\n      --label list            Set metadata on a network\r\n  -o, --opt map               Set driver specific options (default map[])\r\n      --scope string          Control the network's scope\r\n      --subnet strings        Subnet in CIDR format that represents a network segment\r\n",
+     "kod": 0,
+     "ms": 197
+    },
+    {
+     "cmd": "docker volume --help",
+     "out": "Usage:  docker volume COMMAND\r\n\r\nManage volumes\r\n\r\nCommands:\r\n  create      Create a volume\r\n  inspect     Display detailed information on one or more volumes\r\n  ls          List volumes\r\n  prune       Remove unused local volumes\r\n  rm          Remove one or more volumes\r\n\r\nRun 'docker volume COMMAND --help' for more information on a command.\r\n",
+     "kod": 0,
+     "ms": 198
+    },
+    {
+     "cmd": "docker volume ls --help",
+     "out": "Usage:  docker volume ls [OPTIONS]\r\n\r\nList volumes\r\n\r\nAliases:\r\n  docker volume ls, docker volume list\r\n\r\nOptions:\r\n  -f, --filter filter   Provide filter values (e.g. \"dangling=true\")\r\n      --format string   Format output using a custom template:\r\n                        'table':            Print output in table format with column headers\r\n                        (default)\r\n                        'table TEMPLATE':   Print output in table format using the given Go\r\n                        template\r\n                        'json':             Print in JSON format\r\n                        'TEMPLATE':         Print output using the given Go template.\r\n                        Refer to https://docs.docker.com/go/formatting/ for more information\r\n                        about formatting output with templates\r\n  -q, --quiet           Only display volume names\r\n",
+     "kod": 0,
+     "ms": 205
+    },
+    {
+     "cmd": "docker volume create --help",
+     "out": "Usage:  docker volume create [OPTIONS] [VOLUME]\r\n\r\nCreate a volume\r\n\r\nOptions:\r\n  -d, --driver string   Specify volume driver name (default \"local\")\r\n      --label list      Set metadata for a volume\r\n  -o, --opt map         Set driver specific options (default map[])\r\n",
+     "kod": 0,
+     "ms": 203
+    },
+    {
+     "cmd": "docker port --help",
+     "out": "Usage:  docker port CONTAINER [PRIVATE_PORT[/PROTO]]\r\n\r\nList port mappings or a specific mapping for the container\r\n\r\nAliases:\r\n  docker container port, docker port\r\n",
+     "kod": 0,
+     "ms": 207
+    },
+    {
+     "cmd": "docker system --help",
+     "out": "Usage:  docker system COMMAND\r\n\r\nManage Docker\r\n\r\nCommands:\r\n  df          Show docker disk usage\r\n  events      Get real time events from the server\r\n  info        Display system-wide information\r\n  prune       Remove unused data\r\n\r\nRun 'docker system COMMAND --help' for more information on a command.\r\n",
+     "kod": 0,
+     "ms": 193
+    },
+    {
+     "cmd": "docker system df --help",
+     "out": "Usage:  docker system df [OPTIONS]\r\n\r\nShow docker disk usage\r\n\r\nOptions:\r\n      --format string   Format output using a custom template:\r\n                        'table':            Print output in table format with column headers\r\n                        (default)\r\n                        'table TEMPLATE':   Print output in table format using the given Go\r\n                        template\r\n                        'json':             Print in JSON format\r\n                        'TEMPLATE':         Print output using the given Go template.\r\n                        Refer to https://docs.docker.com/go/formatting/ for more information\r\n                        about formatting output with templates\r\n  -v, --verbose         Show detailed information on space usage\r\n",
+     "kod": 0,
+     "ms": 210
+    },
+    {
+     "cmd": "docker tag --help",
+     "out": "Usage:  docker tag SOURCE_IMAGE[:TAG] TARGET_IMAGE[:TAG]\r\n\r\nCreate a tag TARGET_IMAGE that refers to SOURCE_IMAGE\r\n\r\nAliases:\r\n  docker image tag, docker tag\r\n",
+     "kod": 0,
+     "ms": 190
+    },
+    {
+     "cmd": "docker image history --help",
+     "out": "Usage:  docker image history [OPTIONS] IMAGE\r\n\r\nShow the history of an image\r\n\r\nAliases:\r\n  docker image history, docker history\r\n\r\nOptions:\r\n      --format string     Format output using a custom template:\r\n                          'table':            Print output in table format with column\r\n                          headers (default)\r\n                          'table TEMPLATE':   Print output in table format using the given Go\r\n                          template\r\n                          'json':             Print in JSON format\r\n                          'TEMPLATE':         Print output using the given Go template.\r\n                          Refer to https://docs.docker.com/go/formatting/ for more\r\n                          information about formatting output with templates\r\n  -H, --human             Print sizes and dates in human readable format (default true)\r\n      --no-trunc          Don't truncate output\r\n      --platform string   Show history for the given platform. Formatted as\r\n                          \"os[/arch[/variant]]\" (e.g., \"linux/amd64\")\r\n  -q, --quiet             Only show image IDs\r\n",
+     "kod": 0,
+     "ms": 218
+    },
+    {
+     "cmd": "docker create --help",
+     "out": "Usage:  docker create [OPTIONS] IMAGE [COMMAND] [ARG...]\r\n\r\nCreate a new container\r\n\r\nAliases:\r\n  docker container create, docker create\r\n\r\nOptions:\r\n      --add-host list                    Add a custom host-to-IP mapping (host:ip)\r\n      --annotation map                   Add an annotation to the container (passed through\r\n                                         to the OCI runtime) (default map[])\r\n  -a, --attach list                      Attach to STDIN, STDOUT or STDERR\r\n      --blkio-weight uint16              Block IO (relative weight), between 10 and 1000, or\r\n                                         0 to disable (default 0)\r\n      --blkio-weight-device list         Block IO weight (relative device weight) (default [])\r\n      --cap-add list                     Add Linux capabilities\r\n      --cap-drop list                    Drop Linux capabilities\r\n      --cgroup-parent string             Optional parent cgroup for the container\r\n      --cgroupns string                  Cgroup namespace to use (host|private)\r\n                                         'host':    Run the container in the Docker host's\r\n                                         cgroup namespace\r\n                                         'private': Run the container in its own private\r\n                                         cgroup namespace\r\n                                         '':        Use the cgroup namespace as configured by\r\n                                         the\r\n                                                    default-cgroupns-mode option on the\r\n                                         daemon (default)\r\n      --cidfile string                   Write the container ID to the file\r\n      --cpu-period int                   Limit CPU CFS (Completely Fair Scheduler) period\r\n      --cpu-quota int                    Limit CPU CFS (Completely Fair Scheduler) quota\r\n      --cpu-rt-period int                Limit CPU real-time period in microseconds\r\n      --cpu-rt-runtime int               Limit CPU real-time runtime in microseconds\r\n  -c, --cpu-shares int                   CPU shares (relative weight)\r\n      --cpus decimal                     Number of CPUs\r\n      --cpuset-cpus string               CPUs in which to allow execution (0-3, 0,1)\r\n      --cpuset-mems string               MEMs in which to allow execution (0-3, 0,1)\r\n      --device list                      Add a host device to the container\r\n      --device-cgroup-rule list          Add a rule to the cgroup allowed devices list\r\n      --device-read-bps list             Limit read rate (bytes per second) from a device\r\n                                         (default [])\r\n      --device-read-iops list            Limit read rate (IO per second) from a device\r\n                                         (default [])\r\n      --device-write-bps list            Limit write rate (bytes per second) to a device\r\n                                         (default [])\r\n      --device-write-iops list           Limit write rate (IO per second) to a device (default [])\r\n      --dns list                         Set custom DNS servers\r\n      --dns-option list                  Set DNS options\r\n      --dns-search list                  Set custom DNS search domains\r\n      --domainname string                Container NIS domain name\r\n      --entrypoint string                Overwrite the default ENTRYPOINT of the image\r\n  -e, --env list                         Set environment variables\r\n      --env-file list                    Read in a file of environment variables\r\n      --expose list                      Expose a port or a range of ports\r\n      --gpus gpu-request                 GPU devices to add to the container ('all' to pass\r\n                                         all GPUs)\r\n      --group-add list                   Add additional groups to join\r\n      --health-cmd string                Command to run to check health\r\n      --health-interval duration         Time between running the check (ms|s|m|h) (default 0s)\r\n      --health-retries int               Consecutive failures needed to report unhealthy\r\n      --health-start-interval duration   Time between running the check during the start\r\n                                         period (ms|s|m|h) (default 0s)\r\n      --health-start-period duration     Start period for the container to initialize before\r\n                                         starting health-retries countdown (ms|s|m|h) (default 0s)\r\n      --health-timeout duration          Maximum time to allow one check to run (ms|s|m|h)\r\n                                         (default 0s)\r\n      --help                             Print usage\r\n  -h, --hostname string                  Container host name\r\n      --init                             Run an init inside the container that forwards\r\n                                         signals and reaps processes\r\n  -i, --interactive                      Keep STDIN open even if not attached\r\n      --ip ip                            IPv4 address (e.g., 172.30.100.104)\r\n      --ip6 ip                           IPv6 address (e.g., 2001:db8::33)\r\n      --ipc string                       IPC mode to use\r\n      --isolation string                 Container isolation technology\r\n  -l, --label list                       Set meta data on a container\r\n      --label-file list                  Read in a line delimited file of labels\r\n      --link list                        Add link to another container\r\n      --link-local-ip list               Container IPv4/IPv6 link-local addresses\r\n      --log-driver string                Logging driver for the container\r\n      --log-opt list                     Log driver options\r\n      --mac-address string               Container MAC address (e.g., 92:d0:c6:0a:29:33)\r\n  -m, --memory bytes                     Memory limit\r\n      --memory-reservation bytes         Memory soft limit\r\n      --memory-swap bytes                Swap limit equal to memory plus swap: '-1' to enable\r\n                                         unlimited swap\r\n      --memory-swappiness int            Tune container memory swappiness (0 to 100) (default -1)\r\n      --mount mount                      Attach a filesystem mount to the container\r\n      --name string                      Assign a name to the container\r\n      --network network                  Connect a container to a network\r\n      --network-alias list               Add network-scoped alias for the container\r\n      --no-healthcheck                   Disable any container-specified HEALTHCHECK\r\n      --oom-kill-disable                 Disable OOM Killer\r\n      --oom-score-adj int                Tune host's OOM preferences (-1000 to 1000)\r\n      --pid string                       PID namespace to use\r\n      --pids-limit int                   Tune container pids limit (set -1 for unlimited)\r\n      --platform string                  Set platform if server is multi-platform capable\r\n      --privileged                       Give extended privileges to this container\r\n  -p, --publish list                     Publish a container's port(s) to the host\r\n  -P, --publish-all                      Publish all exposed ports to random ports\r\n      --pull string                      Pull image before creating (\"always\", \"missing\",\r\n                                         \"never\") (default \"missing\")\r\n  -q, --quiet                            Suppress the pull output\r\n      --read-only                        Mount the container's root filesystem as read only\r\n      --restart string                   Restart policy to apply when a container exits\r\n                                         (default \"no\")\r\n      --rm                               Automatically remove the container and its\r\n                                         associated anonymous volumes when it exits\r\n      --runtime string                   Runtime to use for this container\r\n      --security-opt list                Security Options\r\n      --shm-size bytes                   Size of /dev/shm\r\n      --stop-signal string               Signal to stop the container\r\n      --stop-timeout int                 Timeout (in seconds) to stop a container\r\n      --storage-opt list                 Storage driver options for the container\r\n      --sysctl map                       Sysctl options (default map[])\r\n      --tmpfs list                       Mount a tmpfs directory\r\n  -t, --tty                              Allocate a pseudo-TTY\r\n      --ulimit ulimit                    Ulimit options (default [])\r\n      --umask umask                      Set umask for the container\r\n      --use-api-socket                   Bind mount Docker API socket and required auth\r\n  -u, --user string                      Username or UID (format: <name|uid>[:<group|gid>])\r\n      --userns string                    User namespace to use\r\n      --uts string                       UTS namespace to use\r\n  -v, --volume list                      Bind mount a volume\r\n      --volume-driver string             Optional volume driver for the container\r\n      --volumes-from list                Mount volumes from the specified container(s)\r\n  -w, --workdir string                   Working directory inside the container\r\n",
+     "kod": 0,
+     "ms": 207
+    },
+    {
+     "cmd": "docker restart --help",
+     "out": "Usage:  docker restart [OPTIONS] CONTAINER [CONTAINER...]\r\n\r\nRestart one or more containers\r\n\r\nAliases:\r\n  docker container restart, docker restart\r\n\r\nOptions:\r\n  -s, --signal string   Signal to send to the container\r\n  -t, --timeout int     Seconds to wait before killing the container\r\n",
+     "kod": 0,
+     "ms": 194
+    },
+    {
+     "cmd": "docker kill --help",
+     "out": "Usage:  docker kill [OPTIONS] CONTAINER [CONTAINER...]\r\n\r\nKill one or more running containers\r\n\r\nAliases:\r\n  docker container kill, docker kill\r\n\r\nOptions:\r\n  -s, --signal string   Signal to send to the container\r\n",
+     "kod": 0,
+     "ms": 214
+    },
+    {
+     "cmd": "docker system prune --help",
+     "out": "Usage:  docker system prune [OPTIONS]\r\n\r\nRemove unused data\r\n\r\nOptions:\r\n  -a, --all             Remove all unused images not just dangling ones\r\n      --filter filter   Provide filter values (e.g. \"label=<key>=<value>\")\r\n  -f, --force           Do not prompt for confirmation\r\n      --volumes         Prune anonymous volumes\r\n",
+     "kod": 0,
+     "ms": 194
+    },
+    {
+     "cmd": "docker container prune --help",
+     "out": "Usage:  docker container prune [OPTIONS]\r\n\r\nRemove all stopped containers\r\n\r\nOptions:\r\n      --filter filter   Provide filter values (e.g. \"until=<timestamp>\")\r\n  -f, --force           Do not prompt for confirmation\r\n",
+     "kod": 0,
+     "ms": 198
+    },
+    {
+     "cmd": "docker image prune --help",
+     "out": "Usage:  docker image prune [OPTIONS]\r\n\r\nRemove unused images\r\n\r\nOptions:\r\n  -a, --all             Remove all unused images, not just dangling ones\r\n      --filter filter   Provide filter values (e.g. \"until=<timestamp>\")\r\n  -f, --force           Do not prompt for confirmation\r\n",
+     "kod": 0,
+     "ms": 199
+    },
+    {
+     "cmd": "docker volume prune --help",
+     "out": "Usage:  docker volume prune [OPTIONS]\r\n\r\nRemove unused local volumes\r\n\r\nOptions:\r\n  -a, --all             Remove all unused volumes, not just anonymous ones\r\n      --filter filter   Provide filter values (e.g. \"label=<label>\")\r\n  -f, --force           Do not prompt for confirmation\r\n",
+     "kod": 0,
+     "ms": 197
+    },
+    {
+     "cmd": "docker network prune --help",
+     "out": "Usage:  docker network prune [OPTIONS]\r\n\r\nRemove all unused networks\r\n\r\nOptions:\r\n      --filter filter   Provide filter values (e.g. \"until=<timestamp>\")\r\n  -f, --force           Do not prompt for confirmation\r\n",
+     "kod": 0,
+     "ms": 229
+    },
+    {
+     "cmd": "docker network inspect --help",
+     "out": "Usage:  docker network inspect [OPTIONS] NETWORK [NETWORK...]\r\n\r\nDisplay detailed information on one or more networks\r\n\r\nOptions:\r\n  -f, --format string   Format output using a custom template:\r\n                        'json':             Print in JSON format\r\n                        'TEMPLATE':         Print output using the given Go template.\r\n                        Refer to https://docs.docker.com/go/formatting/ for more information\r\n                        about formatting output with templates\r\n  -v, --verbose         Verbose output for diagnostics\r\n",
+     "kod": 0,
+     "ms": 191
+    },
+    {
+     "cmd": "docker network connect --help",
+     "out": "Usage:  docker network connect [OPTIONS] NETWORK CONTAINER\r\n\r\nConnect a container to a network\r\n\r\nOptions:\r\n      --alias strings           Add network-scoped alias for the container\r\n      --driver-opt strings      driver options for the network\r\n      --gw-priority int         Highest gw-priority provides the default gateway. Accepts\r\n                                positive and negative values.\r\n      --ip ip                   IPv4 address (e.g., \"172.30.100.104\")\r\n      --ip6 ip                  IPv6 address (e.g., \"2001:db8::33\")\r\n      --link list               Add link to another container\r\n      --link-local-ip ipSlice   Add a link-local address for the container (default [])\r\n",
+     "kod": 0,
+     "ms": 237
+    },
+    {
+     "cmd": "docker volume inspect --help",
+     "out": "Usage:  docker volume inspect [OPTIONS] VOLUME [VOLUME...]\r\n\r\nDisplay detailed information on one or more volumes\r\n\r\nOptions:\r\n  -f, --format string   Format output using a custom template:\r\n                        'json':             Print in JSON format\r\n                        'TEMPLATE':         Print output using the given Go template.\r\n                        Refer to https://docs.docker.com/go/formatting/ for more information\r\n                        about formatting output with templates\r\n",
+     "kod": 0,
+     "ms": 212
+    },
+    {
+     "cmd": "docker volume rm --help",
+     "out": "Usage:  docker volume rm [OPTIONS] VOLUME [VOLUME...]\r\n\r\nRemove one or more volumes. You cannot remove a volume that is in use by a container.\r\n\r\nAliases:\r\n  docker volume rm, docker volume remove\r\n\r\nOptions:\r\n  -f, --force   Force the removal of one or more volumes\r\n",
+     "kod": 0,
+     "ms": 217
+    },
+    {
+     "cmd": "docker network rm --help",
+     "out": "Usage:  docker network rm NETWORK [NETWORK...]\r\n\r\nRemove one or more networks\r\n\r\nAliases:\r\n  docker network rm, docker network remove\r\n\r\nOptions:\r\n  -f, --force   Do not error if the network does not exist\r\n",
+     "kod": 0,
+     "ms": 227
+    },
+    {
+     "cmd": "docker image inspect --help",
+     "out": "Usage:  docker image inspect [OPTIONS] IMAGE [IMAGE...]\r\n\r\nDisplay detailed information on one or more images\r\n\r\nOptions:\r\n  -f, --format string     Format output using a custom template:\r\n                          'json':             Print in JSON format\r\n                          'TEMPLATE':         Print output using the given Go template.\r\n                          Refer to https://docs.docker.com/go/formatting/ for more\r\n                          information about formatting output with templates\r\n      --platform string   Inspect a specific platform of the multi-platform image.\r\n                          If the image or the server is not multi-platform capable, the\r\n                          command will error out if the platform does not match.\r\n                          'os[/arch[/variant]]': Explicit platform (eg. linux/amd64)\r\n",
+     "kod": 0,
+     "ms": 217
+    },
+    {
+     "cmd": "docker image rm --help",
+     "out": "Usage:  docker image rm [OPTIONS] IMAGE [IMAGE...]\r\n\r\nRemove one or more images\r\n\r\nAliases:\r\n  docker image rm, docker image remove, docker rmi\r\n\r\nOptions:\r\n  -f, --force              Force removal of the image\r\n      --no-prune           Do not delete untagged parents\r\n      --platform strings   Remove only the given platform variant. Formatted as\r\n                           \"os[/arch[/variant]]\" (e.g., \"linux/amd64\")\r\n",
+     "kod": 0,
+     "ms": 219
+    },
+    {
+     "cmd": "docker container ls --help",
+     "out": "Usage:  docker container ls [OPTIONS]\r\n\r\nList containers\r\n\r\nAliases:\r\n  docker container ls, docker container list, docker container ps, docker ps\r\n\r\nOptions:\r\n  -a, --all             Show all containers (default shows just running)\r\n  -f, --filter filter   Filter output based on conditions provided\r\n      --format string   Format output using a custom template:\r\n                        'table':            Print output in table format with column headers\r\n                        (default)\r\n                        'table TEMPLATE':   Print output in table format using the given Go\r\n                        template\r\n                        'json':             Print in JSON format\r\n                        'TEMPLATE':         Print output using the given Go template.\r\n                        Refer to https://docs.docker.com/go/formatting/ for more information\r\n                        about formatting output with templates\r\n  -n, --last int        Show n last created containers (includes all states) (default -1)\r\n  -l, --latest          Show the latest created container (includes all states)\r\n      --no-trunc        Don't truncate output\r\n  -q, --quiet           Only display container IDs\r\n  -s, --size            Display total file sizes\r\n",
+     "kod": 0,
+     "ms": 220
+    },
+    {
+     "cmd": "docker top --help",
+     "out": "Usage:  docker top CONTAINER [ps OPTIONS]\r\n\r\nDisplay the running processes of a container\r\n\r\nAliases:\r\n  docker container top, docker top\r\n",
+     "kod": 0,
+     "ms": 234
+    },
+    {
+     "cmd": "docker stats --help",
+     "out": "Usage:  docker stats [OPTIONS] [CONTAINER...]\r\n\r\nDisplay a live stream of container(s) resource usage statistics\r\n\r\nAliases:\r\n  docker container stats, docker stats\r\n\r\nOptions:\r\n  -a, --all             Show all containers (default shows just running)\r\n      --format string   Format output using a custom template:\r\n                        'table':            Print output in table format with column headers\r\n                        (default)\r\n                        'table TEMPLATE':   Print output in table format using the given Go\r\n                        template\r\n                        'json':             Print in JSON format\r\n                        'TEMPLATE':         Print output using the given Go template.\r\n                        Refer to https://docs.docker.com/go/formatting/ for more information\r\n                        about formatting output with templates\r\n      --no-stream       Disable streaming stats and only pull the first result\r\n      --no-trunc        Do not truncate output\r\n",
+     "kod": 0,
+     "ms": 217
+    },
+    {
+     "cmd": "docker rename --help",
+     "out": "Usage:  docker rename CONTAINER NEW_NAME\r\n\r\nRename a container\r\n\r\nAliases:\r\n  docker container rename, docker rename\r\n",
+     "kod": 0,
+     "ms": 219
+    },
+    {
+     "cmd": "docker diff --help",
+     "out": "Usage:  docker diff CONTAINER\r\n\r\nInspect changes to files or directories on a container's filesystem\r\n\r\nAliases:\r\n  docker container diff, docker diff\r\n",
+     "kod": 0,
+     "ms": 234
+    },
+    {
+     "cmd": "docker version --help",
+     "out": "Usage:  docker version [OPTIONS]\r\n\r\nShow the Docker version information\r\n\r\nOptions:\r\n  -f, --format string   Format output using a custom template:\r\n                        'json':             Print in JSON format\r\n                        'TEMPLATE':         Print output using the given Go template.\r\n                        Refer to https://docs.docker.com/go/formatting/ for more information\r\n                        about formatting output with templates\r\n",
+     "kod": 0,
+     "ms": 223
+    },
+    {
+     "cmd": "docker info --help",
+     "out": "Usage:  docker info [OPTIONS]\r\n\r\nDisplay system-wide information\r\n\r\nAliases:\r\n  docker system info, docker info\r\n\r\nOptions:\r\n  -f, --format string   Format output using a custom template:\r\n                        'json':             Print in JSON format\r\n                        'TEMPLATE':         Print output using the given Go template.\r\n                        Refer to https://docs.docker.com/go/formatting/ for more information\r\n                        about formatting output with templates\r\n",
+     "kod": 0,
+     "ms": 226
+    }
+   ]
+  }
+ ]
+}

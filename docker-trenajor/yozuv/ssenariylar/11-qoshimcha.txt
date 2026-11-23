@@ -1,0 +1,82 @@
+# bo'shliqlarni to'ldirish: nginx qayta ishga tushganda, SIGTERM, busybox to'liq banner, -it bash prompt
+#! tayyor alpine:latest nginx:1.29 debian:trixie
+$ docker run -d --name veb nginx:1.29 >/dev/null
+#! kut 1
+$ docker restart veb
+#! kut 1
+$ docker logs veb
+$ docker kill -s TERM veb
+#! kut 1
+$ docker logs -n 8 veb
+$ docker ps -a --format "{{.Names}} {{.Status}}"
+$ docker start veb
+$ docker exec veb nginx -t
+$ docker exec veb nginx -V
+$ docker exec veb cat /etc/nginx/conf.d/default.conf
+$ docker exec veb ls -la /
+$ docker exec veb hostname -i
+$ docker exec veb ls /usr/share/nginx/html /etc/nginx
+$ docker exec veb ls
+$ docker exec veb whoami
+$ docker exec veb id
+$ docker exec veb uname -a
+$ docker exec veb env
+$ docker exec veb date
+$ docker exec veb df -h /
+$ docker exec veb head -2 /etc/passwd
+$ docker exec veb ls /yoq
+$ docker exec veb cat /yoq
+$ docker exec veb rm /yoq
+$ docker exec veb mkdir /usr
+$ docker exec veb wc -l /etc/passwd
+$ docker exec veb grep -c nginx /etc/passwd
+$ docker exec veb curl --version
+$ docker rm -f veb
+$ docker run --rm alpine busybox
+$ docker run --rm alpine ls
+$ docker run --rm alpine ls -a /root
+$ docker run --rm alpine sh -c 'ls /usr/share/nginx'
+$ docker run --rm alpine sh -c 'cd /yoq'
+$ docker run --rm alpine sh -c 'echo $((2+3)); echo ${YOQ:-standart}'
+$ docker run --rm alpine sh -c 'for i in 1 2 3; do echo $i; done'
+$ docker run --rm alpine mkdir /a/b
+$ docker run --rm alpine touch /yoq/x
+$ docker run --rm alpine wc /etc/passwd
+$ docker run --rm alpine rm /etc
+$ docker run --rm alpine id nobody
+$ docker run --rm alpine ls -l /etc/hostname /etc/hosts
+$ docker run --rm debian:trixie id
+$ docker run --rm debian:trixie hostname -i
+$ docker run --rm debian:trixie ls /
+$ docker run --rm debian:trixie ls -l /
+$ docker run -it --rm debian:trixie
+< pwd
+< cd /tmp
+< yoqbuyruq
+< exit 3
+$ docker run -it --rm nginx:1.29 sh
+< echo salom
+< exit
+$ docker run --rm -it alpine ls
+$ docker run --rm -t alpine ls
+$ docker run --rm -i alpine ls
+$ docker run -d --name s1 alpine sleep 600 >/dev/null; docker stop -t 2 s1; docker logs s1; docker ps -a --format "{{.Names}} {{.Status}}"
+$ docker rm s1
+$ docker run --rm --name s2 alpine sleep 3 ; echo "kod: $?"
+$ docker run -d --name sanoq alpine sh -c 'i=0; while true; do i=$((i+1)); echo "qator $i"; sleep 1; done' >/dev/null
+#! kut 3
+$ docker logs sanoq
+$ docker logs --tail 1 sanoq
+$ docker stop sanoq
+$ docker rm sanoq
+$ docker run -d --restart always --name qayta alpine sh -c 'echo ishladi; exit 1' >/dev/null
+#! kut 4
+$ docker ps -a --format "{{.Names}} {{.Status}}"
+$ docker inspect -f '{{.RestartCount}}' qayta
+$ docker logs qayta
+$ docker rm -f qayta
+$ docker pause yoq
+$ docker run -d --name pz alpine sleep 600 >/dev/null; docker pause pz; docker ps --format "{{.Names}} {{.Status}}"; docker unpause pz; docker rm -f pz
+$ docker wait yoq
+$ docker run -d --name w alpine sh -c 'sleep 2; exit 4' >/dev/null; docker wait w; docker rm w
+$ docker events --since 1s --until 0s

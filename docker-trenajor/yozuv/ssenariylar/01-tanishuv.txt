@@ -1,0 +1,15 @@
+# 2-bob: o'rnatishdan keyin; hello-world
+$ docker version
+$ docker info
+$ docker compose version
+$ docker buildx version
+$ docker --version
+#! tayyor hello-world:latest
+$ docker run hello-world
+$ docker ps
+$ docker ps -a
+$ docker container ls -a
+$ docker image ls
+$ docker images
+$ docker container prune -f
+$ docker ps -a

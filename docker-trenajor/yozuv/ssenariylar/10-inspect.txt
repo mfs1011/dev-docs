@@ -1,0 +1,26 @@
+# to'liq JSON va tizim buyruqlari (simulyator maydonlarni shu bo'yicha quradi)
+#! tayyor alpine:latest nginx:1.29
+$ docker run -d --name veb -p 127.0.0.1:8080:80 -e REJIM=sinov -v malumot:/data nginx:1.29
+$ docker inspect veb
+$ docker container inspect -f '{{.State.Status}} {{.State.Pid}} {{.RestartCount}}' veb
+$ docker inspect -f '{{.Config.Image}} {{.Image}}' veb
+$ docker inspect -f '{{json .Config.Env}}' veb
+$ docker inspect -f '{{.HostConfig.PortBindings}}' veb
+$ docker inspect --format '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' veb
+$ docker network inspect bridge
+$ docker volume inspect malumot
+$ docker run --name t alpine true
+$ docker inspect t
+$ docker system df
+$ docker system df -v
+$ docker ps -a --format json
+$ docker ps -a --no-trunc
+$ docker ps -s
+$ docker ps -a --filter status=exited
+$ docker ps -a --filter ancestor=alpine
+$ docker ps -n 1
+$ docker ps -l
+$ docker system prune -f
+$ docker rm -f veb
+$ docker system prune -a -f --volumes
+$ docker system df

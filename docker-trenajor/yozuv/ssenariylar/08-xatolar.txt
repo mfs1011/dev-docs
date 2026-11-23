@@ -1,0 +1,47 @@
+# xato xabarlari va kodlar
+#! tayyor alpine:latest nginx:1.29
+$ docker
+$ docker foo
+$ docker run
+$ docker ps --yoq
+$ docker stop yoq
+$ docker rm yoq
+$ docker logs yoq
+$ docker exec yoq ls
+$ docker inspect yoq
+$ docker start yoq
+$ docker image rm yoq
+$ docker network rm yoq
+$ docker volume rm yoq
+$ docker run --name "yomon nom" alpine true
+$ docker run alpine:yoqteg true
+$ docker run -p 99999:80 nginx:1.29
+$ docker run -p abc nginx:1.29
+$ docker run -e alpine
+$ docker run -d --name ish alpine sleep 300
+$ docker rm ish
+$ docker exec ish yoqbuyruq; echo "kod: $?"
+$ docker stop ish
+$ docker exec ish ls
+$ docker start ish ish
+$ docker stop -t 0 ish
+$ docker rm ish
+$ docker run -d alpine sleep 5 >/dev/null; docker ps --format "{{.Names}}" | wc -l
+$ docker ps -q | wc -l
+$ docker ps -aq | wc -c
+$ docker rm -f $(docker ps -aq) >/dev/null; docker ps -a
+$ docker run --rm alpine sh -c 'echo xato >&2; echo yaxshi'
+$ docker run --rm alpine sh -c 'echo xato >&2' 2>/dev/null; echo "kod: $?"
+$ docker run --rm alpine ls -z
+$ docker run --rm -w /etc alpine pwd
+$ docker run --rm --entrypoint echo alpine salom
+$ docker run --rm --user 1000:1000 alpine id
+$ docker run --rm --hostname mehmon alpine hostname
+$ docker run --rm -m 6m alpine true
+$ docker run --rm -m 64m --cpus 0.5 alpine cat /sys/fs/cgroup/memory.max
+$ docker network create ilova-tarmoq
+$ docker network create ilova-tarmoq
+$ docker network rm ilova-tarmoq
+$ docker volume create v
+$ docker volume create v
+$ docker volume rm v

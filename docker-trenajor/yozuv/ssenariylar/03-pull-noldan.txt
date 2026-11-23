@@ -1,0 +1,4 @@
+# run topmagan image'ni o'zi yuklaydi
+$ docker run --rm busybox:1.37 echo salom
+$ docker run -d --name veb nginx:1.29
+$ docker ps

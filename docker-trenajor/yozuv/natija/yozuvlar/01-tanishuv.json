@@ -1,0 +1,96 @@
+{
+ "docker": "29.9.3",
+ "sana": "2026-11-23",
+ "terminal": [
+  100,
+  30
+ ],
+ "ssenariylar": [
+  {
+   "ssenariy": "01-tanishuv.txt",
+   "buyruqlar": [
+    {
+     "cmd": "docker version",
+     "out": "Client:\r\n Version:           29.9.3\r\n API version:       1.56\r\n Go version:        go1.26.10\r\n Git commit:        5457199\r\n Built:             Tue Nov  3 21:42:08 2026\r\n OS/Arch:           linux/amd64\r\n Context:           default\r\n\r\nServer: Docker Engine - Community\r\n Engine:\r\n  Version:          29.9.3\r\n  API version:      1.56 (minimum version 1.40)\r\n  Go version:       go1.26.10\r\n  Git commit:       70efc0e\r\n  Built:            Tue Nov  3 21:44:43 2026\r\n  OS/Arch:          linux/amd64\r\n  Experimental:     false\r\n containerd:\r\n  Version:          v2.4.2\r\n  GitCommit:        \r\n runc:\r\n  Version:          1.5.2\r\n  GitCommit:        v1.5.2-0-g29dd3dc\r\n docker-init:\r\n  Version:          0.19.0\r\n  GitCommit:        de40ad0\r\n",
+     "kod": 0,
+     "ms": 139
+    },
+    {
+     "cmd": "docker info",
+     "out": "Client:\r\n Version:    29.9.3\r\n Context:    default\r\n Debug Mode: false\r\n Plugins:\r\n  buildx: Docker Buildx (Docker Inc.)\r\n    Version:  v0.39.0\r\n    Path:     /usr/local/libexec/docker/cli-plugins/docker-buildx\r\n  compose: Docker Compose (Docker Inc.)\r\n    Version:  v5.7.1\r\n    Path:     /usr/local/libexec/docker/cli-plugins/docker-compose\r\n\r\nServer:\r\n Containers: 0\r\n  Running: 0\r\n  Paused: 0\r\n  Stopped: 0\r\n Images: 0\r\n Server Version: 29.9.3\r\n Storage Driver: overlayfs\r\n  driver-type: io.containerd.snapshotter.v1\r\n Logging Driver: json-file\r\n Cgroup Driver: cgroupfs\r\n Cgroup Version: 2\r\n Plugins:\r\n  Volume: local\r\n  Network: bridge host ipvlan macvlan null overlay\r\n  Log: awslogs fluentd gcplogs gelf journald json-file local splunk syslog\r\n CDI spec directories:\r\n  /etc/cdi\r\n  /var/run/cdi\r\n Swarm: inactive\r\n Runtimes: io.containerd.runc.v2 runc\r\n Default Runtime: runc\r\n Init Binary: docker-init\r\n containerd version: \r\n runc version: v1.5.2-0-g29dd3dc\r\n init version: de40ad0\r\n Security Options:\r\n  apparmor\r\n   Profile: default\r\n  seccomp\r\n   Profile: builtin\r\n  cgroupns\r\n Kernel Version: 7.0.0-43-generic\r\n Operating System: Alpine Linux v3.24 (containerized)\r\n OSType: linux\r\n Architecture: x86_64\r\n CPUs: 1\r\n Total Memory: 1.752GiB\r\n Name: lab\r\n ID: 293ff338-0690-4139-9751-53afcd4f027e\r\n Docker Root Dir: /var/lib/docker\r\n Debug Mode: false\r\n Experimental: false\r\n Insecure Registries:\r\n  127.0.0.0/8\r\n  ::1/128\r\n Live Restore Enabled: false\r\n Product License: Community Engine\r\n Firewall Backend: iptables\r\n  EnableUserlandProxy: true\r\n  UserlandProxyPath: /usr/local/bin/docker-proxy\r\n\r\n",
+     "kod": 0,
+     "ms": 264
+    },
+    {
+     "cmd": "docker compose version",
+     "out": "Docker Compose version v5.7.1\r\n",
+     "kod": 0,
+     "ms": 214
+    },
+    {
+     "cmd": "docker buildx version",
+     "out": "github.com/docker/buildx v0.39.0 360040a78d6113dc84e5d4dcdf0f438e1be7a41f\r\n",
+     "kod": 0,
+     "ms": 228
+    },
+    {
+     "cmd": "docker --version",
+     "out": "Docker version 29.9.3, build 5457199\r\n",
+     "kod": 0,
+     "ms": 127
+    },
+    {
+     "direktiva": "tayyor hello-world:latest"
+    },
+    {
+     "cmd": "docker run hello-world",
+     "out": "\r\nHello from Docker!\r\nThis message shows that your installation appears to be working correctly.\r\n\r\nTo generate this message, Docker took the following steps:\r\n 1. The Docker client contacted the Docker daemon.\r\n 2. The Docker daemon pulled the \"hello-world\" image from the Docker Hub.\r\n    (amd64)\r\n 3. The Docker daemon created a new container from that image which runs the\r\n    executable that produces the output you are currently reading.\r\n 4. The Docker daemon streamed that output to the Docker client, which sent it\r\n    to your terminal.\r\n\r\nTo try something more ambitious, you can run an Ubuntu container with:\r\n $ docker run -it ubuntu bash\r\n\r\nShare images, automate workflows, and more with a free Docker ID:\r\n https://hub.docker.com/\r\n\r\nFor more examples and ideas, visit:\r\n https://docs.docker.com/get-started/\r\n\r\n",
+     "kod": 0,
+     "ms": 659
+    },
+    {
+     "cmd": "docker ps",
+     "out": "CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES\r\n",
+     "kod": 0,
+     "ms": 148
+    },
+    {
+     "cmd": "docker ps -a",
+     "out": "CONTAINER ID   IMAGE         COMMAND    CREATED        STATUS                              PORTS     NAMES\r\n9bcac84a6d2b   hello-world   \"/hello\"   1 second ago   Exited (0) Less than a second ago             vigilant_euclid\r\n",
+     "kod": 0,
+     "ms": 149
+    },
+    {
+     "cmd": "docker container ls -a",
+     "out": "CONTAINER ID   IMAGE         COMMAND    CREATED        STATUS                              PORTS     NAMES\r\n9bcac84a6d2b   hello-world   \"/hello\"   1 second ago   Exited (0) Less than a second ago             vigilant_euclid\r\n",
+     "kod": 0,
+     "ms": 200
+    },
+    {
+     "cmd": "docker image ls",
+     "out": "                                                                                \u001b[1m\u001b[106m\u001b[30mi\u001b[0m\u001b[0m \u001b[96mInfo → \u001b[0m\u001b[0m \u001b[38;5;0m\u001b[48;5;14m U \u001b[0m In Use\r\n\u001b[39m\u001b[1mIMAGE\u001b[0m                \u001b[39m\u001b[1mID\u001b[0m             \u001b[39m\u001b[1mDISK USAGE\u001b[0m   \u001b[39m\u001b[1mCONTENT SIZE\u001b[0m   \u001b[39m\u001b[1mEXTRA\u001b[0m\r\n\u001b[34m\u001b[1mhello-world:latest\u001b[0m   \u001b[39mc567b231f656\u001b[0m       \u001b[39m25.9kB\u001b[0m         \u001b[39m9.49kB\u001b[0m   \u001b[38;5;0m\u001b[48;5;14m U \u001b[0m  \r\n",
+     "kod": 0,
+     "ms": 181
+    },
+    {
+     "cmd": "docker images",
+     "out": "                                                                                \u001b[1m\u001b[106m\u001b[30mi\u001b[0m\u001b[0m \u001b[96mInfo → \u001b[0m\u001b[0m \u001b[38;5;0m\u001b[48;5;14m U \u001b[0m In Use\r\n\u001b[39m\u001b[1mIMAGE\u001b[0m                \u001b[39m\u001b[1mID\u001b[0m             \u001b[39m\u001b[1mDISK USAGE\u001b[0m   \u001b[39m\u001b[1mCONTENT SIZE\u001b[0m   \u001b[39m\u001b[1mEXTRA\u001b[0m\r\n\u001b[34m\u001b[1mhello-world:latest\u001b[0m   \u001b[39mc567b231f656\u001b[0m       \u001b[39m25.9kB\u001b[0m         \u001b[39m9.49kB\u001b[0m   \u001b[38;5;0m\u001b[48;5;14m U \u001b[0m  \r\n",
+     "kod": 0,
+     "ms": 162
+    },
+    {
+     "cmd": "docker container prune -f",
+     "out": "Deleted Containers:\r\n9bcac84a6d2b583a399658a5e8f53a0aff5a3f52e3411dbc6fb8cc7352504da0\r\n\r\nTotal reclaimed space: 4.096kB\r\n",
+     "kod": 0,
+     "ms": 171
+    },
+    {
+     "cmd": "docker ps -a",
+     "out": "CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES\r\n",
+     "kod": 0,
+     "ms": 136
+    }
+   ]
+  }
+ ]
+}

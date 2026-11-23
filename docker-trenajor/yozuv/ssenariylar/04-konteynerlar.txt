@@ -1,0 +1,69 @@
+# 4-bob
+#! tayyor alpine:latest nginx:1.29
+$ docker run alpine echo salom
+$ docker ps -a --format "table {{.Names}}\t{{.Image}}\t{{.Status}}"
+$ docker ps -a
+$ docker run -d --name veb nginx:1.29
+$ docker ps
+#! kut 2
+$ docker logs veb
+$ docker logs -n 3 veb
+$ docker logs -t -n 2 veb
+$ docker exec veb nginx -v
+$ docker run -d --name uxla alpine sleep 1000 >/dev/null
+$ docker exec uxla ps
+$ docker exec uxla hostname
+$ docker exec uxla ip -4 -o addr show eth0
+$ docker exec uxla cat /etc/hosts
+$ docker exec uxla cat /etc/resolv.conf
+$ docker exec uxla cat /etc/hostname
+$ time docker stop uxla
+$ docker ps -a --filter name=uxla --format "{{.Names}} {{.Status}}"
+$ docker start uxla
+$ docker ps --filter name=uxla --format "{{.Names}} {{.Status}}"
+$ docker rm uxla
+$ docker rm -f uxla
+$ docker container create --name bosh alpine echo salom
+$ docker ps -a --filter name=bosh --format '{{.Names}} {{.Status}}'
+$ docker start -a bosh
+$ docker ps -a --filter name=bosh --format '{{.Names}} {{.Status}}'
+$ docker rm bosh
+$ docker run --rm -e SALOM=dunyo -e PORT=8080 alpine env
+$ printf '%s\n' DB_HOST=baza DB_PORT=5432 > ilova.env
+$ docker run --rm --env-file ilova.env alpine sh -c 'echo $DB_HOST:$DB_PORT'
+$ docker run --rm --env-file ilova.env alpine sh -c "echo $DB_HOST:$DB_PORT"
+$ rm ilova.env
+$ echo 'echo ichkarida: $(hostname); exit' | docker run -i --rm alpine sh
+$ docker run --rm alpine sh -c 'exit 3'; echo "kod: $?"
+$ docker run --rm alpine yoqbuyruq; echo "kod: $?"
+$ docker run --rm alpine /etc; echo "kod: $?"
+$ docker run --foo alpine; echo "kod: $?"
+$ docker run -it --rm --name ichki alpine sh
+< hostname
+< ls
+< echo $HOME
+< exit
+$ docker run -it --rm alpine
+< cat /etc/os-release
+< exit 5
+$ echo $?
+$ docker exec -it veb sh
+< pwd
+< ls /usr/share/nginx/html
+< exit
+$ docker exec -it veb bash
+< ps
+< exit
+$ docker stop veb
+$ docker ps -a
+$ docker logs veb
+$ docker restart veb
+$ docker ps
+$ docker kill veb
+$ docker ps -a --format "{{.Names}} {{.Status}}"
+$ docker rm veb
+$ docker run --name a1 alpine true
+$ docker run --name a1 alpine true
+$ docker rename a1 a2
+$ docker ps -a
+$ docker rm a2

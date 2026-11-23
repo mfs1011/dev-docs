@@ -1,0 +1,479 @@
+{
+ "docker": "29.9.3",
+ "sana": "2026-11-23",
+ "terminal": [
+  100,
+  30
+ ],
+ "ssenariylar": [
+  {
+   "ssenariy": "07-busybox.txt",
+   "buyruqlar": [
+    {
+     "direktiva": "tayyor alpine:latest debian:trixie nginx:1.29 busybox:1.37"
+    },
+    {
+     "direktiva": "sukut docker run -d --name quti alpine sleep 3600"
+    },
+    {
+     "cmd": "docker exec quti ls /",
+     "out": "bin\r\ndev\r\netc\r\nhome\r\nlib\r\nmedia\r\nmnt\r\nopt\r\nproc\r\nroot\r\nrun\r\nsbin\r\nsrv\r\nsys\r\ntmp\r\nusr\r\nvar\r\n",
+     "kod": 0,
+     "ms": 211
+    },
+    {
+     "cmd": "docker exec quti ls -l /",
+     "out": "total 56\r\ndrwxr-xr-x    2 root     root          4096 Nov  5 09:19 bin\r\ndrwxr-xr-x    5 root     root           340 Nov 23 05:03 dev\r\ndrwxr-xr-x    1 root     root          4096 Nov 23 05:03 etc\r\ndrwxr-xr-x    2 root     root          4096 Nov  5 09:19 home\r\ndrwxr-xr-x    6 root     root          4096 Nov  5 09:19 lib\r\ndrwxr-xr-x    5 root     root          4096 Nov  5 09:19 media\r\ndrwxr-xr-x    2 root     root          4096 Nov  5 09:19 mnt\r\ndrwxr-xr-x    2 root     root          4096 Nov  5 09:19 opt\r\ndr-xr-xr-x  198 root     root             0 Nov 23 05:03 proc\r\ndrwx------    2 root     root          4096 Nov  5 09:19 root\r\ndrwxr-xr-x    3 root     root          4096 Nov  5 09:19 run\r\ndrwxr-xr-x    2 root     root          4096 Nov  5 09:19 sbin\r\ndrwxr-xr-x    2 root     root          4096 Nov  5 09:19 srv\r\ndr-xr-xr-x   13 root     root             0 Nov 23 05:03 sys\r\ndrwxrwxrwt    2 root     root          4096 Nov  5 09:19 tmp\r\ndrwxr-xr-x    7 root     root          4096 Nov  5 09:19 usr\r\ndrwxr-xr-x   11 root     root          4096 Nov  5 09:19 var\r\n",
+     "kod": 0,
+     "ms": 205
+    },
+    {
+     "cmd": "docker exec quti ls -la /etc",
+     "out": "total 156\r\ndrwxr-xr-x    1 root     root          4096 Nov 23 05:03 .\r\ndrwxr-xr-x    1 root     root          4096 Nov 23 05:03 ..\r\n-rw-r--r--    1 root     root             7 Nov  5 09:17 alpine-release\r\ndrwxr-xr-x    4 root     root          4096 Nov  5 09:19 apk\r\ndrwxr-xr-x    2 root     root          4096 Nov  5 09:19 busybox-paths.d\r\ndrwxr-xr-x    2 root     root          4096 Nov  5 09:19 crontabs\r\n-rw-r--r--    1 root     root            89 Mar 24  2026 fstab\r\n-rw-r--r--    1 root     root           510 Mar 24  2026 group\r\n-rw-r--r--    1 root     root            13 Nov 23 05:03 hostname\r\n-rw-r--r--    1 root     root           172 Nov 23 05:03 hosts\r\n-rw-r--r--    1 root     root           570 Mar 24  2026 inittab\r\n-rw-r--r--    1 root     root            51 Nov  5 09:17 issue\r\ndrwxr-xr-x    2 root     root          4096 Nov  5 09:19 logrotate.d\r\ndrwxr-xr-x    2 root     root          4096 Nov  5 09:19 modprobe.d\r\n-rw-r--r--    1 root     root            15 Mar 24  2026 modules\r\ndrwxr-xr-x    2 root     root          4096 Nov  5 09:19 modules-load.d\r\n-rw-r--r--    1 root     root           284 Mar 24  2026 motd\r\nlrwxrwxrwx    1 root     root            12 Nov 23 05:03 mtab -> /proc/mounts\r\ndrwxr-xr-x    8 root     root          4096 Nov  5 09:19 network\r\n-rw-r--r--    1 root     root           205 Mar 24  2026 nsswitch.conf\r\ndrwxr-xr-x    2 root     root          4096 Nov  5 09:19 opt\r\nlrwxrwxrwx    1 root     root            21 Nov  5 09:19 os-release -> ../usr/lib/os-release\r\n-rw-r--r--    1 root     root           702 Mar 24  2026 passwd\r\ndrwxr-xr-x    7 root     root          4096 Nov  5 09:19 periodic\r\n-rw-r--r--    1 root     root           547 Mar 24  2026 profile\r\ndrwxr-xr-x    2 root     root          4096 Nov  5 09:19 profile.d\r\n-rw-r--r--    1 root     root          3144 Mar 24  2026 protocols\r\n-rw-r--r--    1 root     root           307 Nov 23 05:03 resolv.conf\r\ndrwxr-xr-x    2 root     root          4096 Nov  5 09:19 secfixes.d\r\n-rw-r--r--    1 root     root           156 Jan 10  2026 securetty\r\n-rw-r--r--    1 root     root         12813 Mar 24  2026 services\r\n-rw-r-----    1 root     shadow         260 Nov  5 09:19 shadow\r\n-rw-r--r--    1 root     root            38 Mar 24  2026 shells\r\ndrwxr-xr-x    4 root     root          4096 Nov  5 09:19 ssl\r\ndrwxr-xr-x    2 root     root          4096 Nov  5 09:19 ssl1.1\r\n-rw-r--r--    1 root     root            53 Mar 24  2026 sysctl.conf\r\ndrwxr-xr-x    2 root     root          4096 Nov  5 09:19 sysctl.d\r\ndrwxr-xr-x    2 root     root          4096 Nov  5 09:19 udhcpc\r\n",
+     "kod": 0,
+     "ms": 197
+    },
+    {
+     "cmd": "docker exec quti ls -lh /bin | head -5",
+     "out": "total 788K   \r\nlrwxrwxrwx    1 root     root          12 Nov  5 09:19 arch -> /bin/busybox\r\nlrwxrwxrwx    1 root     root          12 Nov  5 09:19 ash -> /bin/busybox\r\nlrwxrwxrwx    1 root     root          12 Nov  5 09:19 base64 -> /bin/busybox\r\nlrwxrwxrwx    1 root     root          12 Nov  5 09:19 bbconfig -> /bin/busybox\r\n",
+     "kod": 0,
+     "ms": 212
+    },
+    {
+     "cmd": "docker exec quti ls /yoq",
+     "out": "ls: /yoq: No such file or directory\r\n",
+     "kod": 1,
+     "ms": 217
+    },
+    {
+     "cmd": "docker exec quti cat /yoq",
+     "out": "cat: can't open '/yoq': No such file or directory\r\n",
+     "kod": 1,
+     "ms": 204
+    },
+    {
+     "cmd": "docker exec quti cat /etc/os-release",
+     "out": "NAME=\"Alpine Linux\"\r\nID=alpine\r\nVERSION_ID=3.24.4\r\nPRETTY_NAME=\"Alpine Linux v3.24\"\r\nHOME_URL=\"https://alpinelinux.org/\"\r\nBUG_REPORT_URL=\"https://gitlab.alpinelinux.org/alpine/aports/-/issues\"\r\n",
+     "kod": 0,
+     "ms": 224
+    },
+    {
+     "cmd": "docker exec quti cat /etc/alpine-release",
+     "out": "3.24.4\r\n",
+     "kod": 0,
+     "ms": 201
+    },
+    {
+     "cmd": "docker exec quti cat /etc/passwd",
+     "out": "root:x:0:0:root:/root:/bin/sh\r\nbin:x:1:1:bin:/bin:/sbin/nologin\r\ndaemon:x:2:2:daemon:/sbin:/sbin/nologin\r\nlp:x:4:7:lp:/var/spool/lpd:/sbin/nologin\r\nsync:x:5:0:sync:/sbin:/bin/sync\r\nshutdown:x:6:0:shutdown:/sbin:/sbin/shutdown\r\nhalt:x:7:0:halt:/sbin:/sbin/halt\r\nmail:x:8:12:mail:/var/mail:/sbin/nologin\r\nnews:x:9:13:news:/usr/lib/news:/sbin/nologin\r\nuucp:x:10:14:uucp:/var/spool/uucppublic:/sbin/nologin\r\ncron:x:16:16:cron:/var/spool/cron:/sbin/nologin\r\nftp:x:21:21::/var/lib/ftp:/sbin/nologin\r\nsshd:x:22:22:sshd:/dev/null:/sbin/nologin\r\ngames:x:35:35:games:/usr/games:/sbin/nologin\r\nntp:x:123:123:NTP:/var/empty:/sbin/nologin\r\nguest:x:405:100:guest:/dev/null:/sbin/nologin\r\nnobody:x:65534:65534:nobody:/:/sbin/nologin\r\n",
+     "kod": 0,
+     "ms": 208
+    },
+    {
+     "cmd": "docker exec quti pwd",
+     "out": "/\r\n",
+     "kod": 0,
+     "ms": 230
+    },
+    {
+     "cmd": "docker exec quti id",
+     "out": "uid=0(root) gid=0(root) groups=0(root),0(root),1(bin),2(daemon),3(sys),4(adm),6(disk),10(wheel),11(floppy),20(dialout),26(tape),27(video)\r\n",
+     "kod": 0,
+     "ms": 223
+    },
+    {
+     "cmd": "docker exec quti whoami",
+     "out": "root\r\n",
+     "kod": 0,
+     "ms": 191
+    },
+    {
+     "cmd": "docker exec quti uname -a",
+     "out": "Linux d0a2a78610d8 7.0.0-43-generic #43-Ubuntu SMP PREEMPT_DYNAMIC Fri Oct 23 13:25:25 UTC 2026 x86_64 Linux\r\n",
+     "kod": 0,
+     "ms": 202
+    },
+    {
+     "cmd": "docker exec quti uname -r",
+     "out": "7.0.0-43-generic\r\n",
+     "kod": 0,
+     "ms": 222
+    },
+    {
+     "cmd": "docker exec quti env",
+     "out": "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\r\nHOSTNAME=d0a2a78610d8\r\nHOME=/root\r\n",
+     "kod": 0,
+     "ms": 197
+    },
+    {
+     "cmd": "docker exec quti printenv PATH",
+     "out": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\r\n",
+     "kod": 0,
+     "ms": 209
+    },
+    {
+     "cmd": "docker exec quti echo salom dunyo",
+     "out": "salom dunyo\r\n",
+     "kod": 0,
+     "ms": 238
+    },
+    {
+     "cmd": "docker exec quti sh -c 'echo $HOSTNAME; echo $0'",
+     "out": "d0a2a78610d8\r\nsh\r\n",
+     "kod": 0,
+     "ms": 218
+    },
+    {
+     "cmd": "docker exec quti date",
+     "out": "Mon Nov 23 05:03:53 UTC 2026\r\n",
+     "kod": 0,
+     "ms": 208
+    },
+    {
+     "cmd": "docker exec quti df -h",
+     "out": "Filesystem                Size      Used Available Use% Mounted on\r\noverlay                  39.3G     26.5G     10.8G  71% /\r\ntmpfs                    64.0M         0     64.0M   0% /dev\r\nshm                      64.0M         0     64.0M   0% /dev/shm\r\n/dev/vda3                39.3G     26.5G     10.8G  71% /etc/hostname\r\n/dev/vda3                39.3G     26.5G     10.8G  71% /etc/hosts\r\n/dev/vda3                39.3G     26.5G     10.8G  71% /etc/resolv.conf\r\ntmpfs                     4.0K         0      4.0K   0% /proc/acpi\r\ntmpfs                    64.0M         0     64.0M   0% /proc/interrupts\r\ntmpfs                    64.0M         0     64.0M   0% /proc/kcore\r\ntmpfs                    64.0M         0     64.0M   0% /proc/keys\r\ntmpfs                    64.0M         0     64.0M   0% /proc/latency_stats\r\ntmpfs                     4.0K         0      4.0K   0% /proc/scsi\r\ntmpfs                    64.0M         0     64.0M   0% /proc/timer_list\r\ntmpfs                     4.0K         0      4.0K   0% /sys/firmware\r\n",
+     "kod": 0,
+     "ms": 201
+    },
+    {
+     "cmd": "docker exec quti df -h /",
+     "out": "Filesystem                Size      Used Available Use% Mounted on\r\noverlay                  39.3G     26.5G     10.8G  71% /\r\n",
+     "kod": 0,
+     "ms": 202
+    },
+    {
+     "cmd": "docker exec quti free -m",
+     "out": "              total        used        free      shared  buff/cache   available\r\nMem:           1794         930         104           9         759         685\r\nSwap:          2944         964        1980\r\n",
+     "kod": 0,
+     "ms": 195
+    },
+    {
+     "cmd": "docker exec quti ps aux",
+     "out": "PID   USER     TIME  COMMAND\r\n    1 root      0:00 sleep 3600\r\n  140 root      0:00 ps aux\r\n",
+     "kod": 0,
+     "ms": 202
+    },
+    {
+     "cmd": "docker exec quti ps -ef",
+     "out": "PID   USER     TIME  COMMAND\r\n    1 root      0:00 sleep 3600\r\n  146 root      0:00 ps -ef\r\n",
+     "kod": 0,
+     "ms": 250
+    },
+    {
+     "cmd": "docker exec quti ip addr",
+     "out": "1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN qlen 1000\r\n    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00\r\n    inet 127.0.0.1/8 scope host lo\r\n       valid_lft forever preferred_lft forever\r\n    inet6 ::1/128 scope host \r\n       valid_lft forever preferred_lft forever\r\n2: eth0@if4: <BROADCAST,MULTICAST,UP,LOWER_UP,M-DOWN> mtu 1500 qdisc noqueue state UP \r\n    link/ether d2:36:97:c2:0f:4c brd ff:ff:ff:ff:ff:ff\r\n    inet 172.18.0.2/16 brd 172.18.255.255 scope global eth0\r\n       valid_lft forever preferred_lft forever\r\n",
+     "kod": 0,
+     "ms": 213
+    },
+    {
+     "cmd": "docker exec quti ip route",
+     "out": "default via 172.18.0.1 dev eth0 \r\n172.18.0.0/16 dev eth0 scope link  src 172.18.0.2 \r\n",
+     "kod": 0,
+     "ms": 218
+    },
+    {
+     "cmd": "docker exec quti mkdir /ish",
+     "out": "",
+     "kod": 0,
+     "ms": 219
+    },
+    {
+     "cmd": "docker exec quti sh -c 'echo bir > /ish/a.txt; echo ikki >> /ish/a.txt; cat /ish/a.txt; wc -l /ish/a.txt'",
+     "out": "bir\r\nikki\r\n2 /ish/a.txt\r\n",
+     "kod": 0,
+     "ms": 228
+    },
+    {
+     "cmd": "docker exec quti touch /ish/b",
+     "out": "",
+     "kod": 0,
+     "ms": 223
+    },
+    {
+     "cmd": "docker exec quti ls -l /ish",
+     "out": "total 4\r\n-rw-rw-rw-    1 root     root             9 Nov 23 05:03 a.txt\r\n-rw-rw-rw-    1 root     root             0 Nov 23 05:03 b\r\n",
+     "kod": 0,
+     "ms": 213
+    },
+    {
+     "cmd": "docker exec quti rm /ish/b",
+     "out": "",
+     "kod": 0,
+     "ms": 210
+    },
+    {
+     "cmd": "docker exec quti rm /yoq",
+     "out": "rm: can't remove '/yoq': No such file or directory\r\n",
+     "kod": 1,
+     "ms": 212
+    },
+    {
+     "cmd": "docker exec quti head -3 /etc/passwd",
+     "out": "root:x:0:0:root:/root:/bin/sh\r\nbin:x:1:1:bin:/bin:/sbin/nologin\r\ndaemon:x:2:2:daemon:/sbin:/sbin/nologin\r\n",
+     "kod": 0,
+     "ms": 208
+    },
+    {
+     "cmd": "docker exec quti tail -2 /etc/passwd",
+     "out": "guest:x:405:100:guest:/dev/null:/sbin/nologin\r\nnobody:x:65534:65534:nobody:/:/sbin/nologin\r\n",
+     "kod": 0,
+     "ms": 239
+    },
+    {
+     "cmd": "docker exec quti grep root /etc/passwd",
+     "out": "root:x:0:0:root:/root:/bin/sh\r\n",
+     "kod": 0,
+     "ms": 207
+    },
+    {
+     "cmd": "docker exec quti sh -c 'cd /etc && pwd && ls | head -3'",
+     "out": "/etc\r\nalpine-release\r\napk\r\nbusybox-paths.d\r\n",
+     "kod": 0,
+     "ms": 232
+    },
+    {
+     "cmd": "docker exec quti which sh ls wget",
+     "out": "/bin/sh\r\n/bin/ls\r\n/usr/bin/wget\r\n",
+     "kod": 0,
+     "ms": 206
+    },
+    {
+     "cmd": "docker exec quti yoqbuyruq",
+     "out": "OCI runtime exec failed: exec failed: unable to start container process: exec: \"yoqbuyruq\": executable file not found in $PATH\r\r\n",
+     "kod": 127,
+     "ms": 208
+    },
+    {
+     "cmd": "docker exec quti sh -c yoqbuyruq",
+     "out": "sh: yoqbuyruq: not found\r\n",
+     "kod": 127,
+     "ms": 207
+    },
+    {
+     "cmd": "docker exec quti apk --version",
+     "out": "apk-tools 3.0.9-r0, compiled for x86_64.\r\n",
+     "kod": 0,
+     "ms": 219
+    },
+    {
+     "cmd": "docker exec quti sleep 1",
+     "out": "",
+     "kod": 0,
+     "ms": 1234
+    },
+    {
+     "cmd": "docker exec quti true",
+     "out": "",
+     "kod": 0,
+     "ms": 203
+    },
+    {
+     "cmd": "docker exec quti false",
+     "out": "",
+     "kod": 1,
+     "ms": 207
+    },
+    {
+     "cmd": "docker exec quti sh -c 'exit 7'",
+     "out": "",
+     "kod": 7,
+     "ms": 186
+    },
+    {
+     "cmd": "docker exec quti busybox | head -3",
+     "out": "BusyBox v1.37.0 (2026-01-10 15:38:28 UTC) multi-call binary.\r\nBusyBox is copyrighted by many authors between 1998-2015.\r\nLicensed under GPLv2. See source distribution for detailed\r\n",
+     "kod": 0,
+     "ms": 195
+    },
+    {
+     "cmd": "docker exec quti cat /proc/1/cmdline",
+     "out": "sleep\u00003600\u0000",
+     "kod": 0,
+     "ms": 202
+    },
+    {
+     "cmd": "docker exec quti hostname -i",
+     "out": "172.18.0.2\r\n",
+     "kod": 0,
+     "ms": 201
+    },
+    {
+     "cmd": "docker exec quti wget -qO- http://yoq.example",
+     "out": "wget: bad address 'yoq.example'\r\n",
+     "kod": 1,
+     "ms": 191
+    },
+    {
+     "cmd": "docker exec quti wget -qO- -T 2 http://10.255.255.1",
+     "out": "wget: download timed out\r\n",
+     "kod": 1,
+     "ms": 2196
+    },
+    {
+     "cmd": "docker exec -it quti sh",
+     "out": "/ # \u001b[6necho $PS1\r\n\\w \\$\r\n/ # \u001b[6ncd /tmp\r\n/tmp # \u001b[6npwd\r\n/tmp\r\n/tmp # \u001b[6nexit\r\n",
+     "kod": 0,
+     "ms": 4066,
+     "kirish": [
+      "echo $PS1",
+      "cd /tmp",
+      "pwd",
+      "exit"
+     ],
+     "bolaklar": [
+      [
+       245,
+       "/ # \u001b[6n"
+      ],
+      [
+       1553,
+       "echo $PS1\r\n"
+      ],
+      [
+       1572,
+       "\\w \\$\r\n/ # "
+      ],
+      [
+       1573,
+       "\u001b[6n"
+      ],
+      [
+       2377,
+       "cd /tmp\r\n"
+      ],
+      [
+       2398,
+       "/tmp # \u001b[6n"
+      ],
+      [
+       3202,
+       "pwd\r\n"
+      ],
+      [
+       3223,
+       "/tmp\r\n/tmp # \u001b[6n"
+      ],
+      [
+       4028,
+       "exit\r\n"
+      ]
+     ]
+    },
+    {
+     "cmd": "docker exec -w /etc quti pwd",
+     "out": "/etc\r\n",
+     "kod": 0,
+     "ms": 241
+    },
+    {
+     "cmd": "docker exec -e A=1 quti sh -c 'echo $A'",
+     "out": "1\r\n",
+     "kod": 0,
+     "ms": 221
+    },
+    {
+     "cmd": "docker exec -u nobody quti id",
+     "out": "uid=65534(nobody) gid=65534(nobody) groups=65534(nobody)\r\n",
+     "kod": 0,
+     "ms": 239
+    },
+    {
+     "cmd": "docker top quti",
+     "out": "PID                 USER                TIME                COMMAND\r\n639                 root                0:00                sleep 3600\r\n",
+     "kod": 0,
+     "ms": 164
+    },
+    {
+     "cmd": "docker stats --no-stream quti",
+     "out": "CONTAINER ID   NAME      CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O     PIDS\r\nd0a2a78610d8   quti      0.00%     1.711MiB / 1.752GiB   0.10%     2.14kB / 1.13kB   7.86MB / 0B   1\r\n",
+     "kod": 0,
+     "ms": 1171
+    },
+    {
+     "cmd": "docker stats --no-stream --format \"{{.Name}} {{.MemUsage}}\"",
+     "out": "quti 1.711MiB / 1.752GiB\r\n",
+     "kod": 0,
+     "ms": 2005
+    },
+    {
+     "cmd": "docker rm -f quti",
+     "out": "quti\r\n",
+     "kod": 0,
+     "ms": 308
+    },
+    {
+     "cmd": "docker exec quti ls",
+     "out": "Error response from daemon: No such container: quti\r\n",
+     "kod": 1,
+     "ms": 133
+    },
+    {
+     "cmd": "docker run --rm debian:trixie ls -l /etc/hostname /etc/os-release",
+     "out": "-rw-r--r-- 1 root root 13 Nov 23 05:04 /etc/hostname\r\nlrwxrwxrwx 1 root root 21 Jul 17 17:05 /etc/os-release -> ../usr/lib/os-release\r\n",
+     "kod": 0,
+     "ms": 593
+    },
+    {
+     "cmd": "docker run --rm debian:trixie cat /etc/os-release",
+     "out": "PRETTY_NAME=\"Debian GNU/Linux 13 (trixie)\"\r\nNAME=\"Debian GNU/Linux\"\r\nVERSION_ID=\"13\"\r\nVERSION=\"13 (trixie)\"\r\nVERSION_CODENAME=trixie\r\nDEBIAN_VERSION_FULL=13.7\r\nID=debian\r\nHOME_URL=\"https://www.debian.org/\"\r\nSUPPORT_URL=\"https://www.debian.org/support\"\r\nBUG_REPORT_URL=\"https://bugs.debian.org/\"\r\n",
+     "kod": 0,
+     "ms": 564
+    },
+    {
+     "cmd": "docker run --rm nginx:1.29 ls -l /usr/share/nginx/html",
+     "out": "total 8\r\n-rw-r--r-- 1 root root 497 Apr  7  2026 50x.html\r\n-rw-r--r-- 1 root root 896 Apr  7  2026 index.html\r\n",
+     "kod": 0,
+     "ms": 640
+    },
+    {
+     "cmd": "docker run --rm nginx:1.29 cat /etc/nginx/conf.d/default.conf",
+     "out": "server {\r\n    listen       80;\r\n    server_name  localhost;\r\n\r\n    #access_log  /var/log/nginx/host.access.log  main;\r\n\r\n    location / {\r\n        root   /usr/share/nginx/html;\r\n        index  index.html index.htm;\r\n    }\r\n\r\n    #error_page  404              /404.html;\r\n\r\n    # redirect server error pages to the static page /50x.html\r\n    #\r\n    error_page   500 502 503 504  /50x.html;\r\n    location = /50x.html {\r\n        root   /usr/share/nginx/html;\r\n    }\r\n\r\n    # proxy the PHP scripts to Apache listening on 127.0.0.1:80\r\n    #\r\n    #location ~ \\.php$ {\r\n    #    proxy_pass   http://127.0.0.1;\r\n    #}\r\n\r\n    # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000\r\n    #\r\n    #location ~ \\.php$ {\r\n    #    root           html;\r\n    #    fastcgi_pass   127.0.0.1:9000;\r\n    #    fastcgi_index  index.php;\r\n    #    fastcgi_param  SCRIPT_FILENAME  /scripts$fastcgi_script_name;\r\n    #    include        fastcgi_params;\r\n    #}\r\n\r\n    # deny access to .htaccess files, if Apache's document root\r\n    # concurs with nginx's one\r\n    #\r\n    #location ~ /\\.ht {\r\n    #    deny  all;\r\n    #}\r\n}\r\n\r\n",
+     "kod": 0,
+     "ms": 515
+    },
+    {
+     "cmd": "docker run --rm nginx:1.29 sh -c 'yoqbuyruq; echo $0'",
+     "out": "sh: 1: yoqbuyruq: not foundsh\r\n\r\n",
+     "kod": 0,
+     "ms": 603,
+     "bolaklar": [
+      [
+       454,
+       "sh: 1: "
+      ],
+      [
+       455,
+       "yoqbuyruq: not found"
+      ],
+      [
+       456,
+       "sh\r\n"
+      ],
+      [
+       456,
+       "\r\n"
+      ]
+     ]
+    },
+    {
+     "cmd": "docker run --rm nginx:1.29 bash -c 'yoqbuyruq'",
+     "out": "bash: line 1: yoqbuyruq: command not found\r\n",
+     "kod": 127,
+     "ms": 548
+    },
+    {
+     "cmd": "docker run --rm nginx:1.29 ls /yoq",
+     "out": "ls: cannot access '/yoq': No such file or directory\r\n",
+     "kod": 2,
+     "ms": 626
+    },
+    {
+     "cmd": "docker run --rm busybox:1.37 ls -l /bin/ls",
+     "out": "-rwxr-xr-x  406 root     root       1017416 Sep 26  2024 /bin/ls\r\n",
+     "kod": 0,
+     "ms": 556
+    }
+   ]
+  }
+ ]
+}
