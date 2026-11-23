@@ -1,0 +1,30 @@
+# Ctrl+C va Ctrl+P Ctrl+Q: PID 1 signalni ushlamasa nima bo'ladi
+#! tayyor alpine:latest nginx:1.29
+$ docker run --rm --name s1 alpine sleep 8; echo "kod: $?"
+<! \x03
+<! \x03
+<! \x03
+$ docker ps -a --format "{{.Names}} {{.Status}}"
+#! sukut docker rm -f s1
+$ docker run --rm -it --name s2 alpine sleep 8; echo "kod: $?"
+<! \x03
+<! \x03
+$ docker run --rm --init --name s3 alpine sleep 30; echo "kod: $?"
+<! \x03
+$ docker run --name v1 nginx:1.29; echo "kod: $?"
+<! \x03
+$ docker logs -n 4 v1
+$ docker rm v1
+$ docker run -it --name d1 alpine sh
+< echo ichkarida
+<! \x10\x11
+$ docker ps --format "{{.Names}} {{.Status}}"
+$ docker attach d1
+< echo qaytdim
+< exit
+$ docker ps -a --format "{{.Names}} {{.Status}}"
+$ docker rm d1
+$ docker logs -f yoq
+$ docker run -d --name f1 alpine sh -c 'echo bir; sleep 2; echo ikki; sleep 30' >/dev/null; docker logs -f f1
+<! \x03
+$ docker rm -f f1

@@ -1,0 +1,49 @@
+# 5-bob
+#! tayyor alpine:latest nginx:1.29
+$ docker network ls
+$ docker run -d --name veb nginx:1.29
+$ docker run --rm alpine wget -qO- -T 3 http://veb/ | head -4
+$ docker inspect -f '{{.NetworkSettings.Networks.bridge.IPAddress}}' veb
+$ docker run --rm alpine wget -qO- -T 3 http://172.17.0.2/ | grep -o '<title>.*</title>'
+$ docker run --rm alpine wget -qO- -T 3 http://172.17.0.2/
+$ docker network create ilova-tarmoq
+$ docker network ls
+$ docker network connect ilova-tarmoq veb
+$ docker run --rm --network ilova-tarmoq alpine wget -qO- -T 3 http://veb/ | grep -o '<title>.*</title>'
+$ docker network inspect ilova-tarmoq -f '{{range .Containers}}{{.Name}} {{.IPv4Address}}{{end}}'
+$ docker network inspect ilova-tarmoq
+$ docker run --rm --network ilova-tarmoq alpine ping -c 2 veb
+$ docker run --rm --network ilova-tarmoq alpine nslookup veb
+$ docker run --rm --network ilova-tarmoq alpine cat /etc/resolv.conf
+$ docker network rm ilova-tarmoq
+$ docker rm -f veb
+$ docker network rm ilova-tarmoq
+$ docker run -d --name veb -p 8080:80 nginx:1.29 >/dev/null && echo ishga tushdi
+$ docker port veb
+$ docker ps
+$ curl -s http://localhost:8080/
+$ curl -sS -o /dev/null -w "%{http_code}\n" http://127.0.0.1:8080/
+$ curl -sI http://127.0.0.1:8080/
+$ curl -s http://127.0.0.1:8080/yoq
+$ curl -i http://127.0.0.1:8080/
+$ docker logs veb
+$ docker run -d --name veb2 -p 8080:80 nginx:1.29
+$ docker ps -a
+$ docker rm veb2
+$ docker rm -f veb >/dev/null
+$ docker run -d --name veb -p 127.0.0.1:8080:80 nginx:1.29 >/dev/null && echo ishga tushdi
+$ docker port veb
+$ docker ps
+$ curl -sS -o /dev/null -w "%{http_code}\n" http://127.0.0.1:8080/
+$ docker rm -f veb
+$ docker run -d --name veb -P nginx:1.29
+$ docker port veb
+$ docker rm -f veb
+$ curl -s http://127.0.0.1:8080/
+$ docker run --rm --network host alpine ip -4 -o addr
+$ docker run --rm --network none alpine ip -4 -o addr
+$ docker network create --subnet 10.10.0.0/24 tor2
+$ docker network inspect tor2 -f '{{range .IPAM.Config}}{{.Subnet}} {{.Gateway}}{{end}}'
+$ docker run --rm --network tor2 alpine ip -4 -o addr show eth0
+$ docker network rm tor2
+$ docker network prune -f

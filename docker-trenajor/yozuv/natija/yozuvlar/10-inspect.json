@@ -1,0 +1,172 @@
+{
+ "docker": "29.9.3",
+ "sana": "2026-11-23",
+ "terminal": [
+  100,
+  30
+ ],
+ "ssenariylar": [
+  {
+   "ssenariy": "10-inspect.txt",
+   "buyruqlar": [
+    {
+     "direktiva": "tayyor alpine:latest nginx:1.29"
+    },
+    {
+     "cmd": "docker run -d --name veb -p 127.0.0.1:8080:80 -e REJIM=sinov -v malumot:/data nginx:1.29",
+     "out": "6d50502c19109752b766c7b0d9d91e3f4338c0e67c554d69aa8289abcfc004da\r\n",
+     "kod": 0,
+     "ms": 621
+    },
+    {
+     "cmd": "docker inspect veb",
+     "out": "[\r\n    {\r\n        \"Id\": \"6d50502c19109752b766c7b0d9d91e3f4338c0e67c554d69aa8289abcfc004da\",\r\n        \"Created\": \"2026-11-23T04:57:09.199652068Z\",\r\n        \"Path\": \"/docker-entrypoint.sh\",\r\n        \"Args\": [\r\n            \"nginx\",\r\n            \"-g\",\r\n            \"daemon off;\"\r\n        ],\r\n        \"State\": {\r\n            \"Status\": \"running\",\r\n            \"Running\": true,\r\n            \"Paused\": false,\r\n            \"Restarting\": false,\r\n            \"OOMKilled\": false,\r\n            \"Dead\": false,\r\n            \"Pid\": 550,\r\n            \"ExitCode\": 0,\r\n            \"Error\": \"\",\r\n            \"StartedAt\": \"2026-11-23T04:57:09.377526804Z\",\r\n            \"FinishedAt\": \"0001-01-01T00:00:00Z\"\r\n        },\r\n        \"Image\": \"sha256:1881968aff6f7cdcc4b888c00a11f4ce241ad7ec957e0cb4a9e19e93a3ff87ea\",\r\n        \"ResolvConfPath\": \"/var/lib/docker/containers/6d50502c19109752b766c7b0d9d91e3f4338c0e67c554d69aa8289abcfc004da/resolv.conf\",\r\n        \"HostnamePath\": \"/var/lib/docker/containers/6d50502c19109752b766c7b0d9d91e3f4338c0e67c554d69aa8289abcfc004da/hostname\",\r\n        \"HostsPath\": \"/var/lib/docker/containers/6d50502c19109752b766c7b0d9d91e3f4338c0e67c554d69aa8289abcfc004da/hosts\",\r\n        \"LogPath\": \"/var/lib/docker/containers/6d50502c19109752b766c7b0d9d91e3f4338c0e67c554d69aa8289abcfc004da/6d50502c19109752b766c7b0d9d91e3f4338c0e67c554d69aa8289abcfc004da-json.log\",\r\n        \"Name\": \"/veb\",\r\n        \"RestartCount\": 0,\r\n        \"Driver\": \"overlayfs\",\r\n        \"Platform\": \"linux\",\r\n        \"MountLabel\": \"\",\r\n        \"ProcessLabel\": \"\",\r\n        \"AppArmorProfile\": \"docker-default\",\r\n        \"ExecIDs\": null,\r\n        \"HostConfig\": {\r\n            \"Binds\": [\r\n                \"malumot:/data\"\r\n            ],\r\n            \"ContainerIDFile\": \"\",\r\n            \"LogConfig\": {\r\n                \"Type\": \"json-file\",\r\n                \"Config\": {}\r\n            },\r\n            \"NetworkMode\": \"bridge\",\r\n            \"PortBindings\": {\r\n                \"80/tcp\": [\r\n                    {\r\n                        \"HostIp\": \"127.0.0.1\",\r\n                        \"HostPort\": \"8080\"\r\n                    }\r\n                ]\r\n            },\r\n            \"RestartPolicy\": {\r\n                \"Name\": \"no\",\r\n                \"MaximumRetryCount\": 0\r\n            },\r\n            \"AutoRemove\": false,\r\n            \"VolumeDriver\": \"\",\r\n            \"VolumesFrom\": null,\r\n            \"ConsoleSize\": [\r\n                30,\r\n                100\r\n            ],\r\n            \"CapAdd\": null,\r\n            \"CapDrop\": null,\r\n            \"CgroupnsMode\": \"private\",\r\n            \"Dns\": null,\r\n            \"DnsOptions\": [],\r\n            \"DnsSearch\": [],\r\n            \"ExtraHosts\": null,\r\n            \"GroupAdd\": null,\r\n            \"IpcMode\": \"private\",\r\n            \"Cgroup\": \"\",\r\n            \"Links\": null,\r\n            \"OomScoreAdj\": 0,\r\n            \"PidMode\": \"\",\r\n            \"Privileged\": false,\r\n            \"PublishAllPorts\": false,\r\n            \"ReadonlyRootfs\": false,\r\n            \"SecurityOpt\": null,\r\n            \"UTSMode\": \"\",\r\n            \"UsernsMode\": \"\",\r\n            \"ShmSize\": 67108864,\r\n            \"Runtime\": \"runc\",\r\n            \"Isolation\": \"\",\r\n            \"CpuShares\": 0,\r\n            \"Memory\": 0,\r\n            \"NanoCpus\": 0,\r\n            \"CgroupParent\": \"\",\r\n            \"BlkioWeight\": 0,\r\n            \"BlkioWeightDevice\": [],\r\n            \"BlkioDeviceReadBps\": [],\r\n            \"BlkioDeviceWriteBps\": [],\r\n            \"BlkioDeviceReadIOps\": [],\r\n            \"BlkioDeviceWriteIOps\": [],\r\n            \"CpuPeriod\": 0,\r\n            \"CpuQuota\": 0,\r\n            \"CpuRealtimePeriod\": 0,\r\n            \"CpuRealtimeRuntime\": 0,\r\n            \"CpusetCpus\": \"\",\r\n            \"CpusetMems\": \"\",\r\n            \"Devices\": [],\r\n            \"DeviceCgroupRules\": null,\r\n            \"DeviceRequests\": null,\r\n            \"MemoryReservation\": 0,\r\n            \"MemorySwap\": 0,\r\n            \"MemorySwappiness\": null,\r\n            \"OomKillDisable\": null,\r\n            \"PidsLimit\": null,\r\n            \"Ulimits\": null,\r\n            \"CpuCount\": 0,\r\n            \"CpuPercent\": 0,\r\n            \"IOMaximumIOps\": 0,\r\n            \"IOMaximumBandwidth\": 0,\r\n            \"MaskedPaths\": [\r\n                \"/proc/acpi\",\r\n                \"/proc/asound\",\r\n                \"/proc/interrupts\",\r\n                \"/proc/kcore\",\r\n                \"/proc/keys\",\r\n                \"/proc/latency_stats\",\r\n                \"/proc/sched_debug\",\r\n                \"/proc/scsi\",\r\n                \"/proc/timer_list\",\r\n                \"/proc/timer_stats\",\r\n                \"/sys/devices/virtual/powercap\",\r\n                \"/sys/firmware\"\r\n            ],\r\n            \"ReadonlyPaths\": [\r\n                \"/proc/bus\",\r\n                \"/proc/fs\",\r\n                \"/proc/irq\",\r\n                \"/proc/sys\",\r\n                \"/proc/sysrq-trigger\"\r\n            ]\r\n        },\r\n        \"Storage\": {\r\n            \"RootFS\": {\r\n                \"Snapshot\": {\r\n                    \"Name\": \"overlayfs\"\r\n                }\r\n            }\r\n        },\r\n        \"Mounts\": [\r\n            {\r\n                \"Type\": \"volume\",\r\n                \"Name\": \"malumot\",\r\n                \"Source\": \"/var/lib/docker/volumes/malumot/_data\",\r\n                \"Destination\": \"/data\",\r\n                \"Driver\": \"local\",\r\n                \"Mode\": \"z\",\r\n                \"RW\": true,\r\n                \"Propagation\": \"\"\r\n            }\r\n        ],\r\n        \"Config\": {\r\n            \"Hostname\": \"6d50502c1910\",\r\n            \"Domainname\": \"\",\r\n            \"User\": \"\",\r\n            \"AttachStdin\": false,\r\n            \"AttachStdout\": false,\r\n            \"AttachStderr\": false,\r\n            \"ExposedPorts\": {\r\n                \"80/tcp\": {}\r\n            },\r\n            \"Tty\": false,\r\n            \"OpenStdin\": false,\r\n            \"StdinOnce\": false,\r\n            \"Env\": [\r\n                \"REJIM=sinov\",\r\n                \"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\r\n                \"NGINX_VERSION=1.29.8\",\r\n                \"NJS_VERSION=0.9.6\",\r\n                \"NJS_RELEASE=1~trixie\",\r\n                \"ACME_VERSION=0.3.1\",\r\n                \"PKG_RELEASE=1~trixie\",\r\n                \"DYNPKG_RELEASE=1~trixie\"\r\n            ],\r\n            \"Cmd\": [\r\n                \"nginx\",\r\n                \"-g\",\r\n                \"daemon off;\"\r\n            ],\r\n            \"Image\": \"nginx:1.29\",\r\n            \"Volumes\": null,\r\n            \"WorkingDir\": \"\",\r\n            \"Entrypoint\": [\r\n                \"/docker-entrypoint.sh\"\r\n            ],\r\n            \"Labels\": {\r\n                \"maintainer\": \"NGINX Docker Maintainers <docker-maint@nginx.com>\"\r\n            },\r\n            \"StopSignal\": \"SIGQUIT\"\r\n        },\r\n        \"NetworkSettings\": {\r\n            \"SandboxID\": \"d838366f9d5f9c4091b2f2c1ae31628a1bb2ddb72eccae0bed06b43f824352fd\",\r\n            \"SandboxKey\": \"/var/run/docker/netns/d838366f9d5f\",\r\n            \"Ports\": {\r\n                \"80/tcp\": [\r\n                    {\r\n                        \"HostIp\": \"127.0.0.1\",\r\n                        \"HostPort\": \"8080\"\r\n                    }\r\n                ]\r\n            },\r\n            \"Networks\": {\r\n                \"bridge\": {\r\n                    \"IPAMConfig\": null,\r\n                    \"Links\": null,\r\n                    \"Aliases\": null,\r\n                    \"DriverOpts\": null,\r\n                    \"GwPriority\": 0,\r\n                    \"NetworkID\": \"82b44e82db136cb3708a49750b0194f22a77e572cb6543ca2ef3061d63a1c834\",\r\n                    \"EndpointID\": \"e4d8031d21f19d6e83c07267d197c2a5ac8319f4ba39046f1a69869b18a156bb\",\r\n                    \"Gateway\": \"172.18.0.1\",\r\n                    \"IPAddress\": \"172.18.0.2\",\r\n                    \"MacAddress\": \"5e:31:92:a7:b3:42\",\r\n                    \"IPPrefixLen\": 16,\r\n                    \"IPv6Gateway\": \"\",\r\n                    \"GlobalIPv6Address\": \"\",\r\n                    \"GlobalIPv6PrefixLen\": 0,\r\n                    \"DNSNames\": null\r\n                }\r\n            }\r\n        },\r\n        \"ImageManifestDescriptor\": {\r\n            \"mediaType\": \"application/vnd.oci.image.manifest.v1+json\",\r\n            \"digest\": \"sha256:ab15d428b6a7121511a38221591a41f835933ac16f996fafd102d128a0fa20f7\",\r\n            \"size\": 2290,\r\n            \"annotations\": {\r\n                \"com.docker.official-images.bashbrew.arch\": \"amd64\",\r\n                \"org.opencontainers.image.base.digest\": \"sha256:486b1c3d3a6a836d2518d5ac1a7b522050a034ae83b47c063fd45d550b2b9dbf\",\r\n                \"org.opencontainers.image.base.name\": \"debian:trixie-slim\",\r\n                \"org.opencontainers.image.created\": \"2026-05-08T19:22:14Z\",\r\n                \"org.opencontainers.image.revision\": \"71081b25390771f6b1275ddf7c73c965f304493f\",\r\n                \"org.opencontainers.image.source\": \"https://github.com/nginx/docker-nginx.git#71081b25390771f6b1275ddf7c73c965f304493f:mainline/debian\",\r\n                \"org.opencontainers.image.url\": \"https://hub.docker.com/_/nginx\",\r\n                \"org.opencontainers.image.version\": \"1.29.8\"\r\n            },\r\n            \"platform\": {\r\n                \"architecture\": \"amd64\",\r\n                \"os\": \"linux\"\r\n            }\r\n        }\r\n    }\r\n]\r\n",
+     "kod": 0,
+     "ms": 158
+    },
+    {
+     "cmd": "docker container inspect -f '{{.State.Status}} {{.State.Pid}} {{.RestartCount}}' veb",
+     "out": "running 550 0\r\n",
+     "kod": 0,
+     "ms": 133
+    },
+    {
+     "cmd": "docker inspect -f '{{.Config.Image}} {{.Image}}' veb",
+     "out": "nginx:1.29 sha256:1881968aff6f7cdcc4b888c00a11f4ce241ad7ec957e0cb4a9e19e93a3ff87ea\r\n",
+     "kod": 0,
+     "ms": 133
+    },
+    {
+     "cmd": "docker inspect -f '{{json .Config.Env}}' veb",
+     "out": "[\"REJIM=sinov\",\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"NGINX_VERSION=1.29.8\",\"NJS_VERSION=0.9.6\",\"NJS_RELEASE=1~trixie\",\"ACME_VERSION=0.3.1\",\"PKG_RELEASE=1~trixie\",\"DYNPKG_RELEASE=1~trixie\"]\r\n",
+     "kod": 0,
+     "ms": 137
+    },
+    {
+     "cmd": "docker inspect -f '{{.HostConfig.PortBindings}}' veb",
+     "out": "map[80/tcp:[{127.0.0.1 8080}]]\r\n",
+     "kod": 0,
+     "ms": 121
+    },
+    {
+     "cmd": "docker inspect --format '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' veb",
+     "out": "172.18.0.2\r\n",
+     "kod": 0,
+     "ms": 123
+    },
+    {
+     "cmd": "docker network inspect bridge",
+     "out": "[\r\n    {\r\n        \"Name\": \"bridge\",\r\n        \"Id\": \"82b44e82db136cb3708a49750b0194f22a77e572cb6543ca2ef3061d63a1c834\",\r\n        \"Created\": \"2026-11-23T04:56:52.752129899Z\",\r\n        \"Scope\": \"local\",\r\n        \"Driver\": \"bridge\",\r\n        \"EnableIPv4\": true,\r\n        \"EnableIPv6\": false,\r\n        \"IPAM\": {\r\n            \"Driver\": \"default\",\r\n            \"Options\": null,\r\n            \"Config\": [\r\n                {\r\n                    \"Subnet\": \"172.18.0.0/16\",\r\n                    \"Gateway\": \"172.18.0.1\"\r\n                }\r\n            ]\r\n        },\r\n        \"Internal\": false,\r\n        \"Attachable\": false,\r\n        \"Ingress\": false,\r\n        \"ConfigFrom\": {\r\n            \"Network\": \"\"\r\n        },\r\n        \"ConfigOnly\": false,\r\n        \"Options\": {\r\n            \"com.docker.network.bridge.default_bridge\": \"true\",\r\n            \"com.docker.network.bridge.enable_icc\": \"true\",\r\n            \"com.docker.network.bridge.enable_ip_masquerade\": \"true\",\r\n            \"com.docker.network.bridge.host_binding_ipv4\": \"0.0.0.0\",\r\n            \"com.docker.network.bridge.name\": \"docker0\",\r\n            \"com.docker.network.driver.mtu\": \"1500\"\r\n        },\r\n        \"Labels\": {},\r\n        \"Containers\": {\r\n            \"6d50502c19109752b766c7b0d9d91e3f4338c0e67c554d69aa8289abcfc004da\": {\r\n                \"Name\": \"veb\",\r\n                \"EndpointID\": \"e4d8031d21f19d6e83c07267d197c2a5ac8319f4ba39046f1a69869b18a156bb\",\r\n                \"MacAddress\": \"5e:31:92:a7:b3:42\",\r\n                \"IPv4Address\": \"172.18.0.2/16\",\r\n                \"IPv6Address\": \"\"\r\n            }\r\n        },\r\n        \"Status\": {\r\n            \"IPAM\": {\r\n                \"Subnets\": {\r\n                    \"172.18.0.0/16\": {\r\n                        \"IPsInUse\": 4,\r\n                        \"DynamicIPsAvailable\": 65532\r\n                    }\r\n                }\r\n            }\r\n        }\r\n    }\r\n]\r\n",
+     "kod": 0,
+     "ms": 119
+    },
+    {
+     "cmd": "docker volume inspect malumot",
+     "out": "[\r\n    {\r\n        \"CreatedAt\": \"2026-11-23T04:57:09Z\",\r\n        \"Driver\": \"local\",\r\n        \"Labels\": null,\r\n        \"Mountpoint\": \"/var/lib/docker/volumes/malumot/_data\",\r\n        \"Name\": \"malumot\",\r\n        \"Options\": null,\r\n        \"Scope\": \"local\"\r\n    }\r\n]\r\n",
+     "kod": 0,
+     "ms": 133
+    },
+    {
+     "cmd": "docker run --name t alpine true",
+     "out": "docker: Error response from daemon: invalid container name (t): name must be at least 2 characters\r\n\r\nRun 'docker run --help' for more information\r\n",
+     "kod": 125,
+     "ms": 157
+    },
+    {
+     "cmd": "docker inspect t",
+     "out": "[]\r\nerror: no such object: t\r\n",
+     "kod": 1,
+     "ms": 153
+    },
+    {
+     "cmd": "docker system df",
+     "out": "TYPE            TOTAL     ACTIVE    SIZE      RECLAIMABLE\r\nImages          2         1         253.1MB   13.03MB (5%)\r\nContainers      1         1         86.02kB   0B (0%)\r\nLocal Volumes   1         1         0B        0B\r\nBuild Cache     0         0         0B        0B\r\n",
+     "kod": 0,
+     "ms": 231
+    },
+    {
+     "cmd": "docker system df -v",
+     "out": "Images space usage:\r\n\r\nREPOSITORY   TAG       IMAGE ID       CREATED        SIZE      SHARED SIZE   UNIQUE SIZE   CONTAINERS\r\nalpine       latest    3f4d6b32e267   2 weeks ago    13MB      0B            13.03MB       0\r\nnginx        1.29      1881968aff6f   6 months ago   240MB     0B            240MB         1\r\n\r\nContainers space usage:\r\n\r\nCONTAINER ID   IMAGE        COMMAND                  LOCAL VOLUMES   SIZE      CREATED         STATUS         NAMES\r\n6d50502c1910   nginx:1.29   \"/docker-entrypoint.…\"   1               86kB      2 seconds ago   Up 2 seconds   veb\r\n\r\nLocal Volumes space usage:\r\n\r\nVOLUME NAME   LINKS     SIZE\r\nmalumot       1         0B\r\n\r\nBuild cache usage: 0B\r\n\r\nCACHE ID   CACHE TYPE   SIZE      CREATED   LAST USED   USAGE     SHARED\r\n",
+     "kod": 0,
+     "ms": 242
+    },
+    {
+     "cmd": "docker ps -a --format json",
+     "out": "{\"Command\":\"\\\"/docker-entrypoint.…\\\"\",\"CreatedAt\":\"2026-11-23 04:57:09 +0000 UTC\",\"HealthStatus\":\"none\",\"ID\":\"6d50502c1910\",\"Image\":\"nginx:1.29\",\"Labels\":\"maintainer=NGINX Docker Maintainers \\u003cdocker-maint@nginx.com\\u003e\",\"LocalVolumes\":\"1\",\"Mounts\":\"malumot\",\"Names\":\"veb\",\"Networks\":\"bridge\",\"Platform\":{\"architecture\":\"amd64\",\"os\":\"linux\"},\"Ports\":\"127.0.0.1:8080-\\u003e80/tcp\",\"RunningFor\":\"2 seconds ago\",\"Size\":\"0B\",\"State\":\"running\",\"Status\":\"Up 2 seconds\"}\r\n",
+     "kod": 0,
+     "ms": 127
+    },
+    {
+     "cmd": "docker ps -a --no-trunc",
+     "out": "CONTAINER ID                                                       IMAGE        COMMAND                                          CREATED         STATUS         PORTS                    NAMES\r\n6d50502c19109752b766c7b0d9d91e3f4338c0e67c554d69aa8289abcfc004da   nginx:1.29   \"/docker-entrypoint.sh nginx -g 'daemon off;'\"   2 seconds ago   Up 2 seconds   127.0.0.1:8080->80/tcp   veb\r\n",
+     "kod": 0,
+     "ms": 149
+    },
+    {
+     "cmd": "docker ps -s",
+     "out": "CONTAINER ID   IMAGE        COMMAND                  CREATED         STATUS         PORTS                    NAMES     SIZE\r\n6d50502c1910   nginx:1.29   \"/docker-entrypoint.…\"   2 seconds ago   Up 2 seconds   127.0.0.1:8080->80/tcp   veb       86kB (virtual 174MB)\r\n",
+     "kod": 0,
+     "ms": 151
+    },
+    {
+     "cmd": "docker ps -a --filter status=exited",
+     "out": "CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES\r\n",
+     "kod": 0,
+     "ms": 142
+    },
+    {
+     "cmd": "docker ps -a --filter ancestor=alpine",
+     "out": "CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES\r\n",
+     "kod": 0,
+     "ms": 187
+    },
+    {
+     "cmd": "docker ps -n 1",
+     "out": "CONTAINER ID   IMAGE        COMMAND                  CREATED         STATUS         PORTS                    NAMES\r\n6d50502c1910   nginx:1.29   \"/docker-entrypoint.…\"   3 seconds ago   Up 3 seconds   127.0.0.1:8080->80/tcp   veb\r\n",
+     "kod": 0,
+     "ms": 156
+    },
+    {
+     "cmd": "docker ps -l",
+     "out": "CONTAINER ID   IMAGE        COMMAND                  CREATED         STATUS         PORTS                    NAMES\r\n6d50502c1910   nginx:1.29   \"/docker-entrypoint.…\"   3 seconds ago   Up 3 seconds   127.0.0.1:8080->80/tcp   veb\r\n",
+     "kod": 0,
+     "ms": 145
+    },
+    {
+     "cmd": "docker system prune -f",
+     "out": "Total reclaimed space: 0B\r\n",
+     "kod": 0,
+     "ms": 171
+    },
+    {
+     "cmd": "docker rm -f veb",
+     "out": "veb\r\n",
+     "kod": 0,
+     "ms": 386
+    },
+    {
+     "cmd": "docker system prune -a -f --volumes",
+     "out": "Deleted Images:\r\nuntagged: alpine:latest\r\ndeleted: sha256:3f4d6b32e26703c6082839234f43769d5046b3ac7c910033911d1e71d8cd630a\r\ndeleted: sha256:0f49f331d9212aff11b932863be4eb01cdf962969aa86dab7d1ee21ac6f5f52b\r\ndeleted: sha256:7d08e6cd44b4e0c144e32a527544890794b73795ad1e8d60bfd8578e3eccf79d\r\nuntagged: nginx:1.29\r\ndeleted: sha256:1881968aff6f7cdcc4b888c00a11f4ce241ad7ec957e0cb4a9e19e93a3ff87ea\r\ndeleted: sha256:ab15d428b6a7121511a38221591a41f835933ac16f996fafd102d128a0fa20f7\r\ndeleted: sha256:bf34a2efe16261f3df780ef1aaa3d34d2e2f85d7257b3ffc1b20f78de52a41f6\r\n\r\nTotal reclaimed space: 253.1MB\r\n",
+     "kod": 0,
+     "ms": 466,
+     "bolaklar": [
+      [
+       442,
+       "Deleted Images:\r\nuntagged: alpine:latest\r\ndeleted: sha256:3f4d6b32e26703c6082839234f43769d5046b3ac7c910033911d1e71d8cd630a\r\ndeleted: sha256:0f49f331d9212aff11b932863be4eb01cdf962969aa86dab7d1ee21ac6f5f52b\r\ndeleted: sha256:7d08e6cd44b4e0c144e32a527544890794b73795ad1e8d60bfd8578e3eccf79d\r\nuntagged: nginx:1.29\r\ndeleted: sha256:1881968aff6f7cdcc4b888c00a11f4ce241ad7ec957e0cb4a9e19e93a3ff87ea\r\ndeleted: sha256:ab15d428b6a7121511a38221591a41f835933ac16f996fafd102d128a0fa20f7\r\ndeleted: sha256:bf34a2efe16261f3df780ef1aaa3d34d2e2f85d7257b3ffc1b20f78de52a41f6\r\n\r\n"
+      ],
+      [
+       450,
+       "Total reclaimed space: 253.1MB\r\n"
+      ]
+     ]
+    },
+    {
+     "cmd": "docker system df",
+     "out": "TYPE            TOTAL     ACTIVE    SIZE      RECLAIMABLE\r\nImages          0         0         0B        0B\r\nContainers      0         0         0B        0B\r\nLocal Volumes   1         0         0B        0B\r\nBuild Cache     0         0         0B        0B\r\n",
+     "kod": 0,
+     "ms": 142
+    }
+   ]
+  }
+ ]
+}

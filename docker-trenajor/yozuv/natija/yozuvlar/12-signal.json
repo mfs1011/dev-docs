@@ -1,0 +1,311 @@
+{
+ "docker": "29.9.3",
+ "sana": "2026-11-23",
+ "terminal": [
+  100,
+  30
+ ],
+ "ssenariylar": [
+  {
+   "ssenariy": "12-signal.txt",
+   "buyruqlar": [
+    {
+     "direktiva": "tayyor alpine:latest nginx:1.29"
+    },
+    {
+     "cmd": "docker run --rm --name s1 alpine sleep 8; echo \"kod: $?\"",
+     "out": "^C^C^C\r\ngot 3 SIGTERM/SIGINTs, forcefully exiting\r\nkod: 1\r\n",
+     "kod": 0,
+     "ms": 4551,
+     "kirish": [
+      "!! \\x03",
+      "!! \\x03",
+      "!! \\x03"
+     ],
+     "bolaklar": [
+      [
+       1515,
+       "^C"
+      ],
+      [
+       3021,
+       "^C"
+      ],
+      [
+       4527,
+       "^C"
+      ],
+      [
+       4527,
+       "\r\ngot 3 SIGTERM/SIGINTs, forcefully exiting\r\n"
+      ],
+      [
+       4536,
+       "kod: 1\r\n"
+      ]
+     ]
+    },
+    {
+     "cmd": "docker ps -a --format \"{{.Names}} {{.Status}}\"",
+     "out": "s1 Up 4 seconds\r\n",
+     "kod": 0,
+     "ms": 222
+    },
+    {
+     "direktiva": "sukut docker rm -f s1"
+    },
+    {
+     "cmd": "docker run --rm -it --name s2 alpine sleep 8; echo \"kod: $?\"",
+     "out": "^C^Ckod: 0\r\n",
+     "kod": 0,
+     "ms": 8618,
+     "kirish": [
+      "!! \\x03",
+      "!! \\x03"
+     ],
+     "bolaklar": [
+      [
+       1508,
+       "^C"
+      ],
+      [
+       3015,
+       "^C"
+      ],
+      [
+       8606,
+       "kod: 0\r\n"
+      ]
+     ]
+    },
+    {
+     "cmd": "docker run --rm --init --name s3 alpine sleep 30; echo \"kod: $?\"",
+     "out": "^Ckod: 130\r\n",
+     "kod": 0,
+     "ms": 1681,
+     "kirish": [
+      "!! \\x03"
+     ],
+     "bolaklar": [
+      [
+       1508,
+       "^C"
+      ],
+      [
+       1671,
+       "kod: 130\r\n"
+      ]
+     ]
+    },
+    {
+     "cmd": "docker run --name v1 nginx:1.29; echo \"kod: $?\"",
+     "out": "/docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration\r\n/docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/\r\n/docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh\r\n10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf\r\n10-listen-on-ipv6-by-default.sh: info: Enabled listen on IPv6 in /etc/nginx/conf.d/default.conf\r\n/docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh\r\n/docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh\r\n/docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh\r\n/docker-entrypoint.sh: Configuration complete; ready for start up\r\n2026/11/23 05:10:51 [notice] 1#1: using the \"epoll\" event method\r\n2026/11/23 05:10:51 [notice] 1#1: nginx/1.29.8\r\n2026/11/23 05:10:51 [notice] 1#1: built by gcc 14.2.0 (Debian 14.2.0-19) \r\n2026/11/23 05:10:51 [notice] 1#1: OS: Linux 7.0.0-43-generic\r\n2026/11/23 05:10:51 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288\r\n2026/11/23 05:10:51 [notice] 1#1: start worker processes\r\n2026/11/23 05:10:51 [notice] 1#1: start worker process 29\r\n^C2026/11/23 05:10:52 [notice] 1#1: signal 2 (SIGINT) received, exiting\r\n2026/11/23 05:10:52 [notice] 29#29: exiting\r\n2026/11/23 05:10:52 [notice] 29#29: exit\r\n2026/11/23 05:10:52 [notice] 1#1: signal 17 (SIGCHLD) received from 29\r\n2026/11/23 05:10:52 [notice] 1#1: worker process 29 exited with code 0\r\n2026/11/23 05:10:52 [notice] 1#1: exit\r\nkod: 0\r\n",
+     "kod": 0,
+     "ms": 1681,
+     "kirish": [
+      "!! \\x03"
+     ],
+     "bolaklar": [
+      [
+       457,
+       "/docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration\r\n"
+      ],
+      [
+       458,
+       "/docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/\r\n"
+      ],
+      [
+       463,
+       "/docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh\r\n"
+      ],
+      [
+       476,
+       "10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf\r\n"
+      ],
+      [
+       508,
+       "10-listen-on-ipv6-by-default.sh: info: Enabled listen on IPv6 in /etc/nginx/conf.d/default.conf\r\n"
+      ],
+      [
+       510,
+       "/docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh\r\n"
+      ],
+      [
+       512,
+       "/docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh\r\n"
+      ],
+      [
+       526,
+       "/docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh\r\n"
+      ],
+      [
+       533,
+       "/docker-entrypoint.sh: Configuration complete; ready for start up\r\n"
+      ],
+      [
+       566,
+       "2026/11/23 05:10:51 [notice] 1#1: using the \"epoll\" event method\r\n"
+      ],
+      [
+       567,
+       "2026/11/23 05:10:51 [notice] 1#1: nginx/1.29.8\r\n"
+      ],
+      [
+       568,
+       "2026/11/23 05:10:51 [notice] 1#1: built by gcc 14.2.0 (Debian 14.2.0-19) \r\n"
+      ],
+      [
+       569,
+       "2026/11/23 05:10:51 [notice] 1#1: OS: Linux 7.0.0-43-generic\r\n"
+      ],
+      [
+       570,
+       "2026/11/23 05:10:51 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288\r\n"
+      ],
+      [
+       572,
+       "2026/11/23 05:10:51 [notice] 1#1: start worker processes\r\n"
+      ],
+      [
+       572,
+       "2026/11/23 05:10:51 [notice] 1#1: start worker process 29\r\n"
+      ],
+      [
+       1527,
+       "^C"
+      ],
+      [
+       1549,
+       "2026/11/23 05:10:52 [notice] 1#1: signal 2 (SIGINT) received, exiting\r\n2026/11/23 05:10:52 [notice] 29#29: exiting\r\n2026/11/23 05:10:52 [notice] 29#29: exit\r\n"
+      ],
+      [
+       1555,
+       "2026/11/23 05:10:52 [notice] 1#1: signal 17 (SIGCHLD) received from 29\r\n2026/11/23 05:10:52 [notice] 1#1: worker process 29 exited with code 0\r\n2026/11/23 05:10:52 [notice] 1#1: exit\r\n"
+      ],
+      [
+       1670,
+       "kod: 0\r\n"
+      ]
+     ]
+    },
+    {
+     "cmd": "docker logs -n 4 v1",
+     "out": "2026/11/23 05:10:52 [notice] 29#29: exit\r\n2026/11/23 05:10:52 [notice] 1#1: signal 17 (SIGCHLD) received from 29\r\n2026/11/23 05:10:52 [notice] 1#1: worker process 29 exited with code 0\r\n2026/11/23 05:10:52 [notice] 1#1: exit\r\n",
+     "kod": 0,
+     "ms": 172
+    },
+    {
+     "cmd": "docker rm v1",
+     "out": "v1\r\n",
+     "kod": 0,
+     "ms": 186
+    },
+    {
+     "cmd": "docker run -it --name d1 alpine sh",
+     "out": "/ # \u001b[6necho ichkarida\r\nichkarida\r\n/ # \u001b[6nread escape sequence\r\n",
+     "kod": 1,
+     "ms": 3044,
+     "kirish": [
+      "echo ichkarida",
+      "!! \\x10\\x11"
+     ],
+     "bolaklar": [
+      [
+       457,
+       "/ # \u001b[6n"
+      ],
+      [
+       1512,
+       "echo ichkarida\r\n"
+      ],
+      [
+       1534,
+       "ichkarida\r\n/ # \u001b[6n"
+      ],
+      [
+       3041,
+       "read escape sequence\r\n"
+      ]
+     ]
+    },
+    {
+     "cmd": "docker ps --format \"{{.Names}} {{.Status}}\"",
+     "out": "d1 Up 2 seconds\r\n",
+     "kod": 0,
+     "ms": 140
+    },
+    {
+     "cmd": "docker attach d1",
+     "out": "\r/ # \u001b[J\r/ # \u001b[Jecho qaytdim\r\nqaytdim\r\n/ # \u001b[6nexit\r\n",
+     "kod": 0,
+     "ms": 3208,
+     "kirish": [
+      "echo qaytdim",
+      "exit"
+     ],
+     "bolaklar": [
+      [
+       144,
+       "\r/ # \u001b[J\r/ # \u001b[J"
+      ],
+      [
+       1551,
+       "echo qaytdim\r\n"
+      ],
+      [
+       1572,
+       "qaytdim\r\n/ # \u001b[6n"
+      ],
+      [
+       3079,
+       "exit\r\n"
+      ]
+     ]
+    },
+    {
+     "cmd": "docker ps -a --format \"{{.Names}} {{.Status}}\"",
+     "out": "d1 Exited (0) Less than a second ago\r\n",
+     "kod": 0,
+     "ms": 197
+    },
+    {
+     "cmd": "docker rm d1",
+     "out": "d1\r\n",
+     "kod": 0,
+     "ms": 151
+    },
+    {
+     "cmd": "docker logs -f yoq",
+     "out": "Error response from daemon: No such container: yoq\r\n",
+     "kod": 1,
+     "ms": 125
+    },
+    {
+     "cmd": "docker run -d --name f1 alpine sh -c 'echo bir; sleep 2; echo ikki; sleep 30' >/dev/null; docker logs -f f1",
+     "out": "bir\r\n^C",
+     "kod": 130,
+     "ms": 1532,
+     "kirish": [
+      "!! \\x03"
+     ],
+     "bolaklar": [
+      [
+       456,
+       "bir\r\n"
+      ],
+      [
+       1511,
+       "^C"
+      ]
+     ]
+    },
+    {
+     "cmd": "docker rm -f f1",
+     "out": "f1\r\n",
+     "kod": 0,
+     "ms": 333
+    }
+   ]
+  }
+ ]
+}

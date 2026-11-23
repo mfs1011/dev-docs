@@ -195,6 +195,8 @@ To'g'risi: `--rm`, `docker rm -v`, nomli volume'lar.
 
 ## Amaliyot
 
+> **Trenajorda sinab ko'ring:** [Volume: ma'lumot konteynerdan uzoq yashaydi](/docker/trenajor?mashq=volume) va [Bind mount: host papkasi konteynerda](/docker/trenajor?mashq=bind-mount). Trenajor — simulyator: chiqishlar sinov VPS'idagi Docker Engine 29.9.3 da yozib olingan; yonida konteynerlar, tarmoqlar va volume'lar xaritasi o'zgarib boradi.
+
 Savollar:
 
 1. Konteyner ichida yaratilgan fayl `docker rm` dan keyin qayerda qoladi?

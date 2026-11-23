@@ -1,0 +1,43 @@
+# 6-bob
+#! tayyor alpine:latest nginx:1.29
+$ docker run --name v1 alpine sh -c 'echo salom > /fayl.txt; cat /fayl.txt'
+$ docker diff v1
+$ docker rm v1
+$ docker run --rm alpine cat /fayl.txt
+$ docker volume create malumot
+$ docker run --rm -v malumot:/data alpine sh -c 'echo "1-konteyner yozdi" > /data/eslatma.txt'
+$ docker run --rm -v malumot:/data alpine cat /data/eslatma.txt
+$ docker volume ls
+$ docker volume inspect malumot -f '{{.Mountpoint}}'
+$ docker volume inspect malumot
+$ docker run --rm -v html:/usr/share/nginx/html nginx:1.29 ls /usr/share/nginx/html
+$ docker volume ls -q | wc -l
+$ docker run --rm -v /data alpine true
+$ docker volume ls -q | wc -l
+$ docker run -v /data --name v2 alpine true
+$ docker volume ls -q | wc -l
+$ docker volume ls
+$ docker rm -v v2
+$ mkdir -p sayt && echo '<h1>Salom</h1>' > sayt/index.html
+$ docker run -d --name veb -p 127.0.0.1:8080:80 --mount type=bind,src=/root/sayt,dst=/usr/share/nginx/html,ro nginx:1.29
+$ sleep 1; curl -s http://127.0.0.1:8080/
+$ echo '<h1>Yangilandi</h1>' > sayt/index.html
+$ curl -s http://127.0.0.1:8080/
+$ docker exec veb sh -c 'echo x > /usr/share/nginx/html/a.txt'
+$ docker inspect -f '{{json .Mounts}}' veb
+$ docker rm -f veb
+$ docker run --rm --mount type=bind,src=/root/yoq-papka,dst=/x alpine true
+$ docker run --rm -v /root/yoq-papka:/x alpine true
+$ ls -ld /root/yoq-papka
+$ docker run --rm --tmpfs /kesh alpine sh -c 'df -h /kesh; echo x > /kesh/a; ls /kesh'
+$ rm -r sayt yoq-papka
+$ docker volume rm malumot html
+$ docker volume rm malumot
+$ docker volume create v3
+$ docker run -d --name tut -v v3:/d alpine sleep 100
+$ docker volume rm v3
+$ docker volume prune -f
+$ docker volume prune -a -f
+$ docker rm -f tut
+$ docker volume prune -a -f
+$ docker volume ls

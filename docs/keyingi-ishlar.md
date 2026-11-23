@@ -33,6 +33,7 @@ uchun. Avval shu faylni, keyin `CLAUDE.md` va `docs/ish-holati.md` ni o'qing. Ki
 | Vue, React | `/vue/trenajor`, `/react/trenajor` | iframe'da haqiqiy framework | `src/views/KomponentTrenajorPage.vue` | — |
 | FSD | `/fsd/trenajor` | haqiqiy Steiger | `src/views/FsdTrenajorPage.vue` | — |
 | Tizim dizayni | `/arxitektura/trenajor` | simulyator (bu yerda haqiqiy tizim emas) | `src/views/ArxitekturaTrenajorPage.vue` | — |
+| **Docker** | `/docker/trenajor` | simulyator: VPS'dagi Docker 29.9.3 yozuvlari asosida, moslik testi 469/469 | `src/views/DockerTrenajorPage.vue`, `src/docker/` | — (`docker-trenajor/README.md`) |
 
 > SPA sahifalari to'g'ridan-to'g'ri ochilganda GitHub Pages HTTP **404** kodini qaytaradi va `404.html` orqali sahifani
 > baribir ochadi — bu normal (eski Linux trenajori ham shunday). Trenajor fayllari (`*/holat.zst`) **200** qaytarishi kerak.
@@ -86,6 +87,11 @@ uchun. Avval shu faylni, keyin `CLAUDE.md` va `docs/ish-holati.md` ni o'qing. Ki
 6. Ishdan keyin noutbukda: `sudo pmset -a disablesleep 0` (uyquni qayta yoqish).
 
 ### 3.2. Trenajorlar navbati
+
+**Docker trenajori (2026-11-23):** egasi simulyatorga rozi bo'ldi — "VPS'da hamma narsasini tekshirib, loyihada
+simulyatsiya qilib ko'rsatish, haqiqiydek ko'rinishda". 1-bosqich (kitobning 2–6-boblari: image, konteyner, tarmoq,
+port, volume) tayyor: `docker-trenajor/README.md`. Keyingi bosqichlar: `docker build` (II qism), `docker compose`
+(III qism) — xuddi shu usulda avval VPS'da yozib olinadi.
 
 Egasining tartibi: Web asoslari ✓ → Redis ✓ → **Server xavfsizligi** → RabbitMQ ✓ (navbatdan oldin qilindi). Docker —
 keyinga qoldirilgan (simulyator emas, real sinab ko'rish yo'li izlanadi).

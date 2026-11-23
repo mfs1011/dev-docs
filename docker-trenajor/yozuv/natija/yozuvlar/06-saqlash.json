@@ -1,0 +1,274 @@
+{
+ "docker": "29.9.3",
+ "sana": "2026-11-23",
+ "terminal": [
+  100,
+  30
+ ],
+ "ssenariylar": [
+  {
+   "ssenariy": "06-saqlash.txt",
+   "buyruqlar": [
+    {
+     "direktiva": "tayyor alpine:latest nginx:1.29"
+    },
+    {
+     "cmd": "docker run --name v1 alpine sh -c 'echo salom > /fayl.txt; cat /fayl.txt'",
+     "out": "salom\r\n",
+     "kod": 0,
+     "ms": 869
+    },
+    {
+     "cmd": "docker diff v1",
+     "out": "A /fayl.txt\r\n",
+     "kod": 0,
+     "ms": 216
+    },
+    {
+     "cmd": "docker rm v1",
+     "out": "v1\r\n",
+     "kod": 0,
+     "ms": 168
+    },
+    {
+     "cmd": "docker run --rm alpine cat /fayl.txt",
+     "out": "cat: can't open '/fayl.txt': No such file or directory\r\n",
+     "kod": 1,
+     "ms": 646
+    },
+    {
+     "cmd": "docker volume create malumot",
+     "out": "malumot\r\n",
+     "kod": 0,
+     "ms": 153
+    },
+    {
+     "cmd": "docker run --rm -v malumot:/data alpine sh -c 'echo \"1-konteyner yozdi\" > /data/eslatma.txt'",
+     "out": "",
+     "kod": 0,
+     "ms": 610
+    },
+    {
+     "cmd": "docker run --rm -v malumot:/data alpine cat /data/eslatma.txt",
+     "out": "1-konteyner yozdi\r\n",
+     "kod": 0,
+     "ms": 596
+    },
+    {
+     "cmd": "docker volume ls",
+     "out": "DRIVER    VOLUME NAME\r\nlocal     malumot\r\n",
+     "kod": 0,
+     "ms": 133
+    },
+    {
+     "cmd": "docker volume inspect malumot -f '{{.Mountpoint}}'",
+     "out": "/var/lib/docker/volumes/malumot/_data\r\n",
+     "kod": 0,
+     "ms": 138
+    },
+    {
+     "cmd": "docker volume inspect malumot",
+     "out": "[\r\n    {\r\n        \"CreatedAt\": \"2026-11-23T04:52:13Z\",\r\n        \"Driver\": \"local\",\r\n        \"Labels\": null,\r\n        \"Mountpoint\": \"/var/lib/docker/volumes/malumot/_data\",\r\n        \"Name\": \"malumot\",\r\n        \"Options\": null,\r\n        \"Scope\": \"local\"\r\n    }\r\n]\r\n",
+     "kod": 0,
+     "ms": 146
+    },
+    {
+     "cmd": "docker run --rm -v html:/usr/share/nginx/html nginx:1.29 ls /usr/share/nginx/html",
+     "out": "50x.html\r\nindex.html\r\n",
+     "kod": 0,
+     "ms": 598
+    },
+    {
+     "cmd": "docker volume ls -q | wc -l",
+     "out": "2\r\n",
+     "kod": 0,
+     "ms": 155
+    },
+    {
+     "cmd": "docker run --rm -v /data alpine true",
+     "out": "",
+     "kod": 0,
+     "ms": 602
+    },
+    {
+     "cmd": "docker volume ls -q | wc -l",
+     "out": "2\r\n",
+     "kod": 0,
+     "ms": 138
+    },
+    {
+     "cmd": "docker run -v /data --name v2 alpine true",
+     "out": "",
+     "kod": 0,
+     "ms": 563
+    },
+    {
+     "cmd": "docker volume ls -q | wc -l",
+     "out": "3\r\n",
+     "kod": 0,
+     "ms": 138
+    },
+    {
+     "cmd": "docker volume ls",
+     "out": "DRIVER    VOLUME NAME\r\nlocal     5574fc49f25d6a6fed38e6c9f82a421e88e77c15ca1d834fb140007a4ddbc314\r\nlocal     html\r\nlocal     malumot\r\n",
+     "kod": 0,
+     "ms": 142
+    },
+    {
+     "cmd": "docker rm -v v2",
+     "out": "v2\r\n",
+     "kod": 0,
+     "ms": 175
+    },
+    {
+     "cmd": "mkdir -p sayt && echo '<h1>Salom</h1>' > sayt/index.html",
+     "out": "",
+     "kod": 0,
+     "ms": 133
+    },
+    {
+     "cmd": "docker run -d --name veb -p 127.0.0.1:8080:80 --mount type=bind,src=/root/sayt,dst=/usr/share/nginx/html,ro nginx:1.29",
+     "out": "2b8a048c00acfa67a293509f7455b3a294cefa6dae6c52b531e448cd4b7fd8d7\r\n",
+     "kod": 0,
+     "ms": 446
+    },
+    {
+     "cmd": "sleep 1; curl -s http://127.0.0.1:8080/",
+     "out": "<h1>Salom</h1>\r\n",
+     "kod": 0,
+     "ms": 1226
+    },
+    {
+     "cmd": "echo '<h1>Yangilandi</h1>' > sayt/index.html",
+     "out": "",
+     "kod": 0,
+     "ms": 115
+    },
+    {
+     "cmd": "curl -s http://127.0.0.1:8080/",
+     "out": "<h1>Yangilandi</h1>\r\n",
+     "kod": 0,
+     "ms": 102
+    },
+    {
+     "cmd": "docker exec veb sh -c 'echo x > /usr/share/nginx/html/a.txt'",
+     "out": "sh: 1: cannot create /usr/share/nginx/html/a.txt: Read-only file system\r\n",
+     "kod": 2,
+     "ms": 214
+    },
+    {
+     "cmd": "docker inspect -f '{{json .Mounts}}' veb",
+     "out": "[{\"Type\":\"bind\",\"Source\":\"/root/sayt\",\"Destination\":\"/usr/share/nginx/html\",\"Mode\":\"\",\"RW\":false,\"Propagation\":\"rprivate\"}]\r\n",
+     "kod": 0,
+     "ms": 124
+    },
+    {
+     "cmd": "docker rm -f veb",
+     "out": "veb\r\n",
+     "kod": 0,
+     "ms": 324
+    },
+    {
+     "cmd": "docker run --rm --mount type=bind,src=/root/yoq-papka,dst=/x alpine true",
+     "out": "docker: Error response from daemon: invalid mount config for type \"bind\": bind source path does not exist: /root/yoq-papka\r\n\r\nRun 'docker run --help' for more information\r\n",
+     "kod": 125,
+     "ms": 132
+    },
+    {
+     "cmd": "docker run --rm -v /root/yoq-papka:/x alpine true",
+     "out": "",
+     "kod": 0,
+     "ms": 508
+    },
+    {
+     "cmd": "ls -ld /root/yoq-papka",
+     "out": "drwxr-xr-x 2 root root 4096 Nov 23 04:52 /root/yoq-papka\r\n",
+     "kod": 0,
+     "ms": 94
+    },
+    {
+     "cmd": "docker run --rm --tmpfs /kesh alpine sh -c 'df -h /kesh; echo x > /kesh/a; ls /kesh'",
+     "out": "Filesystem                Size      Used Available Use% Mounted on\r\ntmpfs                   896.8M         0    896.8M   0% /kesh\r\na\r\n",
+     "kod": 0,
+     "ms": 503,
+     "bolaklar": [
+      [
+       373,
+       "Filesystem                Size      Used Available Use% Mounted on\r\ntmpfs                   896.8M         0    896.8M   0% /kesh\r\n"
+      ],
+      [
+       373,
+       "a\r\n"
+      ]
+     ]
+    },
+    {
+     "cmd": "rm -r sayt yoq-papka",
+     "out": "",
+     "kod": 0,
+     "ms": 110
+    },
+    {
+     "cmd": "docker volume rm malumot html",
+     "out": "malumot\r\nhtml\r\n",
+     "kod": 0,
+     "ms": 140
+    },
+    {
+     "cmd": "docker volume rm malumot",
+     "out": "Error response from daemon: get malumot: no such volume\r\n",
+     "kod": 1,
+     "ms": 134
+    },
+    {
+     "cmd": "docker volume create v3",
+     "out": "v3\r\n",
+     "kod": 0,
+     "ms": 128
+    },
+    {
+     "cmd": "docker run -d --name tut -v v3:/d alpine sleep 100",
+     "out": "926436e16b834f33459216d890fc896742192e98a3359c42a3c28a4dad18000e\r\n",
+     "kod": 0,
+     "ms": 420
+    },
+    {
+     "cmd": "docker volume rm v3",
+     "out": "Error response from daemon: remove v3: volume is in use - [926436e16b834f33459216d890fc896742192e98a3359c42a3c28a4dad18000e]\r\n",
+     "kod": 1,
+     "ms": 136
+    },
+    {
+     "cmd": "docker volume prune -f",
+     "out": "Total reclaimed space: 0B\r\n",
+     "kod": 0,
+     "ms": 208
+    },
+    {
+     "cmd": "docker volume prune -a -f",
+     "out": "Total reclaimed space: 0B\r\n",
+     "kod": 0,
+     "ms": 165
+    },
+    {
+     "cmd": "docker rm -f tut",
+     "out": "tut\r\n",
+     "kod": 0,
+     "ms": 310
+    },
+    {
+     "cmd": "docker volume prune -a -f",
+     "out": "Deleted Volumes:\r\nv3\r\n\r\nTotal reclaimed space: 0B\r\n",
+     "kod": 0,
+     "ms": 201
+    },
+    {
+     "cmd": "docker volume ls",
+     "out": "DRIVER    VOLUME NAME\r\n",
+     "kod": 0,
+     "ms": 128
+    }
+   ]
+  }
+ ]
+}

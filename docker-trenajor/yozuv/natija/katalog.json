@@ -1,0 +1,2596 @@
+{
+ "hello-world:latest": {
+  "repo": "hello-world",
+  "digest": "sha256:c567b231f65614688711a75f31518a064258a51d442117a3e771a3a8fdba78ef",
+  "inspect": {
+   "Id": "sha256:c567b231f65614688711a75f31518a064258a51d442117a3e771a3a8fdba78ef",
+   "RepoTags": [
+    "hello-world:latest"
+   ],
+   "RepoDigests": [
+    "hello-world@sha256:c567b231f65614688711a75f31518a064258a51d442117a3e771a3a8fdba78ef"
+   ],
+   "Comment": "buildkit.dockerfile.v0",
+   "Created": "2026-03-23T21:33:59.562202219Z",
+   "Config": {
+    "Env": [
+     "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+    ],
+    "Cmd": [
+     "/hello"
+    ],
+    "WorkingDir": "/"
+   },
+   "Architecture": "amd64",
+   "Os": "linux",
+   "Size": 20399,
+   "RootFS": {
+    "Type": "layers",
+    "Layers": [
+     "sha256:897b3f2a7c1bc2f3d02432f7892fe31c6272c521ad4d70257df624504a3238b4"
+    ]
+   },
+   "Metadata": {
+    "LastTagTime": "2026-11-23T04:58:25.05998048Z"
+   },
+   "Descriptor": {
+    "mediaType": "application/vnd.oci.image.index.v1+json",
+    "digest": "sha256:c567b231f65614688711a75f31518a064258a51d442117a3e771a3a8fdba78ef",
+    "size": 11062
+   },
+   "Identity": {
+    "Pull": [
+     {
+      "Repository": "docker.io/library/hello-world"
+     }
+    ]
+   }
+  },
+  "history": [
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "CreatedAt": "2026-03-23T21:33:59Z",
+    "CreatedBy": "CMD [\"/hello\"]",
+    "CreatedSince": "8 months ago",
+    "ID": "sha256:c567b231f65614688711a75f31518a064258a51d442117a3e771a3a8fdba78ef",
+    "Size": "0B"
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "CreatedAt": "2026-03-23T21:33:59Z",
+    "CreatedBy": "COPY hello / # buildkit",
+    "CreatedSince": "8 months ago",
+    "ID": "<missing>",
+    "Size": "16.4kB"
+   }
+  ],
+  "ls": {
+   "Containers": "0",
+   "CreatedAt": "2026-03-23 21:33:59 +0000 UTC",
+   "CreatedSince": "8 months ago",
+   "Digest": "<none>",
+   "ID": "c567b231f656",
+   "Repository": "hello-world",
+   "SharedSize": "N/A",
+   "Size": "25.9kB",
+   "Tag": "latest",
+   "UniqueSize": "N/A"
+  },
+  "index": {
+   "manifests": [
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "amd64",
+      "org.opencontainers.image.base.name": "scratch",
+      "org.opencontainers.image.created": "2026-03-23T21:33:57Z",
+      "org.opencontainers.image.revision": "0b0efba82b82ace81ab2fb42d25116f9488e6cb4",
+      "org.opencontainers.image.source": "https://github.com/docker-library/hello-world.git#0b0efba82b82ace81ab2fb42d25116f9488e6cb4:amd64",
+      "org.opencontainers.image.url": "https://hub.docker.com/_/hello-world",
+      "org.opencontainers.image.version": "linux"
+     },
+     "digest": "sha256:d1a8d0a4eeb63aff09f5f34d4d80505e0ba81905f36158cc3970d8e07179e59e",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "amd64",
+      "os": "linux"
+     },
+     "size": 1023
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "amd64",
+      "vnd.docker.reference.digest": "sha256:d1a8d0a4eeb63aff09f5f34d4d80505e0ba81905f36158cc3970d8e07179e59e",
+      "vnd.docker.reference.type": "attestation-manifest"
+     },
+     "digest": "sha256:8e752a1cddeafc02597e756f4a0ec96e29f63ac4bc4af87682daf3f1de843bb7",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "unknown",
+      "os": "unknown"
+     },
+     "size": 566
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "arm32v5",
+      "org.opencontainers.image.base.name": "scratch",
+      "org.opencontainers.image.created": "2026-03-23T21:29:44Z",
+      "org.opencontainers.image.revision": "0b0efba82b82ace81ab2fb42d25116f9488e6cb4",
+      "org.opencontainers.image.source": "https://github.com/docker-library/hello-world.git#0b0efba82b82ace81ab2fb42d25116f9488e6cb4:arm32v5",
+      "org.opencontainers.image.url": "https://hub.docker.com/_/hello-world",
+      "org.opencontainers.image.version": "linux"
+     },
+     "digest": "sha256:b7478cec8e46fa1689f89486b92e353e7b418235cb3cae2ad0434aac56b160aa",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "arm",
+      "os": "linux",
+      "variant": "v5"
+     },
+     "size": 1027
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "arm32v5",
+      "vnd.docker.reference.digest": "sha256:b7478cec8e46fa1689f89486b92e353e7b418235cb3cae2ad0434aac56b160aa",
+      "vnd.docker.reference.type": "attestation-manifest"
+     },
+     "digest": "sha256:d31545c149fa9010bc95ed3ad46fffd33592e64ca46222e10beeb923438f6b41",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "unknown",
+      "os": "unknown"
+     },
+     "size": 566
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "arm32v6",
+      "org.opencontainers.image.base.name": "scratch",
+      "org.opencontainers.image.created": "2026-03-23T21:29:53Z",
+      "org.opencontainers.image.revision": "0b0efba82b82ace81ab2fb42d25116f9488e6cb4",
+      "org.opencontainers.image.source": "https://github.com/docker-library/hello-world.git#0b0efba82b82ace81ab2fb42d25116f9488e6cb4:arm32v6",
+      "org.opencontainers.image.url": "https://hub.docker.com/_/hello-world",
+      "org.opencontainers.image.version": "linux"
+     },
+     "digest": "sha256:2e4eda00176134a56e8a94dbb1e8b76610e59fa417cf0f7841e82f21b9e6d035",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "arm",
+      "os": "linux",
+      "variant": "v6"
+     },
+     "size": 1027
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "arm32v6",
+      "vnd.docker.reference.digest": "sha256:2e4eda00176134a56e8a94dbb1e8b76610e59fa417cf0f7841e82f21b9e6d035",
+      "vnd.docker.reference.type": "attestation-manifest"
+     },
+     "digest": "sha256:8b1c825510959225ffe94311730fe9f1eb2f14dcf5685793d0c2c4cd6d79a721",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "unknown",
+      "os": "unknown"
+     },
+     "size": 566
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "arm32v7",
+      "org.opencontainers.image.base.name": "scratch",
+      "org.opencontainers.image.created": "2026-03-23T21:34:52Z",
+      "org.opencontainers.image.revision": "0b0efba82b82ace81ab2fb42d25116f9488e6cb4",
+      "org.opencontainers.image.source": "https://github.com/docker-library/hello-world.git#0b0efba82b82ace81ab2fb42d25116f9488e6cb4:arm32v7",
+      "org.opencontainers.image.url": "https://hub.docker.com/_/hello-world",
+      "org.opencontainers.image.version": "linux"
+     },
+     "digest": "sha256:ecb43d43395e9cd8d97a03e497af34b5ef95e01dd046cf3323d130ba134d1eae",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "arm",
+      "os": "linux",
+      "variant": "v7"
+     },
+     "size": 1027
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "arm32v7",
+      "vnd.docker.reference.digest": "sha256:ecb43d43395e9cd8d97a03e497af34b5ef95e01dd046cf3323d130ba134d1eae",
+      "vnd.docker.reference.type": "attestation-manifest"
+     },
+     "digest": "sha256:86e7dd6b0bff798e475e97b81fd132adc340923877adda2dd494efa0558a7870",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "unknown",
+      "os": "unknown"
+     },
+     "size": 566
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "arm64v8",
+      "org.opencontainers.image.base.name": "scratch",
+      "org.opencontainers.image.created": "2026-03-23T21:33:57Z",
+      "org.opencontainers.image.revision": "0b0efba82b82ace81ab2fb42d25116f9488e6cb4",
+      "org.opencontainers.image.source": "https://github.com/docker-library/hello-world.git#0b0efba82b82ace81ab2fb42d25116f9488e6cb4:arm64v8",
+      "org.opencontainers.image.url": "https://hub.docker.com/_/hello-world",
+      "org.opencontainers.image.version": "linux"
+     },
+     "digest": "sha256:5099b89d7666cc2186cad769ddc262ddc7c335b33f5fe79f9ffe50a01282b23e",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "arm64",
+      "os": "linux",
+      "variant": "v8"
+     },
+     "size": 1027
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "arm64v8",
+      "vnd.docker.reference.digest": "sha256:5099b89d7666cc2186cad769ddc262ddc7c335b33f5fe79f9ffe50a01282b23e",
+      "vnd.docker.reference.type": "attestation-manifest"
+     },
+     "digest": "sha256:670045644a15cf4c09e24a61b924660c58f45c4c03c2d17d49b774c04c9bb62b",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "unknown",
+      "os": "unknown"
+     },
+     "size": 566
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "i386",
+      "org.opencontainers.image.base.name": "scratch",
+      "org.opencontainers.image.created": "2026-03-23T21:29:25Z",
+      "org.opencontainers.image.revision": "0b0efba82b82ace81ab2fb42d25116f9488e6cb4",
+      "org.opencontainers.image.source": "https://github.com/docker-library/hello-world.git#0b0efba82b82ace81ab2fb42d25116f9488e6cb4:i386",
+      "org.opencontainers.image.url": "https://hub.docker.com/_/hello-world",
+      "org.opencontainers.image.version": "linux"
+     },
+     "digest": "sha256:09538a1f51d3ec5af0449a1640937dfdf79b0e9b8c4da5b8a883086d5c1492ef",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "386",
+      "os": "linux"
+     },
+     "size": 1021
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "i386",
+      "vnd.docker.reference.digest": "sha256:09538a1f51d3ec5af0449a1640937dfdf79b0e9b8c4da5b8a883086d5c1492ef",
+      "vnd.docker.reference.type": "attestation-manifest"
+     },
+     "digest": "sha256:fb038e8f2e79b9c3d69c54bcd4b57218f5aea32fc3e98855c3eb452703ba4e5a",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "unknown",
+      "os": "unknown"
+     },
+     "size": 566
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "ppc64le",
+      "org.opencontainers.image.base.name": "scratch",
+      "org.opencontainers.image.created": "2026-03-23T21:35:10Z",
+      "org.opencontainers.image.revision": "0b0efba82b82ace81ab2fb42d25116f9488e6cb4",
+      "org.opencontainers.image.source": "https://github.com/docker-library/hello-world.git#0b0efba82b82ace81ab2fb42d25116f9488e6cb4:ppc64le",
+      "org.opencontainers.image.url": "https://hub.docker.com/_/hello-world",
+      "org.opencontainers.image.version": "linux"
+     },
+     "digest": "sha256:5a67e54fddf89e5a311186c5d6ba534363073dab0b36e173328789637fcbf592",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "ppc64le",
+      "os": "linux"
+     },
+     "size": 1027
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "ppc64le",
+      "vnd.docker.reference.digest": "sha256:5a67e54fddf89e5a311186c5d6ba534363073dab0b36e173328789637fcbf592",
+      "vnd.docker.reference.type": "attestation-manifest"
+     },
+     "digest": "sha256:3a82e85498a4772b607dafaaeedca64743f046bf6799e7907ef2f56fb276ca57",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "unknown",
+      "os": "unknown"
+     },
+     "size": 566
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "riscv64",
+      "org.opencontainers.image.base.name": "scratch",
+      "org.opencontainers.image.created": "2026-03-24T05:38:59Z",
+      "org.opencontainers.image.revision": "0b0efba82b82ace81ab2fb42d25116f9488e6cb4",
+      "org.opencontainers.image.source": "https://github.com/docker-library/hello-world.git#0b0efba82b82ace81ab2fb42d25116f9488e6cb4:riscv64",
+      "org.opencontainers.image.url": "https://hub.docker.com/_/hello-world",
+      "org.opencontainers.image.version": "linux"
+     },
+     "digest": "sha256:156fcb9ee881b4372fa9d46aad498e333b2d6e3e1caed9ad5bdb53b1c05db74f",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "riscv64",
+      "os": "linux"
+     },
+     "size": 1027
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "riscv64",
+      "vnd.docker.reference.digest": "sha256:156fcb9ee881b4372fa9d46aad498e333b2d6e3e1caed9ad5bdb53b1c05db74f",
+      "vnd.docker.reference.type": "attestation-manifest"
+     },
+     "digest": "sha256:2fcf8944aa4940a540f7faa675cea6f544a43fbd86d7098eb4dfaced960de5eb",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "unknown",
+      "os": "unknown"
+     },
+     "size": 566
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "s390x",
+      "org.opencontainers.image.base.name": "scratch",
+      "org.opencontainers.image.created": "2026-03-23T21:33:34Z",
+      "org.opencontainers.image.revision": "0b0efba82b82ace81ab2fb42d25116f9488e6cb4",
+      "org.opencontainers.image.source": "https://github.com/docker-library/hello-world.git#0b0efba82b82ace81ab2fb42d25116f9488e6cb4:s390x",
+      "org.opencontainers.image.url": "https://hub.docker.com/_/hello-world",
+      "org.opencontainers.image.version": "linux"
+     },
+     "digest": "sha256:0d11755bbdbe264d24b7b641325ee292db18f0b3af0b54bff6e7f7efa5271a41",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "s390x",
+      "os": "linux"
+     },
+     "size": 1023
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "s390x",
+      "vnd.docker.reference.digest": "sha256:0d11755bbdbe264d24b7b641325ee292db18f0b3af0b54bff6e7f7efa5271a41",
+      "vnd.docker.reference.type": "attestation-manifest"
+     },
+     "digest": "sha256:0ede91707e269bc8a47210bd09d3556269ce42e9619fbedc94a2a30b5b06b8b4",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "unknown",
+      "os": "unknown"
+     },
+     "size": 566
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "windows-amd64"
+     },
+     "digest": "sha256:20e26fb7982c0d02a2bf39d3eb60a64baf70e96892c28259ba477b335db24a4e",
+     "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+     "platform": {
+      "architecture": "amd64",
+      "os": "windows",
+      "os.version": "10.0.26100.33674"
+     },
+     "size": 946
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "windows-amd64"
+     },
+     "digest": "sha256:04da9a8692a3b13f126d378def3a214cf8741d1b524df50b9ab1d46cfe9d0af4",
+     "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+     "platform": {
+      "architecture": "amd64",
+      "os": "windows",
+      "os.version": "10.0.20348.5773"
+     },
+     "size": 946
+    }
+   ],
+   "mediaType": "application/vnd.oci.image.index.v1+json",
+   "schemaVersion": 2
+  },
+  "manifest": {
+   "schemaVersion": 2,
+   "mediaType": "application/vnd.oci.image.manifest.v1+json",
+   "config": {
+    "mediaType": "application/vnd.oci.image.config.v1+json",
+    "digest": "sha256:e2ac70e7319a02c5a477f5825259bd118b94e8b02c279c67afa63adab6d8685b",
+    "size": 577
+   },
+   "layers": [
+    {
+     "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+     "digest": "sha256:4f55086f7dd096d48b0e49be066971a8ed996521c2e190aa21b2435a847198b4",
+     "size": 2415
+    }
+   ],
+   "annotations": {
+    "com.docker.official-images.bashbrew.arch": "amd64",
+    "org.opencontainers.image.base.name": "scratch",
+    "org.opencontainers.image.created": "2026-03-23T21:33:57Z",
+    "org.opencontainers.image.revision": "0b0efba82b82ace81ab2fb42d25116f9488e6cb4",
+    "org.opencontainers.image.source": "https://github.com/docker-library/hello-world.git#0b0efba82b82ace81ab2fb42d25116f9488e6cb4:amd64",
+    "org.opencontainers.image.url": "https://hub.docker.com/_/hello-world",
+    "org.opencontainers.image.version": "linux"
+   }
+  },
+  "manifestDigest": "sha256:d1a8d0a4eeb63aff09f5f34d4d80505e0ba81905f36158cc3970d8e07179e59e",
+  "attestation": {
+   "schemaVersion": 2,
+   "mediaType": "application/vnd.oci.image.manifest.v1+json",
+   "config": {
+    "mediaType": "application/vnd.oci.image.config.v1+json",
+    "digest": "sha256:4cc5f49f1578d3d9c4b5f32f6ef7a37d7fadccd4a20f3e29e3bb0ee6cd159f52",
+    "size": 167
+   },
+   "layers": [
+    {
+     "mediaType": "application/vnd.in-toto+json",
+     "digest": "sha256:d5e71e642bf52fab99f7dc2746472b824e89b393f60846d6594e7e71aa11c006",
+     "size": 4742,
+     "annotations": {
+      "in-toto.io/predicate-type": "https://slsa.dev/provenance/v0.2"
+     }
+    }
+   ]
+  },
+  "fs": "hello-world-latest.json",
+  "fsSoni": 13,
+  "imageLs": "IMAGE                ID             DISK USAGE   CONTENT SIZE   EXTRA\nhello-world:latest   c567b231f656       25.9kB         9.49kB        \n",
+  "systemDf": "TYPE            TOTAL     ACTIVE    SIZE      RECLAIMABLE\nImages          1         0         36.94kB   25.87kB (70%)\nContainers      0         0         0B        0B\nLocal Volumes   0         0         0B        0B\nBuild Cache     0         0         0B        0B\n",
+  "systemDfV": "{\"Images\":[{\"Containers\":\"0\",\"CreatedAt\":\"2026-03-23 21:33:59 +0000 UTC\",\"CreatedSince\":\"8 months ago\",\"Digest\":\"\",\"ID\":\"sha256:c567b231f65614688711a75f31518a064258a51d442117a3e771a3a8fdba78ef\",\"Repository\":\"hello-world\",\"SharedSize\":\"0B\",\"Size\":\"25.9kB\",\"Tag\":\"latest\",\"UniqueSize\":\"25.87kB\"}],\"Containers\":[],\"Volumes\":[],\"BuildCache\":[]}"
+ },
+ "alpine:latest": {
+  "repo": "alpine",
+  "digest": "sha256:3f4d6b32e26703c6082839234f43769d5046b3ac7c910033911d1e71d8cd630a",
+  "inspect": {
+   "Id": "sha256:3f4d6b32e26703c6082839234f43769d5046b3ac7c910033911d1e71d8cd630a",
+   "RepoTags": [
+    "alpine:latest"
+   ],
+   "RepoDigests": [
+    "alpine@sha256:3f4d6b32e26703c6082839234f43769d5046b3ac7c910033911d1e71d8cd630a"
+   ],
+   "Comment": "buildkit.dockerfile.v0",
+   "Created": "2026-11-05T18:00:28.583714131Z",
+   "Config": {
+    "Env": [
+     "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+    ],
+    "Cmd": [
+     "/bin/sh"
+    ],
+    "WorkingDir": "/"
+   },
+   "Architecture": "amd64",
+   "Os": "linux",
+   "Size": 12944330,
+   "RootFS": {
+    "Type": "layers",
+    "Layers": [
+     "sha256:75f1d9657d880da5f75298e8f40e9928bb6e260c50d26f97af196845307e3064"
+    ]
+   },
+   "Metadata": {
+    "LastTagTime": "2026-11-23T04:58:30.447123966Z"
+   },
+   "Descriptor": {
+    "mediaType": "application/vnd.oci.image.index.v1+json",
+    "digest": "sha256:3f4d6b32e26703c6082839234f43769d5046b3ac7c910033911d1e71d8cd630a",
+    "size": 9218
+   },
+   "Identity": {
+    "Pull": [
+     {
+      "Repository": "docker.io/library/alpine"
+     }
+    ]
+   }
+  },
+  "history": [
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "CreatedAt": "2026-11-05T18:00:28Z",
+    "CreatedBy": "CMD [\"/bin/sh\"]",
+    "CreatedSince": "2 weeks ago",
+    "ID": "sha256:3f4d6b32e26703c6082839234f43769d5046b3ac7c910033911d1e71d8cd630a",
+    "Size": "0B"
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "CreatedAt": "2026-11-05T18:00:28Z",
+    "CreatedBy": "ADD alpine-minirootfs-3.24.4-x86_64.tar.gz / # buildkit",
+    "CreatedSince": "2 weeks ago",
+    "ID": "<missing>",
+    "Size": "9.09MB"
+   }
+  ],
+  "ls": {
+   "Containers": "0",
+   "CreatedAt": "2026-11-05 18:00:28 +0000 UTC",
+   "CreatedSince": "2 weeks ago",
+   "Digest": "<none>",
+   "ID": "3f4d6b32e267",
+   "Repository": "alpine",
+   "SharedSize": "N/A",
+   "Size": "13MB",
+   "Tag": "latest",
+   "UniqueSize": "N/A"
+  },
+  "index": {
+   "manifests": [
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "amd64",
+      "org.opencontainers.image.base.name": "scratch",
+      "org.opencontainers.image.created": "2026-11-05T18:00:01Z",
+      "org.opencontainers.image.revision": "0c9af76133a2dd9a31dedf3600e423087b29a879",
+      "org.opencontainers.image.source": "https://github.com/alpinelinux/docker-alpine.git#0c9af76133a2dd9a31dedf3600e423087b29a879:x86_64",
+      "org.opencontainers.image.url": "https://hub.docker.com/_/alpine",
+      "org.opencontainers.image.version": "3.24.4"
+     },
+     "digest": "sha256:0f49f331d9212aff11b932863be4eb01cdf962969aa86dab7d1ee21ac6f5f52b",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "amd64",
+      "os": "linux"
+     },
+     "size": 1022
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "amd64",
+      "vnd.docker.reference.digest": "sha256:0f49f331d9212aff11b932863be4eb01cdf962969aa86dab7d1ee21ac6f5f52b",
+      "vnd.docker.reference.type": "attestation-manifest"
+     },
+     "digest": "sha256:7d08e6cd44b4e0c144e32a527544890794b73795ad1e8d60bfd8578e3eccf79d",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "unknown",
+      "os": "unknown"
+     },
+     "size": 838
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "arm32v6",
+      "org.opencontainers.image.base.name": "scratch",
+      "org.opencontainers.image.created": "2026-11-05T18:00:11Z",
+      "org.opencontainers.image.revision": "0c9af76133a2dd9a31dedf3600e423087b29a879",
+      "org.opencontainers.image.source": "https://github.com/alpinelinux/docker-alpine.git#0c9af76133a2dd9a31dedf3600e423087b29a879:armhf",
+      "org.opencontainers.image.url": "https://hub.docker.com/_/alpine",
+      "org.opencontainers.image.version": "3.24.4"
+     },
+     "digest": "sha256:24744e247e00c323a54ca655da31f3ac39761bab0247939599b711d7f7a4b0e3",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "arm",
+      "os": "linux",
+      "variant": "v6"
+     },
+     "size": 1023
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "arm32v6",
+      "vnd.docker.reference.digest": "sha256:24744e247e00c323a54ca655da31f3ac39761bab0247939599b711d7f7a4b0e3",
+      "vnd.docker.reference.type": "attestation-manifest"
+     },
+     "digest": "sha256:b16eeb9f9ae2b453e49d0edfa13ac7380ec35d18571d78913430f608fc695730",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "unknown",
+      "os": "unknown"
+     },
+     "size": 566
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "arm32v7",
+      "org.opencontainers.image.base.name": "scratch",
+      "org.opencontainers.image.created": "2026-11-05T18:00:11Z",
+      "org.opencontainers.image.revision": "0c9af76133a2dd9a31dedf3600e423087b29a879",
+      "org.opencontainers.image.source": "https://github.com/alpinelinux/docker-alpine.git#0c9af76133a2dd9a31dedf3600e423087b29a879:armv7",
+      "org.opencontainers.image.url": "https://hub.docker.com/_/alpine",
+      "org.opencontainers.image.version": "3.24.4"
+     },
+     "digest": "sha256:d8d3f7634d0afcb22c20139248d0255a89cf7807c2e96a7c7ff0ab0217ef557b",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "arm",
+      "os": "linux",
+      "variant": "v7"
+     },
+     "size": 1023
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "arm32v7",
+      "vnd.docker.reference.digest": "sha256:d8d3f7634d0afcb22c20139248d0255a89cf7807c2e96a7c7ff0ab0217ef557b",
+      "vnd.docker.reference.type": "attestation-manifest"
+     },
+     "digest": "sha256:a4021206f4729fc6559f2c145d14a847950c51bae692aae19a1a0809b1932618",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "unknown",
+      "os": "unknown"
+     },
+     "size": 838
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "arm64v8",
+      "org.opencontainers.image.base.name": "scratch",
+      "org.opencontainers.image.created": "2026-11-05T18:00:09Z",
+      "org.opencontainers.image.revision": "0c9af76133a2dd9a31dedf3600e423087b29a879",
+      "org.opencontainers.image.source": "https://github.com/alpinelinux/docker-alpine.git#0c9af76133a2dd9a31dedf3600e423087b29a879:aarch64",
+      "org.opencontainers.image.url": "https://hub.docker.com/_/alpine",
+      "org.opencontainers.image.version": "3.24.4"
+     },
+     "digest": "sha256:1829893486be257df5049ab3b7fc95afbd0fc09d89803cbc580bda1ba5386b29",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "arm64",
+      "os": "linux",
+      "variant": "v8"
+     },
+     "size": 1025
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "arm64v8",
+      "vnd.docker.reference.digest": "sha256:1829893486be257df5049ab3b7fc95afbd0fc09d89803cbc580bda1ba5386b29",
+      "vnd.docker.reference.type": "attestation-manifest"
+     },
+     "digest": "sha256:a6c23a452c7d7f36da4f4b7182df68f10e1beaa8e90e0cf65948abc2f039682c",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "unknown",
+      "os": "unknown"
+     },
+     "size": 838
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "i386",
+      "org.opencontainers.image.base.name": "scratch",
+      "org.opencontainers.image.created": "2026-11-05T18:00:11Z",
+      "org.opencontainers.image.revision": "0c9af76133a2dd9a31dedf3600e423087b29a879",
+      "org.opencontainers.image.source": "https://github.com/alpinelinux/docker-alpine.git#0c9af76133a2dd9a31dedf3600e423087b29a879:x86",
+      "org.opencontainers.image.url": "https://hub.docker.com/_/alpine",
+      "org.opencontainers.image.version": "3.24.4"
+     },
+     "digest": "sha256:55d68c85222dd92297b0f8885354739d89f0dc17fc2f903c49dc1d9c129c3d6a",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "386",
+      "os": "linux"
+     },
+     "size": 1018
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "i386",
+      "vnd.docker.reference.digest": "sha256:55d68c85222dd92297b0f8885354739d89f0dc17fc2f903c49dc1d9c129c3d6a",
+      "vnd.docker.reference.type": "attestation-manifest"
+     },
+     "digest": "sha256:b6c7377e1fb8b3405e336a3781eb29282da302d25dc2211de32cb97b77f99219",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "unknown",
+      "os": "unknown"
+     },
+     "size": 838
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "ppc64le",
+      "org.opencontainers.image.base.name": "scratch",
+      "org.opencontainers.image.created": "2026-11-05T20:43:08Z",
+      "org.opencontainers.image.revision": "0c9af76133a2dd9a31dedf3600e423087b29a879",
+      "org.opencontainers.image.source": "https://github.com/alpinelinux/docker-alpine.git#0c9af76133a2dd9a31dedf3600e423087b29a879:ppc64le",
+      "org.opencontainers.image.url": "https://hub.docker.com/_/alpine",
+      "org.opencontainers.image.version": "3.24.4"
+     },
+     "digest": "sha256:7ed963991a76f3bec91d6d651756adc85b4f15d6c3465c2abb1a5ff8f6660a92",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "ppc64le",
+      "os": "linux"
+     },
+     "size": 1025
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "ppc64le",
+      "vnd.docker.reference.digest": "sha256:7ed963991a76f3bec91d6d651756adc85b4f15d6c3465c2abb1a5ff8f6660a92",
+      "vnd.docker.reference.type": "attestation-manifest"
+     },
+     "digest": "sha256:e801e0d9a9b24e8f4df5c57e7fa3b18d9db0382192608218c3408130e98b4ae7",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "unknown",
+      "os": "unknown"
+     },
+     "size": 838
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "riscv64",
+      "org.opencontainers.image.base.name": "scratch",
+      "org.opencontainers.image.created": "2026-10-23T04:52:11Z",
+      "org.opencontainers.image.revision": "5aec467fb81238bae9441eea2edb000655d7044f",
+      "org.opencontainers.image.source": "https://github.com/alpinelinux/docker-alpine.git#5aec467fb81238bae9441eea2edb000655d7044f:riscv64",
+      "org.opencontainers.image.url": "https://hub.docker.com/_/alpine",
+      "org.opencontainers.image.version": "3.24.3"
+     },
+     "digest": "sha256:4451fbe20381b2a23da80f7a6f68f30f3ff0ff2f4a4a074505a52bd46423fb39",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "riscv64",
+      "os": "linux"
+     },
+     "size": 1025
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "riscv64",
+      "vnd.docker.reference.digest": "sha256:4451fbe20381b2a23da80f7a6f68f30f3ff0ff2f4a4a074505a52bd46423fb39",
+      "vnd.docker.reference.type": "attestation-manifest"
+     },
+     "digest": "sha256:37480ae6d5242e16a2f59464deed2018531936746a1a3928df39b4ce5dab6b4c",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "unknown",
+      "os": "unknown"
+     },
+     "size": 838
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "s390x",
+      "org.opencontainers.image.base.name": "scratch",
+      "org.opencontainers.image.created": "2026-11-05T17:59:20Z",
+      "org.opencontainers.image.revision": "0c9af76133a2dd9a31dedf3600e423087b29a879",
+      "org.opencontainers.image.source": "https://github.com/alpinelinux/docker-alpine.git#0c9af76133a2dd9a31dedf3600e423087b29a879:s390x",
+      "org.opencontainers.image.url": "https://hub.docker.com/_/alpine",
+      "org.opencontainers.image.version": "3.24.4"
+     },
+     "digest": "sha256:5731f4bc195f1efc2807ea6a33a2d2bc0f5abbf5bfb799269129f67560209c22",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "s390x",
+      "os": "linux"
+     },
+     "size": 1021
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "s390x",
+      "vnd.docker.reference.digest": "sha256:5731f4bc195f1efc2807ea6a33a2d2bc0f5abbf5bfb799269129f67560209c22",
+      "vnd.docker.reference.type": "attestation-manifest"
+     },
+     "digest": "sha256:170ea228efe7cb3d9da56b8ba96d6abe734c62339c3dfcf00ca733289501bdb7",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "unknown",
+      "os": "unknown"
+     },
+     "size": 838
+    }
+   ],
+   "mediaType": "application/vnd.oci.image.index.v1+json",
+   "schemaVersion": 2
+  },
+  "manifest": {
+   "schemaVersion": 2,
+   "mediaType": "application/vnd.oci.image.manifest.v1+json",
+   "config": {
+    "mediaType": "application/vnd.oci.image.config.v1+json",
+    "digest": "sha256:3ea06e4cb95e726ea6c6cc4377570ac4c4050d78710004cbd631ca809daf7e8e",
+    "size": 611
+   },
+   "layers": [
+    {
+     "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+     "digest": "sha256:881fc932939efef04ca120ad44bbd2c0917851eb247aa4995428afb1e80ede17",
+     "size": 3853673
+    }
+   ],
+   "annotations": {
+    "com.docker.official-images.bashbrew.arch": "amd64",
+    "org.opencontainers.image.base.name": "scratch",
+    "org.opencontainers.image.created": "2026-11-05T18:00:01Z",
+    "org.opencontainers.image.revision": "0c9af76133a2dd9a31dedf3600e423087b29a879",
+    "org.opencontainers.image.source": "https://github.com/alpinelinux/docker-alpine.git#0c9af76133a2dd9a31dedf3600e423087b29a879:x86_64",
+    "org.opencontainers.image.url": "https://hub.docker.com/_/alpine",
+    "org.opencontainers.image.version": "3.24.4"
+   }
+  },
+  "manifestDigest": "sha256:0f49f331d9212aff11b932863be4eb01cdf962969aa86dab7d1ee21ac6f5f52b",
+  "attestation": {
+   "schemaVersion": 2,
+   "mediaType": "application/vnd.oci.image.manifest.v1+json",
+   "config": {
+    "mediaType": "application/vnd.oci.image.config.v1+json",
+    "digest": "sha256:0ae34b588cec145d749ed4af486aa27f38dc2afff4787696f6e935327e41204f",
+    "size": 241
+   },
+   "layers": [
+    {
+     "mediaType": "application/vnd.in-toto+json",
+     "digest": "sha256:c35a7d82b8fa9d20b8bd2dc4185ab007ffaf5cc0b2a2a8c99b9c510d9b65ede5",
+     "size": 79673,
+     "annotations": {
+      "in-toto.io/predicate-type": "https://spdx.dev/Document"
+     }
+    },
+    {
+     "mediaType": "application/vnd.in-toto+json",
+     "digest": "sha256:86ff264fe568bb37a5441a99bf4620faecbf6095be7f43f3d076209594a51d7c",
+     "size": 5639,
+     "annotations": {
+      "in-toto.io/predicate-type": "https://slsa.dev/provenance/v0.2"
+     }
+    }
+   ]
+  },
+  "fs": "alpine-latest.json",
+  "fsSoni": 520,
+  "imageLs": "IMAGE           ID             DISK USAGE   CONTENT SIZE   EXTRA\nalpine:latest   3f4d6b32e267         13MB         3.94MB        \n",
+  "systemDf": "TYPE            TOTAL     ACTIVE    SIZE      RECLAIMABLE\nImages          1         0         13.04MB   13.03MB (99%)\nContainers      0         0         0B        0B\nLocal Volumes   0         0         0B        0B\nBuild Cache     0         0         0B        0B\n",
+  "systemDfV": "{\"Images\":[{\"Containers\":\"0\",\"CreatedAt\":\"2026-11-05 18:00:28 +0000 UTC\",\"CreatedSince\":\"2 weeks ago\",\"Digest\":\"\",\"ID\":\"sha256:3f4d6b32e26703c6082839234f43769d5046b3ac7c910033911d1e71d8cd630a\",\"Repository\":\"alpine\",\"SharedSize\":\"0B\",\"Size\":\"13MB\",\"Tag\":\"latest\",\"UniqueSize\":\"13.03MB\"}],\"Containers\":[],\"Volumes\":[],\"BuildCache\":[]}"
+ },
+ "nginx:1.29": {
+  "repo": "nginx",
+  "digest": "sha256:1881968aff6f7cdcc4b888c00a11f4ce241ad7ec957e0cb4a9e19e93a3ff87ea",
+  "inspect": {
+   "Id": "sha256:1881968aff6f7cdcc4b888c00a11f4ce241ad7ec957e0cb4a9e19e93a3ff87ea",
+   "RepoTags": [
+    "nginx:1.29"
+   ],
+   "RepoDigests": [
+    "nginx@sha256:1881968aff6f7cdcc4b888c00a11f4ce241ad7ec957e0cb4a9e19e93a3ff87ea"
+   ],
+   "Comment": "buildkit.dockerfile.v0",
+   "Created": "2026-05-08T19:22:39.549188019Z",
+   "Config": {
+    "ExposedPorts": {
+     "80/tcp": {}
+    },
+    "Env": [
+     "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+     "NGINX_VERSION=1.29.8",
+     "NJS_VERSION=0.9.6",
+     "NJS_RELEASE=1~trixie",
+     "ACME_VERSION=0.3.1",
+     "PKG_RELEASE=1~trixie",
+     "DYNPKG_RELEASE=1~trixie"
+    ],
+    "Entrypoint": [
+     "/docker-entrypoint.sh"
+    ],
+    "Cmd": [
+     "nginx",
+     "-g",
+     "daemon off;"
+    ],
+    "Labels": {
+     "maintainer": "NGINX Docker Maintainers <docker-maint@nginx.com>"
+    },
+    "StopSignal": "SIGQUIT"
+   },
+   "Architecture": "amd64",
+   "Os": "linux",
+   "Size": 237173125,
+   "RootFS": {
+    "Type": "layers",
+    "Layers": [
+     "sha256:79dd1f4c855cd061f687a994426634cf5f84c8ecdbc66c7a7d118e828dd93c99",
+     "sha256:aa4d24e7384d69a29f9d98b6d0840a4ebefcd7febba435baebce445e1dbc7cdc",
+     "sha256:6209b86585947682c5eeee5f7c974b9828355c96d908581e4d36a8733d3d0314",
+     "sha256:c2c85988de01800799942fd6a1b911469be99125e09d36268814d3d895da51b6",
+     "sha256:5501cac27eddcd6f3061a59136004c4e45334dba0112db1ed30a6bb13b831924",
+     "sha256:5bcc35c877def6c7dbd45712e9141cf94bdb73b6b79f1f86594792bc2b8e0fca",
+     "sha256:2e04d59bdb432430ffd1f17ba0ca3e9b8b6192199587baa3b52462f995cd4dfe"
+    ]
+   },
+   "Metadata": {
+    "LastTagTime": "2026-11-23T04:58:44.963197135Z"
+   },
+   "Descriptor": {
+    "mediaType": "application/vnd.oci.image.index.v1+json",
+    "digest": "sha256:1881968aff6f7cdcc4b888c00a11f4ce241ad7ec957e0cb4a9e19e93a3ff87ea",
+    "size": 10229
+   },
+   "Identity": {
+    "Pull": [
+     {
+      "Repository": "docker.io/library/nginx"
+     }
+    ]
+   }
+  },
+  "history": [
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "CreatedAt": "2026-05-08T19:22:39Z",
+    "CreatedBy": "CMD [\"nginx\" \"-g\" \"daemon off;\"]",
+    "CreatedSince": "6 months ago",
+    "ID": "sha256:1881968aff6f7cdcc4b888c00a11f4ce241ad7ec957e0cb4a9e19e93a3ff87ea",
+    "Size": "0B"
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "CreatedAt": "2026-05-08T19:22:39Z",
+    "CreatedBy": "STOPSIGNAL SIGQUIT",
+    "CreatedSince": "6 months ago",
+    "ID": "<missing>",
+    "Size": "0B"
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "CreatedAt": "2026-05-08T19:22:39Z",
+    "CreatedBy": "EXPOSE map[80/tcp:{}]",
+    "CreatedSince": "6 months ago",
+    "ID": "<missing>",
+    "Size": "0B"
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "CreatedAt": "2026-05-08T19:22:39Z",
+    "CreatedBy": "ENTRYPOINT [\"/docker-entrypoint.sh\"]",
+    "CreatedSince": "6 months ago",
+    "ID": "<missing>",
+    "Size": "0B"
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "CreatedAt": "2026-05-08T19:22:39Z",
+    "CreatedBy": "COPY 30-tune-worker-processes.sh /docker-entrypoint.d # buildkit",
+    "CreatedSince": "6 months ago",
+    "ID": "<missing>",
+    "Size": "16.4kB"
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "CreatedAt": "2026-05-08T19:22:39Z",
+    "CreatedBy": "COPY 20-envsubst-on-templates.sh /docker-entrypoint.d # buildkit",
+    "CreatedSince": "6 months ago",
+    "ID": "<missing>",
+    "Size": "12.3kB"
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "CreatedAt": "2026-05-08T19:22:39Z",
+    "CreatedBy": "COPY 15-local-resolvers.envsh /docker-entrypoint.d # buildkit",
+    "CreatedSince": "6 months ago",
+    "ID": "<missing>",
+    "Size": "12.3kB"
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "CreatedAt": "2026-05-08T19:22:39Z",
+    "CreatedBy": "COPY 10-listen-on-ipv6-by-default.sh /docker-entrypoint.d # buildkit",
+    "CreatedSince": "6 months ago",
+    "ID": "<missing>",
+    "Size": "12.3kB"
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "CreatedAt": "2026-05-08T19:22:39Z",
+    "CreatedBy": "COPY docker-entrypoint.sh / # buildkit",
+    "CreatedSince": "6 months ago",
+    "ID": "<missing>",
+    "Size": "8.19kB"
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "CreatedAt": "2026-05-08T19:22:39Z",
+    "CreatedBy": "RUN /bin/sh -c set -x     && groupadd --system --gid 101 nginx     && useradd --system --gid nginx --no-create-home --home /nonexistent --comment \"nginx user\" --shell /bin/false --uid 101 nginx     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y gnupg1 ca-certificates     &&     NGINX_GPGKEYS=\"573BFD6B3D8FBC641079A6ABABF5BD827BD9BF62 8540A6F18833A80E9C1653A42FD21310B49F6B46 9E9BE90EACBCDE69FE9B204CBCDCD8A38D88A2B3\";     NGINX_GPGKEY_PATH=/etc/apt/keyrings/nginx-archive-keyring.gpg;     export GNUPGHOME=\"$(mktemp -d)\";     found='';     for NGINX_GPGKEY in $NGINX_GPGKEYS; do     for server in         hkp://keyserver.ubuntu.com:80         pgp.mit.edu     ; do         echo \"Fetching GPG key $NGINX_GPGKEY from $server\";         gpg1 --batch --keyserver \"$server\" --keyserver-options timeout=10 --recv-keys \"$NGINX_GPGKEY\" && found=yes && break;     done;     test -z \"$found\" && echo >&2 \"error: failed to fetch GPG key $NGINX_GPGKEY\" && exit 1;     done;     gpg1 --batch --export $NGINX_GPGKEYS > \"$NGINX_GPGKEY_PATH\" ;     rm -rf \"$GNUPGHOME\";     apt-get remove --purge --auto-remove -y gnupg1 && rm -rf /var/lib/apt/lists/*     && dpkgArch=\"$(dpkg --print-architecture)\"     && nginxPackages=\"         nginx=${NGINX_VERSION}-${PKG_RELEASE}         nginx-module-xslt=${NGINX_VERSION}-${DYNPKG_RELEASE}         nginx-module-geoip=${NGINX_VERSION}-${DYNPKG_RELEASE}         nginx-module-image-filter=${NGINX_VERSION}-${DYNPKG_RELEASE}         nginx-module-njs=${NGINX_VERSION}+${NJS_VERSION}-${NJS_RELEASE}         nginx-module-acme=${NGINX_VERSION}+${ACME_VERSION}-${PKG_RELEASE}     \"     && case \"$dpkgArch\" in         amd64|arm64)             echo \"deb [signed-by=$NGINX_GPGKEY_PATH] https://nginx.org/packages/mainline/debian/ trixie nginx\" >> /etc/apt/sources.list.d/nginx.list             && apt-get update             ;;         *)             tempDir=\"$(mktemp -d)\"             && chmod 777 \"$tempDir\"                         && savedAptMark=\"$(apt-mark showmanual)\"                         && apt-get update             && apt-get install --no-install-recommends --no-install-suggests -y                 cargo                 curl                 devscripts                 equivs                 git                 libxml2-utils                 lsb-release                 xsltproc             && (                 cd \"$tempDir\"                 && export CARGO_HOME=\"$tempDir/.cargo\"                 && REVISION=\"${NGINX_VERSION}-${PKG_RELEASE}\"                 && REVISION=${REVISION%~*}                 && curl -f -L -O https://github.com/nginx/pkg-oss/archive/${REVISION}.tar.gz                 && PKGOSSCHECKSUM=\"7074c3ba1ece708140afd0220b16df77651fbb56cc012e901bc1c4a80531872b7a58ad97a28357646575ce625e94a0540796c045f95d33e40e6d3874ce7b3d79 *${REVISION}.tar.gz\"                 && if [ \"$(openssl sha512 -r ${REVISION}.tar.gz)\" = \"$PKGOSSCHECKSUM\" ]; then                     echo \"pkg-oss tarball checksum verification succeeded!\";                 else                     echo \"pkg-oss tarball checksum verification failed!\";                     exit 1;                 fi                 && tar xzvf ${REVISION}.tar.gz                 && cd pkg-oss-${REVISION}                 && cd debian                 && for target in base module-geoip module-image-filter module-njs module-xslt module-acme; do                     make rules-$target;                     mk-build-deps --install --tool=\"apt-get -o Debug::pkgProblemResolver=yes --no-install-recommends --yes\"                         debuild-$target/nginx-$NGINX_VERSION/debian/control;                 done                 && make base module-geoip module-image-filter module-njs module-xslt module-acme             )                         && apt-mark showmanual | xargs apt-mark auto > /dev/null             && { [ -z \"$savedAptMark\" ] || apt-mark manual $savedAptMark; }                         && ls -lAFh \"$tempDir\"             && ( cd \"$tempDir\" && dpkg-scanpackages . > Packages )             && grep '^Package: ' \"$tempDir/Packages\"             && echo \"deb [ trusted=yes ] file://$tempDir ./\" > /etc/apt/sources.list.d/temp.list             && apt-get -o Acquire::GzipIndexes=false update             ;;     esac         && apt-get install --no-install-recommends --no-install-suggests -y                         $nginxPackages                         gettext-base                         curl     && apt-get remove --purge --auto-remove -y && rm -rf /var/lib/apt/lists/* /etc/apt/sources.list.d/nginx.list         && if [ -n \"$tempDir\" ]; then         apt-get purge -y --auto-remove         && rm -rf \"$tempDir\" /etc/apt/sources.list.d/temp.list;     fi     && ln -sf /dev/stdout /var/log/nginx/access.log     && ln -sf /dev/stderr /var/log/nginx/error.log     && mkdir /docker-entrypoint.d # buildkit",
+    "CreatedSince": "6 months ago",
+    "ID": "<missing>",
+    "Size": "86.7MB"
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "CreatedAt": "2026-05-08T19:22:39Z",
+    "CreatedBy": "ENV DYNPKG_RELEASE=1~trixie",
+    "CreatedSince": "6 months ago",
+    "ID": "<missing>",
+    "Size": "0B"
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "CreatedAt": "2026-05-08T19:22:39Z",
+    "CreatedBy": "ENV PKG_RELEASE=1~trixie",
+    "CreatedSince": "6 months ago",
+    "ID": "<missing>",
+    "Size": "0B"
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "CreatedAt": "2026-05-08T19:22:39Z",
+    "CreatedBy": "ENV ACME_VERSION=0.3.1",
+    "CreatedSince": "6 months ago",
+    "ID": "<missing>",
+    "Size": "0B"
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "CreatedAt": "2026-05-08T19:22:39Z",
+    "CreatedBy": "ENV NJS_RELEASE=1~trixie",
+    "CreatedSince": "6 months ago",
+    "ID": "<missing>",
+    "Size": "0B"
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "CreatedAt": "2026-05-08T19:22:39Z",
+    "CreatedBy": "ENV NJS_VERSION=0.9.6",
+    "CreatedSince": "6 months ago",
+    "ID": "<missing>",
+    "Size": "0B"
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "CreatedAt": "2026-05-08T19:22:39Z",
+    "CreatedBy": "ENV NGINX_VERSION=1.29.8",
+    "CreatedSince": "6 months ago",
+    "ID": "<missing>",
+    "Size": "0B"
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "CreatedAt": "2026-05-08T19:22:39Z",
+    "CreatedBy": "LABEL maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>",
+    "CreatedSince": "6 months ago",
+    "ID": "<missing>",
+    "Size": "0B"
+   },
+   {
+    "Comment": "debuerreotype 0.17",
+    "CreatedAt": "2026-05-05T00:00:00Z",
+    "CreatedBy": "# debian.sh --arch 'amd64' out/ 'trixie' '@1777939200'",
+    "CreatedSince": "6 months ago",
+    "ID": "<missing>",
+    "Size": "87.4MB"
+   }
+  ],
+  "ls": {
+   "Containers": "0",
+   "CreatedAt": "2026-05-08 19:22:39 +0000 UTC",
+   "CreatedSince": "6 months ago",
+   "Digest": "<none>",
+   "ID": "1881968aff6f",
+   "Repository": "nginx",
+   "SharedSize": "N/A",
+   "Size": "240MB",
+   "Tag": "1.29",
+   "UniqueSize": "N/A"
+  },
+  "index": {
+   "manifests": [
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "amd64",
+      "org.opencontainers.image.base.digest": "sha256:486b1c3d3a6a836d2518d5ac1a7b522050a034ae83b47c063fd45d550b2b9dbf",
+      "org.opencontainers.image.base.name": "debian:trixie-slim",
+      "org.opencontainers.image.created": "2026-05-08T19:22:14Z",
+      "org.opencontainers.image.revision": "71081b25390771f6b1275ddf7c73c965f304493f",
+      "org.opencontainers.image.source": "https://github.com/nginx/docker-nginx.git#71081b25390771f6b1275ddf7c73c965f304493f:mainline/debian",
+      "org.opencontainers.image.url": "https://hub.docker.com/_/nginx",
+      "org.opencontainers.image.version": "1.29.8"
+     },
+     "digest": "sha256:ab15d428b6a7121511a38221591a41f835933ac16f996fafd102d128a0fa20f7",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "amd64",
+      "os": "linux"
+     },
+     "size": 2290
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "amd64",
+      "vnd.docker.reference.digest": "sha256:ab15d428b6a7121511a38221591a41f835933ac16f996fafd102d128a0fa20f7",
+      "vnd.docker.reference.type": "attestation-manifest"
+     },
+     "digest": "sha256:bf34a2efe16261f3df780ef1aaa3d34d2e2f85d7257b3ffc1b20f78de52a41f6",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "unknown",
+      "os": "unknown"
+     },
+     "size": 841
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "arm32v5",
+      "org.opencontainers.image.base.digest": "sha256:96352c4f00ccac39e61d059eb3c1a8fdf83f15a22b76c107d424292c6e57760f",
+      "org.opencontainers.image.base.name": "debian:trixie-slim",
+      "org.opencontainers.image.created": "2026-05-08T20:26:35Z",
+      "org.opencontainers.image.revision": "71081b25390771f6b1275ddf7c73c965f304493f",
+      "org.opencontainers.image.source": "https://github.com/nginx/docker-nginx.git#71081b25390771f6b1275ddf7c73c965f304493f:mainline/debian",
+      "org.opencontainers.image.url": "https://hub.docker.com/_/nginx",
+      "org.opencontainers.image.version": "1.29.8"
+     },
+     "digest": "sha256:ffc53e3b7885c0c44499b6e3635d93a32ca984cabd27b5126f08b7fdc25dc42d",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "arm",
+      "os": "linux",
+      "variant": "v5"
+     },
+     "size": 2292
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "arm32v5",
+      "vnd.docker.reference.digest": "sha256:ffc53e3b7885c0c44499b6e3635d93a32ca984cabd27b5126f08b7fdc25dc42d",
+      "vnd.docker.reference.type": "attestation-manifest"
+     },
+     "digest": "sha256:8d604642559c01a032a83a2a0b9844e6f6e5c03c31e5ecac5298e89e55bd8eb4",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "unknown",
+      "os": "unknown"
+     },
+     "size": 841
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "arm32v7",
+      "org.opencontainers.image.base.digest": "sha256:26b3b2d062679e908991b577333eac289599a226847725e747be730925987a20",
+      "org.opencontainers.image.base.name": "debian:trixie-slim",
+      "org.opencontainers.image.created": "2026-05-08T19:16:08Z",
+      "org.opencontainers.image.revision": "71081b25390771f6b1275ddf7c73c965f304493f",
+      "org.opencontainers.image.source": "https://github.com/nginx/docker-nginx.git#71081b25390771f6b1275ddf7c73c965f304493f:mainline/debian",
+      "org.opencontainers.image.url": "https://hub.docker.com/_/nginx",
+      "org.opencontainers.image.version": "1.29.8"
+     },
+     "digest": "sha256:cb4a8f310edfae454ff42daeb7e4e855ea4d97dee92cc74e7581860ec7e73d38",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "arm",
+      "os": "linux",
+      "variant": "v7"
+     },
+     "size": 2292
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "arm32v7",
+      "vnd.docker.reference.digest": "sha256:cb4a8f310edfae454ff42daeb7e4e855ea4d97dee92cc74e7581860ec7e73d38",
+      "vnd.docker.reference.type": "attestation-manifest"
+     },
+     "digest": "sha256:cf946a95afdc479c45d9f67c2f466dd10d490cc4c5432dfb4ae4680a34954091",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "unknown",
+      "os": "unknown"
+     },
+     "size": 841
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "arm64v8",
+      "org.opencontainers.image.base.digest": "sha256:b336514d078279b73836602c7d199d8aa9405afb97080ada9a6087b44200ddd2",
+      "org.opencontainers.image.base.name": "debian:trixie-slim",
+      "org.opencontainers.image.created": "2026-05-08T19:21:10Z",
+      "org.opencontainers.image.revision": "71081b25390771f6b1275ddf7c73c965f304493f",
+      "org.opencontainers.image.source": "https://github.com/nginx/docker-nginx.git#71081b25390771f6b1275ddf7c73c965f304493f:mainline/debian",
+      "org.opencontainers.image.url": "https://hub.docker.com/_/nginx",
+      "org.opencontainers.image.version": "1.29.8"
+     },
+     "digest": "sha256:c5c2b964a499822699fdf5e520bf8a3c2cc6434f8caac07a2028d7f3023b9972",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "arm64",
+      "os": "linux",
+      "variant": "v8"
+     },
+     "size": 2292
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "arm64v8",
+      "vnd.docker.reference.digest": "sha256:c5c2b964a499822699fdf5e520bf8a3c2cc6434f8caac07a2028d7f3023b9972",
+      "vnd.docker.reference.type": "attestation-manifest"
+     },
+     "digest": "sha256:ed5a410d4e00c9c70c0f7e76b9e27d32b4db688d581b1797fded4c543bb19041",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "unknown",
+      "os": "unknown"
+     },
+     "size": 841
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "i386",
+      "org.opencontainers.image.base.digest": "sha256:832c022b204deef9ee6ad281656311ea548395229c609df04c2c3e741139d76c",
+      "org.opencontainers.image.base.name": "debian:trixie-slim",
+      "org.opencontainers.image.created": "2026-05-08T19:17:18Z",
+      "org.opencontainers.image.revision": "71081b25390771f6b1275ddf7c73c965f304493f",
+      "org.opencontainers.image.source": "https://github.com/nginx/docker-nginx.git#71081b25390771f6b1275ddf7c73c965f304493f:mainline/debian",
+      "org.opencontainers.image.url": "https://hub.docker.com/_/nginx",
+      "org.opencontainers.image.version": "1.29.8"
+     },
+     "digest": "sha256:b3e4fcd73ae4790c7b1a3fa657775334885ec2ba6b846363f377e44ae1fa9569",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "386",
+      "os": "linux"
+     },
+     "size": 2289
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "i386",
+      "vnd.docker.reference.digest": "sha256:b3e4fcd73ae4790c7b1a3fa657775334885ec2ba6b846363f377e44ae1fa9569",
+      "vnd.docker.reference.type": "attestation-manifest"
+     },
+     "digest": "sha256:29f8792d7768eb6c447cbcc1833da24cbe895315aaf6c2349db3e52d41afb04f",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "unknown",
+      "os": "unknown"
+     },
+     "size": 841
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "ppc64le",
+      "org.opencontainers.image.base.digest": "sha256:91b5c54079cb7d155788d6850cfb6cb7fdc2d144616415bc8b79205904466002",
+      "org.opencontainers.image.base.name": "debian:trixie-slim",
+      "org.opencontainers.image.created": "2026-05-08T20:35:39Z",
+      "org.opencontainers.image.revision": "71081b25390771f6b1275ddf7c73c965f304493f",
+      "org.opencontainers.image.source": "https://github.com/nginx/docker-nginx.git#71081b25390771f6b1275ddf7c73c965f304493f:mainline/debian",
+      "org.opencontainers.image.url": "https://hub.docker.com/_/nginx",
+      "org.opencontainers.image.version": "1.29.8"
+     },
+     "digest": "sha256:aa5111c369c4db3c2337046adacc924f3bed87f5d9b2932fb84ee2e955d424ee",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "ppc64le",
+      "os": "linux"
+     },
+     "size": 2292
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "ppc64le",
+      "vnd.docker.reference.digest": "sha256:aa5111c369c4db3c2337046adacc924f3bed87f5d9b2932fb84ee2e955d424ee",
+      "vnd.docker.reference.type": "attestation-manifest"
+     },
+     "digest": "sha256:f179eef9565391f0b072f7e8a8b0d63d27421d175436bf54c47e5af9bc6589e6",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "unknown",
+      "os": "unknown"
+     },
+     "size": 841
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "riscv64",
+      "org.opencontainers.image.base.digest": "sha256:6dd26b2cf06f266ccd28c5c5fed564e6595bd8f1dbeb97036a2576aedd17253e",
+      "org.opencontainers.image.base.name": "debian:trixie-slim",
+      "org.opencontainers.image.created": "2026-05-09T16:24:33Z",
+      "org.opencontainers.image.revision": "71081b25390771f6b1275ddf7c73c965f304493f",
+      "org.opencontainers.image.source": "https://github.com/nginx/docker-nginx.git#71081b25390771f6b1275ddf7c73c965f304493f:mainline/debian",
+      "org.opencontainers.image.url": "https://hub.docker.com/_/nginx",
+      "org.opencontainers.image.version": "1.29.8"
+     },
+     "digest": "sha256:6b6f696d2fc48167cbd86e6c334eb20b71f3b00949829e924362e9bcc41b8484",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "riscv64",
+      "os": "linux"
+     },
+     "size": 2292
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "riscv64",
+      "vnd.docker.reference.digest": "sha256:6b6f696d2fc48167cbd86e6c334eb20b71f3b00949829e924362e9bcc41b8484",
+      "vnd.docker.reference.type": "attestation-manifest"
+     },
+     "digest": "sha256:a5f64f4c91e1cdec5cd2510764ba7310dc58206518cfe87bd3ca9b3e4d6ef9de",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "unknown",
+      "os": "unknown"
+     },
+     "size": 841
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "s390x",
+      "org.opencontainers.image.base.digest": "sha256:0326549625a165f69a7247aebd7a14ef19d5cc599550ba3189dd42f03c63dece",
+      "org.opencontainers.image.base.name": "debian:trixie-slim",
+      "org.opencontainers.image.created": "2026-05-08T19:18:05Z",
+      "org.opencontainers.image.revision": "71081b25390771f6b1275ddf7c73c965f304493f",
+      "org.opencontainers.image.source": "https://github.com/nginx/docker-nginx.git#71081b25390771f6b1275ddf7c73c965f304493f:mainline/debian",
+      "org.opencontainers.image.url": "https://hub.docker.com/_/nginx",
+      "org.opencontainers.image.version": "1.29.8"
+     },
+     "digest": "sha256:525129cffca205d9d4bbd41ce13bcbb47defb59b289d1972fa0589ec0cfe7515",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "s390x",
+      "os": "linux"
+     },
+     "size": 2290
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "s390x",
+      "vnd.docker.reference.digest": "sha256:525129cffca205d9d4bbd41ce13bcbb47defb59b289d1972fa0589ec0cfe7515",
+      "vnd.docker.reference.type": "attestation-manifest"
+     },
+     "digest": "sha256:72bd423eb7f162961d1b0f42c6980fbc696fe69e715854411298b9b03c6d5495",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "unknown",
+      "os": "unknown"
+     },
+     "size": 841
+    }
+   ],
+   "mediaType": "application/vnd.oci.image.index.v1+json",
+   "schemaVersion": 2
+  },
+  "manifest": {
+   "schemaVersion": 2,
+   "mediaType": "application/vnd.oci.image.manifest.v1+json",
+   "config": {
+    "mediaType": "application/vnd.oci.image.config.v1+json",
+    "digest": "sha256:5dfe511714e1fa9a9d1074193a6cc7fa0feab5d680be166336817a5fb57f4cbd",
+    "size": 9085
+   },
+   "layers": [
+    {
+     "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+     "digest": "sha256:57fb71246055257a374deb7564ceca10f43c2352572b501efc08add5d24ebb61",
+     "size": 29780226
+    },
+    {
+     "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+     "digest": "sha256:38a7e44929f3a02caf5d606403b9c7f843cf5fd963a30bd77d9a4deea44cc4e0",
+     "size": 33157664
+    },
+    {
+     "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+     "digest": "sha256:6e9f32fdbd611e27f05fbb3d972c3cbd1d9ce01dcf9743667b551f37a12b9d7a",
+     "size": 628
+    },
+    {
+     "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+     "digest": "sha256:382a36159731b6c4f15992b4542ad824d7a1d3dee549d696ec8d4af8f0718466",
+     "size": 956
+    },
+    {
+     "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+     "digest": "sha256:20d41cd6829d6a76246d76ad30405271259064cd1465c2f49b8f0f03a63675f5",
+     "size": 404
+    },
+    {
+     "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+     "digest": "sha256:83742381311ab223ac476c81482f79c2fd5f8cade0fdd7c3ee92574649e9ace7",
+     "size": 1210
+    },
+    {
+     "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+     "digest": "sha256:8e9b53b630dedfac569c0b3484f367dd8bdaa437b2dcff5c453b742fcba600cf",
+     "size": 1398
+    }
+   ],
+   "annotations": {
+    "com.docker.official-images.bashbrew.arch": "amd64",
+    "org.opencontainers.image.base.digest": "sha256:486b1c3d3a6a836d2518d5ac1a7b522050a034ae83b47c063fd45d550b2b9dbf",
+    "org.opencontainers.image.base.name": "debian:trixie-slim",
+    "org.opencontainers.image.created": "2026-05-08T19:22:14Z",
+    "org.opencontainers.image.revision": "71081b25390771f6b1275ddf7c73c965f304493f",
+    "org.opencontainers.image.source": "https://github.com/nginx/docker-nginx.git#71081b25390771f6b1275ddf7c73c965f304493f:mainline/debian",
+    "org.opencontainers.image.url": "https://hub.docker.com/_/nginx",
+    "org.opencontainers.image.version": "1.29.8"
+   }
+  },
+  "manifestDigest": "sha256:ab15d428b6a7121511a38221591a41f835933ac16f996fafd102d128a0fa20f7",
+  "attestation": {
+   "schemaVersion": 2,
+   "mediaType": "application/vnd.oci.image.manifest.v1+json",
+   "config": {
+    "mediaType": "application/vnd.oci.image.config.v1+json",
+    "digest": "sha256:227a3c065451c87289fecd47d877c748ac4b18e72a93ee048b2510b7a1af14a4",
+    "size": 241
+   },
+   "layers": [
+    {
+     "mediaType": "application/vnd.in-toto+json",
+     "digest": "sha256:46ca9676efb5324d0e9202a7d8039ab077152bfb09643c57ae03ada397aef054",
+     "size": 2817297,
+     "annotations": {
+      "in-toto.io/predicate-type": "https://spdx.dev/Document"
+     }
+    },
+    {
+     "mediaType": "application/vnd.in-toto+json",
+     "digest": "sha256:94a543ead0f2dd25d2f358731e00896251953fdd7696fea1bee0e7d82ac7e9e4",
+     "size": 35156,
+     "annotations": {
+      "in-toto.io/predicate-type": "https://slsa.dev/provenance/v0.2"
+     }
+    }
+   ]
+  },
+  "fs": "nginx-1.29.json",
+  "fsSoni": 5008,
+  "imageLs": "IMAGE        ID             DISK USAGE   CONTENT SIZE   EXTRA\nnginx:1.29   1881968aff6f        240MB         65.8MB        \n",
+  "systemDf": "TYPE            TOTAL     ACTIVE    SIZE      RECLAIMABLE\nImages          1         0         240MB     240MB (99%)\nContainers      0         0         0B        0B\nLocal Volumes   0         0         0B        0B\nBuild Cache     0         0         0B        0B\n",
+  "systemDfV": "{\"Images\":[{\"Containers\":\"0\",\"CreatedAt\":\"2026-05-08 19:22:39 +0000 UTC\",\"CreatedSince\":\"6 months ago\",\"Digest\":\"\",\"ID\":\"sha256:1881968aff6f7cdcc4b888c00a11f4ce241ad7ec957e0cb4a9e19e93a3ff87ea\",\"Repository\":\"nginx\",\"SharedSize\":\"0B\",\"Size\":\"240MB\",\"Tag\":\"1.29\",\"UniqueSize\":\"240MB\"}],\"Containers\":[],\"Volumes\":[],\"BuildCache\":[]}"
+ },
+ "debian:latest": {
+  "repo": "debian",
+  "digest": "sha256:9c6e381421d0f48d1b8133e573f33c185ee16cbf505eda9c4a8a4791b25ea8a6",
+  "inspect": {
+   "Id": "sha256:9c6e381421d0f48d1b8133e573f33c185ee16cbf505eda9c4a8a4791b25ea8a6",
+   "RepoTags": [
+    "debian:latest"
+   ],
+   "RepoDigests": [
+    "debian@sha256:9c6e381421d0f48d1b8133e573f33c185ee16cbf505eda9c4a8a4791b25ea8a6"
+   ],
+   "Comment": "debuerreotype 0.17",
+   "Created": "2026-11-04T21:23:39Z",
+   "Config": {
+    "Env": [
+     "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+    ],
+    "Cmd": [
+     "bash"
+    ]
+   },
+   "Architecture": "amd64",
+   "Os": "linux",
+   "Size": 183684956,
+   "RootFS": {
+    "Type": "layers",
+    "Layers": [
+     "sha256:f487d0da9ce0cd3b17ddb89deff39644274b08f2ff71e321a9e0e476ec2d46fe"
+    ]
+   },
+   "Metadata": {
+    "LastTagTime": "2026-11-23T05:00:04.59500117Z"
+   },
+   "Descriptor": {
+    "mediaType": "application/vnd.oci.image.index.v1+json",
+    "digest": "sha256:9c6e381421d0f48d1b8133e573f33c185ee16cbf505eda9c4a8a4791b25ea8a6",
+    "size": 8933
+   },
+   "Identity": {
+    "Pull": [
+     {
+      "Repository": "docker.io/library/debian"
+     }
+    ]
+   }
+  },
+  "history": [
+   {
+    "Comment": "debuerreotype 0.17",
+    "CreatedAt": "2026-11-04T21:23:39Z",
+    "CreatedBy": "# debian.sh --arch 'amd64' out/ 'trixie' '@1793827419'",
+    "CreatedSince": "2 weeks ago",
+    "ID": "sha256:9c6e381421d0f48d1b8133e573f33c185ee16cbf505eda9c4a8a4791b25ea8a6",
+    "Size": "134MB"
+   }
+  ],
+  "ls": {
+   "Containers": "0",
+   "CreatedAt": "2026-11-04 21:23:39 +0000 UTC",
+   "CreatedSince": "2 weeks ago",
+   "Digest": "<none>",
+   "ID": "9c6e381421d0",
+   "Repository": "debian",
+   "SharedSize": "N/A",
+   "Size": "187MB",
+   "Tag": "latest",
+   "UniqueSize": "N/A"
+  },
+  "index": {
+   "manifests": [
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "amd64",
+      "org.opencontainers.image.base.name": "scratch",
+      "org.opencontainers.image.created": "2026-11-04T00:00:00Z",
+      "org.opencontainers.image.revision": "373f61a386722a989c79f0c11f23fcf379b56e94",
+      "org.opencontainers.image.source": "https://github.com/debuerreotype/docker-debian-artifacts.git",
+      "org.opencontainers.image.url": "https://hub.docker.com/_/debian",
+      "org.opencontainers.image.version": "trixie"
+     },
+     "digest": "sha256:bfc36aecdece0387418759dba474aa856c026ca8087da3606b41b90ab0509c99",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "amd64",
+      "os": "linux"
+     },
+     "size": 1021
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "amd64",
+      "vnd.docker.reference.digest": "sha256:bfc36aecdece0387418759dba474aa856c026ca8087da3606b41b90ab0509c99",
+      "vnd.docker.reference.type": "attestation-manifest"
+     },
+     "digest": "sha256:88f6a81da534641d9e9e6b9b3c7d497d26b5a7fce334891f0073dd5b5b41f457",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "unknown",
+      "os": "unknown"
+     },
+     "size": 562
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "arm32v5",
+      "org.opencontainers.image.base.name": "scratch",
+      "org.opencontainers.image.created": "2026-11-04T00:00:00Z",
+      "org.opencontainers.image.revision": "dd6f3435dc0bc25e4a14a962cdd9ef6a50894891",
+      "org.opencontainers.image.source": "https://github.com/debuerreotype/docker-debian-artifacts.git",
+      "org.opencontainers.image.url": "https://hub.docker.com/_/debian",
+      "org.opencontainers.image.version": "trixie"
+     },
+     "digest": "sha256:7fc6ddeb9c65f0a164c055948a91fcc456aa655b0cfab83fd1469368c437ccd4",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "arm",
+      "os": "linux",
+      "variant": "v5"
+     },
+     "size": 1037
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "arm32v5",
+      "vnd.docker.reference.digest": "sha256:7fc6ddeb9c65f0a164c055948a91fcc456aa655b0cfab83fd1469368c437ccd4",
+      "vnd.docker.reference.type": "attestation-manifest"
+     },
+     "digest": "sha256:54d90f8ab7ecf1dfe9f978362944fc4df8f973ac8018c382dff0b5dd1f1abfc6",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "unknown",
+      "os": "unknown"
+     },
+     "size": 562
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "arm32v7",
+      "org.opencontainers.image.base.name": "scratch",
+      "org.opencontainers.image.created": "2026-11-04T00:00:00Z",
+      "org.opencontainers.image.revision": "7978fc031d5b52b4496cff0bafb95b9bc828c79a",
+      "org.opencontainers.image.source": "https://github.com/debuerreotype/docker-debian-artifacts.git",
+      "org.opencontainers.image.url": "https://hub.docker.com/_/debian",
+      "org.opencontainers.image.version": "trixie"
+     },
+     "digest": "sha256:4220a655ef92cf9f4bea07e6dc36b55193268feb1176b54e955e05027cf18af2",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "arm",
+      "os": "linux",
+      "variant": "v7"
+     },
+     "size": 1037
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "arm32v7",
+      "vnd.docker.reference.digest": "sha256:4220a655ef92cf9f4bea07e6dc36b55193268feb1176b54e955e05027cf18af2",
+      "vnd.docker.reference.type": "attestation-manifest"
+     },
+     "digest": "sha256:c0696d831b418e635fc890c62ab6f82f46cef45d6e381f4c8210864dfb9ce8a1",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "unknown",
+      "os": "unknown"
+     },
+     "size": 562
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "arm64v8",
+      "org.opencontainers.image.base.name": "scratch",
+      "org.opencontainers.image.created": "2026-11-04T00:00:00Z",
+      "org.opencontainers.image.revision": "3b26c3995c7fae47d95ba678632a3520e97054f7",
+      "org.opencontainers.image.source": "https://github.com/debuerreotype/docker-debian-artifacts.git",
+      "org.opencontainers.image.url": "https://hub.docker.com/_/debian",
+      "org.opencontainers.image.version": "trixie"
+     },
+     "digest": "sha256:e529717ccc8118a0b9d38525f2b4e78cf150dbe470ad60d733c7c0023cabc3b0",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "arm64",
+      "os": "linux",
+      "variant": "v8"
+     },
+     "size": 1041
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "arm64v8",
+      "vnd.docker.reference.digest": "sha256:e529717ccc8118a0b9d38525f2b4e78cf150dbe470ad60d733c7c0023cabc3b0",
+      "vnd.docker.reference.type": "attestation-manifest"
+     },
+     "digest": "sha256:47494f25065fb3529e91bd44749a5a4e82ecf1f63e59a8ef6b87bca5a6e41b3f",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "unknown",
+      "os": "unknown"
+     },
+     "size": 562
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "i386",
+      "org.opencontainers.image.base.name": "scratch",
+      "org.opencontainers.image.created": "2026-11-04T00:00:00Z",
+      "org.opencontainers.image.revision": "b857e9d160eb0e9a3825bd4c44577358ea11ecf2",
+      "org.opencontainers.image.source": "https://github.com/debuerreotype/docker-debian-artifacts.git",
+      "org.opencontainers.image.url": "https://hub.docker.com/_/debian",
+      "org.opencontainers.image.version": "trixie"
+     },
+     "digest": "sha256:c97ba8326de7edf8219dbf75c69fe685e849a987ac333c428a3e1735d16933f9",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "386",
+      "os": "linux"
+     },
+     "size": 1017
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "i386",
+      "vnd.docker.reference.digest": "sha256:c97ba8326de7edf8219dbf75c69fe685e849a987ac333c428a3e1735d16933f9",
+      "vnd.docker.reference.type": "attestation-manifest"
+     },
+     "digest": "sha256:76d3a8ae15859e33dfa60dfb389edc0744d689266aaade31964540d6f23bb785",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "unknown",
+      "os": "unknown"
+     },
+     "size": 562
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "ppc64le",
+      "org.opencontainers.image.base.name": "scratch",
+      "org.opencontainers.image.created": "2026-11-04T00:00:00Z",
+      "org.opencontainers.image.revision": "211b07f189a0381e26bfcfe44388fc6dc35538e4",
+      "org.opencontainers.image.source": "https://github.com/debuerreotype/docker-debian-artifacts.git",
+      "org.opencontainers.image.url": "https://hub.docker.com/_/debian",
+      "org.opencontainers.image.version": "trixie"
+     },
+     "digest": "sha256:cdf03b6c4612c20168b4409c33b38180f1e61ca71fece703f86079c0f2aaf2ed",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "ppc64le",
+      "os": "linux"
+     },
+     "size": 1025
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "ppc64le",
+      "vnd.docker.reference.digest": "sha256:cdf03b6c4612c20168b4409c33b38180f1e61ca71fece703f86079c0f2aaf2ed",
+      "vnd.docker.reference.type": "attestation-manifest"
+     },
+     "digest": "sha256:263313fa80472de7460606487c0e5533e02e4a57fc0fdbe8b9338f4854aabc34",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "unknown",
+      "os": "unknown"
+     },
+     "size": 562
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "riscv64",
+      "org.opencontainers.image.base.name": "scratch",
+      "org.opencontainers.image.created": "2026-11-04T00:00:00Z",
+      "org.opencontainers.image.revision": "d6c395f6ddd3c6e0ec727e195e3ff5cf640e1f0a",
+      "org.opencontainers.image.source": "https://github.com/debuerreotype/docker-debian-artifacts.git",
+      "org.opencontainers.image.url": "https://hub.docker.com/_/debian",
+      "org.opencontainers.image.version": "trixie"
+     },
+     "digest": "sha256:bb3d51f3c00c4aed93bae8652ed6a07c3c4cc59369c6cb36a6e1277949b9ca42",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "riscv64",
+      "os": "linux"
+     },
+     "size": 1025
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "riscv64",
+      "vnd.docker.reference.digest": "sha256:bb3d51f3c00c4aed93bae8652ed6a07c3c4cc59369c6cb36a6e1277949b9ca42",
+      "vnd.docker.reference.type": "attestation-manifest"
+     },
+     "digest": "sha256:c0657fc053370eee442d12035b0c2ae07629998179bd223e1ed4807f552046e3",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "unknown",
+      "os": "unknown"
+     },
+     "size": 562
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "s390x",
+      "org.opencontainers.image.base.name": "scratch",
+      "org.opencontainers.image.created": "2026-11-04T00:00:00Z",
+      "org.opencontainers.image.revision": "4e19cc089ef5e75ece1c34361db05f83d15cdc35",
+      "org.opencontainers.image.source": "https://github.com/debuerreotype/docker-debian-artifacts.git",
+      "org.opencontainers.image.url": "https://hub.docker.com/_/debian",
+      "org.opencontainers.image.version": "trixie"
+     },
+     "digest": "sha256:3519e169f1534783c89e0d7f317cd1cd45f6c437e4ea5e37e3da428cc711f5e7",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "s390x",
+      "os": "linux"
+     },
+     "size": 1021
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "s390x",
+      "vnd.docker.reference.digest": "sha256:3519e169f1534783c89e0d7f317cd1cd45f6c437e4ea5e37e3da428cc711f5e7",
+      "vnd.docker.reference.type": "attestation-manifest"
+     },
+     "digest": "sha256:2de02373bbbcf8b0452bd4e3c615e005ef937db6531d33a53a7b5114c71357c7",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "unknown",
+      "os": "unknown"
+     },
+     "size": 562
+    }
+   ],
+   "mediaType": "application/vnd.oci.image.index.v1+json",
+   "schemaVersion": 2
+  },
+  "manifest": {
+   "schemaVersion": 2,
+   "mediaType": "application/vnd.oci.image.manifest.v1+json",
+   "config": {
+    "mediaType": "application/vnd.oci.image.config.v1+json",
+    "digest": "sha256:51e269e6af18ae477f7880a0820f34863e34366c621d93b0dd939260ea62e59b",
+    "size": 451,
+    "data": "eyJjb25maWciOnsiRW52IjpbIlBBVEg9L3Vzci9sb2NhbC9zYmluOi91c3IvbG9jYWwvYmluOi91c3Ivc2JpbjovdXNyL2Jpbjovc2JpbjovYmluIl0sIkVudHJ5cG9pbnQiOltdLCJDbWQiOlsiYmFzaCJdfSwiY3JlYXRlZCI6IjIwMjYtMTEtMDRUMjE6MjM6MzlaIiwiaGlzdG9yeSI6W3siY3JlYXRlZCI6IjIwMjYtMTEtMDRUMjE6MjM6MzlaIiwiY3JlYXRlZF9ieSI6IiMgZGViaWFuLnNoIC0tYXJjaCAnYW1kNjQnIG91dC8gJ3RyaXhpZScgJ0AxNzkzODI3NDE5JyIsImNvbW1lbnQiOiJkZWJ1ZXJyZW90eXBlIDAuMTcifV0sInJvb3RmcyI6eyJ0eXBlIjoibGF5ZXJzIiwiZGlmZl9pZHMiOlsic2hhMjU2OmY0ODdkMGRhOWNlMGNkM2IxN2RkYjg5ZGVmZjM5NjQ0Mjc0YjA4ZjJmZjcxZTMyMWE5ZTBlNDc2ZWMyZDQ2ZmUiXX0sIm9zIjoibGludXgiLCJhcmNoaXRlY3R1cmUiOiJhbWQ2NCJ9Cg=="
+   },
+   "layers": [
+    {
+     "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+     "digest": "sha256:a6dd1c05fbba4f9028078a11f143cbb625d2408921eb8207bfa1dd1ad301276f",
+     "size": 49412508
+    }
+   ]
+  },
+  "manifestDigest": "sha256:bfc36aecdece0387418759dba474aa856c026ca8087da3606b41b90ab0509c99",
+  "attestation": {
+   "schemaVersion": 2,
+   "mediaType": "application/vnd.oci.image.manifest.v1+json",
+   "config": {
+    "mediaType": "application/vnd.oci.image.config.v1+json",
+    "digest": "sha256:bf419537ff6067f2c150129ccd186fc17e902cc53c9f0e716b5cc92a52235ac3",
+    "size": 167
+   },
+   "layers": [
+    {
+     "mediaType": "application/vnd.in-toto+json",
+     "digest": "sha256:a992b59d2ed9b0b7b03943f89cf91394e159db5ba082e747593e3f526ce8b892",
+     "size": 3180338,
+     "annotations": {
+      "in-toto.io/predicate-type": "https://spdx.dev/Document"
+     }
+    }
+   ]
+  },
+  "fs": "debian-latest.json",
+  "fsSoni": 5454,
+  "imageLs": "IMAGE           ID             DISK USAGE   CONTENT SIZE   EXTRA\ndebian:latest   9c6e381421d0        187MB         52.6MB        \n",
+  "systemDf": "TYPE            TOTAL     ACTIVE    SIZE      RECLAIMABLE\nImages          1         0         186.9MB   186.9MB (99%)\nContainers      0         0         0B        0B\nLocal Volumes   0         0         0B        0B\nBuild Cache     0         0         0B        0B\n",
+  "systemDfV": "{\"Images\":[{\"Containers\":\"0\",\"CreatedAt\":\"2026-11-04 21:23:39 +0000 UTC\",\"CreatedSince\":\"2 weeks ago\",\"Digest\":\"\",\"ID\":\"sha256:9c6e381421d0f48d1b8133e573f33c185ee16cbf505eda9c4a8a4791b25ea8a6\",\"Repository\":\"debian\",\"SharedSize\":\"0B\",\"Size\":\"187MB\",\"Tag\":\"latest\",\"UniqueSize\":\"186.9MB\"}],\"Containers\":[],\"Volumes\":[],\"BuildCache\":[]}"
+ },
+ "debian:trixie": {
+  "repo": "debian",
+  "digest": "sha256:9c6e381421d0f48d1b8133e573f33c185ee16cbf505eda9c4a8a4791b25ea8a6",
+  "inspect": {
+   "Id": "sha256:9c6e381421d0f48d1b8133e573f33c185ee16cbf505eda9c4a8a4791b25ea8a6",
+   "RepoTags": [
+    "debian:latest",
+    "debian:trixie"
+   ],
+   "RepoDigests": [
+    "debian@sha256:9c6e381421d0f48d1b8133e573f33c185ee16cbf505eda9c4a8a4791b25ea8a6"
+   ],
+   "Comment": "debuerreotype 0.17",
+   "Created": "2026-11-04T21:23:39Z",
+   "Config": {
+    "Env": [
+     "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+    ],
+    "Cmd": [
+     "bash"
+    ]
+   },
+   "Architecture": "amd64",
+   "Os": "linux",
+   "Size": 183684956,
+   "RootFS": {
+    "Type": "layers",
+    "Layers": [
+     "sha256:f487d0da9ce0cd3b17ddb89deff39644274b08f2ff71e321a9e0e476ec2d46fe"
+    ]
+   },
+   "Metadata": {
+    "LastTagTime": "2026-11-23T05:00:13.208639958Z"
+   },
+   "Descriptor": {
+    "mediaType": "application/vnd.oci.image.index.v1+json",
+    "digest": "sha256:9c6e381421d0f48d1b8133e573f33c185ee16cbf505eda9c4a8a4791b25ea8a6",
+    "size": 8933
+   },
+   "Identity": {
+    "Pull": [
+     {
+      "Repository": "docker.io/library/debian"
+     }
+    ]
+   }
+  },
+  "history": [
+   {
+    "Comment": "debuerreotype 0.17",
+    "CreatedAt": "2026-11-04T21:23:39Z",
+    "CreatedBy": "# debian.sh --arch 'amd64' out/ 'trixie' '@1793827419'",
+    "CreatedSince": "2 weeks ago",
+    "ID": "sha256:9c6e381421d0f48d1b8133e573f33c185ee16cbf505eda9c4a8a4791b25ea8a6",
+    "Size": "134MB"
+   }
+  ],
+  "ls": {
+   "Containers": "0",
+   "CreatedAt": "2026-11-04 21:23:39 +0000 UTC",
+   "CreatedSince": "2 weeks ago",
+   "Digest": "<none>",
+   "ID": "9c6e381421d0",
+   "Repository": "debian",
+   "SharedSize": "N/A",
+   "Size": "187MB",
+   "Tag": "trixie",
+   "UniqueSize": "N/A"
+  },
+  "index": {
+   "manifests": [
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "amd64",
+      "org.opencontainers.image.base.name": "scratch",
+      "org.opencontainers.image.created": "2026-11-04T00:00:00Z",
+      "org.opencontainers.image.revision": "373f61a386722a989c79f0c11f23fcf379b56e94",
+      "org.opencontainers.image.source": "https://github.com/debuerreotype/docker-debian-artifacts.git",
+      "org.opencontainers.image.url": "https://hub.docker.com/_/debian",
+      "org.opencontainers.image.version": "trixie"
+     },
+     "digest": "sha256:bfc36aecdece0387418759dba474aa856c026ca8087da3606b41b90ab0509c99",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "amd64",
+      "os": "linux"
+     },
+     "size": 1021
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "amd64",
+      "vnd.docker.reference.digest": "sha256:bfc36aecdece0387418759dba474aa856c026ca8087da3606b41b90ab0509c99",
+      "vnd.docker.reference.type": "attestation-manifest"
+     },
+     "digest": "sha256:88f6a81da534641d9e9e6b9b3c7d497d26b5a7fce334891f0073dd5b5b41f457",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "unknown",
+      "os": "unknown"
+     },
+     "size": 562
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "arm32v5",
+      "org.opencontainers.image.base.name": "scratch",
+      "org.opencontainers.image.created": "2026-11-04T00:00:00Z",
+      "org.opencontainers.image.revision": "dd6f3435dc0bc25e4a14a962cdd9ef6a50894891",
+      "org.opencontainers.image.source": "https://github.com/debuerreotype/docker-debian-artifacts.git",
+      "org.opencontainers.image.url": "https://hub.docker.com/_/debian",
+      "org.opencontainers.image.version": "trixie"
+     },
+     "digest": "sha256:7fc6ddeb9c65f0a164c055948a91fcc456aa655b0cfab83fd1469368c437ccd4",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "arm",
+      "os": "linux",
+      "variant": "v5"
+     },
+     "size": 1037
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "arm32v5",
+      "vnd.docker.reference.digest": "sha256:7fc6ddeb9c65f0a164c055948a91fcc456aa655b0cfab83fd1469368c437ccd4",
+      "vnd.docker.reference.type": "attestation-manifest"
+     },
+     "digest": "sha256:54d90f8ab7ecf1dfe9f978362944fc4df8f973ac8018c382dff0b5dd1f1abfc6",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "unknown",
+      "os": "unknown"
+     },
+     "size": 562
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "arm32v7",
+      "org.opencontainers.image.base.name": "scratch",
+      "org.opencontainers.image.created": "2026-11-04T00:00:00Z",
+      "org.opencontainers.image.revision": "7978fc031d5b52b4496cff0bafb95b9bc828c79a",
+      "org.opencontainers.image.source": "https://github.com/debuerreotype/docker-debian-artifacts.git",
+      "org.opencontainers.image.url": "https://hub.docker.com/_/debian",
+      "org.opencontainers.image.version": "trixie"
+     },
+     "digest": "sha256:4220a655ef92cf9f4bea07e6dc36b55193268feb1176b54e955e05027cf18af2",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "arm",
+      "os": "linux",
+      "variant": "v7"
+     },
+     "size": 1037
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "arm32v7",
+      "vnd.docker.reference.digest": "sha256:4220a655ef92cf9f4bea07e6dc36b55193268feb1176b54e955e05027cf18af2",
+      "vnd.docker.reference.type": "attestation-manifest"
+     },
+     "digest": "sha256:c0696d831b418e635fc890c62ab6f82f46cef45d6e381f4c8210864dfb9ce8a1",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "unknown",
+      "os": "unknown"
+     },
+     "size": 562
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "arm64v8",
+      "org.opencontainers.image.base.name": "scratch",
+      "org.opencontainers.image.created": "2026-11-04T00:00:00Z",
+      "org.opencontainers.image.revision": "3b26c3995c7fae47d95ba678632a3520e97054f7",
+      "org.opencontainers.image.source": "https://github.com/debuerreotype/docker-debian-artifacts.git",
+      "org.opencontainers.image.url": "https://hub.docker.com/_/debian",
+      "org.opencontainers.image.version": "trixie"
+     },
+     "digest": "sha256:e529717ccc8118a0b9d38525f2b4e78cf150dbe470ad60d733c7c0023cabc3b0",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "arm64",
+      "os": "linux",
+      "variant": "v8"
+     },
+     "size": 1041
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "arm64v8",
+      "vnd.docker.reference.digest": "sha256:e529717ccc8118a0b9d38525f2b4e78cf150dbe470ad60d733c7c0023cabc3b0",
+      "vnd.docker.reference.type": "attestation-manifest"
+     },
+     "digest": "sha256:47494f25065fb3529e91bd44749a5a4e82ecf1f63e59a8ef6b87bca5a6e41b3f",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "unknown",
+      "os": "unknown"
+     },
+     "size": 562
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "i386",
+      "org.opencontainers.image.base.name": "scratch",
+      "org.opencontainers.image.created": "2026-11-04T00:00:00Z",
+      "org.opencontainers.image.revision": "b857e9d160eb0e9a3825bd4c44577358ea11ecf2",
+      "org.opencontainers.image.source": "https://github.com/debuerreotype/docker-debian-artifacts.git",
+      "org.opencontainers.image.url": "https://hub.docker.com/_/debian",
+      "org.opencontainers.image.version": "trixie"
+     },
+     "digest": "sha256:c97ba8326de7edf8219dbf75c69fe685e849a987ac333c428a3e1735d16933f9",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "386",
+      "os": "linux"
+     },
+     "size": 1017
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "i386",
+      "vnd.docker.reference.digest": "sha256:c97ba8326de7edf8219dbf75c69fe685e849a987ac333c428a3e1735d16933f9",
+      "vnd.docker.reference.type": "attestation-manifest"
+     },
+     "digest": "sha256:76d3a8ae15859e33dfa60dfb389edc0744d689266aaade31964540d6f23bb785",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "unknown",
+      "os": "unknown"
+     },
+     "size": 562
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "ppc64le",
+      "org.opencontainers.image.base.name": "scratch",
+      "org.opencontainers.image.created": "2026-11-04T00:00:00Z",
+      "org.opencontainers.image.revision": "211b07f189a0381e26bfcfe44388fc6dc35538e4",
+      "org.opencontainers.image.source": "https://github.com/debuerreotype/docker-debian-artifacts.git",
+      "org.opencontainers.image.url": "https://hub.docker.com/_/debian",
+      "org.opencontainers.image.version": "trixie"
+     },
+     "digest": "sha256:cdf03b6c4612c20168b4409c33b38180f1e61ca71fece703f86079c0f2aaf2ed",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "ppc64le",
+      "os": "linux"
+     },
+     "size": 1025
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "ppc64le",
+      "vnd.docker.reference.digest": "sha256:cdf03b6c4612c20168b4409c33b38180f1e61ca71fece703f86079c0f2aaf2ed",
+      "vnd.docker.reference.type": "attestation-manifest"
+     },
+     "digest": "sha256:263313fa80472de7460606487c0e5533e02e4a57fc0fdbe8b9338f4854aabc34",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "unknown",
+      "os": "unknown"
+     },
+     "size": 562
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "riscv64",
+      "org.opencontainers.image.base.name": "scratch",
+      "org.opencontainers.image.created": "2026-11-04T00:00:00Z",
+      "org.opencontainers.image.revision": "d6c395f6ddd3c6e0ec727e195e3ff5cf640e1f0a",
+      "org.opencontainers.image.source": "https://github.com/debuerreotype/docker-debian-artifacts.git",
+      "org.opencontainers.image.url": "https://hub.docker.com/_/debian",
+      "org.opencontainers.image.version": "trixie"
+     },
+     "digest": "sha256:bb3d51f3c00c4aed93bae8652ed6a07c3c4cc59369c6cb36a6e1277949b9ca42",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "riscv64",
+      "os": "linux"
+     },
+     "size": 1025
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "riscv64",
+      "vnd.docker.reference.digest": "sha256:bb3d51f3c00c4aed93bae8652ed6a07c3c4cc59369c6cb36a6e1277949b9ca42",
+      "vnd.docker.reference.type": "attestation-manifest"
+     },
+     "digest": "sha256:c0657fc053370eee442d12035b0c2ae07629998179bd223e1ed4807f552046e3",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "unknown",
+      "os": "unknown"
+     },
+     "size": 562
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "s390x",
+      "org.opencontainers.image.base.name": "scratch",
+      "org.opencontainers.image.created": "2026-11-04T00:00:00Z",
+      "org.opencontainers.image.revision": "4e19cc089ef5e75ece1c34361db05f83d15cdc35",
+      "org.opencontainers.image.source": "https://github.com/debuerreotype/docker-debian-artifacts.git",
+      "org.opencontainers.image.url": "https://hub.docker.com/_/debian",
+      "org.opencontainers.image.version": "trixie"
+     },
+     "digest": "sha256:3519e169f1534783c89e0d7f317cd1cd45f6c437e4ea5e37e3da428cc711f5e7",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "s390x",
+      "os": "linux"
+     },
+     "size": 1021
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "s390x",
+      "vnd.docker.reference.digest": "sha256:3519e169f1534783c89e0d7f317cd1cd45f6c437e4ea5e37e3da428cc711f5e7",
+      "vnd.docker.reference.type": "attestation-manifest"
+     },
+     "digest": "sha256:2de02373bbbcf8b0452bd4e3c615e005ef937db6531d33a53a7b5114c71357c7",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "unknown",
+      "os": "unknown"
+     },
+     "size": 562
+    }
+   ],
+   "mediaType": "application/vnd.oci.image.index.v1+json",
+   "schemaVersion": 2
+  },
+  "manifest": {
+   "schemaVersion": 2,
+   "mediaType": "application/vnd.oci.image.manifest.v1+json",
+   "config": {
+    "mediaType": "application/vnd.oci.image.config.v1+json",
+    "digest": "sha256:51e269e6af18ae477f7880a0820f34863e34366c621d93b0dd939260ea62e59b",
+    "size": 451,
+    "data": "eyJjb25maWciOnsiRW52IjpbIlBBVEg9L3Vzci9sb2NhbC9zYmluOi91c3IvbG9jYWwvYmluOi91c3Ivc2JpbjovdXNyL2Jpbjovc2JpbjovYmluIl0sIkVudHJ5cG9pbnQiOltdLCJDbWQiOlsiYmFzaCJdfSwiY3JlYXRlZCI6IjIwMjYtMTEtMDRUMjE6MjM6MzlaIiwiaGlzdG9yeSI6W3siY3JlYXRlZCI6IjIwMjYtMTEtMDRUMjE6MjM6MzlaIiwiY3JlYXRlZF9ieSI6IiMgZGViaWFuLnNoIC0tYXJjaCAnYW1kNjQnIG91dC8gJ3RyaXhpZScgJ0AxNzkzODI3NDE5JyIsImNvbW1lbnQiOiJkZWJ1ZXJyZW90eXBlIDAuMTcifV0sInJvb3RmcyI6eyJ0eXBlIjoibGF5ZXJzIiwiZGlmZl9pZHMiOlsic2hhMjU2OmY0ODdkMGRhOWNlMGNkM2IxN2RkYjg5ZGVmZjM5NjQ0Mjc0YjA4ZjJmZjcxZTMyMWE5ZTBlNDc2ZWMyZDQ2ZmUiXX0sIm9zIjoibGludXgiLCJhcmNoaXRlY3R1cmUiOiJhbWQ2NCJ9Cg=="
+   },
+   "layers": [
+    {
+     "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+     "digest": "sha256:a6dd1c05fbba4f9028078a11f143cbb625d2408921eb8207bfa1dd1ad301276f",
+     "size": 49412508
+    }
+   ]
+  },
+  "manifestDigest": "sha256:bfc36aecdece0387418759dba474aa856c026ca8087da3606b41b90ab0509c99",
+  "attestation": {
+   "schemaVersion": 2,
+   "mediaType": "application/vnd.oci.image.manifest.v1+json",
+   "config": {
+    "mediaType": "application/vnd.oci.image.config.v1+json",
+    "digest": "sha256:bf419537ff6067f2c150129ccd186fc17e902cc53c9f0e716b5cc92a52235ac3",
+    "size": 167
+   },
+   "layers": [
+    {
+     "mediaType": "application/vnd.in-toto+json",
+     "digest": "sha256:a992b59d2ed9b0b7b03943f89cf91394e159db5ba082e747593e3f526ce8b892",
+     "size": 3180338,
+     "annotations": {
+      "in-toto.io/predicate-type": "https://spdx.dev/Document"
+     }
+    }
+   ]
+  },
+  "fs": "debian-latest.json",
+  "fsSoni": 5454,
+  "imageLs": "IMAGE           ID             DISK USAGE   CONTENT SIZE   EXTRA\ndebian:trixie   9c6e381421d0        187MB         52.6MB        \n",
+  "systemDf": "TYPE            TOTAL     ACTIVE    SIZE      RECLAIMABLE\nImages          1         0         186.9MB   186.9MB (99%)\nContainers      0         0         0B        0B\nLocal Volumes   0         0         0B        0B\nBuild Cache     0         0         0B        0B\n",
+  "systemDfV": "{\"Images\":[{\"Containers\":\"0\",\"CreatedAt\":\"2026-11-04 21:23:39 +0000 UTC\",\"CreatedSince\":\"2 weeks ago\",\"Digest\":\"\",\"ID\":\"sha256:9c6e381421d0f48d1b8133e573f33c185ee16cbf505eda9c4a8a4791b25ea8a6\",\"Repository\":\"debian\",\"SharedSize\":\"0B\",\"Size\":\"187MB\",\"Tag\":\"trixie\",\"UniqueSize\":\"186.9MB\"}],\"Containers\":[],\"Volumes\":[],\"BuildCache\":[]}"
+ },
+ "busybox:1.37": {
+  "repo": "busybox",
+  "digest": "sha256:a7dbc319b1438115a207e11930dc4bb3e643dcb3ec0bdd694bb36cd8fad289ec",
+  "inspect": {
+   "Id": "sha256:a7dbc319b1438115a207e11930dc4bb3e643dcb3ec0bdd694bb36cd8fad289ec",
+   "RepoTags": [
+    "busybox:1.37"
+   ],
+   "RepoDigests": [
+    "busybox@sha256:a7dbc319b1438115a207e11930dc4bb3e643dcb3ec0bdd694bb36cd8fad289ec"
+   ],
+   "Created": "2024-09-26T21:31:42Z",
+   "Config": {
+    "Env": [
+     "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+    ],
+    "Cmd": [
+     "sh"
+    ]
+   },
+   "Architecture": "amd64",
+   "Os": "linux",
+   "Size": 6767335,
+   "RootFS": {
+    "Type": "layers",
+    "Layers": [
+     "sha256:5a9bfd996c6d49c6c3cb4ddfb76e8d09cf16b6b7cf6601d1f2dffbdbc3edb5d4"
+    ]
+   },
+   "Metadata": {
+    "LastTagTime": "2026-11-23T05:00:17.633565412Z"
+   },
+   "Descriptor": {
+    "mediaType": "application/vnd.oci.image.index.v1+json",
+    "digest": "sha256:a7dbc319b1438115a207e11930dc4bb3e643dcb3ec0bdd694bb36cd8fad289ec",
+    "size": 9535
+   },
+   "Identity": {
+    "Pull": [
+     {
+      "Repository": "docker.io/library/busybox"
+     }
+    ]
+   }
+  },
+  "history": [
+   {
+    "Comment": "",
+    "CreatedAt": "2024-09-26T21:31:42Z",
+    "CreatedBy": "BusyBox 1.37.0 (glibc), Debian 13",
+    "CreatedSince": "2 years ago",
+    "ID": "sha256:a7dbc319b1438115a207e11930dc4bb3e643dcb3ec0bdd694bb36cd8fad289ec",
+    "Size": "4.55MB"
+   }
+  ],
+  "ls": {
+   "Containers": "0",
+   "CreatedAt": "2024-09-26 21:31:42 +0000 UTC",
+   "CreatedSince": "2 years ago",
+   "Digest": "<none>",
+   "ID": "a7dbc319b143",
+   "Repository": "busybox",
+   "SharedSize": "N/A",
+   "Size": "6.77MB",
+   "Tag": "1.37",
+   "UniqueSize": "N/A"
+  },
+  "index": {
+   "manifests": [
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "amd64",
+      "org.opencontainers.image.base.name": "scratch",
+      "org.opencontainers.image.created": "2026-09-08T23:04:09Z",
+      "org.opencontainers.image.revision": "066dbf90090ab2dbb905310fac2fa10ea39a7ba6",
+      "org.opencontainers.image.source": "https://github.com/docker-library/busybox.git",
+      "org.opencontainers.image.url": "https://hub.docker.com/_/busybox",
+      "org.opencontainers.image.version": "1.37.0-glibc"
+     },
+     "digest": "sha256:66a6306db78bf2dbf3487f293aa8d6990d8e506fdffab9cc43fe422becf886e4",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "amd64",
+      "os": "linux"
+     },
+     "size": 610
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "amd64",
+      "vnd.docker.reference.digest": "sha256:66a6306db78bf2dbf3487f293aa8d6990d8e506fdffab9cc43fe422becf886e4",
+      "vnd.docker.reference.type": "attestation-manifest"
+     },
+     "digest": "sha256:4c1f36753ad7ca27822b3caf7fa5ecb469b9a7ac64103b1d8bb5b0f286ea78f3",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "unknown",
+      "os": "unknown"
+     },
+     "size": 559
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "arm32v5",
+      "org.opencontainers.image.base.name": "scratch",
+      "org.opencontainers.image.created": "2026-09-08T23:04:09Z",
+      "org.opencontainers.image.revision": "98b8d3dcaae19060244c7efe41002d5ac989590c",
+      "org.opencontainers.image.source": "https://github.com/docker-library/busybox.git",
+      "org.opencontainers.image.url": "https://hub.docker.com/_/busybox",
+      "org.opencontainers.image.version": "1.37.0-glibc"
+     },
+     "digest": "sha256:88132f86ce62d9462471f3758c3080ee2709b782ece90f847f8c09b6fafc2bf7",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "arm",
+      "os": "linux",
+      "variant": "v5"
+     },
+     "size": 610
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "arm32v5",
+      "vnd.docker.reference.digest": "sha256:88132f86ce62d9462471f3758c3080ee2709b782ece90f847f8c09b6fafc2bf7",
+      "vnd.docker.reference.type": "attestation-manifest"
+     },
+     "digest": "sha256:8c65029ccb063b50c7d99c3385df7a6f6ca8758c46a781c65f992576f19e75bd",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "unknown",
+      "os": "unknown"
+     },
+     "size": 559
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "arm32v6",
+      "org.opencontainers.image.base.name": "scratch",
+      "org.opencontainers.image.created": "2026-10-27T01:06:59Z",
+      "org.opencontainers.image.revision": "8ac3442552ef4af81b366361bed845f9cd80c35d",
+      "org.opencontainers.image.source": "https://github.com/docker-library/busybox.git",
+      "org.opencontainers.image.url": "https://hub.docker.com/_/busybox",
+      "org.opencontainers.image.version": "1.37.0-musl"
+     },
+     "digest": "sha256:6d857b42a8c6cec7daeb9ec3e3232960a79e424a1f9f919eb09886f731415d37",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "arm",
+      "os": "linux",
+      "variant": "v6"
+     },
+     "size": 608
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "arm32v7",
+      "org.opencontainers.image.base.name": "scratch",
+      "org.opencontainers.image.created": "2026-09-08T23:04:09Z",
+      "org.opencontainers.image.revision": "00b331050fbeb638579951c8360998e131c68f28",
+      "org.opencontainers.image.source": "https://github.com/docker-library/busybox.git",
+      "org.opencontainers.image.url": "https://hub.docker.com/_/busybox",
+      "org.opencontainers.image.version": "1.37.0-glibc"
+     },
+     "digest": "sha256:91aa2a66a996afa9821eed6758ed0489ee891c50f4b8940b7b3db500b79f029f",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "arm",
+      "os": "linux",
+      "variant": "v7"
+     },
+     "size": 610
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "arm32v7",
+      "vnd.docker.reference.digest": "sha256:91aa2a66a996afa9821eed6758ed0489ee891c50f4b8940b7b3db500b79f029f",
+      "vnd.docker.reference.type": "attestation-manifest"
+     },
+     "digest": "sha256:279b93ed4487cad22ab549f54a184788ceff616b149fa61b84adc3b62cfd440c",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "unknown",
+      "os": "unknown"
+     },
+     "size": 559
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "arm64v8",
+      "org.opencontainers.image.base.name": "scratch",
+      "org.opencontainers.image.created": "2026-09-08T23:04:09Z",
+      "org.opencontainers.image.revision": "b6edf7d5c5200d629d7c3f7758293a3675471dde",
+      "org.opencontainers.image.source": "https://github.com/docker-library/busybox.git",
+      "org.opencontainers.image.url": "https://hub.docker.com/_/busybox",
+      "org.opencontainers.image.version": "1.37.0-glibc"
+     },
+     "digest": "sha256:d82c2ab94640ded77cf76514ce6a84870761105058a4a9e51b05a8a79be97a6c",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "arm64",
+      "os": "linux",
+      "variant": "v8"
+     },
+     "size": 610
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "arm64v8",
+      "vnd.docker.reference.digest": "sha256:d82c2ab94640ded77cf76514ce6a84870761105058a4a9e51b05a8a79be97a6c",
+      "vnd.docker.reference.type": "attestation-manifest"
+     },
+     "digest": "sha256:280c63bbb0cd39cb8ec327889b13ef50050d280e8e3b34fbf39d371a626ac02b",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "unknown",
+      "os": "unknown"
+     },
+     "size": 559
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "i386",
+      "org.opencontainers.image.base.name": "scratch",
+      "org.opencontainers.image.created": "2026-09-08T23:04:09Z",
+      "org.opencontainers.image.revision": "bdd6d5bbdccee14b4201630ba03454203e27d1d3",
+      "org.opencontainers.image.source": "https://github.com/docker-library/busybox.git",
+      "org.opencontainers.image.url": "https://hub.docker.com/_/busybox",
+      "org.opencontainers.image.version": "1.37.0-glibc"
+     },
+     "digest": "sha256:a88c21a22c5ddc9dada27459a93cfa69dd1d155578f8e8664d451854accb3e79",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "386",
+      "os": "linux"
+     },
+     "size": 610
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "i386",
+      "vnd.docker.reference.digest": "sha256:a88c21a22c5ddc9dada27459a93cfa69dd1d155578f8e8664d451854accb3e79",
+      "vnd.docker.reference.type": "attestation-manifest"
+     },
+     "digest": "sha256:a0706161519106ac9e227836f0f943f02517b76505648f2c68c5c290682166d7",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "unknown",
+      "os": "unknown"
+     },
+     "size": 559
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "ppc64le",
+      "org.opencontainers.image.base.name": "scratch",
+      "org.opencontainers.image.created": "2026-09-08T23:04:09Z",
+      "org.opencontainers.image.revision": "6e5781318fdd5e1400daa6661f3e8bda8b85f390",
+      "org.opencontainers.image.source": "https://github.com/docker-library/busybox.git",
+      "org.opencontainers.image.url": "https://hub.docker.com/_/busybox",
+      "org.opencontainers.image.version": "1.37.0-glibc"
+     },
+     "digest": "sha256:025d95c7d9b648f6202fabbd9a33182fcbac04164069078e6fe3702bd2450283",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "ppc64le",
+      "os": "linux"
+     },
+     "size": 610
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "ppc64le",
+      "vnd.docker.reference.digest": "sha256:025d95c7d9b648f6202fabbd9a33182fcbac04164069078e6fe3702bd2450283",
+      "vnd.docker.reference.type": "attestation-manifest"
+     },
+     "digest": "sha256:6fb3f83a41e6d11698b0dcb4e856214fd247042f348237e3b63e698368dea448",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "unknown",
+      "os": "unknown"
+     },
+     "size": 559
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "riscv64",
+      "org.opencontainers.image.base.name": "scratch",
+      "org.opencontainers.image.created": "2026-09-08T23:04:09Z",
+      "org.opencontainers.image.revision": "cb64779ccb8db12059f711141b6b1e67f6e2c580",
+      "org.opencontainers.image.source": "https://github.com/docker-library/busybox.git",
+      "org.opencontainers.image.url": "https://hub.docker.com/_/busybox",
+      "org.opencontainers.image.version": "1.37.0-glibc"
+     },
+     "digest": "sha256:be2e8702261d743f7b1ba1b1cb4499927664d7a82baedf87564306426dda680a",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "riscv64",
+      "os": "linux"
+     },
+     "size": 610
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "riscv64",
+      "vnd.docker.reference.digest": "sha256:be2e8702261d743f7b1ba1b1cb4499927664d7a82baedf87564306426dda680a",
+      "vnd.docker.reference.type": "attestation-manifest"
+     },
+     "digest": "sha256:fedb281243849349c260d6df90fb2e4b4678e598a40119bc8aff0c63fc271b0f",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "unknown",
+      "os": "unknown"
+     },
+     "size": 559
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "s390x",
+      "org.opencontainers.image.base.name": "scratch",
+      "org.opencontainers.image.created": "2026-09-08T23:04:09Z",
+      "org.opencontainers.image.revision": "8b4d2482716221b788fa1f00e0fdc5c496669843",
+      "org.opencontainers.image.source": "https://github.com/docker-library/busybox.git",
+      "org.opencontainers.image.url": "https://hub.docker.com/_/busybox",
+      "org.opencontainers.image.version": "1.37.0-glibc"
+     },
+     "digest": "sha256:7f0d4675ec87f3f46c04f2285079906361c789390de0917d850a9d253fffd2aa",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "s390x",
+      "os": "linux"
+     },
+     "size": 610
+    },
+    {
+     "annotations": {
+      "com.docker.official-images.bashbrew.arch": "s390x",
+      "vnd.docker.reference.digest": "sha256:7f0d4675ec87f3f46c04f2285079906361c789390de0917d850a9d253fffd2aa",
+      "vnd.docker.reference.type": "attestation-manifest"
+     },
+     "digest": "sha256:4680953cb4fcd19d321188c2d5ff6712a01124e90c6e06b21a18fcceeec54fbb",
+     "mediaType": "application/vnd.oci.image.manifest.v1+json",
+     "platform": {
+      "architecture": "unknown",
+      "os": "unknown"
+     },
+     "size": 559
+    }
+   ],
+   "mediaType": "application/vnd.oci.image.index.v1+json",
+   "schemaVersion": 2
+  },
+  "manifest": {
+   "schemaVersion": 2,
+   "mediaType": "application/vnd.oci.image.manifest.v1+json",
+   "config": {
+    "mediaType": "application/vnd.oci.image.config.v1+json",
+    "digest": "sha256:30ecbe1509090b38ef3260f3609d64d8261230464eaa4d235901db496e9647fb",
+    "size": 459
+   },
+   "layers": [
+    {
+     "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+     "digest": "sha256:68fe9bff2ad4ad46da3e58db03faa64eb73c0ff16d546b0c42539eaa9854cb7f",
+     "size": 2211514
+    }
+   ],
+   "annotations": {
+    "org.opencontainers.image.url": "https://github.com/docker-library/busybox",
+    "org.opencontainers.image.version": "1.37.0-glibc"
+   }
+  },
+  "manifestDigest": "sha256:66a6306db78bf2dbf3487f293aa8d6990d8e506fdffab9cc43fe422becf886e4",
+  "attestation": {
+   "schemaVersion": 2,
+   "mediaType": "application/vnd.oci.image.manifest.v1+json",
+   "config": {
+    "mediaType": "application/vnd.oci.image.config.v1+json",
+    "digest": "sha256:b24ce77b896ab0a870f69f56cc2837e886910bcfd63fc50e13cbb74923893575",
+    "size": 167
+   },
+   "layers": [
+    {
+     "mediaType": "application/vnd.in-toto+json",
+     "digest": "sha256:9177639ff916f52f70517f8bfa38a9e28e351de1c252f9212eb7eb270cb70e61",
+     "size": 2026,
+     "annotations": {
+      "in-toto.io/predicate-type": "https://spdx.dev/Document"
+     }
+    }
+   ]
+  },
+  "fs": "busybox-1.37.json",
+  "fsSoni": 452,
+  "imageLs": "IMAGE          ID             DISK USAGE   CONTENT SIZE   EXTRA\nbusybox:1.37   a7dbc319b143       6.77MB         2.22MB        \n",
+  "systemDf": "TYPE            TOTAL     ACTIVE    SIZE      RECLAIMABLE\nImages          1         0         6.78MB    6.77MB (99%)\nContainers      0         0         0B        0B\nLocal Volumes   0         0         0B        0B\nBuild Cache     0         0         0B        0B\n",
+  "systemDfV": "{\"Images\":[{\"Containers\":\"0\",\"CreatedAt\":\"2024-09-26 21:31:42 +0000 UTC\",\"CreatedSince\":\"2 years ago\",\"Digest\":\"\",\"ID\":\"sha256:a7dbc319b1438115a207e11930dc4bb3e643dcb3ec0bdd694bb36cd8fad289ec\",\"Repository\":\"busybox\",\"SharedSize\":\"0B\",\"Size\":\"6.77MB\",\"Tag\":\"1.37\",\"UniqueSize\":\"6.77MB\"}],\"Containers\":[],\"Volumes\":[],\"BuildCache\":[]}"
+ }
+}

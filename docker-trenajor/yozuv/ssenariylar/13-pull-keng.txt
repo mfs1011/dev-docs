@@ -1,0 +1,3 @@
+# 120 ustunli terminalda pull (progress chizig'i)
+$ docker pull nginx:1.29
+$ docker pull busybox:1.37

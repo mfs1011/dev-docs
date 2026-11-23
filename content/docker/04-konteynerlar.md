@@ -239,6 +239,8 @@ To'g'risi: 8-bob.
 
 ## Amaliyot
 
+> **Trenajorda sinab ko'ring:** [Konteyner hayot sikli](/docker/trenajor?mashq=hayot-sikli) va [Muhit o'zgaruvchilari (-e, --env-file)](/docker/trenajor?mashq=muhit-ozgaruvchi). Trenajor — simulyator: chiqishlar sinov VPS'idagi Docker Engine 29.9.3 da yozib olingan; yonida konteynerlar, tarmoqlar va volume'lar xaritasi o'zgarib boradi.
+
 Savollar:
 
 1. `docker run -d nginx` dan keyin terminalga nima chiqadi va nima uchun?

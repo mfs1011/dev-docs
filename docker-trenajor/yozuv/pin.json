@@ -1,0 +1,9 @@
+{
+  "_izoh": "Trenajor image'lari kitob yozilgan kundagi digest'ga bog'langan (content/docker, 2026-11-07..08). Tag keyin boshqa image'ga ko'chgan bo'lsa ham trenajor kitob bilan bir xil.",
+  "hello-world:latest": { "repo": "hello-world", "digest": "sha256:c567b231f65614688711a75f31518a064258a51d442117a3e771a3a8fdba78ef" },
+  "alpine:latest": { "repo": "alpine", "digest": "sha256:3f4d6b32e26703c6082839234f43769d5046b3ac7c910033911d1e71d8cd630a" },
+  "nginx:1.29": { "repo": "nginx", "digest": "sha256:1881968aff6f7cdcc4b888c00a11f4ce241ad7ec957e0cb4a9e19e93a3ff87ea" },
+  "debian:latest": { "repo": "debian", "digest": "sha256:9c6e381421d0f48d1b8133e573f33c185ee16cbf505eda9c4a8a4791b25ea8a6" },
+  "debian:trixie": { "repo": "debian", "digest": "sha256:9c6e381421d0f48d1b8133e573f33c185ee16cbf505eda9c4a8a4791b25ea8a6" },
+  "busybox:1.37": { "repo": "busybox", "digest": "sha256:a7dbc319b1438115a207e11930dc4bb3e643dcb3ec0bdd694bb36cd8fad289ec" }
+}

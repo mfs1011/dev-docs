@@ -1,0 +1,73 @@
+# alpine ichidagi buyruqlar (busybox) — simulyatordagi mini-qobiq formatlari uchun
+#! tayyor alpine:latest debian:trixie nginx:1.29 busybox:1.37
+#! sukut docker run -d --name quti alpine sleep 3600
+$ docker exec quti ls /
+$ docker exec quti ls -l /
+$ docker exec quti ls -la /etc
+$ docker exec quti ls -lh /bin | head -5
+$ docker exec quti ls /yoq
+$ docker exec quti cat /yoq
+$ docker exec quti cat /etc/os-release
+$ docker exec quti cat /etc/alpine-release
+$ docker exec quti cat /etc/passwd
+$ docker exec quti pwd
+$ docker exec quti id
+$ docker exec quti whoami
+$ docker exec quti uname -a
+$ docker exec quti uname -r
+$ docker exec quti env
+$ docker exec quti printenv PATH
+$ docker exec quti echo salom dunyo
+$ docker exec quti sh -c 'echo $HOSTNAME; echo $0'
+$ docker exec quti date
+$ docker exec quti df -h
+$ docker exec quti df -h /
+$ docker exec quti free -m
+$ docker exec quti ps aux
+$ docker exec quti ps -ef
+$ docker exec quti ip addr
+$ docker exec quti ip route
+$ docker exec quti mkdir /ish
+$ docker exec quti sh -c 'echo bir > /ish/a.txt; echo ikki >> /ish/a.txt; cat /ish/a.txt; wc -l /ish/a.txt'
+$ docker exec quti touch /ish/b
+$ docker exec quti ls -l /ish
+$ docker exec quti rm /ish/b
+$ docker exec quti rm /yoq
+$ docker exec quti head -3 /etc/passwd
+$ docker exec quti tail -2 /etc/passwd
+$ docker exec quti grep root /etc/passwd
+$ docker exec quti sh -c 'cd /etc && pwd && ls | head -3'
+$ docker exec quti which sh ls wget
+$ docker exec quti yoqbuyruq
+$ docker exec quti sh -c yoqbuyruq
+$ docker exec quti apk --version
+$ docker exec quti sleep 1
+$ docker exec quti true
+$ docker exec quti false
+$ docker exec quti sh -c 'exit 7'
+$ docker exec quti busybox | head -3
+$ docker exec quti cat /proc/1/cmdline
+$ docker exec quti hostname -i
+$ docker exec quti wget -qO- http://yoq.example
+$ docker exec quti wget -qO- -T 2 http://10.255.255.1
+$ docker exec -it quti sh
+< echo $PS1
+< cd /tmp
+< pwd
+< exit
+$ docker exec -w /etc quti pwd
+$ docker exec -e A=1 quti sh -c 'echo $A'
+$ docker exec -u nobody quti id
+$ docker top quti
+$ docker stats --no-stream quti
+$ docker stats --no-stream --format "{{.Name}} {{.MemUsage}}"
+$ docker rm -f quti
+$ docker exec quti ls
+$ docker run --rm debian:trixie ls -l /etc/hostname /etc/os-release
+$ docker run --rm debian:trixie cat /etc/os-release
+$ docker run --rm nginx:1.29 ls -l /usr/share/nginx/html
+$ docker run --rm nginx:1.29 cat /etc/nginx/conf.d/default.conf
+$ docker run --rm nginx:1.29 sh -c 'yoqbuyruq; echo $0'
+$ docker run --rm nginx:1.29 bash -c 'yoqbuyruq'
+$ docker run --rm nginx:1.29 ls /yoq
+$ docker run --rm busybox:1.37 ls -l /bin/ls

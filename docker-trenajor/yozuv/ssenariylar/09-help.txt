@@ -1,0 +1,49 @@
+# --help chiqishlari (simulyator so'zma-so'z ko'rsatadi)
+$ docker --help
+$ docker run --help
+$ docker ps --help
+$ docker images --help
+$ docker image --help
+$ docker image ls --help
+$ docker container --help
+$ docker pull --help
+$ docker exec --help
+$ docker logs --help
+$ docker stop --help
+$ docker start --help
+$ docker rm --help
+$ docker rmi --help
+$ docker inspect --help
+$ docker network --help
+$ docker network ls --help
+$ docker network create --help
+$ docker volume --help
+$ docker volume ls --help
+$ docker volume create --help
+$ docker port --help
+$ docker system --help
+$ docker system df --help
+$ docker tag --help
+$ docker image history --help
+$ docker create --help
+$ docker restart --help
+$ docker kill --help
+$ docker system prune --help
+$ docker container prune --help
+$ docker image prune --help
+$ docker volume prune --help
+$ docker network prune --help
+$ docker network inspect --help
+$ docker network connect --help
+$ docker volume inspect --help
+$ docker volume rm --help
+$ docker network rm --help
+$ docker image inspect --help
+$ docker image rm --help
+$ docker container ls --help
+$ docker top --help
+$ docker stats --help
+$ docker rename --help
+$ docker diff --help
+$ docker version --help
+$ docker info --help

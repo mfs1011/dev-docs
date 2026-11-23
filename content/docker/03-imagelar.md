@@ -173,6 +173,8 @@ Docker 29 da containerd image store bilan ustunlar boshqacha (`DISK USAGE`, `CON
 
 ## Amaliyot
 
+> **Trenajorda sinab ko'ring:** [Teg va digest: bitta image — ikki nom](/docker/trenajor?mashq=teg-digest), [Image qatlamlari](/docker/trenajor?mashq=qatlamlar) va [Disk joyi va tozalash](/docker/trenajor?mashq=tozalash). Trenajor — simulyator: chiqishlar sinov VPS'idagi Docker Engine 29.9.3 da yozib olingan; yonida konteynerlar, tarmoqlar va volume'lar xaritasi o'zgarib boradi.
+
 Savollar:
 
 1. `docker pull redis` qaysi registry'dan, qaysi repozitoriydan va qaysi tegni oladi?

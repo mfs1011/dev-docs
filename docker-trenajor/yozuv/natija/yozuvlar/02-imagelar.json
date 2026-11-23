@@ -1,0 +1,2455 @@
+{
+ "docker": "29.9.3",
+ "sana": "2026-11-23",
+ "terminal": [
+  100,
+  30
+ ],
+ "ssenariylar": [
+  {
+   "ssenariy": "02-imagelar.txt",
+   "buyruqlar": [
+    {
+     "cmd": "docker pull debian",
+     "out": "Using default tag: latest\r\nlatest: Pulling from library/debian\r\n\r\n\u001b[1A\u001b[2K\ra6dd1c05fbba: Pulling fs layer \r\u001b[1B\u001b[1A\u001b[2K\ra6dd1c05fbba: Downloading  1.049MB/49.41MB\r\u001b[1B\u001b[1A\u001b[2K\ra6dd1c05fbba: Downloading  2.097MB/49.41MB\r\u001b[1B\u001b[1A\u001b[2K\ra6dd1c05fbba: Downloading  3.146MB/49.41MB\r\u001b[1B\u001b[1A\u001b[2K\ra6dd1c05fbba: Downloading  3.146MB/49.41MB\r\u001b[1B\u001b[1A\u001b[2K\ra6dd1c05fbba: Downloading  3.146MB/49.41MB\r\u001b[1B\u001b[1A\u001b[2K\ra6dd1c05fbba: Downloading  3.146MB/49.41MB\r\u001b[1B\u001b[1A\u001b[2K\ra6dd1c05fbba: Downloading  3.146MB/49.41MB\r\u001b[1B\u001b[1A\u001b[2K\ra6dd1c05fbba: Downloading  3.146MB/49.41MB\r\u001b[1B\u001b[1A\u001b[2K\ra6dd1c05fbba: Downloading  3.146MB/49.41MB\r\u001b[1B\u001b[1A\u001b[2K\ra6dd1c05fbba: Downloading  3.146MB/49.41MB\r\u001b[1B\u001b[1A\u001b[2K\ra6dd1c05fbba: Downloading  3.146MB/49.41MB\r\u001b[1B\u001b[1A\u001b[2K\ra6dd1c05fbba: Downloading  3.146MB/49.41MB\r\u001b[1B\u001b[1A\u001b[2K\ra6dd1c05fbba: Downloading  3.146MB/49.41MB\r\u001b[1B\u001b[1A\u001b[2K\ra6dd1c05fbba: Downloading  3.146MB/49.41MB\r\u001b[1B\u001b[1A\u001b[2K\ra6dd1c05fbba: Downloading  4.194MB/49.41MB\r\u001b[1B\u001b[1A\u001b[2K\ra6dd1c05fbba: Downloading  5.243MB/49.41MB\r\u001b[1B\u001b[1A\u001b[2K\ra6dd1c05fbba: Downloading  6.291MB/49.41MB\r\u001b[1B\r\n\u001b[1A\u001b[2K\ra992b59d2ed9: Downloading  1.049MB/3.18MB\r\u001b[1B\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading   7.34MB/49.41MB\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  8.389MB/49.41MB\r\u001b[2B\u001b[1A\u001b[2K\ra992b59d2ed9: Downloading  1.049MB/3.18MB\r\u001b[1B\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  8.389MB/49.41MB\r\u001b[2B\u001b[1A\u001b[2K\ra992b59d2ed9: Downloading  2.097MB/3.18MB\r\u001b[1B\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  9.437MB/49.41MB\r\u001b[2B\u001b[1A\u001b[2K\ra992b59d2ed9: Downloading  2.097MB/3.18MB\r\u001b[1B\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  9.437MB/49.41MB\r\u001b[2B\u001b[1A\u001b[2K\ra992b59d2ed9: Downloading  3.146MB/3.18MB\r\u001b[1B\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  11.53MB/49.41MB\r\u001b[2B\u001b[1A\u001b[2K\ra992b59d2ed9: Downloading   3.18MB/3.18MB\r\u001b[1B\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  11.53MB/49.41MB\r\u001b[2B\u001b[1A\u001b[2K\ra992b59d2ed9: Download complete \r\u001b[1B\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  11.53MB/49.41MB\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  11.53MB/49.41MB\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  11.53MB/49.41MB\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  11.53MB/49.41MB\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  11.53MB/49.41MB\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  11.53MB/49.41MB\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  11.53MB/49.41MB\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  11.53MB/49.41MB\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  12.58MB/49.41MB\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  12.58MB/49.41MB\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  14.68MB/49.41MB\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  15.73MB/49.41MB\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  16.78MB/49.41MB\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  17.83MB/49.41MB\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  18.87MB/49.41MB\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  19.92MB/49.41MB\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  22.02MB/49.41MB\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  23.07MB/49.41MB\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  24.12MB/49.41MB\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  25.17MB/49.41MB\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  26.21MB/49.41MB\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  27.26MB/49.41MB\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  29.36MB/49.41MB\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  30.41MB/49.41MB\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  31.46MB/49.41MB\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  32.51MB/49.41MB\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  33.55MB/49.41MB\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading   34.6MB/49.41MB\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading   36.7MB/49.41MB\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  37.75MB/49.41MB\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading   38.8MB/49.41MB\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  39.85MB/49.41MB\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  40.89MB/49.41MB\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  41.94MB/49.41MB\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  44.04MB/49.41MB\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  45.09MB/49.41MB\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  46.14MB/49.41MB\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  47.19MB/49.41MB\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  48.23MB/49.41MB\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Download complete \r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Extracting 1 s\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Extracting 1 s\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Extracting 1 s\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Extracting 1 s\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Extracting 1 s\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Extracting 1 s\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Extracting 1 s\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Extracting 1 s\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Extracting 1 s\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Extracting 1 s\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Extracting 1 s\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Extracting 2 s\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Extracting 2 s\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Extracting 2 s\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Extracting 2 s\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Extracting 2 s\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Extracting 2 s\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Extracting 2 s\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Extracting 2 s\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Extracting 2 s\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Extracting 3 s\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Extracting 3 s\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Extracting 3 s\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Extracting 3 s\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Extracting 3 s\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Extracting 3 s\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Extracting 3 s\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Extracting 3 s\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Extracting 3 s\r\u001b[2B\u001b[2A\u001b[2K\ra6dd1c05fbba: Pull complete \r\u001b[2BDigest: sha256:9c6e381421d0f48d1b8133e573f33c185ee16cbf505eda9c4a8a4791b25ea8a6\r\nStatus: Downloaded newer image for debian:latest\r\ndocker.io/library/debian:latest\r\n",
+     "kod": 0,
+     "ms": 11198,
+     "bolaklar": [
+      [
+       123,
+       "Using default tag: latest\r\n"
+      ],
+      [
+       1166,
+       "latest: Pulling from library/debian\r\n"
+      ],
+      [
+       1416,
+       "\r\n\u001b[1A\u001b[2K\ra6dd1c05fbba: Pulling fs layer \r\u001b[1B"
+      ],
+      [
+       1938,
+       "\u001b[1A\u001b[2K\ra6dd1c05fbba: Downloading  1.049MB/49.41MB\r\u001b[1B"
+      ],
+      [
+       2032,
+       "\u001b[1A\u001b[2K\ra6dd1c05fbba: Downloading  2.097MB/49.41MB\r\u001b[1B"
+      ],
+      [
+       2132,
+       "\u001b[1A\u001b[2K\ra6dd1c05fbba: Downloading  3.146MB/49.41MB\r\u001b[1B"
+      ],
+      [
+       2232,
+       "\u001b[1A\u001b[2K\ra6dd1c05fbba: Downloading  3.146MB/49.41MB\r\u001b[1B"
+      ],
+      [
+       2333,
+       "\u001b[1A\u001b[2K\ra6dd1c05fbba: Downloading  3.146MB/49.41MB\r\u001b[1B"
+      ],
+      [
+       2432,
+       "\u001b[1A\u001b[2K\ra6dd1c05fbba: Downloading  3.146MB/49.41MB\r\u001b[1B"
+      ],
+      [
+       2532,
+       "\u001b[1A"
+      ],
+      [
+       2532,
+       "\u001b[2K\ra6dd1c05fbba: Downloading  3.146MB/49.41MB\r\u001b[1B"
+      ],
+      [
+       2632,
+       "\u001b[1A\u001b[2K\ra6dd1c05fbba: Downloading  3.146MB/49.41MB\r\u001b[1B"
+      ],
+      [
+       2733,
+       "\u001b[1A"
+      ],
+      [
+       2733,
+       "\u001b[2K\ra6dd1c05fbba: Downloading  3.146MB/49.41MB\r\u001b[1B"
+      ],
+      [
+       2832,
+       "\u001b[1A\u001b[2K\ra6dd1c05fbba: Downloading  3.146MB/49.41MB\r\u001b[1B"
+      ],
+      [
+       2932,
+       "\u001b[1A\u001b[2K\ra6dd1c05fbba: Downloading  3.146MB/49.41MB\r"
+      ],
+      [
+       2932,
+       "\u001b[1B"
+      ],
+      [
+       3032,
+       "\u001b[1A\u001b[2K\ra6dd1c05fbba: "
+      ],
+      [
+       3032,
+       "Downloading  3.146MB/49.41MB\r\u001b[1B"
+      ],
+      [
+       3132,
+       "\u001b[1A\u001b[2K\ra6dd1c05fbba: Downloading  3.146MB/49.41MB\r\u001b[1B"
+      ],
+      [
+       3232,
+       "\u001b[1A\u001b[2K\ra6dd1c05fbba: Downloading  3.146MB/49.41MB\r\u001b[1B"
+      ],
+      [
+       3332,
+       "\u001b[1A"
+      ],
+      [
+       3333,
+       "\u001b[2K"
+      ],
+      [
+       3334,
+       "\r"
+      ],
+      [
+       3334,
+       "a6dd1c05fbba: "
+      ],
+      [
+       3335,
+       "Downloading  4.194MB/49.41MB\r"
+      ],
+      [
+       3335,
+       "\u001b[1B"
+      ],
+      [
+       3432,
+       "\u001b[1A\u001b[2K\r"
+      ],
+      [
+       3432,
+       "a6dd1c05fbba: Downloading  5.243MB/49.41MB\r\u001b[1B"
+      ],
+      [
+       3533,
+       "\u001b[1A\u001b[2K\ra6dd1c05fbba: "
+      ],
+      [
+       3534,
+       "Downloading  6.291MB/49.41MB\r\u001b[1B"
+      ],
+      [
+       3632,
+       "\r\n"
+      ],
+      [
+       3633,
+       "\u001b[1A"
+      ],
+      [
+       3633,
+       "\u001b[2K"
+      ],
+      [
+       3633,
+       "\r"
+      ],
+      [
+       3633,
+       "a992b59d2ed9: "
+      ],
+      [
+       3633,
+       "Downloading  1.049MB/3.18MB\r"
+      ],
+      [
+       3634,
+       "\u001b[1B"
+      ],
+      [
+       3634,
+       "\u001b[2A"
+      ],
+      [
+       3634,
+       "\u001b[2K"
+      ],
+      [
+       3634,
+       "\r"
+      ],
+      [
+       3635,
+       "a6dd1c05fbba: Downloading   7.34MB/49.41MB\r\u001b[2B"
+      ],
+      [
+       3735,
+       "\u001b[2A"
+      ],
+      [
+       3735,
+       "\u001b[2K\ra6dd1c05fbba: Downloading  8.389MB/49.41MB\r\u001b[2B\u001b[1A\u001b[2K\ra992b59d2ed9: Downloading  1.049MB/3.18MB\r\u001b[1B"
+      ],
+      [
+       3844,
+       "\u001b[2A"
+      ],
+      [
+       3844,
+       "\u001b[2K"
+      ],
+      [
+       3844,
+       "\r"
+      ],
+      [
+       3844,
+       "a6dd1c05fbba: "
+      ],
+      [
+       3845,
+       "Downloading  8.389MB/49.41MB\r"
+      ],
+      [
+       3845,
+       "\u001b[2B\u001b[1A"
+      ],
+      [
+       3846,
+       "\u001b[2K"
+      ],
+      [
+       3846,
+       "\r"
+      ],
+      [
+       3846,
+       "a992b59d2ed9: "
+      ],
+      [
+       3846,
+       "Downloading  2.097MB/3.18MB\r\u001b[1B"
+      ],
+      [
+       3933,
+       "\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  9.437MB/49.41MB\r\u001b[2B\u001b[1A\u001b[2K\ra992b59d2ed9: Downloading  2.097MB/3.18MB\r\u001b[1B"
+      ],
+      [
+       4033,
+       "\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  9.437MB/49.41MB\r\u001b[2B"
+      ],
+      [
+       4033,
+       "\u001b[1A"
+      ],
+      [
+       4040,
+       "\u001b[2K\ra992b59d2ed9: Downloading  3.146MB/3.18MB\r\u001b[1B"
+      ],
+      [
+       4133,
+       "\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  11.53MB/49.41MB\r"
+      ],
+      [
+       4134,
+       "\u001b[2B\u001b[1A\u001b[2K"
+      ],
+      [
+       4135,
+       "\ra992b59d2ed9: Downloading   3.18MB/3.18MB\r\u001b[1B"
+      ],
+      [
+       4231,
+       "\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  11.53MB/49.41MB\r\u001b[2B"
+      ],
+      [
+       4233,
+       "\u001b[1A\u001b[2K\ra992b59d2ed9: Download complete \r\u001b[1B"
+      ],
+      [
+       4332,
+       "\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  11.53MB/49.41MB\r\u001b[2B"
+      ],
+      [
+       4432,
+       "\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  11.53MB/49.41MB\r\u001b[2B"
+      ],
+      [
+       4532,
+       "\u001b[2A"
+      ],
+      [
+       4532,
+       "\u001b[2K\ra6dd1c05fbba: Downloading  11.53MB/49.41MB\r"
+      ],
+      [
+       4533,
+       "\u001b[2B"
+      ],
+      [
+       4632,
+       "\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  11.53MB/49.41MB\r\u001b[2B"
+      ],
+      [
+       4732,
+       "\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  11.53MB/49.41MB\r\u001b[2B"
+      ],
+      [
+       4831,
+       "\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  11.53MB/49.41MB\r\u001b[2B"
+      ],
+      [
+       4931,
+       "\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  11.53MB/49.41MB\r\u001b[2B"
+      ],
+      [
+       5033,
+       "\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  11.53MB/49.41MB\r\u001b[2B"
+      ],
+      [
+       5132,
+       "\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  12.58MB/49.41MB\r\u001b[2B"
+      ],
+      [
+       5232,
+       "\u001b[2A"
+      ],
+      [
+       5233,
+       "\u001b[2K\r"
+      ],
+      [
+       5233,
+       "a6dd1c05fbba: Downloading  12.58MB/49.41MB\r\u001b[2B"
+      ],
+      [
+       5336,
+       "\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  14.68MB/49.41MB\r\u001b[2B"
+      ],
+      [
+       5432,
+       "\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  15.73MB/49.41MB\r\u001b[2B"
+      ],
+      [
+       5531,
+       "\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  16.78MB/49.41MB\r\u001b[2B"
+      ],
+      [
+       5632,
+       "\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  17.83MB/49.41MB\r\u001b[2B"
+      ],
+      [
+       5732,
+       "\u001b[2A"
+      ],
+      [
+       5732,
+       "\u001b[2K\ra6dd1c05fbba: Downloading  18.87MB/49.41MB\r\u001b[2B"
+      ],
+      [
+       5834,
+       "\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  19.92MB/49.41MB\r\u001b[2B"
+      ],
+      [
+       5936,
+       "\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  22.02MB/49.41MB\r\u001b[2B"
+      ],
+      [
+       6032,
+       "\u001b[2A"
+      ],
+      [
+       6032,
+       "\u001b[2K"
+      ],
+      [
+       6032,
+       "\r"
+      ],
+      [
+       6033,
+       "a6dd1c05fbba: Downloading  23.07MB/49.41MB\r"
+      ],
+      [
+       6033,
+       "\u001b[2B"
+      ],
+      [
+       6131,
+       "\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  24.12MB/49.41MB\r"
+      ],
+      [
+       6132,
+       "\u001b[2B"
+      ],
+      [
+       6231,
+       "\u001b[2A"
+      ],
+      [
+       6232,
+       "\u001b[2K\ra6dd1c05fbba: Downloading  25.17MB/49.41MB\r"
+      ],
+      [
+       6232,
+       "\u001b[2B"
+      ],
+      [
+       6332,
+       "\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  26.21MB/49.41MB\r\u001b[2B"
+      ],
+      [
+       6432,
+       "\u001b[2A"
+      ],
+      [
+       6433,
+       "\u001b[2K\ra6dd1c05fbba: "
+      ],
+      [
+       6433,
+       "Downloading  27.26MB/49.41MB\r\u001b[2B"
+      ],
+      [
+       6532,
+       "\u001b[2A\u001b[2K"
+      ],
+      [
+       6532,
+       "\ra6dd1c05fbba: Downloading  29.36MB/49.41MB\r\u001b[2B"
+      ],
+      [
+       6631,
+       "\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  30.41MB/49.41MB\r"
+      ],
+      [
+       6631,
+       "\u001b[2B"
+      ],
+      [
+       6731,
+       "\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  31.46MB/49.41MB\r\u001b[2B"
+      ],
+      [
+       6832,
+       "\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  32.51MB/49.41MB\r\u001b[2B"
+      ],
+      [
+       6932,
+       "\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  33.55MB/49.41MB\r\u001b[2B"
+      ],
+      [
+       7032,
+       "\u001b[2A"
+      ],
+      [
+       7032,
+       "\u001b[2K"
+      ],
+      [
+       7033,
+       "\r"
+      ],
+      [
+       7033,
+       "a6dd1c05fbba: "
+      ],
+      [
+       7033,
+       "Downloading   34.6MB/49.41MB\r"
+      ],
+      [
+       7033,
+       "\u001b[2B"
+      ],
+      [
+       7156,
+       "\u001b[2A"
+      ],
+      [
+       7156,
+       "\u001b[2K\ra6dd1c05fbba: Downloading   36.7MB/49.41MB\r"
+      ],
+      [
+       7156,
+       "\u001b[2B"
+      ],
+      [
+       7232,
+       "\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  37.75MB/49.41MB\r\u001b[2B"
+      ],
+      [
+       7331,
+       "\u001b[2A"
+      ],
+      [
+       7332,
+       "\u001b[2K\ra6dd1c05fbba: Downloading   38.8MB/49.41MB\r\u001b[2B"
+      ],
+      [
+       7431,
+       "\u001b[2A"
+      ],
+      [
+       7432,
+       "\u001b[2K\ra6dd1c05fbba: Downloading  39.85MB/49.41MB\r\u001b[2B"
+      ],
+      [
+       7531,
+       "\u001b[2A"
+      ],
+      [
+       7532,
+       "\u001b[2K\ra6dd1c05fbba: Downloading  40.89MB/49.41MB\r"
+      ],
+      [
+       7532,
+       "\u001b[2B"
+      ],
+      [
+       7631,
+       "\u001b[2A"
+      ],
+      [
+       7632,
+       "\u001b[2K\r"
+      ],
+      [
+       7632,
+       "a6dd1c05fbba: Downloading  41.94MB/49.41MB\r\u001b[2B"
+      ],
+      [
+       7731,
+       "\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  44.04MB/49.41MB\r\u001b[2B"
+      ],
+      [
+       7831,
+       "\u001b[2A"
+      ],
+      [
+       7831,
+       "\u001b[2K\ra6dd1c05fbba: Downloading  45.09MB/49.41MB\r\u001b[2B"
+      ],
+      [
+       7932,
+       "\u001b[2A"
+      ],
+      [
+       7932,
+       "\u001b[2K\ra6dd1c05fbba: "
+      ],
+      [
+       7932,
+       "Downloading  46.14MB/49.41MB\r\u001b[2B"
+      ],
+      [
+       8031,
+       "\u001b[2A"
+      ],
+      [
+       8032,
+       "\u001b[2K\ra6dd1c05fbba: Downloading  47.19MB/49.41MB\r\u001b[2B"
+      ],
+      [
+       8131,
+       "\u001b[2A\u001b[2K\ra6dd1c05fbba: Downloading  48.23MB/49.41MB\r\u001b[2B"
+      ],
+      [
+       8232,
+       "\u001b[2A\u001b[2K\ra6dd1c05fbba: Download complete \r\u001b[2B"
+      ],
+      [
+       8236,
+       "\u001b[2A"
+      ],
+      [
+       8236,
+       "\u001b[2K\ra6dd1c05fbba: Extracting 1 s\r\u001b[2B"
+      ],
+      [
+       8333,
+       "\u001b[2A\u001b[2K\ra6dd1c05fbba: Extracting 1 s\r\u001b[2B"
+      ],
+      [
+       8433,
+       "\u001b[2A\u001b[2K\ra6dd1c05fbba: Extracting 1 s\r\u001b[2B"
+      ],
+      [
+       8533,
+       "\u001b[2A"
+      ],
+      [
+       8533,
+       "\u001b[2K\ra6dd1c05fbba: Extracting 1 s\r\u001b[2B"
+      ],
+      [
+       8634,
+       "\u001b[2A\u001b[2K\ra6dd1c05fbba: Extracting 1 s\r\u001b[2B"
+      ],
+      [
+       8732,
+       "\u001b[2A"
+      ],
+      [
+       8732,
+       "\u001b[2K\ra6dd1c05fbba: Extracting 1 s\r"
+      ],
+      [
+       8733,
+       "\u001b[2B"
+      ],
+      [
+       8833,
+       "\u001b[2A"
+      ],
+      [
+       8834,
+       "\u001b[2K\ra6dd1c05fbba: Extracting 1 s\r\u001b[2B"
+      ],
+      [
+       8931,
+       "\u001b[2A\u001b[2K\ra6dd1c05fbba: Extracting 1 s\r"
+      ],
+      [
+       8932,
+       "\u001b[2B"
+      ],
+      [
+       9033,
+       "\u001b[2A\u001b[2K\ra6dd1c05fbba: Extracting 1 s\r\u001b[2B"
+      ],
+      [
+       9132,
+       "\u001b[2A"
+      ],
+      [
+       9133,
+       "\u001b[2K\ra6dd1c05fbba: Extracting 1 s\r\u001b[2B"
+      ],
+      [
+       9232,
+       "\u001b[2A\u001b[2K"
+      ],
+      [
+       9233,
+       "\ra6dd1c05fbba: Extracting 1 s\r\u001b[2B"
+      ],
+      [
+       9333,
+       "\u001b[2A"
+      ],
+      [
+       9335,
+       "\u001b[2K\ra6dd1c05fbba: Extracting 2 s\r\u001b[2B"
+      ],
+      [
+       9434,
+       "\u001b[2A\u001b[2K\ra6dd1c05fbba: Extracting 2 s\r\u001b[2B"
+      ],
+      [
+       9534,
+       "\u001b[2A"
+      ],
+      [
+       9535,
+       "\u001b[2K"
+      ],
+      [
+       9535,
+       "\r"
+      ],
+      [
+       9535,
+       "a6dd1c05fbba: Extracting 2 s\r\u001b[2B"
+      ],
+      [
+       9635,
+       "\u001b[2A\u001b[2K\ra6dd1c05fbba: Extracting 2 s\r"
+      ],
+      [
+       9635,
+       "\u001b[2B"
+      ],
+      [
+       9733,
+       "\u001b[2A"
+      ],
+      [
+       9734,
+       "\u001b[2K"
+      ],
+      [
+       9734,
+       "\r"
+      ],
+      [
+       9735,
+       "a6dd1c05fbba: "
+      ],
+      [
+       9735,
+       "Extracting 2 s\r"
+      ],
+      [
+       9735,
+       "\u001b[2B"
+      ],
+      [
+       9832,
+       "\u001b[2A\u001b[2K\ra6dd1c05fbba: Extracting 2 s\r"
+      ],
+      [
+       9833,
+       "\u001b[2B"
+      ],
+      [
+       9933,
+       "\u001b[2A"
+      ],
+      [
+       9933,
+       "\u001b[2K"
+      ],
+      [
+       9933,
+       "\r"
+      ],
+      [
+       9933,
+       "a6dd1c05fbba: "
+      ],
+      [
+       9934,
+       "Extracting 2 s\r\u001b[2B"
+      ],
+      [
+       10033,
+       "\u001b[2A\u001b[2K\ra6dd1c05fbba: Extracting 2 s\r"
+      ],
+      [
+       10033,
+       "\u001b[2B"
+      ],
+      [
+       10132,
+       "\u001b[2A"
+      ],
+      [
+       10133,
+       "\u001b[2K"
+      ],
+      [
+       10133,
+       "\ra6dd1c05fbba: Extracting 2 s\r"
+      ],
+      [
+       10133,
+       "\u001b[2B"
+      ],
+      [
+       10241,
+       "\u001b[2A\u001b[2K\ra6dd1c05fbba: Extracting 3 s\r\u001b[2B"
+      ],
+      [
+       10335,
+       "\u001b[2A"
+      ],
+      [
+       10335,
+       "\u001b[2K\r"
+      ],
+      [
+       10336,
+       "a6dd1c05fbba: "
+      ],
+      [
+       10336,
+       "Extracting 3 s\r\u001b[2B"
+      ],
+      [
+       10433,
+       "\u001b[2A"
+      ],
+      [
+       10434,
+       "\u001b[2K"
+      ],
+      [
+       10434,
+       "\r"
+      ],
+      [
+       10434,
+       "a6dd1c05fbba: "
+      ],
+      [
+       10434,
+       "Extracting 3 s\r"
+      ],
+      [
+       10434,
+       "\u001b[2B"
+      ],
+      [
+       10533,
+       "\u001b[2A"
+      ],
+      [
+       10533,
+       "\u001b[2K"
+      ],
+      [
+       10533,
+       "\r"
+      ],
+      [
+       10534,
+       "a6dd1c05fbba: "
+      ],
+      [
+       10534,
+       "Extracting 3 s\r\u001b[2B"
+      ],
+      [
+       10634,
+       "\u001b[2A"
+      ],
+      [
+       10634,
+       "\u001b[2K"
+      ],
+      [
+       10635,
+       "\r"
+      ],
+      [
+       10635,
+       "a6dd1c05fbba: "
+      ],
+      [
+       10635,
+       "Extracting 3 s\r\u001b[2B"
+      ],
+      [
+       10734,
+       "\u001b[2A\u001b[2K\ra6dd1c05fbba: Extracting 3 s\r\u001b[2B"
+      ],
+      [
+       10845,
+       "\u001b[2A\u001b[2K\ra6dd1c05fbba: Extracting 3 s\r\u001b[2B"
+      ],
+      [
+       11023,
+       "\u001b[2A"
+      ],
+      [
+       11027,
+       "\u001b[2K\ra6dd1c05fbba: Extracting 3 s\r\u001b[2B"
+      ],
+      [
+       11069,
+       "\u001b[2A\u001b[2K\ra6dd1c05fbba: Extracting 3 s\r\u001b[2B"
+      ],
+      [
+       11132,
+       "\u001b[2A"
+      ],
+      [
+       11133,
+       "\u001b[2K\ra6dd1c05fbba: Pull complete \r\u001b[2B"
+      ],
+      [
+       11162,
+       "Digest: sha256:9c6e381421d0f48d1b8133e573f33c185ee16cbf505eda9c4a8a4791b25ea8a6\r\n"
+      ],
+      [
+       11164,
+       "Status: Downloaded newer image for debian:latest\r\n"
+      ],
+      [
+       11176,
+       "docker.io/library/debian:latest\r\n"
+      ]
+     ]
+    },
+    {
+     "cmd": "docker pull debian:trixie",
+     "out": "trixie: Pulling from library/debian\r\nDigest: sha256:9c6e381421d0f48d1b8133e573f33c185ee16cbf505eda9c4a8a4791b25ea8a6\r\nStatus: Downloaded newer image for debian:trixie\r\ndocker.io/library/debian:trixie\r\n",
+     "kod": 0,
+     "ms": 1236,
+     "bolaklar": [
+      [
+       982,
+       "trixie: Pulling from library/debian\r\n"
+      ],
+      [
+       1217,
+       "Digest: sha256:9c6e381421d0f48d1b8133e573f33c185ee16cbf505eda9c4a8a4791b25ea8a6\r\nStatus: Downloaded newer image for debian:trixie\r\n"
+      ],
+      [
+       1219,
+       "docker.io/library/debian:trixie\r\n"
+      ]
+     ]
+    },
+    {
+     "cmd": "docker image ls",
+     "out": "                                                                                \u001b[1m\u001b[106m\u001b[30mi\u001b[0m\u001b[0m \u001b[96mInfo → \u001b[0m\u001b[0m \u001b[38;5;0m\u001b[48;5;14m U \u001b[0m In Use\r\n\u001b[39m\u001b[1mIMAGE\u001b[0m           \u001b[39m\u001b[1mID\u001b[0m             \u001b[39m\u001b[1mDISK USAGE\u001b[0m   \u001b[39m\u001b[1mCONTENT SIZE\u001b[0m   \u001b[39m\u001b[1mEXTRA\u001b[0m\r\n\u001b[34m\u001b[1mdebian:latest\u001b[0m   \u001b[39m9c6e381421d0\u001b[0m        \u001b[39m187MB\u001b[0m         \u001b[39m52.6MB\u001b[0m        \r\n\u001b[34m\u001b[1mdebian:trixie\u001b[0m   \u001b[39m9c6e381421d0\u001b[0m        \u001b[39m187MB\u001b[0m         \u001b[39m52.6MB\u001b[0m        \r\n",
+     "kod": 0,
+     "ms": 175
+    },
+    {
+     "cmd": "docker image ls debian",
+     "out": "                                                                                \u001b[1m\u001b[106m\u001b[30mi\u001b[0m\u001b[0m \u001b[96mInfo → \u001b[0m\u001b[0m \u001b[38;5;0m\u001b[48;5;14m U \u001b[0m In Use\r\n\u001b[39m\u001b[1mIMAGE\u001b[0m           \u001b[39m\u001b[1mID\u001b[0m             \u001b[39m\u001b[1mDISK USAGE\u001b[0m   \u001b[39m\u001b[1mCONTENT SIZE\u001b[0m   \u001b[39m\u001b[1mEXTRA\u001b[0m\r\n\u001b[34m\u001b[1mdebian:latest\u001b[0m   \u001b[39m9c6e381421d0\u001b[0m        \u001b[39m187MB\u001b[0m         \u001b[39m52.6MB\u001b[0m        \r\n\u001b[34m\u001b[1mdebian:trixie\u001b[0m   \u001b[39m9c6e381421d0\u001b[0m        \u001b[39m187MB\u001b[0m         \u001b[39m52.6MB\u001b[0m        \r\n",
+     "kod": 0,
+     "ms": 152
+    },
+    {
+     "cmd": "docker image inspect debian:trixie --format \"{{.Id}}\"",
+     "out": "sha256:9c6e381421d0f48d1b8133e573f33c185ee16cbf505eda9c4a8a4791b25ea8a6\r\n",
+     "kod": 0,
+     "ms": 203
+    },
+    {
+     "cmd": "docker pull debian@sha256:9c6e381421d0f48d1b8133e573f33c185ee16cbf505eda9c4a8a4791b25ea8a6",
+     "out": "docker.io/library/debian@sha256:9c6e381421d0f48d1b8133e573f33c185ee16cbf505eda9c4a8a4791b25ea8a6: Pulling from library/debian\r\nDigest: sha256:9c6e381421d0f48d1b8133e573f33c185ee16cbf505eda9c4a8a4791b25ea8a6\r\nStatus: Image is up to date for debian@sha256:9c6e381421d0f48d1b8133e573f33c185ee16cbf505eda9c4a8a4791b25ea8a6\r\ndocker.io/library/debian@sha256:9c6e381421d0f48d1b8133e573f33c185ee16cbf505eda9c4a8a4791b25ea8a6\r\n",
+     "kod": 0,
+     "ms": 1139,
+     "bolaklar": [
+      [
+       905,
+       "docker.io/library/debian@sha256:9c6e381421d0f48d1b8133e573f33c185ee16cbf505eda9c4a8a4791b25ea8a6: "
+      ],
+      [
+       905,
+       "Pulling from library/debian\r\n"
+      ],
+      [
+       1117,
+       "Digest: sha256:9c6e381421d0f48d1b8133e573f33c185ee16cbf505eda9c4a8a4791b25ea8a6\r\nStatus: Image is up to date for debian@sha256:9c6e381421d0f48d1b8133e573f33c185ee16cbf505eda9c4a8a4791b25ea8a6\r\n"
+      ],
+      [
+       1120,
+       "docker.io/library/debian@sha256:9c6e381421d0f48d1b8133e573f33c185ee16cbf505eda9c4a8a4791b25ea8a6\r\n"
+      ]
+     ]
+    },
+    {
+     "cmd": "docker image ls",
+     "out": "                                                                                \u001b[1m\u001b[106m\u001b[30mi\u001b[0m\u001b[0m \u001b[96mInfo → \u001b[0m\u001b[0m \u001b[38;5;0m\u001b[48;5;14m U \u001b[0m In Use\r\n\u001b[39m\u001b[1mIMAGE\u001b[0m                                               \u001b[39m\u001b[1mID\u001b[0m             \u001b[39m\u001b[1mDISK USAGE\u001b[0m   \u001b[39m\u001b[1mCONTENT SIZE\u001b[0m   \u001b[39m\u001b[1mEXTRA\u001b[0m\r\n\u001b[34m\u001b[1mdebian:latest\u001b[0m                                       \u001b[39m9c6e381421d0\u001b[0m        \u001b[39m187MB\u001b[0m         \u001b[39m52.6MB\u001b[0m        \r\n\u001b[34m\u001b[1mdebian:trixie\u001b[0m                                       \u001b[39m9c6e381421d0\u001b[0m        \u001b[39m187MB\u001b[0m         \u001b[39m52.6MB\u001b[0m        \r\n\u001b[34m\u001b[1mdebian@sha256:9c6e381421d0f48d1b8133e573f33c185ee16cbf505eda9c4a8a4791b25ea8a6\u001b[0m\r\n                                                    \u001b[39m9c6e381421d0\u001b[0m        \u001b[39m187MB\u001b[0m         \u001b[39m52.6MB\u001b[0m        \r\n",
+     "kod": 0,
+     "ms": 158
+    },
+    {
+     "cmd": "docker image rm debian:latest",
+     "out": "Untagged: debian:latest\r\n",
+     "kod": 0,
+     "ms": 134
+    },
+    {
+     "cmd": "docker image ls debian",
+     "out": "                                                                                \u001b[1m\u001b[106m\u001b[30mi\u001b[0m\u001b[0m \u001b[96mInfo → \u001b[0m\u001b[0m \u001b[38;5;0m\u001b[48;5;14m U \u001b[0m In Use\r\n\u001b[39m\u001b[1mIMAGE\u001b[0m                                               \u001b[39m\u001b[1mID\u001b[0m             \u001b[39m\u001b[1mDISK USAGE\u001b[0m   \u001b[39m\u001b[1mCONTENT SIZE\u001b[0m   \u001b[39m\u001b[1mEXTRA\u001b[0m\r\n\u001b[34m\u001b[1mdebian:trixie\u001b[0m                                       \u001b[39m9c6e381421d0\u001b[0m        \u001b[39m187MB\u001b[0m         \u001b[39m52.6MB\u001b[0m        \r\n\u001b[34m\u001b[1mdebian@sha256:9c6e381421d0f48d1b8133e573f33c185ee16cbf505eda9c4a8a4791b25ea8a6\u001b[0m\r\n                                                    \u001b[39m9c6e381421d0\u001b[0m        \u001b[39m187MB\u001b[0m         \u001b[39m52.6MB\u001b[0m        \r\n",
+     "kod": 0,
+     "ms": 179
+    },
+    {
+     "cmd": "docker system df",
+     "out": "TYPE            TOTAL     ACTIVE    SIZE      RECLAIMABLE\r\nImages          1         0         186.9MB   186.9MB (99%)\r\nContainers      0         0         0B        0B\r\nLocal Volumes   0         0         0B        0B\r\nBuild Cache     0         0         0B        0B\r\n",
+     "kod": 0,
+     "ms": 205
+    },
+    {
+     "cmd": "docker pull nginx:1.29",
+     "out": "1.29: Pulling from library/nginx\r\n\r\n\u001b[1A\u001b[2K\r8e9b53b630de: Pulling fs layer \r\u001b[1B\r\n\u001b[1A\u001b[2K\r57fb71246055: Pulling fs layer \r\u001b[1B\r\n\u001b[1A\u001b[2K\r38a7e44929f3: Pulling fs layer \r\u001b[1B\r\n\u001b[1A\u001b[2K\r6e9f32fdbd61: Pulling fs layer \r\u001b[1B\r\n\u001b[1A\u001b[2K\r382a36159731: Pulling fs layer \r\u001b[1B\r\n\u001b[1A\u001b[2K\r20d41cd6829d: Pulling fs layer \r\u001b[1B\r\n\u001b[1A\u001b[2K\r83742381311a: Pulling fs layer \r\u001b[1B\u001b[1A\u001b[2K\r83742381311a: Download complete \r\u001b[1B\u001b[7A\u001b[2K\r8e9b53b630de: Download complete \r\u001b[7B\u001b[6A\u001b[2K\r57fb71246055: Downloading  1.049MB/29.78MB\r\u001b[6B\u001b[2A\u001b[2K\r20d41cd6829d: Download complete \r\u001b[2B\u001b[6A\u001b[2K\r57fb71246055: Downloading  1.049MB/29.78MB\r\u001b[6B\u001b[5A\u001b[2K\r38a7e44929f3: Downloading  1.049MB/33.16MB\r\u001b[5B\u001b[4A\u001b[2K\r6e9f32fdbd61: Download complete \r\u001b[4B\u001b[3A\u001b[2K\r382a36159731: Download complete \r\u001b[3B\u001b[6A\u001b[2K\r57fb71246055: Downloading  1.049MB/29.78MB\r\u001b[6B\u001b[5A\u001b[2K\r38a7e44929f3: Downloading  1.049MB/33.16MB\r\u001b[5B\u001b[6A\u001b[2K\r57fb71246055: Downloading  2.097MB/29.78MB\r\u001b[6B\u001b[5A\u001b[2K\r38a7e44929f3: Downloading  2.097MB/33.16MB\r\u001b[5B\u001b[6A\u001b[2K\r57fb71246055: Downloading  3.146MB/29.78MB\r\u001b[6B\u001b[5A\u001b[2K\r38a7e44929f3: Downloading  2.097MB/33.16MB\r\u001b[5B\u001b[6A\u001b[2K\r57fb71246055: Downloading  3.146MB/29.78MB\r\u001b[6B\u001b[5A\u001b[2K\r38a7e44929f3: Downloading  3.146MB/33.16MB\r\u001b[5B\u001b[6A\u001b[2K\r57fb71246055: Downloading  4.194MB/29.78MB\r\u001b[6B\u001b[5A\u001b[2K\r38a7e44929f3: Downloading  3.146MB/33.16MB\r\u001b[5B\u001b[6A\u001b[2K\r57fb71246055: Downloading  5.243MB/29.78MB\r\u001b[6B\u001b[5A\u001b[2K\r38a7e44929f3: Downloading  3.146MB/33.16MB\r\u001b[5B\u001b[6A\u001b[2K\r57fb71246055: Downloading  5.243MB/29.78MB\r\u001b[6B\u001b[5A\u001b[2K\r38a7e44929f3: Downloading  4.194MB/33.16MB\r\u001b[5B\r\n\u001b[1A\u001b[2K\r46ca9676efb5: Downloading  1.049MB/2.817MB\r\u001b[1B\u001b[6A\u001b[2K\r38a7e44929f3: Downloading  4.194MB/33.16MB\r\u001b[6B\u001b[1A\u001b[2K\r46ca9676efb5: Downloading  1.049MB/2.817MB\r\u001b[1B\u001b[7A\u001b[2K\r57fb71246055: Downloading  5.243MB/29.78MB\r\u001b[7B\u001b[7A\u001b[2K\r57fb71246055: Downloading  6.291MB/29.78MB\r\u001b[7B\u001b[6A\u001b[2K\r38a7e44929f3: Downloading  5.243MB/33.16MB\r\u001b[6B\u001b[1A\u001b[2K\r46ca9676efb5: Downloading  1.049MB/2.817MB\r\u001b[1B\u001b[7A\u001b[2K\r57fb71246055: Downloading  6.291MB/29.78MB\r\u001b[7B\u001b[6A\u001b[2K\r38a7e44929f3: Downloading  5.243MB/33.16MB\r\u001b[6B\u001b[1A\u001b[2K\r46ca9676efb5: Downloading  2.097MB/2.817MB\r\u001b[1B\u001b[7A\u001b[2K\r57fb71246055: Downloading  6.291MB/29.78MB\r\u001b[7B\u001b[6A\u001b[2K\r38a7e44929f3: Downloading  6.291MB/33.16MB\r\u001b[6B\u001b[1A\u001b[2K\r46ca9676efb5: Downloading  2.097MB/2.817MB\r\u001b[1B\u001b[6A\u001b[2K\r38a7e44929f3: Downloading  6.291MB/33.16MB\r\u001b[6B\u001b[1A\u001b[2K\r46ca9676efb5: Download complete \r\u001b[1B\u001b[7A\u001b[2K\r57fb71246055: Downloading   7.34MB/29.78MB\r\u001b[7B\r\n\u001b[1A\u001b[2K\r94a543ead0f2: Download complete \r\u001b[1B\u001b[8A\u001b[2K\r57fb71246055: Downloading  8.389MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading   7.34MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Downloading  8.389MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading   7.34MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Downloading  9.437MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading   7.34MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Downloading  10.49MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  8.389MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Downloading  10.49MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  8.389MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Downloading  11.53MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  9.437MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Downloading  12.58MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  9.437MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Downloading  12.58MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  10.49MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Downloading  12.58MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  10.49MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Downloading  13.63MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  11.53MB/33.16MB\r\u001b[7B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  11.53MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Downloading  13.63MB/29.78MB\r\u001b[8B\u001b[8A\u001b[2K\r57fb71246055: Downloading  14.68MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  12.58MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Downloading  15.73MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  13.63MB/33.16MB\r\u001b[7B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  13.63MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Downloading  16.78MB/29.78MB\r\u001b[8B\u001b[8A\u001b[2K\r57fb71246055: Downloading  16.78MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  14.68MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Downloading  17.83MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  14.68MB/33.16MB\r\u001b[7B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  15.73MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Downloading  17.83MB/29.78MB\r\u001b[8B\u001b[8A\u001b[2K\r57fb71246055: Downloading  18.87MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  16.78MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Downloading  18.87MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  16.78MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Downloading  19.92MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  17.83MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Downloading  20.97MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  17.83MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Downloading  20.97MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  18.87MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Downloading  22.02MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  18.87MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Downloading  22.02MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  19.92MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Downloading  23.07MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  20.97MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Downloading  24.12MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  20.97MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Downloading  24.12MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  22.02MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Downloading  25.17MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  22.02MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Downloading  25.17MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  23.07MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Downloading  26.21MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  24.12MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Downloading  27.26MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  24.12MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Downloading  27.26MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  25.17MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Downloading  28.31MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  25.17MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Downloading  28.31MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  26.21MB/33.16MB\r\u001b[7B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  26.21MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Downloading  29.36MB/29.78MB\r\u001b[8B\u001b[8A\u001b[2K\r57fb71246055: Download complete \r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  27.26MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Extracting 1 s\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  28.31MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Extracting 1 s\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  29.36MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Extracting 1 s\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  30.41MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Extracting 1 s\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  31.46MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Extracting 1 s\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  33.16MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Extracting 1 s\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Download complete \r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Extracting 1 s\r\u001b[8B\u001b[8A\u001b[2K\r57fb71246055: Extracting 1 s\r\u001b[8B\u001b[8A\u001b[2K\r57fb71246055: Extracting 1 s\r\u001b[8B\u001b[8A\u001b[2K\r57fb71246055: Extracting 1 s\r\u001b[8B\u001b[8A\u001b[2K\r57fb71246055: Extracting 1 s\r\u001b[8B\u001b[8A\u001b[2K\r57fb71246055: Extracting 2 s\r\u001b[8B\u001b[8A\u001b[2K\r57fb71246055: Extracting 2 s\r\u001b[8B\u001b[8A\u001b[2K\r57fb71246055: Extracting 2 s\r\u001b[8B\u001b[8A\u001b[2K\r57fb71246055: Extracting 2 s\r\u001b[8B\u001b[8A\u001b[2K\r57fb71246055: Extracting 2 s\r\u001b[8B\u001b[8A\u001b[2K\r57fb71246055: Extracting 2 s\r\u001b[8B\u001b[8A\u001b[2K\r57fb71246055: Extracting 2 s\r\u001b[8B\u001b[8A\u001b[2K\r57fb71246055: Extracting 2 s\r\u001b[8B\u001b[8A\u001b[2K\r57fb71246055: Pull complete \r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Extracting 1 s\r\u001b[7B\u001b[7A\u001b[2K\r38a7e44929f3: Extracting 1 s\r\u001b[7B\u001b[7A\u001b[2K\r38a7e44929f3: Extracting 1 s\r\u001b[7B\u001b[7A\u001b[2K\r38a7e44929f3: Extracting 1 s\r\u001b[7B\u001b[7A\u001b[2K\r38a7e44929f3: Extracting 1 s\r\u001b[7B\u001b[7A\u001b[2K\r38a7e44929f3: Extracting 1 s\r\u001b[7B\u001b[7A\u001b[2K\r38a7e44929f3: Extracting 1 s\r\u001b[7B\u001b[7A\u001b[2K\r38a7e44929f3: Extracting 1 s\r\u001b[7B\u001b[7A\u001b[2K\r38a7e44929f3: Extracting 1 s\r\u001b[7B\u001b[7A\u001b[2K\r38a7e44929f3: Extracting 1 s\r\u001b[7B\u001b[7A\u001b[2K\r38a7e44929f3: Extracting 2 s\r\u001b[7B\u001b[7A\u001b[2K\r38a7e44929f3: Extracting 2 s\r\u001b[7B\u001b[7A\u001b[2K\r38a7e44929f3: Extracting 2 s\r\u001b[7B\u001b[7A\u001b[2K\r38a7e44929f3: Extracting 2 s\r\u001b[7B\u001b[7A\u001b[2K\r38a7e44929f3: Extracting 2 s\r\u001b[7B\u001b[7A\u001b[2K\r38a7e44929f3: Extracting 2 s\r\u001b[7B\u001b[7A\u001b[2K\r38a7e44929f3: Extracting 2 s\r\u001b[7B\u001b[6A\u001b[2K\r6e9f32fdbd61: Extracting 1 s\r\u001b[6B\u001b[7A\u001b[2K\r38a7e44929f3: Pull complete \r\u001b[7B\u001b[4A\u001b[2K\r20d41cd6829d: Extracting 1 s\r\u001b[4B\u001b[6A\u001b[2K\r6e9f32fdbd61: Pull complete \r\u001b[6B\u001b[5A\u001b[2K\r382a36159731: Pull complete \r\u001b[5B\u001b[3A\u001b[2K\r83742381311a: Pull complete \r\u001b[3B\u001b[9A\u001b[2K\r8e9b53b630de: Pull complete \r\u001b[9B\u001b[4A\u001b[2K\r20d41cd6829d: Pull complete \r\u001b[4BDigest: sha256:1881968aff6f7cdcc4b888c00a11f4ce241ad7ec957e0cb4a9e19e93a3ff87ea\r\nStatus: Downloaded newer image for nginx:1.29\r\ndocker.io/library/nginx:1.29\r\n",
+     "kod": 0,
+     "ms": 10858,
+     "bolaklar": [
+      [
+       1095,
+       "1.29: Pulling from library/nginx\r\n"
+      ],
+      [
+       1506,
+       "\r\n\u001b[1A\u001b[2K\r8e9b53b630de: Pulling fs layer \r\u001b[1B"
+      ],
+      [
+       1507,
+       "\r\n"
+      ],
+      [
+       1508,
+       "\u001b[1A\u001b[2K\r"
+      ],
+      [
+       1508,
+       "57fb71246055: Pulling fs layer \r\u001b[1B\r\n\u001b[1A\u001b[2K\r38a7e44929f3: Pulling fs layer \r\u001b[1B\r\n\u001b[1A\u001b[2K\r6e9f32fdbd61: Pulling fs layer \r\u001b[1B\r\n\u001b[1A\u001b[2K\r"
+      ],
+      [
+       1508,
+       "382a36159731: "
+      ],
+      [
+       1508,
+       "Pulling fs layer \r"
+      ],
+      [
+       1508,
+       "\u001b[1B"
+      ],
+      [
+       1508,
+       "\r\n\u001b[1A\u001b[2K\r20d41cd6829d: "
+      ],
+      [
+       1509,
+       "Pulling fs layer \r\u001b[1B\r\n\u001b[1A\u001b[2K\r83742381311a: "
+      ],
+      [
+       1510,
+       "Pulling fs layer \r\u001b[1B"
+      ],
+      [
+       1744,
+       "\u001b[1A\u001b[2K\r83742381311a: Download complete \r\u001b[1B"
+      ],
+      [
+       1843,
+       "\u001b[7A\u001b[2K\r8e9b53b630de: Download complete \r\u001b[7B"
+      ],
+      [
+       2044,
+       "\u001b[6A\u001b[2K\r57fb71246055: Downloading  1.049MB/29.78MB\r\u001b[6B\u001b[2A\u001b[2K\r20d41cd6829d: Download complete \r\u001b[2B"
+      ],
+      [
+       2147,
+       "\u001b[6A\u001b[2K\r57fb71246055: Downloading  1.049MB/29.78MB\r\u001b[6B\u001b[5A\u001b[2K\r38a7e44929f3: Downloading  1.049MB/33.16MB\r\u001b[5B\u001b[4A\u001b[2K\r6e9f32fdbd61: Download complete \r\u001b[4B"
+      ],
+      [
+       2244,
+       "\u001b[3A\u001b[2K\r382a36159731: Download complete \r\u001b[3B"
+      ],
+      [
+       2244,
+       "\u001b[6A\u001b[2K\r57fb71246055: Downloading  1.049MB/29.78MB\r\u001b[6B"
+      ],
+      [
+       2246,
+       "\u001b[5A"
+      ],
+      [
+       2246,
+       "\u001b[2K\r38a7e44929f3: "
+      ],
+      [
+       2248,
+       "Downloading  1.049MB/33.16MB\r\u001b[5B"
+      ],
+      [
+       2345,
+       "\u001b[6A\u001b[2K\r57fb71246055: Downloading  2.097MB/29.78MB\r\u001b[6B\u001b[5A\u001b[2K\r38a7e44929f3: Downloading  2.097MB/33.16MB\r\u001b[5B"
+      ],
+      [
+       2443,
+       "\u001b[6A\u001b[2K\r57fb71246055: Downloading  3.146MB/29.78MB\r\u001b[6B"
+      ],
+      [
+       2444,
+       "\u001b[5A\u001b[2K\r38a7e44929f3: Downloading  2.097MB/33.16MB\r"
+      ],
+      [
+       2444,
+       "\u001b[5B"
+      ],
+      [
+       2543,
+       "\u001b[6A\u001b[2K\r57fb71246055: Downloading  3.146MB/29.78MB\r\u001b[6B"
+      ],
+      [
+       2544,
+       "\u001b[5A\u001b[2K"
+      ],
+      [
+       2544,
+       "\r38a7e44929f3: Downloading  3.146MB/33.16MB\r"
+      ],
+      [
+       2552,
+       "\u001b[5B"
+      ],
+      [
+       2644,
+       "\u001b[6A\u001b[2K\r57fb71246055: Downloading  4.194MB/29.78MB\r\u001b[6B\u001b[5A"
+      ],
+      [
+       2644,
+       "\u001b[2K\r38a7e44929f3: Downloading  3.146MB/33.16MB\r\u001b[5B"
+      ],
+      [
+       2744,
+       "\u001b[6A\u001b[2K\r57fb71246055: Downloading  5.243MB/29.78MB\r\u001b[6B"
+      ],
+      [
+       2745,
+       "\u001b[5A\u001b[2K"
+      ],
+      [
+       2745,
+       "\r38a7e44929f3: Downloading  3.146MB/33.16MB\r"
+      ],
+      [
+       2745,
+       "\u001b[5B"
+      ],
+      [
+       2846,
+       "\u001b[6A\u001b[2K\r57fb71246055: Downloading  5.243MB/29.78MB\r"
+      ],
+      [
+       2846,
+       "\u001b[6B"
+      ],
+      [
+       2847,
+       "\u001b[5A\u001b[2K\r38a7e44929f3: Downloading  4.194MB/33.16MB\r\u001b[5B\r\n"
+      ],
+      [
+       2847,
+       "\u001b[1A\u001b[2K\r46ca9676efb5: Downloading  1.049MB/2.817MB\r\u001b[1B"
+      ],
+      [
+       2944,
+       "\u001b[6A\u001b[2K\r38a7e44929f3: Downloading  4.194MB/33.16MB\r\u001b[6B"
+      ],
+      [
+       2945,
+       "\u001b[1A\u001b[2K\r46ca9676efb5: Downloading  1.049MB/2.817MB\r\u001b[1B\u001b[7A\u001b[2K\r57fb71246055: Downloading  5.243MB/29.78MB\r\u001b[7B"
+      ],
+      [
+       3043,
+       "\u001b[7A\u001b[2K\r57fb71246055: "
+      ],
+      [
+       3044,
+       "Downloading  6.291MB/29.78MB\r\u001b[7B\u001b[6A\u001b[2K\r38a7e44929f3: Downloading  5.243MB/33.16MB\r\u001b[6B\u001b[1A\u001b[2K\r46ca9676efb5: Downloading  1.049MB/2.817MB\r\u001b[1B"
+      ],
+      [
+       3144,
+       "\u001b[7A\u001b[2K\r"
+      ],
+      [
+       3145,
+       "57fb71246055: "
+      ],
+      [
+       3145,
+       "Downloading  6.291MB/29.78MB\r"
+      ],
+      [
+       3146,
+       "\u001b[7B"
+      ],
+      [
+       3146,
+       "\u001b[6A\u001b[2K"
+      ],
+      [
+       3146,
+       "\r38a7e44929f3: "
+      ],
+      [
+       3146,
+       "Downloading  5.243MB/33.16MB\r"
+      ],
+      [
+       3148,
+       "\u001b[6B"
+      ],
+      [
+       3148,
+       "\u001b[1A"
+      ],
+      [
+       3149,
+       "\u001b[2K\r46ca9676efb5: "
+      ],
+      [
+       3149,
+       "Downloading  2.097MB/2.817MB\r"
+      ],
+      [
+       3149,
+       "\u001b[1B"
+      ],
+      [
+       3244,
+       "\u001b[7A"
+      ],
+      [
+       3244,
+       "\u001b[2K"
+      ],
+      [
+       3245,
+       "\r"
+      ],
+      [
+       3245,
+       "57fb71246055: "
+      ],
+      [
+       3245,
+       "Downloading  6.291MB/29.78MB\r"
+      ],
+      [
+       3246,
+       "\u001b[7B"
+      ],
+      [
+       3247,
+       "\u001b[6A"
+      ],
+      [
+       3247,
+       "\u001b[2K"
+      ],
+      [
+       3247,
+       "\r38a7e44929f3: Downloading  6.291MB/33.16MB\r\u001b[6B"
+      ],
+      [
+       3248,
+       "\u001b[1A"
+      ],
+      [
+       3248,
+       "\u001b[2K\r46ca9676efb5: Downloading  2.097MB/2.817MB\r"
+      ],
+      [
+       3248,
+       "\u001b[1B"
+      ],
+      [
+       3343,
+       "\u001b[6A\u001b[2K\r38a7e44929f3: Downloading  6.291MB/33.16MB\r\u001b[6B"
+      ],
+      [
+       3344,
+       "\u001b[1A\u001b[2K\r46ca9676efb5: "
+      ],
+      [
+       3344,
+       "Download complete \r"
+      ],
+      [
+       3344,
+       "\u001b[1B"
+      ],
+      [
+       3346,
+       "\u001b[7A\u001b[2K\r57fb71246055: Downloading   7.34MB/29.78MB\r\u001b[7B"
+      ],
+      [
+       3443,
+       "\r\n\u001b[1A\u001b[2K\r94a543ead0f2: Download complete \r\u001b[1B"
+      ],
+      [
+       3444,
+       "\u001b[8A\u001b[2K\r57fb71246055: Downloading  8.389MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading   7.34MB/33.16MB\r\u001b[7B"
+      ],
+      [
+       3543,
+       "\u001b[8A\u001b[2K\r57fb71246055: Downloading  8.389MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading   7.34MB/33.16MB\r\u001b[7B"
+      ],
+      [
+       3644,
+       "\u001b[8A\u001b[2K\r57fb71246055: Downloading  9.437MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading   7.34MB/33.16MB\r\u001b[7B"
+      ],
+      [
+       3749,
+       "\u001b[8A\u001b[2K\r"
+      ],
+      [
+       3750,
+       "57fb71246055: Downloading  10.49MB/29.78MB\r"
+      ],
+      [
+       3750,
+       "\u001b[8B"
+      ],
+      [
+       3751,
+       "\u001b[7A"
+      ],
+      [
+       3751,
+       "\u001b[2K"
+      ],
+      [
+       3751,
+       "\r"
+      ],
+      [
+       3751,
+       "38a7e44929f3: Downloading  8.389MB/33.16MB\r\u001b[7B"
+      ],
+      [
+       3844,
+       "\u001b[8A\u001b[2K\r57fb71246055: Downloading  10.49MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r"
+      ],
+      [
+       3844,
+       "38a7e44929f3: Downloading  8.389MB/33.16MB\r\u001b[7B"
+      ],
+      [
+       3943,
+       "\u001b[8A\u001b[2K\r57fb71246055: Downloading  11.53MB/29.78MB\r\u001b[8B"
+      ],
+      [
+       3944,
+       "\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  9.437MB/33.16MB\r"
+      ],
+      [
+       3945,
+       "\u001b[7B"
+      ],
+      [
+       4046,
+       "\u001b[8A"
+      ],
+      [
+       4047,
+       "\u001b[2K"
+      ],
+      [
+       4047,
+       "\r57fb71246055: Downloading  12.58MB/29.78MB\r\u001b[8B"
+      ],
+      [
+       4047,
+       "\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  9.437MB/33.16MB\r\u001b[7B"
+      ],
+      [
+       4145,
+       "\u001b[8A\u001b[2K\r57fb71246055: Downloading  12.58MB/29.78MB\r\u001b[8B"
+      ],
+      [
+       4147,
+       "\u001b[7A"
+      ],
+      [
+       4147,
+       "\u001b[2K"
+      ],
+      [
+       4147,
+       "\r"
+      ],
+      [
+       4148,
+       "38a7e44929f3: "
+      ],
+      [
+       4148,
+       "Downloading  10.49MB/33.16MB\r"
+      ],
+      [
+       4148,
+       "\u001b[7B"
+      ],
+      [
+       4243,
+       "\u001b[8A\u001b[2K\r57fb71246055: Downloading  12.58MB/29.78MB\r\u001b[8B"
+      ],
+      [
+       4244,
+       "\u001b[7A"
+      ],
+      [
+       4245,
+       "\u001b[2K"
+      ],
+      [
+       4245,
+       "\r"
+      ],
+      [
+       4245,
+       "38a7e44929f3: "
+      ],
+      [
+       4247,
+       "Downloading  10.49MB/33.16MB\r\u001b[7B"
+      ],
+      [
+       4343,
+       "\u001b[8A"
+      ],
+      [
+       4343,
+       "\u001b[2K"
+      ],
+      [
+       4343,
+       "\r"
+      ],
+      [
+       4344,
+       "57fb71246055: "
+      ],
+      [
+       4345,
+       "Downloading  13.63MB/29.78MB\r\u001b[8B"
+      ],
+      [
+       4345,
+       "\u001b[7A"
+      ],
+      [
+       4345,
+       "\u001b[2K"
+      ],
+      [
+       4345,
+       "\r38a7e44929f3: Downloading  11.53MB/33.16MB\r"
+      ],
+      [
+       4346,
+       "\u001b[7B"
+      ],
+      [
+       4443,
+       "\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  11.53MB/33.16MB\r\u001b[7B\u001b[8A\u001b[2K\r57fb71246055: Downloading  13.63MB/29.78MB\r\u001b[8B"
+      ],
+      [
+       4543,
+       "\u001b[8A\u001b[2K\r57fb71246055: Downloading  14.68MB/29.78MB\r\u001b[8B"
+      ],
+      [
+       4544,
+       "\u001b[7A"
+      ],
+      [
+       4544,
+       "\u001b[2K\r"
+      ],
+      [
+       4544,
+       "38a7e44929f3: "
+      ],
+      [
+       4545,
+       "Downloading  12.58MB/33.16MB\r\u001b[7B"
+      ],
+      [
+       4648,
+       "\u001b[8A\u001b[2K\r57fb71246055: Downloading  15.73MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  13.63MB/33.16MB\r\u001b[7B"
+      ],
+      [
+       4743,
+       "\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  13.63MB/33.16MB\r\u001b[7B"
+      ],
+      [
+       4744,
+       "\u001b[8A"
+      ],
+      [
+       4745,
+       "\u001b[2K\r57fb71246055: Downloading  16.78MB/29.78MB\r\u001b[8B"
+      ],
+      [
+       4844,
+       "\u001b[8A\u001b[2K\r57fb71246055: Downloading  16.78MB/29.78MB\r\u001b[8B"
+      ],
+      [
+       4844,
+       "\u001b[7A"
+      ],
+      [
+       4845,
+       "\u001b[2K\r38a7e44929f3: Downloading  14.68MB/33.16MB\r"
+      ],
+      [
+       4845,
+       "\u001b[7B"
+      ],
+      [
+       4943,
+       "\u001b[8A\u001b[2K\r57fb71246055: Downloading  17.83MB/29.78MB\r\u001b[8B"
+      ],
+      [
+       4944,
+       "\u001b[7A"
+      ],
+      [
+       4944,
+       "\u001b[2K"
+      ],
+      [
+       4944,
+       "\r38a7e44929f3: Downloading  14.68MB/33.16MB\r\u001b[7B"
+      ],
+      [
+       5042,
+       "\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  15.73MB/33.16MB\r\u001b[7B"
+      ],
+      [
+       5044,
+       "\u001b[8A\u001b[2K\r57fb71246055: Downloading  17.83MB/29.78MB\r\u001b[8B"
+      ],
+      [
+       5156,
+       "\u001b[8A\u001b[2K\r57fb71246055: Downloading  18.87MB/29.78MB\r\u001b[8B"
+      ],
+      [
+       5156,
+       "\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  16.78MB/33.16MB\r\u001b[7B"
+      ],
+      [
+       5250,
+       "\u001b[8A\u001b[2K\r57fb71246055: Downloading  18.87MB/29.78MB\r\u001b[8B"
+      ],
+      [
+       5260,
+       "\u001b[7A"
+      ],
+      [
+       5261,
+       "\u001b[2K"
+      ],
+      [
+       5261,
+       "\r"
+      ],
+      [
+       5261,
+       "38a7e44929f3: "
+      ],
+      [
+       5261,
+       "Downloading  16.78MB/33.16MB\r"
+      ],
+      [
+       5262,
+       "\u001b[7B"
+      ],
+      [
+       5345,
+       "\u001b[8A\u001b[2K\r57fb71246055: Downloading  19.92MB/29.78MB\r\u001b[8B"
+      ],
+      [
+       5346,
+       "\u001b[7A"
+      ],
+      [
+       5347,
+       "\u001b[2K\r38a7e44929f3: "
+      ],
+      [
+       5347,
+       "Downloading  17.83MB/33.16MB\r\u001b[7B"
+      ],
+      [
+       5444,
+       "\u001b[8A\u001b[2K\r57fb71246055: Downloading  20.97MB/29.78MB\r\u001b[8B"
+      ],
+      [
+       5444,
+       "\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  17.83MB/33.16MB\r\u001b[7B"
+      ],
+      [
+       5544,
+       "\u001b[8A\u001b[2K\r"
+      ],
+      [
+       5544,
+       "57fb71246055: Downloading  20.97MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  18.87MB/33.16MB\r\u001b[7B"
+      ],
+      [
+       5643,
+       "\u001b[8A\u001b[2K\r57fb71246055: Downloading  22.02MB/29.78MB\r"
+      ],
+      [
+       5644,
+       "\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  18.87MB/33.16MB\r\u001b[7B"
+      ],
+      [
+       5743,
+       "\u001b[8A\u001b[2K"
+      ],
+      [
+       5744,
+       "\r"
+      ],
+      [
+       5744,
+       "57fb71246055: Downloading  22.02MB/29.78MB\r"
+      ],
+      [
+       5744,
+       "\u001b[8B"
+      ],
+      [
+       5745,
+       "\u001b[7A"
+      ],
+      [
+       5745,
+       "\u001b[2K\r38a7e44929f3: Downloading  19.92MB/33.16MB\r\u001b[7B"
+      ],
+      [
+       5843,
+       "\u001b[8A\u001b[2K"
+      ],
+      [
+       5844,
+       "\r57fb71246055: Downloading  23.07MB/29.78MB\r\u001b[8B"
+      ],
+      [
+       5845,
+       "\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  20.97MB/33.16MB\r\u001b[7B"
+      ],
+      [
+       5943,
+       "\u001b[8A\u001b[2K\r57fb71246055: Downloading  24.12MB/29.78MB\r\u001b[8B"
+      ],
+      [
+       5945,
+       "\u001b[7A\u001b[2K\r38a7e44929f3: "
+      ],
+      [
+       5945,
+       "Downloading  20.97MB/33.16MB\r"
+      ],
+      [
+       5945,
+       "\u001b[7B"
+      ],
+      [
+       6043,
+       "\u001b[8A\u001b[2K\r"
+      ],
+      [
+       6043,
+       "57fb71246055: Downloading  24.12MB/29.78MB\r"
+      ],
+      [
+       6044,
+       "\u001b[8B"
+      ],
+      [
+       6044,
+       "\u001b[7A"
+      ],
+      [
+       6045,
+       "\u001b[2K\r38a7e44929f3: Downloading  22.02MB/33.16MB\r"
+      ],
+      [
+       6045,
+       "\u001b[7B"
+      ],
+      [
+       6144,
+       "\u001b[8A\u001b[2K\r57fb71246055: Downloading  25.17MB/29.78MB\r\u001b[8B"
+      ],
+      [
+       6146,
+       "\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  22.02MB/33.16MB\r\u001b[7B"
+      ],
+      [
+       6244,
+       "\u001b[8A\u001b[2K\r57fb71246055: Downloading  25.17MB/29.78MB\r\u001b[8B"
+      ],
+      [
+       6245,
+       "\u001b[7A"
+      ],
+      [
+       6245,
+       "\u001b[2K\r"
+      ],
+      [
+       6246,
+       "38a7e44929f3: Downloading  23.07MB/33.16MB\r\u001b[7B"
+      ],
+      [
+       6352,
+       "\u001b[8A\u001b[2K\r57fb71246055: Downloading  26.21MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  24.12MB/33.16MB\r\u001b[7B"
+      ],
+      [
+       6449,
+       "\u001b[8A"
+      ],
+      [
+       6449,
+       "\u001b[2K"
+      ],
+      [
+       6450,
+       "\r"
+      ],
+      [
+       6450,
+       "57fb71246055: Downloading  27.26MB/29.78MB\r\u001b[8B"
+      ],
+      [
+       6450,
+       "\u001b[7A"
+      ],
+      [
+       6451,
+       "\u001b[2K\r38a7e44929f3: "
+      ],
+      [
+       6452,
+       "Downloading  24.12MB/33.16MB\r\u001b[7B"
+      ],
+      [
+       6545,
+       "\u001b[8A\u001b[2K\r57fb71246055: Downloading  27.26MB/29.78MB\r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  25.17MB/33.16MB\r\u001b[7B"
+      ],
+      [
+       6648,
+       "\u001b[8A\u001b[2K\r57fb71246055: Downloading  28.31MB/29.78MB\r\u001b[8B"
+      ],
+      [
+       6650,
+       "\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  25.17MB/33.16MB\r\u001b[7B"
+      ],
+      [
+       6743,
+       "\u001b[8A\u001b[2K\r57fb71246055: Downloading  28.31MB/29.78MB\r"
+      ],
+      [
+       6743,
+       "\u001b[8B"
+      ],
+      [
+       6744,
+       "\u001b[7A"
+      ],
+      [
+       6744,
+       "\u001b[2K\r38a7e44929f3: "
+      ],
+      [
+       6744,
+       "Downloading  26.21MB/33.16MB\r\u001b[7B"
+      ],
+      [
+       6843,
+       "\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  26.21MB/33.16MB\r\u001b[7B"
+      ],
+      [
+       6843,
+       "\u001b[8A\u001b[2K\r"
+      ],
+      [
+       6843,
+       "57fb71246055: Downloading  29.36MB/29.78MB\r\u001b[8B"
+      ],
+      [
+       6949,
+       "\u001b[8A\u001b[2K\r57fb71246055: Download complete \r\u001b[8B\u001b[7A\u001b[2K\r38a7e44929f3: Downloading  27.26MB/33.16MB\r\u001b[7B"
+      ],
+      [
+       6951,
+       "\u001b[8A"
+      ],
+      [
+       6951,
+       "\u001b[2K\r57fb71246055: Extracting 1 s\r\u001b[8B"
+      ],
+      [
+       7043,
+       "\u001b[7A"
+      ],
+      [
+       7043,
+       "\u001b[2K"
+      ],
+      [
+       7043,
+       "\r"
+      ],
+      [
+       7044,
+       "38a7e44929f3: "
+      ],
+      [
+       7044,
+       "Downloading  28.31MB/33.16MB\r"
+      ],
+      [
+       7044,
+       "\u001b[7B"
+      ],
+      [
+       7047,
+       "\u001b[8A"
+      ],
+      [
+       7047,
+       "\u001b[2K\r"
+      ],
+      [
+       7048,
+       "57fb71246055: "
+      ],
+      [
+       7048,
+       "Extracting 1 s\r"
+      ],
+      [
+       7048,
+       "\u001b[8B"
+      ],
+      [
+       7148,
+       "\u001b[7A"
+      ],
+      [
+       7149,
+       "\u001b[2K\r38a7e44929f3: Downloading  29.36MB/33.16MB\r\u001b[7B"
+      ],
+      [
+       7151,
+       "\u001b[8A\u001b[2K"
+      ],
+      [
+       7152,
+       "\r57fb71246055: Extracting 1 s\r\u001b[8B"
+      ],
+      [
+       7244,
+       "\u001b[7A"
+      ],
+      [
+       7246,
+       "\u001b[2K\r"
+      ],
+      [
+       7246,
+       "38a7e44929f3: "
+      ],
+      [
+       7247,
+       "Downloading  30.41MB/33.16MB\r\u001b[7B"
+      ],
+      [
+       7252,
+       "\u001b[8A"
+      ],
+      [
+       7252,
+       "\u001b[2K"
+      ],
+      [
+       7252,
+       "\r57fb71246055: Extracting 1 s\r"
+      ],
+      [
+       7252,
+       "\u001b[8B"
+      ],
+      [
+       7346,
+       "\u001b[7A"
+      ],
+      [
+       7346,
+       "\u001b[2K\r38a7e44929f3: "
+      ],
+      [
+       7347,
+       "Downloading  31.46MB/33.16MB\r"
+      ],
+      [
+       7347,
+       "\u001b[7B"
+      ],
+      [
+       7350,
+       "\u001b[8A\u001b[2K\r57fb71246055: Extracting 1 s\r\u001b[8B"
+      ],
+      [
+       7451,
+       "\u001b[7A"
+      ],
+      [
+       7452,
+       "\u001b[2K"
+      ],
+      [
+       7452,
+       "\r38a7e44929f3: Downloading  33.16MB/33.16MB\r"
+      ],
+      [
+       7452,
+       "\u001b[7B"
+      ],
+      [
+       7458,
+       "\u001b[8A"
+      ],
+      [
+       7458,
+       "\u001b[2K\r57fb71246055: "
+      ],
+      [
+       7458,
+       "Extracting 1 s\r"
+      ],
+      [
+       7458,
+       "\u001b[8B"
+      ],
+      [
+       7546,
+       "\u001b[7A\u001b[2K\r38a7e44929f3: Download complete \r\u001b[7B"
+      ],
+      [
+       7548,
+       "\u001b[8A"
+      ],
+      [
+       7548,
+       "\u001b[2K"
+      ],
+      [
+       7549,
+       "\r57fb71246055: Extracting 1 s\r\u001b[8B"
+      ],
+      [
+       7646,
+       "\u001b[8A"
+      ],
+      [
+       7647,
+       "\u001b[2K"
+      ],
+      [
+       7647,
+       "\r57fb71246055: Extracting 1 s\r\u001b[8B"
+      ],
+      [
+       7745,
+       "\u001b[8A\u001b[2K\r57fb71246055: Extracting 1 s\r\u001b[8B"
+      ],
+      [
+       7847,
+       "\u001b[8A\u001b[2K\r57fb71246055: Extracting 1 s\r\u001b[8B"
+      ],
+      [
+       7947,
+       "\u001b[8A\u001b[2K\r57fb71246055: Extracting 1 s\r\u001b[8B"
+      ],
+      [
+       8050,
+       "\u001b[8A\u001b[2K\r57fb71246055: Extracting 2 s\r\u001b[8B"
+      ],
+      [
+       8144,
+       "\u001b[8A\u001b[2K\r57fb71246055: Extracting 2 s\r\u001b[8B"
+      ],
+      [
+       8267,
+       "\u001b[8A\u001b[2K\r57fb71246055: Extracting 2 s\r\u001b[8B"
+      ],
+      [
+       8355,
+       "\u001b[8A"
+      ],
+      [
+       8355,
+       "\u001b[2K\r57fb71246055: Extracting 2 s\r\u001b[8B"
+      ],
+      [
+       8450,
+       "\u001b[8A\u001b[2K\r57fb71246055: Extracting 2 s\r\u001b[8B"
+      ],
+      [
+       8596,
+       "\u001b[8A\u001b[2K\r57fb71246055: Extracting 2 s\r\u001b[8B"
+      ],
+      [
+       8680,
+       "\u001b[8A\u001b[2K"
+      ],
+      [
+       8680,
+       "\r57fb71246055: Extracting 2 s\r\u001b[8B"
+      ],
+      [
+       8767,
+       "\u001b[8A\u001b[2K\r57fb71246055: Extracting 2 s\r\u001b[8B"
+      ],
+      [
+       8949,
+       "\u001b[8A"
+      ],
+      [
+       8950,
+       "\u001b[2K\r57fb71246055: Pull complete \r\u001b[8B"
+      ],
+      [
+       8950,
+       "\u001b[7A"
+      ],
+      [
+       8951,
+       "\u001b[2K"
+      ],
+      [
+       8951,
+       "\r"
+      ],
+      [
+       8951,
+       "38a7e44929f3: "
+      ],
+      [
+       8952,
+       "Extracting 1 s\r\u001b[7B"
+      ],
+      [
+       9045,
+       "\u001b[7A\u001b[2K\r38a7e44929f3: Extracting 1 s\r\u001b[7B"
+      ],
+      [
+       9146,
+       "\u001b[7A"
+      ],
+      [
+       9147,
+       "\u001b[2K\r38a7e44929f3: Extracting 1 s\r\u001b[7B"
+      ],
+      [
+       9252,
+       "\u001b[7A"
+      ],
+      [
+       9253,
+       "\u001b[2K\r38a7e44929f3: Extracting 1 s\r\u001b[7B"
+      ],
+      [
+       9345,
+       "\u001b[7A"
+      ],
+      [
+       9345,
+       "\u001b[2K\r38a7e44929f3: Extracting 1 s\r\u001b[7B"
+      ],
+      [
+       9445,
+       "\u001b[7A"
+      ],
+      [
+       9445,
+       "\u001b[2K"
+      ],
+      [
+       9445,
+       "\r"
+      ],
+      [
+       9446,
+       "38a7e44929f3: Extracting 1 s\r"
+      ],
+      [
+       9446,
+       "\u001b[7B"
+      ],
+      [
+       9546,
+       "\u001b[7A"
+      ],
+      [
+       9546,
+       "\u001b[2K\r38a7e44929f3: Extracting 1 s\r\u001b[7B"
+      ],
+      [
+       9650,
+       "\u001b[7A"
+      ],
+      [
+       9650,
+       "\u001b[2K"
+      ],
+      [
+       9650,
+       "\r"
+      ],
+      [
+       9651,
+       "38a7e44929f3: "
+      ],
+      [
+       9651,
+       "Extracting 1 s\r"
+      ],
+      [
+       9651,
+       "\u001b[7B"
+      ],
+      [
+       9747,
+       "\u001b[7A\u001b[2K\r38a7e44929f3: Extracting 1 s\r"
+      ],
+      [
+       9747,
+       "\u001b[7B"
+      ],
+      [
+       9847,
+       "\u001b[7A\u001b[2K\r38a7e44929f3: Extracting 1 s\r\u001b[7B"
+      ],
+      [
+       9951,
+       "\u001b[7A"
+      ],
+      [
+       9952,
+       "\u001b[2K\r38a7e44929f3: Extracting 2 s\r\u001b[7B"
+      ],
+      [
+       10062,
+       "\u001b[7A\u001b[2K\r38a7e44929f3: Extracting 2 s\r\u001b[7B"
+      ],
+      [
+       10144,
+       "\u001b[7A"
+      ],
+      [
+       10144,
+       "\u001b[2K"
+      ],
+      [
+       10145,
+       "\r"
+      ],
+      [
+       10145,
+       "38a7e44929f3: Extracting 2 s\r\u001b[7B"
+      ],
+      [
+       10247,
+       "\u001b[7A"
+      ],
+      [
+       10247,
+       "\u001b[2K"
+      ],
+      [
+       10247,
+       "\r"
+      ],
+      [
+       10248,
+       "38a7e44929f3: Extracting 2 s\r"
+      ],
+      [
+       10248,
+       "\u001b[7B"
+      ],
+      [
+       10383,
+       "\u001b[7A"
+      ],
+      [
+       10385,
+       "\u001b[2K"
+      ],
+      [
+       10388,
+       "\r38a7e44929f3: Extracting 2 s\r\u001b[7B"
+      ],
+      [
+       10448,
+       "\u001b[7A\u001b[2K\r38a7e44929f3: Extracting 2 s\r\u001b[7B"
+      ],
+      [
+       10585,
+       "\u001b[7A"
+      ],
+      [
+       10588,
+       "\u001b[2K"
+      ],
+      [
+       10588,
+       "\r"
+      ],
+      [
+       10589,
+       "38a7e44929f3: Extracting 2 s\r\u001b[7B"
+      ],
+      [
+       10687,
+       "\u001b[6A\u001b[2K\r6e9f32fdbd61: Extracting 1 s\r\u001b[6B"
+      ],
+      [
+       10688,
+       "\u001b[7A"
+      ],
+      [
+       10689,
+       "\u001b[2K"
+      ],
+      [
+       10689,
+       "\r"
+      ],
+      [
+       10689,
+       "38a7e44929f3: "
+      ],
+      [
+       10690,
+       "Pull complete \r"
+      ],
+      [
+       10690,
+       "\u001b[7B"
+      ],
+      [
+       10743,
+       "\u001b[4A\u001b[2K\r20d41cd6829d: Extracting 1 s\r\u001b[4B"
+      ],
+      [
+       10746,
+       "\u001b[6A"
+      ],
+      [
+       10747,
+       "\u001b[2K"
+      ],
+      [
+       10747,
+       "\r6e9f32fdbd61: Pull complete \r\u001b[6B"
+      ],
+      [
+       10748,
+       "\u001b[5A"
+      ],
+      [
+       10749,
+       "\u001b[2K\r382a36159731: Pull complete \r\u001b[5B"
+      ],
+      [
+       10828,
+       "\u001b[3A\u001b[2K\r83742381311a: Pull complete \r\u001b[3B"
+      ],
+      [
+       10829,
+       "\u001b[9A"
+      ],
+      [
+       10830,
+       "\u001b[2K"
+      ],
+      [
+       10830,
+       "\r8e9b53b630de: Pull complete \r\u001b[9B"
+      ],
+      [
+       10832,
+       "\u001b[4A\u001b[2K\r20d41cd6829d: Pull complete \r"
+      ],
+      [
+       10832,
+       "\u001b[4B"
+      ],
+      [
+       10833,
+       "Digest: sha256:1881968aff6f7cdcc4b888c00a11f4ce241ad7ec957e0cb4a9e19e93a3ff87ea\r\n"
+      ],
+      [
+       10834,
+       "Status: Downloaded newer image for nginx:1.29\r\n"
+      ],
+      [
+       10843,
+       "docker.io/library/nginx:1.29\r\n"
+      ]
+     ]
+    },
+    {
+     "cmd": "docker image history nginx:1.29",
+     "out": "IMAGE          CREATED        CREATED BY                                      SIZE      COMMENT\r\n1881968aff6f   6 months ago   CMD [\"nginx\" \"-g\" \"daemon off;\"]                0B        buildkit.dockerfile.v0\r\n<missing>      6 months ago   STOPSIGNAL SIGQUIT                              0B        buildkit.dockerfile.v0\r\n<missing>      6 months ago   EXPOSE map[80/tcp:{}]                           0B        buildkit.dockerfile.v0\r\n<missing>      6 months ago   ENTRYPOINT [\"/docker-entrypoint.sh\"]            0B        buildkit.dockerfile.v0\r\n<missing>      6 months ago   COPY 30-tune-worker-processes.sh /docker-ent…   16.4kB    buildkit.dockerfile.v0\r\n<missing>      6 months ago   COPY 20-envsubst-on-templates.sh /docker-ent…   12.3kB    buildkit.dockerfile.v0\r\n<missing>      6 months ago   COPY 15-local-resolvers.envsh /docker-entryp…   12.3kB    buildkit.dockerfile.v0\r\n<missing>      6 months ago   COPY 10-listen-on-ipv6-by-default.sh /docker…   12.3kB    buildkit.dockerfile.v0\r\n<missing>      6 months ago   COPY docker-entrypoint.sh / # buildkit          8.19kB    buildkit.dockerfile.v0\r\n<missing>      6 months ago   RUN /bin/sh -c set -x     && groupadd --syst…   86.7MB    buildkit.dockerfile.v0\r\n<missing>      6 months ago   ENV DYNPKG_RELEASE=1~trixie                     0B        buildkit.dockerfile.v0\r\n<missing>      6 months ago   ENV PKG_RELEASE=1~trixie                        0B        buildkit.dockerfile.v0\r\n<missing>      6 months ago   ENV ACME_VERSION=0.3.1                          0B        buildkit.dockerfile.v0\r\n<missing>      6 months ago   ENV NJS_RELEASE=1~trixie                        0B        buildkit.dockerfile.v0\r\n<missing>      6 months ago   ENV NJS_VERSION=0.9.6                           0B        buildkit.dockerfile.v0\r\n<missing>      6 months ago   ENV NGINX_VERSION=1.29.8                        0B        buildkit.dockerfile.v0\r\n<missing>      6 months ago   LABEL maintainer=NGINX Docker Maintainers <d…   0B        buildkit.dockerfile.v0\r\n<missing>      6 months ago   # debian.sh --arch 'amd64' out/ 'trixie' '@1…   87.4MB    debuerreotype 0.17\r\n",
+     "kod": 0,
+     "ms": 189
+    },
+    {
+     "cmd": "docker image history --no-trunc nginx:1.29",
+     "out": "IMAGE                                                                     CREATED        CREATED BY                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              SIZE      COMMENT\r\nsha256:1881968aff6f7cdcc4b888c00a11f4ce241ad7ec957e0cb4a9e19e93a3ff87ea   6 months ago   CMD [\"nginx\" \"-g\" \"daemon off;\"]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        0B        buildkit.dockerfile.v0\r\n<missing>                                                                 6 months ago   STOPSIGNAL SIGQUIT                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      0B        buildkit.dockerfile.v0\r\n<missing>                                                                 6 months ago   EXPOSE map[80/tcp:{}]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   0B        buildkit.dockerfile.v0\r\n<missing>                                                                 6 months ago   ENTRYPOINT [\"/docker-entrypoint.sh\"]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    0B        buildkit.dockerfile.v0\r\n<missing>                                                                 6 months ago   COPY 30-tune-worker-processes.sh /docker-entrypoint.d # buildkit                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        16.4kB    buildkit.dockerfile.v0\r\n<missing>                                                                 6 months ago   COPY 20-envsubst-on-templates.sh /docker-entrypoint.d # buildkit                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        12.3kB    buildkit.dockerfile.v0\r\n<missing>                                                                 6 months ago   COPY 15-local-resolvers.envsh /docker-entrypoint.d # buildkit                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           12.3kB    buildkit.dockerfile.v0\r\n<missing>                                                                 6 months ago   COPY 10-listen-on-ipv6-by-default.sh /docker-entrypoint.d # buildkit                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    12.3kB    buildkit.dockerfile.v0\r\n<missing>                                                                 6 months ago   COPY docker-entrypoint.sh / # buildkit                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  8.19kB    buildkit.dockerfile.v0\r\n<missing>                                                                 6 months ago   RUN /bin/sh -c set -x     && groupadd --system --gid 101 nginx     && useradd --system --gid nginx --no-create-home --home /nonexistent --comment \"nginx user\" --shell /bin/false --uid 101 nginx     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y gnupg1 ca-certificates     &&     NGINX_GPGKEYS=\"573BFD6B3D8FBC641079A6ABABF5BD827BD9BF62 8540A6F18833A80E9C1653A42FD21310B49F6B46 9E9BE90EACBCDE69FE9B204CBCDCD8A38D88A2B3\";     NGINX_GPGKEY_PATH=/etc/apt/keyrings/nginx-archive-keyring.gpg;     export GNUPGHOME=\"$(mktemp -d)\";     found='';     for NGINX_GPGKEY in $NGINX_GPGKEYS; do     for server in         hkp://keyserver.ubuntu.com:80         pgp.mit.edu     ; do         echo \"Fetching GPG key $NGINX_GPGKEY from $server\";         gpg1 --batch --keyserver \"$server\" --keyserver-options timeout=10 --recv-keys \"$NGINX_GPGKEY\" && found=yes && break;     done;     test -z \"$found\" && echo >&2 \"error: failed to fetch GPG key $NGINX_GPGKEY\" && exit 1;     done;     gpg1 --batch --export $NGINX_GPGKEYS > \"$NGINX_GPGKEY_PATH\" ;     rm -rf \"$GNUPGHOME\";     apt-get remove --purge --auto-remove -y gnupg1 && rm -rf /var/lib/apt/lists/*     && dpkgArch=\"$(dpkg --print-architecture)\"     && nginxPackages=\"         nginx=${NGINX_VERSION}-${PKG_RELEASE}         nginx-module-xslt=${NGINX_VERSION}-${DYNPKG_RELEASE}         nginx-module-geoip=${NGINX_VERSION}-${DYNPKG_RELEASE}         nginx-module-image-filter=${NGINX_VERSION}-${DYNPKG_RELEASE}         nginx-module-njs=${NGINX_VERSION}+${NJS_VERSION}-${NJS_RELEASE}         nginx-module-acme=${NGINX_VERSION}+${ACME_VERSION}-${PKG_RELEASE}     \"     && case \"$dpkgArch\" in         amd64|arm64)             echo \"deb [signed-by=$NGINX_GPGKEY_PATH] https://nginx.org/packages/mainline/debian/ trixie nginx\" >> /etc/apt/sources.list.d/nginx.list             && apt-get update             ;;         *)             tempDir=\"$(mktemp -d)\"             && chmod 777 \"$tempDir\"                         && savedAptMark=\"$(apt-mark showmanual)\"                         && apt-get update             && apt-get install --no-install-recommends --no-install-suggests -y                 cargo                 curl                 devscripts                 equivs                 git                 libxml2-utils                 lsb-release                 xsltproc             && (                 cd \"$tempDir\"                 && export CARGO_HOME=\"$tempDir/.cargo\"                 && REVISION=\"${NGINX_VERSION}-${PKG_RELEASE}\"                 && REVISION=${REVISION%~*}                 && curl -f -L -O https://github.com/nginx/pkg-oss/archive/${REVISION}.tar.gz                 && PKGOSSCHECKSUM=\"7074c3ba1ece708140afd0220b16df77651fbb56cc012e901bc1c4a80531872b7a58ad97a28357646575ce625e94a0540796c045f95d33e40e6d3874ce7b3d79 *${REVISION}.tar.gz\"                 && if [ \"$(openssl sha512 -r ${REVISION}.tar.gz)\" = \"$PKGOSSCHECKSUM\" ]; then                     echo \"pkg-oss tarball checksum verification succeeded!\";                 else                     echo \"pkg-oss tarball checksum verification failed!\";                     exit 1;                 fi                 && tar xzvf ${REVISION}.tar.gz                 && cd pkg-oss-${REVISION}                 && cd debian                 && for target in base module-geoip module-image-filter module-njs module-xslt module-acme; do                     make rules-$target;                     mk-build-deps --install --tool=\"apt-get -o Debug::pkgProblemResolver=yes --no-install-recommends --yes\"                         debuild-$target/nginx-$NGINX_VERSION/debian/control;                 done                 && make base module-geoip module-image-filter module-njs module-xslt module-acme             )                         && apt-mark showmanual | xargs apt-mark auto > /dev/null             && { [ -z \"$savedAptMark\" ] || apt-mark manual $savedAptMark; }                         && ls -lAFh \"$tempDir\"             && ( cd \"$tempDir\" && dpkg-scanpackages . > Packages )             && grep '^Package: ' \"$tempDir/Packages\"             && echo \"deb [ trusted=yes ] file://$tempDir ./\" > /etc/apt/sources.list.d/temp.list             && apt-get -o Acquire::GzipIndexes=false update             ;;     esac         && apt-get install --no-install-recommends --no-install-suggests -y                         $nginxPackages                         gettext-base                         curl     && apt-get remove --purge --auto-remove -y && rm -rf /var/lib/apt/lists/* /etc/apt/sources.list.d/nginx.list         && if [ -n \"$tempDir\" ]; then         apt-get purge -y --auto-remove         && rm -rf \"$tempDir\" /etc/apt/sources.list.d/temp.list;     fi     && ln -sf /dev/stdout /var/log/nginx/access.log     && ln -sf /dev/stderr /var/log/nginx/error.log     && mkdir /docker-entrypoint.d # buildkit   86.7MB    buildkit.dockerfile.v0\r\n<missing>                                                                 6 months ago   ENV DYNPKG_RELEASE=1~trixie                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             0B        buildkit.dockerfile.v0\r\n<missing>                                                                 6 months ago   ENV PKG_RELEASE=1~trixie                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                0B        buildkit.dockerfile.v0\r\n<missing>                                                                 6 months ago   ENV ACME_VERSION=0.3.1                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  0B        buildkit.dockerfile.v0\r\n<missing>                                                                 6 months ago   ENV NJS_RELEASE=1~trixie                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                0B        buildkit.dockerfile.v0\r\n<missing>                                                                 6 months ago   ENV NJS_VERSION=0.9.6                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   0B        buildkit.dockerfile.v0\r\n<missing>                                                                 6 months ago   ENV NGINX_VERSION=1.29.8                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                0B        buildkit.dockerfile.v0\r\n<missing>                                                                 6 months ago   LABEL maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      0B        buildkit.dockerfile.v0\r\n<missing>                                                                 6 months ago   # debian.sh --arch 'amd64' out/ 'trixie' '@1777939200'                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  87.4MB    debuerreotype 0.17\r\n",
+     "kod": 0,
+     "ms": 274
+    },
+    {
+     "cmd": "docker image inspect nginx:1.29 --format \"{{len .RootFS.Layers}} qatlam, {{.Os}}/{{.Architecture}}\"",
+     "out": "7 qatlam, linux/amd64\r\n",
+     "kod": 0,
+     "ms": 158
+    },
+    {
+     "cmd": "docker image inspect nginx:1.29",
+     "out": "[\r\n    {\r\n        \"Id\": \"sha256:1881968aff6f7cdcc4b888c00a11f4ce241ad7ec957e0cb4a9e19e93a3ff87ea\",\r\n        \"RepoTags\": [\r\n            \"nginx:1.29\"\r\n        ],\r\n        \"RepoDigests\": [\r\n            \"nginx@sha256:1881968aff6f7cdcc4b888c00a11f4ce241ad7ec957e0cb4a9e19e93a3ff87ea\"\r\n        ],\r\n        \"Comment\": \"buildkit.dockerfile.v0\",\r\n        \"Created\": \"2026-05-08T19:22:39.549188019Z\",\r\n        \"Config\": {\r\n            \"ExposedPorts\": {\r\n                \"80/tcp\": {}\r\n            },\r\n            \"Env\": [\r\n                \"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\r\n                \"NGINX_VERSION=1.29.8\",\r\n                \"NJS_VERSION=0.9.6\",\r\n                \"NJS_RELEASE=1~trixie\",\r\n                \"ACME_VERSION=0.3.1\",\r\n                \"PKG_RELEASE=1~trixie\",\r\n                \"DYNPKG_RELEASE=1~trixie\"\r\n            ],\r\n            \"Entrypoint\": [\r\n                \"/docker-entrypoint.sh\"\r\n            ],\r\n            \"Cmd\": [\r\n                \"nginx\",\r\n                \"-g\",\r\n                \"daemon off;\"\r\n            ],\r\n            \"Labels\": {\r\n                \"maintainer\": \"NGINX Docker Maintainers <docker-maint@nginx.com>\"\r\n            },\r\n            \"StopSignal\": \"SIGQUIT\"\r\n        },\r\n        \"Architecture\": \"amd64\",\r\n        \"Os\": \"linux\",\r\n        \"Size\": 237177221,\r\n        \"RootFS\": {\r\n            \"Type\": \"layers\",\r\n            \"Layers\": [\r\n                \"sha256:79dd1f4c855cd061f687a994426634cf5f84c8ecdbc66c7a7d118e828dd93c99\",\r\n                \"sha256:aa4d24e7384d69a29f9d98b6d0840a4ebefcd7febba435baebce445e1dbc7cdc\",\r\n                \"sha256:6209b86585947682c5eeee5f7c974b9828355c96d908581e4d36a8733d3d0314\",\r\n                \"sha256:c2c85988de01800799942fd6a1b911469be99125e09d36268814d3d895da51b6\",\r\n                \"sha256:5501cac27eddcd6f3061a59136004c4e45334dba0112db1ed30a6bb13b831924\",\r\n                \"sha256:5bcc35c877def6c7dbd45712e9141cf94bdb73b6b79f1f86594792bc2b8e0fca\",\r\n                \"sha256:2e04d59bdb432430ffd1f17ba0ca3e9b8b6192199587baa3b52462f995cd4dfe\"\r\n            ]\r\n        },\r\n        \"Metadata\": {\r\n            \"LastTagTime\": \"2026-11-23T04:49:27.46271607Z\"\r\n        },\r\n        \"Descriptor\": {\r\n            \"mediaType\": \"application/vnd.oci.image.index.v1+json\",\r\n            \"digest\": \"sha256:1881968aff6f7cdcc4b888c00a11f4ce241ad7ec957e0cb4a9e19e93a3ff87ea\",\r\n            \"size\": 10229\r\n        },\r\n        \"Identity\": {\r\n            \"Pull\": [\r\n                {\r\n                    \"Repository\": \"docker.io/library/nginx\"\r\n                }\r\n            ]\r\n        }\r\n    }\r\n]\r\n",
+     "kod": 0,
+     "ms": 178
+    },
+    {
+     "cmd": "docker images",
+     "out": "                                                                                \u001b[1m\u001b[106m\u001b[30mi\u001b[0m\u001b[0m \u001b[96mInfo → \u001b[0m\u001b[0m \u001b[38;5;0m\u001b[48;5;14m U \u001b[0m In Use\r\n\u001b[39m\u001b[1mIMAGE\u001b[0m                                               \u001b[39m\u001b[1mID\u001b[0m             \u001b[39m\u001b[1mDISK USAGE\u001b[0m   \u001b[39m\u001b[1mCONTENT SIZE\u001b[0m   \u001b[39m\u001b[1mEXTRA\u001b[0m\r\n\u001b[34m\u001b[1mdebian:trixie\u001b[0m                                       \u001b[39m9c6e381421d0\u001b[0m        \u001b[39m187MB\u001b[0m         \u001b[39m52.6MB\u001b[0m        \r\n\u001b[34m\u001b[1mdebian@sha256:9c6e381421d0f48d1b8133e573f33c185ee16cbf505eda9c4a8a4791b25ea8a6\u001b[0m\r\n                                                    \u001b[39m9c6e381421d0\u001b[0m        \u001b[39m187MB\u001b[0m         \u001b[39m52.6MB\u001b[0m        \r\n\u001b[34m\u001b[1mnginx:1.29\u001b[0m                                          \u001b[39m1881968aff6f\u001b[0m        \u001b[39m240MB\u001b[0m         \u001b[39m65.8MB\u001b[0m        \r\n",
+     "kod": 0,
+     "ms": 185
+    },
+    {
+     "cmd": "docker pull nginx:1.29",
+     "out": "1.29: Pulling from library/nginx\r\nDigest: sha256:1881968aff6f7cdcc4b888c00a11f4ce241ad7ec957e0cb4a9e19e93a3ff87ea\r\nStatus: Image is up to date for nginx:1.29\r\ndocker.io/library/nginx:1.29\r\n",
+     "kod": 0,
+     "ms": 1184,
+     "bolaklar": [
+      [
+       890,
+       "1.29: Pulling from library/nginx\r\n"
+      ],
+      [
+       1161,
+       "Digest: sha256:1881968aff6f7cdcc4b888c00a11f4ce241ad7ec957e0cb4a9e19e93a3ff87ea\r\nStatus: Image is up to date for nginx:1.29\r\n"
+      ],
+      [
+       1164,
+       "docker.io/library/nginx:1.29\r\n"
+      ]
+     ]
+    },
+    {
+     "cmd": "docker pull -q busybox:1.37",
+     "out": "docker.io/library/busybox:1.37\r\n",
+     "kod": 0,
+     "ms": 2141
+    },
+    {
+     "cmd": "docker pull yoq-image-12345",
+     "out": "Using default tag: latest\r\nError response from daemon: pull access denied for yoq-image-12345, repository does not exist or may require 'docker login'\r\n",
+     "kod": 1,
+     "ms": 857,
+     "bolaklar": [
+      [
+       148,
+       "Using default tag: latest\r\n"
+      ],
+      [
+       845,
+       "Error response from daemon: pull access denied for yoq-image-12345, repository does not exist or may require 'docker login'\r\n"
+      ]
+     ]
+    },
+    {
+     "cmd": "docker pull nginx:9.99.99",
+     "out": "Error response from daemon: failed to resolve reference \"docker.io/library/nginx:9.99.99\": docker.io/library/nginx:9.99.99: not found\r\n",
+     "kod": 1,
+     "ms": 844
+    },
+    {
+     "cmd": "docker pull Nginx",
+     "out": "invalid reference format: repository name (library/Nginx) must be lowercase\r\n",
+     "kod": 1,
+     "ms": 134
+    },
+    {
+     "cmd": "docker run busybox:1.37 echo salom",
+     "out": "salom\r\n",
+     "kod": 0,
+     "ms": 729
+    },
+    {
+     "cmd": "docker image rm busybox:1.37",
+     "out": "Error response from daemon: conflict: unable to delete busybox:1.37 (must be forced) - container 2c06347a5b20 is using its referenced image a7dbc319b143\r\n",
+     "kod": 1,
+     "ms": 156
+    },
+    {
+     "cmd": "docker image rm -f busybox:1.37",
+     "out": "Untagged: busybox:1.37\r\n",
+     "kod": 0,
+     "ms": 140
+    },
+    {
+     "cmd": "docker image ls -a",
+     "out": "                                                                                \u001b[1m\u001b[106m\u001b[30mi\u001b[0m\u001b[0m \u001b[96mInfo → \u001b[0m\u001b[0m \u001b[38;5;0m\u001b[48;5;14m U \u001b[0m In Use\r\n\u001b[39m\u001b[1mIMAGE\u001b[0m                                               \u001b[39m\u001b[1mID\u001b[0m             \u001b[39m\u001b[1mDISK USAGE\u001b[0m   \u001b[39m\u001b[1mCONTENT SIZE\u001b[0m   \u001b[39m\u001b[1mEXTRA\u001b[0m\r\n\u001b[34m\u001b[1mdebian:trixie\u001b[0m                                       \u001b[39m9c6e381421d0\u001b[0m        \u001b[39m187MB\u001b[0m         \u001b[39m52.6MB\u001b[0m        \r\n\u001b[34m\u001b[1mdebian@sha256:9c6e381421d0f48d1b8133e573f33c185ee16cbf505eda9c4a8a4791b25ea8a6\u001b[0m\r\n                                                    \u001b[39m9c6e381421d0\u001b[0m        \u001b[39m187MB\u001b[0m         \u001b[39m52.6MB\u001b[0m        \r\n\u001b[34m\u001b[1mnginx:1.29\u001b[0m                                          \u001b[39m1881968aff6f\u001b[0m        \u001b[39m240MB\u001b[0m         \u001b[39m65.8MB\u001b[0m        \r\n\u001b[39m\u001b[2m<untagged>\u001b[0m                                          \u001b[39ma7dbc319b143\u001b[0m       \u001b[39m6.77MB\u001b[0m         \u001b[39m2.22MB\u001b[0m   \u001b[38;5;0m\u001b[48;5;14m U \u001b[0m  \r\n",
+     "kod": 0,
+     "ms": 257
+    },
+    {
+     "cmd": "docker image ls -q",
+     "out": "9c6e381421d0\r\n1881968aff6f\r\n",
+     "kod": 0,
+     "ms": 227
+    },
+    {
+     "cmd": "docker image ls --format \"{{.Repository}}:{{.Tag}} {{.Size}}\"",
+     "out": "debian:trixie 187MB\r\nnginx:1.29 240MB\r\n",
+     "kod": 0,
+     "ms": 216
+    },
+    {
+     "cmd": "docker image ls --format json",
+     "out": "{\"Containers\":\"0\",\"CreatedAt\":\"2026-11-04 21:23:39 +0000 UTC\",\"CreatedSince\":\"2 weeks ago\",\"Digest\":\"\\u003cnone\\u003e\",\"ID\":\"9c6e381421d0\",\"Repository\":\"debian\",\"SharedSize\":\"N/A\",\"Size\":\"187MB\",\"Tag\":\"trixie\",\"UniqueSize\":\"N/A\"}\r\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-05-08 19:22:39 +0000 UTC\",\"CreatedSince\":\"6 months ago\",\"Digest\":\"\\u003cnone\\u003e\",\"ID\":\"1881968aff6f\",\"Repository\":\"nginx\",\"SharedSize\":\"N/A\",\"Size\":\"240MB\",\"Tag\":\"1.29\",\"UniqueSize\":\"N/A\"}\r\n",
+     "kod": 0,
+     "ms": 219
+    },
+    {
+     "cmd": "docker tag nginx:1.29 veb:1.0",
+     "out": "",
+     "kod": 0,
+     "ms": 162
+    },
+    {
+     "cmd": "docker image ls",
+     "out": "                                                                                \u001b[1m\u001b[106m\u001b[30mi\u001b[0m\u001b[0m \u001b[96mInfo → \u001b[0m\u001b[0m \u001b[38;5;0m\u001b[48;5;14m U \u001b[0m In Use\r\n\u001b[39m\u001b[1mIMAGE\u001b[0m                                               \u001b[39m\u001b[1mID\u001b[0m             \u001b[39m\u001b[1mDISK USAGE\u001b[0m   \u001b[39m\u001b[1mCONTENT SIZE\u001b[0m   \u001b[39m\u001b[1mEXTRA\u001b[0m\r\n\u001b[34m\u001b[1mdebian:trixie\u001b[0m                                       \u001b[39m9c6e381421d0\u001b[0m        \u001b[39m187MB\u001b[0m         \u001b[39m52.6MB\u001b[0m        \r\n\u001b[34m\u001b[1mdebian@sha256:9c6e381421d0f48d1b8133e573f33c185ee16cbf505eda9c4a8a4791b25ea8a6\u001b[0m\r\n                                                    \u001b[39m9c6e381421d0\u001b[0m        \u001b[39m187MB\u001b[0m         \u001b[39m52.6MB\u001b[0m        \r\n\u001b[34m\u001b[1mnginx:1.29\u001b[0m                                          \u001b[39m1881968aff6f\u001b[0m        \u001b[39m240MB\u001b[0m         \u001b[39m65.8MB\u001b[0m        \r\n\u001b[34m\u001b[1mveb:1.0\u001b[0m                                             \u001b[39m1881968aff6f\u001b[0m        \u001b[39m240MB\u001b[0m         \u001b[39m65.8MB\u001b[0m        \r\n",
+     "kod": 0,
+     "ms": 303
+    },
+    {
+     "cmd": "docker image rm veb:1.0",
+     "out": "Untagged: veb:1.0\r\n",
+     "kod": 0,
+     "ms": 144
+    },
+    {
+     "cmd": "docker rmi debian:trixie",
+     "out": "Untagged: debian:trixie\r\nUntagged: debian@sha256:9c6e381421d0f48d1b8133e573f33c185ee16cbf505eda9c4a8a4791b25ea8a6\r\nDeleted: sha256:9c6e381421d0f48d1b8133e573f33c185ee16cbf505eda9c4a8a4791b25ea8a6\r\n",
+     "kod": 0,
+     "ms": 343
+    },
+    {
+     "cmd": "docker image ls",
+     "out": "                                                                                \u001b[1m\u001b[106m\u001b[30mi\u001b[0m\u001b[0m \u001b[96mInfo → \u001b[0m\u001b[0m \u001b[38;5;0m\u001b[48;5;14m U \u001b[0m In Use\r\n\u001b[39m\u001b[1mIMAGE\u001b[0m        \u001b[39m\u001b[1mID\u001b[0m             \u001b[39m\u001b[1mDISK USAGE\u001b[0m   \u001b[39m\u001b[1mCONTENT SIZE\u001b[0m   \u001b[39m\u001b[1mEXTRA\u001b[0m\r\n\u001b[34m\u001b[1mnginx:1.29\u001b[0m   \u001b[39m1881968aff6f\u001b[0m        \u001b[39m240MB\u001b[0m         \u001b[39m65.8MB\u001b[0m        \r\n",
+     "kod": 0,
+     "ms": 207
+    },
+    {
+     "cmd": "docker image prune -a -f",
+     "out": "Deleted Images:\r\nuntagged: nginx:1.29\r\ndeleted: sha256:1881968aff6f7cdcc4b888c00a11f4ce241ad7ec957e0cb4a9e19e93a3ff87ea\r\ndeleted: sha256:ab15d428b6a7121511a38221591a41f835933ac16f996fafd102d128a0fa20f7\r\ndeleted: sha256:bf34a2efe16261f3df780ef1aaa3d34d2e2f85d7257b3ffc1b20f78de52a41f6\r\n\r\nTotal reclaimed space: 240MB\r\n",
+     "kod": 0,
+     "ms": 381
+    },
+    {
+     "cmd": "docker image ls",
+     "out": "                                                                                \u001b[1m\u001b[106m\u001b[30mi\u001b[0m\u001b[0m \u001b[96mInfo → \u001b[0m\u001b[0m \u001b[38;5;0m\u001b[48;5;14m U \u001b[0m In Use\r\n\u001b[39m\u001b[1mIMAGE\u001b[0m   \u001b[39m\u001b[1mID\u001b[0m             \u001b[39m\u001b[1mDISK USAGE\u001b[0m   \u001b[39m\u001b[1mCONTENT SIZE\u001b[0m   \u001b[39m\u001b[1mEXTRA\u001b[0m\r\n",
+     "kod": 0,
+     "ms": 163
+    },
+    {
+     "cmd": "docker system df",
+     "out": "TYPE            TOTAL     ACTIVE    SIZE      RECLAIMABLE\r\nImages          1         1         6.78MB    0B (0%)\r\nContainers      1         0         4.096kB   4.096kB (100%)\r\nLocal Volumes   0         0         0B        0B\r\nBuild Cache     0         0         0B        0B\r\n",
+     "kod": 0,
+     "ms": 187
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,320 @@
+{
+ "docker": "29.9.3",
+ "sana": "2026-11-23",
+ "terminal": [
+  100,
+  30
+ ],
+ "ssenariylar": [
+  {
+   "ssenariy": "05-tarmoq.txt",
+   "buyruqlar": [
+    {
+     "direktiva": "tayyor alpine:latest nginx:1.29"
+    },
+    {
+     "cmd": "docker network ls",
+     "out": "NETWORK ID     NAME      DRIVER    SCOPE\r\n743c2fa902f4   bridge    bridge    local\r\nfd64d669fca7   host      host      local\r\ne85329cbaa72   none      null      local\r\n",
+     "kod": 0,
+     "ms": 165
+    },
+    {
+     "cmd": "docker run -d --name veb nginx:1.29",
+     "out": "a783f8c9970a34818a7d75a08181470d25cde5b3d6a7ecc412bcc979529e772c\r\n",
+     "kod": 0,
+     "ms": 699
+    },
+    {
+     "cmd": "docker run --rm alpine wget -qO- -T 3 http://veb/ | head -4",
+     "out": "wget: bad address 'veb'\r\n",
+     "kod": 0,
+     "ms": 816
+    },
+    {
+     "cmd": "docker inspect -f '{{.NetworkSettings.Networks.bridge.IPAddress}}' veb",
+     "out": "172.18.0.2\r\n",
+     "kod": 0,
+     "ms": 123
+    },
+    {
+     "cmd": "docker run --rm alpine wget -qO- -T 3 http://172.17.0.2/ | grep -o '<title>.*</title>'",
+     "out": "wget: can't connect to remote host (172.17.0.2): Connection refused\r\n",
+     "kod": 1,
+     "ms": 578
+    },
+    {
+     "cmd": "docker run --rm alpine wget -qO- -T 3 http://172.17.0.2/",
+     "out": "wget: can't connect to remote host (172.17.0.2): Connection refused\r\n",
+     "kod": 1,
+     "ms": 567
+    },
+    {
+     "cmd": "docker network create ilova-tarmoq",
+     "out": "b6d5a58ae9692cc0c01724c729bd7b216c3eacf98398fcfaaeebd9a51ec0d54c\r\n",
+     "kod": 0,
+     "ms": 212
+    },
+    {
+     "cmd": "docker network ls",
+     "out": "NETWORK ID     NAME           DRIVER    SCOPE\r\n743c2fa902f4   bridge         bridge    local\r\nfd64d669fca7   host           host      local\r\nb6d5a58ae969   ilova-tarmoq   bridge    local\r\ne85329cbaa72   none           null      local\r\n",
+     "kod": 0,
+     "ms": 138
+    },
+    {
+     "cmd": "docker network connect ilova-tarmoq veb",
+     "out": "",
+     "kod": 0,
+     "ms": 231
+    },
+    {
+     "cmd": "docker run --rm --network ilova-tarmoq alpine wget -qO- -T 3 http://veb/ | grep -o '<title>.*</title>'",
+     "out": "<title>Welcome to nginx!</title>\r\n",
+     "kod": 0,
+     "ms": 589
+    },
+    {
+     "cmd": "docker network inspect ilova-tarmoq -f '{{range .Containers}}{{.Name}} {{.IPv4Address}}{{end}}'",
+     "out": "veb 172.19.0.2/16\r\n",
+     "kod": 0,
+     "ms": 155
+    },
+    {
+     "cmd": "docker network inspect ilova-tarmoq",
+     "out": "[\r\n    {\r\n        \"Name\": \"ilova-tarmoq\",\r\n        \"Id\": \"b6d5a58ae9692cc0c01724c729bd7b216c3eacf98398fcfaaeebd9a51ec0d54c\",\r\n        \"Created\": \"2026-11-23T04:51:35.161396931Z\",\r\n        \"Scope\": \"local\",\r\n        \"Driver\": \"bridge\",\r\n        \"EnableIPv4\": true,\r\n        \"EnableIPv6\": false,\r\n        \"IPAM\": {\r\n            \"Driver\": \"default\",\r\n            \"Options\": {},\r\n            \"Config\": [\r\n                {\r\n                    \"Subnet\": \"172.19.0.0/16\",\r\n                    \"Gateway\": \"172.19.0.1\"\r\n                }\r\n            ]\r\n        },\r\n        \"Internal\": false,\r\n        \"Attachable\": false,\r\n        \"Ingress\": false,\r\n        \"ConfigFrom\": {\r\n            \"Network\": \"\"\r\n        },\r\n        \"ConfigOnly\": false,\r\n        \"Options\": {},\r\n        \"Labels\": {},\r\n        \"Containers\": {\r\n            \"a783f8c9970a34818a7d75a08181470d25cde5b3d6a7ecc412bcc979529e772c\": {\r\n                \"Name\": \"veb\",\r\n                \"EndpointID\": \"f5e45c4ff54669eeb9649786af0a9a77e0da30ea9ab02e54c03209fda6706b24\",\r\n                \"MacAddress\": \"ce:3a:25:0c:9f:45\",\r\n                \"IPv4Address\": \"172.19.0.2/16\",\r\n                \"IPv6Address\": \"\"\r\n            }\r\n        },\r\n        \"Status\": {\r\n            \"IPAM\": {\r\n                \"Subnets\": {\r\n                    \"172.19.0.0/16\": {\r\n                        \"IPsInUse\": 4,\r\n                        \"DynamicIPsAvailable\": 65532\r\n                    }\r\n                }\r\n            }\r\n        }\r\n    }\r\n]\r\n",
+     "kod": 0,
+     "ms": 138
+    },
+    {
+     "cmd": "docker run --rm --network ilova-tarmoq alpine ping -c 2 veb",
+     "out": "PING veb (172.19.0.2): 56 data bytes\r\n64 bytes from 172.19.0.2: seq=0 ttl=64 time=0.144 ms\r\n64 bytes from 172.19.0.2: seq=1 ttl=64 time=0.243 ms\r\n\r\n--- veb ping statistics ---\r\n2 packets transmitted, 2 packets received, 0% packet loss\r\nround-trip min/avg/max = 0.144/0.193/0.243 ms\r\n",
+     "kod": 0,
+     "ms": 1575,
+     "bolaklar": [
+      [
+       429,
+       "PING veb (172.19.0.2): 56 data bytes\r\n64 bytes from 172.19.0.2: seq=0 ttl=64 time=0.144 ms\r\n"
+      ],
+      [
+       1430,
+       "64 bytes from 172.19.0.2: seq=1 ttl=64 time=0.243 ms\r\n\r\n--- veb ping statistics ---\r\n2 packets transmitted, 2 packets received, 0% packet loss\r\nround-trip min/avg/max = 0.144/0.193/0.243 ms\r\n"
+      ]
+     ]
+    },
+    {
+     "cmd": "docker run --rm --network ilova-tarmoq alpine nslookup veb",
+     "out": "Server:\t\t127.0.0.11\r\nAddress:\t127.0.0.11:53\r\n\r\nNon-authoritative answer:\r\n\r\nNon-authoritative answer:\r\nName:\tveb\r\nAddress: 172.19.0.2\r\n\r\n",
+     "kod": 0,
+     "ms": 519
+    },
+    {
+     "cmd": "docker run --rm --network ilova-tarmoq alpine cat /etc/resolv.conf",
+     "out": "# Generated by Docker Engine.\r\n# This file can be edited; Docker Engine will not make further changes once it\r\n# has been modified.\r\n\r\nnameserver 127.0.0.11\r\nsearch .\r\noptions ndots:0\r\n\r\n# Based on host file: '/etc/resolv.conf' (internal resolver)\r\n# ExtServers: [host(188.120.247.2) host(188.120.247.8) host(82.146.59.250) host(185.60.132.11)]\r\n# Overrides: []\r\n# Option ndots from: internal\r\n",
+     "kod": 0,
+     "ms": 568
+    },
+    {
+     "cmd": "docker network rm ilova-tarmoq",
+     "out": "Error response from daemon: error while removing network: network ilova-tarmoq has active endpoints (name:\"veb\" id:\"f5e45c4ff546\")\r\nexit status 1\r\n",
+     "kod": 1,
+     "ms": 147
+    },
+    {
+     "cmd": "docker rm -f veb",
+     "out": "veb\r\n",
+     "kod": 0,
+     "ms": 296
+    },
+    {
+     "cmd": "docker network rm ilova-tarmoq",
+     "out": "ilova-tarmoq\r\n",
+     "kod": 0,
+     "ms": 165
+    },
+    {
+     "cmd": "docker run -d --name veb -p 8080:80 nginx:1.29 >/dev/null && echo ishga tushdi",
+     "out": "ishga tushdi\r\n",
+     "kod": 0,
+     "ms": 459
+    },
+    {
+     "cmd": "docker port veb",
+     "out": "80/tcp -> 0.0.0.0:8080\r\n80/tcp -> [::]:8080\r\n",
+     "kod": 0,
+     "ms": 175
+    },
+    {
+     "cmd": "docker ps",
+     "out": "CONTAINER ID   IMAGE        COMMAND                  CREATED        STATUS                  PORTS                                     NAMES\r\na8b896e385c7   nginx:1.29   \"/docker-entrypoint.…\"   1 second ago   Up Less than a second   0.0.0.0:8080->80/tcp, [::]:8080->80/tcp   veb\r\n",
+     "kod": 0,
+     "ms": 150
+    },
+    {
+     "cmd": "curl -s http://localhost:8080/",
+     "out": "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n<title>Welcome to nginx!</title>\r\n<style>\r\nhtml { color-scheme: light dark; }\r\nbody { width: 35em; margin: 0 auto;\r\nfont-family: Tahoma, Verdana, Arial, sans-serif; }\r\n</style>\r\n</head>\r\n<body>\r\n<h1>Welcome to nginx!</h1>\r\n<p>If you see this page, nginx is successfully installed and working.\r\nFurther configuration is required for the web server, reverse proxy, \r\nAPI gateway, load balancer, content cache, or other features.</p>\r\n\r\n<p>For online documentation and support please refer to\r\n<a href=\"https://nginx.org/\">nginx.org</a>.<br/>\r\nTo engage with the community please visit\r\n<a href=\"https://community.nginx.org/\">community.nginx.org</a>.<br/>\r\nFor enterprise grade support, professional services, additional \r\nsecurity features and capabilities please refer to\r\n<a href=\"https://f5.com/nginx\">f5.com/nginx</a>.</p>\r\n\r\n<p><em>Thank you for using nginx.</em></p>\r\n</body>\r\n</html>\r\n",
+     "kod": 0,
+     "ms": 134
+    },
+    {
+     "cmd": "curl -sS -o /dev/null -w \"%{http_code}\\n\" http://127.0.0.1:8080/",
+     "out": "200\r\n",
+     "kod": 0,
+     "ms": 112
+    },
+    {
+     "cmd": "curl -sI http://127.0.0.1:8080/",
+     "out": "HTTP/1.1 200 OK\r\r\n\u001b[1mServer\u001b[0m: nginx/1.29.8\r\r\n\u001b[1mDate\u001b[0m: Mon, 23 Nov 2026 04:51:40 GMT\r\r\n\u001b[1mContent-Type\u001b[0m: text/html\r\r\n\u001b[1mContent-Length\u001b[0m: 896\r\r\n\u001b[1mLast-Modified\u001b[0m: Tue, 07 Apr 2026 11:37:12 GMT\r\r\n\u001b[1mConnection\u001b[0m: keep-alive\r\r\n\u001b[1mETag\u001b[0m: \"69d4ec68-380\"\r\r\n\u001b[1mAccept-Ranges\u001b[0m: bytes\r\r\n\r\r\n",
+     "kod": 0,
+     "ms": 130
+    },
+    {
+     "cmd": "curl -s http://127.0.0.1:8080/yoq",
+     "out": "<html>\r\r\n<head><title>404 Not Found</title></head>\r\r\n<body>\r\r\n<center><h1>404 Not Found</h1></center>\r\r\n<hr><center>nginx/1.29.8</center>\r\r\n</body>\r\r\n</html>\r\r\n",
+     "kod": 0,
+     "ms": 118
+    },
+    {
+     "cmd": "curl -i http://127.0.0.1:8080/",
+     "out": "HTTP/1.1 200 OK\r\r\n\u001b[1mServer\u001b[0m: nginx/1.29.8\r\r\n\u001b[1mDate\u001b[0m: Mon, 23 Nov 2026 04:51:41 GMT\r\r\n\u001b[1mContent-Type\u001b[0m: text/html\r\r\n\u001b[1mContent-Length\u001b[0m: 896\r\r\n\u001b[1mLast-Modified\u001b[0m: Tue, 07 Apr 2026 11:37:12 GMT\r\r\n\u001b[1mConnection\u001b[0m: keep-alive\r\r\n\u001b[1mETag\u001b[0m: \"69d4ec68-380\"\r\r\n\u001b[1mAccept-Ranges\u001b[0m: bytes\r\r\n\r\r\n<!DOCTYPE html>\r\n<html>\r\n<head>\r\n<title>Welcome to nginx!</title>\r\n<style>\r\nhtml { color-scheme: light dark; }\r\nbody { width: 35em; margin: 0 auto;\r\nfont-family: Tahoma, Verdana, Arial, sans-serif; }\r\n</style>\r\n</head>\r\n<body>\r\n<h1>Welcome to nginx!</h1>\r\n<p>If you see this page, nginx is successfully installed and working.\r\nFurther configuration is required for the web server, reverse proxy, \r\nAPI gateway, load balancer, content cache, or other features.</p>\r\n\r\n<p>For online documentation and support please refer to\r\n<a href=\"https://nginx.org/\">nginx.org</a>.<br/>\r\nTo engage with the community please visit\r\n<a href=\"https://community.nginx.org/\">community.nginx.org</a>.<br/>\r\nFor enterprise grade support, professional services, additional \r\nsecurity features and capabilities please refer to\r\n<a href=\"https://f5.com/nginx\">f5.com/nginx</a>.</p>\r\n\r\n<p><em>Thank you for using nginx.</em></p>\r\n</body>\r\n</html>\r\n",
+     "kod": 0,
+     "ms": 125
+    },
+    {
+     "cmd": "docker logs veb",
+     "out": "/docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration\r\n/docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/\r\n/docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh\r\n10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf\r\n10-listen-on-ipv6-by-default.sh: info: Enabled listen on IPv6 in /etc/nginx/conf.d/default.conf\r\n/docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh\r\n/docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh\r\n/docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh\r\n/docker-entrypoint.sh: Configuration complete; ready for start up\r\n2026/11/23 04:51:40 [notice] 1#1: using the \"epoll\" event method\r\n2026/11/23 04:51:40 [notice] 1#1: nginx/1.29.8\r\n2026/11/23 04:51:40 [notice] 1#1: built by gcc 14.2.0 (Debian 14.2.0-19) \r\n2026/11/23 04:51:40 [notice] 1#1: OS: Linux 7.0.0-43-generic\r\n2026/11/23 04:51:40 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288\r\n2026/11/23 04:51:40 [notice] 1#1: start worker processes\r\n2026/11/23 04:51:40 [notice] 1#1: start worker process 30\r\n172.18.0.1 - - [23/Nov/2026:04:51:40 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.23.0\" \"-\"\r\n172.18.0.1 - - [23/Nov/2026:04:51:40 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.23.0\" \"-\"\r\n172.18.0.1 - - [23/Nov/2026:04:51:40 +0000] \"HEAD / HTTP/1.1\" 200 0 \"-\" \"curl/8.23.0\" \"-\"\r\n2026/11/23 04:51:41 [error] 30#30: *4 open() \"/usr/share/nginx/html/yoq\" failed (2: No such file or directory), client: 172.18.0.1, server: localhost, request: \"GET /yoq HTTP/1.1\", host: \"127.0.0.1:8080\"\r\n172.18.0.1 - - [23/Nov/2026:04:51:41 +0000] \"GET /yoq HTTP/1.1\" 404 153 \"-\" \"curl/8.23.0\" \"-\"\r\n172.18.0.1 - - [23/Nov/2026:04:51:41 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.23.0\" \"-\"\r\n",
+     "kod": 0,
+     "ms": 178
+    },
+    {
+     "cmd": "docker run -d --name veb2 -p 8080:80 nginx:1.29",
+     "out": "1da94984a06afa72ce41abf70a7518362e22570d115a47556328906c5edefeee\r\ndocker: Error response from daemon: failed to set up container networking: driver failed programming external connectivity on endpoint veb2 (85465a0eb8230d33025f05692998a9da5c2ff8bc9af8ab62f530f5d8b42c8ac9): Bind for 0.0.0.0:8080 failed: port is already allocated\r\n\r\nRun 'docker run --help' for more information\r\n",
+     "kod": 125,
+     "ms": 553,
+     "bolaklar": [
+      [
+       210,
+       "1da94984a06afa72ce41abf70a7518362e22570d115a47556328906c5edefeee\r\n"
+      ],
+      [
+       536,
+       "docker: Error response from daemon: failed to set up container networking: driver failed programming external connectivity on endpoint veb2 (85465a0eb8230d33025f05692998a9da5c2ff8bc9af8ab62f530f5d8b42c8ac9): Bind for 0.0.0.0:8080 failed: port is already allocated\r\n\r\nRun 'docker run --help' for more information\r\n"
+      ]
+     ]
+    },
+    {
+     "cmd": "docker ps -a",
+     "out": "CONTAINER ID   IMAGE        COMMAND                  CREATED         STATUS         PORTS                                     NAMES\r\n1da94984a06a   nginx:1.29   \"/docker-entrypoint.…\"   1 second ago    Created                                                  veb2\r\na8b896e385c7   nginx:1.29   \"/docker-entrypoint.…\"   3 seconds ago   Up 2 seconds   0.0.0.0:8080->80/tcp, [::]:8080->80/tcp   veb\r\n",
+     "kod": 0,
+     "ms": 158
+    },
+    {
+     "cmd": "docker rm veb2",
+     "out": "veb2\r\n",
+     "kod": 0,
+     "ms": 164
+    },
+    {
+     "cmd": "docker rm -f veb >/dev/null",
+     "out": "",
+     "kod": 0,
+     "ms": 337
+    },
+    {
+     "cmd": "docker run -d --name veb -p 127.0.0.1:8080:80 nginx:1.29 >/dev/null && echo ishga tushdi",
+     "out": "ishga tushdi\r\n",
+     "kod": 0,
+     "ms": 492
+    },
+    {
+     "cmd": "docker port veb",
+     "out": "80/tcp -> 127.0.0.1:8080\r\n",
+     "kod": 0,
+     "ms": 203
+    },
+    {
+     "cmd": "docker ps",
+     "out": "CONTAINER ID   IMAGE        COMMAND                  CREATED        STATUS                  PORTS                    NAMES\r\n1e31779659c8   nginx:1.29   \"/docker-entrypoint.…\"   1 second ago   Up Less than a second   127.0.0.1:8080->80/tcp   veb\r\n",
+     "kod": 0,
+     "ms": 152
+    },
+    {
+     "cmd": "curl -sS -o /dev/null -w \"%{http_code}\\n\" http://127.0.0.1:8080/",
+     "out": "200\r\n",
+     "kod": 0,
+     "ms": 125
+    },
+    {
+     "cmd": "docker rm -f veb",
+     "out": "veb\r\n",
+     "kod": 0,
+     "ms": 341
+    },
+    {
+     "cmd": "docker run -d --name veb -P nginx:1.29",
+     "out": "12f44a88d2a9e23a0187092b40ce1ddeaeb1c2432f05119d342fc6cc59f9ae06\r\n",
+     "kod": 0,
+     "ms": 468
+    },
+    {
+     "cmd": "docker port veb",
+     "out": "80/tcp -> 0.0.0.0:32768\r\n80/tcp -> [::]:32768\r\n",
+     "kod": 0,
+     "ms": 197
+    },
+    {
+     "cmd": "docker rm -f veb",
+     "out": "veb\r\n",
+     "kod": 0,
+     "ms": 319
+    },
+    {
+     "cmd": "curl -s http://127.0.0.1:8080/",
+     "out": "",
+     "kod": 7,
+     "ms": 118
+    },
+    {
+     "cmd": "docker run --rm --network host alpine ip -4 -o addr",
+     "out": "1: lo    inet 127.0.0.1/8 scope host lo\\       valid_lft forever preferred_lft forever\r\n2: eth0    inet 172.17.0.4/16 brd 172.17.255.255 scope global eth0\\       valid_lft forever preferred_lft forever\r\n3: docker0    inet 172.18.0.1/16 brd 172.18.255.255 scope global docker0\\       valid_lft forever preferred_lft forever\r\n",
+     "kod": 0,
+     "ms": 555
+    },
+    {
+     "cmd": "docker run --rm --network none alpine ip -4 -o addr",
+     "out": "1: lo    inet 127.0.0.1/8 scope host lo\\       valid_lft forever preferred_lft forever\r\n",
+     "kod": 0,
+     "ms": 492
+    },
+    {
+     "cmd": "docker network create --subnet 10.10.0.0/24 tor2",
+     "out": "fd7b13b57d01069203a03e435db355d0a074b08c1f893b495f27f38a9bc1c698\r\n",
+     "kod": 0,
+     "ms": 186
+    },
+    {
+     "cmd": "docker network inspect tor2 -f '{{range .IPAM.Config}}{{.Subnet}} {{.Gateway}}{{end}}'",
+     "out": "10.10.0.0/24 10.10.0.1\r\n",
+     "kod": 0,
+     "ms": 132
+    },
+    {
+     "cmd": "docker run --rm --network tor2 alpine ip -4 -o addr show eth0",
+     "out": "2: eth0    inet 10.10.0.2/24 brd 10.10.0.255 scope global eth0\\       valid_lft forever preferred_lft forever\r\n",
+     "kod": 0,
+     "ms": 612
+    },
+    {
+     "cmd": "docker network rm tor2",
+     "out": "tor2\r\n",
+     "kod": 0,
+     "ms": 194
+    },
+    {
+     "cmd": "docker network prune -f",
+     "out": "",
+     "kod": 0,
+     "ms": 147
+    }
+   ]
+  }
+ ]
+}

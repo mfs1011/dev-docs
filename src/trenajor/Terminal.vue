@@ -13,6 +13,9 @@ const props = defineProps({ holat: Object, suggest: { type: Function, default: g
 const emit = defineEmits(['send', 'holat', 'command', 'prompt'])
 
 const box = ref(null)
+// xterm padding'siz ichki elementga ochiladi: FitAddon ota-elementning to'liq balandligini (padding bilan) oladi va
+// padding'ni ayirmaydi — padding'li konteynerda bitta qator ortiqcha chiqib, pastki qator (prompt) kesilardi
+const ekran = ref(null)
 const ghost = reactive({ show: false, x: 0, y: 0, text: '', items: [], sel: 0, below: true, cw: 9, ch: 18 })
 let term, fit, prompt = null, atPrompt = false, timer = 0
 
@@ -115,7 +118,7 @@ onMounted(() => {
   window.addEventListener('docs-theme-change', onTheme)
   fit = new FitAddon()
   term.loadAddon(fit)
-  term.open(box.value)
+  term.open(ekran.value)
   fit.fit()
   // repo holati (trenajor-holat skripti) — ekranga chiqmaydi
   term.parser.registerOscHandler(7771, (data) => { emit('holat', decodeB64(data)); return true })
@@ -137,6 +140,7 @@ onBeforeUnmount(() => { ro?.disconnect(); window.removeEventListener('docs-theme
 
 <template>
   <div class="term" ref="box" @click="focus">
+    <div class="xt" ref="ekran" />
     <div v-if="ghost.show" class="ghost" :style="{ left: ghost.x + 'px', top: ghost.y + 'px', height: ghost.ch + 'px', lineHeight: ghost.ch + 'px' }">{{ ghost.text }}</div>
     <div v-if="ghost.show" class="menu" :class="{ up: !ghost.below }"
       :style="{ left: Math.max(0, ghost.x - 8) + 'px', top: (ghost.below ? ghost.y + ghost.ch + 4 : ghost.y - 4) + 'px' }">
@@ -149,7 +153,8 @@ onBeforeUnmount(() => { ro?.disconnect(); window.removeEventListener('docs-theme
 </template>
 
 <style scoped>
-.term { position: relative; height: 100%; background: var(--code-bg); padding: 10px 0 0 12px; box-sizing: border-box; }
+.term { position: relative; height: 100%; background: var(--code-bg); box-sizing: border-box; overflow: hidden; }
+.xt { position: absolute; inset: 10px 0 6px 12px; }
 .ghost { position: absolute; z-index: 5; pointer-events: none; color: #6b7689; font: 15px Menlo, "DejaVu Sans Mono", monospace; white-space: pre; }
 .menu { position: absolute; z-index: 6; pointer-events: none; min-width: 300px; max-width: 520px; background: #1b2230; border: 1px solid #2f3b52; border-radius: 8px; padding: 4px 0; box-shadow: 0 8px 24px rgba(0, 0, 0, .45); font: 13px system-ui, sans-serif; }
 .menu.up { transform: translateY(-100%); }

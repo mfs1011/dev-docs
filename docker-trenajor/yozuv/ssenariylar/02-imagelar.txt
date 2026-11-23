@@ -1,0 +1,37 @@
+# 3-bob: pull, teg, digest, qatlamlar (teglari kitobdan beri o'zgarmagan image'lar)
+$ docker pull debian
+$ docker pull debian:trixie
+$ docker image ls
+$ docker image ls debian
+$ docker image inspect debian:trixie --format "{{.Id}}"
+$ docker pull debian@sha256:9c6e381421d0f48d1b8133e573f33c185ee16cbf505eda9c4a8a4791b25ea8a6
+$ docker image ls
+$ docker image rm debian:latest
+$ docker image ls debian
+$ docker system df
+$ docker pull nginx:1.29
+$ docker image history nginx:1.29
+$ docker image history --no-trunc nginx:1.29
+$ docker image inspect nginx:1.29 --format "{{len .RootFS.Layers}} qatlam, {{.Os}}/{{.Architecture}}"
+$ docker image inspect nginx:1.29
+$ docker images
+$ docker pull nginx:1.29
+$ docker pull -q busybox:1.37
+$ docker pull yoq-image-12345
+$ docker pull nginx:9.99.99
+$ docker pull Nginx
+$ docker run busybox:1.37 echo salom
+$ docker image rm busybox:1.37
+$ docker image rm -f busybox:1.37
+$ docker image ls -a
+$ docker image ls -q
+$ docker image ls --format "{{.Repository}}:{{.Tag}} {{.Size}}"
+$ docker image ls --format json
+$ docker tag nginx:1.29 veb:1.0
+$ docker image ls
+$ docker image rm veb:1.0
+$ docker rmi debian:trixie
+$ docker image ls
+$ docker image prune -a -f
+$ docker image ls
+$ docker system df

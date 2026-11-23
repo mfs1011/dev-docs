@@ -1,0 +1,398 @@
+{
+ "docker": "29.9.3",
+ "sana": "2026-11-23",
+ "terminal": [
+  100,
+  30
+ ],
+ "ssenariylar": [
+  {
+   "ssenariy": "14-format.txt",
+   "buyruqlar": [
+    {
+     "direktiva": "tayyor alpine:latest nginx:1.29 hello-world:latest busybox:1.37 debian:trixie"
+    },
+    {
+     "cmd": "docker run -d --name veb nginx:1.29 >/dev/null; docker run --name a1 alpine true; docker run -d --name s1 alpine sleep 600 >/dev/null; docker run --name h1 hello-world >/dev/null; docker run --name b1 busybox:1.37 true; docker run --name d1 debian:trixie true",
+     "out": "",
+     "kod": 0,
+     "ms": 3273
+    },
+    {
+     "cmd": "docker image ls | cat",
+     "out": "IMAGE                ID             DISK USAGE   CONTENT SIZE   EXTRA\r\nalpine:latest        3f4d6b32e267         13MB         3.94MB   U    \r\nbusybox:1.37         a7dbc319b143       6.77MB         2.22MB   U    \r\ndebian:trixie        9c6e381421d0        187MB         52.6MB   U    \r\nhello-world:latest   c567b231f656       25.9kB         9.49kB   U    \r\nnginx:1.29           1881968aff6f        240MB         65.8MB   U    \r\n",
+     "kod": 0,
+     "ms": 293
+    },
+    {
+     "cmd": "docker image ls -a | cat",
+     "out": "IMAGE                ID             DISK USAGE   CONTENT SIZE   EXTRA\r\nalpine:latest        3f4d6b32e267         13MB         3.94MB   U    \r\nbusybox:1.37         a7dbc319b143       6.77MB         2.22MB   U    \r\ndebian:trixie        9c6e381421d0        187MB         52.6MB   U    \r\nhello-world:latest   c567b231f656       25.9kB         9.49kB   U    \r\nnginx:1.29           1881968aff6f        240MB         65.8MB   U    \r\n",
+     "kod": 0,
+     "ms": 372
+    },
+    {
+     "cmd": "docker ps -a -s",
+     "out": "CONTAINER ID   IMAGE           COMMAND                  CREATED         STATUS                              PORTS     NAMES     SIZE\r\n28e2e75ce1ed   debian:trixie   \"true\"                   1 second ago    Exited (0) Less than a second ago             d1        4.1kB (virtual 134MB)\r\n02fc10156d30   busybox:1.37    \"true\"                   2 seconds ago   Exited (0) 1 second ago                       b1        4.1kB (virtual 4.59MB)\r\nf300f3e2790e   hello-world     \"/hello\"                 2 seconds ago   Exited (0) 1 second ago                       h1        4.1kB (virtual 49.2kB)\r\n4b5ad63a1515   alpine          \"sleep 600\"              3 seconds ago   Up 2 seconds                                  s1        4.1kB (virtual 9.11MB)\r\n371de2209e26   alpine          \"true\"                   3 seconds ago   Exited (0) 2 seconds ago                      a1        4.1kB (virtual 9.11MB)\r\ndde697f11cbe   nginx:1.29      \"/docker-entrypoint.…\"   4 seconds ago   Up 3 seconds                        80/tcp    veb       81.9kB (virtual 174MB)\r\n",
+     "kod": 0,
+     "ms": 217
+    },
+    {
+     "cmd": "docker ps -a | cat",
+     "out": "CONTAINER ID   IMAGE           COMMAND                  CREATED         STATUS                     PORTS     NAMES\r\n28e2e75ce1ed   debian:trixie   \"true\"                   1 second ago    Exited (0) 1 second ago              d1\r\n02fc10156d30   busybox:1.37    \"true\"                   2 seconds ago   Exited (0) 1 second ago              b1\r\nf300f3e2790e   hello-world     \"/hello\"                 2 seconds ago   Exited (0) 2 seconds ago             h1\r\n4b5ad63a1515   alpine          \"sleep 600\"              3 seconds ago   Up 2 seconds                         s1\r\n371de2209e26   alpine          \"true\"                   3 seconds ago   Exited (0) 2 seconds ago             a1\r\ndde697f11cbe   nginx:1.29      \"/docker-entrypoint.…\"   4 seconds ago   Up 3 seconds               80/tcp    veb\r\n",
+     "kod": 0,
+     "ms": 204
+    },
+    {
+     "cmd": "docker system df",
+     "out": "TYPE            TOTAL     ACTIVE    SIZE      RECLAIMABLE\r\nImages          5         5         446.8MB   0B (0%)\r\nContainers      6         2         102.4kB   16.38kB (16%)\r\nLocal Volumes   0         0         0B        0B\r\nBuild Cache     0         0         0B        0B\r\n",
+     "kod": 0,
+     "ms": 453,
+     "bolaklar": [
+      [
+       441,
+       "TYPE            TOTAL     ACTIVE    SIZE      RECLAIMABLE\r\nImages"
+      ],
+      [
+       441,
+       "        "
+      ],
+      [
+       441,
+       "  5         5         446.8MB   0B (0%)\r\nContainers      6         2         102.4kB   16.38kB (16%)\r\nLocal Volumes   0         0         0B        0B\r\nBuild Cache     0         0         0B        0B\r\n"
+      ]
+     ]
+    },
+    {
+     "cmd": "docker system df -v",
+     "out": "Images space usage:\r\n\r\nREPOSITORY    TAG       IMAGE ID       CREATED        SIZE      SHARED SIZE   UNIQUE SIZE   CONTAINERS\r\nalpine        latest    3f4d6b32e267   2 weeks ago    13MB      0B            13.03MB       2\r\ndebian        trixie    9c6e381421d0   2 weeks ago    187MB     0B            186.9MB       1\r\nnginx         1.29      1881968aff6f   6 months ago   240MB     0B            240MB         1\r\nhello-world   latest    c567b231f656   8 months ago   25.9kB    0B            25.87kB       1\r\nbusybox       1.37      a7dbc319b143   2 years ago    6.77MB    0B            6.77MB        1\r\n\r\nContainers space usage:\r\n\r\nCONTAINER ID   IMAGE           COMMAND                  LOCAL VOLUMES   SIZE      CREATED         STATUS                     NAMES\r\n28e2e75ce1ed   debian:trixie   \"true\"                   0               4.1kB     2 seconds ago   Exited (0) 1 second ago    d1\r\n02fc10156d30   busybox:1.37    \"true\"                   0               4.1kB     3 seconds ago   Exited (0) 2 seconds ago   b1\r\nf300f3e2790e   hello-world     \"/hello\"                 0               4.1kB     3 seconds ago   Exited (0) 2 seconds ago   h1\r\n4b5ad63a1515   alpine          \"sleep 600\"              0               4.1kB     4 seconds ago   Up 3 seconds               s1\r\n371de2209e26   alpine          \"true\"                   0               4.1kB     4 seconds ago   Exited (0) 3 seconds ago   a1\r\ndde697f11cbe   nginx:1.29      \"/docker-entrypoint.…\"   0               81.9kB    5 seconds ago   Up 4 seconds               veb\r\n\r\nLocal Volumes space usage:\r\n\r\nVOLUME NAME   LINKS     SIZE\r\n\r\nBuild cache usage: 0B\r\n\r\nCACHE ID   CACHE TYPE   SIZE      CREATED   LAST USED   USAGE     SHARED\r\n",
+     "kod": 0,
+     "ms": 420,
+     "bolaklar": [
+      [
+       390,
+       "Images space usage:\r\n\r\n"
+      ],
+      [
+       391,
+       "REPOSITORY"
+      ],
+      [
+       391,
+       "    "
+      ],
+      [
+       391,
+       "TAG       IMAGE ID       CREATED        SIZE      SHARED SIZE   UNIQUE SIZE   CONTAINERS\r\nalpine        latest    3f4d6b32e267   2 weeks ago    13MB"
+      ],
+      [
+       392,
+       "      "
+      ],
+      [
+       392,
+       "0B            13.03MB       2\r\ndebian"
+      ],
+      [
+       392,
+       "        trixie    9c6e381421d0"
+      ],
+      [
+       392,
+       "   "
+      ],
+      [
+       393,
+       "2 weeks ago    187MB     0B            186.9MB       1\r\nnginx         1.29      1881968aff6f   6 months ago   240MB     0B            240MB         1\r\n"
+      ],
+      [
+       393,
+       "hello-world"
+      ],
+      [
+       393,
+       "   latest    c567b231f656"
+      ],
+      [
+       393,
+       "   "
+      ],
+      [
+       393,
+       "8 months ago"
+      ],
+      [
+       394,
+       "   25.9kB    0B"
+      ],
+      [
+       394,
+       "            25.87kB       1\r\nbusybox       1.37      a7dbc319b143   2 years ago    6.77MB    0B            6.77MB        1\r\n\r\nContainers space usage:\r\n\r\n"
+      ],
+      [
+       400,
+       "CONTAINER ID"
+      ],
+      [
+       400,
+       "   "
+      ],
+      [
+       400,
+       "IMAGE"
+      ],
+      [
+       400,
+       "        "
+      ],
+      [
+       400,
+       "   "
+      ],
+      [
+       400,
+       "COMMAND"
+      ],
+      [
+       401,
+       "                  LOCAL VOLUMES   SIZE"
+      ],
+      [
+       401,
+       "      CREATED         STATUS"
+      ],
+      [
+       401,
+       "                     NAMES"
+      ],
+      [
+       401,
+       "\r\n28e2e75ce1ed   debian:trixie   \"true\"                   0               4.1kB     2 seconds ago   Exited (0) 1 second ago    d1\r\n02fc10156d30   busybox:1.37    \"true\"                   0               4.1kB     3 seconds ago   Exited (0) 2 seconds ago   b1\r\nf300f3e2790e   hello-world     \"/hello\"                 0               4.1kB     3 seconds ago   Exited (0) 2 seconds ago   h1\r\n4b5ad63a1515   alpine          \"sleep 600\"              0               4.1kB     4 seconds ago   Up 3 seconds               s1\r\n371de2209e26   alpine          \"true\"                   0               4.1kB     4 seconds ago   Exited (0) 3 seconds ago   a1\r\ndde697f11cbe   nginx:1.29      \"/docker-entrypoint.…\"   0               81.9kB    5 seconds ago   Up 4 seconds               veb\r\n"
+      ],
+      [
+       401,
+       "\r\nLocal Volumes space usage:\r\n\r\n"
+      ],
+      [
+       402,
+       "VOLUME NAME"
+      ],
+      [
+       402,
+       "   "
+      ],
+      [
+       402,
+       "LINKS     SIZE\r\n"
+      ],
+      [
+       402,
+       "\r\nBuild cache usage: 0B\r\n\r\n"
+      ],
+      [
+       402,
+       "CACHE ID"
+      ],
+      [
+       402,
+       "   "
+      ],
+      [
+       403,
+       "CACHE TYPE   "
+      ],
+      [
+       403,
+       "SIZE      "
+      ],
+      [
+       403,
+       "CREATED   "
+      ],
+      [
+       403,
+       "LAST USED"
+      ],
+      [
+       403,
+       "   USAGE"
+      ],
+      [
+       403,
+       "     SHARED\r\n"
+      ]
+     ]
+    },
+    {
+     "cmd": "docker container prune -f",
+     "out": "Deleted Containers:\r\n28e2e75ce1edbf051a5ce14cba6256be9b612c1adb6a5d2a6cc00ea94205f9d7\r\n02fc10156d30bbf13a854c2b972d753b880fe006d85d294b9b0aaab16ce029b8\r\nf300f3e2790e633f3cc92d1c631c595127fb9bcd8ed5e2b67375b9bc93aba50e\r\n371de2209e260480335d064f5c77532f3b0c481aca35ef637462549a40991a2f\r\n\r\nTotal reclaimed space: 16.38kB\r\n",
+     "kod": 0,
+     "ms": 249
+    },
+    {
+     "cmd": "docker system df",
+     "out": "TYPE            TOTAL     ACTIVE    SIZE      RECLAIMABLE\r\nImages          5         2         446.8MB   193.7MB (43%)\r\nContainers      2         2         86.02kB   0B (0%)\r\nLocal Volumes   0         0         0B        0B\r\nBuild Cache     0         0         0B        0B\r\n",
+     "kod": 0,
+     "ms": 417,
+     "bolaklar": [
+      [
+       400,
+       "TYPE            TOTAL     ACTIVE    SIZE      RECLAIMABLE\r\nImages          5         2         446.8MB   193.7MB (43%)\r\nContainers      2"
+      ],
+      [
+       401,
+       "        "
+      ],
+      [
+       401,
+       " "
+      ],
+      [
+       401,
+       "2"
+      ],
+      [
+       401,
+       "        "
+      ],
+      [
+       401,
+       " "
+      ],
+      [
+       402,
+       "86.02kB"
+      ],
+      [
+       402,
+       "   0B (0%)\r\n"
+      ],
+      [
+       402,
+       "Local Volumes   0         0         0B        0B\r\n"
+      ],
+      [
+       402,
+       "Build Cache"
+      ],
+      [
+       403,
+       "     0         0         0B        0B\r\n"
+      ]
+     ]
+    },
+    {
+     "cmd": "docker pull alpine:latest 2>&1 | cat",
+     "out": "latest: Pulling from library/alpine\r\nDigest: sha256:f59abe656b692d901e184be3445e084786602108599d2a51d229c0f5a48c71bf\r\nStatus: Downloaded newer image for alpine:latest\r\ndocker.io/library/alpine:latest\r\n",
+     "kod": 0,
+     "ms": 733,
+     "bolaklar": [
+      [
+       555,
+       "latest: Pulling from library/alpine\r\n"
+      ],
+      [
+       706,
+       "Digest: sha256:f59abe656b692d901e184be3445e084786602108599d2a51d229c0f5a48c71bf\r\nStatus: Downloaded newer image for alpine:latest\r\n"
+      ],
+      [
+       711,
+       "docker.io/library/alpine:latest\r\n"
+      ]
+     ]
+    },
+    {
+     "cmd": "docker rmi -f busybox:1.37 >/dev/null; docker pull busybox:1.37 | cat",
+     "out": "1.37: Pulling from library/busybox\r\n68fe9bff2ad4: Pulling fs layer\r\n9177639ff916: Download complete\r\n68fe9bff2ad4: Download complete\r\n68fe9bff2ad4: Pull complete\r\nDigest: sha256:a7dbc319b1438115a207e11930dc4bb3e643dcb3ec0bdd694bb36cd8fad289ec\r\nStatus: Downloaded newer image for busybox:1.37\r\ndocker.io/library/busybox:1.37\r\n",
+     "kod": 0,
+     "ms": 2746,
+     "bolaklar": [
+      [
+       992,
+       "1.37: Pulling from library/busybox\r\n"
+      ],
+      [
+       1630,
+       "68fe9bff2ad4: "
+      ],
+      [
+       1631,
+       "Pulling fs layer\r\n"
+      ],
+      [
+       1859,
+       "9177639ff916: Download complete\r\n"
+      ],
+      [
+       2573,
+       "68fe9bff2ad4: Download complete\r\n"
+      ],
+      [
+       2723,
+       "68fe9bff2ad4: Pull complete\r\nDigest: sha256:a7dbc319b1438115a207e11930dc4bb3e643dcb3ec0bdd694bb36cd8fad289ec\r\nStatus: Downloaded newer image for busybox:1.37\r\ndocker.io/library/busybox:1.37\r\n"
+      ]
+     ]
+    },
+    {
+     "cmd": "docker stats --no-stream veb s1",
+     "out": "CONTAINER ID   NAME      CPU %     MEM USAGE / LIMIT     MEM %     NET I/O         BLOCK I/O         PIDS\r\ndde697f11cbe   veb       0.00%     6.746MiB / 1.752GiB   0.38%     1.41kB / 126B   16.4MB / 12.3kB   2\r\n4b5ad63a1515   s1        0.00%     1.809MiB / 1.752GiB   0.10%     1.02kB / 126B   1.48MB / 0B       1\r\n",
+     "kod": 0,
+     "ms": 2300
+    },
+    {
+     "cmd": "docker top veb",
+     "out": "PID                 USER                TIME                COMMAND\r\n600                 root                0:00                nginx: master process nginx -g daemon off;\r\n643                 101                 0:00                nginx: worker process\r\n",
+     "kod": 0,
+     "ms": 170
+    },
+    {
+     "cmd": "docker port veb 80",
+     "out": "no public port '80' published for veb\r\n",
+     "kod": 1,
+     "ms": 144
+    },
+    {
+     "cmd": "docker inspect -f '{{.State.Status}}' veb s1",
+     "out": "running\r\nrunning\r\n",
+     "kod": 0,
+     "ms": 151
+    },
+    {
+     "cmd": "docker inspect veb s1 --format '{{.Name}}'",
+     "out": "/veb\r\n/s1\r\n",
+     "kod": 0,
+     "ms": 156
+    },
+    {
+     "cmd": "docker container ls --format 'table {{.ID}}\\t{{.Names}}\\t{{.RunningFor}}'",
+     "out": "CONTAINER ID   NAMES     CREATED\r\n4b5ad63a1515   s1        11 seconds ago\r\ndde697f11cbe   veb       12 seconds ago\r\n",
+     "kod": 0,
+     "ms": 173
+    },
+    {
+     "cmd": "docker images --format 'table {{.Repository}}\\t{{.Tag}}\\t{{.ID}}\\t{{.Size}}'",
+     "out": "REPOSITORY    TAG       IMAGE ID       SIZE\r\nalpine        latest    f59abe656b69   13MB\r\ndebian        trixie    9c6e381421d0   187MB\r\nnginx         1.29      1881968aff6f   240MB\r\nhello-world   latest    c567b231f656   25.9kB\r\nbusybox       1.37      a7dbc319b143   6.77MB\r\n",
+     "kod": 0,
+     "ms": 285
+    },
+    {
+     "cmd": "docker volume ls --format json",
+     "out": "",
+     "kod": 0,
+     "ms": 141
+    },
+    {
+     "cmd": "docker network ls --format '{{.Name}}: {{.Driver}}'",
+     "out": "bridge: bridge\r\nhost: host\r\nnone: null\r\n",
+     "kod": 0,
+     "ms": 126
+    },
+    {
+     "cmd": "docker rm -f veb s1",
+     "out": "veb\r\ns1\r\n",
+     "kod": 0,
+     "ms": 417
+    }
+   ]
+  }
+ ]
+}
