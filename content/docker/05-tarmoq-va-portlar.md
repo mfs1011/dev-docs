@@ -197,6 +197,8 @@ To'g'risi: `-p`.
 
 ## Amaliyot
 
+> **Trenajorda sinab ko'ring:** [Port ochish: nginx'ni host'dan ko'rish](/docker/trenajor?mashq=port-nginx) va [Konteynerlar bir-birini nom bilan topishi](/docker/trenajor?mashq=tarmoq-nom). Trenajor — simulyator: chiqishlar sinov VPS'idagi Docker Engine 29.9.3 da yozib olingan; yonida konteynerlar, tarmoqlar va volume'lar xaritasi o'zgarib boradi.
+
 Savollar:
 
 1. Standart `bridge` tarmog'ida `wget http://db/` nega `bad address` beradi?

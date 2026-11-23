@@ -328,6 +328,8 @@ To'g'risi: 5-bob.
 
 ## Amaliyot
 
+> **Trenajorda sinab ko'ring:** [Birinchi konteyner: hello-world](/docker/trenajor?mashq=hello-world). Trenajor — simulyator: chiqishlar sinov VPS'idagi Docker Engine 29.9.3 da yozib olingan; yonida konteynerlar, tarmoqlar va volume'lar xaritasi o'zgarib boradi.
+
 Savollar:
 
 1. Serverga Docker Desktop emas, Docker Engine o'rnatiladi. Nega?
