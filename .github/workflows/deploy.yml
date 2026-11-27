@@ -104,15 +104,16 @@ jobs:
       - name: Redis trenajorini saytga qo'shish
         run: rm -rf public/redis-trenajor && cp -r redis-trenajor/build/web public/redis-trenajor
 
-      # Video darslar (~1.4 GB) saytga qo'shilmaydi: ular VPS'dan beriladi (https://kamgapir.uz/video/,
-      # VPS repodan faqat public/video ni sparse checkout qilib, har 15 daqiqada yangilaydi — docs/ish-holati.md).
+      # Video darslar (~1.4 GB) saytga qo'shilmaydi: ular Oracle serverdan beriladi (https://video.kamgapir.uz/video/,
+      # server repodan faqat public/video ni sparse checkout qilib, har 15 daqiqada yangilaydi — docs/ish-holati.md).
       - name: Videolarni artifact'dan chiqarish
         run: rm -rf public/video
 
       - name: Build
         env:
-          VITE_VIDEO_BASE_URL: https://kamgapir.uz/video/
-          BASE_PATH: /${{ github.event.repository.name }}/
+          VITE_VIDEO_BASE_URL: https://video.kamgapir.uz/video/
+          # Sayt docs.kamgapir.uz (Pages custom domain) ildizida turadi
+          BASE_PATH: /
           # Settings → Secrets and variables → Actions → Variables (ochiq kalitlar, secret emas)
           VITE_SUPABASE_URL: ${{ vars.VITE_SUPABASE_URL }}
           VITE_SUPABASE_ANON_KEY: ${{ vars.VITE_SUPABASE_ANON_KEY }}

@@ -213,7 +213,7 @@ tizim dizayni darslari (o'lchangan yoki ochiq belgilangan model metrikalar).
 1. `git fetch && git log --oneline origin/main -10`; `gh pr list` — ochiq PR'lar (#235?).
 2. `gh run list --limit 5` — oxirgi deploy o'tganmi; yiqilgan bo'lsa `gh run view <id> --log-failed` (holat.mjs diagnostikasi
    servis jurnalini ko'rsatadi).
-3. Sayt: `curl -s -o /dev/null -w '%{http_code}' https://mfs1011.github.io/dev-docs/<nom>-trenajor/holat.zst` → 200.
+3. Sayt: `curl -s -o /dev/null -w '%{http_code}' https://docs.kamgapir.uz/<nom>-trenajor/holat.zst` → 200.
 4. 3.1-bo'limdagi qarorlarni egasidan so'rash (javob berilganlarini shu faylda yangilash).
 5. Trenajor ustida ishlash: `npx vite --port 5182`, `public/<nom>-trenajor` symlink, so'ng shu trenajorning `test/` skriptlari
    (README'larida buyruqlar bor).

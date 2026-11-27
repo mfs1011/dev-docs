@@ -64,7 +64,7 @@ Yangi turkum: `src/markdown.js` → `SECTION_KINDS`, `src/views/DocPage.vue` →
 2. Repo → **Settings → Pages → Source: GitHub Actions**.
 3. `main` ga push — `.github/workflows/deploy.yml` ishga tushadi: ilova va kontent repo'lari checkout qilinadi, `DOCS_SOURCE=../content-repo/docs` bilan build bo'ladi, `dist/` Pages'ga chiqariladi.
 
-`BASE_PATH` avtomatik `/<repo-nomi>/` bo'lib oladi; SPA uchun `404.html` nusxalanadi (chuqur havolalar ishlashi uchun).
+Sayt `docs.kamgapir.uz` (Pages → Custom domain) ildizida turadi, shuning uchun `BASE_PATH: /`; SPA uchun `404.html` nusxalanadi (chuqur havolalar ishlashi uchun).
 
 Kontent o'zgarganda saytni yangilash: repo'da **Actions → Deploy to GitHub Pages → Run workflow**,
 yoki kontent repo'sidan `repository_dispatch` (`docs-updated`) yuborish.

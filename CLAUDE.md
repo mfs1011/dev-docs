@@ -1,6 +1,6 @@
 # docs-web — loyiha eslatmalari
 
-O'zbekcha dasturchi qo'llanmalari sayti (Vue 3 + Vite, GitHub Pages: `mfs1011.github.io/dev-docs`). Kontent `content/<kitob>/*.md`, kitoblar ro'yxati `docs.config.mjs`. `npm run sync` kontentni `src/content` ga ko'chiradi va manifest/qidiruv/ovoz segmentlarini yaratadi; `dev` va `build` undan oldin o'zi ishlaydi.
+O'zbekcha dasturchi qo'llanmalari sayti (Vue 3 + Vite, GitHub Pages, custom domain: `docs.kamgapir.uz`; videolar — `video.kamgapir.uz`, Oracle). Kontent `content/<kitob>/*.md`, kitoblar ro'yxati `docs.config.mjs`. `npm run sync` kontentni `src/content` ga ko'chiradi va manifest/qidiruv/ovoz segmentlarini yaratadi; `dev` va `build` undan oldin o'zi ishlaydi.
 
 ## Ovozli o'qish (TTS)
 
