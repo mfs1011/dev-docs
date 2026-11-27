@@ -289,3 +289,12 @@ Ikkinchi noutbukda boshlashdan oldin shu faylni, `CLAUDE.md` ni va kitobning `RE
 - nginx: `/etc/nginx/conf.d/sayt.conf` da `location /video/` (`alias`, mp4/vtt/jpg turlari, `Access-Control-Allow-Origin: *`, `Cache-Control: public, max-age=3600`). Zaxira — `/root/sayt.conf.zaxira`.
 - Sayt: `src/markdown.js` — `VITE_VIDEO_BASE_URL` bo'lsa `/video/…` shu manzilga, `<video>` ga `crossorigin="anonymous"`. `deploy.yml` — `rm -rf public/video`, `VITE_VIDEO_BASE_URL: https://kamgapir.uz/video/`. Dev'da (o'zgaruvchisiz) — avvalgidek `public/video/`.
 - Videolar git'da qoladi (manba). VPS trafik limiti — provayder tarifida tekshirilsin.
+
+## Video darslar — Oracle serverga ko'chirildi (2026-11-27)
+
+- Server: Oracle Cloud Always Free, `ap-tokyo-1`, E2.1.Micro (1 GB RAM + 2 GB swap), IP `129.203.134.90`, SSH `oracle` (`ubuntu`).
+- DNS: `video.kamgapir.uz` A → `129.203.134.90` (ahost). HTTPS — Let's Encrypt (certbot, `certbot.timer` yangilaydi).
+- Fayllar: `/srv/dev-docs-video` — lab VPS'dagi kabi sparse `public/video`; `dev-docs-video.timer` (User=ubuntu) har 15 daqiqada `fetch`+`reset`.
+- nginx: `/etc/nginx/sites-available/dev-docs-video` — `location /video/` (alias, mp4/vtt/jpg, CORS `*`, `max-age=3600`), qolgan yo'llar 404.
+- Tarmoq: OCI Default Security List'ga TCP 80, 443 (`0.0.0.0/0`) qo'shildi; serverda `iptables` 80/443 ochiq (`/etc/iptables/rules.v4`).
+- `deploy.yml` — `VITE_VIDEO_BASE_URL: https://video.kamgapir.uz/video/`. Lab VPS'dagi `/video/` hozircha zaxira sifatida qoladi.

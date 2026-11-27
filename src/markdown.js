@@ -232,7 +232,7 @@ const BASE = (import.meta.env?.BASE_URL ?? '/').replace(/\/?$/, '/')
 
 /**
  * Video darslar GitHub Pages'da emas (sayt 1 GB chegarasidan oshib ketdi): production'da ular
- * `VITE_VIDEO_BASE_URL` dan (VPS: https://kamgapir.uz/video/) beriladi. Boshqa domendagi
+ * `VITE_VIDEO_BASE_URL` dan (Oracle: https://video.kamgapir.uz/video/) beriladi. Boshqa domendagi
  * `<track>` subtitrlari ishlashi uchun `<video>` ga `crossorigin="anonymous"` qo'shiladi
  * (server CORS sarlavhasini beradi). O'zgaruvchi bo'lmasa (dev) — avvalgidek `public/video/`.
  */
