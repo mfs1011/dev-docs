@@ -43,6 +43,9 @@ MANNER = 'neutral'
 GAP = 0.35          # segmentlar orasidagi jimlik (s)
 PAUSE = 0.8         # [pause] segmenti
 MAX_CHARS = 400     # bundan uzun matn gaplarga bo'linadi (model uzun matnda adashmasin)
+# Quvur versiyasi: o'zgarsa, tayyor boblar ham qayta ovozlanadi (state.json dagi `pipeline`)
+PIPELINE = 2
+EDGE_PAD = 0.08     # nutq chetidan qoldiriladigan jimlik (s); undan tashqaridagi nafas/shovqin qirqiladi
 
 
 def pronouncer(repo: Path):
@@ -53,7 +56,8 @@ def pronouncer(repo: Path):
     def pronounce(text: str) -> str:
         for pattern, spoken in rules:
             text = pattern.sub(spoken, text)
-        return text
+        # Kod identifikatori (`output.textContent`) gapni bo'lmasin: nuqta "dot" bo'lib o'qiladi
+        return re.sub(r'(?<=[A-Za-z0-9_])\.(?=[A-Za-z_])', ' dot ', text)
     return pronounce
 
 
@@ -96,7 +100,27 @@ def done(out: Path, page: dict) -> bool:
     if not state.exists():
         return False
     saved = json.loads(state.read_text())
-    return saved.get('hash') == page['hash'] and saved.get('voice') == f'gapiring-edge-{voice_for(page)}'
+    return (saved.get('hash') == page['hash'] and saved.get('voice') == f'gapiring-edge-{voice_for(page)}'
+            and saved.get('pipeline') == PIPELINE)
+
+
+def trim(audio: np.ndarray, sample_rate: int) -> np.ndarray:
+    """Gap boshi va oxiridagi nafas/past shovqinni qirqadi: eng baland 20 ms bo'laklarning 25% idan past chetlar."""
+    frame = int(0.02 * sample_rate)
+    if len(audio) < frame * 5:
+        return audio
+    rms = np.sqrt(np.mean(audio[: len(audio) // frame * frame].reshape(-1, frame) ** 2, axis=1))
+    loud = np.flatnonzero(rms > 0.25 * np.percentile(rms, 95))
+    if not len(loud):
+        return audio
+    pad = int(EDGE_PAD * sample_rate)
+    start, end = max(0, loud[0] * frame - pad), min(len(audio), (loud[-1] + 1) * frame + pad)
+    out = audio[start:end].copy()
+    fade = min(len(out) // 4, int(0.01 * sample_rate))
+    if fade:
+        out[:fade] *= np.linspace(0, 1, fade)
+        out[-fade:] *= np.linspace(1, 0, fade)
+    return out
 
 
 def render(tts, sample_rate: int, segments: list[dict], pronounce, voice: str) -> tuple[np.ndarray, list[dict]]:
@@ -112,7 +136,7 @@ def render(tts, sample_rate: int, segments: list[dict], pronounce, voice: str) -
             continue
         timings.append({'line': seg['line'], 'type': seg['type'], 'at': round(t, 2)})
         for part in chunks(pronounce(text)):
-            audio = np.clip(tts.speak(part, voice=voice, role='assistant', manner=MANNER), -1, 1).astype(np.float32)
+            audio = trim(np.clip(tts.speak(part, voice=voice, role='assistant', manner=MANNER), -1, 1).astype(np.float32), sample_rate)
             pieces += [audio, gap]
             t += len(audio) / sample_rate + GAP
     return (np.concatenate(pieces) if pieces else np.zeros(1, dtype=np.float32)), timings
@@ -158,7 +182,9 @@ def main():
 
     os.environ['HF_HUB_OFFLINE'] = os.environ.get('HF_HUB_OFFLINE', '1')
     from gapiring import SAMPLE_RATE, Gapiring
-    tts = Gapiring('edge', normalize='literary')
+    # dictionary=True — Gapiring'ning rasmiy en_uz lug'ati (564 ming yozuv): ingliz atamalari ingliz talaffuzida.
+    # Loyiha lug'ati (talaffuz.json) undan oldin qo'llanadi, shuning uchun ustun turadi.
+    tts = Gapiring('edge', normalize='literary', dictionary=True)
     pronounce = pronouncer(args.repo)
 
     for page in todo:
@@ -172,7 +198,7 @@ def main():
         took, length = time.time() - started, len(audio) / SAMPLE_RATE
         base.with_suffix('.state.json').write_text(json.dumps({
             'hash': page['hash'], 'words': page['words'], 'seconds': round(length, 1),
-            'took': round(took), 'voice': f'gapiring-edge-{voice}', 'at': time.strftime('%Y-%m-%dT%H:%M:%S'),
+            'took': round(took), 'voice': f'gapiring-edge-{voice}', 'pipeline': PIPELINE, 'at': time.strftime('%Y-%m-%dT%H:%M:%S'),
         }))
         log(f"{page['file']} [{voice}]: {page['words']} so'z, audio {length/60:.1f} min, {took/60:.1f} min ketdi")
         if args.once:
