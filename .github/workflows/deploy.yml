@@ -112,6 +112,8 @@ jobs:
       - name: Build
         env:
           VITE_VIDEO_BASE_URL: https://video.kamgapir.uz/video/
+          # Gapiring (lokal TTS) audiolari Oracle serverdan; Charon bo'lmagan boblarda pleyer shu yerdan oladi (docs/tts.md)
+          VITE_GAPIRING_BASE_URL: https://video.kamgapir.uz/tinglash/
           # Sayt docs.kamgapir.uz (Pages custom domain) ildizida turadi
           BASE_PATH: /
           # Settings → Secrets and variables → Actions → Variables (ochiq kalitlar, secret emas)

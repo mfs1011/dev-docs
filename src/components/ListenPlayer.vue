@@ -16,6 +16,12 @@ const props = defineProps({
 // Kelajakda tashqi ombor bo'lsa — VITE_AUDIO_BASE_URL
 const BASE = import.meta.env.VITE_AUDIO_BASE_URL || `${import.meta.env.BASE_URL}tinglash/`
 const VOICE = import.meta.env.VITE_AUDIO_VOICE || 'Charon'
+// Ovozlar tartibi: avval Gemini (Charon, Pages'da), bo'lmasa Gapiring (lokal TTS, Oracle serverda — docs/tts.md)
+const GAPIRING_BASE = import.meta.env.VITE_GAPIRING_BASE_URL
+const VOICES = [
+  { name: VOICE, base: BASE },
+  ...(GAPIRING_BASE ? [{ name: 'Gapiring', base: GAPIRING_BASE.replace(/\/?$/, '/'), credit: true }] : []),
+]
 const SPEEDS = [0.75, 1, 1.25, 1.5, 2]
 
 const available = ref(false)
@@ -40,11 +46,11 @@ const domWords = new Map()
 const WORD_HIGHLIGHT = 'tinglash-soz'
 const supportsWordHighlight = typeof CSS !== 'undefined' && 'highlights' in CSS && typeof Highlight !== 'undefined'
 
-const source = computed(() => {
-  if (!BASE || !props.page?.file) return null
-
-  return `${BASE}${VOICE}/${props.page.file.replace(/\.md$/, '')}`
-})
+const page = computed(() => props.page?.file?.replace(/\.md$/, '') ?? null)
+// Topilgan ovozdagi fayl yo'li (kengaytmasiz); `probe` belgilaydi
+const source = ref(null)
+// Gapiring modeli CC BY 4.0 — muallif ko'rsatilishi shart
+const credit = ref(false)
 
 const format = (seconds) => {
   const total = Math.max(0, Math.floor(seconds || 0))
@@ -215,17 +221,39 @@ function onContainerClick(event) {
   }
 }
 
+async function findVoice(file) {
+  for (const voice of VOICES) {
+    if (!voice.base) continue
+
+    const url = `${voice.base}${voice.name}/${file}`
+    const response = await fetch(`${url}.timings.json`, { cache: 'no-cache' }).catch(() => null)
+
+    if (response?.ok) return { voice, url, response }
+  }
+
+  return null
+}
+
 async function probe() {
   available.value = false
   close()
+  source.value = null
+  credit.value = false
 
-  if (!source.value) return
+  const file = page.value
+
+  if (!file) return
 
   try {
-    const response = await fetch(`${source.value}.timings.json`, { cache: 'no-cache' })
+    const found = await findVoice(file)
 
-    if (!response.ok) return
+    // Sahifa almashib ketgan bo'lsa — eski javob kerak emas
+    if (!found || file !== page.value) return
 
+    const { voice, url, response } = found
+
+    source.value = url
+    credit.value = Boolean(voice.credit)
     version = String(Date.now())
     timings = (await response.json()).sort((a, b) => a.at - b.at)
     available.value = timings.length > 0
@@ -309,7 +337,7 @@ function close() {
   clearHighlight()
 }
 
-watch(source, probe, { immediate: true })
+watch(page, probe, { immediate: true })
 
 watch(
   () => props.container,
@@ -355,6 +383,11 @@ onBeforeUnmount(() => {
                 </label>
                 <button type="button" class="listen-btn" aria-label="Yopish" @click="close">✕</button>
             </div>
+            <p v-if="credit" class="listen-credit">
+                Ovoz: <a href="https://gapi.uz" target="_blank" rel="noopener">Gapiring by Gapi</a>
+                (<a href="https://huggingface.co/kyutai/pocket-tts" target="_blank" rel="noopener">Kyutai Pocket TTS</a> asosida),
+                <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>
+            </p>
         </div>
     </Teleport>
 </template>
