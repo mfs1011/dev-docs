@@ -226,7 +226,7 @@ md.renderer.rules.fence = (tokens, idx, options) => {
 
 /**
  * Xom HTML'dagi `public/` fayllari (masalan, `<video src="/video/...">`) markdown'da `/` bilan
- * yoziladi; GitHub Pages'da sayt `/dev-docs/` ostida turadi — yo'lga BASE_URL qo'shiladi.
+ * yoziladi; sayt ildizda bo'lmasa (`BASE_PATH`), yo'lga BASE_URL qo'shiladi.
  */
 const BASE = (import.meta.env?.BASE_URL ?? '/').replace(/\/?$/, '/')
 

@@ -112,7 +112,8 @@ jobs:
       - name: Build
         env:
           VITE_VIDEO_BASE_URL: https://video.kamgapir.uz/video/
-          BASE_PATH: /${{ github.event.repository.name }}/
+          # Sayt docs.kamgapir.uz (Pages custom domain) ildizida turadi
+          BASE_PATH: /
           # Settings → Secrets and variables → Actions → Variables (ochiq kalitlar, secret emas)
           VITE_SUPABASE_URL: ${{ vars.VITE_SUPABASE_URL }}
           VITE_SUPABASE_ANON_KEY: ${{ vars.VITE_SUPABASE_ANON_KEY }}
