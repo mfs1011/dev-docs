@@ -109,6 +109,18 @@ npm run tts:align -- --books react      # faqat bitta kitob
 - `audio/_eski/<ovoz>-teglar/` dagi eski audio'lar ham hisoblanadi (o'qilgan "long pause" so'zlari transkriptga qo'shiladi, lekin ko'rsatilmaydi).
 - UI: o'qilayotgan so'z **CSS Custom Highlight API** bilan (`::highlight(tinglash-soz)`), DOM o'zgarmaydi; paragraf — `.is-reading`. Sahifadagi so'zlarga moslash ~90% (jadval izohi kabi faqat ovoz uchun yasalgan gaplar sahifada yo'q — u yerda faqat paragraf belgilanadi). `words.json` bo'lmasa — faqat paragraf.
 
+### Gapiring — lokal TTS, Oracle serverda doim ishlaydi (2026-11-27)
+
+Gemini limiti (kuniga 10 so'rov) tufayli Charon bilan ovozlanmagan kitoblar **Gapiring** (o'zbekcha lokal TTS, edge int8 modeli, ~113 MB) bilan ovozlanadi. Litsenziya: model CC BY 4.0 — pleyer ostida muallif ko'rsatiladi (`ListenPlayer.vue`, `.listen-credit`).
+
+- Skript: `scripts/tts-gapiring.py` — har segment alohida ovozlanadi va ulanadi, shuning uchun `timings.json` aniq (aligner kerak emas); `words.json` yo'q — pleyer paragrafni belgilaydi. Talaffuz — `scripts/talaffuz.json` (tts.mjs bilan bir xil qoida).
+- Ovozlar: `BOOK_VOICES` (kitob → `f1` ayol / `m1` erkak), qolganlari `DEFAULT_VOICE`. Ovoz o'zgarsa, o'sha kitob qayta ovozlanadi.
+- Navbat: `NAVBAT` (vue → angular → git → arxitektura → symfony → laravel), keyin qolgan kitoblar alifbo bo'yicha. Charon bilan tayyor kitoblar (`--skip`, hozir react, nextjs, linux) o'tkazib yuboriladi.
+- Server: `/srv/dev-docs-tts` — `repo/` (sparse: content, scripts, src), `.venv/` (gapiring 0.1.2), `out/Gapiring/<kitob>/<bob>.{ogg,timings.json,state.json}`. `dev-docs-tts.service` (`run.sh`): har soatda `git fetch` + `sync`, har aylanishda bitta bob; `Nice=19`, `CPUQuota=70%`, `MemoryMax=700M`.
+- Saytga: nginx `https://video.kamgapir.uz/tinglash/` (CORS). Pleyer avval `Charon` (Pages), bo'lmasa `Gapiring` (`VITE_GAPIRING_BASE_URL`) qidiradi.
+- Holat: `ssh oracle 'journalctl -u dev-docs-tts -o cat -n 20'`; qolgani: `cd /srv/dev-docs-tts && .venv/bin/python repo/scripts/tts-gapiring.py --repo repo --out out/Gapiring --plan`.
+- Tezlik (o'lchangan, 2026-11-27): ~2 s/so'z (RTF ≈ 4,4) — server faqat CPU, sekin; butun navbat haftalar oladi.
+
 ### 4. Saytga chiqarish — `scripts/tts-publish.mjs`
 
 ```bash

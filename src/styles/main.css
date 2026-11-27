@@ -2446,6 +2446,17 @@ h3.markable > .line-mark { top: 6px; }
 
 .listen-follow { display: inline-flex; align-items: center; gap: 5px; color: var(--text-muted); font-size: 12px; cursor: pointer; }
 
+/* Gapiring (CC BY 4.0) muallifi — pleyer ostida kichik qator */
+.listen-credit {
+    max-width: 920px;
+    margin: 6px auto 0;
+    color: var(--text-muted);
+    font-size: 11px;
+    line-height: 1.4;
+}
+
+.listen-credit a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+
 .markdown .is-reading {
     border-radius: 6px;
     background: color-mix(in srgb, var(--accent) 14%, transparent);
@@ -2455,6 +2466,7 @@ h3.markable > .line-mark { top: 6px; }
 
 /* Pleyer ochiq bo'lsa, sahifa oxiri panel ostida qolmasin */
 body:has(.listen-bar) .content { padding-bottom: 80px; }
+body:has(.listen-credit) .content { padding-bottom: 100px; }
 
 @media (max-width: 560px) {
     .listen-inner { flex-wrap: wrap; gap: 8px; }
