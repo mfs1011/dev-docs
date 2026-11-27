@@ -123,8 +123,10 @@ def trim(audio: np.ndarray, sample_rate: int) -> np.ndarray:
     return out
 
 
-def render(tts, sample_rate: int, segments: list[dict], pronounce, voice: str) -> tuple[np.ndarray, list[dict]]:
+def render(tts, sample_rate: int, segments: list[dict], pronounce, voice: str, on_progress=None) -> tuple[np.ndarray, list[dict]]:
     pieces, timings, t = [], [], 0.0
+    total = sum(len(seg['text']) for seg in segments) or 1
+    done_chars = 0
     gap = np.zeros(int(GAP * sample_rate), dtype=np.float32)
     for seg in segments:
         if seg['type'] == 'pause':
@@ -139,6 +141,9 @@ def render(tts, sample_rate: int, segments: list[dict], pronounce, voice: str) -
             audio = trim(np.clip(tts.speak(part, voice=voice, role='assistant', manner=MANNER), -1, 1).astype(np.float32), sample_rate)
             pieces += [audio, gap]
             t += len(audio) / sample_rate + GAP
+        done_chars += len(seg['text'])
+        if on_progress:
+            on_progress(done_chars / total)
     return (np.concatenate(pieces) if pieces else np.zeros(1, dtype=np.float32)), timings
 
 
@@ -159,6 +164,17 @@ def encode(audio: np.ndarray, sample_rate: int, target: Path):
         os.unlink(tmp.name)
 
 
+def charon_files(repo: Path) -> set[str]:
+    """Pages'da chiqarilgan eski Gemini (Charon) audiolari: `public/tinglash/Charon/<kitob>/<bob>.ogg` (blob yuklanmaydi)."""
+    try:
+        names = subprocess.run(['git', '-C', str(repo), 'ls-tree', '-r', '--name-only', 'HEAD', 'public/tinglash/Charon'],
+                               capture_output=True, text=True, check=True).stdout.split()
+    except (subprocess.CalledProcessError, FileNotFoundError):
+        return set()
+    prefix = 'public/tinglash/Charon/'
+    return {n[len(prefix):-4] for n in names if n.endswith('.ogg')}
+
+
 def status(repo: Path, out: Path, skip: set[str], target: Path):
     """Holat sahifasi uchun `holat.json`: kitob → boblar (tayyor/navbatda/ishlanmoqda), umumiy progress va taxminiy vaqt."""
     index = json.loads((repo / 'segments/index.json').read_text())
@@ -166,6 +182,7 @@ def status(repo: Path, out: Path, skip: set[str], target: Path):
     now = json.loads(current.read_text()) if current.exists() else None
     order = {p['file']: i for i, p in enumerate(pages(repo, skip))}
     books, done_words, done_took = {}, 0, 0
+    charon = charon_files(repo)
     for page in index:
         book = page['file'].split('/')[0]
         state_file = out / (page['file'][:-3] + '.state.json')
@@ -184,13 +201,17 @@ def status(repo: Path, out: Path, skip: set[str], target: Path):
             'file': page['file'][:-3], 'title': page.get('title', page['file']), 'words': page['words'], 'holat': kind,
             'seconds': state.get('seconds') if state and kind == 'tayyor' else None,
             'voice': voice_for(page), 'order': order.get(page['file']),
+            'eski': page['file'][:-3] in charon,
         })
     todo_words = sum(c['words'] for chs in books.values() for c in chs if c['holat'] in ('navbatda', 'ishlanmoqda'))
     rate = done_took / done_words if done_words else 3.0  # s/so'z; hali tayyor bob bo'lmasa — taxmin
     queue = [b for b in NAVBAT if b in books] + sorted(b for b in books if b not in NAVBAT)
+    left = todo_words * rate
     target.write_text(json.dumps({
         'yangilandi': time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime()), 'hozir': now,
-        's_per_word': round(rate, 2), 'qolgan_soat': round(todo_words * rate / 3600, 1),
+        's_per_word': round(rate, 2), 'qolgan_soat': round(left / 3600, 1),
+        'tugash': time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime(time.time() + left)),
+        'eski_ovoz_url': 'https://docs.kamgapir.uz/tinglash/Charon/',
         'kitoblar': [{'id': b, 'boblar': books[b]} for b in queue],
     }, ensure_ascii=False))
 
@@ -230,11 +251,20 @@ def main():
     for page in todo:
         segments = json.loads((args.repo / 'segments' / (page['file'][:-3] + '.json')).read_text())
         started = time.time()
-        (args.out / '_hozir.json').write_text(json.dumps({'file': page['file'][:-3], 'words': page['words'],
-                                                          'boshlandi': time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime())}))
+        now_info = {'file': page['file'][:-3], 'words': page['words'],
+                    'boshlandi': time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime()), 'progress': 0.0}
+        hozir = args.out / '_hozir.json'
+        hozir.write_text(json.dumps(now_info))
         status(args.repo, args.out, skip, args.out / 'holat.json')
+
+        def on_progress(fraction, info=now_info, began=started):
+            info['progress'] = round(fraction, 4)
+            if fraction > 0.02:
+                left = (time.time() - began) * (1 - fraction) / fraction
+                info['tugash'] = time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime(time.time() + left))
+            hozir.write_text(json.dumps(info))
         voice = voice_for(page)
-        audio, timings = render(tts, SAMPLE_RATE, segments, pronounce, voice)
+        audio, timings = render(tts, SAMPLE_RATE, segments, pronounce, voice, on_progress)
         base = args.out / page['file'][:-3]
         encode(audio, SAMPLE_RATE, base.with_suffix('.ogg'))
         base.with_suffix('.timings.json').write_text(json.dumps(timings, ensure_ascii=False))

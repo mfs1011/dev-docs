@@ -24,7 +24,16 @@
   .bar { height: 8px; background: var(--bar); border-radius: 99px; overflow: hidden; margin: 10px 0; }
   .bar > span { display: block; height: 100%; background: var(--ok); }
   .stats { display: flex; flex-wrap: wrap; gap: 6px 18px; color: var(--muted); font-size: 13px; }
-  .now { margin-top: 10px; font-size: 13px; color: var(--work); }
+  .now { margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--line); font-size: 13px; display: none; }
+  .now.on { display: block; }
+  .now .head { display: flex; justify-content: space-between; gap: 10px; color: var(--work); }
+  .now .head b { font-variant-numeric: tabular-nums; }
+  .now .bar > span { background: var(--work); transition: width .8s ease; }
+  .now .eta { color: var(--muted); }
+  .finish { margin-top: 6px; font-size: 14px; }
+  .finish b { font-variant-numeric: tabular-nums; }
+  .tag { font-size: 11px; padding: 1px 7px; border-radius: 99px; border: 1px solid var(--accent); color: var(--accent); flex: none; }
+  li .pc { color: var(--work); font-size: 12px; font-variant-numeric: tabular-nums; white-space: nowrap; }
   details { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; margin-bottom: 8px; }
   summary { display: flex; align-items: center; gap: 10px; padding: 10px 14px; cursor: pointer; list-style: none; }
   summary::-webkit-details-marker { display: none; }
@@ -69,14 +78,19 @@
     <div class="big" id="pct">—</div>
     <div class="bar"><span id="bar" style="width:0"></span></div>
     <div class="stats" id="stats"></div>
-    <div class="now" id="now"></div>
+    <div class="finish" id="finish"></div>
+    <div class="now" id="now">
+      <div class="head"><span id="nowName"></span><b id="nowPct">0%</b></div>
+      <div class="bar"><span id="nowBar" style="width:0"></span></div>
+      <div class="eta" id="nowEta"></div>
+    </div>
   </div>
 
   <div class="legend">
     <span><i class="dot" style="background:var(--ok)"></i>tayyor</span>
     <span><i class="dot" style="background:var(--work)"></i>ishlanmoqda</span>
     <span><i class="dot" style="background:var(--queue)"></i>navbatda</span>
-    <span><i class="dot" style="background:var(--accent)"></i>Gemini (Charon) bilan tayyor</span>
+    <span><i class="dot" style="background:var(--accent)"></i>eski ovoz (Gemini, Charon)</span>
   </div>
 
   <div id="tree"></div>
@@ -93,6 +107,19 @@
 <script>
 const fmtTime = (s) => { s = Math.round(s || 0); return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`; };
 const fmtHours = (h) => h >= 48 ? `~${Math.round(h / 24)} kun` : `~${Math.round(h)} soat`;
+const fmtClock = (iso) => new Date(iso).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+const OYLAR = ['yanvar', 'fevral', 'mart', 'aprel', 'may', 'iyun', 'iyul', 'avgust', 'sentabr', 'oktabr', 'noyabr', 'dekabr'];
+const fmtDate = (iso) => { const d = new Date(iso); return `${d.getDate()}-${OYLAR[d.getMonth()]}, ${d.getFullYear()}`; };
+let shownPct = 0, oldBase = '', titles = {}, rate = 3;
+function countTo(el, target, suffix) {
+  const from = shownPct, t0 = performance.now();
+  const step = (t) => {
+    const k = Math.min(1, (t - t0) / 900), v = from + (target - from) * (1 - Math.pow(1 - k, 3));
+    el.textContent = `${v.toFixed(1)}%${suffix}`;
+    if (k < 1) requestAnimationFrame(step); else shownPct = target;
+  };
+  requestAnimationFrame(step);
+}
 const open = new Set(JSON.parse(sessionStorage.getItem('ochiq') || '[]'));
 let playing = null;
 
@@ -102,7 +129,12 @@ function render(d) {
   const all = d.kitoblar.flatMap((k) => k.boblar).filter((c) => c.holat !== 'charon');
   const ready = all.filter((c) => c.holat === 'tayyor');
   const pct = all.length ? (ready.length / all.length) * 100 : 0;
-  document.getElementById('pct').textContent = `${ready.length} / ${all.length} bob · ${pct.toFixed(1)}%`;
+  countTo(document.getElementById('pct'), pct, ` · ${ready.length} / ${all.length} bob`);
+  oldBase = d.eski_ovoz_url || '';
+  rate = d.s_per_word || rate;
+  titles = Object.fromEntries(d.kitoblar.flatMap((k) => k.boblar).map((c) => [c.file, c.title]));
+  document.getElementById('finish').innerHTML = d.tugash && ready.length < all.length
+    ? `Taxminiy tugash: <b>${fmtDate(d.tugash)}</b> (${fmtHours(d.qolgan_soat)} qoldi)` : (all.length ? '<b>Hammasi tayyor</b>' : '');
   document.getElementById('bar').style.width = `${pct}%`;
   const audioSec = ready.reduce((a, c) => a + (c.seconds || 0), 0);
   document.getElementById('stats').innerHTML = [
@@ -110,21 +142,24 @@ function render(d) {
     `Tezlik: ${d.s_per_word} s/so'z`,
     `Qolgan vaqt: ${fmtHours(d.qolgan_soat)}`,
   ].map((x) => `<span>${x}</span>`).join('');
-  document.getElementById('now').textContent = d.hozir
-    ? `Hozir: ${d.hozir.file} (${d.hozir.words} so'z) — ${new Date(d.hozir.boshlandi).toLocaleTimeString()} da boshlandi` : '';
+  renderNow(d.hozir);
   document.getElementById('upd').textContent = `yangilandi ${new Date(d.yangilandi).toLocaleString()}`;
 
   document.getElementById('tree').innerHTML = d.kitoblar.map((k) => {
     const own = k.boblar.filter((c) => c.holat !== 'charon');
     const done = own.filter((c) => c.holat === 'tayyor').length;
     const isCharon = own.length === 0;
-    const label = isCharon ? `${k.boblar.length} bob · Charon` : `${done} / ${own.length}`;
+    const old = k.boblar.filter((c) => c.eski).length;
+    const label = isCharon ? `${old} / ${k.boblar.length} · eski ovoz` : `${done} / ${own.length}`;
     const p = isCharon ? 100 : (done / own.length) * 100;
     return `<details data-k="${esc(k.id)}" ${open.has(k.id) ? 'open' : ''}>
       <summary><span class="book">${esc(k.id)}</span><span class="mini"><span style="width:${p}%${isCharon ? ';background:var(--accent)' : ''}"></span></span><span class="count">${label}</span></summary>
-      <ul>${k.boblar.map((c) => `<li class="${c.holat}"><i class="dot"></i><span class="t" title="${esc(c.file)}">${esc(c.title)}</span>
+      <ul>${k.boblar.map((c) => `<li class="${c.holat}" data-f="${esc(c.file)}"><i class="dot"></i><span class="t" title="${esc(c.file)}">${esc(c.title)}</span>
+        ${c.holat === 'ishlanmoqda' ? '<span class="pc"></span>' : ''}
+        ${c.eski ? '<span class="tag">eski · Gemini</span>' : ''}
         <span class="m">${c.holat === 'tayyor' ? fmtTime(c.seconds) : `${c.words} so'z`}</span>
-        ${c.holat === 'tayyor' ? `<button class="play" data-f="${esc(c.file)}" data-n="${esc(c.title)}">▶ tinglash</button>` : ''}</li>`).join('')}</ul>
+        ${c.holat === 'tayyor' ? `<button class="play" data-u="Gapiring/${esc(c.file)}.ogg" data-n="${esc(c.title)}">▶ tinglash</button>` : ''}
+        ${c.eski ? `<button class="play" data-u="${esc(oldBase + c.file)}.ogg" data-n="${esc(c.title)} — eski (Gemini, Charon)">▶ eski</button>` : ''}</li>`).join('')}</ul>
     </details>`;
   }).join('');
 }
@@ -138,11 +173,41 @@ document.getElementById('tree').addEventListener('toggle', (e) => {
 document.getElementById('tree').addEventListener('click', (e) => {
   const b = e.target.closest('button.play'); if (!b) return;
   const audio = document.getElementById('audio');
-  if (playing !== b.dataset.f) { audio.src = `Gapiring/${b.dataset.f}.ogg`; playing = b.dataset.f; }
+  if (playing !== b.dataset.u) { audio.src = b.dataset.u; playing = b.dataset.u; }
   document.getElementById('pname').textContent = b.dataset.n;
   document.getElementById('player').classList.add('on');
   audio.play();
 });
+
+function renderNow(h) {
+  const box = document.getElementById('now');
+  if (!h) { box.classList.remove('on'); return; }
+  box.classList.add('on');
+  // Progress yozilmagan bo'lsa (eski jarayon) — o'tgan vaqt va o'rtacha tezlikdan taxmin
+  let frac = h.progress, finish = h.tugash;
+  if (!frac) {
+    const total = h.words * rate * 1000, began = new Date(h.boshlandi).getTime();
+    frac = Math.min(0.99, (Date.now() - began) / total);
+    finish = new Date(began + total).toISOString();
+  }
+  h = { ...h, tugash: finish };
+  const p = Math.round(frac * 1000) / 10;
+  document.getElementById('nowName').textContent = `Hozir: ${titles[h.file] || h.file} (${h.words} so'z)`;
+  document.getElementById('nowPct').textContent = `${p.toFixed(1)}%`;
+  document.getElementById('nowBar').style.width = `${p}%`;
+  document.getElementById('nowEta').textContent = h.tugash
+    ? `${fmtClock(h.boshlandi)} da boshlandi · taxminan ${fmtClock(h.tugash)} da tugaydi`
+    : `${fmtClock(h.boshlandi)} da boshlandi · tugash vaqti hisoblanmoqda…`;
+  const li = document.querySelector(`li[data-f="${CSS.escape(h.file)}"] .pc`);
+  if (li) li.textContent = `${p.toFixed(0)}%`;
+}
+
+async function loadNow() {
+  try {
+    const r = await fetch(`Gapiring/_hozir.json?${Date.now()}`);
+    renderNow(r.ok ? await r.json() : null);
+  } catch {}
+}
 
 async function load() {
   try {
@@ -150,8 +215,9 @@ async function load() {
     if (r.ok) render(await r.json());
   } catch {}
 }
-load();
+load().then(loadNow);
 setInterval(load, 30000);
+setInterval(loadNow, 10000);
 </script>
 </body>
 </html>
