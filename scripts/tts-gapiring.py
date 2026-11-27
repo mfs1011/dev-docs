@@ -159,6 +159,42 @@ def encode(audio: np.ndarray, sample_rate: int, target: Path):
         os.unlink(tmp.name)
 
 
+def status(repo: Path, out: Path, skip: set[str], target: Path):
+    """Holat sahifasi uchun `holat.json`: kitob → boblar (tayyor/navbatda/ishlanmoqda), umumiy progress va taxminiy vaqt."""
+    index = json.loads((repo / 'segments/index.json').read_text())
+    current = out / '_hozir.json'
+    now = json.loads(current.read_text()) if current.exists() else None
+    order = {p['file']: i for i, p in enumerate(pages(repo, skip))}
+    books, done_words, done_took = {}, 0, 0
+    for page in index:
+        book = page['file'].split('/')[0]
+        state_file = out / (page['file'][:-3] + '.state.json')
+        state = json.loads(state_file.read_text()) if state_file.exists() else None
+        if book in skip:
+            kind = 'charon'
+        elif now and now.get('file') == page['file'][:-3]:
+            kind = 'ishlanmoqda'
+        elif done(out, page):
+            kind = 'tayyor'
+            done_words += page['words']
+            done_took += state.get('took', 0)
+        else:
+            kind = 'navbatda'
+        books.setdefault(book, []).append({
+            'file': page['file'][:-3], 'title': page.get('title', page['file']), 'words': page['words'], 'holat': kind,
+            'seconds': state.get('seconds') if state and kind == 'tayyor' else None,
+            'voice': voice_for(page), 'order': order.get(page['file']),
+        })
+    todo_words = sum(c['words'] for chs in books.values() for c in chs if c['holat'] in ('navbatda', 'ishlanmoqda'))
+    rate = done_took / done_words if done_words else 3.0  # s/so'z; hali tayyor bob bo'lmasa — taxmin
+    queue = [b for b in NAVBAT if b in books] + sorted(b for b in books if b not in NAVBAT)
+    target.write_text(json.dumps({
+        'yangilandi': time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime()), 'hozir': now,
+        's_per_word': round(rate, 2), 'qolgan_soat': round(todo_words * rate / 3600, 1),
+        'kitoblar': [{'id': b, 'boblar': books[b]} for b in queue],
+    }, ensure_ascii=False))
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--repo', type=Path, required=True)
@@ -166,9 +202,13 @@ def main():
     ap.add_argument('--skip', default='react,nextjs,linux', help="Charon bilan tayyor kitoblar")
     ap.add_argument('--once', action='store_true')
     ap.add_argument('--plan', action='store_true')
+    ap.add_argument('--status', type=Path, help="holat.json ni yozadi va chiqadi")
     args = ap.parse_args()
 
     skip = set(filter(None, args.skip.split(',')))
+    if args.status:
+        status(args.repo, args.out, skip, args.status)
+        return
     todo = [p for p in pages(args.repo, skip) if not done(args.out, p)]
 
     if args.plan:
@@ -190,6 +230,9 @@ def main():
     for page in todo:
         segments = json.loads((args.repo / 'segments' / (page['file'][:-3] + '.json')).read_text())
         started = time.time()
+        (args.out / '_hozir.json').write_text(json.dumps({'file': page['file'][:-3], 'words': page['words'],
+                                                          'boshlandi': time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime())}))
+        status(args.repo, args.out, skip, args.out / 'holat.json')
         voice = voice_for(page)
         audio, timings = render(tts, SAMPLE_RATE, segments, pronounce, voice)
         base = args.out / page['file'][:-3]
@@ -200,6 +243,8 @@ def main():
             'hash': page['hash'], 'words': page['words'], 'seconds': round(length, 1),
             'took': round(took), 'voice': f'gapiring-edge-{voice}', 'pipeline': PIPELINE, 'at': time.strftime('%Y-%m-%dT%H:%M:%S'),
         }))
+        (args.out / '_hozir.json').unlink(missing_ok=True)
+        status(args.repo, args.out, skip, args.out / 'holat.json')
         log(f"{page['file']} [{voice}]: {page['words']} so'z, audio {length/60:.1f} min, {took/60:.1f} min ketdi")
         if args.once:
             return

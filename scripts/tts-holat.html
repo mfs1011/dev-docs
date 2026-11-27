@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ovozlash holati</title>
+<meta name="robots" content="noindex">
+<style>
+  :root {
+    --bg: #f7f7f5; --panel: #ffffff; --text: #1d1d1b; --muted: #6b6b66; --line: #e4e3df;
+    --accent: #2f6fde; --ok: #1f8a4c; --work: #c77700; --queue: #9a9a93; --bar: #e9e8e4;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #141413; --panel: #1d1d1b; --text: #ecebe6; --muted: #a09f98; --line: #2e2d2a;
+      --accent: #7aa7ff; --ok: #4cc283; --work: #f0a63c; --queue: #77766f; --bar: #2a2926; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 15px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 860px; margin: 0 auto; padding: 24px 16px 140px; }
+  h1 { margin: 0 0 4px; font-size: 22px; }
+  .sub { color: var(--muted); font-size: 13px; margin-bottom: 20px; }
+  .summary { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 16px; margin-bottom: 16px; }
+  .big { font-size: 28px; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .bar { height: 8px; background: var(--bar); border-radius: 99px; overflow: hidden; margin: 10px 0; }
+  .bar > span { display: block; height: 100%; background: var(--ok); }
+  .stats { display: flex; flex-wrap: wrap; gap: 6px 18px; color: var(--muted); font-size: 13px; }
+  .now { margin-top: 10px; font-size: 13px; color: var(--work); }
+  details { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; margin-bottom: 8px; }
+  summary { display: flex; align-items: center; gap: 10px; padding: 10px 14px; cursor: pointer; list-style: none; }
+  summary::-webkit-details-marker { display: none; }
+  summary::before { content: "▸"; color: var(--muted); transition: transform .15s; }
+  details[open] > summary::before { transform: rotate(90deg); }
+  .book { font-weight: 600; flex: 1; min-width: 0; }
+  .count { font-variant-numeric: tabular-nums; color: var(--muted); font-size: 13px; white-space: nowrap; }
+  .mini { width: 70px; height: 5px; background: var(--bar); border-radius: 99px; overflow: hidden; flex: none; }
+  .mini > span { display: block; height: 100%; background: var(--ok); }
+  ul { list-style: none; margin: 0; padding: 0 0 6px; border-top: 1px solid var(--line); }
+  li { display: flex; align-items: center; gap: 10px; padding: 7px 14px 7px 34px; font-size: 14px; }
+  li + li { border-top: 1px solid var(--line); }
+  li .t { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  li .m { color: var(--muted); font-size: 12px; white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .dot { width: 9px; height: 9px; border-radius: 50%; flex: none; background: var(--queue); }
+  .tayyor .dot { background: var(--ok); }
+  .ishlanmoqda .dot { background: var(--work); animation: pulse 1.2s infinite; }
+  .charon .dot { background: var(--accent); }
+  .navbatda .t { color: var(--muted); }
+  @keyframes pulse { 50% { opacity: .3; } }
+  button.play { border: 1px solid var(--line); background: transparent; color: var(--text); border-radius: 7px;
+    padding: 3px 10px; font: inherit; font-size: 12px; cursor: pointer; flex: none; }
+  button.play:hover { border-color: var(--accent); color: var(--accent); }
+  .player { position: fixed; left: 0; right: 0; bottom: 0; background: var(--panel); border-top: 1px solid var(--line);
+    padding: 10px 16px calc(10px + env(safe-area-inset-bottom)); display: none; }
+  .player.on { display: block; }
+  .player .in { max-width: 860px; margin: 0 auto; }
+  .player .name { font-size: 13px; margin-bottom: 6px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  audio { width: 100%; }
+  .legend { display: flex; flex-wrap: wrap; gap: 14px; font-size: 12px; color: var(--muted); margin: 0 0 12px; }
+  .legend span { display: inline-flex; align-items: center; gap: 6px; }
+  .credit { color: var(--muted); font-size: 12px; margin-top: 24px; }
+  .credit a { color: inherit; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Ovozlash holati</h1>
+  <div class="sub">dev-docs boblari · Gapiring (Oracle server) · <span id="upd">yuklanmoqda…</span></div>
+
+  <div class="summary">
+    <div class="big" id="pct">—</div>
+    <div class="bar"><span id="bar" style="width:0"></span></div>
+    <div class="stats" id="stats"></div>
+    <div class="now" id="now"></div>
+  </div>
+
+  <div class="legend">
+    <span><i class="dot" style="background:var(--ok)"></i>tayyor</span>
+    <span><i class="dot" style="background:var(--work)"></i>ishlanmoqda</span>
+    <span><i class="dot" style="background:var(--queue)"></i>navbatda</span>
+    <span><i class="dot" style="background:var(--accent)"></i>Gemini (Charon) bilan tayyor</span>
+  </div>
+
+  <div id="tree"></div>
+
+  <p class="credit">Ovoz: <a href="https://gapi.uz" target="_blank" rel="noopener">Gapiring by Gapi</a>
+    (<a href="https://huggingface.co/kyutai/pocket-tts" target="_blank" rel="noopener">Kyutai Pocket TTS</a> asosida),
+    <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a></p>
+</main>
+
+<div class="player" id="player">
+  <div class="in"><div class="name" id="pname"></div><audio id="audio" controls preload="none"></audio></div>
+</div>
+
+<script>
+const fmtTime = (s) => { s = Math.round(s || 0); return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`; };
+const fmtHours = (h) => h >= 48 ? `~${Math.round(h / 24)} kun` : `~${Math.round(h)} soat`;
+const open = new Set(JSON.parse(sessionStorage.getItem('ochiq') || '[]'));
+let playing = null;
+
+function esc(s) { return String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c])); }
+
+function render(d) {
+  const all = d.kitoblar.flatMap((k) => k.boblar).filter((c) => c.holat !== 'charon');
+  const ready = all.filter((c) => c.holat === 'tayyor');
+  const pct = all.length ? (ready.length / all.length) * 100 : 0;
+  document.getElementById('pct').textContent = `${ready.length} / ${all.length} bob · ${pct.toFixed(1)}%`;
+  document.getElementById('bar').style.width = `${pct}%`;
+  const audioSec = ready.reduce((a, c) => a + (c.seconds || 0), 0);
+  document.getElementById('stats').innerHTML = [
+    `Tayyor audio: ${fmtTime(audioSec)}`,
+    `Tezlik: ${d.s_per_word} s/so'z`,
+    `Qolgan vaqt: ${fmtHours(d.qolgan_soat)}`,
+  ].map((x) => `<span>${x}</span>`).join('');
+  document.getElementById('now').textContent = d.hozir
+    ? `Hozir: ${d.hozir.file} (${d.hozir.words} so'z) — ${new Date(d.hozir.boshlandi).toLocaleTimeString()} da boshlandi` : '';
+  document.getElementById('upd').textContent = `yangilandi ${new Date(d.yangilandi).toLocaleString()}`;
+
+  document.getElementById('tree').innerHTML = d.kitoblar.map((k) => {
+    const own = k.boblar.filter((c) => c.holat !== 'charon');
+    const done = own.filter((c) => c.holat === 'tayyor').length;
+    const isCharon = own.length === 0;
+    const label = isCharon ? `${k.boblar.length} bob · Charon` : `${done} / ${own.length}`;
+    const p = isCharon ? 100 : (done / own.length) * 100;
+    return `<details data-k="${esc(k.id)}" ${open.has(k.id) ? 'open' : ''}>
+      <summary><span class="book">${esc(k.id)}</span><span class="mini"><span style="width:${p}%${isCharon ? ';background:var(--accent)' : ''}"></span></span><span class="count">${label}</span></summary>
+      <ul>${k.boblar.map((c) => `<li class="${c.holat}"><i class="dot"></i><span class="t" title="${esc(c.file)}">${esc(c.title)}</span>
+        <span class="m">${c.holat === 'tayyor' ? fmtTime(c.seconds) : `${c.words} so'z`}</span>
+        ${c.holat === 'tayyor' ? `<button class="play" data-f="${esc(c.file)}" data-n="${esc(c.title)}">▶ tinglash</button>` : ''}</li>`).join('')}</ul>
+    </details>`;
+  }).join('');
+}
+
+document.getElementById('tree').addEventListener('toggle', (e) => {
+  const k = e.target.dataset?.k; if (!k) return;
+  e.target.open ? open.add(k) : open.delete(k);
+  try { sessionStorage.setItem('ochiq', JSON.stringify([...open])); } catch {}
+}, true);
+
+document.getElementById('tree').addEventListener('click', (e) => {
+  const b = e.target.closest('button.play'); if (!b) return;
+  const audio = document.getElementById('audio');
+  if (playing !== b.dataset.f) { audio.src = `Gapiring/${b.dataset.f}.ogg`; playing = b.dataset.f; }
+  document.getElementById('pname').textContent = b.dataset.n;
+  document.getElementById('player').classList.add('on');
+  audio.play();
+});
+
+async function load() {
+  try {
+    const r = await fetch(`Gapiring/holat.json?${Date.now()}`);
+    if (r.ok) render(await r.json());
+  } catch {}
+}
+load();
+setInterval(load, 30000);
+</script>
+</body>
+</html>
